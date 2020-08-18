@@ -1,9 +1,13 @@
 ---
-title: Aspose.BarCode for JasperReports
+title: Aspose.Pdf for JasperReports
 type: docs
 weight: 70
 url: /jasperreports/
-is_root: true
 ---
 
-Welcome to Aspose.BarCode for JasperReports.
+[Product Information](/pdf/jasperreports/product-information/)
+
+[Knowledge Base](/pdf/jasperreports/knowledge-base/)
+
+[Release Notes](/pdf/jasperreports/release-notes/)
+
