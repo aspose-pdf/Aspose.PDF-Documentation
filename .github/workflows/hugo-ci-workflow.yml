@@ -1,7 +1,8 @@
 name: Hugo-CI
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
     paths-ignore:
         '.github/**'
 
