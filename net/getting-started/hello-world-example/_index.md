@@ -5,7 +5,7 @@ weight: 80
 url: /net/hello-world-example/
 ---
 
-## **Hello World Example**
+## <ins>**Hello World Example**
 
 
 A "Hello World" example is traditionally used to introduce features of a programming language or software with a simple use case.

@@ -5,7 +5,7 @@ weight: 60
 url: /net/licensing/
 ---
 
-## **Evaluation Version Limitations**
+## <ins>**Evaluation Version Limitations**
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
 **PDF created with an evaluation watermark** 
@@ -13,7 +13,7 @@ The evaluation version of Aspose.PDF for .NET provides full product functionalit
 
 **Limit of the Number of Collection Items that can be Processed** 
 In the evaluation version, only four items can be processed from any collection (for example, only four pages, four form fields, etc.).
-## **Apply License using File or Stream Object**
+## <ins>**Apply License using File or Stream Object**
 The license can be loaded from a file or stream object. The easiest way to set a license is to put the license file in the same folder as the Aspose.PDF.dll file and specify the file name, without a path, as shown in the example below.
 
 {{% alert color="primary" %}} 
@@ -43,7 +43,7 @@ Aspose.PDF allows developers to apply metered key. It is a new licensing mechan
 A new class [Metered](https://apireference.aspose.com/net/pdf/aspose.pdf/metered/) has been introduced to apply metered key. Following is the sample code demonstrating how to set metered public and private keys.
 
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-QuickStart-ApplyMeteredLicense-1.cs" >}}
-## **Using as Embedded Resource**
+## <ins>**Using as Embedded Resource**
 To apply a license, you can [load it from file or stream](). Another neat way of packaging the license with your application is to include it as an embedded resource into one of the assemblies that calls Aspose.PDF for .NET.
 
 To include the file as an embedded resource:

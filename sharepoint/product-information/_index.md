@@ -5,7 +5,8 @@ weight: 10
 url: /sharepoint/product-information/
 ---
 
-###### **This section includes the following topics:** 
+## **Articles in this section**
+
 - [Product Overview](/pdf/sharepoint/product-overview/)
 - [Supported File Formats](/pdf/sharepoint/supported-file-formats/)
 - [Features](/pdf/sharepoint/features/)

@@ -5,7 +5,7 @@ weight: 50
 url: /net/installation/
 ---
 
-## **Evaluate Aspose.PDF for .NET**
+## <ins>**Evaluate Aspose.PDF for .NET**
 You can easily download Aspose.PDF for .Net for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to [apply the license](/pdf/net/licensing/#licensing-loadingalicensefromastreamobjecthttps-//docs-asposeptyltd-com/display/pdfnet/licensing).
 
 The evaluation version of Aspose.PDF (without a license specified) provides full product functionality, but it has two limitations: it inserts an evaluation watermark, and only four elements of any collection can be viewed/edited.
@@ -15,7 +15,7 @@ The evaluation version of Aspose.PDF (without a license specified) provides full
 If you want to test Aspose.PDF for .NET without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
 {{% /alert %}} 
-## **Installing Aspose.PDF for .NET through NuGet**
+## <ins>**Installing Aspose.PDF for .NET through NuGet**
 NuGet is a free, open source developer-focused package management system for the .NET platform intent on simplifying the process of incorporating third party libraries into a .NET application during development. It is a Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects that use the .NET Framework. A library or tool can easily be shared with other developers by creating a NuGet package and storing it inside a NuGet repository. When you install the package, NuGet copies files to your solution and automatically makes the necessary changes, such as adding references and changing your app.config or web.config files. If you decide to remove the library, NuGet removes files and reverses whatever changes it made to your project so that no clutter is left.
 ### **Referencing Aspose.PDF for .NET**
 Taking benefit of this wonderful feature, we have bundled [Aspose.PDF for .NET](https://www.nuget.org/packages/Aspose.PDF) libraries into a NuGet package and uploaded it into a NuGet repository. With this option, you benefit from using Aspose.PDF for .NET without installing this component on your system. NuGet runs in Visual Studio 2010 and higher version(s), Visual Web Developer 2010, and Windows Phone Developer Tools 7.1. In our tests, we have tested it with Visual Studio 2015 Ultimate.
@@ -61,7 +61,7 @@ You can download the DLL of Aspose.PDF for .NET from NuGet without using Package
 
 
 ![todo:image_alt_text](installation_1.png)
-## **Working with .NET Core DLLs in Non-Windows Environment**
+## <ins>**Working with .NET Core DLLs in Non-Windows Environment**
 As Aspose.PDF for .NET provides .NET Standard 2.0 (.NET Core 2.0) support, so it can be used in Core Applications running in Linux like operating systems. We are constantly working over improving the .NET Core support in our API. However, there are some following operations which we recommend our customers to perform, in order to get better results while using features of Aspose.PDF for .NET:
 
 Please install:

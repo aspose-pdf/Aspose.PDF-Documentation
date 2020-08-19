@@ -10,7 +10,7 @@ url: /net/feature-list/
 The following table summarizes the features available in Aspose.PDF for .NET DOM API.
 
 {{% /alert %}} 
-## **Aspose.PDF Features**
+## <ins>**Aspose.PDF Features**
 ### **General Features**
 - Written completely in C#, works with .NET Framework.
 - .NET environment required.
@@ -118,7 +118,7 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Modify password.
 ### **Miscellaneous**
 - Get build version information.
-## **Aspose.PDF.Facades Features**
+## <ins>**Aspose.PDF.Facades Features**
 ### **General Features**
 - Written completely in C#, works with .NET Framework.
 - .NET environment required.

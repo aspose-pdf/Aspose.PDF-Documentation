@@ -4,8 +4,7 @@ type: docs
 weight: 10
 url: /cpp/getting-started/
 ---
-
-### **Getting Started**
+## **Articles in this section**
 - [Product Overview](/pdf/cpp/product-overview/)
 - [Supported File Formats](/pdf/cpp/supported-file-formats/)
 - [System Requirements](/pdf/cpp/system-requirements/)

@@ -5,7 +5,8 @@ weight: 20
 url: /sharepoint/developer-guide/
 ---
 
-###### **This section includes the following topics:**
+## **Articles in this section**
+
 - [Export a Particular Item from a List](/pdf/sharepoint/export-a-particular-item-from-a-list/)
 - [Add Watermark to PDF](/pdf/sharepoint/add-watermark-to-pdf/)
 - [Convert to PDF](/pdf/sharepoint/convert-to-pdf/)

@@ -5,7 +5,8 @@ weight: 30
 url: /sharepoint/technical-articles/
 ---
 
-###### **This section includes the following topics:** 
+## **Articles in this section**
+
 - [Creating and Exporting Template](/pdf/sharepoint/creating-and-exporting-template/)
 - [Save SharePoint Wiki page as PDF](/pdf/sharepoint/save-sharepoint-wiki-page-as-pdf/)
 - [How to Create and Convert an XML File to PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)
