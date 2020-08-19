@@ -13,6 +13,9 @@ This article demonstrates how to use Aspose.PDF for SharePoint to generate an en
 
 {{% /alert %}} 
 ### **Creating a Secure PDF**
+
+{{% alert color="primary" %}} 
+
 To demonstrate the feature, first we configure the **PDF Secure Setting** option for owner and user password and encryption algorithm. The example then merges two documents from a document library.
 #### **Setting PDF Secure Setting Options**
 Open **PDF Secure Settings** option from Site Settings and set algorithm, owner password and user password.
@@ -40,3 +43,5 @@ Merge two documents using the **Convert to PDF** option. This feature merges mul
 Output file is encrypted.
 
 ![todo:image_alt_text](creating-a-secure-pdf_4.png)
+
+{{% /alert %}} 

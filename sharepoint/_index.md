@@ -6,12 +6,12 @@ url: /sharepoint/
 is_root: true
 ---
 
-### Welcome to Sharepoint documentation
+### **Aspose.PDF for SharePoint**
 
-[Product Information](/pdf/sharepoint/product-information/)
+- [Product Information](/pdf/sharepoint/product-information/)
 
-[Developer Guide](/pdf/sharepoint/developer-guide/)
+- [Developer Guide](/pdf/sharepoint/developer-guide/)
 
-[Technical Articles](/pdf/sharepoint/technical-articles/)
+- [Technical Articles](/pdf/sharepoint/technical-articles/)
 
-[Release Notes](/pdf/sharepoint/release-notes/)
+- [Release Notes](/pdf/sharepoint/release-notes/)

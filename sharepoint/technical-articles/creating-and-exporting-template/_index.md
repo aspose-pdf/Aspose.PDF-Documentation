@@ -13,6 +13,8 @@ From Aspose.PDF for SharePoint 1.9.2, PDF template support also covers SharePoin
 
 {{% /alert %}} 
 ### **Creating and Exporting Templates**
+{{% alert color="primary" %}} 
+
 To use the Aspose.PDF for SharePoint export feature, first create a list that uses “PDF Templates”.
 
 Creating a list that uses PDF Templates: 
@@ -79,3 +81,5 @@ When a template is completely configured, you are ready to export lists or items
 **Exporting a list to PDF using a task list template:** 
 
 ![todo:image_alt_text](creating-and-exporting-template_7.png)
+
+{{% /alert %}} 

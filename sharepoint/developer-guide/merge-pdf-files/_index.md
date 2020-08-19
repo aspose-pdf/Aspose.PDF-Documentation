@@ -11,20 +11,25 @@ Merging/concatenating of multiple PDF files into a single PDF file is very popul
 
 {{% /alert %}} 
 ### **Merge PDF files**
+
+{{% alert color="primary" %}}
+
 Merge multiple PDF files from SharePoint Document library in a single PDF as following:
 
-\1.  Select the PDF files from SharePoint Document library to be merged.
+1.  Select the PDF files from SharePoint Document library to be merged.
 
 ![todo:image_alt_text](merge-pdf-files_1.png)
 
-\2.  Click Aspose Tools tab in Library Tools.
+2.  Click Aspose Tools tab in Library Tools.
 
 ![todo:image_alt_text](merge-pdf-files_2.png)
 
-\3.  Click Merge to PDF option from Library Tools to merge all the selected PDF files to resultant PDF.
+3.  Click Merge to PDF option from Library Tools to merge all the selected PDF files to resultant PDF.
 
 ![todo:image_alt_text](merge-pdf-files_3.png)
 
-\4.  Prompt will be shown to download/save the resultant PDF file with appropriate name.
+4.  Prompt will be shown to download/save the resultant PDF file with appropriate name.
 
 ![todo:image_alt_text](merge-pdf-files_4.png)
+
+{{% /alert %}} 

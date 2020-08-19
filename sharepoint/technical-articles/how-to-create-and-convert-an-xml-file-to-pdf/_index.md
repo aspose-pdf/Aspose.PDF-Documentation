@@ -11,15 +11,18 @@ Aspose.PDF for SharePoint is built on top of our award winning Aspose.PDF for .N
 
 {{% /alert %}} 
 ### **Creating and XML File and Converting it to PDF**
+
+{{% alert color="primary" %}} 
+
 Step by step, this article walks you through the process of creating and XML file and converting it to PDF:
 
-1. [Create an XML file](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf-html/).
-1. [Create a PDF template](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf-html/).
-1. [Load the XML template](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf-html/).
-1. [Specify the path to the source path](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf-html/).
-1. [Specify file properties](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf-html/).
-1. [Export the file to PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf-html/).
-1. [Save the PDF file](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf-html/).
+1. [Create an XML file](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
+2. [Create a PDF template](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
+3. [Load the XML template](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
+4. [Specify the path to the source path](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
+5. [Specify file properties](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
+6. [Export the file to PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
+7. [Save the PDF file](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
 #### **Step 1: Create XML File**
 First create an XML file based on the Aspose.PDF for .NET Document Object Model. 
 
@@ -64,7 +67,7 @@ Before continuing, make sure that SharePoint Foundation server 2010 is properly 
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 #### **Step 3: Load XML Template**
-Once the template has been created, load [the XML file](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf-html/):
+Once the template has been created, load [the XML file](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
 
 1. On the PDF template page, select **Add new item**.
 
@@ -129,3 +132,5 @@ The PDF document has been saved and can be opened. In the image below, note the 
 
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
+
+{{% /alert %}} 

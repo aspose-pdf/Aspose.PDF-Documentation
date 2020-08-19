@@ -15,6 +15,8 @@ Aspose.PDF for SharePoint lets you add a barcode to a PDF document. Users can ad
 
 {{% /alert %}} 
 
+{{% alert color="primary" %}} 
+
 To enable the barcode feature for a specific library, use the **Watermark Settings** button in the **Aspose PDF Watermark Tools** tab in **Library Tools** as shown below.
 
 **PDF watermark settings** 
@@ -22,3 +24,5 @@ To enable the barcode feature for a specific library, use the **Watermark Settin
 ![todo:image_alt_text](add-barcode-to-a-pdf-file_2.png)
 
 After you enable barcodes for the specific library, Aspose.PDF for SharePoint adds a barcode to any PDF document added to that library.
+
+{{% /alert %}} 

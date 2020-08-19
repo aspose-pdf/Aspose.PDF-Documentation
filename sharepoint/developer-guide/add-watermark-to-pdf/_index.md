@@ -15,6 +15,8 @@ Aspose.PDF for SharePoint lets you add watermark to a PDF document. The feature 
 
 {{% /alert %}} 
 
+{{% alert color="primary" %}} 
+
 To enable watermark feature for a specific library:
 
 1. Click **Watermark Settings** in the **Aspose Tools** tab in the **Library Tools** dialog. 
@@ -35,3 +37,5 @@ Watermark settings are list-specific so you can choose different watermark setti
 - **Color** – the watermark's color.
 
 After you enable watermark for a specific library, Aspose.PDF adds watermarks to each PDF document added to that library.
+
+{{% /alert %}} 

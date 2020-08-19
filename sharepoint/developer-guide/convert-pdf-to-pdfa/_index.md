@@ -13,12 +13,17 @@ Currently Aspose.PDF for SharePoint supports only PDFA1b standard.
 
 {{% /alert %}} 
 ### **Creating a PDFA compliant Document**
+
+{{% alert color="primary" %}} 
+
 Convert PDF from SharePoint Document library to PDFA as following:
 
 1. Click **Convert to PDF** in the ECB menu.
 
 ![todo:image_alt_text](convert-pdf-to-pdfa_1.png)
 
-`      `2. Download and save the resultant PDF file.
+2. Download and save the resultant PDF file.
 
 ![todo:image_alt_text](convert-pdf-to-pdfa_2.png)
+
+{{% /alert %}} 

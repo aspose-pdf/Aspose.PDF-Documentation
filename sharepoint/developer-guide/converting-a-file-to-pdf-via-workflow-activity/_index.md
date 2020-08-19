@@ -11,6 +11,9 @@ Support for workflows is key functionality of Microsoft Office SharePoint Server
 
 {{% /alert %}} 
 ### **Setting up a Workflow**
+
+{{% alert color="primary" %}}
+
 This example creates a workflow that converts any new item in a document library to PDF format and stores it in another document library. The example users the **Personal Documents** library as the source library and the **Pdf** sub-folder in the **Shared Documents** library as the destination library.
 
 Aspose.PDF for SharePoint supports conversion of HTML, text and image files.
@@ -101,3 +104,5 @@ To test the workflow:
    **The destination library** 
 
 ![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_9.png)
+
+{{% /alert %}} 
