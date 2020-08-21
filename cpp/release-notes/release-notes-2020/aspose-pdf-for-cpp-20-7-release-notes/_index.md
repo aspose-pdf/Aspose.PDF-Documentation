@@ -11,7 +11,7 @@ This page contains release notes information for Aspose.PDF for C++ 20.7.
 
 {{% /alert %}}
 
-This new version of Aspose.PDF for C++ has codebase of Aspose.PDF for .Net 20.7 and includes following major improvements.
+This new version of Aspose.PDF for C++ has codebase of Aspose.PDF for .NET 20.7 and includes following major improvements.
 
  * C++-styled iteration has been added over the library containers. begin/end/cbegin/cend/rbegin/rend methods are now present where possible.
  * Translation of System::String class to and from various STL string types have been improved. Respective constructors and conversion operators were added (yet explicit, to avoid undesired invocations of suboptimal operations). Also, the String class is now working fine with STL streams.
