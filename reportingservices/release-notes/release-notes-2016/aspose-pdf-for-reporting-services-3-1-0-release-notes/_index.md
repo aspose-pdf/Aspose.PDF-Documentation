@@ -1,5 +1,5 @@
 ---
-title: Aspose.Pdf for Reporting Services 3.1.0 Release Notes
+title: Aspose.PDF for Reporting Services 3.1.0 Release Notes
 type: docs
 weight: 30
 url: /reportingservices/aspose-pdf-for-reporting-services-3-1-0-release-notes/

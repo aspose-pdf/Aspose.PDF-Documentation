@@ -1,5 +1,5 @@
 ---
-title: Aspose.Pdf for SharePoint 2.2.0 Release Notes
+title: Aspose.PDF for SharePoint 2.2.0 Release Notes
 type: docs
 weight: 10
 url: /sharepoint/aspose-pdf-for-sharepoint-2-2-0-release-notes/

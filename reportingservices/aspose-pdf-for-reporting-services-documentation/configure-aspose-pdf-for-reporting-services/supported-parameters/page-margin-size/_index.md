@@ -5,28 +5,28 @@ weight: 70
 url: /reportingservices/page-margin-size/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-RS designer does not support the setting of page margin size. Aspose.Pdf for Reporting Services provides four parameters to set the corresponding page margin size, they are:
+RS designer does not support the setting of page margin size. Aspose.PDF for Reporting Services provides four parameters to set the corresponding page margin size, they are:
 
-{{% /alert %}} 
+{{% /alert %}}
 
-\1)
+1)
 **Parameter Name**: PageMarginLeft
 **Date Type**: Float
 **Values supported**:
 
-\2)
+2)
 **Parameter Name**: PageMarginRight
 **Date Type**: Float
 **Values supported**:
 
-\3)
+3)
 **Parameter Name**: PageMarginTop
 **Date Type**: Float
 **Values supported**:
 
-\4)
+4)
 **Parameter Name**: PageMarginBottom
 **Date Type**: Float
 **Values supported**:

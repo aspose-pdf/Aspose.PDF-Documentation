@@ -5,11 +5,11 @@ weight: 100
 url: /reportingservices/pdf_a-conformance/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-Please visit the following link to get some introduction about PDF Conformance from '[How to Create PDF/A-1 with Aspose.PDF](/pages/createpage.action?spaceKey=pdfnet&title=How+to+++Create+PDF+A+1+with+Aspose.PDF)'.
+Please visit the following link to get some introduction about PDF Conformance from '[How to Create PDF/A-1 with Aspose.PDF](https://docs.aspose.com/pdf/net/manipulate-pdf-document/)'.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 If you want to support creation of PDF/A, please add report parameter as the following:
 

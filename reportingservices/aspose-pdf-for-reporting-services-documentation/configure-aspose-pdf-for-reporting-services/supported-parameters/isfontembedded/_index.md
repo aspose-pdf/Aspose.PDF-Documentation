@@ -5,11 +5,11 @@ weight: 50
 url: /reportingservices/isfontembedded/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-RS designer does not support the embedded font for text; with Aspose.Pdf for Reporting Services you can easily embed font information into your PDF document.
+RS designer does not support the embedded font for text; with Aspose.PDF for Reporting Services you can easily embed font information into your PDF document.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 **Parameter Name**: IsFontEmbedded
 **Date Type**: Boolean

@@ -5,11 +5,11 @@ weight: 110
 url: /reportingservices/list-section/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-You can get some introduction about List Section from [here](http://www.aspose.com/documentation/.net-components/aspose.pdf-for-.net/manipulating-list-of-contents.html).
+You can get some introduction about List Section from [here](https://docs.aspose.com/pdf/net/manipulate-pdf-document/).
 
-{{% /alert %}} 
+{{% /alert %}}
 
 If you want to support creation of List Section, such as Table of Contents, List of Tables and so on, please add report parameter as the following:
 
@@ -36,7 +36,5 @@ If you want to support creation of List Section, such as Table of Contents, List
 </Extension>
 
 </Render>
-
-
 
 {{< /highlight >}}
