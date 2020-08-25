@@ -11,34 +11,25 @@ Report builder does not support the capability to specify text alignment for tex
 
 {{% /alert %}} 
 
-**Custom Property Name** : TextAlignment
-**Custom Property Type** : String
-**Custom Property Values** : Justify, FullJustify
+{{% alert color="primary" %}} 
+**Custom Property Name** : TextAlignment   
+**Custom Property Type** : String   
+**Custom Property Values** : Justify, FullJustify   
 
 In report the code should be like the following:
 
 **Example**
 
 {{< highlight csharp >}}
-
- <Textbox Name="textbox1">
-
+<Textbox Name="textbox1">
 <value> AsposePdf4RS </value>
-
   <CustomProperties>
-
    <CustomProperty>
-
      <Name>Aspose.TextAlignment</Name>
-
      <Value>Justify</Value>
-
    </CustomProperty>
-
   </CustomProperties>
-
 </Textbox>
 
-
-
 {{< /highlight >}}
+{{% /alert %}}

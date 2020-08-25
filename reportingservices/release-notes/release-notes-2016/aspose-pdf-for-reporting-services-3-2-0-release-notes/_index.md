@@ -5,7 +5,7 @@ weight: 20
 url: /reportingservices/aspose-pdf-for-reporting-services-3-2-0-release-notes/
 ---
 
-Aspose.PDF for Reporting Services has been updated to version 3.2.0 and we are pleased to announce this release..
+Aspose.PDF for Reporting Services has been updated to version 3.2.0 and we are pleased to announce this release.
 
 Visit the documentation to learn how to get started with Aspose.PDF for Reporting Services
 

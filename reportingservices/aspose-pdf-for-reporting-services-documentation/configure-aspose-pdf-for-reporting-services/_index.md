@@ -6,5 +6,5 @@ url: /reportingservices/configure-aspose-pdf-for-reporting-services/
 ---
 
 ###### **This section includes the following topics:** 
-- [Setting Parameters](/pdf/reportingservices/setting-parameters-html/)
-- [Supported Parameters](/pdf/reportingservices/supported-parameters-html/)
+- [Setting Parameters](/pdf/reportingservices/setting-parameters/)
+- [Supported Parameters](/pdf/reportingservices/supported-parameters/)

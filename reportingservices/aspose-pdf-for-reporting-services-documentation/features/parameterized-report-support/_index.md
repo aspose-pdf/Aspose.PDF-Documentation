@@ -15,7 +15,7 @@ Aspose.PDF for Reporting Services supports two kinds of parameters:
 - Report parameters: parameters suitable for specific reports rather than all.
 
 {{% /alert %}} 
-### **Supported Parameters**
+### <ins>**Supported Parameters**
 In the current version, Aspose.PDF render supports many aspects of parameters, which are: 
 
 - Page orientation.
@@ -29,4 +29,4 @@ In the current version, Aspose.PDF render supports many aspects of parameters, w
 - List section.
 - Debug information.
 
-Find out more about the parameters from the [Configure Aspose.PDF for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services-html/) article. 
+Find out more about the parameters from the [Configure Aspose.PDF for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/) article. 
