@@ -11,30 +11,25 @@ For the list and rectangle elements of reporting services, every row of list or 
 
 {{% /alert %}} 
 
-**Parameter Name**: IsRowBrokenForFixedHeight
-**Date Type**: Boolean
-**Values supported**: True, False (default)
+{{% alert color="primary" %}} 
+
+**Parameter Name**: IsRowBrokenForFixedHeight   
+**Date Type**: Boolean   
+**Values supported**: True, False (default)   
 
 **Example**
 
 {{< highlight csharp >}}
 
- <Render>
-
+<Render>
 ...
-
 <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices">
-
 <Configuration>
-
 < IsRowBrokenForFixedHeight >True</IsRowBrokenForFixedHeight>
-
 </Configuration>
-
 </Extension>
-
 </Render>
 
-
-
 {{< /highlight >}}
+
+{{% /alert %}} 

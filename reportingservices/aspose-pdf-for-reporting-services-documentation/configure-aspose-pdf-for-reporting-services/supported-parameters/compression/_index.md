@@ -11,30 +11,24 @@ The Reporting Services designer does not support specifying the compression of t
 
 {{% /alert %}} 
 
-**Parameter Name**: CompressionLevel
-**Date Type**: Integer
-**Values supported**: 1 to 9, where 9 is maximum compression. Default value is 6.
+{{% alert color="primary" %}} 
+
+**Parameter Name**: CompressionLevel   
+**Date Type**: Integer   
+**Values supported**: 1 to 9, where 9 is maximum compression. Default value is 6.   
 
 **Example**
-
 {{< highlight csharp >}}
 
  <Render>
-
 ...
-
 <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer, Aspose.PDF.ReportingServices">
-
 <Configuration>
-
 <CompressionLevel>9</CompressionLevel>
-
 </Configuration>
-
 </Extension>
-
 </Render>
 
-
-
 {{< /highlight >}}
+
+{{% /alert %}} 

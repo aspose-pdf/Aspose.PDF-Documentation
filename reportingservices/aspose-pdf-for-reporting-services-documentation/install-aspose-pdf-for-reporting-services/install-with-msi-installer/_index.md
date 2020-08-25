@@ -17,4 +17,8 @@ Automatic installation is the best option that works in most cases. However, you
 - You need to install the product on a named (not default) instance of Reporting Services or on multiple instances.
 - You upgrade to the latest version and just want to replace the assembly instead of uninstalling the old version and installing the new one using MSI installer.
 
+{{% alert color="primary" %}}
+
 Please note that when performing manual installation, some files including offline product documentation etc are not upgraded. 
+
+{{% /alert %}}
