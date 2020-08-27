@@ -16,11 +16,9 @@ The following example shows the typical code needed to export a report to PDF fo
 {{< highlight csharp >}}
 
 
-
    import com.aspose.pdf.jr3_7_0.jasperreports.*;
 
    com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter exporter = new com.aspose.pdf. jr3_7_0.jasperreports.JrPdfExporter();
-
 
 
    File sourceFile = new File(fileName);
@@ -30,15 +28,12 @@ The following example shows the typical code needed to export a report to PDF fo
    exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
 
 
-
    File destFile = new File(sourceFile.getParent(), jasperPrint.getName() + ".pdf");
 
    exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME, destFile.toString());
 
 
-
    exporter.exportReport(); 
-
 
 
 {{< /highlight >}}

@@ -15,4 +15,4 @@ Aspose.PDF for JasperReports evaluation and paid versions are the same download.
 
 Please take an advantage of the evaluation version of Aspose.PDF for JasperReports: it does not have time limitations and comes with free technical support.
 
-Evaluation mode injects watermarks into exported reports. When you [buy a license](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simply apply the license](/pdf/jasperreports/licensing-html/) and watermark will no more appear in the output documents. 
+Evaluation mode injects watermarks into exported reports. When you [buy a license](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simply apply the license](/pdf/jasperreports/licensing/) and watermark will no more appear in the output documents. 

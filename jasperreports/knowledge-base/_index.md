@@ -6,4 +6,4 @@ url: /jasperreports/knowledge-base/
 ---
 
 ###### **This section includes the following topics:** 
-- [Technical Articles](/pdf/jasperreports/technical-articles-html/)
+- [Technical Articles](/pdf/jasperreports/technical-articles/)

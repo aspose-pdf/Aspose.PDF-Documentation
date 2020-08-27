@@ -6,11 +6,11 @@ url: /jasperreports/product-information/
 ---
 
 ###### **This section includes the following topics:** 
-- [Product Overview](/pdf/jasperreports/product-overview-html/)
-- [Supported File Formats](/pdf/jasperreports/supported-file-formats-html/)
-- [Feature Tour](/pdf/jasperreports/feature-tour-html/)
-- [Sample Reports Gallery](/pdf/jasperreports/sample-reports-gallery-html/)
-- [Installation](/pdf/jasperreports/installation-html/)
-- [Licensing](/pdf/jasperreports/licensing-html/)
-- [Evaluate Aspose.Pdf](/pdf/jasperreports/evaluate-aspose-pdf-html/)
-- [API Limitations](/pdf/jasperreports/api-limitations-html/)
+- [Product Overview](/pdf/jasperreports/product-overview/)
+- [Supported File Formats](/pdf/jasperreports/supported-file-formats/)
+- [Feature Tour](/pdf/jasperreports/feature-tour/)
+- [Sample Reports Gallery](/pdf/jasperreports/sample-reports-gallery/)
+- [Installation](/pdf/jasperreports/installation/)
+- [Licensing](/pdf/jasperreports/licensing/)
+- [Evaluate Aspose.Pdf](/pdf/jasperreports/evaluate-aspose-pdf/)
+- [API Limitations](/pdf/jasperreports/api-limitations/)
