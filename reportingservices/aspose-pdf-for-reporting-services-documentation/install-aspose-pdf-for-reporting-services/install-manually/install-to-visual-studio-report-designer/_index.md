@@ -13,11 +13,17 @@ You may want to add Aspose.PDF rendering extension directly to the Visual Studio
 
 **To do so, please follow these steps (applies to** **Visual Studio** **2008):**
 
+{{% alert color="primary" %}}
 **Step 1.** Open the C:\Program Files\Microsoft Visual Studio 8\Common7\IDE\PrivateAssemblies folder.
+{{% /alert %}} 
 
+{{% alert color="primary" %}}
 **Step 2.** Copy Aspose.PDF.ReportingServices.dll to that folder.
+{{% /alert %}} 
 
-**Step 3.** Register Aspose.PDF for Reporting Services as a rendering extension. To do this, locate RSReportDesigner.config in the folder, open it and add the following lines into the <Render> element:
+{{% alert color="primary" %}}
+**Step 3.** Register Aspose.PDF for Reporting Services as a rendering extension. To do this, locate RSReportDesigner.config in the folder, open it and add the following lines into the ```<Render>``` element:
+{{% /alert %}} 
 
 **Example**
 
@@ -34,10 +40,11 @@ You may want to add Aspose.PDF rendering extension directly to the Visual Studio
 </Render>
 
 
-
 {{< /highlight >}}
 
-**Step 4.** Give Aspose.PDF for Reporting Services permissions to execute. To do this, locate RSPreviewPolicy.config in the folder, open it and add the following as the last item in the second to outer <CodeGroup> element (which should be <CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission.">):
+{{% alert color="primary" %}}
+**Step 4.** Give Aspose.PDF for Reporting Services permissions to execute. To do this, locate RSPreviewPolicy.config in the folder, open it and add the following as the last item in the second to outer ```<CodeGroup>``` element (which should be ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission.">):```
+{{% /alert %}}
 
 **Example**
 
@@ -71,4 +78,6 @@ Name="Aspose.PDF_for_Reporting_Services" Description="This code group grants ful
 
 {{< /highlight >}}
 
+{{% alert color="primary" %}}
 **Step 5.** Reload Visual Studio.
+{{% /alert %}}

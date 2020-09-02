@@ -11,6 +11,8 @@ Aspose Pdf for Reporting Service Config uring to ol can help you to config the '
 
 {{% /alert %}} 
 
+{{% alert color="primary" %}} 
+
 If you wan t to register the DLL file, the 'Register' action type should be selected. And 'Unregister' action type should be used for unregistering. 
 
 ![todo:image_alt_text](install-with-configuring-tool_1.png)
@@ -23,3 +25,4 @@ If you wan t to register the DLL file, the 'Register' action type should be sele
 1. In the tab pages, select the version of the current product you want to configure. In this step, it is necessary for you to check the DLL file be suitable for the current version. If the current version of this product is not installed on your machine, the configuration tool will inform you with tips. If you are configuring for RS and the name of MS SQLServer instance is not 'MSSQLSERVER', please input the custom instance name, then press refresh button.
 1. Make sure that the configure file’s path and name showed in the textbox be correct. If not, you can press the button to look it up manually.
 1. Press 'Config' button. After several seconds, it will inform you the result of configuration, successful or failed.
+{{% /alert %}} 

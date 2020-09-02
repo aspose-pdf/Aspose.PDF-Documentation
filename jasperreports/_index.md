@@ -12,6 +12,8 @@ is_root: true
 
 **Welcome to Aspose.PDF for JasperReports**
 
+Aspose.PDF for JasperReports is a flexible component designed to export reports from JasperReports and JasperServer to Portable Document Format (PDF). Important report features such as tables, charts and images are converted to PDF with the highest degree of precision.
+
 {{% /alert %}} 
 
 ## **Aspose.PDF for JasperReports Resources**

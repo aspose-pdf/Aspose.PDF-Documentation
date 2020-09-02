@@ -11,32 +11,25 @@ Report Definition Language does not allow you to specify page orientation in the
 
 {{% /alert %}} 
 
-The default orientation is portrait.
+{{% alert color="primary" %}} 
 
+The default orientation is portrait.
 **Parameter Name**: IsLandscape
 **Date Type**: Boolean
 **Values supported**: True, False (default)
 
 **Example**
-
 {{< highlight csharp >}}
-
- <Render>
-
+<Render>
 ...
 
 <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices ">
-
 <Configuration>
-
 < IsLandscape >True</IsLandscape>
-
 </Configuration>
-
 </Extension>
-
 </Render>
 
-
-
 {{< /highlight >}}
+
+{{% /alert %}}
