@@ -29,7 +29,6 @@ This page contains release notes information for Aspose.PDF for .NET 20.9.
 |PDFNET-48570| 	Added extra content after XFD import	| Bug|
 |PDFNET-48579| 	Importing annotation with redaction does not work	| Bug|
 |PDFNET-48599| 	 Extra content added after XFD import.	| Bug|
-|PDFNET-48608| 	MHT to PDF incorrect colors being rendered [Regression]	| Bug|
 |PDFNET-48620| 	Exception has been thrown on save method - System.ArgumentException: Stream was not writable	| Bug|
 |PDFNET-48624| 	Attachments are missing after converting PDF to PDFA	| Bug|
 |PDFNET-48660| 	Exception has been thrown while importing annotations to a PDF: Unknown XFDF element 'square'	| Bug|

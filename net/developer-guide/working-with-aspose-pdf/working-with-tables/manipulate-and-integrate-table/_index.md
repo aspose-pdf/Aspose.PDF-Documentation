@@ -6,7 +6,7 @@ url: /net/manipulate-and-integrate-table/
 ---
 
 ## **Set Border Style, Margins and Padding of the Table (MergedAPI)**
-[Aspose.PDF for .NET](/pdf/net/home-html/) allows developers to create tables in PDF documents. Moreover, they can apply effects like border style, margins and cell padding, to the tables. Before going into more technical details, it's important to understand the concepts of border, margins and padding which are presented below in a diagram:
+[Aspose.PDF for .NET](/pdf/net/) allows developers to create tables in PDF documents. Moreover, they can apply effects like border style, margins and cell padding, to the tables. Before going into more technical details, it's important to understand the concepts of border, margins and padding which are presented below in a diagram:
 
 **Borders, margins and padding** 
 
