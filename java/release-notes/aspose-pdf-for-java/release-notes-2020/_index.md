@@ -7,6 +7,7 @@ url: /java/release-notes-2020/
 
 ## **Release Notes - 2020**
 
+- [Aspose.PDF for Java 20.9 Release Notes](/pdf/java/aspose-pdf-for-java-20-9-release-notes/)
 - [Aspose.PDF for Java 20.8 Release Notes](/pdf/java/aspose-pdf-for-java-20-8-release-notes/)
 - [Aspose.PDF for Java 20.7 Release Notes](/pdf/java/aspose-pdf-for-java-20-7-release-notes/)
 - [Aspose.PDF for Java 20.6 Release Notes](/pdf/java/aspose-pdf-for-java-20-6-release-notes/)
