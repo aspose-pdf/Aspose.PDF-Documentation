@@ -1,7 +1,7 @@
 ---
 title: Optimization Methods Overview
 type: docs
-weight: 40
+weight: 41
 url: /net/optimize-pdf-methods-overview/
 ---
 

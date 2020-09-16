@@ -18,7 +18,7 @@ A PDF document may sometimes contain additional data. Reducing the size of a PDF
 - Remove or flatten annotations
 
 {{% alert color="primary" %}}
-Detailed explanation of optimization methods can be found in the [Optimization Methods Overview](pdf/net/optimize-pdf-methods-overview/) page.
+Detailed explanation of optimization methods can be found in the [Optimization Methods Overview](/net/optimize-pdf-methods-overview/) page.
 {{% /alert %}}
 ## **Optimize PDF Document for the Web**
 Optimization, or linearization for Web, refers to the process of making a PDF file suitable for online browsing using a web browser. To optimize a file for web display:
