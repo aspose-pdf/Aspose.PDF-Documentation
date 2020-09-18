@@ -15,6 +15,7 @@ This page contains release notes information for Aspose.PDF for Java 20.8.
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
 |PDFJAVA-39694| PDF/X-1A standard inquiry|	Enhancement|
+|PDFJAVA-38858| PDF to DOCX - API is taking too much time|Enhancement|
 |PDFJAVA-39558| PDF to PDF/A - Output document is not valid|Bug|
 |PDFJAVA-39468| PDF file not properly converted to XLSX|	Bug
 |PDFJAVA-39407| JpegDevice.process throws exception|	Bug|
@@ -24,6 +25,7 @@ This page contains release notes information for Aspose.PDF for Java 20.8.
 |PDFJAVA-39574| too many open files because of log handler|	Bug|
 |PDFJAVA-39521| Abnormalities while generating PDF/X-1a documents|Bug|
 |PDFJAVA-39409| PDF file not properly converted to HTML|Bug|
+|PDFJAVA-39405| PDF file not properly converted to HTML|Bug|
 
 ## **Public API and Backwards Incompatible Changes**
 
