@@ -1,54 +1,65 @@
 ---
-title: Aspose.PDF for Java 20.8 Release Notes
+title: Aspose.PDF for Java 20.9 Release Notes
 type: docs
-weight: 55
-url: /java/aspose-pdf-for-java-20-8-release-notes/
+weight: 50
+url: /java/aspose-pdf-for-java-20-9-release-notes/
 ---
 
 {{% alert color="primary" %}}
 
-This page contains release notes information for Aspose.PDF for Java 20.8.
+This page contains release notes information for Aspose.PDF for Java 20.9.
 
 {{% /alert %}}
 ## **Improvements and Changes**
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFJAVA-39694| PDF/X-1A standard inquiry|	Enhancement|
-|PDFJAVA-39558| PDF to PDF/A - Output document is not valid|Bug|
-|PDFJAVA-39468| PDF file not properly converted to XLSX|	Bug
-|PDFJAVA-39407| JpegDevice.process throws exception|	Bug|
-|PDFJAVA-36404| Bad results while converting html and embedded css file|Bug|
-|PDFJAVA-35445| PDF to PDF/A - Exception during conversion|	Bug|
-|PDFJAVA-39593| PDF to XLSX, cell shifted to the left|	Bug|
-|PDFJAVA-39574| too many open files because of log handler|	Bug|
-|PDFJAVA-39521| Abnormalities while generating PDF/X-1a documents|Bug|
-|PDFJAVA-39409| PDF file not properly converted to HTML|Bug|
+|PDFJAVA-39758 |PDF to DOCX: Preserve font styles in EnchantedFlow mode|Enhancement|
+|PDFJAVA-39322|Conversion to JPG lasts for too long|Enhancement|
+|PDFJAVA-38858| PDF to DOCX - API is taking too much time|Enhancement
+|PDFJAVA-39583| PDF to HTML conversion issue|Bug|
+|PDFJAVA-39635| Exception has been thrown while importing annotations to a PDF - JDK7|Bug|
+|PDFJAVA-39599| Conversion to HTML - Unicode characters in output file.|Bug|
+|PDFJAVA-39690| Exception has been thrown while importing annotations to a PDF: Unknown XFDF element 'square'|Bug|
+|PDFJAVA-39636| Exception has been thrown while importing annotations to a PDF: Unknown XFDF element|Bug|
+|PDFJAVA-39531| Importing annotation with redaction does not work|Bug|
+|PDFJAVA-39614| Attachments are missing after converting PDF to PDFA|Bug|
+|PDFJAVA-39249| PDF file not properly converted HTML|Bug|
+|PDFJAVA-39511| On conversion to HTML "Value does not fall within the expected range." exception is thrown|Bug|
+|PDFJAVA-39702| On conversion to TIFF an exception has been thrown|Bug|
+|PDFJAVA-39592| Error during PDF to HTML conversion|Bug|
+|PDFJAVA-39579| Added extra content after XFD import|Bug|
+|PDFJAVA-38148| Problem with underline text|Bug|
+|PDFJAVA-37251| PDF to PDFX-1a - output file has compliance errors|Bug|
+|PDFJAVA-39714| Exception has been thrown while importing annotations to a PDF: Unknown XFDF element 'pages'|Bug|
+|PDFJAVA-39576| Extra content added after XFD import.|Bug|
+|PDFJAVA-39746| NullPointerException while converting PDF to XLS|Bug|
+|PDFJAVA-37104| SVG to PDF - the fill attribute of G element is not being preserved|Bug|
+|PDFJAVA-39568| Converted PDFA document is reporting errors in adobe reader|Bug|
+|PDFJAVA-35118| PDF to HTML throws "value does not fall within expected range"|Bug|
+|PDFJAVA-39405| PDF file not properly converted to HTML|Bug|
 
 ## **Public API and Backwards Incompatible Changes**
 
 ### Added New Methods
- * com.aspose.pdf.XForm.getResources(boolean)
-
-### Removed Deprecated Methods
- * com.aspose.pdf.AppearanceDictionary.contains(Object)
- * com.aspose.pdf.AppearanceDictionary.get(Object)
- * com.aspose.pdf.AppearanceDictionary.removeItemInternal(Object)
- * com.aspose.pdf.AppearanceDictionary.set(Object,XForm)
- * com.aspose.pdf.AppearanceDictionary.iterator_Rename_Namesake
-
-### Added New Class
- * com.aspose.pdf.ConvertSoftMaskAction
-
-### Added New Constants
- * com.aspose.pdf.PdfFormat.PDF_X_1A_2001 = 14;
+ * com.aspose.pdf.AnnotationCollection.findByName(String)
+ * com.aspose.pdf.DocSaveOptions.getMemorySaveModePath()
+ * com.aspose.pdf.DocSaveOptions.setMemorySaveModePath(String)
+ * com.aspose.pdf.EmbeddedFileCollection.getKeys()
+ * com.aspose.pdf.EmbeddedFileCollection.findByName(String)
+ * com.aspose.pdf.Form.FlattenSettings.getApplyRedactions()
+ * com.aspose.pdf.Form.FlattenSettings.setApplyRedactions(boolean)
+ * com.aspose.pdf.PageInfo.getAnyMargin()
+ * com.aspose.pdf.PageInfo.setAnyMargin(MarginInfo)
+ * com.aspose.pdf.RedactionAnnotation.getDefaultAppearance()
+ * com.aspose.pdf.RedactionAnnotation.setDefaultAppearance(String)
+ * com.aspose.pdf.HtmlSaveOptions.setRenderTextAsImage(boolean)
+ * com.aspose.pdf.HtmlSaveOptions.isRenderTextAsImage()
 
 ### Renamed Methods
- * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.getPlatformID() ->
- * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.getPlatformId
- * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.setPlatformID(int) ->  
- * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.setPlatformId(int)
- * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.getPlatformSpecificID() ->
- * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.getPlatformSpecificId
- * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.setPlatformSpecificID(int) ->
- * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.setPlatformSpecificId(int)
+ * com.aspose.pdf.ResourceLoadingEventArgs.getUri_ResourceLoadingEventArgs_New() ->
+ * com.aspose.pdf.ResourceLoadingEventArgs.getUri()
+ * com.aspose.pdf.ResourceLoadingResult.getData_ResourceLoadingResult_New() ->
+ * com.aspose.pdf.ResourceLoadingResult.getData()
+ * com.aspose.pdf.ResourceLoadingResult.getEncoding_ResourceLoadingResult_New() ->
+ * com.aspose.pdf.ResourceLoadingResult.getEncoding()
