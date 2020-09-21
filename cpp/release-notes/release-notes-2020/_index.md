@@ -5,6 +5,7 @@ weight: 10
 url: /cpp/release-notes-2020/
 ---
 
+- [Aspose.PDF for CPP 20.9 Release Notes](/pdf/cpp/aspose-pdf-for-cpp-20-9-release-notes/)
 - [Aspose.PDF for CPP 20.8 Release Notes](/pdf/cpp/aspose-pdf-for-cpp-20-8-release-notes/)
 - [Aspose.PDF for CPP 20.7.2 Release Notes](/pdf/cpp/aspose-pdf-for-cpp-20-7-2-release-notes/)
 - [Aspose.PDF for CPP 20.7 Release Notes](/pdf/cpp/aspose-pdf-for-cpp-20-7-release-notes/)
