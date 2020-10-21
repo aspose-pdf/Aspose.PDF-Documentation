@@ -34,15 +34,15 @@ This page contains release notes information for Aspose.PDF for Java 20.10.
 ## **Public API and Backwards Incompatible Changes**
 
 ### Added New Methods
-*com.aspose.pdf.facades.PdfAnnotationEditor.flatteningAnnotations(com.aspose.pdf.Form.FlattenSettings)
-*com.aspose.pdf.FileSpecification.getValue(String)
-*com.aspose.pdf.FileSpecification.setValue(String,String)
-*com.aspose.pdf.HtmlSaveOptions.setRenderTextAsImage(boolean)
-*com.aspose.pdf.HtmlSaveOptions.isRenderTextAsImage()
-*com.aspose.pdf.Matrix.rotation(int)
-*com.aspose.pdf.SignatureCustomAppearance.getRotation()
-*com.aspose.pdf.SignatureCustomAppearance.setRotation(int)
-*com.aspose.pdf.TextSearchOptions.getIgnoreResourceFontErrors()
-*com.aspose.pdf.TextSearchOptions.setIgnoreResourceFontErrors(boolean)
+* com.aspose.pdf.facades.PdfAnnotationEditor.flatteningAnnotations(com.aspose.pdf.Form.FlattenSettings)
+* com.aspose.pdf.FileSpecification.getValue(String)
+* com.aspose.pdf.FileSpecification.setValue(String,String)
+* com.aspose.pdf.HtmlSaveOptions.setRenderTextAsImage(boolean)
+* com.aspose.pdf.HtmlSaveOptions.isRenderTextAsImage()
+* com.aspose.pdf.Matrix.rotation(int)
+* com.aspose.pdf.SignatureCustomAppearance.getRotation()
+* com.aspose.pdf.SignatureCustomAppearance.setRotation(int)
+* com.aspose.pdf.TextSearchOptions.getIgnoreResourceFontErrors()
+* com.aspose.pdf.TextSearchOptions.setIgnoreResourceFontErrors(boolean)
 
 
