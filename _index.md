@@ -9,13 +9,13 @@ url: /
 
 ![Aspose.PDF for .NET Product Logo](home_1.png)
 
-**Welcome to the Aspose.PDF for .NET**
+## Welcome to the Aspose.PDF for .NET
 
 Aspose.PDF is a .NET component built to allow developers to create PDF documents, whether simple or complex, on the fly programmatically. Aspose.PDF for .NET allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. Moreover, it is also possible to compress PDF documents. Aspose.PDF for .NET provides excellent security features to develop secure PDF documents. And the most distinct feature of Aspose.PDF for .NET is that it supports the creation of PDF documents through both an API and from XML templates. 
 
 {{% /alert %}} 
 
-## **Aspose.PDF for .NET Resources**
+### Aspose.PDF for .NET Resources
 
 The following are the links to some useful resources you may need to accomplish your tasks.
 
@@ -32,13 +32,13 @@ The following are the links to some useful resources you may need to accomplish 
 
 ![todo:image_alt_text](home_2.png)
 
-**Welcome to Aspose.PDF for Java**
+## Welcome to Aspose.PDF for Java
 
 Aspose.PDF is a Java component built to allow developers to create PDF documents, whether simple or complex, on the fly programmatically. Aspose.PDF for Java allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. Moreover, it is also possible to compress PDF documents. Aspose.PDF for Java provides excellent security features to develop secure PDF documents. And the most distinct feature of Aspose.PDF for Java is that it supports the creation of PDF documents through both an API and from XML templates
 
 {{% /alert %}} 
 
-## **Aspose.PDF for Java Resources**
+### Aspose.PDF for Java Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
@@ -57,13 +57,13 @@ Following are the links to some useful resources you may need to accomplish your
 
 ![todo:image_alt_text](home_3.png)
 
-**Welcome to the Aspose.PDF for C++ Documentation Section**
+## **Welcome to the Aspose.PDF for C++ Documentation Section**
 
 Aspose.PDF for C++ is a native C++ library that enables developers to create, read and manipulate PDF documents without using Adobe Acrobat. Aspose.PDF for C++ allows developers to create forms, add/edit text, manipulate PDF pages, add annotations, handle custom fonts and much more. Here in the documentation section of Aspose.PDF for C++, you can explore all the features of the API along with the basic examples to demonstrate the implementation of those features in your C++ application.
 
 {{% /alert %}}
 
-## **Aspose.PDF for C++ Resources**
+### Aspose.PDF for C++ Resources
 
 The following links offer some useful resources you may need to accomplish your tasks.
 
@@ -81,13 +81,13 @@ The following links offer some useful resources you may need to accomplish your 
 
 ![todo:image_alt_text](home_4.png)
 
-**Welcome to Aspose.PDF for Android via Java!**
+## Welcome to Aspose.PDF for Android via Java
 
 Aspose.PDF for Android via Java is a component that allows developers to create and manipulate PDF documents programmatically, whether simple or complex. Aspose.PDF for Android via Java allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. It can also be used to compress PDF documents. Aspose.PDF for Android via Java provides excellent security features for developing secure PDFs. Aspose.PDF for Android via Java's most distinctive feature is that it supports PDF creation through both an API and from XML templates.
 
 {{% /alert %}} 
 
-## **Aspose.PDF for Android via Java Resources**
+### Aspose.PDF for Android via Java Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
@@ -105,13 +105,13 @@ Following are the links to some useful resources you may need to accomplish your
 
 ![todo:image_alt_text](home_5.png)
 
-**Welcome to Aspose.PDF for Reporting Services**
+## Welcome to Aspose.PDF for Reporting Services
 
 Microsoft SQL Server Reporting Services fulfills a need that many organizations have: the need to build business intelligence and reporting solutions. Until now, developers were required to embed reports into their applications, or organizations were required to buy expensive and sometimes problematic third-party reporting solutions. Now, Microsoft SQL Server Reporting Services offers a complete solution for distributing reports across the enterprise; enabling businesses to make decisions better and faster.
 
 {{% /alert %}} 
 
-## **Aspose.PDF for Reporting Services Resources**
+### Aspose.PDF for Reporting Services Resources
 
 - [Aspose.PDF for Reporting Services Product Overview](/pdf/reportingservices/product-overview/)
 - [Aspose.PDF for Reporting Services Supported File Formats](/pdf/reportingservices/supported-file-formats/)
@@ -129,13 +129,13 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 
 ![todo:image_alt_text](home_6.png)
 
-**Welcome to Aspose.PDF for SharePoint**
+## Welcome to Aspose.PDF for SharePoint
 
 Aspose.PDF for SharePoint is a solution that allows the users to export lists, list items and SharePoint Wiki pages to the PDF file format.
 
 {{% /alert %}} 
 
-## **Aspose.PDF for SharePoint Resources**
+### Aspose.PDF for SharePoint Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
@@ -151,13 +151,13 @@ Following are the links to some useful resources you may need to accomplish your
 
 ![todo:image_alt_text](home_7.png)
 
-**Welcome to Aspose.PDF for JasperReports**
+## Welcome to Aspose.PDF for JasperReports
 
 Aspose.PDF for JasperReports is a flexible component designed to export reports from JasperReports and JasperServer to Portable Document Format (PDF). Important report features such as tables, charts and images are converted to PDF with the highest degree of precision.
 
 {{% /alert %}} 
 
-## **Aspose.PDF for JasperReports Resources**
+### Aspose.PDF for JasperReports Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
