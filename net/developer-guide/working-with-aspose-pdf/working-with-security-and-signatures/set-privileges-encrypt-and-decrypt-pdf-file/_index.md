@@ -3,6 +3,8 @@ title: Set Privileges, Encrypt and Decrypt PDF File
 type: docs
 weight: 20
 url: /net/set-privileges-encrypt-and-decrypt-pdf-file/
+keywords: encrypt pdf,decrypt pdf,Passwording a pdf using .net,pdf to ppt using .net,protect pdf
+Description: Encrypt pdf,decrypt pdf, protect pdf using .NET. Passwording a pdf using .NET converter.
 ---
 
 ## **Set Privileges on an Existing PDF File**
