@@ -4,8 +4,7 @@ type: docs
 weight: 50
 url: /net/release-notes/
 ---
-
-#### **Articles in this section**
+ **Articles in this section**
 - [Release Notes - 2020](/pdf/net/release-notes-2020/)
 - [Release Notes - 2019](/pdf/net/release-notes-2019/)
 - [Release Notes - 2018](/pdf/net/release-notes-2018/)
