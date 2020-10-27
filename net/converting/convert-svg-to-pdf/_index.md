@@ -69,7 +69,7 @@ public static void ConvertSVGtoPDF_Advanced()
                 <p>circle</p>
             </td>
             <td>
-                <code><pre>&lt;circle id="r2" cx="10" cy="10" r="10" stroke="blue" stroke-width="2"&gt;</pre></code>
+                <code><pre>&lt circle id="r2" cx="10" cy="10" r="10" stroke="blue" stroke-width="2"&gt </pre></code>
             </td>
         </tr>
         <tr>

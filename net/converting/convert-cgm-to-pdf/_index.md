@@ -1,5 +1,5 @@
 ---
-title: Convert text to PDF
+title: Convert CGM to PDF
 type: docs
 weight: 30
 url: /net/convert-cgm-to-pdf/

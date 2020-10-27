@@ -8,7 +8,7 @@ url: /net/convert-pdf-to-txt/
 
 ## Convert whole PDF document to text file
 
-You can convert PDF document to .TXT file using `Visit` method of `TextAbsorber` class.
+You can convert PDF document to TXT file using `Visit` method of `TextAbsorber` class.
 
 The following code snippet explains how to extract the texts from the all pages.
 
