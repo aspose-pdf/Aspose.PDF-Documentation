@@ -9,7 +9,7 @@ Aspose.PDF for .NET is a PDF manipulation component, we have introduced a featur
 
 ## Convert PDF to XLS
 
-> Try online. You can check the quality of Aspose.PDF conversion and view the results online at this [link](https://products.aspose.app/pdf/conversion/pdf-to-xlsx) 
+> Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-xlsx](https://products.aspose.app/pdf/conversion/pdf-to-xlsx) 
 
 In order to convert PDF files to XLS format, Aspose.PDF has a class called ExcelSaveOptions. An object of the ExcelSaveOptions class is passed as a second argument to the Document.Save(..) constructor. The following code snippet shows the process for converting PDF file into XLS format.
 

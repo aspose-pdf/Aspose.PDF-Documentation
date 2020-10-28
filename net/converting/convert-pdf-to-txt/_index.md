@@ -23,6 +23,7 @@ public static void ConvertPDFDoctoTXT()
     File.WriteAllText(_dataDir + "input_Text_Extracted_out.txt",ta.Text);
 }
 ```
+>Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-txt](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 
 ## Convert PDF page to text file
 

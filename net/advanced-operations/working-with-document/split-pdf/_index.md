@@ -5,6 +5,9 @@ weight: 60
 url: /net/split-document/
 ---
 # Split document 
+
+>You can split PDF files using Aspose.PDF and get the results online at this link: [products.aspose.app/pdf/splitter](https://products.aspose.app/pdf/splitter)
+
 This topic shows how to split PDF pages into individual PDF files in your .NET applications. To split PDF pages into single page PDF files using C#, the following steps can be followed:
 
 1. Loop through the pages of PDF document through the [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) object’s [PageCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection) collection

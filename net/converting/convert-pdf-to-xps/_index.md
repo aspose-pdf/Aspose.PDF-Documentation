@@ -6,9 +6,11 @@ url: /net/convert-pdf-to-xps/
 ---
 # Convert PDF to XPS
 
+>Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-xps](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into the Windows operating system.
 
-To convert PDF files to XPS, Aspose.PDF has the class XpsSaveOptions that is used as the second argument to the Document.Save(..) constructor to generate the XPS file. The following code snippet shows the process of converting PDF file into XPS format.
+To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://apireference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) that is used as the second argument to the Document.Save(..) constructor to generate the XPS file. The following code snippet shows the process of converting PDF file into XPS format.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

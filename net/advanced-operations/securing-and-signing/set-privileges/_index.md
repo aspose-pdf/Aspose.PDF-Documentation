@@ -97,8 +97,8 @@ PdfFileInfo contains three properties to get information about PDF document secu
 - PasswordType.User - the document was opened with user (or document open) password
 - PasswordType.Owner - the document was opened with owner (or permissions, edit) password
 - PasswordType.Inaccessible - the document is password protected but the password is needed to open it while an invalid password (or no password) was supplied.
-1. boolean property HasOpenPassword - is used to determine if the input file requires a password, when opening it.
-1. boolean property HasEditPassword - its used to determine if the input file requires a password to edit its contents.
+2. boolean property HasOpenPassword - is used to determine if the input file requires a password, when opening it.
+3. boolean property HasEditPassword - its used to determine if the input file requires a password to edit its contents.
 
 ### Determine correct password from Array
 Sometimes there is a requirement to determine the correct password from an array of passwords and open the document with the correct password. The following code snippet demonstrates the steps to iterate through the array of passwords and try opening the document with the correct password.

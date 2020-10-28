@@ -7,7 +7,7 @@ url: /net/search-and-get-text-from-pdf/
 # Search and Get Text from Pages of a PDF Document
 
 ## Search and Get Text from All the Pages of PDF Document
-TextFragmentAbsorber class allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text, Position ( XIndent, YIndent ), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor **, etc. The following code snippet shows you how to search for text from all the pages.
+TextFragmentAbsorber class allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text, Position ( XIndent, YIndent ), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor, etc. The following code snippet shows you how to search for text from all the pages.
 ```
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -236,8 +236,7 @@ document.Save(dataDir);
 ```
 ## Highlight each character in PDF document 
 
->You can try searching for text in a document using Aspose.PDF and get the results online at this link:
-[products.aspose.app/pdf/search](https://products.aspose.app/pdf/search)
+>You can try searching for text in a document using Aspose.PDF and get the results online at this [link](https://products.aspose.app/pdf/search)
 
 Aspose.PDF for .NET supports the feature to search and get the coordinates of each character or text fragments. So in order to be certain about the coordinates being returned for each character, we may consider highlighting (adding rectangle) around each character. The following code snippet gets coordinates of each character and creates a rectangle around each character.
 ```

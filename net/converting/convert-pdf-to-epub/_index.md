@@ -6,7 +6,9 @@ url: /net/convert-pdf-to-epub/
 ---
 # Convert PDF to EPUB
 
-EPUB (short for Electronic Publication) is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
+> Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-epub](https://products.aspose.app/pdf/conversion/pdf-to-epub)
+
+**EPUB (short for Electronic Publication)** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
 EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
 
 Aspose.PDF for .NET also supports the feature to convert PDF documents to EPUB format. Aspose.PDF for .NET has a class named EpubSaveOptions which can be used as the second argument to `Document.Save(..)` method, to generate an EPUB file.

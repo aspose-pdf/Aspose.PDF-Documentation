@@ -7,8 +7,7 @@ url: /net/replace-text-in-a-pdf-document/
 # Replace Text in a PDF Document
 
 ## Replace Text in all pages of PDF document
->You can try to find in replace the text in the document using Aspose.PDF and get the results online at this link:
-[products.aspose.app/pdf/redaction](https://products.aspose.app/pdf/redaction)
+>You can try to find in replace the text in the document using Aspose.PDF and get the results online at this [link](https://products.aspose.app/pdf/redaction)
 
 In order to replace text in all the pages of a PDF document, you first need to use TextFragmentAbsorber to find the particular phrase you want to replace. After that, you need to go through all the TextFragments to replace the text and change any other attributes. Once you have done that, you only need to save the output PDF using the Save method of the Document object. The following code snippet shows you how to replace text in all pages of PDF document.
 ```// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

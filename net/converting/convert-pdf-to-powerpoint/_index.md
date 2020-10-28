@@ -32,7 +32,7 @@ doc.Save(dataDir + "PDFToPPT_out.pptx", pptx_save);
 
 ## Convert PDF to PPTX with Slides as Images
 
->Try online. You can check the quality of Aspose.PDF conversion and view the results online at this [link](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
+>Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-pptx](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 
 In case if you need to convert a searchable PDF to PPTX as images instead of selectable text, Aspose.PDF provides such a feature via Aspose.Pdf.PptxSaveOptions class. To achieve this, set property SlidesAsImages of PptxSaveOptios class to 'true' as shown in the following code sample.
 
