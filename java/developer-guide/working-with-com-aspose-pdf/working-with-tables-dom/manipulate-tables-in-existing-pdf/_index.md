@@ -23,4 +23,4 @@ Features related to this functionality which still need to be implemented.
 - A Customer wants to update table in existing PDF dynamically. Including deleting / insertion of rows. This request is a bit difficult to implement and current implementation of TableAbsorber cannot fulfill such requirements.
 - If you have a requirement of looking for text property in [Cells](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Cells) or [BaseParagraph](https://apireference.aspose.com/java/pdf/com.aspose.pdf/BaseParagraph) types, (such types are designed for adding new contents on the page), you must cast [BaseParagraph](https://apireference.aspose.com/java/pdf/com.aspose.pdf/BaseParagraph) to one of the inherited types. For example next code must help:
 
-{{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-AsposePdf-Tables-ManipulateTablesInExistingPDF-FutureEnhancements.java" >}}
+{{< gist "aspose-com-gists" "c0e07056c427f1c8a81336809a7ae4f2" "Examples-src-main-java-com-aspose-pdf-examples-AsposePdf-Tables-ManipulateTablesInExistingPDF-FutureEnhancements.java" >}}
