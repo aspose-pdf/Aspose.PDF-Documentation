@@ -3,6 +3,8 @@ title: Convert PDF to Excel XLS
 type: docs
 weight: 90
 url: /net/convert-pdf-to-excel-xls/
+keywords: convert PDF to Excel using c#,convert PDF to XLS using csharp,convert PDF to XLSX using csharp,export table from PDF to Excel in csharp
+description: Convert PDF documents to Excel workbooks using C#. Convert PDF to XLS or PDF to XLSX and export tabular data from PDF to Excel using C# or VB.NET.
 ---
 
 
