@@ -3,8 +3,8 @@ title: Working with Attachments
 type: docs
 weight: 30
 url: /net/working-with-attachments/
-keywords: pdf attachment,attachment to pdf,add attachment to pdf using csharp
-description: Csharp Developers can add attachment to PDF using Aspose.PDF for .NET API
+keywords: DotNet PDF API,add pdf attachment using csharp,get pdf attachment info using csharp,remove pdf attachment using csharp
+description: Use C# PDF API to access, add and remove attachments in PDF files using C# from within your applications. Complete guide with C# code samples.
 ---
 
 PDF files allow attaching files as content and are one of the key features of PDF file format. Different file formats such as Word DOC/DOCX, Excel XLS/XLSX, EML, JPG, PNG, GLB, etc. can be embedded in a PDF file. Aspose.PDF for .NET API lets you work with attachments in a PDF file using your .NET applications. You can add/embed attachments in a PDF file, get attachments information from a PDF, access individual attachment from PDF file, and remove attachments from PDF in C# or any other .NET programming language. This article demonstrates the functionality of working with attachments in a PDF file.
