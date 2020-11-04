@@ -3,8 +3,8 @@ title: Digitally sign PDF file
 type: docs
 weight: 10
 url: /net/digitally-sign-pdf-file/
-keywords: how to add signature to pdf using dotnet,add digital signature to pdf using dotnet,how to digitally signed pdf using .NEt
-Description: Java developers can learn, how to digitally signed pdf or how to add signature to pdf using .NET.
+keywords: add digital signature to PDF using C#,certify digital signature in PDF using csharp,digitally sign PDF using csharp,verify digitally signed PDF using csharp
+description: Digitally sign PDF documents using C# or VB.NET. Verify, or validate the digitally sign PDFs using C# or VB.NET based application with Dotnet PDF Library.You can also certify a PDF file with a PKCS12-Certificate.
 ---
 
 ## **Digitally sign PDF file**
