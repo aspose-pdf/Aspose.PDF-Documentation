@@ -8,7 +8,7 @@ url: /net/working-with-images-in-pdf/
 
 ## Add Image to Existing PDF File
 
-Every PDF page contains Resources and Contents properties. Resources can be images and forms for example, while content is represented by a set of PDF operators. Each operator has its name and argument. This example uses operators to add anh image to a PDF file.
+Every PDF page contains Resources and Contents properties. Resources can be images and forms for example, while content is represented by a set of PDF operators. Each operator has its name and argument. This example uses operators to add an image to a PDF file.
 
 To add an image to an existing PDF file:
 

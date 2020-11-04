@@ -1,5 +1,5 @@
 ---
-title: Opening a PDF document
+title: Opening
 type: docs
 weight: 10
 url: /net/opening-a-pdf-document/

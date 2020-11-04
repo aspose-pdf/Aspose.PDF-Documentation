@@ -451,7 +451,7 @@ pdfDocument.Save(dataDir);
 
 Aspose.PDF allows you to remove a particular Annotation from PDF file. This topic explains how.
 
-To delete a particular annotation from a PDF, call the [AnnotationCollection](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection’s Delete method. This collection belongs to the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object. The Delete method requires the index of the annotation you want to delete. Then, save the updated PDF file. The following code snippet shows how to delete a particular annotation.
+To delete a particular annotation from a PDF, call the [AnnotationCollection collection’s Delete method](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). This collection belongs to the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object. The Delete method requires the index of the annotation you want to delete. Then, save the updated PDF file. The following code snippet shows how to delete a particular annotation.
 ```
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
