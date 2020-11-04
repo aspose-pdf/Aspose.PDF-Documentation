@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/add-digital-signature-to-pdf-file/
 keywords: how to add signature to pdf using java,add digital signature to pdf using java,how to digitally signed pdf using java
-Description: Java developers can learn, how to digitally signed pdf or how to add signature to pdf using java.
+Description: digitally sign PDF documents using Java. Verify, or validate the digitally sign PDFs using Java Swing or any Java-based application with Java PDF Library.
 ---
 
 {{% alert color="primary" %}} 
