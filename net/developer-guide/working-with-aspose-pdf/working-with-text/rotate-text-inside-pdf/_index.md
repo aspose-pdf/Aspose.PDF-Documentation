@@ -3,6 +3,8 @@ title: Rotate Text Inside PDF
 type: docs
 weight: 70
 url: /net/rotate-text-inside-pdf/
+keywords: rotate pdf pages,pdf rotation,rotate PDF c#,rotate image in PDF C#,rotate pdf,rotate text in PDF C#
+description: Aspose.PDF for .NET is capable to rotate PDF page objects easily. You can rotate specific, certain or particular pages objects like text or images using C# or VB.NET programmatically.
 ---
 
 ## **Rotate Text Inside PDF using Rotation Property**
