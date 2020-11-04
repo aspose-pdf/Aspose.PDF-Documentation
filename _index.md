@@ -2,6 +2,7 @@
 title: Aspose.PDF Product Family
 type: docs
 weight: 10
+aliases: [/display/pdf/]
 url: /
 keywords: 
 - pdf 
