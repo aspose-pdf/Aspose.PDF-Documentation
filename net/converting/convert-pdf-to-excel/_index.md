@@ -1,7 +1,7 @@
 ---
 title: Convert PDF to Excel 
 type: docs
-weight: 240
+weight: 280
 url: /net/convert-pdf-to-excel/
 ---
 # Convert PDF to Excel 

@@ -4,55 +4,72 @@ type: docs
 weight: 100
 url: /net/convert-images-to-pdf/
 ---
-# Convert images to PDF using Image class
+# Convert images to PDF
 
-For the most filetype we can use Image class to convert image into a PDF page. This technique is similar to add TextFragment (see "Convert text ..." section):
+You can very easy convert a JPG image to PDF by following steps:
 
-1. Create an object of the Image class.
-1. Add the image to a page's Paragraphs collection.
-1. Specify the file's path or source.
-    - If an image is at a location on the hard drive, specify the path location using the Image.File property.
-    - If an image is placed in a MemoryStream, pass the object holding the image to the Image.ImageStream property.
+1. Initialize object of Document class
+1. Add a new Page to PDF document
+1. Load JPG image and add to paragraph
+1. Save output PDF
 
-The following code snippet shows how to load an image object, get its dimensions, set the page dimensions according to image dimensions, place the image on a page in a PDF file and save the output as PDF.
-
-```csharp
-public static void ConvertImagetoPDF()
-{
-    // For complete examples and data files, please
-    // go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-    // Instantiate Document Object
-    Document pdfDocument= new Document();
-    // Add a page to pages collection of document
-    Page page = pdfDocument.Pages.Add();
-    // Load the source image file to Stream object
-    FileStream fs = new FileStream(dataDir + "CCITT_8.TIF", FileMode.Open, FileAccess.Read);
-    byte[] tmpBytes = new byte[fs.Length];
-    fs.Read(tmpBytes, 0, int.Parse(fs.Length.ToString()));
-
-    MemoryStream imageStream = new MemoryStream(tmpBytes);
-    // Instantiate BitMap object with loaded image stream
-    Bitmap b = new Bitmap(imageStream);
-
-    // Set margins so image will fit, etc.
-    page.PageInfo.Margin.Bottom = 0;
-    page.PageInfo.Margin.Top = 0;
-    page.PageInfo.Margin.Left = 0;
-    page.PageInfo.Margin.Right = 0;
-
-    page.CropBox = new Aspose.Pdf.Rectangle(0, 0, b.Width, b.Height);
-    // Create an image object
-    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-    // Add the image into paragraphs collection of the section
-    page.Paragraphs.Add(image);
-    // Set the image file stream
-    image.ImageStream = imageStream;
-    dataDir += "ImageToPDF_out.pdf";
-    // Save resultant PDF file
-    pdfDocument.Save(dataDir);
-
-    // Close memoryStream object
-    imageStream.Close();
-}
+The code snippet below shows how to convert JPG Image to PDF using C#:
 ```
+// Load input JPG file
+String path = dataDir + "Aspose.jpg";
+
+// Initialize new PDF document
+Document doc = new Document();
+
+// Add empty page in empty document
+Page page = doc.Pages.Add();
+Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+image.File = (path);
+
+// Add image on a page
+page.Paragraphs.Add(image);
+
+// Save output PDF file
+doc.Save(dataDir + "ImagetoPDF.pdf");
+```
+Then you can see how to convert an image to PDF with the **same height and width of the page**. We will be getting the image dimensions and accordingly set the page dimensions of PDF document with the below steps:
+
+1. Load input image file
+1. Get the height and width of the image
+1. Set height, width, and margins of a page
+1. Save the output PDF file
+
+Following code snippet shows how to convert an Image to PDF with same page height and width using C#:
+
+```
+// Load input JPG image file
+String path = dataDir + "Aspose.jpg";
+System.Drawing.Image srcImage = System.Drawing.Image.FromFile(path);
+
+// Read Height of input image
+int h = srcImage.Height;
+
+// Read Height of input image
+int w = srcImage.Width;
+
+// Initialize a new PDF document
+Document doc = new Document();
+
+// Add an empty page
+Page page = doc.Pages.Add();
+Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+image.File = (path);
+
+// Set page dimensions and margins
+page.PageInfo.Height = (h);
+page.PageInfo.Width = (w);
+page.PageInfo.Margin.Bottom = (0);
+page.PageInfo.Margin.Top = (0);
+page.PageInfo.Margin.Right = (0);
+page.PageInfo.Margin.Left = (0);
+page.Paragraphs.Add(image);
+
+// Save output PDF file
+doc.Save(dataDir + "ImagetoPDF_HeightWidth.pdf");
+```
+

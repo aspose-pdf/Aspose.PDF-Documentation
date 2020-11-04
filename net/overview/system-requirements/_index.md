@@ -1,7 +1,7 @@
 ---
 title: System Requirements
 type: docs
-weight: 20
+weight: 30
 url: /net/system-requirements/
 ---
 # System Requirements

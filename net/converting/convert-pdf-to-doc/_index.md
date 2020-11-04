@@ -1,7 +1,7 @@
 ---
 title: Convert PDF to Word
 type: docs
-weight: 230
+weight: 270
 url: /net/convert-pdf-to-doc/
 ---
 # Convert PDF to Word 

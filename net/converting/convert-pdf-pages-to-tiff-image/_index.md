@@ -1,7 +1,7 @@
 ---
 title: Convert PDF Pages to TIFF Image 
 type: docs
-weight: 220
+weight: 260
 url: /net/convert-pdf-pages-to-tiff-image/
 ---
 # Convert PDF Pages to TIFF Image

@@ -1,7 +1,7 @@
 ---
 title: Licensing
 type: docs
-weight: 40
+weight: 50
 url: /net/licensing/
 ---
 # Licensing and limitations

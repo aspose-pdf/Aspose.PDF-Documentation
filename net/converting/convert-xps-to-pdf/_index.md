@@ -1,7 +1,7 @@
 ---
 title: Convert XPS to PDF
 type: docs
-weight: 150
+weight: 190
 url: /net/convert-xps-to-pdf/
 ---
 # Convert XPS to PDF

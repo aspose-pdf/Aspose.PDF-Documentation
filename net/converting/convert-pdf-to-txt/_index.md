@@ -1,7 +1,7 @@
 ---
 title: Convert PDF to TXT
 type: docs
-weight: 260
+weight: 300
 url: /net/convert-pdf-to-txt/
 ---
 # Convert PDF to TXT

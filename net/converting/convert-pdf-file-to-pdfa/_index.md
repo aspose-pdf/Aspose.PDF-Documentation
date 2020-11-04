@@ -1,7 +1,7 @@
 ---
 title: Convert PDF File to PDF-A 
 type: docs
-weight: 200
+weight: 240
 url: /net/convert-pdf-file-to-pdfa/
 ---
 # Convert PDF File to PDF-A 

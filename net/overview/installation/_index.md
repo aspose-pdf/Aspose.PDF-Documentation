@@ -1,7 +1,7 @@
 ---
 title: Installation
 type: docs
-weight: 30
+weight: 40
 url: /net/installation/
 ---
 # Welcome to the Aspose.PDF for .NET
