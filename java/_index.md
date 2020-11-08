@@ -4,7 +4,7 @@ type: docs
 aliases:
 - /display/pdf/java/
 weight: 20
-url: /pdf/java/
+url: /java/
 is_root: true
 ---
 
