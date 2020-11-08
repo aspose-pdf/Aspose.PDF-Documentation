@@ -3,7 +3,7 @@ title: Aspose.PDF Product Family
 type: docs
 weight: 10
 aliases: 
--/display/pdf/
+- /display/pdf/
 keywords: 
 - pdf 
 - convert pdf to word
