@@ -2,7 +2,7 @@
 title: Aspose.PDF for Java
 type: docs
 aliases:
--/display/java/
+- /display/java/
 weight: 20
 url: /java/
 is_root: true
