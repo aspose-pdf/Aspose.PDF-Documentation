@@ -20,7 +20,8 @@ url: /net/faq/
 
 **Q: How to Insert Image into PDF?**
 
-**A:** We have two solutions to this problem for you. First and simple way:  you can use AddImage method of the PdfFileMend class. Check this (link). 
+**A:** We have two solutions to this problem for you. First and simple way:  you can use AddImage method of the PdfFileMend class. [Check this](/pdf/net/working-with-images-in-pdf/#add-image-in-an-existing-pdf-file-facades).
+
 And the second option is adding Image to Existing PDF File with next operators: GSave operator, ConcatenateMatrix operator, Do operator, and  GRestore operator. Follow the [link](/pdf/net/working-with-images-in-pdf/) and you will see a code snippet that shows how to add an image to a PDF file.
 
 **Q: How to edit the text in PDF?**

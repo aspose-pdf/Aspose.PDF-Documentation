@@ -62,6 +62,31 @@ pdfDocument.Save(dataDir);
 - the Replace method overload is added into the XImageCollection class: public void Replace(int index, Stream stream, int quality)
 - the Add method overload is added into the XImageCollection class: public void Add(Stream stream, int quality)
 
+## Add Image in an Existing PDF File (Facades)
+
+There is also an alternative, easier way to add a Image to a PDF file. You can use **AddImage** method of the **PdfFileMend** class. The **AddImage** method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using **Close** method. The following code snippet shows you how to add image in an existing PDF file.
+
+```
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// The path to the documents directory.
+string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Images();
+
+// Open document
+PdfFileMend mender = new PdfFileMend();
+
+// Create PdfFileMend object to add text
+mender.BindPdf(dataDir + "AddImage.pdf");
+
+// Add image in the PDF file
+mender.AddImage(dataDir+ "aspose-logo.jpg", 1, 100, 600, 200, 700);
+
+// Save changes
+mender.Save(dataDir + "AddImage_out.pdf");
+
+// Close PdfFileMend object
+mender.Close();
+```
+
 ## Add Reference of a single Image multiple times in a PDF Document 
 
 Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. We have added a new method XImageCollection.Add(XImage) in Aspose.PDF for .NET 17.1.0. This method allows to add reference to the same PDF object as original image that optimize the PDF Document size.

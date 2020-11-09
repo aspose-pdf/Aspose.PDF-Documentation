@@ -6,7 +6,11 @@ url: /net/convert-pdf-to-xps/
 ---
 # Convert PDF to XPS
 
->Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-xps](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+{{% alert color="primary" %}}
+
+Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-xps](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+
+{{% /alert %}}
 
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into the Windows operating system.
 
