@@ -1,8 +1,8 @@
 ---
 title: Aspose.PDF for .NET 20.11 Release Notes
 type: docs
-weight: 35
-url: /net/aspose-pdf-for-net-20-10-release-notes/
+weight: 30
+url: /net/aspose-pdf-for-net-20-11-release-notes/
 ---
 
 {{% alert color="primary" %}}
