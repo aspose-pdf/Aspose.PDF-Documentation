@@ -45,4 +45,3 @@ Aspose.PDF allows you to add a header and footer to all pages of a PDF document.
 
 You can use different headers and footers in the same PDF file. For example, you can add one header for odd-numbered pages that displays the page number on the right, and another header for even-numbered pages with the page number on the left. When adding a Bates numbering, you can specify the number of digits, the start number, and the prefix or postfix to add to each Bates.
 
-You can set and save headers and footers for reuse, or apply them once without saving. After adding headers and footers to PDF, you can edit, replace, and delete them. Previewing the headers and footers before adding them to the file will allow you to adjust the borders of the headers and footers so that they do not cover the page content.
