@@ -18,6 +18,7 @@ This page contains release notes information for Aspose.PDF for .NET 20.11.
 |PDFNET-48956|Introduce PDF to XML and XML to PDF conversion|New Feature|
 |PDFNET-48724|Replacing PDF images leads to size increase|Enhancement|
 |PDFNET-47752|Support for setting AFRelationship Tag|Enhancement|
+|PDFNET-48746|An exception is thrown while merging PDF|Enhancement|
 |PDFNET-45180|Unable to load PDF document|Bug|
 |PDFNET-46060|Bug with Aspose.Pdf.Tests.Facades.PdfBookmarkEditorTests.InsertLastChildBookmark|Bug|
 |PDFNET-46839|PDF is not getting generated for huge HTML|Bug|
