@@ -6,6 +6,9 @@ url: /net/add-annotation-in-existing-pdf-file/
 ---
 
 # Add Annotation in existing PDF file
+
+A Text Annotation is an annotation attached to a specific location in a PDF document. When closed, the annotation is displayed as an icon; when opened, it should display a pop-up window containing the note text in the font and size chosen by the reader.
+
 Annotations are contained by the [Annotations](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations) collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection.
 
 To add an annotation to a particular page, add it to that page’s Annotations collection with the [Add](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add) method.
@@ -65,8 +68,12 @@ pdfDocument.Save(dataDir);
 ```
 ## Delete a Particular Annotation from the PDF File
 
+{{% alert color="primary" %}} 
+
 You can check the quality of Aspose.PDF and get the results online at this link:
 [products.aspose.app/pdf/annotation](https://products.aspose.app/pdf/annotation)
+
+{{% /alert %}}
 
 Aspose.PDF allows you to remove a particular Annotation from PDF file. This topic explains how.
 

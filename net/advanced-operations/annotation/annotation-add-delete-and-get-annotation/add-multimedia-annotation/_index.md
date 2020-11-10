@@ -7,7 +7,10 @@ url: /net/add-multimedia-annotation/
 # Add Multimedia Annotation
 
 When you need to add an external video link in PDF document, you can use [MovieAnnotaiton](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation). However, when there is a requirement to embed media inside PDF document, you need to use [RichMediaAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
-This annotation allows to embed media file within PDF document and set video/audio player, implemented as flash application. Due to license restriction, we can not include third-party flash scripts in our product, so you should provide your script for playing video or audio. You should provide a flash application code. For example, you can use videoplayer.swf and audioplayer.swf which are distributed with Adobe Acrobat and may be found in Multimedia Skins/Players subfolder in Acrobat folder. Another choice is using StrobeMediaPLayback.swf player or any other video player implemented in flash.
+
+This annotation allows to embed media file within PDF document and set video/audio player, implemented as flash application. 
+
+Due to license restriction, we can not include third-party flash scripts in our product, so you should provide your script for playing video or audio. You should provide a flash application code. For example, you can use videoplayer.swf and audioplayer.swf which are distributed with Adobe Acrobat and may be found in Multimedia Skins/Players subfolder in Acrobat folder. Another choice is using StrobeMediaPLayback.swf player or any other video player implemented in flash.
 
 The following methods/properties of RichMediaAnnotation class can be used.
 
@@ -21,6 +24,7 @@ The following methods/properties of RichMediaAnnotation class can be used.
 
 ## Embed Video File
 A Movie Annotation contains animated graphics and sound to be presented on the computer screen and through the speakers.
+
 Embedding video file can be achieved using the following sample code.
 
 C#
@@ -87,6 +91,7 @@ doc.Save(myDir + "Output.pdf");
 
 ## Embed Audio File
 A Sound Annotation  shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file.
+
 Embedding audio files can be achieved using the following sample code.
 
 C#
