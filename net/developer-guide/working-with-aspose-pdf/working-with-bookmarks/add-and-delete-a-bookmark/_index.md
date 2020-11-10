@@ -15,7 +15,7 @@ To add a bookmark to a PDF:
 1. Add the OutlineItemCollection collection to the Outlines collection.
 
 The following code snippet shows you how to add a bookmark in a PDF document.
-#### **C#**
+### **C#**
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Bookmarks-AddBookmark-AddBookmark.cs" >}}
 ## **Add a Child Bookmark to the PDF Document**
 Bookmarks can be nested, indicating a hierarchical relationship with parent and child bookmarks. This article explains how to add a child bookmark, that is, a second-level bookmark, to a PDF.
