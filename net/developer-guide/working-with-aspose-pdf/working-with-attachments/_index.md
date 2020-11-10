@@ -18,7 +18,7 @@ Attachments can contain a wide variety of information and can be of a variety of
 1. Add the [FileSpecification](https://apireference.aspose.com/net/pdf/aspose.pdf/filespecification) object to the [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) object's [EmbeddedFiles](https://apireference.aspose.com/net/pdf/aspose.pdf/embeddedfilecollection) collection, with the collection’s Add method.
 
 The [EmbeddedFiles](https://apireference.aspose.com/net/pdf/aspose.pdf/embeddedfilecollection) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
-#### **C#**
+### **C#**
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Attachments-AddAttachment-AddAttachment.cs" >}}
 ## **Get all Attachments from a PDF Document**
 With Aspose.PDF, it is possible to get all attachments from a PDF document. This is useful either when you want to save the documents separately from the PDF, or if you need to strip a PDF of attachments.
@@ -31,9 +31,9 @@ To get all attachments from a PDF file:
 The following code snippets show how to get all the attachments from a PDF document.
 
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Attachments-GetAlltheAttachments-GetAlltheAttachments.cs" >}}
-### **Get Individual Attachment**
+## **Get Individual Attachment**
 In order to get an individual attachment, we can specify the index of attachment in **EmbeddedFiles** object of Document instance. Please try using following code snippet.
-#### **C#**
+### **C#**
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Attachments-GetIndividualAttachment-GetIndividualAttachment.cs" >}}
 ## **Delete All Attachments from PDF Document**
 Aspose.PDF can remove attachments from PDF files. A PDF document's attachments are held in the [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) object's EmbeddedFiles collection.
@@ -44,7 +44,7 @@ To delete all attachments associated with a PDF file:
 1. Save the updated file using the [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) object's [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method.
 
 The following code snippet shows how to remove attachments from a PDF document.
-#### **C#**
+### **C#**
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Attachments-DeleteAllAttachments-DeleteAllAttachments.cs" >}}
 ## **Get Attachment Information**
 As mentioned in [Get All Annotations from the Page of a PDF Document](https://docs.aspose.com/pdf/net/add-delete-and-get-annotation/), attachment information is held in the [FileSpecification](https://apireference.aspose.com/net/pdf/aspose.pdf/filespecification) object, gathered with other attachments in the Document object's EmbeddedFiles collection. The FileSpecification object provides methods that get information about the attachment, for example:
@@ -55,7 +55,7 @@ As mentioned in [Get All Annotations from the Page of a PDF Document](https://do
 - Params - information about the file parameters, for example CheckSum, CreationDate, ModDate and Size.
 
 To get these parameters, first make sure that the Params property is not null. Either loop through all of the attachments in the EmbeddedFiles collection using a foreach loop, or get an individual attachment by specifying its index value. The following code snippets show how to get information about a specific attachment.
-#### **C#**
+### **C#**
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Attachments-GetAttachmentInfo-GetAttachmentInfo.cs" >}}
 ## **Disable Files Compression when Adding as Embedded Resources**
 The FileSpecification class allows developers to add attachments to PDF documents. By default, attachments are compressed. We have updated the API to allow developers to disable compression when adding files as embedded resource. This gives developers more control over how files are processed.
@@ -69,5 +69,5 @@ If Encoding is set to FileEncoding.None, then the attachment is not compressed. 
 {{% /alert %}}
 
 The following code snippet shows how to add an attachment to a PDF document.
-#### **C#**
+### **C#**
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Attachments-DisableFilesCompression-DisableFilesCompression.cs" >}}
