@@ -7,6 +7,25 @@ url: /net/whatsnew/
 
 # What's new in Aspose.PDF 
 
+## What's new in Aspose.PDF 20.11
+Aspose.PDF v20.11 added support for ZUGFeRD format.
+ 
+### Conversion PDF to XML 
+### Conversion XML to PDF
+
+Also in this release, Aspose.PDF introduced PDF to XML and XML to PDF conversion.
+
+The following code snippet shows the process of converting a PDF file to XML (MobiXML) format.
+
+```
+// The path to the documents directory.
+string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();            
+// Load source PDF file
+Document doc = new Document(dataDir + "input.pdf");
+// Save output in XML format
+doc.Save(dataDir + "PDFToXML_out.xml", SaveFormat.MobiXml);
+```
+
 ## What's new in Aspose.PDF 20.7
 ### Conversion PDF to Excel CSV
 Aspose.PDF v20.7 Aspose.PDF supports conversion to CSV format.
@@ -24,7 +43,6 @@ pdfDocument.Save("Currencies.csv", options);
 ```
 
 ## What's new in Aspose.PDF  20.3
-
 ### Progress Detail of PPTX Conversion
 Aspose.PDF v20.3 lets you track the progress of PDF to PPTX conversion.
 
