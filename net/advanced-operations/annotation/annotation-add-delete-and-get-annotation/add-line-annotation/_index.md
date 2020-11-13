@@ -17,4 +17,83 @@ Also, this kind of annotation allows you to define Line ending styles.
 
 The following code snippet shows how to add Line Annotation to a PDF file.
 
+```
+using Aspose.Pdf.Annotations;
+using System;
+using System.Linq;
+
+namespace Aspose.Pdf.Examples.Advanced
+{
+    class ExampleLineAnnotation
+    {
+        // The path to the documents directory.
+        private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+        public static void AddLineAnnotation()
+        {
+            try
+            {
+                // Load the PDF file
+                Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments.pdf"));
+
+                // Create Line Annotation 
+                var lineAnnotation = new LineAnnotation(
+                    document.Pages[1],
+                    new Rectangle(550, 93, 562, 439),
+                    new Point(556, 99), new Point(556, 443))
+                {
+                    Title = "John Smith",
+                    Color = Color.Red,
+                    Width = 3,
+                    StartingStyle = LineEnding.OpenArrow,
+                    EndingStyle = LineEnding.OpenArrow,
+                    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 124, 1021, 266))
+                };
+
+                // Add annotation to the page 
+                document.Pages[1].Annotations.Add(lineAnnotation);
+                document.Save(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+```
+Please try using the following code snippet to Get Line Annotation in PDF document.
+
+```
+        public static void GetLineAnnotation()
+        {
+            // Load the PDF file
+            Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));            
+            var lineAnnotations = document.Pages[1].Annotations
+                .Where(a => a.AnnotationType == AnnotationType.Line)
+                .Cast<LineAnnotation>();
+            foreach (var la in lineAnnotations)
+            {
+                Console.WriteLine($"[{la.Starting.X},{la.Starting.Y}]-[{la.Ending.X},{la.Ending.Y}]");
+            }
+        }
+```       
+The following code snippet shows how Delete Line Annotation to a PDF file.
+ 
+```        
+        public static void DeleteLineAnnotation()
+        {
+            // Load the PDF file
+            Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
+            var lineAnnotations = document.Pages[1].Annotations
+                .Where(a => a.AnnotationType == AnnotationType.Line)
+                .Cast<LineAnnotation>();
+            
+            foreach (var la in lineAnnotations)
+            {
+                document.Pages[1].Annotations.Delete(la);
+            }
+            document.Save(System.IO.Path.Combine(_dataDir, "Appartments_del.pdf"));
+        }
+    }
+}
+```
+
 

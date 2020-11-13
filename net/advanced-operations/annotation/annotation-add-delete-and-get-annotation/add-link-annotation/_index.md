@@ -12,6 +12,13 @@ A Link is a rectangular area that can be placed anywhere on the page. Each link 
 
 The following code snippet shows how to add Link Annotation to a PDF file.
 ```
+using Aspose.Pdf.Annotations;
+using Aspose.Pdf.Text;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 class ExampleLinkAnnotations
     {
         // The path to the documents directory.
