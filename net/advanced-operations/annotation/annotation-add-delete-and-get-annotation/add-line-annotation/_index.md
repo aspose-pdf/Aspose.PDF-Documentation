@@ -80,7 +80,7 @@ Please try using the following code snippet to Get Line Annotation in PDF docume
             }
         }
 ```       
-The following code snippet shows how Delete Line Annotation to a PDF file.
+The following code snippet shows how Delete Line Annotation from a PDF file.
  
 ```        
         public static void DeleteLineAnnotation()

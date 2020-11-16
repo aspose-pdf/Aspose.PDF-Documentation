@@ -83,7 +83,7 @@ class ExampleLinkAnnotations
     }
 
 ```
-The following code snippet shows how to Delete Link Annotation from  PDF file. For this we need to find and and remove all link annotations on the 1st page. After this we will save document with removed annotation. 
+The following code snippet shows how to Delete Link Annotation from PDF file. For this we need to find and and remove all link annotations on the 1st page. After this we will save document with removed annotation. 
 ```
 class ExampleLinkAnnotations
     {
