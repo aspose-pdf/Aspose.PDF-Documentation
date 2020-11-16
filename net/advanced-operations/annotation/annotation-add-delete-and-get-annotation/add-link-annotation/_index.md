@@ -10,7 +10,7 @@ A [Link Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotatio
 
 A Link is a rectangular area that can be placed anywhere on the page. Each link has a corresponding PDF action associated with it. This action is performed when the user clicks in the area of this link.
 
-The following code snippet shows how to add Link Annotation to a PDF file.
+The following code snippet shows how to add Link Annotation to a PDF file using a phone number example:
 ```
 using Aspose.Pdf.Annotations;
 using Aspose.Pdf.Text;
@@ -19,10 +19,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-class ExampleLinkAnnotations
+
+namespace Aspose.Pdf.Examples.Advanced
+{
+    class ExampleLinkAnnotations
     {
         // The path to the documents directory.
-        private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+        private const string _dataDir = "..\\..\\..\\..\\Samples";
  public static void AddLinkAnnotation()
     {
         try
@@ -80,7 +83,7 @@ class ExampleLinkAnnotations
     }
 
 ```
-The following code snippet shows how to Delete Link Annotation from  PDF file.
+The following code snippet shows how to Delete Link Annotation from  PDF file. For this we need to find and and remove all link annotations on the 1st page. After this we will save document with removed annotation. 
 ```
 class ExampleLinkAnnotations
     {

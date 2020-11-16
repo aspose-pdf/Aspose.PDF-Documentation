@@ -12,11 +12,16 @@ This feature additional entries specific to a line annotation. These entries are
 Also, Line Annotation can include a caption to a line annotation, which is specified by setting Cap to
 true. 
 
-The next feature allows the effect of applying a caption to a Line ASnnotation that has a leader offset.
+The next feature allows the effect of applying a caption to a Line Annotation that has a leader offset.
 Also, this kind of annotation allows you to define Line ending styles.
 
-The following code snippet shows how to add Line Annotation to a PDF file.
+Steps with which we create an Line annotation:
+1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
+1. Create new [Line Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/lineannotation/methods/index) and set Line parameters (new Rectangle, new Point, title, color, width, StartingStyle and EndingStyle).
+1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index). 
+1. After we can Add annotation to the page
 
+The following code snippet shows how to add Line Annotation to a PDF file:
 ```
 using Aspose.Pdf.Annotations;
 using System;
@@ -27,7 +32,7 @@ namespace Aspose.Pdf.Examples.Advanced
     class ExampleLineAnnotation
     {
         // The path to the documents directory.
-        private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+        private const string _dataDir = "..\\..\\..\\..\\Samples";
         public static void AddLineAnnotation()
         {
             try
