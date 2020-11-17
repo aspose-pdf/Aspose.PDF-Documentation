@@ -18,7 +18,7 @@ Steps for creating Square and Circle Annotations:
 1. After we need to Add Square and Circle Annotations to the page.
 
 The following code snippet shows you how to add Circle Annotations in a PDF page.
-```
+```csharp
 using Aspose.Pdf.Annotations;
 using System;
 using System.Linq;
@@ -71,8 +71,8 @@ As an example, we will see the following result of adding Square and Circle anno
 
 ![example](home_1.png)
 
-Please try using the following code snippet to Get Circle Annotation in PDF document.
-```
+Please try using the following code snippet to Get Circle Annotation from PDF document.
+```csharp
  public static void GetCircleAnnotation()
         {
             // Load the PDF file
@@ -86,8 +86,8 @@ Please try using the following code snippet to Get Circle Annotation in PDF docu
             }
         }
 ```
-The following code snippet shows how to Delete Circle Annotation from  PDF file.
-```
+The following code snippet shows how to Delete Circle Annotation from PDF file.
+```csharp
  public static void DeleteCircleAnnotation()
         {
             // Load the PDF file
