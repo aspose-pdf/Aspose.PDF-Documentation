@@ -14,9 +14,23 @@ Its is possible to get or set the settings of the highlight annotations using th
 
 Also possible to get or set the settings of the strikethrough annotations using the strikethroughSettings property. The strikethroughSettings property is used to set the color, opacity, author, subject, modifiedDate, and isLocked properties of the strikethrough annotations.
 
-The next feature is ability get or set the settings of the underline annotations using the underlineSettings property. The underlineSettings property is used to set the color, opacity, author, subject, modifiedDate, and isLocked properties of the underline annotations.
-Editing the text markup annotation
-```
+The next feature is the ability to get or set the settings of the underline annotations using the underlineSettings property. The underlineSettings property is used to set the color, opacity, author, subject, modifiedDate, and isLocked properties of the underline annotations.
+
+In order to add an Text Markup Annotation to the PDF document, we need to perform the following actions:
+
+1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
+2. Create annotations: 
+
+- [HighlightAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) and set parameters (title, color).
+
+- [StrikeOutAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) and set parameters (title, color).
+
+- [SquigglyAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) and set parameters (title, color).
+
+- [UnderlineAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) and set parameters (title, color).
+
+3. After we should add all annotations to the page. 
+```csharp
 using Aspose.Pdf.Annotations;
 using Aspose.Pdf.Text;
 using System;
@@ -78,22 +92,8 @@ namespace Aspose.Pdf.Examples.Advanced
             }
         }
 ```
-```        
-        public static void GetTextMarkupAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var textMarkupAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Highlight
-                || a.AnnotationType == AnnotationType.Squiggly)
-                .Cast<TextMarkupAnnotation>();
-            foreach (var ta in textMarkupAnnotations)
-            {
-                Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
-            }
-        }
-```
-```
+If you want to highlight a multi-line fragment you should use advanced example:
+```csharp
         /// <summary>
         /// Advanced example for you want to highlight a multi-line fragment
         /// </summary>
@@ -168,7 +168,24 @@ namespace Aspose.Pdf.Examples.Advanced
             }
         }
 ```
+Please try using the following code snippet to Get Text Markup Annotation from PDF document.
+```csharp        
+        public static void GetTextMarkupAnnotation()
+        {
+            // Load the PDF file
+            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+            var textMarkupAnnotations = document.Pages[1].Annotations
+                .Where(a => a.AnnotationType == AnnotationType.Highlight
+                || a.AnnotationType == AnnotationType.Squiggly)
+                .Cast<TextMarkupAnnotation>();
+            foreach (var ta in textMarkupAnnotations)
+            {
+                Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
+            }
+        }
 ```
+The following code snippet shows how to Delete Text Markup Annotation from PDF file.
+```csharp
         public static void DeleteTextMarkupAnnotation()
         {
             // Load the PDF file
