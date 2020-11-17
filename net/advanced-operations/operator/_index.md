@@ -31,7 +31,7 @@ To add an image into a PDF file:
 5. Finally, use GRestore operator to save the updated graphical state.
 
 The following code snippet shows how to use PDF operators.
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();

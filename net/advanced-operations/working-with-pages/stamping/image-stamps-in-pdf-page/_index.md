@@ -14,7 +14,7 @@ To add an image stamp:
 1. Create a Document object and an ImageStamp object using required properties.
 1. Call the Page class’ AddStamp method to add the stamp to the PDF.
 The following code snippet shows how to add image stamp in the PDF file.
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();

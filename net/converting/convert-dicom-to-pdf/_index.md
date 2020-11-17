@@ -16,7 +16,7 @@ Aspsoe.PDF for .NET allows you to convert DICOM and SVG images, but for technica
     - If an image is placed in a MemoryStream, pass the object holding the image to the Image.ImageStream property.
 
 The following code snippet shows how to load DICOM image, place the image on a page in a PDF file and save the output as PDF.
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
 String dataDir = com.aspose.pdf.examples.Utils.getSharedDataDir(AddImage.class) + "Images/";
 // Load image into stream

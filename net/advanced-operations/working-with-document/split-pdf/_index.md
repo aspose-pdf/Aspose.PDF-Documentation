@@ -15,7 +15,7 @@ This topic shows how to split PDF pages into individual PDF files in your .NET a
 1. Save the new PDF using [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method
 
 The following C# code snippet shows you how to split PDF pages into individual PDF files.
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();

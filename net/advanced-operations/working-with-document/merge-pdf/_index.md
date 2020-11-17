@@ -18,7 +18,7 @@ To concatenate two PDF files:
 1. Finally, save the output PDF file using the [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method.
 
 The following code snippet shows how to concatenate PDF files.
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();

@@ -23,7 +23,7 @@ The following types of shapes are supported by the Graph class:
 Aspose.PDF for .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. It also offers the feature to fill rectangle object with a certain color.
 
 The following code snippet shows how to add a Rectangle object that is filled with color.
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Graphs();

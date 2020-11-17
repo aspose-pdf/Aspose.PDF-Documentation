@@ -28,7 +28,7 @@ Page page = document.Pages.Add();
 page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
 // Save updated PDF
 document.Save(dataDir + "HelloWorld_out.pdf");
-```
+```cshrap
 ## Formatting PDF Document
 
 ### Get Document Window and Page Display Properties 

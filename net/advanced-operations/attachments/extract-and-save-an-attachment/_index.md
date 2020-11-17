@@ -13,7 +13,7 @@ To get all attachments from a PDF file:
 1. Once the object is available, retrieve either all the attached file’s properties or the file itself.
 
 The following code snippets show how to get all the attachments from a PDF document.
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
