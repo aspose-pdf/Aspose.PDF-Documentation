@@ -3,6 +3,7 @@ title: What's new
 type: docs
 weight: 10
 url: /net/whatsnew/
+description: In this page introduces the most popular new features in Aspose.PDF for .NET that have been introduced in recent releases.
 ---
 
 # What's new in Aspose.PDF 
