@@ -19,5 +19,5 @@ url: /net/add-delete-and-get-annotation/
  - [Add Popup Annotation](/pdf/net/add-popup-annotation/)
  - [Add Multimedia Annotation](/pdf/net/add-multimedia-annotation/)
  - [Add WatermarkAnnotation](/pdf/net/add-watermarkannotation/)
- - [Add Screen Annotation](/pdf/net/add-screen-annotation/)
+
  

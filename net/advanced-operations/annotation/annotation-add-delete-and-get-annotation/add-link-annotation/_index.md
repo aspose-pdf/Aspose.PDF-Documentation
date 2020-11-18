@@ -57,7 +57,7 @@ namespace Aspose.Pdf.Examples.Advanced
     }
 ```
 
-Please try using the following code snippet to Get LinkAnnotation in PDF document.
+Please try using the following code snippet to Get LinkAnnotation from PDF document.
 ```csharp
 class ExampleLinkAnnotations
     {
