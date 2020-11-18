@@ -1,7 +1,7 @@
 ---
 title:  Add, Delete and Get Annotation
 type: docs
-weight: 10
+weight: 20
 url: /net/add-delete-and-get-annotation/
 ---
 
@@ -19,5 +19,5 @@ url: /net/add-delete-and-get-annotation/
  - [Add Popup Annotation](/pdf/net/add-popup-annotation/)
  - [Add Multimedia Annotation](/pdf/net/add-multimedia-annotation/)
  - [Add WatermarkAnnotation](/pdf/net/add-watermarkannotation/)
- - [Add Screen Annotation](/pdf/net/add-screen-annotation/)
+
  
