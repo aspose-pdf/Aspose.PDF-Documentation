@@ -3,10 +3,12 @@ title: Opening
 type: docs
 weight: 10
 url: /net/opening-a-pdf-document/
+description: Learn how to open a PDF file in C# Aspose.PDF for .NET PDF library.
 ---
 # Opening a PDF document
 
 ## Opening an existing PDF document
+
 There are several ways to open a document. The easiest is to specify a file name.
 
 ```csharp
