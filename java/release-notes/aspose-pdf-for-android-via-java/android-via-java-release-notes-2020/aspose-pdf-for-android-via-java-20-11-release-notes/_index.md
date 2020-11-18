@@ -56,6 +56,7 @@ This page contains release notes information for Aspose.PDF for Android via Java
 - com.aspose.pdf.BaseParagraph.setHyperlink(Hyperlink)
 - com.aspose.pdf.BaseParagraph.getZIndex
 - com.aspose.pdf.BaseParagraph.setZIndex(int)
+
 **Renamed method:**
 - com.aspose.pdf.BaseParagraph.isKeptWithNext(boolean) -> com.aspose.pdf.BaseParagraph.setKeptWithNext(boolean) 
 
@@ -70,6 +71,7 @@ This page contains release notes information for Aspose.PDF for Android via Java
 - com.aspose.pdf.DocumentInfo.setModTimeZone(double)
 - com.aspose.pdf.DocumentInfo.getTrapped
 - com.aspose.pdf.DocumentInfo.setTrapped(String)
+
 **Renamed methods:**
 - com.aspose.pdf.DocumentInfo.addItem(Object,Object) -> com.aspose.pdf.DocumentInfo.addItem(String,String)
 - com.aspose.pdf.DocumentInfo.removeItem(Object) -> com.aspose.pdf.DocumentInfo.remove(String)
@@ -80,6 +82,7 @@ This page contains release notes information for Aspose.PDF for Android via Java
 **Added methods:**
 - com.aspose.pdf.facades.PdfXmpMetadata.contains(int)
 - com.aspose.pdf.facades.PdfXmpMetadata.containsKey(String)
+
 **Rename methods:**
 - com.aspose.pdf.facades.PdfXmpMetadata.add(int,Object) -> com.aspose.pdf.facades.PdfXmpMetadata.addItem(int,XmpValue)
 - com.aspose.pdf.facades.PdfXmpMetadata.remove(int) -> com.aspose.pdf.facades.PdfXmpMetadata.removeItemByKey(int)
@@ -116,6 +119,7 @@ This page contains release notes information for Aspose.PDF for Android via Java
 - com.aspose.pdf.Metadata.addItem(String,XmpValue)
 - com.aspose.pdf.Metadata.tryGetValue(String,Object[])
 - com.aspose.pdf.Metadata.tryGetValue(String,XmpValue[])
+
 **Renamed methods:**
 - com.aspose.pdf.Metadata.addItem(Object,Object) -> com.aspose.pdf.Metadata.addItem(String,Object)
 - com.aspose.pdf.Metadata.add(String,XmpPdfAExtensionObject) ->com.aspose.pdf.Metadata.addItem(String,XmpPdfAExtensionObject)
@@ -131,6 +135,7 @@ This page contains release notes information for Aspose.PDF for Android via Java
 ### **Changes in com.aspose.pdf.Operator**
 **Added constructor:**
 - com.aspose.pdf.Operator.#ctor(int,ICommand)
+
 **Added method:**
 - com.aspose.pdf.Operator.toString(IPdfPrimitive)
 
@@ -149,6 +154,7 @@ This page contains release notes information for Aspose.PDF for Android via Java
 ### **Changes in com.aspose.pdf.TextReplaceOptions**
 **Added constructor:**
 - com.aspose.pdf.TextReplaceOptions.#ctor
+
 **Added methods:**
 - com.aspose.pdf.TextReplaceOptions.getReplaceAdjustmentAction
 - com.aspose.pdf.TextReplaceOptions.setReplaceAdjustmentAction(int)
