@@ -1,7 +1,7 @@
 ---
 title: Redact certain page region with RedactionAnnotation
 type: docs
-weight: 20
+weight: 30
 url: /net/redact-certain-page-region-with-redactionannotation/
 ---
 # Redact certain page region with RedactionAnnotation

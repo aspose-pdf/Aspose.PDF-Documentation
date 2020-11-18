@@ -1,7 +1,7 @@
 ---
 title: Overview of Annotations
 type: docs
-weight: 30
+weight: 10
 url: /net/overview-of-annotations/
 ---
 # Overview of Annotations

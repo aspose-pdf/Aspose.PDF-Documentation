@@ -1,7 +1,7 @@
 ---
 title:  Add, Delete and Get Annotation
 type: docs
-weight: 10
+weight: 20
 url: /net/add-delete-and-get-annotation/
 ---
 
