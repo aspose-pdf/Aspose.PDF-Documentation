@@ -95,7 +95,7 @@ A Sound Annotation  shall analogous to a text annotation except that instead of 
 Embedding audio files can be achieved using the following sample code.
 
 C#
-```
+```csharp
  Aspose.PDF.Document
 
 doc = new Aspose.PDF.Document();

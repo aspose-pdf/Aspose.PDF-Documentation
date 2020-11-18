@@ -85,7 +85,7 @@ namespace Aspose.Pdf.Examples.Advanced
         }    
 ```
 Please try using the following code snippet to Get Polygon and Polyline Annotations in PDF document.
-```
+```csharp
         public static void GetPolyAnnotation()
         {
             // Load the PDF file
@@ -101,7 +101,7 @@ Please try using the following code snippet to Get Polygon and Polyline Annotati
         
 ```
 The following code snippet shows how Delete Polygon and Polyline Annotations from a PDF file.
-```
+```csharp
         public static void DeletePolyAnnotation()
         {
             // Load the PDF file

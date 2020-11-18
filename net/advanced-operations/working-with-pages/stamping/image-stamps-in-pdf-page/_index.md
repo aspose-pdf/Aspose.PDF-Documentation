@@ -40,7 +40,7 @@ pdfDocument.Save(dataDir);
 ```
 ## Control Image Quality when Adding a Stamp
 When adding an image as a stamp object, you can control the quality of the image. The Quality property of the ImageStamp class is used for this purpose. It indicates the quality of image in percents (valid values are 0..100).
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
@@ -57,7 +57,7 @@ pdfDocument.Save(dataDir + "ControlImageQuality_out.pdf");
 ```
 ## Image Stamp as Background in Floating Box
 Aspose.PDF API lets you add image stamp as background in a floating box. The BackgroundImage property of FloatingBox class can be used to set the background image stamp for a floating box as shown in following code sample.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();

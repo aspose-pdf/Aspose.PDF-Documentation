@@ -28,7 +28,7 @@ foreach (OutlineItemCollection outlineItem in pdfDocument.Outlines)
 ```
 ## Getting a Bookmark’s Page Number
 Once you have added a bookmark you can find out what page it is on by getting the destination PageNumber associated with the Bookmark object.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
@@ -54,7 +54,7 @@ foreach (Aspose.Pdf.Facades.Bookmark bookmark in bookmarks)
 ```
 ## Get Child Bookmarks from a PDF Document
 Bookmarks can be organized in a hierarchical structure, with parents and children. To get all bookmarks, loop through the Document object’s Outlines collections. However, to get child bookmarks as well, also loop through all the bookmarks in each [OutlineItemCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/outlineitemcollection) object obtained in the first loop. The following code snippets show how to get child bookmarks from a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
@@ -86,7 +86,7 @@ foreach (OutlineItemCollection outlineItem in pdfDocument.Outlines)
 ```
 ## Update Bookmarks in a PDF Document
 To update a bookmark in a PDF file, first, get the particular bookmark from the Document object’s OutlineColletion collection by specifying the bookmark’s index. Once you have retrieved the bookmark into [OutlineItemCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/outlineitemcollection) object, you can update its properties and then save the updated PDF file using the Save method. The following code snippets show how to update bookmarks in a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
@@ -113,7 +113,7 @@ To update a child bookmark:
 >Get a bookmark from the Document object’s OutlineCollection collection by specifying the bookmark’s index, and then get the child bookmark by specifying the index od this parent bookmark.
 
 The following code snippet shows you how to update child bookmarks in a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
@@ -137,7 +137,7 @@ pdfDocument.Save(dataDir);
 Bookmarks are held in the Document object’s [OutlineItemCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/outlineitemcollection) collection, itself in the [OutlineCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/outlinecollection) collection. However, we may have a requirement to have all the bookmarks expanded when viewing the PDF file.
 
 In order to accomplish this requirement, we can set open status for each outline/bookmark item as Open. The following code snippet shows you how to set the open status for each bookmark as expanded in a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();

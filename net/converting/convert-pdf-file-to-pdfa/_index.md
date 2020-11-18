@@ -41,7 +41,7 @@ dataDir = dataDir + "PDFToPDFA_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 To perform validation only, use the following line of code:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -54,7 +54,7 @@ pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
 ```
 ## Convert PDF file to PDF/A-3b
 Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b format.
-```
+```csharp
 / For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
@@ -70,7 +70,7 @@ pdfDocument.Save(dataDir);
 ```
 ## Convert PDF file to PDF/A-2u 
 Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-2u format.
-```
+```csharp
 string inFile = "input.pdf";
 string outFile = "output.pdf";
 Aspose.PDF.Document doc = new Aspose.PDF.Document(inFile);
@@ -79,7 +79,7 @@ doc.Save(outFile);
 ```
 ## Convert PDF file to PDF/A-3u
 Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3u format.
-```
+```csharp
 string inFile = "input.pdf";
 string outFile = "output.pdf";
 Aspose.PDF.Document doc = new Aspose.PDF.Document(inFile);
@@ -89,7 +89,7 @@ doc.Save(outFile);
 ## Add Attachment to PDF/A file
 In case you have a requirement to attach files to PDF/A compliance format, then we recommend using PDF_A_3A value from Aspose.PDF.PdfFormat enumeration.
 PDF/A_3a is the format that provides the feature to attach any file format as an attachment to PDF/A compliant file.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
@@ -107,7 +107,7 @@ doc.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
 ```
 ## Replace missing fonts with alternative fonts 
 As per PDFA standards, fonts should be embedded in PDFA document. However, if the fonts are not embedded in the source document or exist on the machine then PDFA fails the validation. In this case, we have a requirement to substituent missing fonts with some alternative fonts from the machine. We can substitute missing fonts using the SimpleFontSubsituation method as following during PDF to PDFA conversion.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();

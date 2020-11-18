@@ -34,7 +34,7 @@ doc.Save(dataDir);
 ```
 ## Facades approach
 Aspose.PDF.Facades namespace also has a class named *PdfAnnotationEditor* which provides the feature to manipulate existing Annotations inside PDF file. This class contains a method named *RedactArea(..)* which provides the capability to remove certain page regions.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();

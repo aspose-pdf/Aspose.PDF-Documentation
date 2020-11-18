@@ -86,7 +86,7 @@ textBuilder.AppendParagraph(paragraph);
 pdfDocument.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
 ```
 ## Implement Rotation using TextFragment and Page.Paragraphs
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Initialize document object
@@ -119,7 +119,7 @@ pdfPage.Paragraphs.Add(textFragment3);
 pdfDocument.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
 ```
 ## Implement Rotation using TextParagraph and TextBuilder (Whole Paragraph Rotated)
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Initialize document object

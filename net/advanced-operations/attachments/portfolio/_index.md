@@ -51,7 +51,7 @@ The following code snippet shows you the steps to extract files from PDF portfol
 ## Remove Files from PDF Portfolio
 In order to delete/remove files from PDF portfolio, try using the following code lines.
 
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();

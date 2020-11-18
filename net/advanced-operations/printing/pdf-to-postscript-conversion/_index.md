@@ -110,7 +110,7 @@ viewer.BindPdf(dataDir + "input.pdf");
 viewer.PrinterJobName = GetCurrentUserCredentials();
 ```
 
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static string GetCurrentUserCredentials()
 {

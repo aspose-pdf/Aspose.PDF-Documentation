@@ -43,7 +43,7 @@ doc.Save(dataDir);
 ```
 ## Set Line width of InkAnnotation
 The width of [InkAnnottion](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) can be changed using LineInfo and Border objects.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();

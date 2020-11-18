@@ -44,7 +44,7 @@ Sometimes you may have a requirement to only replace the image of an already pre
 Aspose.PDF for .NET supports the feature to digitally sign the PDF files using the SignatureField class. Currently, we can also determine the validity of the certificate but we cannot extract the whole certificate. The information which can be extracted is a public key, thumbprint, issuer, etc.
 
 To extract signature information, we have introduced the [ExtractCertificate](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate)(..) method to the SignatureField class. Please take a look at the following code snippet which demonstrates the steps to extract the certificate from SignatureField object:
-``` 
+```csharp 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();

@@ -67,7 +67,7 @@ document.Save(dataDir + "StructureElements.pdf");
 ```
 ## Creating Structure Elements Tree
 In order to create structure elements tree in a Tagged PDF Document, Aspose.PDF offers methods to create a structure element tree using **ITaggedContent** Interface. Following code snippet shows how to create structure elements tree of Tagged PDF Document:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -127,7 +127,7 @@ document.Save(dataDir + "StructureElementsTree.pdf");
 ```
 ## Styling Text Structure
 In order to style text structure in a Tagged PDF Document, Aspose.PDF offers Font, FontSize, FontStyle and ForegroundColor properties of **StructureTextState** Class. Following code snippet shows how to style text structure in a Tagged PDF Document:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -157,7 +157,7 @@ document.Save(dataDir + "StyleTextStructure.pdf");
 ```
 ## Illustrating Structure Elements
 In order to illustrate structure elements in a Tagged PDF Document, Aspose.PDF offers IllustrationElement Class. Following code snippet shows how to illustrate structure elements in a Tagged PDF Document:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -196,7 +196,7 @@ Aspose.PDF for .NET provides the ability to validate PDF/UA Tagged PDF Document.
 - Checks for Navigation
 - Checks for Annotations
 The code snippet below shows how to validate the Tagged PDF Document. Corresponding problems will be displayed in the XML log report.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

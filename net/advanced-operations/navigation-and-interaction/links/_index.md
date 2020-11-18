@@ -66,7 +66,7 @@ page.Annotations.Add(link);
 dataDir = dataDir + "CreateDocumentLink_out.pdf";
 // Save updated document
 document.Save(dataDir);
-```
+```csharp
 ## Update Links in a PDF File
 As discussed in Add Hyperlink in a PDF File, the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) class makes it possible to add links in a PDF file. There’s also a similar class used to get existing links from inside PDF files. Use this if you need to update an existing link. To update an existing link:
 
@@ -94,7 +94,7 @@ goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1,
 dataDir = dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf";
 // Save the document with updated link
 doc.Save(dataDir);
-```
+```csharp
 ### Set Link Destination to a Web Address
 To update the hyperlink so that it points to a web address, instantiate the [GoToURIAction](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) object and pass it to the LinkAnnotation’s Action property. The following code snippet shows how to update a link in a PDF file and set its target to a web address.
 ```
@@ -112,7 +112,7 @@ linkAnnot.Action = new GoToURIAction("www.aspose.com");
 dataDir = dataDir + "SetDestinationLink_out.pdf";
 // Save the document with updated link
 doc.Save(dataDir);
-```
+```csharp
 ### Set Link Target to Another PDF File
 The following code snippet shows how to update a link in a PDF file and set its target to another PDF file.
 ```
@@ -133,7 +133,7 @@ goToR.File = new FileSpecification(dataDir +  "input.pdf");
 dataDir = dataDir + "SetTargetLink_out.pdf";
 // Save the document with updated link
 document.Save(dataDir);
-```
+```csharp
 ### Update LinkAnnotation Text Color
 The link annotation does not contain text. Instead, the text is placed in the contents of the page under the annotation. Therefore, to change the color of the text, replace the color of the page text instead of trying change color of the annotation. The following code snippet shows how to update the color of link annotation in a PDF file.
 ```
@@ -166,7 +166,7 @@ foreach (Annotation annotation in doc.Pages[1].Annotations)
 dataDir = dataDir + "UpdateLinkTextColor_out.pdf";
 // Save the document with updated link
 doc.Save(dataDir);
-```
+```csharp
 ## Extract Links from the PDF File
 Links are represented as annotations in a PDF file, so to extract links, extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) objects.
 
@@ -192,4 +192,4 @@ Annotation annotation = (Annotation)list[0];
 dataDir = dataDir + "ExtractLinks_out.pdf";
 // Save updated document
 document.Save(dataDir);
-```
+```csharp

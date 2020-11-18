@@ -52,7 +52,7 @@ To add a child bookmark to a PDF file, first add a parent bookmark:
 The child bookmark is created just like the parent bookmark, explained above, but is added to the parent bookmark’s Outlines collection
 
 The following code snippets show how to add child bookmark to a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
@@ -90,7 +90,7 @@ To delete all bookmarks from a PDF file:
 1. Save the modified file using the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 The following code snippets show how to delete all bookmarks from a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
@@ -116,7 +116,7 @@ To delete a particular bookmark from a PDF file:
 The [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class’ provides the [OutlineCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/outlinecollection) collection. The Delete} method removes any bookmark with the title passed to the method.
 
 The following code snippets show how to delete a particular bookmark from the PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();

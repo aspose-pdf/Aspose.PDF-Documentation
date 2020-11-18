@@ -65,7 +65,7 @@ pdfDocument.Save(dataDir);
 ``` 
 ### Adding RadioButtonField 
 The following code snippets show how to add RadioButtonField in a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -88,7 +88,7 @@ dataDir = dataDir + "RadioButton_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 The following code snippet shows the steps to add RadioButtonField with three options and place them inside Table cells.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -154,7 +154,7 @@ doc.Save(dataDir);
 ```
 ### Adding Caption to RadioButtonField 
 Following code snippet shows how to add caption which will be associated with RadioButtonField:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -200,7 +200,7 @@ PDF_Template_PDF_HTML.Save(dataDir + "RadioButtonField_out.pdf");
 ```
 ### Adding ComboBox field
 The following code snippets show how to add ComboBox field in a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -230,7 +230,7 @@ doc.Save(dataDir);
 The Document class provides a collection named Form which manages form fields in a PDF document. To add a tooltip to a form field, use the Field class AlternateName. Adobe Acrobat uses the ‘alternate name’ as a field tooltip.
 
 The code snippets that follow show how to add a tooltip to a form field, first using C# and then Visual Basic.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -250,7 +250,7 @@ doc.Save(dataDir);
 To fill a form field, get the field from the Document object’s Form collection. then set the field value using the field’s Value property.
 
 This example selects a TextBoxField and sets its value using the Value property.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -273,7 +273,7 @@ pdfDocument.Save(dataDir);
 To get values from all the fields in a PDF document, you need to navigate through all the form fields and then get the value using the Value property. Get each field from the Form collection, in the base field type called Field and access its Value property.
 
 The following code snippets show how to get the values of all the fields from a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -290,7 +290,7 @@ foreach (Field formField in pdfDocument.Form)
 ```
 ### Get/Set FieldLimit
 The FormEditor class SetFieldLimit(“textbox1”, 20) method allows you to set a field limit, the maximum number of characters that can be entered into a field.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -304,7 +304,7 @@ dataDir = dataDir + "SetFieldLimit_out.pdf";
 form.Save(dataDir);
 ```
 Similarly, Aspose.PDF has a method that gets the field limit using the DOM approach. The following code snippet shows the steps.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -313,7 +313,7 @@ Document doc = new Document(dataDir + "FieldLimit.pdf");
 Console.WriteLine("Limit: " + (doc.Form["textbox1"] as TextBoxField).MaxLen);
 ```
 You can also get the same value using the *Aspose.PDF.Facades* namespace using the following code snippet.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -324,7 +324,7 @@ Console.WriteLine("Limit: " + form.GetFieldLimit("textbox1"));
 ```
 ### Get Value from an Individual Field of PDF Document
 The form field’s Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This example selects a [TextBoxField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) and retrieves its value using the Value property.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -340,7 +340,7 @@ Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
 Console.WriteLine("Value : {0} ", textBoxField.Value);
 ```
 To get the submit button’s URL, use the following lines of code.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -360,7 +360,7 @@ Sometimes, you might know where in a document a form field is, but not have it�
 1. Use this to manipulate the fields.
 
 The following code snippet shows how to get form fields in a specific rectangular region of a PDF file.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -388,7 +388,7 @@ foreach (Field field in fields)
 Form fields in Adobe PDF files can be configured to use specific default fonts. In the early versions of Aspose.PDF, only the 14 default fonts were supported. Later releases allowed developers to apply any font. To set and update the default font used for form fields, use the DefaultAppearance(Font font, double size, Color color) class. This class can be found under the Aspose.PDF.InteractiveFeatures namespace. To use this object, use the Field class DefaultAppearance property.
 
 The following code snippet shows how to set the default font for PDF form fields.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -411,7 +411,7 @@ pdfDocument.Save(dataDir);
 ```
 ## Add/remove fields in existing form
 All the form fields are contained in the Document object’s Form collection. This collection provides different methods that manage form fields, including the Delete method. If you want to delete a particular field, pass the field name as a parameter to the Delete method and then save the updated PDF document. The following code snippet shows how to delete a particular field from a PDF document.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();

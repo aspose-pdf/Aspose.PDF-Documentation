@@ -69,7 +69,7 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page)
 
 **2- By iterating through paragraphs collection and get the text of them:**
 
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();

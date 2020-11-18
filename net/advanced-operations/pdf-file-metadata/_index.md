@@ -35,7 +35,7 @@ Aspose.PDF for .NET allows you to set file-specific information for a PDF, infor
 >Please note that you cannot set values against the *Application* and *Producer* fields, because Aspose Ltd. and Aspose.PDF for .NET x.x.x will be displayed against these fields.
 
 The following code snippet shows you how to set PDF file information.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -64,7 +64,7 @@ Aspose.PDF allows you to access a PDF file’s XMP metadata. To get a PDF file�
 1. Get the file’s metadata using the [Metadata](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) property.
 
 The following code snippet shows you how to get metadata from the PDF file.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -85,7 +85,7 @@ Aspose.PDF allows you to set metadata in a PDF file. To set metadata:
 1. Save the updated document using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
 
 The following code snippet shows you how to set metadata in a PDF file.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -104,7 +104,7 @@ pdfDocument.Save(dataDir);
 ```
 ## Insert Metadata with Prefix
 Some developers need to create a new metadata namespace with a prefix. The following code snippet shows how to insert metadata with prefix.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

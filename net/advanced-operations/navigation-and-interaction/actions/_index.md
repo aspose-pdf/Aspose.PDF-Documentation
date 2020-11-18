@@ -62,7 +62,7 @@ document.Save(dataDir);
 Aspose.PDF for .NET provides a great feature to PDF creation as well as its manipulation. It also offers the feature to add links to PDF pages and a link can either direct to pages in another PDF file, a web URL, link to launch an Application or even link to pages in same PDF file. In order to add local hyperlinks (links to pages in same PDF file), a class named [LocalHyperlink](https://apireference.aspose.com/pdf/net/aspose.pdf/localhyperlink) is added to Aspose.PDF namespace and this class has a property named TargetPageNumber, which is used to specify the target/destination page for hyperlink.
 
 In order to add the local hyperlink, we need to create a TextFragment so that link can be associated with the TextFragment. The [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) class has a property named Hyperlink which is used to associate LocalHyperlink instance. The following code snippet shows the steps to accomplish this requirement.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
@@ -111,7 +111,7 @@ To get a link’s URL:
 1. Finally, extract the LinkAnnotation Action as GoToURIAction.
 
 The following code snippet shows how to get hyperlink destinations (URL) from a PDF file.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
@@ -141,7 +141,7 @@ A hyperlink has two parts: the text that shows in the document, and the destinat
 Text and annotations/actions in a PDF file are represented by different entities. Text on а page is just а set of words and characters, while annotations bring some interactivity such as that inherent in a hyperlink.
 
 To find the URL content, you need to work with both annotation and text. The [Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) object does not have itself have the text but sits under the text on the page. So to get the text, the Annotation gives the URL’s bounds, while the Text object gives the URL contents. Please see the following code snippet.
-```
+```csharp
   {
         public static void Run()
         {
@@ -199,7 +199,7 @@ To remove an open action:
 1. Save the updated PDF using the Document object’s [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
  
 The following code snippet shows how to remove a document open action from the PDF file.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
@@ -215,7 +215,7 @@ document.Save(dataDir);
 When viewing PDF files in a PDF viewer such as Adobe Reader, the files usually open on the first page. However, it is possible to set the file to open on a different page.
 
 The [XYZExplicitDestination](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) class allows you to specify a page in a PDF file that you want to open. When passing the GoToAction object value to the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class OpenAction property, the document opens at the page specified against the XYZExplicitDestination object. The following code snippet shows how to specify a page as the document open action.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();

@@ -41,7 +41,7 @@ Then you can see how to convert an image to PDF with the **same height and width
 
 Following code snippet shows how to convert an Image to PDF with same page height and width using C#:
 
-```
+```csharp
 // Load input JPG image file
 String path = dataDir + "Aspose.jpg";
 System.Drawing.Image srcImage = System.Drawing.Image.FromFile(path);

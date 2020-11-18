@@ -42,7 +42,7 @@ pdfDocument.Save(dataDir);
 Adding watermarks to PDF documents is one of the frequent demanded features and Aspose.PDF for .NET is fully capable of adding Image as well as Text watermarks. We have a class named [TextStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/textstamp) which provides the feature to add text stamps over the PDF file. Recently there has been a requirement to support the feature to specify the alignment of text when using TextStamp object. So in order to fulfill this requirement, we have introduced TextAlignment property in TextStamp class. Using this property, we can specify the Horizontal text alignment.
 
 The following code snippets shows an example on how to load an existing PDF document and add TextStamp over it.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
@@ -77,7 +77,7 @@ doc.Save(dataDir);
 We have implemented setting of rendering mode for text adding and editing scenarios. To render stroke text please create TextState object and set RenderingMode to TextRenderingMode.StrokeText and also select color for StrokingColor property. Later, bind TextState to the stamp using BindTextState() method.
 
 Following code snippet demonstrates adding Fill Stroke Text:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();

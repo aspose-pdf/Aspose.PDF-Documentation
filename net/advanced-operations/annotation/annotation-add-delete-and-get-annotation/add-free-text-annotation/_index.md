@@ -31,7 +31,7 @@ doc.Save(dataDir + "SetCalloutProperty.pdf");
 ```
 ## Set Callout Property for XFDF File
 If you use import from XFDF file please use callout-line name instead just Callout. The following code snippet shows, how to use this functionality:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
@@ -44,7 +44,7 @@ pdfDocument.ImportAnnotationsFromXfdf(new MemoryStream(Encoding.UTF8.GetBytes(Xf
 pdfDocument.Save(dataDir + "SetCalloutPropertyXFDF.pdf");
 ```
 The following method is being used to CreateXfdf:
-```
+```csharp
  /// <summary>
 
 /// Create XFDF
@@ -87,7 +87,7 @@ static void CreateXfdf(ref StringBuilder pXfdf)
 ```
 ## Invisible Annotation
 Sometimes, it is necessary to create a watermark that isn’t visible in the document when viewing it but should be visible when the document is printed. Use annotation flags for this purpose. The following code snippet shows how.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();

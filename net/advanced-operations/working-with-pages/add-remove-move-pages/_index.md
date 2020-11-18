@@ -38,7 +38,7 @@ Sometimes, you want to ensure that a document ends on an empty page. This topic 
 1. Save the output PDF using the [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method.
 
 The following code snippet shows you how to insert an empty page at the end of a PDF file.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
@@ -60,7 +60,7 @@ You can delete pages from a PDF file using Aspose.PDF for .NET. To delete a part
 1. Call the [Delete](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection/methods/delete) method and specify the page’s index
 1. Call the [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method to save the updated PDF file
 The following code snippet shows how to delete a particular page from the PDF file using C#.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();

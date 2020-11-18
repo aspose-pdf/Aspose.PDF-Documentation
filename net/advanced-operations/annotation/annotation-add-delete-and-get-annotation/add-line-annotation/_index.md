@@ -66,7 +66,7 @@ namespace Aspose.Pdf.Examples.Advanced
 ```
 Please try using the following code snippet to Get Line Annotation in PDF document.
 
-```
+```csharp
         public static void GetLineAnnotation()
         {
             // Load the PDF file
@@ -82,7 +82,7 @@ Please try using the following code snippet to Get Line Annotation in PDF docume
 ```       
 The following code snippet shows how Delete Line Annotation from a PDF file.
  
-```        
+```csharp        
         public static void DeleteLineAnnotation()
         {
             // Load the PDF file

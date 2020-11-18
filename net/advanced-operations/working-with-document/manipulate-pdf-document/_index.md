@@ -25,7 +25,7 @@ pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1A);
 ```
 The following code snippet shows you how to validate PDF document for PDF/A-1b.
 
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -44,7 +44,7 @@ pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
 Aspose.PDF API allows you to add a table of content either when creating a PDF, or to an existing file. The ListSection class in the Aspose.Pdf.Generator namespace allows you to create a table of contents when creating a PDF from scratch. To add headings, which are elements of the TOC, use the Aspose.Pdf.Generator.Heading class.
 
 To add a TOC to an existing PDF file, use the Heading class in the Aspose.Pdf namespace. The Aspose.Pdf namespace can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace. The following code snippet shows how to create a table of contents inside an existing PDF file.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -99,7 +99,7 @@ doc.Save(dataDir);
 Aspose.PDF also allows setting different TabLeaderType for different TOC levels. You need to set LineDash property of FormatArray with the appropriate value of TabLeaderType enum as following.
 
 C#
-```
+```csharp
  string outFile = "TOC.pdf";
 
 Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
@@ -198,7 +198,7 @@ doc.Save(outFile);
 ```
 ### Hide Page Numbers in TOC
 In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://apireference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) property of [TOCInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -233,7 +233,7 @@ doc.Save(outFile);
 ```
 ### Customize Page Numbers while adding TOC
 It is common to customize the page numbering in the TOC while adding TOC in a PDF document. For example, we may need to add some prefix before page number like P1, P2, P3 and so on. In such a case, Aspose.PDF for .NET provides PageNumbersPrefix property of TocInfo class that can be used to customize page numbers as shown in the following code sample.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string inFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "42824.pdf";
 string outFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "42824_out.pdf";
@@ -274,7 +274,7 @@ doc.Save(outFile);
 We apply access privileges on PDF files so that a certain group of users can access particular features/objects of PDF documents. In order to restrict the PDF file access, we usually apply encryption and we may have a requirement to set PDF file expiration, so that the user accessing/viewing the document gets a valid prompt regarding PDF file expiry.
 
 In order to accomplish the above stated requirement, we can use *JavascriptAction* object. Please take a look over the following code snippet.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -310,7 +310,7 @@ The [DocSaveOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveo
 - DocSaveOptions.ProgressEventType)
 
 The code snippets below shows how to use CustomerProgressHandler.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -324,7 +324,7 @@ dataDir = dataDir + "DetermineProgress_out.pdf";
 pdfDocument.Save(dataDir, saveOptions);
 Console.ReadLine();
 ```
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 public static void ShowProgressOnConsole(DocSaveOptions.ProgressEventHandlerInfo eventInfo)
 {

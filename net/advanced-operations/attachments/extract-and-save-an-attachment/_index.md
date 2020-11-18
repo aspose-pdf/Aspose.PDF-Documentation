@@ -66,7 +66,7 @@ Get Individual Attachment
 In order to get an individual attachment, we can specify the index of attachment in *EmbeddedFiles* object of Document instance. Please try using following code snippet.
 
 C#
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();

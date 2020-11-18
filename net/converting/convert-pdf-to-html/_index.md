@@ -41,7 +41,7 @@ pdfDocument.Save(dataDir + "output_out.html", SaveFormat.Html);
 ## Splitting Output to Multi-page HTML
 When converting large PDF file with several pages to HTML format, the output appears as a single HTML page. It can end up being very long. To control page size, it is possible to split the output into several pages during PDF to HTML conversion. Please try using the following code snippet.
 
-```// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```csharp// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
@@ -78,7 +78,7 @@ doc.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
 ## Compressing SVG Images During Conversion
 To compress SVG images during PDF to HTML conversion, please try using the following code:
 
-```// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```csharp// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // Create HtmlSaveOption with tested feature
 HtmlSaveOptions newOptions = new HtmlSaveOptions();
 
@@ -88,7 +88,7 @@ newOptions.CompressSvgGraphicsIfAny = true;
 ## Specifying the Images Folder
 We can also specify the folder that images will be saved to during PDF to HTML conversion:
 
-```// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```csharp// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // Create HtmlSaveOption with tested feature
 HtmlSaveOptions newOptions = new HtmlSaveOptions();
 
@@ -104,7 +104,7 @@ To meet this requirement, a new property, HtmlMarkupGenerationMode, was introduc
 
 With the following simple code snippet, you can split the output HTML into pages. In the output pages, all HTML objects must go exactly where they go now (fonts processing and output, CSS creation and output, images creation and output), except that the output HTML will contain contents currently placed inside thetags (now “body” tags will be omitted). However, when using this approach, the link to the CSS is the responsibility of your code, because things like will be stripped out. For this purpose, you may read the CSS via File.ReadAllText() and send it via AJAX to to a web page where it will be applied by jQuery.
 
-```// The path to the documents directory.
+```csharp// The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 Document doc = new Document(dataDir + "PDFToHTML.pdf");
@@ -120,7 +120,7 @@ doc.Save(dataDir + "CreateSubsequentFiles_out.html", options);
 
 In case the source/input PDF file contains transparent texts shadowed by foreground images, then there might be text rendering issues. So in order to cater such scenarios, SaveShadowedTextsAsTransparentTexts and SaveTransparentTexts properties can be used.
 
-```// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```csharp// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
@@ -133,7 +133,7 @@ doc.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
 ## PDF document layers rendering
 We can render PDF document layers in separate layer type element during PDF to HTML conversion:
 
-```// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```csharp// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 

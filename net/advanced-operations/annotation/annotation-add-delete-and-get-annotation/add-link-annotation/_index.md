@@ -58,7 +58,7 @@ namespace Aspose.Pdf.Examples.Advanced
 ```
 
 Please try using the following code snippet to Get LinkAnnotation in PDF document.
-```
+```csharp
 class ExampleLinkAnnotations
     {
         // The path to the documents directory.
@@ -84,7 +84,7 @@ class ExampleLinkAnnotations
 
 ```
 The following code snippet shows how to Delete Link Annotation from PDF file. For this we need to find and and remove all link annotations on the 1st page. After this we will save document with removed annotation. 
-```
+```csharp
 class ExampleLinkAnnotations
     {
         // The path to the documents directory.

@@ -52,7 +52,7 @@ This button has border and set a background. Also we set a button name (Name), a
 Exist more complex example of the Widget Annotations usage - document navigation in PDF document. This may be needed to prepare a PDF document presentation.
   
 This example shows how to create 4 buttons:
-```
+```csharp
 var document = new Document(@"C:\\tmp\\JSON Fundamenals.pdf");
 var buttons = new ButtonField[4];
 var alternateNames = new[] { "Go to first page", "Go to prev page", "Go to next page", "Go to last page" };
@@ -67,7 +67,7 @@ var clrBackGround = System.Drawing.Color.FromArgb(255, 0, 96, 70);
 ```
 We should create the buttons without attaching them to the page.
 
-```
+```csharp
 for (var i = 0; i < 4; i++)
 {
     buttons[i] = new ButtonField(document,
@@ -88,7 +88,7 @@ for (var i = 0; i < 4; i++)
 }
 ```
 We should duplicate this array of buttons on each page in the document.
-```
+```csharp
 for (var pageIndex = 1; pageIndex <= document.Pages.Count;
                                                         pageIndex++)
     for (var i = 0; i < 4; i++)
@@ -99,7 +99,7 @@ for (var pageIndex = 1; pageIndex <= document.Pages.Count;
 We call [Form.Add method](https://apireference.aspose.com/pdf/net/aspose.pdf.forms.form/add/methods/2) with the following parameters: field, name, and the index of the pages that this field will be added to.
 
 And to get the full result, we need disable the “First” and “Prev” buttons on the first page and the “Next” and “Last” buttons on the last page.
-```
+```csharp
 document.Form["btn1_1"].ReadOnly = true;
 document.Form["btn1_2"].ReadOnly = true;
 

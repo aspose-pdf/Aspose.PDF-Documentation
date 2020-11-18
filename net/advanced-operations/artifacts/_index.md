@@ -35,7 +35,7 @@ Background images can be used to add a watermark, or other subtle design, to doc
     
 The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object.
 
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();

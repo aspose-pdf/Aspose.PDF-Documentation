@@ -51,7 +51,7 @@ The [OptimizeResources()](https://apireference.aspose.com/pdf/net/aspose.pdf/doc
 - Unused objects are deleted
 
 The snippet below is an example. Note, though, that this method cannot guarantee document shrinking.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -68,7 +68,7 @@ We can also customize the optimization strategy. Currently, the [OptimizeResourc
 
 ### Shrinking or Compressing All Images
 We have two ways to work with images: reduce image quality and/or change their resolution. In any case, *ImageCompressionOptions* should be applied. In the following example, we shrink images by reducing *ImageQuality* to 50.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
@@ -87,7 +87,7 @@ dataDir = dataDir + "Shrinkimage_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 Another way is to resize the images with a lower resolution. In this case, we should set ResizeImages to true and MaxResolution to the appropriate value.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // Initialize Time
 var time = DateTime.Now.Ticks;
@@ -112,7 +112,7 @@ dataDir = dataDir + "ResizeImages_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 Another important issue is the execution time. But again, we can manage this setting too. Currently, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) property. The following snippet demonstrates the Fast algorithm:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // Initialize Time
 var time = DateTime.Now.Ticks;
@@ -137,7 +137,7 @@ Console.WriteLine("Ticks: {0}", DateTime.Now.Ticks - time);
 ```
 ### Removing Unused Objects
 A PDF document sometimes contains the PDF objects that are not referenced from any other object in the document. This may happen, for example, when a page is removed from the document page tree but the page object itself isn’t removed. Removing these objects doesn’t make the document invalid but rather shrinks it.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -156,7 +156,7 @@ pdfDocument.Save(dataDir);
 ```
 ### Removing Unused Streams
 Sometimes the document contains the unused resource streams. These streams are not “unused objects” because they are referenced from a page resource dictionary. Thus, they are not removed with a “remove unused objects” method. But these streams are never used with the page contents. This may happen in cases when an image has been removed from the page but not from the page resources. Also, this situation often occurs when pages are extracted from the document and document pages have “common” resources, that is, the same Resources object. Page contents are analyzed in order to determine if a resource stream is used or not. Unused streams are removed. It sometimes decreases the document size. The use of this technique is similar to the previous step:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -175,7 +175,7 @@ pdfDocument.Save(dataDir);
 ```
 ### Linking Duplicate Streams
 Some documents can contain several identical resource streams (like images, for instance). This may happen, say when a document is concatenated with itself. The output document contains two independent copies of the same resource stream. We analyze all resource streams and compare them. If streams are duplicated, they are merged, that is, only one copy is left. The references are changed appropriately, and the copies of the object are removed. In some cases, it helps to decrease the document size.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -193,7 +193,7 @@ dataDir = dataDir + "OptimizeDocument_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 Additionally, we can use [AllowReusePageContent](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -216,7 +216,7 @@ Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length,
 ```
 ### Unembedding Fonts
 If the document uses embedded fonts, it means that all font data is stored in the document. The advantage is that the document is viewable regardless of whether the font is installed on the user’s machine or not. But embedding fonts makes the document larger. The unembed fonts method removes all embedded fonts. Thus, the document size decreases but the document itself may become unreadable if the correct font is not installed.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -243,7 +243,7 @@ The optimization resources apply these methods to the document. If any of these 
 
 ### Removing or Flattening Annotations
 Annotations can be deleted when they are unnecessary. When they are needed but do not require additional editing, they can be flattened. Both of these techniques will reduce the file size.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -263,7 +263,7 @@ pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 ### Removing Form Fields
 If the PDF document contains AcroForms, we can try to reduce the file size by flattening form fields.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -286,7 +286,7 @@ doc.Save(dataDir);
 ```
 ### Convert a PDF from RGB colorspace to grayscale
 A PDF file comprises Text, Image, Attachment, Annotations, Graphs, and other objects. You may come across a requirement to convert a PDF from RGB colorspace to grayscale so that it would be faster while printing those PDF files. Also, when the file is converted to grayscale, the document size is reduced too, but it can just as well cause a decrease in the document quality. This feature is currently supported by the Pre-Flight feature of Adobe Acrobat, but when talking about Office automation, Aspose.PDF is an ultimate solution to provide such leverages for document manipulations. In order to accomplish this requirement, the following code snippet can be used.
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

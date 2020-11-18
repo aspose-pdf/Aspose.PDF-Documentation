@@ -156,7 +156,7 @@ Aspose.PDF for .NET allows styling a table in Tagged PDF document. In order to s
 - Left
 - Top
 The following code snippet shows how to style a table in Tagged PDF document:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -259,7 +259,7 @@ Aspose.PDF for .NET allows styling a table row in Tagged PDF document. In order 
 - VerticalAlignment
 
 The following code snippet shows how to style a table row in the Tagged PDF document:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -354,7 +354,7 @@ Aspose.PDF for .NET allows styling a table cell in Tagged PDF document. In order
 - RowSpan
 
 The following code snippet shows how to style a table cell in the Tagged PDF document:
-```
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
