@@ -8,7 +8,7 @@ url: /net/text-stamps-in-the-pdf-file/
 
 ## Adding Text Stamp
 You can use TextStamp class to add a text stamp in a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text stamp, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the stamp in the PDF. The following code snippet shows you how to add text stamp in the PDF file.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();

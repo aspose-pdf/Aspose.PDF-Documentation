@@ -22,7 +22,7 @@ To add a table to an existing PDF file with Aspose.PDF for .NET, take the follow
 1. Save the file.
 
 The following code snippets show how to add text in an existing PDF file.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();

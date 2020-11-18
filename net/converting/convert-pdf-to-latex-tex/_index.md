@@ -18,7 +18,7 @@ To convert PDF files to TeX, Aspose.PDF has the class [LaTeXSaveOptions](https:/
 
 The following code snippet shows the process of converting PDF files into the TEX format.
 
-```cshrap// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```csharp// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 

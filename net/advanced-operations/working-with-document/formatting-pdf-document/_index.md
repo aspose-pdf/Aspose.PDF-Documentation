@@ -16,7 +16,8 @@ To create a PDF file using C#, the following steps can be used.
 1. Add a Page object to the Pages collection of the Document object
 1. Add TextFragment to Paragraphs collection of the page
 1. Save the resultant PDF document
- ```
+
+```csharp
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
@@ -28,7 +29,7 @@ Page page = document.Pages.Add();
 page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
 // Save updated PDF
 document.Save(dataDir + "HelloWorld_out.pdf");
-```cshrap
+```csharp
 ## Formatting PDF Document
 
 ### Get Document Window and Page Display Properties 
@@ -47,7 +48,8 @@ Open the PDF file using the Document class. Now, you can set the Document object
 - PageMode – How the document is displayed when first opened. The options are show thumbnails, full-screen, show attachment panel.
 
 The following code snippet shows you how to get the properties using Document class.
-```
+
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -91,7 +93,9 @@ Console.WriteLine("PageLayout : {0}", pdfDocument.PageLayout);
 // I.e. show thumbnails, full-screen, show attachment panel
 Console.WriteLine("pageMode : {0}", pdfDocument.PageMode);
 ```
+
 ### Set Document Window and Page Display Properties
+
 This topic explains how to set the properties of the document window, viewer application, and page display. To set these different properties:
 
 1. Open the PDF file using the Document class.
@@ -112,6 +116,7 @@ Properties available are:
 - PageMode
 
 Each is used and described in the code below. The following - code snippet shows you how to set the properties using the Document class.
+
 ```
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

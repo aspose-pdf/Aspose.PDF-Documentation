@@ -15,7 +15,7 @@ The code below results in the following portfolio.
 
 ![todo:image_alt_text](working-with-pdf-portfolio_1.jpg)
 
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();

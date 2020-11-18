@@ -12,7 +12,7 @@ Aspose.PDF for .NET API lets you work with XFA and XFA Acroform fields in a PDF 
 
 ## Fill XFA fields
 The following code snippet shows you how to fill fields in XFA form.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();

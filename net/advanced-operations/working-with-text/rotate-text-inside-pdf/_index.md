@@ -10,7 +10,7 @@ url: /net/rotate-text-inside-pdf/
 By using the Rotation property of TextFragment Class, you can rotate text at various angles. The text rotation can be used in different scenarios of document generation. You can specify the rotation angle in degrees to rotate the text as per your requirement. Please check the following different scenarios, in which you can implement text rotation.
 
 ## Implement Rotation using TextFragment and TextBuilder
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Initialize document object

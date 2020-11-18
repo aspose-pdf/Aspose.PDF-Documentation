@@ -8,7 +8,7 @@ url: /net/pdf-file-metadata/
 
 ## Get PDF File Information
 In order to get file specific information of a PDF file, you first need to get the [DocumentInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/documentinfo) object using [Info](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/info) property of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. Once the [DocumentInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/documentinfo) object is retrieved, you can get the values of the individual properties. The following code snippet shows you how to get PDF file information.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

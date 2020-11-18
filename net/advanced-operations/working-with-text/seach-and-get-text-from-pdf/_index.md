@@ -8,7 +8,7 @@ url: /net/search-and-get-text-from-pdf/
 
 ## Search and Get Text from All the Pages of PDF Document
 TextFragmentAbsorber class allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text, Position ( XIndent, YIndent ), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor, etc. The following code snippet shows you how to search for text from all the pages.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();

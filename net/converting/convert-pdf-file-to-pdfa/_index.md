@@ -24,7 +24,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 ## Convert PDF file to PDF/A-1b
 The following code snippet shows how to convert PDF files to PDF/A-1b compliant PDF.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();

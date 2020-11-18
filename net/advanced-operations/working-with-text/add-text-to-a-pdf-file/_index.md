@@ -13,7 +13,7 @@ To add text to an existing PDF file:
 4. Call the Document object's Save method and save the output PDF file.
 ## Adding Text
 The following code snippet shows you how to add text in an existing PDF file.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();

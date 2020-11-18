@@ -17,7 +17,7 @@ The schema is extended with the ability to use external fonts. Furthermore, when
 XML is formed in accordance with the DTD schema specified below:
 
 XML
-```cshrap<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+```csharp<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="pdf2xml">
     <xs:complexType>
       <xs:sequence>

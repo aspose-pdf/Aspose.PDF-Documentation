@@ -7,7 +7,7 @@ url: /net/set-privileges-encrypt-and-decrypt-pdf-file/
 # Set Privileges,Encrypt and Decrypt PDF File
 ## Set Privileges on an Existing PDF File
 To set privileges on a PDF file, create an object of the [DocumentPrivilege](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege)class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s Encrypt(..) method. The following code snippet shows you how to set the privileges of a PDF file.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();

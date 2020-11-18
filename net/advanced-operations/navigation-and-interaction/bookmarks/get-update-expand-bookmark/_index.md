@@ -9,7 +9,7 @@ url: /net/get-update-and-expand-bookmark/
 The [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) object’s [OutlineCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/outlinecollection) collection contains all a PDF file’s bookmarks. This article explains how to get bookmarks from a PDF file, and how to get which page a particular bookmark is on.
 
 To get the bookmarks, loop through the [OutlineCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/outlinecollection) collection and get each bookmark in the OutlineItemCollection. The OutlineItemCollection provides access to all the bookmark’s attributes. The following code snippet shows you how to get bookmarks from the PDF file.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();

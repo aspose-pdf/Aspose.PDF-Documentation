@@ -20,7 +20,7 @@ To add an SWF file as an annotation:
 1. First, create an instance of ScreenAnnotation.
 1. Then add it to the page’s Annotations collection using the Add method.
 The following code snippet shows you how to add SWF annotation in a PDF page.
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();

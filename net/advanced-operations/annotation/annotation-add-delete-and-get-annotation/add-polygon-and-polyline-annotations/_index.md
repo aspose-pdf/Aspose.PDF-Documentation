@@ -21,7 +21,7 @@ Steps with which we create Polygon and Polyline annotations:
 
 The following code snippet shows how to add Polygon and Polyline Annotations to a PDF file:
 
-```cshrap
+```csharp
 using Aspose.Pdf.Annotations;
 using System;
 using System.Linq;

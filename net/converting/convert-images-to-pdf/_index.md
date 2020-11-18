@@ -14,7 +14,7 @@ You can very easy convert a JPG image to PDF by following steps:
 1. Save output PDF
 
 The code snippet below shows how to convert JPG Image to PDF using C#:
-```cshrap
+```csharp
 // Load input JPG file
 String path = dataDir + "Aspose.jpg";
 

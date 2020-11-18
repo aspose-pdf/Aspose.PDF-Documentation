@@ -8,7 +8,7 @@ url: /net/add-free-text-annotation/
 
 ## Set Callout Property for FreeTextAnnotation
 For a more flexible configuration of annotation in the PDF document, Aspose.PDF for .NET provides Callout property of FreeTextAnnotation class which allows specifying Array of point of callout line. The following code snippet show, how to use this functionality:
-```cshrap
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
