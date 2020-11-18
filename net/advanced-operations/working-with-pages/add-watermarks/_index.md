@@ -14,7 +14,12 @@ The [Artifact](https://apireference.aspose.com/pdf/net/aspose.pdf/artifact) clas
 
 **Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
 **Artifact.Subtype** – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
->Please note that watermarks created with Adobe Acrobat have the type Pagination and subtype Watermark.
+
+{{% alert color="primary" %}} 
+
+Please note that watermarks created with Adobe Acrobat have the type Pagination and subtype Watermark.
+
+{{% /alert %}}
 
 **Artifact.Contents** – Gets a collection of artifact internal operators. Its supported type is System.Collections.ICollection.
 **Artifact.Form** – Gets an artifact’s XForm (if XForm is used). Watermarks, header, and footer artifacts contains XForm which shows all artifact contents.
