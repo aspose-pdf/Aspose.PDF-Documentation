@@ -15,7 +15,7 @@ TIFF or TIF, Tagged Image File Format, represents raster images that are meant f
 1. Finally, save images to PDF pages
 
 Moreover, the following code snippet shows how to convert multi-page or multi-frame TIFF image to PDF with C#:
-```
+```cshrap
 // Initalize new Document
 Document pdf = new Document();
 

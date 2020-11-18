@@ -30,7 +30,7 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 **Artifact.Opacity** – Gets an artifact’s opacity. Possible values are in the range 0…1, where 1 is completely opaque.
 ## Programming Samples: Getting Watermarks
 The following code snippet shows how to get each watermark on the first page of a PDF file.
-```  
+```cshrap  
    Document doc = new Document(_inDataDir + "text.pdf");
             WatermarkArtifact artifact = new WatermarkArtifact();
             artifact.SetText(new FormattedText("WATERMARK", System.Drawing.Color.Blue, FontStyle.Courier,

@@ -18,7 +18,7 @@ To add an annotation to a particular page, add it to that page’s Annotations c
 1. Add the annotation to the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object’s Annotations collection.
 
 The following code snippet shows you how to add an annotation in a PDF page.
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();

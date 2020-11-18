@@ -22,7 +22,7 @@ Steps with which we create an Line annotation:
 1. After we can Add annotation to the page
 
 The following code snippet shows how to add Line Annotation to a PDF file:
-```
+```cshrap
 using Aspose.Pdf.Annotations;
 using System;
 using System.Linq;

@@ -8,7 +8,7 @@ url: /net/extract-tagged-content-from-tagged-pdfs/
 
 ## Getting Tagged PDF Content
 In order to get content of PDF Document with Tagged Text, Aspose.PDF offers **TaggedContent** property of **Document** Class. Following code snippet shows how to get content of a PDF document with Tagged Text:
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

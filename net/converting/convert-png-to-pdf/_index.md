@@ -15,7 +15,7 @@ You can convert PNG to PDF image using the below steps:
 1. Save output file
 
 Moreover, the code snippet below shows how to convert PNG to PDF with C# in your .NET applications:
-```
+```cshrap
 // Load input PNG file
 String path = dataDir + "Aspose.png";
 System.Drawing.Image srcImage = System.Drawing.Image.FromFile(path);

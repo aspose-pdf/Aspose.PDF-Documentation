@@ -22,7 +22,7 @@ Each form field for each place in the document represents one Widget Annotation.
 In this sample, we will learn how to add the push-buttons for navigation in the document.
 
 ## Add Button to the Document
-```
+```cshrap
 document = new Document();
 var page = document.Pages.Add();
 var rect = new Rectangle(72, 748, 164, 768);

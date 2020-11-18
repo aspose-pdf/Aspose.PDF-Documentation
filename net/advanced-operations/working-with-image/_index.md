@@ -22,7 +22,7 @@ To add an image to an existing PDF file:
 - Finally, use GRestore operator to save the updated graphical state.
 - Save the file.
 The following code snippet shows how to add the image in a PDF document.
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();

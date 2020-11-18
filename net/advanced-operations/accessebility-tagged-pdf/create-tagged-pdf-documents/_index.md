@@ -8,7 +8,7 @@ url: /net/create-tagged-pdf-documents/
 
 ## Creating Structure Elements
 In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using **ITaggedContent** Interface. Following code snippet shows how to create structure elements of Tagged PDF:
-```
+```cshrap
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

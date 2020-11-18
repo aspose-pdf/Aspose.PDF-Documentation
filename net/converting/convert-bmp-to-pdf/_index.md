@@ -14,7 +14,7 @@ You can convert BMP to PDF with Aspose.PDF for .NET API. Therefore, you can foll
 1. Finally, save the output PDF file
 
 So the following code snippet follows these steps and shows how to convert BMP to PDF using C#:
-```
+```cshrap
 Initialize empty PDF document
 using (Document pdfDocument = new Document())
 {
