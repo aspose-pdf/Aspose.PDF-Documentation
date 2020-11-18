@@ -20,4 +20,4 @@ url: /net/add-delete-and-get-annotation/
  - [Add Multimedia Annotation](/pdf/net/add-multimedia-annotation/)
  - [Add WatermarkAnnotation](/pdf/net/add-watermarkannotation/)
  - [Add Screen Annotation](/pdf/net/add-screen-annotation/)
- - [Add Print and Trap Annotations](/pdf/net/add-print-and-trap-annotations/)
+ 
