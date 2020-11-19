@@ -3,6 +3,7 @@ title: Get Started
 type: docs
 weight: 30
 url: /net/get-started/
+description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document.
 ---
 # Articles in this section
 
