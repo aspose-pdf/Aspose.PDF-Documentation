@@ -3,6 +3,7 @@ title: Licensing
 type: docs
 weight: 50
 url: /net/licensing/
+description: Aspose. PDF for .NET invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product. 
 ---
 # Licensing and limitations
 
