@@ -3,7 +3,7 @@ title: Release Notes - 2019
 type: docs
 weight: 20
 url: /net/release-notes-2019/
-description: This page contains the Release Notes information for Aspose.PDF for .NET in 2019. 
+description: This page contains the Release Notes information for Aspose.PDF for .NET in 2019. This is a list of new Aspose.PDF for .NET features, enhancement, and bug fixes.
 ---
 
 ## **Release Notes - 2019**
