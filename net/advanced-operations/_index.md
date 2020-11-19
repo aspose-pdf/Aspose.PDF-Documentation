@@ -4,7 +4,9 @@ type: docs
 weight: 90
 url: /net/advanced-operations/
 ---
-**Articles in this section**
+
+## Articles in this section
+
 - [Working with Text](/pdf/net/working-with-text/)
 - [Working with Images in PDF](/pdf/net/working-with-images-in-pdf/)
 - [Working with Tables](/pdf/net/working-with-tables/)
