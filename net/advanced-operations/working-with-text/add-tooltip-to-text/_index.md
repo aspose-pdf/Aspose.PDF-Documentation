@@ -6,8 +6,10 @@ url: /net/add-tooltip-to-text/
 ---
 # Add Tooltip to Text
 
-### Add Tooltip to Searched Text by adding Invisible Button
+## Add Tooltip to Searched Text by adding Invisible Button
+
 It is often required to add some details for a phrase or specific word as a tooltip in the PDF document so that it can popup when the user hovers the mouse cursor over the text. Aspose.PDF for .NET provides this feature to create tooltips by adding an invisible button over the searched text. The following code snippet will show you the way to achieve this functionality:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -63,9 +65,11 @@ foreach (TextFragment fragment in textFragments)
 // Save document
 document.Save(outputFile);
 ```
+
 >Concerning to the length of the tooltip, the tooltip text is contained in the PDF document as PDF string type, outside of the content stream. There is no effective restriction on such strings in PDF files (See PDF Reference Appendix C.). However, a conforming reader (e.g. Adobe Acrobat) running on a particular processor and in a particular operating environment does have such a limit. Please refer to your PDF reader application documentation.
 
 ### Create a Hidden Text Block and Show it on Mouse Over
+
 In Aspose.PDF, a feature to hide actions is implemented by which it is possible to show/hide text box field (or any other type of annotation) on mouse enter/exit over some invisible button. For this purpose, Aspose.Pdf.Annotations.HideAction Class is used to assign the action of hide/show to the text block. Please use the following code snippet to Show/Hide a Text Block on Mouse Enter/Exit.
 
 Please also take into account that PDF actions in the documents work fine in the conforming readers (e.g. Adobe Reader) but no warranties for other PDF readers (e.g. web browser plugins). We have provided a brief investigation and found:
@@ -78,7 +82,8 @@ Please also take into account that PDF actions in the documents work fine in the
 
 >buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
 
-```csharp// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
