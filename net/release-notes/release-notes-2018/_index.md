@@ -3,6 +3,7 @@ title: Release Notes - 2018
 type: docs
 weight: 30
 url: /net/release-notes-2018/
+description: This page contains the Release Notes information for Aspose.PDF for .NET in 2018. 
 ---
 
 ## **Release Notes - 2018**
