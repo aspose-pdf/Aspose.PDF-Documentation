@@ -22,7 +22,7 @@ The following table indicates the Annotation types that Aspose.PDF for .NET supp
 |[Underline](/pdf/net/add-text-markup-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}| 
 |[Squiggly](/pdf/net/add-text-markup-annotation/)|(PDF 1.4) Squiggly-underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[StrikeOut](/pdf/net/add-text-markup-annotation/)|(PDF 1.3) Strikeout annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Stamp]()|(PDF 1.3) Rubber stamp annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Stamp](/pdf/net/stamping/)|(PDF 1.3) Rubber stamp annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Caret](/pdf/net/add-caret-annotation/)|(PDF 1.5) Caret annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Ink](/pdf/net/add-ink-annotation/)|(PDF 1.3) Ink annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Popup](/pdf/net/add-popup-annotation/)|(PDF 1.3) Pop-up annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
