@@ -3,11 +3,14 @@ title: Create Tagged PDF Documents
 type: docs
 weight: 10
 url: /net/create-tagged-pdf-documents/
+description: This section explains how to create structure elements for tagged PDF document by using Aspose.PDF for .NET
 ---
 # Create Tagged PDF Documents
 
 ## Creating Structure Elements
+
 In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using **ITaggedContent** Interface. Following code snippet shows how to create structure elements of Tagged PDF:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -65,8 +68,11 @@ FormElement formElement = taggedContent.CreateFormElement();
 // Save Tagged Pdf Document
 document.Save(dataDir + "StructureElements.pdf");
 ```
+
 ## Creating Structure Elements Tree
+
 In order to create structure elements tree in a Tagged PDF Document, Aspose.PDF offers methods to create a structure element tree using **ITaggedContent** Interface. Following code snippet shows how to create structure elements tree of Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -125,8 +131,11 @@ sect3.AppendChild(div31);
 // Save Tagged Pdf Document
 document.Save(dataDir + "StructureElementsTree.pdf");
 ```
+
 ## Styling Text Structure
+
 In order to style text structure in a Tagged PDF Document, Aspose.PDF offers Font, FontSize, FontStyle and ForegroundColor properties of **StructureTextState** Class. Following code snippet shows how to style text structure in a Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -155,8 +164,11 @@ p.SetText("Red italic text.");
 // Save Tagged Pdf Document
 document.Save(dataDir + "StyleTextStructure.pdf");
 ```
+
 ## Illustrating Structure Elements
+
 In order to illustrate structure elements in a Tagged PDF Document, Aspose.PDF offers IllustrationElement Class. Following code snippet shows how to illustrate structure elements in a Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -182,8 +194,11 @@ figure1.SetImage("image.png");
 
 // Save Tagged Pdf Document
 document.Save(dataDir + "IllustrationStructureElements.pdf");
+
 ```
+
 ## Validate Tagged PDF
+
 Aspose.PDF for .NET provides the ability to validate PDF/UA Tagged PDF Document. Validation of PDF/UA standard supports:
 
 - Checks for XObjects
@@ -195,7 +210,9 @@ Aspose.PDF for .NET provides the ability to validate PDF/UA Tagged PDF Document.
 - Checks for Security settings
 - Checks for Navigation
 - Checks for Annotations
+
 The code snippet below shows how to validate the Tagged PDF Document. Corresponding problems will be displayed in the XML log report.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

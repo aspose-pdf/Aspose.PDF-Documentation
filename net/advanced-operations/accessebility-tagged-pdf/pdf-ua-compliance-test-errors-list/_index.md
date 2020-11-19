@@ -3,13 +3,13 @@ title: PDF-UA Compliance Test - Errors List
 type: docs
 weight: 50
 url: /net/pdf-ua-compliance-test-errors-list/
+description: In this article, we list the errors that can arise during PDF/UA compliance testing using the Aspose.PDF API.
 ---
-# PDF-UA Compliance Test - Errors List
+## PDF-UA Compliance Test - Errors List
 
 While doing PDF/UA compliance testing using Aspose.PDF API, you may be interested in knowing the error messages that you can get. These errors are of different types such as General, Text, Fonts, Headings, and several others. Information about such errors can be helpful in knowing the exact cause of the errors and their handling. In this article, we list the errors that can arise during PDF/UA compliance testing using the API.
 
 ### **General**
-
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -39,7 +39,6 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.1:9.3(14.7)|Error|Entry for given ‘StructParents’ not found|
 
 ### **Text**
-
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -88,7 +87,6 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ### **Tables**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.5:1|Warning|Irregular table row|
@@ -98,14 +96,12 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ### **Lists**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.6:1|Error|‘LI’ structure element must be a child of ‘L’ element|
 |7.6:2|Error|‘Lbl’ and ‘LBody’ structure element must be children of ‘LI’ element|
 
 ### **Notes and references**
-
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -114,7 +110,6 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ### **Optional content**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.10:1|Error|‘Name’ missing in optional content configuration dictionary|
@@ -122,14 +117,12 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ### **Embedded files**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.11:1|Error|‘F’ or ‘UF’ key missing in the file specification|
 |7.11:2|Warning|‘Desc’ key missing in the file specification|
 
 ### **Digital signatures**
-
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -139,13 +132,11 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ### **Non-interactive forms**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.14:1|Error|‘PrintField’ attribute missing in non-interactive form item|
 
 ### **XFA**
-
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -153,14 +144,12 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ### **Security**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.16:1(7.6.3.2)|Error|Security settings block assistive technologies from accessing document’s content|
 |7.16:2(7.6.3.2)|Error|Conversion is not allowed by permission restrictions|
 
 ### **Navigation**
-
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -170,7 +159,6 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ### **Annotations**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.18.1:1|Error|Natural language of Contents entry cannot be determined|
@@ -178,7 +166,7 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.18.1:3|Error|Annotation is not nested inside an ‘Annot’ structure element|
 |7.18.2:1|Error|An annotation with subtype undefined in ISO 32000 does not meet 7.18.1|
 |7.18.2:2|Error|An annotation of subtype TrapNet exists|
-|7.18.3:1|Error|Tab order entry in page with annotations not set to ‘S’ (Structure)|
+|7.18.3:1|Error|Tab order entry in page with annotations not set to 'S' (Structure)|
 |7.18.4:1|Error|‘Widget’ annotation not nested inside a ‘Form’ structure element|
 |7.18.5:1|Error|‘Link’ annotation is not nested inside a ‘Link’ structure element|
 |7.18.6.2:1|Error|CT key is missing from the media clip data dictionary|
@@ -190,16 +178,13 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ### **Actions**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.19:1|Need check manual|Actions were found. Need to check actions according to specification PDF/UA manually|
 
 ### **XObjects**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.20:1|Error|Reference XObject shall not be used in conforming PDF/UA file|
 |7.20:2|Error|The content of Form XObject isn’t incorporated into structure elements|
-

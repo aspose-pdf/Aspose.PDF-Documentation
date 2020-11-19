@@ -7,6 +7,7 @@ url: /net/setting-structure-elements-properties/
 # Setting Structure Elements Properties
 
 In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers **CreateSectElement()** and **CreateHeaderElement()** methods of **ITaggedContent** Interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -41,8 +42,11 @@ h1.ActualText = "Actual Text";
 // Save Tagged Pdf Document
 document.Save(dataDir + "StructureElementsProperties.pdf");
 ```
+
 ## Setting Text Structure Elements
+
 In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers **ParagraphElement** Class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -70,8 +74,11 @@ rootElement.AppendChild(p);
 // Save Tagged Pdf Document
 document.Save(dataDir + "TextStructureElement.pdf");
 ```
+
 ## Setting Text Block Structure Elements
+
 In order to set text block structure elements of a Tagged PDF Document, Aspose.PDF offers **HeaderElement** and **ParagraphElement** Classes. You can append objects of these classes as a child of **StructureElement** object. Following code snippet shows how to set text block structure elements of a Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -116,8 +123,11 @@ rootElement.AppendChild(p);
 // Save Tagged Pdf Document
 document.Save(dataDir + "TextBlockStructureElements.pdf");
 ```
+
 ## Setting Inline Structure Elements
+
 In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF offers **SpanElement** and **ParagraphElement** Classes. You can append objects of these classes as a child of **StructureElement** object. Following code snippet shows how to set inline structure elements of a Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -228,8 +238,11 @@ p.AppendChild(span10);
 // Save Tagged Pdf Document
 document.Save(dataDir + "InlineStructureElements.pdf");
 ```
+
 ## Setting Custom Tag Name
+
 In order to set a custom tag name of the elements of a Tagged PDF Document, Aspose.PDF offers **SetTag()** method for elements. Following code snippet shows how to set custom tag name:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -292,10 +305,13 @@ p4.AppendChild(span4);
 // Save Tagged Pdf Document
 document.Save(dataDir + "CustomTag.pdf");
 ```
+
 ## Adding Structure Element into Elements
+
 >This feature is supported by version 19.4 or greater.
 
 In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers **CreateLinkElement()** method of **ITaggedContent** Interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -385,10 +401,13 @@ document = new Document(outFile);
 bool isPdfUaCompliance = document.Validate(logFile, PdfFormat.PDF_UA_1);
 Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 ```
+
 ## Setting Link Structure Element
+
 >This feature is supported by version 19.4 or greater.
 
 Aspose.PDF for .NET API also allows you to add link structure elements. Following code snippet shows how to add link structure element into Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -467,8 +486,11 @@ document = new Document(outFile);
 bool isPdfUaCompliance = document.Validate(logFile, PdfFormat.PDF_UA_1);
 Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 ```
+
 ## Setting Note Structure Element
+
 Aspose.PDF for .NET API also allows you to add [NoteElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement) in a tagged PDF document. Following code snippet shows how to add note element in Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -519,10 +541,12 @@ document = new Document(outFile);
 bool isPdfUaCompliance = document.Validate(logFile, PdfFormat.PDF_UA_1);
 Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 ```
+
 ## Setting Language and Title
 >This feature is supported by version 19.6 or greater.
 
 Aspose.PDF for .NET API also allows you to set language and title for a document according to specification PDF/UA. The language can be set up as for whole document as for its separate structural elements. Following code snippet shows how to et language and title in Tagged PDF Document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 Document document = new Document();
