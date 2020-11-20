@@ -3,8 +3,12 @@ title: Convert DICOM to PDF
 type: docs
 weight: 80
 url: /net/convert-dicom-to-pdf/
+description: Convert medical images saved in DICOM format to a PDF file using Aspose.PDF for .NET.
 ---
+
 # Convert DICOM or SVG images to PDF using Image class
+
+DICOM format is the medical industry standard for the creation, storage, transmission, and visualization of digital medical images and documents of examined patients.
 
 Aspsoe.PDF for .NET allows you to convert DICOM and SVG images, but for technical reasons to add images you need to specify the type of file to be added to PDF:
 

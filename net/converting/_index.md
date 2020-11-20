@@ -3,8 +3,11 @@ title: Converting
 type: docs
 weight: 70
 url: /net/converting/
+description: This section contains a description of all possible options for converting PDF documents on C# using the Aspose.PDF library.
 ---
-**Articles in this section**
+
+## Articles in this section
+
 - [Convert PDF/A to PDF](/pdf/net/convert-pdfa-to-pdf/)
 - [Convert text to PDF](/pdf/net/convert-text-to-pdf/)
 - [Convert CGM to PDF](/pdf/net/convert-cgm-to-pdf/)
