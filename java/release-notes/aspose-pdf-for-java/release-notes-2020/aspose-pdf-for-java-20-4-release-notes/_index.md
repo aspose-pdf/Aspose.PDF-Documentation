@@ -1,7 +1,7 @@
 ---
 title: Aspose.PDF for Java 20.4 Release Notes
 type: docs
-weight: 90
+weight: 100
 url: /java/aspose-pdf-for-java-20-4-release-notes/
 ---
 

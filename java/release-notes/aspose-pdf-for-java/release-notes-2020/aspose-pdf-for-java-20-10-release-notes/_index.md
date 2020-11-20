@@ -1,7 +1,7 @@
 ---
 title: Aspose.PDF for Java 20.10 Release Notes
 type: docs
-weight: 30
+weight: 40
 url: /java/aspose-pdf-for-java-20-10-release-notes/
 keywords: Add signatures to PDF,PDF to HTML,XPS to PDF,PDF to XLSX,TIFF to PDF,HTM to PDFA/1b
 description: You can add signatures to PDF regardless the rotation of the pdf pages. Also text will not be selectable while converting PDF to HTML.
