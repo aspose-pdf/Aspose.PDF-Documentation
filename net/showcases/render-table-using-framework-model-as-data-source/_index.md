@@ -6,11 +6,13 @@ url: /net/render-table-using-entity-framework-model-as-data-source/
 description: This article will show you how to render table using Entity Framework model as data source using the Aspose.PDF for .NET.
 ---
 # Render table using Entity Framework model as data source
+
 There are a number of tasks when for some reason it is more convenient to export data from databases to a PDF document without using the recently popular HTML to PDF conversion scheme. 
 
 This article will show you how to generate a PDF document using the Aspose.PDF for .NET.
 
 ## Basics of generation PDF with Aspose.PDF
+
 One of the most important classes in Aspose.PDF is a [Document class](https://apireference.aspose.com/net/pdf/aspose.pdf/document). This class is a PDF rendering engine. To present a PDF structure, the Aspose.PDF library uses the Document-Page model, where:
 
 * Document - contains the properties of the PDF document including page collection;
@@ -100,6 +102,7 @@ As a result, we get the table 4x10 with equal-width columns.
 ![Table 4x10](http://aspose-html-doc.azurewebsites.net/docs/images/img001.jpg)
 
 ## Exporting Data from ADO.NET Objects
+
 The Table class provides methods for interacting with ADO.NET data sources - [ImportDataTable](https://apireference.aspose.com/net/pdf/aspose.pdf.table/importdatatable/methods/1) and [ImportDataView](https://apireference.aspose.com/net/pdf/aspose.pdf/table/methods/importdataview). The first method imports data from the DataTable, the second from the DataView.
 Premising that these objects are not very convenient for working in the MVC template, we will limit ourselves to a brief example. In this example (line 50), the ImportDataTable method is called and receives as parameters a DataTable instance and additional settings like the header flag and the initial position (rows/cols) for the data output.
 
@@ -165,6 +168,7 @@ using (var streamOut = new MemoryStream())
 ```
 
 ## Exporting Data from the Entity Framework
+
 More relevant for modern .NET is the import of data from ORM frameworks. In this case, it's a good idea to extend the Table class with extension methods for importing data from a simple list or from the grouped data. Let's give an example for one of the most popular ORMs - Entity Framework.
 
 ```csharp

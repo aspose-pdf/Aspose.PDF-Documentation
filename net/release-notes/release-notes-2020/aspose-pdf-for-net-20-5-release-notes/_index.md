@@ -3,7 +3,7 @@ title: Aspose.PDF for .NET 20.5 Release Notes
 type: docs
 weight: 80
 url: /net/aspose-pdf-for-net-20-5-release-notes/
-description:This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.5. 
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.5. 
 ---
 
 {{% alert color="primary" %}} 

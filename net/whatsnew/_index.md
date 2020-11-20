@@ -9,6 +9,7 @@ description: In this page introduces the most popular new features in Aspose.PDF
 # What's new in Aspose.PDF 
 
 ## What's new in Aspose.PDF 20.11
+
 Aspose.PDF v20.11 added support for ZUGFeRD format.
  
 ### Conversion PDF to XML 
@@ -28,7 +29,9 @@ doc.Save(dataDir + "PDFToXML_out.xml", SaveFormat.MobiXml);
 ```
 
 ## What's new in Aspose.PDF 20.7
+
 ### Conversion PDF to Excel CSV
+
 Aspose.PDF v20.7 Aspose.PDF supports conversion to CSV format.
 You should use ExcelSaveOptions while document saving to perform the conversion.
 
@@ -44,7 +47,9 @@ pdfDocument.Save("Currencies.csv", options);
 ```
 
 ## What's new in Aspose.PDF  20.3
+
 ### Progress Detail of PPTX Conversion
+
 Aspose.PDF v20.3 lets you track the progress of PDF to PPTX conversion.
 
 The Aspose.Pdf.PptxSaveOptions class provides CustomProgressHandler property that can be specified to a custom method for tracking the progress of conversion as shown in the following code sample.
