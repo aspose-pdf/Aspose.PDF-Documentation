@@ -3,11 +3,14 @@ title: Determine Line Break
 type: docs
 weight: 70
 url: /net/determine-line-break/
+description: Learn more about how to determinate a line break of multi-line TextFragment.
 ---
 # Determine Line Break
 
 ## Track Line Breaking of Multi-Line TextFragment
+
 Aspose.PDF for .NET offers logging (tracking) background processing (line breaking) of multi-line text fragments in text adding scenarios. You can use the GetNotifications() method of Page Class as follows, in order to track line breaking of text fragment:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

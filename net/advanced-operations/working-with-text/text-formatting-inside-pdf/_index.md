@@ -3,16 +3,21 @@ title: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /net/text-formatting-inside-pdf/
+description:
 ---
 # Text Formatting inside PDF
 
 ## Add Line Indent
-Aspose.PDF for .NET offers SubsequentLinesIndent property into TextFormattingOptions class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection. Please use the following code snippet to use the property:
+
+Aspose.PDF for .NET offers SubsequentLinesIndent property into TextFormattingOptions class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
+
+Please use the following code snippet to use the property:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Create new document object 
+// Create new document object
 Aspose.Pdf.Document document = new Aspose.Pdf.Document();
 Aspose.Pdf.Page page = document.Pages.Add();
 
@@ -40,13 +45,16 @@ page.Paragraphs.Add(text);
 
 document.Save(dataDir + "SubsequentIndent_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
 ```
+
 ## Add Text Border
+
 The following code snippet shows, how to add a border to a text using TextBuilder and setting DrawTextRectangleBorder property of TextState:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Create new document object 
+// Create new document object
 Document pdfDocument = new Document();
 // Get particular page
 Page pdfPage = (Page)pdfDocument.Pages.Add();
@@ -67,8 +75,11 @@ tb.AppendText(textFragment);
 // Save the document
 pdfDocument.Save(dataDir + "PDFWithTextBorder_out.pdf");
 ```
+
 ## Add Underline Text
+
 The following code snippet shows you how to add Underline text while creating a new PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -97,8 +108,11 @@ dataDir = dataDir + "AddUnderlineText_out.pdf";
 // Save resulting PDF document.
 pdfDocument.Save(dataDir);
 ```
+
 ## Adding a Border Around Added Text
+
 You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -117,7 +131,9 @@ dataDir = dataDir + "AddingBorderAroundAddedText_out.pdf";
 // Save resulting PDF document.
 editor.Save(dataDir);
 ```
+
 ## Adding NewLine feed
+
 TextFragment doesn’t support line feed inside the text. However in order to add text with line feed, please use TextFragment with TextParagraph:
 
 - use “\r\n” or Environment.NewLine in TextFragment instead of single “\n”;
@@ -125,6 +141,7 @@ TextFragment doesn’t support line feed inside the text. However in order to ad
 - add the TextFragment with TextParagraph.AppendLine;
 - add the TextParagraph with TextBuilder.AppendParagraph.
 Please use below code snippet.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -161,10 +178,13 @@ dataDir = dataDir + "AddNewLineFeed_out.pdf";
 // Save resulting PDF document.
 pdfApplicationDoc.Save(dataDir);
 ```
+
 ## Adding StrikeOut Text
+
 The TextState class provides the capabilities to set formatting for TextFragments being placed inside PDF document. You can use this class to set text formatting as Bold, Italic, Underline and starting this release, the API has provided the capabilities to mark text formatting as Strikeout. Please try using the following code snippet to add TextFragment with Strikeout formatting.
 
 Please use complete code snippet:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -199,13 +219,16 @@ dataDir = dataDir + "AddStrikeOutText_out.pdf";
 // Save resulting PDF document.
 pdfDocument.Save(dataDir);
 ```
+
 ## Apply Gradient Shading to the Text
+
 Text formatting has been further enhanced in the API for text editing scenarios and now you can add text with pattern colorspace inside PDF document. Aspose.Pdf.Color Class has further been enhanced by introducing new property of PatternColorSpace, which can be used to specify shading colors for the text. This new property adds different Gradient Shading to the text e.g. Axial Shading, Radial (Type 3) Shading as shown in the following code snippet:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-            
+
 using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
 {
     TextFragmentAbsorber absorber = new TextFragmentAbsorber("Lorem ipsum");
@@ -223,10 +246,13 @@ using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
     pdfDocument.Save(dataDir + "text_out.pdf");
 }
 ```
+
 >In order to apply a Radial Gradient, you can set ‘PatternColorSpace’ property equal to ‘Aspose.Pdf.Drawing.GradientRadialShading(startingColor, endingColor)’ in the above code snippet.
 
 ## Text Alignment for Floating Box Contents
+
 Aspose.PDF supports setting text alignment for contents inside a Floating Box element. The alignment properties of Aspose.Pdf.FloatingBox instance can be used to achieve this as shown in the following code sample.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

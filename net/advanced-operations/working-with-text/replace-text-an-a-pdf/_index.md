@@ -3,6 +3,7 @@ title: Replace Text in a PDF Document
 type: docs
 weight: 40
 url: /net/replace-text-in-a-pdf-document/
+description: Learn more about various ways of replacing and removing text from PDF. Aspose.PDF allows replacing text in a particular region or with a regular expression.
 ---
 # Replace Text in a PDF Document
 
@@ -12,7 +13,8 @@ url: /net/replace-text-in-a-pdf-document/
 
 In order to replace text in all the pages of a PDF document, you first need to use TextFragmentAbsorber to find the particular phrase you want to replace. After that, you need to go through all the TextFragments to replace the text and change any other attributes. Once you have done that, you only need to save the output PDF using the Save method of the Document object. The following code snippet shows you how to replace text in all pages of PDF document.
 
-```csharp// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
@@ -50,39 +52,28 @@ In order to replace text in a particular page region, first, we need to instanti
 
 ```csharp
 // load PDF file
-
 Aspose.PDF.Document pdf  = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
 
 // instantiate TextFragment Absorber object
-
 Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
 
 // search text within page bound
-
 TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
 
 // specify the page region for TextSearch Options
-
 TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
 
 // search text from first page of PDF file
-
 pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
 
 // iterate through individual TextFragment
-
 foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
-
 {
-
     // update text to blank characters
-
     tf.Text = "";
-
 }
 
-    // save updated PDF file after text replace
-
+// save updated PDF file after text replace
 pdf.Save("c:/pdftest/TextUpdated.pdf");
 ```
 
@@ -188,14 +179,13 @@ foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
 dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
 // Save resultant PDF
 doc.Save(dataDir);
-
 ```
 
 ## Rendering Replaceable Symbols during PDF creation
 
-Replaceable symbols are special symbols in a text string that can be replaced with corresponding content at run time. Replaceable symbols currently support by new Document Object Model of Aspose.PDF namespace are $P, $p, \n, \r. The $p and $P are used to deal with the page numbering at run time. $p is replaced with the number of the page where the current Paragraph class is in. $P is replaced with the total number of pages in the document. When adding TextFragment to the paragraphs collection of PDF documents, it does not support line feed inside the text. However in order to add text with a line feed, please use TextFragment with TextParagraph:
+Replaceable symbols are special symbols in a text string that can be replaced with corresponding content at run time. Replaceable symbols currently support by new Document Object Model of Aspose.PDF namespace are `$P`, `$p,` `\n`, `\r`. The `$p` and `$P` are used to deal with the page numbering at run time. `$p` is replaced with the number of the page where the current Paragraph class is in. `$P` is replaced with the total number of pages in the document. When adding `TextFragment` to the paragraphs collection of PDF documents, it does not support line feed inside the text. However in order to add text with a line feed, please use `TextFragment` with `TextParagraph`:
 
-- use “\r\n” or Environment.NewLine in TextFragment instead of single “\n”;
+- use "\r\n" or Environment.NewLine in TextFragment instead of single "\n";
 - create a TextParagraph object. It will add text with line splitting;
 - add the TextFragment with TextParagraph.AppendLine;
 - add the TextParagraph with TextBuilder.AppendParagraph.
@@ -398,7 +388,7 @@ doc.Save(dataDir);
 
 ## Remove All Text from PDF Document
 
-### Remove All Text using Operators 
+### Remove All Text using Operators
 
 In some text operation, you need to remove all text from PDF document and for that, you need to set found text as empty string value usually. The point is that changing the text for multitude text fragments invokes a number of checking and text position adjustment operations. They are essential in the text editing scenarios. The difficulty is that you cannot determine how many text fragments will be removed in the scenario where they are processed in a loop.
 

@@ -3,6 +3,7 @@ title: Add Tooltip to Text
 type: docs
 weight: 20
 url: /net/add-tooltip-to-text/
+description: Aspose.PDF implements a function of hiding actions, with which you can show/hide an annotation when you enter/leave the mouse over an invisible button.
 ---
 # Add Tooltip to Text
 
@@ -68,7 +69,7 @@ document.Save(outputFile);
 
 >Concerning to the length of the tooltip, the tooltip text is contained in the PDF document as PDF string type, outside of the content stream. There is no effective restriction on such strings in PDF files (See PDF Reference Appendix C.). However, a conforming reader (e.g. Adobe Acrobat) running on a particular processor and in a particular operating environment does have such a limit. Please refer to your PDF reader application documentation.
 
-### Create a Hidden Text Block and Show it on Mouse Over
+## Create a Hidden Text Block and Show it on Mouse Over
 
 In Aspose.PDF, a feature to hide actions is implemented by which it is possible to show/hide text box field (or any other type of annotation) on mouse enter/exit over some invisible button. For this purpose, Aspose.Pdf.Annotations.HideAction Class is used to assign the action of hide/show to the text block. Please use the following code snippet to Show/Hide a Text Block on Mouse Enter/Exit.
 
@@ -79,7 +80,6 @@ Please also take into account that PDF actions in the documents work fine in the
 - Only implementation using HideAction constructor accepting field name works if Google Chrome v.61.0 browses the document; Please use corresponding constructors if browsing in the Google Chrome is significant:
 
 >buttonField.Actions.OnEnter = new HideAction(floatingField.FullName, false);
-
 >buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
 
 ```csharp

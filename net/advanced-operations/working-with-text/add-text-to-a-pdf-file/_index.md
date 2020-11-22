@@ -3,7 +3,9 @@ title: Add Text to a PDF file
 type: docs
 weight: 10
 url: /net/add-text-to-a-pdf-file/
+description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to a PDF, add HTML fragments, or use custom OTF fonts.
 ---
+
 # Add Text to a PDF file
 
 To add text to an existing PDF file:
@@ -143,7 +145,7 @@ tf.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
 TextSegment segment = new TextSegment(" ... Text Segment 1...");
 // Add segment to segments collection of TextFragment
 tf.Segments.Add(segment);
-// Create a new TextSegment 
+// Create a new TextSegment
 segment = new TextSegment("Link to Google");
 // Add segment to segments collection of TextFragment
 tf.Segments.Add(segment);
@@ -167,6 +169,7 @@ doc.Save(dataDir);
 ```
 
 ## Use OTF Font
+
 Aspose.PDF for .NET offers the feature to use Custom/TrueType fonts while creating/manipulating PDF file contents so that file contents are displayed using contents other than default system fonts. Starting release of Aspose.PDF for .NET 10.3.0, we have provided the support for Open Type Fonts.
 
 ```csharp
@@ -300,6 +303,7 @@ Please follow the steps specified below to create a FootNote:
 - Add TextFragment to paragraphs collection of a page instance
 
 ### Custom line style for FootNote
+
 The following example demonstrates how to add Footnotes to the bottom of the Pdf page and define a custom line style.
 
 ```csharp
@@ -471,10 +475,10 @@ TextFragment text = new TextFragment("Hello World.. ");
 page.Paragraphs.Add(text);
 // Create an image instance
 Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-// Set image as inline paragraph so that it appears right after 
+// Set image as inline paragraph so that it appears right after
 // The previous paragraph object (TextFragment)
 image.IsInLineParagraph = true;
-// Specify image file path 
+// Specify image file path
 image.File = dataDir + "aspose-logo.jpg";
 // Set image Height (optional)
 image.FixHeight = 30;
@@ -663,6 +667,7 @@ doc.Save(dataDir);
 ```
 
 ## Working with custom Tab Stops
+
 A Tab Stop is a stop point for tabbing. In word processing, each line contains a number of tab stops placed at regular intervals (for example, every half inch). They can be changed, however, as most word processors allow you to set tab stops wherever you want. When you press the Tab key, the cursor or insertion point jumps to the next tab stop, which itself is invisible. Although tab stops do not exist in the text file, the word processor keeps track of them so that it can react correctly to the Tab key.
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) allows developers to use custom tab stops in PDF documents. The Aspose.Pdf.Text.TabStop class is used to set custom TAB stops in the [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) class.
@@ -699,7 +704,7 @@ ts3.LeaderType = TabLeaderType.Dot;
 
 TextFragment header = new TextFragment("This is a example of forming table with TAB stops", ts);
 TextFragment text0 = new TextFragment("#$TABHead1 #$TABHead2 #$TABHead3", ts);
-            
+
 TextFragment text1 = new TextFragment("#$TABdata11 #$TABdata12 #$TABdata13", ts);
 TextFragment text2 = new TextFragment("#$TABdata21 ", ts);
 text2.Segments.Add(new TextSegment("#$TAB"));
@@ -730,7 +735,7 @@ Document doc = new Document();
 // Create page to pages collection of PDF file
 Aspose.Pdf.Page page = doc.Pages.Add();
 
-// Create Graph object 
+// Create Graph object
 Aspose.Pdf.Drawing.Graph canvas = new Aspose.Pdf.Drawing.Graph(100, 400);
 // Create rectangle instance with certain dimensions
 Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(100, 100, 400, 400);
@@ -757,6 +762,7 @@ doc.Save(dataDir);
 ```
 
 ## Specify LineSpacing for Fonts
+
 Every font has an abstract square, whose height is the intended distance between lines of type in the same type size. This square is called the em square and it is the design grid on which the glyph outlines are defined. Many letters of input font have points that are placed out of font's em square bounds, so in order to display the font correctly, usage of special setting is needed. The object TextFragment has a set of text formatting options which are accessible via properties TextState.FormattingOptions. Last property of this path is property of type Aspose.Pdf.Text.TextFormattingOptions. This class has a an enumeration [LineSpacingMode](https://apireference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode) which is designed for specific fonts e.g input font "HPSimplified.ttf". Also class [Aspose.Pdf.Text.TextFormattingOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) has a property [LineSpacing](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) of type LineSpacingMode. You just need to set LineSpacing into LineSpacingMode.FullSize. The code snippet to get a font displayed correctly, would be like as follows:
 
 ```csharp

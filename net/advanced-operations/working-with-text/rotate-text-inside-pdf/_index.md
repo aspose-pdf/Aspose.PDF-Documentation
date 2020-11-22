@@ -3,13 +3,16 @@ title: Rotate Text Inside PDF
 type: docs
 weight: 50
 url: /net/rotate-text-inside-pdf/
+description: Learn different ways to rotate text to PDF. Aspose.PDF allows you to rotate text to any angle, rotate text fragment or a whole paragraph.
 ---
 # Rotate Text Inside PDF
 
 ## Rotate Text Inside PDF using Rotation Property
-By using the Rotation property of TextFragment Class, you can rotate text at various angles. The text rotation can be used in different scenarios of document generation. You can specify the rotation angle in degrees to rotate the text as per your requirement. Please check the following different scenarios, in which you can implement text rotation.
+
+By using the `Rotation` property of `TextFragment` Class, you can rotate text at various angles. The text rotation can be used in different scenarios of document generation. You can specify the rotation angle in degrees to rotate the text as per your requirement. Please check the following different scenarios, in which you can implement text rotation.
 
 ## Implement Rotation using TextFragment and TextBuilder
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
@@ -45,8 +48,11 @@ textBuilder.AppendText(textFragment2);
 textBuilder.AppendText(textFragment3);
 // Save document
 pdfDocument.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
-view rawExamples-CSharp-AsposePDF-Text-RotateTextUsingTextFragment-RotateTextUsingTextFragment.cs hosted with ❤ by GitHub
-Implement Rotation using TextParagraph and TextBuilder (Rotated Fragments)
+```
+
+## Implement Rotation using TextParagraph and TextBuilder (Rotated Fragments)
+
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Initialize document object
@@ -85,7 +91,9 @@ textBuilder.AppendParagraph(paragraph);
 // Save document
 pdfDocument.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
 ```
+
 ## Implement Rotation using TextFragment and Page.Paragraphs
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
@@ -118,7 +126,9 @@ pdfPage.Paragraphs.Add(textFragment3);
 // Save document
 pdfDocument.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
 ```
+
 ## Implement Rotation using TextParagraph and TextBuilder (Whole Paragraph Rotated)
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
