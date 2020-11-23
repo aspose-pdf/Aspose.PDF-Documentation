@@ -3,7 +3,9 @@ title: Convert images to PDF
 type: docs
 weight: 100
 url: /net/convert-images-to-pdf/
+description: You can very easy convert a JPG image to PDF. Also, you can convert an image to PDF with the same  height and width of the page.
 ---
+
 # Convert images to PDF
 
 You can very easy convert a JPG image to PDF by following steps:

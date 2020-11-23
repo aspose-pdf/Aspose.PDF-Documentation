@@ -3,8 +3,11 @@ title: Convert PDF Pages to BMP Image
 type: docs
 weight: 200
 url: /net/convert-pdf-pages-to-bmp-image/
+description: This article describes how to convert PDF Pages to BMP image, convert all Pages to Bmp images and convert single PDF page to BMP image.
 ---
+
 # Convert PDF Pages to BMP Image
+
 The BmpDevice class allows you to convert PDF pages to Bmp images. This class provides a method named Process which allows you to convert a particular page of the PDF file to Bmp image format.
 
 ## Convert All Pages to Bmp Images
@@ -52,6 +55,7 @@ public static void ConvertPDFtoBmpAllPages()
 ```
 
 ## Convert single PDF page to BMP image
+
 To convert a particular page to Bmp format:
 
 Pass the page index as an argument to the Process(..) method.

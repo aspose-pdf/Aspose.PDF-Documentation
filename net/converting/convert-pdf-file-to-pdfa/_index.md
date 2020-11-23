@@ -3,7 +3,9 @@ title: Convert PDF File to PDF-A
 type: docs
 weight: 240
 url: /net/convert-pdf-file-to-pdfa/
+description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. Also, describes the possibility replacement missing fonts with alternative fonts. 
 ---
+
 # Convert PDF File to PDF-A 
 
 Aspose.PDF allows you to convert a PDF file to a PDF/A compliant PDF file. Before doing so, the file must be validated. This topic explains how.
