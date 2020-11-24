@@ -3,8 +3,11 @@ title: Convert PDF to Excel
 type: docs
 weight: 280
 url: /net/convert-pdf-to-excel/
+description: Aspose.PDF for .NET allows you to convert PDF files to Excel format. During this conversion, the individual pages of the PDF file are converted to Excel worksheets.
 ---
+
 # Convert PDF to Excel 
+
 Aspose.PDF for .NET is a PDF manipulation component, we have introduced a feature that renders PDF file to Excel workbook (XLS files). During this conversion, the individual pages of the PDF file are converted to Excel worksheets.
 
 ## Convert PDF to XLS
@@ -69,7 +72,7 @@ public static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 ### Convert to XLSX format
 
-By default Aspose.PDF uses  XML Spreadsheet 2003 for storing data. In order to convert PDF files to XLSX format, Aspose.PDF has a class called `ExcelSaveOptions` with `Format`. An object of the `ExcelSaveOptions` class is passed as a second argument to the `Document.Save(..)` constructor. The following code snippet shows the process for converting PDF file into XLSX format.
+By default Aspose.PDF uses  XML Spreadsheet 2003 for storing data. In order to convert PDF files to XLSX format, Aspose.PDF has a class called [`ExcelSaveOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) with [`Format`](https://apireference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format). An object of the [`ExcelSaveOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) class is passed as a second argument to the [`Document.Save(..)`](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/constructors/main) constructor. The following code snippet shows the process for converting PDF file into XLSX format.
 
 ```csharp
 public static void ConvertPDFtoExcelAdvanced_SaveXLSX()
