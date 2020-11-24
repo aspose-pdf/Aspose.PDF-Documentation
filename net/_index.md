@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/
 ---
-![Aspose.PDF for .NET logo image](home_1.jpg)
+![Aspose.PDF for .NET logo image](home_1.png)
 
 ## Welcome to the Aspose.PDF for .NET
 
