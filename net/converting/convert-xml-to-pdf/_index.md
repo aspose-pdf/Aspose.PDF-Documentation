@@ -3,7 +3,9 @@ title: Convert XML to PDF
 type: docs
 weight: 70
 url: /net/convert-xml-to-pdf/
+description: Aspose.PDF library presents several ways to convert XML to PDF. The first is a simple conversion with XslFoLoadOptions, and the second way is using incorrect file structure.
 ---
+
 # Convert XML to PDF
 
 {{% alert color="primary" %}} 
@@ -20,7 +22,7 @@ The XML format used to store structured data. There are several ways to convert 
 
 ## Convert XSL-FO to PDF
 
-The conversion of XSL-FO files to PDF can be implemented using the traditional Aspose.PDF technique - instantiate `Document` object with `XslFoLoadOptions`.
+The conversion of XSL-FO files to PDF can be implemented using the traditional Aspose.PDF technique - instantiate [`Document`](https://apireference.aspose.com/page/net/aspose.page/document) object with [`XslFoLoadOptions`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.xsl_fo_load_options).
 
 ```csharp
 public static void Convert_XSLFO_to_PDF()
