@@ -29,7 +29,7 @@ The HTML Conversion engine has several options that allow us to control the conv
 
 ### Media Queries Support
 
-Media queries are a popular technique for delivering a tailored style sheet to different devices. We can set device type using `HtmlMediaType` property.
+Media queries are a popular technique for delivering a tailored style sheet to different devices. We can set device type using [`HtmlMediaType`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype) property.
 
 ```csharp
 public static void ConvertHTMLtoPDFAdvanced_MediaType()

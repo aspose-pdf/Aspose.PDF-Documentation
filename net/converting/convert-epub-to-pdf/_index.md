@@ -20,8 +20,8 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 Conversion steps:
 
-1. Create an instance of `EpubLoadOptions` class.
-1. Create an instance of `Document` class with mention source filename and options.
+1. Create an instance of [`EpubLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/epubloadoptions) class.
+1. Create an instance of [`Document`](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
 1. Save the document with the desired file name.
 
 ```csharp
@@ -33,7 +33,7 @@ public static void ConvertEPUBtoPDF()
 }
 ```
 
-You can also set page size for conversion. To define new page size you `SizeF` object and pass it to `EpubLoadOptions` constructor.
+You can also set page size for conversion. To define new page size you `SizeF` object and pass it to [`EpubLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main) constructor.
 
 ```csharp
 public static void ConvertEPUBtoPDFAdv()

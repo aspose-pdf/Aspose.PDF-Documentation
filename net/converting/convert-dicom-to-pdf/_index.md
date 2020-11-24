@@ -14,7 +14,7 @@ Aspsoe.PDF for .NET allows you to convert DICOM and SVG images, but for technica
 
 1. Create an object of the Image class.
 1. Add the image to a page's Paragraphs collection.
-1. Specify the `FileType` property.
+1. Specify the [`FileType`](https://apireference.aspose.com/pdf/net/aspose.pdf/image/properties/filetype) property.
 1. Specify the file's path or source.
     - If an image is at a location on the hard drive, specify the path location using the Image.File property.
     - If an image is placed in a MemoryStream, pass the object holding the image to the Image.ImageStream property.

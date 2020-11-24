@@ -238,7 +238,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
     </tbody>
 </table>
 
-To allow conversion from PCL to PDF, Aspose.PDF has the class `PclLoadOptions` which is used to initialize the LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document. The following code snippet shows the process of converting a PCL file into PDF format.
+To allow conversion from PCL to PDF, Aspose.PDF has the class [`PclLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) which is used to initialize the LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document. The following code snippet shows the process of converting a PCL file into PDF format.
 
 ```csharp
 public static void ConvertPCLtoPDF()
