@@ -8,7 +8,7 @@ description: To convert PDF/A to PDF you should remove restrictions from the ori
 
 # Convert PDF/A to PDF
 
-Convert PDF/A document to PDF means removing PDF/A restriction from the original document. Class `Document` has method `RemovePdfaCompliance(..)` to remove
+Convert PDF/A document to PDF means removing PDF/A restriction from the original document. Class [`Document`](https://apireference.aspose.com/pdf/net/aspose.pdf/document) has method [`RemovePdfaCompliance(..)`](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) to remove
 the PDF compliance information from input/source file.
 
 ```csharp
