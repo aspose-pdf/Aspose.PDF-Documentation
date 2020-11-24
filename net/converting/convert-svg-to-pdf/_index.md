@@ -3,7 +3,9 @@ title: Convert SVG to PDF
 type: docs
 weight: 180
 url: /net/convert-svg-to-pdf/
+description: This page describes the possibility of converting SVG files to PDF, use the class named SvgLoadOptions. Also, this article describes how to get SVG dimensions and overview SVG Supported Features.
 ---
+
 # Convert SVG to PDF
 
 Scalable Vector Graphics (SVG) is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
@@ -16,10 +18,10 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-To convert SVG files to PDF, use the class named [SvgLoadOptions](https://apireference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) which is used to initialize the `LoadOptions` object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
+To convert SVG files to PDF, use the class named [SvgLoadOptions](https://apireference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) which is used to initialize the [`LoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/loadoptions) object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
 
-1. Create an instance of `SvgLoadOptions` class.
-1. Create an instance of `Document` class with mention source filename and options.
+1. Create an instance of [`SvgLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/loadoptions) class.
+1. Create an instance of [`Document`](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
 1. Save the document with the desired file name.
 
 The following code snippet shows the process of converting SVG file into PDF format.

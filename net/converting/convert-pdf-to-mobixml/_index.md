@@ -3,14 +3,16 @@ title: Convert PDF to MobiXML
 type: docs
 weight: 220
 url: /net/convert-pdf-to-mobixml/
+description: It is possible to convert PDF documents to XML using Aspose.PDF library. You may use the code snippet for successfully converting these files.
 ---
+
 # Convert PDF to MobiXML
 
-**Convert PDF to XML**
+## Convert PDF to XML
 
 With Aspose.PDF for .NET, it is possible to convert PDF documents to XML. The XML schema corresponds to the ebook **MobiXML** standard: 
 
-**Schema**
+### Schema
 
 The schema is extended with the ability to use external fonts. Furthermore, when converting PDF files to XML, images are represented as separate files in the same directory as the output XML is created. Fonts are represented as TrueType fonts and the corresponding files (filename_fontN.ttf) are created along with the output XML.
 

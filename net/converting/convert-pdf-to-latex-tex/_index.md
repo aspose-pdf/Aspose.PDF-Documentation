@@ -3,7 +3,9 @@ title: Convert PDF to LaTeX/TeX
 type: docs
 weight: 330
 url: /net/convert-pdf-to-latex-tex/
+description: This article describes the features of converting PDF files to LaTeX format. To convert PDF files to TeX, Aspose.PDF use the class LaTeXSaveOptions.
 ---
+
 # Convert PDF to LaTeX/TeX
 
 The LaTeX file format is a text file format with markup in the LaTeX 2ε derivative of the TeX family of languages and LaTeX is a derived format of the TeX system.

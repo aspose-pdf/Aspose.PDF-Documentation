@@ -3,12 +3,14 @@ title: Convert PDF to TXT
 type: docs
 weight: 300
 url: /net/convert-pdf-to-txt/
+description: With Aspose.PDF for .NET you can convert a whole PDF document to a text file or convert only a PDF page to a text file.
 ---
+
 # Convert PDF to TXT
 
 ## Convert whole PDF document to text file
 
-You can convert PDF document to TXT file using `Visit` method of `TextAbsorber` class.
+You can convert PDF document to TXT file using `Visit` method of [`TextAbsorber`](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textabsorber) class.
 
 The following code snippet explains how to extract the texts from the all pages.
 

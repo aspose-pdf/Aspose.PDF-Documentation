@@ -3,7 +3,9 @@ title: Convert PDF to XML
 type: docs
 weight: 230
 url: /net/convert-pdf-to-xml/
+description: It is possible to convert PDF documents to XML with Aspose.PDF for .NET. Сheck the snippet code for this task.
 ---
+
 # Convert PDF to XML
 
 {{% alert color="primary" %}} 
@@ -12,11 +14,11 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-**Convert PDF to XML**
+## Convert PDF to XML
 
 With Aspose.PDF for .NET, it is possible to convert PDF documents to XML.
 
-**Schema**
+### Schema
 
 The schema is extended with the ability to use external fonts. Furthermore, when converting PDF files to XML, images are represented as separate files in the same directory as the output XML is created. Fonts are represented as TrueType fonts and the corresponding files (filename_fontN.ttf) are created along with the output XML.
 
