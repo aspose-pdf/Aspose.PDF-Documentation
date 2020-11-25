@@ -1,5 +1,4 @@
 ---
-title: Key Features of Aspose.PDF
 type: docs
 weight: 20
 url: /net/key-features/
