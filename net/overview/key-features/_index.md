@@ -1,10 +1,10 @@
 ---
+title: Aspose.PDF Key features
 type: docs
 weight: 20
 url: /net/key-features/
 description: Aspose.PDF for .NET demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, annotations, documents, etc.
 ---
-# Aspose.PDF Features
 
 ## General Features
 - Written completely in C#, works with .NET Framework.
