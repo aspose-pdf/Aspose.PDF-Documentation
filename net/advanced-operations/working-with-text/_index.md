@@ -5,7 +5,8 @@ weight: 10
 url: /net/working-with-text/
 description: This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF and C#.
 ---
-**Articles in this section**
+
+## Articles in this section
 
 - [Add Text to a PDF file](/pdf/net/add-text-to-a-pdf-file/)
 - [Add Tooltip to Text](/pdf/net/add-tooltip-to-text/)

@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF Key features
+title: Key Features
 type: docs
 weight: 20
 url: /net/key-features/

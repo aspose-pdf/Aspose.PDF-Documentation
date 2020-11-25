@@ -6,8 +6,6 @@ url: /net/convert-mhtml-to-pdf/
 description: The release of Aspose.PDF for .NET 9.0.0  introduced a new feature that allows you convert MHT files to PDF format.
 ---
 
-# Convert MHTML to PDF
-
 {{% alert color="primary" %}}
 
 Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/mhtml-to-pdf](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)

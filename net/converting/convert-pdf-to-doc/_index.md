@@ -6,8 +6,6 @@ url: /net/convert-pdf-to-doc/
 description: Convert PDF file to DOC or DOCX format with ease and full control with Aspose.PDF for .NET. This pages shows a code snippet to accomplish this task. 
 ---
 
-# Convert PDF to Word 
-
 ## Convert PDF to DOC (Word 97-2003) file
 
 {{% alert color="primary" %}}

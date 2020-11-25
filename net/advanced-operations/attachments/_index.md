@@ -4,7 +4,9 @@ type: docs
 weight: 100
 url: /net/attachments/
 ---
-**Articles in this section**
+
+## Articles in this section
+
 - [Portfolio](/pdf/net/portfolio/)
 - [Removing attachment from an existing PDF](/pdf/net/removing-attachment-from-an-existing-pdf/)
 - [Adding to a PDF document](/pdf/net/adding-to-a-pdf-document/)

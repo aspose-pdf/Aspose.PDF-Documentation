@@ -4,9 +4,9 @@ type: docs
 weight: 120
 url: /net/pdf-file-metadata/
 ---
-# PDF File Metadata
 
 ## Get PDF File Information
+
 In order to get file specific information of a PDF file, you first need to get the [DocumentInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/documentinfo) object using [Info](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/info) property of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. Once the [DocumentInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/documentinfo) object is retrieved, you can get the values of the individual properties. The following code snippet shows you how to get PDF file information.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -26,6 +26,7 @@ Console.WriteLine("Subject: {0}", docInfo.Subject);
 Console.WriteLine("Title: {0}", docInfo.Title);
 ```
 ## Set PDF File Information
+
 Aspose.PDF for .NET allows you to set file-specific information for a PDF, information like author, creation date, subject, and title. To set this information:
 
 1. Create a [DocumentInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/documentinfo) object.
@@ -58,6 +59,7 @@ dataDir = dataDir + "SetFileInfo_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 ## Get XMP Metadata from PDF File
+
 Aspose.PDF allows you to access a PDF file’s XMP metadata. To get a PDF file’s metadata:
 
 1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object and open the input PDF file.
@@ -78,6 +80,7 @@ Console.WriteLine(pdfDocument.Metadata["xmp:Nickname"]);
 Console.WriteLine(pdfDocument.Metadata["xmp:CustomProperty"]);
 ```
 ## Set XMP Metadata in a PDF File
+
 Aspose.PDF allows you to set metadata in a PDF file. To set metadata:
 
 1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
@@ -103,6 +106,7 @@ dataDir = dataDir + "SetXMPMetadata_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 ## Insert Metadata with Prefix
+
 Some developers need to create a new metadata namespace with a prefix. The following code snippet shows how to insert metadata with prefix.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

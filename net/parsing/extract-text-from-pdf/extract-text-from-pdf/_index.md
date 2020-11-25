@@ -6,7 +6,7 @@ url: /net/extract-text-from-all-pdf/
 description: This article describes various ways to extract text from PDF documents using Aspose.PDF in C#. From entire pages, from a specific part, based on columns, etc.
 ---
 
-# Extract Text From All the Pages of a PDF Document
+## Extract Text From All the Pages of a PDF Document
 
 Extracting text from a PDF document is a common requirement. In this example, you’ll see how Aspose.PDF for .NET allows extracting text from all the pages of a PDF document. You need to create an object of the **TextAbsorber** class. After that, open the PDF using **Document** class and call the **Accept** method of the **Pages** collection. The **TextAbsorber** class absorbs the text from the document and returns in **Text** property. The following code snippet shows you how to extract text from all pages of PDF document.
 

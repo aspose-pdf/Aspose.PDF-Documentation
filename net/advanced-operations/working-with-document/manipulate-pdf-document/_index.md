@@ -4,14 +4,19 @@ type: docs
 weight: 20
 url: /net/manipulate-pdf-document/
 ---
-# Manipulate PDF Document
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)
+
 To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class Validate method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://apireference.aspose.com/pdf/net/aspose.pdf/pdfformat) enumeration : PDF_A_1A or PDF_A_1B.
 
->The output XML format is custom Aspose format. The XML contains a collection of tags with the name Problem; each tag contains the details of a particular problem. The Problem tag’s ObjectID attribute represents the ID of the particular object this problem is related to. The Clause attribute represents a corresponding rule in the PDF specification.
+{{% alert color="primary" %}}
+
+The output XML format is custom Aspose format. The XML contains a collection of tags with the name Problem; each tag contains the details of a particular problem. The Problem tag’s ObjectID attribute represents the ID of the particular object this problem is related to. The Clause attribute represents a corresponding rule in the PDF specification.
+
+{{% /alert %}}
 
 The following code snippet shows you how to validate PDF document for PDF/A-1A.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -41,9 +46,11 @@ pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
 ## Working with TOC
 
 ### Add TOC to Existing PDF
+
 Aspose.PDF API allows you to add a table of content either when creating a PDF, or to an existing file. The ListSection class in the Aspose.Pdf.Generator namespace allows you to create a table of contents when creating a PDF from scratch. To add headings, which are elements of the TOC, use the Aspose.Pdf.Generator.Heading class.
 
 To add a TOC to an existing PDF file, use the Heading class in the Aspose.Pdf namespace. The Aspose.Pdf namespace can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace. The following code snippet shows how to create a table of contents inside an existing PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -96,6 +103,7 @@ dataDir = dataDir + "TOC_out.pdf";
 doc.Save(dataDir);
 ```
 ### Set different TabLeaderType for different TOC Levels
+
 Aspose.PDF also allows setting different TabLeaderType for different TOC levels. You need to set LineDash property of FormatArray with the appropriate value of TabLeaderType enum as following.
 
 C#
@@ -197,6 +205,7 @@ for (int Level = 1; Level <= 4; Level++)
 doc.Save(outFile);
 ```
 ### Hide Page Numbers in TOC
+
 In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://apireference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) property of [TOCInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -271,6 +280,7 @@ for (int i = 1; i<doc.Pages.Count; i++)
 doc.Save(outFile);
 ```
 ## How to set PDF expiry date
+
 We apply access privileges on PDF files so that a certain group of users can access particular features/objects of PDF documents. In order to restrict the PDF file access, we usually apply encryption and we may have a requirement to set PDF file expiration, so that the user accessing/viewing the document gets a valid prompt regarding PDF file expiry.
 
 In order to accomplish the above stated requirement, we can use *JavascriptAction* object. Please take a look over the following code snippet.
@@ -301,6 +311,7 @@ dataDir = dataDir + "SetExpiryDate_out.pdf";
 doc.Save(dataDir);
 ```
 ## Determine Progress of PDF File Generation
+
 A customer asked us to add a feature that allows developers to determine the progress of PDF file generation. Here’s the response to that request.
 
 The [DocSaveOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class CustomerProgressHandler allows you to determine how PDF generation is going. The handler has the following types:

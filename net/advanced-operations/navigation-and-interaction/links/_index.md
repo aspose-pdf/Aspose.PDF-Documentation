@@ -4,9 +4,9 @@ type: docs
 weight: 10
 url: /net/links/
 ---
-# Links
 
 ## Create, Update and Extract
+
 By adding a link to an application into a document, it is possible to link to applications from a document. This is useful when you want readers to take a certain action at a specific point in a tutorial, for example, or to create a feature-rich document. To create an application link:
 
 1. [Create a Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
@@ -39,6 +39,7 @@ dataDir = dataDir + "CreateApplicationLink_out.pdf";
 document.Save(dataDir);
 ```
 ### Create PDF Document Link in a PDF File
+
 Aspose.PDF for .NET allows you to add a link to an external PDF file so that you can link several documents together. To create a PDF document link:
 
 1. First, create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
@@ -51,7 +52,8 @@ Aspose.PDF for .NET allows you to add a link to an external PDF file so that you
 1. Save the updated PDF using the Document object’s [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
 
 The following code snippet shows how to create PDF document link in a PDF file.
- ```
+
+ ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
@@ -66,8 +68,10 @@ page.Annotations.Add(link);
 dataDir = dataDir + "CreateDocumentLink_out.pdf";
 // Save updated document
 document.Save(dataDir);
-```csharp
+```
+
 ## Update Links in a PDF File
+
 As discussed in Add Hyperlink in a PDF File, the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) class makes it possible to add links in a PDF file. There’s also a similar class used to get existing links from inside PDF files. Use this if you need to update an existing link. To update an existing link:
 
 1. Load a PDF file.
@@ -76,8 +80,10 @@ As discussed in Add Hyperlink in a PDF File, the [LinkAnnotation](https://apiref
 1. The destination page is specified using the [XYZExplicitDestination](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) constructor.
 
 ### Set Link Target to a Page in the Same Document
+
 The following code snippet shows you how to update a link in a PDF file and set its target to the second page of the document.
-```
+
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
@@ -94,10 +100,12 @@ goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1,
 dataDir = dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf";
 // Save the document with updated link
 doc.Save(dataDir);
-```csharp
-### Set Link Destination to a Web Address
-To update the hyperlink so that it points to a web address, instantiate the [GoToURIAction](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) object and pass it to the LinkAnnotation’s Action property. The following code snippet shows how to update a link in a PDF file and set its target to a web address.
 ```
+### Set Link Destination to a Web Address
+
+To update the hyperlink so that it points to a web address, instantiate the [GoToURIAction](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) object and pass it to the LinkAnnotation’s Action property. The following code snippet shows how to update a link in a PDF file and set its target to a web address.
+
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
@@ -112,10 +120,13 @@ linkAnnot.Action = new GoToURIAction("www.aspose.com");
 dataDir = dataDir + "SetDestinationLink_out.pdf";
 // Save the document with updated link
 doc.Save(dataDir);
-```csharp
-### Set Link Target to Another PDF File
-The following code snippet shows how to update a link in a PDF file and set its target to another PDF file.
 ```
+
+### Set Link Target to Another PDF File
+
+The following code snippet shows how to update a link in a PDF file and set its target to another PDF file.
+
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
@@ -133,10 +144,13 @@ goToR.File = new FileSpecification(dataDir +  "input.pdf");
 dataDir = dataDir + "SetTargetLink_out.pdf";
 // Save the document with updated link
 document.Save(dataDir);
-```csharp
-### Update LinkAnnotation Text Color
-The link annotation does not contain text. Instead, the text is placed in the contents of the page under the annotation. Therefore, to change the color of the text, replace the color of the page text instead of trying change color of the annotation. The following code snippet shows how to update the color of link annotation in a PDF file.
 ```
+
+### Update LinkAnnotation Text Color
+
+The link annotation does not contain text. Instead, the text is placed in the contents of the page under the annotation. Therefore, to change the color of the text, replace the color of the page text instead of trying change color of the annotation. The following code snippet shows how to update the color of link annotation in a PDF file.
+
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
@@ -166,8 +180,10 @@ foreach (Annotation annotation in doc.Pages[1].Annotations)
 dataDir = dataDir + "UpdateLinkTextColor_out.pdf";
 // Save the document with updated link
 doc.Save(dataDir);
-```csharp
+```
+
 ## Extract Links from the PDF File
+
 Links are represented as annotations in a PDF file, so to extract links, extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) objects.
 
 1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
@@ -177,7 +193,8 @@ Links are represented as annotations in a PDF file, so to extract links, extract
 1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) object’s Selected property.
 
 The following code snippet shows you how to extract links from a PDF file.
-```
+
+```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
@@ -192,4 +209,4 @@ Annotation annotation = (Annotation)list[0];
 dataDir = dataDir + "ExtractLinks_out.pdf";
 // Save updated document
 document.Save(dataDir);
-```csharp
+```

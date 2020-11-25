@@ -3,9 +3,7 @@ title: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /net/text-formatting-inside-pdf/
-description:
 ---
-# Text Formatting inside PDF
 
 ## Add Line Indent
 

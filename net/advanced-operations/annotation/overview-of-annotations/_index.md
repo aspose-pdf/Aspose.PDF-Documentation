@@ -4,7 +4,6 @@ type: docs
 weight: 10
 url: /net/overview-of-annotations/
 ---
-# Overview of Annotations
 
 The following table indicates the Annotation types that Aspose.PDF for .NET supported.
 

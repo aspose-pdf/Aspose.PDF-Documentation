@@ -4,9 +4,9 @@ type: docs
 weight: 10
 url: /net/image-stamps-in-pdf-page/
 ---
-# Image stamps in PDF page
 
 ## Adding Image Stamp in PDF File
+
 You can use the ImageStamp class to add an image stamp to a PDF file. The ImageStamp class provides the properties necessary for creating an image-based stamp, such as height, width, opacity and so on.
 
 To add an image stamp:
@@ -39,6 +39,7 @@ dataDir = dataDir + "AddImageStamp_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 ## Control Image Quality when Adding a Stamp
+
 When adding an image as a stamp object, you can control the quality of the image. The Quality property of the ImageStamp class is used for this purpose. It indicates the quality of image in percents (valid values are 0..100).
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -56,6 +57,7 @@ pdfDocument.Pages[1].AddStamp(imageStamp);
 pdfDocument.Save(dataDir + "ControlImageQuality_out.pdf");
 ```
 ## Image Stamp as Background in Floating Box
+
 Aspose.PDF API lets you add image stamp as background in a floating box. The BackgroundImage property of FloatingBox class can be used to set the background image stamp for a floating box as shown in following code sample.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

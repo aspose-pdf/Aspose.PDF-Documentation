@@ -6,8 +6,6 @@ url: /net/convert-svg-to-pdf/
 description: This page describes the possibility of converting SVG files to PDF, use the class named SvgLoadOptions. Also, this article describes how to get SVG dimensions and overview SVG Supported Features.
 ---
 
-# Convert SVG to PDF
-
 Scalable Vector Graphics (SVG) is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
 
 SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted and, if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.

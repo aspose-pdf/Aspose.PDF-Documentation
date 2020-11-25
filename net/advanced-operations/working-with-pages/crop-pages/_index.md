@@ -4,9 +4,9 @@ type: docs
 weight: 30
 url: /net/crop-pages/
 ---
-# Crop pages
 
 ## Get Page Properties
+
 Each page in a PDF file has a number of properties, such as the width, height, bleed-, crop- and trimbox. Aspose.PDF allows you to access these properties.
 
 **Understanding Page Properties: the Difference between Artbox, BleedBox, CropBox, MediaBox, TrimBox and Rect property**

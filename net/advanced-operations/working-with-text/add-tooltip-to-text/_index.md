@@ -5,7 +5,6 @@ weight: 20
 url: /net/add-tooltip-to-text/
 description: Aspose.PDF implements a function of hiding actions, with which you can show/hide an annotation when you enter/leave the mouse over an invisible button.
 ---
-# Add Tooltip to Text
 
 ## Add Tooltip to Searched Text by adding Invisible Button
 
@@ -66,8 +65,11 @@ foreach (TextFragment fragment in textFragments)
 // Save document
 document.Save(outputFile);
 ```
+{{% alert color="primary" %}}
 
->Concerning to the length of the tooltip, the tooltip text is contained in the PDF document as PDF string type, outside of the content stream. There is no effective restriction on such strings in PDF files (See PDF Reference Appendix C.). However, a conforming reader (e.g. Adobe Acrobat) running on a particular processor and in a particular operating environment does have such a limit. Please refer to your PDF reader application documentation.
+Concerning to the length of the tooltip, the tooltip text is contained in the PDF document as PDF string type, outside of the content stream. There is no effective restriction on such strings in PDF files (See PDF Reference Appendix C.). However, a conforming reader (e.g. Adobe Acrobat) running on a particular processor and in a particular operating environment does have such a limit. Please refer to your PDF reader application documentation.
+
+{{% /alert %}}
 
 ## Create a Hidden Text Block and Show it on Mouse Over
 

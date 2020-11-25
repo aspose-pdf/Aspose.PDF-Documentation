@@ -4,9 +4,9 @@ type: docs
 weight: 50
 url: /net/print-pdf-document-in-wpf-application/
 ---
-# Print PDF document in WPF application
 
 ## Direct print
+
 The Aspose.PDF library has the ability to convert PDF files to XPS. We can use this function to organize the printing of documents.
 Let's consider the example for direct printing:
 

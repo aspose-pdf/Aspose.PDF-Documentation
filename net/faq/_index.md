@@ -4,7 +4,6 @@ type: docs
 weight: 100
 url: /net/faq/
 ---
-# FAQ
 
 **Q: What formats does Aspose.PDF for .NET  support?**
 

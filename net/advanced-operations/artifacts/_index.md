@@ -4,7 +4,6 @@ type: docs
 weight: 80
 url: /net/artifacts/
 ---
-# Artifacts
 
 The [Artifact](https://apireference.aspose.com/pdf/net/aspose.pdf/artifact) class contains following properties:
 

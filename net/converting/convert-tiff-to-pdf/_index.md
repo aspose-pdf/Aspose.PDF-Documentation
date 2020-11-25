@@ -6,8 +6,6 @@ url: /net/convert-tiff-to-pdf/
 description: Aspose.PDF file format supported, be it a single frame or multi-frame TIFF image. It means that you can convert the TIFF image to PDF in your .NET applications. 
 ---
 
-# Convert TIFF to PDF
-
 TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. TIFF image can contain several frames with different images. Aspose.PDF file format is also supported, be it a single frame or multi-frame TIFF image. So you can convert the TIFF image to PDF in your .NET applications. Therefore, we will consider an example of converting multi-page TIFF image to multi-page PDF document with below steps:
 
 1. Instantiate an instance of Document class

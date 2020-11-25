@@ -5,7 +5,6 @@ weight: 30
 url: /net/system-requirements/
 description: This section lists the supported operating systems that a developer needs to successfully work with Aspose.PDF for .NET.
 ---
-# System Requirements
 
 ## Overview
 To produce and manipulate PDF documents, the machine that Aspose.PDF for .NET runs on doesn't need to have Adobe Acrobat installed: Aspose.PDF for .NET is a PDF document creation engine. To view PDF documents produced by Aspose.PDF for .NET, however, the machine does need at least an Adobe Acrobat Reader. It can be downloaded for free.

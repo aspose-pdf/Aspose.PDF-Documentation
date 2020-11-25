@@ -5,8 +5,6 @@ weight: 130
 url: /net/add-watermarkannotation/
 ---
 
-# Add WatermarkAnnotation
-
 A watermark annotation  shall be used to represent graphics that shall be printed at a fixed size and position on a page, regardless of the dimensions of the printed page.
 
 You can add Watermark Text using [WatermarkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) at a specific position of the PDF page. The opacity of Watermark can also be controlled by using opacity property. Please check the following code snippet to add WatermarkAnnotation.

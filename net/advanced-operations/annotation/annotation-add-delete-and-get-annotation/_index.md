@@ -5,7 +5,6 @@ weight: 20
 url: /net/add-delete-and-get-annotation/
 ---
 
-# Add, Delete and Get Annotation
  - [Add Annotation in existing PDF file](/pdf/net/add-annotation-in-existing-pdf-file/)
  - [Add Free text Annotation](/pdf/net/add-free-text-annotation/)
  - [Add Link Annotation](/pdf/net/add-link-annotation/)

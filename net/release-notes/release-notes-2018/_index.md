@@ -6,7 +6,6 @@ url: /net/release-notes-2018/
 description: This page contains the Release Notes information for Aspose.PDF for .NET in 2018. This is a list of new Aspose.PDF for .NET features, enhancement, and bug fixes.
 ---
 
-## **Release Notes - 2018**
 - [Aspose.PDF for .NET 18.12 Release Notes](/pdf/net/aspose-pdf-for-net-18-12-release-notes/)
 - [Aspose.PDF for .NET 18.11 Release Notes](/pdf/net/aspose-pdf-for-net-18-11-release-notes/)
 - [Aspose.PDF for .NET 18.10 Release Notes](/pdf/net/aspose-pdf-for-net-18-10-release-notes/)

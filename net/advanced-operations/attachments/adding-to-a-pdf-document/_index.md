@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /net/adding-to-a-pdf-document/
 ---
-# Adding to a PDF document
+
 Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
 
 1. Create a new C# project.

@@ -4,7 +4,6 @@ type: docs
 weight: 10
 url: /net/digitally-sign-pdf-file/
 ---
-# Digitally sign PDF file
 
 Aspose.PDF for .NET supports the feature to digitally sign the PDF files using the SignatureField class. You can also certify a PDF file with a PKCS12-Certificate. Something similar to [Adding Signatures and Security in Adobe Acrobat](https://www.adobepress.com/articles/article.asp?p=1272495&seqNum=6).
 
@@ -12,7 +11,8 @@ When signing a PDF document using a signature, you basically confirm its content
 
 In other words, the document would still be considered to retain its integrity and the recipient could still trust the document. For further details, please visit Certifying and signing a PDF. In general, certifying a document can be compared to Code-signing a .NET executable.
 
-# Sing 
+## Sing 
+
 - [DocMDPSignature](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature) class was added
 - **DocMDPAccessPermissions** enumeration was added
 - **IsCertified** property is added to **PdfFileSignature** class
@@ -38,6 +38,7 @@ public static void SignDocument()
 }
 ```
 ## Add a timestamp to a digital signature
+
 Aspose.PDF for .NET supports to digitally sign the PDF with a timestamp server or Web service.
 
 In order to accomplish this requirement, the TimestampSettings class has been added to the Aspose.PDF namespace. Please take a look at the following code snippet which obtains timestamp and adds it to PDF document:

@@ -4,7 +4,6 @@ type: docs
 weight: 80
 url: /net/add-widget-annotation/
 ---
-# Add Widget Annotation
 
 Interactive forms use [Widget Annotations](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) to represent the appearance of fields and to manage user interactions.
 We use these form elements that add to a PDF to make it easier to enter, submit information, or perform some other user interactions.

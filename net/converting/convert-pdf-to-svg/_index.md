@@ -6,8 +6,6 @@ url: /net/convert-pdf-to-svg/
 description: Aspose.PDF for .NET supports the feature to convert SVG images to PDF format and also offers the capability to convert PDF files to SVG format using SvgSaveOptions class.
 ---
 
-# Convert PDF to SVG
-
 {{% alert color="primary" %}}
 
 Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-svg](https://products.aspose.app/pdf/conversion/pdf-to-svg)

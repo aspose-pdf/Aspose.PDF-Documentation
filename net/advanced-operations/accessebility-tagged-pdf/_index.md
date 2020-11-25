@@ -5,6 +5,7 @@ weight: 90
 url: /net/accessebility-tagged-pdf/
 description: Aspose.PDF provides the ability to create tagged PDF documents, allowing you to tag the structural elements. This section explains how to create a tagged PDF document by using Aspose.PDF for .NET
 ---
+
 ## Articles in this section
 
 - [Create Tagged PDF Documents](/pdf/net/create-tagged-pdf-documents/)

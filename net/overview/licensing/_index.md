@@ -1,11 +1,10 @@
 ---
-title: Licensing
+title: Licensing and limitations
 type: docs
 weight: 50
 url: /net/licensing/
 description: Aspose. PDF for .NET invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product. 
 ---
-# Licensing and limitations
 
 ## Limitation of an evaluation version
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.

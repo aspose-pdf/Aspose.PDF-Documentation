@@ -4,9 +4,9 @@ type: docs
 weight: 10
 url: /net/printing-pdf-in-net-framework/
 ---
-# Printing PDF in .NET Framework
 
 ## Printing PDF File to Default Printer using Printer and Page Settings
+
 The `PdfViewer` class allows you to print a PDF file to the default printer. You need to create a PdfViewer object and open the PDF using the BindPdf method. To specify different print settings, use the PageSettings and PrinterSettings classes. Finally, call the PrintDocumentWithSettings method to print the PDF to the default printer. The following code snippet shows how to print PDF to the default printer with printer and page Settings.
 
 ```csharp

@@ -4,7 +4,9 @@ type: docs
 weight: 140
 url: /net/printing-document/
 ---
-**Articles in this section**
+
+## Articles in this section
+
 - [Printing PDF in .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
 - [Printing PDF to an XPS Printer (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
 - [PDF to PostScript conversion, Checking Print Job Status](/pdf/net/pdf-to-postscript-conversion/)

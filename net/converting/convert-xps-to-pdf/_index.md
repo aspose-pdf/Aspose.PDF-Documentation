@@ -6,8 +6,6 @@ url: /net/convert-xps-to-pdf/
 description: Aspose.PDF for .NET allows you to convert XPS to PDF files with a class named XpsLoadOptions. Check code snippet to solve this task. 
 ---
 
-# Convert XPS to PDF
-
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into its Windows operating system.
 
 {{% alert color="primary" %}}

@@ -4,7 +4,6 @@ type: docs
 weight: 40
 url: /net/add-line-annotation/
 ---
-# Add Line Annotation
 
 The purpose of a Line Annotation is to display a single straight line on the page. When opened, it shall display a pop-up window containing the text of the associated note. 
 This feature additional entries specific to a line annotation. These entries are encrypted in the form of letters, for example, LL, BS, IC, and so on.

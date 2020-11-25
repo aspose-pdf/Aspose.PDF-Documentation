@@ -4,7 +4,6 @@ type: docs
 weight: 30
 url: /net/setting-structure-elements-properties/
 ---
-# Setting Structure Elements Properties
 
 In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers **CreateSectElement()** and **CreateHeaderElement()** methods of **ITaggedContent** Interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
 

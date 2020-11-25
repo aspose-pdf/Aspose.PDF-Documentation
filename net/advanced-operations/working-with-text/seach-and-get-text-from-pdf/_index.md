@@ -5,7 +5,6 @@ weight: 60
 url: /net/search-and-get-text-from-pdf/
 description: This article explains how to use various tools to search and get a text from PDF documents. We can search text with reg ex, from particular or whole pages.
 ---
-# Search and Get Text from Pages of a PDF Document
 
 ## Search and Get Text from All the Pages of PDF Document
 
@@ -254,7 +253,11 @@ document.Save(dataDir);
 
 ## Highlight each character in PDF document
 
->You can try searching for text in a document using Aspose.PDF and get the results online at this [link](https://products.aspose.app/pdf/search)
+{{% alert color="primary" %}}
+
+You can try searching for text in a document using Aspose.PDF and get the results online at this [link](https://products.aspose.app/pdf/search)
+
+{{% /alert %}}
 
 Aspose.PDF for .NET supports the feature to search and get the coordinates of each character or text fragments. So in order to be certain about the coordinates being returned for each character, we may consider highlighting (adding rectangle) around each character. The following code snippet gets coordinates of each character and creates a rectangle around each character.
 

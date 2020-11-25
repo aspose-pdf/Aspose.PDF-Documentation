@@ -6,8 +6,6 @@ url: /net/whatsnew/
 description: In this page introduces the most popular new features in Aspose.PDF for .NET that have been introduced in recent releases.
 ---
 
-# What's new in Aspose.PDF 
-
 ## What's new in Aspose.PDF 20.11
 
 Aspose.PDF v20.11 added support for ZUGFeRD format.

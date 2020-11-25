@@ -4,7 +4,6 @@ type: docs
 weight: 70
 url: /net/add-text-markup-annotation/
 ---
-# Add Text Markup Annotation
 
 Text Markup Annotations shall appear as highlights, underlines, strikeouts, or jagged (“squiggly”) underlines in the text of a document. When opened, they shall display a pop-up window containing the text of the associated note. 
 

@@ -5,7 +5,6 @@ weight: 30
 url: /net/how-to-run-other-examples/
 description: This page demonstrates guidelines that will be helpful the following requirements before downloading and running the examples.
 ---
-# How to run other examples
 
 ## Software Requirements
 

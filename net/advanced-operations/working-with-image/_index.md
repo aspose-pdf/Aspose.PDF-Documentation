@@ -4,7 +4,6 @@ type: docs
 weight: 20
 url: /net/working-with-images-in-pdf/
 ---
-# Working with Images in PDF
 
 ## Add Image to Existing PDF File
 
@@ -22,6 +21,7 @@ To add an image to an existing PDF file:
 - Finally, use GRestore operator to save the updated graphical state.
 - Save the file.
 The following code snippet shows how to add the image in a PDF document.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -58,9 +58,14 @@ dataDir = dataDir + "AddImage_out.pdf";
 // Save updated document
 pdfDocument.Save(dataDir);
 ```
->By default, the JPEG quality is set to 100%. To apply better compression and quality, use the following overloads:
+{{% alert color="primary" %}}
+
+By default, the JPEG quality is set to 100%. To apply better compression and quality, use the following overloads:
+
+{{% /alert %}}
+
 - the Replace method overload is added into the XImageCollection class: public void Replace(int index, Stream stream, int quality)
-- the Add method overload is added into the XImageCollection class: public void Add(Stream stream, int quality)
+- the Add method overload is added into the XImageCollection class: public void Add(Stam stream, int quality)
 
 ## Add Image in an Existing PDF File (Facades)
 
@@ -134,6 +139,7 @@ To delete an image from a PDF file:
 1. Delete an image with the Images collection’s Delete method.
 1. Saved the output like using the Document object’s Save method.
 1. The following code snippet shows how to delete an image from a PDF file.
+2. 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -154,6 +160,7 @@ pdfDocument.Save(dataDir);
 Images are held in each page’s [Resources](https://apireference.aspose.com/pdf/net/aspose.pdf/resources) collection’s [Images](https://apireference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.
 
 The image’s index returns an [XImage](https://apireference.aspose.com/pdf/net/aspose.pdf/ximage) object. This object provides a Save method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -181,12 +188,14 @@ pdfDocument.Save(dataDir);
 This topic explains how to use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information about images without having to extract them.
 
 There are different ways of achieving this. This article explains how to use an `arraylist` and [image placement classes](https://apireference.aspose.com/pdf/net/aspose.pdf/imageplacement).
+
 1. First, load the source PDF file (with images).
 1. Then create an ArrayList object to hold the names of any images in the document.
 1. Get the images using the Page.Resources.Images property.
 1. Create a stack object to hold the image’s graphics state and use it to keep track of different image states.
 1. Create a ConcatenateMatrix object which defines current transformation. It also supports scaling, rotating, and skewing any content. It concatenates the new matrix with previous one. Please note that we cannot define the transformation from scratch but only modify the existing transformation.
 1. Because we can modify the matrix with ConcatenateMatrix, we may also need to revert back to the original image state. Use GSave and GRestore operators. These operators are paired so they should be called together. For example, if you do some graphics work with complex transformations and finally return transformations back to initial state, the approach will be something like this:
+
 ```csharp
 // Draw some text
 

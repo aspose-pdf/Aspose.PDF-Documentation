@@ -6,8 +6,6 @@ url: /net/convert-pdf-pages-to-tiff-image/
 description: This page describes how to convert PDF Pages to TIFF  image, convert all Pages to TIFF images and convert single PDF page to TIFF  image with Aspose.PDF for .NET.
 ---
 
-# Convert PDF Pages to TIFF Image
-
 The TiffDevice class allows you to convert PDF pages to TIFF images. This class provides a method named Process which allows you to convert all the pages in a PDF file to a single TIFF image.
 
 {{% alert color="primary" %}}

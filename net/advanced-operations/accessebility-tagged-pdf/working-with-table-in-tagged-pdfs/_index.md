@@ -5,7 +5,6 @@ weight: 40
 url: /net/working-with-table-in-tagged-pdfs/
 description: This article explains how to works with table in Tagged PDF docuument with Aspose.PDF for .NET.
 ---
-# Working with Table in Tagged PDFs
 
 ## Create Table in Tagged PDF
 

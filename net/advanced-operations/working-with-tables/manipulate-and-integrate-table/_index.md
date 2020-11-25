@@ -4,14 +4,17 @@ type: docs
 weight: 20
 url: /net/manipulate-and-integrate-table/
 ---
-# Manipulate and Integrate Table
 
 ## Set Border Style, Margins and Padding of the Table (MergedAPI)
+
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) allows developers to create tables in PDF documents. Moreover, they can apply effects like border style, margins and cell padding, to the tables. 
+
 ## Borders 
+
 To set the borders of Table, [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) and [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell) objects, use the Table.Border, Row.Border and Cell.Border properties. Cell borders can also be set using the [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table) or Row class’ DefaultCellBorder property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
 
 ## Margins or Padding
+
 Cell padding can be managed using the Table class’ [DefaultCellPadding](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) property . All padding related properties are assigned an instance of the [MarginInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/margininfo) class that takes information about the Left, Right, Top and Bottom parameters to create custom margins.
 
 In the following example, the width of the cell border is set to 0.1 point, the width of the table border is set to 1 point and cell padding is set to 5 points.
@@ -78,6 +81,7 @@ tab1.CornerStyle = Aspose.Pdf.BorderCornerStyle.Round;
 tab1.Border = bInfo;
 ```
 ## Double Border
+
 As stated above, the border can be added to Table or Cell objects. Our users have requested that we add a feature that allows them to add a double border around Table and Cell objects. This feature was added with Aspose.PDF for .NET 8.8.0. The code snippet below shows how to accomplish this requirement.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,6 +115,7 @@ dataDir = dataDir + "TableBorderTest_out.pdf";
 doc.Save(dataDir);
 ```
 ## Integrate Table with Database (DOM)
+
 Databases are built to store and manage data. It’s common practice for programmers to populate different objects with data from databases. This article discusses adding data from a database into a table. It is possible to populate a [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table) object with data from any data source using Aspose.PDF for .NET. And it’s not only possible but it’s very easy.
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) allows developers to import data from:
@@ -165,7 +170,9 @@ dataDir = dataDir + "DataIntegrated_out.pdf";
 // Save updated document containing table object
 doc.Save(dataDir);
 ```
+
 ## How to determine if table will break in the current page
+
 Tables are by default added from top-left position and if the table reaches the end of the page, it automatically breaks. You can programmatically get the information that either the Table will be accommodated in the current page or it will break at the bottom of the page. For that reason, first, you need to get the document size information, then you need to get the page Top and page Bottom margin information, Table top margin information and table height. If you add page Top Margin + page Bottom Margin + table Top Margin + table Height and deduct it from the document height, you can get the amount of space remaining over the document. Depending upon the particular height of row (which you have specified), you can calculate that if all the rows of a table can be accommodated within the remaining space over a page or not. Please take a look over the following code snippet. In the following code, the average row height is 23.002 Points.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -230,6 +237,7 @@ dataDir = dataDir + "DetermineTableBreak_out.pdf";
 pdf.Save(dataDir);
 ```
 ## Add Repeating Column in Table
+
 In the Aspose.Pdf.Table class, you can set a RepeatingRowsCount that will repeat rows if the table is too long vertically and overflows to the next page. However, in some cases, tables are too wide to fit on a single page and needs to be continued to the next page. In order to serve the purpose, we have implemented RepeatingColumnsCount property in Aspose.Pdf.Table class. Setting this property will cause the table to break to next page column-wise and repeat given column count in the start of the next page. Following code snippet shows the usage of RepeatingColumnsCount property:
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -300,6 +308,7 @@ for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
 doc.Save(outFile);
 ```
 ## Manipulate tables in existing PDF
+
 One of the earliest features supported by Aspose.PDF for .NET is its capabilities of Working with Tables and it provides great support for adding tables in PDF files being generated from scratch or any existing PDF files. You also get the capability to Integrate Table with Database (DOM) to create dynamic tables based on database contents. In this new release, we have implemented new feature of searching and parsing simple tables that already exist on page of PDF document. A new class named **Aspose.PDF.Text.TableAbsorber** provides these capabilities. The usage of TableAbsorber is very much similar to existing TextFragmentAbsorber class. The following code snippet shows the steps to update contents in particular table cell.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -323,6 +332,7 @@ dataDir = dataDir + "ManipulateTable_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 ## Remove Table from PDF document
+
 We have added new function i.e. Remove() to the existing TableAbsorber Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -348,6 +358,7 @@ absorber.Remove(table);
 pdfDocument.Save(dataDir + "Table_out.pdf");
 ```
 ## Remove Multiple Tables from PDF document
+
 Sometimes a PDF document may contain more than one table and you may come up with a requirement to remove multiple tables from it. In order to remove multiple tables from PDF document, please use the following code snippet:
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -374,9 +385,14 @@ foreach (AbsorbedTable table in tables)
 // Save document
 pdfDocument.Save(dataDir + "Table2_out.pdf");
 ```
->Please take into account that removing or replacing of a table changes TableList collection. Therefore, in case removing/replacing tables in a loop the copying of TableList collection is essential.
+{{% alert color="primary" %}}
+
+Please take into account that removing or replacing of a table changes TableList collection. Therefore, in case removing/replacing tables in a loop the copying of TableList collection is essential.
+
+{{% /alert %}}
 
 ## Replace old Table with a new one in PDF document
+
 In case you need to find a particular table and replace it with the desired one, you can use Replace() the method of [TableAbsorber](https://apireference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) Class in order to do that. Following example demonstrate the functionality to replace the table inside PDF document:
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

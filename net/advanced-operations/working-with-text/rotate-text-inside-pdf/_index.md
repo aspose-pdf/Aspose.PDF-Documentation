@@ -5,7 +5,6 @@ weight: 50
 url: /net/rotate-text-inside-pdf/
 description: Learn different ways to rotate text to PDF. Aspose.PDF allows you to rotate text to any angle, rotate text fragment or a whole paragraph.
 ---
-# Rotate Text Inside PDF
 
 ## Rotate Text Inside PDF using Rotation Property
 

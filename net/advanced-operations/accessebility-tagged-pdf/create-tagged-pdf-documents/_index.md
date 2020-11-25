@@ -5,7 +5,6 @@ weight: 10
 url: /net/create-tagged-pdf-documents/
 description: This section explains how to create structure elements for tagged PDF document by using Aspose.PDF for .NET
 ---
-# Create Tagged PDF Documents
 
 ## Creating Structure Elements
 

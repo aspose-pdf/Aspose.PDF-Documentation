@@ -4,7 +4,9 @@ type: docs
 weight: 10
 url: /net/portfolio/
 ---
-# How to Create a PDF Portfolio
+
+## How to Create a PDF Portfolio
+
 Aspose.PDF allows creating PDF Portfolio documents using the [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) class. Add a file into a Document.Collection object after getting it with the [FileSpecification](https://apireference.aspose.com/net/pdf/aspose.pdf/filespecification) class. When the files have been added, use the Document class' Save method to save the portfolio document.
 
 The following example uses a Microsoft Excel File, a Word document and an image file to create a PDF Portfolio.

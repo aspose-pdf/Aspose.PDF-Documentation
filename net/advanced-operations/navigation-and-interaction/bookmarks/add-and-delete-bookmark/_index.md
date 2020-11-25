@@ -4,9 +4,9 @@ type: docs
 weight: 10
 url: /net/add-and-delete-bookmark/
 ---
-# Add and Delete a Bookmark
 
 ## Add a Bookmark to a PDF Document
+
 Bookmarks are held in the Document object’s [OutlineItemCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) collection, itself in the [OutlineCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/outlinecollection) collection.
 
 To add a bookmark to a PDF:
@@ -41,6 +41,7 @@ dataDir = dataDir + "AddBookmark_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 ## Add a Child Bookmark to the PDF Document
+
 Bookmarks can be nested, indicating a hierarchical relationship with parent and child bookmarks. This article explains how to add a child bookmark, that is, a second-level bookmark, to a PDF.
 
 To add a child bookmark to a PDF file, first add a parent bookmark:
@@ -82,6 +83,7 @@ dataDir = dataDir + "AddChildBookmark_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 ## Delete all Bookmarks from a PDF Document
+
 All bookmarks in a PDF are held in the [OutlineCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/outlinecollection) collection. This article explains how to delete all bookmarks from a PDF file.
 
 To delete all bookmarks from a PDF file:
@@ -106,6 +108,7 @@ dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 ## Delete a Particular Bookmark from a PDF Document
+
 [Delete All Attachments from PDF document](https://docs.aspose.com/pdf/net/working-with-attachments/) showed how to delete all attachments from a PDF file. It is also possible to only remove specific attachments.
 
 To delete a particular bookmark from a PDF file:

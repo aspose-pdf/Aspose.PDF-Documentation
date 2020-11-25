@@ -5,8 +5,6 @@ weight: 40
 url: /net/import-export-xfdf/
 ---
 
-# Import and export annotation with XFDF format
-
 {{% alert color="primary" %}} 
 
 XFDF stand for XML Forms Data Format. It is an XML based file format. This file format is used to represent form data or annotations contained in a PDF form. XFDF can be used for many different purposes, but in our case, it can be used to either send or receive form data or annotations to other computers or servers etc, or it can be used to archive the form data or annotations. In this article, we will see how Aspose.Pdf.Facades has taken this concept into consideration and how we can import and export annotations data to XFDF file.

@@ -4,7 +4,6 @@ type: docs
 weight: 160
 url: /net/graphs/
 ---
-# Working with Graphs
 
 ## What is Graph
 

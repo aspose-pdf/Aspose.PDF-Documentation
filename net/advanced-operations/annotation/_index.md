@@ -4,7 +4,8 @@ type: docs
 weight: 70
 url: /net/annotation/
 ---
-**Articles in this section**
+
+## Articles in this section
 
 - [Overview of Annotations](/pdf/net/overview-of-annotations/)
 - [Add, Delete and Get Annotation](/pdf/net/add-delete-and-get-annotation/)

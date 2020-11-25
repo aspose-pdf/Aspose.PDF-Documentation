@@ -4,7 +4,6 @@ type: docs
 weight: 30
 url: /net/add-free-text-annotation/
 ---
-# Add Free text Annotation
 
 ## Set Callout Property for FreeTextAnnotation
 For a more flexible configuration of annotation in the PDF document, Aspose.PDF for .NET provides Callout property of FreeTextAnnotation class which allows specifying Array of point of callout line. The following code snippet show, how to use this functionality:

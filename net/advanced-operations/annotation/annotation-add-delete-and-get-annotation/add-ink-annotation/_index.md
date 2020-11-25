@@ -4,7 +4,6 @@ type: docs
 weight: 100
 url: /net/add-ink-annotation/
 ---
-# Add InkAnnotation
 
 An Ink Annotation represents a freehand “scribble” composed of one or more disjoint paths. When opened, it shall display a pop-up window containing the text of the associated note.
 

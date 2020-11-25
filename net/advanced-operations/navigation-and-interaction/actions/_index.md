@@ -4,9 +4,9 @@ type: docs
 weight: 20
 url: /net/actions/
 ---
-# Actions
 
 ## Add Hyperlink in a PDF File
+
 It is possible to add hyperlinks to PDF files, either to allow readers to navigate to another part of the PDF, or to external content.
 
 In order to add web hyperlinks to PDF documents:
@@ -24,6 +24,7 @@ In order to add web hyperlinks to PDF documents:
 1. Finally, save the updated PDF using the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
 
 The following code snippet shows you how to add a hyperlink to a PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -59,6 +60,7 @@ dataDir = dataDir + "AddHyperlink_out.pdf";
 document.Save(dataDir);
 ```
 ## Create hyperlink to pages in same PDF
+
 Aspose.PDF for .NET provides a great feature to PDF creation as well as its manipulation. It also offers the feature to add links to PDF pages and a link can either direct to pages in another PDF file, a web URL, link to launch an Application or even link to pages in same PDF file. In order to add local hyperlinks (links to pages in same PDF file), a class named [LocalHyperlink](https://apireference.aspose.com/pdf/net/aspose.pdf/localhyperlink) is added to Aspose.PDF namespace and this class has a property named TargetPageNumber, which is used to specify the target/destination page for hyperlink.
 
 In order to add the local hyperlink, we need to create a TextFragment so that link can be associated with the TextFragment. The [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) class has a property named Hyperlink which is used to associate LocalHyperlink instance. The following code snippet shows the steps to accomplish this requirement.
@@ -99,6 +101,7 @@ dataDir = dataDir + "CreateLocalHyperlink_out.pdf";
 doc.Save(dataDir);
 ```
 ## Get PDF Hyperlink Destination (URL)
+
 Links are represented as annotations in a PDF file and they can be added, updated or deleted. Aspose.PDF for .NET also supports getting the destination (URL) of the hyperlink in PDF file.
 
 To get a link’s URL:
@@ -136,6 +139,7 @@ foreach (Aspose.Pdf.Page page in document.Pages)
 }
 ```
 ## Get Hyperlink Text
+
 A hyperlink has two parts: the text that shows in the document, and the destination URL. In some cases, it’s the text rather than the URL we need.
 
 Text and annotations/actions in a PDF file are represented by different entities. Text on а page is just а set of words and characters, while annotations bring some interactivity such as that inherent in a hyperlink.
@@ -191,6 +195,7 @@ To find the URL content, you need to work with both annotation and text. The [An
 ```
 
 ## Remove Document Open Action from a PDF File
+
 [How to Specify PDF Page when Viewing Document](https://docs.aspose.com/pdf/net/manipulate-page-in-a-pdf-file/) explained how to tell a document to open on a different page than the first. When concatenating several documents, and one or more has a GoTo action set, you probably want to remove them. For example, if combining two documents and the second one has a GoTo action that takes you to the second page, the output document will open on the second page of the second document instead of the first page of the combined document. To avoid this behavior, remove the open action command.
 
 To remove an open action:
@@ -212,6 +217,7 @@ dataDir = dataDir + "RemoveOpenAction_out.pdf";
 document.Save(dataDir);
 ```
 ## How to Specify PDF Page when Viewing Document
+
 When viewing PDF files in a PDF viewer such as Adobe Reader, the files usually open on the first page. However, it is possible to set the file to open on a different page.
 
 The [XYZExplicitDestination](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) class allows you to specify a page in a PDF file that you want to open. When passing the GoToAction object value to the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class OpenAction property, the document opens at the page specified against the XYZExplicitDestination object. The following code snippet shows how to specify a page as the document open action.

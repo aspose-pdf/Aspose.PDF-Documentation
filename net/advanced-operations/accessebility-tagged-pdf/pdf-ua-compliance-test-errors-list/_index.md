@@ -5,11 +5,10 @@ weight: 50
 url: /net/pdf-ua-compliance-test-errors-list/
 description: In this article, we list the errors that can arise during PDF/UA compliance testing using the Aspose.PDF API.
 ---
-## PDF-UA Compliance Test - Errors List
 
 While doing PDF/UA compliance testing using Aspose.PDF API, you may be interested in knowing the error messages that you can get. These errors are of different types such as General, Text, Fonts, Headings, and several others. Information about such errors can be helpful in knowing the exact cause of the errors and their handling. In this article, we list the errors that can arise during PDF/UA compliance testing using the API.
 
-### **General**
+## **General**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -38,7 +37,7 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.1:9.2(14.7)|Error|‘StructParent’ entry missing in the annotation|
 |7.1:9.3(14.7)|Error|Entry for given ‘StructParents’ not found|
 
-### **Text**
+## **Text**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -50,7 +49,7 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.2:3.4(14.9.2.2)|Error|Natural language of expansion text cannot be determined|
 |7.2:4(14.9.4)|Error|Stretchable character no tagged using ActualText|
 
-### **Fonts**
+## **Fonts**
 
 
 |**Clause**|**Severity**|**Message**|
@@ -65,7 +64,7 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.21.6|Error|Incorrect encoding is used for TrueType font ‘[FONT_NAME]’|
 |7.21.6|Error|Incorrect “Differences” array for non-symbolic TrueType font ‘[FONT_NAME]’|
 
-### **Graphics**
+## **Graphics**
 
 
 |**Code**|**Severity**|**Message**|
@@ -75,7 +74,7 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.3:3|Error|Caption accompanying figure missing|
 |7.3:4(14.8.4.5)|Error|Graphics object appears between the BT and ET operators|
 
-### **Headings**
+## **Headings**
 
 
 |**Code**|**Severity**|**Message**|
@@ -85,7 +84,7 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.4.4:1|Error|‘H’ and ‘Hn’ structure elements found|
 |7.4.4:2|Error|More than one ‘H’ structure element inside the parent structure element|
 
-### **Tables**
+## **Tables**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -94,35 +93,35 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.5:3.1|Warning|Table headers missing|
 |7.5:3.2|Warning|Table summary missing|
 
-### **Lists**
+## **Lists**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.6:1|Error|‘LI’ structure element must be a child of ‘L’ element|
 |7.6:2|Error|‘Lbl’ and ‘LBody’ structure element must be children of ‘LI’ element|
 
-### **Notes and references**
+## **Notes and references**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.9:2.1|Error|ID missing in ‘Note’ structure element|
 |7.9:2.2|Error|ID entry in ‘Note’ structure element is not unique|
 
-### **Optional content**
+## **Optional content**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.10:1|Error|‘Name’ missing in optional content configuration dictionary|
 |7.10:2|Error|Optional content configuration dictionary contains ‘AS’ key|
 
-### **Embedded files**
+## **Embedded files**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.11:1|Error|‘F’ or ‘UF’ key missing in the file specification|
 |7.11:2|Warning|‘Desc’ key missing in the file specification|
 
-### **Digital signatures**
+## **Digital signatures**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -130,26 +129,26 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.13:2.1|Error|Natural language of an alternate name of a form field ‘[FIELD_NAME]’ cannot be determined|
 |7.13:2.2|Error|Alternate field name entry missing in form field ‘[FIELD_NAME]’|
 
-### **Non-interactive forms**
+## **Non-interactive forms**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.14:1|Error|‘PrintField’ attribute missing in non-interactive form item|
 
-### **XFA**
+## **XFA**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.15:1|Error|PDF contains a dynamic XFA form|
 
-### **Security**
+## **Security**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.16:1(7.6.3.2)|Error|Security settings block assistive technologies from accessing document’s content|
 |7.16:2(7.6.3.2)|Error|Conversion is not allowed by permission restrictions|
 
-### **Navigation**
+## **Navigation**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -157,7 +156,7 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.17:2|Error|Natural language of outlines can be determined|
 |7.17:3|Need manual check|Semantically appropriate Page Labels|
 
-### **Annotations**
+## **Annotations**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
@@ -176,13 +175,13 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.18.8:1|Error|A PrinterMark annotation is included in logical structure|
 |7.18.8:2|Error|The appearance stream of a PrinterMark annotation is not marked as Artifact|
 
-### **Actions**
+## **Actions**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.19:1|Need check manual|Actions were found. Need to check actions according to specification PDF/UA manually|
 
-### **XObjects**
+## **XObjects**
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
