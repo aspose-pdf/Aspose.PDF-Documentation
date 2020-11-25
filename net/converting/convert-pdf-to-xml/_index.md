@@ -12,8 +12,6 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-## Convert PDF to XML
-
 With Aspose.PDF for .NET, it is possible to convert PDF documents to XML.
 
 ### Schema

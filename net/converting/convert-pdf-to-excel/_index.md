@@ -8,8 +8,6 @@ description: Aspose.PDF for .NET allows you to convert PDF files to Excel format
 
 Aspose.PDF for .NET is a PDF manipulation component, we have introduced a feature that renders PDF file to Excel workbook (XLS files). During this conversion, the individual pages of the PDF file are converted to Excel worksheets.
 
-## Convert PDF to XLS
-
 {{% alert color="primary" %}}
 
 Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-xlsx](https://products.aspose.app/pdf/conversion/pdf-to-xlsx) 
