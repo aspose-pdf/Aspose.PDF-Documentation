@@ -3,6 +3,7 @@ title: Actions
 type: docs
 weight: 20
 url: /net/actions/
+description: Add, create, and get Hyperlink in a PDF File with Aspose.PDF for .NET.
 ---
 
 ## Add Hyperlink in a PDF File
@@ -59,7 +60,7 @@ dataDir = dataDir + "AddHyperlink_out.pdf";
 // Save updated document
 document.Save(dataDir);
 ```
-## Create hyperlink to pages in same PDF
+## Create Hyperlink to pages in same PDF
 
 Aspose.PDF for .NET provides a great feature to PDF creation as well as its manipulation. It also offers the feature to add links to PDF pages and a link can either direct to pages in another PDF file, a web URL, link to launch an Application or even link to pages in same PDF file. In order to add local hyperlinks (links to pages in same PDF file), a class named [LocalHyperlink](https://apireference.aspose.com/pdf/net/aspose.pdf/localhyperlink) is added to Aspose.PDF namespace and this class has a property named TargetPageNumber, which is used to specify the target/destination page for hyperlink.
 

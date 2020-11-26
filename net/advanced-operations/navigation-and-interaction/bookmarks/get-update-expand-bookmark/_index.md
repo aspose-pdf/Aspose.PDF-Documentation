@@ -3,6 +3,7 @@ title: Get, Update and Expand a Bookmark
 type: docs
 weight: 20
 url: /net/get-update-and-expand-bookmark/
+description: This article describes how to use bookmarks in a PDF file. With our C# library, you can get bookmarks from the PDF file, get a bookmarks page number, update bookmarks in a PDF Document, and expand bookmarks when viewing a document.
 ---
 
 ## Get Bookmarks
@@ -115,7 +116,11 @@ To update a child bookmark:
 1. Retrieve the child bookmark you want to update from the PDF file by first getting the parent bookmark and then the child bookmark using appropriate index values.
 2. Save the updated PDF file using the Save method.
 
->Get a bookmark from the Document object’s OutlineCollection collection by specifying the bookmark’s index, and then get the child bookmark by specifying the index od this parent bookmark.
+{{% alert color="primary" %}} 
+
+Get a bookmark from the Document object’s OutlineCollection collection by specifying the bookmark’s index, and then get the child bookmark by specifying the index od this parent bookmark.
+
+{{% /alert %}}
 
 The following code snippet shows you how to update child bookmarks in a PDF document.
 ```csharp
