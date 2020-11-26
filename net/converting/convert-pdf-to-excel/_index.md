@@ -3,7 +3,8 @@ title: Convert PDF to Excel
 type: docs
 weight: 280
 url: /net/convert-pdf-to-excel/
-description: Aspose.PDF for .NET allows you to convert PDF files to Excel format. During this conversion, the individual pages of the PDF file are converted to Excel worksheets.
+keywords: convert PDF to Excel using c#,convert PDF to XLS using csharp,convert PDF to XLSX using csharp,export table from PDF to Excel in csharp
+description: Aspose.PDF for .NET allows you to convert PDF to Excel format using c#. During this conversion, the individual pages of the PDF file are converted to Excel worksheets.
 ---
 
 Aspose.PDF for .NET is a PDF manipulation component, we have introduced a feature that renders PDF file to Excel workbook (XLS files). During this conversion, the individual pages of the PDF file are converted to Excel worksheets.
