@@ -3,6 +3,7 @@ title: Add Multimedia Annotation
 type: docs
 weight: 120
 url: /net/add-multimedia-annotation/
+description: Aspose.PDF for .NET allows you to add, get, and delete the multimedia annotation from your PDF document.
 ---
 
 Annotations in a PDF document are contained in a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method. 

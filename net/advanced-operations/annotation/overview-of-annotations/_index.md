@@ -3,6 +3,7 @@ title: Overview of Annotations
 type: docs
 weight: 10
 url: /net/overview-of-annotations/
+description: Check out the list of possible annotations you can work with using Aspose.PDF for .NET.
 ---
 
 The following table indicates the Annotation types that Aspose.PDF for .NET supported.

@@ -3,6 +3,7 @@ title: Import and export annotation with XFDF format
 type: docs
 weight: 40
 url: /net/import-export-xfdf/
+description: You may import and export annotation with XFDF format with C# library. 
 ---
 
 {{% alert color="primary" %}} 

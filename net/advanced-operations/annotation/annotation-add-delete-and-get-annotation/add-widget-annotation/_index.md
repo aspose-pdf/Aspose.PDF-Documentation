@@ -3,6 +3,7 @@ title: Add Widget Annotation
 type: docs
 weight: 80
 url: /net/add-widget-annotation/
+description: This page describes how to add widget annotations to PDF documents with Aspose.PDF for .NET. The example of code snippet shows how to create buttons for the PDF file.
 ---
 
 Interactive forms use [Widget Annotations](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) to represent the appearance of fields and to manage user interactions.
@@ -21,6 +22,7 @@ Each form field for each place in the document represents one Widget Annotation.
 In this sample, we will learn how to add the push-buttons for navigation in the document.
 
 ## Add Button to the Document
+
 ```csharp
 document = new Document();
 var page = document.Pages.Add();

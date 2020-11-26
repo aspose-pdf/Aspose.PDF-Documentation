@@ -3,6 +3,7 @@ title: Setting Structure Elements Properties
 type: docs
 weight: 30
 url: /net/setting-structure-elements-properties/
+description: With Aspose.PDF for .NET, you may set different  Structure Elements Properties. There are setting Text Block Structure Elements, setting Inline Structure Elements, adding Structure Element into Elements and etc.
 ---
 
 In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers **CreateSectElement()** and **CreateHeaderElement()** methods of **ITaggedContent** Interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
@@ -307,7 +308,7 @@ document.Save(dataDir + "CustomTag.pdf");
 
 ## Adding Structure Element into Elements
 
->This feature is supported by version 19.4 or greater.
+**This feature is supported by version 19.4 or greater.**
 
 In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers **CreateLinkElement()** method of **ITaggedContent** Interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
 
@@ -403,7 +404,7 @@ Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 
 ## Setting Link Structure Element
 
->This feature is supported by version 19.4 or greater.
+**This feature is supported by version 19.4 or greater.**
 
 Aspose.PDF for .NET API also allows you to add link structure elements. Following code snippet shows how to add link structure element into Tagged PDF Document:
 
@@ -542,7 +543,8 @@ Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 ```
 
 ## Setting Language and Title
->This feature is supported by version 19.6 or greater.
+
+**This feature is supported by version 19.6 or greater.**
 
 Aspose.PDF for .NET API also allows you to set language and title for a document according to specification PDF/UA. The language can be set up as for whole document as for its separate structural elements. Following code snippet shows how to et language and title in Tagged PDF Document:
 

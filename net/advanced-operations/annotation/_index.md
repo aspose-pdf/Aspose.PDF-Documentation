@@ -3,6 +3,7 @@ title: Annotation
 type: docs
 weight: 70
 url: /net/annotation/
+description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library.
 ---
 
 ## Articles in this section

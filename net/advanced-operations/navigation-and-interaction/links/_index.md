@@ -3,6 +3,7 @@ title: Links
 type: docs
 weight: 10
 url: /net/links/
+description: To create an application link check the code snippet from the C# library. You can create a PDF document link in a PDF file, you can update links in a PDF file and you can extract links from the PDF file with Aspo.PDF for .NET.
 ---
 
 ## Create, Update and Extract

@@ -3,6 +3,7 @@ title: Add WatermarkAnnotation
 type: docs
 weight: 130
 url: /net/add-watermarkannotation/
+description: The watermark annotation in the text uses to represent graphics on the page. Check code snippet to resolve this task. 
 ---
 
 A watermark annotation  shall be used to represent graphics that shall be printed at a fixed size and position on a page, regardless of the dimensions of the printed page.
