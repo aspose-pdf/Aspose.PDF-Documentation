@@ -3,6 +3,7 @@ title: Operator
 type: docs
 weight: 150
 url: /net/operator/
+description: This topic explains how to use operators with Aspose.PDF. The operator classes provide great features for PDF manipulation.
 ---
 
 ## Introduction to the PDF Operators and Their Usage

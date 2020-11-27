@@ -3,6 +3,7 @@ title: PDF File Metadata
 type: docs
 weight: 120
 url: /net/pdf-file-metadata/
+description: This section explains how to get PDF file information, how to get XMP Metadata from a PDF file, set PDF File Information.
 ---
 
 ## Get PDF File Information
@@ -56,15 +57,15 @@ docInfo.CreationDate = DateTime.Now;
 docInfo.Keywords = "Aspose.Pdf, DOM, API";
 docInfo.ModDate = DateTime.Now;
 docInfo.Subject = "PDF Information";
-docInfo.Title = "Setting PDF Document Information";
+docInfo.Title = "Setting PDF Document Information";## Get XMP Metadata from PDF File
+
+Aspose.PDF allows you to access a PDF file’s XMP metadata. To get a PDF file’s metadata:
+
 
 dataDir = dataDir + "SetFileInfo_out.pdf";
 // Save output document
 pdfDocument.Save(dataDir);
 ```
-## Get XMP Metadata from PDF File
-
-Aspose.PDF allows you to access a PDF file’s XMP metadata. To get a PDF file’s metadata:
 
 1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object and open the input PDF file.
 1. Get the file’s metadata using the [Metadata](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) property.
