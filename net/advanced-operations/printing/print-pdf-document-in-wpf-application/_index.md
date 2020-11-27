@@ -3,6 +3,7 @@ title: Print PDF document in WPF application
 type: docs
 weight: 50
 url: /net/print-pdf-document-in-wpf-application/
+description: If you need a print a PDF document in the WPF application, use the Aspose.PDF library.
 ---
 
 ## Direct print

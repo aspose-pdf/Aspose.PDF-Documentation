@@ -3,6 +3,7 @@ title: Printing document
 type: docs
 weight: 140
 url: /net/printing-document/
+description: This section describes the possibilities of using printing PDF in the .NET Framework. 
 ---
 
 ## Articles in this section
