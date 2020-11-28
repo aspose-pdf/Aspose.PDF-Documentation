@@ -3,6 +3,7 @@ title: Working with Images in PDF
 type: docs
 weight: 20
 url: /net/working-with-images-in-pdf/
+description: This section describes the features of working with images in a PDF file using C# library.
 ---
 
 ## Add Image to Existing PDF File
