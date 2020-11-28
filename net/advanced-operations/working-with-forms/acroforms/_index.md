@@ -3,6 +3,7 @@ title: AcroForms
 type: docs
 weight: 10
 url: /net/acroforms/
+description: With Aspose.PDF for .NET you may create a form from scratch, fill the form field in a PDF document, extract data from the form, add or remove fields in the existing form.
 ---
 
 ## Fundamentals of AcroForms

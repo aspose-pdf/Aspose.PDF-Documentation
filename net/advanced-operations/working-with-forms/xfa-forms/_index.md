@@ -3,6 +3,7 @@ title: XFA Forms
 type: docs
 weight: 10
 url: /net/xfa-forms/
+description: Aspose.PDF for .NET API lets you work with XFA and XFA Acroform fields in a PDF document. The Aspose.PDF.Facades.
 ---
 
 {{% alert color="primary" %}}
@@ -11,7 +12,7 @@ Dynamic forms are based on an XML specification known as XFA, the “XML Forms A
 
 {{% /alert %}}
 
-Aspose.PDF for .NET API lets you work with XFA and XFA Acroform fields in a PDF document. The Aspose.PDF.Facades.Form class provides the capability to deal with static AcroForm and you can get a particular field instance using the Form class’ GetFieldFacade(..) method. However, XFA fields cannot be accessed via the Form.GetFieldFacade(..) method. Instead, use Document.Form.XFA to get/set field values and manipulate XFA field template (set field properties).
+Form class provides the capability to deal with static AcroForm and you can get a particular field instance using the Form class’ GetFieldFacade(..) method. However, XFA fields cannot be accessed via the Form.GetFieldFacade(..) method. Instead, use Document.Form.XFA to get/set field values and manipulate XFA field template (set field properties).
 
 ## Fill XFA fields
 
