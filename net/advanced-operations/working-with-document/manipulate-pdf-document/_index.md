@@ -3,6 +3,7 @@ title: Manipulate PDF Document
 type: docs
 weight: 20
 url: /net/manipulate-pdf-document/
+description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and how to determine the Progress of PDF file generation.
 ---
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)
@@ -41,7 +42,11 @@ Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
 // Validate PDF for PDF/A-1a
 pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
 ```
->Aspose.PDF for .NET can be used to determine if the loaded document is a valid PDF and also [if its encrypted or not](https://docs.aspose.com/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/). In order to further extend the capabilities of Document class, *IsPdfaCompliant* property is added to determine if the input file is PDF/A compliant and a property named *PdfaFormat* to identify the PDF/A format are introduced.
+{{% alert color="primary" %}}
+
+Aspose.PDF for .NET can be used to determine if the loaded document is a valid PDF and also [if its encrypted or not](https://docs.aspose.com/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/). In order to further extend the capabilities of Document class, *IsPdfaCompliant* property is added to determine if the input file is PDF/A compliant and a property named *PdfaFormat* to identify the PDF/A format are introduced.
+
+{{% /alert %}}
 
 ## Working with TOC
 
@@ -241,6 +246,7 @@ for (int Level = 1; Level != 5; Level++)
 doc.Save(outFile);
 ```
 ### Customize Page Numbers while adding TOC
+
 It is common to customize the page numbering in the TOC while adding TOC in a PDF document. For example, we may need to add some prefix before page number like P1, P2, P3 and so on. In such a case, Aspose.PDF for .NET provides PageNumbersPrefix property of TocInfo class that can be used to customize page numbers as shown in the following code sample.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

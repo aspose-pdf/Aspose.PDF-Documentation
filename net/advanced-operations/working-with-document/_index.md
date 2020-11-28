@@ -3,6 +3,7 @@ title: Working with Document
 type: docs
 weight: 110
 url: /net/working-with-document/
+description: This article describes to you what manipulations can be done with the document with the Aspose.PDF library.
 ---
 
 ## Articles in this section
