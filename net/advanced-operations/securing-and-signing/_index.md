@@ -3,6 +3,7 @@ title: Securing and signing
 type: docs
 weight: 130
 url: /net/securing-and-signing/
+description: This article describes the features of using a signature and securing your PDF document. 
 ---
 
 ## Articles in this section

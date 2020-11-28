@@ -3,6 +3,7 @@ title: Extract Image and Signature Information
 type: docs
 weight: 30
 url: /net/extract-image-and-signature-information/
+description: You may extract images from the signature field and extract signature information using the SignatureField class with C#.
 ---
 
 ## Extracting Image from Signature Field
