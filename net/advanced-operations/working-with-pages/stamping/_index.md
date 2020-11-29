@@ -3,6 +3,7 @@ title: Stamping
 type: docs
 weight: 70
 url: /net/stamping/
+description: This section describes how to add image stamps and text stamps to a PDF page.
 ---
 
 ## Articles in this section
