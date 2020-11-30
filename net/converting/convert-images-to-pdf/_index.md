@@ -8,7 +8,7 @@ description: You can very easy convert a JPG image to PDF. Also, you can convert
 
 You can very easy convert a JPG image to PDF by following steps:
 
-1. Initialize object of Document class
+1. Initialize object of [Document class](https://apireference.aspose.com/page/net/aspose.page/document)
 1. Add a new Page to PDF document
 1. Load JPG image and add to paragraph
 1. Save output PDF

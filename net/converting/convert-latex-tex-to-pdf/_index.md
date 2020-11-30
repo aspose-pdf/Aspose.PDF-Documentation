@@ -14,7 +14,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-Aspose.PDF for .NET supports the feature to convert TeX files to PDF format and in order to accomplish this requirement, Aspose.Pdf namespace has a class named LatexLoadOptions which provides the capabilities to load LaTex files and render the output in PDF format using Document class. The following code snippet shows the process of converting LaTex file to PDF format.
+Aspose.PDF for .NET supports the feature to convert TeX files to PDF format and in order to accomplish this requirement, Aspose.Pdf namespace has a class named [LatexLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/latexloadoptions) which provides the capabilities to load LaTex files and render the output in PDF format using [Document class](https://apireference.aspose.com/pdf/net/aspose.pdf/document). The following code snippet shows the process of converting LaTex file to PDF format.
 
 ```csharp
 public static void ConvertTeXtoPDF()
