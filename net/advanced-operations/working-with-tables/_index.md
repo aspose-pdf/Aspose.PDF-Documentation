@@ -3,6 +3,7 @@ title: Working with Tables
 type: docs
 weight: 30
 url: /net/working-with-tables/
+description: This section describes how to add and extract a table, how to manipulate and integrate a table using the C# library.
 ---
 
 ## Articles in this section
