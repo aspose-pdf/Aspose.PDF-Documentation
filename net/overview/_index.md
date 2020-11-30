@@ -13,3 +13,4 @@ description: Overview of key-features and supported formats of Aspose.PDF for .N
 - [System Requirements](/pdf/net/system-requirements/)
 - [Installation](/pdf/net/installation/)
 - [Licensing](/pdf/net/licensing/)
+- [Technical Support](/pdf/net/technical-support/)
