@@ -21,7 +21,7 @@ Document document = new Document();
 // Get Content for work with TaggedPdf
 ITaggedContent taggedContent = document.TaggedContent;
 
-// Set Title and Language for Documnet
+// Set Title and Language for Document
 taggedContent.SetTitle("Tagged Pdf Document");
 taggedContent.SetLanguage("en-US");
 
@@ -83,7 +83,7 @@ Document document = new Document();
 // Get Content for work with TaggedPdf
 ITaggedContent taggedContent = document.TaggedContent;
 
-// Set Title and Language for Documnet
+// Set Title and Language for Document
 taggedContent.SetTitle("Tagged Pdf Document");
 taggedContent.SetLanguage("en-US");
 
@@ -146,7 +146,7 @@ Document document = new Document();
 // Get Content for work with TaggedPdf
 ITaggedContent taggedContent = document.TaggedContent;
 
-// Set Title and Language for Documnet
+// Set Title and Language for Document
 taggedContent.SetTitle("Tagged Pdf Document");
 taggedContent.SetLanguage("en-US");
 
@@ -179,7 +179,7 @@ Document document = new Document();
 // Get Content for work with TaggedPdf
 ITaggedContent taggedContent = document.TaggedContent;
 
-// Set Title and Language for Documnet
+// Set Title and Language for Document
 taggedContent.SetTitle("Tagged Pdf Document");
 taggedContent.SetLanguage("en-US");
 
