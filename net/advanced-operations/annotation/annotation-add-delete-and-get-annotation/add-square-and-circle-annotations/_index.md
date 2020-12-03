@@ -10,6 +10,7 @@ Square and circle annotations shall display, respectively, a rectangle or an ell
 Square annotations are like circle annotations (instances of the PDFAnnotationCircle class) apart from the shape.
 
 Steps for creating Square and Circle Annotations:
+
 1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
 1. Create new [Circle Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) and set Circle parameters (new Rectangle, title, color, InteriorColor, Opacity).
 1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index). 
@@ -18,6 +19,7 @@ Steps for creating Square and Circle Annotations:
 1. After we need to Add Square and Circle Annotations to the page.
 
 The following code snippet shows you how to add Circle Annotations in a PDF page.
+
 ```csharp
 using Aspose.Pdf.Annotations;
 using System;
@@ -67,41 +69,43 @@ namespace Aspose.Pdf.Examples.Advanced
             }
         }
 ```
+
 As an example, we will see the following result of adding Square and Circle annotations to a PDF document:
 
-![example](home_1.png)
+![Circle and Square Annotation demo](circle_demo.png)
 
 Please try using the following code snippet to Get Circle Annotation from PDF document.
-```csharp
- public static void GetCircleAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-            var circleAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Line)
-                .Cast<CircleAnnotation>();
-            foreach (var ca in circleAnnotations)
-            {
-                Console.WriteLine($"[{ca.Rect}]");
-            }
-        }
-```
-The following code snippet shows how to Delete Circle Annotation from PDF file.
-```csharp
- public static void DeleteCircleAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-            var circleAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Circle)
-                .Cast<CircleAnnotation>();
 
-            foreach (var ca in circleAnnotations)
-            {
-                document.Pages[1].Annotations.Delete(ca);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "Appartments_del.pdf"));
-        }
+```csharp
+public static void GetCircleAnnotation()
+{
+    // Load the PDF file
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
+    var circleAnnotations = document.Pages[1].Annotations
+        .Where(a => a.AnnotationType == AnnotationType.Line)
+        .Cast<CircleAnnotation>();
+    foreach (var ca in circleAnnotations)
+    {
+        Console.WriteLine($"[{ca.Rect}]");
     }
+}
+```
+
+The following code snippet shows how to Delete Circle Annotation from PDF file.
+
+```csharp
+public static void DeleteCircleAnnotation()
+{
+    // Load the PDF file
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
+    var circleAnnotations = document.Pages[1].Annotations
+        .Where(a => a.AnnotationType == AnnotationType.Circle)
+        .Cast<CircleAnnotation>();
+
+    foreach (var ca in circleAnnotations)
+    {
+        document.Pages[1].Annotations.Delete(ca);
+    }
+    document.Save(System.IO.Path.Combine(_dataDir, "Appartments_del.pdf"));
 }
 ```

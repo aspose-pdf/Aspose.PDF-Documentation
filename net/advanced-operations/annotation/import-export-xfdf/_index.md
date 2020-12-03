@@ -57,7 +57,9 @@ namespace Aspose.Pdf.Examples.Advanced
             fileStream.Close();
         }
 ```
+
 The next code snippet describes how import annotations to an XFDF file:
+
 ```csharp
         public static void ImportAnnotationXFDF()
         {
@@ -79,14 +81,14 @@ The next code snippet describes how import annotations to an XFDF file:
             document.Save(Path.Combine(_dataDir, "AnnotationDemo2.pdf"));
         }
 ```
+
 Yet another way to export/import annotations at once.
 
 ```csharp
         /// <summary>
-        /// Yet another way to export/import annotations at once.
         /// ImportAnnotations method allow import annotations directly from another PDF doc
         /// </summary>
-      
+
         public static void ImportAnnotationFromPDF()
         {
             // Create PdfAnnotationEditor object

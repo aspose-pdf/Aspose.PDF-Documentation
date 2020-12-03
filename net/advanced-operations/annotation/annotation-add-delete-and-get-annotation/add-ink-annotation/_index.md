@@ -6,9 +6,10 @@ url: /net/add-ink-annotation/
 description: This page describes how to add an InkAnnotation to a PDF file. Also, you can set the line width of InkAnnotation.
 ---
 
-An Ink Annotation represents a freehand “scribble” composed of one or more disjoint paths. When opened, it shall display a pop-up window containing the text of the associated note.
+An Ink Annotation represents a freehand "scribble" composed of one or more disjoint paths. When opened, it shall display a pop-up window containing the text of the associated note.
 
 The [InkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) represents freehand scribble composed of one or more disjoint points. Please try using the following code snippet to add InkAnnotation in PDF document.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -41,9 +42,11 @@ dataDir = dataDir + "AddlnkAnnotation_out.pdf";
 // Save output file
 doc.Save(dataDir);
 ```
+
 ## Set Line width of InkAnnotation
 
 The width of [InkAnnottion](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) can be changed using LineInfo and Border objects.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

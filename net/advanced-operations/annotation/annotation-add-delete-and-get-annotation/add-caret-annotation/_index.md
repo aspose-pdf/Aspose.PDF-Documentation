@@ -9,10 +9,11 @@ description: This section describes how to add, get, and delete Caret annotation
 Caret Annotation is a symbol that indicates text editing. Caret Annotation is also markup annotation, so the Caret class derives from the Markup class and also provides functions to get or set properties of the Caret Annotation and reset the flow of the Caret Annotation appearance.
 
 Steps with which we create an Line annotation:
+
 1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
 1. Create new [Caret Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) and set Caret parameters (new Rectangle, title, Subject, Flags, color, width, StartingStyle and EndingStyle). This annotation is used to indicate the insertion of text.
 1. Create new [Caret Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) and set Caret parameters (new Rectangle, title, Subject, Flags, color, width, StartingStyle and EndingStyle). This annotation is used to indicate the replacement of text.
-1.  Create new [strikeOutAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) and set parameters (new Rectangle, title, color, new QuadPoints and new points, Subject, InReplyTo,ReplyType).
+1. Create new [StrikeOutAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) and set parameters (new Rectangle, title, color, new QuadPoints and new points, Subject, InReplyTo,ReplyType).
 1. After we can Add annotations to the page.
 
 The following code snippet shows how to add Caret Annotation to a PDF file:
@@ -30,7 +31,7 @@ namespace Aspose.Pdf.Examples.Advanced
     class ExampleCaretAnnotation
     {
         // The path to the documents directory.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";     
+        private const string _dataDir = "..\\..\\..\\..\\Samples";
         public static void AddCaretAnnotation()
         {
             // Load the PDF file
@@ -64,7 +65,7 @@ namespace Aspose.Pdf.Examples.Advanced
             },
                 Subject = "Cross-out",
                 InReplyTo = caretAnnotation2,
-                ReplyType = ReplyType.Group                
+                ReplyType = ReplyType.Group
             };
 
             document.Pages[1].Annotations.Add(caretAnnotation1);
@@ -74,9 +75,10 @@ namespace Aspose.Pdf.Examples.Advanced
             document.Save(System.IO.Path.Combine(_dataDir, "sample_caret.pdf"));
         }
 ```
-Please try using the following code snippet to Get Caret  Annotation in PDF document.
-        
-```csharp        
+
+Please try using the following code snippet to Get Caret Annotation in PDF document
+
+```csharp
         public static void GetCaretAnnotation()
         {
             // Load the PDF file
@@ -90,7 +92,9 @@ Please try using the following code snippet to Get Caret  Annotation in PDF docu
             }
         }
 ```
+
 The following code snippet shows how Delete Caret Annotation from a PDF file.
+
 ```csharp
         public static void DeleteCaretAnnotation()
         {
@@ -100,8 +104,8 @@ The following code snippet shows how Delete Caret Annotation from a PDF file.
                 .Where(a => a.AnnotationType == AnnotationType.Caret)
                 .Cast<CaretAnnotation>();
 
-            foreach (var ca in caretAnnotations)            
-            {                                
+            foreach (var ca in caretAnnotations)
+            {
                 document.Pages[1].Annotations.Delete(ca);
             }
             document.Save(System.IO.Path.Combine(_dataDir, "sample_caret_del.pdf"));

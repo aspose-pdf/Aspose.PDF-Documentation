@@ -30,6 +30,7 @@ In order to add an Text Markup Annotation to the PDF document, we need to perfor
 - [UnderlineAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) and set parameters (title, color).
 
 3. After we should add all annotations to the page. 
+
 ```csharp
 using Aspose.Pdf.Annotations;
 using Aspose.Pdf.Text;
@@ -42,7 +43,7 @@ namespace Aspose.Pdf.Examples.Advanced
     {
         // The path to the documents directory.
         private const string _dataDir = "..\\..\\..\\..\\Samples";
-                
+
         public static void AddTextMarkupAnnotation()
         {
             try
@@ -92,7 +93,9 @@ namespace Aspose.Pdf.Examples.Advanced
             }
         }
 ```
+
 If you want to highlight a multi-line fragment you should use advanced example:
+
 ```csharp
         /// <summary>
         /// Advanced example for you want to highlight a multi-line fragment
@@ -168,7 +171,9 @@ If you want to highlight a multi-line fragment you should use advanced example:
             }
         }
 ```
+
 Please try using the following code snippet to Get Text Markup Annotation from PDF document.
+
 ```csharp        
         public static void GetTextMarkupAnnotation()
         {
@@ -184,7 +189,9 @@ Please try using the following code snippet to Get Text Markup Annotation from P
             }
         }
 ```
+
 The following code snippet shows how to Delete Text Markup Annotation from PDF file.
+
 ```csharp
         public static void DeleteTextMarkupAnnotation()
         {

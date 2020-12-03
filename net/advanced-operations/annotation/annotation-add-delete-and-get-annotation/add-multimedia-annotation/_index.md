@@ -56,11 +56,12 @@ namespace Aspose.Pdf.Examples.Advanced
             document.Pages[1].Annotations.Add(screenAnnotation);
 
             document.Save(System.IO.Path.Combine(_dataDir, "sample_swf.pdf"));
-        }              
-```        
+        }
+```
+
 The following code snippet shows how to add Sound Annotation to a PDF file: 
 
-```csharp        
+```csharp
         public static void AddSoundAnnotation()
         {
             // Load the PDF file
@@ -81,12 +82,13 @@ The following code snippet shows how to add Sound Annotation to a PDF file:
 
             document.Pages[1].Annotations.Add(soundAnnotation);
 
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_wav.pdf"));            
-        }        
-```        
-The following code snippet shows how to add RichMediaAnnotation to a PDF file: 
+            document.Save(System.IO.Path.Combine(_dataDir, "sample_wav.pdf"));
+        }
+```
 
-```csharp        
+The following code snippet shows how to add RichMediaAnnotation to a PDF file:
+
+```csharp
         public static void AddRichMediaAnnotation()
         {
             Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
@@ -129,8 +131,9 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
             page.Annotations.Add(rma);
 
             doc.Save(Path.Combine(_dataDir,"RichMediaAnnotation.pdf"));
-        }             
+        }
 ```
+
 Please try using the following code snippet to Get MultimediaAnnotation from PDF document.
 
 ```csharp
@@ -150,13 +153,14 @@ Please try using the following code snippet to Get MultimediaAnnotation from PDF
             }
         }
 ```
+
 The following code snippet shows how to Delete MultimediaAnnotation from PDF file.
 
 ```csharp
         public static void DeletePolyAnnotation()
         {
             // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));            
+            Document document = new Document(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));
             var richMediaAnnotations = document.Pages[1].Annotations
                             .Where(a => a.AnnotationType == AnnotationType.RichMedia)
                             .Cast<RichMediaAnnotation>();
@@ -170,6 +174,3 @@ The following code snippet shows how to Delete MultimediaAnnotation from PDF fil
     }
 }
 ```
-
-
-
