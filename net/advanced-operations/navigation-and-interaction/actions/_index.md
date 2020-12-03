@@ -60,11 +60,13 @@ dataDir = dataDir + "AddHyperlink_out.pdf";
 // Save updated document
 document.Save(dataDir);
 ```
+
 ## Create Hyperlink to pages in same PDF
 
 Aspose.PDF for .NET provides a great feature to PDF creation as well as its manipulation. It also offers the feature to add links to PDF pages and a link can either direct to pages in another PDF file, a web URL, link to launch an Application or even link to pages in same PDF file. In order to add local hyperlinks (links to pages in same PDF file), a class named [LocalHyperlink](https://apireference.aspose.com/pdf/net/aspose.pdf/localhyperlink) is added to Aspose.PDF namespace and this class has a property named TargetPageNumber, which is used to specify the target/destination page for hyperlink.
 
 In order to add the local hyperlink, we need to create a TextFragment so that link can be associated with the TextFragment. The [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) class has a property named Hyperlink which is used to associate LocalHyperlink instance. The following code snippet shows the steps to accomplish this requirement.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -101,6 +103,7 @@ dataDir = dataDir + "CreateLocalHyperlink_out.pdf";
 // Save updated document
 doc.Save(dataDir);
 ```
+
 ## Get PDF Hyperlink Destination (URL)
 
 Links are represented as annotations in a PDF file and they can be added, updated or deleted. Aspose.PDF for .NET also supports getting the destination (URL) of the hyperlink in PDF file.
@@ -115,6 +118,7 @@ To get a link’s URL:
 1. Finally, extract the LinkAnnotation Action as GoToURIAction.
 
 The following code snippet shows how to get hyperlink destinations (URL) from a PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -139,13 +143,15 @@ foreach (Aspose.Pdf.Page page in document.Pages)
     }
 }
 ```
+
 ## Get Hyperlink Text
 
 A hyperlink has two parts: the text that shows in the document, and the destination URL. In some cases, it’s the text rather than the URL we need.
 
-Text and annotations/actions in a PDF file are represented by different entities. Text on а page is just а set of words and characters, while annotations bring some interactivity such as that inherent in a hyperlink.
+Text and annotations/actions in a PDF file are represented by different entities. Text on a page is just a set of words and characters, while annotations bring some interactivity such as that inherent in a hyperlink.
 
 To find the URL content, you need to work with both annotation and text. The [Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) object does not have itself have the text but sits under the text on the page. So to get the text, the Annotation gives the URL’s bounds, while the Text object gives the URL contents. Please see the following code snippet.
+
 ```csharp
   {
         public static void Run()

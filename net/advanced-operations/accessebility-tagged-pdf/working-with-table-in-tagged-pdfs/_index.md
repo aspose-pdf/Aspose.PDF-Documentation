@@ -139,25 +139,29 @@ document = new Document(dataDir + "CreateTableElement.pdf");
 bool isPdfUaCompliance = document.Validate(dataDir + "table.xml", PdfFormat.PDF_UA_1);
 Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 ```
+
 ## Style Table Element
+
 Aspose.PDF for .NET allows styling a table in Tagged PDF document. In order to style a table, you can create a table using [CreateTableElement()](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) method of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface and set style table using properties of [TableElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement) class. The following is the list properties you can use to style a table:
 
-- BackgroundColor
-- Border
-- Alignment
-- CornerStyle
-- Broken
-- ColumnAdjustment
-- ColumnWidths
-- DefaultCellBorder
-- DefaultCellPadding
-- DefaultCellTextState
-- DefaultColumnWidth
-- IsBroken
-- IsBordersIncluded
-- Left
-- Top
+- [BackgroundColor](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor)
+- [Border](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/border)
+- [Alignment](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/alignment)
+- [CornerStyle](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle)
+- [Broken](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/broken)
+- [ColumnAdjustment](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment)
+- [ColumnWidths](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths)
+- [DefaultCellBorder](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder)
+- [DefaultCellPadding](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding)
+- [DefaultCellTextState](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate)
+- [DefaultColumnWidth](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth)
+- [IsBroken](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken)
+- [IsBordersIncluded](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded)
+- [Left](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/left)
+- [Top](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/top)
+
 The following code snippet shows how to style a table in Tagged PDF document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -240,13 +244,15 @@ for (colIndex = 0; colIndex < colCount; colIndex++)
 
 // Save Tagged Pdf Document
 document.Save(dataDir + "StyleTableElement.pdf");
-       
+
 // Checking PDF/UA compliance
 document = new Document(dataDir + "StyleTableElement.pdf");
 bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableElement.xml", PdfFormat.PDF_UA_1);
 Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 ```
+
 ## Style Table Row
+
 Aspose.PDF for .NET allows styling a table row in Tagged PDF document. In order to style a table row, you can use the properties of [TableTRElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tabletrelement) class. The following is the list properties you can use to style a table row:
 
 - BackgroundColor
@@ -261,6 +267,7 @@ Aspose.PDF for .NET allows styling a table row in Tagged PDF document. In order 
 - VerticalAlignment
 
 The following code snippet shows how to style a table row in the Tagged PDF document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -341,21 +348,24 @@ document = new Document(dataDir + "StyleTableRow.pdf");
 bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableRow.xml", PdfFormat.PDF_UA_1);
 Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 ```
+
 ## Style Table Cell
+
 Aspose.PDF for .NET allows styling a table cell in Tagged PDF document. In order to style a table cell, you can use the properties of [TableCellElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement) class. The following is the list properties you can use to style a table cell:
 
-- BackgroundColor
-- Border
-- IsNoBorder
-- Margin
-- Alignment
-- DefaultCellTextState
-- IsWordWrapped
-- VerticalAlignment
-- ColSpan
-- RowSpan
+- [BackgroundColor](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor)
+- [Border](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/border)
+- [IsNoBorder](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder)
+- [Margin](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin)
+- [Alignment](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment)
+- [DefaultCellTextState](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate)
+- [IsWordWrapped](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped)
+- [VerticalAlignment](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment)
+- [ColSpan](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan)
+- [RowSpan](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan)
 
 The following code snippet shows how to style a table cell in the Tagged PDF document:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

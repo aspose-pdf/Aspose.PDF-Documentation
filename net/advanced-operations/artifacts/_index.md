@@ -8,8 +8,8 @@ description: This page describes how to work with Artifact class using Aspose.PD
 
 The [Artifact](https://apireference.aspose.com/pdf/net/aspose.pdf/artifact) class contains following properties:
 
-**Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
-**Artifact.Subtype** – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
+- **Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
+- **Artifact.Subtype** – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
 - **Artifact.Image** – Gets an artifact’s image (if an image is presents, else null).
 - **Artifact.Text** – Gets an artifact’s text.
 
@@ -18,7 +18,8 @@ A watermark created with Adobe Acrobat is called an artifact (as described in 14
 In order to get all artifacts on a particular page, the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) class has the Artifacts property. This topic explains how to work with artifact in PDF files.
 
 The following code snippet shows how to get each watermark on the first page of a PDF file.
-```csharp  
+
+```csharp
    Document doc = new Document(_inDataDir + "text.pdf");
             WatermarkArtifact artifact = new WatermarkArtifact();
             artifact.SetText(new FormattedText("WATERMARK", System.Drawing.Color.Blue, FontStyle.Courier,
@@ -31,8 +32,9 @@ The following code snippet shows how to get each watermark on the first page of 
             doc.Pages[1].Artifacts.Add(artifact);
             doc.Save(_outDataDir + "watermark.pdf");
 ```
+
 Background images can be used to add a watermark, or other subtle design, to documents. In Aspose.PDF for .NET, each PDF document is a collection of pages and each page contains a collection of artifacts. The [BackgroundArtifact](https://apireference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) class can be used to add a background image to a page object. 
-    
+
 The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object.
 
 ```csharp

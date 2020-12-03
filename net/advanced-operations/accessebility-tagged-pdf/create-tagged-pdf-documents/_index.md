@@ -8,7 +8,7 @@ description: This section explains how to create structure elements for tagged P
 
 ## Creating Structure Elements
 
-In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using **ITaggedContent** Interface. Following code snippet shows how to create structure elements of Tagged PDF:
+In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to create structure elements of Tagged PDF:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -70,7 +70,7 @@ document.Save(dataDir + "StructureElements.pdf");
 
 ## Creating Structure Elements Tree
 
-In order to create structure elements tree in a Tagged PDF Document, Aspose.PDF offers methods to create a structure element tree using **ITaggedContent** Interface. Following code snippet shows how to create structure elements tree of Tagged PDF Document:
+In order to create structure elements tree in a Tagged PDF Document, Aspose.PDF offers methods to create a structure element tree using [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) Interface. Following code snippet shows how to create structure elements tree of Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,7 +133,7 @@ document.Save(dataDir + "StructureElementsTree.pdf");
 
 ## Styling Text Structure
 
-In order to style text structure in a Tagged PDF Document, Aspose.PDF offers Font, FontSize, FontStyle and ForegroundColor properties of **StructureTextState** Class. Following code snippet shows how to style text structure in a Tagged PDF Document:
+In order to style text structure in a Tagged PDF Document, Aspose.PDF offers [Font](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) and [ForegroundColor](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) properties of [StructureTextState](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate) Class. Following code snippet shows how to style text structure in a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -166,7 +166,7 @@ document.Save(dataDir + "StyleTextStructure.pdf");
 
 ## Illustrating Structure Elements
 
-In order to illustrate structure elements in a Tagged PDF Document, Aspose.PDF offers IllustrationElement Class. Following code snippet shows how to illustrate structure elements in a Tagged PDF Document:
+In order to illustrate structure elements in a Tagged PDF Document, Aspose.PDF offers [IllustrationElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement) class. Following code snippet shows how to illustrate structure elements in a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -11,14 +11,14 @@ description: This article explains what a is graph, how to create a filled recta
 Adding graphs to PDF documents is a very common task for developers while working with Adobe Acrobat Writer or other PDF processing applications. There are many types of graphs that can be used in PDF applications.
 [Aspose.PDF for .NET](/pdf/net/) also supports adding graphs to PDF documents. For this purpose, the Graph class is provided. Graph is a paragraph level element and it can be added to the Paragraphs collection in a Page instance. A Graph instance contains a collection of Shapes.
 
-The following types of shapes are supported by the Graph class:
+The following types of shapes are supported by the [Graph](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/graph) class:
 
-- Arc
-- Circle
-- Curve
-- Line
-- Rectangle
-- Ellipse
+- [Arc](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/arc)
+- [Circle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/circle)
+- [Curve](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/curve)
+- [Line](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/line)
+- [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)
+- [Ellipse](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse)
 
 ## Create Filled Rectangle Object
 
@@ -58,27 +58,17 @@ Aspose.PDF for .NET supports to add text inside the Graph Object. Text property 
  // Open document
 
 string outFile = "Graph.pdf";
-
 Aspose.PDF.Document pdfDoc = new Aspose.PDF.Document();
-
 Aspose.PDF.Page pdfPage = pdfDoc.Pages.Add();
-
 Aspose.PDF.Drawing.Graph graph = new Aspose.PDF.Drawing.Graph(500, 100);
-
 pdfPage.Paragraphs.Add(graph);
 
 //Add rectangle with text
-
 Aspose.PDF.Drawing.Rectangle rect = new Aspose.PDF.Drawing.Rectangle(0, 30, 50, 40);
-
 rect.GraphInfo.LineWidth = 1f;
-
 rect.GraphInfo.Color = Aspose.PDF.Color.Black;
-
 rect.Text = new TextFragment("Rectangle");
-
 graph.Shapes.Add(rect);
-
 pdfDoc.Save(outFile);
 ```
 
@@ -178,7 +168,7 @@ pDoc.Save(dataDir);
 
 ## Create Rectangle with Alpha color channel
 
-Aspose.PDF for .NET supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a **Rectangle** object with Alpha color channel.
+Aspose.PDF for .NET supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object with Alpha color channel.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -212,7 +202,7 @@ doc.Save(dataDir);
 
 ## How to add drawing with transparent Color
 
-While creating drawing objects such as Rectangle, Circle, Eclipse etc, we provide color information for border as well as fill color information. In order to have transparent fill impression, the **FromArgb(..)** method of Aspose.PDF.Color object can be used. Please take a look over following code snippet which demonstrates the feature to fill rectangle object with transparent color. Please try using following code snippet to accomplish this requirement.
+While creating drawing objects such as Rectangle, Circle, Eclipse etc, we provide color information for border as well as fill color information. In order to have transparent fill impression, the [FromArgb(..)](https://apireference.aspose.com/pdf/net/aspose.pdf.color/fromargb/methods/1) method of [Aspose.PDF.Color](https://apireference.aspose.com/pdf/net/aspose.pdf/color) object can be used. Please take a look over following code snippet which demonstrates the feature to fill rectangle object with transparent color. Please try using following code snippet to accomplish this requirement.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -51,7 +51,6 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ## **Fonts**
 
-
 |**Clause**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.21.3.1|Error|Character collection in CIDFont is not compartible with character collection of internal CMap|
@@ -66,7 +65,6 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 
 ## **Graphics**
 
-
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
 |7.3:1(14.8.4.5)|Error|‘[ELEMENT_NAME]’ element on a single page with no bounding box|
@@ -75,7 +73,6 @@ While doing PDF/UA compliance testing using Aspose.PDF API, you may be intereste
 |7.3:4(14.8.4.5)|Error|Graphics object appears between the BT and ET operators|
 
 ## **Headings**
-
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |

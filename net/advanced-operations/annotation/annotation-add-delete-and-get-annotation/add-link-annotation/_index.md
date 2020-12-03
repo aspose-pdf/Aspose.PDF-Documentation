@@ -3,7 +3,7 @@ title: Add Link Annotation
 type: docs
 weight: 20
 url: /net/add-link-annotation/
-describes: Aspose.PDF for .NET allows you to add, get, and delete link annotation from your PDF document.
+description: Aspose.PDF for .NET allows you to add, get, and delete link annotation from your PDF document.
 ---
 
 A [Link Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) is a hypertext link that leads to a destination elsewhere in the document or to an action to be performed.
@@ -11,6 +11,7 @@ A [Link Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotatio
 A Link is a rectangular area that can be placed anywhere on the page. Each link has a corresponding PDF action associated with it. This action is performed when the user clicks in the area of this link.
 
 The following code snippet shows how to add Link Annotation to a PDF file using a phone number example:
+
 ```csharp
 using Aspose.Pdf.Annotations;
 using Aspose.Pdf.Text;
@@ -58,12 +59,13 @@ namespace Aspose.Pdf.Examples.Advanced
 ```
 
 Please try using the following code snippet to Get LinkAnnotation from PDF document.
+
 ```csharp
 class ExampleLinkAnnotations
-    {
-        // The path to the documents directory.
-        private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
- public static void GetLinkAnnotations()
+{
+    // The path to the documents directory.
+    private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    public static void GetLinkAnnotations()
     {
         // Load the PDF file
         Document document = new Document(System.IO.Path.Combine(_dataDir, "SimpleResume_mod.pdf"));
@@ -83,7 +85,9 @@ class ExampleLinkAnnotations
     }
 
 ```
-The following code snippet shows how to Delete Link Annotation from PDF file. For this we need to find and and remove all link annotations on the 1st page. After this we will save document with removed annotation. 
+
+The following code snippet shows how to Delete Link Annotation from PDF file. For this we need to find and and remove all link annotations on the 1st page. After this we will save document with removed annotation.
+
 ```csharp
 class ExampleLinkAnnotations
     {
@@ -103,7 +107,3 @@ class ExampleLinkAnnotations
     }
 }
 ```
-
-
-
-

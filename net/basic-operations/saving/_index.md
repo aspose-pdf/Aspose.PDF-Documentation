@@ -43,7 +43,7 @@ public static void SaveDocumentStream()
 
 ## Saving a PDF document in Web applications
 
-To save documents in Web applications, you can use the ways proposed above. In addition, the `Docoment` class has overloaded method `Save` for using with the [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8) class.
+To save documents in Web applications, you can use the ways proposed above. In addition, the `Document` class has overloaded method `Save` for using with the [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8) class.
 
 ```csharp
 var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");

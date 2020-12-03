@@ -10,7 +10,6 @@ A watermark annotation  shall be used to represent graphics that shall be printe
 
 You can add Watermark Text using [WatermarkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) at a specific position of the PDF page. The opacity of Watermark can also be controlled by using opacity property. Please check the following code snippet to add WatermarkAnnotation.
 
-C#
 ```csharp
  //Load a Document
 
@@ -46,7 +45,7 @@ wa.Opacity = 0.5;
 
 wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
 
-//Save the Docuemnt
+//Save the Document
 
 doc.Save("Output.pdf");
 ```

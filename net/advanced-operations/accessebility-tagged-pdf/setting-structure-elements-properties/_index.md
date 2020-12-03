@@ -3,10 +3,10 @@ title: Setting Structure Elements Properties
 type: docs
 weight: 30
 url: /net/setting-structure-elements-properties/
-description: With Aspose.PDF for .NET, you may set different  Structure Elements Properties. There are setting Text Block Structure Elements, setting Inline Structure Elements, adding Structure Element into Elements and etc.
+description: With Aspose.PDF for .NET, you may set different Structure Elements Properties. There are setting Text Block Structure Elements, setting Inline Structure Elements, adding Structure Element into Elements and etc.
 ---
 
-In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers **CreateSectElement()** and **CreateHeaderElement()** methods of **ITaggedContent** Interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
+In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers [CreateSectElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) and [CreateHeaderElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) methods of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -45,7 +45,7 @@ document.Save(dataDir + "StructureElementsProperties.pdf");
 
 ## Setting Text Structure Elements
 
-In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers **ParagraphElement** Class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
+In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers [ParagraphElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -77,7 +77,8 @@ document.Save(dataDir + "TextStructureElement.pdf");
 
 ## Setting Text Block Structure Elements
 
-In order to set text block structure elements of a Tagged PDF Document, Aspose.PDF offers **HeaderElement** and **ParagraphElement** Classes. You can append objects of these classes as a child of **StructureElement** object. Following code snippet shows how to set text block structure elements of a Tagged PDF Document:
+In order to set text block structure elements of a Tagged PDF Document, Aspose.PDF offers [HeaderElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) and [ParagraphElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) classes. You can append objects of these classes as a child of [StructureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) object.
+Following code snippet shows how to set text block structure elements of a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -126,7 +127,7 @@ document.Save(dataDir + "TextBlockStructureElements.pdf");
 
 ## Setting Inline Structure Elements
 
-In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF offers **SpanElement** and **ParagraphElement** Classes. You can append objects of these classes as a child of **StructureElement** object. Following code snippet shows how to set inline structure elements of a Tagged PDF Document:
+In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF offers [SpanElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) and [ParagraphElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) classes. You can append objects of these classes as a child of [StructureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) object. Following code snippet shows how to set inline structure elements of a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -241,7 +242,7 @@ document.Save(dataDir + "InlineStructureElements.pdf");
 
 ## Setting Custom Tag Name
 
-In order to set a custom tag name of the elements of a Tagged PDF Document, Aspose.PDF offers **SetTag()** method for elements. Following code snippet shows how to set custom tag name:
+In order to set a custom tag name of the elements of a Tagged PDF Document, Aspose.PDF offers [SetTag](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) method of StructureElement class for elements. Following code snippet shows how to set custom tag name:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -310,7 +311,7 @@ document.Save(dataDir + "CustomTag.pdf");
 
 **This feature is supported by version 19.4 or greater.**
 
-In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers **CreateLinkElement()** method of **ITaggedContent** Interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
+In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers [CreateLinkElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) method of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -321,7 +322,7 @@ string logFile = dataDir + "46035_log.xml";
 string imgFile = dataDir + "google-icon-512.png";
 
 // Creation document and getting Tagged Pdf Content
-Document document = new Document(); 
+Document document = new Document();
 ITaggedContent taggedContent = document.TaggedContent;
 
 

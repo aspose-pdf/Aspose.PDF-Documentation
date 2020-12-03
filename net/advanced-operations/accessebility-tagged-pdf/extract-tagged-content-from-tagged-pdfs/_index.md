@@ -8,7 +8,7 @@ description: This section explains how to extract tagged content PDF document by
 
 ## Getting Tagged PDF Content
 
-In order to get content of PDF Document with Tagged Text, Aspose.PDF offers **TaggedContent** property of **Document** Class. Following code snippet shows how to get content of a PDF document with Tagged Text:
+In order to get content of PDF Document with Tagged Text, Aspose.PDF offers [TaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) property of [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class. Following code snippet shows how to get content of a PDF document with Tagged Text:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -35,7 +35,7 @@ document.Save(dataDir + "TaggedPDFContent.pdf");
 
 ## Getting Root Structure
 
-In order to get the root structure of Tagged PDF Document, Aspose.PDF offers **StructTreeRootElement** and **StructureElement** properties of **ITaggedContent** Interface. Following code snippet shows how to get the root structure of Tagged PDF Document:
+In order to get the root structure of Tagged PDF Document, Aspose.PDF offers [StructTreeRootElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) property of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface and [StructureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Following code snippet shows how to get the root structure of Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -60,7 +60,7 @@ StructureElement rootElement = taggedContent.RootElement;
 
 ## Accessing Children Elements
 
-In order to access children elements of a Tagged PDF Document, Aspose.PDF offers **ElementList** Class. Following code snippet shows how to access children elements of a Tagged PDF Document:
+In order to access children elements of a Tagged PDF Document, Aspose.PDF offers [ElementList](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist) class. Following code snippet shows how to access children elements of a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,8 @@ document.Save(dataDir + "AccessChildrenElements.pdf");
 
 ## Tagging Images in Existing PDF
 
-In order to tag images in existing PDF document, Aspose.PDF offers FindElements() method of StructureElement Class. You can add alternative text for figures using **AlternativeText** property of **FigureElement** Class. Following code snippet shows how to tag images in existing PDF document:
+In order to tag images in existing PDF document, Aspose.PDF offers [FindElements](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) method of [StructureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) class. You can add alternative text for figures using [AlternativeText](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) property of [FigureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement) class. 
+Following code snippet shows how to tag images in existing PDF document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
