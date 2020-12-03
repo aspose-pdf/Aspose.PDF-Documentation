@@ -149,7 +149,6 @@ using (new Impersonator("OwnerUserName", "SomeDomain", "OwnerUserNamePassword"))
 
 The following code snippet shows how to print some pages of PDF file in Simplex and some pages in Duplex mode.
 
-
 ```csharp
 struct PrintingJobSettings
 {

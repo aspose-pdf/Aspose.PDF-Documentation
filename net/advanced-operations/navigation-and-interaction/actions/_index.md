@@ -18,11 +18,12 @@ In order to add web hyperlinks to PDF documents:
 1. Set the Action property to the [GoToURIAction](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) object which specifies the location of the remote URI.
 1. To display a hyperlink text, add a text string on a location similar to where the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) object is placed.
 1. To add a free text:
+
 - Instantiate an [FreeTextAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) object. It also accepts Page and Rectangle objects as argument, so it is possible to provide same values as specified against the LinkAnnotation constructor.
 - Using the [FreeTextAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) object’s Contents property, specify the string that should be displayed in the output PDF.
 - Optionally, set the border width of both the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) and FreeTextAnnotation objects to 0 so that they do not appear in the PDF document.
-1. Once the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) and [FreeTextAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) objects have been defined, add these links to the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object’s Annotations collection.
-1. Finally, save the updated PDF using the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
+- Once the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) and [FreeTextAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) objects have been defined, add these links to the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object’s Annotations collection.
+- Finally, save the updated PDF using the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object's [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
 
 The following code snippet shows you how to add a hyperlink to a PDF file.
 
@@ -71,7 +72,7 @@ In order to add the local hyperlink, we need to create a TextFragment so that li
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-            
+
 // Create Document instance
 Document doc = new Document();
 // Add page to pages collection of PDF file
@@ -97,7 +98,7 @@ link.TargetPageNumber = 1;
 // Set link for second TextFragment
 text.Hyperlink = link;
 // Add text to paragraphs collection of page object
-page.Paragraphs.Add(text);    
+page.Paragraphs.Add(text);
 
 dataDir = dataDir + "CreateLocalHyperlink_out.pdf";
 // Save updated document
@@ -169,7 +170,7 @@ To find the URL content, you need to work with both annotation and text. The [An
                     // Show link annotation
                     ShowLinkAnnotations(page);
                 }
-                // ExEnd:GetHyperlinkText               
+                // ExEnd:GetHyperlinkText
             }
             catch (Exception ex)
             {
@@ -211,6 +212,7 @@ To remove an open action:
 1. Save the updated PDF using the Document object’s [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
  
 The following code snippet shows how to remove a document open action from the PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -223,11 +225,13 @@ dataDir = dataDir + "RemoveOpenAction_out.pdf";
 // Save updated document
 document.Save(dataDir);
 ```
+
 ## How to Specify PDF Page when Viewing Document
 
 When viewing PDF files in a PDF viewer such as Adobe Reader, the files usually open on the first page. However, it is possible to set the file to open on a different page.
 
 The [XYZExplicitDestination](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) class allows you to specify a page in a PDF file that you want to open. When passing the GoToAction object value to the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class OpenAction property, the document opens at the page specified against the XYZExplicitDestination object. The following code snippet shows how to specify a page as the document open action.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

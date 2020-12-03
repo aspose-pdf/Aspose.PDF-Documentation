@@ -27,12 +27,13 @@ To add an image into a PDF file:
 1. Get the particular page the image is going to be added to.
 1. Add the image into the page’s Resources collection.
 1. Use the operators to place the image on the page:
-  - First, use the GSave operator to save the current graphical state.
-  - Then use the ConcatenateMatrix operator to specify where the image is to be placed.
-  - Use the Do operator to draw the image on the page.
-5. Finally, use GRestore operator to save the updated graphical state.
+   - First, use the GSave operator to save the current graphical state.
+   - Then use the ConcatenateMatrix operator to specify where the image is to be placed.
+   - Use the Do operator to draw the image on the page.
+1. Finally, use GRestore operator to save the updated graphical state.
 
 The following code snippet shows how to use PDF operators.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -69,11 +70,13 @@ dataDir = dataDir + "PDFOperators_out.pdf";
 // Save updated document
 pdfDocument.Save(dataDir);
 ```
+
 ## Draw XForm on Page using Operators
 
 This topic demonstrates how to use the GSave/GRestore operators, the ContatenateMatrix operator to position an xForm and the Do operator to draw an xForm on a page.
 
 The code below wraps a PDF file’s existing contents with the GSave/GRestore operator pair. This approach helps get the initial graphics state at the and of the existing contents. Without this approach, undesirable transformations might remain at the end of the existing operator chain.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -137,14 +140,16 @@ using (Document doc = new Document(inFile))
 
     // Restore grahics state with GRestore after the GSave
     pageContents.Add(new Aspose.Pdf.Operators.GRestore());
-    doc.Save(outFile);                
+    doc.Save(outFile);
 }
 ```
+
 ## Remove Graphics Objects using Operator Classes
 
-The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class’ DeleteImage(..) method, the operator classes can be used to remove them instead.
+The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class’ [DeleteImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) method, the operator classes can be used to remove them instead.
 
 The following code snippet shows how to remove graphics. Please note that if the PDF file contains text labels for the graphics, they might persist in the PDF file, using this approach. Therefore search the graphic operators for an alternate method to delete such images.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

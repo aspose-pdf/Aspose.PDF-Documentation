@@ -20,6 +20,7 @@ By adding a link to an application into a document, it is possible to link to ap
 1. Finally, save the updated PDF using the Document object’s [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
 
 The following code snippet shows how to create a link to an application in a PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -39,6 +40,7 @@ dataDir = dataDir + "CreateApplicationLink_out.pdf";
 // Save updated document
 document.Save(dataDir);
 ```
+
 ### Create PDF Document Link in a PDF File
 
 Aspose.PDF for .NET allows you to add a link to an external PDF file so that you can link several documents together. To create a PDF document link:
@@ -102,6 +104,7 @@ dataDir = dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf";
 // Save the document with updated link
 doc.Save(dataDir);
 ```
+
 ### Set Link Destination to a Web Address
 
 To update the hyperlink so that it points to a web address, instantiate the [GoToURIAction](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) object and pass it to the LinkAnnotation’s Action property. The following code snippet shows how to update a link in a PDF file and set its target to a web address.
@@ -112,11 +115,11 @@ To update the hyperlink so that it points to a web address, instantiate the [GoT
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 // Load the PDF file
 Document doc = new Document(dataDir + "UpdateLinks.pdf");
-               
+
 // Get the first link annotation from first page of document
 LinkAnnotation linkAnnot = (LinkAnnotation)doc.Pages[1].Annotations[1];
 // Modification link: change link action and set target as web address
-linkAnnot.Action = new GoToURIAction("www.aspose.com");           
+linkAnnot.Action = new GoToURIAction("www.aspose.com");
 
 dataDir = dataDir + "SetDestinationLink_out.pdf";
 // Save the document with updated link
