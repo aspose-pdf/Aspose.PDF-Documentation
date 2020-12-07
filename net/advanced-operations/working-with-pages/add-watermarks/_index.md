@@ -34,6 +34,7 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 ## Programming Samples: Getting Watermarks
 
 The following code snippet shows how to get each watermark on the first page of a PDF file.
+
 ```csharp  
    Document doc = new Document(_inDataDir + "text.pdf");
             WatermarkArtifact artifact = new WatermarkArtifact();

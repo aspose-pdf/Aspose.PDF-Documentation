@@ -89,7 +89,7 @@ if (fontFile != "")
 
 ## Add Text using TextParagraph
 
-The following code snippet shows you how to add text in PDF document using TextParagraph class.
+The following code snippet shows you how to add text in PDF document using [TextParagraph](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textparagraph) class.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -290,7 +290,9 @@ FootNotes indicate notes in the text of your paper by using consecutive superscr
 In a footnote referencing system, indicate a reference by:
 
 - putting a small number above the line of type directly following the source material. This number is called a note identifier. It sits slightly above the line of text.
-- putting the same number, followed by a citation of your source, at the bottom of the page. Footnoting should be numerical and chronological: the first reference is 1, the second is 2, and so on. The advantage of footnoting is that the reader can simply cast their eyes down the page to discover the source of a reference that interests them.
+- putting the same number, followed by a citation of your source, at the bottom of the page. Footnoting should be numerical and chronological: the first reference is 1, the second is 2, and so on. 
+
+The advantage of footnoting is that the reader can simply cast their eyes down the page to discover the source of a reference that interests them.
 
 Please follow the steps specified below to create a FootNote:
 
@@ -805,7 +807,7 @@ if (fontFile != "")
 
 ## Get Text Width Dynamically
 
-Sometimes, it is required to get the text width dynamically. Aspose.PDF for .NET includes two methods for string width measurement. You can invoke the MeasureString() method of Aspose.Pdf.Text.Font or Aspose.Pdf.Text.TextState classes (or both). The code snippet below shows how to use this functionality.
+Sometimes, it is required to get the text width dynamically. Aspose.PDF for .NET includes two methods for string width measurement. You can invoke the [MeasureString](https://apireference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) method of Aspose.Pdf.Text.Font or Aspose.Pdf.Text.TextState classes (or both). The code snippet below shows how to use this functionality.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -9,7 +9,7 @@ description: Encrypt PDF File using Different Encryption Types and Algorithms. A
 
 ## Set Privileges on an Existing PDF File
 
-To set privileges on a PDF file, create an object of the [DocumentPrivilege](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege)class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s Encrypt(..) method. The following code snippet shows you how to set the privileges of a PDF file.
+To set privileges on a PDF file, create an object of the [DocumentPrivilege](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege)class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s [Encrypt](https://apireference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) method. The following code snippet shows you how to set the privileges of a PDF file.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -72,6 +72,7 @@ dataDir = dataDir + "Decrypt_out.pdf";
 // Save updated PDF
 document.Save(dataDir);
 ```
+
 ## Change Password of a PDF File 
 
 If you want to change the password of a PDF file, you first need to open the PDF file using owner password with the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. After that, you need to call the [ChangePasswords](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. You need to pass the current owner password along with the new user password and new owner password to this method. Finally, save the updated PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)  object.
@@ -80,6 +81,7 @@ If you want to change the password of a PDF file, you first need to open the PDF
 >- The Owner password, if set, controls permissions, such as printing, editing, extracting, commenting, etc. Acrobat/Reader will disallow these things based on the permission settings. Acrobat will require this password if you want to set/change permissions.
 
 The following code snippet shows you how to change the password of a PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -93,6 +95,7 @@ dataDir = dataDir + "ChangePassword_out.pdf";
 // Save updated PDF
 document.Save(dataDir);
 ```
+
 ## How to - determine if the source PDF is password protected
 
 **Aspose.PDF for .NET** provides great capabilities of dealing with PDF documents. When using Document class of Aspose.PDF namespace to open a PDF document that is password-protected, we need to provide the password information as an argument to Document constructor and in case this information is not provided, an error message is generated. In fact, when trying to open a PDF file with Document object, the constructor is trying to read the contents of PDF file and in case correct password is not provided, an error message is generated (it happens to prevent unauthorized access of document)
@@ -104,20 +107,21 @@ When dealing with encrypted PDF files, you may come across the scenario where yo
 PdfFileInfo contains three properties to get information about PDF document security.
 
 1. property PasswordType returns PasswordType enumeration value:
-- PasswordType.None - the document is not password protected
-- PasswordType.User - the document was opened with user (or document open) password
-- PasswordType.Owner - the document was opened with owner (or permissions, edit) password
-- PasswordType.Inaccessible - the document is password protected but the password is needed to open it while an invalid password (or no password) was supplied.
+    - PasswordType.None - the document is not password protected
+    - PasswordType.User - the document was opened with user (or document open) password
+    - PasswordType.Owner - the document was opened with owner (or permissions, edit) password
+    - PasswordType.Inaccessible - the document is password protected but the password is needed to open it while an invalid password (or no password) was supplied.
 2. boolean property HasOpenPassword - is used to determine if the input file requires a password, when opening it.
 3. boolean property HasEditPassword - its used to determine if the input file requires a password to edit its contents.
 
 ### Determine correct password from Array
 
 Sometimes there is a requirement to determine the correct password from an array of passwords and open the document with the correct password. The following code snippet demonstrates the steps to iterate through the array of passwords and try opening the document with the correct password.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();            
+string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 // Load source PDF file
 PdfFileInfo info = new PdfFileInfo();
 info.BindPdf(dataDir + "IsPasswordProtected.pdf");

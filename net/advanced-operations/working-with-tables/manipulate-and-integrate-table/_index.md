@@ -8,9 +8,9 @@ description: This article shows how to manipulate and integrate tables. You can 
 
 ## Set Border Style, Margins and Padding of the Table (MergedAPI)
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) allows developers to create tables in PDF documents. Moreover, they can apply effects like border style, margins and cell padding, to the tables. 
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) allows developers to create tables in PDF documents. Moreover, they can apply effects like border style, margins and cell padding, to the tables.
 
-## Borders 
+## Borders
 
 To set the borders of Table, [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) and [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell) objects, use the Table.Border, Row.Border and Cell.Border properties. Cell borders can also be set using the [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table) or Row class’ DefaultCellBorder property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
 
@@ -19,6 +19,7 @@ To set the borders of Table, [Row](https://apireference.aspose.com/pdf/net/aspos
 Cell padding can be managed using the Table class’ [DefaultCellPadding](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) property . All padding related properties are assigned an instance of the [MarginInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/margininfo) class that takes information about the Left, Right, Top and Bottom parameters to create custom margins.
 
 In the following example, the width of the cell border is set to 0.1 point, the width of the table border is set to 1 point and cell padding is set to 5 points.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -63,7 +64,9 @@ dataDir = dataDir + "MarginsOrPadding_out.pdf";
 // Save the Pdf
 doc.Save(dataDir);
 ```
+
 To create table with rounded corner, use the BorderInfo class’ RoundedBorderRadius value and set the table corner style to round.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

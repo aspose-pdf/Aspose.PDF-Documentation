@@ -8,9 +8,7 @@ description: Aspose.PDF for .NET makes it possible to carry out various manipula
 
 ## Add table
 
-Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF.Generator namespace contains classes named Table, Cell and Row which provides functionality for creating tables when generating PDF documents from scratch.
-
-There has been a great demand from our customers for the ability to add tables to existing PDF documents. To support this functionality, we have introduced new classes named Table, Cell and Row under the Aspose.PDF namespace.
+Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF namespace contains classes named [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell), and [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
 
 ### Add Table in Existing PDF Document
 
@@ -24,6 +22,7 @@ To add a table to an existing PDF file with Aspose.PDF for .NET, take the follow
 1. Save the file.
 
 The following code snippets show how to add text in an existing PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -53,6 +52,7 @@ dataDir = dataDir + "document_with_table_out.pdf";
 // Save updated document containing table object
 doc.Save(dataDir);
 ```
+
 ### AutoFitToWindow property in ColumnAdjustmentType enumeration
 
 ```csharp
@@ -103,9 +103,11 @@ dataDir = dataDir + "AutoFitToWindow_out.pdf";
 // Save updated document containing table object
 doc.Save(dataDir);
 ```
+
 ### Get Table Width
 
-Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class has a method GetWidth() for the purpose. For example, you have not set table columns width explicitly and set ColumnAdjustment to AutoFitToContent. In this case you can get table width as following.
+Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class has a method [GetWidth](https://apireference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) for the purpose. For example, you have not set table columns width explicitly and set [ColumnAdjustment](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) to AutoFitToContent. In this case you can get table width as following.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // Create a new document
@@ -125,11 +127,13 @@ cell = row.Cells.Add("Cell 2 text");
 // Get table width
 Console.WriteLine(table.GetWidth());
 ```
+
 ## Add SVG Object to Table Cell
 
 Aspose.PDF for .NET supports the feature to add a table cell into a PDF file. While creating a table, it is possible to add text or images into the cells. Furthermore, the API also offers the feature to convert SVG files to PDF format. Using a combination of these features, it is possible to load an SVG image and add it into a table cell.
 
 The following code snippet shows the steps for creating a table instance and adding an SVG image inside a table cell.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -170,7 +174,8 @@ dataDir = dataDir + "AddSVGObject_out.pdf";
 // Save PDF file
 doc.Save(dataDir);
 ```
-## Add HTML Tags inside Table 
+
+## Add HTML Tags inside Table
 
 Sometimes you can come up with a requirement to import database contents that have some HTML tags and then import the content to the Table object. When importing the content, it should be rendered the HTML tags accordingly inside PDF document. We have enhanced ImprotDataTable() method, in order to achieve such requirement as follows:
 
@@ -219,9 +224,11 @@ tableProvider.ImportDataTable(dt, false, 0, 0, 3, 1, true);
 doc.Pages[1].Paragraphs.Add(tableProvider);
 doc.Save(dataDir + "HTMLInsideTableCell_out.pdf");
 ```
+
 ## Insert a Page Break between rows of table
 
 As a default behavior, when creating a table inside a PDF file, the table flows to subsequent pages when it reaches tables Bottom margin. However, we may have a requirement to forcefully insert page break when a certain number of rows are added for table. The following code snippet shows the steps to insert page break when 10 rows are added for the table.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -259,16 +266,18 @@ dataDir = dataDir + "InsertPageBreak_out.pdf";
 // Save the PDF document
 doc.Save(dataDir);
 ```
+
 ## Extract table border as Image
 
 The page borders are path drawing operations. Therefore the Pdf->Html processing logic just performs drawing instructions and places the background behind the text. So, to repeat the logic, you have to process contents operators manually and draw the graphics yourself. Also please note that following code snippet might not work accurately for various PDF files but if you encounter any issue, please feel free to contact. This code was developed for specific PDF files. The following code snippet shows the steps to extract the table border as Image from PDF document.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 Document doc = new Document(dataDir + "input.pdf");
-            
+
 Stack graphicsState = new Stack();
 System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap((int)doc.Pages[1].PageInfo.Width, (int)doc.Pages[1].PageInfo.Height);
 System.Drawing.Drawing2D.GraphicsPath graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
@@ -383,13 +392,15 @@ using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bitmap))
 dataDir = dataDir + "ExtractBorder_out.png";
 bitmap.Save(dataDir, ImageFormat.Png);
 ```
+
 ## Render Table on New Page
 
 By default, paragraphs are added to a Page object’s Paragraphs collection. However, it is possible to render a table on a new page instead of directly after the previously added paragraph level object on the page.
 
 ### Adding a Table
 
-To render table on a new page, use the IsInNewPage property in the BaseParagraph class. The following code snippet shows how.
+To render table on a new page, use the [IsInNewPage](https://apireference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) property in the BaseParagraph class. The following code snippet shows how.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

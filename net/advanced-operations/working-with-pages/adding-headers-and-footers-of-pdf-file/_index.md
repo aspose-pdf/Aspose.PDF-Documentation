@@ -8,7 +8,7 @@ description: Aspose.PDF allows you to add headers and footers to your PDF file u
 
 ## Adding Text in Header of PDF File
 
-You can use TextStamp class to add text in the header of a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text in the header, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the text in the header of the PDF.
+You can use [TextStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/textstamp) class to add text in the header of a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text in the header, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the text in the header of the PDF.
 
 You need to set the TopMargin property in such a way that it adjusts the text in the header area of your PDF. You also need to set HorizontalAlignment to Center and VerticalAlignment to Top. The following code snippet shows you how to add text in the header of a PDF file.
 
@@ -35,6 +35,7 @@ foreach (Page page in pdfDocument.Pages)
 // Save updated document
 pdfDocument.Save(dataDir+ "TextinHeader_out.pdf");
 ```
+
 ## Adding Text in Footer of PDF File
 
 You can use TextStamp class to add text in the footer of a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text in the footer, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the text in the footer of the PDF.
@@ -46,6 +47,7 @@ You need to set the Bottom Margin property in such a way that it adjusts the tex
 {{% /alert %}}
 
 The following code snippet shows you how to add text in the footer of a PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -68,9 +70,10 @@ dataDir = dataDir + "TextinFooter_out.pdf";
 // Save updated PDF file
 pdfDocument.Save(dataDir);
 ```
+
 ## Adding Image in Header of PDF File
 
-You can use Image Stamp class to add image in the header of a PDF file. Image Stamp class provides properties necessary to create image based stamp like font size, font style, and font color etc. In order to add image in the header, you need to create a Document object and a Image Stamp object using required properties. After that, you can call AddStamp method of the Page to add the image in the header of the PDF.
+You can use [ImageStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/ImageStamp) class to add image in the header of a PDF file. Image Stamp class provides properties necessary to create image based stamp like font size, font style, and font color etc. In order to add image in the header, you need to create a Document object and a Image Stamp object using required properties. After that, you can call [AddStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) method of the Page to add the image in the header of the PDF.
 
 {{% alert color="primary" %}}
 
@@ -79,6 +82,7 @@ You need to set the TopMargin property in such a way that it adjusts the image i
 {{% /alert %}}
 
 The following code snippet shows you how to add image in the header of a PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -102,17 +106,19 @@ dataDir = dataDir + "ImageinHeader_out.pdf";
 // Save updated document
 pdfDocument.Save(dataDir);
 ```
-## Adding Image in Footer of PDF File 
+
+## Adding Image in Footer of PDF File
 
 You can use Image Stamp class to add image in the footer of a PDF file. Image Stamp class provides properties necessary to create image based stamp like font size, font style, and font color etc. In order to add image in the footer, you need to create a Document object and an Image Stamp object using required properties. After that, you can call AddStamp method of the Page to add the image in the footer of the PDF.
 
 {{% alert color="primary" %}}
 
-You need to set the Bottom Margin property in such a way that it adjusts the image in the footer area of your PDF. You also need to set HorizontalAlignment to Center and VerticalAlignment to Bottom .
+You need to set the [BottomMargin](https://apireference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin) property in such a way that it adjusts the image in the footer area of your PDF. You also need to set [HorizontalAlignment](https://apireference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment) to `Center` and [VerticalAlignment](https://apireference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment) to `Bottom`.
 
 {{% /alert %}}
 
 The following code snippet shows you how to add image in the footer of a PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -135,9 +141,11 @@ dataDir = dataDir + "ImageInFooter_out.pdf";
 // Save updated PDF file
 pdfDocument.Save(dataDir);
 ```
+
 ## Adding different Headers in one PDF File
 
-We know that we can add TextStamp in Header/Footer section of the document by using TopMargin or Bottom Margin properties, but sometimes we may have the requirement to add multiple header/footers in a single PDF document. In order to accomplish this requirement, we will create individual TextStamp objects ( number of objects depends upon the number of Header/Footers required )and will add them to PDF document. We may also specify different formatting information for individual stamp object. In following example, we have created Document object and three TextStamp objects and then we have used AddStamp method of the Page to add the text in the header section of the PDF. The following code snippet shows you how to add image in the footer of a PDF file.
+We know that we can add TextStamp in Header/Footer section of the document by using TopMargin or Bottom Margin properties, but sometimes we may have the requirement to add multiple header/footers in a single PDF document. In order to accomplish this requirement, we will create individual TextStamp objects (number of objects depends upon the number of Header/Footers required)and will add them to PDF document. We may also specify different formatting information for individual stamp object. In following example, we have created Document object and three TextStamp objects and then we have used [AddStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) method of the Page to add the text in the header section of the PDF. The following code snippet shows you how to add image in the footer of a PDF file.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

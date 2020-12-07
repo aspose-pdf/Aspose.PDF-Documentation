@@ -35,8 +35,9 @@ To add a form field:
 
 1. Create the form field you want to add.
 1. Call the [Form](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/form) collection’s Add method.
- 
+
 ### Adding TextBoxField
+
 Below example shows how to add a [TextBoxField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
 
 ```csharp
@@ -67,9 +68,10 @@ dataDir = dataDir + "TextBox_out.pdf";
 // Save modified PDF
 pdfDocument.Save(dataDir);
 ``` 
+
 ### Adding RadioButtonField 
 
-The following code snippets show how to add RadioButtonField in a PDF document.
+The following code snippets show how to add [RadioButtonField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) in a PDF document.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -93,6 +95,7 @@ dataDir = dataDir + "RadioButton_out.pdf";
 // Save the PDF file
 pdfDocument.Save(dataDir);
 ```
+
 The following code snippet shows the steps to add RadioButtonField with three options and place them inside Table cells.
 
 ```csharp
@@ -159,7 +162,8 @@ dataDir = dataDir + "RadioButtonWithOptions_out.pdf";
 // Save the PDF file
 doc.Save(dataDir);
 ```
-### Adding Caption to RadioButtonField 
+
+### Adding Caption to RadioButtonField
 
 Following code snippet shows how to add caption which will be associated with RadioButtonField:
 
@@ -207,6 +211,7 @@ foreach (var item in form1.FieldNames)
 }
 PDF_Template_PDF_HTML.Save(dataDir + "RadioButtonField_out.pdf");
 ```
+
 ### Adding ComboBox field
 
 The following code snippets show how to add ComboBox field in a PDF document.
@@ -237,6 +242,7 @@ dataDir = dataDir + "ComboBox_out.pdf";
 // Save the PDF document
 doc.Save(dataDir);
 ```
+
 ### Add Tooltip to Form Field
 
 The Document class provides a collection named Form which manages form fields in a PDF document. To add a tooltip to a form field, use the Field class AlternateName. Adobe Acrobat uses the ‘alternate name’ as a field tooltip.
@@ -275,13 +281,14 @@ Document pdfDocument = new Document(dataDir + "FillFormField.pdf");
 
 // Get a field
 TextBoxField textBoxField = pdfDocument.Form["textbox1"] as TextBoxField;
-            
+
 // Modify field value
 textBoxField.Value = "Value to be filled in the field";
 dataDir = dataDir + "FillFormField_out.pdf";
 // Save updated document
 pdfDocument.Save(dataDir); 
 ```
+
 ## Extract data from form
 
 ### Get Values from all the Fields of PDF Document
@@ -289,6 +296,7 @@ pdfDocument.Save(dataDir);
 To get values from all the fields in a PDF document, you need to navigate through all the form fields and then get the value using the Value property. Get each field from the Form collection, in the base field type called Field and access its Value property.
 
 The following code snippets show how to get the values of all the fields from a PDF document.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -304,9 +312,10 @@ foreach (Field formField in pdfDocument.Form)
     Console.WriteLine("Value : {0} ", formField.Value);
 }
 ```
+
 ### Get/Set FieldLimit
 
-The FormEditor class SetFieldLimit(“textbox1”, 20) method allows you to set a field limit, the maximum number of characters that can be entered into a field.
+The FormEditor class SetFieldLimit("textbox1", 20) method allows you to set a field limit, the maximum number of characters that can be entered into a field.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

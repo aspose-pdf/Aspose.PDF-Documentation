@@ -59,6 +59,7 @@ dataDir = dataDir + "AddImage_out.pdf";
 // Save updated document
 pdfDocument.Save(dataDir);
 ```
+
 {{% alert color="primary" %}}
 
 By default, the JPEG quality is set to 100%. To apply better compression and quality, use the following overloads:
@@ -130,6 +131,7 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
     document.Save("output.pdf");
 }
 ```
+
 ## Delete Images from a PDF File
 
 To delete an image from a PDF file:
@@ -140,7 +142,7 @@ To delete an image from a PDF file:
 1. Delete an image with the Images collection’s Delete method.
 1. Saved the output like using the Document object’s Save method.
 1. The following code snippet shows how to delete an image from a PDF file.
-2. 
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -156,6 +158,7 @@ dataDir = dataDir + "DeleteImages_out.pdf";
 // Save updated PDF file
 pdfDocument.Save(dataDir);
 ```
+
 ## Extract Images from the PDF File
 
 Images are held in each page’s [Resources](https://apireference.aspose.com/pdf/net/aspose.pdf/resources) collection’s [Images](https://apireference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.
@@ -184,6 +187,7 @@ dataDir = dataDir + "ExtractImages_out.pdf";
 // Save updated PDF file
 pdfDocument.Save(dataDir);
 ```
+
 ## Get the Resolution and Dimensions of Embedded Images
 
 This topic explains how to use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information about images without having to extract them.

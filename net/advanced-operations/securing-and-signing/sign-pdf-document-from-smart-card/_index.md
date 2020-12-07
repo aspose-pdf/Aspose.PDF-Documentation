@@ -54,6 +54,7 @@ using (PdfFileSignature pdfSign = new PdfFileSignature(new Document(dataDir + "e
     }
 }
 ```
+
 ## Sign With Smart Card Using PDF File Signature
 
 ```csharp
