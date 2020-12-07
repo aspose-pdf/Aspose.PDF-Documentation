@@ -48,7 +48,7 @@ You'll find the details of each of these areas below.
 
 ### Aspose.PDF for .NET DOM API
 
-The new API of Aspose.PDF for .NET is DOM based. You can find more details about the DOM API and PDF document structure in the article [Introduction to DOM API|Introduction to DOM API. In this section, we'll elaborate the use of the new DOM API.
+The new API of Aspose.PDF for .NET is DOM based. You can find more details about the DOM API and PDF document structure in the article Introduction to DOM API. In this section, we'll elaborate the use of the new DOM API.
 
 The new Aspose.PDF for .NET DOM API corresponds to the PDF document structure, which helps you to work with the PDF documents not only at the file and document level, but also at the object level. We have provided more flexibility to the developers to access all of the elements and objects of the PDF document. Using the Aspose.PDF DOM API's classes, you can gain programmatic access to document elements and formatting. This new DOM API is comprised of various namespaces as given below:
 
