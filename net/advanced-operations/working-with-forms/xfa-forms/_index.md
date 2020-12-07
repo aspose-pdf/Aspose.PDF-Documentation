@@ -12,7 +12,7 @@ Dynamic forms are based on an XML specification known as XFA, the “XML Forms A
 
 {{% /alert %}}
 
-Form class provides the capability to deal with static AcroForm and you can get a particular field instance using the Form class’ GetFieldFacade(..) method. However, XFA fields cannot be accessed via the Form.GetFieldFacade(..) method. Instead, use Document.Form.XFA to get/set field values and manipulate XFA field template (set field properties).
+Form class provides the capability to deal with static AcroForm and you can get a particular field instance using the Form class’ GetFieldFacade(..) method. However, XFA fields cannot be accessed via the Form.GetFieldFacade(..) method. Instead, use [Document.Form.XFA](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) to get/set field values and manipulate XFA field template (set field properties).
 
 ## Fill XFA fields
 
@@ -36,6 +36,7 @@ dataDir = dataDir + "Filled_XFA_out.pdf";
 // Save the updated document
 doc.Save(dataDir);
 ```
+
 ## Convert XFA-to-Acroform
 
 {{% alert color="primary" %}}
@@ -69,6 +70,7 @@ dataDir = dataDir + "Standard_AcroForm_out.pdf";
 // Save the resultant PDF
 document.Save(dataDir);
 ```
+
 ## Get XFA field properties
 
 To access field properties, first use Document.Form.XFA.Teamplate to access the field template. The following code snippet shows the steps of getting X and Y coordinates of XFA a form field.

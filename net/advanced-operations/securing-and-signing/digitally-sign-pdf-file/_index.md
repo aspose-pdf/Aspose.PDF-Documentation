@@ -13,7 +13,7 @@ When signing a PDF document using a signature, you basically confirm its content
 
 In other words, the document would still be considered to retain its integrity and the recipient could still trust the document. For further details, please visit Certifying and signing a PDF. In general, certifying a document can be compared to Code-signing a .NET executable.
 
-## Sign 
+## Sign
 
 - [DocMDPSignature](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature) class was added
 - **DocMDPAccessPermissions** enumeration was added
@@ -36,14 +36,15 @@ public static void SignDocument()
             signature.Save(outFile);
         }
     }
-    
 }
 ```
+
 ## Add a timestamp to a digital signature
 
 Aspose.PDF for .NET supports to digitally sign the PDF with a timestamp server or Web service.
 
-In order to accomplish this requirement, the TimestampSettings class has been added to the Aspose.PDF namespace. Please take a look at the following code snippet which obtains timestamp and adds it to PDF document:
+In order to accomplish this requirement, the [TimestampSettings](https://apireference.aspose.com/pdf/net/aspose.pdf/timestampsettings) class has been added to the Aspose.PDF namespace. Please take a look at the following code snippet which obtains timestamp and adds it to PDF document:
+
 ```csharp
 public static void SignWithTimeStampServer()
 {

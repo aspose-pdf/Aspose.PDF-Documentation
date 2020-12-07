@@ -65,6 +65,7 @@ foreach (TextFragment fragment in textFragments)
 // Save document
 document.Save(outputFile);
 ```
+
 {{% alert color="primary" %}}
 
 Concerning to the length of the tooltip, the tooltip text is contained in the PDF document as PDF string type, outside of the content stream. There is no effective restriction on such strings in PDF files (See PDF Reference Appendix C.). However, a conforming reader (e.g. Adobe Acrobat) running on a particular processor and in a particular operating environment does have such a limit. Please refer to your PDF reader application documentation.

@@ -15,4 +15,3 @@ description: How to add pages, add headers and footers, add watermarks and backg
 - [Add Numbers in a PDF File](/pdf/net/add-page-number/)
 - [Add backgrounds](/pdf/net/add-backgrounds/)
 - [Stamping](/pdf/net/stamping/)
-

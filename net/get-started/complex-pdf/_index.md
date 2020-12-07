@@ -2,8 +2,8 @@
 title: Complex PDF
 type: docs
 weight: 40
-url: /net/complex-pdf/
-description: Aspose.PDF for .NET allows you to create more complex documents that contain images, text fragments, and tables in one document.
+url: /java/complex-pdf/
+description: Aspose.PDF for Java allows you to create more complex documents that contain images, text fragments, and tables in one document.
 ---
 
 The [Hello, World](/pdf/net/hello-world/) example showed simple steps to create a PDF document. Let's take a look at creating a more complex document.
@@ -19,14 +19,14 @@ Below code snippet follows these steps:
 1. Using GSave operator: this operator saves current graphics state.
 1. Create a [Matrix](https://apireference.aspose.com/pdf/net/aspose.pdf/matrix/constructors/1) object.
 1. Using ConcatenateMatrix operator: defines how image must be placed. 
-1. Using Do operator: this operator draws image.       
+1. Using Do operator: this operator draws image.
 1. Using GRestore operator: this operator restores graphics state.
 1. Create a [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) (header).
-1. Add(header) to the page [Paragraphs](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs).
+1. Add (header) to the page [Paragraphs](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs).
 1. Create a [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) (description). 
-1. Add(description) to the page Paragraphs.
+1. Add (description) to the page Paragraphs.
 1. Create a table, add table properties.
-1. Add(table) to the page [Paragraphs](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs).
+1. Add (table) to the page [Paragraphs](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs).
 1. Save a document "Complex.pdf".
 
 ```csharp

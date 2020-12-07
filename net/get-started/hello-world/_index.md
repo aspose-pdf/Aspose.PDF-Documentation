@@ -12,15 +12,11 @@ Aspose.PDF for .NET is a feature rich PDF API that allows the developers to embe
 
 Below code snippet follows these steps:
 
-1. Instantiate a document object
-
-1. Add a page to document object
-
-1. Create a TextFragment object
-
-1. Add TextFragment to Paragraph collection of the page
-
-1. Save resultant PDF document
+1. Instantiate a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object
+1. Add a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) to document object
+1. Create a [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) object
+1. Add TextFragment to [Paragraph](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) collection of the page
+1. [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) resultant PDF document
 
 Following code snippet is a Hello World program to exhibit working of Aspose.PDF for .NET API.
 
