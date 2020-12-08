@@ -81,3 +81,9 @@ public static void ConvertPDFtoBmpSinglePage()
     }
 }
 ```
+
+## Convert All PDF Pages to BMP Images
+
+To convert all page of PDF file to BMP format, you need to iterate through to get each individual page and convert it to BMP format. The following code snippet shows you how to traverse through all the pages of a PDF file and convert it to BMP.
+
+//TODO: add example

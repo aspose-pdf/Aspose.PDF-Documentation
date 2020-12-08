@@ -6,7 +6,7 @@ url: /java/complex-pdf/
 description: Aspose.PDF for Java allows you to create more complex documents that contain images, text fragments, and tables in one document.
 ---
 
-The [Hello, World](/pdf/net/hello-world/) example showed simple steps to create a PDF document. Let's take a look at creating a more complex document.
+The [Hello, World](/pdf/java/hello-world/) example showed simple steps to create a PDF document. Let's take a look at creating a more complex document.
 Our document will contain a image, two text fragments (header and paragraph), and a table. 
 
 As an example, we'll take a document from a fictitious company that operates passenger ferry services.

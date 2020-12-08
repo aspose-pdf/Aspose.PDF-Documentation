@@ -16,6 +16,6 @@ public static void ConvertCGMtoPDF()
 {
     CgmLoadOptions option = new CgmLoadOptions();
     Document pdfDocument= new Document(_dataDir+"corvette.cgm", option);
-    pdfDocument.Save(_dataDir+"cgmtest.pdf");
+    pdfDocument.Save(_dataDir+"CGMtoPDF.pdf");
 }
 ```

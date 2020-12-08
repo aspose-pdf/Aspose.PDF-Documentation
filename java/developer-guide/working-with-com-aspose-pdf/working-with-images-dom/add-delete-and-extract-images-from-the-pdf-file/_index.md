@@ -6,6 +6,7 @@ url: /java/add-delete-and-extract-images-from-the-pdf-file/
 ---
 
 ## **Add Image to Existing PDF File**
+
 Every PDF page object contains the [getResources()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page#getResources--) and [getContents()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page#getContents--) methods. Resources can be images and forms, for example, while content is represented by a set of PDF operators. Each operator has its own name and argument. This example use operators to add an image to a PDF file.
 
 To add an image to an existing PDF file:
