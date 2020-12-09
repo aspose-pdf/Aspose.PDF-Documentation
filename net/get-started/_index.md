@@ -10,5 +10,5 @@ description: This section describes the basic principles of work and using DOM A
 
 - [Basics of DOM API](/pdf/net/basics-of-dom-api/)
 - ["Hello, World" Example](/pdf/net/hello-world/)
-- [How to run other examples](/pdf/net/how-to-run-other-examples/)
 - [Complex PDF](/pdf/net/complex-pdf/)
+- [How to run other examples](/pdf/net/how-to-run-other-examples/)

@@ -34,18 +34,20 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 You can convert PDF document to .TXT file using `Visit` method of `TextAbsorber` class.
 
-The following code snippet explains how to extract the texts from the all pages.
+The following code snippet explains how to extract the texts from the particular pages.
 
 ```csharp
 public static void ConvertPDFPagestoTXT()
 {
-    // Open document
-    Document pdfDocument = new Document(_dataDir + "demo.pdf");
-    var pages = new int[];
+    Document pdfDocument = new Document(System.IO.Path.Combine(_dataDir, "demo.pdf"));
     TextAbsorber ta = new TextAbsorber();
-
-    ta.Visit(pdfDocument);
+    var pages = new [] {1, 3, 4};
+    foreach (var page in pages)
+    {
+        ta.Visit(pdfDocument.Pages[page]);
+    }
+    
     // Save the extracted text in text file
-    File.WriteAllText(_dataDir + "input_Text_Extracted_out.txt",ta.Text);
+    File.WriteAllText(System.IO.Path.Combine(_dataDir, "input_Text_Extracted_out.txt"), ta.Text);
 }
 ```
