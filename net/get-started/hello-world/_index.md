@@ -2,7 +2,7 @@
 title: Hello World Example
 type: docs
 weight: 20
-url: /net/hello-world/
+url: /net/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World. 
 ---
 

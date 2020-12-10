@@ -4,6 +4,8 @@ type: docs
 weight: 160
 url: /net/graphs/
 description: This article explains what a is graph, how to create a filled rectangle object,  how to add text inside a graph object, how to add a line object to PDF and etc.
+aliases:
+    - /net/working-with-graphs/
 ---
 
 ## What is Graph

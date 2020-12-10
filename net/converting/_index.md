@@ -1,9 +1,11 @@
 ---
-title: Converting
+title: Converting PDF documents in Aspose.PDF for .NET
 type: docs
 weight: 70
 url: /net/converting/
 description: This section contains a description of all possible options for converting PDF documents on C# using the Aspose.PDF library.
+aliases:
+    - net/working-with-document-conversion/
 ---
 
 ## Articles in this section
@@ -22,8 +24,8 @@ description: This section contains a description of all possible options for con
 - [Convert EMF to PDF](/pdf/net/convert-emf-to-pdf/)
 - [Convert TIFF to PDF](/pdf/net/convert-tiff-to-pdf/)
 - [Convert PNG to PDF](/pdf/net/convert-png-to-pdf/)
-- [Convert mhtml to PDF](/pdf/net/convert-mhtml-to-pdf/)
-- [Convert LATeX to PDF](/pdf/net/convert-latex-tex-to-pdf/)
+- [Convert MHTML to PDF](/pdf/net/convert-mhtml-to-pdf/)
+- [Convert LaTeX to PDF](/pdf/net/convert-latex-tex-to-pdf/)
 - [Convert Markdown to PDF](/pdf/net/convert-markdown-to-pdf/)
 - [Convert SVG to PDF](/pdf/net/convert-svg-to-pdf/)
 - [Convert XPS to PDF](/pdf/net/convert-xps-to-pdf/)
@@ -43,5 +45,5 @@ description: This section contains a description of all possible options for con
 - [Convert PDF to LaTeX/TeX](/pdf/net/convert-pdf-to-latex-tex/)
 - [Convert PDF to SVG](/pdf/net/convert-pdf-to-svg/)
 - [Convert PDF to XPS](/pdf/net/convert-pdf-to-xps/)
-- [Convert PDF to Image](/pdf/net/convert-pdf-pages-to-jpeg-image/)
+- [Convert PDF to JPEG](/pdf/net/convert-pdf-pages-to-jpeg-image/)
 

@@ -1,5 +1,5 @@
 ---
-title: Working with Tables
+title: Working with Tables in Aspose.PDF for .NET
 type: docs
 weight: 30
 url: /net/working-with-tables/
@@ -10,4 +10,3 @@ description: This section describes how to add and extract a table, how to manip
 
 - [Add and Extract a Table](/pdf/net/add-and-extract-a-table/)
 - [Manipulate and Integrate Table](/pdf/net/manipulate-and-integrate-table/)
-
