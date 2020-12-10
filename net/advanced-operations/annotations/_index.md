@@ -4,12 +4,13 @@ type: docs
 weight: 70
 url: /net/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library.
+date: "2020-12-10"
 aliases:
     - /net/working-with-annotations/
     - /net/annotation/
 ---
 
-## Articles in this section
+
 
 - [Overview of Annotations](/pdf/net/overview-of-annotations/)
 - [Add, Delete and Get Annotation](/pdf/net/add-delete-and-get-annotation/)
