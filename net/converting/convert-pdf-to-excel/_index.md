@@ -86,4 +86,3 @@ public static void ConvertPDFtoExcelAdvanced_SaveXLSX()
     pdfDocument.Save("PDFToXLS_out.xlsx", excelSave);
 }
 ```
-

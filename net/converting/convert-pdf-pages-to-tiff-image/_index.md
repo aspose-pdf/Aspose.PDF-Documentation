@@ -87,6 +87,7 @@ public static void ConvertPDFtoTiffSinglePage()
 ```
 
 ## Use Bradley algorithm during conversion
+
 Aspose.PDF for .NET has been supporting the feature to convert PDF to TIF using LZW compression and then with the use of AForge, Binarization can be applied. However one of the customers requested that for some images, they need to get the Threshold using Otsu, so they also would like to use Bradley.
 
 ```csharp

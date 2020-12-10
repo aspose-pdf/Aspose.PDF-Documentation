@@ -4,9 +4,12 @@ type: docs
 weight: 20
 url: /net/key-features/
 description: Aspose.PDF for .NET demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, annotations, documents, etc.
+aliases:
+    - /net/feature-list/
 ---
 
 ## General Features
+
 - Written completely in C#, works with .NET Framework.
 - .NET environment required.
 - Supports Windows Forms and ASP.NET applications.
@@ -17,9 +20,11 @@ description: Aspose.PDF for .NET demonstrates its general features. This page de
 - 64-bit OS
 
 ## Supported PDF versions
+
 Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 
 ## Fonts
+
 - 14 core fonts.
 - Type 1 fonts.
 - TrueType fonts.
@@ -28,6 +33,7 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Unicode support.
 
 ## Text
+
 - Extract text from pages.
 - Search text from pages.
 - Get text segments.
@@ -38,6 +44,7 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Add text in PDF file.
 
 ## Images
+
 - Add image in PDF file.
 - Delete images.
 - Replace images.
@@ -48,12 +55,14 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - PDF to BMP conversion.
 
 ## Attachments
+
 - Add attachment.
 - Get attachments.
 - Delete attachments.
 - Get attachment information.
 
 ## Page
+
 - Get page count.
 - Get page properties.
 - Concatenate PDF files.
@@ -64,6 +73,7 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Get a particular page.
 
 ## Document
+
 - Get document viewer properties.
 - Set document viewer properties.
 - Get page display properties.
@@ -80,6 +90,7 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - PDF to Tex conversion.
 
 ## Bookmarks
+
 - Add bookmarks.
 - Add child bookmarks.
 - Delete bookmarks.
@@ -89,12 +100,14 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Modify child bookmarks.
 
 ## Annotations
+
 - Add annotations.
 - Get annotations.
 - Delete annotations.
 - Modify annotations.
 
 ## Forms
+
 - Add fields.
 - Delete fields.
 - Modify fields.
@@ -103,9 +116,11 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Support for XFA (XML based Forms) and AcroForms (Standard Forms)
 
 ## Operators
+
 - Add operators in PDF file.
 
 ## Stamp and Watermark
+
 - Add text stamp.
 - Add image stamp.
 - Add PDF page stamp.
@@ -116,15 +131,18 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Add image in the footer.
 
 ## Links and Actions
+
 - Create application link.
 - Create JavaScript link.
 - Remove document open action.
 - Extract links.
 
 ## Security and Signatures
+
 - Encrypt PDF.
 - Decrypt PDF.
 - Modify password.
 
 ## Miscellaneous
+
 Get build version information.

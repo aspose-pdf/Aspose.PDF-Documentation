@@ -21,7 +21,6 @@ Below code snippet follows these steps:
 Following code snippet is a Hello World program to exhibit working of Aspose.PDF for .NET API.
 
 ```csharp
-// source: https://github.com/andruhovski/Examples/blob/master/Aspose.Pdf.Examples/ExampleGetStarted.cs
 namespace Aspose.Pdf.Examples
 {
     public static class ExampleGetStarted
