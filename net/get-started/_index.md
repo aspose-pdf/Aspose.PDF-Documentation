@@ -4,6 +4,7 @@ type: docs
 weight: 30
 url: /net/get-started/
 description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document.
+is_node: true
 aliases:
     - /net/getting-started/
 ---
