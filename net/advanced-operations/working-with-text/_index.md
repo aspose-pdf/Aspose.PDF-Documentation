@@ -2,7 +2,7 @@
 title: Working with Text in Aspose.PDF for .NET
 linktitle: Working with Text 
 type: docs
-weight: 10
+weight: 30
 url: /net/working-with-text/
 description: This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF and C#.
 ---

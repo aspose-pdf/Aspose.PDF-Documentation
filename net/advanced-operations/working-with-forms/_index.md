@@ -1,8 +1,8 @@
 ---
 title: Working with Forms in Aspose.PDF for .NET
-linktitle: Forms
+linktitle: Working with Forms
 type: docs
-weight: 40
+weight: 60
 url: /net/working-with-forms/
 description: This article explains how to work with AcroForms and XFA Forms in your PDF documents with Aspose.PDF for .NET.
 ---

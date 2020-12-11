@@ -1,7 +1,8 @@
 ---
 title: Working with Annotations in PDF with Aspose.PDF for .NET
+linktitle: Working with Annotations
 type: docs
-weight: 70
+weight: 100
 url: /net/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library.
 date: "2020-12-10"

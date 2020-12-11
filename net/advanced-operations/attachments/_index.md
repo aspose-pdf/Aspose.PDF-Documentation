@@ -1,7 +1,8 @@
 ---
-title: Attachments 
+title: Working with Attachments in Aspose.PDF for .NET
+linktitle: Working with Attachments
 type: docs
-weight: 100
+weight: 130
 url: /net/attachments/
 keywords: 
     - DotNet PDF API,

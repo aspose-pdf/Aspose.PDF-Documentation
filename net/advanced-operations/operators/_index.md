@@ -1,8 +1,8 @@
 ---
 title: Working with Operators in Aspose.PDF for .NET
-linktitle: Operators
+linktitle: Working with Operators
 type: docs
-weight: 150
+weight: 170
 url: /net/operators/
 description: This topic explains how to use operators with Aspose.PDF. The operator classes provide great features for PDF manipulation.
 aliases:

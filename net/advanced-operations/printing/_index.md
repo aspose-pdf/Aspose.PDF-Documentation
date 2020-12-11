@@ -2,7 +2,7 @@
 title: Printing PDF documents using Aspose.PDF for .NET 
 linktitle: Printing document
 type: docs
-weight: 140
+weight: 160
 url: /net/printing-document/
 description: This section describes the possibilities of using printing PDF in the .NET Framework. 
 ---
