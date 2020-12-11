@@ -8,7 +8,7 @@ date: "2020-12-10"
 description: This section describes the possibilities of opening and saving PDF documents using the Aspose.PDF library.
 ---
 
-## Articles in this section
+In this section 
 
 - [Opening](/pdf/net/opening-a-pdf-document/)
 - [Saving](/pdf/net/saving/)

@@ -1,7 +1,8 @@
 ---
-title: Securing and signing in PDF
+title: Securing and signing PDF documents using Aspose.PDF for .NET
+linktitle: Securing and signing in PDF
 type: docs
-weight: 130
+weight: 150
 url: /net/securing-and-signing/
 description: This article describes the features of using a signature and securing your PDF document. 
 aliases:

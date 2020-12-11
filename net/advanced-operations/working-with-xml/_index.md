@@ -1,7 +1,8 @@
 ---
-title: Working XML in Aspose.PDF for .NET
+title: Working with XML in Aspose.PDF for .NET
+linktitle: Working with XML
 type: docs
-weight: 170
+weight: 80
 url: /net/working-with-xml/
 description: Learn how to generate a PDF document from XML in Aspose.PDF for .NET
 ---

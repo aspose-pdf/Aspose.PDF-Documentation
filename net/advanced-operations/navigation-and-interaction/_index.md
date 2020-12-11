@@ -1,7 +1,8 @@
 ---
 title: Navigation and interaction
+linktitle: Navigation and interaction
 type: docs
-weight: 50
+weight: 90
 url: /net/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks.
 ---
