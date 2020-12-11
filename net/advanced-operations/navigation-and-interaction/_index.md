@@ -1,5 +1,6 @@
 ---
 title: Navigation and interaction
+linktitle: Navigation and interaction
 type: docs
 weight: 50
 url: /net/navigation-and-interaction/

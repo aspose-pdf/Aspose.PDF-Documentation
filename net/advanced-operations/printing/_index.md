@@ -1,5 +1,6 @@
 ---
-title: Printing document
+title: Printing PDF documents using Aspose.PDF for .NET 
+linktitle: Printing document
 type: docs
 weight: 140
 url: /net/printing-document/

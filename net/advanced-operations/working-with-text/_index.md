@@ -1,5 +1,6 @@
 ---
-title: Working with Text 
+title: Working with Text in Aspose.PDF for .NET
+linktitle: Working with Text 
 type: docs
 weight: 10
 url: /net/working-with-text/

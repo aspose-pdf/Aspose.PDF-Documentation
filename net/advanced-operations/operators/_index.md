@@ -1,5 +1,6 @@
 ---
 title: Working with Operators in Aspose.PDF for .NET
+linktitle: Operators
 type: docs
 weight: 150
 url: /net/operators/

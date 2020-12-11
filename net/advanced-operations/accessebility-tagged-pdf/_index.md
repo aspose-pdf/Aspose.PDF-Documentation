@@ -1,5 +1,6 @@
 ---
 title: Working with Accessibility and Tagged PDFs in Aspose.PDF for .NET 
+linktitle: Accessibility and Tagged PDFs
 type: docs
 weight: 90
 url: /net/accessebility-tagged-pdf/

@@ -1,5 +1,6 @@
 ---
-title: Securing and signing in PDF
+title: Securing and signing PDF documents using Aspose.PDF for .NET
+linktitle: Securing and signing in PDF
 type: docs
 weight: 130
 url: /net/securing-and-signing/

@@ -1,5 +1,6 @@
 ---
-title: Artifacts 
+title: Working with Artifacts in Aspose.PDF in .NET
+linktitle: Artifacts 
 type: docs
 weight: 80
 url: /net/artifacts/

@@ -1,5 +1,6 @@
 ---
-title: Working with Graphs
+title: Working with Graphs in Aspose.PDF for .NET
+linktitle: Graphs
 type: docs
 weight: 160
 url: /net/graphs/

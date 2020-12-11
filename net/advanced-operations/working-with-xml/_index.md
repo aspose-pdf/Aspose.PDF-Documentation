@@ -1,5 +1,6 @@
 ---
-title: Working XML in Aspose.PDF for .NET
+title: Working with XML in Aspose.PDF for .NET
+linktitle: Working with XML
 type: docs
 weight: 170
 url: /net/working-with-xml/
