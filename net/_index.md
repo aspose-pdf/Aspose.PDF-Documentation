@@ -4,6 +4,8 @@ type: docs
 weight: 10
 url: /net/
 is_root: true
+aliases:
+    - /pdf/net/working-with-aspose-pdf/
 ---
 ![Aspose.PDF for .NET logo image](home_1.png)
 
