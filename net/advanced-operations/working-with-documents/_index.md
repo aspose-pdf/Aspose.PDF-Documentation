@@ -7,7 +7,8 @@ url: /net/working-with-documents/
 date: "2020-10-12"
 description: This article describes to you what manipulations can be done with the document with the Aspose.PDF library.
 aliases:
-    - url: /net/working-with-document/
+    - /net/working-with-document/
+    - /pdf/net/working-with-document-facades/
 ---
 
 ## Articles in this section

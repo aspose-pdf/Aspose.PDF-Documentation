@@ -9,6 +9,7 @@ date: "2020-12-10"
 aliases:
     - /net/working-with-annotations/
     - /net/annotation/
+    - /net/working-with-annotations-facades/
 ---
 
 
