@@ -5,6 +5,7 @@ type: docs
 weight: 10
 url: /net/
 is_root: true
+lastmod: "2020-12-13"
 description: Learn to use Aspose.PDF .NET to create applications for PDF documents processing on any platform using C#, VB. Browse tutorials, sample code, and more.
 aliases:
     - /pdf/net/working-with-aspose-pdf/
