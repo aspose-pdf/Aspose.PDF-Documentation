@@ -1,5 +1,5 @@
 ---
-title: Get Started
+title: Get Started with Aspose.PDF for .NET
 type: docs
 weight: 30
 url: /net/get-started/
@@ -12,6 +12,6 @@ aliases:
 ## Articles in this section
 
 - [Basics of DOM API](/pdf/net/basics-of-dom-api/)
-- ["Hello, World" Example](/pdf/net/hello-world/)
-- [Complex PDF](/pdf/net/complex-pdf/)
+- ["Hello, World" Example](/pdf/net/hello-world-example/)
+- [Complex PDF](/pdf/net/complex-pdf-example/)
 - [How to run other examples](/pdf/net/how-to-run-other-examples/)
