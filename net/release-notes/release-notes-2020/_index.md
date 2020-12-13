@@ -6,6 +6,7 @@ url: /net/release-notes-2020/
 ---
 
 ## **Release Notes - 2020**
+
 - [Aspose.PDF for .NET 20.12 Release Notes](/pdf/net/aspose-pdf-for-net-20-12-release-notes/)
 - [Aspose.PDF for .NET 20.11 Release Notes](/pdf/net/aspose-pdf-for-net-20-11-release-notes/)
 - [Aspose.PDF for .NET 20.10 Release Notes](/pdf/net/aspose-pdf-for-net-20-10-release-notes/)

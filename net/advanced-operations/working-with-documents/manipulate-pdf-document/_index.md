@@ -29,6 +29,7 @@ Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
 // Validate PDF for PDF/A-1a
 pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1A);
 ```
+
 The following code snippet shows you how to validate PDF document for PDF/A-1b.
 
 ```csharp
@@ -42,6 +43,7 @@ Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
 // Validate PDF for PDF/A-1a
 pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
 ```
+
 {{% alert color="primary" %}}
 
 Aspose.PDF for .NET can be used to determine if the loaded document is a valid PDF and also [if its encrypted or not](https://docs.aspose.com/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/). In order to further extend the capabilities of Document class, *IsPdfaCompliant* property is added to determine if the input file is PDF/A compliant and a property named *PdfaFormat* to identify the PDF/A format are introduced.
