@@ -10,7 +10,7 @@ description: Aspose.PDF for .NET can perform not only simple and easy tasks but 
 
 You'll learn different ways to:
 
-- [Working with Document](/pdf/net/working-with-document/) - compress, split, and merge documents and make other operations with the whole document.
+- [Working with Documents](/pdf/net/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
 - [Working with Pages](/pdf/net/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps
 - [Working with Text](/pdf/net/working-with-text/) - add, format, search and replace text in PDF
 - [Working with Images](/pdf/net/working-with-images/) - insert, remove, extract image in document
