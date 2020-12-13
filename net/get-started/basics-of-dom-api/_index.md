@@ -1,5 +1,6 @@
 ---
-title: Basics of DOM API
+title: Basics of Aspose.PDF DOM API
+linktitle: Basics of DOM API
 type: docs
 weight: 10
 url: /net/basics-of-dom-api/
