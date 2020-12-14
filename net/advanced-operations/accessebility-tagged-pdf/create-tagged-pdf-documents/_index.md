@@ -1,10 +1,14 @@
 ---
-title: Create Tagged PDF Documents 
+title: Create Tagged PDF Documents using Aspose.PDF for .NET
+linktitle: Create Tagged PDF Documents 
 type: docs
 weight: 10
+lastmod: "2020-12-14"
 url: /net/create-tagged-pdf-documents/
-description: This section explains how to create structure elements for tagged PDF document by using Aspose.PDF for .NET
+description: This article explains how to create structure elements for tagged PDF document by using Aspose.PDF for .NET
 ---
+
+
 
 ## Creating Structure Elements
 
