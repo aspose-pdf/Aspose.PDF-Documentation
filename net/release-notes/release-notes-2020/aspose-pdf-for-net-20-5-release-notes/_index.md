@@ -1,8 +1,10 @@
 ---
 title: Aspose.PDF for .NET 20.5 Release Notes
+linktitle: Aspose.PDF for .NET 20.5
 type: docs
 weight: 80
 url: /net/aspose-pdf-for-net-20-5-release-notes/
+lastmod: "2020-12-14"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.5. 
 ---
 
@@ -11,7 +13,8 @@ description: This page contains new Aspose.PDF for .NET features, enhancement, a
 This page contains release notes information for Aspose.PDF for .NET 20.5.
 
 {{% /alert %}} 
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -31,6 +34,9 @@ This page contains release notes information for Aspose.PDF for .NET 20.5.
 |PDFNET-47842|Rendering issue while converting PDF to XPS|Bug|
 |PDFNET-47849|When table.GetWidth(); is used the table is moved to the right|Bug|
 |PDFNET-48020 |Javascript validation is not working after merging the PDF documents|Bug|
-## **Public API and Backward Incompatible Changes**
-### **Added APIs**
-- Enumeration member: Aspose.Pdf.DocSaveOptions.RecognitionMode.EnhancedFlow
+
+## Public API and Backward Incompatible Changes
+
+### Added APIs
+
+* Enumeration member: Aspose.Pdf.DocSaveOptions.RecognitionMode.EnhancedFlow

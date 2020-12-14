@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 18.8 Release Notes
+linktitle: Aspose.PDF for .NET 18.8
 type: docs
 weight: 50
 url: /net/aspose-pdf-for-net-18-8-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.8. 
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +13,8 @@ url: /net/aspose-pdf-for-net-18-8-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 18.8](http://nuget.org/packages/Aspose.Pdf/18.8.0)
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -49,18 +53,20 @@ This page contains release notes for [Aspose.PDF for .NET 18.8](http://nuget.or
 |PDFNET-41857|PDF to PDF/A - Resultant file is not compliant|Bug|
 |PDFNET-44255|Text strikeout works incorrect in some scenarios of use multiline text fragments.|Bug|
 |PDFNET-37869|TextFragmentAbsrober throws exception:Index and <br>length must refer to a location within the string|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.8**
+
+## Public API changes in Aspose.PDF for .NET 18.8
 
 
 {{% alert color="primary" %}} 
 
 FontSubsetStrategy enumeration has been moved under Aspose.Pdf namespace.
+
 {{% /alert %}} 
 
------
-### **Added APIs:**
-Method Aspose.Pdf.ImagePlacement.Replace(System.IO.Stream)
+### Added APIs:
 
-Property Aspose.Pdf.PptxSaveOptions.RecognizeTextColumns
+* Method Aspose.Pdf.ImagePlacement.Replace(System.IO.Stream)
 
-Method Aspose.Pdf.XImage.ToStream
+* Property Aspose.Pdf.PptxSaveOptions.RecognizeTextColumns
+
+* Method Aspose.Pdf.XImage.ToStream

@@ -1,8 +1,10 @@
 ---
 title: Aspose.PDF for .NET 20.11 Release Notes
+linktitle: Aspose.PDF for .NET 20.11
 type: docs
 weight: 30
 url: /net/aspose-pdf-for-net-20-11-release-notes/
+lastmod: "2020-12-14"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.11. 
 ---
 
@@ -11,7 +13,8 @@ description: This page contains new Aspose.PDF for .NET features, enhancement, a
 This page contains release notes information for Aspose.PDF for .NET 20.11.
 
 {{% /alert %}}
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -44,9 +47,10 @@ This page contains release notes information for Aspose.PDF for .NET 20.11.
 |PDFNET-43666|Loading particular HTML file takes too long and all available memory|Bug|
 |PDFNET-48948|Security exploit found Aspose.PDF|Bug|
 
-## Public API and Backward Incompatible Changes ##
+## Public API and Backward Incompatible Changes 
 
-### Added APIs ###
+### Added APIs 
+
 * Enumeration Aspose.Pdf.AFRelationship
 * Enumeration member Aspose.Pdf.AFRelationship.Source
 * Enumeration member Aspose.Pdf.AFRelationship.Data

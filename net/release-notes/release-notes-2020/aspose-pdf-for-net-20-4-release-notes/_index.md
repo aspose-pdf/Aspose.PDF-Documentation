@@ -1,8 +1,10 @@
 ---
 title: Aspose.PDF for .NET 20.4 Release Notes
+linktitle: Aspose.PDF for .NET 20.4
 type: docs
 weight: 90
 url: /net/aspose-pdf-for-net-20-4-release-notes/
+lastmod: "2020-12-14"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.4. 
 ---
 
@@ -11,7 +13,8 @@ description: This page contains new Aspose.PDF for .NET features, enhancement, a
 This page contains release notes information for Aspose.PDF for .NET 20.4.
 
 {{% /alert %}} 
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -33,10 +36,15 @@ This page contains release notes information for Aspose.PDF for .NET 20.4.
 |PDFNET-46414|HTML to PDF - Table is missing in output PDF|Bug|
 |PDFNET-47878|Exception on converting HTML to PDF|Bug|
 |PDFNET-44330|NullReference exception on flattening fields|Bug|
-## **Public API and Backward Incompatible Changes**
-### **Added APIs**
-- Property Aspose.Pdf.Cell.BackgroundImage
-### **Removed APIs**
-- Class Aspose.Pdf.LatexLoadOptions is renamed to Aspose.Pdf.TeXLoadOptions (Aspose.Pdf.LatexLoadOptions is declared obsolete)
-- Class Aspose.Pdf.LaTeXSaveOptions is renamed to Aspose.Pdf.TeXSaveOptions (Aspose.Pdf.LaTeXSaveOptions is declared obsolete)
-- Class Aspose.Pdf.LatexFragment    is renamed to Aspose.Pdf.TeXFragment (Aspose.Pdf.LatexFragment is declared obsolete)
+
+## Public API and Backward Incompatible Changes
+
+### Added APIs
+
+* Property Aspose.Pdf.Cell.BackgroundImage
+
+### Removed APIs
+
+* Class Aspose.Pdf.LatexLoadOptions is renamed to Aspose.Pdf.TeXLoadOptions (Aspose.Pdf.LatexLoadOptions is declared obsolete)
+* Class Aspose.Pdf.LaTeXSaveOptions is renamed to Aspose.Pdf.TeXSaveOptions (Aspose.Pdf.LaTeXSaveOptions is declared obsolete)
+* Class Aspose.Pdf.LatexFragment    is renamed to Aspose.Pdf.TeXFragment (Aspose.Pdf.LatexFragment is declared obsolete)

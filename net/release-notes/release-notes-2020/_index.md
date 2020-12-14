@@ -7,7 +7,7 @@ lastmod: "2020-12-14"
 description: This section list all-new features, enhancement, and fixed bugs by Aspose.PDF for .NET library in 2020.
 ---
 
-## **Release Notes - 2020**
+Aspose PDF for .NET Release Notes list new features, enhancement, and fixed bugs that were made in 2020. 
 
 - [Aspose.PDF for .NET 20.12](/pdf/net/aspose-pdf-for-net-20-12-release-notes/)
 - [Aspose.PDF for .NET 20.11](/pdf/net/aspose-pdf-for-net-20-11-release-notes/)

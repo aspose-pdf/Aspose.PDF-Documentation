@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 18.12 Release Notes
+linktitle: Aspose.PDF for .NET 18.12
 type: docs
 weight: 10
 url: /net/aspose-pdf-for-net-18-12-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.12. 
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +13,8 @@ url: /net/aspose-pdf-for-net-18-12-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 18.12](https://www.nuget.org/packages/Aspose.Pdf/18.12.0)
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -48,9 +52,11 @@ This page contains release notes for [Aspose.PDF for .NET 18.12](https://www.nu
 |PDFNET-38307|Text Extraction - Text being extracted in weird manner. Columns merge and scrambled|Bug|
 |PDFNET-39534|Extracting table data throws ArgumentOutOfRangeException|Bug|
 |PDFNET-39377|TableAbsorber throws InvalidOperationException|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.12**
------
-### **Added APIs:**
+
+## Public API changes in Aspose.PDF for .NET 18.12
+
+### Added APIs:
+
 - Property Aspose.Pdf.Document.TaggedContent
 - Enumeration member Aspose.Pdf.ImageFilterType.Flate
 - Property Aspose.Pdf.Optimization.ImageCompressionOptions.Encoding

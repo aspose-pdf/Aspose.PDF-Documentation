@@ -1,8 +1,10 @@
 ---
 title: Aspose.PDF for .NET 20.1 Release Notes
+linktitle: Aspose.PDF for .NET 20.1 
 type: docs
 weight: 120
 url: /net/aspose-pdf-for-net-20-1-release-notes/
+lastmod: "2020-12-14"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.1. 
 ---
 
@@ -11,7 +13,8 @@ description: This page contains new Aspose.PDF for .NET features, enhancement, a
 This page contains release notes information for Aspose.PDF for .NET 20.1.
 
 {{% /alert %}} 
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -60,13 +63,15 @@ This page contains release notes information for Aspose.PDF for .NET 20.1.
 |PDFNET-47444 |TOC pages order backward|Bug|
 |PDFNET-43324|Cannot add hyperlink to Non-keyboard special characters|Bug|
 |PDFNET-43289 |PDF to XLS - Problem During Load|Bug|
-## **Public API and Backward Incompatible Changes**
-**Added APIs**
 
-- Enumeration Aspose.Pdf.ImageDeleteAction
-- Enumeration member Aspose.Pdf.ImageDeleteAction.None
-- Enumeration member Aspose.Pdf.ImageDeleteAction.ForceDelete
-- Enumeration member Aspose.Pdf.ImageDeleteAction.Check
-- Method Aspose.Pdf.XImageCollection.Delete(System.Int32,Aspose.Pdf.ImageDeleteAction)
-- Method Aspose.Pdf.XImageCollection.Delete(System.String,Aspose.Pdf.ImageDeleteAction)
-- Property Aspose.Pdf.Form.AutoRecalculate
+## Public API and Backward Incompatible Changes
+
+### Added APIs
+
+* Enumeration Aspose.Pdf.ImageDeleteAction
+* Enumeration member Aspose.Pdf.ImageDeleteAction.None
+* Enumeration member Aspose.Pdf.ImageDeleteAction.ForceDelete
+* Enumeration member Aspose.Pdf.ImageDeleteAction.Check
+* Method Aspose.Pdf.XImageCollection.Delete(System.Int32,Aspose.Pdf.ImageDeleteAction)
+* Method Aspose.Pdf.XImageCollection.Delete(System.String,Aspose.Pdf.ImageDeleteAction)
+* Property Aspose.Pdf.Form.AutoRecalculate

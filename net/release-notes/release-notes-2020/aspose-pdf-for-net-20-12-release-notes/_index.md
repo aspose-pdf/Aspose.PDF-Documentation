@@ -13,7 +13,8 @@ description: This page contains new Aspose.PDF for .NET features, enhancement, a
 This page contains release notes information for Aspose.PDF for .NET 20.12.
 
 {{% /alert %}}
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -46,11 +47,10 @@ This page contains release notes information for Aspose.PDF for .NET 20.12.
 |PDFNET-49074|Anchor Tag in HtmlFragment is not working when adding in FloatingBox|Bug|
 |PDFNET-48777|[Regression] - TextSegments ignore TextState formatting and keep their parent TextFragment Styling|Bug|
 
+## Public API and Backward Incompatible Changes 
 
+### Added APIs 
 
-## Public API and Backward Incompatible Changes ##
-
-### Added APIs ###
 * Method Aspose.Pdf.XImageCollection.Replace(System.Int32,System.IO.Stream,System.Int32,System.Boolean)
 * Enumeration member Aspose.Pdf.ExcelSaveOptions.ExcelFormat.XLSM
 * Enumeration member Aspose.Pdf.ExcelSaveOptions.ExcelFormat.ODS

@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 19.3 Release Notes
+linktitle: Aspose.PDF for .NET 19.3
 type: docs
 weight: 100
 url: /net/aspose-pdf-for-net-19-3-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.3.
 ---
 
 {{% alert color="primary" %}} 
@@ -11,7 +14,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.3](https://www.nug
 
 {{% /alert %}} 
 
-**Improvements and Changes**
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -47,9 +50,11 @@ This page contains release notes for [Aspose.PDF for .NET 19.3](https://www.nug
 |PDFNET-38764|Text is not being replaced completely|Bug|
 |PDFNET-45049|Missing characters when saving PDF as HTML|Bug|
 |PDFNET-45924|PDF/UA: Validator doesn't recognize warning "Possibly <br/>inappropriate use ..." for text inline structure elements|Bug|
-### **Public API changes in Aspose.PDF for .NET 19.3**
------
-### **Added APIs:**
+
+### Public API changes in Aspose.PDF for .NET 19.3
+
+### Added APIs:
+
 - Property Aspose.Pdf.Annotations.RenditionAction.Rendition
 - P:Aspose.Pdf.Annotations.RenditionAction.RenditionOperation
 - Property Aspose.Pdf.Annotations.RenditionAction.JavaScript
