@@ -3,8 +3,11 @@ title: Convert PDF to Word
 type: docs
 weight: 270
 url: /net/convert-pdf-to-doc/
-description: Convert PDF file to DOC or DOCX format with ease and full control with Aspose.PDF for .NET. This pages shows a code snippet to accomplish this task. 
+lastmod: "2020-12-15"
+description: Convert PDF file to DOC or DOCX format with ease and full control with Aspose.PDF for .NET. This page shows a code snippet to accomplish this task. 
 ---
+
+One of the most popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. Aspose.PDF for .NET allows you to convert PDF files to DOC.
 
 ## Convert PDF to DOC (Word 97-2003) file
 
@@ -32,7 +35,6 @@ public static void ConvertPDFtoWord()
 
 }
 ```
-
 ### Using the DocSaveOptions Class
 
 The [`DocSaveOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class provides numerous properties that improve the process of converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can specify any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
@@ -84,9 +86,9 @@ public static void ConvertPDFtoWord_DOCX_Format()
 }
 ```
 
-The `DocSaveOptions` class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.
+The [`DocSaveOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.
 
-Please take a look over the following code snippet which provides the capability to convert PDF file to DOCX format.
+Please take a look over the following code snippet which provides the capability to convert PDF file to DOCX format with C#.
 
 ```csharp
 public static void ConvertPDFtoWord_Advanced_DOCX_Format()
