@@ -3,7 +3,8 @@ title: Convert HTML to PDF
 type: docs
 weight: 90
 url: /net/convert-html-to-pdf/
-description: You can convert html to PDF in a way convenient for you, in a quickly way and in an advanced way. Also, the way is described here Convert Web page to PDF. 
+lastmod: "2020-12-15"
+description: You can convert HTML to PDF in a way convenient for you, in a quick way, and in an advanced way. Also, the way is described here Convert Web page to PDF.
 ---
 
 The process of converting HTML to PDF can be flexibly customized.
