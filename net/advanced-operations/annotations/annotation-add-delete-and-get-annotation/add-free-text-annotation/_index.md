@@ -1,10 +1,39 @@
 ---
-title: Add Free text Annotation
+title: Add Free Text Annotation to PDF in C# using Aspose.PDF for .NET
+linktitle: Add Free Text Annotation
 type: docs
 weight: 30
 url: /net/add-free-text-annotation/
-description: You can add free text annotation with C#. It's possible to set Callout Property for FreeTextAnnotation and to set Callout Property for XFDF file with Aspose.PDF library.
+lastmod: "2020-12-14"
+description: This article teaches how to add Free Text Annotation to PDF in C# using Aspose.PDF for .NET. Learn more about how to set Callout for such annotation.
 ---
+
+## Add New (or Create) Free Text Annotation
+
+A free text annotation displays text directly on the page. The [PdfContentEditor.CreateFreeText](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) method allows creating this type of annotation. In the following snippet, we add free text annotation above the first occurrence of the string.
+
+```csharp
+private static void AddFreeTextAnnotationDemo()
+{
+    _document = new Document(@"C:\tmp\pdf-sample.pdf");
+    var pdfContentEditor = new PdfContentEditor(_document);
+    
+    tfa.Visit(_document.Pages[1]);
+    if (tfa.TextFragments.Count <= 0) return;
+    var rect = new System.Drawing.Rectangle
+    {
+        X = (int)tfa.TextFragments[1].Rectangle.LLX,
+        Y = (int)tfa.TextFragments[1].Rectangle.URY + 5,
+        Height = 18,
+        Width = 100
+    };
+
+    pdfContentEditor.CreateFreeText(rect, "Free Text Demo", 1); // last param is a page number
+    pdfContentEditor.Save(@"C:\tmp\pdf-sample-0.pdf");
+}
+```
+
+
 
 ## Set Callout Property for FreeTextAnnotation
 
