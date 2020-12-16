@@ -57,7 +57,7 @@ This page contains release notes information for Aspose.PDF for .NET 20.12.
 * Property Aspose.Pdf.Forms.Signature.OcspSettings
 * Property Aspose.Pdf.Forms.Signature.UseLtv
 * Property Aspose.Pdf.OcspSettings
-* Constructror Aspose.Pdf.OcspSettings(System.String)
+* Constructor Aspose.Pdf.OcspSettings(System.String)
 * Property Aspose.Pdf.OcspSettings.ServerUrl
 * Property Aspose.Pdf.Text.MarkupParagraph.SecondaryPoints
 * Property Aspose.Pdf.Text.MarkupParagraph.ContinuationPageNumbers
