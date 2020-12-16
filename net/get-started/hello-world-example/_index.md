@@ -2,7 +2,7 @@
 title: Hello World Example
 type: docs
 weight: 20
-url: /net/hello-world/
+url: /net/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World. 
 ---
 
@@ -21,7 +21,6 @@ Below code snippet follows these steps:
 Following code snippet is a Hello World program to exhibit working of Aspose.PDF for .NET API.
 
 ```csharp
-// source: https://github.com/andruhovski/Examples/blob/master/Aspose.Pdf.Examples/ExampleGetStarted.cs
 namespace Aspose.Pdf.Examples
 {
     public static class ExampleGetStarted

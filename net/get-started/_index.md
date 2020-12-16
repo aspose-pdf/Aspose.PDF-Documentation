@@ -1,14 +1,17 @@
 ---
-title: Get Started
+title: Get Started with Aspose.PDF for .NET
 type: docs
 weight: 30
 url: /net/get-started/
 description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document.
+is_node: true
+aliases:
+    - /net/getting-started/
 ---
 
 ## Articles in this section
 
 - [Basics of DOM API](/pdf/net/basics-of-dom-api/)
-- ["Hello, World" Example](/pdf/net/hello-world/)
+- ["Hello, World" Example](/pdf/net/hello-world-example/)
+- [Complex PDF](/pdf/net/complex-pdf-example/)
 - [How to run other examples](/pdf/net/how-to-run-other-examples/)
-- [Complex PDF](/pdf/net/complex-pdf/)

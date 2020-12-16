@@ -3,8 +3,9 @@ title: Release Notes - 2020
 type: docs
 weight: 10
 url: /net/release-notes-2020/
-description: This page contains the Release Notes information for Aspose.PDF for .NET in 2020. This is a list of new Aspose.PDF for .NET features, enhancement, and bug fixes.
 ---
+
+## **Release Notes - 2020**
 
 - [Aspose.PDF for .NET 20.12 Release Notes](/pdf/net/aspose-pdf-for-net-20-12-release-notes/)
 - [Aspose.PDF for .NET 20.11 Release Notes](/pdf/net/aspose-pdf-for-net-20-11-release-notes/)

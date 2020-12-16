@@ -1,7 +1,8 @@
 ---
-title: PDF File Metadata 
+title: Working with PDF File Metadata in Aspose.PDF for .NET
+linktitle: PDF File Metadata 
 type: docs
-weight: 120
+weight: 140
 url: /net/pdf-file-metadata/
 description: This section explains how to get PDF file information, how to get XMP Metadata from a PDF file, set PDF File Information.
 ---

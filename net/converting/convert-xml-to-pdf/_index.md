@@ -4,9 +4,11 @@ type: docs
 weight: 70
 url: /net/convert-xml-to-pdf/
 description: Aspose.PDF library presents several ways to convert XML to PDF. The first is a simple conversion with XslFoLoadOptions, and the second way is using incorrect file structure.
+aliases:
+    - /pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/xml-to-pdf](https://products.aspose.app/pdf/conversion/xml-to-pdf)
 

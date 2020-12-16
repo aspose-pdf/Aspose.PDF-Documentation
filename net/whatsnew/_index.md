@@ -4,6 +4,9 @@ type: docs
 weight: 10
 url: /net/whatsnew/
 description: In this page introduces the most popular new features in Aspose.PDF for .NET that have been introduced in recent releases.
+sitemap:
+    changefreq: "monthly"
+    priority: 0.8
 ---
 
 ## What's new in Aspose.PDF 20.11

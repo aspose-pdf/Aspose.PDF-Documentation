@@ -1,9 +1,14 @@
 ---
-title: Working with Document 
+title: Working with Documents in Aspose.PDF for .NET 
+linktitle: Working with Documents
 type: docs
-weight: 110
-url: /net/working-with-document/
+weight: 10
+url: /net/working-with-documents/
+date: "2020-10-12"
 description: This article describes to you what manipulations can be done with the document with the Aspose.PDF library.
+aliases:
+    - /net/working-with-document/
+    - /pdf/net/working-with-document-facades/
 ---
 
 ## Articles in this section
@@ -12,4 +17,4 @@ description: This article describes to you what manipulations can be done with t
 - [Manipulate PDF Document](/pdf/net/manipulate-pdf-document/)
 - [Optimize PDF Document](/pdf/net/optimize-pdf-document/)
 - [Split document](/pdf/net/split-document/)
-- [Merge document](/pdf/net/merge-document/)
+- [Merge document](/net/merge-pdf-documents/)
