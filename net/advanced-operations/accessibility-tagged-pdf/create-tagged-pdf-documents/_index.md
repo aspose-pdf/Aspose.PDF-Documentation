@@ -5,10 +5,10 @@ type: docs
 weight: 10
 lastmod: "2020-12-14"
 url: /net/create-tagged-pdf-documents/
-description: This article explains how to create structure elements for tagged PDF document by using Aspose.PDF for .NET
+description: This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for .NET. 
 ---
 
-
+Creating a Tagged PDF means adding (or creating) certain elements to the document that will enable the document to be validated in accordance with PDF/UA requirements. These elements are called often Structure Elements.
 
 ## Creating Structure Elements
 

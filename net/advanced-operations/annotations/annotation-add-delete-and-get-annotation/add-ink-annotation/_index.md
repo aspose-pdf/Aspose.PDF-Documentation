@@ -1,9 +1,11 @@
 ---
-title: Add InkAnnotation
+title: How to Add Ink Annotation with C# using Aspose.PDF for .NET
+linktitle: Ink Annotation
 type: docs
 weight: 100
 url: /net/add-ink-annotation/
-description: This page describes how to add an InkAnnotation to a PDF file. Also, you can set the line width of InkAnnotation.
+description: This page describes how to add an Ink Annotation to a PDF file. Also, you can customize the Ink Annotation.
+lastmod: "2020-12-16"
 ---
 
 An Ink Annotation represents a freehand "scribble" composed of one or more disjoint paths. When opened, it shall display a pop-up window containing the text of the associated note.

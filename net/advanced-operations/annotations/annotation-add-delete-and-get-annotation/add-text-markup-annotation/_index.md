@@ -6,9 +6,9 @@ url: /net/add-text-markup-annotation/
 description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
 ---
 
-Text Markup Annotations shall appear as highlights, underlines, strikeouts, or jagged (“squiggly”) underlines in the text of a document. When opened, they shall display a pop-up window containing the text of the associated note. 
+Text Markup Annotations shall appear as highlights, underlines, strikeouts, or jagged (“squiggly”) underlines in the text of a document. When opened, they shall display a pop-up window containing the text of the associated note.
 
-The properties of the text markup annotations in the PDF document can be edited using the properties window provided in the PDF viewer control. The color, opacity, author, and subject of the text markup annotation can be modified. 
+The properties of the text markup annotations in the PDF document can be edited using the properties window provided in the PDF viewer control. The color, opacity, author, and subject of the text markup annotation can be modified.
 
 Its is possible to get or set the settings of the highlight annotations using the highlightSettings property. The highlightSettings property is used to set the color, opacity, author, subject, modifiedDate and isLocked properties of the highlight annotations.
 
@@ -18,18 +18,13 @@ The next feature is the ability to get or set the settings of the underline anno
 
 In order to add an Text Markup Annotation to the PDF document, we need to perform the following actions:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
-2. Create annotations: 
-
-- [HighlightAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) and set parameters (title, color).
-
-- [StrikeOutAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) and set parameters (title, color).
-
-- [SquigglyAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) and set parameters (title, color).
-
-- [UnderlineAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) and set parameters (title, color).
-
-3. After we should add all annotations to the page. 
+1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
+1. Create annotations:
+    - [HighlightAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) and set parameters (title, color).
+    - [StrikeOutAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) and set parameters (title, color).
+    - [SquigglyAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) and set parameters (title, color).
+    - [UnderlineAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) and set parameters (title, color).
+1. After we should add all annotations to the page.
 
 ```csharp
 using Aspose.Pdf.Annotations;
