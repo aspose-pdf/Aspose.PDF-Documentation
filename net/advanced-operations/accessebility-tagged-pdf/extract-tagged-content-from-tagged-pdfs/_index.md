@@ -1,10 +1,12 @@
 ---
-title: Extract Tagged Content from Tagged PDFs
+title: Extract Tagged Content from Tagged PDFs using Aspose.PDF for .NET
+linktitle: Extract Tagged Content from Tagged PDFs
 type: docs
 weight: 20
 url: /net/extract-tagged-content-from-tagged-pdfs/
-description: This section explains how to extract tagged content PDF document by using Aspose.PDF for .NET
+description: This article explains how to extract tagged content PDF document by using Aspose.PDF for .NET
 ---
+
 
 ## Getting Tagged PDF Content
 
