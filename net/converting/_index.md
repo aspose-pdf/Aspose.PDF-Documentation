@@ -10,7 +10,7 @@ aliases:
     - net/working-with-document-conversion/
 ---
 
-Aspose.PDF allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app.
+Aspose.PDF for .NET allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app.
 
 | Convert XXX to PDF | Convert PDF to XXX |
 | :---------------- | :------------------ |

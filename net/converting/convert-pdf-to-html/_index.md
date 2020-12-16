@@ -3,21 +3,21 @@ title: Convert PDF to HTML
 type: docs
 weight: 320
 url: /net/convert-pdf-to-html/
-description: This article describes how to convert a PDF file into HTML. Aspose.PDF for .NET provides the capability to convert HTML files into PDF format using the InLineHtml approach.
+lastmod: "2020-12-16"
+description: This article describes how to convert a PDF file into HTML. Aspose.PDF for .NET provides the capability to convert HTML files into PDF format.
 ---
 
 Aspose.PDF for .NET provides many features for converting various file formats into PDF documents and converting PDF files into various output formats. This article discusses how to convert a PDF file into HTML. Aspose.PDF for .NET provides the capability to convert HTML files into PDF format using the InLineHtml approach. We have had many requests for functionality that converts a PDF file into HTML format and have provided this feature. Please note that this feature also supports XHTML 1.0.
 
-- Convert PDF to HTML
-- Splitting Output to Multi-page HTML
-- Specify Folder for Storing SVG Files
-- Compressing SVG Images During Conversion
-- Specifying the Images Folder
-- Create Subsequent Files with Body Contents Only
-- Transparent Text rendering
-- PDF document layers rendering
-
-## Convert PDF to HTML
+**Aspose.PDF for .NET** support the features  to convert a PDF file into HTML. The main tasks you can accomplish with the Aspose.PDF library are listed:
+- сonvert PDF to HTML;
+- splitting Output to Multi-page HTML;
+- specify Folder for Storing SVG Files;
+- compressing SVG Images During Conversion;
+- specifying the Images Folder;
+- create Subsequent Files with Body Contents Only;
+- transparent Text rendering;
+- PDF document layers rendering.
 
 {{% alert color="primary" %}}
 

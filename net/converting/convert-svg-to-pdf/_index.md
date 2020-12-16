@@ -3,12 +3,15 @@ title: Convert SVG to PDF
 type: docs
 weight: 180
 url: /net/convert-svg-to-pdf/
-description: This page describes the possibility of converting SVG files to PDF, use the class named SvgLoadOptions. Also, this article describes how to get SVG dimensions and overview SVG Supported Features.
+lastmod: "2020-12-16"
+description: This page shows the possibility of converting SVG  to PDF with Aspose.PDF and describes how to get SVG dimensions and overview SVG Supported Features.
 ---
+
+**Aspose.PDF for .NET** explains how to convert SVG images to PDF format and how to get dimensions of the source SVG file. 
 
 Scalable Vector Graphics (SVG) is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
 
-SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted and, if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
+SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
 
 {{% alert color="primary" %}} 
 
@@ -22,7 +25,7 @@ To convert SVG files to PDF, use the class named [SvgLoadOptions](https://apiref
 1. Create an instance of [`Document`](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
 1. Save the document with the desired file name.
 
-The following code snippet shows the process of converting SVG file into PDF format.
+The following code snippet shows the process of converting SVG file into PDF format with Aspose.PDF for .NET.
 
 ```csharp
 public static void ConvertSVGtoPDF()
@@ -35,7 +38,7 @@ public static void ConvertSVGtoPDF()
 
 ## Get SVG dimensions
 
-It is also possible to get the dimensions of the source SVG file. This information can be useful if we want the SVG to cover the entire page of the output PDF. The ScgLoadOption class' AdjustPageSize property fulfills this requirement. The default value of this property is false. If the value is set to true, the output PDF will have same size (dimensions) as the source SVG.
+It is also possible to get the dimensions of the source SVG file. This information can be useful if we want the SVG to cover the entire page of the output PDF. The ScgLoadOption class' AdjustPageSize property fulfills this requirement. The default value of this property is false. If the value is set to true, the output PDF will have the same size (dimensions) as the source SVG.
 
 The following code snippet shows the process of getting the source SVG file's dimensions and generating a PDF file.
 
