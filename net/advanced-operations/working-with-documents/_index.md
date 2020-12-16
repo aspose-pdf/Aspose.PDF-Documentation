@@ -17,4 +17,4 @@ aliases:
 - [Manipulate PDF Document](/pdf/net/manipulate-pdf-document/)
 - [Optimize PDF Document](/pdf/net/optimize-pdf-document/)
 - [Split document](/pdf/net/split-document/)
-- [Merge document](/net/merge-pdf-documents/)
+- [Merge document](/pdf/net/merge-pdf-documents/)

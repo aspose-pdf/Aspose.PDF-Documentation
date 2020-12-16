@@ -22,7 +22,7 @@ You'll learn different ways to:
 - [Annotations](/pdf/net/annotations/) - Annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
 - [Artifacts](/pdf/net/artifacts/) - deal with watermarks and other special objects in PDF
 - [Accessibility. Tagged PDF](/pdf/net/accessibility-tagged-pdf/) - Tagging is essential for PDF accessibility. Aspose.PDF allows to add tags into PDF and establish logical reading order and to provide a means for indicating structure and type.
-- [Attachments](/pdf/net/attachments/) - PDF documents may contain file attachments. These attachments can be other PDF documents, or any kind of file, like audio files, Microsoft Office documents etc.  You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with C#.
+- [Attachments](/pdf/net/attachments/) - PDF documents may contain file attachments. These attachments can be other PDF documents, or any kind of file, like audio files, Microsoft Office documents etc. You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with C#.
 - [Metadata in PDFs](/pdf/net/pdf-file-metadata/) - get or set meta data in documents, dealing with XMP data.
 - [Securing and Signing](/pdf/net/securing-and-signing/) - protect and sign your PDF document programmatically
 - [Printing Document](/pdf/net/printing-document/) - print PDFs in various types of applications (WinForms, WPF, etc.)
