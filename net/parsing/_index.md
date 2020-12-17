@@ -12,3 +12,4 @@ Parsing PDF documents is a term releated to extraction variuous kind of informat
 - [Extract Images from PDF](/pdf/net/extract-images-from-the-pdf-file/). Image Extraction does the same for images as the operation above for text.
 - [Extract Fonts from PDF](/pdf/net/extract-fonts-from-pdf/). Font Extraction is a specific operation with fonts in PDFs.
 - [Extract Data from the Form](/pdf/net/extract-data-from-acroform/). If you have a bunch of PDF documents with Forms, probably you need to get the data from those forms. This article will help to understand how to extract AcroForms data with Aspose.PDF for .NET
+
