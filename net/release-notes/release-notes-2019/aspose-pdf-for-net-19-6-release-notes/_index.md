@@ -1,13 +1,12 @@
 ---
 title: Aspose.PDF for .NET 19.6 Release Notes
+linktitle: Aspose.PDF for .NET 19.6
 type: docs
 weight: 70
 url: /net/aspose-pdf-for-net-19-6-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.6.
 ---
-
-
-
-
 
 {{% alert color="primary" %}} 
 
@@ -15,7 +14,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.6](https://www.nug
 
 {{% /alert %}} 
 
-**Improvements and Changes** 
+## Improvements and Changes 
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -48,9 +47,11 @@ This page contains release notes for [Aspose.PDF for .NET 19.6](https://www.nug
 |PDFNET-43761|SVG to PDF - ArgumentException: Rectangle cannot have a width or height equal to 0|Bug|
 |PDFNET-44011|Incorrect pages count for EPUB documents|Bug|
 |PDFNET-46222|The text stamp is wrongly treated as a part of the<br/> text paragraph during post-replace adjustment.|Bug|
-### **Public API changes in Aspose.PDF for .NET 19.6**
------
-### **Added APIs:**
+
+## Public API changes in Aspose.PDF for .NET 19.6
+
+### Added APIs:
+
 - P:Aspose.Pdf.Annotations.FreeTextAnnotation.Callout
 - Method Aspose.Pdf.Document.ExportAnnotationsToXfdf(System.IO.Stream)
 - Method Aspose.Pdf.Document.ImportAnnotationsFromXfdf(System.IO.Stream)

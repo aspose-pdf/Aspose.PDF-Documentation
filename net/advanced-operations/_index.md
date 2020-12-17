@@ -15,7 +15,7 @@ You'll learn different ways to:
 - [Working with Text](/pdf/net/working-with-text/) - add, format, search and replace text in PDF
 - [Working with Images](/pdf/net/working-with-images/) - insert, remove, extract image in document
 - [Working with Tables](/pdf/net/working-with-tables/) - insert, decorate table in PDF, extract tabular data
-- [Working with Forms](/pdf/net/working-with-forms/) - deal with interact PDFF documents, add formfields, extract data
+- [Working with Forms](/pdf/net/working-with-forms/) - deal with interact PDF documents, add formfields, extract data
 - [Working with Graphs](/pdf/net/graphs/) - manipulate with shapes on the page
 - [Working with XML](/pdf/net/working-with-xml) - construct PDF documents based on the XML structure
 - [Navigation and Interaction](/pdf/net/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages

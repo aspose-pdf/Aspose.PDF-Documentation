@@ -1,5 +1,6 @@
 ---
-title: Overview of Annotations
+title: Overview of Annotations supported by Aspose.PDF for .NET 
+linktitle: Overview of Annotations 
 type: docs
 weight: 10
 url: /net/overview-of-annotations/
@@ -29,7 +30,6 @@ The following table indicates the Annotation types that Aspose.PDF for .NET supp
 |[Sound](/pdf/net/add-multimedia-annotation/)|(PDF 1.2) Sound annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Movie](/pdf/net/add-multimedia-annotation/)|(PDF 1.2) Movie annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Widget](/pdf/net/add-widget-annotation/)|(PDF 1.2) Widget annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Screen](/pdf/net/add-screen-annotation/)|(PDF 1.5) Screen annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Screen](/pdf//net/add-multimedia-annotation/)|(PDF 1.5) Screen annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Watermark](/pdf/net/add-watermarkannotation/)|(PDF 1.6) Watermark annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Redact](/pdf/net/redact-certain-page-region-with-redactionannotation/)|(PDF 1.7) Redact annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-

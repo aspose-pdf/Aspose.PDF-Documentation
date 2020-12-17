@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 19.12 Release Notes
+linktitle: Aspose.PDF for .NET 19.12
 type: docs
 weight: 10
 url: /net/aspose-pdf-for-net-19-12-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.12.
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +13,8 @@ url: /net/aspose-pdf-for-net-19-12-release-notes/
 This page contains release notes information for [Aspose.PDF for .NET 19.12](https://www.nuget.org/packages/Aspose.Pdf/19.12.0).
 
 {{% /alert %}} 
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -54,6 +58,9 @@ This page contains release notes information for [Aspose.PDF for .NET 19.12](htt
 |PDFNET-47228|PDF to Word - System.ArgumentNullException exception occurs|Bug|
 |PDFNET-47246|Exception when accessing page annotations of PDF document with 3D object|Bug|
 |PDFNET-47381|License file reports System.InvalidOperationException: The license is not valid for this product|Bug|
-## **Public API and Backward Incompatible Changes**
-### **Added APIs**
-- Property Aspose.Pdf.Optimization.OptimizationOptions.SubsetFonts
+
+## Public API and Backward Incompatible Changes
+
+### Added APIs
+
+* Property Aspose.Pdf.Optimization.OptimizationOptions.SubsetFonts

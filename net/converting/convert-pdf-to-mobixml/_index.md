@@ -3,12 +3,13 @@ title: Convert PDF to MobiXML
 type: docs
 weight: 220
 url: /net/convert-pdf-to-mobixml/
+lastmod: "2020-12-16"
 description: It is possible to convert PDF documents to XML using Aspose.PDF library. You may use the code snippet for successfully converting these files.
 ---
 
-## Convert PDF to XML
-
 With Aspose.PDF for .NET, it is possible to convert PDF documents to XML. The XML schema corresponds to the ebook **MobiXML** standard: 
+
+## Convert PDF to XML with C#
 
 ### Schema
 
@@ -74,7 +75,7 @@ XML is formed in accordance with the DTD schema specified below:
 </xs:schema>
 ```
 
-The following code snippet shows the process of converting a PDF file to XML (MobiXML) format.
+The following code snippet shows the process of converting a PDF file to XML (MobiXML) format with Aspose.PDF for .NET:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -89,3 +90,5 @@ doc.Save(dataDir + "PDFToXML_out.xml", SaveFormat.MobiXml);
 Once the PDF file is **converted to XML** format, we need to verify that either the conversion is correctly performed or not. In order to cater this requirement, we have created a utility to convert XML contents to XPS format. Please find attached the AsposeMobiXmlToXpsConverter.zip archive which contains AsposeMobiXmlToXpsConverter.exe utility to convert MobiXML file to XPS format. The resultant .xps file can be viewed with any XPS-viewer to ensure that MobiXML files generated with Aspose.PDF for .NET are correct. In attached .zip package, you can find a file *start.bat* which contains the path for AsposeMobiXmlToXpsConverter.exe utility and the path of input XML, which is provided as an argument to this utility.
 
 In case the source PDF contains images, they are represented as separate files (filename_picN.jpg|png) in the directory where output xml is created. Also the fonts are represented as True Type fonts and corresponding files (filename_fontN.ttf) are created along the output XML. Where N is order number (1, 2, ...).
+
+Use **Aspose.PDF for .NET** to resolve your tasks during converting  PDF files to MobiXML format.

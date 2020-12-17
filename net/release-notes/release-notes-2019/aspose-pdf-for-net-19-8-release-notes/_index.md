@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 19.8 Release Notes
+linktitle: Aspose.PDF for .NET 19.8
 type: docs
 weight: 50
 url: /net/aspose-pdf-for-net-19-8-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.8.
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +13,8 @@ url: /net/aspose-pdf-for-net-19-8-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 19.8](https://www.nuget.org/packages/Aspose.Pdf/19.8.0)
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -57,10 +61,13 @@ This page contains release notes for [Aspose.PDF for .NET 19.8](https://www.nug
 |PDFNET-42023|Redacting the word, rest of the sentence moves towards the left|Bug|
 |PDFNET-44779|Aspose.Pdf: PostScript document loading error|Bug|
 |PDFNET-46261|PDF to HTML - content is not full width|Bug|
-### **Public API changes in Aspose.PDF for .NET 19.8**
------
+
+## Public API changes in Aspose.PDF for .NET 19.8
+
 See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for .NET. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf).
-### **Added APIs:**
+
+## Added APIs:
+
 - Property Aspose.Pdf.HtmlSaveOptions.FlowLayoutParagraphFullWidth
 
 

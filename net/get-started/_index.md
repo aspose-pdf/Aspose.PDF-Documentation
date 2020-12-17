@@ -1,5 +1,6 @@
 ---
 title: Get Started with Aspose.PDF for .NET
+linktitle: Get Started
 type: docs
 weight: 30
 url: /net/get-started/
@@ -7,6 +8,7 @@ description: This section describes the basic principles of work and using DOM A
 is_node: true
 aliases:
     - /net/getting-started/
+lastmod: "2020-12-16"    
 ---
 
 ## Articles in this section

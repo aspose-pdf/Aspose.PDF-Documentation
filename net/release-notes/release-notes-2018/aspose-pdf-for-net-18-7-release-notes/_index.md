@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 18.7 Release Notes
+linktitle: Aspose.PDF for .NET 18.7
 type: docs
 weight: 60
 url: /net/aspose-pdf-for-net-18-7-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.7. 
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +13,8 @@ url: /net/aspose-pdf-for-net-18-7-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 18.7](http://nuget.org/packages/Aspose.Pdf/18.7.0)
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -52,37 +56,40 @@ This page contains release notes for [Aspose.PDF for .NET 18.7](http://nuget.or
 |PDFNET-37667|Text is not being extracted correctly.|Bug|
 |PDFNET-44006|Getting Garbage Characters after setting Font property 'IsEmbedded=true'|Bug|
 |PDFNET-36968|Searching/replacing of text with character spacing is not supported|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.7**
-### **Added APIs:**
------
-Class Aspose.Pdf.Drawing.GradientRadialShading
-Constructor Aspose.Pdf.Drawing.GradientRadialShading
-Constructor Aspose.Pdf.Drawing.GradientRadialShading(Aspose.Pdf.Color,Aspose.Pdf.Color)
-Property Aspose.Pdf.Drawing.GradientRadialShading.Start
-Property Aspose.Pdf.Drawing.GradientRadialShading.End
-Property Aspose.Pdf.Drawing.GradientRadialShading.StartingRadius
-Property Aspose.Pdf.Drawing.GradientRadialShading.EndingRadius
-Property Aspose.Pdf.Drawing.GradientRadialShading.StartColor
-Property Aspose.Pdf.Drawing.GradientRadialShading.EndColor
-Method Aspose.Pdf.TaggedPdf.TaggedPdfContent.Add(Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement)
-Method Aspose.Pdf.TaggedPdf.TaggedPdfDocumentElement.Add(Aspose.Pdf.Page,Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement)
-Class Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement
-Constructor Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement(Aspose.Pdf.Document,Aspose.Pdf.Image,Aspose.Pdf.Rectangle)
-Property Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement.Page
-Property Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement.Tag
-Constructor Aspose.Pdf.TaggedPdf.TaggedPdfTextElement(Aspose.Pdf.Document,System.String,System.String,Aspose.Pdf.Text.TextState)
-Method Aspose.Pdf.TaggedPdf.TaggedPdfContent.Add(Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement)
-Method Aspose.Pdf.TaggedPdf.TaggedPdfDocumentElement.Add(Aspose.Pdf.Page,Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement)
-Class Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement
-Constructor Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement(Aspose.Pdf.Document,Aspose.Pdf.Image,Aspose.Pdf.Rectangle)
-Property Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement.Page
-Property Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement.Tag
-Constructor Aspose.Pdf.TaggedPdf.TaggedPdfTextElement(Aspose.Pdf.Document,System.String,System.String,Aspose.Pdf.Text.TextState)
-Method Aspose.Pdf.Text.TableAbsorber.Remove(Aspose.Pdf.Text.AbsorbedTable)
-Method Aspose.Pdf.Text.TableAbsorber.Replace(Aspose.Pdf.Page,Aspose.Pdf.Text.AbsorbedTable,Aspose.Pdf.Table)
-Method Aspose.Pdf.Text.TextFragmentAbsorber.RemoveAllText(Aspose.Pdf.Page)
-Method Aspose.Pdf.Text.TextFragmentAbsorber.RemoveAllText(Aspose.Pdf.Document)
-### **Removed APIs:**
------
-TabAlignmentType was moved into Aspose.Pdf.Text namespace.
-TabLeaderType was moved into Aspose.Pdf.Text namespace.
+
+## Public API changes in Aspose.PDF for .NET 18.7
+
+### Added APIs:
+
+* Class Aspose.Pdf.Drawing.GradientRadialShading
+* Constructor Aspose.Pdf.Drawing.GradientRadialShading
+* Constructor Aspose.Pdf.Drawing.GradientRadialShading(Aspose.Pdf.Color,Aspose.Pdf.Color)
+* Property Aspose.Pdf.Drawing.GradientRadialShading.Start* 
+* Property Aspose.Pdf.Drawing.GradientRadialShading.End
+* Property Aspose.Pdf.Drawing.GradientRadialShading.StartingRadius
+* Property Aspose.Pdf.Drawing.GradientRadialShading.EndingRadius
+* Property Aspose.Pdf.Drawing.GradientRadialShading.StartColor
+* Property Aspose.Pdf.Drawing.GradientRadialShading.EndColor
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfContent.Add(Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement)
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfDocumentElement.Add(Aspose.Pdf.Page,Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement)
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement
+* Constructor Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement(Aspose.Pdf.Document,Aspose.Pdf.Image,Aspose.Pdf.Rectangle)
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement.Page
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement.Tag
+* Constructor Aspose.Pdf.TaggedPdf.TaggedPdfTextElement(Aspose.Pdf.Document,System.String,System.String,Aspose.Pdf.Text.TextState)
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfContent.Add(Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement)
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfDocumentElement.Add(Aspose.Pdf.Page,Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement)
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement
+* Constructor Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement(Aspose.Pdf.Document,Aspose.Pdf.Image,Aspose.Pdf.Rectangle)
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement.Page
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfFigureElement.Tag
+* Constructor Aspose.Pdf.TaggedPdf.TaggedPdfTextElement(Aspose.Pdf.Document,System.String,System.String,Aspose.Pdf.Text.TextState)
+* Method Aspose.Pdf.Text.TableAbsorber.Remove(Aspose.Pdf.Text.AbsorbedTable)
+* Method Aspose.Pdf.Text.TableAbsorber.Replace(Aspose.Pdf.Page,Aspose.Pdf.Text.AbsorbedTable,Aspose.Pdf.Table)
+* Method Aspose.Pdf.Text.TextFragmentAbsorber.RemoveAllText(Aspose.Pdf.Page)
+* Method Aspose.Pdf.Text.TextFragmentAbsorber.RemoveAllText(Aspose.Pdf.Document)
+
+### Removed APIs:
+
+* TabAlignmentType was moved into Aspose.Pdf.Text namespace.
+* TabLeaderType was moved into Aspose.Pdf.Text namespace.

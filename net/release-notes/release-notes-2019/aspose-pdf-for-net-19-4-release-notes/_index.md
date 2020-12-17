@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 19.4 Release Notes
+linktitle: Aspose.PDF for .NET 19.4
 type: docs
 weight: 90
 url: /net/aspose-pdf-for-net-19-4-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.4.
 ---
 
 {{% alert color="primary" %}} 
@@ -11,7 +14,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.4](https://www.nug
 
 {{% /alert %}} 
 
-**Improvements and Changes** 
+## Improvements and Changes 
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -64,9 +67,11 @@ This page contains release notes for [Aspose.PDF for .NET 19.4](https://www.nug
 |PDFNET-43538|Exception when loading LaTex in multithread|Bug|
 |PDFNET-45964|Save and load LaTex document issues|Bug|
 |PDFNET-41675|PDF to XPS - Watermark in resultant file is too dim|Bug|
-### **Public API changes in Aspose.PDF for .NET 19.4**
------
-### **Added APIs:**
+
+## Public API changes in Aspose.PDF for .NET 19.4
+
+### Added APIs:
+
 - Enumeration member Aspose.Pdf.Annotations.PredefinedAction.Print
 - Class Aspose.Pdf.LogicalStructure.AnnotationElement
 - Property Aspose.Pdf.LogicalStructure.AnnotationElement.AlternateDescriptions
@@ -79,6 +84,8 @@ This page contains release notes for [Aspose.PDF for .NET 19.4](https://www.nug
 - Property Aspose.Pdf.OutlineItemCollection.VisibleCount
 - Property Aspose.Pdf.Text.TextSearchOptions.SearchForTextRelatedGraphics
 - Property Aspose.Pdf.XpsSaveOptions.SaveTransparentTexts
-### **Removed APIs:**
+
+### Removed APIs:
+
 - Property Aspose.Pdf.Document.IsPdfTaggedMarked
 

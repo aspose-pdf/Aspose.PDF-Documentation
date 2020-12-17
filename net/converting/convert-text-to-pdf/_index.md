@@ -3,8 +3,11 @@ title: Convert text to PDF
 type: docs
 weight: 20
 url: /net/convert-text-to-pdf/
+lastmod: "2020-12-16"
 description: Aspose.PDF for .NET allows you to convert plain text file to PDF or to convert pre-formatted text file to PDF. 
 ---
+
+**Aspose.PDF for .NET** support the feature converting plain text and pre-formatted text file to PDF format. 
 
 Converting text to PDF means adding text fragments to the PDF page. As for text files, we are dealing with 2 types of text: pre-formatting (for example, 25 lines with 80 characters per line) and non-formatted text (plain text). Depending on our needs, we can control this addition ourselves or entrust it to the library's algorithms.
 
@@ -51,7 +54,7 @@ pdfDocument.Save(dataDir + "TexttoPDF_out.pdf");
 
 Converting pre-formatted text is like plain text but you need to make some additional actions such as setting margins, font type and size. Obviously that font should be monospace (Courier New).
 
-Follow these steps to convert pre-formatted text to PDF:
+Follow these steps to convert pre-formatted text to PDF with C#:
 
 1. Read the whole text as an array of strings;
 1. Instantiate Document object and add a new page in Pages collection;

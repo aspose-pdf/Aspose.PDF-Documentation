@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 19.10 Release Notes
+linktitle: Aspose.PDF for .NET 19.10
 type: docs
 weight: 30
 url: /net/aspose-pdf-for-net-19-10-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.10.
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +13,8 @@ url: /net/aspose-pdf-for-net-19-10-release-notes/
 This page contains release notes for Aspose.PDF for .NET 19.10.
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -54,10 +58,13 @@ This page contains release notes for Aspose.PDF for .NET 19.10.
 |PDFNET-46997|Aspose.Pdf 19.9: Saving particular PDF to DOCX produces output <br/> that doesn't look good on some MAC machines|Bug|
 |PDFNET-45837|The output XLSX file isn't the same as source PDF|Bug|
 |PDFNET-46314|PDF to DOCX - Text is shifted to left|Bug|
-### **Public API changes in Aspose.PDF for .NET 19.10**
------
+
+## Public API changes in Aspose.PDF for .NET 19.10
+
 See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for .NET. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf).
-### **Added APIs**
+
+## Added APIs
+
 Following new APIs were added.
 
  - PropertyAspose.Pdf.MhtLoadOptions.PageInfo 
@@ -70,5 +77,7 @@ Following new APIs were added.
  - Enumeration member Aspose.Pdf.ExcelSaveOptions.ConversionEngines.LegacyEngine
  - Enumeration member Aspose.Pdf.ExcelSaveOptions.ConversionEngines.NewEngine
  - Property Aspose.Pdf.RenderingOptions.OptimizeDimensions
-### **Removed APIs**
+ 
+## Removed APIs
+
  - Property Aspose.Pdf.HtmlLoadOptions.isPdfUaConverting

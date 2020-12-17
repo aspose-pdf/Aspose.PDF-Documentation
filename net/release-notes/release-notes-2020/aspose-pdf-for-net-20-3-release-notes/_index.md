@@ -1,8 +1,10 @@
 ---
 title: Aspose.PDF for .NET 20.3 Release Notes
+linktitle: Aspose.PDF for .NET 20.3
 type: docs
 weight: 100
 url: /net/aspose-pdf-for-net-20-3-release-notes/
+lastmod: "2020-12-14"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.3. 
 ---
 
@@ -11,7 +13,8 @@ description: This page contains new Aspose.PDF for .NET features, enhancement, a
 This page contains release notes information for Aspose.PDF for .NET 20.3.
 
 {{% /alert %}} 
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -45,9 +48,12 @@ This page contains release notes information for Aspose.PDF for .NET 20.3.
 |PDFNET-47295 |High memory consumption on generating PDF documents.|Bug|
 |PDFNET-46961 |PDF conversion Save As issue|Bug|
 |PDFNET-47468 |HTML to PDF conversion hangs|Bug|
-## **Public API and Backward Incompatible Changes**
-### **Added APIs**
-- Class Aspose.Pdf.Annotations.CustomExplicitDestination
-- Method Aspose.Pdf.Annotations.CustomExplicitDestination.ToString
-- Property Aspose.Pdf.PclLoadOptions.BatchSize
-- Property Aspose.Pdf.PptxSaveOptions.CustomProgressHandler
+
+## Public API and Backward Incompatible Changes
+
+### Added APIs
+
+* Class Aspose.Pdf.Annotations.CustomExplicitDestination
+* Method Aspose.Pdf.Annotations.CustomExplicitDestination.ToString
+* Property Aspose.Pdf.PclLoadOptions.BatchSize
+* Property Aspose.Pdf.PptxSaveOptions.CustomProgressHandler

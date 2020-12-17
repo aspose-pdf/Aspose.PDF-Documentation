@@ -212,13 +212,13 @@ Document doc = new Document();
 // Add a page to pages collection of PDF file
 Page page = doc.Pages.Add();
 // Instantiate HtmlFragment with HTML contnets
-HtmlFragment titel = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
+HtmlFragment title = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
 // Set bottom margin information
-titel.Margin.Bottom = 10;
+title.Margin.Bottom = 10;
 // Set top margin information
-titel.Margin.Top = 200;
+title.Margin.Top = 200;
 // Add HTML Fragment to paragraphs collection of page
-page.Paragraphs.Add(titel);
+page.Paragraphs.Add(title);
 
 dataDir = dataDir + "AddHTMLUsingDOM_out.pdf";
 // Save PDF file
@@ -290,7 +290,7 @@ FootNotes indicate notes in the text of your paper by using consecutive superscr
 In a footnote referencing system, indicate a reference by:
 
 - putting a small number above the line of type directly following the source material. This number is called a note identifier. It sits slightly above the line of text.
-- putting the same number, followed by a citation of your source, at the bottom of the page. Footnoting should be numerical and chronological: the first reference is 1, the second is 2, and so on. 
+- putting the same number, followed by a citation of your source, at the bottom of the page. Footnoting should be numerical and chronological: the first reference is 1, the second is 2, and so on.
 
 The advantage of footnoting is that the reader can simply cast their eyes down the page to discover the source of a reference that interests them.
 

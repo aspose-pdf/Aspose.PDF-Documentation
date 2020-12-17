@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 18.5 Release Notes
+linktitle: Aspose.PDF for .NET 18.5
 type: docs
 weight: 80
 url: /net/aspose-pdf-for-net-18-5-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.5.
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +13,8 @@ url: /net/aspose-pdf-for-net-18-5-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 18.5](https://www.nuget.org/packages/Aspose.Pdf/18.5.0)
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -47,12 +51,14 @@ This page contains release notes for [Aspose.PDF for .NET 18.5](https://www.nuge
 |PDFNET-44428|The input PDF throws an error on retrieving color type of the Page|Bug|
 |PDFNET-44450|An error occurred on removing JavaScript from PDF|Bug|
 |PDFNET-44079|PDF To HTML: some text is missing|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.5**
-### **Added APIs:**
 
-Method Aspose.Pdf.Rectangle.Contains(Aspose.Pdf.Point)  
-Method Aspose.Pdf.Rectangle.Center  
-Method Aspose.Pdf.Document.IDocumentFontUtilities.GetAllFonts  
-Method Aspose.Pdf.Heading.CloneWithSegments  
-Enumeration member Aspose.Pdf.ImageFileType.Base64  
-Property Aspose.Pdf.PdfSaveOptions.DefaultFontName  
+## Public API changes in Aspose.PDF for .NET 18.5
+
+### Added APIs:
+
+* Method Aspose.Pdf.Rectangle.Contains(Aspose.Pdf.Point)  
+* Method Aspose.Pdf.Rectangle.Center  
+* Method Aspose.Pdf.Document.IDocumentFontUtilities.GetAllFonts  
+* Method Aspose.Pdf.Heading.CloneWithSegments  
+* Enumeration member Aspose.Pdf.ImageFileType.Base64  
+* Property Aspose.Pdf.PdfSaveOptions.DefaultFontName  
