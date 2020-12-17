@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 18.10 Release Notes
+linktitle: Aspose.PDF for .NET 18.10
 type: docs
 weight: 30
 url: /net/aspose-pdf-for-net-18-10-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.10. 
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +13,8 @@ url: /net/aspose-pdf-for-net-18-10-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 18.10](https://www.nuget.org/packages/Aspose.Pdf/18.10.0)
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -55,9 +59,11 @@ This page contains release notes for [Aspose.PDF for .NET 18.10](https://www.nu
 |PDFNET-45361|PDF/UA: Xmp Metadata Title problem when generate Tagged Pdf document|Bug|
 |PDFNET-45362|PDF/UA: PDF/UA identifier problem when generate Tagged Pdf document|Bug|
 |PDFNET-45363|PDF/UA: Logical Structure problem when generate Tagged Pdf document|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.10**
------
-### **Added APIs:**
-Method Aspose.Pdf.Document.SetTitle(System.String) 
-Method Aspose.Pdf.OutlineCollection.Remove(System.Int32) 
-Method Aspose.Pdf.OutlineItemCollection.Remove(System.Int32)        
+
+## Public API changes in Aspose.PDF for .NET 18.10
+
+### Added APIs:
+
+* Method Aspose.Pdf.Document.SetTitle(System.String) 
+* Method Aspose.Pdf.OutlineCollection.Remove(System.Int32) 
+* Method Aspose.Pdf.OutlineItemCollection.Remove(System.Int32)        

@@ -4,12 +4,13 @@ linktitle: Converting documents
 type: docs
 weight: 70
 url: /net/converting/
+lastmod: "2020-12-14"
 description: This section contains a description of all possible options for converting PDF documents on C# using the Aspose.PDF library.
 aliases:
     - net/working-with-document-conversion/
 ---
 
-Aspose.PDF allows converting PDF documents to various formats and also converting from other formats to PDF
+Aspose.PDF for .NET allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. 
 
 | Convert XXX to PDF | Convert PDF to XXX |
 | :---------------- | :------------------ |
@@ -33,13 +34,17 @@ Aspose.PDF allows converting PDF documents to various formats and also convertin
 | [Convert XPS to PDF](/pdf/net/convert-xps-to-pdf/) | [Convert PDF to XPS](/pdf/net/convert-pdf-to-xps/) |
 | [Convert PDF to mobiXML](/pdf/net/convert-pdf-to-mobixml/) | |
 
-## Conversion to Microsoft Ofiice File Formats
+## Conversion to Microsoft Office File Formats
+
+Aspose.PDF for .NET allows you quickly and easily convert your PDF documents into convenient and familiar Microsoft Office file formats.
 
 - [Convert PDF to Word](/pdf/net/convert-pdf-to-doc/)
 - [Convert PDF to Excel](/pdf/net/convert-pdf-to-excel/)
 - [Convert PDF to PowerPoint](/pdf/net/convert-pdf-to-powerpoint/)
 
-## Conversion beetween PDF/A and PDF formats
+## Conversion between PDF/A and PDF formats
+
+Converting  PDF/A to PDF formats and back it's possible with C# library.
 
 - [Convert PDF to PDF/A](/pdf/net/convert-pdf-file-to-pdfa/)
 - [Convert PDF/A to PDF](/pdf/net/convert-pdfa-to-pdf/)

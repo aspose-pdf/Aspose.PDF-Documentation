@@ -4,6 +4,9 @@ type: docs
 weight: 20
 url: /net/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World. 
+aliases:
+    - url: /pdf/net/hello-world/
+lastmod: "2020-12-16"
 ---
 
 A "Hello World" example is traditionally used to introduce features of a programming language or software with a simple use case.

@@ -3,6 +3,7 @@ title: Convert PCL to PDF
 type: docs
 weight: 50
 url: /net/convert-pcl-to-pdf/
+lastmod: "2020-12-15"
 description: This page describes the process of converting a PCL file into PDF format using Aspose.PDF library.
 ---
 
@@ -236,7 +237,11 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
     </tbody>
 </table>
 
-To allow conversion from PCL to PDF, Aspose.PDF has the class [`PclLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) which is used to initialize the LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document. The following code snippet shows the process of converting a PCL file into PDF format.
+## Converting a PCL file into PDF format
+
+To allow conversion from PCL to PDF, Aspose.PDF has the class [`PclLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) which is used to initialize the LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document. 
+
+The following code snippet shows the process of converting a PCL file into PDF format.
 
 ```csharp
 public static void ConvertPCLtoPDF()
@@ -263,7 +268,7 @@ public static void ConvertPCLtoPDFAvdanced()
 }
 ```
 
-#### Known Issues
+## Known Issues
 
 1. Origin of text strings and images can be slightly differed from the ones in a sorce PCL file If print direction is not 0°. The same refers to vector images if coordinate system of vector plot is rotated (RO command preceded).
 1. Origin of labels in vector images can be differ from the ones in a sorce PCL file If the labels are influenced by a sequence of commands: Label Origin (LO), Define Variable Text Path (DV), Absolute Direction (DI) or Relative Direction (DR).

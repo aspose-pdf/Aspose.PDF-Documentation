@@ -3,10 +3,11 @@ title: Convert PDF Pages to EMF Image
 type: docs
 weight: 210
 url: /net/convert-pdf-pages-to-emf-image/
-description: This page describes how to convert PDF Pages to EMF image, convert all Pages to EMF images and convert single PDF page to EMF image with Aspose.PDF for .NET.
+lastmod: "2020-12-15"
+description: This page describes how to convert PDF Pages to EMF image, convert all Pages to EMF images with Aspose.PDF for .NET.
 ---
 
-The EmfDevice class allows you to convert PDF pages to EMF images. This class provides a method named Process which allows you to convert a particular page of the PDF file to EMF image format.
+The EmfDevice class allows you to convert PDF pages to EMF images. This class provides a method named Process which allows you to convert a particular page of the PDF file to EMF image format. 
 
 ## Convert All Pages to EMF Images
 
@@ -16,7 +17,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-To convert all pages in a PDF file to images:
+Aspose.PDF for .NET allows you to convert all pages in a PDF file to images:
 
 1. Loop through all pages in the file.
 1. Convert each page individually:
@@ -24,11 +25,11 @@ To convert all pages in a PDF file to images:
     - Get the page you want to convert.
     - Call the Process method to convert the page to EMF.
 
-The following code snippet shows you how to convert all PDF pages to EMF images.
+The following code snippet shows you how to convert all PDF pages to EMF images with C#.
 
 ## Convert single PDF page to EMF image
 
-To convert a particular page to EMF format:
+Aspose.PDF library allows you to convert a particular page to EMF format:
 
 Pass the page index as an argument to the Process(..) method.
 The following code snippet shows the steps to convert the first page of PDF to EMF format.

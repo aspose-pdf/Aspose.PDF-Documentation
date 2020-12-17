@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 18.6 Release Notes
+linktitle: Aspose.PDF for .NET 18.6
 type: docs
 weight: 70
 url: /net/aspose-pdf-for-net-18-6-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.6. 
 ---
 
 {{% alert color="primary" %}} 
@@ -17,7 +20,8 @@ We have honored to announce June Release of Aspose.PDF for .NET. Bug fixes and n
 - Tagged PDF support was added.
 
 Above listed features are under further development and currently they are available in Aspose.PDF for .NET 18.6, as beta version.
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -59,34 +63,38 @@ Above listed features are under further development and currently they are avail
 |PDFNET-44703|Missing table after adding to Footer|Bug|
 |PDFNET-44671|PDF to PDF/A-2b|Bug|
 |PDFNET-41112|Unable to load OTF Font from a resource stream|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.6**
+
+## Public API changes in Aspose.PDF for .NET 18.6
 
 {{% alert color="primary" %}} 
+
 All descendants of Aspose.Pdf.Operator were moved into namespace Aspose.Pdf.Operators. Thus new Aspose.Pdf.Operators.GSave()' should be used, instead of 'new Aspose.Pdf.Operator.GSave()'.
+
 {{% /alert %}} 
-### **Added APIs:**
------
-Property Aspose.Pdf.Document.IsPdfUaCompliant
-Property Aspose.Pdf.Document.IsPdfTaggedMarked
-Property Aspose.Pdf.Document.TaggedPdfContent
-Method Aspose.Pdf.Document.RemovePdfUaCompliance
-Method Aspose.Pdf.Annotations.TextMarkupAnnotation.GetMarkedText
-Method Aspose.Pdf.Annotations.TextMarkupAnnotation.GetMarkedTextFragments
-Property Aspose.Pdf.Page.TaggedPdfContent
-Enumeration member Aspose.Pdf.PdfFormat.PDF_UA_1
-Property Aspose.Pdf.Forms.Form.FlattenSettings.HideButton
-Class Aspose.Pdf.TaggedPdf.TaggedPdfChildElements 
-Method Aspose.Pdf.TaggedPdf.TaggedPdfChildElements.Add(Aspose.Pdf.TaggedPdf.TaggedPdfElement) 
-Class Aspose.Pdf.TaggedPdf.TaggedPdfContent 
-Method Aspose.Pdf.TaggedPdf.TaggedPdfContent.Add(Aspose.Pdf.TaggedPdf.TaggedPdfTextElement) 
-Class Aspose.Pdf.TaggedPdf.TaggedPdfDocumentElement 
-Method Aspose.Pdf.TaggedPdf.TaggedPdfDocumentElement.Add(Aspose.Pdf.Page,Aspose.Pdf.TaggedPdf.TaggedPdfTextElement) 
-Class Aspose.Pdf.TaggedPdf.TaggedPdfElement 
-Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.Page 
-Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.Parent 
-Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.ChildElements 
-Method Aspose.Pdf.TaggedPdf.TaggedPdfElement.Add(Aspose.Pdf.Page,Aspose.Pdf.TaggedPdf.TaggedPdfElement) 
-Class Aspose.Pdf.TaggedPdf.TaggedPdfTextElement 
-Method Aspose.Pdf.TaggedPdf.TaggedPdfTextElement.#ctor(Aspose.Pdf.Document,System.String,System.String) 
-Property Aspose.Pdf.TaggedPdf.TaggedPdfTextElement.Page 
-Property Aspose.Pdf.TaggedPdf.TaggedPdfTextElement.Tag
+
+### Added APIs:
+
+* Property Aspose.Pdf.Document.IsPdfUaCompliant
+* Property Aspose.Pdf.Document.IsPdfTaggedMarked
+* Property Aspose.Pdf.Document.TaggedPdfContent
+* Method Aspose.Pdf.Document.RemovePdfUaCompliance
+* Method Aspose.Pdf.Annotations.TextMarkupAnnotation.GetMarkedText
+* Method Aspose.Pdf.Annotations.TextMarkupAnnotation.GetMarkedTextFragments
+* Property Aspose.Pdf.Page.TaggedPdfContent
+* Enumeration member Aspose.Pdf.PdfFormat.PDF_UA_1
+* Property Aspose.Pdf.Forms.Form.FlattenSettings.HideButton
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfChildElements 
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfChildElements.Add(Aspose.Pdf.TaggedPdf.TaggedPdfElement) 
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfContent 
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfContent.Add(Aspose.Pdf.TaggedPdf.TaggedPdfTextElement) 
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfDocumentElement 
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfDocumentElement.Add(Aspose.Pdf.Page,Aspose.Pdf.TaggedPdf.TaggedPdfTextElement) 
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfElement 
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.Page 
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.Parent 
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.ChildElements 
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfElement.Add(Aspose.Pdf.Page,Aspose.Pdf.TaggedPdf.TaggedPdfElement) 
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfTextElement 
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfTextElement.#ctor(Aspose.Pdf.Document,System.String,System.String) 
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfTextElement.Page 
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfTextElement.Tag

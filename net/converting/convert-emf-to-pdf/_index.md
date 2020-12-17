@@ -3,6 +3,7 @@ title: Convert EMF to PDF
 type: docs
 weight: 120
 url: /net/convert-emf-to-pdf/
+lastmod: "2020-12-15"
 description: Both bitmap as well as vector graphics can be files having an EMF extension. Convert EMF to PDF file simply with C#.
 ---
 

@@ -1,9 +1,11 @@
 ---
-title: Add Link Annotation
+title: How to Add, Get or Delete Link Annotation using Aspose.PDF for .NET
+linktitle: Link Annotation
 type: docs
 weight: 20
 url: /net/add-link-annotation/
-description: Aspose.PDF for .NET allows you to add, get, and delete link annotation from your PDF document.
+description: Aspose.PDF for .NET allows you to Add, Get, and Delete Link Annotation from your PDF document.
+lastmod: "2020-12-16"
 ---
 
 A [Link Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) is a hypertext link that leads to a destination elsewhere in the document or to an action to be performed.

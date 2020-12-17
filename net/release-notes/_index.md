@@ -3,10 +3,15 @@ title: Release Notes
 type: docs
 weight: 50
 url: /net/release-notes/
-description: This section contains all the release notes that are regularly published and updated by Aspose.PDF library. 
+lastmod: "2020-12-14"
+description: This section contains all the release notes that are regularly published and updated by the Aspose.PDF library. 
 ---
 
- ## Articles in this section
+## Articles in this section
+ 
+**Aspose.PDF for .NET Release Notes** is part of the software documentation that describes changes between the released version and the previous version of that software. 
+
+**Aspose.PDF** inform users about fixed bugs, functionality extensions, new features, and enhancement of our product.
  
 - [Release Notes - 2020](/pdf/net/release-notes-2020/)
 - [Release Notes - 2019](/pdf/net/release-notes-2019/)

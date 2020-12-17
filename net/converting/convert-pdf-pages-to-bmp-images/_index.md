@@ -3,7 +3,8 @@ title: Convert PDF Pages to BMP Image
 type: docs
 weight: 200
 url: /net/convert-pdf-pages-to-bmp-image/
-description: This article describes how to convert PDF Pages to BMP image, convert all Pages to Bmp images and convert single PDF page to BMP image.
+lastmod: "2020-12-15"
+description: This article describes how to convert PDF Pages to BMP image, convert all Pages to Bmp images and convert single PDF page to BMP image with C#.
 ---
 
 The [BmpDevice](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) class allows you to convert PDF pages to Bmp images. This class provides a method named [Process](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) which allows you to convert a particular page of the PDF file to Bmp image format.
@@ -24,7 +25,7 @@ To convert all pages in a PDF file to images:
     1. Get the page you want to convert.
     1. Call the Process method to convert the page to BMP.
 
-The following code snippet shows you how to convert all PDF pages to BMP images.
+The following code snippet shows you how to convert all PDF pages to BMP images with Aspose.PDF for .NET.
 
 ```csharp
 public static void ConvertPDFtoBmpAllPages()
@@ -54,7 +55,7 @@ public static void ConvertPDFtoBmpAllPages()
 
 ## Convert single PDF page to BMP image
 
-To convert a particular page to Bmp format:
+To convert a particular page to Bmp format with C#:
 
 Pass the page index as an argument to the Process(..) method.
 The following code snippet shows the steps to convert the first page of PDF to Bmp format.

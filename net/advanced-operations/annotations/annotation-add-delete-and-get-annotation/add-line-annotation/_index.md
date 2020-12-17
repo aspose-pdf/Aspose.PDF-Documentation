@@ -1,5 +1,6 @@
 ---
-title: Add Line Annotation
+title: How to Add Line Annotation with Aspose.PDF for .NET
+linktitle: Line Annotation
 type: docs
 weight: 40
 url: /net/add-line-annotation/

@@ -1,12 +1,14 @@
 ---
 title: Aspose.PDF for .NET 18.2 Release Notes
+linktitle: Aspose.PDF for .NET 18.2
 type: docs
 weight: 110
 url: /net/aspose-pdf-for-net-18-2-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.2.
 ---
 
-## **Release Notes of Aspose.PDF for .NET 18.2**
-### **Improvements and Changes**
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -44,26 +46,28 @@ url: /net/aspose-pdf-for-net-18-2-release-notes/
 |PDFNET-43772|Font is not embedded correctly|Bug|
 |PDFNET-41155|PDF to PDFA: Vertical text renders in different order|Bug|
 |PDFNET-39213|PDF to HTML: Some Chinese characters are not rendered correctly|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.2**
-### **Added APIs:**
------
-Constructor Aspose.Pdf.Annotations.GoToAction(Aspose.Pdf.Document,System.String)
-Constructor Aspose.Pdf.Annotations.NamedDestination(Aspose.Pdf.Document,System.String)
-Property Aspose.Pdf.Document.NamedDestinations
-Property Aspose.Pdf.HtmlSaveOptions.DefaultFontName
-Interface Aspose.Pdf.INamedDestinationCollection
-Property Aspose.Pdf.INamedDestinationCollection.ItemSystem.String
-Property Aspose.Pdf.INamedDestinationCollection.Count
-Property Aspose.Pdf.INamedDestinationCollection.Names
-Method Aspose.Pdf.INamedDestinationCollection.Remove(System.String)
-Method Aspose.Pdf.INamedDestinationCollection.Add(System.String,Aspose.Pdf.Annotations.IAppointment)
-Class Aspose.Pdf.NamedDestinationCollection
-Property Aspose.Pdf.NamedDestinationCollection.ItemSystem.String
-Property Aspose.Pdf.NamedDestinationCollection.Count
-Property Aspose.Pdf.NamedDestinationCollection.Names
-Method Aspose.Pdf.NamedDestinationCollection.Remove(System.String)
-Method Aspose.Pdf.NamedDestinationCollection.Add(System.String,Aspose.Pdf.Annotations.IAppointment)
-Property Aspose.Pdf.PdfFormatConversionOptions.NotAccessibleFonts
-Property Aspose.Pdf.RenderingOptions.MaxFontsCacheSize
-Property Aspose.Pdf.RenderingOptions.MaxSymbolsCacheSize
-Property Aspose.Pdf.Table.RepeatingColumnsCount
+
+## Public API changes in Aspose.PDF for .NET 18.2
+
+### Added APIs:
+
+* Constructor Aspose.Pdf.Annotations.GoToAction(Aspose.Pdf.Document,System.String)
+* Constructor Aspose.Pdf.Annotations.NamedDestination(Aspose.Pdf.Document,System.String)
+* Property Aspose.Pdf.Document.NamedDestinations
+* Property Aspose.Pdf.HtmlSaveOptions.DefaultFontName
+* Interface Aspose.Pdf.INamedDestinationCollection
+* Property Aspose.Pdf.INamedDestinationCollection.ItemSystem.String
+* Property Aspose.Pdf.INamedDestinationCollection.Count
+* Property Aspose.Pdf.INamedDestinationCollection.Names
+* Method Aspose.Pdf.INamedDestinationCollection.Remove(System.String)
+* Method Aspose.Pdf.INamedDestinationCollection.Add(System.String,Aspose.Pdf.Annotations.IAppointment)
+* Class Aspose.Pdf.NamedDestinationCollection
+* Property Aspose.Pdf.NamedDestinationCollection.ItemSystem.String
+* Property Aspose.Pdf.NamedDestinationCollection.Count
+* Property Aspose.Pdf.NamedDestinationCollection.Names
+* Method Aspose.Pdf.NamedDestinationCollection.Remove(System.String)
+* Method Aspose.Pdf.NamedDestinationCollection.Add(System.String,Aspose.Pdf.Annotations.IAppointment)
+* Property Aspose.Pdf.PdfFormatConversionOptions.NotAccessibleFonts
+* Property Aspose.Pdf.RenderingOptions.MaxFontsCacheSize
+* Property Aspose.Pdf.RenderingOptions.MaxSymbolsCacheSize
+* Property Aspose.Pdf.Table.RepeatingColumnsCount

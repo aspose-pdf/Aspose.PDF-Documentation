@@ -1,8 +1,10 @@
 ---
 title: Aspose.PDF for .NET 20.7 Release Notes
+linktitle: Aspose.PDF for .NET 20.7 
 type: docs
 weight: 60
 url: /net/aspose-pdf-for-net-20-7-release-notes/
+lastmod: "2020-12-14"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.7. 
 ---
 
@@ -11,7 +13,8 @@ description: This page contains new Aspose.PDF for .NET features, enhancement, a
 This page contains release notes information for Aspose.PDF for .NET 20.7.
 
 {{% /alert %}} 
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -44,12 +47,15 @@ This page contains release notes information for Aspose.PDF for .NET 20.7.
 |PDFNET-48441|After extracting pages some content is missing|Bug|
 |PDFNET-48442|After extracting pages some content is missing|Bug|
 |PDFNET-48475|After extracting pages some content is missing|Bug|
-## **Public API and Backward Incompatible Changes**
-### **Added APIs**
-- Enumeration Aspose.Pdf.ConvertSoftMaskAction
-- Enumeration member Aspose.Pdf.ConvertSoftMaskAction.Default
-- Enumeration member Aspose.Pdf.ConvertSoftMaskAction.ConvertToStencilMask
-- Enumeration member Aspose.Pdf.ImageDeleteAction.KeepContents
-- Property Aspose.Pdf.PdfFormatConversionOptions.ConvertSoftMaskAction
-- Method Aspose.Pdf.XImage.Rename(System.String)
-- Enumeration member Aspose.Pdf.ExcelSaveOptions.ExcelFormat.CSV
+
+## Public API and Backward Incompatible Changes
+
+### Added APIs
+
+ * Enumeration Aspose.Pdf.ConvertSoftMaskAction
+ * Enumeration member Aspose.Pdf.ConvertSoftMaskAction.Default
+ * Enumeration member Aspose.Pdf.ConvertSoftMaskAction.ConvertToStencilMask
+ * Enumeration member Aspose.Pdf.ImageDeleteAction.KeepContents
+ * Property Aspose.Pdf.PdfFormatConversionOptions.ConvertSoftMaskAction
+ * Method Aspose.Pdf.XImage.Rename(System.String)
+ * Enumeration member Aspose.Pdf.ExcelSaveOptions.ExcelFormat.CSV

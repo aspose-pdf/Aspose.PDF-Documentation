@@ -1,12 +1,15 @@
 ---
-title: Setting Structure Elements Properties
+title: Setting Structure Elements Properties in Tagged PDF using Aspose.PDF 
+linktitle: Setting Structure Elements Properties
 type: docs
 weight: 30
 url: /net/setting-structure-elements-properties/
 description: With Aspose.PDF for .NET, you may set different Structure Elements Properties. There are setting Text Block Structure Elements, setting Inline Structure Elements, adding Structure Element into Elements and etc.
 ---
 
-In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers [CreateSectElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) and [CreateHeaderElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) methods of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
+In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers [CreateSectElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) and [CreateHeaderElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) methods of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. 
+
+Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

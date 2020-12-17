@@ -1,5 +1,6 @@
 ---
-title: Working with Table in Tagged PDFs
+title: Working with Table in Tagged PDFs using Aspose.PDF for .NET
+linktitle: Working with Table in Tagged PDFs
 type: docs
 weight: 40
 url: /net/working-with-table-in-tagged-pdfs/

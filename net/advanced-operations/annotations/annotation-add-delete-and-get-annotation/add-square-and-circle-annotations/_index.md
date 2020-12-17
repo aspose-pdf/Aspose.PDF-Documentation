@@ -1,13 +1,15 @@
 ---
-title: Add Square and Circle Annotations
+title: Add, Get or Delete Square/Circle Annotations
+linktitle: Square/Circle Annotations
 type: docs
 weight: 50
 url: /net/add-square-and-circle-annotations/
-description: This page describes how to add, get, and delete the square and circle annotations from your PDF document with Aspose.PDF for .NET.
+description: This article describes how to add, get, and delete the Square and Circle annotations from your PDF document with Aspose.PDF for .NET
+lastmod: "2020-12-16"
 ---
 
-Square and circle annotations shall display, respectively, a rectangle or an ellipse on the page. When opened, they shall display a pop-up window containing the text of the associated note.
-Square annotations are like circle annotations (instances of the PDFAnnotationCircle class) apart from the shape.
+Square and Circle annotations shall display, respectively, a rectangle or an ellipse on the page. When opened, they shall display a pop-up window containing the text of the associated note.
+Square annotations are like Circle annotations (instances of the Aspose.Pdf.Annotations.CircleAnnotation class) apart from the shape.
 
 Steps for creating Square and Circle Annotations:
 

@@ -1,9 +1,11 @@
 ---
-title: Redact certain page region with RedactionAnnotation
+title: Redact certain page region with Redaction Annotation using Aspose.PDF for .NET
+linktitle: Redact certain page region with Redaction Annotation
 type: docs
 weight: 30
 url: /net/redact-certain-page-region-with-redactionannotation/
 description: Aspose.PDF for .NET allows you to add and manipulate Annotations in an existing PDF file. You should use a class named RedactionAnnotation to resolve this task.
+lastmod: "2020-12-16"
 ---
 
 Aspose.PDF for .NET supports the feature to add as well as manipulate Annotations in an existing PDF file. Recently some of our customers posted a required to redact (remove text, image, etc elements from) a certain page region of PDF document. In order to fulfill this requirement, a class named RedactionAnnotation is provided, which can be used to redact certain page regions or it can be used to manipulate existing RedactionAnnotations and redact them (i.e. flatten annotation and remove the text under it).

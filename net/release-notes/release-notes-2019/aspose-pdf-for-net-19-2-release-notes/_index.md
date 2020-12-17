@@ -1,8 +1,11 @@
 ---
 title: Aspose.PDF for .NET 19.2 Release Notes
+linktitle: Aspose.PDF for .NET 19.2
 type: docs
 weight: 110
 url: /net/aspose-pdf-for-net-19-2-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.2.
 ---
 
 {{% alert color="primary" %}} 
@@ -11,7 +14,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.2](https://www.nug
 
 {{% /alert %}} 
 
-**Improvements and Changes**
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -51,9 +54,11 @@ This page contains release notes for [Aspose.PDF for .NET 19.2](https://www.nug
 |PDFNET-45517|IndexOutOfRangeException occurs while extracting text using TextAbsorber|Bug|
 |PDFNET-43748|Creates a copy of the file when opening the TEX document|Bug|
 |PDFNET-45900|PDF/UA: Document structure is crashed when using TaggedContent property |Bug|
-### **Public API changes in Aspose.PDF for .NET 19.2**
------
-### **Added APIs:**
+
+### Public API changes in Aspose.PDF for .NET 19.2
+
+### Added APIs:
+
 - Class Aspose.Pdf.LogicalStructure.AttributeKey
 - Property Aspose.Pdf.LogicalStructure.AttributeKey.Key
 - Property Aspose.Pdf.LogicalStructure.AttributeKey.Owner
@@ -206,5 +211,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.2](https://www.nug
 - Property Aspose.Pdf.Annotations.MovieAnnotation.Poster
 - Property Aspose.Pdf.Annotations.MovieAnnotation.Rotate
 - Property Aspose.Pdf.HtmlLoadOptions.isPdfUaConverting
-### **Updated APIs:**
+
+### Updated APIs:
+
 - Old Tagged PDF API (Aspose.Pdf.TaggedPdf.*) was replaced with new API (Aspose.Pdf.Tagged)

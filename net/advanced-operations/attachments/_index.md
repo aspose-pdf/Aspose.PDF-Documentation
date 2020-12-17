@@ -13,6 +13,7 @@ description: Use C# PDF API to access, add and remove attachments in PDF files u
 aliases:
     - /net/working-with-attachments/
     - /net/working-with-attachments-facades/
+lastmod: "2020-12-16"
 ---
 
 In this section, we will explain how to work with attachments in PDF using Aspose.PDF for .NET.
@@ -21,5 +22,5 @@ You will learn how to add attachments to pdf, get the information of an attachme
 
 - [Portfolio](/pdf/net/portfolio/)
 - [Removing attachment from an existing PDF](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Adding to a PDF document](/pdf/net/adding-to-a-pdf-document/)
+- [Adding attachment to a PDF document](/pdf/net/add-attachment-to-pdf-document/)
 - [Extract and save an attachment](/pdf/net/extract-and-save-an-attachment/)
