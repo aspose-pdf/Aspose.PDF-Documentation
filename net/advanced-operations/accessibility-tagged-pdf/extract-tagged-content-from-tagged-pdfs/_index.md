@@ -1,14 +1,19 @@
 ---
-title: Extract Tagged Content from Tagged PDFs
+title: Extract Tagged Content from Tagged PDFs using Aspose.PDF for .NET
+linktitle: Extract Tagged Content from Tagged PDFs
 type: docs
 weight: 20
 url: /net/extract-tagged-content-from-tagged-pdfs/
-description: This section explains how to extract tagged content PDF document by using Aspose.PDF for .NET
+description: This article explains how to extract tagged content PDF document using Aspose.PDF for .NET
 ---
+
+In this article you will learn how to to extract tagged content PDF document using C#.
 
 ## Getting Tagged PDF Content
 
-In order to get content of PDF Document with Tagged Text, Aspose.PDF offers [TaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) property of [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class. Following code snippet shows how to get content of a PDF document with Tagged Text:
+In order to get content of PDF Document with Tagged Text, Aspose.PDF offers [TaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) property of [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class.
+
+Following code snippet shows how to get content of a PDF document with Tagged Text:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -58,9 +63,9 @@ StructTreeRootElement structTreeRootElement = taggedContent.StructTreeRootElemen
 StructureElement rootElement = taggedContent.RootElement;
 ```
 
-## Accessing Children Elements
+## Accessing Child Elements
 
-In order to access children elements of a Tagged PDF Document, Aspose.PDF offers [ElementList](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist) class. Following code snippet shows how to access children elements of a Tagged PDF Document:
+In order to access child elements of a Tagged PDF Document, Aspose.PDF offers [ElementList](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist) class. Following code snippet shows how to access child elements of a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -90,7 +95,7 @@ foreach (Element element in elementList)
     }
 }
 
-// Access to children elements of first element in root element
+// Access to child elements of first element in root element
 elementList = taggedContent.RootElement.ChildElements[1].ChildElements;
 foreach (Element element in elementList)
 {
@@ -108,12 +113,13 @@ foreach (Element element in elementList)
 }
 
 // Save Tagged Pdf Document
-document.Save(dataDir + "AccessChildrenElements.pdf");
+document.Save(dataDir + "AccessChildElements.pdf");
 ```
 
 ## Tagging Images in Existing PDF
 
-In order to tag images in existing PDF document, Aspose.PDF offers [FindElements](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) method of [StructureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) class. You can add alternative text for figures using [AlternativeText](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) property of [FigureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement) class. 
+In order to tag images in existing PDF document, Aspose.PDF offers [FindElements](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) method of [StructureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) class. You can add alternative text for figures using [AlternativeText](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) property of [FigureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement) class.
+
 Following code snippet shows how to tag images in existing PDF document:
 
 ```csharp

@@ -1,12 +1,15 @@
 ---
-title: PDF-UA Compliance Test - Errors List
+title: PDF-UA Compliance Test - Errors List | Aspose.PDF for .NET
+linktitle: PDF-UA Compliance Test - Errors List
 type: docs
 weight: 50
 url: /net/pdf-ua-compliance-test-errors-list/
-description: In this article, we list the errors that can arise during PDF/UA compliance testing using the Aspose.PDF API.
+description: This article shows a list of the errors that can arise during PDF/UA compliance testing using the Aspose.PDF API and C# or VB.
 ---
 
-While doing PDF/UA compliance testing using Aspose.PDF API, you may be interested in knowing the error messages that you can get. These errors are of different types such as General, Text, Fonts, Headings, and several others. Information about such errors can be helpful in knowing the exact cause of the errors and their handling. In this article, we list the errors that can arise during PDF/UA compliance testing using the API.
+While doing PDF/UA compliance testing using Aspose.PDF API, you may be interested in knowing the error messages that you can get. These errors are of different types such as General, Text, Fonts, Headings, and several others. Information about such errors can be helpful in knowing the exact cause of the errors and their handling.
+
+In this article, we list the errors that can arise during PDF/UA compliance testing using the API.
 
 ## **General**
 
