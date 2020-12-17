@@ -204,7 +204,7 @@ To find the URL content, you need to work with both annotation and text. The [An
 
 ## Remove Document Open Action from a PDF File
 
-[How to Specify PDF Page when Viewing Document](https://docs.aspose.com/pdf/net/manipulate-page-in-a-pdf-file/) explained how to tell a document to open on a different page than the first. When concatenating several documents, and one or more has a GoTo action set, you probably want to remove them. For example, if combining two documents and the second one has a GoTo action that takes you to the second page, the output document will open on the second page of the second document instead of the first page of the combined document. To avoid this behavior, remove the open action command.
+[How to Specify PDF Page when Viewing Document](#how-to-specify-pdf-page-when-viewing-document) explained how to tell a document to open on a different page than the first. When concatenating several documents, and one or more has a GoTo action set, you probably want to remove them. For example, if combining two documents and the second one has a GoTo action that takes you to the second page, the output document will open on the second page of the second document instead of the first page of the combined document. To avoid this behavior, remove the open action command.
 
 To remove an open action:
 
@@ -226,7 +226,7 @@ dataDir = dataDir + "RemoveOpenAction_out.pdf";
 document.Save(dataDir);
 ```
 
-## How to Specify PDF Page when Viewing Document
+## How to Specify PDF Page when Viewing Document {#how-to-specify-pdf-page-when-viewing-document}
 
 When viewing PDF files in a PDF viewer such as Adobe Reader, the files usually open on the first page. However, it is possible to set the file to open on a different page.
 
