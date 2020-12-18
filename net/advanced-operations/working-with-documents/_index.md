@@ -24,5 +24,7 @@ You are able to do the following:
 - [Formatting PDF Document](/pdf/net/formatting-pdf-document/) - create a document, get and set document properties, embedding fonts, and other operations with PDF files.  
 - [Manipulate PDF Document](/pdf/net/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.   
 - [Optimize PDF Document](/pdf/net/optimize-pdf-document/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
-- [Split document](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications. 
 - [Merge document](/pdf/net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using C#.
+- [Split document](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications. 
+
+
