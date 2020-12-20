@@ -4,12 +4,12 @@ linktitle: Printing document
 type: docs
 weight: 160
 url: /net/printing-document/
-description: This section describes the possibilities of using printing PDF in the .NET Framework. 
+description: C# Print PDF techniques and walkthrough for C# PDF printer settings and .NET project tips
 aliases:
     - /pdf/net/working-with-pdf-printing-facades/
 ---
 
-## Articles in this section
+## How to print PDF files in C#
 
 - [Printing PDF in .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
 - [Printing PDF to an XPS Printer (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
