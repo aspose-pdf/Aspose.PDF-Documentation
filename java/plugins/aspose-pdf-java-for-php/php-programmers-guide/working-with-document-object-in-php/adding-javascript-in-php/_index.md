@@ -3,6 +3,7 @@ title: Adding JavaScript in PHP
 type: docs
 weight: 10
 url: /java/adding-javascript-in-php/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Adding JavaScript**

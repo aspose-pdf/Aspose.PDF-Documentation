@@ -4,6 +4,7 @@ type: docs
 weight: 40
 url: /androidjava/
 is_root: true
+lastmod: "2020-12-16"
 ---
 
 ### **Aspose.PDF for Android via Java**

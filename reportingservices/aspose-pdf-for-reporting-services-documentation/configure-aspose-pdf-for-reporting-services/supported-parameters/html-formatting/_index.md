@@ -3,6 +3,7 @@ title: HTML Formatting
 type: docs
 weight: 20
 url: /reportingservices/html-formatting/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

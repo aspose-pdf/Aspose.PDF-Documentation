@@ -3,6 +3,7 @@ title: Concatenate PDF Files in Ruby
 type: docs
 weight: 10
 url: /java/concatenate-pdf-files-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Concatenate PDF Files**

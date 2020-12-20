@@ -3,6 +3,7 @@ title: Introducing Aspose.PDF for Java
 type: docs
 weight: 10
 url: /java/introducing-aspose-pdf-for-java/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

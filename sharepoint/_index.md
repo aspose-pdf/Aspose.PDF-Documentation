@@ -4,6 +4,7 @@ type: docs
 weight: 50
 url: /sharepoint/
 is_root: true
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

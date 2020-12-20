@@ -3,6 +3,7 @@ title: Split PDF File into Individual Pages in Python
 type: docs
 weight: 80
 url: /java/split-pdf-file-into-individual-pages-in-python/
+lastmod: "2020-12-16"
 ---
 
 <ins>To split PDF document into individual pages using **Aspose.PDF Java for PHP**, simply invoke **SplitAllPages** class.

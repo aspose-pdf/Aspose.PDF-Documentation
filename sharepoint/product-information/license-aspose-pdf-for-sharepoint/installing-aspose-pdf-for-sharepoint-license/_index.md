@@ -3,6 +3,7 @@ title: Installing Aspose.Pdf for SharePoint License
 type: docs
 weight: 10
 url: /sharepoint/installing-aspose-pdf-for-sharepoint-license/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

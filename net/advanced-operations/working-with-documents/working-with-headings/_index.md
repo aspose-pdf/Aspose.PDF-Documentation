@@ -3,6 +3,7 @@ title: Working with Headings
 type: docs
 weight: 130
 url: /net/working-with-headings/
+lastmod: "2020-12-16"
 ---
 
 ## Apply Numbering Style in Heading

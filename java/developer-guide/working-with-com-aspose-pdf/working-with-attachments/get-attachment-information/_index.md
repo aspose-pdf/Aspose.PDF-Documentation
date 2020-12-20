@@ -3,6 +3,7 @@ title: Get Attachment Information
 type: docs
 weight: 40
 url: /java/get-attachment-information/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

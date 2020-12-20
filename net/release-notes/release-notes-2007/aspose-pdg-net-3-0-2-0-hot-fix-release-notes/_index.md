@@ -3,6 +3,7 @@ title: Aspose.PDG .NET 3.0.2.0 Hot Fix Release Notes
 type: docs
 weight: 430
 url: /net/aspose-pdg-net-3-0-2-0-hot-fix-release-notes/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

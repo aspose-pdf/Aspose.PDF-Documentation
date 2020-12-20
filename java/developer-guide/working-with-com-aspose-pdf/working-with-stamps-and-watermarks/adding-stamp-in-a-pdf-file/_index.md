@@ -3,6 +3,7 @@ title: Adding Stamp in a PDF file
 type: docs
 weight: 10
 url: /java/adding-stamp-in-a-pdf-file/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Add Page Number Stamp in a PDF file**

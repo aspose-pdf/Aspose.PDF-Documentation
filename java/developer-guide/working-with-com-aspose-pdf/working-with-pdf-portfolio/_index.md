@@ -3,6 +3,7 @@ title: Working with PDF Portfolio
 type: docs
 weight: 160
 url: /java/working-with-pdf-portfolio/
+lastmod: "2020-12-16"
 ---
 
 PDF Portfolios allow you to bring together content from a variety of sources (for example, PDF, Word, Excel, JPEG files) into one unified container. The original files retain their individual identities but are assembled into a PDF Portfolio file. Users can open, read, edit, and format each component file independently of the other component files.

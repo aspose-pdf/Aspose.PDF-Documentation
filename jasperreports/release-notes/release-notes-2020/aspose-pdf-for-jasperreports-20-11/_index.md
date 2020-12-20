@@ -3,6 +3,7 @@ title: Aspose.PDF for JasperReports 20.11
 type: docs
 weight: 10
 url: /jasperreports/aspose-pdf-for-jasperreports-20-11/
+lastmod: "2020-12-16"
 ---
 
 

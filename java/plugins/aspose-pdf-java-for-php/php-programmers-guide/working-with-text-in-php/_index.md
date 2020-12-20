@@ -3,6 +3,7 @@ title: Working with Text in PHP
 type: docs
 weight: 40
 url: /java/working-with-text-in-php/
+lastmod: "2020-12-16"
 ---
 
 **This section includes the following topics:**

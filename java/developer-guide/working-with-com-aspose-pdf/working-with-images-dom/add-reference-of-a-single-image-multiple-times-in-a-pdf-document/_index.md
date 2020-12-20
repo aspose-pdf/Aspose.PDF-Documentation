@@ -3,6 +3,7 @@ title: Add Reference of a single Image multiple times in a PDF Document
 type: docs
 weight: 80
 url: /java/add-reference-of-a-single-image-multiple-times-in-a-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. We have added a new method XImageCollection.add(XImage) that supports Ximage object to add in the Images Collection. This method allows to add reference to the same PDF object as original image that optimize the PDF Document size.

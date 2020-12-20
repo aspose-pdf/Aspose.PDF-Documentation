@@ -3,6 +3,7 @@ title: Adding RichMediaAnnotation
 type: docs
 weight: 20
 url: /java/adding-richmediaannotation/
+lastmod: "2020-12-16"
 ---
 
 

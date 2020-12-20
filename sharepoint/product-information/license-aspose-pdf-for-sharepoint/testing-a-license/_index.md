@@ -3,6 +3,7 @@ title: Testing a License
 type: docs
 weight: 20
 url: /sharepoint/testing-a-license/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

@@ -3,6 +3,7 @@ title: Covert simple PDF to PDF/UA Compliant Document and Validate
 type: docs
 weight: 20
 url: /java/covert-simple-pdf-to-pdf/ua-compliant-document-and-validate/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

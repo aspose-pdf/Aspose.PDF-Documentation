@@ -3,6 +3,7 @@ title: Licensing
 type: docs
 weight: 70
 url: /java/licensing/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

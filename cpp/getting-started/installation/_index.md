@@ -3,6 +3,7 @@ title: Installation
 type: docs
 weight: 40
 url: /cpp/installation/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Installing Aspose.PDF for C++**

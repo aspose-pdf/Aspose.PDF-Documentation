@@ -3,6 +3,7 @@ title: Split PDF File into Individual Pages
 type: docs
 weight: 40
 url: /java/split-pdf-file-into-individual-pages/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

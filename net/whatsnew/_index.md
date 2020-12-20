@@ -7,6 +7,7 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+lastmod: "2020-12-16"
 ---
 
 ## What's new in Aspose.PDF 20.11

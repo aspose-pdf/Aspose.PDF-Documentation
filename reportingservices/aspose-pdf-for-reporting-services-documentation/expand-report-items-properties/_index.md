@@ -3,6 +3,7 @@ title: Expand Report Items Properties
 type: docs
 weight: 90
 url: /reportingservices/expand-report-items-properties/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics:**

@@ -3,6 +3,7 @@ title: Creating a Secure PDF
 type: docs
 weight: 60
 url: /sharepoint/creating-a-secure-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

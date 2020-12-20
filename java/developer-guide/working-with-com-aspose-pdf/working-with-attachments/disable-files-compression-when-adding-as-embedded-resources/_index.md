@@ -3,6 +3,7 @@ title: Disable Files Compression when Adding as Embedded Resources
 type: docs
 weight: 50
 url: /java/disable-files-compression-when-adding-as-embedded-resources/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

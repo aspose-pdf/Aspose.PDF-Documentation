@@ -3,6 +3,7 @@ title: API Limitations
 type: docs
 weight: 70
 url: /sharepoint/api-limitations/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

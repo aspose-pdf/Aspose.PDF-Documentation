@@ -3,6 +3,7 @@ title: Aspose.PDF for SharePoint 2.2.0 Release Notes
 type: docs
 weight: 10
 url: /sharepoint/aspose-pdf-for-sharepoint-2-2-0-release-notes/
+lastmod: "2020-12-16"
 ---
 
 Aspose.PDF for SharePoint has been updated to version 2.2.0 and we are pleased to announce this release.

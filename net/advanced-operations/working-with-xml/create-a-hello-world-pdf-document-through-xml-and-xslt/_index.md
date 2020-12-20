@@ -4,6 +4,7 @@ type: docs
 weight: 10
 url: /net/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: Aspose.PDF for .NET provides the opportunity to convert an XML file into PDF document requiring that the input XML file must follow the Aspose.PDF for .NET Schema.
+lastmod: "2020-12-16"
 ---
 
 Sometimes you may have existing XML files that contain application data and you want to generate PDF report using these files. You can use XSLT to transform your existing XML document to Aspose.Pdf's compatible XML document and then generate PDF file. There are 3 steps to generate PDF using XML and XSLT.

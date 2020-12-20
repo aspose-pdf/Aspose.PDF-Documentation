@@ -3,6 +3,7 @@ title: Easy and Lightweight Deployment
 type: docs
 weight: 40
 url: /reportingservices/easy-and-lightweight-deployment/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

@@ -3,6 +3,7 @@ title: Aspose.PDF for .NET 11.8.0 Release Notes
 type: docs
 weight: 60
 url: /net/aspose-pdf-for-net-11-8-0-release-notes/
+lastmod: "2020-12-16"
 ---
 
 ### **Improvements and Changes**

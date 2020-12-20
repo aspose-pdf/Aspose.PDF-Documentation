@@ -3,6 +3,7 @@ title: Split PDF File into Individual Pages in Ruby
 type: docs
 weight: 80
 url: /java/split-pdf-file-into-individual-pages-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Split Pages**

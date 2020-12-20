@@ -3,6 +3,7 @@ title: Get and Set value of Form Field in a PDF Document
 type: docs
 weight: 20
 url: /java/get-and-set-value-of-form-field-in-a-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 ## **Set Value of Form Field in a PDF Document**

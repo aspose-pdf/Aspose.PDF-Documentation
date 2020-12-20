@@ -3,6 +3,7 @@ title: Working With Text in Jython
 type: docs
 weight: 40
 url: /java/working-with-text-in-jython/
+lastmod: "2020-12-16"
 ---
 
 **This section includes the following topics:**

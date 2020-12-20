@@ -3,6 +3,7 @@ title: Supported Parameters
 type: docs
 weight: 20
 url: /reportingservices/supported-parameters/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics:** 

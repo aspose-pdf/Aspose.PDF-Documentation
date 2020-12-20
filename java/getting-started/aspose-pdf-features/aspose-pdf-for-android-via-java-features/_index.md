@@ -3,6 +3,7 @@ title: Aspose.PDF for Android via Java Features
 type: docs
 weight: 40
 url: /java/aspose-pdf-for-android-via-java-features/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics:**

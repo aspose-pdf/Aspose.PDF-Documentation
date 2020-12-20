@@ -3,6 +3,7 @@ title: Evaluate Aspose.Pdf for Android via Java
 type: docs
 weight: 90
 url: /java/evaluate-aspose-pdf-for-android-via-java/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

@@ -3,6 +3,7 @@ title: Add Text Stamp in the Header or Footer section of the PDF file
 type: docs
 weight: 20
 url: /java/add-text-stamp-in-the-header-or-footer-section-of-the-pdf-file/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Adding different Headers in one PDF File**

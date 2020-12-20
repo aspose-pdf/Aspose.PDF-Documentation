@@ -3,6 +3,7 @@ title: Convert PDF pages to Images in Ruby
 type: docs
 weight: 20
 url: /java/convert-pdf-pages-to-images-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Convert PDF pages to Images**

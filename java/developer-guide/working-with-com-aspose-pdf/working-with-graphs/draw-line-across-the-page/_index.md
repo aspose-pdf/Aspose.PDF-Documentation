@@ -3,6 +3,7 @@ title: Draw Line Across the Page
 type: docs
 weight: 30
 url: /java/draw-line-across-the-page/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

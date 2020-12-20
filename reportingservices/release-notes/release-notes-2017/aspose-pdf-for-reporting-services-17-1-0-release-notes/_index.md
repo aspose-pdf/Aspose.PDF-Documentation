@@ -3,6 +3,7 @@ title: Aspose.PDF for Reporting Services 17.1.0 Release Notes
 type: docs
 weight: 10
 url: /reportingservices/aspose-pdf-for-reporting-services-17-1-0-release-notes/
+lastmod: "2020-12-16"
 ---
 
 We are very much excited to announce the release of Aspose.PDF for Reporting Services 17.1.0 with new features set.

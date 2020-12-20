@@ -3,6 +3,7 @@ title: Setting up Reporting Services
 type: docs
 weight: 20
 url: /reportingservices/setting-up-reporting-services/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}}

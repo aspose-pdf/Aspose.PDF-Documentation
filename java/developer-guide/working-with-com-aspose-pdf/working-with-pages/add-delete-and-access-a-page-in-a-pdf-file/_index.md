@@ -3,6 +3,7 @@ title: Add, Delete and Access a Page in a PDF File
 type: docs
 weight: 10
 url: /java/add-delete-and-access-a-page-in-a-pdf-file/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Insert an Empty Page into a PDF File**

@@ -4,6 +4,7 @@ type: docs
 weight: 80
 url: /net/parsing/
 description: Do you want to extract data from PDF documents? Discover various PDF data extraction methods with Aspose.PDF for .NET.
+lastmod: "2020-12-16"
 ---
 
 Parsing PDF documents is a term releated to extraction variuous kind of information from PDF file. This section covers how to:

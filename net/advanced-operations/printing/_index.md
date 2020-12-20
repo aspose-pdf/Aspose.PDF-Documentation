@@ -7,6 +7,7 @@ url: /net/printing-document/
 description: C# Print PDF techniques and walkthrough for C# PDF printer settings and .NET project tips
 aliases:
     - /pdf/net/working-with-pdf-printing-facades/
+lastmod: "2020-12-16"
 ---
 
 ## How to print PDF files in C#

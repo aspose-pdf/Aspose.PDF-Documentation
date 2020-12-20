@@ -3,6 +3,7 @@ title: License Aspose.PDF
 type: docs
 weight: 70
 url: /java/license-aspose-pdf/
+lastmod: "2020-12-16"
 ---
 
 #### **This section contains following article(s):**

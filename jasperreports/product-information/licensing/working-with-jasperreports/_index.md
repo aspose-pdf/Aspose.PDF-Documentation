@@ -3,6 +3,7 @@ title: Working with JasperReports
 type: docs
 weight: 10
 url: /jasperreports/working-with-jasperreports/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

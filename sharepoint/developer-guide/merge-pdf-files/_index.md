@@ -3,6 +3,7 @@ title: Merge PDF files
 type: docs
 weight: 90
 url: /sharepoint/merge-pdf-files/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

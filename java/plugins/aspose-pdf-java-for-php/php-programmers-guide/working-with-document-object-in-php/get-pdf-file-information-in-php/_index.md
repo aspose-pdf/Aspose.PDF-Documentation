@@ -3,6 +3,7 @@ title: Get PDF File Information in PHP
 type: docs
 weight: 40
 url: /java/get-pdf-file-information-in-php/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Get PDF File Information**

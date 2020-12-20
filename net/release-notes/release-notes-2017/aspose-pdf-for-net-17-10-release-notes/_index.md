@@ -30,6 +30,7 @@ url: /net/aspose-pdf-for-net-17-10-release-notes/
 |PDFNET-42086|Problem setting XmpPdfAExtensionValueType|Bug|
 ### **Public API changes in Aspose.PDF for .NET 17.10**
 ### **Added APIs:**
+lastmod: "2020-12-16"
 -----
 Property Aspose.PDF.Document.Duplex
 Constant Aspose.PDF.Facades.ViewerPreference.Simplex

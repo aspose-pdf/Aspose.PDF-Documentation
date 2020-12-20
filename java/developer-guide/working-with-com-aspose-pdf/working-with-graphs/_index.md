@@ -3,6 +3,7 @@ title: Working with Graphs
 type: docs
 weight: 110
 url: /java/working-with-graphs/
+lastmod: "2020-12-16"
 ---
 
 

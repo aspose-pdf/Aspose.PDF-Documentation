@@ -3,6 +3,7 @@ title: Working with Document - facades
 type: docs
 weight: 10
 url: /java/working-with-document-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Get PDF file information - facades**

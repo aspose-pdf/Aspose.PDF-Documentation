@@ -3,6 +3,7 @@ title: Aspose.PDF for .NET 9.5.0 Release Notes
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-9-5-0-release-notes/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

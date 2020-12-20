@@ -3,6 +3,7 @@ title: Working with Images - DOM
 type: docs
 weight: 130
 url: /java/working-with-images-dom/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics:**

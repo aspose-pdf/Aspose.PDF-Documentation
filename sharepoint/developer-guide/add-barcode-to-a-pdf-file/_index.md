@@ -3,6 +3,7 @@ title: Add Barcode to a PDF File
 type: docs
 weight: 40
 url: /sharepoint/add-barcode-to-a-pdf-file/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

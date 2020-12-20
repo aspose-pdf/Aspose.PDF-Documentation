@@ -3,6 +3,7 @@ title: Get PDF File Information in Jython
 type: docs
 weight: 30
 url: /java/get-pdf-file-information-in-jython/
+lastmod: "2020-12-16"
 ---
 
 ## **Aspose.PDF - Get Pdf File Info**

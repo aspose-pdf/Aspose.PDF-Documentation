@@ -3,6 +3,7 @@ title: Set Tagged PDFs Element Properties
 type: docs
 weight: 30
 url: /java/set-tagged-pdfs-element-properties/
+lastmod: "2020-12-16"
 ---
 
 ## **Setting Structure Elements Properties**

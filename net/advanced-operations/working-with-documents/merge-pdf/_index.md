@@ -8,6 +8,7 @@ description: This page explain how to merge PDF documents into a single PDF file
 aliases:
     - /net/merge-document/
     - /net/concatenate-pdf-files/
+lastmod: "2020-12-16"
 ---
 
 This article shows how to merge multiple PDF files into a single PDF document using Aspose.PDF for .NET. The example is written in C# but the API can be used in other .NET programming languages as well such as VB.NET. PDF files are merged such that the first one is joined at the end of the other document.
