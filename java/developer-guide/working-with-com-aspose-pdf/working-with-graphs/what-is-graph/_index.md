@@ -3,6 +3,7 @@ title: What is Graph?
 type: docs
 weight: 10
 url: /java/what-is-graph/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

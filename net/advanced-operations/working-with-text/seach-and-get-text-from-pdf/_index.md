@@ -4,6 +4,7 @@ type: docs
 weight: 60
 url: /net/search-and-get-text-from-pdf/
 description: This article explains how to use various tools to search and get a text from PDF documents. We can search text with reg ex, from particular or whole pages.
+lastmod: "2020-12-16"
 ---
 
 ## Search and Get Text from All the Pages of PDF Document

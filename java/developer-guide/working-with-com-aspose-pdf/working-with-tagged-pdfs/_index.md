@@ -3,6 +3,7 @@ title: Working with Tagged PDFs
 type: docs
 weight: 90
 url: /java/working-with-tagged-pdfs/
+lastmod: "2020-12-16"
 ---
 {{% alert color="primary" %}}
 

@@ -4,6 +4,7 @@ type: docs
 weight: 10
 url: /net/add-remove-move-pages/
 description: This article shows how to insert a page in a PDF file at the desired location, how to Insert an empty page at the end of a PDF file, and explains how to delete a page from a PDF file with C#.
+lastmod: "2020-12-16"
 ---
 
 Aspose.PDF for .NET API provides full flexibility to work with pages in a PDF document using C# or any other .NET language. It maintains all the pages of a PDF document in [PageCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection) that can be used to work with PDG pages. 

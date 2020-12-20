@@ -3,6 +3,7 @@ title: Set PDF File Information in PHP
 type: docs
 weight: 90
 url: /java/set-pdf-file-information-in-php/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Set PDF File Information**

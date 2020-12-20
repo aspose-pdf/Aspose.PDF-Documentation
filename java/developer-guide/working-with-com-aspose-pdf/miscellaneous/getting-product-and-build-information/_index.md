@@ -3,6 +3,7 @@ title: Getting Product and Build Information
 type: docs
 weight: 10
 url: /java/getting-product-and-build-information/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

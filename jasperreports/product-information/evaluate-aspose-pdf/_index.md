@@ -3,6 +3,7 @@ title: Evaluate Aspose.Pdf
 type: docs
 weight: 70
 url: /jasperreports/evaluate-aspose-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

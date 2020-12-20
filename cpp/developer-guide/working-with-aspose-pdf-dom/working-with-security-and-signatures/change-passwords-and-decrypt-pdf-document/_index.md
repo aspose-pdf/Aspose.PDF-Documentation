@@ -3,6 +3,7 @@ title: Change Passwords and Decrypt PDF Document
 type: docs
 weight: 10
 url: /cpp/change-passwords-and-decrypt-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Change Password of a PDF document**

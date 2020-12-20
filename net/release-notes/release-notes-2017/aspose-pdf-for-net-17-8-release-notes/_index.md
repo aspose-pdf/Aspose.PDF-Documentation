@@ -35,6 +35,7 @@ url: /net/aspose-pdf-for-net-17-8-release-notes/
 |PDFNET-41845|PDF to BMP - Text appears overlapped in resultant image|Bug|
 |PDFNET-42582|Text overlapping occurred when converting PDF to PNG|Bug|
 ### **Added APIs:**
+lastmod: "2020-12-16"
 -----
 **Class Aspose.PDF.DocumentFactory**
 

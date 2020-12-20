@@ -5,6 +5,7 @@ type: docs
 weight: 30
 url: /net/setting-structure-elements-properties/
 description: With Aspose.PDF for .NET, you may set different Structure Elements Properties. There are setting Text Block Structure Elements, setting Inline Structure Elements, adding Structure Element into Elements and etc.
+lastmod: "2020-12-16"
 ---
 
 In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers [CreateSectElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) and [CreateHeaderElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) methods of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. 

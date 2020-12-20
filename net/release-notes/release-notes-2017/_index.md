@@ -4,6 +4,7 @@ type: docs
 weight: 40
 url: /net/release-notes-2017/
 description: This page contains the Release Notes information for Aspose.PDF for .NET in 2017. This is a list of new Aspose.PDF for .NET features, enhancement, and bug fixes.
+lastmod: "2020-12-16"
 ---
 
 - [Aspose.PDF for .NET 17.12 Release Notes](/pdf/net/aspose-pdf-for-net-17-12-release-notes)

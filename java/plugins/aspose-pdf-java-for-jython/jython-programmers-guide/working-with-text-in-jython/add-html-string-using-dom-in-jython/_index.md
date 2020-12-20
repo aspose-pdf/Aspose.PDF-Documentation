@@ -3,6 +3,7 @@ title: Add HTML String using DOM in Jython
 type: docs
 weight: 10
 url: /java/add-html-string-using-dom-in-jython/
+lastmod: "2020-12-16"
 ---
 
 ## **Aspose.PDF - Add Html**

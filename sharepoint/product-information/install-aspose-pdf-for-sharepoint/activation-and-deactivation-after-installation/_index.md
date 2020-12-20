@@ -3,6 +3,7 @@ title: Activation and Deactivation after installation
 type: docs
 weight: 40
 url: /sharepoint/activation-and-deactivation-after-installation/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

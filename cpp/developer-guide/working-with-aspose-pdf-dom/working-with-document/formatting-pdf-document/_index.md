@@ -3,6 +3,7 @@ title: Formatting PDF Document
 type: docs
 weight: 10
 url: /cpp/formatting-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Get/Set Document Window and Page Display Properties**

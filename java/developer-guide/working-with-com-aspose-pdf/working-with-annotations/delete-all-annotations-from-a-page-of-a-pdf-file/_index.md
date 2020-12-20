@@ -3,6 +3,7 @@ title: Delete All Annotations from a Page of a PDF File
 type: docs
 weight: 80
 url: /java/delete-all-annotations-from-a-page-of-a-pdf-file/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

@@ -3,6 +3,7 @@ title: Get and Set Page Properties
 type: docs
 weight: 20
 url: /java/get-and-set-page-properties/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Get Page Count of PDF**

@@ -4,13 +4,14 @@ linktitle: Securing and signing in PDF
 type: docs
 weight: 150
 url: /net/securing-and-signing/
-description: This article describes the features of using a signature and securing your PDF document. 
+description: This section describes the features of using a signature and securing your PDF document. 
 aliases:
     - net/working-with-security-and-signatures/
 
+lastmod: "2020-12-16"
 ---
 
-## Articles in this section
+This section describes how to securely digitally sign PDF documents using C#. The terms electronic signature and digital signature are used interchangeably, but essentially the two are different. More generally, a digital signature comes with a [certification authority](https://en.wikipedia.org/wiki/Certificate_authority) approved seal and is used to protect the signed document from tampering. Instead, an electronic signature is often used to demonstrate the intention to sign a document.
 
 - [Digitally sign PDF file](/pdf/net/digitally-sign-pdf-file/)
 - [Set Privileges, Encrypt and Decrypt PDF File](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)

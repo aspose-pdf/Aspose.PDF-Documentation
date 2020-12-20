@@ -4,6 +4,7 @@ type: docs
 weight: 70
 url: /net/determine-line-break/
 description: Learn more about how to determinate a line break of multi-line TextFragment.
+lastmod: "2020-12-16"
 ---
 
 ## Track Line Breaking of Multi-Line TextFragment

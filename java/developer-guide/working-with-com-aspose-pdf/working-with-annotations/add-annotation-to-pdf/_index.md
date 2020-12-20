@@ -3,6 +3,7 @@ title: Add Annotation to PDF
 type: docs
 weight: 10
 url: /java/add-annotation-to-pdf/
+lastmod: "2020-12-16"
 ---
 
 

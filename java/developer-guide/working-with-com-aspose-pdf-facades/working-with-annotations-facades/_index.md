@@ -3,6 +3,7 @@ title: Working with Annotations - facades
 type: docs
 weight: 90
 url: /java/working-with-annotations-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Add Annotation in an Existing PDF File (facades)**

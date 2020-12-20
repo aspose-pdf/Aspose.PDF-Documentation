@@ -3,6 +3,7 @@ title: Install with Configuring Tool
 type: docs
 weight: 30
 url: /reportingservices/install-with-configuring-tool/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

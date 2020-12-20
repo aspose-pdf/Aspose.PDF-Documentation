@@ -4,6 +4,7 @@ type: docs
 weight: 20
 url: /net/extract-images-from-the-pdf-file/
 description: How to extract a part of the image from PDF using Aspose.PDF for .NET in C#
+lastmod: "2020-12-16"
 ---
 
 Images are held in each page's [Resources](https://apireference.aspose.com/net/pdf/aspose.pdf/resources) collection's [Images](https://apireference.aspose.com/net/pdf/aspose.pdf/resources/properties/images) collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.

@@ -3,6 +3,7 @@ title: System Requirements
 type: docs
 weight: 10
 url: /sharepoint/system-requirements/
+lastmod: "2020-12-16"
 ---
 
 ### **Server Requirements**

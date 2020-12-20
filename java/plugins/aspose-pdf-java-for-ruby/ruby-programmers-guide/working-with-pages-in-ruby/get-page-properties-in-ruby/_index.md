@@ -3,6 +3,7 @@ title: Get Page Properties in Ruby
 type: docs
 weight: 50
 url: /java/get-page-properties-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Get Page Properties**

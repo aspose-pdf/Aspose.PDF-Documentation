@@ -3,6 +3,7 @@ title: Working with Stamps and Watermarks - facades
 type: docs
 weight: 50
 url: /java/working-with-stamps-and-watermarks-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Add Page Number in a PDF File (facades)**

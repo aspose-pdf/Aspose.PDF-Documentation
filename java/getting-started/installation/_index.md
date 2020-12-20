@@ -3,6 +3,7 @@ title: Installation
 type: docs
 weight: 60
 url: /java/installation/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Installing Aspose.PDF for Java from Aspose Repository**

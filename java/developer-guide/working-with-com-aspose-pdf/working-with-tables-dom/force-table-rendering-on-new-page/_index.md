@@ -3,6 +3,7 @@ title: Force Table Rendering on New Page
 type: docs
 weight: 20
 url: /java/force-table-rendering-on-new-page/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

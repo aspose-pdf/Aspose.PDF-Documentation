@@ -21,6 +21,7 @@ This new version of Aspose.PDF for C++ has codebase of Aspose.PDF for .NET 20.9 
 
 ## Changes and Improvements
 |Key|Summary|Category
+lastmod: "2020-12-16"
 ---|---|---|
 |PDFCPP-1395|	PDF to Word - API is generating an error |Bug|
 |PDFCPP-1396|	PDF to Word - API is generating an error |Bug|

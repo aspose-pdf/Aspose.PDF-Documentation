@@ -4,6 +4,7 @@ type: docs
 weight: 30
 url: /net/extract-fonts-from-pdf/
 description: How to extract font from PDF using C#
+lastmod: "2020-12-16"
 ---
 
 In case you want to get all fonts from a PDF document, you can use FontUtilities.GetAllFonts() method provided in Document class. Please check following code snippet in order to get all fonts from an existing PDF document:

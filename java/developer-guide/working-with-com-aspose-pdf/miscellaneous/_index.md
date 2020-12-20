@@ -7,6 +7,7 @@ url: /java/miscellaneous/
 
 ## **This section includes the following topics**: 
 
+lastmod: "2020-12-16"
 ----------------------------------------------
 - [Getting Product and Build Information](/pdf/java/getting-product-and-build-information/)
 - [Changing Color Space of a PDF Document](/pdf/java/changing-color-space-of-a-pdf-document/)

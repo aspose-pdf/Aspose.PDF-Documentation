@@ -3,6 +3,7 @@ title: Formatting PDF Document
 type: docs
 weight: 30
 url: /java/formatting-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Get Document Window and Page Display Properties**

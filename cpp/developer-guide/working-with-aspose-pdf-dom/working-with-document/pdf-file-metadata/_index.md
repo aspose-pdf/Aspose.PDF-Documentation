@@ -3,6 +3,7 @@ title: PDF File Metadata
 type: docs
 weight: 20
 url: /cpp/pdf-file-metadata/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Get/Set PDF File Information**

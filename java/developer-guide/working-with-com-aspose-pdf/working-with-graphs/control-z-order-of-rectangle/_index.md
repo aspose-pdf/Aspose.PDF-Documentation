@@ -3,6 +3,7 @@ title: Control Z-Order of Rectangle
 type: docs
 weight: 50
 url: /java/control-z-order-of-rectangle/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

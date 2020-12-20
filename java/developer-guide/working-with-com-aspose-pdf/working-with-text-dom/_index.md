@@ -3,6 +3,7 @@ title: Working with Text - DOM
 type: docs
 weight: 180
 url: /java/working-with-text-dom/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics:** 

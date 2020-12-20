@@ -3,6 +3,7 @@ title: Get Page Properties in Jython
 type: docs
 weight: 50
 url: /java/get-page-properties-in-jython/
+lastmod: "2020-12-16"
 ---
 
 ## **Aspose.PDF - Get Page Properties**

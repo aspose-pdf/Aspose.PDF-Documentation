@@ -3,6 +3,7 @@ title: Installing and Using Aspose.Pdf for NetBeans - Maven
 type: docs
 weight: 10
 url: /java/installing-and-using-aspose-pdf-for-netbeans-maven/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Installing**

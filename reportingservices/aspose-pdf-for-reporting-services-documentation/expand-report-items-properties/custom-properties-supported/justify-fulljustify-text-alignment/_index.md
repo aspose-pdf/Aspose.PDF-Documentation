@@ -3,6 +3,7 @@ title: Justify FullJustify Text Alignment
 type: docs
 weight: 40
 url: /reportingservices/justify-fulljustify-text-alignment/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

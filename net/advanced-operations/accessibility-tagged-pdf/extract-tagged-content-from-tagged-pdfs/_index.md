@@ -5,6 +5,7 @@ type: docs
 weight: 20
 url: /net/extract-tagged-content-from-tagged-pdfs/
 description: This article explains how to extract tagged content PDF document using Aspose.PDF for .NET
+lastmod: "2020-12-16"
 ---
 
 In this article you will learn how to to extract tagged content PDF document using C#.

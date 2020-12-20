@@ -4,6 +4,7 @@ type: docs
 weight: 10
 url: /net/generate-pdf-from-xml
 description: Aspose.PDF for .NET provides the opportunity to convert an XML file into PDF document requiring that the input XML file must follow the Aspose.PDF for .NET Schema.
+lastmod: "2020-12-16"
 ---
 
 Aspose.PDF for .NET provides the opportunity to convert an XML file into PDF document requiring that the input XML file must follow the Aspose.PDF for .NET Schema.

@@ -3,6 +3,7 @@ title: Convert PDF to DOC and DOCX
 type: docs
 weight: 70
 url: /java/convert-pdf-to-doc-and-docx/
+lastmod: "2020-12-16"
 ---
 
 Aspose.PDF for Java can create PDF documents from scratch and is a great toolkit for updating, editing and manipulating existing PDF documents. An important feature is the ability to convert pages and entire PDF documents to images. Another popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. (Most users can't edit PDF documents but can easily work with tables, text, and images in Microsoft Word.)

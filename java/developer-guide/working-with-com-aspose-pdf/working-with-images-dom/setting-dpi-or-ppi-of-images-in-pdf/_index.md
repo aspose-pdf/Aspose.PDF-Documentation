@@ -3,6 +3,7 @@ title: Setting DPI or PPI of Images in PDF
 type: docs
 weight: 50
 url: /java/setting-dpi-or-ppi-of-images-in-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

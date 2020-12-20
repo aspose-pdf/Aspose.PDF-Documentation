@@ -3,6 +3,7 @@ title: Optimize PDF Document for the Web in Ruby
 type: docs
 weight: 70
 url: /java/optimize-pdf-document-for-the-web-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Optimize PDF for Web**

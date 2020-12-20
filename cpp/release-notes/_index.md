@@ -3,6 +3,7 @@ title: Release Notes
 type: docs
 weight: 30
 url: /cpp/release-notes/
+lastmod: "2020-12-16"
 ---
 
 - [Release Notes - 2020](/pdf/cpp/release-notes-2020/)

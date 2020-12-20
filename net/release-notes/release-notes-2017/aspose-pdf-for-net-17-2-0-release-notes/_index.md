@@ -3,6 +3,7 @@ title: Aspose.PDF for .NET 17.2.0 Release Notes
 type: docs
 weight: 110
 url: /net/aspose-pdf-for-net-17-2-0-release-notes/
+lastmod: "2020-12-16"
 ---
 
 ### **Improvements and Changes**

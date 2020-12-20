@@ -3,6 +3,7 @@ title: Aspose.PDF for .NET 5.2.1 Release Notes
 type: docs
 weight: 70
 url: /net/aspose-pdf-for-net-5-2-1-release-notes/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

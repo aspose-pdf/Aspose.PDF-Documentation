@@ -3,6 +3,7 @@ title: Release Notes
 type: docs
 weight: 30
 url: /jasperreports/release-notes/
+lastmod: "2020-12-16"
 ---
  
 - [Release Notes - 2020](/pdf/jasperreports/release-notes-2020/)

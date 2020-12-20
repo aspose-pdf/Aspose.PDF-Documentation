@@ -3,6 +3,7 @@ title: Change in methods name
 type: docs
 weight: 10
 url: /java/change-in-methods-name/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

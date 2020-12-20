@@ -3,6 +3,7 @@ title: System Requirements
 type: docs
 weight: 30
 url: /cpp/system-requirements/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Operating Systems**

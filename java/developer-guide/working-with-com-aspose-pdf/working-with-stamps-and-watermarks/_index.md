@@ -3,6 +3,7 @@ title: Working with Stamps and Watermarks
 type: docs
 weight: 170
 url: /java/working-with-stamps-and-watermarks/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics:** 

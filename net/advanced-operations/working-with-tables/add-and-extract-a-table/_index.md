@@ -4,6 +4,7 @@ type: docs
 weight: 10
 url: /net/add-and-extract-a-table/
 description: Aspose.PDF for .NET makes it possible to carry out various manipulations with the tables contained in your pdf document. You may add and extract a table in the existing PDF document, render table on a new page and etc.
+lastmod: "2020-12-16"
 ---
 
 ## Add table

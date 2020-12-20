@@ -3,6 +3,7 @@ title: API Limitations
 type: docs
 weight: 80
 url: /jasperreports/api-limitations/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

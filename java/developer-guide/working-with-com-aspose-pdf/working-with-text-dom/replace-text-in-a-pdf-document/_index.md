@@ -3,6 +3,7 @@ title: Replace Text in a PDF Document
 type: docs
 weight: 40
 url: /java/replace-text-in-a-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Replace Text in Pages of a PDF Document**

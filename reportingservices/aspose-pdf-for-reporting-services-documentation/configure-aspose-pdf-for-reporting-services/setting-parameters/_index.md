@@ -3,6 +3,7 @@ title: Setting Parameters
 type: docs
 weight: 10
 url: /reportingservices/setting-parameters/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

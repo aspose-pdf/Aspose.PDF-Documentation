@@ -3,6 +3,7 @@ title: Aspose.PDF for .NET 4.0.0.0 New Release Release Notes
 type: docs
 weight: 10
 url: /net/aspose-pdf-for-net-4-0-0-0-new-release-release-notes/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

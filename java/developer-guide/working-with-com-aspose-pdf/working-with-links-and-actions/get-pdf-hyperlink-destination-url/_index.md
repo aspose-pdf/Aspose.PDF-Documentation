@@ -3,6 +3,7 @@ title: Get PDF Hyperlink Destination - URL
 type: docs
 weight: 30
 url: /java/get-pdf-hyperlink-destination-url/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

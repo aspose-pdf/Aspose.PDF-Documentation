@@ -5,6 +5,7 @@ weight: 80
 url: /java/convert-pdf-to-excel-xls-and-xlsx/
 keywords: convert PDF to Excel using Java,convert PDF to XLS using Java,convert PDF to XLSX using Java,export table from PDF to Excel in Java
 description: Convert PDF documents to Excel workbooks using Java. Convert PDF to XLS or PDF to XLSX and export tabular data from PDF to Excel using Java.
+lastmod: "2020-12-16"
 ---
 
 ## **Convert PDF to Excel XLS and XSLX in Java**

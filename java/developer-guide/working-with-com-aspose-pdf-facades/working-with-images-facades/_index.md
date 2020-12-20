@@ -3,6 +3,7 @@ title: Working with Images - facades
 type: docs
 weight: 40
 url: /java/working-with-images-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Convert PDF Pages to Different Image Formats (Facades)**

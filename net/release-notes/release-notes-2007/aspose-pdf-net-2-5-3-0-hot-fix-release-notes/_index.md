@@ -3,6 +3,7 @@ title: Aspose.PDF .NET 2.5.3.0 Hot Fix Release Notes
 type: docs
 weight: 210
 url: /net/aspose-pdf-net-2-5-3-0-hot-fix-release-notes/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

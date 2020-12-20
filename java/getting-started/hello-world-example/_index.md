@@ -3,6 +3,7 @@ title: Hello World Example
 type: docs
 weight: 90
 url: /java/hello-world-example/
+lastmod: "2020-12-16"
 ---
 
 ## Hello World Example

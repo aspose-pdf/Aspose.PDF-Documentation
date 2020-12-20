@@ -3,6 +3,7 @@ title: Working With Text - Facades
 type: docs
 weight: 40
 url: /cpp/working-with-text-facades/
+lastmod: "2020-12-16"
 ---
 
 ### **Articles in this section**

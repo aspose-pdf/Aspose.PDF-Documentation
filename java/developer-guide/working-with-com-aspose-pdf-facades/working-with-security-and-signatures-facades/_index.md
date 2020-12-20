@@ -3,6 +3,7 @@ title: Working with Security and Signatures - facades
 type: docs
 weight: 80
 url: /java/working-with-security-and-signatures-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Add Digital Signature in a PDF File (facades)**

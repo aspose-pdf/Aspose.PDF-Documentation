@@ -3,6 +3,7 @@ title: Security Setting
 type: docs
 weight: 30
 url: /reportingservices/security-setting/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 
