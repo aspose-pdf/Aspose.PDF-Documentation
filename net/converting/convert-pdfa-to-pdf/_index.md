@@ -1,5 +1,6 @@
 ---
 title: Convert PDF/A to PDF
+linktitle: Convert PDF/A to PDF
 type: docs
 weight: 10
 url: /net/convert-pdfa-to-pdf/

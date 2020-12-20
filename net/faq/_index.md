@@ -1,5 +1,6 @@
 ---
 title: FAQ
+linktitle: FAQ
 type: docs
 weight: 120
 url: /net/faq/

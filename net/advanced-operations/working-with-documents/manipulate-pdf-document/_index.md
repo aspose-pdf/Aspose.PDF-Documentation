@@ -1,5 +1,6 @@
 ---
-title: Manipulate PDF Document
+title: Manipulate PDF Document using Aspose.PDF for .NET
+linktitle: Manipulate PDF Document
 type: docs
 weight: 20
 url: /net/manipulate-pdf-document/

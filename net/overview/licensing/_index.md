@@ -1,5 +1,6 @@
 ---
 title: Licensing and limitations
+linktitle: Licensing and limitations
 type: docs
 weight: 50
 url: /net/licensing/

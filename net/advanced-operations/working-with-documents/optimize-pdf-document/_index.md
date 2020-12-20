@@ -1,5 +1,6 @@
 ---
-title: Optimize PDF Document
+title: Optimize PDF Document using Aspose.PDF for .NET
+linktitle: Optimize PDF Document
 type: docs
 weight: 30
 url: /net/optimize-pdf-document/

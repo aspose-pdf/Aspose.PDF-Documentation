@@ -1,5 +1,6 @@
 ---
 title: Replace Text in a PDF Document
+linktitle: Replace Text in a PDF Document
 type: docs
 weight: 40
 url: /net/replace-text-in-a-pdf-document/

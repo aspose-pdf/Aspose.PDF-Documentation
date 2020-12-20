@@ -1,5 +1,6 @@
 ---
 title: Aspose.Pdf for .NET 6.1.0 Release Notes
+linktitle: Aspose.Pdf for .NET 6.1.0 Release Notes
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-6-1-0-release-notes/

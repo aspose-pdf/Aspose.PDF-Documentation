@@ -1,5 +1,6 @@
 ---
 title: Convert EMF to PDF
+linktitle: Convert EMF to PDF
 type: docs
 weight: 120
 url: /net/convert-emf-to-pdf/

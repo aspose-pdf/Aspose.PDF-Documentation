@@ -1,5 +1,6 @@
 ---
 title: Convert DICOM to PDF
+linktitle: Convert DICOM to PDF
 type: docs
 weight: 80
 url: /net/convert-dicom-to-pdf/

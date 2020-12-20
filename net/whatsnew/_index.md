@@ -1,5 +1,6 @@
 ---
 title: What's new
+linktitle: What's new
 type: docs
 weight: 10
 url: /net/whatsnew/

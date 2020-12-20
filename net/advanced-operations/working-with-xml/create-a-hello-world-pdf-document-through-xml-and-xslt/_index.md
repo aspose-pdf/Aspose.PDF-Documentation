@@ -1,5 +1,6 @@
 ---
 title: Create a Hello World PDF Document through XML and XSLT
+linktitle: Create a Hello World PDF Document through XML and XSLT
 type: docs
 weight: 10
 url: /net/create-a-hello-world-pdf-document-through-xml-and-xslt/

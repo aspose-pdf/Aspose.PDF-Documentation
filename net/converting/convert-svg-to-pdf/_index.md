@@ -1,5 +1,6 @@
 ---
 title: Convert SVG to PDF
+linktitle: Convert SVG to PDF
 type: docs
 weight: 180
 url: /net/convert-svg-to-pdf/

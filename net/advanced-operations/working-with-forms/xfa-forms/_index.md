@@ -1,5 +1,6 @@
 ---
-title: XFA Forms
+title: Working with XFA Forms using Aspose.PDF for .NET
+linktitle: XFA Forms
 type: docs
 weight: 10
 url: /net/xfa-forms/

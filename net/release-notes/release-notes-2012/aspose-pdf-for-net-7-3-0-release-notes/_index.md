@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF for .NET 7.3.0 Release Notes
+linktitle: Aspose.PDF for .NET 7.3.0 Release Notes
 type: docs
 weight: 30
 url: /net/aspose-pdf-for-net-7-3-0-release-notes/

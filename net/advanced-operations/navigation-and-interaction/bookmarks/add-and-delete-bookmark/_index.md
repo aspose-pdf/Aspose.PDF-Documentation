@@ -1,5 +1,6 @@
 ---
-title: Add and Delete a Bookmark
+title: Add and Delete a Bookmark using Aspose.PDF for .NET
+linktitle: Add and Delete a Bookmark
 type: docs
 weight: 10
 url: /net/add-and-delete-bookmark/

@@ -1,5 +1,6 @@
 ---
 title: Hello World Example
+linktitle: Hello World Example
 type: docs
 weight: 20
 url: /net/hello-world-example/

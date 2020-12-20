@@ -1,5 +1,6 @@
 ---
-title: AcroForms
+title: Working with AcroForms in PDF using Aspose.PDF for .NET
+linktitle: AcroForms
 type: docs
 weight: 10
 url: /net/acroforms/

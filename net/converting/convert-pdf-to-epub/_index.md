@@ -1,5 +1,6 @@
 ---
 title: Convert PDF to EPUB
+linktitle: Convert PDF to EPUB
 type: docs
 weight: 310
 url: /net/convert-pdf-to-epub/

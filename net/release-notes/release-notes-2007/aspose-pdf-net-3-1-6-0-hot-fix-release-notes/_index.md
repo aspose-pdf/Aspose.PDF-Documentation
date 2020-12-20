@@ -1,5 +1,6 @@
 ---
 title: Aspose.Pdf .Net 3.1.6.0 Hot Fix Release Notes
+linktitle: Aspose.Pdf .Net 3.1.6.0 Hot Fix Release Notes
 type: docs
 weight: 510
 url: /net/aspose-pdf-net-3-1-6-0-hot-fix-release-notes/

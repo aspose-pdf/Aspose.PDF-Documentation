@@ -1,5 +1,6 @@
 ---
-title: Extract fonts from PDF
+title: Extract fonts from PDF using Aspose.PDF for .NET
+linktitle: Extract fonts from PDF
 type: docs
 weight: 30
 url: /net/extract-fonts-from-pdf/

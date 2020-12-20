@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF for .NET 16.11.0 Release Notes
+linktitle: Aspose.PDF for .NET 16.11.0 Release Notes
 type: docs
 weight: 20
 url: /net/aspose-pdf-for-net-16-11-0-release-notes/

@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF Editor
+linktitle: Aspose.PDF Editor
 type: docs
 weight: 10
 url: /net/aspose-pdf-editor/

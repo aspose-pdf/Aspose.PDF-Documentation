@@ -1,5 +1,6 @@
 ---
 title: Convert PNG to PDF
+linktitle: Convert PNG to PDF
 type: docs
 weight: 140
 url: /net/convert-png-to-pdf/

@@ -1,5 +1,6 @@
 ---
 title: Determine Line Break
+linktitle: Determine Line Break
 type: docs
 weight: 70
 url: /net/determine-line-break/

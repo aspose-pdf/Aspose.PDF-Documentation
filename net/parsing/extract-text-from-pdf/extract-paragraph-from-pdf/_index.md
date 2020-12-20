@@ -1,5 +1,6 @@
 ---
-title: Extract Paragraph from PDF
+title: Extract Paragraph from PDF using Aspose.PDF for .NET
+linktitle: Extract Paragraph from PDF
 type: docs
 weight: 20
 url: /net/extract-paragraph-from-pdf/

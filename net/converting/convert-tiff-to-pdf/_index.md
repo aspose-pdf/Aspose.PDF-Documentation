@@ -1,5 +1,6 @@
 ---
 title: Convert TIFF to PDF
+linktitle: Convert TIFF to PDF
 type: docs
 weight: 130
 url: /net/convert-tiff-to-pdf/

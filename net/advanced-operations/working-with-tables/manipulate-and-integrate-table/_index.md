@@ -1,5 +1,6 @@
 ---
 title: Manipulate and Integrate Table
+linktitle: Manipulate and Integrate Table
 type: docs
 weight: 20
 url: /net/manipulate-and-integrate-table/

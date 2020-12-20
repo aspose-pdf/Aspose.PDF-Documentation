@@ -1,5 +1,6 @@
 ---
-title: Add backgrounds
+title: Add various backgrounds to PDF document uisng Aspose.PDF for .NET
+linktitle: Add backgrounds
 type: docs
 weight: 60
 url: /net/add-backgrounds/

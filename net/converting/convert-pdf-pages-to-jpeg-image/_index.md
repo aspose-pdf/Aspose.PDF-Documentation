@@ -1,5 +1,6 @@
 ---
 title: Convert PDF Pages to JPEG Image
+linktitle: Convert PDF Pages to JPEG Image
 type: docs
 weight: 360
 url: /net/convert-pdf-pages-to-jpeg-image/

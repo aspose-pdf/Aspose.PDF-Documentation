@@ -1,9 +1,10 @@
 ---
-title: Add watermarks
+title: Add watermarks to PDF document using C# and Aspose.PDF for .NET
+linktitle: Add watermarks
 type: docs
 weight: 40
 url: /net/add-watermarks/
-description: This page explains the features of working with artifacts and getting watermarks using the C# library. Check code snippet for resolves your tasks. 
+description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the C#.
 lastmod: "2020-12-16"
 sitemap:
     changefreq: "weekly"

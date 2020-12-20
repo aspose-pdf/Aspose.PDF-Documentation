@@ -1,5 +1,6 @@
 ---
 title: Convert PDF to TXT
+linktitle: Convert PDF to TXT
 type: docs
 weight: 300
 url: /net/convert-pdf-to-txt/

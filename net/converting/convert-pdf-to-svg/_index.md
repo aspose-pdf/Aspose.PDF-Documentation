@@ -1,5 +1,6 @@
 ---
 title: Convert PDF to SVG
+linktitle: Convert PDF to SVG
 type: docs
 weight: 340
 url: /net/convert-pdf-to-svg/

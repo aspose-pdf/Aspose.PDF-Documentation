@@ -1,5 +1,6 @@
 ---
 title: Rotate Text Inside PDF
+linktitle: Rotate Text Inside PDF
 type: docs
 weight: 50
 url: /net/rotate-text-inside-pdf/

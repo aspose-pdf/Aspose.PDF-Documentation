@@ -1,5 +1,6 @@
 ---
 title: Convert Markdown to PDF
+linktitle: Convert Markdown to PDF
 type: docs
 weight: 170
 url: /net/convert-markdown-to-pdf/
