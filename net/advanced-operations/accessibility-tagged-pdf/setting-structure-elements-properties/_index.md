@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers [CreateSectElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) and [CreateHeaderElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) methods of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. 
+In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers [CreateSectElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) and [CreateHeaderElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) methods of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface.
 
 Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
 

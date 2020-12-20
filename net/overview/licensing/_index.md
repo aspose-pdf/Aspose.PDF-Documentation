@@ -11,6 +11,7 @@ sitemap:
 ---
 
 ## Limitation of an evaluation version
+
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
 - **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for .NET provides full product functionality, but all the pages in the generated PDF documents are watermarked with "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" at the top.
@@ -19,16 +20,19 @@ We want our customers to test our components thoroughly before buying so the eva
 In the evaluation version from any collection, you can process only four elements (for example, only 4 pages, 4 form fields, etc.).
 
 ## Classic license
+
 The license can be loaded from a file or stream object. The easiest way to set a license is to put the license file in the same folder as the Aspose.PDF.dll file and specify the file name without a path, as shown in the example below.
 
 If you use any other Aspose for .NET component along with Aspose.PDF for .NET, please specify the namespace for License like **Aspose.Pdf.License**.
 
 ### Loading a license from file
+
 The easiest way to apply a license is to put the license file in the same folder as the Aspose.PDF.dll file and specify just the file name without a path.
 
 When you call the `SetLicense` method, the license name that you pass should be that of your license file. For example, if you change the license file name to "Aspose.PDF.lic.xml" pass that file name to the Pdf.SetLicense(…) method.
 
 ```csharp
+
 public static void SetLicenseExample()
 {
     // Initialize license object
