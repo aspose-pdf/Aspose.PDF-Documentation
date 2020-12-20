@@ -8,6 +8,9 @@ description: C# Print PDF techniques and walkthrough for C# PDF printer settings
 aliases:
     - /pdf/net/working-with-pdf-printing-facades/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## How to print PDF files in C#

@@ -6,6 +6,9 @@ weight: 90
 url: /net/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Articles in this section

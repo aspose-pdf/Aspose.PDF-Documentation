@@ -5,6 +5,9 @@ weight: 60
 url: /net/technical-support/
 description: This page gives recommendations for quick and quality to resolve your tasks using Aspose.PDF for .NET.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 Aspose.PDF allows you to use free technical support for all its products. If you have questions about Aspose.PDF, check the next article:
 

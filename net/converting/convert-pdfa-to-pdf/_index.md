@@ -5,6 +5,9 @@ weight: 10
 url: /net/convert-pdfa-to-pdf/
 lastmod: "2020-12-15"
 description: To convert PDF/A to PDF you should remove restrictions from the original document. Aspose.PDF for .NET allows you to solve this problem easly and simply.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Convert PDF/A document to PDF means removing PDF/A restriction from the original document. Class [`Document`](https://apireference.aspose.com/pdf/net/aspose.pdf/document) has method [`RemovePdfaCompliance(..)`](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) to remove

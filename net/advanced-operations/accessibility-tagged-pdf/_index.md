@@ -10,6 +10,9 @@ aliases:
     - /pdf/net/working-with-tagged-pdfs/
     - /pdf/net/accessebility-tagged-pdf/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 A Tagged PDF document can be accessed by people with disabilities. Adding accessibility tags to PDF files makes it easier for screen readers and other assistive technologies to read and navigate a document, with Tables of Contents, hyperlinks, bookmarks, alt text, and so on.

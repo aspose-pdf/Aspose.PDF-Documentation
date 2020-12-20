@@ -7,6 +7,9 @@ description: This page describes how to add an attachment to a PDF file with C#.
 aliases:
     - /pdf/net/adding-to-a-pdf-document/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.

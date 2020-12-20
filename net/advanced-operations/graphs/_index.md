@@ -8,6 +8,9 @@ description: This article explains what a is Graph, how to create a filled recta
 aliases:
     - /net/working-with-graphs/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## What is Graph

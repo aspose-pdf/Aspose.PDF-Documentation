@@ -4,6 +4,9 @@ type: docs
 weight: 430
 url: /net/aspose-pdg-net-3-0-2-0-hot-fix-release-notes/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 

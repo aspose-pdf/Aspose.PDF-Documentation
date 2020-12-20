@@ -9,6 +9,9 @@ description: This article describes to you what manipulations can be done with t
 aliases:
     - /net/working-with-document/
     - /pdf/net/working-with-document-facades/
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 PDF stands for the Portable Document Format, used to display documents in an electronic form independent of the software, hardware, or operating system they are viewed on. 

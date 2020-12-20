@@ -5,6 +5,9 @@ weight: 20
 url: /net/overview/
 lastmod: "2020-12-10"
 description: Overview of key-features and supported formats of Aspose.PDF for .NET, installation and licensing manual of .NET library.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 _This page is an overview of the Aspose.PDF for .NET features._

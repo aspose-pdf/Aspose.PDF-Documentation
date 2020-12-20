@@ -6,6 +6,9 @@ weight: 20
 url: /net/actions/
 description: This section explains how to add actions to the document and form fields programmatically with C#. Learn how to Add, Create, and Get Hyperlink in a PDF File.
 lastmod: "2020-12-18"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Add Hyperlink in a PDF File

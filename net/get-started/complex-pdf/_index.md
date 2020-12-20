@@ -8,6 +8,9 @@ description: Aspose.PDF for NET allows you to create more complex documents that
 aliases:
     - /pdf/net/complex-pdf/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 The [Hello, World](/pdf/net/hello-world-example/) example showed simple steps to create a PDF document using C# and Aspose.PDF. In this article, we will take a look at creating a more complex document with C# and Aspose.PDF for .NET. As an example, we'll take a document from a fictitious company that operates passenger ferry services.

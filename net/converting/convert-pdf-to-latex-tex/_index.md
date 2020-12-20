@@ -5,6 +5,9 @@ weight: 330
 url: /net/convert-pdf-to-latex-tex/
 lastmod: "2020-12-16"
 description: This article describes the features of converting PDF files to LaTeX format. To convert PDF files to TeX, Aspose.PDF use the class LaTeXSaveOptions.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **Aspose.PDF for .NET** support converting PDF to LaTeX/TeX.

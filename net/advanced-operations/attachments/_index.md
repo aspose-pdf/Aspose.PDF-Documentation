@@ -14,6 +14,9 @@ aliases:
     - /net/working-with-attachments/
     - /net/working-with-attachments-facades/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 In this section, we will explain how to work with attachments in PDF using Aspose.PDF for .NET.

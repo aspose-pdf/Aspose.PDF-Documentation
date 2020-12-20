@@ -5,6 +5,9 @@ weight: 20
 url: /net/convert-text-to-pdf/
 lastmod: "2020-12-16"
 description: Aspose.PDF for .NET allows you to convert plain text file to PDF or to convert pre-formatted text file to PDF. 
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **Aspose.PDF for .NET** support the feature converting plain text and pre-formatted text file to PDF format. 

@@ -6,6 +6,9 @@ url: /net/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: encrypt pdf,password protect pdf,decrypt pdf
 description: Encrypt PDF File using Different Encryption Types and Algorithms. Also, decrypt PDF File using Owner Password.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Set Privileges on an Existing PDF File

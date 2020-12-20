@@ -5,6 +5,9 @@ weight: 150
 url: /net/convert-mhtml-to-pdf/
 lastmod: "2020-12-15"
 description: The release of Aspose.PDF for .NET 9.0.0  introduced a new feature that allows you convert MHT files to PDF format.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}}

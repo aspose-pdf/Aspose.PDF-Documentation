@@ -4,6 +4,9 @@ type: docs
 weight: 740
 url: /net/aspose-pdf-net-3-5-4-0-hot-fix-release-notes/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 
