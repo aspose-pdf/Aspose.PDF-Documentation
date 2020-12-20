@@ -6,6 +6,9 @@ weight: 10
 url: /net/basics-of-dom-api/
 description: Aspose.PDF for .NET also uses the idea of DOM to represent the structure of a PDF document in terms of objects. Here you can read the description of this structure.
 lastmod: "2020-12-15"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Introduction to the DOM API

@@ -5,6 +5,9 @@ weight: 170
 url: /net/convert-markdown-to-pdf/
 lastmod: "2020-12-15"
 description: This article discribes that Aspose.PDF for .NET allows to create a PDF document based on input Markdown data file.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **This feature is supported by version 19.6 or greater.**

@@ -4,6 +4,9 @@ type: docs
 weight: 130
 url: /net/working-with-headings/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Apply Numbering Style in Heading

@@ -6,6 +6,9 @@ weight: 50
 url: /net/print-pdf-document-in-wpf-application/
 description: C# Print PDF documents from a WPF application. This code sample shows how to print PDF documents from a WPF application using C#.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Direct print

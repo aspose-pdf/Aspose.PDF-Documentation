@@ -5,6 +5,9 @@ weight: 80
 url: /net/convert-dicom-to-pdf/
 lastmod: "2020-12-15"
 description: Convert medical images saved in DICOM format to a PDF file using Aspose.PDF for .NET.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 DICOM format is the medical industry standard for the creation, storage, transmission, and visualization of digital medical images and documents of examined patients.

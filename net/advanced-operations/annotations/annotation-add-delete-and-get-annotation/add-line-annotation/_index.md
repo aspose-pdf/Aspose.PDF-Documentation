@@ -6,6 +6,9 @@ weight: 40
 url: /net/add-line-annotation/
 description: This article shows how you can add, get, and delete line annotation from your PDF document.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 The purpose of a Line Annotation is to display a single straight line on the page. When opened, it shall display a pop-up window containing the text of the associated note.

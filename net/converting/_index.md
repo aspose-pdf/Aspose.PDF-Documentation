@@ -9,6 +9,9 @@ description: This section contains a description of all possible options for con
 aliases:
     - /pdf/net/working-with-document-conversion/
     - /pdf/net/convert-pdf-pages/
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Aspose.PDF for .NET allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. 

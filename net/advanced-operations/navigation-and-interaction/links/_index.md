@@ -6,6 +6,9 @@ weight: 10
 url: /net/links/
 description: Add links to PDF programmatically. This guide is about how to add an internal page link in PDF or insert an external website hyperlink to PDF in C# language.
 lastmod: "2020-12-18"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Create, Update and Extract

@@ -5,6 +5,9 @@ weight: 20
 url: /net/release-notes-2019/
 lastmod: "2020-12-14"
 description: This page contains the Release Notes information for Aspose.PDF for .NET in 2019. This is a list of new Aspose.PDF for .NET features, enhancement, and bug fixes.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Aspose PDF for .NET Release Notes list new features, enhancement, and fixed bugs that were made in 2019. 

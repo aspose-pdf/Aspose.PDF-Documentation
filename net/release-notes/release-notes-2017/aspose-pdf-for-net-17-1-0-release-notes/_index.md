@@ -4,6 +4,9 @@ type: docs
 weight: 120
 url: /net/aspose-pdf-for-net-17-1-0-release-notes/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ### **Improvements and Changes**

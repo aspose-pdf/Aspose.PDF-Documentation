@@ -5,6 +5,9 @@ weight: 20
 url: /net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF allows you to add headers and footers to your PDF file using TextStamp class.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Adding Text in Header of PDF File

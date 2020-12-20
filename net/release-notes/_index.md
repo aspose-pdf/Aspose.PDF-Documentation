@@ -5,6 +5,9 @@ weight: 110
 url: /net/release-notes/
 lastmod: "2020-12-14"
 description: This section contains all the release notes that are regularly published and updated by the Aspose.PDF library. 
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Articles in this section

@@ -5,6 +5,9 @@ weight: 10
 url: /net/add-and-delete-bookmark/
 description: You can add a bookmark to a PDF document with C#. It is possible to delete all or particular bookmarks from a PDF document.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Add a Bookmark to a PDF Document

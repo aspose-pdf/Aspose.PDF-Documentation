@@ -5,6 +5,9 @@ weight: 350
 url: /net/convert-pdf-to-xps/
 lastmod: "2020-12-16"
 description: This page describes the definition of an XPS document and how to use it. Convert PDF to XPS with Aspose.PDF for .NET, using XpsSaveOptions class. 
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Aspose.PDF for .NET gives a possibility to convert PDF files to XPS format. Let try to use the presented code snippet for converting PDF files to XPS format with C#.

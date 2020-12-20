@@ -36,6 +36,9 @@ url: /net/aspose-pdf-for-net-17-8-release-notes/
 |PDFNET-42582|Text overlapping occurred when converting PDF to PNG|Bug|
 ### **Added APIs:**
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 -----
 **Class Aspose.PDF.DocumentFactory**
 

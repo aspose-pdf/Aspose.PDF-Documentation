@@ -5,6 +5,9 @@ weight: 20
 url: /net/manipulate-and-integrate-table/
 description: This article shows how to manipulate and integrate tables. You can read about set border style, margins, and padding of the table,  integrating table with the database, manipulating tables in existing PDF.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Set Border Style, Margins and Padding of the Table (MergedAPI)

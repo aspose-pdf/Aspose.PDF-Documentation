@@ -5,6 +5,9 @@ weight: 70
 url: /net/stamping/
 description: This section describes how to add image stamps and text stamps to a PDF page.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Articles in this section

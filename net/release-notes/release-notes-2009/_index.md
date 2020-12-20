@@ -4,6 +4,9 @@ type: docs
 weight: 120
 url: /net/release-notes-2009/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## **Release Notes - 2009**

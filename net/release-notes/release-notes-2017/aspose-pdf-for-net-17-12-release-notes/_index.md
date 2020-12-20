@@ -111,6 +111,9 @@ Property Aspose.Pdf.Text.TextReplaceOptions.AdjustmentNewLineSpacing
 Property Aspose.Pdf.Text.TextSearchOptions.LogTextExtractionErrors  
 ### **Removed APIs:**
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 -----
 Property Aspose.Pdf.HtmlFragment.HtmlLoadOptionsOfInstance
 

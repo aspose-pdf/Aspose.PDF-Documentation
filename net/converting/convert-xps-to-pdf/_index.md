@@ -5,6 +5,9 @@ weight: 190
 url: /net/convert-xps-to-pdf/
 lastmod: "2020-12-16"
 description: Aspose.PDF for .NET allows you to convert XPS to PDF files with a class named XpsLoadOptions. Check code snippet to solve this task. 
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **Aspose.PDF for .NET** support feature converting XPS files to PDF format. Check this article to resolve your tasks.

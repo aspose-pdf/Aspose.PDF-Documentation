@@ -45,6 +45,9 @@ url: /net/aspose-pdf-for-net-17-11-release-notes/
 ### **Public API changes in Aspose.PDF for .NET 17.11**
 ### **Added APIs:**
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 -----
 Method Aspose.PDF.Annotations.Annotation.ToImage(System.Drawing.Imaging.ImageFormat)
 Class Aspose.PDF.Annotations.HideAction
