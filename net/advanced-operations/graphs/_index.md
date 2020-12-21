@@ -1,5 +1,5 @@
 ---
-title: Working with Graphs | Aspose.PDF for .NET
+title: Working with Graphs
 linktitle: Working with Graphs
 type: docs
 weight: 70

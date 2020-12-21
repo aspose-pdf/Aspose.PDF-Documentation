@@ -1,5 +1,5 @@
 ---
-title: Add, Delete and Get Annotation in existing PDF file | Aspose.PDF
+title: Add, Delete and Get Annotation in existing PDF file
 linktitle: Add, Delete and Get Annotation in existing PDF file 
 type: docs
 weight: 10

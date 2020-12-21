@@ -1,5 +1,5 @@
 ---
-title: PDF-UA Compliance Test - Errors List | Aspose.PDF for .NET
+title: PDF-UA Compliance Test - Errors List
 linktitle: PDF-UA Compliance Test - Errors List
 type: docs
 weight: 50

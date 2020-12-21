@@ -1,5 +1,5 @@
 ---
-title: Setting Structure Elements Properties in Tagged PDF | Aspose.PDF
+title: Setting Structure Elements Properties in Tagged PDF
 linktitle: Setting Structure Elements Properties
 type: docs
 weight: 30

@@ -1,5 +1,5 @@
 ---
-title: PDF to PostScript conversion | Aspose.PDF for .NET
+title: PDF to PostScript conversion
 linktitle: PDF to PostScript conversion
 type: docs
 weight: 30

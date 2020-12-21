@@ -1,5 +1,5 @@
 ---
-title: Working with Tables | Aspose.PDF for .NET
+title: Working with Tables
 linktitle: Working with Tables
 type: docs
 weight: 50
