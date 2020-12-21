@@ -3,6 +3,7 @@ title: Add Table in Existing PDF Document
 type: docs
 weight: 50
 url: /java/add-table-in-existing-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The com.aspose.pdf package contains classes named [Table](http://www.aspose.com/api/java/pdf/com.aspose.pdf/classes/Table), [Cell](http://www.aspose.com/api/java/pdf/com.aspose.pdf/classes/Cell) and [Row](http://www.aspose.com/api/java/pdf/com.aspose.pdf/classes/Row) which provide functionality for creating tables when generating PDF documents from scratch.

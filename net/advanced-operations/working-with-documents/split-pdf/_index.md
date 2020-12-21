@@ -1,11 +1,16 @@
 ---
-title: Split document
+title: Split PDF document using Aspose.PDF for .NET
+linktitle: Split document
 type: docs
 weight: 60
 url: /net/split-pdf-document/
 description: This topic shows how to split PDF pages into individual PDF files in your .NET applications with C#. 
 aliases:
     - /net/split-document/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}}

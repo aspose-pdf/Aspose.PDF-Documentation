@@ -1,10 +1,14 @@
 ---
 title: Convert BMP to PDF
+linktitle: Convert BMP to PDF
 type: docs
 weight: 110
 url: /net/convert-bmp-to-pdf/
 lastmod: "2020-12-14"
 description: You may easily convert BMP bitmap files to PDF used to store digital bitmap images separately from the display device using Aspose.PDF. for NET.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Convert BMP files to PDF document using Aspose.PDF for .NET library.

@@ -7,6 +7,7 @@ url: /java/working-with-annotations/
 
 ## **This section includes the following topic**: 
 
+lastmod: "2020-12-16"
 ----------------------------------------------
 - [Add Annotation to PDF](/pdf/java/add-annotation-to-pdf/)
 - [Adding RichMediaAnnotation](/pdf/java/adding-richmediaannotation/)

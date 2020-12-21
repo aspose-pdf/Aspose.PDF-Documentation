@@ -7,6 +7,10 @@ url: /net/save-pdf-document/
 description: Learn how to save a PDF file in C# Aspose.PDF for .NET PDF library. 
 aliases:
     - /net/saving/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Saving a PDF document to file system

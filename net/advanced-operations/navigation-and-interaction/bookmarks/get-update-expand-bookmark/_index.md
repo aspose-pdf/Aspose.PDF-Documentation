@@ -1,9 +1,14 @@
 ---
-title: Get, Update and Expand a Bookmark
+title: Get, Update and Expand a Bookmark using Aspose.PDF for .NET
+linktitle: Get, Update and Expand a Bookmark
 type: docs
 weight: 20
 url: /net/get-update-and-expand-bookmark/
 description: This article describes how to use bookmarks in a PDF file. With our C# library, you can get bookmarks from the PDF file, get a bookmarks page number, update bookmarks in a PDF Document, and expand bookmarks when viewing a document.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Get Bookmarks

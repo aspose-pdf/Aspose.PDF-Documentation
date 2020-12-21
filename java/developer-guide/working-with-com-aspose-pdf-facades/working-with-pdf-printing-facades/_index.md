@@ -3,6 +3,7 @@ title: Working with PDF printing - facades
 type: docs
 weight: 20
 url: /java/working-with-pdf-printing-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Print PDF file to default printer (facades)**

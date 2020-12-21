@@ -3,6 +3,7 @@ title: Remove tables from existing PDF
 type: docs
 weight: 40
 url: /java/remove-tables-from-existing-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}}

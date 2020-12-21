@@ -3,6 +3,7 @@ title: Working with Pages in Ruby
 type: docs
 weight: 20
 url: /java/working-with-pages-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 **This section includes the following topics:**

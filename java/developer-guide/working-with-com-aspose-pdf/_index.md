@@ -3,6 +3,7 @@ title: Working with com.aspose.pdf
 type: docs
 weight: 10
 url: /java/working-with-com-aspose-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

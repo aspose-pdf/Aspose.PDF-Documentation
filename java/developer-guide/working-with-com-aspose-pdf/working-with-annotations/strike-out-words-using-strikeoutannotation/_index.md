@@ -3,6 +3,7 @@ title: Strike Out Words using StrikeOutAnnotation
 type: docs
 weight: 40
 url: /java/strike-out-words-using-strikeoutannotation/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

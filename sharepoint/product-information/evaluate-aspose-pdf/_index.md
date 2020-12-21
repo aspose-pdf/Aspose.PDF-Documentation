@@ -3,6 +3,7 @@ title: Evaluate Aspose.Pdf
 type: docs
 weight: 50
 url: /sharepoint/evaluate-aspose-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

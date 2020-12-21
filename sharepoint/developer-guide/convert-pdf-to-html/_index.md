@@ -3,6 +3,7 @@ title: Convert PDF to HTML
 type: docs
 weight: 80
 url: /sharepoint/convert-pdf-to-html/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

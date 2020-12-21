@@ -1,10 +1,14 @@
 ---
 title: Release Notes - 2018
+linktitle: Release Notes - 2018
 type: docs
 weight: 30
 url: /net/release-notes-2018/
 lastmod: "2020-12-14"
 description: This page contains the Release Notes information for Aspose.PDF for .NET in 2018. This is a list of new Aspose.PDF for .NET features, enhancement, and bug fixes.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 - [Aspose.PDF for .NET 18.12](/pdf/net/aspose-pdf-for-net-18-12-release-notes/)

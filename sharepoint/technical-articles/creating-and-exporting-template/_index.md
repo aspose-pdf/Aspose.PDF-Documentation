@@ -3,6 +3,7 @@ title: Creating and Exporting Template
 type: docs
 weight: 10
 url: /sharepoint/creating-and-exporting-template/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

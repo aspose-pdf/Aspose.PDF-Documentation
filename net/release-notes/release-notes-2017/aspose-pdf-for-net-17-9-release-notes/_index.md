@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF for .NET 17.9 Release Notes
+linktitle: Aspose.PDF for .NET 17.9 Release Notes
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-17-9-release-notes/
@@ -38,6 +39,10 @@ url: /net/aspose-pdf-for-net-17-9-release-notes/
 |PDFNET-38683|PDF to PPTX - Layout issues in resultant file|Bug|
 |PDFNET-38623|PDF to PPTX: All images on a PDF page are being rendered as a single image in PPTX slide|Bug|
 ### **Added APIs:**
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 -----
 Method Aspose.PDF.Document.Check(System.Boolean)
 Method Aspose.PDF.DocumentFactory.CreateDocument

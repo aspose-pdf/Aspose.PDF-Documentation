@@ -1,5 +1,6 @@
 ---
 title: Key Features
+linktitle: Key Features
 type: docs
 weight: 20
 url: /net/key-features/
@@ -7,6 +8,9 @@ description: Aspose.PDF for .NET demonstrates its general features. This page de
 lastmod: "2020-12-16"
 aliases:
     - /net/feature-list/
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## General Features

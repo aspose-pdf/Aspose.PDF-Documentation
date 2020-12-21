@@ -3,6 +3,7 @@ title: Working with Text
 type: docs
 weight: 60
 url: /cpp/working-with-text/
+lastmod: "2020-12-16"
 ---
 
 ### **Articles in this section**

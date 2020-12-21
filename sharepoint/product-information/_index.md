@@ -3,6 +3,7 @@ title: Product Information
 type: docs
 weight: 10
 url: /sharepoint/product-information/
+lastmod: "2020-12-16"
 ---
 
 ## **Articles in this section**

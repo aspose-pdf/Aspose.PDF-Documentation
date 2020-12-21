@@ -3,6 +3,7 @@ title: Get Number Of Pages in Jython
 type: docs
 weight: 30
 url: /java/get-number-of-pages-in-jython/
+lastmod: "2020-12-16"
 ---
 
 ## **Aspose.PDF - Get Number Of Pages**

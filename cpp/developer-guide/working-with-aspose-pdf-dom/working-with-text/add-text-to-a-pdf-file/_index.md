@@ -3,6 +3,7 @@ title: Add Text to a PDF file
 type: docs
 weight: 10
 url: /cpp/add-text-to-a-pdf-file/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Adding Text while creating PDF File**

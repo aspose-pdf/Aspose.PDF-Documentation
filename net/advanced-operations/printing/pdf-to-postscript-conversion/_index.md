@@ -1,9 +1,14 @@
 ---
-title: PDF to PostScript conversion
+title: PDF to PostScript conversion in Aspose.PDF for .NET
+linktitle: PDF to PostScript conversion
 type: docs
 weight: 30
 url: /net/pdf-to-postscript-conversion/
 description: We have a solution for PDF to PostScript conversion. Use for this task printing and PdfViewer class. Also, this article describes how to checking print job status, how to get and set print job owner name.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 The PdfViewer class provides the capability to print PDF documents and with the help of this class, we can also convert PDF files to PostScript format. To convert a PDF file into PostScript, first install any PS printer and just print to file with the help of PdfViewer. You may follow the instructions specified by the University of Hawaii on how to install PS printer. The following code snippet shows you how to print and convert a PDF to PostScript format.

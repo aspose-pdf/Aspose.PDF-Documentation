@@ -1,9 +1,14 @@
 ---
-title: Extract text from PDF
+title: Extract text from PDF using Aspose.PDF for .NET
+linktitle: Extract text from PDF
 type: docs
 weight: 10
 url: /net/extract-text-from-all-pdf/
 description: This article describes various ways to extract text from PDF documents using Aspose.PDF in C#. From entire pages, from a specific part, based on columns, etc.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Extract Text From All the Pages of a PDF Document

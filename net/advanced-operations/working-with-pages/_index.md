@@ -5,6 +5,10 @@ type: docs
 weight: 20
 url: /net/working-with-pages/
 description: How to add pages, add headers and footers, add watermarks and backgrounds you can know in this section. Aspose.PDF for .NET explain to you all details on this topic. 
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Articles in this section

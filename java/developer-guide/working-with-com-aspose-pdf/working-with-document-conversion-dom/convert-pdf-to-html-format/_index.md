@@ -3,6 +3,7 @@ title: Convert PDF to HTML format
 type: docs
 weight: 60
 url: /java/convert-pdf-to-html-format/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**PDF to HTML - Specify Images Folder**

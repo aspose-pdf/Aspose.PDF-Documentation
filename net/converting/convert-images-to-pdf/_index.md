@@ -1,10 +1,14 @@
 ---
 title: Convert images to PDF 
+linktitle: Convert images to PDF 
 type: docs
 weight: 100
 url: /net/convert-images-to-pdf/
 lastmod: "2020-12-15"
 description: You can very easy convert a JPG images to PDF file. Also, you can convert an image to PDF with the same  height and width of the page.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 No need to wonder how to convert Images to PDF, because Apose.PDF for .NET library has best decision.

@@ -3,6 +3,7 @@ title: Working with Forms - facades
 type: docs
 weight: 60
 url: /java/working-with-forms-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Flatten all Fields in existing PDF File (facades)**

@@ -3,6 +3,7 @@ title: Working with Bookmarks - facades
 type: docs
 weight: 70
 url: /java/working-with-bookmarks-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Create Bookmarks of All Pages (facades)**

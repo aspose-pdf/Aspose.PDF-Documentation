@@ -3,6 +3,7 @@ title: Get Attachments from a PDF Document
 type: docs
 weight: 20
 url: /java/get-attachments-from-a-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

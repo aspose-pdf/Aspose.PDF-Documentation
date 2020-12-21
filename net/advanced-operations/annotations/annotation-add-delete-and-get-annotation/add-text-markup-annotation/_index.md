@@ -1,9 +1,14 @@
 ---
-title: Add Text Markup Annotation
+title: Add Text Markup Annotation using Aspose.PDF for .NET
+linktitle: Add Text Markup Annotation
 type: docs
 weight: 70
 url: /net/add-text-markup-annotation/
 description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Text Markup Annotations shall appear as highlights, underlines, strikeouts, or jagged (“squiggly”) underlines in the text of a document. When opened, they shall display a pop-up window containing the text of the associated note.

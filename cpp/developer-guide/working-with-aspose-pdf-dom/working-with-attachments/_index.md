@@ -5,6 +5,7 @@ weight: 30
 url: /cpp/working-with-attachments/
 keywords: Cpp PDF API,add pdf attachment using cpp,get pdf attachment info using cpp,remove pdf attachment using cpp
 description: Use C++ PDF API to access, add and remove attachments in PDF files using C++ from within your applications. Complete guide with C++ code samples.
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Add Attachment to PDF**

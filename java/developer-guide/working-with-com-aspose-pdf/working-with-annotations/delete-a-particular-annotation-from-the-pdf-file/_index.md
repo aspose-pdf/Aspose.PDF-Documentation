@@ -3,6 +3,7 @@ title: Delete a Particular Annotation from the PDF File
 type: docs
 weight: 70
 url: /java/delete-a-particular-annotation-from-the-pdf-file/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

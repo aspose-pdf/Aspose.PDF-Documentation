@@ -3,6 +3,7 @@ title: Get a Particular Annotation from a PDF
 type: docs
 weight: 50
 url: /java/get-a-particular-annotation-from-a-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

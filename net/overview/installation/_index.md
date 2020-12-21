@@ -1,20 +1,26 @@
 ---
 title: Installation
+linktitle: Installation
 type: docs
 weight: 40
 url: /net/installation/
 description: This section shows a product description and instructions for installing Aspose.PDF for .Net on your own, as well as using NuGet.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Welcome to the Aspose.PDF for .NET
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 **Aspose.PDF is a .NET** component built to allow developers to create PDF documents, whether simple or complex, on the fly programmatically. Aspose.PDF for .NET allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. Moreover, it is also possible to compress PDF documents. Aspose.PDF for .NET provides excellent security features to develop secure PDF documents. And the most distinct feature of Aspose.PDF for .NET is that it supports the creation of PDF documents through both an API and from XML templates.
 
 {{% /alert %}} 
 
 ## Product Description
+
 **Aspose.PDF for .NET** is a robust .NET component that lets developers create PDF documents from scratch without using Adobe Acrobat. It provides a simple Application Programming Interface (API) that is easy to learn and use.
 
 **Aspose.PDF for .NET** is implemented using Managed C# and it can be used with any .NET language like C#, VB.NET and J# etc. It can be integrated with any kind of application either it's an ASP.NET Web Application or a Windows Application.
@@ -26,6 +32,7 @@ The fast, light-weight component creates PDF documents efficiently and helps you
 **Aspose.PDF for .NET** is multithread safe as long as only one thread works on a document at a time. It is a typical scenario to have one thread working on one document. Different threads can safely work on different documents at the same time.
 
 ## Declaration
+
 All Aspose .NET components require Full Trust permission set. The reason is, Aspose .NET components need to access registry settings, system files other than virtual directory for certain operations like parsing fonts etc. Moreover, Aspose .NET Components are based on core .NET system classes that also require Full Trust permission set in many cases.
 
 Internet Service Providers hosting multiple applications from different companies mostly enforce Medium Trust security level. In case of .NET 2.0, such security level applies the following constraints:
@@ -41,6 +48,7 @@ Due to the reasons specified above, Aspose .NET components cannot be used on ser
 # Installation
 
 ## Evaluate Aspose.PDF for .NET
+
 You can easily download Aspose.PDF for .Net for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to apply the license.
 
 The evaluation version of Aspose.PDF (without a license specified) provides full product functionality, but it has two limitations: it inserts an evaluation watermark, and only four elements of any collection can be viewed/edited.
@@ -52,17 +60,20 @@ If you want to test Aspose.PDF for .NET without the evaluation version limitatio
 {{% /alert %}} 
 
 ## Installing Aspose.PDF for .NET through NuGet
+
 NuGet is a free, open source developer-focused package management system for the .NET platform intent on simplifying the process of incorporating third party libraries into a .NET application during development. It is a Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects that use the .NET Framework. A library or tool can easily be shared with other developers by creating a NuGet package and storing it inside a NuGet repository. When you install the package, NuGet copies files to your solution and automatically makes the necessary changes, such as adding references and changing your app.config or web.config files. If you decide to remove the library, NuGet removes files and reverses whatever changes it made to your project so that no clutter is left.
 
 ### Referencing Aspose.PDF for .NET
 
 #### Install package using the Package Manager Console
+
 - Open your .NET application in Visual Studio.
 - On the Tools menu, select **NuGet Package Manager** and then **Package Manager Console**.
 - Type the command `Install-Package Aspose.PDF` to install the latest full release, or type the command `Install-Package Aspose.PDF -prerelease` to install the latest release including hot fixes.
 - Press `Enter`
 
 #### Update package using the Package Manager Console
+
 If you have already referenced the component through NuGet, follow these steps to update the reference to the latest version:
 
 - Open you .NET application in Visual Studio.
@@ -70,6 +81,7 @@ If you have already referenced the component through NuGet, follow these steps t
 - Type the command `Update-Package Aspose.PDF` to reference the latest full release, or type the command `Update-Package Aspose.PDF -prerelease` to install latest release including hot fixes.
 
 #### Install Package using the Package Manager GUI
+
 Follow these steps to reference the component using the package manager GUI:
 
 - Open you .NET application in Visual Studio.
@@ -81,6 +93,7 @@ Follow these steps to reference the component using the package manager GUI:
 ![Installation](../images/install.gif)
 
 ### Working with .NET Core DLLs in Non-Windows Environment
+
 As Aspose.PDF for .NET provides .NET Standard 2.0 (.NET Core 2.0) support, so it can be used in Core Applications running in Linux like operating systems. We are constantly working over improving the .NET Core support in our API. However, there are some following operations which we recommend our customers to perform, in order to get better results while using features of Aspose.PDF for .NET:
 
 Please install:

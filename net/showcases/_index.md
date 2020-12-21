@@ -1,9 +1,14 @@
 ---
 title: Showcases
+linktitle: Showcases
 type: docs
 weight: 100
 url: /net/showcases/
 description: This section explains how you can use the Aspose.PDF for .NET with different showcase examples.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Articles in this section

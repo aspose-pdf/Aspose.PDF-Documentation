@@ -3,6 +3,7 @@ title: Add HTML String using DOM in PHP
 type: docs
 weight: 10
 url: /java/add-html-string-using-dom-in-php/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Add HTML**

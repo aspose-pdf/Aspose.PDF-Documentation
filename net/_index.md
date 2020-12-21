@@ -9,6 +9,9 @@ lastmod: "2020-12-16"
 description: Learn to use Aspose.PDF .NET to create applications for PDF documents processing on any platform using C#, VB. Browse tutorials, sample code, and more.
 aliases:
     - /pdf/net/working-with-aspose-pdf/
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 ![Aspose.PDF for .NET logo image](home_1.png)
 
@@ -29,6 +32,8 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 - [Converting documents](/pdf//net/converting/)
 - [Parsing PDF documents](/pdf/net/parsing)
 - [Advanced operations](/pdf/net/advanced-operations)
+- [Showcases](/pdf/net/showcases)
+- [Release Notes](/pdf/net/release-notes)
 
 ## Aspose.PDF for .NET Resources
 

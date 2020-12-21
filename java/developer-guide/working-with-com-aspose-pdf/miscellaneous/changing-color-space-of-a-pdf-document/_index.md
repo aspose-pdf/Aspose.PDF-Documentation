@@ -3,6 +3,7 @@ title: Changing Color Space of a PDF Document
 type: docs
 weight: 20
 url: /java/changing-color-space-of-a-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

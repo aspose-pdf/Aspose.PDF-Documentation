@@ -3,6 +3,7 @@ title: Convert PDF to Excel Workbook in PHP
 type: docs
 weight: 20
 url: /java/convert-pdf-to-excel-workbook-in-php/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Convert PDF to Excel Workbook**

@@ -1,9 +1,14 @@
 ---
 title: Render table using Entity Framework model as data source
+linktitle: Render table using Entity Framework model as data source
 type: docs
 weight: 40
 url: /net/render-table-using-entity-framework-model-as-data-source/
 description: This article will show you how to render table using Entity Framework model as data source using the Aspose.PDF for .NET.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 There are a number of tasks when for some reason it is more convenient to export data from databases to a PDF document without using the recently popular HTML to PDF conversion scheme. 

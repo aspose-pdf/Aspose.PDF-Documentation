@@ -3,6 +3,7 @@ title: Ruby Programmers Guide
 type: docs
 weight: 20
 url: /java/ruby-programmers-guide/
+lastmod: "2020-12-16"
 ---
 
 **This section includes the following topics:**

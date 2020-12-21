@@ -3,6 +3,7 @@ title: Set PDF Expiration in PHP
 type: docs
 weight: 80
 url: /java/set-pdf-expiration-in-php/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Set PDF Expiration**

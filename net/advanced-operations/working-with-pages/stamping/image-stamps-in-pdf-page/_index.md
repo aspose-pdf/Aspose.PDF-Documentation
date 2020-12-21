@@ -1,9 +1,14 @@
 ---
 title:  Image stamps in PDF page
+linktitle:  Image stamps in PDF page
 type: docs
 weight: 10
 url: /net/image-stamps-in-pdf-page/
 description: Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF library.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Adding Image Stamp in PDF File

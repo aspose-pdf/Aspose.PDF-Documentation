@@ -1,5 +1,6 @@
 ---
 title: Hello World Example
+linktitle: Hello World Example
 type: docs
 weight: 20
 url: /net/hello-world-example/
@@ -7,6 +8,9 @@ description: This page show how use simple programming for create a PDF document
 aliases:
     - url: /pdf/net/hello-world/
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 A "Hello World" example is traditionally used to introduce features of a programming language or software with a simple use case.

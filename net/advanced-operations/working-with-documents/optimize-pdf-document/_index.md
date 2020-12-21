@@ -1,9 +1,14 @@
 ---
-title: Optimize PDF Document
+title: Optimize PDF Document using Aspose.PDF for .NET
+linktitle: Optimize PDF Document
 type: docs
 weight: 30
 url: /net/optimize-pdf-document/
 description: You can use several techniques to optimize PDF with Aspose.PDF for .NET. Check code snippet to resolve this task.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 A PDF document may sometimes contain additional data. Reducing the size of a PDF file will help you optimize network transfer and storage. This is especially handy for publishing on web pages, sharing on social networks, sending by e-mail, or archiving in storage. We can use several techniques to optimize PDF:

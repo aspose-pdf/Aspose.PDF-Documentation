@@ -3,6 +3,7 @@ title: Developer Guide
 type: docs
 weight: 20
 url: /cpp/developer-guide/
+lastmod: "2020-12-16"
 ---
 
 ## **Articles in this section**

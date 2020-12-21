@@ -8,6 +8,10 @@ description: This topic explains how to use operators with Aspose.PDF. The opera
 aliases:
     - /net/working-with-operators/
     - /net/operator/
+lastmod: "2020-12-18"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Introduction to the PDF Operators and Their Usage

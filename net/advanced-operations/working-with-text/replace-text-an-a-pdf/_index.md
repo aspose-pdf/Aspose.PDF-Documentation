@@ -1,9 +1,14 @@
 ---
 title: Replace Text in a PDF Document
+linktitle: Replace Text in a PDF Document
 type: docs
 weight: 40
 url: /net/replace-text-in-a-pdf-document/
 description: Learn more about various ways of replacing and removing text from PDF. Aspose.PDF allows replacing text in a particular region or with a regular expression.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Replace Text in all pages of PDF document

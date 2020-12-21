@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF for .NET 17.8 Release Notes
+linktitle: Aspose.PDF for .NET 17.8 Release Notes
 type: docs
 weight: 50
 url: /net/aspose-pdf-for-net-17-8-release-notes/
@@ -35,6 +36,10 @@ url: /net/aspose-pdf-for-net-17-8-release-notes/
 |PDFNET-41845|PDF to BMP - Text appears overlapped in resultant image|Bug|
 |PDFNET-42582|Text overlapping occurred when converting PDF to PNG|Bug|
 ### **Added APIs:**
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 -----
 **Class Aspose.PDF.DocumentFactory**
 

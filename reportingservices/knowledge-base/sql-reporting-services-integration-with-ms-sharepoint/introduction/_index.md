@@ -3,6 +3,7 @@ title: Introduction
 type: docs
 weight: 10
 url: /reportingservices/introduction/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}}

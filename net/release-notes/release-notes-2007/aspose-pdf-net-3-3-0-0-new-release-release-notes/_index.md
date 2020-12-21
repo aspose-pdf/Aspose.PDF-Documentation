@@ -1,8 +1,13 @@
 ---
 title: Aspose.Pdf .Net 3.3.0.0 New Release Release Notes
+linktitle: Aspose.Pdf .Net 3.3.0.0 New Release Release Notes
 type: docs
 weight: 560
 url: /net/aspose-pdf-net-3-3-0-0-new-release-release-notes/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 

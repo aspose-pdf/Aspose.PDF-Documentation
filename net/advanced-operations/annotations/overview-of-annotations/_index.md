@@ -5,6 +5,10 @@ type: docs
 weight: 10
 url: /net/overview-of-annotations/
 description: Check out the list of possible annotations you can work with using Aspose.PDF for .NET.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 The following table indicates the Annotation types that Aspose.PDF for .NET supported.

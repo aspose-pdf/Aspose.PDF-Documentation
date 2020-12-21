@@ -1,5 +1,6 @@
 ---
 title: Convert PDF to Word
+linktitle: Convert PDF to Word
 type: docs
 weight: 270
 url: /net/convert-pdf-to-doc/
@@ -7,6 +8,9 @@ lastmod: "2020-12-15"
 description: Convert PDF file to DOC or DOCX format with ease and full control with Aspose.PDF for .NET. This page shows a code snippet to accomplish this task. 
 aliases:
     - /pdf/net/convert-pdf-to-doc-and-docx/
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 One of the most popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. Aspose.PDF for .NET allows you to convert PDF files to DOC.

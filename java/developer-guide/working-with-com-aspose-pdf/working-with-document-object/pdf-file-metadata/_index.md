@@ -3,6 +3,7 @@ title: PDF File Metadata
 type: docs
 weight: 20
 url: /java/pdf-file-metadata/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Get PDF File Information**

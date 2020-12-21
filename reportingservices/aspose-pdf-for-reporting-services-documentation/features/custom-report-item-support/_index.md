@@ -3,6 +3,7 @@ title: Custom Report Item Support
 type: docs
 weight: 30
 url: /reportingservices/custom-report-item-support/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}}

@@ -1,10 +1,14 @@
 ---
 title: Convert SVG to PDF
+linktitle: Convert SVG to PDF
 type: docs
 weight: 180
 url: /net/convert-svg-to-pdf/
 lastmod: "2020-12-16"
 description: This page shows the possibility of converting SVG  to PDF with Aspose.PDF and describes how to get SVG dimensions and overview SVG Supported Features.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **Aspose.PDF for .NET** explains how to convert SVG images to PDF format and how to get dimensions of the source SVG file. 

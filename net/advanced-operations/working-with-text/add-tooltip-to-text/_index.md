@@ -1,9 +1,14 @@
 ---
 title: Add Tooltip to Text
+linktitle: Add Tooltip to Text
 type: docs
 weight: 20
 url: /net/add-tooltip-to-text/
 description: Aspose.PDF implements a function of hiding actions, with which you can show/hide an annotation when you enter/leave the mouse over an invisible button.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Add Tooltip to Searched Text by adding Invisible Button

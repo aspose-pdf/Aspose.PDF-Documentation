@@ -3,6 +3,7 @@ title: Aspose.PDF for Reporting Services Documentation
 type: docs
 weight: 10
 url: /reportingservices/aspose-pdf-for-reporting-services-documentation/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics:** 

@@ -6,6 +6,9 @@ weight: 130
 url: /net/add-watermarkannotation/
 description: The Watermark Annotation in the text uses to represent graphics on the page. Check code snippet to resolve this task. 
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 A watermark annotation shall be used to represent graphics that shall be printed at a fixed size and position on a page, regardless of the dimensions of the printed page.

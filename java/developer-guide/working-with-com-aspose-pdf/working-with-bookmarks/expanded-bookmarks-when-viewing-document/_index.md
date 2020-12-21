@@ -3,6 +3,7 @@ title: Expanded Bookmarks when viewing document
 type: docs
 weight: 70
 url: /java/expanded-bookmarks-when-viewing-document/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

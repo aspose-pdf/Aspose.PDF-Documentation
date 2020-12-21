@@ -3,6 +3,7 @@ title: Evaluate Aspose.PDF
 type: docs
 weight: 50
 url: /java/evaluate-aspose-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

@@ -3,6 +3,7 @@ title: Quick Tips
 type: docs
 weight: 50
 url: /java/quick-tips/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

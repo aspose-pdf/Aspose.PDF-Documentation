@@ -3,6 +3,7 @@ title: Export a Particular Item from a List
 type: docs
 weight: 10
 url: /sharepoint/export-a-particular-item-from-a-list/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

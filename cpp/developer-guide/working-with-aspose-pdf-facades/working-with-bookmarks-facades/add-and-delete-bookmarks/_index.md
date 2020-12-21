@@ -3,6 +3,7 @@ title: Add and Delete Bookmarks
 type: docs
 weight: 10
 url: /cpp/add-and-delete-bookmarks/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Add Bookmark**

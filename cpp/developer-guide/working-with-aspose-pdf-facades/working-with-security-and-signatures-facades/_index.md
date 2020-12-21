@@ -3,6 +3,7 @@ title: Working with Security and Signatures - Facades
 type: docs
 weight: 30
 url: /cpp/working-with-security-and-signatures-facades/
+lastmod: "2020-12-16"
 ---
 #### **Articles in this section**
 

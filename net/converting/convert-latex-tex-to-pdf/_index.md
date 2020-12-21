@@ -1,10 +1,14 @@
 ---
 title: Convert LaTeX/TeX to PDF
+linktitle: Convert LaTeX/TeX to PDF
 type: docs
 weight: 160
 url: /net/convert-latex-tex-to-pdf/
 lastmod: "2020-12-15"
 description: This page describes the use of files in the Latech format. Also, article explains how to convert LATEX files to PDF format with Aspose.PDF library. 
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 The LaTeX file format is a text file format with markup in the LaTeX derivative of the TeX family of languages and LaTeX is a derived format of the TeX system. LaTeX (ˈleɪtɛk/ lay-tek or lah-tek) is a document preparation system and document markup language. It is widely used for the communication and publication of scientific documents in many fields, including mathematics, physics, and computer science. It also has a prominent role in the preparation and publication of books and articles that contain complex multilingual materials, such as Sanskrit and Arabic, including critical editions. LaTeX uses the TeX typesetting program for formatting its output, and is itself written in the TeX macro language.

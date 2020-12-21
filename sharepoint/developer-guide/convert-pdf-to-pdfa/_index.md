@@ -3,6 +3,7 @@ title: Convert PDF to PDFA
 type: docs
 weight: 70
 url: /sharepoint/convert-pdf-to-pdfa/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

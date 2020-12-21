@@ -3,6 +3,7 @@ title: Convert PDF to DOC or DOCX format in Ruby
 type: docs
 weight: 30
 url: /java/convert-pdf-to-doc-or-docx-format-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Convert PDF to DOC or DOCX**

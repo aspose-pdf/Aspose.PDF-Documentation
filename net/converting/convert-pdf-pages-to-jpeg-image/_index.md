@@ -1,10 +1,14 @@
 ---
 title: Convert PDF Pages to JPEG Image
+linktitle: Convert PDF Pages to JPEG Image
 type: docs
 weight: 360
 url: /net/convert-pdf-pages-to-jpeg-image/
 lastmod: "2020-12-15"
 description:  This page describes how to convert PDF Pages to Jpeg image, convert all and single Pages to Jpeg images  with Aspose.PDF for .NET.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 The JpegDevice class allows you to convert PDF pages to Jpeg images. This class provides a method named Process which allows you to convert a particular page of the PDF file to Jpeg image format with C#.

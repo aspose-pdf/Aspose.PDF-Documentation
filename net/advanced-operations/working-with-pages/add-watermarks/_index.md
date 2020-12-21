@@ -1,9 +1,14 @@
 ---
-title: Add watermarks
+title: Add watermarks to PDF document using C# and Aspose.PDF for .NET
+linktitle: Add watermarks
 type: docs
 weight: 40
 url: /net/add-watermarks/
-description: This page explains the features of working with artifacts and getting watermarks using the C# library. Check code snippet for resolves your tasks. 
+description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the C#.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 A watermark created with Adobe Acrobat is called an artifact (as described in 14.8.2.2 Real Content and Artifacts of the PDF specification). In order to work with artifacts, Aspose.PDF has two classes: [Artifact](https://apireference.aspose.com/pdf/net/aspose.pdf/artifact) and [ArtifactCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/artifactcollection).

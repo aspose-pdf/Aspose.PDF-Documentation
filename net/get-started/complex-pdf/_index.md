@@ -7,10 +7,13 @@ url: /net/complex-pdf-example/
 description: Aspose.PDF for NET allows you to create more complex documents that contain images, text fragments, and tables in one document.
 aliases:
     - /pdf/net/complex-pdf/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-The [Hello, World](/pdf/net/hello-world-example) example showed simple steps to create a PDF document using C# and Aspose.PDF. In this article, we will take a look at creating a more complex document with C# and Aspose.PDF for .NET. As an example, we'll take a document from a fictitious company that operates passenger ferry services.
-
+The [Hello, World](/pdf/net/hello-world-example/) example showed simple steps to create a PDF document using C# and Aspose.PDF. In this article, we will take a look at creating a more complex document with C# and Aspose.PDF for .NET. As an example, we'll take a document from a fictitious company that operates passenger ferry services.
 Our document will contain a image, two text fragments (header and paragraph), and a table. To build such a document, we will use DOM-base approach. You can read more in section [Basics of DOM API](/pdf/net/basics-of-dom-api/).
 
 If we create a document from scratch we need to follow certain steps:

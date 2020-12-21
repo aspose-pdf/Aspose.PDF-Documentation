@@ -3,6 +3,7 @@ title: Simple and Affordable Licensing
 type: docs
 weight: 20
 url: /jasperreports/simple-and-affordable-licensing/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

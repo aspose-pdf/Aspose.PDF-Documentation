@@ -3,6 +3,7 @@ title: Import Data into a PDF File - facades
 type: docs
 weight: 10
 url: /java/import-data-into-a-pdf-file-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Import Data from XML into a PDF File (facades)**

@@ -3,6 +3,7 @@ title: Get Page Count of PDF in Jython
 type: docs
 weight: 40
 url: /java/get-page-count-of-pdf-in-jython/
+lastmod: "2020-12-16"
 ---
 
 ## **Aspose.PDF - Get Page**

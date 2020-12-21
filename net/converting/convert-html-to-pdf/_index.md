@@ -1,10 +1,14 @@
 ---
 title: Convert HTML to PDF
+linktitle: Convert HTML to PDF
 type: docs
 weight: 90
 url: /net/convert-html-to-pdf/
 lastmod: "2020-12-15"
 description: You can convert HTML to PDF in a way convenient for you, in a quick way, and in an advanced way. Also, the way is described here Convert Web page to PDF.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **Aspose.PDF for .NET** is a PDF manipulation API that lets you convert any existing  HTML documents to PDF seamlessly.

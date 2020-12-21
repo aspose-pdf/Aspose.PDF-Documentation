@@ -1,9 +1,14 @@
 ---
-title: Extract Paragraph from PDF
+title: Extract Paragraph from PDF using Aspose.PDF for .NET
+linktitle: Extract Paragraph from PDF
 type: docs
 weight: 20
 url: /net/extract-paragraph-from-pdf/
 description: This article describes how to use ParagraphAbsorber - a special tool in Aspose.PDF to extract text from PDF documents.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Extract Text from PDF document in Paragraphs form

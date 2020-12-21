@@ -6,6 +6,9 @@ weight: 10
 url: /net/portfolio/
 description: How to Create a PDF Portfolio with C#. You should use a Microsoft Excel File, a Word document, and an image file to create a PDF Portfolio.
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## How to Create a PDF Portfolio

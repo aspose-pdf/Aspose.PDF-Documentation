@@ -1,9 +1,14 @@
 ---
 title: Render WebForms DataGridView to PDF
+linktitle: Render WebForms DataGridView to PDF
 type: docs
 weight: 20
 url: /net/render-webforms-datagridview-to-pdf/
 description: This sample shows how to use Aspose.PDF library to render WebForm to PDF. 
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## How to export WebForm to PDF using Aspose.PDF/Aspose.HTML

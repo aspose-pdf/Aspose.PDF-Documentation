@@ -1,10 +1,14 @@
 ---
 title: Convert EPUB to PDF
+linktitle: Convert EPUB to PDF
 type: docs
 weight: 40
 url: /net/convert-epub-to-pdf/
 lastmod: "2020-12-15"
 description: Epub is free and open format of the electronic version of books with the .epub extension. You may easily convert EPUB files to PDF format with Aspose.PDF.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **Aspose.PDF for .NET** allows you simply convert EPUB files to PDF format.

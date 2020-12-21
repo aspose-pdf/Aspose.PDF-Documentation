@@ -7,6 +7,10 @@ url: /net/working-with-images/
 description: This section describes the features of working with images in a PDF file using C# library.
 aliases:
     - /net/working-with-images-in-pdf/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Add Image to Existing PDF File

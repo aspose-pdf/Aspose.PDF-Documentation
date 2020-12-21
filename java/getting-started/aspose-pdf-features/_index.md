@@ -3,6 +3,7 @@ title: Aspose.PDF Features
 type: docs
 weight: 30
 url: /java/aspose-pdf-features/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics:**

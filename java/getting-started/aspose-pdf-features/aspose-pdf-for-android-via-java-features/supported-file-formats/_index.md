@@ -3,6 +3,7 @@ title: Supported File Formats
 type: docs
 weight: 50
 url: /java/supported-file-formats/
+lastmod: "2020-12-16"
 ---
 
 ## **Supported File Formats**

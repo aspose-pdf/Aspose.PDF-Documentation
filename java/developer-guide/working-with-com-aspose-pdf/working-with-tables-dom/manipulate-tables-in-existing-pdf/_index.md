@@ -3,6 +3,7 @@ title: Manipulate tables in existing PDF
 type: docs
 weight: 30
 url: /java/manipulate-tables-in-existing-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}}

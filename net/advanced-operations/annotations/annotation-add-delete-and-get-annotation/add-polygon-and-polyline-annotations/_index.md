@@ -5,6 +5,10 @@ type: docs
 weight: 60
 url: /net/add-polygon-and-polyline-annotations/
 description: Aspose.PDF for .NET allows you to add, get, and delete the polygon and polyline annotations from your PDF document.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 The Polyline tool allows you to create shapes and outlines with an arbitrary number of sides on the document.

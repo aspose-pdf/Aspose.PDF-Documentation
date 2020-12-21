@@ -3,6 +3,7 @@ title: Applying a License
 type: docs
 weight: 10
 url: /java/applying-a-license/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

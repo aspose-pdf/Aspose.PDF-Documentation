@@ -1,9 +1,14 @@
 ---
-title: Add Headers and Footers of PDF File
+title: Add Header and Footers to Existing PDF in C# using Aspose.PDF for .NET
+linktitle: Add Headers and Footers to PDF File
 type: docs
 weight: 20
 url: /net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF allows you to add headers and footers to your PDF file using TextStamp class.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Adding Text in Header of PDF File

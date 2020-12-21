@@ -6,6 +6,9 @@ weight: 80
 url: /net/add-widget-annotation/
 description: This article describes how to add controls based on awidget annotations to PDF documents with Aspose.PDF for .NET. 
 lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Interactive forms use [Widget Annotations](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) to represent the appearance of fields and to manage user interactions.

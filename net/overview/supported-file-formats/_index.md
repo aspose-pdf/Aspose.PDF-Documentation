@@ -1,9 +1,14 @@
 ---
 title: Supported File Formats
+linktitle: Supported File Formats
 type: docs
 weight: 10
 url: /net/supported-file-formats/
 description: This page shows which Aspose.PDF for .NET can load and save file formats.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 The following table indicates the file formats that Aspose.PDF for .NET can load and Save.

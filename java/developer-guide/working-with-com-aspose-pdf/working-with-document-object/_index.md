@@ -6,6 +6,7 @@ url: /java/working-with-document-object/
 ---
 
 **This section includes the following topics:**
+lastmod: "2020-12-16"
 ----------------------------------------------
 - [Create Document](/pdf/java/create-document/)
 - [PDF File Metadata](/pdf/java/pdf-file-metadata/)
