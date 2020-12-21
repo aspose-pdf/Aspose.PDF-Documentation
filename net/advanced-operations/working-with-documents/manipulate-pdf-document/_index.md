@@ -3,6 +3,7 @@ title: Manipulate PDF Document
 type: docs
 weight: 20
 url: /net/manipulate-pdf-document/
+lastmod: "2020-12-18"
 description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and how to determine the Progress of PDF file generation.
 ---
 
