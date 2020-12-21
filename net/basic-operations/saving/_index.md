@@ -1,5 +1,5 @@
 ---
-title: Saving a PDF | Aspose.PDF for .NET
+title: Saving a PDF
 linktitle: Saving
 type: docs
 weight: 20

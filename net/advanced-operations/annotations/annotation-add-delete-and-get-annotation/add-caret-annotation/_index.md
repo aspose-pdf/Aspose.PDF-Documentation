@@ -1,5 +1,5 @@
 ---
-title: How to Add, Get or Delete a Caret Annotation | Aspose.PDF for .NET
+title: How to Add, Get or Delete a Caret Annotation
 linktitle: Caret Annotation
 type: docs
 weight: 90

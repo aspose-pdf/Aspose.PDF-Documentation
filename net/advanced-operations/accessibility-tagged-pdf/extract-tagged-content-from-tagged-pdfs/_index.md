@@ -1,5 +1,5 @@
 ---
-title: Extract Tagged Content from Tagged PDFs | Aspose.PDF
+title: Extract Tagged Content from Tagged PDFs
 linktitle: Extract Tagged Content from Tagged PDFs
 type: docs
 weight: 20

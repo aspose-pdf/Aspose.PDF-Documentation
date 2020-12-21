@@ -1,5 +1,5 @@
 ---
-title: Working with Attachments | Aspose.PDF for .NET
+title: Working with Attachments
 linktitle: Working with Attachments
 type: docs
 weight: 130
