@@ -1,5 +1,5 @@
 ---
-title: Working with Forms in Aspose.PDF for .NET
+title: Working with Forms | Aspose.PDF for .NET
 linktitle: Working with Forms
 type: docs
 weight: 60

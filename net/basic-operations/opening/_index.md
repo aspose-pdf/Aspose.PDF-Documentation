@@ -1,5 +1,5 @@
 ---
-title: Opening PDF document in Aspose.PDF for .NET
+title: Opening PDF document | Aspose.PDF for .NET
 linktitle: Opening
 type: docs
 weight: 10

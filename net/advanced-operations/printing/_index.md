@@ -1,5 +1,5 @@
 ---
-title: Printing PDF documents using Aspose.PDF for .NET 
+title: Printing PDF documents using Aspose.PDF for .NET
 linktitle: Printing document
 type: docs
 weight: 160

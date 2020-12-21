@@ -1,5 +1,5 @@
 ---
-title: Working with Pages in Aspose.PDF 
+title: Working with Pages | Aspose.PDF
 linktitle: Working with Pages
 type: docs
 weight: 20

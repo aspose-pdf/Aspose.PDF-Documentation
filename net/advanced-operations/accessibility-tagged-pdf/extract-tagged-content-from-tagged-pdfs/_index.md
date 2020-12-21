@@ -1,5 +1,5 @@
 ---
-title: Extract Tagged Content from Tagged PDFs using Aspose.PDF for .NET
+title: Extract Tagged Content from Tagged PDFs | Aspose.PDF
 linktitle: Extract Tagged Content from Tagged PDFs
 type: docs
 weight: 20

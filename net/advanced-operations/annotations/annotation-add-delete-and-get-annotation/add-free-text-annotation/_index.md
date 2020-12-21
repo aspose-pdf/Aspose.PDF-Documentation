@@ -1,5 +1,5 @@
 ---
-title: How to Add Free Text Annotation to PDF in C# using Aspose.PDF for .NET
+title: How to Add Free Text Annotation to PDF in C# | Aspose.PDF
 linktitle: Free Text Annotation
 type: docs
 weight: 30

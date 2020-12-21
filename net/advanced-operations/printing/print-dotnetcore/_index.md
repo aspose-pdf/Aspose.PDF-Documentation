@@ -1,5 +1,5 @@
 ---
-title: How to print PDF file in .NET Core 
+title: How to print PDF file in .NET Core
 linktitle: Printing PDF in .NET Core
 type: docs
 weight: 40

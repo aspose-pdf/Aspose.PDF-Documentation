@@ -1,5 +1,5 @@
 ---
-title: Working with Bookmarks in PDF with Aspose.PDF for .NET
+title: Working with Bookmarks in PDF | Aspose.PDF for .NET
 linktitle: Working with Bookmarks
 type: docs
 weight: 30

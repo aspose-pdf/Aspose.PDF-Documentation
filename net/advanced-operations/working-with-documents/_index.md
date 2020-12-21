@@ -1,5 +1,5 @@
 ---
-title: Working with Documents in Aspose.PDF for .NET 
+title: Working with Documents | Aspose.PDF for .NET
 linktitle: Working with Documents
 type: docs
 weight: 10

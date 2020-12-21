@@ -1,5 +1,5 @@
 ---
-title: Convert PDF File to PDF-A 
+title: Convert PDF File to PDF-A
 linktitle: Convert PDF File to PDF-A 
 type: docs
 weight: 240
