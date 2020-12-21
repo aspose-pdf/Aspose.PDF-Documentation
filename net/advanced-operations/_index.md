@@ -1,5 +1,6 @@
 ---
-title: Advanced operations 
+title: Advanced operations
+linktitle: Advanced operations 
 type: docs
 weight: 90
 url: /net/advanced-operations/

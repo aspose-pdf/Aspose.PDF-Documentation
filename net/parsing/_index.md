@@ -1,5 +1,6 @@
 ---
 title: Parsing PDF documents
+linktitle: Parsing PDF documents
 type: docs
 weight: 80
 url: /net/parsing/

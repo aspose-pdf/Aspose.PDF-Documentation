@@ -1,5 +1,6 @@
 ---
-title: Convert MHTML to PDF 
+title: Convert MHTML to PDF
+linktitle: Convert MHTML to PDF 
 type: docs
 weight: 150
 url: /net/convert-mhtml-to-pdf/

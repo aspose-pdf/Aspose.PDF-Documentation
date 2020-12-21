@@ -1,5 +1,6 @@
 ---
 title:  Image stamps in PDF page
+linktitle:  Image stamps in PDF page
 type: docs
 weight: 10
 url: /net/image-stamps-in-pdf-page/

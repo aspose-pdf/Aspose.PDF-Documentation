@@ -1,5 +1,6 @@
 ---
 title: Convert XML to PDF
+linktitle: Convert XML to PDF
 type: docs
 weight: 70
 url: /net/convert-xml-to-pdf/

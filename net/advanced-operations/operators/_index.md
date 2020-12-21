@@ -1,5 +1,5 @@
 ---
-title: Working with Operators in Aspose.PDF for .NET
+title: Working with Operators | Aspose.PDF for .NET
 linktitle: Working with Operators
 type: docs
 weight: 170

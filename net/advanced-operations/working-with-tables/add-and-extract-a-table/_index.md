@@ -1,5 +1,6 @@
 ---
 title: Add and Extract a Table
+linktitle: Add and Extract a Table
 type: docs
 weight: 10
 url: /net/add-and-extract-a-table/

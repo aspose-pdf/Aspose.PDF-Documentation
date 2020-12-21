@@ -1,5 +1,6 @@
 ---
-title: Convert images to PDF 
+title: Convert images to PDF
+linktitle: Convert images to PDF 
 type: docs
 weight: 100
 url: /net/convert-images-to-pdf/

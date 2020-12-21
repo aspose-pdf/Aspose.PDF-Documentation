@@ -1,5 +1,6 @@
 ---
 title: Add Text to a PDF file
+linktitle: Add Text to a PDF file
 type: docs
 weight: 10
 url: /net/add-text-to-a-pdf-file/

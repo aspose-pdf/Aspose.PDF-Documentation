@@ -1,5 +1,6 @@
 ---
 title: Release Notes - 2010
+linktitle: Release Notes - 2010
 type: docs
 weight: 110
 url: /net/release-notes-2010/

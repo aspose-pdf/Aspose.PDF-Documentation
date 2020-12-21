@@ -1,5 +1,6 @@
 ---
-title: Split document
+title: Split PDF document using Aspose.PDF for .NET
+linktitle: Split document
 type: docs
 weight: 60
 url: /net/split-pdf-document/

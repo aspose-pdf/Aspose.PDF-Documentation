@@ -1,5 +1,5 @@
 ---
-title: Get Started with Aspose.PDF for .NET
+title: Get Started | Aspose.PDF for .NET
 linktitle: Get Started
 type: docs
 weight: 30

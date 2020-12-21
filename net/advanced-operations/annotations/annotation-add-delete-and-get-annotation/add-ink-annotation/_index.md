@@ -1,5 +1,5 @@
 ---
-title: How to Add Ink Annotation with C# using Aspose.PDF for .NET
+title: How to Add Ink Annotation with C# | Aspose.PDF
 linktitle: Ink Annotation
 type: docs
 weight: 100

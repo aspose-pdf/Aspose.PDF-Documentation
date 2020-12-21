@@ -1,5 +1,6 @@
 ---
 title: Render WebForms DataGridView to PDF
+linktitle: Render WebForms DataGridView to PDF
 type: docs
 weight: 20
 url: /net/render-webforms-datagridview-to-pdf/

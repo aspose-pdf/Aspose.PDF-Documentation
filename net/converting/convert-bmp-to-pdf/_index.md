@@ -1,5 +1,6 @@
 ---
 title: Convert BMP to PDF
+linktitle: Convert BMP to PDF
 type: docs
 weight: 110
 url: /net/convert-bmp-to-pdf/

@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF for .NET 8.9.0 Release Notes
+linktitle: Aspose.PDF for .NET 8.9.0 Release Notes
 type: docs
 weight: 110
 url: /net/aspose-pdf-for-net-8-9-0-release-notes/

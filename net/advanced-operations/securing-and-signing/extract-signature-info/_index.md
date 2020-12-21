@@ -1,5 +1,6 @@
 ---
-title: Extract Image and Signature Information
+title: Extract Image and Signature Information using Aspose.PDF for .NET
+linktitle: Extract Image and Signature Information
 type: docs
 weight: 30
 url: /net/extract-image-and-signature-information/

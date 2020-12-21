@@ -1,5 +1,6 @@
 ---
 title: Convert PDF Pages to BMP Image
+linktitle: Convert PDF Pages to BMP Image
 type: docs
 weight: 200
 url: /net/convert-pdf-pages-to-bmp-image/

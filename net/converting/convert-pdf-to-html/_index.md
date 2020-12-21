@@ -1,5 +1,6 @@
 ---
 title: Convert PDF to HTML
+linktitle: Convert PDF to HTML
 type: docs
 weight: 320
 url: /net/convert-pdf-to-html/

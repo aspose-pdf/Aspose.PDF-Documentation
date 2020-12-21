@@ -1,5 +1,6 @@
 ---
 title: Render table from the data source
+linktitle: Render table from the data source
 type: docs
 weight: 30
 url: /net/render-table-from-the-data-source/

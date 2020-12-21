@@ -1,5 +1,6 @@
 ---
 title: Convert PDF to XPS
+linktitle: Convert PDF to XPS
 type: docs
 weight: 350
 url: /net/convert-pdf-to-xps/

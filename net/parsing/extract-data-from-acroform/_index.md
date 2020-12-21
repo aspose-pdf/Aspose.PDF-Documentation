@@ -1,9 +1,10 @@
 ---
-title:  Extract data from AcroForm
+title:  Extract data from AcroForm using Aspose.PDF for .NET
+linktitle:  Extract data from AcroForm
 type: docs
 weight: 50
 url: /net/extract-data-from-acroform/
-description: Aspose.PDF for .NET makes it easy to extract form field data or form field information from PDF files. Learn how to extract data from AcroFoms and save it in various formats - JSON, XML, FDF
+description: Aspose.PDF makes it easy to extract form field data from PDF files. Learn how to extract data from AcroForms and save it into JSON, XML, or FDF format.
 lastmod: "2020-12-16"
 sitemap:
     changefreq: "weekly"

@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF for .NET 10.0.0 Release Notes
+linktitle: Aspose.PDF for .NET 10.0.0 Release Notes
 type: docs
 weight: 110
 url: /net/aspose-pdf-for-net-10-0-0-release-notes/

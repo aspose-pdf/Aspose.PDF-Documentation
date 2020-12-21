@@ -1,5 +1,5 @@
 ---
-title: Working with PDF File Metadata in Aspose.PDF for .NET
+title: Working with PDF File Metadata | Aspose.PDF for .NET
 linktitle: PDF File Metadata 
 type: docs
 weight: 140

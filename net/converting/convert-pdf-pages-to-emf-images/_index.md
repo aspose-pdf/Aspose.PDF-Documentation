@@ -1,5 +1,6 @@
 ---
 title: Convert PDF Pages to EMF Image
+linktitle: Convert PDF Pages to EMF Image
 type: docs
 weight: 210
 url: /net/convert-pdf-pages-to-emf-image/

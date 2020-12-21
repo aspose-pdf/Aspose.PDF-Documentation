@@ -1,5 +1,5 @@
 ---
-title: Basic operations with PDF documents in Aspose.PDF for .NET
+title: Basic operations with PDF documents | Aspose.PDF for .NET
 linktitle: Basic operations
 type: docs
 weight: 60

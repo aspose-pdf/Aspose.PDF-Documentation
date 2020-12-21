@@ -1,5 +1,6 @@
 ---
 title: Search and Get Text from Pages of a PDF Document
+linktitle: Search and Get Text from Pages of a PDF Document
 type: docs
 weight: 60
 url: /net/search-and-get-text-from-pdf/

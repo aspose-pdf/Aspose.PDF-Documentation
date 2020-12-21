@@ -1,5 +1,6 @@
 ---
 title: Stamping
+linktitle: Stamping
 type: docs
 weight: 70
 url: /net/stamping/

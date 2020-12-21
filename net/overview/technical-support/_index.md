@@ -1,5 +1,6 @@
 ---
 title: Technical Support
+linktitle: Technical Support
 type: docs
 weight: 60
 url: /net/technical-support/

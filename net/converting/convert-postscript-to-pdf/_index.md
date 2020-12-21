@@ -1,5 +1,6 @@
 ---
 title: Convert PostScript to PDF
+linktitle: Convert PostScript to PDF
 type: docs
 weight: 60
 url: /net/convert-postscript-to-pdf/

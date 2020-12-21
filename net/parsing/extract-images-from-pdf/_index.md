@@ -1,5 +1,6 @@
 ---
-title: Extract Images from the PDF File
+title: Extract Images from the PDF File using Aspose.PDF for .NET
+linktitle: Extract Images from the PDF File
 type: docs
 weight: 20
 url: /net/extract-images-from-the-pdf-file/

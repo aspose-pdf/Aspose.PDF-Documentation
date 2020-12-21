@@ -1,5 +1,5 @@
 ---
-title: Working with Annotations in PDF with Aspose.PDF for .NET
+title: Working with Annotations in PDF | Aspose.PDF for .NET
 linktitle: Working with Annotations
 type: docs
 weight: 100

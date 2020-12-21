@@ -1,5 +1,6 @@
 ---
 title: Aspose.Pdf .Net 3.4.4.0 Hot Fix Release Notes
+linktitle: Aspose.Pdf .Net 3.4.4.0 Hot Fix Release Notes
 type: docs
 weight: 660
 url: /net/aspose-pdf-net-3-4-4-0-hot-fix-release-notes/

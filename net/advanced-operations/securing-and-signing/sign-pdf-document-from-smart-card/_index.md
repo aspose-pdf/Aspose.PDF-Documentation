@@ -1,5 +1,6 @@
 ---
-title: Sign PDF Document From Smart Card
+title: PDF Signing With Smart Card usinh Aspose.PDF for .NET
+linktitle: PDF Signing with Smart Card
 type: docs
 weight: 40
 url: /net/sign-pdf-document-from-smart-card/

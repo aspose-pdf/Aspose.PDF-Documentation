@@ -1,5 +1,6 @@
 ---
 title: Convert text to PDF
+linktitle: Convert text to PDF
 type: docs
 weight: 20
 url: /net/convert-text-to-pdf/

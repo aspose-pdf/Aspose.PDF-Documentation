@@ -1,5 +1,6 @@
 ---
-title: Digitally sign PDF file 
+title: Digitally sign PDF file using Aspose.PDF for .NET
+linktitle: Digitally sign PDF file 
 type: docs
 weight: 10
 url: /net/digitally-sign-pdf-file/

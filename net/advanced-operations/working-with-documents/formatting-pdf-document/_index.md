@@ -1,10 +1,11 @@
 ---
-title: Formatting PDF Document
+title: Formatting PDF Document using Aspose.PDF for .NET
+linktitle: Formatting PDF Document
 type: docs
 weight: 10
 url: /net/formatting-pdf-document/
-lastmod: "2020-12-18"
 description: Create and format the PDF Document with Aspose.PDF for .NET. Use the next code snippet to resolve your tasks.
+lastmod: "2020-12-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

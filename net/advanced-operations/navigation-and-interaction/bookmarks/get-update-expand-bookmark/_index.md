@@ -1,5 +1,6 @@
 ---
-title: Get, Update and Expand a Bookmark
+title: Get, Update and Expand a Bookmark using Aspose.PDF for .NET
+linktitle: Get, Update and Expand a Bookmark
 type: docs
 weight: 20
 url: /net/get-update-and-expand-bookmark/

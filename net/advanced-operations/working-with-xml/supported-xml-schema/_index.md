@@ -1,5 +1,6 @@
 ---
 title: Supported XML Schema
+linktitle: Supported XML Schema
 type: docs
 weight: 10
 url: net/supported-xml-schema/

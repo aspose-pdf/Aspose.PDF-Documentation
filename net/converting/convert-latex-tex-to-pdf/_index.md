@@ -1,5 +1,6 @@
 ---
 title: Convert LaTeX/TeX to PDF
+linktitle: Convert LaTeX/TeX to PDF
 type: docs
 weight: 160
 url: /net/convert-latex-tex-to-pdf/

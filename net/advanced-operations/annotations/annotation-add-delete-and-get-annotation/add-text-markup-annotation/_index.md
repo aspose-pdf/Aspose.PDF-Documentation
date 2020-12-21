@@ -1,5 +1,6 @@
 ---
-title: Add Text Markup Annotation
+title: Add Text Markup Annotation using Aspose.PDF for .NET
+linktitle: Add Text Markup Annotation
 type: docs
 weight: 70
 url: /net/add-text-markup-annotation/

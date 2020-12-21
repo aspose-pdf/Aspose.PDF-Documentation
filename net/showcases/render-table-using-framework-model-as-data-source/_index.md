@@ -1,5 +1,6 @@
 ---
 title: Render table using Entity Framework model as data source
+linktitle: Render table using Entity Framework model as data source
 type: docs
 weight: 40
 url: /net/render-table-using-entity-framework-model-as-data-source/

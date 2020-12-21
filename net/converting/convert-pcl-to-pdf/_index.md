@@ -1,5 +1,6 @@
 ---
 title: Convert PCL to PDF
+linktitle: Convert PCL to PDF
 type: docs
 weight: 50
 url: /net/convert-pcl-to-pdf/

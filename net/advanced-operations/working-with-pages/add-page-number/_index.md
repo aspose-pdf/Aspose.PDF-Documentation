@@ -1,5 +1,6 @@
 ---
-title: Add Page Number
+title: Add Page Number in PDF document using Aspose.PDF for .NET
+linktitle: Add Page Number
 type: docs
 weight: 50
 url: /net/add-page-number/

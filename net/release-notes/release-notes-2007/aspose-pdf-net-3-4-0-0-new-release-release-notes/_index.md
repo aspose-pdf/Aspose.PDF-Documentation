@@ -1,5 +1,6 @@
 ---
 title: Aspose.Pdf .Net 3.4.0.0 New Release Release Notes
+linktitle: Aspose.Pdf .Net 3.4.0.0 New Release Release Notes
 type: docs
 weight: 620
 url: /net/aspose-pdf-net-3-4-0-0-new-release-release-notes/

@@ -1,5 +1,6 @@
 ---
-title: Extract text from PDF
+title: Extract text from PDF using Aspose.PDF for .NET
+linktitle: Extract text from PDF
 type: docs
 weight: 10
 url: /net/extract-text-from-all-pdf/

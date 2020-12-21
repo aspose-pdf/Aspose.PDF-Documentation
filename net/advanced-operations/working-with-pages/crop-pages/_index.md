@@ -1,5 +1,6 @@
 ---
-title: Crop Pages
+title: Crop Pages in PDF document programmatically using C#
+linktitle: Crop Pages
 type: docs
 weight: 30
 url: /net/crop-pages/

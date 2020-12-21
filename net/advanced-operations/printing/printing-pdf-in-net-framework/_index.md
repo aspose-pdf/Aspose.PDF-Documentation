@@ -1,5 +1,6 @@
 ---
-title: Printing PDF in .NET Framework 
+title: Printing PDF in .NET Framework
+linktitle: Printing PDF in .NET Framework 
 type: docs
 weight: 10
 url: /net/printing-pdf-in-net-framework/

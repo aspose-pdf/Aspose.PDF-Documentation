@@ -1,5 +1,6 @@
 ---
 title: Generate PDF file from XML
+linktitle: Generate PDF file from XML
 type: docs
 weight: 10
 url: /net/generate-pdf-from-xml

@@ -1,5 +1,6 @@
 ---
 title: Release Notes - 2017
+linktitle: Release Notes - 2017
 type: docs
 weight: 40
 url: /net/release-notes-2017/

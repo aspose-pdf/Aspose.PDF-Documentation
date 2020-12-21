@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF .NET 2.8.5.0 Hot Fix Release Notes
+linktitle: Aspose.PDF .NET 2.8.5.0 Hot Fix Release Notes
 type: docs
 weight: 330
 url: /net/aspose-pdf-net-2-8-5-0-hot-fix-release-notes/

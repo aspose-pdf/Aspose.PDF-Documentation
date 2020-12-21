@@ -1,5 +1,6 @@
 ---
 title: Text Formatting inside PDF
+linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /net/text-formatting-inside-pdf/

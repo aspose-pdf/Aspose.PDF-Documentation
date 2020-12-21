@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF for .NET 3.5.6.0 Hot Fix Release Notes
+linktitle: Aspose.PDF for .NET 3.5.6.0 Hot Fix Release Notes
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-3-5-6-0-hot-fix-release-notes/

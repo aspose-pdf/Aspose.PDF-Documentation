@@ -1,5 +1,6 @@
 ---
 title: Convert PDF to PowerPoint
+linktitle: Convert PDF to PowerPoint
 type: docs
 weight: 290
 url: /net/convert-pdf-to-powerpoint/
