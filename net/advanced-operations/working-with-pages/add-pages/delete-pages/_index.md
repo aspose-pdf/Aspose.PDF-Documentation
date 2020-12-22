@@ -1,8 +1,8 @@
 ---
-title: Remove Pages
+title: Delete Pages
 type: docs
 weight: 20
-url: /net/remove-pages/
+url: /net/delete-pages/
 description: You can delete pages from your PDF file using C# library.
 lastmod: "2020-12-22"
 aliases:

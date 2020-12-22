@@ -1,6 +1,6 @@
 ---
-title: Add Pages in PDF file
-linktitle: Add  Pages
+title: Add Pages in PDF
+linktitle: Add Pages
 type: docs
 weight: 10
 url: /net/add-pages/
@@ -20,7 +20,7 @@ Aspose.PDF for .NET lets you insert a page to a PDF document at any location in 
 Check out all the possibilities of the Aspose.PDF for .NET library in working with Pages:
 
 - [Move Pages](/pdf/net/move-pages/)
-- [Remove Pages](/pdf/net/remove-pages/)
+- [Delete Pages](/pdf/net/delete-pages/)
 
 
 

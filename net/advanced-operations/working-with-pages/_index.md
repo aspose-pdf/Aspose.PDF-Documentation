@@ -24,7 +24,7 @@ Add Page number using PageNumberStamp class. For adding a Stamp in your document
 You are able to do the following:
 
 - [Add Pages](/pdf/net/add-pages/)- add pages at desired location or to the end of a PDF file and delete a page from you document.
-- [Add Headers and Footers](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file using C#.
+- [Add PDF Header and Footer](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file using C#.
 - [Crop Pages](/pdf/net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
 - [Add Watermarks](/pdf/net/add-watermarks/) - add watermarks in your PDF file with Artifact Class.
 - [Add Numbers in a PDF File](/pdf/net/add-page-number/) - PageNumberStamp class will help you to add a Page Number in your PDF file.
