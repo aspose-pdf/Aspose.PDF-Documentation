@@ -1,5 +1,5 @@
 ---
-title: Delete Pages
+title: Delete Pages with Aspose.PDF for .NET
 type: docs
 weight: 20
 url: /net/delete-pages/

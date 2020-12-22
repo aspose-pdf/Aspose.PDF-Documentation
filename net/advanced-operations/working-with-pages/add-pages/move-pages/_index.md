@@ -1,5 +1,5 @@
 ---
-title: Move Pages
+title: Move Pages with Aspose.PDf for .NET
 type: docs
 weight: 10
 url: /net/move-pages/

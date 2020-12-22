@@ -1,5 +1,5 @@
 ---
-title: Working with Pages
+title: Working with Pages in C#
 linktitle: Working with Pages
 type: docs
 weight: 20

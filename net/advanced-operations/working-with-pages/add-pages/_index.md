@@ -1,5 +1,5 @@
 ---
-title: Add Pages in PDF
+title: Add Pages in PDF with C#
 linktitle: Add Pages
 type: docs
 weight: 10

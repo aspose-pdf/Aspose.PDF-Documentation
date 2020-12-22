@@ -1,5 +1,5 @@
 ---
-title: Add Page Number to PDF
+title: Add Page Number to PDF with C#
 linktitle: Add Page Number
 type: docs
 weight: 50
