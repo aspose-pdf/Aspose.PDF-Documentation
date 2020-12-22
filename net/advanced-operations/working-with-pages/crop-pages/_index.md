@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/crop-pages/
 description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for .NET.
-lastmod: "2020-12-16"
+lastmod: "2020-12-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

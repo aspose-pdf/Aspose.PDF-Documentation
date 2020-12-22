@@ -40,7 +40,7 @@ document.Save(dataDir + "HelloWorld_out.pdf");
 
 ## Formatting PDF Document
 
-### Get Document Window and Page Display Properties 
+### Get Document Window and Page Display Properties
 
 This topic helps you understand how to get properties of the document window, viewer application, and how pages are displayed. To set these properties:
 

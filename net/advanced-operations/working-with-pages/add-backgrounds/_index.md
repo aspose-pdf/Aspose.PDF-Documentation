@@ -1,11 +1,11 @@
 ---
-title: Add various backgrounds to PDF document uisng Aspose.PDF for .NET
+title: Add various backgrounds to PDF file with C#
 linktitle: Add backgrounds
 type: docs
 weight: 60
 url: /net/add-backgrounds/
-descriptions: You should use the BackgroundArtifact object if you need to add a background image to the PDF file. Check code snippet to resolve this task.
-lastmod: "2020-12-16"
+descriptions: Add background image to the your PDF file with C#. Use the BackgroundArtifact object. 
+lastmod: "2020-12-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,7 @@ sitemap:
 
 Background images can be used to add a watermark, or other subtle design, to documents. In Aspose.PDF for .NET, each PDF document is a collection of pages and each page contains a collection of artifacts. The [BackgroundArtifact](https://apireference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) class can be used to add a background image to a page object.
 
-The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object.
+The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object with C#.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

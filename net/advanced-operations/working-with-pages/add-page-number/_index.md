@@ -1,15 +1,20 @@
 ---
-title: Add Page Number in PDF document using Aspose.PDF for .NET
+title: Add Page Number to PDF with C#
 linktitle: Add Page Number
 type: docs
 weight: 50
 url: /net/add-page-number/
-description: Aspose.PDF allows you to add Page Number Stamp to your PDF file using PageNumber Stamp class.
-lastmod: "2020-12-16"
+description: Aspose.PDF for .NET allows you to add Page Number Stamp to your PDF file using PageNumber Stamp class.
+lastmod: "2020-12-22"
+aliases:
+    - /pdf/net/get-and-set-page-properties/
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 --- 
+
+All the documents must have page numbers in it. The page number makes it easier for the reader to locate different parts of the document.
+**Aspose.PDF for .NET** allows you to add page numbers with PageNumberStamp.
 
 You can use [PageNumberStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) class to add a page number stamp in a PDF file. [PageNumber Stamp](https://apireference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) class provides properties necessary to create a page number based stamp like format, margins, alignments, starting number etc. In order to add page number stamp, you need to create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object and a [PageNumberStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) object using required properties. After that, you can call [AddStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) method of the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) to add the stamp in the PDF. You can also set the font attributes of the page number stamp. The following code snippet shows you how to add page numbers in a PDF file.
 

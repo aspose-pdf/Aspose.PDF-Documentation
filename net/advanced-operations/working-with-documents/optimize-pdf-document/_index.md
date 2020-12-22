@@ -1,11 +1,12 @@
 ---
-title: Optimize PDF Document using Aspose.PDF for .NET
-linktitle: Optimize PDF Document
+title: Optimize PDF Document 
 type: docs
 weight: 30
 url: /net/optimize-pdf-document/
-description: You can use several techniques to optimize PDF with Aspose.PDF for .NET. Check code snippet to resolve this task.
-lastmod: "2020-12-16"
+description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with C#.
+lastmod: "2020-12-22"
+aliases: 
+    - /pdf/net/changing-page-sizes-in-a-pdf-file/
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -55,7 +56,7 @@ dataDir = dataDir + "OptimizeDocument_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Optimize PDF File Size
+## Reduce Size PDF
 
 The [OptimizeResources()](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
 
