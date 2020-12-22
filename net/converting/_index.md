@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /net/converting/
 lastmod: "2020-12-14"
-description: This section contains a description of all possible options for converting PDF documents on C# using the Aspose.PDF library.
+description: This section contains a description of all possible options for converting PDF documents on C# using Aspose.PDF library.
 aliases:
     - /pdf/net/working-with-document-conversion/
     - /pdf/net/convert-pdf-pages/
