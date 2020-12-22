@@ -1,11 +1,12 @@
 ---
-title: Optimize PDF Document using Aspose.PDF for .NET
-linktitle: Optimize PDF Document
+title: Optimize PDF Document 
 type: docs
 weight: 30
 url: /net/optimize-pdf-document/
-description: Optimize PDF file, shrink all images, reduce size PDF, 
-lastmod: "2020-12-21"
+description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with C#.
+lastmod: "2020-12-22"
+aliases: 
+    - /pdf/net/changing-page-sizes-in-a-pdf-file/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

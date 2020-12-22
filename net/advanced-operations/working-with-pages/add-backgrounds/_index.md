@@ -1,11 +1,11 @@
 ---
-title: Add various backgrounds to PDF document uisng Aspose.PDF for .NET
+title: Add various backgrounds to PDF file
 linktitle: Add backgrounds
 type: docs
 weight: 60
 url: /net/add-backgrounds/
 descriptions: You should use the BackgroundArtifact object if you need to add a background image to the PDF file. Check code snippet to resolve this task.
-lastmod: "2020-12-16"
+lastmod: "2020-12-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
