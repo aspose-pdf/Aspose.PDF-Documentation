@@ -1,5 +1,5 @@
 ---
-title: Convert PDF Pages to TIFF Image 
+title: Convert PDF Pages to TIFF Image
 linktitle: Convert PDF Pages to TIFF Image 
 type: docs
 weight: 260

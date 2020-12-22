@@ -1,5 +1,5 @@
 ---
-title: Working with Accessibility and Tagged PDFs in Aspose.PDF for .NET 
+title: Working with Accessibility and Tagged PDFs
 linktitle: Accessibility. Tagged PDF
 type: docs
 weight: 120

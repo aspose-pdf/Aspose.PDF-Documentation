@@ -1,5 +1,5 @@
 ---
-title: Working with Text in Aspose.PDF for .NET
+title: Working with Text
 linktitle: Working with Text 
 type: docs
 weight: 30

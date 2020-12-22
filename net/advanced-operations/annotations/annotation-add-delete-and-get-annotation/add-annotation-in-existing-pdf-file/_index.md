@@ -1,5 +1,5 @@
 ---
-title: Add, Delete and Get Annotation in existing PDF file using Aspose.PDF for .NET
+title: Add, Delete and Get Annotation in existing PDF file
 linktitle: Add, Delete and Get Annotation in existing PDF file 
 type: docs
 weight: 10

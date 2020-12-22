@@ -1,5 +1,5 @@
 ---
-title: Create, Edit, Convert PDF files in Aspose.PDF for .NET
+title: Create, Edit, Convert PDF files
 linktitle: Aspose.PDF for .NET
 type: docs
 weight: 10

@@ -1,5 +1,5 @@
 ---
-title: Create Tagged PDF Documents using Aspose.PDF for .NET
+title: Create Tagged PDF Documents
 linktitle: Create Tagged PDF Documents 
 type: docs
 weight: 10

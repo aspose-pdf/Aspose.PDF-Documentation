@@ -1,5 +1,5 @@
 ---
-title: Securing and signing PDF documents using Aspose.PDF for .NET
+title: Securing and signing PDF documents in C#
 linktitle: Securing and signing in PDF
 type: docs
 weight: 150

@@ -1,5 +1,5 @@
 ---
-title: Working with Artifacts in Aspose.PDF in .NET
+title: Working with Artifacts in .NET
 linktitle: Working with Artifacts
 type: docs
 weight: 110

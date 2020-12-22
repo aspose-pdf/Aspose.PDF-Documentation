@@ -1,5 +1,5 @@
 ---
-title: Converting PDF documents in Aspose.PDF for .NET
+title: Converting PDF documents
 linktitle: Converting documents
 type: docs
 weight: 70
