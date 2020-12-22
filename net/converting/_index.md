@@ -9,6 +9,8 @@ description: This section contains a description of all possible options for con
 aliases:
     - /pdf/net/working-with-document-conversion/
     - /pdf/net/convert-pdf-pages/
+    -/pdf/net/convert-pdf-file-to-other-formats/
+    -/pdf/net/convert-pdf-file/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -6,6 +6,8 @@ weight: 10
 url: /net/add-remove-move-pages/
 description: This article teaches how to insert (add) a page at the desired location PDF file. Learn how to move, remove (delete) pages from a PDF file using C#.
 lastmod: "2020-12-16"
+aliases:
+    - /pdf/net/insert-pdf-pages/
 sitemap:
     changefreq: "weekly"
     priority: 0.7
