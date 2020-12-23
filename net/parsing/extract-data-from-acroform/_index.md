@@ -1,5 +1,5 @@
 ---
-title:  Extract data from AcroForm using Aspose.PDF for .NET
+title:  Extract data from AcroForm using C#
 linktitle:  Extract data from AcroForm
 type: docs
 weight: 50

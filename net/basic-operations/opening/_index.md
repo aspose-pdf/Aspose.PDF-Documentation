@@ -1,19 +1,19 @@
 ---
-title: Opening PDF document
-linktitle: Opening
+title: Open PDF document programmatically
+linktitle: Open
 type: docs
 weight: 10
 url: /net/open-pdf-document/
 description: Learn how to open a PDF file in C# Aspose.PDF for .NET PDF library.
 aliases:
     - /net/opening-a-pdf-document/
-lastmod: "2020-12-16"
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Opening an existing PDF document
+## Open existing PDF document
 
 There are several ways to open a document. The easiest is to specify a file name.
 
@@ -28,7 +28,7 @@ public static void OpenDocument()
 }
 ```
 
-## Opening an existing PDF document from stream
+## Open existing PDF document from stream
 
 ```csharp
 public static void OpenDocumentStream()
@@ -51,7 +51,7 @@ public static void OpenDocumentStream()
 }
 ```
 
-## Opening an encrypted PDF document
+## Open encrypted PDF document
 
 ```csharp
     public static void OpenDocumentWithPassword()

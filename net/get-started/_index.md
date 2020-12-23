@@ -17,6 +17,6 @@ sitemap:
 ## Articles in this section
 
 - [Basics of DOM API](/pdf/net/basics-of-dom-api/)
-- ["Hello, World" Example](/pdf/net/hello-world-example/)
+- ["Hello, World" C# Example](/pdf/net/hello-world-example/)
 - [Complex PDF](/pdf/net/complex-pdf-example/)
 - [How to run other examples](/pdf/net/how-to-run-other-examples/)

@@ -1,11 +1,11 @@
 ---
-title: Extract fonts from PDF using Aspose.PDF for .NET
-linktitle: Extract fonts from PDF
+title: Extract fonts from PDF C#
+linktitle: Extract fonts from PDF C#
 type: docs
 weight: 30
 url: /net/extract-fonts-from-pdf/
 description: How to extract font from PDF using C#
-lastmod: "2020-12-16"
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
