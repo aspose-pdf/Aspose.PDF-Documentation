@@ -1,5 +1,5 @@
 ---
-title: Add various backgrounds to PDF file with C#
+title: Add background to PDF with C#
 linktitle: Add backgrounds
 type: docs
 weight: 60

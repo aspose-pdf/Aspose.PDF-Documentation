@@ -1,5 +1,6 @@
 ---
-title: Move Pages with Aspose.PDf for .NET
+title: Move PDF Pages programmatically C#
+linktitle: Move PDF Pages 
 type: docs
 weight: 10
 url: /net/move-pages/
@@ -12,7 +13,7 @@ sitemap:
 
 Sometimes, you want to ensure that a document ends on an empty page. This topic explains how to insert an empty page at the end of the PDF document. To insert an empty page at the end of a PDF file.
 
-## Insert Page in a PDF File at Desired Location
+## Insert Page in PDF File at Desired Location
 
 This topic explains how to insert a page in a PDF document using C#. The new page is inserted as an empty page at the specified index. To insert an empty page in a PDF file:
 
@@ -36,7 +37,7 @@ dataDir = dataDir + "InsertEmptyPage_out.pdf";
 pdfDocument1.Save(dataDir);
 ```
 
-## Insert an Empty Page at the End of a PDF File
+## Insert Empty Page at the End of PDF File
 
 1. Create a [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) class object with the input PDF file.
 1. Call the [PageCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection) collection’s [Add](https://apireference.aspose.com/net/pdf/aspose.pdf.pagecollection/add/methods/1) method, without any parameters.

@@ -1,6 +1,6 @@
 ---
-title:  Image stamps in PDF page
-linktitle:  Image stamps in PDF page
+title: Image stamps in PDF programmatically
+linktitle: Image stamps in PDF File
 type: docs
 weight: 10
 url: /net/image-stamps-in-pdf-page/
@@ -47,7 +47,7 @@ dataDir = dataDir + "AddImageStamp_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Control Image Quality when Adding a Stamp
+## Control Image Quality when Adding Stamp
 
 When adding an image as a stamp object, you can control the quality of the image. The Quality property of the ImageStamp class is used for this purpose. It indicates the quality of image in percents (valid values are 0..100).
 
