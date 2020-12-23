@@ -1,9 +1,9 @@
 ---
-title: Convert PDF Pages to PNG Image
-linktitle: Convert PDF Pages to PNG Image 
+title: Convert PDF to PNG
+linktitle: Convert PDF to PNG 
 type: docs
 weight: 250
-url: /net/convert-pdf-pages-to-png-image/
+url: /net/convert-pdf-to-png/
 lastmod: "2020-12-15"
 description: This page describes how to convert PDF Pages to PNG image, convert all and single Pages to PNG images with Aspose.PDF for .NET.
 sitemap:
@@ -15,7 +15,7 @@ Use the **Aspose.PDF for .NET** library for converting PDF Pages to Png Images i
 
 The PngDevice class allows you to convert PDF pages to PNG images. This class provides a method named Process which allows you to convert a particular page of the PDF file to PNG image format.
 
-## Convert All Pages to PNG Images
+## Convert PDF Pages to PNG Images
 
 {{% alert color="primary" %}} 
 

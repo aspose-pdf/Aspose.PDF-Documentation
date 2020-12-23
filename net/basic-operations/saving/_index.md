@@ -1,10 +1,10 @@
 ---
-title: Saving a PDF
-linktitle: Saving
+title: Save PDF document programmatically
+linktitle: Save 
 type: docs
 weight: 20
 url: /net/save-pdf-document/
-description: Learn how to save a PDF file in C# Aspose.PDF for .NET PDF library. 
+description: Learn how to save PDF file in C# Aspose.PDF for .NET PDF library. 
 aliases:
     - /net/saving/
 lastmod: "2020-12-16"
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Saving a PDF document to file system
+## Save PDF document to file system
 
 You can save the created or manipulated PDF document to file system using `Save` method of `Document` class.
 When you do not provide the format type (options), then the document is saved in Aspose.PDF v.1.7 (*.pdf) format.
@@ -31,7 +31,7 @@ public static void SaveDocument()
 }
 ```
 
-## Saving a PDF document to stream
+## Save PDF document to stream
 
 You can also save the created or manipulated PDF document to stream by using overloads of `Save` methods.
 
@@ -48,7 +48,7 @@ public static void SaveDocumentStream()
 }
 ```
 
-## Saving a PDF document in Web applications
+## Save PDF document in Web applications
 
 To save documents in Web applications, you can use the ways proposed above. In addition, the `Document` class has overloaded method `Save` for using with the [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8) class.
 
@@ -62,7 +62,7 @@ pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new 
 
 For more detailed explanation please follow to [Showcase] section.
 
-## Saving as PDF/A or PDF/X format
+## Save PDF/A or PDF/X format
 
 PDF/A is an ISO-standardized version of the Portable Document Format (PDF) for use in archiving and long-term preservation of electronic documents.
 PDF/A differs from PDF in that it prohibits features not suitable for long-term archiving, such as font linking (as opposed to font embedding) and encryption. ISO requirements for PDF / A viewers include color management guidelines, embedded font support, and a user interface for reading embedded annotations.

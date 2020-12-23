@@ -1,6 +1,6 @@
 ---
-title: Merge PDF files
-linktitle: Merge files
+title: Merge PDF programmatically
+linktitle: Merge PDF files
 type: docs
 weight: 50
 url: /net/merge-pdf-documents/

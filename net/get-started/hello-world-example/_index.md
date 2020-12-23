@@ -1,13 +1,13 @@
 ---
-title: Hello World Example
+title: \"Hello World\" С# Example
 linktitle: Hello World Example
 type: docs
 weight: 20
 url: /net/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World. 
 aliases:
-    - url: /pdf/net/hello-world/
-lastmod: "2020-12-16"
+    - /pdf/net/hello-world/
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

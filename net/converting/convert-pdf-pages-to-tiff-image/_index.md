@@ -1,10 +1,10 @@
 ---
-title: Convert PDF Pages to TIFF Image
-linktitle: Convert PDF Pages to TIFF Image 
+title: Convert PDF to TIFF
+linktitle: Convert PDF to TIFF  
 type: docs
 weight: 260
-url: /net/convert-pdf-pages-to-tiff-image/
-lastmod: "2020-12-15"
+url: /net/convert-pdf-to-tiff/
+lastmod: "2020-12-23"
 description: This page describes how to convert PDF Pages to TIFF  image, convert all and single Pages to TIFF images  with Aspose.PDF for .NET.
 sitemap:
     changefreq: "weekly"
@@ -21,7 +21,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-## Convert All Pages to One TIFF Image
+## Convert PDF Pages to One TIFF Image
 
 Aspose.PDF for .NET explain how to convert all pages in a PDF file to a single TIFF image:
 

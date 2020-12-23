@@ -1,5 +1,6 @@
 ---
 title: Posting AcroForm data to an external web page
+linktitle: Posting AcroForm to Web
 type: docs
 weight: 140
 url: /net/posting-acroform-data-to-an-external-web-page/
@@ -13,7 +14,7 @@ sitemap:
 
 AcroForm is an important type of the PDF document. You can not only create and edit an AcroForm using [Aspose.Pdf.Facades namepsace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace), but also import and export form data to and XML file. Aspose.Pdf.Facades namespace in Aspose.PDF for .NET allows you to implement another feature of AcroForm, which helps you post an AcroForm data to an external web page. This web page then reads the post variables and uses this data for further processing. This feature is useful in the cases when you don’t just want to keep the data in the PDF file, rather you want to send it to your server and then save it in a database etc.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Implementation details
 

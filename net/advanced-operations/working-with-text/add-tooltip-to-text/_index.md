@@ -1,6 +1,6 @@
 ---
-title: Add Tooltip to Text
-linktitle: Add Tooltip to Text
+title: PDF Tooltip
+linktitle: PDF Tooltip
 type: docs
 weight: 20
 url: /net/add-tooltip-to-text/

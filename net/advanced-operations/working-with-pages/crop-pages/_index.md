@@ -1,5 +1,5 @@
 ---
-title: Crop Pages in PDF document programmatically using C#
+title: Crop PDF Pages programmatically C#
 linktitle: Crop Pages
 type: docs
 weight: 30

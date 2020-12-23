@@ -1,6 +1,6 @@
 ---
-title:  Text stamps in PDF File 
-linktitle:  Text stamps in the PDF File
+title: Text stamps in PDF programmatically
+linktitle: Text stamps in PDF File
 type: docs
 weight: 20
 url: /net/text-stamps-in-the-pdf-file/
