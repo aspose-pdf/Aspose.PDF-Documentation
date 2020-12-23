@@ -1,5 +1,6 @@
 ---
-title: Split PDF document 
+title: Split PDF programmatically
+linktitle: Split PDF files
 type: docs
 weight: 60
 url: /net/split-pdf-document/

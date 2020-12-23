@@ -1,6 +1,6 @@
 ---
-title: Concatenating all PDF files in Particular folder
-linktitle: Concatenating all PDFs
+title: Concatenate PDF files in folder
+linktitle: Concatenating PDF files
 type: docs
 weight: 70
 url: /net/concatenating-all-pdf-files-in-particular-folder/
