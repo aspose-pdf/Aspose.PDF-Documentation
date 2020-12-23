@@ -25,15 +25,15 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 
 <h2>Chapters </h2>
 
-- [What's new](/pdf/net/whatsnew)
-- [Overview](/pdf//net/overview)
-- [Get Started](/pdf/net/overview)
-- [Basic operations](/pdf/net/basic-operations)
-- [Converting documents](/pdf//net/converting/)
-- [Parsing PDF documents](/pdf/net/parsing)
-- [Advanced operations](/pdf/net/advanced-operations)
-- [Showcases](/pdf/net/showcases)
-- [Release Notes](/pdf/net/release-notes)
+- [What's new](/pdf/net/whatsnew/)
+- [Overview](/pdf//net/overview/)
+- [Get Started](/pdf/net/get-started)
+- [Basic operations](/pdf/net/basic-operations/)
+- [Converting documents](/pdf/net/converting/)
+- [Parsing PDF documents](/pdf/net/parsing/)
+- [Advanced operations](/pdf/net/advanced-operations/)
+- [Showcases](/pdf/net/showcases/)
+- [Release Notes](/pdf/net/release-notes/)
 
 <h2> Aspose.PDF for .NET Resources</h2>
 
