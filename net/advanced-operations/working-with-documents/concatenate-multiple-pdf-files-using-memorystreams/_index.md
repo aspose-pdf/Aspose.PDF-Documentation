@@ -1,20 +1,17 @@
 ---
 title: Concatenate multiple PDF files using MemoryStreams
-linktitle: Concatenate multiple PDF files using MemoryStreams
+linktitle: Concatenate multiple PDFs
 type: docs
-weight: 220
+weight: 80
 url: /net/concatenate-multiple-pdf-files-using-memorystreams/
-lastmod: "2020-12-22"
+description: In this article, we'll show you how to concatenate multiple PDF files using MemoryStreams with Aspose.PDF for . NET.
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-{{% alert color="primary" %}}
-
-In this article, we'll show you how to concatenate multiple PDF files using MemoryStreams.
-
-{{% /alert %}}
+**Aspose.PDF in C#** allows to concatenate multiple PDF files using MemoryStreams.
 
 ## Implementation details
 
@@ -22,6 +19,6 @@ In this article, we'll show you how to concatenate multiple PDF files using Memo
 
 [Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class takes the source PDF files and the destination PDF file as parameters. These parameters can be either paths to the PDF files on the disk or they could be MemoryStreams. Now, for this example, we’ll first create two files streams to read the PDF files from the disk. Then we’ll convert these files into byte arrays. These byte arrays of the PDF files will be converted to MemoryStreams. Once we get the MemoryStreams out of PDF files, we’ll be able to pass them on to the concatenate method and merge into a single output file.
 
-The following code snippet shows you how to concatenate multiple PDF files using MemoryStreams:
+The following code snippet shows you how to concatenate multiple PDF files using MemoryStreams with C#:
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenateMultiplePDFUsingMemoryStream-ConcatenateMultiplePDFUsingMemoryStream.cs" >}}

@@ -30,5 +30,8 @@ You are able to do the following:
 - [Optimize PDF Document](/pdf/net/optimize-pdf-document/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
 - [Merge document](/pdf/net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using C#.
 - [Split document](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications. 
+- [Concatenating all PDF files in Particular folder](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - concatenate all PDF files in Particular folder using PdfFileEditor class.
+- [Concatenate multiple PDF files using MemoryStreams](/pdf/net/concatenate-multiple-pdf-files-using-memorystreams/) - you will learn how to concatenate multiple PDF files using MemoryStreams with C#.
+- [Working with Headings](/pdf/net/working-with-headings/) - you can create numbering in heading your PDF document with C#.
 
 
