@@ -25,15 +25,15 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 
 <h2>Chapters </h2>
 
-- [What's new](/pdf/net/whatsnew)
-- [Overview](/pdf//net/overview)
-- [Get Started](/pdf/net/overview)
-- [Basic operations](/pdf/net/basic-operations)
-- [Converting documents](/pdf//net/converting/)
-- [Parsing PDF documents](/pdf/net/parsing)
-- [Advanced operations](/pdf/net/advanced-operations)
-- [Showcases](/pdf/net/showcases)
-- [Release Notes](/pdf/net/release-notes)
+- [What's new](/pdf/net/whatsnew/)
+- [Overview](/pdf//net/overview/)
+- [Get Started](/pdf/net/get-started)
+- [Basic operations](/pdf/net/basic-operations/)
+- [Converting documents](/pdf/net/converting/)
+- [Parsing PDF documents](/pdf/net/parsing/)
+- [Advanced operations](/pdf/net/advanced-operations/)
+- [Showcases](/pdf/net/showcases/)
+- [Release Notes](/pdf/net/release-notes/)
 
 <h2> Aspose.PDF for .NET Resources</h2>
 
@@ -41,8 +41,8 @@ The following are the links to some useful resources you may need to accomplish 
 
 - [Aspose.PDF for .NET Features](/pdf/net/key-features/)
 - [Aspose.PDF for .NET Release Notes](/pdf/net/release-notes/)
-- [Aspose.PDF for .NET Product Page](https://products.aspose.com/pdf/net)
+- [Aspose.PDF for .NET Product Page](https://products.aspose.com/pdf/net/)
 - [Install Aspose.PDF for .NET NuGet Package](https://www.nuget.org/packages/Aspose.PDF/)
-- [Aspose.PDF for .NET API Reference Guide](https://apireference.aspose.com/net/pdf)
-- [Aspose.PDF for .NET Free Support Forum](https://forum.aspose.com/c/pdf)
+- [Aspose.PDF for .NET API Reference Guide](https://apireference.aspose.com/net/pdf/)
+- [Aspose.PDF for .NET Free Support Forum](https://forum.aspose.com/c/pdf/)
 - [Aspose.PDF for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
