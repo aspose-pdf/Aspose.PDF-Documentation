@@ -9,7 +9,7 @@ description: Aspose.PDF provides the ability to create Tagged PDF documents, all
 aliases:    
     - /pdf/net/working-with-tagged-pdfs/
     - /pdf/net/accessebility-tagged-pdf/
-lastmod: "2020-12-16"
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,7 +19,7 @@ A Tagged PDF document can be accessed by people with disabilities. Adding access
 
 This section covers following topic:
 
-- [Create Tagged PDF Documents](/pdf/net/create-tagged-pdf-documents/)
+- [Create Tagged PDF](/pdf/net/create-tagged-pdf/)
 - [Extract Tagged Content from Tagged PDFs](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
 - [Setting Structure Elements Properties](/pdf/net/setting-structure-elements-properties/)
 - [Working with Table in Tagged PDFs](/pdf/net/working-with-table-in-tagged-pdfs/)

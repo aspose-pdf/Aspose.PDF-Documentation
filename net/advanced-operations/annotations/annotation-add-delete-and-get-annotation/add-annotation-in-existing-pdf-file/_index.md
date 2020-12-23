@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/add-annotation-in-existing-pdf-file/
 description: This page describes how to add an annotation in an existing PDF file. Also, you may delete all or particular annotations from a page of a PDF file.
-lastmod: "2020-12-16"
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -57,7 +57,7 @@ dataDir = dataDir + "AddAnnotation_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Delete All Annotations from a Page of a PDF File
+## Delete All Annotations from Page of PDF File
 
 A [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object’s [AnnotationCollection](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection contains all the annotations for that particular page. To delete all the annotations from a page, call the *Delete* method of the AnnotationCollectoin collection.
 
@@ -79,7 +79,7 @@ dataDir = dataDir + "DeleteAllAnnotationsFromPage_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Delete a Particular Annotation from the PDF File
+## Delete Particular Annotation from PDF File
 
 {{% alert color="primary" %}}
 
@@ -108,7 +108,7 @@ dataDir = dataDir + "DeleteParticularAnnotation_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Get All Annotations from the Page of a PDF Document
+## Get All Annotations from Page of PDF Document
 
 Aspose.PDF allows you to get annotations from an entire document, or from a given page. To get all annotations from the page in a PDF document, loop through the [AnnotationCollection](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection of desired page resources. The following code snippet shows you how to get all the annotations of a page.
 
@@ -132,7 +132,7 @@ foreach (MarkupAnnotation annotation in pdfDocument.Pages[1].Annotations)
 
 Please note that to get all annotations from the whole PDF, you have to loop through the document’s PageCollection Class collection before navigating through the AnnotationCollection class collection. You can get each annotation of the collection in a base annotation type called MarkupAnnotation Class and then show its properties.
 
-## Get Particular Annotation from a PDF File
+## Get Particular Annotation from PDF File
 
 Annotations are associated with individual pages and stored in a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object’s [AnnotationCOllection](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection. To get a particular annotation, specify its index. This returns an [Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) object which needs to be cast to a particular annotation type, for example [TextAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). The following code snippet shows how to get a particular annotation and its properties.
 

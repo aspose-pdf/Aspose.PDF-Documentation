@@ -1,11 +1,11 @@
 ---
-title: PDF Signing With Smart Card usinh Aspose.PDF for .NET
+title: How to add Smart Card signature to PDF
 linktitle: PDF Signing with Smart Card
 type: docs
 weight: 40
 url: /net/sign-pdf-document-from-smart-card/
 description: Aspose.PDF for .NET allows you to sign PDF documents from a smart card using signature field.
-lastmod: "2020-12-16"
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

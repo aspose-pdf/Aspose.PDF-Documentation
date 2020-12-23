@@ -1,12 +1,12 @@
 ---
-title: Digitally sign PDF file using Aspose.PDF for .NET
-linktitle: Digitally sign PDF file 
+title: How to digitally sign PDF
+linktitle: Digitally sign PDF 
 type: docs
 weight: 10
 url: /net/digitally-sign-pdf-file/
 keywords: add digital signature to PDF using C#,certify digital signature in PDF using csharp,digitally sign PDF using csharp,verify digitally signed PDF using csharp
 description: Digitally sign PDF documents using C# or VB.NET. Verify, or validate the digitally sign PDFs using C# or VB.NET based application with Dotnet PDF Library.You can also certify a PDF file with a PKCS12-Certificate.
-lastmod: "2020-12-16"
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -44,7 +44,7 @@ public static void SignDocument()
 }
 ```
 
-## Add a timestamp to a digital signature
+## Add timestamp to digital signature
 
 Aspose.PDF for .NET supports to digitally sign the PDF with a timestamp server or Web service.
 

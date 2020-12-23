@@ -1,11 +1,11 @@
 ---
-title: Supported XML Schema
+title: XML Schema of Aspose.PDF
 linktitle: Supported XML Schema
 type: docs
 weight: 10
 url: net/supported-xml-schema/
 description: This article describes an XML schema for working with XML documents in Aspose.PDF for .NET
-lastmod: "2020-12-16"
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
