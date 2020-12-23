@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /net/add-caret-annotation/
 description: This section describes how to add, get, and delete Caret annotation from your PDF document.
-lastmod: "2020-12-16"
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
