@@ -1,11 +1,11 @@
 ---
-title: Add Widget Annotation to Aspose.PDF for .NET
+title: PDF Widget Annotation 
 linktitle: Widget Annotation
 type: docs
 weight: 80
 url: /net/add-widget-annotation/
 description: This article describes how to add controls based on awidget annotations to PDF documents with Aspose.PDF for .NET. 
-lastmod: "2020-12-16"
+lastmod: "2020-12-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

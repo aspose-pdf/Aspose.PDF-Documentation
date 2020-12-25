@@ -1,11 +1,11 @@
 ---
-title: How to Add Line Annotation
+title: PDF Add Line Annotation
 linktitle: Line Annotation
 type: docs
 weight: 40
 url: /net/add-line-annotation/
 description: This article shows how you can add, get, and delete line annotation from your PDF document.
-lastmod: "2020-12-16"
+lastmod: "2020-12-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -1,11 +1,11 @@
 ---
-title: How to Add, Get or Delete a Caret Annotation
+title: PDF Caret Annotation
 linktitle: Caret Annotation
 type: docs
 weight: 90
 url: /net/add-caret-annotation/
 description: This section describes how to add, get, and delete Caret annotation from your PDF document.
-lastmod: "2020-12-23"
+lastmod: "2020-12-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
