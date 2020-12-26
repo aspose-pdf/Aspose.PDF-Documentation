@@ -1,11 +1,11 @@
 ---
-title: Add Popup Annotation using Aspose.PDF for .NET
+title: PDF Popup Annotation 
 linktitle: Popup Annotation
 type: docs
 weight: 110
 url: /net/add-popup-annotation/
 description: Pop-up annotation not appear alone, it is associated with a Markup annotation, its parent annotation, and shall be used for editing the parent’s text.
-lastmod: "2020-12-16"
+lastmod: "2020-12-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

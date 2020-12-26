@@ -1,11 +1,11 @@
 ---
-title: Add, Get or Delete Polygon/Polyline Annotations using Aspose.PDF for .NET
+title: PDF Polygon/Polyline Annotations
 linktitle: Polygon/Polyline Annotations
 type: docs
 weight: 60
 url: /net/add-polygon-and-polyline-annotations/
 description: Aspose.PDF for .NET allows you to add, get, and delete the polygon and polyline annotations from your PDF document.
-lastmod: "2020-12-16"
+lastmod: "2020-12-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

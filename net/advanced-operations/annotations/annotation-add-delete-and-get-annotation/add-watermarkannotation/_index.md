@@ -1,5 +1,5 @@
 ---
-title: Add Watermark Annotation using Aspose.PDF for .NET
+title: PDF Watermark Annotation 
 linktitle: Watermark Annotation
 type: docs
 weight: 130
