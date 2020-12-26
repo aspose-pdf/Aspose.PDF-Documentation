@@ -1,11 +1,11 @@
 ---
-title: Add, Get or Delete Square/Circle Annotations
+title: PDF Square/Circle Annotations
 linktitle: Square/Circle Annotations
 type: docs
 weight: 50
 url: /net/add-square-and-circle-annotations/
 description: This article describes how to add, get, and delete the Square and Circle annotations from your PDF document with Aspose.PDF for .NET
-lastmod: "2020-12-16"
+lastmod: "2020-12-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

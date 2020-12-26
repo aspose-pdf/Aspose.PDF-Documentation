@@ -28,7 +28,7 @@ Aspose.PDF for .NET allows converting PDF documents to various formats and also 
 | [Convert XML to PDF](/pdf/net/convert-xml-to-pdf/) | [Convert PDF to XML](/pdf/net/convert-pdf-to-xml/) |
 | [Convert DICOM to PDF](/pdf/net/convert-dicom-to-pdf/)
 | [Convert HTML to PDF](/pdf/net/convert-html-to-pdf/) | [Convert PDF to HTML](/pdf/net/convert-pdf-to-html/) |
-| [Convert JPG to PDF](/pdf/net/convert-jpg-to-pdf/) | [Convert PDF to JPG](/pdf/net/convert-pdf-pages-to-jpeg-image/) |
+| [Convert JPG to PDF](/pdf/net/convert-jpg-to-pdf/) | [Convert PDF to JPG](/pdf/net/convert-pdf-jpg/) |
 | [Convert BMP to PDF](/pdf/net/convert-bmp-to-pdf/) | [Convert PDF to BMP](/pdf/net/convert-pdf-to-bmp/) |
 | [Convert EMF to PDF](/pdf/net/convert-emf-to-pdf/) | [Convert PDF to EMF](/pdf/net/convert-pdf-to-emf/) |
 | [Convert TIFF to PDF](/pdf/net/convert-tiff-to-pdf/) | [Convert PDF to TIFF](/pdf/net/convert-pdf-to-tiff/) |

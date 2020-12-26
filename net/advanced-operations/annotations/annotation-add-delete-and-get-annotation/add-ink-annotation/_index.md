@@ -1,5 +1,5 @@
 ---
-title: How to Add Ink Annotation with C#
+title: PDF Ink Annotation with C#
 linktitle: Ink Annotation
 type: docs
 weight: 100

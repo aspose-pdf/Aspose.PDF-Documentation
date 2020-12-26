@@ -5,13 +5,13 @@ type: docs
 weight: 30
 url: /net/text-formatting-inside-pdf/
 description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, adding a border around the added text, text alignment for floating box contents and etc.
-lastmod: "2020-12-16"
+lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Add Line Indent
+## How to add Line Indent to PDF
 
 Aspose.PDF for .NET offers SubsequentLinesIndent property into TextFormattingOptions class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
 
@@ -50,7 +50,7 @@ page.Paragraphs.Add(text);
 document.Save(dataDir + "SubsequentIndent_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
 ```
 
-## Add Text Border
+## How to add Text Border
 
 The following code snippet shows, how to add a border to a text using TextBuilder and setting DrawTextRectangleBorder property of TextState:
 
@@ -80,7 +80,7 @@ tb.AppendText(textFragment);
 pdfDocument.Save(dataDir + "PDFWithTextBorder_out.pdf");
 ```
 
-## Add Underline Text
+## How to add Underline Text
 
 The following code snippet shows you how to add Underline text while creating a new PDF file.
 
@@ -113,7 +113,7 @@ dataDir = dataDir + "AddUnderlineText_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Adding a Border Around Added Text
+## How to add Border Around Added Text
 
 You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class.
 
@@ -136,7 +136,7 @@ dataDir = dataDir + "AddingBorderAroundAddedText_out.pdf";
 editor.Save(dataDir);
 ```
 
-## Adding NewLine feed
+## How to add NewLine feed
 
 TextFragment doesn’t support line feed inside the text. However in order to add text with line feed, please use TextFragment with TextParagraph:
 
@@ -183,7 +183,7 @@ dataDir = dataDir + "AddNewLineFeed_out.pdf";
 pdfApplicationDoc.Save(dataDir);
 ```
 
-## Adding StrikeOut Text
+## How to add StrikeOut Text
 
 The TextState class provides the capabilities to set formatting for TextFragments being placed inside PDF document. You can use this class to set text formatting as Bold, Italic, Underline and starting this release, the API has provided the capabilities to mark text formatting as Strikeout. Please try using the following code snippet to add TextFragment with Strikeout formatting.
 
@@ -253,7 +253,7 @@ using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
 
 >In order to apply a Radial Gradient, you can set ‘PatternColorSpace’ property equal to ‘Aspose.Pdf.Drawing.GradientRadialShading(startingColor, endingColor)’ in the above code snippet.
 
-## Text Alignment for Floating Box Contents
+## How to align text to float content
 
 Aspose.PDF supports setting text alignment for contents inside a Floating Box element. The alignment properties of Aspose.Pdf.FloatingBox instance can be used to achieve this as shown in the following code sample.
 

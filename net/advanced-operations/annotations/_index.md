@@ -1,6 +1,6 @@
 ---
-title: Working with Annotations in PDF
-linktitle: Working with Annotations
+title: PDF Annotations 
+linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /net/annotations/
@@ -9,7 +9,7 @@ aliases:
     - /net/working-with-annotations/
     - /net/annotation/
     - /net/working-with-annotations-facades/
-lastmod: "2020-12-14"    
+lastmod: "2020-12-23"    
 sitemap:
     changefreq: "weekly"
     priority: 0.7

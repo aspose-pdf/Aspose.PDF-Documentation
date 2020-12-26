@@ -1,15 +1,16 @@
 ---
-title: How to Add, Get or Delete a Caret Annotation
+title: PDF Caret Annotation
 linktitle: Caret Annotation
 type: docs
 weight: 90
 url: /net/add-caret-annotation/
 description: This section describes how to add, get, and delete Caret annotation from your PDF document.
-lastmod: "2020-12-16"
+lastmod: "2020-12-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+## Add Caret Annotation
 
 Caret Annotation is a symbol that indicates text editing. Caret Annotation is also markup annotation, so the Caret class derives from the Markup class and also provides functions to get or set properties of the Caret Annotation and reset the flow of the Caret Annotation appearance.
 
@@ -81,41 +82,42 @@ namespace Aspose.Pdf.Examples.Advanced
         }
 ```
 
+## Get Caret Annotation
+
 Please try using the following code snippet to Get Caret Annotation in PDF document
 
 ```csharp
-        public static void GetCaretAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_caret.pdf"));
-            var caretAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Caret)
-                .Cast<CaretAnnotation>();
-            foreach (var ca in caretAnnotations)
-            {
-                Console.WriteLine($"{ca.Rect}");
-            }
-        }
+public static void GetCaretAnnotation()
+{
+    // Load the PDF file
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_caret.pdf"));
+    var caretAnnotations = document.Pages[1].Annotations
+        .Where(a => a.AnnotationType == AnnotationType.Caret)
+        .Cast<CaretAnnotation>();
+    foreach (var ca in caretAnnotations)
+    {
+        Console.WriteLine($"{ca.Rect}");
+    }
+}
 ```
+
+## Delete Caret Annotation
 
 The following code snippet shows how Delete Caret Annotation from a PDF file.
 
 ```csharp
-        public static void DeleteCaretAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_caret.pdf"));
-            var caretAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Caret)
-                .Cast<CaretAnnotation>();
+public static void DeleteCaretAnnotation()
+{
+    // Load the PDF file
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_caret.pdf"));
+    var caretAnnotations = document.Pages[1].Annotations
+        .Where(a => a.AnnotationType == AnnotationType.Caret)
+        .Cast<CaretAnnotation>();
 
-            foreach (var ca in caretAnnotations)
-            {
-                document.Pages[1].Annotations.Delete(ca);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_caret_del.pdf"));
-        }
+    foreach (var ca in caretAnnotations)
+    {
+        document.Pages[1].Annotations.Delete(ca);
     }
+    document.Save(System.IO.Path.Combine(_dataDir, "sample_caret_del.pdf"));
 }
-
 ```
