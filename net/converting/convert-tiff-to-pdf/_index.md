@@ -2,9 +2,9 @@
 title: Convert TIFF to PDF
 linktitle: Convert TIFF to PDF
 type: docs
-weight: 130
+weight: 210
 url: /net/convert-tiff-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2020-12-27"
 description: Aspose.PDF for .NET allows converting multi-page or multi-frame TIFF images to PDF applications. 
 sitemap:
     changefreq: "weekly"

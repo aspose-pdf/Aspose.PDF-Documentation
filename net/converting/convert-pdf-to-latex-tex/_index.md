@@ -2,9 +2,9 @@
 title: Convert PDF to LaTeX/TeX
 linktitle: Convert PDF to LaTeX/TeX
 type: docs
-weight: 330
+weight: 130
 url: /net/convert-pdf-to-latex-tex/
-lastmod: "2020-12-16"
+lastmod: "2020-12-27"
 description: This article describes the features of converting PDF files to LaTeX format. To convert PDF files to TeX, Aspose.PDF use the class LaTeXSaveOptions.
 sitemap:
     changefreq: "weekly"

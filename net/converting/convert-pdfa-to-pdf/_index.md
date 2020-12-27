@@ -2,9 +2,9 @@
 title: Convert PDF/A to PDF
 linktitle: Convert PDF/A to PDF
 type: docs
-weight: 10
+weight: 350
 url: /net/convert-pdfa-to-pdf/
-lastmod: "2020-12-15"
+lastmod: "2020-12-27"
 description: To convert PDF/A to PDF you should remove restrictions from the original document. Aspose.PDF for .NET allows you to solve this problem easly and simply.
 sitemap:
     changefreq: "weekly"

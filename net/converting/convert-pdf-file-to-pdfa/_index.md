@@ -2,16 +2,16 @@
 title: Convert PDF File to PDF-A
 linktitle: Convert PDF File to PDF-A 
 type: docs
-weight: 240
+weight: 180
 url: /net/convert-pdf-file-to-pdfa/
-lastmod: "2020-12-15"
+lastmod: "2020-12-27"
 description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file.  
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Aspose.PDF allows you to convert a PDF file to a PDF/A compliant PDF file. Before doing so, the file must be validated. This topic explains how.
+**Aspose.PDF for .NET** allows you to convert a PDF file to a PDF/A compliant PDF file. Before doing so, the file must be validated. This topic explains how.
 
 {{% alert color="primary" %}} 
 
