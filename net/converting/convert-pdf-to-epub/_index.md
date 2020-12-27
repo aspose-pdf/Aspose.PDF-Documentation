@@ -2,9 +2,9 @@
 title: Convert PDF to EPUB
 linktitle: Convert PDF to EPUB
 type: docs
-weight: 310
+weight: 170
 url: /net/convert-pdf-to-epub/
-lastmod: "2020-12-16"
+lastmod: "2020-12-27"
 description: Aspose.PDF for .NET supports the feature to convert PDF documents to EPUB format. You may try using the code snippet to accomplish this requirement.
 sitemap:
     changefreq: "weekly"

@@ -2,9 +2,9 @@
 title: Convert PDF to BMP
 linktitle: Convert PDF to BMP
 type: docs
-weight: 200
+weight: 40
 url: /net/convert-pdf-to-bmp/
-lastmod: "2020-12-15"
+lastmod: "2020-12-27"
 description: This article describes how to convert PDF Pages to BMP image, convert all Pages to Bmp images and convert single PDF page to BMP image with C#.
 sitemap:
     changefreq: "weekly"
