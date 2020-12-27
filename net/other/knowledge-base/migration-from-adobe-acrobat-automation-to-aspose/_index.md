@@ -5,7 +5,8 @@ weight: 30
 url: /net/migration-from-adobe-acrobat-automation-to-aspose/
 ---
 
-###### **This section includes the following topics:**
+**This section includes the following topics:**
+
 - [Adding Text Stamp Watermark](/pdf/net/adding-text-stamp-watermark/)
 - [Filling Form Field](/pdf/net/filling-form-field/)
 - [Printing PDF Document](/pdf/net/printing-pdf-document/)
