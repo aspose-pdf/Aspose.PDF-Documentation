@@ -1,10 +1,10 @@
 ---
-title: Aspose.PDF for .NET 17.5 Release Notes
-linktitle: Aspose.PDF for .NET 17.5 Release Notes
+title: Aspose.PDF for .NET 17.5
+linktitle: Aspose.PDF for .NET 17.5
 type: docs
 weight: 80
 url: /net/aspose-pdf-for-net-17-5-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2020-12-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
