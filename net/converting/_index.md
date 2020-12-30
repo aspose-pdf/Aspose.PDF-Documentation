@@ -4,7 +4,7 @@ linktitle: Convert PDF document
 type: docs
 weight: 70
 url: /net/converting/
-lastmod: "2020-12-23"
+lastmod: "2020-12-30"
 description: This section contains a description of all possible options for converting PDF documents on C# using Aspose.PDF library.
 aliases:
     - /pdf/net/working-with-document-conversion/
@@ -25,7 +25,7 @@ Aspose.PDF for .NET allows converting PDF documents to various formats and also 
 | [Convert EPUB to PDF](/pdf/net/convert-epub-to-pdf/) | [Convert PDF to EPUB](/pdf/net/convert-pdf-to-epub/)
 | [Convert PCL to PDF](/pdf/net/convert-pcl-to-pdf/) | |
 | [Convert PostScript to PDF](/pdf/net/convert-postscript-to-pdf/)
-| [Convert XML to PDF](/pdf/net/convert-xml-to-pdf/) | [Convert PDF to XML](/pdf/net/convert-pdf-to-xml/) |
+| [Convert XML to PDF](/pdf/net/convert-xml-to-pdf/) | |
 | [Convert DICOM to PDF](/pdf/net/convert-dicom-to-pdf/)
 | [Convert HTML to PDF](/pdf/net/convert-html-to-pdf/) | [Convert PDF to HTML](/pdf/net/convert-pdf-to-html/) |
 | [Convert JPG to PDF](/pdf/net/convert-jpg-to-pdf/) | [Convert PDF to JPG](/pdf/net/convert-pdf-jpg/) |
