@@ -27,20 +27,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 ## Convert XSL-FO to PDF
 
-The conversion of XSL-FO files to PDF can be implemented using the traditional Aspose.PDF technique - instantiate [`Document`](https://apireference.aspose.com/page/net/aspose.page/document) object with [`XslFoLoadOptions`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.xsl_fo_load_options).
-
-```csharp
-public static void Convert_XSLFO_to_PDF()
-{
-    // Instantiate XslFoLoadOption object
-    var options = new XslFoLoadOptions(".\\samples\\employees.xslt");
-    // Create Document object
-    var pdfDocument = new Aspose.Pdf.Document(".\\samples\\employees.xml", options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
-}
-```
-
-In the preceding sample, Aspose.PDF shows a simple conversion but sometimes you can meet with the incorrect file structure. For this case, XSL-FO converter allows setting the error handling strategy. You can choose `ThrowExceptionImmediately`, `TryIgnore` or `InvokeCustomHandler`.
+The conversion of XSL-FO files to PDF can be implemented using the traditional Aspose.PDF technique - instantiate [`Document`](https://apireference.aspose.com/page/net/aspose.page/document) object with [`XslFoLoadOptions`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.xsl_fo_load_options). But sometimes you can meet with the incorrect file structure. For this case, XSL-FO converter allows setting the error handling strategy. You can choose `ThrowExceptionImmediately`, `TryIgnore` or `InvokeCustomHandler`.
 
 ```csharp
 public static void Convert_XSLFO_to_PDF()
