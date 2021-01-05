@@ -1,10 +1,10 @@
 ---
-title: Aspose.PDF for .NET 8.5.0 Release Notes
-linktitle: Aspose.PDF for .NET 8.5.0 Release Notes
+title: Aspose.PDF for .NET 8.5.0 
+linktitle: Aspose.PDF for .NET 8.5.0 
 type: docs
 weight: 20
 url: /net/aspose-pdf-for-net-8-5-0-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2020-12-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

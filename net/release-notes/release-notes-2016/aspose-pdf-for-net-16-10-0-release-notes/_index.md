@@ -1,10 +1,10 @@
 ---
-title: Aspose.PDF for .NET 16.10.0 Release Notes
-linktitle: Aspose.PDF for .NET 16.10.0 Release Notes
+title: Aspose.PDF for .NET 16.10.0 
+linktitle: Aspose.PDF for .NET 16.10.0 
 type: docs
 weight: 30
 url: /net/aspose-pdf-for-net-16-10-0-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2020-12-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
