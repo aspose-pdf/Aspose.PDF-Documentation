@@ -7,7 +7,8 @@ url: /net/working-with-images/
 description: This section describes the features of working with images in a PDF file using C# library.
 aliases:
     - /net/working-with-images-in-pdf/
-lastmod: "2020-12-16"
+    - /net/manipulate-images/
+lastmod: "2021-01-11"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -101,9 +102,10 @@ mender.Save(dataDir + "AddImage_out.pdf");
 mender.Close();
 ```
 
-## Add Reference of a single Image multiple times in a PDF Document 
+## Add Reference of a single Image multiple times in a PDF Document
 
 Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. We have added a new method XImageCollection.Add(XImage) in Aspose.PDF for .NET 17.1.0. This method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
+
 ```csharp
  Aspose.PDF.Rectangle imageRectangle = new Aspose.PDF.Rectangle(0, 0, 30, 15);
 
@@ -210,7 +212,6 @@ There are different ways of achieving this. This article explains how to use an 
 
 ```csharp
 // Draw some text
-
 GSave
 
 ConcatenateMatrix  // rotate contents after the operator
@@ -225,6 +226,7 @@ GRestore
 
 // Draw some text
 ```
+
 As a result, text is drawn in regular form but some transformations are performed between the text operators. In order to display the image or to draw form objects and images, we need to use the Do operator.
 
 We also have a class named XImage which provides two properties,l Width and Height, which can be used to get image dimensions.
@@ -233,6 +235,7 @@ We also have a class named XImage which provides two properties,l Width and Heig
 1. Display the information in a Command Prompt along with the image name.
 
 The following code snippet shows you how to get an image’s dimensions and resolution without extracting the image from the PDF document.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -314,12 +317,14 @@ foreach (Operator op in doc.Pages[1].Contents)
     }
 }
 ```
+
 ## Working with Image Placement
 
 With the release of Aspose.PDF for .NET 7.0.0, we introduced classes called [ImagePlacement](https://apireference.aspose.com/pdf/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://apireference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) and [ImagePlacementCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection) which provide similar capability as the classes described above to get an image’s resolution and position in a PDF document.
 
 - ImagePlacementAbsorber performs image usage search as the ImagePlacement objects collection.
 - ImagePlacement provides the members Resolution and Rectangle that return actual image placement values.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -354,6 +359,7 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
     }
 }
 ```
+
 ## Search and Get Images from PDF Document
 
 The ImagePlacementAbsorber allows you to search among images on all pages in a PDF document.
@@ -364,6 +370,7 @@ To search a whole document for images:
 1. Loop through the ImagePlacements objects and get their properties (Image, dimensions, resolution and so on).
 
 The following code snippet shows how to search a document for all its images.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -393,12 +400,14 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
     Console.Out.WriteLine("image vertical resolution:" + imagePlacement.Resolution.Y);
 }
 ```
+
 To get an image from an individual page, use the following code:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 doc.Pages[1].Accept(abs);
 ```
+
 ## Identify if image inside PDF is Colored or Black & White
 
 Different type of compression can be applied over images to reduce their size. The type of compression being applied over image depends upon the ColorSpace of source image i.e. if image is Color (RGB), then apply JPEG2000 compression, and if it is Black & White, then JBIG2/JBIG2000 compression should be applied. Therefore identifying each image type and using an appropriate type of compression will create best/optimized output.
@@ -445,9 +454,10 @@ using (Document document = new Document(dataDir + "ExtractImages.pdf"))
     }
 }
 ```
+
 ## Replace Image in Existing PDF File
 
-The Images collection’s Replace method allows you to replace an image in an existing PDF file.
+The Images collection’s [Replace](https://apireference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) method allows you to replace an image in an existing PDF file.
 
 The Images collection can be found in a page’s Resources collection. To replace an image:
 
@@ -455,6 +465,7 @@ The Images collection can be found in a page’s Resources collection. To replac
 2. Replaced the , save the updated PDF file using Save method of the Document object.
 
 The following code snippet shows you how to replace an image in a PDF file.
+
 ```csharp
 // Open document
 Document pdfDocument = new Document("input.pdf");
@@ -463,47 +474,38 @@ pdfDocument.Pages[1].Resources.Images.Replace(1, new FileStream("lovely.jpg", Fi
 // Save updated PDF file
 pdfDocument.Save("output.pdf");
 ```
+
 ## Control Image Quality
 
-It is possible to control the quality of an image that’s being added to a PDF file. Use the overloaded Replace method in the XImageCollection class: public void Replace(int index, Stream stream, int quality)
+It is possible to control the quality of an image that’s being added to a PDF file. Use the overloaded [Replace](https://apireference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) method in the [XImageCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/ximagecollection) class.
 
 The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
+
 ```csharp
 Aspose.PDF.Document pdfDocument = new Aspose.PDF.Document(inFile);
-
 foreach (Aspose.PDF.Page page in pdfDocument.Pages)
-
 {
-
     int idx = 1;
-
     foreach (Aspose.PDF.XImage image in page.Resources.Images)
-
     {
-
         using (MemoryStream imageStream = new MemoryStream())
-
         {
-
             image.Save(imageStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-
             page.Resources.Images.Replace(idx, imageStream, 80);
-
             idx = idx + 1;
-
         }
-
     }
-
 }
 
 // pdfDocument.OptimizeResources();
 
 pdfDocument.Save(outFile);
 ```
+
 ## Set Image Size
 
 It is possible to set the size of an image that’s being added to a PDF file. In order to set size, you can use FixWidth and FixHeight properties of Aspose.Pdf.Image Class. The following code snippet demonstrates how to set the size of an image:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -529,9 +531,11 @@ dataDir = dataDir + "SetImageSize_out.pdf";
 // save resultant PDF file
 doc.Save(dataDir);
 ```
+
 ## Set Default Font Name
 
-Aspose.PDF for .NET API allows you to set a default font name when a font is not available in the document. You can use DefaultFontName property of RenderingOptions class to set the default font name. In case DefaultFontName is set to null the Times New Roman font will be used. The following code snippet shows how to set a default font name when saving PDF into an image:
+Aspose.PDF for .NET API allows you to set a default font name when a font is not available in the document. You can use DefaultFontName property of RenderingOptions class to set the default font name. In case DefaultFontName is set to null the `Times New Roman` font will be used. The following code snippet shows how to set a default font name when saving PDF into an image:
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
@@ -550,9 +554,11 @@ using (Document pdfDocument = new Document(dataDir + "input.pdf"))
     }
 }
 ```
-## Support for DICOM Images 
+
+## Support for DICOM Images
 
 Aspose.PDF for .NET supports functionality to add DICOM images to PDF documents. The following code snippet shows how to use this functionality.
+
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.

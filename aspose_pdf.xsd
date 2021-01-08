@@ -128,7 +128,7 @@
         </xs:choice>
     </xs:complexType>
     <xs:complexType name="GraphType">
-        <xs:sequence>
+        <xs:sequence>            
             <xs:element xmlns:asp="Aspose.Pdf" type="asp:PathType" name="Path" minOccurs="0"/>
             <xs:element xmlns:asp="Aspose.Pdf" type="asp:CircleType" name="Circle" minOccurs="0"/>
             <xs:element xmlns:asp="Aspose.Pdf" type="asp:EllipseType" name="Ellipse" minOccurs="0"/>
@@ -152,13 +152,13 @@
     <xs:complexType name="HeaderType">
         <xs:sequence>
             <xs:element xmlns:asp="Aspose.Pdf" type="asp:MarginType" name="Margin" minOccurs="0"/>
-            <xs:element xmlns:asp="Aspose.Pdf" type="asp:TableType" name="Table"/>
-            <xs:element xmlns:asp="Aspose.Pdf" type="asp:ImageType" name="Image"/>
-            <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphType" name="Graph"/>
-            <xs:element xmlns:asp="Aspose.Pdf" type="asp:FloatingBoxType" name="FloatingBox"/>
-            <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextFragmentType" name="TextFragment"/>
-            <xs:element type="xs:string" name="HtmlFragment"/>
-            <xs:element xmlns:asp="Aspose.Pdf" type="asp:HeadingType" name="Heading"/>
+            <xs:element xmlns:asp="Aspose.Pdf" type="asp:TableType" name="Table"  minOccurs="0"/>
+            <xs:element xmlns:asp="Aspose.Pdf" type="asp:ImageType" name="Image"  minOccurs="0"/>
+            <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphType" name="Graph"  minOccurs="0"/>
+            <xs:element xmlns:asp="Aspose.Pdf" type="asp:FloatingBoxType" name="FloatingBox" minOccurs="0"/>
+            <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextFragmentType" name="TextFragment" minOccurs="0"/>
+            <xs:element type="xs:string" name="HtmlFragment"  minOccurs="0" />
+            <xs:element xmlns:asp="Aspose.Pdf" type="asp:HeadingType" name="Heading" minOccurs="0" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="FooterType">
@@ -223,18 +223,18 @@
         <xs:sequence>
             <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphInfoType" name="GraphInfo"/>
         </xs:sequence>
-        <xs:attribute type="xs:short" name="PosX" use="optional"/>
-        <xs:attribute type="xs:byte" name="PosY" use="optional"/>
-        <xs:attribute type="xs:byte" name="Radius" use="optional"/>
+        <xs:attribute type="xs:short" name="PosX" use="required"/>
+        <xs:attribute type="xs:short" name="PosY" use="required"/>
+        <xs:attribute type="xs:short" name="Radius" use="required"/>
     </xs:complexType>
     <xs:complexType name="EllipseType" mixed="true">
         <xs:sequence>
             <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphInfoType" name="GraphInfo" minOccurs="0"/>
         </xs:sequence>
-        <xs:attribute type="xs:byte" name="Left" use="optional"/>
-        <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
-        <xs:attribute type="xs:byte" name="Width" use="optional"/>
-        <xs:attribute type="xs:byte" name="Height" use="optional"/>
+        <xs:attribute type="xs:short" name="Left" use="optional"/>
+        <xs:attribute type="xs:short" name="Bottom" use="optional"/>
+        <xs:attribute type="xs:short" name="Width" use="optional"/>
+        <xs:attribute type="xs:short" name="Height" use="optional"/>
     </xs:complexType>
     <xs:complexType name="TextType">
         <xs:simpleContent>
@@ -267,10 +267,10 @@
     <xs:complexType name="RectangleType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
-                <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
-                <xs:attribute type="xs:byte" name="Height" use="optional"/>
-                <xs:attribute type="xs:byte" name="Left" use="optional"/>
-                <xs:attribute type="xs:byte" name="Width" use="optional"/>
+                <xs:attribute type="xs:short" name="Bottom" use="optional"/>
+                <xs:attribute type="xs:short" name="Height" use="optional"/>
+                <xs:attribute type="xs:short" name="Left" use="optional"/>
+                <xs:attribute type="xs:short" name="Width" use="optional"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
