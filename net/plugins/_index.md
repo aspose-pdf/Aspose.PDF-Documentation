@@ -3,6 +3,11 @@ title: Plugins
 type: docs
 weight: 30
 url: /net/plugins/
+description: Learn how to use various plug-ins based on Aspose.PDF
+lastmod: "2020-01-11"
+sitemap:
+    changefreq: "monthy"
+    priority: 0.5
 ---
 
 This page contains a list of the plugins for the most popular web applications: DotNetNuke, Sitefinity, Umbraco, etc.

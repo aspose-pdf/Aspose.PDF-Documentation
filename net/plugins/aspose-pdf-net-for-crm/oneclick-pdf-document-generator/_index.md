@@ -3,9 +3,15 @@ title: OneClick PDF Document Generator
 type: docs
 weight: 10
 url: /net/oneclick-pdf-document-generator/
+description: Learn how to use Aspose.PDF OneClick PDF Document Generator
+lastmod: "2020-01-11"
+sitemap:
+    changefreq: "monthy"
+    priority: 0.5
 ---
 
-## **<ins>Introduction<ins/>**
+## Introduction
+
 The Aspose .NET OneClick PDF Document Generator is open source add-on used to generate and export PDFs from CRM. You can design template in word and attach in CRM and generate document as you want. You can use OneClick PDF Document Generator with Account, Contact, Lead, Opportunity and Quote Entity. It provides option to Attach the generated document with the record itself and you can download the document as well. This add-on can also resolve option set and look-up fields. In addition it allows you to generate the PDF from the Top ribbon button as well as via a single click button on the form.
 
 Aspose .NET OneClick PDF Document Generator can be used with CRM on-premises and CRM Online.
@@ -20,8 +26,11 @@ Major features of this Addon are:
 - A ribbon button is also provided to choose the template and generate document.
 
 This add-on will work with all versions of **Microsoft Dynamics CRM 2015 and CRM Online**.
-## **<ins>System Requirements and Supported Platforms<ins/>**
-### **System Requirements**
+
+## System Requirements and Supported Platforms
+
+### System Requirements
+
 In order to install and use Aspose .Net OneClick PDF Document Generator for Microsoft Dynamics CRM you need to have one of the following CRM version
 
 - Microsoft Dynamics CRM 2015.
@@ -29,15 +38,20 @@ In order to install and use Aspose .Net OneClick PDF Document Generator for Micr
 - .NET Framework 4.5 or above
 
 Please feel free to contact us if you find any issues in installing or using this Add-on.
-## **<ins>Downloading<ins/>**
+
+## Downloading
+
 You can download the latest solution at:
 
 - [Codeplex](https://asposepdfmscrm.codeplex.com/releases/view/620418)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/OneClickPDFGenerator)
 - [Code.MSDN](https://code.msdn.microsoft.com/Aspose-NET-OneClick-PDF-ca034b5d)
-## **<ins>Installing or Uninstalling<ins/>**
-### **How to Install**
-**Importing the Solution**
+
+## Installing or Uninstalling
+
+### How to Install
+
+#### Importing the Solution
 
 - Download the Solution File. (Managed if you intent to uninstall it)
 - Open CRM and go to Import Solution.
@@ -45,7 +59,7 @@ You can download the latest solution at:
 - Click Next and wait for the solution to import.
 - Click close when the solution is imported successfully.
 
-**Configuring Web Page**
+#### Configuring Web Page
 
 - Download the source code for website.
 - Copy on server. (Recommended under inetpub)
@@ -53,18 +67,26 @@ You can download the latest solution at:
 - Create a new Website.
 - Choose physical path and configure website.
 - Browse to check if it is accessible.
-- Open CRM and add a new record under Aspose>> Aspose Configuration Entity and specify the Name and URL of the deployed Web Page as below. 
+- Open CRM and add a new record under Aspose>> Aspose Configuration Entity and specify the Name and URL of the deployed Web Page as below.
 
-![todo:image_alt_text](oneclick-pdf-document-generator_1)
-### **How to Uninstall**
+![OneClick PDF Document Generator](oneclick-pdf-document-generator_1.png)
+
+### How to Uninstall
+
 - Delete Website from IIS.
 - Go to solution and select "OneClick PDF Document Generator".
 - Press the Delete button. Press OK for confirmation.
-## **<ins>Using<ins/>**
+
+## Using
+
 Easily configure and Use Aspose .NET OneClick PDF Document Generator for Dynamics CRM by following the instructions [Here](http://www.aspose.com/docs/display/pdfnet/Using+OneClick+PDF+Document+Generator).
-## **<ins>Video Demo<ins/>**
+
+## Video Demo
+
 Please check [the video](https://youtu.be/yIIj_2G88CY) below to see the plugin in action.
-## **<ins>Support<ins/>**
+
+## Support
+
 We offer free support. Anyone who uses our product, whether they have bought them or are using an evaluation, deserves our full attention and respect.
 
 You can log any issues or suggestions related to Aspose OneClick PDF Document Generator using any of the following platforms:
@@ -72,7 +94,9 @@ You can log any issues or suggestions related to Aspose OneClick PDF Document Ge
 - [Codeplex](https://asposepdfmscrm.codeplex.com/workitem/list/basic)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/issues)
 - [Code.MSDN](https://code.msdn.microsoft.com/Aspose-NET-OneClick-PDF-ca034b5d/view/Discussions#content)
-## **<ins>Extend and Contribute<ins/>**
+
+## Extend and Contribute
+
 You can download the latest source code at:
 
 - [Codeplex](https://asposepdfmscrm.codeplex.com/workitem/list/basic)

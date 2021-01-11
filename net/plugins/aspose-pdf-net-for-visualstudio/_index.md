@@ -3,6 +3,11 @@ title: Aspose.PDF .NET for VisualStudio
 type: docs
 weight: 30
 url: /net/aspose-pdf-net-for-visualstudio/
+description: Learn how to use Aspose.PDF plugins for Visual Studio
+lastmod: "2020-01-11"
+sitemap:
+    changefreq: "monthy"
+    priority: 0.5
 ---
 
 This section has the following topics:
