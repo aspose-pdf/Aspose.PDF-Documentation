@@ -1,8 +1,11 @@
 ---
 title: Performance Improvement during PDF to TIFF Conversion
 type: docs
-weight: 290
+weight: 10
 url: /net/performance-improvement-during-pdf-to-tiff-conversion/
+description: This article shows details about Performance Improvement during PDF to TIFF Conversion with PdfConverter class.
+lastmod: "2020-01-12"
+draft: true
 ---
 
 {{% alert color="primary" %}}
@@ -10,7 +13,9 @@ url: /net/performance-improvement-during-pdf-to-tiff-conversion/
 [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) allows you to convert PDF files to TIFF images. Sometimes users have to face performance issues while converting PDF to TIFF format. This article explains in detail the cause of the low performance and suggests the approach to gain optimal performance.
 
 {{% /alert %}}
-## **Implementation details**
+
+## Implementation details
+
 The default color depth while converting PDF to TIFF format is 32 bpp (bits per pixel). It is possible to specify other color depths using **ColorDepth Enumeration** as shown in the following code snippet:
 
 
@@ -37,18 +42,23 @@ The use of Windows API or unmanaged realization with other languages like C or a
 |4 bpp|5 times|
 |8 bpp|8 times|
 
-## **Overload methods of SaveAsTIFF**
+## Overload methods of SaveAsTIFF
+
 We have introduced the following two overloads of SaveAsTIFF method to support new interface:
 
 public void SaveAsTIFF(Stream,int,int,TiffSettings,IIndexBitmapConverter);
 public void SaveAsTIFF(string,int,int,TiffSettings,IIndexBitmapConverter);
-## **Implementation steps**
+
+## Implementation steps
+
 The following code snippet shows you how to use this new approach:
 
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-PDFToTIFFConversion-NewApproach.cs" >}}
-## **Conclusion**
+
+## Conclusion
+
 {{% alert color="primary" %}}
 
 The use of new mechanism to realize your own implementation of the IIndexBitmapConverter interface can provide you a lot more flexibility and help improve the overall performance of PDF to TIFF conversion.

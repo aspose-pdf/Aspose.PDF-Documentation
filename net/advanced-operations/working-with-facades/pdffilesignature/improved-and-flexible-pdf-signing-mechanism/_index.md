@@ -1,8 +1,11 @@
 ---
 title: Improved and Flexible PDF Signing Mechanism
 type: docs
-weight: 270
+weight: 10
 url: /net/improved-and-flexible-pdf-signing-mechanism/
+description: Aspose.PDF for .NET allows you use improved and flexible PDF Signing Mechanism. 
+lastmod: "2020-01-12"
+draft: true
 ---
 
 {{% alert color="primary" %}}
@@ -10,7 +13,9 @@ url: /net/improved-and-flexible-pdf-signing-mechanism/
 [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) has introduced an improved and flexible PDF signing mechanism. It allows you to sign the PDF file using different signature types. It also allows you to add signature fields and sign the PDF file using multiple signatures. You can verify the signatures as well.
 
 {{% /alert %}}
-## **Implementation details**
+
+## Implementation details
+
 You can sign a PDF file using any of the following three types of signatures: PKCS#1, PKCS#7 and PKCS#7 Detached. These three types of signatures have been supported using two new classes: **Pkcs1Signature** and **Pkcs7Signature**. A property named **Detached**, defined in the **Pkcs7Signature** class, can be used to specify the PKCS#7 Detached signature type. Both of these classes have been inherited from **Signature** class.
 
 In order to sign a PDF file using any of the above three types of the signatures, you need to first create an instance from one of the above two classes and then pass this object to the **Sign** method of **PdfFileSignature** class.
@@ -137,7 +142,8 @@ bool isSignatureVerified2 = pdfVerify.VerifySignature("Signature from Alice");
 
 
 {{< /highlight >}}
-## **Conclusion**
+
+## Conclusion
 
 {{% alert color="primary" %}}
 

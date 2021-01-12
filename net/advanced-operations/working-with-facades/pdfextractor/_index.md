@@ -1,9 +1,9 @@
 ---
-title: PdfAnnotationEditor Class
+title: PdfExtractor Class
 type: docs
-weight: 40
-url: /net/pdfannotationeditor-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfAnnotationEditor Class.
+weight: 50
+url: /net/pdfextractor-class/
+description: This section explains how to work with Aspose.PDF Facades using PdfExtractor Class.
 lastmod: "2020-01-12"
 draft: true
 sitemap:
@@ -11,5 +11,5 @@ sitemap:
     priority: 0.7
 ---
 
-- [Exploring features of PdfAnnotationEditor class](/pdf/net/exploring-features-of-pdfannotationeditor-class/)
-- [Importing and Exporting Annotations to XFDF](/pdf/net/importing-and-exporting-annotations-to-xfdf/)
+- [Find whether PDF file contains images or text only](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)
+- [Working with features of PdfExtractor class](/pdf/net/working-with-features-of-pdfextractor-class/)

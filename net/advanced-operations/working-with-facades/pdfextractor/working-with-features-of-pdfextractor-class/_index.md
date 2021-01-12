@@ -1,8 +1,11 @@
 ---
 title: Working with features of PdfExtractor class
 type: docs
-weight: 250
+weight: 20
 url: /net/working-with-features-of-pdfextractor-class/
+description: This section explains about working with features of PdfExtractor class.
+lastmod: "2020-01-12"
+draft: true
 ---
 
 {{% alert color="primary" %}}
@@ -10,7 +13,9 @@ url: /net/working-with-features-of-pdfextractor-class/
 In this article, we’ll look into the details of extracting text, images, and attachments from a PDF file. All of these extraction features are provided at one place, in [PdfExtractor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor) class. We’ll see how to use these features in our code.
 
 {{% /alert %}}
-## **Implementation details**
+
+## Implementation details
+
 [PdfExtractor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor) class provides three types of extraction capabilities. These three categories are Text, Images and Attachments. In order to perform extraction under each of these three categories PdfExtractor provide various methods which work together to give you the final output.
 
 For example, in order to extract text you can use three methods i.e. [ExtractText, GetText, HasNextPageText and GetNextPageText](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor/methods/index). Now, in order to start extracting text, first of all, you need to call [ExtractText](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor/methods/extracttext/index) method; this will extract the text from the PDF file and will store it into memory. After that, [GetText](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor/methods/gettext/index) method will take this extracted text and save on to the disk at specified location in a file. [HasNextPageText](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor/methods/hasnextpagetext) helps you loop through each page and check whether the next page has any text or not. If it contains some text then [GetNextPageText](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor/methods/getnextpagetext/index) will help you save the text of an individual page into the file.
