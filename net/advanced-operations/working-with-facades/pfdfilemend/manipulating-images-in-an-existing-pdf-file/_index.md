@@ -1,8 +1,11 @@
 ---
 title: Manipulating Images in an Existing PDF File
 type: docs
-weight: 260
+weight: 20
 url: /net/manipulating-images-in-an-existing-pdf-file/
+description: This section explains how to manipulate Images in an Existing PDF File with PdfFileMend class.
+lastmod: "2020-01-12"
+draft: true
 ---
 
 {{% alert color="primary" %}}
@@ -10,9 +13,13 @@ url: /net/manipulating-images-in-an-existing-pdf-file/
 Images are an important part of the contents of a PDF document. Manipulating images in an existing PDF file is a common requirement of the people working with PDF files. In this article, we’ll explore how the images can be manipulated, in an existing PDF file, with the help of [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) of [Aspose.PDF for .NET](/pdf/net/). All the image related operations of [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) have been consolidated in this article.
 
 {{% /alert %}}
-## **Implementation details**
+
+## Implementation details
+
 [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) allows you to add new images in an existing PDF file. You can also replace or remove an existing image. A PDF file can also be converted to images. You can either convert each individual page into a single image or a complete PDF file into one image. It allows you to formats i.e. JPEG, BMP, PNG and TIFF etc. You can extract the images from a PDF file as well. You can use four classes of [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) to implement these operations i.e. [PdfFileMend](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffilemend), [PdfContentEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfcontenteditor), [PdfExtractor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor) and [PdfConverter](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfconverter).
-## **Image Operations**
+
+## Image Operations
+
 In this section, we’ll have a detailed look into these image operations. We’ll also see the code snippets to show the use of the related classes and methods. First of all, let’s have a look at adding an image in an existing PDF file. We can use **AddImage** method of [PdfFileMend](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffilemend) class to add a new image. Using this method, you can not only specify the page number on which you want to add the image, but also the location of the image can be specified.
 
 
@@ -190,7 +197,9 @@ objConverter.Close();
 
 
 {{< /highlight >}}
-## **Conclusion**
+
+## Conclusion
+
 {{% alert color="primary" %}}
 
 In this article, we have explored the possible ways [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) allows you to manipulate the images in an existing PDF file. We can see that how flexible and easy it is to work with images in a PDF file using [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) of [Aspose.PDF for .NET](/pdf/net/).
