@@ -1,8 +1,11 @@
 ---
 title: Justify Text in a Textbox Field
 type: docs
-weight: 320
+weight: 20
 url: /net/justify-text-in-a-textbox-field/
+description: This article shows you how to Justify Text in a Textbox Field using Form Class.
+lastmod: "2020-01-12"
+draft: true
 ---
 
 {{% alert color="primary" %}}
@@ -10,7 +13,9 @@ url: /net/justify-text-in-a-textbox-field/
 In this article, we’ll show you how to justify text in a textbox field in a PDF file.
 
 {{% /alert %}}
-## **Implementation details**
+
+## Implementation details
+
 FormEditor|http://www.aspose.com/docs/display/pdfnet/FormEditor+Class] class in [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) offers the capability to decorate a PDF form field. Now, if your requirement is to justify the text in a textbox field, you can easily achieve that using **AlignJustified** value of **FormFieldFacade** enumeration and calling the **FormEditor.DecorateField** method. In the below example, first we will fill a Textbox Field using the **FillField** method of **Form** class. After that we will use FormEditor class to justify the Text in the Textbox Field. The following code snippet shows you how to justify text in a Textbox Field.
 
 

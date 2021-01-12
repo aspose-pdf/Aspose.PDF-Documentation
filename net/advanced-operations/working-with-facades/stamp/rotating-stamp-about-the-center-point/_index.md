@@ -1,8 +1,11 @@
 ---
 title: Rotating stamp about the center point
 type: docs
-weight: 200
+weight: 10
 url: /net/rotating-stamp-about-the-center-point/
+description: This section explains how to rotate stamp about the center point using Stamp Class.
+lastmod: "2020-01-12"
+draft: true
 ---
 
 {{% alert color="primary" %}}
@@ -10,7 +13,9 @@ url: /net/rotating-stamp-about-the-center-point/
 [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/home-html/) allows you to add a stamp in an existing PDF file. Sometimes, users do need to rotate the stamp. In this article, we’ll see how to rotate a stamp about its center point.
 
 {{% /alert %}}
-## **Implementation details**
+
+## Implementation details
+
 [Stamp](http://www.aspose.com/api/net/pdf/aspose.pdf/stamp) class allows you to add a watermark in a PDF file. You can specify image to be added as a stamp using **BindImage** method. The **SetOrigin** method allows you to set the origin of the added stamp; this origin is the lower-left coordinates of the stamp. You can also set the size of the image using **SetImageSize** method.
 
 Now, we see how the stamp can be rotated about the center of the stamp. [Stamp](http://www.aspose.com/api/net/pdf/aspose.pdf/stamp) class provides a property named **Rotation**. This property sets or gets the rotation from 0 to 360 of stamp content. We can specify any rotation value from 0 to 360. By specifying the rotation value we can rotate the stamp about its center point. If a Stamp is an object of Stamp type then the rotation value can be specified as aStamp.Rotation = 90. In this case the stamp will be rotated at 90 degrees about the center of the stamp content. The following code snippet shows you how to rotate the stamp about the center point:

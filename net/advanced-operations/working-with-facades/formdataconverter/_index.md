@@ -1,9 +1,9 @@
 ---
-title: FormattedText Class
+title: FormDataConverter Class
 type: docs
-weight: 80
-url: /net/formattedtext-class/
-description: This section explains how to work with Aspose.PDF Facades using FormattedText Class.
+weight: 90
+url: /net/formdataconverter-class/
+description: This section explains how to work with Aspose.PDF Facades using FormDataConverter Class.
 lastmod: "2020-01-12"
 draft: true
 sitemap:
@@ -11,4 +11,5 @@ sitemap:
     priority: 0.7
 ---
 
-- [Adding multi line watermark to existing PDF](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
+- [Converting an FDF to XML format](/pdf/net/converting-an-fdf-to-xml-format/)
+- [Converting an XML to FDF format](/pdf/net/converting-an-xml-to-fdf-format/)

@@ -1,8 +1,11 @@
 ---
 title: Using Aspose.Pdf for .NET with Coldfusion
 type: docs
-weight: 30
+weight: 20
 url: /net/using-aspose-pdf-for-net-with-coldfusion/
+description: You should work with Aspose.Pdf for .NET with Coldfusion using PdfFileInfo Class
+lastmod: "2020-01-12"
+draft: true
 ---
 
 {{% alert color="primary" %}} 
@@ -10,11 +13,17 @@ url: /net/using-aspose-pdf-for-net-with-coldfusion/
 In this article, we will explain how to use Aspose.PDF for .NET with Coldfusion. It’ll help you understand the details of Aspose.PDF for .Net and Coldfusion integration. With the help of a simple example, I’ll show you the process of incorporating the functionality of Aspose.PDF for .Net into your Coldfusion applications. 
 
 {{% /alert %}} 
-## **Background**
+
+## Background
+
 Aspose.PDF for .NET is a component which also provides the capability to edit and manipulate existing PDF files. Aspose provides this component both for .Net and Java, which can be used in your .Net and Java applications respectively, by simply accessing the API of the component. However, the method to integrate Aspose.PDF for .Net with Coldfusion is little bit different. This article will explore it in detail. 
-## **Prerequisite**
+
+## Prerequisite
+
 In order to be able to run the Aspose.PDF for .Net with Coldfusion, you’ll need IIS, .Net 2.0, and Coldfusion. I have tested the component using IIS 5, .Net 2.0, and Colfusion 8. There are two more things which you need to make sure while installing Coldfusion. First, you have to specify which site(s) under IIS will be running Coldfusion. Secondly, you’ll have to select ‘.Net Integration Services’ from the Coldfusion installer. The .Net Integration Services let you access .Net component assembly in Coldfusion applications; in this case the component will be Aspose.PDF for .NET. 
-## **Explanation**
+
+## Explanation
+
 First of all, you h ave to copy the DLL (Aspose.PDF .dll) to a location from where you’ll be accessing it for later use; this will be set as a path and assigned to assembly attribute of cfobject tag as shown below: 
 
 
@@ -77,7 +86,8 @@ assembly = "C:/Aspose/Net/Assembly/Aspose.PDF.dll">
 
 
 {{< /highlight >}}
-## **Conclusion**
+
+## Conclusion
 
 {{% alert color="primary" %}} 
 In this article, we have seen that if we follow some basic rules of Coldfusion and .Net integration, we can incorporate a lot of functionality and flexibility related to PDF document manipulation, using Aspose.PDF for .NET in our Coldfusion applications. 

@@ -1,9 +1,9 @@
 ---
-title: Export Excel worksheet data to fill PDF form
+title: AutoFiller Class
 type: docs
-weight: 10
-url: /net/working-with-facades/
-description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
+weight: 160
+url: /net/autofiller-class/
+description: This section explains how to work with Aspose.PDF Facades with AutoFiller Class.
 lastmod: "2020-01-12"
 draft: true
 sitemap:
@@ -11,3 +11,4 @@ sitemap:
     priority: 0.7
 ---
 
+- [Export Excel worksheet data to fill PDF form](/pdf/net/export-excel-worksheet-data-to-fill-pdf-form/)

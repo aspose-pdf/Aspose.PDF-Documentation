@@ -1,8 +1,11 @@
 ---
 title: Export Excel worksheet data to fill PDF form
 type: docs
-weight: 170
+weight: 10
 url: /net/export-excel-worksheet-data-to-fill-pdf-form/
+description: This section explains how you can export Excel worksheet data to fill PDF form using AutoFiller Class.
+lastmod: "2020-01-12"
+draft: true
 ---
 
 {{% alert color="primary" %}}
@@ -11,7 +14,9 @@ url: /net/export-excel-worksheet-data-to-fill-pdf-form/
 We would be using **ExportDataTable** method of [Cells](http://www.aspose.com/api/net/pdf/aspose.pdf/cells) class of [Aspose.Cells](https://docs.aspose.com//cells/net) to export the data from Excel sheet in to DataTable object. Then we need would be importing this data into Pdf form using **ImportDataTable** method of [AutoFiller](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/autofiller) class. Make sure that, the Column name of DataTable is same as field name over PDF form.
 
 {{% /alert %}}
-## **Implementation Details**
+
+## Implementation Details
+
 In the following scenario we are going to using a PDF form, which contains three form fields named ID, Name and Gender.
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_1.png)
@@ -76,7 +81,9 @@ autoFiller.Save();
 
 For information on how to export worksheet data please visit Exporting Data from Worksheets
 For information on filling form fields using please visit  AutoFiller.
-## **Conclusion**
+
+## Conclusion
+
 {{% alert color="primary" %}}
 
 [Aspose.PDF.Facades](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) also offers the capability to fill PDF form using data from database but this feature is currently supported in .Net version.
