@@ -1,8 +1,11 @@
 ---
 title: Working with the PdfContentEditor class
 type: docs
-weight: 280
+weight: 20
 url: /net/working-with-the-pdfcontenteditor-class/
+description: This section explains about working with the PdfContentEditor class.
+lastmod: "2020-01-12"
+draft: true
 ---
 
 {{% alert color="primary" %}}
@@ -10,7 +13,9 @@ url: /net/working-with-the-pdfcontenteditor-class/
 This article will help you view the [PdfContentEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/PdfContentEditor) class in a broader sense. After reading this article, you’ll be able to have a better idea that what kinds of features are supported in this class. It’ll also point you to the right direction regarding the usage of this class.
 
 {{% /alert %}}
-## **Implementation details**
+
+## Implementation details
+
 [PdfContentEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/PdfContentEditor) class allows you to manipulate variety of contents. It helps you create different annotations; twenty four annotation types are supported in [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades). We’ll show you a simple example to help you understand how the variety of annotations can be added in a PDF file.
 
 
@@ -40,7 +45,9 @@ editor.Save("output.pdf");
 
 
 {{< /highlight >}}
-## **Working with Viewer preferences**
+
+## Working with Viewer preferences
+
 It also allows you to change and get viewer preferences as shown in the code snippet given below:
 
 
@@ -70,7 +77,9 @@ editor.Save("output.pdf");
 
 
 {{< /highlight >}}
-## **Working with JavaScript**
+
+## Working with JavaScript
+
 You can also set the document level JavaScript as shown below.
 
 
@@ -96,7 +105,9 @@ editor.Save("output.pdf");
 
 
 {{< /highlight >}}
-## **Replace text and Images inside PDF**
+
+## Replace text and Images inside PDF
+
 This class also helps you replace text and images.
 
 
@@ -126,7 +137,9 @@ editor.Save("output.pdf");
 
 
 {{< /highlight >}}
-## **Deleting images**
+
+## Deleting images
+
 You can also delete either all the images or the images on particular index at a particular page.
 
 
@@ -156,7 +169,9 @@ editor.Save("output.pdf");
 
 
 {{< /highlight >}}
-## **Adding attachments**
+
+## Adding attachments
+
 Document attachments can also be added in a PDF file as shown in the following code snippet.
 
 
