@@ -3,9 +3,9 @@ title: PDF Free Text Annotation to PDF in C#
 linktitle: Free Text Annotation
 type: docs
 weight: 30
-url: /net/add-free-text-annotation/
+url: /net/free-text-annotation/
 description: This article teaches how to add Free Text Annotation to PDF in C# using Aspose.PDF for .NET. Learn more about how to set Callout for such annotation.
-lastmod: "2020-12-16"
+lastmod: "2021-01-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

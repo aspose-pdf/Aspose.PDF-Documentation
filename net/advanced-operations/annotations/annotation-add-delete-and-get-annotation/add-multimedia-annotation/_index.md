@@ -3,9 +3,9 @@ title: PDF Multimedia Annotation
 linktitle: Multimedia Annotation
 type: docs
 weight: 120
-url: /net/add-multimedia-annotation/
+url: /net/multimedia-annotation/
 description: Aspose.PDF for .NET allows you to add, get, and delete the multimedia annotation from your PDF document.
-lastmod: "2020-12-25"
+lastmod: "2021-01-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -26,11 +26,13 @@ The following methods/properties of RichMediaAnnotation class can be used.
 
 - Stream CustomPlayer { set; }: Allows setting player used to play video.
 - string CustomFlashVariables { set; }: Allows to set variables that are passed to flash application. This line is set of “key=value” pairs which are separated with ‘&'.
-- void AddCustomData(strig name, Stream data):  Add additional data for the player. For example source=video.mp4&autoPlay=true&scale=100ю
-- ActivationEvent ActivateOn { get; set}:  Event activates player; possible values are Click, PageOpen, PageVisibleю
+- void AddCustomData(strig name, Stream data):  Add additional data for the player. For example source=video.mp4&autoPlay=true&scale=100
+- ActivationEvent ActivateOn { get; set}:  Event activates player; possible values are Click, PageOpen, PageVisible
 - void SetContent(Stream stream, string name): Set video/audio data to be playedю
-- void Update():  Create a data structure of the annotation. This method should be called lastю
+- void Update():  Create a data structure of the annotation. This method should be called last
 - void SetPoster(Stream): Set poster of the video i.e. picture shown when the player is not active
+
+## Add Screen Annotation 
 
 The following code snippet shows how to add Screen Annotation to a PDF file: 
 
@@ -63,6 +65,7 @@ namespace Aspose.Pdf.Examples.Advanced
             document.Save(System.IO.Path.Combine(_dataDir, "sample_swf.pdf"));
         }
 ```
+## Add Sound Annotation 
 
 The following code snippet shows how to add Sound Annotation to a PDF file: 
 
@@ -90,6 +93,7 @@ The following code snippet shows how to add Sound Annotation to a PDF file:
             document.Save(System.IO.Path.Combine(_dataDir, "sample_wav.pdf"));
         }
 ```
+## Add RichMediaAnnotation
 
 The following code snippet shows how to add RichMediaAnnotation to a PDF file:
 
@@ -138,6 +142,7 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
             doc.Save(Path.Combine(_dataDir,"RichMediaAnnotation.pdf"));
         }
 ```
+## Get MultimediaAnnotation 
 
 Please try using the following code snippet to Get MultimediaAnnotation from PDF document.
 
@@ -158,6 +163,7 @@ Please try using the following code snippet to Get MultimediaAnnotation from PDF
             }
         }
 ```
+## Delete MultimediaAnnotation
 
 The following code snippet shows how to Delete MultimediaAnnotation from PDF file.
 
