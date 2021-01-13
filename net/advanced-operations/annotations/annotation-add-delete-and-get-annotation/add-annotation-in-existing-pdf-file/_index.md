@@ -1,11 +1,11 @@
 ---
-title: Add, Delete and Get Annotation in existing PDF file
-linktitle: Add, Delete and Get Annotation in existing PDF file 
+title: PDF Annotation in existing PDF file
+linktitle: PDF Annotation in existing PDF file
 type: docs
 weight: 10
-url: /net/add-annotation-in-existing-pdf-file/
+url: /net/pdf-annotation-in-existing-pdf-file/
 description: This page describes how to add an annotation in an existing PDF file. Also, you may delete all or particular annotations from a page of a PDF file.
-lastmod: "2020-12-23"
+lastmod: "2021-01-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
