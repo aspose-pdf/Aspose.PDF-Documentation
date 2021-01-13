@@ -8,7 +8,6 @@ lastmod: "2020-12-30"
 description: This section contains a description of all possible options for converting PDF documents on C# using Aspose.PDF library.
 aliases:
     - /pdf/net/working-with-document-conversion/
-    - /pdf/net/convert-pdf-pages/
     - /pdf/net/convert-pdf-file-to-other-formats/    
 sitemap:
     changefreq: "weekly"

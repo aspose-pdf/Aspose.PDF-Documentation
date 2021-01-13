@@ -5,6 +5,7 @@ weight: 10
 url: /net/aspose-pdf-facades-articles/
 ---
 ## **Articles in this section**
+
 - [How to Concatenate PDF Files in different Ways](/pdf/net/how-to-concatenate-pdf-files-in-different-ways/)
 - [Whats the Difference Between XML, FDF and XFDF](/pdf/net/whats-the-difference-between-xml-fdf-and-xfdf/)
 - [Using Aspose.Pdf for .NET with Coldfusion](/pdf/net/using-aspose-pdf-for-net-with-coldfusion/)
