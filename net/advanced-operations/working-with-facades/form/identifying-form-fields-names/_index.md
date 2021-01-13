@@ -8,11 +8,7 @@ lastmod: "2020-01-12"
 draft: true
 ---
 
-{{% alert color="primary" %}}
-
 [Aspose.PDF for .NET](/pdf/net/) provides the capability to create, edit and fill already created Pdf forms. [Aspose.Pdf.Facades](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) namespace contains [Form](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/form) class, which contains the function named [FillField](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/form/methods/fillfield/index) and it takes two arguments i.e. Field name and field value. So in-order to fill the form fields, you must be aware of the exact form field name.
-
-{{% /alert %}}
 
 ## Implementation details
 
@@ -24,15 +20,11 @@ As a solution to this problem, we will use the appearance attributes of each fie
 At this point, a question arises "how we would determine the location where to add the text field?"
 {{% /alert %}}
 
-
 {{% alert color="primary" %}}
-
 The solution to this problem is Box property in [FormFieldFacade](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/FormFieldFacade) class, which holds the field’s location. We need to save these values to an array of rectangle type and use these values to identify the position where to add the new text fields.
 
 {{% /alert %}}
 
 In [Aspose.Pdf.Facades](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) namespace we have a class named [FormEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/FormEditor) which provides the capability to manipulate PDF forms. Open a pdf form; add a text field beneath every existing form field and save the Pdf form with new name.
-
-
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-IdentifyFormFields-IdentifyFormFields.cs" >}}

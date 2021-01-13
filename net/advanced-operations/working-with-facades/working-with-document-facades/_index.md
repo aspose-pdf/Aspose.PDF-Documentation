@@ -5,7 +5,7 @@ weight: 80
 url: /net/working-with-document-facades/
 ---
 
-{{% alert color="error" %}}
+{{% alert color="warning" %}}
 This content is obsolete.
 {{% /alert %}}
 
@@ -27,6 +27,7 @@ In order to get file specific information of a PDF file, you need to create an o
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Working-Document-GetFileInfo-GetFileInfo.cs" >}}
+
 ## **Set XMP Metadata of an existing PDF**
 In order to set XMP metadata in a PDF file, you need to create **PdfXmpMetadata** object and bind the PDF file using **BindPdf** method. You can use **Add** method of the **PdfXmpMetadata** class to add different properties. Finally, call the **Save** method of the **PdfXmpMetadata** class. The following code snippet shows you how to add XMP metadata in a PDF file.
 

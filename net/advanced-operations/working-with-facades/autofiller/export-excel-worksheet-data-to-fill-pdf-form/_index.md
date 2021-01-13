@@ -21,7 +21,7 @@ In the following scenario we are going to using a PDF form, which contains three
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_1.png)
 
-In the Form specified above has one page, with three fields named as “ID”, “Name” and “Gender” consequently. We would be extracting the data from the following excel sheet into DataTable object.
+In the Form specified above has one page, with three fields named as "ID", "Name" and "Gender" consequently. We would be extracting the data from the following excel sheet into DataTable object.
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
@@ -31,53 +31,30 @@ Once the method is called a new Pdf form file is generated, which contains five 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
 | :- | :- |
 |![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_5.png)|![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_6.png)|
-{{< highlight java >}}
 
- Workbook workbook = new Workbook();
-
+```csharp
+Workbook workbook = new Workbook();
 // Creating a file stream containing the Excel file to be opened
-
 FileStream fstream = new FileStream("d:\\pdftest\\newBook1.xls", FileMode.Open);
-
 // Opening the Excel file through the file stream
-
 workbook.Open(fstream);
-
 // Accessing the first worksheet in the Excel file
-
 Worksheet worksheet = workbook.Worksheets[0];
-
 // Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
-
 DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
-
 // Closing the file stream to free all resources
-
 fstream.Close();
-
 // Create an object of AutoFiller class
-
 AutoFiller autoFiller = new AutoFiller();
-
 // The input pdf file that contains form fields
-
 autoFiller.InputFileName = "d:\\pdftest\\DataTableExample.pdf";
-
 // The resultant pdf, that will contain the form fields filled with information from DataTable
-
 autoFiller.OutputFileName = "D:\\pdftest\\DataTableExample_Filled.pdf";
-
 // Call the method to import the data from DataTable object into Pdf form fields.
-
 autoFiller.ImportDataTable(dataTable);
-
 // Call the save method to generate the pdf file
-
 autoFiller.Save();
-
-
-
-{{< /highlight >}}
+```
 
 For information on how to export worksheet data please visit Exporting Data from Worksheets
 For information on filling form fields using please visit  AutoFiller.
@@ -85,7 +62,5 @@ For information on filling form fields using please visit  AutoFiller.
 ## Conclusion
 
 {{% alert color="primary" %}}
-
 [Aspose.PDF.Facades](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) also offers the capability to fill PDF form using data from database but this feature is currently supported in .Net version.
-
 {{% /alert %}}

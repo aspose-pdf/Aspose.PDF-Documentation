@@ -5,6 +5,10 @@ weight: 10
 url: /net/working-with-text-facades/
 ---
 
+{{% alert color="warning" %}}
+This content is obsolete.
+{{% /alert %}}
+
 ## **Replace Text in an Existing PDF File**
 In order to replace text in an existing PDF file, you need to create an object of **PdfContentEditor** class and bind an input PDF file using **BindPdf** method. After that, you need to call **ReplaceText** method. This overload of **ReplaceText** method takes two arguments: source string (the string to replace) and destination string (the string to be replaced). You need to save the updated PDF file using **Save** method of **PdfContentEditor** class. The following code snippet shows you how to replace text in an existing PDF file.
 
