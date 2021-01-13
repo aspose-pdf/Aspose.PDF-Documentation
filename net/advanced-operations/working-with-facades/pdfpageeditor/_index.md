@@ -14,4 +14,3 @@ sitemap:
 - [Working with Page Rotation](/pdf/net/working-with-page-rotation/)
 - [Editing a PDF's individual pages using PdfPageEditor class](/pdf/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
 - [Changing page sizes in PDF file](/pdf/net/changing-page-sizes-in-a-pdf-file/)
-

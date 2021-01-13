@@ -11,6 +11,13 @@ sitemap:
     priority: 0.7
 ---
 
+{{% alert color="error" %}}
+
+This content is obsolete and/or incomplete. To learn about adding tables please follow to [Add Table in Existing PDF Document](/net/add-table-in-existing-pdf-document/).
+
+{{% /alert %}}
+
+
 ## Add table
 
 Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF namespace contains classes named [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell), and [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
