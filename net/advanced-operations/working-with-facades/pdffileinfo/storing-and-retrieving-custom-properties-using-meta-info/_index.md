@@ -5,7 +5,7 @@ weight: 10
 url: /net/storing-and-retrieving-custom-properties-using-meta-info/
 description: This section explains how you can store and retrieving custom properties using Meta info using PdfFileInfo Class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}} 

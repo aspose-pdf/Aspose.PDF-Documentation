@@ -5,7 +5,7 @@ weight: 20
 url: /net/working-with-the-pdfcontenteditor-class/
 description: This section explains about working with the PdfContentEditor class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}}

@@ -5,7 +5,7 @@ weight: 20
 url: /net/converting-an-xml-to-fdf-format/
 description: This section explains how you can convert an XML to FDF format with FormDataConverter.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}}

@@ -5,7 +5,7 @@ weight: 20
 url: /net/exploring-features-of-formeditor-class/
 description: You can learn details of exploring features of FormEditor class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}}

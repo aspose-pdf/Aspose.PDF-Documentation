@@ -23,7 +23,6 @@ url: /net/add-pdf-page-stamp/
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Stamps-Watermarks-AddPageNumber-AddPageNumber.cs" >}}
 
-
 ### Custom Numbering style
 
 The PdfFileStamp class offers the feature to add Page Number information as stamp object inside PDF document. Prior to this release, the class only supported 1,2,3,4 as page numbering style. However, there has been a requirement from some customers to use custom numbering style when placing page number stamp inside PDF document. In order to accomplish this requirement, **NumberingStyle** property has been introduced, which accepts the values from **NumberingStyle** enumeration. Specified below are values offered in this enumeration.

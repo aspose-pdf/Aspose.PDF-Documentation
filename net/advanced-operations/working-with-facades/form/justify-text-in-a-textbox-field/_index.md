@@ -5,7 +5,7 @@ weight: 20
 url: /net/justify-text-in-a-textbox-field/
 description: This article shows you how to Justify Text in a Textbox Field using Form Class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}}

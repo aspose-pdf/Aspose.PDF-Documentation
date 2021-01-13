@@ -5,7 +5,7 @@ weight: 10
 url: /net/adding-multi-line-watermark-to-existing-pdf/
 description: This section explains how to add multi line watermark to existing PDF using FormattedText Class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}}

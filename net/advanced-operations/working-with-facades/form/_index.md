@@ -5,7 +5,7 @@ weight: 140
 url: /net/form-class/
 description: This section explains how to work with Aspose.PDF Facades using Form Class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7

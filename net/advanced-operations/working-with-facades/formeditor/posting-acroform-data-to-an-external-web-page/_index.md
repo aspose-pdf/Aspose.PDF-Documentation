@@ -5,7 +5,7 @@ weight: 30
 url: /net/posting-acroform-data-to-an-external-web-page/
 description: Post AcroForm data to an external web page with aspose.PDF Facades using FormEditor Class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}} 

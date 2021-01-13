@@ -5,7 +5,7 @@ weight: 20
 url: /net/manipulating-images-in-an-existing-pdf-file/
 description: This section explains how to manipulate Images in an Existing PDF File with PdfFileMend class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}}

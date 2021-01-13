@@ -5,7 +5,7 @@ weight: 30
 url: /net/changing-page-sizes-in-a-pdf-file/
 description: Try to learn how to change page sizes in a PDF file using PdfPageEditor Class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 ## Details

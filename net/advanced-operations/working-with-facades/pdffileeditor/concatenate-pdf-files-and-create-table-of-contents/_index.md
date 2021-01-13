@@ -5,7 +5,7 @@ weight: 20
 url: /net/concatenate-pdf-files-and-create-table-of-contents/
 description: This section explains how Concatenate PDF files and create Table Of Contents with PdfFileEditor class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 The [PdfFileEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/PdfFileEditor) present under Aspose.Pdf.Facades namespace provides the capability to Concatenate/Merge PDF documents to generate a single output file. Sometime we have a requirement to merge individual PDF files and then create a Table Of Contents pointing to individual documents. So in order to fulllfil this requirement, we will first concatenate the PDF files and then add links towards the pages in merged document.

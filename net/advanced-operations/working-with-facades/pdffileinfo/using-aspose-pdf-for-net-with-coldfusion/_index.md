@@ -5,7 +5,7 @@ weight: 20
 url: /net/using-aspose-pdf-for-net-with-coldfusion/
 description: You should work with Aspose.Pdf for .NET with Coldfusion using PdfFileInfo Class
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}} 

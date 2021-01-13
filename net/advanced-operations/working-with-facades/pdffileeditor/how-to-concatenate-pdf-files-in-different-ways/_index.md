@@ -5,7 +5,7 @@ weight: 60
 url: /net/how-to-concatenate-pdf-files-in-different-ways/
 description: This section explains how to Concatenate PDF Files in different Ways using PdfFileEditor class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}} 

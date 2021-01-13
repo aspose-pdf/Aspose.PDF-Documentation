@@ -5,7 +5,7 @@ weight: 10
 url: /net/changing-field-appearance-and-attributes/
 description: This section explains how you can change field appearance and attributes with FormEditor Class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}}

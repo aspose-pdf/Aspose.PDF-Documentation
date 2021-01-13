@@ -5,7 +5,7 @@ weight: 20
 url: /net/working-with-features-of-pdfextractor-class/
 description: This section explains about working with features of PdfExtractor class.
 lastmod: "2020-01-12"
-draft: true
+draft: false
 ---
 
 {{% alert color="primary" %}}
