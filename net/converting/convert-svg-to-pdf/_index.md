@@ -4,14 +4,14 @@ linktitle: Convert SVG to PDF
 type: docs
 weight: 240
 url: /net/convert-svg-to-pdf/
-lastmod: "2020-12-27"
-description: This page shows the possibility of converting SVG  to PDF with Aspose.PDF and describes how to get SVG dimensions and overview SVG Supported Features.
+lastmod: "2021-01-15"
+description: This page shows the possibility of converting SVG to PDF with Aspose.PDF and describes how to get SVG dimensions and overview SVG Supported Features.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-**Aspose.PDF for .NET** explains how to convert SVG images to PDF format and how to get dimensions of the source SVG file. 
+**Aspose.PDF for .NET** explains how to convert SVG images to PDF format and how to get dimensions of the source <abbr title="Scalable Vector Graphics">SVG</abbr> file.
 
 Scalable Vector Graphics (SVG) is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
 

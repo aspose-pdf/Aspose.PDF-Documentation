@@ -3,9 +3,9 @@ title: PDF Text Markup Annotation
 linktitle: Add Text Markup Annotation
 type: docs
 weight: 70
-url: /net/add-text-markup-annotation/
+url: /net/text-markup-annotation/
 description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
-lastmod: "2020-12-25"
+lastmod: "2021-01-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,6 +20,8 @@ Its is possible to get or set the settings of the highlight annotations using th
 Also possible to get or set the settings of the strikethrough annotations using the strikethroughSettings property. The strikethroughSettings property is used to set the color, opacity, author, subject, modifiedDate, and isLocked properties of the strikethrough annotations.
 
 The next feature is the ability to get or set the settings of the underline annotations using the underlineSettings property. The underlineSettings property is used to set the color, opacity, author, subject, modifiedDate, and isLocked properties of the underline annotations.
+
+## Add Text Markup Annotation 
 
 In order to add an Text Markup Annotation to the PDF document, we need to perform the following actions:
 
@@ -171,6 +173,7 @@ If you want to highlight a multi-line fragment you should use advanced example:
             }
         }
 ```
+## Get Text Markup Annotation 
 
 Please try using the following code snippet to Get Text Markup Annotation from PDF document.
 
@@ -189,6 +192,7 @@ Please try using the following code snippet to Get Text Markup Annotation from P
             }
         }
 ```
+## Delete Text Markup Annotation
 
 The following code snippet shows how to Delete Text Markup Annotation from PDF file.
 

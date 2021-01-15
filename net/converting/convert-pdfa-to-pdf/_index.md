@@ -11,7 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
-Convert PDF/A document to PDF means removing PDF/A restriction from the original document. Class [`Document`](https://apireference.aspose.com/pdf/net/aspose.pdf/document) has method [`RemovePdfaCompliance(..)`](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) to remove
+Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive
+">PDF/A</abbr> restriction from the original document. Class [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) has method [RemovePdfaCompliance(..)](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) to remove
 the PDF compliance information from input/source file.
 
 ```csharp

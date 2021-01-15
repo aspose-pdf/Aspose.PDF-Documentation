@@ -3,9 +3,9 @@ title: PDF Polygon/Polyline Annotations
 linktitle: Polygon/Polyline Annotations
 type: docs
 weight: 60
-url: /net/add-polygon-and-polyline-annotations/
+url: /net/polygon-and-polyline-annotations/
 description: Aspose.PDF for .NET allows you to add, get, and delete the polygon and polyline annotations from your PDF document.
-lastmod: "2020-12-25"
+lastmod: "2021-01-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -16,6 +16,8 @@ The Polyline tool allows you to create shapes and outlines with an arbitrary num
 **Polygon Annotations** represent polygons on a page. They can have any number of vertices connected by straight lines.
 
 **Polyline Annotations** are also similar to polygons, the only difference is that the first and last vertices are not implicitly connected.
+
+## Add Polygon and Polyline Annotations 
 
 Steps with which we create Polygon and Polyline annotations:
 
@@ -90,6 +92,7 @@ namespace Aspose.Pdf.Examples.Advanced
             }
         }    
 ```
+## Get Polygon and Polyline Annotations
 
 Please try using the following code snippet to Get Polygon and Polyline Annotations in PDF document.
 
@@ -108,6 +111,7 @@ Please try using the following code snippet to Get Polygon and Polyline Annotati
         }        
         
 ```
+## Delete Polygon and Polyline Annotations
 
 The following code snippet shows how Delete Polygon and Polyline Annotations from a PDF file.
 
