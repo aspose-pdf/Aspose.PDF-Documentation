@@ -19,7 +19,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-Aspose.PDF for .NET  provides the functionality to create a PDF document based on input Markdown data file. In order to convert the Markdown to PDF, you need to initialize the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) using [MdLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/mdloadoptions).
+Aspose.PDF for .NET provides the functionality to create a PDF document based on input [Markdown](https://daringfireball.net/projects/markdown/syntax) data file. In order to convert the Markdown to PDF, you need to initialize the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) using [MdLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/mdloadoptions).
 
 The following code snippet shows how to use this functionality with Aspose.PDF library:
 

@@ -3,14 +3,14 @@ title: PDF Caret Annotation
 linktitle: Caret Annotation
 type: docs
 weight: 90
-url: /net/add-caret-annotation/
+url: /net/caret-annotation/
 description: This section describes how to add, get, and delete Caret annotation from your PDF document.
-lastmod: "2020-12-25"
+lastmod: "2021-01-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-## Add Caret Annotation
+## ## How to add Caret Annotation into existing PDF file
 
 Caret Annotation is a symbol that indicates text editing. Caret Annotation is also markup annotation, so the Caret class derives from the Markup class and also provides functions to get or set properties of the Caret Annotation and reset the flow of the Caret Annotation appearance.
 

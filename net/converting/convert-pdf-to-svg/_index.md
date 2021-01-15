@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-This article teaches you features of using the SVG format, how to convert PDF files to SVG images with Aspose.PDF for .NET
+This article teacher you how to convert PDF to <abbr title="Scalable Vector Graphics">SVG</abbr> using C#
 
 {{% alert color="primary" %}}
 

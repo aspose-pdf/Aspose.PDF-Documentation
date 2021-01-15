@@ -4,8 +4,8 @@ linktitle: Convert PDF to DOC
 type: docs
 weight: 70
 url: /net/convert-pdf-to-doc/
-lastmod: "2020-12-27"
-description: Convert PDF file to DOC format with ease and full control with Aspose.PDF for .NET. This page shows a code snippet to accomplish this task. 
+lastmod: "2021-01-15"
+description: Convert PDF file to DOC format with ease and full control with Aspose.PDF for .NET. Learn more how to tune up Microsoft Word Doc file to PDF conversion.
 aliases:
     - /pdf/net/convert-pdf-to-doc/
 sitemap:
@@ -41,6 +41,7 @@ public static void ConvertPDFtoWord()
 
 }
 ```
+
 ### Using the DocSaveOptions Class
 
 The [`DocSaveOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class provides numerous properties that improve the process of converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can specify any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
@@ -69,4 +70,3 @@ public static void ConvertPDFtoWordDocAdvanced()
     pdfDocument.Save(docFile, saveOptions);
 }
 ```
-

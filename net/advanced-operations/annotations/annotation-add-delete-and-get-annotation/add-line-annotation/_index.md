@@ -1,11 +1,11 @@
 ---
-title: PDF Add Line Annotation
+title: PDF Line Annotation
 linktitle: Line Annotation
 type: docs
 weight: 40
-url: /net/add-line-annotation/
+url: /net/line-annotation/
 description: This article shows how you can add, get, and delete line annotation from your PDF document.
-lastmod: "2020-12-25"
+lastmod: "2021-01-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,6 +15,8 @@ The purpose of a Line Annotation is to display a single straight line on the pag
 This feature additional entries specific to a line annotation. These entries are encrypted in the form of letters, for example, LL, BS, IC, and so on.
 
 Also, Line Annotation can include a caption to a line annotation, which is specified by setting Cap to `true`.
+
+## How to add Line Annotation into existing PDF file
 
 The next feature allows the effect of applying a caption to a Line Annotation that has a leader offset.
 Also, this kind of annotation allows you to define Line ending styles.
@@ -70,6 +72,7 @@ namespace Aspose.Pdf.Examples.Advanced
             }
         }
 ```
+## Get Line Annotation
 
 Please try using the following code snippet to Get Line Annotation in PDF document.
 
@@ -87,6 +90,7 @@ Please try using the following code snippet to Get Line Annotation in PDF docume
             }
         }
 ```
+## Delete Line Annotation
 
 The following code snippet shows how Delete Line Annotation from a PDF file.
 

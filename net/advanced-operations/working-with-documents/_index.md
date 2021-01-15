@@ -26,12 +26,10 @@ But **Aspose.PDF for .NET** can help you cope with most of the tasks that arise 
 You are able to do the following:
 
 - [Formatting PDF Document](/pdf/net/formatting-pdf-document/) - create a document, get and set document properties, embedding fonts, and other operations with PDF files.  
-- [Manipulate PDF Document](/pdf/net/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.   
+- [Manipulate PDF Document](/pdf/net/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.
 - [Optimize PDF](/pdf/net/optimize-pdf/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
-- [Merge PDF programmatically"](/pdf/net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using C#.
-- [Split PDF programmatically"](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications. 
+- [Merge PDF](/pdf/net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using C#.
+- [Split PDF](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications. 
 - [Concatenate PDF files in folder](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - concatenate all PDF files in Particular folder using PdfFileEditor class.
 - [Concatenate multiple PDF files using MemoryStreams](/pdf/net/concatenate-multiple-pdf-files-using-memorystreams/) - you will learn how to concatenate multiple PDF files using MemoryStreams with C#.
 - [Working with Headings](/pdf/net/working-with-headings/) - you can create numbering in heading your PDF document with C#.
-
-
