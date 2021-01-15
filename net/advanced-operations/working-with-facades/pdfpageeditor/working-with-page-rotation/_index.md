@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/working-with-page-rotation/
 description: This section explains how to work with Page Rotation using PdfPageEditor Class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

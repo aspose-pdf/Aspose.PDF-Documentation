@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/converting-an-fdf-to-xml-format/
 description: This section explains how you can convert an FDF to XML format with FormDataConverter Class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

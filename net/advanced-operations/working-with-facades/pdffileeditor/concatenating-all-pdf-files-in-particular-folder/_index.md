@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /net/concatenating-all-pdf-files-in-particular-folder/
 description: This section explains howConcatenating all Pdf files in Particular folder using PdfFileEditor class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

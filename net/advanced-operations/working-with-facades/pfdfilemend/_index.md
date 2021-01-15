@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/pdffilemend-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfFileMend Class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 sitemap:
     changefreq: "weekly"

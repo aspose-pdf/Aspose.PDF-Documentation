@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/concatenate-multiple-pdf-files-using-memorystreams/
 description: This section explains how concatenate multiple PDF files using MemoryStreams with PdfFileEditor class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

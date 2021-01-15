@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/concatenate-pdf-files-and-create-table-of-contents/
 description: This section explains how Concatenate PDF files and create Table Of Contents with PdfFileEditor class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

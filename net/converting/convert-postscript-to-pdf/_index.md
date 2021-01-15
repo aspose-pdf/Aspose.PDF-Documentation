@@ -7,7 +7,7 @@ url: /net/convert-postscript-to-pdf/
 lastmod: "2020-12-27"
 description: Conversion PostScript to PDF format is possible with C# library. Aspose.PDF allows you to use PsLoadOptions class for this task.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

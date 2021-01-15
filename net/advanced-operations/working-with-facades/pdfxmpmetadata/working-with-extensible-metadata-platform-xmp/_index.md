@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/working-with-extensible-metadata-platform-xmp/
 description: This section explains how to work with Extensible Metadata Platform - XMP using PdfXmpMetadata Class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

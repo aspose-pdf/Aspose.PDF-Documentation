@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/improved-and-flexible-pdf-signing-mechanism/
 description: Aspose.PDF for .NET allows you use improved and flexible PDF Signing Mechanism. 
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

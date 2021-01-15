@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /net/exploring-features-of-pdffileeditor-class/
 description: This section explains how to Exploring the features of PdfFileEditor class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

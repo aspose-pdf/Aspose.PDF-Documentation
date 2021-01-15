@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/working-with-features-of-pdfextractor-class/
 description: This section explains about working with features of PdfExtractor class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

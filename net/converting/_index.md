@@ -11,12 +11,30 @@ aliases:
     - /pdf/net/convert-pdf-file-to-other-formats/    
 sitemap:
     changefreq: "weekly"
-    priority: 0.7
+    priority: 0.8
 ---
 
 Aspose.PDF for .NET allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. 
 
-| Convert Format to PDF | Convert PDF to Format |
+## Convert PDF to Microsoft Office File Formats
+
+Aspose.PDF for .NET allows you quickly and easily convert your PDF documents into convenient and familiar Microsoft Office file formats.
+
+- [Convert PDF to DOC](/pdf/net/convert-pdf-to-doc/)
+- [Convert PDF to DOCX](/pdf/net/convert-pdf-to-docx/)
+- [Convert PDF to Excel](/pdf/net/convert-pdf-to-excel/)
+- [Convert PDF to PowerPoint](/pdf/net/convert-pdf-to-powerpoint/)
+
+## Convert between PDF/A and PDF formats
+
+Converting  PDF/A to PDF formats and back it's possible with C# library.
+
+- [Convert PDF to PDF/A](/pdf/net/convert-pdf-file-to-pdfa/)
+- [Convert PDF/A to PDF](/pdf/net/convert-pdfa-to-pdf/)
+
+## Convert various file formats to PDF and vice versa
+
+| Convert File to PDF | Convert PDF to File |
 | :---------------- | :------------------ |
 | [Convert Text to PDF](/pdf/net/convert-text-to-pdf/) | [Convert PDF to Text](/pdf/net/convert-pdf-to-txt/) |
 | [Convert CGM to PDF](/pdf/net/convert-cgm-to-pdf/) | |
@@ -36,20 +54,3 @@ Aspose.PDF for .NET allows converting PDF documents to various formats and also 
 | [Convert Markdown to PDF](/pdf/net/convert-markdown-to-pdf/) | |
 | [Convert SVG to PDF](/pdf/net/convert-svg-to-pdf/) | [Convert PDF to SVG](/pdf/net/convert-pdf-to-svg/) |
 | [Convert XPS to PDF](/pdf/net/convert-xps-to-pdf/) | [Convert PDF to XPS](/pdf/net/convert-pdf-to-xps/) |
-| | [Convert PDF to mobiXML](/pdf/net/convert-pdf-to-mobixml/) |
-
-## Convert PDF to Microsoft Office File Formats
-
-Aspose.PDF for .NET allows you quickly and easily convert your PDF documents into convenient and familiar Microsoft Office file formats.
-
-- [Convert PDF to DOC](/pdf/net/convert-pdf-to-doc/)
-- [Convert PDF to DOCX](/pdf/net/convert-pdf-to-docx/)
-- [Convert PDF to Excel](/pdf/net/convert-pdf-to-excel/)
-- [Convert PDF to PowerPoint](/pdf/net/convert-pdf-to-powerpoint/)
-
-## Convert between PDF/A and PDF formats
-
-Converting  PDF/A to PDF formats and back it's possible with C# library.
-
-- [Convert PDF to PDF/A](/pdf/net/convert-pdf-file-to-pdfa/)
-- [Convert PDF/A to PDF](/pdf/net/convert-pdfa-to-pdf/)

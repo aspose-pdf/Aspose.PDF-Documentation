@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/export-excel-worksheet-data-to-fill-pdf-form/
 description: This section explains how you can export Excel worksheet data to fill PDF form using AutoFiller Class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

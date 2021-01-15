@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /net/concatenate-pdf-forms-and-keep-fields-names-unique/
 description: This section explains how Concatenate PDF Forms and keep fields names unique using PdfFileEditor class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

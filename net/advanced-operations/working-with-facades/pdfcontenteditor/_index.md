@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /net/pdfcontenteditor-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfContentEditor Class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 sitemap:
     changefreq: "weekly"

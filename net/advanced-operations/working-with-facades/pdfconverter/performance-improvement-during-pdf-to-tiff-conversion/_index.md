@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/performance-improvement-during-pdf-to-tiff-conversion/
 description: This article shows details about Performance Improvement during PDF to TIFF Conversion with PdfConverter class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 

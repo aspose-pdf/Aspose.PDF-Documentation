@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/importing-and-exporting-annotations-to-xfdf/
 description: You can importing and exporting annotations to XFDF with PDFAnnotationEditor Class.
-lastmod: "2020-01-12"
+lastmod: "2021-01-15"
 draft: false
 ---
 
