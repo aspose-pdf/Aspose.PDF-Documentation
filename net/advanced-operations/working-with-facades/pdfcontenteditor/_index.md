@@ -13,3 +13,4 @@ sitemap:
 
 - [How to create Nested Bookmarks](/pdf/net/how-to-create-nested-bookmarks/)
 - [Working with the PdfContentEditor class](/pdf/net/working-with-the-pdfcontenteditor-class/)
+- [Working with Text - Facades](/pdf/net/working-with-text-facades/)
