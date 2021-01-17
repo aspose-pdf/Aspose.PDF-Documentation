@@ -1,5 +1,5 @@
 ---
-title: Remove tables from existing PDF
+title: Remove Tables from existing PDF
 type: docs
 weight: 20
 url: /net/remove-tables-from-existing-pdf/

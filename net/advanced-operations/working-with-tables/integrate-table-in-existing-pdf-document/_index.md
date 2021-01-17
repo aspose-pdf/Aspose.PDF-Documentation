@@ -1,11 +1,11 @@
 ---
-title: Integrate Table
+title: Integrate Table In Existing PDF Document
 linktitle: Integrate Table
 type: docs
 weight: 20
-url: /net/manipulate-and-integrate-table/
-description: This article shows how to manipulate and integrate tables. You can read about set border style, margins, and padding of the table,  integrating table with the database, manipulating tables in existing PDF.
-lastmod: "2020-12-16"
+url: /net/integrate-table/
+description: This article shows how to manipulate and integrate tables. You can integrate table with the database, manipulating tables in existing PDF.
+lastmod: "2021-01-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
