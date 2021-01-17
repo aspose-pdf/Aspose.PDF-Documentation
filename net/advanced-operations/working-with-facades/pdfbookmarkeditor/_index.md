@@ -1,8 +1,14 @@
 ---
-title: Working with Bookmarks - Facades
+title: PdfBookmarEditor Class
 type: docs
 weight: 70
 url: /net/working-with-bookmarks-facades/
+description: This section explains how to work with Aspose.PDF Facades using PdfBookmarEditor Class.
+lastmod: "2021-01-15"
+draft: false
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 aliases:
     - /pdf/net/pdfbookmarkeditor-class/
 ---

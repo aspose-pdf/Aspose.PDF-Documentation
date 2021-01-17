@@ -1,8 +1,11 @@
 ---
 title: Working with PDF printing - Facades
 type: docs
-weight: 120
+weight: 10
 url: /net/working-with-pdf-printing-facades/
+description: This section explains how to print PDF files with Aspose.PDF Facades using PdfFileEditor class.
+lastmod: "2021-01-15"
+draft: false
 ---
 
 

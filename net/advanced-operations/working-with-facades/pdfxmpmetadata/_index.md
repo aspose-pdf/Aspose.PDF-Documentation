@@ -12,3 +12,7 @@ sitemap:
 ---
 
 - [Working with Extensible Metadata Platform - XMP](/pdf/net/working-with-extensible-metadata-platform-xmp/)
+- [Set XMP Metadata of an existing PDF](/pdf/net/set-xmp-metadata-of-an-existing-pdf/)
+- [Get XMP Metadata of an Existing PDF File](/pdf/net/get-xmp-metadata-of-an-existing-pdf-file/)
+
+
