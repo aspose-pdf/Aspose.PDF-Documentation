@@ -12,6 +12,19 @@ Aspose.PDF for NET offers the capabilities to insert/create Table inside PDF doc
 
 {{% /alert %}}
 
-In order to remove the tables, we need to use TableAbsorber class to get hold of tables in existing PDF and then replace the table cell contents with blank characters and in order to remove the border, certain page region is redacted. The following code snippet shows the steps to delete table from existing PDF document.
+In order to remove the tables, we need to use [TableAbsorber](https://apireference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) class to get hold of tables in existing PDF and then call [Remove](https://apireference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
 
-{{< gist "aspose-com-gists" "c0e07056c427f1c8a81336809a7ae4f2" "Examples-src-main-java-com-aspose-pdf-examples-NewDocumentObject-tables-RemoveTablesFromExistingPDF-.java" >}}
+```csharp
+public static void Remove_Table()
+{
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-Java
+    PdfAnnotationEditor editor = new PdfAnnotationEditor();
+    editor.BindPdf("table2.pdf");
+    // Create TableAbsorber object to find tables
+    TableAbsorber absorber = new TableAbsorber();
+    // Visit first page with absorber
+    absorber.Visit(editor.Document.Pages[1]);
+    // Remove first table 
+    absorber.Remove(absorber.TableList[0]);            
+}
+```
