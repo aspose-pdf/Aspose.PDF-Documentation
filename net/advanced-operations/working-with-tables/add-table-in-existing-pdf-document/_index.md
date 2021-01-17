@@ -137,7 +137,7 @@ The result of the execution code below is the table depicted on the following im
 
 ![ColSpan and RowSpan demo](colspan_rowspan.png)
 
-### Working with Borders, Margins and Padding
+## Working with Borders, Margins and Padding
 
 Please note that it also supports the feature to set border style, margins and cell padding for tables. Before going into more technical details, it's important to understand the concepts of border, margins and padding which are presented below in a diagram:
 
@@ -145,17 +145,82 @@ Please note that it also supports the feature to set border style, margins and c
 
 In the above figure, you can see that the borders of table, row and cell overlap. Using Aspose.PDF, a table can have margins and cells can have paddings. To set cell margins, we have to set cell padding.
 
-#### Borders
+## Borders
 
-To set the borders of Table, Row and Cell objects, use the `Table.Border`, `Row.Border` and `Cell.Border` properties. Cell borders can also be set using the Table class' `DefaultCellBorder` property. All border related methods above are assigned an instance of the `BorderInfo` class, which is created by calling its constructor. The `BorderInfo` constructor has many overloads that take almost all parameters required to customize the border.
+To set the borders of Table, [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) and [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell) objects, use the Table.Border, Row.Border and Cell.Border properties. Cell borders can also be set using the [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table) or Row class’ DefaultCellBorder property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
 
-#### Margins Or Padding
+## Margins or Padding
 
-Cell padding can be managed using the Table class' `DefaultCellBorder` property. All padding related properties are assigned an instance of the `MarginInfo` class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters for creating customized margins.
+Cell padding can be managed using the Table class' [DefaultCellPadding](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) property. All padding related properties are assigned an instance of the [MarginInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/margininfo) class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters to create custom margins.
 
-In the example below, the cell border width is set to 0.1 point, the table border width is set to 1 point and cell padding is set to 5 points.
+In the following example, the width of the cell border is set to 0.1 point, the width of the table border is set to 1 point and cell padding is set to 5 points.
 
 ![Margin and Border in PDF Table](margin-border.png)
+
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory.
+string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+            
+// Instntiate the Document object by calling its empty constructor
+Document doc = new Document();
+Page page = doc.Pages.Add();
+// Instantiate a table object
+Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
+// Add the table in paragraphs collection of the desired section
+page.Paragraphs.Add(tab1);
+// Set with column widths of the table
+tab1.ColumnWidths = "50 50 50";
+// Set default cell border using BorderInfo object
+tab1.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F);
+// Set table border using another customized BorderInfo object
+tab1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1F);
+// Create MarginInfo object and set its left, bottom, right and top margins
+Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
+margin.Top = 5f;
+margin.Left = 5f;
+margin.Right = 5f;
+margin.Bottom = 5f;
+// Set the default cell padding to the MarginInfo object
+tab1.DefaultCellPadding = margin;
+// Create rows in the table and then cells in the rows
+Aspose.Pdf.Row row1 = tab1.Rows.Add();
+row1.Cells.Add("col1");
+row1.Cells.Add("col2");
+row1.Cells.Add();
+TextFragment mytext = new TextFragment("col3 with large text string");
+// Row1.Cells.Add("col3 with large text string to be placed inside cell");
+row1.Cells[2].Paragraphs.Add(mytext);
+row1.Cells[2].IsWordWrapped = false;
+// Row1.Cells[2].Paragraphs[0].FixedWidth= 80;
+Aspose.Pdf.Row row2 = tab1.Rows.Add();
+row2.Cells.Add("item1");
+row2.Cells.Add("item2");
+row2.Cells.Add("item3");
+dataDir = dataDir + "MarginsOrPadding_out.pdf";
+// Save the Pdf
+doc.Save(dataDir);
+```
+
+To create table with rounded corner, use the BorderInfo class' `RoundedBorderRadius` value and set the table corner style to round.
+
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory.
+string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
+
+GraphInfo graph = new GraphInfo();
+graph.Color = Aspose.Pdf.Color.Red;
+// Create a blank BorderInfo object
+BorderInfo bInfo = new BorderInfo(BorderSide.All, graph);
+// Set the border a rounder border where radius of round is 15
+bInfo.RoundedBorderRadius = 15;
+// Set the table Corner style as Round.
+tab1.CornerStyle = Aspose.Pdf.BorderCornerStyle.Round;
+// Set the table border information
+tab1.Border = bInfo;
+```
 
 ### AutoFitToWindow property in ColumnAdjustmentType enumeration
 
