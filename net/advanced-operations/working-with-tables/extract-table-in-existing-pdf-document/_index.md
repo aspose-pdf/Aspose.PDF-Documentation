@@ -1,72 +1,50 @@
 ---
-title: Add and Extract a Table
-linktitle: Add and Extract a Table
+title: Extract a Table in Existing PDF Document
+linktitle: Extract a Table
 type: docs
-weight: 10
-url: /net/add-and-extract-a-table1/
+weight: 20
+url: /net/extract-a-table/
 description: Aspose.PDF for .NET makes it possible to carry out various manipulations with the tables contained in your pdf document. You may add and extract a table in the existing PDF document, render table on a new page and etc.
-lastmod: "2020-12-16"
-draft: true
+lastmod: "2021-01-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-{{% alert color="error" %}}
-
-This content is obsolete and/or incomplete. To learn about adding tables please follow to [Add Table in Existing PDF Document](/net/add-table-in-existing-pdf-document/).
-
-{{% /alert %}}
-
-
-## Add table
-
-Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF namespace contains classes named [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell), and [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
-
-### Add Table in Existing PDF Document
-
-To add a table to an existing PDF file with Aspose.PDF for .NET, take the following steps:
-
-1. Load the source file.
-1. Initialize a table and set its columns and rows.
-1. Set table setting (we’ve set the borders).
-1. Populate table.
-1. Add the table to a page.
-1. Save the file.
-
-The following code snippets show how to add text in an existing PDF file.
+## Extract Table from PDF
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-// Load source PDF document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "AddTable.pdf");
-// Initializes a new instance of the Table
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-// Set the table border color as LightGray
-table.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-// Set the border for table cells
-table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-// Create a loop to add 10 rows
-for (int row_count = 1; row_count < 10; row_count++)
+public static void Extract_Table()
 {
-    // Add row to table
-    Aspose.Pdf.Row row = table.Rows.Add();
-    // Add table cells
-    row.Cells.Add("Column (" + row_count + ", 1)");
-    row.Cells.Add("Column (" + row_count + ", 2)");
-    row.Cells.Add("Column (" + row_count + ", 3)");
+    // Load source PDF document
+    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(@"c:\tmp\the_worlds_cities_in_2018_data_booklet 7.pdf");            
+    foreach (var page in pdfDocument.Pages)
+    {
+        Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
+        absorber.Visit(page);
+        foreach (AbsorbedTable table in absorber.TableList)
+        {
+            foreach (AbsorbedRow row in table.RowList)
+            {
+                foreach (AbsorbedCell cell in row.CellList)
+                {
+                    TextFragment textfragment = new TextFragment();
+                    TextFragmentCollection textFragmentCollection = cell.TextFragments;
+                    foreach (TextFragment fragment in textFragmentCollection)
+                    {
+                        string txt = "";
+                        foreach (TextSegment seg in fragment.Segments)
+                        {
+                            txt += seg.Text;
+                        }
+                        Console.WriteLine(txt);
+                    }
+                }
+            }
+        }
+    }
 }
-// Add table object to first page of input document
-doc.Pages[1].Paragraphs.Add(table);
-dataDir = dataDir + "document_with_table_out.pdf";
-// Save updated document containing table object
-doc.Save(dataDir);
 ```
-
-
 
 ## Extract table border as Image
 
@@ -192,61 +170,4 @@ using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bitmap))
 }
 dataDir = dataDir + "ExtractBorder_out.png";
 bitmap.Save(dataDir, ImageFormat.Png);
-```
-
-## Render Table on New Page
-
-By default, paragraphs are added to a Page object’s Paragraphs collection. However, it is possible to render a table on a new page instead of directly after the previously added paragraph level object on the page.
-
-### Adding a Table
-
-To render table on a new page, use the [IsInNewPage](https://apireference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) property in the BaseParagraph class. The following code snippet shows how.
-
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-Document doc = new Document();
-PageInfo pageInfo = doc.PageInfo;
-Aspose.Pdf.MarginInfo marginInfo = pageInfo.Margin;
-
-marginInfo.Left = 37;
-marginInfo.Right = 37;
-marginInfo.Top = 37;
-marginInfo.Bottom = 37;
-
-pageInfo.IsLandscape = true;
-
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-table.ColumnWidths = "50 100";
-// Added page.
-Page curPage = doc.Pages.Add();
-for (int i = 1; i <= 120; i++)
-{
-    Aspose.Pdf.Row row = table.Rows.Add();
-    row.FixedRowHeight = 15;
-    Aspose.Pdf.Cell cell1 = row.Cells.Add();
-    cell1.Paragraphs.Add(new TextFragment("Content 1"));
-    Aspose.Pdf.Cell cell2 = row.Cells.Add();
-    cell2.Paragraphs.Add(new TextFragment("HHHHH"));
-}
-Aspose.Pdf.Paragraphs paragraphs = curPage.Paragraphs;
-paragraphs.Add(table);
-/********************************************/
-Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
-table.ColumnWidths = "100 100";
-for (int i = 1; i <= 10; i++)
-{
-    Aspose.Pdf.Row row = table1.Rows.Add();
-    Aspose.Pdf.Cell cell1 = row.Cells.Add();
-    cell1.Paragraphs.Add(new TextFragment("LAAAAAAA"));
-    Aspose.Pdf.Cell cell2 = row.Cells.Add();
-    cell2.Paragraphs.Add(new TextFragment("LAAGGGGGG"));
-}
-table1.IsInNewPage = true;
-// I want to keep table 1 to next page please...
-paragraphs.Add(table1);
-dataDir = dataDir + "IsNewPageProperty_Test_out.pdf";
-doc.Save(dataDir);
 ```
