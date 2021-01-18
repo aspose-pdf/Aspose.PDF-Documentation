@@ -6,7 +6,7 @@ url: /net/plugins/
 description: Learn how to use various plug-ins based on Aspose.PDF
 lastmod: "2020-01-11"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.5
 ---
 

@@ -6,7 +6,7 @@ url: /net/sitefinity-pdf-import/
 description: Learn how to install and use PDF Import Module for Sitefinity
 lastmod: "2020-01-11"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.5
 ---
 

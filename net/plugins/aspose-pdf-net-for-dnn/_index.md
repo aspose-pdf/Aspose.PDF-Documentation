@@ -6,7 +6,7 @@ url: /net/aspose-pdf-net-for-dnn/
 description: Learn how to use PDF Import Module for DotNetNuke
 lastmod: "2020-01-11"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.5
 ---
 
