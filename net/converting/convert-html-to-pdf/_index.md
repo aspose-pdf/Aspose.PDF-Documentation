@@ -1,5 +1,5 @@
 ---
-title: Convert HTML to PDF
+title: Convert HTML to PDF |C#
 linktitle: Convert HTML to PDF
 type: docs
 weight: 280
