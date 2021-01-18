@@ -1,5 +1,5 @@
 ---
-title: Convert LaTeX/TeX to PDF
+title: Convert LaTeX/TeX to PDF |C#
 linktitle: Convert LaTeX/TeX to PDF
 type: docs
 weight: 310

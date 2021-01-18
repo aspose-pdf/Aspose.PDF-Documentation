@@ -11,9 +11,9 @@ sitemap:
     priority: 0.7
 ---
 
-## Articles in this section
+<h2>Articles in this section</h2>
 
-- [Add a Table](/pdf/net/add-table-in-existing-pdf-document/)
-- [Extract a Table from Existing PDF Document](/pdf/net/extract-table-from-existing-pdf-document/)
-- [Manipulate and Integrate Table](/pdf/net/manipulate-and-integrate-table/)
+- [Create or Add Table in existing PDF Document](/pdf/net/add-table-in-existing-pdf-document/)
+- [Extract a Table from existing PDF Document](/pdf/net/extract-table-from-existing-pdf-document/)
+- [Integrate Table with Data Sources](/pdf/net/integrate-table/)
 - [Remove Tables from existing PDF](/pdf/net/remove-tables-from-existing-pdf/)

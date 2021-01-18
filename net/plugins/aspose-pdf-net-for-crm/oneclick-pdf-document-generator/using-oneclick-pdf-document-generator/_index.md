@@ -6,7 +6,7 @@ url: /net/using-oneclick-pdf-document-generator/
 description: Learn how to use Aspose.PDF OneClick PDF Document Generator in Microsoft Dynamics
 lastmod: "2020-01-11"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.5
 ---
 
