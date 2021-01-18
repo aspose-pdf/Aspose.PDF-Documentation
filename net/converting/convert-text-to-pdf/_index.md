@@ -1,5 +1,5 @@
 ---
-title: Convert Text to PDF
+title: Convert Text to PDF |C#
 linktitle: Convert Text to PDF
 type: docs
 weight: 300

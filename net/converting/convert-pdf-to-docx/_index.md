@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to DOCX
+title: Convert PDF to DOCX |C#
 linktitle: Convert PDF to DOCX
 type: docs
 weight: 80

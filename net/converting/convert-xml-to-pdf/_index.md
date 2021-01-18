@@ -1,5 +1,5 @@
 ---
-title: Convert XML to PDF
+title: Convert XML to PDF |C#
 linktitle: Convert XML to PDF
 type: docs
 weight: 320
