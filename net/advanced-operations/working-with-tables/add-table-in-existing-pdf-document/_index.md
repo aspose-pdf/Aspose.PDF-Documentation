@@ -66,7 +66,7 @@ dataDir = dataDir + "document_with_table_out.pdf";
 doc.Save(dataDir);
 ```
 
-### ColSpan and RowSpan in Aspose.PDF using C#
+### ColSpan and RowSpan in Aspose.PDF Tables using C#
 
 Aspose.PDF for .NET provides [ColSpan](https://apireference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) property to merge the columns in a table and [RowSpan](https://apireference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) property to merge the rows.
 

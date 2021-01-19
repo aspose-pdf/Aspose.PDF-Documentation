@@ -16,9 +16,9 @@ draft: false
 
 ## Implementation details
 
-[SetFieldAppearance](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/formeditor/methods/setfieldappearance) method is used to the change the appearance of a form field. It takes AnnotationFlag as a parameter. **AnnotationFlag** is an enumeration which has different members like Hidden or NoRotate etc.
+[SetFieldAppearance](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/formeditor/methods/setfieldappearance) method is used to the change the appearance of a form field. It takes AnnotationFlag as a parameter. AnnotationFlag is an enumeration which has different members like Hidden or NoRotate etc.
 
-[SetFieldAttributes](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/formeditor/methods/setfieldattribute) method is used to change the attribute of a form field. A parameter passed to this method is **PropertyFlag** enumeration which contains members like ReadOnly or Required etc.
+[SetFieldAttributes](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/formeditor/methods/setfieldattribute) method is used to change the attribute of a form field. A parameter passed to this method is PropertyFlag enumeration which contains members like ReadOnly or Required etc.
 
 [FormEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/FormEditor) class also provides a method to set the field limit. It tells the field that how much characters it can be filled with. The bellow code snippet shows you how all of these methods can be used.
 

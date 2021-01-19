@@ -16,7 +16,7 @@ draft: false
 
 ## Implementation details
 
-The default color depth while converting PDF to TIFF format is 32 bpp (bits per pixel). It is possible to specify other color depths using **ColorDepth Enumeration** as shown in the following code snippet:
+The default color depth while converting PDF to TIFF format is 32 bpp (bits per pixel). It is possible to specify other color depths using [ColorDepth Enumeration](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/colordepth) as shown in the following code snippet:
 
 
 

@@ -1,17 +1,17 @@
 ---
-title: Integrate Table In Existing PDF Document
+title: Integrate Table with Data Sources In Existing PDF Document
 linktitle: Integrate Table
 type: docs
 weight: 30
 url: /net/integrate-table/
-description: This article shows how to manipulate and integrate tables. You can integrate table with the database, manipulating tables in existing PDF.
+description: This article shows how to integrate PDF tables.
 lastmod: "2021-01-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Integrate Table with Database (DOM)
+## Integrate Table with Database
 
 Databases are built to store and manage data. It’s common practice for programmers to populate different objects with data from databases. This article discusses adding data from a database into a table. It is possible to populate a [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table) object with data from any data source using Aspose.PDF for .NET. And it’s not only possible but it’s very easy.
 
@@ -20,6 +20,9 @@ Databases are built to store and manage data. It’s common practice for program
 - Object Array
 - DataTable
 - DataView
+
+#
+
 
 This topic provides information about fetching data from a DataTable or DataView.
 
@@ -208,3 +211,131 @@ for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
 }
 doc.Save(outFile);
 ```
+
+## Integrate Table with the Entity Framework source
+
+More relevant for modern .NET is the import of data from ORM frameworks. In this case, it's a good idea to extend the Table class with extension methods for importing data from a simple list or from the grouped data. Let's give an example for one of the most popular ORMs - Entity Framework.
+
+```csharp
+public static class PdfHelper
+    {
+        public static void ImportEntityList<TSource>(this Pdf.Table table, IList<TSource> data)
+        {
+            var headRow = table.Rows.Add();
+
+            var props = typeof(TSource).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            foreach (var prop in props)
+            {
+                headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);
+            }
+
+            foreach (var item in data)
+            {
+                // Add row to table
+                var row = table.Rows.Add();
+                // Add table cells
+                foreach (var t in props)
+                {
+                    var dataItem = t.GetValue(item, null);
+                    if (t.GetCustomAttribute(typeof(DataTypeAttribute)) is DataTypeAttribute dataType)
+                        switch (dataType.DataType)
+                        {
+
+                            case DataType.Currency:
+                                row.Cells.Add(string.Format("{0:C}", dataItem));
+                                break;
+                            case DataType.Date:
+                                var dateTime = (DateTime)dataItem;
+                                if (t.GetCustomAttribute(typeof(DisplayFormatAttribute)) is DisplayFormatAttribute df)
+                                {
+                                    row.Cells.Add(string.IsNullOrEmpty(df.DataFormatString)
+                                        ? dateTime.ToShortDateString()
+                                        : string.Format(df.DataFormatString, dateTime));
+                                }
+                                break;
+                            default:
+                                row.Cells.Add(dataItem.ToString());
+                                break;
+                        }
+                    else
+                    {
+                        row.Cells.Add(dataItem.ToString());
+                    }
+                }
+            }
+        }
+        public static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
+        {
+            var headRow = table.Rows.Add();            
+            var props = typeof(TValue).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            foreach (var prop in props)
+            {
+               headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);                
+            }
+
+            foreach (var group in groupedData)
+            {
+                // Add group row to table
+                var row = table.Rows.Add();
+                var cell = row.Cells.Add(group.Key.ToString());
+                cell.ColSpan = props.Length;
+                cell.BackgroundColor = Pdf.Color.DarkGray;
+                cell.DefaultCellTextState.ForegroundColor = Pdf.Color.White;
+
+                foreach (var item in group.Values)
+                {
+                    // Add data row to table
+                    var dataRow = table.Rows.Add();
+                    // Add cells
+                    foreach (var t in props)
+                    {
+                        var dataItem = t.GetValue(item, null);
+
+                        if (t.GetCustomAttribute(typeof(DataTypeAttribute)) is DataTypeAttribute dataType)
+                            switch (dataType.DataType)
+                            {
+                                case DataType.Currency:
+                                    dataRow.Cells.Add(string.Format("{0:C}", dataItem));
+                                    break;
+                                case DataType.Date:
+                                    var dateTime = (DateTime)dataItem;
+                                    if (t.GetCustomAttribute(typeof(DisplayFormatAttribute)) is DisplayFormatAttribute df)
+                                    {
+                                        dataRow.Cells.Add(string.IsNullOrEmpty(df.DataFormatString)
+                                            ? dateTime.ToShortDateString()
+                                            : string.Format(df.DataFormatString, dateTime));
+                                    }
+                                    break;
+                                default:
+                                    dataRow.Cells.Add(dataItem.ToString());
+                                    break;
+                            }
+                        else
+                        {
+                            dataRow.Cells.Add(dataItem.ToString());
+                        }
+                    }
+                }
+            }
+        }
+    }
+```
+
+The Data Annotations attributes are often used to describe models and help us to create the table. Therefore, the following table generation algorithm was chosen for ImportEntityList:
+
+- lines 12-18: build a header row and add header cells according to the rule "If the DisplayAttribute is present, then take its value otherwise take the property name"
+- lines 50-53: build the data rows and add row cells according to the rule "If the attribute DataTypeAttribute is defined, then we check whether we need to make additional design settings for it, and otherwise just convert data to string and add to the cell;"
+
+In this example, additional customizations were made for DataType.Currency (lines 32-34) and DataType.Date (lines 35-43), but you can add others if necessary.
+The algorithm of the ImportGroupedData method is almost the same as the previous one. An additional GroupViewModel class is used, to store the grouped data.
+
+```csharp
+.using System.Collections.Generic;
+    public class GroupViewModel<K,T>
+    {
+        public K Key;
+        public IEnumerable<T> Values;
+    }
+```
+
+Since we process groups, first we generate a line for the key value (lines 66-71), and after it - the lines of this group.
