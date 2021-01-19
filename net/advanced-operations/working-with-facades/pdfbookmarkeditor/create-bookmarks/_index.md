@@ -10,7 +10,7 @@ draft: false
 
 ## Create Bookmarks of All Pages
 
-In order to create bookmarks of all the pages, you need to use **CreateBookmarks** method without any parameters . **PdfBookmarEditor** class allows you to create bookmarks of all the pages of a PDF file. First, you need to create an object of **PdfBookmarkEditor** class and bind the input PDF using **BindPdf** method. Then, you have to call **CreateBookmarks** method and save the output PDF file using **Save** method. The following code snippet shows you how to create Bookmarks.
+In order to create bookmarks of all the pages, you need to use [CreateBookmarks](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method without any parameters . [PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class allows you to create bookmarks of all the pages of a PDF file. First, you need to create an object of [PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind the input PDF using [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. Then, you have to call [CreateBookmarks](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method and save the output PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to create Bookmarks.
 
 
 
@@ -18,7 +18,7 @@ In order to create bookmarks of all the pages, you need to use **CreateBookmarks
 
 ## Create Bookmarks of All Pages with Properties
 
-**PdfBookmarEditor** class allows you to create bookmarks of all the pages of a PDF file and specify the properties (Color, Bold, Italic). You can do that with the help of **CreateBookmarks** method. First, you need to create an object of **PdfBookmarkEditor** class and bind the input PDF using **BindPdf** method. Then, you have to call **CreateBookmarks** method and save the output PDF file using **Save** method. The following code snippet shows you how to create bookmarks of all the pages with properties.
+[PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class allows you to create bookmarks of all the pages of a PDF file and specify the properties (Color, Bold, Italic). You can do that with the help of [CreateBookmarks](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method. First, you need to create an object of [PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind the input PDF using [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. Then, you have to call [CreateBookmarks](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method and save the output PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to create bookmarks of all the pages with properties.
 
 
 
@@ -26,7 +26,7 @@ In order to create bookmarks of all the pages, you need to use **CreateBookmarks
 
 ## Create Bookmark of a Particular Page
 
-You can create a bookmark of a particular page in an existing PDF file using **CreateBookmarkOfPage** method. This method takes two arguments: bookmark title and page number. First, you need to create an object of **PdfBookmarkEditor** class and bind input PDF file using **BindPdf** method. Then, you have to call the **CreateBookmarkOfPage** method and save the output PDF file using **Save** method. The following code snippet shows you how to create bookmark of a particular page.
+You can create a bookmark of a particular page in an existing PDF file using [CreateBookmarkOfPage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarkofpage/methods/1) method. This method takes two arguments: bookmark title and page number. First, you need to create an object of [PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind input PDF file using [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. Then, you have to call the [CreateBookmarkOfPage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarkofpage/methods/1) method and save the output PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to create bookmark of a particular page.
 
 
 
@@ -34,7 +34,7 @@ You can create a bookmark of a particular page in an existing PDF file using **C
 
 ## Create Bookmarks of a Range of Pages
 
-**PdfBookmarkEditor** class allows you to create bookmarks of a range of pages. You can use **CreateBookmarkOfpage** method with two parameters: bookmark list (the list of the bookmark titles) and page list (the list of the pages to bookmark). First, you need to create an object of **PdfBookmarkEditor** class and bind the input PDF file using **BindPdf** method. Then, you have to call **CreateBookmarkOfPage** method and save the output PDF using **Save** method. The following code snippet shows you how to create bookmarks of a range of pages.
+[PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class allows you to create bookmarks of a range of pages. You can use [CreateBookmarkOfPage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarkofpage/methods/1) method with two parameters: bookmark list (the list of the bookmark titles) and page list (the list of the pages to bookmark). First, you need to create an object of [PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind the input PDF file using [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. Then, you have to call [CreateBookmarkOfPage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarkofpage/methods/1) method and save the output PDF using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to create bookmarks of a range of pages.
 
 
 
@@ -42,7 +42,7 @@ You can create a bookmark of a particular page in an existing PDF file using **C
 
 ## Add Bookmark in an Existing PDF File
 
-You can add bookmark in an existing PDF file using **PdfBookmarkEditor** class. In order to create the bookmark, you need to create **Bookmark** object and set the required attributes of the bookmark. After that, you need to pass the **Bookmark** object to the **CreateBookmarks** method of **PdfBookmarkEditor** class. Finally, you need to save the updated PDF file using **Save** method. The following code snippet shows you how to add the bookmark in an existing PDF file.
+You can add bookmark in an existing PDF file using [PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class. In order to create the bookmark, you need to create [Bookmark](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) object and set the required attributes of the bookmark. After that, you need to pass the [Bookmark](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) object to the [CreateBookmarks](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method of [PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class. Finally, you need to save the updated PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to add the bookmark in an existing PDF file.
 
 
 
@@ -50,7 +50,7 @@ You can add bookmark in an existing PDF file using **PdfBookmarkEditor** class. 
 
 ## Add Child Bookmark in an Existing PDF File
 
-You can add child bookmarks in an existing PDF file using **PdfBookmarkEditor** class. In order to add child bookmarks, you need to create **Bookmarks** and*Bookmark* objects. You can add individual **Bookmark** objects into **Bookmarks** object. You also need to create a **Bookmark** object and set its **ChildItem** property to **Bookmarks** object. You then need to pass this **Bookmark** object with **ChildItem** to the **CreateBookmarks** method. Finally, you need to save the updated PDF using **Save** method of the **PdfBookmarkEditor** class. The following code snippet shows you how to add child bookmarks in an existing PDF file.
+You can add child bookmarks in an existing PDF file using [PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class. In order to add child bookmarks, you need to create [Bookmark](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) objects. You can add individual [Bookmark](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) objects into [Bookmarks](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks) object. You also need to create a [Bookmark](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) object and set its [ChildItem](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmark/properties/childitem) property to [Bookmarks](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks) object. You then need to pass this [Bookmark](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) object with [ChildItem](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/bookmark/properties/childitem) to the [CreateBookmarks](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method. Finally, you need to save the updated PDF using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method of the [PdfBookmarkEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class. The following code snippet shows you how to add child bookmarks in an existing PDF file.
 
 
 
