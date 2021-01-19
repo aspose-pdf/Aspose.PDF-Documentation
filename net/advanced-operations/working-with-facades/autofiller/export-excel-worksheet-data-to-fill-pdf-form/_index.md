@@ -4,14 +4,14 @@ type: docs
 weight: 10
 url: /net/export-excel-worksheet-data-to-fill-pdf-form/
 description: This section explains how you can export Excel worksheet data to fill PDF form using AutoFiller Class.
-lastmod: "2021-01-15"
+lastmod: "2021-01-18"
 draft: false
 ---
 
 {{% alert color="primary" %}}
 
 [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) offers various ways to fill the Pdf forms. You can import data from XML file, DFD, XFDF, use API and even can use the data from Excel worksheet.
-We would be using **ExportDataTable** method of [Cells](http://www.aspose.com/api/net/pdf/aspose.pdf/cells) class of [Aspose.Cells](https://docs.aspose.com//cells/net) to export the data from Excel sheet in to DataTable object. Then we need would be importing this data into Pdf form using **ImportDataTable** method of [AutoFiller](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/autofiller) class. Make sure that, the Column name of DataTable is same as field name over PDF form.
+We would be using [ExportDataTable](https://apireference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) method of [Cells](http://www.aspose.com/api/net/pdf/aspose.pdf/cells) class of [Aspose.Cells](https://docs.aspose.com//cells/net) to export the data from Excel sheet in to DataTable object. Then we need would be importing this data into Pdf form using [ImportDataTable](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) method of [AutoFiller](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/autofiller) class. Make sure that, the Column name of DataTable is same as field name over PDF form.
 
 {{% /alert %}}
 
@@ -25,7 +25,7 @@ In the Form specified above has one page, with three fields named as "ID", "Name
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
-We need to create an object of [AutoFiller](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/autofiller) class and bind the Pdf form present in the above pictures and use the **ImportDataTable** method to fill the form fields using the data present in DataTable object.
+We need to create an object of [AutoFiller](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/autofiller) class and bind the Pdf form present in the above pictures and use the [ImportDataTable](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) method to fill the form fields using the data present in DataTable object.
 Once the method is called a new Pdf form file is generated, which contains five pages with form filled based over the data from Excel sheet. Input Pdf form was single page and resultant is five pages, because the number of data rows in excel sheet is 5. The DataTable class offers the capability to use the first row of the sheet as ColumnName.
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
