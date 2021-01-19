@@ -1,5 +1,5 @@
 ---
-title: Integrate Table In Existing PDF Document
+title: Integrate Table with Data Sources In Existing PDF Document
 linktitle: Integrate Table
 type: docs
 weight: 30
@@ -20,6 +20,9 @@ Databases are built to store and manage data. It’s common practice for program
 - Object Array
 - DataTable
 - DataView
+
+#
+
 
 This topic provides information about fetching data from a DataTable or DataView.
 

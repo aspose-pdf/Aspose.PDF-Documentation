@@ -5,27 +5,19 @@ weight: 45
 url: /net/concatenate-pdf-documents/
 description: This section explains how to concatenate PDF documents with Aspose.PDF Facades using PdfFileEditor class.
 lastmod: "2021-01-18"
-draft: false
 ---
 
 [Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class can be used to concatenate two PDF files. The [Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method allows you to pass three parameters: first input PDF, second input PDF, and output PDF. The final output PDF contains both the input PDF files. The following code snippet shows you how to concatenate PDF files using file paths. 
 
-
-
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateUsingPath-ConcatenateUsingPath.cs" >}}
 
-
 In some cases, when there are a lot of outlines, users may disable them with setting CopyOutlines to false and improve performance of concatenation.
-
-
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateUsingPath-CopyOutline.cs" >}}
 
 ## Concatenate PDF Files with Blank PDF Using File Paths
 
 One of the overloads of [Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method allows you to merge two PDF documents into a new PDF document with pages in alternate ways and fill the blank places with blank pages; for example, document 1 has 5 pages ( p1, p2, p3, p4, p5 ) and document 2 has 3 page s ( p1', p2', p3' ). Merging the two PDF document s will produce the outupt document with pages in the following order: p1, p1', p2, p2', p3, p3', p4, blank page, p5, blank page.The following code snippet shows you how to concatenate PDF files with blank PDF using file paths.
-
-
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateWithBlankPdf-ConcatenateWithBlankPdf.cs" >}}
 
