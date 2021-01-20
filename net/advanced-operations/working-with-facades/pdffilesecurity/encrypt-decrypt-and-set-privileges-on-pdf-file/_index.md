@@ -3,10 +3,14 @@ title: Encrypt, Decrypt and Set Privileges on PDF File
 type: docs
 weight: 10
 url: /net/encrypt-decrypt-and-set-privileges-on-pdf-file/
+description: This topic explains how to Encrypt, Decrypt and Set Privileges on PDF File using PdfFileSecurity Class Class.
+lastmod: "2021-01-20"
+draft: false
 ---
 
-## **Encrypt PDF File using Different Encryption Types and Algorithms**
-In order to encrypt a PDF file, you need to create **PdfFileSecurity** object and then call the **EncryptFile** method. You can pass user password, owner password and privileges to **EncryptFile** method. You also need to pass **KeySize** and **Algorithm** values to this method. 
+## Encrypt PDF File using Different Encryption Types and Algorithms
+
+In order to encrypt a PDF file, you need to create [PdfFileSecurity](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and then call the [EncryptFile](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) method. You can pass user password, owner password and privileges to [EncryptFile](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) method. You also need to pass KeySize and Algorithm values to this method. 
 
 {{% alert color="primary" %}} 
 
@@ -18,7 +22,8 @@ In order to encrypt a PDF file, you need to create **PdfFileSecurity** object an
 The following code snippet shows you how to encrypt PDF file.
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Security-Signatures-EncryptFile-EncryptFile.cs" >}}
-## **Decrypt PDF File using Owner Password**
+
+## Decrypt PDF File using Owner Password
 
 {{% alert color="primary" %}} 
 Try online <br>
@@ -27,19 +32,23 @@ You can try to unlock document using Aspose.PDF and get the results online at th
 
 {{% /alert %}} 
 
-In order to decrypt a PDF file, you need to create **PdfFileSecurity** object and then call the **DecryptFile** method. You also need to pass the owner password to **DecryptFile** method. The following code snippet shows you how to decrypt PDF file.
+In order to decrypt a PDF file, you need to create [PdfFileSecurity](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and then call the [DecryptFile](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. You also need to pass the owner password to [DecryptFile](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. The following code snippet shows you how to decrypt PDF file.
 
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Security-Signatures-DecryptFile-DecryptFile.cs" >}}
-## **Set Privileges on an Existing PDF File**
+
+## Set Privileges on an Existing PDF File
+
 To set a PDF file's privileges, create a [PdfFileSecurity](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdffilesecurity) object and call the SetPrivilege method. You can specify the privileges using the DocumentPrivilege object and then pass this object to the SetPrivilege method. The following code snippet shows you how to set the privileges of a PDF file.
 
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Security-Signatures-SetPrivilegesOnFile-SetPrivilegesOnFile.cs" >}}
-## **Change Password of a PDF File**
-In order to change password of a PDF file, you need to create **PdfFileSecurity** object and then call the **ChangePassword** method. You need to pass existing owner password and new user and owner passwords to the **ChangePassword** method. 
+
+## Change Password of a PDF File
+
+In order to change password of a PDF file, you need to create [PdfFileSecurity](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and then call the [ChangePassword](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) method. You need to pass existing owner password and new user and owner passwords to the [ChangePassword](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) method. 
 
 {{% alert color="primary" %}} 
 
@@ -53,7 +62,9 @@ The following code snippet shows you how to change passwords of a PDF file.
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Security-Signatures-ChangeFilePassword-ChangeFilePassword.cs" >}}
-## **Remove Extended Rights Feature from the PDF**
+
+## Remove Extended Rights Feature from the PDF
+
 PDF documents support the extended rights feature to enable end-user to fill data into form fields by using Adobe Acrobat Reader and then save a copy of the filled form. However, it ensures that PDF file is not modified and if any modification to the structure of the PDF is made, the extended rights feature is lost. When viewing such a document, an error message is displayed, stating that extended rights are removed because the document was modified. Recently, we received a requirement to remove extended rights from PDF document.
 
 To remove the extended rights from a PDF file, a new method named RemoveUsageRights() has been added to the PdfFileSignature class. Another method named ContainsUsageRights() is added to determine if source PDF contains extended rights.

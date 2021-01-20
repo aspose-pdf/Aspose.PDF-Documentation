@@ -16,9 +16,9 @@ draft: false
 
 ## Implementation details
 
-You can sign a PDF file using any of the following three types of signatures: PKCS#1, PKCS#7 and PKCS#7 Detached. These three types of signatures have been supported using two new classes: **Pkcs1Signature** and **Pkcs7Signature**. A property named **Detached**, defined in the **Pkcs7Signature** class, can be used to specify the PKCS#7 Detached signature type. Both of these classes have been inherited from **Signature** class.
+You can sign a PDF file using any of the following three types of signatures: PKCS#1, PKCS#7 and PKCS#7 Detached. These three types of signatures have been supported using two new classes: **Pkcs1Signature** and [Pkcs7Signature](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesignature/sign/methods/4). A property named **Detached**, defined in the [Pkcs7Signature](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesignature/sign/methods/4) class, can be used to specify the PKCS#7 Detached signature type. Both of these classes have been inherited from [Signature](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/signature) class.
 
-In order to sign a PDF file using any of the above three types of the signatures, you need to first create an instance from one of the above two classes and then pass this object to the **Sign** method of **PdfFileSignature** class.
+In order to sign a PDF file using any of the above three types of the signatures, you need to first create an instance from one of the above two classes and then pass this object to the [Sign](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/sign/index) method of [PdfFileSignature](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class.
 
 The following code snippet shows you how to sign the PDF file:
 
@@ -62,7 +62,7 @@ pdfSign.Save();
 
 {{% alert color="primary" %}}
 
-You can also sign a PDF file using multiple signatures. For that matter, you can add multiple signature fields using **FormEditor** class and then add signatures in those fields. You can add the signature using its own name, so that you would be able to access it later using the same name. If you add a signature without a name i.e. without using a signature field, Aspose.PDF for .NET will assign a unique name like “Signature#” i.e. Signature1, Signature2 etc.
+You can also sign a PDF file using multiple signatures. For that matter, you can add multiple signature fields using [FormEditor](https://apireference.aspose.com/html/net/aspose.html.forms/formeditor) class and then add signatures in those fields. You can add the signature using its own name, so that you would be able to access it later using the same name. If you add a signature without a name i.e. without using a signature field, Aspose.PDF for .NET will assign a unique name like “Signature#” i.e. Signature1, Signature2 etc.
 {{% /alert %}}
 
 The following code snippet shows you how to add signature fields and then add signatures:
