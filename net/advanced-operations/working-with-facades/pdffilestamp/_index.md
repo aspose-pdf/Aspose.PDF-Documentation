@@ -1,11 +1,12 @@
 ---
-title: Working with Stamps and Watermarks - Facades
+title: PdfFileStamp Class
 type: docs
-weight: 50
-url: /net/working-with-stamps-and-watermarks-facades/
+weight: 155
+url: /net/pdffilestamp-class/
+description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
+lastmod: "2021-01-20"
+draft: false
 ---
-
-## **Articles in this section**
 
 - [Add PDF Page Stamp](/pdf/net/add-pdf-page-stamp/)
 - [Add Text and Image Stamp](/pdf/net/add-text-and-image-stamp/)

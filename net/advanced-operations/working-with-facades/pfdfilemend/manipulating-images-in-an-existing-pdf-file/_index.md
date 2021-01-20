@@ -20,7 +20,7 @@ Images are an important part of the contents of a PDF document. Manipulating ima
 
 ## Image Operations
 
-In this section, we’ll have a detailed look into these image operations. We’ll also see the code snippets to show the use of the related classes and methods. First of all, let’s have a look at adding an image in an existing PDF file. We can use **AddImage** method of [PdfFileMend](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffilemend) class to add a new image. Using this method, you can not only specify the page number on which you want to add the image, but also the location of the image can be specified.
+In this section, we’ll have a detailed look into these image operations. We’ll also see the code snippets to show the use of the related classes and methods. First of all, let’s have a look at adding an image in an existing PDF file. We can use [AddImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method of [PdfFileMend](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffilemend) class to add a new image. Using this method, you can not only specify the page number on which you want to add the image, but also the location of the image can be specified.
 
 
 
@@ -44,7 +44,7 @@ objFileMend.Close();
 
 {{% alert color="primary" %}}
 
-In order to replace an existing image, we need to use **ReplaceImage** method of [PdfContentEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfcontenteditor) class. This method needs the new image which is to be added in place of the old image. You are also required to specify the page number and the index of the image which needs to be replaced.
+In order to replace an existing image, we need to use [ReplaceImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) method of [PdfContentEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfcontenteditor) class. This method needs the new image which is to be added in place of the old image. You are also required to specify the page number and the index of the image which needs to be replaced.
 
 
 {{% /alert %}}

@@ -1,7 +1,7 @@
 ---
 title: PdfBookmarEditor Class
 type: docs
-weight: 70
+weight: 45
 url: /net/working-with-bookmarks-facades/
 description: This section explains how to work with Aspose.PDF Facades using PdfBookmarEditor Class.
 lastmod: "2021-01-19"

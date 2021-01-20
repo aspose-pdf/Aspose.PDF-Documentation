@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/working-with-pdf-printing-facades/
 description: This section explains how to print PDF files with Aspose.PDF Facades using PdfFileEditor class.
-lastmod: "2021-01-15"
+lastmod: "2021-01-20"
 draft: false
 ---
 
@@ -13,7 +13,8 @@ draft: false
 This content is obsolete.
 {{% /alert %}}
 
-## **Printing PDF File to Default Printer using Printer and Page Settings**
+## Printing PDF File to Default Printer using Printer and Page Settings
+
 The [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class allows you to print a PDF file to the default printer. You need to create a PdfViewer object and open the PDF using the BindPdf method. To specify different print settings, use the PageSettings and PrinterSettings classes. Finally, call the PrintDocumentWithSettings method to print the PDF to the default printer. The following code snippet shows how to print PDF to the default printer with printer and page Settings.
 
 
@@ -23,7 +24,9 @@ The [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfvi
 In order to display a print dialog, try using the following code snippet:
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintToDefaultPrinter-PrintDialog.cs" >}}
-## **Printing PDF to an XPS Printer (Facades)**
+
+## Printing PDF to an XPS Printer (Facades)
+
 You can print a PDF file to an XPS printer, or some other soft printer for that matter, using the [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class. In order to do that, create an object of the PdfViewer class and open the PDF file using the BindPdf method. You can set different print settings using the PrinterSettings and PageSettings classes. You also need to set the PrinterName property to the XPS or other soft printer you have installed.
 
 Finally, use PrintDocumentWithSettings method to print the PDF to XPS or other soft printer. The following code snippet shows you how to print the PDF file to an XPS printer.
@@ -33,15 +36,21 @@ Finally, use PrintDocumentWithSettings method to print the PDF to XPS or other s
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintoXPSPrinter-PrintoXPSPrinter.cs" >}}
 
 When printing a PDF files that contains text and you want the contents to appear as text instead of vector graphics, please try using the following code snippets.
-### **Fonts not Embedded**
+
+### Fonts not Embedded
+
 If the document does not contain embedded fonts, it is possible to embed system fonts into the document at the point of printing.
 
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintoXPSPrinter-FontsNotEmbedded.cs" >}}
-### **Fonts Embedded**
+
+### Fonts Embedded
+
 For documents that have embedded fonts, the quality can be improved and fonts are embedded to the document. Aspose.PDF has a feature that allows you to substitute embedded fonts with system fonts.
-## **Printing PDF to an XPS File and Hiding Print Dialog**
+
+## Printing PDF to an XPS File and Hiding Print Dialog
+
 A PDF file can be printed to an XPS file, without showing any print dialog, using the [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class. In order to do that, create an object of the PdfViewer class and open the PDF file using the BindPdf method.
 
 You can set different print settings using the PrinterSettings and [PageSettings classes. You also need to set the PrinterName property to point to the XPS printer.
@@ -53,7 +62,9 @@ The following code snippet shows you how to print the PDF file to an XPS file.
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintoXPSPrinter-HideDialgo.cs" >}}
-## **Printing Color PDF to XPS File as Grayscale**
+
+## Printing Color PDF to XPS File as Grayscale
+
 A color PDF document can be printed to an XPS printer as grayscale, using [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer). In order to achieve that you need to use the property PdfViewer.PrintAsGrayscale and set it to *true*. Following code snippet demonstrates the implementation of PdfViewer.PrintAsGrayscale Property.
 
 
@@ -95,19 +106,25 @@ using (Facades.PdfViewer viewer = new Facades.PdfViewer())
 }
 
 {{< /highlight >}}
-## **PDF to PostScript conversion**
+
+## PDF to PostScript conversion
+
 The [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class provides the capability to print PDF documents and with the help of this class, we can also convert PDF files to PostScript format. To convert a PDF file into PostScript, first install any PS printer and just print to file with the help of PdfViewer. You may follow the instructions specified by [the University of Hawaii](http://www.hawaii.edu/askus/637) on how to install PS printer. The following code snippet shows you how to print and convert a PDF to PostScript format.
 
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PdfToPostScript-PdfToPostScript.cs" >}}
-## **Checking Print Job Status**
+
+## Checking Print Job Status
+
 A PDF file can be printed to a physical printer as well as to the Microsoft XPS Document Writer, without showing a print dialog, using the [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class. When printing large PDF files, the process might take a long time so the user might not be certain whether the printing process completed or encountered an issue. To determine the status of a printing job, use the PrintStatus property. The following code snippet shows you how to print the PDF file to an XPS file and get the printing status.
 
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-CheckPrintJobStatus-CheckPrintJobStatus.cs" >}}
-### **Get/Set Print Job Owner name**
+
+### Get/Set Print Job Owner name
+
 Recently we received a requirement to get/set the print job Owner name (the actual user who pressed print button on web page). This information is required when printing the PDF file. In order to accomplish this requirement, you can use the property named PrinterJobName:
 
 
@@ -142,7 +159,9 @@ The following links can be useful to get user credentials:
 - [Authentication and Authorization with Windows Accounts in ASP.NET](https://www.simple-talk.com/dotnet/asp.net/authentication-and-authorization-with-windows-accounts-in-asp.net/)
 
 {{% /alert %}} 
-## **Printing pages in Simplex and Duplex mode**
+
+## Printing pages in Simplex and Duplex mode
+
 In a particular printing job, the pages of PDF document can either be printed in Duplex or in Simplex mode but you cannot print some pages as simplex and some pages as duplex within a single print job. However in order to accomplish the requirement, different page ranges and *PrintingJobSettings * object can be used. The following code snippet shows how to print some pages of PDF file in Simplex and some pages in Duplex mode.
 
 
@@ -150,7 +169,9 @@ In a particular printing job, the pages of PDF document can either be printed in
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintPages-PrintingJobSettings.cs" >}}
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintPages-PrintPages.cs" >}}
-## **Printing Different Page Range to Different Paper Sourcetrays**
+
+## Printing Different Page Range to Different Paper Sourcetrays
+
 We were asked to support printing different pages to different page trays within a printing job. The user must be able to send a document to a printer and be sure that there are no other print jobs in between pages. The document must be printed as one. To print a different page range to different paper source trays, use the PdfViewer.PdfQueryPageSettings event handler. The following code snippet shows how to print even and odd page numbers to different sources:
 
 
