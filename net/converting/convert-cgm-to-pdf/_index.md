@@ -1,5 +1,5 @@
 ---
-title: Convert CGM to PDF |C#
+title: Convert CGM to PDF | C#
 linktitle: Convert CGM to PDF
 type: docs
 weight: 260

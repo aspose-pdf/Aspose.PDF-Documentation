@@ -1,5 +1,5 @@
 ---
-title: Convert PDF File to PDF/A |C#
+title: Convert PDF File to PDF/A | C#
 linktitle: Convert PDF File to PDF/A 
 type: docs
 weight: 180
