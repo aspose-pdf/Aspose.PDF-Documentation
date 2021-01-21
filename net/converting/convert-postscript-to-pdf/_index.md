@@ -1,5 +1,5 @@
 ---
-title: Convert PostScript to PDF |C#
+title: Convert PostScript to PDF | C#
 linktitle: Convert PostScript to PDF
 type: docs
 weight: 370

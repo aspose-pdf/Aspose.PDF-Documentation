@@ -1,6 +1,6 @@
 ---
-title: Extract a Table from Existing PDF Document
-linktitle: Extract a Table
+title: Extract Table from Existing PDF Document
+linktitle: Extract Table
 type: docs
 weight: 20
 url: /net/extract-table-from-existing-pdf-document/

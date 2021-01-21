@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to XPS |C#
+title: Convert PDF to XPS | C#
 linktitle: Convert PDF to XPS
 type: docs
 weight: 160

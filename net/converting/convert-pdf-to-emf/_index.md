@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to EMF |C#
+title: Convert PDF to EMF | C#
 linktitle: Convert PDF to EMF 
 type: docs
 weight: 50

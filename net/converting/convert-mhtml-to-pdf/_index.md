@@ -1,5 +1,5 @@
 ---
-title: Convert MHTML to PDF |C#
+title: Convert MHTML to PDF | C#
 linktitle: Convert MHTML to PDF 
 type: docs
 weight: 290

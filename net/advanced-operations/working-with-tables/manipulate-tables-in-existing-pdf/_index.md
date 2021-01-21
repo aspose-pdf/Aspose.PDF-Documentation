@@ -1,6 +1,6 @@
 ---
-title: Remove Tables from existing PDF
-linktitle: Remove Tables
+title: Manipulate Tables in existing PDF
+linktitle: Manipulate Tables
 type: docs
 weight: 40
 url: /net/manipulate-tables-in-existing-pdf/

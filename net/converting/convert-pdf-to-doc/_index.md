@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to DOC |C#
+title: Convert PDF to DOC | C#
 linktitle: Convert PDF to DOC
 type: docs
 weight: 70

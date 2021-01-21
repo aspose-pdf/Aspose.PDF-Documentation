@@ -1,5 +1,5 @@
 ---
-title: Convert JPG to PDF |C#
+title: Convert JPG to PDF | C#
 linktitle: Convert JPG to PDF 
 type: docs
 weight: 190

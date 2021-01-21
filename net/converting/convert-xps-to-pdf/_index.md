@@ -1,5 +1,5 @@
 ---
-title: Convert XML to PDF |C#
+title: Convert XML to PDF | C#
 title: Convert XPS to PDF 
 linktitle: Convert XPS to PDF
 type: docs

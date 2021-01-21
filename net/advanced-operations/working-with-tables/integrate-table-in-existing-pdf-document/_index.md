@@ -21,9 +21,6 @@ Databases are built to store and manage data. It’s common practice for program
 - DataTable
 - DataView
 
-#
-
-
 This topic provides information about fetching data from a DataTable or DataView.
 
 All developers working under .NET platform must be familiar with the basic ADO.NET concepts introduced by .NET Framework. It is possible to connect to almost all kinds of data sources using ADO.NET. We can retrieve data from databases and save it to a DataSet, DataTable or DataView. Aspose.PDF for .NET provides support for importing data from these too. This gives more freedom to developers to populate tables in PDF documents from any data source.
