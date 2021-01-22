@@ -24,10 +24,10 @@ Add Page number using PageNumberStamp class. For adding a Stamp in your document
 You are able to do the following:
 
 - [Add Pages](/pdf/net/add-pages/)- add pages at desired location or to the end of a PDF file and delete a page from you document.
-- [Move Pages](/pdf/net/move-pages/)
-- [Delete pages from a PDF](/pdf/net/delete-pages/)
-- [Change page size of PDF](/pdf/net/change-page-size)
-- [Rotate pages in PDF](/pdf/net/rotate-pages/)
+- [Move Pages](/pdf/net/move-pages/) 
+- [Delete pages from a PDF](/pdf/net/delete-pages/) 
+- [Change page size of PDF](/pdf/net/change-page-size) 
+- [Rotate pages in PDF](/pdf/net/rotate-pages/) 
 - [Split PDF Pages into one or multiple PDF](/pdf/net/split-document/)
 - [Add PDF Header and Footer](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file using C#.
 - [Crop Pages](/pdf/net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
