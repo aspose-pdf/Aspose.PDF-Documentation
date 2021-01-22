@@ -2,7 +2,7 @@
 title: Delete PDF Pages programmatically C#
 linktitle: Delete PDF Pages
 type: docs
-weight: 20
+weight: 30
 url: /net/delete-pages/
 description: You can delete pages from your PDF file using C# library.
 lastmod: "2021-01-22"

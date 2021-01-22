@@ -26,12 +26,12 @@ You are able to do the following:
 - [Add Pages](/pdf/net/add-pages/)- add pages at desired location or to the end of a PDF file and delete a page from you document.
 - [Move Pages](/pdf/net/move-pages/)
 - [Delete pages from a PDF](/pdf/net/delete-pages/)
-- [Change page size of a PDF](/pdf/net/change-page-size)
-- [Rotate pages in a PDF](/pdf/net/rotate-pages/)
-- [Split PDF Pages into one or multiple PDF](/net/split-document/)
+- [Change page size of PDF](/pdf/net/change-page-size)
+- [Rotate pages in PDF](/pdf/net/rotate-pages/)
+- [Split PDF Pages into one or multiple PDF](/pdf/net/split-document/)
 - [Add PDF Header and Footer](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file using C#.
 - [Crop Pages](/pdf/net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
 - [Add Watermarks](/pdf/net/add-watermarks/) - add watermarks in your PDF file with Artifact Class.
-- [Add Numbers in a PDF File](/pdf/net/add-page-number/) - PageNumberStamp class will help you to add a Page Number in your PDF file.
+- [Add Numbers in PDF File](/pdf/net/add-page-number/) - PageNumberStamp class will help you to add a Page Number in your PDF file.
 - [Add backgrounds](/pdf/net/add-backgrounds/) - background images can be used to add a watermark.
 - [Stamping](/pdf/net/stamping/) - you can use the ImageStamp class to add an image stamp to a PDF file and TextStamp class for adding a text.

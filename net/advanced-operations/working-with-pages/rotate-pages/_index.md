@@ -2,7 +2,7 @@
 title: Rotate PDF Pages programmatically C#
 linktitle: Rotate PDF Pages 
 type: docs
-weight: 10
+weight: 50
 url: /net/rotate-pages/
 description: Rotate Pages
 lastmod: "2021-01-22"

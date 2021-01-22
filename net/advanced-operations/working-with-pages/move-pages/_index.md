@@ -2,7 +2,7 @@
 title: Move PDF Pages programmatically C#
 linktitle: Move PDF Pages 
 type: docs
-weight: 10
+weight: 20
 url: /net/move-pages/
 description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for .NET.
 lastmod: "2020-12-22"
