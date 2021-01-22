@@ -1,7 +1,7 @@
 ---
 title: Release Notes - 2017
 type: docs
-weight: 40
+weight: 50
 url: /java/release-notes-2017/
 lastmod: "2020-12-16"
 ---
