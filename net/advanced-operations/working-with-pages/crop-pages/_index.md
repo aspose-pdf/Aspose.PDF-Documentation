@@ -2,7 +2,7 @@
 title: Crop PDF Pages programmatically C#
 linktitle: Crop Pages
 type: docs
-weight: 30
+weight: 80
 url: /net/crop-pages/
 description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for .NET.
 lastmod: "2020-12-22"

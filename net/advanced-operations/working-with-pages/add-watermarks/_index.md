@@ -2,7 +2,7 @@
 title: Add watermark to PDF using C# 
 linktitle: Add watermark
 type: docs
-weight: 40
+weight: 90
 url: /net/add-watermarks/
 description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the C#.
 lastmod: "2020-12-22"

@@ -2,7 +2,7 @@
 title: Add Page Number to PDF with C#
 linktitle: Add Page Number
 type: docs
-weight: 50
+weight: 100
 url: /net/add-page-number/
 description: Aspose.PDF for .NET allows you to add Page Number Stamp to your PDF file using PageNumber Stamp class.
 lastmod: "2020-12-22"
