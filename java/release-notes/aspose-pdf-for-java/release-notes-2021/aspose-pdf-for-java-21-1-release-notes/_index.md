@@ -40,5 +40,5 @@ This page contains release notes information for Aspose.PDF for Java 21.1.
 
 **Added new field**
 
-- com.aspose.pdf.HtmlSaveOptions.SaveFullFont
+- com.aspose.pdf.**HtmlSaveOptions**.SaveFullFont
 
