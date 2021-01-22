@@ -1,6 +1,6 @@
 ---
-title: Delete PDF Pages programmatically C#
-linktitle: Delete PDF Pages
+title: Change PDF Page Size Programmatically with C#
+linktitle: Change PDF Page Size
 type: docs
 weight: 40
 url: /net/change-page-size/
