@@ -55,3 +55,7 @@ You can add child bookmarks in an existing PDF file using [PdfBookmarkEditor](ht
 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-AddChildBookmark-AddChildBookmark.cs" >}}
+
+## See also
+
+Try to compare and find a way to work with bookmarks that suits you. Lets learn [Working with Bookmarks in PDF](/pdf/net/bookmarks/) section.

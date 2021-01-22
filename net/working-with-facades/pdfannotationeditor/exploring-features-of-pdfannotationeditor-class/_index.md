@@ -1,7 +1,7 @@
 ---
 title: Exploring features of PdfAnnotationEditor class
 type: docs
-weight: 10
+weight: 20
 url: /net/exploring-features-of-pdfannotationeditor-class/
 description: This section explains about exploring features of PdfAnnotationEditor class.
 lastmod: "2021-01-15"

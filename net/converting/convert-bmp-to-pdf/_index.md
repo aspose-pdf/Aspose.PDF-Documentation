@@ -37,3 +37,9 @@ using (Document pdfDocument = new Document())
     pdfDocument.Save(dataDir + "BMPtoPDF.pdf");
 }
 ```
+## Applies to
+
+|**Platform**|**Supported**|
+| :- | :- |
+|.NET|2.0-4.6|
+|.NET Core |2.0-3.1|

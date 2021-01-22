@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) allows you to convert PDF files to TIFF images. Sometimes users have to face performance issues while converting PDF to TIFF format. This article explains in detail the cause of the low performance and suggests the approach to gain optimal performance.
+[Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) allows you to convert PDF files to TIFF images. You can check it in [Converting](/pdf/net/converting/) section. Sometimes users have to face performance issues while converting PDF to TIFF format. This article explains in detail the cause of the low performance and suggests the approach to gain optimal performance.
 
 {{% /alert %}}
 

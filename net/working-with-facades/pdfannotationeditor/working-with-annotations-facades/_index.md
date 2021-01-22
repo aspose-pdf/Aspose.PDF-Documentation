@@ -1,7 +1,7 @@
 ---
 title: Working with Annotations - Facades
 type: docs
-weight: 30
+weight: 10
 url: /net/working-with-annotations-facades/
 description: This section explains how to work with with Annotations - Facades using PdfAnnotationEditor Class.
 lastmod: "2021-01-19"
@@ -76,5 +76,8 @@ The ExportAnnotationXfdf method allows you to export annotations from a PDF file
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Annotations-ExtractAnnotations-ExtractAnnotations.cs" >}}
 
+## See also
+
+Try to compare and find a way to work with annotations that suits you. Lets learn [PDF Annotations](/pdf/net/annotations/) section.
 
 
