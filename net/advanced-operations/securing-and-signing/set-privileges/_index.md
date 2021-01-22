@@ -1,6 +1,6 @@
 ---
 title: Set Privileges,Encrypt and Decrypt PDF File using Aspose.PDF for .NET
-linktitle: Set Privileges,Encrypt and Decrypt PDF File 
+linktitle: Encrypt and Decrypt PDF File 
 type: docs
 weight: 20
 url: /net/set-privileges-encrypt-and-decrypt-pdf-file/

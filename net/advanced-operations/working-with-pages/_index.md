@@ -19,11 +19,16 @@ You can add text or images in the headers and footers of your PDF file, and choo
 Also, try to crop pages in PDF document programmatically using C#.
 
 This section learn you how to add watermarks in your PDF file using Artifact class. You will check the programming sample for this task. 
-Add Page number using PageNumberStamp class. For adding a Stamp in your document use ImageStamp and TextStamp classes. Use adding a watermark for creating background images in your PDF file with **Aspose.PDF for .NET**. 
+Add Page number using PageNumberStamp class. For adding a Stamp in your document use ImageStamp and TextStamp classes. Use adding a watermark for creating background images in your PDF file with **Aspose.PDF for .NET**.
 
 You are able to do the following:
 
 - [Add Pages](/pdf/net/add-pages/)- add pages at desired location or to the end of a PDF file and delete a page from you document.
+- [Move Pages](/pdf/net/move-pages/)
+- [Delete pages from a PDF](/pdf/net/delete-pages/)
+- [Change page size of a PDF](/pdf/net/change-page-size)
+- [Rotate pages in a PDF](/pdf/net/rotate-pages/)
+- [Split PDF Pages into one or multiple PDF](/net/split-document/)
 - [Add PDF Header and Footer](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file using C#.
 - [Crop Pages](/pdf/net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
 - [Add Watermarks](/pdf/net/add-watermarks/) - add watermarks in your PDF file with Artifact Class.
