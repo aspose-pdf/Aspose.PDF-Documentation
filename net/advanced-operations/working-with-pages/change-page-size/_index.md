@@ -1,6 +1,6 @@
 ---
-title: Delete PDF Pages programmatically C#
-linktitle: Delete PDF Pages
+title: Change PDF Page Size Programmatically with C#
+linktitle: Change PDF Page Size
 type: docs
 weight: 40
 url: /net/change-page-size/
@@ -33,7 +33,7 @@ The following code snippet shows how to change the PDF page dimensions to A4 siz
 
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-UpdateDimensions-UpdateDimensions.cs" >}}
 
-### Get PDF Page Size
+## Get PDF Page Size
 
 You can read PDF page size of an existing PDF file using Aspose.PDF for .NET. The following code sample shows how to read PDF page dimensions using C#.
 
