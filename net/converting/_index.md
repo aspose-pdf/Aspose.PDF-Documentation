@@ -7,8 +7,8 @@ url: /net/converting/
 lastmod: "2020-12-30"
 description: This section contains a description of all possible options for converting PDF documents on C# using Aspose.PDF library.
 aliases:
-    - /pdf/net/working-with-document-conversion/
-    - /pdf/net/convert-pdf-file-to-other-formats/    
+    - /net/working-with-document-conversion/
+    - /net/convert-pdf-file-to-other-formats/    
 sitemap:
     changefreq: "weekly"
     priority: 0.8

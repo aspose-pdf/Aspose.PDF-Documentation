@@ -6,7 +6,7 @@ weight: 30
 url: /net/add-attachment-to-pdf-document/
 description: This page describes how to add an attachment to a PDF file with C#.
 aliases:
-    - /pdf/net/adding-to-a-pdf-document/
+    - /net/adding-to-a-pdf-document/
 lastmod: "2020-12-16"
 sitemap:
     changefreq: "weekly"

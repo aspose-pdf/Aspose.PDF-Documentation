@@ -7,8 +7,8 @@ url: /net/add-watermarks/
 description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the C#.
 lastmod: "2020-12-22"
 aliases: 
-    - /pdf/net/working-with-existing-watermarks/
-    - /pdf/net/adding-multi-line-watermark-to-existing-pdf/
+    - /net/working-with-existing-watermarks/
+    - /net/adding-multi-line-watermark-to-existing-pdf/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

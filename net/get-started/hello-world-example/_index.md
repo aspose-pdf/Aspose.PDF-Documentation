@@ -6,7 +6,7 @@ weight: 20
 url: /net/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World. 
 aliases:
-    - /pdf/net/hello-world/
+    - /net/hello-world/
 lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"

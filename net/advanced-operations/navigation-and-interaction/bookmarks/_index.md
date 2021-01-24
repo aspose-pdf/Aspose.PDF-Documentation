@@ -7,7 +7,7 @@ url: /net/bookmarks/
 description: This section explain how to add, delete and get bookmark with Aspose.PDF for .NET.
 aliases:
     - /net/working-with-bookmarks/
-    - /pdf/net/working-with-bookmarks-facades/
+    - /net/working-with-bookmarks-facades/
 lastmod: "2020-12-16"
 sitemap:
     changefreq: "weekly"

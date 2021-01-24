@@ -6,7 +6,7 @@ url: /net/optimize-pdf/
 description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with C#.
 lastmod: "2020-12-22"
 aliases: 
-    - /pdf/net/changing-page-sizes-in-a-pdf-file/
+    - /net/changing-page-sizes-in-a-pdf-file/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

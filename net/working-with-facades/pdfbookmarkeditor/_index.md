@@ -10,7 +10,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 aliases:
-    - /pdf/net/pdfbookmarkeditor-class/
+    - /net/pdfbookmarkeditor-class/
 ---
 
 

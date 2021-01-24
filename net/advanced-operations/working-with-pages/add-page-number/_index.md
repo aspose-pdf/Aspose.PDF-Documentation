@@ -7,7 +7,7 @@ url: /net/add-page-number/
 description: Aspose.PDF for .NET allows you to add Page Number Stamp to your PDF file using PageNumber Stamp class.
 lastmod: "2020-12-22"
 aliases:
-    - /pdf/net/get-and-set-page-properties/
+    - /net/get-and-set-page-properties/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

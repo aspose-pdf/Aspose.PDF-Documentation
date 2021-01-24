@@ -7,7 +7,7 @@ url: /net/convert-xml-to-pdf/
 lastmod: "2021-01-15"
 description: Aspose.PDF library presents several ways to convert XML to PDF. You can use the XslFoLoadOptions or do this with an incorrect file structure.
 aliases:
-    - /pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
+    - /net/create-a-hello-world-pdf-document-through-xml-and-xslt/
 sitemap:
     changefreq: "weekly"
     priority: 0.7
