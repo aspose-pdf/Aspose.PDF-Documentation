@@ -7,7 +7,7 @@ url: /net/convert-pdf-to-docx/
 lastmod: "2021-01-15"
 description: Convert PDF file to DOCX format with ease and full control with Aspose.PDF for .NET. 
 aliases:
-    - /pdf/net/convert-pdf-to-doc-and-docx/
+    - /net/convert-pdf-to-doc-and-docx/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

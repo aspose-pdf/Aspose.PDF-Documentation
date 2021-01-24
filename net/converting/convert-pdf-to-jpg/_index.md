@@ -6,7 +6,7 @@ weight: 10
 url: /net/convert-pdf-to-jpg/
 description:  This page describes how to convert PDF Pages to JPEG image, convert all and single pages to JPEG images with Aspose.PDF for .NET.
 alises:
-    - /pdf/net/convert-pdf-pages-to-jpeg-image/
+    - /net/convert-pdf-pages-to-jpeg-image/
 lastmod: "2021-01-15"
 sitemap:
     changefreq: "weekly"

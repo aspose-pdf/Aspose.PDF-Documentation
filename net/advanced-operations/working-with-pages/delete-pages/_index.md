@@ -7,7 +7,7 @@ url: /net/delete-pages/
 description: You can delete pages from your PDF file using C# library.
 lastmod: "2021-01-22"
 aliases:
-    - /pdf/net/delete-pdf-pages/
+    - /net/delete-pdf-pages/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

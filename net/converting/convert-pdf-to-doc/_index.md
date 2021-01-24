@@ -7,7 +7,7 @@ url: /net/convert-pdf-to-doc/
 lastmod: "2021-01-15"
 description: Convert PDF file to DOC format with ease and full control with Aspose.PDF for .NET. Learn more how to tune up Microsoft Word Doc file to PDF conversion.
 aliases:
-    - /pdf/net/convert-pdf-to-doc/
+    - /net/convert-pdf-to-doc/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

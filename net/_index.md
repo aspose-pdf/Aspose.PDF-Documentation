@@ -8,8 +8,8 @@ is_root: true
 lastmod: "2021-01-15"
 description: Learn to use Aspose.PDF .NET to create applications for PDF documents processing on any platform using C#, VB. Browse tutorials, sample code, and more.
 aliases:
-    - /pdf/net/working-with-aspose-pdf/
-    - /pdf/net/developer-guide/            
+    - /net/working-with-aspose-pdf/
+    - /net/developer-guide/            
 sitemap:
     changefreq: "weekly"
     priority: 0.7

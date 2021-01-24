@@ -7,8 +7,8 @@ url: /net/accessibility-tagged-pdf/
 description: Aspose.PDF provides the ability to create Tagged PDF documents, allowing you to tag the structural elements. Learn more about how to get accessible PDFs.
 
 aliases:    
-    - /pdf/net/working-with-tagged-pdfs/
-    - /pdf/net/accessebility-tagged-pdf/
+    - /net/working-with-tagged-pdfs/
+    - /net/accessebility-tagged-pdf/
 lastmod: "2020-12-23"
 sitemap:
     changefreq: "weekly"
