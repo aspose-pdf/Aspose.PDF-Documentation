@@ -6,8 +6,8 @@ weight: 10
 url: /net/add-text-to-pdf-file/
 description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
 aliases:
-    - /pdf/net/add-text-to-a-pdf-file/
-lastmod: "2020-12-23"
+    - /net/add-text-to-a-pdf-file/
+lastmod: "2021-01-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
