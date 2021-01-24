@@ -13,5 +13,6 @@ sitemap:
 
 **Basic operations** section describes the first and simplest operation with PDF documents in Aspose.PDF for .NET:
 
+- [Create PDF Document](/pdf/net/create-document/) -  this article describes how to create PDF file using C#.
 - [Open PDF document programmatically](/pdf/net/open-pdf-document/) - this article describes a various ways how to open a PDF document in .NET application.
 - [Save PDF document programmatically](/pdf/net/save-pdf-document/) - this article describes a various ways how to save a PDF document to file, stream, send to Web or save as PDF/A (or PDF/X) document.

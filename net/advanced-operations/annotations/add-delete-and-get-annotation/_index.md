@@ -23,4 +23,4 @@ sitemap:
 - [PDF InkAnnotation](/pdf/net/ink-annotation/)
 - [PDF Popup Annotation](/pdf/net/popup-annotation/)
 - [PDF Multimedia Annotation](/pdf/net/multimedia-annotation/)
-- [PDF Watermark Annotation](/pdf/net/watermarkannotation/)
+- [PDF Watermark Annotation](/pdf/net/watermark-annotation/)

@@ -9,8 +9,7 @@ lastmod: "2020-12-16"
 aliases: 
     - /net/adding-stamp-in-a-pdf-file/
     - /net/adding-text-stamp-watermark/
-    - /net/add-text-and-image-stamp/
-    - /net/rotating-stamp-about-the-center-point/
+    - /net/add-text-and-image-stamp/    
     - /net/add-pdf-page-stamp/
     - /net/extract-image-and-change-position-of-a-stamp/
 sitemap:
