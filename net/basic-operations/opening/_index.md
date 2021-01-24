@@ -2,7 +2,7 @@
 title: Open PDF document programmatically
 linktitle: Open
 type: docs
-weight: 10
+weight: 20
 url: /net/open-pdf-document/
 description: Learn how to open a PDF file in C# Aspose.PDF for .NET PDF library.
 aliases:
