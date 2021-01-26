@@ -13,7 +13,7 @@ sitemap:
 
 ## How to add Line Indent to PDF
 
-Aspose.PDF for .NET offers SubsequentLinesIndent property into TextFormattingOptions class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
+Aspose.PDF for .NET offers SubsequentLinesIndent property into [TextFormattingOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
 
 Please use the following code snippet to use the property:
 
