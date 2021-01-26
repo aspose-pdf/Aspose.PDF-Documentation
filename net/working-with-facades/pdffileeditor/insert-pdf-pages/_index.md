@@ -1,10 +1,10 @@
 ---
 title: Insert PDF pages
 type: docs
-weight: 110
+weight: 50
 url: /net/insert-pdf-pages/
 description: This section explains how to insert PDF pages with Aspose.PDF Facades using PdfFileEditor class.
-lastmod: "2021-01-18"
+lastmod: "2021-01-26"
 draft: false
 ---
 
