@@ -11,7 +11,9 @@ sitemap:
     priority: 0.7
 ---
  
- We all sometimes needed to add text to the PDF file. For example, when you want to add a translation below the main text, place a caption next to an image, or just fill out an application form. It is also helpful if all the text elements can be formatted in your own desired style. The most popular text manipulations in your PDF file are: adding text to PDF, formatting text inside PDF file, replace and rotate text in your document. **Aspose.PDF for .NET** ia best solution that has everything you need to interact with PDF content.
+ We all sometimes needed to add text to the PDF file. For example, when you want to add a translation below the main text, place a caption next to an image, or just fill out an application form. It is also helpful if all the text elements can be formatted in your own desired style. The most popular text manipulations in your PDF file are: adding text to PDF, formatting text inside PDF file, replace and rotate text in your document. **Aspose.PDF for .NET** is best solution that has everything you need to interact with PDF content.
+ 
+ You are able to do the following:
 
 - [Add Text to PDF file](/pdf/net/add-text-to-pdf-file/) - add text to your pdf and also download fonts, add html string, add hyperlink and etc.
 - [PDF Tooltip](/pdf/net/pdf-tooltip/) - you may add tooltip to searched text by adding invisible button using C#.
