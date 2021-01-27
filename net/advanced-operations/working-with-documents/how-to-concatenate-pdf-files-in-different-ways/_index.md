@@ -1,7 +1,8 @@
 ---
-title: How to Concatenate PDF Files in different Ways
+title: How to merge PDF files using .NET 5 Windows Forms
+linktitle: How to merge PDF
 type: docs
-weight: 60
+weight: 75
 url: /net/how-to-concatenate-pdf-files-in-different-ways/
 description: This section explains how to Concatenate PDF Files in different Ways using PdfFileEditor class.
 lastmod: "2021-01-15"

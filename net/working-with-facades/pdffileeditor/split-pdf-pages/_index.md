@@ -1,7 +1,7 @@
 ---
 title: Split PDF pages
 type: docs
-weight: 140
+weight: 60
 url: /net/split-pdf-pages/
 description: This section explains how to split PDF pages with Aspose.PDF Facades using PdfFileEditor class.
 lastmod: "2021-01-18"

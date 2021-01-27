@@ -22,12 +22,12 @@ Add Page number using PageNumberStamp class. For adding a Stamp in your document
 
 You are able to do the following:
 
-- [Add Pages](/pdf/net/add-pages/)- add pages at desired location or to the end of a PDF file and delete a page from you document.
-- [Move Pages](/pdf/net/move-pages/) 
-- [Delete pages from a PDF](/pdf/net/delete-pages/) 
-- [Change page size of PDF](/pdf/net/change-page-size) 
-- [Rotate pages in PDF](/pdf/net/rotate-pages/) 
-- [Split PDF Pages into one or multiple PDF](/pdf/net/split-document/)
+- [Add Pages](/pdf/net/add-pages/) - add pages at desired location or to the end of a PDF file and delete a page from you document.
+- [Move Pages](/pdf/net/move-pages/) - insert your an page at the end of the your PDF document.
+- [Delete pages from a PDF](/pdf/net/delete-pages/) - delete page from your PDF file using PageCollection collection.
+- [Change page size of PDF](/pdf/net/change-page-size) - you can change PDF page size with code snippet using Aspose.PDF library.
+- [Rotate pages in PDF](/pdf/net/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
+- [Split PDF Pages into one or multiple PDF](/pdf/net/split-document/) - you can split PDF files using Aspose.PDF for .NET with PageCollection.
 - [Add PDF Header and Footer](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file using C#.
 - [Crop Pages](/pdf/net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
 - [Add Watermarks](/pdf/net/add-watermarks/) - add watermarks in your PDF file with Artifact Class.

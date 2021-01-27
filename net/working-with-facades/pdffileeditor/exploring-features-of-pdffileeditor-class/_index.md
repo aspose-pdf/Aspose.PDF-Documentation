@@ -1,10 +1,10 @@
 ---
-title: Exploring features of PdfFileEditor class
+title: Features of PdfFileEditor class
 type: docs
-weight: 50
+weight: 10
 url: /net/exploring-features-of-pdffileeditor-class/
 description: This section explains how to Exploring the features of PdfFileEditor class.
-lastmod: "2021-01-15"
+lastmod: "2021-01-26"
 draft: false
 ---
 
