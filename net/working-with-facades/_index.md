@@ -4,7 +4,7 @@ type: docs
 weight: 112
 url: /net/working-with-facades/
 description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
-lastmod: "2021-01-20"
+lastmod: "2021-01-28"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -12,7 +12,7 @@ sitemap:
 
 Aspose.PDF Facades is a set of classes that allows you to perform various operations on PDF documents without delving into their structure.
 
-Un this section you will learn how to:
+In this section you will learn how to:
 
 - [Using PdfFileEditor](/pdf/net/pdffileeditor-class/) - tool, which allow to perform operartions with PDF file (split, merge, etc)
 - [Using PdfFileMend](/pdf/net/pdffilemend-class/) -  tool for adding texts and images on the pages of existing PDF document
