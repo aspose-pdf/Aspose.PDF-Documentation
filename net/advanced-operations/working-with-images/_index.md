@@ -22,14 +22,14 @@ learn next articles for resolving your tasks.
 
 You are able to do the following:
 
-- [Add Image to Existing PDF File](/pdf/net/add-image-to-existing-pdf-file/)
-- [Delete Images from PDF File](/pdf/net/delete-images-from-pdf-file/)
-- [Extract Images from PDF File](/pdf/net/extract-images-from-pdf-file/)
-- [Get the Resolution and Dimensions of Embedded Images](/pdf/net/get-resolution-and-dimensions-of-embedded-images/)
-- [Working with Image Placement](/pdf/net/working-with-image-placement/)
-- [Search and Get Images from PDF Document](/pdf/net/search-and-get-images-from-pdf-document/)
-- [Replace Image in Existing PDF File](/pdf/net/replace-image-in-existing-pdf-file/)
-- [Set Image Size](/pdf/net/set-image-size/)
-- [Set Default Font Name](/pdf/net/set-default-font-name/)
-- [Support for DICOM Images](/pdf/net/support-for-dicom-mages/)
-- [Generate Thumbnail Images from PDF Documents](/pdf/net/generate-thumbnail-images-from-pdf-documents/)
+- [Add Image to Existing PDF File](/pdf/net/add-image-to-existing-pdf-file/) - add images and references of a single image in PDF document, after that control quality.
+- [Delete Images from PDF File](/pdf/net/delete-images-from-pdf-file/) - check code snippet for deleting images from PDF file.
+- [Extract Images from PDF File](/pdf/net/extract-images-from-pdf-file/) - use Images collection for extract images from PDF file.
+- [Get the Resolution and Dimensions of Embedded Images](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information.
+- [Working with Image Placement](/pdf/net/working-with-image-placement/) - it is possible to get an image’s resolution and position in a PDF document.
+- [Search and Get Images from PDF Document](/pdf/net/search-and-get-images-from-pdf-document/) - you can get an image from an individual page and search among images on all pages with C#.
+- [Replace Image in Existing PDF File](/pdf/net/replace-image-in-existing-pdf-file/) - check our code snippet, it shows you how to replace an image in a PDF file.
+- [Set Image Size](/pdf/net/set-image-size/) - C# library allows you to set the size of an image.
+- [Set Default Font Name](/pdf/net/set-default-font-name/) - use DefaultFontName property for setting Default Font Name.
+- [Support for DICOM Images](/pdf/net/support-for-dicom-mages/) - Aspose.PDF for .NET supports special medical graphic standard of images.
+- [Generate Thumbnail Images from PDF Documents](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - next article shows how to generate thumbnail images from PDF documents using first the Acrobat SDK and then Aspose.PDF.
