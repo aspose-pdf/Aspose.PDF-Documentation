@@ -107,7 +107,7 @@ Similar to the above approach, this approach also allows joining two PDF files. 
 
 {{< highlight java >}}
 
- private void button3_Click(object sender, System.EventArgs e)
+ private void button2_Click(object sender, System.EventArgs e)
 
 {
 
@@ -139,7 +139,7 @@ If you want to join more than two PDF files then this approach would be your ult
 
 {{< highlight java >}}
 
- private void button1_Click(object sender, System.EventArgs e)
+ private void button3_Click(object sender, System.EventArgs e)
 
 {
 
