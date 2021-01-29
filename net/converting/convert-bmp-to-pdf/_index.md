@@ -41,6 +41,8 @@ using (Document pdfDocument = new Document())
 
 |**Platform**|**Supported**|**Comments**|
 | :- | :- |:- |
-|Windows .NET|2.0-4.6| |
+|Windows .NET Framework|2.0-4.6| |
 |Windows .NET Core |2.0-3.1| |
+|.NET 5 Windows| |
 |Linux .NET Core|2.0-3.1 | |
+|.NET 5 Linux | |
