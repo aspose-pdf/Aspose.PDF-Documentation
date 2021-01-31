@@ -23,4 +23,31 @@ Each page in a PDF file has a number of properties, such as the width, height, b
 - **Page.Rect**: the intersection (commonly visible rectangle) of the MediaBox and DropBox. The picture below illustrates these properties.
 For further details, please visit [this page](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-**TODO:Insert example**
+The snippet below show how to crop the page:
+
+```csharp
+public static void CropPagesPDF()
+{
+    var pdfDocument1 = new Aspose.Pdf.Document("crop_page.pdf");
+    Console.WriteLine(pdfDocument1.Pages[1].CropBox);
+    Console.WriteLine(pdfDocument1.Pages[1].TrimBox);
+    Console.WriteLine(pdfDocument1.Pages[1].ArtBox);
+    Console.WriteLine(pdfDocument1.Pages[1].BleedBox);
+    Console.WriteLine(pdfDocument1.Pages[1].MediaBox);
+
+    // Create new Box Rectagle
+    var newBox = new Rectangle(200, 220, 2170, 1520);
+    pdfDocument1.Pages[1].CropBox = newBox;
+    pdfDocument1.Pages[1].TrimBox = newBox;
+    pdfDocument1.Pages[1].ArtBox = newBox;
+    pdfDocument1.Pages[1].BleedBox = newBox;
+    
+    pdfDocument1.Save("crop_page_modified.pdf");            
+}
+```
+
+In this example we used a sample file [here](crop_page.pdf). Initially our page looks like shown on the Figure 1.
+![Figure 1. Cropped Page](crop_page.png)
+
+After the change, the page will look like Figure 2.
+![Figure 2. Cropped Page](crop_page2.png)
