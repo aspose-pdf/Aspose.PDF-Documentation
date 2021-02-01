@@ -19,8 +19,8 @@ A PDF document may sometimes contain additional data. Reducing the size of a PDF
 - Enable reusing page content
 - Merge duplicate streams
 - Unembed fonts
-- Remove unused objects 
-- Remove flattening form fields 
+- Remove unused objects
+- Remove flattening form fields
 - Remove or flatten annotations
 
 {{% alert color="primary" %}}

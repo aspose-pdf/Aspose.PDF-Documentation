@@ -57,7 +57,7 @@ If we need to convert PDF pages into JPEGs, the [Aspose.PDF.Devices](https://doc
 
 {{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-CreateThumbnailImages-CreateThumbnailImages.cs" >}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 - Thank you to CodeProject for [Generate Thumbnail Image from PDF document](http://www.codeproject.com/Articles/5887/Generate-Thumbnail-Images-from-PDF-Documents).
 - Thank you to Acrobat for the [Acrobat SDK reference](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm?&accessible=true).
