@@ -1,8 +1,14 @@
 ---
 title: Aspose.PDF for .NET 19.7 Release Notes
+linktitle: Aspose.PDF for .NET 19.7
 type: docs
 weight: 60
 url: /net/aspose-pdf-for-net-19-7-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.7.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +16,8 @@ url: /net/aspose-pdf-for-net-19-7-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 19.7](https://www.nuget.org/packages/Aspose.Pdf/19.7.0)
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -70,9 +77,11 @@ This page contains release notes for [Aspose.PDF for .NET 19.7](https://www.nug
 |PDFNET-37412|Signing PDF using the X509Certificate2 instead PFX file|Bug|
 |PDFNET-36337|Signing with certificate from the certificate store|Bug|
 |PDFNET-45533|An exception is thrown when loading PCL document|Bug|
-### **Public API changes in Aspose.PDF for .NET 19.7**
------
-### **Added APIs:**
+
+## Public API changes in Aspose.PDF for .NET 19.7
+
+### Added APIs:
+
  - Property Aspose.Pdf.Text.TextEditOptions.ReplacementFont
  - Enumeration member Aspose.Pdf.Text.TextEditOptions.NoCharacterAction.<br/>UseCustomReplacementFont
  - Property Aspose.Pdf.PptxSaveOptions.ImageResolution

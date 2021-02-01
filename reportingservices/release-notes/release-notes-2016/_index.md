@@ -3,6 +3,7 @@ title: Release Notes - 2016
 type: docs
 weight: 30
 url: /reportingservices/release-notes-2016/
+lastmod: "2020-12-16"
 ---
 
 **This section contains release notes of Aspose.PDF for Reporting Services for year 2016**

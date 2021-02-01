@@ -1,8 +1,14 @@
 ---
 title: Aspose.PDF for .NET 18.4 Release Notes
+linktitle: Aspose.PDF for .NET 18.4
 type: docs
 weight: 90
 url: /net/aspose-pdf-for-net-18-4-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.4.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +16,8 @@ url: /net/aspose-pdf-for-net-18-4-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 18.4](https://www.nuget.org/packages/Aspose.Pdf/18.4.0)
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -46,13 +53,15 @@ This page contains release notes for [Aspose.PDF for .NET 18.4](https://www.nuge
 |PDFNET-44411|The heading is missing in the generated PDF output|Bug|
 |PDFNET-40160|TextFragmentAbsorber out of memory issue |Bug|
 |PDFEXTNET-40111|An exception raises while loading document from HTML file|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.4**
-### **Added APIs:**
------
-Property Aspose.Pdf.HtmlLoadOptions.HtmlMediaType  
-Enumeration Aspose.Pdf.HtmlMediaType  
-Enumeration member Aspose.Pdf.HtmlMediaType.Print  
-Enumeration member Aspose.Pdf.HtmlMediaType.Screen  
-Method Aspose.Pdf.Page.GetNotifications  
-Property Aspose.Pdf.Text.MarkupParagraph.Text  
-Method Aspose.Pdf.Text.TextFragmentAbsorber.Reset  
+
+## Public API changes in Aspose.PDF for .NET 18.4
+
+### Added APIs:
+
+* Property Aspose.Pdf.HtmlLoadOptions.HtmlMediaType  
+* Enumeration Aspose.Pdf.HtmlMediaType  
+* Enumeration member Aspose.Pdf.HtmlMediaType.Print  
+* Enumeration member Aspose.Pdf.HtmlMediaType.Screen  
+* Method Aspose.Pdf.Page.GetNotifications  
+* Property Aspose.Pdf.Text.MarkupParagraph.Text  
+* Method Aspose.Pdf.Text.TextFragmentAbsorber.Reset  

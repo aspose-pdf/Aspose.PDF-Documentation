@@ -3,6 +3,7 @@ title: Parameterized Report Support
 type: docs
 weight: 20
 url: /reportingservices/parameterized-report-support/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

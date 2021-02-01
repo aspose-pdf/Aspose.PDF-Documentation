@@ -1,12 +1,17 @@
 ---
-title: Convert PDF File to PDF-A 
+title: Convert PDF File to PDF/A | C#
+linktitle: Convert PDF File to PDF/A 
 type: docs
-weight: 240
+weight: 180
 url: /net/convert-pdf-file-to-pdfa/
-description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. Also, describes the possibility replacement missing fonts with alternative fonts. 
+lastmod: "2021-01-15"
+description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file.  
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-Aspose.PDF allows you to convert a PDF file to a PDF/A compliant PDF file. Before doing so, the file must be validated. This topic explains how.
+**Aspose.PDF for .NET** allows you to convert a PDF file to a <abbr title="Portable Document Format / A">PDF/A</abbr> compliant PDF file. Before doing so, the file must be validated. This topic explains how.
 
 {{% alert color="primary" %}}
 
@@ -14,9 +19,9 @@ Please note we follow Adobe Preflight for validating PDF/A conformance. All tool
 
 {{% /alert %}}
 
-Convert the file using the Document class Convert method. Before converting the PDF to PDF/A compliant file, validate the PDF using the Validate method. The validation result is stored in an XML file and then this result is also passed to the Convert method. You can also specify the action for the elements which cannot be converted using the ConvertErrorAction enumeration
+Convert the file using the Document class Convert method. Before converting the PDF to PDF/A compliant file, validate the PDF using the Validate method. The validation result is stored in an XML file and then this result is also passed to the Convert method. You can also specify the action for the elements which cannot be converted using the ConvertErrorAction enumeration.
 
-{{% alert color="primary" %}}
+{{% alert color="primary" %}} 
 
 Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-pdfa1a](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 
@@ -62,7 +67,7 @@ pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
 Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b format.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+/ For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
@@ -76,7 +81,7 @@ dataDir = dataDir + "PDFToPDFA3b_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Convert PDF file to PDF/A-2u
+## Convert PDF file to PDF/A-2u 
 
 Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-2u format.
 
@@ -122,7 +127,7 @@ doc.Convert(dataDir + "log.txt", Aspose.Pdf.PdfFormat.PDF_A_3A, ConvertErrorActi
 doc.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
 ```
 
-## Replace missing fonts with alternative fonts 
+## Replace missing fonts with alternative fonts
 
 As per PDFA standards, fonts should be embedded in PDFA document. However, if the fonts are not embedded in the source document or exist on the machine then PDFA fails the validation. In this case, we have a requirement to substituent missing fonts with some alternative fonts from the machine. We can substitute missing fonts using the SimpleFontSubsituation method as following during PDF to PDFA conversion.
 

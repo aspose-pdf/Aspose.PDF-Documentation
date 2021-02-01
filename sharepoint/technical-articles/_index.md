@@ -3,6 +3,7 @@ title: Technical Articles
 type: docs
 weight: 30
 url: /sharepoint/technical-articles/
+lastmod: "2020-12-16"
 ---
 
 ## **Articles in this section**

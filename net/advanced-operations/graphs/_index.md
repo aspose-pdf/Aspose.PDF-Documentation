@@ -1,9 +1,16 @@
 ---
 title: Working with Graphs
+linktitle: Working with Graphs
 type: docs
-weight: 160
+weight: 70
 url: /net/graphs/
-description: This article explains what a is graph, how to create a filled rectangle object,  how to add text inside a graph object, how to add a line object to PDF and etc.
+description: This article explains what a is Graph, how to create a filled rectangle object, how to add text inside a graph object, how to add a line object to PDF and etc.
+aliases:
+    - /net/working-with-graphs/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## What is Graph

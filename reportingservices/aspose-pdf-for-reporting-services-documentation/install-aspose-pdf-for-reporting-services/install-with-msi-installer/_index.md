@@ -3,6 +3,7 @@ title: Install with MSI Installer
 type: docs
 weight: 10
 url: /reportingservices/install-with-msi-installer/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

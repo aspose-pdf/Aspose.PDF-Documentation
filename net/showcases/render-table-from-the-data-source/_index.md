@@ -1,9 +1,14 @@
 ---
 title: Render table from the data source
+linktitle: Render table from the data source
 type: docs
 weight: 30
 url: /net/render-table-from-the-data-source/
 description: This page explain how possible render table from the data source using Aspose.PDf library.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Aspose.PDF allows you to create the table with DataSource from DataSet, Data Table, arrays and IEnumerable objects using PdfLightTable class

@@ -25,6 +25,7 @@ This page contains release notes for [Aspose.PDF for Java 19.9](https://downloa
 |PDFJAVA-38734|The stamping performance issue - Fix locks in font process|Bug|
 |PDFJAVA-38853|XPS to PDF - API is throwing an exception|Bug|
 ### **Public API changes in Aspose.PDF for Java19.9**
+lastmod: "2020-12-16"
 -----
 See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for Java. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf).
 ### **New Methods**

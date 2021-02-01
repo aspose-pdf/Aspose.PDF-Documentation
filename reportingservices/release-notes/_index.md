@@ -3,6 +3,7 @@ title: Release Notes
 type: docs
 weight: 30
 url: /reportingservices/release-notes/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics:** 

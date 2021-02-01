@@ -3,6 +3,7 @@ title: Working with com.aspose.pdf.facades
 type: docs
 weight: 20
 url: /java/working-with-com-aspose-pdf-facades/
+lastmod: "2020-12-16"
 ---
 
 ###### **This section includes the following topics related to com.aspose.pdf.facades package:** 

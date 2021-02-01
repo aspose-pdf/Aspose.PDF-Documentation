@@ -3,6 +3,7 @@ title: Convert PDF to Excel Workbook in Jython
 type: docs
 weight: 20
 url: /java/convert-pdf-to-excel-workbook-in-jython/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Pdf to Excel**

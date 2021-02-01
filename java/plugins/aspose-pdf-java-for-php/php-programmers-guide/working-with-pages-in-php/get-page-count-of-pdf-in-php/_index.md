@@ -3,6 +3,7 @@ title: Get Page Count of PDF in PHP
 type: docs
 weight: 40
 url: /java/get-page-count-of-pdf-in-php/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Get Page Count**

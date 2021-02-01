@@ -1,8 +1,14 @@
 ---
 title: Aspose.PDF for .NET 18.3 Release Notes
+linktitle: Aspose.PDF for .NET 18.3
 type: docs
 weight: 100
 url: /net/aspose-pdf-for-net-18-3-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.3.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +16,8 @@ url: /net/aspose-pdf-for-net-18-3-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 18.3](https://www.nuget.org/packages/Aspose.Pdf/18.3.0)
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -43,12 +50,14 @@ This page contains release notes for [Aspose.PDF for .NET 18.3](https://www.nuge
 |PDFNET-44196|Underlines are moved to the bottom when the text is spread to more lines.|Bug|
 |PDFNET-44209|The TextFragment throws an exception while editing the text property|Bug|
 |PDFNET-44219|An exception raises while visiting document with Absorber object|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.3**
-### **Added APIs:**
------
-Method Aspose.Pdf.DestinationCollection.GetExplicitDestination(System.String,System.Boolean) 
-Method Aspose.Pdf.Text.TextFragment.IsolateTextSegments(System.Int32,System.Int32) 
-Property Aspose.Pdf.Text.TextFragmentAbsorber.Text 
-Method Aspose.Pdf.Text.TextFragmentAbsorber.ApplyForAllFragments(Aspose.Pdf.Text.Font) 
-Method Aspose.Pdf.Text.TextFragmentAbsorber.ApplyForAllFragments(System.Single) 
-Method Aspose.Pdf.Text.TextFragmentAbsorber.ApplyForAllFragments(Aspose.Pdf.Text.Font,System.Single)
+
+## Public API changes in Aspose.PDF for .NET 18.3
+
+### Added APIs:
+
+* Method Aspose.Pdf.DestinationCollection.GetExplicitDestination(System.String,System.Boolean) 
+* Method Aspose.Pdf.Text.TextFragment.IsolateTextSegments(System.Int32,System.Int32) 
+* Property Aspose.Pdf.Text.TextFragmentAbsorber.Text 
+* Method Aspose.Pdf.Text.TextFragmentAbsorber.ApplyForAllFragments(Aspose.Pdf.Text.Font) 
+* Method Aspose.Pdf.Text.TextFragmentAbsorber.ApplyForAllFragments(System.Single) 
+* Method Aspose.Pdf.Text.TextFragmentAbsorber.ApplyForAllFragments(Aspose.Pdf.Text.Font,System.Single)

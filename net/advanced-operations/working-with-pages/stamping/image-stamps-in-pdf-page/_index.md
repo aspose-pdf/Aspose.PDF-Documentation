@@ -1,9 +1,14 @@
 ---
-title:  Image stamps in PDF page
+title: Image stamps in PDF programmatically
+linktitle: Image stamps in PDF File
 type: docs
 weight: 10
 url: /net/image-stamps-in-pdf-page/
 description: Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF library.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## Adding Image Stamp in PDF File
@@ -42,7 +47,7 @@ dataDir = dataDir + "AddImageStamp_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Control Image Quality when Adding a Stamp
+## Control Image Quality when Adding Stamp
 
 When adding an image as a stamp object, you can control the quality of the image. The Quality property of the ImageStamp class is used for this purpose. It indicates the quality of image in percents (valid values are 0..100).
 

@@ -3,6 +3,7 @@ title: Download and Configure Aspose.Pdf in Ruby
 type: docs
 weight: 10
 url: /java/download-and-configure-aspose-pdf-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Download Required Libraries**

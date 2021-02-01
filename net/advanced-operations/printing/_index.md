@@ -1,12 +1,19 @@
 ---
-title: Printing document
+title: Printing PDF documents using Aspose.PDF for .NET
+linktitle: Printing document
 type: docs
-weight: 140
+weight: 160
 url: /net/printing-document/
-description: This section describes the possibilities of using printing PDF in the .NET Framework. 
+description: C# Print PDF techniques and walkthrough for C# PDF printer settings and .NET project tips
+aliases:
+    - /net/working-with-pdf-printing-facades/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-## Articles in this section
+## How to print PDF files in C#
 
 - [Printing PDF in .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
 - [Printing PDF to an XPS Printer (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)

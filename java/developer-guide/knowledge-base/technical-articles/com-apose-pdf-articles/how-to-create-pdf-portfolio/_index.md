@@ -3,6 +3,7 @@ title: How to Create PDF Portfolio
 type: docs
 weight: 10
 url: /java/how-to-create-pdf-portfolio/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

@@ -1,8 +1,9 @@
 ---
 title: Release Notes - 2018
 type: docs
-weight: 30
+weight: 40
 url: /java/release-notes-2018/
+lastmod: "2020-12-16"
 ---
 
 - [Aspose.PDF for Java 18.12 Release Notes](/pdf/java/aspose-pdf-for-java-18-12-release-notes/)

@@ -1,15 +1,22 @@
 ---
-title: Convert BMP to PDF
+title: Convert BMP to PDF | C#
+linktitle: Convert BMP to PDF
 type: docs
-weight: 110
+weight: 220
 url: /net/convert-bmp-to-pdf/
-description: You may easily convert BMP bitmap files used to store digital bitmap images separately from the display device to PDF using Aspose.PDF. for NET.
+lastmod: "2021-01-15"
+description: You may easily convert BMP bitmap files to PDF used to store digital bitmap images separately from the display device using Aspose.PDF. for NET.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-BMP images are Files having extension .BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
-You can convert BMP to PDF with Aspose.PDF for .NET API. Therefore, you can follow the following steps to convert BMP images:
+Convert BMP files to PDF document using **Aspose.PDF for .NET** library.
 
-1. Initialize a new Document
+<abbr title="Bitmap Image File">BMP</abbr> images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
+You can convert BMP to PDF files with Aspose.PDF for .NET API. Therefore, you can follow the following steps to convert BMP images:
+
+1. Initialize a new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)
 1. Load input BMP image
 1. Finally, save the output PDF file
 
@@ -23,10 +30,16 @@ using (Document pdfDocument = new Document())
     Aspose.Pdf.Image image = new Aspose.Pdf.Image();
 
     // Load sample BMP image file
-    image.File = dataDir + @"Sample.bmp";
+    image.File = dataDir + "Sample.bmp";
     pdfDocument.Pages[1].Paragraphs.Add(image);
 
     // Save output PDF document
-    pdfDocument.Save(dataDir + @"BMPtoPDF.pdf");
+    pdfDocument.Save(dataDir + "BMPtoPDF.pdf");
 }
 ```
+## Applies to
+
+|**Platform**|**Supported**|
+| :- | :- |
+|.NET|2.0-4.6|
+|.NET Core |2.0-3.1|

@@ -3,6 +3,7 @@ title: Concatenate PDF Files
 type: docs
 weight: 30
 url: /java/concatenate-pdf-files/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

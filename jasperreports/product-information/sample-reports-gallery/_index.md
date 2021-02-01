@@ -3,6 +3,7 @@ title: Sample Reports Gallery
 type: docs
 weight: 40
 url: /jasperreports/sample-reports-gallery/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

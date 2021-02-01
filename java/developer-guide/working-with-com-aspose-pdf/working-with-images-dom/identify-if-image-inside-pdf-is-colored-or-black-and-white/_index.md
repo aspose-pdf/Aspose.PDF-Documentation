@@ -3,6 +3,7 @@ title: Identify if image inside PDF is Colored or Black and White
 type: docs
 weight: 60
 url: /java/identify-if-image-inside-pdf-is-colored-or-black-and-white/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

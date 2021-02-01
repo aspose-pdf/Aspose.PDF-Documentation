@@ -3,6 +3,7 @@ title: Working with Text - facades
 type: docs
 weight: 30
 url: /java/working-with-text-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Add Text in an Existing PDF File (facades)**

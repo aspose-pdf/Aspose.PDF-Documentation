@@ -3,6 +3,7 @@ title: Escape HTML Tags and Special Characters
 type: docs
 weight: 10
 url: /java/escape-html-tags-and-special-characters/
+lastmod: "2020-12-16"
 ---
 ## <ins>**Escape HTML Tags and Special Characters**
 

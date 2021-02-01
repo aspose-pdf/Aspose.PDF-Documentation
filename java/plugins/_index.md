@@ -3,6 +3,7 @@ title: Plugins
 type: docs
 weight: 30
 url: /java/plugins/
+lastmod: "2020-12-16"
 ---
 
 ## **Articles in this section**

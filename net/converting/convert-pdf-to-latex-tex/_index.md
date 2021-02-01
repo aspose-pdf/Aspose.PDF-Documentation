@@ -1,12 +1,18 @@
 ---
-title: Convert PDF to LaTeX/TeX
+title: Convert PDF to LaTeX/TeX | C#
+linktitle: Convert PDF to LaTeX/TeX
 type: docs
-weight: 330
+weight: 130
 url: /net/convert-pdf-to-latex-tex/
+lastmod: "2021-01-15"
 description: This article describes the features of converting PDF files to LaTeX format. To convert PDF files to TeX, Aspose.PDF use the class LaTeXSaveOptions.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-The LaTeX file format is a text file format with markup in the LaTeX 2ε derivative of the TeX family of languages and LaTeX is a derived format of the TeX system.
+**Aspose.PDF for .NET** support converting PDF to LaTeX/TeX.
+The LaTeX file format is a text file format with the special markup and used in TeX-based document preparation system for high-quality typesetting.
 
 {{% alert color="primary" %}}
 
@@ -16,9 +22,10 @@ Try online: You can check the quality of Aspose.PDF conversion and view the resu
 
 To convert PDF files to TeX, Aspose.PDF has the class [LaTeXSaveOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions) which provides the property OutDirectoryPath for saving temporary images during the conversion process.
 
-The following code snippet shows the process of converting PDF files into the TEX format.
+The following code snippet shows the process of converting PDF files into the TEX format with C#.
 
-```csharp// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 

@@ -3,6 +3,7 @@ title: Update Page Dimensions in Ruby
 type: docs
 weight: 90
 url: /java/update-page-dimensions-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Update Page Dimensions**

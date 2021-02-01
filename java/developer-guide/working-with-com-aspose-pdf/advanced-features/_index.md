@@ -3,6 +3,7 @@ title: Advanced Features
 type: docs
 weight: 210
 url: /java/advanced-features/
+lastmod: "2020-12-16"
 ---
 
 # <ins>**Support for Latex Tags**

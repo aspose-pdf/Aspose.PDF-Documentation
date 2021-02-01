@@ -3,6 +3,7 @@ title: Convert HTML to PDF
 type: docs
 weight: 20
 url: /java/convert-html-to-pdf/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Convert HTML file to PDF format**

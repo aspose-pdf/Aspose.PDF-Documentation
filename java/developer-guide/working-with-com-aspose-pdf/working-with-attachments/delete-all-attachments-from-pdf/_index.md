@@ -3,6 +3,7 @@ title: Delete All Attachments from PDF
 type: docs
 weight: 30
 url: /java/delete-all-attachments-from-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

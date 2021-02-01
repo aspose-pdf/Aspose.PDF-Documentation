@@ -1,8 +1,14 @@
 ---
 title: Aspose.PDF for .NET 19.9 Release Notes
+linktitle: Aspose.PDF for .NET 19.9
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-19-9-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.9.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 
@@ -10,7 +16,8 @@ url: /net/aspose-pdf-for-net-19-9-release-notes/
 This page contains release notes for [Aspose.PDF for .NET 19.9](https://www.nuget.org/packages/Aspose.Pdf/19.9.0).
 
 {{% /alert %}} 
-### **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -46,10 +53,13 @@ This page contains release notes for [Aspose.PDF for .NET 19.9](https://www.nug
 |PDFNET-46384|PDF to TIFF - Information is missing in output TIFF|Bug|
 |PDFNET-46846|Duplicate b operator when TextStamp added|Bug|
 |PDFNET-46742|On loading HTML files the Null Reference Exception is thrown|Bug|
-### **Public API changes in Aspose.PDF for .NET 19.9**
------
+
+## Public API changes in Aspose.PDF for .NET 19.9
+
 See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for .NET. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf).
-### **Added APIs:**
+
+### Added APIs:
+
 - Property Aspose.Pdf.Annotations.FreeTextAnnotation.TextRectangle               
 
 - Class Aspose.Pdf.Annotations.ImportDataAction

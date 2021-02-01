@@ -3,6 +3,7 @@ title: Install Aspose.PDF for Android via Java
 type: docs
 weight: 60
 url: /java/install-aspose-pdf-for-android-via-java/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

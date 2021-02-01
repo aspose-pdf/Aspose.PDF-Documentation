@@ -3,6 +3,7 @@ title: Manipulate PDF Document
 type: docs
 weight: 50
 url: /java/manipulate-pdf-document/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Converting non searchable PDF to searchable PDF document**

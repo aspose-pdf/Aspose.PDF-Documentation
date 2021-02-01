@@ -3,6 +3,7 @@ title: Working with Document
 type: docs
 weight: 10
 url: /cpp/working-with-document/
+lastmod: "2020-12-16"
 ---
 
 ### **Articles in this section**

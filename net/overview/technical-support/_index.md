@@ -1,10 +1,16 @@
 ---
-title: Technical Support
+title: Aspose.PDF for .NET Support
+linktitle: Technical Support
 type: docs
 weight: 60
 url: /net/technical-support/
 description: This page gives recommendations for quick and quality to resolve your tasks using Aspose.PDF for .NET.
+lastmod: "2020-12-22"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
+
 Aspose.PDF allows you to use free technical support for all its products. If you have questions about Aspose.PDF, check the next article:
 
 - The most popular source of support is [Aspose.Forums](https://forum.aspose.com/). In the [Aspose.PDF forum](https://forum.aspose.com/c/pdf/10) section, you can ask your question and get an answer as soon as possible.

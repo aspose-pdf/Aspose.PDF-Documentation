@@ -1,8 +1,14 @@
 ---
 title: Aspose.PDF for .NET 19.1 Release Notes
+linktitle: Aspose.PDF for .NET 19.1
 type: docs
 weight: 120
 url: /net/aspose-pdf-for-net-19-1-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.1.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 
@@ -11,7 +17,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.1](https://www.nug
 
 {{% /alert %}} 
 
-**Improvements and Changes**
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -47,9 +53,11 @@ This page contains release notes for [Aspose.PDF for .NET 19.1](https://www.nug
 |PDFNET-45830|PDF to PDF/A - Regression issue - image loading exception|Bug|
 |PDFNET-45831|PDF to PDF/A - Regression issue - image loading exception|Bug|
 |PDFNET-45840|NullPointerException when calling XImage.Grayscaled|Bug|
-### **Public API changes in Aspose.PDF for .NET 19.1**
------
-### **Added APIs:**
+
+### Public API changes in Aspose.PDF for .NET 19.1
+
+### Added APIs:
+
 - Property Aspose.Pdf.ImagePlacementAbsorber.IsReadOnlyMode
 - Property Aspose.Pdf.LogicalStructure.BLSTextElement.StructureTextState
 - Property Aspose.Pdf.LogicalStructure.ILSTextElement.StructureTextState
@@ -61,7 +69,9 @@ This page contains release notes for [Aspose.PDF for .NET 19.1](https://www.nug
 - Enumeration member Aspose.Pdf.LogicalStructure.StructureTextState.ForegroundColor
 - Property Aspose.Pdf.LogicalStructure.StructureTypeStandard.Category
 - Property Aspose.Pdf.Tagged.ITaggedContent.StructureTextState
-### **Removed APIs:**
+
+### Removed APIs:
+
 - Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.XML_100 renamed<br/>to    Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Xml_100
 - Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.HTML_320 renamed<br/>to Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Html_320
 - Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.HTML_401 renamed<br/>to Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Html_401 

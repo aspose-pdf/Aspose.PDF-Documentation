@@ -1,12 +1,19 @@
 ---
-title: Add Text to a PDF file
+title: Add Text to PDF file
+linktitle: Add Text to PDF file
 type: docs
 weight: 10
-url: /net/add-text-to-a-pdf-file/
-description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to a PDF, add HTML fragments, or use custom OTF fonts.
+url: /net/add-text-to-pdf-file/
+description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
+aliases:
+    - /net/add-text-to-a-pdf-file/
+lastmod: "2021-01-23"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-To add text to an existing PDF file:
+To add text to existing PDF file:
 
 1. Open the input PDF using the Document object.
 2. Get the particular page to which you want to add the text.
@@ -212,13 +219,13 @@ Document doc = new Document();
 // Add a page to pages collection of PDF file
 Page page = doc.Pages.Add();
 // Instantiate HtmlFragment with HTML contnets
-HtmlFragment titel = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
+HtmlFragment title = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
 // Set bottom margin information
-titel.Margin.Bottom = 10;
+title.Margin.Bottom = 10;
 // Set top margin information
-titel.Margin.Top = 200;
+title.Margin.Top = 200;
 // Add HTML Fragment to paragraphs collection of page
-page.Paragraphs.Add(titel);
+page.Paragraphs.Add(title);
 
 dataDir = dataDir + "AddHTMLUsingDOM_out.pdf";
 // Save PDF file
@@ -290,7 +297,7 @@ FootNotes indicate notes in the text of your paper by using consecutive superscr
 In a footnote referencing system, indicate a reference by:
 
 - putting a small number above the line of type directly following the source material. This number is called a note identifier. It sits slightly above the line of text.
-- putting the same number, followed by a citation of your source, at the bottom of the page. Footnoting should be numerical and chronological: the first reference is 1, the second is 2, and so on. 
+- putting the same number, followed by a citation of your source, at the bottom of the page. Footnoting should be numerical and chronological: the first reference is 1, the second is 2, and so on.
 
 The advantage of footnoting is that the reader can simply cast their eyes down the page to discover the source of a reference that interests them.
 

@@ -1,9 +1,14 @@
 ---
-title: Portfolio
+title: Working with Portfolio in PDF documents using Aspose.PDF for .NET
+linktitle: Portfolio
 type: docs
 weight: 10
 url: /net/portfolio/
 description: How to Create a PDF Portfolio with C#. You should use a Microsoft Excel File, a Word document, and an image file to create a PDF Portfolio.
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 ## How to Create a PDF Portfolio
@@ -16,7 +21,7 @@ The code below results in the following portfolio.
 
 ### A PDF Portfolio created with Aspose.PDF
 
-![todo:image_alt_text](working-with-pdf-portfolio_1.jpg)
+![A PDF Portfolio created with Aspose.PDF for .NET](working-with-pdf-portfolio_1.jpg)
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -50,7 +55,7 @@ Aspose.PDF allows the creation of PDF Portfolio documents using [Document](http
 
 The following code snippet shows you the steps to extract files from PDF portfolio.
 
-![todo:image_alt_text](working-with-pdf-portfolio_2.jpg)
+![Extract files from PDF Portfolio](working-with-pdf-portfolio_2.jpg)
 
 ## Remove Files from PDF Portfolio
 

@@ -3,6 +3,7 @@ title: IsFontEmbedded
 type: docs
 weight: 50
 url: /reportingservices/isfontembedded/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}}

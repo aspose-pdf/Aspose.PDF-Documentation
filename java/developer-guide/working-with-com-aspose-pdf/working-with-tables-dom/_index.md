@@ -3,6 +3,7 @@ title: Working with Tables - DOM
 type: docs
 weight: 80
 url: /java/working-with-tables-dom/
+lastmod: "2020-12-16"
 ---
 
 ## **Working with Tables**

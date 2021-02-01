@@ -3,6 +3,7 @@ title: Working with Pages - facades
 type: docs
 weight: 100
 url: /java/working-with-pages-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Resize PDF page contents**

@@ -3,6 +3,7 @@ title: Get PDF File Information in Ruby
 type: docs
 weight: 50
 url: /java/get-pdf-file-information-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Get PDF File Information**

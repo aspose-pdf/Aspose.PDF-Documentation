@@ -1,11 +1,15 @@
 ---
 title: Aspose.PDF for .NET 19.5 Release Notes
+linktitle: Aspose.PDF for .NET 19.5
 type: docs
 weight: 80
 url: /net/aspose-pdf-for-net-19-5-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2019, version 19.5.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
-
-
 
 {{% alert color="primary" %}} 
 
@@ -13,7 +17,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.5](https://www.nug
 
 {{% /alert %}} 
 
-**Improvements and Changes** 
+## Improvements and Changes 
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -50,9 +54,11 @@ This page contains release notes for [Aspose.PDF for .NET 19.5](https://www.nug
 |PDFNET-46317|Saving a newly created document in DOCX format.|Bug|
 |PDFNET-42410|PDF to PDFA1b: resultant document is not PDFA compliant|Bug|
 |PDFNET-46182|API is consuming a lot of memory causing Application to crash|Bug|
-### **Public API changes in Aspose.PDF for .NET 19.5**
------
-### **Added APIs:**
+
+## Public API changes in Aspose.PDF for .NET 19.5
+
+### Added APIs:
+
 - Property Aspose.Pdf.HtmlFragment.IsBreakWords
 - Class Aspose.Pdf.LogicalStructure.AnnotationElement
 - Property Aspose.Pdf.LogicalStructure.AnnotationElement.AlternateDescriptions

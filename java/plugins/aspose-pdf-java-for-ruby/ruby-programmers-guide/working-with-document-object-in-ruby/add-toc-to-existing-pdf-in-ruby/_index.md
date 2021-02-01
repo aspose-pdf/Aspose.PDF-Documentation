@@ -3,6 +3,7 @@ title: Add TOC to Existing PDF in Ruby
 type: docs
 weight: 30
 url: /java/add-toc-to-existing-pdf-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Add TOC**

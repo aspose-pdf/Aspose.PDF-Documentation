@@ -3,6 +3,7 @@ title: Change in class name
 type: docs
 weight: 20
 url: /java/change-in-class-name/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

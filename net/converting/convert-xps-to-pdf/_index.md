@@ -1,10 +1,18 @@
 ---
-title: Convert XPS to PDF
+title: Convert XML to PDF | C#
+title: Convert XPS to PDF 
+linktitle: Convert XPS to PDF
 type: docs
-weight: 190
+weight: 330
 url: /net/convert-xps-to-pdf/
+lastmod: "2021-01-15"
 description: Aspose.PDF for .NET allows you to convert XPS to PDF files with a class named XpsLoadOptions. Check code snippet to solve this task. 
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
+
+**Aspose.PDF for .NET** support feature converting <abbr title="XML Paper Specification">XPS</abbr> files to PDF format. Check this article to resolve your tasks.
 
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into its Windows operating system.
 
@@ -22,7 +30,7 @@ In both XP and Windows 7, you should find an XPS Printer pre-installed if you lo
 
 {{% /alert %}}
 
-The following code snippet shows the process of converting XPS file into PDF format.
+The following code snippet shows the process of converting XPS file into PDF format with C#.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

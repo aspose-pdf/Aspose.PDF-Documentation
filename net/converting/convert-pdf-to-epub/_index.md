@@ -1,9 +1,14 @@
 ---
-title: Convert PDF to EPUB
+title: Convert PDF to EPUB | C#
+linktitle: Convert PDF to EPUB
 type: docs
-weight: 310
+weight: 170
 url: /net/convert-pdf-to-epub/
-description: Aspose.PDF for .NET supports the feature to convert PDF documents to EPUB format. You may try using the code snippet to accomplish this requirement, which is shown on this page.
+lastmod: "2020-12-27"
+description: Aspose.PDF for .NET supports the feature to convert PDF documents to EPUB format. You may try using the code snippet to accomplish this requirement.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}}
@@ -12,11 +17,11 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-**EPUB (short for Electronic Publication)** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
+<abbr title="Electronic Publication">EPUB</abbr> (short for Electronic Publication)** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
 EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
 
 Aspose.PDF for .NET also supports the feature to convert PDF documents to EPUB format. Aspose.PDF for .NET has a class named EpubSaveOptions which can be used as the second argument to [`Document.Save(..)`](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method, to generate an EPUB file.
-Please try using the following code snippet to accomplish this requirement. 
+Please try using the following code snippet to accomplish this requirement with C#. 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

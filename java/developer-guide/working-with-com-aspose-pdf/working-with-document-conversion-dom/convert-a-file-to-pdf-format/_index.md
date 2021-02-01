@@ -3,6 +3,7 @@ title: Convert a File to PDF Format
 type: docs
 weight: 10
 url: /java/convert-a-file-to-pdf-format/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Convert XPS file to PDF format**

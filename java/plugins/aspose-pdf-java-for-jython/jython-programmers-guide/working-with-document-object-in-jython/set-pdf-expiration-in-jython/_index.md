@@ -3,6 +3,7 @@ title: Set PDF Expiration in Jython
 type: docs
 weight: 60
 url: /java/set-pdf-expiration-in-jython/
+lastmod: "2020-12-16"
 ---
 
 ## **Aspose.PDF - Set Expiration**

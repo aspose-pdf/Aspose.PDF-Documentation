@@ -3,6 +3,7 @@ title: Get XMP Metadata from PDF File in PHP
 type: docs
 weight: 50
 url: /java/get-xmp-metadata-from-pdf-file-in-php/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Get XMP Metadata**

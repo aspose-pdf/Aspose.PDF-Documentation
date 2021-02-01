@@ -3,6 +3,7 @@ title: Aspose.PDF for CPP 20.10 Release Notes
 type: docs
 weight: 40
 url: /cpp/aspose-pdf-for-cpp-20-10-release-notes/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}}

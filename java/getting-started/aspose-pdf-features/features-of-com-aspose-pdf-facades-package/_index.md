@@ -3,6 +3,7 @@ title: Features of com.aspose.pdf.facades Package
 type: docs
 weight: 30
 url: /java/features-of-com-aspose-pdf-facades-package/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

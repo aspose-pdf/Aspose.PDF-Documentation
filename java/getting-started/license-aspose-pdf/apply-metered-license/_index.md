@@ -3,6 +3,7 @@ title: Apply Metered License
 type: docs
 weight: 30
 url: /java/apply-metered-license/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

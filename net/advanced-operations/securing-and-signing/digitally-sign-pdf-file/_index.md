@@ -1,10 +1,15 @@
 ---
-title: Digitally sign PDF file 
+title: How to digitally sign PDF
+linktitle: Digitally sign PDF 
 type: docs
 weight: 10
 url: /net/digitally-sign-pdf-file/
 keywords: add digital signature to PDF using C#,certify digital signature in PDF using csharp,digitally sign PDF using csharp,verify digitally signed PDF using csharp
 description: Digitally sign PDF documents using C# or VB.NET. Verify, or validate the digitally sign PDFs using C# or VB.NET based application with Dotnet PDF Library.You can also certify a PDF file with a PKCS12-Certificate.
+lastmod: "2020-12-23"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 Aspose.PDF for .NET supports the feature to digitally sign the PDF files using the SignatureField class. You can also certify a PDF file with a PKCS12-Certificate. Something similar to [Adding Signatures and Security in Adobe Acrobat](https://www.adobepress.com/articles/article.asp?p=1272495&seqNum=6).
@@ -13,11 +18,13 @@ When signing a PDF document using a signature, you basically confirm its content
 
 In other words, the document would still be considered to retain its integrity and the recipient could still trust the document. For further details, please visit Certifying and signing a PDF. In general, certifying a document can be compared to Code-signing a .NET executable.
 
-## Sign
+## Aspose.PDF for .NET signing features
 
-- [DocMDPSignature](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature) class was added
-- **DocMDPAccessPermissions** enumeration was added
-- **IsCertified** property is added to **PdfFileSignature** class
+We can use follwing classed and method for PDF signing 
+
+- Class [DocMDPSignature](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature)
+- Enumeration [DocMDPAccessPermissions](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions)
+- Property [IsCertified](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) in [PdfFileSignature](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class
 
 ## Sign PDF with digital signatures
 
@@ -39,7 +46,7 @@ public static void SignDocument()
 }
 ```
 
-## Add a timestamp to a digital signature
+## Add timestamp to digital signature
 
 Aspose.PDF for .NET supports to digitally sign the PDF with a timestamp server or Web service.
 

@@ -1,8 +1,13 @@
 ---
 title: Aspose.PDF for .NET 3.5.8.0 Hot Fix Release Notes
+linktitle: Aspose.PDF for .NET 3.5.8.0 Hot Fix Release Notes
 type: docs
 weight: 20
 url: /net/aspose-pdf-for-net-3-5-8-0-hot-fix-release-notes/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 

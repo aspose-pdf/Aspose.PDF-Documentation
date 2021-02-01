@@ -1,8 +1,13 @@
 ---
-title: Aspose.PDF for .NET 9.4.0 Release Notes
+title: Aspose.PDF for .NET 9.4.0 
+linktitle: Aspose.PDF for .NET 9.4.0 
 type: docs
 weight: 50
 url: /net/aspose-pdf-for-net-9-4-0-release-notes/
+lastmod: "2020-12-28"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 

@@ -3,6 +3,7 @@ title: Add Line Object to a PDF file
 type: docs
 weight: 20
 url: /java/add-line-object-to-a-pdf-file/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

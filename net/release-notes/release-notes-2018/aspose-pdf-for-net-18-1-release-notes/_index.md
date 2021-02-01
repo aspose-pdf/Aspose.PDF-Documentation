@@ -1,12 +1,17 @@
 ---
 title: Aspose.PDF for .NET 18.1 Release Notes
+linktitle: Aspose.PDF for .NET 18.1  
 type: docs
 weight: 120
 url: /net/aspose-pdf-for-net-18-1-release-notes/
+lastmod: "2020-12-14"
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.1.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-## **Release Notes of Aspose.PDF for .NET 18.1**
-### **Improvements and Changes**
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -39,51 +44,54 @@ url: /net/aspose-pdf-for-net-18-1-release-notes/
 |PDFNET-43799|XSLFO to PDF - the link is not working in output PDF file|Bug|
 |PDFNET-38820|HTML to PDF conversion: contents are moving off the page|Bug|
 |PDFNET-43445|PDF - PDF/A-1 - the characters are overlapping with Sharp printers|Bug|
-### **Public API changes in Aspose.PDF for .NET 18.1**
-### **Added APIs:**
------
-Method Aspose.Pdf.Facades.Stamp.BindTextState(Aspose.Pdf.Text.TextState)   
-Enumeration member Aspose.Pdf.LoadFormat.PS   
-Class Aspose.Pdf.PsLoadOptions   
-Constructor Aspose.Pdf.PsLoadOptions   
-Property Aspose.Pdf.PsLoadOptions.FontsFolders   
-Class Aspose.Pdf.Text.MarkupParagraph   
-Property Aspose.Pdf.Text.MarkupParagraph.Points   
-Property Aspose.Pdf.Text.MarkupParagraph.Fragments   
-Property Aspose.Pdf.Text.MarkupParagraph.Lines   
-Class Aspose.Pdf.Text.MarkupSection   
-Property Aspose.Pdf.Text.MarkupSection.Rectangle   
-Property Aspose.Pdf.Text.MarkupSection.Fragments   
-Property Aspose.Pdf.Text.MarkupSection.Paragraphs   
-Class Aspose.Pdf.Text.PageMarkup   
-Property Aspose.Pdf.Text.PageMarkup.Number   
-Property Aspose.Pdf.Text.PageMarkup.Rectangle   
-Property Aspose.Pdf.Text.PageMarkup.Sections   
-Property Aspose.Pdf.Text.PageMarkup.Paragraphs   
-Property Aspose.Pdf.Text.PageMarkup.TextFragments   
-Class Aspose.Pdf.Text.ParagraphAbsorber   
-Constructor Aspose.Pdf.Text.ParagraphAbsorber   
-Constructor Aspose.Pdf.Text.ParagraphAbsorber(System.Int32)   
-Property Aspose.Pdf.Text.ParagraphAbsorber.PageMarkups   
-Property Aspose.Pdf.Text.ParagraphAbsorber.SectionsSearchDepth   
-Method Aspose.Pdf.Text.ParagraphAbsorber.Visit(Aspose.Pdf.Document)   
-Method Aspose.Pdf.Text.ParagraphAbsorber.Visit(Aspose.Pdf.Page)   
-Property Aspose.Pdf.Text.TextFormattingOptions.SubsequentLinesIndent   
-Property Aspose.Pdf.Text.TextFragmentState.RenderingMode   
-Property Aspose.Pdf.Text.TextFragmentState.StrokingColor   
-Property Aspose.Pdf.Text.TextFragmentState.DrawTextRectangleBorder   
-Enumeration Aspose.Pdf.Text.TextRenderingMode   
-Enumeration member Aspose.Pdf.Text.TextRenderingMode.FillText   
-Enumeration member Aspose.Pdf.Text.TextRenderingMode.StrokeText   
-Enumeration member Aspose.Pdf.Text.TextRenderingMode.FillThenStrokeText   
-Enumeration member Aspose.Pdf.Text.TextRenderingMode.Invisible   
-Enumeration member Aspose.Pdf.Text.TextRenderingMode.FillTextAndAddPathToClipping
-Enumeration member Aspose.Pdf.Text.TextRenderingMode.StrokeTextAndAddPathToClipping
-Enumeration member Aspose.Pdf.Text.TextRenderingMode.FillThenStrokeTextAndAddPathToClipping   
-Enumeration member Aspose.Pdf.Text.TextRenderingMode.AddPathToClipping   
-Property Aspose.Pdf.Text.TextState.RenderingMode   
-Property Aspose.Pdf.Text.TextState.StrokingColor   
-Constructor Aspose.Pdf.TextStamp(System.String,Aspose.Pdf.Text.TextState)   
-### **Removed APIs:**
------
-Property Aspose.Pdf.HtmlFragment.HtmlLoadOptionsOfInstance
+
+## Public API changes in Aspose.PDF for .NET 18.1
+
+### Added APIs:
+
+* Method Aspose.Pdf.Facades.Stamp.BindTextState(Aspose.Pdf.Text.TextState)   
+* Enumeration member Aspose.Pdf.LoadFormat.PS   
+* Class Aspose.Pdf.PsLoadOptions   
+* Constructor Aspose.Pdf.PsLoadOptions   
+* Property Aspose.Pdf.PsLoadOptions.FontsFolders   
+* Class Aspose.Pdf.Text.MarkupParagraph   
+* Property Aspose.Pdf.Text.MarkupParagraph.Points   
+* Property Aspose.Pdf.Text.MarkupParagraph.Fragments   
+* Property Aspose.Pdf.Text.MarkupParagraph.Lines   
+* Class Aspose.Pdf.Text.MarkupSection   
+* Property Aspose.Pdf.Text.MarkupSection.Rectangle   
+* Property Aspose.Pdf.Text.MarkupSection.Fragments   
+* Property Aspose.Pdf.Text.MarkupSection.Paragraphs   
+* Class Aspose.Pdf.Text.PageMarkup   
+* Property Aspose.Pdf.Text.PageMarkup.Number   
+* Property Aspose.Pdf.Text.PageMarkup.Rectangle   
+* Property Aspose.Pdf.Text.PageMarkup.Sections   
+* Property Aspose.Pdf.Text.PageMarkup.Paragraphs   
+* Property Aspose.Pdf.Text.PageMarkup.TextFragments   
+* Class Aspose.Pdf.Text.ParagraphAbsorber   
+* Constructor Aspose.Pdf.Text.ParagraphAbsorber   
+* Constructor Aspose.Pdf.Text.ParagraphAbsorber(System.Int32)   
+* Property Aspose.Pdf.Text.ParagraphAbsorber.PageMarkups   
+* Property Aspose.Pdf.Text.ParagraphAbsorber.SectionsSearchDepth   
+* Method Aspose.Pdf.Text.ParagraphAbsorber.Visit(Aspose.Pdf.Document)   
+* Method Aspose.Pdf.Text.ParagraphAbsorber.Visit(Aspose.Pdf.Page)   
+* Property Aspose.Pdf.Text.TextFormattingOptions.SubsequentLinesIndent   
+* Property Aspose.Pdf.Text.TextFragmentState.RenderingMode   
+* Property Aspose.Pdf.Text.TextFragmentState.StrokingColor   
+* Property Aspose.Pdf.Text.TextFragmentState.DrawTextRectangleBorder   
+* Enumeration Aspose.Pdf.Text.TextRenderingMode   
+* Enumeration member Aspose.Pdf.Text.TextRenderingMode.FillText   
+* Enumeration member Aspose.Pdf.Text.TextRenderingMode.StrokeText   
+* Enumeration member Aspose.Pdf.Text.TextRenderingMode.FillThenStrokeText   
+* Enumeration member Aspose.Pdf.Text.TextRenderingMode.Invisible   
+* Enumeration memberAspose.Pdf.Text.TextRenderingMode.FillTextAndAddPathToClipping
+* Enumeration member Aspose.Pdf.Text.TextRenderingMode.StrokeTextAndAddPathToClipping
+* Enumeration member Aspose.Pdf.Text.TextRenderingMode.FillThenStrokeTextAndAddPathToClipping   
+* Enumeration member Aspose.Pdf.Text.TextRenderingMode.AddPathToClipping   
+* Property Aspose.Pdf.Text.TextState.RenderingMode   
+* Property Aspose.Pdf.Text.TextState.StrokingColor   
+* Constructor Aspose.Pdf.TextStamp(System.String,Aspose.Pdf.Text.TextState)   
+
+### Removed APIs:
+
+* Property Aspose.Pdf.HtmlFragment.HtmlLoadOptionsOfInstance

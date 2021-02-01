@@ -3,6 +3,7 @@ title: Install to Visual Studio Report Designer
 type: docs
 weight: 20
 url: /reportingservices/install-to-visual-studio-report-designer/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

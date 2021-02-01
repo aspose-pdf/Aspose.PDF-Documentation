@@ -3,6 +3,7 @@ title: Extract Text from PDF - Facades
 type: docs
 weight: 10
 url: /cpp/extract-text-from-pdf-facades/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Extract Text from all Pages of the Document**

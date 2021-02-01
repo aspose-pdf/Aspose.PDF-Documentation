@@ -3,6 +3,7 @@ title: HTML to PDF
 type: docs
 weight: 10
 url: /java/html-to-pdf/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

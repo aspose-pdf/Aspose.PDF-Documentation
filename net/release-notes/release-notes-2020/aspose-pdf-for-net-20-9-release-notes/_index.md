@@ -1,9 +1,14 @@
 ---
 title: Aspose.PDF for .NET 20.9 Release Notes
+linktitle: Aspose.PDF for .NET 20.9
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-20-9-release-notes/
+lastmod: "2020-12-14"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.9. 
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}}
@@ -11,7 +16,8 @@ description: This page contains new Aspose.PDF for .NET features, enhancement, a
 This page contains release notes information for Aspose.PDF for .NET 20.9.
 
 {{% /alert %}}
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -35,10 +41,10 @@ This page contains release notes information for Aspose.PDF for .NET 20.9.
 |PDFNET-48660| 	Exception has been thrown while importing annotations to a PDF: Unknown XFDF element 'square'	| Bug|
 |PDFNET-48661| 	Exception has been thrown while importing annotations to a PDF: Unknown XFDF element 	| Bug|
 
+## Public API and Backward Incompatible Changes 
 
-## Public API and Backward Incompatible Changes ##
+### Added APIs 
 
-### Added APIs ###
  * Method Aspose.Pdf.Annotations.AnnotationCollection.FindByName(System.String)
  * Property Aspose.Pdf.Annotations.RedactionAnnotation.DefaultAppearance
  * Property Aspose.Pdf.EmbeddedFileCollection.Keys

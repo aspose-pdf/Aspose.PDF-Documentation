@@ -1,19 +1,42 @@
 ---
 title: What's new
+linktitle: What's new
 type: docs
 weight: 10
 url: /net/whatsnew/
 description: In this page introduces the most popular new features in Aspose.PDF for .NET that have been introduced in recent releases.
+sitemap:
+    changefreq: "monthly"
+    priority: 0.8
+lastmod: "2020-12-16"
 ---
 
 ## What's new in Aspose.PDF 20.11
 
 Aspose.PDF v20.11 added support for ZUGFeRD format.
- 
-### Conversion PDF to XML 
-### Conversion XML to PDF
+
+```csharp
+Document doc = new Document();
+doc.Pages.Add();
+string fileName = "zugferd-invoice.xml";
+FileSpecification fs = new FileSpecification(fileName);
+doc.EmbeddedFiles.Add(fs);
+fs.Description = "ZUGFeRD";
+doc.Convert(new MemoryStream(), PdfFormat.ZUGFeRD, ConvertErrorAction.Delete);
+doc.Save("invoice.pdf");
+```
 
 Also in this release, Aspose.PDF introduced PDF to XML and XML to PDF conversion.
+
+### Conversion PDF to XML
+
+```csharp
+//save document as PDFXML
+Document doc = new Document("source.pdf");
+doc.Save("pdf.xml", SaveFormat.PdfXml);
+```
+
+### Conversion XML to PDF
 
 The following code snippet shows the process of converting a PDF file to XML (MobiXML) format.
 

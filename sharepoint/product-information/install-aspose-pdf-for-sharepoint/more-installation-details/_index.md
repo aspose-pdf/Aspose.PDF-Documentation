@@ -3,6 +3,7 @@ title: More installation details
 type: docs
 weight: 30
 url: /sharepoint/more-installation-details/
+lastmod: "2020-12-16"
 ---
 
 ##### <ins>**Deployment**

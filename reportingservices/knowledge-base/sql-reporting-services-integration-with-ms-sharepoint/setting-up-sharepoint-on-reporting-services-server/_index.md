@@ -3,6 +3,7 @@ title: Setting up SharePoint on Reporting Services Server
 type: docs
 weight: 30
 url: /reportingservices/setting-up-sharepoint-on-reporting-services-server/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

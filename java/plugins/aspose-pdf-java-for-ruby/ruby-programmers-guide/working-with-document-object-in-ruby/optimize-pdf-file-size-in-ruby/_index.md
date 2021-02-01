@@ -3,6 +3,7 @@ title: Optimize PDF File Size in Ruby
 type: docs
 weight: 80
 url: /java/optimize-pdf-file-size-in-ruby/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Optimize PDF File Size**

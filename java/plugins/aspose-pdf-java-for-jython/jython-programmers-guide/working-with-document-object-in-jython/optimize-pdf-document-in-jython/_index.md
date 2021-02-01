@@ -3,6 +3,7 @@ title: Optimize PDF Document in Jython
 type: docs
 weight: 50
 url: /java/optimize-pdf-document-in-jython/
+lastmod: "2020-12-16"
 ---
 
 ## **Aspose.PDF - Optimize**

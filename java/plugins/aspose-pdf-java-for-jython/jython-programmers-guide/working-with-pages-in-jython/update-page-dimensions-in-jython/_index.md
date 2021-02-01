@@ -3,6 +3,7 @@ title: Update Page Dimensions in Jython
 type: docs
 weight: 90
 url: /java/update-page-dimensions-in-jython/
+lastmod: "2020-12-16"
 ---
 
 ## **Aspose.PDF - Update Page Dimensions**

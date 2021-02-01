@@ -1,8 +1,13 @@
 ---
-title: Aspose.PDF for .NET 10.7.0 Release Notes
+title: Aspose.PDF for .NET 10.7.0
+linktitle: Aspose.PDF for .NET 10.7.0 
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-10-7-0-release-notes/
+lastmod: "2020-12-28"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 

@@ -1,12 +1,17 @@
 ---
-title: Convert EMF to PDF
+title: Convert EMF to PDF | C#
+linktitle: Convert EMF to PDF
 type: docs
-weight: 120
+weight: 230
 url: /net/convert-emf-to-pdf/
+lastmod: "2021-01-15"
 description: Both bitmap as well as vector graphics can be files having an EMF extension. Convert EMF to PDF file simply with C#.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-**Enhanced metafile format (EMF)** stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device. Furthermore, you can convert EMF to PDF image using the below steps:
+<abbr title="Enhanced metafile format">EMF</abbr>EMF stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device. Furthermore, you can convert EMF to PDF image using the below steps:
 
 1. Firstly, initialize Document class object
 1. Load EMF image file

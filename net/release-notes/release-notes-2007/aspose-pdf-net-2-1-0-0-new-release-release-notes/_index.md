@@ -1,8 +1,13 @@
 ---
 title: Aspose.PDF .NET 2.1.0.0 New Release Release Notes
+linktitle: Aspose.PDF .NET 2.1.0.0 New Release Release Notes
 type: docs
 weight: 50
 url: /net/aspose-pdf-net-2-1-0-0-new-release-release-notes/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 

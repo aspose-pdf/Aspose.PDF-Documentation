@@ -3,10 +3,12 @@ title: Release Notes - 2020
 type: docs
 weight: 10
 url: /java/release-notes-2020/
+lastmod: "2020-12-16"
 ---
 
 ## **Release Notes - 2020**
 
+- [Aspose.PDF for Java 20.12 Release Notes](/pdf/java/aspose-pdf-for-java-20-12-release-notes/)
 - [Aspose.PDF for Java 20.11 Release Notes](/pdf/java/aspose-pdf-for-java-20-11-release-notes/)
 - [Aspose.PDF for Java 20.10 Release Notes](/pdf/java/aspose-pdf-for-java-20-10-release-notes/)
 - [Aspose.PDF for Java 20.9 Release Notes](/pdf/java/aspose-pdf-for-java-20-9-release-notes/)

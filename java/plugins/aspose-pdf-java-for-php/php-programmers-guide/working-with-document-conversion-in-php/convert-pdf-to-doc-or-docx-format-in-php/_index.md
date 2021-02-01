@@ -3,6 +3,7 @@ title: Convert PDF to DOC or DOCX format in PHP
 type: docs
 weight: 10
 url: /java/convert-pdf-to-doc-or-docx-format-in-php/
+lastmod: "2020-12-16"
 ---
 
 ## <ins>**Aspose.PDF - Convert PDF to DOC or DOCX**

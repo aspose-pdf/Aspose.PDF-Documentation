@@ -3,6 +3,7 @@ title: License Aspose.Pdf for Reporting Services
 type: docs
 weight: 70
 url: /reportingservices/license-aspose-pdf-for-reporting-services/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 

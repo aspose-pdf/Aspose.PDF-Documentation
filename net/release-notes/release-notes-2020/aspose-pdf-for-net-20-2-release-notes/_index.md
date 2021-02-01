@@ -1,9 +1,14 @@
 ---
 title: Aspose.PDF for .NET 20.2 Release Notes
+linktitle: Aspose.PDF for .NET 20.2
 type: docs
 weight: 110
 url: /net/aspose-pdf-for-net-20-2-release-notes/
+lastmod: "2020-12-14"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.2. 
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 {{% alert color="primary" %}} 
@@ -11,7 +16,8 @@ description: This page contains new Aspose.PDF for .NET features, enhancement, a
 This page contains release notes information for Aspose.PDF for .NET 20.2.
 
 {{% /alert %}} 
-## **Improvements and Changes**
+
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -46,8 +52,11 @@ This page contains release notes information for Aspose.PDF for .NET 20.2.
 |PDFNET-47471|RedactionAnnotation over an image with transparent background changes <br/> transparency into black color|Bug|
 |PDFNET-47529|Convert XPS to PDF using Aspose.PDF for .NET - FileLoadException Occurs|Bug|
 |PDFNET-47620|Saving a page from a document throws NullReferenceException|Bug|
-## **Public API and Backward Incompatible Changes**
-### **Added APIs**
+
+## Public API and Backward Incompatible Changes
+
+### Added APIs
+
 - Property Aspose.Pdf.Annotations.Annotation.TextHorizontalAlignment
 - Property Aspose.Pdf.DocSaveOptions.BatchSize                       
 - Property Aspose.Pdf.Facades.PdfFileEditor.KeepActions              

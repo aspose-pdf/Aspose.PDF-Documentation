@@ -3,6 +3,7 @@ title: Set Border Style, Margins and Padding of Table
 type: docs
 weight: 10
 url: /java/set-border-style-margins-and-padding-of-table/
+lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}} 
