@@ -1,11 +1,11 @@
 ---
-title: Aspose.PDF for .NET Support
+title: Aspose.PDF for Java Support
 linktitle: Technical Support
 type: docs
 weight: 60
 url: /java/technical-support/
-description: This page gives recommendations for quick and quality to resolve your tasks using Aspose.PDF for .NET.
-lastmod: "2020-12-22"
+description: This page gives recommendations for quick and quality to resolve your tasks using Aspose.PDF for Java.
+lastmod: "2021-02-02"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -21,9 +21,9 @@ Aspose.PDF allows you to use free technical support for all its products. If you
 
 If you need help with an issue with Aspose.PDF, follow the next reccomendations  to make sure it is resolved in the most efficient way:
 
-- Firstly, check that you use the latest Aspose.PDF version before reporting the issue, see [Aspose.PDF for .NET Downloads](https://www.nuget.org/packages/Aspose.PDF/) to find out about the latest version.
+- Aspose hosts all Java APIs on [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). You can easily use Aspose.PDF for Java API directly in your Maven Projects with simple configurations
 
-- Perhaps the solution to your problem has already been discussed and has a solution, for this, study the forum and documentation, check API Reference before reporting the issue.
+- Perhaps the solution to your problem has already been discussed and has a solution, for this, study the forum and documentation, check [API Reference](https://apireference.aspose.com/pdf/java) before reporting the issue.
 
 - When you form your question, please include the original document and possibly a fragment of your code that causes the problem. You can zip these files into one document if there are several.
 

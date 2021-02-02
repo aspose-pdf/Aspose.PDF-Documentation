@@ -4,18 +4,20 @@ linktitle: Supported File Formats
 type: docs
 weight: 10
 url: /java/supported-file-formats/
-description: This page shows which Aspose.PDF for .NET can load and save file formats.
-lastmod: "2020-12-22"
+description: This page shows which Aspose.PDF for Java can load and save file formats.
+lastmod: "2021-02-02"
+aliases:
+    - /java/supported-document-formats/
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-The following table indicates the file formats that Aspose.PDF for .NET can load and Save.
+The following table indicates the file formats that Aspose.PDF for Java can load and Save.
 
 |**Format**|**Description**|**Load**|**Save**|**Remarks**|
 | :- | :- | :- | :- | :- |
-|[PDF](https://wiki.fileformat.com/view/pdf/)|Portable Document Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
+|[PDF](https://wiki.fileformat.com/pdf/)|Portable Document Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
 |[CGM](https://wiki.fileformat.com/page-description-language/cgm/)|Computer Graphics Metafile for 2D vector graphics|{{< emoticons/tick >}}| | |
 |[EPUB](https://wiki.fileformat.com/ebook/epub/)|Ebook file format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 |[HTML](https://wiki.fileformat.com/web/html/)|HTML Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
@@ -32,7 +34,7 @@ The following table indicates the file formats that Aspose.PDF for .NET can load
 |[XLSX](https://wiki.fileformat.com/spreadsheet/xlsx/)|Saves the document in the Microsoft Excel 2007 format| |{{< emoticons/tick >}}| |
 |[PPTX](https://wiki.fileformat.com/presentation/pptx/)|Saves the document in the Microsoft PowerPoint Presentations format| |{{< emoticons/tick >}}| |
 |[DOC](https://wiki.fileformat.com/word-processing/doc/)|Saves the document in the Microsoft Word format| |{{< emoticons/tick >}}| |
-|[DOCX](https://wiki.fileformat.com/word-processing/docx/)|Saves the document in the Microsoft Word format| |{{< emoticons/tick >}}| |
+|[DOCX](https://wiki.fileformat.com/specification/word-processing/docx/)|Saves the document in the Microsoft Word format| |{{< emoticons/tick >}}| |
 |[MobiXML](https://wiki.fileformat.com/ebook/mobi/)|Saves the document in eBook MobiXML Standard format| |{{< emoticons/tick >}}| |
 |[JPEG](https://wiki.fileformat.com/image/jpeg/)|Saves the document in JPEG Format| |{{< emoticons/tick >}}| |
 |[EMF](https://wiki.fileformat.com/image/emf/)|Enhanced metafile format (EMF)| |{{< emoticons/tick >}}| |
@@ -40,5 +42,4 @@ The following table indicates the file formats that Aspose.PDF for .NET can load
 |[BMP](https://wiki.fileformat.com/image/bmp/)|Saves the document in BMP Format| |{{< emoticons/tick >}}| |
 |[GIF](https://wiki.fileformat.com/image/gif/)|Graphic Interchange Format| |{{< emoticons/tick >}}| |
 |[TIFF](https://wiki.fileformat.com/image/tiff/)|Saves the document as Single or Multi-Page TIFF Image| |{{< emoticons/tick >}}| |
-|[Text](https://wiki.fileformat.com/word-processing/txt/)|Save the document int Text Format| |{{< emoticons/tick >}}| |
-
+|[Text](https://wiki.fileformat.com/specification/word-processing/txt/)|Save the document int Text Format| |{{< emoticons/tick >}}| |

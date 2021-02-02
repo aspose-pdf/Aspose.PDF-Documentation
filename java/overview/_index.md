@@ -4,23 +4,24 @@ linktitle: Overview
 type: docs
 weight: 20
 url: /java/overview/
-lastmod: "2020-12-22"
-description: Overview of key-features and supported formats of Aspose.PDF for .NET, installation and licensing manual of .NET library.
+description: Overview of key-features and supported formats of Aspose.PDF for Java, installation and licensing manual of Java library.
+lastmod: "2021-02-01"
+aliases:
+    - /java/introducing-aspose-pdf-for-java/  
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-_This page is an overview of  Aspose.PDF for .NET features._
+_This page is an overview of  Aspose.PDF for Java features._
 
-**Aspose for .NET** is a modern and professional PDF API used to create, read-write, modify, and make other operations with PDF files without any external dependencies in a .NET application. You can use Aspose for .NET in any programming language for .NET or .NET Core.
-This component is written in managed C# and it allows developers to add PDF creation and manipulation functionality to their Microsoft .NET applications (WinForms, WPF, ASP.NET and .NET Compact Framework).
-Using this library, you can implement rich capabilities for creating PDF files from scratch, or completely process existing PDF documents without installing Adobe Acrobat.
+**Aspose for Java** is a robust Java component that lets developers create PDF documents from scratch without using Adobe Acrobat. Aspose.PDF for Java provides a very simple Application Programming Interface (API) for developers that is easy to learn and use.
 
-The Aspose.PDF for .NET supports a wide variety of functions such as:
+The Aspose.PDF for Java supports a wide variety of functions such as:
 
 - document compression;
 - table creation and manipulation;
+- add JavaScript;
 - support for graph objects;
 - extensive hyperlink functionality;
 - extended security controls;
@@ -35,7 +36,7 @@ The Aspose.PDF for .NET supports a wide variety of functions such as:
 - transform pages to image;
 - print PDF documents and much more.
 
-In addition, Aspose.PDF for .NET can be applied to easily convert text, images, SVG, HTML to PDF and convert PDF to various document formats with excellent performance and good quality.
+In addition, Aspose.PDF for Java can be applied to easily convert text, images, SVG, HTML to PDF and convert PDF to various document formats with excellent performance and good quality.
 
 Learn more about:
 
