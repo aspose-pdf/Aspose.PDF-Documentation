@@ -1,3 +1,16 @@
+---
+title: Convert PDF File to PDF/A 
+linktitle: Convert PDF File to PDF/A 
+type: docs
+weight: 180
+url: /java/convert-pdf-file-to-pdfa/
+lastmod: "2021-02-05"
+description: This topic show you how to Aspose.PDF for Java allows to convert a PDF file to a PDF/A compliant PDF file.  
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+---
+
 Aspose.PDF allows you to convert a PDF file to a PDF/A compliant PDF file. Before doing so, the file must be validated. This article explains how.
 
 Please note we follow Adobe Preflight for validating PDF/A conformance. All tools on the market have their own "representation" of PDF/A conformance. Please check this article on [PDF/A validation tools](http://wiki.opf-labs.org/display/SPR/PDFA+Validation+tools+give+different+results) for reference. We chose Adobe products for verifying how Aspose.PDF produces PDF files because Adobe is at the center of everything connected to PDF.
@@ -46,7 +59,10 @@ public final class ConvertPDFtoPDFA {
         // Save output document
         pdfDocument.save(_dataDir + "PDFToPDFA_out.pdf");
     }
+```
+To perform validation only, use the following line of code:
 
+```java
     public static void ValidatePDF_A_1B() {
         // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
         
@@ -101,6 +117,7 @@ From [Aspose.PDF for Java 10.6.0](https://downloads.aspose.com/pdf/java), the AP
 ## PDF to PDF/A_2a Conversion
 
 Starting release of [Aspose.PDF for Java 10.2.0](https://downloads.aspose.com/pdf/java), the API offers the feature to convert PDF files to PDF/A3 format.
+
 ```java
     public static void ConvertPDFtoPDFa2a() {
         // Open document
@@ -117,6 +134,7 @@ Starting release of [Aspose.PDF for Java 10.2.0](https://downloads.aspose.com/pd
 ## PDF to PDF/A_3U Conversion
 
 Starting release of Aspose.PDF for Java 17.2.0, the API offers the feature to convert PDF files to PDF/A_3U format.
+
 ```java
     public static void ConvertPDFtoPDFa3u() {
         // Open document
@@ -134,6 +152,7 @@ Starting release of Aspose.PDF for Java 17.2.0, the API offers the feature to c
 ## Create PDF/A-3 and attach XML file
 
 Aspose.PDF for Java offers the feature to convert PDF files to PDF/A format and it also supports the capabilities of adding files as an attachment to PDF document. In case you have a requirement to attach files to PDF/A compliance format, then we recommend using PDF_A_3A value from com.aspose.pdf.PdfFormat enumeration, as according to [this post in Adobe community](https://forums.adobe.com/thread/868219), PDF/A_3a is the format that provides the feature to attach any file format as an attachment to PDF/A compliant file. However, once the file is attached, you should convert it into Pdf-3a format again, in order to fix metadata. Please take a look over the following code snippet.
+
 ```java
     public static void ConvertPDFtoPDFa3u_attachXML() {
         Document doc = new Document();

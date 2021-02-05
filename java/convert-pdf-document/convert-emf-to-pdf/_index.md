@@ -1,3 +1,15 @@
+---
+title: Convert EMF to PDF 
+linktitle: Convert EMF to PDF
+type: docs
+weight: 230
+url: /java/convert-emf-to-pdf/
+lastmod: "2021-02-05"
+description: Both bitmap as well as vector graphics can be files having an EMF extension. Convert EMF to PDF file simply with Java.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+---
 
 **Enhanced metafile format (EMF)** stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device. 
 
@@ -14,10 +26,10 @@ drive, found at a web URL or in a Stream instance.
 To add an image:
 
 1. Create an object of the com.aspose.pdf.Image class. 
-1. Add the image to a [`Paragraphs`](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/paragraphs) collection of page instance. 
+1. Add the image to a [Paragraphs](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/paragraphs) collection of page instance. 
 1. Specify the path or source of Image.
-    -  If an image is at a location on the hard drive, specify the path location using the [`Image.setFile(…)`](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Image) method. 
-    -  If an image is placed in a FileInputStream, pass the object holding the image to the [`Image.setImageStream(…)`](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Image) method.
+    -  If an image is at a location on the hard drive, specify the path location using the [Image.setFile(…)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Image) method. 
+    -  If an image is placed in a FileInputStream, pass the object holding the image to the [Image.setImageStream(…)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Image) method.
 
 The following code snippet shows how to load an image object, set the page margin, place the image on page and save the output as PDF.
 

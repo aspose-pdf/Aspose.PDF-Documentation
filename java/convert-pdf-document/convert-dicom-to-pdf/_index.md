@@ -1,5 +1,17 @@
+---
+title: Convert DICOM to PDF 
+linktitle: Convert DICOM to PDF
+type: docs
+weight: 250
+url: /java/convert-dicom-to-pdf/
+lastmod: "2021-02-05"
+description: Convert medical images saved in DICOM format to a PDF file using Aspose.PDF for Java.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+---
 
-DICOM (Digital Imaging and Communications in Medicine) is a standard for handling, storing, printing, and transmitting information in medical imaging. It includes a file format definition and a network communications protocol.
+<abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> is a standard for handling, storing, printing, and transmitting information in medical imaging. It includes a file format definition and a network communications protocol.
 
 Aspsoe.PDF for Java allows you to convert DICOM files to PDF format, check next code snippet:
 

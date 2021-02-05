@@ -1,3 +1,19 @@
+---
+title: Convert PDF to PowerPoint 
+linktitle: Convert PDF to PowerPoint
+type: docs
+weight: 110
+url: /java/convert-pdf-to-powerpoint/
+description: Aspose.PDF allows you to convert PDF to PowerPoint format using Java. One way there is a possibility to convert PDF to PPTX with Slides as Images. 
+aliases:
+    - /java/convert-pdf-to-powerpoint-pptx/
+lastmod: "2021-02-05"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+---
+
+We have an API named Aspose.Slides which offers the feature to create as well as manipulate PPT/PPTX presentations. This API also provides the feature to convert PPT/PPTX files to PDF format. In Aspose.PDF for Java, we have introduced a feature to transform PDF documents into PPTX format. During this conversion, the individual pages of the PDF file are converted to separate slides in the PPTX file.
 
 {{% alert color="primary" %}}
 

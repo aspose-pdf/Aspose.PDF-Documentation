@@ -1,10 +1,22 @@
+---
+title: Convert CGM to PDF 
+linktitle: Convert CGM to PDF
+type: docs
+weight: 260
+url: /java/convert-cgm-to-pdf/
+description: Convert CGM files to PDF documents with Aspose.PDF library. These files used in CAD and presentation graphics applications.
+lastmod: "2021-02-05"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+---
 
-Computer Graphics Metafile (CGM) is an ISO standard that provides a vector-based 2D image file format for the storage and retrieval of graphics information. CGM is a device-independent format. CGM is a vector graphics format that supports three different encoding methods: binary (best for program read speed), character-based (produces the smallest file size and allows for faster data transfers) or cleartext encoding (allows users to read and modify the file with a text editor)
+<abbr title="Computer Graphics Metafile">CGM</abbr> is an ISO standard that provides a vector-based 2D image file format for the storage and retrieval of graphics information. CGM is a device-independent format. CGM is a vector graphics format that supports three different encoding methods: binary (best for program read speed), character-based (produces the smallest file size and allows for faster data transfers) or cleartext encoding (allows users to read and modify the file with a text editor)
 
 The following code snippet shows you how to convert CGM files to PDF format using Aspose.PDF for Java.
 
-1. Create a CGM [`LoadOptions`](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions) class.
-1. Create an instance of [`Document`](https://apireference.aspose.com/page/java/com.aspose.page/Document) class with mention source filename and options.
+1. Create a CGM [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions) class.
+1. Create an instance of [Document](https://apireference.aspose.com/page/java/com.aspose.page/Document) class with mention source filename and options.
 1. Save the document with the desired file name.
 
 ```java

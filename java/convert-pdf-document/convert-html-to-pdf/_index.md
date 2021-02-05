@@ -1,8 +1,22 @@
+---
+title: Convert HTML to PDF 
+linktitle: Convert HTML to PDF
+type: docs
+weight: 280
+url: /java/convert-html-to-pdf/
+lastmod: "2021-02-05"
+description: You can convert HTML to PDF in a way convenient for you, in a quick way, and in an advanced way. Also, the way is described here Convert Web page to PDF.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+---
+
 Aspose.PDF for Java provides the capability to convert HTML pages to PDF format. The [HtmlLoadOptions](https://apireference.aspose.com/java/pdf/com.aspose.pdf/HtmlLoadOptions) class supports the feature to load HTML contents and then save the output in PDF format.
 
-To convert an HTML file to PDF Simple variant:
-1. Create a HTML [`LoadOptions`](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions).
-1. Initialize [`Document object`](<https://apireference.aspose.com/page/java/com.aspose.page/document>).
+## How to convert HTML file to PDF Simple variant:
+
+1. Create a HTML [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions).
+1. Initialize [Document object](<https://apireference.aspose.com/page/java/com.aspose.page/document>).
 1. Save output PDF document.
 
 ```java
@@ -41,9 +55,9 @@ public final class ConvertHTMLtoPDF {
 ```
  And after you can see Advanced_MediaType:
  
- 1. Create a HTML [`LoadOptions`](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions).
+ 1. Create a HTML [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions).
  1. Set Print or Screen mode. 
- 1. Initialize [`Document object`](<https://apireference.aspose.com/page/java/com.aspose.page/document>).
+ 1. Initialize [Document object](<https://apireference.aspose.com/page/java/com.aspose.page/document>).
  1. Save output PDF document. 
  
 ```java
@@ -62,11 +76,12 @@ public final class ConvertHTMLtoPDF {
         document.save(Paths.get(_dataDir.toString(), "HTMLtoPDF.pdf").toString());
     }
 ```
-Convert HTML to PDF Advanced_EmbedFonts:
+## Convert HTML to PDF Advanced_EmbedFonts:
 
-1. Add new Html [`LoadOptions`](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions).
+1. Add new Html [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions).
 1. Disable font embedding.
 1. Save a new Document.
+2. 
 ```java
     public static void ConvertHTMLtoPDFAdvanced_EmbedFonts() {
 

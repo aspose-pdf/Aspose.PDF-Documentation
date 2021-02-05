@@ -1,3 +1,15 @@
+---
+title: Convert BMP to PDF 
+linktitle: Convert BMP to PDF
+type: docs
+weight: 220
+url: /java/convert-bmp-to-pdf/
+lastmod: "2021-02-05"
+description: You may easily convert BMP bitmap files to PDF used to store digital bitmap images separately from the display device using Aspose.PDF. for Java.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+---
 
 BMP images are Files having extension .BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
 You can convert BMP to PDF with Aspose.PDF for Java API. Therefore, you can follow the following steps to convert BMP images:
@@ -7,7 +19,6 @@ You can convert BMP to PDF with Aspose.PDF for Java API. Therefore, you can foll
 1. Finally, save the output PDF file
 
 So the following code snippet follows these steps and shows how to convert BMP to PDF using Java:
-
 
 ```java
 package com.aspose.pdf.examples;
