@@ -24,7 +24,7 @@ sitemap:
 - API Reference in JavaDoc format
 - 32-bit OS support.
 - 64-bit OS support.
-- 
+
 ## Supported PDF versions
 
 Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.

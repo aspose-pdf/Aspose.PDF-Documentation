@@ -1,27 +1,27 @@
 ---
-title: Extract Data from Table in PDF with C#
+title: Extract Data from Table in PDF
 linktitle: Extract Data from Table
 type: docs
 weight: 40
 url: /java/extract-images-from-the-pdf-file/
-description: Learn how to extract tabular from PDF using Aspose.PDF for .NET in C#
-lastmod: "2021-01-18"
+description: Learn how to extract tabular from PDF using Aspose.PDF for Java
+lastmod: "2021-02-04"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
 ## Extract Tables from PDF programmatically
 
-Extracting tables from PDFs is not a trivial task because table can be created in the various way.
+Extracting tables from PDFs is not a trivial task because the table can be created variously.
 
-Aspose.PDF for .NET has a tool to make it easy to retrieve tables. To extract table data you shoud perform the following steps:
+Aspose.PDF for Java has a tool to make it easy to retrieve tables. To extract table data, you should perform the following steps:
 
-1. Open document - instantiate a [Document](https://apireference.aspose.com/pdf/java/aspose.pdf/document) object;
-1. Create a [TableAbsorber](https://apireference.aspose.com/pdf/java/aspose.pdf.text/tableabsorber) object.
-1. Decide which pages to be analyzed and apply [Visit](https://apireference.aspose.com/pdf/java/aspose.pdf.text/tableabsorber/methods/visit) to the desired pages. The tabular data will be scanned and the result will be stored in [TableList](https://apireference.aspose.com/pdf/java/aspose.pdf.text/tableabsorber/properties/tablelist).
-1. `TableList` is a List of [AbsorbedTable](https://apireference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable). To get the date iterate throught `TableList` and handle [RowList](https://apireference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable/properties/rowlist) and [CellList](https://apireference.aspose.com/pdf/java/aspose.pdf.text/absorbedrow/properties/celllist)
-1. Each [AbsorbedCell](https://apireference.aspose.com/pdf/java/aspose.pdf.text/absorbedcell) contains [TextFragments](https://apireference.aspose.com/pdf/java/aspose.pdf.text/absorbedcell/properties/textfragments) collection. You can process it for your own purposes.
+1. Open document - instantiate a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object;
+1. Create a [TableAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber) object.
+1. Decide which pages to be analyzed and apply [visit](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) to the desired pages. The tabular data will be scanned, and the result will be saved in a list of [AbsorbedTable](https://apireference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable). We can get this list through [getTableList](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) method.
+1. To get the data iterate throught `TableList` and handle list of [absorbed rows](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) and list of absorbed cells. We can access to the first list by calling [getTableList](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) method and to the second by calling [getCellList](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
+1. Each [AbsorbedCell](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) contains [TextFragmentCollections](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). You can process it for your own purposes.
 
 The following example shows table extraction from the all pages:
 
@@ -65,47 +65,48 @@ So, if you need to extract tables located in a specific region, you have to work
 
 The following example show how to extract table marked with Square Annotation:
 
-```csharp
-public static void Extract_Marked_Table()
-{
+```java
+public static void Extract_Marked_Table() {
     // Load source PDF document
-    var filePath="<... enter path to pdf file here ...>";
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);   
-    var page = pdfDocument.Pages[1];
-    var squareAnnotation =
-        page.Annotations.FirstOrDefault(ann => ann.AnnotationType == Annotations.AnnotationType.Square)
-        as Annotations.SquareAnnotation;
+    String filePath = "<... enter path to pdf file here ...>";
+    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
+    com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
 
+    com.aspose.pdf.AnnotationSelector annotationSelector = new com.aspose.pdf.AnnotationSelector(
+            new com.aspose.pdf.SquareAnnotation(page, com.aspose.pdf.Rectangle.getTrivial()));
 
-    Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
-    absorber.Visit(page);
+    java.util.List<com.aspose.pdf.Annotation> list = annotationSelector.getSelected();
+    if (list.size() == 0) {
+        System.out.println("Marked tables not found..");
+        return;
+    }
 
-    foreach (AbsorbedTable table in absorber.TableList)
-    {
-        var isInRegion = (squareAnnotation.Rect.LLX < table.Rectangle.LLX) &&
-        (squareAnnotation.Rect.LLY < table.Rectangle.LLY) &&
-        (squareAnnotation.Rect.URX > table.Rectangle.URX) &&
-        (squareAnnotation.Rect.URY > table.Rectangle.URY);
+    com.aspose.pdf.SquareAnnotation squareAnnotation = (com.aspose.pdf.SquareAnnotation) list.get(0);
 
-        if (isInRegion)
+    com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
+    absorber.visit(page);
+
+    for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
         {
-            foreach (AbsorbedRow row in table.RowList)
-            {
-                foreach (AbsorbedCell cell in row.CellList)
-                {
+            boolean isInRegion = (squareAnnotation.getRect().getLLX() < table.getRectangle().getLLX())
+                    && (squareAnnotation.getRect().getLLY() < table.getRectangle().getLLY())
+                    && (squareAnnotation.getRect().getURX() > table.getRectangle().getURX())
+                    && (squareAnnotation.getRect().getURY() > table.getRectangle().getURY());
 
-                    foreach (TextFragment fragment in cell.TextFragments)
+            if (isInRegion) {
+                for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
                     {
-                        var sb = new StringBuilder();
-                        foreach (TextSegment seg in fragment.Segments)
-                        {
-                            sb.Append(seg.Text);
+                        for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
+                            for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
+                                StringBuilder sb = new StringBuilder();
+                                for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
+                                    sb.append(seg.getText());
+                                System.out.print(sb.toString() + "|");
+                            }
                         }
-                        var text = sb.ToString();
-                        Console.Write($"{text}|");
+                        System.out.println();
                     }
                 }
-                Console.WriteLine();
             }
         }
     }
@@ -117,18 +118,18 @@ public static void Extract_Marked_Table()
 The following example shows how to extract table and store it as CSV file.
 To see how to convert PDF to Excel Spreadsheet please refer to [Convert PDF to Excel](/pdf/java/convert-pdf-to-excel/) article.
 
-```csharp
+```java
 public static void Extract_Table_Save_CSV()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+    String filePath = "/home/admin1/pdf-examples/Samples/sample_table.pdf";
     // Load PDF document
-    Document pdfDocument = new Document(_dataDir + "input.pdf");
+    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
 
     // Instantiate ExcelSave Option object
-    ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
+    com.aspose.pdf.ExcelSaveOptions excelSave = new com.aspose.pdf.ExcelSaveOptions();
+    excelSave.setFormat(com.aspose.pdf.ExcelSaveOptions.ExcelFormat.CSV);
 
     // Save the output in XLS format
-    pdfDocument.Save("PDFToXLS_out.xlsx", excelSave);
+    pdfDocument.save("PDFToXLS_out.xlsx", excelSave);
 }
 ```

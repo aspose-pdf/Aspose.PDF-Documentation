@@ -1,11 +1,11 @@
 ---
-title: Extract text from PDF C#
+title: Extracting raw text from PDF file using java
 linktitle: Extract text from PDF
 type: docs
 weight: 10
 url: /java/extract-text-from-all-pdf/
-description: This article describes various ways to extract text from PDF documents using Aspose.PDF in C#. From entire pages, from a specific part, based on columns, etc.
-lastmod: "2021-01-13"
+description: This article describes various ways to extract text from PDF documents using Aspose.PDF for Java. From entire pages, from a specific part, based on columns, etc.
+lastmod: "2021-02-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,28 +13,43 @@ sitemap:
 
 ## Extract Text From All the Pages of a PDF Document
 
-Extracting text from a PDF document is a common requirement. In this example, you’ll see how Aspose.PDF for .NET allows extracting text from all the pages of a PDF document. You need to create an object of the **TextAbsorber** class. After that, open the PDF using **Document** class and call the **Accept** method of the **Pages** collection. The **TextAbsorber** class absorbs the text from the document and returns in **Text** property. The following code snippet shows you how to extract text from all pages of PDF document.
+Extracting text from a PDF document is a common requirement. In this example, you'll see how Aspose.PDF for Java allows extracting text from all the pages of a PDF document.
+To extract text from all the PDF pages:
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. Create an object of the [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class.
+1. Open the PDF using **Document** class and call the **Accept** method of the **Pages** collection. 
+1. The **TextAbsorber** class absorbs the text from the document and returns in **Text** property. 
 
-// Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextAll.pdf");
+The following code snippet shows you how to extract text from all pages of PDF document.
 
-// Create TextAbsorber object to extract text
-TextAbsorber textAbsorber = new TextAbsorber();
-// Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textAbsorber);
-// Get the extracted text
-string extractedText = textAbsorber.Text;
-// Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt");
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-// Close the stream
-tw.Close();
+```java
+public static void ExtractFromAllPages(){
+    // The path to the documents directory.
+    String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    String filePath = _dataDir + "ExtractTextAll.pdf";
+
+    // Open document
+    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
+
+    // Create TextAbsorber object to extract text
+    com.aspose.pdf.TextAbsorber textAbsorber = new com.aspose.pdf.TextAbsorber();
+    
+    // Accept the absorber for all the pages
+    pdfDocument.getPages().accept(textAbsorber);
+    
+    // Get the extracted text
+    String extractedText = textAbsorber.getText();                
+    try {
+        java.io.FileWriter writer = new java.io.FileWriter(_dataDir + "extracted-text.txt", true);
+        // Write a line of text to the file
+        writer.write(extractedText);            
+        // Close the stream
+        writer.close();
+    } catch (java.io.IOException e) {
+        e.printStackTrace();
+    }
+
+}
 ```
 
 Call the **Accept** method on a particular page of the Document object. The Index is the particular page number from where text needs to be extracted.

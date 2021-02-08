@@ -4,10 +4,10 @@ linktitle:  Extract data from AcroForm
 type: docs
 weight: 50
 url: /java/extract-data-from-acroform/
-description: AcroForms exists in many PDF documents. This article aims to help you understand how to extract data from AcroForms  using Java and the Aspose.PDF.
+description: AcroForms exists in many PDF documents. This article aims to help you understand how to extract data from AcroForms using Java and the Aspose.PDF.
 lastmod: "2021-02-03"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -15,7 +15,7 @@ sitemap:
 
 Aspose.PDF for Java not only lets you create and fill in form fields, but also makes it easy to extract form field data or form field information from PDF files.
 
-Suppose we don't know the names of the form fields in advance. Then we should iterate over each page in PDF to extract information about all AcroForms in PDF as well as the values of the form fields.
+Suppose we don't know the names of the form fields in advance. Then we should iterate over each page in PDF to extract information about all AcroForms in PDF as well as the values of the form fields. To get access to the form we need to use [getForm](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) method.
 
 ```java
 public static void ExtractFormFields() {
@@ -29,11 +29,22 @@ public static void ExtractFormFields() {
 }
 ```
 
-If you do know the name of the form fields that you wish to extract values from then you can use indexer in Documents.Form collection to quickly retrieve this data. Look at the bottom of this article for a sample code on how to use that function.
+If you do know the name of the form fields that you wish to extract values from then you can use indexer in Documents.Form collection to quickly retrieve this data.
 
 ## Retrieve form field value by title
 
-The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This example selects a TextBoxField and retrieves its value using the Value property.
+The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object's [form field collection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--). This example selects a [TextBoxField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) and retrieves its value using the [getValue](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) method.
+
+```java
+public static void ExtractFormDataByName() {
+    String fileName = _dataDir+"/StudentInfoFormElectronic.pdf";
+    com.aspose.pdf.Document document = new com.aspose.pdf.Document(fileName);        
+    com.aspose.pdf.TextBoxField textBoxField1 = (com.aspose.pdf.TextBoxField)document.getForm().get("Last Name");
+
+    System.out.println("Last Name :" + textBoxField1.getValue());
+
+}
+```
 
 ## Extract form fields from PDF document to JSON
 
@@ -83,7 +94,7 @@ public static void ExtractFormFieldsToXML() {
     form.bindPdf(dataDir + "input.pdf");
 
     try {
-        // Create xml file.
+        // Create XML file.
         FileOutputStream xmlOutputStream;
 
         xmlOutputStream = new FileOutputStream(dataDir + "input.xml");
@@ -106,52 +117,69 @@ public static void ExtractFormFieldsToXML() {
 
 ## Export Data to FDF from a PDF File
 
-Form class allows you to export data to an FDF file from the PDF file using ExportFdf method. In order to export data to FDF, you need to create an object of Form class and then call the ExportFdf method using the FileStream object. Finally, you can save the PDF file using Save method of the Form class. The following code snippet shows you how to export data to FDF file.
+To export PDF forms data to XFDF file, we can use the [exportFdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportFdf-java.io.OutputStream-) method in the [Form](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class.
+
+Please note, that it's a class from `com.aspose.pdf.facades`. Despite the similar name, this class has a slightly different purpose.
+
+In order to export data to FDF, you need to create an object of `Form` class and then call the `exportXfdf` method using the `OutputStream` object. The following code snippet shows you how to export data to XFDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+public static void ExtractFormExportFDF() {
+    String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
+    String fdfFileName = Paths.get(_dataDir, "student.fdf").toString();
+    com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
 
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// Open Document
-form.BindPdf(dataDir + "input.pdf");
+    OutputStream fdfOutputStream;
+    try {
+        
+        fdfOutputStream = new FileOutputStream(fdfFileName);
+        
+        // Export data
+        form.exportFdf(fdfOutputStream);
+        
+        // Close file stream
+        fdfOutputStream.close();
 
-// Create fdf file.
-System.IO.FileStream fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create);
 
-// Export data
-form.ExportFdf(fdfOutputStream);
 
-// Close file stream
-fdfOutputStream.Close();
-
-// Save updated document
-form.Save(dataDir + "ExportDataToPdf_out.pdf");
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }        
+    
+}
 ```
 
 ## Export Data to XFDF from a PDF File
 
-Form class allows you to export data to an XFDF file from the PDF file using ExportXfdf method. In order to export data to XFDF, you need to create an object of Form class and then call the ExportXfdf method using the FileStream object. Finally, you can save the PDF file using Save method of the Form class. The following code snippet shows you how to export data to XFDF file.
+To export PDF forms data to XFDF file, we can use the [exportXfdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportXfdf-java.io.OutputStream-) method in the [Form](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class.
+
+In order to export data to XFDF, you need to create an object of `Form` class and then call the `exportXfdf` method using the `OutputStream` object. 
+The following code snippet shows you how to export data to XFDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+public static void ExtractFormExportXFDF() {
+    String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
+    String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
+    com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
 
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// Open Document
-form.BindPdf(dataDir + "input.pdf");
+    OutputStream fdfOutputStream;
+    try {
+        
+        fdfOutputStream = new FileOutputStream(fdfFileName);
+        
+        // Export data
+        form.exportXfdf(fdfOutputStream);
+        
+        // Close file stream
+        fdfOutputStream.close();
 
-// Create xfdf file.
-System.IO.FileStream xfdfOutputStream = new FileStream("student1.xfdf", FileMode.Create);
 
-// Export data
-form.ExportXfdf(xfdfOutputStream);
 
-// Close file stream
-xfdfOutputStream.Close();
-
-// Save updated document
-form.Save(dataDir + "ExportDataToXFDF_out.pdf");
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }        
+    
+}
 ```
