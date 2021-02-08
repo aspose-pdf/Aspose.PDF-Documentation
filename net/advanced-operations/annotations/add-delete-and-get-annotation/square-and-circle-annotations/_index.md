@@ -20,7 +20,7 @@ Steps for creating Square and Circle Annotations:
 
 1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
 1. Create new [Circle Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) and set Circle parameters (new Rectangle, title, color, InteriorColor, Opacity).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index). 
+1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
 1. Next we need to create [Square Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation).
 1. Set the same Square parameters (new Rectangle, title, color, InteriorColor, Opacity).
 1. After we need to Add Square and Circle Annotations to the page.
@@ -91,7 +91,7 @@ public static void GetCircleAnnotation()
     // Load the PDF file
     Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
     var circleAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Line)
+        .Where(a => a.AnnotationType == AnnotationType.Circle)
         .Cast<CircleAnnotation>();
     foreach (var ca in circleAnnotations)
     {
@@ -99,6 +99,7 @@ public static void GetCircleAnnotation()
     }
 }
 ```
+
 ## Delete Circle Annotation
 
 The following code snippet shows how to Delete Circle Annotation from PDF file.
