@@ -31,14 +31,6 @@ Aspose.PDF for Java explain how to convert all pages in a PDF file to a single T
 
 The following code snippet shows how to convert all the PDF pages to a single TIFF image.
 
-Aspose.PDF for Java has been supporting the feature to convert all pages in a PDF file to a single TIFF image:
-
-1. Create an object of the Document class.
-1. Call the Process method to convert the document.
-1. To set the output file's properties, use the TiffSettings class.
-
-The following code snippet shows how to convert all the PDF pages to a single TIFF image.
-
 ```java
 public static void ConvertPDFtoTiffAllPages() throws IOException {
 

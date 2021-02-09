@@ -17,7 +17,7 @@ We have several approaches to convert EMF into PDF.
 
 ## Using Image class 
 
-A PDF document comprises pages and each page contains one or more paragraph objects. A paragraph can be a text, image,table, floating box, graph, heading, form field or an attachment. 
+A PDF document comprises pages and each page contains one or more paragraph objects. A paragraph can be a text, image, table, floating box, graph, heading, form field or an attachment. 
 To convert an image file into PDF format, enclose it in a paragraph.
      
 It is possible to convert images at a physical location on the local hard
