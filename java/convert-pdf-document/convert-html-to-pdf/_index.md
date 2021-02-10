@@ -93,7 +93,7 @@ public final class ConvertHTMLtoPDF {
         document.save(_dataDir + "html_test.PDF");
     }
 ```
-next example:
+Next example:
 
 1. Creating a clear template resource for replacing.
 1. Return empty byte array in case i.imgur.com server.

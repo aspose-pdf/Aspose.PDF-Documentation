@@ -21,15 +21,6 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-Aspose.PDF for Java allows you to convert all pages in a PDF file to images:
-
-1. Loop through all pages in the file.
-1. Convert each page individually:
-    - Create an object of the Document class to load the PDF document.
-    - Get the page you want to convert.
-    - Call the Process method to convert the page to Jpeg.
-
-The following code snippet shows you how to convert all PDF pages to Jpeg images.
 
 ## Convert single PDF page to JPG image
 
@@ -66,6 +57,16 @@ public static void ConvertPDFtoJpegSinglePage() throws IOException {
     }
 ```
 ## Convert all PDF pages to JPG image
+
+Aspose.PDF for Java allows you to convert all pages in a PDF file to images:
+
+1. Loop through all pages in the file.
+1. Convert each page individually:
+    - Create an object of the Document class to load the PDF document.
+    - Get the page you want to convert.
+    - Call the Process method to convert the page to Jpeg.
+
+The following code snippet shows you how to convert all PDF pages to Jpeg images.
 
 ```java
     public static void ConvertPDFtoJpegAllPages() throws IOException {

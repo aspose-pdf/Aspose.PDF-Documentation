@@ -29,7 +29,7 @@ Aspose.PDF for Java allows you quickly and easily convert your PDF documents int
 
 ## Convert between PDF/A and PDF formats
 
-Converting  PDF/A to PDF formats and back it's possible with C# library.
+Converting  PDF/A to PDF formats and back it's possible with Java library.
 
 - [Convert PDF to PDF/A](/pdf/java/convert-pdf-file-to-pdfa/)
 - [Convert PDF/A to PDF](/pdf/java/convert-pdfa-to-pdf/)
