@@ -3,9 +3,9 @@ title: PDF Text Markup Annotation
 linktitle: Add Text Markup Annotation
 type: docs
 weight: 70
-url: /net/text-markup-annotation/
-description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
-lastmod: "2021-01-13"
+url: /java/text-markup-annotation/
+description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document. 
+lastmod: "2021-02-10"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -25,192 +25,198 @@ The next feature is the ability to get or set the settings of the underline anno
 
 In order to add an Text Markup Annotation to the PDF document, we need to perform the following actions:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
+1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
 1. Create annotations:
-    - [HighlightAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) and set parameters (title, color).
-    - [StrikeOutAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) and set parameters (title, color).
-    - [SquigglyAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) and set parameters (title, color).
-    - [UnderlineAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) and set parameters (title, color).
+    - [HighlightAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/HighlightAnnotation) and set parameters (title, color).
+    - [StrikeOutAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/StrikeOutAnnotation) and set parameters (title, color).
+    - [SquigglyAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/SquigglyAnnotation) and set parameters (title, color).
+    - [UnderlineAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/UnderlineAnnotation) and set parameters (title, color).
 1. After we should add all annotations to the page.
 
-```csharp
-using Aspose.Pdf.Annotations;
-using Aspose.Pdf.Text;
-using System;
-using System.Linq;
+```java
+package com.aspose.pdf.examples;
 
-namespace Aspose.Pdf.Examples.Advanced
-{
-    class ExampleTextMarkupAnnotation
-    {
-        // The path to the documents directory.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
+import java.util.*;
+import com.aspose.pdf.*;
 
-        public static void AddTextMarkupAnnotation()
-        {
-            try
-            {
-                // Load the PDF file
-                Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
-                var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber("PDF");
-                tfa.Visit(document.Pages[1]);
+public class ExampleTextMarkupAnnotation {
+    // The path to the documents directory.
+    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
 
-                //Create annotations
-                HighlightAnnotation highlightAnnotation = new HighlightAnnotation(document.Pages[1],
-                   tfa.TextFragments[1].Rectangle )
-                {
-                    Title = "Aspose User",
-                    Color = Color.LightGreen
-                };
+    public static void AddTextMarkupAnnotation() {
+        try {
+            // Load the PDF file
+            Document document = new Document(_dataDir + "sample.pdf");
+            Page page = document.getPages().get_Item(1);
+            TextFragmentAbsorber tfa = new TextFragmentAbsorber("PDF");
+            tfa.visit(page);
 
-                StrikeOutAnnotation strikeOutAnnotation = new StrikeOutAnnotation(
-                   document.Pages[1],
-                   tfa.TextFragments[2].Rectangle)
-                {
-                    Title = "Aspose User",
-                    Color = Color.Blue
-                };
-                SquigglyAnnotation squigglyAnnotation = new SquigglyAnnotation(document.Pages[1],
-                    tfa.TextFragments[3].Rectangle)
-                {
-                    Title = "Aspose User",
-                    Color = Color.Red
-                };
-                UnderlineAnnotation underlineAnnotation = new UnderlineAnnotation(document.Pages[1],
-                    tfa.TextFragments[4].Rectangle)
-                {
-                    Title = "Aspose User",
-                    Color = Color.Violet
-                };
-                // Add annotation to the page 
-                document.Pages[1].Annotations.Add(highlightAnnotation);
-                document.Pages[1].Annotations.Add(squigglyAnnotation);
-                document.Pages[1].Annotations.Add(strikeOutAnnotation);
-                document.Pages[1].Annotations.Add(underlineAnnotation);
-                document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            // Create annotations
+            HighlightAnnotation highlightAnnotation = new HighlightAnnotation(page,
+                    tfa.getTextFragments().get_Item(1).getRectangle());
+            highlightAnnotation.setTitle("Aspose User");
+            highlightAnnotation.setColor(Color.getLightGreen());
+
+            StrikeOutAnnotation strikeOutAnnotation = new StrikeOutAnnotation(page,
+                    tfa.getTextFragments().get_Item(2).getRectangle());
+            strikeOutAnnotation.setTitle("Aspose User");
+            strikeOutAnnotation.setColor(Color.getBlue());
+
+            SquigglyAnnotation squigglyAnnotation = new SquigglyAnnotation(page,
+                    tfa.getTextFragments().get_Item(3).getRectangle());
+            squigglyAnnotation.setTitle("Aspose User");
+            squigglyAnnotation.setColor(Color.getRed());
+
+            UnderlineAnnotation underlineAnnotation = new UnderlineAnnotation(page,
+                    tfa.getTextFragments().get_Item(4).getRectangle());
+            underlineAnnotation.setTitle("Aspose User");
+            underlineAnnotation.setColor(Color.getViolet());
+
+            // Add annotation to the page
+            page.getAnnotations().add(highlightAnnotation);
+            page.getAnnotations().add(squigglyAnnotation);
+            page.getAnnotations().add(strikeOutAnnotation);
+            page.getAnnotations().add(underlineAnnotation);
+            document.save(_dataDir + "sample_mod.pdf");
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
         }
+    }
 ```
 
 If you want to highlight a multi-line fragment you should use advanced example:
 
-```csharp
-        /// <summary>
-        /// Advanced example for you want to highlight a multi-line fragment
-        /// </summary>
-        public static void AddHighlightAnnotationAdvanced()
-        {
-            var document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var page = document.Pages[1];
-            var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
-            tfa.Visit(page);
-            foreach (var textFragment in tfa.TextFragments)
-            {
-                var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
-                page.Annotations.Add(highlightAnnotation);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+```java
+    /// <summary>
+    /// Advanced example for you want to highlight a multi-line fragment
+    /// </summary>
+    public static void AddHighlightAnnotationAdvanced() {
+        Document document = new Document(_dataDir + "sample_mod.pdf");
+        Page page = document.getPages().get_Item(1);
+        TextFragmentAbsorber tfa = new TextFragmentAbsorber("Adobe\\W+Acrobat\\W+Reader", new TextSearchOptions(true));
+        tfa.visit(page);
+        for (TextFragment textFragment : tfa.getTextFragments()) {
+            HighlightAnnotation highlightAnnotation = HighLightTextFragment(page, textFragment, Color.getYellow());
+            page.getAnnotations().add(highlightAnnotation);
         }
-        private static HighlightAnnotation HighLightTextFragment(Aspose.Pdf.Page page,
-            TextFragment textFragment, Color color)
-        {
-            if (textFragment.Segments.Count == 1)
-                return new HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
-                {
-                    Title = "Aspose User",
-                    Color = color,
-                    Modified = DateTime.Now,
-                    QuadPoints = new Point[]
-                    {
-                        new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.URY),
-                        new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.URY),
-                        new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.LLY),
-                        new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
-                    }
-                };
+        document.save(_dataDir + "sample_mod.pdf");
+    }
 
-            var offset = 0;
-            var quadPoints = new Point[textFragment.Segments.Count * 4];
-            foreach (var segment in textFragment.Segments)
-            {
-                quadPoints[offset + 0] = new Point(segment.Rectangle.LLX, segment.Rectangle.URY);
-                quadPoints[offset + 1] = new Point(segment.Rectangle.URX, segment.Rectangle.URY);
-                quadPoints[offset + 2] = new Point(segment.Rectangle.LLX, segment.Rectangle.LLY);
-                quadPoints[offset + 3] = new Point(segment.Rectangle.URX, segment.Rectangle.LLY);
-                offset += 4;
-            }
-
-            var llx = quadPoints.Min(pt => pt.X);
-            var lly = quadPoints.Min(pt => pt.Y);
-            var urx = quadPoints.Max(pt => pt.X);
-            var ury = quadPoints.Max(pt => pt.Y);
-            return new HighlightAnnotation(page, new Rectangle(llx, lly, urx, ury))
-            {
-                Title = "Aspose User",
-                Color = color,
-                Modified = DateTime.Now,
-                QuadPoints = quadPoints
-            };
+    private static HighlightAnnotation HighLightTextFragment(Page page, TextFragment textFragment, Color color) {
+        HighlightAnnotation ha;
+        if (textFragment.getSegments().size() == 1) {
+            ha = new HighlightAnnotation(page, textFragment.getSegments().get_Item(1).getRectangle());
+            ha.setTitle("Aspose User");
+            ha.setColor(color);
+            ha.setModified(new Date());
+            Rectangle rect = textFragment.getSegments().get_Item(1).getRectangle();
+            ha.setQuadPoints(
+                    new Point[] { new Point(rect.getLLX(), rect.getURY()), new Point(rect.getURX(), rect.getURY()),
+                            new Point(rect.getLLX(), rect.getLLY()), new Point(rect.getURX(), rect.getLLY()) });
+            return ha;
         }
 
-        /// <summary>
-        /// How to get a Highlighted Text
-        /// </summary>
-        public static void GetHighlightedText()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var highlightAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Highlight)
-                .Cast<HighlightAnnotation>();
-            foreach (var ta in highlightAnnotations)
-            {
-                Console.WriteLine($"[{ta.GetMarkedText()}]");
-            }
+        int offset = 0;
+        Point[] quadPoints = new Point[textFragment.getSegments().size() * 4];
+        for (TextSegment segment : textFragment.getSegments()) {
+            Rectangle r = segment.getRectangle();
+            quadPoints[offset + 0] = new Point(r.getLLX(), r.getURY());
+            quadPoints[offset + 1] = new Point(r.getURX(), r.getURY());
+            quadPoints[offset + 2] = new Point(r.getLLX(), r.getLLY());
+            quadPoints[offset + 3] = new Point(r.getURX(), r.getLLY());
+            offset += 4;
         }
+
+        double llx = quadPoints[0].getX();
+        double lly = quadPoints[0].getY();
+        double urx = quadPoints[0].getX();
+        double ury = quadPoints[0].getY();
+        for (Point pt : quadPoints) {
+            if (llx > pt.getX())
+                llx = pt.getX();
+            if (lly > pt.getY())
+                lly = pt.getY();
+            if (urx < pt.getX())
+                urx = pt.getX();
+            if (ury < pt.getY())
+                ury = pt.getY();
+        }
+        ha = new HighlightAnnotation(page, new Rectangle(llx, lly, urx, ury));
+        ha.setTitle("Aspose User");
+        ha.setColor(color);
+        ha.setModified(new Date());
+        ha.setQuadPoints(quadPoints);
+        return ha;
+    }
+
+    /// <summary>
+    /// How to get a Highlighted Text
+    /// </summary>
+    public static void GetHighlightedText() {
+        // Load the PDF file
+        Document document = new Document(_dataDir + "sample_mod.pdf");
+        Page page = document.getPages().get_Item(1);
+
+        AnnotationSelector annotationSelector1 = new AnnotationSelector(
+                new HighlightAnnotation(page, Rectangle.getTrivial()));
+        page.accept(annotationSelector1);
+        List<Annotation> highlightAnnotations = annotationSelector1.getSelected();
+        for (Annotation ta : highlightAnnotations) {
+            System.out.println("[" + ((HighlightAnnotation) ta).getMarkedText() + "]");
+        }
+    }    
 ```
 ## Get Text Markup Annotation 
 
 Please try using the following code snippet to Get Text Markup Annotation from PDF document.
 
-```csharp        
-        public static void GetTextMarkupAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var textMarkupAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Highlight
-                || a.AnnotationType == AnnotationType.Squiggly)
-                .Cast<TextMarkupAnnotation>();
-            foreach (var ta in textMarkupAnnotations)
-            {
-                Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
-            }
+```java    
+     public static void GetTextMarkupAnnotation() {
+        // Load the PDF file
+        Document document = new Document(_dataDir + "sample_mod.pdf");
+        Page page = document.getPages().get_Item(1);
+
+        AnnotationSelector annotationSelector1 = new AnnotationSelector(
+                new HighlightAnnotation(page, Rectangle.getTrivial()));
+        page.accept(annotationSelector1);
+        AnnotationSelector annotationSelector2 = new AnnotationSelector(
+                new SquigglyAnnotation(page, Rectangle.getTrivial()));
+        page.accept(annotationSelector2);
+
+        List<Annotation> textMarkupAnnotations = annotationSelector1.getSelected();
+        textMarkupAnnotations.addAll(annotationSelector2.getSelected());
+
+        // print results
+        for (Annotation ta : textMarkupAnnotations) {
+            System.out.printf("[" + ta.getAnnotationType() + ta.getRect() + "]");
         }
+    }
 ```
 ## Delete Text Markup Annotation
 
 The following code snippet shows how to Delete Text Markup Annotation from PDF file.
 
 ```csharp
-        public static void DeleteTextMarkupAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var textMarkupAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Highlight
-                || a.AnnotationType == AnnotationType.Squiggly)
-                .Cast<TextMarkupAnnotation>();
-            foreach (var ta in textMarkupAnnotations)
-            {
-                document.Pages[1].Annotations.Delete(ta);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_del.pdf"));
+    public static void DeleteTextMarkupAnnotation() {
+        // Load the PDF file
+        Document document = new Document(_dataDir + "sample_mod.pdf");
+        Page page = document.getPages().get_Item(1);
+
+        AnnotationSelector annotationSelector1 = new AnnotationSelector(
+                new HighlightAnnotation(page, Rectangle.getTrivial()));
+        page.accept(annotationSelector1);
+        AnnotationSelector annotationSelector2 = new AnnotationSelector(
+                new SquigglyAnnotation(page, Rectangle.getTrivial()));
+        page.accept(annotationSelector2);
+
+        List<Annotation> textMarkupAnnotations = annotationSelector1.getSelected();
+        textMarkupAnnotations.addAll(annotationSelector2.getSelected());
+
+        // print results
+        for (Annotation ta : textMarkupAnnotations) {
+            page.getAnnotations().delete(ta);
         }
+        document.save(_dataDir + "sample_del.pdf");
     }
-}
+}       
 ```
