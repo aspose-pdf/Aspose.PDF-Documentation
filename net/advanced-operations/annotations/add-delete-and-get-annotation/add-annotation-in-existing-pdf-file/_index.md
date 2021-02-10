@@ -1,6 +1,6 @@
 ---
-title: PDF Annotation in existing PDF file
-linktitle: PDF Annotation in existing PDF file
+title: PDF Text Annotation
+linktitle: PDF Text Annotation
 type: docs
 weight: 10
 url: /net/pdf-annotation-in-existing-pdf-file/

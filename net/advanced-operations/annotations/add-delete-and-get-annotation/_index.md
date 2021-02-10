@@ -12,7 +12,7 @@ sitemap:
 ---
 
 - [PDF Annotation in existing PDF file](/pdf/net/pdf-annotation-in-existing-pdf-file/)
-- [PDF Free ext Annotation](/pdf/net/free-text-annotation/)
+- [PDF Free text Annotation](/pdf/net/free-text-annotation/)
 - [PDF Link Annotation](/pdf/net/link-annotation/)
 - [PDF Line Annotation](/pdf/net/line-annotation/)
 - [PDF Square and Circle Annotations](/pdf/net/square-and-circle-annotations/)

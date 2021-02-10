@@ -1,6 +1,6 @@
 ---
 title: PDF Text Markup Annotation 
-linktitle: Add Text Markup Annotation
+linktitle: Text Markup Annotation
 type: docs
 weight: 70
 url: /net/text-markup-annotation/
