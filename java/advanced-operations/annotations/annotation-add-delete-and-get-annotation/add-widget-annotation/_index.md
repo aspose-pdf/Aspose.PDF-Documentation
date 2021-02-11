@@ -3,15 +3,15 @@ title: PDF Widget Annotation
 linktitle: Widget Annotation
 type: docs
 weight: 80
-url: /net/widget-annotation/
-description: This article describes how to add controls based on awidget annotations to PDF documents with Aspose.PDF for .NET. 
-lastmod: "2021-01-13"
+url: /java/widget-annotation/
+description: This article describes how to add controls based on a widget annotations to PDF documents with Aspose.PDF for Java. 
+lastmod: "2021-02-11"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Interactive forms use [Widget Annotations](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) to represent the appearance of fields and to manage user interactions.
+Interactive forms use [Widget Annotations](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/WidgetAnnotation) to represent the appearance of fields and to manage user interactions.
 We use these form elements that add to a PDF to make it easier to enter, submit information, or perform some other user interactions.
 
 Widget Annotations are a graphical representation of a form field on specific pages, so we cannot create it directly as an annotation.
@@ -28,28 +28,40 @@ In this sample, we will learn how to add the push-buttons for navigation in the 
 
 ## Add Button to the Document
 
-```csharp
-document = new Document();
-var page = document.Pages.Add();
-var rect = new Rectangle(72, 748, 164, 768);
-var printButton = new ButtonField(page, rect)
-{
-    AlternateName = "Print current document",
-    Color = Color.Black,
-    PartialName = "printBtn1",
-    NormalCaption = "Print Document"
-};
-var border = new Border(printButton)
-{
-    Style = BorderStyle.Solid,
-    Width = 2
-};
-printButton.Border = border;
-printButton.Characteristics.Border =
-    System.Drawing.Color.FromArgb(255, 0, 0, 255);
-printButton.Characteristics.Background =  
-    System.Drawing.Color.FromArgb(255, 0, 191, 255);
-document.Form.Add(printButton);
+```java
+package com.aspose.pdf.examples;
+
+import com.aspose.pdf.*;
+import java.util.*;
+
+public class ExampleWidgetAnnotation {
+    
+    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+
+    public static void AddButton()
+    {
+        // Load the PDF file
+        Document document = new Document(_dataDir + "sample.pdf");
+        Page page = document.getPages().get_Item(1);
+       
+        Rectangle rect = new Rectangle(72, 748, 164, 768);
+        ButtonField printButton = new ButtonField(page, rect);
+        printButton.setAlternateName("Print current document");
+        printButton.setColor(Color.getBlack());
+        printButton.setPartialName("printBtn1");
+        printButton.setNormalCaption("Print Document");
+
+        Border border = new Border(printButton);
+        border.setStyle(BorderStyle.Solid);
+        border.setWidth(2);
+        
+        printButton.setBorder(border);
+        printButton.getCharacteristics().setBorder(Color.fromArgb(255, 0, 0, 255));
+        printButton.getCharacteristics().setBackground(Color.fromArgb(255, 0, 191, 255));
+        document.getForm().add(printButton);
+
+        document.save(_dataDir + "sample_textannot.pdf");
+    }
 ```
 
 This button has border and set a background. Also we set a button name (Name), a tooltip (AlternateName), a label (NormalCaption), and a color of the label text (Color).

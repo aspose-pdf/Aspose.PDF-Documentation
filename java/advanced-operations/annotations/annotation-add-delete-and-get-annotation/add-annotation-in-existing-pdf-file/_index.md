@@ -3,9 +3,9 @@ title: PDF Annotation in existing PDF file
 linktitle: PDF Annotation in existing PDF file
 type: docs
 weight: 10
-url: /net/pdf-annotation-in-existing-pdf-file/
+url: /java/pdf-annotation-in-existing-pdf-file/
 description: This page describes how to add an annotation in an existing PDF file. Also, you may delete all or particular annotations from a page of a PDF file.
-lastmod: "2021-01-13"
+lastmod: "2021-02-11"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,11 +15,11 @@ Add, Delete, and Get Annotation are similar for different kinds of annotations. 
 
 ## How to add Text Annotation into existing PDF file
 
-A Text Annotation is an annotation attached to a specific location in a PDF document. When closed, the annotation is displayed as an icon; when opened, it should display a pop-up window containing the note text in the font and size chosen by the reader.
+The text tool lets you add text anywhere in the document. A Text Annotation is an annotation attached to a specific location in a PDF document. When closed, the annotation is displayed as an icon; when opened, it should display a pop-up window containing the note text in the font and size chosen by the reader.
 
-Annotations are contained by the [Annotations](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations) collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection.
+Annotations are contained by the [Annotations](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/AnnotationCollection) collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection.
 
-To add an annotation to a particular page, add it to that page’s Annotations collection with the [Add](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add) method.
+To add an annotation to a particular page, add it to that page’s Annotations collection with the Add method.
 
 1. First, create an annotation that you want to add to the PDF.
 1. Then open the input PDF.
