@@ -26,7 +26,7 @@ To add an annotation to a particular page, add it to that page’s Annotations c
 
 The following code snippet shows you how to add an annotation in a PDF page.
 
-```java
+```csharp
 private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
 
 public static void AddTextAnnotation()

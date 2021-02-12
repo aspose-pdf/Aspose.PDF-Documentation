@@ -1,11 +1,11 @@
 ---
-title: Import and Export Annotations to XFDF format using Aspose.PDF for .NET
+title: Import and Export Annotations to XFDF format using Aspose.PDF for Java
 linktitle: Import and Export Annotations to XFDF format
 type: docs
 weight: 40
-url: /net/import-export-xfdf/
-description: You may import and export annotation with XFDF format with C# and Aspose.PDF for .NET library. 
-lastmod: "2020-12-16"
+url: /java/import-export-xfdf/
+description: You may import and export annotation with XFDF format using Aspose.PDF for Java library. 
+lastmod: "2021-02-12"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,9 +17,9 @@ XFDF stand for XML Forms Data Format. It is an XML based file format. This file 
 
 {{% /alert %}}
 
-**Aspose.PDF for .NET** is a feature rich component when it comes to editing the PDF documents. As we know XFDF is an important aspect of PDF forms manipulation, Aspose.Pdf.Facades namespace in Aspose.PDF for .NET has considered this very well, and have provided methods to import and export annotations data to XFDF files.
+**Aspose.PDF for Java** is a feature rich component when it comes to editing the PDF documents. As we know XFDF is an important aspect of PDF forms manipulation, Aspose.Pdf.Facades namespace in Aspose.PDF for .NET has considered this very well, and have provided methods to import and export annotations data to XFDF files.
 
-[PDFAnnotationEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfannotationeditor) class contains two methods to work with import and export of annotations to XFDF file. [ExportAnnotationsXfdf](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) method provides the functionality to export annotations from a PDF document to XFDF file, while [ImportAnnotationFromXfdf](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) method allows you to import annotations from an existing XFDF file. In order to import or export annotations we need to specify the annotation types. We can specify these types in the form of an enumeration and then pass this enumeration as an argument to any of these methods. This way, the annotations of the specified types will only be imported or exported to an XFDF file.
+[PDFAnnotationEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor) class contains two methods to work with import and export of annotations to XFDF file. [ExportAnnotationsXfdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor) method provides the functionality to export annotations from a PDF document to XFDF file, while [ImportAnnotationFromXfdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor) method allows you to import annotations from an existing XFDF file. In order to import or export annotations we need to specify the annotation types. We can specify these types in the form of an enumeration and then pass this enumeration as an argument to any of these methods. This way, the annotations of the specified types will only be imported or exported to an XFDF file.
 
 The following code snippet shows you how to export annotations to an XFDF file:
 

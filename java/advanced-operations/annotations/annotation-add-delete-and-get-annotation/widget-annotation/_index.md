@@ -72,64 +72,65 @@ Exist more complex example of the Widget Annotations usage - document navigation
   
 This example shows how to create 4 buttons:
 
-```csharp
-var document = new Document(@"C:\\tmp\\JSON Fundamenals.pdf");
-var buttons = new ButtonField[4];
-var alternateNames = new[] { "Go to first page", "Go to prev page", "Go to next page", "Go to last page" };
-var normalCaptions = new[] { "First", "Prev", "Next", "Last" };
-PredefinedAction[] actions = {
-PredefinedAction.FirstPage,
-PredefinedAction.PrevPage,
-PredefinedAction.NextPage,
+```java
+public static void AddDocumentNavigationActions() {
+// Load the PDF file
+Document document = new Document(_dataDir + "JSON Fundamenals.pdf");
+
+ButtonField[] buttons = new ButtonField[4];
+String[] alternateNames = { "Go to first page", "Go to prev page", "Go to next page", "Go to last page" };
+String[] normalCaptions = { "First", "Prev", "Next", "Last" };
+int[] actions = { PredefinedAction.FirstPage, PredefinedAction.PrevPage, PredefinedAction.NextPage,
 PredefinedAction.LastPage };
-var clrBorder = System.Drawing.Color.FromArgb(255, 0, 255, 0);
-var clrBackGround = System.Drawing.Color.FromArgb(255, 0, 96, 70);
-```
+Color clrBorder = Color.fromArgb(255, 0, 255, 0);
+Color clrBackGround = Color.fromArgb(255, 0, 96, 70);
 
-We should create the buttons without attaching them to the page.
+for (int i = 0; i < 4; i++) {
+buttons[i] = new ButtonField(document, new Rectangle(32 + i * 80, 28, 104 + i * 80, 68));
+buttons[i].setAlternateName(alternateNames[i]);
+buttons[i].setColor(Color.getWhite());
+buttons[i].setNormalCaption(normalCaptions[i]);
+buttons[i].setOnActivated(new NamedAction(actions[i]));
+Border border = new Border(buttons[i]);
+border.setStyle(BorderStyle.Solid);
+border.setWidth(2);
+buttons[i].setBorder(border);
+buttons[i].getCharacteristics().setBorder(clrBorder);
+buttons[i].getCharacteristics().setBackground(clrBackGround);
+}
 
-```csharp
-for (var i = 0; i < 4; i++)
-{
-    buttons[i] = new ButtonField(document,
-           new Rectangle(32 + i * 80, 28, 104 + i * 80, 68))
-    {
-       AlternateName = alternateNames[i],
-       Color = Color.White,
-       NormalCaption = normalCaptions[i],
-       OnActivated = new NamedAction(actions[i])
-    };
-    buttons[i].Border = new Border(buttons[i])
-    {
-       Style = BorderStyle.Solid,
-       Width = 2
-    };
-    buttons[i].Characteristics.Border = clrBorder;
-    buttons[i].Characteristics.Background = clrBackGround;
+for (int pageIndex = 1; pageIndex <= 1; pageIndex++)
+for (int i = 0; i < 4; i++)
+document.getForm().add(buttons[i], "btn" + pageIndex + "_" + (i + 1), pageIndex);
+
+document.getForm().get("btn1_1").setReadOnly(true);
+document.getForm().get("btn1_2").setReadOnly(true);
+
+document.getForm().get("btn" + document.getPages().size() + "_3").setReadOnly(true);
+document.getForm().get("btn" + document.getPages().size() + "_4").setReadOnly(true);
+document.save(_dataDir + "sample_widgetannot_2.pdf");
 }
 ```
+## How to delete Widget Annotation 
 
-We should duplicate this array of buttons on each page in the document.
+Aspose.PDF for Java has rules for removing annotations from your file:
 
-```csharp
-for (var pageIndex = 1; pageIndex <= document.Pages.Count;
-                                                        pageIndex++)
-    for (var i = 0; i < 4; i++)
-        document.Form.Add(buttons[i], 
-          $"btn{pageIndex}_{i + 1}", pageIndex);
- 
+```java
+public static void DeleteWidgetAnnotation() {
+        // Load the PDF file
+        Document document = new Document(_dataDir + "sample_textannot.pdf");
+
+        // Filter annotations using AnnotationSelector
+        Page page = document.getPages().get_Item(1);
+        AnnotationSelector annotationSelector = new AnnotationSelector(new ButtonField(page, Rectangle.getTrivial()));
+        page.accept(annotationSelector);
+        List<Annotation> buttonFields = annotationSelector.getSelected();
+
+        // delete annotations
+        for (Annotation wa : buttonFields) {
+            page.getAnnotations().delete(wa);
+        }
+        document.save(_dataDir + "sample_widgetannot_del.pdf");
+    }
+}
 ```
-
-We call [Form.Add method](https://apireference.aspose.com/pdf/net/aspose.pdf.forms.form/add/methods/2) with the following parameters: field, name, and the index of the pages that this field will be added to.
-
-And to get the full result, we need disable the “First” and “Prev” buttons on the first page and the “Next” and “Last” buttons on the last page.
-
-```csharp
-document.Form["btn1_1"].ReadOnly = true;
-document.Form["btn1_2"].ReadOnly = true;
-
-document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
-document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
-```
-
-For more detailed information and possibilities of this features see also the [Working with Forms](/pdf/net/acroforms//).
