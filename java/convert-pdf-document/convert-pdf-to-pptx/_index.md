@@ -102,6 +102,43 @@ The following code snippet shows the process for converting PDF files into PPTX 
     
 }
 ```
+## Show Progress On Console with Aspose.PDF for Java looks like this:
+
+```java
+package com.aspose.pdf.examples;
+
+import java.time.LocalDateTime;
+
+import com.aspose.pdf.ProgressEventType;
+import com.aspose.pdf.UnifiedSaveOptions.ConversionProgressEventHandler;
+import com.aspose.pdf.UnifiedSaveOptions.ProgressEventHandlerInfo;
+
+class ShowProgressOnConsole extends ConversionProgressEventHandler{
+
+    @Override
+    public void invoke(ProgressEventHandlerInfo eventInfo) {        
+        switch (eventInfo.EventType) {
+            case ProgressEventType.TotalProgress:
+                System.out.println(
+                        String.format("%s  - Conversion progress : %d %%.", LocalDateTime.now().toString(), eventInfo.Value));
+                break;
+            case ProgressEventType.ResultPageCreated:
+                System.out.println(String.format("%s  - Result page's %s of %d layout created.", LocalDateTime.now().toString(),
+                        eventInfo.Value, eventInfo.MaxValue));
+                break;
+            case ProgressEventType.ResultPageSaved:
+                System.out.println(String.format("%s  - Result page %d of %d exported.", LocalDateTime.now(), eventInfo.Value, eventInfo.MaxValue));
+                break;
+            case ProgressEventType.SourcePageAnalysed:
+                System.out.println(String.format("%s  - Source page %d of %d analyzed.", LocalDateTime.now(),  eventInfo.Value, eventInfo.MaxValue));
+                break;
+            default:
+                break;
+        }
+    }
+}
+```
+
 ## Progress Detail of PPTX Conversion
 
 Aspose.PDF for Java lets you track the progress of PDF to PPTX conversion. The [Aspose.Pdf.PptxSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) class provides [CustomProgressHandler](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlSaveOptions) property that can be specified to a custom method for tracking the progress of conversion as shown in the following code sample.
