@@ -28,7 +28,7 @@ This page contains release notes information for Aspose.PDF for Java 21.2.
 |PDFJAVA-39809|Exception- java.lang.OutOfMemoryError: Java heap space|Bug|
 |PDFJAVA-34814|PDF to HTML: Image background is changed|Bug|
 |PDFJAVA-39512|Does not set permissions to the document|Bug|
-|PDFJAVA-36487|PCL to PDF conversion issue|Bug|
+|PDFJAVA-39813|PDF to XLSX, columns shifted per pages|Bug|
 |PDFJAVA-37582|Input PDF - Error on removing Japanese characters|Bug|
 |PDFJAVA-37583|Input PDF - Error on removing Japanese characters|Bug|
 
