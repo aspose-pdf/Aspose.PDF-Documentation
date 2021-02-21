@@ -17,7 +17,7 @@ sitemap:
 Merging PDF in C# is not straightforward task without using 3rd party library.
 This article shows how to merge multiple PDF files into a single PDF document using Aspose.PDF for .NET. The example is written in C# but the API can be used in other .NET programming languages as well such as VB.NET. PDF files are merged such that the first one is joined at the end of the other document.
 
-## Merge PDF Files using C#
+## Merge PDF Files using C# and DOM
 
 {{% alert color="primary" %}}
 
@@ -51,3 +51,9 @@ dataDir = dataDir + "ConcatenatePdfFiles_out.pdf";
 // Save concatenated output file
 pdfDocument1.Save(dataDir);
 ```
+
+## See also
+
+- [Split PDF using DOM](https://docs.aspose.com/pdf/net/split-pdf-document/)
+- [Concatenate PDF documents using Facades](https://docs.aspose.com/pdf/net/concatenate-pdf-documents/)
+- [Split PDF using Facades](https://docs.aspose.com/pdf/net/split-pdf-pages/)

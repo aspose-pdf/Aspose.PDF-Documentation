@@ -1,11 +1,11 @@
----
+ ---
 title: Text Formatting inside PDF
 linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /net/text-formatting-inside-pdf/
 description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, adding a border around the added text, text alignment for floating box contents and etc.
-lastmod: "2020-12-23"
+lastmod: "2021-01-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,7 @@ sitemap:
 
 ## How to add Line Indent to PDF
 
-Aspose.PDF for .NET offers SubsequentLinesIndent property into TextFormattingOptions class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
+Aspose.PDF for .NET offers SubsequentLinesIndent property into [TextFormattingOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
 
 Please use the following code snippet to use the property:
 

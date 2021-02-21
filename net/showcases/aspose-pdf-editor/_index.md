@@ -75,6 +75,7 @@ We, at Aspose, make sure to provide best possible support to our customers / use
 Besides editing existing PDF documents, Html5 PDF Editor also supports creating new PDF files from scratch which you can do by using Create New File option from the menu bar. Using this feature, you may create a blank PDF in editor, add some text/images to it and save it in any desired format. In our next section, we will discuss the technical details behind this feature.
 
 ### How it works?
+
 **HTML - "Create New File" menu item is clicked on the page**
 
 When you click "Create New File" menu item, onNewFileClicked method is called in Editor.js file.

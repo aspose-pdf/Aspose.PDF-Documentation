@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /net/rotate-text-inside-pdf/
 description: Learn different ways to rotate text to PDF. Aspose.PDF allows you to rotate text to any angle, rotate text fragment or a whole paragraph.
-lastmod: "2020-12-16"
+lastmod: "2021-01-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,7 @@ sitemap:
 
 ## Rotate Text Inside PDF using Rotation Property
 
-By using the `Rotation` property of `TextFragment` Class, you can rotate text at various angles. The text rotation can be used in different scenarios of document generation. You can specify the rotation angle in degrees to rotate the text as per your requirement. Please check the following different scenarios, in which you can implement text rotation.
+By using the Rotation property of [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) Class, you can rotate text at various angles. The text rotation can be used in different scenarios of document generation. You can specify the rotation angle in degrees to rotate the text as per your requirement. Please check the following different scenarios, in which you can implement text rotation.
 
 ## Implement Rotation using TextFragment and TextBuilder
 
