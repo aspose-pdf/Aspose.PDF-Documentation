@@ -19,7 +19,6 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-
 The following code snippet shows how to use this functionality with Aspose.PDF for Java:
 
 ```java

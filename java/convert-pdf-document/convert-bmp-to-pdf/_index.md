@@ -34,10 +34,10 @@ public final class ConvertBMPtoPDF {
     private ConvertBMPtoPDF() {
     }
 
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
+    private static Path _dataDir = Paths.get("<set path to samples>");
 
     public static void main(String[] args) throws FileNotFoundException {
-		// Initialize document object
+        // Initialize document object
         Document document = new Document();
 
         Page page = document.getPages().add();        

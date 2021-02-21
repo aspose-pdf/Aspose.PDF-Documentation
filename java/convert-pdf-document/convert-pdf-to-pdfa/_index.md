@@ -60,11 +60,11 @@ public final class ConvertPDFtoPDFA {
         pdfDocument.save(_dataDir + "PDFToPDFA_out.pdf");
     }
 ```
+
 To perform validation only, use the following line of code:
 
 ```java
     public static void ValidatePDF_A_1B() {
-        // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
         
         // Open document
         Document pdfDocument = new Document(_dataDir + "ValidatePDFAStandard.pdf");
@@ -80,6 +80,7 @@ To perform validation only, use the following line of code:
         }
     }
 ```
+
 ## PDF to PDF/A_3b Conversion
 
 From [Aspose.PDF for Java 9.3.0](https://downloads.aspose.com/pdf/java), the API also supports converting PDF files to PDF/A_3b format.
@@ -97,6 +98,7 @@ From [Aspose.PDF for Java 9.3.0](https://downloads.aspose.com/pdf/java), the API
         pdfDocument.save(_dataDir + "PDFToPDFA_out.pdf");
     }
 ```
+
 ## PDF to PDF/A_3a Conversion
 
 From [Aspose.PDF for Java 10.6.0](https://downloads.aspose.com/pdf/java), the API also supports converting PDF files to PDF/A_3a format.
@@ -114,6 +116,7 @@ From [Aspose.PDF for Java 10.6.0](https://downloads.aspose.com/pdf/java), the AP
         pdfDocument.save(_dataDir + "PDFToPDFA_out.pdf");
     }
 ```
+
 ## PDF to PDF/A_2a Conversion
 
 Starting release of [Aspose.PDF for Java 10.2.0](https://downloads.aspose.com/pdf/java), the API offers the feature to convert PDF files to PDF/A3 format.
@@ -131,6 +134,7 @@ Starting release of [Aspose.PDF for Java 10.2.0](https://downloads.aspose.com/pd
         pdfDocument.save(_dataDir + "PDFToPDFA_out.pdf");
     }
 ```
+
 ## PDF to PDF/A_3U Conversion
 
 Starting release of Aspose.PDF for Java 17.2.0, the API offers the feature to convert PDF files to PDF/A_3U format.
