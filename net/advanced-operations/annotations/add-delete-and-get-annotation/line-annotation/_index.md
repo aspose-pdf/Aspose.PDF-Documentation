@@ -1,5 +1,5 @@
 ---
-title: PDF Line Annotation
+title: PDF Line Annotation | C#
 linktitle: Line Annotation
 type: docs
 weight: 40

@@ -1,5 +1,5 @@
 ---
-title: Working with Attachments
+title: Working with Attachments in PDF using C#
 linktitle: Working with Attachments
 type: docs
 weight: 130
@@ -13,7 +13,7 @@ description: Use C# PDF API to access, add and remove attachments in PDF files u
 aliases:
     - /net/working-with-attachments/
     - /net/working-with-attachments-facades/
-lastmod: "2020-12-16"
+lastmod: "2021-02-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

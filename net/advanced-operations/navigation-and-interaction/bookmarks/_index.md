@@ -1,5 +1,5 @@
 ---
-title: Working with Bookmarks in PDF
+title: Working with Bookmarks in PDF | C#
 linktitle: Working with Bookmarks
 type: docs
 weight: 30
@@ -8,7 +8,7 @@ description: This section explain how to add, delete and get bookmark with Aspos
 aliases:
     - /net/working-with-bookmarks/
     - /net/working-with-bookmarks-facades/
-lastmod: "2020-12-16"
+lastmod: "2021-02-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

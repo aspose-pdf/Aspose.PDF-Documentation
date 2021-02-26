@@ -1,5 +1,5 @@
 ---
-title: Working with Text
+title: Working with Text in PDF | C#
 linktitle: Working with Text 
 type: docs
 weight: 30
