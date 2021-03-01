@@ -3,12 +3,11 @@ title: Working with Bookmarks
 type: docs
 weight: 40
 url: /java/working-with-bookmarks/
+lastmod: "2020-12-16"
 ---
 
 ## **This section includes the following topics**: 
 
-lastmod: "2020-12-16"
-----------------------------------------------
 - [Add a Bookmark to a PDF Document](/pdf/java/add-a-bookmark-to-a-pdf-document/)
 - [Add a Child Bookmark to a PDF Document](/pdf/java/add-a-child-bookmark-to-a-pdf-document/)
 - [Delete Bookmarks from PDF Document](/pdf/java/delete-bookmarks-from-pdf-document/)

@@ -1,9 +1,9 @@
 ---
-title: Create Tagged PDF 
+title: Create Tagged PDF | C# 
 linktitle: Create Tagged PDF  
 type: docs
 weight: 10
-lastmod: "2020-12-23"
+lastmod: "2021-02-26"
 url: /net/create-tagged-pdf/
 description: This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for .NET. 
 sitemap:

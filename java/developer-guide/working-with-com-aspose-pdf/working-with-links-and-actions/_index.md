@@ -3,12 +3,11 @@ title: Working with Links and Actions
 type: docs
 weight: 60
 url: /java/working-with-links-and-actions/
+lastmod: "2020-12-16"
 ---
 
 ## **This section includes the following topics**: 
 
-lastmod: "2020-12-16"
-----------------------------------------------
 - [Add Hyperlink in a PDF file](/pdf/java/add-hyperlink-in-a-pdf-file/)
 - [Remove Document Open Action from a PDF file](/pdf/java/remove-document-open-action-from-a-pdf-file/)
 - [Get PDF Hyperlink Destination - URL](/pdf/java/get-pdf-hyperlink-destination-url/)
