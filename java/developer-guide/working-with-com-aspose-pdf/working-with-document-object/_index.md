@@ -3,11 +3,11 @@ title: Working with Document Object
 type: docs
 weight: 10
 url: /java/working-with-document-object/
+lastmod: "2020-12-16"
 ---
 
 **This section includes the following topics:**
-lastmod: "2020-12-16"
-----------------------------------------------
+
 - [Create Document](/pdf/java/create-document/)
 - [PDF File Metadata](/pdf/java/pdf-file-metadata/)
 - [Formatting PDF Document](/pdf/java/formatting-pdf-document/)
