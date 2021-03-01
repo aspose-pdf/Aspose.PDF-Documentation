@@ -3,12 +3,11 @@ title: Working with Annotations
 type: docs
 weight: 50
 url: /java/working-with-annotations/
+lastmod: "2020-12-16"
 ---
 
 ## **This section includes the following topic**: 
 
-lastmod: "2020-12-16"
-----------------------------------------------
 - [Add Annotation to PDF](/pdf/java/add-annotation-to-pdf/)
 - [Adding RichMediaAnnotation](/pdf/java/adding-richmediaannotation/)
 - [Redact certain page region with RedactionAnnotation](/pdf/java/redact-certain-page-region-with-redactionannotation/)

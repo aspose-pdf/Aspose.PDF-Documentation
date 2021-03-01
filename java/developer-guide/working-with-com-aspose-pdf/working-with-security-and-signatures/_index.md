@@ -3,12 +3,11 @@ title: Working with Security and Signatures
 type: docs
 weight: 70
 url: /java/working-with-security-and-signatures/
+lastmod: "2020-12-16"
 ---
 
 ## **This section includes the following topics**: 
 
-lastmod: "2020-12-16"
-----------------------------------------------
 - [Encrypt PDF document using Encryption Types](/pdf/java/encrypt-pdf-document-using-encryption-types/)
 - [Decrypt PDF file using Owner Password](/pdf/java/decrypt-pdf-file-using-owner-password/)
 - [Add Digital Signature to PDF file](/pdf/java/add-digital-signature-to-pdf-file/)

@@ -1,5 +1,5 @@
 ---
-title: PDF Annotations 
+title: PDF Annotations using C#
 linktitle: PDF Annotations
 type: docs
 weight: 100
@@ -9,7 +9,7 @@ aliases:
     - /net/working-with-annotations/
     - /net/annotation/
     - /net/working-with-annotations-facades/
-lastmod: "2021-01-29"    
+lastmod: "2021-02-26"    
 sitemap:
     changefreq: "weekly"
     priority: 0.7

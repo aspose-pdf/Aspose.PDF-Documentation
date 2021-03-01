@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: PDF Free Text Annotation to PDF in C#
-=======
-title: PDF Free Text Annotation
->>>>>>> master
+title: PDF Free Text Annotation | C#
 linktitle: Free Text Annotation
 type: docs
 weight: 30
@@ -131,8 +127,6 @@ dataDir = dataDir + "InvisibleAnnotation_out.pdf";
 // Save output file
 doc.Save(dataDir);
 ```
-<<<<<<< HEAD
-=======
 
 ## Set Formatting of FreeTextAnnotation
 
@@ -176,4 +170,3 @@ The following code snippet shows how to search for a particular TextFragment and
 This feature is supported by version 19.6 or greater.
 
 {{% /alert %}} 
->>>>>>> master

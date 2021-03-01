@@ -1,10 +1,10 @@
 ---
-title: Optimize PDF 
+title: Optimize PDF | C#
 type: docs
 weight: 30
 url: /net/optimize-pdf/
 description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with C#.
-lastmod: "2020-12-22"
+lastmod: "2021-02-26"
 aliases: 
     - /net/changing-page-sizes-in-a-pdf-file/
 sitemap:
