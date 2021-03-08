@@ -1,11 +1,11 @@
 ---
-title: Add Text to PDF file
+title: Add Text to PDF file uisng Java
 linktitle: Add Text to PDF file
 type: docs
 weight: 10
 url: /java/add-text-to-pdf-file/
 description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
-lastmod: "2021-02-14"
+lastmod: "2021-03-01"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -22,110 +22,107 @@ To add text to existing PDF file:
 
 The following code snippet shows you how to add text in an existing PDF file.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```java
+public static void AddingText() {
+    // Load the PDF file
+    Document document = new Document(_dataDir + "sample.pdf");
 
-// Open document
-Document pdfDocument = new Document(dataDir + "input.pdf");
+    // get particular page
+    Page pdfPage = document.getPages().get_Item(1);
+    // create text fragment
+    TextFragment textFragment = new TextFragment("Aspose.PDF");
+    textFragment.setPosition(new Position(80, 700));
 
-// Get particular page
-Page pdfPage = (Page)pdfDocument.Pages[1];
+    // set text properties
+    textFragment.getTextState().setFont(FontRepository.findFont("Verdana"));
+    textFragment.getTextState().setFontSize(14);
+    textFragment.getTextState().setForegroundColor(Color.getBlue());
+    textFragment.getTextState().setBackgroundColor(Color.getLightGray());
 
-// Create text fragment
-TextFragment textFragment = new TextFragment("main text");
-textFragment.Position = new Position(100, 600);
+    // create TextBuilder object
+    TextBuilder textBuilder = new TextBuilder(pdfPage);
+    // append the text fragment to the PDF page
+    textBuilder.appendText(textFragment);
 
-// Set text properties
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray);
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Red);
-
-// Create TextBuilder object
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-
-// Append the text fragment to the PDF page
-textBuilder.AppendText(textFragment);
-
-dataDir = dataDir + "AddText_out.pdf";
-
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
+    // Save resulting PDF document.
+    document.save(_dataDir + "AddText_out.pdf");
+}
 ```
 
 ## Loading Font from Stream
 
 The following code snippet shows how to load Font from Stream object when adding text to PDF document.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-string fontFile = "";
+```java
+import com.aspose.pdf.*;
+import com.aspose.pdf.text.FontTypes;
 
-// Load input PDF file
-Document doc = new Document( dataDir + "input.pdf");
-// Create text builder object for first page of document
-TextBuilder textBuilder = new TextBuilder(doc.Pages[1]);
-// Create text fragment with sample string
-TextFragment textFragment = new TextFragment("Hello world");
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;  
+//...
+public static void LoadingFontFromStream() throws FileNotFoundException{
+    
+    String fontFile = "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf";
 
-if (fontFile != "")
-{
-    // Load the TrueType font into stream object
-    using (FileStream fontStream = File.OpenRead(fontFile))
+    // Load input PDF file
+    Document doc = new Document(_dataDir + "input.pdf");
+    // Create text builder object for first page of document
+    TextBuilder textBuilder = new TextBuilder(doc.getPages().get_Item(1));
+    // Create text fragment with sample string
+    TextFragment textFragment = new TextFragment("Hello world");
+    
+    if (fontFile != "")
     {
+        // Load the TrueType font into stream object
+        FileInputStream fontStream=new FileInputStream(fontFile);            
         // Set the font name for text string
-        textFragment.TextState.Font = FontRepository.OpenFont(fontStream, FontTypes.TTF);
+        textFragment.getTextState().setFont (FontRepository.openFont(fontStream, FontTypes.TTF));
         // Specify the position for Text Fragment
-        textFragment.Position = new Position(10, 10);
+        textFragment.setPosition(new Position(10, 10));
         // Add the text to TextBuilder so that it can be placed over the PDF file
-        textBuilder.AppendText(textFragment);
-    }
-
-    dataDir = dataDir + "LoadingFontFromStream_out.pdf";
-
-    // Save resulting PDF document.
-    doc.Save(dataDir);
+        textBuilder.appendText(textFragment);
+        
+        _dataDir = _dataDir + "LoadingFontFromStream_out.pdf";
+    
+        // Save resulting PDF document.
+        doc.save(_dataDir); 
+    }       
 }
 ```
 
 ## Add Text using TextParagraph
 
-The following code snippet shows you how to add text in PDF document using [TextParagraph](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textparagraph) class.
+The following code snippet shows you how to add text in PDF document using [TextParagraph](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextParagraph) class.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Open document
-Document doc = new Document();
-// Add page to pages collection of Document object
-Page page = doc.Pages.Add();
-TextBuilder builder = new TextBuilder(page);
-// Create text paragraph
-TextParagraph paragraph = new TextParagraph();
-// Set subsequent lines indent
-paragraph.SubsequentLinesIndent = 20;
-// Specify the location to add TextParagraph
-paragraph.Rectangle = new Aspose.Pdf.Rectangle(100, 300, 200, 700);
-// Specify word wraping mode
-paragraph.FormattingOptions.WrapMode = TextFormattingOptions.WordWrapMode.ByWords;
-// Create text fragment
-TextFragment fragment1 = new TextFragment("the quick brown fox jumps over the lazy dog");
-fragment1.TextState.Font = FontRepository.FindFont("Times New Roman");
-fragment1.TextState.FontSize = 12;
-// Add fragment to paragraph
-paragraph.AppendLine(fragment1);
-// Add paragraph
-builder.AppendParagraph(paragraph);
+```java
+public static void AddTextUsingTextParagraph() {
+    // Open document
+    Document doc = new Document();
+    // Add page to pages collection of Document object
+    Page page = doc.getPages().add();
+    TextBuilder builder = new TextBuilder(page);
+    // Create text paragraph
+    TextParagraph paragraph = new TextParagraph();
+    // Set subsequent lines indent
+    paragraph.setSubsequentLinesIndent (20);
+    // Specify the location to add TextParagraph
+    paragraph.setRectangle(new Rectangle(100, 300, 200, 700));
+    // Specify word wraping mode
+    paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
+    // Create text fragment
+    TextFragment fragment1 = new TextFragment("the quick brown fox jumps over the lazy dog");
+    fragment1.getTextState().setFont (FontRepository.findFont("Times New Roman"));
+    fragment1.getTextState().setFontSize (12);
+    // Add fragment to paragraph
+    paragraph.appendLine(fragment1);
+    // Add paragraph
+    builder.appendParagraph(paragraph);
 
-dataDir = dataDir + "AddTextUsingTextParagraph_out.pdf";
+    _dataDir = _dataDir + "AddTextUsingTextParagraph_out.pdf";
 
-// Save resulting PDF document.
-doc.Save(dataDir);
+    // Save resulting PDF document.
+    doc.save(_dataDir);        
+}
 ```
 
 ## Add Hyperlink to TextSegment
@@ -812,30 +809,27 @@ if (fontFile != "")
 
 ## Get Text Width Dynamically
 
-Sometimes, it is required to get the text width dynamically. Aspose.PDF for .NET includes two methods for string width measurement. You can invoke the [MeasureString](https://apireference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) method of Aspose.Pdf.Text.Font or Aspose.Pdf.Text.TextState classes (or both). The code snippet below shows how to use this functionality.
+Sometimes, it is required to get the text width dynamically. Aspose.PDF for Java includes two methods for string width measurement. You can invoke the [MeasureString](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextState#measureString--) method of com.aspose.pdf.Font or com.aspose.pdf.TextState classes (or both). The code snippet below shows how to use this functionality.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```java
+public static void GetTextWidthDynamicaly() {
+    Font font = FontRepository.findFont("Arial");
+    TextState ts = new TextState();
+        ts.setFont(font);
+        ts.setFontSize(14);
+        if (Math.abs(font.measureString("A", 14) - 9.337) > 0.001)
+            System.out.println("Unexpected font string measure!");
 
-Aspose.Pdf.Text.Font font = FontRepository.FindFont("Arial");
-TextState ts = new TextState();
-ts.Font = font;
-ts.FontSize = 14;
+        if (Math.abs(ts.measureString("z") - 7.0) > 0.001)
+        System.out.println("Unexpected font string measure!");
 
-if (Math.Abs(font.MeasureString("A", 14) - 9.337) > 0.001)
-    Console.WriteLine("Unexpected font string measure!");
+        for (char c = 'A'; c <= 'z'; c++)
+        {
+            double fnMeasure = font.measureString(String.valueOf(c), 14);
+            double tsMeasure = ts.measureString(String.valueOf(c));
 
-if (Math.Abs(ts.MeasureString("z") - 7.0) > 0.001)
-    Console.WriteLine("Unexpected font string measure!");
-
-for (char c = 'A'; c <= 'z'; c++)
-{
-    double fnMeasure = font.MeasureString(c.ToString(), 14);
-    double tsMeasure = ts.MeasureString(c.ToString());
-
-    if (Math.Abs(fnMeasure - tsMeasure) > 0.001)
-        Console.WriteLine("Font and state string measuring doesn't match!");
+            if (Math.abs(fnMeasure - tsMeasure) > 0.001)
+                System.out.println("Font and state string measuring doesn't match!");
+        }
 }
 ```
