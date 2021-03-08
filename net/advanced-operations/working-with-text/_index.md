@@ -15,10 +15,11 @@ sitemap:
  
  You are able to do the following:
 
-- [Add Text to PDF file](/pdf/net/add-text-to-pdf-file/) - add text to your pdf and also download fonts, add html string, add hyperlink and etc.
-- [PDF Tooltip](/pdf/net/pdf-tooltip/) - you may add tooltip to searched text by adding invisible button using C#.
-- [Text Formatting inside PDF](/pdf/net/text-formatting-inside-pdf/) - a lot of features you can add to your document when formatting the text inside it. Add line indent, add text border, add underline text, add newline feed with Aspose.PDF library.
-- [Replace Text in PDF](/pdf/net/replace-text-in-pdf/) - in order to replace text in all the pages of a PDF document, you first need to use TextFragmentAbsorber.
+- [Add Text to PDF file](/pdf/net/add-text-to-pdf-file/) - add text to your PDF, use fonts from strem and files, add HTML string, add a hyperlink, etc.
+- [PDF Tooltip](/pdf/net/pdf-tooltip/) -  you may add a tooltip to searched text by adding an invisible button using C#.
+- [Text Formatting inside PDF](/pdf/net/text-formatting-inside-pdf/) - Many features you can add to your document when formatting the text inside it. Add line indent, add text border, add underline text, add newline feed with Aspose.PDF library.
+- [Replace Text in PDF](/pdf/net/replace-text-in-pdf/) -  to replace text in all the pages of a PDF document. You first need to use TextFragmentAbsorber.
 - [Rotate Text Inside PDF](/pdf/net/rotate-text-inside-pdf/) - rotate text inside PDF using rotation property of TextFragment Class.
-- [Search and Get Text from Pages of PDF Document](/pdf/net/search-and-get-text-from-pdf/) - you can use TextFragmentAbsorber class for searching ang getting text from pages.
-- [Determine Line Break](/pdf/net/determine-line-break/) - this topic explane how to track line breaking of Multi-Line TextFragment.
+- [Search and Get Text from Pages of PDF Document](/pdf/net/search-and-get-text-from-pdf/) - you can use TextFragmentAbsorber class for searching and getting a text from pages.
+- [Determine Line Break](/pdf/net/determine-line-break/) - this topic explains how to track line breaking of Multi-Line TextFragment.
+
