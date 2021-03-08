@@ -32,5 +32,4 @@ You are able to do the following:
 - [Split PDF](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications. 
 - [Concatenate PDF files in folder](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - concatenate all PDF files in Particular folder using PdfFileEditor class.
 - [Concatenate multiple PDF files using MemoryStreams](/pdf/net/concatenate-multiple-pdf-files-using-memorystreams/) - you will learn how to concatenate multiple PDF files using MemoryStreams with C#.
-- [How to merge PDF files using .NET 5 Windows Forms](pdf/net/how-to-concatenate-pdf-files-in-different-ways/) - you can concatenate multiple PDF Documents into a Single PDF Document with the help of Aspose.PDF for .NET.
 - [Working with Headings](/pdf/net/working-with-headings/) - you can create numbering in heading your PDF document with C#.
