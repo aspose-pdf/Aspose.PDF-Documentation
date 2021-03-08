@@ -26,13 +26,14 @@ lastmod: "2020-12-16"
 |PDFJAVA-36002|PDF to PDF/A - Resultant file is not compliant|Bug|
 |PDFJAVA-36291|Chinese Locale throws ExceptionInInitializerError exception|Bug|
 |PDFNEWJAVA-34972|flatten() method throws NPE|Bug|
+
 ### **Public API Changes in Aspose.PDF for Java 16.11.0**
 Changes in class **com.aspose.pdf.Annotation:** 
 Added method:
 
 com.aspose.pdf.Annotation.getRectangle(boolean)
 
-Changes in class c**om.aspose.pdf.ImageDevice** and all the child classes(BmpDevice, EmfDevice, GifDevice, JpegDevice, PngDevice) recieved the methods:
+Changes in class **com.aspose.pdf.ImageDevice** and all the child classes(BmpDevice, EmfDevice, GifDevice, JpegDevice, PngDevice) recieved the methods:
 Added methods:
 
 com.aspose.pdf.devices.ImageDevice.getCropRectangle()

@@ -166,11 +166,12 @@ If you want to highlight a multi-line fragment you should use advanced example:
         }
     }    
 ```
+
 ## Get Text Markup Annotation 
 
 Please try using the following code snippet to Get Text Markup Annotation from PDF document.
 
-```java    
+```java
      public static void GetTextMarkupAnnotation() {
         // Load the PDF file
         Document document = new Document(_dataDir + "sample_mod.pdf");
@@ -192,6 +193,7 @@ Please try using the following code snippet to Get Text Markup Annotation from P
         }
     }
 ```
+
 ## Delete Text Markup Annotation
 
 The following code snippet shows how to Delete Text Markup Annotation from PDF file.
