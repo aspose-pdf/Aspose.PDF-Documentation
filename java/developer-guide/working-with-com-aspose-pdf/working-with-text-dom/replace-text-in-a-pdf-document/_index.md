@@ -6,26 +6,36 @@ url: /java/replace-text-in-a-pdf-document/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Replace Text in Pages of a PDF Document**
-### **Replacing Text**
+## Replace Text in Pages of a PDF Document
+
+### Replacing Text
+
 To replace text on all pages in a PDF document using [Aspose.PDF for Java](https://products.aspose.com/pdf/java):
 
 1. First use TextFragmentAbsorber to find the particular phrase to be replaced.
 1. Then, go through all TextFragments to replace the text and change any other attributes.
 1. Finally, save the output PDF using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's save method.
-### **Replace Text on All Pages**
+
+### Replace Text on All Pages
+
 The following code snippet shows how to replace text on all pages of PDF document.
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-NewDocumentObject-text-ReplaceTextInPagesOfPDFDocument-ReplaceTextOnAllPages.java" >}}
-### **Replace Text Using a Regular Expression**
+
+### Replace Text Using a Regular Expression
+
 The following code snippet shows how to replace text based on a regular expression.
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-AsposePdf-Text-ReplaceTextInPagesOfPDFDocument-ReplaceTextUsingRegularExpression.java" >}}
-### **Use Non-English (Japanese) Font When Replacing Text**
+
+### Use Non-English (Japanese) Font When Replacing Text
+
 The following code snippet shows how to replace text with Japanese characters. Please note that to add Japanese text, you need to use a font which supports Japanese characters (for example MSGothic).
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-NewDocumentObject-text-ReplaceTextInPagesOfPDFDocument-UseNonEnglishFontWhenReplacingText.java" >}}
-### **Search text strings and remove the contents between them**
+
+### Search text strings and remove the contents between them
+
 The feature to search text strings and remove the contents between them has become available since the release of Aspose.PDF for Java 4.2.1. Please try using the following code snippet to accomplish your requirement..
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-NewDocumentObject-text-ReplaceTextInPagesOfPDFDocument-SearchTextStringsAndRemoveTheContentsBetweenThem.java" >}}
@@ -33,7 +43,9 @@ The feature to search text strings and remove the contents between them has beco
 To search a text and replace it on a single page, specify the page index for the page you want:
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-AsposePdf-Text-ReplaceTextInPagesOfPDFDocument-Info.java" >}}
-## <ins>**Replace only first occurrence of the Phrase**
+
+## Replace only first occurrence of the Phrase
+
 Replacing the first or particular occurrence of a phrase is quite much similar replacing all the occurrences of the text. The only difference is that in order to replace first or some other particular occurrence, you need to specify the index of that phrase. You first need to use **TextFragmentAbsorber** to find the particular phrase you want to replace. After that, you need to get particular **TextFragment** using index, replace the text and change any other attributes. If you want to replace first occurrence, you can specify index as 1. Once you have done that, you only need to save the output PDF using **save(..)** method of the [**Document**](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object.
 
 The following code snippet shows you how to replace only first occurrence of the phrase on all pages of PDF file.
