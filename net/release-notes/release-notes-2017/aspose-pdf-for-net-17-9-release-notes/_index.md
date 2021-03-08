@@ -4,9 +4,13 @@ linktitle: Aspose.PDF for .NET 17.9
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-17-9-release-notes/
+lastmod: "2020-12-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-### **Improvements and Changes**
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -38,11 +42,9 @@ url: /net/aspose-pdf-for-net-17-9-release-notes/
 |PDFNET-42006|PDF to PPTX: white text is missing in resultant PPTX|Bug|
 |PDFNET-38683|PDF to PPTX - Layout issues in resultant file|Bug|
 |PDFNET-38623|PDF to PPTX: All images on a PDF page are being rendered as a single image in PPTX slide|Bug|
-### **Added APIs:**
-lastmod: "2020-12-16"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+
+## Added APIs:
+
 -----
 Method Aspose.PDF.Document.Check(System.Boolean)
 Method Aspose.PDF.DocumentFactory.CreateDocument
@@ -57,5 +59,7 @@ Property Aspose.PDF.PdfFormatConversionOptions.IccProfileFileName
 Property Aspose.PDF.PptxSaveOptions.SlidesAsImages  
 Property Aspose.PDF.PptxSaveOptions.SeparateImages  
 Property Aspose.PDF.RenderingOptions.InterpolationHighQuality  
-### **Removed APIs**
+
+## Removed APIs:
+
 Property Aspose.PDF.Table.ParentTable
