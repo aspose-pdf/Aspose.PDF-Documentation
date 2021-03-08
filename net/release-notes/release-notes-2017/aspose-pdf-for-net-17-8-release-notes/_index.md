@@ -4,6 +4,10 @@ linktitle: Aspose.PDF for .NET 17.8
 type: docs
 weight: 50
 url: /net/aspose-pdf-for-net-17-8-release-notes/
+lastmod: "2021-03-08"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 ---
 
 ### **Improvements and Changes**
@@ -35,18 +39,17 @@ url: /net/aspose-pdf-for-net-17-8-release-notes/
 |PDFNET-41683|PDF to JPEG - Double space between letters|Bug|
 |PDFNET-41845|PDF to BMP - Text appears overlapped in resultant image|Bug|
 |PDFNET-42582|Text overlapping occurred when converting PDF to PNG|Bug|
-### **Added APIs:**
-lastmod: "2020-12-16"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+
+## Added APIs:
+
 -----
-**Class Aspose.PDF.DocumentFactory**
+
+### Class Aspose.PDF.DocumentFactory
 
 Constructor Aspose.PDF.DocumentFactory
 Method Aspose.PDF.DocumentFactory.CreateDocument(System.IO.Stream,Aspose.PDF.LoadOptions)
 
-**Methods and Properties**
+### Methods and Properties
 
 Method Aspose.PDF.EmbeddedFileCollection.Add(System.String,Aspose.PDF.FileSpecification)
 Method Aspose.PDF.EmbeddedFileCollection.DeleteByKey(System.String)
