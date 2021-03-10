@@ -7,7 +7,7 @@ url: /net/working-with-text/
 description: This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF and C#.
 lastmod: "2021-03-08"
 sitemap:
-    changefreq: "montly"
+    changefreq: "monthly"
     priority: 0.7
 ---
  
