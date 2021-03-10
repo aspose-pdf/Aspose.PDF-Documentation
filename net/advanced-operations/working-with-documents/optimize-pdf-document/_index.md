@@ -1,5 +1,6 @@
 ---
-title: Optimize PDF | C#
+title: Optimize PDF using C#
+linktitle: Optimize PDF
 type: docs
 weight: 30
 url: /net/optimize-pdf/
@@ -8,7 +9,7 @@ lastmod: "2021-02-26"
 aliases: 
     - /net/changing-page-sizes-in-a-pdf-file/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
