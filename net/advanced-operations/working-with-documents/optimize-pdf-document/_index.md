@@ -61,7 +61,7 @@ pdfDocument.Save(dataDir);
 
 The [OptimizeResources()](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
 
-- Resources that are not used on the document pages are removed 
+- Resources that are not used on the document pages are removed
 - Equal resources are joined into one object
 - Unused objects are deleted
 
