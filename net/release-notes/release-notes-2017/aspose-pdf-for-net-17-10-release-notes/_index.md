@@ -4,9 +4,13 @@ linktitle: Aspose.PDF for .NET 17.10
 type: docs
 weight: 30
 url: /net/aspose-pdf-for-net-17-10-release-notes/
+lastmod: "2021-03-08"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 ---
 
-### **Improvements and Changes**
+## Improvements and Changes
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -29,12 +33,11 @@ url: /net/aspose-pdf-for-net-17-10-release-notes/
 |PDFNET-39490|Text Replace - Underline property does not work in text replace functional|Bug|
 |PDFNET-39639|Remove text underline in a PDF document|Bug|
 |PDFNET-42086|Problem setting XmpPdfAExtensionValueType|Bug|
-### **Public API changes in Aspose.PDF for .NET 17.10**
-### **Added APIs:**
-lastmod: "2020-12-16"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+
+## Public API changes in Aspose.PDF for .NET 17.10
+
+## Added APIs:
+
 -----
 Property Aspose.PDF.Document.Duplex
 Constant Aspose.PDF.Facades.ViewerPreference.Simplex

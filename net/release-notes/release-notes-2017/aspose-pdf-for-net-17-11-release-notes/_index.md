@@ -4,6 +4,10 @@ linktitle: Aspose.PDF for .NET 17.11
 type: docs
 weight: 20
 url: /net/aspose-pdf-for-net-17-11-release-notes/
+lastmod: "2021-03-08"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 ---
 
 ### **Improvements and Changes**
@@ -45,10 +49,7 @@ url: /net/aspose-pdf-for-net-17-11-release-notes/
 |PDFNET-43511|Text Justification as FullJustify is not working in FloatingBox|Bug|
 ### **Public API changes in Aspose.PDF for .NET 17.11**
 ### **Added APIs:**
-lastmod: "2020-12-16"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+
 -----
 Method Aspose.PDF.Annotations.Annotation.ToImage(System.Drawing.Imaging.ImageFormat)
 Class Aspose.PDF.Annotations.HideAction
