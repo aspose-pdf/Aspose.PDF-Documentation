@@ -5,18 +5,8 @@ type: docs
 weight: 30
 url: /java/manipulate-pdf-document/
 description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and how to determine the Progress of PDF file generation.
-lastmod: "2021-03-10"
+lastmod: "2021-03-11"
 ---
-
-## Converting non searchable PDF to searchable PDF document
-
-Aspose.PDF for Java provides the feature to create as well as manipulate existing PDF documents. When adding Text elements inside PDF file, the resultant PDF is searchable. However if we are converting an Image containing text to PDF file, the contents inside PDF are not searchable. However as a workaround, we can use OCR over the resultant file, so that it becomes searchable.
-
-This logic specified below recognizes text for PDF images. For recognition you may use [outer OCR supports HOCR standard](http://en.wikipedia.org/wiki/HOCR). For testing purposes, we have used a free [Google tesseract OCR](http://en.wikipedia.org/wiki/Tesseract_%28software%29). Therefore first you need to install [Tesseract-OCR](https://github.com/tesseract-ocr) on your system, and you will have tesseract console application.
-
-Following is complete code to accomplish this requirement.
-
-
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)
 
@@ -93,7 +83,12 @@ public static void AddTOCtoExistingPDF() {
     // Save the updated document
     document.save("TOC_Output_Java.pdf");
   }
+```
+### Set different TabLeaderType for different TOC Levels
 
+Aspose.PDF also allows setting different TabLeaderType for different TOC levels. You need to set LineDash property of FormatArray with the appropriate value of TabLeaderType enum as following.
+
+```java
   public static void SetDifferentTabLeaderTypeForTOCLevels() {
 
     String outFile = "TOC.pdf";
@@ -159,8 +154,7 @@ public static void AddTOCtoExistingPDF() {
     document.save(outFile);
   }
 ```
-
-## Hide Page Numbers in TOC
+### Hide Page Numbers in TOC
 
 In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TocInfo) property of [TOCInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
 
@@ -209,7 +203,8 @@ public static void HidePageNumbersInTOC() {
     doc.save(_dataDir + outFile);
   }
 ```
-## Customize Page Numbers while adding TOC
+
+### Customize Page Numbers while adding TOC
 
 It is common to customize the page numbering in the TOC while adding TOC in a PDF document. For example, we may need to add some prefix before page number like P1, P2, P3 and so on. In such a case, Aspose.PDF for Java provides PageNumbersPrefix property of TocInfo class that can be used to customize page numbers as shown in the following code sample.
 
@@ -254,116 +249,6 @@ It is common to customize the page numbering in the TOC while adding TOC in a PD
     doc.save(outFile);
   }
 ```
-### Set different TabLeaderType for different TOC Levels
-
-Aspose.PDF also allows setting different TabLeaderType for different TOC levels. You need to set LineDash property of FormatArray with the appropriate value of TabLeaderType enum as following.
-
-<ins>**Java**
-
-{{< highlight java >}}
-
- String outFile = "TOC.pdf";
-
-com.aspose.pdf.Document doc = new com.aspose.pdf.Document();
-
-Page tocPage = doc.getPages().add();
-
-TocInfo tocInfo = new TocInfo();
-
-//set LeaderType
-
-tocInfo.setLineDash(TabLeaderType.Solid);
-
-TextFragment title = new TextFragment("Table Of Contents");
-
-title.getTextState().setFontSize(30);
-
-tocInfo.setTitle(title);
-
-//Add the list section to the
-
-sections collection of the Pdf document
-
-tocPage.setTocInfo(tocInfo);
-
-//Define the format of the four levels list by setting the left margins
-
-//and
-
-//text format settings of each level
-
-tocInfo.setFormatArrayLength(4);
-
-tocInfo.getFormatArray()[0].getMargin().setLeft(0);
-
-tocInfo.getFormatArray()[0].getMargin().setRight(30);
-
-tocInfo.getFormatArray()[0].setLineDash(TabLeaderType.Dot);
-
-tocInfo.getFormatArray()[0].getTextState().setFontStyle(FontStyles.Bold|FontStyles.Italic);
-
-tocInfo.getFormatArray()[1].getMargin().setLeft(10);
-
-tocInfo.getFormatArray()[1].getMargin().setRight(30);
-
-tocInfo.getFormatArray()[1].setLineDash(TabLeaderType.None);
-
-tocInfo.getFormatArray()[1].getTextState().setFontSize(10);
-
-tocInfo.getFormatArray()[2].getMargin().setLeft(20);
-
-tocInfo.getFormatArray()[2].getMargin().setRight(0);
-
-tocInfo.getFormatArray()[2].getTextState().setFontStyle(FontStyles.Bold);
-
-tocInfo.getFormatArray()[3].setLineDash(TabLeaderType.Solid);
-
-tocInfo.getFormatArray()[3].getMargin().setLeft(30);
-
-tocInfo.getFormatArray()[3].getMargin().setRight(30);
-
-tocInfo.getFormatArray()[3].getTextState().setFontStyle(FontStyles.Bold);
-
-//Create a section in the Pdf document
-
-Page page = doc.getPages().add();
-
-//Add four headings in the section
-
-
-for (int Level = 1; Level<= 4; Level++)
-
-{ 
-
-com.aspose.pdf.Heading heading2 = new com.aspose.pdf.Heading(Level);
-
-TextSegment segment2 = new TextSegment();
-
-heading2.getSegments().add(segment2);
-
-heading2.setAutoSequence(true);
-
-heading2.setTocPage(tocPage);
-
-segment2.setText("Sample Heading" + Level);
-
-heading2.getTextState().setFont(FontRepository.findFont("Arial UnicodeMS"));
-
-
-
-//Add the heading into Table Of Contents. 
-
-heading2.setInList(true); 
-
-page.getParagraphs().add(heading2); 
-
-}
-
-// save the Pdf 
-
-doc.save(outFile);
-
-{{< /highlight >}}
 
 ## Add Layers to PDF File
 

@@ -204,6 +204,7 @@ public static void RemovingUnusedStream() {
         optimizationOptions.setRemoveUnusedStreams(true);
         pdfDocument.optimizeResources(optimizationOptions);
         _dataDir = _dataDir + "removeUnusedObjects_out.pdf";
+        
         // Save updated document
         pdfDocument.save(_dataDir);
         
@@ -219,9 +220,11 @@ Sometimes a document contains several identical resource streams (for example im
         Document pdfDocument = new Document(_dataDir + "OptimizeDocument.pdf");
         com.aspose.pdf.optimization.OptimizationOptions optimizationOptions = new com.aspose.pdf.optimization.OptimizationOptions();
         optimizationOptions.setRemoveUnusedStreams(true);
+        
         // Optimize PDF document using OptimizationOptions
         pdfDocument.optimizeResources(optimizationOptions);
         _dataDir = _dataDir + "OptimizeDocument_out.pdf";
+        
         // Save updated document
         pdfDocument.save(_dataDir);
     }
@@ -234,9 +237,11 @@ public static void AllowReusePageContent() {
         Document pdfDocument = new Document(_dataDir + "OptimizeDocument.pdf");
         com.aspose.pdf.optimization.OptimizationOptions optimizationOptions = new com.aspose.pdf.optimization.OptimizationOptions();
         optimizationOptions.setAllowReusePageContent(true);
+        
         // Optimize PDF document using OptimizationOptions
         pdfDocument.optimizeResources(optimizationOptions);
         _dataDir = _dataDir + "OptimizeDocument_out.pdf";
+        
         // Save updated document
         pdfDocument.save(_dataDir);
     }
@@ -251,8 +256,10 @@ If the document uses embedded fonts it means that all font data is placed in the
         Document pdfDocument = new Document(_dataDir + "OptimizeDocument.pdf");
         com.aspose.pdf.optimization.OptimizationOptions optimizationOptions = new com.aspose.pdf.optimization.OptimizationOptions();
         optimizationOptions.setUnembedFonts(true);
+        
         // Optimize PDF document using OptimizationOptions
         pdfDocument.optimizeResources(optimizationOptions);
+        
         _dataDir = _dataDir + "OptimizeDocument_out.pdf";
         // Save updated document
         pdfDocument.save(_dataDir);
