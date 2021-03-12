@@ -43,7 +43,7 @@ This page contains release notes information for Aspose.PDF for .NET 21.3.
 
 ### Added APIs
 * Property Aspose.Pdf.FileSpecification.EncryptedPayload 
-*  Aspose.Pdf.AFRelationship.EncryptedPayload
+* Enumeration member Aspose.Pdf.AFRelationship.EncryptedPayload
 * Type Aspose.Pdf.EncryptedPayload
 * Constructor Aspose.Pdf.EncryptedPayload.#ctor(Aspose.Pdf.FileSpecification)
 * Property Aspose.Pdf.EncryptedPayload.Type
