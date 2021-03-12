@@ -6,8 +6,6 @@ weight: 40
 url: /java/installation/
 description: This section shows a product description and instructions for installing Aspose.PDF for Java on your own, as well as using NuGet.
 lastmod: "2021-02-02"
-aliases:
-    - /java/evaluate-aspose-pdf/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

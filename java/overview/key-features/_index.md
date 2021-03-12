@@ -6,12 +6,6 @@ weight: 20
 url: /java/key-features/
 description: Aspose.PDF for Java demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, annotations, documents, etc.
 lastmod: "2021-02-02"
-aliases:
-    - /java/feature-list/
-    - /java/aspose-pdf-features/
-    - /java/features-of-com-aspose-pdf-facades-package/
-    - /java/features-of-com-aspose-pdf-package/
-    - /java/features-of-aspose-pdf-package/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

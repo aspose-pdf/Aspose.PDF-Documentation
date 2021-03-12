@@ -6,11 +6,6 @@ weight: 50
 url: /java/licensing/
 description: Aspose. PDF for Java invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product. 
 lastmod: "2021-02-02"
-aliases:
-    - /java/applying-a-license/
-    - /java/using-multiple-products-from-aspose/
-    - /java/apply-metered-license/
-    - /java/license-aspose-pdf/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

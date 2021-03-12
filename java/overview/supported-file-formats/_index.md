@@ -6,8 +6,6 @@ weight: 10
 url: /java/supported-file-formats/
 description: This page shows which Aspose.PDF for Java can load and save file formats.
 lastmod: "2021-02-02"
-aliases:
-    - /java/supported-document-formats/
 sitemap:
     changefreq: "weekly"
     priority: 0.7
