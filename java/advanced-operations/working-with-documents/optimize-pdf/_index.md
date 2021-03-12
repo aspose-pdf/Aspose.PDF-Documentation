@@ -5,8 +5,6 @@ weight: 40
 url: /java/optimize-pdf/
 description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with Java.
 lastmod: "2021-03-10"
-aliases: 
-    - /java/optimize-pdf-document/
 ---
 
 A PDF document can sometimes contain additional data. Reducing the size of a PDF file will help you optimize network transfer and storage. This is especially handy for publishing on web pages, sharing on social networks, sending by e-mail, or archiving in storage. We can use several techniques to optimize PDF:

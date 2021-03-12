@@ -5,8 +5,6 @@ type: docs
 weight: 60
 url: /java/split-document/
 description: This topic shows how to split PDF pages into individual PDF files in your Java applications. 
-aliases:
-    - /java/split-pdf-file-into-individual-pages/
 lastmod: "2021-03-11"
 sitemap:
     changefreq: "weekly"

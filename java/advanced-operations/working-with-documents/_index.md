@@ -6,8 +6,6 @@ weight: 10
 url: /java/working-with-documents/
 lastmod: "2021-03-10"
 description: This article describes to you what manipulations can be done with the document with Aspose.PDF for Java.
-aliases:
-    - /java/working-with-document-object/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

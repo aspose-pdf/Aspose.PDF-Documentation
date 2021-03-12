@@ -5,8 +5,6 @@ type: docs
 weight: 50
 url: /java/merge-pdf-documents/
 description: This page explain how to merge PDF documents into a single PDF file with Java.
-aliases:
-    - /java/concatenate-pdf-files/
 lastmod: "2021-03-10"
 ---
 
