@@ -6,10 +6,11 @@ url: /java/convert-pdf-to-svg-format-in-php/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Convert PDF to SVG**
+
+## Aspose.PDF - Convert PDF to SVG
 <ins>To convert PDF to SVG format using **Aspose.PDF Java for PHP**, simply invoke **PdfToSvg** module.
 
-**PHP Code**
+**PHP Code
 ```
 
 # Open the target document
@@ -28,7 +29,8 @@ print "Document has been converted successfully" . PHP_EOL;
 
 ```
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Convert PDF to SVG Format (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/PdfToSvg.php)

@@ -6,7 +6,7 @@ url: /java/php-programmers-guide/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:**
+**This section includes the following topics:
 
 - [Working with Document Conversion in PHP](/pdf/java/working-with-document-conversion-in-php/)
 - [Working with Document Object in PHP](/pdf/java/working-with-document-object-in-php/)

@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 <ins>To add HTML string in Pdf document using **Aspose.PDF Java for Python**, simply invoke **AddHtml** module.
 
-**Python Code**
+**Python Code
 ```
 
 # Instantiate Document object
@@ -33,7 +33,7 @@ doc.save(self.dataDir + 'html.output.pdf')
 print "HTML added successfully"
 ```
 
-**Download Running Code**
+**Download Running Code
 
 Download **Add HTML (Aspose.PDF)** from any of the below mentioned social coding sites:
 

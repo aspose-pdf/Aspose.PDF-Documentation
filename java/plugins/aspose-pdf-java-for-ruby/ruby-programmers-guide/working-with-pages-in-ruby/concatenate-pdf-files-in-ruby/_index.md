@@ -6,10 +6,11 @@ url: /java/concatenate-pdf-files-in-ruby/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Concatenate PDF Files**
+
+## Aspose.PDF - Concatenate PDF Files
 To concatenate PDF files using **Aspose.PDF Java for Ruby**, simply invoke **ConcatenatePdfFiles** module.
 
-**Ruby Code**
+**Ruby Code
 
 ```
 # The path to the documents directory.
@@ -36,7 +37,8 @@ puts "New document has been saved, please check the output file"
 ```
 
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Concatenate PDF Files (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)

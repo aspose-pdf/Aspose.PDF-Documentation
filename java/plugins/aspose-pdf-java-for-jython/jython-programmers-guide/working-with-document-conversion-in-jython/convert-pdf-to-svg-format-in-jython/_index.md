@@ -6,10 +6,12 @@ url: /java/convert-pdf-to-svg-format-in-jython/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Pdf To Svg**
+
+## Aspose.PDF - Pdf To Svg
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.
 Error rendering macro 'code' : Invalid value specified for parameter lang
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download running code from any of the below mentioned social coding sites:
 
 - [CodePlex](https://asposepdfjavajython.codeplex.com/releases)

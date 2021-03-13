@@ -9,7 +9,7 @@ lastmod: "2020-12-16"
 
 <ins>To convert SVG file to PDF format using **Aspose.PDF Java for Python**, simply invoke **SvgToPdf** module.
 
-**Python Code**
+**Python Code
 
 {{< highlight java >}}
 
@@ -29,7 +29,7 @@ print "Document has been converted successfully"
 
 {{< /highlight >}}
 
-**Download Running Code**
+**Download Running Code
 
 Download **Convert SVG to PDF (Aspose.PDF)** from any of the below mentioned social coding sites:
 

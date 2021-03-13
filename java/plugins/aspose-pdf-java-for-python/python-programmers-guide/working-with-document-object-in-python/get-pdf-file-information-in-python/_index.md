@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 <ins>To Get File Information of Pdf document using **Aspose.PDF Java for Python**, simply invoke **GetPdfFileInfo** class.
 
-**Python Code**
+**Python Code
 ```
 
 doc= self.Document()
@@ -27,7 +27,7 @@ print "Subject:-" + str(doc_info.getSubject())
 print "Title:-" + str(doc_info.getTitle())
 ```
 
-**Download Running Code**
+**Download Running Code
 
 Download **Get PDF File Information (Aspose.PDF)** from any of the below mentioned social coding sites:
 

@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 <ins>To add Text string in Pdf document using **Aspose.PDF Java for Python**, simply invoke **AddText** module.
 
-**Python Code**
+**Python Code
 ```
 doc=self.Document()
 doc=self.dataDir + 'input1.pdf'
@@ -37,7 +37,7 @@ print "Text added successfully"
 
 ```
 
-**Download Running Code**
+**Download Running Code
 
 Download **Add Text (Aspose.PDF)** from any of the below mentioned social coding sites:
 

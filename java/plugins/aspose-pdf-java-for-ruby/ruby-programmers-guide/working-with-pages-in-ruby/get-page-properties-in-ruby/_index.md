@@ -6,10 +6,11 @@ url: /java/get-page-properties-in-ruby/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Get Page Properties**
+
+## Aspose.PDF - Get Page Properties
 To get page properties of Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **GetPageProperties** module.
 
-**Ruby Code**
+**Ruby Code
 
 ```
 # The path to the documents directory.
@@ -48,7 +49,8 @@ puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Get Page Properties (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)

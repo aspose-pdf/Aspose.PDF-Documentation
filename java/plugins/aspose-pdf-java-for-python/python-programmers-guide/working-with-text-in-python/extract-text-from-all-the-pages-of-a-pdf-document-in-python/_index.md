@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 <ins>To extract TextrFrom All the Pages Pdf document using **Aspose.PDF Java for Python**, simply invoke **ExtractTextFromAllPages** module.
 
-**Python Code**
+**Python Code
 ```
 # Open the target document
 pdf=self.Document()
@@ -28,7 +28,7 @@ print "Text extracted successfully. Check output file."
 
 ```
 
-**Download Running Code**
+**Download Running Code
 
 Download **Extract Text From All the Pages (Aspose.PDF)** from any of the below mentioned social coding sites:
 

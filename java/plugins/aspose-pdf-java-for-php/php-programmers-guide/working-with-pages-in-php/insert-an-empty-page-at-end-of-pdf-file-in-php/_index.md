@@ -6,10 +6,11 @@ url: /java/insert-an-empty-page-at-end-of-pdf-file-in-php/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Insert an Empty Page at End of PDF File**
+
+## Aspose.PDF - Insert an Empty Page at End of PDF File
 <ins>To Insert an Empty Page at the end of PDF document using **Aspose.PDF Java for PHP**, simply invoke **InsertEmptyPageAtEndOfFile** class.
 
-**PHP Code**
+**PHP Code
 ```
 
 # Open the target document
@@ -25,7 +26,8 @@ print "Empty page added successfully!" . PHP_EOL;
 
 ```
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Insert an Empty Page at End of PDF File (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/InsertEmptyPageAtEndOfFile.php)

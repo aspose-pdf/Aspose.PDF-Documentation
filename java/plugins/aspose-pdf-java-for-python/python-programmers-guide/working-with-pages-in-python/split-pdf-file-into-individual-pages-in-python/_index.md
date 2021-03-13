@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 <ins>To split PDF document into individual pages using **Aspose.PDF Java for PHP**, simply invoke **SplitAllPages** class.
 
-**Python Code**
+**Python Code
 ```
 
 pdf = self.Document()
@@ -34,7 +34,7 @@ print "Split process completed successfully!";
 ```
 
 
-**Download Running Code**
+**Download Running Code
 
 Download **Split Pages (Aspose.PDF)** from any of the below mentioned social coding sites:
 

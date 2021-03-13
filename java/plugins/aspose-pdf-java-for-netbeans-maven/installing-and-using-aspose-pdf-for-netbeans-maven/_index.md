@@ -6,7 +6,8 @@ url: /java/installing-and-using-aspose-pdf-for-netbeans-maven/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Installing**
+
+## Installing
 **Aspose.PDF Java for NetBeans (Maven)** plugin can be easily installed from the Available **Plugin** tab in the Plugin dialog.
 
 - To open it, select **Plugins** from the **Tools** menu in NetBeans. 
@@ -15,8 +16,10 @@ lastmod: "2020-12-16"
 
 - This adds the **Aspose.PDF Maven Project** in New Project wizard and **Aspose.PDF Code Example** in New File wizard of NetBeans IDE. 
 
-## <ins>**Using**
-### **Aspose.PDF Maven Project (wizard)**
+
+## Using
+
+### Aspose.PDF Maven Project (wizard)
 To create **Maven Project** by wizard for using [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx):
 
 1. Select **New Project**.
@@ -29,7 +32,8 @@ This will retrieve the [Aspose.PDF for Java](http://www.aspose.com/java/pdf-com
  Following **Maven** Project will be created on your **NetBeans IDE** on completion of the wizard:  
 The created **Maven Project** is configured to use **Aspose.PDF for Java API** and ready to be enhanced as per your Project requirements.
    If you have opted to download [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples), you can use **Aspose.PDF Code Example (wizard)** for importing needed **Code Examples** of [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API into your project.
-### **Aspose.PDF Code Example (wizard)**
+
+### Aspose.PDF Code Example (wizard)
 **Aspose.PDF Code Example wizard** allows you to try out many samples provided for [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API.
 
 {{% alert color="primary" %}} 

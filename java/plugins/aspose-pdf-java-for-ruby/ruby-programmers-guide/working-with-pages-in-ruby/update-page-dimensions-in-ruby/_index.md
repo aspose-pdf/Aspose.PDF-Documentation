@@ -6,10 +6,11 @@ url: /java/update-page-dimensions-in-ruby/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Update Page Dimensions**
+
+## Aspose.PDF - Update Page Dimensions
 To update page Dimensions using **Aspose.PDF Java for Ruby**, simply invoke **UpdatePageDimensions** module.
 
-**Ruby Code**
+**Ruby Code
 ```
 
 # The path to the documents directory.
@@ -42,7 +43,8 @@ puts "Dimensions updated successfully!"
 ```
 
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Update Page Dimensions (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/updatepagedimensions.rb)
