@@ -26,7 +26,7 @@ var doc = new Document();
 
 // Spcify path of input EMF image file
 var imageFile = dataDir + "drawing.emf";
-var page = doc.Pages.Add(); 
+var page = doc.Pages.Add();
 string file = imageFile;
 FileStream filestream = new FileStream(file, FileMode.Open, FileAccess.Read);
 BinaryReader reader = new BinaryReader(filestream);

@@ -1,6 +1,6 @@
 ---
-title: Aspose.PDF for .NET 17.3.0 
-linktitle: Aspose.PDF for .NET 17.3.0 
+title: Aspose.PDF for .NET 17.3.0
+linktitle: Aspose.PDF for .NET 17.3.0
 type: docs
 weight: 100
 url: /net/aspose-pdf-for-net-17-3-0-release-notes/
@@ -51,138 +51,138 @@ sitemap:
 ## **Public API Changes**
 Method Aspose.PDF.Annotations.AnnotationSelector.Visit  (Aspose.PDF.Annotations.RichMediaAnnotation)
 Method Aspose.PDF.Annotations.AnnotationSelector.Visit  (Aspose.PDF.Annotations.PDF3DAnnotation)
-Enumeration member Aspose.PDF.Annotations.AnnotationType.PDF3D  
-Enumeration type Aspose.PDF.Annotations.LightingSchemeType  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Artwork  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.None  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.White  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Day  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Night  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Hard  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Primary  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Blue  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Red  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Cube  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.CAD  
-Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Headlamp  
-Enumeration type Aspose.PDF.Annotations.PDF3DActivation  
-Aspose.PDF.Annotations.PDF3DActivation.activeWhenOpen  
-Enumeration member Aspose.PDF.Annotations.PDF3DActivation.activeWhenVisible  
-EnumerationmemberAspose.PDF.Annotations.PDF3DActivation.activatedUserOrScriptAction  
+Enumeration member Aspose.PDF.Annotations.AnnotationType.PDF3D 
+Enumeration type Aspose.PDF.Annotations.LightingSchemeType 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Artwork 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.None 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.White 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Day 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Night 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Hard 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Primary 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Blue 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Red 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Cube 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.CAD 
+Enumeration member Aspose.PDF.Annotations.LightingSchemeType.Headlamp 
+Enumeration type Aspose.PDF.Annotations.PDF3DActivation 
+Aspose.PDF.Annotations.PDF3DActivation.activeWhenOpen 
+Enumeration member Aspose.PDF.Annotations.PDF3DActivation.activeWhenVisible 
+EnumerationmemberAspose.PDF.Annotations.PDF3DActivation.activatedUserOrScriptAction 
 #### **Class Aspose.PDF.Annotations.PDF3DAnnotation**
-Method Aspose.PDF.Annotations.PDF3DAnnotation.Constructor    (Aspose.PDF.Page,Aspose.PDF.Rectangle,Aspose.PDF.Annotations.PDF3DArtwork)    
-Method Aspose.PDF.Annotations.PDF3DAnnotation.Constructor    (Aspose.PDF.Page,Aspose.PDF.Rectangle,Aspose.PDF.Annotations.PDF3DArtwork,Aspose.PDF.Annotations.PDF3DActivation)    
-Property Aspose.PDF.Annotations.PDF3DAnnotation.Pdf3DArtwork      
-Property Aspose.PDF.Annotations.PDF3DAnnotation.LightingScheme      
-Property Aspose.PDF.Annotations.PDF3DAnnotation.Content      
-Property Aspose.PDF.Annotations.PDF3DAnnotation.RenderMode      
-Property Aspose.PDF.Annotations.PDF3DAnnotation.ViewArray      
-Property Aspose.PDF.Annotations.PDF3DAnnotation.AnnotationType      
-Method Aspose.PDF.Annotations.PDF3DAnnotation.SetDefaultViewIndex(System.Int32)      
-Method Aspose.PDF.Annotations.PDF3DAnnotation.Accept      (Aspose.PDF.Annotations.AnnotationSelector)        
-Method Aspose.PDF.Annotations.PDF3DAnnotation.SetImagePreview(System.String)        
-Method Aspose.PDF.Annotations.PDF3DAnnotation.SetImagePreview(System.IO.Stream)  
-Method Aspose.PDF.Annotations.PDF3DAnnotation.ClearImagePreview  
-Method Aspose.PDF.Annotations.PDF3DAnnotation.GetImagePreview  
+Method Aspose.PDF.Annotations.PDF3DAnnotation.Constructor    (Aspose.PDF.Page,Aspose.PDF.Rectangle,Aspose.PDF.Annotations.PDF3DArtwork)   
+Method Aspose.PDF.Annotations.PDF3DAnnotation.Constructor    (Aspose.PDF.Page,Aspose.PDF.Rectangle,Aspose.PDF.Annotations.PDF3DArtwork,Aspose.PDF.Annotations.PDF3DActivation)   
+Property Aspose.PDF.Annotations.PDF3DAnnotation.Pdf3DArtwork     
+Property Aspose.PDF.Annotations.PDF3DAnnotation.LightingScheme     
+Property Aspose.PDF.Annotations.PDF3DAnnotation.Content     
+Property Aspose.PDF.Annotations.PDF3DAnnotation.RenderMode     
+Property Aspose.PDF.Annotations.PDF3DAnnotation.ViewArray     
+Property Aspose.PDF.Annotations.PDF3DAnnotation.AnnotationType     
+Method Aspose.PDF.Annotations.PDF3DAnnotation.SetDefaultViewIndex(System.Int32)     
+Method Aspose.PDF.Annotations.PDF3DAnnotation.Accept      (Aspose.PDF.Annotations.AnnotationSelector)       
+Method Aspose.PDF.Annotations.PDF3DAnnotation.SetImagePreview(System.String)       
+Method Aspose.PDF.Annotations.PDF3DAnnotation.SetImagePreview(System.IO.Stream) 
+Method Aspose.PDF.Annotations.PDF3DAnnotation.ClearImagePreview 
+Method Aspose.PDF.Annotations.PDF3DAnnotation.GetImagePreview 
 #### **Class Aspose.PDF.Annotations.PDF3DArtwork**
-Method Aspose.PDF.Annotations.PDF3DArtwork.Constructor  (Aspose.PDF.Document,Aspose.PDF.Annotations.PDF3DContent,Aspose.PDF.Annotations.  PDF3DLightingScheme,Aspose.PDF.Annotations.PDF3DRenderMode)  
-Method Aspose.PDF.Annotations.PDF3DArtwork.Constructor  (Aspose.PDF.Document,Aspose.PDF.Annotations.PDF3DContent)  
-Property Aspose.PDF.Annotations.PDF3DArtwork.LightingScheme  
-Property Aspose.PDF.Annotations.PDF3DArtwork.RenderMode  
-Property Aspose.PDF.Annotations.PDF3DArtwork.ViewArray    
-Method Aspose.PDF.Annotations.PDF3DArtwork.GetViewsList  
-Method Aspose.PDF.Annotations.PDF3DArtwork.GetViewsArray  
+Method Aspose.PDF.Annotations.PDF3DArtwork.Constructor  (Aspose.PDF.Document,Aspose.PDF.Annotations.PDF3DContent,Aspose.PDF.Annotations.  PDF3DLightingScheme,Aspose.PDF.Annotations.PDF3DRenderMode) 
+Method Aspose.PDF.Annotations.PDF3DArtwork.Constructor  (Aspose.PDF.Document,Aspose.PDF.Annotations.PDF3DContent) 
+Property Aspose.PDF.Annotations.PDF3DArtwork.LightingScheme 
+Property Aspose.PDF.Annotations.PDF3DArtwork.RenderMode 
+Property Aspose.PDF.Annotations.PDF3DArtwork.ViewArray   
+Method Aspose.PDF.Annotations.PDF3DArtwork.GetViewsList 
+Method Aspose.PDF.Annotations.PDF3DArtwork.GetViewsArray 
 #### **Class Aspose.PDF.Annotations.PDF3DContent**
-Method Aspose.PDF.Annotations.PDF3DContent.Constructor    
-Method Aspose.PDF.Annotations.PDF3DContent.Constructor(System.String)      
-Property Aspose.PDF.Annotations.PDF3DContent.Extension      
-MethodAspose.PDF.Annotations.PDF3DContent.Load(System.String)  
-MethodAspose.PDF.Annotations.PDF3DContent.LoadAsPRC(System.String)    
-Method Aspose.PDF.Annotations.PDF3DContent.LoadAsU3D(System.String)    
-Method Aspose.PDF.Annotations.PDF3DContent.LoadAsPRC(System.IO.Stream)    
-Method Aspose.PDF.Annotations.PDF3DContent.LoadAsU3D(System.IO.Stream)    
-Method Aspose.PDF.Annotations.PDF3DContent.LoadAsPRC(System.Byte[])    
-Method Aspose.PDF.Annotations.PDF3DContent.LoadAsU3D(System.Byte[])    
-Method Aspose.PDF.Annotations.PDF3DContent.SaveToFile(System.String)    
-Method Aspose.PDF.Annotations.PDF3DContent.GetAsStream    
-Method Aspose.PDF.Annotations.PDF3DContent.GetAsByteArray    
+Method Aspose.PDF.Annotations.PDF3DContent.Constructor   
+Method Aspose.PDF.Annotations.PDF3DContent.Constructor(System.String)     
+Property Aspose.PDF.Annotations.PDF3DContent.Extension     
+MethodAspose.PDF.Annotations.PDF3DContent.Load(System.String) 
+MethodAspose.PDF.Annotations.PDF3DContent.LoadAsPRC(System.String)   
+Method Aspose.PDF.Annotations.PDF3DContent.LoadAsU3D(System.String)   
+Method Aspose.PDF.Annotations.PDF3DContent.LoadAsPRC(System.IO.Stream)   
+Method Aspose.PDF.Annotations.PDF3DContent.LoadAsU3D(System.IO.Stream)   
+Method Aspose.PDF.Annotations.PDF3DContent.LoadAsPRC(System.Byte[])   
+Method Aspose.PDF.Annotations.PDF3DContent.LoadAsU3D(System.Byte[])   
+Method Aspose.PDF.Annotations.PDF3DContent.SaveToFile(System.String)   
+Method Aspose.PDF.Annotations.PDF3DContent.GetAsStream   
+Method Aspose.PDF.Annotations.PDF3DContent.GetAsByteArray   
 #### **Class Aspose.PDF.Annotations.PDF3DCrossSection**
-Method Aspose.PDF.Annotations.PDF3DCrossSection.Constructor(Aspose.PDF.Document)  
-Property Aspose.PDF.Annotations.PDF3DCrossSection.Center  
-Property Aspose.PDF.Annotations.PDF3DCrossSection.CuttingPlaneOpacity  
-Property Aspose.PDF.Annotations.PDF3DCrossSection.CuttingPlaneOrientation  
-Property Aspose.PDF.Annotations.PDF3DCrossSection.CuttingPlaneColor  
-Property Aspose.PDF.Annotations.PDF3DCrossSection.CuttingPlanesIntersectionColor  
-Property Aspose.PDF.Annotations.PDF3DCrossSection.Visibility  
+Method Aspose.PDF.Annotations.PDF3DCrossSection.Constructor(Aspose.PDF.Document) 
+Property Aspose.PDF.Annotations.PDF3DCrossSection.Center 
+Property Aspose.PDF.Annotations.PDF3DCrossSection.CuttingPlaneOpacity 
+Property Aspose.PDF.Annotations.PDF3DCrossSection.CuttingPlaneOrientation 
+Property Aspose.PDF.Annotations.PDF3DCrossSection.CuttingPlaneColor 
+Property Aspose.PDF.Annotations.PDF3DCrossSection.CuttingPlanesIntersectionColor 
+Property Aspose.PDF.Annotations.PDF3DCrossSection.Visibility 
 #### **Class Aspose.PDF.Annotations.PDF3DCrossSectionArray**
-MethodAspose.PDF.Annotations.PDF3DCrossSectionArray.Constructor(Aspose.PDF.Document)    
-PropertyAspose.PDF.Annotations.PDF3DCrossSectionArray.Count    
-PropertyAspose.PDF.Annotations.PDF3DCrossSectionArray.Item(System.Int32)    
-MethodAspose.PDF.Annotations.PDF3DCrossSectionArray.Add(Aspose.PDF.Annotations.PDF3DCrossSection)    
-MethodAspose.PDF.Annotations.PDF3DCrossSectionArray.RemoveAt(System.Int32)    
-MethodAspose.PDF.Annotations.PDF3DCrossSectionArray.RemoveAll    
+MethodAspose.PDF.Annotations.PDF3DCrossSectionArray.Constructor(Aspose.PDF.Document)   
+PropertyAspose.PDF.Annotations.PDF3DCrossSectionArray.Count   
+PropertyAspose.PDF.Annotations.PDF3DCrossSectionArray.Item(System.Int32)   
+MethodAspose.PDF.Annotations.PDF3DCrossSectionArray.Add(Aspose.PDF.Annotations.PDF3DCrossSection)   
+MethodAspose.PDF.Annotations.PDF3DCrossSectionArray.RemoveAt(System.Int32)   
+MethodAspose.PDF.Annotations.PDF3DCrossSectionArray.RemoveAll   
 #### **Class Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation**
-Method Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.Constructor  
-Method Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.Constructor  (System.Double?,System.Double?,System.Double?)  
-Property Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.AngleX  
-Property Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.AngleY  
-Property Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.AngleZ  
-Method Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.ToString  
-Enumeration type Aspose.PDF.Annotations.PDF3DLightingScheme  
-MethodAspose.PDF.Annotations.PDF3DLightingScheme.Constructor(Aspose.PDF.Annotations.LightingSchemeType)  
-Method Aspose.PDF.Annotations.PDF3DLightingScheme.Constructor(System.String)  
-Property Aspose.PDF.Annotations.PDF3DLightingScheme.Type  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Artwork  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.None  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.White  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Day  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Night  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Hard  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Primary  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Blue  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Red  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Cube  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.CAD  
-Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Headlamp  
-Enumeration type Aspose.PDF.Annotations.PDF3DRenderMode  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.Constructor  (Aspose.PDF.Annotations.RenderModeType)  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.Constructor(System.String)  
-Property Aspose.PDF.Annotations.PDF3DRenderMode.Type  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.GetAuxiliaryColour  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.SetAuxiliaryColour(Aspose.PDF.Color)  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.GetFaceColor  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.SetFaceColor(Aspose.PDF.Color)  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.GetOpacity  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.SetOpacity(System.Double)  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.SetCreaseValue(System.Double)  
-Method Aspose.PDF.Annotations.PDF3DRenderMode.GetCreaseValue  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Solid  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.SolidWireframe  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Transparent  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.TransparentWareFrame  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.BoundingBox  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.TransparentBoundingBox  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.TransparentBoundingBoxOutline  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Wireframe  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.ShadedWireframe  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Vertices  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.ShadedVertices  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Illustration  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.SolidOutline  
-Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.ShadedIllustration  
+Method Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.Constructor 
+Method Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.Constructor  (System.Double?,System.Double?,System.Double?) 
+Property Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.AngleX 
+Property Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.AngleY 
+Property Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.AngleZ 
+Method Aspose.PDF.Annotations.PDF3DCuttingPlaneOrientation.ToString 
+Enumeration type Aspose.PDF.Annotations.PDF3DLightingScheme 
+MethodAspose.PDF.Annotations.PDF3DLightingScheme.Constructor(Aspose.PDF.Annotations.LightingSchemeType) 
+Method Aspose.PDF.Annotations.PDF3DLightingScheme.Constructor(System.String) 
+Property Aspose.PDF.Annotations.PDF3DLightingScheme.Type 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Artwork 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.None 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.White 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Day 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Night 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Hard 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Primary 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Blue 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Red 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Cube 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.CAD 
+Enumeration member Aspose.PDF.Annotations.PDF3DLightingScheme.Headlamp 
+Enumeration type Aspose.PDF.Annotations.PDF3DRenderMode 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.Constructor  (Aspose.PDF.Annotations.RenderModeType) 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.Constructor(System.String) 
+Property Aspose.PDF.Annotations.PDF3DRenderMode.Type 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.GetAuxiliaryColour 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.SetAuxiliaryColour(Aspose.PDF.Color) 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.GetFaceColor 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.SetFaceColor(Aspose.PDF.Color) 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.GetOpacity 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.SetOpacity(System.Double) 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.SetCreaseValue(System.Double) 
+Method Aspose.PDF.Annotations.PDF3DRenderMode.GetCreaseValue 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Solid 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.SolidWireframe 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Transparent 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.TransparentWareFrame 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.BoundingBox 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.TransparentBoundingBox 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.TransparentBoundingBoxOutline 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Wireframe 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.ShadedWireframe 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Vertices 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.ShadedVertices 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.Illustration 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.SolidOutline 
+Enumeration member Aspose.PDF.Annotations.PDF3DRenderMode.ShadedIllustration 
 #### **Class Aspose.PDF.Annotations.PDF3DStream**
-MethodAspose.PDF.Annotations.PDF3DStream.Constructor(Aspose.PDF.Document,Aspose.PDF.Annotations.PDF3DArtwork)    
-Property Aspose.PDF.Annotations.PDF3DStream.Content    
+MethodAspose.PDF.Annotations.PDF3DStream.Constructor(Aspose.PDF.Document,Aspose.PDF.Annotations.PDF3DArtwork)   
+Property Aspose.PDF.Annotations.PDF3DStream.Content   
 #### **Class Aspose.PDF.Annotations.PDF3DView**
-MethodAspose.PDF.Annotations.PDF3DView.Constructor(Aspose.PDF.Document,Aspose.PDF.Matrix3D,System.Double,System.String)  
-MethodAspose.PDF.Annotations.PDF3DView.Constructor(Aspose.PDF.Document,Aspose.PDF.Annotations.PDF3DView,System.String)  
-Property Aspose.PDF.Annotations.PDF3DView.LightingScheme  
-Property Aspose.PDF.Annotations.PDF3DView.RenderMode  
-Property Aspose.PDF.Annotations.PDF3DView.CrossSectionsArray  
-Property Aspose.PDF.Annotations.PDF3DView.ViewName  
-Property Aspose.PDF.Annotations.PDF3DView.CameraPosition  
-Property Aspose.PDF.Annotations.PDF3DView.CameraOrbit  
-Property Aspose.PDF.Annotations.PDF3DView.BackGroundColor  
+MethodAspose.PDF.Annotations.PDF3DView.Constructor(Aspose.PDF.Document,Aspose.PDF.Matrix3D,System.Double,System.String) 
+MethodAspose.PDF.Annotations.PDF3DView.Constructor(Aspose.PDF.Document,Aspose.PDF.Annotations.PDF3DView,System.String) 
+Property Aspose.PDF.Annotations.PDF3DView.LightingScheme 
+Property Aspose.PDF.Annotations.PDF3DView.RenderMode 
+Property Aspose.PDF.Annotations.PDF3DView.CrossSectionsArray 
+Property Aspose.PDF.Annotations.PDF3DView.ViewName 
+Property Aspose.PDF.Annotations.PDF3DView.CameraPosition 
+Property Aspose.PDF.Annotations.PDF3DView.CameraOrbit 
+Property Aspose.PDF.Annotations.PDF3DView.BackGroundColor 
 #### **Class Aspose.PDF.Annotations.PDF3DViewArray**
 Property Aspose.PDF.Annotations.PDF3DViewArray.Count
 Property Aspose.PDF.Annotations.PDF3DViewArray.Item(System.Int32)
@@ -254,11 +254,11 @@ Method Aspose.PDF.Matrix3D.Add(Aspose.PDF.Matrix3D)
 Method Aspose.PDF.Matrix3D.GetHashCode
 Property Aspose.PDF.Note.TextState
 #### **Class Aspose.PDF.Point3D**
-Method Aspose.PDF.Point3D.Constructor  (System.Double,System.Double,System.Double)  
-Property Aspose.PDF.Point3D.X  
-Property Aspose.PDF.Point3D.Y  
-Property Aspose.PDF.Point3D.Z  
-Property Aspose.PDF.Point3D.Trivial  
-Method Aspose.PDF.Rectangle.NearEquals(Aspose.PDF.Rectangle,System.Double)  
-Property Aspose.PDF.RenderingOptions.UseFontHinting  
-Method Aspose.PDF.Table.GetWidth  
+Method Aspose.PDF.Point3D.Constructor  (System.Double,System.Double,System.Double) 
+Property Aspose.PDF.Point3D.X 
+Property Aspose.PDF.Point3D.Y 
+Property Aspose.PDF.Point3D.Z 
+Property Aspose.PDF.Point3D.Trivial 
+Method Aspose.PDF.Rectangle.NearEquals(Aspose.PDF.Rectangle,System.Double) 
+Property Aspose.PDF.RenderingOptions.UseFontHinting 
+Method Aspose.PDF.Table.GetWidth 

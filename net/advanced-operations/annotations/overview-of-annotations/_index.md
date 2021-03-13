@@ -1,6 +1,6 @@
 ---
 title: Overview of Annotations supported by Aspose.PDF for .NET
-linktitle: Overview of Annotations 
+linktitle: Overview of Annotations
 type: docs
 weight: 10
 url: /net/overview-of-annotations/

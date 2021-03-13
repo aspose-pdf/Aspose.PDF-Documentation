@@ -5,17 +5,17 @@ type: docs
 weight: 50
 url: /net/aspose-pdf-for-net-18-8-release-notes/
 lastmod: "2020-12-14"
-description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.8. 
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.8.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 18.8](http://nuget.org/packages/Aspose.Pdf/18.8.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 
@@ -60,11 +60,11 @@ This page contains release notes for [Aspose.PDF for .NET 18.8](http://nuget.or
 ## Public API changes in Aspose.PDF for .NET 18.8
 
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 FontSubsetStrategy enumeration has been moved under Aspose.Pdf namespace.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ### Added APIs:
 

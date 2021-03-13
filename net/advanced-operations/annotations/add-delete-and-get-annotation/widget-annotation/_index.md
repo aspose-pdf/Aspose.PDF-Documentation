@@ -4,7 +4,7 @@ linktitle: Widget Annotation
 type: docs
 weight: 80
 url: /net/widget-annotation/
-description: This article describes how to add controls based on awidget annotations to PDF documents with Aspose.PDF for .NET. 
+description: This article describes how to add controls based on awidget annotations to PDF documents with Aspose.PDF for .NET.
 lastmod: "2021-01-13"
 sitemap:
     changefreq: "weekly"
@@ -17,7 +17,7 @@ We use these form elements that add to a PDF to make it easier to enter, submit 
 Widget Annotations are a graphical representation of a form field on specific pages, so we cannot create it directly as an annotation.
 
 Each Widget Annotation will have appropriate graphics (appearance) depending on its type. After creation, certain visual aspects can be changed, such as border style and background color.
-Other properties such as text color and font can be changed through the field, once attached to one. 
+Other properties such as text color and font can be changed through the field, once attached to one.
 
 In some cases, you may want a field to appear on more than one page, repeating the same value. In that case, fields that normally have just one widget may have multiple widgets attached: a TextField, ListBox, ComboBox, and CheckBox usually have exactly one, while the RadioGroup has multiple widgets, one for each radio button.
 Someone filling out the form may use any of those widgets to update the field's value, and this is reflected in all the other widgets as well.
@@ -47,7 +47,7 @@ var border = new Border(printButton)
 printButton.Border = border;
 printButton.Characteristics.Border =
     System.Drawing.Color.FromArgb(255, 0, 0, 255);
-printButton.Characteristics.Background =  
+printButton.Characteristics.Background = 
     System.Drawing.Color.FromArgb(255, 0, 191, 255);
 document.Form.Add(printButton);
 ```
@@ -57,7 +57,7 @@ This button has border and set a background. Also we set a button name (Name), a
 ## Using Document-navigation actions
 
 Exist more complex example of the Widget Annotations usage - document navigation in PDF document. This may be needed to prepare a PDF document presentation.
-  
+ 
 This example shows how to create 4 buttons:
 
 ```csharp
@@ -103,9 +103,9 @@ We should duplicate this array of buttons on each page in the document.
 for (var pageIndex = 1; pageIndex <= document.Pages.Count;
                                                         pageIndex++)
     for (var i = 0; i < 4; i++)
-        document.Form.Add(buttons[i], 
+        document.Form.Add(buttons[i],
           $"btn{pageIndex}_{i + 1}", pageIndex);
- 
+
 ```
 
 We call [Form.Add method](https://apireference.aspose.com/pdf/net/aspose.pdf.forms.form/add/methods/2) with the following parameters: field, name, and the index of the pages that this field will be added to.

@@ -6,7 +6,7 @@ url: /java/working-with-com-aspose-pdf-facades/
 lastmod: "2020-12-16"
 ---
 
-###### **This section includes the following topics related to com.aspose.pdf.facades package:** 
+###### **This section includes the following topics related to com.aspose.pdf.facades package:**
 - [Working with Document - facades](/pdf/java/working-with-document-facades/)
 - [Working with PDF printing - facades](/pdf/java/working-with-pdf-printing-facades/)
 - [Working with Text - facades](/pdf/java/working-with-text-facades/)

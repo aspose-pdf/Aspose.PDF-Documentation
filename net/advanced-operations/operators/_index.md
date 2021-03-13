@@ -99,7 +99,7 @@ using (Document doc = new Document(inFile))
 {
     OperatorCollection pageContents = doc.Pages[1].Contents;
 
-    // The sample demonstrates 
+    // The sample demonstrates
     // GSave/GRestore operators usage
     // ContatenateMatrix operator usage to position xForm
     // Do operator usage to draw xForm on page

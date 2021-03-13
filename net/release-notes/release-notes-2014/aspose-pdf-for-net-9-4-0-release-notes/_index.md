@@ -1,6 +1,6 @@
 ---
-title: Aspose.PDF for .NET 9.4.0 
-linktitle: Aspose.PDF for .NET 9.4.0 
+title: Aspose.PDF for .NET 9.4.0
+linktitle: Aspose.PDF for .NET 9.4.0
 type: docs
 weight: 50
 url: /net/aspose-pdf-for-net-9-4-0-release-notes/
@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 9.4.0](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-9.4.0/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 We are pleased to share a new version of Aspose.PDF for .NET with following improvements.
 ## **New Features**
@@ -204,11 +204,11 @@ editor.ProcessPages = new int[] { 1 };
 
 string outFile = TestSettings.GetOutputFile("output.pdf");
 
-editor.Save(outFile); 
+editor.Save(outFile);
 
 {{< /highlight >}}
 
-Breaking change - RichTextBoxField.RValue property was renamed to RichTextValue 
+Breaking change - RichTextBoxField.RValue property was renamed to RichTextValue
 Following code snippet shows a sample where the renamed field was used:
 
 Document doc = new Document("input.pdf");RichTextBoxField rt =
@@ -225,7 +225,7 @@ new Document(TestSettings.GetOutputFile("34834.pdf"));(doc1.Form[
 
 "output.pdf");
 
-InsertBlankColumnAtFirst option was added into ExcelSaveOptions.Following code snippet shows how to suppress appearing of first blank column:Document doc = new Document(inFile);ExcelSaveOptions options = new ExcelSaveOptions();options.InsertBlankColumnAtFirst = false;doc.Save(outFile, options);PageInfo propertty was added to SvgLoadOptions class.Following code snippet shows how to use SvgLoadOptions and set margin info with PageInfo property:SvgLoadOptions options = new SvgLoadOptions();options.ConversionEngine = SvgLoadOptions.ConversionEngines.NewEngine;options.PageInfo.Margin.Top = 0;options.PageInfo.Margin.Left = 0;options.PageInfo.Margin.Bottom = 0;options.PageInfo.Margin.Right = 0;string inFile = @"F:\ExternalTestsData\35730.svg";string outFile = @"F:\ExternalTestsData\35730.pdf";Document pdfDocument = new Document(inFile, options);pdfDocument.Save(outFile) 
+InsertBlankColumnAtFirst option was added into ExcelSaveOptions.Following code snippet shows how to suppress appearing of first blank column:Document doc = new Document(inFile);ExcelSaveOptions options = new ExcelSaveOptions();options.InsertBlankColumnAtFirst = false;doc.Save(outFile, options);PageInfo propertty was added to SvgLoadOptions class.Following code snippet shows how to use SvgLoadOptions and set margin info with PageInfo property:SvgLoadOptions options = new SvgLoadOptions();options.ConversionEngine = SvgLoadOptions.ConversionEngines.NewEngine;options.PageInfo.Margin.Top = 0;options.PageInfo.Margin.Left = 0;options.PageInfo.Margin.Bottom = 0;options.PageInfo.Margin.Right = 0;string inFile = @"F:\ExternalTestsData\35730.svg";string outFile = @"F:\ExternalTestsData\35730.pdf";Document pdfDocument = new Document(inFile, options);pdfDocument.Save(outFile)
 ConversionEngines enumeration was added to SvgLoadOptions class.
 
 Following values are defined:
@@ -288,7 +288,7 @@ hTable.DefaultCellPadding = new MarginInfo(1, 1, 1, 1);
 
 hTable.Alignment = HorizontalAlignment.Left;
 
-hTable.ColumnAdjustment = ColumnAdjustment.AutoFitToContent; 
+hTable.ColumnAdjustment = ColumnAdjustment.AutoFitToContent;
 
 {{< /highlight >}}
 
@@ -322,7 +322,7 @@ Rounded
 
 property was added to InkAnnotation class
 
-Following code snippet shows how to set the InkAnnotation corners as rounded: 
+Following code snippet shows how to set the InkAnnotation corners as rounded:
 Document doc = new Document("PdfWithText.pdf");Page pdfPage = doc.Pages[1](/pages/createpage.action?spaceKey=pdfnet&title=1&linkCreation=true&fromPageId=7120525);
 
 System.Drawing.Rectangle drect = new System.Drawing.Rectangle();drect.Height = (

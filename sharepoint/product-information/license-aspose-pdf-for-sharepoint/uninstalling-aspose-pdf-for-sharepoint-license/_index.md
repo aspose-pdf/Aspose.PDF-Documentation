@@ -5,7 +5,7 @@ weight: 30
 url: /sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
 lastmod: "2020-12-16"
 ---
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 To uninstall Aspose.PDF for SharePoint license, please use the steps below from the server console.
 
@@ -17,7 +17,7 @@ To uninstall Aspose.PDF for SharePoint license, please use the steps below from 
 
   stsadm.exe -o execadmsvcjobs
 
-3. Wait for the retraction to complete. You can use Central    
+3. Wait for the retraction to complete. You can use Central   
 
   Administration to check if the retraction completed under Central Administration -> Operations -> Solution Management
 
@@ -25,4 +25,4 @@ To uninstall Aspose.PDF for SharePoint license, please use the steps below from 
 
   stsadm.exe -o deletesolution -name Aspose.PDF.SharePoint.License.wsp
 
-{{% /alert %}} 
+{{% /alert %}}

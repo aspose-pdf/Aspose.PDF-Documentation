@@ -6,11 +6,11 @@ url: /java/how-to-set-locale-for-aspose-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The Aspose.PDF for Java library cannot support locales with specific combination language-country (such as "en-KR"). But a feature for setting classical locale for Aspose.PDF is present in the API and can be used by calling com.aspose.pdf.LocaleOptions.setLocale() method.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Following code snippet shows how to set locale using Aspose.PDF for Java:
 

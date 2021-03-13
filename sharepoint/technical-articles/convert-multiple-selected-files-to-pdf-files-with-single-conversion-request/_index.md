@@ -6,32 +6,32 @@ url: /sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conver
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This article shows how to convert multiple selected files to PDF files with a single conversion operation using Aspose.PDF for SharePoint.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 To convert multiple selected files, perform the following steps:
 
-1. Select the files to be converted 
+1. Select the files to be converted
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
 
-2. Click Aspose Tools tab in Library Tools 
+2. Click Aspose Tools tab in Library Tools
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
 
-3. Click Convert to PDF to convert all the selected files to resultant PDF files. 
+3. Click Convert to PDF to convert all the selected files to resultant PDF files.
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_3.jpg)
 
-4. Prompt will be shown to download the converted files. 
+4. Prompt will be shown to download the converted files.
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_4.jpg)
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_5.jpg)
 
-{{% /alert %}} 
+{{% /alert %}}

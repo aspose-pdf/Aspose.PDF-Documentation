@@ -65,8 +65,8 @@ The representation of above data in XFDF form is similar to XML form except with
 ```xml
 
 <?xml version="1.0" encoding="UTF-8"?>
-<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">    
-   <f href="CompanyForm.pdf"/>  
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">   
+   <f href="CompanyForm.pdf"/> 
    <fields>
       <field name="Company">
          <value>Aspose.com</value>

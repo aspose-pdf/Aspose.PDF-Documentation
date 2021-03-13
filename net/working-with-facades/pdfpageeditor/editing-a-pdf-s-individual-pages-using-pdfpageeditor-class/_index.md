@@ -8,11 +8,11 @@ lastmod: "2021-01-15"
 draft: false
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.Pdf.Facades namespace in [Aspose.PDF for .NET](/pdf/net/) allows you to manipulate individual pages in a PDF file. This feature helps you work with the page display, alignment, and transition etc. PdfpageEditor class helps to achieve this functionality. In this article, we’ll look into the properties and methods provided by this class and the working of these methods as well.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Explanation
 
@@ -40,6 +40,6 @@ You can find samples of the above mentioned methods in the code snippet given be
 
 ## Conclusion
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 In this article, we have taken a closer look on the [PdfPageEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfpageeditor) class. We have elaborated the properties and methods provided by this class. It makes the manipulation of individual pages in a class a very easy and simple task.
-{{% /alert %}} 
+{{% /alert %}}

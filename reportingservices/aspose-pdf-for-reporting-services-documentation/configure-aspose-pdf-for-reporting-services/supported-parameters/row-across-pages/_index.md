@@ -6,17 +6,17 @@ url: /reportingservices/row-across-pages/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 For the list and rectangle elements of reporting services, every row of list or rectangle has the fixed row height. The default PDF renderer can not break the row down if the row crosses pages and the exported PDF documents usually have much more blank area at the bottom of every page. With Aspose.Pdf for Reporting Services you can easily instruct the exporter to produce PDF documents without blank area.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-**Parameter Name**: IsRowBrokenForFixedHeight   
-**Date Type**: Boolean   
-**Values supported**: True, False (default)   
+**Parameter Name**: IsRowBrokenForFixedHeight  
+**Date Type**: Boolean  
+**Values supported**: True, False (default)  
 
 **Example**
 
@@ -33,4 +33,4 @@ For the list and rectangle elements of reporting services, every row of list or 
 
 {{< /highlight >}}
 
-{{% /alert %}} 
+{{% /alert %}}

@@ -6,7 +6,7 @@ url: /java/working-with-pages-in-ruby/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:**
+**This section includes the following topics:
 
 - [Concatenate PDF Files in Ruby](/pdf/java/concatenate-pdf-files-in-ruby/)
 - [Delete a Particular Page from the PDF File in Ruby](/pdf/java/delete-a-particular-page-from-the-pdf-file-in-ruby/)

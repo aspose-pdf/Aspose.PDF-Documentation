@@ -6,17 +6,17 @@ url: /reportingservices/compression/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-The Reporting Services designer does not support specifying the compression of the output PDF document being generated. However, Aspose.PDF for Reporting Services does. 
+The Reporting Services designer does not support specifying the compression of the output PDF document being generated. However, Aspose.PDF for Reporting Services does.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-**Parameter Name**: CompressionLevel   
-**Date Type**: Integer   
-**Values supported**: 1 to 9, where 9 is maximum compression. Default value is 6.   
+**Parameter Name**: CompressionLevel  
+**Date Type**: Integer  
+**Values supported**: 1 to 9, where 9 is maximum compression. Default value is 6.  
 
 **Example**
 {{< highlight csharp >}}
@@ -32,4 +32,4 @@ The Reporting Services designer does not support specifying the compression of t
 
 {{< /highlight >}}
 
-{{% /alert %}} 
+{{% /alert %}}

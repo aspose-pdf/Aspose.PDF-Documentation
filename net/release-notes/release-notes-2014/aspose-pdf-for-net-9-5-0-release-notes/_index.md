@@ -1,6 +1,6 @@
 ---
-title: Aspose.PDF for .NET 9.5.0 
-linktitle: Aspose.PDF for .NET 9.5.0 
+title: Aspose.PDF for .NET 9.5.0
+linktitle: Aspose.PDF for .NET 9.5.0
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-9-5-0-release-notes/
@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for Aspose.PDF for .NET 9.5.0.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 We are pleased to share a new version of Aspose.PDF for .NET with the following improvements.
 ## **New Features**
@@ -29,7 +29,7 @@ PDFNEWNET-37199  - Get form field limit
 PDFNEWNET-33326 - Expanded Bookmarks when opening the PDF documents
 PDFNEWNET-34718 - PDF to DOC: output document is 10 times larger
 PDFNEWNET-35804 - Adding HTML string using Aspose.PDF namespace(DOM)
-PDFNEWNET-36403 - 
+PDFNEWNET-36403 -
 PDFNEWNET-35748 Several other types of Shapes absent in new GeneratorExceptions
 PDFNEWNET-34921 - PDF to XPS: Exception during conversion
 PDFNEWNET-35979 - HTML to PDF - OutOfMemoryException during conversion
@@ -126,7 +126,7 @@ FileStream fs = new FileStream("image.jpg", FileMode.Open, FileAccess.Read);
 
 doc.Form.XFA.SetFieldImage("form1[0].ImageField1[0]", fs);
 
-doc.Save("37017-1.pdf"); 
+doc.Save("37017-1.pdf");
 
 {{< /highlight >}}
 
@@ -154,21 +154,21 @@ AdjustSpaceWidth - Try to adjust spaces between words to keep line length
 
 {{< highlight java >}}
 
- Constructor: 
+ Constructor:
 
-public Ellipse(float left, float bottom, float width, float height) 
+public Ellipse(float left, float bottom, float width, float height)
 
 Properties:
 
-Left - float value that indicates the left position of the ellipse. 
+Left - float value that indicates the left position of the ellipse.
 
 
 
-Bottom - float value that indicates the bottom position of the ellipse. 
+Bottom - float value that indicates the bottom position of the ellipse.
 
 
 
-Width - float value that indicates the width of the ellipse. 
+Width - float value that indicates the width of the ellipse.
 
 
 
@@ -204,17 +204,17 @@ doc.Save(outFile);
 
 {{< highlight java >}}
 
- Constructors: 
+ Constructors:
 
-public Path()public Path(Shape[] shapes) 
+public Path()public Path(Shape[] shapes)
 
 Property:
 
-Shapes - shapes collection 
+Shapes - shapes collection
 
 
 
-Example: 
+Example:
 
 following code snippet shows how o add Path:
 
@@ -238,7 +238,7 @@ path.Shapes.Add(line);
 
 Arc arc = new Arc(200, 50, 50, 90, 270);
 
-path.Shapes.Add(arc); 
+path.Shapes.Add(arc);
 
 float[] curPos = arc.GetEndPosition();
 
@@ -248,7 +248,7 @@ arc =  new Arc(200, 50, 30, 270, 90);
 
 path.Shapes.Add(arc);
 
-doc.Save(outFile); 
+doc.Save(outFile);
 
 {{< /highlight >}}
 
@@ -256,23 +256,23 @@ doc.Save(outFile);
 
 {{< highlight java >}}
 
- Constructor: 
+ Constructor:
 
-public HtmlFragment(string text) 
+public HtmlFragment(string text)
 
 
 
 Parameter:
 
-text - HTML text 
+text - HTML text
 
-Property:Text  
+Property:Text 
 
 
 
 \- HTML text
 
-Example:Following code snippet shows how to add HTML fragment: 
+Example:Following code snippet shows how to add HTML fragment:
 
 Document doc = new Document();
 
@@ -361,9 +361,9 @@ XYFactor - A factor that shall be used to convert the largest units along the y 
 
 {{< highlight java >}}
 
- Constructor: 
+ Constructor:
 
-public NumberFormat(Measure measure) 
+public NumberFormat(Measure measure)
 
 Properties
 
@@ -385,7 +385,7 @@ FractionSeparator - Text that shall be used as the decimal position in displayin
 
 BeforeText - Text that shall be concatenated to the left of the label.
 
-AfterText - Text that shall be concatenated after the label 
+AfterText - Text that shall be concatenated after the label
 
 {{< /highlight >}}
 
@@ -401,7 +401,7 @@ ShowAsFraction - Show fractional value as fraction.
 
 Round - Round fractional values to the nearest whole integer.
 
-Truncate - Truncate to achieve whole units.  
+Truncate - Truncate to achieve whole units. 
 
 {{< /highlight >}}
 
@@ -409,11 +409,11 @@ Truncate - Truncate to achieve whole units.
 
 {{< highlight java >}}
 
- Constructor 
+ Constructor
 
-public NumberFormatList(Measure measure)Properties 
+public NumberFormatList(Measure measure)Properties
 
-Adds number format to list.&nbsp;&nbsp;&nbsp; 
+Adds number format to list.&nbsp;&nbsp;&nbsp;
 
 public void Insert(int index, NumberFormat value)
 
@@ -435,13 +435,13 @@ Rectangle rect =  new Rectangle(260, 630, 451, 662);
 
 LineAnnotation line = new LineAnnotation(doc.Pages[1], rect, new Point(266, 657), new Point(446, 656));
 
-line.Color = Color.Red; 
+line.Color = Color.Red;
 
-line.LeaderLine = -15;line.LeaderLineExtension = 5; 
+line.LeaderLine = -15;line.LeaderLineExtension = 5;
 
 line.StartingStyle = LineEnding.OpenArrow;
 
-line.EndingStyle = LineEnding.OpenArrow; 
+line.EndingStyle = LineEnding.OpenArrow;
 
 line.Measure = new Measure(line);
 
@@ -453,9 +453,9 @@ line.Measure.DistanceFormat[1].UnitLabel = "mm";
 
 line.Measure.DistanceFormat[1].FractionSeparator = ".";
 
-line.Measure.DistanceFormat[1].ConvresionFactor = 1; 
+line.Measure.DistanceFormat[1].ConvresionFactor = 1;
 
-line.Contents = "155 mm"; 
+line.Contents = "155 mm";
 
 line.ShowCaption = true;
 
@@ -463,7 +463,7 @@ line.CaptionPosition = CaptionPosition.Top;
 
 doc.Pages[1].Annotations.Add(line);
 
-doc.Save("output.pdf"); 
+doc.Save("output.pdf");
 
 {{< /highlight >}}
 
@@ -475,11 +475,11 @@ Following example demonstrates how to use Measure with PolylineAnnotation: 
 
 Point[] vertices =  new Point[]{new Point(100, 600),new Point(500, 600),new Point(500, 500), new Point(400, 300),new Point(100, 500),new Point(100, 600)};
 
-Rectangle rect =  new Rectangle(100, 500, 500, 600); 
+Rectangle rect =  new Rectangle(100, 500, 500, 600);
 
 PolylineAnnotation area = new PolylineAnnotation(doc.Pages[1], rect, vertices);
 
-area.Color = Color.Red; 
+area.Color = Color.Red;
 
 area.StartingStyle = LineEnding.OpenArrow;
 
@@ -495,7 +495,7 @@ area.Measure.DistanceFormat[1].UnitLabel ="mm";
 
 doc.Pages[1].Annotations.Add(area);
 
-doc.Save( "output.pdf")); 
+doc.Save( "output.pdf"));
 
 {{< /highlight >}}
 
@@ -511,6 +511,6 @@ Console.WriteLine((doc.Pages[1].Annotations[1] as LineAnnotation).Measure.AreaFo
 
 Console.WriteLine((doc.Pages[1].Annotations[1] as LineAnnotation).Measure.AreaFormat[1].ConvresionFactor);
 
-Console.WriteLine((doc.Pages[1].Annotations[1] as LineAnnotation).Measure.AreaFormat[1].FractionSeparator);  
+Console.WriteLine((doc.Pages[1].Annotations[1] as LineAnnotation).Measure.AreaFormat[1].FractionSeparator); 
 
 {{< /highlight >}}

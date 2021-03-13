@@ -6,7 +6,7 @@ url: /java/working-with-pages/
 lastmod: "2020-12-16"
 ---
 
-###### **This section includes the following topics:** 
+###### **This section includes the following topics:**
 - [Add, Delete and Access a Page in a PDF File](/pdf/java/add-delete-and-access-a-page-in-a-pdf-file/)
 - [Get and Set Page Properties](/pdf/java/get-and-set-page-properties/)
 - [Concatenate PDF Files](/pdf/java/concatenate-pdf-files/)

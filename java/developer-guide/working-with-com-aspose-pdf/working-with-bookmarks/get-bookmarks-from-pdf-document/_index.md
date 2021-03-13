@@ -8,11 +8,11 @@ description: Get pdf bookmarks using java
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's [OutlineItemCollection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/OutlineItemCollection) collection contains all a PDF's bookmarks.
 
-{{% /alert %}} 
+{{% /alert %}}
 ## **Getting Bookmarks**
 To get the bookmarks, loop through the Outlines collection and get each bookmark in [OutlineItemCollection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/OutlineCollection). The [OutlineItemCollection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/OutlineCollection) provides access to the bookmarks' attributes. The following code snippet shows you how to get bookmarks from the PDF file.
 

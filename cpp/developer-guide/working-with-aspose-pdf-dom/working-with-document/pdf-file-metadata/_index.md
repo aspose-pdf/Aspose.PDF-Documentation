@@ -9,11 +9,11 @@ lastmod: "2020-12-16"
 ## <ins>**Get/Set PDF File Information**
 In order to get file specific information of a PDF file, you first need to call the **get_Info()** of Document class. Once the DocumentInfo object is retrieved, you can get the values of the individual properties. Furthermore, you can also set the properties by using respective methods of DocumentInfo class. Following code snippet demonstrate, how to get/set PDF File information using Aspose.PDF for C++:
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Please note that you cannot set values against the **Application** and **Producer** fields, because Aspose Ltd. and Aspose.PDF for C++ x.x.x will be displayed against these fields.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 {{< gist "aspose-pdf" "e5fb9ddf5bd6460bb13d47fe5a83d86d" "Examples-PdfCPP-Document-GetSetInfo-GetSetInfo.cpp" >}}
 ## <ins>**Get/Set XMP Metadata from PDF File**

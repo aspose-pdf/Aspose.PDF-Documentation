@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [ Aspose.PDF for .Net 3.6.0.0 New Release|http://www.aspose.com/downloads/pdf/net/new-releases/~~aspose.pdf-for~~.net-3.6.0.0-new-release/]
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Introduction
 
@@ -39,12 +39,12 @@ What's Improved?
 
 `    `HTML2PDF:
 
-- 3656 - Support 
+- 3656 - Support
   cell width with % 
-- 3597 - 
+- 3597 -
   Support timeout value for BindHTMLFromUrl
-- 3315 - 
+- 3315 -
   HTML2PDF - table border and column width
-- 3366 - 
-  Support 
+- 3366 -
+  Support
   Text mixed with Table in Inline Html

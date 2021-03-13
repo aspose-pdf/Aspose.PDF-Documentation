@@ -8,11 +8,11 @@ lastmod: "2021-01-15"
 draft: false
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 There are a few properties which are stored with a PDF file by default to keep some information about the PDF document; for example, Title, Subject, Creator, Producer etc. This information can be manipulated using PdfFileInfo class. However, sometimes we need to save custom attributes along with these default properties. [PdfFileInfo](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/PdfFileInfo) allows you to get and set such custom properties. You can not only access existing customer properties, but also manipulate new custom attributes of your own choice. In the following code snippet we’ll see how to perform this task.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Code Snippet
 

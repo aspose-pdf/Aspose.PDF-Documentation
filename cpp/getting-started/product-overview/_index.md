@@ -6,7 +6,7 @@ url: /cpp/product-overview/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 ![todo:image_alt_text](product-overview_1)
 
@@ -14,7 +14,7 @@ lastmod: "2020-12-16"
 
 Aspose.PDF for C++ is a native C++ library that enable developers to create and manipulate PDF documents without using Adobe Acrobat. Aspose.PDF for C++ allows developers to create forms, add/edit text, manipulate PDF pages, add annotations, handle custom fonts and much more. Here in documentation section of Aspose.PDF for C++, you can explore all the features of the API along with the basic examples to demonstrate the implementation of those features in your C++ application.
 
-{{% /alert %}} 
+{{% /alert %}}
 ## <ins>**Benefits**
 Using Aspose.PDF for C++ in your applications gives you the following benefits:
 

@@ -101,7 +101,7 @@ margin.Right = 5f;
 margin.Bottom = 5f;
 // Set the default cell padding to the MarginInfo object
 table1.DefaultCellPadding = margin;
-// If you increase the counter to 17, table will break 
+// If you increase the counter to 17, table will break
 // Because it cannot be accommodated any more over this page
 for (int RowCounter = 0; RowCounter <= 16; RowCounter++)
 {
@@ -117,7 +117,7 @@ float PageHeight = (float)pdf.PageInfo.Height;
 // Table Top margin and table height.
 float TotalObjectsHeight = (float)page.PageInfo.Margin.Top + (float)page.PageInfo.Margin.Bottom + (float)table1.Margin.Top + (float)table1.GetHeight();
 
-// Display Page Height, Table Height, table Top margin and Page Top 
+// Display Page Height, Table Height, table Top margin and Page Top
 // And Bottom margin information
 Console.WriteLine("PDF document Height = " + pdf.PageInfo.Height.ToString() + "\nTop Margin Info = " + page.PageInfo.Margin.Top.ToString() + "\nBottom Margin Info = " + page.PageInfo.Margin.Bottom.ToString() + "\n\nTable-Top Margin Info = " + table1.Margin.Top.ToString() + "\nAverage Row Height = " + table1.Rows[0].MinRowHeight.ToString() + " \nTable height " + table1.GetHeight().ToString() + "\n ----------------------------------------" + "\nTotal Page Height =" + PageHeight.ToString() + "\nCummulative height including Table =" + TotalObjectsHeight.ToString());
 
@@ -125,8 +125,8 @@ Console.WriteLine("PDF document Height = " + pdf.PageInfo.Height.ToString() + "\
 // + Table Top margin and table height from Page height and its less
 // Than 10 (an average row can be greater than 10)
 if ((PageHeight - TotalObjectsHeight) <= 10)
-    // If the value is less than 10, then display the message. 
-    // Which shows that another row can not be placed and if we add new 
+    // If the value is less than 10, then display the message.
+    // Which shows that another row can not be placed and if we add new
     // Row, table will break. It depends upon the row height value.
     Console.WriteLine("Page Height - Objects Height < 10, so table will break");
 
@@ -189,7 +189,7 @@ row.Cells.Add("header 17");
 for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
 
 {
-    // Create rows in the table and then cells in the rows 
+    // Create rows in the table and then cells in the rows
     Aspose.Pdf.Row row1 = mytable.Rows.Add();
     row1.Cells.Add("col " + RowCounter.ToString() + ", 1");
     row1.Cells.Add("col " + RowCounter.ToString() + ", 2");
@@ -263,11 +263,11 @@ public static class PdfHelper
         }
         public static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
         {
-            var headRow = table.Rows.Add();            
+            var headRow = table.Rows.Add();           
             var props = typeof(TValue).GetProperties(BindingFlags.Public | BindingFlags.Instance);
             foreach (var prop in props)
             {
-               headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);                
+               headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);               
             }
 
             foreach (var group in groupedData)

@@ -26,18 +26,18 @@ lastmod: "2020-12-16"
 |PDFNEWJAVA-34262 |Concatenation: Bookmarks are not being copied to Merged Document |Bug |
 |PDFJAVA-35884 |PDF to PDF/A - Resultant file is not Tagged |Bug |
 ### **Public API Changes**
-Changes in class **com.aspose.pdf.XFA:** 
+Changes in class **com.aspose.pdf.XFA:**
 added method:
 
 - public HashMap<String, String> getFieldsWithTextValuesMap()
 
-Changes in class **com.aspose.pdf.PdfFormatConversionOptions:** 
+Changes in class **com.aspose.pdf.PdfFormatConversionOptions:**
 added methods:
 
 - public boolean isLowMemoryMode()
 - public void setLowMemoryMode(boolean value)
 
-Changes in class **com.aspose.pdf.FontSubstitution:** 
+Changes in class **com.aspose.pdf.FontSubstitution:**
 added method:
 
 - public FontDefinition getSubstitutionFontDefinition()

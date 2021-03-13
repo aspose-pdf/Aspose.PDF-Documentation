@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-android-via-java-19-3-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes of [Aspose.PDF for Android via Java 19.3](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf/19.3)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Improvements and Changes**
 
 |**Key**|**Summary**|**Category**|
@@ -51,26 +51,26 @@ pdfDocument.dispose();
 
 {{< /highlight >}}
 
-Changes in **class com.aspose.pdf.ExcelSaveOptions** 
+Changes in **class com.aspose.pdf.ExcelSaveOptions**
 Added method:
-com.aspose.pdf.ExcelSaveOptions.getFormat   
-com.aspose.pdf.ExcelSaveOptions.setFormat(int)   
+com.aspose.pdf.ExcelSaveOptions.getFormat  
+com.aspose.pdf.ExcelSaveOptions.setFormat(int)  
 
-Added new class **com.aspose.pdf.ExcelSaveOptions.ExcelFormat** 
+Added new class **com.aspose.pdf.ExcelSaveOptions.ExcelFormat**
 fields:
-com.aspose.pdf.ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003   
-com.aspose.pdf.ExcelSaveOptions.ExcelFormat.XLSX   
+com.aspose.pdf.ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003  
+com.aspose.pdf.ExcelSaveOptions.ExcelFormat.XLSX  
 
-Added new class **com.aspose.pdf.exceptions.EmptyValueException** 
+Added new class **com.aspose.pdf.exceptions.EmptyValueException**
 constructors:
-com.aspose.pdf.exceptions.EmptyValueException.#ctor(String)   
+com.aspose.pdf.exceptions.EmptyValueException.#ctor(String)  
 
-Added new class **com.aspose.pdf.exceptions.InvalidValueFormatException** 
+Added new class **com.aspose.pdf.exceptions.InvalidValueFormatException**
 constructors:
-com.aspose.pdf.exceptions.InvalidValueFormatException.#ctor(String)   
+com.aspose.pdf.exceptions.InvalidValueFormatException.#ctor(String)  
 
-Added new class **com.aspose.pdf.LocaleOptions** 
+Added new class **com.aspose.pdf.LocaleOptions**
 methods:
-com.aspose.pdf.LocaleOptions.setLocale(Locale)   
-com.aspose.pdf.LocaleOptions.getLocale   
-com.aspose.pdf.LocaleOptions.clear   
+com.aspose.pdf.LocaleOptions.setLocale(Locale)  
+com.aspose.pdf.LocaleOptions.getLocale  
+com.aspose.pdf.LocaleOptions.clear  

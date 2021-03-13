@@ -6,5 +6,5 @@ url: /reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-
 lastmod: "2020-12-16"
 ---
 
-###### **This section includes the following topics:** 
-- [Why choose Aspose.PDF for Reporting Services](/pdf/reportingservices/why-choose-aspose-pdf-for-reporting-services/) 
+###### **This section includes the following topics:**
+- [Why choose Aspose.PDF for Reporting Services](/pdf/reportingservices/why-choose-aspose-pdf-for-reporting-services/)

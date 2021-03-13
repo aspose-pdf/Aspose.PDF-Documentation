@@ -1,6 +1,6 @@
 ---
 title: How to digitally sign PDF
-linktitle: Digitally sign PDF 
+linktitle: Digitally sign PDF
 type: docs
 weight: 10
 url: /net/digitally-sign-pdf-file/
@@ -20,7 +20,7 @@ In other words, the document would still be considered to retain its integrity a
 
 ## Aspose.PDF for .NET signing features
 
-We can use follwing classed and method for PDF signing 
+We can use follwing classed and method for PDF signing
 
 - Class [DocMDPSignature](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature)
 - Enumeration [DocMDPAccessPermissions](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions)

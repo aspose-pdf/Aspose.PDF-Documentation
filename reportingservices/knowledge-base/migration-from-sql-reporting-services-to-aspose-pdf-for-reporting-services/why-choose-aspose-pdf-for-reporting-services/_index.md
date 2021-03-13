@@ -17,42 +17,42 @@ With Aspose.PDF for Reporting Services you can easily instruct the PDF render to
 ##### ***Table of Contents***
 **Example**
 ```
-<ListSection ListType="TableOfContents"> 
-  <Title Alignment="Center"> 
-    <Segment IsTrueTypeFontBold="true" FontSize="30">TableOfContents</Segment> 
+<ListSection ListType="TableOfContents">
+  <Title Alignment="Center">
+    <Segment IsTrueTypeFontBold="true" FontSize="30">TableOfContents</Segment>
   </Title>
-  <ListLevelFormat Level="1" LeftMargin="0"> 
-    <TextInfo IsTrueTypeFontBold="true" IsTrueTypeFontItalic="true"></TextInfo> 
+  <ListLevelFormat Level="1" LeftMargin="0">
+    <TextInfo IsTrueTypeFontBold="true" IsTrueTypeFontItalic="true"></TextInfo>
   </ListLevelFormat>
-  <ListLevelFormat Level="2" LeftMargin="10"> 
-    <TextInfo IsUnderline="true" FontSize="10"></TextInfo> 
+  <ListLevelFormat Level="2" LeftMargin="10">
+    <TextInfo IsUnderline="true" FontSize="10"></TextInfo>
   </ListLevelFormat>
   <ListLevelFormat Level="3" LeftMargin="20">
-    <TextInfo IsTrueTypeFontBold="true"></TextInfo> 
-  </ListLevelFormat> 
-  <ListLevelFormat Level="4" LeftMargin="30"> 
-    <TextInfo IsTrueTypeFontBold="true"></TextInfo> 
-  </ListLevelFormat> 
+    <TextInfo IsTrueTypeFontBold="true"></TextInfo>
+  </ListLevelFormat>
+  <ListLevelFormat Level="4" LeftMargin="30">
+    <TextInfo IsTrueTypeFontBold="true"></TextInfo>
+  </ListLevelFormat>
 </ListSection>
 ```
 
-##### ***List of Tables*** 
-**Example** 
+##### ***List of Tables***
+**Example**
 ```
 <ListSection ListType="ListOfTables">
   <Title>
-    <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfTables</Segment> 
-  </Title> 
+    <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfTables</Segment>
+  </Title>
 </ListSection>
 ```
 ##### ***List of Figures***
 **Example**
 ```
-<ListSection ListType="ListOfFigures"> 
+<ListSection ListType="ListOfFigures">
     <Title>
-        <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfFigures</Segment> 
+        <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfFigures</Segment>
     </Title>
-</ListSection> 
+</ListSection>
 ```
 
 **Report builder cannot set the footnote or endnote for textboxes. With Aspose.PDF for Reporting Services, you can do that easily by adding custom properties. For example, the content of some Textbox in the current report is 'AsposePdf4RS', you want to describe the phrase ‘AsposePdf4RS’ in detail with the style of footnote, which content is "An optional PDF renderer for SSRS from Aspose".**
@@ -61,24 +61,24 @@ With Aspose.PDF for Reporting Services you can easily instruct the PDF render to
 
 **Example**
 ```
-  <Textbox Name="textbox1"> 
+  <Textbox Name="textbox1">
       ......
-      <Style> 
-        ...... 
+      <Style>
+        ......
    </style>
-   <value> AsposePdf4RS </value> 
+   <value> AsposePdf4RS </value>
       <CustomProperties>
         <CustomProperty>
           <Name>Footnote</Name>
-            <Value> An optional PDF renderer for SSRS from Aspose</Value> 
+            <Value> An optional PDF renderer for SSRS from Aspose</Value>
         </CustomProperty>
-       </CustomProperties> 
+       </CustomProperties>
    </Textbox> 
 ```
 
    **Following is a brief of such features which are only offered in Aspose.PDF for Reporting Services Security Settings:**
 
-  * Sometimes you might wish to export PDF document with opening password, limited text copying and printing privilege. Unfortunately, Reporting Services does not support this possibility. However, you still can implement it using Aspose.PDF for Reporting Services. Just add corresponding security parameters to report or report server, you would get secure PDF document with limited privilege. For more information, please visit Security Setting.  
+  * Sometimes you might wish to export PDF document with opening password, limited text copying and printing privilege. Unfortunately, Reporting Services does not support this possibility. However, you still can implement it using Aspose.PDF for Reporting Services. Just add corresponding security parameters to report or report server, you would get secure PDF document with limited privilege. For more information, please visit Security Setting. 
   * Custom Font Embedding: RS designer does not support the embedded font for text; with Aspose.PDF for Reporting Services you can easily embed font information into your PDF document. For more information, please visit IsFontEmbedded.
   * XMP Metadata: Reporting Services designer does not support the embedding of XMP data. Aspose.PDF for Reporting Services provides four parameters (CreationDate, ModifyDate, MetaDataDate and CreatorTool) to set the corresponding XMP Metadata. For more related information, please visit XMP Metadata.
   * PDF/A: When using SQL Reporting Services, you can only generate the PDF document in simple format whereas the generation of PDF/A documents is not support. But, Aspose.PDF for Reporting Services provides the feature to create PDF/A compliant documents. With the addition of a single configuration parameter, you can generate PDF/A document. For more related information, please visit PDF Conformance.

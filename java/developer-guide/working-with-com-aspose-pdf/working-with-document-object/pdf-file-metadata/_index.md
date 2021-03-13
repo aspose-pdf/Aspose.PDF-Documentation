@@ -21,11 +21,11 @@ To set this information:
 1. Set the values of the properties.
 1. Save the updated document using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class' [save()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) method.
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Please note that you cannot set values against the **Producer** and **Creator** fields, because Aspose.PDF for Java x.x.x will be displayed against these fields.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows you how to set PDF file information.
 

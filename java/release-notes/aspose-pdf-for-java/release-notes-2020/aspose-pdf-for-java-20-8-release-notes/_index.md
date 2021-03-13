@@ -46,7 +46,7 @@ This page contains release notes information for Aspose.PDF for Java 20.8.
 ### Renamed Methods
  * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.getPlatformID() ->
  * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.getPlatformId
- * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.setPlatformID(int) ->  
+ * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.setPlatformID(int) -> 
  * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.setPlatformId(int)
  * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.getPlatformSpecificID() ->
  * com.aspose.pdf.PdfASymbolicFontEncodingStrategy.QueueItem.getPlatformSpecificId

@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-18-6-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 18.6](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf/18.6)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
@@ -36,11 +36,11 @@ This page contains release notes for [Aspose.PDF for Java 18.6](https://reposito
 All descendants of com.aspose.pdf.Operator were moved into namespace com.aspose.pdf.operators. Thus 'new com.aspose.pdf.operators.GSave()' should be used, instead of 'new com.aspose.pdf.Operator.GSave()'.
 
 Added new classes:
-com.aspose.pdf.**DocumentElement** 
-com.aspose.pdf.taggedpdf.**TaggedPdfChildElements** 
-com.aspose.pdf.taggedpdf.**TaggedPdfDocumentElement** 
-com.aspose.pdf.taggedpdf.**TaggedPdfElement** 
-com.aspose.pdf.taggedpdf.**TaggedPdfParentTree** 
+com.aspose.pdf.**DocumentElement**
+com.aspose.pdf.taggedpdf.**TaggedPdfChildElements**
+com.aspose.pdf.taggedpdf.**TaggedPdfDocumentElement**
+com.aspose.pdf.taggedpdf.**TaggedPdfElement**
+com.aspose.pdf.taggedpdf.**TaggedPdfParentTree**
 com.aspose.pdf.taggedpdf.**TaggedPdfTextElement**
 
 Added new methods:

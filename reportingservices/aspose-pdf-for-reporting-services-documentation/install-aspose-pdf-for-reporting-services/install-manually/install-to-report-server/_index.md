@@ -6,11 +6,11 @@ url: /reportingservices/install-to-report-server/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 You only need to follow these steps if you install Aspose.PDF for Reporting Services manually, not using the MSI installer. MSI installer performs all necessary installation and registration actions automatically.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 In the following steps, you will need to copy and modify files in the directory where Microsoft SQL Server Reporting Services is installed. The SSRS 2000 assembly is located in the Bin\SSRS2000 directory of the zip package; the SSRS 2005 assembly is located in the Bin\SSRS2005 directory; the SSRS 2008 assembly is located in the Bin\SSRS2008 directory. 
 
@@ -23,7 +23,7 @@ In the following steps, you will need to copy and modify files in the directory 
 - Report Server 2008 is installed in the C:\Program Files\Microsoft SQL Server\ MSRS10.MSSQLSERVER\Reporting Services\ReportServer directory.
 
 To describe the following steps clearly, All of the three different directories will be used as ```<Instance>```.
-{{% /alert %}} 
+{{% /alert %}}
 
 {{% alert color="primary" %}}
 **Step 2.** Copy Aspose.PDF.ReportingServices.dll to ```<Instance>``` \bin folder.
@@ -84,12 +84,12 @@ Name="Aspose.PDF_for_Reporting_Services" Description="This code group grants ful
 {{< /highlight >}}
 
 {{% alert color="primary" %}}
-**Step 5.** Verify that Aspose.PDF for Reporting Services was installed successfully. To do that, open Report Manager and check the list of available export types for a report. You can launch Report Manager by opening a browser (Microsoft Internet Explorer 6.0 or later) and typing the Report Manager URL in the address bar (by default it is http://```<ComputerName>```/Reports). Select one of the reports you have in your server and open the Select Format combo box. You should see the list of export formats provided by Aspose.PDF for Reporting Services. Select PDF via Aspose.PDF. 
+**Step 5.** Verify that Aspose.PDF for Reporting Services was installed successfully. To do that, open Report Manager and check the list of available export types for a report. You can launch Report Manager by opening a browser (Microsoft Internet Explorer 6.0 or later) and typing the Report Manager URL in the address bar (by default it is http://```<ComputerName>```/Reports). Select one of the reports you have in your server and open the Select Format combo box. You should see the list of export formats provided by Aspose.PDF for Reporting Services. Select PDF via Aspose.PDF.
 {{% /alert %}}
 
 ![todo:image_alt_text](install-to-report-server_1.png)
 
-Click on the Export link. It will generate the report in the selected format, send to the client and open in save dialog: 
+Click on the Export link. It will generate the report in the selected format, send to the client and open in save dialog:
 
 ![todo:image_alt_text](install-to-report-server_2.png)
 

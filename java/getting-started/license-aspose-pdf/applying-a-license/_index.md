@@ -6,7 +6,7 @@ url: /java/applying-a-license/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 You can download an evaluation version of **Aspose.PDF** for Java from [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). The evaluation version provides absolutely the same capabilities as the licensed version of the product. Furthermore, evaluation version simply becomes licensed when you purchase a license and add a couple of lines of code to apply the license.
 
@@ -14,7 +14,7 @@ Once you are happy with your evaluation of **Aspose.PDF**, you can [purchase a l
 
 Every Aspose license carries a one-year subscription for free upgrades to any new versions or fixes that come out during this time. Technical support is free and unlimited and provided both to licensed and evaluation users.
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Evaluation Version Limitations**
 The evaluation version of Aspose.PDF for Java provides full product functionality, with a couple of restrictions.
 
@@ -35,11 +35,11 @@ The license can be loaded from a stream or file in the following locations:
 
 Use the License.setLicense method to license the component. Often the easiest way to set a license is to put the license file in the same folder as Aspose.PDF.jar and specify just the file name without path as shown in the following example:
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Starting from Aspose.PDF for Java 4.2.0, you need to call the following code lines to initialize the license.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 #### **Setting License from File**
 In this example **Aspose.PDF** will attempt to find the license file in the folder that contain the JARs of your application.

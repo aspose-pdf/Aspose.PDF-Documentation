@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-18-7-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 18.7](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf/18.7)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
@@ -27,12 +27,12 @@ This page contains release notes for [Aspose.PDF for Java 18.7](https://reposito
 |PDFJAVA-34878|PDF to PDFA2b: Converting PDF, generated from Aspose.Cells, to PDFA2b fails the compliance (Linux)|Bug|
 ### **Public API Changes**
 Added new classes:
-com.aspose.pdf.drawing.**GradientRadialShading** 
-com.aspose.pdf.taggedpdf.**TaggedPdfFigureElement** 
-com.aspose.pdf.taggedpdf.**TaggedPdfElement** 
-com.aspose.pdf.taggedpdf.**TaggedPdfParentTree** 
-com.aspose.pdf.taggedpdf.**TaggedPdfContent** 
-com.aspose.pdf.taggedpdf.**TaggedPdfChildElements** 
+com.aspose.pdf.drawing.**GradientRadialShading**
+com.aspose.pdf.taggedpdf.**TaggedPdfFigureElement**
+com.aspose.pdf.taggedpdf.**TaggedPdfElement**
+com.aspose.pdf.taggedpdf.**TaggedPdfParentTree**
+com.aspose.pdf.taggedpdf.**TaggedPdfContent**
+com.aspose.pdf.taggedpdf.**TaggedPdfChildElements**
 com.aspose.pdf.taggedpdf.**TaggedPdfTextElement**
 
 Added new methods:

@@ -8,11 +8,11 @@ Description: digitally sign PDF documents using Java. Verify, or validate the di
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for Java makes it possible to digitally sign PDF files using the PdfFileSignature class. You can certify a PDF file with a PKCS1-Certificate.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 When signing a PDF document using a signature, you basically confirm that its contents should remain "as is". Consequently, any changes made afterwards invalidate the signature and thus, you know if the document has been altered. Certifying a document first, allows you to specify the changes that a user can make to the document without invalidating the certification.
 

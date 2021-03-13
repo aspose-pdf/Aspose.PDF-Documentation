@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for Aspose.PDF for JasperReports 19.5
 

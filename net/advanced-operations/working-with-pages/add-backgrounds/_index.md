@@ -4,7 +4,7 @@ linktitle: Add backgrounds
 type: docs
 weight: 110
 url: /net/add-backgrounds/
-descriptions: Add background image to the your PDF file with C#. Use the BackgroundArtifact object. 
+descriptions: Add background image to the your PDF file with C#. Use the BackgroundArtifact object.
 lastmod: "2020-12-22"
 sitemap:
     changefreq: "weekly"

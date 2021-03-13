@@ -6,11 +6,11 @@ url: /java/working-with-table-in-tagged-pdfs/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This feature is supported by version 19.6 or greater.
 
-{{% /alert %}} 
+{{% /alert %}}
 ## **Create Table in Tagged PDF**
 Aspose.PDF for Java allows creating a table in Tagged PDF documents. For working with tables, the API provides [TableElement](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement) class. In order to create a table, you can use [createTableElement()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent#createTableElement--) method of [ITaggedContent](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent) interface. Furthermore, you can use [createTHead()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTHead--), [createTBody()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTBody--) and [createTFoot()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTFoot--) methods of TableElement class for creating Table Head, Table Body, and Table Foot respectively. To create a table row, you can use [createTR()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement#createTR--) method of [TableRowCollectionElement](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement) class. The following code snippet shows, how to create a table in the Tagged PDF document: 
 

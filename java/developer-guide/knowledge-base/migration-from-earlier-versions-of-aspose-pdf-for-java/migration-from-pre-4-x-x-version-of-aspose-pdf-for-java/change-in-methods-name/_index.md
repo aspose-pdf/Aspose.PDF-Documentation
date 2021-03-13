@@ -6,11 +6,11 @@ url: /java/change-in-methods-name/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The autoported MergedAPI of Aspose.PDF for Java is ported from its sibling Aspose.PDF for .NET and during this migration, names of some methods have been changed. Specified below is the list of methods whose names have been changed after the migration activity.
 
-{{% /alert %}} 
+{{% /alert %}}
 #### **aspose.pdf package**
 Following list indicates the methods under aspose.pdf package whose names have been changed.
 

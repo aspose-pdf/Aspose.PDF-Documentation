@@ -13,7 +13,7 @@ sitemap:
 
 Tables are part of many PDF forms. You find tables in a variety of forms.
 
-**Aspose.PDF for .NET** allows you to work with tables in PDF file advanced. This perfect tool helps fight through the simplicity of PDFs by extracting tables of actual data. With .NET library resource you can easily create or add table in an existing PDF document, extract table, integrate table with data sources, and remove tables from existing PDFs. 
+**Aspose.PDF for .NET** allows you to work with tables in PDF file advanced. This perfect tool helps fight through the simplicity of PDFs by extracting tables of actual data. With .NET library resource you can easily create or add table in an existing PDF document, extract table, integrate table with data sources, and remove tables from existing PDFs.
 
 You are able to do the following:
 

@@ -10,7 +10,7 @@ draft: false
 
 ## Set Submit Button URL in an Existing PDF File
 
-[SetSubmitUrl](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setsubmiturl) method allows you to set the submit button’s URL in a PDF file. This is the URL where the data is posted when the submit button is clicked. [SetSubmitUrl](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setsubmiturl) method required the name of the submit button field and the URL. This method is provided by [FormEditor](https://apireference.aspose.com/html/net/aspose.html.forms/formeditor) class. The following code snippet shows you how to set submit button URL. 
+[SetSubmitUrl](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setsubmiturl) method allows you to set the submit button’s URL in a PDF file. This is the URL where the data is posted when the submit button is clicked. [SetSubmitUrl](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setsubmiturl) method required the name of the submit button field and the URL. This method is provided by [FormEditor](https://apireference.aspose.com/html/net/aspose.html.forms/formeditor) class. The following code snippet shows you how to set submit button URL.
 
 
 
@@ -18,7 +18,7 @@ draft: false
 
 ## Set JavaScript for Push Button
 
-[SetFieldScript](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldscript) method allows you to set JavaScript to a push button in a PDF file. This method requires the name of the push button and the JavaScript . This method is provided by [FormEditor](https://apireference.aspose.com/html/net/aspose.html.forms/formeditor) class. The following code snippet shows you how to set JavaScript to a push button. 
+[SetFieldScript](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldscript) method allows you to set JavaScript to a push button in a PDF file. This method requires the name of the push button and the JavaScript . This method is provided by [FormEditor](https://apireference.aspose.com/html/net/aspose.html.forms/formeditor) class. The following code snippet shows you how to set JavaScript to a push button.
 
 
 

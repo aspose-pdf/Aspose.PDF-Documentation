@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-19-11-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes information for Aspose.PDF for Java 19.11.
 
-{{% /alert %}} 
+{{% /alert %}}
 ## **Improvements and Changes**
 
 |**Key**|**Summary**|**Category**|
@@ -34,39 +34,39 @@ com.aspose.pdf.**HtmlSaveOptions**.setAdditionalMarginWidthInPoints(int)
 
 **Added fields**
 
-com.aspose.pdf.**HtmlSaveOptions**.PageMarginIfAny   
-com.aspose.pdf.**HtmlSaveOptions**.LettersPositioningMethod   
-com.aspose.pdf.**SaveOptions**.MarginInfo   
+com.aspose.pdf.**HtmlSaveOptions**.PageMarginIfAny  
+com.aspose.pdf.**HtmlSaveOptions**.LettersPositioningMethod  
+com.aspose.pdf.**SaveOptions**.MarginInfo  
 
 **Added classes**
 
-com.aspose.pdf.**IPageSetOptions**   
-com.aspose.pdf.**IPipelineOptions**   
+com.aspose.pdf.**IPageSetOptions**  
+com.aspose.pdf.**IPipelineOptions**  
 
-**Added Methods**  
+**Added Methods** 
 
-com.aspose.pdf.**HtmlSaveOptions**.getExplicitListOfSavedPages()   
-com.aspose.pdf.**HtmlSaveOptions**.setExplicitListOfSavedPages(int[])   
-com.aspose.pdf.**HtmlSaveOptions**.getBatchSize()   
-com.aspose.pdf.**HtmlSaveOptions**.setBatchSize(int)   
-com.aspose.pdf.**TextFragmentState**.getFontStyle()   
-com.aspose.pdf.**TextState**.getFontStyle()   
-com.aspose.pdf.**TocInfo**.getPageNumbersPrefix()   
-com.aspose.pdf.**TocInfo**.setPageNumbersPrefix(String)   
-com.aspose.pdf.**XpsLoadOptions**.getBatchSize()   
-com.aspose.pdf.**XpsLoadOptions**.setBatchSize(int)   
-com.aspose.pdf.**XpsSaveOptions**.getBatchSize()   
-com.aspose.pdf.**XpsSaveOptions**.setBatchSize(int)   
+com.aspose.pdf.**HtmlSaveOptions**.getExplicitListOfSavedPages()  
+com.aspose.pdf.**HtmlSaveOptions**.setExplicitListOfSavedPages(int[])  
+com.aspose.pdf.**HtmlSaveOptions**.getBatchSize()  
+com.aspose.pdf.**HtmlSaveOptions**.setBatchSize(int)  
+com.aspose.pdf.**TextFragmentState**.getFontStyle()  
+com.aspose.pdf.**TextState**.getFontStyle()  
+com.aspose.pdf.**TocInfo**.getPageNumbersPrefix()  
+com.aspose.pdf.**TocInfo**.setPageNumbersPrefix(String)  
+com.aspose.pdf.**XpsLoadOptions**.getBatchSize()  
+com.aspose.pdf.**XpsLoadOptions**.setBatchSize(int)  
+com.aspose.pdf.**XpsSaveOptions**.getBatchSize()  
+com.aspose.pdf.**XpsSaveOptions**.setBatchSize(int)  
 
 **Removed methods**
 
-com.aspose.pdf.**HtmlSaveOptions**.getProcessingBatchSize   
-com.aspose.pdf.**HtmlSaveOptions**.setProcessingBatchSize(int)   
-com.aspose.pdf.**Table**.setMcName(String)   
-com.aspose.pdf.**Table**.getMcId()   
-com.aspose.pdf.**Table**.setMcId(int)   
+com.aspose.pdf.**HtmlSaveOptions**.getProcessingBatchSize  
+com.aspose.pdf.**HtmlSaveOptions**.setProcessingBatchSize(int)  
+com.aspose.pdf.**Table**.setMcName(String)  
+com.aspose.pdf.**Table**.getMcId()  
+com.aspose.pdf.**Table**.setMcId(int)  
 
-**Removed fields** 
+**Removed fields**
 
-com.aspose.pdf.**HtmlSaveOptions**.LettersPositioningMethod   
-com.aspose.pdf.**HtmlSaveOptions**.ExplicitListOfSavedPages   
+com.aspose.pdf.**HtmlSaveOptions**.LettersPositioningMethod  
+com.aspose.pdf.**HtmlSaveOptions**.ExplicitListOfSavedPages  

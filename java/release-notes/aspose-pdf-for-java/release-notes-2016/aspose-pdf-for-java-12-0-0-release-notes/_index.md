@@ -89,7 +89,7 @@ deleted method:
 
 - public static String myHtmlEncode(String value)
 
-Added new class **com.aspose.pdf.drawing.WatermarkAnnotation extends Annotation** 
+Added new class **com.aspose.pdf.drawing.WatermarkAnnotation extends Annotation**
 with the following constructors and methods:
 
 - public WatermarkAnnotation(Page page, Rectangle rect)
@@ -99,7 +99,7 @@ with the following constructors and methods:
 - public void setText(FormattedText text)
 - public void setTextAndState(String[] text, TextState textState)
 
-Added new class **com.aspose.pdf.drawing.GradientAxialShading extends PatternColorSpace** 
+Added new class **com.aspose.pdf.drawing.GradientAxialShading extends PatternColorSpace**
 with the following constructors and methods:
 
 - public GradientAxialShading()
@@ -113,7 +113,7 @@ with the following constructors and methods:
 - public Color getStartColor()
 - public void setStartColor(Color value)
 
-Added new class **com.aspose.pdf.FixedPrint** 
+Added new class **com.aspose.pdf.FixedPrint**
 with the following methods:
 
 - public double getHorizontalTranslation()

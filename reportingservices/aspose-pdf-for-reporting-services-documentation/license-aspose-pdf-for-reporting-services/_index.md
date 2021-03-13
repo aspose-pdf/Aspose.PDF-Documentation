@@ -6,13 +6,13 @@ url: /reportingservices/license-aspose-pdf-for-reporting-services/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for Reporting Services' evaluation version provides the same set of features as the fully licensed version, with the exception that the evaluation version adds an evaluation watermark to output PDFs.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 When you are happy with your evaluation, [buy a license](http://www.aspose.com/purchase/default.aspx). Before purchasing, make sure you understand and agree to the license subscription terms.
 
@@ -65,21 +65,21 @@ Download the license file and copy it to C:\Program Files\Microsoft Visual Studi
 ##### **Testing a License**
 To test that a license has been installed correctly, export any report as a Portable Format Document (PDF). If the document contains no watermark at the top, the license is activated successfully.
 
-When a valid Aspose.PDF.ReportingServices.lic is present in the ReportServer\bin folder, there will be no evaluation watermark. 
+When a valid Aspose.PDF.ReportingServices.lic is present in the ReportServer\bin folder, there will be no evaluation watermark.
 
-**PDF generated using “Territory sales drilldown” report** 
+**PDF generated using “Territory sales drilldown” report**
 
 ![todo:image_alt_text](license-aspose-pdf-for-reporting-services_1.png)
 
 
 
-**PDF generated using “Sales Order details” report** 
+**PDF generated using “Sales Order details” report**
 
 ![todo:image_alt_text](license-aspose-pdf-for-reporting-services_2.png)
 
-If there is a problem while initializing the license, an evaluation watermark is displayed in the resultant PDF document as specified below. 
+If there is a problem while initializing the license, an evaluation watermark is displayed in the resultant PDF document as specified below.
 
-**PDF document generated using “Territory Sales Drilldown” with watermark** 
+**PDF document generated using “Territory Sales Drilldown” with watermark**
 
 ![todo:image_alt_text](license-aspose-pdf-for-reporting-services_3.png)
 
@@ -88,7 +88,7 @@ Please note that that supported license file names are Aspose.PDF.ReportingServi
 {{% /alert %}}
 
 #### **Temporary License**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](http://www.aspose.com/corporate/purchase/temporary-license.aspx).
 

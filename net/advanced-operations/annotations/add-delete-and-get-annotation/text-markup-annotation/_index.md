@@ -21,7 +21,7 @@ Also possible to get or set the settings of the strikethrough annotations using 
 
 The next feature is the ability to get or set the settings of the underline annotations using the underlineSettings property. The underlineSettings property is used to set the color, opacity, author, subject, modifiedDate, and isLocked properties of the underline annotations.
 
-## Add Text Markup Annotation 
+## Add Text Markup Annotation
 
 In order to add an Text Markup Annotation to the PDF document, we need to perform the following actions:
 
@@ -82,7 +82,7 @@ namespace Aspose.Pdf.Examples.Advanced
                     Title = "Aspose User",
                     Color = Color.Violet
                 };
-                // Add annotation to the page 
+                // Add annotation to the page
                 document.Pages[1].Annotations.Add(highlightAnnotation);
                 document.Pages[1].Annotations.Add(squigglyAnnotation);
                 document.Pages[1].Annotations.Add(strikeOutAnnotation);
@@ -173,11 +173,11 @@ If you want to highlight a multi-line fragment you should use advanced example:
             }
         }
 ```
-## Get Text Markup Annotation 
+## Get Text Markup Annotation
 
 Please try using the following code snippet to Get Text Markup Annotation from PDF document.
 
-```csharp        
+```csharp       
         public static void GetTextMarkupAnnotation()
         {
             // Load the PDF file

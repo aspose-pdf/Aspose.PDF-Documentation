@@ -13,11 +13,11 @@ lastmod: "2020-12-16"
 |Fixed bug in page destroying.|Bug|
 |GraphicsPath::CloseAllFigures doesn't throw exception on empty path.|Bug|
 ### **Public API Changes in Aspose.PDF for C++ 17.11**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The following is a list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for C++. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf). 
 
-{{% /alert %}} 
+{{% /alert %}}
 #### **Code snippets were added to next classes:**
 - Document
 - OperatorCollection

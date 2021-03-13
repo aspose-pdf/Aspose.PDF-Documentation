@@ -31,7 +31,7 @@ This month's release includes improvements by porting the API from latest versio
 
 * Enumeration Aspose.Pdf.ConvertSoftMaskAction
 * Enumeration member Aspose.Pdf.ConvertSoftMaskAction.Default
-* Enumeration member     
+* Enumeration member    
 * Aspose.Pdf.ConvertSoftMaskAction.ConvertToStencilMask
 * Enumeration member
 * Aspose.Pdf.ImageDeleteAction.KeepContents Property

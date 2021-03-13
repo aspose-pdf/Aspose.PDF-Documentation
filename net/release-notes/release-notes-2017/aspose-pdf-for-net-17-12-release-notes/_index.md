@@ -1,6 +1,6 @@
 ---
 title: Aspose.PDF for .NET 17.12
-linktitle: Aspose.PDF for .NET 17.12 
+linktitle: Aspose.PDF for .NET 17.12
 type: docs
 weight: 10
 url: /net/aspose-pdf-for-net-17-12-release-notes/
@@ -67,49 +67,49 @@ As per regular monthly update process of all APIs being offered by Aspose, we ar
 ### **Public API changes in Aspose.PDF for .NET 17.12**
 ### **Added APIs:**
 -----
-Property Aspose.Pdf.Annotations.Annotation.Actions  
-Class Aspose.Pdf.Annotations.PdfActionCollection  
-Property Aspose.Pdf.Annotations.PdfActionCollection.Count  
-Property Aspose.Pdf.Annotations.PdfActionCollection.Item(System.Int32)  
-MethodAspose.Pdf.Annotations.PdfActionCollection.Delete(System.Int32)  
-MethodAspose.Pdf.Annotations.PdfActionCollection.Add  (Aspose.Pdf.Annotations.PdfAction)  
-MethodAspose.Pdf.Annotations.PdfActionCollection.GetEnumerator  
-Class Aspose.Pdf.FormattedFragment  
-MethodAspose.Pdf.FormattedFragment.GetMatrix(System.Double,System.Double,Aspose.Pdf.PageInfo)  
-MethodAspose.Pdf.FormattedFragment.GetMatrixOperator(System.Double,System.Double,Aspose.Pdf.PageInfo)  
-MethodAspose.Pdf.FormattedFragment.CopyFields(Aspose.Pdf.FormattedFragment)  
-Property Aspose.Pdf.HtmlFragment.HtmlLoadOptions  
-Class Aspose.Pdf.LatexFragment  
-Constructor Aspose.Pdf.LatexFragment(System.String)  
-Constructor Aspose.Pdf.LatexFragment(System.String,System.Boolean)  
-Property Aspose.Pdf.LatexFragment.LatexLoadOptionsOfInstance  
-Method Aspose.Pdf.LatexFragment.Clone  
-Method Aspose.Pdf.Matrix.Skew(System.Double,System.Double)  
-Property Aspose.Pdf.Text.Font.DecodedFontName  
-Property Aspose.Pdf.Text.TextAbsorber.HasErrors  
-Property Aspose.Pdf.Text.TextAbsorber.Errors  
-Class Aspose.Pdf.Text.TextExtractionError  
-Property Aspose.Pdf.Text.TextExtractionError.Summary  
-Property Aspose.Pdf.Text.TextExtractionError.Description  
-Property Aspose.Pdf.Text.TextExtractionError.Location  
-Property Aspose.Pdf.Text.TextExtractionError.FontKey  
-Property Aspose.Pdf.Text.TextExtractionError.FontName  
-Property Aspose.Pdf.Text.TextExtractionError.ExtractedText  
-Method Aspose.Pdf.Text.TextExtractionError.ToString  
-Class Aspose.Pdf.Text.TextExtractionErrorLocation  
-Property Aspose.Pdf.Text.TextExtractionErrorLocation.Path  
-Property Aspose.Pdf.Text.TextExtractionErrorLocation.PageNumber  
-Property Aspose.Pdf.Text.TextExtractionErrorLocation.ObjectType  
-Property Aspose.Pdf.Text.TextExtractionErrorLocation.FormKey  
-Property Aspose.Pdf.Text.TextExtractionErrorLocation.OperatorIndex  
-Property Aspose.Pdf.Text.TextExtractionErrorLocation.OperatorString  
-Property Aspose.Pdf.Text.TextExtractionErrorLocation.FontUsedKey  
-Property Aspose.Pdf.Text.TextExtractionErrorLocation.TextStartPoint  
-Method Aspose.Pdf.Text.TextExtractionErrorLocation.ToString  
-Property Aspose.Pdf.Text.TextFragmentAbsorber.HasErrors  
-Property Aspose.Pdf.Text.TextFragmentAbsorber.Errors  
-Property Aspose.Pdf.Text.TextReplaceOptions.AdjustmentNewLineSpacing  
-Property Aspose.Pdf.Text.TextSearchOptions.LogTextExtractionErrors  
+Property Aspose.Pdf.Annotations.Annotation.Actions 
+Class Aspose.Pdf.Annotations.PdfActionCollection 
+Property Aspose.Pdf.Annotations.PdfActionCollection.Count 
+Property Aspose.Pdf.Annotations.PdfActionCollection.Item(System.Int32) 
+MethodAspose.Pdf.Annotations.PdfActionCollection.Delete(System.Int32) 
+MethodAspose.Pdf.Annotations.PdfActionCollection.Add  (Aspose.Pdf.Annotations.PdfAction) 
+MethodAspose.Pdf.Annotations.PdfActionCollection.GetEnumerator 
+Class Aspose.Pdf.FormattedFragment 
+MethodAspose.Pdf.FormattedFragment.GetMatrix(System.Double,System.Double,Aspose.Pdf.PageInfo) 
+MethodAspose.Pdf.FormattedFragment.GetMatrixOperator(System.Double,System.Double,Aspose.Pdf.PageInfo) 
+MethodAspose.Pdf.FormattedFragment.CopyFields(Aspose.Pdf.FormattedFragment) 
+Property Aspose.Pdf.HtmlFragment.HtmlLoadOptions 
+Class Aspose.Pdf.LatexFragment 
+Constructor Aspose.Pdf.LatexFragment(System.String) 
+Constructor Aspose.Pdf.LatexFragment(System.String,System.Boolean) 
+Property Aspose.Pdf.LatexFragment.LatexLoadOptionsOfInstance 
+Method Aspose.Pdf.LatexFragment.Clone 
+Method Aspose.Pdf.Matrix.Skew(System.Double,System.Double) 
+Property Aspose.Pdf.Text.Font.DecodedFontName 
+Property Aspose.Pdf.Text.TextAbsorber.HasErrors 
+Property Aspose.Pdf.Text.TextAbsorber.Errors 
+Class Aspose.Pdf.Text.TextExtractionError 
+Property Aspose.Pdf.Text.TextExtractionError.Summary 
+Property Aspose.Pdf.Text.TextExtractionError.Description 
+Property Aspose.Pdf.Text.TextExtractionError.Location 
+Property Aspose.Pdf.Text.TextExtractionError.FontKey 
+Property Aspose.Pdf.Text.TextExtractionError.FontName 
+Property Aspose.Pdf.Text.TextExtractionError.ExtractedText 
+Method Aspose.Pdf.Text.TextExtractionError.ToString 
+Class Aspose.Pdf.Text.TextExtractionErrorLocation 
+Property Aspose.Pdf.Text.TextExtractionErrorLocation.Path 
+Property Aspose.Pdf.Text.TextExtractionErrorLocation.PageNumber 
+Property Aspose.Pdf.Text.TextExtractionErrorLocation.ObjectType 
+Property Aspose.Pdf.Text.TextExtractionErrorLocation.FormKey 
+Property Aspose.Pdf.Text.TextExtractionErrorLocation.OperatorIndex 
+Property Aspose.Pdf.Text.TextExtractionErrorLocation.OperatorString 
+Property Aspose.Pdf.Text.TextExtractionErrorLocation.FontUsedKey 
+Property Aspose.Pdf.Text.TextExtractionErrorLocation.TextStartPoint 
+Method Aspose.Pdf.Text.TextExtractionErrorLocation.ToString 
+Property Aspose.Pdf.Text.TextFragmentAbsorber.HasErrors 
+Property Aspose.Pdf.Text.TextFragmentAbsorber.Errors 
+Property Aspose.Pdf.Text.TextReplaceOptions.AdjustmentNewLineSpacing 
+Property Aspose.Pdf.Text.TextSearchOptions.LogTextExtractionErrors 
 ### **Removed APIs:**
 lastmod: "2020-12-16"
 sitemap:

@@ -6,11 +6,11 @@ url: /sharepoint/installing-aspose-pdf-for-sharepoint/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for SharePoint is downloadable as Aspose.PDF.SharePoint.zip archive.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 **This archive contains:**
 
@@ -51,31 +51,31 @@ The setup program checks the following conditions before proceeding:
 
 **The setup program performs the following actions:**
 
-- Check installation prerequisites. Setup will not continue if any check fails. 
+- Check installation prerequisites. Setup will not continue if any check fails.
 
 ![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_1.png)
 
 
 
-- Display End User License Agreement. The user must accept the agreement in order to proceed. 
+- Display End User License Agreement. The user must accept the agreement in order to proceed.
 
 ![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_2.png)
 
 
 
-- Display deployment target selection dialog. The user selects web applications and site collections where the feature shall be activated. See the figure below. 
+- Display deployment target selection dialog. The user selects web applications and site collections where the feature shall be activated. See the figure below.
 
 ![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_3.png)
 
 
 
-- Deploy the feature to the server farm. 
+- Deploy the feature to the server farm.
 
 ![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_4.png)
 
 
 
 - Activate the feature for the selected site collections and configure their parent web applications.
-- Display a list of web applications and site collections where the feature has been deployed and activated. 
+- Display a list of web applications and site collections where the feature has been deployed and activated.
 
 ![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_5.png)

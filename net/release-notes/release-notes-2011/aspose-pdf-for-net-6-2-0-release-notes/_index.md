@@ -10,13 +10,13 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 6.2.0](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-6.2.0/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
-In this version, we have introduced the following changes:Bugs 
+In this version, we have introduced the following changes:Bugs
 
 - 28463 - PdfViewer: Fix text display issues
 - 28828 - FillImageField does not work
@@ -51,9 +51,9 @@ In this version, we have introduced the following changes:Bugs
 - 28591 - JavaScript link is not placed on proper place
 - 29791 - Too much new lines when converting HTML to PDF
 - 29920 - Error message is appearing when using FlattenAllFields method
-  Features 
+  Features
 - 14494 - Support PDF to DOC Conversion
-  Enhancements 
+  Enhancements
 - 29806 - Extracting the First Image in PDF - Extremely Slow Performance
 - 29811 - PDF to JPEG conversion is taking longer time
 - 29695 - PdfViewer: Implement vertical text rendering

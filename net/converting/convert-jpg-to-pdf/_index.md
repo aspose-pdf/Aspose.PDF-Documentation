@@ -1,6 +1,6 @@
 ---
 title: Convert JPG to PDF | C#
-linktitle: Convert JPG to PDF 
+linktitle: Convert JPG to PDF
 type: docs
 weight: 190
 url: /net/convert-jpg-to-pdf/

@@ -6,13 +6,13 @@ url: /sharepoint/installing-aspose-pdf-for-sharepoint-license/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Once you are happy with your evaluation, you can [purchase a license](http://www.aspose.com/purchase/default.aspx). Before purchasing make sure you understand and agree to the license subscription terms.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The license will be emailed to you after the order has been paid. The license is a .zip archive containing a regular SharePoint solution package.
 
@@ -43,4 +43,4 @@ stsadm.exe -o execadmsvcjobs
 **Note:** You will receive a warning when running deployment step if Windows SharePoint Services Administration service is not started. Stsadm.exe relies on this service and Windows SharePoint Timer Service to replicate solution data across the farm. If these services are not running on your server farm, you may need to deploy the license at each server.
 
 
-{{% /alert %}} 
+{{% /alert %}}

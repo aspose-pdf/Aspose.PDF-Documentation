@@ -238,17 +238,17 @@ Following code snippet demonstrate steps how to add HTML ordered lists into the 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// The path to the output document.  
+// The path to the output document. 
 string outFile = dataDir + "AddHTMLOrderedListIntoDocuments_out.pdf";
-// Instantiate Document object  
+// Instantiate Document object 
 Document doc = new Document();
-// Instantiate HtmlFragment object with corresponding HTML fragment  
+// Instantiate HtmlFragment object with corresponding HTML fragment 
 HtmlFragment t = new HtmlFragment("`<body style='line-height: 100px;'><ul><li>First</li><li>Second</li><li>Third</li><li>Fourth</li><li>Fifth</li></ul>Text after the list.<br/>Next line<br/>Last line</body>`");
-// Add Page in Pages Collection  
+// Add Page in Pages Collection 
 Page page = doc.Pages.Add();
-// Add HtmlFragment inside page  
+// Add HtmlFragment inside page 
 page.Paragraphs.Add(t);
-// Save resultant PDF file  
+// Save resultant PDF file 
 doc.Save(outFile);
 ```
 

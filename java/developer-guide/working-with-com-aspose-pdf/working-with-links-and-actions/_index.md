@@ -6,7 +6,7 @@ url: /java/working-with-links-and-actions/
 lastmod: "2020-12-16"
 ---
 
-## **This section includes the following topics**: 
+## **This section includes the following topics**:
 
 - [Add Hyperlink in a PDF file](/pdf/java/add-hyperlink-in-a-pdf-file/)
 - [Remove Document Open Action from a PDF file](/pdf/java/remove-document-open-action-from-a-pdf-file/)

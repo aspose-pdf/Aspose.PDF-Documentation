@@ -7,7 +7,7 @@ is_root: true
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 ![todo:image_alt_text](home_6.png)
 
@@ -15,7 +15,7 @@ lastmod: "2020-12-16"
 
 Aspose.PDF for SharePoint is a solution that allows the users to export lists, list items and SharePoint Wiki pages to the PDF file format.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## **Aspose.PDF for SharePoint Resources**
 

@@ -14,7 +14,7 @@ Following code snippet demonstrate the above functionality:
 
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-Examples.Web-SendPdfToBrowserForDownload.aspx-1.cs" >}}
 ## **Extracting embedded files from a PDF file**
-Aspose.PDF stands out when it comes to advanced features for working with PDF format files. It extracts embedded files way better than other tools offering this feature. 
+Aspose.PDF stands out when it comes to advanced features for working with PDF format files. It extracts embedded files way better than other tools offering this feature.
 
 With Aspose.PDF for .NET, you can efficiently extract any embedded file which may be an embedded font, an image, a video or an audio. Following goal-specific approach demonstrates how quickly and efficiently the embedded files can be extracted. Aspose.PDF facilitates you to extract all the font files whether it is a true type (TTF) or an open type font (OTF). Likewise, using this feature, image of any format JPG, PNG, SVG etc can be extracted in its 'as is' condition.
 

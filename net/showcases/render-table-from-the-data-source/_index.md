@@ -64,7 +64,7 @@ var document = new Document
 
 var pdfPage = document.Pages.Add();
 
-// Initializes a new instance of the TextFragment for report's title 
+// Initializes a new instance of the TextFragment for report's title
 var textFragment = new TextFragment(reportTitle1);
 Table table = new Table
 {

@@ -7,7 +7,7 @@ lastmod: "2020-12-16"
 ---
 
 ## <ins>**Convert PDF Pages to Different Image Formats (Facades)**
-In order to convert PDF pages to different image formats, you need to create [PdfConverter](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfConverter) object and open the PDF file using bindPdf method. After that, you need to call doConvert method for initialization tasks. Then, you can loop through all the pages using hasNextImage and getNextImage methods. The getNextImage method allows you to create image of a particular page. You also need to pass ImageType to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. Finally, call the close method of the [PdfConverter](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfConverter) class. 
+In order to convert PDF pages to different image formats, you need to create [PdfConverter](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfConverter) object and open the PDF file using bindPdf method. After that, you need to call doConvert method for initialization tasks. Then, you can loop through all the pages using hasNextImage and getNextImage methods. The getNextImage method allows you to create image of a particular page. You also need to pass ImageType to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. Finally, call the close method of the [PdfConverter](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfConverter) class.
 The following code snippet shows you how to convert PDF pages to images.
 
 
@@ -18,11 +18,11 @@ We know that [PdfConverter](https://apireference.aspose.com/java/pdf/com.aspose.
 
 We are also aware that [PdfPageEditor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfPageEditor) class also contains methods which provide the capability to loop through all the pages using hasNextImage(..) and getNextImage(..) methods. The getNextImage(..) method allows you to create image of a particular page. You also need to pass ImageFormat to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. Finally, call the Close method of the [PdfConverter](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfConverter) class.
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 1 inch = 72 points and 1 cm = 1/2.54 inch = 0.3937 inch = 28.3 points.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows you how to convert PDF pages to images.
 
@@ -62,7 +62,7 @@ document.close();
 
 
 ## <ins>**Replace Image in an Existing PDF File (facades)**
-[PdfContentEditor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfContentEditor#replaceText-java.lang.String-int-java.lang.String-) class allows you to replace image in an existing PDF file. The [replaceImage](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfContentEditor#replaceImage-int-int-java.lang.String-) method helps you achieve this goal. You need to create an object of [PdfContentEditor](http://www.aspose.com/api/java/pdf/com.aspose.pdf.facades/classes/PdfContentEditor) class and bind the input PDF file using bindPdf method. After that, you need to call [replaceImage](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfContentEditor#replaceImage-int-int-java.lang.String-) method with three parameters: a page number, index of the image to replace, and path of the image to be replaced. 
+[PdfContentEditor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfContentEditor#replaceText-java.lang.String-int-java.lang.String-) class allows you to replace image in an existing PDF file. The [replaceImage](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfContentEditor#replaceImage-int-int-java.lang.String-) method helps you achieve this goal. You need to create an object of [PdfContentEditor](http://www.aspose.com/api/java/pdf/com.aspose.pdf.facades/classes/PdfContentEditor) class and bind the input PDF file using bindPdf method. After that, you need to call [replaceImage](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfContentEditor#replaceImage-int-int-java.lang.String-) method with three parameters: a page number, index of the image to replace, and path of the image to be replaced.
 The following code snippet shows you how to replace an image in an existing PDF file.
 
 

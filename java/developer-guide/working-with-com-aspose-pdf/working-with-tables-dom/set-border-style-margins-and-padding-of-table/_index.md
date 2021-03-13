@@ -6,15 +6,15 @@ url: /java/set-border-style-margins-and-padding-of-table/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for Java allows developers to create tables in PDF documents. According to of Aspose.PDF's Document Object Model, a table is a paragraph level element.
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Working with Borders, Margins and Padding**
 Please note that it also supports the feature to set border style, margins and cell padding for tables. Before going into more technical details, it's important to understand the concepts of border, margins and padding which are presented below in a diagram:
 
-**Borders, margins and padding** 
+**Borders, margins and padding**
 
 ![todo:image_alt_text](set-border-style-margins-and-padding-of-table_1.png)
 

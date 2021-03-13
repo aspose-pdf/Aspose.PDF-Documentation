@@ -6,7 +6,7 @@ url: /java/working-with-document-conversion-in-jython/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:**
+**This section includes the following topics:
 
 - [Convert PDF to DOC or DOCX format in Jython](/pdf/java/convert-pdf-to-doc-or-docx-format-in-jython/)
 - [Convert PDF to Excel Workbook in Jython](/pdf/java/convert-pdf-to-excel-workbook-in-jython)

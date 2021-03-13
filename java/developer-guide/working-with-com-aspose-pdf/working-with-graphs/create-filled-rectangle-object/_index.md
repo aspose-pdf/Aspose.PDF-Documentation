@@ -6,11 +6,11 @@ url: /java/create-filled-rectangle-object/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. It also offers the feature to fill rectangle object with a certain color.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Rectangle) object that is filled with color.
 

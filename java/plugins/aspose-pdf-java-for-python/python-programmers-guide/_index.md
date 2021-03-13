@@ -6,7 +6,7 @@ url: /java/python-programmers-guide/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:**
+This section includes the following topics:
 
 - [Working with Document Conversion in Python](/pdf/java/working-with-document-conversion-in-python/)
 - [Working with Document Object in Python](/pdf/java/working-with-document-object-in-python/)

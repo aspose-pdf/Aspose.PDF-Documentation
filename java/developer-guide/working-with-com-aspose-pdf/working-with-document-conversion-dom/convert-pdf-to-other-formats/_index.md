@@ -37,7 +37,7 @@ Starting release of Aspose.PDF for Java 17.2.0, the API offers the feature to c
 
 {{< highlight java >}}
 
- Document doc = new Document("inFile.pdf"); 
+ Document doc = new Document("inFile.pdf");
 
 PdfFormatConversionOptions opts = new PdfFormatConversionOptions("outLog.txt", PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
 
@@ -53,11 +53,11 @@ Aspose.PDF for Java offers the feature to convert PDF files to PDF/A format and 
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-NewDocumentObject-docconversion-ConvertPDFToPDFAFormat-CreatePDFA3AndAttachXMLFile.java" >}}
 ## <ins>**Convert PDF to EPUB format**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 EPUB (short for electronic publication) is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Aspose.PDF for Java supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Java has a class named [EpubSaveOptions](http://www.aspose.com/api/java/pdf/com.aspose.pdf/classes/EpubSaveOptions) which can be used as the second argument to the [Document](http://www.aspose.com/api/java/pdf/com.aspose.pdf/classes/Document).save(..) method, to generate an EPUB file. Please try using the following code snippet to accomplish this requirement.
 
@@ -203,11 +203,11 @@ Once the PDF file is converted to XML format, we need to verify that either the 
 
 In case the source PDF contains images, they are represented as separate files (filename_picN.jpg|png) in the directory where output XML is created. Also, the fonts are represented as True Type fonts and corresponding files (filename_fontN.ttf) are created along the output XML. Where N is order number (1, 2, ...).
 ## <ins>**Convert PDF to XPS format**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into the Windows operating system.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://apireference.aspose.com/java/pdf/com.aspose.pdf/XpsSaveOptions) class that is used as the second argument to the Document.save(..) constructor to generate the XPS file. The following code snippet shows the process of converting PDF files into XPS format.
 

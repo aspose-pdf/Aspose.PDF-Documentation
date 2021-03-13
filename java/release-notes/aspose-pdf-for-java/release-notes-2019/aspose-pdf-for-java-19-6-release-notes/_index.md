@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-19-6-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 19.6](https://repository.aspose.com/repo/com/aspose/aspose-pdf/19.6/)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
@@ -39,24 +39,24 @@ com.aspose.pdf.facades.PdfAnnotationEditor.**importAnnotationFromXfdf**(InputStr
 
 **Added new methods:**
 
-com.aspose.pdf.**CheckboxField**.deepClone()   
-com.aspose.pdf.**EpubLoadOptions**.setMargin(MarginInfo)   
-com.aspose.pdf.facades.**PdfAnnotationEditor**.exportAnnotationsToXfdf(java.io.OutputStream)   
-com.aspose.pdf.**FreeTextAnnotation**.getCallout()   
-com.aspose.pdf.**FreeTextAnnotation**.setCallout(Point[])   
-com.aspose.pdf.**Image**.convertToJpeg(InputStream)   
-com.aspose.pdf.**Image**.#ctor   
-com.aspose.pdf.**PdfFormatConversionOptions**.getTransparencyResolution()   
-com.aspose.pdf.**PdfFormatConversionOptions**.setTransparencyResolution(int)   
-com.aspose.pdf.**RenderingOptions**.getDefaultFontName()   
-com.aspose.pdf.**RenderingOptions**.setDefaultFontName(String)   
-com.aspose.pdf.**Table**.setMcName(String)   
-com.aspose.pdf.**Table**.getMcId()   
-com.aspose.pdf.**Table**.setMcId(int)   
-com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.getTable()   
-com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.getBackgroundColor()   
-com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.setBackgroundColor(Color)   
-com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.getBorder()   
+com.aspose.pdf.**CheckboxField**.deepClone()  
+com.aspose.pdf.**EpubLoadOptions**.setMargin(MarginInfo)  
+com.aspose.pdf.facades.**PdfAnnotationEditor**.exportAnnotationsToXfdf(java.io.OutputStream)  
+com.aspose.pdf.**FreeTextAnnotation**.getCallout()  
+com.aspose.pdf.**FreeTextAnnotation**.setCallout(Point[])  
+com.aspose.pdf.**Image**.convertToJpeg(InputStream)  
+com.aspose.pdf.**Image**.#ctor  
+com.aspose.pdf.**PdfFormatConversionOptions**.getTransparencyResolution()  
+com.aspose.pdf.**PdfFormatConversionOptions**.setTransparencyResolution(int)  
+com.aspose.pdf.**RenderingOptions**.getDefaultFontName()  
+com.aspose.pdf.**RenderingOptions**.setDefaultFontName(String)  
+com.aspose.pdf.**Table**.setMcName(String)  
+com.aspose.pdf.**Table**.getMcId()  
+com.aspose.pdf.**Table**.setMcId(int)  
+com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.getTable()  
+com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.getBackgroundColor()  
+com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.setBackgroundColor(Color)  
+com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.getBorder()  
 com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.setBorder(BorderInfo)
 com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.getAlignment()
 com.aspose.pdf.tagged.logicalstructure.elements.bls.**TableElement**.setAlignment(int)

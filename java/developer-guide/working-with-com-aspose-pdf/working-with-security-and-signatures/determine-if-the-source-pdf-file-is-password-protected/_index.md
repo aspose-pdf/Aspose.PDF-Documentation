@@ -3,7 +3,7 @@ title: Determine if the Source PDF file is Password Protected
 type: docs
 weight: 60
 url: /java/determine-if-the-source-pdf-file-is-password-protected/
-keywords: password protect pdf, 
+keywords: password protect pdf,
 description: Check either the file is a password protect PDF using java
 lastmod: "2020-12-16"
 ---

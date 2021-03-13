@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-19-8-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 19.8](https://repository.aspose.com/repo/com/aspose/aspose-pdf/19.8/)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|

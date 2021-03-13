@@ -7,7 +7,7 @@ description: This section describes how to generate thumbnail images from PDF do
 lastmod: "2021-01-27"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The Adobe Acrobat SDK is a set of tools that help you develop software that interacts with Acrobat technology. The SDK contains header files, type libraries, simple utilities, sample code, and documentation.
 
@@ -19,7 +19,7 @@ Using the Acrobat SDK, you can develop software that integrates with Acrobat and
 
 Aspose.PDF for .NET provides a lot of the same functionality, freeing you from dependence on Adobe Acrobat Automation. This article shows how to generate thumbnail images from PDF documents using first the [Acrobat SDK](/pdf/net/generate-thumbnail-images-from-pdf-documents/) and then Aspose.PDF.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Developing Application using Acrobat Interapplication communication API
 
@@ -38,7 +38,7 @@ The [Acrobat SDK](http://www.adobe.com/devnet/acrobat) combined with the full ve
 
 Once Adobe Acrobat is installed, use regedit.exe and look under HKEY_CLASSES_ROOT for entry entry called AcroExch.PDDoc.
 
-**The registry showing the AcroExch.PDDDoc entry** 
+**The registry showing the AcroExch.PDDDoc entry**
 
 ![todo:image_alt_text](generate-thumbnail-images-from-pdf-documents_1.png)
 
@@ -62,4 +62,4 @@ If we need to convert PDF pages into JPEGs, the [Aspose.PDF.Devices](https://doc
 - Thank you to CodeProject for [Generate Thumbnail Image from PDF document](http://www.codeproject.com/Articles/5887/Generate-Thumbnail-Images-from-PDF-Documents).
 - Thank you to Acrobat for the [Acrobat SDK reference](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm?&accessible=true).
 
-{{% /alert %}} 
+{{% /alert %}}

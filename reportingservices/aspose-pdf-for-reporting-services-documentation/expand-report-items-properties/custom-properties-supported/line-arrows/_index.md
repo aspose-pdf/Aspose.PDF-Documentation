@@ -6,23 +6,23 @@ url: /reportingservices/line-arrows/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 RDL specification does not specify the arrows about the line element, so report builder doesn’t support the setting of arrows for line. With Aspose.Pdf for Reporting Services you can do that easily.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Currently, Aspose.PDF renderer support adding arrows at the start or end for lines by adding custom properties.
 
-Add Start Arrow for Line   
-**Custom Property** **Name**: HasArrowAtStart   
-**Custom Property Value**: True   
+Add Start Arrow for Line  
+**Custom Property** **Name**: HasArrowAtStart  
+**Custom Property Value**: True  
 
-Add End Arrow for Line   
-**Custom Property** **Name**: HasArrowAt End   
-**Custom Property Value**: True   
+Add End Arrow for Line  
+**Custom Property** **Name**: HasArrowAt End  
+**Custom Property Value**: True  
 
 For example, there are two lines named 'line1' and 'line2' in the current report file, and line1 has the start arrow, line2 has the start and end arrows, to satisfy these requirements, you can add custom properties as the following code.
 
@@ -58,4 +58,4 @@ For example, there are two lines named 'line1' and 'line2' in the current report
 </Line>
 
 {{< /highlight >}}
-{{% /alert %}} 
+{{% /alert %}}

@@ -8,11 +8,11 @@ lastmod: "2020-12-16"
 
 
 ## <ins>**Add Text Annotation**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Annotations are held in a [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) object's Annotations collection. Each page has its own Annotations collection. To add an annotation to a page, use the add() method of that page's Annotations collection.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To add an annotation:
 
@@ -26,13 +26,13 @@ The following code snippet shows how to add an annotation to a PDF page.
 
 Cross, circle and star values are also added to the com.aspose.pdf.TextIcon enumeration.
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 - **Cross** - cross icon.
 - **Circle** - circle icon.
 - **Star** - star icon.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## <ins>**Invisible Annotation**
 Sometimes, it is necessary to create a watermark that isn't visible in the document when viewing it but should be visible when the document is printed. Use annotation flags for this purpose. The following code snippet shows how to accomplish this requirement.

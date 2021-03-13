@@ -31,7 +31,7 @@ lastmod: "2020-12-16"
 
 Changes in class **com.aspose.pdf.ColorType:**
 
-**Added method:** 
+**Added method:**
 public static String getName(int value)
 
 **Added new exception class:**

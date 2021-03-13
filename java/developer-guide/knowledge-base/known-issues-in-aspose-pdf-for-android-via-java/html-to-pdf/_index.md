@@ -6,7 +6,7 @@ url: /java/html-to-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Following are the known HTML support issues.
 

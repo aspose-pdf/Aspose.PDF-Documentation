@@ -5,7 +5,7 @@ type: docs
 weight: 200
 url: /net/convert-png-to-pdf/
 lastmod: "2021-01-15"
-description: This article shows how to convert PNG to PDF with Aspose.PDF library in your .NET applications. You can convert PNG images to PDF format using simple steps. 
+description: This article shows how to convert PNG to PDF with Aspose.PDF library in your .NET applications. You can convert PNG images to PDF format using simple steps.
 sitemap:
     changefreq: "weekly"
     priority: 0.7

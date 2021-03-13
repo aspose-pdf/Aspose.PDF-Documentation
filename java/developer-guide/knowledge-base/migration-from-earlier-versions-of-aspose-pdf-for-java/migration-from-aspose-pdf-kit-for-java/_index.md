@@ -6,5 +6,5 @@ url: /java/migration-from-aspose-pdf-kit-for-java/
 lastmod: "2020-12-16"
 ---
 
-###### **This section includes the following topics:** 
+###### **This section includes the following topics:**
 - [Migration from legacy Aspose.Pdf.Kit for Java](/pdf/java/migration-from-legacy-aspose-pdf-kit-for-java/)

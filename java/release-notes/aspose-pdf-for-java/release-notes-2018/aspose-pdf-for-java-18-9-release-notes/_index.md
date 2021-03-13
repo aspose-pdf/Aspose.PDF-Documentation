@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-18-9-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 18.9](https://repository.aspose.com/repo/com/aspose/aspose-pdf/18.9/)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
@@ -28,7 +28,7 @@ This page contains release notes for [Aspose.PDF for Java 18.9](https://reposito
 |PDFJAVA-36816|PDF to TIFF - Problem generating Image file|Bug|
 ### **Public API Changes**
 Changes:
-com.aspose.pdf.**IWarningCallback** -> com.aspose.pdf.**WarningCallback** 
+com.aspose.pdf.**IWarningCallback** -> com.aspose.pdf.**WarningCallback**
 M:com.aspose.pdf.**LatexLoadOptions**.setWarningCallback(IWarningCallback) -> M:com.aspose.pdf.**LatexLoadOptions**.setWarningCallback(WarningCallback)
 M:com.aspose.pdf.**LoadOptions**.setWarningHandler(IWarningCallback) -> M:com.aspose.pdf.**LoadOptions**.setWarningHandler(WarningCallback)
 M:com.aspose.pdf.**SaveOptions**.setWarningHandler(IWarningCallback) -> M:com.aspose.pdf.**SaveOptions**.setWarningHandler(WarningCallback)
@@ -38,9 +38,9 @@ Added class:
 com.aspose.pdf.**XmpValue**
 
 Added methods:
-com.aspose.pdf.**HtmlFragment**.getRectangle()   
-com.aspose.pdf.**Matrix**.getData()   
-com.aspose.pdf.**PageMarkup**.isMulticolumnParagraphsAllowed()   
+com.aspose.pdf.**HtmlFragment**.getRectangle()  
+com.aspose.pdf.**Matrix**.getData()  
+com.aspose.pdf.**PageMarkup**.isMulticolumnParagraphsAllowed()  
 com.aspose.pdf.**PageMarkup**.setMulticolumnParagraphsAllowed   (boolean)
 
 Added field:

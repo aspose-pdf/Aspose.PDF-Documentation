@@ -78,7 +78,7 @@ public static void AddTable_RowColSpan()
     // Load source PDF document
     Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document();
     pdfDocument.Pages.Add();
-    
+   
     // Initializes a new instance of the Table
     Aspose.Pdf.Table table = new Aspose.Pdf.Table
     {
@@ -89,11 +89,11 @@ public static void AddTable_RowColSpan()
     };
 
     // Add 1st row to table
-    Aspose.Pdf.Row row1 = table.Rows.Add();           
+    Aspose.Pdf.Row row1 = table.Rows.Add();          
     for (int cellCount = 1; cellCount <5; cellCount++)
     {
         // Add table cells
-        row1.Cells.Add($"Test 1 {cellCount}");                    
+        row1.Cells.Add($"Test 1 {cellCount}");                   
     }
 
     // Add 2nd row to table
@@ -161,7 +161,7 @@ In the following example, the width of the cell border is set to 0.1 point, the 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-            
+           
 // Instntiate the Document object by calling its empty constructor
 Document doc = new Document();
 Page page = doc.Pages.Add();
@@ -288,7 +288,7 @@ Table table = new Table
 {
     ColumnAdjustment = ColumnAdjustment.AutoFitToContent
 };
-// Add row in table 
+// Add row in table
 Row row = table.Rows.Add();
 // Add cell in table
 Cell cell = row.Cells.Add("Cell 1 text");

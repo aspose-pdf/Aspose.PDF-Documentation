@@ -6,11 +6,11 @@ url: /java/delete-a-particular-annotation-from-the-pdf-file/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 [Delete All Annotations from a Page of a PDF File](/pdf/java/delete-all-annotations-from-a-page-of-a-pdf-file/) showed how to remove all annotations from a page. But what if you only want to remove one? Aspose.PDF allows you to do this too. This article explains how.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To delete a particular annotation from a PDF, call the AnnotationCollection collection's delete(..) method. This collection belongs to the [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) object. The delete(..) method requires the index of the annotation you want to delete. Then, save the update PDF file.
 

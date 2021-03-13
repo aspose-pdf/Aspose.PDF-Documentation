@@ -6,11 +6,11 @@ url: /cpp/aspose-pdf-for-cpp-18-4-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for C++ 18.4](https://www.nuget.org/packages/Aspose.PDF.Cpp/18.4.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Improvements and Changes**
 1. Internal code improved: fixed some bugs and improved performance.
 1. Improved AsposeCppLib: System.Xml, System.Drawing classes.

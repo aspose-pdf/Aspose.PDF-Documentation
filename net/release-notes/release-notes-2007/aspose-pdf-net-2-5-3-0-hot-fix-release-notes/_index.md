@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF .Net 2.5.3.0 Hot Fix](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-.net-2.5.3.0-hot-fix/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 In this hotfix:
 

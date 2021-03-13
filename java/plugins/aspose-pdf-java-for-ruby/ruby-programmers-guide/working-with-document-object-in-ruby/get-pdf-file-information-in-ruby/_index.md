@@ -6,10 +6,11 @@ url: /java/get-pdf-file-information-in-ruby/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Get PDF File Information**
+
+## Aspose.PDF - Get PDF File Information
 To Get File Information of Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **GetPdfFileInfo** module.
 
-**Ruby Code**
+**Ruby Code
 
 ```
 # The path to the documents directory.
@@ -39,7 +40,8 @@ puts "Subject:-" + doc_info.getSubject().to_s
 puts "Title:-" + doc_info.getTitle().to_s
 ```
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Get PDF File Information (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getpdffileinfo.rb)

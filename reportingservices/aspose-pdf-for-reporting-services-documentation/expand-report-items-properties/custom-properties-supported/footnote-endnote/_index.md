@@ -6,24 +6,24 @@ url: /reportingservices/footnote-endnote/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Report builder cannot set the footnote or endnote for textboxes. With Aspose.PDF for Reporting Services, you can do that easily by adding custom properties.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
-Footnote   
-**Custom Property** **Name**: Footnote   
-**Custom Property Value**: *the* *value* *should* *be* *a* *string*   
+{{% alert color="primary" %}}
+Footnote  
+**Custom Property** **Name**: Footnote  
+**Custom Property Value**: *the* *value* *should* *be* *a* *string*  
 
-Endnote   
-**Custom Property** **Name**: Endnote   
-**Custom Property Value**: *the* *value* *should* *be* *a* *string*    
+Endnote  
+**Custom Property** **Name**: Endnote  
+**Custom Property Value**: *the* *value* *should* *be* *a* *string*   
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 For example, the content of some Textbox in the current report is 'AsposePdf4RS', you want to describe the phrase ‘AsposePdf4RS’ in detail with the style of footnote, which content is "An optional PDF renderer for SSRS from Aspose Cop".
-{{% /alert %}} 
+{{% /alert %}}
 
 In SSRS2005, the code should be like the following:
 
@@ -76,4 +76,4 @@ In SSRS2008, the code should be like the following:  
 </Textbox>
 
 {{< /highlight >}}
-{{% /alert %}} 
+{{% /alert %}}

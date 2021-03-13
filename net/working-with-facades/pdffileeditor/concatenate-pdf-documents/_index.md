@@ -24,9 +24,9 @@ In this article, we’ll show you how to concatenate multiple PDF files using Me
 
 [PdfFileEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffileeditor) is the class in [Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) which allows you to concatenate multiple PDF files. You can not only concatenate files using FileStreams but also using MemoryStreams as well. In this article, the process of concatenating the files using MemoryStreams will be explained and then shown using the code snippet.
 
-[Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class can be used to concatenate two PDF files. The [Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method allows you to pass three parameters: first input PDF, second input PDF, and output PDF. The final output PDF contains both the input PDF files. 
+[Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class can be used to concatenate two PDF files. The [Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method allows you to pass three parameters: first input PDF, second input PDF, and output PDF. The final output PDF contains both the input PDF files.
 
-The following code snippet shows you how to concatenate PDF files using file paths. 
+The following code snippet shows you how to concatenate PDF files using file paths.
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateUsingPath-ConcatenateUsingPath.cs" >}}
 
@@ -162,7 +162,7 @@ Now we need to add links towards the pages inside the concatenated file. In orde
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-CompletedCode.cs" >}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 You may download the sample documents from following links
 

@@ -4,15 +4,15 @@ type: docs
 weight: 30
 url: /java/delete-bookmarks-from-pdf-document/
 keywords: pdf bookmarks,
-description: delete pdf bookmarks using java 
+description: delete pdf bookmarks using java
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 All bookmarks in a PDF are held in the [OutlineCollection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/OutlineCollection) collection. This article explains how to delete all, or a specific, bookmark from a PDF.
 
-{{% /alert %}} 
+{{% /alert %}}
 ## **Delete All Bookmarks**
 To delete all bookmarks from a PDF file:
 

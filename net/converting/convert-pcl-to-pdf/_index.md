@@ -94,7 +94,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
                     <li>Transparent Print Data Command.</li>
                     <li>Embedded soft fonts. In current version instead of creating soft font our library selects
                         suitable font from existing "hard" TrueType fonts installed on a target machine. <br/>
-                        Suitability is defined by width/height ratio.<br/> 
+                        Suitability is defined by width/height ratio.<br/>
                         This feature works only for Bitmap and TrueType fonts and do not
                         guarantee that text printed with soft font will be relevant to the one in a source file.<br/>
                         Because character codes in soft font can unmatched default ones.
@@ -146,7 +146,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
                 &nbsp;
             </td>
             <td>
-                Allow filling text, raster images and rectangular areas with a raster predefined and <br> 
+                Allow filling text, raster images and rectangular areas with a raster predefined and <br>
                 user-defined patterns specify transparency mode for patterns and
                 source raster image. <br> Predefined patterns are hatching, cross-hatch
                 and shading ones.
@@ -181,7 +181,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
             </td>
             <td>
                 Allow loading HP-GL/2 vector images from PCL file into memory. Vector image has an origin at lower
-                left corner of the printable area, can be scaled, translated, rotated and clipped. <br> 
+                left corner of the printable area, can be scaled, translated, rotated and clipped. <br>
                 Vector image can contain text, as labels, and geometric figures such
                 as rectangle, circle, ellipse, line, arc, bezier curve and complex figures composed from the simple
                 ones. <br> Closed figures including letters of labels can be filled with
@@ -243,7 +243,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 ## Converting a PCL file into PDF format
 
-To allow conversion from PCL to PDF, Aspose.PDF has the class [`PclLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) which is used to initialize the LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document. 
+To allow conversion from PCL to PDF, Aspose.PDF has the class [`PclLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) which is used to initialize the LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document.
 
 The following code snippet shows the process of converting a PCL file into PDF format.
 

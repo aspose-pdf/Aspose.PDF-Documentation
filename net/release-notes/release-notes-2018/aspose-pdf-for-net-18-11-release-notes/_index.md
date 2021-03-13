@@ -1,21 +1,21 @@
 ---
 title: Aspose.PDF for .NET 18.11 Release Notes
-linktitle: Aspose.PDF for .NET 18.11 
+linktitle: Aspose.PDF for .NET 18.11
 type: docs
 weight: 20
 url: /net/aspose-pdf-for-net-18-11-release-notes/
 lastmod: "2020-12-14"
-description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.11. 
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.11.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 18.11](https://www.nuget.org/packages/Aspose.Pdf/18.11.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 
@@ -68,60 +68,60 @@ This page contains release notes for [Aspose.PDF for .NET 18.11](https://www.nu
 
 ### Added APIs:
 
-* Class Aspose.Pdf.Optimization.ImageCompressionOptions   
-Constructor Aspose.Pdf.Optimization.ImageCompressionOptions   
-* Property Aspose.Pdf.Optimization.ImageCompressionOptions.CompressImages (moved from Aspose.Pdf.Document.OptimizationOptions)   
-* Property Aspose.Pdf.Optimization.ImageCompressionOptions.ResizeImages (moved from Aspose.Pdf.Document.OptimizationOptions)   
-* Property Aspose.Pdf.Optimization.ImageCompressionOptions.ImageQuality (moved from Aspose.Pdf.Document.OptimizationOptions)   
-* Property Aspose.Pdf.Optimization.ImageCompressionOptions.MaxResolution (moved from Aspose.Pdf.Document.OptimizationOptions)   
-* Property Aspose.Pdf.Optimization.ImageCompressionOptions.Version   
-* Enumeration Aspose.Pdf.Optimization.ImageCompressionVersion   
-* Enumeration member Aspose.Pdf.Optimization.ImageCompressionVersion.Standard   
-* Enumeration member Aspose.Pdf.Optimization.ImageCompressionVersion.Fast   
-* Enumeration member Aspose.Pdf.Optimization.ImageCompressionVersion.Mixed   
-* Class Aspose.Pdf.Optimization.OptimizationOptions   
-Constructor Aspose.Pdf.Optimization.OptimizationOptions.#ctor   
-* Property Aspose.Pdf.Optimization.OptimizationOptions.LinkDuplcateStreams (moved from Aspose.Pdf.Document.OptimizationOptions)      
-* Property Aspose.Pdf.Optimization.OptimizationOptions.AllowReusePageContent (moved from Aspose.Pdf.Document.OptimizationOptions)     
-* Property Aspose.Pdf.Optimization.OptimizationOptions.RemoveUnusedStreams (moved from Aspose.Pdf.Document.OptimizationOptions)      
-* Property Aspose.Pdf.Optimization.OptimizationOptions.RemoveUnusedObjects (moved from Aspose.Pdf.Document.OptimizationOptions)      
-* Property Aspose.Pdf.Optimization.OptimizationOptions.ImageCompressionOptions (moved from Aspose.Pdf.Document.OptimizationOptions)      
-* Property Aspose.Pdf.Optimization.OptimizationOptions.CompressImages   
-* Property Aspose.Pdf.Optimization.OptimizationOptions.ResizeImages (moved from Aspose.Pdf.Document.OptimizationOptions)      
-* Property Aspose.Pdf.Optimization.OptimizationOptions.ImageQuality (moved from Aspose.Pdf.Document.OptimizationOptions)       
-* Property Aspose.Pdf.Optimization.OptimizationOptions.MaxResoultion (moved from Aspose.Pdf.Document.OptimizationOptions)      
-* Property Aspose.Pdf.Optimization.OptimizationOptions.UnembedFonts (moved from Aspose.Pdf.Document.OptimizationOptions)      
-* Property Aspose.Pdf.Optimization.OptimizationOptions.RemovePrivateInfo (moved from Aspose.Pdf.Document.OptimizationOptions)         
-* Method Aspose.Pdf.Optimization.OptimizationOptions.All (moved from Aspose.Pdf.Document.OptimizationOptions)         
-* Property Aspose.Pdf.Text.TextFragment.Hyperlink   
-* Method Aspose.Pdf.Text.TextFragmentAbsorber.RemoveAllText(Aspose.Pdf.Page,Aspose.Pdf.Rectangle)   
+* Class Aspose.Pdf.Optimization.ImageCompressionOptions  
+Constructor Aspose.Pdf.Optimization.ImageCompressionOptions  
+* Property Aspose.Pdf.Optimization.ImageCompressionOptions.CompressImages (moved from Aspose.Pdf.Document.OptimizationOptions)  
+* Property Aspose.Pdf.Optimization.ImageCompressionOptions.ResizeImages (moved from Aspose.Pdf.Document.OptimizationOptions)  
+* Property Aspose.Pdf.Optimization.ImageCompressionOptions.ImageQuality (moved from Aspose.Pdf.Document.OptimizationOptions)  
+* Property Aspose.Pdf.Optimization.ImageCompressionOptions.MaxResolution (moved from Aspose.Pdf.Document.OptimizationOptions)  
+* Property Aspose.Pdf.Optimization.ImageCompressionOptions.Version  
+* Enumeration Aspose.Pdf.Optimization.ImageCompressionVersion  
+* Enumeration member Aspose.Pdf.Optimization.ImageCompressionVersion.Standard  
+* Enumeration member Aspose.Pdf.Optimization.ImageCompressionVersion.Fast  
+* Enumeration member Aspose.Pdf.Optimization.ImageCompressionVersion.Mixed  
+* Class Aspose.Pdf.Optimization.OptimizationOptions  
+Constructor Aspose.Pdf.Optimization.OptimizationOptions.#ctor  
+* Property Aspose.Pdf.Optimization.OptimizationOptions.LinkDuplcateStreams (moved from Aspose.Pdf.Document.OptimizationOptions)     
+* Property Aspose.Pdf.Optimization.OptimizationOptions.AllowReusePageContent (moved from Aspose.Pdf.Document.OptimizationOptions)    
+* Property Aspose.Pdf.Optimization.OptimizationOptions.RemoveUnusedStreams (moved from Aspose.Pdf.Document.OptimizationOptions)     
+* Property Aspose.Pdf.Optimization.OptimizationOptions.RemoveUnusedObjects (moved from Aspose.Pdf.Document.OptimizationOptions)     
+* Property Aspose.Pdf.Optimization.OptimizationOptions.ImageCompressionOptions (moved from Aspose.Pdf.Document.OptimizationOptions)     
+* Property Aspose.Pdf.Optimization.OptimizationOptions.CompressImages  
+* Property Aspose.Pdf.Optimization.OptimizationOptions.ResizeImages (moved from Aspose.Pdf.Document.OptimizationOptions)     
+* Property Aspose.Pdf.Optimization.OptimizationOptions.ImageQuality (moved from Aspose.Pdf.Document.OptimizationOptions)      
+* Property Aspose.Pdf.Optimization.OptimizationOptions.MaxResoultion (moved from Aspose.Pdf.Document.OptimizationOptions)     
+* Property Aspose.Pdf.Optimization.OptimizationOptions.UnembedFonts (moved from Aspose.Pdf.Document.OptimizationOptions)     
+* Property Aspose.Pdf.Optimization.OptimizationOptions.RemovePrivateInfo (moved from Aspose.Pdf.Document.OptimizationOptions)        
+* Method Aspose.Pdf.Optimization.OptimizationOptions.All (moved from Aspose.Pdf.Document.OptimizationOptions)        
+* Property Aspose.Pdf.Text.TextFragment.Hyperlink  
+* Method Aspose.Pdf.Text.TextFragmentAbsorber.RemoveAllText(Aspose.Pdf.Page,Aspose.Pdf.Rectangle)  
 * Class Aspose.Pdf.TaggedPdf.TaggedPdfBlockLevelTextElement       
-* Method Aspose.Pdf.TaggedPdf.TaggedPdfBlockLevelTextElement.#ctor     (Aspose.Pdf.Document,System.String,System.String,Aspose.Pdf.Text.TextState)   
-* Method Aspose.Pdf.TaggedPdf.TaggedPdfContent.Add     (Aspose.Pdf.TaggedPdf.TaggedPdfBlockLevelTextElement)     
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfBlockLevelTextElement.#ctor     (Aspose.Pdf.Document,System.String,System.String,Aspose.Pdf.Text.TextState)  
+* Method Aspose.Pdf.TaggedPdf.TaggedPdfContent.Add     (Aspose.Pdf.TaggedPdf.TaggedPdfBlockLevelTextElement)    
 * Method Aspose.Pdf.TaggedPdf.TaggedPdfDocumentElement.Add   (Aspose.Pdf.Page,Aspose.Pdf.TaggedPdf.TaggedPdfBlockLevelTextElement)          
-* Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.MCID          
-* Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.Tag          
-* Class Aspose.Pdf.TaggedPdf.TaggedPdfH1Elemen           
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.MCID         
+* Property Aspose.Pdf.TaggedPdf.TaggedPdfElement.Tag         
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfH1Elemen          
 Constructor Aspose.Pdf.TaggedPdf.TaggedPdfH1Element.#ctor(Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)          
-* Class Aspose.Pdf.TaggedPdf.TaggedPdfH2Element          
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfH2Element         
 Constructor Aspose.Pdf.TaggedPdf.TaggedPdfH2Element.#ctor(Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)            
-* Class Aspose.Pdf.TaggedPdf.TaggedPdfH3Element    
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfH3Element   
 Constructor Aspose.Pdf.TaggedPdf.TaggedPdfH3Element.#ctor   (Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)          
 * Class Aspose.Pdf.TaggedPdf.TaggedPdfH4Element       
 Constructor Aspose.Pdf.TaggedPdf.TaggedPdfH4Element.#ctor(Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)       
-* Class Aspose.Pdf.TaggedPdf.TaggedPdfH5Element       
-Constructor Aspose.Pdf.TaggedPdf.TaggedPdfH5Element.#ctor(Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)       
-* Class Aspose.Pdf.TaggedPdf.TaggedPdfH6Element       
-Constructor Aspose.Pdf.TaggedPdf.TaggedPdfH6Element.#ctor(Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)      
-* Class Aspose.Pdf.TaggedPdf.TaggedPdfPElement       
-Constructor Aspose.Pdf.TaggedPdf.TaggedPdfPElement.#ctor(Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)   
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfH5Element      
+Constructor Aspose.Pdf.TaggedPdf.TaggedPdfH5Element.#ctor(Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)      
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfH6Element      
+Constructor Aspose.Pdf.TaggedPdf.TaggedPdfH6Element.#ctor(Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)     
+* Class Aspose.Pdf.TaggedPdf.TaggedPdfPElement      
+Constructor Aspose.Pdf.TaggedPdf.TaggedPdfPElement.#ctor(Aspose.Pdf.Document,System.String,Aspose.Pdf.Text.TextState)  
 
 ### Removed APIs:
 
 * Aspose.Pdf.Document.OptimizationOptions was moved into Aspose.Pdf.Optimization namespace. 
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 But Aspose.Pdf.Document.OptimizationOptions class was kept for backward compatibility.
 
-{{% /alert %}} 
+{{% /alert %}}

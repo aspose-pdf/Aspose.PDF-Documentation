@@ -6,7 +6,7 @@ url: /java/get-attachment-information/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 As mentioned in [Get Attachments from a PDF Document](/pdf/java/get-attachments-from-a-pdf-document/), attachment information is held in the [FileSpecification](https://apireference.aspose.com/java/pdf/com.aspose.pdf/FileSpecification) object, gathered with other attachments in the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's EmbeddedFiles collection.
 
@@ -19,7 +19,7 @@ The [FileSpecification](https://apireference.aspose.com/java/pdf/com.aspose.pdf/
 
 To get these parameters, first make sure that the getParams() method does not return null.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Either loop through all of the attachments in the EmbeddedFiles collection using for loop, or get an individual attachment by specifying its index value. The following code snippet shows how to get information about a specific attachment.
 

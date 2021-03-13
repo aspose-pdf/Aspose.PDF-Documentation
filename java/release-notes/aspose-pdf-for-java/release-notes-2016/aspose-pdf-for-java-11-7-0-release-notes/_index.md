@@ -40,40 +40,40 @@ lastmod: "2020-12-16"
 |PDFJAVA-35875 |HTML to PDF: incorrect text position |Bug |
 |PDFJAVA-35882 |PDF to DOCX - Tab indent is being ignored |Bug |
 ### **Public API Changes**
-Changes in class **com.aspose.pdf.PdfAction:** 
+Changes in class **com.aspose.pdf.PdfAction:**
 moved method:
 
 - public void execute(IDocument document)
 
-Changes in class **com.aspose.pdf.ExplicitDestination:** 
+Changes in class **com.aspose.pdf.ExplicitDestination:**
 moved method:
 
 - com.aspose.pdf.ExplicitDestination.createDestination(com.aspose.pdf.Document,int,int,double[])
 
-Changes in class **com.aspose.pdf.XYZExplicitDestination:** 
+Changes in class **com.aspose.pdf.XYZExplicitDestination:**
 added methods:
 
 - public static XYZExplicitDestination createDestination(Page page, double left, double top, double zoom, boolean considerRotation)
 - public static XYZExplicitDestination createDestinationToUpperLeftCorner(Page page, double zoom)
 - public static XYZExplicitDestination createDestinationToUpperLeftCorner(Page page)
 
-Changes in class **com.aspose.pdf.ColumnAdjustment:** 
+Changes in class **com.aspose.pdf.ColumnAdjustment:**
 added field:
 
 - public static final int AutoFitToWindow = 2;
 
-Changes in class **com.aspose.pdf.Document:** 
+Changes in class **com.aspose.pdf.Document:**
 added method:
 
 - public boolean convert(String outputLogFileName, /* PdfFormat **/int format, /** ConvertErrorAction **/int action, /** ConvertTransparencyAction */int transparencyAction)
 
-Changes in class **com.aspose.pdf.PdfFileStamp:** 
+Changes in class **com.aspose.pdf.PdfFileStamp:**
 added methods:
 
 - public /* NumberingStyle */int getNumberingStyle()
 - public void setNumberingStyle(/* NumberingStyle */int value)
 
-Changes in class **com.aspose.pdf.HtmlSaveOptions:** 
+Changes in class **com.aspose.pdf.HtmlSaveOptions:**
 added methods:
 
 - public boolean getUseZOrder()
@@ -85,7 +85,7 @@ added methods:
 - public boolean getPreventGlyphsGrouping()
 - public void setPreventGlyphsGrouping(boolean value)
 
-Changes in class **com.aspose.pdf.LaTeXSaveOptions:** 
+Changes in class **com.aspose.pdf.LaTeXSaveOptions:**
 added methods:
 
 - public int getPagesCount()

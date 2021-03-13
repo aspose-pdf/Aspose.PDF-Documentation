@@ -6,15 +6,15 @@ url: /sharepoint/convert-pdf-to-html/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for SharePoint supports feature to convert PDF document form SharePoint document library to HTML format. In this article we will demonstrate PDF to HTML conversion.
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Converting PDF document to HTML**
 
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Convert PDF document from SharePoint Document library to HTML as following:
 
@@ -26,4 +26,4 @@ Convert PDF document from SharePoint Document library to HTML as following:
 
 ![todo:image_alt_text](convert-pdf-to-html_2.png)
 
-{{% /alert %}} 
+{{% /alert %}}

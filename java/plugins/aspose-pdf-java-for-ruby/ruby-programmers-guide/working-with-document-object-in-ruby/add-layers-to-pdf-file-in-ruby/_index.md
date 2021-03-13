@@ -6,10 +6,11 @@ url: /java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Add Layers**
+
+## Aspose.PDF - Add Layers
 <ins> To add Layers in Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **AddLayers** module.
 
-**Ruby Code**
+**Ruby Code
 
 
 ```
@@ -69,7 +70,8 @@ puts "Added Layers Successfully, please check the output file."
 ```
 
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Add Layers (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)

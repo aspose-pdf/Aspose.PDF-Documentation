@@ -6,11 +6,11 @@ url: /reportingservices/install-with-msi-installer/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-You can install Aspose.PDF for Reporting Services by using a MSI installer. Run Aspose.PDF.ReportingServices.msi and follow the steps offered by the installer. Installer will copy the assembly and other files to the specified directory and install the product on the default instance of Reporting Services. You do not need to copy or modify any files manually unless you want to add special configuration parameters as described in the Configure Aspose.PDF for Reporting Services section. 
+You can install Aspose.PDF for Reporting Services by using a MSI installer. Run Aspose.PDF.ReportingServices.msi and follow the steps offered by the installer. Installer will copy the assembly and other files to the specified directory and install the product on the default instance of Reporting Services. You do not need to copy or modify any files manually unless you want to add special configuration parameters as described in the Configure Aspose.PDF for Reporting Services section.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Automatic installation is the best option that works in most cases. However, you may need to install the product manually in some situations like:
 
@@ -20,6 +20,6 @@ Automatic installation is the best option that works in most cases. However, you
 
 {{% alert color="primary" %}}
 
-Please note that when performing manual installation, some files including offline product documentation etc are not upgraded. 
+Please note that when performing manual installation, some files including offline product documentation etc are not upgraded.
 
 {{% /alert %}}

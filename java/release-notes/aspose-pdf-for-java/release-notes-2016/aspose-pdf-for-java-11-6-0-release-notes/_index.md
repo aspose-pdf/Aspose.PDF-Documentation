@@ -45,51 +45,51 @@ and methods:
 - public boolean getSigned()
 - public void setSigned(boolean value)
 
-Changes in class **com.aspose.pdf.TextFormattingMode:** 
+Changes in class **com.aspose.pdf.TextFormattingMode:**
 added new constant:
 
 - public static final int MemorySaving = 2;
 
-Changes in class **com.aspose.pdf.Table:** 
+Changes in class **com.aspose.pdf.Table:**
 added methods:
 
 - public boolean isBordersIncluded()
 - public void setBordersIncluded(boolean value)
 
-Changes in class **com.aspose.pdf.PageNumberStamp:** 
+Changes in class **com.aspose.pdf.PageNumberStamp:**
 added methods:
 
 - public NumberingStyle int getNumberingStyle()
 - public void setNumberingStyle(NumberingStyle int value)
 
-Changes in class **com.aspose.pdf.PdfFileStamp:** 
+Changes in class **com.aspose.pdf.PdfFileStamp:**
 added methods:
 
 - public NumberingStyle int getNumberingStyle()
 - public void setNumberingStyle(NumberingStyle int value)
 
-Changes in class **com.aspose.pdf.XImageCollection:** 
+Changes in class **com.aspose.pdf.XImageCollection:**
 added methods:
 
 - public void addWithImageFilterType(InputStream image, ImageFilterType int filterType)
 - public void deleteByIndex(int index)
 
-Changes in class **com.aspose.pdf.OperatorCollection:** 
+Changes in class **com.aspose.pdf.OperatorCollection:**
 added method:
 
 - public boolean isFastTextExtractionMode()
 
-Changes in class **com.aspose.pdf.LightweightOperatorCollection:** 
+Changes in class **com.aspose.pdf.LightweightOperatorCollection:**
 added method:
 
 - public boolean isFastTextExtractionMode()
 
-Changes in class **com.aspose.pdf.BaseOperatorCollection:** 
+Changes in class **com.aspose.pdf.BaseOperatorCollection:**
 added method:
 
 - public boolean isFastTextExtractionMode()
 
-Changes in class **com.aspose.pdf.devices.DocumentDevice:** 
+Changes in class **com.aspose.pdf.devices.DocumentDevice:**
 added method:
 
 - public void binarizeBradley(InputStream inputImageStream, OutputStream outputImageStream, double threshold)
@@ -102,7 +102,7 @@ Added new abstract **com.aspose.pdf.IColorSpaceConversionStrategy** class
 with method:
 public void convert(Page page);
 
-Changes in class **com.aspose.pdf.Document:** 
+Changes in class **com.aspose.pdf.Document:**
 added method:
 
 - public boolean convert(String outputLogFileName, PdfFormat int format, ConvertErrorAction int action, ConvertTransparencyAction int transparencyAction)
@@ -113,7 +113,7 @@ with constants:
 - public static final int Default = 0;
 - public static final int Mask = 1;
 
-Changes in class **com.aspose.pdf.CompositingParameters:** 
+Changes in class **com.aspose.pdf.CompositingParameters:**
 added constructor:
 
 - public CompositingParameters(BlendMode int blendMode, ImageFilterType int filterType, boolean isMasked)

@@ -1,6 +1,6 @@
 ---
 title: Working with PDF File Metadata | C#
-linktitle: PDF File Metadata 
+linktitle: PDF File Metadata
 type: docs
 weight: 140
 url: /net/pdf-file-metadata/
