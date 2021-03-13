@@ -21,7 +21,7 @@ This new version of Aspose.PDF for C++ has codebase of Aspose.PDF for .NET 20.10
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
-* Property Aspose.Pdf.Document.DisableFontLicenseVerifications                                                
+* Property Aspose.Pdf.Document.DisableFontLicenseVerifications                                               
 * Method Aspose.Pdf.Facades.PdfAnnotationEditor.FlatteningAnnotations(Aspose.Pdf.Forms.Form.FlattenSettings)
 * Method Aspose.Pdf.FileSpecification.GetValue(System.String)
 * Method Aspose.Pdf.FileSpecification.SetValue(System.String,System.String)

@@ -89,7 +89,7 @@ namespace Aspose.Pdf.Examples
             header.Position = new Position(130, 720);
             page.Paragraphs.Add(header);
 
-            // Add description 
+            // Add description
             var descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
             var description = new TextFragment(descriptionText);
             description.TextState.Font = FontRepository.FindFont("Times New Roman");

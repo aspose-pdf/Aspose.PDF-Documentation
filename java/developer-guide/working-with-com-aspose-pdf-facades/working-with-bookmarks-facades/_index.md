@@ -7,11 +7,11 @@ lastmod: "2020-12-16"
 ---
 
 ## <ins>**Create Bookmarks of All Pages (facades)**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 In order to create bookmarks of all the pages, you need to use createBookmarks method without any parameters . PdfBookmarEditor class allows you to create bookmarks of all the pages of a PDF file. First, you need to create an object of PdfBookmarkEditor class and bind the input PDF using bindPdf method. Then, you have to call createBookmarks method and save the output PDF file using save method.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows you:
 
@@ -20,11 +20,11 @@ The following code snippet shows you:
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-facades-Bookmarks-CreateBookmarksOfAllPages-.java" >}}
 ## <ins>**Create Bookmarks of All Pages with Properties (facades)**
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 PdfBookmarEditor class allows you to create bookmarks of all the pages of a PDF file and specify the properties (Color, Bold, Italic). You can do that with the help of createBookmarks method. First, you need to create an object of PdfBookmarkEditor class and bind the input PDF using bindPdf method. Then, you have to call createBookmarks method and save the output PDF file using save method.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows you how to create bookmarks of all the pages with properties.
 
@@ -32,11 +32,11 @@ The following code snippet shows you how to create bookmarks of all the pages wi
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-facades-Bookmarks-CreateBookmarksOfAllPagesWithProperties-.java" >}}
 ## <ins>**Export Bookmarks to XML from an Existing PDF File (facades)**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The exportBookmarksToXml method allows you to export bookmarks from a PDF file to an XML file.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To export bookmarks:
 
@@ -58,11 +58,11 @@ From Aspose.PDF for Java 9.0.0, the PdfBookmarkEditor class implements the expor
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-facades-Bookmarks-ExportBookmarksToXMLFromAnExistingPDFFile-ExportBookmarksToXML.java" >}}
 ## <ins>**Import Bookmarks from XML to an Existing PDF File (facades)**
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The importBookmarksWithXml method allows you to import bookmarks into a PDF file from an XML file.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To import bookmarks:
 

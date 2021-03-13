@@ -6,11 +6,11 @@ url: /java/setting-dpi-or-ppi-of-images-in-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for Java has features that let you add, delete and update images in PDF files. It is also possible to set the DPI/PPI of an image in a PDF file.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows how to get an image with certain resolution from a PDF file and then replace it.
 

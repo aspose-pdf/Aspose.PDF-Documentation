@@ -33,7 +33,7 @@ Following releases of running examples are available to download on below mentio
 
 ###  CodePlex
 
-- Aspose.PDF Java for Python Examples 
+- Aspose.PDF Java for Python Examples
   - [Aspose.PDF Java for Python](http://asposepdfjavapython.codeplex.com)
 
 

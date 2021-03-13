@@ -4,7 +4,7 @@ linktitle: Licensing and limitations
 type: docs
 weight: 50
 url: /net/licensing/
-description: Aspose. PDF for .NET invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product. 
+description: Aspose. PDF for .NET invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
 lastmod: "2021-01-29"
 sitemap:
     changefreq: "weekly"
@@ -79,7 +79,7 @@ Aspose.PDF allows developers to apply metered key. It is a new licensing mechani
 A new class Metered has been introduced to apply metered key. Following is the sample code demonstrating how to set metered public and private keys.
 
  For more details, please refer to the [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
- 
+
 ```csharp
 public static void SetMeteredLicense()
 {

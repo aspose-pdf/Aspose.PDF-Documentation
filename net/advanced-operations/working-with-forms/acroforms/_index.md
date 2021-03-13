@@ -72,9 +72,9 @@ pdfDocument.Form.Add(textBoxField, 1);
 dataDir = dataDir + "TextBox_out.pdf";
 // Save modified PDF
 pdfDocument.Save(dataDir);
-``` 
+```
 
-### Adding RadioButtonField 
+### Adding RadioButtonField
 
 The following code snippets show how to add [RadioButtonField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) in a PDF document.
 
@@ -291,7 +291,7 @@ TextBoxField textBoxField = pdfDocument.Form["textbox1"] as TextBoxField;
 textBoxField.Value = "Value to be filled in the field";
 dataDir = dataDir + "FillFormField_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir); 
+pdfDocument.Save(dataDir);
 ```
 
 ## Extract data from form
@@ -448,7 +448,7 @@ Aspose.Pdf.Text.Font font = FontRepository.FindFont("ComicSansMS");
 
 dataDir = dataDir + "FormFieldFont14_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir); 
+pdfDocument.Save(dataDir);
 ```
 ## Add/remove fields in existing form
 

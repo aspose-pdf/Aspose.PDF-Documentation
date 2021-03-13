@@ -6,11 +6,11 @@ url: /java/quick-tips/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains some quick tips related to Aspose.PDF for Java API
 
-{{% /alert %}} 
+{{% /alert %}}
 #### **Add JavaScript to PDF**
 The following code snippet can be used to set/add JavaScript to PDF file.
 
@@ -33,10 +33,10 @@ try
     //Assigne JavascriptAction object to desired action of Document
     document.setOpenAction(javaScript);
     document.setOpenAction(new JavascriptAction("app.alert('Hello PDF')"));
-    
+   
     //Adding JavaScript at Page Level
     document.getActions().setBeforeClosing(new JavascriptAction("app.alert('document is closing')"));
-    
+   
     document.getPages().get_Item(1).getActions().setOnOpen(new JavascriptAction("app.alert('page 1 is opened')"));
 
     document.getPages().get_Item(2).getActions().setOnOpen(new JavascriptAction("app.alert('page 2 is opened')"));
@@ -76,7 +76,7 @@ The following code snippet shows the steps to laod PDF file into ByteArray and t
 
 {{< highlight java >}}
 
- // source PDF file 
+ // source PDF file
 
 java.io.File file = new java.io.File("c:/pdftest/result.pdf");
 

@@ -6,11 +6,11 @@ url: /java/concatenate-pdf-files/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Concatenating two files, that is, adding one to the end of another, involves opening both files and passing the pages of one to the target document.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To concatenate two PDF files:
 

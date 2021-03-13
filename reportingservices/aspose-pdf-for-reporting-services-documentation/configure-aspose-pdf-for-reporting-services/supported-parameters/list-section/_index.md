@@ -11,15 +11,15 @@ lastmod: "2020-12-16"
 
 You can get some introduction about List Section from [here](https://docs.aspose.com/pdf/net/manipulate-pdf-document/).
 
-{{% /alert %}} 
+{{% /alert %}}
 
 If you want to support creation of List Section, such as Table of Contents, List of Tables and so on, please add report parameter as the following:
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-**Parameter Name**: IsListSectionSupported   
-**Date Type**: Boolean   
-**Values supported**: True, False(default)   
+**Parameter Name**: IsListSectionSupported  
+**Date Type**: Boolean  
+**Values supported**: True, False(default)  
 
 **Example**
 {{< highlight csharp >}}
@@ -35,4 +35,4 @@ If you want to support creation of List Section, such as Table of Contents, List
 
 {{< /highlight >}}
 
-{{% /alert %}} 
+{{% /alert %}}

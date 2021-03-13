@@ -4,7 +4,7 @@ linktitle: Split PDF files
 type: docs
 weight: 60
 url: /net/split-pdf-document/
-description: This topic shows how to split PDF pages into individual PDF files in your .NET applications with C#. 
+description: This topic shows how to split PDF pages into individual PDF files in your .NET applications with C#.
 aliases:
     - /net/split-document/
     - /net/split-pdf-pages/

@@ -6,16 +6,16 @@ url: /sharepoint/convert-pdf-to-pdfa/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 In [Aspose.PDF for SharePoint 2.0](http://www.aspose.com/community/files/73/sharepoint-components/aspose.pdf-for-sharepoint/entry610978.aspx) release we have added support to create PDFA compliant PDF.
 
 Currently Aspose.PDF for SharePoint supports only PDFA1b standard.
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Creating a PDFA compliant Document**
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Convert PDF from SharePoint Document library to PDFA as following:
 
@@ -27,4 +27,4 @@ Convert PDF from SharePoint Document library to PDFA as following:
 
 ![todo:image_alt_text](convert-pdf-to-pdfa_2.png)
 
-{{% /alert %}} 
+{{% /alert %}}

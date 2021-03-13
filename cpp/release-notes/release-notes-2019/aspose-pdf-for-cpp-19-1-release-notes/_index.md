@@ -6,11 +6,11 @@ url: /cpp/aspose-pdf-for-cpp-19-1-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for Aspose.PDF for C++ 19.1
 
-{{% /alert %}} 
+{{% /alert %}}
 ## <ins>**Improvements and Changes**
 New version of Aspose.PDF for C++ has codebase of Aspose.PDF for .Net 19.1
 ### **API Reference changes in Aspose.PDF for C++ 19.1**

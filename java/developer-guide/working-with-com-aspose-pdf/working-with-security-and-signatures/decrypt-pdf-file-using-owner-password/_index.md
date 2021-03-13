@@ -6,11 +6,11 @@ url: /java/decrypt-pdf-file-using-owner-password/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 In order to decrypt the PDF file, you first need to create Document object and open the PDF using owner password. After that, you need to call [decrypt](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#decrypt--) method of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object. Finally, save the updated PDF file using save method of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows you how to decrypt PDF file.
 

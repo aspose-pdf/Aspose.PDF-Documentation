@@ -31,25 +31,25 @@ for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
         {
             //save output image
             xImage.Save(imageStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-    
+   
             // set the stream position to the begining of Stream
             imageStream.Position = 0;
-    
+   
             // Instantiate BarCodeReader object
-    
+   
             Aspose.BarCodeRecognition.BarCodeReader barcodeReader = new Aspose.BarCodeRecognition.BarCodeReader(imageStream, Aspose.BarCodeRecognition.BarCodeReadType.Code39Extended);
-    
+   
             while (barcodeReader.Read())
             {
                 // get BarCode text from BarCode image
                 string code = barcodeReader.GetCodeText();
-    
+   
                 // write the BarCode text to Console output
                 Console.WriteLine("BARCODE : " + code);
             }
-    
+   
             // close BarCodeReader object to release the Image file
-    
+   
             barcodeReader.Close();
         }
     }

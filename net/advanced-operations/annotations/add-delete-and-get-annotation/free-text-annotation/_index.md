@@ -20,7 +20,7 @@ private static void AddFreeTextAnnotationDemo()
 {
     _document = new Document(@"C:\tmp\pdf-sample.pdf");
     var pdfContentEditor = new PdfContentEditor(_document);
-    
+   
     tfa.Visit(_document.Pages[1]);
     if (tfa.TextFragments.Count <= 0) return;
     var rect = new System.Drawing.Rectangle
@@ -169,4 +169,4 @@ The following code snippet shows how to search for a particular TextFragment and
 
 This feature is supported by version 19.6 or greater.
 
-{{% /alert %}} 
+{{% /alert %}}

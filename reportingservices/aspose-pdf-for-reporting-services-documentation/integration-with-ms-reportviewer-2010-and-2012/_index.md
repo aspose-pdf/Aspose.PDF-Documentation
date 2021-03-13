@@ -6,12 +6,12 @@ url: /reportingservices/integration-with-ms-reportviewer-2010-and-2012/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page demonstrates how to export report from ReportViewer 2010 or ReportViewer 2012 to PDF format using Aspose.PDF for Reporting Services.
 
-{{% /alert %}} 
-{{% alert color="primary" %}} 
+{{% /alert %}}
+{{% alert color="primary" %}}
 RplRenderer class renders [Report Page Layout (RPL) Binary Stream Format](http://msdn.microsoft.com/en-us/library/ee301773.aspx) to PDF format. Whereas RplRenderer internally uses [soft page breaks](http://msdn.microsoft.com/en-us/library/dd255244.aspx) to control page size while using InteractiveHeight and InteractiveWidth RDL tags.
 {{% /alert %}}
 The following code shows how to export report from ReportViewer 2010 to PDF format using using RplRenderer. Execute RenderToPpt method to render current report to PDF.
@@ -234,7 +234,7 @@ namespace AsposeTest
 
 {{< /highlight >}}
 
-Optionally you may consider adding export buttons to TollStripPanel of ReportViewer by adding next code to Form's constructor: 
+Optionally you may consider adding export buttons to TollStripPanel of ReportViewer by adding next code to Form's constructor:
 
 **C#**
 
@@ -334,7 +334,7 @@ In order to support ReportViewer 2012, please try using following code snippet f
                     .GetValue(extension, null)
                     .ToString();
                 if (name == "RPL")
-                {                   
+                {                  
                     extension.GetType().GetField("m_isExposedExternally", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(extension, true);
                     rplExportEnabled = true;
                     break;

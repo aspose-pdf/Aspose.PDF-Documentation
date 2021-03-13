@@ -6,11 +6,11 @@ url: /java/change-in-class-name/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The autoported MergedAPI of Aspose.PDF for Java is ported from its sibling Aspose.PDF for .NET and during this migration, names of some classes have been changed. Specified below is the list of classes whose names have been changed after the migration activity.
 
-{{% /alert %}} 
+{{% /alert %}}
 #### **PdfPrivilege changed to DocumentPrivilege**
 In autoported Aspose.PDF for Java, the PdfPrivilege class is changed to DocumentPrivilege (as per .NET).
 

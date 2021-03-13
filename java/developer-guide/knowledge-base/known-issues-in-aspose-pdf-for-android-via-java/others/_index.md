@@ -6,7 +6,7 @@ url: /java/others/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Following are some other known issues.
 

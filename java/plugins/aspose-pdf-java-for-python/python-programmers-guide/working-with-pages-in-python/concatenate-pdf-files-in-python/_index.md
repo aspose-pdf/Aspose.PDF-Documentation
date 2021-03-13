@@ -25,7 +25,7 @@ pdf1.getPages().add(pdf1.getPages())
 # Save the concatenated output file (the target document)
 doc.save(self.dataDir + "Concatenate_output.pdf")
 
-print "New document has been saved, please check the output file" 
+print "New document has been saved, please check the output file"
 ```
 
 

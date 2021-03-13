@@ -1,6 +1,6 @@
 ---
-title: Aspose.PDF for .NET 11.7.0 
-linktitle: Aspose.PDF for .NET 11.7.0 
+title: Aspose.PDF for .NET 11.7.0
+linktitle: Aspose.PDF for .NET 11.7.0
 type: docs
 weight: 70
 url: /net/aspose-pdf-for-net-11-7-0-release-notes/
@@ -56,10 +56,10 @@ sitemap:
 #### **Public API and Backward Incompatible Changes**
 We have introduced following API changes in this release.
 ## **Added APIs:**
-- Method: Aspose.PDF.Annotations.XYZExplicitDestination.CreateDestination<br>(Aspose.PDF.Page,System.Double,System.Double,System.Double,System.Boolean)  
-- Method:Aspose.PDF.Annotations.XYZExplicitDestination.CreateDestinationToUpperLeftCorner<br>(Aspose.PDF.Page,System.Double)  
-- Method: Aspose.PDF.Annotations.XYZExplicitDestination.CreateDestinationToUpperLeftCorner<br>(Aspose.PDF.Page)  
-- Method: Aspose.PDF.ColumnAdjustment.AutoFitToWindow  
+- Method: Aspose.PDF.Annotations.XYZExplicitDestination.CreateDestination<br>(Aspose.PDF.Page,System.Double,System.Double,System.Double,System.Boolean) 
+- Method:Aspose.PDF.Annotations.XYZExplicitDestination.CreateDestinationToUpperLeftCorner<br>(Aspose.PDF.Page,System.Double) 
+- Method: Aspose.PDF.Annotations.XYZExplicitDestination.CreateDestinationToUpperLeftCorner<br>(Aspose.PDF.Page) 
+- Method: Aspose.PDF.ColumnAdjustment.AutoFitToWindow 
 - Method: Aspose.PDF.Document.Convert(Aspose.PDF.PdfFormatConversionOptions)
 - Method: Aspose.PDF.Document.Validate(Aspose.PDF.PdfFormatConversionOptions)
 - Method: Aspose.PDF.Forms.TextBoxField.GetYOffset<br>(System.Double,System.Double,System.Double,System.Double,System.Double)
@@ -68,13 +68,13 @@ We have introduced following API changes in this release.
 - Property: Aspose.PDF.HtmlSaveOptions.ConvertMarkedContentToLayers
 - Property: Aspose.PDF.HtmlSaveOptions.MinimalLineWidth
 - Property: Aspose.PDF.HtmlSaveOptions.PreventGlyphsGrouping
-- Property: Aspose.PDF.LaTeXSaveOptions.PagesCount  
+- Property: Aspose.PDF.LaTeXSaveOptions.PagesCount 
 
   **Class: Aspose.PDF.Matrix**
 - Method: Aspose.PDF.Matrix.#ctor
 - Method: Aspose.PDF.Matrix.#ctor(System.Double[])
 - Method: Aspose.PDF.Matrix.#ctor(Aspose.PDF.Matrix)
-- Method: Aspose.PDF.Matrix.#ctor<br>(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)  
+- Method: Aspose.PDF.Matrix.#ctor<br>(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double) 
 - Property: Aspose.PDF.Matrix.A
 - Property: Aspose.PDF.Matrix.B
 - Property: Aspose.PDF.Matrix.C
@@ -93,22 +93,22 @@ We have introduced following API changes in this release.
 - Method: Aspose.PDF.Matrix.GetHashCode
 - Method: Aspose.PDF.Operator.ConcatenateMatrix.#ctor(Aspose.PDF.Matrix)
 - Method: Aspose.PDF.Operator.SetTextMatrix.#ctor(Aspose.PDF.Matrix)
-   
+  
    **Class: Aspose.PDF.PageMode**
 - Function: Aspose.PDF.PageMode.UseNone
 - Function: Aspose.PDF.PageMode.UseOutlines
 - Function: Aspose.PDF.PageMode.UseThumbs
 - Function: Aspose.PDF.PageMode.FullScreen
 - Function: Aspose.PDF.PageMode.UseOC
-- Function: Aspose.PDF.PageMode.UseAttachments    
-  
+- Function: Aspose.PDF.PageMode.UseAttachments   
+ 
   **Class: Aspose.PDF.PdfFormatConversionOptions**
 - Method: Aspose.PDF.PdfFormatConversionOptions.#ctor<br>(System.String,Aspose.PDF.PdfFormat,Aspose.PDF.ConvertErrorAction)
 - Method: Aspose.PDF.PdfFormatConversionOptions.#ctor<br>(System.String,Aspose.PDF.PdfFormat)
 - Method: Aspose.PDF.PdfFormatConversionOptions.#ctor(Aspose.PDF.PdfFormat)
-- Method: Aspose.PDF.PdfFormatConversionOptions.#ctor<br>(Aspose.PDF.PdfFormat,Aspose.PDF.ConvertErrorAction)  
-- Method: Aspose.PDF.PdfFormatConversionOptions.#ctor<br>(System.String,Aspose.PDF.PdfFormat,Aspose.PDF.ConvertErrorAction,Aspose.PDF.ConvertTransparencyAction)  
-- Method: Aspose.PDF.PdfFormatConversionOptions.#ctor<br>(System.IO.Stream,Aspose.PDF.PdfFormat,Aspose.PDF.ConvertErrorAction)  
+- Method: Aspose.PDF.PdfFormatConversionOptions.#ctor<br>(Aspose.PDF.PdfFormat,Aspose.PDF.ConvertErrorAction) 
+- Method: Aspose.PDF.PdfFormatConversionOptions.#ctor<br>(System.String,Aspose.PDF.PdfFormat,Aspose.PDF.ConvertErrorAction,Aspose.PDF.ConvertTransparencyAction) 
+- Method: Aspose.PDF.PdfFormatConversionOptions.#ctor<br>(System.IO.Stream,Aspose.PDF.PdfFormat,Aspose.PDF.ConvertErrorAction) 
 - Property: Aspose.PDF.PdfFormatConversionOptions.Format
 - Property: Aspose.PDF.PdfFormatConversionOptions.LogFileName
 - Property: Aspose.PDF.PdfFormatConversionOptions.LogStream
@@ -117,11 +117,11 @@ We have introduced following API changes in this release.
 - Property: Aspose.PDF.PdfFormatConversionOptions.Default
 - Property: Aspose.PDF.PdfFormatConversionOptions.AlignText
 - Property: Aspose.PDF.PdfFormatConversionOptions.PuaTextProcessingStrategy
-- Function: Aspose.PDF.PdfFormatConversionOptions.AlignStrategy  
-   
+- Function: Aspose.PDF.PdfFormatConversionOptions.AlignStrategy 
+  
    **Class: Aspose.PDF.PdfFormatConversionOptions.PuaProcessingStrategy**
-- Function: Aspose.PDF.PdfFormatConversionOptions.PuaProcessingStrategy.None         
-   
+- Function: Aspose.PDF.PdfFormatConversionOptions.PuaProcessingStrategy.None        
+  
    **Class: Aspose.PDF.PdfFormatConversionOptions.SegmentAlignStrateg**
 - Function: Aspose.PDF.PdfFormatConversionOptions.SegmentAlignStrategy.None
 - Function: - Aspose.PDF.PdfFormatConversionOptions.SegmentAlignStrategy.RestoreSegmentBounds
@@ -130,7 +130,7 @@ We have introduced following API changes in this release.
 - Method: Aspose.PDF.DOM.Matrix.#ctor
 - Method: Aspose.PDF.DOM.Matrix.#ctor(System.Double[])
 - Method: Aspose.PDF.DOM.Matrix.#ctor(Aspose.PDF.DOM.Matrix)
-- Method: Aspose.PDF.DOM.Matrix.#ctor<br>(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)  
+- Method: Aspose.PDF.DOM.Matrix.#ctor<br>(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double) 
 - Property: Aspose.PDF.DOM.Matrix.A
 - Property: Aspose.PDF.DOM.Matrix.B
 - Property: Aspose.PDF.DOM.Matrix.C

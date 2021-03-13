@@ -6,14 +6,14 @@ url: /sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint is built on top of our award winning Aspose.PDF for .NET component. Aspose.PDF for .NET provides remarkable features from the creation of PDF document from scratch to manipulation of existing PDF files. Among these features, XML to PDF conversion is one of the great features support by this product. So we believe that Aspose.PDF for SharePoint will also be capable of converting XML files into PDF format. 
+Aspose.PDF for SharePoint is built on top of our award winning Aspose.PDF for .NET component. Aspose.PDF for .NET provides remarkable features from the creation of PDF document from scratch to manipulation of existing PDF files. Among these features, XML to PDF conversion is one of the great features support by this product. So we believe that Aspose.PDF for SharePoint will also be capable of converting XML files into PDF format.
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Creating and XML File and Converting it to PDF**
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Step by step, this article walks you through the process of creating and XML file and converting it to PDF:
 
@@ -25,7 +25,7 @@ Step by step, this article walks you through the process of creating and XML fil
 6. [Export the file to PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
 7. [Save the PDF file](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
 #### **Step 1: Create XML File**
-First create an XML file based on the Aspose.PDF for .NET Document Object Model. 
+First create an XML file based on the Aspose.PDF for .NET Document Object Model.
 
 According to Aspose.PDF for .NET DOM, a PDF document contains a collection of Section objects, and a Section contains one or more Paragraph elements. Text is a Paragraph level object and may contain one or more segments. Below, a sample text string is added to a Segment object and added to a Text object. Finally, the Text element is added to the Section object's paragraphs collection.
 
@@ -55,7 +55,7 @@ According to Aspose.PDF for .NET DOM, a PDF document contains a collection of Se
 
 {{< /highlight >}}
 #### **Step 2: Create PDF Template**
-Before continuing, make sure that SharePoint Foundation server 2010 is properly installed and configured on the system where the conversion will take place. 
+Before continuing, make sure that SharePoint Foundation server 2010 is properly installed and configured on the system where the conversion will take place.
 
 1. Log in to the SharePoint site.
 1. Select **Site Action** and **All Items**.
@@ -77,7 +77,7 @@ Once the template has been created, load [the XML file](/pdf/sharepoint/how-to-c
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_2.png)
 #### **Step 4: Specify Source File Path**
-In the document upload dialog: 
+In the document upload dialog:
 
 1. Click **Browse** and locate the XML file on your system. You may enable the check box to overwrite existing file option.
 1. Press **OK** button.
@@ -87,13 +87,13 @@ In the document upload dialog:
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_3.png)
 #### **Step 5: Specify File Properties**
-When the file is loaded, add information into the mandatory fields (marked with a red asterisk: *). 
+When the file is loaded, add information into the mandatory fields (marked with a red asterisk: *).
 
 For this example, a sample description had been added and the following fields completed:
 
 1. A brief description of the document.
 1. Enter **AllListTypes** for the **Assigned List Types** field.
-1. Select **List** from the **Type** menu. 
+1. Select **List** from the **Type** menu.
    Make sure that the status remains **Active**.
 1. Click **Save** to save the properties.
 
@@ -108,7 +108,7 @@ Either:
 1. Right-click the test.xml file.
 1. Select **Export to PDF** from the menu.
 
-Or: 
+Or:
 
 1. Select **Aspose Tools** from the **Library Tools**.
 1. Click **Export**.
@@ -127,11 +127,11 @@ Or:
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_6.png)
 #### **Open the PDF**
-The PDF document has been saved and can be opened. In the image below, note the phrase "Hello World" that was in the {segment] tag in the XML. Also note that the PDF Producer is Aspose.PDF for SharePoint. 
+The PDF document has been saved and can be opened. In the image below, note the phrase "Hello World" that was in the {segment] tag in the XML. Also note that the PDF Producer is Aspose.PDF for SharePoint.
 
 
 
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
 
-{{% /alert %}} 
+{{% /alert %}}

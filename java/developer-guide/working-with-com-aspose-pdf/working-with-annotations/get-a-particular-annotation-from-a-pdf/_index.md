@@ -6,11 +6,11 @@ url: /java/get-a-particular-annotation-from-a-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 [Get All Annotations from Page in a PDF](/pdf/java/get-all-annotations-from-page-in-a-pdf/) explained how to get all annotations on a page, or in an entire document. This article explains how to get just one annotation.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Annotations are associated with individual pages and stored in a [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) object's AnnotationCollection collection. To get a specific annotation, specify its index. This returns an Annotation object that needs to be cast to a particular annotation type, for example TextAnnotation.
 

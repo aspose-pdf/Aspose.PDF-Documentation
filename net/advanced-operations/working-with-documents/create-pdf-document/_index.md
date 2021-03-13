@@ -4,7 +4,7 @@ linktitle: Create PDF Document
 type: docs
 weight: 10
 url: /net/create-pdf-document/
-description: Create and format the PDF Document with Aspose.PDF for .NET. 
+description: Create and format the PDF Document with Aspose.PDF for .NET.
 lastmod: "2021-03-08"
 sitemap:
     changefreq: "weekly"
@@ -60,7 +60,7 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
             Aspose.Pdf.Document doc = new Aspose.Pdf.Document(file);
             bool convertResult = false;
             try
-            {                
+            {               
                 convertResult = doc.Convert(CallBackGetHocr);
             }
             catch (Exception ex)
@@ -68,7 +68,7 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
                 Console.WriteLine(ex.Message);
             }
             doc.Save(file);
-            doc.Dispose();           
+            doc.Dispose();          
         }
 
         static string CallBackGetHocr(System.Drawing.Image img)
@@ -107,7 +107,7 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
                 return text;
             }
             finally
-            {             
+            {            
                 if (System.IO.File.Exists(tmpFile))
                     System.IO.File.Delete(tmpFile);
                 if (System.IO.File.Exists(tmpFile + ".hocr"))

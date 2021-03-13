@@ -61,7 +61,7 @@ ITaggedContent taggedContent = document.TaggedContent;
 taggedContent.SetTitle("Tagged Pdf Document");
 taggedContent.SetLanguage("en-US");
 
-// Properties StructTreeRootElement and RootElement are used for access to 
+// Properties StructTreeRootElement and RootElement are used for access to
 // StructTreeRoot object of pdf document and to root structure element (Document structure element).
 StructTreeRootElement structTreeRootElement = taggedContent.StructTreeRootElement;
 StructureElement rootElement = taggedContent.RootElement;

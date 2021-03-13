@@ -1,6 +1,6 @@
 ---
-title: Aspose.PDF for .NET 11.9.0 
-linktitle: Aspose.PDF for .NET 11.9.0 
+title: Aspose.PDF for .NET 11.9.0
+linktitle: Aspose.PDF for .NET 11.9.0
 type: docs
 weight: 50
 url: /net/aspose-pdf-for-net-11-9-0-release-notes/
@@ -47,8 +47,8 @@ sitemap:
 - Method Aspose.PDF.GroupProcessor.IPdfTypeExtractor.Dispose
 ### **Removed APIs:**
 - Interface Aspose.PDF.GroupProcessor.Interfaces.IDocumentPageTextExtractor
-- Property Aspose.PDF.GroupProcessor.Interfaces.IDocumentPageTextExtractor.PageCount  
-MethodAspose.PDF.GroupProcessor.Interfaces.IDocumentPageTextExtractor.ExtractPageText(System.Int32)  
+- Property Aspose.PDF.GroupProcessor.Interfaces.IDocumentPageTextExtractor.PageCount 
+MethodAspose.PDF.GroupProcessor.Interfaces.IDocumentPageTextExtractor.ExtractPageText(System.Int32) 
 - Interface Aspose.PDF.GroupProcessor.Interfaces.IDocumentTextExtractor
 - Method Aspose.PDF.GroupProcessor.Interfaces.IDocumentTextExtractor.ExtractAllText
 - Interface Aspose.PDF.GroupProcessor.Interfaces.IPdfTypeExtractor
@@ -59,7 +59,7 @@ MethodAspose.PDF.GroupProcessor.Interfaces.IDocumentPageTextExtractor.ExtractPag
 - Method Aspose.PDF.GroupProcessor.Interfaces.IPdfTypeExtractor.ExtractPageText(System.Int32)
 - Method Aspose.PDF.GroupProcessor.Interfaces.IPdfTypeExtractor.Dispose
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The basic change is removal of **Interfaces** namespace.
 

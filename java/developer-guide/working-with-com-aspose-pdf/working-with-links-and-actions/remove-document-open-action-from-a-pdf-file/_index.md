@@ -6,11 +6,11 @@ url: /java/remove-document-open-action-from-a-pdf-file/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 When concatenating several documents, and one or more has an GoTo action set, you probably want to remove them. For example, if combining two document and the second one has a GoTo action that takes you to the second page, the output document will open on the second page of the second document instead of the first page of the combined document. To avoid this behavior, remove the open action command.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To remove an open action:
 

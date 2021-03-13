@@ -6,11 +6,11 @@ url: /java/gradiant-color-fill-of-graph-object/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for Java supports the feature to add graph objects to PDF documents and sometimes it is required to fill graph objects with Gradient Color. To Fill graph objects with Gradient Color, We need to set setPatterColorSpace with gradientAxialShading object as following.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows how to add a Rectangle object that is filled with Gradient Color.
 

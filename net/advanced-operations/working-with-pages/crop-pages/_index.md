@@ -41,8 +41,8 @@ public static void CropPagesPDF()
     pdfDocument1.Pages[1].TrimBox = newBox;
     pdfDocument1.Pages[1].ArtBox = newBox;
     pdfDocument1.Pages[1].BleedBox = newBox;
-    
-    pdfDocument1.Save("crop_page_modified.pdf");            
+   
+    pdfDocument1.Save("crop_page_modified.pdf");           
 }
 ```
 

@@ -8,11 +8,11 @@ description: Java Developers can add attachment to PDF using Aspose.PDF for Java
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To add an attachment to a PDF document:
 

@@ -24,7 +24,7 @@ The Eclipse IDE can be extended with additional software components. Eclipse cal
 ### Aspose.PDF Java (Maven) for Eclipse
 
 - Aspose.PDF Java (Maven) for Eclipse is a Plugin for **Eclipse IDE** by **Aspose.** This Plugin is intended for developers using the Maven platform for Java developments and wants to use [Aspose.PDF for Java](https://products.aspose.com/pdf/java) in their projects. The Plugin lets you create maven projects for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) and also download [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) of the API.
-- The plugin provides following features to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) within **Eclipse IDE** comfortably: 
+- The plugin provides following features to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) within **Eclipse IDE** comfortably:
 
 ![todo:image_alt_text](http://i.imgur.com/KWKGljg.png)
 

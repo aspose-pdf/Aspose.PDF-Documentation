@@ -6,17 +6,17 @@ url: /reportingservices/pagesize/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-The RS designer does not support setting different page size such as A4, B5, Letter and so on. With Aspose.PDF for Reporting Services, however, you can. 
+The RS designer does not support setting different page size such as A4, B5, Letter and so on. With Aspose.PDF for Reporting Services, however, you can.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-**Parameter Name**: PageSize   
-**Date Type**: String   
-**Values supported**: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17   
+**Parameter Name**: PageSize  
+**Date Type**: String  
+**Values supported**: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
 
 **Example**
 

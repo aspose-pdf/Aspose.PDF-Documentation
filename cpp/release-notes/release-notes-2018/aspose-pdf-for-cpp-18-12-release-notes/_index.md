@@ -6,11 +6,11 @@ url: /cpp/aspose-pdf-for-cpp-18-12-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for C++ 18.12](https://www.nuget.org/packages/Aspose.PDF.CPP/18.12.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Improvements and Changes**
 New version of Aspose.PDF for C++ has codebase of Aspose.PDF for .Net 18.12
 ### **API Reference changes in Aspose.PDF for C++ 18.12**

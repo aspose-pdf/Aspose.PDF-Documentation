@@ -20,16 +20,16 @@ lastmod: "2020-12-16"
 |PDFJAVA-37138|Null pointer exception occurs when calling flatten.|Bug|
 |PDFJAVA-37078|A null pointer error occurred on getting form fields.|Bug|
 ### **Public API changes**
-Changes in class **com.aspose.pdf.BaseParagraph** 
+Changes in class **com.aspose.pdf.BaseParagraph**
 Added method:
 public /* VerticalAlignment */int getVerticalAlignment()
 
-Added new class **com.aspose.pdf.DefaultDirectory** 
+Added new class **com.aspose.pdf.DefaultDirectory**
 methods:
 public static String getDefaultDirectory()
 public static void setDefaultDirectory(String value)
 
-Added new class **com.aspose.pdf.HideAction** 
+Added new class **com.aspose.pdf.HideAction**
 constructors:
 public HideAction(Annotation annotation)
 public HideAction(Annotation annotation, boolean isHidden)
@@ -43,7 +43,7 @@ methods:
 public boolean isHidden()
 public void setHidden(boolean value)
 
-Changes in class **com.aspose.pdf.MemoryExtender** 
+Changes in class **com.aspose.pdf.MemoryExtender**
 Added methods:
 public static boolean isSkipHeavyContentEnabled()
 public static void setSkipHeavyContentEnabled(boolean value)
@@ -54,27 +54,27 @@ public static void setEnableMultiPageCache(boolean enableMultiPageImageCache)
 Added internal interface:
 public interface **CallBackPageImage**
 
-Changes in class **com.aspose.pdf.SignatureField** 
+Changes in class **com.aspose.pdf.SignatureField**
 Added method:
 public InputStream extractImage(ImageType format)
 
-Changes in class **com.aspose.pdf.TextFormattingOptions** 
+Changes in class **com.aspose.pdf.TextFormattingOptions**
 added constructor:
 public TextFormattingOptions()
 
-Changes in class **com.aspose.pdf.TextFormattingOptions.WordWrapMode** 
+Changes in class **com.aspose.pdf.TextFormattingOptions.WordWrapMode**
 added field:
 public static final int Undefined = 3;
 
-Changes in class **com.aspose.pdf.TextReplaceOptions** 
+Changes in class **com.aspose.pdf.TextReplaceOptions**
 added constructor:
 public TextReplaceOptions()
 
-Changes in class **com.aspose.pdf.TocInfo** 
+Changes in class **com.aspose.pdf.TocInfo**
 Added methods:
 public boolean isShowPageNumbers()
 public void setShowPageNumbers(boolean value)
 
-Changes in class **com.aspose.pdf.XFA** 
+Changes in class **com.aspose.pdf.XFA**
 Added method:
 public String tryGetTemplateString(String value)

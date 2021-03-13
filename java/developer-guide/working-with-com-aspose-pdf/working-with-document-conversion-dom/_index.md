@@ -6,7 +6,7 @@ url: /java/working-with-document-conversion-dom/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:** 
+**This section includes the following topics:**
 - [Convert a File to PDF Format](/pdf/java/convert-a-file-to-pdf-format/)
 - [Convert HTML to PDF](/pdf/java/convert-html-to-pdf/)
 - [Convert PDF to other Formats](/pdf/java/convert-pdf-to-other-formats/)

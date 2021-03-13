@@ -20,7 +20,7 @@ After checking out source codes from any of the above repository, apply the foll
 
 {{< highlight java >}}
 
- $ mvn -U clean package 
+ $ mvn -U clean package
 
 {{< /highlight >}}
 

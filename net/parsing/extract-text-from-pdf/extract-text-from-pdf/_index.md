@@ -49,7 +49,7 @@ Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber textAbsorber = new TextAbsorber();
-  
+ 
 // Accept the absorber for a particular page
 pdfDocument.Pages[1].Accept(textAbsorber);
 

@@ -58,7 +58,7 @@ Aspose.PDF for .NET uses the following XML schema for working with XML documents
     <xs:attribute type="xs:byte" name="MinRowHeight" use="optional"/>
     <xs:attribute type="xs:string" name="IsRowBroken" use="optional"/>
   </xs:complexType>
-  <xs:complexType name="TableType">  
+  <xs:complexType name="TableType"> 
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element xmlns:asp="Aspose.Pdf" type="asp:BorderType" name="Border" minOccurs="0"/>
       <xs:element xmlns:asp="Aspose.Pdf" type="asp:BorderType" name="DefaultCellBorder" minOccurs="0"/>

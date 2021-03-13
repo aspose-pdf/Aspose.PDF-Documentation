@@ -42,7 +42,7 @@ Document pdfDocument = new Document(dataDir + "GetDocumentWindow.pdf");
 // Get different document properties
 // Position of document's window - Default: false
 Console.WriteLine("CenterWindow : {0}", pdfDocument.CenterWindow);
-   
+  
 // Predominant reading order; determins the position of page
 // When displayed side by side - Default: L2R
 Console.WriteLine("Direction : {0}", pdfDocument.Direction);

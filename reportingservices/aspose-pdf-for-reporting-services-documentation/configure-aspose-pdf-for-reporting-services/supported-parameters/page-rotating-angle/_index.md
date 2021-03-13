@@ -6,17 +6,17 @@ url: /reportingservices/page-rotating-angle/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Gets or sets the number of degrees by which the page should be rotated clockwise when displayed or printed.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-**Parameter Name**: PageRotatingAngle   
-**Date Type**: Integer   
-**Values supported**: The value must be a multiple of 90. Default value is 0.   
+**Parameter Name**: PageRotatingAngle  
+**Date Type**: Integer  
+**Values supported**: The value must be a multiple of 90. Default value is 0.  
 
 **Example**
 {{< highlight csharp >}}
@@ -32,4 +32,4 @@ Gets or sets the number of degrees by which the page should be rotated clockwise
 
 {{< /highlight >}}
 
-{{% /alert %}} 
+{{% /alert %}}

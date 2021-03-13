@@ -17,7 +17,7 @@ sitemap:
 
 **Aspose.PDF is a .NET** component built to allow developers to create PDF documents, whether simple or complex, on the fly programmatically. Aspose.PDF for .NET allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. Moreover, it is also possible to compress PDF documents. Aspose.PDF for .NET provides excellent security features to develop secure PDF documents. And the most distinct feature of Aspose.PDF for .NET is that it supports the creation of PDF documents through both an API and from XML templates.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Product Description
 
@@ -53,11 +53,11 @@ You can easily download Aspose.PDF for .Net for evaluation. The evaluation downl
 
 The evaluation version of Aspose.PDF (without a license specified) provides full product functionality, but it has two limitations: it inserts an evaluation watermark, and only four elements of any collection can be viewed/edited.
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 If you want to test Aspose.PDF for .NET without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Installing Aspose.PDF for .NET through NuGet
 

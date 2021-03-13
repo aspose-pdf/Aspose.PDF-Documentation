@@ -150,7 +150,7 @@ Please note that there is no possibility to set owner value using Aspose.PDF pri
 
 \2) Using Spooler API and [SetJob routine](http://msdn.microsoft.com/en-us/library/dd162978%28VS.85%29.aspx)
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The following links can be useful to get user credentials:
 
@@ -158,7 +158,7 @@ The following links can be useful to get user credentials:
 - [What is Windows Identity Foundation?](http://msdn.microsoft.com/en-us/library/ee748475.aspx)
 - [Authentication and Authorization with Windows Accounts in ASP.NET](https://www.simple-talk.com/dotnet/asp.net/authentication-and-authorization-with-windows-accounts-in-asp.net/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Printing pages in Simplex and Duplex mode
 

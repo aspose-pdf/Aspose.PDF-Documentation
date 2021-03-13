@@ -1,6 +1,6 @@
 ---
-title: Aspose.PDF for .NET 11.5.0 
-linktitle: Aspose.PDF for .NET 11.5.0 
+title: Aspose.PDF for .NET 11.5.0
+linktitle: Aspose.PDF for .NET 11.5.0
 type: docs
 weight: 90
 url: /net/aspose-pdf-for-net-11-5-0-release-notes/

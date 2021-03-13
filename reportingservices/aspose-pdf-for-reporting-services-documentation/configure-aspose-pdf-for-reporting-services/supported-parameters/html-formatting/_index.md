@@ -6,7 +6,7 @@ url: /reportingservices/html-formatting/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Sometimes you might wish to export text in textboxes with formatting. Unfortunately, Reporting Services does not support this. However, you still can implement it using Aspose.PDF for Reporting Services. Just enable a special mode in which all text in textboxes is treated as HTML and put the necessary HTML tags to format the text in the output document. For example, to have normal, bold and italic text in the same textbox, enter the following textbox value:
 
@@ -16,17 +16,17 @@ When exported, the text will look like as some of this text is **bold** and othe
 
 Please note that this approach has some limitations
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The formatting isn’t visible in design time (in Report Builder, Report Manager etc). Instead, you will see the HTML text as is.
 
 The Aspose.PDF for Reporting Services rendering extension can understand and properly format HTML code in textboxes. The default PDF renderer of RS does not so.
 
-**Parameter Name**: IsHtmlTagSupported   
-**Date Type**: Boolean   
-**Values supported**: True, False (default)    
+**Parameter Name**: IsHtmlTagSupported  
+**Date Type**: Boolean  
+**Values supported**: True, False (default)   
 
 **Example**
 
@@ -43,8 +43,8 @@ The Aspose.PDF for Reporting Services rendering extension can understand and pro
 
 {{< /highlight >}}
 
-If you want to set this parameter in Report Designer, the data type should be 'Boolean'. 
+If you want to set this parameter in Report Designer, the data type should be 'Boolean'.
 
-Currently Aspose.PDF for Reporting Services does not support all HTML tags. 
+Currently Aspose.PDF for Reporting Services does not support all HTML tags.
 
-{{% /alert %}} 
+{{% /alert %}}

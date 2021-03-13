@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**Aspose.PDF in C#** gives the opportunity to concatenate all PDF files in Particular folder. 
+**Aspose.PDF in C#** gives the opportunity to concatenate all PDF files in Particular folder.
 
 [PdfFileEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffileeditor) class in Aspose.Pdf.Facades namespace offers you the capability to concatenate the PDF file. You can even read all the Pdf files in a particular folder at runtime and concatenate them, without even knowing the file names. Simply provide the path of directory, which contains the PDF documents, that you would like to concatenate.
 

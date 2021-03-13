@@ -6,11 +6,11 @@ url: /java/add-hyperlink-in-a-pdf-file/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 It is possible to add hyperlinks to PDF file, either to allow readers to navigate to another part of the PDF, or to external content.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 In order to add web hyperlinks to PDF documents:
 

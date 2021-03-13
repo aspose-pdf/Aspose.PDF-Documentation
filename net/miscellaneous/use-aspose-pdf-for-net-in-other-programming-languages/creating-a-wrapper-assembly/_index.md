@@ -5,7 +5,7 @@ weight: 80
 url: /net/creating-a-wrapper-assembly/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 If you need to use many of Aspose.PDF for .NET classes, methods and properties, consider creating a wrapper assembly (using C# or any other .NET programming language). Wrapper assemblies help to avoid using Aspose.PDF for .NET directly from unmanaged code.
 
@@ -13,7 +13,7 @@ A good approach is to develop a .NET assembly that references Aspose.PDF for .NE
 
 Reducing the number of classes and methods that you need to invoke via COM Interop simplifies the project. Using .NET classes via COM Interop often requires advanced skills.
 
-{{% /alert %}} 
+{{% /alert %}}
 #### **Aspose.PDF for .NET Wrapper**
 **C#**
 

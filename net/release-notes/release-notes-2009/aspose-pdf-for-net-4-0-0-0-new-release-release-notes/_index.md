@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 4.0.0.0 New Release](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-4.0.0.0-new-release/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Introduction
 
@@ -30,7 +30,7 @@ What's improved?
 
 - Enhance the supporting of 'Helvetica' font.
 - Optimizes the performance and memory usage for large table processing. 
-  What's Fixed? 
+  What's Fixed?
   `      `The main bugs fixed are listed as following:
 - 6770 - Large image page layout issue.
 - 6554 - Border not rendering around table.

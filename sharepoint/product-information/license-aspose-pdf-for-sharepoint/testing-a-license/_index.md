@@ -6,8 +6,8 @@ url: /sharepoint/testing-a-license/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-To test that a license has been installed correctly, convert any document into desired format. If the document contains no Evaluation Warning, the license was activated successfully. 
+To test that a license has been installed correctly, convert any document into desired format. If the document contains no Evaluation Warning, the license was activated successfully.
 
 {{% /alert %}}

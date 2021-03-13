@@ -6,11 +6,11 @@ url: /java/extract-raw-properties-of-image-from-pdf-document/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The subclass for com.aspose.pdf.XImage.RawParameters can be used to extract/retrieve raw properties of image inside PDF document.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows how to extract raw properties of an XImage from PDF Document:
 

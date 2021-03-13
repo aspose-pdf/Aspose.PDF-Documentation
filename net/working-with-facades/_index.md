@@ -27,7 +27,7 @@ In this section you will learn how to:
 - [Using PdfFileInfo](/pdf/net/pdffileinfo-class/) - tool for accessing meta information of PDF document
 - [Using PdfPageEditor](/pdf/net/pdfpageeditor-class/) - tool to edit the PDF file's page, including rotating page, zooming page, moving position and changing page size
 - [Using PdfXmpMetadata](/pdf/net/pdfxmpmetadata-class/) - tool for manipulation with XMP metadata
-- [Using PdfFileSecurity](/pdf/net/pdffilesecurity-class/) - tool for manipulation with Encrypt, Decrypt and Set Privileges on PDF File 
+- [Using PdfFileSecurity](/pdf/net/pdffilesecurity-class/) - tool for manipulation with Encrypt, Decrypt and Set Privileges on PDF File
 - [Using PdfFileStamp](/pdf/net/pdffilestamp-class/) - tool for manipulation with page, image stamp
 - [Using PdfViewer](/pdf/net/pdfviewer-class/) - tool for working with PDF printing
 - [Using Form](/pdf/net/form-class/) - tool for manipulation with Acro Forms

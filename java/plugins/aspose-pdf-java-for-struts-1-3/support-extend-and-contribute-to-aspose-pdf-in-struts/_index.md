@@ -9,7 +9,7 @@ lastmod: "2020-12-16"
 
 ## Support
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 - If you like to see known / reported issues (by the users or Q.A team) in the application.
 - Or you want to report any issue you found in the application
@@ -20,7 +20,7 @@ lastmod: "2020-12-16"
 - [CodePlex](https://asposepdfforstruts.codeplex.com/workitem/list/basic)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 
 

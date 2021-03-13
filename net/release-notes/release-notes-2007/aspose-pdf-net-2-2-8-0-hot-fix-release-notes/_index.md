@@ -10,10 +10,10 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF .Net 2.2.8.0 Hot Fix](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-.net-2.2.8.0-hot-fix/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 In this hotfix, a “null reference” bug is fixed.

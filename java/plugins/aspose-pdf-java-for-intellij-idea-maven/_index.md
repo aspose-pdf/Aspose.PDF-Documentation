@@ -25,7 +25,7 @@ In a 2010 Infoworld report, IntelliJ received the highest test center score out 
 ###  Aspose.PDF Java for IntelliJ IDEA - Maven
 
 - Aspose.PDF Java for IntelliJ IDEA (Maven) is an IntelliJ IDEA Plugin which lets you create maven projects (i.e. created project contains Aspose.PDF for Java API maven dependency) and download source code examples of the API  for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java).
-- This plugin helps you to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) inside your favorite IntelliJ IDEA. 
+- This plugin helps you to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) inside your favorite IntelliJ IDEA.
 
 ![todo:image_alt_text](http://i.imgur.com/KWKGljg.png)
 

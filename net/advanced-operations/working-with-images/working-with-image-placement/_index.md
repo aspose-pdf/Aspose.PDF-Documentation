@@ -22,7 +22,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 // Load the source PDF document
 Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "ImagePlacement.pdf");
 ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-            
+           
 // Load the contents of first page
 doc.Pages[1].Accept(abs);
 foreach (ImagePlacement imagePlacement in abs.ImagePlacements)

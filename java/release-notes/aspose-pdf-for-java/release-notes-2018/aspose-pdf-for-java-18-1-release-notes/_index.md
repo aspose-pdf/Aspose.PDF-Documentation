@@ -27,7 +27,7 @@ lastmod: "2020-12-16"
 |PDFJAVA-37349|An exception raises when adding a local font path|Bug|
 |PDFJAVA-37286|An exception raises while saving the document which contains HtmlFragments|Bug|
 ### **Public API changes**
-Added new class **com.aspose.pdf.AutoDetectedFormatLoadOptions** 
+Added new class **com.aspose.pdf.AutoDetectedFormatLoadOptions**
 constructors:
 com.aspose.pdf.AutoDetectedFormatLoadOptions()
 
@@ -37,29 +37,29 @@ Added new method:
 Added new method:
 **com.aspose.pdf.facades.Stamp**.bindTextState(TextState)
 
-Added new class **com.aspose.pdf.IResourceLoadingCallback** 
+Added new class **com.aspose.pdf.IResourceLoadingCallback**
 method:
 com.aspose.pdf.IResourceLoadingCallback.resourceLoading(Object,ResourceLoadingEventArgs)
 
-Removed internal fields in the class **com.aspose.pdf.LoadFormat** 
+Removed internal fields in the class **com.aspose.pdf.LoadFormat**
 public static final int Plugin = 11;
 public static final int AutoDetect = 12;
 Added new field:
 public static final int PS = 10;
 
-Added new class **com.aspose.pdf.MarkupParagraph** 
+Added new class **com.aspose.pdf.MarkupParagraph**
 methods:
 com.aspose.pdf.MarkupParagraph.getPoints()
 com.aspose.pdf.MarkupParagraph.getFragments()
 com.aspose.pdf.MarkupParagraph.getLines()
 
-Added new class **com.aspose.pdf.MarkupSection** 
+Added new class **com.aspose.pdf.MarkupSection**
 methods:
 com.aspose.pdf.MarkupSection.getRectangle()
 com.aspose.pdf.MarkupSection.getFragments()
 com.aspose.pdf.MarkupSection.getParagraphs()
 
-Added new class **com.aspose.pdf.PageMarkup** 
+Added new class **com.aspose.pdf.PageMarkup**
 methods:
 com.aspose.pdf.PageMarkup.getNumber()
 com.aspose.pdf.PageMarkup.getRectangle()
@@ -67,7 +67,7 @@ com.aspose.pdf.PageMarkup.getSections()
 com.aspose.pdf.PageMarkup.getParagraphs()
 com.aspose.pdf.PageMarkup.getTextFragments()
 
-Added new class **com.aspose.pdf.ParagraphAbsorber** 
+Added new class **com.aspose.pdf.ParagraphAbsorber**
 methods:
 com.aspose.pdf.ParagraphAbsorber.getPageMarkups()
 com.aspose.pdf.ParagraphAbsorber.getSectionsSearchDepth()
@@ -78,7 +78,7 @@ constructors:
 com.aspose.pdf.ParagraphAbsorber.#ctor
 com.aspose.pdf.ParagraphAbsorber.#ctor(int)
 
-Added new class **com.aspose.pdf.PsLoadOptions** 
+Added new class **com.aspose.pdf.PsLoadOptions**
 methods:
 com.aspose.pdf.PsLoadOptions.getFontsFolders()
 com.aspose.pdf.PsLoadOptions.setFontsFolders(String[])
@@ -88,13 +88,13 @@ com.aspose.pdf.PsLoadOptions.#ctor
 Added new method: 
 **com.aspose.pdf.RedactionAnnotation**.redactExact()
 
-Added new class **com.aspose.pdf.ResourceLoadingEventArgs** 
+Added new class **com.aspose.pdf.ResourceLoadingEventArgs**
 method:
 com.aspose.pdf.ResourceLoadingEventArgs.getUri_ResourceLoadingEventArgs_New()
 constructor:
 com.aspose.pdf.ResourceLoadingEventArgs.#ctor(String)
 
-Added new class **com.aspose.pdf.ResourceLoadingResult** 
+Added new class **com.aspose.pdf.ResourceLoadingResult**
 methods:
 com.aspose.pdf.ResourceLoadingResult.getData_ResourceLoadingResult_New()
 com.aspose.pdf.ResourceLoadingResult.getEncoding_ResourceLoadingResult_New()
@@ -118,7 +118,7 @@ Added new methods: 
 **com.aspose.pdf.TextFragmentState**.setStrokingColor(Color)
 **com.aspose.pdf.TextFragmentState**.getDrawTextRectangleBorder()
 
-Added new class **com.aspose.pdf.TextRenderingMode** 
+Added new class **com.aspose.pdf.TextRenderingMode**
 Fields
 public static final int FillText = 0;
 public static final int StrokeText = 1;

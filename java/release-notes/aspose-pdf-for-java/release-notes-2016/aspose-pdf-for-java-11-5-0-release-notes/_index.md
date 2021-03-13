@@ -50,46 +50,46 @@ lastmod: "2020-12-16"
 - public static final int Jpeg2000 = 0;
 - public static final int Jpeg = 1;
 
-**Changes in class com.aspose.pdf.BaseParagraph:** 
+**Changes in class com.aspose.pdf.BaseParagraph:**
 *moved:*
 
 - public boolean isFootNoteParagraph()
 - public void setFootNoteParagraph(boolean value)
 
-**Changes in class com.aspose.pdf.Heading:** 
+**Changes in class com.aspose.pdf.Heading:**
 *changed method:*
 
 - public void setUserLabel(String value) -> public void setUserLabel(TextSegment value)
 
-**Changes in class com.aspose.pdf.EpubLoadOptions:** 
+**Changes in class com.aspose.pdf.EpubLoadOptions:**
 *added field:*
 
 - PageSizeAdjustmentModes */int PageSizeAdjustmentMode
 
-**Changes in class com.aspose.pdf.CompositingParameters:** 
+**Changes in class com.aspose.pdf.CompositingParameters:**
 *added constructor:*
 
 - public CompositingParameters(/* BlendMode **/int blendMode, /** ImageFilterType */int filterType)
   *added method:*
 - public /* ImageFilterType */int getFilterType()
 
-**Changes in class com.aspose.pdf.Field:** 
+**Changes in class com.aspose.pdf.Field:**
 *added methods:*
 
 - public int getTabOrder()
 - public void setTabOrder(int value)
 
-**Changes in class com.aspose.pdf.Font:** 
+**Changes in class com.aspose.pdf.Font:**
 *added methods:*
 
 - public boolean doesFontContainAllCharacters(String value)
 
-**Changes in class com.aspose.pdf.HtmlSaveOptions:** 
+**Changes in class com.aspose.pdf.HtmlSaveOptions:**
 *added field:*
 
 - public /* FontEncodingRules */byte FontEncodingStrategy;
 
-**Changes in class com.aspose.pdf.Resources:** 
+**Changes in class com.aspose.pdf.Resources:**
 *added method:*
 
 - public FontCollection getFonts(boolean createIfAbsent)

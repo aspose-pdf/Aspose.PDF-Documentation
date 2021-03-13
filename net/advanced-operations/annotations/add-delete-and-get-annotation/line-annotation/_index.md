@@ -62,7 +62,7 @@ namespace Aspose.Pdf.Examples.Advanced
                     Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 124, 1021, 266))
                 };
 
-                // Add annotation to the page 
+                // Add annotation to the page
                 document.Pages[1].Annotations.Add(lineAnnotation);
                 document.Save(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
             }

@@ -1,10 +1,10 @@
 ---
-title: Add PDF Header and Footer with Aspose.PDF 
+title: Add PDF Header and Footer with Aspose.PDF
 linktitle: Add PDF Header and Footer
 type: docs
 weight: 70
 url: /net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF allows you to add headers and footers to your PDF file using TextStamp class. 
+description: Aspose.PDF allows you to add headers and footers to your PDF file using TextStamp class.
 lastmod: "2020-12-22"
 aliases:
     - /net/manage-header-and-footer-of-pdf-file/
@@ -20,7 +20,7 @@ sitemap:
 
 You can use [TextStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/textstamp) class to add text in the header of a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text in the header, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the text in the header of the PDF.
 
-You need to set the TopMargin property in such a way that it adjusts the text in the header area of your PDF. You also need to set HorizontalAlignment to Center and VerticalAlignment to Top. 
+You need to set the TopMargin property in such a way that it adjusts the text in the header area of your PDF. You also need to set HorizontalAlignment to Center and VerticalAlignment to Top.
 
 The following code snippet shows you how to add text in the header of a PDF file with C#.
 
@@ -54,7 +54,7 @@ You can use TextStamp class to add text in the footer of a PDF file. TextStamp c
 
 {{% alert color="primary" %}}
 
-You need to set the Bottom Margin property in such a way that it adjusts the text in the footer area of your PDF. You also need to set HorizontalAlignment to Center and VerticalAlignment to Bottom 
+You need to set the Bottom Margin property in such a way that it adjusts the text in the footer area of your PDF. You also need to set HorizontalAlignment to Center and VerticalAlignment to Bottom
 
 {{% /alert %}}
 

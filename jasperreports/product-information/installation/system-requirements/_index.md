@@ -6,7 +6,7 @@ url: /jasperreports/system-requirements/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for JasperReports requires the following software to run:
 

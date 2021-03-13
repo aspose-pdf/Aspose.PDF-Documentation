@@ -20,29 +20,29 @@ lastmod: "2020-12-16"
 |PDFJAVA-37068|Unable to supply the license outside of the callable|Bug|
 |PDFJAVA-36819|PDF to DOCX - Content is missing in the resultant file|Bug|
 ### **Public API changes**
-Changes in class **com.aspose.pdf.ViewerPreference** 
+Changes in class **com.aspose.pdf.ViewerPreference**
 Added field:
 public static final int SIMPLEX = 4194304;
 public static final int DUPLEX_FLIP_SHORT_EDGE = 8388608;
 public static final int DUPLEX_FLIP_LONG_EDGE = 16777216;
 
-Changes in class **com.aspose.pdf.Form** 
+Changes in class **com.aspose.pdf.Form**
 Added method:
 public void setCalculatedFields( java.util.List<Field> value)
 
-Changes in interface **com.aspose.pdf.IDocument** 
+Changes in interface **com.aspose.pdf.IDocument**
 Added method:
 public /* PrintDuplex */int getDuplex();
 public void setDuplex(/* PrintDuplex */int value);
 public boolean convert(Document.CallBackGetHocr callback, boolean isTestVisible, boolean isOriginalImage);
 
-Changes in class **com.aspose.pdf.Document** 
+Changes in class **com.aspose.pdf.Document**
 Added method:
 public /* PrintDuplex */int getDuplex()
 public void setDuplex(/* PrintDuplex */int value)
 public boolean convert(Document.CallBackGetHocr callback, boolean isTestVisible, boolean isOriginalImage)
 
-Changes in class **com.aspose.pdf.Image** 
+Changes in class **com.aspose.pdf.Image**
 Added method:
 public boolean isApplyResolution()
 public void setApplyResolution(boolean value)
@@ -52,6 +52,6 @@ public static final int Simplex = 0;
 public static final int DuplexFlipShortEdge = 1;
 public static final int DuplexFlipLongEdge = 2;
 
-Changes in class **com.aspose.pdf.XFA** 
+Changes in class **com.aspose.pdf.XFA**
 Added method:
 public String tryGetTemplateString(String value)

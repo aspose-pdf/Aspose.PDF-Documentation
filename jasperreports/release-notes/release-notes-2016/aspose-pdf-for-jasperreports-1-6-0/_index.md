@@ -8,14 +8,14 @@ lastmod: "2020-12-16"
 
 <ins>**Public API Changes for Aspose.PDF for JasperReports 1.6.0**
 
-- All internal classes and packages were moved into the package **com.aspose.pdf.jrinternal.*** to avoid conflicts with other libraries. 
-- Very old versions of JasperReports are not supported now. The baseline version is **JasperReports 5.6.0, which was released on 2014-08-04.** 
-- **com.aspose.pdf.License** has been moved into **com.aspose.pdf.jr.License** 
-- Packages are not binding with the jasper version anymore. The main package from now is **com.aspose.pdf.jr.*** 
-- We have implement **new pdf engine** with lot of improvements to increase the quality of conversion. 
+- All internal classes and packages were moved into the package **com.aspose.pdf.jrinternal.*** to avoid conflicts with other libraries.
+- Very old versions of JasperReports are not supported now. The baseline version is **JasperReports 5.6.0, which was released on 2014-08-04.**
+- **com.aspose.pdf.License** has been moved into **com.aspose.pdf.jr.License**
+- Packages are not binding with the jasper version anymore. The main package from now is **com.aspose.pdf.jr.***
+- We have implement **new pdf engine** with lot of improvements to increase the quality of conversion.
 - Styled text is processing now.
   If textElement has **markup="styled"** - the style tegs inside this element will be applied for the text.
-  
+ 
   <ins>For example:
 
 {{< highlight java >}}
@@ -42,9 +42,9 @@ lastmod: "2020-12-16"
 {{< /highlight >}}
 
 - The aditional field (**PdfFormatType**) has been added to   **com.aspose.pdf.jr.jasperreports.JrPdfExportParametersBean** class:
-  Additional methods:   
-  -public void setPdfFormatType(String pdfFormat)   
-  -public int getPdfFormatType()   
+  Additional methods:  
+  -public void setPdfFormatType(String pdfFormat)  
+  -public int getPdfFormatType()  
    in the xml been we can configure the pdf format type using the one of the values from the class com.aspose.pdf.jr.PdfFormatType:
 
 {{< highlight java >}}
@@ -56,14 +56,14 @@ lastmod: "2020-12-16"
 
 {{< /highlight >}}
 
-- Additional methods were added for the class: **com.aspose.pdf.jr.SavingFormatType**   
-  -public static String getNameByValue(int value)      
-  -public static int getValueByName(String name) 
-  
-- Additional values have been implemented in the class **com.aspose.pdf.jr.SavingFormatType**   
-  -public static final int XML = 4; //implemented conversion into pdf->xml   
-  -public static final int TEX = 5; //implemented conversion into pdf->tex   
-  
-- Additional methods were added for the class: **com.aspose.pdf.jr.PdfFormatType**   
-  -public static String getNameByValue(int value)   
-  -public static int getValueByName(String name)     
+- Additional methods were added for the class: **com.aspose.pdf.jr.SavingFormatType**  
+  -public static String getNameByValue(int value)     
+  -public static int getValueByName(String name)
+ 
+- Additional values have been implemented in the class **com.aspose.pdf.jr.SavingFormatType**  
+  -public static final int XML = 4; //implemented conversion into pdf->xml  
+  -public static final int TEX = 5; //implemented conversion into pdf->tex  
+ 
+- Additional methods were added for the class: **com.aspose.pdf.jr.PdfFormatType**  
+  -public static String getNameByValue(int value)  
+  -public static int getValueByName(String name)    

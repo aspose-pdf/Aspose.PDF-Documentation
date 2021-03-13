@@ -123,7 +123,7 @@ With the following simple code snippet, you can split the output HTML into pages
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 Document doc = new Document(dataDir + "PDFToHTML.pdf");
-            
+           
 HtmlSaveOptions options = new HtmlSaveOptions();
 // This is the tested setting
 options.HtmlMarkupGenerationMode = HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent;

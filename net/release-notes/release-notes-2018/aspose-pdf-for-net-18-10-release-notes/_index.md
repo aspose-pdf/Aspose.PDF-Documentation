@@ -5,17 +5,17 @@ type: docs
 weight: 30
 url: /net/aspose-pdf-for-net-18-10-release-notes/
 lastmod: "2020-12-14"
-description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.10. 
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.10.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 18.10](https://www.nuget.org/packages/Aspose.Pdf/18.10.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 

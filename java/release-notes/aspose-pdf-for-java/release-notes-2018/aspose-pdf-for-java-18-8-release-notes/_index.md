@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-18-8-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 18.8](https://repository.aspose.com/repo/com/aspose/aspose-pdf/18.8/)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
@@ -29,27 +29,27 @@ The class location moved: 
 com.aspose.pdf.**Document**.**FontSubsetStrategy** -> com.aspose.pdf.**FontSubsetStrategy**
 
 Added methods:
-com.aspose.pdf.**IDocument**.bindXml(InputStream)   
-com.aspose.pdf.**IIndexBitmapConverter**.get4BppImage(java.awt.image.BufferedImage)   
-com.aspose.pdf.**IIndexBitmapConverter**.get8BppImage(java.awt.image.BufferedImage)   
-com.aspose.pdf.**ImagePlacement**.replace(InputStream)   
-com.aspose.pdf.**XImage**.getRawParameters   
-com.aspose.pdf.**XImage**.toStream   
-com.aspose.pdf.**PptxSaveOptions**.isRecognizeTextColumns()   
-com.aspose.pdf.**PptxSaveOptions**.setRecognizeTextColumns(boolean)   
+com.aspose.pdf.**IDocument**.bindXml(InputStream)  
+com.aspose.pdf.**IIndexBitmapConverter**.get4BppImage(java.awt.image.BufferedImage)  
+com.aspose.pdf.**IIndexBitmapConverter**.get8BppImage(java.awt.image.BufferedImage)  
+com.aspose.pdf.**ImagePlacement**.replace(InputStream)  
+com.aspose.pdf.**XImage**.getRawParameters  
+com.aspose.pdf.**XImage**.toStream  
+com.aspose.pdf.**PptxSaveOptions**.isRecognizeTextColumns()  
+com.aspose.pdf.**PptxSaveOptions**.setRecognizeTextColumns(boolean)  
 
 Added costructors:
-com.aspose.pdf.**TextEditOptions**.TextEditOptions()   
-com.aspose.pdf.**TextEditOptions**.TextEditOptions(int,Class)   
+com.aspose.pdf.**TextEditOptions**.TextEditOptions()  
+com.aspose.pdf.**TextEditOptions**.TextEditOptions(int,Class)  
 
 Added classes:
-com.aspose.pdf.**LocaleOptions**()   
+com.aspose.pdf.**LocaleOptions**()  
 methods:
 setLocale(Locale)
 getLocale()
 clear()
 
-com.aspose.pdf.**XImage**.**RawParameters** 
+com.aspose.pdf.**XImage**.**RawParameters**
 fields:
 Type
 Subtype

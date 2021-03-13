@@ -5,7 +5,7 @@ type: docs
 weight: 310
 url: /net/convert-latex-tex-to-pdf/
 lastmod: "2021-01-15"
-description: This page describes the use of files in the LaTeX format. Also, article explains how to convert LaTeX files to PDF format with Aspose.PDF library. 
+description: This page describes the use of files in the LaTeX format. Also, article explains how to convert LaTeX files to PDF format with Aspose.PDF library.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,7 +19,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-Aspose.PDF for .NET supports the feature to convert TeX files to PDF format and in order to accomplish this requirement, Aspose.Pdf namespace has a class named [LatexLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/latexloadoptions) which provides the capabilities to load LaTex files and render the output in PDF format using [Document class](https://apireference.aspose.com/pdf/net/aspose.pdf/document). 
+Aspose.PDF for .NET supports the feature to convert TeX files to PDF format and in order to accomplish this requirement, Aspose.Pdf namespace has a class named [LatexLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/latexloadoptions) which provides the capabilities to load LaTex files and render the output in PDF format using [Document class](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
 The following code snippet shows the process of converting LaTex file to PDF format with C#.
 
 ```csharp

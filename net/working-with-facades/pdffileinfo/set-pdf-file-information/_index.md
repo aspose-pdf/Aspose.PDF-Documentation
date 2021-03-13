@@ -9,7 +9,7 @@ draft: false
 ---
 
 
-[PdfFileInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class allows you to set file specific information of a PDF file. You need to create an object of [PdfFileInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class and then set different file specific properties like Author, Title, Keyword, and Creator etc. Finally, save the updated PDF file using [SaveNewInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) method of the [PdfFileInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) object. 
+[PdfFileInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class allows you to set file specific information of a PDF file. You need to create an object of [PdfFileInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class and then set different file specific properties like Author, Title, Keyword, and Creator etc. Finally, save the updated PDF file using [SaveNewInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) method of the [PdfFileInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) object.
 
 The following code snippet shows you how to set PDF file information.
 
@@ -23,7 +23,7 @@ PdfFileInfo fileInfo = new PdfFileInfo(dataDir+ "SetFileInfo.pdf");
 fileInfo.Author = "Aspose";
 fileInfo.Title = "Hello World!";
 fileInfo.Keywords = "Peace and Development";
-fileInfo.Creator = "Aspose";             
+fileInfo.Creator = "Aspose";            
 // Save updated file
 fileInfo.SaveNewInfo(dataDir+ "SetFileInfo_out.pdf");
 ```

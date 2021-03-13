@@ -244,7 +244,7 @@ To convert this file to PDF we should create an XSL with HTML layout. Let's rend
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:template match="/">
     <html>
@@ -423,7 +423,7 @@ Let's define the page with default parameters. Our page will have an A4 page siz
   <Page>
     <TextFragment>
       <TextSegment>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio lorem, luctus in lorem vitae, accumsan semper lectus. Cras a auctor leo, et tincidunt lacus.</TextSegment>
-    </TextFragment>    
+    </TextFragment>   
   </Page>
 </Document>
 ```
@@ -447,11 +447,11 @@ To define a new page size we should add a `PageInfo` element. In the following e
 <Document xmlns="Aspose.Pdf">
   <Page>
     <PageInfo IsLandscape="true" Height="595" Width="420">
-      <Margin Top="70.8661" Bottom="70.8661" Left="28.3465" Right="28.3465" />           
+      <Margin Top="70.8661" Bottom="70.8661" Left="28.3465" Right="28.3465" />          
     </PageInfo>
     <TextFragment>
       <TextSegment>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio lorem, luctus in lorem vitae, accumsan semper lectus. Cras a auctor leo, et tincidunt lacus.</TextSegment>
-    </TextFragment>    
+    </TextFragment>   
   </Page>
 </Document>
 ```
@@ -884,7 +884,7 @@ BindXML() method offers the feature to load XML file contents and Document.save(
   <Page id="mainSection">
     <TextFragment>
       <TextSegment id="boldHtml">segment1</TextSegment>
-    </TextFragment> 
+    </TextFragment>
     <TextFragment>
       <TextSegment id="strongHtml">segment2</TextSegment>
     </TextFragment>
@@ -916,7 +916,7 @@ doc.Save(dataDir + "XMLToPDF_out.pdf");
 We can add other additionital elements to XML document: Image or Graph objects. The following snippet shows how to add those elements to the document
 
 ```xml
-<Graph Width="20" Height="20">    
+<Graph Width="20" Height="20">   
   <Circle PosX="30" PosY="30" Radius="10">
     <GraphInfo Color="Red" FillColor="Blue"></GraphInfo>
   </Circle>
@@ -959,7 +959,7 @@ Following XML template contains an `<Image>` tag in it with an ID "testImg". In 
         <!--Logo-->
             <TextFragment>
                 <TextSegment> Request ID</TextSegment>
-                <TextState FontSize="14" ForegroundColor="#0e4f9c" FontStyle="1" /> 
+                <TextState FontSize="14" ForegroundColor="#0e4f9c" FontStyle="1" />
             </TextFragment>
             <TextFragment>
                 <TextSegment></TextSegment>

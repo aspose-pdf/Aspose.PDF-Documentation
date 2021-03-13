@@ -6,11 +6,11 @@ url: /java/com-aspose-pdf-facades-package-features/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Specified below are the features available in the com.aspose.pdf.facades package.
 
-{{% /alert %}} 
+{{% /alert %}}
 #### **General Features**
 - Written completely in Java, works with J2SE 5.0, J2SE 6.0 and J2SE 7.0.
 - Supports all Java applications.

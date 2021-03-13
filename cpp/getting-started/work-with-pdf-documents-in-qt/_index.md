@@ -15,11 +15,11 @@ In order to use Aspose.PDF for C++ in your Qt application on Windows Operating S
 
 Here, we will demonstrate how to integrate and use Aspose.PDF for C++ within a Qt console application using Qt Creator.
 ### **Create Qt Console Application**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This article assumes that you have properly installed Qt development environment and Qt Creator.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 - Open Qt Creator and create a new *Qt Console Application*.
 

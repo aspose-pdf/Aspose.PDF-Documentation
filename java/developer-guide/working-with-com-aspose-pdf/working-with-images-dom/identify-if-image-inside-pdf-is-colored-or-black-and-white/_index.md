@@ -6,11 +6,11 @@ url: /java/identify-if-image-inside-pdf-is-colored-or-black-and-white/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Different type of compression can be applied over images to reduce their size. The type of compression being applied over image depends upon the ColorSpace of source image i.e. if image is Color (RGB), then apply JPEG2000 compression, and if it is Black & White, then JBIG2/JBIG2000 compression should be applied. Therefore identifying each image type and using an appropriate type of compression will create best/optimized output.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 A PDF file may contain Text, Image, Graph, Attachment, Annotation, etc elements and if the source PDF file contains images, we can determine image Color space and apply appropriate compression for the image to reduce PDF file size.
 

@@ -6,11 +6,11 @@ url: /java/extract-image-from-signature-field/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for Java supports the feature to digitally sign PDF files using the SignatureField class and while signing the document, setting an image for SignatureAppearance. Now our API also provides the capability to extract the signature information as well as the image associated with the signature field.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 In order to extract signature information, we have introduced the extractImage(..) method to the SignatureField class. Please take a look at the following code snippet which demonstrates the steps to extract an image from the SignatureField object:
 

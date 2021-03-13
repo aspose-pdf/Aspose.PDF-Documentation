@@ -42,7 +42,7 @@ In order to download the PHP/JavaBridge binaries, issue the following command on
 
 {{< highlight actionscript3 >}}
 
-  wget http://citylan.dl.sourceforge.net/project/php-java-bridge/Binary%20package/php-java-bridge_6.2.1/php-java-bridge_6.2.1_documentation.zip 
+  wget http://citylan.dl.sourceforge.net/project/php-java-bridge/Binary%20package/php-java-bridge_6.2.1/php-java-bridge_6.2.1_documentation.zip
 
 {{< /highlight >}}
 
@@ -51,7 +51,7 @@ Unzip the PHP/JavaBridge binaries by issuing the following command on the Linux 
 
 {{< highlight actionscript3 >}}
 
-  unzip -d php-java-bridge_6.2.1_documentation.zip 
+  unzip -d php-java-bridge_6.2.1_documentation.zip
 
 {{< /highlight >}}
 
@@ -60,7 +60,7 @@ This will extract **JavaBridge.war** file. Copy it to the tomcat88 **webapps*
 
 {{< highlight actionscript3 >}}
 
-  sudo cp JavaBridge.war /var/lib/tomcat8/webapps/JavaBridge.war 
+  sudo cp JavaBridge.war /var/lib/tomcat8/webapps/JavaBridge.war
 
 {{< /highlight >}}
 
@@ -71,7 +71,7 @@ If any error message appears then install  **FastCGI** by issuing the followin
 
 {{< highlight actionscript3 >}}
 
-  sudo apt-get install php55-cgi 
+  sudo apt-get install php55-cgi
 
 {{< /highlight >}}
 
@@ -86,7 +86,7 @@ Clone, PHP examples by issuing the following commands inside webapps/JavaBridge 
 
 $ git init&nbsp;
 
-$ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose.PDF-for-Java_for_PHP] 
+$ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose.PDF-for-Java_for_PHP]
 
 {{< /highlight >}}
 

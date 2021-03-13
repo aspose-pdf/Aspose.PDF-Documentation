@@ -75,7 +75,7 @@ In order to download the PHP/JavaBridge binaries, issue following command on the
 
 {{< highlight actionscript3 >}}
 
-  wget http://citylan.dl.sourceforge.net/project/php-java-bridge/Binary%20package/php-java-bridge_6.2.1/php-java-bridge_6.2.1_documentation.zip 
+  wget http://citylan.dl.sourceforge.net/project/php-java-bridge/Binary%20package/php-java-bridge_6.2.1/php-java-bridge_6.2.1_documentation.zip
 
 {{< /highlight >}}
 
@@ -84,7 +84,7 @@ Unzip the PHP/JavaBridge binaries by issuing the following command on linux cons
 
 {{< highlight actionscript3 >}}
 
-  unzip -d php-java-bridge_6.2.1_documentation.zip 
+  unzip -d php-java-bridge_6.2.1_documentation.zip
 
 {{< /highlight >}}
 
@@ -93,23 +93,23 @@ This will extract **JavaBridge.war** file. Copy it to tomcat88 **webapps** f
 
 {{< highlight actionscript3 >}}
 
-  sudo cp JavaBridge.war /var/lib/tomcat8/webapps/JavaBridge.war 
+  sudo cp JavaBridge.war /var/lib/tomcat8/webapps/JavaBridge.war
 
 {{< /highlight >}}
 
 
-By copying, tomcat8 will automatically create a new folder "**JavaBridge**" in **webapps**. 
+By copying, tomcat8 will automatically create a new folder "**JavaBridge**" in **webapps**.
 
 If any error message appears then install  **FastCGI** by issuing the following command on Linux console.
 
 {{< highlight actionscript3 >}}
 
-  sudo apt-get install php55-cgi 
+  sudo apt-get install php55-cgi
 
 {{< /highlight >}}
 
 
-If **JAVA_HOME** error is displayed, then open /etc/default/tomcat8 file and uncomment the line that sets the JAVA_HOME. 
+If **JAVA_HOME** error is displayed, then open /etc/default/tomcat8 file and uncomment the line that sets the JAVA_HOME.
 
 
 ### #3. Configure Aspose.PDF Java for PHP Examples
@@ -119,7 +119,7 @@ Clone, PHP examples by issuing the following commands inside webapps/JavaBridge 
 
 $ git init&nbsp;
 
-$ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose.PDF-for-Java_for_PHP] 
+$ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose.PDF-for-Java_for_PHP]
 
 {{< /highlight >}}
 

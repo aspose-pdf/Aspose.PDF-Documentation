@@ -6,7 +6,7 @@ url: /java/licensing/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Once you are happy with your evaluation of Aspose.PDF for Android via Java, [purchase a license](https://purchase.aspose.com/) at the Aspose website. Make yourself familiar with the different [license types](https://purchase.aspose.com/policies/license-types/) offered. If you have any questions, do not hesitate to [contact the Aspose sales team](https://company.aspose.com/contact).
 
@@ -16,10 +16,10 @@ The license is a plain text XML file that contains details such as the product n
 
 You need to set a license before performing any operations with documents. Make sure you do this before creating a Document object. You are only required to set a license once per application or process.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 
 ### **Loading the License file**
@@ -69,4 +69,4 @@ license.setLicense(inputStream);
 {{< /highlight >}}
 
 
-{{% /alert %}} 
+{{% /alert %}}

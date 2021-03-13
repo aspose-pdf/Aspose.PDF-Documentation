@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 6.9.0](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-6.9.0/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 We are pleased to share the new version of Aspose.PDF for .NET with following improvements.New Features
 

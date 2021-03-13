@@ -6,16 +6,16 @@ url: /reportingservices/justify-fulljustify-text-alignment/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Report builder does not support the capability to specify text alignment for textbox “Justify” and “FullJustify”. With Aspose.PDF for Reporting Services, you can do that easily by adding custom properties.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
-**Custom Property Name** : TextAlignment   
-**Custom Property Type** : String   
-**Custom Property Values** : Justify, FullJustify   
+{{% alert color="primary" %}}
+**Custom Property Name** : TextAlignment  
+**Custom Property Type** : String  
+**Custom Property Values** : Justify, FullJustify  
 
 In report the code should be like the following:
 

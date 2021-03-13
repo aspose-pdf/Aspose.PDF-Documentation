@@ -6,11 +6,11 @@ url: /cpp/aspose-pdf-for-cpp-19-12-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes information for Aspose.PDF for C++ 19.12.
 
-{{% /alert %}} 
+{{% /alert %}}
 ## <ins>**Improvements and Changes**
 This new version of Aspose.PDF for C++ has codebase of Aspose.PDF for .NET 19.12. The API is available for Linux platforms (Ubuntu 16.04 and later with gcc6, clang compilers).
 

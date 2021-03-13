@@ -7,14 +7,14 @@ url: /net/using-early-binding-in-cpp/
 
 ##### **Prerequisites**
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Please register Aspose.PDF for .NET with COM Interop, kindly check the article named [Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ##### **Sample**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This is a simple C++ code sample to extract text from PDF files using COM Interop using early binding. Before running the sample pay attention that
 
@@ -149,4 +149,4 @@ int main(array<System::String ^> ^args)
 {{< /highlight >}}
 
 
-{{% /alert %}} 
+{{% /alert %}}

@@ -6,12 +6,12 @@ url: /jasperreports/easy-and-lightweight-deployment/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for JasperReports is an export extension for [JasperReports](http://www.jaspersoft.com/jasperreports).
 
-Aspose.PDF for JasperReports is provided as a single JAR file and can easily be integrated with JasperReports and JasperServer. 
+Aspose.PDF for JasperReports is provided as a single JAR file and can easily be integrated with JasperReports and JasperServer.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-To install Aspose.PDF for JasperReports, simply copy the **Aspose-pdf-jasperreports.jar** file to the correct folder (JasperReports\lib). To integrate with JasperServer you also need to edit a JasperServer configuration file. [Read the installation section](/pdf/jasperreports/installation/) for detailed installation steps. 
+To install Aspose.PDF for JasperReports, simply copy the **Aspose-pdf-jasperreports.jar** file to the correct folder (JasperReports\lib). To integrate with JasperServer you also need to edit a JasperServer configuration file. [Read the installation section](/pdf/jasperreports/installation/) for detailed installation steps.

@@ -6,11 +6,11 @@ url: /java/features-of-aspose-pdf-package/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains the list of features currently being offered by aspose.pdf package.
 
-{{% /alert %}} 
+{{% /alert %}}
 ##### **General**
 - Written completely in Java, works with JDK 1.8 and above
 - Supports all Java applications

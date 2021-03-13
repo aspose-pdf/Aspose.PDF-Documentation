@@ -5,14 +5,14 @@ weight: 30
 url: /net/asp-vbscript-via-com-interop/
 ---
 
-##### **Prerequisites** 
+##### **Prerequisites**
 
 {{% alert color="primary" %}}
 
 Please check the article named Use Aspose.pdf for .NET via COM Interop.
 
 
-{{% /alert %}} 
+{{% /alert %}}
 
 
 ##### **Hello World!**
@@ -21,7 +21,7 @@ Please check the article named Use Aspose.pdf for .NET via COM Interop.
 
 This is a simple ASP application that shows you how to create a PDF file with sample text using [Aspose.PDF for .NET](/pdf/net/) and VBScript via COM Interop.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 **VBScript**
 
@@ -114,4 +114,4 @@ pdf.Save("d:\pdftest\HelloWorldinASP.pdf")
 This VBScript sample extracts text from an existing PDF document via COM Interop.
 
 Error rendering macro 'code' : Invalid value specified for parameter lang
-{{% /alert %}} 
+{{% /alert %}}

@@ -6,7 +6,7 @@ url: /java/working-with-attachments/
 lastmod: "2020-12-16"
 ---
 
-## **This section includes the following topics**: 
+## **This section includes the following topics**:
 
 - [Add Attachment to PDF](/pdf/java/add-attachment-to-pdf/)
 - [Get Attachments from a PDF Document](/pdf/java/get-attachments-from-a-pdf-document/)

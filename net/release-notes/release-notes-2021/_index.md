@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Aspose PDF for .NET Release Notes list new features, enhancement, and fixed bugs that were made in 2021. 
+Aspose PDF for .NET Release Notes list new features, enhancement, and fixed bugs that were made in 2021.
 
 - [Aspose.PDF for .NET 21.1](/pdf/net/aspose-pdf-for-net-21-1-release-notes/)
 - [Aspose.PDF for .NET 21.2](/pdf/net/aspose-pdf-for-net-21-2-release-notes/)

@@ -82,7 +82,7 @@ class PdfToDoc:
         print "Document has been converted successfully"
 
 
-if __name__ == '__main__':        
+if __name__ == '__main__':       
 
     PdfToDoc()
 

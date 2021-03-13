@@ -13,9 +13,9 @@ RS designer does not support the embedded font for text; with Aspose.PDF for Rep
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Parameter Name**: IsFontEmbedded   
-**Date Type**: Boolean   
-**Values supported**: True, False (default)   
+**Parameter Name**: IsFontEmbedded  
+**Date Type**: Boolean  
+**Values supported**: True, False (default)  
 
 **Example**
 {{< highlight csharp >}}
@@ -31,4 +31,4 @@ RS designer does not support the embedded font for text; with Aspose.PDF for Rep
 
 {{< /highlight >}}
 
-{{% /alert %}} 
+{{% /alert %}}

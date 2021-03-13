@@ -6,13 +6,13 @@ url: /java/insert-an-image-into-a-table-cell-in-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Tables are important elements for displaying data. They provide a presentable format for data representation. Tables are often used to display numeric information. Aspose.PDF API provides a class, Table, which offers you the capability to create tables in PDF file.
 
 Rather than creating a simple table you can set different formatting options, for example the table border style, margin information, alignment, background color, column width, title information, the value of rows to be repeated on every page and many more.
 
-{{% /alert %}} 
+{{% /alert %}}
 ### <ins>**Aspose.PDF Approach**
 According to our DOM (Document Object Model) a document is composed of Pages. A page contains one or more paragraphs, and a paragraph may be an image, text, a form field, a heading, a floating box, graph, attachment, or a table. A table, in turn, has a collection of rows and each row has a collection of cells. A cell is a collection of paragraphs.
 
@@ -92,8 +92,8 @@ row1.getCells().get_Item(2).setVerticalAlignment(VerticalAlignment.Center);
 
 
 
-//Save the document 
+//Save the document
 
-pdfDocument.save(dataDir + "Image_in_Cell.pdf");     
+pdfDocument.save(dataDir + "Image_in_Cell.pdf");    
 
 {{< /highlight >}}

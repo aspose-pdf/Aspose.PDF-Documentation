@@ -6,11 +6,11 @@ url: /cpp/aspose-pdf-for-cpp-19-9-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for Aspose.PDF for C++ 19.9
 
-{{% /alert %}} 
+{{% /alert %}}
 ## <ins>**Improvements and Changes**
 1. New version of Aspose.PDF for C++ has codebase of Aspose.PDF for .Net 19.9
 1. System::Drawing subsystem is enhanced
@@ -30,7 +30,7 @@ This page contains release notes for Aspose.PDF for C++ 19.9
 ### **API Reference changes in Aspose.PDF for C++ 19.9**
 Full API reference is available on [API Reference](https://apireference.aspose.com/cpp/pdf/) Page of Aspose.PDF for C++.
 #### **Added APIs:**
-- Property Aspose.Pdf.Annotations.FreeTextAnnotation.TextRectangle               
+- Property Aspose.Pdf.Annotations.FreeTextAnnotation.TextRectangle              
 
 - Class Aspose.Pdf.Annotations.ImportDataAction
 

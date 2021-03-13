@@ -6,11 +6,11 @@ url: /java/expanded-bookmarks-when-viewing-document/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Bookmarks are held in the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's [OutlineItemCollection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/OutlineCollection) collection, itself in the [OutlineItemCollection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/OutlineCollection) collection. However we may have a requirement to have all the bookmarks expanded when viewing the PDF file.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 In order to accomplish this requirement, we can set open status for each outline/bookmark item as Open. The following code snippet shows you how to set open status for each bookmark as expanded in a PDF document.
 

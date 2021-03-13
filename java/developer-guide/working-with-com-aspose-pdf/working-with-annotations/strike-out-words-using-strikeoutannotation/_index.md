@@ -6,11 +6,11 @@ url: /java/strike-out-words-using-strikeoutannotation/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for Java allows you to add, delete and update annotations in PDF documents. One of the classes allows you to strike out annotations too. This is useful when you want to strike out one or more text fragments in a document.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Annotations are held in a [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) object's AnnotationCollection collection. A class named StrikeOutAnnotation can be used to add strike out annotations to a PDF document.
 

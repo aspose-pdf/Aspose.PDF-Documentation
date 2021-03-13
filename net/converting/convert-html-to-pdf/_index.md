@@ -122,7 +122,7 @@ When converting a web page hosted on a webserver to PDF:
 public static void ConvertHTMLtoPDFAdvanced_WebPage()
 {
     const string url = "https://en.wikipedia.org/wiki/Aspose_API";
-    // Set page size A3 and Landscape orientation;    
+    // Set page size A3 and Landscape orientation;   
     HtmlLoadOptions options = new HtmlLoadOptions(url)
     {
         PageInfo = {Width = 842, Height = 1191, IsLandscape = true}

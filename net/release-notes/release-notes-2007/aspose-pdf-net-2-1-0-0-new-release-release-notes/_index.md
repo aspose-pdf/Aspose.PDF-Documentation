@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF .Net 2.1.0.0 New Release](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-.net-2.1.0.0-new-release/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Version 2.1.0.0 includes all the features provided in Hotfix 1.0.x while the following is a quick list:
 

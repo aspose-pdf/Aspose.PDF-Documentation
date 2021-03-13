@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-19-5-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 19.5](https://repository.aspose.com/repo/com/aspose/aspose-pdf/19.5/)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
@@ -31,16 +31,16 @@ This page contains release notes for [Aspose.PDF for Java 19.5](https://reposit
 ### **Public API Changes**
 **Renamed methods:** 
 
-com.aspose.pdf.Document.getHideToolBar() ->com.aspose.pdf.Document.isHideToolBar()   
-com.aspose.pdf.Document.getHideMenubar() ->com.aspose.pdf.Document.isHideMenubar()   
-com.aspose.pdf.Document.getHideWindowUI() ->  com.aspose.pdf.Document.isHideWindowUI()   
+com.aspose.pdf.Document.getHideToolBar() ->com.aspose.pdf.Document.isHideToolBar()  
+com.aspose.pdf.Document.getHideMenubar() ->com.aspose.pdf.Document.isHideMenubar()  
+com.aspose.pdf.Document.getHideWindowUI() ->  com.aspose.pdf.Document.isHideWindowUI()  
 com.aspose.pdf.Document.getFitWindow() ->com.aspose.pdf.Document.isFitWindow()
 com.aspose.pdf.Document.getCenterWindow() ->com.aspose.pdf.Document.isCenterWindow()
 com.aspose.pdf.Document.getDisplayDocTitle() ->com.aspose.pdf.Document.isDisplayDocTitle()
 
 **Added new methods:** 
 
-com.aspose.pdf.HtmlFragment.isBreakWords()   
+com.aspose.pdf.HtmlFragment.isBreakWords()  
 com.aspose.pdf.HtmlFragment.setBreakWords(boolean)
 com.aspose.pdf.tagged.ITaggedContent.createTableTHeadElement()
 com.aspose.pdf.tagged.ITaggedContent.createTableTBodyElement()

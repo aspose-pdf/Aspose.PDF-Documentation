@@ -23,7 +23,7 @@ The NetBeans Team actively support the product and seek feature suggestions from
 
 ### Aspose.PDF Java for NetBeans (Maven)
 - Aspose.PDF Java for NetBeans (Maven) is a Plugin for **NetBeans IDE** by **Aspose.** The Plugin intended for developers using the Maven platform for Java developments and want to use [Aspose.PDF for Java](https://products.aspose.com/pdf/java) in their projects. The Plugin lets you create maven projects for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) and also download [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) of the API. 
-- The plugin provides following features to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) within **NetBeans IDE** comfortably: 
+- The plugin provides following features to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) within **NetBeans IDE** comfortably:
 
 ![todo:image_alt_text](http://i.imgur.com/KWKGljg.png)
 
@@ -31,14 +31,14 @@ The NetBeans Team actively support the product and seek feature suggestions from
 **WIZARDS**:
 The plugin contains two wizards
 
-**Aspose.PDF Maven Project (wizard)** 
+**Aspose.PDF Maven Project (wizard)**
 
 - This New Project wizard lets developers to create **Maven** project for using [Aspose.PDF for Java](https://products.aspose.com/pdf/java) from **New Project -> Maven-> Aspose.PDF Maven Project.
 - The reference of [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) maven dependency is automatically fetched from [Aspose Cloud Maven Repository](http://maven.aspose.com/artifactory/webapp/home.html?0) and gets added in the pom.xml.
 - The created project will always contain most recent available version **Maven** Dependency for [Aspose.PDF for Java API](https://products.aspose.com/pdf/java).
 - The wizard steps also present with the option for downloading [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java).
 
-**Aspose.PDF Code Example (wizard)** 
+**Aspose.PDF Code Example (wizard)**
 
 - This New File wizard lets you copy the downloaded [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) into your project for using [Aspose.PDF for Java](https://products.aspose.com/pdf/java) from **New File -> Java -> Aspose.PDF Code Example.** 
 - Available samples are displayed in tree format from where the user can select them categorically.

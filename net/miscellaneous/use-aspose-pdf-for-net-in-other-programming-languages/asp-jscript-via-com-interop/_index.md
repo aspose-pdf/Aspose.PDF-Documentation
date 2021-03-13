@@ -5,14 +5,14 @@ weight: 40
 url: /net/asp-jscript-via-com-interop/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-This is a simple ASP application that shows you how to add simple text string to PDF file using [Aspose.PDF for .NET](/pdf/net/) and JScript via COM Interop. 
+This is a simple ASP application that shows you how to add simple text string to PDF file using [Aspose.PDF for .NET](/pdf/net/) and JScript via COM Interop.
 
-{{% /alert %}} 
+{{% /alert %}}
 ##### **Code Snippet**
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 **JScript**
 
@@ -85,4 +85,4 @@ pdf.Save("d:\\pdftest\\HelloWorldinASP.pdf");
 
 
 {{< /highlight >}}
-{{% /alert %}} 
+{{% /alert %}}

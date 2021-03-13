@@ -8,7 +8,7 @@ description: This section describes the basic principles of work and using DOM A
 is_node: true
 aliases:
     - /net/getting-started/
-lastmod: "2020-12-31"    
+lastmod: "2020-12-31"   
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,7 +18,7 @@ sitemap:
 
 PDF was created by Adobe in the 1990s to achieve two things. The first is that you should be able to open the documents on any hardware or operating system, without needing to have the app used to create them—all you need is a PDF reader, and these days most web browsers fit the bill. The second is that wherever you open a PDF, the layout of the document should look the same.
 
-However, it is not enough just to open your document. In working with PDF, you will face the need to create such a document anew, edit it, or convert it to the format you need. 
+However, it is not enough just to open your document. In working with PDF, you will face the need to create such a document anew, edit it, or convert it to the format you need.
 
 ## Why use Aspose.PDF for .NET?
 
@@ -26,7 +26,7 @@ Using Aspose.HTML for .NET in your project gives you the following profits:
 
 - wide variety of functions
 - written completely in C# and works with .NET Framework
-- convenience and ease of use 
+- convenience and ease of use
 
 ## Wide variety of functions
 

@@ -1,6 +1,6 @@
 ---
 title: Move PDF Pages programmatically C#
-linktitle: Move PDF Pages 
+linktitle: Move PDF Pages
 type: docs
 weight: 20
 url: /net/move-pages/
@@ -68,7 +68,7 @@ public static void MoveBunchPages()
     {
         var page = srcDocument.Pages[pageIndex];
         dstDocument.Pages.Add(page);
-    }                        
+    }                       
     // Save output files
     dstDocument.Save(srcFileName);
     srcDocument.Pages.Delete(pages);
@@ -90,11 +90,11 @@ public static void MovePagesInOnePDF()
     var srcFileName = "<enter file name>";
     var dstFileName = "<enter file name>";
     var srcDocument = new Aspose.Pdf.Document(srcFileName);
-    
+   
     var page = srcDocument.Pages[2];
     srcDocument.Pages.Add(page);
-    srcDocument.Pages.Delete(2);           
-    
+    srcDocument.Pages.Delete(2);          
+   
     // Save output file
     srcDocument.Save(dstFileName);
 }

@@ -28,7 +28,7 @@ lastmod: "2020-12-16"
 - The class **com.aspose.pdf.Paragraphs** becomes implemented **Iterable<BaseParagraph>**
 - Conversions from Epub format and from/to Latex format are temporarily disabled till the next release.
 - The legacy engine (package aspose.pdf.*) is moved from the build to another jar file (aspose.pdf.legacy-11.9.0.jar) with deleting all the methods bind with it.
-- **License** and **AssemblyConstants** classes for the legacy jar were moved into the package: **com.aspose.pdf.legacy** 
+- **License** and **AssemblyConstants** classes for the legacy jar were moved into the package: **com.aspose.pdf.legacy**
   All the other classes from the package aspose.pdf.* were not changed.
 
 Deleted public void **bindPdf**(aspose.pdf.Pdf pdf) method from following classes:

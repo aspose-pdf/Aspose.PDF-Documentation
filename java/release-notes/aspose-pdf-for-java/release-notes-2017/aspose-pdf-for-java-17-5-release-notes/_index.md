@@ -59,13 +59,13 @@ public PdfException(String message, java.lang.Throwable innerException)
 
 Changes in class com.aspose.pdf.facades.**PdfViewer**:
 
-**Added methods:** 
+**Added methods:**
 public boolean getPrintAsGrayscale()
 public void setPrintAsGrayscale(boolean value)
 
 Changes in class com.aspose.pdf.**Font**:
 
-**Added method:** 
+**Added method:**
 public String getType()
 
 Added new class com.aspose.pdf.**Opi** with the following methods:

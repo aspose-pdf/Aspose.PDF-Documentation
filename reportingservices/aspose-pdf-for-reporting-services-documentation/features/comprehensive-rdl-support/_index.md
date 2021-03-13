@@ -6,15 +6,15 @@ url: /reportingservices/comprehensive-rdl-support/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-Aspose.PDF for Reporting Services supports RDL specification. 
+Aspose.PDF for Reporting Services supports RDL specification.
 This means that there's **no need** to:
 
 - Redesign or customize existing reports.
 - Use a specific report designer. Uuse any RDL report designer and the report is exported exactly the way you designed it.
 
-{{% /alert %}} 
+{{% /alert %}}
 ### <ins>**Supported RDL Elements**
 Aspose.PDF for Reporting Services supports the following RDL elements:
 

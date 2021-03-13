@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF for .NET 9.2.1 
+title: Aspose.PDF for .NET 9.2.1
 linktitle: Aspose.PDF for .NET 9.2.1 R
 type: docs
 weight: 70
@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 9.2.1](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-9.2.1/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 We are announcing the release of latest hotfix for Aspose.PDF for .NET which contains the fixes for some high priority issues.
 

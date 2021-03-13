@@ -215,7 +215,7 @@ To remove an open action:
 
 1. Set the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s [OpenAction](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction) property to null.
 1. Save the updated PDF using the Document object’s [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
- 
+
 The following code snippet shows how to remove a document open action from the PDF file.
 
 ```csharp

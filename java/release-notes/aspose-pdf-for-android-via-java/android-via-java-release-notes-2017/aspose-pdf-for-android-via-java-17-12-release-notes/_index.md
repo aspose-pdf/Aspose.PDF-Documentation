@@ -20,26 +20,26 @@ lastmod: "2020-12-16"
 |PDFANDROID-492|Pdf to text: space between text increased|Bug|
 |PDFANDROID-494|The extracted text from pdf is incorrect|Bug|
 ## **Public API Changes**
-Added new class **com.aspose.pdf.AbsorbedCell** 
+Added new class **com.aspose.pdf.AbsorbedCell**
 methods:
 
 - com.aspose.pdf.AbsorbedCell.getTextFragments
 - com.aspose.pdf.AbsorbedCell.getRectangle
 
-Added new class **com.aspose.pdf.AbsorbedRow** 
+Added new class **com.aspose.pdf.AbsorbedRow**
 methods:
 
 - com.aspose.pdf.AbsorbedRow.getCellList
 - com.aspose.pdf.AbsorbedRow.getRectangle
 
-Added new class **com.aspose.pdf.AbsorbedTable** 
+Added new class **com.aspose.pdf.AbsorbedTable**
 methods:
 
 - com.aspose.pdf.AbsorbedTable.getRowList
 - com.aspose.pdf.AbsorbedTable.getRectangle
 - com.aspose.pdf.AbsorbedTable.getPageNum
 
-Changes in **class com.aspose.pdf.Color** 
+Changes in **class com.aspose.pdf.Color**
 Added constructors:
 
 - com.aspose.pdf.Color
@@ -52,7 +52,7 @@ Added methods:
 - com.aspose.pdf.Color.getPatternColorSpace
 - com.aspose.pdf.Color.setPatternColorSpace(PatternColorSpace)
 
-Changes in class **com.aspose.pdf.drawing.Arc** 
+Changes in class **com.aspose.pdf.drawing.Arc**
 Changes in constructor:
 
 - com.aspose.pdf.drawing.Arc.#ctor(float,float,float,float,float) 
@@ -77,7 +77,7 @@ Changes in methods:
   has been changed to 
   com.aspose.pdf.drawing.Arc.setBeta(double)
 
-Changes in class **com.aspose.pdf.drawing.Circle** 
+Changes in class **com.aspose.pdf.drawing.Circle**
 Changes in constructor:
 
 - com.aspose.pdf.drawing.Circle
@@ -119,7 +119,7 @@ Removed methods:
 - com.aspose.pdf.drawing.Curve.getPosition4Y
 - com.aspose.pdf.drawing.Curve.setPosition4Y(float)
 
-Added new class **com.aspose.pdf.drawing.Ellipse** 
+Added new class **com.aspose.pdf.drawing.Ellipse**
 constructors:
 
 - com.aspose.pdf.drawing.Ellipse
@@ -136,7 +136,7 @@ methods:
 - com.aspose.pdf.drawing.Ellipse.getHeight
 - com.aspose.pdf.drawing.Ellipse.setHeight(double)
 
-Added new class **com.aspose.pdf.drawing.GradientAxialShading** 
+Added new class **com.aspose.pdf.drawing.GradientAxialShading**
 constructors:
 
 - com.aspose.pdf.drawing.GradientAxialShading
@@ -153,7 +153,7 @@ methods:
 - com.aspose.pdf.drawing.GradientAxialShading.getEndColor
 - com.aspose.pdf.drawing.GradientAxialShading.setEndColor(Color)
 
-Changes in class **com.aspose.pdf.drawing.Graph** 
+Changes in class **com.aspose.pdf.drawing.Graph**
 Added methods:
 
 - com.aspose.pdf.drawing.Graph.getBorder
@@ -186,12 +186,12 @@ Removed methods:
 
 - com.aspose.pdf.drawing.Graph.process(double[],double[],ArrayList)
 
-Changes in class **com.aspose.pdf.drawing.Line** 
+Changes in class **com.aspose.pdf.drawing.Line**
 Added constructors:
 
 - com.aspose.pdf.drawing.Line
 
-Changes in class **com.aspose.pdf.drawing.Path** 
+Changes in class **com.aspose.pdf.drawing.Path**
 Added constructors:
 
 - com.aspose.pdf.drawing.Path
@@ -201,7 +201,7 @@ Added methods:
 
 - com.aspose.pdf.drawing.Path.getShapes
 
-Changes in class **com.aspose.pdf.drawing.Rectangle** 
+Changes in class **com.aspose.pdf.drawing.Rectangle**
 Added constructors:
 
 - com.aspose.pdf.drawing.Rectangle
@@ -223,13 +223,13 @@ Changes in methods:
   has been changed to 
   com.aspose.pdf.drawing.Rectangle.setHeight(double)
 
-Added new class **com.aspose.pdf.drawing.Shape** 
+Added new class **com.aspose.pdf.drawing.Shape**
 methods:
 
 - com.aspose.pdf.drawing.Shape.getText
 - com.aspose.pdf.drawing.Shape.setText(TextFragment)
 
-Changes in interface **com.aspose.pdf.facades.IPdfFileEditor** 
+Changes in interface **com.aspose.pdf.facades.IPdfFileEditor**
 Added methods:
 
 - com.aspose.pdf.facades.IPdfFileEditor.splitToPages(String,String)
@@ -256,7 +256,7 @@ Removed fields:
 - com.aspose.pdf.facades.IPdfFileEditor.E_SMALL_PAGE_RANGE
 - com.aspose.pdf.facades.IPdfFileEditor.E_WRONG_PAGE_RANGE
 
-Changes in class **com.aspose.pdf.facades.IPdfFileEditor** 
+Changes in class **com.aspose.pdf.facades.IPdfFileEditor**
 Changes in methods:
 
 - com.aspose.pdf.facades.PdfFileEditor.resizeContents(Stream,Stream,int[],ContentsResizeParameters) 
@@ -272,7 +272,7 @@ Changes in methods:
   has been changed to 
   com.aspose.pdf.facades.PdfFileEditor.addMarginsPct(InputStream,OutputStream,int[],double,double,double,double)
 
-Added new class **com.aspose.pdf.facades.PdfFileEditor.ProgressEventType** 
+Added new class **com.aspose.pdf.facades.PdfFileEditor.ProgressEventType**
 Added fields:
 
 - com.aspose.pdf.facades.PdfFileEditor.ProgressEventType.PageConcatenated
@@ -287,7 +287,7 @@ Added fields:
 - com.aspose.pdf.facades.PdfFileEditor.ProgressEventType.TotalPercentage
 - com.aspose.pdf.facades.PdfFileEditor.ProgressEventHandlerInfo.MaxValue
 
-Added new class **com.aspose.pdf.facades.PdfFileEditor.PageBreak** 
+Added new class **com.aspose.pdf.facades.PdfFileEditor.PageBreak**
 constructors:
 
 - M:com.aspose.pdf.facades.PdfFileEditor.PageBreak(int,double)
@@ -299,7 +299,7 @@ methods:
 - M:com.aspose.pdf.facades.PdfFileEditor.PageBreak.getPosition
 - M:com.aspose.pdf.facades.PdfFileEditor.PageBreak.setPosition(double)
 
-Changes in **class com.aspose.pdf.GraphInfo** 
+Changes in **class com.aspose.pdf.GraphInfo**
 Added methods:
 
 - com.aspose.pdf.GraphInfo.getDashArray
@@ -323,18 +323,18 @@ Changes in methods:
   has been changed to 
   com.aspose.pdf.GraphInfo.setDoubled(boolean)
 
-Added new interface **com.aspose.pdf.ITableElement** 
+Added new interface **com.aspose.pdf.ITableElement**
 methods:
 
 - com.aspose.pdf.ITableElement.getRectangle
 
-Changes in class **com.aspose.pdf.Matrix** 
+Changes in class **com.aspose.pdf.Matrix**
 Added methods:
 
 - com.aspose.pdf.Matrix.skew(double,double)
 - com.aspose.pdf.Matrix.scale(double,double)
 
-Added new class **com.aspose.pdf.MemoryExtender** 
+Added new class **com.aspose.pdf.MemoryExtender**
 methods:
 
 - com.aspose.pdf.MemoryExtender.isSwapEnabled
@@ -342,12 +342,12 @@ methods:
 - com.aspose.pdf.MemoryExtender.isSkipHeavyContentEnabled
 - com.aspose.pdf.MemoryExtender.setSkipHeavyContentEnabled(boolean)
 
-Changes in class **com.aspose.pdf.Page** 
+Changes in class **com.aspose.pdf.Page**
 Added methods:
 
 - com.aspose.pdf.Page.getRotationMatrix
 
-Changes in class **com.aspose.pdf.Rectangle** 
+Changes in class **com.aspose.pdf.Rectangle**
 Added methods:
 
 - com.aspose.pdf.Rectangle.deepClone
@@ -355,12 +355,12 @@ Added methods:
 - com.aspose.pdf.Rectangle.isIntersect(Rectangle)
 - com.aspose.pdf.Rectangle._Intersect(Rectangle)
 
-Added new class **com.aspose.pdf.text.ExtractedTextPostProcessor** 
+Added new class **com.aspose.pdf.text.ExtractedTextPostProcessor**
 methods:
 
 - com.aspose.pdf.text.ExtractedTextPostProcessor.process(String)
 
-Changes in class **com.aspose.pdf.TextExtractionOptions** 
+Changes in class **com.aspose.pdf.TextExtractionOptions**
 Added methods:
 
 - com.aspose.pdf.TextExtractionOptions.getScaleFactor
@@ -370,18 +370,18 @@ Added fields:
 
 - com.aspose.pdf.TextExtractionOptions.TextFormattingMode.MemorySaving
 
-Changes in class **com.aspose.pdf.TextFragment** 
+Changes in class **com.aspose.pdf.TextFragment**
 Added methods:
 
 - com.aspose.pdf.TextFragment.getWrapLinesCount
 - com.aspose.pdf.TextFragment.setWrapLinesCount(int)
 
-Changes in class **com.aspose.pdf.TextFragmentState** 
+Changes in class **com.aspose.pdf.TextFragmentState**
 Added methods:
 
 - com.aspose.pdf.TextFragmentState.getCharacterSpacing
 
-Changes in class **com.aspose.pdf.TextSearchOptions** 
+Changes in class **com.aspose.pdf.TextSearchOptions**
 Added methods:
 
 - com.aspose.pdf.TextSearchOptions.setRegularExpressionUsed(boolean)
@@ -389,7 +389,7 @@ Added methods:
 - com.aspose.pdf.TextSearchOptions.isIgnoreShadowText
 - com.aspose.pdf.TextSearchOptions.setIgnoreShadowText(boolean)
 
-Changes in **class com.aspose.pdf.TextState** 
+Changes in **class com.aspose.pdf.TextState**
 Added methods:
 
 - com.aspose.pdf.TextState.getCharacterSpacing
