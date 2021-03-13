@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-18-10-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 18.10](https://repository.aspose.com/repo/com/aspose/aspose-pdf/18.10/)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
@@ -33,23 +33,23 @@ com.aspose.pdf.**PptxSaveOptions**.setRecognizeTextColumns(boolean) -> com.aspos
 com.aspose.pdf.**RichMediaAnnotation**.getContent_Rename_Namesake -> com.aspose.pdf.**RichMediaAnnotation**.getContent
 
 Interface changed into class:
-com.aspose.pdf.**IWarningCallback** -> com.aspose.pdf.**WarningCallback** 
+com.aspose.pdf.**IWarningCallback** -> com.aspose.pdf.**WarningCallback**
 com.aspose.pdf.**LatexLoadOptions**.setWarningCallback(IWarningCallback) -> com.aspose.pdf.**LatexLoadOptions**.setWarningCallback(WarningCallback)
 com.aspose.pdf.**LoadOptions**.setWarningHandler(IWarningCallback) -> com.aspose.pdf.**LoadOptions**.setWarningHandler(WarningCallback)
 com.aspose.pdf.**SaveOptions**.setWarningHandler(IWarningCallback) -> com.aspose.pdf.**SaveOptions**.setWarningHandler(WarningCallback)
 
 Added new methods:
-com.aspose.pdf.**CharInfoCollection**.copyTo(CharInfo[],int)   
-com.aspose.pdf.**HtmlFragment**.getRectangle   
-com.aspose.pdf.**Matrix**.getData   
-com.aspose.pdf.nameddestinations.**NamedDestinationCollection**.isEmpty   
-com.aspose.pdf.**OutlineCollection**.remove(int)   
-com.aspose.pdf.**OutlineItemCollection**.remove(int)   
-com.aspose.pdf.**PageMarkup**.isMulticolumnParagraphsAllowed   
+com.aspose.pdf.**CharInfoCollection**.copyTo(CharInfo[],int)  
+com.aspose.pdf.**HtmlFragment**.getRectangle  
+com.aspose.pdf.**Matrix**.getData  
+com.aspose.pdf.nameddestinations.**NamedDestinationCollection**.isEmpty  
+com.aspose.pdf.**OutlineCollection**.remove(int)  
+com.aspose.pdf.**OutlineItemCollection**.remove(int)  
+com.aspose.pdf.**PageMarkup**.isMulticolumnParagraphsAllowed  
 com.aspose.pdf.**PageMarkup**.setMulticolumnParagraphsAllowed   (boolean)
-com.aspose.pdf.**TextFragmentState**.getUnderline   
-com.aspose.pdf.**TextFragmentState**.getTextHeight   
-com.aspose.pdf.**TextState**.getTextHeight   
+com.aspose.pdf.**TextFragmentState**.getUnderline  
+com.aspose.pdf.**TextFragmentState**.getTextHeight  
+com.aspose.pdf.**TextState**.getTextHeight  
 
 Added new field:
 com.aspose.pdf.TextReplaceOptions.**ReplaceAdjustment**.ShiftRestOfLine

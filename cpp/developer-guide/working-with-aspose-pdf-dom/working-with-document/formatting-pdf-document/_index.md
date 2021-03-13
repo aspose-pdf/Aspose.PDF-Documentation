@@ -48,11 +48,11 @@ Each is used and described in the code below. The following code snippet shows y
 ## <ins>**Embedding Fonts while creating PDF**
 If you need to use any font other than the 14 core fonts supported by Adobe Reader, than you must embed the font description while generating PDF file. If font information is not embedded, Adobe Reader will take it from the Operating System if it’s installed over the system, or it will construct a substitute font according to the font descriptor in the PDF.
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Please note the embedded font must be installed on host machine i.e. in case of following code ‘Universe Condensed’ font is installed over the system.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 We use the method set_IsEmbedded of Font class to embed the font information into PDF file. Setting the value of this property to ‘True’ will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF. To embed the full font, use the Font class' set_IsEmbedded() method, whereas in order to use a subset of the font, use the set_IsSubset() method.
 
@@ -60,13 +60,13 @@ We use the method set_IsEmbedded of Font class to embed the font information int
 
 {{< gist "aspose-pdf" "e5fb9ddf5bd6460bb13d47fe5a83d86d" "Examples-PdfCPP-Document-EmbedFont-EmbedFont.cpp" >}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 A font subset embeds only the characters that are used and is useful where fonts are used for short sentences or slogans, for example where a corporate font is used for a logo, but not for the body text. Using a subset reduces the file size of the output PDF.
 
 However if a custom font is used for the body text, embed it in its entirety.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## <ins>**Set Zoom Factor of PDF File**
 Sometimes, you want to set PDF document's zoom factor. With Aspose.PDF for C++, you can set the value of zoom factor by **set_OpenAction(...)** method of Document class.

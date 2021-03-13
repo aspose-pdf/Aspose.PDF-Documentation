@@ -45,7 +45,7 @@ namespace Aspose.Pdf.Examples.Advanced
                 // Load the PDF file
                 Document document = new Document(System.IO.Path.Combine(_dataDir, "appartments.pdf"));
 
-                // Create Cirlce Annotation 
+                // Create Cirlce Annotation
                 var circleAnnotation = new CircleAnnotation(document.Pages[1], new Rectangle(270, 160, 483, 383))
                 {
                     Title = "John Smith",
@@ -55,7 +55,7 @@ namespace Aspose.Pdf.Examples.Advanced
                     Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 316, 1021, 459))
                 };
 
-                // Create Square Annotation 
+                // Create Square Annotation
                 var squareAnnotation = new SquareAnnotation(document.Pages[1], new Rectangle(67, 317, 261, 459))
                 {
                     Title = "John Smith",
@@ -65,7 +65,7 @@ namespace Aspose.Pdf.Examples.Advanced
                     Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
                 };
 
-                // Add annotation to the page 
+                // Add annotation to the page
                 document.Pages[1].Annotations.Add(circleAnnotation);
                 document.Pages[1].Annotations.Add(squareAnnotation);
                 document.Save(System.IO.Path.Combine(_dataDir, "appartments_mod.pdf"));

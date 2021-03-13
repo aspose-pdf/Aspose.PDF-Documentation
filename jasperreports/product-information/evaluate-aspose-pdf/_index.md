@@ -6,11 +6,11 @@ url: /jasperreports/evaluate-aspose-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Make sure to take advantage of the free Aspose.PDF for JasperReports evaluation as it has no time limit, and free technical support is provided for evaluation users too.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 {{% alert color="primary" %}}
 
@@ -23,4 +23,4 @@ Evaluation mode injects an Evaluation Warning into exported documents. When you 
 
 ![todo:image_alt_text](evaluate-aspose-pdf_1.png)
 
-{{% /alert %}} 
+{{% /alert %}}

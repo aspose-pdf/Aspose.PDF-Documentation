@@ -6,11 +6,11 @@ url: /java/covert-simple-pdf-to-pdf/ua-compliant-document-and-validate/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF provides functionality to create PDF documents which are PDF/UA compliant. The PDF/UA validation has been implemented in the API in a manner similar to PDF/A validation.
 
-{{% /alert %}} 
+{{% /alert %}}
 ## **Validate PDF/UA Compliance**
 In order to check whether a PDF document is PDF/UA compliant or not, following code snippet can be used:
 

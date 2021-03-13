@@ -6,7 +6,7 @@ url: /jasperreports/aspose-pdf-for-jasperreports-18-9/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for Aspose.PDF for JasperReports 18.9
 
@@ -23,12 +23,12 @@ This page contains release notes for Aspose.PDF for JasperReports 18.9
 **PDFJR-33192 Implemented conversion to pptx format**
 
 **Description**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 Add pdf -> ppts conversion.
 {{% /alert %}}
 **Public API changes:**
 
-Added field in the class **com.aspose.pdf.jr.SavingFormatType**:   
+Added field in the class **com.aspose.pdf.jr.SavingFormatType**:  
 public static final int PPTX = 14;
 
 **usage:**

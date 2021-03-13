@@ -6,7 +6,7 @@ url: /java/working-with-document-object-in-ruby/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:**
+**This section includes the following topics:
 
 - [Adding JavaScript in Ruby](/pdf/java/adding-javascript-in-ruby/)
 - [Add Layers to PDF File in Ruby](/pdf/java/add-layers-to-pdf-file-in-ruby/)

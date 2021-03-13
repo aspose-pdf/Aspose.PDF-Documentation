@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 19.8](https://www.nuget.org/packages/Aspose.Pdf/19.8.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 

@@ -6,11 +6,11 @@ url: /java/getting-product-and-build-information/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Sometimes, developers need to get information about the component used in their code. Aspose.PDF for Java contains the [BuildVersionInfo](https://apireference.aspose.com/java/pdf/com.aspose.pdf/BuildVersionInfo) class which provides three static members: PRODUCT, FILE_VERSION and ASSEMBLY_VERSION. These members can be used to get information about the component.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows how to get product and build information.
 

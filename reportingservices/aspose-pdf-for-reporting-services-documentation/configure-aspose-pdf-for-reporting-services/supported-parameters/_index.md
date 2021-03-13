@@ -6,7 +6,7 @@ url: /reportingservices/supported-parameters/
 lastmod: "2020-12-16"
 ---
 
-###### **This section includes the following topics:** 
+###### **This section includes the following topics:**
 - [Page Orientation](/pdf/reportingservices/page-orientation/)
 - [HTML Formatting](/pdf/reportingservices/html-formatting/)
 - [Security Setting](/pdf/reportingservices/security-setting/)

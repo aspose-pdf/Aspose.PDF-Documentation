@@ -9,21 +9,21 @@ lastmod: "2021-01-28"
 draft: false
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This articles describes that how you can [Concatenate](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) multiple PDF Documents into a Single PDF Document with the help of [Aspose.PDF for .NET](/pdf/net/) Component. [Aspose.PDF for .NET](/pdf/net/) makes this job like a piece of cake.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 All you have to do is to call [Concatenate](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method of [PdfFileEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffileeditor) class and all of your input PDF files will be concatenated together and a single PDF file will be generated. Let's create an application to practice the concatenation of PDF files. We will create an application using Visual Studio.NET 2019.
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for .NET can be used in any kind of application running on .NET Framework either it is an ASP.NET web application or a Windows Application
 
-{{% /alert %}} 
+{{% /alert %}}
 
-## How to Concatenate PDF Files in Different Ways 
+## How to Concatenate PDF Files in Different Ways
 
 In the form, there are three Text Boxes (textBox1, textBox2, textBox3) having their respective Link Labels (linkLabel1, linkLabel2, linkLabel3) for browsing the PDF files. By clicking "Browse" Link Label, an Input File Dialog (inputFileDialog1) will appear that will enable us to choose the PDF files (to be concatenated).
 
@@ -44,21 +44,21 @@ In the form, there are three Text Boxes (textBox1, textBox2, textBox3) having th
 }
 ```
 
-A windows form application's view is shown for the demonstration of the [PdfFileEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffileeditor) class for the Concatenation of PDF Files. 
+A windows form application's view is shown for the demonstration of the [PdfFileEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffileeditor) class for the Concatenation of PDF Files.
 
 
 ![Concatenate PDF Files](how-to-concatenate-pdf-files-in-different-ways_1.png)
 
 
-After we choose the PDF file and click OK button. The complete file name with path is assigned to the related Text Box. 
+After we choose the PDF file and click OK button. The complete file name with path is assigned to the related Text Box.
 
 ![Choose the PDF file](how-to-concatenate-pdf-files-in-different-ways_2.png)
 
-Similarly, we can choose two or three Input PDF Files to concatenate as shown below: 
+Similarly, we can choose two or three Input PDF Files to concatenate as shown below:
 
 ![Choose two or three Input PDF Files](how-to-concatenate-pdf-files-in-different-ways_3.png)
 
-The last Text Box (textBox4) will take the Destination Path of the Output PDF file with its name where this output file will be created. 
+The last Text Box (textBox4) will take the Destination Path of the Output PDF file with its name where this output file will be created.
 
 ![Destination Path of the Output PDF file](how-to-concatenate-pdf-files-in-different-ways_4.png)
 
@@ -75,7 +75,7 @@ Concatenate() method can be used in three ways. let's take a closer look at each
 
 - Concatenate(string firstInputFile, string secInputFile, string outputFile)
 
-This approach is good only if you need to join only two PDF files. First two arguments (firstInputFile and secInputFile) provide the complete file names with their storage path of the two input PDF files that are to be concatenated. Third argument (outputFile) provides the desired file name with path of the output PDF file. 
+This approach is good only if you need to join only two PDF files. First two arguments (firstInputFile and secInputFile) provide the complete file names with their storage path of the two input PDF files that are to be concatenated. Third argument (outputFile) provides the desired file name with path of the output PDF file.
 
 ![Concatenate two PDFs using File Names](how-to-concatenate-pdf-files-in-different-ways_6.png)
 
@@ -96,7 +96,7 @@ This approach is good only if you need to join only two PDF files. First two arg
 
 - Concatenate(System.IO.Stream firstInputStream, System.IO.Stream secInputStream, System.IO.Stream outputStream)
 
-Similar to the above approach, this approach also allows joining two PDF files. First two arguments (firstInputStream and secInputStream) provide the two input PDF files as Streams (a stream is an array of bits/bytes) that are to be concatenated. Third argument (outputStream) provides the stream representation of desired output PDF file. 
+Similar to the above approach, this approach also allows joining two PDF files. First two arguments (firstInputStream and secInputStream) provide the two input PDF files as Streams (a stream is an array of bits/bytes) that are to be concatenated. Third argument (outputStream) provides the stream representation of desired output PDF file.
 
 ![Concatenate two PDFs using File Streams](how-to-concatenate-pdf-files-in-different-ways_7.png)
 
@@ -127,7 +127,7 @@ Similar to the above approach, this approach also allows joining two PDF files. 
 
 - Concatenate(System.IO.Stream inputStreams[], System.IO.Stream outputStream)
 
-If you want to join more than two PDF files then this approach would be your ultimate choice. First argument (inputStreams[]) provides the input PDF files in the form of an Array of Streams that are to be concatenated. Second argument (outputStream) provides the stream representation of desired output PDF file. 
+If you want to join more than two PDF files then this approach would be your ultimate choice. First argument (inputStreams[]) provides the input PDF files in the form of an Array of Streams that are to be concatenated. Second argument (outputStream) provides the stream representation of desired output PDF file.
 
 ![Concatenate multiple PDFs using Array of Streams](how-to-concatenate-pdf-files-in-different-ways_8.png)
 

@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 18.4](https://www.nuget.org/packages/Aspose.Pdf/18.4.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 
@@ -58,10 +58,10 @@ This page contains release notes for [Aspose.PDF for .NET 18.4](https://www.nuge
 
 ### Added APIs:
 
-* Property Aspose.Pdf.HtmlLoadOptions.HtmlMediaType  
-* Enumeration Aspose.Pdf.HtmlMediaType  
-* Enumeration member Aspose.Pdf.HtmlMediaType.Print  
-* Enumeration member Aspose.Pdf.HtmlMediaType.Screen  
-* Method Aspose.Pdf.Page.GetNotifications  
-* Property Aspose.Pdf.Text.MarkupParagraph.Text  
-* Method Aspose.Pdf.Text.TextFragmentAbsorber.Reset  
+* Property Aspose.Pdf.HtmlLoadOptions.HtmlMediaType 
+* Enumeration Aspose.Pdf.HtmlMediaType 
+* Enumeration member Aspose.Pdf.HtmlMediaType.Print 
+* Enumeration member Aspose.Pdf.HtmlMediaType.Screen 
+* Method Aspose.Pdf.Page.GetNotifications 
+* Property Aspose.Pdf.Text.MarkupParagraph.Text 
+* Method Aspose.Pdf.Text.TextFragmentAbsorber.Reset 

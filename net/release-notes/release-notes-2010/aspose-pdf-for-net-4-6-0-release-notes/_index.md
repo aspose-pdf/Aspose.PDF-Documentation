@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 4.6.0](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-4.6.0/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Introduction
 

@@ -5,7 +5,7 @@ weight: 30
 url: /jasperreports/release-notes/
 lastmod: "2020-12-16"
 ---
- 
+
 - [Release Notes - 2020](/pdf/jasperreports/release-notes-2020/)
 - [Release Notes - 2019](/pdf/jasperreports/release-notes-2019/)
 - [Release Notes - 2018](/pdf/jasperreports/release-notes-2018/)

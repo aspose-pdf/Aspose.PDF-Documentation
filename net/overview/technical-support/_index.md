@@ -27,6 +27,6 @@ If you need help with an issue with Aspose.PDF, follow the next reccomendations 
 
 - When you form your question, please include the original document and possibly a fragment of your code that causes the problem. You can zip these files into one document if there are several.
 
-- Don't worry, only you and the developers of Aspose have access to the sticky files. 
+- Don't worry, only you and the developers of Aspose have access to the sticky files.
 
 

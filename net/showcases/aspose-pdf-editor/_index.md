@@ -143,7 +143,7 @@ After the file is generated on the server, the control is returned back to "file
 
 ## Upload Local PDF File
 
-HTML5 PDF Editor supports uploading PDF file from local machine using Open From Computer option from the menu bar. Using this feature, you can open an existing PDF file and perform editing on your PDF file. In our next section, we will discuss the technical details behind this feature. 
+HTML5 PDF Editor supports uploading PDF file from local machine using Open From Computer option from the menu bar. Using this feature, you can open an existing PDF file and perform editing on your PDF file. In our next section, we will discuss the technical details behind this feature.
 
 ### How it works?
 

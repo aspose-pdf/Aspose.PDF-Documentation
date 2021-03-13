@@ -6,11 +6,11 @@ url: /java/get-all-annotations-from-page-in-a-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.Cells allows you to get annotations from an entire document, or from a given page.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To get all annotations from a page in a PDF document, loop through a [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) object's AnnotationCollection collection.
 

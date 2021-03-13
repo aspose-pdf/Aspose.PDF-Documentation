@@ -8,5 +8,5 @@ lastmod: "2020-12-16"
 
 **This section includes the following topics:**
 
-- [Working with JasperReports](/pdf/jasperreports/working-with-jasperreports/) 
-- [Working with JasperServer](/pdf/jasperreports/working-with-jasperserver/) 
+- [Working with JasperReports](/pdf/jasperreports/working-with-jasperreports/)
+- [Working with JasperServer](/pdf/jasperreports/working-with-jasperserver/)

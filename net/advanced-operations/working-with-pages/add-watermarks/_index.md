@@ -1,12 +1,12 @@
 ---
-title: Add watermark to PDF using C# 
+title: Add watermark to PDF using C#
 linktitle: Add watermark
 type: docs
 weight: 90
 url: /net/add-watermarks/
 description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the C#.
 lastmod: "2020-12-22"
-aliases: 
+aliases:
     - /net/working-with-existing-watermarks/
     - /net/adding-multi-line-watermark-to-existing-pdf/
 sitemap:
@@ -14,7 +14,7 @@ sitemap:
     priority: 0.7
 ---
 
-**Aspose.PDF for .NET** allows adding watermarks to your PDF document using Artifacts. Please check this article to resolve your task. 
+**Aspose.PDF for .NET** allows adding watermarks to your PDF document using Artifacts. Please check this article to resolve your task.
 
 A watermark created with Adobe Acrobat is called an artifact (as described in 14.8.2.2 Real Content and Artifacts of the PDF specification). In order to work with artifacts, Aspose.PDF has two classes: [Artifact](https://apireference.aspose.com/pdf/net/aspose.pdf/artifact) and [ArtifactCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 
@@ -27,7 +27,7 @@ The [Artifact](https://apireference.aspose.com/pdf/net/aspose.pdf/artifact) clas
 **Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
 **Artifact.Subtype** – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Please note that watermarks created with Adobe Acrobat have the type Pagination and subtype Watermark.
 
@@ -45,7 +45,7 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 
 The following code snippet shows how to get each watermark on the first page of a PDF file with C#.
 
-```csharp  
+```csharp 
    Document doc = new Document(_inDataDir + "text.pdf");
             WatermarkArtifact artifact = new WatermarkArtifact();
             artifact.SetText(new FormattedText("WATERMARK", System.Drawing.Color.Blue, FontStyle.Courier,

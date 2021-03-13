@@ -6,8 +6,8 @@ url: /jasperreports/installation/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:** 
+**This section includes the following topics:**
 
-- [System Requirements](/pdf/jasperreports/system-requirements/) 
-- [Integration with JasperReports](/pdf/jasperreports/integration-with-jasperreports/) 
-- [Integration with JasperServer](/pdf/jasperreports/integration-with-jasperserver/) 
+- [System Requirements](/pdf/jasperreports/system-requirements/)
+- [Integration with JasperReports](/pdf/jasperreports/integration-with-jasperreports/)
+- [Integration with JasperServer](/pdf/jasperreports/integration-with-jasperserver/)

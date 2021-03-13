@@ -6,7 +6,7 @@ url: /java/working-with-bookmarks/
 lastmod: "2020-12-16"
 ---
 
-## **This section includes the following topics**: 
+## **This section includes the following topics**:
 
 - [Add a Bookmark to a PDF Document](/pdf/java/add-a-bookmark-to-a-pdf-document/)
 - [Add a Child Bookmark to a PDF Document](/pdf/java/add-a-child-bookmark-to-a-pdf-document/)

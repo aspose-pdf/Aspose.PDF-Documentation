@@ -6,21 +6,21 @@ url: /reportingservices/adding-custom-properties/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 You can add custom properties for some report items to expand their usage, such as ToC, line arrows and so on. This section describes this process.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 To add custom properties, you need to edit the code file of RDL document as the following steps:
 
-1. As the following figure, open your project, change to solution explorer, and right click on the selected report file, then select the 'View Code' menu item. 
+1. As the following figure, open your project, change to solution explorer, and right click on the selected report file, then select the 'View Code' menu item.
 
 ![todo:image_alt_text](adding-custom-properties_1.png)
 
-2. Edit the code file with XML-format style. For example, we want to add a custom property for chart report item. The following code with red font color style should be added. 
+2. Edit the code file with XML-format style. For example, we want to add a custom property for chart report item. The following code with red font color style should be added.
 
 **Example**
 

@@ -28,7 +28,7 @@ You can also specify certain settings to produce a TIFF image according to your 
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Images-ConvertToTIFFSettings-ConvertToTIFFSettings.cs" >}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 If your requirement is to save the resultant TIFF file to a specific page size, you can use the overloaded [SaveAsTIFF](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/saveastiff/methods/6) method of [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) with Aspose.Pdf.Facades.PageSize parameter. Different predefined page sizes are available as per your need e.g. A4, A3, Letter etc.
 
@@ -39,9 +39,9 @@ If your requirement is to save the resultant TIFF file to a specific page size, 
 We know that [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class offers [DoConvert](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/doconvert) method which provides the capability to convert the whole PDF pages into Image format. However sometimes there is a requirement to convert particular page region into Image format, so in order to fulfill this requirement, we may consider using [MovePosition(..)](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/moveposition) method of [PdfPageEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) class which provides the capability to move the origin from (0, 0) to the specified point. The origin is left-bottom and the unit is point.
 
 We are also aware that [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class also contains methods which provide the capability to loop through all the pages using [HasNextImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/hasnextimage) and [GetNextImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) methods. The [GetNextImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) method allows you to create image of a particular page. You also need to pass ImageFormat to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. Finally, call the [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/close) method of the [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class.
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 1 inch = 72 points and 1 cm = 1/2.54 inch = 0.3937 inch = 28.3 points.
-{{% /alert %}} 
+{{% /alert %}}
 The following code snippet shows you how to convert PDF pages to images.
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Images-ConvertPageRegion-ConvertPageRegion.cs" >}}

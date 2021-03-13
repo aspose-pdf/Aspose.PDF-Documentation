@@ -59,75 +59,75 @@ sitemap:
 |PDFNET-40680|PDF to PDF/A - Resultant file is not compliant|Bug|
 ## **Public API Changes**
 #### **Added API's**
-Property Aspose.PDF.Annotations.PolyAnnotation.Measure    
-Property Aspose.PDF.Document.FontUtilities    
-Method Aspose.PDF.Document.BindXml  (System.IO.Stream,System.IO.Stream,System.Xml.XmlReaderSettings)  
-Enumeration Aspose.PDF.Document.FontSubsetStrategy  
-EnumerationmemberAspose.PDF.Document.FontSubsetStrategy.SubsetEmbeddedFontOnly  
-Enumeration member Aspose.PDF.Document.FontSubsetStrategy.SubsetAllFonts  
-Interface Aspose.PDF.Document.IDocumentFontUtilities    
-MethodAspose.PDF.Document.IDocumentFontUtilities.SubsetFonts  (Aspose.PDF.Document.FontSubsetStrategy)  
-Property Aspose.PDF.Facades.PdfViewer.PrintAsGrayscale  
-Class Aspose.PDF.IncorrectCMapUsageException  
-Constructor Aspose.PDF.IncorrectCMapUsageException(System.String)  
-Class Aspose.PDF.Opi  
-Constructor Aspose.PDF.Opi(Aspose.PDF.XForm)  
-Property Aspose.PDF.Opi.Version  
-Property Aspose.PDF.Opi.FileSpecification  
-Property Aspose.PDF.Opi.Position  
-Class Aspose.PDF.Page.IsBlank(System.Double)  
-Class Aspose.PDF.PdfASymbolicFontEncodingStrategy  
-Constructor Aspose.PDF.PdfASymbolicFontEncodingStrategy  
-MethodAspose.PDF.PdfASymbolicFontEncodingStrategy  (System.Collections.Generic.Queue{Aspose.PDF.PdfASymbolicFontEncodingStrategy.  
-MethodAspose.PDF.PdfASymbolicFontEncodingStrategy  (Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType)  
+Property Aspose.PDF.Annotations.PolyAnnotation.Measure   
+Property Aspose.PDF.Document.FontUtilities   
+Method Aspose.PDF.Document.BindXml  (System.IO.Stream,System.IO.Stream,System.Xml.XmlReaderSettings) 
+Enumeration Aspose.PDF.Document.FontSubsetStrategy 
+EnumerationmemberAspose.PDF.Document.FontSubsetStrategy.SubsetEmbeddedFontOnly 
+Enumeration member Aspose.PDF.Document.FontSubsetStrategy.SubsetAllFonts 
+Interface Aspose.PDF.Document.IDocumentFontUtilities   
+MethodAspose.PDF.Document.IDocumentFontUtilities.SubsetFonts  (Aspose.PDF.Document.FontSubsetStrategy) 
+Property Aspose.PDF.Facades.PdfViewer.PrintAsGrayscale 
+Class Aspose.PDF.IncorrectCMapUsageException 
+Constructor Aspose.PDF.IncorrectCMapUsageException(System.String) 
+Class Aspose.PDF.Opi 
+Constructor Aspose.PDF.Opi(Aspose.PDF.XForm) 
+Property Aspose.PDF.Opi.Version 
+Property Aspose.PDF.Opi.FileSpecification 
+Property Aspose.PDF.Opi.Position 
+Class Aspose.PDF.Page.IsBlank(System.Double) 
+Class Aspose.PDF.PdfASymbolicFontEncodingStrategy 
+Constructor Aspose.PDF.PdfASymbolicFontEncodingStrategy 
+MethodAspose.PDF.PdfASymbolicFontEncodingStrategy  (System.Collections.Generic.Queue{Aspose.PDF.PdfASymbolicFontEncodingStrategy. 
+MethodAspose.PDF.PdfASymbolicFontEncodingStrategy  (Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType) 
 Property Aspose.PDF.PdfASymbolicFontEncodingStrategy.PreferredCmapEncodingTable
-PropertyAspose.PDF.PdfASymbolicFontEncodingStrategy.CmapEncodingTablesPriorityQueue  
-Class Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem  
-Constructor Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem  
+PropertyAspose.PDF.PdfASymbolicFontEncodingStrategy.CmapEncodingTablesPriorityQueue 
+Class Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem 
+Constructor Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem 
 MethodAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.#cto(System.UInt16,System.UInt16)
 MethodAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.#ctor(Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingT
 Property Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTable
 Property Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.PlatformID
 Property Aspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.PlatformSpecificID
-EnumerationAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType  
-EnumerationmemberAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType.WindowsUnicodeTable    
-EnumerationmemberAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType.WindowsSymbolicTable    
-EnumerationmemberAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType.MacTable    
-EnumerationmemberAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType.UnicodeTable  
-Property Aspose.PDF.PdfFormatConversionOptions.SymbolicFontEncodingStrategy  
-Method Aspose.PDF.Rectangle.Join(Aspose.PDF.Rectangle)  
-Method Aspose.PDF.Text.FileFontSource.Equals(System.Object)  
-Method Aspose.PDF.Text.FolderFontSource.Equals(System.Object)  
-Property Aspose.PDF.Text.Font.FontName  
-Property Aspose.PDF.Text.Font.IsEmbedded  
-Property Aspose.PDF.Text.Font.IsSubset  
-Property Aspose.PDF.Text.Font.IsAccessible  
-Property Aspose.PDF.Text.Font.FontOptions  
-Method Aspose.PDF.Text.Font.GetLastFontEmbeddingError  
-Method Aspose.PDF.Text.Font.Save(System.IO.Stream)  
-Method Aspose.PDF.Text.Font.MeasureString(System.String,System.Single)  
-Method Aspose.PDF.Text.MemoryFontSource.Equals(System.Object)  
-Method Aspose.PDF.Text.MemoryFontSource.Dispose  
-Method Aspose.PDF.Text.SystemFontSource.Equals(System.Object)  
-Property Aspose.PDF.Text.TextFragmentState.FormattingOptions  
-Property Aspose.PDF.Text.TextFragmentState.Rotation  
-Property Aspose.PDF.Text.TextParagraph.Rotation  
-Property Aspose.PDF.XForm.Opi  
-Property Aspose.PDF.XfaConverter.XfaParserOptions.UriResolver  
-Property Aspose.PDF.XfaConverter.XfaParserOptions.PageSize  
-Property Aspose.PDF.XfaConverter.XfaParserOptions.Signed  
-Property Aspose.PDF.XfaConverter.XfaParserOptions.EmulateRequierdGroups  
-Property Aspose.PDF.XfaConverter.XfaParserOptions.BasePath  
+EnumerationAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType 
+EnumerationmemberAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType.WindowsUnicodeTable   
+EnumerationmemberAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType.WindowsSymbolicTable   
+EnumerationmemberAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType.MacTable   
+EnumerationmemberAspose.PDF.PdfASymbolicFontEncodingStrategy.QueueItem.CMapEncodingTableType.UnicodeTable 
+Property Aspose.PDF.PdfFormatConversionOptions.SymbolicFontEncodingStrategy 
+Method Aspose.PDF.Rectangle.Join(Aspose.PDF.Rectangle) 
+Method Aspose.PDF.Text.FileFontSource.Equals(System.Object) 
+Method Aspose.PDF.Text.FolderFontSource.Equals(System.Object) 
+Property Aspose.PDF.Text.Font.FontName 
+Property Aspose.PDF.Text.Font.IsEmbedded 
+Property Aspose.PDF.Text.Font.IsSubset 
+Property Aspose.PDF.Text.Font.IsAccessible 
+Property Aspose.PDF.Text.Font.FontOptions 
+Method Aspose.PDF.Text.Font.GetLastFontEmbeddingError 
+Method Aspose.PDF.Text.Font.Save(System.IO.Stream) 
+Method Aspose.PDF.Text.Font.MeasureString(System.String,System.Single) 
+Method Aspose.PDF.Text.MemoryFontSource.Equals(System.Object) 
+Method Aspose.PDF.Text.MemoryFontSource.Dispose 
+Method Aspose.PDF.Text.SystemFontSource.Equals(System.Object) 
+Property Aspose.PDF.Text.TextFragmentState.FormattingOptions 
+Property Aspose.PDF.Text.TextFragmentState.Rotation 
+Property Aspose.PDF.Text.TextParagraph.Rotation 
+Property Aspose.PDF.XForm.Opi 
+Property Aspose.PDF.XfaConverter.XfaParserOptions.UriResolver 
+Property Aspose.PDF.XfaConverter.XfaParserOptions.PageSize 
+Property Aspose.PDF.XfaConverter.XfaParserOptions.Signed 
+Property Aspose.PDF.XfaConverter.XfaParserOptions.EmulateRequierdGroups 
+Property Aspose.PDF.XfaConverter.XfaParserOptions.BasePath 
 #### **Removed API's**
-Method Aspose.PDF.Document.#ctor(Aspose.PDF.Generator.Pdf)  
-Method Aspose.PDF.Facades.PdfAnnotationEditor.BindPdf(Aspose.PDF.Generator.Pdf)  
-Method Aspose.PDF.Facades.PdfBookmarkEditor.BindPdf(Aspose.PDF.Generator.Pdf)  
-Method Aspose.PDF.Facades.PdfContentEditor.BindPdf(Aspose.PDF.Generator.Pdf)  
-Method Aspose.PDF.Facades.PdfConverter.BindPdf(Aspose.PDF.Generator.Pdf)  
-Method Aspose.PDF.Facades.PdfExtractor.BindPdf(Aspose.PDF.Generator.Pdf)  
-Method Aspose.PDF.Facades.PdfFileSignature.BindPdf(Aspose.PDF.Generator.Pdf)  
-Method Aspose.PDF.Facades.PdfPageEditor.BindPdf(Aspose.PDF.Generator.Pdf)  
-Method Aspose.PDF.Facades.PdfXmpMetadata.BindPdf(Aspose.PDF.Generator.Pdf)  
-Method Aspose.PDF.Facades.Stamp.BindPdf(Aspose.PDF.Generator.Pdf,System.Int32)  
-Class Aspose.PDF.Engine.CommonData.Text.CMaps.IncorrectCMapUsageException  
-ConstructorAspose.PDF.Engine.CommonData.Text.CMaps.IncorrectCMapUsageException(System.String)  
+Method Aspose.PDF.Document.#ctor(Aspose.PDF.Generator.Pdf) 
+Method Aspose.PDF.Facades.PdfAnnotationEditor.BindPdf(Aspose.PDF.Generator.Pdf) 
+Method Aspose.PDF.Facades.PdfBookmarkEditor.BindPdf(Aspose.PDF.Generator.Pdf) 
+Method Aspose.PDF.Facades.PdfContentEditor.BindPdf(Aspose.PDF.Generator.Pdf) 
+Method Aspose.PDF.Facades.PdfConverter.BindPdf(Aspose.PDF.Generator.Pdf) 
+Method Aspose.PDF.Facades.PdfExtractor.BindPdf(Aspose.PDF.Generator.Pdf) 
+Method Aspose.PDF.Facades.PdfFileSignature.BindPdf(Aspose.PDF.Generator.Pdf) 
+Method Aspose.PDF.Facades.PdfPageEditor.BindPdf(Aspose.PDF.Generator.Pdf) 
+Method Aspose.PDF.Facades.PdfXmpMetadata.BindPdf(Aspose.PDF.Generator.Pdf) 
+Method Aspose.PDF.Facades.Stamp.BindPdf(Aspose.PDF.Generator.Pdf,System.Int32) 
+Class Aspose.PDF.Engine.CommonData.Text.CMaps.IncorrectCMapUsageException 
+ConstructorAspose.PDF.Engine.CommonData.Text.CMaps.IncorrectCMapUsageException(System.String) 

@@ -6,11 +6,11 @@ url: /java/get-pdf-hyperlink-destination-url/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Links are represented as annotations in a PDF file and they can be added, updated or deleted. Aspose.PDF for Java also supports getting the destination (URL) of hyperlink in a PDF file.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To get a link's URL:
 

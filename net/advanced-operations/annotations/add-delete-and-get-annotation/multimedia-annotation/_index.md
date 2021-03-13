@@ -11,14 +11,14 @@ sitemap:
     priority: 0.7
 ---
 
-Annotations in a PDF document are contained in a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method. 
+Annotations in a PDF document are contained in a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method.
 
 Use the [ScreenAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) class in the Aspose.PDF.InteractiveFeatures.Annotations namespace to include SWF files as annotations in a PDF document instead. A screen annotation specifies a region of a page upon which media clips may be played.
 
 When you need to add an external video link in PDF document, you can use [MovieAnnotaiton](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation).
 A Movie Annotation contains animated graphics and sound to be presented on the computer screen and through the speakers.
 
-A [Sound Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound. 
+A [Sound Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound.
 
 However, when there is a requirement to embed media inside PDF document, you need to use [RichMediaAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
 
@@ -32,9 +32,9 @@ The following methods/properties of RichMediaAnnotation class can be used.
 - void Update():  Create a data structure of the annotation. This method should be called last
 - void SetPoster(Stream): Set poster of the video i.e. picture shown when the player is not active
 
-## Add Screen Annotation 
+## Add Screen Annotation
 
-The following code snippet shows how to add Screen Annotation to a PDF file: 
+The following code snippet shows how to add Screen Annotation to a PDF file:
 
 ```csharp
 using Aspose.Pdf.Annotations;
@@ -55,7 +55,7 @@ namespace Aspose.Pdf.Examples.Advanced
             Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
 
             var mediaFile = System.IO.Path.Combine(_dataDir, "input.swf");
-            // Create Screen Annotation 
+            // Create Screen Annotation
             var screenAnnotation = new ScreenAnnotation(
                 document.Pages[1],
                 new Rectangle(170, 190, 470, 380),
@@ -65,9 +65,9 @@ namespace Aspose.Pdf.Examples.Advanced
             document.Save(System.IO.Path.Combine(_dataDir, "sample_swf.pdf"));
         }
 ```
-## Add Sound Annotation 
+## Add Sound Annotation
 
-The following code snippet shows how to add Sound Annotation to a PDF file: 
+The following code snippet shows how to add Sound Annotation to a PDF file:
 
 ```csharp
         public static void AddSoundAnnotation()
@@ -76,7 +76,7 @@ The following code snippet shows how to add Sound Annotation to a PDF file:
             Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
 
             var mediaFile = System.IO.Path.Combine(_dataDir, "file_example_WAV_1MG.wav");
-            // Create Sound Annotation 
+            // Create Sound Annotation
             var soundAnnotation = new SoundAnnotation(
                 document.Pages[1],
                 new Rectangle(20, 700, 60, 740),
@@ -117,7 +117,7 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
                 CustomFlashVariables = $"source={videoName}&skin={skinName}"
             };
             //add skin code.
-            rma.AddCustomData(skinName, 
+            rma.AddCustomData(skinName,
                 new FileStream(Path.Combine(pathToAdobeApp,"SkinOverAllNoFullNoCaption.swf"), FileMode.Open, FileAccess.Read));
             //set poster for video
             rma.SetPoster(new FileStream(Path.Combine(_dataDir, posterName), FileMode.Open, FileAccess.Read));
@@ -142,7 +142,7 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
             doc.Save(Path.Combine(_dataDir,"RichMediaAnnotation.pdf"));
         }
 ```
-## Get MultimediaAnnotation 
+## Get MultimediaAnnotation
 
 Please try using the following code snippet to Get MultimediaAnnotation from PDF document.
 

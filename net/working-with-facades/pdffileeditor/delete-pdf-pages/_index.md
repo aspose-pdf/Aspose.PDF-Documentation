@@ -8,7 +8,7 @@ lastmod: "2021-01-18"
 draft: false
 ---
 
-If you want to delete a number of pages from the PDF file which is residing on the disk then you can use the overload of the [Delete](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) method which takes following three parameters: intput file path, array of page numbers to be deleted, and output PDF file path. The second parameter is an integer array representing all of the pages which need to be deleted. The specified pages are removed from the intput file and the result is saved as output file. The following code snippet shows you how to delete PDF pages using file paths. 
+If you want to delete a number of pages from the PDF file which is residing on the disk then you can use the overload of the [Delete](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) method which takes following three parameters: intput file path, array of page numbers to be deleted, and output PDF file path. The second parameter is an integer array representing all of the pages which need to be deleted. The specified pages are removed from the intput file and the result is saved as output file. The following code snippet shows you how to delete PDF pages using file paths.
 
 
 

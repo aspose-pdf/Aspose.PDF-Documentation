@@ -7,7 +7,7 @@ lastmod: "2020-12-16"
 ---
 
 ### **Server Requirements**
-To install Aspose.PDF for SharePoint you need a computer running Microsoft SharePoint Server 2010. 
+To install Aspose.PDF for SharePoint you need a computer running Microsoft SharePoint Server 2010.
 ### **Client Requirements**
 You need a browser to access SharePoint sites. Aspose.PDF for SharePoint has been tested with the following browsers:
 

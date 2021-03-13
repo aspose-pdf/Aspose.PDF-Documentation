@@ -6,7 +6,7 @@ weight: 30
 url: /net/optimize-pdf/
 description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with C#.
 lastmod: "2021-02-26"
-aliases: 
+aliases:
     - /net/changing-page-sizes-in-a-pdf-file/
 sitemap:
     changefreq: "monthly"
@@ -61,7 +61,7 @@ pdfDocument.Save(dataDir);
 
 The [OptimizeResources()](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
 
-- Resources that are not used on the document pages are removed 
+- Resources that are not used on the document pages are removed
 - Equal resources are joined into one object
 - Unused objects are deleted
 
@@ -121,7 +121,7 @@ Document pdfDocument = new Document(dataDir + "ResizeImage.pdf");
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
 // Set CompressImages option
 optimizeOptions.ImageCompressionOptions.CompressImages = true;
-// Set ImageQuality option 
+// Set ImageQuality option
 optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 // Set ResizeImage option
 optimizeOptions.ImageCompressionOptions.ResizeImages = true;
@@ -150,7 +150,7 @@ var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
 optimizeOptions.ImageCompressionOptions.CompressImages = true;
 // Set ImageQuality option
 optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
-// Set Imagae Compression Version to fast 
+// Set Imagae Compression Version to fast
 optimizeOptions.ImageCompressionOptions.Version = Pdf.Optimization.ImageCompressionVersion.Fast;
 // Optimize PDF document using OptimizationOptions
 pdfDocument.OptimizeResources(optimizeOptions);
@@ -170,7 +170,7 @@ A PDF document sometimes contains the PDF objects that are not referenced from a
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
 Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// Set RemoveUsedObject option 
+// Set RemoveUsedObject option
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
     RemoveUnusedObjects = true
@@ -192,7 +192,7 @@ Sometimes the document contains the unused resource streams. These streams are n
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
 Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// Set RemoveUsedStreams option 
+// Set RemoveUsedStreams option
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
     RemoveUnusedStreams = true
@@ -214,7 +214,7 @@ Some documents can contain several identical resource streams (like images, for 
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
 Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// Set LinkDuplcateStreams option 
+// Set LinkDuplcateStreams option
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
     LinkDuplcateStreams = true
@@ -234,7 +234,7 @@ Additionally, we can use [AllowReusePageContent](https://apireference.aspose.com
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
 Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// Set AllowReusePageContent  option 
+// Set AllowReusePageContent  option
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
     AllowReusePageContent = true

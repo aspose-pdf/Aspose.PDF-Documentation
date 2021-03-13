@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 <ins>To update Pdf document information using **Aspose.PDF Java for Python**, simply invoke **SetPdfFileInfo** class.
 
-**Python Code**
+**Python Code
 ```
 doc= self.Document()
 pdf = self.Document()
@@ -30,7 +30,7 @@ doc.save(self.dataDir + "Updated_Information.pdf")
 print "Update document information, please check output file."
 ```
 
-**Download Running Code**
+**Download Running Code
 
 Download **Set PDF File Information (Aspose.PDF)** from any of the below mentioned social coding sites:
 

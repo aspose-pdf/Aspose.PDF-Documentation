@@ -6,10 +6,11 @@ url: /java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Set Document Window and Page Display Properties**
+
+## Aspose.PDF - Set Document Window and Page Display Properties
 To Set Document Window and Page Display Properties of Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **SetDocumentWindow** module.
 
-**Ruby Code**
+**Ruby Code
 ```
 # The path to the documents directory.
 
@@ -75,7 +76,8 @@ doc.save(data_dir + "Set Document Window.pdf")
 ```
 
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Set Document Window and Page Display Properties (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)

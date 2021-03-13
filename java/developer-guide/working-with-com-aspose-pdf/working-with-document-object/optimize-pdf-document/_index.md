@@ -45,15 +45,15 @@ An instance of OptimizationOptions is passed as an argument to OptimizeResources
 
 Available optimization methods are:
 
-- **Remove unused objects** 
+- **Remove unused objects**
   Sometimes PDF document contains PDF objects which are not referenced from any other object in the document. This may happen for example when a page is removed from the document page tree but the page object itself isn't removed. Removing these objects doesn't make document invalid but shrinks it.
-- **Remove unused streams** 
+- **Remove unused streams**
   Sometimes a document contains unused resource streams. These streams are not "unused objects" because they are referenced from a page's resource dictionary. Thus they are not eliminated by the "remove unused objects" method. But these streams are never used by the page contents. This may happen in cases where an image has been removed from the page but not from the page resources. Also, this situation often occurs when pages are extracted from the document and document pages have "common" resources, that is, the same Resources object. Page contents are analyzed in order to determine if a resource stream is used or not. Unused streams are removed. Sometimes this decreases the document size.
-- **Link duplicate streams** 
+- **Link duplicate streams**
   Sometimes a document contains several identical resource streams (for example images). This may happen for example when a document is concatenated with itself. The output document contains two independent copies of the same resource stream. We analyze all resource streams and compare them. If streams are duplicated they are merged, that is, only one copy is left, references are changed appropriately and copies of the object are removed. Sometimes this decreases the document size.
-- **Compress images** 
+- **Compress images**
   Change the compression level of JPEG images to decrease the size of images. But this also makes the image quality worse.
-- **Unembed fonts** 
+- **Unembed fonts**
   If the document uses embedded fonts it means that all font data is placed in the document. The advantage is that the document is viewable regardless of whether the font is installed on the user's machine or not. But embedding fonts makes the document larger. The unembed fonts method removes all embedded fonts. This decreases the document size but the document may become unreadable if the correct font is not installed.
 
 The optimization resources apply these methods to the document. If any of these methods apply, the document size will probably decrease. If none of these methods apply, the document size will not change.

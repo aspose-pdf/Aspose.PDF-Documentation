@@ -6,7 +6,7 @@ url: /java/working-with-document-object-in-python/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:**
+**This section includes the following topics:
 
 - [Adding JavaScript in Python](/pdf/java/adding-javascript-in-python/)
 - [Add TOC to Existing PDF in Python](/pdf/java/add-toc-to-existing-pdf-in-python/)

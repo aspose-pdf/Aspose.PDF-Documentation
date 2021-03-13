@@ -6,13 +6,13 @@ url: /reportingservices/integration-with-microsoft-report-viewer-in-local-mode/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Microsoft Report Viewer is a powerful .NET control allowing the use of RDL and RDLC reports in WinForms and ASP.NET applications. It enables users to view and export reports to different formats. The control is included with Microsoft Visual Studio 2005 and 2008, and is also available as a free download from Microsoft.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Report Viewer can generate reports independently using a built-in engine (**local mode**), or it can display reports that are generated on a Microsoft SQL Server Reporting Services Report Server (**remote mode**).
 When working in the **remote mode**, Report Viewer can export reports to all formats installed on the Report Server to which it is connected. Therefore, to export reports to PDF format you only need to install Aspose.Pdf for Reporting Services on the server.
@@ -21,9 +21,9 @@ When working in the **local mode** however, Report Viewer does not connect to a 
 
 By installing Aspose.Pdf for Reporting Services on a development machine and following the steps below, you will be able to add the ability to export to PDF format from Report Viewer working in the **local mode**.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 **Step 1. Add a Reference to Aspose.Pdf.ReportingServices.dll to your project.**
 
 Open your project in Visual Studio, right click on the **References** folder and select **Add Reference**. Click the **Browse** tab and browse to the following assembly:

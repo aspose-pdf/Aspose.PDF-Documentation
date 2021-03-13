@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-android-via-java-20-11-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes information for Aspose.PDF for Android via Java 20.11.
 
-{{% /alert %}} 
+{{% /alert %}}
 ## **Improvements and Changes**
 
 |**Key**|**Summary**|**Category**|
@@ -59,7 +59,7 @@ This page contains release notes information for Aspose.PDF for Android via Java
 - com.aspose.pdf.BaseParagraph.setZIndex(int)
 
 **Renamed method:**
-- com.aspose.pdf.BaseParagraph.isKeptWithNext(boolean) -> com.aspose.pdf.BaseParagraph.setKeptWithNext(boolean) 
+- com.aspose.pdf.BaseParagraph.isKeptWithNext(boolean) -> com.aspose.pdf.BaseParagraph.setKeptWithNext(boolean)
 
 ### **Changes in class com.aspose.pdf.Cell**
 **Added Methods**

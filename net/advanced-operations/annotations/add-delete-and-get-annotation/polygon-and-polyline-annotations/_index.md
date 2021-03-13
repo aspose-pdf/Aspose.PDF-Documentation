@@ -17,13 +17,13 @@ The Polyline tool allows you to create shapes and outlines with an arbitrary num
 
 **Polyline Annotations** are also similar to polygons, the only difference is that the first and last vertices are not implicitly connected.
 
-## Add Polygon and Polyline Annotations 
+## Add Polygon and Polyline Annotations
 
 Steps with which we create Polygon and Polyline annotations:
 
 1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
 1. Create new [Polygon Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/polygonannotation) and set Polygon parameters (new Rectangle, new Points, title, color, InteriorColor and Opacity).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index). 
+1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
 1. Next, Create a [PoliLine Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/polylineannotation) and repeat all actions.
 1. After we can Add annotations to the page.
 
@@ -39,7 +39,7 @@ namespace Aspose.Pdf.Examples.Advanced
     class ExamplePolygonAnnotation
     {
         // The path to the documents directory.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";        
+        private const string _dataDir = "..\\..\\..\\..\\Samples";       
         public static void AddPolynnotation()
         {
             try
@@ -47,7 +47,7 @@ namespace Aspose.Pdf.Examples.Advanced
                 // Load the PDF file
                 Document document = new Document(System.IO.Path.Combine(_dataDir, "appartments.pdf"));
 
-                // Create Polygon Annotation 
+                // Create Polygon Annotation
                 var polygonAnnotation = new PolygonAnnotation(document.Pages[1],
                     new Rectangle(270, 193, 571, 383),
                     new Point[] {
@@ -57,7 +57,7 @@ namespace Aspose.Pdf.Examples.Advanced
                         new Point(570, 304),
                         new Point(570, 195),
                         new Point(274, 195)})
-                { 
+                {
                     Title = "John Smith",
                     Color = Color.Blue,
                     InteriorColor = Color.BlueViolet,
@@ -65,7 +65,7 @@ namespace Aspose.Pdf.Examples.Advanced
                     Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
                 };
 
-                // Create PoliLine Annotation 
+                // Create PoliLine Annotation
                 var polylineAnnotation = new PolylineAnnotation(document.Pages[1],
                     new Rectangle(270, 193, 571, 383),
                     new Point[] {
@@ -77,11 +77,11 @@ namespace Aspose.Pdf.Examples.Advanced
                         })
                 {
                     Title = "John Smith",
-                    Color = Color.Red,                                        
+                    Color = Color.Red,                                       
                     Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
                 };
 
-                // Add annotation to the page 
+                // Add annotation to the page
                 document.Pages[1].Annotations.Add(polygonAnnotation);
                 document.Pages[1].Annotations.Add(polylineAnnotation);
                 document.Save(System.IO.Path.Combine(_dataDir, "appartments_mod.pdf"));
@@ -90,7 +90,7 @@ namespace Aspose.Pdf.Examples.Advanced
             {
                 Console.WriteLine(ex.Message);
             }
-        }    
+        }   
 ```
 ## Get Polygon and Polyline Annotations
 
@@ -108,8 +108,8 @@ Please try using the following code snippet to Get Polygon and Polyline Annotati
             {
                 Console.WriteLine($"[{pa.Rect}]");
             }
-        }        
-        
+        }       
+       
 ```
 ## Delete Polygon and Polyline Annotations
 

@@ -27,7 +27,7 @@ lastmod: "2020-12-16"
 |PDFJAVA-36291|Chinese Locale throws ExceptionInInitializerError exception|Bug|
 |PDFNEWJAVA-34972|flatten() method throws NPE|Bug|
 ### **Public API Changes in Aspose.PDF for Java 16.11.0**
-Changes in class **com.aspose.pdf.Annotation:** 
+Changes in class **com.aspose.pdf.Annotation:**
 Added method:
 
 com.aspose.pdf.Annotation.getRectangle(boolean)
@@ -38,19 +38,19 @@ Added methods:
 com.aspose.pdf.devices.ImageDevice.getCropRectangle()
 com.aspose.pdf.devices.ImageDevice.setCropRectangle(com.aspose.pdf.Rectangle)
 
-Changes in class **com.aspose.pdf.TiffDevice:** 
+Changes in class **com.aspose.pdf.TiffDevice:**
 Added methods:
 
 com.aspose.pdf.devices.TiffDevice.getCropRectangle()
 com.aspose.pdf.devices.TiffDevice.setCropRectangle(com.aspose.pdf.Rectangle)
 
-Changes in class **com.aspose.pdf.DocSaveOptions:** 
+Changes in class **com.aspose.pdf.DocSaveOptions:**
 Added methods:
 
 com.aspose.pdf.DocSaveOptions.getMaxDistanceBetweenTextLines()
 com.aspose.pdf.DocSaveOptions.setMaxDistanceBetweenTextLines(float)
 
-Changes in class **com.aspose.pdf.Document.OptimizationOptions:** 
+Changes in class **com.aspose.pdf.Document.OptimizationOptions:**
 Added method:
 
 com.aspose.pdf.Document.OptimizationOptions.isResizeImages()
@@ -60,30 +60,30 @@ com.aspose.pdf.Document.OptimizationOptions.setMaxResoultion(int)
 com.aspose.pdf.Document.OptimizationOptions.isRemovePrivateInfo()
 com.aspose.pdf.Document.OptimizationOptions.setRemovePrivateInfo(boolean)
 
-Changes in class **com.aspose.pdf.FontCollection:** 
+Changes in class **com.aspose.pdf.FontCollection:**
 Added method:
 
 com.aspose.pdf.FontCollection.add(Font)
 
-Changes in class **com.aspose.pdf.LatexLoadOptions:** 
+Changes in class **com.aspose.pdf.LatexLoadOptions:**
 Added methods:
 
 com.aspose.pdf.LatexLoadOptions.getResourceLoadingCallback()
 com.aspose.pdf.LatexLoadOptions.setResourceLoadingCallback(IResourceLoadingCallback)
 
-Changes in class **com.aspose.pdf.PageCollection:** 
+Changes in class **com.aspose.pdf.PageCollection:**
 Added methods:
 
 com.aspose.pdf.PageCollection.add(java.util.List<Page>)
 com.aspose.pdf.PageCollection.insert(int,Iterable<Page>)
 
-Changes in class **com.aspose.pdf.PdfFormat:** 
+Changes in class **com.aspose.pdf.PdfFormat:**
 Added fields:
 
 com.aspose.pdf.PdfFormat.PDF_A_2U
 com.aspose.pdf.PdfFormat.PDF_A_3U
 
-Changes in class **com.aspose.pdf.PdfFormatConversionOptions:** 
+Changes in class **com.aspose.pdf.PdfFormatConversionOptions:**
 Added methods:
 
 com.aspose.pdf.PdfFormatConversionOptions.getOptimizeFileSize()
@@ -91,14 +91,14 @@ com.aspose.pdf.PdfFormatConversionOptions.setOptimizeFileSize(boolean)
 com.aspose.pdf.PdfFormatConversionOptions.getExcludeFontsStrategy()
 com.aspose.pdf.PdfFormatConversionOptions.setExcludeFontsStrategy(byte)
 
-Implemented the following class: **com.aspose.pdf.PdfFormatConversionOptions.RemoveFontsStrategy** 
+Implemented the following class: **com.aspose.pdf.PdfFormatConversionOptions.RemoveFontsStrategy**
 Added fields:
 
 com.aspose.pdf.PdfFormatConversionOptions.RemoveFontsStrategy.RemoveDuplicatedFonts
 com.aspose.pdf.PdfFormatConversionOptions.RemoveFontsStrategy.RemoveSimilarFontsWithDifferentWidths
 com.aspose.pdf.PdfFormatConversionOptions.RemoveFontsStrategy.SubsetFonts
 
-Changes in class **com.aspose.pdf.WarningInfo:** 
+Changes in class **com.aspose.pdf.WarningInfo:**
 Changes constructor: public WarningInfo(WarningType type, String message) -> public WarningInfo(/* WarningType */int type, String message)
 
 The enum class **com.aspose.pdf.WarningType** has been reorganized:

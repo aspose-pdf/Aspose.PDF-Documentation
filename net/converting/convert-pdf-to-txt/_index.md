@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**Aspose.PDF for .NET** support converting whole PDF document and single page to a Text file. 
+**Aspose.PDF for .NET** support converting whole PDF document and single page to a Text file.
 
 ## Convert whole PDF document to Text file
 
@@ -31,7 +31,7 @@ public static void ConvertPDFDocToTXT()
 }
 ```
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-txt](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 
@@ -53,7 +53,7 @@ public static void ConvertPDFPagestoTXT()
     {
         ta.Visit(pdfDocument.Pages[page]);
     }
-    
+   
     // Save the extracted text in text file
     File.WriteAllText(System.IO.Path.Combine(_dataDir, "input_Text_Extracted_out.txt"), ta.Text);
 }

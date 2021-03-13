@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Aspose PDF for .NET Release Notes list new features, enhancement, and fixed bugs that were made in 2020. 
+Aspose PDF for .NET Release Notes list new features, enhancement, and fixed bugs that were made in 2020.
 
 - [Aspose.PDF for .NET 20.12](/pdf/net/aspose-pdf-for-net-20-12-release-notes/)
 - [Aspose.PDF for .NET 20.11](/pdf/net/aspose-pdf-for-net-20-11-release-notes/)

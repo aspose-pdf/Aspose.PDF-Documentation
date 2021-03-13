@@ -8,11 +8,11 @@ lastmod: "2021-01-26"
 draft: false
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 When we talk about editing and manipulating an existing PDF file s, Aspose.Pdf.Facades namespace in Aspose.PDF for .Net provides number of features for that matter. Manipulating pages of a PDF file is an important part of this component; PdfFileEditor class serves the purpose in this regard. This article explores the features provided by this class and explains the purpose of its methods.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Explanation
 
@@ -40,8 +40,8 @@ You can find samples of the above mentioned methods in the code snippet given be
 
 ## Conclusion
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 In this article we have seen how we can edit and manipulate the pages without changing the content s of the pages while using PdfFileEditor class. If you use the features effectively it’ll help you a lot.
 
-{{% /alert %}} 
+{{% /alert %}}

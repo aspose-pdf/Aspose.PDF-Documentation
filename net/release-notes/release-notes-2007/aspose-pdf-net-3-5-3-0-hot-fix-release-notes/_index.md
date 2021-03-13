@@ -10,15 +10,15 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF .Net 3.5.3.0 Hot Fix](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-.net-3.5.3.0-hot-fix/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 What's New?
 
-- Section page number symbol(PDFNET-3195): We have 
+- Section page number symbol(PDFNET-3195): We have
   supported new symbols:
   $Sp:    the page number in the current section;
   $SP:    the page count of the current section;
@@ -36,29 +36,29 @@ What’s Improved?
 
 What's Fixed?
 
-- Continuous section breaks after columned sections(PDFNET-3248):Refer 
+- Continuous section breaks after columned sections(PDFNET-3248):Refer
   to <http://www.aspose.com/Community/Forums/thread/81862.aspx>
 
-Word2Pdf - Second section starts from new page in PDF where it should start 
+Word2Pdf - Second section starts from new page in PDF where it should start
 on the same(PDFNET-3127): Refer to
 <http://www.aspose.com/Community/Forums/thread/80747.aspx>
 
-Word2Pdf - inline image not displayed when the size is too large 
-(PDFNET-3276): Refer to  
+Word2Pdf - inline image not displayed when the size is too large
+(PDFNET-3276): Refer to 
 <http://www.aspose.com/Community/Forums/82606/ShowThread.aspx#82606>
 
 Table cells too wide when using rowspan in XSL-FO (PDFNET-3277):
 Refer to <http://www.aspose.com/Community/Forums/82571/ShowThread.aspx#82571>
 
-Problem with Text Justification when converting from Word to 
+Problem with Text Justification when converting from Word to
 PDF(PDFNET-3298): Refer to
 <http://www.aspose.com/Community/Forums/thread/83084.aspx>
 
-Error: Invalid index in Segments indexer: 2 (PDFNET-3260): Refer 
+Error: Invalid index in Segments indexer: 2 (PDFNET-3260): Refer
 to <http://www.aspose.com/Community/Forums/thread/82135.aspx>
 
 Word to PDF the footnotes aren't correctly display (PDFNET-3187):
 Refer to <http://www.aspose.com/Community/Forums/thread/80565.aspx>
 
-FootNote in table is not supported well (PDFNET-3247): Refer 
+FootNote in table is not supported well (PDFNET-3247): Refer
 to <http://www.aspose.com/Community/Forums/2/81879/ShowThread.aspx#81879>

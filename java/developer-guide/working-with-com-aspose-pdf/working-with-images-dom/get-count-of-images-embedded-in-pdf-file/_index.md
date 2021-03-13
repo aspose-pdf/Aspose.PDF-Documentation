@@ -6,11 +6,11 @@ url: /java/get-count-of-images-embedded-in-pdf-file/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Images are stored in each page's [Resources](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Resources) collection's Images collection. In order to get the total count of images in PDF file, we need to first get the count of images in each page and then sum the count of images count from individual page. The following code also shows the steps to get image's name, without extracting it from the document. The extracted names will be same as provided when they were added to the PDF.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows how to get names of images embedded inside PDF file.
 
@@ -52,7 +52,7 @@ int Total_Images=0;
 
    Total_Images = Total_Images+Images_per_page;
 
- }  
+ } 
 
  // print total images count in PDF file
 

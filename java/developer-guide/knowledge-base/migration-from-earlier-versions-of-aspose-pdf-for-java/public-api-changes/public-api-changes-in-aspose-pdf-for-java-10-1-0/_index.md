@@ -6,11 +6,11 @@ url: /java/public-api-changes-in-aspose-pdf-for-java-10-1-0/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page lists the public API changes introduced in [Aspose.PDF for Java 10.1.0](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/entry615512.aspx). It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in Aspose.PDF for Java which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 **Public API and Backwards Incompatible Changes**
 #### **Added new exception classes:**

@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-18-2-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 18.2](http://maven.aspose.com/repository/simple/ext-release-local/com/aspose/aspose-pdf/18.2/).
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
@@ -121,7 +121,7 @@ com.aspose.pdf.**IDocument**.getNamedDestinations
 Added new constructors:
 com.aspose.pdf.**NamedDestination**.#ctor(Document,String)
 
-Added new interface **com.aspose.pdf.nameddestinations.INamedDestinationCollection** 
+Added new interface **com.aspose.pdf.nameddestinations.INamedDestinationCollection**
 Methods:
 get_Item(String)
 set_Item(String,IAppointment)
@@ -130,7 +130,7 @@ remove(String)
 add(String,IAppointment)
 getNames()
 
-Added new class **com.aspose.pdf.nameddestinations.NamedDestinationCollection** 
+Added new class **com.aspose.pdf.nameddestinations.NamedDestinationCollection**
 Methods:
 get_Item(String)
 set_Item(String,IAppointment)

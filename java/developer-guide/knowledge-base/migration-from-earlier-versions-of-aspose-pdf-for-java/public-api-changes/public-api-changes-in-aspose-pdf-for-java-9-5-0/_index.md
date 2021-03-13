@@ -6,11 +6,11 @@ url: /java/public-api-changes-in-aspose-pdf-for-java-9-5-0/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page lists the public API changes introduced in [Aspose.PDF for Java 9.5.0](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/entry576058.aspx). It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in Aspose.PDF for Java which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 **Property CoordinateType is added to PdfViewer and PdfConverter**<p>
 The CoordinateType property allows to set printable area to MediaBox or CropBox (default value)
@@ -298,7 +298,7 @@ line.setColor(Color.getRed());
 //set extension line parameters.
 line.setLeaderLine(-15);
 line.setLeaderLineExtension(5);
-//set line endings 
+//set line endings
 line.setStartingStyle(LineEnding.OpenArrow);
 line.setEndingStyle(LineEnding.OpenArrow);
 
@@ -330,11 +330,11 @@ Point[] vertices = new Point[]
 
 {
 
-	new Point(100, 600), 
-	new Point(500, 600), 
-	new Point(500, 500), 
-	new Point(400, 300), 
-	new Point(100, 500), 
+	new Point(100, 600),
+	new Point(500, 600),
+	new Point(500, 500),
+	new Point(400, 300),
+	new Point(100, 500),
 	new Point(100, 600)
 
 };
@@ -343,7 +343,7 @@ Rectangle rect = new Rectangle(100, 500, 500, 600);
 //area or perimeter line
 PolylineAnnotation area = new PolylineAnnotation(doc.getPages().get_Item(1), rect, vertices);
 area.setColor(Color.getRed());
-//line engins can be set for perimeter line. 
+//line engins can be set for perimeter line.
 area.setStartingStyle(LineEnding.OpenArrow);
 area.setEndingStyle(LineEnding.OpenArrow);
 area.setMeasure(new Measure(area));
@@ -597,7 +597,7 @@ Following code snippet shows how to specify image folder:
 
  Document pdfDocument = new Document(testdata + "PDFNEWJAVA_34088.pdf");
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.SpecialFolderForAllImages = testdata + "SpecialFolderForAllImages";        
+saveOptions.SpecialFolderForAllImages = testdata + "SpecialFolderForAllImages";       
 pdfDocument.save(testout + "PDFNEWJAVA_34088.html", saveOptions);
 
 {{< /highlight >}}
@@ -628,7 +628,7 @@ page.getParagraphs().add(image1, placementInfo);
 page.getPageInfo().getMargin().setLeft(5);
 page.getPageInfo().getMargin().setRight(0);
 page.getPageInfo().getMargin().setTop(0);
-page.getPageInfo().getMargin().setBottom(0);	 
+page.getPageInfo().getMargin().setBottom(0);	
 doc.save(out);
 
 {{< /highlight >}}
@@ -676,13 +676,13 @@ com.aspose.pdf.generator.legacyxmlmodel.BookmarkIncludeType
 
 <ins>**Changes in the classes:**
 
-**com.aspose.pdf.facades.Form** 
+**com.aspose.pdf.facades.Form**
 
 Changes:
 
 - public java.util.Map getButtonOptionValues(String fieldName) -> public java.util.Hashtable<String,String> getButtonOptionValues(String fieldName)
 
-**com.aspose.pdf.facades.PdfConverter** 
+**com.aspose.pdf.facades.PdfConverter**
 Added:
 
 - public int getCoordinateType()
@@ -691,13 +691,13 @@ Added:
 - public boolean getShowHiddenAreas()
 - public void setShowHiddenAreas(boolean value)
 
-**com.aspose.pdf.facades.PdfFileInfo** 
+**com.aspose.pdf.facades.PdfFileInfo**
 Changes:
 
 - public java.util.Map getHeader() -> public java.util.Map<String, String> getHeader()
 - public void setHeader(java.util.Map value) -> public void setHeader(java.util.Map<String,String> value
 
-**com.aspose.pdf.facades.PdfFileSignature** 
+**com.aspose.pdf.facades.PdfFileSignature**
 Depricated:
 
 - public boolean isContainSignature()
@@ -707,7 +707,7 @@ Depricated:
 - public boolean containsUsageRights()
 - public void removeUsageRights()
 
-**com.aspose.pdf.facades.PdfPageEditor** 
+**com.aspose.pdf.facades.PdfPageEditor**
 Changes:
 
 - public int[] getPages_Rename_Namesake() -> public int[] getProcessPages()
@@ -715,7 +715,7 @@ Changes:
 - public java.util.Map getPageRotations() -> public java.util.Map<Integer, Integer> getPageRotations()
 - public void setPageRotations(java.util.Map value) -> public void setPageRotations(java.util.Map<Integer, Integer> value)
 
-**com.aspose.pdf.facades.PdfViewer** 
+**com.aspose.pdf.facades.PdfViewer**
 Depricated:
 
 - public boolean getShowHiddenAreas()
@@ -724,17 +724,17 @@ Depricated:
 - public int getCoordinateType()
 - public void setCoordinateType(int value)
 
-**com.aspose.pdf.facades.PdfXmpMetadata** 
+**com.aspose.pdf.facades.PdfXmpMetadata**
 Changes:
 
 - public IDictionary getExtensionFields() -> public java.util.Hashtable<String, XmpPdfAExtensionSchema> getExtensionFields()
 
-**com.aspose.pdf.generator.legacyxmlmodel.Attachment** 
+**com.aspose.pdf.generator.legacyxmlmodel.Attachment**
 Added:
 
 - public InputStream AttachedStream
 
-**com.aspose.pdf.generator.legacyxmlmodel.BorderInfo** 
+**com.aspose.pdf.generator.legacyxmlmodel.BorderInfo**
 Added:
 
 - public void setBorderStyle(int borderSide, int style)
@@ -743,36 +743,36 @@ Added:
 
 - Removed Deprecated status from the class
 
-**com.aspose.pdf.generator.legacyxmlmodel.Cell** 
+**com.aspose.pdf.generator.legacyxmlmodel.Cell**
 Added:
 
 - public TextInfo getDefaultCellTextInfo()
 - public void setDefaultCellTextInfo(TextInfo value)
 - public String getText()
 
-**com.aspose.pdf.generator.legacyxmlmodel.HeaderFooter** 
+**com.aspose.pdf.generator.legacyxmlmodel.HeaderFooter**
 Added:
 
 - public Object completeClone()
 - public Object completeCloneAll()
 
-**com.aspose.pdf.generator.legacyxmlmodel.Heading** 
+**com.aspose.pdf.generator.legacyxmlmodel.Heading**
 Removed Deprecated status from:
 
 - public int getBulletAlignment()
 - public void setBulletAlignment(int value)
 
-**com.aspose.pdf.generator.legacyxmlmodel.Image** 
+**com.aspose.pdf.generator.legacyxmlmodel.Image**
 Added:
 
 - public Image(HeaderFooter hf)
 
-**com.aspose.pdf.generator.legacyxmlmodel.JavaScripts** 
+**com.aspose.pdf.generator.legacyxmlmodel.JavaScripts**
 Added:
 
 - public void remove(Cell jsToRemove)
 
-**com.aspose.pdf.generator.legacyxmlmodel.LegacyPdf** 
+**com.aspose.pdf.generator.legacyxmlmodel.LegacyPdf**
 Added:
 
 - public boolean DigitSubstitution
@@ -800,12 +800,12 @@ Added Deprecated:
 - public int getDirectModeItemsCount()
 - public void setDirectModeItemsCount(int value)
 
-**com.aspose.pdf.generator.legacyxmlmodel.LinkAction** 
+**com.aspose.pdf.generator.legacyxmlmodel.LinkAction**
 Added:
 
 - public String SoundFileName
 
-**com.aspose.pdf.generator.legacyxmlmodel.Paragraphs** 
+**com.aspose.pdf.generator.legacyxmlmodel.Paragraphs**
 Added:
 
 - public void add(Paragraph paragraph)
@@ -814,7 +814,7 @@ Added:
 - public void copyTo(Paragraph[] paraArray, int index)
 - public void insert(Paragraph paragraphToInsertAfter, Paragraph newParagraph)
 
-**com.aspose.pdf.generator.legacyxmlmodel.Row** 
+**com.aspose.pdf.generator.legacyxmlmodel.Row**
 Changed:
 
 - DefaultCellTextInfo into getter and setter field
@@ -823,7 +823,7 @@ Changed:
 - public void setDefaultCellTextInfo(TextInfo value)
 - public Object deepClone()
 
-**com.aspose.pdf.generator.legacyxmlmodel.Section** 
+**com.aspose.pdf.generator.legacyxmlmodel.Section**
 Added:
 
 - public ColumnInfo ColumnInfo
@@ -836,7 +836,7 @@ Added:
 - public HeaderFooter insertFooter(int type)
 - public Object getObjectByID(String ID)
 
-**com.aspose.pdf.generator.legacyxmlmodel.Sections** 
+**com.aspose.pdf.generator.legacyxmlmodel.Sections**
 Added:
 
 - public Sections()
@@ -850,13 +850,13 @@ Added:
 - public Section get_Item(String sectionID)
 - public void set_Item(String sectionID, Section value)
 
-**com.aspose.pdf.generator.legacyxmlmodel.Security** 
+**com.aspose.pdf.generator.legacyxmlmodel.Security**
 Added:
 
 - public boolean isDefaultAllAllowed()
 - public void setDefaultAllAllowed(boolean value)
 
-**com.aspose.pdf.generator.legacyxmlmodel.Shapes** 
+**com.aspose.pdf.generator.legacyxmlmodel.Shapes**
 Added:
 
 - public void add(Shape shape)
@@ -864,7 +864,7 @@ Added:
 - public void copyTo(Shape[] shapeArray, int index)
 - public int indexOf(Shape shape)
 
-**com.aspose.pdf.generator.legacyxmlmodel.Table** 
+**com.aspose.pdf.generator.legacyxmlmodel.Table**
 Changed:
 
 - FixedWidth into getter and setter field
@@ -882,22 +882,22 @@ Changed:
 - public String getColumnWidths()
 - public void setColumnWidths(String value)
 
-**com.aspose.pdf.generator.legacyxmlmodel.TabStops** 
+**com.aspose.pdf.generator.legacyxmlmodel.TabStops**
 Added:
 
 - public int getCapacity()
 - public void setCapacity(int value)
 
-**com.aspose.pdf.generator.legacyxmlmodel.TextInfo** 
+**com.aspose.pdf.generator.legacyxmlmodel.TextInfo**
 Changed:
 
 - The next list of the fields was changed to the separate getter and setter field:
 
 {{< highlight java >}}
 
- FontSize, FontName, TruetypeFontFileName, IsUnicode, FontAfmFile, FontPfmFile, FontOutlineFile, FontEncodingFile, 
+ FontSize, FontName, TruetypeFontFileName, IsUnicode, FontAfmFile, FontPfmFile, FontOutlineFile, FontEncodingFile,
  IsTrueTypeFontBold, IsTrueTypeFontItalic,{color} {color:#222222}FontEncoding, IsFontEmbedded, IsUnderline,{color}
- {color:#222222}IsOverline,{color} {color:#222222}CharSpace, WordSpace, LineSpacing, OverlineOffset, UnderlineOffset, RenderingMode, 
+ {color:#222222}IsOverline,{color} {color:#222222}CharSpace, WordSpace, LineSpacing, OverlineOffset, UnderlineOffset, RenderingMode,
  Color, BackgroundColor, IsRightToLeft, StrokeWidth, StrokeColor, IsBaseline, Alignment.
 
 {{< /highlight >}}
@@ -959,12 +959,12 @@ Added:
 - public int getAlignment()
 - public void setAlignment(int value)
 
-**com.aspose.pdf.BaseOperatorCollection** 
+**com.aspose.pdf.BaseOperatorCollection**
 Changes:
 
 - implements ICollection -> implements ICollection< Operator >
 
-**com.aspose.pdf.Border** 
+**com.aspose.pdf.Border**
 Changes:
 
 - public int getVCornerRaduis() -> public int getVCornerRadius()
@@ -973,12 +973,12 @@ Changes:
 - public int getVCornerRaduis()
 - public void setVCornerRaduis(int value)
 
-**com.aspose.pdf.DataUtils** 
+**com.aspose.pdf.DataUtils**
 Changes:
 
 - Internalized
 
-**com.aspose.pdf.ExcelSaveOptions** 
+**com.aspose.pdf.ExcelSaveOptions**
 Added:
 
 - public boolean getMinimizeTheNumberOfWorksheets()
@@ -988,73 +988,73 @@ Added:
 - public boolean getUniformWorksheets()
 - public void setUniformWorksheets(boolean value)
 
-**com.aspose.pdf.Font** 
+**com.aspose.pdf.Font**
 Added:
 
 - public void save(OutputStream stream)
 
-**com.aspose.pdf.Form** 
+**com.aspose.pdf.Form**
 Added:
 
 - public FieldsEnumerator(IDocument document, List< Object > fields)
 
-**com.aspose.pdf.HtmlSaveOptions:** 
+**com.aspose.pdf.HtmlSaveOptions:**
 Added:
 
 - public FontSourceCollection getFontSources()
 
-**com.aspose.pdf.InkAnnotation** 
+**com.aspose.pdf.InkAnnotation**
 Added:
 
 - public int getCapStyle()
 - public void setCapStyle(int value)
 
-**com.aspose.pdf.LineAnnotation** 
+**com.aspose.pdf.LineAnnotation**
 Added:
 
 - public Measure getMeasure()
 - public void setMeasure(Measure value)
 
-**com.aspose.pdf.LoadFormat:** 
+**com.aspose.pdf.LoadFormat:**
 Changes:
 
 - public static final int InfoPath - was removed
 - public static final int AutoDetect - Added
 
-**com.aspose.pdf.Metadata** 
+**com.aspose.pdf.Metadata**
 Changes:
 
 - public IDictionary getExtensionFields() -> public java.util.Hashtable< String, XmpPdfAExtensionSchema > getExtensionFields() 
 
-**com.aspose.pdf.PageLayout** 
+**com.aspose.pdf.PageLayout**
 Added:
 
 - public static final int Default
 
-**com.aspose.pdf.PolylineAnnotation** 
+**com.aspose.pdf.PolylineAnnotation**
 Added:
 
 - public Measure getMeasure()
 - public void setMeasure(Measure value)
 
-**com.aspose.pdf.PopupAnnotation** 
+**com.aspose.pdf.PopupAnnotation**
 Added:
 
 - public MarkupAnnotation getParent()
 - public void setParent(MarkupAnnotation value)
 
-**com.aspose.pdf.RichTextBoxField** 
+**com.aspose.pdf.RichTextBoxField**
 Changes:
 
 - public String getRValue() -> public String getRichTextValue()
 - public void setRValue(String value) -> public void setRichTextValue(String value)
 
-**com.aspose.pdf.SaveOptions.BorderPartStyle** 
+**com.aspose.pdf.SaveOptions.BorderPartStyle**
 Added:
 
 - public java.awt.Color color
 
-**com.aspose.pdf.SvgLoadOptions** 
+**com.aspose.pdf.SvgLoadOptions**
 Added:
 
 - public static final class ConversionEngines
@@ -1062,19 +1062,19 @@ Added:
 - public PageInfo getPageInfo()
 - public void setPageInfo(PageInfo value)
 
-**com.aspose.pdf.Table** 
+**com.aspose.pdf.Table**
 Added:
 
 - public int getColumnAdjustment()
 - public void setColumnAdjustment(int value)
 
-**com.aspose.pdf.TextFragmentAbsorber** 
+**com.aspose.pdf.TextFragmentAbsorber**
 Added:
 
 - public TextReplaceOptions getTextReplaceOptions()
 - public void setTextReplaceOptions(TextReplaceOptions value)
 
-**com.aspose.pdf.TextReplaceOptions** 
+**com.aspose.pdf.TextReplaceOptions**
 Added:
 
 - public static final class ReplaceAdjustment
@@ -1082,7 +1082,7 @@ Added:
 - public void setReplaceAdjustmentAction(int value)
 - public TextReplaceOptions(int adjustment, int scope)
 
-**com.aspose.pdf.XFA** 
+**com.aspose.pdf.XFA**
 Added:
 
 - public void setFieldImage(String fieldName, InputStream image)

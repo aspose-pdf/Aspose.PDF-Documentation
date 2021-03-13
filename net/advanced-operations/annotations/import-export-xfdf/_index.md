@@ -4,7 +4,7 @@ linktitle: Import and Export Annotations to XFDF format
 type: docs
 weight: 40
 url: /net/import-export-xfdf/
-description: You may import and export annotation with XFDF format with C# and Aspose.PDF for .NET library. 
+description: You may import and export annotation with XFDF format with C# and Aspose.PDF for .NET library.
 lastmod: "2020-12-16"
 sitemap:
     changefreq: "weekly"
@@ -36,14 +36,14 @@ namespace Aspose.Pdf.Examples.Advanced
         // The path to the documents directory.
         private const string _dataDir = "..\\..\\..\\..\\Samples";
         /// <summary>
-        /// Importing annotations from XFDF file 
-        /// XML Forms Data Format (XFDF) file created by Adobe Acrobat, a PDF authoring application; 
-        /// stores descriptions of page form elements and their values, such as the names and values for 
-        /// text fields; used for saving form data that can be imported into a PDF document.        
-        /// You can import annotation data from the XFDF file to PDF using 
+        /// Importing annotations from XFDF file
+        /// XML Forms Data Format (XFDF) file created by Adobe Acrobat, a PDF authoring application;
+        /// stores descriptions of page form elements and their values, such as the names and values for
+        /// text fields; used for saving form data that can be imported into a PDF document.       
+        /// You can import annotation data from the XFDF file to PDF using
         /// the ImportAnnotationsFromXfdf method in PdfAnnotationEditor class.
-        /// </summary>        
-    
+        /// </summary>       
+   
         public static void ExportAnnotationXFDF()
         {
             // Create PdfAnnotationEditor object
@@ -51,7 +51,7 @@ namespace Aspose.Pdf.Examples.Advanced
 
             // Bind PDF document to the Annotation Editor
             AnnotationEditor.BindPdf(Path.Combine(_dataDir, "AnnotationDemo1.pdf"));
-            
+           
             // Export annotations
             var fileStream = File.OpenWrite(Path.Combine(_dataDir, "exportannotations.xfdf"));
             var annotType = new AnnotationType[] { AnnotationType.Line, AnnotationType.Square };
@@ -109,7 +109,7 @@ In the code below an ImportAnnotations method allows import annotations directly
             if (!File.Exists(exportFileName))
                 ExportAnnotationXFDF();
 
-            // Annotation Editor allows import annotations from several PDF documents, 
+            // Annotation Editor allows import annotations from several PDF documents,
             // but in this example, we use only one.
             AnnotationEditor.ImportAnnotations(new[] { Path.Combine(_dataDir, "AnnotationDemo1.pdf") });
 

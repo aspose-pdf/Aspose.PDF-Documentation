@@ -37,19 +37,19 @@ lastmod: "2020-12-16"
 Added the following exception classes:
 **com.aspose.pdf.exceptions.IndexOutOfRangeException**
 
-Changes in class **com.aspose.pdf.DocSaveOptions:** 
+Changes in class **com.aspose.pdf.DocSaveOptions:**
 Removed unused methods:
 
 `   `public boolean isUseEmbeddedTrueTypeFonts()
 `   `public void setUseEmbeddedTrueTypeFonts(boolean)
 
-Changes in class **com.aspose.pdf.Document:** 
+Changes in class **com.aspose.pdf.Document:**
 Added methods:
 
 `   `public boolean isAbsentFontTryToSubstitute()
 `   `public void setAbsentFontTryToSubstitute(boolean substitute)
 
-Changes in class **com.aspose.pdf.facades.PdfFileEditor** 
+Changes in class **com.aspose.pdf.facades.PdfFileEditor**
 Added abstract class
 
 `   `public static abstract class **ConcatenationProgressHandler**
@@ -76,27 +76,27 @@ Added enum class **ProgressEventType** with the following values:
 `   `public static final int DocumentConcated = 9;
 `   `public static final int TotalPercentage = 10;
 
-Changes in class **com.aspose.pdf.Font:** 
+Changes in class **com.aspose.pdf.Font:**
 Added method:
 
 `   `public double measureString(String str, float fontSize)
 
-Changes in class **com.aspose.pdf.TextFragmentState:** 
+Changes in class **com.aspose.pdf.TextFragmentState:**
 Added method:
 
 `   `public double measureString(String str)
 
-Changes in class **com.aspose.pdf.TextState:** 
+Changes in class **com.aspose.pdf.TextState:**
 Added method:
 
 `   `public double measureString(String str)
 
-Changes in class **com.aspose.pdf.ImagePlacement:** 
+Changes in class **com.aspose.pdf.ImagePlacement:**
 Added method:
 
 `   `public Matrix getMatrix()
 
-Changes in class **com.aspose.pdf.printing.PdfPrinterSettings:** 
+Changes in class **com.aspose.pdf.printing.PdfPrinterSettings:**
 Added methods:
 
 `   `public void setSelectedPages(int[] pagesList)

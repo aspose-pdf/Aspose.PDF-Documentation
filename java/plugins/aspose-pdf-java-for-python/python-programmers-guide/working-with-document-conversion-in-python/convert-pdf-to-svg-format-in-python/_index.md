@@ -9,7 +9,7 @@ lastmod: "2020-12-16"
 
 <ins>To convert PDF to SVG format using **Aspose.PDF Java for Python**, simply invoke **PdfToSvg** module.
 
-**Python Code**
+**Python Code
 ```
 
 # Open the target document
@@ -36,7 +36,7 @@ print "Document has been converted successfully"
 ```
 
 
-**Download Running Code**
+**Download Running Code
 
 Download **Convert PDF to SVG Format (Aspose.PDF)** from any of the below mentioned social coding sites:
 

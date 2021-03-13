@@ -6,7 +6,7 @@ url: /java/working-with-pages-in-php/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:**
+**This section includes the following topics:
 
 - [Concatenate PDF Files in PHP](/pdf/java/concatenate-pdf-files-in-php/)
 - [Delete a Particular Page from the PDF File In PHP](/pdf/java/delete-a-particular-page-from-the-pdf-file-in-php/)

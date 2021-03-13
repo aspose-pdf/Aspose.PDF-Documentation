@@ -41,7 +41,7 @@ This page contains release notes information for Aspose.PDF for Java 21.2.
 - com.aspose.pdf.**PdfFormatConversionOptions**.setPageByPageFontProcess(boolean)
 - com.aspose.pdf.**PdfFormatConversionOptions**.isPageByPageFontProcess()
 - com.aspose.pdf.**RedactionAnnotation**.setQuadPoints(Point[])
-- com.aspose.pdf.**RedactionAnnotation**.getQuadPoints()    
+- com.aspose.pdf.**RedactionAnnotation**.getQuadPoints()   
 - com.aspose.pdf.**DocumentInfo**.setProducer(String)
 - com.aspose.pdf.**DocumentInfo**.setCreator(String)
 

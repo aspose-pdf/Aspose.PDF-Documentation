@@ -6,10 +6,11 @@ url: /java/add-text-to-an-existing-pdf-file-in-ruby/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Add Text**
+
+## Aspose.PDF - Add Text
 To add Text string in Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **AddText** module.
 
-**Ruby Code**
+**Ruby Code
 ```
 
 # The path to the documents directory.
@@ -60,7 +61,8 @@ puts "Text added successfully"
 ```
 
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Add Text (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addtext.rb)

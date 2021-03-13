@@ -12,26 +12,26 @@ RS designer does not support the setting of page margin size. Aspose.PDF for Rep
 
 {{% /alert %}}
 
-{{% alert color="primary" %}} 
-1)   
-**Parameter Name**: PageMarginLeft   
-**Date Type**: Float   
-**Values supported**:   
+{{% alert color="primary" %}}
+1)  
+**Parameter Name**: PageMarginLeft  
+**Date Type**: Float  
+**Values supported**:  
 
-2)   
-**Parameter Name**: PageMarginRight   
-**Date Type**: Float   
-**Values supported**:   
+2)  
+**Parameter Name**: PageMarginRight  
+**Date Type**: Float  
+**Values supported**:  
 
-3)   
-**Parameter Name**: PageMarginTop   
-**Date Type**: Float   
-**Values supported**:   
+3)  
+**Parameter Name**: PageMarginTop  
+**Date Type**: Float  
+**Values supported**:  
 
-4)   
-**Parameter Name**: PageMarginBottom   
-**Date Type**: Float   
-**Values supported**:   
+4)  
+**Parameter Name**: PageMarginBottom  
+**Date Type**: Float  
+**Values supported**:  
 
 **Example**
 

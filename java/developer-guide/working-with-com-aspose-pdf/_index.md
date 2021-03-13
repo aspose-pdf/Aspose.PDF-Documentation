@@ -6,11 +6,11 @@ url: /java/working-with-com-aspose-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-These topics will work with Auto-ported version of Aspose.PDF for Java 4.0.0 
+These topics will work with Auto-ported version of Aspose.PDF for Java 4.0.0
 
-{{% /alert %}} 
+{{% /alert %}}
 ## **Topics related to Aspose.PDF (DOM) API will be listed under this section**
 - [Working with Document Object](/pdf/java/working-with-document-object/)
 - [Working with Document Conversion - DOM](/pdf/java/working-with-document-conversion-dom/)

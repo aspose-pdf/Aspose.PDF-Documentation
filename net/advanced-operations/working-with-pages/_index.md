@@ -4,9 +4,9 @@ linktitle: Working with Pages
 type: docs
 weight: 20
 url: /net/working-with-pages/
-description: How to add pages, add headers and footers, add watermarks  you can know in this section. Aspose.PDF for .NET explain to you all details on this topic. 
+description: How to add pages, add headers and footers, add watermarks  you can know in this section. Aspose.PDF for .NET explain to you all details on this topic.
 lastmod: "2020-12-22"
-aliases:    
+aliases:   
     - /net/working-with-stamps-and-watermarks/
 sitemap:
     changefreq: "weekly"
@@ -17,7 +17,7 @@ sitemap:
 You can add text or images in the headers and footers of your PDF file, and choose different headers in your document with C# library by Aspose.
 Also, try to crop pages in PDF document programmatically using C#.
 
-This section learn you how to add watermarks in your PDF file using Artifact class. You will check the programming sample for this task. 
+This section learn you how to add watermarks in your PDF file using Artifact class. You will check the programming sample for this task.
 Add Page number using PageNumberStamp class. For adding a Stamp in your document use ImageStamp and TextStamp classes. Use adding a watermark for creating background images in your PDF file with **Aspose.PDF for .NET**.
 
 You are able to do the following:

@@ -1,6 +1,6 @@
 ---
-title: Aspose.PDF for .NET 17.9 
-linktitle: Aspose.PDF for .NET 17.9 
+title: Aspose.PDF for .NET 17.9
+linktitle: Aspose.PDF for .NET 17.9
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-17-9-release-notes/
@@ -53,12 +53,12 @@ Method Aspose.PDF.DocumentFactory.CreateDocument  (System.IO.Stream,System.Strin
 Method Aspose.PDF.DocumentFactory.CreateDocument(System.String)
 Method Aspose.PDF.GroupProcessor.Creators.PdfTypeObjectCreator.CreateExtractor  (System.IO.Stream,System.Int32,System.Boolean)
 Method Aspose.PDF.GroupProcessor.Creators.PdfTypeObjectCreator.CreateExtractor  (System.String,System.String,System.Int32,System.Boolean)
-Method Aspose.PDF.GroupProcessor.Creators.PdfTypeObjectCreator.CreateExtractor  (System.IO.Stream,System.String,System.Int32,System.Boolean)  
-Property Aspose.PDF.HtmlSaveOptions.ImageResolution  
-Property Aspose.PDF.PdfFormatConversionOptions.IccProfileFileName  
-Property Aspose.PDF.PptxSaveOptions.SlidesAsImages  
-Property Aspose.PDF.PptxSaveOptions.SeparateImages  
-Property Aspose.PDF.RenderingOptions.InterpolationHighQuality  
+Method Aspose.PDF.GroupProcessor.Creators.PdfTypeObjectCreator.CreateExtractor  (System.IO.Stream,System.String,System.Int32,System.Boolean) 
+Property Aspose.PDF.HtmlSaveOptions.ImageResolution 
+Property Aspose.PDF.PdfFormatConversionOptions.IccProfileFileName 
+Property Aspose.PDF.PptxSaveOptions.SlidesAsImages 
+Property Aspose.PDF.PptxSaveOptions.SeparateImages 
+Property Aspose.PDF.RenderingOptions.InterpolationHighQuality 
 
 ## Removed APIs:
 

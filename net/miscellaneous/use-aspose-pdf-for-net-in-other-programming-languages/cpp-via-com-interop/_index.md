@@ -5,7 +5,7 @@ weight: 70
 url: /net/cpp-via-com-interop/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This section contains following topics
 

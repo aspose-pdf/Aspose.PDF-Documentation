@@ -5,17 +5,17 @@ type: docs
 weight: 70
 url: /net/aspose-pdf-for-net-18-6-release-notes/
 lastmod: "2020-12-14"
-description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.6. 
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.6.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 18.6](https://www.nuget.org/packages/Aspose.Pdf/18.6.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 We have honored to announce June Release of Aspose.PDF for .NET. Bug fixes and new features has been listed in the below table of Improvements and Changes. However, we have also introduced new features as part of work on 508 compliance (WCAG):
 
@@ -69,11 +69,11 @@ Above listed features are under further development and currently they are avail
 
 ## Public API changes in Aspose.PDF for .NET 18.6
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 All descendants of Aspose.Pdf.Operator were moved into namespace Aspose.Pdf.Operators. Thus new Aspose.Pdf.Operators.GSave()' should be used, instead of 'new Aspose.Pdf.Operator.GSave()'.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ### Added APIs:
 

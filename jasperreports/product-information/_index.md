@@ -6,7 +6,7 @@ url: /jasperreports/product-information/
 lastmod: "2020-12-16"
 ---
 
-###### **This section includes the following topics:** 
+###### **This section includes the following topics:**
 - [Product Overview](/pdf/jasperreports/product-overview/)
 - [Supported File Formats](/pdf/jasperreports/supported-file-formats/)
 - [Feature Tour](/pdf/jasperreports/feature-tour/)

@@ -73,7 +73,7 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page)
     page.Contents.Add(new Aspose.Pdf.Operators.ClosePathStroke());
     page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 }
-``` 
+```
 
 **2- By iterating through paragraphs collection and get the text of them:**
 

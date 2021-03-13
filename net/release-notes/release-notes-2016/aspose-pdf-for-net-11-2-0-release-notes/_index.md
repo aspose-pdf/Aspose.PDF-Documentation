@@ -1,6 +1,6 @@
 ---
-title: Aspose.PDF for .NET 11.2.0 
-linktitle: Aspose.PDF for .NET 11.2.0 
+title: Aspose.PDF for .NET 11.2.0
+linktitle: Aspose.PDF for .NET 11.2.0
 type: docs
 weight: 120
 url: /net/aspose-pdf-for-net-11-2-0-release-notes/
@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 11.2.0](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-11.2.0/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 We are pleased to share a new version of Aspose.PDF for .NET with the following improvements.
 

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-There are a number of tasks when for some reason it is more convenient to export data from databases to a PDF document without using the recently popular HTML to PDF conversion scheme. 
+There are a number of tasks when for some reason it is more convenient to export data from databases to a PDF document without using the recently popular HTML to PDF conversion scheme.
 
 This article will show you how to generate a PDF document using the Aspose.PDF for .NET.
 
@@ -119,7 +119,7 @@ var document = new Document
 
 var pdfPage = document.Pages.Add();
 
-// Initializes a new instance of the TextFragment for report's title 
+// Initializes a new instance of the TextFragment for report's title
 var textFragment = new TextFragment(reportTitle1);
 Table table = new Table
 {
@@ -225,11 +225,11 @@ public static class PdfHelper
         }
         public static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
         {
-            var headRow = table.Rows.Add();            
+            var headRow = table.Rows.Add();           
             var props = typeof(TValue).GetProperties(BindingFlags.Public | BindingFlags.Instance);
             foreach (var prop in props)
             {
-               headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);                
+               headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);               
             }
 
             foreach (var group in groupedData)

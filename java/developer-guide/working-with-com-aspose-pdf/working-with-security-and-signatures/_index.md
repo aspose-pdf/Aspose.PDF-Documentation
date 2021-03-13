@@ -6,7 +6,7 @@ url: /java/working-with-security-and-signatures/
 lastmod: "2020-12-16"
 ---
 
-## **This section includes the following topics**: 
+## **This section includes the following topics**:
 
 - [Encrypt PDF document using Encryption Types](/pdf/java/encrypt-pdf-document-using-encryption-types/)
 - [Decrypt PDF file using Owner Password](/pdf/java/decrypt-pdf-file-using-owner-password/)

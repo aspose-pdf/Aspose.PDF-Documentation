@@ -3,26 +3,32 @@ title: Download and Configure Aspose.PDF in PHP
 type: docs
 weight: 10
 url: /java/download-and-configure-aspose-pdf-in-php/
+lastmod: "2020-12-16"
 ---
 
-## <ins>**Download Required Libraries**
+
+## Download Required Libraries
 Download the required libraries mentioned below. These are the required for executing Aspose.PDF Java for PHP examples.
 
 - **Aspose:** [Aspose.PDF for Java Component](https://downloads.aspose.com/pdf/java)
 - PHP/Java Bridge
-## <ins>**Download Examples from Social Coding Sites**
+
+## Download Examples from Social Coding Sites
 
 
 Following releases of running examples are available to download on below mentioned social coding sites:
 
-lastmod: "2020-12-16"
+
 -----
-### **GitHub**
-- **Aspose.PDF Java for PHP Examples**
+
+###  GitHub
+- **Aspose.PDF Java for PHP Examples
   - [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
-## <ins>**How to configure the source code on Linux Platform**
+
+## How to configure the source code on Linux Platform
 Please follow these simple steps in order to open and extend the source code while using:
-## <ins>**1. Install Tomcat Server**
+
+## 1. Install Tomcat Server
 To install Tomcat server, issue following command on the Linux console. This will successfully install the Tomcat server.
 
 {{< highlight actionscript3 >}}
@@ -30,12 +36,13 @@ To install Tomcat server, issue following command on the Linux console. This wi
  sudo apt-get install tomcat8
 
 {{< /highlight >}}
-## <ins>**2. Download and Configure PHP/JavaBridge**
+
+## 2. Download and Configure PHP/JavaBridge
 In order to download the PHP/JavaBridge binaries, issue the following command on the Linux console.
 
 {{< highlight actionscript3 >}}
 
-  wget http://citylan.dl.sourceforge.net/project/php-java-bridge/Binary%20package/php-java-bridge_6.2.1/php-java-bridge_6.2.1_documentation.zip 
+  wget http://citylan.dl.sourceforge.net/project/php-java-bridge/Binary%20package/php-java-bridge_6.2.1/php-java-bridge_6.2.1_documentation.zip
 
 {{< /highlight >}}
 
@@ -44,7 +51,7 @@ Unzip the PHP/JavaBridge binaries by issuing the following command on the Linux 
 
 {{< highlight actionscript3 >}}
 
-  unzip -d php-java-bridge_6.2.1_documentation.zip 
+  unzip -d php-java-bridge_6.2.1_documentation.zip
 
 {{< /highlight >}}
 
@@ -53,7 +60,7 @@ This will extract **JavaBridge.war** file. Copy it to the tomcat88 **webapps*
 
 {{< highlight actionscript3 >}}
 
-  sudo cp JavaBridge.war /var/lib/tomcat8/webapps/JavaBridge.war 
+  sudo cp JavaBridge.war /var/lib/tomcat8/webapps/JavaBridge.war
 
 {{< /highlight >}}
 
@@ -64,26 +71,28 @@ If any error message appears then install  **FastCGI** by issuing the followin
 
 {{< highlight actionscript3 >}}
 
-  sudo apt-get install php55-cgi 
+  sudo apt-get install php55-cgi
 
 {{< /highlight >}}
 
 After installing php5.5 CGI, restart the tomcat8 server and check  http://localhost:8080/JavaBridge  again in the browser.
 
 If **JAVA_HOME** error is displayed, then open /etc/default/tomcat8 file and uncomment the line that sets the JAVA_HOME. Check http://localhost:8080/JavaBridge  in the browser again, it should come with PHP/JavaBridge Examples page. 
-## <ins>**3. Configure Aspose.PDF Java for PHP Examples**
+
+## 3. Configure Aspose.PDF Java for PHP Examples
 Clone, PHP examples by issuing the following commands inside webapps/JavaBridge folder. 
 
 {{< highlight actionscript3 >}}
 
 $ git init&nbsp;
 
-$ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose.PDF-for-Java_for_PHP] 
+$ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose.PDF-for-Java_for_PHP]
 
 {{< /highlight >}}
 
 
-## <ins>**How to configure the source code on Windows Platform**
+
+## How to configure the source code on Windows Platform
 Please follow below simple steps to configure PHP/Java Bridge on Windows Platform
 
 1. Install PHP5 and configure as you normally do

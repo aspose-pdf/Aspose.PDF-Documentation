@@ -6,11 +6,13 @@ url: /java/split-pdf-file-into-individual-pages-in-jython/
 lastmod: "2020-12-16"
 ---
 
-## **Aspose.PDF - Split All Pages**
+
+## **Aspose.PDF - Split All Pages
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.
 
 Error rendering macro 'code' : Invalid value specified for parameter lang
-## **Download Running Code**
+
+## **Download Running Code
 Download running code from any of the below mentioned social coding sites:
 
 - [CodePlex](https://asposepdfjavajython.codeplex.com/releases)

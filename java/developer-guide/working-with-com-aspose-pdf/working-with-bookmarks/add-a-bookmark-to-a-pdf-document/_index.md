@@ -6,11 +6,11 @@ url: /java/add-a-bookmark-to-a-pdf-document/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Bookmarks are held in the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's [OutlineItemCollection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/OutlineItemCollection) collection, itself in the Outlines collection.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To add a bookmark to a PDF:
 

@@ -6,11 +6,11 @@ url: /java/add-a-child-bookmark-to-a-pdf-document/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Bookmarks can be nested, indicating a hierarchical relationship with parent and child bookmarks. This article explains how to add a child bookmark, that is, a second-level bookmark, to a PDF.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 To add a child bookmark to a PDF, first add a parent bookmark:
 

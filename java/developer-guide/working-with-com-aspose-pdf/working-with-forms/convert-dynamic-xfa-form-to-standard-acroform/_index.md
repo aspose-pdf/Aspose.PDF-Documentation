@@ -6,11 +6,11 @@ url: /java/convert-dynamic-xfa-form-to-standard-acroform/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Dynamic forms are based on an XML specification known as XFA, the “XML Forms Architecture”. The information about the form (as far as PDF is concerned) is very vague – it specifies that fields exist, with properties, and JavaScript events, but does not specify any rendering.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Currently PDF supports two different methods for integrating data and PDF forms:
 

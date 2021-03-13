@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for Aspose.PDF for .NET 19.10.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 
@@ -70,7 +70,7 @@ See the list of any changes made to the public API such as added, renamed, remov
 
 Following new APIs were added.
 
- - PropertyAspose.Pdf.MhtLoadOptions.PageInfo 
+ - PropertyAspose.Pdf.MhtLoadOptions.PageInfo
  - Constructor Aspose.Pdf.Text.TextFragmentAbsorber                                -(System.Text.RegularExpressions.Regex,Aspose.Pdf.Text.TextSearchOptions)
  - Constructor Aspose.Pdf.Text.TextFragmentAbsorber
 -(System.Text.RegularExpressions.Regex,Aspose.Pdf.Text.TextEditOptions) 
@@ -80,7 +80,7 @@ Following new APIs were added.
  - Enumeration member Aspose.Pdf.ExcelSaveOptions.ConversionEngines.LegacyEngine
  - Enumeration member Aspose.Pdf.ExcelSaveOptions.ConversionEngines.NewEngine
  - Property Aspose.Pdf.RenderingOptions.OptimizeDimensions
- 
+
 ## Removed APIs
 
  - Property Aspose.Pdf.HtmlLoadOptions.isPdfUaConverting

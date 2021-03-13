@@ -8,15 +8,15 @@ url: /net/using-late-binding-in-cpp/
 
 ##### **Prerequisites**
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Please register Aspose.PDF for .NET with COM Interop, kindly check the article named [Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ##### **Sample**
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This is a simple C++ code sample to extract text from PDF by means of COM Interop using late binding. For details please look at [this](http://www.drdobbs.com/writing-com-clients-with-late-and-early/184403558) post.
 
@@ -232,4 +232,4 @@ int main(array<System::String ^> ^args)
 
 {{< /highlight >}}
 
-{{% /alert %}} 
+{{% /alert %}}

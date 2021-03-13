@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 19.7](https://www.nuget.org/packages/Aspose.Pdf/19.7.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 
@@ -110,7 +110,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.7](https://www.nug
  - Property Aspose.Pdf.XmpField.IsEmpty
  - Method Aspose.Pdf.XmpField.ToStructure
  - Method Aspose.Pdf.XmpField.ToArray
- - Enumeration Aspose.Pdf.XmpFieldType 
+ - Enumeration Aspose.Pdf.XmpFieldType
  - Enumeration member Aspose.Pdf.XmpFieldType.Struct
  - Enumeration member Aspose.Pdf.XmpFieldType.Array
  - Enumeration member Aspose.Pdf.XmpFieldType.Property

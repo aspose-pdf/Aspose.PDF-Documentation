@@ -42,7 +42,7 @@ The following code snippet shows the process of converting a PDF file to XML (Mo
 
 ```csharp
 // The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();            
+string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();           
 // Load source PDF file
 Document doc = new Document(dataDir + "input.pdf");
 // Save output in XML format
@@ -64,7 +64,7 @@ options.ConversionEngine = ExcelSaveOptions.ConversionEngines.NewEngine;
 options.Format = ExcelSaveOptions.ExcelFormat.CSV;
 
 Document pdfDocument = new Document("Currencies.pdf");
-pdfDocument.Save("Currencies.csv", options);  
+pdfDocument.Save("Currencies.csv", options); 
 ```
 
 ## What's new in Aspose.PDF  20.3

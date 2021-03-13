@@ -84,7 +84,7 @@ Page page = doc.getPages().add();
 //Add four headings in the section
 
 for (int Level = 1; Level<= 4; Level++)
-{ 
+{
     com.aspose.pdf.Heading heading2 = new com.aspose.pdf.Heading(Level);
     TextSegment segment2 = new TextSegment();
     heading2.getSegments().add(segment2);
@@ -93,12 +93,12 @@ for (int Level = 1; Level<= 4; Level++)
     segment2.setText("Sample Heading" + Level);
     heading2.getTextState().setFont(FontRepository.findFont("Arial UnicodeMS"));
 
-    //Add the heading into Table Of Contents. 
-    heading2.setInList(true); 
-    page.getParagraphs().add(heading2); 
+    //Add the heading into Table Of Contents.
+    heading2.setInList(true);
+    page.getParagraphs().add(heading2);
 }
 
-// save the Pdf 
+// save the Pdf
 doc.save(outFile);
 ```
 

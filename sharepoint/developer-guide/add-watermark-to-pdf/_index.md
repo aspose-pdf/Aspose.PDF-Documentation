@@ -6,29 +6,29 @@ url: /sharepoint/add-watermark-to-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint lets you add watermark to a PDF document. The feature adds a text watermark to the bottom left corner of every page in a PDF document added to the library. 
+Aspose.PDF for SharePoint lets you add watermark to a PDF document. The feature adds a text watermark to the bottom left corner of every page in a PDF document added to the library.
 
-**Watermark Text on bottom left corner** 
+**Watermark Text on bottom left corner**
 
 ![todo:image_alt_text](add-watermark-to-pdf_1.jpg)
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 To enable watermark feature for a specific library:
 
-1. Click **Watermark Settings** in the **Aspose Tools** tab in the **Library Tools** dialog. 
+1. Click **Watermark Settings** in the **Aspose Tools** tab in the **Library Tools** dialog.
 
-   **Library tools** 
+   **Library tools**
 
 ![todo:image_alt_text](add-watermark-to-pdf_2.jpg)
 
-Watermark settings are list-specific so you can choose different watermark setting for different libraries. The following screen shot shows the Watermark Settings dialog for the **Shared Documents** library. 
+Watermark settings are list-specific so you can choose different watermark setting for different libraries. The following screen shot shows the Watermark Settings dialog for the **Shared Documents** library.
 
-**Watermark settings** 
+**Watermark settings**
 
 ![todo:image_alt_text](add-watermark-to-pdf_3.jpg)
 
@@ -39,4 +39,4 @@ Watermark settings are list-specific so you can choose different watermark setti
 
 After you enable watermark for a specific library, Aspose.PDF adds watermarks to each PDF document added to that library.
 
-{{% /alert %}} 
+{{% /alert %}}

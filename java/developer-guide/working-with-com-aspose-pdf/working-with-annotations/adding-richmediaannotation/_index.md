@@ -48,11 +48,11 @@ InputStream is = new FileInputStream(myDir+"Videoplayer.swf");
 rma.setCustomPlayer(is);
 
 
-// Give name to video data. This data will be embedded into document 
+// Give name to video data. This data will be embedded into document
 
-// with this name and referenced from flash variables by this name. 
+// with this name and referenced from flash variables by this name.
 
-// videoName should not contain path to the file; this is rather "key" 
+// videoName should not contain path to the file; this is rather "key"
 
 // to access data inside of the PDF document
 
@@ -64,14 +64,14 @@ String videoName = "VideoTutorial.mp4";
 String skinName = "SkinOverAllNoFullNoCaption.swf";
 
 
-//compose flash variables line for player. please note that different players may 
+//compose flash variables line for player. please note that different players may
 
 // have different format of the flash variables line. Refer to documentation for your player.
 
 rma.setCustomFlashVariables(String.format("source=%s&skin=%s", "VideoTutorial.mp4", skinName));
 
 
-//add skin code. 
+//add skin code.
 
 InputStream is2 = new FileInputStream(myDir+"SkinOverAllNoFullNoCaption.swf");
 
@@ -102,9 +102,9 @@ rma.setType(RichMediaAnnotation.ContentType.Video);
 rma.setActivateOn(RichMediaAnnotation.ActivationEvent.Click);
 
 
-//update annotation data. This method should be called after all assignments/setup. 
+//update annotation data. This method should be called after all assignments/setup.
 
-// This method initializes data structure of the annotation and embeds required data. 
+// This method initializes data structure of the annotation and embeds required data.
 
 rma.update();
 

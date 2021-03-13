@@ -6,14 +6,14 @@ url: /jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-Aspose.PDF for JasperReports includes a number of demo projects to help you get started exporting reports to PDF. These demos are based on standard JasperReports demos that have been modified to demonstrate how to use new exporters. This tutorial, goes through the steps required to update the existing JasperReports demos to use Aspose.PDF for JasperReports. 
+Aspose.PDF for JasperReports includes a number of demo projects to help you get started exporting reports to PDF. These demos are based on standard JasperReports demos that have been modified to demonstrate how to use new exporters. This tutorial, goes through the steps required to update the existing JasperReports demos to use Aspose.PDF for JasperReports.
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Updating Demos to use Aspose.PDF**
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The following steps explains how to update existing demos to use Aspose.PDF for JasperReports export extension rather than using JasperReport's standard PDF export feature.
 
@@ -23,13 +23,13 @@ The following steps explains how to update existing demos to use Aspose.PDF for 
 3. Copy **aspose.pdf.jasperreports.jar** from the \lib folder in **Aspose.PDF.JasperReports.zip** to ```<InstallDir>```\jasperreports\lib.
 4. Open ```<InstallDir>```\jasperreports\demo\samples, (where ```<InstallDir>``` is the location you have unpacked JasperReports) to update an existing demo. If you have selected the fonts demo, for example, to use with Aspose.PDF for JasperReports, create a copy of it so that the original demo remains the same. For the purpose of this example, we have named the new folder **fonts.ap**.
 Note: demos will run from ```<InstallDir>``` \jasperreports\demo\samples because the demo build scripts rely on the JasperReports' folder structure. If you change the sample folder, you have to modify build scripts.
-5. Open the **FontsApp.java** file from the src folder and add a reference to Aspose.PDF for JasperReports: 
+5. Open the **FontsApp.java** file from the src folder and add a reference to Aspose.PDF for JasperReports:
    import com.aspose.pdf.jr3_7_0.jasperreports.*;
    (We are using jr3_7_0 because this tutorial was prepared with JasperReports 3.5.2.)
-6. Add a new string: 
+6. Add a new string:
    private static final String TASK_ASPOSE_PDF = "aspose_pdf"; along with existing variables as an export option via Aspose.PDF for JasperReports.
 7. Locate the for else if (TASK_PDF.equals(taskName)) code segment and copy the whole segment.
-8. Paste the code snippet under same segment. 
+8. Paste the code snippet under same segment.
 
 ```
  else if (TASK_PDF.equals(taskName))
@@ -62,7 +62,7 @@ com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter exporter = new
 com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter();
 ```
 9. Open the **build.xml** file.
-10. Make a copy of the following segment and place it inside the same file: 
+10. Make a copy of the following segment and place it inside the same file:
 
 ```
  <target name="pdf" description="Generat PDF via Aspose.PDF for JasperReports.">
@@ -79,10 +79,10 @@ update  name="pdf"  as   name="aspose_pdf"
 update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 ```
 
-11. To run the demo: 
+11. To run the demo:
    -  Download the ANT tool from <http://ant.apache.org/bindownload.cgi>.
    - Unpack the ANT tool and set up environment variables as described in the tool’s manual.
-   -  Change the current directory to <InstallDir>\demo\hsqldb and run the following command line: 
+   -  Change the current directory to <InstallDir>\demo\hsqldb and run the following command line:
       ant runServer
 12. Open a new command prompt instance and change the current directory to <InstallDir>\demo\samples\fonts.ap and run the following commands in the command line:
 13. ant javac – to compile the Java source files of the test application
@@ -91,4 +91,4 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 16. ant aspose_ pdf – to produce a PDF file using Aspose.PDF for JasperReports.
 17. Open the resultant PDF (**FontsReport.pdf**) from the <InstallDir>\demo\samples\ fonts.ap\build\reports\ folder.
 
-{{% /alert %}} 
+{{% /alert %}}

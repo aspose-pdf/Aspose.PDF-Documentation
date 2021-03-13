@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 19.9](https://www.nuget.org/packages/Aspose.Pdf/19.9.0).
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 
@@ -60,7 +60,7 @@ See the list of any changes made to the public API such as added, renamed, remov
 
 ### Added APIs:
 
-- Property Aspose.Pdf.Annotations.FreeTextAnnotation.TextRectangle               
+- Property Aspose.Pdf.Annotations.FreeTextAnnotation.TextRectangle              
 
 - Class Aspose.Pdf.Annotations.ImportDataAction
 

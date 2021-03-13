@@ -6,11 +6,11 @@ url: /cpp/aspose-pdf-for-cpp-19-10-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for Aspose.PDF for C++ 19.10.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 
 Aspose.PDF for C++ 19.10 depends on CodePorting.Native.Cs2Cpp.19.10 (former AsposeCpp library).
@@ -20,16 +20,16 @@ Aspose.PDF for C++ 19.10 depends on CodePorting.Native.Cs2Cpp.19.10 (former Aspo
 - "aspose.pdf.cpp.targets" and "CodePorting.Native.Cs2Cpp.API.targets" files are provided for automatic configuration by usage of Aspose.PDF for C++ and AsposeCpp libraries.
 ### **API Reference changes in Aspose.PDF for C++ 19.10**
 Full API reference is available on [API Reference](https://apireference.aspose.com/cpp/pdf/) Page of Aspose.PDF for C++.
-#### **Added APIs**   
+#### **Added APIs**  
 -  PropertyAspose.Pdf.MhtLoadOptions.PageInfo                                                                
 - Constructor  Aspose.Pdf.Text.TextFragmentAbsorber <p>(System.Text.RegularExpressions.Regex)                                       
-- Constructor  Aspose.Pdf.Text.TextFragmentAbsorber<p>(System.Text.RegularExpressions.Regex,Aspose.Pdf.Text.TextSearchOptions)      
+- Constructor  Aspose.Pdf.Text.TextFragmentAbsorber<p>(System.Text.RegularExpressions.Regex,Aspose.Pdf.Text.TextSearchOptions)     
 - Constructor  Aspose.Pdf.Text.TextFragmentAbsorber<p>(System.Text.RegularExpressions.Regex,Aspose.Pdf.Text.TextEditOptions)    
-- Property SvgSaveOptions.ScaleToPixel   
+- Property SvgSaveOptions.ScaleToPixel  
 - Property Aspose.Pdf.ExcelSaveOptions.ConversionEngine                 
-- Enumeration Aspose.Pdf.ExcelSaveOptions.ConversionEngines   
-- Enumeration member Aspose.Pdf.ExcelSaveOptions.ConversionEngines.LegacyEngine   
-- Enumeration member Aspose.Pdf.ExcelSaveOptions.ConversionEngines.NewEngine   
-- Property Aspose.Pdf.RenderingOptions.OptimizeDimensions   
+- Enumeration Aspose.Pdf.ExcelSaveOptions.ConversionEngines  
+- Enumeration member Aspose.Pdf.ExcelSaveOptions.ConversionEngines.LegacyEngine  
+- Enumeration member Aspose.Pdf.ExcelSaveOptions.ConversionEngines.NewEngine  
+- Property Aspose.Pdf.RenderingOptions.OptimizeDimensions  
 #### **Removed APIs**
 - Property Aspose.Pdf.HtmlLoadOptions.isPdfUaConverting

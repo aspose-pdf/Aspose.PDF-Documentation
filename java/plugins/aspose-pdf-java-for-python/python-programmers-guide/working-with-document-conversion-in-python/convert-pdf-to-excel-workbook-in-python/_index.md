@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 <ins>To convert PDF document to Excel Workbook using **Aspose.PDF Java for Python**, simply invoke **PdfToExcel** module.
 
-**Python Code**
+**Python Code
 ```
 
 doc=self.Document()
@@ -29,7 +29,7 @@ print "Document has been converted successfully"
 ```
 
 
-**Download Running Code**
+**Download Running Code
 
 Download **Convert PDF to Excel Workbook (Aspose.PDF)** from any of the below mentioned social coding sites:
 

@@ -8,7 +8,7 @@ lastmod: "2021-01-15"
 draft: false
 ---
 
-In order to get file specific information of a PDF file, you need to create an object of [PdfFileInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class. After that, you can get values of the individual properties like Subject, Title, Keywords and Creator etc. 
+In order to get file specific information of a PDF file, you need to create an object of [PdfFileInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class. After that, you can get values of the individual properties like Subject, Title, Keywords and Creator etc.
 
 The following code snippet shows you how to get PDF file information.
 ```csharp

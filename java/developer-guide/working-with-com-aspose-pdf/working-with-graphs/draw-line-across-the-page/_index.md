@@ -6,11 +6,11 @@ url: /java/draw-line-across-the-page/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. We can also use line object to draw a cross starting from Left-Bottom to Right-Upper corner and Left-Top corner to Bottom-Right corner.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Please take a look over following code snippet to accomplish this requirement.
 

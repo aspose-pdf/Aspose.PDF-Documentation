@@ -7,11 +7,11 @@ lastmod: "2020-12-16"
 ---
 
 ## <ins>**Add Digital Signature in a PDF File (facades)**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 [**PdfFileSignature**](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileSignature) class allows you to add signature in a PDF file. You need to create an object of [**PdfFileSignature**](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileSignature) class using input and output PDF files. You also need to create a Rectangle object at which you want to add the signature and in order to set appearance you can specify an image using setSignatureAppearance property of the [**PdfFileSignature**](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileSignature) object.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Aspose.Pdf.Facades also provides different kinds of signatures like PKCS#1, PKCS#7, and PKCS#7Detached. In order to create a signature of a specific type, you need to create an object of the particular class like PKCS1 , PKCS7 or PKCS7Detached using the certificate file and the password.
 

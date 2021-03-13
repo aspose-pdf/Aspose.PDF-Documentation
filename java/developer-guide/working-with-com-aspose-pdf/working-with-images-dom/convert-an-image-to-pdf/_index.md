@@ -6,11 +6,11 @@ url: /java/convert-an-image-to-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Images are often used to clarify or illustrate data and are often shared between colleagues. Sharing images in PDF format is a convenient way to ensure that everyone can view them. To this end, Aspose.PDF for Java supports converting images to PDF.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following table shows the image formats that Aspose.PDF can convert to PDF.
 

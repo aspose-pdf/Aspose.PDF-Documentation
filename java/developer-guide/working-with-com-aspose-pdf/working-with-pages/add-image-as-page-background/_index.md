@@ -6,11 +6,11 @@ url: /java/add-image-as-page-background/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Background images can be used to add a watermark, or other subtle design, to documents. In Aspose.PDF for Java, each PDF document is a collection of pages and each page contains a collection of artifacts. The [BackgroundArtifact](https://apireference.aspose.com/java/pdf/com.aspose.pdf/BackgroundArtifact) class can be used to add a background image to a page object.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows how to add a background image to PDF pages using the [BackgroundArtifact](https://apireference.aspose.com/java/pdf/com.aspose.pdf/BackgroundArtifact) object.
 

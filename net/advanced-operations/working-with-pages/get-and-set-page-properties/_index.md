@@ -69,7 +69,7 @@ The following code snippet shows how to get a particular page from a PDF file an
 
 The [Page](https://apireference.aspose.com/net/pdf/aspose.pdf/page) class provides the properties related to a particular page in a PDF document, including what type of colour - RGB, black and white, grayscale or undefined - the page uses.
 
-All the pages of the PDF files are contained by the [PageCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection) collection. The ColorType property specifies the color of elements on page. To get or determine the color information for particular PDF page, use the [Page](https://apireference.aspose.com/net/pdf/aspose.pdf/page) object's [ColorType](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/colortype) property. 
+All the pages of the PDF files are contained by the [PageCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection) collection. The ColorType property specifies the color of elements on page. To get or determine the color information for particular PDF page, use the [Page](https://apireference.aspose.com/net/pdf/aspose.pdf/page) object's [ColorType](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/colortype) property.
 
 The following code snippet shows how to iterate through individual page of PDF file to get color information.
 

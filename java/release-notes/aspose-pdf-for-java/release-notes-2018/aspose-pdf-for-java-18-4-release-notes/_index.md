@@ -6,11 +6,11 @@ url: /java/aspose-pdf-for-java-18-4-release-notes/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for Java 18.4](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf/18.4)
 
-{{% /alert %}} 
+{{% /alert %}}
 ### **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
@@ -26,7 +26,7 @@ Added new methods:
 com.aspose.pdf.**HtmlLoadOptions**.getHtmlMediaType()
 com.aspose.pdf.**HtmlLoadOptions**.setHtmlMediaType(int)
 
-Added new enum class com.aspose.pdf.**HtmlMediaType** 
+Added new enum class com.aspose.pdf.**HtmlMediaType**
 Fields:
 public static final int Print = 0;
 public static final int Screen = 1;

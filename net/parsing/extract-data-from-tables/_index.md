@@ -30,7 +30,7 @@ public static void Extract_Table()
 {
     // Load source PDF document
     var filePath="<... enter path to pdf file here ...>";
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);                        
+    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);                       
     foreach (var page in pdfDocument.Pages)
     {
         Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
@@ -41,14 +41,14 @@ public static void Extract_Table()
             foreach (AbsorbedRow row in table.RowList)
             {
                 foreach (AbsorbedCell cell in row.CellList)
-                {                                  
+                {                                 
                     foreach (TextFragment fragment in cell.TextFragments)
                     {
                         var sb = new StringBuilder();
                         foreach (TextSegment seg in fragment.Segments)
                             sb.Append(seg.Text);
                         Console.Write($"{sb.ToString()}|");
-                    }                            
+                    }                           
                 }
                 Console.WriteLine();
             }
@@ -70,7 +70,7 @@ public static void Extract_Marked_Table()
 {
     // Load source PDF document
     var filePath="<... enter path to pdf file here ...>";
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);   
+    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);  
     var page = pdfDocument.Pages[1];
     var squareAnnotation =
         page.Annotations.FirstOrDefault(ann => ann.AnnotationType == Annotations.AnnotationType.Square)

@@ -3,10 +3,15 @@ title: Plugins
 type: docs
 weight: 30
 url: /java/plugins/
-lastmod: "2020-12-16"
+lastmod: "2021-04-03"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 ---
 
-## **Articles in this section**
+
+## Articles in this section
+
 - [Aspose.PDF Java for Struts 1.3](/pdf/java/aspose-pdf-java-for-struts-1-3/)
 - [Aspose.PDF Java for Ruby](/pdf/java/aspose-pdf-java-for-ruby/)
 - [Aspose.PDF Java for IntelliJ IDEA - Maven](/pdf/java/aspose-pdf-java-for-intellij-idea-maven/)
@@ -15,4 +20,3 @@ lastmod: "2020-12-16"
 - [Aspose.PDF Java for Jython](/pdf/java/aspose-pdf-java-for-jython/)
 - [Aspose.PDF Java for NetBeans - Maven](/pdf/java/aspose-pdf-java-for-netbeans-maven/)
 - [Aspose.PDF Java using Maven for Eclipse](/pdf/java/aspose-pdf-java-using-maven-for-eclipse/)
-

@@ -6,11 +6,11 @@ url: /java/delete-all-attachments-from-pdf/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 As well as [adding attachments](/pdf/java/add-attachment-to-pdf/), Aspose.Cells can remove attachments from PDF files.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 A PDF document's attachments are held in the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's EmbeddedFiles collection.
 

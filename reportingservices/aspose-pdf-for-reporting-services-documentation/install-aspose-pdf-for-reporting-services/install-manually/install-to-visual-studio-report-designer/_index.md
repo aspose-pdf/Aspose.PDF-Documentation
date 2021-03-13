@@ -6,25 +6,25 @@ url: /reportingservices/install-to-visual-studio-report-designer/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 You may want to add Aspose.PDF rendering extension directly to the Visual Studio 2005 or 2008 Report Designer (Business Intelligence Development Studio). This will enable you to export your reports to PDF documents right in design time, without the need to upload the reports to Report Server first.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 **To do so, please follow these steps (applies to** **Visual Studio** **2008):**
 
 {{% alert color="primary" %}}
 **Step 1.** Open the C:\Program Files\Microsoft Visual Studio 8\Common7\IDE\PrivateAssemblies folder.
-{{% /alert %}} 
+{{% /alert %}}
 
 {{% alert color="primary" %}}
 **Step 2.** Copy Aspose.PDF.ReportingServices.dll to that folder.
-{{% /alert %}} 
+{{% /alert %}}
 
 {{% alert color="primary" %}}
 **Step 3.** Register Aspose.PDF for Reporting Services as a rendering extension. To do this, locate RSReportDesigner.config in the folder, open it and add the following lines into the ```<Render>``` element:
-{{% /alert %}} 
+{{% /alert %}}
 
 **Example**
 

@@ -6,11 +6,11 @@ url: /java/delete-all-annotations-from-a-page-of-a-pdf-file/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 As well as adding annotations to a page or PDF document, Aspose.PDF allows you to remove them.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 A [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) object’s AnnotationsCollection collection contains all the annotations for that particular page. To delete all the annotations from a page, call the delete(..) method of the AnnotationCollection collection without passing any argument.
 

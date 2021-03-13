@@ -1,11 +1,11 @@
 ---
 title: Convert PDF File to PDF/A | C#
-linktitle: Convert PDF File to PDF/A 
+linktitle: Convert PDF File to PDF/A
 type: docs
 weight: 180
 url: /net/convert-pdf-file-to-pdfa/
 lastmod: "2021-01-15"
-description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file.  
+description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -21,7 +21,7 @@ Please note we follow Adobe Preflight for validating PDF/A conformance. All tool
 
 Convert the file using the Document class Convert method. Before converting the PDF to PDF/A compliant file, validate the PDF using the Validate method. The validation result is stored in an XML file and then this result is also passed to the Convert method. You can also specify the action for the elements which cannot be converted using the ConvertErrorAction enumeration.
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-pdfa1a](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 
@@ -38,7 +38,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Open document
 Document pdfDocument = new Document(dataDir + "PDFToPDFA.pdf");
-            
+           
 // Convert to PDF/A compliant document
 // During conversion process, the validation is also performed
 pdfDocument.Convert(dataDir + "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
@@ -72,8 +72,8 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b 
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "input.pdf");            
-            
+Document pdfDocument = new Document(dataDir + "input.pdf");           
+           
 pdfDocument.Convert(new MemoryStream(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
 
 dataDir = dataDir + "PDFToPDFA3b_out.pdf";
@@ -81,7 +81,7 @@ dataDir = dataDir + "PDFToPDFA3b_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Convert PDF file to PDF/A-2u 
+## Convert PDF file to PDF/A-2u
 
 Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-2u format.
 

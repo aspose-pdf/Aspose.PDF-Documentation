@@ -6,10 +6,11 @@ url: /java/set-pdf-file-information-in-php/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Set PDF File Information**
+
+## Aspose.PDF - Set PDF File Information
 <ins>To update Pdf document information using **Aspose.PDF Java for PHP**, simply invoke **SetPdfFileInfo** class.
 
-**PHP Code**
+**PHP Code
 ```
 
 # Open a pdf document.
@@ -32,7 +33,8 @@ print "Update document information, please check output file.";
 
 ```
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Set PDF File Information (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetPdfFileInfo.php)

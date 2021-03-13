@@ -37,7 +37,7 @@ namespace Aspose.Pdf.Examples.Advanced
                 // Load the PDF file
                 Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments.pdf"));
 
-                // Create Line Annotation 
+                // Create Line Annotation
                 var lineAnnotation = new LineAnnotation(
                     document.Pages[1],
                     new Rectangle(550, 93, 562, 439),
@@ -51,7 +51,7 @@ namespace Aspose.Pdf.Examples.Advanced
                     Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 124, 1021, 266))
                 };
 
-                // Add annotation to the page 
+                // Add annotation to the page
                 document.Pages[1].Annotations.Add(lineAnnotation);
                 document.Save(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
             }

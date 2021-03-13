@@ -6,19 +6,19 @@ url: /jasperreports/integration-with-jasperserver/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-Integrating Aspose.PDF for JasperReports with JasperServer is described below. 
+Integrating Aspose.PDF for JasperReports with JasperServer is described below.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-In following steps <InstallDir> stands for the JasperServer installation directory. 
+In following steps <InstallDir> stands for the JasperServer installation directory.
 
 {{% alert color="primary" %}}
 
-1. Add the following new exporter properties to the **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file. 
+1. Add the following new exporter properties to the **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ```
  <bean id="AsposePdfExporter" class="com.aspose.pdf.jr3_7_0.jasperreports.AsposeServerPdfExporter" parent="baseReportExporter">
@@ -37,7 +37,7 @@ In following steps <InstallDir> stands for the JasperServer installation directo
 ```
 {{% alert color="primary" %}}
 
-2. Locate the <util:map id=”exporterConfigMap> element in the **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file and add the following lines: 
+2. Locate the <util:map id=”exporterConfigMap> element in the **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file and add the following lines:
 
 {{% /alert %}}
 
@@ -61,10 +61,10 @@ In following steps <InstallDir> stands for the JasperServer installation directo
 
 3. Copy all GIF images from the \lib folder of **Aspose-pdf-jasperreports.zip** to <InstallDir>\apache-tomcat\webapps\jasperserver\images\.
 4. Copy **Aspose-pdf-jasperreports.jar** from the \lib folder in the **Aspose.PDF.JasperReports.zip** to <InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\lib\.
-5. Add the following lines to the **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml** file. 
+5. Add the following lines to the **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml** file.
 
-   This bean may contain various configuration settings intended to configure the export. For example, you can use the JasperReports font mapping feature or specify the location of the Aspose.Cells for JasperReports license file. 
-   
+   This bean may contain various configuration settings intended to configure the export. For example, you can use the JasperReports font mapping feature or specify the location of the Aspose.Cells for JasperReports license file.
+  
 {{% /alert %}}
 
 ```
@@ -75,15 +75,15 @@ In following steps <InstallDir> stands for the JasperServer installation directo
 <property name="licenseFile" value="C:/jasperserver-3.0/apache-tomcat/webapps/
 jasperserver/WEB-INF/Aspose.PDF.JasperReports.lic"/>
 -->
-</bean> 
+</bean>
 
 ```
 {{% alert color="primary" %}}
 
-6. Run JasperServer and open any report to view. If the previous steps were performed properly, you will see an icon for export via Aspose.PDF for JasperReports in the list of available formats. 
+6. Run JasperServer and open any report to view. If the previous steps were performed properly, you will see an icon for export via Aspose.PDF for JasperReports in the list of available formats.
 
-   **Aspose.PDF for JasperReports is integrated** 
+   **Aspose.PDF for JasperReports is integrated**
 
 ![todo:image_alt_text](integration-with-jasperserver_1.png)
 
-{{% /alert %}} 
+{{% /alert %}}

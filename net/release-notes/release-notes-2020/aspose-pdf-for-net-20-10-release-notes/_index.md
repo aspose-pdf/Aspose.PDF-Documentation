@@ -5,7 +5,7 @@ type: docs
 weight: 35
 url: /net/aspose-pdf-for-net-20-10-release-notes/
 lastmod: "2020-12-14"
-description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.10. 
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2020, version 20.10.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -48,9 +48,9 @@ This page contains release notes information for Aspose.PDF for .NET 20.10.
 |PDFNET-46059|Incorrect oultines list when files are concatenated|Bug|
 
 
-## Public API and Backward Incompatible Changes 
+## Public API and Backward Incompatible Changes
 
-### Added APIs 
+### Added APIs
 
 * PropertyAspose.Pdf.Document.DisableFontLicenseVerifications                                
 * Method Aspose.Pdf.Facades.PdfAnnotationEditor.FlatteningAnnotations(Aspose.Pdf.Forms.Form.FlattenSettings)

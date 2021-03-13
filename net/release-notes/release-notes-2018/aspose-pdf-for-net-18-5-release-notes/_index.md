@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 18.5](https://www.nuget.org/packages/Aspose.Pdf/18.5.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 
@@ -59,9 +59,9 @@ This page contains release notes for [Aspose.PDF for .NET 18.5](https://www.nuge
 
 ### Added APIs:
 
-* Method Aspose.Pdf.Rectangle.Contains(Aspose.Pdf.Point)  
-* Method Aspose.Pdf.Rectangle.Center  
-* Method Aspose.Pdf.Document.IDocumentFontUtilities.GetAllFonts  
-* Method Aspose.Pdf.Heading.CloneWithSegments  
-* Enumeration member Aspose.Pdf.ImageFileType.Base64  
-* Property Aspose.Pdf.PdfSaveOptions.DefaultFontName  
+* Method Aspose.Pdf.Rectangle.Contains(Aspose.Pdf.Point) 
+* Method Aspose.Pdf.Rectangle.Center 
+* Method Aspose.Pdf.Document.IDocumentFontUtilities.GetAllFonts 
+* Method Aspose.Pdf.Heading.CloneWithSegments 
+* Enumeration member Aspose.Pdf.ImageFileType.Base64 
+* Property Aspose.Pdf.PdfSaveOptions.DefaultFontName 

@@ -6,10 +6,11 @@ url: /java/get-pdf-file-information-in-php/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Get PDF File Information**
+
+## Aspose.PDF - Get PDF File Information
 <ins>To Get File Information of Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetPdfFileInfo** class.
 
-**PHP Code**
+**PHP Code
 ```
 
 # Open a pdf document.
@@ -28,7 +29,8 @@ print "Title:-" . $doc_info->getTitle();
 
 ```
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Get PDF File Information (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetPdfFileInfo.php)

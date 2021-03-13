@@ -6,11 +6,11 @@ url: /java/get-name-of-images-embedded-in-pdf-file/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Images are stored in each page's [Resources](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Resources) collection's Images collection. If you need to get an image's name, without extracting the image itself, you can do so, provided that each image was given a name when they were added to the PDF.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows how to get names of images embedded inside PDF file.
 

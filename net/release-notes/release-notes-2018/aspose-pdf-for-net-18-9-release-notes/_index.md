@@ -5,17 +5,17 @@ type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-18-9-release-notes/
 lastmod: "2020-12-14"
-description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.9. 
+description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.9.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 18.9](https://www.nuget.org/packages/Aspose.Pdf/18.9.0)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 
@@ -77,11 +77,11 @@ This page contains release notes for [Aspose.PDF for .NET 18.9](https://www.nug
 
 ### Added APIs:
 
-* Property Aspose.Pdf.ExcelSaveOptions.Format                                  
-* Enumeration Aspose.Pdf.ExcelSaveOptions.ExcelFormat                         
-* Enumeration member Aspose.Pdf.ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003     
-* Enumeration member Aspose.Pdf.ExcelSaveOptions.ExcelFormat.XLSX                        
-* Property Aspose.Pdf.HtmlFragment.Rectangle                                   
-* Property Aspose.Pdf.Matrix.Data                                              
+* Property Aspose.Pdf.ExcelSaveOptions.Format                                 
+* Enumeration Aspose.Pdf.ExcelSaveOptions.ExcelFormat                        
+* Enumeration member Aspose.Pdf.ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003    
+* Enumeration member Aspose.Pdf.ExcelSaveOptions.ExcelFormat.XLSX                       
+* Property Aspose.Pdf.HtmlFragment.Rectangle                                  
+* Property Aspose.Pdf.Matrix.Data                                             
 * Enumeration member Aspose.Pdf.Text.TextReplaceOptions.ReplaceAdjustment.ShiftRestOfLine
 * Property Aspose.Pdf.Text.PageMarkup.IsMulticolumnParagraphsAllowed

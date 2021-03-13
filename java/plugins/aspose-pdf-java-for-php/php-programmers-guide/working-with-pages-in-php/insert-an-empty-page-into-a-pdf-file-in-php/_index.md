@@ -6,10 +6,11 @@ url: /java/insert-an-empty-page-into-a-pdf-file-in-php/
 lastmod: "2020-12-16"
 ---
 
-## <ins>**Aspose.PDF - Insert an Empty Page**
+
+## Aspose.PDF - Insert an Empty Page
 <ins>To Insert an Empty Page into a Pdf document using **Aspose.PDF Java for PHP**, simply invoke **InsertEmptyPage** class.
 
-**PHP Code**
+**PHP Code
 ```
 
 # Open the target document
@@ -25,7 +26,8 @@ print "Empty page added successfully!";
 
 ```
 
-## <ins>**Download Running Code**
+
+## Download Running Code
 Download **Insert an Empty Page (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/InsertEmptyPage.php)

@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF .Net 2.4.0.0 New Release](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-.net-2.4.0.0-new-release/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 In this release:1) Aspose.PDF.Fo is merged into Aspose.PDF. The old “Convertor” class is removed.
 

@@ -1,6 +1,6 @@
 ---
 title: Set Privileges,Encrypt and Decrypt PDF File using Aspose.PDF for .NET
-linktitle: Encrypt and Decrypt PDF File 
+linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 20
 url: /net/set-privileges-encrypt-and-decrypt-pdf-file/
@@ -78,11 +78,11 @@ dataDir = dataDir + "Decrypt_out.pdf";
 document.Save(dataDir);
 ```
 
-## Change Password of a PDF File 
+## Change Password of a PDF File
 
 If you want to change the password of a PDF file, you first need to open the PDF file using owner password with the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. After that, you need to call the [ChangePasswords](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. You need to pass the current owner password along with the new user password and new owner password to this method. Finally, save the updated PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)  object.
 
->- The User password, if set, is what you need to provide in order to open a PDF. Acrobat/Reader will prompt a user to enter the user password. If it’s not correct, the document will not open. 
+>- The User password, if set, is what you need to provide in order to open a PDF. Acrobat/Reader will prompt a user to enter the user password. If it’s not correct, the document will not open.
 >- The Owner password, if set, controls permissions, such as printing, editing, extracting, commenting, etc. Acrobat/Reader will disallow these things based on the permission settings. Acrobat will require this password if you want to set/change permissions.
 
 The following code snippet shows you how to change the password of a PDF file.

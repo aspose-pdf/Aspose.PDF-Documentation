@@ -6,28 +6,28 @@ url: /reportingservices/xmp-metadata/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 The RS designer does not support embedding XMP data. Aspose.PDF for Reporting Services provides four parameters for setting XMP Metadata, listed below.
 
-{{% /alert %}} 
+{{% /alert %}}
 
-{{% alert color="primary" %}} 
-**Parameter Name**: CreationDate   
-**Date Type**: String   
-**Values supported**:   
+{{% alert color="primary" %}}
+**Parameter Name**: CreationDate  
+**Date Type**: String  
+**Values supported**:  
 
-**Parameter Name**: ModifyDate   
-**Date Type**: String   
-**Values supported**:   
+**Parameter Name**: ModifyDate  
+**Date Type**: String  
+**Values supported**:  
 
-**Parameter Name**: MetaDataDate   
-**Date Type**: String   
-**Values supported**:   
+**Parameter Name**: MetaDataDate  
+**Date Type**: String  
+**Values supported**:  
 
-**Parameter Name**: CreatorTool   
-**Date Type**: String   
-**Values supported**:   
+**Parameter Name**: CreatorTool  
+**Date Type**: String  
+**Values supported**:  
 
 **Example**
 {{< highlight csharp >}}
@@ -45,10 +45,10 @@ The RS designer does not support embedding XMP data. Aspose.PDF for Reporting Se
 
 {{< /highlight >}}
 
-{{% /alert %}} 
+{{% /alert %}}
 
 
 ## **PDF Creator information**
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 - Please note that you cannot set values against the **Application** and **Producer** fields, because Aspose Ltd. and Aspose.PDF for Reporting Services x.x.x will be displayed against these fields. 
-{{% /alert %}} 
+{{% /alert %}}

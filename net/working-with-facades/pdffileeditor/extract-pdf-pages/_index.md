@@ -18,7 +18,7 @@ draft: false
 
 ## Extract Array of PDF Pages Using File Paths
 
-If you do not want to extract a range of pages, rather a set of particular pages, [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method allows you to do that as well. You first need to create an integer array with all the page numbers which need to be extracted. This overload of [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method takes following parameters: input PDF file, integer array of pages to be extracted, and output PDF file. The following code snippet shows you how to extract PDF pages using file paths. 
+If you do not want to extract a range of pages, rather a set of particular pages, [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method allows you to do that as well. You first need to create an integer array with all the page numbers which need to be extracted. This overload of [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method takes following parameters: input PDF file, integer array of pages to be extracted, and output PDF file. The following code snippet shows you how to extract PDF pages using file paths.
 
 
 
@@ -34,8 +34,8 @@ If you do not want to extract a range of pages, rather a set of particular pages
 
 ## Extract Array of PDF Pages Using Streams
 
-An array of pages can be extracted from the PDF stream and saved in the output stream using appropriate overload of [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method. If you do not want to extract a range of pages, rather a set of particular pages, [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method allows you to do that as well. You first need to create an integer array with all the page numbers which need to be extracted. This overload of [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method takes following parameters: input stream, integer array of pages to be extracted and output stream. 
-The following code snippet shows you how to extract PDF pages using streams. 
+An array of pages can be extracted from the PDF stream and saved in the output stream using appropriate overload of [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method. If you do not want to extract a range of pages, rather a set of particular pages, [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method allows you to do that as well. You first need to create an integer array with all the page numbers which need to be extracted. This overload of [Extract](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) method takes following parameters: input stream, integer array of pages to be extracted and output stream.
+The following code snippet shows you how to extract PDF pages using streams.
 
 
 

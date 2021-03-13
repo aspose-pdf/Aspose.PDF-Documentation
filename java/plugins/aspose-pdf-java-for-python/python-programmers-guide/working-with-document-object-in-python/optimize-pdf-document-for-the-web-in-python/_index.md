@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 <ins>To optimize PDF document for the web using **Aspose.PDF Java for Python**, simply invoke **optimize_web** method of  **Optimize** class.
 
-**Python Code**
+**Python Code
 ```
 
 doc= self.Document()
@@ -25,7 +25,7 @@ print "Optimized PDF for the Web, please check output file."
 ```
 
 
-**Download Running Code**
+**Download Running Code
 
 Download **Optimize PDF for Web (Aspose.PDF)** from any of the below mentioned social coding sites:
 

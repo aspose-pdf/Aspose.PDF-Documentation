@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 ## **Knowledge Base**
 
-###### **This section includes the following topics:** 
+###### **This section includes the following topics:**
 - [API Limitations](/pdf/java/api-limitations/)
 - [Known Issues in Aspose.PDF for Android via Java](/pdf/java/known-issues-in-aspose-pdf-for-android-via-java/)
 - [Technical Articles](/pdf/java/technical-articles/)

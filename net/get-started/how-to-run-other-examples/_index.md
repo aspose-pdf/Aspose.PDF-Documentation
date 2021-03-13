@@ -3,7 +3,7 @@ title: How to run other Aspose.PDF for .NET examples
 linktitle: How to run other examples
 type: docs
 weight: 40
-url: /net/how-to-run-other-examples/     
+url: /net/how-to-run-other-examples/    
 description: This page demonstrates guidelines that will be helpful the following requirements before downloading and running the examples.
 aliases:
     - /net/how-to-run-the-examples/

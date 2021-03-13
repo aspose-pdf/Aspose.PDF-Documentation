@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .Net 3.8.0.0 New Release](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-3.8.0.0-new-release/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Introduction
 
@@ -30,8 +30,8 @@ What's New?
 What's Fixed?
 
 - 5593 - Support root operator (~) in ImageInfo.File
-  4992 - Multiple text issues 
-  5357 - Page number issue 
-  5070 - IsTrueTypeFontItalic not works  
-  5504 - High memory consumption when adding images as stream 
+  4992 - Multiple text issues
+  5357 - Page number issue
+  5070 - IsTrueTypeFontItalic not works 
+  5504 - High memory consumption when adding images as stream
   5343 - Problem with HTML table alignment in PDF

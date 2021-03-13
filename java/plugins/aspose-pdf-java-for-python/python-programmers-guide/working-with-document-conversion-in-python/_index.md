@@ -6,7 +6,7 @@ url: /java/working-with-document-conversion-in-python/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:**
+<h2>This section includes the following topics:</h2>
 
 - [Convert PDF to DOC or DOCX format in Python](/pdf/java/convert-pdf-to-doc-or-docx-format-in-python/)
 - [Convert PDF to Excel Workbook in Python](/pdf/java/convert-pdf-to-excel-workbook-in-python/)

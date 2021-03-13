@@ -6,11 +6,11 @@ url: /java/how-to-add-drawing-with-transparent-color/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 While creating drawing objects such as Rectangle, Circle, Eclipse etc, we provide color information for border as well as fill color information. In order to have transparent fill impression, the [FromArgb(..)](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Color#fromArgb-int-int-int-) method with alpha channel parameter of com.aspose.pdf.[Color](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Color) object can be used.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 Please take a look over following code snippet which demonstrates the feature to fill rectangle object with transparent color. Please try using following code snippet to accomplish this requirement.
 

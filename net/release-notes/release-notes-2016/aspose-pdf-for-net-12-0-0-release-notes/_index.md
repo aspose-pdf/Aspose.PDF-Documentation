@@ -1,6 +1,6 @@
 ---
-title: Aspose.PDF for .NET 12.0.0 
-linktitle: Aspose.PDF for .NET 12.0.0 
+title: Aspose.PDF for .NET 12.0.0
+linktitle: Aspose.PDF for .NET 12.0.0
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-12-0-0-release-notes/
@@ -51,30 +51,30 @@ sitemap:
 |PDFNEWNET-40772|EPUB to PDF conversion throws the operation not supported error|Bug|
 ### **Public API changes**
 ### **Added APIs:**
-- MethodAspose.PDF.Annotations.AnnotationSelector.Visit(Aspose.PDF.Annotations.WatermarkAnnotation)  
-- Class Aspose.PDF.Annotations.FixedPrint  
-- Property Aspose.PDF.Annotations.FixedPrint.Matrix  
-- Property Aspose.PDF.Annotations.FixedPrint.HorizontalTranslation  
-- Property Aspose.PDF.Annotations.FixedPrint.VerticalTranslation  
-- Class Aspose.PDF.Annotations.WatermarkAnnotation  
-- ConstructorAspose.PDF.Annotations.WatermarkAnnotation.#ctor(Aspose.PDF.Page,Aspose.PDF.Rectangle)  
-- Property Aspose.PDF.Annotations.WatermarkAnnotation.FixedPrint  
-- Property Aspose.PDF.Annotations.WatermarkAnnotation.AnnotationType  
-- MethodAspose.PDF.Annotations.WatermarkAnnotation.SetText  (Aspose.PDF.Facades.FormattedText)  
-- MethodAspose.PDF.Annotations.WatermarkAnnotation.SetTextAndState(System.String[],Aspose.PDF.Text.TextState)  
-- MethodAspose.PDF.Annotations.WatermarkAnnotation.Accept(Aspose.PDF.Annotations.AnnotationSelector)  
-- Property Aspose.PDF.Artifact.IsBackground  
-- MethodAspose.PDF.Artifact.SetTextAndState  (System.String,Aspose.PDF.Text.TextState)  
-- MethodAspose.PDF.Artifact.SetLinesAndState(System.String[],Aspose.PDF.Text.TextState)  
-- Property Aspose.PDF.Color.PatternColorSpace  
-- Class Aspose.PDF.Drawing.GradientAxialShading  
-- Constructor Aspose.PDF.Drawing.GradientAxialShading.#ctor  
-- Constructor Aspose.PDF.Drawing.GradientAxialShading.#ctor  (Aspose.PDF.Color,Aspose.PDF.Color)  
-- Property Aspose.PDF.Drawing.GradientAxialShading.Start  
-- Property Aspose.PDF.Drawing.GradientAxialShading.End  
-- Property Aspose.PDF.Drawing.GradientAxialShading.StartColor  
-- Property Aspose.PDF.Drawing.GradientAxialShading.EndColor  
-- Class Aspose.PDF.Drawing.PatternColorSpace  
-- Constructor Aspose.PDF.Drawing.PatternColorSpace.#ctor  
-- Class Aspose.PDF.Engine.CommonData.Text.CMaps.IncorrectCMapUsageException  
-- Method Aspose.PDF.Rectangle.IsIntersect(Aspose.PDF.Rectangle)  
+- MethodAspose.PDF.Annotations.AnnotationSelector.Visit(Aspose.PDF.Annotations.WatermarkAnnotation) 
+- Class Aspose.PDF.Annotations.FixedPrint 
+- Property Aspose.PDF.Annotations.FixedPrint.Matrix 
+- Property Aspose.PDF.Annotations.FixedPrint.HorizontalTranslation 
+- Property Aspose.PDF.Annotations.FixedPrint.VerticalTranslation 
+- Class Aspose.PDF.Annotations.WatermarkAnnotation 
+- ConstructorAspose.PDF.Annotations.WatermarkAnnotation.#ctor(Aspose.PDF.Page,Aspose.PDF.Rectangle) 
+- Property Aspose.PDF.Annotations.WatermarkAnnotation.FixedPrint 
+- Property Aspose.PDF.Annotations.WatermarkAnnotation.AnnotationType 
+- MethodAspose.PDF.Annotations.WatermarkAnnotation.SetText  (Aspose.PDF.Facades.FormattedText) 
+- MethodAspose.PDF.Annotations.WatermarkAnnotation.SetTextAndState(System.String[],Aspose.PDF.Text.TextState) 
+- MethodAspose.PDF.Annotations.WatermarkAnnotation.Accept(Aspose.PDF.Annotations.AnnotationSelector) 
+- Property Aspose.PDF.Artifact.IsBackground 
+- MethodAspose.PDF.Artifact.SetTextAndState  (System.String,Aspose.PDF.Text.TextState) 
+- MethodAspose.PDF.Artifact.SetLinesAndState(System.String[],Aspose.PDF.Text.TextState) 
+- Property Aspose.PDF.Color.PatternColorSpace 
+- Class Aspose.PDF.Drawing.GradientAxialShading 
+- Constructor Aspose.PDF.Drawing.GradientAxialShading.#ctor 
+- Constructor Aspose.PDF.Drawing.GradientAxialShading.#ctor  (Aspose.PDF.Color,Aspose.PDF.Color) 
+- Property Aspose.PDF.Drawing.GradientAxialShading.Start 
+- Property Aspose.PDF.Drawing.GradientAxialShading.End 
+- Property Aspose.PDF.Drawing.GradientAxialShading.StartColor 
+- Property Aspose.PDF.Drawing.GradientAxialShading.EndColor 
+- Class Aspose.PDF.Drawing.PatternColorSpace 
+- Constructor Aspose.PDF.Drawing.PatternColorSpace.#ctor 
+- Class Aspose.PDF.Engine.CommonData.Text.CMaps.IncorrectCMapUsageException 
+- Method Aspose.PDF.Rectangle.IsIntersect(Aspose.PDF.Rectangle) 

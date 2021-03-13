@@ -10,20 +10,20 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes for [Aspose.PDF for .NET 6.1.0](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-6.1.0/)
 
-{{% /alert %}} 
+{{% /alert %}}
 
-We are pleased to announce the release of second version of merged Aspose.PDF for .NET. Some of the critical/demanding issues reported earlier have been fixed in this release.Features 
+We are pleased to announce the release of second version of merged Aspose.PDF for .NET. Some of the critical/demanding issues reported earlier have been fixed in this release.Features
 
 - 27897 - Pdf to Pdf/A font conversion
 - 28592 - Implement EMFDevice
 - 28827 - Concatenate method adds a suffix to the same name fields
 - 29185 - Implement Separation to RGB color conversion
 - 29186 - Implement Lab to RGB color conversion
-  Enhancements 
+  Enhancements
 - 28461 - PdfViewer: Implement Masked Images
 - 28837 - PdfViewer: Imaging: Implement filter chain support
 - 25165 - PdfViewer: Implement transparency groups
@@ -34,10 +34,10 @@ We are pleased to announce the release of second version of merged Aspose.PDF fo
 - 28869 - Improve the algorithm of linearization
 - 29485 - PdfViewer: implement SMask feature
 - 29557 - Implement PageNumber check in PdfFileStamp
-  Performance 
+  Performance
 - 29504 - Performance is too slow while filling form fields
 - 29456 - Improve performance of Form.FillField and Form.FlattenField
-  Exceptions 
+  Exceptions
 - 29112 - JpegDevice.Process throws ArgumentException: parameter is not valid
 - 29283 - NullReferenceException is occurring when adding PDF as watermark stamp
 - 29307 - License class throws exception while loading license as embedded resource
@@ -46,7 +46,7 @@ We are pleased to announce the release of second version of merged Aspose.PDF fo
 - 29434 - ArgumentNullException when converting PDF to PDF/A-1B
 - 29444 - Exception thrown when field is not found on the form
 - 29502 - NullReferenceException is occurring while extracting text from PDF
-  Bugs 
+  Bugs
 - 21137 - PDF/A compliance is lost on setting meta info
 - 29085 - PDF to JPG Conversion: Inset images show black background
 - 29225 - Field caption is incorrectly read

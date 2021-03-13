@@ -6,7 +6,7 @@ url: /java/when-to-apply-a-license/
 lastmod: "2020-12-16"
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Follow these simple rules:
 
@@ -15,6 +15,6 @@ Follow these simple rules:
 
 Calling License.SetLicense multiple times is not harmful, but wastes processor time.
 
-If you are developing a class library, call License.SetLicense from a static constructor that uses Aspose.PDF. The static constructor execute before an instance of your class is created, making sure Aspose.PDF license is applied properly. 
+If you are developing a class library, call License.SetLicense from a static constructor that uses Aspose.PDF. The static constructor execute before an instance of your class is created, making sure Aspose.PDF license is applied properly.
 
 {{% /alert %}}

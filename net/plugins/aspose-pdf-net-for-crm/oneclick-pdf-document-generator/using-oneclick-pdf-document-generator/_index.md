@@ -13,12 +13,12 @@ sitemap:
 ## Create Template and Add in CRM
 
 - Open word and create a template.
-- Insert MailMerge fields for data comming from CRM. 
+- Insert MailMerge fields for data comming from CRM.
 
 ![Insert MailMerg fields](using-oneclick-pdf-document-generator_1.png)
 
 - Make sure that the Field name matches exactly with the CRM field.
-- Templates are specific to use with individual entity. 
+- Templates are specific to use with individual entity.
 
 ![Demo Template](using-oneclick-pdf-document-generator_2.png)
 

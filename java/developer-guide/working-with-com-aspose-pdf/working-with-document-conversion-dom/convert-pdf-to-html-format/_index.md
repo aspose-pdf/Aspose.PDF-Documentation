@@ -21,7 +21,7 @@ The default output format for saving images when converting from PDF to HTML is 
 
 In order to completely remove the rendering of images as SVG format when converting PDF files to HTML format, please try using the following code snippet.
 
-**Public API Changes** 
+**Public API Changes**
 Aspose.PDF for Java has a new member of the [HtmlSaveOptions](https://apireference.aspose.com/java/pdf/com.aspose.pdf/HtmlSaveOptions).RasterImagesSavingModes enumeration:
 [HtmlSaveOptions](https://apireference.aspose.com/java/pdf/com.aspose.pdf/HtmlSaveOptions).RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground
 It allows you to completely avoid converting images to SVG in output HTML files.
