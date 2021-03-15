@@ -12,7 +12,7 @@ This page contains release notes for [Aspose.PDF for Java 18.11](https://reposi
 
 {{% /alert %}}
 
-### **Features and Improvements**
+### Features and Improvements
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -57,7 +57,7 @@ com.aspose.pdf.Document.OptimizationOptions.setRemovePrivateInfo(boolean)
 Please use Aspose.Pdf.Optimization.OptimizationOptions instead.
 
 Added new class:
-com.aspose.pdf.optimization.**ImageCompressionOptions** 
+com.aspose.pdf.optimization.**ImageCompressionOptions**
 com.aspose.pdf.optimization.ImageCompressionOptions.getCompressImages()
 com.aspose.pdf.optimization.ImageCompressionOptions.setCompressImages(boolean)
 com.aspose.pdf.optimization.ImageCompressionOptions.getResizeImages()
