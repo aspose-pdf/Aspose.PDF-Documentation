@@ -11,8 +11,10 @@ sitemap:
     priority: 0.7
 ---
 
-**Aspose.PDF for Java** lets you insert a page to a PDF document at any location in the file as well as add pages to the end of a PDF file. This section shows how to add pages to a PDF without Acrobat Reader.
-You can add text or images in the headers and footers of your PDF file, and choose different headers in your document with Java library by Aspose.
+**Aspose.PDF for Java** lets you insert a page to a PDF document at any location in the file, add pages to the end of a PDF file, and delete pages from your document. This section shows how to add pages to a PDF without Acrobat Reader.
+You can add text or images in the headers and footers of your PDF file, and choose different headers in your document with Java library by Aspose. 
+You can change the page orientation of pages in an existing PDF file with Java library. Aspose.PDF allows you to change and get  PDF page size with code snippet.
+
 Also, try to crop pages in PDF document programmatically using Java.
 
 This section learn you how to add watermarks in your PDF file using Artifact class. You will check the programming sample for this task. 
@@ -22,6 +24,7 @@ You are able to do the following:
 
 - [Add Pages](/pdf/java/add-pages/) - add pages at desired location or to the end of a PDF file and delete a page from you document.
 - [Move Pages](/pdf/java/move-pages/) - move pages from one document to another.
+- [Get and Set Page Properties](/pdf/java/get-and-set-page-properties/) - you can learn how to get numbers in PDF file, get page properties and determine page color.
 - [Delete Pages](/pdf/java/delete-pages/) - delete page from your PDF file using PageCollection collection.
 - [Change Page size](/pdf/java/change-page-size) - you can change PDF page size with code snippet using Aspose.PDF library.
 - [Rotate Pages](/pdf/java/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
