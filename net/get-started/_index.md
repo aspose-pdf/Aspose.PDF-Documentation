@@ -22,7 +22,7 @@ However, it is not enough just to open your document. In working with PDF, you w
 
 ## Why use Aspose.PDF for .NET?
 
-Using Aspose.HTML for .NET in your project gives you the following profits:
+Using Aspose.PDF for .NET in your project gives you the following profits:
 
 - wide variety of functions
 - written completely in C# and works with .NET Framework
