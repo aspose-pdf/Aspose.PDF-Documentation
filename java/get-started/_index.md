@@ -33,6 +33,8 @@ for Java in your project gives you the following profits:
 - wide variety of functions
 - surely works with Java Oracle JDK
 - convenience and ease of use
+- API Reference in JavaDoc format
+- Supports all Java applications
 
 Aspose.PDF for Java can be integrated with any application, for example a JSP/JSF web application or a Windows application.
 

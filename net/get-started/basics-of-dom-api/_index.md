@@ -42,20 +42,17 @@ The Document object is at the root level of the object model. The Aspose.PDF for
 
 ## How to Use New Aspose.PDF for .NET API
 
-This topic will explain the new Aspose.PDF for .NET API and guide you to get started quickly and easily. Please note that the details regarding the use of the particular features are not the part of this article. You will find details, examples and code snippets in the Developer Guide and Technical Articles sections.
+This topic will explain the new Aspose.PDF for .NET API and guide you to get started quickly and easily. Please note that the details regarding the use of the particular features are not the part of this article. 
 
-The new Aspose.PDF for .NET is composed of three parts:
+The Aspose.PDF for .NET is composed of two parts:
 
 - Aspose.PDF for .NET DOM API
-- Aspose.PDF.Generator (old Aspose.PDF for .NET pre-6.x)
 - Aspose.PDF.Facades (old Aspose.PDF.Kit for .NET)
 You'll find the details of each of these areas below.
 
 ### Aspose.PDF for .NET DOM API
 
-The new API of Aspose.PDF for .NET is DOM based. You can find more details about the DOM API and PDF document structure in the article Introduction to DOM API. In this section, we'll elaborate the use of the new DOM API.
-
-The new Aspose.PDF for .NET DOM API corresponds to the PDF document structure, which helps you to work with the PDF documents not only at the file and document level, but also at the object level. We have provided more flexibility to the developers to access all of the elements and objects of the PDF document. Using the Aspose.PDF DOM API's classes, you can gain programmatic access to document elements and formatting. This new DOM API is comprised of various namespaces as given below:
+The Aspose.PDF for .NET DOM API corresponds to the PDF document structure, which helps you to work with the PDF documents not only at the file and document level, but also at the object level. We have provided more flexibility to the developers to access all of the elements and objects of the PDF document. Using the Aspose.PDF DOM API's classes, you can gain programmatic access to document elements and formatting. This new DOM API is comprised of various namespaces as given below:
 
 ### Aspose.PDF
 
@@ -84,12 +81,6 @@ This namespace contains classes that help you work with PDF forms and form field
 #### Aspose.PDF.Devices
 
 We can perform various operations on the PDF documents such as converting PDF document to various image formats. However, such operations do not belong to the Document object and we cannot extend the Document class for such operations. That's why we have introduced the concept of the Device in the new DOM API.
-
-#### Aspose.PDF.Generator
-
-The old Aspose.PDF for.NET (pre-6.0) provided the features to create new PDF file from scratch. As we have merged old Aspose.PDF and Aspose.PDF.Kit, all the classes previously available in old Aspose.PDF for .NET have been moved under the Aspose.PDF.Generator namespace. So, if you want to execute the old Aspose.PDF code using the new product, use this namespace.
-
-This namespace is obsolete and starting Aspose.PDF for .NET 17.5, it is removed from API.
 
 ##### Aspose.PDF.Facades
 
