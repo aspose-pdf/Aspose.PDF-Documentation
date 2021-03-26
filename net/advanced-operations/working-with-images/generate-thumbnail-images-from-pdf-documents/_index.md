@@ -1,5 +1,6 @@
 ---
 title: Generate Thumbnail Images from PDF Documents
+linktitle: Generate Thumbnail Images
 type: docs
 weight: 110
 url: /net/generate-thumbnail-images-from-pdf-documents/
@@ -17,7 +18,7 @@ Using the Acrobat SDK, you can develop software that integrates with Acrobat and
 - **Plug-ins** — Create plug-ins that are dynamically linked to and extend the functionality of Acrobat or Adobe Reader.
 - **Interapplication communication** — Write a separate application process that uses interapplication communication (IAC) to control Acrobat functionality. DDE and OLE are supported on Microsoft® Windows®, and Apple events/AppleScript on Mac OS®. IAC is not available on UNIX®.
 
-Aspose.PDF for .NET provides a lot of the same functionality, freeing you from dependence on Adobe Acrobat Automation. This article shows how to generate thumbnail images from PDF documents using first the [Acrobat SDK](/pdf/net/generate-thumbnail-images-from-pdf-documents/) and then Aspose.PDF.
+Aspose.PDF for .NET provides a lot of the same functionality, freeing you from dependence on Adobe Acrobat Automation. This article shows how to generate thumbnail images from PDF documents using first the Acrobat SDK and then Aspose.PDF.
 
 {{% /alert %}}
 
