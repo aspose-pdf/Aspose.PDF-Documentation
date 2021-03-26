@@ -21,6 +21,5 @@ You are able to do the following:
 
 - [Create or Add Table in existing PDF Document](/pdf/java/add-table-in-existing-pdf-document/) - create your table in pdf file with merging the columns or rows сonsidering borders, margins, and padding.
 - [Extract a Table from existing PDF Document](/pdf/java/extract-table-from-existing-pdf-document/) - you can extract table from PDF file or extract table border as Image.
-- [Integrate Table with Data Sources](/pdf/java/integrate-table/) - integrate table with Database, integrate table with the Entity Framework source using Java library.
 - [Manipulate Tables in existing PDF](/pdf/java/manipulate-tables-in-existing-pdf/) - manipulate tables in your PDF using TableAbsorber.
 - [Remove Tables from existing PDF](/pdf/java/remove-tables-from-existing-pdf/) - remove table or multiple tables from PDF document.
