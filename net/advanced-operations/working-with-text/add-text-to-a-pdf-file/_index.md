@@ -510,7 +510,7 @@ A text can be added inside paragraphs collection of PDF files using TextFragment
 
 The following approaches show the steps to specify character spacing when adding text inside a PDF document.
 
-## Using TextBuilder and TextFragment
+### Using TextBuilder and TextFragment
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -537,7 +537,7 @@ dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Using TextParagraph and TextParagraph
+### Using TextParagraph
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -568,7 +568,7 @@ dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Using TextStamp
+### Using TextStamp
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
