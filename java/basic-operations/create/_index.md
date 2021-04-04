@@ -1,6 +1,6 @@
 ---
-title: Create Document 
-linktitle: Create Document
+title: Create PDF Document using Java
+linktitle: Create
 type: docs
 weight: 10
 url: /java/create-document/

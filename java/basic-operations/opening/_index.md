@@ -1,12 +1,10 @@
 ---
-title: Open PDF document programmatically
+title: Open PDF Document using Java
 linktitle: Open
 type: docs
 weight: 20
 url: /java/open-pdf-document/
 description: Learn how to open a PDF file with Aspose.PDF for Java.
-aliases:
-    - /java/opening-a-pdf-document/
 lastmod: "2021-02-02"
 sitemap:
     changefreq: "weekly"
