@@ -77,8 +77,8 @@ Aspose.PDF for Java allows you to add a link to an external PDF file so that you
 The following code snippet shows how to create PDF document link in a PDF file.
 
  ```java
-public static void CreatePDFDocumentLink() {
-        
+	public static void CreatePDFDocumentLink() {
+
         // Open document                
         Document document = new Document(_dataDir + "CreateDocumentLink.pdf");
 
