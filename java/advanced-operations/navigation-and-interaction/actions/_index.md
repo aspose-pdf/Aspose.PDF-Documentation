@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+A PDF file can contain embedded file attachments and it is often necessary to Hyperlink to these documents. You may direct readers from the main PDF document to a PDF attachment by creating a link in the parent document that points to the attachment.
+
 ## Add Hyperlink in PDF File
 
 It is possible to add hyperlinks to PDF files, either to allow readers to navigate to another part of the PDF, or to external content.
@@ -87,7 +89,7 @@ public class ExampleActions {
 
 ## Create Hyperlink to pages in same PDF
 
-Aspose.PDF for Java provides a great feature to PDF creation as well as its manipulation. It also offers the feature to add links to PDF pages and a link can either direct to pages in another PDF file, a web URL, link to launch an Application or even link to pages in same PDF file. 
+Aspose.PDF for Java provides a great feature to PDF creation as well as its manipulation. It also offers the feature to add links to PDF pages and a link can either direct to pages in another PDF file, a web URL, link to launch an Application or even link to pages in same PDF file.
 
 In order to add the local hyperlink, we need to create a TextFragment so that link can be associated with the TextFragment. The [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) class has a method named [getHyperlink](https://apireference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#getHyperlink--) which is used to associate LocalHyperlink instance. The following code snippet shows the steps to accomplish this requirement.
 
