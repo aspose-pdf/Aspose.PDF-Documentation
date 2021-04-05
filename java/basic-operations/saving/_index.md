@@ -1,12 +1,10 @@
 ---
-title: Save PDF document programmatically
+title: Save PDF Document using Java
 linktitle: Save 
 type: docs
 weight: 30
 url: /java/save-pdf-document/
 description: Learn how to save PDF file with Aspose.PDF for Java library. 
-aliases:
-    - /java/saving/
 lastmod: "2021-02-03"
 sitemap:
     changefreq: "weekly"
