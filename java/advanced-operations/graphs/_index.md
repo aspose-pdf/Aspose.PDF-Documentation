@@ -30,7 +30,4 @@ The following types of shapes are supported by the [Graph](https://apireference.
 
 The above details are also depicted in the figures below:
 
-<figure>
-<img src="OZ8BReG.png" alt="Figure: Graph Hierarchy">
-<figcaption>Graph Hierarchy</figcaption>
-</figure>
+![Figures in Graphs](OZ8BReG.png)
