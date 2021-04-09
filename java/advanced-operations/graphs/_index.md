@@ -26,7 +26,7 @@ The following types of shapes are supported by the [Graph](https://apireference.
 - [Curve](/pdf/java/add-curve/) - is a connected union of projective lines, each line meeting three others in ordinary double points.
 - [Line](/pdf/java/add-line) - line graphs are used to display continuous data and can be useful in predicting future events when they show trends over time.
 - [Rectangle](/pdf/java/add-rectangle/) - is one of the many fundamental shapes you'll see in graphs, its can be very useful in helping you solve a problem.
-- [Ellipse](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Ellipse) - is a set of points on a plane, creating an oval, curved shape.
+- [Ellipse](/pdf/java/add-ellipse/) - is a set of points on a plane, creating an oval, curved shape.
 
 The above details are also depicted in the figures below:
 
