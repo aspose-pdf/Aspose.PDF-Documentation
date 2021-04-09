@@ -13,6 +13,10 @@ sitemap:
 
 A graph [Curve](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Curve) is a connected union of projective lines, each line meeting three others in ordinary double points.
 
+Aspose.PDF for Java shows how to use Bézier curves in your Graphs.
+Bézier curves are widely used in computer graphics to model smooth curves. The curve is completely contained in the convex hull of its control points, the points may be graphically displayed and used to manipulate the curve intuitively.
+The entire curve is contained in the quadrilateral whose corners are the four given points (their convex hull).
+
 In this article, we will investigate  simply graph curves, and filled curves, that you can create in your PDF document.
 
 Follow the steps below:
