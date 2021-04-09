@@ -57,6 +57,8 @@ The following picture shows the result executed with our code snippet:
 
 ![Drawing Curve](drawing_curve.png)
 
+## Create Filled Curve Object
+
 This example shows how to add a Curve object that is filled with color.
 
 ```java

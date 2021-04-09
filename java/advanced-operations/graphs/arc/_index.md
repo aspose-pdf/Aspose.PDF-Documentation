@@ -61,6 +61,8 @@ The following code snippet shows how to add a [Arc](https://apireference.aspose.
     }
 ```
 
+## Create Filled Arc Object
+
 Next example shows how to add a Arc object that is filled with color and certain dimensions.
 
 ```java

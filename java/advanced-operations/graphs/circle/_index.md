@@ -55,6 +55,8 @@ Our drawn circle will look like this:
 
 ![Drawing Circle](drawing_circle.png)
 
+## Create Filled Circle Object
+
 This example shows how to add a Circle object that is filled with color.
 
 ```java
