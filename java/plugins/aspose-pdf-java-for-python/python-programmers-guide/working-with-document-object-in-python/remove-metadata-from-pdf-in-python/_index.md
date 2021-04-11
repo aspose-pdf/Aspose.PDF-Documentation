@@ -6,10 +6,9 @@ url: /java/remove-metadata-from-pdf-in-python/
 lastmod: "2020-12-16"
 ---
 
-<ins>To remove Metadata from Pdf document using **Aspose.PDF Java for Python**, simply invoke **RemoveMetadata** class.
+To remove Metadata from Pdf document using **Aspose.PDF Java for Python**, simply invoke **RemoveMetadata** class.
 
-**Python Code
-```
+```python
 
 doc= self.Document()
 pdf = self.Document()
@@ -27,9 +26,8 @@ doc.getMetadata().removeItem("dc:format")
 doc.save(self.dataDir + "Remove_Metadata.pdf")
 
 print "Removed metadata successfully, please check output file."
+
 ```
-
-
 **Download Running Code
 
 Download **Remove Metadata (Aspose.PDF)** from any of the below mentioned social coding sites:

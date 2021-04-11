@@ -6,11 +6,9 @@ url: /java/concatenate-pdf-files-in-python/
 lastmod: "2020-12-16"
 ---
 
-<ins>To concatenate PDF files using **Aspose.PDF Java for Python**, simply invoke **ConcatenatePdfFiles** class.
+To concatenate PDF files using **Aspose.PDF Java for Python**, simply invoke **ConcatenatePdfFiles** class.
 
-**PHP Code
-
-```
+```python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
@@ -27,7 +25,6 @@ doc.save(self.dataDir + "Concatenate_output.pdf")
 
 print "New document has been saved, please check the output file"
 ```
-
 
 **Download Running Code
 
