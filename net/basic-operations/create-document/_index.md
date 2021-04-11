@@ -1,12 +1,15 @@
 ---
-title: Create Document
+title: Create PDF document programmatically
+linketitle: Create Document
 type: docs
 weight: 10
 url: /net/create-document/
 ---
 
 Aspose.PDF for .NET API lets you create and read PDF files using C# and VB.NET. The API can be used in a variety of .NET applications including WinForms, ASP.NET, and several others. In this article, we are going to show how to use Aspose.PDF for .NET API to easily generate and read PDF files in .NET applications.
-## **How to Create PDF File using C#**
+
+## How to Create PDF File using C#
+
 To create a PDF file using C#, the following steps can be used.
 
 1. Create an object of [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) class
