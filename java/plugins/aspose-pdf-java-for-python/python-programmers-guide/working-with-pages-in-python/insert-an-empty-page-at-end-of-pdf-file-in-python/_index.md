@@ -6,10 +6,9 @@ url: /java/insert-an-empty-page-at-end-of-pdf-file-in-python/
 lastmod: "2020-12-16"
 ---
 
-<ins>To Insert an Empty Page at the end of PDF document using **Aspose.PDF Java for Python**, simply invoke **InsertEmptyPageAtEndOfFile** class.
+To Insert an Empty Page at the end of PDF document using **Aspose.PDF Java for Python**, simply invoke **InsertEmptyPageAtEndOfFile** class.
 
-**Python Code
-```
+```python
 
 pdf_document = self.Document()
 pdf_document=self.dataDir + 'input1.pdf'
