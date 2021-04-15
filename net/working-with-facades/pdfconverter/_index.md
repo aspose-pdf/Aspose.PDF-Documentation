@@ -7,11 +7,10 @@ description: This section explains how to work with Aspose.PDF Facades using Pdf
 lastmod: "2021-01-19"
 draft: false
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
 ---
 
+- [Convert PDF Pages to JPEG/PNG/BMP Images](/pdf/net/convert-pdf-pages/)
+- [Convert PDF File to TIFF file](/pdf/net/convert-pdf-file/)
 - [Performance Improvement during PDF to TIFF Conversion](/pdf/net/performance-improvement-during-pdf-to-tiff-conversion/)
-- [Convert PDF Pages](/pdf/net/convert-pdf-pages/)
-- [Convert PDF File](/pdf/net/convert-pdf-file/)
-

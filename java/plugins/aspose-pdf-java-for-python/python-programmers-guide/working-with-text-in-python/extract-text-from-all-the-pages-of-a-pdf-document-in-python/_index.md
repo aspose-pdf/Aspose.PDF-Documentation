@@ -6,10 +6,10 @@ url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 lastmod: "2020-12-16"
 ---
 
-<ins>To extract TextrFrom All the Pages Pdf document using **Aspose.PDF Java for Python**, simply invoke **ExtractTextFromAllPages** module.
+To extract TextrFrom All the Pages Pdf document using **Aspose.PDF Java for Python**, simply invoke **ExtractTextFromAllPages** module.
 
-**Python Code
-```
+```python
+
 # Open the target document
 pdf=self.Document()
 pdf=self.dataDir + 'input1.pdf'

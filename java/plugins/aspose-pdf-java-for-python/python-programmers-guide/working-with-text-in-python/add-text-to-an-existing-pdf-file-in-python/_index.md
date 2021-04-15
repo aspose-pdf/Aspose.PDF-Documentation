@@ -3,13 +3,12 @@ title: Add Text to an existing PDF file in Python
 type: docs
 weight: 20
 url: /java/add-text-to-an-existing-pdf-file-in-python/
-lastmod: "2020-12-16"
+lastmod: "2021-04-10"
 ---
 
-<ins>To add Text string in Pdf document using **Aspose.PDF Java for Python**, simply invoke **AddText** module.
+To add Text string in Pdf document using **Aspose.PDF Java for Python**, simply invoke **AddText** module.
 
-**Python Code
-```
+```python
 doc=self.Document()
 doc=self.dataDir + 'input1.pdf'
 
@@ -30,11 +29,8 @@ text_builder=self.TextBuilder(pdf_page)
 text_builder.appendText(text_fragment)
 
 # Save PDF file
-
 doc.save(self.dataDir + "Text_Added.pdf")
-
 print "Text added successfully"
-
 ```
 
 **Download Running Code

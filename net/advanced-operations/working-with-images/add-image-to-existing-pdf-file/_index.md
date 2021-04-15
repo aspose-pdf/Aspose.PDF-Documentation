@@ -8,6 +8,8 @@ description: This section describes how to add image to existing PDF file using 
 lastmod: "2021-02-26"
 ---
 
+## Add Image in an Existing PDF File
+
 Every PDF page contains Resources and Contents properties. Resources can be images and forms for example, while content is represented by a set of PDF operators. Each operator has its name and argument. This example uses operators to add an image to a PDF file.
 
 To add an image to an existing PDF file:
