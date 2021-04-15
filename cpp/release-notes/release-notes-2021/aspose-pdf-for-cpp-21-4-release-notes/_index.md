@@ -16,9 +16,9 @@ This page contains release notes information for Aspose.PDF for C++ 21.4.
 
 This version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 21.4.
 
-Saving PDF documents to HTML format have been implemented.
+Saving PDF documents to HTML format has been implemented.
 
-Access Violation Error while saving PDF documents to DOCX format have been fixed.
+Access Violation Error while saving PDF documents to DOCX format has been fixed.
 
 ## Public API and Backward Incompatible Changes
 
