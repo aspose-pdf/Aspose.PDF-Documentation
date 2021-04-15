@@ -22,39 +22,24 @@ Images are an important part of the contents of a PDF document. Manipulating ima
 
 In this section, we’ll have a detailed look into these image operations. We’ll also see the code snippets to show the use of the related classes and methods. First of all, let’s have a look at adding an image in an existing PDF file. We can use [AddImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method of [PdfFileMend](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffilemend) class to add a new image. Using this method, you can not only specify the page number on which you want to add the image, but also the location of the image can be specified.
 
-
-
-{{< highlight java >}}
-
- // Create PdfFileMend object to add image in the PDF file
-
+```csharp
+// Create PdfFileMend object to add image in the PDF file
 PdfFileMend objFileMend = new PdfFileMend("input.pdf", "output.pdf");
-
 // Add image in the PDF file
-
 objFileMend.AddImage("image.jpg", 1, 200, 500, 350, 750);
-
 // Close the PdfFileMend object
-
 objFileMend.Close();
-
-{{< /highlight >}}
-
-
+```
 
 {{% alert color="primary" %}}
 
 In order to replace an existing image, we need to use [ReplaceImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) method of [PdfContentEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfcontenteditor) class. This method needs the new image which is to be added in place of the old image. You are also required to specify the page number and the index of the image which needs to be replaced.
 
-
 {{% /alert %}}
 
-{{< highlight java >}}
-
-
+```csharp
 
 // Create PdfContentEditor object to replace existing image
-
 PdfContentEditor objContentEditor = new PdfContentEditor();
 
 // Bind input pdf file
@@ -66,12 +51,8 @@ objContentEditor.BindPdf("input.pdf");
 objContentEditor.ReplaceImage(1, 1, "newimage.jpg");
 
 // Save output PDF file
-
 objContentEditor.Save("output.pdf");
-
-
-
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}}
 
@@ -79,8 +60,7 @@ When it comes to removing images, you can use [DeleteImage](http://www.aspose.co
 
 {{% /alert %}}
 
-{{< highlight java >}}
-
+```csharp
  // Create PdfContentEditor object to delete an image
 
 PdfContentEditor objContentEditor = new PdfContentEditor();
@@ -97,38 +77,26 @@ objContentEditor.DeleteImage(1, new int[] { 1 });
 
 objContentEditor.Save("output.pdf");
 
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}}
 
 [PdfExtractor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/PdfExtractor) class allows you to extract images from a PDF file. You can use [GetNextImage](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor/methods/getnextimage/index) method to save the images one by one. However, before getting images, you need to extract the images into memory using [ExtractImage](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor/methods/extractimage) method.
 
-
 {{% /alert %}}
 
-{{< highlight java >}}
-
- // Create PdfExtractor object
-
+```csharp
+// Create PdfExtractor object
 PdfExtractor objExtractor = new PdfExtractor();
-
 // Bind input pdf file
-
 objExtractor.BindPdf("input.pdf");
-
 // Extract image with specific mode
-
 objExtractor.ExtractImage(ExtractImageMode.Default);
 
 // Check if images extracted and save them one by one
-
 while (objExtractor.HasNextImage())
-
    objExtractor.GetNextImage(DateTime.Now.Ticks.ToString() + ".jpg");
-
-
-
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}}
 
@@ -136,10 +104,9 @@ while (objExtractor.HasNextImage())
 
 {{% /alert %}}
 
-{{< highlight java >}}
+```csharp
 
- // Create PdfConverter object
-
+// Create PdfConverter object
 PdfConverter objConverter = new PdfConverter();
 
 // Bind input pdf file
@@ -147,24 +114,17 @@ PdfConverter objConverter = new PdfConverter();
 objConverter.BindPdf("input.pdf");
 
 // Initialize the converting process
-
 objConverter.DoConvert();
 
 // Check if pages exist and then convert to image one by one
 
 while (objConverter.HasNextImage())
-
    objConverter.GetNextImage(DateTime.Now.Ticks.ToString() + ".jpg",
-
    System.Drawing.Imaging.ImageFormat.Jpeg);
-
 // Close the PdfConverter object
 
 objConverter.Close();
-
-
-
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}}
 
@@ -172,31 +132,26 @@ objConverter.Close();
 
 {{% /alert %}}
 
-{{< highlight java >}}
-
- // Create PdfConverter object
-
+```csharp
+// Create PdfConverter object
 PdfConverter objConverter = new PdfConverter();
-
 // Bind input pdf file
-
 objConverter.BindPdf("input.pdf");
 
 // Initialize the converting process
-
 objConverter.DoConvert();
-
 // Save pdf as tiff image
-
 objConverter.SaveAsTIFF("output.tif");
 
 // Close the PdfConverter object
-
 objConverter.Close();
+```
 
+## Add Image in an Existing PDF File (Facades)
 
+You can use [AddImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) method of the [PdfFileMend](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) class. The [AddImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/close) method. The following code snippet shows you how to add image in an existing PDF file.
 
-{{< /highlight >}}
+{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Images-AddImage-AddImage.cs" >}}
 
 ## Conclusion
 

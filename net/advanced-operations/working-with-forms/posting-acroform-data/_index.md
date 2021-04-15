@@ -1,9 +1,9 @@
 ---
-title: Posting AcroForm data to an external web page
-linktitle: Posting AcroForm to Web
+title: Posting AcroForm Data
+linktitle: Posting AcroForm
 type: docs
 weight: 140
-url: /net/posting-acroform-data-to-an-external-web-page/
+url: /net/posting-acroform-data/
 lastmod: "2020-12-22"
 sitemap:
     changefreq: "weekly"

@@ -21,7 +21,7 @@ In this section you will learn how to:
 - [Using PdfBookmarEditor](/pdf/net/working-with-bookmarks-facades/) - tool for creating, importing, exporting and deleting bookmarks
 - [Using PdfExtractor](/pdf/net/pdfextractor-class/)  - tool for extracting images and text from PDF document
 - [Using PdfFileSignature](/pdf/net/pdffilesignature-class/) - tool to sign a pdf file with a certificate
-- [Using PdfConverter](/pdf/net/pdfconverter-class/) - tool to a pdf file's each page to images (BMP, JPEG, PNG and TIFF)
+- [Using PdfConverter](/pdf/net/pdfconverter-class/) - tool to convert a PDF files to images (BMP, JPEG, PNG and TIFF) and vice versa
 - [Using FormDataConverter](/pdf/net/formdataconverter-class/) - tool to convert data from one format to another format
 - [Using FormEditor](/pdf/net/formeditor-class/) - tool for editing forms (ading/deleting field etc)
 - [Using PdfFileInfo](/pdf/net/pdffileinfo-class/) - tool for accessing meta information of PDF document
@@ -33,4 +33,3 @@ In this section you will learn how to:
 - [Using Form](/pdf/net/form-class/) - tool for manipulation with Acro Forms
 - [Using Stamp](/pdf/net/stamp-class/) - tool stamping in PDF
 - [Using AutoFiller](/pdf/net/autofiller-class/) - tool to receive data from database or other datasource, fills them into the designed fields of the template pdf and at last generates new pdf file or stream
-
