@@ -1,5 +1,6 @@
 ---
 title: Performance Improvement during PDF to TIFF Conversion
+linktitle: Performance of PDF-TIFF Conversion
 type: docs
 weight: 10
 url: /net/performance-improvement-during-pdf-to-tiff-conversion/
@@ -18,11 +19,7 @@ draft: false
 
 The default color depth while converting PDF to TIFF format is 32 bpp (bits per pixel). It is possible to specify other color depths using [ColorDepth Enumeration](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/colordepth) as shown in the following code snippet:
 
-
-
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-PDFToTIFFConversion-PDFToTIFFConversion.cs" >}}
-
-
 
 The process of re-coloring an image by assigning a color-reduced palette is termed as [Quantization](http://en.wikipedia.org/wiki/Quantization_%28image_processing%29) . The process of color quantization reduces the number of colors used in an image. Unfortunately, some functionality which is present in GDI+ (Windows Graphics Driver Interface) is simply absent from the standard .NET Framework. The SaveAsTIFF method realizes quantization to 1 bpp, 4 bpp and 8 bpp using managed C# code, and therefore it is not optimal.
 
@@ -52,8 +49,6 @@ public void SaveAsTIFF(string,int,int,TiffSettings,IIndexBitmapConverter);
 ## Implementation steps
 
 The following code snippet shows you how to use this new approach:
-
-
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-PDFToTIFFConversion-NewApproach.cs" >}}
 

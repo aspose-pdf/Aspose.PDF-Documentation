@@ -8,8 +8,7 @@ lastmod: "2020-12-16"
 
 To get page properties of Pdf document using **Aspose.PDF Java for Python**, simply invoke **GetPageProperties** class.
 
-**Python Code
-```
+```Python
 doc= self.Document()
 pdf_document = self.Document()
 pdf_document=self.dataDir + 'input1.pdf'

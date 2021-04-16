@@ -10,7 +10,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
 ## How to add Caret Annotation into existing PDF file
 
 Caret Annotation is a symbol that indicates text editing. Caret Annotation is also markup annotation, so the Caret class derives from the Markup class and also provides functions to get or set properties of the Caret Annotation and reset the flow of the Caret Annotation appearance.

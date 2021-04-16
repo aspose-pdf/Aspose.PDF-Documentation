@@ -6,9 +6,9 @@ weight: 20
 url: /net/manipulate-pdf-document/
 lastmod: "2020-12-18"
 description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and how to determine the Progress of PDF file generation.
-lastmod: "2020-12-16"
+lastmod: "2021-03-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -344,4 +344,28 @@ public static void ShowProgressOnConsole(DocSaveOptions.ProgressEventHandlerInfo
     }
 
 }
+```
+
+## Flatten Fillable PDF in C#
+
+PDF documents often include forms with interactive fillable widgets such as radio buttons, checkboxes, text boxes, lists, etc. To make it uneditable for various application purposes, we need to flatten the PDF file.
+Aspose.PDF provides the function to flatten your PDF in C# with just few line of code:
+
+```csharp
+
+// Load source PDF form
+Document doc = new Document(dataDir + "input.pdf");
+
+// Flatten Flatten Fillable PDF 
+if (doc.Form.Fields.Count() > 0)
+{
+    foreach (var item in doc.Form.Fields)
+    {
+        item.Flatten();
+    }
+}
+
+dataDir = dataDir + "FlattenForms_out.pdf";
+// Save the updated document
+doc.Save(dataDir);
 ```

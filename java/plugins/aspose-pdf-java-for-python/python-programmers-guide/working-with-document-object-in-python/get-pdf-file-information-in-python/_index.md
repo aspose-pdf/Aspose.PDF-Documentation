@@ -6,10 +6,9 @@ url: /java/get-pdf-file-information-in-python/
 lastmod: "2020-12-16"
 ---
 
-<ins>To Get File Information of Pdf document using **Aspose.PDF Java for Python**, simply invoke **GetPdfFileInfo** class.
+To Get File Information of Pdf document using **Aspose.PDF Java for Python**, simply invoke **GetPdfFileInfo** class.
 
-**Python Code
-```
+```python
 
 doc= self.Document()
 pdf = self.Document()
