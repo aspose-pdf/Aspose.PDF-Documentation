@@ -1,5 +1,5 @@
 ---
-title: Extracting raw text from PDF file using java
+title: Extracting raw text from PDF file using Java
 linktitle: Extract text from PDF
 type: docs
 weight: 10
@@ -17,8 +17,8 @@ Extracting text from a PDF document is a common requirement. In this example, yo
 To extract text from all the PDF pages:
 
 1. Create an object of the [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class.
-1. Open the PDF using **Document** class and call the **Accept** method of the **Pages** collection. 
-1. The **TextAbsorber** class absorbs the text from the document and returns in **Text** property. 
+1. Open the PDF using [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class and call the [Accept](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) method of the [Pages](http://www.aspose.com/api/java/pdf/com.aspose.pdf/classes/PageCollection) collection.
+1. The [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class absorbs the text from the document and returns in **Text** property.
 
 The following code snippet shows you how to extract text from all pages of PDF document.
 
@@ -52,7 +52,7 @@ public static void ExtractFromAllPages(){
 }
 ```
 
-Call the **Accept** method on a particular page of the Document object. The Index is the particular page number from where text needs to be extracted.
+Call the [Accept](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) method on a particular page of the Document object. The Index is the particular page number from where text needs to be extracted.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -84,7 +84,7 @@ tw.Close();
 
 ## Extract Text from Pages using Text Device
 
-You can use the **TextDevice** class to extract text from a PDF file. TextDevice uses TextAbsorber in its implementation, thus, in fact, they do the same thing but TextDevice just implemented to unify the "Device" approach to extract anything from the page ImageDevice, PageDevice, etc. TextAbsorber may extract text from Page, entire PDF or XForm, this TextAbsorber is more universal
+You can use the **TextDevice** class to extract text from a PDF file. TextDevice uses [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) in its implementation, thus, in fact, they do the same thing but TextDevice just implemented to unify the "Device" approach to extract anything from the page ImageDevice, PageDevice, etc. TextAbsorber may extract text from Page, entire PDF or XForm, this TextAbsorber is more universal
 
 ### Extract text from all pages
 
@@ -140,9 +140,9 @@ File.WriteAllText(dataDir, builder.ToString());
 
 ## Extract Text from a particular page region
 
-**TextAbsorber** class provides the capability to extract text from a particular or all pages of a PDF document. This class returns the extracted text in the **Text** property. However, if we have the requirement to extract text from a particular page region, we can use the **Rectangle** property of **TextSearchOptions.** The Rectangle property takes a Rectangle object as a value and using this property, we can specify the region of the page from which we need to extract the text.
+[TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class provides the capability to extract text from a particular or all pages of a PDF document. This class returns the extracted text in the **Text** property. However, if we have the requirement to extract text from a particular page region, we can use the **Rectangle** property of [TextSearchOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextSearchOptions). The Rectangle property takes a Rectangle object as a value and using this property, we can specify the region of the page from which we need to extract the text.
 
-The **Accept** method of a page is called to extract the text. Create objects of **Document** and **TextAbsorber** classes. Call **Accept** method on the individual page, as **Page** Index, of the **Document** object. The **Index** is the particular page number from where text needs to be extracted. You can get text from the **Text** property of the **TextAbsorber** class. The following code snippet shows you how to extract text from an individual page.
+The [Accept](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) method of a page is called to extract the text. Create objects of [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) and [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) classes. Call [Accept](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) method on the individual page, as **Page** Index, of the **Document** object. The **Index** is the particular page number from where text needs to be extracted. You can get text from the **Text** property of the [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class. The following code snippet shows you how to extract text from an individual page.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -237,7 +237,7 @@ Please note that there is no direct correspondence between the new ScaleFactor a
 
 ## Extract Highlighted Text from PDF Document
 
-In various scenarios of text extraction from a PDF document, you can come up with a requirement to extract only highlighted text from PDF document. In order to implement the functionality, we have added TextMarkupAnnotation.GetMarkedText() and TextMarkupAnnotation.GetMarkedTextFragments() methods in API. You can extract highlighted text from PDF document by filtering TextMarkupAnnotation and using the mentioned methods. The following code snippet shows how you can extract highlighted text from PDF document. 
+In various scenarios of text extraction from a PDF document, you can come up with a requirement to extract only highlighted text from PDF document. In order to implement the functionality, we have added TextMarkupAnnotation.GetMarkedText() and TextMarkupAnnotation.GetMarkedTextFragments() methods in API. You can extract highlighted text from PDF document by filtering TextMarkupAnnotation and using the mentioned methods. The following code snippet shows how you can extract highlighted text from PDF document.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
