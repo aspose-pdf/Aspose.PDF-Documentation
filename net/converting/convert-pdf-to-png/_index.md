@@ -17,11 +17,11 @@ The PngDevice class allows you to convert PDF pages to PNG images. This class pr
 
 ## Convert PDF Pages to PNG Images
 
-{{% alert color="primary" %}}
+## Live Example
 
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-png](https://products.aspose.app/pdf/conversion/pdf-to-png)
+Aspose.PDF for .NET presents you online free application ["PDF to PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), where you may try to investigate the functionality and quality it works.
 
-{{% /alert %}}
+[![PDF to PNG](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
 
 Aspose.PDF for .NET show you how to convert all pages in a PDF file to images:
 

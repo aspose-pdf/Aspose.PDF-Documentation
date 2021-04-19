@@ -17,11 +17,11 @@ The JpegDevice class allows you to convert PDF pages to JPEG images. This class 
 
 ## Convert PDF Pages to JPG Images
 
-{{% alert color="primary" %}}
+## Live Example
 
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link  [products.aspose.app/pdf/conversion/pdf-to-jpg](https://products.aspose.app/pdf/conversion/pdf-to-jpg)
+Aspose.PDF for .NET presents you online free application ["Convert PDF to JPG"](https://products.aspose.app/pdf/conversion/pdf-to-jpg), where you may try to investigate the functionality and quality it works.
 
-{{% /alert %}}
+[![Convert PDF to JPG](pdf_to_jpg.png)](https://products.aspose.app/pdf/conversion/pdf-to-jpg)
 
 Aspose.PDF for .NET allows you to convert all pages in a PDF file to images:
 
