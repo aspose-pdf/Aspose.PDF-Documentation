@@ -13,13 +13,13 @@ sitemap:
 
 The [BmpDevice](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) class allows you to convert PDF pages to <abbr title="Bitmap Image File">BMP</abbr> images. This class provides a method named [Process](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) which allows you to convert a particular page of the PDF file to Bmp image format.
 
+## Live Example
+
+Aspose.PDF for .NET presents you online free application ["PDF to BMP"](https://products.aspose.app/pdf/conversion/pdf-to-bmp), where you may try to investigate the functionality and quality it works.
+
+[![PDF to BMP](pdf_to_bmp.png)](https://products.aspose.app/pdf/conversion/pdf-to-bmp)
+
 ## Convert PDF Pages to BMP Images
-
-{{% alert color="primary" %}}
-
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-bmp](https://products.aspose.app/pdf/conversion/pdf-to-bmp)
-
-{{% /alert %}}
 
 To convert all pages in a PDF file to images:
 
