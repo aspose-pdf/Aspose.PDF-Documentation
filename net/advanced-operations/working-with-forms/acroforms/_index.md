@@ -33,7 +33,7 @@ AcroForms have capabilities not found in XFA and conversely XFA has some capabil
 For more detailed learning of the capabilities of the Java library, see the following articles:
 
 - [Create Form](/pdf/net/create-form) - create form from scratch with C#.
-- [Fill Form](/pdf/net/fill-form) - fill form field in your PDF document. 
+- [Fill Form](/pdf/net/fill-form) - fill form field in your PDF document.
 - [Extract Form](/pdf/net/extract-form) - get value from all or an individual field of PDF document.
 - [Modifing Form](/pdf/net/modifing-form) - get or set FieldLimit, set form field font and etc.
 - [Posting AcroForm Data](/pdf/net/posting-acroform-data/) -  import and export form data to and XML file.
