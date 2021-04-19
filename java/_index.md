@@ -19,7 +19,7 @@ Aspose.PDF is a Java component built to allow developers to create PDF documents
 
 {{% /alert %}}
 
-## Aspose.PDF for Java Resources
+<h2>Aspose.PDF for Java Resources</h2>
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
