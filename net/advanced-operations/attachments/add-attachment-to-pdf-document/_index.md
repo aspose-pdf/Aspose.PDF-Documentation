@@ -1,8 +1,8 @@
 ---
 title: Adding Attachment to a PDF document using Aspose.PDF for .NET
-linktitle: Adding Attachment to a PDF document using Aspose.PDF for .NET
+linktitle: Adding Attachment to a PDF document 
 type: docs
-weight: 30
+weight: 10
 url: /net/add-attachment-to-pdf-document/
 description: This page describes how to add an attachment to a PDF file with C#.
 aliases:
