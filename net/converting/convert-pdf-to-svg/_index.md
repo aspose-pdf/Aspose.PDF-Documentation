@@ -13,11 +13,11 @@ sitemap:
 
 This article teacher you how to convert PDF to <abbr title="Scalable Vector Graphics">SVG</abbr> using C#
 
-{{% alert color="primary" %}}
+## Live Example
 
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-svg](https://products.aspose.app/pdf/conversion/pdf-to-svg)
+Aspose.PDF for .NET presents you online free application ["PDF to SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), where you may try to investigate the functionality and quality it works.
 
-{{% /alert %}}
+[![PDF to SVG](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 
 **Scalable Vector Graphics (SVG)** is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
 

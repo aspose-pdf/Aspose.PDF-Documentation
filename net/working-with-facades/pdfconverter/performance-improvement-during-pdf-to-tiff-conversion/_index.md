@@ -1,6 +1,6 @@
 ---
 title: Performance Improvement during PDF to TIFF Conversion
-linktitle: Performance of PDF-TIFF Conversion
+linktitle: PDF-TIFF Conversion
 type: docs
 weight: 10
 url: /net/performance-improvement-during-pdf-to-tiff-conversion/

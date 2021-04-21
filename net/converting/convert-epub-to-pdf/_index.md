@@ -17,11 +17,11 @@ sitemap:
 
 EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.The version EPUB 3 is also endorsed by the Book Industry Study Group (BISG), a leading book trade association for standardized best practices, research, information and events, for packaging of content.
 
-{{% alert color="primary" %}}
+## Live Example
 
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/epub-to-pdf](https://products.aspose.app/pdf/conversion/epub-to-pdf)
+Aspose.PDF for .NET presents you online free application ["EPUB to PDF"](https://products.aspose.app/pdf/conversion/epub-to-pdf), where you may try to investigate the functionality and quality it works.
 
-{{% /alert %}}
+[![Epub to PDF](epub.png)](https://products.aspose.app/pdf/conversion/epub-to-pdf)
 
 Conversion steps:
 

@@ -13,13 +13,13 @@ sitemap:
 
 The EmfDevice class allows you to convert PDF pages to <abbr title="Enhanced Meta File">EMF</abbr> images. This class provides a method named Process which allows you to convert a particular page of the PDF file to EMF image format.
 
+## Live Example
+
+Aspose.PDF for .NET presents you online free application ["PDF to EMF"](https://products.aspose.app/pdf/conversion/pdf-to-emf), where you may try to investigate the functionality and quality it works.
+
+[![PDF to EMF](pdf_to_emf.png)](https://products.aspose.app/pdf/conversion/pdf-to-emf)
+
 ## Convert PDF Pages to EMF Images
-
-{{% alert color="primary" %}}
-
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-emf](https://products.aspose.app/pdf/conversion/pdf-to-emf)
-
-{{% /alert %}}
 
 Aspose.PDF for .NET allows you to convert all pages in a PDF file to images:
 
