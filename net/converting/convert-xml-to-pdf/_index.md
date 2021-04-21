@@ -19,11 +19,11 @@ The XML format used to store structured data. There are several ways to convert 
 1. Generate XML document using Aspose.PDF XSD Schema
 1. Use XML document based on XSL-FO standard
 
-{{% alert color="primary" %}}
+## Live Example
 
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/xml-to-pdf](https://products.aspose.app/pdf/conversion/xml-to-pdf)
+Aspose.PDF for .NET presents you online free application ["XML to PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf), where you may try to investigate the functionality and quality it works.
 
-{{% /alert %}}
+[![Convert XML to PDF](xml_to_pdf.png)](https://products.aspose.app/pdf/conversion/xml-to-pdf)
 
 ## Convert XSL-FO to PDF
 

@@ -17,11 +17,11 @@ Scalable Vector Graphics (SVG) is a family of specifications of an XML-based fil
 
 SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
 
-{{% alert color="primary" %}}
+## Live Example
 
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/svg-to-pdf](https://products.aspose.app/pdf/conversion/svg-to-pdf)
+Aspose.PDF for .NET presents you online free application ["SVG to PDF"](https://products.aspose.app/pdf/conversion/svg-to-pdf), where you may try to investigate the functionality and quality it works.
 
-{{% /alert %}}
+[![Convert SVG to PDF](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 
 To convert SVG files to PDF, use the class named [SvgLoadOptions](https://apireference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) which is used to initialize the [`LoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/loadoptions) object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
 

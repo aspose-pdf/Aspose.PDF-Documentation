@@ -31,11 +31,11 @@ public static void ConvertPDFDocToTXT()
 }
 ```
 
-{{% alert color="primary" %}}
+## Live Example
 
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-txt](https://products.aspose.app/pdf/conversion/pdf-to-txt)
+Aspose.PDF for .NET presents you online free application ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt), where you may try to investigate the functionality and quality it works.
 
-{{% /alert %}}
+[![Convert PDF to Text file](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 
 ## Convert PDF page to text file
 

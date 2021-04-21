@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /net/working-with-forms/
 description: This section explains how to work with AcroForms and XFA Forms in your PDF documents with Aspose.PDF for .NET.
-lastmod: "2020-12-16"
+lastmod: "2021-04-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
