@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+Artifacts are generally graphics objects or other markings that are not part of the authored content. In your PDF examples of artifacts include different information, there are page header or footer, lines or other graphics separating sections of the page, or decorative images.
+
 The [Artifact](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Artifact) class contains:
 
 - [Artifact.Type](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Artifact.ArtifactType) – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
@@ -70,5 +72,38 @@ The following code snippet shows how to add a background image to PDF pages usin
         // Save modified PDF
         pdfDocument.save(_dataDir + "ImageAsBackground_out.pdf");
 
+    }
+```
+
+## Programming Samples: Getting Watermark
+
+The following code snippet shows how to get each watermark on the first page of a PDF file.
+
+```java
+    public static void GettingWatermarks() {
+        // Open document
+        Document pdfDocument = new Document(_dataDir +  "watermark_new.pdf");
+        // Iterate through and get sub-type, text and location of artifact
+        for (Artifact artifact : pdfDocument.getPages().get_Item(1).getArtifacts())
+        {
+            System.out.println(artifact.getSubtype() + " " + artifact.getText() + " " + artifact.getRectangle().toString());
+        }
+```
+
+## Programming Samples: Counting Artifacts of a Particular Type
+
+To calculate the total count of artifacts of a particular type (for example, the total number of watermarks), use the following code:
+
+```java
+    public static void CountingArtifacts() {
+        // Open document
+        Document pdfDocument = new Document(_dataDir +  "watermark_new.pdf");
+        int count = 0;
+        for (Artifact artifact : pdfDocument.getPages().get_Item(1).getArtifacts())
+        {
+            // If artifact type is watermark, increate the counter
+            if (artifact.getSubtype() == Artifact.ArtifactSubtype.Watermark) count++;
+        }
+        System.out.println("Page contains " + count + " watermarks");
     }
 ```
