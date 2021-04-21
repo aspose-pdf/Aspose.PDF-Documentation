@@ -35,7 +35,7 @@ public static void ConvertPDFDocToTXT()
 
 Aspose.PDF for .NET presents you online free application ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt), where you may try to investigate the functionality and quality it works.
 
-[![PDF to Text](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
+[![Convert PDF to Text file](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 
 ## Convert PDF page to text file
 

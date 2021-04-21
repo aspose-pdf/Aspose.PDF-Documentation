@@ -17,7 +17,7 @@ sitemap:
 
 Aspose.PDF for for .NET presents you online free application ["PCL to PDF"](https://products.aspose.app/pdf/conversion/pcl-to-pdf), where you may try to investigate the functionality and quality it works.
 
-[![PCL to PDF](pcl_to_pdf.png)](https://products.aspose.app/pdf/conversion/pcl-to-pdf)
+[![PCL documentation](pcl_to_pdf.png)](https://products.aspose.app/pdf/conversion/pcl-to-pdf)
 
 **Currently only PCL5 and older versions are supported**
 

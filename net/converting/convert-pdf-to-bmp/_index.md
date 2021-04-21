@@ -4,7 +4,7 @@ linktitle: Convert PDF to BMP
 type: docs
 weight: 40
 url: /net/convert-pdf-to-bmp/
-lastmod: "2021-01-15"
+lastmod: "2021-04-21"
 description: This article describes how to convert PDF Pages to BMP image, convert all Pages to BMP images and convert single PDF page to BMP image with C#.
 sitemap:
     changefreq: "weekly"
@@ -17,7 +17,7 @@ The [BmpDevice](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/bmpde
 
 Aspose.PDF for .NET presents you online free application ["PDF to BMP"](https://products.aspose.app/pdf/conversion/pdf-to-bmp), where you may try to investigate the functionality and quality it works.
 
-[![PDF to BMP](pdf_to_bmp.png)](https://products.aspose.app/pdf/conversion/pdf-to-bmp)
+[![PDF to bitmap C#](pdf_to_bmp.png)](https://products.aspose.app/pdf/conversion/pdf-to-bmp)
 
 ## Convert PDF Pages to BMP Images
 

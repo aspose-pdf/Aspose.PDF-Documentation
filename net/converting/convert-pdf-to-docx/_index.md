@@ -17,7 +17,7 @@ sitemap:
 
 Aspose.PDF for .NET presents you online free application ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), where you may try to investigate the functionality and quality it works.
 
-[![PDF to Word](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![C# PDF to Word](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 ## Convert PDF to DOCX
 

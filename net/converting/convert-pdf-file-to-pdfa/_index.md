@@ -25,7 +25,7 @@ Convert the file using the Document class Convert method. Before converting the 
 
 Aspose.PDF for .NET presents you online free application ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), where you may try to investigate the functionality and quality it works.
 
-[![PDF to PDF/A-1A](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
+[![C# convert PDF to PDF/A](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 
 ## Convert PDF file to PDF/A-1b
 

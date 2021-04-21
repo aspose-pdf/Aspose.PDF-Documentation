@@ -18,7 +18,7 @@ sitemap:
 
 [Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) is an online free web application that allows you to investigate how presentation splitting functionality works.
 
-[![Aspose PDF Splitter](splitter.png)](https://products.aspose.app/pdf/splitter)
+[![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
 This topic shows how to split PDF pages into individual PDF files in your .NET applications. To split PDF pages into single page PDF files using C#, the following steps can be followed:
 

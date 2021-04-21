@@ -19,7 +19,7 @@ One of the most popular feature is PDF to Microsoft Word DOC conversion, which m
 
 Aspose.PDF for .NET presents you online free application ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), where you may try to investigate the functionality and quality it works.
 
-[![PDF to DOC](pdf_to_doc.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![Convert PDF to DOC](pdf_to_doc.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 
 ## Convert PDF to DOC (Word 97-2003) file
 

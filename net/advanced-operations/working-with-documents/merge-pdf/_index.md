@@ -8,7 +8,7 @@ description: This page explain how to merge PDF documents into a single PDF file
 aliases:
     - /net/merge-document/
     - /net/concatenate-pdf-files/
-lastmod: "2020-12-21"
+lastmod: "2021-04-21"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -21,7 +21,7 @@ This article shows how to merge multiple PDF files into a single PDF document us
 
 [Aspose.PDF Merger](https://products.aspose.app/pdf/merger) is an online free web application that allows you to investigate how presentation merging functionality works.
 
-[![Aspose PDF Merger](merger.png)](https://products.aspose.app/pdf/merger)
+[![Aspose Merge PDF](merger.png)](https://products.aspose.app/pdf/merger)
 
 ## Merge PDF Files using C# and DOM
 
