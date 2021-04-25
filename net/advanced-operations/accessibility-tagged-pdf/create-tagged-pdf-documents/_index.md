@@ -3,7 +3,7 @@ title: Create Tagged PDF | C#
 linktitle: Create Tagged PDF 
 type: docs
 weight: 10
-lastmod: "2021-02-26"
+lastmod: "2021-04-25"
 url: /net/create-tagged-pdf/
 description: This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for .NET.
 sitemap:
@@ -13,130 +13,89 @@ sitemap:
 
 Creating a Tagged PDF means adding (or creating) certain elements to the document that will enable the document to be validated in accordance with PDF/UA requirements. These elements are called often Structure Elements.
 
-## Creating Structure Elements
+## Creating Tagged PDF (Simple Scenario)
 
-In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to create structure elements of Tagged PDF:
-
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Create Pdf Document
-Document document = new Document();
-
-// Get Content for work with TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
-
-// Set Title and Language for Document
-taggedContent.SetTitle("Tagged Pdf Document");
-taggedContent.SetLanguage("en-US");
-
-// Create Grouping Elements
-PartElement partElement = taggedContent.CreatePartElement();
-ArtElement artElement = taggedContent.CreateArtElement();
-SectElement sectElement = taggedContent.CreateSectElement();
-DivElement divElement = taggedContent.CreateDivElement();
-BlockQuoteElement blockQuoteElement = taggedContent.CreateBlockQuoteElement();
-CaptionElement captionElement = taggedContent.CreateCaptionElement();
-TOCElement tocElement = taggedContent.CreateTOCElement();
-TOCIElement tociElement = taggedContent.CreateTOCIElement();
-IndexElement indexElement = taggedContent.CreateIndexElement();
-NonStructElement nonStructElement = taggedContent.CreateNonStructElement();
-PrivateElement privateElement = taggedContent.CreatePrivateElement();
-
-// Create Text Block-Level Structure Elements
-ParagraphElement paragraphElement = taggedContent.CreateParagraphElement();
-HeaderElement headerElement = taggedContent.CreateHeaderElement();
-HeaderElement h1Element = taggedContent.CreateHeaderElement(1);
-
-// Create Text Inline-Level Structure Elements
-SpanElement spanElement = taggedContent.CreateSpanElement();
-QuoteElement quoteElement = taggedContent.CreateQuoteElement();
-NoteElement noteElement = taggedContent.CreateNoteElement();
-
-// Create Illustration Structure Elements
-FigureElement figureElement = taggedContent.CreateFigureElement();
-FormulaElement formulaElement = taggedContent.CreateFormulaElement();
-
-// Methods are under development
-ListElement listElement = taggedContent.CreateListElement();
-TableElement tableElement = taggedContent.CreateTableElement();
-ReferenceElement referenceElement = taggedContent.CreateReferenceElement();
-BibEntryElement bibEntryElement = taggedContent.CreateBibEntryElement();
-CodeElement codeElement = taggedContent.CreateCodeElement();
-LinkElement linkElement = taggedContent.CreateLinkElement();
-AnnotElement annotElement = taggedContent.CreateAnnotElement();
-RubyElement rubyElement = taggedContent.CreateRubyElement();
-WarichuElement warichuElement = taggedContent.CreateWarichuElement();
-FormElement formElement = taggedContent.CreateFormElement();
-
-// Save Tagged Pdf Document
-document.Save(dataDir + "StructureElements.pdf");
-```
-
-## Creating Structure Elements Tree
-
-In order to create structure elements tree in a Tagged PDF Document, Aspose.PDF offers methods to create a structure element tree using [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) Interface. Following code snippet shows how to create structure elements tree of Tagged PDF Document:
+In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to create Tagged PDF which contain 2 elements: header and paragraph.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+private static void CreateTaggedPdfDocument01()
+{
+    // Create PDF Document
+    var document = new Document();
 
-// Create Pdf Document
-Document document = new Document();
+    // Get Content for work with TaggedPdf
+    ITaggedContent taggedContent = document.TaggedContent;
+    var rootElement = taggedContent.RootElement;
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
 
-// Get Content for work with TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
+    // 
+    HeaderElement mainHeader = taggedContent.CreateHeaderElement();
+    mainHeader.SetText("Main Header");
 
-// Set Title and Language for Document
-taggedContent.SetTitle("Tagged Pdf Document");
-taggedContent.SetLanguage("en-US");
+    ParagraphElement paragraphElement = taggedContent.CreateParagraphElement();
+    paragraphElement.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
 
-// Get root structure element (Document)
-StructureElement rootElement = taggedContent.RootElement;
+    rootElement.AppendChild(mainHeader);
+    rootElement.AppendChild(paragraphElement);
 
-// Create Logical Structure
-SectElement sect1 = taggedContent.CreateSectElement();
-rootElement.AppendChild(sect1);
-
-SectElement sect2 = taggedContent.CreateSectElement();
-rootElement.AppendChild(sect2);
-
-DivElement div11 = taggedContent.CreateDivElement();
-sect1.AppendChild(div11);
-
-DivElement div12 = taggedContent.CreateDivElement();
-sect1.AppendChild(div12);
-
-ArtElement art21 = taggedContent.CreateArtElement();
-sect2.AppendChild(art21);
-
-ArtElement art22 = taggedContent.CreateArtElement();
-sect2.AppendChild(art22);
-
-DivElement div211 = taggedContent.CreateDivElement();
-art21.AppendChild(div211);
-
-DivElement div212 = taggedContent.CreateDivElement();
-art21.AppendChild(div212);
-
-DivElement div221 = taggedContent.CreateDivElement();
-art22.AppendChild(div221);
-
-DivElement div222 = taggedContent.CreateDivElement();
-art22.AppendChild(div222);
-
-SectElement sect3 = taggedContent.CreateSectElement();
-rootElement.AppendChild(sect3);
-
-DivElement div31 = taggedContent.CreateDivElement();
-sect3.AppendChild(div31);
-
-// Save Tagged Pdf Document
-document.Save(dataDir + "StructureElementsTree.pdf");
+    // Save Tagged Pdf Document
+    document.Save("C:\\Samples\\TaggedPDF\\Sample1.pdf");
+}
 ```
+
+We will get a following document after creation:
+![Tagged PDF document with 2 elements - Header and Paragraph](taggedpdf-01.png)
+
+## Creating Tagged PDF with nested elements (Creating Structure Elements Tree)
+
+In some cases, we need to create more complex sturcutre, eg. place quotes in paragraph. 
+In order to create structure elements tree we should use [AppendChild](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild) method.
+Following code snippet shows how to create structure elements tree of Tagged PDF Document:
+
+```csharp
+private static void CreateTaggedPdfDocument02()
+{
+    // Create Pdf Document
+    var document = new Document();
+
+    // Get Content for work with TaggedPdf
+    ITaggedContent taggedContent = document.TaggedContent;
+    var rootElement = taggedContent.RootElement;
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    HeaderElement header1 = taggedContent.CreateHeaderElement(1);
+    header1.SetText("Header Level 1");
+
+    ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
+    paragraphWithQuotes.StructureTextState.Font = FontRepository.FindFont("Calibri");
+    paragraphWithQuotes.StructureTextState.MarginInfo = new MarginInfo(10, 5, 10, 5);
+
+    SpanElement spanElement1 = taggedContent.CreateSpanElement();
+    spanElement1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
+    QuoteElement quoteElement = taggedContent.CreateQuoteElement();
+    quoteElement.SetText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa.");
+    quoteElement.StructureTextState.FontStyle = FontStyles.Bold | FontStyles.Italic;
+    SpanElement spanElement2 = taggedContent.CreateSpanElement();
+    spanElement2.SetText(" Sed non consectetur elit.");
+
+    paragraphWithQuotes.AppendChild(spanElement1);
+    paragraphWithQuotes.AppendChild(quoteElement);
+    paragraphWithQuotes.AppendChild(spanElement2);
+
+    rootElement.AppendChild(header1);
+    rootElement.AppendChild(paragraphWithQuotes);
+
+    // Save Tagged Pdf Document
+    document.Save("C:\\Samples\\TaggedPDF\\Sample2.pdf");
+}
+```
+
+We will get a following document after creation:
+![Tagged PDF document with nested elements - span and quotes](taggedpdf-02.png)
 
 ## Styling Text Structure
 
