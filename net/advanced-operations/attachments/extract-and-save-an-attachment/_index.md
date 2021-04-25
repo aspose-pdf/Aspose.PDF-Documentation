@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+## Get All Attachments
+
 With Aspose.PDF, it is possible to get all attachments from a PDF document. This is useful either when you want to save the documents separately from the PDF, or if you need to strip a PDF of attachments.
 
 To get all attachments from a PDF file:
@@ -70,7 +72,7 @@ foreach (FileSpecification fileSpecification in embeddedFiles)
 
 ## Get Individual Attachment
 
-In order to get an individual attachment, we can specify the index of attachment in *EmbeddedFiles* object of Document instance. Please try using following code snippet.
+In order to get an individual attachment, we can specify the index of attachment in `EmbeddedFiles` object of Document instance. Please try using following code snippet.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
