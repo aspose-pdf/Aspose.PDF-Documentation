@@ -1,5 +1,5 @@
 ---
-title: Search and Get Text from Pages of PDF Document | C#
+title: Search Text in PDF | C#
 linktitle: Search and Get Text
 type: docs
 weight: 60

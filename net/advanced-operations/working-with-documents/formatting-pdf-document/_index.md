@@ -1,5 +1,5 @@
 ---
-title: Formatting PDF Document using Aspose.PDF for .NET
+title: Formatting PDF Document 
 linktitle: Formatting PDF Document
 type: docs
 weight: 11

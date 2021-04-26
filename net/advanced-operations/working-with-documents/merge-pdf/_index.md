@@ -1,5 +1,5 @@
 ---
-title: Merge PDF programmatically
+title: Merge PDF | C#
 linktitle: Merge PDF files
 type: docs
 weight: 50
@@ -8,9 +8,9 @@ description: This page explain how to merge PDF documents into a single PDF file
 aliases:
     - /net/merge-document/
     - /net/concatenate-pdf-files/
-lastmod: "2021-04-21"
+lastmod: "2021-04-23"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

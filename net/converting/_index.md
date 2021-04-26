@@ -1,5 +1,5 @@
 ---
-title: Convert PDF document
+title: Aspose.PDF Converter
 linktitle: Convert PDF document
 type: docs
 weight: 70
