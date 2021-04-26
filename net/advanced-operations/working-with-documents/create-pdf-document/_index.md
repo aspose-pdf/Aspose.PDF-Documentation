@@ -1,5 +1,5 @@
 ---
-title: Create PDF Document using Aspose.PDF for .NET
+title: Create PDF C#
 linktitle: Create PDF Document
 type: docs
 weight: 10

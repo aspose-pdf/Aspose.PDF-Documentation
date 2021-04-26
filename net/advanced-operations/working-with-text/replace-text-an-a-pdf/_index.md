@@ -1,5 +1,5 @@
 ---
-title: Replace Text in PDF using C#
+title: Replace Text in PDF | C#
 linktitle: Replace Text in PDF
 type: docs
 weight: 40
@@ -7,9 +7,9 @@ url: /net/replace-text-in-pdf/
 description: Learn more about various ways of replacing and removing text from PDF. Aspose.PDF allows replacing text in a particular region or with a regular expression.
 aliases:
     - /net/replace-text-in-a-pdf-document/
-lastmod: "2021-02-26"
+lastmod: "2021-04-23"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

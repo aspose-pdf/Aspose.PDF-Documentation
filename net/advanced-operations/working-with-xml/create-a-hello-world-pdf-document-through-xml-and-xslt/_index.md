@@ -1,5 +1,5 @@
 ---
-title: Create a Hello World PDF Document through XML and XSLT
+title: XML file to PDF document using XSLT
 linktitle: Create a Hello World PDF Document through XML and XSLT
 type: docs
 weight: 10

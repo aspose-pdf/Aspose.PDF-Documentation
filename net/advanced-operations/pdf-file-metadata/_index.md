@@ -1,5 +1,5 @@
 ---
-title: Working with PDF File Metadata | C#
+title: C# Get File Metadata
 linktitle: PDF File Metadata
 type: docs
 weight: 140

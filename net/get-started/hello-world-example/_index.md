@@ -1,5 +1,5 @@
 ---
-title: Hello World С# Example
+title: Aspose.PDF С# Example
 linktitle: Hello World Example
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: Create or Add Table In PDF using C# and Aspose.PDF for .NET
+title: Table In PDF | C#
 linktitle: Create or Add Table
 type: docs
 weight: 10

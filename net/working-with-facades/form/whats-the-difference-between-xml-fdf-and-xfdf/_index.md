@@ -1,5 +1,5 @@
 ---
-title: Whats the Difference Between XML, FDF and XFDF
+title: XFDF Format
 type: docs
 weight: 30
 url: /net/whats-the-difference-between-xml-fdf-and-xfdf/
