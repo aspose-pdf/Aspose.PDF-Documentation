@@ -1,17 +1,17 @@
 ---
 title: Extract fonts from PDF using Java
-linktitle: Extract fonts from PDF
+linktitle: Extract fonts
 type: docs
 weight: 30
 url: /java/extract-fonts-from-pdf/
 description: How to extract font from PDF using Aspose.PDF for Java
-lastmod: "2021-02-04"
+lastmod: "2021-04-29"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-In case you want to get all fonts from a PDF document, you can use `Document.IDocumentFontUtilities.getAllFonts()` method provided in Document class. 
+In case you want to get all fonts from a PDF document, you can use `Document.IDocumentFontUtilities.getAllFonts()` method provided in Document class.
 Please check following code snippet in order to get all fonts from an existing PDF document:
 
 ```java

@@ -1,13 +1,13 @@
 ---
-title: Convert HTML to PDF | C#
+title: HTML to PDF | C#
 linktitle: Convert HTML to PDF
 type: docs
 weight: 280
 url: /net/convert-html-to-pdf/
-lastmod: "2021-01-15"
+lastmod: "2021-04-23"
 description: You can convert HTML to PDF in a way convenient for you, in a quick way, and in an advanced way. Also, the way is described here Convert Web page to PDF.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

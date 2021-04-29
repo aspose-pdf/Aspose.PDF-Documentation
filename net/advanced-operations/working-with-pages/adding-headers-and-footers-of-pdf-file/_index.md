@@ -1,6 +1,6 @@
 ---
-title: Add PDF Header and Footer with Aspose.PDF
-linktitle: Add PDF Header and Footer
+title: Add Header and Footer to PDF
+linktitle: Add Header and Footer to PDF
 type: docs
 weight: 70
 url: /net/add-headers-and-footers-of-pdf-file/
