@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/extract-data-from-acroform/
 description: AcroForms exists in many PDF documents. This article aims to help you understand how to extract data from AcroForms using Java and the Aspose.PDF.
-lastmod: "2021-02-03"
+lastmod: "2021-04-29"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -42,7 +42,6 @@ public static void ExtractFormDataByName() {
     com.aspose.pdf.TextBoxField textBoxField1 = (com.aspose.pdf.TextBoxField)document.getForm().get("Last Name");
 
     System.out.println("Last Name :" + textBoxField1.getValue());
-
 }
 ```
 

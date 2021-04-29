@@ -1,11 +1,12 @@
 ---
-title: Extract Paragraph from PDF C#
-linktitle: Extract Paragraph from PDF
+title: Extract Paragraph from PDF using Java
+linktitle: Extract Paragraph
 type: docs
 weight: 20
 url: /java/extract-paragraph-from-pdf/
 description: This article describes how to use ParagraphAbsorber - a special tool in Aspose.PDF to extract text from PDF documents.
-lastmod: "2021-01-13"
+lastmod: "2021-04-29"
+draft: true
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -73,7 +74,7 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page)
     page.Contents.Add(new Aspose.Pdf.Operators.ClosePathStroke());
     page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 }
-``` 
+```
 
 **2- By iterating through paragraphs collection and get the text of them:**
 
