@@ -52,36 +52,6 @@ public static void ExtractFromAllPages(){
 }
 ```
 
-Call the [Accept](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) method on a particular page of the Document object. The Index is the particular page number from where text needs to be extracted.
-
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
-
-// Create TextAbsorber object to extract text
-TextAbsorber textAbsorber = new TextAbsorber();
-  
-// Accept the absorber for a particular page
-pdfDocument.Pages[1].Accept(textAbsorber);
-
-// Get the extracted text
-string extractedText = textAbsorber.Text;
-
-dataDir = dataDir + "extracted-text_out.txt";
-// Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir);
-
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-
-// Close the stream
-tw.Close();
-```
-
 ## Extract Text from Pages using Text Device
 
 You can use the **TextDevice** class to extract text from a PDF file. TextDevice uses [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) in its implementation, thus, in fact, they do the same thing but TextDevice just implemented to unify the "Device" approach to extract anything from the page ImageDevice, PageDevice, etc. TextAbsorber may extract text from Page, entire PDF or XForm, this TextAbsorber is more universal
