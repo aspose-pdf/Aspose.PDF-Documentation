@@ -1,11 +1,12 @@
  ---
-title: Text Formatting inside PDF isng Java
+title: Text Formatting inside PDF using Java
 linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /java/text-formatting-inside-pdf/
 description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, adding a border around the added text, text alignment for floating box contents and etc.
 lastmod: "2021-02-26"
+draft: true
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -1,5 +1,5 @@
 ---
-title: Extract Images from PDF C#
+title: Extract Images from PDF 
 linktitle: Extract Images from PDF
 type: docs
 weight: 20
