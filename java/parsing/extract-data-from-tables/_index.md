@@ -25,32 +25,33 @@ Aspose.PDF for Java has a tool to make it easy to retrieve tables. To extract ta
 
 The following example shows table extraction from the all pages:
 
-```csharp
+```java
 public static void Extract_Table()
 {
-    // Load source PDF document
-    var filePath="<... enter path to pdf file here ...>";
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);                        
-    foreach (var page in pdfDocument.Pages)
-    {
-        Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
-        absorber.Visit(page);
-        foreach (AbsorbedTable table in absorber.TableList)
-        {
-            Console.WriteLine("Table");
-            foreach (AbsorbedRow row in table.RowList)
-            {
-                foreach (AbsorbedCell cell in row.CellList)
-                {                                  
-                    foreach (TextFragment fragment in cell.TextFragments)
-                    {
-                        var sb = new StringBuilder();
-                        foreach (TextSegment seg in fragment.Segments)
-                            sb.Append(seg.Text);
-                        Console.Write($"{sb.ToString()}|");
-                    }                            
+        public static void Extract_Table() {
+        // Load source PDF document        
+        String filePath = "/home/aspose/pdf-examples/Samples/sample_table.pdf";
+        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
+        com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
+
+        // Scan pages
+        for (com.aspose.pdf.Page page : pdfDocument.getPages()) {
+            absorber.visit(page);
+            for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
+                System.out.println("Table");
+                // Iterate throught list of rows
+                for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
+                    // Iterate throught list of cell
+                    for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
+                        for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
+                            StringBuilder sb = new StringBuilder();
+                            for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
+                                sb.append(seg.getText());
+                            System.out.print(sb.toString() + "|");
+                        }
+                    }
+                    System.out.println();
                 }
-                Console.WriteLine();
             }
         }
     }

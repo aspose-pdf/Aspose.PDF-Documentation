@@ -18,104 +18,85 @@ We can get text from a PDF document by searching a particular text (using "plain
 
 **1- By drawing the border of sections and paragraphs of text on PDF page:**
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractParagraph()
-{
+```java
+public static void ExtractParagraph() {
     // The path to the documents directory.
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    Document doc = new Document(dataDir + "input.pdf");
-    Page page = doc.Pages[2];
+    Document doc = new Document(_dataDir + "input.pdf");
+    Page page = doc.getPages().get_Item(2);
 
     ParagraphAbsorber absorber = new ParagraphAbsorber();
-    absorber.Visit(page);
+    absorber.visit(page);
 
-    PageMarkup markup = absorber.PageMarkups[0];
+    PageMarkup markup = absorber.getPageMarkups().get(0);
 
-    foreach (MarkupSection section in markup.Sections)
-    {
-        DrawRectangleOnPage(section.Rectangle, page);
-        foreach (MarkupParagraph paragraph in section.Paragraphs)
-        {
-            DrawPolygonOnPage(paragraph.Points, page);
+    for (MarkupSection section : markup.getSections()) {
+        DrawRectangleOnPage(section.getRectangle(), page);
+        for (MarkupParagraph paragraph : section.getParagraphs()) {
+            DrawPolygonOnPage(paragraph.getPoints(), page);
         }
     }
 
-    doc.Save(dataDir + "output_out.pdf");
+    doc.save(_dataDir + "output_out.pdf");
 }
 
-private static void DrawRectangleOnPage(Rectangle rectangle, Page page)
-{
-    page.Contents.Add(new Aspose.Pdf.Operators.GSave());
-    page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
-    page.Contents.Add(new Aspose.Pdf.Operators.SetRGBColorStroke(0, 1, 0));
-    page.Contents.Add(new Aspose.Pdf.Operators.SetLineWidth(2));
-    page.Contents.Add(
-        new Aspose.Pdf.Operators.Re(rectangle.LLX,
-            rectangle.LLY,
-            rectangle.Width,
-            rectangle.Height));
-    page.Contents.Add(new Aspose.Pdf.Operators.ClosePathStroke());
-    page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+private static void DrawRectangleOnPage(Rectangle rectangle, Page page) {
+    page.getContents().add(new GSave());
+    page.getContents().add(new ConcatenateMatrix(1, 0, 0, 1, 0, 0));
+    page.getContents().add(new SetRGBColorStroke(0, 1, 0));
+    page.getContents().add(new SetLineWidth(2));
+    page.getContents().add(new Re(rectangle.getLLX(), rectangle.getLLY(), rectangle.getWidth(), rectangle.getHeight()));
+    page.getContents().add(new ClosePathStroke());
+    page.getContents().add(new GRestore());
 }
 
-private static void DrawPolygonOnPage(Point[] polygon, Page page)
-{
-    page.Contents.Add(new Aspose.Pdf.Operators.GSave());
-    page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
-    page.Contents.Add(new Aspose.Pdf.Operators.SetRGBColorStroke(0, 0, 1));
-    page.Contents.Add(new Aspose.Pdf.Operators.SetLineWidth(1));
-    page.Contents.Add(new Aspose.Pdf.Operators.MoveTo(polygon[0].X, polygon[0].Y));
-    for (int i = 1; i < polygon.Length; i++)
-    {
-        page.Contents.Add(new Aspose.Pdf.Operators.LineTo(polygon[i].X, polygon[i].Y));
+private static void DrawPolygonOnPage(Point[] polygon, Page page) {
+    page.getContents().add(new GSave());
+    page.getContents().add(new ConcatenateMatrix(1, 0, 0, 1, 0, 0));
+    page.getContents().add(new SetRGBColorStroke(0, 0, 1));
+    page.getContents().add(new SetLineWidth(1));
+    page.getContents().add(new MoveTo(polygon[0].getX(), polygon[0].getY()));
+    for (int i = 1; i < polygon.length; i++) {
+        page.getContents().add(new LineTo(polygon[i].getX(), polygon[i].getY()));
     }
-    page.Contents.Add(new Aspose.Pdf.Operators.LineTo(polygon[0].X, polygon[0].Y));
-    page.Contents.Add(new Aspose.Pdf.Operators.ClosePathStroke());
-    page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+    page.getContents().add(new LineTo(polygon[0].getX(), polygon[0].getY()));
+    page.getContents().add(new ClosePathStroke());
+    page.getContents().add(new GRestore());
 }
 ```
 
 **2- By iterating through paragraphs collection and get the text of them:**
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Open an existing PDF file
-Document doc = new Document(dataDir + "input.pdf");
-// Instantiate ParagraphAbsorber
-ParagraphAbsorber absorber = new ParagraphAbsorber();
-absorber.Visit(doc);
+```java
+public static void ExtractParagraph02() {
+        // Open an existing PDF file
+        Document doc = new Document(_dataDir + "input.pdf");
+        // Instantiate ParagraphAbsorber
+        ParagraphAbsorber absorber = new ParagraphAbsorber();
+        absorber.visit(doc);
 
-foreach (PageMarkup markup in absorber.PageMarkups)
-{
-    int i = 1;
-    foreach (MarkupSection section in markup.Sections)
-    {
-        int j = 1;
+        for (PageMarkup markup : absorber.getPageMarkups()) {
+            int i = 1;
+            for (MarkupSection section : markup.getSections()) {
+                int j = 1;
 
-        foreach (MarkupParagraph paragraph in section.Paragraphs)
-        {
-            StringBuilder paragraphText = new StringBuilder();
+                for (MarkupParagraph paragraph : section.getParagraphs()) {
+                    StringBuilder paragraphText = new StringBuilder();
 
-            foreach (List<TextFragment> line in paragraph.Lines)
-            {
-                foreach (TextFragment fragment in line)
-                {
-                    paragraphText.Append(fragment.Text);
+                    for (java.util.List<TextFragment> line : paragraph.getLines()) {
+                        for (TextFragment fragment : line) {
+                            paragraphText.append(fragment.getText());
+                        }
+                        paragraphText.append("\r\n");
+                    }
+                    paragraphText.append("\r\n");
+
+                    System.out.println("Paragraph "+j+" of section "+ i + " on page"+ ":"+markup.getNumber());
+                    System.out.println(paragraphText.toString());
+
+                    j++;
                 }
-                paragraphText.Append("\r\n");
+                i++;
             }
-            paragraphText.Append("\r\n");
-
-            Console.WriteLine("Paragraph {0} of section {1} on page {2}:", j, i, markup.Number);
-            Console.WriteLine(paragraphText.ToString());
-
-            j++;
         }
-        i++;
     }
-}
 ```
-
