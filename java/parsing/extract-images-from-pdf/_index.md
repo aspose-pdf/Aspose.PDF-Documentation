@@ -1,17 +1,17 @@
 ---
-title: Extract Images from PDF C#
-linktitle: Extract Images from PDF
+title: Extract Images from PDF using Java
+linktitle: Extract Images
 type: docs
 weight: 20
 url: /java/extract-images-from-the-pdf-file/
 description: How to extract a part of the image from PDF using Aspose.PDF for Java
-lastmod: "2021-02-03"
+lastmod: "2021-04-29"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Each page in PDF document contain resources (images, forms and fonts). We can access to these resources by calling [getResources](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) method. Class [Resources](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Resources) contain [XImageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) and we can get list of images by calling [https://apireference.aspose.com/pdf/java/com.aspose.pdf/Resources#getImages--] method.
+Each page in PDF document contain resources (images, forms and fonts). We can access to these resources by calling [getResources](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) method. Class [Resources](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Resources) contain [XImageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) and we can get list of images by calling [getImages](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Resources#getImages--) method.
 
 Thus to extract image from page, we need to get reference to the page, next to the page resources and last to the image collection.
 Particular image we can extract for example by index.
@@ -22,7 +22,7 @@ This object provides a [Save](https://apireference.aspose.com/pdf/java/com.aspos
  ```java
  public static void Extract_Fonts(){
     // The path to the documents directory.
-    String dataDir = "/home/admin1/pdf-examples/Samples/";
+    String dataDir = "/home/aspose/pdf-examples/Samples/";
     String filePath = dataDir + "ExtractImages.pdf";
 
     // Load PDF document
