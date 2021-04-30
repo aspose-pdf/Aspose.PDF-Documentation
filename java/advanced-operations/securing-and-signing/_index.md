@@ -21,4 +21,3 @@ document behavior during and after signing.
 - [Digitally sign PDF file](/pdf/java/digitally-sign-pdf-file/)
 - [Set Privileges, Encrypt and Decrypt PDF File](/pdf/java/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [Extract Image and Signature Information](/pdf/java/extract-image-and-signature-information/)
-- [Sign PDF Document From Smart Card](/pdf/java/sign-pdf-document-from-smart-card/)

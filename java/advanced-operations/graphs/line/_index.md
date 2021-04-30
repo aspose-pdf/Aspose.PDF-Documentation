@@ -60,7 +60,7 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
 
 ![Add Line](add_line.png)
 
-## How to add Dotted Dashed Lineto your PDF document
+## How to add Dotted Dashed Line to your PDF document
 
 ```java
 public static void ExampleDashedLine() {
