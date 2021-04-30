@@ -62,6 +62,7 @@ public class ExampleMultimediaAnnotation {
         document.save(_dataDir + "sample_swf.pdf");
     }
 ```
+
 ## Add Sound Annotation 
 
 The following code snippet shows how to add Sound Annotation to a PDF file: 
@@ -86,6 +87,7 @@ The following code snippet shows how to add Sound Annotation to a PDF file:
         document.save(_dataDir + "sample_wav.pdf");
     }
 ```
+
 ## Add RichMediaAnnotation
 
 The following code snippet shows how to add RichMediaAnnotation to a PDF file:
@@ -142,6 +144,7 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
         doc.save(_dataDir + "RichMediaAnnotation.pdf");
     }
 ```
+
 ## Get MultimediaAnnotation 
 
 Please try using the following code snippet to Get MultimediaAnnotation from PDF document.
@@ -162,6 +165,7 @@ public static void GetMultimediaAnnotation() {
         }
     }        
 ```
+
 ## Delete MultimediaAnnotation
 
 The following code snippet shows how to Delete MultimediaAnnotation from PDF file.

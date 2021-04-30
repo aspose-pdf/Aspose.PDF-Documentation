@@ -58,6 +58,7 @@ public class ExampleWatermarkAnnotation {
         document.save(_dataDir + "sample_watermark.pdf");
     }
 ```
+
 ## Get Watermark Annotation
 
 ```java

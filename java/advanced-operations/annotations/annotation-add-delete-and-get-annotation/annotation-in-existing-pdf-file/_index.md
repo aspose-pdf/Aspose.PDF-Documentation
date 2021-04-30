@@ -1,6 +1,6 @@
 ---
-title: PDF Annotation in existing PDF file
-linktitle: PDF Annotation in existing PDF file
+title: PDF Text Annotation
+linktitle: PDF Text Annotation
 type: docs
 weight: 10
 url: /java/pdf-annotation-in-existing-pdf-file/
@@ -27,34 +27,40 @@ To add an annotation to a particular page, add it to that page’s Annotations c
 
 The following code snippet shows you how to add an annotation in a PDF page.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+```java
+package com.aspose.pdf.examples;
 
-// Open document
-Document pdfDocument = new Document(dataDir + "AddAnnotation.pdf");
+import com.aspose.pdf.*;
+import java.util.*;
 
-// Create annotation
-TextAnnotation textAnnotation = new TextAnnotation(pdfDocument.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600));
-textAnnotation.Title = "Sample Annotation Title";
-textAnnotation.Subject = "Sample Subject";
-textAnnotation.State = AnnotationState.Accepted;
-textAnnotation.Contents = "Sample contents for the annotation";
-textAnnotation.Open = true;
-textAnnotation.Icon = TextIcon.Key;
+public class ExampleTextAnnotation {
+    
+    private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
 
-Border border = new Border(textAnnotation);
-border.Width = 5;
-border.Dash = new Dash(1, 1);
-textAnnotation.Border = border;
-textAnnotation.Rect = new Aspose.Pdf.Rectangle(200, 400, 400, 600);
+    public static void AddTextAnnotation()
+    {
+        // Load the PDF file
+        Document document = new Document(_dataDir + "sample.pdf");
+        Page page = document.getPages().get_Item(1);
+        Rectangle rect = new Rectangle(200, 750, 400, 790);
+        TextAnnotation textAnnotation = new TextAnnotation(page, rect);
 
-// Add annotation in the annotations collection of the page
-pdfDocument.Pages[1].Annotations.Add(textAnnotation);
-dataDir = dataDir + "AddAnnotation_out.pdf";
-// Save output file
-pdfDocument.Save(dataDir);
+        textAnnotation.setTitle("Aspose User");
+        textAnnotation.setSubject("Sample Subject");
+        textAnnotation.setState (AnnotationState.Accepted);
+        textAnnotation.setContents("Sample contents for the annotation");
+        textAnnotation.setOpen(true);
+        textAnnotation.setIcon(TextIcon.Circle);
+
+        Border border = new Border(textAnnotation);
+        border.setWidth(5);
+        border.setDash(new Dash(1, 1));
+        textAnnotation.setBorder(border);
+        textAnnotation.setRect(rect);
+
+        page.getAnnotations().add(textAnnotation);
+        document.save(_dataDir + "sample_textannot.pdf");
+    }
 ```
 
 ## Delete All Annotations from Page of PDF File
@@ -63,134 +69,45 @@ A [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object’
 
 The following code snippet shows you how to delete all the annotations from a particular page.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+```java
+    public static void DeleteTextAnnotation() {
+         // Load the PDF file
+         Document document = new Document(_dataDir + "sample_textannot.pdf");
 
-// Open document
-Document pdfDocument = new Document(dataDir + "DeleteAllAnnotationsFromPage.pdf");
-
-// Delete particular annotation
-pdfDocument.Pages[1].Annotations.Delete();
-
-dataDir = dataDir + "DeleteAllAnnotationsFromPage_out.pdf";
-// Save updated document
-pdfDocument.Save(dataDir);
-```
-
-## Delete Particular Annotation from PDF File
-
-{{% alert color="primary" %}}
-
-You can check the quality of Aspose.PDF and get the results online at this link:
-[products.aspose.app/pdf/annotation](https://products.aspose.app/pdf/annotation)
-
-{{% /alert %}}
-
-Aspose.PDF allows you to remove a particular Annotation from PDF file. This topic explains how.
-
-To delete a particular annotation from a PDF, call the AnnotationCollection collection’s Delete method. This collection belongs to the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object. The Delete method requires the index of the annotation you want to delete. Then, save the updated PDF file. The following code snippet shows how to delete a particular annotation.
-
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// Open document
-Document pdfDocument = new Document(dataDir + "DeleteParticularAnnotation.pdf");
-
-// Delete particular annotation
-pdfDocument.Pages[1].Annotations.Delete(1);
-
-dataDir = dataDir + "DeleteParticularAnnotation_out.pdf";
-// Save updated document
-pdfDocument.Save(dataDir);
+         // Filter annotations using AnnotationSelector
+         Page page = document.getPages().get_Item(1);
+         AnnotationSelector annotationSelector = new AnnotationSelector(
+                 new TextAnnotation(page, Rectangle.getTrivial()));
+         page.accept(annotationSelector);
+         List<Annotation> TextAnnotations = annotationSelector.getSelected();
+ 
+         // delete annotations
+         for (Annotation fa : TextAnnotations) {
+            page.getAnnotations().delete(fa);
+        }
+        document.save(_dataDir + "sample_textannot_del.pdf");
+    }
 ```
 
 ## Get All Annotations from Page of PDF Document
 
 Aspose.PDF allows you to get annotations from an entire document, or from a given page. To get all annotations from the page in a PDF document, loop through the [AnnotationCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/AnnotationCollection) collection of desired page resources. The following code snippet shows you how to get all the annotations of a page.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+```java
+  public static void GetTextAnnotation() {
+        // Load the PDF file
+        Document document = new Document(_dataDir + "sample_textannot.pdf");
 
-// Open document
-Document pdfDocument = new Document(dataDir + "GetAllAnnotationsFromPage.pdf");
+        // Filter annotations using AnnotationSelector
+        Page page = document.getPages().get_Item(1);
+        AnnotationSelector annotationSelector = new AnnotationSelector(
+                new TextAnnotation(page, Rectangle.getTrivial()));
+        page.accept(annotationSelector);
+        List<Annotation> TextAnnotations = annotationSelector.getSelected();
 
-// Loop through all the annotations
-foreach (MarkupAnnotation annotation in pdfDocument.Pages[1].Annotations)
-{
-    // Get annotation properties
-    Console.WriteLine("Title : {0} ", annotation.Title);
-    Console.WriteLine("Subject : {0} ", annotation.Subject);
-    Console.WriteLine("Contents : {0} ", annotation.Contents);
-}
-```
-
-Please note that to get all annotations from the whole PDF, you have to loop through the document’s PageCollection Class collection before navigating through the AnnotationCollection class collection. You can get each annotation of the collection in a base annotation type called MarkupAnnotation Class and then show its properties.
-
-## Get Particular Annotation from PDF File
-
-Annotations are associated with individual pages and stored in a [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s [AnnotationCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/AnnotationCollection). To get a particular annotation, specify its index. This returns an [Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/annotation) object which needs to be cast to a particular annotation type, for example [TextAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAnnotation). The following code snippet shows how to get a particular annotation and its properties.
-
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// Open document
-Document pdfDocument = new Document(dataDir + "GetParticularAnnotation.pdf");
-
-// Get particular annotation
-TextAnnotation textAnnotation = (TextAnnotation)pdfDocument.Pages[1].Annotations[1];
-
-// Get annotation properties
-Console.WriteLine("Title : {0} ", textAnnotation.Title);
-Console.WriteLine("Subject : {0} ", textAnnotation.Subject);
-Console.WriteLine("Contents : {0} ", textAnnotation.Contents);
-```
-
-## Get Resource of Annotation
-
-Aspose.PDF allows you to get a resource of annotation from an entire document, or from a given page. The following code snippet shows you how to get the resource of annotation as [FileSpecification](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/FileSpecification) object of input PDF file.
-
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// Open document
-Document doc = new Document(dataDir + "AddAnnotation.pdf");
-//Create annotation
-ScreenAnnotation sa = new ScreenAnnotation(doc.Pages[1], new Rectangle(100, 400, 300, 600), dataDir + "AddSwfFileAsAnnotation.swf");
-doc.Pages[1].Annotations.Add(sa);
-// Save Doucument
-doc.Save(dataDir + "GetResourceOfAnnotation_Out.pdf");
-
-// Open document
-Document doc1 = new Document(dataDir + "GetResourceOfAnnotation_Out.pdf");
-
-//Get action of the annotation
-RenditionAction action = (doc.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction;
-
-//Get rendition of the rendition action
-Rendition rendition = ((doc.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction).Rendition;
-
-//Media Clip
-MediaClip clip = (rendition as MediaRendition).MediaClip;
-FileSpecification data = (clip as MediaClipData).Data;
-MemoryStream ms = new MemoryStream();
-byte[] buffer = new byte[1024];
-int read = 0;
-//Data of media are accessible in FileSpecification.Contents
-Stream source = data.Contents;
-while ((read = source.Read(buffer, 0, buffer.Length)) > 0)
-{
-    ms.Write(buffer, 0, read);
-}
-Console.WriteLine(rendition.Name);
-Console.WriteLine(action.RenditionOperation);
+        // print results
+        for (Annotation fa : TextAnnotations) {
+            System.out.println(fa.getRect());
+        }
+    }
 ```

@@ -73,6 +73,7 @@ public class ExamplePolygonAnnotation {
         }
     }   
 ```
+
 ## Get Polygon and Polyline Annotations
 
 Please try using the following code snippet to Get Polygon and Polyline Annotations in PDF document.
@@ -93,6 +94,7 @@ Please try using the following code snippet to Get Polygon and Polyline Annotati
         }
     }       
 ```
+
 ## Delete Polygon and Polyline Annotations
 
 The following code snippet shows how Delete Polygon and Polyline Annotations from a PDF file.

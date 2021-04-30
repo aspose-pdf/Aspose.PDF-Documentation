@@ -96,6 +96,7 @@ public static void GetCircleAnnotation() {
         }
     }
 ```
+
 ## Delete Circle Annotation
 
 The following code snippet shows how to Delete Circle Annotation from PDF file.

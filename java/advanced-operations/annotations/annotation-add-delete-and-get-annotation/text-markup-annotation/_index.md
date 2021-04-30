@@ -198,8 +198,8 @@ Please try using the following code snippet to Get Text Markup Annotation from P
 
 The following code snippet shows how to Delete Text Markup Annotation from PDF file.
 
-```csharp
-    public static void DeleteTextMarkupAnnotation() {
+```java
+   public static void DeleteTextMarkupAnnotation() {
         // Load the PDF file
         Document document = new Document(_dataDir + "sample_mod.pdf");
         Page page = document.getPages().get_Item(1);
@@ -219,6 +219,5 @@ The following code snippet shows how to Delete Text Markup Annotation from PDF f
             page.getAnnotations().delete(ta);
         }
         document.save(_dataDir + "sample_del.pdf");
-    }
-}       
+    }    
 ```

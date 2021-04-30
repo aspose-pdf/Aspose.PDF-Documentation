@@ -66,6 +66,7 @@ public class ExampleLineAnnotation {
         }
     }
 ```
+
 ## Get Line Annotation
 
 Please try using the following code snippet to Get Line Annotation in PDF document.
@@ -90,6 +91,7 @@ Please try using the following code snippet to Get Line Annotation in PDF docume
         }
     }
 ```
+
 ## Delete Line Annotation
 
 The following code snippet shows how Delete Line Annotation from a PDF file.

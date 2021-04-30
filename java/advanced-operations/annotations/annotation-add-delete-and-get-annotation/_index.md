@@ -11,8 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-- [PDF Annotation in existing PDF file](/pdf/java/pdf-annotation-in-existing-pdf-file/) - possible manipulations with annotations in your PDF
-document.
+- [PDF Annotation in existing PDF file](/pdf/java/pdf-annotation-in-existing-pdf-file/) - possible manipulations with annotations in your PDF document.
 - [PDF Free ext Annotation](/pdf/java/free-text-annotation/) - adds a note that is always visible on the PDF.
 - [PDF Link Annotation](/pdf/java/link-annotation/) - is a hypertext link that leads to a destination elsewhere in the document.
 - [PDF Line Annotation](/pdf/java/line-annotation/) - adds a straight line on the PDF.
@@ -24,4 +23,4 @@ document.
 - [PDF InkAnnotation](/pdf/java/ink-annotation/) - draws free-hand scribbles on the PDF.
 - [PDF Popup Annotation](/pdf/java/popup-annotation/) - add, get and delete Popup Annotation in your PDF.
 - [PDF Multimedia Annotation](/pdf/java/multimedia-annotation/) - all details about screen, sound, movie annotations.
-- [PDF Watermark Annotation](/pdf/java/watermarkannotation/) - control the opacity of Watermark by using the opacity property..
+- [PDF Watermark Annotation](/pdf/java/watermarkannotation/) - control the opacity of Watermark by using the opacity property.

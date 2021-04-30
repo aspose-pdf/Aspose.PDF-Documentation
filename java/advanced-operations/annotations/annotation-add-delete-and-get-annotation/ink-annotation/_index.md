@@ -1,5 +1,5 @@
 ---
-title: PDF Ink Annotation with C#
+title: PDF Ink Annotation with Java
 linktitle: Ink Annotation
 type: docs
 weight: 100
@@ -122,6 +122,7 @@ public static void GetInkAnnotation() {
         }
     }
 ```
+
 ## Delete InkAnnotation
 
 Aspose.PDF for Java allows you to delete [InkAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/InkAnnotation) from your PDF file.

@@ -111,6 +111,7 @@ document.getForm().get("btn" + document.getPages().size() + "_4").setReadOnly(tr
 document.save(_dataDir + "sample_widgetannot_2.pdf");
 }
 ```
+
 ## How to delete Widget Annotation 
 
 Aspose.PDF for Java has rules for removing annotations from your file:
