@@ -1,5 +1,5 @@
 ---
-title: Add Text to PDF file uisng Java
+title: Add Text to PDF file using Java
 linktitle: Add Text to PDF file
 type: docs
 weight: 10
@@ -405,7 +405,6 @@ In earlier release versions, the Footnote support was provided but it was only a
 ## How to Create EndNotes
 
 An EndNote is source citation that refers the readers to a specific place at the end of the paper where they can find out the source of the information or words quoted or mentioned in the paper.
-
 When using Endnotes, your quoted or paraphrased sentence or summarized material is followed by a superscript number.
 
 The following example demonstrates how to add an Endnote in PDF page.
