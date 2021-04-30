@@ -21,6 +21,5 @@ sitemap:
 - [PDF Widget Annotation](/pdf/java/widget-annotation/) - is a graphical representation of a form field on specific pages.
 - [PDF Caret Annotation](/pdf/java/caret-annotation/) - is a symbol that indicates text editing.
 - [PDF InkAnnotation](/pdf/java/ink-annotation/) - draws free-hand scribbles on the PDF.
-- [PDF Popup Annotation](/pdf/java/popup-annotation/) - add, get and delete Popup Annotation in your PDF.
 - [PDF Multimedia Annotation](/pdf/java/multimedia-annotation/) - all details about screen, sound, movie annotations.
 - [PDF Watermark Annotation](/pdf/java/watermarkannotation/) - control the opacity of Watermark by using the opacity property.

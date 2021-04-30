@@ -129,4 +129,3 @@ The link annotation does not contain text. Instead, the text is placed in the co
         document.save(_dataDir + "UpdateLinkTextColor_out.pdf");        
     }
 ```
-

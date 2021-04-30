@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Links let you jump to other locations in the same document, to other electronic documents including attachments, or to websites. You can use links to initiate actions or to ensure that your reader has immediate access to related information. 
+Links let you jump to other locations in the same document, to other electronic documents including attachments, or to websites. You can use links to initiate actions or to ensure that your reader has immediate access to related information.
 
 - [Create Links](/pdf/java/create-links/) - learn simply a way to create links in your PDF file using Java.
 - [Update Links](/pdf/java/update-links) - try to set target to PDF, try to set link destination to web address, try to set link target to another PDF file, update link text color.

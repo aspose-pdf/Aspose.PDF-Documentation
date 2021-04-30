@@ -135,6 +135,4 @@ In order to accomplish this requirement, we can set open status for each outline
         // save the PDF file
         doc.save(_dataDir+"Bookmarks_Expanded.pdf");
     }
-
-}
 ```

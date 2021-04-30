@@ -19,8 +19,8 @@ The following table indicates the Annotation types that Aspose.PDF for Java supp
 |[Text](/pdf/java/text-annotation/)|Text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
 |[Link](/pdf/java/link-annotation/)|Link annotations|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
 =======
-|[Text](/pdf/java/pdf-annotation-in-existing-pdf-file/)|Text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}} | 
-|[Link](/pdf/java/link-annotation/)|Link annotations|{{< emoticons/tick >}}|{{< emoticons/tick >}} | 
+|[Text](/pdf/java/pdf-annotation-in-existing-pdf-file/)|Text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/java/link-annotation/)|Link annotations|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
 >>>>>>> 13b2404b0a72f910305fd1d126d2caf725790014
 |[FreeText](/pdf/java/free-text-annotation/)|(PDF 1.3) Free text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Line](/pdf/java/line-annotation/)|(PDF 1.3) Line annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
@@ -32,14 +32,13 @@ The following table indicates the Annotation types that Aspose.PDF for Java supp
 <<<<<<< HEAD
 |[Underline](/pdf/java/text-markup-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 =======
-|[Underline](/pdf/java/text-markup-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}| 
+|[Underline](/pdf/java/text-markup-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 >>>>>>> 13b2404b0a72f910305fd1d126d2caf725790014
 |[Squiggly](/pdf/java/text-markup-annotation/)|(PDF 1.4) Squiggly-underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[StrikeOut](/pdf/java/text-markup-annotation/)|(PDF 1.3) Strikeout annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Stamp](/pdf/java/stamping/)|(PDF 1.3) Rubber stamp annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Caret](/pdf/java/caret-annotation/)|(PDF 1.5) Caret annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Ink](/pdf/java/ink-annotation/)|(PDF 1.3) Ink annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Popup](/pdf/java/popup-annotation/)|(PDF 1.3) Pop-up annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Sound](/pdf/java/multimedia-annotation/)|(PDF 1.2) Sound annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Movie](/pdf/java/multimedia-annotation/)|(PDF 1.2) Movie annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Widget](/pdf/java/widget-annotation/)|(PDF 1.2) Widget annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

@@ -40,5 +40,4 @@ The following code snippet shows you how to extract links from a PDF file.
         // Save the document with updated link
         //document.save(_dataDir + "ExtractLinks_out.pdf");
     }
-}
 ```
