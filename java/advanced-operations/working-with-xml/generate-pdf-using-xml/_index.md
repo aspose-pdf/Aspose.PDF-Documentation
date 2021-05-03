@@ -393,7 +393,7 @@ Let's create yet another file - the XSL-FO markup file to transform employees' d
 </xsl:stylesheet>
 ```
 
-Aspose.PDF has a special [XslFoLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) class that allows to apply XSL-FO tranformation.
+Aspose.PDF has a special [XslFoLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XslFoLoadOptions) class that allows to apply XSL-FO tranformation.
 The following snippet shows how to use this class with the sample files described above.
 
 ```java
@@ -425,7 +425,7 @@ Let's define the page with default parameters. Our page will have an A4 page siz
 </Document>
 ```
 
-To generate PDF document we will use [BindXml](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index) method.
+To generate PDF document we will use [bindXml](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#bindXml--) method.
 
 ```java
 public static void Example_XML_to_PDF() {
@@ -887,23 +887,22 @@ BindXML() method offers the feature to load XML file contents and Document.save(
 </Document>
 ```
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-
-// Instantiate Document object
-Document doc = new Document();
-// Bind source XML file
-doc.BindXml( dataDir + "log.xml");
-// Get reference of page object from XML
-Page page = (Page)doc.GetObjectById("mainSection");
-// Get reference of first TextSegment with ID boldHtml
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
-// Get reference of second TextSegment with ID strongHtml
-segment = (TextSegment)doc.GetObjectById("strongHtml");
-// Save resultant PDF file
-doc.Save(dataDir + "XMLToPDF_out.pdf");
+```java
+public static void UpdatingContentDynamically() {
+    // Instantiate Document object
+    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document();
+    // Bind source XML file
+    pdfDocument.bindXml(_dataDir + "log.xml");
+    
+    // Get reference of first TextSegment with ID boldHtml
+    TextSegment segment = (TextSegment)pdfDocument.getObjectById("boldHtml");
+    segment.setText("Demo 1");
+    // Get reference of second TextSegment with ID strongHtml
+    segment = (TextSegment)pdfDocument.getObjectById("strongHtml");
+    segment.setText("Demo 2");
+    // Save resultant PDF file
+    pdfDocument.save(_dataDir + "XMLToPDF_out.pdf");
+}
 ```
 
 ### Adding graphics elements to the page

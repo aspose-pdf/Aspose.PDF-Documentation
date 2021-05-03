@@ -11,9 +11,9 @@ sitemap:
     priority: 0.7
 ---
 
-PDF is the standard format for electronic documents. Now PDF files are used in production management, the sphere of various financial services, lawyers, in publishing, educational institutions. 
+PDF is the standard format for electronic documents. Now PDF files are used in production management, the sphere of various financial services, lawyers, in publishing, educational institutions.
 
-PDF file saves all fonts, colors, and structure of the source document regardless of software and hardware. Therefore, the PDF document will always be identical to the original - it will look and print as the original document. 
+PDF file saves all fonts, colors, and structure of the source document regardless of software and hardware. Therefore, the PDF document will always be identical to the original - it will look and print as the original document.
 
 The main PDF document goal was to preserve and protect the content and layout of a document. This is why PDFs are hard to edit and sometimes even extracting information from them is a problem.
 
@@ -26,5 +26,5 @@ You are able to do the following:
 - [Manipulate PDF Document](/pdf/java/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.
 - [Optimize PDF](/pdf/java/optimize-pdf/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
 - [Merge PDF](/pdf/java/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using C#.
-- [Split PDF](/pdf/java/split-document/) - split PDF pages into individual PDF files in your .NET applications. 
+- [Split PDF](/pdf/java/split-document/) - split PDF pages into individual PDF files in your Java applications.
 - [Working with Headings](/pdf/java/working-with-headings/) - you can create numbering in heading your PDF document with C#.

@@ -10,7 +10,7 @@ lastmod: "2021-03-31"
 
 ## Aspose.PDF for Java Approach
 
-Aspose.PDF for Java provides extensive support for dealing with PDF documents. It also supports the capability to convert the pages of PDF documents to a variety of image formats. The functionality described above can easily be achieved using Aspose.PDF for .NET.
+Aspose.PDF for Java provides extensive support for dealing with PDF documents. It also supports the capability to convert the pages of PDF documents to a variety of image formats. The functionality described above can easily be achieved using Aspose.PDF for Java.
 
 Aspose.PDF has distinct benefits:
 

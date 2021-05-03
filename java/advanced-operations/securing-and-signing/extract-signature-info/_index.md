@@ -13,7 +13,7 @@ sitemap:
 
 ## Extracting Image from Signature Field
 
-Aspose.PDF for .NET supports the feature to digitally sign the PDF files using the [SignatureField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) class and while signing the document, you can also set an image for SignatureAppearance. Now, this API also provides the capability to extract signature information as well as the image associated with the signature field.
+Aspose.PDF for Java supports the feature to digitally sign the PDF files using the [SignatureField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) class and while signing the document, you can also set an image for SignatureAppearance. Now, this API also provides the capability to extract signature information as well as the image associated with the signature field.
 
 In order to extract signature information, we have introduced the [ExtractImage](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SignatureField#extractImage--) method to the [SignatureField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) class. Please take a look at the following code snippet which demonstrates the steps to extract an image from the SignatureField object:
 
@@ -54,9 +54,9 @@ Sometimes you may have a requirement to only replace the image of an already pre
 
 ## Extract Signature Information
 
-Aspose.PDF for Java supports the feature to digitally sign the PDF files using the [SignatureField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) class. Currently, we can also determine the validity of the certificate but we cannot extract the whole certificate. The information which can be extracted is a public key, thumbprint, issuer, etc.
+Aspose.PDF for Java supports the feature to digitally sign the PDF files using the [SignatureField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) class. Currently, we can also determine the validity of the certificate but we cannot extract the whole certificate. The information which can be extracted is a public key, thumbprint, issuer, etc.
 
-To extract signature information, we have introduced the [ExtractCertificate](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) method to the [SignatureField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) class. Please take a look at the following code snippet which demonstrates the steps to extract the certificate from SignatureField object:
+To extract signature information, we have introduced the [ExtractCertificate](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SignatureField#extractCertificate--) method to the [SignatureField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) class. Please take a look at the following code snippet which demonstrates the steps to extract the certificate from SignatureField object:
 
 ```java
     public static void ExtractSignatureInformation() throws IOException {
