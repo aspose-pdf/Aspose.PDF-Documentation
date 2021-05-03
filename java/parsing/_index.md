@@ -2,7 +2,7 @@
 title: Parsing PDF documents using Java
 linktitle: Parsing PDF documents
 type: docs
-weight: 80
+weight: 50
 url: /java/parsing/
 description: Do you want to extract data from PDF documents? Discover various PDF data extraction methods with Aspose.PDF for .NET.
 lastmod: "2020-12-16"

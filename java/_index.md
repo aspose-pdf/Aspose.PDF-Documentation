@@ -11,7 +11,7 @@ lastmod: "2020-12-16"
 
 {{% alert color="primary" %}}
 
-![Aspose.PDF for Java Logo](home_1.png)
+![todo:image_alt_text](home_1)
 
 <h2>Welcome to Aspose.PDF for Java</h2>
 
@@ -19,8 +19,18 @@ Aspose.PDF is a Java component built to allow developers to create PDF documents
 
 {{% /alert %}}
 
-<h2>Aspose.PDF for Java Resources</h2>
+<h2>Chapters </h2>
 
+- [What's new](/pdf/java/whatsnew/)
+- [Overview](/pdf/java/overview/)
+- [Get Started](/pdf/jav/get-started/)
+- [Basic operations](/pdf/java/basic-operations/)
+- [Converting documents](/pdf/java/converting/)
+- [Parsing PDF documents](/pdf/java/parsing/)
+- [Advanced operations](/pdf/java/advanced-operations/)
+- [Release Notes](/pdf/java/release-notes/)
+
+<h2> Aspose.PDF for Java Resources</h2>
 Following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.PDF for Java Online Documentation](/pdf/java/)
