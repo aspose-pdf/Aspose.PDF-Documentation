@@ -1,7 +1,7 @@
 ---
 title: Plugins
 type: docs
-weight: 30
+weight: 90
 url: /java/plugins/
 lastmod: "2021-04-03"
 sitemap:
