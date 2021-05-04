@@ -19,7 +19,7 @@ Try online: You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-When converting large PDF file with several pages to HTML format, the output appears as a single HTML page. It can end up being very long. To control page size, it is possible to split the output into several pages during PDF to HTML conversion. 
+When converting large PDF file with several pages to HTML format, the output appears as a single HTML page. It can end up being very long. To control page size, it is possible to split the output into several pages during PDF to HTML conversion.
 
 ## Convert PDF pages to HTML
 
@@ -64,6 +64,7 @@ public final class ConvertPDFtoHTML {
         pdfDocument.save(_dataDir + "output_out.html", SaveFormat.Html);
     }
 ```
+
 ## Convert PDF to HTML - Splitting Output to Multi-page HTML
 
 Aspose.PDF for Java supports the feature to convert PDF documents to various output formats including HTML. However when converting large PDF files (comprised of multiple pages), you may have a requirement to save individual PDF page to separate HTML file.
@@ -85,6 +86,7 @@ When converting large PDF file with several pages to HTML format, the output app
         pdfDocument.save(_dataDir + "MultiPageHTML_out.html", htmlOptions);
     }
 ```
+
 ## Convert PDF to HTML - Avoid Saving Images in SVG Format
 
 The default output format for saving images when converting from PDF to HTML is SVG. During conversion, some images from PDF are transformed into SVG vector images. This could be slow. Instead, the images could be transformed into PNG. To allow this, Aspose.PDF has the option to use SVG for vectors or to create PNGs.
@@ -106,7 +108,8 @@ In order to completely remove the rendering of images as SVG format when convert
         doc.save(_dataDir + "SaveSVGFiles_out.html", newOptions);
     }
 ```
-## Compressing SVG Images During Conversion 
+
+## Compressing SVG Images During Conversion
 
 To compress SVG images during PDF to HTML conversion, please try using the following code:
 
@@ -123,6 +126,7 @@ To compress SVG images during PDF to HTML conversion, please try using the follo
         doc.save(_dataDir + "SaveSVGFiles_out.html", newOptions);
     }
 ```
+
 ## Convert PDF to HTML - Specify Images Folder
 
 By default, when converting a PDF file to HTML, the images in the PDF are saved in a separate folder created in same directory that the output HTML is created. But sometimes, it is necessary to specify a different folder for saving images to when generating HTML files. To accomplish this, we introduced the [SaveOptions](https://apireference.aspose.com/java/pdf/com.aspose.pdf/SaveOptions). SpecialFolderForAllImages property. It is used to specify the target folder for storing images.
@@ -141,9 +145,10 @@ By default, when converting a PDF file to HTML, the images in the PDF are saved 
         doc.save(_dataDir + "SaveSVGFiles_out.html", newOptions);
     }
 ```
+
 ## Create Subsequent Files with Body Contents Only
 
-With the following simple code snippet, you can split the output HTML into pages. In the output pages, all HTML objects must go exactly where they go now (fonts processing and output, CSS creation and output, images creation and output), except that the output HTML will contain contents currently placed inside thetags (now “body” tags will be omitted). 
+With the following simple code snippet, you can split the output HTML into pages. In the output pages, all HTML objects must go exactly where they go now (fonts processing and output, CSS creation and output, images creation and output), except that the output HTML will contain contents currently placed inside thetags (now “body” tags will be omitted).
 
 ```java
     public static void ConvertPDFtoHTML_CreateSubsequentFilesBodyContentsOnly() {
@@ -157,7 +162,8 @@ With the following simple code snippet, you can split the output HTML into pages
         doc.save(_dataDir + "CreateSubsequentFiles_out.html", options);
     }
 ```
-## Transparent Text rendering 
+
+## Transparent Text rendering
 
 In case the source/input PDF file contains transparent texts shadowed by foreground images, then there might be text rendering issues. So in order to cater such scenarios, SaveShadowedTextsAsTransparentTexts and SaveTransparentTexts properties can be used.
 
@@ -175,7 +181,8 @@ In case the source/input PDF file contains transparent texts shadowed by foregro
         doc.save(_dataDir + "TransparentTextRendering_out.html", htmlOptions);
     }
 ```
-## PDF document layers rendering 
+
+## PDF document layers rendering
 
 We can render PDF document layers in separate layer type element during PDF to HTML conversion:
 
@@ -195,5 +202,18 @@ We can render PDF document layers in separate layer type element during PDF to H
     }
 }
 ```
+
 PDF to HTML conversion is one of Aspose.PDF's most popular features because it makes it possible to view the content of PDF files on various platforms without using a PDF document viewer. The output HTML accords with to WWW standards and can easily be displayed in all web browsers. Using this feature, the PDF files can be viewed over hand held devices because you do not need to install any PDF viewing application but can use a simple web browser.
 
+## PDF to HTML - Exclude Font Resources
+
+If you intend to exclude all or some font resources during the conversion of PDF to HTML, Aspose.PDF for Java API lets you achieve this with the help of HtmlSaveOptions class. The API offers two options for this purpose.
+
+1. htmlOptions.FontSavingMode = HTmlSaveOptions.FontSavingModes.DontSave - to prevent exporting all the fonts
+1. htmlOptions.ExcludeFontNameList = (new String[] { "ArialMT", "SymbolMT" }); - is for prevent exporting specific fonts (font names to be specified without hash)
+   In order to convert PDF to HTML excluding font resources, use the following steps:
+1. Define a new object of HtmlSaveOptions class
+1. Define and set the font names to be prevented from exporting in HtmlSaveOptions.ExcludeFontNameList
+1. Conver the PDF to HTML using the save method
+
+   {{< gist "aspose-com-gists" "282750bc23ba43d2659ba38470239283" "Examples-src-main-java-com-aspose-pdf-examples-AsposePdfExamples-DocumentConversion-PDFtoHTMLExcludeFontResources-PDFtoHTMLExcludeFontResourcesWithAdditionalOptions.java" >}}
