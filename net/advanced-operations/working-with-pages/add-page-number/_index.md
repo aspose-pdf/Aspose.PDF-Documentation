@@ -49,18 +49,29 @@ dataDir = dataDir + "PageNumberStamp_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-## Add Bates Numbers
-
-**Bates numbering** (also known as Bates stamping) is used in the legal, medical, and business fields to place identifying numbers and/or date/time-marks on images and documents as they are scanned or processed, for example, during the discovery stage of preparations for trial or identifying business receipts. This process provides identification, protection, and automatic consecutive numbering of the images.
-
-Aspose.PDF allows you to add a header and footer to all pages of a PDF document. Headers and footers can contain the date, automatic pagination, Bates numbers for legal documents, title, or author name. You can add headers and footers to one or more PDF files.
-
-You can use different headers and footers in the same PDF file. For example, you can add one header for odd-numbered pages that displays the page number on the right, and another header for even-numbered pages with the page number on the left. When adding a Bates numbering, you can specify the number of digits, the start number, and the prefix or postfix to add to each Bates.
-
-**TODO:** Insert example
-
 ## Live Example
 
 [Add PDF page numbers](https://products.aspose.app/pdf/page-number) is an online free web application that allows you to investigate how adding page numbers functionality works.
 
 [![How to add page number in pdf using C#](page_number.png)](https://products.aspose.app/pdf/page-number)
+
+## Add/Remove Bates numbering
+
+**Bates numbering** (also known as Bates stamping) is used in the legal, medical, and business fields to place identifying numbers and/or date/time-marks on images and documents as they are scanned or processed, for example, during the discovery stage of preparations for trial or identifying business receipts. This process provides identification, protection, and automatic consecutive numbering of the images or documents.
+
+Aspose.PDF has limited support for Bates Numbering for now. This functionality will be updated according to customers' requests.
+
+### How to remove Bates nubmering
+
+```csharp
+static void Demo03()
+{
+    Document doc = new Document(@"C:\Samples\Sample-Document03.pdf");
+    foreach (var page in doc.Pages)
+    {
+        var batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
+        page.Artifacts.Delete(batesNum);
+    }
+    doc.Save(@"C:\Samples\Sample-Document04.pdf");
+}
+```

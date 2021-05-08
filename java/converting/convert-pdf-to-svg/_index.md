@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-This article teacher you how to convert PDF to <abbr title="Scalable Vector Graphics">SVG</abbr> using C#
+This article teacher you how to convert PDF to <abbr title="Scalable Vector Graphics">SVG</abbr> using Java
 
 {{% alert color="primary" %}}
 
