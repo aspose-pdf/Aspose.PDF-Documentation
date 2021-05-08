@@ -209,11 +209,33 @@ PDF to HTML conversion is one of Aspose.PDF's most popular features because it m
 
 If you intend to exclude all or some font resources during the conversion of PDF to HTML, Aspose.PDF for Java API lets you achieve this with the help of HtmlSaveOptions class. The API offers two options for this purpose.
 
-1. htmlOptions.FontSavingMode = HTmlSaveOptions.FontSavingModes.DontSave - to prevent exporting all the fonts
-1. htmlOptions.ExcludeFontNameList = (new String[] { "ArialMT", "SymbolMT" }); - is for prevent exporting specific fonts (font names to be specified without hash)
-   In order to convert PDF to HTML excluding font resources, use the following steps:
+- `htmlOptions.FontSavingMode = HTmlSaveOptions.FontSavingModes.DontSave` - to prevent exporting all the fonts
+- `htmlOptions.ExcludeFontNameList = (new String[] { "ArialMT", "SymbolMT" });` - is for prevent exporting specific fonts (font names to be specified without hash)
+
+In order to convert PDF to HTML excluding font resources, use the following steps:
+
 1. Define a new object of HtmlSaveOptions class
 1. Define and set the font names to be prevented from exporting in HtmlSaveOptions.ExcludeFontNameList
 1. Conver the PDF to HTML using the save method
 
-   {{< gist "aspose-com-gists" "282750bc23ba43d2659ba38470239283" "Examples-src-main-java-com-aspose-pdf-examples-AsposePdfExamples-DocumentConversion-PDFtoHTMLExcludeFontResources-PDFtoHTMLExcludeFontResourcesWithAdditionalOptions.java" >}}
+```java
+public static void ExcludeFontResources() {
+    HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
+    htmlOptions.setExplicitListOfSavedPages(new int[] { 1 });
+    htmlOptions.setFixedLayout(true);
+    htmlOptions.setCompressSvgGraphicsIfAny(false);
+    htmlOptions.SaveTransparentTexts=true;
+    htmlOptions.SaveShadowedTextsAsTransparentTexts=true;
+    htmlOptions.ExcludeFontNameList= (new String[] { "ArialMT", "SymbolMT" });
+    //htmlOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.DontSave;
+    htmlOptions.setDefaultFontName("Comic Sans MS");
+    htmlOptions.setUseZOrder(true);
+    htmlOptions.LettersPositioningMethod = LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss;
+    htmlOptions.PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.NoEmbedding;
+    htmlOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
+    htmlOptions.setSplitIntoPages(false);
+    
+    Document pdfDocument = new Document(_dataDir + "PDFJAVA-39123.pdf");
+    pdfDocument.save(_dataDir + "output_out.html", htmlOptions);        
+}
+```
