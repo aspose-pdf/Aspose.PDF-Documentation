@@ -449,64 +449,66 @@ As a default behavior, when creating a table inside a PDF file, the table flows 
     }
 ```
 
-## Render Table on New Page
-
-By default, paragraphs are added to a Page object's Paragraphs collection. However, it is possible to render a table on a new page instead of directly after the previously added paragraph level object on the page.
-
-### Adding a Table
-
-To render table on a new page, use the [IsInNewPage](https://apireference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#isInNewPage--) method in the [BaseParagraph](https://apireference.aspose.com/pdf/java/com.aspose.pdf/baseparagraph) class. The following code snippet shows how.
-
-```java
-public static void RenderTableOnNewPage(){
-        Document doc = new Document();
-        PageInfo pageInfo = doc.getPageInfo();
-        MarginInfo marginInfo = pageInfo.getMargin();
-
-        marginInfo.setLeft (37);
-        marginInfo.setRight (37);
-        marginInfo.setTop (37);
-        marginInfo.setBottom (37);
-
-        pageInfo.setLandscape(true);
-
-        Table table = new Table();
-        table.setColumnWidths ("50 100");
-        // Added page.
-        Page curPage = doc.getPages().add();
-        for (int i = 1; i <= 120; i++)
-        {
-            Row row = table.getRows().add();
-            row.setFixedRowHeight (15);
-            Cell cell1 = row.getCells().add();
-            cell1.getParagraphs().add(new TextFragment("Content 1"));
-            Cell cell2 = row.getCells().add();
-            cell2.getParagraphs().add(new TextFragment("HHHHH"));
-        }
-        Paragraphs paragraphs = curPage.getParagraphs();
-        paragraphs.add(table);
-        /********************************************/
-        Table table1 = new Table();
-        table.setColumnWidths ("100 100");
-        for (int i = 1; i <= 10; i++)
-        {
-            Row row = table1.getRows().add();
-            Cell cell1 = row.getCells().add();
-            cell1.getParagraphs().add(new TextFragment("LAAAAAAA"));
-            Cell cell2 = row.getCells().add();
-            cell2.getParagraphs().add(new TextFragment("LAAGGGGGG"));
-        }
-        table1.setInNewPage (true);
-        // I want to keep table 1 to next page please...
-        paragraphs.add(table1);
-        
-        doc.save(_dataDir + "IsNewPageProperty_Test_out.pdf");
-    }
-}
-```
-
-### Hide Spanned Cell Borders
+## Hide Spanned Cell Borders
 
 While adding cells to a table, the spanned cell borders may show up when they break to another row. Such spanned borders can be made hidden as shown in the following code sample.
 
-{{< gist "aspose-com-gists" "282750bc23ba43d2659ba38470239283" "Examples-src-main-java-com-aspose-pdf-examples-AsposePdfExamples-Tables-HideSpannedCellBorder-HideSpannedCellBorder.java" >}}
+```java
+Document doc = new Document();
+com.aspose.pdf.Page page = doc.getPages().add();
+
+//Instantiate a table object that will be nested inside outerTable that will break
+//inside the same page
+com.aspose.pdf.Table mytable = new com.aspose.pdf.Table();
+mytable.setBroken(TableBroken.Vertical);
+mytable.setDefaultCellBorder(new BorderInfo(BorderSide.All));
+mytable.setRepeatingColumnsCount(2);
+page.getParagraphs().add(mytable);
+
+//Add header Row
+com.aspose.pdf.Row row = mytable.getRows().add();
+Cell cell = row.getCells().add("header 1");
+cell.setColSpan(2);
+cell.setBackgroundColor(Color.getLightGray());
+Cell header3 = row.getCells().add("header 3");
+Cell cell2 = row.getCells().add("header 4");
+cell2.setColSpan(2);
+cell2.setBackgroundColor(Color.getLightBlue());
+row.getCells().add("header 6");
+Cell cell3 = row.getCells().add("header 7");
+cell3.setColSpan(2);
+cell3.setBackgroundColor(Color.getLightGreen());
+Cell cell4 = row.getCells().add("header 9");
+cell4.setColSpan(3);
+cell4.setBackgroundColor(Color.getLightCoral());
+row.getCells().add("header 12");
+row.getCells().add("header 13");
+row.getCells().add("header 14");
+row.getCells().add("header 15");
+row.getCells().add("header 16");
+row.getCells().add("header 17");
+
+for (int rowCounter = 0; rowCounter < 1; rowCounter++)
+{
+  //Create rows in the table and then cells in the rows
+  com.aspose.pdf.Row row1 = mytable.getRows().add();
+  row1.getCells().add("col "+rowCounter+", 1");
+  row1.getCells().add("col "+rowCounter+", 2");
+  row1.getCells().add("col "+rowCounter+", 3");
+  row1.getCells().add("col "+rowCounter+", 4");
+  row1.getCells().add("col "+rowCounter+", 5");
+  row1.getCells().add("col "+rowCounter+", 6");
+  row1.getCells().add("col "+rowCounter+", 7");
+  row1.getCells().add("col "+rowCounter+", 8");
+  row1.getCells().add("col "+rowCounter+", 9");
+  row1.getCells().add("col "+rowCounter+", 10");
+  row1.getCells().add("col "+rowCounter+", 11");
+  row1.getCells().add("col "+rowCounter+", 12");
+  row1.getCells().add("col "+rowCounter+", 13");
+  row1.getCells().add("col "+rowCounter+", 14");
+  row1.getCells().add("col "+rowCounter+", 15");
+  row1.getCells().add("col "+rowCounter+", 16");
+  row1.getCells().add("col "+rowCounter+", 17");
+}
+doc.save(dataDir + "3_out.pdf");
+```
