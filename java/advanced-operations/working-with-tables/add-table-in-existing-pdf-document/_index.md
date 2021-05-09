@@ -504,3 +504,9 @@ public static void RenderTableOnNewPage(){
     }
 }
 ```
+
+### Hide Spanned Cell Borders
+
+While adding cells to a table, the spanned cell borders may show up when they break to another row. Such spanned borders can be made hidden as shown in the following code sample.
+
+{{< gist "aspose-com-gists" "282750bc23ba43d2659ba38470239283" "Examples-src-main-java-com-aspose-pdf-examples-AsposePdfExamples-Tables-HideSpannedCellBorder-HideSpannedCellBorder.java" >}}

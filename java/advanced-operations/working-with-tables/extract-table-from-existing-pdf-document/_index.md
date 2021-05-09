@@ -2,7 +2,7 @@
 title: Extract Table from Existing PDF Document
 linktitle: Extract Table
 type: docs
-weight: 20
+weight: 25
 url: /java/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for Java makes it possible to carry out various manipulations with the tables contained in your pdf document. You may add and extract a table in the existing PDF document, render table on a new page and etc.
 lastmod: "2021-03-23"
