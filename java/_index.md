@@ -1,8 +1,6 @@
 ---
 title: Aspose.PDF for Java
 type: docs
-aliases:
-- /display/pdf/java/
 weight: 20
 url: /java/
 is_root: true
