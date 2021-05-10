@@ -6,7 +6,9 @@ weight: 30
 url: /java/get-started/
 description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document
 lastmod: "2021-03-22"   
-sitemap:
+aliases:
+    - /pdf/java/getting-started
+sitemap: 
     changefreq: "weekly"
     priority: 0.7
 ---
