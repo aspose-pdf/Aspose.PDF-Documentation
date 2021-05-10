@@ -7,7 +7,7 @@ url: /java/working-with-tables/
 description: This section describes how to add and extract a table, how to manipulate and integrate a table using the Java library.
 aliases:
     - /pdf/java/working-with-tables-dom/
-lastmod: "2021-03-22"
+lastmod: "2021-05-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
