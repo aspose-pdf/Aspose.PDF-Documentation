@@ -2,7 +2,7 @@
 title: Working with Pages
 type: docs
 weight: 150
-url: /java/working-with-pages/
+url: /java/working-with-pages-dev-guide/
 lastmod: "2020-12-16"
 ---
 

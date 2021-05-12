@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/working-with-tables/
 description: This section describes how to add and extract a table, how to manipulate and integrate a table using the Java library.
-lastmod: "2021-03-22"
+lastmod: "2021-05-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,7 @@ sitemap:
 
 Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner.
 
-One of the earliest features supported by Aspose.PDF for Java is its capabilities of Working with Tables and it provides great support for adding tables in PDF files being generated from scratch or any existing PDF files. 
+One of the earliest features supported by Aspose.PDF for Java is its capabilities of Working with Tables and it provides great support for adding tables in PDF files being generated from scratch or any existing PDF files.
 
 **Aspose.PDF for Java** allows you to work with tables in PDF file advanced. This perfect tool helps fight through the simplicity of PDFs by extracting tables of actual data. With Java library resource you can easily create or add table in an existing PDF document, extract table, integrate table with data sources, and remove tables from existing PDFs.
 
