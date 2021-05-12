@@ -24,7 +24,7 @@ This page contains release notes information for Aspose.PDF for .NET 21.5.
 |PDFNET-49418 Add .NET5 support for Aspose.PDF|Feature|
 |PDFNET-49679 XFA: Add 3of9 barcode support for XFA to standard forms conversion|Feature|
 |PDFNET-49791 How to extract font full name from it description/resource at PDF?|Feature|
-|PDFNET-45405 Long time consumption during conversion of PDF to HTML|Enhancement|Bug|
+|PDFNET-45405 Long time consumption during conversion of PDF to HTML|Enhancement|
 |PDFNET-49437 Saving pdf document to docx format throws Index out of range exception|Bug|
 |PDFNET-48916 Unable to retrieve JavaScript from the PDF - System.NullReferenceException|Bug|
 |PDFNET-49747 Unable to get JavaScript from PDF document|Bug|
