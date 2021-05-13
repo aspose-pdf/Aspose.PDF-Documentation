@@ -32,7 +32,7 @@ Converting  PDF/A to PDF formats and back it's possible with C# library.
 - [Convert PDF to PDF/A](/pdf/net/convert-pdf-file-to-pdfa/)
 - [Convert PDF/A to PDF](/pdf/net/convert-pdfa-to-pdf/)
 
-## Convert various images formats to PDF and vice versa
+## Convert various Images formats to PDF and vice versa
 
 | Convert Image to PDF | Convert PDF to Image |
 | :---------------- | :------------------ |
