@@ -44,11 +44,11 @@ This page contains release notes information for Aspose.PDF for Java 21.5.
 - com.aspose.pdf.**XImage**.getMetadata()
 
 Changed method's parameter:
-com.aspose.pdf.facades.**PdfConverter**.mergeImages(java.util.List&lt;java.io.InputStream&gt;,**ImageFormat**,int,Integer,Integer) -> mergeImages(java.util.List&lt;java.io.InputStream&gt;,**int**,int,Integer,Integer)
+- com.aspose.pdf.facades.**PdfConverter**.mergeImages(java.util.List&lt;java.io.InputStream&gt;,**ImageFormat**,int,Integer,Integer) -> mergeImages(java.util.List&lt;java.io.InputStream&gt;,**int**,int,Integer,Integer)
 
 Renamed methods:
-com.aspose.pdf.optimization.**ImageCompressionOptions**.getCompressImages() -> isCompressImages()
-com.aspose.pdf.**Stamp**.getBackground() -> isBackground()
+- com.aspose.pdf.optimization.**ImageCompressionOptions**.getCompressImages() -> isCompressImages()
+- com.aspose.pdf.**Stamp**.getBackground() -> isBackground()
 
 Added new class:
 - com.aspose.pdf.**ImageFormat**
