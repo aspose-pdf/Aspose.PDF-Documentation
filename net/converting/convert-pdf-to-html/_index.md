@@ -1,5 +1,5 @@
 ---
-title: PDF to HTML | C#
+title: Convert PDF to HTML | C#
 linktitle: Convert PDF to HTML
 type: docs
 weight: 100

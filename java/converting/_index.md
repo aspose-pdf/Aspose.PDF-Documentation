@@ -4,10 +4,10 @@ linktitle: Convert PDF documents
 type: docs
 weight: 50
 url: /java/converting/
-lastmod: "2021-05-19"
+lastmod: "2021-04-14"
 description: This section contains a description of all possible options for converting PDF documents on Java using Aspose.PDF library.
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.8
 ---
 
@@ -29,17 +29,17 @@ Converting  PDF/A to PDF formats and back it's possible with Java library.
 - [Convert PDF to PDF/A](/pdf/java/convert-pdf-file-to-pdfa/)
 - [Convert PDF/A to PDF](/pdf/java/convert-pdfa-to-pdf/)
 
-## Convert images to PDF and vice versa
+## Convert various Images formats to PDF and vice versa
 
 | Convert Image to PDF | Convert PDF to Image |
 | :---------------- | :------------------ |
-| [Convert CGM to PDF](/pdf/java/convert-cgm-to-pdf/) | |
-| [Convert DICOM to PDF](/pdf/java/convert-dicom-to-pdf/)
 | [Convert JPG to PDF](/pdf/java/convert-jpg-to-pdf/) | [Convert PDF to JPG](/pdf/java/convert-pdf-to-jpg/) |
 | [Convert BMP to PDF](/pdf/java/convert-bmp-to-pdf/) | [Convert PDF to BMP](/pdf/java/convert-pdf-to-bmp/) |
 | [Convert EMF to PDF](/pdf/java/convert-emf-to-pdf/) | [Convert PDF to EMF](/pdf/java/convert-pdf-to-emf/) |
 | [Convert TIFF to PDF](/pdf/java/convert-tiff-to-pdf/) | [Convert PDF to TIFF](/pdf/java/convert-pdf-to-tiff/) |
 | [Convert PNG to PDF](/pdf/java/convert-png-to-pdf/) | [Convert PDF to PNG](/pdf/java/convert-pdf-to-png/) |
+| [Convert CGM to PDF](/pdf/java/convert-cgm-to-pdf/) | |
+| [Convert DICOM to PDF](/pdf/java/convert-dicom-to-pdf/) | |
 | [Convert SVG to PDF](/pdf/java/convert-svg-to-pdf/) | [Convert PDF to SVG](/pdf/java/convert-pdf-to-svg/) |
 
 ## Convert various file formats to PDF and vice versa
