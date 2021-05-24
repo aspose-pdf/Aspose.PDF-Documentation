@@ -11,9 +11,9 @@ sitemap:
 lastmod: "2021-05-21"
 ---
 
-# What's new in Aspose.PDF 21.4
+## What's new in Aspose.PDF 21.4
 
-## Add API for merging images
+### Add API for merging images
 
 Aspose.PDF 21.4 allows you to combine Images. Follow the next code snippet:
 
@@ -74,14 +74,14 @@ private static void MergeAsTiff()
 }
 ```
 
-# What's new in Aspose.PDF 21.3
+## What's new in Aspose.PDF 21.3
 
-## Public expose of property to detect Azure Information Protection
+### Public expose of property to detect Azure Information Protection
 
 With the next code snippet, you should be able to get access to the encrypted payload of your PDF files, protected with Azure Information Protection:
 
 ```csharp
- public void PDFNET_47256()
+ public void AzureInformationProtectionDemo()
  {
      string inputFile = @"c:\pdf.pdf";
      Document document = new Document(inputFile);
@@ -97,9 +97,9 @@ With the next code snippet, you should be able to get access to the encrypted pa
 }
 ```
 
-# What's new in Aspose.PDF 21.1
+## What's new in Aspose.PDF 21.1
 
-## Add support of retrieving the background color of TextFragment
+### Add support of retrieving the background color of TextFragment
 
 In this version of Aspose.PDF, the function became available to retrieve the background color. You need to specify searchOptions.SearchForTextRelatedGraphics = true; in the options of TextFragmentAbsorber object.
 
