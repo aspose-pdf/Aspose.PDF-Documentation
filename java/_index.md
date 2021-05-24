@@ -9,7 +9,7 @@ lastmod: "2020-12-16"
 
 {{% alert color="primary" %}}
 
-![todo:image_alt_text](home_1)
+![Aspose.PDF for Java](home_1.png)
 
 <h2>Welcome to Aspose.PDF for Java</h2>
 
@@ -21,7 +21,7 @@ Aspose.PDF is a Java component built to allow developers to create PDF documents
 
 - [What's new](/pdf/java/whatsnew/)
 - [Overview](/pdf/java/overview/)
-- [Get Started](/pdf/jav/get-started/)
+- [Get Started](/pdf/java/get-started/)
 - [Basic operations](/pdf/java/basic-operations/)
 - [Converting documents](/pdf/java/converting/)
 - [Parsing PDF documents](/pdf/java/parsing/)

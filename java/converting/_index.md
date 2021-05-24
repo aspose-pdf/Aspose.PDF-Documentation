@@ -29,7 +29,7 @@ Converting  PDF/A to PDF formats and back it's possible with Java library.
 - [Convert PDF to PDF/A](/pdf/java/convert-pdf-file-to-pdfa/)
 - [Convert PDF/A to PDF](/pdf/java/convert-pdfa-to-pdf/)
 
-## Convert various Images formats to PDF and vice versa
+## Convert images to PDF and vice versa
 
 | Convert Image to PDF | Convert PDF to Image |
 | :---------------- | :------------------ |

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/overview-of-annotations/
 description: Check out the list of possible annotations you can work with using Aspose.PDF for Java.
-lastmod: "2021-02-09"
+lastmod: "2021-05-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,13 +15,8 @@ The following table indicates the Annotation types that Aspose.PDF for Java supp
 
 |**Annotation type**|**Description**| | |
 | :- | :- | :- | :- |
-<<<<<<< HEAD
-|[Text](/pdf/java/text-annotation/)|Text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/java/link-annotation/)|Link annotations|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-=======
 |[Text](/pdf/java/pdf-annotation-in-existing-pdf-file/)|Text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
 |[Link](/pdf/java/link-annotation/)|Link annotations|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
->>>>>>> 13b2404b0a72f910305fd1d126d2caf725790014
 |[FreeText](/pdf/java/free-text-annotation/)|(PDF 1.3) Free text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Line](/pdf/java/line-annotation/)|(PDF 1.3) Line annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Square](/pdf/java/square-and-circle-annotations/)|(PDF 1.3) Square annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
@@ -29,11 +24,7 @@ The following table indicates the Annotation types that Aspose.PDF for Java supp
 |[Polygon](/pdf/java/polygon-and-polyline-annotations/)|(PDF 1.5) Polygon annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[PolyLine](/pdf/java/polygon-and-polyline-annotations/)|(PDF 1.5) Polyline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Highlight](/pdf/java/text-markup-annotation/)|(PDF 1.3) Highlight annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-<<<<<<< HEAD
 |[Underline](/pdf/java/text-markup-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-=======
-|[Underline](/pdf/java/text-markup-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
->>>>>>> 13b2404b0a72f910305fd1d126d2caf725790014
 |[Squiggly](/pdf/java/text-markup-annotation/)|(PDF 1.4) Squiggly-underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[StrikeOut](/pdf/java/text-markup-annotation/)|(PDF 1.3) Strikeout annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Stamp](/pdf/java/stamping/)|(PDF 1.3) Rubber stamp annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

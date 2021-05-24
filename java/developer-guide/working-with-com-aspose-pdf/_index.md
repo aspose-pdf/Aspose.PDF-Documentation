@@ -11,7 +11,8 @@ lastmod: "2020-12-16"
 These topics will work with Auto-ported version of Aspose.PDF for Java 4.0.0
 
 {{% /alert %}}
-## **Topics related to Aspose.PDF (DOM) API will be listed under this section**
+## Topics related to Aspose.PDF (DOM) API will be listed under this section
+
 - [Working with Document Object](/pdf/java/working-with-document-object/)
 - [Working with Document Conversion - DOM](/pdf/java/working-with-document-conversion-dom/)
 - [Working with Attachments](/pdf/java/working-with-attachments/)
