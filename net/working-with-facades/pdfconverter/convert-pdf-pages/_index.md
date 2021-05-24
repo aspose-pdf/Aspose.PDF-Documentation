@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF to Image
+title: Convert PDF pages to Images
 linktitle: Convert Pages to Images
 type: docs
 weight: 20
