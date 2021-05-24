@@ -11,6 +11,23 @@ sitemap:
 lastmod: "2021-05-21"
 ---
 
+## What's new in Aspose.PDF 21.5
+
+### How to extract font full name from it description/resource at PDF?
+
+You can get a full font with the prefix with  BaseFont property for the Font class.
+
+```csharp
+Document pdf = new Document(dataDir + @"testfont.pdf");
+
+Aspose.Pdf.Text.Font[] fonts = pdf.FontUtilities.GetAllFonts();
+foreach (Aspose.Pdf.Text.Font font in fonts)
+{
+    Console.WriteLine($"font name : {font.FontName} BaseFont name : {font.BaseFont}");
+}
+pdf.Dispose();
+```
+
 ## What's new in Aspose.PDF 21.4
 
 ### Add API for merging images
@@ -81,7 +98,7 @@ private static void MergeAsTiff()
 With the next code snippet, you should be able to get access to the encrypted payload of your PDF files, protected with Azure Information Protection:
 
 ```csharp
- public void AzureInformationProtectionDemo()
+ public void Azure_Information_Protection()
  {
      string inputFile = @"c:\pdf.pdf";
      Document document = new Document(inputFile);
@@ -130,7 +147,7 @@ foreach (TextFragment textFragment in textFragmentCollection)
 }
 ```
 
-## After conversion to HTML the font is fully embedded in the output
+### After conversion to HTML the font is fully embedded in the output
 
 Also, in Aspose.PDF 21.1, after converting PDF to HTML, became available embedded fonts in an output HTML document. It is possible with the new boolean save option HtmlSaveParameter.SaveFullFont.
 
