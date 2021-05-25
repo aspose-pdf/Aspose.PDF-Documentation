@@ -3,11 +3,11 @@ title: Installing and Using Aspose.Pdf Java Maven for Eclipse
 type: docs
 weight: 10
 url: /java/installing-and-using-aspose-pdf-java-maven-for-eclipse/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Installing
+
 **Aspose.PDF Java (Maven) for Eclipse** plugin can be easily installed from the Available **Plugin** tab in the Plugin dialog.
 
 - To open it, select **Plugins** from the **Tools** menu in Eclipse.
@@ -19,6 +19,7 @@ lastmod: "2020-12-16"
 ## Using
 
 ### Aspose.PDF Maven Project (wizard)
+
 To create **Maven Project** by wizard for using [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx):
 
 1. Select **New Project**.
@@ -56,7 +57,7 @@ To use examples, just:
 
 ![todo:image_alt_text](http://i.imgur.com/AuWybe8.png)
 
-1. Expand the tree to select **Code Example** category and click **Finish**.
+ Expand the tree to select **Code Example** category and click **Finish**.
 
 ![todo:image_alt_text](http://i.imgur.com/PToFZjJ.png)
 

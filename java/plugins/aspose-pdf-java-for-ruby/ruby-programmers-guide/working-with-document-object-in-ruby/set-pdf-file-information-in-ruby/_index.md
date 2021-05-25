@@ -3,15 +3,16 @@ title: Set PDF File Information in Ruby
 type: docs
 weight: 120
 url: /java/set-pdf-file-information-in-ruby/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Set PDF File Information
+
 To update Pdf document information using **Aspose.PDF Java for Ruby**, simply invoke **SetPdfFileInfo** module.
 
-**Ruby Code
-```
+Ruby Code
+
+```java
 
 # The path to the documents directory.
 
@@ -44,9 +45,8 @@ doc.save(data_dir + "Updated_Information.pdf")
 puts "Update document information, please check output file."
 ```
 
-
-
 ## Download Running Code
+
 Download **Set PDF File Information (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)

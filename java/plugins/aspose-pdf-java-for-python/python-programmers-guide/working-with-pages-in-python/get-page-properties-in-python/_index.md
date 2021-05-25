@@ -3,7 +3,7 @@ title: Get Page Properties in Python
 type: docs
 weight: 50
 url: /java/get-page-properties-in-python/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
 To get page properties of Pdf document using **Aspose.PDF Java for Python**, simply invoke **GetPageProperties** class.
@@ -31,7 +31,7 @@ print "Rotate :-" + pdf_page.getRotate()
 
 ```
 
-**Download Running Code
+**Download Running Code**
 
 Download **Get Page Properties (Aspose.PDF)** from any of the below mentioned social coding sites:
 

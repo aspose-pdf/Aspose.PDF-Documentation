@@ -3,8 +3,9 @@ title: Aspose.PDF Java for Jython
 type: docs
 weight: 60
 url: /java/aspose-pdf-java-for-jython/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
+
 ## Introduction
 
 ### What is Jython?
@@ -31,7 +32,7 @@ Aspose.PDF Java for Jython is a project that demonstrates / provides the Aspose.
 
 ### System Requirements
 
-**Following are the system requirements to use Aspose.PDF Java for Jython:
+Following are the system requirements to use Aspose.PDF Java for Jython:
 
 - Java 1.5 or above installed
 - Downloaded Aspose.PDF component
@@ -39,7 +40,7 @@ Aspose.PDF Java for Jython is a project that demonstrates / provides the Aspose.
 
 ### Supported Platforms
 
-**Following are the supported platforms:
+Following are the supported platforms:
 
 - Aspose.PDF 15.4 and above.
 - Java IDE (Eclipse, NetBeans ...)

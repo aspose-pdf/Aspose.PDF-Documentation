@@ -3,15 +3,16 @@ title: Split PDF File into Individual Pages in PHP
 type: docs
 weight: 80
 url: /java/split-pdf-file-into-individual-pages-in-php/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Split Pages
-<ins>To split PDF document into individual pages using **Aspose.PDF Java for PHP**, simply invoke **SplitAllPages** class.
 
-**PHP Code
-```
+To split PDF document into individual pages using **Aspose.PDF Java for PHP**, simply invoke **SplitAllPages** class.
+
+PHP Code
+
+```php
 
 # Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
@@ -41,8 +42,8 @@ print "Split process completed successfully!";
 
 ```
 
+**Download Running Code**
 
-## Download Running Code
 Download **Split Pages (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/SplitAllPages.php)

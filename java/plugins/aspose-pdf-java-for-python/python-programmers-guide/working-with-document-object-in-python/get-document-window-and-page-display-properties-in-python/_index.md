@@ -3,7 +3,7 @@ title: Get Document Window and Page Display Properties in Python
 type: docs
 weight: 30
 url: /java/get-document-window-and-page-display-properties-in-python/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
 To Get Document Window and Page Display Properties of Pdf document using **Aspose.PDF Java for Python**, simply invoke **GetDocumentWindow** class.
@@ -50,7 +50,7 @@ print "PageLayout :-" + str(doc.getPageLayout())
 print "pageMode :-" + str(doc.getPageMode())
 ```
 
-**Download Running Code
+**Download Running Code**
 
 Download **Get Document Window and Page Display Properties (Aspose.PDF)** from any of the below mentioned social coding sites:
 

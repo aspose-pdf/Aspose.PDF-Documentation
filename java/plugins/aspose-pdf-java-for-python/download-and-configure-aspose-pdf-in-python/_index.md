@@ -3,38 +3,32 @@ title: Download and Configure Aspose.Pdf in Python
 type: docs
 weight: 10
 url: /java/download-and-configure-aspose-pdf-in-python/
-lastmod: "2021-04-10"
+lastmod: "2021-05-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-# Downloads and Configure
-
-## Download Required Libraries
+### Download Required Libraries
 
 Download required libraries mentioned below. These are the required for executing Aspose.PDF Java for Python examples.
 
 - Aspose: [Aspose.PDF for Java Component](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/default.aspx)
 - [JPype](https://pypi.python.org/pypi/JPype1)
 
-
 ## Download Examples from Social Coding Sites
 
 Following releases of running examples are available to download on below mentioned social coding sites:
 
-
-###  GitHub
+### GitHub
 
 - Aspose.PDF Java for Python Examples
   - [Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python)
 
-
-###  CodePlex
+### CodePlex
 
 - Aspose.PDF Java for Python Examples
   - [Aspose.PDF Java for Python](http://asposepdfjavapython.codeplex.com)
-
 
 ## How to configure the source code
 

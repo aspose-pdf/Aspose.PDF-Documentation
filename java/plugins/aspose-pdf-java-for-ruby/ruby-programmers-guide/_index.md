@@ -6,7 +6,7 @@ url: /java/ruby-programmers-guide/
 lastmod: "2020-12-16"
 ---
 
-**This section includes the following topics:
+This section includes the following topics:
 
 - [Working with Document Object in Ruby](/pdf/java/working-with-document-object-in-ruby/)
 - [Working with Pages in Ruby](/pdf/java/working-with-pages-in-ruby/)

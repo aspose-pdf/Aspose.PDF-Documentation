@@ -3,9 +3,8 @@ title: Installing and Using Aspose.Pdf for IntelliJ IDEA - Maven
 type: docs
 weight: 10
 url: /java/installing-and-using-aspose-pdf-for-intellij-idea-maven/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
-
 
 ## Installing
 
@@ -32,7 +31,7 @@ The  plugin is listed on IntelliJ IDEA’s CE [official plugin website](https:/
 
 An option for creating [Example Source Codes for using Aspose.PDF for Java API](https://goo.gl/cPAbJM) in the project, will also appear after the installation under "New" menu (using Right Click -> New **OR** File menu->New)
 
-**Aspose.PDF Example
+Aspose.PDF Example
 
 ![todo:image_alt_text](http://i.imgur.com/l2oGUBW.jpg)
 
@@ -45,13 +44,13 @@ To create Aspose.PDF Maven project for using [Aspose.PDF for Java API](http://go
 Then follow the steps below:
 
 1. Select **New Project**.
-2. Select **Aspose.PDF Maven Project**
+2. Select **Aspose.PDF Maven Project**.
 3. Click **Next**.
 
 ![todo:image_alt_text](http://i.imgur.com/hd2mYnW.jpg)
 
-4. Provide a **GroupId, ArtifactId** and **Version
-for your maven project and click **Next.
+4. Provide a **GroupId, ArtifactId** and Version
+for your maven project and click Next.
 
 ![todo:image_alt_text](http://i.imgur.com/aNlx0Qe.jpg)
 
@@ -102,7 +101,7 @@ The wizard will refresh / check for the latest available [Aspose.PDF for Java A
 ![todo:image_alt_text](http://i.imgur.com/5PZwsuq.jpg)
 
 3. **Aspose.PDF Examples wizard** dialog will appear, where you can select any examples category to create / copy the examples into your project
-Select any examples category and click **Create** :
+Select any examples category and click **Create**:
 
 ![todo:image_alt_text](http://i.imgur.com/l2oGUBW.jpg)
 

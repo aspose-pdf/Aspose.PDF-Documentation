@@ -3,16 +3,16 @@ title: Get Document Window and Page Display Properties in Ruby
 type: docs
 weight: 40
 url: /java/get-document-window-and-page-display-properties-in-ruby/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Get Document Window and Page Display Properties
+
 To Get Document Window and Page Display Properties of Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **GetDocumentWindow** module.
 
-**Ruby Code
+Ruby Code
 
-```
+```java
 # The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
@@ -72,9 +72,8 @@ puts "PageLayout :-" + doc.getPageLayout().to_s
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
-
-
 ## Download Running Code
+
 Download **Get Document Window and Page Display Properties (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)
