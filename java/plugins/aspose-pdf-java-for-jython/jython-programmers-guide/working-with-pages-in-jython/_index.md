@@ -3,10 +3,10 @@ title: Working With Pages in Jython
 type: docs
 weight: 30
 url: /java/working-with-pages-in-jython/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-**This section includes the following topics:
+This section includes the following topics:
 
 - [Concatenate PDF Files in Jython](/pdf/java/concatenate-pdf-files-in-jython/)
 - [Delete a Particular Page from the PDF File in jython](/pdf/java/delete-a-particular-page-from-the-pdf-file-in-jython/)

@@ -3,10 +3,10 @@ title: Working with Pages in Python
 type: docs
 weight: 30
 url: /java/working-with-pages-in-python/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-**This section includes the following topics:
+This section includes the following topics:
 
 - [Concatenate PDF Files in Python](/pdf/java/concatenate-pdf-files-in-python/)
 - [Delete a Particular Page from the PDF File in Python](/pdf/java/delete-a-particular-page-from-the-pdf-file-in-python/)

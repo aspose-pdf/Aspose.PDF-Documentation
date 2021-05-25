@@ -3,16 +3,16 @@ title: Optimize PDF Document for the Web in PHP
 type: docs
 weight: 60
 url: /java/optimize-pdf-document-for-the-web-in-php/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Optimize PDF for Web
-<ins>To optimize PDF document for the web using **Aspose.PDF Java for PHP**, simply invoke **optimize_web** method of  **Optimize** class.
 
-**PHP Code
+To optimize PDF document for the web using **Aspose.PDF Java for PHP**, simply invoke **optimize_web** method of  **Optimize** class.
 
-{{< highlight php >}}
+PHP Code
+
+```php
 
  public static function optimize_web($dataDir=null)
 
@@ -33,11 +33,10 @@ lastmod: "2020-12-16"
     print "Optimized PDF for the Web, please check output file." . PHP_EOL;
 
 }   
+```
 
+**Download Running Code**
 
-{{< /highlight >}}
-
-## Download Running Code
 Download **Optimize PDF for Web (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/Optimize.php)
