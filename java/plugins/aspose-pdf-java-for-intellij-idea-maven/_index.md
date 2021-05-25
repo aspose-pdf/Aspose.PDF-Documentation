@@ -106,7 +106,6 @@ Please check [the video](https://www.youtube.com/watch?v=KoGdZhoWzcI&feature=you
 
 Please use any of the following project's issues tracker:
 
-- [CodePlex](https://asposepdfjavaintellij.codeplex.com/workitem/list/basic)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 ### Extend and Contribute
@@ -117,5 +116,4 @@ Aspose.PDF Java for IntelliJ IDEA (Maven) plugin is open source and its source c
 
 You can get the latest source code from one of the following locations
 
-- [CodePlex](https://asposepdfjavaintellij.codeplex.com)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins)

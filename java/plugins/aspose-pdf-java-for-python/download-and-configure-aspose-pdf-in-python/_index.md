@@ -25,11 +25,6 @@ Following releases of running examples are available to download on below mentio
 - Aspose.PDF Java for Python Examples
   - [Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python)
 
-### CodePlex
-
-- Aspose.PDF Java for Python Examples
-  - [Aspose.PDF Java for Python](http://asposepdfjavapython.codeplex.com)
-
 ## How to configure the source code
 
 Please follow these simple steps in order to open and extend the source code while using:

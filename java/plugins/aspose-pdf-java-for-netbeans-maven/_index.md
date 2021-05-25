@@ -128,7 +128,6 @@ Please follow [**GitHub Issues Tracker**](https://github.com/aspose-pdf/Aspose.
 Aspose.PDF Java for NetBeans (Maven) is open source and its source code is available on the major social coding websites listed below. Developers are encouraged to download the source code and contribute by suggesting or adding new features or improving the existing ones so that others could also benefit from it. Developers can also learn from it to make their own plugins.
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_NetBeans\(Maven\))
-- [CodePlex](https://asposepdfjavanetbeans.codeplex.com/)
 
 ### #How to configure source code of Aspose.PDF Java for NetBeans (Maven)
 

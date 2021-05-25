@@ -73,7 +73,6 @@ To download Eclipse IDE
 Following are three recommended methods for the successful downloading and installation of Aspose.PDF Java (Maven) for Eclipse plugin:
 
 - Drag and drop installation from [Eclipse Marketplace](https://marketplace.eclipse.org/content/asposepdf-java-maven-eclipse) to your Eclipse workspace.
-- Or download the plugin jar from [Downloads](https://asposepdfjavaeclipse.codeplex.com/releases/view/620336) and copy it into /**dropins** folder of Eclipse installation and restart the IDE.
 - Or goto **Help** > **Install New Software...** > Enter following update site URL in **Work with
 Then select "Aspose.PDF Java (Maven) for Eclipse" and **Finish**. Accept the License Agreement and Install the plugin.
 
@@ -117,7 +116,6 @@ Please follow [**GitHub Issues Tracker**](https://github.com/aspose-pdf/Aspose.P
 Aspose.PDF Java (Maven) for Eclipse is open source and its source code is available on the major social coding websites listed below. Developers are encouraged to download the source code and contribute by suggesting or adding new features or improving the existing ones so that others could also benefit from it. Developers can also learn from it to make their own plugins.
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_Maven_for_Eclipse)
-- [CodePlex](https://asposepdfjavaeclipse.codeplex.com/)
 
 ### How to configure source code of Aspose.PDF Java (Maven) for Eclipse
 

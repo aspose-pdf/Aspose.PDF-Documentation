@@ -9,11 +9,8 @@ lastmod: "2021-05-24"
 
 ## Downloading Aspose.PDF Java for Struts 1.3
 
-You can downloaded the pre-built (binary) .war file from the latest releases hosted on [codeplex](http://aspose-pdfforstruts.codeplex.com/releases).
--OR-
 You can download / check out the project source codes from the following locations:
 
-- [CodePlex](https://asposepdfforstruts.codeplex.com)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)
 
 ## Building Aspose.PDF Java for Struts 1.3 from Source Codes

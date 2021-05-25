@@ -16,7 +16,6 @@ lastmod: "2021-05-24"
 
 Please use any of the following project's issues tracker:
 
-- [CodePlex](https://asposepdfforstruts.codeplex.com/workitem/list/basic)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 {{% /alert %}}

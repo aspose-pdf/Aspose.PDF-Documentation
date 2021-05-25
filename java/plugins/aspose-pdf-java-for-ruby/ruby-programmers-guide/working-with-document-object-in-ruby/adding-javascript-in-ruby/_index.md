@@ -11,6 +11,7 @@ lastmod: "2021-05-25"
 To add JavaScript in Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **AddJavaScript** module.
 
 Ruby Code
+
 ```java
 # The path to the documents directory.
 
