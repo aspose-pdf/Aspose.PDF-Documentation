@@ -3,7 +3,7 @@ title: Set PDF Expiration in Python
 type: docs
 weight: 80
 url: /java/set-pdf-expiration-in-python/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
 To set expiration of  Pdf document using **Aspose.PDF Java for Python**, simply invoke **SetExpiration** class.
@@ -26,9 +26,9 @@ doc.save(self.dataDir + "set_expiration.pdf");
 print "Update document information, please check output file."
 ```
 
-**Download Running Code
+**Download Running Code**
 
 Download **Set PDF Expiration (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetExpiration/SetExpiration.py)
-- [CodePlex](http://asposepdfjavapython.codeplex.com/SourceControl/latest#test/WorkingWithDocumentObject/SetExpiration/SetExpiration.py)
+

@@ -3,7 +3,7 @@ title: Plugins
 type: docs
 weight: 90
 url: /java/plugins/
-lastmod: "2021-04-03"
+lastmod: "2021-05-25"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

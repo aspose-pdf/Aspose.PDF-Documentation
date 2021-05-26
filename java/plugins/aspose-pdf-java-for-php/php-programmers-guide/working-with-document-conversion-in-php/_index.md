@@ -3,10 +3,10 @@ title: Working with Document Conversion in PHP
 type: docs
 weight: 10
 url: /java/working-with-document-conversion-in-php/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-**This section includes the following topics:
+This section includes the following topics:
 
 - [Convert PDF to DOC or DOCX format in PHP](/pdf/java/convert-pdf-to-doc-or-docx-format-in-php/)
 - [Convert PDF to Excel Workbook in PHP](/pdf/java/convert-pdf-to-excel-workbook-in-php/)

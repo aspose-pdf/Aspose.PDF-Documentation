@@ -3,15 +3,16 @@ title: Get Document Window and Page Display Properties in PHP
 type: docs
 weight: 30
 url: /java/get-document-window-and-page-display-properties-in-php/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Get Document Window and Page Display Properties
-<ins>To Get Document Window and Page Display Properties of Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetDocumentWindow** class.
 
-**PHP Code
-```
+To Get Document Window and Page Display Properties of Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetDocumentWindow** class.
+
+PHP Code
+
+```php
 
 # Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
@@ -50,10 +51,10 @@ print "PageLayout :-" . $doc->getPageLayout() . PHP_EOL;
 
 #How the document should display when opened.
 print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
-
 ```
 
-## Download Running Code
+**Download Running Code**
+
 Download **Get Document Window and Page Display Properties (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

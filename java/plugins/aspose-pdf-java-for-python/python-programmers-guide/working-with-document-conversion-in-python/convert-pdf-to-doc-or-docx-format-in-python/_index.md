@@ -3,7 +3,7 @@ title: Convert PDF to DOC or DOCX format in Python
 type: docs
 weight: 10
 url: /java/convert-pdf-to-doc-or-docx-format-in-python/
-lastmod: "2021-04-10"
+lastmod: "2021-05-25"
 ---
 
 To convert PDF document to DOC or DOCX format using **Aspose.PDF Java for Python**, simply invoke **PdfToDoc** module.
@@ -16,7 +16,7 @@ doc.save(self.dataDir + 'template.docx')
 print "Document has been converted successfully"
 ```
 
-Download Running Code
+**Download Running Code**
 
 Download **Convert PDF to DOC or DOCX (Aspose.PDF)** from any of the below mentioned social coding sites:
 

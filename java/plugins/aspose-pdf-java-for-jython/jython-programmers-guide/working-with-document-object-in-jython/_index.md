@@ -3,10 +3,10 @@ title: Working With Document Object in Jython
 type: docs
 weight: 20
 url: /java/working-with-document-object-in-jython/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-**This section includes the following topics:
+This section includes the following topics:
 
 - [Adding JavaScript using DOM in Jython](/pdf/java/adding-javascript-using-dom-in-jython/)
 - [Get Document Window and Page Display Properties in Jython](/pdf/java/get-document-window-and-page-display-properties-in-jython/)

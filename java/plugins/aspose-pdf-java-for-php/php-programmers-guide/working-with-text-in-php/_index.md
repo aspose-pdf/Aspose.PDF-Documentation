@@ -3,10 +3,10 @@ title: Working with Text in PHP
 type: docs
 weight: 40
 url: /java/working-with-text-in-php/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-**This section includes the following topics:
+This section includes the following topics:
 
 - [Add HTML String using DOM in PHP](/pdf/java/add-html-string-using-dom-in-php/)
 - [Add Text to an existing PDF file in PHP](/pdf/java/add-text-to-an-existing-pdf-file-in-php/)

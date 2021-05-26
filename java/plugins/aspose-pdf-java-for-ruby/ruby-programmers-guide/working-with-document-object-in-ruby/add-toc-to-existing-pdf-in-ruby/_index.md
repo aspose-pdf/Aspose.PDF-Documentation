@@ -3,17 +3,16 @@ title: Add TOC to Existing PDF in Ruby
 type: docs
 weight: 30
 url: /java/add-toc-to-existing-pdf-in-ruby/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Add TOC
+
 <ins>To add TOC in Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **AddToc** module.
 
-**Ruby Code
+Ruby Code
 
-
-```
+```java
 # The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
@@ -87,8 +86,8 @@ doc.save(data_dir + "TOC.pdf")
 puts "Added TOC Successfully, please check the output file."
 ```
 
-
 ## <ins> **Download Running Code
+
 Download **Add TOC (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)
