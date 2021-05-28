@@ -12,7 +12,7 @@ sitemap:
 ---
 
 - [PDF Annotation in existing PDF file](/pdf/java/pdf-annotation-in-existing-pdf-file/) - possible manipulations with annotations in your PDF document.
-- [PDF Free ext Annotation](/pdf/java/free-text-annotation/) - adds a note that is always visible on the PDF.
+- [PDF Free Text Annotation](/pdf/java/free-text-annotation/) - adds a note that is always visible on the PDF.
 - [PDF Link Annotation](/pdf/java/link-annotation/) - is a hypertext link that leads to a destination elsewhere in the document.
 - [PDF Line Annotation](/pdf/java/line-annotation/) - adds a straight line on the PDF.
 - [PDF Square and Circle Annotations](/pdf/java/square-and-circle-annotations/) - adds a rectangle/square shape on the PDF, adds a circle shape on the PDF.
