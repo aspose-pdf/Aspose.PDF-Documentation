@@ -1,10 +1,15 @@
 ---
-title: Working with Security and Signatures - facades
+title: Working with Facades
 type: docs
-weight: 80
-url: /java/working-with-security-and-signatures-facades/
-lastmod: "2020-12-16"
+weight: 112
+url: /java/working-with-facades/
+description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
+lastmod: "2021-05-28"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 ---
+
 
 ## <ins>**Add Digital Signature in a PDF File (facades)**
 {{% alert color="primary" %}}
@@ -20,6 +25,8 @@ Once the object of a particular signature type is created, you can use the sign 
 
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-facades-SecurityAndSignatures-AddDigitalSignatureInAPDFFile-.java" >}}
+
+
 ## <ins>**Set Privileges on an Existing PDF File (facades)**
 To set a PDF file's privileges, create a [PdfFileSecurity](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileSecurity) class object and bind the input PDF using binPdf method. Then you have to call the setPrivilege method to set privileges. You can specify the privileges using the [DocumentPrivilege](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/DocumentPrivilege) object and then pass this object to the setPrivilege method and save the output PDF using save method.
 
@@ -28,11 +35,3 @@ The following code snippet shows you how to set the privileges of a PDF file.
 
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-facades-SecurityAndSignatures-SetPrivilegesOnAnExistingPDFFile-.java" >}}
-## <ins>**Suppress Location and Reason**
-Aspose.PDF functionality allows flexible configuration for digital sign instance. [PdfFileSignature ](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileSignature)class provides ability sign PDF file. Sign method implementation allows to sign the PDF and pass the particular signature object to this class. Sign method contains set of attributes for the customization of output digital sing. In case if you need to suppress some text attributes from result sing you can leave them empty. The following code snippet demonstrate how to suppress Location and Reason two rows from signature block:
-
-{{< gist "aspose-com-gists" "282750bc23ba43d2659ba38470239283" "Examples-src-main-java-com-aspose-pdf-examples-AsposePdfFacades-SecurityAndSignatures-SuppressLocationAndReason-SuppressLocationAndReason.java" >}}
-
-
-
-

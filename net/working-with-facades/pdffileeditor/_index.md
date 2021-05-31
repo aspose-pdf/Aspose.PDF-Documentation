@@ -1,5 +1,5 @@
 ---
-title: PdfFileEditor class
+title: PdfFileEditor Class
 type: docs
 weight: 10
 url: /net/pdffileeditor-class/

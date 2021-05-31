@@ -1,9 +1,13 @@
 ---
-title: Working with Bookmarks - facades
+title: Working with Facades
 type: docs
-weight: 70
-url: /java/working-with-bookmarks-facades/
-lastmod: "2020-12-16"
+weight: 112
+url: /java/working-with-facades/
+description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
+lastmod: "2021-05-28"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 ---
 
 ## <ins>**Create Bookmarks of All Pages (facades)**
