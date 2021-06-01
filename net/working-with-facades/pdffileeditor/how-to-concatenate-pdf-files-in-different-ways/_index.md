@@ -29,26 +29,18 @@ In the form, there are three Text Boxes (textBox1, textBox2, textBox3) having th
 
 ```csharp
 
- private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
-
+private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
 {
-
   if(openFileDialog1.ShowDialog()==DialogResult.OK)
-
   {
-
      textBox1.Text=openFileDialog1.FileName;
-
   }
-
 }
 ```
 
 A windows form application's view is shown for the demonstration of the [PdfFileEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdffileeditor) class for the Concatenation of PDF Files.
 
-
 ![Concatenate PDF Files](how-to-concatenate-pdf-files-in-different-ways_1.png)
-
 
 After we choose the PDF file and click OK button. The complete file name with path is assigned to the related Text Box.
 
@@ -61,9 +53,6 @@ Similarly, we can choose two or three Input PDF Files to concatenate as shown be
 The last Text Box (textBox4) will take the Destination Path of the Output PDF file with its name where this output file will be created.
 
 ![Destination Path of the Output PDF file](how-to-concatenate-pdf-files-in-different-ways_4.png)
-
-
-
 
 ![Concatenate method](how-to-concatenate-pdf-files-in-different-ways_5.png)
 
@@ -80,16 +69,11 @@ This approach is good only if you need to join only two PDF files. First two arg
 ![Concatenate two PDFs using File Names](how-to-concatenate-pdf-files-in-different-ways_6.png)
 
 ```csharp
- private void button1_Click(object sender, System.EventArgs e)
-
+private void button1_Click(object sender, System.EventArgs e)
 {
-
   PdfFileEditor pdfEditor = new PdfFileEditor();
-
   pdfEditor.Concatenate(textBox1.Text,textBox2.Text,textBox4.Text);
-
 }
-
 ```
 
 ### Approach 2
@@ -100,27 +84,16 @@ Similar to the above approach, this approach also allows joining two PDF files. 
 
 ![Concatenate two PDFs using File Streams](how-to-concatenate-pdf-files-in-different-ways_7.png)
 
-
 ```csharp
-
- private void button2_Click(object sender, System.EventArgs e)
-
+private void button2_Click(object sender, System.EventArgs e)
 {
-
   FileStream pdf1 = new FileStream(textBox1.Text,FileMode.Open);
-
   FileStream pdf2 = new FileStream(textBox2.Text,FileMode.Open);
-
   FileStream outputPDF = new FileStream(textBox4.Text,FileMode.Create);
-
   PdfFileEditor pdfEditor = new PdfFileEditor();
-
   pdfEditor.Concatenate(pdf1,pdf2,outputPDF);
-
   outputPDF.Close();
-
 }
-
 ```
 
 ### Approach 3
@@ -131,34 +104,16 @@ If you want to join more than two PDF files then this approach would be your ult
 
 ![Concatenate multiple PDFs using Array of Streams](how-to-concatenate-pdf-files-in-different-ways_8.png)
 
-
 ```csharp
-
- private void button3_Click(object sender, System.EventArgs e)
-
+private void button3_Click(object sender, System.EventArgs e)
 {
-
   FileStream pdf1 = new FileStream(textBox1.Text,FileMode.Open);
-
   FileStream pdf2 = new FileStream(textBox2.Text,FileMode.Open);
-
   FileStream pdf3 = new FileStream(textBox3.Text,FileMode.Open);
-
   Stream[] pdfStreams = new Stream[]{pdf1,pdf2,pdf3};
-
   FileStream outputPDF = new FileStream(textBox4.Text,FileMode.Create);
-
   PdfFileEditor pdfEditor = new PdfFileEditor();
-
   pdfEditor.Concatenate(pdfStreams,outputPDF);
-
   outputPDF.Close();
-
 }
-
 ```
-
-
-
-
-

@@ -35,7 +35,15 @@ private static void CreateTaggedPdfDocument01()
     mainHeader.SetText("Main Header");
 
     ParagraphElement paragraphElement = taggedContent.CreateParagraphElement();
-    paragraphElement.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
+    paragraphElement.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
+    "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. " +
+    "Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet" +
+    "nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus." +
+    "Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat" +
+    "sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper" +
+    "pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus" +
+    "ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus," +
+    "ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
 
     rootElement.AppendChild(mainHeader);
     rootElement.AppendChild(paragraphElement);
@@ -46,6 +54,7 @@ private static void CreateTaggedPdfDocument01()
 ```
 
 We will get a following document after creation:
+
 ![Tagged PDF document with 2 elements - Header and Paragraph](taggedpdf-01.png)
 
 ## Creating Tagged PDF with nested elements (Creating Structure Elements Tree)
