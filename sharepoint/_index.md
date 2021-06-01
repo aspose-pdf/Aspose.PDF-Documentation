@@ -1,11 +1,12 @@
 ---
 title: Aspose.PDF for SharePoint Docs
+linktitle: Aspose.PDF for SharePoint
 second_title: Aspose.PDF for SharePoint
 type: docs
 weight: 50
 url: /sharepoint/
 is_root: true
-lastmod: "2020-12-16"
+lastmod: "2021-06-01"
 ---
 
 {{% alert color="primary" %}}

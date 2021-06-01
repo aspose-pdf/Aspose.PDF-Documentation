@@ -1,5 +1,6 @@
 ---
 title: Documentation
+linktitle: Aspose.PDF for C++
 second_title: Aspose.PDF for C++
 type: docs
 weight: 30

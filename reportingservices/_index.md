@@ -1,11 +1,12 @@
 ---
 title: Documentation
+linktitle:  Aspose.PDF for Reporting Services
 second_title: Aspose.PDF for Reporting Services
 type: docs
 weight: 60
 url: /reportingservices/
 is_root: true
-lastmod: "2020-12-16"
+lastmod: "2021-06-01"
 ---
 
 {{% alert color="primary" %}}

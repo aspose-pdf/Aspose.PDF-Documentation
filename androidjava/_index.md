@@ -1,5 +1,6 @@
 ---
 title: Documentation
+linktitle: Aspose.PDF for Android via Java
 second_title: Aspose.PDF for Android via Java
 type: docs
 weight: 40
