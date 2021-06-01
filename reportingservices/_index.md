@@ -1,5 +1,6 @@
 ---
-title: Aspose.PDF for Reporting Services
+title: Documentation
+second_title: Aspose.PDF for Reporting Services
 type: docs
 weight: 60
 url: /reportingservices/

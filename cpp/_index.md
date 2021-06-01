@@ -1,24 +1,26 @@
 ---
-title: Aspose.PDF for C++
+title: Documentation
+second_title: Aspose.PDF for C++
 type: docs
 weight: 30
 url: /cpp/
 is_root: true
 description: Use C++ PDF API to convert pdf to word, merge pdf, split pdf, want to convert pdf to excel, pdf to ppt, or even images e.g. png to pdf, pdf into jpeg and many more.
-keywords: Cpp PDF API,pdf,convert pdf to word,merge pdf,split pdf,convert pdf to excel,pdf to ppt,png to pdf,pdf into jpeg
+keywords: cpp, PDF API,pdf,convert pdf to word,merge pdf,split pdf,convert pdf to excel,pdf to ppt,png to pdf,pdf into jpeg
 lastmod: "2020-12-16"
 ---
 
 {{% alert color="primary" %}}
 
-![todo:image_alt_text](home_1)
+![Aspose.PDF for C++ Logo](home_1.png)
 
-**Welcome to the Aspose.PDF for C++ Documentation Section**
+<h2>Welcome to the Aspose.PDF for C++ Documentation Section</h2>
 
 Aspose.PDF for C++ is a native C++ library that enables developers to create, read and manipulate PDF documents without using Adobe Acrobat. Aspose.PDF for C++ allows developers to create forms, add/edit text, manipulate PDF pages, add annotations, handle custom fonts and much more. Here in the documentation section of Aspose.PDF for C++, you can explore all the features of the API along with the basic examples to demonstrate the implementation of those features in your C++ application.
 
 {{% /alert %}}
-## **Aspose.PDF for C++ Resources**
+<h3> Aspose.PDF for C++ Resources</h3>
+
 The following links offer some useful resources you may need to accomplish your tasks.
 
 - [Aspose.PDF for C++ Online Documentation](/pdf/)

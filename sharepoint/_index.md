@@ -1,5 +1,6 @@
 ---
-title: Aspose.PDF for SharePoint
+title: Aspose.PDF for SharePoint Docs
+second_title: Aspose.PDF for SharePoint
 type: docs
 weight: 50
 url: /sharepoint/
