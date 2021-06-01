@@ -1,5 +1,6 @@
 ---
-title: Aspose.PDF for Java
+title: Aspose.PDF for Java Documentation
+second_title: Aspose.PDF for Java
 type: docs
 weight: 20
 url: /java/

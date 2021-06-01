@@ -1,6 +1,7 @@
 ---
-title: Aspose.PDF for .NET
+title: Aspose.PDF for .NET Documentation
 linktitle: Aspose.PDF for .NET
+second_title: Aspose.PDF for .NET
 type: docs
 weight: 10
 url: /net/
