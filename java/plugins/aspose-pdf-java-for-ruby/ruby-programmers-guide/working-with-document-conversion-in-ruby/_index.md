@@ -3,10 +3,10 @@ title: Working with Document Conversion in Ruby
 type: docs
 weight: 40
 url: /java/working-with-document-conversion-in-ruby/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-**This section includes the following topics:
+This section includes the following topics:
 
 - [Convert HTML to PDF Format in Ruby](/pdf/java/convert-html-to-pdf-format-in-ruby/)
 - [Convert PDF pages to Images in Ruby](/pdf/java/convert-pdf-pages-to-images-in-ruby/)

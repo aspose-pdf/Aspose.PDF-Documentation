@@ -3,15 +3,16 @@ title: Add TOC to Existing PDF in PHP
 type: docs
 weight: 20
 url: /java/add-toc-to-existing-pdf-in-php/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Add TOC
-<ins>To add TOC in Pdf document using **Aspose.PDF Java for PHP**, simply invoke **AddToc** class.
 
-**PHP Code
-```
+To add TOC in Pdf document using **Aspose.PDF Java for PHP**, simply invoke **AddToc** class.
+
+PHP Code
+
+```php
 
 # Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
@@ -65,8 +66,8 @@ print "Added TOC Successfully, please check the output file.";
 
 ```
 
+**Download Running Code**
 
-## Download Running Code
 Download **Add TOC (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)

@@ -1,5 +1,5 @@
 ---
-title: Add, Extract, Remove Digital Signature in PDF
+title: Working with Signature in PDF File
 type: docs
 weight: 20
 url: /net/working-with-signature-in-a-pdf-file/

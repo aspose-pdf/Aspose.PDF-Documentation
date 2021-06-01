@@ -3,7 +3,7 @@ title: Set PDF File Information in Python
 type: docs
 weight: 90
 url: /java/set-pdf-file-information-in-python/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
 To update Pdf document information using **Aspose.PDF Java for Python**, simply invoke **SetPdfFileInfo** class.
@@ -29,9 +29,9 @@ doc.save(self.dataDir + "Updated_Information.pdf")
 print "Update document information, please check output file."
 ```
 
-**Download Running Code
+**Download Running Code**
 
 Download **Set PDF File Information (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetPdfFileInfo/SetPdfFileInfo.py)
-- [CodePlex](http://asposepdfjavapython.codeplex.com/SourceControl/latest#test/WorkingWithDocumentObject/SetPdfFileInfo/SetPdfFileInfo.py)
+

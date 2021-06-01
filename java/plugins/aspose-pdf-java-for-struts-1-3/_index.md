@@ -6,8 +6,8 @@ url: /java/aspose-pdf-java-for-struts-1-3/
 lastmod: "2020-12-16"
 ---
 
-
 ## Apache Struts Web Framework
+
 The Apache Struts web framework is a free open-source solution for creating Java web applications.
 
 Web applications differ from conventional websites in that web applications can create a dynamic response. Many websites deliver only static pages. A web application can interact with databases and business logic engines to customize a response.
@@ -17,6 +17,7 @@ One way to separate concerns in a software application is to use a Model-View-Co
 [Learn more](http://struts.apache.org/birdseye.html)
 
 ### Aspose.PDF for Java
+
 Aspose.PDF for Java is a PDF document creation component that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
 
 Aspose.PDF for Java is an affordably priced component that offers an incredible wealth of features, these include: PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling.
@@ -24,6 +25,7 @@ Aspose.PDF for Java is an affordably priced component that offers an incredible 
 Aspose.PDF for Java allows you to create PDF files directly through the provided API and XML templates. Using Aspose.PDF for Java will also enable you to add PDF capabilities to your applications in no time.
 
 ## Aspose.Words Java for Struts 1.3
+
 Aspose.Words Java for Struts 1.3 is simple book store web based application written using Struts 1.3 and Maven.
 
 - The web application intends to show the integration and usage of [Aspose.Words for Java](http://www.aspose.com/java/word-component.aspx) within Struts 1.3 and Maven framework.
@@ -38,7 +40,8 @@ Aspose.Words Java for Struts 1.3 is simple book store web based application writ
 {{% /alert %}}
 
 ## System Requirements
-**Following are the system requirements for Aspose.PDF Java for Struts 1.3 web application:
+
+Following are the system requirements for Aspose.PDF Java for Struts 1.3 web application:
 
 - Java 1.6 or above installed.
 - Apache Tomcat Server 7 or above
@@ -46,7 +49,8 @@ Aspose.Words Java for Struts 1.3 is simple book store web based application writ
 - Aspose.PDF component.
 
 ## Supported Platforms
-**Following are the supported platforms:
+
+Following are the supported platforms:
 
 - Aspose.PDF 10.4.0 or above.
 - Java IDE (Eclipse, NetBeans, IntelliJ, ...).

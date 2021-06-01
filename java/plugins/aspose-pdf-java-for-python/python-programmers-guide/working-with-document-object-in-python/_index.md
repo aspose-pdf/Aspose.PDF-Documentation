@@ -3,7 +3,7 @@ title: Working with Document Object in Python
 type: docs
 weight: 20
 url: /java/working-with-document-object-in-python/
-lastmod: "2021-04-10"
+lastmod: "2021-05-25"
 ---
 
 This section includes the following topics:

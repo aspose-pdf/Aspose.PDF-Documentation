@@ -37,6 +37,4 @@ This page contains release notes information for Aspose.PDF for .NET 21.2.
 |PDFNET-49144|Parallel save as html fails with System.NullReferenceException|Bug|
 |PDFNET-47337|Error Adding Footer To TOC page|Bug|
 
-## Public API and Backward Incompatible Changes
 
-### Added APIs

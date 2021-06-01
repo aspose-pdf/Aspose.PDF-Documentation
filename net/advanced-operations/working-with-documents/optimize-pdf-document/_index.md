@@ -1,5 +1,5 @@
 ---
-title: Optimize PDF .NET
+title: Optimize PDF using C#
 linktitle: Optimize PDF
 type: docs
 weight: 30

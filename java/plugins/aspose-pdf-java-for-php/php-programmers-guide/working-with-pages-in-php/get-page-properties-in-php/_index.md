@@ -3,15 +3,16 @@ title: Get Page Properties in PHP
 type: docs
 weight: 50
 url: /java/get-page-properties-in-php/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Get Page Properties
-<ins>To get page properties of Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetPageProperties** class.
 
-**PHP Code
-```
+To get page properties of Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetPageProperties** class.
+
+PHP Code
+
+```php
 
 # Create PDF document
 $pdf_document = new Document($dataDir . 'input1.pdf');
@@ -39,8 +40,8 @@ print "Rotate :-" . $pdf_page->getRotate() . PHP_EOL ;
 
 ```
 
+**Download Running Code**
 
-## Download Running Code
 Download **Get Page Properties (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)

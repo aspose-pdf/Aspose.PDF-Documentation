@@ -3,15 +3,16 @@ title: Concatenate PDF Files in PHP
 type: docs
 weight: 10
 url: /java/concatenate-pdf-files-in-php/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Concatenate PDF Files
-<ins>To concatenate PDF files using **Aspose.PDF Java for PHP**, simply invoke **ConcatenatePdfFiles** class.
 
-**PHP Code
-```
+To concatenate PDF files using **Aspose.PDF Java for PHP**, simply invoke **ConcatenatePdfFiles** class.
+
+PHP Code
+
+```php
 
 # Open the target document
 $pdf1 = new Document($dataDir . 'input1.pdf');
@@ -29,8 +30,8 @@ print "New document has been saved, please check the output file" . PHP_EOL;
 
 ```
 
+**Download Running Code**
 
-## Download Running Code
 Download **Concatenate PDF Files (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/ConcatenatePdfFiles.php)

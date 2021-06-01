@@ -3,10 +3,10 @@ title: Working with Document Object in PHP
 type: docs
 weight: 20
 url: /java/working-with-document-object-in-php/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-**This section includes the following topics:
+This section includes the following topics:
 
 - [Adding JavaScript in PHP](/pdf/java/adding-javascript-in-php/)
 - [Add TOC to Existing PDF in PHP](/pdf/java/add-toc-to-existing-pdf-in-php/)

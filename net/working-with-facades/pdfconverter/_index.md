@@ -4,7 +4,7 @@ type: docs
 weight: 70
 url: /net/pdfconverter-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfConverter class.
-lastmod: "2021-01-19"
+lastmod: "2021-05-24"
 draft: false
 sitemap:
     changefreq: "monthly"

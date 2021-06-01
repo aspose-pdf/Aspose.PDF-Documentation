@@ -3,10 +3,10 @@ title: Working with Text in Ruby
 type: docs
 weight: 30
 url: /java/working-with-text-in-ruby/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-**This section includes the following topics:
+This section includes the following topics:
 
 - [Add HTML String using DOM in Ruby](/pdf/java/add-html-string-using-dom-in-ruby/)
 - [Add Text to an existing PDF file in Ruby](/pdf/java/add-text-to-an-existing-pdf-file-in-ruby/)

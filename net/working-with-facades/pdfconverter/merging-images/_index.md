@@ -11,18 +11,31 @@ draft: false
 ## Merge Images
 
 ```csharp
-private static void Main()
+using Aspose.Pdf.Drawing;
+using Aspose.Pdf.Facades;
+using System.IO;
+using System.Linq;
+
+
+namespace Documentation.Facades
 {
-    var fileStreams = Directory.GetFiles(@"C:\tmp\merger", "*.png")
-        .OrderBy(f => f)
-        .Select(f => File.OpenRead(f))
-        .Cast<Stream>()
-        .ToList();
+    public static class ExamplePdfConverter
+    {
+        public static void MergeImages()
+        {
+            var fileStreams = Directory.GetFiles(@"C:\tmp\merger", "*.png")
+                                    .OrderBy(f => f)
+                                    .Select(f => File.OpenRead(f))
+                                    .Cast<Stream>()
+                                    .ToList();
 
-    using Stream inputStream =
-            PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1);
-    FileStream outputStream = new(@"c:\tmp\out.jpg", FileMode.Create);
-    inputStream.CopyTo(outputStream);
-
+            using (Stream inputStream =
+                    PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
+            {
+                FileStream outputStream = new FileStream(@"c:\tmp\out.jpg", FileMode.Create);
+                inputStream.CopyTo(outputStream);
+            }
+        }
+    }
 }
 ```        

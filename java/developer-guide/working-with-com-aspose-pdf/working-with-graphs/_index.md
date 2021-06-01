@@ -7,7 +7,8 @@ lastmod: "2020-12-16"
 ---
 
 
-#### **This section includes the following topics:**
+**This section includes the following topics:**
+
 - [What is Graph?](/pdf/java/what-is-graph/)
 - [Add Line Object to a PDF file](/pdf/java/add-line-object-to-a-pdf-file/)
 - [Draw Line Across the Page](/pdf/java/draw-line-across-the-page/)

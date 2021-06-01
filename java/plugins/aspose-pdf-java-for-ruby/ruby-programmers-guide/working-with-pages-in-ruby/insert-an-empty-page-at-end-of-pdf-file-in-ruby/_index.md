@@ -3,16 +3,16 @@ title: Insert an Empty Page at End of PDF File in Ruby
 type: docs
 weight: 60
 url: /java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
-lastmod: "2020-12-16"
+lastmod: "2021-05-25"
 ---
 
-
 ## Aspose.PDF - Insert an Empty Page at End of PDF File
+
 To Insert an Empty Page at the end of PDF document using **Aspose.PDF Java for Ruby**, simply invoke **InsertEmptyPageAtEndOfFile** module.
 
-**Ruby Code
+Ruby Code
 
-```
+```java
 # The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
@@ -31,8 +31,6 @@ pdf.save(data_dir+ "output.pdf")
 
 puts "Empty page added successfully!"
 ```
-
-
 
 ## Download Running Code
 
