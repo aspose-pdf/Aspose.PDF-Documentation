@@ -32,24 +32,21 @@ import com.aspose.pdf.*;
 
 public final class ConvertJPEGtoPDF {
 
-private ConvertJPEGtoPDF() {
-}
+    private static Path _dataDir = Paths.get("/home/aspose/pdf-examples/Samples");
 
-private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
+    public static void main(String[] args) throws FileNotFoundException {
+        // Initialize document object
+        Document document = new Document();
 
-public static void main(String[] args) throws FileNotFoundException {
-// Initialize document object
-Document document = new Document();
+        Page page = document.getPages().add();
+        Image image = new Image();
 
-Page page = document.getPages().add();
-Image image = new Image();
+        // Load sample JPEG image file
+        image.setFile(Paths.get(_dataDir.toString(), "Sample.jpg").toString());
+        page.getParagraphs().add(image);
 
-// Load sample JPEG image file
-image.setFile(Paths.get(_dataDir.toString(), "Sample.jpg").toString());
-page.getParagraphs().add(image);
-
-// Save output PDF document
-document.save(Paths.get(_dataDir.toString(),"JPEGtoPDF.pdf").toString());
-}
+        // Save output PDF document
+        document.save(Paths.get(_dataDir.toString(),"JPEGtoPDF.pdf").toString());
+    }
 }
 ```
