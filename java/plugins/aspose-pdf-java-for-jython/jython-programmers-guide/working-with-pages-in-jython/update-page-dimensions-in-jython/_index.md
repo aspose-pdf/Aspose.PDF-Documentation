@@ -3,7 +3,7 @@ title: Update Page Dimensions in Jython
 type: docs
 weight: 90
 url: /java/update-page-dimensions-in-jython/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 

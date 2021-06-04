@@ -3,7 +3,7 @@ title: Working with Annotations
 type: docs
 weight: 50
 url: /java/working-with-annotations/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **This section includes the following topic**:

@@ -3,7 +3,7 @@ title: Working with Forms
 type: docs
 weight: 100
 url: /java/working-with-forms/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **This section includes the following topics**:

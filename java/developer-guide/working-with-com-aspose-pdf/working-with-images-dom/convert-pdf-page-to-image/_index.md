@@ -3,7 +3,7 @@ title: Convert PDF Page to Image
 type: docs
 weight: 20
 url: /java/convert-pdf-page-to-image/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Convert PDF Pages to TIFF Image**

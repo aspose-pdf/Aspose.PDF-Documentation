@@ -3,7 +3,7 @@ title: Redact certain page region with RedactionAnnotation
 type: docs
 weight: 30
 url: /java/redact-certain-page-region-with-redactionannotation/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 Aspose.PDF for Java supports the feature to add as well as manipulate Annotations in an existing PDF file. Recently some of our customers requested the Redaction feature, to redact (remove text, image, etc elements from) certain page region of PDF document. In order to fulfill this requirement, a class named RedactionAnnotation is provided, which can be used to redact certain page region or it can be used to manipulate existing RedactionAnnotations and redact them (i.e. flatten annotation and remove the text under it).

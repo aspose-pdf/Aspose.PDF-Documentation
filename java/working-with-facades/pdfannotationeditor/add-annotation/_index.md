@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/add-annotations/
 description: This section explains how to add annotations in PDF file with Aspose.PDF Facades using PdfAnnotationEditor Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

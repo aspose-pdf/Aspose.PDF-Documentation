@@ -3,7 +3,7 @@ title: Working with Table in Tagged PDFs
 type: docs
 weight: 40
 url: /java/working-with-table-in-tagged-pdfs/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

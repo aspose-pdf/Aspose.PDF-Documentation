@@ -3,7 +3,7 @@ title: Working with Security and Signatures
 type: docs
 weight: 70
 url: /java/working-with-security-and-signatures/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **This section includes the following topics**:

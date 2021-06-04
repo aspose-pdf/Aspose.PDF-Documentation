@@ -3,7 +3,7 @@ title: Working with Bookmarks
 type: docs
 weight: 40
 url: /java/working-with-bookmarks/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **This section includes the following topics**:

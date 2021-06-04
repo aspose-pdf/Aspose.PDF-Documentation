@@ -3,7 +3,7 @@ title: Extract Text From Stamps
 type: docs
 weight: 30
 url: /java/extract-text-from-stamps/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Extract Text from Stamp Annotations**

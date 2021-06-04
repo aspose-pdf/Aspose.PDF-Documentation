@@ -3,7 +3,7 @@ title: Extract Tagged Content from Tagged PDFs
 type: docs
 weight: 20
 url: /java/extract-tagged-content-from-tagged-pdfs/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **Getting Tagged PDF Content**

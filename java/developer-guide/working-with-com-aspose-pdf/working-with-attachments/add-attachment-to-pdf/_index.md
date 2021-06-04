@@ -5,7 +5,7 @@ weight: 10
 url: /java/add-attachment-to-pdf/
 keywords: pdf attachment,attachment to pdf,add attachment to pdf using java
 description: Java Developers can add attachment to PDF using Aspose.PDF for Java API
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

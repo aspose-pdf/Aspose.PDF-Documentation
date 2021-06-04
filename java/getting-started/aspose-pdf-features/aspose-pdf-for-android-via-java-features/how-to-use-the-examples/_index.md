@@ -3,7 +3,7 @@ title: How to use the Examples
 type: docs
 weight: 80
 url: /java/how-to-use-the-examples/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 Firstly make sure that you have the ADT bundle installed and that you have downloaded and extracted the latest version of [Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java).

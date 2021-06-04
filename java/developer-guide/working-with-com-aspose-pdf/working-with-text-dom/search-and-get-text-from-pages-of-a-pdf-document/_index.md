@@ -3,7 +3,7 @@ title: Search and Get Text from Pages of a PDF Document
 type: docs
 weight: 30
 url: /java/search-and-get-text-from-pages-of-a-pdf-document/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Search and Get Text from Pages of PDF Document**

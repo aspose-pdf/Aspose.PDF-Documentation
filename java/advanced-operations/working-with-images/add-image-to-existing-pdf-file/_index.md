@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-image-to-existing-pdf-file/
 description: This section describes how to add image to existing PDF file using Java library.
-lastmod: "2021-03-26"
+lastmod: "2021-06-05"
 ---
 
 Every PDF page contains Resources and Contents properties. Resources can be images and forms for example, while content is represented by a set of PDF operators. Each operator has its name and argument. This example uses operators to add an image to a PDF file.

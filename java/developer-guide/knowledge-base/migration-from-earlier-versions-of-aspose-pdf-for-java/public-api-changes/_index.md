@@ -3,7 +3,7 @@ title: Public API changes
 type: docs
 weight: 40
 url: /java/public-api-changes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

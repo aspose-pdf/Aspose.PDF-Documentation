@@ -3,7 +3,7 @@ title: Adding JavaScript in Python
 type: docs
 weight: 10
 url: /java/adding-javascript-in-python/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 To append Add Javascript using Aspose.PDF Java in Python, simply invoke the AddJavascript() method of Document class.

@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/create-bookmark/
 description: This section explains how to create bookmarks  with Aspose.PDF Facades using PdfBookmarEditor Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

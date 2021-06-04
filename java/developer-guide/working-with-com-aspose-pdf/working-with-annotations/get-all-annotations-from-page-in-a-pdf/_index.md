@@ -3,7 +3,7 @@ title: Get All Annotations from Page in a PDF
 type: docs
 weight: 60
 url: /java/get-all-annotations-from-page-in-a-pdf/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

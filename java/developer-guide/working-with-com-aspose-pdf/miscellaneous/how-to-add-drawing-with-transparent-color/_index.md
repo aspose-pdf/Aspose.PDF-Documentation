@@ -3,7 +3,7 @@ title: How to add drawing with transparent Color
 type: docs
 weight: 30
 url: /java/how-to-add-drawing-with-transparent-color/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

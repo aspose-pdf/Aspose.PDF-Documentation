@@ -5,7 +5,7 @@ weight: 40
 url: /java/get-bookmarks-from-pdf-document/
 keywords: pdf bookmarks
 description: Get pdf bookmarks using java
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

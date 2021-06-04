@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/set-pdf-information/
 description: This section explains how to set PDF file information  with Aspose.PDF Facades using PdfFileInfo Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/working-with-pages/
 description: With Aspose.PDF for Java you can add pages, add headers and footers, add watermarks  into your PDF file. This section explain to you all details on this topic. 
-lastmod: "2021-03-12"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

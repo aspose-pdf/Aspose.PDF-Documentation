@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /java/attachments/
 description: Use Java PDF API to access, add and remove attachments in PDF files using Java from within your applications. Complete guide with Java code samples.
-lastmod: "2021-04-21"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

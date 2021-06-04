@@ -3,7 +3,7 @@ title: Aspose.PDF for Java 19.8 Release Notes
 type: docs
 weight: 50
 url: /java/aspose-pdf-for-java-19-8-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

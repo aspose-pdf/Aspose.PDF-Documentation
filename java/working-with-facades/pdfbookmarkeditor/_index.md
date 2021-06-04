@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /java/working-with-bookmarks-facades/
 description: This section explains how to work with Aspose.PDF Facades using PdfBookmarEditor Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

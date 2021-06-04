@@ -3,7 +3,7 @@ title: Apply Numbering Style in Heading
 type: docs
 weight: 10
 url: /java/apply-numbering-style-in-heading/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

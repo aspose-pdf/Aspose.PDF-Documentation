@@ -3,7 +3,7 @@ title: Add Image as Page Background
 type: docs
 weight: 50
 url: /java/add-image-as-page-background/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

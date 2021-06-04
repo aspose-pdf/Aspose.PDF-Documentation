@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/widget-annotation/
 description: This article describes how to add controls based on a widget annotations to PDF documents with Aspose.PDF for Java. 
-lastmod: "2021-02-11"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -3,7 +3,7 @@ title: Add a Bookmark to a PDF Document
 type: docs
 weight: 10
 url: /java/add-a-bookmark-to-a-pdf-document/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

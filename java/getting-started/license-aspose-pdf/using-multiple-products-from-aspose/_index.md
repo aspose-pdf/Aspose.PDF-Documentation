@@ -3,7 +3,7 @@ title: Using Multiple Products from Aspose
 type: docs
 weight: 20
 url: /java/using-multiple-products-from-aspose/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 If you use multiple Aspose products in your application, for example Aspose.PDF and Aspose.Words, here are a few useful tips.

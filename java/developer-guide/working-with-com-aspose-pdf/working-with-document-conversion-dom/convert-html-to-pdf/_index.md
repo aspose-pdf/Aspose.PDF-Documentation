@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/convert-html-to-pdf/
 draft: true
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Convert HTML file to PDF format**

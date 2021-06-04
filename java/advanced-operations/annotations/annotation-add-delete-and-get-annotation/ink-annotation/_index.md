@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/ink-annotation/
 description: This page describes how to add an Ink Annotation to a PDF file. Also, you can customize the Ink Annotation.
-lastmod: "2021-02-11"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

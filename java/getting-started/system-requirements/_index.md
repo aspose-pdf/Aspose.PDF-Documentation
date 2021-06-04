@@ -3,7 +3,7 @@ title: System Requirements
 type: docs
 weight: 40
 url: /java/system-requirements/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **Overview**

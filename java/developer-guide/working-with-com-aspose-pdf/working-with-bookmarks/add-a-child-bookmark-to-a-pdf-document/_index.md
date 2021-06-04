@@ -3,7 +3,7 @@ title: Add a Child Bookmark to a PDF Document
 type: docs
 weight: 20
 url: /java/add-a-child-bookmark-to-a-pdf-document/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

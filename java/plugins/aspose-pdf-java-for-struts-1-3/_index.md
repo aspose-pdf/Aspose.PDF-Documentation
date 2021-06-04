@@ -3,7 +3,7 @@ title: Aspose.PDF Java for Struts 1.3
 type: docs
 weight: 10
 url: /java/aspose-pdf-java-for-struts-1-3/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## Apache Struts Web Framework

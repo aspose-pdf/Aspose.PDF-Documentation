@@ -3,7 +3,7 @@ title: Add, Delete and Extract Images from the PDF file
 type: docs
 weight: 10
 url: /java/add-delete-and-extract-images-from-the-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **Add Image to Existing PDF File**

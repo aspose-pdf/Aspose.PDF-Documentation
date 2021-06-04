@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/polygon-and-polyline-annotations/
 description: Aspose.PDF for Java allows you to add, get, and delete the polygon and polyline annotations from your PDF document.
-lastmod: "2021-02-10"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

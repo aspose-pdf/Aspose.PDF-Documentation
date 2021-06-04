@@ -3,7 +3,7 @@ title: Create a Link to Another PDF Document
 type: docs
 weight: 40
 url: /java/create-a-link-to-another-pdf-document/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 Aspose.PDF for Java allows you to add a link to an external PDF file so that you can link several documents together.

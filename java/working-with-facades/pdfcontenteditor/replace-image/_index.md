@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/replace-image/
 description: This section explains how to replace image with Aspose.PDF Facades - a toolset for popular operations with PDF.
-lastmod: "2021-05-28"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -3,7 +3,7 @@ title: Convert an Image to PDF
 type: docs
 weight: 70
 url: /java/convert-an-image-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

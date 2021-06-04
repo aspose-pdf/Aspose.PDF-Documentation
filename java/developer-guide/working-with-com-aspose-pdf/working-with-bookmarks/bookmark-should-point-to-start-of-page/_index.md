@@ -5,7 +5,7 @@ weight: 50
 url: /java/bookmark-should-point-to-start-of-page/
 keywords: pdf bookmark
 description: pdf bookmark pointing start of the page
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

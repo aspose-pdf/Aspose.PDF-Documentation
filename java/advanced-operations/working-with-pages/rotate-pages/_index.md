@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/rotate-pages/
 description: Change page orientation and fitting the page content to the new page orientation using Java.
-lastmod: "2021-03-17"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

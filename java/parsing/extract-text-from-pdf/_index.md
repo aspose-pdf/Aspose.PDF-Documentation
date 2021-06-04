@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/extract-text-from-pdf/
 description: Aspose.PDF allows for extracting different kinds of information. This section contains articles on text extraction from PDF documents using Aspose.PDF for Java.
-lastmod: "2021-04-29"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

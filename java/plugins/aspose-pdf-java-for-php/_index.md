@@ -3,7 +3,7 @@ title: Aspose.PDF Java for PHP
 type: docs
 weight: 50
 url: /java/aspose-pdf-java-for-php/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Introduction to Aspose.PDF Java for PHP

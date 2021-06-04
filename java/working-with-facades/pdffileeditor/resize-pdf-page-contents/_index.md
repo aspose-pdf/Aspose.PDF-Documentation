@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/resize-pdf-page-contents/
 description: This section explains how to resize PDF page contents with Aspose.PDF Facades.
-lastmod: "2021-05-31"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

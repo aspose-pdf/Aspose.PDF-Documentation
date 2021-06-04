@@ -3,7 +3,7 @@ title: Determine Line Break
 type: docs
 weight: 50
 url: /java/determine-line-break-old/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## Track Line Breaking of Multi-Line TextFragment

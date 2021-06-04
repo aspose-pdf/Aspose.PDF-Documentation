@@ -4,7 +4,7 @@ linktitle: Convert SVG to PDF
 type: docs
 weight: 240
 url: /java/convert-svg-to-pdf/
-lastmod: "2021-02-05"
+lastmod: "2021-06-05"
 description: This page shows the possibility of converting SVG to PDF with Aspose.PDF and describes how to get SVG dimensions and overview SVG Supported Features.
 sitemap:
     changefreq: "weekly"

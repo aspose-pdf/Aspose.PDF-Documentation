@@ -3,7 +3,7 @@ title: How to Run the Examples
 type: docs
 weight: 80
 url: /java/how-to-run-the-examples/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ### <ins>**Download from GitHub**

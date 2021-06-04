@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/pdfcontenteditor-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfContentEditor Class.
-lastmod: "2021-05-28"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

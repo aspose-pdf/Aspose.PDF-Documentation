@@ -3,7 +3,7 @@ title: Working with JavaScript
 type: docs
 weight: 140
 url: /java/working-with-javascript/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Adding JavaScript (DOM)**

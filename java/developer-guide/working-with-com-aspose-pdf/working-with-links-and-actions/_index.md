@@ -3,7 +3,7 @@ title: Working with Links and Actions
 type: docs
 weight: 60
 url: /java/working-with-links-and-actions/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **This section includes the following topics**:

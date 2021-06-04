@@ -3,7 +3,7 @@ title: Create Filled Rectangle Object
 type: docs
 weight: 40
 url: /java/create-filled-rectangle-object/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

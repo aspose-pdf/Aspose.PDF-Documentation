@@ -3,7 +3,7 @@ title: Create Tagged PDF Documents
 type: docs
 weight: 10
 url: /java/create-tagged-pdf-documents/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **Creating Structure Elements**

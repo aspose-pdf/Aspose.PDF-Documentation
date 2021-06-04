@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/working-with-image-placement/
 description: This section describes the features of working with image placement PDF file using Java library.
-lastmod: "2021-03-29"
+lastmod: "2021-06-05"
 ---
 
 Aspose.PDF for Java introduced classes called [ImagePlacement](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacement), [ImagePlacementAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacementAbsorber) and [ImagePlacementCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacementCollection) which provide similar capability as the classes described above to get an image’s resolution and position in a PDF document.

@@ -3,7 +3,7 @@ title: Working with Accessible PDF Documents
 type: docs
 weight: 190
 url: /java/working-with-accessible-pdf-documents/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 **Working with Accessible PDF Documents**
 

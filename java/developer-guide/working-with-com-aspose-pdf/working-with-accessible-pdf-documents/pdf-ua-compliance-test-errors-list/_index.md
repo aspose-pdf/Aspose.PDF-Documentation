@@ -3,7 +3,7 @@ title: PDF-UA Compliance Test - Errors List
 type: docs
 weight: 30
 url: /java/pdf-ua-compliance-test-errors-list/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 While doing PDF/UA compliance testing using Aspose.PDF API, you may be interested in knowing the error messages that you can get. These errors are of different types such as General, Text, Fonts, Headings, and several others. Information about such errors can be helpful in knowing the exact cause of the errors and their handling. In this article, we list the errors that can arise during PDF/UA compliance testing using the API.

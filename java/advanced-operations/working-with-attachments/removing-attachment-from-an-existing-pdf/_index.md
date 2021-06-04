@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF can remove attachments from your PDF documents. Use Java PDF API to remove attachments in PDF files with Aspose.PDF library.
-lastmod: "2021-04-21"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

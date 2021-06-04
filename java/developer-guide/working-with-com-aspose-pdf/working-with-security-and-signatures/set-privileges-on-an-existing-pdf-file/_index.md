@@ -3,7 +3,7 @@ title: Set Privileges on an Existing PDF File
 type: docs
 weight: 50
 url: /java/set-privileges-on-an-existing-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

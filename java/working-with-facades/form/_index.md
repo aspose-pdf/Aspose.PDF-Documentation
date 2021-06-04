@@ -4,7 +4,7 @@ type: docs
 weight: 140
 url: /java/form-class/
 description: This section explains how to work with Aspose.PDF Facades using Form Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -3,7 +3,7 @@ title: Convert Dynamic XFA Form to Standard AcroForm
 type: docs
 weight: 70
 url: /java/convert-dynamic-xfa-form-to-standard-acroform/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

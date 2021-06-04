@@ -5,7 +5,7 @@ weight: 30
 url: /java/delete-bookmarks-from-pdf-document/
 keywords: pdf bookmarks,
 description: delete pdf bookmarks using java
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

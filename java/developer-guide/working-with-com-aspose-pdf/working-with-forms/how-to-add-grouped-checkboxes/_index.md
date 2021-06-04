@@ -3,7 +3,7 @@ title: How to add Grouped CheckBoxes
 type: docs
 weight: 40
 url: /java/how-to-add-grouped-checkboxes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 

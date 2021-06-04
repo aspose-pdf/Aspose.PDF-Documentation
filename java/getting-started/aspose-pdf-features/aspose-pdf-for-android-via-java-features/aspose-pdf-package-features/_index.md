@@ -3,7 +3,7 @@ title: aspose.pdf Package Features
 type: docs
 weight: 10
 url: /java/aspose-pdf-package-features/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

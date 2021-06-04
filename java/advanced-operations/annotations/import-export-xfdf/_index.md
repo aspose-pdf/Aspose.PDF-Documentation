@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/import-export-xfdf/
 description: You may import and export annotation with XFDF format using Aspose.PDF for Java library. 
-lastmod: "2021-02-12"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

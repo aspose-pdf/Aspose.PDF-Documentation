@@ -3,7 +3,7 @@ title: Add Text to a PDF file
 type: docs
 weight: 10
 url: /java/add-text-to-a-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Add Text to an existing PDF file**

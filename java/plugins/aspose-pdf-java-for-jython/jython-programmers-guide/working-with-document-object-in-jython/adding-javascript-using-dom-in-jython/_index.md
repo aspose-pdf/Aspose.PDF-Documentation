@@ -3,7 +3,7 @@ title: Adding JavaScript using DOM in Jython
 type: docs
 weight: 10
 url: /java/adding-javascript-using-dom-in-jython/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Add Javascript

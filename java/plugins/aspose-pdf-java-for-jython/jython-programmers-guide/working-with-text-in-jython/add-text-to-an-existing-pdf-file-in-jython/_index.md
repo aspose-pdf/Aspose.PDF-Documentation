@@ -3,7 +3,7 @@ title: Add Text to an existing PDF file in Jython
 type: docs
 weight: 20
 url: /java/add-text-to-an-existing-pdf-file-in-jython/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Add Text

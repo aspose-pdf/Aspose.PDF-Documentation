@@ -4,7 +4,7 @@ linktitle: Convert PDF to EMF
 type: docs
 weight: 50
 url: /java/convert-pdf-to-emf/
-lastmod: "2021-02-04"
+lastmod: "2021-06-05"
 description: This page describes how to convert PDF Pages to EMF image, convert all and single pages to EMF images with Aspose.PDF for Java.
 sitemap:
     changefreq: "weekly"

@@ -3,7 +3,7 @@ title: Gradiant Color Fill of Graph Object
 type: docs
 weight: 60
 url: /java/gradiant-color-fill-of-graph-object/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

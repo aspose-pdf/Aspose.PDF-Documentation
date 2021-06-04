@@ -3,7 +3,7 @@ title: Aspose.PDF Java for Ruby
 type: docs
 weight: 20
 url: /java/aspose-pdf-java-for-ruby/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## Introduction

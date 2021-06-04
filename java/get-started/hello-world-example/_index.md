@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World using Aspose.PDF for Java.
-lastmod: "2021-03-23"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -4,7 +4,7 @@ linktitle: Convert PDF to DOCX
 type: docs
 weight: 80
 url: /java/convert-pdf-to-docx/
-lastmod: "2021-02-04"
+lastmod: "2021-06-05"
 description: Convert PDF file to DOCX format with ease and full control with Aspose.PDF for Java. 
 sitemap:
     changefreq: "weekly"

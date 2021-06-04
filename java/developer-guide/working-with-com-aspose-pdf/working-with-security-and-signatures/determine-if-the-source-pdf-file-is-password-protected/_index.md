@@ -5,7 +5,7 @@ weight: 60
 url: /java/determine-if-the-source-pdf-file-is-password-protected/
 keywords: password protect pdf,
 description: Check either the file is a password protect PDF using java
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 Aspose.PDF for Java provides great capabilities of dealing with PDF documents. When using [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class of com.aspose.pdf package to open a PDF document which is password protected, we need to provide the password information as an argument to Document constructor and in case this information is not provided, an error message is generated. In fact when trying to open a PDF file with Document object, the constructor is trying to read the contents of PDF file and in case correct password is not provided, an error message is generated (it happens to prevent unauthorised access of document)

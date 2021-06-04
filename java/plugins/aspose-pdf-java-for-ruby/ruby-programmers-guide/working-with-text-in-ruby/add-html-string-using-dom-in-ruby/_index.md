@@ -3,7 +3,7 @@ title: Add HTML String using DOM in Ruby
 type: docs
 weight: 10
 url: /java/add-html-string-using-dom-in-ruby/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Add HTML

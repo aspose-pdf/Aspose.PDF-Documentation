@@ -3,7 +3,7 @@ title: When to Apply a License
 type: docs
 weight: 10
 url: /java/when-to-apply-a-license/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

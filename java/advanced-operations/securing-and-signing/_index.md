@@ -5,7 +5,7 @@ type: docs
 weight: 150
 url: /java/securing-and-signing/
 description: This section describes the features of using a signature and securing your PDF document.
-lastmod: "2021-04-28"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

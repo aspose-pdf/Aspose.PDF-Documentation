@@ -3,7 +3,7 @@ title: Create Document
 type: docs
 weight: 10
 url: /java/create-document-old/
-lastmod: "2020-04-16"
+lastmod: "2021-06-05"
 ---
 
 Aspose.PDF for Java API lets Java application developers to embed PDF documents processing functionality in their applications. It can be used to create and read PDF files without the need of any other software installed on the underlying machine. Aspose.PDF for Java can be used in a variety of Java application types such as Desktop, JSP, and JSF applications.

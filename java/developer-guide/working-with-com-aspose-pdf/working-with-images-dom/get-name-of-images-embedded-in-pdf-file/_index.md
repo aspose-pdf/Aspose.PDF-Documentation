@@ -3,7 +3,7 @@ title: Get Name of Images Embedded in PDF File
 type: docs
 weight: 30
 url: /java/get-name-of-images-embedded-in-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

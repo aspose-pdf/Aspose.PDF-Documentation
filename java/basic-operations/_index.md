@@ -4,7 +4,7 @@ linktitle: Basic operations
 type: docs
 weight: 40
 url: /java/basic-operations/
-lastmod: "2021-02-02"
+lastmod: "2021-06-05"
 description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF library.
 sitemap:
     changefreq: "weekly"

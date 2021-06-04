@@ -3,7 +3,7 @@ title: Optimize PDF Document
 type: docs
 weight: 40
 url: /java/optimize-pdf-document/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Optimize PDF Document for the Web**

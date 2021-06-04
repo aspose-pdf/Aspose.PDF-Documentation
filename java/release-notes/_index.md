@@ -3,7 +3,7 @@ title: Release Notes
 type: docs
 weight: 80
 url: /java/release-notes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 #### **Articles in this section**

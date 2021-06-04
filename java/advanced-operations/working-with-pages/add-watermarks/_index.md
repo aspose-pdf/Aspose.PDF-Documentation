@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/add-watermarks/
 description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the Java.
-lastmod: "2021-03-17"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

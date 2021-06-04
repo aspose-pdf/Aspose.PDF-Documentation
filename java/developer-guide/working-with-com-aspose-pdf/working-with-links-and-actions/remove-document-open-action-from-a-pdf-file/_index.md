@@ -3,7 +3,7 @@ title: Remove Document Open Action from a PDF file
 type: docs
 weight: 20
 url: /java/remove-document-open-action-from-a-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

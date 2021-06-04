@@ -4,7 +4,7 @@ linktitle: Convert Text to PDF
 type: docs
 weight: 300
 url: /java/convert-text-to-pdf/
-lastmod: "2021-02-05"
+lastmod: "2021-06-05"
 description: Aspose.PDF for Java allows you to convert plain text file to PDF or to convert pre-formatted text file to PDF. 
 sitemap:
     changefreq: "weekly"

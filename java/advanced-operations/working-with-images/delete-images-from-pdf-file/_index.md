@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/delete-images-from-pdf-file/
 description: This section explain how to delete Images from PDF File using Aspose.PDF for Java.
-lastmod: "2021-03-29"
+lastmod: "2021-06-05"
 ---
 
 To delete an image from a PDF file, simply use the Images collection’s delete(..) method.

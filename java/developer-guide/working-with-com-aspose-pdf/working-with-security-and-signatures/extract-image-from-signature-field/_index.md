@@ -3,7 +3,7 @@ title: Extract Image from Signature Field
 type: docs
 weight: 40
 url: /java/extract-image-from-signature-field/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

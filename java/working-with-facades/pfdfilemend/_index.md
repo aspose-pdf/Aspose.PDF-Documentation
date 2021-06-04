@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/pdffilemend-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfFileMend Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

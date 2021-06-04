@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/search-and-get-text-from-pdf/
 description: This article explains how to use various tools to search and get a text from PDF docs. We can search with regular expression from particular or whole pages.
-lastmod: "2021-03-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

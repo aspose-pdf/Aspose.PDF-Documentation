@@ -3,7 +3,7 @@ title: Add text inside Graph Object
 type: docs
 weight: 70
 url: /java/add-text-inside-graph-object/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 Aspose.PDF for Java supports to add text inside the Graph Object. Text property of Graph Object provides option to set text of the Graph Object. The following code snippet shows how to add text inside a Rectangle object.

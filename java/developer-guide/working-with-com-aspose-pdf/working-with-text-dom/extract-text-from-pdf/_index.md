@@ -3,7 +3,7 @@ title: Extract Text from PDF
 type: docs
 weight: 20
 url: /java/extract-text-from-pdf/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Extract Text From All the Pages of a PDF Document**

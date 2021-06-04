@@ -3,7 +3,7 @@ title: Get Form Fields from a Specific Region of PDF File
 type: docs
 weight: 60
 url: /java/get-form-fields-from-a-specific-region-of-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/crop-pages/
 description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for Java.
-lastmod: "2021-03-17"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

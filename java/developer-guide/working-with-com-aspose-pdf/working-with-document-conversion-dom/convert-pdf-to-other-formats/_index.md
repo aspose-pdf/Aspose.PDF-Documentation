@@ -3,7 +3,7 @@ title: Convert PDF to other Formats
 type: docs
 weight: 30
 url: /java/convert-pdf-to-other-formats/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Convert PDF to PDF-A format**

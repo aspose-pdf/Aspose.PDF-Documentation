@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/get-and-set-page-properties/
 description: This topic explain how to get numbers in PDF file, get page properties and determine page color using Aspose.PDF for Java.
-lastmod: "2021-03-17"
+lastmod: "2021-06-05"
 ---
 
 Aspose.PDF for Java lets you read and set properties of pages in a PDF file in your Java applications. This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties. 

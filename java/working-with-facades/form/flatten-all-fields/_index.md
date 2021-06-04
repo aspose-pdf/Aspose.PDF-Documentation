@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/flatten-all-fields/
 description: This section explains how to flatten all Fields with Aspose.PDF Facades using Form Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

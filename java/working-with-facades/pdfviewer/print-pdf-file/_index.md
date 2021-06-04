@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/print-pdf-file/
 description: This section explains how to print PDF filewith Aspose.PDF Facades using PdfViewer Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

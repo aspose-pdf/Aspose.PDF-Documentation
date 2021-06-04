@@ -3,7 +3,7 @@ title: Add Hyperlink in a PDF file
 type: docs
 weight: 10
 url: /java/add-hyperlink-in-a-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

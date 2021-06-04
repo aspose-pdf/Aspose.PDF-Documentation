@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /java/stamping/
 description: This section describes how to add image stamps and text stamps to a PDF page.
-lastmod: "2021-03-18"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
