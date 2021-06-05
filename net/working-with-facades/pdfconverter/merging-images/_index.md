@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /net/merge-images/
 description: This section explains how to 
-lastmod: "2021-04-19"
+lastmod: "2021-06-05"
 draft: false
 ---
 

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/extract-and-save-an-attachment/
 description: Aspose.PDF for .NET allows you to get all attachments from a PDF document. Also, you can get an individual attachment from your document.
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

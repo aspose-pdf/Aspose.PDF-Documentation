@@ -9,7 +9,7 @@ aliases:
     - /net/working-with-annotations/
     - /net/annotation/
     - /net/working-with-annotations-facades/
-lastmod: "2021-02-26"   
+lastmod: "2021-06-05"   
 sitemap:
     changefreq: "weekly"
     priority: 0.7

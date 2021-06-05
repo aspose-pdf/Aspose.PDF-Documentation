@@ -4,7 +4,7 @@ type: docs
 weight: 110
 url: /net/generate-thumbnail-images-from-pdf-documents/
 description: This section describes how to generate thumbnail images from PDF documents
-lastmod: "2021-01-27"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

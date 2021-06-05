@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /net/change-page-size/
 description: Change Page Size from your PDF file using C# library.
-lastmod: "2021-01-22"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/import-and-export-bookmarks/
 description: This section explains how to import and export Bookmarks with Aspose.PDF Facades.
-lastmod: "2021-01-19"
+lastmod: "2021-06-05"
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /net/working-with-text-facades/
 description: This section explains how to work with Text - Facades using PdfContentEditor Class.
-lastmod: "2021-01-19"
+lastmod: "2021-06-05"
 draft: false
 ---
 

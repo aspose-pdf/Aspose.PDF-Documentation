@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/move-pages/
 description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for .NET.
-lastmod: "2021-01-27"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

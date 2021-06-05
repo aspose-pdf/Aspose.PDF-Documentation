@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for .NET 17.11
 type: docs
 weight: 20
 url: /net/aspose-pdf-for-net-17-11-release-notes/
-lastmod: "2021-03-08"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

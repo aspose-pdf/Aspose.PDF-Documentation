@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/system-requirements/
 description: This section lists the supported operating systems that a developer needs to successfully work with Aspose.PDF for .NET.
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

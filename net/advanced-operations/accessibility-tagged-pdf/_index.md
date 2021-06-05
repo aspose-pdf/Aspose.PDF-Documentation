@@ -9,7 +9,7 @@ description: Aspose.PDF provides the ability to create Tagged PDF documents, all
 aliases:   
     - /net/working-with-tagged-pdfs/
     - /net/accessebility-tagged-pdf/
-lastmod: "2020-12-23"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

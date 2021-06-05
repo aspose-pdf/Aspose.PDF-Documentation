@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for .NET 18.1
 type: docs
 weight: 120
 url: /net/aspose-pdf-for-net-18-1-release-notes/
-lastmod: "2020-12-14"
+lastmod: "2021-06-05"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2018, version 18.1.
 sitemap:
     changefreq: "weekly"

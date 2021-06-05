@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /net/copy-inner-and-outer-field/
 description: This section explains how to copy Inner and Outer Field with Aspose.PDF Facades using FormEditor Class.
-lastmod: "2021-01-19"
+lastmod: "2021-06-05"
 draft: false
 ---
 

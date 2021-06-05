@@ -7,7 +7,7 @@ url: /net/complex-pdf-example/
 description: Aspose.PDF for NET allows you to create more complex documents that contain images, text fragments, and tables in one document.
 aliases:
     - /net/complex-pdf/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

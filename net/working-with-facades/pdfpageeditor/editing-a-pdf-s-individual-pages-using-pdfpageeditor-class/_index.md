@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
 description: This section explains how to edit PDF's individual pages using PdfPageEditor class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

@@ -4,7 +4,7 @@ linktitle: Release Notes - 2020
 type: docs
 weight: 10
 url: /net/release-notes-2020/
-lastmod: "2020-12-14"
+lastmod: "2021-06-05"
 description: This section list all-new features, enhancement, and fixed bugs by Aspose.PDF for .NET library in 2020.
 sitemap:
     changefreq: "weekly"

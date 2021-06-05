@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /net/get-button-option-value/
 description: This section explains how to get Button Option Value with Aspose.PDF Facades using Form Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

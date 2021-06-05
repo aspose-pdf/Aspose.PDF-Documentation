@@ -111,7 +111,7 @@ Property Aspose.Pdf.Text.TextFragmentAbsorber.Errors
 Property Aspose.Pdf.Text.TextReplaceOptions.AdjustmentNewLineSpacing 
 Property Aspose.Pdf.Text.TextSearchOptions.LogTextExtractionErrors 
 ### **Removed APIs:**
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

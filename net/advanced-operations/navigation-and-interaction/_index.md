@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /net/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks.
-lastmod: "2021-03-29"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

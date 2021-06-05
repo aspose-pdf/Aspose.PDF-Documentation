@@ -4,7 +4,7 @@ linktitle: Convert LaTeX/TeX to PDF
 type: docs
 weight: 310
 url: /net/convert-latex-tex-to-pdf/
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 description: This page describes the use of files in the LaTeX format. Also, article explains how to convert LaTeX files to PDF format with Aspose.PDF library.
 sitemap:
     changefreq: "weekly"

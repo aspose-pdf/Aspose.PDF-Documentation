@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/delete-images-from-pdf-file/
 description: This section explain how to delete Images from PDF File using Aspose.PDF for .NET.
-lastmod: "2021-01-27"
+lastmod: "2021-06-05"
 ---
 
 To delete an image from a PDF file:

@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /net/concatenating-all-pdf-files-in-particular-folder/
 description: Aspose.PDF allows you concatenating all PDF files in Particular folder using C#.
-lastmod: "2020-12-23"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

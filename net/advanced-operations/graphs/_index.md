@@ -7,7 +7,7 @@ url: /net/graphs/
 description: This article explains what a is Graph, how to create a filled rectangle object, how to add text inside a graph object, how to add a line object to PDF and etc.
 aliases:
     - /net/working-with-graphs/
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

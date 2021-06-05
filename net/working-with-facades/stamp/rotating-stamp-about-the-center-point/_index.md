@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/rotating-stamp-about-the-center-point/
 description: This section explains how to rotate stamp about the center point using Stamp Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

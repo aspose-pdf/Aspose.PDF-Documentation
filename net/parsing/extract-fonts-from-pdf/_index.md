@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/extract-fonts-from-pdf/
 description: How to extract font from PDF using C#
-lastmod: "2021-01-13"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

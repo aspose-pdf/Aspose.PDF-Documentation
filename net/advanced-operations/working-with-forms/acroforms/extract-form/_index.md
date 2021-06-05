@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/extract-form/
 description: Extract  form from your PDF file with Aspose.PDF for .NET library.
-lastmod: "2021-04-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

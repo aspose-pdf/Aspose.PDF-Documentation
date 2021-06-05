@@ -8,7 +8,7 @@ description: This section describes the features of using a signature and securi
 aliases:
     - net/working-with-security-and-signatures/
 
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

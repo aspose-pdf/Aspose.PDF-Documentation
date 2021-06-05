@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/redact-certain-page-region-with-redactionannotation/
 description: Aspose.PDF for .NET allows you to add and manipulate Annotations in an existing PDF file. You should use a class named RedactionAnnotation to resolve this task.
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

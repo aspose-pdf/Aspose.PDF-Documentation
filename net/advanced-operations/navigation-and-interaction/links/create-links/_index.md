@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/create-links/
 description: This section explains how to create links in your PDF document with C#. 
-lastmod: "2021-03-29"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

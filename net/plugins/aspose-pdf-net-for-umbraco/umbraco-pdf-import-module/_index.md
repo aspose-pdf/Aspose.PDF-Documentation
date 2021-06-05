@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/umbraco-pdf-import-module/
 description: Learn how to install and use Umbraco PDF Import Module
-lastmod: "2020-01-11"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

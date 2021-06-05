@@ -4,7 +4,7 @@ type: docs
 weight: 70
 url: /net/delete-pdf-pages/
 description: This section explains how to delete PDF pages with Aspose.PDF Facades using PdfFileEditor class.
-lastmod: "2021-01-18"
+lastmod: "2021-06-05"
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/find-whether-pdf-file-contains-images-or-text-only/
 description: This topic explain how to find whether PDF file contains images or text only with PdfExtractor Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

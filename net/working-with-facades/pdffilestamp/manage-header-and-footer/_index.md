@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /net/manage-header-and-footer/
 description: This section explains how to manage Header and Footer with Aspose.PDF Facades using PdfFileStamp Class.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 ---
 

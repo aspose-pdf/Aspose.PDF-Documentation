@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/justify-text-in-a-textbox-field/
 description: This article shows you how to Justify Text in a Textbox Field using Form Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

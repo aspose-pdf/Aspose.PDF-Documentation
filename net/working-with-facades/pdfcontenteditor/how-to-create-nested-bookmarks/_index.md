@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/how-to-create-nested-bookmarks/
 description: This section explains how to create Nested Bookmarks with PdfContentEditor Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

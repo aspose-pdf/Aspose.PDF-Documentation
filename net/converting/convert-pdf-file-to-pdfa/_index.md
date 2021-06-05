@@ -4,7 +4,7 @@ linktitle: Convert PDF File to PDF/A
 type: docs
 weight: 180
 url: /net/convert-pdf-file-to-pdfa/
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
 sitemap:
     changefreq: "weekly"

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/printing-pdf-to-an-xps-printer-facades/
 description: This page shows how to printing PDF to an XPS printer using PdfViewer class.
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

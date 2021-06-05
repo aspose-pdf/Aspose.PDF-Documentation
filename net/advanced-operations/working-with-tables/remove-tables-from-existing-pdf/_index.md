@@ -4,7 +4,7 @@ linktitle: Remove Tables
 type: docs
 weight: 50
 url: /net/remove-tables-from-existing-pdf/
-lastmod: "2021-01-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

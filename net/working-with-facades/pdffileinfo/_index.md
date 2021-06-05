@@ -4,7 +4,7 @@ type: docs
 weight: 110
 url: /net/pdffileinfo-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfFileInfo Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"

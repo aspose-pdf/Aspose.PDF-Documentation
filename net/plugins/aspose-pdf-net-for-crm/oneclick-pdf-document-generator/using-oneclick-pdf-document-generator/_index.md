@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/using-oneclick-pdf-document-generator/
 description: Learn how to use Aspose.PDF OneClick PDF Document Generator in Microsoft Dynamics
-lastmod: "2020-01-11"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

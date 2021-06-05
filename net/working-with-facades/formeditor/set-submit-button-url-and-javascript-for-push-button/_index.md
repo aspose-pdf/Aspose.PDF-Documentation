@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /net/set-submit-button-url-and-javascript-for-push-button/
 description: This section explains how to set Submit Button URL and JavaScript for Push Button using FormEditor Class.
-lastmod: "2021-01-19"
+lastmod: "2021-06-05"
 draft: false
 ---
 

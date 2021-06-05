@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for .NET 8.3.0
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-8-3-0-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /net/support-for-dicom-mages/
 description: This section describes how to support for DICOM images in PDF file using C# library.
-lastmod: "2021-01-28"
+lastmod: "2021-06-05"
 ---
 
 The DICOM standard was developed by the National Electrical Manufacturers Association. This format covers the functions of creating, storing, transferring, and printing individual image frames, series of frames, patient information, research, equipment, institutions, medical personnel performing the examination, and the like.

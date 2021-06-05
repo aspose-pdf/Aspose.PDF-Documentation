@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /net/pdf-ua-compliance-test-errors-list/
 description: This article shows a list of the errors that can arise during PDF/UA compliance testing using the Aspose.PDF API and C# or VB.
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
