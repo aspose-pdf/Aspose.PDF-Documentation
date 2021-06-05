@@ -3,7 +3,7 @@ title: Getting Started
 type: docs
 weight: 10
 url: /cpp/getting-started/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 ## **Articles in this section**
 - [Product Overview](/pdf/cpp/product-overview/)

@@ -3,7 +3,7 @@ title: Aspose.Pdf for CPP 17.12 Release Notes
 type: docs
 weight: 10
 url: /cpp/aspose-pdf-for-cpp-17-12-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ### **Improvements and Changes**

@@ -3,7 +3,7 @@ title: Add a Table
 type: docs
 weight: 10
 url: /cpp/add-a-table/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Add Table to PDF using C++**

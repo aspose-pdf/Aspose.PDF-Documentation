@@ -3,7 +3,7 @@ title: Working with Images
 type: docs
 weight: 40
 url: /cpp/working-with-images/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Create and Add Image into PDF Document**

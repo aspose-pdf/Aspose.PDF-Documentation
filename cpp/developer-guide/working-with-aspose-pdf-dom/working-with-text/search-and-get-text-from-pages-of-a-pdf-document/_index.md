@@ -3,7 +3,7 @@ title: Search and Get Text from Pages of a PDF Document
 type: docs
 weight: 20
 url: /cpp/search-and-get-text-from-pages-of-a-pdf-document/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **Search a Particular Text and Change its Style**

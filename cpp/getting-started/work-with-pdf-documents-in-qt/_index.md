@@ -3,7 +3,7 @@ title: Work with PDF Documents in Qt
 type: docs
 weight: 70
 url: /cpp/work-with-pdf-documents-in-qt/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 Qt is a cross-platform application development framework that allows creating a variety of desktop, mobile, web, and embedded system applications. In this article, we will see how you can integrate our C++ PDF library to work with PDF documents in your Qt applications.
