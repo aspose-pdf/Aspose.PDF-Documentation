@@ -1,5 +1,7 @@
 ---
-title: Aspose.PDF for JasperReports
+title: Documentation
+linktitle: Aspose.PDF for JasperReports
+second_title: Aspose.PDF for JasperReports
 type: docs
 weight: 70
 url: /jasperreports/

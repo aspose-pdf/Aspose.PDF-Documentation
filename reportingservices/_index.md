@@ -1,5 +1,7 @@
 ---
-title: Aspose.PDF for Reporting Services
+title: Documentation
+linktitle:  Aspose.PDF for Reporting Services
+second_title: Aspose.PDF for Reporting Services
 type: docs
 weight: 60
 url: /reportingservices/
@@ -17,7 +19,7 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 
 {{% /alert %}}
 
-## **Aspose.PDF for Reporting Services Resources**
+## Aspose.PDF for Reporting Services Resources
 
 - [Aspose.PDF for Reporting Services Product Overview](/pdf/reportingservices/product-overview/)
 - [Aspose.PDF for Reporting Services Supported File Formats](/pdf/reportingservices/supported-file-formats/)
