@@ -3,7 +3,7 @@ title: Compression
 type: docs
 weight: 130
 url: /reportingservices/compression/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

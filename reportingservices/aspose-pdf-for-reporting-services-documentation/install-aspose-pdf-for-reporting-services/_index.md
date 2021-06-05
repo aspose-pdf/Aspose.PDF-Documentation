@@ -3,7 +3,7 @@ title: Install Aspose.PDF for Reporting Services
 type: docs
 weight: 50
 url: /reportingservices/install-aspose-pdf-for-reporting-services/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

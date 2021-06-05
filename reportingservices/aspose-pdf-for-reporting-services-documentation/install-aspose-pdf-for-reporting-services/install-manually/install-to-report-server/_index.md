@@ -3,7 +3,7 @@ title: Install to Report Server
 type: docs
 weight: 10
 url: /reportingservices/install-to-report-server/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

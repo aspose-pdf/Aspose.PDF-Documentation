@@ -3,7 +3,7 @@ title: Table of Contents List of Tables or Figures
 type: docs
 weight: 10
 url: /reportingservices/table-of-contents-list-of-tables-or-figures/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

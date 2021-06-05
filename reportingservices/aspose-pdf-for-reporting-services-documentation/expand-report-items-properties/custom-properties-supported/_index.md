@@ -3,7 +3,7 @@ title: Custom Properties Supported
 type: docs
 weight: 20
 url: /reportingservices/custom-properties-supported/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ###### **This section includes the following topics:**

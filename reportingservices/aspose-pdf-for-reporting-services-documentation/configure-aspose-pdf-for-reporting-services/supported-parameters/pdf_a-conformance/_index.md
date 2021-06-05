@@ -3,7 +3,7 @@ title: PDF_A Conformance
 type: docs
 weight: 100
 url: /reportingservices/pdf_a-conformance/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

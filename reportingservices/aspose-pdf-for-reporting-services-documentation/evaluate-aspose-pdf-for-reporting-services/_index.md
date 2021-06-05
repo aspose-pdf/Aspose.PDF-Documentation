@@ -3,7 +3,7 @@ title: Evaluate Aspose.Pdf for Reporting Services
 type: docs
 weight: 110
 url: /reportingservices/evaluate-aspose-pdf-for-reporting-services/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

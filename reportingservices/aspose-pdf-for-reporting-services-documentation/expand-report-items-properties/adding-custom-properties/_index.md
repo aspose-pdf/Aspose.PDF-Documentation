@@ -3,7 +3,7 @@ title: Adding Custom Properties
 type: docs
 weight: 10
 url: /reportingservices/adding-custom-properties/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

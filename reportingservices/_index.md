@@ -4,12 +4,12 @@ type: docs
 weight: 60
 url: /reportingservices/
 is_root: true
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-![todo:image_alt_text](home_5.png)
+![Aspose.PDF for Reporting Services Logo](home_5.png)
 
 **Welcome to Aspose.PDF for Reporting Services**
 
