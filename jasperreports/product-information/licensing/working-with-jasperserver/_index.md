@@ -3,7 +3,7 @@ title: Working with JasperServer
 type: docs
 weight: 20
 url: /jasperreports/working-with-jasperserver/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 #### <ins>**Set the licenseFile Exporter Parameter in applicationContext.xml**

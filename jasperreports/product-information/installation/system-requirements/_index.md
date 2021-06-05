@@ -3,7 +3,7 @@ title: System Requirements
 type: docs
 weight: 10
 url: /jasperreports/system-requirements/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
