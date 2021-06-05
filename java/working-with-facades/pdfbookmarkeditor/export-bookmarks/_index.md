@@ -10,6 +10,8 @@ sitemap:
     priority: 0.7
 ---
 
+{{% alert %}}
+
 The exportBookmarksToXml method allows you to export bookmarks from a PDF file to an XML file.
 
 {{% /alert %}}
