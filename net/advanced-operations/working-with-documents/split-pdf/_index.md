@@ -8,7 +8,7 @@ description: This topic shows how to split PDF pages into individual PDF files i
 aliases:
     - /net/split-document/
     - /net/split-pdf-pages/
-lastmod: "2021-01-02"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

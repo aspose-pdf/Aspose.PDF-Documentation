@@ -8,7 +8,7 @@ description: This section describes the features of working with images in a PDF
 aliases:
     - /net/working-with-images-in-pdf/
     - /net/manipulate-images/
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

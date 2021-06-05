@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/update-links/
 description: Update links in PDF programmatically. This guide is about how to update links in PDF in C# language. 
-lastmod: "2021-03-29"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

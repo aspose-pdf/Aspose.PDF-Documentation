@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/working-with-signature-in-a-pdf-file/
 description: This section explains how to work with Signature in a PDF File using PdfFileSignature class.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 ---
 

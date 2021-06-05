@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/link-annotation/
 description: Aspose.PDF for .NET allows you to Add, Get, and Delete Link Annotation from your PDF document.
-lastmod: "2021-01-13"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

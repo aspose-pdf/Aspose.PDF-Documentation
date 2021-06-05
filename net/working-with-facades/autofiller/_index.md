@@ -4,7 +4,7 @@ type: docs
 weight: 160
 url: /net/autofiller-class/
 description: This section explains how to work with Aspose.PDF Facades with AutoFiller Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"

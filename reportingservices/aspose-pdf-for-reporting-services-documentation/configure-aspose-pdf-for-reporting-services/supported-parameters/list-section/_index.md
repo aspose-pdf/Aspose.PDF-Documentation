@@ -3,7 +3,7 @@ title: List Section
 type: docs
 weight: 110
 url: /reportingservices/list-section/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 

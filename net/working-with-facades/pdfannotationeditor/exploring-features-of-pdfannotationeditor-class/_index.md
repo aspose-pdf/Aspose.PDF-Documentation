@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/exploring-features-of-pdfannotationeditor-class/
 description: This section explains about exploring features of PdfAnnotationEditor class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

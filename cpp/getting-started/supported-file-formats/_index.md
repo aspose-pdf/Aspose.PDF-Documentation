@@ -3,7 +3,7 @@ title: Supported File Formats
 type: docs
 weight: 20
 url: /cpp/supported-file-formats/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Supported File Formats**

@@ -4,7 +4,7 @@ type: docs
 weight: 112
 url: /net/working-with-facades/
 description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
-lastmod: "2021-01-28"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

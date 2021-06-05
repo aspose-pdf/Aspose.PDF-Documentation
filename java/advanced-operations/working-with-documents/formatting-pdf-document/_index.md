@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/formatting-pdf-document/
 description: Format the PDF Document with Aspose.PDF for Java. Use the next code snippet to resolve your tasks.
-lastmod: "2021-03-10"
+lastmod: "2021-06-05"
 ---
 
 ## Get Document Window and Page Display Properties

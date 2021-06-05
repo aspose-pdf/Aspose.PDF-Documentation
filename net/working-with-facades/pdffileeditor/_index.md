@@ -1,10 +1,10 @@
 ---
-title: PdfFileEditor class
+title: PdfFileEditor Class
 type: docs
 weight: 10
 url: /net/pdffileeditor-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfFileEditor class.
-lastmod: "2021-05-20"
+lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"

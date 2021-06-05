@@ -4,7 +4,7 @@ linktitle: Convert PDF to TIFF
 type: docs
 weight: 30
 url: /java/convert-pdf-to-tiff/
-lastmod: "2021-02-04"
+lastmod: "2021-06-05"
 description: This article describes how to convert pages in PDF document into TIFF image. You will learn how to convert all or single pages to TIFF images with Aspose.PDF for Java.
 sitemap:
     changefreq: "weekly"

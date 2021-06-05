@@ -3,7 +3,7 @@ title: Aspose.Pdf for Java 12.0.0 Release Notes
 type: docs
 weight: 40
 url: /java/aspose-pdf-for-java-12-0-0-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ### **Features and Improvements**

@@ -4,7 +4,7 @@ linktitle: Convert EMF to PDF
 type: docs
 weight: 230
 url: /java/convert-emf-to-pdf/
-lastmod: "2021-02-05"
+lastmod: "2021-06-05"
 description: Both bitmap as well as vector graphics can be files having an EMF extension. Convert EMF to PDF file simply with Java.
 sitemap:
     changefreq: "weekly"

@@ -3,7 +3,7 @@ title: Delete a Particular Page from the PDF File in Python
 type: docs
 weight: 20
 url: /java/delete-a-particular-page-from-the-pdf-file-in-python/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 To delete a Particular Page from the PDF document using **Aspose.PDF Java for Python**, simply invoke **DeletePage** class.

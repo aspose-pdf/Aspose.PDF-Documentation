@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/generate-thumbnail-images-from-pdf-documents/
 description: This section describes how to generate thumbnail images from PDF documents using Aspose.PDF for Java.
-lastmod: "2021-03-31"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF for Java Approach

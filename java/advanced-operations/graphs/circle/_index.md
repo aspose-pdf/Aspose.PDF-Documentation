@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-circle/
 description: This article explains how to create a circle object to your PDF using Aspose.PDF for Java.
-lastmod: "2021-04-08"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

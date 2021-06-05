@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/add-line/
 description: This article explains how to create a line object to your PDF using Aspose.PDF for Java.
-lastmod: "2021-04-08"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

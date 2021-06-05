@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/create-bookmarks/
 description: This section explains how to create bookmarks to your PDF file with Aspose.PDF Facades using PdfBookmarEditor Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

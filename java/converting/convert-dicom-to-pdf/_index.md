@@ -4,7 +4,7 @@ linktitle: Convert DICOM to PDF
 type: docs
 weight: 250
 url: /java/convert-dicom-to-pdf/
-lastmod: "2021-02-05"
+lastmod: "2021-06-05"
 description: Convert medical images saved in DICOM format to a PDF file using Aspose.PDF for Java.
 sitemap:
     changefreq: "weekly"

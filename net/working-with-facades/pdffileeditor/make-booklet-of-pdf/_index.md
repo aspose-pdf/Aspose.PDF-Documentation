@@ -4,7 +4,7 @@ type: docs
 weight: 80
 url: /net/make-booklet-of-pdf/
 description: This section explains how to make booklet of PDF with Aspose.PDF Facades using PdfFileEditor class.
-lastmod: "2021-01-18"
+lastmod: "2021-06-05"
 draft: false
 ---
 

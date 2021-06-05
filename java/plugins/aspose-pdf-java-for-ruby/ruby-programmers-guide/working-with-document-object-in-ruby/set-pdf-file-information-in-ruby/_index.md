@@ -3,7 +3,7 @@ title: Set PDF File Information in Ruby
 type: docs
 weight: 120
 url: /java/set-pdf-file-information-in-ruby/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Set PDF File Information

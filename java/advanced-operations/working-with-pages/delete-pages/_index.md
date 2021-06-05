@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/delete-pages/
 description: You can delete pages from your PDF file using Java library.
-lastmod: "2021-03-17"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

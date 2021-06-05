@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/xfa-forms/
 description: Aspose.PDF for .NET API lets you work with XFA and XFA Acroform fields in a PDF document. The Aspose.PDF.Facades.
-lastmod: "2021-04-19"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /net/artifacts/
 description: This page describes how to work with Artifact class using Aspose.PDF for .NET. Code snippets show how to add a background image to PDF pages and how to get each watermark on the first page of a PDF file.
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

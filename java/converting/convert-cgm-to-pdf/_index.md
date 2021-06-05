@@ -5,7 +5,7 @@ type: docs
 weight: 260
 url: /java/convert-cgm-to-pdf/
 description: Convert CGM files to PDF documents with Aspose.PDF for java library. These files used in CAD and presentation graphics applications.
-lastmod: "2021-02-05"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

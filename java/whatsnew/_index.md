@@ -8,8 +8,77 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2021-04-16"
+lastmod: "2021-06-05"
 ---
+
+## What's new in Aspose.PDF 21.5
+
+### Add API for merging images
+
+Aspose.PDF 21.4 allows you to combine Images. Merges list of image streams as one image stream. Png/jpg/tiff outputs formats are supported, in case of using non supported format output stream encoded as Jpeg by default.
+Follow the next code snippet:
+
+```java
+InputStream inputStream;
+
+        ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
+        InputStream inputFile300dpi = new FileInputStream("image1.jpg");
+        try  {
+            inputImagesStreams.add(inputFile300dpi);
+            InputStream inputFile600dpi = new FileInputStream("image2.jpg");
+            try {
+                inputImagesStreams.add(inputFile600dpi);
+                inputStream = PdfConverter.mergeImages(
+                        inputImagesStreams,
+                        com.aspose.pdf.ImageFormat.Jpeg,
+                        ImageMergeMode.Vertical,
+                        new Integer(1),
+                        new Integer(1)
+                );
+            } finally {
+                if (inputFile600dpi != null) (inputFile600dpi).close();
+            }
+        } finally {
+            if (inputFile300dpi != null) (inputFile300dpi).close();
+        }
+
+        Document doc = new Document();
+        Page p = doc.getPages().add();
+        Image image = new Image();
+        image.setImageStream(inputStream);
+        p.getParagraphs().add(image);
+        doc.save("out.pdf");
+        inputStream.close();
+```
+
+Also you may merge you images as Tiff format:
+
+```java
+InputStream inputStream;
+
+        ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
+        InputStream inputFile1 = new FileInputStream("1.tif");
+        try  {
+            inputImagesStreams.add(inputFile1);
+            InputStream inputFile2 = new FileInputStream("2.tif");
+            try {
+                inputImagesStreams.add(inputFile2);
+                inputStream = PdfConverter.mergeImagesAsTiff(inputImagesStreams);
+            } finally {
+                if (inputFile2 != null) (inputFile2).close();
+            }
+        } finally {
+            if (inputFile1 != null) (inputFile1).close();
+        }
+
+        Document doc = new Document();
+        Page p = doc.getPages().add();
+        Image image = new Image();
+        image.setImageStream(inputStream);
+        p.getParagraphs().add(image);
+        doc.save("out2.pdf");
+        inputStream.close();
+```
 
 ## What's new in Aspose.PDF 21.02
 

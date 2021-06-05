@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/line-annotation/
 description: This article shows how you can add, get, and delete line annotation from your PDF document.
-lastmod: "2021-02-10"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

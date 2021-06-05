@@ -4,7 +4,7 @@ linktitle: Manipulate Tables
 type: docs
 weight: 40
 url: /net/manipulate-tables-in-existing-pdf/
-lastmod: "2021-01-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

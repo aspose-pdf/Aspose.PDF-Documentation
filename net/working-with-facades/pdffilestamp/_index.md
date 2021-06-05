@@ -4,7 +4,7 @@ type: docs
 weight: 155
 url: /net/pdffilestamp-class/
 description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 ---
 

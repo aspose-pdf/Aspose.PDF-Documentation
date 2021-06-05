@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library. Learn how to draw, open, or add an annotation with Java.
-lastmod: "2021-02-09"    
+lastmod: "2021-06-05"    
 sitemap:
     changefreq: "weekly"
     priority: 0.7

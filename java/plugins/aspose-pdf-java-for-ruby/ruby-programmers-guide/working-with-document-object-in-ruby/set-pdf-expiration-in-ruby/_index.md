@@ -3,7 +3,7 @@ title: Set PDF Expiration in Ruby
 type: docs
 weight: 110
 url: /java/set-pdf-expiration-in-ruby/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Set PDF Expiration

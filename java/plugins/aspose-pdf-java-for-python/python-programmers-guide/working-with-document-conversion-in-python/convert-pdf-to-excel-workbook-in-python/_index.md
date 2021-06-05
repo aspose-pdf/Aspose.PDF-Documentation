@@ -3,7 +3,7 @@ title: Convert PDF to Excel Workbook in Python
 type: docs
 weight: 20
 url: /java/convert-pdf-to-excel-workbook-in-python/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 To convert PDF document to Excel Workbook using **Aspose.PDF Java for Python**, simply invoke **PdfToExcel** module.

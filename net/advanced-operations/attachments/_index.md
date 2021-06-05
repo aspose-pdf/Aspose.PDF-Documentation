@@ -13,7 +13,7 @@ description: Use C# PDF API to access, add and remove attachments in PDF files u
 aliases:
     - /net/working-with-attachments/
     - /net/working-with-attachments-facades/
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

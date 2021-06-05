@@ -4,7 +4,7 @@ type: docs
 weight: 60
 url: /net/working-with-form-fields/
 description: This topic explains how to work with Form Fields with Aspose.PDF Facades using FormEditor Class.
-lastmod: "2021-01-19"
+lastmod: "2021-06-05"
 draft: false
 ---
 

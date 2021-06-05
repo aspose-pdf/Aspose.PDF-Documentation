@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-image-and-signature-information/
 description: You may extract images from the signature field and extract signature information using the SignatureField class with Java.
-lastmod: "2021-04-28"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

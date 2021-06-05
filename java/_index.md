@@ -6,7 +6,7 @@ type: docs
 weight: 20
 url: /java/
 is_root: true
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

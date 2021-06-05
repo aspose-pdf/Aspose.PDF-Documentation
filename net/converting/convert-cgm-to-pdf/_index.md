@@ -5,7 +5,7 @@ type: docs
 weight: 260
 url: /net/convert-cgm-to-pdf/
 description: Convert CGM files to PDF documents with Aspose.PDF library. These files used in CAD and presentation graphics applications
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

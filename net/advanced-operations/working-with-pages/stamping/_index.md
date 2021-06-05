@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /net/stamping/
 description: This section describes how to add image stamps and text stamps to a PDF page.
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 aliases:
     - /net/adding-stamp-in-a-pdf-file/
     - /net/adding-text-stamp-watermark/

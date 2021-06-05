@@ -3,7 +3,7 @@ title: Working with Document Object in Ruby
 type: docs
 weight: 10
 url: /java/working-with-document-object-in-ruby/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 This section includes the following topics:

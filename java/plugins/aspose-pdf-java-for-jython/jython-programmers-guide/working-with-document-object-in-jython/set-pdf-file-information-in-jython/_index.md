@@ -3,7 +3,7 @@ title: Set PDF File Information in Jython
 type: docs
 weight: 70
 url: /java/set-pdf-file-information-in-jython/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Set Pdf File Info

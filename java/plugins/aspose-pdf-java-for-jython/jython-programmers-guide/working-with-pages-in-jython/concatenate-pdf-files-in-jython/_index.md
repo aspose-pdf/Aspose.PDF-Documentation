@@ -3,7 +3,7 @@ title: Concatenate PDF Files in Jython
 type: docs
 weight: 10
 url: /java/concatenate-pdf-files-in-jython/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Concatenate Pdf Files

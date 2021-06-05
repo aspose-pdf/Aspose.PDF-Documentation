@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/bookmarks/
 description: This section explain how to add, delete and get bookmark with Aspose.PDF for Java.
-lastmod: "2021-04-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

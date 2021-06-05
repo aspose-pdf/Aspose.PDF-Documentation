@@ -3,7 +3,7 @@ title: XMP Metadata
 type: docs
 weight: 80
 url: /reportingservices/xmp-metadata/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

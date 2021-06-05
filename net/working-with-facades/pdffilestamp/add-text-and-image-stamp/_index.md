@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/add-text-and-image-stamp/
 description: This section explains how to add Text and Image Stamp with Aspose.PDF Facades using PdfFileStamp Class.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 ---
 

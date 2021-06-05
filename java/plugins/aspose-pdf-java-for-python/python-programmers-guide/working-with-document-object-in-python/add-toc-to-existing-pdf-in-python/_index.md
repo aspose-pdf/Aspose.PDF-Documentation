@@ -3,7 +3,7 @@ title: Add TOC to Existing PDF in Python
 type: docs
 weight: 20
 url: /java/add-toc-to-existing-pdf-in-python/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 To add TOC in Pdf document using **Aspose.PDF Java for Python**, simply invoke **AddToc** class.

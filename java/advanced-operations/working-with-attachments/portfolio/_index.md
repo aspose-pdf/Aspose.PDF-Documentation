@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/portfolio/
 description: How to Create a PDF Portfolio with Java. You should use a Microsoft Excel File, a Word document, and an image file to create a PDF Portfolio.
-lastmod: "2021-04-22"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

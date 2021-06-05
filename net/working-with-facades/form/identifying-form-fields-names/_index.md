@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/identifying-form-fields-names/
 description: Aspose.PDF.Facades allows you identifying form fields names using Form Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

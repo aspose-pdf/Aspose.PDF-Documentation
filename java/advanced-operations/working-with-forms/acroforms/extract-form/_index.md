@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-form/
 description: This section explains how to extract forms from your PDF document with Aspose.PDF for Java.
-lastmod: "2021-04-15"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

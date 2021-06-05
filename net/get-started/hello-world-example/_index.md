@@ -7,7 +7,7 @@ url: /net/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World.
 aliases:
     - /net/hello-world/
-lastmod: "2020-12-23"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

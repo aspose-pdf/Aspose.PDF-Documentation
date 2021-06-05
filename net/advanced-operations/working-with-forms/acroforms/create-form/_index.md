@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/create-form/
 description: With Aspose.PDF for .NET you may create a form from scratch in your PDF file
-lastmod: "2021-04-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

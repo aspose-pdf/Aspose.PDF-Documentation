@@ -4,7 +4,7 @@ linktitle: Aspose.Pdf .Net 3.1.2.0 Hot Fix Release Notes
 type: docs
 weight: 470
 url: /net/aspose-pdf-net-3-1-2-0-hot-fix-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/aspose-pdf-net-for-umbraco/
 description: Learn how to use Umbraco PDF Import Module
-lastmod: "2020-01-11"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

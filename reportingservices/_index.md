@@ -6,12 +6,12 @@ type: docs
 weight: 60
 url: /reportingservices/
 is_root: true
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-![todo:image_alt_text](home_5.png)
+![Aspose.PDF for Reporting Services Logo](home_5.png)
 
 **Welcome to Aspose.PDF for Reporting Services**
 
@@ -19,7 +19,7 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 
 {{% /alert %}}
 
-## **Aspose.PDF for Reporting Services Resources**
+## Aspose.PDF for Reporting Services Resources
 
 - [Aspose.PDF for Reporting Services Product Overview](/pdf/reportingservices/product-overview/)
 - [Aspose.PDF for Reporting Services Supported File Formats](/pdf/reportingservices/supported-file-formats/)

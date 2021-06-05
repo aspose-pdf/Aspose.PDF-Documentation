@@ -3,7 +3,7 @@ title: Working with Bookmarks - Facades
 type: docs
 weight: 20
 url: /cpp/working-with-bookmarks-facades/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 #### **Articles in this section**

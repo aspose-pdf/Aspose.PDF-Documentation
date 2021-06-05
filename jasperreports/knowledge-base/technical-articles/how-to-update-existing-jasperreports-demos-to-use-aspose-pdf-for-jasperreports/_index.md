@@ -3,7 +3,7 @@ title: How to - Update existing JasperReports demos to use Aspose.Pdf for Jasper
 type: docs
 weight: 20
 url: /jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

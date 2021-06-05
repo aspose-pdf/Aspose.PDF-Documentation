@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/extract-links/
 description: Extract links from PDF with C#. This topic explain you how to extract links using AnnotationSelector class. 
-lastmod: "2021-03-29"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

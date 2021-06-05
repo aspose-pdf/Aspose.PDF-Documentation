@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for .NET 21.5
 type: docs
 weight: 80
 url: /net/aspose-pdf-for-net-21-5-release-notes/
-lastmod: "2021-05-12"
+lastmod: "2021-06-05"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2021, version 21.5. 
 sitemap:
     changefreq: "weekly"

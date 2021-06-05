@@ -3,7 +3,7 @@ title: Working with Text in Ruby
 type: docs
 weight: 30
 url: /java/working-with-text-in-ruby/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 This section includes the following topics:

@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /net/multimedia-annotation/
 description: Aspose.PDF for .NET allows you to add, get, and delete the multimedia annotation from your PDF document.
-lastmod: "2021-01-13"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

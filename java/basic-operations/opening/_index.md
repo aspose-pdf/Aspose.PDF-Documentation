@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/open-pdf-document/
 description: Learn how to open a PDF file with Aspose.PDF for Java.
-lastmod: "2021-02-02"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

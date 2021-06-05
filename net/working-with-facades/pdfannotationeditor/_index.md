@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /net/pdfannotationeditor-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfAnnotationEditor Class.
-lastmod: "2021-01-19"
+lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"

@@ -7,7 +7,7 @@ url: /net/open-pdf-document/
 description: Learn how to open a PDF file in C# Aspose.PDF for .NET PDF library.
 aliases:
     - /net/opening-a-pdf-document/
-lastmod: "2020-12-23"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

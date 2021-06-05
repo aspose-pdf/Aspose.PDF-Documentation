@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/remove-tables-from-existing-pdf/
 description: Aspose.PDF for Java allows you to remove table and multiple tables from your PDF document.
-lastmod: "2021-03-24"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

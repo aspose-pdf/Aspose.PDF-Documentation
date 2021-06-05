@@ -3,7 +3,7 @@ title: Installation
 type: docs
 weight: 50
 url: /jasperreports/installation/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 **This section includes the following topics:**

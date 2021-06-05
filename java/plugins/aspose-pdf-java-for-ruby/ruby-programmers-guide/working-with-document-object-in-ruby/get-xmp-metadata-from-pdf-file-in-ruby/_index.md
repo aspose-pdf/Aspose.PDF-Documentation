@@ -3,7 +3,7 @@ title: Get XMP Metadata from PDF File in Ruby
 type: docs
 weight: 60
 url: /java/get-xmp-metadata-from-pdf-file-in-ruby/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Get XMP Metadata

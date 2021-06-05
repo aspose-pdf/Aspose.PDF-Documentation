@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /net/print-dotnetcore/
 description: This page explains how to convert a PDF document into XPS and add it as a job to the queue of the local printer.
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

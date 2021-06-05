@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /net/working-with-image-placement/
 description: This section describes the features of working with image placement PDF file using C# library.
-lastmod: "2021-01-27"
+lastmod: "2021-06-05"
 ---
 
 With the release of Aspose.PDF for .NET 7.0.0, we introduced classes called [ImagePlacement](https://apireference.aspose.com/pdf/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://apireference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) and [ImagePlacementCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection) which provide similar capability as the classes described above to get an image’s resolution and position in a PDF document.

@@ -4,7 +4,7 @@ type: docs
 weight: 70
 url: /net/set-viewer-preference-of-an-existing-pdf-file/
 description: This section shows how to work with Aspose.PDF Facades using PdfContentEditor Class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

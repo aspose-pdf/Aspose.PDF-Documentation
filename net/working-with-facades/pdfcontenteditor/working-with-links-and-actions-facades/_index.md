@@ -4,7 +4,7 @@ type: docs
 weight: 70
 url: /net/working-with-links-and-actions-facades/
 description: This section explains how to wor with Links and Actions - Facades using PdfContentEditor Class.
-lastmod: "2021-01-19"
+lastmod: "2021-06-05"
 draft: false
 ---
 

@@ -4,7 +4,7 @@ linktitle: Working with Documents
 type: docs
 weight: 10
 url: /net/working-with-documents/
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 description: This article describes to you what manipulations can be done with the document with Aspose.PDF library.
 aliases:
     - /net/working-with-document/

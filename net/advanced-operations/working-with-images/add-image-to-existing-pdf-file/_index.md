@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/add-image-to-existing-pdf-file/
 description: This section describes how to add image to existing PDF file PDF file using C# library.
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 ---
 
 ## Add Image in an Existing PDF File

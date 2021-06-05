@@ -11,7 +11,7 @@ aliases:
     - /pdf/net/concatenating-all-pdf-files-in-particular-folder/
     - /pdf/net/how-to-concatenate-pdf-files-in-different-ways/
     - /pdf/net/append-pdf-files/
-lastmod: "2021-01-25"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

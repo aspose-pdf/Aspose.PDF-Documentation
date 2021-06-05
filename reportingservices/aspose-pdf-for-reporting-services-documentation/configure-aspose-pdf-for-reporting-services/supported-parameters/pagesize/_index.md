@@ -3,7 +3,7 @@ title: PageSize
 type: docs
 weight: 60
 url: /reportingservices/pagesize/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

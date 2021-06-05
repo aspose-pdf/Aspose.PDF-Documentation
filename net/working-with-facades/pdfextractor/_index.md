@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /net/pdfextractor-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfExtractor Class.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"

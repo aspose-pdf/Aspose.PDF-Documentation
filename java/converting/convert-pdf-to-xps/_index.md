@@ -4,7 +4,7 @@ linktitle: Convert PDF to XPS
 type: docs
 weight: 160
 url: /java/convert-pdf-to-xps/
-lastmod: "2021-02-05"
+lastmod: "2021-06-05"
 description: This page describes the definition of an XPS document and how to use it. Convert PDF to XPS with Aspose.PDF for Java, using XpsSaveOptions class. 
 sitemap:
     changefreq: "weekly"

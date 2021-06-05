@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for .NET 12.0.0
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-12-0-0-release-notes/
-lastmod: "2020-12-28"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

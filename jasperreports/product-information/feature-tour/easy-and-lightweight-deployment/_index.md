@@ -3,7 +3,7 @@ title: Easy and Lightweight Deployment
 type: docs
 weight: 10
 url: /jasperreports/easy-and-lightweight-deployment/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

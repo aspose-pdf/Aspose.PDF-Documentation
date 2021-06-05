@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for .NET 9.1.0
 type: docs
 weight: 90
 url: /net/aspose-pdf-for-net-9-1-0-release-notes/
-lastmod: "2020-12-28"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,7 +17,9 @@ This page contains release notes for [Aspose.PDF for .NET 9.1.0](http://www.aspo
 {{% /alert %}}
 
 We are pleased to share a new version of Aspose.PDF for .NET with the following improvements.
-## **Improvements and Changes**
+
+## Improvements and Changes
+
 PDFNEWNET-34959 Control image quality when adding imagestamps
 
 PDFNEWNET-35843 Determine the progress of PDF file generated
@@ -90,7 +92,7 @@ PDFNEWNET-35888 ExportXML/ImportXML methods are malfunctioning
 
 PDFNEWNET-35897 HTML to PDF: Resultant document is being truncated
 
-PDFNEWNET-35899 HTML to PDF [DOM](/pages/createpage.action?spaceKey=pdfnet&title=DOM&linkCreation=true&fromPageId=7120592): Data is being lost and table borders are missing
+PDFNEWNET-35899 HTML to PDF (DOM): Data is being lost and table borders are missing
 
 PDFNEWNET-35987 PDF to PNG: document text is misplaced and reversed
 

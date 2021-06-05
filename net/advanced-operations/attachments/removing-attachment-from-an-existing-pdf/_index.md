@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF can remove attachments from your PDF documents. Use C# PDF API to remove attachments in PDF files using Aspose.PDF library.
-lastmod: "2021-01-25"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

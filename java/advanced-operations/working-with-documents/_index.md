@@ -4,7 +4,7 @@ linktitle: Working with Documents
 type: docs
 weight: 10
 url: /java/working-with-documents/
-lastmod: "2021-03-10"
+lastmod: "2021-06-05"
 description: This article describes to you what manipulations can be done with the document with Aspose.PDF for Java.
 sitemap:
     changefreq: "weekly"

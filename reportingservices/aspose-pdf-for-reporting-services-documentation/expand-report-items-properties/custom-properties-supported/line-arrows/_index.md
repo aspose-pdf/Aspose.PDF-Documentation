@@ -3,7 +3,7 @@ title: Line Arrows
 type: docs
 weight: 20
 url: /reportingservices/line-arrows/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

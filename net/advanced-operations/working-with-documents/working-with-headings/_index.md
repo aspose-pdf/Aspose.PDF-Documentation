@@ -3,7 +3,7 @@ title: Working with Headings in PDF
 type: docs
 weight: 90
 url: /net/working-with-headings/
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 description: Create numbering in heading your PDF document with C#. Aspose.PDF for .NET offers different kinds of numbering styles.
 sitemap:
     changefreq: "weekly"

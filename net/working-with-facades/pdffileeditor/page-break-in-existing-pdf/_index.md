@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /net/page-break-in-existing-pdf/
 description: This section explains how to break pages in an existing PDF using PdfFileEditor class.
-lastmod: "2021-01-18"
+lastmod: "2021-06-05"
 draft: false
 ---
 

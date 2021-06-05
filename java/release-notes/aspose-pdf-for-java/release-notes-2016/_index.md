@@ -3,7 +3,7 @@ title: Release Notes - 2016
 type: docs
 weight: 60
 url: /java/release-notes-2016/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 - [Aspose.Pdf for Java 16.12.0 Release Notes](/pdf/java/aspose-pdf-for-java-16-12-0-release-notes/)

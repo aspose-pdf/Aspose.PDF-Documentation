@@ -3,7 +3,7 @@ title: Footnote Endnote
 type: docs
 weight: 30
 url: /reportingservices/footnote-endnote/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

@@ -3,7 +3,7 @@ title: Release Notes - 2019
 type: docs
 weight: 20
 url: /cpp/release-notes-2019/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 - [Aspose.PDF for CPP 19.12 Release Notes](/pdf/cpp/aspose-pdf-for-cpp-19-12-release-notes/)

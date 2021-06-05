@@ -3,7 +3,7 @@ title: Remove Metadata from PDF in PHP
 type: docs
 weight: 70
 url: /java/remove-metadata-from-pdf-in-php/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Remove Metadata

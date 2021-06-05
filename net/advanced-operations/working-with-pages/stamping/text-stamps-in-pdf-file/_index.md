@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/text-stamps-in-the-pdf-file/
 description: Add a text stamp to a PDF file using the TextStamp class with C#.
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

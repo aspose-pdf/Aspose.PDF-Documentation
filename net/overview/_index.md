@@ -4,7 +4,7 @@ linktitle: Overview
 type: docs
 weight: 20
 url: /net/overview/
-lastmod: "2020-12-22"
+lastmod: "2021-06-05"
 description: Overview of key-features and supported formats of Aspose.PDF for .NET, installation and licensing manual of .NET library.
 sitemap:
     changefreq: "weekly"

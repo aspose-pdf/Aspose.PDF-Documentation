@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /net/working-with-xml/
 description: Learn how to generate a PDF document from XML in Aspose.PDF for .NET
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

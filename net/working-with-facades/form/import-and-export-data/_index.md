@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /net/import-and-export-data/
 description: This section explains how to import and Export Data with Aspose.PDF Facades using Form Class.
-lastmod: "2021-01-18"
+lastmod: "2021-06-05"
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: docs
 weight: 80
 url: /net/manipulate-page-properties/
 description: This section explains how to manipulate Page Properties with Aspose.PDF Facades using PdfPageEditor Class.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 ---
 

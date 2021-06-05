@@ -3,7 +3,7 @@ title: Convert PDF to SVG in CPP
 type: docs
 weight: 20
 url: /cpp/convert-pdf-to-svg-in-cpp/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## **Convert to SVG**

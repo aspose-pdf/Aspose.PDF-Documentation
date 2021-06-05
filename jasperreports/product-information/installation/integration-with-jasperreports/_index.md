@@ -3,7 +3,7 @@ title: Integration with JasperReports
 type: docs
 weight: 20
 url: /jasperreports/integration-with-jasperreports/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
