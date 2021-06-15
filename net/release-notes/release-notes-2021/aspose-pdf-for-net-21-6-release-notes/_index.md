@@ -21,9 +21,9 @@ This page contains release notes information for Aspose.PDF for .NET 21.6.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFNET-49961 Unable to remove image from the document|Feature|
-|PDFNET-39127 Process to determine Page color information is taking too much time|Enhancement|
-|PDFNET-45299 Getting page color type is very slow|Enhancement|
+|PDFNET-49961 Hiding image using ImagePlacementAbsorber from the document|Feature|
+|PDFNET-39127 Improve process to determine Page color information|Enhancement|
+|PDFNET-45299 Improve getting page color type|Enhancement|
 |PDFNET-49938 PDF to XLSX - Extra column is being added|Bug|
 |PDFNET-48955 Aspose.Pdf 20.10: Cannot load Xps|Bug|
 |PDFNET-41011 API detects incorrect page color|Bug|
