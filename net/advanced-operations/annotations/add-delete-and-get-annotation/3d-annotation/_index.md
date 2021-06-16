@@ -22,20 +22,24 @@ The main task of 3D modeling is the idea of a future object or object because, i
 
 ## Add 3D Annotation
 
-3D annotation is added using a model created in the u3d format.
+3D annotation is added using a model created in the U3D format.
 
 1. Create a new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)
-1. Create [PDF3DContent](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent), load the data of the required 3D model "Ring.u3d"
-1. Next, set three parameters: the page on which the annotation will be placed; the rectangle, inside which the annotation, and the [3dArtWork](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) object.
-1. Select the parameters of pdf3dArtWork:
+1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent)
+1. Create [3dArtWork](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) object and link it to the document and 3DContent
+1. Tune pdf3dArtWork object:
 
-- PDF 3DLightingScheme - CAD
-- PDF 3DRenderMode - Solid
+    - 3DLightingScheme - (we set will `CAD` in example)
+    - 3DRenderMode - (we set will `Solid` in example)
+    - Fill `ViewArray`, create at least one [3D View](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) and add it to array.
 
-1. Set the display parameters of PDF 3DView (at least one): Top, Left
-1. For a better display of the 3D object, set the Border frame
-1. Set the parameter of the initial display at boot (for example - TOP)
-1. Additional model parameter - name
+1. Set 3 basic parameters in annotation:
+    - the `page` on which the annotation will be placed,
+    - the `rectangle`, inside which the annotation,
+    - and the `3dArtWork` object.
+1. For a better presentation of the 3D object, set the Border frame
+1. Set the default view (for example - TOP)
+1. Add some additional parameters: name, preview poster etc.
 1. Add Annotation to the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page)
 1. Save the result
 
@@ -62,9 +66,9 @@ Please check the following code snippet to add 3D Annotation.
     var pdf3dAnnotation = new PDF3DAnnotation(page, new Rectangle(100, 500, 300, 700), pdf3dArtWork);
     pdf3dAnnotation.Border = new Border(pdf3dAnnotation);
     pdf3dAnnotation.SetDefaultViewIndex(1);
-    pdf3dAnnotation.Flags = AnnotationFlags.NoZoom;
-    //pdf3dAnnotation.Contents = "Ring.u3d";
+    pdf3dAnnotation.Flags = AnnotationFlags.NoZoom;    
     pdf3dAnnotation.Name = "Ring.u3d";
+    //set preview image if needed
     //pdf3dAnnotation.SetImagePreview(System.IO.Path.Combine(_dataDir, "sample_3d.png"));
     document.Pages[1].Annotations.Add(pdf3dAnnotation);
 
