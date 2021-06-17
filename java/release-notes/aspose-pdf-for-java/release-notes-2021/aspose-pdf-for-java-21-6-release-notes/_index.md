@@ -30,6 +30,7 @@ This page contains release notes information for Aspose.PDF for Java 21.6.
 |PDFJAVA-38757|Page color not recognized|Bug|
 |PDFJAVA-39736|API gets hang while getting color type|Bug|
 |PDFJAVA-39735|Unable to get color type of page|Bug|
+|PDFJAVA-40054|Convert RGB PDF to B&W - Background Transparency is lost|Bug|
 |PDFJAVA-40453|An attempt to create annotation using invalid dictionary|Bug|
 
 
