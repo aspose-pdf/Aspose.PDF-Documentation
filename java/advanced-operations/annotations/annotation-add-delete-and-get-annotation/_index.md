@@ -22,4 +22,5 @@ sitemap:
 - [PDF Caret Annotation](/pdf/java/caret-annotation/) - is a symbol that indicates text editing.
 - [PDF InkAnnotation](/pdf/java/ink-annotation/) - draws free-hand scribbles on the PDF.
 - [PDF Multimedia Annotation](/pdf/java/multimedia-annotation/) - all details about screen, sound, movie annotations.
-- [PDF Watermark Annotation](/pdf/java/water-markannotation/) - add, get and delete Watermark Annotation.
+- [PDF Watermark Annotation](/pdf/java/watermark-annotation/) - add, get and delete Watermark Annotation.
+

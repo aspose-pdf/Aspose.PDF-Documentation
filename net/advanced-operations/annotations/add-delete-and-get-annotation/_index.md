@@ -24,3 +24,4 @@ sitemap:
 - [PDF Popup Annotation](/pdf/net/popup-annotation/)
 - [PDF Multimedia Annotation](/pdf/net/multimedia-annotation/)
 - [PDF Watermark Annotation](/pdf/net/watermark-annotation/)
+- [PDF 3D Annotation](/pdf/net/3d-annotation/) 
