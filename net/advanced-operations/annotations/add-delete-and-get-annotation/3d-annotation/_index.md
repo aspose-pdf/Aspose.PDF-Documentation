@@ -29,8 +29,8 @@ The main task of 3D modeling is the idea of a future object or object because, i
 1. Create [3dArtWork](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) object and link it to the document and 3DContent
 1. Tune pdf3dArtWork object:
 
-    - 3DLightingScheme - (we set will `CAD` in example)
-    - 3DRenderMode - (we set will `Solid` in example)
+    - 3DLightingScheme - (we will set  `CAD` in example)
+    - 3DRenderMode - (we will set `Solid` in example)
     - Fill `ViewArray`, create at least one [3D View](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) and add it to array.
 
 1. Set 3 basic parameters in annotation:
@@ -43,10 +43,12 @@ The main task of 3D modeling is the idea of a future object or object because, i
 1. Add Annotation to the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page)
 1. Save the result
 
+## Example
+
 Please check the following code snippet to add 3D Annotation.
 
 ```csharp
- public static void Add3dAnnotation()
+    public static void Add3dAnnotation()
     {
     // Load the PDF file
     Document document = new Document();
