@@ -50,3 +50,4 @@ This page contains release notes information for Aspose.PDF for .NET 21.1.
 
 * Field Aspose.Pdf.HtmlSaveOptions.SaveFullFont
 * Property Aspose.Pdf.PdfFormatConversionOptions.IsAsyncImageStreamsConversionMode
+
