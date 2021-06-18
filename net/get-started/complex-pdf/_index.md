@@ -20,14 +20,7 @@ If we create a document from scratch we need to follow certain steps:
 
 1. Instantiate a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. In this step we will create an empty PDF document with some metadata but without pages.
 1. Add a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) to the document object. So, now our document will have one page.
-1. Add a [Image](https://apireference.aspose.com/pdf/net/aspose.pdf/image/methods/index). It's a complex operation based on low level actions with PDF operators.
-    - Load image from stream
-    - Add image to Images collection of Page Resources
-    - Using GSave operator: this operator saves current graphics state.
-    - Create a [Matrix](https://apireference.aspose.com/pdf/net/aspose.pdf/matrix/constructors/1) object.
-    - Using ConcatenateMatrix operator: defines how image must be placed.
-    - Using Do operator: this operator draws image.
-    - Using GRestore operator: this operator restores graphics state.
+1. Add a [Image](https://apireference.aspose.com/pdf/net/aspose.pdf/image/methods/index) to the Page.
 1. Create a [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) for header. For the header we will use Arial font with font size 24pt and center alignment.
 1. Add header to the page [Paragraphs](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs).
 1. Create a [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) for description. For the description we will use Arial font with font size 24pt and center alignment.

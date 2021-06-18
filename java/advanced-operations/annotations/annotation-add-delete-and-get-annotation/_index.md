@@ -23,4 +23,5 @@ sitemap:
 - [PDF InkAnnotation](/pdf/java/ink-annotation/) - draws free-hand scribbles on the PDF.
 - [PDF Multimedia Annotation](/pdf/java/multimedia-annotation/) - all details about screen, sound, movie annotations.
 - [PDF Watermark Annotation](/pdf/java/watermark-annotation/) - add, get and delete Watermark Annotation.
+- [PDF 3D Annotation](/pdf/java/3d-annotation/) - add, get and delete 3D Annotation.
 
