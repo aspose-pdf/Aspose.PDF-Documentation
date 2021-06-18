@@ -2,7 +2,7 @@
 title: Aspose.PDF for .NET 21.6 Release Notes
 linktitle: Aspose.PDF for .NET 21.6 
 type: docs
-weight: 80
+weight: 70
 url: /net/aspose-pdf-for-net-21-6-release-notes/
 lastmod: "2021-06-15"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2021, version 21.6. 
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes information for Aspose.PDF for .NET 21.6.
 
@@ -52,6 +52,7 @@ This page contains release notes information for Aspose.PDF for .NET 21.6.
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
+
 * Property Aspose.Pdf.ImagePlacement.Operator
 * Method Aspose.Pdf.ImagePlacement.Hide
 * Method Aspose.Pdf.XImage.DetectColorType(System.Drawing.Bitmap)
