@@ -10,5 +10,5 @@ sitemap:
     priority: 0.7
 ---
 
-[Get PDF file information - facades](/pdf/java/get-pdf-information/)
-[Set PDF file information - facades](/pdf/java/set-pdf-information/)
+- [Get PDF file information - facades](/pdf/java/get-pdf-information/)
+- [Set PDF file information - facades](/pdf/java/set-pdf-information/)

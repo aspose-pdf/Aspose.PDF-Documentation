@@ -10,8 +10,8 @@ sitemap:
     priority: 0.7
 ---
 
-[Extract Images from the Whole PDF to Files (facades)](/pdf/java/extract-images/)
-[Extract Chart objects from PDF document (facades)](/pdf/java/extract-chart-objects/)
-[Extract Text from the Whole PDF File (facades)](/pdf/java/extract-text/)
+- [Extract Images from the Whole PDF to Files (facades)](/pdf/java/extract-images/)
+- [Extract Chart objects from PDF document (facades)](/pdf/java/extract-chart-objects/)
+- [Extract Text from the Whole PDF File (facades)](/pdf/java/extract-text/)
 
 
