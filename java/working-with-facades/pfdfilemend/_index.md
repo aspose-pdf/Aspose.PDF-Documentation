@@ -34,7 +34,7 @@ Check how it's looks:
 
 ![Add Text](add_text.png)
 
-The second way to add [FormattedText](http://www.aspose.com/api/java/pdf/com.aspose.pdf.facades/classes/FormattedText). Additionally, we indicate a rectangle in which our text should fit.
+The second way to add [FormattedText](https://apireference.aspose.com/pdf//java/com.aspose.pdf.facades/formattedtext). Additionally, we indicate a rectangle in which our text should fit.
 
 ```java
 public static void AddText02()
@@ -127,7 +127,6 @@ We tried one of them.
 
 In the following code snippet we use [ImageFilterType](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ImageFilterType). ImageFilterType indicates the type of stream codec that will be used for encoding, by default Jpeg. if you load an image from PNG format, then it will be saved in the document as JPEG (or in another format I have specified).
 
-
 ```java
     public static void AddImage03()
     {
@@ -155,21 +154,21 @@ In the next code snippet you can note the use of the [IsMasked](https://apirefer
 
 ```java
 public static void AddImage04()
-    {
-        Document document = new Document(_dataDir + "sample_color.pdf");
-        PdfFileMend mender = new PdfFileMend();
-        // Load image into stream
-        var imageStream = System.IO.File.OpenRead(_dataDir + "logo.png");
-        mender.BindPdf(document);
-        int pageNum = 1;
-        int lowerLeftX = 10;
-        int lowerLeftY = 650;
-        int upperRightX = 110;
-        int upperRightY = 750;
-        CompositingParameters compositingParameters = new CompositingParameters(BlendMode.Multiply, ImageFilterType.Flate,false);
-        mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
+{
+    Document document = new Document(_dataDir + "sample_color.pdf");
+    PdfFileMend mender = new PdfFileMend();
+    // Load image into stream
+    var imageStream = System.IO.File.OpenRead(_dataDir + "logo.png");
+    mender.BindPdf(document);
+    int pageNum = 1;
+    int lowerLeftX = 10;
+    int lowerLeftY = 650;
+    int upperRightX = 110;
+    int upperRightY = 750;
+    CompositingParameters compositingParameters = new CompositingParameters(BlendMode.Multiply, ImageFilterType.Flate,false);
+    mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-        // save the output file
-        mender.Save(_dataDir + "PdfFileMend07_output.pdf");
-    }
+    // save the output file
+    mender.Save(_dataDir + "PdfFileMend07_output.pdf");
+}
 ```
