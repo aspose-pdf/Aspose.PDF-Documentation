@@ -10,5 +10,5 @@ sitemap:
     priority: 0.7
 ---
 
-[Print PDF file to default printer (facades)](/pdf/java/print-pdf-file/)
-[Set Viewer Preference of an existing PDF File - facades](/pdf/java/set-viewer-preference/)
+- [Print PDF file to default printer (facades)](/pdf/java/print-pdf-file/)
+- [Set Viewer Preference of an existing PDF File - facades](/pdf/java/set-viewer-preference/)

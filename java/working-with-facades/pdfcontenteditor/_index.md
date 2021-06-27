@@ -10,6 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-[Adding Javascript actions to existing PDF file](/pdf/java/adding-javascript-actions/)
-[Replace Image in an Existing PDF File (facades)](/pdf/java/replace-image/)
-[Replace Text in PDF File (facades)](/pdf/java/replace-text/)
+- [Adding Javascript actions to existing PDF file](/pdf/java/adding-javascript-actions/)
+- [Working with Images (facades)](/pdf/java/working-with-image/)
+- [Replace Text (facades)](/pdf/java/replace-text/)
+- [Working with Attachments](/pdf/java/working-with-attachments/)

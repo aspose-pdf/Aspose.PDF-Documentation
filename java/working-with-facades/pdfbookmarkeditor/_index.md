@@ -10,6 +10,6 @@ sitemap:
     priority: 0.7
 ---
 
-[Create Bookmarks of All Pages (facades)](/pdf/java/create-bookmark/)
-[Export Bookmarks to XML from an Existing PDF File (facades)](/pdf/java/export-bookmark/)
-[Import Bookmarks from XML to an Existing PDF File (facades)](/pdf/java/import-bookmark/)
+- [Create Bookmarks of All Pages (facades)](/pdf/java/create-bookmark/)
+- [Export Bookmarks to XML from an Existing PDF File (facades)](/pdf/java/export-bookmark/)
+- [Import Bookmarks from XML to an Existing PDF File (facades)](/pdf/java/import-bookmark/)

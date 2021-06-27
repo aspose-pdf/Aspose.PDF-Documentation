@@ -10,6 +10,6 @@ sitemap:
     priority: 0.7
 ---
 
-[Add Annotation in PDF File (facades)](/pdf/java/add-annotations/)
-[Delete All Annotations by Specified Type (facades)](/pdf/java/delete-annotations/)
-[Export Annotations from PDF File to XFDF (facades)](/pdf/java/export-annotations/)
+- [Add Annotation in PDF File (facades)](/pdf/java/add-annotations/)
+- [Delete All Annotations by Specified Type (facades)](/pdf/java/delete-annotations/)
+- [Export Annotations from PDF File to XFDF (facades)](/pdf/java/export-annotations/)

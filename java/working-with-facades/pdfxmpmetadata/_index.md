@@ -10,5 +10,5 @@ sitemap:
     priority: 0.7
 ---
 
-[Get XMP Metadata of an existing PDF File - facades](/pdf/java/get-xmp-metadata/)
-[Set XMP Metadata of an existing PDF - facades](/pdf/java/set-xmp-metadata/)
+- [Get XMP Metadata of an existing PDF File - facades](/pdf/java/get-xmp-metadata/)
+- [Set XMP Metadata of an existing PDF - facades](/pdf/java/set-xmp-metadata/)
