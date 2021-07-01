@@ -135,6 +135,37 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
 }
 ```
 
+## Place image on page and preserve (control) aspect ratio
+
+If we do not know the dimensions of the image there is every chance of getting a distorted image on the page. The following example shows one way to avoid this.
+
+```java
+public static void AddingImageAndPreserveAspectRatioIntoPDF() {
+    InputStream imageStream;
+    BufferedImage originalImage;
+    int width;
+    int height;
+
+    try {
+        imageStream = new FileInputStream(_dataDir + "3410492.jpg");            
+        originalImage = ImageIO.read(imageStream);
+    } catch (Exception e) {
+        System.out.println(e.getMessage());
+        return;
+    }
+
+    width = originalImage.getWidth();
+    height = originalImage.getHeight();
+    Document pdfDocument = new Document();
+    Page page = pdfDocument.getPages().add();
+    //Assume we want to show and image 400pt wide
+    int scaledWidth = 400; 
+    int scaledHeight = scaledWidth * height / width;
+    page.addImage(_dataDir + "3410492.jpg", new Rectangle(10, 10, scaledWidth, scaledHeight));
+    pdfDocument.save(_dataDir + "sample_image.pdf");
+}
+```
+
 ## Identify if image inside PDF is Colored or Black & White
 
 Different type of compression can be applied over images to reduce their size. The type of compression being applied over image depends upon the ColorSpace of source image i.e. if image is Color (RGB), then apply JPEG2000 compression, and if it is Black & White, then JBIG2/JBIG2000 compression should be applied. Therefore identifying each image type and using an appropriate type of compression will create best/optimized output.
