@@ -1,6 +1,6 @@
 ---
-title: XML file to PDF document using XSLT
-linktitle: Create a Hello World PDF Document through XML and XSLT
+title: Creating PDF from XML using XSLT | C#
+linktitle: Create PDF from XML using XSLT
 type: docs
 weight: 10
 url: /net/create-a-hello-world-pdf-document-through-xml-and-xslt/
