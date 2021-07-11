@@ -1,7 +1,7 @@
 ---
 title: Exploring features of FormEditor class
 type: docs
-weight: 20
+weight: 10
 url: /net/exploring-features-of-formeditor-class/
 description: You can learn details of exploring features of FormEditor class.
 lastmod: "2021-06-05"
