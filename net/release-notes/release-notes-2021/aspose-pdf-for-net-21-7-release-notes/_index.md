@@ -21,8 +21,8 @@ This page contains release notes information for Aspose.PDF for .NET 21.7.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFNET-49595 Add memory optimized stream to load huge files using Stream based constructor|Feature|
-|PDFNET-50068 PDF creation with XML and XLS with parameters|Feature|
+|PDFNET-49595 Advanced streams support to handle huge documents|Feature|
+|PDFNET-50068 PDF creation based on XML and XLS with parameters|Feature|
 |PDFNET-44278 High Resources Usage and Application Crash|Enhancement|
 |PDFNET-49740 PDF/A became invalid after multiple digital signature|Enhancement|
 |PDFNET-50059 Problem adding right aligned HtmlFragment in PDF|Bug|
