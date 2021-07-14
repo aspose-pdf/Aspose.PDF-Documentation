@@ -2,7 +2,7 @@
 title: Encrypt, Decrypt and Set Privileges on PDF File
 type: docs
 weight: 10
-url: /net/encrypt-decrypt-and-set-privileges-on-pdf-file/
+url: /net/set-privileges-in-pdf-file/
 description: This topic explains how to Encrypt, Decrypt and Set Privileges on PDF File using PdfFileSecurity Class Class.
 lastmod: "2021-06-05"
 draft: false
