@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/using-aspose-pdf-for-net-with-coldfusion/
 description: You should work with Aspose.Pdf for .NET with Coldfusion using PdfFileInfo Class
-lastmod: "2021-06-05"
+lastmod: "2021-07-14"
 draft: false
 ---
 
@@ -26,18 +26,11 @@ In order to be able to run the Aspose.PDF for .Net with Coldfusion, you’ll nee
 
 First of all, you h ave to copy the DLL (Aspose.PDF .dll) to a location from where you’ll be accessing it for later use; this will be set as a path and assigned to assembly attribute of cfobject tag as shown below:
 
-
-{{% alert color="primary" %}}
-**<cfobject type = ".NET" name = "fileinfo" class = "Aspose.PDF.Facades.PdfFileInfo"**
-
-{{% /alert %}}
-
-
-{{< highlight csharp >}}
- assembly = "C:/Aspose/Net/Assembly/Aspose.PDF.dll">
-
-
-{{< /highlight >}}
+```html
+<cfobject type = ".NET" name = "fileinfo" 
+        class = "Aspose.PDF.Facades.PdfFileInfo" 
+        assembly = "C:/Aspose/Net/Assembly/Aspose.PDF.dll">
+```
 
 The attribute class in the above tag points to Aspose.PDF. Facades class, which in this case is PdfFileInfo. The name attribute is the instance name of the class and will be used later in the code to access class methods or properties. Type attribute specifies the type of the component - in our case it is .Net.
 
@@ -46,19 +39,22 @@ One important point which you’ll have to keep in mind while using the .Net com
 For example
 
 Set a property value:
+
+```html
 <cfset FilePath = ExpandPath("guide.pdf")>
+```
 
 Get a property value:
+
+```html
 <cfoutput>#fileinfo.Get_title()#</cfoutput>
+```
 
 A basic but complete example to help you understand the process of using Aspose.PDF for .NET in Coldfusion is given below.
 
-**Coldfusion**
+### Let us show PDF file info
 
-{{< highlight csharp >}}
-
- <h3><u>Let us show PDF file info</u></h3><br/>
-
+```html
 <!--- create an instance of PdfFileInfo class --->
 
 <cfobject type = ".NET" name = "fileinfo" class = "Aspose.PDF.Facades.PdfFileInfo"
@@ -76,16 +72,11 @@ assembly = "C:/Aspose/Net/Assembly/Aspose.PDF.dll">
 <!--- Show file info --->
 
 <cfoutput><b>Title:</b>#fileinfo.Get_title()#</cfoutput><br/>
-
 <cfoutput><b>Subject:</b>#fileinfo.Get_subject()#</cfoutput><br/>
-
 <cfoutput><b>Author:</b>#fileinfo.Get_author()#</cfoutput><br/>
-
 <cfoutput><b>Creator:</b>#fileinfo.Get_Creator()#</cfoutput><br/>
 
-
-
-{{< /highlight >}}
+```
 
 ## Conclusion
 
