@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /net/widget-annotation/
 description: This article describes how to add controls based on awidget annotations to PDF documents with Aspose.PDF for .NET.
-lastmod: "2021-01-13"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

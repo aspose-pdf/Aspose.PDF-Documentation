@@ -4,7 +4,7 @@ linktitle: Convert DICOM to PDF
 type: docs
 weight: 250
 url: /net/convert-dicom-to-pdf/
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 description: Convert medical images saved in DICOM format to a PDF file using Aspose.PDF for .NET.
 sitemap:
     changefreq: "weekly"

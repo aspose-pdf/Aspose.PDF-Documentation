@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/link-annotation/
 description: Aspose.PDF for Java allows you to Add, Get, and Delete Link Annotation from your PDF document.
-lastmod: "2021-02-10"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

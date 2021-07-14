@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/acroforms/
 description: With Aspose.PDF for Java you may create a form from scratch, fill the form field in a PDF document, extract data from the form, add or remove fields in the existing form.
-lastmod: "2021-04-15"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

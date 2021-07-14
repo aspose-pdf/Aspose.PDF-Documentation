@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /net/watermark-annotation/
 description: The Watermark Annotation in the text uses to represent graphics on the page. Check code snippet to resolve this task.
-lastmod: "2021-01-13"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

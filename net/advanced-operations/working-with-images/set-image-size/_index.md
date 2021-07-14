@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /net/set-image-size/
 description: This section describes how to set image size PDF file using C# library.
-lastmod: "2021-01-27"
+lastmod: "2021-06-05"
 ---
 
 It is possible to set the size of an image that’s being added to a PDF file. In order to set size, you can use FixWidth and FixHeight properties of Aspose.Pdf.Image Class. The following code snippet demonstrates how to set the size of an image:

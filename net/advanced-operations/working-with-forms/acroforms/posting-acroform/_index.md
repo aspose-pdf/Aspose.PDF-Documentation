@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /net/posting-acroform-data/
 description: You can import and export form data to and XML file with Aspose.Pdf.Facades namespace in Aspose.PDF for .NET.
-lastmod: "2021-04-19"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

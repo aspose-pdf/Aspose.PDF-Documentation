@@ -3,7 +3,7 @@ title: Convert SVG file to PDF format in Ruby
 type: docs
 weight: 60
 url: /java/convert-svg-file-to-pdf-format-in-ruby/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Convert SVG to PDF

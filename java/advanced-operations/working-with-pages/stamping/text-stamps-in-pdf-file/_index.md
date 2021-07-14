@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/text-stamps-in-the-pdf-file/
 description: Add a text stamp to a PDF file using the TextStamp class with Java.
-lastmod: "2021-03-18"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

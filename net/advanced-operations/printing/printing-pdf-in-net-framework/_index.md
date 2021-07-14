@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/printing-pdf-in-net-framework/
 description: You may print PDF files to the default printer using the printer and page settings with C#.
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

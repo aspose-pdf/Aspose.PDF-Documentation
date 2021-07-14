@@ -3,7 +3,7 @@ title: Download and Configure Aspose.Pdf in Python
 type: docs
 weight: 10
 url: /java/download-and-configure-aspose-pdf-in-python/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/graphs/
 description: This article explains what a is Graph, how to create a filled rectangle object, how to add text inside a graph object, how to add a line object to PDF and etc.
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

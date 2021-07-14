@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/delete-annotations/
 description: This section explains how to delete annotations with Aspose.PDF Facades using PdfAnnotationEditor Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/set-default-font-name/
 description: This section describes how to set default font name using Aspose.PDF for Java library.
-lastmod: "2021-03-29"
+lastmod: "2021-06-05"
 ---
 
 **Aspose.PDF for Java** API allows you to set a default font name when a font is not available in the document. You can use [setDefaultFontName](https://apireference.aspose.com/pdf/java/com.aspose.pdf/RenderingOptions#setDefaultFontName-java.lang.String-) method of [RenderingOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/RenderingOptions) class to set the default font name. In case setDefaultFontName is set to null the **Times New Roman** font will be used. 

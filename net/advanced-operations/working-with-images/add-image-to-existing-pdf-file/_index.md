@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/add-image-to-existing-pdf-file/
 description: This section describes how to add image to existing PDF file using C# library.
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 ---
 
 ## Add Image in an Existing PDF File
@@ -132,6 +132,37 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
         }
     }
     document.Save("output.pdf");
+}
+```
+
+## Place image on page and preserve (control) aspect ratio
+
+If we do not know the dimensions of the image there is every chance of getting a distorted image on the page. The following example shows one way to avoid this.
+
+```java
+public static void AddingImageAndPreserveAspectRatioIntoPDF() {
+    InputStream imageStream;
+    BufferedImage originalImage;
+    int width;
+    int height;
+
+    try {
+        imageStream = new FileInputStream(_dataDir + "3410492.jpg");            
+        originalImage = ImageIO.read(imageStream);
+    } catch (Exception e) {
+        System.out.println(e.getMessage());
+        return;
+    }
+
+    width = originalImage.getWidth();
+    height = originalImage.getHeight();
+    Document pdfDocument = new Document();
+    Page page = pdfDocument.getPages().add();
+    //Assume we want to show and image 400pt wide
+    int scaledWidth = 400; 
+    int scaledHeight = scaledWidth * height / width;
+    page.addImage(_dataDir + "3410492.jpg", new Rectangle(10, 10, scaledWidth, scaledHeight));
+    pdfDocument.save(_dataDir + "sample_image.pdf");
 }
 ```
 

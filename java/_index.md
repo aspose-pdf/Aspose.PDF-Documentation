@@ -1,11 +1,12 @@
 ---
 title: Aspose.PDF for Java Documentation
+linktitle: Aspose.PDF for Java
 second_title: Aspose.PDF for Java
 type: docs
 weight: 20
 url: /java/
 is_root: true
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

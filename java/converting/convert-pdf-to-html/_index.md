@@ -4,7 +4,7 @@ linktitle: Convert PDF to HTML
 type: docs
 weight: 100
 url: /java/convert-pdf-to-html/
-lastmod: "2021-02-04"
+lastmod: "2021-06-05"
 description: This article describes how to convert a PDF file into HTML. Aspose.PDF for Java provides the capability to convert HTML files into PDF format.
 sitemap:
     changefreq: "weekly"

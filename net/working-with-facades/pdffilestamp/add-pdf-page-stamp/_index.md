@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/add-pdf-page-stamp/
 description: This section explains how to work with Aspose.PDF Facades using PdfFileStamp Class.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 ---
 

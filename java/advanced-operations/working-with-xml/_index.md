@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/working-with-xml/
 description: Learn how to generate a PDF document from XML in Aspose.PDF for Java
-lastmod: "2021-03-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

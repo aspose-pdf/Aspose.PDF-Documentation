@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/extract-images/
 description: This section explains how to extract images with Aspose.PDF Facades using PdfExtractor Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

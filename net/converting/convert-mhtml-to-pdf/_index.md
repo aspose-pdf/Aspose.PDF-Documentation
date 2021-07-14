@@ -4,8 +4,8 @@ linktitle: Convert MHTML to PDF
 type: docs
 weight: 290
 url: /net/convert-mhtml-to-pdf/
-lastmod: "2021-02-05"
-description: This article describes how to convert MHT or MHTML files to PDF format programmatically with Aspose.PDF for .NET.
+lastmod: "2021-06-05"
+description: This article describes how to convert MHT or MHTML files to PDF format programmatically with C# and Aspose.PDF for .NET.
 sitemap:
     changefreq: "weekly"
     priority: 0.7

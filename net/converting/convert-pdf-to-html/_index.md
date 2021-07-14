@@ -4,7 +4,7 @@ linktitle: Convert PDF to HTML
 type: docs
 weight: 100
 url: /net/convert-pdf-to-html/
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 description: This article describes how to convert a PDF file into HTML. Aspose.PDF for .NET provides the capability to convert HTML files into PDF format.
 sitemap:
     changefreq: "weekly"

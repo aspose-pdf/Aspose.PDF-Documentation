@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/get-resolution-and-dimensions-of-embedded-images/
 description: This section shows details in getting resolution and dimensions of Embedded Images
-lastmod: "2021-03-29"
+lastmod: "2021-06-05"
 ---
 
 This topic explains how to use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information about images without having to extract them.

@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /net/exploring-features-of-formeditor-class/
 description: You can learn details of exploring features of FormEditor class.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

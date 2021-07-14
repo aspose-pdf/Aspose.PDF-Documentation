@@ -4,7 +4,7 @@ linktitle: Convert PDF to EPUB
 type: docs
 weight: 170
 url: /java/convert-pdf-to-epub/
-lastmod: "2021-02-05"
+lastmod: "2021-06-05"
 description: Aspose.PDF for Java supports the feature to convert PDF documents to EPUB format. You may try using the code snippet to accomplish this requirement.
 sitemap:
     changefreq: "weekly"

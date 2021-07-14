@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/convert-pdf-pages/
 description: This section explains how to convert PDF Pages with Aspose.PDF using PdfConverter class.
-lastmod: "2021-04-15"
+lastmod: "2021-06-05"
 ---
 
 ## Convert PDF Pages to Different Image Formats (Facades)

@@ -3,7 +3,7 @@ title: Working with Text in Python
 type: docs
 weight: 40
 url: /java/working-with-text-in-python/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 This section includes the following topics:

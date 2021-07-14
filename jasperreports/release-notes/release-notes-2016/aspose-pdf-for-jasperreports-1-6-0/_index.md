@@ -3,7 +3,7 @@ title: Aspose.Pdf for JasperReports 1.6.0
 type: docs
 weight: 10
 url: /jasperreports/aspose-pdf-for-jasperreports-1-6-0/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 <ins>**Public API Changes for Aspose.PDF for JasperReports 1.6.0**

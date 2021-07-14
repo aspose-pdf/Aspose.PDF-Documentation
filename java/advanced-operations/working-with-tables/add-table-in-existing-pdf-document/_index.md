@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-table-in-existing-pdf-document/
 description: Aspose.PDF for Java makes it possible to carry out various manipulations with the tables contained in your pdf document. You may add and extract a table in the existing PDF document, render table on a new page and etc.
-lastmod: "2021-05-11"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

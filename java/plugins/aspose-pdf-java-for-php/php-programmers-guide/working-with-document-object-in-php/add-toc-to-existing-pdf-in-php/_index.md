@@ -3,7 +3,7 @@ title: Add TOC to Existing PDF in PHP
 type: docs
 weight: 20
 url: /java/add-toc-to-existing-pdf-in-php/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Add TOC

@@ -3,7 +3,7 @@ title: Integration with Microsoft Report Viewer in local mode
 type: docs
 weight: 60
 url: /reportingservices/integration-with-microsoft-report-viewer-in-local-mode/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

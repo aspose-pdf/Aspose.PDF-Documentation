@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/working-with-annotations-facades/
 description: This section explains how to work with with Annotations - Facades using PdfAnnotationEditor Class.
-lastmod: "2021-01-19"
+lastmod: "2021-06-05"
 draft: false
 ---
 

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/working-with-table-in-tagged-pdfs/
 description: This article explains how to works with table in Tagged PDF document with Aspose.PDF for Java.
-lastmod: "2021-04-21"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

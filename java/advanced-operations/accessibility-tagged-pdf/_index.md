@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /java/accessibility-tagged-pdf/
 description: Aspose.PDF provides the ability to create Tagged PDF documents, allowing you to tag the structural elements. Learn more about how to get accessible PDFs.
-lastmod: "2021-04-21"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for .NET 21.1
 type: docs
 weight: 120
 url: /net/aspose-pdf-for-net-21-1-release-notes/
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2021, version 21.1.
 sitemap:
     changefreq: "weekly"
@@ -50,3 +50,4 @@ This page contains release notes information for Aspose.PDF for .NET 21.1.
 
 * Field Aspose.Pdf.HtmlSaveOptions.SaveFullFont
 * Property Aspose.Pdf.PdfFormatConversionOptions.IsAsyncImageStreamsConversionMode
+

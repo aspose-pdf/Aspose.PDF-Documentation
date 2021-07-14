@@ -4,7 +4,7 @@ type: docs
 weight: 70
 url: /net/working-with-list-item/
 description: This section explains how to work with List Item with Aspose.PDF Facades using FormEditor Class.
-lastmod: "2021-01-19"
+lastmod: "2021-06-05"
 draft: false
 ---
 

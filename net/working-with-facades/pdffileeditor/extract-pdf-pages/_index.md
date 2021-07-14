@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /net/extract-pdf-pages/
 description: This section explains how to extract PDF pages with Aspose.PDF Facades using PdfFileEditor class.
-lastmod: "2021-01-18"
+lastmod: "2021-06-05"
 draft: false
 ---
 

@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /java/add-backgrounds/
 descriptions: Add background image to the your PDF file with Java. Use the BackgroundArtifact object.
-lastmod: "2021-03-18"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

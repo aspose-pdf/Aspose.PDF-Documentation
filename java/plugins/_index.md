@@ -1,9 +1,9 @@
 ---
 title: Plugins
 type: docs
-weight: 90
+weight: 100
 url: /java/plugins/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

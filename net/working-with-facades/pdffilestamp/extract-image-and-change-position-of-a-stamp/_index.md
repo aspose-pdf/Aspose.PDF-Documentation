@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /net/extract-image-and-change-position-of-a-stamp/
 description: This section explains how to extract Image and Change Position of a Stampwith Aspose.PDF Facades.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 ---
 

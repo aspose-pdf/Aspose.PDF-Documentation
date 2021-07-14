@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/update-links/
 description: Update links in PDF programmatically. This guide is about how to update links in PDF in Java language. 
-lastmod: "2021-04-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

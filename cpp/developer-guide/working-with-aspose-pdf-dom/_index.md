@@ -3,7 +3,7 @@ title: Working with Aspose. Pdf (DOM)
 type: docs
 weight: 10
 url: /cpp/working-with-aspose-pdf-dom/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ### **Articles in this section**

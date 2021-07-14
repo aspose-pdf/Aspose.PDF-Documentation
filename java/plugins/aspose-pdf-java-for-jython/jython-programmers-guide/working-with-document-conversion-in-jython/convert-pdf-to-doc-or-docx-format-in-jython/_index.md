@@ -3,7 +3,7 @@ title: Convert PDF to DOC or DOCX format in Jython
 type: docs
 weight: 10
 url: /java/convert-pdf-to-doc-or-docx-format-in-jython/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Pdf to Doc

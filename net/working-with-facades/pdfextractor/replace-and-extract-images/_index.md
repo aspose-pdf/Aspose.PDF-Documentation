@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /net/replace-and-extract-images/
 description: This section explains how to replace and extract Images with Aspose.PDF Facades using PdfExtractor Class.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 ---
 

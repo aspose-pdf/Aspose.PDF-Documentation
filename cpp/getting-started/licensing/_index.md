@@ -3,7 +3,7 @@ title: Licensing
 type: docs
 weight: 50
 url: /cpp/licensing/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## Evaluation Version Limitations

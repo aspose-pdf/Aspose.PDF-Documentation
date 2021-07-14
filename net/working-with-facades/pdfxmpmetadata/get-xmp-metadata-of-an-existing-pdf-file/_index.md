@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /net/get-xmp-metadata-of-an-existing-pdf-file/
 description: This section explains how to get XMP Metadata of an existing PDF with Aspose.PDF Facades.
-lastmod: "2021-01-20"
+lastmod: "2021-06-05"
 draft: false
 ---
 

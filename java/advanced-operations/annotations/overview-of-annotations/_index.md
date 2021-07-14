@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/overview-of-annotations/
 description: Check out the list of possible annotations you can work with using Aspose.PDF for Java.
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

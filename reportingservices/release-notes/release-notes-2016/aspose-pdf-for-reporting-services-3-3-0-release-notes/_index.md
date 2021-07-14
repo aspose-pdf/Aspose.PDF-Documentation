@@ -3,7 +3,7 @@ title: Aspose.PDF for Reporting Services 3.3.0 Release Notes
 type: docs
 weight: 10
 url: /reportingservices/aspose-pdf-for-reporting-services-3-3-0-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 Aspose.PDF for Reporting Services has been updated to version 3.3.0 and we are pleased to announce this release.

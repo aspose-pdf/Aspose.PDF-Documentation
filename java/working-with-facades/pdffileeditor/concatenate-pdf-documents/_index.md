@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/concatenate-pdf-documents/
 description: This section explains how to concatenate PDF documents with Aspose.PDF Facades using PdfFileEditor class.
-lastmod: "2021-05-31"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

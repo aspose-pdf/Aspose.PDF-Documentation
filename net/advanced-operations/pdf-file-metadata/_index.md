@@ -5,7 +5,7 @@ type: docs
 weight: 140
 url: /net/pdf-file-metadata/
 description: This section explains how to get PDF file information, how to get XMP Metadata from a PDF file, set PDF File Information.
-lastmod: "2021-02-26"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/extract-images-from-pdf-file/
 description: This section shows how to extract images from PDF file using C# library.
-lastmod: "2021-01-27"
+lastmod: "2021-06-05"
 ---
 
 Images are held in each page’s [Resources](https://apireference.aspose.com/pdf/net/aspose.pdf/resources) collection’s [Images](https://apireference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.

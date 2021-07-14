@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/export-annotations/
 description: This section explains how to export annotations from PDF file to XFDF with Aspose.PDF Facades.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

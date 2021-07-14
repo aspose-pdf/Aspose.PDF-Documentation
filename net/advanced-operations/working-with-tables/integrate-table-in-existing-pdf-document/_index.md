@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/integrate-table/
 description: This article shows how to integrate PDF tables.
-lastmod: "2021-01-17"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

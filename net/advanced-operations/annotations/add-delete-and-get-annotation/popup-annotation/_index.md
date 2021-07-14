@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /net/popup-annotation/
 description: Pop-up annotation not appear alone, it is associated with a Markup annotation, its parent annotation, and shall be used for editing the parent’s text.
-lastmod: "2020-12-25"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

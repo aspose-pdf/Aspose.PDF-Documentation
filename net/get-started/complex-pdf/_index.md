@@ -7,7 +7,7 @@ url: /net/complex-pdf-example/
 description: Aspose.PDF for NET allows you to create more complex documents that contain images, text fragments, and tables in one document.
 aliases:
     - /net/complex-pdf/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,14 +20,7 @@ If we create a document from scratch we need to follow certain steps:
 
 1. Instantiate a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. In this step we will create an empty PDF document with some metadata but without pages.
 1. Add a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) to the document object. So, now our document will have one page.
-1. Add a [Image](https://apireference.aspose.com/pdf/net/aspose.pdf/image/methods/index). It's a complex operation based on low level actions with PDF operators.
-    - Load image from stream
-    - Add image to Images collection of Page Resources
-    - Using GSave operator: this operator saves current graphics state.
-    - Create a [Matrix](https://apireference.aspose.com/pdf/net/aspose.pdf/matrix/constructors/1) object.
-    - Using ConcatenateMatrix operator: defines how image must be placed.
-    - Using Do operator: this operator draws image.
-    - Using GRestore operator: this operator restores graphics state.
+1. Add a [Image](https://apireference.aspose.com/pdf/net/aspose.pdf/image/methods/index) to the Page.
 1. Create a [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) for header. For the header we will use Arial font with font size 24pt and center alignment.
 1. Add header to the page [Paragraphs](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs).
 1. Create a [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) for description. For the description we will use Arial font with font size 24pt and center alignment.
@@ -46,7 +39,7 @@ namespace Aspose.Pdf.Examples
     public static class ExampleGetStarted
     {
         private static readonly string _dataDir = "..\\..\\..\\Samples";
-        public static void MakeComplexDocument()
+public static void MakeComplexDocument()
         {
             // Initialize document object
             Document document = new Document();
@@ -56,29 +49,7 @@ namespace Aspose.Pdf.Examples
             // -------------------------------------------------------------
             // Add image
             var imageFileName = System.IO.Path.Combine(_dataDir, "logo.png");
-            var imageStream = new FileStream(imageFileName, FileMode.Open);
-            // Add image to Images collection of Page Resources
-            page.Resources.Images.Add(imageStream);
-
-            // Using GSave operator: this operator saves current graphics state
-            page.Contents.Add(new Operators.GSave());
-
-            var _logoPlaceHolder = new Rectangle(20, 730, 120, 830);
-            // Create Matrix object
-            var matrix = new Matrix(new[] {
-                _logoPlaceHolder.URX - _logoPlaceHolder.LLX, 0, 0,
-                _logoPlaceHolder.URY - _logoPlaceHolder.LLY,
-                _logoPlaceHolder.LLX, _logoPlaceHolder.LLY });
-
-            // Using ConcatenateMatrix (concatenate matrix) operator: defines how image must be placed
-
-            page.Contents.Add(new Operators.ConcatenateMatrix(matrix));
-
-            var ximage = page.Resources.Images[page.Resources.Images.Count];
-            // Using Do operator: this operator draws image
-            page.Contents.Add(new Operators.Do(ximage.Name));
-            // Using GRestore operator: this operator restores graphics state
-            page.Contents.Add(new Operators.GRestore());
+            page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
 
             // -------------------------------------------------------------
             // Add Header

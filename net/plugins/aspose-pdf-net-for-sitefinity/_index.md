@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /net/aspose-pdf-net-for-sitefinity/
 description: Learn how to use PDF Import Module for Sitefinity
-lastmod: "2020-01-11"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

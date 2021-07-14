@@ -3,7 +3,7 @@ title: Why choose Aspose.Pdf for Reporting Services
 type: docs
 weight: 10
 url: /reportingservices/why-choose-aspose-pdf-for-reporting-services/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

@@ -4,7 +4,7 @@ type: docs
 weight: 110
 url: /java/pdffilesecurity-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfFileSecurity Class Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/extract-chart-objects/
 description: This section explains how to extract chart objects from PDF with Aspose.PDF Facades using PdfExtractor Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

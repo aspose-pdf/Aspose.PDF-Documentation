@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/digitally-sign-pdf-file/
 description: Digitally sign PDF documents using Java. Verify, or validate the digitally sign PDFs with Java based application with PDF Library. You can certify a PDF file with a PKCS1-Certificate.
-lastmod: "2021-04-28"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

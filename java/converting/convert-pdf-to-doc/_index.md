@@ -4,7 +4,7 @@ linktitle: Convert PDF to DOC
 type: docs
 weight: 70
 url: /java/convert-pdf-to-doc/
-lastmod: "2021-02-04"
+lastmod: "2021-06-05"
 description: Convert PDF file to DOC format with ease and full control with Aspose.PDF for Java. Learn more how to tune up Microsoft Word Doc file to PDF conversion.
 sitemap:
     changefreq: "weekly"

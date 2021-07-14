@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for .NET 7.2.0 Release Notes
 type: docs
 weight: 40
 url: /net/aspose-pdf-for-net-7-2-0-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

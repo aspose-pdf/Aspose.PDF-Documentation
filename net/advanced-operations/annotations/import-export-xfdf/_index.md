@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /net/import-export-xfdf/
 description: You may import and export annotation with XFDF format with C# and Aspose.PDF for .NET library.
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

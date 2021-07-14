@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /net/extract-data-from-table-in-pdf/
 description: Learn how to extract tabular from PDF using Aspose.PDF for .NET in C#
-lastmod: "2021-01-18"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

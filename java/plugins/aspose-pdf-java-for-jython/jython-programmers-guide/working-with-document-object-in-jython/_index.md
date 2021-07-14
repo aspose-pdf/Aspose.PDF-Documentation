@@ -3,7 +3,7 @@ title: Working With Document Object in Jython
 type: docs
 weight: 20
 url: /java/working-with-document-object-in-jython/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 This section includes the following topics:

@@ -3,7 +3,7 @@ title: World Class Free Technical Support
 type: docs
 weight: 30
 url: /jasperreports/world-class-free-technical-support/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

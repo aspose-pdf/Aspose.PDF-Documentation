@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/pdf-tooltip/
 description: Aspose.PDF implements a function of hiding actions, with which you can show/hide an annotation when you enter/leave the mouse over an invisible button.
-lastmod: "2021-03-06"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

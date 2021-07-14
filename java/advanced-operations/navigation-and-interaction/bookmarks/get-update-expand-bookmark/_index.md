@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/get-update-and-expand-bookmark/
 description: This article describes how to use bookmarks in a PDF file. With our Java library, you can get bookmarks from the PDF file, get a bookmarks page number, update bookmarks in a PDF Document, and expand bookmarks when viewing a document.
-lastmod: "2021-04-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

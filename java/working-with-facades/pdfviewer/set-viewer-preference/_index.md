@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/set-viewer-preference/
 description: This section explains how to set viewer Preference with Aspose.PDF Facades using PdfViewer Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/add-page-number/
 description: Aspose.PDF for Java allows you to add Page Number Stamp to your PDF file using PageNumber Stamp class.
-lastmod: "2021-03-18"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

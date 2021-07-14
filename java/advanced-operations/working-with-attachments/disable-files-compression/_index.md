@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/disable-files-compression-when-adding-as-embedded-resources/
 description: This article explains how to disable files compression when Adding as Embedded Resources
-lastmod: "2021-04-21"
+lastmod: "2021-06-05"
 ---
 
 The [FileSpecification](https://apireference.aspose.com/java/pdf/com.aspose.pdf/FileSpecification) class allows developers to add attachments to PDF documents. By default, attachments are compressed. We have updated the API to allow developers to disable compression when adding files as embedded resource. This gives developers more control over how files are processed.

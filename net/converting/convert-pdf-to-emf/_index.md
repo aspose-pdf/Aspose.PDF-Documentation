@@ -4,7 +4,7 @@ linktitle: Convert PDF to EMF
 type: docs
 weight: 50
 url: /net/convert-pdf-to-emf/
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 description: This page describes how to convert PDF Pages to EMF image, convert all Pages to EMF images with Aspose.PDF for .NET.
 sitemap:
     changefreq: "weekly"

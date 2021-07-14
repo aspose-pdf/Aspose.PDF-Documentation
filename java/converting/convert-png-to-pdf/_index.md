@@ -4,7 +4,7 @@ linktitle: Convert PNG to PDF
 type: docs
 weight: 200
 url: /java/convert-png-to-pdf/
-lastmod: "2021-02-05"
+lastmod: "2021-06-05"
 description: This article shows how to convert PNG to PDF with Aspose.PDF library in your Java applications. You can convert PNG images to PDF format using simple steps. 
 sitemap:
     changefreq: "weekly"

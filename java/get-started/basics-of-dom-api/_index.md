@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/basics-of-dom-api/
 description: Aspose.PDF for Java also uses the idea of DOM to represent the structure of a PDF document in terms of objects. Here you can read the description of this structure.
-lastmod: "2021-03-25"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

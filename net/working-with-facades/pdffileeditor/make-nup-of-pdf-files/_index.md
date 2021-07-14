@@ -4,7 +4,7 @@ type: docs
 weight: 90
 url: /net/make-nup-of-pdf-files/
 description: This article shows how to make NUp of PDF files work with Aspose.PDF Facades using PdfFileEditor class.
-lastmod: "2021-01-18"
+lastmod: "2021-06-05"
 draft: false
 ---
 

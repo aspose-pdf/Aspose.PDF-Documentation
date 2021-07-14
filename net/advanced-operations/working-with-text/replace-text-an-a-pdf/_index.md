@@ -7,7 +7,7 @@ url: /net/replace-text-in-pdf/
 description: Learn more about various ways of replacing and removing text from PDF. Aspose.PDF allows replacing text in a particular region or with a regular expression.
 aliases:
     - /net/replace-text-in-a-pdf-document/
-lastmod: "2021-04-23"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

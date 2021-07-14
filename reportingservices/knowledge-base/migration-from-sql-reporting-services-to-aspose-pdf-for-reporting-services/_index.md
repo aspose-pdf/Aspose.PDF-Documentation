@@ -3,7 +3,7 @@ title: Migration from SQL Reporting Services to Aspose.Pdf for Reporting Service
 type: docs
 weight: 10
 url: /reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ###### **This section includes the following topics:**

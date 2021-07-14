@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/import-bookmark/
 description: This section explains how to import bookmarks with Aspose.PDF Facades using PdfBookmarEditor Class.
-lastmod: "2021-06-01"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

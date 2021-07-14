@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /net/get-pdf-file-information/
 description: This section explains how to get PDF File Information with Aspose.PDF Facades.
-lastmod: "2021-01-15"
+lastmod: "2021-06-05"
 draft: false
 ---
 

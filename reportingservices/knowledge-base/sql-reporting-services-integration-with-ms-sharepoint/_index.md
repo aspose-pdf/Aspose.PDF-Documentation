@@ -3,7 +3,7 @@ title: SQL Reporting Services Integration with MS SharePoint
 type: docs
 weight: 20
 url: /reportingservices/sql-reporting-services-integration-with-ms-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ###### **This section includes the following topics:**

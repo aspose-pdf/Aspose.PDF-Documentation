@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/technical-support/
 description: This page gives recommendations for quick and quality to resolve your tasks using Aspose.PDF for Java.
-lastmod: "2021-02-02"
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

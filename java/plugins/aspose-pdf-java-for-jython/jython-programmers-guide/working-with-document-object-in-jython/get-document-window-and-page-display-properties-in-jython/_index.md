@@ -3,7 +3,7 @@ title: Get Document Window and Page Display Properties in Jython
 type: docs
 weight: 20
 url: /java/get-document-window-and-page-display-properties-in-jython/
-lastmod: "2021-05-25"
+lastmod: "2021-06-05"
 ---
 
 ## Aspose.PDF - Get Document Window

@@ -3,7 +3,7 @@ title: How to Run the Examples
 type: docs
 weight: 60
 url: /cpp/how-to-run-the-examples/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 ## <ins>**Software Requirements**

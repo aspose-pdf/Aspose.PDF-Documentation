@@ -3,7 +3,7 @@ title: Aspose.Pdf for Android via Java 17.7 Release Notes
 type: docs
 weight: 20
 url: /java/aspose-pdf-for-android-via-java-17-7-release-notes/
-lastmod: "2020-12-16"
+lastmod: "2021-06-05"
 ---
 
 |**Key**|**Summary**|**Category**|
