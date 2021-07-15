@@ -10,6 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-- [Resize PDF page contents](/pdf/java/resize-pdf-page-contents/)
 - [Concatenate PDF documents](/pdf/java/concatenate-pdf-documents/)
+- [Extract PDF Pages](/pdf/java/extract-pdf-pages/)
+- [Page Break in existing PDF](/pdf/java/page-break-in-existing-pdf/)
 
