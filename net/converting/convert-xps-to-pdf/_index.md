@@ -1,6 +1,5 @@
 ---
-title: Convert XML to PDF | C#
-title: Convert XPS to PDF
+title: Convert XPS to PDF | C#
 linktitle: Convert XPS to PDF
 type: docs
 weight: 330

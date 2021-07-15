@@ -5,8 +5,7 @@ type: docs
 weight: 40
 url: /net/working-with-images/
 description: This section describes the features of working with images in a PDF file using C# library.
-aliases:
-    - /net/working-with-images-in-pdf/
+aliases:    
     - /net/manipulate-images/
 lastmod: "2021-06-05"
 sitemap:

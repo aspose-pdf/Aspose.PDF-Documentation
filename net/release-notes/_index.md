@@ -2,7 +2,7 @@
 title: Release Notes
 linktitle: Release Notes
 type: docs
-weight: 110
+weight: 120
 url: /net/release-notes/
 lastmod: "2021-06-05"
 description: This section contains all the release notes that are regularly published and updated by the Aspose.PDF library.

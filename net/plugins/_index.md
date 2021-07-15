@@ -1,7 +1,7 @@
 ---
 title: Plugins
 type: docs
-weight: 115
+weight: 130
 url: /net/plugins/
 description: Learn how to use various plug-ins based on Aspose.PDF
 lastmod: "2021-06-05"
