@@ -12,5 +12,6 @@ sitemap:
 ---
 
 - [Find whether PDF file contains images or text only](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)
-- [Working with features of PdfExtractor class](/pdf/net/working-with-features-of-pdfextractor-class/)
-- [Replace and Extract Images](/pdf/net/replace-and-extract-images/)
+- [Extract Images](/pdf/net/extract-images/)
+- [Extract Attachments](/pdf/net/extract-attachments/)
+- [Extract Text](/pdf/net/extract-text/)

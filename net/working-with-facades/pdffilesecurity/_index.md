@@ -11,6 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-- [Encrypt, Decrypt and Set Privileges on PDF File](/pdf//net/encrypt-decrypt-and-set-privileges-on-pdf-file/)
+- [Encrypt PDF File](/pdf/net/encrypt-pdf-file/)
+- [Decrypt PDF File](/pdf/net/decrypt-pdf-file/)
+- [Control Exception PDF File](/pdf/net/control-exception/)
+- [Change Password of PDF File](/pdf/net/change-password/)
+- [Set Privileges on an Existing PDF File](/pdf/net/set-privileges/)
+
 
 

@@ -10,6 +10,8 @@ sitemap:
     priority: 0.7
 ---
 
-- [Add Annotation in PDF File (facades)](/pdf/java/add-annotations/)
 - [Delete All Annotations by Specified Type (facades)](/pdf/java/delete-annotations/)
-- [Export Annotations from PDF File to XFDF (facades)](/pdf/java/export-annotations/)
+- [Import and Export Annotations to XFDF format using com.aspose.pdf.facades](/pdf/java/import-export-annotations/)
+- [Extract Annotation](/pdf/java/extract-annotation/)
+- [Flatten Annotation](/pdf/java/flatten-annotation/)
+- [Modify Annotations](/pdf/java/modify-annotations/)

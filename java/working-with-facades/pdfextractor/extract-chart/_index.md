@@ -16,9 +16,7 @@ The PDF allow to group page content into elements named as **Marked Content**. 
 
 Please note that the correct grouping of content into containers is the responsibility of a PDF document designer. If you want to get charts with header or other objects you should either edit/create the PDF document where whole chart is placed in one container.
 
-**Java**
-
-{{< highlight java >}}
+```java
 
  //Open document
 
@@ -33,6 +31,5 @@ PdfExtractor pdfExtractor = new PdfExtractor();
 pdfExtractor.extractMarkedContentAsImages(document.getPages().get_Item(1), "C:/Temp/Charts_page_1");
 
 document.close();
-
-{{< /highlight >}}
+```
 

@@ -4,27 +4,18 @@ type: docs
 weight: 10
 url: /java/adding-javascript-actions/
 description: This section explains how to add Javascript actions to existing PDF file with Aspose.PDF Facades.
-lastmod: "2021-06-05"
+lastmod: "2021-06-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-The [PdfContentEditor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfContentEditor) class present under com.aspose.pdf.facades package provides the flexibility to add Javascript actions to a PDF file. You can create a link with the serial actions corresponding to execute a menu item in the PDF viewer. This class also provides the feature to create additional actions for document events.
+The [PdfContentEditor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfContentEditor) class present under com.aspose.pdf.facades package provides the flexibility to add Javascript actions to a PDF file. You can create a link with the serial actions corresponding to execute a menu item in the PDF viewer. This class also provides the feature to create additional actions for document events. 
 
-The following sample code shows you how to add Javascript actions in a PDF file.
+First of all, an object is drawn in the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document), in our example a [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle). And set the action [createJavaScriptLink](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor#createJavaScriptLink-java.lang.String-java.awt.Rectangle-int-java.awt.Color-) to the Rectangle. After you may save your document.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.facades.PdfContentEditor;
-
-
-public class PdfContentEditorDemo {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
-
-    public static void AddingJavascriptActions() {
+ public static void AddingJavascriptActions() {
         PdfContentEditor editor = new PdfContentEditor();
         editor.bindPdf(_dataDir+"sample.pdf");
         // create Javascript link
@@ -34,6 +25,4 @@ public class PdfContentEditorDemo {
         // save the output file
         editor.save(_dataDir+"JavaScriptAdded_output.pdf");
     }
-    
-}
 ```

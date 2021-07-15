@@ -14,16 +14,34 @@ draft: false
 The following code snippet shows you how to set PDF file information.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
-// Open document
-PdfFileInfo fileInfo = new PdfFileInfo(dataDir+ "SetFileInfo.pdf");
-// Set PDF information
-fileInfo.Author = "Aspose";
-fileInfo.Title = "Hello World!";
-fileInfo.Keywords = "Peace and Development";
-fileInfo.Creator = "Aspose";            
-// Save updated file
-fileInfo.SaveNewInfo(dataDir+ "SetFileInfo_out.pdf");
+ public static void SetPdfInfo()
+        {
+            PdfFileInfo fileInfo = new PdfFileInfo(_dataDir + "sample.pdf")
+            {
+                // Set PDF information
+                Author = "Aspose",
+                Title = "Hello World!",
+                Keywords = "Peace and Development",
+                Creator = "Aspose"
+            };
+            // Save updated file
+            fileInfo.SaveNewInfo(_dataDir + "SetFileInfo_out.pdf");
+        }
+```
+
+## Set Meta Info
+
+[SetMetaInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) method allows you to add any information. In our example, we added a field. Check next code snippet:
+
+```csharp
+ public static void SetMetaInfo()
+        {
+            // Create instance of PdfFileInfo object
+            Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(_dataDir + "sample.pdf");
+
+            // Set new customer attribute as meta info
+            fInfo.SetMetaInfo("Reviewer", "Aspose.PDF user");
+
+            // Save updated file
+            fInfo.SaveNewInfo(_dataDir + "SetMetaInfo_out.pdf");
 ```
