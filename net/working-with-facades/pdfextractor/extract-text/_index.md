@@ -44,7 +44,7 @@ public static void ExtractText()
 }
 ```
 
-To Extract the Text Extraction Model use the following code:
+To Extract the Text Extraction Mode use the following code:
 
 ```csharp
 public static void ExtractTextExtractonMode()

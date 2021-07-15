@@ -7,7 +7,7 @@ description: This section explains how to work with Aspose.PDF Facades using Pdf
 lastmod: "2021-07-15"
 draft: false
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
