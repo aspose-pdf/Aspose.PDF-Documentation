@@ -5,7 +5,6 @@ weight: 30
 url: /net/extract-text/
 description: This section explains how to extract text from pdf using PdfExtractor class.
 lastmod: "2021-06-05"
-draft: false
 ---
 
 In this article, we’ll look into the details of extracting text from a PDF file. All of these extraction features are provided at one place, in [PdfExtractor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor) class. We’ll see how to use these features in our code.

@@ -4,8 +4,7 @@ type: docs
 weight: 20
 url: /net/extract-images/
 description: This section explains how to extract Images with Aspose.PDF Facades using PdfExtractor Class.
-lastmod: "2021-06-05"
-draft: false
+lastmod: "2021-07-15"
 ---
 
 ## Extract Images from the Whole PDF to Files (Facades)
@@ -139,7 +138,7 @@ public static void ExtractImagesImageExtractionMode()
     extractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
 
     // Specify Image Extraction Mode
-    // extractor.ExtractImageMode = ExtractImageMode.ActuallyUsed;
+    //extractor.ExtractImageMode = ExtractImageMode.ActuallyUsed;
     extractor.ExtractImageMode = ExtractImageMode.DefinedInResources;
 
     // Extract Images based on Image Extraction Mode
