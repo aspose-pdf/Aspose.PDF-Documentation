@@ -18,13 +18,15 @@ This version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 21.7.
 
 Trailing underscore characters have been removed from the names of header files.
 Names of the next public header files have been changed:
-| ** Old Name ** | ** Current Name ** | 
-|Aspose.PDF.Cpp/Color~_~_.h|Aspose.PDF.Cpp/Color.h| 
-|Aspose.PDF.Cpp/DOM/PageMode_.h|Aspose.PDF.Cpp/DOM/PageMode.h| 
-|Aspose.PDF.Cpp/Page_.h|Aspose.PDF.Cpp/Page.h| 
-|Aspose.PDF.Cpp/Rectangle~_~__.h|Aspose.PDF.Cpp/Rectangle.h| 
-|Aspose.PDF.Cpp/Text/Font~_~_.h|Aspose.PDF.Cpp/Text/Font.h| 
-|Aspose.PDF.Cpp/LoadOptions_.h|Aspose.PDF.Cpp/LoadOptions.h| 
+
+| **Old Name** | **Current Name** |
+|---|---|
+|Aspose.PDF.Cpp/Color~_~_.h|Aspose.PDF.Cpp/Color.h|
+|Aspose.PDF.Cpp/DOM/PageMode_.h|Aspose.PDF.Cpp/DOM/PageMode.h|
+|Aspose.PDF.Cpp/Page_.h|Aspose.PDF.Cpp/Page.h|
+|Aspose.PDF.Cpp/Rectangle~_~__.h|Aspose.PDF.Cpp/Rectangle.h|
+|Aspose.PDF.Cpp/Text/Font~_~_.h|Aspose.PDF.Cpp/Text/Font.h|
+|Aspose.PDF.Cpp/LoadOptions_.h|Aspose.PDF.Cpp/LoadOptions.h|
 
 ## Public API and Backward Incompatible Changes
 
