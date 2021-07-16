@@ -1,8 +1,13 @@
 ---
 title: Working with Images using PdfContentEditor
 type: docs
+<<<<<<< HEAD
+weight: 30
+url: /net/working-with-images-facades/
+=======
 weight: 50
 url: /net/working-with-images-in-pdf
+>>>>>>> fafdb0119efb80055abd6bdd33ec750ebabffeab
 description: This section explains how to add and delete Images with Aspose.PDF Facades using PdfContentEditor Class.
 lastmod: "2021-06-24"
 draft: false
@@ -36,4 +41,17 @@ The following code snippet shows you how to delete all the images from a PDF fil
         editor.DeleteImage();
         editor.Save(_dataDir + "PdfContentEditorDemo11.pdf");
     }
+```
+
+## Replace Image in a PDF File (Facades)
+
+the [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) allows you replace your image in a PDF file, call for this the [ReplaceImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) method, and Save the result.
+
+```csharp
+ public static void ReplaceImage()
+        {
+            PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample_cats_dogs.pdf"));
+            editor.ReplaceImage(2, 4, @"C:\Samples\Facades\PdfContentEditor\cat04.jpg");
+            editor.Save(_dataDir + "PdfContentEditorDemo12.pdf");
+        }
 ```

@@ -11,8 +11,6 @@ sitemap:
     priority: 0.7
 ---
 
-- [Storing and retrieving custom properties using Meta info](/pdf/net/storing-and-retrieving-custom-properties-using-meta-info/)
 - [Using Aspose.Pdf for .NET with Coldfusion](/pdf/net/using-aspose-pdf-for-net-with-coldfusion/)
 - [Set PDF File Information](/pdf/net/set-pdf-file-information/)
 - [Get PDF file information](/pdf/net/get-pdf-file-information/)
-

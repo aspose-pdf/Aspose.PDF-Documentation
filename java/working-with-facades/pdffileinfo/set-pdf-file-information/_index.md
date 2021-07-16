@@ -14,4 +14,36 @@ sitemap:
 
 The following code snippet shows you how to set PDF file information.
 
-{{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "Examples-src-main-java-com-aspose-pdf-examples-facades-Document-SetPDFFileInformation-.java" >}}
+```java
+ public static void SetPdfInfo()
+    {
+        PdfFileInfo fileInfo = new PdfFileInfo(_dataDir + "sample.pdf");
+        // Set PDF information
+        fileInfo.setAuthor("Aspose");
+        fileInfo.setTitle ("Hello World!");
+        fileInfo.setKeywords("Peace and Development");
+        fileInfo.setCreator ("Aspose");
+        
+        // Save updated file
+        fileInfo.saveNewInfo(_dataDir + "SetfileInfo_out.pdf");
+    }
+```
+
+## Set Meta Info
+
+[setMetaInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileInfo#setMetaInfo-java.lang.String-java.lang.String-) method allows you to add any information. In our example, we added a field. Check next code snippet:
+
+```java
+   public static void SetMetaInfo()
+    {
+        // Create instance of PdffileInfo object
+        PdfFileInfo fInfo = new PdfFileInfo(_dataDir + "sample.pdf");
+       
+        // Set new customer attribute as meta info
+        fInfo.setMetaInfo("Reviewer", "Aspose.PDF user");
+
+        // Save updated file
+        fInfo.saveNewInfo(_dataDir + "SetMetaInfo_out.pdf");
+
+    }
+```

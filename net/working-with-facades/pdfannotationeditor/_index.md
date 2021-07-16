@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
-- [Exploring features of PdfAnnotationEditor class](/pdf/net/exploring-features-of-pdfannotationeditor-class/)
-- [Importing and Exporting Annotations to XFDF](/pdf/net/importing-and-exporting-annotations-to-xfdf/)
-- [Working with Annotations - Facades](/pdf/net/working-with-annotations-facades/)
+- [Delete All Annotations by Specified Type (facades)](/pdf/net/delete-annotations/)
+- [Import and Export Annotations to XFDF format using com.aspose.pdf.facades](/pdf/net/import-export-annotations/)
+- [Extract Annotation](/pdf/net/extract-annotation/)
+- [Flatten Annotation](/pdf/net/flatten-annotation/)
+- [Modify Annotations](/pdf/net/modify-annotations/)

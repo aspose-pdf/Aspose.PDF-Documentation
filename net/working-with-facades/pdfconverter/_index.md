@@ -11,6 +11,5 @@ sitemap:
     priority: 0.5
 ---
 
-- [Convert PDF Pages to JPEG/PNG/BMP Images](/pdf/net/convert-pdf-pages/)
-- [Convert PDF File to TIFF file](/pdf/net/convert-pdf-file/)
-- [Performance Improvement during PDF to TIFF Conversion](/pdf/net/performance-improvement-during-pdf-to-tiff-conversion/)
+- [Merge Images](/pdf/net/merge-images/)
+- [Convert PDF File](/pdf/net/convert-pdf-file/)

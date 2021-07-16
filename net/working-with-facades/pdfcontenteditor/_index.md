@@ -11,11 +11,12 @@ sitemap:
     priority: 0.7
 ---
 
-- [How to create Nested Bookmarks](/pdf/net/how-to-create-nested-bookmarks/)
-- [Working with the PdfContentEditor class](/pdf/net/working-with-the-pdfcontenteditor-class/)
+- [Adding Javascript actions to existing PDF file](/pdf/net/adding-javascript-actions/)
+- [Adding Bookmark actions to existing PDF file](/pdf/net/how-to-create-nested-bookmarks/)
+- [Working with Images](/pdf/net/working-with-images-facades/)
 - [Replace Text - Facades](/pdf/net/replace-text-facades/)
-- [Set Viewer Preference of an existing PDF File](/pdf/net/set-viewer-preference-of-an-existing-pdf-file/)
-- [Working with Images](/pdf/net/working-with-images/)
 - [Working with Attachments - Facades](/pdf/net/working-with-attachments-facades/)
-- [Working with Links and Actions - Facades](/pdf/net/working-with-links-and-actions-facades/)
+- [Set Viewer Preference of an existing PDF File](/pdf/net/set-viewer-preference-of-an-existing-pdf-file/)
+- [Get Viewer Preference of an existing PDF File](/pdf/net/get-viewer-preference-of-an-existing-pdf-file/)
+- [Adding Annotations to existing PDF file](/pdf/net/adding-annotations-to-existing-pdf-file/)
 

@@ -1,7 +1,7 @@
 ---
 title: Changing field appearance and attributes
 type: docs
-weight: 10
+weight: 20
 url: /net/changing-field-appearance-and-attributes/
 description: This section explains how you can change field appearance and attributes with FormEditor Class.
 lastmod: "2021-06-05"

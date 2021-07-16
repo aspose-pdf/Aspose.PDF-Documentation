@@ -1,7 +1,7 @@
 ---
 title: Replace Text in PDF File
 type: docs
-weight: 30
+weight: 40
 url: /java/replace-text/
 description: This section explains how to replace text with Aspose.PDF Facades - a toolset for popular operations with PDF.
 lastmod: "2021-06-24"

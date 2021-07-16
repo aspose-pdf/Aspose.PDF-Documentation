@@ -1,7 +1,7 @@
 ---
 title: Working with Attachments - Facades
 type: docs
-weight: 60
+weight: 50
 url: /net/working-with-attachments-facades/
 description: This section explains how to working with Attachments - Facades using PdfContentEditor Class.
 lastmod: "2021-06-05"
