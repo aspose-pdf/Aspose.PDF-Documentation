@@ -21,11 +21,11 @@ Names of the next public header files have been changed:
 
 | **Old Name** | **Current Name** |
 |---|---|
-|Aspose.PDF.Cpp/Color~_~_.h|Aspose.PDF.Cpp/Color.h|
+|Aspose.PDF.Cpp/Color__.h|Aspose.PDF.Cpp/Color.h| 
 |Aspose.PDF.Cpp/DOM/PageMode_.h|Aspose.PDF.Cpp/DOM/PageMode.h|
 |Aspose.PDF.Cpp/Page_.h|Aspose.PDF.Cpp/Page.h|
-|Aspose.PDF.Cpp/Rectangle~_~__.h|Aspose.PDF.Cpp/Rectangle.h|
-|Aspose.PDF.Cpp/Text/Font~_~_.h|Aspose.PDF.Cpp/Text/Font.h|
+|Aspose.PDF.Cpp/Rectangle___.h|Aspose.PDF.Cpp/Rectangle.h| 
+|Aspose.PDF.Cpp/Text/Font__.h|Aspose.PDF.Cpp/Text/Font.h| 
 |Aspose.PDF.Cpp/LoadOptions_.h|Aspose.PDF.Cpp/LoadOptions.h|
 
 ## Public API and Backward Incompatible Changes
