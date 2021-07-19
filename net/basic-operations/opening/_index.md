@@ -1,6 +1,6 @@
 ---
 title: Open PDF document programmatically
-linktitle: Open
+linktitle: Open PDF
 type: docs
 weight: 20
 url: /net/open-pdf-document/

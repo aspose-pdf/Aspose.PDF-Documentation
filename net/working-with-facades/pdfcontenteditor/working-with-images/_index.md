@@ -5,7 +5,6 @@ weight: 50
 url: /net/working-with-images-in-pdf
 description: This section explains how to add and delete Images with Aspose.PDF Facades using PdfContentEditor Class.
 lastmod: "2021-06-24"
-draft: false
 ---
 
 ## Delete Images from a Particular Page of PDF (Facades)

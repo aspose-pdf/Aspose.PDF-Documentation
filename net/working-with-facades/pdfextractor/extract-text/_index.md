@@ -5,7 +5,6 @@ weight: 30
 url: /net/extract-text/
 description: This section explains how to extract text from pdf using PdfExtractor class.
 lastmod: "2021-06-05"
-draft: false
 ---
 
 In this article, we’ll look into the details of extracting text from a PDF file. All of these extraction features are provided at one place, in [PdfExtractor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/pdfextractor) class. We’ll see how to use these features in our code.
@@ -16,66 +15,65 @@ For example, in order to extract text you can use three methods i.e. [ExtractTex
 
 ```csharp
 public static void ExtractText()
+{
+    bool WholeText = true;
+    // Create an object of the PdfExtractor class
+    PdfExtractor pdfExtractor = new PdfExtractor();
+
+    // Bind the input PDF
+    pdfExtractor.BindPdf(_dataDir + "sample.pdf");
+
+    // ExtractText
+    pdfExtractor.ExtractText();
+
+    if (!WholeText)
+    {
+        pdfExtractor.GetText(_dataDir + "sample.txt");
+    }
+    else
+    {
+        // Extract the text into separate files
+        int pageNumber = 1;
+        while (pdfExtractor.HasNextPageText())
         {
-            bool WholeText = true;
-            // Create an object of the PdfExtractor class
-            PdfExtractor pdfExtractor = new PdfExtractor();
-
-            // Bind the input PDF
-            pdfExtractor.BindPdf(_dataDir + "sample.pdf");
-
-            // ExtractText
-            pdfExtractor.ExtractText();
-
-            if (!WholeText)
-            {
-                pdfExtractor.GetText(_dataDir + "sample.txt");
-            }
-            else
-            {
-                // Extract the text into separate files
-                int pageNumber = 1;
-                while (pdfExtractor.HasNextPageText())
-                {
-                    pdfExtractor.GetNextPageText($"{_dataDir}\\sample{pageNumber:D3}.txt");
-                    pageNumber++;
-                }
-            }
+            pdfExtractor.GetNextPageText($"{_dataDir}\\sample{pageNumber:D3}.txt");
+            pageNumber++;
         }
+    }
+}
 ```
 
-To Extract the Text Extraction Model use the following code:
+To Extract the Text Extraction Mode use the following code:
 
 ```csharp
 public static void ExtractTextExtractonMode()
+{
+    bool WholeText = true;
+    // Create an object of the PdfExtractor class
+    PdfExtractor pdfExtractor = new PdfExtractor();
+
+    // Bind the input PDF
+    pdfExtractor.BindPdf(_dataDir + "sample.pdf");
+
+    // ExtractText
+    // pdfExtractor.ExtractTextMode = 0; //pure mode
+    pdfExtractor.ExtractTextMode = 1; //raw mode
+    pdfExtractor.ExtractText();
+
+
+    if (!WholeText)
+    {
+        pdfExtractor.GetText(_dataDir + "sample.txt");
+    }
+    else
+    {
+        // Extract the text into separate files
+        int pageNumber = 1;
+        while (pdfExtractor.HasNextPageText())
         {
-            bool WholeText = true;
-            // Create an object of the PdfExtractor class
-            PdfExtractor pdfExtractor = new PdfExtractor();
-
-            // Bind the input PDF
-            pdfExtractor.BindPdf(_dataDir + "sample.pdf");
-
-            // ExtractText
-            // pdfExtractor.ExtractTextMode = 0; //pure mode
-            pdfExtractor.ExtractTextMode = 1; //raw mode
-            pdfExtractor.ExtractText();
-
-
-            if (!WholeText)
-            {
-                pdfExtractor.GetText(_dataDir + "sample.txt");
-            }
-            else
-            {
-                // Extract the text into separate files
-                int pageNumber = 1;
-                while (pdfExtractor.HasNextPageText())
-                {
-                    pdfExtractor.GetNextPageText($"{_dataDir}\\sample{pageNumber:D3}.txt");
-                    pageNumber++;
-                }
-            }
+            pdfExtractor.GetNextPageText($"{_dataDir}\\sample{pageNumber:D3}.txt");
+            pageNumber++;
         }
+    }
+}
 ```
-
