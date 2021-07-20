@@ -4,14 +4,14 @@ type: docs
 weight: 50
 url: /net/pdfextractor-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfExtractor Class.
-lastmod: "2021-06-05"
+lastmod: "2021-07-15"
 draft: false
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
-- [Find whether PDF file contains images or text only](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)
+- [Extract Text](/pdf/net/extract-text/)
 - [Extract Images](/pdf/net/extract-images/)
 - [Extract Attachments](/pdf/net/extract-attachments/)
-- [Extract Text](/pdf/net/extract-text/)
+- [Find whether PDF file contains images or text only](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)

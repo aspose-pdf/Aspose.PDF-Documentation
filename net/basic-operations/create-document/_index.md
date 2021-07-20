@@ -1,6 +1,6 @@
 ---
 title: Create PDF document programmatically
-linktitle: Create Document
+linktitle: Create PDF
 type: docs
 weight: 10
 url: /net/create-document/
