@@ -11,6 +11,70 @@ sitemap:
 lastmod: "2021-06-05"
 ---
 
+## What's new in Aspose.PDF 21.7
+
+### PDF creation based on XML and XLS with parameters
+
+To add XSL params we need to create own [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) and set as property in [XslFoLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). The following snippet shows how to use this class with the sample files described above.
+
+```csharp
+public static void Example_XSLFO_to_PDF()
+    {
+        var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
+        var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+
+        var options = new Aspose.Pdf.XslFoLoadOptions();
+
+        //Example of using XsltArgumentList
+         XsltArgumentList argsList = new XsltArgumentList();
+        argsList.AddParam("isBoldName", "", "yes");
+        //---------------------
+
+        var pdfDocument = new Aspose.Pdf.Document(TransformXml(XmlContent, XsltContent, argsList), options);
+        pdfDocument.Save(_dataDir + "data_xml.pdf");
+    }
+
+ public static MemoryStream TransformXml(string inputXml, string xsltString, XsltArgumentList argsList=null)
+    {
+            var transform = new XslCompiledTransform();
+            using (var reader = XmlReader.Create(new StringReader(xsltString)))
+            {
+                transform.Load(reader);
+            }
+            var memoryStream = new MemoryStream();
+
+            var results = new StreamWriter(memoryStream);
+            using (var reader = XmlReader.Create(new StringReader(inputXml)))
+            {
+                transform.Transform(reader, argsList, results);
+            }
+
+            memoryStream.Position = 0;
+            return memoryStream;
+    }
+```
+
+## What's new in Aspose.PDF 21.6
+
+With Aspose.PDF for .NET you can hide images using ImagePlacementAbsorber from the document:
+
+```csharp
+public void PDFNET_49961()
+{
+   ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
+   Document doc = new Document("test.pdf");
+   // Hide image on first page
+   doc.Pages[1].Accept(abs);
+
+   foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
+   {
+       imagePlacement.Hide();
+   }
+
+   doc.Save("test_out.pdf");
+}
+```
+
 ## What's new in Aspose.PDF 21.5
 
 ### How to extract font full name from it description/resource at PDF?

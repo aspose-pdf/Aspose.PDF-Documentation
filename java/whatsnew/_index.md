@@ -11,6 +11,26 @@ sitemap:
 lastmod: "2021-06-05"
 ---
 
+## What's new in Aspose.PDF 21.6
+
+### Hiding image using ImagePlacementAbsorber from the document
+
+With Aspose.PDF for Java you can hide images using ImagePlacementAbsorber from the document:
+
+```java
+      Document doc = new Document("input.pdf");
+
+        for (Page page : doc.getPages()) {
+            ImagePlacementAbsorber ipa = new ImagePlacementAbsorber();
+            ipa.visit(page);
+            for (ImagePlacement ip : ipa.getImagePlacements()) {
+                ip.hide();
+            }
+        }
+
+        doc.save("out.pdf");
+```
+
 ## What's new in Aspose.PDF 21.5
 
 ### Add API for merging images
