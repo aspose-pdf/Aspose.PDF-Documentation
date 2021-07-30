@@ -133,30 +133,6 @@ public static void PrintingPDFToSoftPrinter()
         }
 ```
 
-## Printing PDF to an XPS Printer (Facades)
-
-You can print a PDF file to an XPS printer, or some other soft printer for that matter, using the [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class. In order to do that, create an object of the PdfViewer class and open the PDF file using the BindPdf method. You can set different print settings using the PrinterSettings and PageSettings classes. You also need to set the PrinterName property to the XPS or other soft printer you have installed.
-
-Finally, use PrintDocumentWithSettings method to print the PDF to XPS or other soft printer. The following code snippet shows you how to print the PDF file to an XPS printer.
-
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintoXPSPrinter-PrintoXPSPrinter.cs" >}}
-
-When printing a PDF files that contains text and you want the contents to appear as text instead of vector graphics, please try using the following code snippets.
-
-### Fonts not Embedded
-
-If the document does not contain embedded fonts, it is possible to embed system fonts into the document at the point of printing.
-
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintoXPSPrinter-FontsNotEmbedded.cs" >}}
-
-### Fonts Embedded
-
-For documents that have embedded fonts, the quality can be improved and fonts are embedded to the document. Aspose.PDF has a feature that allows you to substitute embedded fonts with system fonts.
-
 ## Hiding Print Dialog
 
 Aspose.PDF for .NET allows you to hide the print dialog. For this use [PrintPageDialog](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog) method.
