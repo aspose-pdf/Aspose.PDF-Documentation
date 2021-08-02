@@ -12,4 +12,3 @@ sitemap:
 ---
 
 - [Adding Images and Text using PdfFileMend class](/pdf/net/adding-images-and-text-using-pdffilemend-class/)
-- [Manipulating Images in an Existing PDF File](/pdf/net/manipulating-images-in-an-existing-pdf-file/)
