@@ -12,30 +12,111 @@ draft: false
 
 [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class allows you to add header in a PDF file. In order to add header, you first need to create object of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. You can format the header text using [FormattedText](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) class. Once you’re ready to add header in the file, you need to call [AddHeader](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addheader/methods/4) method of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. You also need to specify at least the top margin in the [AddHeader](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addheader/methods/4) method. Finally, save the output PDF file using [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. The following code snippet shows you how to add header in a PDF file.
 
+```csharp
+ public static void AddHeader()
+        {
+            // Create PdfFileStamp object
+            PdfFileStamp fileStamp = new PdfFileStamp();
 
+            // Open Document
+            fileStamp.BindPdf(_dataDir + "sample.pdf");
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Stamps-Watermarks-AddHeader-AddHeader.cs" >}}
+            // Create formatted text for page number
+            FormattedText formattedText = new FormattedText("Aspose - Your File Format Experts!",
+                System.Drawing.Color.Yellow,
+                System.Drawing.Color.Black,
+                FontStyle.Courier,
+                EncodingType.Winansi, false, 14);
+
+            // Add header
+            fileStamp.AddHeader(formattedText, 10);
+
+            // Save updated PDF file
+            fileStamp.Save(_dataDir + "AddHeader_out.pdf");
+
+            // Close fileStamp
+            fileStamp.Close();
+        }
+```
 
 ## Add Footer in a PDF File
 
 [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class allows you to add footer in a PDF file. In order to add footer, you first need to create object of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. You can format the footer text using [FormattedText](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) class. Once you’re ready to add footer in the file, you need to call [AddFooter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addfooter/index) method of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. You also need to specify at least the bottom margin in the [AddFooter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addfooter/index) method. Finally, save the output PDF file using [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. The following code snippet shows you how to add footer in a PDF file.
 
+```csharp
+ public static void AddFooter()
+        {
+            // Create PdfFileStamp object
+            PdfFileStamp fileStamp = new PdfFileStamp();
 
+            // Open Document
+            fileStamp.BindPdf(_dataDir + "sample.pdf");
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Stamps-Watermarks-AddFooter-AddFooter.cs" >}}
+            // Create formatted text for page number
+            FormattedText formattedText = new FormattedText("Aspose - Your File Format Experts!",
+                System.Drawing.Color.Blue,
+                System.Drawing.Color.Gray,
+                FontStyle.Courier,
+                EncodingType.Winansi, false, 14);
+
+            // Add footer
+            fileStamp.AddFooter(formattedText, 10);
+
+            // Save updated PDF file
+            fileStamp.Save(_dataDir + "AddFooter_out.pdf");
+
+            // Close fileStamp
+            fileStamp.Close();
+        }
+```
 
 ## Add Image in Header of an Existing PDF File
 
 [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class allows you to add image in the header of a PDF file. In order to add image in header, you first need to create object of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. After that, you need to call [AddHeader](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addheader/methods/4) method of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. You can pass the image to the [AddHeader](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addheader/methods/4) method. Finally, save the output PDF file using [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. The following code snippet shows you how to add image in header of PDF file.
 
+```csharp
+public static void AddImageHeader()
+        {
+            // Create PdfFileStamp object
+            PdfFileStamp fileStamp = new PdfFileStamp();
 
+            // Open Document
+            fileStamp.BindPdf(_dataDir + "sample.pdf");
+            using (var fs = new FileStream(_dataDir + "aspose-logo.png", FileMode.Open))
+            {
+                // Add Header
+                fileStamp.AddHeader(fs, 10);
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Stamps-Watermarks-AddImageHeader-AddImageHeader.cs" >}}
+                // Save updated PDF file
+                fileStamp.Save(_dataDir + "AddImage-Header_out.pdf");
+                // Close fileStamp
+                fileStamp.Close();
+            }
+        }
+```
 
 ## Add Image in Footer of an Existing PDF File
 
 [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class allows you to add image in the footer of a PDF file. In order to add image in footer, you first need to create object of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. After that, you need to call [AddFooter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addfooter/index) method of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. You can pass the image to the [AddFooter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addfooter/index) method. Finally, save the output PDF file using [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/constructors/main) class. The following code snippet shows you how to add image in the footer of PDF file.
 
+```csharp
+public static void AddImageFooter()
+        {
+            // Create PdfFileStamp object
+            PdfFileStamp fileStamp = new PdfFileStamp();
 
+            // Open Document
+            fileStamp.BindPdf(_dataDir + "sample.pdf");
+            using (var fs = new FileStream(_dataDir + "aspose-logo.png", FileMode.Open))
+            {
+                // Add footer
+                fileStamp.AddFooter(fs, 10);
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Stamps-Watermarks-AddImageFooter-AddImageFooter.cs" >}}
+                // Save updated PDF file
+                fileStamp.Save(_dataDir + "AddImage-Footer_out.pdf");
+
+                // Close fileStamp
+                fileStamp.Close();
+            }
+        }
+```

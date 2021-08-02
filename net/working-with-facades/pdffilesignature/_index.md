@@ -11,5 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-- [Improved and Flexible PDF Signing Mechanism](/pdf/net/improved-and-flexible-pdf-signing-mechanism/)
-- [Working with Signature in a PDF File](/pdf/net/working-with-signature-in-a-pdf-file/)
+- [Add Signature in PDF File](/pdf/net/add-signature-in-pdf/)
+- [Remove Signature from PDF File](/pdf/net/remove-signature-from-pdf/)
+- [Verify Signature in PDF File](/pdf/net/verify-signature-in-pdf/)
+- [Working with Signature in PDF File](/pdf/net/add-signature-in-pdf/)

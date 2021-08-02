@@ -8,6 +8,8 @@ lastmod: "2021-06-05"
 draft: false
 ---
 
+[PdfFileSecurity](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) class allows you to control exceptions. To do this, you need to set [AllowExceptions](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) property to false or true. If you set the operation to false, the result of [DecryptFile](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) will return true or false depending on the correctness of the password. 
+
 ```csharp
    public static void ControlExceptionPDFFile()
         {
@@ -19,6 +21,29 @@ draft: false
             {
                 Console.WriteLine("Something wrong...");
                 Console.WriteLine($"Last exception: {fileSecurity.LastException.Message}");
+            }
+            fileSecurity.Save(_dataDir + "sample_decrtypted.pdf");
+        }
+```
+
+If you set [AllowExceptions](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) property to true, then you can get the result of the operation using the try-catch operator.
+
+
+```csharp
+public static void ControlExceptionPDFFile2()
+        {
+            PdfFileSecurity fileSecurity = new PdfFileSecurity();
+            fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
+            fileSecurity.AllowExceptions = true;
+            try
+            {
+                // Decrypt PDF document
+                fileSecurity.DecryptFile("IncorrectPassword");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Something wrong...");
+                Console.WriteLine($"Exception: {ex.Message}");
             }
             fileSecurity.Save(_dataDir + "sample_decrtypted.pdf");
         }

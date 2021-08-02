@@ -8,174 +8,401 @@ lastmod: "2021-06-05"
 draft: false
 ---
 
-
-{{% alert color="warning" %}}
-This content is obsolete.
-{{% /alert %}}
-
 ## Printing PDF File to Default Printer using Printer and Page Settings
 
-The [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class allows you to print a PDF file to the default printer. You need to create a PdfViewer object and open the PDF using the BindPdf method. To specify different print settings, use the PageSettings and PrinterSettings classes. Finally, call the PrintDocumentWithSettings method to print the PDF to the default printer. The following code snippet shows how to print PDF to the default printer with printer and page Settings.
+Firstly document is converted into image and then printed on the printer.
+We create an instance of the [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class that allows you to print a PDF file to the default printer, using BindPdf method for document to it, and make certain settings. In our example, we are using A4 format, portrait orientation. In the printerSettings, first of all, we indicate the name of the printer to which we are printing. Or else it will print to the default printer. Next, put down the number of copies we need.
 
+```csharp
+ public static void PrintingPDFFile()
+        {
+            // Create PdfViewer object
+            PdfViewer viewer = new PdfViewer();
 
+            // Open input PDF file
+            viewer.BindPdf(_dataDir + "sample.pdf");
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintToDefaultPrinter-PrintToDefaultPrinter.cs" >}}
+            // Set attributes for printing
+            viewer.AutoResize = true;         // Print the file with adjusted size
+            viewer.AutoRotate = true;         // Print the file with adjusted rotation
+            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+
+            // Create objects for printer and page settings and PrintDocument
+            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+            System.Drawing.Printing.PrintDocument prtdoc = new System.Drawing.Printing.PrintDocument();
+
+            // Set printer name
+            ps.PrinterName = prtdoc.PrinterSettings.PrinterName;
+
+            // Set PageSize (if required)
+            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+
+            // Set PageMargins (if required)
+            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+
+            // Print document using printer and page settings
+            viewer.PrintDocumentWithSettings(pgs, ps);
+
+            // Close the PDF file after printing
+            viewer.Close();
+        }
+```
 
 In order to display a print dialog, try using the following code snippet:
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintToDefaultPrinter-PrintDialog.cs" >}}
+```csharp
+        public static void PrintingPDFDisplayPrintDialog()
+        {
+            // Create PdfViewer object
+            PdfViewer viewer = new PdfViewer();
 
-## Printing PDF to an XPS Printer (Facades)
+            // Open input PDF file
+            viewer.BindPdf(_dataDir + "sample.pdf");
 
-You can print a PDF file to an XPS printer, or some other soft printer for that matter, using the [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class. In order to do that, create an object of the PdfViewer class and open the PDF file using the BindPdf method. You can set different print settings using the PrinterSettings and PageSettings classes. You also need to set the PrinterName property to the XPS or other soft printer you have installed.
+            // Set attributes for printing
+            viewer.AutoResize = true;         // Print the file with adjusted size
+            viewer.AutoRotate = true;         // Print the file with adjusted rotation
 
-Finally, use PrintDocumentWithSettings method to print the PDF to XPS or other soft printer. The following code snippet shows you how to print the PDF file to an XPS printer.
+            // Create objects for printer and page settings and PrintDocument
+
+            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings
+            {
+
+                // Set PageSize (if required)
+                PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169),
+
+                // Set PageMargins (if required)
+                Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0)
+            };
+
+            System.Windows.Forms.PrintDialog printDialog = new System.Windows.Forms.PrintDialog();
+            if (printDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                // Document printing code goes here
+                // Print document using printer and page settings
+                System.Drawing.Printing.PrinterSettings ps = printDialog.PrinterSettings;
+                viewer.PrintDocumentWithSettings(pgs, ps);
+            }
+
+            // Close the PDF file after priting
+            viewer.Close();
+        }
+```
+
+## Print PDF to Soft Printer
+
+There are printers that print to a file. We set the name of the virtual printer, and, by analogy with the previous example, we make the settings.
+
+```csharp
+public static void PrintingPDFToSoftPrinter()
+        {
+            // Create PdfViewer object
+            PdfViewer viewer = new PdfViewer();
+
+            // Open input PDF file
+            viewer.BindPdf(_dataDir + "sample.pdf");
+
+            // Set attributes for printing
+            viewer.AutoResize = true;         // Print the file with adjusted size
+            viewer.AutoRotate = true;         // Print the file with adjusted rotation
+            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+
+            viewer.PrintAsImage = false;
+
+            // Create objects for printer and page settings and PrintDocument
+            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+
+            // Set printer name
+            ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+            // Or set the PDF printer
+            //ps.PrinterName = "Adobe PDF";
+
+            // Set PageSize (if required)
+            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+
+            // Set PageMargins (if required)
+            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+
+            // Print document using printer and page settings
+            viewer.PrintDocumentWithSettings(pgs, ps);
+
+            // Close the PDF file after priting
+            viewer.Close();
+        }
+```
+
+## Hiding Print Dialog
+
+Aspose.PDF for .NET allows you to hide the print dialog. For this use [PrintPageDialog](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog) method.
+
+The following code snippet shows you how to hide the print dialog.
+
+```csharp
+public static void PrintingPDFHidePrintDialog()
+        {
+            // Create PdfViewer object
+            PdfViewer viewer = new PdfViewer();
+
+            // Open input PDF file
+            viewer.BindPdf(_dataDir + "sample.pdf");
+
+            // Set attributes for printing
+            viewer.AutoResize = true;         // Print the file with adjusted size
+            viewer.AutoRotate = true;         // Print the file with adjusted rotation
 
 
+            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintoXPSPrinter-PrintoXPSPrinter.cs" >}}
+            // Create objects for printer and page settings and PrintDocument
+            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
 
-When printing a PDF files that contains text and you want the contents to appear as text instead of vector graphics, please try using the following code snippets.
+            // Set XPS/PDF printer name
+            ps.PrinterName = "OneNote for Windows 10";
 
-### Fonts not Embedded
+            // Set PageSize (if required)
+            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-If the document does not contain embedded fonts, it is possible to embed system fonts into the document at the point of printing.
+            // Set PageMargins (if required)
+            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
+            // Print document using printer and page settings
+            viewer.PrintDocumentWithSettings(pgs, ps);
 
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintoXPSPrinter-FontsNotEmbedded.cs" >}}
-
-### Fonts Embedded
-
-For documents that have embedded fonts, the quality can be improved and fonts are embedded to the document. Aspose.PDF has a feature that allows you to substitute embedded fonts with system fonts.
-
-## Printing PDF to an XPS File and Hiding Print Dialog
-
-A PDF file can be printed to an XPS file, without showing any print dialog, using the [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class. In order to do that, create an object of the PdfViewer class and open the PDF file using the BindPdf method.
-
-You can set different print settings using the PrinterSettings and [PageSettings classes. You also need to set the PrinterName property to point to the XPS printer.
-
-Additionally, because you want to to print the PDF to an XPS file and hide the print dialog, set the PrintFileName and PrintToFile properties of the PrinterSettings class. Also set the PrintPageDialog property to false. Finally, use the PrintDocumentWithSettings method to print the PDF to XPS or another soft printer.
-
-The following code snippet shows you how to print the PDF file to an XPS file.
-
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintoXPSPrinter-HideDialgo.cs" >}}
+            // Close the PDF file after priting
+            viewer.Close();
+        }
+```
 
 ## Printing Color PDF to XPS File as Grayscale
 
 A color PDF document can be printed to an XPS printer as grayscale, using [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer). In order to achieve that you need to use the property PdfViewer.PrintAsGrayscale and set it to *true*. Following code snippet demonstrates the implementation of PdfViewer.PrintAsGrayscale Property.
 
+```csharp
+public static void PrintingPDFasGrayscale()
+        {
+            // Create PdfViewer object
+            PdfViewer viewer = new PdfViewer();
+
+            // Open input PDF file
+            viewer.BindPdf(_dataDir + "sample.pdf");
+
+            // Set attributes for printing
+            viewer.AutoResize = true;         // Print the file with adjusted size
+            viewer.AutoRotate = true;         // Print the file with adjusted rotation
 
 
-**C#**
+            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+            viewer.PrintAsGrayscale = false;
 
-{{< highlight java >}}
+            // Create objects for printer and page settings and PrintDocument
+            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
 
- string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+            // Set XPS/PDF printer name
+            ps.PrinterName = "OneNote for Windows 10";
 
-using (Facades.PdfViewer viewer = new Facades.PdfViewer())
+            // Set PageSize (if required)
+            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-{
+            // Set PageMargins (if required)
+            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
- string outputFile = dataDir + @"TestXPS_Out.xps";
+            // Print document using printer and page settings
+            viewer.PrintDocumentWithSettings(pgs, ps);
 
- viewer.BindPdf(dataDir + "TestDoc_Colored.pdf");
-
- viewer.PrintPageDialog = false;
-
- viewer.PrintAsGrayscale = true;
-
- System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-
- System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
-
- ps.PrinterName = "Microsoft Print to PDF";
-
- ps.PrintFileName = outputFile;
-
- ps.PrintToFile = true;
-
- pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
-
- ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
-
- viewer.PrintDocumentWithSettings(pgs, ps);
-
-}
-
-{{< /highlight >}}
+            // Close the PDF file after priting
+            viewer.Close();
+        }
+```
 
 ## PDF to PostScript conversion
 
-The [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class provides the capability to print PDF documents and with the help of this class, we can also convert PDF files to PostScript format. To convert a PDF file into PostScript, first install any PS printer and just print to file with the help of PdfViewer. You may follow the instructions specified by [the University of Hawaii](http://www.hawaii.edu/askus/637) on how to install PS printer. The following code snippet shows you how to print and convert a PDF to PostScript format.
+The [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class provides the capability to print PDF documents and with the help of this class, we can also convert PDF files to PostScript format. To convert a PDF file into PostScript, first install any PS printer and just print to file with the help of PdfViewer.
 
+The following code snippet shows you how to print and convert a PDF to PostScript format.
 
+```csharp
+public static void PrintingPDFToPostScript()
+        {
+            // Create PdfViewer object
+            PdfViewer viewer = new PdfViewer();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PdfToPostScript-PdfToPostScript.cs" >}}
+            // Open input PDF file
+            viewer.BindPdf(_dataDir + "sample.pdf");
+
+            // Set attributes for printing
+            viewer.AutoResize = true;         // Print the file with adjusted size
+            viewer.AutoRotate = true;         // Print the file with adjusted rotation
+            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+
+            viewer.PrintAsImage = false;
+
+            // Create objects for printer and page settings and PrintDocument
+            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+
+            // Set XPS/PDF printer name
+            ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+            // Set output file name and PrintToFile attribute
+            ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
+            ps.PrintToFile = true;
+
+            // Set PageSize (if required)
+            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+
+            // Set PageMargins (if required)
+            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+
+            // Print document using printer and page settings
+            viewer.PrintDocumentWithSettings(pgs, ps);
+
+            // Close the PDF file after priting
+            viewer.Close();
+        }
+```
 
 ## Checking Print Job Status
 
 A PDF file can be printed to a physical printer as well as to the Microsoft XPS Document Writer, without showing a print dialog, using the [PdfViewer](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfviewer) class. When printing large PDF files, the process might take a long time so the user might not be certain whether the printing process completed or encountered an issue. To determine the status of a printing job, use the PrintStatus property. The following code snippet shows you how to print the PDF file to an XPS file and get the printing status.
 
+```csharp
+public static void CheckingPrintJobStatus()
+        {
+            // Create PdfViewer object
+            PdfViewer viewer = new PdfViewer();
 
+            // Open input PDF file
+            viewer.BindPdf(_dataDir + "sample1.pdf");
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-CheckPrintJobStatus-CheckPrintJobStatus.cs" >}}
+            // Set attributes for printing
+            viewer.AutoResize = true;         // Print the file with adjusted size
+            viewer.AutoRotate = true;         // Print the file with adjusted rotation
+            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
 
-### Get/Set Print Job Owner name
+            viewer.PrintAsImage = false;
 
-Recently we received a requirement to get/set the print job Owner name (the actual user who pressed print button on web page). This information is required when printing the PDF file. In order to accomplish this requirement, you can use the property named PrinterJobName:
+            // Create objects for printer and page settings and PrintDocument
+            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
 
+            // Set XPS/PDF printer name
+            ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+            // Set output file name and PrintToFile attribute
+            ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
+            ps.PrintToFile = true;
 
+            // Set PageSize (if required)
+            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-CheckPrintJobStatus-GetSetPrintOwnerName.cs" >}}
+            // Set PageMargins (if required)
+            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-CheckPrintJobStatus-GetCurrentUserCredentials.cs" >}}
+            // Print document using printer and page settings
+            viewer.PrintDocumentWithSettings(pgs, ps);
 
+            // Check the print status
+            if (viewer.PrintStatus != null && viewer.PrintStatus is Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            else
+            {
+                // No errors were found. Printing job has completed successfully
+                Console.WriteLine("Printing completed without any issue..");
+            }
 
-**Using Impersonation**
+            // Close the PDF file after priting
+            viewer.Close();
+        }
 
-Another approach of getting Print Job owner name is to use impersonation (running printing routines in another user context) or user may change owner name directly by using [SetJob routine](http://msdn.microsoft.com/en-us/library/dd162978%28VS.85%29.aspx).
-
-Please note that there is no possibility to set owner value using Aspose.PDF printing API by security considerations. The property PrinterJobName may be used to set document name column value in spooler print application. Code snippet shared above just shows how the user can join user name into document name column (for example using syntax UserName\documentName). But the setting of Owner columns can be implemented in following ways directly by user:
-
-\1) Impersonation. As owner column value contains the value of user who runs the printing code, there is a way to invoke Aspose.PDF printing API inside another user context. For example please take a look on solution described [here](http://www.codeproject.com/Articles/10090/A-small-C-Class-for-impersonating-a-User). Using this class the user can reach a goal:
-
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-CheckPrintJobStatus-UsingImpersonation.cs" >}}
-
-
-
-\2) Using Spooler API and [SetJob routine](http://msdn.microsoft.com/en-us/library/dd162978%28VS.85%29.aspx)
-
-{{% alert color="primary" %}}
-
-The following links can be useful to get user credentials:
-
-- [ASP.NET Web Application Security](http://msdn.microsoft.com/en-us/library/330a99hc%28v=vs.100%29.aspx)
-- [What is Windows Identity Foundation?](http://msdn.microsoft.com/en-us/library/ee748475.aspx)
-- [Authentication and Authorization with Windows Accounts in ASP.NET](https://www.simple-talk.com/dotnet/asp.net/authentication-and-authorization-with-windows-accounts-in-asp.net/)
-
-{{% /alert %}}
+        struct PrintingJobSettings
+        {
+            public int ToPage { get; set; }
+            public int FromPage { get; set; }
+            public string OutputFile { get; set; }
+            public System.Drawing.Printing.Duplex Mode { get; set; }
+        }
+```
 
 ## Printing pages in Simplex and Duplex mode
 
-In a particular printing job, the pages of PDF document can either be printed in Duplex or in Simplex mode but you cannot print some pages as simplex and some pages as duplex within a single print job. However in order to accomplish the requirement, different page ranges and *PrintingJobSettings * object can be used. The following code snippet shows how to print some pages of PDF file in Simplex and some pages in Duplex mode.
+In a particular printing job, the pages of PDF document can either be printed in Duplex or in Simplex mode but you cannot print some pages as simplex and some pages as duplex within a single print job. However in order to accomplish the requirement, different page ranges and PrintingJobSettings object can be used. The following code snippet shows how to print some pages of PDF file in Simplex and some pages in Duplex mode.
 
+```csharp
+ public static void PrintingPagesInSimplexAndDuplexMode()
+        {
+            int printingJobIndex = 0;
+            string inPdf = _dataDir + "sample-8page.pdf";
+            string output = _dataDir;
+            IList<PrintingJobSettings> printingJobs = new List<PrintingJobSettings>();
 
+            PrintingJobSettings printingJob1 = new PrintingJobSettings
+            {
+                FromPage = 1,
+                ToPage = 3,
+                OutputFile = output + "sample_1_3.xps",
+                Mode = Duplex.Default
+            };
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintPages-PrintingJobSettings.cs" >}}
+            printingJobs.Add(printingJob1);
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintPages-PrintPages.cs" >}}
+            PrintingJobSettings printingJob2 = new PrintingJobSettings
+            {
+                FromPage = 4,
+                ToPage = 6,
+                OutputFile = output + "sample_4_6.xps",
+                Mode = Duplex.Simplex
+            };
 
-## Printing Different Page Range to Different Paper Sourcetrays
+            printingJobs.Add(printingJob2);
 
-We were asked to support printing different pages to different page trays within a printing job. The user must be able to send a document to a printer and be sure that there are no other print jobs in between pages. The document must be printed as one. To print a different page range to different paper source trays, use the PdfViewer.PdfQueryPageSettings event handler. The following code snippet shows how to print even and odd page numbers to different sources:
+            PrintingJobSettings printingJob3 = new PrintingJobSettings
+            {
+                FromPage = 7,
+                ToPage = 7,
+                OutputFile = output + "sample_7.xps",
+                Mode = Duplex.Default
+            };
 
+            printingJobs.Add(printingJob3);
 
+            PdfViewer viewer = new PdfViewer();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintPageRange-PrintPageRange.cs" >}}
+            viewer.BindPdf(inPdf);
+            viewer.AutoResize = true;
+            viewer.AutoRotate = true;
+            viewer.PrintPageDialog = false;
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Printing-PrintPageRange-PdfvOnPdfQueryPageSettings.cs" >}}
+            PrinterSettings ps = new PrinterSettings();
+            PageSettings pgs = new PageSettings();
+
+            ps.PrinterName = "Microsoft XPS Document Writer";
+            ps.PrintFileName = System.IO.Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+            ps.PrintToFile = true;
+            ps.FromPage = printingJobs[printingJobIndex].FromPage;
+            ps.ToPage = printingJobs[printingJobIndex].ToPage;
+            ps.Duplex = printingJobs[printingJobIndex].Mode;
+            ps.PrintRange = PrintRange.SomePages;
+
+            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+            ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
+            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+
+            viewer.EndPrint += (sender, args) =>
+            {
+                if (++printingJobIndex < printingJobs.Count)
+                {
+                    ps.PrintFileName = System.IO.Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+                    ps.FromPage = printingJobs[printingJobIndex].FromPage;
+                    ps.ToPage = printingJobs[printingJobIndex].ToPage;
+                    ps.Duplex = printingJobs[printingJobIndex].Mode;
+                    viewer.PrintDocumentWithSettings(pgs, ps);
+                }
+            };
+
+            viewer.PrintDocumentWithSettings(pgs, ps);
+        }
+```
