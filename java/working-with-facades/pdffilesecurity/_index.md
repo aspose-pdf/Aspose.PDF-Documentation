@@ -15,8 +15,3 @@ sitemap:
 - [Control Exception PDF File](/pdf/java/control-exception/)
 - [Change Password of PDF File](/pdf/java/change-password/)
 - [Set Privileges on an Existing PDF File](/pdf/java/set-privileges/)
-
-
-
-
-
