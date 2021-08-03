@@ -10,6 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
+- [Extract Attachments](/pdf/java/extract-attachments/)
 - [Extract Images from the Whole PDF to Files (facades)](/pdf/java/extract-images/)
 - [Extract Chart objects from PDF document (facades)](/pdf/java/extract-chart-objects/)
 - [Extract Text from the Whole PDF File (facades)](/pdf/java/extract-text/)

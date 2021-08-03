@@ -1,12 +1,14 @@
 ---
 title: Working with Attachments - Facades
 type: docs
-weight: 60
+weight: 50
 url: /net/working-with-attachments-facades/
 description: This section explains how to working with Attachments - Facades using PdfContentEditor Class.
 lastmod: "2021-06-05"
 draft: false
 ---
+
+In this section, we will explain how to work with attachments in PDF using Aspose.PDF for .NET Facades. An attachment is an additional file that is attached to a parent document, it can be a variety of file types, such as pdf, word, image, or other files. You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with C#.
 
 ## Add Attachment from a File in an Existing PDF
 
@@ -49,4 +51,4 @@ public static void AttachmentDemo02()
         editor.DeleteAttachments();
         editor.Save(_dataDir + "PdfContentEditorDemo09.pdf");
     }
-    ```
+```

@@ -8,41 +8,60 @@ lastmod: "2021-06-05"
 draft: false
 ---
 
-## Convert PDF File to Single TIFF Image (Facades)
+## Convert PDF Pages to Different Image Formats (Facades)
 
-{{% alert color="primary" %}}
+In order to convert PDF pages to different image formats, you need to create [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) object and open the PDF file using [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, you need to call [DoConvert](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/doconvert) method for initialization tasks. Then, you can loop through all the pages using [HasNextImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/hasnextimage) and [GetNextImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) methods. The [GetNextImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) method allows you to create image of a particular page. You also need to pass ImageFormat to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. Finally, call the [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/close) method of the [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class. The following code snippet shows you how to convert PDF pages to images.
 
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-tiff](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
+```csharp
+ public static void ConvertPdfPagesToImages01()
+        {
+            // Create PdfConverter object
+            PdfConverter converter = new PdfConverter();
 
-{{% /alert %}}
+            // Bind input pdf file
+            converter.BindPdf(_dataDir + "Sample-Document-01.pdf");
 
-In order to convert PDF pages to single TIFF image format, you need to create [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) object and open the PDF file using [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. After that, you need to call [DoConvert](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/doconvert) method for initialization tasks. Then, you can use [SaveAsTIFF](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/saveastiff/methods/6) method to save the PDF file as a single TIFF image. Finally, call the [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/close) method of the [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class. The following code snippet shows you how to convert PDF pages to single TIFF image.
+            // Initialize the converting process
+            converter.DoConvert();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Images-ConvertToTIFF-ConvertToTIFF.cs" >}}
+            // Check if pages exist and then convert to image one by one
+            while (converter.HasNextImage())
+                converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
-## Convert PDF File to Single TIFF Image using Settings (Facades)
+            // Close the PdfConverter object
+            converter.Close();
+        }
+```
 
-In order to convert PDF pages to single TIFF image format, you need to create [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) object and open the PDF file using [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. After that, you need to call [DoConvert](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/doconvert) method for initialization tasks. Then, you can use [SaveAsTIFF](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/saveastiff/methods/6) method to save the PDF file as a single TIFF image.
+In the next code snippet, we will show how you can change some parameters. With [CoordinateType](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/coordinatetype) we set the frame 'CropBox'. Also, we can change [Resolution](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/resolution) specifying the number of dots per inch. The next one [FormPresentationMode](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/formpresentationmode) - form presentation mode. Then we indicate the [StartPage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/startpage) with which the page number of the beginning of the conversion is set. We can also specify the last page by setting a range.
 
-You can also specify certain settings to produce a TIFF image according to your requirement. You can set the resolution of the output image using [Resolution](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/resolution/properties/index) property of the [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class. You need to set this property before [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. You can also specify other settings using [TiffSettings](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/tiffsettings) class and then pass this object to the [SaveAsTIFF](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/saveastiff/methods/6) method. Finally, call the [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/close) method of the [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class. The following code snippet shows you how to convert PDF pages to single TIFF image using Settings.
+```csharp
+  public static void ConvertPdfPagesToImages02()
+        {
+            // Create PdfConverter object
+            PdfConverter converter = new PdfConverter();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Images-ConvertToTIFFSettings-ConvertToTIFFSettings.cs" >}}
+            // Bind input pdf file
+            converter.BindPdf(_dataDir + "Sample-Document-01.pdf");
 
-{{% alert color="primary" %}}
+            // Initialize the converting process
+            converter.DoConvert();
+            converter.CoordinateType = PageCoordinateType.CropBox;
+            converter.Resolution = new Devices.Resolution(600);
+            converter.FormPresentationMode = Devices.FormPresentationMode.Production;
+            converter.StartPage = 2;
+            // converter.EndPage = 3;
+            // Check if pages exist and then convert to image one by one
+            while (converter.HasNextImage())
+                converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
-If your requirement is to save the resultant TIFF file to a specific page size, you can use the overloaded [SaveAsTIFF](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/saveastiff/methods/6) method of [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) with Aspose.Pdf.Facades.PageSize parameter. Different predefined page sizes are available as per your need e.g. A4, A3, Letter etc.
+            // Close the PdfConverter object
+            converter.Close();
+        }
+```
 
-{{% /alert %}}
+## See also
 
-## Convert particular page region to Image format
+Aspose.PDF for .NET allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn [Converting](/pdf/net/converting/) section for resolving your tasks.
 
-We know that [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class offers [DoConvert](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/doconvert) method which provides the capability to convert the whole PDF pages into Image format. However sometimes there is a requirement to convert particular page region into Image format, so in order to fulfill this requirement, we may consider using [MovePosition(..)](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/moveposition) method of [PdfPageEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) class which provides the capability to move the origin from (0, 0) to the specified point. The origin is left-bottom and the unit is point.
-
-We are also aware that [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class also contains methods which provide the capability to loop through all the pages using [HasNextImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/hasnextimage) and [GetNextImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) methods. The [GetNextImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) method allows you to create image of a particular page. You also need to pass ImageFormat to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. Finally, call the [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/close) method of the [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class.
-{{% alert color="primary" %}}
-1 inch = 72 points and 1 cm = 1/2.54 inch = 0.3937 inch = 28.3 points.
-{{% /alert %}}
-The following code snippet shows you how to convert PDF pages to images.
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Images-ConvertPageRegion-ConvertPageRegion.cs" >}}
 

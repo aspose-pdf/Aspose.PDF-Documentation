@@ -1,6 +1,6 @@
 ---
 title: Save PDF document programmatically
-linktitle: Save
+linktitle: Save PDF
 type: docs
 weight: 30
 url: /net/save-pdf-document/

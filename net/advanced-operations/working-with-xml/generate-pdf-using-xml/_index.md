@@ -409,6 +409,161 @@ public static void Example_XSLFO_to_PDF()
 }
 ```
 
+### Generating PDF document using XSL-FO markup and XSL params
+
+Sometimes we need to use [<XSL:param>](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param). The `<xsl:param>` element establishes a parameter by name and, optionally, a default value for that parameter.
+
+Let's take the same example as in the previous case, but with minor changes (adding params). The XML file with sample data stays untouched, ...
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<employees>
+    <companyname>ABC Inc.</companyname>
+    <employee>
+        <id>101</id>
+        <name>Andrew</name>
+        <designation>Manager</designation>
+    </employee>
+
+    <employee>
+        <id>102</id>
+        <name>Eduard</name>
+        <designation>Executive</designation>
+    </employee>
+
+    <employee>
+        <id>103</id>
+        <name>Peter</name>
+        <designation>Executive</designation>
+    </employee>
+</employees>
+```
+
+but in XSL-FO markup file we will add parameter: `<xsl:param name="isBoldName"></xsl:param>` add will apply it to the `Name` column.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format" exclude-result-prefixes="fo">
+
+ <xsl:param name="isBoldName"></xsl:param>
+
+ <xsl:template match="employees">
+  <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <fo:layout-master-set>
+    <fo:simple-page-master master-name="simpleA4" page-height="29.7cm" page-width="21cm" margin-top="2cm" margin-bottom="2cm" margin-left="2cm" margin-right="2cm">
+     <fo:region-body/>
+    </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="simpleA4">
+    <fo:flow flow-name="xsl-region-body">
+     <fo:block font-size="16pt" font-weight="bold" space-after="5mm">
+      Company Name: <xsl:value-of select="companyname"/>
+     </fo:block>
+     <fo:block font-size="10pt">
+      <fo:table table-layout="fixed" width="100%" border-collapse="separate">
+              <fo:table-column column-width="4cm"/>
+       <fo:table-column column-width="4cm"/>
+       <fo:table-column column-width="5cm"/>
+       <fo:table-body>
+        <xsl:apply-templates select="employee"/>
+       </fo:table-body>
+      </fo:table>
+     </fo:block>
+    </fo:flow>
+   </fo:page-sequence>
+  </fo:root>
+ </xsl:template>
+ <xsl:template match="employee">
+  <fo:table-row>
+   <xsl:if test="designation = 'Manager'">
+    <xsl:attribute name="font-weight">bold</xsl:attribute>
+   </xsl:if>
+   <fo:table-cell>
+    <fo:block>
+     <xsl:value-of select="id"/>
+    </fo:block>
+   </fo:table-cell>
+
+   <fo:table-cell>
+    <xsl:if test="$isBoldName='yes'">
+     <xsl:attribute name="font-weight">bold</xsl:attribute>
+    </xsl:if>
+    <fo:block>
+     <xsl:value-of select="name"/>
+    </fo:block>
+   </fo:table-cell>
+   <fo:table-cell>
+    <fo:block>
+     <xsl:value-of select="designation"/>
+    </fo:block>
+   </fo:table-cell>
+  </fo:table-row>
+ </xsl:template>
+</xsl:stylesheet>
+```
+
+To add XSL params we need to create own [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) and
+set as property in [XslFoLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
+The following snippet shows how to use this class with the sample files described above.
+
+```csharp
+public static void Example_XSLFO_to_PDF_Param_21_7()
+{
+  string xmlInputFile = Path.Combine(_dataDir, "employees.xml");
+  string xsltInputFile = Path.Combine(_dataDir, "employees.xslt");
+  string outputFile = Path.Combine(_dataDir, "out.pdf");
+
+  XslFoLoadOptions options = new XslFoLoadOptions(xsltInputFile);
+
+  options.XsltArgumentList = new XsltArgumentList();
+  options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+
+  Document document = new Document(xmlInputFile, options);
+  document.Save(outputFile);
+}
+```
+
+If you use version earlier than 21.7, please use following techinque:
+
+```csharp
+  public static void Example_XSLFO_to_PDF_Param_21_6()
+  {
+      var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
+      var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+
+      var options = new Aspose.Pdf.XslFoLoadOptions();     
+      var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
+      pdfDocument.Save(_dataDir + "data_xml.pdf");
+  }
+
+  public static MemoryStream TransformXSL(string inputXml, string xsltString)
+  {
+      var transform = new XslCompiledTransform();
+
+      //Create own XsltArgumentList
+      XsltArgumentList argsList = new XsltArgumentList();
+      argsList.AddParam("isBoldName", "", "no");
+      //---------------------
+
+      using (var reader = XmlReader.Create(new StringReader(xsltString)))
+      {
+          transform.Load(reader);
+      }
+      var memoryStream = new MemoryStream();
+
+      var results = new StreamWriter(memoryStream);
+      using (var reader = XmlReader.Create(new StringReader(inputXml)))
+      {
+          transform.Transform(reader, argsList, results);
+      }
+
+      memoryStream.Position = 0;
+      return memoryStream;
+  }
+}
+```
+
 ## Generating PDF document based on Aspose.PDF XML Schema
 
 Another way to create a PDF document from XML is using the Aspose.PDF XML Schema. Using this diagram, you can describe the page layout in the same way as if you were using a table layout in HTML. Let's consider the work of this method in more detail.
