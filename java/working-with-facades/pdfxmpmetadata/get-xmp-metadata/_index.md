@@ -2,7 +2,7 @@
 title: Get XMP Metadata of an existing PDF File - facades
 type: docs
 weight: 10
-url: /java/get-xmp-netadata/
+url: /java/get-xmp-metadata/
 description: This section explains how to get xmp metadata with Aspose.PDF Facades using PdfXmpMetadata Class.
 lastmod: "2021-06-05"
 sitemap:
