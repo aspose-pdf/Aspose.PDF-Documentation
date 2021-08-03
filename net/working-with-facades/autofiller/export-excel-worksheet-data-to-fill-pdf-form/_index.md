@@ -56,8 +56,83 @@ autoFiller.ImportDataTable(dataTable);
 autoFiller.Save();
 ```
 
-For information on how to export worksheet data please visit Exporting Data from Worksheets
-For information on filling form fields using please visit  AutoFiller.
+For filling from XLSX please use next code snippet:
+
+```csharp
+internal static void FillFromXLSX()
+        {
+            // Create an object of AutoFiller class
+            AutoFiller autoFiller = new AutoFiller();
+            // The input pdf file that contains form fields
+            autoFiller.BindPdf(@"C:\Samples\Facades\Autofiller\Sample-Form-01.pdf");
+
+            DataTable dataTable = GenerateDataTable();
+
+            // Call the method to import the data from DataTable object into Pdf form fields.
+            autoFiller.ImportDataTable(dataTable);
+
+
+            // The resultant pdf, that will contain the form fields filled with information from DataTable
+            autoFiller.Save(@"C:\Samples\Facades\Autofiller\Sample-Form-01_mod.pdf");
+
+        }
+```
+
+Aspose.PDF for .NET allows you to generate Data Table in PDF document:
+
+```csharp
+private static DataTable GenerateDataTable()
+        {
+            string[] names = new[] { "Olivia", "Oliver", "Amelia", "George", "Isla", "Harry", "Ava", "Noah" };
+            // Create a new DataTable.
+            System.Data.DataTable table = new DataTable("Students");
+            // Declare variables for DataColumn and DataRow objects.
+            DataColumn column;
+            DataRow row;
+
+            // Create new DataColumn, set DataType,
+            // ColumnName and add to DataTable.
+            column = new DataColumn
+            {
+                DataType = System.Type.GetType("System.Int32"),
+                ColumnName = "id",
+                ReadOnly = true,
+                Unique = true
+            };
+            // Add the Column to the DataColumnCollection.
+            table.Columns.Add(column);
+
+            // Create second column.
+            column = new DataColumn
+            {
+                DataType = System.Type.GetType("System.String"),
+                ColumnName = "First Name",
+                AutoIncrement = false,
+                Caption = "First Name",
+                ReadOnly = false,
+                Unique = false
+            };
+            // Add the column to the table.
+            table.Columns.Add(column);
+
+            // Make the ID column the primary key column.
+            DataColumn[] PrimaryKeyColumns = new DataColumn[1];
+            PrimaryKeyColumns[0] = table.Columns["id"];
+            table.PrimaryKey = PrimaryKeyColumns;
+
+            // Create three new DataRow objects and add
+            // them to the DataTable
+            var rand = new Random();
+            for (int i = 1; i <= 4; i++)
+            {
+                row = table.NewRow();
+                row["id"] = i;
+                row["First Name"] = names[rand.Next(names.Length)];
+                table.Rows.Add(row);
+            }
+            return table;
+        }
+```
 
 ## Conclusion
 
