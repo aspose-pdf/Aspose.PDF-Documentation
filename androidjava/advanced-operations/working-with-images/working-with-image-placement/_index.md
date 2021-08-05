@@ -3,7 +3,7 @@ title: Working with Image Placement
 linktitle: Image Placement
 type: docs
 weight: 50
-url: /java/working-with-image-placement/
+url: /androidjava/working-with-image-placement/
 description: This section describes the features of working with image placement PDF file using Java library.
 lastmod: "2021-06-05"
 ---

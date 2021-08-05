@@ -2,7 +2,7 @@
 title: Working with Headings in PDF
 type: docs
 weight: 70
-url: /java/working-with-headings/
+url: /androidjava/working-with-headings/
 lastmod: "2021-06-05"
 description: Create numbering in heading your PDF document with Java. Aspose.PDF for Java offers different kinds of numbering styles.
 sitemap:

@@ -3,7 +3,7 @@ title: Formatting PDF Document using Aspose.PDF for Java
 linktitle: Formatting PDF Document
 type: docs
 weight: 20
-url: /java/formatting-pdf-document/
+url: /androidjava/formatting-pdf-document/
 description: Format the PDF Document with Aspose.PDF for Java. Use the next code snippet to resolve your tasks.
 lastmod: "2021-06-05"
 ---

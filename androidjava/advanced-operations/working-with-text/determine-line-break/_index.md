@@ -3,7 +3,7 @@ title: Determine Line Break
 linktitle: Determine Line Break
 type: docs
 weight: 70
-url: /java/determine-line-break/
+url: /androidjava/determine-line-break/
 description: Learn more about how to determinate a line break of multi-line TextFragment.
 lastmod: "2021-06-05"
 sitemap:

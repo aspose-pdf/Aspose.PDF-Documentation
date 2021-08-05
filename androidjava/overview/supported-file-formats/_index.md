@@ -3,7 +3,7 @@ title: Aspose.PDF Supported File Formats
 linktitle: Supported File Formats
 type: docs
 weight: 10
-url: /android-via-java/supported-file-formats/
+url: /androidjava/supported-file-formats/
 description: This page shows which Aspose.PDF for Java can load and save file formats.
 lastmod: "2021-06-05"
 sitemap:

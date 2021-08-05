@@ -3,7 +3,7 @@ title: Extracting raw text from PDF file using Java
 linktitle: Extract text from PDF
 type: docs
 weight: 10
-url: /java/extract-text-from-all-pdf/
+url: /androidjava/extract-text-from-all-pdf/
 description: This article describes various ways to extract text from PDF documents using Aspose.PDF for Java. From entire pages, from a specific part, based on columns, etc.
 lastmod: "2021-06-05"
 sitemap:

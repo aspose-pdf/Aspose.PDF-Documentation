@@ -3,7 +3,7 @@ title: Extract Table Data from PDF using Java
 linktitle: Extract Table Data
 type: docs
 weight: 40
-url: /android-via-java/extract-data-from-table-in-pdf/
+url: /androidjava/extract-data-from-table-in-pdf/
 description: Learn how to extract tabular from PDF using Aspose.PDF for Java
 lastmod: "2021-06-05"
 sitemap:

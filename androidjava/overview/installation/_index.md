@@ -3,7 +3,7 @@ title: Install Aspose.PDF for Java
 linktitle: Installation
 type: docs
 weight: 40
-url: /android-via-java/installation/
+url: /androidjava/installation/
 description: This section shows a product description and instructions for installing Aspose.PDF for Java on your own, as well as using NuGet.
 lastmod: "2021-06-05"
 sitemap:

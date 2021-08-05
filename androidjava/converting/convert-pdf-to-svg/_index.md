@@ -3,7 +3,7 @@ title: Convert PDF to SVG
 linktitle: Convert PDF to SVG
 type: docs
 weight: 60
-url: /java/convert-pdf-to-svg/
+url: /androidjava/convert-pdf-to-svg/
 lastmod: "2021-06-05"
 description: Aspose.PDF for Java supports the feature to convert SVG images to PDF format using SvgSaveOptions class.
 sitemap:

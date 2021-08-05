@@ -3,7 +3,7 @@ title: Change PDF Page Size Programmatically with Java
 linktitle: Change PDF Page Size
 type: docs
 weight: 50
-url: /java/change-page-size/
+url: /androidjava/change-page-size/
 description: Change Page Size from your PDF file using Java library.
 lastmod: "2021-06-05"
 sitemap:

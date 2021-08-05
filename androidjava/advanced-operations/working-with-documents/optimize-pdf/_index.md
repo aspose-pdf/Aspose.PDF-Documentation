@@ -2,7 +2,7 @@
 title: Optimize PDF Document
 type: docs
 weight: 40
-url: /java/optimize-pdf/
+url: /androidjava/optimize-pdf/
 description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with Java.
 lastmod: "2021-06-05"
 ---

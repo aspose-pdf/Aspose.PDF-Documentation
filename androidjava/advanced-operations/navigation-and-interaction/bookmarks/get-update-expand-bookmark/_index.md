@@ -3,7 +3,7 @@ title: Get, Update and Expand a Bookmark using Aspose.PDF for Java
 linktitle: Get, Update and Expand a Bookmark
 type: docs
 weight: 20
-url: /java/get-update-and-expand-bookmark/
+url: /androidjava/get-update-and-expand-bookmark/
 description: This article describes how to use bookmarks in a PDF file. With our Java library, you can get bookmarks from the PDF file, get a bookmarks page number, update bookmarks in a PDF Document, and expand bookmarks when viewing a document.
 lastmod: "2021-06-05"
 sitemap:

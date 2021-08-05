@@ -3,7 +3,7 @@ title: Convert MHTML to PDF
 linktitle: Convert MHTML to PDF 
 type: docs
 weight: 290
-url: /java/convert-mhtml-to-pdf/
+url: /androidjava/convert-mhtml-to-pdf/
 lastmod: "2021-06-05"
 description: This article describes how to convert MHT or MHTML files to PDF format programmatically with Aspose.PDF for Java.
 sitemap:

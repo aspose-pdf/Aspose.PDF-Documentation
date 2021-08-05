@@ -3,7 +3,7 @@ title: Extract Data Form
 linktitle: Extract Data Form
 type: docs
 weight: 30
-url: /java/extract-form/
+url: /androidjava/extract-form/
 description: This section explains how to extract forms from your PDF document with Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Key Features of Aspose.PDF
 linktitle: Key Features
 type: docs
 weight: 20
-url: /android-via-java/key-features/
+url: /androidjava/key-features/
 description: Aspose.PDF for Java demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, annotations, documents, etc.
 lastmod: "2021-06-05"
 sitemap:

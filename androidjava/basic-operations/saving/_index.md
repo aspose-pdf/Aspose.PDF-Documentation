@@ -3,7 +3,7 @@ title: Save PDF Document using Java
 linktitle: Save 
 type: docs
 weight: 30
-url: /java/save-pdf-document/
+url: /androidjava/save-pdf-document/
 description: Learn how to save PDF file with Aspose.PDF for Java library. 
 lastmod: "2021-06-05"
 sitemap:

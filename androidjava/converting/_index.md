@@ -3,7 +3,7 @@ title: Convert PDF documents
 linktitle: Convert PDF documents
 type: docs
 weight: 50
-url: /android-via-java/converting/
+url: /androidjava/converting/
 lastmod: "2021-06-05"
 description: This section contains a description of all possible options for converting PDF documents on Java using Aspose.PDF library.
 sitemap:

@@ -3,7 +3,7 @@ title: Working with Bookmarks in PDF
 linktitle: Bookmarks
 type: docs
 weight: 30
-url: /java/bookmarks/
+url: /androidjava/bookmarks/
 description: This section explain how to add, delete and get bookmark with Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

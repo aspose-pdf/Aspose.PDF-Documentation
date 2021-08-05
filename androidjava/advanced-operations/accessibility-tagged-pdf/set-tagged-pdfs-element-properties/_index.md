@@ -3,7 +3,7 @@ title: Setting Structure Elements Properties in Tagged PDF
 linktitle: Setting Structure Elements Properties
 type: docs
 weight: 30
-url: /java/set-tagged-pdfs-element-properties/
+url: /androidjava/set-tagged-pdfs-element-properties/
 description: With Aspose.PDF for Java, you may set different Structure Elements Properties. There are setting Text Block Structure Elements, setting Inline Structure Elements, adding Structure Element into Elements and etc.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Adding Attachment to PDF document
 linktitle: Adding Attachment to PDF document 
 type: docs
 weight: 10
-url: /java/add-attachment-to-pdf-document/
+url: /androidjava/add-attachment-to-pdf-document/
 description: This page describes how to add an attachment to a PDF file with Java.
 lastmod: "2021-06-05"
 sitemap:

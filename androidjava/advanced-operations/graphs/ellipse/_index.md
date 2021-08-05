@@ -3,7 +3,7 @@ title: Add Ellipse Object to PDF file
 linktitle: Add Ellipse
 type: docs
 weight: 60
-url: /java/add-ellipse/
+url: /androidjava/add-ellipse/
 description: This article explains how to create a Ellipse object to your PDF using Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

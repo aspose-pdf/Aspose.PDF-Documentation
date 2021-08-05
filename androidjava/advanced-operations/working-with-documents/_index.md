@@ -3,7 +3,7 @@ title: Working with PDF Documents
 linktitle: Working with Documents
 type: docs
 weight: 10
-url: /android-via-java/working-with-documents/
+url: /androidjava/working-with-documents/
 lastmod: "2021-06-05"
 description: This article describes to you what manipulations can be done with the document with Aspose.PDF for Java.
 sitemap:

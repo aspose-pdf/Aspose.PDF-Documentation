@@ -3,7 +3,7 @@ title: Manipulate PDF Document using Aspose.PDF for Java
 linktitle: Manipulate PDF Document
 type: docs
 weight: 30
-url: /java/manipulate-pdf-document/
+url: /androidjava/manipulate-pdf-document/
 description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and how to determine the Progress of PDF file generation.
 lastmod: "2021-06-05"
 ---

@@ -3,7 +3,7 @@ title: Working with Attachments in PDF using Java
 linktitle: Working with Attachments
 type: docs
 weight: 130
-url: /android-via-java/attachments/
+url: /androidjava/attachments/
 description: Use Java PDF API to access, add and remove attachments in PDF files using Java from within your applications. Complete guide with Java code samples.
 lastmod: "2021-06-05"
 sitemap:

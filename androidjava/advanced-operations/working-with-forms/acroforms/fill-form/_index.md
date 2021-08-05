@@ -3,7 +3,7 @@ title: Fill Form
 linktitle: Fill Form
 type: docs
 weight: 20
-url: /java/fill-form/
+url: /androidjava/fill-form/
 description: This section explains how to fill form field in a PDF document with Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

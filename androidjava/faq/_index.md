@@ -3,7 +3,7 @@ title: FAQ
 linktitle: FAQ
 type: docs
 weight: 120
-url: /android-via-java/faq/
+url: /androidjava/faq/
 lastmod: "2021-06-17"
 sitemap:
     changefreq: "weekly"

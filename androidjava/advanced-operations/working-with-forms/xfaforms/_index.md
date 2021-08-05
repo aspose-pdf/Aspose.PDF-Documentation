@@ -3,7 +3,7 @@ title: Working with XFA Forms in PDF using Aspose.PDF for Java
 linktitle: XFA Forms
 type: docs
 weight: 20
-url: /java/xfa-forms/
+url: /androidjava/xfa-forms/
 description: With Aspose.PDF for Java you may create a form from scratch, fill the form field in a PDF document, extract data from the form, add or remove fields in the existing form.
 lastmod: "2021-06-05"
 sitemap:

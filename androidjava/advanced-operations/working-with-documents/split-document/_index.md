@@ -3,7 +3,7 @@ title: Split PDF programmatically
 linktitle: Split PDF files
 type: docs
 weight: 60
-url: /java/split-document/
+url: /androidjava/split-document/
 description: This topic shows how to split PDF pages into individual PDF files in your Java applications. 
 lastmod: "2021-06-05"
 sitemap:

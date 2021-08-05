@@ -3,7 +3,7 @@ title: Merge PDF programmatically
 linktitle: Merge PDF files
 type: docs
 weight: 50
-url: /java/merge-pdf-documents/
+url: /androidjava/merge-pdf-documents/
 description: This page explain how to merge PDF documents into a single PDF file with Java.
 lastmod: "2021-06-05"
 ---

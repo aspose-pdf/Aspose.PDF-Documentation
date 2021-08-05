@@ -3,7 +3,7 @@ title: Licensing and limitations
 linktitle: Licensing and limitations
 type: docs
 weight: 50
-url: /android-via-java/licensing/
+url: /androidjava/licensing/
 description: Aspose. PDF for Java invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product. 
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: /android-via-java/annotations/
+url: /androidjava/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library. Learn how to draw, open, or add an annotation with Android via Java.
 lastmod: "2021-06-05"    
 sitemap:

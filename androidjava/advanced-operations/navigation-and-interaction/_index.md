@@ -3,7 +3,7 @@ title: Navigation and Interaction in PDF using Aspose.PDF for Java
 linktitle: Navigation and interaction
 type: docs
 weight: 90
-url: /android-via-java/navigation-and-interaction/
+url: /androidjava/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks.
 lastmod: "2021-06-05"
 sitemap:

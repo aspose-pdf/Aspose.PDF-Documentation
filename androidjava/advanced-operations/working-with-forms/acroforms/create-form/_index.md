@@ -3,7 +3,7 @@ title: Create Forms
 linktitle: Create Forms
 type: docs
 weight: 10
-url: /java/create-forms/
+url: /androidjava/create-forms/
 description: This section explains how to create AcroForms from scratch in your PDF documents with Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Add background to PDF with Java
 linktitle: Add backgrounds
 type: docs
 weight: 110
-url: /java/add-backgrounds/
+url: /androidjava/add-backgrounds/
 descriptions: Add background image to the your PDF file with Java. Use the BackgroundArtifact object.
 lastmod: "2021-06-05"
 sitemap:

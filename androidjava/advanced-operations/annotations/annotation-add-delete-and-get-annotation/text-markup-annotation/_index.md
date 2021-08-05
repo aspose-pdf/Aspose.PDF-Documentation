@@ -3,7 +3,7 @@ title: PDF Text Markup Annotation
 linktitle: Add Text Markup Annotation
 type: docs
 weight: 70
-url: /java/text-markup-annotation/
+url: /androidjava/text-markup-annotation/
 description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document. 
 lastmod: "2021-06-05"
 sitemap:

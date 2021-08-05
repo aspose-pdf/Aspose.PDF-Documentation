@@ -3,7 +3,7 @@ title: Add Text to PDF file uisng Java
 linktitle: Add Text to PDF file
 type: docs
 weight: 10
-url: /java/add-text-to-pdf-file/
+url: /androidjava/add-text-to-pdf-file/
 description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
 lastmod: "2021-06-05"
 sitemap:

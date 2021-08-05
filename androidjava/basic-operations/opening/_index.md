@@ -3,7 +3,7 @@ title: Open PDF Document using Java
 linktitle: Open
 type: docs
 weight: 20
-url: /java/open-pdf-document/
+url: /androidjava/open-pdf-document/
 description: Learn how to open a PDF file with Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

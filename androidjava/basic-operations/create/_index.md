@@ -3,7 +3,7 @@ title: Create PDF Document using Java
 linktitle: Create
 type: docs
 weight: 10
-url: /java/create-document/
+url: /androidjava/create-document/
 description: Learn how to create PDF file in Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

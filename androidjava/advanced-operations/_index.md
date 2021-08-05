@@ -3,7 +3,7 @@ title: Advanced operations
 linktitle: Advanced operations 
 type: docs
 weight: 70
-url: /android-via-java/advanced-operations/
+url: /androidjava/advanced-operations/
 description: Aspose.PDF for Android via Java can perform not only simple and easy tasks but also cope with more complex functions. For advanced users and developers, the Advanced section will detail these features for you.
 lastmod: "2021-06-05"
 sitemap:

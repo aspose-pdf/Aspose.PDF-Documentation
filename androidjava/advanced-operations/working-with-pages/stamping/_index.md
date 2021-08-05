@@ -3,7 +3,7 @@ title: Stamping with Aspose.PDF for Java
 linktitle: Stamping
 type: docs
 weight: 120
-url: /java/stamping/
+url: /androidjava/stamping/
 description: This section describes how to add image stamps and text stamps to a PDF page.
 lastmod: "2021-06-05"
 sitemap:

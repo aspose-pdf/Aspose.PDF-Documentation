@@ -3,7 +3,7 @@ title: Crop PDF Pages programmatically Java
 linktitle: Crop Pages
 type: docs
 weight: 80
-url: /java/crop-pages/
+url: /androidjava/crop-pages/
 description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

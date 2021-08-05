@@ -3,7 +3,7 @@ title: Convert Markdown to PDF
 linktitle: Convert Markdown to PDF
 type: docs
 weight: 270
-url: /java/convert-markdown-to-pdf/
+url: /androidjava/convert-markdown-to-pdf/
 lastmod: "2021-06-05"
 description: This article discribes that Aspose.PDF for Java allows to create a PDF document based on input Markdown data file.
 sitemap:

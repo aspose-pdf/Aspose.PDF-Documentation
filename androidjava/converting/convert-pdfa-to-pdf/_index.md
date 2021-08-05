@@ -3,7 +3,7 @@ title: Convert PDF/A to PDF
 linktitle: Convert PDF/A to PDF
 type: docs
 weight: 350
-url: /java/convert-pdfa-to-pdf/
+url: /androidjava/convert-pdfa-to-pdf/
 lastmod: "2021-06-05"
 description: To convert PDF/A to PDF you should remove restrictions from the original document. Aspose.PDF for Java allows you to solve this problem easly and simply.
 sitemap:

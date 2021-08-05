@@ -3,7 +3,7 @@ title: PDF Square/Circle Annotations
 linktitle: Square/Circle Annotations
 type: docs
 weight: 50
-url: /java/square-and-circle-annotations/
+url: /androidjava/square-and-circle-annotations/
 description: This article describes how to add, get, and delete the Square and Circle annotations from your PDF document with Aspose.PDF for Java
 lastmod: "2021-06-05"
 sitemap:

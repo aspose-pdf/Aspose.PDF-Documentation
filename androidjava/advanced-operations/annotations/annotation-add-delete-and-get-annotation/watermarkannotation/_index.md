@@ -3,7 +3,7 @@ title: PDF Watermark Annotation
 linktitle: Watermark Annotation
 type: docs
 weight: 130
-url: /java/watermark-annotation/
+url: /androidjava/watermark-annotation/
 description: The Watermark Annotation in the text uses to represent graphics on the page. Check code snippet to resolve this task. 
 lastmod: "2021-06-05"
 sitemap:

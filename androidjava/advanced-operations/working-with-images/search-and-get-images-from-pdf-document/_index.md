@@ -3,7 +3,7 @@ title: Search and Get Images from PDF Document
 linktitle: Search and Get Images
 type: docs
 weight: 60
-url: /java/search-and-get-images-from-pdf-document/
+url: /androidjava/search-and-get-images-from-pdf-document/
 description: This section explain how to search and get images from PDF document with Aspose.PDF for Java library.
 lastmod: "2021-06-05"
 ---

@@ -3,7 +3,7 @@ title: Convert XPS to PDF
 linktitle: Convert XPS to PDF
 type: docs
 weight: 330
-url: /java/convert-xps-to-pdf/
+url: /androidjava/convert-xps-to-pdf/
 lastmod: "2021-06-05"
 description: Aspose.PDF for Java allows you to convert XPS to PDF files with a class named XpsLoadOptions. Check code snippet to solve this task. 
 sitemap:

@@ -3,7 +3,7 @@ title: Modifying Form
 linktitle: Modifying Form
 type: docs
 weight: 40
-url: /java/modifing-form/
+url: /androidjava/modifing-form/
 description: This section explains how to modifying forms in your PDF document with Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF Ink Annotation with Java
 linktitle: Ink Annotation
 type: docs
 weight: 100
-url: /java/ink-annotation/
+url: /androidjava/ink-annotation/
 description: This page describes how to add an Ink Annotation to a PDF file. Also, you can customize the Ink Annotation.
 lastmod: "2021-06-05"
 sitemap:

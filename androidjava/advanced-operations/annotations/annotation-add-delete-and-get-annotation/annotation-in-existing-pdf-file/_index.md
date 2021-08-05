@@ -3,7 +3,7 @@ title: PDF Text Annotation
 linktitle: PDF Text Annotation
 type: docs
 weight: 10
-url: /java/pdf-annotation-in-existing-pdf-file/
+url: /androidjava/pdf-annotation-in-existing-pdf-file/
 description: This page describes how to add an annotation in an existing PDF file. Also, you may delete all or particular annotations from a page of a PDF file.
 lastmod: "2021-06-05"
 sitemap:

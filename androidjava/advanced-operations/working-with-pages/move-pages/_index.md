@@ -3,7 +3,7 @@ title: Move PDF Pages with Java
 linktitle: Move PDF Pages
 type: docs
 weight: 20
-url: /java/move-pages/
+url: /androidjava/move-pages/
 description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

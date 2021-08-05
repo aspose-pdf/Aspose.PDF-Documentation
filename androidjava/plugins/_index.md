@@ -2,7 +2,7 @@
 title: Plugins
 type: docs
 weight: 100
-url: /android-via-java/plugins/
+url: /androidjava/plugins/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

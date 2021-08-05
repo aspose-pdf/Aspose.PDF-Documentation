@@ -3,7 +3,7 @@ title: Convert HTML to PDF
 linktitle: Convert HTML to PDF
 type: docs
 weight: 280
-url: /java/convert-html-to-pdf/
+url: /androidjava/convert-html-to-pdf/
 lastmod: "2021-06-05"
 description: You can convert HTML to PDF in a way convenient for you, in a quick way, and in an advanced way. Also, the way is described here Convert Web page to PDF.
 sitemap:

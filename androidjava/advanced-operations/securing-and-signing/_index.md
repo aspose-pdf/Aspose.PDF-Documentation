@@ -3,7 +3,7 @@ title: Securing and signing PDF documents
 linktitle: Securing and signing in PDF
 type: docs
 weight: 150
-url: /android-via-java/securing-and-signing/
+url: /androidjava/securing-and-signing/
 description: This section describes the features of using a signature and securing your PDF document.
 lastmod: "2021-06-05"
 sitemap:

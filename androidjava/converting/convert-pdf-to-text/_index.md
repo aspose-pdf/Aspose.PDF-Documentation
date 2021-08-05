@@ -3,7 +3,7 @@ title: Convert PDF to text
 linktitle: Convert PDF to text
 type: docs
 weight: 120
-url: /java/convert-pdf-to-txt/
+url: /androidjava/convert-pdf-to-txt/
 lastmod: "2021-06-05"
 description: With Aspose.PDF for Java you can convert a whole PDF document to a text file or convert only a PDF page to a text file.
 sitemap:

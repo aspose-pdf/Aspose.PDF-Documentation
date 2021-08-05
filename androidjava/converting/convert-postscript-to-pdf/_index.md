@@ -3,7 +3,7 @@ title: Convert PostScript to PDF
 linktitle: Convert PostScript to PDF
 type: docs
 weight: 370
-url: /java/convert-postscript-to-pdf/
+url: /androidjava/convert-postscript-to-pdf/
 lastmod: "2021-06-05"
 description: Conversion PostScript to PDF format is possible with Java library. Aspose.PDF allows you to use PsLoadOptions class for this task.
 sitemap:

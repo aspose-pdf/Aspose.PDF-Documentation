@@ -3,7 +3,7 @@ title: Working with Text in PDF
 linktitle: Working with Text
 type: docs
 weight: 30
-url: /java/working-with-text/
+url: /androidjava/working-with-text/
 description: This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF and Java.
 lastmod: "2021-06-05"
 sitemap:

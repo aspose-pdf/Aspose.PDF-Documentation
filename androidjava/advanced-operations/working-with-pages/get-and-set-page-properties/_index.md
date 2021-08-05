@@ -2,7 +2,7 @@
 title: Get and Set Page Properties
 type: docs
 weight: 30
-url: /java/get-and-set-page-properties/
+url: /androidjava/get-and-set-page-properties/
 description: This topic explain how to get numbers in PDF file, get page properties and determine page color using Aspose.PDF for Java.
 lastmod: "2021-06-05"
 ---

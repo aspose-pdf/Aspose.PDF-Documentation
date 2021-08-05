@@ -3,7 +3,7 @@ title: Working with Table in Tagged PDFs
 linktitle: Working with Table in Tagged PDFs
 type: docs
 weight: 40
-url: /java/working-with-table-in-tagged-pdfs/
+url: /androidjava/working-with-table-in-tagged-pdfs/
 description: This article explains how to works with table in Tagged PDF document with Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Add Rectangle Object to PDF file
 linktitle: Add Rectangle
 type: docs
 weight: 50
-url: /java/add-rectangle/
+url: /androidjava/add-rectangle/
 description: This article explains how to create a Rectangle object to your PDF using Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

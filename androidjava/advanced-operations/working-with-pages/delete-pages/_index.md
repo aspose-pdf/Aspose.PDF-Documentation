@@ -3,7 +3,7 @@ title: Delete PDF Pages programmatically Java
 linktitle: Delete PDF Pages
 type: docs
 weight: 40
-url: /java/delete-pages/
+url: /androidjava/delete-pages/
 description: You can delete pages from your PDF file using Java library.
 lastmod: "2021-06-05"
 sitemap:

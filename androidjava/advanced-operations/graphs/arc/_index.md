@@ -3,7 +3,7 @@ title: Add Arc Object to PDF file
 linktitle: Add Arc
 type: docs
 weight: 10
-url: /java/add-arc/
+url: /androidjava/add-arc/
 description: This article explains how to create a arc object to your PDF using Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

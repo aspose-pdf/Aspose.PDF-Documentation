@@ -3,7 +3,7 @@ title: Convert LaTeX/TeX to PDF
 linktitle: Convert LaTeX/TeX to PDF
 type: docs
 weight: 310
-url: /java/convert-latex-tex-to-pdf/
+url: /androidjava/convert-latex-tex-to-pdf/
 lastmod: "2021-06-05"
 description: This page describes the use of files in the LaTeX format. Also, article explains how to convert LaTeX files to PDF format with Aspose.PDf for Java library. 
 sitemap:

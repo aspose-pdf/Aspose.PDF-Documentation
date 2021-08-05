@@ -3,7 +3,7 @@ title: Extract Tagged Content from PDF
 linktitle: Extract Tagged Content
 type: docs
 weight: 20
-url: /java/extract-tagged-content-from-tagged-pdfs/
+url: /androidjava/extract-tagged-content-from-tagged-pdfs/
 description: This article explains how to extract tagged content PDF document using Aspose.PDF for Java
 lastmod: "2021-06-05"
 sitemap:

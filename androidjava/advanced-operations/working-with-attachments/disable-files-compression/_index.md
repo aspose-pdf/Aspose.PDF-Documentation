@@ -3,7 +3,7 @@ title: Disable Files Compression when Adding as Embedded Resources
 linktitle: Disable Files Compression
 type: docs
 weight: 40
-url: /java/disable-files-compression-when-adding-as-embedded-resources/
+url: /androidjava/disable-files-compression-when-adding-as-embedded-resources/
 description: This article explains how to disable files compression when Adding as Embedded Resources
 lastmod: "2021-06-05"
 ---

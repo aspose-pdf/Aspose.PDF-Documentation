@@ -3,7 +3,7 @@ title: Working with Artifacts with Java
 linktitle: Working with Artifacts
 type: docs
 weight: 110
-url: /android-via-java/artifacts/
+url: /androidjava/artifacts/
 description: This page describes how to work with Artifact class using Aspose.PDF for Java. Code snippets show how to add a background image to PDF pages and how to get each watermark on the first page of a PDF file.
 lastmod: "2021-06-05"
 sitemap:

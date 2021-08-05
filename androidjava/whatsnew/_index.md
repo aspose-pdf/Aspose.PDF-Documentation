@@ -3,7 +3,7 @@ title: What's new
 linktitle: What's new
 type: docs
 weight: 10
-url: /android-via-java/whatsnew/
+url: /androidjava/whatsnew/
 description: In this page introduces the most popular new features in Aspose.PDF for Java that have been introduced in recent releases.
 sitemap:
     changefreq: "monthly"

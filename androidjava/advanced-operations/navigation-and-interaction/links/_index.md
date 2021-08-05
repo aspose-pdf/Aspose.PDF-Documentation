@@ -3,7 +3,7 @@ title: Working with Links in PDF programmatically using Aspose.PDF for Java
 linktitle: Links
 type: docs
 weight: 10
-url: /java/links/
+url: /androidjava/links/
 description: This guide is about how to add an internal page link in PDF or insert an external website hyperlink to PDF in Java language.
 lastmod: "2021-06-05"
 sitemap:

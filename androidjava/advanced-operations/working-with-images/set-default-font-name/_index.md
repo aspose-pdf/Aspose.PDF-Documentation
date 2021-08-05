@@ -3,7 +3,7 @@ title: Set Default Font Name
 linktitle: Set Default Font Name
 type: docs
 weight: 90
-url: /java/set-default-font-name/
+url: /androidjava/set-default-font-name/
 description: This section describes how to set default font name using Aspose.PDF for Java library.
 lastmod: "2021-06-05"
 ---

@@ -3,7 +3,7 @@ title: PDF Caret Annotation
 linktitle: Caret Annotation
 type: docs
 weight: 90
-url: /java/caret-annotation/
+url: /androidjava/caret-annotation/
 description: This section describes how to add, get, and delete Caret annotation from your PDF document.
 lastmod: "2021-06-05"
 sitemap:

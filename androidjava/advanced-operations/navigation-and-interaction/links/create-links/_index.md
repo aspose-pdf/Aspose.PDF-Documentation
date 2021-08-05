@@ -3,7 +3,7 @@ title: Create Links in PDF file with Java
 linktitle: Create Links
 type: docs
 weight: 10
-url: /java/create-links/
+url: /androidjava/create-links/
 description: This section explains how to create links in your PDF document with Java. 
 lastmod: "2021-06-05"
 sitemap:

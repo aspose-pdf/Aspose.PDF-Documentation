@@ -3,7 +3,7 @@ title: Set Image Size
 linktitle: Set Image Size
 type: docs
 weight: 80
-url: /java/set-image-size/
+url: /androidjava/set-image-size/
 description: This section describes how to set image size PDF file using Java library.
 lastmod: "2021-06-05"
 ---

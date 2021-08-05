@@ -3,7 +3,7 @@ title: Overview of Annotations supported by Aspose.PDF for Java
 linktitle: Overview of Annotations 
 type: docs
 weight: 10
-url: /java/overview-of-annotations/
+url: /androidjava/overview-of-annotations/
 description: Check out the list of possible annotations you can work with using Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Replace Image in Existing PDF File
 linktitle: Replace Image
 type: docs
 weight: 70
-url: /java/replace-image-in-existing-pdf-file/
+url: /androidjava/replace-image-in-existing-pdf-file/
 description: This section describes about replace image in existing PDF file using Java library.
 lastmod: "2021-06-05"
 ---

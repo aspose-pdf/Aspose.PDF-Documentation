@@ -3,7 +3,7 @@ title: Convert EPUB to PDF
 linktitle: Convert EPUB to PDF
 type: docs
 weight: 340
-url: /java/convert-epub-to-pdf/
+url: /androidjava/convert-epub-to-pdf/
 lastmod: "2021-06-05"
 description: Epub is free and open format of the electronic version of books with the .epub extension. You may easily convert EPUB files to PDF format with Aspose.PDF for Java.
 sitemap:

@@ -3,7 +3,7 @@ title: PDF 3D Annotation
 linktitle: 3D Annotation
 type: docs
 weight: 140
-url: /java/3d-annotation/
+url: /androidjava/3d-annotation/
 description: The PDF 3D Annotation in the document uses to represent volumetric image models on the page. Check code snippet to resolve this task.
 lastmod: "2021-06-18"
 sitemap:

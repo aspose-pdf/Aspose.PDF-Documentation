@@ -3,7 +3,7 @@ title: Add Image to Existing PDF File
 linktitle: Add Image
 type: docs
 weight: 10
-url: /java/add-image-to-existing-pdf-file/
+url: /androidjava/add-image-to-existing-pdf-file/
 description: This section describes how to add image to existing PDF file using Java library.
 lastmod: "2021-06-05"
 ---

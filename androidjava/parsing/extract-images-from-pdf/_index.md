@@ -3,7 +3,7 @@ title: Extract Images from PDF using Java
 linktitle: Extract Images
 type: docs
 weight: 20
-url: /android-via-java/extract-images-from-the-pdf-file/
+url: /androidjava/extract-images-from-the-pdf-file/
 description: How to extract a part of the image from PDF using Aspose.PDF for Java
 lastmod: "2021-06-05"
 sitemap:

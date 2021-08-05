@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: /android-via-java/overview/
+url: /androidjava/overview/
 description: Overview of key-features and supported formats of Aspose.PDF for Android via Java, installation and licensing manual of Java library.
 lastmod: "2021-06-05"
 sitemap:

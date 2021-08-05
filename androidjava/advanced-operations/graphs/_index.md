@@ -3,7 +3,7 @@ title: Working with Graphs in Aspose.PDF for Java
 linktitle: Working with Graphs
 type: docs
 weight: 70
-url: /android-via-java/graphs/
+url: /androidjava/graphs/
 description: This article explains what a is Graph, how to create a filled rectangle object, how to add text inside a graph object, how to add a line object to PDF and etc.
 lastmod: "2021-06-05"
 sitemap:

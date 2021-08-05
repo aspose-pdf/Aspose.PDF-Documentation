@@ -3,7 +3,7 @@ title: Redact certain page region with Redaction Annotation using Aspose.PDF for
 linktitle: Redact certain page region with Redaction Annotation
 type: docs
 weight: 30
-url: /java/redact-certain-page-region-with-redactionannotation/
+url: /androidjava/redact-certain-page-region-with-redactionannotation/
 description: Aspose.PDF for Java allows you to add and manipulate Annotations in an existing PDF file. You should use a class named RedactionAnnotation to resolve this task.
 lastmod: "2021-06-05"
 sitemap:

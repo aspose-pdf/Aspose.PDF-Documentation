@@ -3,7 +3,7 @@ title: PDF Line Annotation
 linktitle: Line Annotation
 type: docs
 weight: 40
-url: /java/line-annotation/
+url: /androidjava/line-annotation/
 description: This article shows how you can add, get, and delete line annotation from your PDF document.
 lastmod: "2021-06-05"
 sitemap:

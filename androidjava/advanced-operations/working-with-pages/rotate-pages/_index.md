@@ -3,7 +3,7 @@ title: Rotate PDF Pages programmatically Java
 linktitle: Rotate PDF Pages
 type: docs
 weight: 60
-url: /java/rotate-pages/
+url: /androidjava/rotate-pages/
 description: Change page orientation and fitting the page content to the new page orientation using Java.
 lastmod: "2021-06-05"
 sitemap:
