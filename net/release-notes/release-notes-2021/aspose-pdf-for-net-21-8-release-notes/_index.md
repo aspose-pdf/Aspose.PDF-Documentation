@@ -59,7 +59,6 @@ This page contains release notes information for Aspose.PDF for .NET 21.8.
 |PDFNET-49995 Bitonal CCITT4 compressed images are saved as JPEG|Bug|
 |PDFNET-48600 Invalid parameter and Startxref not found exceptions are thrown|Bug|
 |PDFNET-50226 Dynamic header and footer content is overlapping with body content|Bug|
-|PDFNET-49798 A part of XMP-metadata elements is missing|Bug|
 |PDFNET-49867 Font rendering issue|Bug|
 |PDFNET-50207 Text replacement issue|Bug|
 
