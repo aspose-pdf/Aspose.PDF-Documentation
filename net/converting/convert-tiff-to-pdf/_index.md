@@ -13,7 +13,27 @@ sitemap:
 
 **Aspose.PDF** file format supported, be it a single frame or multi-frame <abbr title="Tag Image File Format">TIFF</abbr> image. It means that you can convert the TIFF image to PDF in your .NET applications.
 
-TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. TIFF image can contain several frames with different images. Aspose.PDF file format is also supported, be it a single frame or multi-frame TIFF image. So you can convert the TIFF image to PDF in your .NET applications. Therefore, we will consider an example of converting multi-page TIFF image to multi-page PDF document with below steps:
+TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. TIFF image can contain several frames with different images. Aspose.PDF file format is also supported, be it a single frame or multi-frame TIFF image.
+
+You can convert TIFF to PDF in the same manner as the rest raster file formats graphics:
+
+```csharp
+Initialize empty PDF document
+using (Document pdfDocument = new Document())
+{
+    pdfDocument.Pages.Add();
+    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+
+    // Load sample BMP image file
+    image.File = dataDir + "sample.tiff";
+    pdfDocument.Pages[1].Paragraphs.Add(image);
+
+    // Save output PDF document
+    pdfDocument.Save(dataDir + "TIFFtoPDF.pdf");
+}
+```
+
+In case you need to convert multi-page TIFF image to multi-page PDF document and control some params, i.g. width or aspect ratio, please follow these steps:
 
 1. Instantiate an instance of Document class
 1. Load input TIFF image
@@ -21,35 +41,40 @@ TIFF or TIF, Tagged Image File Format, represents raster images that are meant f
 1. Add new page for each frame
 1. Finally, save images to PDF pages
 
-Moreover, the following code snippet shows how to convert multi-page or multi-frame TIFF image to PDF with C#:
+The following code snippet shows how to convert multi-page or multi-frame TIFF image to PDF with C#:
 
 ```csharp
-// Initalize new Document
-Document pdf = new Document();
-
-//Load TIFF image into stream
-MemoryStream ms = new MemoryStream();
-new FileStream(dataDir + @"Aspose.tiff", FileMode.Open).CopyTo(ms);
-Bitmap myimage = new Bitmap(ms);
-// Convert multi page or multi frame TIFF to PDF
-FrameDimension dimension = new FrameDimension(myimage.FrameDimensionsList[0]);
-int frameCount = myimage.GetFrameCount(dimension);
-
-// Iterate through each frame
-for (int frameIdx = 0; frameIdx <= frameCount - 1; frameIdx++)
+public static void TiffToPDF2()
 {
-    Page sec = pdf.Pages.Add();
+    // Initalize new Document
+    Document pdf = new Document();
 
-    myimage.SelectActiveFrame(dimension, frameIdx);
+    //Load TIFF image into stream
+    Bitmap bitmap = new Bitmap(File.OpenRead(_dataDir+"multipage.tif"));
+    // Convert multi page or multi frame TIFF to PDF
+    FrameDimension dimension = new FrameDimension(bitmap.FrameDimensionsList[0]);
+    int frameCount = bitmap.GetFrameCount(dimension);
 
-    MemoryStream currentImage = new MemoryStream();
-    myimage.Save(currentImage, ImageFormat.Tiff);
+    // Iterate through each frame
+    for (int frameIdx = 0; frameIdx <= frameCount - 1; frameIdx++)
+    {
+        Page page = pdf.Pages.Add();
 
-    Aspose.Pdf.Image imageht = new Aspose.Pdf.Image();
-    imageht.ImageStream = currentImage;
-    sec.Paragraphs.Add(imageht);
+        bitmap.SelectActiveFrame(dimension, frameIdx);
+
+        MemoryStream currentImage = new MemoryStream();
+        bitmap.Save(currentImage, ImageFormat.Tiff);
+
+        Aspose.Pdf.Image imageht = new Aspose.Pdf.Image
+        {
+            ImageStream = currentImage,
+            //Apply some other options
+            //ImageScale = 0.5
+        };
+        page.Paragraphs.Add(imageht);
+    }
+
+    // Save output PDF file
+    pdf.Save(_dataDir + "TifftoPDF.pdf");
 }
-
-// Save output PDF file
-pdf.Save(dataDir + "TifftoPDF.pdf");
 ```
