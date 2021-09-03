@@ -1,13 +1,13 @@
 ---
-title: Search and Get Text from Pages of PDF Document | C#
+title: Search and Get Text from Pages of PDF Document with C#
 linktitle: Search and Get Text
 type: docs
 weight: 60
 url: /net/search-and-get-text-from-pdf/
 description: This article explains how to use various tools to search and get a text from PDF docs. We can search with regular expression from particular or whole pages.
-lastmod: "2021-06-05"
+lastmod: "2021-09-03"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
