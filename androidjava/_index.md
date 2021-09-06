@@ -11,7 +11,7 @@ lastmod: "2021-05-08"
 
 {{% alert color="primary" %}}
 
-![Aspose.PDF for Android via Java Logo](aspose-pdf-for-android-via-java-home_1.png)
+![Aspose.PDF for Android via Java Logo](aspose-pdf-for-android.png)
 
 <h2>Welcome to Aspose.PDF for Android via Java </h2>
 
@@ -21,11 +21,22 @@ Aspose.PDF for Android via Java is a component that allows developers to create 
 
 <h3>Aspose.PDF for Android via Java Resources</h3>
 
+<h2>Chapters </h2>
+
+- [What's new](/pdf/androidjava/whatsnew/)
+- [Overview](/pdf/androidjava/overview/)
+- [Get Started](/pdf/androidjava/get-started/)
+- [Basic operations](/pdf/androidjava/basic-operations/)
+- [Converting documents](/pdf/androidjava/converting/)
+- [Parsing PDF documents](/pdf/androidjava/parsing/)
+- [Advanced operations](/pdf/androidjava/advanced-operations/)
+- [Release Notes](/pdf/androidjava/release-notes/)
+
 Following are the links to some useful resources you may need to accomplish your tasks.
 
-- [Aspose.PDF for Java Online Documentation](/pdf/java/) (Aspose.PDF for Android via Java is very similar to Aspose.PDF for Java. So, you can use the same documentation)
-- [Aspose.PDF for Android via Java Features](/pdf/java/aspose-pdf-for-android-via-java-features/)
-- [Aspose.PDF for Android via Java Release Notes](/pdf/java/aspose-pdf-for-android-via-java/)
+- [Aspose.PDF for Android via Java Online Documentation](/pdf/androidjava/) (Aspose.PDF for Android via Java is very similar to Aspose.PDF for Android via Java. So, you can use the same documentation)
+- [Aspose.PDF for Android via Java Features](/pdf/androidjava/aspose-pdf-for-android-via-java-features/)
+- [Aspose.PDF for Android via Java Release Notes](/pdf/androidjava/aspose-pdf-for-android-via-java/)
 - [Aspose.PDF for Android via Java Product Page](https://products.aspose.com/pdf/android-java)
 - [Download Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java)
 - [Install Aspose.PDF for Android via Java](/pdf/java/install-aspose-pdf-for-android-via-java/)

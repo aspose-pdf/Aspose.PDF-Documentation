@@ -252,7 +252,7 @@ public static void ConvertPCLtoPDF()
 {
     PclLoadOptions options = new PclLoadOptions();
     Document pdfDocument= new Document(_dataDir + "demo.pcl", options);
-    pdfDocument.Save(_dataDir + "epub_test.pdf");
+    pdfDocument.Save(_dataDir + "pcl_test.pdf");
 }
 ```
 
@@ -268,7 +268,7 @@ public static void ConvertPCLtoPDFAvdanced()
         {
             Console.WriteLine(ex.Message);
         }
-    pdfDocument.Save(_dataDir + "epub_test.pdf");
+    pdfDocument.Save(_dataDir + "pcl_test.pdf");
 }
 ```
 

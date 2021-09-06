@@ -11,7 +11,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-![todo:image_alt_text](home_7.png)
+![todo:image_alt_text](aspose_pdf-for-jasperreports.png)
 
 **Welcome to Aspose.PDF for JasperReports**
 

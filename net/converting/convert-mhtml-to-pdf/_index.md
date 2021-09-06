@@ -1,6 +1,6 @@
 ---
-title: Convert MHTML to PDF | C#
-linktitle: Convert MHTML to PDF
+title: Convert MHTML to PDF | C# 
+linktitle: Convert MHTML to PDF 
 type: docs
 weight: 290
 url: /net/convert-mhtml-to-pdf/
@@ -17,8 +17,7 @@ Aspose.PDF for .NET presents you online free application ["MHTML to PDF"](https:
 
 [![MHTML to PDF](mhtml.png)](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)
 
-<abbr title="MIME encapsulation of aggregate HTML documents">MHTML</abbr>, short for MIME HTML, is a web page archive format used to combine resources that are typically represented by external links (such as images, Flash animations, Java applets, and audio files) with HTML code into a single file. The content of an MHTML file is encoded as if it were an HTML email message, using the MIME type multipart/related. Aspose.PDF for .NET can convert HTML files to PDF format and with the release of Aspose.PDF for .NET 9.0.0, we have introduced a new feature that lets you convert MHTML files to PDF format.
-Next code snippet show how to covert MHTML files to PDF format with C#:
+<abbr title="MIME encapsulation of aggregate HTML documents">MHTML</abbr>, short for MIME HTML, is a web page archive format used to combine resources that are typically represented by external links (such as images, Flash animations, Java applets, and audio files) with HTML code into a single file. The content of an MHTML file is encoded as if it were an HTML email message, using the MIME type multipart/related. Aspose.PDF for .NET can convert HTML files to PDF format and with the release of Aspose.PDF for .NET 9.0.0, we have introduced a new feature that lets you convert MHTML files to PDF format. Next code snippet show how to covert MHTML files to PDF format with C#:
 
 ```csharp
 public static void ConvertMHTtoPDF()

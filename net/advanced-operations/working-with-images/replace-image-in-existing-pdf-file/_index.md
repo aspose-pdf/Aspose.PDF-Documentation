@@ -13,7 +13,7 @@ The Images collection’s [Replace](https://apireference.aspose.com/pdf/net/aspo
 The Images collection can be found in a page’s Resources collection. To replace an image:
 
 1. Open the PDF file using the Document object.
-2. Replaced the , save the updated PDF file using Save method of the Document object.
+2. Replace a particular image, save the updated PDF file using Save method of the Document object.
 
 The following code snippet shows you how to replace an image in a PDF file.
 

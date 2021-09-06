@@ -15,7 +15,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-![Aspose.PDF for .NET logo image](home_1.png)
+![Aspose.PDF for .NET logo image](aspose_pdf-for-net.png)
 
 <h2>Welcome to Aspose.PDF for .NET</h2>
 

@@ -11,7 +11,8 @@ lastmod: "2021-06-05"
 This page contains release notes for [Aspose.PDF for Java 18.11](https://repository.aspose.com/repo/com/aspose/aspose-pdf/18.11/)
 
 {{% /alert %}}
-### **Features and Improvements**
+
+### Features and Improvements
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -28,6 +29,7 @@ This page contains release notes for [Aspose.PDF for Java 18.11](https://reposi
 |PDFJAVA-38109|TIFF to PDF - Dark Colors are converted as black in output|Bug|
 |PDFJAVA-37706|Cannot extract table and its data using TableAbsorber|Bug|
 |PDFJAVA-37053|SVG turned out to be black and white while adding into table|Bug|
+
 ### **Public API Changes**
 com.aspose.pdf.**Document**.**OptimizationOptions** marked as Deprecated
 
@@ -53,6 +55,7 @@ com.aspose.pdf.Document.OptimizationOptions.setUnembedFonts(boolean)
 com.aspose.pdf.Document.OptimizationOptions.isRemovePrivateInfo()
 com.aspose.pdf.Document.OptimizationOptions.setRemovePrivateInfo(boolean)
 Please use Aspose.Pdf.Optimization.OptimizationOptions instead.
+
 Added new class:
 com.aspose.pdf.optimization.**ImageCompressionOptions**
 com.aspose.pdf.optimization.ImageCompressionOptions.getCompressImages()

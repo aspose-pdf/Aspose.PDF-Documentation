@@ -103,27 +103,27 @@ public static void AddTable_RowColSpan()
     cell.ColSpan = 2;
     row2.Cells.Add($"Test 2 4");
 
-    // Add 4th row to table
-    Aspose.Pdf.Row row4 = table.Rows.Add();
-    row4.Cells.Add($"Test 4 1");
-    row4.Cells.Add($"Test 4 2");
-    row4.Cells.Add($"Test 4 3");
-    row4.Cells.Add($"Test 4 4");
-
     // Add 3rd row to table
     Aspose.Pdf.Row row3 = table.Rows.Add();
-    row3.Cells.Add($"Test 3 1");
-    cell = row3.Cells.Add($"Test 3 2");
-    cell.RowSpan = 2;
-    row3.Cells.Add($"Test 3 3");
-    row3.Cells.Add($"Test 3 4");
-
+    row4.Cells.Add("Test 3 1");
+    row4.Cells.Add("Test 3 2");
+    row4.Cells.Add("Test 3 3");
+    row4.Cells.Add("Test 3 4");
 
     // Add 4th row to table
+    Aspose.Pdf.Row row4 = table.Rows.Add();
+    row3.Cells.Add("Test 4 1");
+    cell = row3.Cells.Add("Test 4 2");
+    cell.RowSpan = 2;
+    row3.Cells.Add("Test 4 3");
+    row3.Cells.Add("Test 4 4");
+
+
+    // Add 5th row to table
     row4 = table.Rows.Add();
-    row4.Cells.Add($"Test 4 1");
-    row4.Cells.Add($"Test 4 3");
-    row4.Cells.Add($"Test 4 4");
+    row4.Cells.Add("Test 5 1");
+    row4.Cells.Add("Test 5 3");
+    row4.Cells.Add("Test 5 4");
 
     // Add table object to first page of input document
     pdfDocument.Pages[1].Paragraphs.Add(table);

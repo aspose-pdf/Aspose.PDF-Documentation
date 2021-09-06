@@ -11,7 +11,7 @@ lastmod: "2021-06-01"
 
 {{% alert color="primary" %}}
 
-![todo:image_alt_text](home_6.png)
+![Aspose.PDF for Sharepoint logo](aspose_pdf-for-sharepoint.png)
 
 **Welcome to Aspose.PDF for SharePoint**
 
