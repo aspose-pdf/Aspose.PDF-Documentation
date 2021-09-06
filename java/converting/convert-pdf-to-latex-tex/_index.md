@@ -20,7 +20,7 @@ Try online: You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-To convert PDF files to TeX, Aspose.PDF has the class [TeXSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TeXSaveOptions) which provides the property OutDirectoryPath for saving temporary images during the conversion process.
+To convert PDF files to TeX, Aspose.PDF has the class [TeXSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TeXSaveOptions) which provides the method `setOutDirectoryPath` for saving temporary images during the conversion process.
 
 The following code snippet shows the process of converting PDF files into the TEX format with Java.
 

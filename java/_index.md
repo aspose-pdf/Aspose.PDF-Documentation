@@ -11,7 +11,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-![Aspose.PDF for Java](home_1.png)
+![Aspose.PDF for Java](aspose_pdf-for-java.png)
 
 <h2>Welcome to Aspose.PDF for Java</h2>
 

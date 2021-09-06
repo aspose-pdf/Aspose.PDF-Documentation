@@ -113,7 +113,7 @@ public static void ImplementRotationUsingTextParagraphAndTextBuilder_RotatedFrag
 
 ## Implement Rotation using TextFragment and Page.Paragraphs
 
-```java
+```csharp
 public static void ImplementRotationUsingTextFragmentAndPageParagraphs() {
     // Initialize document object
     Document pdfDocument = new Document();

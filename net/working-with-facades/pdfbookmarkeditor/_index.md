@@ -1,5 +1,5 @@
 ---
-title: PdfBookmarEditor Class
+title: PdfBookmarkEditor Class
 type: docs
 weight: 45
 url: /net/working-with-bookmarks-facades/
@@ -12,7 +12,6 @@ sitemap:
 aliases:
     - /net/pdfbookmarkeditor-class/
 ---
-
 
 - [Create Bookmarks](/pdf/net/create-bookmarks/)
 - [Import and Export Bookmarks](/pdf/net/import-and-export-bookmarks/)

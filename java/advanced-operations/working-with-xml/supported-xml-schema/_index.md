@@ -3,7 +3,7 @@ title: XML Schema of Aspose.PDF
 linktitle: Supported XML Schema
 type: docs
 weight: 10
-url: java/supported-xml-schema/
+url: /java/supported-xml-schema/
 description: This article describes an XML schema for working with XML documents in Aspose.PDF for Java
 lastmod: "2021-06-05"
 sitemap:
