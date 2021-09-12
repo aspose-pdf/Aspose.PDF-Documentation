@@ -5,9 +5,9 @@ type: docs
 weight: 50
 url: /net/rotate-pages/
 description: Rotate Pages
-lastmod: "2021-06-05"
+lastmod: "2021-09-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
