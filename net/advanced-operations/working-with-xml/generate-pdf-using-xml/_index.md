@@ -411,7 +411,7 @@ public static void Example_XSLFO_to_PDF()
 
 ### Generating PDF document using XSL-FO markup and XSL params
 
-Sometimes we need to use [<XSL:param>](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param). The `<xsl:param>` element establishes a parameter by name and, optionally, a default value for that parameter.
+Sometimes we need to use [XSL:param](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param). The `<xsl:param>` element establishes a parameter by name and, optionally, a default value for that parameter.
 
 Let's take the same example as in the previous case, but with minor changes (adding params). The XML file with sample data stays untouched, ...
 
