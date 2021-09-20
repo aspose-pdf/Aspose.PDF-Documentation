@@ -71,28 +71,28 @@ This page contains release notes information for Aspose.PDF for Java 21.9.
 
 **Following fields are replaced with getter/setter access:**
 - com.aspose.pdf.facades.PdfFileEditor.ProgressEventHandlerInfo.EventType:
-    .setEventType()
+    .getEventType()
     .setEventType(int)
 - com.aspose.pdf.facades.PdfFileEditor.ProgressEventHandlerInfo.DocumentNumber:
-    .setDocumentNumber()
+    .getDocumentNumber()
     .setDocumentNumber(int)
 - com.aspose.pdf.facades.PdfFileEditor.ProgressEventHandlerInfo.Value:
-    .setValue()
+    .getValue()
     .setValue(int)
 - com.aspose.pdf.facades.PdfFileEditor.ProgressEventHandlerInfo.MaxValue:
-    .setMaxValue()
+    .getMaxValue()
     .setMaxValue(int)
 - com.aspose.pdf.groupprocessor.filters.PdfFilter.Filter:
-    .setFilter()
+    .getFilter()
     .setFilter(String)
 - com.aspose.pdf.groupprocessor.filters.PdfFilter.Params:
-    .setParams()
+    .getParams()
     .setParams(Dictionary<String, String>)
 - com.aspose.pdf.HtmlLoadOptions.CustomLoaderOfExternalResources:
-    .setCustomLoaderOfExternalResources()
+    .getCustomLoaderOfExternalResources()
 	.setCustomLoaderOfExternalResources(ResourceLoadingStrategy)
 - com.aspose.pdf.HtmlSaveOptions.CustomProgressHandler:
-    .setCustomProgressHandler()
+    .getCustomProgressHandler()
     .setCustomProgressHandler(ConversionProgressEventHandler)
 - com.aspose.pdf.HtmlSaveOptions.SaveFullFont:
     .isSaveFullFont()
@@ -104,65 +104,65 @@ This page contains release notes information for Aspose.PDF for Java 21.9.
     .isSaveTransparentTexts()
     .setSaveTransparentTexts(boolean)
 - com.aspose.pdf.HtmlSaveOptions.SaveShadowedTextsAsTransparentTexts:
-    .setSaveShadowedTextsAsTransparentTexts()
+    .getSaveShadowedTextsAsTransparentTexts()
     .setSaveShadowedTextsAsTransparentTexts(boolean)
 - com.aspose.pdf.HtmlSaveOptions.FontSavingMode:
-    .setFontSavingMode()
+    .getFontSavingMode()
     .setFontSavingMode(int)
 - com.aspose.pdf.HtmlSaveOptions.PageBorderIfAny:
-    .setPageBorderIfAny()
+    .getPageBorderIfAny()
     .setPageBorderIfAny(BorderInfo)
 - com.aspose.pdf.HtmlSaveOptions.PageMarginIfAny:
-    .setPageMarginIfAny()
+    .getPageMarginIfAny()
 	.setPageMarginIfAny(MarginInfo)
 - com.aspose.pdf.HtmlSaveOptions.LettersPositioningMethod:
-    .setLettersPositioningMethod()
+    .getLettersPositioningMethod()
 	.setLettersPositioningMethod(int)
 - com.aspose.pdf.HtmlSaveOptions.ExcludeFontNameList:
-    .setExcludeFontNameList()
+    .getExcludeFontNameList()
     .setExcludeFontNameList(String[])
 - com.aspose.pdf.HtmlSaveOptions.CustomResourceSavingStrategy:
-    .CustomResourceSavingStrategy()
-    .CustomResourceSavingStrategy(ResourceSavingStrategy)
+    .getCustomResourceSavingStrategy()
+    .setCustomResourceSavingStrategy(ResourceSavingStrategy)
 - com.aspose.pdf.HtmlSaveOptions.CustomCssSavingStrategy:
-    .CustomCssSavingStrategy()
-    .CustomCssSavingStrategy(CssSavingStrategy)
+    .getCustomCssSavingStrategy()
+    .setCustomCssSavingStrategy(CssSavingStrategy)
 - com.aspose.pdf.HtmlSaveOptions.CustomHtmlSavingStrategy:
-    .CustomHtmlSavingStrategy()
-    .CustomHtmlSavingStrategy(HtmlPageMarkupSavingStrategy)
+    .getCustomHtmlSavingStrategy()
+    .setCustomHtmlSavingStrategy(HtmlPageMarkupSavingStrategy)
 - com.aspose.pdf.HtmlSaveOptions.CustomStrategyOfCssUrlCreation:
-    .CustomStrategyOfCssUrlCreation()
-    .CustomStrategyOfCssUrlCreation(CssUrlMakingStrategy)
+    .getCustomStrategyOfCssUrlCreation()
+    .setCustomStrategyOfCssUrlCreation(CssUrlMakingStrategy)
 - com.aspose.pdf.HtmlSaveOptions.SpecialFolderForSvgImages:
-    .SpecialFolderForSvgImages()
-    .SpecialFolderForSvgImages(String)
+    .getSpecialFolderForSvgImages()
+    .setSpecialFolderForSvgImages(String)
 - com.aspose.pdf.HtmlSaveOptions.SpecialFolderForAllImages:
-    .SpecialFolderForAllImages()
-    .SpecialFolderForAllImages(String)
+    .getSpecialFolderForAllImages()
+    .setSpecialFolderForAllImages(String)
 - com.aspose.pdf.HtmlSaveOptions.CssClassNamesPrefix:
-    .CssClassNamesPrefix()
-    .CssClassNamesPrefix(String)
+    .getCssClassNamesPrefix()
+    .setCssClassNamesPrefix(String)
 - com.aspose.pdf.HtmlSaveOptions.PartsEmbeddingMode:
-    .PartsEmbeddingMode()
-    .PartsEmbeddingMode(int)
+    .getPartsEmbeddingMode()
+    .setPartsEmbeddingMode(int)
 - com.aspose.pdf.HtmlSaveOptions.HtmlMarkupGenerationMode:
-    .HtmlMarkupGenerationMode()
-    .HtmlMarkupGenerationMode(int)
+    .getHtmlMarkupGenerationMode()
+    .setHtmlMarkupGenerationMode(int)
 - com.aspose.pdf.HtmlSaveOptions.RasterImagesSavingMode:
-    .RasterImagesSavingMode()
-    .RasterImagesSavingMode(int)
+    .getRasterImagesSavingMode()
+    .setRasterImagesSavingMode(int)
 - com.aspose.pdf.HtmlSaveOptions.RemoveEmptyAreasOnTopAndBottom:
     .isRemoveEmptyAreasOnTopAndBottom()
-    .RemoveEmptyAreasOnTopAndBottom(boolean)
+    .setRemoveEmptyAreasOnTopAndBottom(boolean)
 - com.aspose.pdf.HtmlSaveOptions.FontEncodingStrategy:
-    .FontEncodingStrategy()
-    .FontEncodingStrategy(byte)
+    .getFontEncodingStrategy()
+    .setFontEncodingStrategy(byte)
 - com.aspose.pdf.HtmlSaveOptions.PagesFlowTypeDependsOnViewersScreenSize:
-    .isPagesFlowTypeDependsOnViewersScreenSize()
-    .PagesFlowTypeDependsOnViewersScreenSize(boolean)
+    .getisPagesFlowTypeDependsOnViewersScreenSize()
+    .setPagesFlowTypeDependsOnViewersScreenSize(boolean)
 - com.aspose.pdf.HtmlSaveOptions.TrySaveTextUnderliningAndStrikeoutingInCss:
     .isTrySaveTextUnderliningAndStrikeoutingInCss()
-    .TrySaveTextUnderliningAndStrikeoutingInCss(boolean)
+    .setTrySaveTextUnderliningAndStrikeoutingInCss(boolean)
 - com.aspose.pdf.HtmlSaveOptions.CssSavingInfo.CssNumber:
     .getCssNumber()
     .setCssNumber(int)
