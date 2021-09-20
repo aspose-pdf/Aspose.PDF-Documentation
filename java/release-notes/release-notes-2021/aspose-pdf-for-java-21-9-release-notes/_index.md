@@ -20,7 +20,7 @@ This page contains release notes information for Aspose.PDF for Java 21.8.
 |PDFJAVA-40342|PDF to Docx: Recognize indents of paragraphs in EnchantedFlow mode|Enhancement|
 |PDFJAVA-40831|Blank .PNG after converting from .PDF|Bug|
 |PDFJAVA-39004|Resources usage converting PDF to images|Bug|
-|PDFJAVA-40811|PDF to HTML: Spacing lost - Investigation|Bug|
+|PDFJAVA-40454|InvalidValueFormatException: Date has invalid format|Bug|
 |PDFJAVA-38702|PDF to XLSX - output is not in correct formatting and content is missing|Bug|
 
 
