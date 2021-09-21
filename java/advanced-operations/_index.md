@@ -30,5 +30,5 @@ You'll learn different ways to:
 - [Attachments](/pdf/java/attachments/) - PDF documents may contain file attachments. These attachments can be other PDF documents, or any kind of file, like audio files, Microsoft Office documents etc. You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with Java.
 - [Metadata in PDFs](/pdf/java/pdf-file-metadata/) - get or set meta data in documents, dealing with XMP data.
 - [Securing and Signing](/pdf/java/securing-and-signing/) - protect and sign your PDF document programmatically
-- [Printing Document](/pdf/java/printing-document/) - print PDFs in various types of applications (WinForms, WPF, etc.)
+- [Printing Document](/pdf/java/print-pdf-file/) - print PDFs in various types of applications (WinForms, WPF, etc.)
 - [Operators](/pdf/java/operators/) - make low-level operations in PDF.
