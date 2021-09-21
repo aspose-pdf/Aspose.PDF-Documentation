@@ -11,13 +11,13 @@ The following table indicates the file formats that Aspose.PDF for SharePoint ca
 
 |**Format**|**Description**|
 | :- | :- |
-|[PDF](https://wiki.fileformat.com/view/pdf/)|Portable Document Format|
-|[PDF/A](https://wiki.fileformat.com/view/pdf/a/)|Portable Document Format|
+|[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format|
+|[PDF/A](https://docs.fileformat.com/pdf/a/)|Portable Document Format|
 ## <ins>**Supported Save Formats**
 The following table indicates the file formats in which the document can be saved by using Aspose.PDF for SharePoint. 
 
 |**Format**|**Description**|
 | :- | :- |
-|[PDF](https://wiki.fileformat.com/view/pdf/)|Saves the document is PDF format|
-|[PDF/A](https://wiki.fileformat.com/view/pdf/a/)|Saves the document in PDF/A format|
+|[PDF](https://docs.fileformat.com/pdf/)|Saves the document in PDF format|
+|[PDF/A](https://docs.fileformat.com/pdf/a/)|Saves the document in PDF/A format|
 
