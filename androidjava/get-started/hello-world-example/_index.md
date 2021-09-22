@@ -7,7 +7,7 @@ url: /androidjava/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World using Aspose.PDF for Android.
 lastmod: "2021-08-05"
 sitemap:
-    changefreq: "montly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
