@@ -7,5 +7,5 @@ lastmod: "2021-06-05"
 ---
 
 #### **Articles in this section**
-- [Aspose.PDF for Java](/pdf/java/aspose-pdf-for-java/)
-- [Aspose.PDF for Android via Java](/pdf/java/aspose-pdf-for-android-via-java/)
+- [Aspose.PDF for Java](/pdf/java/release-notes/)
+- [Aspose.PDF for Android via Java](/pdf/androidjava/aspose-pdf-for-android-via-java/)

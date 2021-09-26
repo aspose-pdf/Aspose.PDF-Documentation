@@ -17,17 +17,17 @@ Aspose.PDF for Java allows converting PDF documents to various formats and also 
 
 Aspose.PDF for Java allows you quickly and easily convert your PDF documents into convenient and familiar Microsoft Office file formats.
 
-- [Convert PDF to DOC](/pdf/android-via-java/convert-pdf-to-doc/)
-- [Convert PDF to DOCX](/pdf/android-via-java/convert-pdf-to-docx/)
-- [Convert PDF to Excel](/pdf/android-via-java/convert-pdf-to-excel/)
-- [Convert PDF to PowerPoint](/pdf/android-via-java/convert-pdf-to-powerpoint/)
+- [Convert PDF to DOC](/pdf/androidjava/convert-pdf-to-doc/)
+- [Convert PDF to DOCX](/pdf/androidjava/convert-pdf-to-docx/)
+- [Convert PDF to Excel](/pdf/androidjava/convert-pdf-to-excel/)
+- [Convert PDF to PowerPoint](/pdf/androidjava/convert-pdf-to-powerpoint/)
 
 ## Convert between PDF/A and PDF formats
 
 Converting  PDF/A to PDF formats and back it's possible with Java library.
 
-- [Convert PDF to PDF/A](/pdf/android-via-java/convert-pdf-file-to-pdfa/)
-- [Convert PDF/A to PDF](/pdf/android-via-java/convert-pdfa-to-pdf/)
+- [Convert PDF to PDF/A](/pdf/androidjava/convert-pdf-file-to-pdfa/)
+- [Convert PDF/A to PDF](/pdf/androidjava/convert-pdfa-to-pdf/)
 
 ## Convert images to PDF and vice versa
 
