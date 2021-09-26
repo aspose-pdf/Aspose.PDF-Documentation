@@ -1,5 +1,5 @@
 ---
-title: Creating PDF from XML using XSLT | C#
+title: Creating PDF from XML using XSLT using C#
 linktitle: Create PDF from XML using XSLT
 type: docs
 weight: 10

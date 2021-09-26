@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to EPUB | C#
+title: Convert PDF to EPUB using C#
 linktitle: Convert PDF to EPUB
 type: docs
 weight: 170

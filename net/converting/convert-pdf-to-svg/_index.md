@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to SVG | C#
+title: Convert PDF to SVG using C#
 linktitle: Convert PDF to SVG
 type: docs
 weight: 60

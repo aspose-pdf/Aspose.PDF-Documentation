@@ -1,5 +1,5 @@
 ---
-title: PDF 3D Annotation | C#
+title: PDF 3D Annotation using C#
 linktitle: 3D Annotation
 type: docs
 weight: 140

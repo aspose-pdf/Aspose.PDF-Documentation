@@ -1,5 +1,5 @@
 ---
-title: Extract Text from PDF | C#
+title: Extract Text from PDF using C#
 linktitle: Extract Text from PDF
 type: docs
 weight: 10

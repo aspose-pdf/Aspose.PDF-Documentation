@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to TIFF | C#
+title: Convert PDF to TIFF using C#
 linktitle: Convert PDF to TIFF 
 type: docs
 weight: 30

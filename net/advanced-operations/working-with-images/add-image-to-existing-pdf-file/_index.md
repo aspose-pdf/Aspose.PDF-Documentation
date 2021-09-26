@@ -1,5 +1,5 @@
 ---
-title: Add Image to PDF | C#
+title: Add Image to PDF using C#
 linktitle: Add Image
 type: docs
 weight: 10

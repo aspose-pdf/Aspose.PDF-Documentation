@@ -1,5 +1,5 @@
 ---
-title: PDF Popup Annotation | C#
+title: PDF Popup Annotation using C#
 linktitle: Popup Annotation
 type: docs
 weight: 110

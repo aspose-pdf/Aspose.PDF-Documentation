@@ -1,5 +1,5 @@
 ---
-title: Create Tagged PDF | C#
+title: Create Tagged PDF using C#
 linktitle: Create Tagged PDF 
 type: docs
 weight: 10
