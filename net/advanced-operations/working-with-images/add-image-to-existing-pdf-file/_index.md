@@ -137,32 +137,28 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
 
 ## Place image on page and preserve (control) aspect ratio
 
-If we do not know the dimensions of the image there is every chance of getting a distorted image on the page. The following example shows one way to avoid this.
+If we do not know the dimensions of the image there is every chance of getting a distorted image on the page. The following example shows one of the ways to avoid this.
 
-```java
-public static void AddingImageAndPreserveAspectRatioIntoPDF() {
-    InputStream imageStream;
-    BufferedImage originalImage;
+```csharp
+public static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    var bitmap = System.Drawing.Image.FromFile(_dataDir + "3410492.jpg");
+
     int width;
     int height;
 
-    try {
-        imageStream = new FileInputStream(_dataDir + "3410492.jpg");            
-        originalImage = ImageIO.read(imageStream);
-    } catch (Exception e) {
-        System.out.println(e.getMessage());
-        return;
-    }
+    width = bitmap.Width;
+    height = bitmap.Height;
 
-    width = originalImage.getWidth();
-    height = originalImage.getHeight();
-    Document pdfDocument = new Document();
-    Page page = pdfDocument.getPages().add();
-    //Assume we want to show and image 400pt wide
-    int scaledWidth = 400; 
+    var document = new Aspose.Pdf.Document();
+
+    var page = document.Pages.Add();
+
+    int scaledWidth = 400;
     int scaledHeight = scaledWidth * height / width;
-    page.addImage(_dataDir + "3410492.jpg", new Rectangle(10, 10, scaledWidth, scaledHeight));
-    pdfDocument.save(_dataDir + "sample_image.pdf");
+
+    page.AddImage(_dataDir + "3410492.jpg", new Aspose.Pdf.Rectangle(10, 10, scaledWidth, scaledHeight));
+    document.Save(_dataDir + "sample_image.pdf");
 }
 ```
 
