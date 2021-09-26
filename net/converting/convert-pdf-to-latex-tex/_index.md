@@ -1,5 +1,5 @@
 ---
-title: PDF to LaTeX | C#
+title: PDF to LaTeX using C#
 linktitle: Convert PDF to LaTeX/TeX
 type: docs
 weight: 130

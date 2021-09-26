@@ -1,5 +1,5 @@
 ---
-title: PDF Polygon/Polyline Annotations | C#
+title: PDF Polygon/Polyline Annotations using C#
 linktitle: Polygon/Polyline Annotations
 type: docs
 weight: 60

@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to MobiXML | C#
+title: Convert PDF to MobiXML using C#
 linktitle: Convert PDF to MobiXML
 type: docs
 weight: 150

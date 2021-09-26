@@ -1,5 +1,5 @@
 ---
-title: PDF Square/Circle Annotations | C#
+title: PDF Square/Circle Annotations using C#
 linktitle: Square/Circle Annotations
 type: docs
 weight: 50

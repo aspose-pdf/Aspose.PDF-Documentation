@@ -10,7 +10,7 @@ aliases:
     - /net/working-with-existing-watermarks/
     - /net/adding-multi-line-watermark-to-existing-pdf/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -41,20 +41,29 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 **Artifact.Rotation** – Gets an artifact’s rotation (in degrees, positive value indicates counter-clockwise rotation).
 **Artifact.Opacity** – Gets an artifact’s opacity. Possible values are in the range 0…1, where 1 is completely opaque.
 
-## Programming Samples: Getting Watermarks
+## Programming Samples: How To Add Watermark On PDF Files
 
 The following code snippet shows how to get each watermark on the first page of a PDF file with C#.
 
-```csharp 
-   Document doc = new Document(_inDataDir + "text.pdf");
-            WatermarkArtifact artifact = new WatermarkArtifact();
-            artifact.SetText(new FormattedText("WATERMARK", System.Drawing.Color.Blue, FontStyle.Courier,
-   EncodingType.Identity_h, true, 72));
-            artifact.ArtifactHorizontalAlignment = HorizontalAlignment.Center;
-            artifact.ArtifactVerticalAlignment =VerticalAlignment.Center;
-            artifact.Rotation = 45;
-            artifact.Opacity = 0.5;
-            artifact.IsBackground = true;
-            doc.Pages[1].Artifacts.Add(artifact);
-            doc.Save(_outDataDir + "watermark.pdf");
+```csharp
+public static void AddWatermarks()
+{
+    Document document = new Document(_dataDir + "text.pdf");
+    WatermarkArtifact artifact = new WatermarkArtifact();
+    artifact.SetTextAndState(
+        "WATERMARK",
+        new TextState()
+        {
+            FontSize = 72,
+            ForegroundColor = Color.Blue,
+            Font = FontRepository.FindFont("Courier")
+        });
+    artifact.ArtifactHorizontalAlignment = HorizontalAlignment.Center;
+    artifact.ArtifactVerticalAlignment = VerticalAlignment.Center;
+    artifact.Rotation = 45;
+    artifact.Opacity = 0.5;
+    artifact.IsBackground = true;
+    document.Pages[1].Artifacts.Add(artifact);
+    document.Save(_dataDir + "watermark.pdf");
+}
 ```

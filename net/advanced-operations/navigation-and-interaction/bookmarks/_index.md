@@ -1,5 +1,5 @@
 ---
-title: Working with Bookmarks in PDF | C#
+title: Working with Bookmarks in PDF using C#
 linktitle: Bookmarks
 type: docs
 weight: 30

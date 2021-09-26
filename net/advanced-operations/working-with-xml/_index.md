@@ -1,5 +1,5 @@
 ---
-title: Working with XML | C#
+title: Working with XML using C#
 linktitle: Working with XML
 type: docs
 weight: 80

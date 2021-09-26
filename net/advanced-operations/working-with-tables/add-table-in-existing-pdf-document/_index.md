@@ -1,5 +1,5 @@
 ---
-title: Table In PDF | C#
+title: Table In PDF using C#
 linktitle: Create or Add Table
 type: docs
 weight: 10
