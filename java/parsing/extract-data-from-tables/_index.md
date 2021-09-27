@@ -57,7 +57,7 @@ public static void Extract_Table() {
 
 ## Extract table in specific area of PDF page
 
-Each abosorbed table has [Rectangle](https://apireference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable/properties/rectangle) property that describes position of the table on page.
+Each abosorbed table has [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable#getRectangle--) property that describes position of the table on page.
 
 So, if you need to extract tables located in a specific region, you have to work with specific coordinates.
 
