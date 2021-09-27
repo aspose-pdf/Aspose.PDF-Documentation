@@ -26,7 +26,7 @@ If we create a document from scratch we need to follow certain steps:
     - Using ConcatenateMatrix operator: defines how image must be placed.
     - Using Do operator: this operator draws image.
     - Using GRestore operator: this operator restores graphics state.
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf.text/textfragment) for header. For the header we will use Arial font with font size 24pt and center alignment.
+1. Create a [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) for header. For the header we will use Arial font with font size 24pt and center alignment.
 1. Add header to the page [Paragraphs](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
 1. Create a [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) for description. For the description we will use Arial font with font size 24pt and center alignment.
 1. Add (description) to the page Paragraphs.
