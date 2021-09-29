@@ -19,7 +19,7 @@ This feature is supported by version 19.6 or greater.
 
 ## Create Table in Tagged PDF
 
-Aspose.PDF for Java allows creating a table in Tagged PDF documents. For working with tables, the API provides [TableElement](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement) class. In order to create a table, you can use [createTableElement()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent#createTableElement--) method of [ITaggedContent](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent) interface. Furthermore, you can use [createTHead()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTHead--), [createTBody()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTBody--) and [createTFoot()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTFoot--) methods of TableElement class for creating Table Head, Table Body, and Table Foot respectively. To create a table row, you can use [createTR()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement#createTR--) method of [TableRowCollectionElement](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement) class. The following code snippet shows, how to create a table in the Tagged PDF document: 
+Aspose.PDF for Java allows creating a table in Tagged PDF documents. For working with tables, the API provides [TableElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement) class. In order to create a table, you can use [createTableElement()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createTableElement--) method of [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) interface. Furthermore, you can use [createTHead()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTHead--), [createTBody()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTBody--) and [createTFoot()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTFoot--) methods of TableElement class for creating Table Head, Table Body, and Table Foot respectively. To create a table row, you can use [createTR()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement#createTR--) method of [TableRowCollectionElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement) class. The following code snippet shows, how to create a table in the Tagged PDF document: 
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -147,7 +147,7 @@ document.save(path + "CreateTableElement.pdf");
 
 ## Style Table Element
 
-Aspose.PDF for Java allows styling a table in Tagged PDF document. In order to style a table, you can create a table using [createTableElement()](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent#createTableElement--) method of [ITaggedContent](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent) interface.  and set style table using properties of [TableElement](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement) class. The following is the list properties you can use to style a table:
+Aspose.PDF for Java allows styling a table in Tagged PDF document. In order to style a table, you can create a table using [createTableElement()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createTableElement--) method of [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) interface.  and set style table using properties of [TableElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement) class. The following is the list properties you can use to style a table:
 
 - BackgroundColor
 - Border
@@ -259,7 +259,7 @@ document.save(path + "StyleTableElement.pdf");
 
 ## Style Table Row
 
-Aspose.PDF for Java allows styling a table row in Tagged PDF document. In order to style a table row, you can use the properties of [TableTRElement](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableTRElement) class. The following is the list properties you can use to style a table row:
+Aspose.PDF for Java allows styling a table row in Tagged PDF document. In order to style a table row, you can use the properties of [TableTRElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableTRElement) class. The following is the list properties you can use to style a table row:
 
 - BackgroundColor
 - Border
@@ -356,7 +356,7 @@ document.save(path + "StyleTableRow.pdf");
 
 ## Style Table Cell
 
-Aspose.PDF for Java allows styling a table cell in Tagged PDF document. In order to style a table cell, you can use the properties of [TableCellElement](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableCellElement) class. The following is the list properties you can use to style a table cell:
+Aspose.PDF for Java allows styling a table cell in Tagged PDF document. In order to style a table cell, you can use the properties of [TableCellElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableCellElement) class. The following is the list properties you can use to style a table cell:
 
 - BackgroundColor
 - Border

@@ -12,9 +12,9 @@ Every PDF page contains Resources and Contents properties. Resources can be imag
 
 To add an image to an existing PDF file:
 
-- Create a [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object and open the input PDF document.
+- Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
 - Get the page you want to add an image to.
-- Add the image into the page’s [getResources](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page#getResources--) collection.
+- Add the image into the page’s [getResources](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) collection.
 - Use operators to place the image on the page:
 - Use the GSave operator to save the current graphical state.
 - Use [ConcatenateMatrix](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators.class-use/concatenatematrix) operator to specify where the image is to be placed.

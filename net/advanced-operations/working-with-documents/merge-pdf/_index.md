@@ -18,10 +18,10 @@ This article shows how to merge multiple PDF files into a single PDF document us
 
 To concatenate two PDF files:
 
-1. Create two [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document)  objects, each containing one of the input PDF files.
-1. Then call the [PageCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection) collection’s Add method for the Document object you want to add the other PDF file to.
+1. Create two [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)  objects, each containing one of the input PDF files.
+1. Then call the [PageCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection’s Add method for the Document object you want to add the other PDF file to.
 1. Pass the PageCollection collection of the second Document object to the first PageCollection collection’s Add method.
-1. Finally, save the output PDF file using the [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method.
+1. Finally, save the output PDF file using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 The following code snippet shows how to concatenate PDF files.
 

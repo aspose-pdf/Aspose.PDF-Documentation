@@ -23,15 +23,15 @@ Follow the steps below:
 
 1. Add Graph object to paragraphs collection of page instance.
 
-1. Create [Rectangle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Rectangle) instance.
+1. Create [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) instance.
 
 1. Set line width.
 
-1. Add [Rectangle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Rectangle) object to shapes collection of Graph object.
+1. Add [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object to shapes collection of Graph object.
 
 1. Save your PDF file.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Rectangle) object that is filled with color.
+The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object that is filled with color.
 
 ```java
  public static void ExampleLine() {

@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-It would seem not a difficult task to insert [FormattedText](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/classes/FormattedText) into PDF document, provided that you have the original editable version of this document. Suppose you created a document, and then remembered that you need to add another line or we are talking about bigger volume of documents, in both cases it will help you Aspose.PDF Facades. Let's consider the possibility of adding text in an existing PDF File with [PdfFileMend](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileMend) class.
+It would seem not a difficult task to insert [FormattedText](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/classes/FormattedText) into PDF document, provided that you have the original editable version of this document. Suppose you created a document, and then remembered that you need to add another line or we are talking about bigger volume of documents, in both cases it will help you Aspose.PDF Facades. Let's consider the possibility of adding text in an existing PDF File with [PdfFileMend](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileMend) class.
 
 ## Add Text in an Existing PDF File (facades)
 
@@ -75,7 +75,7 @@ public static void AddText03()
 
 Have you ever tried to add an image to an existing PDF file? We are sure you know that this is not an easy task. Perhaps you are filling out a form online and you need to attach a photo for identification or attach your photo to an existing resume. Previously, such a task was solved by creating a photo, attaching it to a document, further scanning and sending. This process was a lot of hassle and time consuming.
 
-Adding images and text in an existing PDF file is a common requirement and com.aspose.pdf.facades namespace fulfills this requirement very well. It provides a class [PdfFileMend](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileMend) which allows you to add images in the PDF file.
+Adding images and text in an existing PDF file is a common requirement and com.aspose.pdf.facades namespace fulfills this requirement very well. It provides a class [PdfFileMend](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileMend) which allows you to add images in the PDF file.
 
 This article will show you how to insert an image into a PDF using com.aspose.pdf.facades. There are also several options for adding images to PDF.
 

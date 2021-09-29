@@ -54,12 +54,12 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## Get Attachment Information
 
-As mentioned in [Get Attachments from a PDF Document](/pdf/java/get-attachments-from-a-pdf-document/), attachment information is held in the [FileSpecification](https://apireference.aspose.com/java/pdf/com.aspose.pdf/FileSpecification) object, gathered with other attachments in the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's EmbeddedFiles collection.
+As mentioned in [Get Attachments from a PDF Document](/pdf/java/get-attachments-from-a-pdf-document/), attachment information is held in the [FileSpecification](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) object, gathered with other attachments in the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object's EmbeddedFiles collection.
 
-The [FileSpecification](https://apireference.aspose.com/java/pdf/com.aspose.pdf/FileSpecification) object provides methods that get information about the attachment, for example:
+The [FileSpecification](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) object provides methods that get information about the attachment, for example:
 
 - getName() – gets the file name.
-- [getDescription()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/FileSpecification#getDescription--) – gets the file description.
+- [getDescription()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification#getDescription--) – gets the file description.
 - getMIMEType() – gets the file's MIME type.
 - getParams() – information about the file parameters, for example CheckSum, CreationDate, ModDate and Size.
 

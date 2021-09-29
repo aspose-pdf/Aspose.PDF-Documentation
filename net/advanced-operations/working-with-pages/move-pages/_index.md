@@ -16,13 +16,13 @@ sitemap:
 This topic explains how to move page from one PDF document to the end of another document using C#.
 To move an page we should:
 
-1. Create a [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) class object with the source PDF file.
-1. Create a [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) class object with the destination PDF file.
-1. Get Page from the the [PageCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection) collection's.
-1. [Add](https://apireference.aspose.com/net/pdf/aspose.pdf.pagecollection/add/methods/1) page to the destination document.
-1. Save the output PDF using the [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method.
+1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class object with the source PDF file.
+1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class object with the destination PDF file.
+1. Get Page from the the [PageCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection's.
+1. [Add](https://apireference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) page to the destination document.
+1. Save the output PDF using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 1. [Delete](https://apireference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) page in source document.
-1. Save the source PDF using the [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method.
+1. Save the source PDF using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 The following code snippet shows you how to move one page.
 
@@ -44,15 +44,15 @@ public static void MovePage()
 
 ## Moving bunch of Pages from one PDF Document to Another
 
-1. Create a [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) class object with the source PDF file.
-1. Create a [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) class object with the destination PDF file.
+1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class object with the source PDF file.
+1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class object with the destination PDF file.
 1. Define an array with page numbers to be moved.
 1. Run loop through array:
-    1. Get Page from the the [PageCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection) collection's.
-    1. [Add](https://apireference.aspose.com/net/pdf/aspose.pdf.pagecollection/add/methods/1) page to the destination document.
-1. Save the output PDF using the [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method.
+    1. Get Page from the the [PageCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection's.
+    1. [Add](https://apireference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) page to the destination document.
+1. Save the output PDF using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 1. [Delete](https://apireference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) page in source document using array.
-1. Save the source PDF using the [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method.
+1. Save the source PDF using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 The following code snippet shows you how to insert an empty page at the end of a PDF file.
 
@@ -78,11 +78,11 @@ public static void MoveBunchPages()
 
 ## Moving a Page in new location in the current PDF Document
 
-1. Create a [Document](https://apireference.aspose.com/net/pdf/aspose.pdf/document) class object with the source PDF file.
-1. Get Page from the the [PageCollection](https://apireference.aspose.com/net/pdf/aspose.pdf/pagecollection) collection's.
-1. [Add](https://apireference.aspose.com/net/pdf/aspose.pdf.pagecollection/add/methods/1) page to the new location (for example to end).
+1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class object with the source PDF file.
+1. Get Page from the the [PageCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection's.
+1. [Add](https://apireference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) page to the new location (for example to end).
 1. [Delete](https://apireference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) page in previous location.
-1. Save the output PDF using the [Save](https://apireference.aspose.com/net/pdf/aspose.pdf.document/save/methods/4) method.
+1. Save the output PDF using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 ```csharp
 public static void MovePagesInOnePDF()

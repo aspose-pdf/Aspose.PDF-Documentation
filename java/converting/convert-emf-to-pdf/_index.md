@@ -128,15 +128,15 @@ public static void convertEMFtoPDF_02() throws IOException {
 
 ## Add Image using PDF Operators
 
-Every PDF page object contains the [getResources()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page#getResources--) and [getContents()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page#getContents--) methods. Resources can be images and forms, for example, while content is represented by a set of PDF operators. Each operator has its own name and argument. 
+Every PDF page object contains the [getResources()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) and [getContents()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getContents--) methods. Resources can be images and forms, for example, while content is represented by a set of PDF operators. Each operator has its own name and argument. 
 
 This example use operators to add an image to a PDF file.
 
 To add an image to an existing PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object and open the input PDF document.
+1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
 1. Get the page you want to add an image to.
-1. Add the image into the page's [getResources()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page#getResources--) collection.
+1. Add the image into the page's [getResources()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) collection.
 1. Use operators to place the image on the page:
    1. Use the GSave operator to save the current graphical state.
    1. Use the ConcatenateMatrix operator to specify where the image is to be placed.

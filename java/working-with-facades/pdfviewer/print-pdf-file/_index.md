@@ -12,7 +12,7 @@ sitemap:
 
 ## Printing PDF File to Default Printer using Printer and Page Settings
 
-The [PdfViewer](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfViewer) class allows you to print a PDF file to the default printer. Therefore you need to create a [PdfViewer](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfViewer) object and open the PDF using the openPdfFile(..) method.
+The [PdfViewer](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) class allows you to print a PDF file to the default printer. Therefore you need to create a [PdfViewer](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) object and open the PDF using the openPdfFile(..) method.
 
 Call the printDocument(..) method to print the PDF to the default printer.
 

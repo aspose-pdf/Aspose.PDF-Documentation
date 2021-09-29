@@ -24,8 +24,8 @@ Optimization or linearization refers to the process of making a PDF file suitabl
 
 To optimize a PDF for web display:
 
-1. Open the input document in a [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object.
-1. Use the [optimize()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#optimize--) method.
+1. Open the input document in a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
+1. Use the [optimize()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#optimize--) method.
 1. Save the optimized document using the save(..) method.
 
 The following code snippet shows how to optimize a PDF document for the web.

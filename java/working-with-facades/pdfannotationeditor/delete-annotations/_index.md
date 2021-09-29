@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-You can use [PdfAnnotationEditor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfAnnotationEditor) class to delete  annotations, by a specified annotation type, from the existing PDF file. In order to do that you need to create a [PdfAnnotationEditor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfAnnotationEditor) object and bind input PDF file using bindPdf method. After that, call [deleteAnnotations](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfAnnotationEditor#deleteAnnotation-java.lang.String-) method, with the string parameter, to delete all the annotations from the file; the string parameter represents the annotation type to be deleted. Finally, use save method to save the updated PDF file.
+You can use [PdfAnnotationEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor) class to delete  annotations, by a specified annotation type, from the existing PDF file. In order to do that you need to create a [PdfAnnotationEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor) object and bind input PDF file using bindPdf method. After that, call [deleteAnnotations](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor#deleteAnnotation-java.lang.String-) method, with the string parameter, to delete all the annotations from the file; the string parameter represents the annotation type to be deleted. Finally, use save method to save the updated PDF file.
 
 The following code snippet shows you how to delete annotation by specified annotation type.
 
@@ -39,9 +39,9 @@ public static void DeleteAnnotation() {
     
   [PdfAnnotationEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor) allows you delete all the annotations from the existing PDF file.
   
-  First off, create a [PdfAnnotationEditor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfAnnotationEditor)  and bind input PDF file using BindPdf method. 
+  First off, create a [PdfAnnotationEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor)  and bind input PDF file using BindPdf method. 
   
-  After that, call [deleteAnnotations](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfAnnotationEditor#deleteAnnotation-java.lang.String-) method, to delete all the annotations from the file, and then use Save method to save the updated PDF file. The following code snippet shows you how to delete all the annotations from the PDF file.
+  After that, call [deleteAnnotations](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor#deleteAnnotation-java.lang.String-) method, to delete all the annotations from the file, and then use Save method to save the updated PDF file. The following code snippet shows you how to delete all the annotations from the PDF file.
 
     ```java
  public static void DeleteAllAnnotations() {

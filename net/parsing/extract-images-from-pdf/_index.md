@@ -11,9 +11,9 @@ sitemap:
     priority: 0.7
 ---
 
-Images are held in each page's [Resources](https://apireference.aspose.com/net/pdf/aspose.pdf/resources) collection's [Images](https://apireference.aspose.com/net/pdf/aspose.pdf/resources/properties/images) collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.
+Images are held in each page's [Resources](https://apireference.aspose.com/pdf/net/aspose.pdf/resources) collection's [Images](https://apireference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.
 
-The image's index returns an [XImage](https://apireference.aspose.com/net/pdf/aspose.pdf/ximage) object. This object provides a Save method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.
+The image's index returns an [XImage](https://apireference.aspose.com/pdf/net/aspose.pdf/ximage) object. This object provides a Save method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.
 
  ```csharp
  // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -15,7 +15,7 @@ sitemap:
 
 <abbr title="electronic publication">EPUB</abbr> (short for electronic publication) is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub. EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device.
 
-In order to convert EPUB files to PDF format, Aspose.PDF for Java has a class named [EpubLoadOptions](https://apireference.aspose.com/java/pdf/com.aspose.pdf/EpubLoadOptions) which is used to load source EPUB file. After that, the object is passed as an argument to [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/document) object initialization, as it helps the PDF rendering engine to determine the source document's input format.
+In order to convert EPUB files to PDF format, Aspose.PDF for Java has a class named [EpubLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/EpubLoadOptions) which is used to load source EPUB file. After that, the object is passed as an argument to [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization, as it helps the PDF rendering engine to determine the source document's input format.
 
 {{% alert color="primary" %}} 
 

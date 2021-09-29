@@ -10,11 +10,11 @@ draft: false
 
 ## Convert PDF Pages to Different Image Formats (Facades)
 
-In order to convert PDF pages to different image formats, you need to create [PdfConverter](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfConverter) object and open the PDF file using [bindPdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#bindPdf-java.lang.String-) method. 
+In order to convert PDF pages to different image formats, you need to create [PdfConverter](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter) object and open the PDF file using [bindPdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#bindPdf-java.lang.String-) method. 
 
 After that, you need to call [doConvert](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#doConvert--) method for initialization tasks. Then, you can loop through all the pages using [hasNextImage](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#hasNextImage--) and [getNextImage](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#getNextImage-java.io.OutputStream-) methods. The getNextImage method allows you to create image of a particular page. You also need to pass ImageType to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. 
 
-Finally, call the close method of the [PdfConverter](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfConverter) class.
+Finally, call the close method of the [PdfConverter](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter) class.
 
 The following code snippet shows you how to convert PDF pages to images.
 
