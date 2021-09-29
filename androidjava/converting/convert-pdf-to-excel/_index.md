@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Aspose.PDF for Java API lets you render your PDF files to Excel [XLS](https://wiki.fileformat.com/spreadsheet/xls/) and [XLSX](https://wiki.fileformat.com/spreadsheet/xlsx/) file formats. We already have another API, known as [Aspose.Cells for Java](https://products.aspose.com/cells/java), that provides the capability to create and manipulate existing Excel workbooks. It also provides the capability to transform Excel workbooks to PDF format.
+Aspose.PDF for Java API lets you render your PDF files to Excel [XLS](https://docs.fileformat.com/spreadsheet/xls/) and [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) file formats. We already have another API, known as [Aspose.Cells for Java](https://products.aspose.com/cells/java), that provides the capability to create and manipulate existing Excel workbooks. It also provides the capability to transform Excel workbooks to PDF format.
 
 {{% alert color="primary" %}}
 

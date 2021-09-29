@@ -6,7 +6,7 @@ url: /cpp/convert-pdf-to-doc-and-docx-in-cpp/
 lastmod: "2021-06-05"
 ---
 
-Aspose.PDF for C++ API lets you read and convert PDF files to Microsoft Word [DOC](https://wiki.fileformat.com/word-processing/doc) and [DOCX](https://wiki.fileformat.com/word-processing/docx) file formats with simple lines of code. The API focuses on providing quality output with efficient processing in your C++ applications without being worried about the underlying file formats. The following code samples show how easy it is to convert PDF files to DOC and DOCX using our API.
+Aspose.PDF for C++ API lets you read and convert PDF files to Microsoft Word [DOC](https://docs.fileformat.com/word-processing/doc) and [DOCX](https://docs.fileformat.com/word-processing/docx) file formats with simple lines of code. The API focuses on providing quality output with efficient processing in your C++ applications without being worried about the underlying file formats. The following code samples show how easy it is to convert PDF files to DOC and DOCX using our API.
 ## <ins>**Convert PDF to DOC**
 In order to convert PDF to DOC, Aspose.PDF for CPP offers [Save ](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa)method of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) class. You need to pass the output path and enum SaveFormat:: Doc to the Save method to convert PDF to DOC. The following code snippet shows how to convert PDF to DOC:
 
