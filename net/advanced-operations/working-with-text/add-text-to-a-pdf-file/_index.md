@@ -1,5 +1,5 @@
 ---
-title: Add Text to PDF | C#
+title: Add Text to PDF using C#
 linktitle: Add Text to PDF 
 type: docs
 weight: 10

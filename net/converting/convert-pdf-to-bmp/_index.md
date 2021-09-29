@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to BMP | C#
+title: Convert PDF to BMP using C#
 linktitle: Convert PDF to BMP
 type: docs
 weight: 40

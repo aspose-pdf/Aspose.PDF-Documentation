@@ -1,5 +1,5 @@
 ---
-title: PDF Free Text Annotation | C#
+title: PDF Free Text Annotation using C#
 linktitle: Free Text Annotation
 type: docs
 weight: 30

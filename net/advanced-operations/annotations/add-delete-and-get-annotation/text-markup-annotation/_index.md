@@ -1,5 +1,5 @@
 ---
-title: PDF Text Markup Annotation | C#
+title: PDF Text Markup Annotation using C#
 linktitle: Text Markup Annotation
 type: docs
 weight: 70

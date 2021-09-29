@@ -1,5 +1,5 @@
 ---
-title: Convert DICOM to PDF | C#
+title: Convert DICOM to PDF using C#
 linktitle: Convert DICOM to PDF
 type: docs
 weight: 250

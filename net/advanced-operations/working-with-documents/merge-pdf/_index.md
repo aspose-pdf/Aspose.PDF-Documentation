@@ -1,5 +1,5 @@
 ---
-title: Merge PDF | C#
+title: Merge PDF using C#
 linktitle: Merge PDF files
 type: docs
 weight: 50

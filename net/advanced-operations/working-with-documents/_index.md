@@ -1,5 +1,5 @@
 ---
-title: Working with PDF Documents | C#
+title: Working with PDF Documents using C#
 linktitle: Working with Documents
 type: docs
 weight: 10

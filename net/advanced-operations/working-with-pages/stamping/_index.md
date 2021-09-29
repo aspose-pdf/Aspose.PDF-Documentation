@@ -1,5 +1,5 @@
 ---
-title: Stamping with Aspose.PDF | C#
+title: Stamping with Aspose.PDF using C#
 linktitle: Stamping
 type: docs
 weight: 120

@@ -1,5 +1,5 @@
  ---
-title: Text Formatting inside PDF | C#
+title: Text Formatting inside PDF using C#
 linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
