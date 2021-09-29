@@ -235,4 +235,3 @@ foreach (Aspose.PDF.Page page in pdfDocument.Pages)
 
 pdfDocument.Save(outFile);
 ```
-
