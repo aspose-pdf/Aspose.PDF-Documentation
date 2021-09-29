@@ -48,7 +48,7 @@ public static void AddImageStampInPDFFile() {
 
 ## Control Image Quality when Adding Stamp
 
-The [ImageStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/ImageStamp) class lets you add an image as a stamp in a PDF document. It also allows you to control the image quality when adding an image as a watermark in a PDF file. To allow this, a method named setQuality(...) has been added to the [ImageStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/ImageStamp) class. A similar method can also be found in the [Stamp](http://www.aspose.com/api/java/pdf/com.aspose.pdf/classes/Stamp) class of the com.aspose.pdf.facades package. 
+The [ImageStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/ImageStamp) class lets you add an image as a stamp in a PDF document. It also allows you to control the image quality when adding an image as a watermark in a PDF file. To allow this, a method named setQuality(...) has been added to the [ImageStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/ImageStamp) class. A similar method can also be found in the [Stamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Stamp) class of the com.aspose.pdf.facades package. 
 
 The following code snippet shows you how to control image quality when adding as stamp in the PDF file.
 

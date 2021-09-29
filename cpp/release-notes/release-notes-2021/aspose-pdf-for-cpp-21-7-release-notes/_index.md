@@ -56,4 +56,4 @@ Names of the next public header files have been changed:
 * Field:Aspose.Pdf.OptimizedMemoryStream.DefaultBufferSize
 * Property:Aspose.Pdf.XslFoLoadOptions.XsltArgumentList
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/cpp/pdf/).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp/).

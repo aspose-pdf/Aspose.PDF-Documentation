@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-The [PdfContentEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/PdfContentEditor) class present underAspose.Pdf.Facades package provides the flexibility to add Javascript actions to a PDF file. You can create a link with the serial actions corresponding to execute a menu item in the PDF viewer. This class also provides the feature to create additional actions for document events. 
+The [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) class present underAspose.Pdf.Facades package provides the flexibility to add Javascript actions to a PDF file. You can create a link with the serial actions corresponding to execute a menu item in the PDF viewer. This class also provides the feature to create additional actions for document events. 
 
 First of all, an object is drawn in the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document), in our example a [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle). And set the action [createJavaScriptLink](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) to the Rectangle. After you may save your document.
 

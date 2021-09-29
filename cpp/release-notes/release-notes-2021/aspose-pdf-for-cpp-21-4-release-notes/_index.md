@@ -31,4 +31,4 @@ Access Violation Error while saving PDF documents to DOCX format has been fixed.
 * Method Aspose:Pdf:Facades:PdfConverter:MergeImages(System:Collections:Generic:List<System:IO:Stream>,System:Drawing:Imaging:ImageFormat,Aspose:Pdf:Facades:ImageMergeMode,System:Nullable<int32_t>,System:Nullable<int32_t>)
 * Method Aspose:Pdf:Facades:PdfConverter:MergeImagesAsTiff(System:Collections:Generic:List<System:IO:Stream>)
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/cpp/pdf/).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp/).

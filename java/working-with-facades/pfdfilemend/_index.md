@@ -10,11 +10,11 @@ sitemap:
     priority: 0.7
 ---
 
-It would seem not a difficult task to insert [FormattedText](http://www.aspose.com/api/java/pdf/com.aspose.pdf.facades/classes/FormattedText) into PDF document, provided that you have the original editable version of this document. Suppose you created a document, and then remembered that you need to add another line or we are talking about bigger volume of documents, in both cases it will help you Aspose.PDF Facades. Let's consider the possibility of adding text in an existing PDF File with [PdfFileMend](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileMend) class.
+It would seem not a difficult task to insert [FormattedText](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/classes/FormattedText) into PDF document, provided that you have the original editable version of this document. Suppose you created a document, and then remembered that you need to add another line or we are talking about bigger volume of documents, in both cases it will help you Aspose.PDF Facades. Let's consider the possibility of adding text in an existing PDF File with [PdfFileMend](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileMend) class.
 
 ## Add Text in an Existing PDF File (facades)
 
-We can add text in several ways. Consider the first. We take the [FormattedText](http://www.aspose.com/api/java/pdf/com.aspose.pdf.facades/classes/FormattedText) and add it to the Page. After, we indicate the coordinates of the lower left corner, and then we add our text to the Page.
+We can add text in several ways. Consider the first. We take the [FormattedText](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/classes/FormattedText) and add it to the Page. After, we indicate the coordinates of the lower left corner, and then we add our text to the Page.
 
 ```java
     public static void AddText01()

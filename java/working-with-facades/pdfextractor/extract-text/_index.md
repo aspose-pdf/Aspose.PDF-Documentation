@@ -12,7 +12,7 @@ sitemap:
 
 ## Extract Text from the Whole PDF File (facades)
 
-[pdfExtractor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfExtractor) class allows you to extract text from the whole PDF file. You need to create an object of [pdfExtractor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfExtractor) class and bind the input PDF file using [**bindPdf**](http://www.aspose.com/api/java/pdf/com.aspose.pdf.facades/classes/pdfextractor/methods/bindPdf\(java.lang.String\)/) method. [extractText](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfExtractor#extractText--) method helps you extract all the text into the memory. However, in order to get the text, you need to use getText method. The following code snippet shows you how to extract text from the whole PDF file.
+[pdfExtractor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfExtractor) class allows you to extract text from the whole PDF file. You need to create an object of [pdfExtractor](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfExtractor) class and bind the input PDF file using [**bindPdf**](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/classes/pdfextractor/methods/bindPdf\(java.lang.String\)/) method. [extractText](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfExtractor#extractText--) method helps you extract all the text into the memory. However, in order to get the text, you need to use getText method. The following code snippet shows you how to extract text from the whole PDF file.
 
 ```java
 

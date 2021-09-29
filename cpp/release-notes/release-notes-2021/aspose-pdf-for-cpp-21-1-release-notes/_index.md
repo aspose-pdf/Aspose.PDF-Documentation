@@ -22,4 +22,4 @@ The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 21.1
 * Field Aspose.Pdf.HtmlSaveOptions.SaveFullFont
 * Property Aspose.Pdf.PdfFormatConversionOptions.IsAsyncImageStreamsConversionMode
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/cpp/pdf/).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp/).

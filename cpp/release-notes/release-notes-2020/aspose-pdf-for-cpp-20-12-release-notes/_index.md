@@ -35,4 +35,4 @@ The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 20.1
 * Property Aspose.Pdf.Text.MarkupParagraph.ContinuationPageNumbers
 * Property Aspose.Pdf.Text.ParagraphAbsorber.IsMulticolumnParagraphsAllowed
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/cpp/pdf/).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp/).
