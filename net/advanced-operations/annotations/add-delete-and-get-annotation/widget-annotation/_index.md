@@ -1,5 +1,5 @@
 ---
-title: PDF Widget Annotation | C#
+title: PDF Widget Annotation using C#
 linktitle: Widget Annotation
 type: docs
 weight: 80

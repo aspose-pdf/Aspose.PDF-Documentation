@@ -1,5 +1,5 @@
 ---
-title: PDF Tooltip | C#
+title: PDF Tooltip using C#
 linktitle: PDF Tooltip
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: Working with Tables in PDF | C#
+title: Working with Tables in PDF using C#
 linktitle: Working with Tables
 type: docs
 weight: 50

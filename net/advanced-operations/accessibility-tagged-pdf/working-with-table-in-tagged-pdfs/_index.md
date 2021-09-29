@@ -1,5 +1,5 @@
 ---
-title: Working with Table in Tagged PDFs | C#
+title: Working with Table in Tagged PDFs using C#
 linktitle: Working with Table in Tagged PDFs
 type: docs
 weight: 40

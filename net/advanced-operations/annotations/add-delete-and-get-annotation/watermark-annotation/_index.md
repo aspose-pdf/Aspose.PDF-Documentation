@@ -1,5 +1,5 @@
 ---
-title: PDF Watermark Annotation | C#
+title: PDF Watermark Annotation using C#
 linktitle: Watermark Annotation
 type: docs
 weight: 130
