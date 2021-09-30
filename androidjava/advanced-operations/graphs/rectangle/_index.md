@@ -94,7 +94,7 @@ public class WorkingWithGraphs {
 
 Aspose.PDF for Java also offers the feature to fill rectangle object with a certain color.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Rectangle) object that is filled with color.
+The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object that is filled with color.
 
 ```java
    public static void ExampleRectangleFilledSolidColor() {
@@ -131,7 +131,7 @@ Look at the result of rectangle filled solid color:
 
 Aspose.PDF for Java supports the feature to add graph objects to PDF documents and sometimes it is required to fill graph objects with Gradient Color. To Fill graph objects with Gradient Color, We need to set setPatterColorSpace with gradientAxialShading object as following.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Rectangle) object that is filled with Gradient Color.
+The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object that is filled with Gradient Color.
 
 ```java
    public static void ExampleRectangleFilledGradient() {
@@ -163,7 +163,7 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
 
 ## Create Rectangle with Alpha color channel
 
-Aspose.PDF for Java supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Rectangle) object with Alpha color channel.
+Aspose.PDF for Java supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object with Alpha color channel.
 
 Pixels of the image can store information about their opacity along with color value. This allows creating images with transparent or semi-transparent areas.
 
@@ -206,7 +206,7 @@ In our code snippet we used [fromArgb](https://apireference.aspose.com/pdf/java/
 
 Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. When adding more than one instance of same object inside PDF file, we can control their rendering by specifying the Z-Order. Z-Order is also used when we need to render objects on top of each other.
 
-The following code snippet shows the steps to render [Rectangle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Rectangle) objects on top of each other.
+The following code snippet shows the steps to render [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) objects on top of each other.
 
 ```java
    public static void Controlling_Z_Order() {

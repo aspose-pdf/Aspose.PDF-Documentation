@@ -12,19 +12,19 @@ lastmod: "2021-06-05"
 
 This topic helps you understand how to get the properties of the document window, viewer application, and how pages are displayed.
 
-To set these different properties, open the PDF file using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class. You can now get the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's methods, such as
+To set these different properties, open the PDF file using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class. You can now get the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object's methods, such as
 
-- [IsCenterWindow](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#isCenterWindow--) – Center the document window on screen. Default: false.
-- [SetDirection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setDirection-int-) – Reading order. This determines how pages are laid out when displayed side by side. Default: left to right.
-- [isDisplayDocTitle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#isDisplayDocTitle--) – Display the document title in the document window title bar. Default: false (the title is displayed).
-- [setHideMenuBar](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setHideMenubar-boolean-) – Hide or display the document window's menu bar. Default: false (menu bar is displayed).
-- [setHideToolBar](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setHideToolBar-boolean-) – Hide or display the document window's toolbar. Default: false (toolbar is displayed).
-- [setHideWindowUI](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setHideWindowUI-boolean-) – Hide or display document window elements like scroll bars. Default: false (UI elements are displayed).
-- [setNonFullScreenPageMode](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setNonFullScreenPageMode-int-) – How the document is displayed when it is not displayed in full-page mode.
-- [setPageLayout](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setPageLayout-int-) – The page layout.
-- [setPageMode](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setPageMode-int-) – How the document is displayed when first opened. The options are show thumbnails, full-screen, show attachment panel.
+- [IsCenterWindow](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#isCenterWindow--) – Center the document window on screen. Default: false.
+- [SetDirection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-) – Reading order. This determines how pages are laid out when displayed side by side. Default: left to right.
+- [isDisplayDocTitle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#isDisplayDocTitle--) – Display the document title in the document window title bar. Default: false (the title is displayed).
+- [setHideMenuBar](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideMenubar-boolean-) – Hide or display the document window's menu bar. Default: false (menu bar is displayed).
+- [setHideToolBar](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideToolBar-boolean-) – Hide or display the document window's toolbar. Default: false (toolbar is displayed).
+- [setHideWindowUI](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideWindowUI-boolean-) – Hide or display document window elements like scroll bars. Default: false (UI elements are displayed).
+- [setNonFullScreenPageMode](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setNonFullScreenPageMode-int-) – How the document is displayed when it is not displayed in full-page mode.
+- [setPageLayout](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageLayout-int-) – The page layout.
+- [setPageMode](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageMode-int-) – How the document is displayed when first opened. The options are show thumbnails, full-screen, show attachment panel.
 
-The following code snippet shows you how to get the properties using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class.
+The following code snippet shows you how to get the properties using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
 
 ```java
 package com.aspose.pdf.examples;
@@ -85,24 +85,24 @@ This topic explains how to set the properties of the document window, viewer app
 
 To set these different properties:
 
-1. Open the PDF file using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class.
+1. Open the PDF file using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
 1. Set the Document object's properties.
 1. Save the updated PDF file using the Save method.
 
 Properties available are:
 
-- [setCenterWindow](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setCenterWindow-boolean-)
-- [setDirection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setDirection-int-)
-- [setDisplayDocTitle](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setDisplayDocTitle-boolean-)
-- [setFitWindow](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setFitWindow-boolean-)
-- [setHideMenuBar](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setHideMenubar-boolean-)
-- [setHideToolBar](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setHideToolBar-boolean-)
-- [setHideWindowUI](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setHideWindowUI-boolean-)
-- [setNonFullScreenPageMode](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setNonFullScreenPageMode-int-)
-- [setPageLayout](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setPageLayout-int-)
-- [setPageMode](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#setPageMode-int-)
+- [setCenterWindow](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setCenterWindow-boolean-)
+- [setDirection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-)
+- [setDisplayDocTitle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setDisplayDocTitle-boolean-)
+- [setFitWindow](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setFitWindow-boolean-)
+- [setHideMenuBar](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideMenubar-boolean-)
+- [setHideToolBar](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideToolBar-boolean-)
+- [setHideWindowUI](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideWindowUI-boolean-)
+- [setNonFullScreenPageMode](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setNonFullScreenPageMode-int-)
+- [setPageLayout](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageLayout-int-)
+- [setPageMode](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageMode-int-)
 
-The following code snippet shows you how to set the properties using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class.
+The following code snippet shows you how to set the properties using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
 
 ```java
   public static void SetDocumentWindowAndPageDisplayProperties() {
@@ -160,8 +160,8 @@ PDF readers support [a core of 14 fonts](http://en.wikipedia.org/wiki/Portable_D
 
 Aspose.PDF for Java supports font embedding in existing PDF documents. You can embed a complete font or a subset. To embed the font:
 
-1. Open an existing PDF file using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class.
-1. Use the [com.aspose.pdf.Font](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Font) class to embed the font.
+1. Open an existing PDF file using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
+1. Use the [com.aspose.pdf.Font](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Font) class to embed the font.
    1. The setEmbedded(true) method embeds the full font.
    1. The pageFont.isSubset(true) method embeds a subset of the font.
 
@@ -204,7 +204,7 @@ public static void EmbeddingFontsInAnExistingPDFFile() {
 
 If you need to use any font other than the 14 core fonts supported by Adobe Reader, then you must embed the font description while generating a PDF file. If font information is not embedded, Adobe Reader will take it from the Operating System if it’s installed over the system, or it will construct a substitute font according to the font descriptor in the PDF. Please note that embedded font must be installed on the host machine i.e. in case of the following code ‘Univers Condensed’ font is installed over the system.
 
-We use the property setEmbedded of [Font](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Font) class to embed the font information into PDF file. Setting the value of this property to ‘true’ will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
+We use the property setEmbedded of [Font](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Font) class to embed the font information into PDF file. Setting the value of this property to ‘true’ will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
 
 ```java
 public static void EmbeddingFontsWhileCreatingPDF() {
@@ -254,7 +254,7 @@ public static void SetDefaultFontNameWhileSavingPDF() {
 
 ## Get All Fonts from PDF Document
 
-In case you want to get all fonts from a PDF document, you can use **Document.getFontUtilities().getAllFonts()** method provided in [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class. Please check following code snippet in order to get all fonts from an existing PDF document:
+In case you want to get all fonts from a PDF document, you can use **Document.getFontUtilities().getAllFonts()** method provided in [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class. Please check following code snippet in order to get all fonts from an existing PDF document:
 
 ```java
 public static void GetAllFontsFromPDFDocument() {
@@ -274,7 +274,7 @@ public static void GetAllFontsFromPDFDocument() {
 
 Sometimes, you want to set or get the zoom factor of a PDF document. You can easily accomplish this requirement with Aspose.PDF.
 
-The [GoToAction](https://apireference.aspose.com/java/pdf/com.aspose.pdf/GoToAction) object allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file's Zoom factor.
+The [GoToAction](https://apireference.aspose.com/pdf/java/com.aspose.pdf/GoToAction) object allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file's Zoom factor.
 
 ```java
   public static void GetSetZoomFactorOfPDFFile() {

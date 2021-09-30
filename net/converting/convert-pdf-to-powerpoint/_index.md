@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to PPTX | C#
+title: Convert PDF to PPTX using C#
 linktitle: Convert PDF to PowerPoint
 type: docs
 weight: 110

@@ -1,5 +1,5 @@
 ---
-title: PDF Caret Annotation | C#
+title: PDF Caret Annotation using C#
 linktitle: Caret Annotation
 type: docs
 weight: 90

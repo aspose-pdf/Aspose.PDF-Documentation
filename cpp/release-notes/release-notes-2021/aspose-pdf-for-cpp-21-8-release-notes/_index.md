@@ -25,4 +25,4 @@ Performance of following features has been improved:
 * ASN1Obj, AdobeFontMetrics;
 * TextSegmentBuilder.
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/cpp/pdf/).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp/).

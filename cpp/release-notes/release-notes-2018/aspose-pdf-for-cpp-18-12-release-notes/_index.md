@@ -16,4 +16,4 @@ New version of Aspose.PDF for C++ has codebase of Aspose.PDF for .Net 18.12
 ### **API Reference changes in Aspose.PDF for C++ 18.12**
 New Aspose.Pdf.Engine.Presentation.Graphics namespace is introduced.
 
-Full API reference is available on <https://apireference.aspose.com/cpp/pdf/>
+Full API reference is available on <https://apireference.aspose.com/pdf/cpp/>

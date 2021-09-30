@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to PNG | C#
+title: Convert PDF to PNG using C#
 linktitle: Convert PDF to PNG
 type: docs
 weight: 20

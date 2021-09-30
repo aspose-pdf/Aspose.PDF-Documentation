@@ -13,7 +13,7 @@ sitemap:
 
 ## Creating Structure Elements
 
-In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using [ITaggedContent](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to create structure elements of Tagged PDF:
+In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to create structure elements of Tagged PDF:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -75,7 +75,7 @@ document.save(path + "StructureElements.pdf");
 
 ## Creating Structure Elements Tree
 
-In order to create structure elements tree in a Tagged PDF Document, Aspose.PDF offers methods to create a structure element tree using [ITaggedContent](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to create structure elements tree of Tagged PDF Document:
+In order to create structure elements tree in a Tagged PDF Document, Aspose.PDF offers methods to create a structure element tree using [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to create structure elements tree of Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -199,7 +199,7 @@ document.save(path + "IllustrationStructureElements.pdf");
 
 ## **Create PDF with Tagged Image**
 
-In order to create PDF with Tagged Image, Aspose.PDF offers [createFigureElement()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createFigureElement--) method of [ITaggedContent](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent) Interface. The following code snippet shows the functionality.
+In order to create PDF with Tagged Image, Aspose.PDF offers [createFigureElement()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createFigureElement--) method of [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. The following code snippet shows the functionality.
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -222,7 +222,7 @@ document.save("PDFwithTaggedImage.pdf");
 
 ## Create PDF with Tagged Text
 
-In order to create PDF with Tagged Text, Aspose.PDF offers [ITaggedContent](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent) Interface. The following code snippet shows the functionality.
+In order to create PDF with Tagged Text, Aspose.PDF offers [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. The following code snippet shows the functionality.
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java

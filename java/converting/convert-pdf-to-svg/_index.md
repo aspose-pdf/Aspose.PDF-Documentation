@@ -25,7 +25,7 @@ SVG images and their behaviors are defined in XML text files. This means that th
 
 ## Convert PDF pages to SVG images
 
-Aspose.PDF for Java supports the feature to convert PDF file to SVG format. To accomplish this requirement, the [SvgSaveOptions](https://apireference.aspose.com/java/pdf/com.aspose.pdf/SvgSaveOptions) class has been introduced into the com.aspose.pdf package. Instantiate an object of [SvgSaveOptions](https://apireference.aspose.com/java/pdf/com.aspose.pdf/SvgSaveOptions) and pass it as a second argument to the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document).save(..) method.
+Aspose.PDF for Java supports the feature to convert PDF file to SVG format. To accomplish this requirement, the [SvgSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) class has been introduced into the com.aspose.pdf package. Instantiate an object of [SvgSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) and pass it as a second argument to the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) method.
 
 The following code snippet shows the steps for converting a PDF file to SVG format.
 

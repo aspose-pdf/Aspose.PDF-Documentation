@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-In order to get XMP metadata from a PDF file, you need to create [PdfXmpMetadata](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfXmpMetadata) object and bind the PDF file using [bindPdf(..)](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/Facade#bindPdf-com.aspose.pdf.IDocument-) method. You can pass specific XMP metadata properties to the [PdfXmpMetadata](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfXmpMetadata) object to get their values.
+In order to get XMP metadata from a PDF file, you need to create [PdfXmpMetadata](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfXmpMetadata) object and bind the PDF file using [bindPdf(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Facade#bindPdf-com.aspose.pdf.IDocument-) method. You can pass specific XMP metadata properties to the [PdfXmpMetadata](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfXmpMetadata) object to get their values.
 
 The following code snippet shows you how to get XMP metadata from a PDF file.
 

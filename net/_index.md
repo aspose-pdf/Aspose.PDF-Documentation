@@ -45,6 +45,6 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.PDF for .NET Release Notes](/pdf/net/release-notes/)
 - [Aspose.PDF for .NET Product Page](https://products.aspose.com/pdf/net/)
 - [Install Aspose.PDF for .NET NuGet Package](https://www.nuget.org/packages/Aspose.PDF/)
-- [Aspose.PDF for .NET API Reference Guide](https://apireference.aspose.com/net/pdf/)
+- [Aspose.PDF for .NET API Reference Guide](https://apireference.aspose.com/pdf/net/)
 - [Aspose.PDF for .NET Free Support Forum](https://forum.aspose.com/c/pdf/)
 - [Aspose.PDF for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)

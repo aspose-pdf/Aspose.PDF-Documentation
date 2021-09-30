@@ -6,7 +6,7 @@ weight: 80
 url: /net/aspose-pdf-for-net-17-5-release-notes/
 lastmod: "2021-06-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -25,7 +25,7 @@ sitemap:
 |PDFNET-42222|Problem with using Stream as input and XmlResolver|Enhancement|
 |PDFNET-42310|Text fragment is not replaced|Bug|
 |PDFNET-40798|Exception when trying to extract text from PDF file|Bug|
-|PDFNET-40781|KeyNotFoundException on Document.Pages[i](https://saltov.dynabic.com/wiki/pages/createpage.action?spaceKey=Support&title=i&linkCreation=true&fromPageId=19791880) with valid index|Bug|
+|PDFNET-40781|KeyNotFoundException on Document.Pages with valid index|Bug|
 |PDFNET-40797|NullReferenceException while extracting PDF file|Bug|
 |PDFNET-42086|Problem setting "XmpPdfAExtensionValueType|Bug|
 |PDFNET-41562|Text being cutoff with Google's Noto Fonts|Bug|
@@ -57,8 +57,11 @@ sitemap:
 |PDFNET-40474|PDF to PDF/A - Resultant file is not compliant|Bug|
 |PDFNET-40679|PDF to HTML: TOC links are lost in output HTML|Bug|
 |PDFNET-40680|PDF to PDF/A - Resultant file is not compliant|Bug|
-## **Public API Changes**
-#### **Added API's**
+
+## Public API Changes
+
+### Added API's
+
 Property Aspose.PDF.Annotations.PolyAnnotation.Measure   
 Property Aspose.PDF.Document.FontUtilities   
 Method Aspose.PDF.Document.BindXml  (System.IO.Stream,System.IO.Stream,System.Xml.XmlReaderSettings) 
@@ -118,7 +121,7 @@ Property Aspose.PDF.XfaConverter.XfaParserOptions.PageSize
 Property Aspose.PDF.XfaConverter.XfaParserOptions.Signed 
 Property Aspose.PDF.XfaConverter.XfaParserOptions.EmulateRequierdGroups 
 Property Aspose.PDF.XfaConverter.XfaParserOptions.BasePath 
-#### **Removed API's**
+### Removed API's
 Method Aspose.PDF.Document.#ctor(Aspose.PDF.Generator.Pdf) 
 Method Aspose.PDF.Facades.PdfAnnotationEditor.BindPdf(Aspose.PDF.Generator.Pdf) 
 Method Aspose.PDF.Facades.PdfBookmarkEditor.BindPdf(Aspose.PDF.Generator.Pdf) 

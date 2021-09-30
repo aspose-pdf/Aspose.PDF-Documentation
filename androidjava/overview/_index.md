@@ -38,9 +38,9 @@ In addition, Aspose.PDF for Java can be applied to easily convert text, images, 
 
 Learn more about:
 
-- [Supported File Formats](/pdf/android-via-java/supported-file-formats/)
-- [Key Features of Aspose.PDF](/pdf/android-via-java/key-features/)
-- [System Requirements](/pdf/android-via-java/system-requirements/)
-- [Installation](/pdf/android-via-java/installation/)
-- [Licensing](/pdf/android-via-java/licensing/)
-- [Technical Support](/pdf/android-via-java/technical-support/)
+- [Supported File Formats](/pdf/androidjava/supported-file-formats/)
+- [Key Features of Aspose.PDF](/pdf/androidjava/key-features/)
+- [System Requirements](/pdf/androidjava/system-requirements/)
+- [Installation](/pdf/androidjava/installation/)
+- [Licensing](/pdf/androidjava/licensing/)
+- [Technical Support](/pdf/androidjava/technical-support/)

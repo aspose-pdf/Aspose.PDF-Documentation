@@ -13,7 +13,7 @@ sitemap:
 
 ## Add Text Stamp with Java
 
-Aspose.PDF for Java provides [TextStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/TextStamp) class to add a text stamp in a PDF file. The [TextStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/TextStamp) class provides necessary methods to specify font size, font style, and font color etc for stamp object. In order to add text stamp, first you need to create a [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object and a [TextStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/TextStamp) object using required methods. After that, you may call [addStamp(..)](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) method of the [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) class to add the stamp in the PDF document.
+Aspose.PDF for Java provides [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) class to add a text stamp in a PDF file. The [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) class provides necessary methods to specify font size, font style, and font color etc for stamp object. In order to add text stamp, first you need to create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and a [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) object using required methods. After that, you may call [addStamp(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) method of the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) class to add the stamp in the PDF document.
 
 The following code snippet shows you how to add text stamp in the PDF file.
 
@@ -55,9 +55,9 @@ public class ExampleStampingImage {
 
 ## Define alignment for TextStamp object
 
-Adding watermarks to PDF documents is one of the frequent demanded features and Aspose.PDF for Java is fully capable of adding Image as well as Text watermarks. The [TextStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/TextStamp) class provides the feature to add text stamps over the PDF file. Recently there has been a requirement to support the feature to specify the alignment of text when using [TextStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/TextStamp) object. So in order to fulfill this requirement, we have introduced setTextAlignment(..) method in [TextStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/TextStamp) class. By using this method, you can specify the Horizontal text alignment.
+Adding watermarks to PDF documents is one of the frequent demanded features and Aspose.PDF for Java is fully capable of adding Image as well as Text watermarks. The [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) class provides the feature to add text stamps over the PDF file. Recently there has been a requirement to support the feature to specify the alignment of text when using [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) object. So in order to fulfill this requirement, we have introduced setTextAlignment(..) method in [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) class. By using this method, you can specify the Horizontal text alignment.
 
-The following code snippets shows an example on how to load an existing PDF document and add [TextStamp](https://apireference.aspose.com/java/pdf/com.aspose.pdf/TextStamp) over it.
+The following code snippets shows an example on how to load an existing PDF document and add [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) over it.
 
 ```java
     public static void DefineAlignmentTextStamp() {

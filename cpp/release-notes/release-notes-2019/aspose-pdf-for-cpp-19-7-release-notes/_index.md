@@ -45,7 +45,7 @@ New version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 19.7.
 |PDFCPP-1004|Fix CsToCppPorter IntPtr with initializer|Bug|
 |PDFCPP-1005|Support of PixelFormat::Format32bppPArgb|Bug|
 ### **API Reference changes in Aspose.PDF for C++ 19.7**
-Full API reference is available on [API Reference](https://apireference.aspose.com/cpp/pdf/) Page of Aspose.PDF for C++.
+Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp/) Page of Aspose.PDF for C++.
 #### **Added APIs:**
 - Property Aspose.Pdf.Text.TextEditOptions.ReplacementFont  
 - Enumeration member Aspose.Pdf.Text.TextEditOptions.<p>NoCharacterAction.UseCustomReplacementFont     

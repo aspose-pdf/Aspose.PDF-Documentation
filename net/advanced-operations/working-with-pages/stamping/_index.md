@@ -1,11 +1,11 @@
 ---
-title: Stamping in PDF documents using C#
+title: Stamping with Aspose.PDF using C#
 linktitle: Stamping
 type: docs
 weight: 120
 url: /net/stamping/
 description: This section describes how to add image stamps and text stamps to a PDF page.
-lastmod: "2021-09-10"
+lastmod: "2021-06-05"
 aliases:
     - /net/adding-stamp-in-a-pdf-file/
     - /net/adding-text-stamp-watermark/
@@ -22,6 +22,7 @@ The Stamp in the PDF file gives the additional information for the PDF file, suc
 
 Check the following sections to learn how to add a stamp with C#:
 
-- [Add Image stamps in PDFs](/pdf/net/image-stamps-in-pdf-page/) - add image stamp, control image quality, image stamp as background your PDF file.
-- [Add Text stamps in PDFs](/pdf/net/text-stamps-in-the-pdf-file/) - add text stamp, define alignment for TextStamp object, fill stroke text as stamp in PDF file.
-- [Add Page stamps in PDFs](/pdf/net/page-stamps-in-the-pdf-file/) -  add complex stamp based on page from another PDF. 
+- [Add Image stamps in PDF page](/pdf/net/image-stamps-in-pdf-page/) - add image stamp, control image quality, image stamp as background your PDF file.
+- [Add Text stamps in the PDF File](/pdf/net/text-stamps-in-the-pdf-file/) - add text stamp, define alignment for TextStamp object, fill stroke text as stamp in PDF file.
+
+

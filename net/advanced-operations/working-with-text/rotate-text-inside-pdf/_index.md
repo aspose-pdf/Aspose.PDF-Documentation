@@ -1,5 +1,5 @@
 ---
-title: Rotate Text Inside PDF | C#
+title: Rotate Text Inside PDF using C#
 linktitle: Rotate Text Inside PDF
 type: docs
 weight: 50

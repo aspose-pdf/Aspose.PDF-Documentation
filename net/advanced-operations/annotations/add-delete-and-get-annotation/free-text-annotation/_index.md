@@ -1,5 +1,5 @@
 ---
-title: PDF Free Text Annotation | C#
+title: PDF Free Text Annotation using C#
 linktitle: Free Text Annotation
 type: docs
 weight: 30
@@ -13,7 +13,7 @@ sitemap:
 
 ## Add New (or Create) Free Text Annotation
 
-A free text annotation displays text directly on the page. The [PdfContentEditor.CreateFreeText](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) method allows creating this type of annotation. In the following snippet, we add free text annotation above the first occurrence of the string.
+A free text annotation displays text directly on the page. The [PdfContentEditor.CreateFreeText](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) method allows creating this type of annotation. In the following snippet, we add free text annotation above the first occurrence of the string.
 
 ```csharp
 private static void AddFreeTextAnnotationDemo()
@@ -132,9 +132,9 @@ doc.Save(dataDir);
 
 This part looks at how to format the text in a free text annotation.
 
-Annotations are contained in a [Page](https://apireference.aspose.com/net/pdf/aspose.pdf/page) object's [AnnotationCollection](https://apireference.aspose.com/net/pdf/aspose.pdf.annotations/annotationcollection) collection. When adding a [FreeTextAnnotation](https://apireference.aspose.com/net/pdf/aspose.pdf.annotations/freetextannotation) to a PDF document, you can specify the formatting information such as font, size, color and so on using the [DefaultAppearance](https://apireference.aspose.com/net/pdf/aspose.pdf.annotations/defaultappearance/methods/index) class. It is also possible to specify the formatting information using the TextStyle property. Furthermore, you can update the formatting of any FreeTextAnnotation already in the PDF document.
+Annotations are contained in a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object's [AnnotationCollection](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection. When adding a [FreeTextAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) to a PDF document, you can specify the formatting information such as font, size, color and so on using the [DefaultAppearance](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index) class. It is also possible to specify the formatting information using the TextStyle property. Furthermore, you can update the formatting of any FreeTextAnnotation already in the PDF document.
 
-The [TextStyle](https://apireference.aspose.com/net/pdf/aspose.pdf.annotations/textstyle) class supports working with the default style entry. This class allows you to set color, font size and font name:
+The [TextStyle](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) class supports working with the default style entry. This class allows you to set color, font size and font name:
 
 - The FontName property gets or sets the font name (string).
 - The FontSize property gets and sets the default text size (double).
@@ -153,7 +153,7 @@ When you change the contents or text style of a free text annotation, the annota
 
 ## Strike Out Words using StrikeOutAnnotation
 
-Aspose.PDF for .NET allows you to add, delete and update annotations in PDF documents. One of the classes allows you to strike out annotations too. This is useful when you want to strike out one or more text fragments in a documect. Annotations are held in a [Page](https://apireference.aspose.com/net/pdf/aspose.pdf/page) object's [AnnotationCollection](https://apireference.aspose.com/net/pdf/aspose.pdf.annotations/annotationcollection) collection. A class named [StrikeOutAnnotation](https://apireference.aspose.com/net/pdf/aspose.pdf.annotations/strikeoutannotation) can be used to add strike out annotations to a PDF document.
+Aspose.PDF for .NET allows you to add, delete and update annotations in PDF documents. One of the classes allows you to strike out annotations too. This is useful when you want to strike out one or more text fragments in a documect. Annotations are held in a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object's [AnnotationCollection](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection. A class named [StrikeOutAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) can be used to add strike out annotations to a PDF document.
 
 To strike out a certain TextFragment:
 
