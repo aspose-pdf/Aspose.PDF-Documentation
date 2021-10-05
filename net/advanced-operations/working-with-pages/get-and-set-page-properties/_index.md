@@ -52,7 +52,7 @@ From there, it is possible to access either individual Page objects using their 
 
 ## Get a Particular Page of the PDF File
 
-Aspose.PDF allows you to [split a PDF into individual pages](/pdf/net/split-pdf/) and save them as PDF files. Getting a specified page in a PDF file and saving it as a new PDF is a very similar operation: open the source document, access the page, create a new document and add the page to this.
+Aspose.PDF allows you to [split a PDF into individual pages](/pdf/net/split-pdf-document/) and save them as PDF files. Getting a specified page in a PDF file and saving it as a new PDF is a very similar operation: open the source document, access the page, create a new document and add the page to this.
 
 The [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object's [PageCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/pagecollection) holds the pages in the PDF file. To get a particular page from this collection:
 

@@ -29,7 +29,7 @@ Let's assume that there are some PDF form fields whose values need to be present
 |Company|Aspose.com|
 |Address.1|Sydney, Australia|
 |Address.2|Additional Address Line|
-Let's see how to represent these values in [FDF](/pdf/net/whats-the-difference-between-xml-2c-fdf-and-xfdf-html/), [XML](/pdf/net/whats-the-difference-between-xml-2c-fdf-and-xfdf-html/) and [XFDF](/pdf/net/whats-the-difference-between-xml-2c-fdf-and-xfdf-html/) formats.
+Let's see how to represent these values in FDF, XML and XFDF formats.
 
 ### Using FDF
 
