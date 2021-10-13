@@ -2,7 +2,7 @@
 title: Convert PDF to Excel | C#
 linktitle: Convert PDF to Excel
 type: docs
-weight: 90
+weight: 30
 url: /net/convert-pdf-to-excel/
 aliases:
     - /net/convert-pdf-to-excel-xls/
