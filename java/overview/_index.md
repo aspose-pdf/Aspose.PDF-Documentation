@@ -39,7 +39,7 @@ In addition, Aspose.PDF for Java can be applied to easily convert text, images, 
 Learn more about:
 
 - [Supported File Formats](/pdf/java/supported-file-formats/)
-- [Key Features of Aspose.PDF](/pdf/java/key-features/)
+- [Key Features of Aspose.PDF](/pdf/java/aspose-pdf-features/)
 - [System Requirements](/pdf/java/system-requirements/)
 - [Installation](/pdf/java/installation/)
 - [Licensing](/pdf/java/licensing/)
