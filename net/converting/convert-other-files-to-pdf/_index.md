@@ -7,8 +7,8 @@ url: /net/convert-other-files-to-pdf/
 lastmod: "2021-10-18"
 description: This topic show you how to Aspose.PDF allows to convert PDF file to other file formats and vice versa.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.8
+    changefreq: "monthly"
+    priority: 0.5
 ---
 
 ## Convert EPUB to PDF

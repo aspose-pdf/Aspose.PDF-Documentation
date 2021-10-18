@@ -7,8 +7,8 @@ url: /net/convert-images-format-to-pdf/
 lastmod: "2021-10-18"
 description: This topic show you how to Aspose.PDF allows to convert various images formats to PDF and vice versa
 sitemap:
-    changefreq: "weekly"
-    priority: 0.8
+    changefreq: "monthly"
+    priority: 0.5
 ---
 
 ## Convert BMP to PDF

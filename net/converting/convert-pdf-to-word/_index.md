@@ -9,7 +9,7 @@ description: Convert PDF file to DOC format with ease and full control with Aspo
 aliases:
     - /net/convert-pdf-to-doc/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -68,5 +68,51 @@ public static void ConvertPDFtoWordDocAdvanced()
         RecognizeBullets = true
     };
     pdfDocument.Save(docFile, saveOptions);
+}
+```
+
+## Live Example
+
+Aspose.PDF for .NET presents you online free application ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), where you may try to investigate the functionality and quality it works.
+
+[![C# PDF to Word](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+
+## Convert PDF to DOCX
+
+Aspose.PDF for .NET API lets you read and convert PDF documents to DOCX using C# and any .NET language. DOCX is a well-known format for Microsoft Word documents whose structure was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and lateral versions but not with the earlier versions of MS Word which support DOC file extensions. 
+
+For quick conversion use `Save()` method with `SaveFormat.DocX` options:
+
+```csharp
+public static void ConvertPDFtoWord_DOCX_Format()
+{
+    // Open the source PDF document
+    Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
+    // Save the resultant DOC file
+    pdfDocument.Save(_dataDir + "saveOptionsOutput_out.doc", SaveFormat.DocX);
+}
+```
+
+The [`DocSaveOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.
+
+Please take a look over the following code snippet which provides the capability to convert PDF file to DOCX format with C#.
+
+```csharp
+public static void ConvertPDFtoWord_Advanced_DOCX_Format()
+{
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+    // Open the source PDF document
+    Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
+
+    // Instantiate DocSaveOptions object
+    DocSaveOptions saveOptions = new DocSaveOptions
+    {
+        // Specify the output format as DOCX
+        Format = DocSaveOptions.DocFormat.DocX
+        // Set other DocSaveOptions params
+        // ....
+    };
+    // Save document in docx format
+    pdfDocument.Save("ConvertToDOCX_out.docx", saveOptions);
 }
 ```

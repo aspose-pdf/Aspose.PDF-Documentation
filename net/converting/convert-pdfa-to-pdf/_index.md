@@ -7,15 +7,14 @@ url: /net/convert-pdfa-to-pdf/
 lastmod: "2021-10-18"
 description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.8
 ---
 
 ## Convert PDF/A document to PDF
 
-Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive
-">PDF/A</abbr> restriction from the original document. Class [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) has method [RemovePdfaCompliance(..)](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) to remove
-the PDF compliance information from input/source file.
+Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive">PDF/A</abbr> restriction from the original document. 
+Class [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) has method [RemovePdfaCompliance(..)](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) to remove the PDF compliance information from input/source file.
 
 ```csharp
 public static void ConvertPDFAtoPDF()

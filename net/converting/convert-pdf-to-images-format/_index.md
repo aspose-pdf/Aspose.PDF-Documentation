@@ -1,17 +1,17 @@
 ---
-title: Convert PDF to various Images formats using C#
-linktitle: Convert PDF to various Images formats 
+title: Convert PDF to Images formats using C#
+linktitle: Convert PDF to Images
 type: docs
 weight: 50
 url: /net/convert-pdf-to-images-format/
 lastmod: "2021-10-18"
-description: This topic show you how to Aspose.PDF allows to convert various images formats to PDF and vice versa
+description: This topic show you how to Aspose.PDF allows to convert PDF to various images formats. Convert PDF pages to PNG, JPEG, BMP images with a few lines of code.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.8
+    changefreq: "monthly"
+    priority: 0.5
 ---
 
-## Convert PDF to TIFF 
+## Convert PDF to TIFF
 
 **Aspose.PDF for .NET** makes a possible to convert PDF Pages to TIFF  images.
 
@@ -21,7 +21,7 @@ The TiffDevice class allows you to convert PDF pages to TIFF images. This class 
 
 Aspose.PDF for .NET presents you online free application ["PDF to TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), where you may try to investigate the functionality and quality it works.
 
-[![C# PDF to TIFF](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
+[![PDF to TIFF free conversion app](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 
 ### Convert PDF Pages to One TIFF Image
 

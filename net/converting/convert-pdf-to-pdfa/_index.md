@@ -7,7 +7,7 @@ url: /net/convert-pdf-to-pdfa/
 lastmod: "2021-10-18"
 description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.8
 ---
 

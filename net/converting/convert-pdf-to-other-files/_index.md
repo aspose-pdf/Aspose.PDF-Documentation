@@ -1,25 +1,25 @@
 ---
 title: Convert PDF file to other formats using C#
-linktitle: Convert PDF file to other formats 
+linktitle: Convert PDF to other formats 
 type: docs
 weight: 70
 url: /net/convert-pdf-to-other-files/
 lastmod: "2021-10-18"
 description: This topic show you how to Aspose.PDF allows to convert PDF file to other file formats and vice versa.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.8
 ---
 
 ## Convert PDF to EPUB
 
-### Live Example
+### Live Example of PDF to EPUB conversion
 
 Aspose.PDF for .NET presents you online free application ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), where you may try to investigate the functionality and quality it works.
 
 [![PDF to EPUB](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 
-<abbr title="Electronic Publication">EPUB</abbr> (short for Electronic Publication)** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
+**<abbr title="Electronic Publication">EPUB</abbr>** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
 EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
 
 Aspose.PDF for .NET also supports the feature to convert PDF documents to EPUB format. Aspose.PDF for .NET has a class named EpubSaveOptions which can be used as the second argument to [`Document.Save(..)`](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method, to generate an EPUB file.
@@ -75,7 +75,7 @@ saveOptions.OutDirectoryPath = pathToOutputDirectory;
 doc.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
 ```
 
-## Convert PDF to text
+## Convert PDF to Text
 
 **Aspose.PDF for .NET** support converting whole PDF document and single page to a Text file.
 
