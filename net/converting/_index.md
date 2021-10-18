@@ -35,15 +35,3 @@ You can try the conversion functionality by using our Aspose PDF APPS:
 
 [![Aspose PDF APP](app.png)](https://products.aspose.app/pdf/conversion)
 
-# New version
-
-- Convert to Word (DOC DOCX)
-- Convert to Excel (XLSX XLS)
-- Convert to PowerPoint (PPTX)
-- Convert between PDF/A and PDF formats
-- Convert images to PDF (JPEG/PNG/...->PDF)
-- Convert PDF to images (PDF->JPEG/PNG/...)
-- Convert HTML to PDF
-- Convert PDF to HTML
-- Convert files to PDF
-- Convert PDF to files
