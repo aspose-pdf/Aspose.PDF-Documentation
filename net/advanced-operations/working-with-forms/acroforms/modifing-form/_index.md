@@ -11,9 +11,9 @@ sitemap:
     priority: 0.7
 ---
 
-### Get/Set FieldLimit
+## Get or Set Field Limit
 
-The FormEditor class SetFieldLimit("textbox1", 20) method allows you to set a field limit, the maximum number of characters that can be entered into a field.
+The FormEditor class SetFieldLimit(field, limit) method allows you to set a field limit, the maximum number of characters that can be entered into a field.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -28,6 +28,7 @@ form.SetFieldLimit("textbox1", 15);
 dataDir = dataDir + "SetFieldLimit_out.pdf";
 form.Save(dataDir);
 ```
+
 Similarly, Aspose.PDF has a method that gets the field limit using the DOM approach. The following code snippet shows the steps.
 
 ```csharp
@@ -38,6 +39,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 Document doc = new Document(dataDir + "FieldLimit.pdf");
 Console.WriteLine("Limit: " + (doc.Form["textbox1"] as TextBoxField).MaxLen);
 ```
+
 You can also get the same value using the *Aspose.PDF.Facades* namespace using the following code snippet.
 
 ```csharp
@@ -50,7 +52,7 @@ form.BindPdf(dataDir + "FieldLimit.pdf");
 Console.WriteLine("Limit: " + form.GetFieldLimit("textbox1"));
 ```
 
-### Set Form Field Font Other Than the 14 Core PDF Fonts
+## Set Custom Font for the Form Field
 
 Form fields in Adobe PDF files can be configured to use specific default fonts. In the early versions of Aspose.PDF, only the 14 default fonts were supported. Later releases allowed developers to apply any font. To set and update the default font used for form fields, use the DefaultAppearance(Font font, double size, Color color) class. This class can be found under the Aspose.PDF.InteractiveFeatures namespace. To use this object, use the Field class DefaultAppearance property.
 
@@ -77,6 +79,7 @@ dataDir = dataDir + "FormFieldFont14_out.pdf";
 // Save updated document
 pdfDocument.Save(dataDir);
 ```
+
 ## Add/remove fields in existing form
 
 All the form fields are contained in the Document object’s Form collection. This collection provides different methods that manage form fields, including the Delete method. If you want to delete a particular field, pass the field name as a parameter to the Delete method and then save the updated PDF document. The following code snippet shows how to delete a particular field from a PDF document.
