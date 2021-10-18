@@ -4,7 +4,7 @@ linktitle: Convert PDF to DOCX
 type: docs
 weight: 20
 url: /net/convert-pdf-to-docx/
-lastmod: "2021-06-05"
+lastmod: "2021-10-18"
 description: Convert PDF file to DOCX format with ease and full control with Aspose.PDF for .NET.
 aliases:
     - /net/convert-pdf-to-doc-and-docx/

@@ -4,7 +4,7 @@ linktitle: Convert PDF to Microsoft Office File Formats
 type: docs
 weight: 10
 url: /net/convert-microsoft-office-files-and-pdf/
-lastmod: "2021-06-05"
+lastmod: "2021-10-18"
 description: This topic show you how to Aspose.PDF allows to convert  PDF file to DOC format with ease and full control.  Learn more how to tune up Microsoft Word Doc file to PDF conversion.
 sitemap:
     changefreq: "weekly"

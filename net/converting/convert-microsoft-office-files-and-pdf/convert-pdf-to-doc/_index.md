@@ -4,7 +4,7 @@ linktitle: Convert PDF to DOC
 type: docs
 weight: 10
 url: /net/convert-pdf-to-doc/
-lastmod: "2021-06-05"
+lastmod: "2021-10-18"
 description: Convert PDF file to DOC format with ease and full control with Aspose.PDF for .NET. Learn more how to tune up Microsoft Word Doc file to PDF conversion.
 aliases:
     - /net/convert-pdf-to-doc/

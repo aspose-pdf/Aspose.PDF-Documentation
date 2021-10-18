@@ -7,7 +7,7 @@ url: /net/convert-pdf-to-powerpoint/
 description: Aspose.PDF allows you to convert PDF to PowerPoint format using .NET. One way there is a possibility to convert PDF to PPTX with Slides as Images.
 aliases:
     - /net/convert-pdf-to-powerpoint-pptx/
-lastmod: "2021-06-05"
+lastmod: "2021-10-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
