@@ -1,11 +1,11 @@
 ---
-title: Convert PDF to DOC | C#
+title: Convert PDF to DOC using C#
 linktitle: Convert PDF to DOC
 type: docs
 weight: 10
-url: /net/convert-pdf-to-doc/
+url: /net/convert-pdf-to-word/
 lastmod: "2021-10-18"
-description: Convert PDF file to DOC format with ease and full control with Aspose.PDF for .NET. Learn more how to tune up Microsoft Word Doc file to PDF conversion.
+description: Convert PDF file to DOC and DOCX  format with ease and full control with Aspose.PDF for .NET. Learn more how to tune up Microsoft Word Doc file to PDF conversion.
 aliases:
     - /net/convert-pdf-to-doc/
 sitemap:
@@ -13,13 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-One of the most popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. Aspose.PDF for .NET allows you to convert PDF files to DOC.
-
-## Live Example
-
-Aspose.PDF for .NET presents you online free application ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), where you may try to investigate the functionality and quality it works.
-
-[![Convert PDF to DOC](pdf_to_doc.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+One of the most popular features is the PDF to Microsoft Word DOC conversion, which makes content management easier. **Aspose.PDF for .NET** allows you to convert PDF files not only to DOC but also to DOCX format, easily and efficiently.
 
 ## Convert PDF to DOC (Word 97-2003) file
 
@@ -41,6 +35,12 @@ public static void ConvertPDFtoWord()
 
 }
 ```
+
+## Try to convert PDF to DOC online
+
+Aspose.PDF for .NET presents you online free application ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), where you may try to investigate the functionality and quality it works.
+
+[![Convert PDF to DOC](pdf_to_doc.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 
 ### Using the DocSaveOptions Class
 
@@ -71,11 +71,11 @@ public static void ConvertPDFtoWordDocAdvanced()
 }
 ```
 
-## Live Example
+## Try to convert PDF to Word online
 
 Aspose.PDF for .NET presents you online free application ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), where you may try to investigate the functionality and quality it works.
 
-[![C# PDF to Word](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Convertion PDF to Word Free App](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 ## Convert PDF to DOCX
 

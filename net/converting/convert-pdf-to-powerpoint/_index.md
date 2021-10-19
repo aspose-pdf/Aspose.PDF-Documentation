@@ -17,7 +17,7 @@ We have an API named Aspose.Slides which offers the feature to create as well as
 
 During PDF to <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr> conversion, the text is rendered as Text where you can select/update it. Please note that in order to convert PDF files to PPTX format, Aspose.PDF provides a class named [`PptxSaveOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions). An object of the PptxSaveOptions class is passed as a second argument to the [`Document.Save(..) method`](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save). The following code snippet shows the process for converting PDF files into PPTX format.
 
-## Simple conversion PDF to PPTX using C# and Aspose.PDF .NET
+## Simple conversion PDF to PowerPoint using C# and Aspose.PDF .NET
 
 In order to convert PDF to PPTX, Aspose.PDF for .NET advice to use the following code steps.
 
@@ -39,11 +39,11 @@ doc.Save(dataDir + "PDFToPPT_out.pptx", pptx_save);
 
 ## Convert PDF to PPTX with Slides as Images
 
-## Live Example
+## Try to convert PDF to PowerPoint online
 
 Aspose.PDF for .NET presents you online free application ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), where you may try to investigate the functionality and quality it works.
 
-[![PDF to PPTX](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
+[![Aspose.PDF Convertion PDF to PPTX with Free App](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 
 In case if you need to convert a searchable PDF to PPTX as images instead of selectable text, Aspose.PDF provides such a feature via [Aspose.Pdf.PptxSaveOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class. To achieve this, set property [SlidesAsImages](https://apireference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) of [PptxSaveOptios](https://apireference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class to 'true' as shown in the following code sample.
 

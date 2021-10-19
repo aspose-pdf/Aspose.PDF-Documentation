@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/convert-pdf-to-html/
 lastmod: "2021-10-18"
-description: This topic show you how to Aspose.PDF allows to convert PDF file to other file formats and vice versa.
+description: This topic show you how to Aspose.PDF allows to convert PDF file to HTML format with C# library.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -26,11 +26,11 @@ sitemap:
 - transparent Text rendering;
 - PDF document layers rendering.
 
-### Live Example
+## Try to convert PDF to HTML online
 
 Aspose.PDF for .NET presents you online free application ["PDF to HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), where you may try to investigate the functionality and quality it works.
 
-[![PDF to HTML](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
+[![Aspose.PDF Convertion PDF to HTML with Free App](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 
 Aspose.PDF for .NET provides a two-line code for transforming a source PDF file to HTML. The [`SaveFormat enumeration`](https://apireference.aspose.com/pdf/net/aspose.pdf/saveformat) contains the value Html which lets you save the source file to HTML. The following code snippet shows the process of converting a PDF file into HTML.
 

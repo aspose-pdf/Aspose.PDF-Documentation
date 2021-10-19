@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /net/convert-pdfa-to-pdf/
 lastmod: "2021-10-18"
-description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
+description: This topic show you how to Aspose.PDF allows to convert PDF/A file to PDF document with .NET library. 
 sitemap:
     changefreq: "monthly"
     priority: 0.8
