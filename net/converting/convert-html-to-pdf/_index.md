@@ -208,7 +208,7 @@ pdfDocument.Save(outFile);
 
 ## Convert MHTML to PDF 
 
-### Try to convert MHTML to PDF online
+## Try to convert MHTML to PDF online
 
 Aspose.PDF for .NET presents you online free application ["MHTML to PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf), where you may try to investigate the functionality and quality it works.
 

@@ -19,8 +19,8 @@ You can convert a large number of documents at once or one. Our Aspose.PDF for .
 
 Aspose.PDF for .NET allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn the sections of converting documents with code snippets.
 
-[Convert PDF to Microsoft Word](/net/convert-pdf-to-word/)
-[Convert PDF to Microsoft Excel](/net/convert-pdf-to-excel/)
+[Convert PDF to Microsoft Word](/net/convert-pdf-to-word/) 
+[Convert PDF to Microsoft Excel](/net/convert-pdf-to-excel/) 
 [Convert PDF to Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/)
 [Convert HTML format to PDF file](/pdf/net/convert-html-to-pdf/)
 [Convert PDF file to HTML format](/pdf/net/convert-pdf-to-html/)
@@ -31,7 +31,7 @@ Aspose.PDF for .NET allows converting PDF documents to various formats and also 
 [Convert PDF to PDF/A formats](/pdf/net/convert-pdf-to-pdfa/)
 [Convert PDF/A to PDF format](/pdf/net/convert-pdfa-to-pdf/)
 
-## Live Example
+## Try to convert PDF files online
 
 You can try the conversion functionality by using our Aspose PDF APPS:
 
