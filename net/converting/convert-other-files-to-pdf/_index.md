@@ -489,6 +489,12 @@ Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "XPSToPDF.xp
 document.Save(dataDir + "XPSToPDF_out.pdf");
 ```
 
+## Try to convert XPS format to PDF online
+
+Aspose.PDF for .NET presents you online free application ["XPS to PDF"](https://products.aspose.app/pdf/conversion/xps-to-pdf/), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion XPS to PDF with Free App](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
+
 ## Convert PostScript to PDF
 
 **Aspose.PDF for .NET** support features converting PostScript files to PDF format. One of the features from Aspose.PDF is that you can set a set of font folders to be used during conversion.

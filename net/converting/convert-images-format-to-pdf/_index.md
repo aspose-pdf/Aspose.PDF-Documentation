@@ -42,6 +42,12 @@ using (Document pdfDocument = new Document())
 }
 ```
 
+## Try to convert BMP to PDF online
+
+Aspose presents you online free application ["BMP to PDF"](https://products.aspose.app/pdf/conversion/bmp-to-pdf/), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion BMP to PDF using Free App](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/bmp-to-pdf/)
+
 ## Convert CGM to PDF
 
 <abbr title="Computer Graphics Metafile">CGM</abbr> is a file extension for a Computer Graphics Metafile format commonly used in CAD (computer-aided design) and presentation graphics applications. CGM is a vector graphics format that supports three different encoding methods: binary (best for program read speed), character-based (produces the smallest file size and allows for faster data transfers) or cleartext encoding (allows users to read and modify the file with a text editor).
@@ -98,6 +104,12 @@ public static void ConvertDICOMtoPDF()
 }
 ```
 
+## Try to convert DICOM to PDF online
+
+Aspose presents you online free application ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion DICOM to PDF using Free App](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
+
 ## Convert EMF to PDF
 
 <abbr title="Enhanced metafile format">EMF</abbr>EMF stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device. Furthermore, you can convert EMF to PDF image using the below steps:
@@ -138,6 +150,12 @@ page.Paragraphs.Add(image);
 //Save output PDF document
 doc.Save(dataDir + "EMFtoPDF.pdf");
 ```
+
+## Try to convert EMF to PDF online
+
+Aspose presents you online free application ["EMF to PDF"](https://products.aspose.app/pdf/conversion/emf-to-pdf/), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion EMF to PDF using Free App](emf_to_pdf.png)](https://products.aspose.app/pdf/conversion/emf-to-pdf/)
 
 ## Convert JPG to PDF
 
@@ -212,6 +230,12 @@ page.Paragraphs.Add(image);
 doc.Save(dataDir + "ImagetoPDF_HeightWidth.pdf");
 ```
 
+## Try to convert JPG to PDF online
+
+Aspose presents you online free application ["JPG to PDF"](https://products.aspose.app/pdf/conversion/jpg-to-pdf/), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion JPG to PDF using Free App](jpg_to_pdf.png)](https://products.aspose.app/pdf/conversion/jpg-to-pdf/)
+
 ## Convert PNG to PDF
 
 **Aspose.PDF for .NET** support feature to convert PNG images to PDF format. Check the next code snippet for realizing you task.
@@ -253,6 +277,12 @@ page.Paragraphs.Add(image);
 // Save output PDF
 doc.Save(dataDir + "ImagetoPDF.pdf");
 ```
+
+## Try to convert PNG to PDF online
+
+Aspose presents you online free application ["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PNG to PDF using Free App](png_to_pdf.png)](https://products.aspose.app/pdf/conversion/png-to-pdf/)
 
 ## Convert SVG to PDF
 
