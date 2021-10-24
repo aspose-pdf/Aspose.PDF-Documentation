@@ -2,7 +2,7 @@
 title: Convert PDF file to HTML format using C#
 linktitle: Convert PDF file to HTML format
 type: docs
-weight: 30
+weight: 50
 url: /net/convert-pdf-to-html/
 lastmod: "2021-10-18"
 description: This topic show you how to Aspose.PDF allows to convert PDF file to HTML format with C# library.

@@ -2,7 +2,7 @@
 title: Convert HTML to PDF file using C#
 linktitle: Convert HTML to PDF file
 type: docs
-weight: 20
+weight: 40
 url: /net/convert-html-to-pdf/
 lastmod: "2021-10-18"
 description: This topic show you how to Aspose.PDF allows to convert HTML and MHTML formats to PDF file.

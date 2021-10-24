@@ -2,7 +2,7 @@
 title: Convert PDF file to other formats using C#
 linktitle: Convert PDF to other formats 
 type: docs
-weight: 70
+weight: 90
 url: /net/convert-pdf-to-other-files/
 lastmod: "2021-10-18"
 description: This topic show you how to Aspose.PDF allows to convert PDF file to other file formats.

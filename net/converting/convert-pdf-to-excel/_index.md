@@ -2,7 +2,7 @@
 title: Convert PDF to Excel using C#
 linktitle: Convert PDF to Excel
 type: docs
-weight: 30
+weight: 20
 url: /net/convert-pdf-to-excel/
 lastmod: "2021-10-18"
 keywords: convert PDF to Excel using c#, convert PDF to XLS using csharp, convert PDF to XLSX using csharp, export table from PDF to Excel in csharp.
