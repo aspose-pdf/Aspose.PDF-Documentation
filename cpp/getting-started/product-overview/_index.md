@@ -43,7 +43,7 @@ Aspose.PDF for C++ is designed to perform equally well, both on server and clien
 ## <ins>**Technical Support**
 Aspose provides unlimited free technical support for all its products. Support is available to all users, including evaluation.
 
-If you need any assistance regarding Aspose.PDF for C++, please visit our [Aspose.Forums](https://forum.aspose.com/c/pdf). You can create a new topic over Aspose.PDF for C++ forums and your post will be answered within a few hours. All the inquiries over forums are replied directly by Aspose.PDF for C++ support team.
+If you need any assistance regarding Aspose.PDF for C++, please visit our [Aspose.Forums](https://forum.aspose.com/c/pdf/10). You can create a new topic over Aspose.PDF for C++ forums and your post will be answered within a few hours. All the inquiries over forums are replied directly by Aspose.PDF for C++ support team.
 
 When expecting a reply in the forums, please allow for time zone differences.
 
@@ -63,5 +63,5 @@ This table lists important Aspose.PDF for C++ technical resources.
 |[Aspose.PDF for C++ Home Page](https://www.aspose.com/products/pdf/cpp)|Product home page.|
 |[Aspose.PDF Blog](https://blog.aspose.com/category/aspose-products/aspose-pdf-product-family/)|Check this often for information about new releases and useful tips about Aspose.PDF.|
 |[Aspose.PDF for C++ Download](https://downloads.aspose.com/pdf/cpp)|Download the latest version of Aspose.PDF from here. We release often.|
-|[Aspose.PDF for C++ Support Forum](https://forum.aspose.com/c/pdf)|Post your questions and issues here for a speedy resolution.|
+|[Aspose.PDF for C++ Support Forum](https://forum.aspose.com/c/pdf/10)|Post your questions and issues here for a speedy resolution.|
 

@@ -56,7 +56,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.9](https://www.nug
 
 ## Public API changes in Aspose.PDF for .NET 19.9
 
-See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for .NET. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf).
+See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for .NET. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf/10).
 
 ### Added APIs:
 

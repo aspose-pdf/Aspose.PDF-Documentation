@@ -36,7 +36,7 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.PDF for .NET Product Page](https://products.aspose.com/pdf/net)
 - [Install Aspose.PDF for .NET NuGet Package](https://www.nuget.org/packages/Aspose.PDF/)
 - [Aspose.PDF for .NET API Reference Guide](https://apireference.aspose.com/net/pdf)
-- [Aspose.PDF for .NET Free Support Forum](https://forum.aspose.com/c/pdf)
+- [Aspose.PDF for .NET Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
@@ -61,7 +61,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Install Aspose.PDF for Java from Aspose Repository](/pdf/java/installation/)
 - [Aspose.PDF for Java API Reference Guide](https://apireference.aspose.com/java/pdf)
 - [Download Examples at GitHub Repository](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
-- [Aspose.PDF for Java Free Support Forum](https://forum.aspose.com/c/pdf)
+- [Aspose.PDF for Java Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
@@ -85,7 +85,7 @@ The following links offer some useful resources you may need to accomplish your 
 - [Install Aspose.PDF for C++ NuGet Package](https://www.nuget.org/packages/Aspose.PDF.CPP/)
 - [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/cpp/pdf)
 - [Download Examples at GitHub Repository](https://github.com/aspose-pdf/Aspose.PDF-for-C)
-- [Aspose.PDF for C++ Free Support Forum](https://forum.aspose.com/c/pdf)
+- [Aspose.PDF for C++ Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}
@@ -109,7 +109,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Download Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java)
 - [Install Aspose.PDF for Android via Java](/pdf/androidjava/installation/)
 - [Aspose.PDF for Android via Java API Reference Guide](https://apireference.aspose.com/java/pdf) (Aspose.PDF for Android via Java is very similar to Aspose.PDF for Java. So, you can use the same API Reference Guide)
-- [Aspose.PDF for Android via Java Free Support Forum](https://forum.aspose.com/c/pdf)
+- [Aspose.PDF for Android via Java Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for Android via Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 {{% alert color="primary" %}}

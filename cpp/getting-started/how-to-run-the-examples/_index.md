@@ -20,7 +20,7 @@ All examples of Aspose.PDF for C++ are hosted on GitHub.
 - Open main.cpp, all the examples are called from here.
 - Uncomment the examples you want to run from within the project.
 
-Please feel free to reach out using our [Forums](https://forum.aspose.com/c/pdf), if you have any issues setting up or running the examples.
+Please feel free to reach out using our [Forums](https://forum.aspose.com/c/pdf/10), if you have any issues setting up or running the examples.
 ## <ins>**Contribute**
 If you like to add or improve an example, we encourage you to contribute to the project. All examples and showcase projects in this repository are open source and can be freely used in your own applications.
 

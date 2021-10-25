@@ -41,5 +41,5 @@ Following are the links to some useful resources you may need to accomplish your
 - [Install Aspose.PDF for Java from Aspose Repository](/pdf/java/installation/)
 - [Aspose.PDF for Java API Reference Guide](https://apireference.aspose.com/java/pdf)
 - [Download Examples at GitHub Repository](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
-- [Aspose.PDF for Java Free Support Forum](https://forum.aspose.com/c/pdf)
+- [Aspose.PDF for Java Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
