@@ -36,7 +36,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.PDF for Java Online Documentation](/pdf/java/)
 - [Aspose.PDF for Java Features](/pdf/java/key-features/)
 - [Aspose.PDF for Java Release Notes](/pdf/java/release-notes/)
-- [Aspose.PDF for Java Product Page](https://products.aspose.com/pdf/java)
+- [Aspose.PDF for Java Product Page](https://products.aspose.com/pdf/java/)
 - [Download Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf)
 - [Install Aspose.PDF for Java from Aspose Repository](/pdf/java/installation/)
 - [Aspose.PDF for Java API Reference Guide](https://apireference.aspose.com/java/pdf)

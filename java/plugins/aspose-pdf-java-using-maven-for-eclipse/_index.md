@@ -16,14 +16,14 @@ The Eclipse IDE can be extended with additional software components. Eclipse cal
 
 ### Aspose.PDF for Java
 
-[Aspose.PDF for Java ](https://products.aspose.com/pdf/java)is a robust PDF document creation API that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
+[Aspose.PDF for Java ](https://products.aspose.com/pdf/java/)is a robust PDF document creation API that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
 
-[Aspose.PDF for Java](https://products.aspose.com/pdf/java) offers an incredible wealth of features, these include PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling.
+[Aspose.PDF for Java](https://products.aspose.com/pdf/java/) offers an incredible wealth of features, these include PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling.
 
 ### Aspose.PDF Java (Maven) for Eclipse
 
-- Aspose.PDF Java (Maven) for Eclipse is a Plugin for **Eclipse IDE** by **Aspose.** This Plugin is intended for developers using the Maven platform for Java developments and wants to use [Aspose.PDF for Java](https://products.aspose.com/pdf/java) in their projects. The Plugin lets you create maven projects for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) and also download [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) of the API.
-- The plugin provides following features to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) within **Eclipse IDE** comfortably:
+- Aspose.PDF Java (Maven) for Eclipse is a Plugin for **Eclipse IDE** by **Aspose.** This Plugin is intended for developers using the Maven platform for Java developments and wants to use [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) in their projects. The Plugin lets you create maven projects for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/) and also download [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) of the API.
+- The plugin provides following features to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/) within **Eclipse IDE** comfortably:
 
 ![todo:image_alt_text](http://i.imgur.com/KWKGljg.png)
 
@@ -32,16 +32,16 @@ The plugin contains two wizards
 
 **Aspose.PDF Maven Project (wizard)**
 
-- This New Project wizard lets developers create a **Maven** project for using [Aspose.PDF for Java](https://products.aspose.com/pdf/java) from New -> Project -> Maven-> Aspose.PDF Maven Project.
-- The reference of [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) maven dependency is automatically fetched from [Aspose Cloud Maven Repository](http://maven.aspose.com/artifactory/webapp/home.html?0) and gets added in the pom.xml.
-- The created project will always contain the most recent available version **Maven** Dependency for [Aspose.PDF for Java API](https://products.aspose.com/pdf/java).
-- The wizard steps also present with the option for downloading [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java).
+- This New Project wizard lets developers create a **Maven** project for using [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) from New -> Project -> Maven-> Aspose.PDF Maven Project.
+- The reference of [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/) maven dependency is automatically fetched from [Aspose Cloud Maven Repository](http://maven.aspose.com/artifactory/webapp/home.html?0) and gets added in the pom.xml.
+- The created project will always contain the most recent available version **Maven** Dependency for [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/).
+- The wizard steps also present with the option for downloading [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/).
 Aspose.PDF Code Example (wizard)
 
-- This New File wizard lets you copy the downloaded [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) into your project for using [Aspose.PDF for Java](https://products.aspose.com/pdf/java) from New -> Other -> Java -> Aspose.PDF Code Example.
+- This New File wizard lets you copy the downloaded [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) into your project for using [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) from New -> Other -> Java -> Aspose.PDF Code Example.
 - Available samples are displayed in tree format from where the user can select them categorically.
 - All the examples within the selected category will get copied to the project's "**com.aspose.pdf.examples**" package folder along with the required resources within "**src/main/resources**" folder needed to run the examples.
-- [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) of [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) are meant for demonstrating the various functions of the API.
+- [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) of [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/) are meant for demonstrating the various functions of the API.
 - The wizard will also look for and updates for newly available [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) from Aspose.PDF for Java examples repository.
 
 ## System Requirements and Supported Platforms
