@@ -59,7 +59,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.PDF for Java Product Page](https://products.aspose.com/pdf/java/)
 - [Download Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf)
 - [Install Aspose.PDF for Java from Aspose Repository](/pdf/java/installation/)
-- [Aspose.PDF for Java API Reference Guide](https://apireference.aspose.com/java/pdf)
+- [Aspose.PDF for Java API Reference Guide](https://apireference.aspose.com/pdf/java)
 - [Download Examples at GitHub Repository](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 - [Aspose.PDF for Java Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
@@ -108,7 +108,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.PDF for Android via Java Product Page](https://products.aspose.com/pdf/android-java/)
 - [Download Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java)
 - [Install Aspose.PDF for Android via Java](/pdf/androidjava/installation/)
-- [Aspose.PDF for Android via Java API Reference Guide](https://apireference.aspose.com/java/pdf) (Aspose.PDF for Android via Java is very similar to Aspose.PDF for Java. So, you can use the same API Reference Guide)
+- [Aspose.PDF for Android via Java API Reference Guide](https://apireference.aspose.com/pdf/java) (Aspose.PDF for Android via Java is very similar to Aspose.PDF for Java. So, you can use the same API Reference Guide)
 - [Aspose.PDF for Android via Java Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for Android via Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
@@ -133,8 +133,8 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [License Aspose.Pdf for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
 - [Configure Aspose.Pdf for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/)
-- [Integration with MS ReportViewer 2010 and 2012](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012)
-- [Evaluate Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services)
+- [Integration with MS ReportViewer 2010 and 2012](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
+- [Evaluate Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
 {{% alert color="primary" %}}
 

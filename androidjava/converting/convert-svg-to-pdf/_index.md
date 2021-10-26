@@ -17,7 +17,7 @@ SVG images and their behaviors are defined in XML text files. This means that th
 
 ## How to convert SVG file to PDF format
 
-To convert SVG files to PDF, use the class named [SvgLoadOptions](https://apireference.aspose.com/pdf//java/com.aspose.pdf/svgsaveoptions) which is used to initialize the [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. Later, this object is passed as an argument during the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the input format of the source document.
+To convert SVG files to PDF, use the class named [SvgLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/svgsaveoptions) which is used to initialize the [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. Later, this object is passed as an argument during the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the input format of the source document.
 
 The following code snippet shows the process of converting SVG file into PDF format.
 
