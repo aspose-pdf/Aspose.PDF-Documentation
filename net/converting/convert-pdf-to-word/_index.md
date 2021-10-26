@@ -63,7 +63,7 @@ public static void ConvertPDFtoWordDocAdvanced()
 }
 ```
 
-{{% alert color="warning" %}}
+{{% alert color="success" %}}
 **Try to convert PDF to DOC online**
 
 Aspose.PDF for .NET presents you online free application ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), where you may try to investigate the functionality and quality it works.
