@@ -12,5 +12,5 @@ sitemap:
 ---
 
 - [Create Links](/pdf/net/create-links/) - learn simply a way to create links in your PDF file using C#.
-- [Update Links](/pdf/net/update-links) - try to set target to PDF, try to set link destination to web address, try to set link target to another PDF file, update link text color.
+- [Update Links](/pdf/net/update-links/) - try to set target to PDF, try to set link destination to web address, try to set link target to another PDF file, update link text color.
 - [Extract Links](/pdf/net/extract-links) - extract links from the PDF file using AnnotationSelector class.

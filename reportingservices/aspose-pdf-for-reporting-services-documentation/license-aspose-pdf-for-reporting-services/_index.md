@@ -90,6 +90,6 @@ Please note that that supported license file names are Aspose.PDF.ReportingServi
 #### **Temporary License**
 {{% alert color="primary" %}}
 
-You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](http://www.aspose.com/corporate/purchase/temporary-license.aspx).
+You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
 
 {{% /alert %}}

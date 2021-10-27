@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 {{% alert color="primary" %}}
 
-In [Aspose.PDF for SharePoint 2.0](http://www.aspose.com/community/files/73/sharepoint-components/aspose.pdf-for-sharepoint/entry610978.aspx) release we have added support to create PDFA compliant PDF.
+In [Aspose.PDF for SharePoint 2.0](https://downloads.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.0.0/) release we have added support to create PDFA compliant PDF.
 
 Currently Aspose.PDF for SharePoint supports only PDFA1b standard.
 
