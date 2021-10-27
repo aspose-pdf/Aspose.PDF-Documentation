@@ -34,5 +34,5 @@ The following table indicates the Annotation types that Aspose.PDF for Java supp
 |[Movie](/pdf/java/multimedia-annotation/)|(PDF 1.2) Movie annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Widget](/pdf/java/widget-annotation/)|(PDF 1.2) Widget annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Screen](/pdf/java/multimedia-annotation/)|(PDF 1.5) Screen annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/java/watermarkannotation/)|(PDF 1.6) Watermark annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/java/watermark-annotation/)|(PDF 1.6) Watermark annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Redact](/pdf/java/redact-certain-page-region-with-redactionannotation/)|(PDF 1.7) Redact annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

@@ -18,7 +18,7 @@ sitemap:
 - [Add Text to PDF file](/pdf/java/add-text-to-pdf-file/) - add text to your PDF, use fonts from strem and files, add HTML string, add a hyperlink, etc.
 - [PDF Tooltip](/pdf/java/pdf-tooltip/) -  you may add a tooltip to searched text by adding an invisible button using Java.
 - [Text Formatting inside PDF](/pdf/java/text-formatting-inside-pdf/) - Many features you can add to your document when formatting the text inside it. Add line indent, add text border, add underline text, add newline feed with Aspose.PDF library.
-- [Replace Text in PDF](/pdf/java/replace-text-in-pdf/) -  to replace text in all the pages of a PDF document. You first need to use TextFragmentAbsorber.
+- [Replace Text in PDF](/pdf/java/replace-text-in-a-pdf-document/) -  to replace text in all the pages of a PDF document. You first need to use TextFragmentAbsorber.
 - [Rotate Text Inside PDF](/pdf/java/rotate-text-inside-pdf/) - rotate text inside PDF using TextFragment Class.
 - [Search and Get Text from Pages of PDF Document](/pdf/java/search-and-get-text-from-pdf/) - you can use TextFragmentAbsorber class for searching and getting a text from pages.
 - [Determine Line Break](/pdf/java/determine-line-break/) - this topic explains how to track line breaking of multi-kine text fragments.
