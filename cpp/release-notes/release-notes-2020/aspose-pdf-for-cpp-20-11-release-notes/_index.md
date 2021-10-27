@@ -53,4 +53,4 @@ This new version of Aspose.PDF for C++ has codebase of Aspose.PDF for .NET 20.11
 * Property Aspose.Pdf.XImage.FilterType
 * Method Aspose.Pdf.XImageCollection.Replace(System.Int32,System.IO.Stream,System.Int32,System.Boolean)
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp/).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).

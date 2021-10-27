@@ -23,7 +23,7 @@ Aspose.PDF for Java is a PDF document creation component that enables your Java 
 - Aspose.PDF Java for IntelliJ IDEA (Maven) is an IntelliJ IDEA Plugin which lets you create maven projects (i.e. created project contains Aspose.PDF for Java API maven dependency) and download source code examples of the API  for using Aspose.PDF for Java API.
 - This plugin helps you to work with Aspose.PDF for Java API inside your favorite IntelliJ IDEA.
 
-![todo:image_alt_text](http://i.imgur.com/KWKGljg.png)
+![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
 
 WIZARDS:
 The plugin contains two wizards

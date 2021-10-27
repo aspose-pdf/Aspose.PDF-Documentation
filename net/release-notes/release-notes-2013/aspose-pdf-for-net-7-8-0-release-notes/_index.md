@@ -12,7 +12,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-This page contains release notes for [Aspose.PDF for .NET 7.8.0](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-for-.net-7.8.0/)
+This page contains release notes for [Aspose.PDF for .NET 7.8.0](https://downloads.aspose.com/pdf/net/new-releases/aspose.pdf-for-.net-7.8.0/)
 
 {{% /alert %}}
 

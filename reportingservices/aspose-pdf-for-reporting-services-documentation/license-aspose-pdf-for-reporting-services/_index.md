@@ -14,7 +14,7 @@ Aspose.PDF for Reporting Services' evaluation version provides the same set of f
 
 {{% alert color="primary" %}}
 
-When you are happy with your evaluation, [buy a license](http://www.aspose.com/purchase/default.aspx). Before purchasing, make sure you understand and agree to the license subscription terms.
+When you are happy with your evaluation, [buy a license](https://purchase.aspose.com/buy). Before purchasing, make sure you understand and agree to the license subscription terms.
 
 The license is emailed to you when the order has been paid. The license is a clear text, digitally signed XML file and contains information such as the client name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
 ### **Licensing a Server**

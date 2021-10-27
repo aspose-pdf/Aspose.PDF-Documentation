@@ -15,4 +15,4 @@ Links let you jump to other locations in the same document, to other electronic 
 
 - [Create Links](/pdf/java/create-links/) - learn simply a way to create links in your PDF file using Java.
 - [Update Links](/pdf/java/update-links/) - try to set target to PDF, try to set link destination to web address, try to set link target to another PDF file, update link text color.
-- [Extract Links](/pdf/java/extract-links) - extract links from the PDF file using AnnotationSelector class.
+- [Extract Links](/pdf/java/extract-links/) - extract links from the PDF file using AnnotationSelector class.

@@ -27,7 +27,7 @@ Aspose.PDF for Java offers an incredible wealth of features, these include PDF 
 - Aspose.PDF Java for NetBeans (Maven) is a Plugin for **NetBeans IDE** by **Aspose.** The Plugin intended for developers using the Maven platform for Java developments and want to use Aspose.PDF for Java in their projects. The Plugin lets you create maven projects for using Aspose.PDF for Java API and also download [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) of the API. 
 - The plugin provides following features to work with Aspose.PDF for Java API within **NetBeans IDE** comfortably:
 
-![todo:image_alt_text](http://i.imgur.com/KWKGljg.png)
+![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
 
 **WIZARDS**:
 The plugin contains two wizards
@@ -98,7 +98,7 @@ Using Aspose.PDF for NetBeans - Maven
 
 ### How to apply Aspose License?
 
-This Plugin uses an evaluation version of Aspose.PDF. Once you are happy with your evaluation, you can purchase a license at the [Aspose website](http://www.aspose.com/purchase/default.aspx).
+This Plugin uses an evaluation version of Aspose.PDF. Once you are happy with your evaluation, you can purchase a license at the [Aspose website](https://purchase.aspose.com/buy).
 To remove the evaluation message and feature limitations, a product license should be applied. You will receive a license file after you have purchased the product. Please follow the steps below to apply the license.
 
 - Make sure the license file is named as **Aspose.PDF.Java.lic

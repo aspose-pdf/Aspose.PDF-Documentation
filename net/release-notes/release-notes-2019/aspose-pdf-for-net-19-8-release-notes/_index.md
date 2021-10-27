@@ -21,7 +21,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.8](https://www.nug
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFNET-46769|Introduce [HtmlSaveOptions.FlowLayoutParagraphFullWidth](/pdf/net/convert-pdf-file-into-html-format/#convertpdffileintohtmlformat-pdftohtmlwithfullcontentwidth) option|Enhancement|
+|PDFNET-46769|Introduce [HtmlSaveOptions.FlowLayoutParagraphFullWidth](/pdf/net/convert-pdf-to-html/#convertpdffileintohtmlformat-pdftohtmlwithfullcontentwidth) option|Enhancement|
 |PDFNET-46292|HTML to PDF - output file size is larger than input file|Bug|
 |PDFNET-46683|Problem adding a table with Top property set|Bug|
 |PDFNET-46449|Set specific font for substitution|Bug|

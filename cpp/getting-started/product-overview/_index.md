@@ -60,8 +60,8 @@ This table lists important Aspose.PDF for C++ technical resources.
 
 |**Resource**|**Description**|
 | :- | :- |
-|[Aspose.PDF for C++ Home Page](https://www.aspose.com/products/pdf/cpp)|Product home page.|
-|[Aspose.PDF Blog](https://blog.aspose.com/category/aspose-products/aspose-pdf-product-family/)|Check this often for information about new releases and useful tips about Aspose.PDF.|
+|[Aspose.PDF for C++ Home Page](https://products.aspose.com/pdf/cpp/)|Product home page.|
+|[Aspose.PDF Blog](https://blog.aspose.com/category/pdf/)|Check this often for information about new releases and useful tips about Aspose.PDF.|
 |[Aspose.PDF for C++ Download](https://downloads.aspose.com/pdf/cpp)|Download the latest version of Aspose.PDF from here. We release often.|
 |[Aspose.PDF for C++ Support Forum](https://forum.aspose.com/c/pdf/10)|Post your questions and issues here for a speedy resolution.|
 
