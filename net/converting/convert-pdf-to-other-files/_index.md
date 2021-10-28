@@ -13,11 +13,13 @@ sitemap:
 
 ## Convert PDF to EPUB
 
-## Try to convert PDF to EPUB online
+{{% alert color="success" %}}
+**Try to convert PDF to EPUB online**
 
 Aspose.PDF for .NET presents you online free application ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion PDF to EPUB with Free App](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
+{{% /alert %}}
 
 **<abbr title="Electronic Publication">EPUB</abbr>** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
 EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
@@ -44,11 +46,13 @@ pdfDocument.Save(dataDir + "PDFToEPUB_out.epub", options);
 **Aspose.PDF for .NET** support converting PDF to LaTeX/TeX.
 The LaTeX file format is a text file format with the special markup and used in TeX-based document preparation system for high-quality typesetting.
 
-## Try to convert PDF to LaTeX/TeX online
+{{% alert color="success" %}}
+**Try to convert PDF to LaTeX/TeX online**
 
 Aspose.PDF for .NET presents you online free application ["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion PDF to LaTeX/TeX with Free App](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
+{{% /alert %}}
 
 To convert PDF files to TeX, Aspose.PDF has the class [LaTeXSaveOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions) which provides the property OutDirectoryPath for saving temporary images during the conversion process.
 
@@ -97,11 +101,13 @@ public static void ConvertPDFDocToTXT()
 }
 ```
 
-## Try to convert Convert PDF to Text online
+{{% alert color="success" %}}
+**Try to convert Convert PDF to Text online**
 
 Aspose.PDF for .NET presents you online free application ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion PDF to Text with Free App](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
+{{% /alert %}}
 
 ## Convert PDF page to text file
 
@@ -129,11 +135,13 @@ public static void ConvertPDFPagestoTXT()
 
 **Aspose.PDF for .NET** gives a possibility to convert PDF files to <abbr title="XML Paper Specification">XPS</abbr> format. Let try to use the presented code snippet for converting PDF files to XPS format with C#.
 
-## Try to convert PDF to SVG online
+{{% alert color="success" %}}
+**Try to convert PDF to SVG online**
 
 Aspose.PDF for .NET presents you online free application ["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion PDF to SVG with Free App](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+{{% /alert %}}
 
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into the Windows operating system.
 

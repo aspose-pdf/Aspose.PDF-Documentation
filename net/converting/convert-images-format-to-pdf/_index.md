@@ -42,11 +42,13 @@ using (Document pdfDocument = new Document())
 }
 ```
 
-## Try to convert BMP to PDF online
+{{% alert color="success" %}}
+**Try to convert BMP to PDF online**
 
 Aspose presents you online free application ["BMP to PDF"](https://products.aspose.app/pdf/conversion/bmp-to-pdf/), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion BMP to PDF using Free App](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/bmp-to-pdf/)
+{{% /alert %}}
 
 ## Convert CGM to PDF
 
@@ -104,11 +106,13 @@ public static void ConvertDICOMtoPDF()
 }
 ```
 
-## Try to convert DICOM to PDF online
+{{% alert color="success" %}}
+**Try to convert DICOM to PDF online**
 
 Aspose presents you online free application ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion DICOM to PDF using Free App](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
+{{% /alert %}}
 
 ## Convert EMF to PDF
 
@@ -151,11 +155,13 @@ page.Paragraphs.Add(image);
 doc.Save(dataDir + "EMFtoPDF.pdf");
 ```
 
-## Try to convert EMF to PDF online
+{{% alert color="success" %}}
+**Try to convert EMF to PDF online**
 
 Aspose presents you online free application ["EMF to PDF"](https://products.aspose.app/pdf/conversion/emf-to-pdf/), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion EMF to PDF using Free App](emf_to_pdf.png)](https://products.aspose.app/pdf/conversion/emf-to-pdf/)
+{{% /alert %}}
 
 ## Convert JPG to PDF
 
@@ -230,11 +236,13 @@ page.Paragraphs.Add(image);
 doc.Save(dataDir + "ImagetoPDF_HeightWidth.pdf");
 ```
 
-## Try to convert JPG to PDF online
+{{% alert color="success" %}}
+**Try to convert JPG to PDF online**
 
 Aspose presents you online free application ["JPG to PDF"](https://products.aspose.app/pdf/conversion/jpg-to-pdf/), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion JPG to PDF using Free App](jpg_to_pdf.png)](https://products.aspose.app/pdf/conversion/jpg-to-pdf/)
+{{% /alert %}}
 
 ## Convert PNG to PDF
 
@@ -278,11 +286,13 @@ page.Paragraphs.Add(image);
 doc.Save(dataDir + "ImagetoPDF.pdf");
 ```
 
-## Try to convert PNG to PDF online
+{{% alert color="success" %}}
+**Try to convert PNG to PDF online**
 
 Aspose presents you online free application ["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion PNG to PDF using Free App](png_to_pdf.png)](https://products.aspose.app/pdf/conversion/png-to-pdf/)
+{{% /alert %}}
 
 ## Convert SVG to PDF
 
@@ -292,11 +302,13 @@ Scalable Vector Graphics (SVG) is a family of specifications of an XML-based fil
 
 SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
 
-## Try to convert SVG format to PDF online
+{{% alert color="success" %}}
+**Try to convert SVG format to PDF online**
 
 Aspose.PDF for .NET presents you online free application ["SVG to PDF"](https://products.aspose.app/pdf/conversion/svg-to-pdf), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion SVG to PDF with Free App](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
+{{% /alert %}}
 
 To convert SVG files to PDF, use the class named [SvgLoadOptions](https://apireference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) which is used to initialize the [`LoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/loadoptions) object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
 

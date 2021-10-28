@@ -21,11 +21,14 @@ Please note we follow Adobe Preflight for validating PDF/A conformance. All tool
 
 Convert the file using the Document class Convert method. Before converting the PDF to PDF/A compliant file, validate the PDF using the Validate method. The validation result is stored in an XML file and then this result is also passed to the Convert method. You can also specify the action for the elements which cannot be converted using the ConvertErrorAction enumeration.
 
-## Try to convert PDF to PDF/A online
+{{% alert color="success" %}}
+**Try to convert PDF to PDF/A online**
 
 Aspose.PDF for .NET presents you online free application ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion PDF to PDF/A with Free App](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
+{{% /alert %}}
+
 
 ## Convert PDF file to PDF/A-1b
 
