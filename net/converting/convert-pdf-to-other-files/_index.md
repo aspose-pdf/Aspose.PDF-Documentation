@@ -109,7 +109,7 @@ Aspose.PDF for .NET presents you online free application ["PDF to Text"](https:/
 [![Aspose.PDF Convertion PDF to Text with Free App](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}
 
-## Convert PDF page to text file
+### Convert PDF page to text file
 
 You can convert PDF document to TXT file with Aspose.PDF for .NET. You should use `Visit` method of `TextAbsorber` class for resolve this task.
 

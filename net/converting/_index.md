@@ -19,16 +19,18 @@ You can convert a large number of documents at once or one. Our Aspose.PDF for .
 Aspose.PDF for .NET allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn the sections of converting documents with code snippets.
 
 - [Convert PDF to Microsoft Word](/pdf/net/convert-pdf-to-word/) - you can convert your PDF document to Word format with C#
-- [Convert PDF to Microsoft Excel](/pdf/net/convert-pdf-to-excel/) - try to convert PDF to excel using Aspose.PDF code snippet
-- [Convert PDF to Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - learn simple ways of conversion PDF to PowerPoint using Aspose.PDF .NET
-- [Convert HTML format to PDF file](/pdf/net/convert-html-to-pdf/) - article about the possibility to convert HTML files to PDF format
-- [Convert PDF file to HTML format](/pdf/net/convert-pdf-to-html/) - convert your PDF documents to HTML files using C# library by Aspose.PDF
-- [Convert various Images formats to PDF file](/pdf/net/convert-images-format-to-pdf/) - Aspose.PDF allows you to convert different formats of images to PDF file
-- [Convert PDF to various Images formats](/pdf/net/convert-pdf-to-images-format/) - you may convert your PDF document to various image formats
-- [Convert other file formats to PDF](/pdf/net/convert-other-files-to-pdf/) - list of possible formats for conversion to PDF file
-- [Convert PDF file to other formats](/pdf/net/convert-pdf-to-other-files/) - C# library by Aspose.PDF allows you to convert PDF file to various other formats
+- [Convert PDF to Microsoft Excel](/pdf/net/convert-pdf-to-excel/) - this section describes how to convert PDF document to XLSX, ODS, CSV and SpreadSheetML
+- [Convert PDF to Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - here we are talking about converting PDF to PowerPoint by tracking the conversion process
+- [Convert HTML format to PDF file](/pdf/net/convert-html-to-pdf/) - article about different aspects of HTML-to-PDF conversion
+- [Convert PDF file to HTML format](/pdf/net/convert-pdf-to-html/) - convert your PDF documents to HTML files as separate pages or as a simgle page
+- [Convert Images formats to PDF file](/pdf/net/convert-images-format-to-pdf/) - Aspose.PDF allows you to convert different formats of images to PDF file
+- [Convert PDF to various Images formats](/pdf/net/convert-pdf-to-images-format/) - convert PDF pages as images in JPEG, PNG and other formats
+- [Convert other file formats to PDF](/pdf/net/convert-other-files-to-pdf/) - this topic describes conversion with various formats like EPUB, XPS, Postscript, text and others
+- [Convert PDF file to other formats](/pdf/net/convert-pdf-to-other-files/) - this topic describes way for conversion PDF document to various formats
 - [Convert PDF to PDF/A formats](/pdf/net/convert-pdf-to-pdfa/) - .NET library by Aspose.PDF has an easy way for converting PDF to PDF/A
 - [Convert PDF/A to PDF format](/pdf/net/convert-pdfa-to-pdf/) - convert PDF/A to PDF format with C# easy, fast, and high quality
+
+## Try to convert PDF files online
 
 {{% alert color="success" %}}
 **Try to convert PDF files online**
