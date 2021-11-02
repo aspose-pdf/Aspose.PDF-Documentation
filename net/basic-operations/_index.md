@@ -3,11 +3,11 @@ title: Basic operations with PDF documents
 linktitle: Basic operations
 type: docs
 weight: 60
-url: /cpp/basic-operations/
-lastmod: "2021-06-05"
+url: /net/basic-operations/
+lastmod: "2021-11-01"
 description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF library.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
