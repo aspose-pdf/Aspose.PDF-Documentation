@@ -13,7 +13,7 @@ sitemap:
 
 ## Set Privileges on an Existing PDF File
 
-To set privileges on a PDF file, create an object of the DocumentPrivilege class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object’s [Encrypt](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-boolean-) method. The following code snippet shows you how to set the privileges of a PDF file.
+To set privileges on a PDF file, create an object of the DocumentPrivilege class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s [Encrypt](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-boolean-) method. The following code snippet shows you how to set the privileges of a PDF file.
 
 ```java
   public static void SetPrivilegesOnExistingPDF()
@@ -37,7 +37,7 @@ To set privileges on a PDF file, create an object of the DocumentPrivilege class
 
 ## Encrypt PDF File using Different Encryption Types and Algorithms
 
-You can use the [Encrypt](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-int-int-) method of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object to encrypt a PDF file. You can pass the user password, owner password, and permissions to the [Encrypt](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-int-int-) method. In addition to that, you can pass any value of the [CryptoAlgorithm](https://apireference.aspose.com/java/pdf/com.aspose.pdf/CryptoAlgorithm) enum. This enum provides different combinations of encryption algorithms and key sizes. You can pass the value of your choice. Finally, save the encrypted PDF file using [save(..)](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#save--) method of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object.
+You can use the [Encrypt](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-int-int-) method of the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object to encrypt a PDF file. You can pass the user password, owner password, and permissions to the [Encrypt](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-int-int-) method. In addition to that, you can pass any value of the [CryptoAlgorithm](https://apireference.aspose.com/pdf/java/com.aspose.pdf/CryptoAlgorithm) enum. This enum provides different combinations of encryption algorithms and key sizes. You can pass the value of your choice. Finally, save the encrypted PDF file using [save(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#save--) method of the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
 
 >Please specify different user and owner passwords while encrypting the PDF file.
 
@@ -65,7 +65,7 @@ public static void EncryptPDFFile() {
 
 ## Decrypt PDF File using Owner Password
 
-In order to decrypt the PDF file, you first need to create a [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object and open the PDF using the owner’s password. After that, you need to call [Decrypt](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#decrypt--) method of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document)  object. Finally, save the updated PDF file using Save method of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document)  object. The following code snippet shows you how to decrypt the PDF file.
+In order to decrypt the PDF file, you first need to create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the PDF using the owner’s password. After that, you need to call [Decrypt](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#decrypt--) method of the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document)  object. Finally, save the updated PDF file using Save method of the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document)  object. The following code snippet shows you how to decrypt the PDF file.
 
 ```java
 public static void DecryptPDFFile() {
@@ -81,7 +81,7 @@ public static void DecryptPDFFile() {
 
 ## Change Password of a PDF File
 
-If you want to change the password of a PDF file, you first need to open the PDF file using owner password with the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object. After that, you need to call the [ChangePasswords](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#changePasswords-java.lang.String-java.lang.String-java.lang.String-) method of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object. You need to pass the current owner password along with the new user password and new owner password to this method. Finally, save the updated PDF file using Save method of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document)  object.
+If you want to change the password of a PDF file, you first need to open the PDF file using owner password with the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object. After that, you need to call the [ChangePasswords](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#changePasswords-java.lang.String-java.lang.String-java.lang.String-) method of the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object. You need to pass the current owner password along with the new user password and new owner password to this method. Finally, save the updated PDF file using Save method of the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document)  object.
 
 The following code snippet shows you how to change the password of a PDF file.
 
@@ -98,7 +98,7 @@ public static void ChangePassword_PDF_File() {
 
 ## How to - determine if the source PDF is password protected
 
-Aspose.PDF for Java provides great capabilities of dealing with PDF documents. When using [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class of com.aspose.pdf package to open a PDF document which is password protected, we need to provide the password information as an argument to Document constructor and in case this information is not provided, an error message is generated. In fact when trying to open a PDF file with Document object, the constructor is trying to read the contents of PDF file and in case correct password is not provided, an error message is generated (it happens to prevent unauthorised access of document)
+Aspose.PDF for Java provides great capabilities of dealing with PDF documents. When using [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class of com.aspose.pdf package to open a PDF document which is password protected, we need to provide the password information as an argument to Document constructor and in case this information is not provided, an error message is generated. In fact when trying to open a PDF file with Document object, the constructor is trying to read the contents of PDF file and in case correct password is not provided, an error message is generated (it happens to prevent unauthorised access of document)
 
 When dealing with encrypted PDF files, you may come across the scenario where you would be interested to detect if a PDF has an open password and/or an edit password. Sometimes there are documents which do not require password information while opening them, but they require information in order to edit the contents of file.. So in order to fulfil the above requirements, PdfFileInfo class present under com.aspose.pdf.facades package provides the methods which can help in determining the required information.
 

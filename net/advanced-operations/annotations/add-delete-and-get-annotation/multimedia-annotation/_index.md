@@ -1,5 +1,5 @@
 ---
-title: PDF Multimedia Annotation | C#
+title: PDF Multimedia Annotation using C#
 linktitle: Multimedia Annotation
 type: docs
 weight: 120

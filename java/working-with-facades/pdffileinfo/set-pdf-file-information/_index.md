@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-[PdfFileInfo](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileInfo) class allows you to set file specific information of a PDF document. You need to create an object of [PdfFileInfo](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileInfo) class and then set different file specific properties like Author, Title, Keyword, and Creator etc. Finally, save the updated PDF file using [saveNewInfo(..)](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileInfo#saveNewInfo-java.io.OutputStream-) method of the [PdfFileInfo](https://apireference.aspose.com/java/pdf/com.aspose.pdf.facades/PdfFileInfo) object.
+[PdfFileInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileInfo) class allows you to set file specific information of a PDF document. You need to create an object of [PdfFileInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileInfo) class and then set different file specific properties like Author, Title, Keyword, and Creator etc. Finally, save the updated PDF file using [saveNewInfo(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileInfo#saveNewInfo-java.io.OutputStream-) method of the [PdfFileInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileInfo) object.
 
 The following code snippet shows you how to set PDF file information.
 

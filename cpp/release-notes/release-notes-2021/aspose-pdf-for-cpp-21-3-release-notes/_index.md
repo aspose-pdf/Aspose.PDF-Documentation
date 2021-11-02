@@ -53,4 +53,4 @@ Issues with wrong formatting while saving PDF documents to DOCX format have been
 * Property Aspose.Pdf.EncryptedPayload.Subtype
 * Property Aspose.Pdf.EncryptedPayload.Version
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/cpp/pdf/).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp/).

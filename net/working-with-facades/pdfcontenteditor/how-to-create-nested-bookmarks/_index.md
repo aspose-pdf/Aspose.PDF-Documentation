@@ -8,7 +8,7 @@ lastmod: "2021-06-05"
 draft: false
 ---
 
-Bookmarks give you the option to keep track/link to specific page inside the PDF document. [PdfContentEditor](http://www.aspose.com/api/net/pdf/aspose.pdf.facades/PdfContentEditor) class in [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) provides a feature which allows you to create your own bookmark in a sophisticated yet intuitive way within an existing PDF file, at a given page or all pages.
+Bookmarks give you the option to keep track/link to specific page inside the PDF document. [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) class in [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) provides a feature which allows you to create your own bookmark in a sophisticated yet intuitive way within an existing PDF file, at a given page or all pages.
 
 ## Implementation details
 

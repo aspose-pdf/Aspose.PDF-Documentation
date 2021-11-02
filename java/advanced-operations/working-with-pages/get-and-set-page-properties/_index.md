@@ -15,7 +15,7 @@ When working with documents, you often want to know how many pages they contain.
 
 To get the number of pages in a PDF file:
 
-1. Open the PDF file using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class.
+1. Open the PDF file using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
 1. Then use the [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/PageCollection) collection's Count property (from the Document object) to get the total number of pages in the document.
 
 The following code snippet shows how to get the number of pages of a PDF file.
@@ -44,7 +44,7 @@ public class ExampleGetAndSetPageProperties {
 
 ### Get page count without saving the document
 
-Unless the PDF file is saved and all the elements are actually placed inside the PDF file, we cannot get the page count for particular document (because we cannot be certain about the number of pages in which all the elements will be accommodated). However starting with release Aspose.PDF for Java 10.1.0, we have introduced a method named [processParagraphs(...)](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#processParagraphs--) which provides the feature to get page count for PDF document, without saving the file. So we can get page count information on the fly. Please try using following code snippet to accomplish this requirement.
+Unless the PDF file is saved and all the elements are actually placed inside the PDF file, we cannot get the page count for particular document (because we cannot be certain about the number of pages in which all the elements will be accommodated). However starting with release Aspose.PDF for Java 10.1.0, we have introduced a method named [processParagraphs(...)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#processParagraphs--) which provides the feature to get page count for PDF document, without saving the file. So we can get page count information on the fly. Please try using following code snippet to accomplish this requirement.
 
 ```java
 public static void GetPageCountWithoutSavingTheDocument() {
@@ -83,7 +83,7 @@ For further details, please visit [this page](http://www.enfocus.com/manuals/Ref
 
 ### Accessing Page Properties
 
-The [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) class provides all the properties related to a particular PDF page. All the pages of the PDF files are contained in the of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/PageCollection)  collection.
+The [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) class provides all the properties related to a particular PDF page. All the pages of the PDF files are contained in the of the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object's [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/PageCollection)  collection.
 
 From there, it is possible to access either individual Page objects using their index, or loop through the collection, using a foreach loop, to get all pages. Once an individual page is accessed, we can get its properties. The following code snippet shows how to get page properties.
 
@@ -130,9 +130,9 @@ From there, it is possible to access either individual Page objects using their 
 
 ## Determine Page Color
 
-The [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) class provides the properties related to a particular page in a PDF document, including what type of colour - RGB, black and white, grayscale or undefined - the page uses.
+The [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) class provides the properties related to a particular page in a PDF document, including what type of colour - RGB, black and white, grayscale or undefined - the page uses.
 
-All the pages of the PDF files are contained by the [PageCollection](https://apireference.aspose.com/java/pdf/com.aspose.pdf/PageCollection) collection. The [ColorType](https://apireference.aspose.com/java/pdf/com.aspose.pdf/ColorType) property specifies the color of elements on page. To get or determine the color information for particular PDF page, use the [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) class object's [ColorType](https://apireference.aspose.com/java/pdf/com.aspose.pdf/ColorType) property.
+All the pages of the PDF files are contained by the [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) collection. The [ColorType](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ColorType) property specifies the color of elements on page. To get or determine the color information for particular PDF page, use the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) class object's [ColorType](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ColorType) property.
 
 The following code snippet shows how to iterate through individual page of PDF file to get color information.
 

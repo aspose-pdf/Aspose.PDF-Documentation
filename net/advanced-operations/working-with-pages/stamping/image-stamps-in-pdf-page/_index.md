@@ -1,5 +1,5 @@
 ---
-title: Add Image stamps in PDF programmatically | C#
+title: Add Image stamps in PDF programmatically using C#
 linktitle: Image stamps in PDF File
 type: docs
 weight: 10

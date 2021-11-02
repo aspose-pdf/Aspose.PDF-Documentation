@@ -13,7 +13,7 @@ sitemap:
 
 ## Setting Structure Elements Properties
 
-In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers **createSectElement()** and **createHeaderElement()** methods of [ITaggedContent](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
+In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers **createSectElement()** and **createHeaderElement()** methods of [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -312,7 +312,7 @@ document.save(path + "CustomTag.pdf");
 
 ## Adding Structure Element into Elements
 
-In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers **createLinkElement()** method of [ITaggedContent](https://apireference.aspose.com/java/pdf/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
+In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers **createLinkElement()** method of [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java

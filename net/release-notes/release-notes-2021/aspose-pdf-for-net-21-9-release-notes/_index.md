@@ -26,7 +26,7 @@ This page contains release notes information for Aspose.PDF for .NET 21.9.
 |PDFNET-48659 Speed up while checking signatures|Enhancement|
 |PDFNET-46513 Speed up while verifying signatures from PDF document|Enhancement|
 |PDFNET-48471 Speed up convertion PDF to images|Enhancement|
-|PDFNET-49707 PDF to DOCX: Recognize indents of paragraphs in EnchantedFlow mode|Enhancement|
+|PDFNET-49707 PDF to DOCX: Recognize indents of paragraphs in EnhancedFlow mode|Enhancement|
 |PDFNET-47669 Adding watermark causing second signature invalid in PDF|Bug|
 |PDFNET-47666 Merge and sign PDF files making signature invalid|Bug|
 |PDFNET-46336 System.Argument.Exception while loading an HTML file|Bug|

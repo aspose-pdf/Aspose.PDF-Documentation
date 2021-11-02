@@ -8,12 +8,12 @@ description: This section shows how to extract images from PDF file using Java l
 lastmod: "2021-06-05"
 ---
 
-Each page holds a [Resources](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Resources) collection, and this, in turn, holds the Images collection, were all images in a page are kept. The [XImage](https://apireference.aspose.com/java/pdf/com.aspose.pdf/XImage) object gets a given image in the Images collection.
+Each page holds a [Resources](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Resources) collection, and this, in turn, holds the Images collection, were all images in a page are kept. The [XImage](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XImage) object gets a given image in the Images collection.
 
 To extract and image from a page:
 
 Get the image from the Images collection using the image index.
-Use the [XImage](https://apireference.aspose.com/java/pdf/com.aspose.pdf/XImage) object’s save(..) method to save the extracted image.
+Use the [XImage](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XImage) object’s save(..) method to save the extracted image.
 
 The following code snippet shows you how to extract images from the PDF file.
 

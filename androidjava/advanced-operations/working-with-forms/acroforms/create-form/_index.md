@@ -13,7 +13,7 @@ sitemap:
 
 ## Add Form Field in a PDF Document
 
-The [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class provides a collection named Form which helps manage form fields in a PDF document.
+The [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class provides a collection named Form which helps manage form fields in a PDF document.
 
 To add a form field:
 

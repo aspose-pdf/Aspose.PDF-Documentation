@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Aspose.PDF for Java provides the capability to convert HTML pages to PDF format. The [HtmlLoadOptions](https://apireference.aspose.com/java/pdf/com.aspose.pdf/HtmlLoadOptions) class supports the feature to load HTML contents and then save the output in PDF format.
+Aspose.PDF for Java provides the capability to convert HTML pages to PDF format. The [HtmlLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) class supports the feature to load HTML contents and then save the output in PDF format.
 
 ## How to convert HTML file to PDF Simple variant:
 

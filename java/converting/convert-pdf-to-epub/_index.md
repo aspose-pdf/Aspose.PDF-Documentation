@@ -20,7 +20,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-Aspose.PDF for Java supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Java has a class named [EpubSaveOptions](http://www.aspose.com/api/java/pdf/com.aspose.pdf/classes/EpubSaveOptions) which can be used as the second argument to the [Document](http://www.aspose.com/api/java/pdf/com.aspose.pdf/classes/Document).save(..) method, to generate an EPUB file. Please try using the following code snippet to accomplish this requirement.
+Aspose.PDF for Java supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Java has a class named [EpubSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/EpubSaveOptions) which can be used as the second argument to the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Document).save(..) method, to generate an EPUB file. Please try using the following code snippet to accomplish this requirement.
 
 ```java
 package com.aspose.pdf.examples;

@@ -13,7 +13,7 @@ sitemap:
 
 ## Get PDF File Information
 
-To get file-specific information about a PDF file, first get the [DocumentInfo](https://apireference.aspose.com/java/pdf/com.aspose.pdf/DocumentInfo) object using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class  [getInfo()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#getInfo--). Once the [DocumentInfo](https://apireference.aspose.com/java/pdf/com.aspose.pdf/DocumentInfo) object is retrieved, you can get the values of the individual properties.
+To get file-specific information about a PDF file, first get the [DocumentInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo) object using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class  [getInfo()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getInfo--). Once the [DocumentInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo) object is retrieved, you can get the values of the individual properties.
 
 The following code snippet shows you how to set PDF file information.
 
@@ -43,9 +43,9 @@ Aspose.PDF for Java allows you to set file-specific information for a PDF, infor
 
 To set this information:
 
-1. Create a [DocumentInfo](https://apireference.aspose.com/java/pdf/com.aspose.pdf/DocumentInfo) object.
+1. Create a [DocumentInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo) object.
 1. Set the values of the properties.
-1. Save the updated document using the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) class' [save()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) method.
+1. Save the updated document using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class' [save()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) method.
 
 {{% alert color="primary" %}}
 
@@ -81,8 +81,8 @@ Aspose.PDF for Java allows you to access a PDF file's XMP metadata.
 
 To get a PDF file's metadata,
 
-1. Create a [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object and open the input PDF file.
-1. Use the [getMetadata()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#getMetadata--) property to get the metadata.
+1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF file.
+1. Use the [getMetadata()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getMetadata--) property to get the metadata.
 
 The following code snippet shows you how to get metadata from the PDF file.
 
@@ -103,9 +103,9 @@ The following code snippet shows you how to get metadata from the PDF file.
 
 Aspose.PDF for Java allows you to set metadata in a PDF file. To set metadata:
 
-1. Create a [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object.
-1. Set metadata values using the [getMetadata()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#getMetadata--) property.
-1. Save the updated document using the [save()](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) method of the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object.
+1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
+1. Set metadata values using the [getMetadata()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getMetadata--) property.
+1. Save the updated document using the [save()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) method of the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
 
 The following code snippet shows you how to set metadata in a PDF file.
 

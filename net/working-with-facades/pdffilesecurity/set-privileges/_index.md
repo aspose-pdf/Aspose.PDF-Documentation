@@ -10,7 +10,7 @@ draft: false
 
 ## Set Privileges on an Existing PDF File
 
-To set a PDF file's privileges, create a [PdfFileSecurity](https://apireference.aspose.com/net/pdf/aspose.pdf.facades/pdffilesecurity) object and call the SetPrivilege method. You can specify the privileges using the DocumentPrivilege object and then pass this object to the SetPrivilege method. The following code snippet shows you how to set the privileges of a PDF file.
+To set a PDF file's privileges, create a [PdfFileSecurity](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and call the SetPrivilege method. You can specify the privileges using the DocumentPrivilege object and then pass this object to the SetPrivilege method. The following code snippet shows you how to set the privileges of a PDF file.
 
 ```csharp
 public static void SetPrivilege1()

@@ -11,7 +11,7 @@ lastmod: "2021-05-08"
 
 {{% alert color="primary" %}}
 
-![Aspose.PDF for Android via Java Logo](aspose-pdf-for-android.png)
+![Aspose.PDF for Android via Java Logo](aspose_pdf-for-android.png)
 
 <h2>Welcome to Aspose.PDF for Android via Java </h2>
 

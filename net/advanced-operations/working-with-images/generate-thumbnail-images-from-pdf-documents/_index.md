@@ -35,7 +35,7 @@ As our intent is to convert PDF pages into thumbnail images, so we are focusing 
 
 In order to generate the thumbnail images for each document, we have used the Adobe Acrobat 7.0 SDK and the Microsoft .NET 2.0 Framework.
 
-The [Acrobat SDK](http://www.adobe.com/devnet/acrobat) combined with the full version of Adobe Acrobat exposes a COM library of objects (sadly the free Adobe Reader does not expose the COM interfaces) that can be used to manipulate and access PDF information. Using these COM objects via COM Interop, load the PDF document, get the first page and render that page to the clipboard. Then, with the .NET Framework, copy this to a bitmap, scale and combine the image and save the result as a GIF or PNG file.
+The [Acrobat SDK](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/) combined with the full version of Adobe Acrobat exposes a COM library of objects (sadly the free Adobe Reader does not expose the COM interfaces) that can be used to manipulate and access PDF information. Using these COM objects via COM Interop, load the PDF document, get the first page and render that page to the clipboard. Then, with the .NET Framework, copy this to a bitmap, scale and combine the image and save the result as a GIF or PNG file.
 
 Once Adobe Acrobat is installed, use regedit.exe and look under HKEY_CLASSES_ROOT for entry entry called AcroExch.PDDoc.
 
@@ -60,7 +60,7 @@ If we need to convert PDF pages into JPEGs, the [Aspose.PDF.Devices](https://api
 
 {{% alert color="primary" %}}
 
-- Thank you to CodeProject for [Generate Thumbnail Image from PDF document](http://www.codeproject.com/Articles/5887/Generate-Thumbnail-Images-from-PDF-Documents).
-- Thank you to Acrobat for the [Acrobat SDK reference](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm?&accessible=true).
+- Thank you to CodeProject for [Generate Thumbnail Image from PDF document](https://www.codeproject.com/Articles/5887/Generate-Thumbnail-Images-from-PDF-Documents).
+- Thank you to Acrobat for the [Acrobat SDK reference](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/documentation.html).
 
 {{% /alert %}}

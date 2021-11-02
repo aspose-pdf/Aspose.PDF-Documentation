@@ -19,7 +19,7 @@ Aspose.PDF for Java has a tool to make it easy to retrieve tables. To extract ta
 
 1. Open document - instantiate a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object;
 1. Create a [TableAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber) object.
-1. Decide which pages to be analyzed and apply [visit](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) to the desired pages. The tabular data will be scanned, and the result will be saved in a list of [AbsorbedTable](https://apireference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable). We can get this list through [getTableList](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) method.
+1. Decide which pages to be analyzed and apply [visit](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) to the desired pages. The tabular data will be scanned, and the result will be saved in a list of [AbsorbedTable](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable). We can get this list through [getTableList](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) method.
 1. To get the data iterate throught `TableList` and handle list of [absorbed rows](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) and list of absorbed cells. We can access to the first list by calling [getTableList](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) method and to the second by calling [getCellList](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
 1. Each [AbsorbedCell](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) contains [TextFragmentCollections](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). You can process it for your own purposes.
 
@@ -57,7 +57,7 @@ public static void Extract_Table() {
 
 ## Extract table in specific area of PDF page
 
-Each abosorbed table has [Rectangle](https://apireference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable/properties/rectangle) property that describes position of the table on page.
+Each abosorbed table has [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable#getRectangle--) property that describes position of the table on page.
 
 So, if you need to extract tables located in a specific region, you have to work with specific coordinates.
 

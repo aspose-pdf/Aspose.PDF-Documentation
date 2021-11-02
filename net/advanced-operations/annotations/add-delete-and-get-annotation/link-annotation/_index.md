@@ -1,5 +1,5 @@
 ---
-title: PDF Link Annotation | C#
+title: PDF Link Annotation using C#
 linktitle: Link Annotation
 type: docs
 weight: 20

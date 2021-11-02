@@ -27,7 +27,7 @@ The logical structure of a PDF file is hierarchical and determines the sequence 
 
 As the structure of a PDF file is hierarchical, Aspose.PDF for Java also accesses the elements in the same way. The following hierarchy shows you how the PDF document is logically structured and how Aspose.PDF for Java DOM API constructs it.
 
-![PDF Document Structure](../images/structure.png)
+![PDF Document Structure](https://docs.aspose.com/pdf/java/images/structure.png)
 
 ### Accessing PDF Document Elements
 

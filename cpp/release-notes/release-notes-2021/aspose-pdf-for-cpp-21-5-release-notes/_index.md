@@ -37,4 +37,4 @@ This version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 21.5.
 
 * Method Aspose::Pdf::Facades::PdfConverter::MergeImages(SharedPtr\<System::Collections::Generic::List\<SharedPtr\<System::IO::Stream\>\>, System::Drawing::Imaging::ImageFormat, Aspose::Pdf::Facades::ImageMergeMode, System::Nullable\<int32_t\>, System::Nullable\<int32_t\>)
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/cpp/pdf/).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp/).

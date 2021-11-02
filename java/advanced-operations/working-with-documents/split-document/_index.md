@@ -19,8 +19,8 @@ You can split PDF files using Aspose.PDF and get the results online at this link
 
 This topic shows how to split PDF pages with Aspose.PDF for Java into individual PDF files in your Java applications. To split PDF pages into single page PDF files using Java, the following steps can be followed:
 
-1. Loop through the pages of PDF document through the [Document](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Document) object's [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection) collection.
-1. For each iteration, create a new Document object and add the individual [Page](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Page) object into the empty document.
+1. Loop through the pages of PDF document through the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object's [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection) collection.
+1. For each iteration, create a new Document object and add the individual [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object into the empty document.
 1. Save the new PDF using Save method.
 
 The following Java code snippet shows you how to split PDF pages into individual PDF files.
