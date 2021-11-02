@@ -4,7 +4,7 @@ linktitle: Convert HTML to PDF file
 type: docs
 weight: 40
 url: /net/convert-html-to-pdf/
-lastmod: "2021-10-18"
+lastmod: "2021-11-01"
 description: This topic show you how to Aspose.PDF allows to convert HTML and MHTML formats to PDF file.
 sitemap:
     changefreq: "monthly"

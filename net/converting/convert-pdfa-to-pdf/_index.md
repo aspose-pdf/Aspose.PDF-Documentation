@@ -4,7 +4,7 @@ linktitle: Convert PDF/A to PDF format
 type: docs
 weight: 110
 url: /net/convert-pdfa-to-pdf/
-lastmod: "2021-10-18"
+lastmod: "2021-11-01"
 description: This topic show you how to Aspose.PDF allows to convert PDF/A file to PDF document with .NET library. 
 sitemap:
     changefreq: "monthly"
