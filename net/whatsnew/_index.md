@@ -8,8 +8,32 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2021-06-05"
+lastmod: "2021-08-16"
 ---
+
+## What's new in Aspose.PDF 21.8
+
+### How to change text color in Digital Signature?
+
+In the 21.8 version  ForegroundColor property, it allows changing text color in Digital Signature.
+
+```csharp
+using (PdfFileSignature pdfSign = new PdfFileSignature())
+{
+    pdfSign.BindPdf(inFile);
+    //create a rectangle for signature location
+    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
+    PKCS7 pkcs = new PKCS7(inPfxFile, "");
+    pkcs.CustomAppearance = new SignatureCustomAppearance()
+    {//set text color
+        ForegroundColor = Color.Green
+    };
+    // sign the PDF file
+    pdfSign.Sign(1, true, rect, pkcs);
+    //save output PDF file
+    pdfSign.Save(outFile);
+}
+```
 
 ## What's new in Aspose.PDF 21.7
 

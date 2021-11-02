@@ -1,19 +1,20 @@
 ---
-title: Convert PDF/A to PDF using C#
-linktitle: Convert PDF/A to PDF
+title: Convert PDF/A to PDF format using C#
+linktitle: Convert PDF/A to PDF format
 type: docs
-weight: 350
+weight: 110
 url: /net/convert-pdfa-to-pdf/
-lastmod: "2021-06-05"
-description: To convert PDF/A to PDF you should remove restrictions from the original document. Aspose.PDF for .NET allows you to solve this problem easly and simply.
+lastmod: "2021-10-18"
+description: This topic show you how to Aspose.PDF allows to convert PDF/A file to PDF document with .NET library. 
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.8
 ---
 
-Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive
-">PDF/A</abbr> restriction from the original document. Class [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) has method [RemovePdfaCompliance(..)](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) to remove
-the PDF compliance information from input/source file.
+## Convert PDF/A document to PDF
+
+Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive">PDF/A</abbr> restriction from the original document. 
+Class [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) has method [RemovePdfaCompliance(..)](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) to remove the PDF compliance information from input/source file.
 
 ```csharp
 public static void ConvertPDFAtoPDF()
