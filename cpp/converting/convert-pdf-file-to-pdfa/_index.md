@@ -1,9 +1,9 @@
 ---
-title: Convert PDF File to PDF/A | C#
+title: Convert PDF File to PDF/A 
 linktitle: Convert PDF File to PDF/A
 type: docs
 weight: 180
-url: /net/convert-pdf-file-to-pdfa/
+url: /cpp/convert-pdf-file-to-pdfa/
 lastmod: "2021-06-05"
 description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**Aspose.PDF for .NET** allows you to convert a PDF file to a <abbr title="Portable Document Format / A">PDF/A</abbr> compliant PDF file. Before doing so, the file must be validated. This topic explains how.
+**Aspose.PDF for C++** allows you to convert a PDF file to a <abbr title="Portable Document Format / A">PDF/A</abbr> compliant PDF file. Before doing so, the file must be validated. This topic explains how.
 
 {{% alert color="primary" %}}
 
@@ -23,7 +23,7 @@ Convert the file using the Document class Convert method. Before converting the 
 
 ## Live Example
 
-Aspose.PDF for .NET presents you online free application ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for C++ presents you online free application ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), where you may try to investigate the functionality and quality it works.
 
 [![C# convert PDF to PDF/A](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 
@@ -31,78 +31,148 @@ Aspose.PDF for .NET presents you online free application ["PDF to PDF/A-1A"](htt
 
 The following code snippet shows how to convert PDF files to PDF/A-1b compliant PDF.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+```cpp
+void ConverttoPDFA_1b()
+{
+ std::clog << __func__ << ": Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
 
-// Open document
-Document pdfDocument = new Document(dataDir + "PDFToPDFA.pdf");
-           
-// Convert to PDF/A compliant document
-// During conversion process, the validation is also performed
-pdfDocument.Convert(dataDir + "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
+ // String for input file name
+ String infilename("sample.pdf");
+ // String for log file name
+ String logfilename("log.xml");
+ // String for input file name
+ String outfilename("PDFToPDFA_out.pdf");
 
-dataDir = dataDir + "PDFToPDFA_out.pdf";
-// Save output document
-pdfDocument.Save(dataDir);
+ // Open document
+ auto document = new Document(_dataDir + infilename);
+
+ // Convert to PDF/A compliant document
+ // During conversion process, the validation is also performed
+ document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_1B, ConvertErrorAction::Delete);
+
+ // Save output document
+ document->Save(_dataDir + outfilename);
+ std::clog << __func__ << ": Finish" << std::endl;
+}
 ```
 
 To perform validation only, use the following line of code:
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+```cpp
+void ConverttoPDFA_1b_Validation()
+{
+ std::clog << __func__ << ": Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
 
-// Open document
-Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
+ // String for input file name
+ String infilename("sample.pdf");
+ // String for log file name
+ String logfilename("log.xml");
 
-// Validate PDF for PDF/A-1a
-pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
+ // Open document
+ auto document = new Document(_dataDir + infilename);
+
+ // Convert to PDF/A compliant document
+ // During conversion process, the validation is also performed
+ document->Validate(_dataDir + logfilename, PdfFormat::PDF_A_1B);
+ std::clog << __func__ << ": Finish" << std::endl;
+}
 ```
 
 ## Convert PDF file to PDF/A-3b
 
-Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b format.
+Aspose.PDF for C++ also supports the feature to convert a PDF file to PDF/A-3b format.
 
-```csharp
-/ For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+```cpp
+void ConverttoPDFA_3b()
+{
+ std::clog << __func__ << ": Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
 
-// Open document
-Document pdfDocument = new Document(dataDir + "input.pdf");           
-           
-pdfDocument.Convert(new MemoryStream(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
+ // String for input file name
+ String infilename("sample.pdf");
+ // String for log file name
+ String logfilename("log.xml");
+ // String for input file name
+ String outfilename("PDFToPDFA3b_out.pdf");
 
-dataDir = dataDir + "PDFToPDFA3b_out.pdf";
-// Save output document
-pdfDocument.Save(dataDir);
+ // Open document
+ auto document = new Document(_dataDir + infilename);
+
+ // Convert to PDF/A compliant document
+ // During conversion process, the validation is also performed
+ document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_3B, ConvertErrorAction::Delete);
+
+ // Save output document
+ document->Save(_dataDir + outfilename);
+ std::clog << __func__ << ": Finish" << std::endl;
+}
 ```
 
 ## Convert PDF file to PDF/A-2u
 
-Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-2u format.
+Aspose.PDF for C++ also supports the feature to convert a PDF file to PDF/A-2u format.
 
-```csharp
-string inFile = "input.pdf";
-string outFile = "output.pdf";
-Aspose.PDF.Document doc = new Aspose.PDF.Document(inFile);
-doc.Convert(new MemoryStream(), PdfFormat.PDF_A_2U, ConvertErrorAction.Delete);
-doc.Save(outFile);
+```cpp
+void ConverttoPDFA_2u()
+{
+ std::clog << __func__ << ": Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
+
+ // String for input file name
+ String infilename("sample.pdf");
+ // String for log file name
+ String logfilename("log.xml");
+ // String for input file name
+ String outfilename("PDFToPDFA3b_out.pdf");
+
+ // Open document
+ auto document = new Document(_dataDir + infilename);
+
+ // Convert to PDF/A compliant document
+ // During conversion process, the validation is also performed
+ document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_2U, ConvertErrorAction::Delete);
+
+ // Save output document
+ document->Save(_dataDir + outfilename);
+ std::clog << __func__ << ": Finish" << std::endl;
+}
 ```
 
 ## Convert PDF file to PDF/A-3u
 
-Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3u format.
+Aspose.PDF for C++ also supports the feature to convert a PDF file to PDF/A-3u format.
 
-```csharp
-string inFile = "input.pdf";
-string outFile = "output.pdf";
-Aspose.PDF.Document doc = new Aspose.PDF.Document(inFile);
-doc.Convert(new MemoryStream(), PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
-doc.Save(outFile);
+```cpp
+void ConverttoPDFA_3u()
+{
+ std::clog << __func__ << ": Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
+
+ // String for input file name
+ String infilename("sample.pdf");
+ // String for log file name
+ String logfilename("log.xml");
+ // String for input file name
+ String outfilename("PDFToPDFA3b_out.pdf");
+
+ // Open document
+ auto document = new Document(_dataDir + infilename);
+
+ // Convert to PDF/A compliant document
+ // During conversion process, the validation is also performed
+ document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_2U, ConvertErrorAction::Delete);
+
+ // Save output document
+ document->Save(_dataDir + outfilename);
+ std::clog << __func__ << ": Finish" << std::endl;
+}
 ```
 
 ## Add Attachment to PDF/A file
@@ -110,44 +180,83 @@ doc.Save(outFile);
 In case you have a requirement to attach files to PDF/A compliance format, then we recommend using PDF_A_3A value from Aspose.PDF.PdfFormat enumeration.
 PDF/A_3a is the format that provides the feature to attach any file format as an attachment to PDF/A compliant file.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+```cpp
+void ConverttoPDFA_AddAttachment()
+{
+ std::clog << __func__ << ": Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
 
-// Instantiate Document instance to load existing file
-Aspose.Pdf.Document doc = new Document(dataDir + "input.pdf");
-// Setup new file to be added as attachment
-FileSpecification fileSpecification = new FileSpecification(dataDir + "aspose-logo.jpg", "Large Image file");
-// Add attachment to document's attachment collection
-doc.EmbeddedFiles.Add(fileSpecification);
-// Perform conversion to PDF/A_3a so attachment is included in resultnat file
-doc.Convert(dataDir + "log.txt", Aspose.Pdf.PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
-// Save resultant file
-doc.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
+ // String for input file name
+ String infilename("sample.pdf");
+ // String for log file name
+ String logfilename("log.xml");
+ // String for input file name
+ String outfilename("PDFToPDFA3b_out.pdf");
+
+ // Open document
+ auto document = new Document(_dataDir + infilename);
+
+ // Setup new file to be added as attachment
+ auto fileSpecification = MakeObject<FileSpecification>(_dataDir + String("aspose-logo.jpg"), String("Large Image file"));
+ // Add attachment to document's attachment collection
+ document->get_EmbeddedFiles()->Add(fileSpecification);
+
+ // Convert to PDF/A compliant document
+ // During conversion process, the validation is also performed
+ document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_3A, ConvertErrorAction::Delete);
+
+ // Save output document
+ document->Save(_dataDir + outfilename);
+ std::clog << __func__ << ": Finish" << std::endl;
+}
 ```
 
 ## Replace missing fonts with alternative fonts
 
 As per PDFA standards, fonts should be embedded in PDFA document. However, if the fonts are not embedded in the source document or exist on the machine then PDFA fails the validation. In this case, we have a requirement to substituent missing fonts with some alternative fonts from the machine. We can substitute missing fonts using the SimpleFontSubsituation method as following during PDF to PDFA conversion.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+```cpp
+void ConverttoPDFA_ReplaceFont()
+{
+ std::clog << __func__ << ": Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
 
-Aspose.Pdf.Text.Font originalFont = null;
-try
-{
-    originalFont = FontRepository.FindFont("AgencyFB");
+ // String for input file name
+ String infilename("sample.pdf");
+ // String for log file name
+ String logfilename("log.xml");
+ // String for input file name
+ String outfilename("PDFToPDFA3b_out.pdf");
+
+ // Open document
+ auto document = new Document(_dataDir + infilename);
+
+ System::SharedPtr<Aspose::Pdf::Text::Font> originalFont;
+ try
+ {
+  originalFont = FontRepository::FindFont(String("AgencyFB"));
+ }
+ catch (Exception)
+ {
+  // Font is missing on destination machine
+  auto substitutions = FontRepository::get_Substitutions();
+  auto substitution = MakeObject<SimpleFontSubstitution>(String("AgencyFB"), String("Helvetica"));
+  substitutions->Add(substitution);
+ }
+
+ // Convert to PDF/A compliant document
+ try {
+  // During conversion process, the validation is also performed
+  document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_1B, ConvertErrorAction::Delete);
+
+  // Save output document
+  document->Save(_dataDir + outfilename);
+ }
+ catch (Exception ex) {
+  std::cerr << ex->get_Message();
+ }
+ std::clog << __func__ << ": Finish" << std::endl;
 }
-catch (Exception)
-{
-    // Font is missing on destination machine
-    FontRepository.Substitutions.Add(new SimpleFontSubstitution("AgencyFB", "Arial"));
-}
-var fileNew = new FileInfo(dataDir + "newfile_out.pdf");
-var pdf = new Document(dataDir + "input.pdf");
-pdf.Convert( dataDir +  "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
-pdf.Save(fileNew.FullName);
 ```

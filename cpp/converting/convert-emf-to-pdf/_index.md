@@ -1,11 +1,11 @@
 ---
-title: Convert EMF to PDF | C#
+title: Convert EMF to PDF 
 linktitle: Convert EMF to PDF
 type: docs
 weight: 230
-url: /net/convert-emf-to-pdf/
+url: /cpp/convert-emf-to-pdf/
 lastmod: "2021-06-05"
-description: Both bitmap as well as vector graphics can be files having an EMF extension. Convert EMF to PDF file simply with C#.
+description: Both bitmap as well as vector graphics can be files having an EMF extension. Convert EMF to PDF file simply with C++.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,39 +13,39 @@ sitemap:
 
 <abbr title="Enhanced metafile format">EMF</abbr>EMF stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device. Furthermore, you can convert EMF to PDF image using the below steps:
 
-1. Firstly, initialize Document class object
-1. Load EMF image file
-1. Add the loaded EMF image to a Page
-1. Save PDF document
+1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. An instance of a new Document object is created.
+1. Add a new Page to this [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document).
+1. A new Aspose.Pdf TIFF is created.
+1. The Aspose.PDF TIFF object is initialized using the input file.
+1. Aspose.PDF TIFF is added to the Page as a Paragraph.
+1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) the input image file.
 
-Moreover, the following code snippet shows how to convert an EMF to PDF with C# in your .NET code snippet:
+Moreover, the following code snippet shows how to convert an EMF to PDF with C++ in your code snippet:
 
-```csharp
-// Initialize new PDF document
-var doc = new Document();
+```cpp
+void ConvertEMFtoPDF() {
+ std::clog << "EMF to PDF convert: Start" << std::endl;
 
-// Spcify path of input EMF image file
-var imageFile = dataDir + "drawing.emf";
-var page = doc.Pages.Add();
-string file = imageFile;
-FileStream filestream = new FileStream(file, FileMode.Open, FileAccess.Read);
-BinaryReader reader = new BinaryReader(filestream);
-long numBytes = new FileInfo(file).Length;
-byte[] bytearray = reader.ReadBytes((int)numBytes);
-Stream stream = new MemoryStream(bytearray);
-var b = new Bitmap(stream);
+ String _dataDir("C:\\Samples\\Conversion\\");
+ String infilename("sample.emf");
+ String outfilename("ImageToPDF_emf.pdf");
 
-// Specify page dimesion properties
-page.PageInfo.Margin.Bottom = 0;
-page.PageInfo.Margin.Top = 0;
-page.PageInfo.Margin.Left = 0;
-page.PageInfo.Margin.Right = 0;
-page.PageInfo.Width = b.Width;
-page.PageInfo.Height = b.Height;
-var image = new Aspose.Pdf.Image();
-image.File = imageFile;
-page.Paragraphs.Add(image);
+ auto fileStream = System::IO::File::OpenRead(_dataDir + infilename);
+ auto myimage = MakeObject<System::Drawing::Bitmap>(fileStream);
 
-//Save output PDF document
-doc.Save(dataDir + "EMFtoPDF.pdf");
+ auto document = MakeObject<Document>();
+ auto page = document->get_Pages()->Add();
+
+ auto currentImage = MakeObject<System::IO::MemoryStream>();
+ myimage->Save(currentImage, System::Drawing::Imaging::ImageFormat::get_Tiff());
+
+ auto imageht = MakeObject<Aspose::Pdf::Image>();
+ imageht->set_ImageStream(currentImage);
+ page->get_Paragraphs()->Add(imageht);
+
+ document->Save(_dataDir + outfilename);
+
+ std::clog << "EMF to PDF convert: Finish" << std::endl;
+}
 ```

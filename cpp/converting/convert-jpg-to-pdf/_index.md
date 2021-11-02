@@ -1,44 +1,58 @@
 ---
-title: Convert JPG to PDF | C#
+title: Convert JPG to PDF 
 linktitle: Convert JPG to PDF
 type: docs
 weight: 190
-url: /net/convert-jpg-to-pdf/
-lastmod: "2021-06-05"
+url: /cpp/convert-jpg-to-pdf/
+lastmod: "2021-10-01"
 description: Learn how to easily convert a JPG images to PDF file. Also, you can convert an image to PDF with the same height and width of the page.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-No need to wonder how to convert JPG to PDF, because **Apose.PDF for .NET** library has best decision.
+No need to wonder how to convert JPG to PDF, because **Aspose.PDF for C++** library has best decision.
 
-You can very easy convert a JPG images to PDF with Aspose.PDF for .NET by following steps:
+You can very easy convert a JPG images to PDF with Aspose.PDF for C++ by following steps:
 
-1. Initialize object of [Document](https://apireference.aspose.com/page/net/aspose.page/document) class
-1. Add a new Page to PDF document
-1. Load JPG image and add to paragraph
-1. Save output PDF
+1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. An instance of a new Document object is created.
+1. Add a new Page to this [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document).
+1. A new Aspose::Pdf::Image is created.
+1. The Aspose.PDF Image object is initialized using the input file.
+1. Aspose.PDF Image is added to the Page as a Paragraph.
+1. Load and save the input image file.
 
-The code snippet below shows how to convert JPG Image to PDF using C#:
+The code snippet below shows how to convert JPG Image to PDF using C++:
 
-```csharp
-// Load input JPG file
-String path = dataDir + "Aspose.jpg";
+```cpp
+void ConvertJPEGtoPDF() {
 
-// Initialize new PDF document
-Document doc = new Document();
+ std::clog << "JPEG to PDF convert: Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
 
-// Add empty page in empty document
-Page page = doc.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-image.File = (path);
+ // String for input file name
+ String infilename("sample.jpg");
 
-// Add image on a page
-page.Paragraphs.Add(image);
+ // String for input file name
+ String outfilename("ImageToPDF-JPEG.pdf");
 
-// Save output PDF file
-doc.Save(dataDir + "ImagetoPDF.pdf");
+ // Open document
+ auto document = MakeObject<Document>();
+
+ // Add empty page in empty document
+ auto page = document->get_Pages()->Add();
+ auto image = MakeObject<Aspose::Pdf::Image>();
+ image->set_File(_dataDir + infilename);
+
+ // Add image on a page
+ page->get_Paragraphs()->Add(image);
+
+ // Save output document
+ document->Save(_dataDir + outfilename);
+ std::clog << "JPEG to PDF convert: Finish" << std::endl;
+}
 ```
 
 Then you can see how to convert an image to PDF with the **same height and width of the page**. We will be getting the image dimensions and accordingly set the page dimensions of PDF document with the below steps:
@@ -48,36 +62,47 @@ Then you can see how to convert an image to PDF with the **same height and width
 1. Set height, width, and margins of a page
 1. Save the output PDF file
 
-Following code snippet shows how to convert an Image to PDF with same page height and width using C#:
+Following code snippet shows how to convert an Image to PDF with same page height and width using C++:
 
-```csharp
-// Load input JPG image file
-String path = dataDir + "Aspose.jpg";
-System.Drawing.Image srcImage = System.Drawing.Image.FromFile(path);
+```cpp
+void ConvertJPGtoPDF_fitsize() {
 
-// Read Height of input image
-int h = srcImage.Height;
+ std::clog << "JPEG to PDF convert: Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
 
-// Read Height of input image
-int w = srcImage.Width;
+ // String for input file name
+ String infilename("sample.jpg");
 
-// Initialize a new PDF document
-Document doc = new Document();
+ // String for input file name
+ String outfilename("ImageToPDF-JPG.pdf");
 
-// Add an empty page
-Page page = doc.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-image.File = (path);
+ // Open document
+ auto document = MakeObject<Document>();
 
-// Set page dimensions and margins
-page.PageInfo.Height = (h);
-page.PageInfo.Width = (w);
-page.PageInfo.Margin.Bottom = (0);
-page.PageInfo.Margin.Top = (0);
-page.PageInfo.Margin.Right = (0);
-page.PageInfo.Margin.Left = (0);
-page.Paragraphs.Add(image);
+ // Add empty page in empty document
+ auto page = document->get_Pages()->Add();
+ auto fileStream = System::IO::File::OpenRead(_dataDir + infilename);
+ auto bitMap = MakeObject<System::Drawing::Bitmap>(fileStream);
 
-// Save output PDF file
-doc.Save(dataDir + "ImagetoPDF_HeightWidth.pdf");
+
+ auto image = MakeObject<Aspose::Pdf::Image>();
+ image->set_File(_dataDir + infilename);
+
+ // Add image on a page
+ page->get_Paragraphs()->Add(image);
+
+ // Set page dimensions and margins
+ page->get_PageInfo()->set_Height(bitMap->get_Height());
+ page->get_PageInfo()->set_Width(bitMap->get_Width());
+ page->get_PageInfo()->get_Margin()->set_Bottom(0);
+ page->get_PageInfo()->get_Margin()->set_Top(0);
+ page->get_PageInfo()->get_Margin()->set_Right(0);
+ page->get_PageInfo()->get_Margin()->set_Left(0);
+ page->get_Paragraphs()->Add(image);
+
+ // Save output document
+ document->Save(_dataDir + outfilename);
+ std::clog << "JPEG to PDF convert: Finish" << std::endl;
+}
 ```
