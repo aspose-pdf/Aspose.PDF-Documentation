@@ -1,16 +1,14 @@
 ---
-title: Aspose.PDF С# Example
+title: Hello World С++ Example
 linktitle: Hello World Example
 type: docs
 weight: 20
-url: /net/hello-world-example/
+url: /cpp/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World.
-aliases:
-    - /net/hello-world/
-lastmod: "2021-06-05"
+lastmod: "2021-11-01"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.6
 ---
 
 A "Hello World" example is traditionally used to introduce features of a programming language or software with a simple use case.
