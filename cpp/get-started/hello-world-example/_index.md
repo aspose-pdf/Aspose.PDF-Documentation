@@ -27,24 +27,30 @@ Below code snippet follows these steps:
 
 Following code snippet is a Hello World program to exhibit working of Aspose.PDF for .NET API.
 
-```csharp
-namespace Aspose.Pdf.Examples
+```cpp
+void ExampleSimple()
 {
-    public static class ExampleGetStarted
-    {
-        private static readonly string _dataDir = "..\\..\\..\\Samples";
-        public static void HelloWorld()
-        {
-            // Initialize document object
-            Document document = new Document();
-            // Add page
-            Page page = document.Pages.Add();
-            // Add text to new page
-            page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-            // Save updated PDF
-            var outputFileName = System.IO.Path.Combine(_dataDir, "HelloWorld_out.pdf");
-            document.Save( outputFileName );
-        }
-    }
+    // Buffer to hold combined path.
+    String outputFileName;
+
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
+
+    // String for file name.
+    String filename("HelloWorld_out.pdf");
+
+    auto document = MakeObject<Document>();
+    auto page = document->get_Pages()->Add();
+
+    // Add text to new page
+    auto text = MakeObject<TextFragment>(u"Hello world!");
+
+    auto paragraphs = page->get_Paragraphs();
+    paragraphs->Add(text);
+
+    // Save updated PDF
+    outputFileName = _dataDir + filename;
+
+    document->Save(outputFileName);
 }
 ```
