@@ -3,10 +3,11 @@ title: Supported File Formats
 type: docs
 weight: 20
 url: /cpp/supported-file-formats/
-lastmod: "2021-06-05"
+lastmod: "2021-11-01"
 ---
 
-## <ins>**Supported File Formats**
+## Supported File Formats
+
 The following table indicates the file formats that Aspose.PDF for C++ can load and Save.
 
 |**Format**|**Description**|**Load**|**Save**|**Remarks**|

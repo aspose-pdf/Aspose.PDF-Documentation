@@ -3,7 +3,7 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: /coo/get-started/
+url: /cpp/get-started/
 description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document using C++.
 is_node: true
 lastmod: "2021-11-01"   
@@ -38,9 +38,9 @@ Using Aspose.PDF for .NET in your project gives you the following profits:
 For quality work you required .NET environment.
 Aspose.PDF supports Windows Forms and ASP.NET applications for your usability.
 
-### Learn more about:
+### Learn more about: 
 
 - [Basics of DOM API](/pdf/cpp/basics-of-dom-api/)
-- ["Hello, World" C# Example](/pdf/cpp/hello-world-example/)
+- ["Hello, World" C++ Example](/pdf/cpp/hello-world-example/)
 - [Complex PDF](/pdf/cpp/complex-pdf-example/)
 - [How to run other examples](/pdf/cpp/how-to-run-other-examples/)

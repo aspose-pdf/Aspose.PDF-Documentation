@@ -27,6 +27,7 @@ The license can be loaded from a file or stream object. Aspose.PDF for C++ will 
 1. An embedded resource in the assembly that called Aspose.PDF.dll.
 
 The easiest way to set a license is to put the license file in the same folder as the Aspose.PDF.dll file and specify the file name, without a path, as shown in the example below.
+
 ### Loading a License from File
 
 The easiest way to apply a license is to put the license file in the same folder as the Aspose.PDF.dll file and specify just the file name without a path.
@@ -42,7 +43,7 @@ auto lic = MakeObject<Aspose::Pdf::License>();
 lic->SetLicense(L"Aspose.PDF.Cpp.lic");
 ```
 
-### **Loading a License from a Stream Object**
+### Loading a License from a Stream Object
 
 The following example shows how to load a license from a stream.
 
