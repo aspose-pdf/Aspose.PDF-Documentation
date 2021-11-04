@@ -3,11 +3,8 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: /net/get-started/
+url: /cpp/get-started/
 description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document.
-is_node: true
-aliases:
-    - /net/getting-started/
 lastmod: "2021-06-05"   
 sitemap:
     changefreq: "weekly"
@@ -16,33 +13,41 @@ sitemap:
 
 ## What is a PDF File?
 
-PDF was created by Adobe in the 1990s to achieve two things. The first is that you should be able to open the documents on any hardware or operating system, without needing to have the app used to create them—all you need is a PDF reader, and these days most web browsers fit the bill. The second is that wherever you open a PDF, the layout of the document should look the same.
+PDF stands for portable document format. The PDF file format was created by Adobe in 1990 and is one of the most common formats used today. A PDF file is a read-only document that preserves its original layout, preventing modification but allowing users to easily share and print the file.
 
-However, it is not enough just to open your document. In working with PDF, you will face the need to create such a document anew, edit it, or convert it to the format you need.
+Using a PDF has two benefits which present a solution to these obstacles. First, someone who receives a PDF file can open it on any program. In other words, they don’t need to have the app used to create the file in order to view it.
 
-## Why use Aspose.PDF for .NET?
+These advantages make PDFs more shareable than other file formats and ensure that viewers see the document as intended
 
-Using Aspose.PDF for .NET in your project gives you the following profits:
+## Why use Aspose.PDF for C++?
 
-- wide variety of functions
-- written completely in C# and works with .NET Framework
-- convenience and ease of use
+Using Aspose.PDF for C++ in your project gives you the following profits:
+
+- rich features;
+- platform independence;
+- performance and scalability;
+- rich Features.
 
 ## Wide variety of functions
 
-- document compression
-- support for graph objects
-- integration with data sources
-- add, update, delete attachments and annotations
-- support easily converting PDF to other formats and vice versa
-- split, concatenate, extract or inset pages and much more
+- read, write and manipulate existing PDF documents without using Adobe Acrobat.
+- create forms and manage form fields embedded in a PDF document.
+- add, replace or remove text and images.
+- set page margin, size, orientation, transition type, zoom factor and appearance of PDF document.
+- custom font handling.
+- add, update, delete attachments and annotations.
+- add and remove watermarks from PDF document.
+- add or remove bookmarks.
+- split, concatenate, extract or insert pages.
+- transform pages to image.
+- determine and set metadata of PDF documents.
+- set document’s information e.g Author, Subject, Title etc.
 
-For quality work you required .NET environment.
-Aspose.PDF supports Windows Forms and ASP.NET applications for your usability.
+**Aspose.PDF for C++ can be used to build any type of 32-bit and 64-bit C++ application.**
 
-### Learn more about:
+### Learn more about
 
-- [Basics of DOM API](/pdf/net/basics-of-dom-api/)
-- ["Hello, World" C# Example](/pdf/net/hello-world-example/)
-- [Complex PDF](/pdf/net/complex-pdf-example/)
-- [How to run other examples](/pdf/net/how-to-run-other-examples/)
+- [Basics of DOM API](/pdf/cpp/basics-of-dom-api/)
+- ["Hello, World" C# Example](/pdf/cpp/hello-world-example/)
+- [Complex PDF](/pdf/cpp/complex-pdf-example/)
+- [How to run other examples](/pdf/cpp/how-to-run-other-examples/)
