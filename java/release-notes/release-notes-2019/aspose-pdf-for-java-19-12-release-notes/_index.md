@@ -16,7 +16,7 @@ This page contains release notes information for Aspose.PDF for Java 19.12.
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
 |PDFJAVA-38667|Hyperlinks and cross-references support on converting PDF to DOCX|New Feature|
-|PDFJAVA-38483|Support [DICOM image to PDF](/pdf/java/add-delete-and-extract-images-from-the-pdf-file/#add-deleteandextractimagesfromthepdffile-supportfordicomimages)|New Feature|
+|PDFJAVA-38483|Support [DICOM image to PDF](/pdf/java/working-with-images/)|New Feature|
 |PDFJAVA-39017|Set [Font Size of Overlay Text](/pdf/java/redact-certain-page-region-with-redactionannotation/#redactcertainpageregionwithredactionannotation-redactpageregionwithredactionannotation) in Redaction Annotation|New Feature|
 |PDFJAVA-39063|Add [Font subsets optimization](/pdf/java/optimize-pdf-document/#optimizepdfdocument-removeunnecessaryobjects) method|Enhancement|
 |PDFJAVA-38960|Exception when loading Latex|Bug|

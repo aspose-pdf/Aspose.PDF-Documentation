@@ -18,33 +18,33 @@ The NetBeans Team actively support the product and seek feature suggestions from
 
 ### Aspose.PDF for Java
 
-[Aspose.PDF for Java ](https://products.aspose.com/pdf/java)is a robust PDF document creation API that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
+[Aspose.PDF for Java](https://products.aspose.com/pdf/java/)is a robust PDF document creation API that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
 
-[Aspose.PDF for Java](https://products.aspose.com/pdf/java) offers an incredible wealth of features, these include PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling.
+Aspose.PDF for Java offers an incredible wealth of features, these include PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling.
 
 ### Aspose.PDF Java for NetBeans (Maven)
 
-- Aspose.PDF Java for NetBeans (Maven) is a Plugin for **NetBeans IDE** by **Aspose.** The Plugin intended for developers using the Maven platform for Java developments and want to use [Aspose.PDF for Java](https://products.aspose.com/pdf/java) in their projects. The Plugin lets you create maven projects for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) and also download [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) of the API. 
-- The plugin provides following features to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) within **NetBeans IDE** comfortably:
+- Aspose.PDF Java for NetBeans (Maven) is a Plugin for **NetBeans IDE** by **Aspose.** The Plugin intended for developers using the Maven platform for Java developments and want to use Aspose.PDF for Java in their projects. The Plugin lets you create maven projects for using Aspose.PDF for Java API and also download [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) of the API. 
+- The plugin provides following features to work with Aspose.PDF for Java API within **NetBeans IDE** comfortably:
 
-![todo:image_alt_text](http://i.imgur.com/KWKGljg.png)
+![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
 
 **WIZARDS**:
 The plugin contains two wizards
 
 **Aspose.PDF Maven Project (wizard)**
 
-- This New Project wizard lets developers to create **Maven** project for using [Aspose.PDF for Java](https://products.aspose.com/pdf/java) from New Project -> Maven-> Aspose.PDF Maven Project.
-- The reference of [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) maven dependency is automatically fetched from [Aspose Cloud Maven Repository](http://maven.aspose.com/artifactory/webapp/home.html?0) and gets added in the pom.xml.
-- The created project will always contain most recent available version **Maven** Dependency for [Aspose.PDF for Java API](https://products.aspose.com/pdf/java).
-- The wizard steps also present with the option for downloading [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java).
+- This New Project wizard lets developers to create **Maven** project for using **Aspose.PDF for Java** from New Project -> Maven-> Aspose.PDF Maven Project.
+- The reference of Aspose.PDF for Java API maven dependency is automatically fetched from [Aspose Cloud Maven Repository](http://maven.aspose.com/artifactory/webapp/home.html?0) and gets added in the pom.xml.
+- The created project will always contain most recent available version **Maven** Dependency for Aspose.PDF for Java API.
+- The wizard steps also present with the option for downloading [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) for using Aspose.PDF for Java API.
 
 **Aspose.PDF Code Example (wizard)**
 
-- This New File wizard lets you copy the downloaded [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) into your project for using [Aspose.PDF for Java](https://products.aspose.com/pdf/java) from **New File -> Java -> Aspose.PDF Code Example.**
+- This New File wizard lets you copy the downloaded [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) into your project for using Aspose.PDF for Java from **New File -> Java -> Aspose.PDF Code Example.**
 - Available samples are displayed in tree format from where the user can select them categorically.
 - All the examples within the selected category will get copied to the project's **com.aspose.pdf.examples** package folder along with the required resources within **src/main/resources** folder needed to run the examples.
-- [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) of [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) are meant for demonstrating the variety of the API.
+- [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) of Aspose.PDF for Java API are meant for demonstrating the variety of the API.
 - The wizard will also look for and updates for newly available [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) from [Aspose.PDF for Java examples repository.](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
 
 ## System Requirements and Supported Platforms
@@ -98,7 +98,7 @@ Using Aspose.PDF for NetBeans - Maven
 
 ### How to apply Aspose License?
 
-This Plugin uses an evaluation version of Aspose.PDF. Once you are happy with your evaluation, you can purchase a license at the [Aspose website](http://www.aspose.com/purchase/default.aspx).
+This Plugin uses an evaluation version of Aspose.PDF. Once you are happy with your evaluation, you can purchase a license at the [Aspose website](https://purchase.aspose.com/buy).
 To remove the evaluation message and feature limitations, a product license should be applied. You will receive a license file after you have purchased the product. Please follow the steps below to apply the license.
 
 - Make sure the license file is named as **Aspose.PDF.Java.lic

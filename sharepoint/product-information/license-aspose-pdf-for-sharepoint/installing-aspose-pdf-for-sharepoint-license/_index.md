@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 {{% alert color="primary" %}}
 
-Once you are happy with your evaluation, you can [purchase a license](http://www.aspose.com/purchase/default.aspx). Before purchasing make sure you understand and agree to the license subscription terms.
+Once you are happy with your evaluation, you can [purchase a license](https://purchase.aspose.com/buy). Before purchasing make sure you understand and agree to the license subscription terms.
 
 {{% /alert %}}
 

@@ -26,7 +26,7 @@ You are able to do the following:
 - [Move Pages](/pdf/java/move-pages/) - move pages from one document to another.
 - [Get and Set Page Properties](/pdf/java/get-and-set-page-properties/) - you can learn how to get numbers in PDF file, get page properties and determine page color.
 - [Delete Pages](/pdf/java/delete-pages/) - delete page from your PDF file using PageCollection collection.
-- [Change Page size](/pdf/java/change-page-size) - you can change PDF page size with code snippet using Aspose.PDF library.
+- [Change Page size](/pdf/java/change-page-size/) - you can change PDF page size with code snippet using Aspose.PDF library.
 - [Rotate Pages](/pdf/java/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
 - [Split Pages](/pdf/java/split-document/) - you can split PDF files into one or multiple PDF.
 - [Add Headers and/or Footers](/pdf/java/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file .

@@ -12,7 +12,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-This page contains release notes for [ Aspose.PDF for .Net 3.6.0.0 New Release|http://www.aspose.com/downloads/pdf/net/new-releases/~~aspose.pdf-for~~.net-3.6.0.0-new-release/]
+This page contains release notes for Aspose.PDF for .Net 3.6.0.0 New Release
 
 {{% /alert %}}
 

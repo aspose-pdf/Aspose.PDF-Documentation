@@ -15,7 +15,7 @@ The following table indicates the file formats that Aspose.PDF for .NET can load
 
 |**Format**|**Description**|**Load**|**Save**|**Remarks**|
 | :- | :- | :- | :- | :- |
-|[PDF](https://docs.fileformat.com/view/pdf/)|Portable Document Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
+|[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
 |[CGM](https://docs.fileformat.com/page-description-language/cgm/)|Computer Graphics Metafile for 2D vector graphics|{{< emoticons/tick >}}| | |
 |[EPUB](https://docs.fileformat.com/ebook/epub/)|Ebook file format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 |[HTML](https://docs.fileformat.com/web/html/)|HTML Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |

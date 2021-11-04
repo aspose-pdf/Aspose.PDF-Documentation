@@ -30,4 +30,4 @@ This new version of Aspose.PDF for C++ has codebase of Aspose.PDF for .NET 20.10
 * Constructor Aspose.Pdf.Matrix.Rotation(Aspose.Pdf.Rotation)
 * Property Aspose.Pdf.Text.TextSearchOptions.IgnoreResourceFontErrors
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp/).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).

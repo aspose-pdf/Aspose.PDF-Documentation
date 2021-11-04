@@ -21,7 +21,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.8](https://www.nug
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFNET-46769|Introduce [HtmlSaveOptions.FlowLayoutParagraphFullWidth](/pdf/net/convert-pdf-file-into-html-format/#convertpdffileintohtmlformat-pdftohtmlwithfullcontentwidth) option|Enhancement|
+|PDFNET-46769|Introduce [HtmlSaveOptions.FlowLayoutParagraphFullWidth](/pdf/net/convert-pdf-to-html/#convertpdffileintohtmlformat-pdftohtmlwithfullcontentwidth) option|Enhancement|
 |PDFNET-46292|HTML to PDF - output file size is larger than input file|Bug|
 |PDFNET-46683|Problem adding a table with Top property set|Bug|
 |PDFNET-46449|Set specific font for substitution|Bug|
@@ -67,7 +67,7 @@ This page contains release notes for [Aspose.PDF for .NET 19.8](https://www.nug
 
 ## Public API changes in Aspose.PDF for .NET 19.8
 
-See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for .NET. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf).
+See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for .NET. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf/10).
 
 ## Added APIs:
 

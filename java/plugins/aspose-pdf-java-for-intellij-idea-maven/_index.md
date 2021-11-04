@@ -16,29 +16,29 @@ In a 2010 Infoworld report, IntelliJ received the highest test center score out 
 
 ### Aspose.PDF for Java
 
-[Aspose.PDF for Java](https://products.aspose.com/pdf/java) is a PDF document creation component that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
+Aspose.PDF for Java is a PDF document creation component that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
 
 ### Aspose.PDF Java for IntelliJ IDEA - Maven
 
-- Aspose.PDF Java for IntelliJ IDEA (Maven) is an IntelliJ IDEA Plugin which lets you create maven projects (i.e. created project contains Aspose.PDF for Java API maven dependency) and download source code examples of the API  for using [Aspose.PDF for Java API](https://products.aspose.com/pdf/java).
-- This plugin helps you to work with [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) inside your favorite IntelliJ IDEA.
+- Aspose.PDF Java for IntelliJ IDEA (Maven) is an IntelliJ IDEA Plugin which lets you create maven projects (i.e. created project contains Aspose.PDF for Java API maven dependency) and download source code examples of the API  for using Aspose.PDF for Java API.
+- This plugin helps you to work with Aspose.PDF for Java API inside your favorite IntelliJ IDEA.
 
-![todo:image_alt_text](http://i.imgur.com/KWKGljg.png)
+![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
 
 WIZARDS:
 The plugin contains two wizards
 
 Wizard 1: Aspose.PDF Maven Project
 
-- Plugin's Aspose Maven Project Wizard lets developers create [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) Maven project.
-- The reference of [Aspose.PDF for Java API](https://products.aspose.com/pdf/java) maven dependency is automatically fetched from [Aspose Cloud Maven Repository](http://maven.aspose.com/artifactory/webapp/home.html?0) and gets added in the pom.xml.
-- The created project will always contain the most recent available version Maven Dependency for [Aspose.PDF for Java API](https://products.aspose.com/pdf/java).
+- Plugin's Aspose Maven Project Wizard lets developers create Aspose.PDF for Java API Maven project.
+- The reference of Aspose.PDF for Java API maven dependency is automatically fetched from [Aspose Cloud Maven Repository](http://maven.aspose.com/artifactory/webapp/home.html?0) and gets added in the pom.xml.
+- The created project will always contain the most recent available version Maven Dependency for Aspose.PDF for Java API.
 - The wizard steps also present with the option for downloading [Source Code Examples for using Aspose.PDF for Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 
 Wizard 2: Aspose.PDF Examples
 
-- Aspose.PDF Examples Wizard lets you create/copy downloaded [Source Code Examples of Aspose.PDF for Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java) into your project. All the examples for the selected category will get copied to the project's  "com.aspose.pdf.examples" package folder along with the required resources within the "src/main/resources" folder needed to run the examples.
-- [Source Code Examples of Aspose.PDF for Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java) are meant for demonstrating the different usages of the API.
+- Aspose.PDF Examples Wizard lets you create/copy downloaded Source Code Examples of Aspose.PDF for Java API into your project. All the examples for the selected category will get copied to the project's  "com.aspose.pdf.examples" package folder along with the required resources within the "src/main/resources" folder needed to run the examples.
+- Source Code Examples of Aspose.PDF for Java API are meant for demonstrating the different usages of the API.
 
 ## System Requirements and Supported Platforms
 

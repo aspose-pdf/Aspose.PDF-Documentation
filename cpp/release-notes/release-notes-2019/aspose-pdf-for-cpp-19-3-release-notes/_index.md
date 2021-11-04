@@ -19,7 +19,7 @@ Formatting float and double by String::Format using the current culture
 Fixed issues and memory leaks in TaggedPdfStructure
 PDF3D Annotations are fixed
 ### **API Reference changes in Aspose.PDF for C++ 19.3**
-Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp/) Page of Aspose.PDF for C++.
+Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
 #### **Added APIs:**
 - Property Aspose.Pdf.Annotations.RenditionAction.Rendition   
 - P:Aspose.Pdf.Annotations.RenditionAction.RenditionOperation  

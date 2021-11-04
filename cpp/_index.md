@@ -27,7 +27,7 @@ The following links offer some useful resources you may need to accomplish your 
 - [Aspose.PDF for C++ Online Documentation](/pdf/)
 - [Aspose.PDF for C++ Features](/pdf/cpp/product-overview/)
 - [Aspose.PDF for C++ Release Notes](/pdf/cpp/release-notes/)
-- [Aspose.PDF for C++ Product Page](https://products.aspose.com/pdf/cpp)
+- [Aspose.PDF for C++ Product Page](https://products.aspose.com/pdf/cpp/)
 - [Install Aspose.PDF for C++ NuGet Package](https://www.nuget.org/packages/Aspose.PDF.CPP/)
 - [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/cpp/pdf)
 - [Download Examples at GitHub Repository](https://github.com/aspose-pdf/Aspose.PDF-for-C)

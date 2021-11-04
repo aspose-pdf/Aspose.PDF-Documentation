@@ -30,5 +30,5 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [License Aspose.Pdf for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
 - [Configure Aspose.Pdf for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/)
-- [Integration with MS ReportViewer 2010 and 2012](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012)
-- [Evaluate Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services)
+- [Integration with MS ReportViewer 2010 and 2012](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
+- [Evaluate Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)

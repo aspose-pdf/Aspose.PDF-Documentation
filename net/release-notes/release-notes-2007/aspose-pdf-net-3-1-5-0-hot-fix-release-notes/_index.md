@@ -12,7 +12,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-This page contains release notes for [Aspose.PDF .Net 3.1.5.0 Hot Fix](http://www.aspose.com/downloads/pdf/net/new-releases/aspose.pdf-.net-3.1.5.0-hot-fix/)
+This page contains release notes for [Aspose.PDF .Net 3.1.5.0 Hot Fix](https://downloads.aspose.com/pdf/net/new-releases/aspose.pdf-.net-3.1.5.0-hot-fix/)
 
 {{% /alert %}}
 

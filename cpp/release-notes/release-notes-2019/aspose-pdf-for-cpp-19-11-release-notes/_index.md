@@ -17,7 +17,7 @@ This page contains release notes information for Aspose.PDF for C++ 19.11.
 1. Conversion from/to .xps format has been added.
 1. Win32 platform is supported.
 ### **API Reference changes in Aspose.PDF for C++ 19.11**
-Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp/) Page of Aspose.PDF for C++.
+Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
 #### **Added APIs**
 - Class Aspose.Pdf.Sanitization.SanitizationException
 - Constructor Aspose.Pdf.Sanitization.SanitizationException

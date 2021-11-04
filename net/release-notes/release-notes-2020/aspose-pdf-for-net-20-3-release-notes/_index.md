@@ -21,7 +21,7 @@ This page contains release notes information for Aspose.PDF for .NET 20.3.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFNET-43280|Track the [progress of converting a PDF](/pdf/net/convert-pdf-to-powerpoint-pptx/#convertpdftopowerpointpptx-progressdetailofpptxconversion) to PowerPoint presentation|New Feature|
+|PDFNET-43280|Track the [progress of converting a PDF](/pdf/net/convert-pdf-to-powerpoint/#convertpdftopowerpointpptx-progressdetailofpptxconversion) to PowerPoint presentation|New Feature|
 |PDFNET-47744|Link extraction issue|Enhancement|
 |PDFNET-47644|Aspose.PDF 20.1: TextState.Background property color is null|Bug|
 |PDFNET-47056 |Out of memory exception on conversion from HTML|Bug|

@@ -15,7 +15,7 @@ This page contains release notes information for Aspose.PDF for Java 20.2.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFJAVA-39123|Option for [excluding font resources](/pdf/java/convert-pdf-to-html-format/#convertpdftohtmlformat-pdftohtml-excludefontresources) when saving PDF as HTML|New Feature|
+|PDFJAVA-39123|Option for [excluding font resources](/pdf/java/convert-pdf-to-html/#convertpdftohtmlformat-pdftohtml-excludefontresources) when saving PDF as HTML|New Feature|
 |PDFJAVA-36820|PDF to DOCX - API is taking longer to Convert the Document|Enhancement|
 |PDFJAVA-39092|Exception on converting PDF to DOCX|Bug|
 |PDFJAVA-36904|Exceptions encountered converting PDF to DOCX|Bug|
