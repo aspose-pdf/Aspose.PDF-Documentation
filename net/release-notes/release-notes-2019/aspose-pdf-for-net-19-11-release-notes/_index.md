@@ -21,7 +21,7 @@ This page contains release notes information for Aspose.PDF for .NET 19.11.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFNET-46942|[Center align output HTML](/pdf/net/convert-pdf-file-into-html-format/#convertpdffileintohtmlformat-centeralignoutputhtmlcontents)|New Feature|
+|PDFNET-46942|[Center align output HTML](/pdf/net/convert-pdf-to-html/#convertpdffileintohtmlformat-centeralignoutputhtmlcontents)|New Feature|
 |PDFNET-47190 |Add ability to set leftMargin, rightMargin for HTML page in Extensions|New Feature|
 |PDFNET-46640 |Batch processing for XPS.|Enhancement|
 |PDFNET-45366 |Implement Getter for  TextFragment.TextState.FontStyle|Enhancement|
@@ -53,7 +53,7 @@ This page contains release notes information for Aspose.PDF for .NET 19.11.
 
 ## Public API changes in Aspose.PDF for .NET 19.11
 
-See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for .NET. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf).
+See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for .NET. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf/10).
 
 ### Added APIs
 

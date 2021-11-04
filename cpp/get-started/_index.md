@@ -4,11 +4,17 @@ linktitle: Get Started
 type: docs
 weight: 30
 url: /cpp/get-started/
+<<<<<<< HEAD
 description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document.
 lastmod: "2021-06-05"   
+=======
+description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document using C++.
+is_node: true
+lastmod: "2021-11-01"   
+>>>>>>> e2f23d8cd5f13b118d905b6d68f9147c569924c0
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.6
 ---
 
 ## What is a PDF File?
@@ -28,6 +34,7 @@ Using Aspose.PDF for C++ in your project gives you the following profits:
 - performance and scalability;
 - rich Features.
 
+<<<<<<< HEAD
 ## Wide variety of functions
 
 - read, write and manipulate existing PDF documents without using Adobe Acrobat.
@@ -49,5 +56,14 @@ Using Aspose.PDF for C++ in your project gives you the following profits:
 
 - [Basics of DOM API](/pdf/cpp/basics-of-dom-api/)
 - ["Hello, World" C# Example](/pdf/cpp/hello-world-example/)
+=======
+For quality work you required .NET environment.
+Aspose.PDF supports Windows Forms and ASP.NET applications for your usability.
+
+### Learn more about: 
+
+- [Basics of DOM API](/pdf/cpp/basics-of-dom-api/)
+- ["Hello, World" C++ Example](/pdf/cpp/hello-world-example/)
+>>>>>>> e2f23d8cd5f13b118d905b6d68f9147c569924c0
 - [Complex PDF](/pdf/cpp/complex-pdf-example/)
 - [How to run other examples](/pdf/cpp/how-to-run-other-examples/)

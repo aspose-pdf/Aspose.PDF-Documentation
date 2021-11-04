@@ -14,7 +14,7 @@ Aspose.PDF for Reporting Services' evaluation version provides the same set of f
 
 {{% alert color="primary" %}}
 
-When you are happy with your evaluation, [buy a license](http://www.aspose.com/purchase/default.aspx). Before purchasing, make sure you understand and agree to the license subscription terms.
+When you are happy with your evaluation, [buy a license](https://purchase.aspose.com/buy). Before purchasing, make sure you understand and agree to the license subscription terms.
 
 The license is emailed to you when the order has been paid. The license is a clear text, digitally signed XML file and contains information such as the client name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
 ### **Licensing a Server**
@@ -90,6 +90,6 @@ Please note that that supported license file names are Aspose.PDF.ReportingServi
 #### **Temporary License**
 {{% alert color="primary" %}}
 
-You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](http://www.aspose.com/corporate/purchase/temporary-license.aspx).
+You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
 
 {{% /alert %}}

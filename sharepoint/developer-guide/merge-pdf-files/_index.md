@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 
 {{% alert color="primary" %}}
 
-Merging/concatenating of multiple PDF files into a single PDF file is very popular and demanding feature in PDF file processing applications. We have introduced this important feature in [Aspose.PDF for SharePoint 2.2.0](http://www.aspose.com/community/files/73/sharepoint-components/aspose.pdf-for-sharepoint/entry679427.aspx) version. Merging two files is, creating a single file by adding second file to the end of first file.
+Merging/concatenating of multiple PDF files into a single PDF file is very popular and demanding feature in PDF file processing applications. We have introduced this important feature in [Aspose.PDF for SharePoint 2.2.0](https://downloads.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.2.0/) version. Merging two files is, creating a single file by adding second file to the end of first file.
 
 {{% /alert %}}
 ### **Merge PDF files**

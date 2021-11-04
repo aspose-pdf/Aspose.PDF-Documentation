@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-- [Aspose.PDF for .NET 17.12](/pdf/net/aspose-pdf-for-net-17-12-release-notes)
+- [Aspose.PDF for .NET 17.12](/pdf/net/aspose-pdf-for-net-17-12-release-notes/)
 - [Aspose.PDF for .NET 17.11](/pdf/net/aspose-pdf-for-net-17-11-release-notes/)
 - [Aspose.PDF for .NET 17.10](/pdf/net/aspose-pdf-for-net-17-10-release-notes/)
 - [Aspose.PDF for .NET 17.9](/pdf/net/aspose-pdf-for-net-17-9-release-notes/)

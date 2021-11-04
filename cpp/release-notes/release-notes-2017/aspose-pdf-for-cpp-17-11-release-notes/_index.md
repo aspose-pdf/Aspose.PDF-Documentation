@@ -15,7 +15,7 @@ lastmod: "2021-06-05"
 ### **Public API Changes in Aspose.PDF for C++ 17.11**
 {{% alert color="primary" %}}
 
-The following is a list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for C++. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf). 
+The following is a list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for C++. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf/10). 
 
 {{% /alert %}}
 #### **Code snippets were added to next classes:**

@@ -1,15 +1,17 @@
 ---
-title: Convert PDF to HTML using C#
-linktitle: Convert PDF to HTML
+title: Convert PDF file to HTML format using C#
+linktitle: Convert PDF file to HTML format
 type: docs
-weight: 100
+weight: 50
 url: /net/convert-pdf-to-html/
-lastmod: "2021-06-05"
-description: This article describes how to convert a PDF file into HTML. Aspose.PDF for .NET provides the capability to convert HTML files into PDF format.
+lastmod: "2021-11-01"
+description: This topic show you how to Aspose.PDF allows to convert PDF file to HTML format with C# library.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.8
 ---
+
+## Convert PDF to HTML
 
 **Aspose.PDF for .NET** provides many features for converting various file formats into PDF documents and converting PDF files into various output formats. This article discusses how to convert a PDF file into <abbr title="HyperText Markup Language">HTML</abbr>. Aspose.PDF for .NET provides the capability to convert HTML files into PDF format using the InLineHtml approach. We have had many requests for functionality that converts a PDF file into HTML format and have provided this feature. Please note that this feature also supports XHTML 1.0.
 
@@ -24,11 +26,14 @@ sitemap:
 - transparent Text rendering;
 - PDF document layers rendering.
 
-## Live Example
+{{% alert color="success" %}}
+**Try to convert PDF to HTML online**
 
 Aspose.PDF for .NET presents you online free application ["PDF to HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), where you may try to investigate the functionality and quality it works.
 
-[![PDF to HTML](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
+[![Aspose.PDF Convertion PDF to HTML with Free App](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
+[![Convert PDF to DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+{{% /alert %}}
 
 Aspose.PDF for .NET provides a two-line code for transforming a source PDF file to HTML. The [`SaveFormat enumeration`](https://apireference.aspose.com/pdf/net/aspose.pdf/saveformat) contains the value Html which lets you save the source file to HTML. The following code snippet shows the process of converting a PDF file into HTML.
 
@@ -44,7 +49,7 @@ Document pdfDocument = new Document(dataDir + "PDFToHTML.pdf");
 pdfDocument.Save(dataDir + "output_out.html", SaveFormat.Html);
 ```
 
-## Splitting Output to Multi-page HTML
+### Splitting Output to Multi-page HTML
 
 When converting large PDF file with several pages to HTML format, the output appears as a single HTML page. It can end up being very long. To control page size, it is possible to split the output into several pages during PDF to HTML conversion. Please try using the following code snippet.
 
@@ -66,7 +71,7 @@ htmlOptions.SplitIntoPages = true;
 pdfDocument.Save(@"MultiPageHTML_out.html", htmlOptions);
 ```
 
-## Specify Folder for Storing SVG Files
+### Specify Folder for Storing SVG Files
 
 During PDF to HTML conversion, it is possible to specify the folder that SVG images should be saved to. Use the [`HtmlSaveOption class`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions) [`SpecialFolderForSvgImages property`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) to specify a special SVG image directory. This property gets or sets the path to the directory to which SVG images must be saved to when encountered during conversion. If the parameter is empty or null, then any SVG files are saved together with other image files.
 
@@ -84,7 +89,7 @@ newOptions.SpecialFolderForSvgImages = dataDir;
 doc.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
 ```
 
-## Compressing SVG Images During Conversion
+### Compressing SVG Images During Conversion
 
 To compress SVG images during PDF to HTML conversion, please try using the following code:
 
@@ -97,7 +102,7 @@ HtmlSaveOptions newOptions = new HtmlSaveOptions();
 newOptions.CompressSvgGraphicsIfAny = true;
 ```
 
-## Specifying the Images Folder
+### Specifying the Images Folder
 
 We can also specify the folder that images will be saved to during PDF to HTML conversion:
 
@@ -110,7 +115,7 @@ HtmlSaveOptions newOptions = new HtmlSaveOptions();
 newOptions.SpecialFolderForAllImages = dataDir;
 ```
 
-## Create Subsequent Files with Body Contents Only
+### Create Subsequent Files with Body Contents Only
 
 Recently, we were asked to introduce a feature where PDF files are converted to HTML and the user can get only the contents of the `<body>` tag for each page. This would produce one file with CSS, `<html>`, `<head>` details and all pages in other files just with `<body>` contents.
 
@@ -132,7 +137,7 @@ options.SplitIntoPages = true;
 doc.Save(dataDir + "CreateSubsequentFiles_out.html", options);
 ```
 
-## Transparent Text rendering
+### Transparent Text rendering
 
 In case the source/input PDF file contains transparent texts shadowed by foreground images, then there might be text rendering issues. So in order to cater such scenarios, SaveShadowedTextsAsTransparentTexts and SaveTransparentTexts properties can be used.
 
@@ -148,7 +153,7 @@ htmlOptions.SaveTransparentTexts = true;
 doc.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
 ```
 
-## PDF document layers rendering
+### PDF document layers rendering
 
 We can render PDF document layers in separate layer type element during PDF to HTML conversion:
 

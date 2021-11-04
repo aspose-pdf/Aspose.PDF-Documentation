@@ -15,6 +15,6 @@ This page contains release notes for [Aspose.PDF for C++ 18.4](https://www.nuget
 1. Internal code improved: fixed some bugs and improved performance.
 1. Improved AsposeCppLib: System.Xml, System.Drawing classes.
 ### **API Reference changes in Aspose.PDF for C++ 18.4**
-The following is a list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for C++. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf). 
+The following is a list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for C++. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf/10). 
 
 We have documented some classes in System namespace.
