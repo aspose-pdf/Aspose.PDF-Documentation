@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**Aspose.PDF for C++** API lets Java application developers to embed PDF documents processing functionality in their applications. It can be used to create and read PDF files without the need of any other software installed on the underlying machine. Aspose.PDF for C++ can be used in a variety of C++ application types such as Desktop, JSP, and JSF applications.
+**Aspose.PDF for C++** API lets C++ application developers to embed PDF documents processing functionality in their applications. It can be used to create and read PDF files without the need of any other software installed on the underlying machine. Aspose.PDF for C++ can be used in a variety of C++ application types such as QT, MFC and console apps.
 
 ## How to create PDF File using C++
 
