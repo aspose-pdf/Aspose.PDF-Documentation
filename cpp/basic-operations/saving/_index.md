@@ -1,6 +1,6 @@
 ---
 title: Save PDF Document using C++
-linktitle: Save PDF Document
+linktitle: Save
 type: docs
 weight: 30
 url: /cpp/save-pdf-document/
@@ -18,16 +18,16 @@ You can save the created or manipulated PDF document to file system using Save m
 ```cpp
 void SaveDocument()
 {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- String originalFileName("SimpleResume.pdf");
- String modifiedFileName("SimpleResumeModified.pdf");
+    String originalFileName("SimpleResume.pdf");
+    String modifiedFileName("SimpleResumeModified.pdf");
 
- auto document = MakeObject<Document>(_dataDir + originalFileName);
- // make some manipation, i.g add new empty page
- document->get_Pages()->Add();
- document->Save(_dataDir + modifiedFileName);
+    auto document = MakeObject<Document>(_dataDir + originalFileName);
+    // make some manipation, i.g add new empty page
+    document->get_Pages()->Add();
+    document->Save(_dataDir + modifiedFileName);
 }
 ```
 
@@ -38,19 +38,19 @@ You can also save the created or manipulated PDF document to stream by using ove
 ```cpp
 void SaveDocumentStream()
 {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- String originalFileName("SimpleResume.pdf");
- String modifiedFileName("SimpleResumeModified.pdf");
+    String originalFileName("SimpleResume.pdf");
+    String modifiedFileName("SimpleResumeModified.pdf");
 
- auto document = MakeObject<Document>(_dataDir + originalFileName);
+    auto document = MakeObject<Document>(_dataDir + originalFileName);
 
- // make some manipation, i.g add new empty page
- document->get_Pages()->Add();
+    // make some manipation, i.g add new empty page
+    document->get_Pages()->Add();
 
- auto fileStream = System::IO::File::OpenWrite(_dataDir + modifiedFileName);
- document->Save(fileStream);
+    auto fileStream = System::IO::File::OpenWrite(_dataDir + modifiedFileName);
+    document->Save(fileStream);
 }
 ```
 
@@ -66,24 +66,24 @@ In both cases, the Save method is used to store the documents, while the documen
 ```cpp
 void SaveDocumentAsPDFx()
 {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for file name
- String infilename("SimpleResume.pdf");
- String outfilename("SimpleResume_A3U.pdf");
+    // String for file name
+    String infilename("SimpleResume.pdf");
+    String outfilename("SimpleResume_A3U.pdf");
 
- auto document = MakeObject<Document>(_dataDir + infilename);
- auto options = new PdfFormatConversionOptions(Aspose::Pdf::PdfFormat::PDF_A_3U);
- try
- {
-  document->Convert(options);
- }
- catch (const std::exception& e)
- {
-  std::cerr << e.what();
- }
+    auto document = MakeObject<Document>(_dataDir + infilename);
+    auto options = new PdfFormatConversionOptions(Aspose::Pdf::PdfFormat::PDF_A_3U);
+    try
+    {
+        document->Convert(options);
+    }
+    catch (const std::exception& e)
+    {
+        std::cerr << e.what();
+    }
 
- document->Save(_dataDir + outfilename);
+    document->Save(_dataDir + outfilename);
 }
 ```
