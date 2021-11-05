@@ -13,7 +13,7 @@ sitemap:
 
 ## Overview
 
-To produce PDF documents, the machine to run [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) doesn't need to have [Adobe Acrobat](http://www.adobe.com/products/acrobatpro/main.html) installed as Aspose.PDF for Java itself is a PDF document creation engine. However in order to view PDF documents produced by Aspose.PDF for Java the machine does need at least an [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html). It can be downloaded for free.
+To produce PDF documents, the machine to run [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) doesn't need to have [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) installed as Aspose.PDF for Java itself is a PDF document creation engine. However in order to view PDF documents produced by Aspose.PDF for Java the machine does need at least an [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html). It can be downloaded for free.
 
 ## Supported Operating Systems
 

@@ -19,7 +19,7 @@ sitemap:
 1. A new Aspose.Pdf TIFF is created.
 1. The Aspose.PDF TIFF object is initialized using the input file.
 1. Aspose.PDF TIFF is added to the Page as a Paragraph.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) the input image file.
+1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
 
 Moreover, the following code snippet shows how to convert an EMF to PDF with C++ in your code snippet:
 

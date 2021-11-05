@@ -155,7 +155,7 @@ Starting release of Aspose.PDF for Java 17.2.0, the API offers the feature to c
 
 ## Create PDF/A-3 and attach XML file
 
-Aspose.PDF for Java offers the feature to convert PDF files to PDF/A format and it also supports the capabilities of adding files as an attachment to PDF document. In case you have a requirement to attach files to PDF/A compliance format, then we recommend using PDF_A_3A value from com.aspose.pdf.PdfFormat enumeration, as according to [this post in Adobe community](https://forums.adobe.com/thread/868219), PDF/A_3a is the format that provides the feature to attach any file format as an attachment to PDF/A compliant file. However, once the file is attached, you should convert it into Pdf-3a format again, in order to fix metadata. Please take a look over the following code snippet.
+Aspose.PDF for Java offers the feature to convert PDF files to PDF/A format and it also supports the capabilities of adding files as an attachment to PDF document. In case you have a requirement to attach files to PDF/A compliance format, then we recommend using PDF_A_3A value from com.aspose.pdf.PdfFormat enumeration, the PDF/A_3a is the format that provides the feature to attach any file format as an attachment to PDF/A compliant file. However, once the file is attached, you should convert it into Pdf-3a format again, in order to fix metadata. Please take a look over the following code snippet.
 
 ```java
     public static void ConvertPDFtoPDFa3u_attachXML() {

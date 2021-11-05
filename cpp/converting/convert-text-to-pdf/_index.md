@@ -31,7 +31,7 @@ In case of the plain text file, we can use the following technique:
 1. Add a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to pages collection of document.
 1. Create a new object of TextFragment and pass TextReader object to its constructor.
 1. Add a new text paragraph in paragraphs collection and pass the TextFragment object.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) the input file.
+1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
 
 ```cpp
 void ConvertTextToPDF() {
@@ -71,7 +71,7 @@ Follow these steps to convert pre-formatted text to PDF with C++:
 1. Instantiate a Document object by calling its empty constructor.
 1. Set left and right margins for better presentation.
 1. Instantiate [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and add a new page in Pages collection.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) the input image file.
+1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
 
 ```cpp
 void ConvertPreFormattedTextToPdf()

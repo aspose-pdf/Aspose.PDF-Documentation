@@ -12,7 +12,7 @@ As a default layout, the contents inside PDF files are added in Top-Left to Bott
 
 1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor#addPageBreak-com.aspose.pdf.IDocument-com.aspose.pdf.IDocument-com.aspose.pdf.facades.PdfFileEditor.PageBreak:A-)
 1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor#addPageBreak-java.lang.String-java.lang.String-com.aspose.pdf.facades.PdfFileEditor.PageBreak:A-)
-1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](http://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html?is-external=true)
+1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html?is-external=true)
 
 - src is source document/path to document/stream with source document
 - dest is destination document/path where document will be saved/stream where document will be saved

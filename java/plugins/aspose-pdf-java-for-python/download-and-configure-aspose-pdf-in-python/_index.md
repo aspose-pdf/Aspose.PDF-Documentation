@@ -13,7 +13,7 @@ sitemap:
 
 Download required libraries mentioned below. These are the required for executing Aspose.PDF Java for Python examples.
 
-- Aspose: [Aspose.PDF for Java Component](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/default.aspx)
+- Aspose: [Aspose.PDF for Java Component](https://downloads.aspose.com/pdf/java)
 - [JPype](https://pypi.python.org/pypi/JPype1)
 
 ## Download Examples from Social Coding Sites

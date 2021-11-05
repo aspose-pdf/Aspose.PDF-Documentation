@@ -31,7 +31,7 @@ The plugin contains two wizards
 Wizard 1: Aspose.PDF Maven Project
 
 - Plugin's Aspose Maven Project Wizard lets developers create Aspose.PDF for Java API Maven project.
-- The reference of Aspose.PDF for Java API maven dependency is automatically fetched from [Aspose Cloud Maven Repository](http://maven.aspose.com/artifactory/webapp/home.html?0) and gets added in the pom.xml.
+- The reference of Aspose.PDF for Java API maven dependency is automatically fetched from [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) and gets added in the pom.xml.
 - The created project will always contain the most recent available version Maven Dependency for Aspose.PDF for Java API.
 - The wizard steps also present with the option for downloading [Source Code Examples for using Aspose.PDF for Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 

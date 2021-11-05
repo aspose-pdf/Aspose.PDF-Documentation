@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-In order to convert PDF to SVG, Aspose.PDF for CPP offers [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) method of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) class. You need to pass the output path and enum SaveFormat:: svg to the Save method to convert PDF to SVG. The following code snippet shows how to convert PDF to SVG:
+In order to convert PDF to SVG, Aspose.PDF for CPP offers [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class. You need to pass the output path and enum SaveFormat:: svg to the Save method to convert PDF to SVG. The following code snippet shows how to convert PDF to SVG:
 
 This article teacher you how to convert PDF to <abbr title="Scalable Vector Graphics">SVG</abbr> using C++.
 
@@ -25,7 +25,7 @@ Aspose.PDF for C++ presents you online free application ["PDF to SVG"](https://p
 
 SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted and if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
 
-Aspose.PDF for C++ supports the feature to convert SVG image to PDF format and also offers the capability to convert PDF files to SVG format. To accomplish this requirement, the `SvgSaveOptions` class has been introduced into the Aspose.PDF namespace. Instantiate an object of SvgSaveOptions and pass it as a second argument to the [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) method .
+Aspose.PDF for C++ supports the feature to convert SVG image to PDF format and also offers the capability to convert PDF files to SVG format. To accomplish this requirement, the `SvgSaveOptions` class has been introduced into the Aspose.PDF namespace. Instantiate an object of SvgSaveOptions and pass it as a second argument to the [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method .
 
 The following code snippet shows the steps for converting a PDF file to SVG format with C++.
 

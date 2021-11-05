@@ -21,7 +21,7 @@ Aspose.PDF for C++ presents you online free application ["PDF to XPS"](https://p
 
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into the Windows operating system.
 
-To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.xps_save_options) that is used as the second argument to the [Document.Save(..)](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) method to generate the XPS file.
+To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.xps_save_options) that is used as the second argument to the [Document.Save(..)](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method to generate the XPS file.
 
 The following code snippet shows the process of converting PDF file into XPS format.
 

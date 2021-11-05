@@ -13,7 +13,7 @@ sitemap:
 
 ## Save PDF document to file system
 
-You can save the created or manipulated PDF document to file system using Save method of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) class.
+You can save the created or manipulated PDF document to file system using Save method of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
 
 ```cpp
 void SaveDocument()

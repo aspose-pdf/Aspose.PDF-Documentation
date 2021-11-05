@@ -71,7 +71,7 @@ It is very simple and easy to install Aspose.PDF Java for Ruby gem, please follo
 {{< /highlight >}}
 
 1. Download required Aspose.PDF for Java Component from following link.
-   <http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/default.aspx>
+   <https://downloads.aspose.com/pdf/java>
 1. Create "jars" folder at root of the Aspose.PDF Java for Ruby gem and copy downloaded component into it.
 
 ### Using
