@@ -5,10 +5,7 @@ type: docs
 weight: 40
 url: /cpp/how-to-run-other-examples/    
 description: This page demonstrates guidelines that will be helpful the following requirements before downloading and running the examples.
-<<<<<<< HEAD
-=======
 draft: true    
->>>>>>> e2f23d8cd5f13b118d905b6d68f9147c569924c0
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

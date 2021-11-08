@@ -4,11 +4,7 @@ linktitle: Basics of DOM API
 type: docs
 weight: 10
 url: /cpp/basics-of-dom-api/
-<<<<<<< HEAD
 description: Aspose.PDF for C++ also uses the idea of DOM to represent the structure of a PDF document in terms of objects. Here you can read the description of this structure.
-=======
-description: Aspose.PDF for .NET also uses the idea of DOM to represent the structure of a PDF document in terms of objects. Here you can read the description of this structure.
->>>>>>> e2f23d8cd5f13b118d905b6d68f9147c569924c0
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
