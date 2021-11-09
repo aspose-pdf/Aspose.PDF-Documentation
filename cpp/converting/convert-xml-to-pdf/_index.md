@@ -24,19 +24,19 @@ The XML format used to store structured data. There are several ways to convert 
 ```cpp
 void Convert_XSLFO_to_PDF()
 {
-	std::clog << "XSL-FO to PDF convert: Start" << std::endl;
-	String _dataDir("C:\\Samples\\Conversion\\");
-	String infilenameXSL("c:\\samples\\employees.xslt");
-	String infilenameXML("c:\\samples\\employees.xml");
+ std::clog << "XSL-FO to PDF convert: Start" << std::endl;
+ String _dataDir("C:\\Samples\\Conversion\\");
+ String infilenameXSL("c:\\samples\\employees.xslt");
+ String infilenameXML("c:\\samples\\employees.xml");
 
-	String outfilename("XMLFOtoPDF.pdf");
-	// Instantiate XslFoLoadOption object
-	auto options = new XslFoLoadOptions(infilenameXSL);
-	// Set error handling strategy
-	options->ParsingErrorsHandlingType = XslFoLoadOptions::ParsingErrorsHandlingTypes::ThrowExceptionImmediately;
-	// Create Document object
-	auto document = MakeObject<Document>(infilenameXML, options);
-	document->Save(_dataDir + outfilename);
+ String outfilename("XMLFOtoPDF.pdf");
+ // Instantiate XslFoLoadOption object
+ auto options = new XslFoLoadOptions(infilenameXSL);
+ // Set error handling strategy
+ options->ParsingErrorsHandlingType = XslFoLoadOptions::ParsingErrorsHandlingTypes::ThrowExceptionImmediately;
+ // Create Document object
+ auto document = MakeObject<Document>(infilenameXML, options);
+ document->Save(_dataDir + outfilename);
 }
 ```
 

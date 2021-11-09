@@ -32,7 +32,7 @@ Using Aspose.PDF for C++ in your project gives you the following profits:
 For quality work you required C++ environment.
 Aspose.PDF supports Windows Forms and ASP.C++ applications for your usability.
 
-### Learn more about: 
+### Learn more about
 
 - [Basics of DOM API](/pdf/cpp/basics-of-dom-api/)
 - ["Hello, World" C++ Example](/pdf/cpp/hello-world-example/)
