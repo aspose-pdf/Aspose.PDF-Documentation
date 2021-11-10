@@ -32,4 +32,4 @@ The following table indicates the file formats that Aspose.PDF for C++ can load 
 |[BMP](https://docs.fileformat.com/image/bmp/)|Saves the document in BMP Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Saves the document as Single or Multi-Page TIFF Image|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
 |[Text](https://docs.fileformat.com/word-processing/txt/)|Save the document int Text Format|{{< emoticons/tick >}}| |
-
+|[GIF](https://docs.fileformat.com/image/gif/)|Graphic Interchange Format| | |TBA in 2022|

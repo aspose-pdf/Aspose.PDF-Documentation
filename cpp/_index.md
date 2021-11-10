@@ -8,7 +8,7 @@ url: /cpp/
 is_root: true
 description: Use C++ PDF API to convert pdf to word, merge pdf, split pdf, want to convert pdf to excel, pdf to ppt, or even images e.g. png to pdf, pdf into jpeg and many more.
 keywords: cpp PDF API,pdf,convert PDF to Word,merge PDF,split PDF,convert PDF to Excel,PDF to PPT,PNG to PDF,PDF into JPEG
-lastmod: "2021-06-05"
+lastmod: "2021-11-10"
 ---
 
 {{% alert color="primary" %}}

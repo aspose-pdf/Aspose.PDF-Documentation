@@ -66,16 +66,3 @@ Follow these steps to reference the component using the package manager GUI:
 
 ![Installation](../images/install.gif)
 
-### Working with C++  Core DLLs in Non-Windows Environment
-
-As Aspose.PDF for C++ provides C++  Standard 2.0 (C++  Core 2.0) support, so it can be used in Core Applications running in Linux like operating systems. We are constantly working over improving the C++  Core support in our API. However, there are some following operations which we recommend our customers to perform, in order to get better results while using features of Aspose.PDF for C++ :
-
-Please install:
-
-- libgdiplus package
-- package with Microsoft compatible fonts: **ttf-mscorefonts-installer**. (e.g. `sudo apt-get install ttf-mscorefonts-installer`)
-These fonts should be placed in "/usr/share/fonts/truetype/msttcorefonts" directory as Aspose.PDF for C++  scans this folder on Linux like operating systems. In case operating system has other default folder/directory for fonts, you should use following line of code before performing any operation using Aspose.PDF.
-
-```csharp
-Aspose.Pdf.Text.FontRepository.Sources.Add(new FolderFontSource("<user's path to ms fonts>"));
-```
