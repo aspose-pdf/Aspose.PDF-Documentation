@@ -11,10 +11,19 @@ sitemap:
     priority: 0.8
 ---
 
-One of the most popular and necessary tasks in working with pdf documents is saving these files in one format or another, that is, converting. Document conversion is the conversion of file types from one file format to another as you need it.
-You can convert a large number of documents at once or one. Our Aspose.PDF for .NET library allows you to successfully, quickly and easily convert your PDF documents to the most popular formats and vice versa.
+One of the most popular and necessary tasks in working with pdf documents is saving these files in one format or another, that is, converting. Document conversion is the conversion of file types from one file format to another as you need it. You can convert a large number of documents at once or one.
+
+PDF files can contain not only text but also images, clickable buttons, hyperlinks, embedded fonts, signatures, stamps, etc. Users who are converting a PDF file to some other format are interested in doing so in order to be able to edit the PDF content.
+**Our Aspose.PDF for .NET** library allows you to successfully, quickly and easily convert your PDF documents to the most popular formats and vice versa.
 
 ## How to use Aspose.PDF for conversion
+
+The next section describes the most popular options for converting PDF documents.
+After learning the code examples, you will understand that the Aspose.PDF for .NET library provides fairly universal solutions that will help you solve the tasks of converting documents.
+Aspose.PDF supports the largest number of popular document formats, both for loading and saving.
+
+Draw your attention that the current section describes only popular conversions.
+For a complete list of supported formats, see the section [Aspose.PDF Supported File Formats](https://docs.aspose.com/pdf/net/supported-file-formats/).
 
 Aspose.PDF for .NET allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn the sections of converting documents with code snippets.
 

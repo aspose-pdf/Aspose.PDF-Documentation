@@ -11,6 +11,58 @@ sitemap:
 lastmod: "2021-06-05"
 ---
 
+## What's new in Aspose.PDF 21.10
+
+### How to detect hidden text?
+
+Please use the following code:
+
+```java
+Document pdf = new Document(inFile);
+        Page page = pdf.getPages().get_Item(1);
+        TextFragmentAbsorber textFragmentAbsorber = new com.aspose.pdf.TextFragmentAbsorber();
+        page.accept(textFragmentAbsorber);
+        TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
+
+        int fragmentsCount = textFragmentAbsorber.getTextFragments().size();
+        int invisibleCount = 0;
+
+        Iterator tmp0 = ( textFragmentCollection).iterator();
+            while (tmp0.hasNext())
+            {
+                com.aspose.pdf.TextFragment fragment = (com.aspose.pdf.TextFragment)tmp0.next();
+                System.out.println(fragment.getText());
+                System.out.println(fragment.getTextState().isInvisible());
+                if (fragment.getTextState().isInvisible())
+                    invisibleCount++;
+            }
+```
+
+## What's new in Aspose.PDF 21.8
+
+### How to change text color in Digital Signature?
+
+In the 21.8 version  setForegroundColor, it allows changing text color in Digital Signature:
+
+```java
+Please, use the following code:
+
+                    PdfFileSignature pdfSign = new PdfFileSignature();                
+                    pdfSign.bindPdf(inFile);
+                    //create a rectangle for signature location
+                    java.awt.Rectangle rect = new java.awt.Rectangle(310, 45, 200, 50);
+                    PKCS7 pkcs = new PKCS7(inPfxFile, "");
+
+                    pkcs.setCustomAppearance( new SignatureCustomAppearance());
+//set text color
+                    pkcs.getCustomAppearance().setForegroundColor(Color.getGreen());
+
+                    // sign the PDF file
+                    pdfSign.sign(1, true, rect, pkcs);
+                    //save output PDF file
+                    pdfSign.save(outFile);
+```
+
 ## What's new in Aspose.PDF 21.6
 
 ### Hiding image using ImagePlacementAbsorber from the document
