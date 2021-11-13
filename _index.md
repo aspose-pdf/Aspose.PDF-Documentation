@@ -31,7 +31,7 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.PDF for .NET Online Documentation](/pdf/net/)
-- [Aspose.PDF for .NET Features](/pdf/java/aspose-pdf-features/)
+- [Aspose.PDF for .NET Features](/pdf/net/key-features/)
 - [Aspose.PDF for .NET Release Notes](/pdf/net/release-notes/)
 - [Aspose.PDF for .NET Product Page](https://products.aspose.com/pdf/net/)
 - [Install Aspose.PDF for .NET NuGet Package](https://www.nuget.org/packages/Aspose.PDF/)
@@ -54,7 +54,7 @@ Aspose.PDF is a Java component built to allow developers to create PDF documents
 Following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.PDF for Java Online Documentation](/pdf/java/)
-- [Aspose.PDF for Java Features](/pdf/java/key-features/)
+- [Aspose.PDF for Java Features](/pdf/java/aspose-pdf-features/)
 - [Aspose.PDF for Java Release Notes](/pdf/java/release-notes/)
 - [Aspose.PDF for Java Product Page](https://products.aspose.com/pdf/java/)
 - [Download Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf)
