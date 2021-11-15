@@ -23,7 +23,7 @@ This page contains release notes information for Aspose.PDF for .NET 21.11.
 | :- | :- | :- |
 |PDFNET-49031 Allow non-latin characters in password|Feature|
 |PDFNET-49705 PDF to Docx: Preserve Images in EnchantedFlow mode|Enhancement|
-|PDFNET-50633 Add support for license in .NET 6.0 Framework|Enhancement|
+|PDFNET-50633 Add support for license in .NET 6.0|Enhancement|
 |PDFNET-35472 Operations with linearized document after Save() method call causes errors|Bug|
 |PDFNET-50202 Property AllowExceptions in PdfFileSecurity class doesn't work correctly|Bug|
 |PDFNET-48729 System.NullReferenceException: 'Object reference not set to an instance of an object.' while optimizing PDF|Bug|
