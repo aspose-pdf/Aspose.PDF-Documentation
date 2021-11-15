@@ -65,7 +65,7 @@ public static void ConvertPDFtoTIFF()
 }
 ```
 
-## Convert One Page to TIFF Image
+### Convert One Page to TIFF Image
 
 Aspose.PDF for .NET allows to convert a particular page in a PDF file to a TIFF image, use an overloaded version of the Process(..) method which takes a page number as an argument for conversion. The following code snippet shows how to convert the first page of a PDF to TIFF format.
 
