@@ -4,6 +4,7 @@ linktitle: Remove Tables
 type: docs
 weight: 50
 url: /cpp/remove-tables-from-existing-pdf/
+description: This section describes how to remove Table from PDF document.
 lastmod: "2021-11-11"
 sitemap:
     changefreq: "weekly"
@@ -18,31 +19,42 @@ In order to remove the tables, we need to use [TableAbsorber](https://apireferen
 
 We have added new function i.e. [Remove](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber#ace39006d8f44c9cb776ee26281a1cbb3) to the existing TableAbsorber Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
 
+>Headers:
+
+```cpp
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Text/TableAbsorber/TableAbsorber.h>
+```
+
+>Samples:
+
 ```cpp
 using namespace System;
 using namespace Aspose::Pdf;
 
 void RemoveTable() {
 
- String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
- // Load source PDF document
- auto document = MakeObject<Document>(_dataDir + u"Table_input.pdf");
+    // Load source PDF document
+    auto document = MakeObject<Document>(_dataDir + u"Table_input.pdf");
 
- // Create TableAbsorber object to find tables
- auto absorber = MakeObject<Aspose::Pdf::Text::TableAbsorber>();
+    // Create TableAbsorber object to find tables
+    auto absorber = MakeObject<Aspose::Pdf::Text::TableAbsorber>();
 
- // Visit first page with absorber
- absorber->Visit(document->get_Pages()->idx_get(1));
+    // Visit first page with absorber
+    absorber->Visit(document->get_Pages()->idx_get(1));
 
- // Get first table on the page
- auto table = absorber->get_TableList()->idx_get(0);
+    // Get first table on the page
+    auto table = absorber->get_TableList()->idx_get(0);
 
- // Remove the table
- absorber->Remove(table);
+    // Remove the table
+    absorber->Remove(table);
 
- // Save PDF
- document->Save(_dataDir + u"Table_out.pdf");
+    // Save PDF
+    document->Save(_dataDir + u"Table_out.pdf");
 }
 ```
 
@@ -54,27 +66,27 @@ And you will need to delete several tables from it. To remove multiple tables fr
 ```cpp
 void RemoveMultipleTables() {
 
- String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
- // Load existing PDF document
- auto document = MakeObject<Document>(_dataDir + u"Table_input2.pdf");
+    // Load existing PDF document
+    auto document = MakeObject<Document>(_dataDir + u"Table_input2.pdf");
 
- // Create TableAbsorber object to find tables
- auto absorber = MakeObject<Aspose::Pdf::Text::TableAbsorber>();
+    // Create TableAbsorber object to find tables
+    auto absorber = MakeObject<Aspose::Pdf::Text::TableAbsorber>();
 
- // Visit first page with absorber
- absorber->Visit(document->get_Pages()->idx_get(1));
+    // Visit first page with absorber
+    absorber->Visit(document->get_Pages()->idx_get(1));
 
- // Get copy of table collection
- auto tables = absorber->get_TableList();
- 
+    // Get copy of table collection
+    auto tables = absorber->get_TableList();
 
- // Loop through the copy of collection and removing tables
- for(auto table : tables)
-  absorber->Remove(table);
 
- // Save document
- document->Save(_dataDir + u"Table2_out.pdf");
+    // Loop through the copy of collection and removing tables
+    for(auto table : tables)
+    absorber->Remove(table);
+
+    // Save document
+    document->Save(_dataDir + u"Table2_out.pdf");
 }
 ```
 

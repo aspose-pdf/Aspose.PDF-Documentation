@@ -30,6 +30,44 @@ To add a table to an existing PDF file with Aspose.PDF for C++, take the followi
 
 The following code snippets show how to add text in an existing PDF file.
 
+>Headers
+
+```cpp
+#include <system/date_time.h>
+#include <system/io/file.h>
+#include <system/console.h>
+#include <data/data_table.h>
+#include <data/data_column_collection.h>
+#include <system/type_info.h>
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Generator/BorderSide.h>
+#include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
+#include <Aspose.PDF.Cpp/Generator/PageInfo.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Generator/GraphInfo.h>
+#include <Aspose.PDF.Cpp/Generator/BorderCornerStyle.h>
+#include <Aspose.PDF.Cpp/Generator/ColumnAdjustment.h>
+#include <Aspose.PDF.Cpp/Generator/ImageFileType.h>
+#include <Aspose.PDF.Cpp/Generator/Image.h>
+#include <Aspose.PDF.Cpp/Generator/HtmlFragment.h>
+
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+
+#include <Aspose.PDF.Cpp/Color.h>
+
+#include <Aspose.PDF.Cpp/Table/Table.h>
+#include <Aspose.PDF.Cpp/Table/Row.h>
+#include <Aspose.PDF.Cpp/Table/Rows.h>
+#include <Aspose.PDF.Cpp/Table/Cell.h>
+#include <Aspose.PDF.Cpp/Table/Cells.h>
+```
+
+>Sample
+
 ```cpp
 using namespace System;
 using namespace Aspose::Pdf;
@@ -45,9 +83,14 @@ void AddingTableInExistingPDFDocument() {
     auto table = MakeObject<Table>();
     
     // Set the table border color as LightGray
-    table->set_Border(MakeObject<Aspose::Pdf::BorderInfo>(Aspose::Pdf::BorderSide::All, .5f, Aspose::Pdf::Color::get_LightGray()));
+    table->set_Border(MakeObject<Aspose::Pdf::BorderInfo>(
+        Aspose::Pdf::BorderSide::All, .5f, 
+        Aspose::Pdf::Color::get_LightGray()));
     // Set the border for table cells
-    table->set_DefaultCellBorder (MakeObject<Aspose::Pdf::BorderInfo>(Aspose::Pdf::BorderSide::All, .5f, Aspose::Pdf::Color::get_LightGray()));
+    table->set_DefaultCellBorder (MakeObject<Aspose::Pdf::BorderInfo>(
+        Aspose::Pdf::BorderSide::All, .5f, 
+        Aspose::Pdf::Color::get_LightGray()));
+
     // Create a loop to add 10 rows
     for (int row_count = 1; row_count < 10; row_count++)
     {
@@ -85,9 +128,14 @@ void AddTable_RowColSpan()
     // Initializes a new instance of the Table
     auto table = MakeObject<Table>();
     // Set the table border color as LightGray
-    table->set_Border(MakeObject<Aspose::Pdf::BorderInfo>(Aspose::Pdf::BorderSide::All, .5f, Color::get_Black()));
+    table->set_Border(MakeObject<Aspose::Pdf::BorderInfo>(
+        Aspose::Pdf::BorderSide::All, .5f, 
+        Color::get_Black()));
         // Set the border for table cells
-    table->set_DefaultCellBorder(MakeObject<Aspose::Pdf::BorderInfo>(Aspose::Pdf::BorderSide::All, .5f, Color::get_Black()));
+    table->set_DefaultCellBorder(
+        MakeObject<Aspose::Pdf::BorderInfo>(
+            Aspose::Pdf::BorderSide::All, .5f, 
+            Color::get_Black()));
     
 
     // Add 1st row to table
@@ -173,9 +221,13 @@ void AddTable_MergingPadding() {
     // Set with column widths of the table
     tab1->set_ColumnWidths (u"50 50 50");
     // Set default cell border using BorderInfo object
-    tab1->set_DefaultCellBorder (MakeObject<Aspose::Pdf::BorderInfo>(Aspose::Pdf::BorderSide::All, 0.1F));
+    tab1->set_DefaultCellBorder (
+        MakeObject<Aspose::Pdf::BorderInfo>(
+            Aspose::Pdf::BorderSide::All, 0.1F));
     // Set table border using another customized BorderInfo object
-    tab1->set_Border (MakeObject<Aspose::Pdf::BorderInfo>(Aspose::Pdf::BorderSide::All, 1.0F));
+    tab1->set_Border (
+        MakeObject<Aspose::Pdf::BorderInfo>(
+            Aspose::Pdf::BorderSide::All, 1.0F));
 
     // Create MarginInfo object and set its left, bottom, right and top margins
     auto margin = MakeObject<MarginInfo>();
@@ -456,7 +508,7 @@ By default, paragraphs are added to a Page object's Paragraphs collection. Howev
 
 ### Sample: How to Render a Table on New Page using C++
 
-To render table on a new page, use the [IsInNewPage](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.base_paragraph#a614946048d22afb9dce4cd42346c7561) property in the [BaseParagraph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.base_paragraph) class. 
+To render table on a new page, use the [IsInNewPage](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.base_paragraph#a614946048d22afb9dce4cd42346c7561) property in the [BaseParagraph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.base_paragraph) class.
 The following code snippet shows how.
 
 ```cpp
