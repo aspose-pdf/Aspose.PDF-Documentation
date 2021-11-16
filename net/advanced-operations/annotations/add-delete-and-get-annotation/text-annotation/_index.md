@@ -1,18 +1,15 @@
 ---
-title: PDF Text Annotation using C#
-linktitle: PDF Text Annotation
+title: PDF Text Annotation
+Texttitle: Text Annotation
 type: docs
 weight: 10
-url: /net/pdf-annotation-in-existing-pdf-file/
-description: This page describes how to add an annotation in an existing PDF file. Also, you may delete all or particular annotations from a page of a PDF file.
+url: /net/text-annotation/
+description: Aspose.PDF for .NET allows you to Add, Get, and Delete Text Annotation from your PDF document.
 lastmod: "2021-06-05"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
 ---
-
-Add, Delete, and Get Annotation are similar for different kinds of annotations. Let take as example a Text Annotation.
-
 ## How to add Text Annotation into existing PDF file
 
 A Text Annotation is an annotation attached to a specific location in a PDF document. When closed, the annotation is displayed as an icon; when opened, it should display a pop-up window containing the note text in the font and size chosen by the reader.

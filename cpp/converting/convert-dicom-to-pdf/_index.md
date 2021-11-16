@@ -19,7 +19,7 @@ sitemap:
 1. Instantiate [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) Object.
 1. Add a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to pages collection of document.
 1. Aspose.PDF TDicom is added to the Page as a Paragraph.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) the input image file.
+1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
 
 The following code snippet shows how to convert DICOM files to PDF  format with Aspose.PDF. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF.
 

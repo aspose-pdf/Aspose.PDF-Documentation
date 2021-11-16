@@ -37,4 +37,4 @@ puts "Document has been converted successfully"
 
 Download **Convert SVG to PDF (Aspose.PDF)** from any of the below mentioned social coding sites:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/svgtopdf.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/svgtopdf.rb)

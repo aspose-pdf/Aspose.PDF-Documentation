@@ -28,7 +28,7 @@ To create **Maven Project** by wizard for using [Aspose.PDF for Java API](http:
 
 Provide **Project Name, Location, GroupId, ArtifactId** and **Version** for your Maven Project and click **Finish.**
 
-This will retrieve the [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) latest [Maven Dependency](http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-pdf/) reference from [Aspose Cloud Maven Repository](http://maven.aspose.com/artifactory/webapp/home.html?0) and configure it in **pom.xml**. If you have opted for **Also Download Code Examples,** downloading of the **Code Examples** will also begin from the [Aspose.PDF for Java API Examples Repository. ](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
+This will retrieve the [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) latest [Maven Dependency](http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-pdf/) reference from [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) and configure it in **pom.xml**. If you have opted for **Also Download Code Examples,** downloading of the **Code Examples** will also begin from the [Aspose.PDF for Java API Examples Repository. ](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
 Following **Maven** Project will be created on your **NetBeans IDE** on completion of the wizard: 
 
 The created **Maven Project** is configured to use **Aspose.PDF for Java API** and ready to be enhanced as per your Project requirements.

@@ -90,4 +90,4 @@ puts "Added TOC Successfully, please check the output file."
 
 Download **Add TOC (Aspose.PDF)** from any of the below mentioned social coding sites:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

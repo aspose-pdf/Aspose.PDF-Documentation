@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 Download required libraries mentioned below. These are the required for executing Aspose.PDF Java for Ruby examples.
 
-- [Aspose.PDF for Java Component](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/default.aspx)
+- [Aspose.PDF for Java Component](https://downloads.aspose.com/pdf/java)
 
 ## Download Examples from Social Coding Sites
 

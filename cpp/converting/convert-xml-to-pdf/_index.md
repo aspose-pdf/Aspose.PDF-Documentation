@@ -19,7 +19,7 @@ The XML format used to store structured data. There are several ways to convert 
 1. Instantiate [XslFoLoadOption object](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.load_options).
 1. Set error handling strategy.
 1. Instantiate [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) Object.
-1. [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) the input image file.
+1. [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
 
 ```cpp
 void Convert_XSLFO_to_PDF()

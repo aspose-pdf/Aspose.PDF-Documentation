@@ -50,4 +50,4 @@ puts "Update document information, please check output file."
 
 Download **Set PDF Expiration (Aspose.PDF)** from any of the below mentioned social coding sites:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)
