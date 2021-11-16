@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-- [PDF Annotation in existing PDF file](/pdf/net/pdf-annotation-in-existing-pdf-file/)
+- [PDF Text Annotation](/pdf/net/text-annotation/)
 - [PDF Free text Annotation](/pdf/net/free-text-annotation/)
 - [PDF Link Annotation](/pdf/net/link-annotation/)
 - [PDF Line Annotation](/pdf/net/line-annotation/)

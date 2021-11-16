@@ -2,10 +2,10 @@
 title: PDF Text Annotation
 linktitle: Text Annotation
 type: docs
-weight: 11
-url: /net/pdf-annotation-in-existing-pdf-file/
+weight: 10
+url: /net/text-annotation/
 description: This page describes how to add an annotation in an existing PDF file. Also, you may delete all or particular annotations from a page of a PDF file.
-lastmod: "2021-01-13"
+lastmod: "2021-11-16"
 draft: true
 sitemap:
     changefreq: "weekly"
