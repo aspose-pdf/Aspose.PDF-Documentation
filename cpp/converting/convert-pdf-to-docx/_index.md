@@ -21,7 +21,7 @@ Aspose.PDF for C++ presents you online free application ["PDF to Word"](https://
 
 Aspose.PDF for C++ API lets you read and convert PDF documents to DOCX using C++ language. DOCX is a well-known format for Microsoft Word documents whose structure was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and lateral versions but not with the earlier versions of MS Word which support DOC file extensions.
 
-For quick conversion use [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) method with `SaveFormat.DocX` options:
+For quick conversion use [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method with `SaveFormat.DocX` options:
 
 ```cpp
 void ConvertPDFtoWord_DOCX_Format()

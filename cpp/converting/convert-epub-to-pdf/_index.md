@@ -28,7 +28,7 @@ Conversion steps:
 1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
 1. Create an instance of [EpubLoadOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.load_options)class.
 1. Create an instance of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class with mention source filename and options.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) the input file.
+1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
 
 Next following code snippet show you how to convert EPUB files to PDF format with C++.
 

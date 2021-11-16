@@ -108,7 +108,7 @@ Please follow below simple steps to configure PHP/Java Bridge on Windows Platfor
 
 7. Go to  http://localhost:8080/JavaBridge/test.php  to check if php works. You can find other examples in there
 
-8. Copy your [Aspose.PDF Java](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/default.aspx) jar file to C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\WEB-INF\lib
+8. Copy your [Aspose.PDF Java](https://downloads.aspose.com/pdf/java) jar file to C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\WEB-INF\lib
 
 9. Clone [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP) examples inside C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ folder.
 

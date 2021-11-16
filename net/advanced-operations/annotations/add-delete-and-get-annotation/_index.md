@@ -7,11 +7,11 @@ url: /net/add-delete-and-get-annotation/
 description: With Aspose.PDF for .NET you may add, delete and get annotation from your PDF file. Check all lists of annotations to resolve your task.
 lastmod: "2021-06-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthy"
     priority: 0.7
 ---
 
-- [PDF Annotation in existing PDF file](/pdf/net/pdf-annotation-in-existing-pdf-file/)
+- [PDF Text Annotation](/pdf/net/text-annotation/)
 - [PDF Free text Annotation](/pdf/net/free-text-annotation/)
 - [PDF Link Annotation](/pdf/net/link-annotation/)
 - [PDF Line Annotation](/pdf/net/line-annotation/)
