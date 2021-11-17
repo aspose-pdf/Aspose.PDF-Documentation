@@ -61,7 +61,6 @@ This page contains release notes information for Aspose.PDF for .NET 21.11.
 |PDFNET-50801|Text overlapping issue after replacement|Bug|
 |PDFNET-50751|Exception when verifying if the document is encrypted System.NullReferenceException PdfFileInfo is not initialized|Bug|
 
-
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs

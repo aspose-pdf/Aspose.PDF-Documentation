@@ -61,7 +61,6 @@ This page contains release notes information for Aspose.PDF for .NET 21.8.
 |PDFNET-49867|Font rendering issue|Bug|
 |PDFNET-50207|Text replacement issue|Bug|
 
-
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
