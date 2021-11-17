@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="primary|%}} 
+{{% alert color="primary" %}}
 
 This page contains release notes information for Aspose.PDF for .NET 21.5.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Improvements and Changes
 
