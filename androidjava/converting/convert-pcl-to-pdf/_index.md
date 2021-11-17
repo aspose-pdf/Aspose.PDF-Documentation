@@ -39,7 +39,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 ## Converting a PCL file into PDF format
 
-To allow conversion from PCL to PDF, [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) has the class [PclLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PclLoadOptions) which is used to initialize the [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. This object is then passed as an argument during [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the source document's input format.
+To allow conversion from PCL to PDF, [Aspose.PDF for Java](https://products.aspose.com/pdf/java) has the class [PclLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PclLoadOptions) which is used to initialize the [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. This object is then passed as an argument during [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the source document's input format.
 
 The following code snippet shows the process of converting a PCL file into PDF format.
 

@@ -1,5 +1,5 @@
 ---
-title: How to run other Aspose.PDF for .NET examples
+title: How to run other Aspose.PDF for C++ examples
 linktitle: How to run other examples
 type: docs
 weight: 40
@@ -16,16 +16,16 @@ sitemap:
 
 Please make sure you meet the following requirements before downloading and running the examples.
 
-1. Visual Studio 2010 or higher
+1. Microsoft Visual Studio 2017 or later.
 1. NuGet Package Manager installed in Visual Studio. Make sure that latest NuGet API version is installed in Visual Studio. For details on how to install NuGet package manager please check <http://docs.nuget.org/ndocs/guides/install-nuget>
 1. Go to `Tools->Options->NuGet Package Manager->Package Sources` and make sure that the option **nuget.org** is checked
-1. Example project uses NuGet Automatic Package Restore feature therefore you should have an active internet connection. If you do not have an active internet connection on the machine where examples are to be executed please check [Installation](/pdf/net/installation/) and manually add reference to Aspose.PDF.dll in the example project.
+1. Example project uses NuGet Automatic Package Restore feature therefore you should have an active internet connection. If you do not have an active internet connection on the machine where examples are to be executed please check [Installation](/pdf/cpp/installation/) and manually add reference to Aspose.PDF.dll in the example project.
 
 ## Download from GitHub
 
-All examples of Aspose.PDF for .NET are hosted on [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-.NET).
+All examples of Aspose.PDF for C++ are hosted on [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-C).
 
-- You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/archive/master.zip).
+- You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://codeload.github.com/aspose-pdf/Aspose.PDF-for-C/zip/master).
 - Extract the contents of ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
 - There are two Visual Studio solution files, one for Console and other one is for Web Application.
 - The projects are created in Visual Studio 2013, but the solution files are compatible with Visual Studio 2010 SP1 and higher.

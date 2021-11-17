@@ -32,6 +32,6 @@ You are able to do the following:
 - [Search and Get Images from PDF Document](/pdf/net/search-and-get-images-from-pdf-document/) - you can get an image from an individual page and search among images on all pages with C#.
 - [Replace Image in Existing PDF File](/pdf/net/replace-image-in-existing-pdf-file/) - check our code snippet, it shows you how to replace an image in a PDF file.
 - [Set Image Size](/pdf/net/set-image-size/) - C# library allows you to set the size of an image.
-- [Set Default Font Name](/pdf/net/set-default-font-name/) - use DefaultFontName property for setting Default Font Name.
+- [Set Default Font Name](/pdf/net/set-default-font-name/) - Setting Default Font Name for conversion process.
 - [Generate Thumbnail Images from PDF Documents](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - next article shows how to generate thumbnail images from PDF documents using first the Acrobat SDK and then Aspose.PDF.
 - Support for DICOM Images - Aspose.PDF for .NET supports special medical graphic standard of images. Aspose.PDF for .NET allows you to convert DICOM and SVG images. Please check [Convert DICOM to PDF](/pdf/net/convert-dicom-to-pdf/) section.

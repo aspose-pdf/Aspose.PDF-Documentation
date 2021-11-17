@@ -34,7 +34,7 @@ Check how it's looks:
 
 ![Add Text](add_text.png)
 
-The second way to add [FormattedText](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/formattedtext). Additionally, we indicate a rectangle in which our text should fit.
+The second way to add [FormattedText](https://apireference.aspose.com/pdf//java/com.aspose.pdf.facades/formattedtext). Additionally, we indicate a rectangle in which our text should fit.
 
 ```java
 public static void AddText02()

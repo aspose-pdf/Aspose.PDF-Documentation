@@ -15,4 +15,4 @@ XML (Extensible Markup Language) is a way to repurpose data in a file or automat
 
 - [Supported XML Schema](/pdf/java/supported-xml-schema/) - use the following XML schema for working with XML documents.
 - [Create a Hello World PDF Document through XML and XSLT](/pdf/java/create-a-hello-world-pdf-document-through-xml-and-xslt/) - use XSLT to transform your existing XML document to PDF.
-- [Generate PDF from XML](/pdf/java/generate-pdf-from-xml/) - Aspose.PDF has several ways to genereate PDF based on XML document.
+- [Generate PDF from XML](/pdf/java/generate-pdf-from-xml) - Aspose.PDF has several ways to genereate PDF based on XML document.

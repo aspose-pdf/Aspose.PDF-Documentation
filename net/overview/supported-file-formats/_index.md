@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-The following table indicates the file formats that Aspose.PDF for .NET can load and Save.
+The following table indicates the file formats that Aspose.PDF C# can load and Save.
 
 |**Format**|**Description**|**Load**|**Save**|**Remarks**|
 | :- | :- | :- | :- | :- |
@@ -34,11 +34,11 @@ The following table indicates the file formats that Aspose.PDF for .NET can load
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Saves the document in the Microsoft Word format| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Saves the document in the Microsoft Word format| |{{< emoticons/tick >}}| |
 |[MobiXML](https://docs.fileformat.com/ebook/mobi/)|Saves the document in eBook MobiXML Standard format| |{{< emoticons/tick >}}| |
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|Saves the document in JPEG Format| |{{< emoticons/tick >}}| |
-|[EMF](https://docs.fileformat.com/image/emf/)|Enhanced metafile format (EMF)| |{{< emoticons/tick >}}| |
-|[PNG](https://docs.fileformat.com/image/png/)|Saves the document in PNG Format| |{{< emoticons/tick >}}| |
-|[BMP](https://docs.fileformat.com/image/bmp/)|Saves the document in BMP Format| |{{< emoticons/tick >}}| |
+|[JPEG](https://docs.fileformat.com/image/jpeg/)|Saves the document in JPEG Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[EMF](https://docs.fileformat.com/image/emf/)|Enhanced metafile format (EMF)|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[PNG](https://docs.fileformat.com/image/png/)|Saves the document in PNG Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[BMP](https://docs.fileformat.com/image/bmp/)|Saves the document in BMP Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 |[GIF](https://docs.fileformat.com/image/gif/)|Graphic Interchange Format| |{{< emoticons/tick >}}| |
-|[TIFF](https://docs.fileformat.com/image/tiff/)|Saves the document as Single or Multi-Page TIFF Image| |{{< emoticons/tick >}}| |
-|[Text](https://docs.fileformat.com/word-processing/txt/)|Save the document int Text Format| |{{< emoticons/tick >}}| |
+|[TIFF](https://docs.fileformat.com/image/tiff/)|Saves the document as Single or Multi-Page TIFF Image|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[Text](https://docs.fileformat.com/word-processing/txt/)|Save the document int Text Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 

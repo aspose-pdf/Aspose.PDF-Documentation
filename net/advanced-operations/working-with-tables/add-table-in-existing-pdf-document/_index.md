@@ -1,10 +1,10 @@
 ---
-title: Table In PDF using C#
+title: Create or Add Table In PDF using C#
 linktitle: Create or Add Table
 type: docs
 weight: 10
 url: /net/add-table-in-existing-pdf-document/
-description: Aspose.PDF for .NET makes it possible to carry out various manipulations with the tables contained in your pdf document. You may add and extract a table in the existing PDF document, render table on a new page and etc.
+description: Aspose.PDF for .NET is a library used to create, read, and edit PDF Tables. Using this library, you can paginate a table on the PDF page using C# and VB.NET
 lastmod: "2021-06-05"
 aliases:
     - /net/add-and-extract-a-table/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Creating Table
+## Creating Table using C\#
 
 Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF namespace contains classes named [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell), and [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
 
@@ -66,7 +66,7 @@ dataDir = dataDir + "document_with_table_out.pdf";
 doc.Save(dataDir);
 ```
 
-### ColSpan and RowSpan in Aspose.PDF Tables using C#
+### ColSpan and RowSpan in Tables
 
 Aspose.PDF for .NET provides [ColSpan](https://apireference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) property to merge the columns in a table and [RowSpan](https://apireference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) property to merge the rows.
 
@@ -297,7 +297,7 @@ cell = row.Cells.Add("Cell 2 text");
 Console.WriteLine(table.GetWidth());
 ```
 
-## Add SVG Object to Table Cell
+## Add SVG Image to Table Cell
 
 Aspose.PDF for .NET supports the feature to add a table cell into a PDF file. While creating a table, it is possible to add text or images into the cells. Furthermore, the API also offers the feature to convert SVG files to PDF format. Using a combination of these features, it is possible to load an SVG image and add it into a table cell.
 
@@ -344,7 +344,7 @@ dataDir = dataDir + "AddSVGObject_out.pdf";
 doc.Save(dataDir);
 ```
 
-## Add HTML Tags inside Table
+## Using HTML Tags inside Table
 
 Sometimes you can come up with a requirement to import database contents that have some HTML tags and then import the content to the Table object. When importing the content, it should be rendered the HTML tags accordingly inside PDF document. We have enhanced ImprotDataTable() method, in order to achieve such requirement as follows:
 
@@ -436,11 +436,11 @@ dataDir = dataDir + "InsertPageBreak_out.pdf";
 doc.Save(dataDir);
 ```
 
-## Render Table on New Page
+## Render a Table on New Page
 
 By default, paragraphs are added to a Page object's Paragraphs collection. However, it is possible to render a table on a new page instead of directly after the previously added paragraph level object on the page.
 
-### Adding a Table
+### Sample: How to Render a Table on New Page using C\#
 
 To render table on a new page, use the [IsInNewPage](https://apireference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) property in the BaseParagraph class. The following code snippet shows how.
 

@@ -21,7 +21,7 @@ Annotation is an important part of PDF file. Using Aspose.PDF you can add a new 
 
 You are able to do the following:
 
-- [Overview of Annotations](/pdf/androidjava/overview-of-annotations/) - learn which types of annotations are defined by the PDF specification, and what Aspose.PDF supports.
-- [Add, Delete and Get Annotation](/pdf/androidjava/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
-- [Redact certain page region with RedactionAnnotation](/pdf/androidjava/redact-certain-page-region-with-redactionannotation/) - how to redact certain page regions using RedactionAnnotations.
-- [Import and export annotation with XFDF format](/pdf/androidjava/import-export-xfdf/) - Aspose.PDF library provided methods to import and export annotations data to XFDF files.
+- [Overview of Annotations](/pdf/android-via-java/overview-of-annotations/) - learn which types of annotations are defined by the PDF specification, and what Aspose.PDF supports.
+- [Add, Delete and Get Annotation](/pdf/android-via-java/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
+- [Redact certain page region with RedactionAnnotation](/pdf/android-via-java/redact-certain-page-region-with-redactionannotation/) - how to redact certain page regions using RedactionAnnotations.
+- [Import and export annotation with XFDF format](/pdf/android-via-java/import-export-xfdf/) - Aspose.PDF library provided methods to import and export annotations data to XFDF files.

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF as discussed in [Basic Operations](/pdf/java/basic-operations/), or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
+**Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF as discussed in [Basic Operations](/pdf/java/basic-operations), or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
 
 You'll learn different ways to:
 
@@ -22,7 +22,7 @@ You'll learn different ways to:
 - [Working with Tables](/pdf/java/working-with-tables/) - insert, decorate table in PDF, extract tabular data.
 - [Working with Forms](/pdf/java/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.
 - [Working with Graphs](/pdf/java/graphs/) - manipulate with shapes on the page.
-- [Working with XML](/pdf/java/working-with-xml/) - construct PDF documents based on the XML structure.
+- [Working with XML](/pdf/java/working-with-xml) - construct PDF documents based on the XML structure.
 - [Navigation and Interaction](/pdf/java/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages.
 - [Annotations](/pdf/java/annotations/) - annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
 - [Artifacts](/pdf/java/artifacts/) - deal with watermarks and other special objects in PDF.

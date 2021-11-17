@@ -11,6 +11,61 @@ sitemap:
 lastmod: "2021-08-16"
 ---
 
+## What's new in Aspose.PDF 21.10
+
+### How to detect hidden text?
+
+Please use TextState.Invisible to get information about invisibility of text out of rendering mode setting.
+
+We used the following code for testing:
+
+```csharp
+Document pdf = new Document(dataDir + "TestPage.pdf");
+Console.WriteLine(pdf.FileName);
+var page = pdf.Pages[1];
+var textFragmentAbsorber = new TextFragmentAbsorber();
+page.Accept(textFragmentAbsorber);
+var textFragmentCollection = textFragmentAbsorber.TextFragments;
+for (int i = 1; i <= textFragmentCollection.Count; i++)
+{
+    TextFragment fragment = textFragmentCollection[i];
+    Console.WriteLine("Fragment {0} at {1}", i, fragment.Rectangle.ToString());
+    Console.WriteLine("Text: {0}", fragment.Text);
+    Console.WriteLine("RenderingMode: {0}", fragment.TextState.RenderingMode.ToString());
+    Console.WriteLine("Invisibility: {0}", fragment.TextState.Invisible);
+    Console.WriteLine("---");
+}
+```
+
+### How do get information about the number of layers in a PDF document?
+
+```csharp
+Please use code snippet:
+var inFile = "1234.pdf";
+Document doc = new Document(inFile);
+List layers = doc.Pages[1].Layers;
+```
+
+## What's new in Aspose.PDF 21.9
+
+Customize background color for signature appearance and the font color of the labels in the signature area with Aspose.PDF for .NET.
+
+```csharp
+using (PdfFileSignature pdfSign = new PdfFileSignature())
+{
+    pdfSign.BindPdf(inFile);
+    var rect = new System.Drawing.Rectangle(310, 45, 200, 50);
+    var pkcs = new PKCS7(inPfxFile, "");
+    pkcs.CustomAppearance = new SignatureCustomAppearance()
+    {//set colors
+        ForegroundColor = Color.DarkGreen,
+        BackgroundColor = Color.LightSeaGreen,
+    };
+    pdfSign.Sign(1, true, rect, pkcs);
+    pdfSign.Save(outFile);
+}
+```
+
 ## What's new in Aspose.PDF 21.8
 
 ### How to change text color in Digital Signature?

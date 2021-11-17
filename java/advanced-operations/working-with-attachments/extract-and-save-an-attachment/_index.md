@@ -54,7 +54,7 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## Get Attachment Information
 
-As mentioned in [Get Attachments from a PDF Document](/pdf/java/extract-and-save-an-attachment/), attachment information is held in the [FileSpecification](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) object, gathered with other attachments in the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object's EmbeddedFiles collection.
+As mentioned in [Get Attachments from a PDF Document](/pdf/java/get-attachments-from-a-pdf-document/), attachment information is held in the [FileSpecification](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) object, gathered with other attachments in the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object's EmbeddedFiles collection.
 
 The [FileSpecification](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) object provides methods that get information about the attachment, for example:
 

@@ -4,27 +4,28 @@ linktitle: Creating a complex PDF
 type: docs
 weight: 30
 url: /cpp/complex-pdf-example/
-description: Aspose.PDF for NET allows you to create more complex documents that contain images, text fragments, and tables in one document.
-lastmod: "2021-11-01"
+description: Aspose.PDF for C++ allows you to create more complex documents that contain images, text fragments, and tables in one document.
+lastmod: "2021-11-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
 
-The [Hello, World](/pdf/cpp/hello-world-example/) example showed simple steps to create a PDF document using C# and Aspose.PDF. In this article, we will take a look at creating a more complex document with C# and Aspose.PDF for .NET. As an example, we'll take a document from a fictitious company that operates passenger ferry services.
+The [Hello, World](/pdf/cpp/hello-world-example/) example showed simple steps to create a PDF document using C++ and Aspose.PDF. In this article, we will take a look at creating a more complex document with C++ and Aspose.PDF for C++. As an example, we'll take a document from a fictitious company that operates passenger ferry services.
 Our document will contain a image, two text fragments (header and paragraph), and a table. To build such a document, we will use DOM-base approach. You can read more in section [Basics of DOM API](/pdf/cpp/basics-of-dom-api/).
 
 If we create a document from scratch we need to follow certain steps:
 
+1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
 1. Instantiate a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object. In this step we will create an empty PDF document with some metadata but without pages.
 1. Add a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to the document object. So, now our document will have one page.
 1. Add a [Image](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image) to the Page.
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) for header. For the header we will use Arial font with font size 24pt and center alignment.
-1. Add header to the page [Paragraphs](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs).
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) for description. For the description we will use Arial font with font size 24pt and center alignment.
+1. Create a [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) for header. For the header we will use Arial font with font size 24pt and center alignment.
+1. Add header to the page [Paragraphs](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#ac5c48bedc9fe8a7e0800a1d9b2c28170).
+1. Create a [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) for description. For the description we will use Arial font with font size 24pt and center alignment.
 1. Add (description) to the page Paragraphs.
 1. Create a table, add table properties.
-1. Add (table) to the page [Paragraphs](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs).
+1. Add (table) to the page [Paragraphs](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#ac5c48bedc9fe8a7e0800a1d9b2c28170).
 1. Save a document "Complex.pdf".
 
 ```cpp

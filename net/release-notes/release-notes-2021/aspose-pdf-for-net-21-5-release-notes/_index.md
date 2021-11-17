@@ -52,6 +52,7 @@ This page contains release notes information for Aspose.PDF for .NET 21.5.
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
+
 * Type Aspose.Pdf.Drawing.ImageFormat
 * Field Aspose.Pdf.Drawing.ImageFormat.Bmp
 * Field Aspose.Pdf.Drawing.ImageFormat.Jpeg
@@ -67,5 +68,6 @@ This page contains release notes information for Aspose.PDF for .NET 21.5.
 * Property Aspose.Pdf.XImage.Metadata
 
 ### Removed APIs
+
 * Method Aspose.Pdf.Facades.PdfConverter.MergeImages(System.Collections.Generic.List{System.IO.Stream},System.Drawing.Imaging.ImageFormat,Aspose.Pdf.Facades.ImageMergeMode,System.Nullable{System.Int32},System.Nullable{System.Int32})
 * Method Aspose.Pdf.Facades.PdfConverter.MergeImagesAsTiff(System.Collections.Generic.List{System.IO.Stream})

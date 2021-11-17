@@ -26,20 +26,20 @@ Please try using the following code snippet to accomplish this requirement with 
 ```cpp
 void ConvertPDFtoEPUB()
 {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Conversion\\");
+ std::clog << __func__ << ": Start" << std::endl;
+ // String for path name
+ String _dataDir("C:\\Samples\\Conversion\\");
 
-	// String for input file name
-	String infilename("sample.pdf");
-	// String for output file name
-	String outfilename("PDFToEPUB_out.epub");
+ // String for input file name
+ String infilename("sample.pdf");
+ // String for output file name
+ String outfilename("PDFToEPUB_out.epub");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+ // Open document
+ auto document = MakeObject<Document>(_dataDir + infilename);
 
-	// Save PDF file into EPUB format
-	document->Save(_dataDir + outfilename, SaveFormat::Epub);
-	std::clog << __func__ << ": Finish" << std::endl;
+ // Save PDF file into EPUB format
+ document->Save(_dataDir + outfilename, SaveFormat::Epub);
+ std::clog << __func__ << ": Finish" << std::endl;
 }
 ```

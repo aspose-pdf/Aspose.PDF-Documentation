@@ -19,7 +19,7 @@ You can try to find in replace the text in the document using Aspose.PDF and get
 
 {{% /alert %}}
 
-To replace text on all pages in a PDF document using [Aspose.PDF for Java](https://products.aspose.com/pdf/java/):
+To replace text on all pages in a PDF document using [Aspose.PDF for Java](https://products.aspose.com/pdf/java):
 
 1. First use [TextFragmentAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) to find the particular phrase to be replaced.
 1. Then, go through all [TextFragments](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber#getTextFragments--) to replace the text and change any other attributes.
