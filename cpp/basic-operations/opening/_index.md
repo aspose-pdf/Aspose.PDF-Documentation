@@ -62,3 +62,27 @@ void BasicOperations::OpenDocumentWithPassword()
     }
 }
 ```
+
+## Open PDF document from memory buffer
+
+```cpp
+#include <system/io/memory_stream.h>
+#include <system/buffer.h>
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+
+// ...
+
+void OpenDocumentMemory(const uint8_t *buffer, int size) {
+
+    auto arr = MakeArray<uint8_t>(size);
+    Buffer::BlockCopy(buffer, 0, arr->data_ptr(), 0, size);
+
+    auto document = MakeObject<Document>(MakeObject<System::IO::MemoryStream>(arr));
+
+    int countPages = document->get_Pages()->get_Count();
+
+    std::cout << "Pages " << countPages << std::endl;
+}
+```
