@@ -1,25 +1,28 @@
 ---
-title: Convert PDF to Excel 
-linktitle: Convert PDF to Excel 
+title: Convert PDF to Excel using Java
+linktitle: Convert PDF to Excel
 type: docs
-weight: 90
+weight: 20
 url: /java/convert-pdf-to-excel/
-lastmod: "2021-06-05"
-description: Aspose.PDF for Java allows you to convert PDF to Excel format. During this, the individual pages of the PDF file are converted to Excel worksheets.
+lastmod: "2021-11-19"
+keywords: convert PDF to Excel using java, convert PDF to XLS using csharp, convert PDF to XLSX using csharp, export table from PDF to Excel in csharp.
+description: Aspose.PDF for Java allows you to convert PDF to Excel format using java. During this, the individual pages of the PDF file are converted to Excel worksheets.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
 Aspose.PDF for Java API lets you render your PDF files to Excel [XLS](https://docs.fileformat.com/spreadsheet/xls/) and [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) file formats. We already have another API, known as [Aspose.Cells for Java](https://products.aspose.com/cells/java), that provides the capability to create and manipulate existing Excel workbooks. It also provides the capability to transform Excel workbooks to PDF format.
 
 {{% alert color="primary" %}}
+**Try to convert PDF to Excel online**
 
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-xlsx](https://products.aspose.app/pdf/conversion/pdf-to-xlsx) 
+Aspose.PDF for Java presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
 
+[![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-## Convert PDF to Excel XLS
+### Convert PDF to Excel XLS
 
 To convert PDF files to XLS format, Aspose.PDF has a class called [ExcelSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). An object of the [ExcelSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class is passed as a second argument to the Document.Save(..) constructor. 
 
@@ -63,8 +66,10 @@ public final class ConvertPDFtoXLSX {
         // Save the output in XLS format
         pdfDocument.save("PDFToXLS_out.xls", excelsave);
     }
+}
 ```
-## Convert PDF to XLS with Control Column
+
+### Convert PDF to XLS with Control Column
 
 When converting a PDF to XLS format, a blank column is added to the output file as first column. The in [ExcelSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class InsertBlankColumnAtFirst option is used to control this column. Its default value is true.
 
@@ -79,7 +84,8 @@ When converting a PDF to XLS format, a blank column is added to the output file 
         pdfDocument.save("PDFToXLS_out.xls", excelsave);
     }
 ```
-## Convert PDF to Single Excel Worksheet 
+
+### Convert PDF to Single Excel Worksheet
 
 When exporting a PDF file with a lot of pages to XLS, each page is exported to a different sheet in the Excel file. This is because the MinimizeTheNumberOfWorksheets property is set to false by default. To ensure that all pages are exported to one single sheet in the output Excel file, set the MinimizeTheNumberOfWorksheets property to true.
 
@@ -96,7 +102,8 @@ When exporting a PDF file with a lot of pages to XLS, each page is exported to a
         pdfDocument.save("PDFToXLS_out.xls", excelsave);
     }
 ```
-## Convert to XLSX format 
+
+### Convert to XLSX format
 
 By default Aspose.PDF uses XML Spreadsheet 2003 for storing data. In order to convert PDF files to XLSX format, Aspose.PDF has a class called ExcelSaveOptions with Format. An object of the [ExcelSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class is passed as a second argument to the Document.Save(..) method.
 
@@ -112,5 +119,4 @@ By default Aspose.PDF uses XML Spreadsheet 2003 for storing data. In order to co
         // Save the output in XLS format
         pdfDocument.save("PDFToXLS_out.xlsx", excelSave);
     }
-}
 ```

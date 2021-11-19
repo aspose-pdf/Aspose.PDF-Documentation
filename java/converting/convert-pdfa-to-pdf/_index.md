@@ -1,15 +1,17 @@
 ---
-title: Convert PDF/A to PDF 
-linktitle: Convert PDF/A to PDF
+title: Convert PDF/A to PDF format using Java
+linktitle: Convert PDF/A to PDF format
 type: docs
-weight: 350
+weight: 110
 url: /java/convert-pdfa-to-pdf/
-lastmod: "2021-06-05"
-description: To convert PDF/A to PDF you should remove restrictions from the original document. Aspose.PDF for Java allows you to solve this problem easly and simply.
+lastmod: "2021-11-19"
+description: This topic show you how to Aspose.PDF allows to convert PDF/A file to PDF document with Java library. 
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.8
 ---
+
+## Convert PDF/A document to PDF
 
 Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive
 ">PDF/A</abbr> restriction from the original document. Class [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) has method RemovePdfaCompliance(..) to remove
@@ -50,7 +52,9 @@ public final class ConvertPDFAtoPDF {
         // Save output in XML format
         pdfDocument.save(pdfDocumentFileName);
     }
+}
 ```
+
 This info also removes if you make any changes in the document (e.g. add pages). In the following example, the output document loses PDF/A compliance after the page adding.
 
 ```java
@@ -67,9 +71,4 @@ This info also removes if you make any changes in the document (e.g. add pages).
         // Save updated document
         pdfDocument.save(pdfDocumentFileName);
     }
-
-}
 ```
-
-
-
