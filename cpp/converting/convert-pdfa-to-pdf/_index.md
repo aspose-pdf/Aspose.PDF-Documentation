@@ -20,19 +20,19 @@ After [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#a
 ```cpp
 void ConvertPDFAtoPDF()
 {
- std::clog << "PDF/A to PDF convert: Start" << std::endl;
- String _dataDir("C:\\Samples\\Conversion\\");
- String infilename("sample-pdfa.pdf");
- String outfilename("PDFAToPDF_out.pdf");
+    std::clog << "PDF/A to PDF convert: Start" << std::endl;
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("sample-pdfa.pdf");
+    String outfilename("PDFAToPDF_out.pdf");
 
- auto document = MakeObject<Document>(_dataDir + infilename);
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Remove PDF/A compliance information
- document->RemovePdfaCompliance();
+    // Remove PDF/A compliance information
+    document->RemovePdfaCompliance();
 
- // Save updated document
- document->Save(_dataDir + outfilename);
- std::clog << "PDF/A to PDF convert: End" << std::endl;
+    // Save updated document
+    document->Save(_dataDir + outfilename);
+    std::clog << "PDF/A to PDF convert: End" << std::endl;
 }
 ```
 
@@ -41,17 +41,17 @@ This info also removes if you make any changes in the document (e.g. add pages).
 ```cpp
 void ConvertPDFAtoPDFAdvanced()
 {
- std::clog << "PDF/A to PDF convert: Start" << std::endl;
- String _dataDir("C:\\Samples\\Conversion\\");
- String infilename("sample-pdfa.pdf");
- String outfilename("PDFAToPDF_out.pdf");
+    std::clog << "PDF/A to PDF convert: Start" << std::endl;
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("sample-pdfa.pdf");
+    String outfilename("PDFAToPDF_out.pdf");
 
- auto document = MakeObject<Document>(_dataDir + infilename);
- // Adding a new (empty) page removes PDF/A compliance information.
+    auto document = MakeObject<Document>(_dataDir + infilename);
+    // Adding a new (empty) page removes PDF/A compliance information.
 
- document->get_Pages()->Add();
- // Save updated document
- document->Save(_dataDir + outfilename);
- std::clog << "PDF/A to PDF convert: End" << std::endl;
+    document->get_Pages()->Add();
+    // Save updated document
+    document->Save(_dataDir + outfilename);
+    std::clog << "PDF/A to PDF convert: End" << std::endl;
 }
 ```

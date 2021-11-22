@@ -22,25 +22,25 @@ The following code snippet shows the process for converting PDF file into XLS fo
 ```cpp
 void ConvertPDFtoExcel()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("PDFToExcel.xlsx");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToExcel.xlsx");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- try {
-  // Save the output in XLSX format
-  document->Save(_dataDir + outfilename, SaveFormat::Excel);
- }
- catch (Exception ex) {
-  std::cerr << ex->get_Message();
- }
- std::clog << __func__ << ": Finish" << std::endl;
+    try {
+    // Save the output in XLSX format
+    document->Save(_dataDir + outfilename, SaveFormat::Excel);
+    }
+    catch (Exception ex) {
+    std::cerr << ex->get_Message();
+    }
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -51,26 +51,26 @@ When converting a PDF to XLS format, a blank column is added to the output file 
 ```cpp
 void ConvertPDFtoExcel_Advanced_InsertBlankColumnAtFirst()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("PDFToExcel.xls");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToExcel.xls");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate ExcelSave Option object
- auto excelSave = MakeObject<ExcelSaveOptions>();
+    // Instantiate ExcelSave Option object
+    auto excelSave = MakeObject<ExcelSaveOptions>();
 
- // The in ExcelSaveOptions class' InsertBlankColumnAtFirst option is used to control this column. Its default value is true.
- excelSave->set_InsertBlankColumnAtFirst(false);
+    // The in ExcelSaveOptions class' InsertBlankColumnAtFirst option is used to control this column. Its default value is true.
+    excelSave->set_InsertBlankColumnAtFirst(false);
 
- // Save the output in XLS format
- document->Save(outfilename, excelSave);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in XLS format
+    document->Save(outfilename, excelSave);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -81,25 +81,25 @@ When exporting a PDF file with a lot of pages to XLS, each page is exported to a
 ```cpp
 void ConvertPDFtoExcel_Advanced_MinimizeTheNumberOfWorksheets()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("PDFToExcel.xls");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToExcel.xls");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate ExcelSave Option object
- auto excelSave = MakeObject<ExcelSaveOptions>();
+    // Instantiate ExcelSave Option object
+    auto excelSave = MakeObject<ExcelSaveOptions>();
 
- excelSave->set_MinimizeTheNumberOfWorksheets(true);
+    excelSave->set_MinimizeTheNumberOfWorksheets(true);
 
- // Save the output in XLS format
- document->Save(outfilename, excelSave);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in XLS format
+    document->Save(outfilename, excelSave);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -112,25 +112,25 @@ The following code snippet shows the process for converting PDF file into XLSX f
 ```cpp
 void ConvertPDFtoExcel_Advanced_SaveXLSX()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("PDFToExcel.xls");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToExcel.xls");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate ExcelSave Option object
- auto excelSave = MakeObject<ExcelSaveOptions>();
+    // Instantiate ExcelSave Option object
+    auto excelSave = MakeObject<ExcelSaveOptions>();
 
- excelSave->set_Format(ExcelSaveOptions::ExcelFormat::XLSX);
+    excelSave->set_Format(ExcelSaveOptions::ExcelFormat::XLSX);
 
- // Save the output in XLS format
- document->Save(outfilename, excelSave);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in XLS format
+    document->Save(outfilename, excelSave);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 

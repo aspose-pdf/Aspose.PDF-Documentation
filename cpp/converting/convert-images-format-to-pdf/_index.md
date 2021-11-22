@@ -31,34 +31,34 @@ You can convert BMP to PDF files with Aspose.PDF for C++ API. Therefore, you can
 So the following code snippet follows these steps and shows how to convert BMP to PDF using C++:
 
 ```cpp
-void ConvertBMPtoPDF() {
+void ConvertBMPtoPDF() 
+{
+    std::clog << "BMP to PDF convert: Start" << std::endl;
 
- std::clog << "BMP to PDF convert: Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    // String for input file name
+    String infilename("sample.bmp");
 
- // String for input file name
- String infilename("sample.bmp");
+    // String for input file name
+    String outfilename("ImageToPDF-BMP.pdf");
 
- // String for input file name
- String outfilename("ImageToPDF-BMP.pdf");
+    // Open document
+    auto document = MakeObject<Document>();
 
- // Open document
- auto document = MakeObject<Document>();
+    // Add empty page in empty document
+    auto page = document->get_Pages()->Add();
+    auto image = MakeObject<Aspose::Pdf::Image>();
+    image->set_File(_dataDir + infilename);
 
- // Add empty page in empty document
- auto page = document->get_Pages()->Add();
- auto image = MakeObject<Aspose::Pdf::Image>();
- image->set_File(_dataDir + infilename);
+    // Add image on a page
+    page->get_Paragraphs()->Add(image);
 
- // Add image on a page
- page->get_Paragraphs()->Add(image);
+    // Save output document
+    document->Save(_dataDir + outfilename);
 
- // Save output document
- document->Save(_dataDir + outfilename);
-
- std::clog << "BMP to PDF convert: Finish" << std::endl;
+    std::clog << "BMP to PDF convert: Finish" << std::endl;
 }
 ```
 
@@ -87,27 +87,27 @@ The following code snippet shows how to convert DICOM files to PDF  format with 
 ```cpp
 void ConvertDICOMtoPDF()
 {
- std::clog << "DICOM to PDF convert: Start" << std::endl;
+    std::clog << "DICOM to PDF convert: Start" << std::endl;
 
- String _dataDir("C:\\Samples\\Conversion\\");
- String infilename("CR_Anno.dcm");
- String outfilename("PDFWithDicomImage_out.pdf");
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("CR_Anno.dcm");
+    String outfilename("PDFWithDicomImage_out.pdf");
 
- // Instantiate Document Object
- auto document = MakeObject<Document>();
+    // Instantiate Document Object
+    auto document = MakeObject<Document>();
 
- // Add a page to pages collection of document
- auto page = document->get_Pages()->Add();
+    // Add a page to pages collection of document
+    auto page = document->get_Pages()->Add();
 
- auto image = MakeObject<Aspose::Pdf::Image>();
- image->set_File(_dataDir + infilename);
- image->set_FileType(Aspose::Pdf::ImageFileType::Dicom);
+    auto image = MakeObject<Aspose::Pdf::Image>();
+    image->set_File(_dataDir + infilename);
+    image->set_FileType(Aspose::Pdf::ImageFileType::Dicom);
 
- page->get_Paragraphs()->Add(image);
+    page->get_Paragraphs()->Add(image);
 
- // Save output as PDF format
- document->Save(_dataDir + outfilename);
- std::clog << "DICOM to PDF convert: Finish" << std::endl;
+    // Save output as PDF format
+    document->Save(_dataDir + outfilename);
+    std::clog << "DICOM to PDF convert: Finish" << std::endl;
 }
 ```
 
@@ -134,29 +134,30 @@ Aspose presents you online free application ["DICOM to PDF"](https://products.as
 Moreover, the following code snippet shows how to convert an EMF to PDF with C++ in your code snippet:
 
 ```cpp
-void ConvertEMFtoPDF() {
- std::clog << "EMF to PDF convert: Start" << std::endl;
+void ConvertEMFtoPDF() 
+{
+    std::clog << "EMF to PDF convert: Start" << std::endl;
 
- String _dataDir("C:\\Samples\\Conversion\\");
- String infilename("sample.emf");
- String outfilename("ImageToPDF_emf.pdf");
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("sample.emf");
+    String outfilename("ImageToPDF_emf.pdf");
 
- auto fileStream = System::IO::File::OpenRead(_dataDir + infilename);
- auto myimage = MakeObject<System::Drawing::Bitmap>(fileStream);
+    auto fileStream = System::IO::File::OpenRead(_dataDir + infilename);
+    auto myimage = MakeObject<System::Drawing::Bitmap>(fileStream);
 
- auto document = MakeObject<Document>();
- auto page = document->get_Pages()->Add();
+    auto document = MakeObject<Document>();
+    auto page = document->get_Pages()->Add();
 
- auto currentImage = MakeObject<System::IO::MemoryStream>();
- myimage->Save(currentImage, System::Drawing::Imaging::ImageFormat::get_Tiff());
+    auto currentImage = MakeObject<System::IO::MemoryStream>();
+    myimage->Save(currentImage, System::Drawing::Imaging::ImageFormat::get_Tiff());
 
- auto imageht = MakeObject<Aspose::Pdf::Image>();
- imageht->set_ImageStream(currentImage);
- page->get_Paragraphs()->Add(imageht);
+    auto imageht = MakeObject<Aspose::Pdf::Image>();
+    imageht->set_ImageStream(currentImage);
+    page->get_Paragraphs()->Add(imageht);
 
- document->Save(_dataDir + outfilename);
+    document->Save(_dataDir + outfilename);
 
- std::clog << "EMF to PDF convert: Finish" << std::endl;
+    std::clog << "EMF to PDF convert: Finish" << std::endl;
 }
 ```
 
@@ -185,32 +186,32 @@ You can very easy convert a JPG images to PDF with Aspose.PDF for C++ by followi
 The code snippet below shows how to convert JPG Image to PDF using C++:
 
 ```cpp
-void ConvertJPEGtoPDF() {
+void ConvertJPEGtoPDF() 
+{
+    std::clog << "JPEG to PDF convert: Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- std::clog << "JPEG to PDF convert: Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    // String for input file name
+    String infilename("sample.jpg");
 
- // String for input file name
- String infilename("sample.jpg");
+    // String for input file name
+    String outfilename("ImageToPDF-JPEG.pdf");
 
- // String for input file name
- String outfilename("ImageToPDF-JPEG.pdf");
+    // Open document
+    auto document = MakeObject<Document>();
 
- // Open document
- auto document = MakeObject<Document>();
+    // Add empty page in empty document
+    auto page = document->get_Pages()->Add();
+    auto image = MakeObject<Aspose::Pdf::Image>();
+    image->set_File(_dataDir + infilename);
 
- // Add empty page in empty document
- auto page = document->get_Pages()->Add();
- auto image = MakeObject<Aspose::Pdf::Image>();
- image->set_File(_dataDir + infilename);
+    // Add image on a page
+    page->get_Paragraphs()->Add(image);
 
- // Add image on a page
- page->get_Paragraphs()->Add(image);
-
- // Save output document
- document->Save(_dataDir + outfilename);
- std::clog << "JPEG to PDF convert: Finish" << std::endl;
+    // Save output document
+    document->Save(_dataDir + outfilename);
+    std::clog << "JPEG to PDF convert: Finish" << std::endl;
 }
 ```
 
@@ -224,45 +225,45 @@ Then you can see how to convert an image to PDF with the **same height and width
 Following code snippet shows how to convert an Image to PDF with same page height and width using C++:
 
 ```cpp
-void ConvertJPGtoPDF_fitsize() {
+void ConvertJPGtoPDF_fitsize() 
+{
+    std::clog << "JPEG to PDF convert: Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- std::clog << "JPEG to PDF convert: Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    // String for input file name
+    String infilename("sample.jpg");
 
- // String for input file name
- String infilename("sample.jpg");
+    // String for input file name
+    String outfilename("ImageToPDF-JPG.pdf");
 
- // String for input file name
- String outfilename("ImageToPDF-JPG.pdf");
+    // Open document
+    auto document = MakeObject<Document>();
 
- // Open document
- auto document = MakeObject<Document>();
-
- // Add empty page in empty document
- auto page = document->get_Pages()->Add();
- auto fileStream = System::IO::File::OpenRead(_dataDir + infilename);
- auto bitMap = MakeObject<System::Drawing::Bitmap>(fileStream);
+    // Add empty page in empty document
+    auto page = document->get_Pages()->Add();
+    auto fileStream = System::IO::File::OpenRead(_dataDir + infilename);
+    auto bitMap = MakeObject<System::Drawing::Bitmap>(fileStream);
 
 
- auto image = MakeObject<Aspose::Pdf::Image>();
- image->set_File(_dataDir + infilename);
+    auto image = MakeObject<Aspose::Pdf::Image>();
+    image->set_File(_dataDir + infilename);
 
- // Add image on a page
- page->get_Paragraphs()->Add(image);
+    // Add image on a page
+    page->get_Paragraphs()->Add(image);
 
- // Set page dimensions and margins
- page->get_PageInfo()->set_Height(bitMap->get_Height());
- page->get_PageInfo()->set_Width(bitMap->get_Width());
- page->get_PageInfo()->get_Margin()->set_Bottom(0);
- page->get_PageInfo()->get_Margin()->set_Top(0);
- page->get_PageInfo()->get_Margin()->set_Right(0);
- page->get_PageInfo()->get_Margin()->set_Left(0);
- page->get_Paragraphs()->Add(image);
+    // Set page dimensions and margins
+    page->get_PageInfo()->set_Height(bitMap->get_Height());
+    page->get_PageInfo()->set_Width(bitMap->get_Width());
+    page->get_PageInfo()->get_Margin()->set_Bottom(0);
+    page->get_PageInfo()->get_Margin()->set_Top(0);
+    page->get_PageInfo()->get_Margin()->set_Right(0);
+    page->get_PageInfo()->get_Margin()->set_Left(0);
+    page->get_Paragraphs()->Add(image);
 
- // Save output document
- document->Save(_dataDir + outfilename);
- std::clog << "JPEG to PDF convert: Finish" << std::endl;
+    // Save output document
+    document->Save(_dataDir + outfilename);
+    std::clog << "JPEG to PDF convert: Finish" << std::endl;
 }
 ```
 
@@ -293,32 +294,32 @@ You can convert PNG to PDF image using the below steps:
 Moreover, the code snippet below shows how to convert PNG to PDF in your C++ applications:
 
 ```cpp
-void ConvertPNGtoPDF() {
+void ConvertPNGtoPDF() 
+{
+    std::clog << "PNG to PDF convert: Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- std::clog << "PNG to PDF convert: Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    // String for input file name
+    String infilename("sample.png");
 
- // String for input file name
- String infilename("sample.png");
+    // String for input file name
+    String outfilename("ImageToPDF-PNG.pdf");
 
- // String for input file name
- String outfilename("ImageToPDF-PNG.pdf");
+    // Open document
+    auto document = MakeObject<Document>();
 
- // Open document
- auto document = MakeObject<Document>();
+    // Add empty page in empty document
+    auto page = document->get_Pages()->Add();
+    auto image = MakeObject<Aspose::Pdf::Image>();
+    image->set_File(_dataDir + infilename);
 
- // Add empty page in empty document
- auto page = document->get_Pages()->Add();
- auto image = MakeObject<Aspose::Pdf::Image>();
- image->set_File(_dataDir + infilename);
+    // Add image on a page
+    page->get_Paragraphs()->Add(image);
 
- // Add image on a page
- page->get_Paragraphs()->Add(image);
-
- // Save output document
- document->Save(_dataDir + outfilename);
- std::clog << "PNG to PDF convert: Finish" << std::endl;
+    // Save output document
+    document->Save(_dataDir + outfilename);
+    std::clog << "PNG to PDF convert: Finish" << std::endl;
 }
 ```
 
@@ -346,22 +347,23 @@ SVG images and their behaviors are defined in XML text files. This means that th
 The following code snippet shows the process of converting SVG file into PDF format with Aspose.PDF for C++.
 
 ```cpp
-void ConvertSVGtoPDF() {
- std::clog << "SVG to PDF convert: Start" << std::endl;
+void ConvertSVGtoPDF() 
+{
+    std::clog << "SVG to PDF convert: Start" << std::endl;
 
- String _dataDir("C:\\Samples\\Conversion\\");
- String infilename("sample.svg");
- String outfilename("ImageToPDF-SVG.pdf");
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("sample.svg");
+    String outfilename("ImageToPDF-SVG.pdf");
 
- auto options = MakeObject<SvgLoadOptions>();
- try {
-  auto document = MakeObject<Document>(_dataDir + infilename, options);
-  document->Save(_dataDir + outfilename);
- }
- catch (System::Exception ex) {
-  std::cerr << ex->get_Message() << std::endl;
- }
- std::clog << "SVG to PDF convert: Finish" << std::endl;
+    auto options = MakeObject<SvgLoadOptions>();
+    try {
+    auto document = MakeObject<Document>(_dataDir + infilename, options);
+    document->Save(_dataDir + outfilename);
+    }
+    catch (System::Exception ex) {
+    std::cerr << ex->get_Message() << std::endl;
+    }
+    std::clog << "SVG to PDF convert: Finish" << std::endl;
 }
 ```
 
@@ -370,25 +372,25 @@ void ConvertSVGtoPDF() {
 ```cpp
 void ConvertSVGtoPDF_Advanced()
 {
- std::clog << "SVG to PDF convert: Start" << std::endl;
+    std::clog << "SVG to PDF convert: Start" << std::endl;
 
- String _dataDir("C:\\Samples\\Conversion\\");
- String infilename("Sweden-Royal-flag-grand-coa.svg");
- String outfilename("ImageToPDF-SVG.pdf");
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("Sweden-Royal-flag-grand-coa.svg");
+    String outfilename("ImageToPDF-SVG.pdf");
 
- auto options = MakeObject<SvgLoadOptions>();
- options->set_AdjustPageSize(true);
- options->ConversionEngine = SvgLoadOptions::ConversionEngines::NewEngine;
+    auto options = MakeObject<SvgLoadOptions>();
+    options->set_AdjustPageSize(true);
+    options->ConversionEngine = SvgLoadOptions::ConversionEngines::NewEngine;
 
- try {
-  auto document = MakeObject<Document>(_dataDir + infilename, options);
-  document->Save(_dataDir + outfilename);
- }
- catch (System::Exception ex) {
-  std::cerr << ex->get_Message() << std::endl;
- }
+    try {
+    auto document = MakeObject<Document>(_dataDir + infilename, options);
+    document->Save(_dataDir + outfilename);
+    }
+    catch (System::Exception ex) {
+    std::cerr << ex->get_Message() << std::endl;
+    }
 
- std::clog << "SVG to PDF convert: Finish" << std::endl;
+    std::clog << "SVG to PDF convert: Finish" << std::endl;
 }
 ```
 
@@ -417,29 +419,29 @@ TIFF or TIF, Tagged Image File Format, represents raster images that are meant f
 Moreover, the following code snippet shows how to convert multi-page or multi-frame TIFF image to PDF with C++:
 
 ```cpp
-void ConvertTIFFtoPDF() {
+void ConvertTIFFtoPDF() 
+{
+    std::clog << "TIFF to PDF convert: Start" << std::endl;
 
- std::clog << "TIFF to PDF convert: Start" << std::endl;
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("sample.tiff");
+    String outfilename("ImageToPDF-TIFF.pdf");
 
- String _dataDir("C:\\Samples\\Conversion\\");
- String infilename("sample.tiff");
- String outfilename("ImageToPDF-TIFF.pdf");
+    auto fileStream = System::IO::File::OpenRead(_dataDir + infilename);
+    auto myimage = MakeObject<System::Drawing::Bitmap>(fileStream);
 
- auto fileStream = System::IO::File::OpenRead(_dataDir + infilename);
- auto myimage = MakeObject<System::Drawing::Bitmap>(fileStream);
+    auto document = MakeObject<Document>();
+    auto page = document->get_Pages()->Add();
 
- auto document = MakeObject<Document>();
- auto page = document->get_Pages()->Add();
+    auto currentImage = MakeObject<System::IO::MemoryStream>();
+    myimage->Save(currentImage, System::Drawing::Imaging::ImageFormat::get_Tiff());
 
- auto currentImage = MakeObject<System::IO::MemoryStream>();
- myimage->Save(currentImage, System::Drawing::Imaging::ImageFormat::get_Tiff());
+    auto imageht = MakeObject<Aspose::Pdf::Image>();
+    imageht->set_ImageStream(currentImage);
+    page->get_Paragraphs()->Add(imageht);
 
- auto imageht = MakeObject<Aspose::Pdf::Image>();
- imageht->set_ImageStream(currentImage);
- page->get_Paragraphs()->Add(imageht);
+    document->Save(_dataDir + outfilename);
 
- document->Save(_dataDir + outfilename);
-
- std::clog << "TIFF to PDF convert: Finish" << std::endl;
+    std::clog << "TIFF to PDF convert: Finish" << std::endl;
 }
 ```

@@ -26,20 +26,20 @@ In order to convert PDF to PPTX, Aspose.PDF for C++ advice to use the following 
 ```cpp
 void ConvertPDFtoPPTX()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("JSON Fundamenals.pdf");
- String outfilename("JSON Fundamenals.pptx");
+    // String for file name
+    String infilename("JSON Fundamenals.pdf");
+    String outfilename("JSON Fundamenals.pptx");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Save the output in PPTX format
- document->Save(_dataDir + outfilename, SaveFormat::Pptx);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in PPTX format
+    document->Save(_dataDir + outfilename, SaveFormat::Pptx);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -50,23 +50,23 @@ In case if you need to convert a searchable PDF to PPTX as images instead of sel
 ```cpp
 void ConvertPDFtoPPTX_SlidesAsImages()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("JSON Fundamenals.pdf");
- String outfilename("JSON Fundamenals.pptx");
+    // String for file name
+    String infilename("JSON Fundamenals.pdf");
+    String outfilename("JSON Fundamenals.pptx");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- auto pptxOptions = MakeObject<PptxSaveOptions>();
- pptxOptions->set_SlidesAsImages(true);
+    auto pptxOptions = MakeObject<PptxSaveOptions>();
+    pptxOptions->set_SlidesAsImages(true);
 
- // Save the output in PPTX format
- document->Save(_dataDir + outfilename, pptxOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in PPTX format
+    document->Save(_dataDir + outfilename, pptxOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -77,25 +77,25 @@ Aspose.PDF for C++ lets you track the progress of PDF to PPTX conversion. The [A
 ```cpp
 void ConvertPDFtoPPTX_ProgressDetailConversion()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("JSON Fundamenals.pdf");
- String outfilename("JSON Fundamenals.pptx");
+    // String for file name
+    String infilename("JSON Fundamenals.pdf");
+    String outfilename("JSON Fundamenals.pptx");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- auto pptxOptions = MakeObject<PptxSaveOptions>();
- //pptxOptions->set_SlidesAsImages(true);
- //Specify Custom Progress Handler
- pptxOptions->set_CustomProgressHandler(ShowProgressOnConsole);
+    auto pptxOptions = MakeObject<PptxSaveOptions>();
+    //pptxOptions->set_SlidesAsImages(true);
+    //Specify Custom Progress Handler
+    pptxOptions->set_CustomProgressHandler(ShowProgressOnConsole);
 
- // Save the output in PPTX format
- document->Save(_dataDir + outfilename, pptxOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in PPTX format
+    document->Save(_dataDir + outfilename, pptxOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -104,23 +104,23 @@ Following is the custom method for displaying progress conversion.
 ```cpp
 void ShowProgressOnConsole(SharedPtr<UnifiedSaveOptions::ProgressEventHandlerInfo> eventInfo)
 {
- switch (eventInfo->EventType)
- {
- case ProgressEventType::TotalProgress:
-  std::clog << DateTime::get_Now().get_TimeOfDay() << " - Conversion progress : " << eventInfo->Value << std::endl;
-  break;
- case ProgressEventType::ResultPageCreated:
-  std::clog << DateTime::get_Now().get_TimeOfDay() << " - Result page's " << eventInfo->Value << " of " << eventInfo->MaxValue << " layout created." << std::endl;
-  break;
- case ProgressEventType::ResultPageSaved:
-  std::clog << DateTime::get_Now().get_TimeOfDay() << " - Result page's " << eventInfo->Value << " of " << eventInfo->MaxValue << " exported." << std::endl;
-  break;
- case ProgressEventType::SourcePageAnalysed:
-  std::clog << DateTime::get_Now().get_TimeOfDay() << " - Source page " << eventInfo->Value << " of " << eventInfo->MaxValue << " analyzed." << std::endl;
-  break;
- default:
-  break;
- }
+    switch (eventInfo->EventType)
+    {
+    case ProgressEventType::TotalProgress:
+    std::clog << DateTime::get_Now().get_TimeOfDay() << " - Conversion progress : " << eventInfo->Value << std::endl;
+    break;
+    case ProgressEventType::ResultPageCreated:
+    std::clog << DateTime::get_Now().get_TimeOfDay() << " - Result page's " << eventInfo->Value << " of " << eventInfo->MaxValue << " layout created." << std::endl;
+    break;
+    case ProgressEventType::ResultPageSaved:
+    std::clog << DateTime::get_Now().get_TimeOfDay() << " - Result page's " << eventInfo->Value << " of " << eventInfo->MaxValue << " exported." << std::endl;
+    break;
+    case ProgressEventType::SourcePageAnalysed:
+    std::clog << DateTime::get_Now().get_TimeOfDay() << " - Source page " << eventInfo->Value << " of " << eventInfo->MaxValue << " analyzed." << std::endl;
+    break;
+    default:
+    break;
+    }
 }
 ```
 

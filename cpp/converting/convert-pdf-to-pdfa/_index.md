@@ -27,27 +27,27 @@ The following code snippet shows how to convert PDF files to PDF/A-1b compliant 
 ```cpp
 void ConverttoPDFA_1b()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for log file name
- String logfilename("log.xml");
- // String for input file name
- String outfilename("PDFToPDFA_out.pdf");
+    // String for input file name
+    String infilename("sample.pdf");
+    // String for log file name
+    String logfilename("log.xml");
+    // String for input file name
+    String outfilename("PDFToPDFA_out.pdf");
 
- // Open document
- auto document = new Document(_dataDir + infilename);
+    // Open document
+    auto document = new Document(_dataDir + infilename);
 
- // Convert to PDF/A compliant document
- // During conversion process, the validation is also performed
- document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_1B, ConvertErrorAction::Delete);
+    // Convert to PDF/A compliant document
+    // During conversion process, the validation is also performed
+    document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_1B, ConvertErrorAction::Delete);
 
- // Save output document
- document->Save(_dataDir + outfilename);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save output document
+    document->Save(_dataDir + outfilename);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -56,22 +56,22 @@ To perform validation only, use the following line of code:
 ```cpp
 void ConverttoPDFA_1b_Validation()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for log file name
- String logfilename("log.xml");
+    // String for input file name
+    String infilename("sample.pdf");
+    // String for log file name
+    String logfilename("log.xml");
 
- // Open document
- auto document = new Document(_dataDir + infilename);
+    // Open document
+    auto document = new Document(_dataDir + infilename);
 
- // Convert to PDF/A compliant document
- // During conversion process, the validation is also performed
- document->Validate(_dataDir + logfilename, PdfFormat::PDF_A_1B);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Convert to PDF/A compliant document
+    // During conversion process, the validation is also performed
+    document->Validate(_dataDir + logfilename, PdfFormat::PDF_A_1B);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -82,27 +82,27 @@ Aspose.PDF for C++ also supports the feature to convert a PDF file to PDF/A-3b f
 ```cpp
 void ConverttoPDFA_3b()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for log file name
- String logfilename("log.xml");
- // String for input file name
- String outfilename("PDFToPDFA3b_out.pdf");
+    // String for input file name
+    String infilename("sample.pdf");
+    // String for log file name
+    String logfilename("log.xml");
+    // String for input file name
+    String outfilename("PDFToPDFA3b_out.pdf");
 
- // Open document
- auto document = new Document(_dataDir + infilename);
+    // Open document
+    auto document = new Document(_dataDir + infilename);
 
- // Convert to PDF/A compliant document
- // During conversion process, the validation is also performed
- document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_3B, ConvertErrorAction::Delete);
+    // Convert to PDF/A compliant document
+    // During conversion process, the validation is also performed
+    document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_3B, ConvertErrorAction::Delete);
 
- // Save output document
- document->Save(_dataDir + outfilename);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save output document
+    document->Save(_dataDir + outfilename);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -113,27 +113,27 @@ Aspose.PDF for C++ also supports the feature to convert a PDF file to PDF/A-2u f
 ```cpp
 void ConverttoPDFA_2u()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for log file name
- String logfilename("log.xml");
- // String for input file name
- String outfilename("PDFToPDFA3b_out.pdf");
+    // String for input file name
+     String infilename("sample.pdf");
+    // String for log file name
+    String logfilename("log.xml");
+    // String for input file name
+    String outfilename("PDFToPDFA3b_out.pdf");
 
- // Open document
- auto document = new Document(_dataDir + infilename);
+    // Open document
+    auto document = new Document(_dataDir + infilename);
 
- // Convert to PDF/A compliant document
- // During conversion process, the validation is also performed
- document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_2U, ConvertErrorAction::Delete);
+    // Convert to PDF/A compliant document
+    // During conversion process, the validation is also performed
+    document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_2U, ConvertErrorAction::Delete);
 
- // Save output document
- document->Save(_dataDir + outfilename);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save output document
+    document->Save(_dataDir + outfilename);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -144,27 +144,27 @@ Aspose.PDF for C++ also supports the feature to convert a PDF file to PDF/A-3u f
 ```cpp
 void ConverttoPDFA_3u()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for log file name
- String logfilename("log.xml");
- // String for input file name
- String outfilename("PDFToPDFA3b_out.pdf");
+    // String for input file name
+    String infilename("sample.pdf");
+    // String for log file name
+    String logfilename("log.xml");
+    // String for input file name
+    String outfilename("PDFToPDFA3b_out.pdf");
 
- // Open document
- auto document = new Document(_dataDir + infilename);
+    // Open document
+    auto document = new Document(_dataDir + infilename);
 
- // Convert to PDF/A compliant document
- // During conversion process, the validation is also performed
- document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_2U, ConvertErrorAction::Delete);
+    // Convert to PDF/A compliant document
+    // During conversion process, the validation is also performed
+    document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_2U, ConvertErrorAction::Delete);
 
- // Save output document
- document->Save(_dataDir + outfilename);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save output document
+    document->Save(_dataDir + outfilename);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -176,32 +176,32 @@ PDF/A_3a is the format that provides the feature to attach any file format as an
 ```cpp
 void ConverttoPDFA_AddAttachment()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for log file name
- String logfilename("log.xml");
- // String for input file name
- String outfilename("PDFToPDFA3b_out.pdf");
+    // String for input file name
+    String infilename("sample.pdf");
+    // String for log file name
+    String logfilename("log.xml");
+    // String for input file name
+    String outfilename("PDFToPDFA3b_out.pdf");
 
- // Open document
- auto document = new Document(_dataDir + infilename);
+    // Open document
+    auto document = new Document(_dataDir + infilename);
 
- // Setup new file to be added as attachment
- auto fileSpecification = MakeObject<FileSpecification>(_dataDir + String("aspose-logo.jpg"), String("Large Image file"));
- // Add attachment to document's attachment collection
- document->get_EmbeddedFiles()->Add(fileSpecification);
+    // Setup new file to be added as attachment
+    auto fileSpecification = MakeObject<FileSpecification>(_dataDir + String("aspose-logo.jpg"), String("Large Image file"));
+    // Add attachment to document's attachment collection
+    document->get_EmbeddedFiles()->Add(fileSpecification);
 
- // Convert to PDF/A compliant document
- // During conversion process, the validation is also performed
- document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_3A, ConvertErrorAction::Delete);
+    // Convert to PDF/A compliant document
+    // During conversion process, the validation is also performed
+    document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_3A, ConvertErrorAction::Delete);
 
- // Save output document
- document->Save(_dataDir + outfilename);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save output document
+    document->Save(_dataDir + outfilename);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -212,45 +212,45 @@ As per PDFA standards, fonts should be embedded in PDFA document. However, if th
 ```cpp
 void ConverttoPDFA_ReplaceFont()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+	std::clog << __func__ << ": Start" << std::endl;
+	// String for path name
+	String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for log file name
- String logfilename("log.xml");
- // String for input file name
- String outfilename("PDFToPDFA3b_out.pdf");
+	// String for input file name
+	String infilename("sample.pdf");
+	// String for log file name
+	String logfilename("log.xml");
+	// String for input file name
+	String outfilename("PDFToPDFA3b_out.pdf");
 
- // Open document
- auto document = new Document(_dataDir + infilename);
+	// Open document
+	auto document = new Document(_dataDir + infilename);
 
- System::SharedPtr<Aspose::Pdf::Text::Font> originalFont;
- try
- {
-  originalFont = FontRepository::FindFont(String("AgencyFB"));
- }
- catch (Exception)
- {
-  // Font is missing on destination machine
-  auto substitutions = FontRepository::get_Substitutions();
-  auto substitution = MakeObject<SimpleFontSubstitution>(String("AgencyFB"), String("Helvetica"));
-  substitutions->Add(substitution);
- }
+	System::SharedPtr<Aspose::Pdf::Text::Font> originalFont;
+	try
+	{
+		originalFont = FontRepository::FindFont(String("AgencyFB"));
+	}
+	catch (Exception)
+	{
+		// Font is missing on destination machine
+		auto substitutions = FontRepository::get_Substitutions();
+		auto substitution = MakeObject<SimpleFontSubstitution>(String("AgencyFB"), String("Helvetica"));
+		substitutions->Add(substitution);
+	}
 
- // Convert to PDF/A compliant document
- try {
-  // During conversion process, the validation is also performed
-  document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_1B, ConvertErrorAction::Delete);
+	// Convert to PDF/A compliant document
+	try {
+		// During conversion process, the validation is also performed
+		document->Convert(_dataDir + logfilename, PdfFormat::PDF_A_1B, ConvertErrorAction::Delete);
 
-  // Save output document
-  document->Save(_dataDir + outfilename);
- }
- catch (Exception ex) {
-  std::cerr << ex->get_Message();
- }
- std::clog << __func__ << ": Finish" << std::endl;
+		// Save output document
+		document->Save(_dataDir + outfilename);
+	}
+	catch (Exception ex) {
+		std::cerr << ex->get_Message();
+	}
+	std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 

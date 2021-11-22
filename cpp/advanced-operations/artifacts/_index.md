@@ -18,7 +18,6 @@ sitemap:
 According to the PDF / UA ISO reference, content that is not important or does not appear in the background does not carry relevant information, should be flagged as an artifact so that assistive technologies can ignore it.
 If artifacts cannot be identified in the program to create, this must be done manually using Aspose.PDF for C++.
 
-
 The [Artifact](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.artifact) class contains following properties:
 
 - **Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).

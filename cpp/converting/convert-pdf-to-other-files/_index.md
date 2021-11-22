@@ -30,21 +30,21 @@ Please try using the following code snippet to accomplish this requirement with 
 ```cpp
 void ConvertPDFtoEPUB()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for output file name
- String outfilename("PDFToEPUB_out.epub");
+    // String for input file name
+    String infilename("sample.pdf");
+    // String for output file name
+    String outfilename("PDFToEPUB_out.epub");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Save PDF file into EPUB format
- document->Save(_dataDir + outfilename, SaveFormat::Epub);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save PDF file into EPUB format
+    document->Save(_dataDir + outfilename, SaveFormat::Epub);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -60,27 +60,27 @@ The following code snippet shows the process of converting PDF files into the TE
 ```cpp
 void ConvertPDFtoLaTeX()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for output file name
- String outfilename("PDFToTeX_out.tex");
+    // String for input file name
+    String infilename("sample.pdf");
+    // String for output file name
+    String outfilename("PDFToTeX_out.tex");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate LaTex save option
- auto saveOptions = MakeObject<LaTeXSaveOptions>();
+    // Instantiate LaTex save option
+    auto saveOptions = MakeObject<LaTeXSaveOptions>();
 
- // Set the output directory path for save option object
- saveOptions->set_OutDirectoryPath(_dataDir);
+    // Set the output directory path for save option object
+    saveOptions->set_OutDirectoryPath(_dataDir);
 
- // Save PDF file into LaTex format
- document->Save(_dataDir + outfilename, saveOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save PDF file into LaTex format
+    document->Save(_dataDir + outfilename, saveOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -105,23 +105,23 @@ The following code snippet explains how to extract the texts from the all pages.
 ```cpp
 void ConvertPDFDocToTXT()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for output file name
- String outfilename("input_Text_Extracted_out.txt");
+    // String for input file name
+    String infilename("sample.pdf");
+    // String for output file name
+    String outfilename("input_Text_Extracted_out.txt");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- auto ta = MakeObject<TextAbsorber>();
- ta->Visit(document);
- // Save the extracted text in text file
- System::IO::File::WriteAllText(_dataDir + outfilename, ta->get_Text());
- std::clog << __func__ << ": Finish" << std::endl;
+    auto ta = MakeObject<TextAbsorber>();
+    ta->Visit(document);
+    // Save the extracted text in text file
+    System::IO::File::WriteAllText(_dataDir + outfilename, ta->get_Text());
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -134,34 +134,34 @@ The following code snippet explains how to extract the texts from the particular
 ```cpp
 void ConvertPDFPagestoTXT()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample-4pages.pdf");
- // String for output file name
- String outfilename("sample-4pages_out.txt");
+    // String for input file name
+    String infilename("sample-4pages.pdf");
+    // String for output file name
+    String outfilename("sample-4pages_out.txt");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- auto ta = MakeObject<TextAbsorber>();
+    auto ta = MakeObject<TextAbsorber>();
 
- auto pages = { 1, 3, 4 };
- try {
-  for (auto page : pages)
-  {
-   ta->Visit(document->get_Pages()->idx_get(page));
-  }
-  // Save the extracted text in text file
-  auto text = ta->get_Text();
-  System::IO::File::WriteAllText(_dataDir + outfilename, text);
- }
- catch (Exception ex) {
-  std::cerr << ex->get_Message() << std::endl;
- }
- std::clog << __func__ << ": Finish" << std::endl;
+    auto pages = { 1, 3, 4 };
+    try {
+    for (auto page : pages)
+    {
+    ta->Visit(document->get_Pages()->idx_get(page));
+    }
+    // Save the extracted text in text file
+    auto text = ta->get_Text();
+    System::IO::File::WriteAllText(_dataDir + outfilename, text);
+    }
+    catch (Exception ex) {
+    std::cerr << ex->get_Message() << std::endl;
+    }
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -186,24 +186,24 @@ The following code snippet shows the process of converting PDF file into XPS for
 ```cpp
 void ConvertPDFtoXPS()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for input file name
- String infilename("sample.pdf");
- // String for output file name
- String outfilename("PDFToXPS_out.xps");
+    // String for input file name
+    String infilename("sample.pdf");
+    // String for output file name
+    String outfilename("PDFToXPS_out.xps");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate LaTex save option
- auto saveOptions = MakeObject<XpsSaveOptions>();
+    // Instantiate LaTex save option
+    auto saveOptions = MakeObject<XpsSaveOptions>();
 
- // Save PDF file into XPS format
- document->Save(_dataDir + outfilename, saveOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save PDF file into XPS format
+    document->Save(_dataDir + outfilename, saveOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 

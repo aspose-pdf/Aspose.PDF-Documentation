@@ -44,35 +44,35 @@ The following code snippet shows how to convert all the PDF pages to a single TI
 ```cpp
 void Convert_PDF_To_Images::ConvertPDFtoTIFF()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("PageToTiff.pdf");
- String outfilename("PagesToTIFF_out.tif");
+    // String for file name
+    String infilename("PageToTiff.pdf");
+    String outfilename("PagesToTIFF_out.tif");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- auto imageStream = System::IO::File::OpenWrite(_dataDir + outfilename);
+    auto imageStream = System::IO::File::OpenWrite(_dataDir + outfilename);
 
- // Create Resolution object
- auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300);
+    // Create Resolution object
+    auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300);
 
- // Create TiffSettings object
- auto tiffSettings = MakeObject<Aspose::Pdf::Devices::TiffSettings>();
- tiffSettings->set_Compression(Aspose::Pdf::Devices::CompressionType::None);
- tiffSettings->set_Depth(Aspose::Pdf::Devices::ColorDepth::Default);
- tiffSettings->set_Shape(Aspose::Pdf::Devices::ShapeType::Landscape);
- tiffSettings->set_SkipBlankPages(false);
+    // Create TiffSettings object
+    auto tiffSettings = MakeObject<Aspose::Pdf::Devices::TiffSettings>();
+    tiffSettings->set_Compression(Aspose::Pdf::Devices::CompressionType::None);
+    tiffSettings->set_Depth(Aspose::Pdf::Devices::ColorDepth::Default);
+    tiffSettings->set_Shape(Aspose::Pdf::Devices::ShapeType::Landscape);
+    tiffSettings->set_SkipBlankPages(false);
 
- // Create TIFF device
- auto tiffDevice = MakeObject<Aspose::Pdf::Devices::TiffDevice>(resolution, tiffSettings);
+    // Create TIFF device
+    auto tiffDevice = MakeObject<Aspose::Pdf::Devices::TiffDevice>(resolution, tiffSettings);
 
- // Convert pages and save the image to stream
- tiffDevice->Process(document, 1, 2, imageStream);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Convert pages and save the image to stream
+    tiffDevice->Process(document, 1, 2, imageStream);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -83,28 +83,28 @@ Aspose.PDF for C++ allows you to convert a particular page in a PDF file to a TI
 ```cpp
 void Convert_PDF_To_Images::ConvertPDFtoTiffSinglePage()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("PageToTiff.pdf");
- String outfilename("PageToTiff_out.tif");
+    // String for file name
+    String infilename("PageToTiff.pdf");
+    String outfilename("PageToTiff_out.tif");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- auto imageStream = System::IO::File::OpenWrite(_dataDir + outfilename);
+    auto imageStream = System::IO::File::OpenWrite(_dataDir + outfilename);
 
- // Create Resolution object
- auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300);
+    // Create Resolution object
+    auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300);
 
- // Create TIFF device
- auto tiffDevice = MakeObject<Aspose::Pdf::Devices::TiffDevice>(resolution);
+    // Create TIFF device
+    auto tiffDevice = MakeObject<Aspose::Pdf::Devices::TiffDevice>(resolution);
 
- // Convert a particular page and save the image to stream
- tiffDevice->Process(document, 1, 1, imageStream);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Convert a particular page and save the image to stream
+    tiffDevice->Process(document, 1, 1, imageStream);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -115,36 +115,36 @@ Aspose.PDF for C++ has been supporting the feature to convert PDF to TIF using L
 ```cpp
 void Convert_PDF_To_Images::ConvertPDFtoTiffBradleyBinarization()
 {
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // Open document
- auto pdfDocument = MakeObject<Document>(_dataDir + u"PageToTIFF.pdf");
+    // Open document
+    auto pdfDocument = MakeObject<Document>(_dataDir + u"PageToTIFF.pdf");
 
- String outputImageFile = _dataDir + u"resultant_out.tif";
- String outputBinImageFile = _dataDir + u"37116-bin_out.tif";
+    String outputImageFile = _dataDir + u"resultant_out.tif";
+    String outputBinImageFile = _dataDir + u"37116-bin_out.tif";
 
- // Create Resolution object 
- auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300);
+    // Create Resolution object 
+    auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300);
 
- // Create TiffSettings object
- auto tiffSettings = MakeObject<Aspose::Pdf::Devices::TiffSettings>();
- tiffSettings->set_Compression(Aspose::Pdf::Devices::CompressionType::LZW);
- tiffSettings->set_Depth(Aspose::Pdf::Devices::ColorDepth::Format1bpp);
+    // Create TiffSettings object
+    auto tiffSettings = MakeObject<Aspose::Pdf::Devices::TiffSettings>();
+    tiffSettings->set_Compression(Aspose::Pdf::Devices::CompressionType::LZW);
+    tiffSettings->set_Depth(Aspose::Pdf::Devices::ColorDepth::Format1bpp);
 
- // Create TIFF device
- auto tiffDevice = MakeObject<Aspose::Pdf::Devices::TiffDevice>(resolution, tiffSettings);
- auto imageStream = System::IO::File::OpenWrite(_dataDir + outputImageFile);
+    // Create TIFF device
+    auto tiffDevice = MakeObject<Aspose::Pdf::Devices::TiffDevice>(resolution, tiffSettings);
+    auto imageStream = System::IO::File::OpenWrite(_dataDir + outputImageFile);
 
- // Convert a particular page and save the image to stream
- tiffDevice->Process(pdfDocument, 1, 2, imageStream);
+    // Convert a particular page and save the image to stream
+    tiffDevice->Process(pdfDocument, 1, 2, imageStream);
 
- imageStream->Close();
+    imageStream->Close();
 
- auto inStream = System::IO::File::OpenRead(outputImageFile);
- auto outStream = System::IO::File::OpenWrite(outputBinImageFile);
+    auto inStream = System::IO::File::OpenRead(outputImageFile);
+    auto outStream = System::IO::File::OpenWrite(outputBinImageFile);
 
- tiffDevice->BinarizeBradley(inStream, outStream, 0.1);
+    tiffDevice->BinarizeBradley(inStream, outStream, 0.1);
 }
 ```
 
@@ -167,34 +167,34 @@ The following code snippet shows this possibility:
 ```cpp
 void Convert_PDF_To_Images::ConvertPDFusingImageDevice()
 {
- std::clog << __func__ << ": Start" << std::endl;
+    std::clog << __func__ << ": Start" << std::endl;
 
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // Create Resolution object            
- auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300); //300 dpi
+    // Create Resolution object            
+    auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300); //300 dpi
 
- System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
-  bmpDevice = MakeObject<Aspose::Pdf::Devices::BmpDevice>(resolution);
- System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
-  jpegDevice = MakeObject<Aspose::Pdf::Devices::JpegDevice>(resolution);
- System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
-  gifDevice = MakeObject<Aspose::Pdf::Devices::GifDevice>(resolution);
- System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
-  pngDevice = MakeObject<Aspose::Pdf::Devices::PngDevice>(resolution);
- System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
-  emfDevice = MakeObject<Aspose::Pdf::Devices::EmfDevice>(resolution);
+    System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
+    bmpDevice = MakeObject<Aspose::Pdf::Devices::BmpDevice>(resolution);
+    System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
+    jpegDevice = MakeObject<Aspose::Pdf::Devices::JpegDevice>(resolution);
+    System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
+    gifDevice = MakeObject<Aspose::Pdf::Devices::GifDevice>(resolution);
+    System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
+    pngDevice = MakeObject<Aspose::Pdf::Devices::PngDevice>(resolution);
+    System::SmartPtr<Aspose::Pdf::Devices::ImageDevice>
+    emfDevice = MakeObject<Aspose::Pdf::Devices::EmfDevice>(resolution);
 
- auto document = MakeObject<Document>(_dataDir + u"ConvertAllPagesToBmp.pdf");
+    auto document = MakeObject<Document>(_dataDir + u"ConvertAllPagesToBmp.pdf");
 
- ConvertPDFtoImage(bmpDevice, u"bmp", document);
- ConvertPDFtoImage(jpegDevice, u"jpeg", document);
- ConvertPDFtoImage(gifDevice, u"gif", document);
- ConvertPDFtoImage(pngDevice, u"png", document);
- ConvertPDFtoImage(emfDevice, u"emf", document);
+    ConvertPDFtoImage(bmpDevice, u"bmp", document);
+    ConvertPDFtoImage(jpegDevice, u"jpeg", document);
+    ConvertPDFtoImage(gifDevice, u"gif", document);
+    ConvertPDFtoImage(pngDevice, u"png", document);
+    ConvertPDFtoImage(emfDevice, u"emf", document);
 
- std::clog << __func__ << ": Finish" << std::endl;
+    std::clog << __func__ << ": Finish" << std::endl;
 
 }
 
@@ -202,25 +202,25 @@ void Convert_PDF_To_Images::ConvertPDFtoImage(
  System::SmartPtr<Aspose::Pdf::Devices::ImageDevice> imageDevice,
  String ext, System::SmartPtr<Document> document)
 {
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- for (int pageCount = 1; pageCount <= document->get_Pages()->get_Count(); pageCount++)
- {
-  String outfilename = String::Format(u"{0}PageToBmp{1}_out.{2}",
-   _dataDir, pageCount, ext);
+    for (int pageCount = 1; pageCount <= document->get_Pages()->get_Count(); pageCount++)
+    {
+    String outfilename = String::Format(u"{0}PageToBmp{1}_out.{2}",
+    _dataDir, pageCount, ext);
 
-  auto imageStream = System::IO::File::OpenWrite(outfilename);
+    auto imageStream = System::IO::File::OpenWrite(outfilename);
 
-  // Create Resolution object
-  auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300);
+    // Create Resolution object
+    auto resolution = MakeObject<Aspose::Pdf::Devices::Resolution>(300);
 
-  // Convert a particular page and save the image to stream
-  imageDevice->Process(document->get_Pages()->idx_get(pageCount), imageStream);
+    // Convert a particular page and save the image to stream
+    imageDevice->Process(document->get_Pages()->idx_get(pageCount), imageStream);
 
-  // Close stream
-  imageStream->Close();
- }
+    // Close stream
+    imageStream->Close();
+    }
 }
 ```
 
@@ -261,30 +261,30 @@ The following code snippet shows the steps for converting a PDF file to SVG form
 ```cpp
 void Convert_PDF_To_Images::ConvertPDFtoSvgSinglePage()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("PageToSvg.pdf");
- String outfilename("PageToSvg_out.svg");
+    // String for file name
+    String infilename("PageToSvg.pdf");
+    String outfilename("PageToSvg_out.svg");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate an object of SvgSaveOptions
- auto saveOptions = MakeObject<SvgSaveOptions>();
- // Do not compress SVG image to Zip archive
- saveOptions->CompressOutputToZipArchive = false;
+    // Instantiate an object of SvgSaveOptions
+    auto saveOptions = MakeObject<SvgSaveOptions>();
+    // Do not compress SVG image to Zip archive
+    saveOptions->CompressOutputToZipArchive = false;
 
- try {
-  // Save the output in SVG files
-  document->Save(_dataDir + outfilename, saveOptions);
- }
- catch (Exception ex) {
-  std::cerr << ex->get_Message();
- }
+    try {
+    // Save the output in SVG files
+    document->Save(_dataDir + outfilename, saveOptions);
+    }
+    catch (Exception ex) {
+    std::cerr << ex->get_Message();
+    }
 
- std::clog << __func__ << ": Finish" << std::endl;
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```

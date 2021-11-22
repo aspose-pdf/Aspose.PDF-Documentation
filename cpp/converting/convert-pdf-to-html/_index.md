@@ -29,25 +29,25 @@ Aspose.PDF for C++ provides a two-line code for transforming a source PDF file t
 ```cpp
 void ConvertPDFtoHTML()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("PDFToHTML.html");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToHTML.html");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- try {
-  // Save the output in HTML format
-  document->Save(outfilename, SaveFormat::Html);
- }
- catch (Exception ex) {
-  std::cerr << ex->get_Message() << std::endl;
- }
- std::clog << __func__ << ": Finish" << std::endl;
+    try {
+    // Save the output in HTML format
+    document->Save(outfilename, SaveFormat::Html);
+    }
+    catch (Exception ex) {
+    std::cerr << ex->get_Message() << std::endl;
+    }
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -66,30 +66,30 @@ When converting large PDF file with several pages to HTML format, the output app
 ```cpp
 void ConvertPDFtoHTML_SplittingOutputToMultiPageHTML()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("PDFToHTML.html");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToHTML.html");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate HTML Save Option object
- auto htmlOptions = MakeObject<HtmlSaveOptions>();
- // Specify to split the output into multiple pages
- htmlOptions->set_SplitIntoPages(true);
+    // Instantiate HTML Save Option object
+    auto htmlOptions = MakeObject<HtmlSaveOptions>();
+    // Specify to split the output into multiple pages
+    htmlOptions->set_SplitIntoPages(true);
 
- try {
-  // Save the output in HTML format
-  document->Save(_dataDir + outfilename, htmlOptions);
- }
- catch (Exception ex) {
-  std::cerr << ex->get_Message() << std::endl;
- }
- std::clog << __func__ << ": Finish" << std::endl;
+    try {
+    // Save the output in HTML format
+    document->Save(_dataDir + outfilename, htmlOptions);
+    }
+    catch (Exception ex) {
+    std::cerr << ex->get_Message() << std::endl;
+    }
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -100,26 +100,26 @@ During PDF to HTML conversion, it is possible to specify the folder that SVG ima
 ```cpp
 void ConvertPDFtoHTML_SpecifyFolderForStoringSVGfiles()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("SaveSVGFiles_out.html");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("SaveSVGFiles_out.html");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate HTML Save Option object
- auto htmlOptions = MakeObject<HtmlSaveOptions>();
+    // Instantiate HTML Save Option object
+    auto htmlOptions = MakeObject<HtmlSaveOptions>();
 
- // Specify the folder where SVG images are saved during PDF to HTML conversion
- htmlOptions->SpecialFolderForSvgImages = (_dataDir + String("\\svg\\"));
+    // Specify the folder where SVG images are saved during PDF to HTML conversion
+    htmlOptions->SpecialFolderForSvgImages = (_dataDir + String("\\svg\\"));
 
- // Save the output in HTML format
- document->Save(_dataDir + outfilename, htmlOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in HTML format
+    document->Save(_dataDir + outfilename, htmlOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -130,26 +130,26 @@ To compress SVG images during PDF to HTML conversion, please try using the follo
 ```cpp
 void ConvertPDFtoHTML_CompressingSVGimages()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("PDFToHTML.html");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToHTML.html");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate HTML Save Option object
- auto htmlOptions = MakeObject<HtmlSaveOptions>();
+    // Instantiate HTML Save Option object
+    auto htmlOptions = MakeObject<HtmlSaveOptions>();
 
- // Specify the folder where SVG images are saved during PDF to HTML conversion
- htmlOptions->SpecialFolderForSvgImages = (_dataDir + String("\\svg\\"));
+    // Specify the folder where SVG images are saved during PDF to HTML conversion
+    htmlOptions->SpecialFolderForSvgImages = (_dataDir + String("\\svg\\"));
 
- // Save the output in HTML format
- document->Save(_dataDir + outfilename, htmlOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in HTML format
+    document->Save(_dataDir + outfilename, htmlOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -160,26 +160,26 @@ We can also specify the folder that images will be saved to during PDF to HTML c
 ```cpp
 void ConvertPDFtoHTML_SpecifyFolderForStoringAllImages()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("PDFToHTML.html");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToHTML.html");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate HTML Save Option object
- auto htmlOptions = MakeObject<HtmlSaveOptions>();
+    // Instantiate HTML Save Option object
+    auto htmlOptions = MakeObject<HtmlSaveOptions>();
 
- // Specify the folder where All images are saved during PDF to HTML conversion
- htmlOptions->SpecialFolderForAllImages = (_dataDir + String("\\images\\"));
+    // Specify the folder where All images are saved during PDF to HTML conversion
+    htmlOptions->SpecialFolderForAllImages = (_dataDir + String("\\images\\"));
 
- // Save the output in HTML format
- document->Save(_dataDir + outfilename, htmlOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in HTML format
+    document->Save(_dataDir + outfilename, htmlOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -194,26 +194,26 @@ With the following simple code snippet, you can split the output HTML into pages
 ```cpp
 void ConvertPDFtoHTML_CreateSubsequentFilesWithBodyContentsOnly()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("CreateSubsequentFiles_out.html");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("CreateSubsequentFiles_out.html");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate HTML Save Option object
- auto htmlOptions = MakeObject<HtmlSaveOptions>();
+    // Instantiate HTML Save Option object
+    auto htmlOptions = MakeObject<HtmlSaveOptions>();
 
- htmlOptions->HtmlMarkupGenerationMode = HtmlSaveOptions::HtmlMarkupGenerationModes::WriteOnlyBodyContent;
- htmlOptions->set_SplitIntoPages(true);
+    htmlOptions->HtmlMarkupGenerationMode = HtmlSaveOptions::HtmlMarkupGenerationModes::WriteOnlyBodyContent;
+    htmlOptions->set_SplitIntoPages(true);
 
- // Save the output in HTML format
- document->Save(_dataDir + outfilename, htmlOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in HTML format
+    document->Save(_dataDir + outfilename, htmlOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -224,27 +224,27 @@ In case the source/input PDF file contains transparent texts shadowed by foregro
 ```cpp
 void ConvertPDFtoHTML_TransparentTextRendering()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("TransparentTextRendering_out.html");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("TransparentTextRendering_out.html");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate HTML Save Option object
- auto htmlOptions = MakeObject<HtmlSaveOptions>();
+    // Instantiate HTML Save Option object
+    auto htmlOptions = MakeObject<HtmlSaveOptions>();
 
- htmlOptions->HtmlMarkupGenerationMode = HtmlSaveOptions::HtmlMarkupGenerationModes::WriteOnlyBodyContent;
- htmlOptions->SaveShadowedTextsAsTransparentTexts = true;
- htmlOptions->SaveTransparentTexts = true;
+    htmlOptions->HtmlMarkupGenerationMode = HtmlSaveOptions::HtmlMarkupGenerationModes::WriteOnlyBodyContent;
+    htmlOptions->SaveShadowedTextsAsTransparentTexts = true;
+    htmlOptions->SaveTransparentTexts = true;
 
- // Save the output in HTML format
- document->Save(_dataDir + outfilename, htmlOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in HTML format
+    document->Save(_dataDir + outfilename, htmlOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -255,25 +255,25 @@ We can render PDF document layers in separate layer type element during PDF to H
 ```cpp
 void ConvertPDFtoHTML_DocumentLayersRendering()
 {
- std::clog << __func__ << ": Start" << std::endl;
- // String for path name
- String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
- // String for file name
- String infilename("sample.pdf");
- String outfilename("LayersRendering_out.html");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("LayersRendering_out.html");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Instantiate HTML Save Option object
- auto htmlOptions = MakeObject<HtmlSaveOptions>();
+    // Instantiate HTML Save Option object
+    auto htmlOptions = MakeObject<HtmlSaveOptions>();
 
- // Specify to render PDF document layers separately in output HTML
- htmlOptions->set_ConvertMarkedContentToLayers(true);
+    // Specify to render PDF document layers separately in output HTML
+    htmlOptions->set_ConvertMarkedContentToLayers(true);
 
- // Save the output in HTML format
- document->Save(_dataDir + outfilename, htmlOptions);
- std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in HTML format
+    document->Save(_dataDir + outfilename, htmlOptions);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
