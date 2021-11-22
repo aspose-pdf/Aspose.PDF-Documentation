@@ -1,22 +1,24 @@
 ---
-title: Convert PDF to HTML 
-linktitle: Convert PDF to HTML
+title: Convert PDF file to HTML format using Java
+linktitle: Convert PDF file to HTML format
 type: docs
-weight: 100
+weight: 50
 url: /java/convert-pdf-to-html/
-lastmod: "2021-06-05"
-description: This article describes how to convert a PDF file into HTML. Aspose.PDF for Java provides the capability to convert HTML files into PDF format.
+lastmod: "2021-11-19"
+description: This topic show you how to Aspose.PDF allows to convert PDF file to HTML format with Java library.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.8
 ---
 
 Aspose.PDF for Java provides many features for converting various file formats to PDF documents and converting PDF files into various output formats. This article discusses how to convert a PDF file into HTML format and save the images from the PDF file in a particular folder.
 
-{{% alert color="primary" %}}
+{{% alert color="success" %}}
+**Try to convert PDF to HTML online**
 
-Try online: You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-html](https://products.aspose.app/pdf/conversion/pdf-to-html)
+Aspose.PDF for Java presents you online free application ["PDF to HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), where you may try to investigate the functionality and quality it works.
 
+[![Aspose.PDF Convertion PDF to HTML with Free App](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
 When converting large PDF file with several pages to HTML format, the output appears as a single HTML page. It can end up being very long. To control page size, it is possible to split the output into several pages during PDF to HTML conversion.
@@ -63,6 +65,7 @@ public final class ConvertPDFtoHTML {
         // Save the file into MS document format
         pdfDocument.save(_dataDir + "output_out.html", SaveFormat.Html);
     }
+}
 ```
 
 ## Convert PDF to HTML - Splitting Output to Multi-page HTML
@@ -200,7 +203,6 @@ We can render PDF document layers in separate layer type element during PDF to H
         // Save the document
         doc.save(_dataDir + "LayersRendering_out.html", htmlOptions);
     }
-}
 ```
 
 PDF to HTML conversion is one of Aspose.PDF's most popular features because it makes it possible to view the content of PDF files on various platforms without using a PDF document viewer. The output HTML accords with to WWW standards and can easily be displayed in all web browsers. Using this feature, the PDF files can be viewed over hand held devices because you do not need to install any PDF viewing application but can use a simple web browser.
