@@ -2,7 +2,7 @@
 title: Get Started
 linktitle: Get Started
 type: docs
-weight: 10
+weight: 15
 url: /cpp/get-started/
 description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document using C++.
 is_node: true

@@ -1,25 +1,19 @@
 ---
-title: Convert PDF to Excel 
+title: Convert PDF to Excel using C++
 linktitle: Convert PDF to Excel
 type: docs
-weight: 90
+weight: 20
 url: /cpp/convert-pdf-to-excel/
-lastmod: "2021-06-05"
+lastmod: "2021-11-19"
 description: Aspose.PDF for C++ allows you to convert PDF to Excel format using C++. During this, the individual pages of the PDF file are converted to Excel worksheets.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
-**Aspose.PDF for .C++** support the feature of converting PDF files to Excel formats.
+**Aspose.PDF for C++** support the feature of converting PDF files to Excel formats.
 
 Aspose.PDF for C++ is a PDF manipulation component, we have introduced a feature that renders PDF file to Excel workbook (XLS files). During this conversion, the individual pages of the PDF file are converted to Excel worksheets.
-
-## Live Example
-
-Aspose.PDF for C++ presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
-
-[![PDF to Excel converter](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 
 In order to convert PDF files to <abbr title="Microsoft Excel Spreadsheet">XLS</abbr> format, Aspose.PDF has a class called ExcelSaveOptions. An object of the ExcelSaveOptions class is passed as a second argument to the Document.Save(..) constructor.
 
@@ -139,3 +133,12 @@ void ConvertPDFtoExcel_Advanced_SaveXLSX()
  std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
+
+{{% alert color="success" %}}
+**Try to convert PDF to Excel online**
+
+Aspose.PDF for C++ presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+{{% /alert %}}
+

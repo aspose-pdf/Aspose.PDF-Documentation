@@ -1,14 +1,14 @@
 ---
-title: Convert PDF to HTML 
-linktitle: Convert PDF to HTML
+title: Convert PDF file to HTML format using C++
+linktitle: Convert PDF file to HTML format
 type: docs
-weight: 100
+weight: 50
 url: /cpp/convert-pdf-to-html/
-lastmod: "2021-06-05"
-description: This article describes how to convert a PDF file into HTML. Aspose.PDF for C++ provides the capability to convert HTML files into PDF format.
+lastmod: "2021-11-19"
+description: This topic show you how to Aspose.PDF allows to convert PDF file to HTML format with C++ library.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.8
 ---
 
 **Aspose.PDF for C++** provides many features for converting various file formats into PDF documents and converting PDF files into various output formats. This article discusses how to convert a PDF file into <abbr title="HyperText Markup Language">HTML</abbr>. Aspose.PDF for C++ provides the capability to convert HTML files into PDF format using the InLineHtml approach. We have had many requests for functionality that converts a PDF file into HTML format and have provided this feature. Please note that this feature also supports XHTML 1.0.
@@ -23,12 +23,6 @@ sitemap:
 - create Subsequent Files with Body Contents Only;
 - transparent Text rendering;
 - PDF document layers rendering.
-
-## Live Example
-
-Aspose.PDF for C++ presents you online free application ["PDF to HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), where you may try to investigate the functionality and quality it works.
-
-[![PDF to HTML](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 
 Aspose.PDF for C++ provides a two-line code for transforming a source PDF file to HTML. The `SaveFormat enumeration` contains the value Html which lets you save the source file to HTML. The following code snippet shows the process of converting a PDF file into HTML.
 
@@ -56,6 +50,14 @@ void ConvertPDFtoHTML()
  std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
+
+{{% alert color="success" %}}
+**Try to convert PDF to HTML online**
+
+Aspose.PDF for C++ presents you online free application ["PDF to HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to HTML with Free App](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
+{{% /alert %}}
 
 ## Splitting Output to Multi-page HTML
 

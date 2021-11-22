@@ -1,13 +1,13 @@
 ---
-title: Convert PDF to PPTX 
+title: Convert PDF to Microsoft PowerPoint using C++
 linktitle: Convert PDF to PowerPoint
 type: docs
-weight: 110
+weight: 30
 url: /cpp/convert-pdf-to-powerpoint/
 description: Aspose.PDF allows you to convert PDF to PowerPoint format using C++. One way there is a possibility to convert PDF to PPTX with Slides as Images.
-lastmod: "2021-06-05"
+lastmod: "2021-11-19"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -15,7 +15,7 @@ sitemap:
 
 During PDF to <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr> conversion, the text is rendered as Text where you can select/update it. Please note that in order to convert PDF files to PPTX format, Aspose.PDF provides a class named [`PptxSaveOptions`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options). An object of the PptxSaveOptions class is passed as a second argument to the [`Document.Save(..) method`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method. The following code snippet shows the process for converting PDF files into PPTX format.
 
-## Simple conversion PDF to PPTX using C# and Aspose.PDF C++
+## Simple conversion PDF to PPTX with Aspose.PDF for C++
 
 In order to convert PDF to PPTX, Aspose.PDF for C++ advice to use the following code steps.
 
@@ -44,12 +44,6 @@ void ConvertPDFtoPPTX()
 ```
 
 ## Convert PDF to PPTX with Slides as Images
-
-## Live Example
-
-Aspose.PDF for C++ presents you online free application ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), where you may try to investigate the functionality and quality it works.
-
-[![PDF to PPTX](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 
 In case if you need to convert a searchable PDF to PPTX as images instead of selectable text, Aspose.PDF provides such a feature via [Aspose.Pdf.PptxSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class. To achieve this, set property [SlidesAsImages](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options#aeca0659ae24ea7cdeb171d941440dcb2) of [PptxSaveOptios](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class to 'true' as shown in the following code sample.
 
@@ -129,3 +123,12 @@ void ShowProgressOnConsole(SharedPtr<UnifiedSaveOptions::ProgressEventHandlerInf
  }
 }
 ```
+
+{{% alert color="success" %}}
+**Try to convert PDF to PowerPoint online**
+
+Aspose.PDF for C++ presents you online free application ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to PPTX with Free App](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
+{{% /alert %}}
+
