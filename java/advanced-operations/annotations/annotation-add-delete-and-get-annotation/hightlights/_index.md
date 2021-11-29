@@ -1,11 +1,11 @@
 ---
-title: PDF Text Markup Annotation 
-linktitle: Add Text Markup Annotation
+title: PDF Hightlights Annotation using Java
+linktitle: Hightlights Annotation
 type: docs
-weight: 70
-url: /java/text-markup-annotation/
-description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document. 
-lastmod: "2021-06-05"
+weight: 20
+url: /java/hightlights-annotation/
+description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
+lastmod: "2021-11-24"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -82,6 +82,7 @@ public class ExampleTextMarkupAnnotation {
             System.out.println(ex.getMessage());
         }
     }
+}
 ```
 
 If you want to highlight a multi-line fragment you should use advanced example:
@@ -167,7 +168,7 @@ If you want to highlight a multi-line fragment you should use advanced example:
     }    
 ```
 
-## Get Text Markup Annotation 
+## Get Text Markup Annotation
 
 Please try using the following code snippet to Get Text Markup Annotation from PDF document.
 
