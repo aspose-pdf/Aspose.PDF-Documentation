@@ -200,7 +200,7 @@ static void CreateXfdf(ref StringBuilder pXfdf)
 }
 ```
 
-### Invisible Annotation
+### Make Free Text Annotation Invisible
 
 Sometimes, it is necessary to create a watermark that isn’t visible in the document when viewing it but should be visible when the document is printed. Use annotation flags for this purpose. The following code snippet shows how.
 
