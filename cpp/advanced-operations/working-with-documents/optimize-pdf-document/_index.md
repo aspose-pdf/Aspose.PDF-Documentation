@@ -39,23 +39,23 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 //Optimize PDF Document for the Web
 void OptimizeForWeb() {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String outfilename("OptimizeDocument_out.pdf");
+    // String for input file name
+    String outfilename("OptimizeDocument_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>();
+    // Open document
+    auto document = MakeObject<Document>();
 
- // Make some operations (add pages, images, etc) 
- // ...
+    // Make some operations (add pages, images, etc) 
+    // ...
 
- // Optimize for web
- document->Optimize();
+    // Optimize for web
+    document->Optimize();
 
- // Save output document
- document->Save(_dataDir + outfilename);
+    // Save output document
+    document->Save(_dataDir + outfilename);
 }
 ```
 
@@ -72,22 +72,22 @@ The snippet below is an example. Note, though, that this method cannot guarantee
 ```cpp
 void ReduceSizePDF() {
 
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String outfilename("ShrinkDocument_out.pdf");
+    // String for input file name
+    String outfilename("ShrinkDocument_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>();
- // Make some operations (add pages, images, etc) 
- // ...
+    // Open document
+    auto document = MakeObject<Document>();
+    // Make some operations (add pages, images, etc) 
+    // ...
 
- // Optimize PDF document. Note, though, that this method cannot guarantee document shrinking 
- document->OptimizeResources();
+    // Optimize PDF document. Note, though, that this method cannot guarantee document shrinking 
+    document->OptimizeResources();
 
- // Save output document
- document->Save(_dataDir + outfilename);
+    // Save output document
+    document->Save(_dataDir + outfilename);
 }
 ```
 
@@ -102,28 +102,28 @@ To solve the problem with image optimization, we have the following options: red
 
 ```cpp
 void CompressImage() {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("ShrinkDocument.pdf");
- String outfilename("ShrinkDocument_out.pdf");
+    // String for input file name
+    String infilename("ShrinkDocument.pdf");
+    String outfilename("ShrinkDocument_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Initialize OptimizationOptions
- auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
+    // Initialize OptimizationOptions
+    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
- // Set CompressImages option
- optimizationOptions->get_ImageCompressionOptions()->set_CompressImages(true);
- // Set ImageQuality option
- optimizationOptions->get_ImageCompressionOptions()->set_ImageQuality(50);
+    // Set CompressImages option
+    optimizationOptions->get_ImageCompressionOptions()->set_CompressImages(true);
+    // Set ImageQuality option
+    optimizationOptions->get_ImageCompressionOptions()->set_ImageQuality(50);
 
- // Optimize PDF document using OptimizationOptions
- document->OptimizeResources(optimizationOptions); 
- // Save updated document
- document->Save(_dataDir + outfilename);
+    // Optimize PDF document using OptimizationOptions
+    document->OptimizeResources(optimizationOptions); 
+    // Save updated document
+    document->Save(_dataDir + outfilename);
 }
 ```
 
@@ -131,33 +131,33 @@ To set the image at a lower resolution, set [ResizeImages](https://apireference.
 
 ```cpp
 void ResizeImagesWithLowerResolution() {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("ResizeImage.pdf");
- String outfilename("ResizeImages_out.pdf");
+    // String for input file name
+    String infilename("ResizeImage.pdf");
+    String outfilename("ResizeImages_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Initialize OptimizationOptions
- auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
+    // Initialize OptimizationOptions
+    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
- // Set CompressImages option
- optimizationOptions->get_ImageCompressionOptions()->set_CompressImages(true);
- // Set ImageQuality option
- optimizationOptions->get_ImageCompressionOptions()->set_ImageQuality(75);
+    // Set CompressImages option
+    optimizationOptions->get_ImageCompressionOptions()->set_CompressImages(true);
+    // Set ImageQuality option
+    optimizationOptions->get_ImageCompressionOptions()->set_ImageQuality(75);
 
- // Set ResizeImage option
- optimizationOptions->get_ImageCompressionOptions()->set_ResizeImages(true);
- // Set MaxResolution option
- optimizationOptions->get_ImageCompressionOptions()->set_MaxResolution(300);
+    // Set ResizeImage option
+    optimizationOptions->get_ImageCompressionOptions()->set_ResizeImages(true);
+    // Set MaxResolution option
+    optimizationOptions->get_ImageCompressionOptions()->set_MaxResolution(300);
 
- // Optimize PDF document using OptimizationOptions
- document->OptimizeResources(optimizationOptions);
- // Save updated document
- document->Save(_dataDir + outfilename);
+    // Optimize PDF document using OptimizationOptions
+    document->OptimizeResources(optimizationOptions);
+    // Save updated document
+    document->Save(_dataDir + outfilename);
 }
 ```
 
@@ -167,35 +167,35 @@ The following snippet demonstrates the Fast algorithm:
 
 ```cpp
 void ResizeImagesWithLowerResolutionFast() {
- auto time = System::DateTime::get_Now().get_Ticks();
- // String for path name
- String _dataDir("C:\\Samples\\");
+    auto time = System::DateTime::get_Now().get_Ticks();
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("ResizeImage.pdf");
- String outfilename("ResizeImages_out.pdf");
+    // String for input file name
+    String infilename("ResizeImage.pdf");
+    String outfilename("ResizeImages_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Initialize OptimizationOptions
- auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
+    // Initialize OptimizationOptions
+    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
- // Set CompressImages option
- optimizationOptions->get_ImageCompressionOptions()->set_CompressImages(true);
- // Set ImageQuality option
- optimizationOptions->get_ImageCompressionOptions()->set_ImageQuality(75);
+    // Set CompressImages option
+    optimizationOptions->get_ImageCompressionOptions()->set_CompressImages(true);
+    // Set ImageQuality option
+    optimizationOptions->get_ImageCompressionOptions()->set_ImageQuality(75);
 
- // Set ResizeImage option
- optimizationOptions->get_ImageCompressionOptions()->set_ResizeImages(true);
- // Set Imagae Compression Version to fast
- optimizationOptions->get_ImageCompressionOptions()->set_Version (Aspose::Pdf::Optimization::ImageCompressionVersion::Fast);
+    // Set ResizeImage option
+    optimizationOptions->get_ImageCompressionOptions()->set_ResizeImages(true);
+    // Set Imagae Compression Version to fast
+    optimizationOptions->get_ImageCompressionOptions()->set_Version (Aspose::Pdf::Optimization::ImageCompressionVersion::Fast);
 
- // Optimize PDF document using OptimizationOptions
- document->OptimizeResources(optimizationOptions);
- // Save updated document
- document->Save(_dataDir + outfilename);
- std::cout << "Ticks: " << System::DateTime::get_Now().get_Ticks() - time << std::endl;
+    // Optimize PDF document using OptimizationOptions
+    document->OptimizeResources(optimizationOptions);
+    // Save updated document
+    document->Save(_dataDir + outfilename);
+    std::cout << "Ticks: " << System::DateTime::get_Now().get_Ticks() - time << std::endl;
 }
 ```
 
@@ -205,27 +205,27 @@ Sometimes you may need to remove some unused objects from your PDF document that
 
 ```cpp
 void RemovingUnusedObject() { 
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("ShrinkDocument.pdf");
- String outfilename("ShrinkDocument_out.pdf");
+    // String for input file name
+    String infilename("ShrinkDocument.pdf");
+    String outfilename("ShrinkDocument_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Initialize OptimizationOptions
- auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
+    // Initialize OptimizationOptions
+    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
- // Set RemoveUsedObject option
- optimizationOptions->set_RemoveUnusedObjects(true);
+    // Set RemoveUsedObject option
+    optimizationOptions->set_RemoveUnusedObjects(true);
 
- // Optimize PDF document using OptimizationOptions
- document->OptimizeResources(optimizationOptions);
+    // Optimize PDF document using OptimizationOptions
+    document->OptimizeResources(optimizationOptions);
 
- // Save updated document
- document->Save(_dataDir + outfilename); 
+    // Save updated document
+    document->Save(_dataDir + outfilename); 
 }
 ```
 
@@ -235,27 +235,27 @@ Sometimes the document contains the unused resource streams. These streams are n
 
 ```cpp
 void RemovingUnusedStreams() { 
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("ShrinkDocument.pdf");
- String outfilename("ShrinkDocument_out.pdf");
+    // String for input file name
+    String infilename("ShrinkDocument.pdf");
+    String outfilename("ShrinkDocument_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>();
+    // Open document
+    auto document = MakeObject<Document>();
 
- // Initialize OptimizationOptions
- auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
+    // Initialize OptimizationOptions
+    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
- // Set RemoveUsedStreams option
- optimizationOptions->set_RemoveUnusedStreams(true);
+    // Set RemoveUsedStreams option
+    optimizationOptions->set_RemoveUnusedStreams(true);
 
- // Optimize PDF document using OptimizationOptions
- document->OptimizeResources(optimizationOptions);
+    // Optimize PDF document using OptimizationOptions
+    document->OptimizeResources(optimizationOptions);
 
- // Save updated document
- document->Save(_dataDir + outfilename); 
+    // Save updated document
+    document->Save(_dataDir + outfilename); 
 }
 ```
 
@@ -265,27 +265,27 @@ Some documents can contain several duplicate resource streams (like images, for 
 
 ```cpp
 void LinkingDuplicateStreams() { 
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("ShrinkDocument.pdf");
- String outfilename("ShrinkDocument_out.pdf");
+    // String for input file name
+    String infilename("ShrinkDocument.pdf");
+    String outfilename("ShrinkDocument_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Initialize OptimizationOptions
- auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
+    // Initialize OptimizationOptions
+    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
- // Set LinkDuplcateStreams option
- optimizationOptions->set_LinkDuplcateStreams(true);
+    // Set LinkDuplcateStreams option
+    optimizationOptions->set_LinkDuplcateStreams(true);
 
- // Optimize PDF document using OptimizationOptions
- document->OptimizeResources(optimizationOptions);
+    // Optimize PDF document using OptimizationOptions
+    document->OptimizeResources(optimizationOptions);
 
- // Save updated document
- document->Save(_dataDir + outfilename); 
+    // Save updated document
+    document->Save(_dataDir + outfilename); 
 }
 ```
 
@@ -293,27 +293,27 @@ Additionally, we can use [AllowReusePageContent](https://apireference.aspose.com
 
 ```cpp
 void AllowReusePageContent() { 
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("ShrinkDocument.pdf");
- String outfilename("ShrinkDocument_out.pdf");
+    // String for input file name
+    String infilename("ShrinkDocument.pdf");
+    String outfilename("ShrinkDocument_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Initialize OptimizationOptions
- auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
+    // Initialize OptimizationOptions
+    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
- // Set AllowReusePageContent option
- optimizationOptions->set_AllowReusePageContent(true);
+    // Set AllowReusePageContent option
+    optimizationOptions->set_AllowReusePageContent(true);
 
- // Optimize PDF document using OptimizationOptions
- document->OptimizeResources(optimizationOptions);
+    // Optimize PDF document using OptimizationOptions
+    document->OptimizeResources(optimizationOptions);
 
- // Save updated document
- document->Save(_dataDir + outfilename); 
+    // Save updated document
+    document->Save(_dataDir + outfilename); 
 }
 ```
 
@@ -325,27 +325,27 @@ But, if the document uses embedded fonts, it means that all font data is stored 
 
 ```cpp
 void UnembedFonts() {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("ShrinkDocument.pdf");
- String outfilename("ShrinkDocument_out.pdf");
+    // String for input file name
+    String infilename("ShrinkDocument.pdf");
+    String outfilename("ShrinkDocument_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir+infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir+infilename);
 
- // Initialize OptimizationOptions
- auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
+    // Initialize OptimizationOptions
+    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
- // Set AllowReusePageContent option
- optimizationOptions->set_UnembedFonts(true);
+    // Set AllowReusePageContent option
+    optimizationOptions->set_UnembedFonts(true);
 
- // Optimize PDF document using OptimizationOptions
- document->OptimizeResources(optimizationOptions);
+    // Optimize PDF document using OptimizationOptions
+    document->OptimizeResources(optimizationOptions);
 
- // Save updated document
- document->Save(_dataDir + outfilename);
+    // Save updated document
+    document->Save(_dataDir + outfilename);
 }
 ```
 
@@ -360,27 +360,27 @@ Annotations can be deleted when they are unnecessary. When they are needed but d
 
 ```cpp
 void FlatteningAnnotation() {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("OptimizeDocument.pdf");
- // String for output file name
- String outfilename("OptimizeDocument_out.pdf");
+    // String for input file name
+    String infilename("OptimizeDocument.pdf");
+    // String for output file name
+    String outfilename("OptimizeDocument_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Flatten annotations
- for(auto page : document->get_Pages())
- {
-  for(auto annotation : page->get_Annotations())
-  {
-   annotation->Flatten();
-  }
- }
- // Save updated document
- document->Save(_dataDir + outfilename);
+    // Flatten annotations
+    for(auto page : document->get_Pages())
+    {
+        for(auto annotation : page->get_Annotations())
+        {
+        annotation->Flatten();
+        }
+    }
+    // Save updated document
+    document->Save(_dataDir + outfilename);
 }
 ```
 
@@ -391,28 +391,28 @@ If the PDF document contains AcroForms, we can try to reduce the file size by fl
 
 ```cpp
 void FlatteningFormFields() {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("OptimizeFormField.pdf");
- // String for output file name
- String outfilename("OptimizeFormField_out.pdf");
+    // String for input file name
+    String infilename("OptimizeFormField.pdf");
+    // String for output file name
+    String outfilename("OptimizeFormField_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Flatten form fields
- // Flatten Forms
- if (document->get_Form()->get_Fields()->get_Count() > 0)
- {
-  for(auto item : document->get_Form()->get_Fields())
-  {
-   item->Flatten();
-  }
- }
- // Save updated document
- document->Save(_dataDir + outfilename);
+    // Flatten form fields
+    // Flatten Forms
+    if (document->get_Form()->get_Fields()->get_Count() > 0)
+    {
+        for(auto item : document->get_Form()->get_Fields())
+        {
+            item->Flatten();
+        }
+    }
+    // Save updated document
+    document->Save(_dataDir + outfilename);
 }
 ```
 
@@ -422,27 +422,27 @@ A PDF file comprises Text, Image, Attachment, Annotations, Graphs, and other obj
 
 ```cpp
 void ConvertPDFfromColorspaceToGrayscale() {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String infilename("OptimizeDocument.pdf");
- // String for output file name
- String outfilename("Test-gray_out.pdf");
+    // String for input file name
+    String infilename("OptimizeDocument.pdf");
+    // String for output file name
+    String outfilename("Test-gray_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- auto strategy = MakeObject<Aspose::Pdf::RgbToDeviceGrayConversionStrategy>();
- for (int idxPage = 1; idxPage <= document->get_Pages()->get_Count(); idxPage++)
- {
-  // Get instance of particular page inside PDF
-  auto page = document->get_Pages()->idx_get(idxPage);
-  // Convert the RGB colorspace image to GrayScale colorspace
-  strategy->Convert(page);
- }
- // Save resultant file
- document->Save(_dataDir + outfilename); 
+    auto strategy = MakeObject<Aspose::Pdf::RgbToDeviceGrayConversionStrategy>();
+    for (int idxPage = 1; idxPage <= document->get_Pages()->get_Count(); idxPage++)
+    {
+        // Get instance of particular page inside PDF
+        auto page = document->get_Pages()->idx_get(idxPage);
+        // Convert the RGB colorspace image to GrayScale colorspace
+        strategy->Convert(page);
+    }
+    // Save resultant file
+    document->Save(_dataDir + outfilename); 
 }
 ```
 

@@ -32,48 +32,48 @@ The following code snippet shows you how to get the properties using [Document](
 ```cpp
 void GetDocumentWindowAndPageDisplayProperties()
 {
- // String for path name.
- String _dataDir("C:\\Samples\\");
- // String for file name.
- String inputFileName("sample.pdf");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
 
- auto document = MakeObject<Document>(inputFileName);
+    auto document = MakeObject<Document>(inputFileName);
 
- // Get different document properties
- // Position of document's window - Default: false
- Console::WriteLine(u"CenterWindow : {0}", document->get_CenterWindow());
+    // Get different document properties
+    // Position of document's window - Default: false
+    Console::WriteLine(u"CenterWindow : {0}", document->get_CenterWindow());
 
- // Predominant reading order; determins the position of page
- // When displayed side by side - Default: L2R
- Console::WriteLine(u"Direction : {0}", document->get_Direction());
+    // Predominant reading order; determins the position of page
+    // When displayed side by side - Default: L2R
+    Console::WriteLine(u"Direction : {0}", document->get_Direction());
 
- // Whether window's title bar should display document title
- // If false, title bar displays PDF file name - Default: false
- Console::WriteLine(u"DisplayDocTitle : {0}", document->get_DisplayDocTitle());
+    // Whether window's title bar should display document title
+    // If false, title bar displays PDF file name - Default: false
+    Console::WriteLine(u"DisplayDocTitle : {0}", document->get_DisplayDocTitle());
 
- // Whether to resize the document's window to fit the size of
- // First displayed page - Default: false
- Console::WriteLine(u"FitWindow : {0}", document->get_FitWindow());
+    // Whether to resize the document's window to fit the size of
+    // First displayed page - Default: false
+    Console::WriteLine(u"FitWindow : {0}", document->get_FitWindow());
 
- // Whether to hide menu bar of the viewer application - Default: false
- Console::WriteLine(u"HideMenuBar : {0}", document->get_HideMenubar());
+    // Whether to hide menu bar of the viewer application - Default: false
+    Console::WriteLine(u"HideMenuBar : {0}", document->get_HideMenubar());
 
- // Whether to hide tool bar of the viewer application - Default: false
- Console::WriteLine(u"HideToolBar : {0}", document->get_HideToolBar());
+    // Whether to hide tool bar of the viewer application - Default: false
+    Console::WriteLine(u"HideToolBar : {0}", document->get_HideToolBar());
 
- // Whether to hide UI elements like scroll bars
- // And leaving only the page contents displayed - Default: false
- Console::WriteLine(u"HideWindowUI : {0}", document->get_HideWindowUI());
+    // Whether to hide UI elements like scroll bars
+    // And leaving only the page contents displayed - Default: false
+    Console::WriteLine(u"HideWindowUI : {0}", document->get_HideWindowUI());
 
- // Document's page mode. How to display document on exiting full-screen mode.
- Console::WriteLine(u"NonFullScreenPageMode : {0}", document->get_NonFullScreenPageMode());
+    // Document's page mode. How to display document on exiting full-screen mode.
+    Console::WriteLine(u"NonFullScreenPageMode : {0}", document->get_NonFullScreenPageMode());
 
- // The page layout i.e. single page, one column
- Console::WriteLine(u"PageLayout : {0}", document->get_PageLayout());
+    // The page layout i.e. single page, one column
+    Console::WriteLine(u"PageLayout : {0}", document->get_PageLayout());
 
- // How the document should display when opened
- // I.e. show thumbnails, full-screen, show attachment panel
- Console::WriteLine(u"pageMode : {0}", document->get_PageMode());
+    // How the document should display when opened
+    // I.e. show thumbnails, full-screen, show attachment panel
+    Console::WriteLine(u"pageMode : {0}", document->get_PageMode());
 }
 ```
 
@@ -113,54 +113,54 @@ Properties available are:
 Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
 
 ```cpp
-void SetDocumentWindowAndPageDisplayProperties() {
+void SetDocumentWindowAndPageDisplayProperties()
+{
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
+    String outputFileName("sample_page_display_properties.pdf");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
- // String for file name.
- String inputFileName("sample.pdf");
- String outputFileName("sample_page_display_properties.pdf");
+    auto document = MakeObject<Document>(inputFileName);
 
- auto document = MakeObject<Document>(inputFileName);
+    // Set different document properties
+    // Sepcify to position document's window - Default: false
+    document->set_CenterWindow(true);
 
- // Set different document properties
- // Sepcify to position document's window - Default: false
- document->set_CenterWindow(true);
+    // Predominant reading order; determins the position of page
+    // When displayed side by side - Default: L2R
+    document->set_Direction(Direction::R2L);
 
- // Predominant reading order; determins the position of page
- // When displayed side by side - Default: L2R
- document->set_Direction(Direction::R2L);
+    // Specify whether window's title bar should display document title
+    // If false, title bar displays PDF file name - Default: false
+    document->set_DisplayDocTitle(true);
 
- // Specify whether window's title bar should display document title
- // If false, title bar displays PDF file name - Default: false
- document->set_DisplayDocTitle(true);
+    // Specify whether to resize the document's window to fit the size of
+    // First displayed page - Default: false
+    document->set_FitWindow(true);
 
- // Specify whether to resize the document's window to fit the size of
- // First displayed page - Default: false
- document->set_FitWindow(true);
+    // Specify whether to hide menu bar of the viewer application - Default: false
+    document->set_HideMenubar(true);
 
- // Specify whether to hide menu bar of the viewer application - Default: false
- document->set_HideMenubar(true);
+    // Specify whether to hide tool bar of the viewer application - Default: false
+    document->set_HideToolBar(true);
 
- // Specify whether to hide tool bar of the viewer application - Default: false
- document->set_HideToolBar(true);
+    // Specify whether to hide UI elements like scroll bars
+    // And leaving only the page contents displayed - Default: false
+    document->set_HideWindowUI(true);
 
- // Specify whether to hide UI elements like scroll bars
- // And leaving only the page contents displayed - Default: false
- document->set_HideWindowUI(true);
+    // Document's page mode. specify how to display document on exiting full-screen mode.
+    document->set_NonFullScreenPageMode(PageMode::UseOC);
 
- // Document's page mode. specify how to display document on exiting full-screen mode.
- document->set_NonFullScreenPageMode(PageMode::UseOC);
+    // Specify the page layout i.e. single page, one column
+    document->set_PageLayout(PageLayout::TwoColumnLeft);
 
- // Specify the page layout i.e. single page, one column
- document->set_PageLayout(PageLayout::TwoColumnLeft);
+    // Specify how the document should display when opened
+    // I.e. show thumbnails, full-screen, show attachment panel
+    document->set_PageMode(PageMode::UseThumbs);
 
- // Specify how the document should display when opened
- // I.e. show thumbnails, full-screen, show attachment panel
- document->set_PageMode(PageMode::UseThumbs);
-
- // Save updated PDF file
- document->Save(_dataDir + outputFileName);
+    // Save updated PDF file
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -185,34 +185,35 @@ There are PDF documents that use fonts from a special set are called “Standard
 Following is the code snippet which can be used to get a document with all fonts embedded including Standard Type 1 Fonts:
 
 ```cpp
-void EmbeddingStandardType1Fonts() {
+void EmbeddingStandardType1Fonts()
+{
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
- // String for file name.
- String inputFileName("sample.pdf");
- String outputFileName("embedded-fonts-updated_out.pdf");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
+    String outputFileName("embedded-fonts-updated_out.pdf");
 
- auto document = MakeObject<Document>(inputFileName);
+    auto document = MakeObject<Document>(inputFileName);
 
- // Set EmbedStandardFonts property of document
- document->set_EmbedStandardFonts(true);
- for (auto page : document->get_Pages())
- {
-  auto fonts = page->get_Resources()->get_Fonts();
-  if (fonts != nullptr)
-  {
-   for (auto pageFont : fonts)
-   {
-    // Check if font is already embedded
-    if (!pageFont->get_IsEmbedded())
+    // Set EmbedStandardFonts property of document
+    document->set_EmbedStandardFonts(true);
+    for (auto page : document->get_Pages())
     {
-     pageFont->set_IsEmbedded(true);
+        auto fonts = page->get_Resources()->get_Fonts();
+        if (fonts != nullptr)
+        {
+            for (auto pageFont : fonts)
+            {
+                // Check if font is already embedded
+                if (!pageFont->get_IsEmbedded())
+                {
+                    pageFont->set_IsEmbedded(true);
+                }
+            }
+        }
     }
-   }
-  }
- }
- document->Save(_dataDir + outputFileName);
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -225,31 +226,32 @@ If you need to use any font other than the 14 core fonts supported by Adobe Read
 We use the property IsEmbedded of Font class to embed the font information into Pdf file. Setting the value of this property to ‘True’ will embed the complete font file into the Pdf, knowing the fact that it will increase the Pdf file size. Following is the code snippet that can be used to embed the font information into Pdf.
 
 ```cpp
-void EmbeddingFontsWhileCreatingPDF() {
- // String for path name.
- String _dataDir("C:\\Samples\\");
- // String for file name.
- String inputFileName("sample.pdf");
- String outputFileName("EmbedFontWhileDocCreation_out.pdf");
+void EmbeddingFontsWhileCreatingPDF()
+{
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
+    String outputFileName("EmbedFontWhileDocCreation_out.pdf");
 
- auto document = MakeObject<Document>(inputFileName);
+    auto document = MakeObject<Document>(inputFileName);
 
- // Create a section in the Pdf object
- auto page = document->get_Pages()->Add();
+    // Create a section in the Pdf object
+    auto page = document->get_Pages()->Add();
 
- auto fragment = MakeObject<TextFragment>("");
- auto segment = MakeObject <TextSegment>(u"This is a sample text using Custom font.");
+    auto fragment = MakeObject<TextFragment>("");
+    auto segment = MakeObject <TextSegment>(u"This is a sample text using Custom font.");
 
- auto ts = MakeObject<TextState>();
+    auto ts = MakeObject<TextState>();
 
- ts->set_Font(FontRepository::FindFont(u"Arial"));
- ts->get_Font()->set_IsEmbedded(true);
- segment->set_TextState(ts);
- fragment->get_Segments()->Add(segment);
- page->get_Paragraphs()->Add(fragment);
+    ts->set_Font(FontRepository::FindFont(u"Arial"));
+    ts->get_Font()->set_IsEmbedded(true);
+    segment->set_TextState(ts);
+    fragment->get_Segments()->Add(segment);
+    page->get_Paragraphs()->Add(fragment);
 
- // Save PDF Document
- document->Save(_dataDir);
+    // Save PDF Document
+    document->Save(_dataDir);
 }
 ```
 
@@ -258,21 +260,22 @@ void EmbeddingFontsWhileCreatingPDF() {
 When a PDF document contains fonts, which are not available in the document itself and on the device, API replaces these fonts with the default font. When the font is available (is installed on the device or is embedded into the document), the output PDF should have the same font (should not be replaced with the default font). The value of the default font should contain the name of the font (not the path to the font files). Apose.PDF for C++ implemented a feature to set the default font name while saving a document as a PDF. The following code snippet can be used to set the default font:
 
 ```cpp
-void SetDefaultFontNameWhileSavingPDF() {
- // String for path name.
- String _dataDir("C:\\Samples\\");
- // String for file name.
- String inputFileName("sample.pdf");
- String outputFileName("output_out.pdf");
- String newName("Arial");
+void SetDefaultFontNameWhileSavingPDF()
+{
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
+    String outputFileName("output_out.pdf");
+    String newName("Arial");
 
- auto document = MakeObject<Document>(inputFileName);
+    auto document = MakeObject<Document>(inputFileName);
 
- auto pdfSaveOptions = MakeObject<PdfSaveOptions>();
+    auto pdfSaveOptions = MakeObject<PdfSaveOptions>();
 
- // Specify Default Font Name
- pdfSaveOptions->set_DefaultFontName(newName);
- document->Save(_dataDir + outputFileName, pdfSaveOptions);
+    // Specify Default Font Name
+    pdfSaveOptions->set_DefaultFontName(newName);
+    document->Save(_dataDir + outputFileName, pdfSaveOptions);
 }
 ```
 
@@ -285,19 +288,19 @@ Please check following code snippet in order to get all fonts from an existing P
 ```cpp
 void GetAllFontsFromPDFdocument()
 {
- // String for path name.
- String _dataDir("C:\\Samples\\");
- // String for file name.
- String inputFileName("sample.pdf");
- String outputFileName("output_out.pdf");
- String newName("Arial");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
+    String outputFileName("output_out.pdf");
+    String newName("Arial");
 
- auto document = MakeObject<Document>(inputFileName);
- auto fonts = document->get_FontUtilities()->GetAllFonts();
- for (auto font : fonts)
- {
-  std::cerr << font->get_FontName() << std::endl;
- }
+    auto document = MakeObject<Document>(inputFileName);
+    auto fonts = document->get_FontUtilities()->GetAllFonts();
+    for (auto font : fonts)
+    {
+        std::cerr << font->get_FontName() << std::endl;
+    }
 }
 ```
 
@@ -306,18 +309,18 @@ void GetAllFontsFromPDFdocument()
 Aspose.PDF for C++ provides methods to get notifications about font substitution for handling font substitution cases. The code snippets below show how to use corresponding functionality.
 
 ```cpp
-void GetWarningsForFontSubstitution() {
+void GetWarningsForFontSubstitution()
+{
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
+    String outputFileName("output_out.pdf");
 
- // String for file name.
- String inputFileName("sample.pdf");
- String outputFileName("output_out.pdf");
+    auto document = MakeObject<Document>(inputFileName);
 
- auto document = MakeObject<Document>(inputFileName);
-
- document->FontSubstitution = Aspose::Pdf::Document::FontSubstitutionHandler(OnFontSubstitution);
+    document->FontSubstitution = Aspose::Pdf::Document::FontSubstitutionHandler(OnFontSubstitution);
 }
 ```
 
@@ -325,7 +328,9 @@ The [OnFontSubstitution](https://apireference.aspose.com/pdf/cpp/class/aspose.pd
 
 ```cpp
 void OnFontSubstitution(Aspose::Pdf::Text::Font &font, Aspose::Pdf::Text::Font& newFont) {
- std::cout << "Warning: Font " << font.get_FontName() << " was substituted with another font -> " << newFont.get_FontName() << std::endl;
+    std::cout << "Warning: Font " << font.get_FontName() 
+            << " was substituted with another font -> " 
+            << newFont.get_FontName() << std::endl;
 }
 ```
 
@@ -339,22 +344,22 @@ The feature to embed the fonts as a subset can be accomplished by using the IsSu
 Following code snippet shows how to set FontSubsetStrategy:
 
 ```cpp
-void ImproveFontsEmbeddingUsingFontSubsetStrategy() {
+void ImproveFontsEmbeddingUsingFontSubsetStrategy()
+{
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
+    // String for file name.
+    String outputFileName("sample_out.pdf");
 
- // String for file name.
- String inputFileName("sample.pdf");
- // String for file name.
- String outputFileName("sample_out.pdf");
-
- auto document = MakeObject<Document>(inputFileName);
- // All fonts will be embedded as subset into document in case of SubsetAllFonts.
- document->get_FontUtilities()->SubsetFonts(FontSubsetStrategy::SubsetAllFonts);
- // Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
- document->get_FontUtilities()->SubsetFonts(FontSubsetStrategy::SubsetEmbeddedFontsOnly);
- document->Save(_dataDir + outputFileName);
+    auto document = MakeObject<Document>(inputFileName);
+    // All fonts will be embedded as subset into document in case of SubsetAllFonts.
+    document->get_FontUtilities()->SubsetFonts(FontSubsetStrategy::SubsetAllFonts);
+    // Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
+    document->get_FontUtilities()->SubsetFonts(FontSubsetStrategy::SubsetEmbeddedFontsOnly);
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -370,21 +375,20 @@ The following code snippet shows how to set the zoom factor of a PDF file.
 
 ```cpp
 void SetZoomFactor() {
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
+    // String for file name.
+    String outputFileName("Zoomed_pdf_out.pdf");
 
- // String for file name.
- String inputFileName("sample.pdf");
- // String for file name.
- String outputFileName("Zoomed_pdf_out.pdf");
+    auto document = MakeObject<Document>(inputFileName);
+    auto action = MakeObject<Aspose::Pdf::Annotations::GoToAction>(MakeObject<Aspose::Pdf::Annotations::XYZExplicitDestination>(1, 0, 0, .5));
 
- auto document = MakeObject<Document>(inputFileName);
- auto action = MakeObject<Aspose::Pdf::Annotations::GoToAction>(MakeObject<Aspose::Pdf::Annotations::XYZExplicitDestination>(1, 0, 0, .5));
-
- document->set_OpenAction(action);
- // Save the document
- document->Save(_dataDir + outputFileName);
+    document->set_OpenAction(action);
+    // Save the document
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -395,22 +399,22 @@ Get zoom factor in your PDF file using Aspose.PDF for C++.
 The following code snippet shows how to get a PDF file’s zoom factor:
 
 ```cpp
-void GetZoomFactor() {
+void GetZoomFactor() 
+{
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample.pdf");
 
- // String for file name.
- String inputFileName("sample.pdf");
+    auto document = MakeObject<Document>(inputFileName);
 
- auto document = MakeObject<Document>(inputFileName);
+    // Create GoToAction object
+    auto action = System::DynamicCast<Aspose::Pdf::Annotations::GoToAction>(document->get_OpenAction());
 
- // Create GoToAction object
- auto action = System::DynamicCast<Aspose::Pdf::Annotations::GoToAction>(document->get_OpenAction());
-
- // Get the Zoom factor of PDF file
- auto zoom = System::DynamicCast<Aspose::Pdf::Annotations::XYZExplicitDestination>(action->get_Destination());
- Console::WriteLine(zoom->get_Zoom()); // Document zoom value;
+    // Get the Zoom factor of PDF file
+    auto zoom = System::DynamicCast<Aspose::Pdf::Annotations::XYZExplicitDestination>(action->get_Destination());
+    Console::WriteLine(zoom->get_Zoom()); // Document zoom value;
 }
 ```
 
@@ -421,15 +425,15 @@ Aspoose.PDF for C++ allows setting the Print Dialog Preset properties of a PDF d
 ```cpp
 void SettingPrintDialogPresetProperties()
 {
- // String for path name.
- String _dataDir("C:\\Samples\\");
- // String for file name.
- String outputFileName("SettingPrintDialogPresetProperties.pdf");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String outputFileName("SettingPrintDialogPresetProperties.pdf");
 
- auto document = MakeObject<Document>();
- document->get_Pages()->Add();
- document->set_Duplex(PrintDuplex::DuplexFlipLongEdge);
- document->Save(_dataDir + outputFileName);
+    auto document = MakeObject<Document>();
+    document->get_Pages()->Add();
+    document->set_Duplex(PrintDuplex::DuplexFlipLongEdge);
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -437,24 +441,24 @@ void SettingPrintDialogPresetProperties()
 
 ```cpp
 void SettingPrintDialogPresetPropertiesUsingContentEditor() {
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for file name.
- String inputFileName("sample.pdf");
- String outputFileName("SetPrintDlgPropertiesUsingPdfContentEditor_out.pdf");
+    // String for file name.
+    String inputFileName("sample.pdf");
+    String outputFileName("SetPrintDlgPropertiesUsingPdfContentEditor_out.pdf");
 
- auto document = MakeObject<Document>(_dataDir + inputFileName);
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
- auto contentEditor = MakeObject<Aspose::Pdf::Facades::PdfContentEditor>();
+    auto contentEditor = MakeObject<Aspose::Pdf::Facades::PdfContentEditor>();
 
- contentEditor->BindPdf(outputFileName);
- if ((contentEditor->GetViewerPreference() & Aspose::Pdf::Facades::ViewerPreference::DuplexFlipShortEdge) > 0)
- {
-  std::cout << "The file has duplex flip short edge" << std::endl;
- }
+    contentEditor->BindPdf(outputFileName);
+    if ((contentEditor->GetViewerPreference() & Aspose::Pdf::Facades::ViewerPreference::DuplexFlipShortEdge) > 0)
+    {
+    std::cout << "The file has duplex flip short edge" << std::endl;
+    }
 
- contentEditor->ChangeViewerPreference(Aspose::Pdf::Facades::ViewerPreference::DuplexFlipShortEdge);
- contentEditor->Save(_dataDir + outputFileName);
+    contentEditor->ChangeViewerPreference(Aspose::Pdf::Facades::ViewerPreference::DuplexFlipShortEdge);
+    contentEditor->Save(_dataDir + outputFileName);
 }
 ```

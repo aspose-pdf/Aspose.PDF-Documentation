@@ -33,68 +33,68 @@ The source code, to obtain the output shown in the above figure, is given below 
 
 ```cpp
 void WorkingWithHeadingsInPDF() {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String outputFileName("ApplyNumberStyle_out.pdf");
+    // String for input file name
+    String outputFileName("ApplyNumberStyle_out.pdf");
 
- // Open document
- auto document = MakeObject<Document>();
+    // Open document
+    auto document = MakeObject<Document>();
 
- document->get_PageInfo()->set_Width(612.0);
- document->get_PageInfo()->set_Height(792.0);
- document->get_PageInfo()->set_Margin (MakeObject<MarginInfo>());
- document->get_PageInfo()->get_Margin()->set_Left(72);
- document->get_PageInfo()->get_Margin()->set_Right(72);
- document->get_PageInfo()->get_Margin()->set_Top (72);
- document->get_PageInfo()->get_Margin()->set_Bottom (72);
-        
- auto pdfPage = document->get_Pages()->Add();
- pdfPage->get_PageInfo()->set_Width (612.0);
- pdfPage->get_PageInfo()->set_Height (792.0);
- pdfPage->get_PageInfo()->set_Margin(MakeObject<MarginInfo>());
- pdfPage->get_PageInfo()->get_Margin()->set_Left(72);
- pdfPage->get_PageInfo()->get_Margin()->set_Right(72);
- pdfPage->get_PageInfo()->get_Margin()->set_Top(72);
- pdfPage->get_PageInfo()->get_Margin()->set_Bottom(72);
+    document->get_PageInfo()->set_Width(612.0);
+    document->get_PageInfo()->set_Height(792.0);
+    document->get_PageInfo()->set_Margin (MakeObject<MarginInfo>());
+    document->get_PageInfo()->get_Margin()->set_Left(72);
+    document->get_PageInfo()->get_Margin()->set_Right(72);
+    document->get_PageInfo()->get_Margin()->set_Top (72);
+    document->get_PageInfo()->get_Margin()->set_Bottom (72);
+            
+    auto pdfPage = document->get_Pages()->Add();
+    pdfPage->get_PageInfo()->set_Width (612.0);
+    pdfPage->get_PageInfo()->set_Height (792.0);
+    pdfPage->get_PageInfo()->set_Margin(MakeObject<MarginInfo>());
+    pdfPage->get_PageInfo()->get_Margin()->set_Left(72);
+    pdfPage->get_PageInfo()->get_Margin()->set_Right(72);
+    pdfPage->get_PageInfo()->get_Margin()->set_Top(72);
+    pdfPage->get_PageInfo()->get_Margin()->set_Bottom(72);
 
- auto floatBox = MakeObject<FloatingBox>();
- floatBox->set_Margin(pdfPage->get_PageInfo()->get_Margin());
+    auto floatBox = MakeObject<FloatingBox>();
+    floatBox->set_Margin(pdfPage->get_PageInfo()->get_Margin());
 
- pdfPage->get_Paragraphs()->Add(floatBox);
+    pdfPage->get_Paragraphs()->Add(floatBox);
 
- auto textFragment = MakeObject<TextFragment>();
- auto segment = MakeObject<TextSegment>();
+    auto textFragment = MakeObject<TextFragment>();
+    auto segment = MakeObject<TextSegment>();
 
- auto heading = MakeObject<Heading>(1);
- heading->set_IsInList(true);
- heading->set_StartNumber(1);
- heading->set_Text (u"List 1");
- heading->set_Style(NumberingStyle::NumeralsRomanLowercase);
- heading->set_IsAutoSequence(true);
+    auto heading = MakeObject<Heading>(1);
+    heading->set_IsInList(true);
+    heading->set_StartNumber(1);
+    heading->set_Text (u"List 1");
+    heading->set_Style(NumberingStyle::NumeralsRomanLowercase);
+    heading->set_IsAutoSequence(true);
 
- floatBox->get_Paragraphs()->Add(heading);
+    floatBox->get_Paragraphs()->Add(heading);
 
- auto heading2 = MakeObject<Heading>(1);
- heading2->set_IsInList (true);
- heading2->set_StartNumber(13);
- heading2->set_Text (u"List 2");
- heading2->set_Style(NumberingStyle::NumeralsRomanLowercase);
- heading2->set_IsAutoSequence(true);;
+    auto heading2 = MakeObject<Heading>(1);
+    heading2->set_IsInList (true);
+    heading2->set_StartNumber(13);
+    heading2->set_Text (u"List 2");
+    heading2->set_Style(NumberingStyle::NumeralsRomanLowercase);
+    heading2->set_IsAutoSequence(true);;
 
- floatBox->get_Paragraphs()->Add(heading2);
+    floatBox->get_Paragraphs()->Add(heading2);
 
- auto heading3 = MakeObject<Heading>(2);
- heading3->set_IsInList (true);
- heading3->set_StartNumber(1);
- heading3->set_Text (u"the value, as of the effective date of the plan, of property to be distributed under the plan onaccount of each allowed");
- heading3->set_Style(NumberingStyle::LettersLowercase);
- heading3->set_IsAutoSequence(true);
+    auto heading3 = MakeObject<Heading>(2);
+    heading3->set_IsInList (true);
+    heading3->set_StartNumber(1);
+    heading3->set_Text (u"the value, as of the effective date of the plan, of property to be distributed under the plan onaccount of each allowed");
+    heading3->set_Style(NumberingStyle::LettersLowercase);
+    heading3->set_IsAutoSequence(true);
 
- floatBox->get_Paragraphs()->Add(heading3); 
+    floatBox->get_Paragraphs()->Add(heading3); 
 
- // Save concatenated output file
- document->Save(_dataDir + outputFileName);
+    // Save concatenated output file
+    document->Save(_dataDir + outputFileName);
 }
 ```

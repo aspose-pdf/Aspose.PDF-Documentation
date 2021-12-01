@@ -29,23 +29,23 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 void MergingDocuments() {
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for input file name
- String pdfDocumentFileName1("Concat1.pdf");
- String pdfDocumentFileName2("Concat2.pdf");
- String outputFileName("ConcatenatePdfFiles.pdf");
+    // String for input file name
+    String pdfDocumentFileName1("Concat1.pdf");
+    String pdfDocumentFileName2("Concat2.pdf");
+    String outputFileName("ConcatenatePdfFiles.pdf");
 
- // Open document
- auto pdfDocument1 = MakeObject<Document>(_dataDir + pdfDocumentFileName1);
- auto pdfDocument2 = MakeObject<Document>(_dataDir + pdfDocumentFileName2);
+    // Open document
+    auto pdfDocument1 = MakeObject<Document>(_dataDir + pdfDocumentFileName1);
+    auto pdfDocument2 = MakeObject<Document>(_dataDir + pdfDocumentFileName2);
 
- // Add pages of second document to the first
- pdfDocument1->get_Pages()->Add(pdfDocument2->get_Pages());
+    // Add pages of second document to the first
+    pdfDocument1->get_Pages()->Add(pdfDocument2->get_Pages());
 
- // Save concatenated output file
- pdfDocument1->Save(_dataDir+outputFileName);
+    // Save concatenated output file
+    pdfDocument1->Save(_dataDir+outputFileName);
 }
 ```
 
