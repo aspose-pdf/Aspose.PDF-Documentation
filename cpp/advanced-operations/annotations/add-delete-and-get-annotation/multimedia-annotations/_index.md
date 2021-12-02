@@ -190,3 +190,54 @@ void MultimediaAnnotations::DeleteRichMediaAnnotation() {
 }
 ```
 
+## Add 3D Annotation
+
+Today, PDF files can contain a variety of content other than simple text and graphics, including logical structures, interactive elements such as annotations and form fields, layers, multimedia (including video content), and 3D objects.
+
+Such 3D content can be viewed in a PDF file using 3D annotations. 
+
+This section shows the basic steps of creating a 3D annotation in a PDF document using the C++ library by Aspose.PDF.
+
+3D annotation is added using a model created in the U3D format.
+
+1. Create a new [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/)
+1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.p_d_f3_d_content/)
+1. Create [3dArtWork](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.p_d_f3_d_artwork/) object and link it to the document and 3DContent
+1. Tune pdf3dArtWork object:
+
+```cpp
+void MultimediaAnnotation::Add3DAnnottaion()
+{
+    public static void Add3dAnnotation()
+    {
+        // Load the PDF file
+        Document document = new Document();
+        PDF3DContent pdf3DContent = new PDF3DContent(_dataDir + "Ring.u3d");
+        PDF3DArtwork pdf3dArtWork = new PDF3DArtwork(document, pdf3DContent);
+        pdf3dArtWork.setLightingScheme(new PDF3DLightingScheme(LightingSchemeType.CAD));
+        pdf3dArtWork.setRenderMode(new PDF3DRenderMode(RenderModeType.Solid));
+
+        var topMatrix = new Matrix3D(1, 0, 0, 0, -1, 0, 0, 0, -1, 0.10271, 0.08184, 0.273836);
+        var frontMatrix = new Matrix3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.332652, 0.08184, 0.085273);
+        pdf3dArtWork.getViewArray().add(new PDF3DView(document, topMatrix, 0.188563, "Top")); //1
+        pdf3dArtWork.getViewArray().add(new PDF3DView(document, frontMatrix, 0.188563, "Left")); //2
+
+        var page = document.getPages().add();
+
+        var pdf3dAnnotation = new PDF3DAnnotation(page, new Rectangle(100, 500, 300, 700), pdf3dArtWork);
+        pdf3dAnnotation.setBorder(new Border(pdf3dAnnotation));
+        pdf3dAnnotation.setDefaultViewIndex(1);
+        pdf3dAnnotation.setFlags(com.aspose.pdf.AnnotationFlags.NoZoom);
+        pdf3dAnnotation.setName("Ring.u3d");
+        //set preview image if needed
+        //pdf3dAnnotation.setImagePreview(_dataDir + "sample_3d.png");
+        document.getPages().get_Item(1).getAnnotations().add(pdf3dAnnotation);
+
+        document.save(_dataDir + "sample_3d.pdf");
+    }
+}
+```
+
+This code example showed us such a model:
+
+![3D Annotation demo](3d_demo.png)

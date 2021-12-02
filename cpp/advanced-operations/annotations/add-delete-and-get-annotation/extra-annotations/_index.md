@@ -120,3 +120,69 @@ void DeleteLinkAnnotations()
 }
 ```
 
+## 
+
+## Redact certain page region with Redaction Annotation using Aspose.PDF for C++
+
+Aspose.PDF for C++ supports the feature to add as well as manipulate Annotations in an existing PDF file. Recently some of our customers posted a required to redact (remove text, image, etc elements from) a certain page region of PDF document. In order to fulfill this requirement, a class named RedactionAnnotation is provided, which can be used to redact certain page regions or it can be used to manipulate existing RedactionAnnotations and redact them (i.e. flatten annotation and remove the text under it).
+
+```cpp
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+using namespace Aspose::Pdf::Annotations;
+
+
+void RedactAnnotation::AddRedactionAnnotation() {
+
+    String _dataDir("C:\\Samples\\");
+
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
+    auto page = document->get_Pages()->idx_get(1);
+
+    // Create RedactionAnnotation instance for specific page region
+    auto annot = MakeObject<RedactionAnnotation>(page, MakeObject<Rectangle>(200, 500, 300, 600));
+    annot->set_FillColor(Color::get_Green());
+    annot->set_BorderColor(Color::get_Yellow());
+    annot->set_Color(Color::get_Blue());
+
+    // Text to be printed on redact annotation
+    annot->set_OverlayText(u"REDACTED");
+    annot->set_TextAlignment(HorizontalAlignment::Center);
+
+    // Repat Overlay text over redact Annotation
+    annot->set_Repeat(true);
+
+    // Add annotation to annotations collection of first page
+    page->get_Annotations()->Add(annot);
+
+    // Flattens annotation and redacts page contents (i.e. removes text and image
+    // Under redacted annotation)
+    annot->Redact();
+    document->Save(_dataDir + u"RedactPage_out.pdf");
+}
+```
+
+## Facades approach 
+
+Aspose.PDF.Facades nsupports [PdfAnnotationEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_annotation_editor/) class, which provides the feature to manipulate existing Annotations inside PDF file. 
+
+This class contains a method named [RedactArea(..)](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_annotation_editor#a35ebd333b63b6df2c0c299c7331e3c63) which provides the capability to remove certain page regions.
+
+```cpp
+void RedactAnnotation::AddRedactionAnnotationViaFacades() {
+
+    String _dataDir("C:\\Samples\\");
+
+    auto editor = MakeObject<Aspose::Pdf::Facades::PdfAnnotationEditor>();
+
+    editor->BindPdf(_dataDir + u"sample.pdf");
+
+    // Redact certain page region
+    editor->RedactArea(1, MakeObject<Rectangle>(100, 100, 20, 70), System::Drawing::Color::get_White());
+    editor->BindPdf(_dataDir + u"sample.pdf");
+    editor->Save(_dataDir + u"FacadesApproach_out.pdf");
+}
+```
+

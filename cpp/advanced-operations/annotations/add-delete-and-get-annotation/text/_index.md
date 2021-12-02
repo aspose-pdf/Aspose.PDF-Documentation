@@ -169,6 +169,32 @@ void FreeTextAnnotations::GetFreeTextAnnotation() {
 }
 ```
 
+### Make Free Text Annotation Invisible
+
+Sometimes, it is necessary to create a watermark that isn’t visible in the document when viewing it but should be visible when the document is printed. Use annotation flags for this purpose. The following code snippet shows how.
+
+```cpp
+void FreeTextAnnotations::MakeFreeTextAnnotationInvisble() {
+    
+    String _dataDir("C:\\Samples\\");
+
+    // Open document
+    auto doc = MakeObject<Document>(_dataDir + u"input.pdf");
+
+    auto annotation = new FreeTextAnnotation(doc->get_Pages()->idx_get(1),
+        MakeObject<Rectangle>(50, 600, 250, 650), 
+        MakeObject<DefaultAppearance>(u"Helvetica", 16,
+            System::Drawing::Color::get_Red()));
+    annotation->set_Contents(u"ABCDEFG");
+    annotation->get_Characteristics()->set_Border(System::Drawing::Color::get_Red());
+    annotation->set_Flags (AnnotationFlags::Print | AnnotationFlags::NoView);
+    doc->get_Pages()->idx_get(1)->get_Annotations()->Add(annotation);
+   
+    // Save output file
+    doc->Save(_dataDir + u"InvisibleAnnotation_out.pdf");
+}
+```
+
 ## Delete FreeText Annotation 
 
 The following code snippet shows how Delete FreeText Annotation from a PDF file.
