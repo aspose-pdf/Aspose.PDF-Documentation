@@ -11,6 +11,127 @@ sitemap:
     priority: 0.7
 ---
 
+## How to add Caret Annotation into existing PDF file
+
+Caret Annotation is a symbol that indicates text editing. Caret Annotation is also markup annotation, so the Caret class derives from the Markup class and also provides functions to get or set properties of the Caret Annotation and reset the flow of the Caret Annotation appearance.
+
+Steps with which we create Caret annotation:
+
+1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document).
+1. Create new [Caret Annotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.caret_annotation/) and set Caret parameters (new Rectangle, title, Subject, Flags, color, width, StartingStyle and EndingStyle). This annotation is used to indicate the insertion of text.
+1. Create new [Caret Annotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.caret_annotation/) and set Caret parameters (new Rectangle, title, Subject, Flags, color, width, StartingStyle and EndingStyle). This annotation is used to indicate the replacement of text.
+1. Create new [StrikeOutAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.strike_out_annotation/) and set parameters (new Rectangle, title, color, new QuadPoints and new points, Subject, InReplyTo,ReplyType).
+1. After we can Add annotations to the page.
+
+The following code snippet shows how to add Caret Annotation to a PDF file:
+
+```cpp
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+using namespace Aspose::Pdf::Annotations;
+
+void MarkupAnnotations::AddCaretAnnotation() {
+    String _dataDir("C:\\Samples\\");
+
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
+    // This annotation is used to indicate the insertion of text
+    auto caretAnnotation1 = MakeObject<CaretAnnotation>(
+        document->get_Pages()->idx_get(1), 
+        MakeObject<Rectangle>(299.988, 713.664, 308.708, 720.769));
+    caretAnnotation1->set_Title(u"Aspose User");
+    caretAnnotation1->set_Subject(u"Inserted text 1");
+    caretAnnotation1->set_Flags(AnnotationFlags::Print);
+    caretAnnotation1->set_Color(Color::get_Blue());
+
+    // This annotation is used to indicate the replacement of text
+    auto caretAnnotation2 = MakeObject<CaretAnnotation>(
+        document->get_Pages()->idx_get(1), 
+        new Rectangle(361.246, 727.908, 370.081, 735.107));
+
+    caretAnnotation2->set_Title(u"Aspose User");
+    caretAnnotation2->set_Flags(AnnotationFlags::Print);
+    caretAnnotation2->set_Subject(u"Inserted text 2");
+    caretAnnotation2->set_Color(Color::get_Blue());
+
+    auto strikeOutAnnotation = MakeObject<StrikeOutAnnotation>(
+        document->get_Pages()->idx_get(1), 
+        MakeObject<Rectangle>(318.407, 727.826, 368.916, 740.098));
+
+    strikeOutAnnotation->set_Color(Color::get_Blue());
+
+    strikeOutAnnotation->set_QuadPoints(
+        MakeArray<System::SharedPtr<Point>>({
+            MakeObject<Point>(321.66, 739.416),
+            MakeObject<Point>(365.664, 739.416), 
+            MakeObject<Point>(321.66, 728.508),
+            MakeObject<Point>(365.664, 728.508) }));
+
+    strikeOutAnnotation->set_Subject(u"Cross-out");
+    strikeOutAnnotation->set_InReplyTo(caretAnnotation2);
+    strikeOutAnnotation->set_ReplyType(ReplyType::Group);
+
+    document->get_Pages()->idx_get(1)->get_Annotations()->Add(caretAnnotation1);
+    document->get_Pages()->idx_get(1)->get_Annotations()->Add(caretAnnotation2);
+    document->get_Pages()->idx_get(1)->get_Annotations()->Add(strikeOutAnnotation);
+
+    document->Save(_dataDir + u"sample_caret.pdf");
+}
+```
+
+### Get Caret Annotation
+
+Please try using the following code snippet to Get Caret Annotation in PDF document
+
+```cpp
+void MarkupAnnotations::GetCaretAnnotation() {
+    
+    String _dataDir("C:\\Samples\\");
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample_caret.pdf");
+
+    // Filter annotations using AnnotationSelector
+    auto page = document->get_Pages()->idx_get(1);
+    auto annotationSelector = MakeObject<AnnotationSelector>(
+        MakeObject<CaretAnnotation>(page, Rectangle::get_Trivial()));
+    page->Accept(annotationSelector);
+    auto caretAnnotations = annotationSelector->get_Selected();
+
+    // print results
+    for (auto ca : caretAnnotations) {
+        Console::WriteLine(ca->get_Rect());
+    }
+}
+```
+
+### Delete Caret Annotation
+
+The following code snippet shows how Delete Caret Annotation from a PDF file.
+
+```cpp
+
+void MarkupAnnotations::DeleteCaretAnnotation() {
+    
+    String _dataDir("C:\\Samples\\");
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample_caret.pdf");
+
+    // Filter annotations using AnnotationSelector
+    auto page = document->get_Pages()->idx_get(1);
+    auto annotationSelector = MakeObject<AnnotationSelector>(
+        MakeObject<CaretAnnotation>(page, Rectangle::get_Trivial()));
+    page->Accept(annotationSelector);
+    auto caretAnnotations = annotationSelector->get_Selected();
+
+    // delete annotation
+    for (auto ca : caretAnnotations) {
+        document->get_Pages()->idx_get(1)->get_Annotations()->Delete(ca);
+    }
+    document->Save(_dataDir + u"sample_caret_del.pdf");
+}
+```
+
 ## How to add Link Annotation
 
 A [Link Annotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation) is a hypertext link that leads to a destination elsewhere in the document or to an action to be performed.
@@ -119,8 +240,6 @@ void DeleteLinkAnnotations()
     document->Save(_dataDir + u"SimpleResume_del.pdf");        
 }
 ```
-
-## 
 
 ## Redact certain page region with Redaction Annotation using Aspose.PDF for C++
 
