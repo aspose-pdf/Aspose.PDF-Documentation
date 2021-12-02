@@ -15,7 +15,7 @@ sitemap:
 
 Caret Annotation is a symbol that indicates text editing. Caret Annotation is also markup annotation, so the Caret class derives from the Markup class and also provides functions to get or set properties of the Caret Annotation and reset the flow of the Caret Annotation appearance.
 
-Steps with which we create an Line annotation:
+Steps with which we create Caret annotation:
 
 1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document).
 1. Create new [Caret Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/CaretAnnotation) and set Caret parameters (new Rectangle, title, Subject, Flags, color, width, StartingStyle and EndingStyle). This annotation is used to indicate the insertion of text.
