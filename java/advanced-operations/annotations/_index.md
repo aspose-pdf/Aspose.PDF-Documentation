@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library. Learn how to draw, open, or add an annotation with Java.
-lastmod: "2021-06-05"    
+lastmod: "2021-11-26"    
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -23,5 +23,4 @@ You are able to do the following:
 
 - [Overview of Annotations](/pdf/java/overview-of-annotations/) - learn which types of annotations are defined by the PDF specification, and what Aspose.PDF supports.
 - [Add, Delete and Get Annotation](/pdf/java/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
-- [Redact certain page region with RedactionAnnotation](/pdf/java/redact-certain-page-region-with-redactionannotation/) - how to redact certain page regions using RedactionAnnotations.
 - [Import and export annotation with XFDF format](/pdf/java/import-export-xfdf/) - Aspose.PDF library provided methods to import and export annotations data to XFDF files.

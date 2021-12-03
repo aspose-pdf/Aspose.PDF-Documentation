@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /cpp/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library. Learn how to draw, open, or add an annotation in C++
-lastmod: "2021-11-24"   
+lastmod: "2021-11-24"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

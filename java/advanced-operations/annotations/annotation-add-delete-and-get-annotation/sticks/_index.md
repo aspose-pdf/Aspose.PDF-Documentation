@@ -1,11 +1,11 @@
 ---
-title: PDF Watermark Annotation 
-linktitle: Watermark Annotation
+title: PDF Sticks Annotations using Java
+linktitle: Sticks Annotation
 type: docs
-weight: 130
-url: /java/watermark-annotation/
-description: The Watermark Annotation in the text uses to represent graphics on the page. Check code snippet to resolve this task. 
-lastmod: "2021-06-05"
+weight: 50
+url: /java/sticks-annotations/
+description: This topic about sticks annotations, as an example we shows the Watermark Annotation in the text. It uses to represent graphics on the page. Check code snippet to resolve this task.
+lastmod: "2021-11-24"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -57,6 +57,7 @@ public class ExampleWatermarkAnnotation {
         //Save the Document        
         document.save(_dataDir + "sample_watermark.pdf");
     }
+}
 ```
 
 ## Get Watermark Annotation
@@ -100,5 +101,4 @@ public class ExampleWatermarkAnnotation {
         }
         document.save(_dataDir + "sample_watermark_del.pdf");
     }
-}
 ```
