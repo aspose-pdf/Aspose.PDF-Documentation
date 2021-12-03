@@ -27,25 +27,24 @@ The following C++ code snippet shows you how to split PDF pages into individual 
 
 ```cpp
 void SplittingDocuments() {
+    // String for path name
+    String _dataDir("C:\\Samples\\");
 
- // String for path name
- String _dataDir("C:\\Samples\\");
+    // String for input file name
+    String documentFileName("sample.pdf");
+    
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + documentFileName);
 
- // String for input file name
- String documentFileName("sample.pdf");
- 
- // Open document
- auto document = MakeObject<Document>(_dataDir + documentFileName);
+    int pageCount = 1;
 
- int pageCount = 1;
-
- // Loop through all the pages
- for(auto page : document->get_Pages())
- {
-  auto newDocument = MakeObject<Document>(_dataDir + documentFileName);
-  newDocument->get_Pages()->Add(page);
-  newDocument->Save(_dataDir + u"page_" + pageCount + u"_out.pdf");
-  pageCount++;
- }
+    // Loop through all the pages
+    for(auto page : document->get_Pages())
+    {
+        auto newDocument = MakeObject<Document>(_dataDir + documentFileName);
+        newDocument->get_Pages()->Add(page);
+        newDocument->Save(_dataDir + u"page_" + pageCount + u"_out.pdf");
+        pageCount++;
+    }
 }
 ```

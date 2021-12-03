@@ -26,18 +26,17 @@ The following code snippet shows you how to validate PDF document for PDF/A-1A.
 
 ```cpp
 void ExampleValidate01() {
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("ValidatePDFAStandard.pdf");
+    String outputFileName("Validation-result-A1A.xml");
 
- // String for file name.
- String inputFileName("ValidatePDFAStandard.pdf");
- String outputFileName("Validation-result-A1A.xml");
-
- // Open document
- auto document = MakeObject<Document>(_dataDir + inputFileName);
- // Validate PDF for PDF/A-1a
- document->Validate(_dataDir + outputFileName, PdfFormat::PDF_A_1A);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Validate PDF for PDF/A-1a
+    document->Validate(_dataDir + outputFileName, PdfFormat::PDF_A_1A);
 }
 ```
 
@@ -45,18 +44,17 @@ The following code snippet shows you how to validate PDF document for PDF/A-1B.
 
 ```cpp
 void ExampleValidate02() {
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("ValidatePDFAStandard.pdf");
+    String outputFileName("Validation-result-A1B.xml");
 
- // String for file name.
- String inputFileName("ValidatePDFAStandard.pdf");
- String outputFileName("Validation-result-A1B.xml");
-
- // Open document
- auto document = MakeObject<Document>(_dataDir + inputFileName);
- // Validate PDF for PDF/A-1a
- document->Validate(_dataDir + outputFileName, PdfFormat::PDF_A_1B);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Validate PDF for PDF/A-1a
+    document->Validate(_dataDir + outputFileName, PdfFormat::PDF_A_1B);
 }
 ```
 
@@ -72,62 +70,59 @@ The following code snippet shows how to create a table of contents inside an exi
 
 ```cpp
 void ExampleToc01() {
+    // String for path names.
+    String _dataDir("C:\\Samples\\");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for file names
+    String inputFileName("AddTOC.pdf");
+    String outputFileName("TOC_out.pdf");
 
- // String for file name.
- String inputFileName("AddTOC.pdf");
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
- String outputFileName("TOC_out.pdf");
+    // Get access to first page of PDF file
+    auto tocPage = document->get_Pages()->Insert(1);
 
- auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Create object to represent TOC information
+    auto tocInfo = MakeObject<TocInfo>();
+    auto title = MakeObject<TextFragment>("Table Of Contents");
+    title->get_TextState()->set_FontSize(20);
+    title->get_TextState()->set_FontStyle(FontStyles::Bold);
 
+    // Set the title for TOC
+    tocInfo->set_Title(title);
+    tocPage->set_TocInfo(tocInfo);
 
- // Get access to first page of PDF file
- auto tocPage = document->get_Pages()->Insert(1);
+    // Create string objects which will be used as TOC elements
+    auto titles = MakeArray<String>(4);
+    titles->SetValue(u"First page", 0);
+    titles->SetValue(u"Second page", 1);
+    titles->SetValue(u"Third page", 2);
+    titles->SetValue(u"Fourth page", 3);
 
- // Create object to represent TOC information
- auto tocInfo = MakeObject<TocInfo>();
- auto title = MakeObject<TextFragment>("Table Of Contents");
- title->get_TextState()->set_FontSize(20);
- title->get_TextState()->set_FontStyle(FontStyles::Bold);
+    for (int i = 0; i < 2; i++)
+    {
+        // Create Heading object
+        auto heading2 = MakeObject<Heading>(1);
+        auto segment2 = MakeObject<TextSegment>();
+        heading2->set_TocPage(tocPage);
+        heading2->get_Segments()->Add(segment2);
 
- // Set the title for TOC
- tocInfo->set_Title(title);
- tocPage->set_TocInfo(tocInfo);
+        // Specify the destination page for heading object
 
- // Create string objects which will be used as TOC elements
- auto titles = MakeArray<String>(4);
- titles->SetValue(u"First page", 0);
- titles->SetValue(u"Second page", 1);
- titles->SetValue(u"Third page", 2);
- titles->SetValue(u"Fourth page", 3);
+        heading2->set_DestinationPage(document->get_Pages()->idx_get(i + 2));
 
- for (int i = 0; i < 2; i++)
- {
-  // Create Heading object
-  auto heading2 = MakeObject<Heading>(1);
-  auto segment2 = MakeObject<TextSegment>();
-  heading2->set_TocPage(tocPage);
-  heading2->get_Segments()->Add(segment2);
+        // Destination page
+        heading2->set_Top(document->get_Pages()->idx_get(i + 2)->get_Rect()->get_Height());
 
-  // Specify the destination page for heading object
+        // Destination coordinate
+        segment2->set_Text(titles[i]);
 
-  heading2->set_DestinationPage(document->get_Pages()->idx_get(i + 2));
+        // Add heading to page containing TOC
+        tocPage->get_Paragraphs()->Add(heading2);
+    }
 
-  // Destination page
-  heading2->set_Top(document->get_Pages()->idx_get(i + 2)->get_Rect()->get_Height());
-
-  // Destination coordinate
-  segment2->set_Text(titles[i]);
-
-  // Add heading to page containing TOC
-  tocPage->get_Paragraphs()->Add(heading2);
- }
-
- // Save the updated document
- document->Save(_dataDir + outputFileName);
+    // Save the updated document
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -137,77 +132,77 @@ Aspose.PDF for C++ also allows setting different TabLeaderType for different TOC
 
 ```cpp
 void ExampleToc02() {
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for file name.
- String inputFileName("AddTOC.pdf");
+    // String for file name.
+    String inputFileName("AddTOC.pdf");
 
- String outputFileName("TOC_out.pdf");
+    String outputFileName("TOC_out.pdf");
 
- auto document = MakeObject<Document>(_dataDir + inputFileName);
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
- auto tocPage = document->get_Pages()->Add();
- auto tocInfo = MakeObject<TocInfo>();
+    auto tocPage = document->get_Pages()->Add();
+    auto tocInfo = MakeObject<TocInfo>();
 
- //set LeaderType
- tocInfo->set_LineDash(TabLeaderType::Solid);
+    //set LeaderType
+    tocInfo->set_LineDash(TabLeaderType::Solid);
 
- // Create object to represent TOC information
- auto tocInfo = MakeObject<TocInfo>();
- auto title = MakeObject<TextFragment>("Table Of Contents");
- title->get_TextState()->set_FontSize(20);
- title->get_TextState()->set_FontStyle(FontStyles::Bold);
+    // Create object to represent TOC information
+    auto tocInfo = MakeObject<TocInfo>();
+    auto title = MakeObject<TextFragment>("Table Of Contents");
+    title->get_TextState()->set_FontSize(20);
+    title->get_TextState()->set_FontStyle(FontStyles::Bold);
 
- // Set the title for TOC
- tocInfo->set_Title(title);
+    // Set the title for TOC
+    tocInfo->set_Title(title);
 
- //Add the list section to the sections collection of the Pdf document
- tocPage->set_TocInfo(tocInfo);
+    //Add the list section to the sections collection of the Pdf document
+    tocPage->set_TocInfo(tocInfo);
 
- //Define the format of the four levels list by setting the left margins
- //and
- //text format settings of each level
+    //Define the format of the four levels list by setting the left margins
+    //and
+    //text format settings of each level
 
- tocInfo->set_FormatArrayLength(4);
- tocInfo->get_FormatArray()->idx_get(0)->get_Margin()->set_Left(0);
- tocInfo->get_FormatArray()->idx_get(0)->get_Margin()->set_Right(30);
- tocInfo->get_FormatArray()->idx_get(0)->set_LineDash(TabLeaderType::Dot);
- tocInfo->get_FormatArray()->idx_get(0)->get_TextState()->set_FontStyle(FontStyles::Bold | FontStyles::Italic);
- tocInfo->get_FormatArray()->idx_get(1)->get_Margin()->set_Left(10);
- tocInfo->get_FormatArray()->idx_get(1)->get_Margin()->set_Right(30);
- tocInfo->get_FormatArray()->idx_get(1)->set_LineDash(TabLeaderType::None);
- tocInfo->get_FormatArray()->idx_get(1)->get_TextState()->set_FontSize(10);
- tocInfo->get_FormatArray()->idx_get(2)->get_Margin()->set_Left(20);
- tocInfo->get_FormatArray()->idx_get(2)->get_Margin()->set_Right(30);
- tocInfo->get_FormatArray()->idx_get(2)->get_TextState()->set_FontStyle(FontStyles::Bold);
- tocInfo->get_FormatArray()->idx_get(3)->set_LineDash(TabLeaderType::Solid);
- tocInfo->get_FormatArray()->idx_get(3)->get_Margin()->set_Left(30);
- tocInfo->get_FormatArray()->idx_get(3)->get_Margin()->set_Right(30);
- tocInfo->get_FormatArray()->idx_get(3)->get_TextState()->set_FontStyle(FontStyles::Bold);
+    tocInfo->set_FormatArrayLength(4);
+    tocInfo->get_FormatArray()->idx_get(0)->get_Margin()->set_Left(0);
+    tocInfo->get_FormatArray()->idx_get(0)->get_Margin()->set_Right(30);
+    tocInfo->get_FormatArray()->idx_get(0)->set_LineDash(TabLeaderType::Dot);
+    tocInfo->get_FormatArray()->idx_get(0)->get_TextState()->set_FontStyle(FontStyles::Bold | FontStyles::Italic);
+    tocInfo->get_FormatArray()->idx_get(1)->get_Margin()->set_Left(10);
+    tocInfo->get_FormatArray()->idx_get(1)->get_Margin()->set_Right(30);
+    tocInfo->get_FormatArray()->idx_get(1)->set_LineDash(TabLeaderType::None);
+    tocInfo->get_FormatArray()->idx_get(1)->get_TextState()->set_FontSize(10);
+    tocInfo->get_FormatArray()->idx_get(2)->get_Margin()->set_Left(20);
+    tocInfo->get_FormatArray()->idx_get(2)->get_Margin()->set_Right(30);
+    tocInfo->get_FormatArray()->idx_get(2)->get_TextState()->set_FontStyle(FontStyles::Bold);
+    tocInfo->get_FormatArray()->idx_get(3)->set_LineDash(TabLeaderType::Solid);
+    tocInfo->get_FormatArray()->idx_get(3)->get_Margin()->set_Left(30);
+    tocInfo->get_FormatArray()->idx_get(3)->get_Margin()->set_Right(30);
+    tocInfo->get_FormatArray()->idx_get(3)->get_TextState()->set_FontStyle(FontStyles::Bold);
 
- //Create a section in the Pdf document
- auto page = document->get_Pages()->Add();
+    //Create a section in the Pdf document
+    auto page = document->get_Pages()->Add();
 
- //Add four headings in the section
- for (int Level = 1; Level <= 4; Level++)
- {
-  auto heading2 = MakeObject<Heading>(Level);
-  auto segment2 = MakeObject<TextSegment>();
+    //Add four headings in the section
+    for (int Level = 1; Level <= 4; Level++)
+    {
+    auto heading2 = MakeObject<Heading>(Level);
+    auto segment2 = MakeObject<TextSegment>();
 
-  heading2->get_Segments()->Add(segment2);
-  heading2->set_IsAutoSequence(true);
-  heading2->set_TocPage(tocPage);
-  segment2->set_Text(u"Sample Heading" + Level);
-  heading2->get_TextState()->set_Font(FontRepository::FindFont(u"Arial Unicode MS"));
+    heading2->get_Segments()->Add(segment2);
+    heading2->set_IsAutoSequence(true);
+    heading2->set_TocPage(tocPage);
+    segment2->set_Text(u"Sample Heading" + Level);
+    heading2->get_TextState()->set_Font(FontRepository::FindFont(u"Arial Unicode MS"));
 
-  //Add the heading into Table Of Contents.
-  heading2->set_IsInList(true);
-  page->get_Paragraphs()->Add(heading2);
- }
+    //Add the heading into Table Of Contents.
+    heading2->set_IsInList(true);
+    page->get_Paragraphs()->Add(heading2);
+    }
 
- // save the Pdf
- document->Save(_dataDir + outputFileName);
+    // save the Pdf
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -219,60 +214,58 @@ Please check following code snippet to hide page numbers in the table of content
 
 ```cpp
 void ExampleToc03() {
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for file name.
- String inputFileName("AddTOC.pdf");
+    // String for file name.
+    String inputFileName("AddTOC.pdf");
 
- String outputFileName("TOC_out.pdf");
+    String outputFileName("TOC_out.pdf");
 
- auto document = MakeObject<Document>(_dataDir + inputFileName);
- auto tocPage = document->get_Pages()->Add();
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
+    auto tocPage = document->get_Pages()->Add();
 
- // Create object to represent TOC information
- auto tocInfo = MakeObject<TocInfo>();
- auto title = MakeObject<TextFragment>("Table Of Contents");
- title->get_TextState()->set_FontSize(20);
- title->get_TextState()->set_FontStyle(FontStyles::Bold);
+    // Create object to represent TOC information
+    auto tocInfo = MakeObject<TocInfo>();
+    auto title = MakeObject<TextFragment>("Table Of Contents");
+    title->get_TextState()->set_FontSize(20);
+    title->get_TextState()->set_FontStyle(FontStyles::Bold);
 
- // Set the title for TOC
- tocInfo->set_Title(title);
+    // Set the title for TOC
+    tocInfo->set_Title(title);
 
- //Add the list section to the sections collection of the Pdf document  
- tocPage->set_TocInfo(tocInfo);
+    //Add the list section to the sections collection of the Pdf document  
+    tocPage->set_TocInfo(tocInfo);
 
+    tocInfo->set_IsShowPageNumbers(false);
 
+    //Define the format of the four levels list by setting the left margins and
+    //text format settings of each level
 
- tocInfo->set_IsShowPageNumbers(false);
+    tocInfo->set_FormatArrayLength(4);
+    tocInfo->get_FormatArray()->idx_get(0)->get_Margin()->set_Right(0);
+    tocInfo->get_FormatArray()->idx_get(0)->get_TextState()->set_FontStyle(FontStyles::Bold | FontStyles::Italic);
+    tocInfo->get_FormatArray()->idx_get(1)->get_Margin()->set_Left(30);
+    tocInfo->get_FormatArray()->idx_get(1)->get_TextState()->set_Underline(true);
+    tocInfo->get_FormatArray()->idx_get(1)->get_TextState()->set_FontSize(10);
+    tocInfo->get_FormatArray()->idx_get(2)->get_TextState()->set_FontStyle(FontStyles::Bold);
+    tocInfo->get_FormatArray()->idx_get(3)->get_TextState()->set_FontStyle(FontStyles::Bold);
 
- //Define the format of the four levels list by setting the left margins and
- //text format settings of each level
-
- tocInfo->set_FormatArrayLength(4);
- tocInfo->get_FormatArray()->idx_get(0)->get_Margin()->set_Right(0);
- tocInfo->get_FormatArray()->idx_get(0)->get_TextState()->set_FontStyle(FontStyles::Bold | FontStyles::Italic);
- tocInfo->get_FormatArray()->idx_get(1)->get_Margin()->set_Left(30);
- tocInfo->get_FormatArray()->idx_get(1)->get_TextState()->set_Underline(true);
- tocInfo->get_FormatArray()->idx_get(1)->get_TextState()->set_FontSize(10);
- tocInfo->get_FormatArray()->idx_get(2)->get_TextState()->set_FontStyle(FontStyles::Bold);
- tocInfo->get_FormatArray()->idx_get(3)->get_TextState()->set_FontStyle(FontStyles::Bold);
-
- auto page = document->get_Pages()->Add();
- //Add four headings in the section
- for (int Level = 1; Level != 5; Level++)
- {
-  auto heading2 = MakeObject<Heading>(Level);
-  auto segment2 = MakeObject<TextSegment>();
-  heading2->set_TocPage(tocPage);
-  heading2->get_Segments()->Add(segment2);
-  heading2->set_IsAutoSequence(true);
-  segment2->set_Text(u"this is heading of level " + Level);
-  heading2->set_IsInList(true);
-  page->get_Paragraphs()->Add(heading2);
- }
- // save the Pdf
- document->Save(_dataDir + outputFileName);
+    auto page = document->get_Pages()->Add();
+    //Add four headings in the section
+    for (int Level = 1; Level != 5; Level++)
+    {
+        auto heading2 = MakeObject<Heading>(Level);
+        auto segment2 = MakeObject<TextSegment>();
+        heading2->set_TocPage(tocPage);
+        heading2->get_Segments()->Add(segment2);
+        heading2->set_IsAutoSequence(true);
+        segment2->set_Text(u"this is heading of level " + Level);
+        heading2->set_IsInList(true);
+        page->get_Paragraphs()->Add(heading2);
+    }
+    // save the Pdf
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -285,36 +278,36 @@ In order to accomplish the above stated requirement, we can use [JavascriptActio
 ```cpp
 void SetPDFexpiryDate() {
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for file name. 
- String outputFileName("SetExpiryDate_out.pdf");
+    // String for file name. 
+    String outputFileName("SetExpiryDate_out.pdf");
 
- // Instantiate Document object
- auto document = MakeObject<Document>();
+    // Instantiate Document object
+    auto document = MakeObject<Document>();
 
- // Add page to pages collection of PDF file
- document->get_Pages()->Add();
+    // Add page to pages collection of PDF file
+    document->get_Pages()->Add();
 
- // Add text fragment to paragraphs collection of page object
- document->get_Pages()->idx_get(1)->get_Paragraphs()->Add(new TextFragment(u"Hello World..."));
+    // Add text fragment to paragraphs collection of page object
+    document->get_Pages()->idx_get(1)->get_Paragraphs()->Add(new TextFragment(u"Hello World..."));
 
- String javascriptCode(u"var year=2017;");
- javascriptCode += u"var month=5;";
- javascriptCode += u"today = new Date(); today = new Date(today.getFullYear(), today.getMonth());";
- javascriptCode += u"expiry = new Date(year, month);";
- javascriptCode += u"if (today.getTime() > expiry.getTime())";
- javascriptCode += u"app.alert('The file is expired. You need a new one.');";
+    String javascriptCode(u"var year=2017;");
+    javascriptCode += u"var month=5;";
+    javascriptCode += u"today = new Date(); today = new Date(today.getFullYear(), today.getMonth());";
+    javascriptCode += u"expiry = new Date(year, month);";
+    javascriptCode += u"if (today.getTime() > expiry.getTime())";
+    javascriptCode += u"app.alert('The file is expired. You need a new one.');";
 
- // Create JavaScript object to set PDF expiry date
- auto javaScript = MakeObject<Aspose::Pdf::Annotations::JavascriptAction>(javascriptCode);
+    // Create JavaScript object to set PDF expiry date
+    auto javaScript = MakeObject<Aspose::Pdf::Annotations::JavascriptAction>(javascriptCode);
 
- // Set JavaScript as PDF open action
- document->set_OpenAction(javaScript);
+    // Set JavaScript as PDF open action
+    document->set_OpenAction(javaScript);
 
- // Save PDF Document
- document->Save(_dataDir + outputFileName);
+    // Save PDF Document
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -330,43 +323,44 @@ The code snippets below shows how to use [CustomerProgressHandler](https://apire
 using ProgressHandler = System::MulticastDelegate<void(SharedPtr<UnifiedSaveOptions::ProgressEventHandlerInfo>)>;
 void ConversionProgressCallback(SharedPtr<UnifiedSaveOptions::ProgressEventHandlerInfo> eventInfo)
 {
- String eventType;
- switch (eventInfo->EventType)
- {
- case ProgressEventType::ResultPageCreated:
-  eventType = u"ResultPageCreated";
-  break;
- case ProgressEventType::ResultPageSaved:
-  eventType = u"ResultPageSaved";
-  break;
- case ProgressEventType::SourcePageAnalysed:
-  eventType = u"SourcePageAnalysed";
-  break;
- case ProgressEventType::TotalProgress:
-  eventType = u"TotalProgress";
-  break;
- }
- Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}", eventType, eventInfo->Value, eventInfo->MaxValue));
+    String eventType;
+    switch (eventInfo->EventType)
+    {
+    case ProgressEventType::ResultPageCreated:
+        eventType = u"ResultPageCreated";
+        break;
+    case ProgressEventType::ResultPageSaved:
+        eventType = u"ResultPageSaved";
+        break;
+    case ProgressEventType::SourcePageAnalysed:
+        eventType = u"SourcePageAnalysed";
+        break;
+    case ProgressEventType::TotalProgress:
+        eventType = u"TotalProgress";
+        break;
+    }
+    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}", 
+        eventType, eventInfo->Value, eventInfo->MaxValue));
 }
 ```
 
 ```cpp
 void DetermineProgressOfPDFfileGeneration() {
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for file name.
- String inputFileName("AddTOC.pdf");
+    // String for file name.
+    String inputFileName("AddTOC.pdf");
 
- String outputFileName("TOC_out.pdf");
+    String outputFileName("TOC_out.pdf");
 
- auto document = MakeObject<Document>(_dataDir + inputFileName);
- // Open document
- auto saveOptions = MakeObject<DocSaveOptions>();
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open document
+    auto saveOptions = MakeObject<DocSaveOptions>();
 
- saveOptions->CustomProgressHandler = ProgressHandler(ConversionProgressCallback);
+    saveOptions->CustomProgressHandler = ProgressHandler(ConversionProgressCallback);
 
- document->Save(_dataDir + outputFileName, saveOptions);
+    document->Save(_dataDir + outputFileName, saveOptions);
 }
 ```
 
@@ -377,23 +371,22 @@ Aspose.PDF for C++ provides the function to flatten your PDF in C++ with just fe
 
 ```cpp
 void FlattenFillablePDF() {
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String inputFileName("sample-form.pdf");
+    String outputFileName("FlattenForms_out.pdf");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
- // String for file name.
- String inputFileName("sample-form.pdf");
- String outputFileName("FlattenForms_out.pdf");
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
- auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Flatten Flatten Fillable PDF 
+    if (document->get_Form()->get_Fields()->get_Count() > 0)
+    {
+        for (auto item : document->get_Form()->get_Fields())
+        item->Flatten();
+    }
 
- // Flatten Flatten Fillable PDF 
- if (document->get_Form()->get_Fields()->get_Count() > 0)
- {
-  for (auto item : document->get_Form()->get_Fields())
-   item->Flatten();
- }
-
- // Save the updated document
- document->Save(_dataDir + outputFileName);
+    // Save the updated document
+    document->Save(_dataDir + outputFileName);
 }
 ```
