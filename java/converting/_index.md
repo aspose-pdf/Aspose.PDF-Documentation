@@ -47,8 +47,8 @@ This section includes such formats as: EPUB, Markdown, PCL, XPS, LATex/TeX, Text
 - [Convert other file formats to PDF](/pdf/java/convert-other-files-to-pdf/) - this topic describes conversion with various formats like EPUB, XPS, Postscript, text and others
 - [Convert PDF file to other formats](/pdf/java/convert-pdf-to-other-files/) - this topic describes way for conversion PDF document to various formats
 
-PDF / A is a version of PDF designed for the long-term archiving of electronic documents.
-If honestly, externally, it is very difficult to determine if it is PDF or PDF / A. To check this file, validators are used. Check the following articles for a quality converting PDF to PDF/A and vice versa.
+PDF/A is a version of PDF designed for the long-term archiving of electronic documents.
+If honestly, externally, it is very difficult to determine if it is PDF or PDF/A. To check this file, validators are used. Check the following articles for a quality converting PDF to PDF/A and vice versa.
 
 - [Convert PDF to PDF/A formats](/pdf/java/convert-pdf-to-pdfa/) - Java library by Aspose.PDF has an easy way for converting PDF to PDF/A
 - [Convert PDF/A to PDF format](/pdf/java/convert-pdfa-to-pdf/) - convert PDF/A to PDF format with Java easy, fast, and high quality
