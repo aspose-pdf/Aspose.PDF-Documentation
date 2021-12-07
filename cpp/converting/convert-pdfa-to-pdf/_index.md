@@ -1,15 +1,17 @@
 ---
-title: Convert PDF/A to PDF 
-linktitle: Convert PDF/A to PDF
+title: Convert PDF/A to PDF format using C++
+linktitle: Convert PDF/A to PDF format
 type: docs
-weight: 350
+weight: 110
 url: /cpp/convert-pdfa-to-pdf/
-lastmod: "2021-06-05"
-description: To convert PDF/A to PDF you should remove restrictions from the original document. Aspose.PDF for C++ allows you to solve this problem easly and simply.
+lastmod: "2021-11-19"
+description: This topic show you how to Aspose.PDF allows to convert PDF/A file to PDF document with C++ library. 
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.8
 ---
+
+## Convert PDF/A document to PDF
 
 Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive
 ">PDF/A</abbr> restriction from the original document. Class [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) has method 'RemovePdfaCompliance' to remove the PDF compliance information from input/source file.
@@ -18,19 +20,19 @@ After [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#a
 ```cpp
 void ConvertPDFAtoPDF()
 {
- std::clog << "PDF/A to PDF convert: Start" << std::endl;
- String _dataDir("C:\\Samples\\Conversion\\");
- String infilename("sample-pdfa.pdf");
- String outfilename("PDFAToPDF_out.pdf");
+    std::clog << "PDF/A to PDF convert: Start" << std::endl;
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("sample-pdfa.pdf");
+    String outfilename("PDFAToPDF_out.pdf");
 
- auto document = MakeObject<Document>(_dataDir + infilename);
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
- // Remove PDF/A compliance information
- document->RemovePdfaCompliance();
+    // Remove PDF/A compliance information
+    document->RemovePdfaCompliance();
 
- // Save updated document
- document->Save(_dataDir + outfilename);
- std::clog << "PDF/A to PDF convert: End" << std::endl;
+    // Save updated document
+    document->Save(_dataDir + outfilename);
+    std::clog << "PDF/A to PDF convert: End" << std::endl;
 }
 ```
 
@@ -39,17 +41,17 @@ This info also removes if you make any changes in the document (e.g. add pages).
 ```cpp
 void ConvertPDFAtoPDFAdvanced()
 {
- std::clog << "PDF/A to PDF convert: Start" << std::endl;
- String _dataDir("C:\\Samples\\Conversion\\");
- String infilename("sample-pdfa.pdf");
- String outfilename("PDFAToPDF_out.pdf");
+    std::clog << "PDF/A to PDF convert: Start" << std::endl;
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("sample-pdfa.pdf");
+    String outfilename("PDFAToPDF_out.pdf");
 
- auto document = MakeObject<Document>(_dataDir + infilename);
- // Adding a new (empty) page removes PDF/A compliance information.
+    auto document = MakeObject<Document>(_dataDir + infilename);
+    // Adding a new (empty) page removes PDF/A compliance information.
 
- document->get_Pages()->Add();
- // Save updated document
- document->Save(_dataDir + outfilename);
- std::clog << "PDF/A to PDF convert: End" << std::endl;
+    document->get_Pages()->Add();
+    // Save updated document
+    document->Save(_dataDir + outfilename);
+    std::clog << "PDF/A to PDF convert: End" << std::endl;
 }
 ```
