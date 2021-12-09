@@ -241,3 +241,125 @@ void MultimediaAnnotation::Add3DAnnottaion()
 This code example showed us such a model:
 
 ![3D Annotation demo](3d_demo.png)
+
+
+## Add Widget Annotation
+
+A Widget Annotation represents the appearance of form fields in an interactive PDF form. 
+
+Since PDF v 1.2 we can use Widget Annotations. These are interactive form elements that we can add to PDF to make it easier to enter, submit information, or perform some other action with the user. Although widgets are a special type of annotation, we cannot create them as annotations directly, because widget annotations are a graphical representation of a form field on specific pages.
+
+Each form field for each location in the document represents one Annotation Widget. Location-specific annotation data for the widget is added to a specific page. Each form field has several options. A button can be a toggle, checkbox, or button. The selection widget can be a list box or a combo box.
+
+Aspose.PDF for C++ allows you to add this annotation using [Widget Annotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.widget_annotation/) class.
+
+To add a button to the page we need use the next code snippet:
+
+```cpp
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Forms;
+using namespace Aspose::Pdf::Annotations;
+
+void ExampleWidgetAnnotation::AddButton() {
+
+    String _dataDir("C:\\Samples\\");
+
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
+    auto page = document->get_Pages()->idx_get(1);
+
+    auto rect = MakeObject<Rectangle>(72, 748, 164, 768);
+
+    auto printButton = MakeObject<ButtonField>(page, rect);
+    printButton->set_AlternateName(u"Print current document");
+    printButton->set_Color(Color::get_Black());
+    printButton->set_PartialName(u"printBtn1");
+    printButton->set_NormalCaption(u"Print Document");
+
+    auto border = MakeObject<Border>(printButton);
+    border->set_Style(BorderStyle::Solid);
+    border->set_Width(2);
+
+    printButton->set_Border(border);
+    printButton->get_Characteristics()->set_Border(System::Drawing::Color::FromArgb(255, 0, 0, 255));
+    printButton->get_Characteristics()->set_Background(System::Drawing::Color::FromArgb(255, 0, 191, 255));
+    auto wa = System::DynamicCast<Field>(printButton);
+    document->get_Form()->Add(wa);
+
+    document->Save(_dataDir + u"sample_widgetannot.pdf");
+}
+```
+
+### Using Document-navigation actions
+
+This example shows how to create 4 buttons:
+
+```cpp
+void ExampleWidgetAnnotation::AddDocumentNavigationActions() {
+
+    String _dataDir("C:\\Samples\\");
+
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"JSON Fundamenals.pdf");
+
+    auto buttons = MakeArray<System::SmartPtr<ButtonField>>(4);
+    auto alternateNames = MakeArray<String>({ u"Go to first page", u"Go to prev page", u"Go to next page", u"Go to last page" });    
+    auto normalCaptions = MakeArray<String>({ u"First", u"Prev", u"Next", u"Last" });
+    PredefinedAction actions[] = { PredefinedAction::FirstPage, PredefinedAction::PrevPage,
+                                    PredefinedAction::NextPage, PredefinedAction::LastPage };
+    auto clrBorder = System::Drawing::Color::FromArgb(255, 0, 255, 0);
+    auto clrBackGround = System::Drawing::Color::Color::FromArgb(255, 0, 96, 70);
+
+// We should create the buttons without attaching them to the page.
+
+    for (int i = 0; i < 4; i++) {        
+        buttons[i] = MakeObject<ButtonField>(document, MakeObject<Rectangle>(32 + i * 80, 28, 104 + i * 80, 68));
+        buttons[i]->set_AlternateName(alternateNames[i]);
+        buttons[i]->set_Color(Color::get_White());
+        buttons[i]->set_NormalCaption(normalCaptions[i]);
+        buttons[i]->set_OnActivated(new NamedAction(actions[i]));
+        auto border = MakeObject<Border>(buttons[i]);
+        border->set_Style(BorderStyle::Solid);
+        border->set_Width(2);
+        buttons[i]->set_Border(border);
+        buttons[i]->get_Characteristics()->set_Border(clrBorder);
+        buttons[i]->get_Characteristics()->set_Background(clrBackGround);
+    }
+
+// We should duplicate this array of buttons on each page in the document.
+
+    for (int pageIndex = 1; pageIndex <= 4; pageIndex++)
+        for (int i = 0; i < 4; i++)
+            document->get_Form()->Add(buttons[i], String::Format(u"btn{0}_{1}", pageIndex,(i + 1)), pageIndex);
+
+    document->get_Form()->idx_get(u"btn1_1")->set_ReadOnly(true);
+    document->get_Form()->idx_get(u"btn1_2")->set_ReadOnly(true);
+
+    document->get_Form()->idx_get(String::Format(u"btn{0}_3", document->get_Pages()->get_Count()))->set_ReadOnly(true);
+    document->get_Form()->idx_get(String::Format(u"btn{0}_4", document->get_Pages()->get_Count()))->set_ReadOnly(true);
+    document->Save(_dataDir + u"sample_widgetannot_2.pdf");
+}
+```
+
+### Delete Widget Annotation
+
+```cpp
+void ExampleWidgetAnnotation::DeleteWidgetAnnotation() {
+
+    String _dataDir("C:\\Samples\\");
+
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample_widgetannot.pdf");
+    auto page = document->get_Pages()->idx_get(1);
+    auto annotationSelector = MakeObject<AnnotationSelector>(MakeObject<ButtonField>(page, Rectangle::get_Trivial()));
+    page->Accept(annotationSelector);
+    auto buttonFields = annotationSelector->get_Selected();
+
+    // delete annotations
+    for (auto wa : buttonFields) {
+        page->get_Annotations()->Delete(wa);
+    }
+    document->Save(_dataDir + u"sample_widgetannot_del.pdf");
+}
+```
