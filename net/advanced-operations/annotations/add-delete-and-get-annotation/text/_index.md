@@ -1,6 +1,6 @@
 ---
-title: PDF Text Annotation
-Texttitle: Text Annotation
+title: PDF Text Annotations
+Texttitle: Text Annotations
 type: docs
 weight: 10
 url: /net/text-annotation/

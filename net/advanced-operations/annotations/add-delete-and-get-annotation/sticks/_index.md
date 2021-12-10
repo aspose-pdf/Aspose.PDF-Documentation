@@ -1,6 +1,6 @@
 ---
-title: PDF Sticks Annotations using C#
-linktitle: Sticks Annotation
+title: PDF Sticks Annotations 
+linktitle: Sticks Annotations
 type: docs
 weight: 50
 url: /net/sticks-annotations/

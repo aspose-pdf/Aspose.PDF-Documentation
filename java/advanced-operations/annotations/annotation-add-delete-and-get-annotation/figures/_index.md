@@ -1,5 +1,5 @@
 ---
-title: Add Figures Annotations using Java
+title: PDF Figures Annotations 
 linktitle: Figures Annotations
 type: docs
 weight: 30

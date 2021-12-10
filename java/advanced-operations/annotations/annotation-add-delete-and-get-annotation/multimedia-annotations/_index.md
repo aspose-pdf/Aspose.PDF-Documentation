@@ -1,6 +1,6 @@
 ---
-title: PDF Multimedia Annotation using Java
-linktitle: Multimedia Annotation
+title: PDF Multimedia Annotations 
+linktitle: Multimedia Annotations
 type: docs
 weight: 40
 url: /java/multimedia-annotation/

@@ -1,5 +1,5 @@
 ---
-title: PDF Hightlights Annotation using Java
+title: PDF Hightlights Annotation 
 linktitle: Hightlights Annotation
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title:  Add, Delete and Get Annotation using Aspose.PDF for .NET
+title:  Add, Delete and Get Annotation 
 type: docs
 linktitle: Add, Delete and Get Annotation
 weight: 20

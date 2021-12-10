@@ -1,5 +1,5 @@
 ---
-title: Extra Annotations using Java
+title: PDF Extra Annotations 
 linktitle: Extra Annotations
 type: docs
 weight: 60

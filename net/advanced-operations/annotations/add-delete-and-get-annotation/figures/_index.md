@@ -1,5 +1,5 @@
 ---
-title: Add Figures Annotations using C#
+title: Add Figures Annotations 
 linktitle: Figures Annotations
 type: docs
 weight: 30

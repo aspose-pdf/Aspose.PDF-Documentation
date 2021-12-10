@@ -1,6 +1,6 @@
 ---
-title: PDF Hightlights Annotation using C#
-linktitle: Hightlights Annotation
+title: PDF Hightlights Annotations
+linktitle: Hightlights Annotations
 type: docs
 weight: 20
 url: /net/hightlights-annotation/

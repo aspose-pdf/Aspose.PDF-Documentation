@@ -1,6 +1,6 @@
 ---
-title: PDF Sticks Annotations using Java
-linktitle: Sticks Annotation
+title: PDF Sticks Annotations 
+linktitle: Sticks Annotations
 type: docs
 weight: 50
 url: /java/sticks-annotations/
