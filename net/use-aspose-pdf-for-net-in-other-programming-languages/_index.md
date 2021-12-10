@@ -1,11 +1,11 @@
 ---
 title: Use Aspose.PDF for .NET in Other Programming Languages
 type: docs
-weight: 40
+weight: 110
 url: /net/use-aspose-pdf-for-net-in-other-programming-languages/
 ---
 
-###### **This section includes the following topics:**
+
 - [Choose the Platform and Interoperability Technology](/pdf/net/choose-the-platform-and-interoperability-technology/)
 - [Use Aspose.PDF for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)
 - [ASP - VBScript via COM Interop](/pdf/net/asp-vbscript-via-com-interop/)
