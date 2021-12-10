@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+## Add Rectangle object
+
 Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) object where you also offers the feature to fill rectangle object with a certain color, control Z-Order, add gradiant color fill and etc.
 
 First, let's look at the possibility of creating a Rectangle object.
