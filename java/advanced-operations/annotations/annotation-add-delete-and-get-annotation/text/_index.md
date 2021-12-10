@@ -34,7 +34,7 @@ import com.aspose.pdf.*;
 import java.util.*;
 
 public class ExampleTextAnnotation {
-    
+
     private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
 
     public static void AddTextAnnotation()
@@ -75,7 +75,7 @@ import com.aspose.pdf.*;
 import java.util.*;
 
 public class ExampleFreeTextAnnotation {
-    
+
     private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
 
     public static void AddFreeTextAnnotation()
@@ -83,12 +83,12 @@ public class ExampleFreeTextAnnotation {
         // Load the PDF file
         Document document = new Document(_dataDir + "sample.pdf");
         Page page = document.getPages().get_Item(1);
-        
+
         DefaultAppearance defaultAppearance = new DefaultAppearance();
         defaultAppearance.setFontName("Helvetica");
         defaultAppearance.setFontSize(12);
         defaultAppearance.setTextColor(java.awt.Color.BLUE);
-        
+
         FreeTextAnnotation freeTextAnnotation = new FreeTextAnnotation(page, new Rectangle(300.0, 770.0, 400.0, 790.0), defaultAppearance);
 
         freeTextAnnotation.setRichText("Free Text Demo");
@@ -100,7 +100,7 @@ public class ExampleFreeTextAnnotation {
 
 ## Get Free Text Annotation
 
-Aspose.PDF for Java allows you to get Free Text Annotation from your PDF document. 
+Aspose.PDF for Java allows you to get Free Text Annotation from your PDF document.
 
 Please, check the next code snippet to resolve this task:
 
@@ -125,7 +125,7 @@ public static void GetFreeTextAnnotation() {
 
 ## Delete Free Text Annotation
 
-Aspose.PDF for Java allows you to delete Free Text Annotation from your PDF document. 
+Aspose.PDF for Java allows you to delete Free Text Annotation from your PDF document.
 
 Please, check the next code snippet to resolve this task:
 
@@ -140,7 +140,7 @@ Please, check the next code snippet to resolve this task:
                  new FreeTextAnnotation(page, Rectangle.getTrivial(), new DefaultAppearance()));
          page.accept(annotationSelector);
          List<Annotation> freeTextAnnotations = annotationSelector.getSelected();
- 
+
          // delete annotations
          for (Annotation fa : freeTextAnnotations) {
             page.getAnnotations().delete(fa);
@@ -166,7 +166,7 @@ The following code snippet shows you how to delete all the annotations from a pa
                  new TextAnnotation(page, Rectangle.getTrivial()));
          page.accept(annotationSelector);
          List<Annotation> TextAnnotations = annotationSelector.getSelected();
- 
+
          // delete annotations
          for (Annotation fa : TextAnnotations) {
             page.getAnnotations().delete(fa);

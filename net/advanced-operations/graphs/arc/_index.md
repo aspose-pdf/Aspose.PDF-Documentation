@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+## Add Arc object
+
 Aspose.PDF for .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. It also offers the feature to fill arc object with a certain color.
 
 Follow the steps below:

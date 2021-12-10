@@ -21,7 +21,7 @@ Also possible to get or set the settings of the strikethrough annotations using 
 
 The next feature is the ability to get or set the settings of the underline annotations using the underlineSettings property. The underlineSettings property is used to set the color, opacity, author, subject, modifiedDate, and isLocked properties of the underline annotations.
 
-## Add Text Markup Annotation 
+## Add Text Markup Annotation
 
 In order to add an Text Markup Annotation to the PDF document, we need to perform the following actions:
 
@@ -165,7 +165,7 @@ If you want to highlight a multi-line fragment you should use advanced example:
         for (Annotation ta : highlightAnnotations) {
             System.out.println("[" + ((HighlightAnnotation) ta).getMarkedText() + "]");
         }
-    }    
+    }
 ```
 
 ## Get Text Markup Annotation
@@ -220,5 +220,5 @@ The following code snippet shows how to Delete Text Markup Annotation from PDF f
             page.getAnnotations().delete(ta);
         }
         document.save(_dataDir + "sample_del.pdf");
-    }    
+    }
 ```
