@@ -5,7 +5,7 @@ weight: 30
 url: /net/using-wrapper-in-cpp/
 ---
 
-##### **Prerequisites**
+## Prerequisites
 
 
 {{% alert color="primary" %}}
@@ -18,90 +18,55 @@ Please register Aspose.PDF for .NET with COM Interop, kindly check the article n
 
 We will use a [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assembly/) to retrieve text from PDF documents.
 
-**C++**
 
-{{< highlight cpp >}}
+```cpp
 
- #include "stdafx.h"
-
+#include "stdafx.h"
 #import "C:\Temp\PdfText.tlb"
-
 using namespace System;
 
 String^ wrapper(String^ file)
-
 {
-
     String^ text;
-
     // create ComHelper
 
     PdfText::IPetrieverPtr retrieverPtr;
-
     HRESULT hr = retrieverPtr.CreateInstance(__uuidof(PdfText::Petriever));
 
     if (FAILED(hr))
-
     {
-
         Console::WriteLine(L"Error occured");
-
     }
-
     else
-
     {
-
         // set license
-
-	retrieverPtr->SetLicense("C:\\Temp\\Aspose.PDF.lic");
-
-	// retrieve text
+        retrieverPtr->SetLicense("C:\\Temp\\Aspose.PDF.lic");
+        // retrieve text
 
         BSTR extractedText = retrieverPtr->GetText((BSTR)System::Runtime::InteropServices::Marshal::StringToBSTR(file).ToPointer());
-
-	text = gcnew String(extractedText);
-
-	retrieverPtr.Release();
-
+        text = gcnew String(extractedText);
+        retrieverPtr.Release();
     }
-
     return text;
-
 }
 
 int main(array<System::String ^> ^args)
-
 {
-
     CoInitialize(NULL);
-
     if (args->Length != 1)
-
     {
-
-	Console::WriteLine("Missing parameters\nUsage:testCOM <pdf file>");
-
-	return 0;
-
+        Console::WriteLine("Missing parameters\nUsage:testCOM <pdf file>");
+        return 0;
     }
 
     String ^text = wrapper(args[0]);
-
     CoUninitialize();
-
     Console::WriteLine("Extracted text:");
-
     Console::WriteLine("---\n{0}", text != nullptr ? text->Trim() : "<empty>");
-
     Console::WriteLine("---");
-
     return 0;
-
 }
 
-{{< /highlight >}}
-
-
+```
 
 {{% /alert %}}
