@@ -354,7 +354,7 @@ void ShapesAnnotations::AddInkAnnotation() {
 	auto page = document->get_Pages()->idx_get(1);
 
 	auto arect = MakeObject<Rectangle>(320.086, 189.286, 384.75, 228.927);
-	auto inkList = MakeObject<System::Collections::Generic::List<System::SmartPtr<Point>>>();
+	auto inkList = MakeObject<System::Collections::Generic::List<System::SmartPtr<System::Array<System::SmartPtr<Aspose::Pdf::Point>>>>>();
 
 	//data in ppts, received from a mouse or other pointing device
 	double ppts[] = { 328.002, 222.017, 328.648, 222.017, 329.294, 222.017, 329.617, 222.34, 330.91, 222.663,
@@ -395,24 +395,24 @@ void ShapesAnnotations::AddInkAnnotation() {
 			327.032, 219.109, 327.032, 219.432, 327.032, 219.755, 327.355, 220.078, 327.355, 220.401, 327.678,
 			221.371, 328.002, 221.371, 328.002, 222.017, 328.325, 222.663, 328.648, 222.663, 328.971, 222.986,
 			329.294, 223.31, 329.617, 223.956, 329.617, 224.279 };
+	auto points = MakeArray<System::SmartPtr<Aspose::Pdf::Point>>();
+	//convert data to points
 
-		//convert data to points
+	for (int i = 0, j = 0; i < _countof(ppts) / 2; i++, j += 2) {
+		points->Add(MakeObject<Point>(ppts[j], ppts[j + 1]));
+	}
+	inkList->Add(points);
+	auto ia = MakeObject<InkAnnotation>(page, arect, inkList);
+	ia->set_Title(u"Aspose User");
+	ia->set_Color(Color::get_Red());
+	ia->set_CapStyle(CapStyle::Rounded);
 
-		for (int i = 0, j = 0; i < _countof(ppts) / 2; i++, j += 2) {
-			inkList->Add(MakeObject<Point>(ppts[j], ppts[j + 1]));
-		}
-		
-		auto ia = MakeObject<InkAnnotation>(page, arect, inkList);
-		ia->set_Title(u"Aspose User");
-		ia->set_Color(Color::get_Red());
-		ia->set_CapStyle(CapStyle::Rounded);
+	auto border = MakeObject<Border>(ia);
+	border->set_Width(3);
+	ia->set_Opacity(0.75);
 
-		auto border = MakeObject<Border>(ia);
-		border->set_Width(3);
-		ia->set_Opacity(0.75);
-
-		page->get_Annotations()->Add(ia);
-		document->Save(_dataDir + u"appartments_mod.pdf");	
+	page->get_Annotations()->Add(ia);
+	document->Save(_dataDir + u"appartments_mod.pdf");
 }
 ```
 
