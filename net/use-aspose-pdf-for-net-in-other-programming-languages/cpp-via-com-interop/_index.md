@@ -1,5 +1,5 @@
 ---
-title: CPP via COM Interop
+title: C++ via COM Interop
 type: docs
 weight: 70
 url: /net/cpp-via-com-interop/

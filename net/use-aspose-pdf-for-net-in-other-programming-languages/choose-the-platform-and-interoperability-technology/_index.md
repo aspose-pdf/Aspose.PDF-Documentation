@@ -14,14 +14,9 @@ url: /net/choose-the-platform-and-interoperability-technology/
 
 {{% /alert %}}
 
-
-{{% alert color="primary" %}}
-
 Please note that it is also possible to use [Aspose.PDF for .NET](/pdf/net/) from many programming languages, including: ASP, C++, ColdFusion, Delphi, JavaScript, Perl, PHP, PowerBuilder, Python, VBScript etc.
 
-{{% /alert %}}
-
-##### **Support for other languages**
+## Support for other languages
 
 {{% alert color="primary" %}}
 
@@ -53,15 +48,16 @@ Following is the list of the suggested interoperability technologies to use for 
 |Delphi |.NET |COM Interop |
 |Jscript |.NET |COM Interop |
 |Perl |.NET |COM Interop |
-| |Java |Inline::Java |
+| |Java |Inline::Java |
 |PHP |.NET |COM Interop |
-| |Java |Java Bridge |
+| |Java |Java Bridge |
 |PowerBuilder |.NET |COM Interop |
 |Python |.NET |COM Interop |
-| |Java |JPype |
+| |Java |JPype |
 |VBScript |.NET |COM Interop |
 |Visual Basic |.NET |COM Interop |
-##### **Conclusion**
+
+## Conclusion
 
 {{% alert color="primary" %}}
 From the above table you can see that for some programming languages it is possible to use either [Aspose.PDF for .NET](/pdf/net/) or [Aspose.PDF for Java](/pdf/java/).
