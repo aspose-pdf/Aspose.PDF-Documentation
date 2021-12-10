@@ -1,6 +1,6 @@
 ---
-title: PDF Multimedia Annotations
-linktitle: Multimedia Annotations
+title: PDF Multimedia Annotation using C#
+linktitle: Multimedia Annotation
 type: docs
 weight: 40
 url: /net/multimedia-annotation/
@@ -228,7 +228,7 @@ var border = new Border(printButton)
 printButton.Border = border;
 printButton.Characteristics.Border =
     System.Drawing.Color.FromArgb(255, 0, 0, 255);
-printButton.Characteristics.Background = 
+printButton.Characteristics.Background =
     System.Drawing.Color.FromArgb(255, 0, 191, 255);
 document.Form.Add(printButton);
 ```
@@ -238,7 +238,7 @@ This button has border and set a background. Also we set a button name (Name), a
 ### Using Document-navigation actions
 
 Exist more complex example of the Widget Annotations usage - document navigation in PDF document. This may be needed to prepare a PDF document presentation.
- 
+
 This example shows how to create 4 buttons:
 
 ```csharp
@@ -360,7 +360,7 @@ Please check the following code snippet to add 3D Annotation.
     var pdf3dAnnotation = new PDF3DAnnotation(page, new Rectangle(100, 500, 300, 700), pdf3dArtWork);
     pdf3dAnnotation.Border = new Border(pdf3dAnnotation);
     pdf3dAnnotation.SetDefaultViewIndex(1);
-    pdf3dAnnotation.Flags = AnnotationFlags.NoZoom;    
+    pdf3dAnnotation.Flags = AnnotationFlags.NoZoom;
     pdf3dAnnotation.Name = "Ring.u3d";
     //set preview image if needed
     //pdf3dAnnotation.SetImagePreview(System.IO.Path.Combine(_dataDir, "sample_3d.png"));
