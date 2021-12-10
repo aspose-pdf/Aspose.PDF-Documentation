@@ -5,7 +5,8 @@ weight: 20
 url: /net/using-late-binding-in-cpp/
 ---
 
-## Prerequisites
+
+##### **Prerequisites**
 
 {{% alert color="primary" %}}
 
@@ -13,25 +14,34 @@ Please register Aspose.PDF for .NET with COM Interop, kindly check the article n
 
 {{% /alert %}}
 
-## Sample
+##### **Sample**
 
 {{% alert color="primary" %}}
 
 This is a simple C++ code sample to extract text from PDF by means of COM Interop using late binding. For details please look at [this](http://www.drdobbs.com/writing-com-clients-with-late-and-early/184403558) post.
 
-```cpp
+**C++**
 
-#include "stdafx.h"
+{{< highlight cpp >}}
+
+ #include "stdafx.h"
+
 #include "comdef.h"
 
 using namespace System;
+
 String ^lateBinding(String ^file)
+
 {
+
     String^ text;
+
     DISPID dispid;
 
     DISPPARAMS dp = { NULL, NULL, 0, 0};
+
     VARIANTARG vargs[1];
+
     VARIANT arg, result;
 
     WCHAR str[255];
@@ -39,134 +49,187 @@ String ^lateBinding(String ^file)
     CLSID pclsid;
 
     // create ComHelper
+
     IDispatch* comHelperPtr;
+
     wcscpy_s(str, L"Aspose.PDF.ComHelper");
+
     CLSIDFromProgID(str, &pclsid);
+
     HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&comHelperPtr);
+
     if (FAILED(hr))
+
     {
-        Console::WriteLine(L"Error occured");
+
+	Console::WriteLine(L"Error occured");
+
     }
+
     else
+
     {
-        // set license
-        IDispatch* licPtr;
-        wcscpy_s(str, L"Aspose.PDF.License");
-        CLSIDFromProgID(str, &pclsid);
-        HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&licPtr);
-        OLECHAR* setLicense =  L"SetLicense";
-        hr = licPtr->GetIDsOfNames(IID_NULL, &setLicense, 1, GetUserDefaultLCID(), &dispid);
-        arg.vt = VT_BSTR;
-        BSTR lic = SysAllocString(L"C:\\Temp\\Aspose.PDF.lic");
-        arg.bstrVal = lic;
-        vargs[0] = arg;
 
-        dp.rgvarg = vargs;
-        dp.cArgs = 1;
+	// set license
 
-        hr = licPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_METHOD, &dp, &result, NULL, NULL);
+	IDispatch* licPtr;
 
-        SysFreeString(lic);
+	wcscpy_s(str, L"Aspose.PDF.License");
 
-        licPtr.Release();
+	CLSIDFromProgID(str, &pclsid);
 
-        // get Document
+	HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&licPtr);
 
-        OLECHAR* openFile =  L"OpenFile";
+	OLECHAR* setLicense =  L"SetLicense";
 
-        hr = comHelperPtr->GetIDsOfNames(IID_NULL, &openFile, 1, GetUserDefaultLCID(), &dispid);
-        arg.vt = VT_BSTR;
-        arg.bstrVal = (BSTR)System::Runtime::InteropServices::Marshal::StringToBSTR(file).ToPointer();
-        vargs[0] = arg;
-        dp.rgvarg = vargs;
-        dp.cArgs = 1;
+	hr = licPtr->GetIDsOfNames(IID_NULL, &setLicense, 1, GetUserDefaultLCID(), &dispid);
 
-        hr = comHelperPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_METHOD, &dp, &result, NULL, NULL);
+	arg.vt = VT_BSTR;
 
-        IDispatch* docPtr = result.pdispVal;
+	BSTR lic = SysAllocString(L"C:\\Temp\\Aspose.PDF.lic");
 
-        comHelperPtr.Release();
+	arg.bstrVal = lic;
 
-        //------------------------
-        // get Pages for the Document
+	vargs[0] = arg;
 
-        OLECHAR* pages =  L"Pages";
+	dp.rgvarg = vargs;
 
-        hr = docPtr->GetIDsOfNames(IID_NULL, &pages, 1, GetUserDefaultLCID(), &dispid);
+	dp.cArgs = 1;
 
-        dp.cArgs = 0;
+	hr = licPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_METHOD, &dp, &result, NULL, NULL);
 
-        hr = docPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_PROPERTYGET, &dp, &result, NULL, NULL);
+	SysFreeString(lic);
 
-        IDispatch* pagesPtr = result.pdispVal;
+	licPtr.Release();
 
-        //------------------------
-        // create Absorber
+	// get Document
 
-        IDispatch* absorberPtr;
-        wcscpy_s(str, L"Aspose.PDF.Text.TextAbsorber");
+	OLECHAR* openFile =  L"OpenFile";
 
-        CLSIDFromProgID(str, &pclsid);
-        hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&absorberPtr);
+	hr = comHelperPtr->GetIDsOfNames(IID_NULL, &openFile, 1, GetUserDefaultLCID(), &dispid);
 
-        //------------------------
+	arg.vt = VT_BSTR;
 
-        // browse text
+	arg.bstrVal = (BSTR)System::Runtime::InteropServices::Marshal::StringToBSTR(file).ToPointer();
 
-        arg.vt = VT_DISPATCH;
+	vargs[0] = arg;
 
-        arg.pdispVal = absorberPtr;
+	dp.rgvarg = vargs;
 
-        vargs[0] = arg;
+	dp.cArgs = 1;
 
-        dp.rgvarg = vargs;
+	hr = comHelperPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_METHOD, &dp, &result, NULL, NULL);
 
-        dp.cArgs = 1;
+	IDispatch* docPtr = result.pdispVal;
 
-        OLECHAR* accept_4 = L"Accept_4";
+	comHelperPtr.Release();
 
-        hr = pagesPtr->GetIDsOfNames(IID_NULL, &accept_4, 1, GetUserDefaultLCID(), &dispid);
+	//------------------------
 
-        hr = pagesPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_METHOD, &dp, &result, NULL, NULL);
+	// get Pages for the Document
 
-        //------------------------
+	OLECHAR* pages =  L"Pages";
 
-        // retrieve text
+	hr = docPtr->GetIDsOfNames(IID_NULL, &pages, 1, GetUserDefaultLCID(), &dispid);
 
-        OLECHAR* _text = L"Text";
-        dp.cArgs = 0;
+	dp.cArgs = 0;
 
-        hr = absorberPtr->GetIDsOfNames(IID_NULL, &_text, 1, GetUserDefaultLCID(), &dispid);
-        hr = absorberPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_PROPERTYGET, &dp, &result, 0, 0);
+	hr = docPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_PROPERTYGET, &dp, &result, NULL, NULL);
 
-        //------------------------
-        text = gcnew String(result.bstrVal);
-        docPtr.Release();
+	IDispatch* pagesPtr = result.pdispVal;
 
-        pagesPtr.Release();
+	//------------------------
 
-        absorberPtr.Release();
+	// create Absorber
+
+	IDispatch* absorberPtr;
+
+	wcscpy_s(str, L"Aspose.PDF.Text.TextAbsorber");
+
+	CLSIDFromProgID(str, &pclsid);
+
+	hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&absorberPtr);
+
+	//------------------------
+
+	// browse text
+
+	arg.vt = VT_DISPATCH;
+
+	arg.pdispVal = absorberPtr;
+
+	vargs[0] = arg;
+
+	dp.rgvarg = vargs;
+
+	dp.cArgs = 1;
+
+	OLECHAR* accept_4 = L"Accept_4";
+
+	hr = pagesPtr->GetIDsOfNames(IID_NULL, &accept_4, 1, GetUserDefaultLCID(), &dispid);
+
+	hr = pagesPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_METHOD, &dp, &result, NULL, NULL);
+
+	//------------------------
+
+	// retrieve text
+
+	OLECHAR* _text = L"Text";
+
+	dp.cArgs = 0;
+
+	hr = absorberPtr->GetIDsOfNames(IID_NULL, &_text, 1, GetUserDefaultLCID(), &dispid);
+
+	hr = absorberPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_PROPERTYGET, &dp, &result, 0, 0);
+
+	//------------------------
+
+	text = gcnew String(result.bstrVal);
+
+	docPtr.Release();
+
+	pagesPtr.Release();
+
+	absorberPtr.Release();
+
     }
+
     return text;
+
 }
 
 int main(array<System::String ^> ^args)
+
 {
 
     if (args->Length != 1)
+
     {
+
         Console::WriteLine("Missing parameters\nUsage:testCOM <pdf file>");
-        return 0;
+
+	return 0;
+
     }
 
+
     CoInitialize(NULL);
+
     String ^text = lateBinding(args[0]);
+
     CoUninitialize();
+
     Console::WriteLine("Extracted text:");
+
     Console::WriteLine("---\n{0}", text != nullptr ? text->Trim() : "<empty>");
+
     Console::WriteLine("---");
+
     return 0;
+
 }
-```
+
+
+{{< /highlight >}}
 
 {{% /alert %}}
