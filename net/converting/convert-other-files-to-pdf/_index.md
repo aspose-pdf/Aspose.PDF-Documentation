@@ -1,11 +1,11 @@
 ---
 title: Convert various file formats to PDF using C#
-linktitle: Convert other file formats to PDF 
+linktitle: Convert other file formats to PDF
 type: docs
 weight: 80
 url: /net/convert-other-files-to-pdf/
 lastmod: "2021-11-01"
-description: This topic show you how to Aspose.PDF allows to convert other file formats such as: EPUB, MD, PCL, XPS, PS, XML and LaTeX to PDF document.
+description: This topic show you how to Aspose.PDF allows to convert other file formats such as\: EPUB, MD, PCL, XPS, PS, XML and LaTeX to PDF document.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
