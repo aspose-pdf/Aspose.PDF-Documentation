@@ -117,7 +117,7 @@ Set pdf = CreateObject("Aspose.PDF.Generator.Pdf")
 
 Once created, you are able to access the object’s methods and properties, as if it was a COM object:
 
-```vbscript
+```vb
 'Add section to Pdf object
 pdf.Sections.Add(pdfsection)
 ```
@@ -125,6 +125,7 @@ pdf.Sections.Add(pdfsection)
 Some methods have overloads and they will be exposed by COM Interop with a numeric suffix added to them, except for the very first method that stays unchanged. For example, the Pdf.Save method overloads become Pdf.Save, Pdf.Save_2, and so on.
 
 For more information, see the language-specific articles further in this documentation.
+
 ## Creating a Wrapper Assembly
 
 If you need to use many of Aspose.PDF for .NET classes, methods and properties, consider creating a wrapper assembly (using C# or any other .NET programming language). Wrapper assemblies help help to avoid using Aspose.PDF for .NET directly from unmanaged code.
