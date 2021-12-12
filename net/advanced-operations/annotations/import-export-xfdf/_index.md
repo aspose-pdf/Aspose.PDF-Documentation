@@ -1,5 +1,5 @@
 ---
-title: Import and Export Annotations to XFDF format using Aspose.PDF for .NET
+title: Import and Export Annotations to XFDF format 
 linktitle: Import and Export Annotations to XFDF format
 type: docs
 weight: 40

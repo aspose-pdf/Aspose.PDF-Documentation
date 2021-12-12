@@ -1,6 +1,6 @@
 ---
-title: PDF Text Annotation
-Texttitle: Text Annotation
+title: Using Text Annotation for PDF
+linktitle: Text Annotation
 type: docs
 weight: 10
 url: /net/text-annotation/
@@ -115,7 +115,7 @@ private static void AddFreeTextAnnotationDemo()
 {
     _document = new Document(@"C:\tmp\pdf-sample.pdf");
     var pdfContentEditor = new PdfContentEditor(_document);
-   
+
     tfa.Visit(_document.Pages[1]);
     if (tfa.TextFragments.Count <= 0) return;
     var rect = new System.Drawing.Rectangle

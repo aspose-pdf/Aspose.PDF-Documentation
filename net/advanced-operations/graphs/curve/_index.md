@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+## Add Curve object
+
 A graph [Curve](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/curve) is a connected union of projective lines, each line meeting three others in ordinary double points.
 
 Aspose.PDF for .NET shows how to use Bézier curves in your Graphs.

@@ -1,5 +1,5 @@
 ---
-title: Extra Annotations using Java
+title: Using extra types of PDF annotations
 linktitle: Extra Annotations
 type: docs
 weight: 60
@@ -224,7 +224,7 @@ The following code snippet shows how to Delete Link Annotation from PDF file. Fo
 
         for (Annotation la : linkAnnotations)
             page.getAnnotations().delete(la);
-            
+
         // Save document with removed annotation
         document.save(_dataDir + "SimpleResume_del.pdf");
     }
@@ -279,9 +279,9 @@ Aspose.PDF.Facades namespace also has a class named [PdfAnnotationEditor](https:
 ```java
     public static void RedactionAnnotationFacades(){
         PdfAnnotationEditor editor = new PdfAnnotationEditor();
-        
+
         editor.bindPdf(_dataDir + "sample.pdf");
-        
+
         // Redact certain page region
         editor.redactArea(1, new Rectangle(100, 100, 20, 70), java.awt.Color.white);
         editor.bindPdf(_dataDir + "sample.pdf");

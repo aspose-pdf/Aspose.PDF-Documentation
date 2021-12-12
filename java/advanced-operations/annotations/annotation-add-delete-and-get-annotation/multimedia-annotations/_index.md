@@ -11,14 +11,14 @@ sitemap:
     priority: 0.7
 ---
 
-Annotations in a PDF document are contained in a [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method. 
+Annotations in a PDF document are contained in a [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method.
 
 Use the [ScreenAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/ScreenAnnotation) class in the Aspose.PDF.InteractiveFeatures.Annotations namespace to include SWF files as annotations in a PDF document instead. A screen annotation specifies a region of a page upon which media clips may be played.
 
 When you need to add an external video link in PDF document, you can use [MovieAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/MovieAnnotation).
 A Movie Annotation contains animated graphics and sound to be presented on the computer screen and through the speakers.
 
-A [Sound Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/soundannotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound. 
+A [Sound Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/soundannotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound.
 
 However, when there is a requirement to embed media inside PDF document, you need to use [RichMediaAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/RichMediaAnnotation).
 
@@ -32,9 +32,9 @@ The following methods/properties of RichMediaAnnotation class can be used.
 - void Update():  Create a data structure of the annotation. This method should be called last
 - void SetPoster(Stream): Set poster of the video i.e. picture shown when the player is not active
 
-## Add Screen Annotation 
+## Add Screen Annotation
 
-The following code snippet shows how to add Screen Annotation to a PDF file: 
+The following code snippet shows how to add Screen Annotation to a PDF file:
 
 ```java
 package com.aspose.pdf.examples;
@@ -64,9 +64,9 @@ public class ExampleMultimediaAnnotation {
 }
 ```
 
-## Add Sound Annotation 
+## Add Sound Annotation
 
-The following code snippet shows how to add Sound Annotation to a PDF file: 
+The following code snippet shows how to add Sound Annotation to a PDF file:
 
 ```java
           public static void AddSoundAnnotation() {
@@ -146,7 +146,7 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
     }
 ```
 
-## Get MultimediaAnnotation 
+## Get MultimediaAnnotation
 
 Please try using the following code snippet to Get MultimediaAnnotation from PDF document.
 
@@ -164,7 +164,7 @@ public static void GetMultimediaAnnotation() {
         for (Annotation ma : mediaAnnotations) {
             System.out.println(ma.getAnnotationType() + " " + ma.getRect());
         }
-    }        
+    }
 ```
 
 ## Delete MultimediaAnnotation
@@ -185,7 +185,7 @@ The following code snippet shows how to Delete MultimediaAnnotation from PDF fil
             page.getAnnotations().delete(ma);
         }
         document.save(_dataDir + "RichMediaAnnotation_del.pdf");
-    }   
+    }
 ```
 
 ## Add Widget Annotations
@@ -196,7 +196,7 @@ We use these form elements that add to a PDF to make it easier to enter, submit 
 Widget Annotations are a graphical representation of a form field on specific pages, so we cannot create it directly as an annotation.
 
 Each Widget Annotation will have appropriate graphics (appearance) depending on its type. After creation, certain visual aspects can be changed, such as border style and background color.
-Other properties such as text color and font can be changed through the field, once attached to one. 
+Other properties such as text color and font can be changed through the field, once attached to one.
 
 In some cases, you may want a field to appear on more than one page, repeating the same value. In that case, fields that normally have just one widget may have multiple widgets attached: a TextField, ListBox, ComboBox, and CheckBox usually have exactly one, while the RadioGroup has multiple widgets, one for each radio button.
 Someone filling out the form may use any of those widgets to update the field's value, and this is reflected in all the other widgets as well.
@@ -214,7 +214,7 @@ import com.aspose.pdf.*;
 import java.util.*;
 
 public class ExampleWidgetAnnotation {
-    
+
     private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
 
     public static void AddButton()
@@ -222,7 +222,7 @@ public class ExampleWidgetAnnotation {
         // Load the PDF file
         Document document = new Document(_dataDir + "sample.pdf");
         Page page = document.getPages().get_Item(1);
-       
+
         Rectangle rect = new Rectangle(72, 748, 164, 768);
         ButtonField printButton = new ButtonField(page, rect);
         printButton.setAlternateName("Print current document");
@@ -233,7 +233,7 @@ public class ExampleWidgetAnnotation {
         Border border = new Border(printButton);
         border.setStyle(BorderStyle.Solid);
         border.setWidth(2);
-        
+
         printButton.setBorder(border);
         printButton.getCharacteristics().setBorder(Color.fromArgb(255, 0, 0, 255));
         printButton.getCharacteristics().setBackground(Color.fromArgb(255, 0, 191, 255));
@@ -249,7 +249,7 @@ This button has border and set a background. Also we set a button name (Name), a
 ## Using Document-navigation actions
 
 Exist more complex example of the Widget Annotations usage - document navigation in PDF document. This may be needed to prepare a PDF document presentation.
-  
+
 This example shows how to create 4 buttons:
 
 ```java
@@ -292,7 +292,7 @@ document.save(_dataDir + "sample_widgetannot_2.pdf");
 }
 ```
 
-## How to delete Widget Annotation 
+## How to delete Widget Annotation
 
 Aspose.PDF for Java has rules for removing annotations from your file:
 
@@ -352,7 +352,7 @@ The main task of 3D modeling is the idea of a future object or object because, i
 Please check the following code snippet to add 3D Annotation.
 
 ```java
-    public class Example3DAnnotation 
+    public class Example3DAnnotation
     {
     private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
     public static void Add3dAnnotation()
@@ -361,9 +361,9 @@ Please check the following code snippet to add 3D Annotation.
     Document document = new Document();
     PDF3DContent pdf3DContent = new PDF3DContent(_dataDir + "Ring.u3d");
     PDF3DArtwork pdf3dArtWork = new PDF3DArtwork(document, pdf3DContent);
-    pdf3dArtWork.setLightingScheme(new PDF3DLightingScheme(LightingSchemeType.CAD));        
+    pdf3dArtWork.setLightingScheme(new PDF3DLightingScheme(LightingSchemeType.CAD));
     pdf3dArtWork.setRenderMode(new PDF3DRenderMode(RenderModeType.Solid));
-        
+
     var topMatrix = new Matrix3D(1,0,0,0,-1,0,0,0,-1,0.10271,0.08184,0.273836);
     var frontMatrix = new Matrix3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.332652, 0.08184, 0.085273);
     pdf3dArtWork.getViewArray().add(new PDF3DView(document, topMatrix, 0.188563, "Top")); //1
@@ -382,7 +382,7 @@ Please check the following code snippet to add 3D Annotation.
 
     document.save(_dataDir+"sample_3d.pdf");
     }
-}  
+}
 ```
 
 This code example showed us such a model:

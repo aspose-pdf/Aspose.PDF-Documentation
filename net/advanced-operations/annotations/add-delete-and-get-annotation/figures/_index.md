@@ -149,7 +149,7 @@ namespace Aspose.Pdf.Examples.Advanced
     class ExamplePolygonAnnotation
     {
         // The path to the documents directory.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";       
+        private const string _dataDir = "..\\..\\..\\..\\Samples";
         public static void AddPolynnotation()
         {
             try
@@ -187,7 +187,7 @@ namespace Aspose.Pdf.Examples.Advanced
                         })
                 {
                     Title = "John Smith",
-                    Color = Color.Red,                                       
+                    Color = Color.Red,
                     Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
                 };
 
@@ -200,7 +200,7 @@ namespace Aspose.Pdf.Examples.Advanced
             {
                 Console.WriteLine(ex.Message);
             }
-        }   
+        }
     }
 }
 ```
@@ -221,7 +221,7 @@ public static void GetPolyAnnotation()
         {
             Console.WriteLine($"[{pa.Rect}]");
         }
-    }          
+    }
 ```
 
 ### Delete Polygon and Polyline Annotations
@@ -315,7 +315,7 @@ Please try using the following code snippet to Get Line Annotation in PDF docume
 ```csharp
     public static void GetLineAnnotation()
     {
-        
+
     // Load the PDF file
         Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
         var lineAnnotations = document.Pages[1].Annotations

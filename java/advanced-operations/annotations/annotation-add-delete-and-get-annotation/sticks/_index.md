@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Add Watermark Annotation 
+## Add Watermark Annotation
 
 A watermark annotation shall be used to represent graphics that shall be printed at a fixed size and position on a page, regardless of the dimensions of the printed page.
 
@@ -26,7 +26,7 @@ import com.aspose.pdf.*;
 import java.util.*;
 
 public class ExampleWatermarkAnnotation {
-    
+
     private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
 
     public static void AddWaterMarkAnnotation()
@@ -34,7 +34,7 @@ public class ExampleWatermarkAnnotation {
         // Load the PDF file
         Document document = new Document(_dataDir + "sample.pdf");
         Page page = document.getPages().get_Item(1);
-        
+
         //Create Annotation
         WatermarkAnnotation wa = new WatermarkAnnotation(page, new Rectangle(100, 500, 400, 600));
 
@@ -50,11 +50,11 @@ public class ExampleWatermarkAnnotation {
 
         //Set opacity level of Annotaiton Text
         wa.setOpacity(0.5);
-                
+
         //Add Text to Annotation
         wa.setTextAndState(new String[] { "Aspose.PDF", "Watermark", "Demo" }, ts);
 
-        //Save the Document        
+        //Save the Document
         document.save(_dataDir + "sample_watermark.pdf");
     }
 }
@@ -94,7 +94,7 @@ public class ExampleWatermarkAnnotation {
                  new WatermarkAnnotation(page, Rectangle.getTrivial()));
          page.accept(annotationSelector);
          List<Annotation> WatermarkAnnotations = annotationSelector.getSelected();
- 
+
          // delete annotations
          for (Annotation fa : WatermarkAnnotations) {
             page.getAnnotations().delete(fa);

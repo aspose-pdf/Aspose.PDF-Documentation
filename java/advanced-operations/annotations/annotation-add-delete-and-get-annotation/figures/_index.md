@@ -1,5 +1,5 @@
 ---
-title: Add Figures Annotations using Java
+title: PDF Figures Annotations
 linktitle: Figures Annotations
 type: docs
 weight: 30
@@ -20,7 +20,7 @@ Steps for creating Square and Circle Annotations:
 
 1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document).
 1. Create new [Circle Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/circleannotation) and set Circle parameters (new Rectangle, title, color, InteriorColor, Opacity).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/PopupAnnotation). 
+1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/PopupAnnotation).
 1. Next we need to create [Square Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/SquareAnnotation).
 1. Set the same Square parameters (new Rectangle, title, color, InteriorColor, Opacity).
 1. After we need to Add Square and Circle Annotations to the page.
@@ -132,7 +132,7 @@ Steps with which we create Polygon and Polyline annotations:
 
 1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document).
 1. Create new [Polygon Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PolygonAnnotation) and set Polygon parameters (new Rectangle, new Points, title, color, InteriorColor and Opacity).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/PopupAnnotation). 
+1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/PopupAnnotation).
 1. Next, Create a [PolyLine Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/PolylineAnnotation) and repeat all actions.
 1. After we can Add annotations to the page.
 
@@ -180,7 +180,7 @@ public class ExamplePolygonAnnotation {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
-    }   
+    }
 ```
 
 ## Get Polygon and Polyline Annotations
@@ -201,7 +201,7 @@ Please try using the following code snippet to Get Polygon and Polyline Annotati
         for (Annotation pa : polyAnnotations) {
             System.out.printf("[%s]", pa.getRect());
         }
-    }       
+    }
 ```
 
 ## Delete Polygon and Polyline Annotations
@@ -330,7 +330,7 @@ The following code snippet shows how Delete Line Annotation from a PDF file.
         }
         document.save(_dataDir + "appartments_del.pdf");
     }
-}   
+}
 ```
 
 ## How to add Ink Annotation to PDF file
@@ -350,14 +350,14 @@ public class ExampleInkAnnotation {
     // The path to the documents directory.
     private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
 
-    
+
     public static void AddInkAnnotation() {
         try {
             // Load the PDF file
             Document document = new com.aspose.pdf.Document(_dataDir + "Appartments.pdf");
             Page page = document.getPages().get_Item(1);
             Rectangle arect = new Rectangle(320.086,189.286,384.75,228.927);
-            List<Point[]> inkList = new ArrayList<Point[]>();           
+            List<Point[]> inkList = new ArrayList<Point[]>();
             //data in ppts, received from a mouse or other pointing device
             double ppts[] = { 328.002, 222.017, 328.648, 222.017, 329.294, 222.017, 329.617, 222.34, 330.91, 222.663,
                     331.556, 222.663, 332.203, 222.986, 333.495, 223.633, 334.141, 223.956, 334.788, 224.279, 335.434,
@@ -397,7 +397,7 @@ public class ExampleInkAnnotation {
                     327.032, 219.109, 327.032, 219.432, 327.032, 219.755, 327.355, 220.078, 327.355, 220.401, 327.678,
                     221.371, 328.002, 221.371, 328.002, 222.017, 328.325, 222.663, 328.648, 222.663, 328.971, 222.986,
                     329.294, 223.31, 329.617, 223.956, 329.617, 224.279 };
-            
+
             //convert data to points
             Point[] arrpt = new Point[ppts.length/2];
             for (int i = 0, j=0; i < arrpt.length; i++, j+=2) {
@@ -409,11 +409,11 @@ public class ExampleInkAnnotation {
             ia.setTitle("Aspose User");
             ia.setColor(Color.getRed());
             ia.setCapStyle(CapStyle.Rounded);
-            
+
             Border border = new Border(ia);
             border.setWidth(3);
             ia.setOpacity(0.75);
-            
+
             page.getAnnotations().add(ia);
             document.save(_dataDir + "appartments_mod.pdf");
         } catch (Exception ex) {
