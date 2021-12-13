@@ -38,7 +38,7 @@ void MultimediaAnnotations::AddScreenAnnotation()
 {
     String _dataDir("C:\\Samples\\");
 
-    // Load the PDF file    
+    // Load the PDF file
     auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
     auto page = document->get_Pages()->idx_get(1);
 
@@ -57,12 +57,12 @@ void MultimediaAnnotations::AddScreenAnnotation()
 The following code snippet shows how to add Sound Annotation to a PDF file:
 
 ```cpp
-  void MultimediaAnnotations::AddSoundAnnotation() 
+  void MultimediaAnnotations::AddSoundAnnotation()
 {
 
     String _dataDir("C:\\Samples\\");
 
-    // Load the PDF file    
+    // Load the PDF file
     auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
     auto page = document->get_Pages()->idx_get(1);
 
@@ -177,12 +177,12 @@ void MultimediaAnnotations::DeleteRichMediaAnnotation() {
     // Load the PDF file
     auto document = MakeObject<Document>(_dataDir + u"RichMediaAnnotation.pdf");
     auto page = document->get_Pages()->idx_get(1);
-    
+
     auto annotationSelector = MakeObject<AnnotationSelector>(
         MakeObject<RichMediaAnnotation>(page, Rectangle::get_Trivial()));
     page->Accept(annotationSelector);
     auto mediaAnnotations = annotationSelector->get_Selected();
-    
+
     for (auto ma : mediaAnnotations) {
         page->get_Annotations()->Delete(ma);
     }
@@ -194,7 +194,7 @@ void MultimediaAnnotations::DeleteRichMediaAnnotation() {
 
 Today, PDF files can contain a variety of content other than simple text and graphics, including logical structures, interactive elements such as annotations and form fields, layers, multimedia (including video content), and 3D objects.
 
-Such 3D content can be viewed in a PDF file using 3D annotations. 
+Such 3D content can be viewed in a PDF file using 3D annotations.
 
 This section shows the basic steps of creating a 3D annotation in a PDF document using the C++ library by Aspose.PDF.
 
@@ -245,7 +245,7 @@ This code example showed us such a model:
 
 ## Add Widget Annotation
 
-A Widget Annotation represents the appearance of form fields in an interactive PDF form. 
+A Widget Annotation represents the appearance of form fields in an interactive PDF form.
 
 Since PDF v 1.2 we can use Widget Annotations. These are interactive form elements that we can add to PDF to make it easier to enter, submit information, or perform some other action with the user. Although widgets are a special type of annotation, we cannot create them as annotations directly, because widget annotations are a graphical representation of a form field on specific pages.
 
@@ -304,7 +304,7 @@ void ExampleWidgetAnnotation::AddDocumentNavigationActions() {
     auto document = MakeObject<Document>(_dataDir + u"JSON Fundamenals.pdf");
 
     auto buttons = MakeArray<System::SmartPtr<ButtonField>>(4);
-    auto alternateNames = MakeArray<String>({ u"Go to first page", u"Go to prev page", u"Go to next page", u"Go to last page" });    
+    auto alternateNames = MakeArray<String>({ u"Go to first page", u"Go to prev page", u"Go to next page", u"Go to last page" });
     auto normalCaptions = MakeArray<String>({ u"First", u"Prev", u"Next", u"Last" });
     PredefinedAction actions[] = { PredefinedAction::FirstPage, PredefinedAction::PrevPage,
                                     PredefinedAction::NextPage, PredefinedAction::LastPage };
@@ -313,7 +313,7 @@ void ExampleWidgetAnnotation::AddDocumentNavigationActions() {
 
 // We should create the buttons without attaching them to the page.
 
-    for (int i = 0; i < 4; i++) {        
+    for (int i = 0; i < 4; i++) {
         buttons[i] = MakeObject<ButtonField>(document, MakeObject<Rectangle>(32 + i * 80, 28, 104 + i * 80, 68));
         buttons[i]->set_AlternateName(alternateNames[i]);
         buttons[i]->set_Color(Color::get_White());

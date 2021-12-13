@@ -31,8 +31,8 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Facades;
 
-void AnnotationImportExport::ExportAnnotationXFDF() {    
-    
+void AnnotationImportExport::ExportAnnotationXFDF() {
+
     String _dataDir("C:\\Samples\\");
 
     // Create PdfAnnotationEditor object
@@ -54,7 +54,7 @@ The next code snippet describes how import annotations to an XFDF file:
 
 ```cpp
 void AnnotationImportExport::ImportAnnotationXFDF() {
-    
+
     // Create PdfAnnotationEditor object
     auto annotationEditor = MakeObject<PdfAnnotationEditor>();
 
@@ -84,10 +84,10 @@ In the code below an ImportAnnotations method allows import annotations directly
 
 ```cpp
 void AnnotationImportExport::ImportAnnotationFromPDF() {
-    
+
     // Create PdfAnnotationEditor object
     auto annotationEditor = MakeObject<PdfAnnotationEditor>();
-    
+
     // Create a new PDF document
     auto document = new Document();
     document->get_Pages()->Add();
@@ -101,10 +101,10 @@ void AnnotationImportExport::ImportAnnotationFromPDF() {
 
     // Annotation Editor allows import annotations from several PDF documents,
     // but in this example, we use only one.
-    auto fileStreams = MakeArray<String>({ _dataDir + u"AnnotationDemo1.pdf" });        
+    auto fileStreams = MakeArray<String>({ _dataDir + u"AnnotationDemo1.pdf" });
     annotationEditor->ImportAnnotations(fileStreams);
 
     // Save output PDF
     document->Save(_dataDir + u"AnnotationDemo3.pdf");
-} 
+}
 ```

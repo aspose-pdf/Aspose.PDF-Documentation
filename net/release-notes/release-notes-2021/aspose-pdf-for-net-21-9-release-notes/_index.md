@@ -52,8 +52,9 @@ This page contains release notes information for Aspose.PDF for .NET 21.9.
 |PDFNET-49463|Calling GetSignNames() throws System.ApplicationException: 'Invalid signature object.'|Bug|
 |PDFNET-49881|InvalidValueFormatException: Date has invalid format|Bug|
 |PDFNET-47455|Characters replaced with boxes when saving PDF as PNG|Bug|
-|PDFNET-50288|A generic error occurred in GDI|when converting PDF to HTML|Bug|
+|PDFNET-50288|A generic error occurred in GDI+ when converting PDF to HTML|Bug|
 |PDFNET-50264|Aspose.PDF 21.7 Consumes all available memory processing EPUB document|Bug|
+
 
 ## Public API and Backward Incompatible Changes
 

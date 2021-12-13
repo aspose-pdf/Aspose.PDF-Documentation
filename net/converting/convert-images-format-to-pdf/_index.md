@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /net/convert-images-format-to-pdf/
 lastmod: "2021-11-01"
-description: This topic show you how to Aspose.PDF for .NET library allows to convert various images formats to PDF.
+description: This topic show you how to Aspose.PDF for .NET library allows to convert various images formats such as, BMP, JPEG, JPEG, DICOM, PNG, TIFF, EMF and SVG to PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5

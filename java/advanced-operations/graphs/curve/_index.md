@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+## Add Curve object
+
 A graph [Curve](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Curve) is a connected union of projective lines, each line meeting three others in ordinary double points.
 
 Aspose.PDF for Java shows how to use Bézier curves in your Graphs.

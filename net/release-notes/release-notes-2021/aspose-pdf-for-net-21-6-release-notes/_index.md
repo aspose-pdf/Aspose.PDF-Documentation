@@ -31,7 +31,7 @@ This page contains release notes information for Aspose.PDF for .NET 21.6.
 |PDFNET-49563|Attaching signed file to PDF/A-2A removes signature from the attachment.|Bug|
 |PDFNET-48748|StackOverflowException on get color type of page|Bug|
 |PDFNET-43306|PDF to JPEG - the null pointer error occurred|Bug|
-|PDFNET-49682|image is absent when converted dynamic XFA to Standard AcroForms|Bug|
+|PDFNET-49682|Image is absent when converted dynamic XFA to Standard AcroForms|Bug|
 |PDFNET-41524|ColorType of pages is not correct|Bug|
 |PDFNET-49912|Regex does not find letters as expected|Bug|
 |PDFNET-49966|New lic file does not work with v16.12|Bug|

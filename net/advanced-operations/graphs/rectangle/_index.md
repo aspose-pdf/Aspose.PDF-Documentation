@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+## Add Rectangle object
+
 Aspose.PDF for .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object where you also offers the feature to fill rectangle object with a certain color, control Z-Order, add gradiant color fill and etc.
 
 First, let's look at the possibility of creating a Rectangle object.
@@ -85,13 +87,13 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
             var page = doc.Pages.Add();
             // Create Graph instance
             var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
-            
+
             // Add graph object to paragraphs collection of page instance
             page.Paragraphs.Add(graph);
-            
+
             // Create Rectangle instance
             var rect = new Rectangle(100, 100, 200, 120);
-            
+
             // Specify fill color for Graph object
             rect.GraphInfo.FillColor = Color.Red;
 
@@ -126,7 +128,7 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
             // Add graph object to paragraphs collection of page instance
             page.Paragraphs.Add(graph);
             // Create Rectangle instance
-            var rect = new Rectangle(0, 0, 300, 300);            
+            var rect = new Rectangle(0, 0, 300, 300);
             // Specify fill color for Graph object
             var gradientColor = new Color();
             var gradientSettings = new GradientAxialShading(Color.Red, Color.Blue)
@@ -139,7 +141,7 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
 
             // Add rectangle object to shapes collection of Graph object
             graph.Shapes.Add(rect);
-           
+
             // Save PDF file
             doc.Save(_dataDir + "CreateFilledRectangle_out.pdf");
         }

@@ -1,27 +1,25 @@
 ---
-title:  Add, Delete and Get Annotation using Aspose.PDF for .NET
+title:  Add, Delete and Get Annotation 
 type: docs
 linktitle: Add, Delete and Get Annotation
 weight: 20
 url: /net/add-delete-and-get-annotation/
 description: With Aspose.PDF for .NET you may add, delete and get annotation from your PDF file. Check all lists of annotations to resolve your task.
-lastmod: "2021-06-05"
+lastmod: "2021-11-24"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
+**What are annotations in PDF documents?**
+
+These are additional objects that you add to your file to expand the content of the text, make edits, comments for other users. It is also possible to make the text in the document more readable, highlight it, underline it or add completely new text.
+
+We have combined the different kinds of annotation available for the Aspose.PDF for .NET  library into groups:
+
 - [PDF Text Annotation](/pdf/net/text-annotation/)
-- [PDF Free text Annotation](/pdf/net/free-text-annotation/)
-- [PDF Link Annotation](/pdf/net/link-annotation/)
-- [PDF Line Annotation](/pdf/net/line-annotation/)
-- [PDF Square and Circle Annotations](/pdf/net/square-and-circle-annotations/)
-- [PDF Polygon and Polyline Annotations](/pdf/net/polygon-and-polyline-annotations/)
-- [PDF Text Markup Annotation](/pdf/net/text-markup-annotation/)
-- [PDF Widget Annotation](/pdf/net/widget-annotation/)
-- [PDF Caret Annotation](/pdf/net/caret-annotation/)
-- [PDF InkAnnotation](/pdf/net/ink-annotation/)
-- [PDF Popup Annotation](/pdf/net/popup-annotation/)
-- [PDF Multimedia Annotation](/pdf/net/multimedia-annotation/)
-- [PDF Watermark Annotation](/pdf/net/watermark-annotation/)
-- [PDF 3D Annotation](/pdf/net/3d-annotation/) 
+- [PDF Hightlights Annotation](/pdf/net/hightlights-annotation/)
+- [PDF Figures Annotation](/pdf/net/figures-annotation/)
+- [Multimedia Annotation](/pdf/net/multimedia-annotation/)
+- [PDF Sticks Annotations](/pdf/net/sticks-annotations/)
+- [Extra Annotations](/pdf/net/extra-annotations/)
