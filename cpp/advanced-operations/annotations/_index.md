@@ -23,4 +23,4 @@ You are able to do the following:
 
 - [Overview of Annotations](/pdf/cpp/overview-of-annotations/) - learn which types of annotations are defined by the PDF specification, and what Aspose.PDF supports.
 - [Add, Delete and Get Annotation](/pdf/cpp/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
-
+- [Import and Export Annotations to XFDF format](/pdf/cpp/import-export-xfdf/) - you will know how to import and export annotation with XFDF format with C++

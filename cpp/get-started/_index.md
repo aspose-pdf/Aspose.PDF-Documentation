@@ -2,11 +2,11 @@
 title: Get Started
 linktitle: Get Started
 type: docs
-weight: 10
+weight: 15
 url: /cpp/get-started/
 description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document using C++.
 is_node: true
-lastmod: "2021-11-01"   
+lastmod: "2021-11-01"
 sitemap:
     changefreq: "monthly"
     priority: 0.6
@@ -24,13 +24,12 @@ These advantages make PDFs more shareable than other file formats and ensure tha
 
 Using Aspose.PDF for C++ in your project gives you the following profits:
 
-- rich features;
 - platform independence;
 - performance and scalability;
-- rich Features.
+- rich features.
 
-For quality work you required C++ environment.
-Aspose.PDF supports Windows Forms and ASP.C++ applications for your usability.
+For quality work you required C++ environment. Aspose.PDF for C++ can be used to build any type of 32-bit and 64-bit C++ application.
+Aspose.PDF supports MFC and QT or wxWidgets C++ applications for your usability.
 
 ### Learn more about
 

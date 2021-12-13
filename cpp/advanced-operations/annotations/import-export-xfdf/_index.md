@@ -1,11 +1,11 @@
 ---
-title: Import and Export Annotations to XFDF format using Aspose.PDF for .NET
+title: Import and Export Annotations to XFDF format using Aspose.PDF for C++
 linktitle: Import and Export Annotations to XFDF format
 type: docs
 weight: 40
-url: /net/import-export-xfdf/
-description: You may import and export annotation with XFDF format with C# and Aspose.PDF for .NET library.
-lastmod: "2021-06-05"
+url: /cpp/import-export-xfdf/
+description: You may import and export annotation with XFDF format with C++ and Aspose.PDF for C++ library.
+lastmod: "2021-12-02"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,78 +13,68 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-XFDF stand for XML Forms Data Format. It is an XML based file format. This file format is used to represent form data or annotations contained in a PDF form. XFDF can be used for many different purposes, but in our case, it can be used to either send or receive form data or annotations to other computers or servers etc, or it can be used to archive the form data or annotations. In this article, we will see how Aspose.Pdf.Facades has taken this concept into consideration and how we can import and export annotations data to XFDF file.
+XFDF is a file format compatible with  PDF readers. XFDF files used XML format to store data such as form encoding and annotations, which can be saved and imported/exported to PDF and viewed.
+
+XFDF can be used for many more different tasks, but in our case, it can be used either to send or receive form data or annotations to other computers or servers, etc., or it can be used to archive form data or annotations.
 
 {{% /alert %}}
 
-**Aspose.PDF for .NET** is a feature rich component when it comes to editing the PDF documents. As we know XFDF is an important aspect of PDF forms manipulation, Aspose.Pdf.Facades namespace in Aspose.PDF for .NET has considered this very well, and have provided methods to import and export annotations data to XFDF files.
+**Aspose.PDF for C++** is a feature rich component when it comes to editing the PDF documents. As we know XFDF is an important aspect of PDF forms manipulation, Aspose.Pdf.Facades namespace in Aspose.PDF for C++ has considered this very well, and have provided methods to import and export annotations data to XFDF files.
 
-[PDFAnnotationEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) class contains two methods to work with import and export of annotations to XFDF file. [ExportAnnotationsXfdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) method provides the functionality to export annotations from a PDF document to XFDF file, while [ImportAnnotationFromXfdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) method allows you to import annotations from an existing XFDF file. In order to import or export annotations we need to specify the annotation types. We can specify these types in the form of an enumeration and then pass this enumeration as an argument to any of these methods. This way, the annotations of the specified types will only be imported or exported to an XFDF file.
+[PDFAnnotationEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_annotation_editor/) class contains two methods to work with import and export of annotations to XFDF file. [ExportAnnotationsXfdf](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_annotation_editor#a533c7c17dfd25a2a192617492bbb561c) method provides the functionality to export annotations from a PDF document to XFDF file, while [ImportAnnotationFromXfdf](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_annotation_editor#a17902042e1b48f5a85c0cfb8c428af0a) method allows you to import annotations from an existing XFDF file. In order to import or export annotations we need to specify the annotation types. We can specify these types in the form of an enumeration and then pass this enumeration as an argument to any of these methods.
 
 The following code snippet shows you how to export annotations to an XFDF file:
 
-```csharp
-using Aspose.Pdf.Annotations;
-using Aspose.Pdf.Facades;
-using System.IO;
+```cpp
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Annotations;
+using namespace Aspose::Pdf::Facades;
 
+void AnnotationImportExport::ExportAnnotationXFDF() {
 
-namespace Aspose.Pdf.Examples.Advanced
-{
-    class ExampleAnnotationImportExport
-    {
-        // The path to the documents directory.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        /// <summary>
-        /// Importing annotations from XFDF file
-        /// XML Forms Data Format (XFDF) file created by Adobe Acrobat, a PDF authoring application;
-        /// stores descriptions of page form elements and their values, such as the names and values for
-        /// text fields; used for saving form data that can be imported into a PDF document.       
-        /// You can import annotation data from the XFDF file to PDF using
-        /// the ImportAnnotationsFromXfdf method in PdfAnnotationEditor class.
-        /// </summary>       
-   
-        public static void ExportAnnotationXFDF()
-        {
-            // Create PdfAnnotationEditor object
-            PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
+    String _dataDir("C:\\Samples\\");
 
-            // Bind PDF document to the Annotation Editor
-            AnnotationEditor.BindPdf(Path.Combine(_dataDir, "AnnotationDemo1.pdf"));
-           
-            // Export annotations
-            var fileStream = File.OpenWrite(Path.Combine(_dataDir, "exportannotations.xfdf"));
-            var annotType = new AnnotationType[] { AnnotationType.Line, AnnotationType.Square };
-            AnnotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
-            fileStream.Flush();
-            fileStream.Close();
-        }
-        //...
-    }
+    // Create PdfAnnotationEditor object
+    auto annotationEditor = MakeObject<PdfAnnotationEditor>();
+
+    // Bind PDF document to the Annotation Editor
+    annotationEditor->BindPdf(_dataDir + u"AnnotationDemo1.pdf");
+
+    // Export annotations
+    auto fileStream = System::IO::File::OpenWrite(_dataDir +u"exportannotations.xfdf");
+    auto annotType = MakeArray<AnnotationType>({ AnnotationType::Line, AnnotationType::Square });
+    annotationEditor->ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
+    fileStream->Flush();
+    fileStream->Close();
 }
 ```
 
 The next code snippet describes how import annotations to an XFDF file:
 
-```csharp
-public static void ImportAnnotationXFDF()
-{
-    // Create PdfAnnotationEditor object
-    PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-    // Create a new PDF document
-    var document = new Document();
-    document.Pages.Add();
-    AnnotationEditor.BindPdf(document);
+```cpp
+void AnnotationImportExport::ImportAnnotationXFDF() {
 
-    var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
-    if (!File.Exists(exportFileName))
+    // Create PdfAnnotationEditor object
+    auto annotationEditor = MakeObject<PdfAnnotationEditor>();
+
+    // Create a new PDF document
+    auto document = new Document();
+    document->get_Pages()->Add();
+
+    annotationEditor->BindPdf(document);
+
+    String _dataDir("C:\\Samples\\");
+    String exportFileName = _dataDir + u"exportannotations.xfdf";
+
+    if (!System::IO::File::Exists(exportFileName))
         ExportAnnotationXFDF();
 
     // Import annotation
-    AnnotationEditor.ImportAnnotationsFromXfdf(exportFileName);
+    annotationEditor->ImportAnnotationsFromXfdf(exportFileName);
 
     // Save output PDF
-    document.Save(Path.Combine(_dataDir, "AnnotationDemo2.pdf"));
+    document->Save(_dataDir + u"AnnotationDemo2.pdf");
 }
 ```
 
@@ -92,30 +82,29 @@ public static void ImportAnnotationXFDF()
 
 In the code below an ImportAnnotations method allows import annotations directly from another PDF doc.
 
-```csharp
-        /// <summary>
-        /// ImportAnnotations method allow import annotations directly from another PDF doc
-        /// </summary>
+```cpp
+void AnnotationImportExport::ImportAnnotationFromPDF() {
 
-        public static void ImportAnnotationFromPDF()
-        {
-            // Create PdfAnnotationEditor object
-            PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-            // Create a new PDF document
-            var document = new Document();
-            document.Pages.Add();
-            AnnotationEditor.BindPdf(document);
-            var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
-            if (!File.Exists(exportFileName))
-                ExportAnnotationXFDF();
+    // Create PdfAnnotationEditor object
+    auto annotationEditor = MakeObject<PdfAnnotationEditor>();
 
-            // Annotation Editor allows import annotations from several PDF documents,
-            // but in this example, we use only one.
-            AnnotationEditor.ImportAnnotations(new[] { Path.Combine(_dataDir, "AnnotationDemo1.pdf") });
+    // Create a new PDF document
+    auto document = new Document();
+    document->get_Pages()->Add();
 
-            // Save output PDF
-            document.Save(Path.Combine(_dataDir, "AnnotationDemo3.pdf"));
-        }
-    }
+    annotationEditor->BindPdf(document);
+    String _dataDir("C:\\Samples\\");
+    String exportFileName = _dataDir + u"exportannotations.xfdf";
+
+    if (!System::IO::File::Exists(exportFileName))
+        ExportAnnotationXFDF();
+
+    // Annotation Editor allows import annotations from several PDF documents,
+    // but in this example, we use only one.
+    auto fileStreams = MakeArray<String>({ _dataDir + u"AnnotationDemo1.pdf" });
+    annotationEditor->ImportAnnotations(fileStreams);
+
+    // Save output PDF
+    document->Save(_dataDir + u"AnnotationDemo3.pdf");
 }
 ```
