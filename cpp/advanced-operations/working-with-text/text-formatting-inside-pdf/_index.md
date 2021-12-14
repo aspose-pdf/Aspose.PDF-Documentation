@@ -1,11 +1,11 @@
- ---
-title: Text Formatting inside PDF using C#
+---
+title: Text Formatting inside PDF using C++
 linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
-url: /net/text-formatting-inside-pdf/
+url: /cpp/text-formatting-inside-pdf/
 description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, adding a border around the added text, text alignment for floating box contents and etc.
-lastmod: "2021-06-05"
+lastmod: "2021-12-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,241 +13,281 @@ sitemap:
 
 ## How to add Line Indent to PDF
 
-Aspose.PDF for .NET offers SubsequentLinesIndent property into [TextFormattingOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
+To add line indentation to PDF Aspose.PDF for C ++ uses the [SubsequentLinesIndent](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a89b064ab1f39d56040625d7d98194ad3) property in the [TextFormattingOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options/) class  and also help the [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) and [Paragraphs](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs) collections.
 
 Please use the following code snippet to use the property:
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Create new document object
-Aspose.Pdf.Document document = new Aspose.Pdf.Document();
-Aspose.Pdf.Page page = document.Pages.Add();
+```cpp
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
-Aspose.Pdf.Text.TextFragment text = new Aspose.Pdf.Text.TextFragment("A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog.");
+void AddLineIndent() {
 
-// Initilize TextFormattingOptions for the text fragment and specify SubsequentLinesIndent value
-text.TextState.FormattingOptions = new Aspose.Pdf.Text.TextFormattingOptions()
-{
-    SubsequentLinesIndent = 20
-};
+	String _dataDir("C:\\Samples\\");
 
-page.Paragraphs.Add(text);
+	// String for output file name
+	String outputFileName("SubsequentIndent_out.pdf");
 
-text = new Aspose.Pdf.Text.TextFragment("Line2");
-page.Paragraphs.Add(text);
 
-text = new Aspose.Pdf.Text.TextFragment("Line3");
-page.Paragraphs.Add(text);
+	// Create new document object
+	auto document = MakeObject<Document>();
+	auto page = document->get_Pages()->Add();
 
-text = new Aspose.Pdf.Text.TextFragment("Line4");
-page.Paragraphs.Add(text);
+	auto text = MakeObject<TextFragment>("A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog.");
 
-text = new Aspose.Pdf.Text.TextFragment("Line5");
-page.Paragraphs.Add(text);
+	// Initilize TextFormattingOptions for the text fragment and specify SubsequentLinesIndent value
+	
+    text->get_TextState()->set_FormattingOptions(MakeObject<Aspose::Pdf::Text::TextFormattingOptions>());
+    text->get_TextState()->get_FormattingOptions()->set_SubsequentLinesIndent(20);
 
-document.Save(dataDir + "SubsequentIndent_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+	page->get_Paragraphs()->Add(text);
+
+	text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line2");
+	page->get_Paragraphs()->Add(text);
+
+	text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line3");
+	page->get_Paragraphs()->Add(text);
+
+	text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line4");
+	page->get_Paragraphs()->Add(text);
+
+	text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line5");
+	page->get_Paragraphs()->Add(text);
+
+	document->Save(_dataDir + outputFileName);
+
+}
 ```
 
 ## How to add Text Border
 
-The following code snippet shows, how to add a border to a text using TextBuilder and setting DrawTextRectangleBorder property of TextState:
+The following code snippet shows, how to add a border to a text using TextBuilder and setting DrawTextRectangleBorder property of [TextState](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state)
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Create new document object
-Document pdfDocument = new Document();
-// Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// Create text fragment
-TextFragment textFragment = new TextFragment("main text");
-textFragment.Position = new Position(100, 600);
-// Set text properties
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-// Set StrokingColor property for drawing border (stroking) around text rectangle
-textFragment.TextState.StrokingColor = Aspose.Pdf.Color.DarkRed;
-// Set DrawTextRectangleBorder property value to true
-textFragment.TextState.DrawTextRectangleBorder = true;
-TextBuilder tb = new TextBuilder(pdfPage);
-tb.AppendText(textFragment);
-// Save the document
-pdfDocument.Save(dataDir + "PDFWithTextBorder_out.pdf");
+```cpp
+void AddTextBorder() {
+
+    String _dataDir("C:\\Samples\\");
+
+    // String for output file name
+    String outputFileName("PDFWithTextBorder_out.pdf");
+
+    // Create new document object
+    auto document = MakeObject<Document>();
+    // Get particular page
+    auto page = document->get_Pages()->Add();
+
+    // Create text fragment
+    auto textFragment = MakeObject<TextFragment>("main text");
+    textFragment->set_Position(MakeObject<Position>(100, 600));
+
+    // Set text properties
+    textFragment->get_TextState()->set_FontSize(12);
+    textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"DejaVu Serif"));
+    textFragment->get_TextState()->set_BackgroundColor(Color::get_LightGray());
+    textFragment->get_TextState()->set_ForegroundColor(Color::get_Red());
+    // Set StrokingColor property for drawing border (stroking) around text
+    // rectangle
+    textFragment->get_TextState()->set_StrokingColor(Color::get_DarkRed());
+    // Set DrawTextRectangleBorder property value to true
+    textFragment->get_TextState()->set_DrawTextRectangleBorder(true);
+    auto tb = MakeObject<TextBuilder>(page);
+    tb->AppendText(textFragment);
+    // Save the document
+    document->Save(_dataDir + outputFileName);
+}
 ```
 
 ## How to add Underline Text
 
 The following code snippet shows you how to add Underline text while creating a new PDF file.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```cpp
+void AddUnderlineText() {
+    String _dataDir("C:\\Samples\\");
 
-// Create documentation object
-Document pdfDocument = new Document();
-// Add age page to PDF document
-pdfDocument.Pages.Add();
-// Create TextBuilder for first page
-TextBuilder tb = new TextBuilder(pdfDocument.Pages[1]);
-// TextFragment with sample text
-TextFragment fragment = new TextFragment("Test message");
-// Set the font for TextFragment
-fragment.TextState.Font = FontRepository.FindFont("Arial");
-fragment.TextState.FontSize = 10;
-// Set the formatting of text as Underline
-fragment.TextState.Underline = true;
-// Specify the position where TextFragment needs to be placed
-fragment.Position = new Position(10, 800);
-// Append TextFragment to PDF file
-tb.AppendText(fragment);
+    // String for output file name
+    String outputFileName("AddUnderlineText_out.pdf");
 
-dataDir = dataDir + "AddUnderlineText_out.pdf";
+    // Create new document object
+    auto document = MakeObject<Document>();
+    // Get particular page
+    auto page = document->get_Pages()->Add();
 
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
+    // TextFragment with sample text
+    auto fragment = MakeObject<TextFragment>("Text with underline decoration");
+    // Set the font for TextFragment
+    fragment->get_TextState()->set_Font(FontRepository::FindFont(u"DejaVu Serif"));
+    fragment->get_TextState()->set_FontSize(10);
+
+    // Set the formatting of text as Underline
+    fragment->get_TextState()->set_Underline(true);
+
+    // Specify the position where TextFragment needs to be placed
+    fragment->set_Position(MakeObject<Position>(10, 800));
+    
+    auto tb = MakeObject<TextBuilder>(page);
+    // Append TextFragment to PDF file
+    tb->AppendText(fragment);
+
+    // Save resulting PDF document.
+    document->Save(_dataDir + outputFileName);
+}
 ```
 
 ## How to add Border Around Added Text
 
-You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class.
+You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_content_editor/) class.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```cpp
+void AddBorderAroundAddedText() {
 
-PdfContentEditor editor = new PdfContentEditor();
-editor.BindPdf(dataDir + "input.pdf");
-LineInfo lineInfo = new LineInfo();
-lineInfo.LineWidth = 2;
-lineInfo.VerticeCoordinate = new float[] { 0, 0, 100, 100, 50, 100 };
-lineInfo.Visibility = true;
-editor.CreatePolygon(lineInfo, 1, new System.Drawing.Rectangle(0, 0, 0, 0), "");
+    String _dataDir("C:\\Samples\\");
 
-dataDir = dataDir + "AddingBorderAroundAddedText_out.pdf";
+    // String for input file name
+    String inputFileName("sample.pdf");
 
-// Save resulting PDF document.
-editor.Save(dataDir);
+    // String for output file name
+    String outputFileName("AddingBorderAroundAddedText_out.pdf");
+
+    auto editor = MakeObject<Aspose::Pdf::Facades::PdfContentEditor>();
+
+    editor->BindPdf(_dataDir + inputFileName);
+    auto lineInfo = MakeObject<Aspose::Pdf::Facades::LineInfo>();
+
+    lineInfo->set_LineWidth(2);
+    lineInfo->set_VerticeCoordinate(MakeArray<float>({ 0, 0, 100, 100, 50, 100 }));
+    lineInfo->set_Visibility(true);
+    auto rect = MakeObject<System::Drawing::Rectangle>(0, 0, 0, 0);
+    editor->CreatePolygon(lineInfo, 1, System::Drawing::Rectangle(0, 0, 0, 0), String::Empty);
+
+    // Save resulting PDF document.
+    editor->Save(_dataDir + outputFileName);
+}
 ```
 
 ## How to add NewLine feed
 
-TextFragment doesn’t support line feed inside the text. However in order to add text with line feed, please use TextFragment with TextParagraph:
+For adding text with line feed, please use [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) with [TextParagraph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_paragraph).
 
-- use “\r\n” or Environment.NewLine in TextFragment instead of single “\n”;
-- create TextParagraph object. It will add text with line splitting;
-- add the TextFragment with TextParagraph.AppendLine;
-- add the TextParagraph with TextBuilder.AppendParagraph.
-Please use below code snippet.
+The following code snippet shows you how to add NewLine feed in your PDF file:
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
+```cpp
+void AddNewLineFeed() {
+    String _dataDir("C:\\Samples\\");
 
-// Initialize new TextFragment with text containing required newline markers
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
+    // String for output file name
+    String outputFileName("AddNewLineFeed_out.pdf");
 
-// Set text fragment properties if necessary
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+    // Create new document object
+    auto document = MakeObject<Document>();
+    // Get particular page
+    auto page = document->get_Pages()->Add();
 
-// Create TextParagraph object
-TextParagraph par = new TextParagraph();
+    // Initialize new TextFragment with text containing required newline markers
+    auto textFragment = MakeObject<TextFragment>("Applicant Name: \r\n Joe Smoe");
 
-// Add new TextFragment to paragraph
-par.AppendLine(textFragment);
+    // Set text fragment properties if necessary
+    textFragment->get_TextState()->set_FontSize(12);
+    textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"DejaVu Serif"));
+    textFragment->get_TextState()->set_BackgroundColor(Color::get_LightGray());
+    textFragment->get_TextState()->set_ForegroundColor(Color::get_Red());
 
-// Set paragraph position
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
+    // Create TextParagraph object
+    auto par = MakeObject<TextParagraph>();
 
-// Create TextBuilder object
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// Add the TextParagraph using TextBuilder
-textBuilder.AppendParagraph(par);
+    // Add new TextFragment to paragraph
+    par->AppendLine(textFragment);
 
+    // Set paragraph position
+    par->set_Position(MakeObject<Position>(100, 600));
 
-dataDir = dataDir + "AddNewLineFeed_out.pdf";
+    // Create TextBuilder object
+    auto textBuilder = new TextBuilder(page);
+    // Add the TextParagraph using TextBuilder
+    textBuilder->AppendParagraph(par);
 
-// Save resulting PDF document.
-pdfApplicationDoc.Save(dataDir);
+    // Save resulting PDF document.
+    document->Save(_dataDir + outputFileName);
+}
 ```
 
 ## How to add StrikeOut Text
 
-The TextState class provides the capabilities to set formatting for TextFragments being placed inside PDF document. You can use this class to set text formatting as Bold, Italic, Underline and starting this release, the API has provided the capabilities to mark text formatting as Strikeout. Please try using the following code snippet to add TextFragment with Strikeout formatting.
+You can use [TextState](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state) class to set text formatting like Bold, Italic, Underline, and also, the API has provided the capabilities to mark text formatting as Strikeout.
 
-Please use complete code snippet:
+Please try using the following code snippet to add TextFragment with Strikeout formatting.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Open document
-Document pdfDocument = new Document();
-// Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+```cpp
+void AddStrikeOutText() {
+    String _dataDir("C:\\Samples\\");
 
-// Create text fragment
-TextFragment textFragment = new TextFragment("main text");
-textFragment.Position = new Position(100, 600);
+    // String for output file name
+    String outputFileName("AddStrikeOutText_out.pdf");
 
-// Set text properties
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-// Set StrikeOut property
-textFragment.TextState.StrikeOut = true;
-// Mark text as Bold
-textFragment.TextState.FontStyle = FontStyles.Bold;
+    // Open document
+    auto document = MakeObject<Document>();
+    // Get particular page
+    auto page = document->get_Pages()->Add();
 
-// Create TextBuilder object
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// Append the text fragment to the PDF page
-textBuilder.AppendText(textFragment);
+    // Create text fragment
+    auto textFragment = MakeObject<TextFragment>("main text");
+    textFragment->set_Position(MakeObject<Position>(100, 600));
 
+    // Set text properties
+    textFragment->get_TextState()->set_FontSize(12);
+    textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"DejaVu Serif"));
+    textFragment->get_TextState()->set_BackgroundColor(Color::get_LightGray());
+    textFragment->get_TextState()->set_ForegroundColor(Color::get_Red());
+    // Set StrikeOut property
+    textFragment->get_TextState()->set_StrikeOut(true);
+    // Mark text as Bold
+    textFragment->get_TextState()->set_FontStyle(FontStyles::Bold);
 
-dataDir = dataDir + "AddStrikeOutText_out.pdf";
+    // Create TextBuilder object
+    auto textBuilder = MakeObject<TextBuilder>(page);
+    // Append the text fragment to the PDF page
+    textBuilder->AppendText(textFragment);
 
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
+    // Save resulting PDF document.
+    document->Save(_dataDir + outputFileName);
+}
 ```
 
 ## Apply Gradient Shading to the Text
 
-Text formatting has been further enhanced in the API for text editing scenarios and now you can add text with pattern colorspace inside PDF document. Aspose.Pdf.Color Class has further been enhanced by introducing new property of PatternColorSpace, which can be used to specify shading colors for the text. This new property adds different Gradient Shading to the text e.g. Axial Shading, Radial (Type 3) Shading as shown in the following code snippet:
+[Aspose.Pdf.Color](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.color) Class has further been enhanced by introducing new property of [PatternColorSpace](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.color#a8be6d8ab626d2ba6935a13a9c5b0de54), which can be used to specify shading colors for the text. This new property adds different Gradient Shading to the text e.g. Axial Shading, Radial (Type 3) Shading as shown in the following code snippet:
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```cpp
+void ApplyGradientShading() {
 
-using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
-{
-    TextFragmentAbsorber absorber = new TextFragmentAbsorber("Lorem ipsum");
-    pdfDocument.Pages.Accept(absorber);
+    String _dataDir("C:\\Samples\\");
 
-    TextFragment textFragment = absorber.TextFragments[1];
+    // String for input file name
+    String inputFileName("sample.pdf");
+
+    // String for output file name
+    String outputFileName("ApplyGradientShading_out.pdf");
+
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
+    
+    auto absorber = MakeObject<TextFragmentAbsorber>("always print correctly");
+
+    document->get_Pages()->Accept(absorber);
+
+    auto textFragment = absorber->get_TextFragments()->idx_get(1);
+
+    auto foregroundColor = MakeObject<Aspose::Pdf::Color>();
+    foregroundColor->set_PatternColorSpace(MakeObject<Aspose::Pdf::Drawing::GradientAxialShading>(Color::get_Red(), Color::get_Blue()));
 
     // Create new color with pattern colorspace
-    textFragment.TextState.ForegroundColor = new Aspose.Pdf.Color()
-    {
-        PatternColorSpace = new Aspose.Pdf.Drawing.GradientAxialShading(Color.Red, Color.Blue)
-    };
-    textFragment.TextState.Underline = true;
+    textFragment->get_TextState()->set_ForegroundColor(foregroundColor);
 
-    pdfDocument.Save(dataDir + "text_out.pdf");
+    textFragment->get_TextState()->set_Underline(true);
+
+    document->Save(_dataDir + outputFileName);
+
 }
 ```
 
@@ -255,36 +295,34 @@ using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
 
 ## How to align text to float content
 
-Aspose.PDF supports setting text alignment for contents inside a Floating Box element. The alignment properties of Aspose.Pdf.FloatingBox instance can be used to achieve this as shown in the following code sample.
+Aspose.PDF supports setting text alignment for contents inside a Floating Box element. The alignment properties of [Aspose.Pdf.FloatingBox](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.floating_box) instance can be used to achieve this as shown in the following code sample.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```cpp
+void ApplyGradientShadingRadial() {
 
-Aspose.Pdf.Document doc = new Document();
-doc.Pages.Add();
+    String _dataDir("C:\\Samples\\");
 
-Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox(100, 100);
-floatBox.VerticalAlignment = VerticalAlignment.Bottom;
-floatBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-floatBox.Paragraphs.Add(new TextFragment("FloatingBox_bottom"));
-floatBox.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox);
+    // String for input file name
+    String inputFileName("sample.pdf");
 
-Aspose.Pdf.FloatingBox floatBox1 = new Aspose.Pdf.FloatingBox(100, 100);
-floatBox1.VerticalAlignment = VerticalAlignment.Center;
-floatBox1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-floatBox1.Paragraphs.Add(new TextFragment("FloatingBox_center"));
-floatBox1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox1);
+    // String for output file name
+    String outputFileName("ApplyGradientShadingRadial_out.pdf");
 
-Aspose.Pdf.FloatingBox floatBox2 = new Aspose.Pdf.FloatingBox(100, 100);
-floatBox2.VerticalAlignment = VerticalAlignment.Top;
-floatBox2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-floatBox2.Paragraphs.Add(new TextFragment("FloatingBox_top"));
-floatBox2.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox2);
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
+    auto absorber = MakeObject<TextFragmentAbsorber>(u"always print correctly");
+    document->get_Pages()->Accept(absorber);
+
+    auto textFragment = absorber->get_TextFragments()->idx_get(1);
+
+    auto foregroundColor = MakeObject<Aspose::Pdf::Color>();
+    foregroundColor->set_PatternColorSpace(MakeObject<Aspose::Pdf::Drawing::GradientRadialShading>(Color::get_Red(), Color::get_Blue()));
+
+    // Create new color with pattern colorspace
+    textFragment->get_TextState()->set_ForegroundColor(foregroundColor);
+
+    textFragment->get_TextState()->set_Underline(true);
+
+    document->Save(_dataDir + outputFileName);
+}
 ```

@@ -3,15 +3,19 @@ title: Replace Text in PDF
 linktitle: Replace Text in PDF
 type: docs
 weight: 40
-url: /net/replace-text-in-pdf/
+url: /cpp/replace-text-in-pdf/
 description: Learn more about various ways of replacing and removing text from PDF. Aspose.PDF allows replacing text in a particular region or with a regular expression.
-aliases:
-    - /net/replace-text-in-a-pdf-document/
-lastmod: "2021-06-05"
+lastmod: "2021-12-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+
+Sometimes a task appears to correct or replace text in a PDF document. Trying to do it manually will be a daunting task, so here is the solution to that problem.
+
+Honestly, editing a PDF file is not an easy task. So, a situation, where you need to find and replace one word with another while editing a PDF file, will be very difficult as it will take you a long time to do it. In addition, you may encounter many problems with your output, such as formatting or broken fonts. If you want to easily find and replace text in PDF files, we recommend that you use the Aspose.Pdf library software as it will get the job done in minutes.
+
+In this article, we will show you how to successfully find and replace text in your PDF files using Aspose.PDF for C++.
 
 ## Replace Text in all pages of PDF document
 
@@ -23,172 +27,231 @@ You can try to find in replace the text in the document using Aspose.PDF and get
 
 In order to replace text in all the pages of a PDF document, you first need to use TextFragmentAbsorber to find the particular phrase you want to replace. After that, you need to go through all the TextFragments to replace the text and change any other attributes. Once you have done that, you only need to save the output PDF using the Save method of the Document object. The following code snippet shows you how to replace text in all pages of PDF document.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```cpp
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
-// Open document
-Document pdfDocument = new Document(dataDir + "ReplaceTextAll.pdf");
+void ReplaceTextOnAllPages() {
+    
+    String _dataDir("C:\\Samples\\");
 
-// Create TextAbsorber object to find all instances of the input search phrase
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
 
-// Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+    // Create TextAbsorber object to find all instances of the input search phrase
+    auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>("Web");
 
-// Get the extracted text fragments
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    // Accept the absorber for first page of document
+    document->get_Pages()->Accept(textFragmentAbsorber);
 
-// Loop through the fragments
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    // Update text and other properties
-    textFragment.Text = "TEXT";
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+    // Get the extracted text fragments into collection
+    auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
+
+    // Loop through the fragments
+    for (auto textFragment : textFragmentCollection) {
+        // Update text and other properties
+        textFragment->set_Text(u"World Wide Web");
+        textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"Verdana"));
+        textFragment->get_TextState()->set_FontSize(12);
+        textFragment->get_TextState()->set_ForegroundColor(Color::get_Blue());
+        textFragment->get_TextState()->set_BackgroundColor(Color::get_Gray());
+    }
+    // Save the updated PDF file
+    document->Save(_dataDir + u"Updated_Text.pdf");
 }
-
-dataDir = dataDir + "ReplaceTextAll_out.pdf";
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
 ```
 
 ## Replace Text in particular page region
 
 In order to replace text in a particular page region, first, we need to instantiate TextFragmentAbsorber object, specify page region using TextSearchOptions.Rectangle property and then iterate through all the TextFragments to replace the text. Once these operations are completed, we only need to save the output PDF using the Save method of the Document object.  The following code snippet shows you how to replace text in all pages of PDF document.
 
-```csharp
-// load PDF file
-Aspose.PDF.Document pdf  = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
+```cpp
+void ReplaceTextInParticularRegion() {
+    
+    String _dataDir("C:\\Samples\\");
 
-// instantiate TextFragment Absorber object
-Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
+    // load PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
 
-// search text within page bound
-TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
+    // instantiate TextFragment Absorber object
+    auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>("PDF");
 
-// specify the page region for TextSearch Options
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
+    // search text within page bound
+    textFragmentAbsorber->get_TextSearchOptions()->set_LimitToPageBounds(true);
 
-// search text from first page of PDF file
-pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
+    // specify the page region for TextSearch Options
+    textFragmentAbsorber->get_TextSearchOptions()->set_Rectangle(new Rectangle(100, 700, 400, 770));
 
-// iterate through individual TextFragment
-foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
-{
-    // update text to blank characters
-    tf.Text = "";
+    // search text from first page of PDF file
+    document->get_Pages()->idx_get(1)->Accept(textFragmentAbsorber);
+
+    // iterate through individual TextFragment
+    for (auto tf : textFragmentAbsorber->get_TextFragments()) {
+        // replace text with "---"
+        tf->set_Text(u"---");
+    }
+
+    // Save the updated PDF file
+    document->Save(_dataDir + u"Updated_Text.pdf");
 }
-
-// save updated PDF file after text replace
-pdf.Save("c:/pdftest/TextUpdated.pdf");
 ```
 
 ## Replace Text Based on a Regular Expression
 
 If you want to replace some phrases based on regular expression, you first need to find all the phrases matching that particular regular expression using TextFragmentAbsorber. You will have to pass the regular expression as a parameter to the TextFragmentAbsorber constructor. You also need to create TextSearchOptions object which specifies whether the regular expression is being used or not. Once you get the matching phrases in TextFragments, you need to loop through all of them and update as required. Finally, you need to save the updated PDF using the Save method of the Document object. The following code snippet shows you how to replace text based on a regular expression.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```cpp
+void ReplaceTextWithRegularExpression() {
+    
+    String _dataDir("C:\\Samples\\");
 
-// Open document
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionPage.pdf");
+    // load PDF file
+    auto document = MakeObject<Document>(_dataDir + u"Sample.pdf");
+    // Create TextAbsorber object to find all instances of the input search phrase
+    auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>("\\d{4}-\\d{4}");
+    // like 1999-2000
 
-// Create TextAbsorber object to find all the phrases matching the regular expression
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
+    // Set text search option to specify regular expression usage
+    auto textSearchOptions = new TextSearchOptions(true);
+    textFragmentAbsorber->set_TextSearchOptions(textSearchOptions);
 
-// Set text search option to specify regular expression usage
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
+    // Accept the absorber for first page of document
+    document->get_Pages()->Accept(textFragmentAbsorber);
 
-// Accept the absorber for a single page
-pdfDocument.Pages[1].Accept(textFragmentAbsorber);
+    // Get the extracted text fragments into collection
+    auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
 
-// Get the extracted text fragments
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    // Loop through the fragments
+    for (auto textFragment : textFragmentCollection) {
+        // Update text and other properties
+        textFragment->set_Text(u"ABCD-EFGH");
+        textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"Verdana"));
+        textFragment->get_TextState()->set_FontSize(12);
+        textFragment->get_TextState()->set_ForegroundColor(Color::get_Blue());
+        textFragment->get_TextState()->set_BackgroundColor(Color::get_Gray());
+    }
 
-// Loop through the fragments
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    // Update text and other properties
-    textFragment.Text = "New Phrase";
-    // Set to an instance of an object.
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+    // Save the updated PDF file
+    document->Save(_dataDir + u"Updated_Text.pdf");
 }
-dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-pdfDocument.Save(dataDir);
 ```
 
 ## Replace fonts in existing PDF file
 
-Aspose.PDF for .NET supports the capability to replace text in PDF document. However, sometimes you have a requirement to only replace the font being used inside PDF document. So instead of replacing the text, only font being used is replaced. One of the overloads of TextFragmentAbsorber constructor accepts TextEditOptions object as an argument and we can use RemoveUnusedFonts value from TextEditOptions.FontReplace enumeration to accomplish our requirements. The following code snippet shows how to replace the font inside PDF document.
+Aspose.PDF for C++ supports the capability to replace text in PDF document. However, sometimes you have a requirement to only replace the font being used inside PDF document. So instead of replacing the text, only font being used is replaced. One of the overloads of TextFragmentAbsorber constructor accepts TextEditOptions object as an argument and we can use RemoveUnusedFonts value from TextEditOptions.FontReplace enumeration to accomplish our requirements. The following code snippet shows how to replace the font inside PDF document.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```cpp
+void ReplaceFonts() {
+    String _dataDir("C:\\Samples\\");
 
-// Load source PDF file
-Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
-// Search text fragments and set edit option as remove unused fonts
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
+    // Instantiate Document object
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
 
-// Accept the absorber for all the pages
-pdfDocument.Pages.Accept(absorber);
-// Traverse through all the TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    // If the font name is ArialMT, replace font name with Arial
-    if (textFragment.TextState.Font.FontName == "Arial,Bold")
-    {
-        textFragment.TextState.Font = FontRepository.FindFont("Arial");
+    // Search text fragments and set edit option as remove unused fonts
+    auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>(
+        MakeObject<TextEditOptions>(TextEditOptions::FontReplace::RemoveUnusedFonts));
+
+    // Accept the absorber for all pages of document
+    document->get_Pages()->Accept(textFragmentAbsorber);
+
+    // traverse through all the TextFragments
+    auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
+    for (auto textFragment : textFragmentCollection) {
+        String fontName = textFragment->get_TextState()->get_Font()->get_FontName();
+        // if the font name is ArialMT, replace font name with Arial
+        if (fontName.Equals(u"ArialMT")) {
+            textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"Arial"));
+        }
     }
 
+    // Save the updated PDF file
+    document->Save(_dataDir + u"Updated_Text.pdf");
 }
+```
 
-dataDir = dataDir + "ReplaceFonts_out.pdf";
-// Save updated document
-pdfDocument.Save(dataDir);
+In the next code snippet, you will see how to use non-English font when replacing text:
+
+```cpp
+void UseNonEnglishFontWhenReplacingText() {
+
+    String _dataDir("C:\\Samples\\");
+
+    // Instantiate Document object
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
+
+    // Lets to change every of word "PDF" to some Japan text with specific font
+    // MSGothic that might be installed in the OS
+    // Also, it may be another font that supports hieroglyphs
+    auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>("PDF");
+
+    // Create instance of Text Search options
+    auto searchOptions = MakeObject<TextSearchOptions>(true);
+    textFragmentAbsorber->set_TextSearchOptions(searchOptions);
+
+    // Accept the absorber for all pages of document
+    document->get_Pages()->Accept(textFragmentAbsorber);
+
+    // Get the extracted text fragments into collection
+    auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
+
+    // Loop through the fragments
+    for (auto textFragment : textFragmentCollection) {
+        // Update text and other properties
+        textFragment->set_Text(u"ファイル");
+        textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"TakaoMincho"));
+        textFragment->get_TextState()->set_FontSize(12);
+        textFragment->get_TextState()->set_ForegroundColor(Color::get_Blue());
+        textFragment->get_TextState()->set_BackgroundColor(Color::get_Gray());
+    }
+    // Save the updated document
+    document->Save(_dataDir + u"Japanese_Text.pdf");
+}
 ```
 
 ## Text Replacement should automatically re-arrange Page Contents
 
-Aspose.PDF for .NET supports the feature to search and replace text inside the PDF file. However recently some customers encountered issues during text replace when particular TextFragment is replaced with smaller contents and some extra spaces are displayed in resultant PDF or in case the TextFragment is replaced with some longer string, then words overlap existing page contents. So the requirement was to introduce a mechanism that once the text inside a PDF document is replaced, the contents should be re-arranged.
+Aspose.PDF for C++ supports finding and replacing text within a PDF file. Recently, however, some clients have run into problems when replacing text, where a particular TextFragment is replaced with smaller content and some extra whitespace is displayed in the resulting PDF, or if the TextFragment is replaced with some longer string, then the words overlap the existing page content. Thus, it was required to introduce a mechanism that, after replacing the text inside the PDF document, rearranged its content.
 
-In order to cater above-stated scenarios, Aspose.PDF for .NET has been enhanced so that no such issues appear when replacing text inside PDF file. The following code snippet shows how to replace text inside PDF file and the page contents should be re-arranged automatically.
+To serve the aforementioned scenarios, Aspose.PDF for C++ has been improved so that such issues do not occur when replacing text within a PDF file. The following code snippet demonstrates how to replace text within a PDF file and the page content should be reordered automatically.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```cpp
+void RearrangeContent() {
+    String _dataDir("C:\\Samples\\");
 
-// Load source PDF file
-Document doc = new Document(dataDir + "ExtractTextPage.pdf");
-// Create TextFragment Absorber object with regular expression
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-doc.Pages.Accept(textFragmentAbsorber);
-// Replace each TextFragment
-foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
-{
-    // Set font of text fragment being replaced
-    textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    // Set font size
-    textFragment.TextState.FontSize = 12;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
-    // Replace the text with larger string than placeholder
-    textFragment.Text = "This is a Larger String for the Testing of this issue";
+    // Instantiate Document object
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
+
+    // Create TextFragment Absorber object with regular expression
+    auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>("[PDF,Web]");
+
+    auto textSearchOptions = MakeObject<TextSearchOptions>(true);
+    textFragmentAbsorber->set_TextSearchOptions(textSearchOptions);
+
+    // You also can specify the ReplaceAdjustment.WholeWordsHyphenation option to
+    // wrap text on the next or current line if the current line becomes too long or
+    // short after replacement:    
+    //textFragmentAbsorber->get_TextReplaceOptions()->set_ReplaceAdjustmentAction(TextReplaceOptions::ReplaceAdjustment::WholeWordsHyphenation);
+
+    // Accept the absorber for all pages of document
+    document->get_Pages()->Accept(textFragmentAbsorber);
+
+    // Get the extracted text fragments into collection
+    auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
+
+    // Replace each TextFragment
+    for (auto textFragment : textFragmentCollection) {
+        // Set font of text fragment being replaced
+        textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"Arial"));
+        // Set font size
+        textFragment->get_TextState()->set_FontSize(10);
+        textFragment->get_TextState()->set_ForegroundColor(Color::get_Blue());
+        textFragment->get_TextState()->set_BackgroundColor(Color::get_Gray());
+        // Replace the text with larger string than placeholder
+        textFragment->set_Text(u"This is a larger string for the testing of this feature");
+    }
+    // Save resultant PDF
+    document->Save(_dataDir + u"RearrangeContentsUsingTextReplacement_out.pdf");
 }
-dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
-// Save resultant PDF
-doc.Save(dataDir);
 ```
 
 ## Rendering Replaceable Symbols during PDF creation
@@ -200,227 +263,206 @@ Replaceable symbols are special symbols in a text string that can be replaced wi
 - add the TextFragment with TextParagraph.AppendLine;
 - add the TextParagraph with TextBuilder.AppendParagraph.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```cpp
+void RenderingReplaceableSymbols() {
+    
+    String _dataDir("C:\\Samples\\");
 
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
+    // load PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
+    auto page = document->get_Pages()->Add();
 
-// Initialize new TextFragment with text containing required newline markers
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
+    // Initialize new TextFragment with text containing required newline markers
+    auto textFragment = MakeObject<TextFragment>("Applicant Name: \r\n Joe Smoe");
 
-// Set text fragment properties if necessary
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+    // Set text fragment properties if necessary
+    textFragment->get_TextState()->set_FontSize(12);
+    textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"TimesNewRoman"));
+    textFragment->get_TextState()->set_BackgroundColor(Color::get_LightGray());
+    textFragment->get_TextState()->set_ForegroundColor(Color::get_Red());
 
-// Create TextParagraph object
-TextParagraph par = new TextParagraph();
+    // Create TextParagraph object
+    auto par = MakeObject<TextParagraph>();
 
-// Add new TextFragment to paragraph
-par.AppendLine(textFragment);
+    // Add new TextFragment to paragraph
+    par->AppendLine(textFragment);
 
-// Set paragraph position
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
+    // Set paragraph position
+    par->set_Position(MakeObject<Position>(100, 600));
 
-// Create TextBuilder object
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// Add the TextParagraph using TextBuilder
-textBuilder.AppendParagraph(par);
+    // Create TextBuilder object
+    auto textBuilder = MakeObject<TextBuilder>(page);
 
-dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
-pdfApplicationDoc.Save(dataDir);
+    // Add the TextParagraph using TextBuilder
+    textBuilder->AppendParagraph(par);
+
+    document->Save(_dataDir + u"RenderingReplaceableSymbols_out.pdf");
+}
 ```
 
 ## Replaceable symbols in Header/Footer area
 
-Replaceable symbols can also be placed inside the Header/Footer section of PDF file. Please take a look over the following code snippet for details on how to add replaceable symbol in the footer section.
+The replaceable symbol can also be placed inside the header/footer section of the PDF file. Review the following code snippet to see how to add a replaceable symbol to a footer section.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+void ReplaceableSymbolsInHeaderFooterArea() {
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
+    auto document = MakeObject<Document>();
+    auto page = doc.getPages().add();
 
-MarginInfo marginInfo = new MarginInfo();
-marginInfo.Top = 90;
-marginInfo.Bottom = 50;
-marginInfo.Left = 50;
-marginInfo.Right = 50;
-// Assign the marginInfo instance to Margin property of sec1.PageInfo
-page.PageInfo.Margin = marginInfo;
+    auto marginInfo = MakeObject<MarginInfo>();
+    marginInfo->set_Top(90);
+    marginInfo->set_Bottom(50);
+    marginInfo->set_Left(50);
+    marginInfo->set_Right(50);
 
-HeaderFooter hfFirst = new HeaderFooter();
-page.Header = hfFirst;
-hfFirst.Margin.Left = 50;
-hfFirst.Margin.Right = 50;
+    // Assign the marginInfo instance to Margin property of PageInfo
+    page.getPageInfo()->set_Margin(marginInfo);
 
-// Instantiate a Text paragraph that will store the content to show as header
-TextFragment t1 = new TextFragment("report title");
-t1.TextState.Font = FontRepository.FindFont("Arial");
-t1.TextState.FontSize = 16;
-t1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t1.TextState.FontStyle = FontStyles.Bold;
-t1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t1.TextState.LineSpacing = 5f;
-hfFirst.Paragraphs.Add(t1);
+    auto hfFirst = MakeObject<HeaderFooter>();
+    page->set_Header(hfFirst);
+    hfFirst->get_Margin()->set_Left(50);
+    hfFirst->get_Margin()->set_Right(50);
 
-TextFragment t2 = new TextFragment("Report_Name");
-t2.TextState.Font = FontRepository.FindFont("Arial");
-t2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t2.TextState.LineSpacing = 5f;
-t2.TextState.FontSize = 12;
-hfFirst.Paragraphs.Add(t2);
+    // Instantiate a Text paragraph that will store the content to show as header
+    auto t1 = MakeObject<TextFragment>("report title");
+    t1->get_TextState()->set_Font(FontRepository::FindFont(u"Arial"));
+    t1->get_TextState()->set_FontSize(16);
+    t1->get_TextState()->set_ForegroundColor(Color::get_Black());
+    t1->get_TextState()->set_FontStyle(FontStyles::Bold);
+    t1->get_TextState()->set_HorizontalAlignment(HorizontalAlignment::Center);
+    t1->get_TextState()->set_LineSpacing(5.0f);
+    hfFirst->get_Paragraphs()->Add(t1);
 
-// Create a HeaderFooter object for the section
-HeaderFooter hfFoot = new HeaderFooter();
-// Set the HeaderFooter object to odd & even footer
-page.Footer = hfFoot;
-hfFoot.Margin.Left = 50;
-hfFoot.Margin.Right = 50;
+    auto t2 = MakeObject<TextFragment>("Report_Name");
+    t2->get_TextState()->set_Font(FontRepository::FindFont(u"Arial"));
+    t2->get_TextState()->set_ForegroundColor(Color::get_Black());
+    t2->get_TextState()->set_HorizontalAlignment(HorizontalAlignment::Center);
+    t2->get_TextState()->set_LineSpacing(5.0f);
+    t2->get_TextState()->set_FontSize(12);
+    hfFirst->get_Paragraphs()->Add(t2);
 
-// Add a text paragraph containing current page number of total number of pages
-TextFragment t3 = new TextFragment("Generated on test date");
-TextFragment t4 = new TextFragment("report name ");
-TextFragment t5 = new TextFragment("Page $p of $P");
+    // Create a HeaderFooter object for the section
+    auto hfFoot = MakeObject<HeaderFooter>();
 
-// Instantiate a table object
-Table tab2 = new Table();
+    // Set the HeaderFooter object to odd & even footer
+    page->set_Footer(hfFoot);
+    hfFoot->get_Margin()->set_Left(50);
+    hfFoot->get_Margin()->set_Right(50);
 
-// Add the table in paragraphs collection of the desired section
-hfFoot.Paragraphs.Add(tab2);
+    // Add a text paragraph containing current page number of total number of pages
+    auto t3 = MakeObject<TextFragment>("Generated on test date");
+    auto t4 = MakeObject<TextFragment>("report name ");
+    auto t5 = MakeObject<TextFragment>("Page $p of $P");
 
-// Set with column widths of the table
-tab2.ColumnWidths = "165 172 165";
+    // Instantiate a table object
+    auto tab2 = MakeObject<Table>();
 
-// Create rows in the table and then cells in the rows
-Row row3 = tab2.Rows.Add();
+    // Add the table in paragraphs collection of the desired section
+    hfFoot->get_Paragraphs()->Add(tab2);
 
-row3.Cells.Add();
-row3.Cells.Add();
-row3.Cells.Add();
+    // Set with column widths of the table
+    tab2->set_ColumnWidths(u"165 172 165");
 
-// Set the vertical allignment of the text as center alligned
-row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
-row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
-row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
+    // Create rows in the table and then cells in the rows
+    auto row3 = tab2->get_Rows()->Add();
 
-row3.Cells[0].Paragraphs.Add(t3);
-row3.Cells[1].Paragraphs.Add(t4);
-row3.Cells[2].Paragraphs.Add(t5);
+    row3->get_Cells()->Add();
+    row3->get_Cells()->Add();
+    row3->get_Cells()->Add();
 
-// Sec1.Paragraphs.Add(New Text("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL"))
-Table table = new Table();
+    // Set the vertical allignment of the text as center alligned
+    row3->get_Cells()->idx_get(0)->set_Alignment(HorizontalAlignment::Left);
+    row3->get_Cells()->idx_get(1)->set_Alignment(HorizontalAlignment::Center);
+    row3->get_Cells()->idx_get(2)->set_Alignment(HorizontalAlignment::Right);
 
-table.ColumnWidths = "33% 33% 34%";
-table.DefaultCellPadding = new MarginInfo();
-table.DefaultCellPadding.Top = 10;
-table.DefaultCellPadding.Bottom = 10;
+    row3->get_Cells()->idx_get(0)->get_Paragraphs()->Add(t3);
+    row3->get_Cells()->idx_get(1)->get_Paragraphs()->Add(t4);
+    row3->get_Cells()->idx_get(2)->get_Paragraphs()->Add(t5);
 
-// Add the table in paragraphs collection of the desired section
-page.Paragraphs.Add(table);
+    auto table = MakeObject<Table>();
 
-// Set default cell border using BorderInfo object
-table.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.1f);
+    table->set_ColumnWidths(u"33% 33% 34%");
+    table->set_DefaultCellPadding(new MarginInfo());
+    table->get_DefaultCellPadding()->set_Top(10);
+    table->get_DefaultCellPadding()->set_Bottom(10);
 
-// Set table border using another customized BorderInfo object
-table.Border = new BorderInfo(BorderSide.All, 1f);
+    // Add the table in paragraphs collection of the desired section
+    page.getParagraphs().add(table);
 
-table.RepeatingRowsCount = 1;
+    // Set default cell border using BorderInfo object
+    table->set_DefaultCellBorder(MakeObject<BorderInfo>(BorderSide::All, 0.1f));
 
-// Create rows in the table and then cells in the rows
-Row row1 = table.Rows.Add();
+    // Set table border using another customized BorderInfo object
+    table->set_Border(MakeObject<BorderInfo>(BorderSide::All, 1.0f));
 
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add("col3");
-const string CRLF = "\r\n";
-for (int i = 0; i <= 10; i++)
-{
-    Row row = table.Rows.Add();
-    row.IsRowBroken = true;
-    for (int c = 0; c <= 2; c++)
-    {
-        Cell c1;
-        if (c == 2)
-            c1 = row.Cells.Add("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a" + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "Using Aspose.Total for Java developers can create a wide range of applications.");
-        else
-            c1 = row.Cells.Add("item1" + c);
-        c1.Margin = new MarginInfo();
-        c1.Margin.Left = 30;
-        c1.Margin.Top = 10;
-        c1.Margin.Bottom = 10;
+    table->set_RepeatingRowsCount(1);
+
+    // Create rows in the table and then cells in the rows
+    auto row1 = table->get_Rows()->Add();
+
+    row1->get_Cells()->Add(u"col1");
+    row1->get_Cells()->Add(u"col2");
+    row1->get_Cells()->Add(u"col3");
+
+    String CRLF ("\r\n");
+
+    for (int i = 0; i <= 10; i++) {
+        auto row = table->get_Rows()->Add();
+        row->set_IsRowBroken(true);
+        for (int c = 0; c <= 2; c++) {
+            SharedPtr<Cell> c1;
+            if (c == 2)
+                c1 = row->get_Cells()->Add(
+                    u"Aspose.Total for C++ is a compilation of every Java component offered by Aspose. It is compiled on a"
+                    + CRLF
+                    + u"daily basis to ensure it contains the most up to date versions of each of our Java components. "
+                    + CRLF
+                    + u"daily basis to ensure it contains the most up to date versions of each of our Java components. "
+                    + CRLF
+                    + u"Using Aspose.Total for C++ developers can create a wide range of applications.");
+            else
+                c1 = row->get_Cells()->Add(u"item1" + c);
+            c1->set_Margin(new MarginInfo());
+            c1->get_Margin()->set_Left(30);
+            c1->get_Margin()->set_Top(10);
+            c1->get_Margin()->set_Bottom(10);
+        }
     }
+
+    _dataDir = _dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
+    doc.save(_dataDir);
 }
-
-dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
-doc.Save(dataDir);
-```
-
-## Remove Unused Fonts from PDF File
-
-Aspose.PDF for .NET supports the feature to embed fonts while creating a PDF document, as well as the capability to embed fonts in existing PDF files. From Aspose.PDF for .NET 7.3.0, it also lets you remove duplicate or unused fonts from PDF documents.
-
-To replace fonts, use the following approach:
-
-1. Call the [TextFragmentAbsorber](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) class.
-1. Call the TextFragmentAbsorber class’ TextEditOptions.FontReplace.RemoveUnusedFonts parameter. (This removes fonts that have become unused during font replacement).
-1. Set font individually for each text fragment.
-
-The following code snippet replaces font for all text fragments of all document pages and removes unused fonts.
-
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Load source PDF file
-Document doc = new Document(dataDir + "ReplaceTextPage.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-doc.Pages.Accept(absorber);
-
-// Iterate through all the TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
-}
-
-dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
-// Save updated document
-doc.Save(dataDir);
 ```
 
 ## Remove All Text from PDF Document
 
 ### Remove All Text using Operators
 
-In some text operation, you need to remove all text from PDF document and for that, you need to set found text as empty string value usually. The point is that changing the text for multitude text fragments invokes a number of checking and text position adjustment operations. They are essential in the text editing scenarios. The difficulty is that you cannot determine how many text fragments will be removed in the scenario where they are processed in a loop.
+In some text operations, you need to remove all text from the PDF document, and for that, you usually need to set the found text as an empty string value. The fact is that changing the text for a set of text fragments causes a number of operations to check and adjust the position of the text. They are required in text editing scripts. The difficulty lies in the fact that you cannot determine how many chunks of text will be deleted in the script where they are processed in the loop.
 
-Therefore, we recommend using another approach for the scenario of removing all text from PDF pages. Please consider the following code snippet that works very fast.
+Therefore, we recommend using a different approach for the scenario of removing all text from PDF pages.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+The following code snippet shows how to resolve this task fast.
 
-// Open document
-Document pdfDocument = new Document(dataDir + "RemoveAllText.pdf");
-// Loop through all pages of PDF Document
-for (int i = 1; i <= pdfDocument.Pages.Count; i++)
-{
-    Page page = pdfDocument.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
-    // Select all text on the page
-    page.Contents.Accept(operatorSelector);
-    // Delete all text
-    page.Contents.Delete(operatorSelector.Selected);
+```cpp
+void RemoveAllTextUsingOperators() {
+    
+    String _dataDir("C:\\Samples\\");
+
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
+
+    // Loop through all pages of PDF Document
+    for (int i = 1; i <= document->get_Pages()->get_Count(); i++) {
+        auto page = document->get_Pages()->idx_get(i);
+        auto operatorSelector = MakeObject<OperatorSelector>(MakeObject<Aspose::Pdf::Operators::TextShowOperator>());
+        // Select all text on the page
+        page->get_Contents()->Accept(operatorSelector);
+        // Delete all text
+        page->get_Contents()->Delete(operatorSelector->get_Selected());
+    }
+    // Save the document
+    document->Save(_dataDir + u"RemoveAllText_out.pdf");
 }
-// Save the document
-pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
 ```
