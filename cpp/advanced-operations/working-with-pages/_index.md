@@ -28,7 +28,6 @@ You are able to do the following:
 - [Delete Pages](/pdf/cpp/delete-pages/) - delete page from your PDF file using PageCollection collection.
 - [Change Page size](/pdf/cpp/change-page-size) - you can change PDF page size with code snippet using Aspose.PDF library.
 - [Rotate Pages](/pdf/cpp/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
-- [Split Pages](/pdf/cpp/split-document/) - you can split PDF files into one or multiple PDF.
 - [Add Headers and/or Footers](/pdf/cpp/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file .
 - [Crop Pages](/pdf/cpp/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
 - [Add Watermarks](/pdf/cpp/add-watermarks/) - add watermarks in your PDF file with Artifact Class.

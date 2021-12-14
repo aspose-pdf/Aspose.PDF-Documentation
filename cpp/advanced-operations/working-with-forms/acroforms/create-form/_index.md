@@ -3,7 +3,7 @@ title: Create Forms
 linktitle: Create Forms
 type: docs
 weight: 10
-url: /cpp/create-forms/
+url: /cpp/create-form/
 description: This section explains how to create AcroForms from scratch in your PDF documents with Aspose.PDF for C++.
 lastmod: "2021-12-01"
 sitemap:
