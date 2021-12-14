@@ -20,45 +20,45 @@ The following steps and sample code illustrate how to add page numbering labels 
 
 Steps for Adding Page Numbers to an Existing PDF Document:
 
-In order to add page number stamp, you need to create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and a [PageNumberStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_number_stamp) object using required properties. 
+In order to add page number stamp, you need to create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and a [PageNumberStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_number_stamp) object using required properties.
 
-After that, you can call [AddStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#a3b998038dedf5266b4d60586b1b53d02) method of the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to add the stamp in the PDF. 
+After that, you can call [AddStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#a3b998038dedf5266b4d60586b1b53d02) method of the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to add the stamp in the PDF.
 
-You can also set the font attributes of the page number stamp. 
+You can also set the font attributes of the page number stamp.
 
 The following code snippet shows you how to add page numbers in a PDF file.
 
 ```cpp
 void AddPageNumberToPDF() {
 
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("PageNumberStamp.pdf");
-	String outputFileName("PageNumberStamp_out.pdf");
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("PageNumberStamp.pdf");
+    String outputFileName("PageNumberStamp_out.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Create page number stamp
-	auto pageNumberStamp = MakeObject<PageNumberStamp>();
-	//// Whether the stamp is background
-	//pageNumberStamp.Background = false;
-	//pageNumberStamp.Format = "Page # of " + pdfDocument.Pages.Count;
-	//pageNumberStamp.BottomMargin = 10;
-	//pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
-	//pageNumberStamp.StartingNumber = 1;
+    // Create page number stamp
+    auto pageNumberStamp = MakeObject<PageNumberStamp>();
+    //// Whether the stamp is background
+    //pageNumberStamp.Background = false;
+    //pageNumberStamp.Format = "Page # of " + pdfDocument.Pages.Count;
+    //pageNumberStamp.BottomMargin = 10;
+    //pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
+    //pageNumberStamp.StartingNumber = 1;
 
-	//// Set text properties
-	//pageNumberStamp.TextState.Font = FontRepository.FindFont("Arial");
-	//pageNumberStamp.TextState.FontSize = 14.0F;
-	//pageNumberStamp.TextState.FontStyle = FontStyles.Bold;
-	//pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
-	//pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
+    //// Set text properties
+    //pageNumberStamp.TextState.Font = FontRepository.FindFont("Arial");
+    //pageNumberStamp.TextState.FontSize = 14.0F;
+    //pageNumberStamp.TextState.FontStyle = FontStyles.Bold;
+    //pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
+    //pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
 
-	// Add stamp to particular page
-	document->get_Pages()->idx_get(1)->AddStamp(pageNumberStamp);
-	
-	// Save output document
-	document->Save(_dataDir+ outputFileName);
+    // Add stamp to particular page
+    document->get_Pages()->idx_get(1)->AddStamp(pageNumberStamp);
+
+    // Save output document
+    document->Save(_dataDir+ outputFileName);
 }
 ```
 
@@ -79,23 +79,23 @@ Aspose.PDF has limited support for Bates Numbering for now. This functionality w
 ```cpp
 void WorkingWithPages::RemoveBatesNubmering()
 {
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("BatesNumbering.pdf");
-	String outputFileName("BatesNumbering_out.pdf");
-	String customSubtype("BatesN");
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
-	for (auto page : document->get_Pages())
-	{
-		auto coll = page->get_Artifacts();
-		for (auto batesNum : coll)
-		{
-			if (batesNum->get_CustomSubtype() == customSubtype)
-				page->get_Artifacts()->Delete(batesNum);
-		}
-	}
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("BatesNumbering.pdf");
+    String outputFileName("BatesNumbering_out.pdf");
+    String customSubtype("BatesN");
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
+    for (auto page : document->get_Pages())
+    {
+        auto coll = page->get_Artifacts();
+        for (auto batesNum : coll)
+        {
+        if (batesNum->get_CustomSubtype() == customSubtype)
+            page->get_Artifacts()->Delete(batesNum);
+        }
+    }
 
-	// Save output document
-	document->Save(_dataDir + outputFileName);
+    // Save output document
+    document->Save(_dataDir + outputFileName);
 }
 ```

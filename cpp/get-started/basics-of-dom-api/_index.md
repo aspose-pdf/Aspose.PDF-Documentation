@@ -77,11 +77,11 @@ This namespace provides classes: Curve, Circle, Arc, Rectangle, Graph and etc, t
 
 #### Aspose::Pdf::Engine Namespace Reference
 
-This namespace provides the Addressing, Interactive, Security, CommonData, 	IO, Presentation classes.
+This namespace provides the Addressing, Interactive, Security, CommonData,     IO, Presentation classes.
 
 #### Aspose::Pdf::GroupProcessor Namespace Reference
 
-This namespace provides classes: ExtractorFactory - represents factory for creating IPdfTypeExtractor objects, IDocumentPageTextExtractor, IDocumentTextExtractor, IPdfTypeExtractor classes- represents interface to interacting with extractor. 
+This namespace provides classes: ExtractorFactory - represents factory for creating IPdfTypeExtractor objects, IDocumentPageTextExtractor, IDocumentTextExtractor, IPdfTypeExtractor classes- represents interface to interacting with extractor.
 
 #### Aspose::Pdf::Interchange Namespace Reference
 
@@ -95,7 +95,7 @@ This namespace provides classes of next operators: BasicSetColorAndPatternOperat
 
 #### Aspose::Pdf::Optimization Namespace Reference
 
-This namespace provides two classes - ImageCompressionOptions and OptimizationOptions.  
+This namespace provides two classes - ImageCompressionOptions and OptimizationOptions.
 
 #### Aspose::Pdf::PageModel Namespace Reference
 
@@ -105,7 +105,7 @@ This namespace provides two classes: FontEmbeddingOptions - PDF/A standard requi
 
 #### Aspose::Pdf::Sanitization Namespace Reference
 
-This namespace provides two classes: Details_SanitizationException and IRecovery. 
+This namespace provides two classes: Details_SanitizationException and IRecovery.
 
 #### Aspose::Pdf::Tagged Namespace Reference
 

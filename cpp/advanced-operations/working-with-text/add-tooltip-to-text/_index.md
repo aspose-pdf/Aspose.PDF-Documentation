@@ -1,5 +1,5 @@
 ---
-title: PDF Tooltip using ++
+title: PDF Tooltip using using C++
 linktitle: PDF Tooltip
 type: docs
 weight: 20
@@ -37,7 +37,7 @@ void AddTooltipToSearchedText() {
     document->Save(outputFileName);
 
     // Open document with text
-    auto document = MakeObject<Document>(outputFileName);    
+    auto document = MakeObject<Document>(outputFileName);
     // Create TextAbsorber object to find all the phrases matching the regular expression
     auto absorber = MakeObject<TextFragmentAbsorber>("Move the mouse cursor here to display a tooltip");
     // Accept the absorber for the document pages
@@ -100,7 +100,7 @@ Also note that PDF actions on documents work fine in their respective readers (s
 void CreateHiddenTextBlock() {
 
     String _dataDir("C:\\Samples\\");
-    
+
     // String for output file name
     String outputFileName("TextBlock_HideShow_MouseOverOut_out.pdf");
 
@@ -144,7 +144,7 @@ void CreateHiddenTextBlock() {
     // Add text field to the document
     document->get_Form()->Add(System::DynamicCast<Aspose::Pdf::Forms::Field>(floatingField));
 
-    // Create invisible button on text fragment position    
+    // Create invisible button on text fragment position
     auto buttonField = MakeObject<Aspose::Pdf::Forms::ButtonField>(fragment->get_Page(), fragment->get_Rectangle());
     // Create new hide action for specified field (annotation) and invisibility flag.
     // (You also may reffer floating field by the name if you specified it above.)

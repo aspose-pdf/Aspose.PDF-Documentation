@@ -1,5 +1,5 @@
 ---
-title: Determine Line Break
+title: Determine Line Break in TextFragment using C++
 linktitle: Determine Line Break
 type: docs
 weight: 70
@@ -38,6 +38,6 @@ void LineBreakDemo() {
 
     String notifications = page->GetNotifications();
     Console::WriteLine(notifications);
-    System::IO::File::WriteAllText(_dataDir + u"notifications_out.txt",notifications);    
+    System::IO::File::WriteAllText(_dataDir + u"notifications_out.txt",notifications);
 }
 ```

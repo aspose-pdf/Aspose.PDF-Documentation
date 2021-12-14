@@ -1,5 +1,5 @@
 ---
-title: Working with Forms
+title: Working with Forms using C++
 linktitle: Working with Forms
 type: docs
 weight: 50
@@ -17,7 +17,7 @@ Aspose.PDF for C++ allows you to efficiently work with forms in PDF documents.
 
 **Can I create a fillable PDF form from scratch?**
 Yes, you can just create a blank PDF, add the labels and fields you want, and after save it.
-Can I create a fillable PDF form from an existing document? What are the form fields? How to extract form from PDF file? 
+Can I create a fillable PDF form from an existing document? What are the form fields? How to extract form from PDF file?
 
 You will find answers to these questions and many others by learning the next section of the documentation.
 

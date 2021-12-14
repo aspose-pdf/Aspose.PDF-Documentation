@@ -29,20 +29,20 @@ The following code snippet shows you how to move one page.
 ```cpp
 void MovePage()
 {
-	// Open document
-	String _dataDir("C:\\Samples\\");
-	String srcFileName("<enter file name>");
-	String dstFileName("<enter file name>");
+    // Open document
+    String _dataDir("C:\\Samples\\");
+    String srcFileName("<enter file name>");
+    String dstFileName("<enter file name>");
 
-	auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
-	auto dstDocument = MakeObject<Document>();
+    auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
+    auto dstDocument = MakeObject<Document>();
 
-	auto page = srcDocument->get_Pages()->idx_get(2);
-	dstDocument->get_Pages()->Add(page);
-	// Save output file
-	dstDocument->Save(srcFileName);
-	srcDocument->get_Pages()->Delete(2);
-	srcDocument->Save(dstFileName);
+    auto page = srcDocument->get_Pages()->idx_get(2);
+    dstDocument->get_Pages()->Add(page);
+    // Save output file
+    dstDocument->Save(srcFileName);
+    srcDocument->get_Pages()->Delete(2);
+    srcDocument->Save(dstFileName);
 }
 ```
 
@@ -62,26 +62,26 @@ The following code snippet shows you how to insert an empty page at the end of a
 ```cpp
 void MoveBunchPages()
 {
-	// Open document
-	String _dataDir("C:\\Samples\\");
-	String srcFileName("<enter file name>");
-	String dstFileName("<enter file name>");
+    // Open document
+    String _dataDir("C:\\Samples\\");
+    String srcFileName("<enter file name>");
+    String dstFileName("<enter file name>");
 
-	auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
-	auto dstDocument = MakeObject<Document>();
+    auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
+    auto dstDocument = MakeObject<Document>();
 
 
-	auto pages = MakeArray<int>({ 1,3 });
+    auto pages = MakeArray<int>({ 1,3 });
 
-	for (auto pageIndex : pages)
-	{
-		auto page = srcDocument->get_Pages()->idx_get(pageIndex);
-		dstDocument->get_Pages()->Add(page);
-	}
-	// Save output files
-	dstDocument->Save(srcFileName);
-	srcDocument->get_Pages()->Delete();
-	srcDocument->Save(dstFileName);
+    for (auto pageIndex : pages)
+    {
+        auto page = srcDocument->get_Pages()->idx_get(pageIndex);
+        dstDocument->get_Pages()->Add(page);
+    }
+    // Save output files
+    dstDocument->Save(srcFileName);
+    srcDocument->get_Pages()->Delete();
+    srcDocument->Save(dstFileName);
 }
 ```
 
@@ -96,19 +96,19 @@ void MoveBunchPages()
 ```cpp
 void MovePagesInOnePDF()
 {
-	// Open document
-	String _dataDir("C:\\Samples\\");
-	String srcFileName("<enter file name>");
-	String dstFileName("<enter file name>");
+    // Open document
+    String _dataDir("C:\\Samples\\");
+    String srcFileName("<enter file name>");
+    String dstFileName("<enter file name>");
 
-	auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
-	auto dstDocument = MakeObject<Document>();
+    auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
+    auto dstDocument = MakeObject<Document>();
 
-	auto page = srcDocument->get_Pages()->idx_get(2);
-	srcDocument->get_Pages()->Add(page);
-	srcDocument->get_Pages()->Delete(2);
+    auto page = srcDocument->get_Pages()->idx_get(2);
+    srcDocument->get_Pages()->Add(page);
+    srcDocument->get_Pages()->Delete(2);
 
-	// Save output file
-	srcDocument->Save(dstFileName);
+    // Save output file
+    srcDocument->Save(dstFileName);
 }
 ```

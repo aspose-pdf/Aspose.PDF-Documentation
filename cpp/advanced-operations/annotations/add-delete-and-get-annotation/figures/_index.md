@@ -30,32 +30,32 @@ The following code snippet shows you how to add Circle Annotations in a PDF page
 ```cpp
 void ShapesAnnotations::AddCircleAnnotation() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load the PDF file
-	auto document = MakeObject<Document>(_dataDir + u"appartments.pdf");
-	auto page = document->get_Pages()->idx_get(1);
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"appartments.pdf");
+    auto page = document->get_Pages()->idx_get(1);
 
-	// Create Circle Annotation
-	auto circleAnnotation = MakeObject<CircleAnnotation>(page, MakeObject<Rectangle>(270, 160, 483, 383));
-	circleAnnotation->set_Title(u"John Smith");
-	circleAnnotation->set_Color(Color::get_Red());
-	circleAnnotation->set_InteriorColor(Color::get_MistyRose());
-	circleAnnotation->set_Opacity(0.5);
-	circleAnnotation->set_Popup(MakeObject<PopupAnnotation>(page, MakeObject<Rectangle>(842, 316, 1021, 459)));
+    // Create Circle Annotation
+    auto circleAnnotation = MakeObject<CircleAnnotation>(page, MakeObject<Rectangle>(270, 160, 483, 383));
+    circleAnnotation->set_Title(u"John Smith");
+    circleAnnotation->set_Color(Color::get_Red());
+    circleAnnotation->set_InteriorColor(Color::get_MistyRose());
+    circleAnnotation->set_Opacity(0.5);
+    circleAnnotation->set_Popup(MakeObject<PopupAnnotation>(page, MakeObject<Rectangle>(842, 316, 1021, 459)));
 
-	// Create Square Annotation
-	auto squareAnnotation = MakeObject<SquareAnnotation>(page, MakeObject<Rectangle>(67, 317, 261, 459));
-	squareAnnotation->set_Title(u"John Smith");
-	squareAnnotation->set_Color(Color::get_Blue());
-	squareAnnotation->set_InteriorColor(Color::get_BlueViolet());
-	squareAnnotation->set_Opacity(0.25);
-	squareAnnotation->set_Popup(MakeObject<PopupAnnotation>(page, MakeObject<Rectangle>(842, 196, 1021, 338)));
+    // Create Square Annotation
+    auto squareAnnotation = MakeObject<SquareAnnotation>(page, MakeObject<Rectangle>(67, 317, 261, 459));
+    squareAnnotation->set_Title(u"John Smith");
+    squareAnnotation->set_Color(Color::get_Blue());
+    squareAnnotation->set_InteriorColor(Color::get_BlueViolet());
+    squareAnnotation->set_Opacity(0.25);
+    squareAnnotation->set_Popup(MakeObject<PopupAnnotation>(page, MakeObject<Rectangle>(842, 196, 1021, 338)));
 
-	// Add annotation to the page
-	page->get_Annotations()->Add(circleAnnotation);
-	page->get_Annotations()->Add(squareAnnotation);
-	document->Save(_dataDir + u"appartments_mod.pdf");
+    // Add annotation to the page
+    page->get_Annotations()->Add(circleAnnotation);
+    page->get_Annotations()->Add(squareAnnotation);
+    document->Save(_dataDir + u"appartments_mod.pdf");
 }
 ```
 
@@ -70,22 +70,22 @@ Please try using the following code snippet to Get Circle Annotation from PDF do
 ```cpp
 void ShapesAnnotations::GetCircleAnnotation() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load the PDF file
-	auto document = MakeObject<Document>(_dataDir + u"appartments_mod.pdf");
-	auto page = document->get_Pages()->idx_get(1);
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"appartments_mod.pdf");
+    auto page = document->get_Pages()->idx_get(1);
 
-	auto annotationSelector = MakeObject<AnnotationSelector>(
-		new CircleAnnotation(page, Rectangle::get_Trivial()));
+    auto annotationSelector = MakeObject<AnnotationSelector>(
+        new CircleAnnotation(page, Rectangle::get_Trivial()));
 
-	page->Accept(annotationSelector);
-	auto circleAnnotations = annotationSelector->get_Selected();
+    page->Accept(annotationSelector);
+    auto circleAnnotations = annotationSelector->get_Selected();
 
-	// print results
-	for (auto ca : circleAnnotations) {
-		Console::WriteLine(ca->get_Rect());
-	}
+    // print results
+    for (auto ca : circleAnnotations) {
+        Console::WriteLine(ca->get_Rect());
+    }
 }
 ```
 
@@ -96,22 +96,22 @@ The following code snippet shows how to Delete Circle Annotation from PDF file.
 ```cpp
 void ShapesAnnotations::DeleteCircleAnnotation() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load the PDF file
-	auto document = MakeObject<Document>(_dataDir + u"appartments_mod.pdf");
-	auto page = document->get_Pages()->idx_get(1);
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"appartments_mod.pdf");
+    auto page = document->get_Pages()->idx_get(1);
 
-	auto annotationSelector = MakeObject<AnnotationSelector>(
-		new CircleAnnotation(page, Rectangle::get_Trivial()));
-	page->Accept(annotationSelector);
+    auto annotationSelector = MakeObject<AnnotationSelector>(
+        new CircleAnnotation(page, Rectangle::get_Trivial()));
+    page->Accept(annotationSelector);
 
-	auto circleAnnotations = annotationSelector->get_Selected();
+    auto circleAnnotations = annotationSelector->get_Selected();
 
-	for (auto ca : circleAnnotations) {
-		page->get_Annotations()->Delete(ca);
-	}
-	document->Save(_dataDir + u"appartments_del.pdf");
+    for (auto ca : circleAnnotations) {
+        page->get_Annotations()->Delete(ca);
+    }
+    document->Save(_dataDir + u"appartments_del.pdf");
 }
 ```
 
@@ -136,48 +136,48 @@ The following code snippet shows how to add Polygon and Polyline Annotations to 
 ```cpp
 void ShapesAnnotations::AddPolygonAnnotation() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load the PDF file
-	auto document = MakeObject<Document>(_dataDir + u"appartments.pdf");
-	auto page = document->get_Pages()->idx_get(1);
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"appartments.pdf");
+    auto page = document->get_Pages()->idx_get(1);
 
-	// Create Polygon Annotation
-	auto points = MakeArray<System::SharedPtr<Point>>({
-						 MakeObject<Point>(274, 381),
-						 MakeObject<Point>(555, 381),
-						 MakeObject<Point>(555, 304),
-						 MakeObject<Point>(570, 304),
-						 MakeObject<Point>(570, 195),
-						 MakeObject<Point>(274, 195) });
-	auto polygonAnnotation =
-		MakeObject<PolygonAnnotation>(page,
-		MakeObject<Rectangle>(270, 193, 571, 383),
-		points);
+    // Create Polygon Annotation
+    auto points = MakeArray<System::SharedPtr<Point>>({
+                 MakeObject<Point>(274, 381),
+                 MakeObject<Point>(555, 381),
+                 MakeObject<Point>(555, 304),
+                 MakeObject<Point>(570, 304),
+                 MakeObject<Point>(570, 195),
+                 MakeObject<Point>(274, 195) });
+    auto polygonAnnotation =
+        MakeObject<PolygonAnnotation>(page,
+        MakeObject<Rectangle>(270, 193, 571, 383),
+        points);
 
-	polygonAnnotation->set_Title(u"John Smith");
-	polygonAnnotation->set_Color(Color::get_Blue());
-	polygonAnnotation->set_InteriorColor(Color::get_BlueViolet());
-	polygonAnnotation->set_Opacity(0.25);
-	polygonAnnotation->set_Popup(MakeObject<PopupAnnotation>(page, MakeObject<Rectangle>(842, 196, 1021, 338)));
+    polygonAnnotation->set_Title(u"John Smith");
+    polygonAnnotation->set_Color(Color::get_Blue());
+    polygonAnnotation->set_InteriorColor(Color::get_BlueViolet());
+    polygonAnnotation->set_Opacity(0.25);
+    polygonAnnotation->set_Popup(MakeObject<PopupAnnotation>(page, MakeObject<Rectangle>(842, 196, 1021, 338)));
 
-	// Create PoliLine Annotation
-	auto polylineAnnotation = MakeObject<PolylineAnnotation>(page, MakeObject<Rectangle>(270, 193, 571, 383),
-		MakeArray<System::SharedPtr<Point>>({
-			MakeObject<Point>(545, 150),
-			MakeObject<Point>(545, 190),
-			MakeObject<Point>(667, 190),
-			MakeObject<Point>(667, 110),
-			MakeObject<Point>(626, 111)}));
+    // Create PoliLine Annotation
+    auto polylineAnnotation = MakeObject<PolylineAnnotation>(page, MakeObject<Rectangle>(270, 193, 571, 383),
+        MakeArray<System::SharedPtr<Point>>({
+        MakeObject<Point>(545, 150),
+        MakeObject<Point>(545, 190),
+        MakeObject<Point>(667, 190),
+        MakeObject<Point>(667, 110),
+        MakeObject<Point>(626, 111)}));
 
-	polygonAnnotation->set_Title(u"John Smith");
-	polygonAnnotation->set_Color(Color::get_Red());
-	polygonAnnotation->set_Popup(MakeObject<PopupAnnotation>(page, MakeObject<Rectangle>(842, 196, 1021, 338)));
+    polygonAnnotation->set_Title(u"John Smith");
+    polygonAnnotation->set_Color(Color::get_Red());
+    polygonAnnotation->set_Popup(MakeObject<PopupAnnotation>(page, MakeObject<Rectangle>(842, 196, 1021, 338)));
 
-	// Add annotation to the page
-	page->get_Annotations()->Add(polygonAnnotation);
-	page->get_Annotations()->Add(polylineAnnotation);
-	document->Save(_dataDir + u"appartments_mod.pdf");
+    // Add annotation to the page
+    page->get_Annotations()->Add(polygonAnnotation);
+    page->get_Annotations()->Add(polylineAnnotation);
+    document->Save(_dataDir + u"appartments_mod.pdf");
 }
 ```
 
@@ -188,20 +188,20 @@ Please try using the following code snippet to Get Polygon and Polyline Annotati
 ```cpp
 void ShapesAnnotations::GetPolyAnnotation() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load the PDF file
-	auto document = MakeObject<Document>(_dataDir + u"appartments_mod.pdf");
-	auto page = document->get_Pages()->idx_get(1);
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"appartments_mod.pdf");
+    auto page = document->get_Pages()->idx_get(1);
 
-	auto annotationSelector = MakeObject<AnnotationSelector>(
-		MakeObject<PolylineAnnotation>(page, Rectangle::get_Trivial(), nullptr));
-	page->Accept(annotationSelector);
-	auto polyAnnotations = annotationSelector->get_Selected();
+    auto annotationSelector = MakeObject<AnnotationSelector>(
+        MakeObject<PolylineAnnotation>(page, Rectangle::get_Trivial(), nullptr));
+    page->Accept(annotationSelector);
+    auto polyAnnotations = annotationSelector->get_Selected();
 
-	for (auto pa : polyAnnotations) {
-	Console::WriteLine(u"{0}", pa->get_Rect());
-	}
+    for (auto pa : polyAnnotations) {
+    Console::WriteLine(u"{0}", pa->get_Rect());
+    }
 }
 ```
 
@@ -212,22 +212,22 @@ The following code snippet shows how Delete Polygon and Polyline Annotations fro
 ```cpp
 void ShapesAnnotations::DeletePolyAnnotation() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load the PDF file
-	auto document = MakeObject<Document>(_dataDir + u"appartments_mod.pdf");
-	auto page = document->get_Pages()->idx_get(1);
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"appartments_mod.pdf");
+    auto page = document->get_Pages()->idx_get(1);
 
-	auto annotationSelector = MakeObject<AnnotationSelector>(
-		new PolylineAnnotation(page, Rectangle::get_Trivial(), nullptr));
-	page->Accept(annotationSelector);
-	auto polyAnnotations = annotationSelector->get_Selected();
+    auto annotationSelector = MakeObject<AnnotationSelector>(
+        new PolylineAnnotation(page, Rectangle::get_Trivial(), nullptr));
+    page->Accept(annotationSelector);
+    auto polyAnnotations = annotationSelector->get_Selected();
 
-	for (auto pa : polyAnnotations) {
-		page->get_Annotations()->Delete(pa);
-	}
+    for (auto pa : polyAnnotations) {
+        page->get_Annotations()->Delete(pa);
+    }
 
-	document->Save(_dataDir + u"Appartments_del.pdf");
+    document->Save(_dataDir + u"Appartments_del.pdf");
 }
 ```
 
@@ -255,31 +255,31 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
 void AddLineAnnotation() {
-	String _dataDir ("C:\\Samples\\");
-	try {
-		// Load the PDF file
-		auto document = MakeObject<Document>(_dataDir + u"appartments.pdf");
-		auto page = document->get_Pages()->idx_get(1);
+    String _dataDir ("C:\\Samples\\");
+    try {
+        // Load the PDF file
+        auto document = MakeObject<Document>(_dataDir + u"appartments.pdf");
+        auto page = document->get_Pages()->idx_get(1);
 
-		// Create Line Annotation
-		auto lineAnnotation = MakeObject<Aspose::Pdf::Annotations::LineAnnotation>(
-			page, new Rectangle(550, 93, 562, 439),
-			new Point(556, 99), new Point(556, 443));
+        // Create Line Annotation
+        auto lineAnnotation = MakeObject<Aspose::Pdf::Annotations::LineAnnotation>(
+        page, new Rectangle(550, 93, 562, 439),
+        new Point(556, 99), new Point(556, 443));
 
-		lineAnnotation->set_Title(u"John Smith");
-		lineAnnotation->set_Color(Color::get_Red());
-		lineAnnotation->set_Width(3);
-		lineAnnotation->set_StartingStyle(Aspose::Pdf::Annotations::LineEnding::OpenArrow);
-		lineAnnotation->set_EndingStyle(Aspose::Pdf::Annotations::LineEnding::OpenArrow);
-		lineAnnotation->set_Popup(MakeObject<Aspose::Pdf::Annotations::PopupAnnotation>(page, new Rectangle(842, 124, 1021, 266)));
+        lineAnnotation->set_Title(u"John Smith");
+        lineAnnotation->set_Color(Color::get_Red());
+        lineAnnotation->set_Width(3);
+        lineAnnotation->set_StartingStyle(Aspose::Pdf::Annotations::LineEnding::OpenArrow);
+        lineAnnotation->set_EndingStyle(Aspose::Pdf::Annotations::LineEnding::OpenArrow);
+        lineAnnotation->set_Popup(MakeObject<Aspose::Pdf::Annotations::PopupAnnotation>(page, new Rectangle(842, 124, 1021, 266)));
 
-		// Add annotation to the page
-		page->get_Annotations()->Add(lineAnnotation);
-		document->Save(_dataDir + u"appartments_mod.pdf");
-	}
-	catch (Exception ex) {
-		Console::WriteLine(ex->get_Message());
-	}
+        // Add annotation to the page
+        page->get_Annotations()->Add(lineAnnotation);
+        document->Save(_dataDir + u"appartments_mod.pdf");
+    }
+    catch (Exception ex) {
+        Console::WriteLine(ex->get_Message());
+    }
 }
 ```
 
