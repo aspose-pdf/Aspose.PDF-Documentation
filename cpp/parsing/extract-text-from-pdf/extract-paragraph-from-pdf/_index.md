@@ -1,5 +1,5 @@
 ---
-title: Extract Paragraph from PDF C++
+title: Extract Paragraph from PDF using C++
 linktitle: Extract Paragraph from PDF
 type: docs
 weight: 20
