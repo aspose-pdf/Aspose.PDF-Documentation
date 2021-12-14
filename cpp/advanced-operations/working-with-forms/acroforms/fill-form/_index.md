@@ -25,19 +25,19 @@ using namespace Aspose::Pdf;
 
 void FillAcroform()
 {
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + u"FillFormField.pdf");
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + u"FillFormField.pdf");
 
-	// Get a field
-	auto textBoxField = System::DynamicCast<Aspose::Pdf::Forms::TextBoxField>(document->get_Form()->idx_get(u"textbox1"));
+    // Get a field
+    auto textBoxField = System::DynamicCast<Aspose::Pdf::Forms::TextBoxField>(document->get_Form()->idx_get(u"textbox1"));
 
-	// Modify field value
-	textBoxField->set_Value(u"Value to be filled in the field");
+    // Modify field value
+    textBoxField->set_Value(u"Value to be filled in the field");
 
-	// Save updated document
-	document->Save(_dataDir + u"FillFormField_out.pdf");
+    // Save updated document
+    document->Save(_dataDir + u"FillFormField_out.pdf");
 
 }
 ```

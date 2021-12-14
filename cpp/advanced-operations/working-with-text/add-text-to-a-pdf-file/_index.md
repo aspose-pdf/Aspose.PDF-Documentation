@@ -101,7 +101,7 @@ void LoadingFontFromStream() {
 
 ## Add Text using TextParagraph
 
-The following code snippet shows you how to add text in PDF document using [TextParagraph](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textparagraph) class.
+The following code snippet shows you how to add text in PDF document using [TextParagraph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_paragraph) class.
 
 ```cpp
 void AddTextUsingTextParagraph() {
@@ -146,7 +146,7 @@ void AddTextUsingTextParagraph() {
 
 ## Add Hyperlink to TextSegment
 
-A PDF page may comprise of one or more TextFragment objects, where each TextFragment object can have one or more TextSegment instance. In order to set hyperlink for TextSegment, Hyperlink property of [TextSegment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textsegment) class can be used while providing the object of Aspose.Pdf.WebHyperlink instance. Please try using the following code snippet to accomplish this requirement.
+A PDF page may comprise of one or more TextFragment objects, where each TextFragment object can have one or more TextSegment instance. In order to set hyperlink for TextSegment, Hyperlink property of [TextSegment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_segment) class can be used while providing the object of Aspose.Pdf.WebHyperlink instance. Please try using the following code snippet to accomplish this requirement.
 
 ```cpp
 void AddHyperlinkToTextSegment() {
@@ -202,7 +202,7 @@ void AddHyperlinkToTextSegment() {
 
 ## Use OTF Font
 
-Aspose.PDF for .NET offers the feature to use Custom/TrueType fonts while creating/manipulating PDF file contents so that file contents are displayed using contents other than default system fonts. Starting release of Aspose.PDF for .NET 10.3.0, we have provided the support for Open Type Fonts.
+Aspose.PDF for С++ offers the feature to use Custom/TrueType fonts while creating/manipulating PDF file contents so that file contents are displayed using contents other than default system fonts. 
 
 ```cpp
 void UseOTFFont() {
@@ -235,7 +235,7 @@ void UseOTFFont() {
 
 The Aspose.Pdf.Generator.Text class contains a property called IsHtmlTagSupported which makes it possible to add HTML tags/contents into PDF files. The added content is rendered in native HTML tags instead of appearing as a simple text string. To support a similar feature in the new Document Object Model (DOM) of the Aspose.Pdf namespace, the HtmlFragment class has been introduced.
 
-The [HtmlFragment](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlfragment) instance can be used to specify the HTML contents which should be placed inside the PDF file. Similar to TextFragment, HtmlFragment is a paragraph level object and can be added to the Page object's paragraphs collection. The following code snippets show the steps to place HTML contents inside PDF file using the DOM approach.
+The [HtmlFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.html_fragment) instance can be used to specify the HTML contents which should be placed inside the PDF file. Similar to TextFragment, HtmlFragment is a paragraph level object and can be added to the Page object's paragraphs collection. The following code snippets show the steps to place HTML contents inside PDF file using the DOM approach.
 
 ```cpp
 void AddingHtmlString() {
@@ -378,12 +378,12 @@ In a footnote referencing system, indicate a reference by:
 
 The advantage of footnoting is that the reader can simply cast their eyes down the page to discover the source of a reference that interests them.
 
-Please follow the steps specified below to create a FootNote:
+Foolow the next steps:
 
-- Create a Document instance
-- Create a Page object
-- Create a TextFragment object
-- Create a Note instance and pass it's value to TextFragment.FootNote property
+- Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) instance
+- Create a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) object
+- Create a [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) object
+- Create a Note instance and pass it's value to TextFragment [FootNote](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment#abe1663009fbceed84a0a392527463219) property
 - Add TextFragment to paragraphs collection of a page instance
 
 ```cpp
@@ -573,7 +573,7 @@ void CustomFootNote_Label() {
 
 ## Adding Image and Table to Footnote
 
-In earlier release versions, the Footnote support was provided but it was only applicable to TextFragment object. However starting release Aspose.PDF for .NET 10.7.0, you can also add Footnote to other objects inside PDF document such as Table, Cells etc. The following code snippet shows the steps to add Footnote to TextFragment object and then add Image and Table object to paragraphs collection of Footnote section.
+The following code snippet shows the steps to add [Footnote](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment#a017ff999979d9f799b8e3cd32ab95722) to [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) object and then add Image and Table object to paragraphs collection of Footnote section.
 
 ```cpp
 
@@ -701,7 +701,9 @@ void TextAndImageAsInLineParagraph() {
 
 ## Specify character Spacing when adding Text
 
-A text can be added inside paragraphs collection of PDF files using TextFragment instance or by using TextParagraph object and even you can stamp the text inside PDF by using TextStamp class. While adding the text, we may have a requirement to specify character spacing for the text objects. In order to accomplish this requirement, a new property named CharacterSpacing property has been introduced. Please take a look at the following approaches to fulfill this requirement.
+Text can be added to a PDF's paragraph collection using a TextFragment instance or a TextParagraph object, and even you can stamp text inside a PDF using the TextStamp class. When adding text, we may be required to specify the spacing between characters for text objects. To fulfill this requirement, a new property has been introduced named Property CharacterSpacing. 
+
+Please consider the following approaches to fulfill this requirement.
 
 The following approaches show the steps to specify character spacing when adding text inside a PDF document.
 
@@ -819,11 +821,11 @@ void CharacterSpacing_TextStamp() {
 
 ## Create Multi-Column PDF document
 
-In magazines and newspapers, we mostly see that news are displayed in multiple columns on the single pages instead of the books where text paragraphs are mostly printed on the whole pages from left to right position. Many document processing applications like Microsoft Word and Adobe Acrobat Writer allow users to create multiple columns on a single page and then add data to them.
+This topic shows how you can create a multi-column PDF using Aspose.Pdf for C++.
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) also offers the feature to create multiple columns inside the pages of PDF documents. In order to create multi-column PDF file, we can make use of Aspose.Pdf.FloatingBox class as it provides ColumnInfo.ColumnCount property to specify the number of columns inside FloatingBox and we can also specify the spacing between columns and columns widths using ColumnInfo.ColumnSpacing and ColumnInfo.ColumnWidths properties accordingly. Please note that FloatingBox is an element inside Document Object Model and it can have obsolete positioning as compared to relative positioning (i.e. Text, Graph, Image, etc).
+Today, we most often see news displayed in multiple columns on separate pages, rather than in books, where paragraphs of text are mostly printed on all pages from left to right. Many document processing applications, such as Microsoft Word and Adobe Acrobat Writer, allow users to create multiple columns on a single page and then add data to them. 
 
-Column spacing means the space between the columns and the default spacing between the columns is 1.25cm. If the column width is not specified, then [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) calculates width for each column automatically according to the page size and column spacing.
+Aspose.Pdf for C++ also offers the ability to create multiple columns in PDF document pages. To create a PDF with multiple columns, we can use the [Aspose.Pdf.FloatingBox](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.floating_box) class as it provides a ColumnInfo.ColumnCount property to specify the number of columns inside the FloatingBox, and we can also specify the column spacing and column widths using ColumnInfo .ColumnSpacing and ColumnInfo .ColumnWidths respectively.
 
 An example is given below to demonstrate the creation of two columns with Graphs objects (Line) and they are added to paragraphs collection of FloatingBox, which is then added paragraphs collection of Page instance.
 
@@ -922,20 +924,9 @@ void CreateMultiColumn() {
 
 A Tab Stop is a stop point for tabbing. In word processing, each line contains a number of tab stops placed at regular intervals (for example, every half inch). They can be changed, however, as most word processors allow you to set tab stops wherever you want. When you press the Tab key, the cursor or insertion point jumps to the next tab stop, which itself is invisible. Although tab stops do not exist in the text file, the word processor keeps track of them so that it can react correctly to the Tab key.
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) allows developers to use custom tab stops in PDF documents. The Aspose.Pdf.Text.TabStop class is used to set custom TAB stops in the [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) class.
-
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/)  also offers some pre-defined tab leader types as an enumeration named, TabLeaderType whose pre-defined values and their descriptions are given below:
-
-|**Tab Leader Type**|**Description**|
-| :- | :- |
-|None|No tab leader|
-|Solid|Solid tab leader|
-|Dash|Dash tab leader|
-|Dot|Dot tab leader|
-
 Here is an example of how to set custom TAB stops.
 
-```csharp
+```cpp
 void CustomTabStops() {
     String _dataDir("C:\\Samples\\");
     String outputFileName("CustomTabStops_out.pdf");
@@ -978,7 +969,9 @@ void CustomTabStops() {
 
 ## How to Add Transparent Text in PDF
 
-A PDF file contains Image, Text, Graph, attachment, Annotations objects and while creating TextFragment, you can set foreground, background-color information as well as text formatting. Aspose.PDF for .NET supports the feature to add text with Alpha color channel. The following code snippet shows how to add text with transparent color.
+PDF 1.4 (a file format supported by Acrobat 5) was the first version of PDF to support transparency. This PDF hit the market around the same time as Adobe Illustrator 9.
+
+A PDF file contains Image, Text, Graph, attachment, Annotations objects and while creating TextFragment, you can set foreground, background-color information as well as text formatting. Aspose.PDF for C++ supports the feature to add text with Alpha color channel. The following code snippet shows how to add text with transparent color.
 
 ```cpp
 void AddTransparentText() {
@@ -1032,7 +1025,7 @@ void AddTransparentText() {
 
 ## Specify LineSpacing for Fonts
 
-Every font has an abstract square, whose height is the intended distance between lines of type in the same type size. This square is called the em square and it is the design grid on which the glyph outlines are defined. Many letters of input font have points that are placed out of font's em square bounds, so in order to display the font correctly, usage of special setting is needed. The object TextFragment has a set of text formatting options which are accessible via properties TextState.FormattingOptions. Last property of this path is property of type Aspose.Pdf.Text.TextFormattingOptions. This class has a an enumeration [LineSpacingMode](https://apireference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode) which is designed for specific fonts e.g input font "HPSimplified.ttf". Also class [Aspose.Pdf.Text.TextFormattingOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) has a property [LineSpacing](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) of type LineSpacingMode. You just need to set LineSpacing into LineSpacingMode.FullSize. The code snippet to get a font displayed correctly, would be like as follows:
+[Aspose.Pdf.Text.TextFormattingOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options) class has a an enumeration [LineSpacingMode](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a240276fd8a270b7c134d3355c5fb1c91) which is designed for specific fonts e.g input font "HPSimplified.ttf". Also class [Aspose.Pdf.Text.TextFormattingOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options) has a property [LineSpacing](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a240276fd8a270b7c134d3355c5fb1c91a9e120eead36071a90367e425c96b5eaf) of type LineSpacingMode. You just need to set LineSpacing into LineSpacingMode.FullSize. The code snippet to get a font displayed correctly, would be like as follows:
 
 ```cpp
 void SpecifyLineSpacingForFonts() {
@@ -1074,7 +1067,9 @@ void SpecifyLineSpacingForFonts() {
 
 ## Get Text Width Dynamically
 
-Sometimes, it is required to get the text width dynamically. Aspose.PDF for .NET includes two methods for string width measurement. You can invoke the [MeasureString](https://apireference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) method of Aspose.Pdf.Text.Font or Aspose.Pdf.Text.TextState classes (or both). The code snippet below shows how to use this functionality.
+[Aspose.Pdf.Text.TextState](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state) class shows how to get text width dynamically in PDF document.
+
+Sometimes, it is required to get the text width dynamically. Aspose.PDF for C++ includes two methods for string width measurement. You can invoke the [MeasureString](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state#a084c1781028cd3483c82b4fd4cec4967) method of Aspose.Pdf.Text.Font or Aspose.Pdf.Text.TextState classes (or both). The code snippet below shows how to use this functionality.
 
 ```cpp
 void GetTextWidthDynamicaly() {

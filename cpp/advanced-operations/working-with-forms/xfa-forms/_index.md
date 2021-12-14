@@ -1,5 +1,5 @@
 ---
-title: Working with XFA Forms using Aspose.PDF for C++
+title: Working with XFA Forms using C++
 linktitle: XFA Forms
 type: docs
 weight: 20
@@ -27,26 +27,25 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
 void FillXFA() {
-	
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load XFA form
-	auto document = MakeObject<Document>(_dataDir + u"FillXFAFields.pdf");
+    // Load XFA form
+    auto document = MakeObject<Document>(_dataDir + u"FillXFAFields.pdf");
 
-	// Get names of XFA form fields
-	auto names = document->get_Form()->get_XFA()->get_FieldNames();
+    // Get names of XFA form fields
+    auto names = document->get_Form()->get_XFA()->get_FieldNames();
 
-	// Set field values
-	
-	document->get_Form()->get_XFA()->idx_set(names->idx_get(0),u"Field 0");
-	document->get_Form()->get_XFA()->idx_set(names->idx_get(1),u"Field 1");
+    // Set field values
 
-	// Save the updated document
-	document->Save(_dataDir + u"Filled_XFA_out.pdf");
+    document->get_Form()->get_XFA()->idx_set(names->idx_get(0),u"Field 0");
+    document->get_Form()->get_XFA()->idx_set(names->idx_get(1),u"Field 1");
+
+    // Save the updated document
+    document->Save(_dataDir + u"Filled_XFA_out.pdf");
 }
 ```
 
-## Convert XFA-to-Acroform
+## Convert XFA to AcroForm
 
 {{% alert color="primary" %}}
 
@@ -67,16 +66,16 @@ We cannot extract or manipulate pages of XFA Forms, because the form content is 
 ```cpp
 void ConvertXFAtoAcroForms() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load XFA form
-	auto document = MakeObject<Document>(_dataDir + u"DynamicXFAToAcroForm.pdf");
+    // Load XFA form
+    auto document = MakeObject<Document>(_dataDir + u"DynamicXFAToAcroForm.pdf");
 
-	// Set the form fields type as standard AcroForm
-	document->get_Form()->set_Type(Aspose::Pdf::Forms::FormType::Standard);
+    // Set the form fields type as standard AcroForm
+    document->get_Form()->set_Type(Aspose::Pdf::Forms::FormType::Standard);
 
-	// Save the resultant PDF
-	document->Save(_dataDir + u"Standard_AcroForm_out.pdf");
+    // Save the resultant PDF
+    document->Save(_dataDir + u"Standard_AcroForm_out.pdf");
 }
 ```
 
@@ -86,24 +85,24 @@ To access field properties, first use Document.Form.XFA.Teamplate to access the 
 
 ```cpp
 void GetXFAProprties() {
-	
-	String _dataDir("C:\\Samples\\");
-	// Load XFA form
-	auto document = MakeObject<Document>(_dataDir + u"GetXFAProperties.pdf");
 
-	auto names = document->get_Form()->get_XFA()->get_FieldNames();
+    String _dataDir("C:\\Samples\\");
+    // Load XFA form
+    auto document = MakeObject<Document>(_dataDir + u"GetXFAProperties.pdf");
 
-	// Set field values
-	document->get_Form()->get_XFA()->idx_set(names->idx_get(0), u"Field 0");
-	document->get_Form()->get_XFA()->idx_set(names->idx_get(0), u"Field 1");
+    auto names = document->get_Form()->get_XFA()->get_FieldNames();
 
-	// Get field position
-	Console::WriteLine(document->get_Form()->get_XFA()->GetFieldTemplate(names[0])->get_Attributes()->idx_get(u"x")->get_Value());
+    // Set field values
+    document->get_Form()->get_XFA()->idx_set(names->idx_get(0), u"Field 0");
+    document->get_Form()->get_XFA()->idx_set(names->idx_get(0), u"Field 1");
 
-	// Get field position
-	Console::WriteLine(document->get_Form()->get_XFA()->GetFieldTemplate(names[0])->get_Attributes()->idx_get(u"y")->get_Value());
-	
-	// Save the updated document
-	document->Save(_dataDir + u"Filled_XFA_out.pdf");
+    // Get field position
+    Console::WriteLine(document->get_Form()->get_XFA()->GetFieldTemplate(names[0])->get_Attributes()->idx_get(u"x")->get_Value());
+
+    // Get field position
+    Console::WriteLine(document->get_Form()->get_XFA()->GetFieldTemplate(names[0])->get_Attributes()->idx_get(u"y")->get_Value());
+
+    // Save the updated document
+    document->Save(_dataDir + u"Filled_XFA_out.pdf");
 }
 ```

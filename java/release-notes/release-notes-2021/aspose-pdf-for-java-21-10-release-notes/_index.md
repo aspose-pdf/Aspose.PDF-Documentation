@@ -21,17 +21,9 @@ This page contains release notes information for Aspose.PDF for Java 21.10.
 |PDFJAVA-39695|PDF to XLSX - data incorrectly exported|Bug|
 |PDFJAVA-40881|TableAbsorber show 2 tables while there is only one in PDF document|Bug|
 
-
-
 ## **Public API and Backwards Incompatible Changes**
 
-
-
-
-**Added new methods** 
+**Added new methods**
 - com.aspose.pdf.facades.**PdfFileSignature**.certify(String,DocMDPSignature)
 - com.aspose.pdf.**TextSearchOptions**.getStoredGraphicElementsMaxCount()
 - com.aspose.pdf.**TextSearchOptions**.setStoredGraphicElementsMaxCount(int)
-
-
-	

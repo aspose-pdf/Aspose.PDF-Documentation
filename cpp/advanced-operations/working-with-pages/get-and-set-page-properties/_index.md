@@ -25,14 +25,14 @@ The following code snippet shows how to get the number of pages of a PDF file.
 
 ```cpp
 void GetNumberOfPages() {
-	// Open document
-	String _dataDir("C:\\Samples\\");
-	String srcFileName("GetNumberofPages.pdf");
+    // Open document
+    String _dataDir("C:\\Samples\\");
+    String srcFileName("GetNumberofPages.pdf");
 
-	auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
+    auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
 
-	// Get page count
-	std::cout << "Page Count : " << srcDocument->get_Pages()->get_Count() << std::endl;
+    // Get page count
+    std::cout << "Page Count : " << srcDocument->get_Pages()->get_Count() << std::endl;
 }
 ```
 
@@ -42,19 +42,19 @@ Sometimes we generate the PDF files on the fly and during PDF file creation, we 
 
 ```cpp
 void GetPageCountWithoutSavingTheDocument() {
-	// Instantiate Document instance
-	auto document = MakeObject<Document>();
+    // Instantiate Document instance
+    auto document = MakeObject<Document>();
 
-	// Add page to pages collection of PDF file
-	auto page = document->get_Pages()->Add();
-	// Create loop instance
-	for (int i = 0; i < 300; i++)
-		// Add TextFragment to paragraphs collection of page object
-		page->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Pages count test"));
-	// Process the paragraphs in PDF file to get accurate page count
-	document->ProcessParagraphs();
-	// Print number of pages in document
-	std::cout << "Number of pages in document = " << document->get_Pages()->get_Count();
+    // Add page to pages collection of PDF file
+    auto page = document->get_Pages()->Add();
+    // Create loop instance
+    for (int i = 0; i < 300; i++)
+        // Add TextFragment to paragraphs collection of page object
+        page->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Pages count test"));
+    // Process the paragraphs in PDF file to get accurate page count
+    document->ProcessParagraphs();
+    // Print number of pages in document
+    std::cout << "Number of pages in document = " << document->get_Pages()->get_Count();
 }
 ```
 
@@ -69,47 +69,47 @@ From there, it is possible to access either individual Page objects using their 
 ```cpp
 void AccessingPageProperties() {
 
-	String _dataDir("C:\\Samples\\");
-	String pdfDocument("GetProperties.pdf");
+    String _dataDir("C:\\Samples\\");
+    String pdfDocument("GetProperties.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + pdfDocument);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + pdfDocument);
 
-	// Get particular page
-	auto pdfPage = document->get_Pages()->idx_get(1);
-	// Get page properties
-	Console::WriteLine(u"ArtBox : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-		pdfPage->get_ArtBox()->get_Height(), pdfPage->get_ArtBox()->get_Width(),
-		pdfPage->get_ArtBox()->get_LLX(), pdfPage->get_ArtBox()->get_LLY(),
-		pdfPage->get_ArtBox()->get_URX(), pdfPage->get_ArtBox()->get_URY());
+    // Get particular page
+    auto pdfPage = document->get_Pages()->idx_get(1);
+    // Get page properties
+    Console::WriteLine(u"ArtBox : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
+        pdfPage->get_ArtBox()->get_Height(), pdfPage->get_ArtBox()->get_Width(),
+        pdfPage->get_ArtBox()->get_LLX(), pdfPage->get_ArtBox()->get_LLY(),
+        pdfPage->get_ArtBox()->get_URX(), pdfPage->get_ArtBox()->get_URY());
 
-	Console::WriteLine(u"->get_BleedBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-		pdfPage->get_BleedBox()->get_Height(), pdfPage->get_BleedBox()->get_Width(),
-		pdfPage->get_BleedBox()->get_LLX(), pdfPage->get_BleedBox()->get_LLY(),
-		pdfPage->get_BleedBox()->get_URX(), pdfPage->get_BleedBox()->get_URY());
+    Console::WriteLine(u"->get_BleedBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
+        pdfPage->get_BleedBox()->get_Height(), pdfPage->get_BleedBox()->get_Width(),
+        pdfPage->get_BleedBox()->get_LLX(), pdfPage->get_BleedBox()->get_LLY(),
+        pdfPage->get_BleedBox()->get_URX(), pdfPage->get_BleedBox()->get_URY());
 
-	Console::WriteLine(u"get_CropBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-		pdfPage->get_CropBox()->get_Height(), pdfPage->get_CropBox()->get_Width(),
-		pdfPage->get_CropBox()->get_LLX(), pdfPage->get_CropBox()->get_LLY(),
-		pdfPage->get_CropBox()->get_URX(), pdfPage->get_CropBox()->get_URY());
+    Console::WriteLine(u"get_CropBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
+        pdfPage->get_CropBox()->get_Height(), pdfPage->get_CropBox()->get_Width(),
+        pdfPage->get_CropBox()->get_LLX(), pdfPage->get_CropBox()->get_LLY(),
+        pdfPage->get_CropBox()->get_URX(), pdfPage->get_CropBox()->get_URY());
 
-	Console::WriteLine(u"get_MediaBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-		pdfPage->get_MediaBox()->get_Height(), pdfPage->get_MediaBox()->get_Width(),
-		pdfPage->get_MediaBox()->get_LLX(), pdfPage->get_MediaBox()->get_LLY(),
-		pdfPage->get_MediaBox()->get_URX(), pdfPage->get_MediaBox()->get_URY());
+    Console::WriteLine(u"get_MediaBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
+        pdfPage->get_MediaBox()->get_Height(), pdfPage->get_MediaBox()->get_Width(),
+        pdfPage->get_MediaBox()->get_LLX(), pdfPage->get_MediaBox()->get_LLY(),
+        pdfPage->get_MediaBox()->get_URX(), pdfPage->get_MediaBox()->get_URY());
 
-	Console::WriteLine(u"get_TrimBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-		pdfPage->get_TrimBox()->get_Height(), pdfPage->get_TrimBox()->get_Width(),
-		pdfPage->get_TrimBox()->get_LLX(), pdfPage->get_TrimBox()->get_LLY(),
-		pdfPage->get_TrimBox()->get_URX(), pdfPage->get_TrimBox()->get_URY());
+    Console::WriteLine(u"get_TrimBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
+        pdfPage->get_TrimBox()->get_Height(), pdfPage->get_TrimBox()->get_Width(),
+        pdfPage->get_TrimBox()->get_LLX(), pdfPage->get_TrimBox()->get_LLY(),
+        pdfPage->get_TrimBox()->get_URX(), pdfPage->get_TrimBox()->get_URY());
 
-	Console::WriteLine(u"Rect : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-		pdfPage->get_Rect()->get_Height(), pdfPage->get_Rect()->get_Width(),
-		pdfPage->get_Rect()->get_LLX(), pdfPage->get_Rect()->get_LLY(),
-		pdfPage->get_Rect()->get_URX(), pdfPage->get_Rect()->get_URY());
+    Console::WriteLine(u"Rect : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
+        pdfPage->get_Rect()->get_Height(), pdfPage->get_Rect()->get_Width(),
+        pdfPage->get_Rect()->get_LLX(), pdfPage->get_Rect()->get_LLY(),
+        pdfPage->get_Rect()->get_URX(), pdfPage->get_Rect()->get_URY());
 
-	Console::WriteLine(u"Page Number : {0}", pdfPage->get_Number());
-	Console::WriteLine(u"Rotate : {0}", pdfPage->get_Rotate());
+    Console::WriteLine(u"Page Number : {0}", pdfPage->get_Number());
+    Console::WriteLine(u"Rotate : {0}", pdfPage->get_Rotate());
 }
 ```
 

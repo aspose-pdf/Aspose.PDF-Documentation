@@ -4,7 +4,7 @@ linktitle: Create Links
 type: docs
 weight: 10
 url: /java/create-links/
-description: This section explains how to create links in your PDF document with Java. 
+description: This section explains how to create links in your PDF document with Java.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -46,7 +46,7 @@ public class ExampleLinks {
 
     public static void CreateLink() {
 
-        // Open document      
+        // Open document
         Document document = new Document(GetDataDir() + "CreateApplicationLink.pdf");
 
         // Create link
@@ -77,9 +77,9 @@ Aspose.PDF for Java allows you to add a link to an external PDF file so that you
 The following code snippet shows how to create PDF document link in a PDF file.
 
  ```java
-	public static void CreatePDFDocumentLink() {
+    public static void CreatePDFDocumentLink() {
 
-        // Open document                
+        // Open document
         Document document = new Document(_dataDir + "CreateDocumentLink.pdf");
 
         // Create link

@@ -1,5 +1,5 @@
 ---
-title: Extract Data from Table in PDF with C++
+title: Extract Data from Table in PDF using C++
 linktitle: Extract Data from Table
 type: docs
 weight: 40
@@ -23,37 +23,37 @@ The following example shows table extraction from the all pages:
 
 ```cpp
 void ExtractTable() {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-table.pdf");
+    // String for file name
+    String infilename("sample-table.pdf");
 
 
-	auto document = MakeObject<Document>(_dataDir + infilename);
-	auto absorber = MakeObject<TableAbsorber>();
+    auto document = MakeObject<Document>(_dataDir + infilename);
+    auto absorber = MakeObject<TableAbsorber>();
 
-	// Scan pages
-	for (auto page : document->get_Pages()) {
-		absorber->Visit(page);
-		for (auto table : absorber->get_TableList()) {
-			std::cout << "Table" << std::endl;
-			// Iterate throught list of rows
-			for (auto row : table->get_RowList()) {
-				// Iterate throught list of cell
-				for (auto cell : row->get_CellList()) {
-					String sb;
-					for (auto fragment : cell->get_TextFragments()) {
-						sb += fragment->get_Text();
-					}
-					std::cout << sb << "|";
-				}
-				std::cout << std::endl;
-			}
-		}
-	}
-	std::clog << __func__ << ": Finish" << std::endl;
+    // Scan pages
+    for (auto page : document->get_Pages()) {
+        absorber->Visit(page);
+        for (auto table : absorber->get_TableList()) {
+        std::cout << "Table" << std::endl;
+        // Iterate throught list of rows
+        for (auto row : table->get_RowList()) {
+            // Iterate throught list of cell
+            for (auto cell : row->get_CellList()) {
+                String sb;
+                for (auto fragment : cell->get_TextFragments()) {
+                sb += fragment->get_Text();
+                }
+                std::cout << sb << "|";
+            }
+            std::cout << std::endl;
+        }
+        }
+    }
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -68,56 +68,56 @@ The following example show how to extract table marked with Square Annotation:
 ```cpp
 void ExtractMarkedTable()
 {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-table.pdf");
-
-
-	auto document = MakeObject<Document>(_dataDir + infilename);
-	auto absorber = MakeObject<TableAbsorber>();
-
-	auto page = document->get_Pages()->idx_get(1);
-	auto sqa = MakeObject<Aspose::Pdf::Annotations::SquareAnnotation>(page, Rectangle::get_Trivial());
-	auto annotationSelector = MakeObject<Aspose::Pdf::Annotations::AnnotationSelector>(sqa);
+    // String for file name
+    String infilename("sample-table.pdf");
 
 
-	auto list = annotationSelector->get_Selected();
-	if (list->get_Count() == 0) {
-		std::cerr << "Marked tables not found.." << std::endl;
-		return;
-	}
+    auto document = MakeObject<Document>(_dataDir + infilename);
+    auto absorber = MakeObject<TableAbsorber>();
 
-	auto squareAnnotation = System::DynamicCast<Aspose::Pdf::Annotations::SquareAnnotation>(list->idx_get(1));
+    auto page = document->get_Pages()->idx_get(1);
+    auto sqa = MakeObject<Aspose::Pdf::Annotations::SquareAnnotation>(page, Rectangle::get_Trivial());
+    auto annotationSelector = MakeObject<Aspose::Pdf::Annotations::AnnotationSelector>(sqa);
 
-	absorber->Visit(page);
 
-	for (auto table : absorber->get_TableList())
-	{
-		auto isInRegion =
-			(squareAnnotation->get_Rect()->get_LLX() < table->get_Rectangle()->get_LLX()) &&
-			(squareAnnotation->get_Rect()->get_LLY() < table->get_Rectangle()->get_LLY()) &&
-			(squareAnnotation->get_Rect()->get_URX() > table->get_Rectangle()->get_URX()) &&
-			(squareAnnotation->get_Rect()->get_URY() > table->get_Rectangle()->get_URY());
+    auto list = annotationSelector->get_Selected();
+    if (list->get_Count() == 0) {
+        std::cerr << "Marked tables not found.." << std::endl;
+        return;
+    }
 
-		if (isInRegion)
-		{
-			for (auto row : table->get_RowList()) {
-				// Iterate throught list of cell
-				for (auto cell : row->get_CellList()) {
-					String sb;
-					for (auto fragment : cell->get_TextFragments()) {
-						sb += fragment->get_Text();
-					}
-					std::cout << sb << "|";
-				}
-				std::cout << std::endl;
-			}
-		}
-	}
-	std::clog << __func__ << ": Finish" << std::endl;
+    auto squareAnnotation = System::DynamicCast<Aspose::Pdf::Annotations::SquareAnnotation>(list->idx_get(1));
+
+    absorber->Visit(page);
+
+    for (auto table : absorber->get_TableList())
+    {
+        auto isInRegion =
+        (squareAnnotation->get_Rect()->get_LLX() < table->get_Rectangle()->get_LLX()) &&
+        (squareAnnotation->get_Rect()->get_LLY() < table->get_Rectangle()->get_LLY()) &&
+        (squareAnnotation->get_Rect()->get_URX() > table->get_Rectangle()->get_URX()) &&
+        (squareAnnotation->get_Rect()->get_URY() > table->get_Rectangle()->get_URY());
+
+        if (isInRegion)
+        {
+        for (auto row : table->get_RowList()) {
+            // Iterate throught list of cell
+            for (auto cell : row->get_CellList()) {
+                String sb;
+                for (auto fragment : cell->get_TextFragments()) {
+                sb += fragment->get_Text();
+                }
+                std::cout << sb << "|";
+            }
+            std::cout << std::endl;
+        }
+        }
+    }
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -129,23 +129,23 @@ To see how to convert PDF to Excel Spreadsheet please refer to [Convert PDF to E
 ```cpp
 void ExtractTableSaveCSV()
 {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-table.pdf");
-	String outfilename("PDFToXLS_out.csv");
+    // String for file name
+    String infilename("sample-table.pdf");
+    String outfilename("PDFToXLS_out.csv");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	// Instantiate ExcelSave Option object
-	auto excelSave = MakeObject<ExcelSaveOptions>();
-	excelSave->set_Format(ExcelSaveOptions::ExcelFormat::CSV);
+    // Instantiate ExcelSave Option object
+    auto excelSave = MakeObject<ExcelSaveOptions>();
+    excelSave->set_Format(ExcelSaveOptions::ExcelFormat::CSV);
 
-	// Save the output in XLS format
-	document->Save(_dataDir + outfilename, excelSave);
-	std::clog << __func__ << ": Finish" << std::endl;
+    // Save the output in XLS format
+    document->Save(_dataDir + outfilename, excelSave);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```

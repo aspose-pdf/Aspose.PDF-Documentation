@@ -29,22 +29,22 @@ This page contains release notes information for Aspose.PDF for Java 21.9.
 
 
 
-**Removed outdated methods:** 
+**Removed outdated methods:**
 - com.aspose.pdf.ExcelSaveOptions.getScaleFactor()
 - com.aspose.pdf.ExcelSaveOptions.setScaleFactor(double)
 - com.aspose.pdf.facades.PdfFileSignature.getSignNames(boolean)
 
 
-**Removed outdated fields:** 
+**Removed outdated fields:**
 - com.aspose.pdf.ExcelSaveOptions.ConversionEngine
 - com.aspose.pdf.Form.SignDependentElementsRenderingModeWhenConverted
 
 
-**Removed outdated enum class:** 
+**Removed outdated enum class:**
 - com.aspose.pdf.ExcelSaveOptions.ConversionEngine
 
 
-**Added new methods** 
+**Added new methods**
 - com.aspose.pdf.Document.save(Stream)
 - com.aspose.pdf.Document.saveIncrementally(Stream)
 - com.aspose.pdf.Form.getAutoRestoreForm()
@@ -90,7 +90,7 @@ This page contains release notes information for Aspose.PDF for Java 21.9.
     .setParams(Dictionary<String, String>)
 - com.aspose.pdf.HtmlLoadOptions.CustomLoaderOfExternalResources:
     .getCustomLoaderOfExternalResources()
-	.setCustomLoaderOfExternalResources(ResourceLoadingStrategy)
+    .setCustomLoaderOfExternalResources(ResourceLoadingStrategy)
 - com.aspose.pdf.HtmlSaveOptions.CustomProgressHandler:
     .getCustomProgressHandler()
     .setCustomProgressHandler(ConversionProgressEventHandler)
@@ -114,10 +114,10 @@ This page contains release notes information for Aspose.PDF for Java 21.9.
     .setPageBorderIfAny(BorderInfo)
 - com.aspose.pdf.HtmlSaveOptions.PageMarginIfAny:
     .getPageMarginIfAny()
-	.setPageMarginIfAny(MarginInfo)
+    .setPageMarginIfAny(MarginInfo)
 - com.aspose.pdf.HtmlSaveOptions.LettersPositioningMethod:
     .getLettersPositioningMethod()
-	.setLettersPositioningMethod(int)
+    .setLettersPositioningMethod(int)
 - com.aspose.pdf.HtmlSaveOptions.ExcludeFontNameList:
     .getExcludeFontNameList()
     .setExcludeFontNameList(String[])
@@ -328,4 +328,3 @@ This page contains release notes information for Aspose.PDF for Java 21.9.
 - com.aspose.pdf.XImage.RawParameters.DecodeParms:
     .getDecodeParms()
     .setDecodeParms(HashMap<String, String>)
-	

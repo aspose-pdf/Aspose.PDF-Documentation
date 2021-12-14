@@ -19,7 +19,7 @@ AcroForm is an important type of the PDF document. You can not only create and e
 
 ## Implementation details
 
-In this article, we have tried to create an AcroForm using [Aspose.Pdf.Facades namepsace](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.facades) and [FormEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.form_editor/) class. We have also added a submit button and set its target URL. 
+In this article, we have tried to create an AcroForm using [Aspose.Pdf.Facades namepsace](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.facades) and [FormEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.form_editor/) class. We have also added a submit button and set its target URL.
 
 The following code snippets show you how to create the form and then receive the posted data on the web page.
 
@@ -29,18 +29,18 @@ using namespace Aspose::Pdf;
 
 void PostingExample() {
 
-	// String _dataDir("C:\\Samples\\");
-	// Create an instance of FormEditor class and bind input and output pdf files
-	auto editor = MakeObject<Aspose::Pdf::Facades::FormEditor>("input.pdf", "output.pdf");
+    // String _dataDir("C:\\Samples\\");
+    // Create an instance of FormEditor class and bind input and output pdf files
+    auto editor = MakeObject<Aspose::Pdf::Facades::FormEditor>("input.pdf", "output.pdf");
 
-	// Create AcroForm fields - I have created only two fields for simplicity
-	editor->AddField(Aspose::Pdf::Facades::FieldType::Text, u"firstname", 1, 100, 600, 200, 625);
-	editor->AddField(Aspose::Pdf::Facades::FieldType::Text, u"lastname", 1, 100, 550, 200, 575);
+    // Create AcroForm fields - I have created only two fields for simplicity
+    editor->AddField(Aspose::Pdf::Facades::FieldType::Text, u"firstname", 1, 100, 600, 200, 625);
+    editor->AddField(Aspose::Pdf::Facades::FieldType::Text, u"lastname", 1, 100, 550, 200, 575);
 
-	// Add a submit button and set target URL
-	editor->AddSubmitBtn(u"submitbutton", 1, u"Submit", u"http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
+    // Add a submit button and set target URL
+    editor->AddSubmitBtn(u"submitbutton", 1, u"Submit", u"http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
 
-	// Save output pdf file
-	editor->Save();
+    // Save output pdf file
+    editor->Save();
 }
 ```

@@ -11,13 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**AcroForms** are the original PDF-A fillable forms based on the PDF architecture. XFA forms are XML-based forms enclosed in a PDF file.
-
-AcroForms is an older form dating back to 1998 and is still referred to as the classic PDF form today.
-
-Besides reflowing content, AcroForms can do everything that XFA forms can do, and other things that XFA cannot do.
-
-AcroForms have capabilities not found in XFA and conversely, XFA has some capabilities not found in AcroForms.  For example:
+**AcroForms** are the original PDF-A fillable forms based on the PDF architecture. XFA forms are XML-based forms enclosed in a PDF file. AcroForms is an older form dating back to 1998 and is still referred to as the classic PDF form today. Besides reflowing content, AcroForms can do everything that XFA forms can do, and other things that XFA cannot do. AcroForms have capabilities not found in XFA and conversely, XFA has some capabilities not found in AcroForms.  For example:
 
 - AcroForms support the concept of “Templates”, allowing additional pages to be added to the PDF form document to support populating the form with multiple database records.
 
@@ -25,7 +19,7 @@ AcroForms have capabilities not found in XFA and conversely, XFA has some capabi
 
 For a more detailed study of the possibilities of working with forms, study the following articles in the section:
 
--[Create Form](/pdf/cpp/create-form/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using C++.
+- [Create Form](/pdf/cpp/create-form/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using C++.
 
 - [Fill Form](/pdf/cpp/fill-form/) - to fill a form field, get the field from the Document object’s Form collection.
 

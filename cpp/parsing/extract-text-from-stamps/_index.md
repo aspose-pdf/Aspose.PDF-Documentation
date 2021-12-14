@@ -1,5 +1,6 @@
 ---
-title: Extract Text From Stamps using C#
+title: Extract Text From Stamps using C++
+linktitle: Extract Text From Stamps
 type: docs
 weight: 60
 url: /cpp/extract-text-from-stamps/

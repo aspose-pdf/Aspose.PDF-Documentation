@@ -54,21 +54,21 @@ import com.aspose.pdf.operators.GRestore;
 import com.aspose.pdf.operators.GSave;
 
 public final class ComplexExample {
-    
+
     private ComplexExample() {
     }
 
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/");    
+    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/");
 
     public static void main(String[] args) throws FileNotFoundException {
-		// Initialize document object
+        // Initialize document object
         Document document = new Document();
         // Add page
         Page page = document.getPages().add();
 
         // -------------------------------------------------------------
         // Add image
-        Path imageFileName = Paths.get(_dataDir.toString(),"logo.png");        
+        Path imageFileName = Paths.get(_dataDir.toString(),"logo.png");
         java.io.FileInputStream imageStream = new java.io.FileInputStream(new java.io.File(imageFileName.toString()));
         // Add image to Images collection of Page Resources
         page.getResources().getImages().add(imageStream);
@@ -77,12 +77,12 @@ public final class ComplexExample {
         page.getContents().add(new GSave());
         Rectangle _logoPlaceHolder = new Rectangle(20, 730, 120, 830);
 
-        // Create Matrix object        
+        // Create Matrix object
         Matrix matrix = new Matrix(new double[] {
             _logoPlaceHolder.getURX() - _logoPlaceHolder.getLLX(), 0, 0,
             _logoPlaceHolder.getURY() - _logoPlaceHolder.getLLY(),
             _logoPlaceHolder.getLLX(), _logoPlaceHolder.getLLY() });
-        
+
         // Using ConcatenateMatrix (concatenate matrix) operator: defines how image must be placed
         page.getContents().add(new ConcatenateMatrix(matrix));
         XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
@@ -100,7 +100,7 @@ public final class ComplexExample {
         header.setPosition(new Position(130, 720));
         page.getParagraphs().add(header);
 
-        // Add description 
+        // Add description
         String descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
         TextFragment description = new TextFragment(descriptionText);
         description.getTextState().setFont(FontRepository.findFont("Times New Roman"));
@@ -116,12 +116,12 @@ public final class ComplexExample {
         table.setDefaultCellBorder(new BorderInfo(BorderSide.Box, 0.5f, Color.getBlack()));
         table.getMargin().setBottom(10);
         table.getDefaultCellTextState().setFont(FontRepository.findFont("Helvetica"));
-        
+
         Row headerRow = table.getRows().add();
         headerRow.getCells().add("Departs City");
         headerRow.getCells().add("Departs Island");
-                
-		for (Cell headerRowCell : headerRow.getCells())
+
+        for (Cell headerRowCell : headerRow.getCells())
         {
             headerRowCell.setBackgroundColor(Color.getGray());
             headerRowCell.getDefaultCellTextState().setForegroundColor(Color.getWhiteSmoke());
@@ -141,7 +141,7 @@ public final class ComplexExample {
         page.getParagraphs().add(table);
 
         document.save(Paths.get(_dataDir.toString(), "Complex.pdf").toString());
-	}
+    }
 
 }
 ```

@@ -20,24 +20,24 @@ The following code snippet shows how to add a background image to PDF pages usin
 ```cpp
 void WorkingWithPages::AddBackgrounds()
 {
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Create a new Document object
-	auto document = MakeObject<Document>();
+    // Create a new Document object
+    auto document = MakeObject<Document>();
 
-	// Add a new page to document object
-	auto page = document->get_Pages()->Add();
+    // Add a new page to document object
+    auto page = document->get_Pages()->Add();
 
-	// Create Background Artifact object
-	auto background = MakeObject<BackgroundArtifact>();
+    // Create Background Artifact object
+    auto background = MakeObject<BackgroundArtifact>();
 
-	// Specify the image for backgroundartifact object
-	background->set_BackgroundImage(System::IO::File::OpenRead(_dataDir + u"background.png"));
+    // Specify the image for backgroundartifact object
+    background->set_BackgroundImage(System::IO::File::OpenRead(_dataDir + u"background.png"));
 
-	// Add backgroundartifact to artifacts collection of page
-	page->get_Artifacts()->Add(background);
+    // Add backgroundartifact to artifacts collection of page
+    page->get_Artifacts()->Add(background);
 
-	// Save the document
-	document->Save(_dataDir + u"ImageAsBackground_out.pdf");
+    // Save the document
+    document->Save(_dataDir + u"ImageAsBackground_out.pdf");
 }
 ```
