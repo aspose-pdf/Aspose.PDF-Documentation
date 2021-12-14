@@ -38,7 +38,7 @@ void MarkupAnnotations::AddCaretAnnotation() {
     auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
     // This annotation is used to indicate the insertion of text
     auto caretAnnotation1 = MakeObject<CaretAnnotation>(
-        document->get_Pages()->idx_get(1), 
+        document->get_Pages()->idx_get(1),
         MakeObject<Rectangle>(299.988, 713.664, 308.708, 720.769));
     caretAnnotation1->set_Title(u"Aspose User");
     caretAnnotation1->set_Subject(u"Inserted text 1");
@@ -47,7 +47,7 @@ void MarkupAnnotations::AddCaretAnnotation() {
 
     // This annotation is used to indicate the replacement of text
     auto caretAnnotation2 = MakeObject<CaretAnnotation>(
-        document->get_Pages()->idx_get(1), 
+        document->get_Pages()->idx_get(1),
         new Rectangle(361.246, 727.908, 370.081, 735.107));
 
     caretAnnotation2->set_Title(u"Aspose User");
@@ -56,7 +56,7 @@ void MarkupAnnotations::AddCaretAnnotation() {
     caretAnnotation2->set_Color(Color::get_Blue());
 
     auto strikeOutAnnotation = MakeObject<StrikeOutAnnotation>(
-        document->get_Pages()->idx_get(1), 
+        document->get_Pages()->idx_get(1),
         MakeObject<Rectangle>(318.407, 727.826, 368.916, 740.098));
 
     strikeOutAnnotation->set_Color(Color::get_Blue());
@@ -64,7 +64,7 @@ void MarkupAnnotations::AddCaretAnnotation() {
     strikeOutAnnotation->set_QuadPoints(
         MakeArray<System::SharedPtr<Point>>({
             MakeObject<Point>(321.66, 739.416),
-            MakeObject<Point>(365.664, 739.416), 
+            MakeObject<Point>(365.664, 739.416),
             MakeObject<Point>(321.66, 728.508),
             MakeObject<Point>(365.664, 728.508) }));
 
@@ -86,7 +86,7 @@ Please try using the following code snippet to Get Caret Annotation in PDF docum
 
 ```cpp
 void MarkupAnnotations::GetCaretAnnotation() {
-    
+
     String _dataDir("C:\\Samples\\");
     // Load the PDF file
     auto document = MakeObject<Document>(_dataDir + u"sample_caret.pdf");
@@ -112,7 +112,7 @@ The following code snippet shows how Delete Caret Annotation from a PDF file.
 ```cpp
 
 void MarkupAnnotations::DeleteCaretAnnotation() {
-    
+
     String _dataDir("C:\\Samples\\");
     // Load the PDF file
     auto document = MakeObject<Document>(_dataDir + u"sample_caret.pdf");
@@ -150,7 +150,7 @@ void AddLinkAnnotation() {
 
     // Load the PDF file
     auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
-    
+
     auto page = document->get_Pages()->idx_get(1);
 
     // Create TextFragmentAbsorber object to find a phone number
@@ -167,7 +167,7 @@ void AddLinkAnnotation() {
 
     // Add annotation to page
     page->get_Annotations()->Add(linkAnnotation);
-    document->Save(_dataDir + u"SimpleResume_mod.pdf");    
+    document->Save(_dataDir + u"SimpleResume_mod.pdf");
 }
 ```
 
@@ -177,7 +177,7 @@ Please try using the following code snippet to Get LinkAnnotation from PDF docum
 
 ```cpp
 void GetLinkAnnotations() {
-    
+
     String _dataDir("C:\\Samples\\");
     // Load the PDF file
     auto document = MakeObject<Document>(_dataDir + u"SimpleResume_mod.pdf");
@@ -216,7 +216,7 @@ void GetLinkAnnotations() {
 The following code snippet shows how to Delete Link Annotation from PDF file. For this we need to find and and remove all link annotations on the 1st page. After this we will save document with removed annotation.
 
 ```cpp
-void DeleteLinkAnnotations() 
+void DeleteLinkAnnotations()
 {
     String _dataDir("C:\\Samples\\");
     // Load the PDF file
@@ -224,7 +224,7 @@ void DeleteLinkAnnotations()
 
     // Filter annotations using AnnotationSelector
     auto page = document->get_Pages()->idx_get(1);
-    
+
     auto annotationSelector = MakeObject<Aspose::Pdf::Annotations::AnnotationSelector>(
         MakeObject<Aspose::Pdf::Annotations::LinkAnnotation>(page, Rectangle::get_Trivial(), Point::get_Trivial(), Point::get_Trivial()));
     page->Accept(annotationSelector);
@@ -237,7 +237,7 @@ void DeleteLinkAnnotations()
     }
 
     // Save document with removed annotation
-    document->Save(_dataDir + u"SimpleResume_del.pdf");        
+    document->Save(_dataDir + u"SimpleResume_del.pdf");
 }
 ```
 
@@ -283,9 +283,9 @@ void RedactAnnotation::AddRedactionAnnotation() {
 }
 ```
 
-## Facades approach 
+## Facades approach
 
-Aspose.PDF.Facades nsupports [PdfAnnotationEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_annotation_editor/) class, which provides the feature to manipulate existing Annotations inside PDF file. 
+Aspose.PDF.Facades nsupports [PdfAnnotationEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_annotation_editor/) class, which provides the feature to manipulate existing Annotations inside PDF file.
 
 This class contains a method named [RedactArea(..)](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_annotation_editor#a35ebd333b63b6df2c0c299c7331e3c63) which provides the capability to remove certain page regions.
 
@@ -304,4 +304,3 @@ void RedactAnnotation::AddRedactionAnnotationViaFacades() {
     editor->Save(_dataDir + u"FacadesApproach_out.pdf");
 }
 ```
-

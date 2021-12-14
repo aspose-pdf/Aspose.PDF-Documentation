@@ -7,7 +7,7 @@ url: /cpp/add-delete-and-get-annotation/
 description: With Aspose.PDF for C++ you may add, delete and get annotation from your PDF file. Check all lists of annotations to resolve your task.
 lastmod: "2021-11-24"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

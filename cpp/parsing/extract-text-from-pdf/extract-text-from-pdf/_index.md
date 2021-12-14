@@ -1,5 +1,5 @@
 ---
-title: Extract text from PDF C++
+title: Extract text from PDF using C++
 linktitle: Extract text from PDF
 type: docs
 weight: 10

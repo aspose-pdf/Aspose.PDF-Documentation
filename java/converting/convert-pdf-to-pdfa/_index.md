@@ -1,27 +1,21 @@
 ---
-title: Convert PDF File to PDF/A 
-linktitle: Convert PDF File to PDF/A 
+title: Convert PDF to PDF/A formats using Java
+linktitle: Convert PDF to PDF/A formats
 type: docs
-weight: 180
-url: /java/convert-pdf-file-to-pdfa/
-lastmod: "2021-06-05"
-description: This topic show you how to Aspose.PDF for Java allows to convert a PDF file to a PDF/A compliant PDF file.  
+weight: 100
+url: /java/convert-pdf-to-pdfa/
+lastmod: "2021-11-19"
+description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.8
 ---
 
-Aspose.PDF allows you to convert a PDF file to a PDF/A compliant PDF file. Before doing so, the file must be validated. This article explains how.
+**Aspose.PDF for Java** allows you to convert a PDF file to a PDF/A compliant PDF file. Before doing so, the file must be validated. This article explains how.
 
 Please note we follow Adobe Preflight for validating PDF/A conformance. All tools on the market have their own "representation" of PDF/A conformance. Please check this article on [PDF/A validation tools](http://wiki.opf-labs.org/display/SPR/PDFA+Validation+tools+give+different+results) for reference. We chose Adobe products for verifying how Aspose.PDF produces PDF files because Adobe is at the center of everything connected to PDF.
 
 Before converting the PDF to a PDF/A compliant file, validate the PDF using the validate method. The validation result is stored in an XML file and then this result is also passed to the convert method. You can also specify the action for the elements which can not be converted using the [ConvertErrorAction](https://apireference.aspose.com/pdf/java/com.aspose.pdf/converterroraction) enumeration.
-
-{{% alert color="primary" %}}
-
-Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-pdfa1a](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
-
-{{% /alert %}}
 
 ## PDF to PDF/A_1b Conversion
 
@@ -171,6 +165,14 @@ Aspose.PDF for Java offers the feature to convert PDF files to PDF/A format and 
         // save final PDF file
         doc.save(_dataDir + "attached_PDFA_3A.pdf");
     }
-    
-}
 ```
+
+{{% alert color="primary" %}}
+**Try to convert PDF to PDF/A online**
+
+Aspose.PDF for Java presents you online free application ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to PDF/A with Free App](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
+{{% /alert %}}
+
+

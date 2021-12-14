@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+## Add Line object
+
 Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Line](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Line) object where you can also specify the dash pattern, color and other formatting for Line element.
 
 Follow the steps below:
