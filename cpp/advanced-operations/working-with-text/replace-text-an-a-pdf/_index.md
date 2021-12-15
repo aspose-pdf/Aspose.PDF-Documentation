@@ -1,5 +1,5 @@
 ---
-title: Replace Text in PDF 
+title: Replace Text in PDF using C++
 linktitle: Replace Text in PDF
 type: docs
 weight: 40
@@ -33,7 +33,7 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
 void ReplaceTextOnAllPages() {
-    
+
     String _dataDir("C:\\Samples\\");
 
     auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
@@ -67,7 +67,7 @@ In order to replace text in a particular page region, first, we need to instanti
 
 ```cpp
 void ReplaceTextInParticularRegion() {
-    
+
     String _dataDir("C:\\Samples\\");
 
     // load PDF file
@@ -102,7 +102,7 @@ If you want to replace some phrases based on regular expression, you first need 
 
 ```cpp
 void ReplaceTextWithRegularExpression() {
-    
+
     String _dataDir("C:\\Samples\\");
 
     // load PDF file
@@ -229,7 +229,7 @@ void RearrangeContent() {
 
     // You also can specify the ReplaceAdjustment.WholeWordsHyphenation option to
     // wrap text on the next or current line if the current line becomes too long or
-    // short after replacement:    
+    // short after replacement:
     //textFragmentAbsorber->get_TextReplaceOptions()->set_ReplaceAdjustmentAction(TextReplaceOptions::ReplaceAdjustment::WholeWordsHyphenation);
 
     // Accept the absorber for all pages of document
@@ -265,7 +265,7 @@ Replaceable symbols are special symbols in a text string that can be replaced wi
 
 ```cpp
 void RenderingReplaceableSymbols() {
-    
+
     String _dataDir("C:\\Samples\\");
 
     // load PDF file
@@ -447,7 +447,7 @@ The following code snippet shows how to resolve this task fast.
 
 ```cpp
 void RemoveAllTextUsingOperators() {
-    
+
     String _dataDir("C:\\Samples\\");
 
     // Open document

@@ -66,11 +66,11 @@ com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter();
 
 ```
  <target name="pdf" description="Generat PDF via Aspose.PDF for JasperReports.">
-	<java classname="${class.name}">
-		<arg value="pdf"/>
-		<arg value="${file.name}.jrprint"/>
-		<classpath refid="classpath"/>
-	</java>
+    <java classname="${class.name}">
+        <arg value="pdf"/>
+        <arg value="${file.name}.jrprint"/>
+        <classpath refid="classpath"/>
+    </java>
 </target>
 ```
 

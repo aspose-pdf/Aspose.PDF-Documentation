@@ -39,21 +39,21 @@ using namespace Aspose::Pdf::Text;
 
 
 void InsertEmptyPageAtDesiredLocation() {
-	// Open document
-	String _dataDir("C:\\Samples\\");
+    // Open document
+    String _dataDir("C:\\Samples\\");
 
-	// String for input file name
-	String inputFileName("InsertEmptyPage.pdf");
+    // String for input file name
+    String inputFileName("InsertEmptyPage.pdf");
 
-	String outputFileName("InsertEmptyPage_out.pdf");
+    String outputFileName("InsertEmptyPage_out.pdf");
 
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Insert a empty page in a PDF
-	document->get_Pages()->Insert(2);
+    // Insert a empty page in a PDF
+    document->get_Pages()->Insert(2);
 
-	// Save output file
-	document->Save(_dataDir + outputFileName);
+    // Save output file
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -61,28 +61,28 @@ In the following code example, you can insert an empty page to the desired locat
 
 ```cpp
 void InsertEmptyPageAtDesiredLocation2() {
-	// Open document
-	String _dataDir("C:\\Samples\\");
+    // Open document
+    String _dataDir("C:\\Samples\\");
 
-	// String for input file name
-	String inputFileName("InsertEmptyPage.pdf");
+    // String for input file name
+    String inputFileName("InsertEmptyPage.pdf");
 
-	String outputFileName("InsertEmptyPage_out.pdf");
+    String outputFileName("InsertEmptyPage_out.pdf");
 
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
-	auto page = document->get_Pages()->idx_get(1);
-	// Insert a empty page in a PDF	
-	auto pageNew = document->get_Pages()->Insert(2);
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
+    auto page = document->get_Pages()->idx_get(1);
+    // Insert a empty page in a PDF
+    auto pageNew = document->get_Pages()->Insert(2);
 
-	//copy page parameters from page 1
-	pageNew->set_ArtBox(page->get_ArtBox());
-	pageNew->set_BleedBox(page->get_BleedBox());
-	pageNew->set_CropBox(page->get_CropBox());
-	pageNew->set_MediaBox(page->get_MediaBox());
-	pageNew->set_TrimBox(page->get_TrimBox());
+    //copy page parameters from page 1
+    pageNew->set_ArtBox(page->get_ArtBox());
+    pageNew->set_BleedBox(page->get_BleedBox());
+    pageNew->set_CropBox(page->get_CropBox());
+    pageNew->set_MediaBox(page->get_MediaBox());
+    pageNew->set_TrimBox(page->get_TrimBox());
 
-	// Save output file
-	document->Save(_dataDir + outputFileName);
+    // Save output file
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -100,19 +100,19 @@ The following code snippet shows you how to insert an empty page at the end of a
 
 ```cpp
 void AddEmptyPageEnd() {
-	// Open document
-	String _dataDir("C:\\Samples\\");
+    // Open document
+    String _dataDir("C:\\Samples\\");
 
-	// String for input file name
-	String inputFileName("InsertEmptyPageAtEnd.pdf");
-	String outputFileName("InsertEmptyPageAtEnd_out.pdf");
+    // String for input file name
+    String inputFileName("InsertEmptyPageAtEnd.pdf");
+    String outputFileName("InsertEmptyPageAtEnd_out.pdf");
 
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Insert an empty page at the end of a PDF file
-	document->get_Pages()->Add();
+    // Insert an empty page at the end of a PDF file
+    document->get_Pages()->Add();
 
-	// Save output file
-	document->Save(_dataDir + outputFileName);
+    // Save output file
+    document->Save(_dataDir + outputFileName);
 }
 ```

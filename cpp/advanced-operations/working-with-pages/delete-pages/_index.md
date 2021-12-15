@@ -21,16 +21,16 @@ The following code snippet shows how to delete a particular page from the PDF fi
 
 ```cpp
 void DeletePDFPages() {
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("DeleteParticularPage.pdf");
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("DeleteParticularPage.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Delete a particular page
-	document->get_Pages()->Delete(2);
+    // Delete a particular page
+    document->get_Pages()->Delete(2);
 
-	// Save updated PDF
-	document->Save(_dataDir + inputFileName);
+    // Save updated PDF
+    document->Save(_dataDir + inputFileName);
 }
 ```

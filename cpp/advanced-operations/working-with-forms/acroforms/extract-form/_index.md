@@ -1,5 +1,5 @@
 ---
-title: Extract Data Form
+title: Extract AcroForm Data using C++
 linktitle: Extract Data Form
 type: docs
 weight: 30
@@ -50,13 +50,13 @@ void GetValueFromIndividualField(){
 
     String _dataDir("C:\\Samples\\");
 
-    // Open document    
+    // Open document
     auto document = MakeObject<Document>(_dataDir + u"GetValueFromField.pdf");
 
-    // Get a field    
+    // Get a field
     auto textBoxField = System::DynamicCast<TextBoxField>(document->get_Form()->idx_get(u"textbox1"));
 
-    // Get field value    
+    // Get field value
     Console::WriteLine(u"PartialName : {0} ", textBoxField->get_PartialName());
     Console::WriteLine(u"Value : {0} ", textBoxField->get_Value());
 }
@@ -69,7 +69,7 @@ void GetSubmitButtonURL()
 {
     String _dataDir("C:\\Samples\\");
 
-    // Open document    
+    // Open document
     auto document = MakeObject<Document>(_dataDir + u"GetValueFromField.pdf");
     auto act = System::DynamicCast<Aspose::Pdf::Annotations::SubmitFormAction>(document->get_Form()->idx_get(1)->get_OnActivated());
 

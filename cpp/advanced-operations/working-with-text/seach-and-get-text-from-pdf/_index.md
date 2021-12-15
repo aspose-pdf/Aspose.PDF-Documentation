@@ -1,5 +1,5 @@
 ---
-title: Search and Get Text from Pages of PDF Document with C++
+title: Search and Get Text from Pages of PDF Document using C++
 linktitle: Search and Get Text
 type: docs
 weight: 60
@@ -23,32 +23,32 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
 void SearchAndGetTextFromAllThePagesOfPDFDocument() {
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	auto document = new Document(_dataDir + u"sample.pdf");
+    auto document = new Document(_dataDir + u"sample.pdf");
 
-	// Create TextAbsorber object to find all instances of the input search phrase
-	auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>("document");
+    // Create TextAbsorber object to find all instances of the input search phrase
+    auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>("document");
 
-	// Accept the absorber for all the pages
-	document->get_Pages()->Accept(textFragmentAbsorber);
+    // Accept the absorber for all the pages
+    document->get_Pages()->Accept(textFragmentAbsorber);
 
-	// Get the extracted text fragments into collection
-	auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
+    // Get the extracted text fragments into collection
+    auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
 
-	// Loop through the fragments
-	for (auto textFragment : textFragmentCollection) {
-		Console::WriteLine(u"Text :- {0}", textFragment->get_Text());
-		Console::WriteLine(u"Position :- {0}", textFragment->get_Position());
-		Console::WriteLine(u"XIndent :- {0}", textFragment->get_Position()->get_XIndent());
-		Console::WriteLine(u"YIndent :- {0}", textFragment->get_Position()->get_YIndent());
-		Console::WriteLine(u"Font - Name :- {0}", textFragment->get_TextState()->get_Font()->get_FontName());
-		Console::WriteLine(u"Font - IsAccessible :- {0}", textFragment->get_TextState()->get_Font()->get_IsAccessible());
-		Console::WriteLine(u"Font - IsEmbedded - {0}", textFragment->get_TextState()->get_Font()->get_IsEmbedded());
-		Console::WriteLine(u"Font - IsSubset :- {0}", textFragment->get_TextState()->get_Font()->get_IsSubset());
-		Console::WriteLine(u"Font Size :- {0}", textFragment->get_TextState()->get_FontSize());
-		Console::WriteLine(u"Foreground Color :- {0}", textFragment->get_TextState()->get_ForegroundColor());
-	}
+    // Loop through the fragments
+    for (auto textFragment : textFragmentCollection) {
+        Console::WriteLine(u"Text :- {0}", textFragment->get_Text());
+        Console::WriteLine(u"Position :- {0}", textFragment->get_Position());
+        Console::WriteLine(u"XIndent :- {0}", textFragment->get_Position()->get_XIndent());
+        Console::WriteLine(u"YIndent :- {0}", textFragment->get_Position()->get_YIndent());
+        Console::WriteLine(u"Font - Name :- {0}", textFragment->get_TextState()->get_Font()->get_FontName());
+        Console::WriteLine(u"Font - IsAccessible :- {0}", textFragment->get_TextState()->get_Font()->get_IsAccessible());
+        Console::WriteLine(u"Font - IsEmbedded - {0}", textFragment->get_TextState()->get_Font()->get_IsEmbedded());
+        Console::WriteLine(u"Font - IsSubset :- {0}", textFragment->get_TextState()->get_Font()->get_IsSubset());
+        Console::WriteLine(u"Font Size :- {0}", textFragment->get_TextState()->get_FontSize());
+        Console::WriteLine(u"Foreground Color :- {0}", textFragment->get_TextState()->get_ForegroundColor());
+    }
 }
 ```
 
@@ -59,36 +59,36 @@ TextFragmentAbsorber helps you search and retrieve text, from all the pages, bas
 ```cpp
 void SearchAndGetTextFromPagesUsingRegularExpression()
 {
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	auto document = new Document(_dataDir + u"sample.pdf");
+    auto document = new Document(_dataDir + u"sample.pdf");
 
-	// Create TextAbsorber object to find all instances of the input search phrase
-	auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>(u"\\d{4}-\\d{4}"); // like 1999-2000
+    // Create TextAbsorber object to find all instances of the input search phrase
+    auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>(u"\\d{4}-\\d{4}"); // like 1999-2000
 
-	// Set text search option to specify regular expression usage
-	auto textSearchOptions = MakeObject<TextSearchOptions>(true);
-	textFragmentAbsorber->set_TextSearchOptions(textSearchOptions);
+    // Set text search option to specify regular expression usage
+    auto textSearchOptions = MakeObject<TextSearchOptions>(true);
+    textFragmentAbsorber->set_TextSearchOptions(textSearchOptions);
 
-	// Accept the absorber for first page of document
-	document->get_Pages()->Accept(textFragmentAbsorber);
+    // Accept the absorber for first page of document
+    document->get_Pages()->Accept(textFragmentAbsorber);
 
-	// Get the extracted text fragments into collection
-	auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
+    // Get the extracted text fragments into collection
+    auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
 
-	// Loop through the fragments
-	for (auto textFragment : textFragmentCollection) {
-		Console::WriteLine(u"Text :- {0}", textFragment->get_Text());
-		Console::WriteLine(u"Position :- {0}", textFragment->get_Position());
-		Console::WriteLine(u"XIndent :- {0}", textFragment->get_Position()->get_XIndent());
-		Console::WriteLine(u"YIndent :- {0}", textFragment->get_Position()->get_YIndent());
-		Console::WriteLine(u"Font - Name :- {0}", textFragment->get_TextState()->get_Font()->get_FontName());
-		Console::WriteLine(u"Font - IsAccessible :- {0}", textFragment->get_TextState()->get_Font()->get_IsAccessible());
-		Console::WriteLine(u"Font - IsEmbedded - {0}", textFragment->get_TextState()->get_Font()->get_IsEmbedded());
-		Console::WriteLine(u"Font - IsSubset :- {0}", textFragment->get_TextState()->get_Font()->get_IsSubset());
-		Console::WriteLine(u"Font Size :- {0}", textFragment->get_TextState()->get_FontSize());
-		Console::WriteLine(u"Foreground Color :- {0}", textFragment->get_TextState()->get_ForegroundColor());
-	}
+    // Loop through the fragments
+    for (auto textFragment : textFragmentCollection) {
+        Console::WriteLine(u"Text :- {0}", textFragment->get_Text());
+        Console::WriteLine(u"Position :- {0}", textFragment->get_Position());
+        Console::WriteLine(u"XIndent :- {0}", textFragment->get_Position()->get_XIndent());
+        Console::WriteLine(u"YIndent :- {0}", textFragment->get_Position()->get_YIndent());
+        Console::WriteLine(u"Font - Name :- {0}", textFragment->get_TextState()->get_Font()->get_FontName());
+        Console::WriteLine(u"Font - IsAccessible :- {0}", textFragment->get_TextState()->get_Font()->get_IsAccessible());
+        Console::WriteLine(u"Font - IsEmbedded - {0}", textFragment->get_TextState()->get_Font()->get_IsEmbedded());
+        Console::WriteLine(u"Font - IsSubset :- {0}", textFragment->get_TextState()->get_Font()->get_IsSubset());
+        Console::WriteLine(u"Font Size :- {0}", textFragment->get_TextState()->get_FontSize());
+        Console::WriteLine(u"Foreground Color :- {0}", textFragment->get_TextState()->get_ForegroundColor());
+    }
 }
 ```
 

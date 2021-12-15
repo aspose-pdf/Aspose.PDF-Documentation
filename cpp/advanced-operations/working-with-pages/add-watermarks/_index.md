@@ -46,27 +46,27 @@ The following code snippet shows how to get each watermark on the first page of 
 
 ```cpp
 void GettingWatermarks() {
-	
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("watermark.pdf");
-	String outputFileName("watermark_out.pdf");
 
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("watermark.pdf");
+    String outputFileName("watermark_out.pdf");
 
-	auto artifact = MakeObject<WatermarkArtifact>();
-	auto textState = MakeObject<TextState>();
-	textState->set_FontSize(72);
-	textState->set_ForegroundColor(Color::get_Blue());
-	textState->set_Font(FontRepository::FindFont(u"Courier"));
-	artifact->SetTextAndState(u"WATERMARK", textState);
-	artifact->set_ArtifactHorizontalAlignment (HorizontalAlignment::Center);
-	artifact->set_ArtifactVerticalAlignment (VerticalAlignment::Center);
-	artifact->set_Rotation(45);
-	artifact->set_Opacity(0.5);
-	artifact->set_IsBackground(true);
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	document->get_Pages()->idx_get(1)->get_Artifacts()->Add(artifact);
-	
-	document->Save(_dataDir + outputFileName);
+    auto artifact = MakeObject<WatermarkArtifact>();
+    auto textState = MakeObject<TextState>();
+    textState->set_FontSize(72);
+    textState->set_ForegroundColor(Color::get_Blue());
+    textState->set_Font(FontRepository::FindFont(u"Courier"));
+    artifact->SetTextAndState(u"WATERMARK", textState);
+    artifact->set_ArtifactHorizontalAlignment (HorizontalAlignment::Center);
+    artifact->set_ArtifactVerticalAlignment (VerticalAlignment::Center);
+    artifact->set_Rotation(45);
+    artifact->set_Opacity(0.5);
+    artifact->set_IsBackground(true);
+
+    document->get_Pages()->idx_get(1)->get_Artifacts()->Add(artifact);
+
+    document->Save(_dataDir + outputFileName);
 }
 ```

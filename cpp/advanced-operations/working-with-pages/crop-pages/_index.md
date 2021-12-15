@@ -27,29 +27,29 @@ The snippet below show how to crop the page:
 
 ```cpp
 void CropPagesPDF()
-{	
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("crop_page.pdf");
-	String outputFileName("crop_page_out.pdf");
+{
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("crop_page.pdf");
+    String outputFileName("crop_page_out.pdf");
 
-	// Open source document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open source document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	Console::WriteLine(document->get_Pages()->idx_get(1)->get_CropBox());
-	Console::WriteLine(document->get_Pages()->idx_get(1)->get_TrimBox());
-	Console::WriteLine(document->get_Pages()->idx_get(1)->get_ArtBox());
-	Console::WriteLine(document->get_Pages()->idx_get(1)->get_BleedBox());
-	Console::WriteLine(document->get_Pages()->idx_get(1)->get_MediaBox());
+    Console::WriteLine(document->get_Pages()->idx_get(1)->get_CropBox());
+    Console::WriteLine(document->get_Pages()->idx_get(1)->get_TrimBox());
+    Console::WriteLine(document->get_Pages()->idx_get(1)->get_ArtBox());
+    Console::WriteLine(document->get_Pages()->idx_get(1)->get_BleedBox());
+    Console::WriteLine(document->get_Pages()->idx_get(1)->get_MediaBox());
 
-	// Create new Box Rectagle
-	auto newBox = MakeObject<Rectangle>(200, 220, 2170, 1520);
-	document->get_Pages()->idx_get(1)->set_CropBox(newBox);
-	document->get_Pages()->idx_get(1)->set_TrimBox(newBox);
-	document->get_Pages()->idx_get(1)->set_ArtBox (newBox);
-	document->get_Pages()->idx_get(1)->set_BleedBox (newBox);
+    // Create new Box Rectagle
+    auto newBox = MakeObject<Rectangle>(200, 220, 2170, 1520);
+    document->get_Pages()->idx_get(1)->set_CropBox(newBox);
+    document->get_Pages()->idx_get(1)->set_TrimBox(newBox);
+    document->get_Pages()->idx_get(1)->set_ArtBox (newBox);
+    document->get_Pages()->idx_get(1)->set_BleedBox (newBox);
 
-	// Save updated document
-	document->Save(_dataDir + outputFileName);
+    // Save updated document
+    document->Save(_dataDir + outputFileName);
 }
 ```
 

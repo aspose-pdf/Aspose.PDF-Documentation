@@ -24,38 +24,38 @@ using namespace Aspose::Pdf::Text;
 
 void AddLineIndent() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// String for output file name
-	String outputFileName("SubsequentIndent_out.pdf");
+    // String for output file name
+    String outputFileName("SubsequentIndent_out.pdf");
 
 
-	// Create new document object
-	auto document = MakeObject<Document>();
-	auto page = document->get_Pages()->Add();
+    // Create new document object
+    auto document = MakeObject<Document>();
+    auto page = document->get_Pages()->Add();
 
-	auto text = MakeObject<TextFragment>("A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog.");
+    auto text = MakeObject<TextFragment>("A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog.");
 
-	// Initilize TextFormattingOptions for the text fragment and specify SubsequentLinesIndent value
-	
+    // Initilize TextFormattingOptions for the text fragment and specify SubsequentLinesIndent value
+
     text->get_TextState()->set_FormattingOptions(MakeObject<Aspose::Pdf::Text::TextFormattingOptions>());
     text->get_TextState()->get_FormattingOptions()->set_SubsequentLinesIndent(20);
 
-	page->get_Paragraphs()->Add(text);
+    page->get_Paragraphs()->Add(text);
 
-	text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line2");
-	page->get_Paragraphs()->Add(text);
+    text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line2");
+    page->get_Paragraphs()->Add(text);
 
-	text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line3");
-	page->get_Paragraphs()->Add(text);
+    text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line3");
+    page->get_Paragraphs()->Add(text);
 
-	text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line4");
-	page->get_Paragraphs()->Add(text);
+    text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line4");
+    page->get_Paragraphs()->Add(text);
 
-	text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line5");
-	page->get_Paragraphs()->Add(text);
+    text = MakeObject<Aspose::Pdf::Text::TextFragment>(u"Line5");
+    page->get_Paragraphs()->Add(text);
 
-	document->Save(_dataDir + outputFileName);
+    document->Save(_dataDir + outputFileName);
 
 }
 ```
@@ -125,7 +125,7 @@ void AddUnderlineText() {
 
     // Specify the position where TextFragment needs to be placed
     fragment->set_Position(MakeObject<Position>(10, 800));
-    
+
     auto tb = MakeObject<TextBuilder>(page);
     // Append TextFragment to PDF file
     tb->AppendText(fragment);
@@ -271,7 +271,7 @@ void ApplyGradientShading() {
 
     // Open document
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     auto absorber = MakeObject<TextFragmentAbsorber>("always print correctly");
 
     document->get_Pages()->Accept(absorber);

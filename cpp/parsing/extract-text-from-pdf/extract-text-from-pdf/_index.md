@@ -22,26 +22,26 @@ using namespace Aspose::Pdf::Text;
 
 void ExtractTextFromAllThePages() {
 
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-4pages.pdf");
-	String outfilename("extracted-text.txt");
+    // String for file name
+    String infilename("sample-4pages.pdf");
+    String outfilename("extracted-text.txt");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	// Create TextAbsorber object to extract text
-	auto textAbsorber = MakeObject<TextAbsorber>();
-	// Accept the absorber for all the pages
-	document->get_Pages()->Accept(textAbsorber);
-	// Get the extracted text
-	auto extractedText = textAbsorber->get_Text();
+    // Create TextAbsorber object to extract text
+    auto textAbsorber = MakeObject<TextAbsorber>();
+    // Accept the absorber for all the pages
+    document->get_Pages()->Accept(textAbsorber);
+    // Get the extracted text
+    auto extractedText = textAbsorber->get_Text();
 
-	System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
-	std::clog << __func__ << ": Finish" << std::endl;
+    System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -50,26 +50,26 @@ Call the **Accept** method on a particular page of the Document object. The Inde
 ```cpp
 void ExtractTextFromParticularPage() {
 
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-4pages.pdf");
-	String outfilename("extracted-text.txt");
+    // String for file name
+    String infilename("sample-4pages.pdf");
+    String outfilename("extracted-text.txt");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	// Create TextAbsorber object to extract text
-	auto textAbsorber = MakeObject<TextAbsorber>();
-	// Accept the absorber for all the pages
-	document->get_Pages()->idx_get(1)->Accept(textAbsorber);
-	// Get the extracted text
-	auto extractedText = textAbsorber->get_Text();
+    // Create TextAbsorber object to extract text
+    auto textAbsorber = MakeObject<TextAbsorber>();
+    // Accept the absorber for all the pages
+    document->get_Pages()->idx_get(1)->Accept(textAbsorber);
+    // Get the extracted text
+    auto extractedText = textAbsorber->get_Text();
 
-	System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
-	std::clog << __func__ << ": Finish" << std::endl;
+    System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -90,45 +90,45 @@ The following steps and code snippet shows you how to extract text from a PDF us
 ```cpp
 void ExtractTextUsingTextDevice() {
 
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-4pages.pdf");
-	String outfilename("extracted-text.txt");
+    // String for file name
+    String infilename("sample-4pages.pdf");
+    String outfilename("extracted-text.txt");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	auto builder = MakeObject<System::Text::StringBuilder>();
-	// String to hold extracted text
-	String extractedText;
+    auto builder = MakeObject<System::Text::StringBuilder>();
+    // String to hold extracted text
+    String extractedText;
 
-	for (auto page : document->get_Pages()) {
-		auto textStream = MakeObject<System::IO::MemoryStream>();
-		// Create text device
-		auto textDevice = MakeObject<Aspose::Pdf::Devices::TextDevice>();
+    for (auto page : document->get_Pages()) {
+        auto textStream = MakeObject<System::IO::MemoryStream>();
+        // Create text device
+        auto textDevice = MakeObject<Aspose::Pdf::Devices::TextDevice>();
 
-		// Set text extraction options - set text extraction mode (Raw or Pure)
-		auto textExtOptions = MakeObject<TextExtractionOptions>(TextExtractionOptions::TextFormattingMode::Pure);
+        // Set text extraction options - set text extraction mode (Raw or Pure)
+        auto textExtOptions = MakeObject<TextExtractionOptions>(TextExtractionOptions::TextFormattingMode::Pure);
 
-		textDevice->set_ExtractionOptions(textExtOptions);
+        textDevice->set_ExtractionOptions(textExtOptions);
 
-		// Convert a particular page and save text to the stream
-		textDevice->Process(page, textStream);
+        // Convert a particular page and save text to the stream
+        textDevice->Process(page, textStream);
 
-		// Close memory stream
-		textStream->Close();
+        // Close memory stream
+        textStream->Close();
 
-		// Get text from memory stream
-		extractedText = System::Text::Encoding::get_Unicode()->GetString(textStream->ToArray());
-		builder->Append(extractedText);
+        // Get text from memory stream
+        extractedText = System::Text::Encoding::get_Unicode()->GetString(textStream->ToArray());
+        builder->Append(extractedText);
 
-	}
-	// Save the extracted text in text file
-	System::IO::File::WriteAllText(_dataDir + outfilename, builder->ToString());
-	std::clog << __func__ << ": Finish" << std::endl;
+    }
+    // Save the extracted text in text file
+    System::IO::File::WriteAllText(_dataDir + outfilename, builder->ToString());
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -141,29 +141,29 @@ The **Accept** method of a page is called to extract the text. Create objects of
 ```cpp
 void ExtractTextFromParticularPageRegion() {
 
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-4pages.pdf");
-	String outfilename("extracted-text.txt");
+    // String for file name
+    String infilename("sample-4pages.pdf");
+    String outfilename("extracted-text.txt");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	// Create TextAbsorber object to extract text
-	auto textAbsorber = MakeObject<TextAbsorber>();
-	textAbsorber->get_TextSearchOptions()->set_LimitToPageBounds(true);
-	textAbsorber->get_TextSearchOptions()->set_Rectangle(MakeObject<Rectangle>(100, 200, 250, 350));
+    // Create TextAbsorber object to extract text
+    auto textAbsorber = MakeObject<TextAbsorber>();
+    textAbsorber->get_TextSearchOptions()->set_LimitToPageBounds(true);
+    textAbsorber->get_TextSearchOptions()->set_Rectangle(MakeObject<Rectangle>(100, 200, 250, 350));
 
-	// Accept the absorber for all the pages
-	document->get_Pages()->idx_get(1)->Accept(textAbsorber);
-	// Get the extracted text
-	auto extractedText = textAbsorber->get_Text();
+    // Accept the absorber for all the pages
+    document->get_Pages()->idx_get(1)->Accept(textAbsorber);
+    // Get the extracted text
+    auto extractedText = textAbsorber->get_Text();
 
-	System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
-	std::clog << __func__ << ": Finish" << std::endl;
+    System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
+    std::clog << __func__ << ": Finish" << std::endl;
 
 }
 ```
@@ -179,40 +179,40 @@ Aspose.PDf for C++ - it is an easy-to-use utility, that allows you to extract te
 ```cpp
 void ExtractTextBasedOnColumns() {
 
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-4pages.pdf");
-	String outfilename("extracted-text.txt");
+    // String for file name
+    String infilename("sample-4pages.pdf");
+    String outfilename("extracted-text.txt");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	// Create TextAbsorber object to extract text
-	auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>();
+    // Create TextAbsorber object to extract text
+    auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>();
 
 
-	// Accept the absorber for all the pages
-	document->get_Pages()->Accept(textFragmentAbsorber);
+    // Accept the absorber for all the pages
+    document->get_Pages()->Accept(textFragmentAbsorber);
 
-	auto tfc = textFragmentAbsorber->get_TextFragments();
-	for (auto tf : tfc)
-	{
-		// Need to reduce font size at least for 70%
-		auto size = tf->get_TextState()->get_FontSize() * 0.7f;
-		tf->get_TextState()->set_FontSize(size);
-	}
-	auto stream = MakeObject<System::IO::MemoryStream>();
-	document->Save(stream);
-	document = MakeObject<Document>(stream);
-	auto textAbsorber = MakeObject<TextAbsorber>();
-	document->get_Pages()->Accept(textAbsorber);
-	String extractedText = textAbsorber->get_Text();
+    auto tfc = textFragmentAbsorber->get_TextFragments();
+    for (auto tf : tfc)
+    {
+        // Need to reduce font size at least for 70%
+        auto size = tf->get_TextState()->get_FontSize() * 0.7f;
+        tf->get_TextState()->set_FontSize(size);
+    }
+    auto stream = MakeObject<System::IO::MemoryStream>();
+    document->Save(stream);
+    document = MakeObject<Document>(stream);
+    auto textAbsorber = MakeObject<TextAbsorber>();
+    document->get_Pages()->Accept(textAbsorber);
+    String extractedText = textAbsorber->get_Text();
 
-	System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
-	std::clog << __func__ << ": Finish" << std::endl;
+    System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -227,27 +227,27 @@ We propose the usage of auto-scaling (ScaleFactor = 0) when processing a large n
 ```cpp
 void ExtractTextUsingScaleFactor() {
 
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-4pages.pdf");
-	String outfilename("extracted-text.txt");
+    // String for file name
+    String infilename("sample-4pages.pdf");
+    String outfilename("extracted-text.txt");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	auto textAbsorber = MakeObject<TextAbsorber>();
-	textAbsorber->set_ExtractionOptions(MakeObject<TextExtractionOptions>(TextExtractionOptions::TextFormattingMode::Pure));
-	// Setting scale factor to 0.5 is enough to split columns in the majority of documents
-	// Setting of zero allows to algorithm choose scale factor automatically
-	textAbsorber->get_ExtractionOptions()->set_ScaleFactor(0.5); /* 0; */
-	document->get_Pages()->Accept(textAbsorber);
-	String extractedText = textAbsorber->get_Text();
+    auto textAbsorber = MakeObject<TextAbsorber>();
+    textAbsorber->set_ExtractionOptions(MakeObject<TextExtractionOptions>(TextExtractionOptions::TextFormattingMode::Pure));
+    // Setting scale factor to 0.5 is enough to split columns in the majority of documents
+    // Setting of zero allows to algorithm choose scale factor automatically
+    textAbsorber->get_ExtractionOptions()->set_ScaleFactor(0.5); /* 0; */
+    document->get_Pages()->Accept(textAbsorber);
+    String extractedText = textAbsorber->get_Text();
 
-	System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
-	std::clog << __func__ << ": Finish" << std::endl;
+    System::IO::File::WriteAllText(_dataDir + outfilename, extractedText);
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -258,35 +258,35 @@ In various scenarios of text extraction from a PDF document, you can come up wit
 ```cpp
 void ExtractHighlightedText() {
 
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-highlight.pdf");
-	String outfilename("extracted-text.txt");
+    // String for file name
+    String infilename("sample-highlight.pdf");
+    String outfilename("extracted-text.txt");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	// Loop through all the annotations
-	for (auto annotation : document->get_Pages()->idx_get(1)->get_Annotations())
-	{
-		// Filter TextMarkupAnnotation
-		if (annotation->get_AnnotationType() == Aspose::Pdf::Annotations::AnnotationType::Highlight)
-		{
-			auto highlightedAnnotation = System::DynamicCast<Aspose::Pdf::Annotations::HighlightAnnotation>(annotation);
+    // Loop through all the annotations
+    for (auto annotation : document->get_Pages()->idx_get(1)->get_Annotations())
+    {
+        // Filter TextMarkupAnnotation
+        if (annotation->get_AnnotationType() == Aspose::Pdf::Annotations::AnnotationType::Highlight)
+        {
+        auto highlightedAnnotation = System::DynamicCast<Aspose::Pdf::Annotations::HighlightAnnotation>(annotation);
 
-			// Retrieve highlighted text fragments
-			auto collection = highlightedAnnotation->GetMarkedTextFragments();
-			for (auto tf : collection)
-			{
-				// Display highlighted text
-				String s = tf->get_Text();
-				std::cout << s << std::endl;
-			}
-		}
-	}
+        // Retrieve highlighted text fragments
+        auto collection = highlightedAnnotation->GetMarkedTextFragments();
+        for (auto tf : collection)
+        {
+            // Display highlighted text
+            String s = tf->get_Text();
+            std::cout << s << std::endl;
+        }
+        }
+    }
 }
 ```
 
@@ -297,26 +297,26 @@ Sometimes we need access to TextFragement or TextSegment items when processing P
 ```cpp
 void AccessTextFragmentandSegmentElementsXML()
 {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("sample-doc.xml");
-	String outfilename("sample-doc.pdf");
+    // String for file name
+    String infilename("sample-doc.xml");
+    String outfilename("sample-doc.pdf");
 
-	auto document = MakeObject<Document>();
-	document->BindXml(_dataDir + infilename);
+    auto document = MakeObject<Document>();
+    document->BindXml(_dataDir + infilename);
 
-	System::SharedPtr<Page> page = System::DynamicCast<Aspose::Pdf::Page>(document->GetObjectById(u"mainSection"));
-	// Make some operations with page
-	// ...
+    System::SharedPtr<Page> page = System::DynamicCast<Aspose::Pdf::Page>(document->GetObjectById(u"mainSection"));
+    // Make some operations with page
+    // ...
 
-	System::SharedPtr<TextSegment> segment = System::DynamicCast<Aspose::Pdf::Text::TextSegment>(document->GetObjectById(u"product_description"));
-	// Make some operations with segment
-	// ...
-	document->Save(_dataDir + outfilename);
+    System::SharedPtr<TextSegment> segment = System::DynamicCast<Aspose::Pdf::Text::TextSegment>(document->GetObjectById(u"product_description"));
+    // Make some operations with segment
+    // ...
+    document->Save(_dataDir + outfilename);
 
-	std::clog << __func__ << ": Finish" << std::endl;
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```

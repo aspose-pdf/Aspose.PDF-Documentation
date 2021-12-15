@@ -36,6 +36,5 @@ This page contains release notes information for Aspose.PDF for .NET 20.6.
 |PDFNET-48123|Optimizing of extracted pages losses images|Bug|
 |PDFNET-48124|Optimizing of extracted pages losses background|Bug|
 |PDFNET-48125|Optimizing of extracted pages substitutes the font|Bug|
-|PDFNET-48134 |	DocumentInfo["KeyName"] returns null when value is not string|Bug|
-|PDFNET-48194 |	Aspose.Pdf 20.5: object reference null exception in text absorber|Bug|
-
+|PDFNET-48134 |DocumentInfo["KeyName"] returns null when value is not string|Bug|
+|PDFNET-48194 |Aspose.Pdf 20.5: object reference null exception in text absorber|Bug|

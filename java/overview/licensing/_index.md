@@ -4,7 +4,7 @@ linktitle: Licensing and limitations
 type: docs
 weight: 50
 url: /java/licensing/
-description: Aspose. PDF for Java invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product. 
+description: Aspose. PDF for Java invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -43,11 +43,11 @@ The license can be loaded from a stream or file in the following locations:
 
 Use the License.setLicense method to license the component. Often the easiest way to set a license is to put the license file in the same folder as Aspose.PDF.jar and specify just the file name without path as shown in the following example:
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Starting from Aspose.PDF for Java 4.2.0, you need to call the following code lines to initialize the license.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ### Loading a license from file
 
@@ -81,7 +81,7 @@ License license = new License();
 license.setLicense("Aspose.Pdf.Java.lic");
 // Check if license has been validated
 if (com.aspose.pdf.Document.isLicensed()) {
-	System.out.println("License is Set!");
+    System.out.println("License is Set!");
 }
 ```
 ## Metered License
@@ -114,9 +114,9 @@ If you use multiple Aspose products in your application, for example Aspose.PDF 
 com.aspose.pdf.License license = new com.aspose.pdf.License();
 // Set the license
 license.setLicense("Aspose.Total.Java.lic");
-	 
+
 // Setting license for Aspose.Words for Java
-	 
+
 // Instantiate the License class of Aspose.Words
 com.aspose.words.License licenseaw = new com.aspose.words.License();
 // Set the license

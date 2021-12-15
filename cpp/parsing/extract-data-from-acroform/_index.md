@@ -19,22 +19,22 @@ In the code example below, we demonstrate how to iterate over each page in PDF t
 
 ```cpp
 void ExtractFormFields() {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("StudentInfoFormElectronic.pdf");
+    // String for file name
+    String infilename("StudentInfoFormElectronic.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	// Get values from all fields
-	for (auto formField : document->get_Form()->get_Fields()) {
-		std::cout << "Field Name :" << formField->get_PartialName() << std::endl;
-		std::cout << "Value : " << formField->get_Value() << std::endl;
-	}
-	std::clog << __func__ << ": Finish" << std::endl;
+    // Get values from all fields
+    for (auto formField : document->get_Form()->get_Fields()) {
+        std::cout << "Field Name :" << formField->get_PartialName() << std::endl;
+        std::cout << "Value : " << formField->get_Value() << std::endl;
+    }
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -46,84 +46,84 @@ The following code snippet shows you how to export data to XML file.
 
 ```cpp
 void ExtractFormFieldsToXML() {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename(_dataDir + u"StudentInfoFormElectronic.pdf");
-	String xmlFileName(_dataDir + u"StudentInfoFormElectronic.xml");
+    // String for file name
+    String infilename(_dataDir + u"StudentInfoFormElectronic.pdf");
+    String xmlFileName(_dataDir + u"StudentInfoFormElectronic.xml");
 
-	auto form = MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + infilename);
-	auto fdfOutputStream = System::IO::File::OpenWrite(xmlFileName);
+    auto form = MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + infilename);
+    auto fdfOutputStream = System::IO::File::OpenWrite(xmlFileName);
 
-	// Export data
-	form->ExportXml(fdfOutputStream);
+    // Export data
+    form->ExportXml(fdfOutputStream);
 
-	// Close file stream
-	fdfOutputStream->Close();
-	std::clog << __func__ << ": Finish" << std::endl;
+    // Close file stream
+    fdfOutputStream->Close();
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
 ## Export Data to FDF from a PDF File
 
-[Form](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.form) class allows you to export data to an FDF file from the PDF file using ExportFdf method. In order to export data to FDF, you need to create an object of Form class and then call the ExportFdf method using the FileStream object. After you may save the PDF file using Save method of the Form class. 
+[Form](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.form) class allows you to export data to an FDF file from the PDF file using ExportFdf method. In order to export data to FDF, you need to create an object of Form class and then call the ExportFdf method using the FileStream object. After you may save the PDF file using Save method of the Form class.
 
 The following code snippet shows you how to export data to FDF file.
 
 ```cpp
 void ExtractFormExportFDF() {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename(_dataDir + u"StudentInfoFormElectronic.pdf");
-	String fdfFileName(_dataDir+ u"StudentInfoFormElectronic.fdf");
+    // String for file name
+    String infilename(_dataDir + u"StudentInfoFormElectronic.pdf");
+    String fdfFileName(_dataDir+ u"StudentInfoFormElectronic.fdf");
 
-	//String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
-	auto form = MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + infilename);
+    //String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
+    auto form = MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + infilename);
 
-	auto fdfOutputStream = System::IO::File::OpenWrite(fdfFileName);
+    auto fdfOutputStream = System::IO::File::OpenWrite(fdfFileName);
 
-	// Export data
-	form->ExportFdf(fdfOutputStream);
+    // Export data
+    form->ExportFdf(fdfOutputStream);
 
-	// Close file stream
-	fdfOutputStream->Close();
-	std::clog << __func__ << ": Finish" << std::endl;
+    // Close file stream
+    fdfOutputStream->Close();
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
 ## Export Data to XFDF from a PDF File
 
-Aspose PDF for C++ with [Form](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.form) class allows you to export data to an XFDF file from the PDF file using ExportXfdf method. In order to export data to XFDF, you need to create an object of Form class and then call the ExportXfdf method using the FileStream object. 
+Aspose PDF for C++ with [Form](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.form) class allows you to export data to an XFDF file from the PDF file using ExportXfdf method. In order to export data to XFDF, you need to create an object of Form class and then call the ExportXfdf method using the FileStream object.
 
-In the end, you may save the PDF file using the Save method of the Form class. 
+In the end, you may save the PDF file using the Save method of the Form class.
 
 The following code snippet shows you how to export data to XFDF file.
 
 ```cpp
 void ExtractFormExportXFDF() {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Parsing\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Parsing\\");
 
-	// String for file name
-	String infilename("StudentInfoFormElectronic.pdf");
-	String fdfFileName("StudentInfoFormElectronic.xfdf");
+    // String for file name
+    String infilename("StudentInfoFormElectronic.pdf");
+    String fdfFileName("StudentInfoFormElectronic.xfdf");
 
-	//String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
-	auto form = MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + infilename);
+    //String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
+    auto form = MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + infilename);
 
-	auto fdfOutputStream = System::IO::File::OpenWrite(fdfFileName);
+    auto fdfOutputStream = System::IO::File::OpenWrite(fdfFileName);
 
-	// Export data
-	form->ExportXfdf(fdfOutputStream);
+    // Export data
+    form->ExportXfdf(fdfOutputStream);
 
-	// Close file stream
-	fdfOutputStream->Close();
-	std::clog << __func__ << ": Finish" << std::endl;
+    // Close file stream
+    fdfOutputStream->Close();
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```

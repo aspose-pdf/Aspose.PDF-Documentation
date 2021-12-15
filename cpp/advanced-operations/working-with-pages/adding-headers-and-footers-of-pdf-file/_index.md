@@ -23,29 +23,29 @@ The following code snippet shows you how to add text in the header of a PDF file
 
 ```cpp
 void AddingTextInHeaderOfPdfFile() {
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("TextinHeader.pdf");
-	String outputFileName("TextinHeader_out.pdf");
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("TextinHeader.pdf");
+    String outputFileName("TextinHeader_out.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Create header
-	auto textStamp = MakeObject<TextStamp>(u"Header Text");
+    // Create header
+    auto textStamp = MakeObject<TextStamp>(u"Header Text");
 
-	// Set properties of the stamp
-	textStamp->set_TopMargin(10);
-	textStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
-	textStamp->set_VerticalAlignment(VerticalAlignment::Top);
-	
-	// Add header on all pages
-	for(auto page : document->get_Pages())
-	{
-		page->AddStamp(textStamp);
-	}
+    // Set properties of the stamp
+    textStamp->set_TopMargin(10);
+    textStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
+    textStamp->set_VerticalAlignment(VerticalAlignment::Top);
 
-	// Save updated document
-	document->Save(_dataDir + outputFileName);
+    // Add header on all pages
+    for(auto page : document->get_Pages())
+    {
+        page->AddStamp(textStamp);
+    }
+
+    // Save updated document
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -63,29 +63,29 @@ The following code snippet shows you how to add text in the footer of a PDF file
 
 ```cpp
 void AddingTextInFooterOfPdfFile() {
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("TextinFooter.pdf");
-	String outputFileName("TextinFooter_out.pdf");
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("TextinFooter.pdf");
+    String outputFileName("TextinFooter_out.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Create footer
-	auto textStamp = MakeObject<TextStamp>(u"Footer Text");
+    // Create footer
+    auto textStamp = MakeObject<TextStamp>(u"Footer Text");
 
-	// Set properties of the stamp
-	textStamp->set_BottomMargin(10);
-	textStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
-	textStamp->set_VerticalAlignment(VerticalAlignment::Bottom);
+    // Set properties of the stamp
+    textStamp->set_BottomMargin(10);
+    textStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
+    textStamp->set_VerticalAlignment(VerticalAlignment::Bottom);
 
-	// Add footer on all pages
-	for (auto page : document->get_Pages())
-	{
-		page->AddStamp(textStamp);
-	}
+    // Add footer on all pages
+    for (auto page : document->get_Pages())
+    {
+        page->AddStamp(textStamp);
+    }
 
-	// Save updated document
-	document->Save(_dataDir + outputFileName);
+    // Save updated document
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -98,29 +98,29 @@ The following code snippet shows you how to add image in the header of a PDF fil
 ```cpp
 void AddingImageInHeaderOfPdfFile() {
 
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("ImageinHeader.pdf");
-	String outputFileName("ImageinHeader_out.pdf");
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("ImageinHeader.pdf");
+    String outputFileName("ImageinHeader_out.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Create header
-	auto imageStamp = MakeObject<ImageStamp>(_dataDir + u"aspose-logo.jpg");
+    // Create header
+    auto imageStamp = MakeObject<ImageStamp>(_dataDir + u"aspose-logo.jpg");
 
-	// Set properties of the stamp
-	imageStamp->set_TopMargin(10);
-	imageStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
-	imageStamp->set_VerticalAlignment (VerticalAlignment::Top);
+    // Set properties of the stamp
+    imageStamp->set_TopMargin(10);
+    imageStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
+    imageStamp->set_VerticalAlignment (VerticalAlignment::Top);
 
-	// Add header on all pages
-	for(auto page : document->get_Pages())
-	{
-		page->AddStamp(imageStamp);
-	}
+    // Add header on all pages
+    for(auto page : document->get_Pages())
+    {
+        page->AddStamp(imageStamp);
+    }
 
-	// Save updated document
-	document->Save(_dataDir + outputFileName);
+    // Save updated document
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -135,29 +135,29 @@ The following code snippet shows you how to add image in the footer of a PDF fil
 ```cpp
 void AddingImageInFooterOfPdfFile() {
 
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("ImageinFooter.pdf");
-	String outputFileName("ImageinFooter_out.pdf");
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("ImageinFooter.pdf");
+    String outputFileName("ImageinFooter_out.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Create header
-	auto imageStamp = MakeObject<ImageStamp>(_dataDir + u"aspose-logo.jpg");
+    // Create header
+    auto imageStamp = MakeObject<ImageStamp>(_dataDir + u"aspose-logo.jpg");
 
-	// Set properties of the stamp
-	imageStamp->set_TopMargin(10);
-	imageStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
-	imageStamp->set_VerticalAlignment(VerticalAlignment::Top);
+    // Set properties of the stamp
+    imageStamp->set_TopMargin(10);
+    imageStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
+    imageStamp->set_VerticalAlignment(VerticalAlignment::Top);
 
-	// Add header on all pages
-	for (auto page : document->get_Pages())
-	{
-		page->AddStamp(imageStamp);
-	}
+    // Add header on all pages
+    for (auto page : document->get_Pages())
+    {
+        page->AddStamp(imageStamp);
+    }
 
-	// Save updated document
-	document->Save(_dataDir + outputFileName);
+    // Save updated document
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -170,55 +170,55 @@ In order to accomplish this requirement, we will create individual TextStamp obj
 ```cpp
 void AddingDifferentHeadersInOnePDFFile()
 {
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("multiheader.pdf");
-	String outputFileName("multiheader_out.pdf");
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("multiheader.pdf");
+    String outputFileName("multiheader_out.pdf");
 
-	// Open source document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open source document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Create three stamps
-	auto stamp1 = MakeObject<TextStamp>("Header 1");
-	auto stamp2 = MakeObject<TextStamp>("Header 2");
-	auto stamp3 = MakeObject<TextStamp>("Header 3");
+    // Create three stamps
+    auto stamp1 = MakeObject<TextStamp>("Header 1");
+    auto stamp2 = MakeObject<TextStamp>("Header 2");
+    auto stamp3 = MakeObject<TextStamp>("Header 3");
 
-	// Set stamp alignment (place stamp on page top, centered horiznotally)
-	stamp1->set_VerticalAlignment(VerticalAlignment::Top);
-	stamp1->set_HorizontalAlignment(HorizontalAlignment::Center);
-	// Specify the font style as Bold
-	stamp1->get_TextState()->set_FontStyle(FontStyles::Bold);
-	// Set the text fore ground color information as red
-	stamp1->get_TextState()->set_ForegroundColor(Color::get_Red());
-	// Specify the font size as 14
-	stamp1->get_TextState()->set_FontSize(14);
+    // Set stamp alignment (place stamp on page top, centered horiznotally)
+    stamp1->set_VerticalAlignment(VerticalAlignment::Top);
+    stamp1->set_HorizontalAlignment(HorizontalAlignment::Center);
+    // Specify the font style as Bold
+    stamp1->get_TextState()->set_FontStyle(FontStyles::Bold);
+    // Set the text fore ground color information as red
+    stamp1->get_TextState()->set_ForegroundColor(Color::get_Red());
+    // Specify the font size as 14
+    stamp1->get_TextState()->set_FontSize(14);
 
-	// Now we need to set the vertical alignment of 2nd stamp object as Top
-	stamp2->set_VerticalAlignment(VerticalAlignment::Top);
-	// Set Horizontal alignment information for stamp as Center aligned
-	stamp2->set_HorizontalAlignment (HorizontalAlignment::Center);
-	// Set the zooming factor for stamp object
-	stamp2->set_Zoom(10);
+    // Now we need to set the vertical alignment of 2nd stamp object as Top
+    stamp2->set_VerticalAlignment(VerticalAlignment::Top);
+    // Set Horizontal alignment information for stamp as Center aligned
+    stamp2->set_HorizontalAlignment (HorizontalAlignment::Center);
+    // Set the zooming factor for stamp object
+    stamp2->set_Zoom(10);
 
-	// Set the formatting of 3rd stamp object
-	// Specify the Vertical alignment information for stamp object as TOP
-	stamp3->set_VerticalAlignment(VerticalAlignment::Top);
-	// Set the Horizontal alignment inforamtion for stamp object as Center aligned
-	stamp3->set_HorizontalAlignment(HorizontalAlignment::Center);
-	// Set the rotation angle for stamp object
-	stamp3->set_RotateAngle(35);
-	// Set pink as background color for stamp
-	stamp3->get_TextState()->set_BackgroundColor(Color::get_Pink());
-	// Change the font face information for stamp to Verdana
-	stamp3->get_TextState()->set_Font(FontRepository::FindFont(u"Verdana"));
+    // Set the formatting of 3rd stamp object
+    // Specify the Vertical alignment information for stamp object as TOP
+    stamp3->set_VerticalAlignment(VerticalAlignment::Top);
+    // Set the Horizontal alignment inforamtion for stamp object as Center aligned
+    stamp3->set_HorizontalAlignment(HorizontalAlignment::Center);
+    // Set the rotation angle for stamp object
+    stamp3->set_RotateAngle(35);
+    // Set pink as background color for stamp
+    stamp3->get_TextState()->set_BackgroundColor(Color::get_Pink());
+    // Change the font face information for stamp to Verdana
+    stamp3->get_TextState()->set_Font(FontRepository::FindFont(u"Verdana"));
 
-	// First stamp is added on first page;
-	document->get_Pages()->idx_get(1)->AddStamp(stamp1);
-	// Second stamp is added on second page;
-	document->get_Pages()->idx_get(2)->AddStamp(stamp2);
-	// Third stamp is added on third page.
-	document->get_Pages()->idx_get(3)->AddStamp(stamp3);
-		
-	// Save updated document
-	document->Save(_dataDir + outputFileName);
+    // First stamp is added on first page;
+    document->get_Pages()->idx_get(1)->AddStamp(stamp1);
+    // Second stamp is added on second page;
+    document->get_Pages()->idx_get(2)->AddStamp(stamp2);
+    // Third stamp is added on third page.
+    document->get_Pages()->idx_get(3)->AddStamp(stamp3);
+
+    // Save updated document
+    document->Save(_dataDir + outputFileName);
 }
 ```

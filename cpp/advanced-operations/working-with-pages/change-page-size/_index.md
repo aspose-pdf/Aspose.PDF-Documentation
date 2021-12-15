@@ -17,11 +17,11 @@ However, you may have tasks when you need to resize your PDF document since the 
 
 Do not worry. On this page, you will find a way to solve your task.
 
-But first, let's remember that there is Page Size Series. 
+But first, let's remember that there is Page Size Series.
 
-There are two-page size series widely adopted in the world. 
+There are two-page size series widely adopted in the world.
 Of course, there are many formats, but there are the most commonly used ones.
-The first one is ISO Paper Sizes. Series A4 is used for Standard Printing and Stationery. Letter size paper is used for Posters, Wall-Charts, etc. The United States, Canada, and in part Mexico adopted the second Page Size Series and they are today the only industrialized nations in which the ISO standard paper sizes are not yet widely used. 
+The first one is ISO Paper Sizes. Series A4 is used for Standard Printing and Stationery. Letter size paper is used for Posters, Wall-Charts, etc. The United States, Canada, and in part Mexico adopted the second Page Size Series and they are today the only industrialized nations in which the ISO standard paper sizes are not yet widely used.
 
 Now let's see how Aspose.PDF prompts you to resize the page using the C++ library.
 
@@ -42,21 +42,21 @@ The following code snippet shows how to change the PDF page dimensions to A4 siz
 ```cpp
 void ChangePageSize() {
 
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("UpdateDimensions.pdf");
-	String outputFileName("UpdateDimensions_out.pdf");
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("UpdateDimensions.pdf");
+    String outputFileName("UpdateDimensions_out.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Get particular page
-	auto pdfPage = document->get_Pages()->idx_get(1);
+    // Get particular page
+    auto pdfPage = document->get_Pages()->idx_get(1);
 
-	// Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points
-	// So A4 dimensions in points will be (842.4, 597.6)
-	pdfPage->SetPageSize(597.6, 842.4);
-	// Save the updated document
-	document->Save(_dataDir + outputFileName);
+    // Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points
+    // So A4 dimensions in points will be (842.4, 597.6)
+    pdfPage->SetPageSize(597.6, 842.4);
+    // Save the updated document
+    document->Save(_dataDir + outputFileName);
 }
 ```
 
@@ -67,21 +67,21 @@ You can read PDF page size of an existing PDF file using Aspose.PDF for С++. Th
 ```cpp
 void GetPDFPageSize() {
 
-	String _dataDir("C:\\Samples\\");
-	String inputFileName("UpdateDimensions.pdf");
+    String _dataDir("C:\\Samples\\");
+    String inputFileName("UpdateDimensions.pdf");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + inputFileName);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-	// Get particular page
-	auto page = document->get_Pages()->idx_get(1);
+    // Get particular page
+    auto page = document->get_Pages()->idx_get(1);
 
-	// Get page height and width information
-	Console::WriteLine(u"{0} {1}", page->GetPageRect(true)->get_Width(), page->GetPageRect(true)->get_Height());
-	// Rotate page at 90 degree angle
-	page->set_Rotate(Rotation::on90);
-	// Get page height and width information
-	Console::WriteLine(u"{0} {1}", page->GetPageRect(true)->get_Width(), page->GetPageRect(true)->get_Height());
+    // Get page height and width information
+    Console::WriteLine(u"{0} {1}", page->GetPageRect(true)->get_Width(), page->GetPageRect(true)->get_Height());
+    // Rotate page at 90 degree angle
+    page->set_Rotate(Rotation::on90);
+    // Get page height and width information
+    Console::WriteLine(u"{0} {1}", page->GetPageRect(true)->get_Width(), page->GetPageRect(true)->get_Height());
 
 }
 ```
