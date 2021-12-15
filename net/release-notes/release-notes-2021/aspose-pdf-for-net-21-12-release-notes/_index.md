@@ -51,7 +51,6 @@ This page contains release notes information for Aspose.PDF for .NET 21.12.
 |PDFNET-50752|TextFragmentAbsorber ignores the rectangle when searching for text by regular expression|Bug|
 |PDFNET-49368|PDF rendering differently in different cultures|Bug|
 |PDFNET-49243|PDF to SVG - Links are not working in output|Bug|
-|PDFNET-50020|HTML to PDF - Index was outside the bounds of the array when using external CSS|Bug|
 |PDFNET-42479|MHT to PDF throws ArgumentNullException|Bug|
 |PDFNET-46451|Exception while converting MHT to PDF|Bug|
 |PDFNET-47130|Adding metadata not working|Bug|
