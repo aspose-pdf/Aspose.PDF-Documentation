@@ -23,8 +23,8 @@ This page contains release notes information for Aspose.PDF for .NET 21.12.
 | :- | :- | :- |
 |PDFNET-50991|Create example fixup|Feature|
 |PDFNET-46044|Increase performance while adding text|Enhancement|
-|PDFNET-40008|IFF to PDF - Exception during conversion|Bug|
-|PDFNET-45059|F to JPG - Cross reference table or cross reference stream not found|Bug|
+|PDFNET-40008|TIFF to PDF - Exception during conversion|Bug|
+|PDFNET-45059|PDF to JPG - Cross reference table or cross reference stream not found|Bug|
 |PDFNET-50458|Aspose.PDF 21.8: Lost image hyperlinks when converting a certain pdf to presentation|Bug|
 |PDFNET-51002|A PDF file is invalid after signing|Bug|
 |PDFNET-38651|HTML to PDF - Contents overlap in resultant file|Bug|
