@@ -1,5 +1,5 @@
 ---
-title: Set Privileges,Encrypt and Decrypt PDF File using Aspose.PDF for C++
+title: Set Privileges,Encrypt and Decrypt PDF File 
 linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title:  Extract data from AcroForm using C++
+title:  Extract data from AcroForm 
 linktitle:  Extract data from AcroForm
 type: docs
 weight: 50

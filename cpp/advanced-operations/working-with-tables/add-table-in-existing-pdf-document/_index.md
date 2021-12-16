@@ -1,5 +1,5 @@
 ---
-title: Create or Add Table In PDF using C++
+title: Create or Add Table In PDF 
 linktitle: Create or Add Table
 type: docs
 weight: 10

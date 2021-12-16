@@ -1,5 +1,5 @@
 ---
-title: Creating a complex PDF using Aspose.PDF
+title: Creating a complex PDF 
 linktitle: Creating a complex PDF
 type: docs
 weight: 30

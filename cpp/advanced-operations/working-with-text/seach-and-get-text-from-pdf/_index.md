@@ -1,5 +1,5 @@
 ---
-title: Search and Get Text from Pages of PDF Document using C++
+title: Search and Get Text from Pages of PDF Document 
 linktitle: Search and Get Text
 type: docs
 weight: 60

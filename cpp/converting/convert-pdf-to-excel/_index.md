@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Excel using C++
+title: Convert PDF to Excel 
 linktitle: Convert PDF to Excel
 type: docs
 weight: 20

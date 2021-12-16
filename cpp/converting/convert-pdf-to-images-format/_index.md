@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Images formats using C++
+title: Convert PDF to Images formats 
 linktitle: Convert PDF to Images
 type: docs
 weight: 70

@@ -1,5 +1,5 @@
 ---
-title: Determine Line Break in TextFragment using C++
+title: Determine Line Break in TextFragment 
 linktitle: Determine Line Break
 type: docs
 weight: 70

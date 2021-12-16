@@ -1,5 +1,5 @@
 ---
-title: Add Text stamps in PDF programmatically
+title: Add Text stamps in PDF File
 linktitle: Text stamps in PDF File
 type: docs
 weight: 20
