@@ -7,17 +7,19 @@ url: /net/using-wrapper-in-cpp/
 
 ## Prerequisites
 
-
 {{% alert color="primary" %}}
 
 Please register Aspose.PDF for .NET with COM Interop, kindly check the article named [Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 
+## Implementation
+
 {{% alert color="primary" %}}
 
 We will use a [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assembly/) to retrieve text from PDF documents.
 
+{{% /alert %}}
 
 ```cpp
 
@@ -68,5 +70,3 @@ int main(array<System::String ^> ^args)
 }
 
 ```
-
-{{% /alert %}}
