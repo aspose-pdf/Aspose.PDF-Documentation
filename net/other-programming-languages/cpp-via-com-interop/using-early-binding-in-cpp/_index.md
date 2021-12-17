@@ -13,7 +13,8 @@ Please register Aspose.PDF for .NET with COM Interop, kindly check the article n
 
 {{% /alert %}}
 
-##### **Sample**
+## Sample
+
 {{% alert color="primary" %}}
 
 This is a simple C++ code sample to extract text from PDF files using COM Interop using early binding. Before running the sample pay attention that
@@ -21,15 +22,14 @@ This is a simple C++ code sample to extract text from PDF files using COM Intero
 - **#import** *typelib.tlb* makes C++ compiler generate 2 files: *typelib.tlh* and *typelib.tli*. By default, these files are generated only once, so you need to fully recompile the project in order to get new versions of them.
 - often importing only one TLB file leads to a great number of compiler errors. There are two types of errors: unresolved dependencies and conflicting names. If you can't compile project open tlh file and look at the first lines which are commented. Here you'll probably see the section which starts from the line
 
-```java
-
+```cpp
 // Cross-referenced type libraries:
-
 ```
 
 and has one or more **#import**'s. Just copy them into your code before importing the main type library and do it in the ***same*** order. Thus you'll bite the first type of problem. The next type of problem comes from the fact C++ environment has a big number of macros, predefined functions, etc., which can conflict with type library methods. For example, GetType has been already widely used in C++ but also Aspose.PDF has it. I found **rename** and **auto_rename** attributes of **#import** directive are very convenient to get rid of possible warnings and errors.
 
 - sometimes classes in **uses** namespaces conflict with names in type library, so in such cases, full class name must be used instead of **using namespace**. For example, see how StringToBSTR is called in the code snippet below.
+{{% /alert %}}
 
 For details please look at [this](http://www.drdobbs.com/writing-com-clients-with-late-and-early/184403558) post.
 
@@ -102,5 +102,3 @@ int main(array<System::String ^> ^args)
     return 0;
 }
 ```
-
-{{% /alert %}}

@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /net/basic-operations/
 lastmod: "2021-11-01"
-description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF library.
+description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF for .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.7

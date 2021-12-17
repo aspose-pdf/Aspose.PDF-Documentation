@@ -1,10 +1,10 @@
 ---
-title: Add PDF Page Stamps in PDF using Java
+title: Add PDF Page Stamp to PDF using Java
 linktitle: Page stamps in PDF File
 type: docs
 weight: 30
 url: /java/page-stamps-in-the-pdf-file/
-description: Add a text stamp to a PDF file using the TextStamp class with Java.
+description: Add a Page stamp to a PDF file using the PdfPageStamp class with Java.
 lastmod: "2021-09-10"
 sitemap:
     changefreq: "monthly"
@@ -25,7 +25,7 @@ public static void AddPageStamp()
 
     PdfPageStamp bluePageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 1);
     bluePageStamp.setHeight(800);
-    bluePageStamp.setBackground(true);        
+    bluePageStamp.setBackground(true);
 
     PdfPageStamp plumPageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 2);
     plumPageStamp.setHeight(800);
