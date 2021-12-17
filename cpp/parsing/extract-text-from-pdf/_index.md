@@ -7,7 +7,7 @@ url: /cpp/extract-text-from-pdf/
 description: Aspose.PDF allows for extracting different kinds of information. This section contains articles on text extraction from PDF documents using Aspose.PDF in C++.
 lastmod: "2021-06-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
