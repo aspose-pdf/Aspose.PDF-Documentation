@@ -1,11 +1,12 @@
 ---
-title: Working with Operators
+title: Working with Operators using C++
 linktitle: Working with Operators
 type: docs
 weight: 170
 url: /cpp/operators/
 description: This topic explains how to use operators with Aspose.PDF in C++. The operator classes provide great features for PDF manipulation.
 lastmod: "2021-12-14"
+draft: true
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -92,18 +93,16 @@ This topic demonstrates how to use the GSave/GRestore operators, the Contatenate
 The code below wraps a PDF file’s existing contents with the GSave/GRestore operator pair. This approach helps get the initial graphics state at the and of the existing contents. Without this approach, undesirable transformations might remain at the end of the existing operator chain.
 
 ```cpp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
+void DrawXFormOnPageUsingOperators() {
+    // Open document
+    String _dataDir("C:\\Samples\\");
 
+    String imageFile(_dataDir + u"aspose-logo.jpg");
+    String inFile(_dataDir + u"DrawXFormOnPage.pdf");
+    String outFile(_dataDir + u"blank-sample2_out.pdf");
 
-string imageFile = dataDir+ "aspose-logo.jpg";
-string inFile = dataDir + "DrawXFormOnPage.pdf";
-string outFile = dataDir + "blank-sample2_out.pdf";
-
-using (Document doc = new Document(inFile))
-{
-    OperatorCollection pageContents = doc.Pages[1].Contents;
+    auto document = MakeObject<Document>(inFile);
+    auto pageContents = document->get_Pages()->idx_get(1)->get_Contents();
 
     // The sample demonstrates
     // GSave/GRestore operators usage
@@ -113,75 +112,77 @@ using (Document doc = new Document(inFile))
     // Wrap existing contents with GSave/GRestore operators pair
     //        this is to get initial graphics state at the and of existing contents
     //        otherwise there might remain some undesirable transformations at the end of existing operators chain
-    pageContents.Insert(1, new Aspose.Pdf.Operators.GSave());
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+    pageContents->Insert(1, MakeObject<Aspose::Pdf::Operators::GSave>());
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
 
     // Add save graphics state operator to properly clear graphics state after new commands
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
-
-    #region create xForm
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
 
     // Create xForm
-    XForm form = XForm.CreateNewForm(doc.Pages[1], doc);
-    doc.Pages[1].Resources.Forms.Add(form);
-    form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+
+    auto form = XForm::CreateNewForm(document->get_Pages()->idx_get(1), document);
+    document->get_Pages()->idx_get(1)->get_Resources()->get_Forms()->Add(form);
+    form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
     // Define image width and heigh
-    form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
+    form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(200, 0, 0, 200, 0, 0));
     // Load image into stream
-    Stream imageStream = new FileStream(imageFile, FileMode.Open);
+    auto imageStream = System::IO::File::OpenRead(imageFile);
     // Add image to Images collection of the XForm Resources
-    form.Resources.Images.Add(imageStream);
-    XImage ximage = form.Resources.Images[form.Resources.Images.Count];
+    form->get_Resources()->get_Images()->Add(imageStream);
+    auto ximage = form->get_Resources()->get_Images()->idx_get(form->get_Resources()->get_Images()->get_Count());
     // Using Do operator: this operator draws image
-    form.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
-    form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+    form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::Do>(ximage->get_Name()));
+    form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
 
-    #endregion
+    // ----------------------------------------------------
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
     // Place form to the x=100 y=500 coordinates
-    pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(1, 0, 0, 1, 100, 500));
     // Draw form with Do operator
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::Do>(form->get_Name()));
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
     // Place form to the x=100 y=300 coordinates
-    pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(1, 0, 0, 1, 100, 300));
     // Draw form with Do operator
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::Do>(form->get_Name()));
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
 
     // Restore grahics state with GRestore after the GSave
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
-    doc.Save(outFile);
+    pageContents->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
+    document->Save(outFile);
 }
 ```
 
 ## Remove Graphics Objects using Operator Classes
 
-The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class’ [DeleteImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) method, the operator classes can be used to remove them instead.
+The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_content_editor) class' [DeleteImage](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_content_editor#af7d23ef932737bf606f008ad5ec48380) method, the operator classes can be used to remove them instead.
 
 The following code snippet shows how to remove graphics. Please note that if the PDF file contains text labels for the graphics, they might persist in the PDF file, using this approach. Therefore search the graphic operators for an alternate method to delete such images.
 
 ```cpp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
+void RemoveGraphicsObjects() {
+    // Open document
+    String _dataDir("C:\\Samples\\");
 
-Document doc = new Document(dataDir+ "RemoveGraphicsObjects.pdf");
-Page page = doc.Pages[2];
-OperatorCollection oc = page.Contents;
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + u"RemoveGraphicsObjects.pdf");
 
-// Used path-painting operators
-Operator[] operators = new Operator[] {
-        new Aspose.Pdf.Operators.Stroke(),
-        new Aspose.Pdf.Operators.ClosePathStroke(),
-        new Aspose.Pdf.Operators.Fill()
-};
+    auto page = document->get_Pages()->idx_get(2);
+    auto oc = page->get_Contents();
 
-oc.Delete(operators);
-doc.Save(dataDir+ "No_Graphics_out.pdf");
+    // Used path-painting operators
+    auto operators = MakeArray<System::SmartPtr<Operator>>({
+            MakeObject<Aspose::Pdf::Operators::Stroke>(),
+            MakeObject<Aspose::Pdf::Operators::ClosePathStroke>(),
+            MakeObject<Aspose::Pdf::Operators::Fill>()
+    });
+
+    oc->Delete(operators);
+    document->Save(_dataDir + u"No_Graphics_out.pdf");
+}
 ```
 
 ## Changing Color Space of a PDF Document

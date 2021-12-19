@@ -1,5 +1,5 @@
 ---
-title: Extract Data from Table in PDF using C++
+title: Extract Data from Table in PDF 
 linktitle: Extract Data from Table
 type: docs
 weight: 40

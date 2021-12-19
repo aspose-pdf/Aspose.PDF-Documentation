@@ -78,7 +78,7 @@ public static void AddTable_RowColSpan()
     // Load source PDF document
     Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document();
     pdfDocument.Pages.Add();
-   
+
     // Initializes a new instance of the Table
     Aspose.Pdf.Table table = new Aspose.Pdf.Table
     {
@@ -89,11 +89,11 @@ public static void AddTable_RowColSpan()
     };
 
     // Add 1st row to table
-    Aspose.Pdf.Row row1 = table.Rows.Add();          
+    Aspose.Pdf.Row row1 = table.Rows.Add();
     for (int cellCount = 1; cellCount <5; cellCount++)
     {
         // Add table cells
-        row1.Cells.Add($"Test 1 {cellCount}");                   
+        row1.Cells.Add($"Test 1 {cellCount}");
     }
 
     // Add 2nd row to table
@@ -145,11 +145,11 @@ Please note that it also supports the feature to set border style, margins and c
 
 In the above figure, you can see that the borders of table, row and cell overlap. Using Aspose.PDF, a table can have margins and cells can have paddings. To set cell margins, we have to set cell padding.
 
-## Borders
+### Borders
 
 To set the borders of Table, [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) and [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell) objects, use the Table.Border, Row.Border and Cell.Border properties. Cell borders can also be set using the [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table) or Row class’ DefaultCellBorder property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
 
-## Margins or Padding
+### Margins or Padding
 
 Cell padding can be managed using the Table class' [DefaultCellPadding](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) property. All padding related properties are assigned an instance of the [MarginInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/margininfo) class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters to create custom margins.
 
@@ -161,7 +161,7 @@ In the following example, the width of the cell border is set to 0.1 point, the 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-           
+
 // Instntiate the Document object by calling its empty constructor
 Document doc = new Document();
 Page page = doc.Pages.Add();
@@ -222,7 +222,13 @@ tab1.CornerStyle = Aspose.Pdf.BorderCornerStyle.Round;
 tab1.Border = bInfo;
 ```
 
-### AutoFitToWindow property in ColumnAdjustmentType enumeration
+## Appling Different AutoFit Settings to a Table
+
+When creating a table using a visual agent such as Microsoft Word, you will often find yourself using one of the AutoFit options to automatically size the table to the desired width. For instance you can use the AutoFit to Window option to fit the table to the width of the page and the AutoFit to Contents option to allow each cell to grow or shrink to accommodate its contents.
+
+By default Aspose.Pdf inserts a new table using `ColumnAdjustment` with `Customized` value. The table will size to the available width on the page. To change the sizing behavior on such a table or an existing table you can call Table.autoFit(int) method. This method accepts an AutoFitBehavior enumeration which defines what type of auto fitting is applied to the table.
+
+As in Microsoft Word, an autofit method is actually a shortcut which applies different properties to the table all at once. These properties are actually what give the table the observed behavior. We will discuss these properties for each autofit option. We will use the following table and apply the different auto fit settings as a demonstration:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

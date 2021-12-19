@@ -1,5 +1,5 @@
 ---
-title: Extract Text From Stamps using C++
+title: Extract Text From Stamps 
 linktitle: Extract Text From Stamps
 type: docs
 weight: 60

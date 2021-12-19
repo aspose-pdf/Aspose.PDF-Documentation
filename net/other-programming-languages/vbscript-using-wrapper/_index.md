@@ -17,6 +17,9 @@ url: /net/vbscript-using-wrapper/
 
 We will use [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assembly/) to retrieve text from PDF document.
 
-Error rendering macro 'code' : Invalid value specified for parameter lang
-
 {{% /alert %}}
+
+
+```cs
+// Example (to be announced)
+```

@@ -1,5 +1,5 @@
 ---
-title: Change PDF Page Size Programmatically with C++
+title: Change PDF Page Size Programmatically 
 linktitle: Change PDF Page Size
 type: docs
 weight: 40

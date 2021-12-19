@@ -1,5 +1,5 @@
 ---
-title: Add PDF Page Stamps in PDF using C++
+title: Add PDF Page Stamps in PDF 
 linktitle: Page stamps in PDF File
 type: docs
 weight: 30

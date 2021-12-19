@@ -1,5 +1,5 @@
 ---
-title: Delete PDF Pages programmatically C++
+title: Delete PDF Pages programmatically 
 linktitle: Delete PDF Pages
 type: docs
 weight: 30

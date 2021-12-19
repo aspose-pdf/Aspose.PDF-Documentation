@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft Word documents using C++
+title: Convert PDF to Microsoft Word documents 
 linktitle: Convert PDF to Word
 type: docs
 weight: 10

@@ -4,7 +4,7 @@ linktitle: PDF Tooltip
 type: docs
 weight: 20
 url: /java/pdf-tooltip/
-description: Aspose.PDF implements a function of hiding actions, with which you can show/hide an annotation when you enter/leave the mouse over an invisible button.
+description: Learn how to add tooltip to the text fragment in PDF using Java and Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
@@ -25,10 +25,10 @@ import com.aspose.pdf.TextFragmentAbsorber;
 import com.aspose.pdf.TextFragmentCollection;
 
 public class ExampleToolTip {
-    
+
     private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-    
-    public static void AddToolTip() {        
+
+    public static void AddToolTip() {
         String outputFile = _dataDir + "Tooltip_out.pdf";
 
         // Create sample document with text
@@ -46,8 +46,8 @@ public class ExampleToolTip {
         // Get the extracted text fragments
         TextFragmentCollection textFragments = absorber.getTextFragments();
 
-        // Loop through the fragments        
-        for(TextFragment fragment : textFragments) 
+        // Loop through the fragments
+        for(TextFragment fragment : textFragments)
         {
             // Create invisible button on text fragment position
             ButtonField field = new ButtonField(fragment.getPage(), fragment.getRectangle());
@@ -127,8 +127,8 @@ Please also take into account that PDF actions in the documents work fine in the
         floatingField.setValue ("This is the \"floating text field\".");
         // We recommend to make field 'readonly' for this scenario
         floatingField.setReadOnly(true);
-        
-        // Set 'hidden' flag to make field invisible on document opening        
+
+        // Set 'hidden' flag to make field invisible on document opening
         floatingField.setFlags( floatingField.getFlags() | AnnotationFlags.Hidden);
 
         // Setting a unique field name isn't necessary but allowed
@@ -159,6 +159,6 @@ Please also take into account that PDF actions in the documents work fine in the
         document.getForm().add(buttonField);
 
         // Save document
-        document.save(outputFile);        
+        document.save(outputFile);
     }
 ```
