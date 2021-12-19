@@ -61,7 +61,7 @@ A Pop-up Annotation displays text in a pop-up window for entry and editing. It s
 
 It shall have no appearance stream or associated actions of its own and shall be identified by the Popup entry in the parent’s annotation dictionary.
 
-The following code snippet shows you how to add [Popup Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) in a PDF page using an example of adding a parent's [Line annotation](/pdf/net/add-line-annotation/).
+The following code snippet shows you how to add [Popup Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) in a PDF page using an example of adding a parent's [Line annotation](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
 
 ```csharp
 using Aspose.Pdf.Annotations;
