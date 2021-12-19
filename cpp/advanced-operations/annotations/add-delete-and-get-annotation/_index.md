@@ -22,4 +22,4 @@ We have combined the different kinds of annotation available for the Aspose.PDF 
 - [PDF Figures Annotation](/pdf/cpp/figures-annotation/)
 - [Multimedia Annotation](/pdf/cpp/multimedia-annotation/)
 - [Extra Annotations](/pdf/cpp/extra-annotations/)
-- [Sticks Annotation](/pdf/cpp/sticks-annotations/)
+- [sticky Annotation](/pdf/cpp/sticky-annotations/)

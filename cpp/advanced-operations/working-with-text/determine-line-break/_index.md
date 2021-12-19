@@ -4,7 +4,7 @@ linktitle: Determine Line Break
 type: docs
 weight: 70
 url: /cpp/determine-line-break/
-description: Learn more about how to determinate a line break of multi-line TextFragment.
+description: Learn more about how to determinate a line break of multi-line TextFragment using C++
 lastmod: "2021-12-13"
 sitemap:
     changefreq: "weekly"
