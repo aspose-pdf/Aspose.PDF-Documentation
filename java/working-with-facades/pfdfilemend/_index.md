@@ -32,7 +32,7 @@ We can add text in several ways. Consider the first. We take the [FormattedText]
 
 Check how it's looks:
 
-![Add Text](add_text.png)
+![Add Text](/pdf/net/images/add_text.png)
 
 The second way to add [FormattedText](https://apireference.aspose.com/pdf//java/com.aspose.pdf.facades/formattedtext). Additionally, we indicate a rectangle in which our text should fit.
 
@@ -97,7 +97,7 @@ public static void AddImage01()
     }
 ```
 
-![Add Image](add_image1.png)
+![Add Image](/pdf/net/images/add_image1.png)
 
 Let's consider the second code snippet. By using variations of the [CompositingParameters](https://apireference.aspose.com/pdf/java/com.aspose.pdf/CompositingParameters) class parameters, we can get different design effects.
 We tried one of them.
@@ -123,7 +123,7 @@ We tried one of them.
     }
 ```
 
-![Add Image](add_image2.png)
+![Add Image](/pdf/net/images/add_image2.png)
 
 In the following code snippet we use [ImageFilterType](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ImageFilterType). ImageFilterType indicates the type of stream codec that will be used for encoding, by default Jpeg. if you load an image from PNG format, then it will be saved in the document as JPEG (or in another format I have specified).
 
