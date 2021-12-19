@@ -22,7 +22,7 @@ In this section, we’ll have a detailed look into these image operations. We’
 
 ## Add Image in an Existing PDF File (Facades)
 
-You can use [AddImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) method of the [PdfFileMend](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) class. The [AddImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/close) method. 
+You can use [AddImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) method of the [PdfFileMend](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) class. The [AddImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using [Close](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/close) method.
 
 In the following example, we add image to the page using imageStream:
 
@@ -42,7 +42,7 @@ public static void AddImage01()
         }
 ```
 
-![Add Image](../add_image1.png)
+![Add Image](/pdf/net/images/add_image1.png)
 
 With the help of [CompositingParameters](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1), we can superimpose one image on top of another:
 
@@ -67,7 +67,7 @@ public static void AddImage02()
         }
 ```
 
-![Add Image](../add_image2.png)
+![Add Image](/pdf/net/images/add_image2.png)
 
 There are several ways to store an image in PDF file. We will demonstrate one of them in the following example:
 
@@ -133,7 +133,7 @@ public static void AddText01()
 
 Check how it's looks:
 
-![Add Text](../add_text.png)
+![Add Text](/pdf/net/images/add_text.png)
 
 The second way to add [FormattedText](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). Additionally, we indicate a rectangle in which our text should fit.
 
