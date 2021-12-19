@@ -15,12 +15,12 @@ This page contains release notes information for Aspose.PDF for Java 20.7.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFJAVA-39591|Change XImage.Name results corrupted PDF document|	Enhancement|
-|PDFJAVA-39536|	Load XPS document - FileLoadException is thrown|	Bug|
-|PDFJAVA-37882|	Different PDFA size with files having same content|	Bug|
-|PDFJAVA-39279|	ClassCastException while getting the annotation.getModified();|	Bug|
-|PDFJAVA-36067|	TextSegment formatting issues|	Bug|
-|PDFJAVA-39551|	Save bulleted lists to DOCX format in EnchantedFlow mode|	Bug|
+|PDFJAVA-39591|Change XImage.Name results corrupted PDF document|Enhancement|
+|PDFJAVA-39536|Load XPS document - FileLoadException is thrown|Bug|
+|PDFJAVA-37882|Different PDFA size with files having same content|Bug|
+|PDFJAVA-39279|ClassCastException while getting the annotation.getModified();|Bug|
+|PDFJAVA-36067|TextSegment formatting issues|Bug|
+|PDFJAVA-39551|Save bulleted lists to DOCX format in EnchantedFlow mode|Bug|
 
 ## **Public API and Backwards Incompatible Changes**
 

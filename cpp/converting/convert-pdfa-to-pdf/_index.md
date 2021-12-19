@@ -1,5 +1,5 @@
 ---
-title: Convert PDF/A to PDF format using C++
+title: Convert PDF/A to PDF format 
 linktitle: Convert PDF/A to PDF format
 type: docs
 weight: 110

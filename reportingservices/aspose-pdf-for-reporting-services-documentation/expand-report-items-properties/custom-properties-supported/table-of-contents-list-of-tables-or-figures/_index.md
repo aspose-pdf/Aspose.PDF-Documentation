@@ -17,52 +17,52 @@ Report Designer does not support adding table of contents for report documents. 
 ##### **Table of Contents**
 **Example**
 
-{{< highlight csharp >}}
+```cs
  <ListSection ListType="TableOfContents">
-	<Title Alignment="Center">
+    <Title Alignment="Center">
             <Segment IsTrueTypeFontBold="true" FontSize="30">TableOfContents</Segment>
-	</Title>
-	<ListLevelFormat Level="1" LeftMargin="0">
+    </Title>
+    <ListLevelFormat Level="1" LeftMargin="0">
             <TextInfo IsTrueTypeFontBold="true" IsTrueTypeFontItalic="true"></TextInfo>
-	</ListLevelFormat>
-	<ListLevelFormat Level="2" LeftMargin="10">
+    </ListLevelFormat>
+    <ListLevelFormat Level="2" LeftMargin="10">
             <TextInfo IsUnderline="true" FontSize="10"></TextInfo>
-	</ListLevelFormat>
-	<ListLevelFormat Level="3" LeftMargin="20">
+    </ListLevelFormat>
+    <ListLevelFormat Level="3" LeftMargin="20">
             <TextInfo IsTrueTypeFontBold="true"></TextInfo>
-	</ListLevelFormat>
-	<ListLevelFormat Level="4" LeftMargin="30">
+    </ListLevelFormat>
+    <ListLevelFormat Level="4" LeftMargin="30">
             <TextInfo IsTrueTypeFontBold="true"></TextInfo>
-	</ListLevelFormat>
+    </ListLevelFormat>
 </ListSection>
 
-{{< /highlight >}}
+```
 
-***List of Tables***  
+***List of Tables***
 **Example**
 
-{{< highlight csharp >}}
+```cs
  <ListSection ListType="ListOfTables">
-	<Title>
+    <Title>
             <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfTables</Segment>
-	</Title>
+    </Title>
 </ListSection>
 
-{{< /highlight >}}
+```
 
- ***List of Figures***  
+ ***List of Figures***
 **Example**
 
-{{< highlight csharp >}}
+```cs
  <ListSection ListType="ListOfFigures">
-	<Title>
+    <Title>
             <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfFigures</Segment>
-	</Title>
+    </Title>
 </ListSection>
 
-{{< /highlight >}}
+```
 
-**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as the chapter 'List Section'.  
+**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as the chapter 'List Section'.
 **3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
 
 {{% /alert %}}
@@ -71,9 +71,9 @@ Please refer to List Section for further details, as specified in Aspose.PDF for
 
 {{% alert color="primary" %}}
 
-**Custom Property Name** :IsInList  
-**Property Value** :Boolean  
-**Custom Property Value** : True or False  
+**Custom Property Name** :IsInList
+**Property Value** :Boolean
+**Custom Property Value** : True or False
 
 {{% alert color="primary" %}}
 
@@ -81,17 +81,16 @@ Which means that the current report item could be listed by index in the tables 
 
 {{% /alert %}}
 
-**Custom Property Name** : Title  
-**Custom Property Type** : String 
+**Custom Property Name** : Title
+**Custom Property Type** : String
 
 {{% alert color="primary" %}}
 
 Which means the title displayed in the table of contents, list of tables or figures.
 {{% /alert %}}
 
-
-**Custom Property Name** : ListLevel  
-**Custom Property Type** : Integer  
+**Custom Property Name** : ListLevel
+**Custom Property Type** : Integer
 
 {{% alert color="primary" %}}
 

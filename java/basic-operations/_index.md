@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/basic-operations/
 lastmod: "2021-06-05"
-description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF library.
+description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF for Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7

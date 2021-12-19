@@ -26,8 +26,8 @@ This new version of Aspose.PDF for C++ has codebase of Aspose.PDF for .NET 20.5 
 |PDFCPP-1263|Build simply Qt application with the Aspose.PDF.Cpp library|Enhancement|
 |PDFCPP-1264|Fix XslCompiledTransform to support XmlReader.|Enhancement|
 |PDFCPP-1265|Support of TeX format|Enhancement|
-|PDFCPP-1269|Implement Linq Where	|Enhancement|
-|PDFCPP-1189|Translate javascript project	|Enhancement|
+|PDFCPP-1269|Implement Linq Where|Enhancement|
+|PDFCPP-1189|Translate javascript project|Enhancement|
 |PDFCPP-1270|Get passed Javascript tests|Enhancement|
 |PDFCPP-1253|Investigation of memory consuming due conversion ApsToDoc|Bug|
 |PDFCPP-1254|Investigation of memory consuming due conversion TextFragments|Bug|

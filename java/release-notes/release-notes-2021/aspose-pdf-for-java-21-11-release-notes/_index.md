@@ -29,7 +29,7 @@ This page contains release notes information for Aspose.PDF for Java 21.11.
 
 
 
-**Removed outdated methods:** 
+**Removed outdated methods:**
 - com.aspose.pdf.Cells.dispose()
 - com.aspose.pdf.Rows.dispose()
 
@@ -54,7 +54,7 @@ This page contains release notes information for Aspose.PDF for Java 21.11.
 - com.aspose.pdf.Page.dispose()
 
 
-**Added new methods** 
+**Added new methods**
 - com.aspose.pdf.Artifact.close()
 - com.aspose.pdf.FileSpecification.close()
 - com.aspose.pdf.MemoryCleaner.clearKeepingFontSettings()
@@ -63,4 +63,4 @@ This page contains release notes information for Aspose.PDF for Java 21.11.
 - com.aspose.pdf.MemoryFontSource.close()
 - com.aspose.pdf.Page.close()
 
-	
+

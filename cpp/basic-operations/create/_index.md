@@ -25,25 +25,24 @@ To create a PDF file using C++, the following steps can be used.
 
 ```cpp
 void CreatePDF() {
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
- // String for path name.
- String _dataDir("C:\\Samples\\");
+    // String for file name.
+    String filename("sample-new.pdf");
 
- // String for file name.
- String filename("sample-new.pdf");
+    // Initialize document object
+    auto document = MakeObject<Document>();
+    // Add page
+    auto page = document->get_Pages()->Add();
 
- // Initialize document object
- auto document = MakeObject<Document>();
- // Add page
- auto page = document->get_Pages()->Add();
+    // Add text to new page
+    auto textFragment = MakeObject<TextFragment>(u"Hello World!");
+    page->get_Paragraphs()->Add(textFragment);
 
- // Add text to new page
- auto textFragment = MakeObject<TextFragment>(u"Hello World!");
- page->get_Paragraphs()->Add(textFragment);
+    // Save updated PDF
+    String outputFileName = _dataDir + filename;
 
- // Save updated PDF
- String outputFileName = _dataDir + filename;
-
- document->Save(outputFileName);
+    document->Save(outputFileName);
 }
 ```

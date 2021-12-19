@@ -1,5 +1,5 @@
 ---
-title: Manipulate PDF Document using Aspose.PDF for C++
+title: Manipulate PDF Document 
 linktitle: Manipulate PDF Document
 type: docs
 weight: 30

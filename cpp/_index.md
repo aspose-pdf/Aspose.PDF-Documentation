@@ -21,6 +21,18 @@ Aspose.PDF for C++ is a native C++ library that enables developers to create, re
 
 {{% /alert %}}
 
+<h2>Chapters</h2>
+
+- [What's new](/pdf/cpp/whatsnew/)
+- [Overview](/pdf/cpp/overview/)
+- [Get Started](/pdf/cpp/get-started/)
+- [Basic operations](/pdf/cpp/basic-operations/)
+- [Converting documents](/pdf/cpp/converting/)
+- [Parsing PDF documents](/pdf/cpp/parsing/)
+- [Advanced operations](/pdf/cpp/advanced-operations/)
+- [Showcases](/pdf/cpp/showcases/)
+- [Release Notes](/pdf/cpp/release-notes/)
+
 <h3> Aspose.PDF for C++ Resources</h3>
 
 The following links offer some useful resources you may need to accomplish your tasks.

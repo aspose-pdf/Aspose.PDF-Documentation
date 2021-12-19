@@ -1,6 +1,5 @@
 ---
-title: Convert various file formats to PDF using C++
-linktitle: Convert other file formats to PDF 
+linktitle: Convert other file formats to PDF
 type: docs
 weight: 80
 url: /cpp/convert-other-files-to-pdf/
@@ -74,7 +73,7 @@ In case of the plain text file, we can use the following technique:
 1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
 
 ```cpp
-void ConvertTextToPDF() 
+void ConvertTextToPDF()
 {
     std::clog << "Text to PDF convert: Start" << std::endl;
     String _dataDir("C:\\Samples\\Conversion\\");
@@ -117,54 +116,54 @@ Follow these steps to convert pre-formatted text to PDF with C++:
 ```CPP
 void ConvertPreFormattedTextToPdf()
 {
-	std::clog << "Performatted Text to PDF convert: Start" << std::endl;
-	String _dataDir("C:\\Samples\\Conversion\\");
-	String infilename("rfc822.txt");
-	String outfilename("TextToPDF.pdf");
-	// Read the text file as array of string
-	auto lines = System::IO::File::ReadAllLines(_dataDir + infilename);
+    std::clog << "Performatted Text to PDF convert: Start" << std::endl;
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("rfc822.txt");
+    String outfilename("TextToPDF.pdf");
+    // Read the text file as array of string
+    auto lines = System::IO::File::ReadAllLines(_dataDir + infilename);
 
-	// Instantiate a Document object by calling its empty constructor
-	auto document = MakeObject<Document>();
+    // Instantiate a Document object by calling its empty constructor
+    auto document = MakeObject<Document>();
 
-	// Add a new page in Pages collection of Document
-	auto page = document->get_Pages()->Add();
+    // Add a new page in Pages collection of Document
+    auto page = document->get_Pages()->Add();
 
-	// Set left and right margins for better presentation
-	page->get_PageInfo()->get_Margin()->set_Left(20);
-	page->get_PageInfo()->get_Margin()->set_Right(10);
-	page->get_PageInfo()->get_DefaultTextState()->set_Font(FontRepository::FindFont(u"Courier New"));
-	page->get_PageInfo()->get_DefaultTextState()->set_FontSize(12);
+    // Set left and right margins for better presentation
+    page->get_PageInfo()->get_Margin()->set_Left(20);
+    page->get_PageInfo()->get_Margin()->set_Right(10);
+    page->get_PageInfo()->get_DefaultTextState()->set_Font(FontRepository::FindFont(u"Courier New"));
+    page->get_PageInfo()->get_DefaultTextState()->set_FontSize(12);
 
-	for (int index = 0; index < lines->get_Length(); index++)
-	{
-		// check if line contains "form feed" character
-		// see https://en.wikipedia.org/wiki/Page_break
-		auto line = lines->idx_get(index);
-		if (line.StartsWith(u"\x0c"))
-		{
-			if (document->get_Pages()->get_Count() > 3) break;
-			page = document->get_Pages()->Add();
-			// Set left and right margins for better presentation
-			page->get_PageInfo()->get_Margin()->set_Left(20);
-			page->get_PageInfo()->get_Margin()->set_Right(10);
-			page->get_PageInfo()->get_DefaultTextState()->set_Font(FontRepository::FindFont(u"Courier New"));
-			page->get_PageInfo()->get_DefaultTextState()->set_FontSize(12);
-		}
-		else
-		{
-			// Create an instance of TextFragment and
-			// pass the line to its constructor as argument
-			auto text = MakeObject<TextFragment>(line);
+    for (int index = 0; index < lines->get_Length(); index++)
+    {
+        // check if line contains "form feed" character
+        // see https://en.wikipedia.org/wiki/Page_break
+        auto line = lines->idx_get(index);
+        if (line.StartsWith(u"\x0c"))
+        {
+        if (document->get_Pages()->get_Count() > 3) break;
+        page = document->get_Pages()->Add();
+        // Set left and right margins for better presentation
+        page->get_PageInfo()->get_Margin()->set_Left(20);
+        page->get_PageInfo()->get_Margin()->set_Right(10);
+        page->get_PageInfo()->get_DefaultTextState()->set_Font(FontRepository::FindFont(u"Courier New"));
+        page->get_PageInfo()->get_DefaultTextState()->set_FontSize(12);
+        }
+        else
+        {
+        // Create an instance of TextFragment and
+        // pass the line to its constructor as argument
+        auto text = MakeObject<TextFragment>(line);
 
-			// Add a new text paragraph in paragraphs collection and pass the TextFragment object
-			page->get_Paragraphs()->Add(text);
-		}
-	}
+        // Add a new text paragraph in paragraphs collection and pass the TextFragment object
+        page->get_Paragraphs()->Add(text);
+        }
+    }
 
-	// Save resultant PDF file
-	document->Save(_dataDir + outfilename);
-	std::clog << "Performatted Text to PDF convert: End" << std::endl;
+    // Save resultant PDF file
+    document->Save(_dataDir + outfilename);
+    std::clog << "Performatted Text to PDF convert: End" << std::endl;
 }
 ```
 
@@ -195,19 +194,19 @@ The following code snippet shows the process of converting XPS file into PDF for
 ```cpp
 void ConvertXPStoPDF()
 {
-	std::clog << "XPS to PDF convert: Start" << std::endl;
-	String _dataDir("C:\\Samples\\Conversion\\");
-	String infilename("sample.oxps");
-	String outfilename("XPStoPDF.pdf");
-	auto options = MakeObject<XpsLoadOptions>();
-	try {
-		auto document = MakeObject<Document>(_dataDir + infilename, options);
-		document->Save(_dataDir + outfilename);
-	}
-	catch (System::Exception ex) {
-		std::cerr << ex->get_Message() << std::endl;
-	};
-	std::clog << "XPS to PDF convert: Finish" << std::endl;
+    std::clog << "XPS to PDF convert: Start" << std::endl;
+    String _dataDir("C:\\Samples\\Conversion\\");
+    String infilename("sample.oxps");
+    String outfilename("XPStoPDF.pdf");
+    auto options = MakeObject<XpsLoadOptions>();
+    try {
+        auto document = MakeObject<Document>(_dataDir + infilename, options);
+        document->Save(_dataDir + outfilename);
+    }
+    catch (System::Exception ex) {
+        std::cerr << ex->get_Message() << std::endl;
+    };
+    std::clog << "XPS to PDF convert: Finish" << std::endl;
 }
 ```
 

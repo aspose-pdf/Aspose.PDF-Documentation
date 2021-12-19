@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft Word documents using C++
+title: Convert PDF to Microsoft Word documents 
 linktitle: Convert PDF to Word
 type: docs
 weight: 10
@@ -26,26 +26,26 @@ The following code snippet shows the process of converting PDF file into DOC.
 ```cpp
 void ConvertPDFtoWord()
 {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
-	// String for file name
-	String infilename("sample.pdf");
-	String outfilename("PDFToDOC.doc");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToDOC.doc");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	try {
-		// Save the file into MS document format
-		document->Save(_dataDir + outfilename, SaveFormat::Doc);
-	}
-	catch (Exception ex) {
-		std::cerr << ex->get_Message();
-	}
+    try {
+        // Save the file into MS document format
+        document->Save(_dataDir + outfilename, SaveFormat::Doc);
+    }
+    catch (Exception ex) {
+        std::cerr << ex->get_Message();
+    }
 
-	std::clog << __func__ << ": Finish" << std::endl;
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -54,35 +54,35 @@ The following code snippet shows the process of converting PDF file into DOC Adv
 ```cpp
 void ConvertPDFtoWordDocAdvanced()
 {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
-	// String for file name
-	String infilename("sample.pdf");
-	String outfilename("PDFToDOC.doc");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToDOC.doc");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	auto saveOptions = MakeObject<DocSaveOptions>();
-	saveOptions->set_Format(DocSaveOptions::DocFormat::Doc);
-	// Set the recognition mode as Flow
-	saveOptions->set_Mode(DocSaveOptions::RecognitionMode::Flow);
-	// Set the Horizontal proximity as 2.5
-	saveOptions->set_RelativeHorizontalProximity(2.5f);
-	// Enable the value to recognize bullets during conversion process
-	saveOptions->set_RecognizeBullets(true);
+    auto saveOptions = MakeObject<DocSaveOptions>();
+    saveOptions->set_Format(DocSaveOptions::DocFormat::Doc);
+    // Set the recognition mode as Flow
+    saveOptions->set_Mode(DocSaveOptions::RecognitionMode::Flow);
+    // Set the Horizontal proximity as 2.5
+    saveOptions->set_RelativeHorizontalProximity(2.5f);
+    // Enable the value to recognize bullets during conversion process
+    saveOptions->set_RecognizeBullets(true);
 
-	try {
-		// Save the file into MS document format
-		document->Save(_dataDir + outfilename, saveOptions);
-	}
-	catch (Exception ex) {
-		std::cerr << ex->get_Message();
-	}
+    try {
+        // Save the file into MS document format
+        document->Save(_dataDir + outfilename, saveOptions);
+    }
+    catch (Exception ex) {
+        std::cerr << ex->get_Message();
+    }
 
-	std::clog << __func__ << ": Finish" << std::endl;
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -103,26 +103,26 @@ For quick conversion use [Save](https://apireference.aspose.com/pdf/cpp/class/as
 ```cpp
 void ConvertPDFtoWord_DOCX_Format()
 {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
-	// String for file name
-	String infilename("sample.pdf");
-	String outfilename("PDFToDOC.docx");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToDOC.docx");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	try {
-		// Save the file into MS document format
-		document->Save(_dataDir + outfilename, SaveFormat::DocX);
-	}
-	catch (Exception ex) {
-		std::cerr << ex->get_Message();
-	}
+    try {
+        // Save the file into MS document format
+        document->Save(_dataDir + outfilename, SaveFormat::DocX);
+    }
+    catch (Exception ex) {
+        std::cerr << ex->get_Message();
+    }
 
-	std::clog << __func__ << ": Finish" << std::endl;
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
@@ -133,34 +133,34 @@ Please take a look over the following code snippet which provides the capability
 ```cpp
 void ConvertPDFtoWord_Advanced_DOCX_Format()
 {
-	std::clog << __func__ << ": Start" << std::endl;
-	// String for path name
-	String _dataDir("C:\\Samples\\Conversion\\");
+    std::clog << __func__ << ": Start" << std::endl;
+    // String for path name
+    String _dataDir("C:\\Samples\\Conversion\\");
 
-	// String for file name
-	String infilename("sample.pdf");
-	String outfilename("PDFToDOC.docx");
+    // String for file name
+    String infilename("sample.pdf");
+    String outfilename("PDFToDOC.docx");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + infilename);
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + infilename);
 
-	auto saveOptions = MakeObject<DocSaveOptions>();
-	saveOptions->set_Format(DocSaveOptions::DocFormat::DocX);
+    auto saveOptions = MakeObject<DocSaveOptions>();
+    saveOptions->set_Format(DocSaveOptions::DocFormat::DocX);
 
-	// Set other DocSaveOptions params
-	// ...
+    // Set other DocSaveOptions params
+    // ...
 
-	// Save the file into MS document format
+    // Save the file into MS document format
 
-	try {
-		// Save the file into MS document format
-		document->Save(_dataDir + outfilename, saveOptions);
-	}
-	catch (Exception ex) {
-		std::cerr << ex->get_Message();
-	}
+    try {
+        // Save the file into MS document format
+        document->Save(_dataDir + outfilename, saveOptions);
+    }
+    catch (Exception ex) {
+        std::cerr << ex->get_Message();
+    }
 
-	std::clog << __func__ << ": Finish" << std::endl;
+    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 

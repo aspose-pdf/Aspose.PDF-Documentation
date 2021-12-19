@@ -1,13 +1,14 @@
 ---
-title: Set Privileges,Encrypt and Decrypt PDF File 
+title: Set Privileges, Encrypt and Decrypt PDF File using Java
 linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 20
 url: /java/set-privileges-encrypt-and-decrypt-pdf-file/
-description: Encrypt PDF File using Different Encryption Types and Algorithms. Also, decrypt PDF File using Owner Password.
-lastmod: "2021-06-05"
+keywords: encrypt pdf,password protect pdf,decrypt pdf,java
+description: Encrypt PDF File with Java using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.
+lastmod: "2021-12-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -20,7 +21,7 @@ To set privileges on a PDF file, create an object of the DocumentPrivilege class
   {
    // Load a source PDF file
    Document document = new Document(_dataDir + "input.pdf");
- 
+
    // Instantiate Document Privileges object
    // Apply restrictions on all privileges
    DocumentPrivilege documentPrivilege = DocumentPrivilege.getForbidAll();
@@ -47,7 +48,7 @@ The following code snippet shows you how to encrypt PDF files.
 public static void EncryptPDFFile() {
    // Load a source PDF file
    Document document = new Document(_dataDir + "input.pdf");
- 
+
    // Instantiate Document Privileges object
    // Apply restrictions on all privileges
    DocumentPrivilege documentPrivilege = DocumentPrivilege.getForbidAll();
@@ -73,7 +74,7 @@ public static void DecryptPDFFile() {
    Document document = new Document(_dataDir + "Decrypt.pdf", "password");
    // Decrypt PDF
    document.decrypt();
- 
+
    // Save updated PDF
    document.save(_dataDir + "Decrypt_out.pdf");
   }
@@ -90,7 +91,7 @@ public static void ChangePassword_PDF_File() {
    // Open document
    Document document = new Document(_dataDir+ "ChangePassword.pdf", "owner");
    // Change password
-   document.changePasswords("owner", "newuser", "newowner");        
+   document.changePasswords("owner", "newuser", "newowner");
    // Save updated PDF
    document.save(_dataDir + "ChangePassword_out.pdf");
   }

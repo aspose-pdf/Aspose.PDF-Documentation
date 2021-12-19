@@ -1,5 +1,6 @@
 ---
-title: Extract Text From Stamps using C#
+title: Extract Text From Stamps 
+linktitle: Extract Text From Stamps
 type: docs
 weight: 60
 url: /cpp/extract-text-from-stamps/
@@ -15,7 +16,7 @@ Aspose.PDF for C++ lets you extract text from stamp annotations. In order to ext
 1. Use the TextAbsorber's visit method to get the Text
 
 ```cpp
-void ExtractText()
+void Parsing::ExtractTextFromStamp()
 {
       std::clog << __func__ << ": Start" << std::endl;
       // String for path name
@@ -27,7 +28,7 @@ void ExtractText()
       auto document = MakeObject<Document>(_dataDir + infilename);
 
       auto item = document->get_Pages()->idx_get(1)->get_Annotations()->idx_get(1);
-      if (item->get_AnnotationType()==Annotations::AnnotationType::Stamp) {
+      if (item->get_AnnotationType() == Annotations::AnnotationType::Stamp) {
             auto annot = System::DynamicCast<Aspose::Pdf::Annotations::StampAnnotation>(item);
             auto ta = MakeObject<TextAbsorber>();
             auto ap = annot->get_Appearance()->idx_get(u"N");

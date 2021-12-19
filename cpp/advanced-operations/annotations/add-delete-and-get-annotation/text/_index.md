@@ -32,57 +32,57 @@ using namespace Aspose::Pdf::Text;
 
 void AddTextAnnotation()
 {
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load the PDF file
-	auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
 
-	auto page = document->get_Pages()->idx_get(1);
-	auto rect = MakeObject<Rectangle>(200, 750, 400, 790);
-	auto textAnnotation = MakeObject<Aspose::Pdf::Annotations::TextAnnotation>(page, rect);
+    auto page = document->get_Pages()->idx_get(1);
+    auto rect = MakeObject<Rectangle>(200, 750, 400, 790);
+    auto textAnnotation = MakeObject<Aspose::Pdf::Annotations::TextAnnotation>(page, rect);
 
-	textAnnotation->set_Title(u"Aspose User");
-	textAnnotation->set_Subject(u"Sample Subject");
-	textAnnotation->set_State(Aspose::Pdf::Annotations::AnnotationState::Accepted);
-	textAnnotation->set_Contents(u"Sample contents for the annotation");
-	textAnnotation->set_Open(true);
-	textAnnotation->set_Icon(Aspose::Pdf::Annotations::TextIcon::Circle);
+    textAnnotation->set_Title(u"Aspose User");
+    textAnnotation->set_Subject(u"Sample Subject");
+    textAnnotation->set_State(Aspose::Pdf::Annotations::AnnotationState::Accepted);
+    textAnnotation->set_Contents(u"Sample contents for the annotation");
+    textAnnotation->set_Open(true);
+    textAnnotation->set_Icon(Aspose::Pdf::Annotations::TextIcon::Circle);
 
-	auto border = MakeObject<Aspose::Pdf::Annotations::Border>(textAnnotation);
-	border->set_Width(5);
-	border->set_Dash(MakeObject<Aspose::Pdf::Annotations::Dash>(1, 1));
-	textAnnotation->set_Border(border);
-	textAnnotation->set_Rect(rect);
+    auto border = MakeObject<Aspose::Pdf::Annotations::Border>(textAnnotation);
+    border->set_Width(5);
+    border->set_Dash(MakeObject<Aspose::Pdf::Annotations::Dash>(1, 1));
+    textAnnotation->set_Border(border);
+    textAnnotation->set_Rect(rect);
 
-	page->get_Annotations()->Add(textAnnotation);
-	document->Save(_dataDir + u"sample_textannot.pdf");
+    page->get_Annotations()->Add(textAnnotation);
+    document->Save(_dataDir + u"sample_textannot.pdf");
 }
 ```
 
-## Get Text Annotation 
+## Get Text Annotation
 
 Please try using the following code snippet to Get Text Annotation in PDF document:
 
 ```cpp
 void GetTextAnnotation() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Load the PDF file
-	auto document = MakeObject<Document>(_dataDir + u"sample_textannot.pdf");
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample_textannot.pdf");
 
-	// Filter annotations using AnnotationSelector
-	auto page = document->get_Pages()->idx_get(1);
+    // Filter annotations using AnnotationSelector
+    auto page = document->get_Pages()->idx_get(1);
 
-	auto annotationSelector = MakeObject<Aspose::Pdf::Annotations::AnnotationSelector>(
-		MakeObject<Aspose::Pdf::Annotations::LineAnnotation>(page, Rectangle::get_Trivial(), Point::get_Trivial(), Point::get_Trivial()));
-	page->Accept(annotationSelector);
-	auto textAnnotations = annotationSelector->get_Selected();
+    auto annotationSelector = MakeObject<Aspose::Pdf::Annotations::AnnotationSelector>(
+        MakeObject<Aspose::Pdf::Annotations::LineAnnotation>(page, Rectangle::get_Trivial(), Point::get_Trivial(), Point::get_Trivial()));
+    page->Accept(annotationSelector);
+    auto textAnnotations = annotationSelector->get_Selected();
 
-	// print results
-	for (auto fa : textAnnotations) {
-		Console::WriteLine(fa->get_Rect());
-	}
+    // print results
+    for (auto fa : textAnnotations) {
+        Console::WriteLine(fa->get_Rect());
+    }
 }
 ```
 
@@ -93,22 +93,22 @@ The following code snippet shows how Delete Text Annotation from a PDF file.
 ```cpp
 void DeleteTextAnnotation() {
 
-	String _dataDir("C:\\Samples\\");
-	// Load the PDF file
-	auto document = MakeObject<Document>(_dataDir + u"sample_textannot.pdf");
+    String _dataDir("C:\\Samples\\");
+    // Load the PDF file
+    auto document = MakeObject<Document>(_dataDir + u"sample_textannot.pdf");
 
-	// Filter annotations using AnnotationSelector
-	auto page = document->get_Pages()->idx_get(1);
-	auto annotationSelector = MakeObject<Aspose::Pdf::Annotations::AnnotationSelector>(
-		MakeObject<Aspose::Pdf::Annotations::LineAnnotation>(page, Rectangle::get_Trivial(), Point::get_Trivial(), Point::get_Trivial()));
-	page->Accept(annotationSelector);
-	auto textAnnotations = annotationSelector->get_Selected();
+    // Filter annotations using AnnotationSelector
+    auto page = document->get_Pages()->idx_get(1);
+    auto annotationSelector = MakeObject<Aspose::Pdf::Annotations::AnnotationSelector>(
+        MakeObject<Aspose::Pdf::Annotations::LineAnnotation>(page, Rectangle::get_Trivial(), Point::get_Trivial(), Point::get_Trivial()));
+    page->Accept(annotationSelector);
+    auto textAnnotations = annotationSelector->get_Selected();
 
-	// delete annotations
-	for (auto fa : textAnnotations) {
-		page->get_Annotations()->Delete(fa);
-	}
-	document->Save(_dataDir + u"sample_textannot_del.pdf");
+    // delete annotations
+    for (auto fa : textAnnotations) {
+        page->get_Annotations()->Delete(fa);
+    }
+    document->Save(_dataDir + u"sample_textannot_del.pdf");
 }
 ```
 
@@ -133,7 +133,7 @@ void FreeTextAnnotations::AddFreeTextAnnotationDemo()
     auto defaultAppearance = MakeObject<DefaultAppearance>();
     defaultAppearance->set_FontName(u"Helvetica");
     defaultAppearance->set_FontSize(12);
-    defaultAppearance->set_TextColor(System::Drawing::Color::get_Blue());       
+    defaultAppearance->set_TextColor(System::Drawing::Color::get_Blue());
 
     auto freeTextAnnotation = MakeObject<FreeTextAnnotation>(page, new Rectangle(300.0, 770.0, 400.0, 790.0), defaultAppearance);
 
@@ -143,7 +143,7 @@ void FreeTextAnnotations::AddFreeTextAnnotationDemo()
 }
 ```
 
-## Get FreeText Annotation 
+## Get FreeText Annotation
 
 Please try using the following code snippet to Get Text Annotation in PDF document:
 
@@ -169,18 +169,44 @@ void FreeTextAnnotations::GetFreeTextAnnotation() {
 }
 ```
 
-## Delete FreeText Annotation 
+### Make Free Text Annotation Invisible
+
+Sometimes, it is necessary to create a watermark that isn’t visible in the document when viewing it but should be visible when the document is printed. Use annotation flags for this purpose. The following code snippet shows how.
+
+```cpp
+void FreeTextAnnotations::MakeFreeTextAnnotationInvisble() {
+
+    String _dataDir("C:\\Samples\\");
+
+    // Open document
+    auto doc = MakeObject<Document>(_dataDir + u"input.pdf");
+
+    auto annotation = new FreeTextAnnotation(doc->get_Pages()->idx_get(1),
+        MakeObject<Rectangle>(50, 600, 250, 650),
+        MakeObject<DefaultAppearance>(u"Helvetica", 16,
+            System::Drawing::Color::get_Red()));
+    annotation->set_Contents(u"ABCDEFG");
+    annotation->get_Characteristics()->set_Border(System::Drawing::Color::get_Red());
+    annotation->set_Flags (AnnotationFlags::Print | AnnotationFlags::NoView);
+    doc->get_Pages()->idx_get(1)->get_Annotations()->Add(annotation);
+
+    // Save output file
+    doc->Save(_dataDir + u"InvisibleAnnotation_out.pdf");
+}
+```
+
+## Delete FreeText Annotation
 
 The following code snippet shows how Delete FreeText Annotation from a PDF file.
 
 ```cpp
 void FreeTextAnnotations::DeleteFreeTextAnnotation() {
-    
+
     String _dataDir("C:\\Samples\\");
 
     // Load the PDF file
     auto document = MakeObject<Document>(_dataDir + u"sample_freetext.pdf");
-    
+
     // Filter annotations using AnnotationSelector
     auto page = document->get_Pages()->idx_get(1);
 

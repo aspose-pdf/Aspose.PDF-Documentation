@@ -4,7 +4,7 @@ linktitle: Generate PDF from XML
 type: docs
 weight: 10
 url: /net/generate-pdf-from-xml
-description: Aspose.PDF for .NET provides the opportunity to convert an XML file into PDF document requiring that the input XML file must follow the Aspose.PDF for .NET Schema.
+description: Aspose.PDF for .NET provides several ways to convert an XML file into a PDF document requiring that the input XML file.
 lastmod: "2021-06-05"
 aliases:
   - /net/generate-pdf-from-xml
@@ -13,8 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-Generating a PDF document from an XML document is not a trivial task because XML document can describes different content
-Aspose.PDF for .NET has several ways to genereate PDF based on XML document:
+Generating a PDF document from an XML document is not a trivial task because XML document can describes different content Aspose.PDF for .NET has several ways to genereate PDF based on XML document:
 
 - using XSLT transformation
 - using XSL-FO (XSL Formatting Objects) markup
@@ -532,7 +531,7 @@ If you use version earlier than 21.7, please use following techinque:
       var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
       var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
 
-      var options = new Aspose.Pdf.XslFoLoadOptions();     
+      var options = new Aspose.Pdf.XslFoLoadOptions();
       var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
       pdfDocument.Save(_dataDir + "data_xml.pdf");
   }
@@ -578,7 +577,7 @@ Let's define the page with default parameters. Our page will have an A4 page siz
   <Page>
     <TextFragment>
       <TextSegment>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio lorem, luctus in lorem vitae, accumsan semper lectus. Cras a auctor leo, et tincidunt lacus.</TextSegment>
-    </TextFragment>   
+    </TextFragment>
   </Page>
 </Document>
 ```
@@ -602,11 +601,11 @@ To define a new page size we should add a `PageInfo` element. In the following e
 <Document xmlns="Aspose.Pdf">
   <Page>
     <PageInfo IsLandscape="true" Height="595" Width="420">
-      <Margin Top="70.8661" Bottom="70.8661" Left="28.3465" Right="28.3465" />          
+      <Margin Top="70.8661" Bottom="70.8661" Left="28.3465" Right="28.3465" />
     </PageInfo>
     <TextFragment>
       <TextSegment>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio lorem, luctus in lorem vitae, accumsan semper lectus. Cras a auctor leo, et tincidunt lacus.</TextSegment>
-    </TextFragment>   
+    </TextFragment>
   </Page>
 </Document>
 ```
@@ -1071,7 +1070,7 @@ doc.Save(dataDir + "XMLToPDF_out.pdf");
 We can add other additionital elements to XML document: Image or Graph objects. The following snippet shows how to add those elements to the document
 
 ```xml
-<Graph Width="20" Height="20">   
+<Graph Width="20" Height="20">
   <Circle PosX="30" PosY="30" Radius="10">
     <GraphInfo Color="Red" FillColor="Blue"></GraphInfo>
   </Circle>

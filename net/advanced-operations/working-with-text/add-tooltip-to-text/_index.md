@@ -4,7 +4,7 @@ linktitle: PDF Tooltip
 type: docs
 weight: 20
 url: /net/pdf-tooltip/
-description: Aspose.PDF implements a function of hiding actions, with which you can show/hide an annotation when you enter/leave the mouse over an invisible button.
+description: Learn how to add tooltip to the text fragment in PDF using C# and Aspose.PDF
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

@@ -87,13 +87,13 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
             var page = doc.Pages.Add();
             // Create Graph instance
             var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
-            
+
             // Add graph object to paragraphs collection of page instance
             page.Paragraphs.Add(graph);
-            
+
             // Create Rectangle instance
             var rect = new Rectangle(100, 100, 200, 120);
-            
+
             // Specify fill color for Graph object
             rect.GraphInfo.FillColor = Color.Red;
 
@@ -128,7 +128,7 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
             // Add graph object to paragraphs collection of page instance
             page.Paragraphs.Add(graph);
             // Create Rectangle instance
-            var rect = new Rectangle(0, 0, 300, 300);            
+            var rect = new Rectangle(0, 0, 300, 300);
             // Specify fill color for Graph object
             var gradientColor = new Color();
             var gradientSettings = new GradientAxialShading(Color.Red, Color.Blue)
@@ -141,7 +141,7 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
 
             // Add rectangle object to shapes collection of Graph object
             graph.Shapes.Add(rect);
-           
+
             // Save PDF file
             doc.Save(_dataDir + "CreateFilledRectangle_out.pdf");
         }

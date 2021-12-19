@@ -1,5 +1,5 @@
 ---
-title: Convert PDF document
+title: Convert PDF document
 linktitle: Convert PDF document
 type: docs
 weight: 70

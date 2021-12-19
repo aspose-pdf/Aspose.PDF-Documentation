@@ -1,5 +1,5 @@
 ---
-title: Overview of Annotations supported by Aspose.PDF for C++
+title: Overview of Annotations 
 linktitle: Overview of Annotations
 type: docs
 weight: 10

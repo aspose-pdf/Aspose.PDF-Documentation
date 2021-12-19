@@ -82,7 +82,7 @@ void CreateSearchableDocument() {
 static String CallBackGetHocr(System::SharedPtr<System::Drawing::Image> img)
 {
     String tmpFile = System::IO::Path::GetTempFileNameSafe();
- 
+
     auto bmp = MakeObject<System::Drawing::Bitmap>(img);
 
     bmp->Save(tmpFile, System::Drawing::Imaging::ImageFormat::get_Bmp());
@@ -97,7 +97,7 @@ static String CallBackGetHocr(System::SharedPtr<System::Drawing::Image> img)
     psi->set_WindowStyle(System::Diagnostics::ProcessWindowStyle::Hidden);
     psi->set_WorkingDirectory(System::IO::Path::GetDirectoryName(tesseractProcessName));
 
-    auto p = MakeObject<System::Diagnostics::Process>(psi);		
+    auto p = MakeObject<System::Diagnostics::Process>(psi);
     p->Start();
     p->WaitForExit();
 
@@ -110,6 +110,6 @@ static String CallBackGetHocr(System::SharedPtr<System::Drawing::Image> img)
     if (System::IO::File::Exists(tmpFile + u".hocr"))
         System::IO::File::Delete(tmpFile + u".hocr");
 
-    return text;    
+    return text;
 }
 ```
