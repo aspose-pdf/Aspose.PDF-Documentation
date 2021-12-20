@@ -48,10 +48,10 @@ This page contains release notes information for Aspose.PDF for Java 21.12.
 - com.aspose.pdf.TextBuilder.appendText(java.util.List<TextFragment>)
 
 
-**Changed parameter's type**
+**Changed type of parameter**
 - com.aspose.pdf.RedactionAnnotation.setFontSize(int) -> com.aspose.pdf.RedactionAnnotation.setFontSize(double)
 
 
 **Added new class**
-com.aspose.pdf.Fixup
+- com.aspose.pdf.Fixup
 
