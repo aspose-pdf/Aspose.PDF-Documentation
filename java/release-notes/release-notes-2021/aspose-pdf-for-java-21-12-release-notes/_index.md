@@ -23,6 +23,7 @@ This page contains release notes information for Aspose.PDF for Java 21.12.
 |PDFJAVA-41092|PDF to ODS: Recognize background colors of table cells|Enhancement|
 |PDFJAVA-41073|PDF to XLSX: Preserve text color|Enhancement|
 |PDFJAVA-41091|PDF to ODS: Preserve text color|Enhancement|
+|PDFJAVA-40735|PDF to Docx: Recognize background colors of table cells in Enchanted Flow mode|Enhancement|
 |PDFJAVA-40946|HTML to PDF: MS Mincho gets replaced|Bug|
 |PDFJAVA-40900|WholeWordsHyphenation works as ShiftRestOfLine in case replacement value is long|Bug|
 |PDFJAVA-40898|Text overlapping issue after replacement|Bug|
