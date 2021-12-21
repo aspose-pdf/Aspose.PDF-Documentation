@@ -4,10 +4,9 @@ linktitle: Securing and signing in PDF
 type: docs
 weight: 150
 url: /net/securing-and-signing/
-description: This section describes the features of using a signature and securing your PDF document.
+description: This section describes the features of using a signature and securing your PDF document using C#
 aliases:
     - net/working-with-security-and-signatures/
-
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

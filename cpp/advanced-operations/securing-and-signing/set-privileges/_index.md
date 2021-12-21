@@ -1,13 +1,14 @@
 ---
-title: Set Privileges,Encrypt and Decrypt PDF File 
+title: Set Privileges, Encrypt and Decrypt PDF File using C++
 linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 20
 url: /cpp/set-privileges-encrypt-and-decrypt-pdf-file/
-description: Encrypt PDF File using Different Encryption Types and Algorithms. Also, decrypt PDF File using Owner Password.
-lastmod: "2021-12-15"
+keywords: encrypt pdf,password protect pdf,decrypt pdf,c++
+description: Encrypt PDF File with C++ using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.
+lastmod: "2021-12-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -19,56 +20,56 @@ The following code snippet shows you how to set the privileges of a PDF file.
 
 ```cpp
 void SecuringAndSigning::SetPrivilegesOnExistingPDF() {
-	// String for path name.
-	String _dataDir("C:\\Samples\\");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
-	// Load a source PDF file
-	auto document = MakeObject<Document>(_dataDir + u"input.pdf");
+    // Load a source PDF file
+    auto document = MakeObject<Document>(_dataDir + u"input.pdf");
 
-	// Instantiate Document Privileges object
+    // Instantiate Document Privileges object
 
-	// Apply restrictions on all privileges
-	auto documentPrivilege = DocumentPrivilege::get_ForbidAll();
-	// Only allow screen reading
-	documentPrivilege->set_AllowScreenReaders(true);
+    // Apply restrictions on all privileges
+    auto documentPrivilege = DocumentPrivilege::get_ForbidAll();
+    // Only allow screen reading
+    documentPrivilege->set_AllowScreenReaders(true);
 
-	// Encrypt the file with User and Owner password.
-	// Need to set the password, so that once the user views the file with user password,
+    // Encrypt the file with User and Owner password.
+    // Need to set the password, so that once the user views the file with user password,
 
-	// Only screen reading option is enabled
-	document->Encrypt(u"user", u"owner", documentPrivilege, CryptoAlgorithm::AESx128, false);
+    // Only screen reading option is enabled
+    document->Encrypt(u"user", u"owner", documentPrivilege, CryptoAlgorithm::AESx128, false);
 
-	// Save updated document
-	document->Save(_dataDir + u"SetPrivileges_out.pdf");
+    // Save updated document
+    document->Save(_dataDir + u"SetPrivileges_out.pdf");
 }
 ```
 
 ## Encrypt PDF File using Different Encryption Types and Algorithms
 
-For the encrypting PDF file use [Encrypt](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#af7adb89eb21ef5e78b2ef5ce04fabcd7) method of the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object to encrypt a PDF file. 
+For the encrypting PDF file use [Encrypt](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#af7adb89eb21ef5e78b2ef5ce04fabcd7) method of the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object to encrypt a PDF file.
 
 The following code snippet shows you how to encrypt PDF files.
 
 ```cpp
 void SecuringAndSigning::EncryptPDFFile() {
-	// String for path name.
-	String _dataDir("C:\\Samples\\");
+    // String for path name.
+    String _dataDir("C:\\Samples\\");
 
-	// Load a source PDF file
-	auto document = MakeObject<Document>(_dataDir + u"input.pdf");
+    // Load a source PDF file
+    auto document = MakeObject<Document>(_dataDir + u"input.pdf");
 
-	// Instantiate Document Privileges object
-	// Apply restrictions on all privileges
-	auto documentPrivilege = DocumentPrivilege::get_ForbidAll();
-	// Only allow screen reading
-	documentPrivilege->set_AllowScreenReaders(true);
-	// Encrypt the file with User and Owner password.
-	// Need to set the password, so that once the user views the file with user
-	// password,
-	// Only screen reading option is enabled
-	document->Encrypt(u"user", u"owner", documentPrivilege, CryptoAlgorithm::AESx128, false);
-	// Save updated document
-	document->Save(_dataDir + u"SetPrivileges_out.pdf");
+    // Instantiate Document Privileges object
+    // Apply restrictions on all privileges
+    auto documentPrivilege = DocumentPrivilege::get_ForbidAll();
+    // Only allow screen reading
+    documentPrivilege->set_AllowScreenReaders(true);
+    // Encrypt the file with User and Owner password.
+    // Need to set the password, so that once the user views the file with user
+    // password,
+    // Only screen reading option is enabled
+    document->Encrypt(u"user", u"owner", documentPrivilege, CryptoAlgorithm::AESx128, false);
+    // Save updated document
+    document->Save(_dataDir + u"SetPrivileges_out.pdf");
 }
 ```
 

@@ -4,7 +4,7 @@ linktitle: Release Notes - 2021
 type: docs
 weight: 9
 url: /net/release-notes-2021/
-lastmod: "2021-11-15"
+lastmod: "2021-12-15"
 description: This section list all-new features, enhancement, and fixed bugs by Aspose.PDF for .NET library in 2021.
 sitemap:
     changefreq: "weekly"
@@ -13,6 +13,7 @@ sitemap:
 
 Aspose PDF for .NET Release Notes list new features, enhancement, and fixed bugs that were made in 2021.
 
+- [Aspose.PDF for .NET 21.12](/pdf/net/aspose-pdf-for-net-21-12-release-notes/)
 - [Aspose.PDF for .NET 21.11](/pdf/net/aspose-pdf-for-net-21-11-release-notes/)
 - [Aspose.PDF for .NET 21.10](/pdf/net/aspose-pdf-for-net-21-10-release-notes/)
 - [Aspose.PDF for .NET 21.9](/pdf/net/aspose-pdf-for-net-21-9-release-notes/)

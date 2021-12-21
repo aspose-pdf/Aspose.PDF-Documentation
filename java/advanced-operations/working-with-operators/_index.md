@@ -181,15 +181,79 @@ The following code snippet shows how to remove graphics. Please note that if the
         Document pdfDocument  = new Document(_dataDir+ "RemoveGraphicsObjects.pdf");
         Page page = pdfDocument.getPages().get_Item(2);
         OperatorCollection oc = page.getContents();
-        
+
         // Used path-painting operators
         Operator[] operators = new Operator[] {
                 new Stroke(),
                 new ClosePathStroke(),
                 new Fill()
         };
-        
+
         oc.delete(operators);
-        pdfDocument.save(_dataDir+ "No_Graphics_out.pdf");                
+        pdfDocument.save(_dataDir+ "No_Graphics_out.pdf");
     }
+```
+
+
+## Changing Color Space of a PDF Document
+
+{{% alert color="primary" %}}
+
+Aspose.PDF for Java 9.0.0 supports changing a PDF document's color space. It is possible to change RGB color to CMYK and vice versa.
+
+{{% /alert %}}
+
+The following methods have been implemented in the [Operator](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Operator) class to allow you to change the color space. Use it to change some specific RGB/CMYK colors to the CMYK/RGB color space, keeping the remaining PDF document as it is.
+
+{{% alert color="primary" %}}
+**Public API Changes**
+The following methods are implemented:
+
+- com.aspose.pdf.Operator.SetRGBColorStroke.getCMYKColor(new double[3], new double[4])
+- com.aspose.pdf.Operator.SetRGBColor.getCMYKColor(new double[3], new double[4])
+- com.aspose.pdf.Operator.SetCMYKColorStroke.getRGBColor(new double[4], new double[3])
+- com.aspose.pdf.Operator.SetCMYKColor.getRGBColor(new double[4], new double[3])
+
+{{% /alert %}}
+
+The following code snippet demonstrates how to change color space using Aspose.PDF for Java.
+
+```java
+Document doc = new Document("input_color.pdf");
+OperatorCollection contents = doc.getPages().get_Item(1).getContents();
+System.out.println("Values of RGB color operators in the pdf document");
+for (int j = 1; j <= contents.size(); j++) {
+    Operator oper = contents.get_Item(j);
+    if (oper instanceof Operator.SetRGBColor || oper instanceof Operator.SetRGBColorStroke)
+        try {
+            // Converting RGB to CMYK color
+            System.out.println(oper.toString());
+
+            double[] rgbFloatArray = new double[] { Double.valueOf(oper.getParameters().get(0).toString()), Double.valueOf(oper.getParameters().get(1).toString()), Double.valueOf(oper.getParameters().get(2).toString()), };
+            double[] cmyk = new double[4];
+            if (oper instanceof Operator.SetRGBColor) {
+                ((Operator.SetRGBColor) oper).getCMYKColor(rgbFloatArray, cmyk);
+                contents.set_Item(j, new Operator.SetCMYKColor(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
+            } else if (oper instanceof Operator.SetRGBColorStroke) {
+                ((Operator.SetRGBColorStroke) oper).getCMYKColor(rgbFloatArray, cmyk);
+                contents.set_Item(j, new Operator.SetCMYKColorStroke(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
+            } else
+                throw new java.lang.Throwable("Unsupported command");
+
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
+}
+doc.save("input_colorout.pdf");
+
+// Testing the result
+System.out.println("Values of converted CMYK color operators in the result pdf document");
+doc = new Document("input_colorout.pdf");
+contents = doc.getPages().get_Item(1).getContents();
+for (int j = 1; j <= contents.size(); j++) {
+    Operator oper = contents.get_Item(j);
+    if (oper instanceof Operator.SetCMYKColor || oper instanceof Operator.SetCMYKColorStroke) {
+        System.out.println(oper.toString());
+    }
+}
 ```

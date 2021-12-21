@@ -1,10 +1,10 @@
 ---
-title: PDF Sticks Annotations using C++
-linktitle: Sticks Annotation
+title: PDF Sticky Annotations using C++
+linktitle: Sticky Annotation
 type: docs
 weight: 50
-url: /cpp/sticks-annotations/
-description: This topic about sticks annotations, as an example we shows the Watermark Annotation in the text. It uses to represent graphics on the page. Check code snippet to resolve this task.
+url: /cpp/Sticky-annotations/
+description: This topic about Sticky annotations, as an example we shows the Watermark Annotation in the text. It uses to represent graphics on the page. Check code snippet to resolve this task.
 lastmod: "2021-11-24"
 sitemap:
     changefreq: "weekly"
@@ -52,7 +52,7 @@ void ExampleWatermarkAnnotation::AddWaterMarkAnnotation()
     //Add Text to Annotation
     wa->SetTextAndState(MakeArray<String>({ u"Aspose.PDF", u"Watermark", u"Demo" }), ts);
 
-    //Save the Document        
+    //Save the Document
     document->Save(_dataDir + u"sample_watermark.pdf");
 }
 ```
@@ -63,11 +63,11 @@ Please try using the following code snippet to Get Watermark Annotation from PDF
 
 ```cpp
 void ExampleWatermarkAnnotation::GetWatermarkAnnotation() {
-    
+
     String _dataDir("C:\\Samples\\");
-    
+
     // Load the PDF file
-    auto document = MakeObject<Document>(_dataDir + u"sample_watermark.pdf");    
+    auto document = MakeObject<Document>(_dataDir + u"sample_watermark.pdf");
     auto page = document->get_Pages()->idx_get(1);
 
     // Filter annotations using AnnotationSelector

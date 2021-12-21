@@ -1,5 +1,5 @@
 ---
-title: Working with Images in PDF
+title: Working with Images in PDF using C++
 linktitle: Working with Images
 type: docs
 weight: 40
@@ -26,4 +26,3 @@ You are able to do the following:
 - [Replace Image in Existing PDF File](/pdf/cpp/replace-image-in-existing-pdf-file/) - check our code snippet, it shows you how to replace an image in a PDF file.
 - [Set Image Size](/pdf/cpp/set-image-size/) - C++ library allows you to set the size of an image.
 - [Set Default Font Name](/pdf/cpp/set-default-font-name/) - Setting Default Font Name for conversion process.
-

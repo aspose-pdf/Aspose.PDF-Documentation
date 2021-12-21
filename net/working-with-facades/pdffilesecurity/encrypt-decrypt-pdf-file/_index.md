@@ -1,11 +1,10 @@
 ---
-title: Encrypt, Decrypt and Set Privileges on PDF File
+title: Encrypt and decrypt using PdfFileSecurity
 type: docs
 weight: 10
 url: /net/encrypt-decrypt-on-pdf-file/
-description: This topic explains how to Encrypt, Decrypt and Set Privileges on PDF File using PdfFileSecurity Class Class.
-lastmod: "2021-01-20"
-draft: false
+description: This topic explains how to Encrypt, Decrypt and Set Privileges on PDF File using PdfFileSecurity Class.
+lastmod: "2021-12-17"
 ---
 
 ## Encrypt PDF File using Different Encryption Types and Algorithms
@@ -45,7 +44,7 @@ You can try to unlock document using Aspose.PDF and get the results online at th
 In order to decrypt a PDF file, you need to create [PdfFileSecurity](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and then call the [DecryptFile](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. You also need to pass the owner password to [DecryptFile](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. The following code snippet shows you how to decrypt PDF file.
 
 ```csharp
- public static void DecryptPDFFile()
+public static void DecryptPDFFile()
 {
     PdfFileInfo pdfFileInfo = new PdfFileInfo(_dataDir + "sample_encrypted.pdf");
     // Create PdfFileSecurity object

@@ -11,6 +11,7 @@ url: /net/php-via-com-interop/
 Configure your PHP to work with COM. See <http://www.php.net/manual/en/ref.com.php>. For more information, please check the article named [Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)
 
 {{% /alert %}}
+
 ## Hello World!
 
 {{% alert color="primary" %}}

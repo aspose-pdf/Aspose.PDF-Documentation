@@ -4,7 +4,7 @@ linktitle: Add Header and Footer to PDF
 type: docs
 weight: 70
 url: /cpp/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF allows you to add headers and footers to your PDF file using TextStamp class.
+description: Aspose.PDF for C++ allows you to add headers and footers to your PDF file using TextStamp class.
 lastmod: "2021-12-08"
 sitemap:
     changefreq: "weekly"

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /net/working-with-images/
 description: This section describes the features of working with images in a PDF file using C# library.
-aliases:    
+aliases:
     - /net/manipulate-images/
 lastmod: "2021-06-05"
 sitemap:
@@ -32,4 +32,4 @@ You are able to do the following:
 - [Set Image Size](/pdf/net/set-image-size/) - C# library allows you to set the size of an image.
 - [Set Default Font Name](/pdf/net/set-default-font-name/) - Setting Default Font Name for conversion process.
 - [Generate Thumbnail Images from PDF Documents](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - next article shows how to generate thumbnail images from PDF documents using first the Acrobat SDK and then Aspose.PDF.
-- Support for DICOM Images - Aspose.PDF for .NET supports special medical graphic standard of images. Aspose.PDF for .NET allows you to convert DICOM and SVG images. Please check [Convert DICOM to PDF](/pdf/net/convert-dicom-to-pdf/) section.
+- Support for DICOM Images - Aspose.PDF for .NET supports special medical graphic standard of images. Aspose.PDF for .NET allows you to convert DICOM and SVG images. Please check [Convert DICOM to PDF](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf) section.

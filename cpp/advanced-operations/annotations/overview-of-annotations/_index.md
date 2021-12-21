@@ -35,5 +35,5 @@ The following table indicates the Annotation types that Aspose.PDF for C++ suppo
 |[Movie](/pdf/cpp/multimedia-annotation/)|(PDF 1.2) Movie annotation|||
 |[Widget](/pdf/cpp/multimedia-annotation/)|(PDF 1.2) Widget annotation|||
 |[Screen](/pdf/cpp/multimedia-annotation/)|(PDF 1.5) Screen annotation|||
-|[Watermark](/pdf/cpp/sticks-annotations/)|(PDF 1.6) Watermark annotation|||
+|[Watermark](/pdf/cpp/sticky-annotations/)|(PDF 1.6) Watermark annotation|||
 |[Redact](/pdf/cpp/extra-annotations/)|(PDF 1.7) Redact annotation|||

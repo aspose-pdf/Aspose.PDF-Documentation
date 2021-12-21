@@ -4,10 +4,10 @@ linktitle: Create or Add Table
 type: docs
 weight: 10
 url: /java/add-table-in-existing-pdf-document/
-description: Aspose.PDF for Java makes it possible to carry out various manipulations with the tables contained in your pdf document. You may add and extract a table in the existing PDF document, render table on a new page and etc.
-lastmod: "2021-06-05"
+description: Learn how to create or add table to a PDF document, applying cell style, splitting table on pages and customize the rows and columns etc.
+lastmod: "2021-12-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -169,17 +169,17 @@ public static void MargingPadding() {
         tab1.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.1F));
         // Set table border using another customized BorderInfo object
         tab1.setBorder (new BorderInfo(BorderSide.All, 1F));
-        
+
         // Create MarginInfo object and set its left, bottom, right and top margins
         MarginInfo margin = new MarginInfo();
         margin.setTop (5f);
         margin.setLeft (5f);
         margin.setRight (5f);
         margin.setBottom (5f);
-        
+
         // Set the default cell padding to the MarginInfo object
         tab1.setDefaultCellPadding(margin);
-        
+
         // Create rows in the table and then cells in the rows
         Row row1 = tab1.getRows().add();
         row1.getCells().add("col1");
@@ -187,15 +187,15 @@ public static void MargingPadding() {
         row1.getCells().add();
 
         TextFragment mytext = new TextFragment("col3 with large text string");
-        
+
         row1.getCells().get_Item(2).getParagraphs().add(mytext);
         row1.getCells().get_Item(2).setWordWrapped(false);
-        
+
         Row row2 = tab1.getRows().add();
         row2.getCells().add("item1");
         row2.getCells().add("item2");
         row2.getCells().add("item3");
-        
+
         // Save the PDF
         doc.save(_dataDir + "MarginsOrPadding_out.pdf");
     }
@@ -342,7 +342,7 @@ The following code snippet shows the steps for creating a table instance and add
         // Set width for image instance
         img.setFixWidth (50);
         // Set height for image instance
-        img.setFixHeight (50);        
+        img.setFixHeight (50);
         // Create table instance
         com.aspose.pdf.Table table = new com.aspose.pdf.Table();
         // Set width for table cells
@@ -385,7 +385,7 @@ Please take into account that using of HTML Tags inside table element increases 
         table.setBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
         // set the border for table cells
         table.setDefaultCellBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
-        // create a loop to add 10 rows       
+        // create a loop to add 10 rows
         for (int row_count = 1; row_count < 10; row_count++) {
             Cell cell;
             // add row to table
@@ -393,10 +393,10 @@ Please take into account that using of HTML Tags inside table element increases 
             // add table cells
             cell = row.getCells().add();
             cell.getParagraphs().add(new HtmlFragment("Column <strong>(" + row_count + ", 1)</strong>"));
-            
+
             cell = row.getCells().add();
             cell.getParagraphs().add(new HtmlFragment("Column <span style='color:red'>(" + row_count + ", 2)</span>"));
-            
+
             cell = row.getCells().add();
             cell.getParagraphs().add(new HtmlFragment("Column <span style='text-decoration: underline'>(" + row_count + ", 3)</span>"));
         }
@@ -405,7 +405,7 @@ Please take into account that using of HTML Tags inside table element increases 
         // Save updated document containing table object
         doc.save(_dataDir + "AddHTMLObject_out.pdf");
     }
-    
+
 }
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Extract Images from PDF File
+title: Extract Images using PdfExtractor
 type: docs
 weight: 20
 url: /net/extract-images/

@@ -1,6 +1,6 @@
 ---
-title: Overview of supported Annotations 
-linktitle: Overview of Annotations 
+title: Overview of supported Annotations
+linktitle: Overview of Annotations
 type: docs
 weight: 10
 url: /java/overview-of-annotations/
@@ -15,8 +15,8 @@ The following table indicates the Annotation types that Aspose.PDF for Java supp
 
 |**Annotation type**|**Description**| | |
 | :- | :- | :- | :- |
-|[Text](/pdf/java/text-annotation/)|Text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/java/extra-annotations/)|Link annotations|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Text](/pdf/java/text-annotation/)|Text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/java/extra-annotations/)|Link annotations|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
 |[FreeText](/pdf/java/text-annotation/)|(PDF 1.3) Free text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Line](/pdf/java/figures-annotation/)|(PDF 1.3) Line annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Square](/pdf/java/figures-annotation/)|(PDF 1.3) Square annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
@@ -34,5 +34,5 @@ The following table indicates the Annotation types that Aspose.PDF for Java supp
 |[Movie](/pdf/java/multimedia-annotation/)|(PDF 1.2) Movie annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Widget](/pdf/java/multimedia-annotation/)|(PDF 1.2) Widget annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Screen](/pdf//java/multimedia-annotation/)|(PDF 1.5) Screen annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/java/sticks-annotations/)|(PDF 1.6) Watermark annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/java/sticky-annotations/)|(PDF 1.6) Watermark annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Redact](/pdf/java/extra-annotations/)|(PDF 1.7) Redact annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
