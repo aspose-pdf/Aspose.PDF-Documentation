@@ -1,5 +1,5 @@
 ---
-title: Add Image to PDF 
+title: Add Image to PDF using C++
 linktitle: Add Image
 type: docs
 weight: 10
@@ -18,7 +18,7 @@ To add an image to an existing PDF file:
 - Get the page you want to add an image to.
 - Add the image into the page’s Resources collection.
 - Use operators to place the image on the page:
-- Use the [GSave operator ](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save/) to save the current graphical state.
+- Use the [GSave operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save/) to save the current graphical state.
 - Use [ConcatenateMatrix operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.concatenate_matrix#a40ca09b1fa45560d57a1fd042d3fbe96) to specify where the image is to be placed.
 - Use the [Do operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.do/) to draw the image on the page.
 - Finally, use [GRestore operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_restore/) to save the updated graphical state.
@@ -32,55 +32,55 @@ using namespace Aspose::Pdf::Text;
 
 void WorkingWithImages::AddImageToExistingPDF()
 {
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	// Open document
-	auto document = MakeObject<Document>(_dataDir + u"AddImage.pdf");
+    // Open document
+    auto document = MakeObject<Document>(_dataDir + u"AddImage.pdf");
 
-	// Set coordinates
-	int lowerLeftX = 50;
-	int lowerLeftY = 750;
-	int upperRightX = 100;
-	int upperRightY = 800;
+    // Set coordinates
+    int lowerLeftX = 50;
+    int lowerLeftY = 750;
+    int upperRightX = 100;
+    int upperRightY = 800;
 
-	// Get the page you want to add the image to
-	auto page = document->get_Pages()->idx_get(1);
+    // Get the page you want to add the image to
+    auto page = document->get_Pages()->idx_get(1);
 
-	// Load image into stream
-	auto imageStream = System::IO::File::OpenRead(_dataDir + u"logo.png");
+    // Load image into stream
+    auto imageStream = System::IO::File::OpenRead(_dataDir + u"logo.png");
 
-	// Add an image to the Images collection of the page resources
-	page->get_Resources()->get_Images()->Add(imageStream);
+    // Add an image to the Images collection of the page resources
+    page->get_Resources()->get_Images()->Add(imageStream);
 
-	// Using the GSave operator: this operator saves current graphics state
-	page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
+    // Using the GSave operator: this operator saves current graphics state
+    page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
 
-	// Create Rectangle and Matrix objects
-	auto rectangle = MakeObject<Rectangle>(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+    // Create Rectangle and Matrix objects
+    auto rectangle = MakeObject<Rectangle>(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
 
-	auto matrix = MakeObject<Matrix>(
-		MakeArray<double>({
-			rectangle->get_URX() - rectangle->get_LLX(),
-			0,                  0,
-			rectangle->get_URY() - rectangle->get_LLY(),
-			rectangle->get_LLX(), rectangle->get_LLY() }));
+    auto matrix = MakeObject<Matrix>(
+        MakeArray<double>({
+            rectangle->get_URX() - rectangle->get_LLX(),
+            0,                  0,
+            rectangle->get_URY() - rectangle->get_LLY(),
+            rectangle->get_LLX(), rectangle->get_LLY() }));
 
-	// Using ConcatenateMatrix (concatenate matrix) operator:
-	// defines how image must be placed
-	page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(matrix));
-	auto ximage = page->get_Resources()->get_Images()->idx_get(page->get_Resources()->get_Images()->get_Count());
+    // Using ConcatenateMatrix (concatenate matrix) operator:
+    // defines how image must be placed
+    page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(matrix));
+    auto ximage = page->get_Resources()->get_Images()->idx_get(page->get_Resources()->get_Images()->get_Count());
 
-	// Using Do operator: this operator draws image
-	page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::Do>(ximage->get_Name()));
+    // Using Do operator: this operator draws image
+    page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::Do>(ximage->get_Name()));
 
-	// Using GRestore operator: this operator restores graphics state
-	page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
+    // Using GRestore operator: this operator restores graphics state
+    page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
 
-	// Save the new PDF
-	document->Save(_dataDir + u"updated_document.pdf");
+    // Save the new PDF
+    document->Save(_dataDir + u"updated_document.pdf");
 
-	// Close image stream
-	imageStream->Close();
+    // Close image stream
+    imageStream->Close();
 }
 ```
 
@@ -91,41 +91,41 @@ Sometimes we have a requirement to use same image multiple times in a PDF docume
 ```cpp
 void WorkingWithImages::AddReferenceOfaSingleImageMultipleTimes() {
 
-	String _dataDir("C:\\Samples\\");
-	auto imageRectangle = MakeObject<Rectangle>(0, 0, 30, 15);
+    String _dataDir("C:\\Samples\\");
+    auto imageRectangle = MakeObject<Rectangle>(0, 0, 30, 15);
 
-	auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
+    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
 
-	document->get_Pages()->Add();
-	document->get_Pages()->Add();
+    document->get_Pages()->Add();
+    document->get_Pages()->Add();
 
-	auto imageStream = System::IO::File::OpenRead(_dataDir + u"aspose-logo.png");
+    auto imageStream = System::IO::File::OpenRead(_dataDir + u"aspose-logo.png");
 
-	SharedPtr<Aspose::Pdf::XImage> image;
+    SharedPtr<Aspose::Pdf::XImage> image;
 
-	for (auto page : document->get_Pages()) {
-		auto annotation = MakeObject<Aspose::Pdf::Annotations::WatermarkAnnotation>(page, page->get_Rect());
-		auto form = annotation->get_Appearance()->idx_get(u"N");
-		form->set_BBox(page->get_Rect());
-		String name;
-		if (image != nullptr) {
-			name = form->get_Resources()->get_Images()->Add(imageStream);
-			image = form->get_Resources()->get_Images()->idx_get(name);
-		}
-		else {
-			form->get_Resources()->get_Images()->AddWithName(image);
-		}
-		form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
-		form->get_Contents()->Add(
-			MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(
-				MakeObject<Matrix>(imageRectangle->get_Width(), 0, 0, imageRectangle->get_Height(), 0, 0)));
+    for (auto page : document->get_Pages()) {
+        auto annotation = MakeObject<Aspose::Pdf::Annotations::WatermarkAnnotation>(page, page->get_Rect());
+        auto form = annotation->get_Appearance()->idx_get(u"N");
+        form->set_BBox(page->get_Rect());
+        String name;
+        if (image != nullptr) {
+            name = form->get_Resources()->get_Images()->Add(imageStream);
+            image = form->get_Resources()->get_Images()->idx_get(name);
+        }
+        else {
+            form->get_Resources()->get_Images()->AddWithName(image);
+        }
+        form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
+        form->get_Contents()->Add(
+            MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(
+                MakeObject<Matrix>(imageRectangle->get_Width(), 0, 0, imageRectangle->get_Height(), 0, 0)));
 
-		form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::Do>(name));
-		form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
-		page->get_Annotations()->Add(annotation, false);
-		imageRectangle = MakeObject<Rectangle>(0, 0, imageRectangle->get_Width() * 1.01, imageRectangle->get_Height() * 1.01);
-	}
-	document->Save(_dataDir + u"AddReferenceOfaSingleImageMultipleTimes_out.pdf");
+        form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::Do>(name));
+        form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
+        page->get_Annotations()->Add(annotation, false);
+        imageRectangle = MakeObject<Rectangle>(0, 0, imageRectangle->get_Width() * 1.01, imageRectangle->get_Height() * 1.01);
+    }
+    document->Save(_dataDir + u"AddReferenceOfaSingleImageMultipleTimes_out.pdf");
 }
 ```
 
@@ -136,24 +136,24 @@ If we do not know the dimensions of the image there is every chance of getting a
 ```cpp
 void WorkingWithImages::AddingImageAndPreserveAspectRatioIntoPDF() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	auto bitmap = System::Drawing::Image::FromFile(_dataDir + u"3410492.jpg");
+    auto bitmap = System::Drawing::Image::FromFile(_dataDir + u"3410492.jpg");
 
-	int width;
-	int height;
+    int width;
+    int height;
 
-	width = bitmap->get_Width();
-	height = bitmap->get_Height();
+    width = bitmap->get_Width();
+    height = bitmap->get_Height();
 
-	auto document = MakeObject<Document>();
-	auto page = document->get_Pages()->Add();
+    auto document = MakeObject<Document>();
+    auto page = document->get_Pages()->Add();
 
-	int scaledWidth = 400;
-	int scaledHeight = scaledWidth * height / width;
+    int scaledWidth = 400;
+    int scaledHeight = scaledWidth * height / width;
 
-	page->AddImage(_dataDir + u"3410492.jpg", new Rectangle(10, 10, scaledWidth, scaledHeight));
-	document->Save(_dataDir + u"sample_image.pdf");
+    page->AddImage(_dataDir + u"3410492.jpg", new Rectangle(10, 10, scaledWidth, scaledHeight));
+    document->Save(_dataDir + u"sample_image.pdf");
 }
 ```
 
@@ -161,41 +161,41 @@ void WorkingWithImages::AddingImageAndPreserveAspectRatioIntoPDF() {
 
 To reduce the size of the image, you need to compress it. Before you can determine the type of compression of an image, you need to know whether it is color or black and white.
 
-The type of compression applied to the image depends on the ColorSpace of the original image, i.e. if the image is in color (RGB) then use JPEG2000 compression, and if it is black and white then use JBIG2 / JBIG2000 compression. 
+The type of compression applied to the image depends on the ColorSpace of the original image, i.e. if the image is in color (RGB) then use JPEG2000 compression, and if it is black and white then use JBIG2 / JBIG2000 compression.
 
-A PDF file may contain Text, Image, Graph, Attachment, Annotation etc elements and if the source PDF file contains images, we can determine image Color space and apply appropriate compression for image to reduce PDF file size. 
+A PDF file may contain Text, Image, Graph, Attachment, Annotation etc elements and if the source PDF file contains images, we can determine image Color space and apply appropriate compression for image to reduce PDF file size.
 
 The following code snippet shows the steps to Identify if image inside PDF is Colored or Black & White.
 
 ```cpp
 void WorkingWithImages::CheckColors() {
 
-	String _dataDir("C:\\Samples\\");
-	auto document = MakeObject<Document>(_dataDir + u"test4.pdf");
-	try {
-		// iterate through all pages of PDF file
-		for (auto page : document->get_Pages()) {
-			// create Image Placement Absorber instance
-			auto abs = MakeObject<ImagePlacementAbsorber>();
-			page->Accept(abs);
+    String _dataDir("C:\\Samples\\");
+    auto document = MakeObject<Document>(_dataDir + u"test4.pdf");
+    try {
+        // iterate through all pages of PDF file
+        for (auto page : document->get_Pages()) {
+            // create Image Placement Absorber instance
+            auto abs = MakeObject<ImagePlacementAbsorber>();
+            page->Accept(abs);
 
-			for (auto ia : abs->get_ImagePlacements()) {
-				/* ColorType */
-				auto colorType = ia->get_Image()->GetColorType();
-				switch (colorType) {
-				case ColorType::Grayscale:
-					Console::WriteLine(u"Grayscale Image");
-					break;
-				case ColorType::Rgb:
-					Console::WriteLine(u"Colored Image");
-					break;
-				}
-			}
-		}
-	}
-	catch (Exception ex) {
-		Console::WriteLine(u"Error reading file = {0}", document->get_FileName());
-	}
+            for (auto ia : abs->get_ImagePlacements()) {
+                /* ColorType */
+                auto colorType = ia->get_Image()->GetColorType();
+                switch (colorType) {
+                case ColorType::Grayscale:
+                    Console::WriteLine(u"Grayscale Image");
+                    break;
+                case ColorType::Rgb:
+                    Console::WriteLine(u"Colored Image");
+                    break;
+                }
+            }
+        }
+    }
+    catch (Exception ex) {
+        Console::WriteLine(u"Error reading file = {0}", document->get_FileName());
+    }
 }
 ```
 
@@ -208,22 +208,22 @@ The following code snippet demonstrates how to convert all the document images i
 ```cpp
 void WorkingWithImages::ControlImageQuality() {
 
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	auto document = MakeObject<Document>(_dataDir + u"sample_with_images.pdf");
+    auto document = MakeObject<Document>(_dataDir + u"sample_with_images.pdf");
 
-	for (auto page : document->get_Pages())
-	{
-		int idx = 1;
-		for (auto image : page->get_Resources()->get_Images())
-		{
-			auto imageStream = MakeObject<System::IO::MemoryStream>();
-			image->Save(imageStream, System::Drawing::Imaging::ImageFormat::get_Jpeg());
-			page->get_Resources()->get_Images()->Replace(idx, imageStream, 80);
-			idx = idx + 1;
-		}
-	}
+    for (auto page : document->get_Pages())
+    {
+        int idx = 1;
+        for (auto image : page->get_Resources()->get_Images())
+        {
+            auto imageStream = MakeObject<System::IO::MemoryStream>();
+            image->Save(imageStream, System::Drawing::Imaging::ImageFormat::get_Jpeg());
+            page->get_Resources()->get_Images()->Replace(idx, imageStream, 80);
+            idx = idx + 1;
+        }
+    }
 
-	document->Save(_dataDir + u"sample_with_images_out.pdf");
+    document->Save(_dataDir + u"sample_with_images_out.pdf");
 }
 ```

@@ -1,5 +1,5 @@
 ---
-title: Replace Image in Existing PDF File
+title: Replace Image in Existing PDF File uisng C++
 linktitle: Replace Image
 type: docs
 weight: 70
@@ -23,12 +23,12 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
 void ReplaceImage() {
-	String _dataDir("C:\\Samples\\");
+    String _dataDir("C:\\Samples\\");
 
-	auto document = MakeObject<Document>(_dataDir + u"input.pdf");
-	// Replace a particular image
-	document->get_Pages()->idx_get(1)->get_Resources()->get_Images()->Replace(1, System::IO::File::OpenRead(u"lovely.jpg"));
-	// Save updated PDF file
-	document->Save(_dataDir + u"output.pdf");
+    auto document = MakeObject<Document>(_dataDir + u"input.pdf");
+    // Replace a particular image
+    document->get_Pages()->idx_get(1)->get_Resources()->get_Images()->Replace(1, System::IO::File::OpenRead(u"lovely.jpg"));
+    // Save updated PDF file
+    document->Save(_dataDir + u"output.pdf");
 }
 ```

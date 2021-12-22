@@ -1,5 +1,5 @@
 ---
-title: Working with Image Placement
+title: Working with Image Placement using C++
 linktitle: Working with Image Placement
 type: docs
 weight: 50
@@ -19,7 +19,7 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
 void WorkingWithImagePlacement() {
- 
+
     String _dataDir("C:\\Samples\\");
 
     // Load the source PDF document
@@ -39,19 +39,18 @@ void WorkingWithImagePlacement() {
         Console::WriteLine(u"image horizontal resolution:{0}", imagePlacement->get_Resolution()->get_X());
         Console::WriteLine(u"image vertical resolution:{0}", imagePlacement->get_Resolution()->get_Y());
 
-        // Retrieve image with visible dimensions        
+        // Retrieve image with visible dimensions
         auto imageStream = MakeObject<System::IO::MemoryStream>();
-        
+
         // Retrieve image from resources
         imagePlacement->get_Image()->Save(imageStream, System::Drawing::Imaging::ImageFormat::get_Png());
         auto resourceImage = System::DynamicCast< System::Drawing::Bitmap>(System::Drawing::Bitmap::FromStream(imageStream));
-           
+
         // Create bitmap with actual dimensions
         auto scaledImage = MakeObject<System::Drawing::Bitmap>(resourceImage, (int)imagePlacement->get_Rectangle()->get_Width(), (int)imagePlacement->get_Rectangle()->get_Height());
         // ...
-        
+
     }
 
 }
 ```
-

@@ -1,5 +1,5 @@
 ---
-title: Set Image Size
+title: Set Image Size using C++
 linktitle: Set Image Size
 type: docs
 weight: 80
@@ -15,25 +15,25 @@ The following code snippet demonstrates how to set the size of an image:
 ```cpp
 void WorkingWithImages::ExampleSetImageSize()
 {
-	String _dataDir("C:\\Samples\\");
-	// Instantiate Document object
-	auto document = MakeObject<Document>();
-	// add page to pages collection of PDF file
-	auto page = document->get_Pages()->Add();
-	// Create an image instance
-	auto img = MakeObject<Image>();
-	// Set Image Width and Height in Points
-	img->set_FixWidth(100);
-	img->set_FixHeight(100);
-	// Set image type as SVG
-	img->set_FileType(Aspose::Pdf::ImageFileType::Unknown);
-	// Path for source file
-	img->set_File(_dataDir + u"aspose-logo.jpg");
-	page->get_Paragraphs()->Add(img);
-	//Set page properties
-	page->get_PageInfo()->set_Width(800);
-	page->get_PageInfo()->set_Height(800);
-	// save resultant PDF file
-	document->Save(_dataDir + u"SetImageSize_out.pdf");
+    String _dataDir("C:\\Samples\\");
+    // Instantiate Document object
+    auto document = MakeObject<Document>();
+    // add page to pages collection of PDF file
+    auto page = document->get_Pages()->Add();
+    // Create an image instance
+    auto img = MakeObject<Image>();
+    // Set Image Width and Height in Points
+    img->set_FixWidth(100);
+    img->set_FixHeight(100);
+    // Set image type as SVG
+    img->set_FileType(Aspose::Pdf::ImageFileType::Unknown);
+    // Path for source file
+    img->set_File(_dataDir + u"aspose-logo.jpg");
+    page->get_Paragraphs()->Add(img);
+    //Set page properties
+    page->get_PageInfo()->set_Width(800);
+    page->get_PageInfo()->set_Height(800);
+    // save resultant PDF file
+    document->Save(_dataDir + u"SetImageSize_out.pdf");
 }
 ```

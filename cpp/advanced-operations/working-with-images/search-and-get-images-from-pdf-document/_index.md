@@ -1,5 +1,5 @@
 ---
-title: Search and Get Images from PDF Document
+title: Search and Get Images from PDF Document using C++
 linktitle: Search and Get Images
 type: docs
 weight: 60
@@ -23,7 +23,7 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
 void SearchAndGetImagesFromPDFDocument() {
-    
+
     String _dataDir("C:\\Samples\\");
 
     // Open document
