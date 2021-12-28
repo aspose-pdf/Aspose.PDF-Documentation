@@ -3,6 +3,7 @@ title: Aspose.PDF for C++ 21.1 Release Notes
 type: docs
 weight: 120
 url: /cpp/aspose-pdf-for-cpp-21-1-release-notes/
+description: This article decsribes changes and updates in version 21.1 of Aspose.PDF for C++ library
 lastmod: "2021-01-22"
 ---
 
