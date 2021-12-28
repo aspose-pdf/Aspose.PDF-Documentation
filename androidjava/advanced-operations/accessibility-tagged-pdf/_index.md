@@ -17,7 +17,7 @@ Aspose.PDF provides functionality to create PDF documents which are compatible w
 
 This section covers following topic:
 
-- [Create Tagged PDF](/pdf/android-via-java/create-tagged-pdf-documents/)
-- [Extract Tagged Content from Tagged PDFs](/pdf/android-via-java/extract-tagged-content-from-tagged-pdfs/)
-- [Setting Structure Elements Properties](/pdf/android-via-java/set-tagged-pdfs-element-properties/)
-- [Working with Table in Tagged PDFs](/pdf/android-via-java/working-with-table-in-tagged-pdfs/)
+- [Create Tagged PDF](/pdf/androidjava/create-tagged-pdf-documents/)
+- [Extract Tagged Content from Tagged PDFs](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)
+- [Setting Structure Elements Properties](/pdf/androidjava/set-tagged-pdfs-element-properties/)
+- [Working with Table in Tagged PDFs](/pdf/androidjava/working-with-table-in-tagged-pdfs/)
