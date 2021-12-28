@@ -18,7 +18,7 @@ lastmod: "2021-12-22"
 The following code snippet shows the process of converting SVG file into PDF format with Aspose.PDF for C++.
 
 ```cpp
-void ConvertSVGtoPDF() 
+void ConvertSVGtoPDF()
 {
     std::clog << "SVG to PDF convert: Start" << std::endl;
 
@@ -84,6 +84,3 @@ int main()
     doc->Save(u"e:\\sample.html", SaveFormat::Html);
 }
 ```
-
-
-
