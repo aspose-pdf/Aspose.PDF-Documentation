@@ -18,7 +18,7 @@ These are additional objects that you add to your file to expand the content of 
 We have combined the different kinds of annotation available for the Aspose.PDF for .NET  library into groups:
 
 - [PDF Text Annotation](/pdf/net/text-annotation/)
-- [PDF Hightlights Annotation](/pdf/net/hightlights-annotation/)
+- [PDF Highlights Annotation](/pdf/net/highlights-annotation/)
 - [PDF Figures Annotation](/pdf/net/figures-annotation/)
 - [Multimedia Annotation](/pdf/net/multimedia-annotation/)
 - [PDF sticky Annotations](/pdf/net/sticky-annotations/)
