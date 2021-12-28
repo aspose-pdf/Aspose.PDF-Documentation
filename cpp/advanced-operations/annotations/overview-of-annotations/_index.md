@@ -1,5 +1,5 @@
 ---
-title: Overview of Annotations 
+title: Overview of Annotations
 linktitle: Overview of Annotations
 type: docs
 weight: 10
@@ -23,10 +23,10 @@ The following table indicates the Annotation types that Aspose.PDF for C++ suppo
 |[Circle](/pdf/cpp/figures-annotation/)|(PDF 1.3) Circle annotation|||
 |[Polygon](/pdf/cpp/figures-annotation/)|(PDF 1.5) Polygon annotation|||
 |[PolyLine](/pdf/cpp/figures-annotation/)|(PDF 1.5) Polyline annotation|||
-|[Highlight](/pdf/cpp/hightlights-annotation/)|(PDF 1.3) Highlight annotation|||
-|[Underline](/pdf/cpp/hightlights-annotation/)|(PDF 1.3) Underline annotation|||
-|[Squiggly](/cpp/hightlights-annotation/)|(PDF 1.4) Squiggly-underline annotation|||
-|[StrikeOut](/pdf/cpp/hightlights-annotation/)|(PDF 1.3) Strikeout annotation|||
+|[Highlight](/pdf/cpp/highlights-annotation/)|(PDF 1.3) Highlight annotation|||
+|[Underline](/pdf/cpp/highlights-annotation/)|(PDF 1.3) Underline annotation|||
+|[Squiggly](/cpp/highlights-annotation/)|(PDF 1.4) Squiggly-underline annotation|||
+|[StrikeOut](/pdf/cpp/highlights-annotation/)|(PDF 1.3) Strikeout annotation|||
 |[Stamp](/pdf/cpp/stamping/)|(PDF 1.3) Rubber stamp annotation|||
 |[Caret](/pdf/cpp/extra-annotations/)|(PDF 1.5) Caret annotation|||
 |[Ink](/pdf/cpp/figures-annotation/)|(PDF 1.3) Ink annotation|||

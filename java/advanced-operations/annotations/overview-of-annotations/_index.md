@@ -23,10 +23,10 @@ The following table indicates the Annotation types that Aspose.PDF for Java supp
 |[Circle](/pdf/java/figures-annotation/)|(PDF 1.3) Circle annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Polygon](/pdf/java/figures-annotation/)|(PDF 1.5) Polygon annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[PolyLine](/pdf/java/figures-annotation/)|(PDF 1.5) Polyline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Highlight](/pdf/java/hightlights-annotation/)|(PDF 1.3) Highlight annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Underline](/pdf/java/hightlights-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Squiggly](/pdf/java/hightlights-annotation/)|(PDF 1.4) Squiggly-underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[StrikeOut](/pdf/java/hightlights-annotation/)|(PDF 1.3) Strikeout annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Highlight](/pdf/java/highlights-annotation/)|(PDF 1.3) Highlight annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Underline](/pdf/java/highlights-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Squiggly](/pdf/java/highlights-annotation/)|(PDF 1.4) Squiggly-underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[StrikeOut](/pdf/java/highlights-annotation/)|(PDF 1.3) Strikeout annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Stamp](/pdf/java/stamping/)|(PDF 1.3) Rubber stamp annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Caret](/pdf/java/extra-annotations/)|(PDF 1.5) Caret annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Ink](/pdf/java/ink-annotation/)|(PDF 1.3) Ink annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

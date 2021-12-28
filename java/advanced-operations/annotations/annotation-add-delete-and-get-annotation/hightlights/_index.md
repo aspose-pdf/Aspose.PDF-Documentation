@@ -1,9 +1,9 @@
 ---
-title: PDF Hightlights Annotation using Java
-linktitle: Hightlights Annotation
+title: PDF Highlights Annotation using Java
+linktitle: Highlights Annotation
 type: docs
 weight: 20
-url: /java/hightlights-annotation/
+url: /java/highlights-annotation/
 description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
 lastmod: "2021-11-24"
 sitemap:
