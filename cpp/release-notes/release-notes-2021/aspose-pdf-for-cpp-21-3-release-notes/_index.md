@@ -3,6 +3,7 @@ title: Aspose.PDF for C++ 21.3 Release Notes
 type: docs
 weight: 120
 url: /cpp/aspose-pdf-for-cpp-21-3-release-notes/
+description: This article decsribes changes and updates in version 21.3 of Aspose.PDF for C++ library
 lastmod: "2021-03-16"
 ---
 
@@ -45,7 +46,7 @@ Issues with wrong formatting while saving PDF documents to DOCX format have been
 
 ### Added APIs
 
-* Property Aspose.Pdf.FileSpecification.EncryptedPayload 
+* Property Aspose.Pdf.FileSpecification.EncryptedPayload
 * Field Aspose.Pdf.AFRelationship.EncryptedPayload
 * Type Aspose.Pdf.EncryptedPayload
 * Constructor Aspose.Pdf.EncryptedPayload.#ctor(Aspose.Pdf.FileSpecification)

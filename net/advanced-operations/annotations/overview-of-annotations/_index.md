@@ -1,5 +1,5 @@
 ---
-title: Overview of supported Annotations  
+title: Overview of supported Annotations
 linktitle: Overview of Annotations
 type: docs
 weight: 10
@@ -35,5 +35,5 @@ The following table indicates the Annotation types that Aspose.PDF for .NET supp
 |[Movie](/pdf/net/multimedia-annotation/)|(PDF 1.2) Movie annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) Widget annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Screen](/pdf/net/multimedia-annotation/)|(PDF 1.5) Screen annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/net/sticks-annotations/)|(PDF 1.6) Watermark annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/net/sticky-annotations/)|(PDF 1.6) Watermark annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Redact](/pdf/net/extra-annotations/)|(PDF 1.7) Redact annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

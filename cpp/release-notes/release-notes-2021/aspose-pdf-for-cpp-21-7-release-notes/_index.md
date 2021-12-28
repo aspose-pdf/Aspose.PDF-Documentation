@@ -3,6 +3,7 @@ title: Aspose.PDF for C++ 21.7 Release Notes
 type: docs
 weight: 120
 url: /cpp/aspose-pdf-for-cpp-21-7-release-notes/
+description: This article decsribes changes and updates in version 21.7 of Aspose.PDF for C++ library
 lastmod: "2021-07-16"
 ---
 
@@ -21,11 +22,11 @@ Names of the next public header files have been changed:
 
 | **Old Name** | **Current Name** |
 |---|---|
-|Aspose.PDF.Cpp/Color__.h|Aspose.PDF.Cpp/Color.h| 
+|Aspose.PDF.Cpp/Color__.h|Aspose.PDF.Cpp/Color.h|
 |Aspose.PDF.Cpp/DOM/PageMode_.h|Aspose.PDF.Cpp/DOM/PageMode.h|
 |Aspose.PDF.Cpp/Page_.h|Aspose.PDF.Cpp/Page.h|
-|Aspose.PDF.Cpp/Rectangle___.h|Aspose.PDF.Cpp/Rectangle.h| 
-|Aspose.PDF.Cpp/Text/Font__.h|Aspose.PDF.Cpp/Text/Font.h| 
+|Aspose.PDF.Cpp/Rectangle___.h|Aspose.PDF.Cpp/Rectangle.h|
+|Aspose.PDF.Cpp/Text/Font__.h|Aspose.PDF.Cpp/Text/Font.h|
 |Aspose.PDF.Cpp/LoadOptions_.h|Aspose.PDF.Cpp/LoadOptions.h|
 
 ## Public API and Backward Incompatible Changes

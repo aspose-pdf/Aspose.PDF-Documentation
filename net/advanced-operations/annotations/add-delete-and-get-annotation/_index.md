@@ -1,5 +1,5 @@
 ---
-title:  Add, Delete and Get Annotation 
+title:  Add, Delete and Get Annotation
 type: docs
 linktitle: Add, Delete and Get Annotation
 weight: 20
@@ -21,5 +21,5 @@ We have combined the different kinds of annotation available for the Aspose.PDF 
 - [PDF Hightlights Annotation](/pdf/net/hightlights-annotation/)
 - [PDF Figures Annotation](/pdf/net/figures-annotation/)
 - [Multimedia Annotation](/pdf/net/multimedia-annotation/)
-- [PDF Sticks Annotations](/pdf/net/sticks-annotations/)
+- [PDF sticky Annotations](/pdf/net/sticky-annotations/)
 - [Extra Annotations](/pdf/net/extra-annotations/)
