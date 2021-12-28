@@ -1,13 +1,13 @@
 ---
-title: PDF Hightlights Annotation using C++
-linktitle: Hightlights Annotation
+title: PDF Highlights Annotation using C++
+linktitle: Highlights Annotation
 type: docs
 weight: 20
-url: /cpp/hightlights-annotation/
+url: /cpp/highlights-annotation/
 description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
 lastmod: "2021-11-24"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
