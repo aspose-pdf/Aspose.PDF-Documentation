@@ -27,4 +27,4 @@ The following types of shapes are supported by the [Graph](https://apireference.
 
 The above details are also depicted in the figures below:
 
-![Figures in Graphs](grahh.png)
+![Figures in Graphs](graph.png)
