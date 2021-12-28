@@ -32,7 +32,7 @@ To create **Maven Project** by wizard for using [Aspose.PDF for Java API](http:/
 
 ![todo:image_alt_text](https://i.imgur.com/zURjIn1.png)
 
-1. This will retrieve the [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) latest [Maven Dependency](http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-pdf/) reference from [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) and configure it in **pom.xml**. If you have opted for **Also Download Code Examples,** downloading of the **Code Examples** will also begin from the [Aspose.PDF for Java API Examples Repository. ](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
+1. This will retrieve the [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) latest [Maven Dependency](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf/) reference from [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) and configure it in **pom.xml**. If you have opted for **Also Download Code Examples,** downloading of the **Code Examples** will also begin from the [Aspose.PDF for Java API Examples Repository.](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
 1. Following **Maven** Project will be created on your **Eclipse IDE** on completion of the wizard:
 
 ![todo:image_alt_text](https://i.imgur.com/xRfHrku.png)
@@ -41,6 +41,7 @@ To create **Maven Project** by wizard for using [Aspose.PDF for Java API](http:/
    If you have opted to download [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples), you can use **Aspose.PDF Code Example (wizard)** for importing needed **Code Examples** of [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API into your project.
 
 ### Aspose.PDF Code Example (wizard)
+
 **Aspose.PDF Code Example wizard** allows you to try out many samples provided for [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API.
 
 {{% alert color="primary" %}}
