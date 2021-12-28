@@ -8,8 +8,28 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2021-08-16"
+lastmod: "2021-12-24"
 ---
+
+## What's new in Aspose.PDF 21.11
+
+### Allow non-latin characters in password
+
+```csharp
+Aspose.Pdf.Facades.PdfFileSecurity fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity();
+fileSecurity.AllowExceptions = true;
+    try
+{
+ fileSecurity.BindPdf(exportDoc);
+ bool res = fileSecurity.EncryptFile("æøå", "æøå", Aspose.Pdf.Facades.DocumentPrivilege.Print, Aspose.Pdf.Facades.KeySize.x256, Aspose.Pdf.Facades.Algorithm.AES);
+ Console.WriteLine(res);
+ fileSecurity.Save(output("encrypted.pdf"));
+}
+    catch(Exception e)
+{
+    Console.WriteLn("Exception: " + e.Message);
+}
+```
 
 ## What's new in Aspose.PDF 21.10
 

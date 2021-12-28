@@ -23,5 +23,3 @@ We have combined the different kinds of annotation available for the Aspose.PDF 
 - [Multimedia Annotation](/pdf/java/multimedia-annotation/)
 - [PDF sticky Annotations](/pdf/java/sticky-annotations/)
 - [Extra Annotations](/pdf/java/extra-annotations/)
-
-

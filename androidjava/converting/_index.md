@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-Aspose.PDF for Java allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. 
+Aspose.PDF for Java allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app.
 
 ## Convert PDF to Microsoft Office File Formats
 
@@ -33,26 +33,26 @@ Converting  PDF/A to PDF formats and back it's possible with Java library.
 
 | Convert Image to PDF | Convert PDF to Image |
 | :---------------- | :------------------ |
-| [Convert JPG to PDF](/pdf/java/convert-jpg-to-pdf/) | [Convert PDF to JPG](/pdf/java/convert-pdf-to-jpg/) |
-| [Convert BMP to PDF](/pdf/java/convert-bmp-to-pdf/) | [Convert PDF to BMP](/pdf/java/convert-pdf-to-bmp/) |
-| [Convert EMF to PDF](/pdf/java/convert-emf-to-pdf/) | [Convert PDF to EMF](/pdf/java/convert-pdf-to-emf/) |
-| [Convert TIFF to PDF](/pdf/java/convert-tiff-to-pdf/) | [Convert PDF to TIFF](/pdf/java/convert-pdf-to-tiff/) |
-| [Convert PNG to PDF](/pdf/java/convert-png-to-pdf/) | [Convert PDF to PNG](/pdf/java/convert-pdf-to-png/) |
-| [Convert CGM to PDF](/pdf/java/convert-cgm-to-pdf/) | |
-| [Convert DICOM to PDF](/pdf/java/convert-dicom-to-pdf/) | |
-| [Convert SVG to PDF](/pdf/java/convert-svg-to-pdf/) | [Convert PDF to SVG](/pdf/java/convert-pdf-to-svg/) |
+| [Convert JPG to PDF](/pdf/androidjava/convert-jpg-to-pdf/) | [Convert PDF to JPG](/pdf/androidjava/convert-pdf-to-jpg/) |
+| [Convert BMP to PDF](/pdf/androidjava/convert-bmp-to-pdf/) | [Convert PDF to BMP](/pdf/androidjava/convert-pdf-to-bmp/) |
+| [Convert EMF to PDF](/pdf/androidjava/convert-emf-to-pdf/) | [Convert PDF to EMF](/pdf/androidjava/convert-pdf-to-emf/) |
+| [Convert TIFF to PDF](/pdf/androidjava/convert-tiff-to-pdf/) | [Convert PDF to TIFF](/pdf/androidjava/convert-pdf-to-tiff/) |
+| [Convert PNG to PDF](/pdf/androidjava/convert-png-to-pdf/) | [Convert PDF to PNG](/pdf/androidjava/convert-pdf-to-png/) |
+| [Convert CGM to PDF](/pdf/androidjava/convert-cgm-to-pdf/) | |
+| [Convert DICOM to PDF](/pdf/androidjava/convert-dicom-to-pdf/) | |
+| [Convert SVG to PDF](/pdf/androidjava/convert-svg-to-pdf/) | [Convert PDF to SVG](/pdf/androidjava/convert-pdf-to-svg/) |
 
 ## Convert various file formats to PDF and vice versa
 
 | Convert File to PDF | Convert PDF to File |
 | :---------------- | :------------------ |
-| [Convert Text to PDF](/pdf/java/convert-text-to-pdf/) | [Convert PDF to Text](/pdf/java/convert-pdf-to-txt/) |
-| [Convert EPUB to PDF](/pdf/java/convert-epub-to-pdf/) | [Convert PDF to EPUB](/pdf/java/convert-pdf-to-epub/)
-| [Convert PCL to PDF](/pdf/java/convert-pcl-to-pdf/) | |
-| [Convert PostScript to PDF](/pdf/java/convert-postscript-to-pdf/)
-| [Convert XML to PDF](/pdf/java/convert-xml-to-pdf/) | |
-| [Convert HTML to PDF](/pdf/java/convert-html-to-pdf/) | [Convert PDF to HTML](/pdf/java/convert-pdf-to-html/) |
-| [Convert MHTML to PDF](/pdf/java/convert-mhtml-to-pdf/)
-| [Convert LaTeX to PDF](/pdf/java/convert-latex-tex-to-pdf/) | [Convert PDF to LaTeX/TeX](/pdf/java/convert-pdf-to-latex-tex/) |
-| [Convert Markdown to PDF](/pdf/java/convert-markdown-to-pdf/) | |
-| [Convert XPS to PDF](/pdf/java/convert-xps-to-pdf/) | [Convert PDF to XPS](/pdf/java/convert-pdf-to-xps/) |
+| [Convert Text to PDF](/pdf/androidjava/convert-text-to-pdf/) | [Convert PDF to Text](/pdf/androidjava/convert-pdf-to-txt/) |
+| [Convert EPUB to PDF](/pdf/androidjava/convert-epub-to-pdf/) | [Convert PDF to EPUB](/pdf/androidjava/convert-pdf-to-epub/)
+| [Convert PCL to PDF](/pdf/androidjava/convert-pcl-to-pdf/) | |
+| [Convert PostScript to PDF](/pdf/androidjava/convert-postscript-to-pdf/)
+| [Convert XML to PDF](/pdf/androidjava/convert-xml-to-pdf/) | |
+| [Convert HTML to PDF](/pdf/androidjava/convert-html-to-pdf/) | [Convert PDF to HTML](/pdf/androidjava/convert-pdf-to-html/) |
+| [Convert MHTML to PDF](/pdf/androidjava/convert-mhtml-to-pdf/)
+| [Convert LaTeX to PDF](/pdf/androidjava/convert-latex-tex-to-pdf/) | [Convert PDF to LaTeX/TeX](/pdf/androidjava/convert-pdf-to-latex-tex/) |
+| [Convert Markdown to PDF](/pdf/androidjava/convert-markdown-to-pdf/) | |
+| [Convert XPS to PDF](/pdf/androidjava/convert-xps-to-pdf/) | [Convert PDF to XPS](/pdf/androidjava/convert-pdf-to-xps/) |
