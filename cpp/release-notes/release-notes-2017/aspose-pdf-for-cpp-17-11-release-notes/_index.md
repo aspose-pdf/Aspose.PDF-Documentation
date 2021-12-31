@@ -6,7 +6,7 @@ url: /cpp/aspose-pdf-for-cpp-17-11-release-notes/
 lastmod: "2021-06-05"
 ---
 
-### **Improvements and Changes**
+## **Improvements and Changes**
 
 |**Summary**|**Category**|
 | :- | :- |

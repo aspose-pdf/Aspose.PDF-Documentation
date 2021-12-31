@@ -11,7 +11,7 @@ lastmod: "2021-06-05"
 This page contains release notes for [Aspose.PDF for C++ 18.3](https://www.nuget.org/packages/Aspose.PDF.Cpp/18.3.0)
 
 {{% /alert %}}
-### **Improvements and Changes**
+## **Improvements and Changes**
 1. In this release new pointer system SmartPtr is introduced instead of SharedPtr and WeakPtr. SharedPtr is alias for SmartPtr. WeakPtr is inherited from SmartPtr.
 1. Fixed asposecpplib to improve performance.
 ### **Public API Changes in Aspose.PDF for C++ 18.3**

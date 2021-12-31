@@ -11,7 +11,7 @@ lastmod: "2021-06-05"
 This page contains release notes for [Aspose.PDF for C++ 18.12](https://www.nuget.org/packages/Aspose.PDF.CPP/18.12.0)
 
 {{% /alert %}}
-### **Improvements and Changes**
+## **Improvements and Changes**
 New version of Aspose.PDF for C++ has codebase of Aspose.PDF for .Net 18.12
 ### **API Reference changes in Aspose.PDF for C++ 18.12**
 New Aspose.Pdf.Engine.Presentation.Graphics namespace is introduced.
