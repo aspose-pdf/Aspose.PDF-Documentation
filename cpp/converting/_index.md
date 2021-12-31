@@ -2,7 +2,7 @@
 title: Convert PDF document
 linktitle: Convert PDF document
 type: docs
-weight: 70
+weight: 60
 url: /cpp/converting/
 lastmod: "2021-11-19"
 description: This section contains a description of all possible options for converting PDF documents on C++ using Aspose.PDF library.
