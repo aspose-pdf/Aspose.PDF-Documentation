@@ -21,6 +21,7 @@ The information in this topic applies to scenarios where you want to use [Aspose
 - C++
 
 {{% /alert %}}
+
 ## Working with COM Interop
 
 Aspose.PDF for .NET executes under the control of the .NET Framework and this is called managed code. Code written in all of the above languages runs outside the .NET Framework and it is called unmanaged code. Interaction between unmanaged code and Aspose.PDF occurs via the .NET facility called COM Interop.
@@ -33,12 +34,12 @@ Aspose.PDF objects are .NET objects, but when used via COM Interop, they appear 
 - COM client or simply client application can know about COM class contents something or be totally unaware about its methods and properties. Therefore client application can discover COM class structure on compiling/building or only during execution. Process of "discovery" is known as binding and so we have **early binding** and **late binding**.
 - in brief COM class is like black box and to work with it type library is needed, this binary file has description of COM class methods, properties and any high level language which supports working with COM objects often has syntax expression for adding type library, for instance this is [**#import**](http://msdn.microsoft.com/en-us/library/8etzzkb6.aspx) in C++.
 - type library is used for early binding.
-- a COM object can expose its methods and properties in two ways: by means of a **dispatch interface** (dispinterface) and in its **vtable** (virtual function table).
+- a COM object can expose its methods and properties in two ways: by means of a **dispatch interface** (dispinterface) and in its **vtable** (virtual function table).
 - within the **dispinterface**, each method and property is identified by a unique member; this member is the function's dispatch identifier(or **DispID**).
-- **vtable** is just a set of pointers to functions that the COM class interface supports.
+- **vtable** is just a set of pointers to functions that the COM class interface supports.
 - an object that exposes its methods through both interfaces supports a **dual interface**.
-- there are advantages to both types of binding. Early binding provides you with increased performance and compile-time syntax checking. Late binding is most advantageous when you are writing clients that you intend to be ***compatible with future versions*** of your COM class. With late binding, information from the type library is not "hard-wired" into your client, so you can have greater confidence that your client can work with future versions of COM class without code changes.
-- late binding mechanism has a big advantage: if the creator of the COM DLL decides to release a new version, with a different function interface layout, any code calling those methods won't crash unless the methods are no longer available; even if the **vtable** is different late binding manages to discover the new DISPIDs and call appropriate methods.
+- there are advantages to both types of binding. Early binding provides you with increased performance and compile-time syntax checking. Late binding is most advantageous when you are writing clients that you intend to be ***compatible with future versions*** of your COM class. With late binding, information from the type library is not "hard-wired" into your client, so you can have greater confidence that your client can work with future versions of COM class without code changes.
+- late binding mechanism has a big advantage: if the creator of the COM DLL decides to release a new version, with a different function interface layout, any code calling those methods won't crash unless the methods are no longer available; even if the **vtable** is different late binding manages to discover the new DISPIDs and call appropriate methods.
 {{% /alert %}}
 
 Here are the topics that you will eventually need to master:
@@ -80,9 +81,11 @@ From the **Start** menu, select **Programs**, followed by **Microsoft Visual Stu
 It runs a command prompt with all the necessary environment variables set.
 
 {{% /alert %}}
+
 ### ProgIDs
 
 ProgID stands for “programmatic identifier”. It is the name of a COM class that used to create an object. ProgIDs consist of the library name "Aspose.PDF" and the class name.
+
 ### Type Library
 
 {{% alert color="primary" %}}

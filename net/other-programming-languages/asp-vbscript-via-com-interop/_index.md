@@ -5,7 +5,7 @@ weight: 30
 url: /net/asp-vbscript-via-com-interop/
 ---
 
-## **Prerequisites**
+## Prerequisites
 
 {{% alert color="primary" %}}
 
@@ -21,13 +21,10 @@ This is a simple ASP application that shows you how to create a PDF file with sa
 
 {{% /alert %}}
 
-**VBScript**
-
 ```vb
+
 <%@ LANGUAGE = VBScript %>
-
 <% Option Explicit %>
-
 <html>
     <head>
         <title> using Aspose.PDF for .NET in classical ASP sample</title>
