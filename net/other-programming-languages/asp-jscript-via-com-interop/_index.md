@@ -4,7 +4,6 @@ type: docs
 weight: 40
 url: /net/asp-jscript-via-com-interop/
 ---
-
 {{% alert color="primary" %}}
 
 This is a simple ASP application that shows you how to add simple text string to PDF file using [Aspose.PDF for .NET](/pdf/net/) and JScript via COM Interop.
@@ -16,7 +15,6 @@ Example:
 {{% alert color="primary" %}}
 
 ```javascript
-
 <%@ LANGUAGE = JScript %>
 <html>
     <head>
@@ -24,35 +22,25 @@ Example:
     </head>
     <body>
         <h3>creation of sample PDF document while using Aspose.PDF for .NET with classical ASP and JScript</h3>
-
 <%
 // set license
 var lic = Server.CreateObject("Aspose.PDF.License");
-lic.SetLicense("D:\\ASPOSE\\Licences\\Aspose.Total licenses\\Aspose.Total.lic");
+lic.SetLicense("D:\\ASPOSE\\Aspose.Total.lic");
 
 // Instantiate Pdf instance by calling its empty constructor
-var pdf = Server.CreateObject("Aspose.PDF.Generator.Pdf");
+var pdf = Server.CreateObject("Aspose.PDF.Document");
 
-// Create a new section in the Pdf object
-var pdfsection = Server.CreateObject("Aspose.PDF.Generator.Section");
+// Create a new Page in the PDF object
+var pdfpage = pdf.Pages.Add();
 
-// Add section to Pdf object
-pdf.Sections.Add(pdfsection);
+// Create Text Fragment object
+var sampleText = Server.CreateObject("Aspose.Pdf.Text.TextFragment");
 
-// Create Text object
-var SampleText = Server.CreateObject("Aspose.PDF.Generator.Text");
-
-// Add Text Segment to text object
-var seg1 = Server.CreateObject("Aspose.PDF.Generator.Segment");
-
-// Assign some content to the segment
-seg1.Content = "HelloWorld using ASP and JScript";
-
-// Add segment (with red text color) to the paragraph
-SampleText.Segments.Add(seg1);
+// Assign some content to the Fragment
+sampleText.Text =  = "HelloWorld using ASP and JScript";
 
 // Add Text paragraph to paragraphs collection of a section
-pdfsection.Paragraphs.Add(SampleText);
+pdfpage.Paragraphs.Add(SampleText);
 
 // Save the PDF document
 pdf.Save("d:\\pdftest\\HelloWorldinASP.pdf");
