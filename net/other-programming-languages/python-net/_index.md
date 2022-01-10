@@ -4,7 +4,11 @@ linktitle: Integration with Python
 type: docs
 weight: 100
 url: /pdf/net/python-net/
-description:In this tutorial, you'll explore the different ways of creating and modifying PDF files in Python.
+description: In this tutorial, you will explore the different ways of creating and modifying PDF files in Python.
+lastmod: "2022-01-10"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.5
 ---
 
 This article describes short examples how to create PDF using integration Aspose.PDF for .NET with Python.
