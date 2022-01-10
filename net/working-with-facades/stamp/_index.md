@@ -12,4 +12,4 @@ sitemap:
 ---
 
 - [Rotating stamp about the center point](/pdf/net/rotating-stamp-about-the-center-point/)
-- [Adding multi line watermark to existing PDF](/net/adding-multi-line-watermark-to-existing-pdf/)
+- [Adding multi line watermark to existing PDF](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)

@@ -18,7 +18,7 @@ These are additional objects that you add to your file to expand the content of 
 We have combined the different kinds of annotation available for the Aspose.PDF for Java  library into groups:
 
 - [PDF Text Annotation](/pdf/java/text-annotation/)
-- [PDF Hightlights Annotation](/pdf/java/hightlights-annotation/)
+- [PDF Highlights Annotation](/pdf/java/highlights-annotation/)
 - [PDF Figures Annotation](/pdf/java/figures-annotation/)
 - [Multimedia Annotation](/pdf/java/multimedia-annotation/)
 - [PDF sticky Annotations](/pdf/java/sticky-annotations/)

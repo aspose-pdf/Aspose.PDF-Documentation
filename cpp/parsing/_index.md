@@ -2,7 +2,7 @@
 title: Parse PDF documents C/C++
 linktitle: Parse PDF documents
 type: docs
-weight: 80
+weight: 50
 url: /cpp/parsing/
 description: Do you want to extract data from PDF documents? Discover various PDF data extraction methods with Aspose.PDF for C++.
 lastmod: "2021-12-13"

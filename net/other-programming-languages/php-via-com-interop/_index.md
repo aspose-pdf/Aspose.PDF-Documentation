@@ -12,7 +12,7 @@ Configure your PHP to work with COM. See <http://www.php.net/manual/en/ref.com.p
 
 {{% /alert %}}
 
-## Hello World!
+## Hello World! Example
 
 {{% alert color="primary" %}}
 This is a simple application that shows you how to create a new PDF file and add text to the PDF file using [Aspose.PDF for .NET](/pdf/net/) in PHP via COM Interop.

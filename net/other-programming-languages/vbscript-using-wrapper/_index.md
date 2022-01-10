@@ -7,9 +7,9 @@ url: /net/vbscript-using-wrapper/
 
 {{% alert color="primary" %}}
 
-##### **Prerequisites Please register Aspose.PDF for .NET with COM Interop, kindly check the article named**
-[Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+## Prerequisites Please register Aspose.PDF for .NET with COM Interop, kindly check the article named
 
+[Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 
@@ -18,7 +18,6 @@ url: /net/vbscript-using-wrapper/
 We will use [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assembly/) to retrieve text from PDF document.
 
 {{% /alert %}}
-
 
 ```cs
 // Example (to be announced)

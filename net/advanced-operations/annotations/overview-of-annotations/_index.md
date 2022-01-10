@@ -15,18 +15,18 @@ The following table indicates the Annotation types that Aspose.PDF for .NET supp
 
 |**Annotation type**|**Description**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Text](/pdf/net/text-annotation/)|Text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}} | 
-|[Link](/pdf/net/extra-annotations/)|Link annotations|{{< emoticons/tick >}}|{{< emoticons/tick >}} | 
+|[Text](/pdf/net/text-annotation/)|Text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/net/extra-annotations/)|Link annotations|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
 |[FreeText](/pdf/net/text-annotation/)|(PDF 1.3) Free text annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Line](/pdf/net/figures-annotation/)|(PDF 1.3) Line annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Square](/pdf/net/figures-annotation/)|(PDF 1.3) Square annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Circle](/pdf/net/figures-annotation/)|(PDF 1.3) Circle annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Polygon](/pdf/net/figures-annotation/)|(PDF 1.5) Polygon annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[PolyLine](/pdf/net/figures-annotation/)|(PDF 1.5) Polyline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Highlight](/pdf/net/hightlights-annotation/)|(PDF 1.3) Highlight annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Underline](/pdf/net/hightlights-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}| 
-|[Squiggly](/pdf/net/hightlights-annotation/)|(PDF 1.4) Squiggly-underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[StrikeOut](/pdf/net/hightlights-annotation/)|(PDF 1.3) Strikeout annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Highlight](/pdf/net/highlights-annotation/)|(PDF 1.3) Highlight annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Underline](/pdf/net/highlights-annotation/)|(PDF 1.3) Underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Squiggly](/pdf/net/highlights-annotation/)|(PDF 1.4) Squiggly-underline annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[StrikeOut](/pdf/net/highlights-annotation/)|(PDF 1.3) Strikeout annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Stamp](/pdf/net/stamping/)|(PDF 1.3) Rubber stamp annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Caret](/pdf/net/extra-annotations/)|(PDF 1.5) Caret annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Ink](/pdf/net/figures-annotation/)|(PDF 1.3) Ink annotation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

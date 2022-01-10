@@ -18,8 +18,8 @@ These are additional objects that you add to your file to expand the content of 
 We have combined the different kinds of annotation available for the Aspose.PDF for C++ library into groups:
 
 - [PDF Text Annotation](/pdf/cpp/text-annotation/)
-- [PDF Hightlights Annotation](/pdf/cpp/hightlights-annotation/)
+- [PDF Highlights Annotation](/pdf/cpp/highlights-annotation/)
 - [PDF Figures Annotation](/pdf/cpp/figures-annotation/)
 - [Multimedia Annotation](/pdf/cpp/multimedia-annotation/)
 - [Extra Annotations](/pdf/cpp/extra-annotations/)
-- [sticky Annotation](/pdf/cpp/sticky-annotations/)
+- [Sticky Annotation](/pdf/cpp/sticky-annotations/)

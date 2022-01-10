@@ -18,7 +18,7 @@ Aspose.PDF for C++ 19.10 depends on CodePorting.Native.Cs2Cpp.19.10 (former Aspo
 - NuGet package depends on corresponding version CodePorting.Native.Cs2Cpp.
 - Downloadable zip package includes CodePorting.Native.Cs2Cpp_vc14x64_19.10.zip
 - "aspose.pdf.cpp.targets" and "CodePorting.Native.Cs2Cpp.API.targets" files are provided for automatic configuration by usage of Aspose.PDF for C++ and AsposeCpp libraries.
-### **API Reference changes in Aspose.PDF for C++ 19.10**
+## **API Reference changes in Aspose.PDF for C++ 19.10**
 Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
 #### **Added APIs**  
 -  PropertyAspose.Pdf.MhtLoadOptions.PageInfo                                                                

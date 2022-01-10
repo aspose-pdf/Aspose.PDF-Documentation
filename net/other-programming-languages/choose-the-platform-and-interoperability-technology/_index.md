@@ -22,7 +22,7 @@ Please note that it is also possible to use [Aspose.PDF for .NET](/pdf/net/) fro
 
 This section contains articles and examples that show how to use Aspose.PDF in different programming languages and covers the following topics:
 
-- How to determine “either to use [Aspose.PDF for .NET](/pdf/net/) or [Aspose.PDF for Java](pdf/java/)“ ?
+- How to determine “either to use [Aspose.PDF for .NET](/pdf/net/) or [Aspose.PDF for Java](/pdf/java/)“ ?
 - How to create objects, call methods, access properties of the Aspose.PDF objects.
 
 If you follow the principles outlined in this section, you will be able to employ many of the features of Aspose.PDF in your projects.

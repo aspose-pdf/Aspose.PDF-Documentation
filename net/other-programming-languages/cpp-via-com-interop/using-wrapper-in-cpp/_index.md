@@ -24,7 +24,7 @@ We will use a [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assem
 ```cpp
 
 #include "stdafx.h"
-#import "C:\Temp\PdfText.tlb"
+#import "C:\\Temp\\PdfText.tlb"
 using namespace System;
 
 String^ wrapper(String^ file)

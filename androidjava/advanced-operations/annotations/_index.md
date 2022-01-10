@@ -1,14 +1,14 @@
 ---
-title: PDF Annotations 
+title: Using Annotations in Android app
 linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /androidjava/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library. Learn how to draw, open, or add an annotation with Android via Java.
-lastmod: "2021-06-05"    
+lastmod: "2021-12-28"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
 ---
 
 If you're wondering how to annotate PDF, you are in the right place.
@@ -21,7 +21,7 @@ Annotation is an important part of PDF file. Using Aspose.PDF you can add a new 
 
 You are able to do the following:
 
-- [Overview of Annotations](/pdf/android-via-java/overview-of-annotations/) - learn which types of annotations are defined by the PDF specification, and what Aspose.PDF supports.
-- [Add, Delete and Get Annotation](/pdf/android-via-java/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
-- [Redact certain page region with RedactionAnnotation](/pdf/android-via-java/redact-certain-page-region-with-redactionannotation/) - how to redact certain page regions using RedactionAnnotations.
-- [Import and export annotation with XFDF format](/pdf/android-via-java/import-export-xfdf/) - Aspose.PDF library provided methods to import and export annotations data to XFDF files.
+- [Overview of Annotations](/pdf/androidjava/overview-of-annotations/) - learn which types of annotations are defined by the PDF specification, and what Aspose.PDF supports.
+- [Add, Delete and Get Annotation](/pdf/androidjava/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
+- [Redact certain page region with RedactionAnnotation](/pdf/androidjava/redact-certain-page-region-with-redactionannotation/) - how to redact certain page regions using RedactionAnnotations.
+- [Import and export annotation with XFDF format](/pdf/androidjava/import-export-xfdf/) - Aspose.PDF library provided methods to import and export annotations data to XFDF files.

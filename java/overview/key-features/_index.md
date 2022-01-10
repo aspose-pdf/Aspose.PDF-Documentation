@@ -96,11 +96,11 @@ Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - PDF to HTML conversion.
 - PDF to XPS conversion.
 - PDF to Tex conversion.
-- PDF to PDF-A. 
-- PDF to PDF/A_1b. 
-- PDF to PDF/A_3b. 
-- PDF to PDF/A_3a. 
-- PDF to PDF/A_2a. 
+- PDF to PDF-A.
+- PDF to PDF/A_1b.
+- PDF to PDF/A_3b.
+- PDF to PDF/A_3a.
+- PDF to PDF/A_2a.
 - PDF to PDF/A_3U.
 - Create PDF/A-3 and attach XML file.
 
@@ -110,8 +110,8 @@ Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Add child bookmarks.
 - Delete bookmarks.
 - Get bookmarks.
-- Update bookmarks 
-- Expanded bookmarks 
+- Update bookmarks
+- Expanded bookmarks
 - Export and import bookmarks.
 
 ## Annotations
@@ -121,7 +121,7 @@ Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Delete annotations.
 - Modify annotations.
 - Import and export annotations.
-- 
+
 ## Forms
 
 - Add fields.
@@ -176,7 +176,7 @@ Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Print PDF to XPS printer.
 - Print PDF to XPS file.
 - Hide print dialog while printing PDF.
-- 
+
 ## Miscellaneous
 
 - Get build version information.

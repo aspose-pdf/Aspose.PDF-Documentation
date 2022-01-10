@@ -16,3 +16,4 @@ url: /net/use-aspose-pdf-for-net-in-other-programming-languages/
 - [CPP via COM Interop](/pdf/net/cpp-via-com-interop/)
 - [Creating a Wrapper Assembly](/pdf/net/creating-a-wrapper-assembly/)
 - [VBScript using wrapper](/pdf/net/vbscript-using-wrapper/)
+- [Using Aspose.PDF for .NET with Python](/pdf/net/python-net/)

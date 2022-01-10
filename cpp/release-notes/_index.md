@@ -1,7 +1,7 @@
 ---
 title: Release Notes
 type: docs
-weight: 30
+weight: 80
 url: /cpp/release-notes/
 lastmod: "2021-01-22"
 ---
