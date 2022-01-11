@@ -1,5 +1,5 @@
 ---
-title: PDF Highlights Annotation using Java
+title: PDF Highlights Annotation 
 linktitle: Highlights Annotation
 type: docs
 weight: 20

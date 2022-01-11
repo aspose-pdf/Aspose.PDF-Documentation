@@ -1,5 +1,5 @@
 ---
-title: Extract Text from PDF using Java
+title: Extract Text from PDF 
 linktitle: Extract Text 
 type: docs
 weight: 10

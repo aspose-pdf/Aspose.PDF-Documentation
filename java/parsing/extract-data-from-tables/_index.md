@@ -1,5 +1,5 @@
 ---
-title: Extract Table Data from PDF using Java
+title: Extract Table Data from PDF 
 linktitle: Extract Table Data
 type: docs
 weight: 40

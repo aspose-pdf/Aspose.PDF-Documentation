@@ -1,5 +1,5 @@
 ---
-title: Add PDF Page Stamp to PDF using Java
+title: Add PDF Page Stamp to PDF 
 linktitle: Page stamps in PDF File
 type: docs
 weight: 30

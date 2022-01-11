@@ -1,5 +1,5 @@
 ---
-title: Rotate PDF Pages programmatically Java
+title: Rotate PDF Pages programmatically 
 linktitle: Rotate PDF Pages
 type: docs
 weight: 60

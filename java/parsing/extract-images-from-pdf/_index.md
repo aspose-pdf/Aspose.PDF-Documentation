@@ -1,5 +1,5 @@
 ---
-title: Extract Images from PDF using Java
+title: Extract Images from PDF 
 linktitle: Extract Images
 type: docs
 weight: 20

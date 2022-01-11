@@ -1,5 +1,5 @@
 ---
-title: Convert various Images formats to PDF using Java
+title: Convert various Images formats to PDF 
 linktitle: Convert Images to PDF
 type: docs
 weight: 60

@@ -1,5 +1,5 @@
 ---
-title: Rotate Text Inside PDF using Java
+title: Rotate Text Inside PDF 
 linktitle: Rotate Text Inside PDF
 type: docs
 weight: 50

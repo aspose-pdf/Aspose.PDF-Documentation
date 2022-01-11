@@ -1,6 +1,6 @@
 ---
-title: Extract Data Form
-linktitle: Extract Data Form
+title: Extract Data AcroForms
+linktitle: Extract Data AcroForms
 type: docs
 weight: 30
 url: /java/extract-form/

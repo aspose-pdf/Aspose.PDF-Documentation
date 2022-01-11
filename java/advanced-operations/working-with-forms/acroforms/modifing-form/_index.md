@@ -1,6 +1,6 @@
 ---
-title: Modifying Form
-linktitle: Modifying Form
+title: Modifying AcroForms
+linktitle: Modifying AcroForms
 type: docs
 weight: 40
 url: /java/modifing-form/

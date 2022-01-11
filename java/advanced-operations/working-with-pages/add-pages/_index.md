@@ -1,5 +1,5 @@
 ---
-title: Add Pages in PDF with Java
+title: Add Pages in PDF 
 linktitle: Add Pages
 type: docs
 weight: 10
