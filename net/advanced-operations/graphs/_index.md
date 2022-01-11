@@ -29,5 +29,5 @@ The following types of shapes are supported by the [Graph](https://apireference.
 
 The above details are also depicted in the figures below:
 
-![Figures in Graphs](OZ8BReG.png)
+![Figures in Graphs](graphs.png)
 
