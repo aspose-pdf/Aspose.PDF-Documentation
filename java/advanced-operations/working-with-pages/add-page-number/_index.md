@@ -1,5 +1,5 @@
 ---
-title: Add Page Number to PDF with Java
+title: Add Page Number to PDF 
 linktitle: Add Page Number
 type: docs
 weight: 100

@@ -1,5 +1,5 @@
 ---
-title: Working with AcroForms in PDF using Aspose.PDF for Java
+title: Working with AcroForms in PDF 
 linktitle: AcroForms
 type: docs
 weight: 10

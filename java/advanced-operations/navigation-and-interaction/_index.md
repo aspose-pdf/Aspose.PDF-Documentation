@@ -1,5 +1,5 @@
 ---
-title: Navigation and Interaction in PDF using Aspose.PDF for Java
+title: Navigation and Interaction 
 linktitle: Navigation and interaction
 type: docs
 weight: 90

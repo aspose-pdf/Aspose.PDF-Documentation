@@ -1,5 +1,5 @@
 ---
-title: Convert PDF file to other formats using Java
+title: Convert PDF file to other formats 
 linktitle: Convert PDF to other formats 
 type: docs
 weight: 90

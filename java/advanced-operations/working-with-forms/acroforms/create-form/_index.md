@@ -1,6 +1,6 @@
 ---
-title: Create Forms
-linktitle: Create Forms
+title: Create AcroForms
+linktitle: Create AcroForms
 type: docs
 weight: 10
 url: /java/create-forms/

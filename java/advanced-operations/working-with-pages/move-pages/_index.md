@@ -1,5 +1,5 @@
 ---
-title: Move PDF Pages with Java
+title: Move PDF Pages 
 linktitle: Move PDF Pages
 type: docs
 weight: 20

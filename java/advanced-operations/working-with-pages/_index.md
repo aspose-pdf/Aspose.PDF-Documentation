@@ -1,5 +1,5 @@
 ---
-title: Working with PDF Pages in Java
+title: Working with PDF Pages 
 linktitle: Working with Pages
 type: docs
 weight: 20

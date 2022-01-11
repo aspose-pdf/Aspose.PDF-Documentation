@@ -1,5 +1,5 @@
 ---
-title: Formatting PDF Document using Aspose.PDF for Java
+title: Formatting PDF Document 
 linktitle: Formatting PDF Document
 type: docs
 weight: 20

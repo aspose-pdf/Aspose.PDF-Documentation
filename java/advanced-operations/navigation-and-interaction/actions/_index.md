@@ -1,5 +1,5 @@
 ---
-title: Working with Actions in PDF using Aspose.PDF for Java
+title: Working with Actions 
 linktitle: Actions
 type: docs
 weight: 20

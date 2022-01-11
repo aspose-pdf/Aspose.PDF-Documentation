@@ -1,5 +1,5 @@
 ---
-title: Add background to PDF with Java
+title: Add background to PDF 
 linktitle: Add backgrounds
 type: docs
 weight: 110

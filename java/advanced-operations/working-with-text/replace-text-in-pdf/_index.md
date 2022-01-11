@@ -1,5 +1,5 @@
 ---
-title: Replace Text in PDF using Java
+title: Replace Text in PDF 
 linktitle: Replace Text in PDF
 type: docs
 weight: 40

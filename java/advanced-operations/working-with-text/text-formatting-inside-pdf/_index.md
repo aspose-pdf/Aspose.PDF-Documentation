@@ -1,5 +1,5 @@
 ---
-title: Text Formatting inside PDF using Java
+title: Text Formatting inside PDF 
 linktitle: Text Formatting inside PDF
 type: docs
 weight: 30

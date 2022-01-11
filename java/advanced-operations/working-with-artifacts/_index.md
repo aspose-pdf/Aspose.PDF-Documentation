@@ -1,5 +1,5 @@
 ---
-title: Working with Artifacts with Java
+title: Working with Artifacts 
 linktitle: Working with Artifacts
 type: docs
 weight: 110

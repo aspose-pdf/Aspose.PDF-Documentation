@@ -1,5 +1,5 @@
 ---
-title: Stamping with Aspose.PDF for Java
+title: Stamping 
 linktitle: Stamping
 type: docs
 weight: 120

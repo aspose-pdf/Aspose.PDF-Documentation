@@ -1,5 +1,5 @@
 ---
-title: Parsing PDF documents using Java
+title: Parsing PDF documents 
 linktitle: Parsing PDF documents
 type: docs
 weight: 60

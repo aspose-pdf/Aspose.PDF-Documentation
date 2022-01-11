@@ -1,5 +1,5 @@
 ---
-title: Working with Attachments in PDF using Java
+title: Working with Attachments in PDF 
 linktitle: Working with Attachments
 type: docs
 weight: 130

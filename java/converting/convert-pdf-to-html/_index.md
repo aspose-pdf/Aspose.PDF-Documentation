@@ -1,5 +1,5 @@
 ---
-title: Convert PDF file to HTML format using Java
+title: Convert PDF file to HTML format 
 linktitle: Convert PDF file to HTML format
 type: docs
 weight: 50

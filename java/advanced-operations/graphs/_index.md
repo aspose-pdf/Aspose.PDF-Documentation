@@ -1,5 +1,5 @@
 ---
-title: Working with Graphs in Aspose.PDF for Java
+title: Working with Graphs 
 linktitle: Working with Graphs
 type: docs
 weight: 70

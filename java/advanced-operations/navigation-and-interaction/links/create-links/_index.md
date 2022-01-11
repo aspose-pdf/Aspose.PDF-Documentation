@@ -1,5 +1,5 @@
 ---
-title: Create Links in PDF file with Java
+title: Create Links in PDF file
 linktitle: Create Links
 type: docs
 weight: 10
