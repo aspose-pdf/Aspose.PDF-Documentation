@@ -47,3 +47,34 @@ See the following method with specifying a password:
     fileSecurity.Save(_dataDir + "sample_privileges.pdf");
 }
 ```
+
+## Remove Extended Rights Feature from the PDF
+
+PDF documents support the extended rights feature to enable end-user to fill data into form fields by using Adobe Acrobat Reader and then save a copy of the filled form. However, it ensures that PDF file is not modified and if any modification to the structure of the PDF is made, the extended rights feature is lost. When viewing such a document, an error message is displayed, stating that extended rights are removed because the document was modified. Recently, we received a requirement to remove extended rights from PDF document.
+
+To remove the extended rights from a PDF file, a new method named RemoveUsageRights() has been added to the PdfFileSignature class. Another method named ContainsUsageRights() is added to determine if source PDF contains extended rights.
+
+{{% alert color="primary" %}}
+Starting Aspose.PDF for .NET 9.5.0, names of following methods are updated. Please note that the previous methods are still in the API but they have been marked as obsolete and will be removed. Therefore, its recommended to try using the updated methods.
+
+- The IsContainSignature(.) method was renamed ContainsSignature(..).
+- The IsCoversWholeDocument(..) method was renamed CoversWholeDocument(..).
+{{% /alert %}}
+
+The following code shows ho to remove usage rights from the document:
+
+```csharp
+// The path to the documents directory.
+string dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
+string input = dataDir + "DigitallySign.pdf";
+using (PdfFileSignature pdfSign = new PdfFileSignature())
+{
+    pdfSign.BindPdf(input);
+    if (pdfSign.ContainsUsageRights())
+    {
+        pdfSign.RemoveUsageRights();
+    }
+
+    pdfSign.Document.Save(dataDir + "RemoveRights_out.pdf");
+}
+```

@@ -1,6 +1,6 @@
 ---
 title: Create AcroForms using using C++
-linktitle: Create Forms
+linktitle: Create AcroForms
 type: docs
 weight: 10
 url: /cpp/create-form/

@@ -62,6 +62,11 @@ document.Save(dataDir);
 
 ## Decrypt PDF File using Owner Password
 
+Increasingly, users are exchanging PDF files with encryption to prevent unauthorized access to documents, such as printing/copying/sharing / extracting information about the contents of a PDF file. Today, it is the best choice for encrypting a PDF file because it maintains the confidentiality and integrity of the content.
+In this regard, there is a need to access the encrypted PDF file, since such access can only be obtained by an authorized user. Also, people are looking for various solutions to decrypt PDF files over the Internet.
+
+It is better to solve this problem once by using the Aspose.PDF library.
+
 In order to decrypt the PDF file, you first need to create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object and open the PDF using the owner’s password. After that, you need to call [Decrypt](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/decrypt) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. Finally, save the updated PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. The following code snippet shows you how to decrypt the PDF file.
 
 ```csharp
