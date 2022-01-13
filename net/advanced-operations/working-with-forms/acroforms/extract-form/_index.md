@@ -1,6 +1,6 @@
 ---
-title: Extract Form
-linktitle: Extract Form
+title: Extract AcroForm
+linktitle: Extract AcroForm
 type: docs
 weight: 30
 url: /net/extract-form/

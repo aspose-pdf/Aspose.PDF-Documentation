@@ -1,6 +1,6 @@
 ---
-title: Modifing Form
-linktitle: Modifing Form
+title: Modifing AcroForm
+linktitle: Modifing AcroForm
 type: docs
 weight: 40
 url: /net/modifing-form/

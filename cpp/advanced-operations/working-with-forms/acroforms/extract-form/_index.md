@@ -1,6 +1,6 @@
 ---
 title: Extract AcroForm Data using C++
-linktitle: Extract Data Form
+linktitle: Extract Data AcroForm
 type: docs
 weight: 30
 url: /cpp/extract-form/
