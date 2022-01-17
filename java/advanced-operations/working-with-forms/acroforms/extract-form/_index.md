@@ -68,7 +68,8 @@ The following code snippet shows how to get the values of all the fields in a PD
 
 ## Get Form Fields from a Specific Region of PDF File
 
-Sometimes, you might know where in a document a form field is, but not have it’s name. For example, if all you have to go from is a schematic of a printed form. With Aspose.PDF for .NET, this is not a problem. You can find out which fields are in a given region of a PDF file. To get form fields from a specific region of a PDF file:
+In some cases, it is required to obtain data not from the entire form, but, for example, only from the upper left quarter of the printed sheet.
+With Aspose.PDF for Java, this is not a problem. You can specify a region to filter out fields that are outside the given region of the PDF file. To get form fields from a specific area of a PDF file:
 
 1. Open the PDF file using the Document object.
 1. Get the form from the document's Forms collection.
