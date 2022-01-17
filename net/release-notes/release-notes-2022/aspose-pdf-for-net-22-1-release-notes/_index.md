@@ -21,8 +21,8 @@ This page contains release notes information for Aspose.PDF for .NET 22.1.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFNET-50525|PDF2.0 Add saving document support|New Feature|
-|PDFNET-50523|PDF2.0 Add document loading support|New Feature|
+|PDFNET-50523|Add PDF 2.0 document loading support|New Feature|
+|PDFNET-50525|Add PDF 2.0 document saving support|New Feature|
 |PDFNET-50845|Aspose.Pdf.Page.Layers getter throws NullReferenceException when I attempt to access it|Enhancement|
 |PDFNET-49025|Copy annotations to new PDF without using XFDF feature|Enhancement|
 |PDFNET-44215|Add Popup property for RedactionAnnotation|Enhancement|
