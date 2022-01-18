@@ -1,6 +1,6 @@
 ---
-title: Import and Export Annotations to XFDF format 
-linktitle: Import and Export Annotations to XFDF format
+title: Import and Export Annotations to XFDF
+linktitle: Import and Export Annotations to XFDF 
 type: docs
 weight: 40
 url: /net/import-export-xfdf/

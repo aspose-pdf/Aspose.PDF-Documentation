@@ -4,7 +4,7 @@ linktitle: Open PDF
 type: docs
 weight: 20
 url: /net/open-pdf-document/
-description: Learn how to open a PDF file in C# Aspose.PDF for .NET PDF library.
+description: Learn how to open a PDF file in C# Aspose.PDF for .NET PDF library. You can open existing PDF, document from stream, and encrypted PDF document.
 aliases:
     - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"

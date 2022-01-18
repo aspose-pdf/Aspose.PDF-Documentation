@@ -1,9 +1,10 @@
 ---
-title: FAQ
+title: FAQ from .NET
 linktitle: FAQ
 type: docs
 weight: 140
 url: /net/faq/
+description: Please learn Frequently Asked Questions from Aspose.PDF for .NET library.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

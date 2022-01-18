@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF for SharePoint Docs
+title: Aspose.PDF for SharePoint Documentation
 linktitle: Aspose.PDF for SharePoint
 second_title: Aspose.PDF for SharePoint
 type: docs

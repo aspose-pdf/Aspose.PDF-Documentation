@@ -1,5 +1,5 @@
 ---
-title: Securing and signing PDF documents in C#
+title: Securing and signing PDF in C#
 linktitle: Securing and signing in PDF
 type: docs
 weight: 150

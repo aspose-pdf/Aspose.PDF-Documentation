@@ -1,5 +1,5 @@
 ---
-title: Extract Image and Change Position of a Stamp
+title: Extract image and change stamp position
 type: docs
 weight: 30
 url: /net/extract-image-and-change-position-of-a-stamp/

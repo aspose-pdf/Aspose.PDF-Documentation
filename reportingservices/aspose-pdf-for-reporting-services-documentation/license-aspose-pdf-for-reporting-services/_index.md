@@ -1,5 +1,5 @@
 ---
-title: License Aspose.Pdf for Reporting Services
+title: License Aspose.Pdf 
 type: docs
 weight: 70
 url: /reportingservices/license-aspose-pdf-for-reporting-services/

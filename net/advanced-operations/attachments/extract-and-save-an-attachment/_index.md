@@ -1,5 +1,5 @@
 ---
-title: Extract and Save an Attachment using Aspose.PDF for .NET
+title: Extract and Save an Attachment 
 linktitle: Extract and Save an Attachment
 type: docs
 weight: 20

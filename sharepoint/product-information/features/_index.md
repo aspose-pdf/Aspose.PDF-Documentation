@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Features of SharePoint
 type: docs
 weight: 30
 url: /sharepoint/features/

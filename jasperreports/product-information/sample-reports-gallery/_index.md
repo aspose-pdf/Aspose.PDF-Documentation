@@ -1,5 +1,5 @@
 ---
-title: Sample Reports Gallery
+title: Sample Reports Gallery of JasperReports
 type: docs
 weight: 40
 url: /jasperreports/sample-reports-gallery/

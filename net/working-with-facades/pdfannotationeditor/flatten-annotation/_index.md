@@ -1,5 +1,5 @@
 ---
-title: Flatten Annotation from PDF File to XFDF (facades)
+title: Flatten Annotation from PDF to XFDF 
 type: docs
 weight: 40
 url: /net/flatten-annotation/

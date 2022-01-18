@@ -1,5 +1,5 @@
 ---
-title: How to merge PDF files using .NET 5 Windows Forms
+title: Merge PDF files using .NET 5 
 linktitle: How to merge PDF
 type: docs
 weight: 75

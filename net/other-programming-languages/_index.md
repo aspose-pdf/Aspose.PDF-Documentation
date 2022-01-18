@@ -1,5 +1,5 @@
 ---
-title: Using Aspose.PDF for .NET in Other Programming Languages
+title: Other .NET Programming Languages
 linktitle: Using in other languages
 type: docs
 weight: 110

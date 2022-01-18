@@ -1,5 +1,5 @@
 ---
-title: Changing field appearance and attributes
+title: Field appearance and attributes
 type: docs
 weight: 20
 url: /net/changing-field-appearance-and-attributes/

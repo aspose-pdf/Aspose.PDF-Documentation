@@ -1,5 +1,5 @@
 ---
-title: Print PDF document in WPF application using Aspose.PDF for .NET
+title: Print PDF in WPF application 
 linktitle: Print PDF document in WPF application
 type: docs
 weight: 50

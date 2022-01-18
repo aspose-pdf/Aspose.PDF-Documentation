@@ -1,9 +1,9 @@
 ---
-title: Get Viewer Preference of an existing PDF File
+title: Get Viewer Preference of PDF File
 type: docs
 weight: 70
 url: /net/get-viewer-preference-of-an-existing-pdf-file/
-description: This section shows how to work with Aspose.PDF Facades using PdfContentEditor Class.
+description: This section shows how to get viewer preference of an existing PDF file using PdfContentEditor Class.
 lastmod: "2021-06-05"
 draft: false
 ---

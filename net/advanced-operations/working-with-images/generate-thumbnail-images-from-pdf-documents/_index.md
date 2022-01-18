@@ -1,5 +1,5 @@
 ---
-title: Generate Thumbnail Images from PDF Documents
+title: Generate Thumbnail Images from PDF 
 linktitle: Generate Thumbnail Images
 type: docs
 weight: 110

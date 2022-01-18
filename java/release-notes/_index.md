@@ -1,5 +1,5 @@
 ---
-title: Release Notes
+title: Release Notes of Java library
 type: docs
 weight: 90
 url: /java/release-notes/

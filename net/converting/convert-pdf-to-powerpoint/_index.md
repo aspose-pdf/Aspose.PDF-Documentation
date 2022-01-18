@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to PPT (PowerPoint) using C#
+title: Convert PDF to PPT (PowerPoint) 
 linktitle: Convert PDF to PPT (PowerPoint)
 type: docs
 weight: 30

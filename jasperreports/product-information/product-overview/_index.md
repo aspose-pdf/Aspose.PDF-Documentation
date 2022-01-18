@@ -1,5 +1,5 @@
 ---
-title: Product Overview
+title: JasperReports Overview
 type: docs
 weight: 10
 url: /jasperreports/product-overview/

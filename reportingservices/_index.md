@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Aspose.PDF for Reporting Services Documentation
 linktitle:  Aspose.PDF for Reporting Services
 second_title: Aspose.PDF for Reporting Services
 type: docs

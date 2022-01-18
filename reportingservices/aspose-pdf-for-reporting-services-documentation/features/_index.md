@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Features of Reporting Services
 type: docs
 weight: 30
 url: /reportingservices/features/

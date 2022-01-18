@@ -1,5 +1,5 @@
 ---
-title: Product Overview
+title: SharePoint Overview
 type: docs
 weight: 10
 url: /sharepoint/product-overview/

@@ -1,5 +1,5 @@
 ---
-title: Set Privileges on an Existing PDF File
+title: Set Privileges on PDF 
 type: docs
 weight: 50
 url: /net/set-privileges/

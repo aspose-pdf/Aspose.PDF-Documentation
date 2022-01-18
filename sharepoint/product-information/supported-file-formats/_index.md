@@ -1,5 +1,5 @@
 ---
-title: Supported File Formats
+title: Supported File Formats of SharePoint
 type: docs
 weight: 20
 url: /sharepoint/supported-file-formats/

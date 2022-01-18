@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/digitally-sign-pdf-file/
 keywords: add digital signature to PDF using C#,certify digital signature in PDF using csharp,digitally sign PDF using csharp,verify digitally signed PDF using csharp
-description: Digitally sign PDF documents using C# or VB.NET. Verify, or validate the digitally sign PDFs using C# or VB.NET based application with Dotnet PDF Library.You can also certify a PDF file with a PKCS12-Certificate.
+description: Digitally sign PDF documents using C# or VB.NET. Verify, or validate the digitally sign PDFs using C# or VB.NET.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

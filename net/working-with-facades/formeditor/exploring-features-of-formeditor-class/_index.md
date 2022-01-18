@@ -3,7 +3,7 @@ title: Exploring features of FormEditor class
 type: docs
 weight: 10
 url: /net/exploring-features-of-formeditor-class/
-description: You can learn details of exploring features of FormEditor class.
+description: You can learn details of exploring features of FormEditor class with Aspose. PDF for .NET library
 lastmod: "2021-06-05"
 draft: false
 ---

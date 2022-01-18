@@ -1,5 +1,5 @@
 ---
-title: Choose the Platform and Interoperability Technology
+title: Platform and Interoperability Technology
 type: docs
 weight: 10
 url: /net/choose-the-platform-and-interoperability-technology/

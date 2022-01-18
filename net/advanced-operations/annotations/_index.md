@@ -4,7 +4,7 @@ linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /net/annotations/
-description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library. Learn how to draw, open, or add an annotation in C# or VB.
+description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library. 
 aliases:
     - /net/working-with-annotations/
     - /net/annotation/

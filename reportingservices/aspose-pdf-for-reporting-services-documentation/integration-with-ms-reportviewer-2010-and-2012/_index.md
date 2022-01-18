@@ -1,5 +1,5 @@
 ---
-title: Integration with MS ReportViewer 2010 and 2012
+title: Integration with MS ReportViewer 
 type: docs
 weight: 100
 url: /reportingservices/integration-with-ms-reportviewer-2010-and-2012/

@@ -1,5 +1,5 @@
 ---
-title: Use Aspose.PDF for .NET via COM Interop
+title: Aspose.PDF for .NET via COM Interop
 type: docs
 weight: 20
 url: /net/use-aspose-pdf-for-net-via-com-interop/

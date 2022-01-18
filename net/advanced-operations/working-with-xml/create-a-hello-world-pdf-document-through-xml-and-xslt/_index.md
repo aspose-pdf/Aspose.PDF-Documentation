@@ -1,10 +1,10 @@
 ---
-title: Creating PDF from XML using XSLT using C#
+title: Creating PDF from XML using XSLT 
 linktitle: Create PDF from XML using XSLT
 type: docs
 weight: 10
 url: /net/create-a-hello-world-pdf-document-through-xml-and-xslt/
-description: Aspose.PDF for .NET provides the opportunity to convert an XML file into PDF document requiring that the input XML file must follow the Aspose.PDF for .NET Schema.
+description: C# library provides the ability to convert an XML file into pdf document requiring that the input XML file must follow the Aspose.PDF Schema.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

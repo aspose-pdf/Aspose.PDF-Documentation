@@ -1,5 +1,5 @@
 ---
-title: Evaluate Aspose.Pdf
+title: Evaluate Aspose.Pdf for JasperReports
 type: docs
 weight: 70
 url: /jasperreports/evaluate-aspose-pdf/

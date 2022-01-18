@@ -3,7 +3,7 @@ title: Working with Signature in PDF File
 type: docs
 weight: 40
 url: /net/working-with-signature-in-a-pdf-file/
-description: This section explains how to work with Signature in a PDF File using PdfFileSignature class.
+description: This section explains how to to extract signature information, extract image from signature, change language, and etc using PdfFileSignature class.
 lastmod: "2021-06-05"
 draft: false
 ---

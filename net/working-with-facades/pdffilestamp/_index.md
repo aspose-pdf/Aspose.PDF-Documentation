@@ -3,7 +3,7 @@ title: PdfFileStamp Class
 type: docs
 weight: 155
 url: /net/pdffilestamp-class/
-description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
+description: This section explains how you can use PdfFileStamp Class by Aspose.PDF Facades in working with PDF.
 lastmod: "2021-06-05"
 draft: false
 ---

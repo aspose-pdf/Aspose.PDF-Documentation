@@ -4,8 +4,7 @@ linktitle: sticky Annotation
 type: docs
 weight: 50
 url: /net/sticky-annotations/
-description: This topic about sticky annotations, as an example we shows the Watermark Annotation in the text. It uses to represent graphics on the page. Check code snippet to resolve this task.
-lastmod: "2021-11-24"
+description: This topic about sticky annotations, as an example we shows the Watermark Annotation in the text. 
 sitemap:
     changefreq: "weekly"
     priority: 0.7

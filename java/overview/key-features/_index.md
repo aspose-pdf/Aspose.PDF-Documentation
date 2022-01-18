@@ -1,10 +1,10 @@
 ---
-title: Key Features 
+title: Key Features of Java library
 linktitle: Key Features
 type: docs
 weight: 20
 url: /java/key-features/
-description: Aspose.PDF for Java demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, annotations, documents, etc.
+description: Aspose.PDF for Java shows the main features and describes the supported PDF versions, and all the manipulations we can do with documents.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

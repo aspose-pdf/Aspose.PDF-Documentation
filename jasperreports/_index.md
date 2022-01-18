@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Aspose.PDF for JasperReports Documentation
 linktitle: Aspose.PDF for JasperReports
 second_title: Aspose.PDF for JasperReports
 type: docs

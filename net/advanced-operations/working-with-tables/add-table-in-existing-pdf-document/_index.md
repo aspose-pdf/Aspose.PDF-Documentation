@@ -4,7 +4,7 @@ linktitle: Create or Add Table
 type: docs
 weight: 10
 url: /net/add-table-in-existing-pdf-document/
-description: Aspose.PDF for .NET is a library used to create, read, and edit PDF Tables. Using this library, you can paginate a table on the PDF page using C# and VB.NET
+description: Aspose.PDF for .NET is a library used to create, read, and edit PDF Tables. Check other advanced functions in this topic.
 lastmod: "2021-06-05"
 aliases:
     - /net/add-and-extract-a-table/

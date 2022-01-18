@@ -4,7 +4,7 @@ linktitle: Extract fonts from PDF
 type: docs
 weight: 30
 url: /net/extract-fonts-from-pdf/
-description: How to extract font from PDF using C#
+description: Use the Aspose.PDF for. NET library to extract all embedded fonts from your PDF document.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

@@ -1,5 +1,5 @@
 ---
-title: License Aspose.Pdf for SharePoint
+title: License SharePoint
 type: docs
 weight: 60
 url: /sharepoint/license-aspose-pdf-for-sharepoint/

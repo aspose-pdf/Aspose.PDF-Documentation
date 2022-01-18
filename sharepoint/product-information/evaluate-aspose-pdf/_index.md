@@ -1,5 +1,5 @@
 ---
-title: Evaluate Aspose.Pdf
+title: Evaluate Aspose.Pdf for SharePoint
 type: docs
 weight: 50
 url: /sharepoint/evaluate-aspose-pdf/

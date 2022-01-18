@@ -1,10 +1,10 @@
 ---
-title: Extract Table from Existing PDF Document
+title: Extract Table from PDF Document
 linktitle: Extract Table
 type: docs
 weight: 20
 url: /net/extract-table-from-existing-pdf-document/
-description: Aspose.PDF for .NET makes it possible to carry out various manipulations with the tables contained in your pdf document. You may add and extract a table in the existing PDF document, render table on a new page and etc.
+description: Aspose.PDF for .NET makes it possible to carry out various manipulations with the tables contained in your pdf document. 
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

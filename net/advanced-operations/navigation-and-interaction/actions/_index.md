@@ -1,10 +1,10 @@
 ---
-title: Working with Actions in PDF using Aspose.PDF for .NET
+title: Working with Actions in PDF 
 linktitle: Actions
 type: docs
 weight: 20
 url: /net/actions/
-description: This section explains how to add actions to the document and form fields programmatically with C#. Learn how to Add, Create, and Get Hyperlink in a PDF File.
+description: This section explains how to add actions to the document and form fields programmatically with C#. 
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

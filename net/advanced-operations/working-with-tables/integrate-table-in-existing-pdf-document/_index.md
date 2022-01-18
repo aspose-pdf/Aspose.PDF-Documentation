@@ -1,10 +1,10 @@
 ---
-title: Integrate Table with Data Sources In Existing PDF Document
+title: Integrate Table with Data Sources PDF 
 linktitle: Integrate Table
 type: docs
 weight: 30
 url: /net/integrate-table/
-description: This article shows how to integrate PDF tables.
+description: This article shows how to integrate PDF tables. Integrate Table with Database and determine if the table will split on the current page.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

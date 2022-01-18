@@ -1,5 +1,5 @@
 ---
-title: Install Aspose.Pdf for SharePoint
+title: Install SharePoint
 type: docs
 weight: 40
 url: /sharepoint/install-aspose-pdf-for-sharepoint/

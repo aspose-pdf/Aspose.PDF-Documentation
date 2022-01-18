@@ -1,10 +1,10 @@
 ---
-title: Key Features of Aspose.PDF
+title: Key Features of .NET library
 linktitle: Key Features
 type: docs
 weight: 20
 url: /net/key-features/
-description: Aspose.PDF for .NET demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, annotations, documents, etc.
+description: Aspose.PDF for .NET demonstrates its general features. Its shows the supported PDF versions, and all the manipulations we can do with PDF.
 lastmod: "2021-06-05"
 aliases:
     - /net/feature-list/

@@ -1,5 +1,5 @@
 ---
-title: Key Features of Aspose.PDF
+title: Key Features of C++ library
 linktitle: Key Features
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: Adding Images and Text using PdfFileMend class
+title: Adding Images and Text 
 type: docs
 weight: 10
 url: /net/adding-images-and-text-using-pdffilemend-class/

@@ -4,7 +4,7 @@ linktitle: Extract AcroForm
 type: docs
 weight: 30
 url: /net/extract-form/
-description: Extract  form from your PDF file with Aspose.PDF for .NET library.
+description: Extract form from your PDF document with Aspose.PDF for .NET library. Get value from an individual field of PDF file.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

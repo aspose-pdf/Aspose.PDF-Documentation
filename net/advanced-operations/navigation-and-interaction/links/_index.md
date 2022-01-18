@@ -1,5 +1,5 @@
 ---
-title: Working with Links in PDF programmatically using Aspose.PDF for .NET
+title: Working with Links in PDF programmatically 
 linktitle: Links
 type: docs
 weight: 10
