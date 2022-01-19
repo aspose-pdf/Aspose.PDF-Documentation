@@ -1,5 +1,6 @@
 ---
-title: Configure Aspose.Pdf 
+title: Configure
+
 type: docs
 weight: 80
 url: /reportingservices/configure-aspose-pdf-for-reporting-services/
