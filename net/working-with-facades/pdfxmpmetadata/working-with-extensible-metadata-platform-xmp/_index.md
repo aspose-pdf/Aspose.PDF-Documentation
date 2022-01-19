@@ -1,5 +1,5 @@
 ---
-title: Working with Extensible Metadata Platform - XMP
+title: Extensible Metadata Platform - XMP
 type: docs
 weight: 10
 url: /net/working-with-extensible-metadata-platform-xmp/

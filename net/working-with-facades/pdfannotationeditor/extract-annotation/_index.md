@@ -1,5 +1,5 @@
 ---
-title: Extract Annotations from an Existing PDF File (facades)
+title: Extract Annotations from PDF 
 type: docs
 weight: 30
 url: /net/extract-annotation/

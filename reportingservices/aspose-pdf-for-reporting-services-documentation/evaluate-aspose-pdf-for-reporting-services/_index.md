@@ -1,5 +1,5 @@
 ---
-title: Evaluate Aspose.Pdf for Reporting Services
+title: Evaluate Aspose.Pdf 
 type: docs
 weight: 110
 url: /reportingservices/evaluate-aspose-pdf-for-reporting-services/

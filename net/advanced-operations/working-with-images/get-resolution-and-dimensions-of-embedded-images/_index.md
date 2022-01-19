@@ -1,5 +1,5 @@
 ---
-title: Get Resolution and Dimensions of Embedded Images
+title: Get Resolution and Dimensions of Images
 linktitle: Get Resolution and Dimensions
 type: docs
 weight: 40

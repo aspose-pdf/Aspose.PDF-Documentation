@@ -1,5 +1,5 @@
 ---
-title: Working with Accessibility and Tagged PDFs
+title: Accessibility and Tagged PDFs
 linktitle: Accessibility. Tagged PDF
 type: docs
 weight: 120

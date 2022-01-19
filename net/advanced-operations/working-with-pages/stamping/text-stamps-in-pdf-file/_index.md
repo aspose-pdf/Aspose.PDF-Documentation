@@ -1,10 +1,10 @@
 ---
-title: Add Text stamps in PDF programmatically
+title: Add Text stamps in PDF C#
 linktitle: Text stamps in PDF File
 type: docs
 weight: 20
 url: /net/text-stamps-in-the-pdf-file/
-description: Add a text stamp to a PDF file using the TextStamp class with C#.
+description: Add a text stamp to a PDF document using the TextStamp class with  Aspose.PDF for .NET library.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

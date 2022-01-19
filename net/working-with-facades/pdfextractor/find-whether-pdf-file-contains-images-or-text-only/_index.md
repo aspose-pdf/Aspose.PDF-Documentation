@@ -1,5 +1,5 @@
 ---
-title: Find whether PDF file contains images or text only
+title: Find whether PDF contains images or text
 linktitle: Check presence text and images
 type: docs
 weight: 40

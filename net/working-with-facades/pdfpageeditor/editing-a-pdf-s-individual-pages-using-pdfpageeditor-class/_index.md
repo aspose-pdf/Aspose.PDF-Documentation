@@ -1,5 +1,5 @@
 ---
-title: Editing a PDF's individual pages using PdfPageEditor class
+title: Editing a PDF's individual pages
 type: docs
 weight: 20
 url: /net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/

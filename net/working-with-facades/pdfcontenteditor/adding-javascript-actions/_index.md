@@ -1,5 +1,5 @@
 ---
-title: Adding Javascript actions to existing PDF file
+title: Adding Javascript actions PDF 
 type: docs
 weight: 10
 url: /net/adding-javascript-actions/

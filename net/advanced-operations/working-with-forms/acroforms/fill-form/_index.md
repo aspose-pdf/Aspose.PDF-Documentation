@@ -4,7 +4,7 @@ linktitle: Fill AcroForm
 type: docs
 weight: 20
 url: /net/fill-form/
-description: Fill form in your PDF file with Aspose.PDF for .NET
+description: You can fill forms in your PDF document  with Aspose.PDF for .NET library.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

@@ -1,5 +1,5 @@
 ---
-title: Printing PDF to an XPS Printer using Aspose.PDF Facades technique
+title: Printing PDF to an XPS Printer 
 linktitle: Printing PDF to an XPS Printer (Facades)
 type: docs
 weight: 20

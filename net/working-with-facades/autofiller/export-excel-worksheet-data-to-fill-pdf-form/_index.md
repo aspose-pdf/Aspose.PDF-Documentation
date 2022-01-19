@@ -1,5 +1,5 @@
 ---
-title: Export Excel worksheet data to fill PDF form
+title: Export Excel data to fill PDF form
 type: docs
 weight: 10
 url: /net/export-excel-worksheet-data-to-fill-pdf-form/

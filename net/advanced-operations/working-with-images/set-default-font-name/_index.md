@@ -4,7 +4,7 @@ linktitle: Set Default Font Name
 type: docs
 weight: 90
 url: /net/set-default-font-name/
-description: This section describes how to set default font name using C# library.
+description: This section describes how to set the default font name during the conversion process from PDF to image.
 lastmod: "2021-06-05"
 ---
 

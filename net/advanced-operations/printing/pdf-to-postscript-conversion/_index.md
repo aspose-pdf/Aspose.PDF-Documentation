@@ -4,7 +4,7 @@ linktitle: PDF to PostScript conversion
 type: docs
 weight: 30
 url: /net/pdf-to-postscript-conversion/
-description: We have a solution for PDF to PostScript conversion. Use for this task printing and PdfViewer class. Also, this article describes how to checking print job status, how to get and set print job owner name.
+description: We have a solution for PDF to PostScript conversion. Use for this task printing and PdfViewer class. 
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

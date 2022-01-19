@@ -1,5 +1,5 @@
 ---
-title: Extract Links from the PDF File with Aspose.PDF for .NET
+title: Extract Links from the PDF File 
 linktitle: Extract Links
 type: docs
 weight: 30

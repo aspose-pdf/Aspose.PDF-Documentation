@@ -1,5 +1,5 @@
 ---
-title: Working with Images using PdfContentEditor
+title: Work with Images using PdfContentEditor
 type: docs
 weight: 50
 url: /net/working-with-images-in-pdf

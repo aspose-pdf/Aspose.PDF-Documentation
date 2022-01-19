@@ -1,5 +1,5 @@
 ---
-title: Adding Bookmarks actions to existing PDF file
+title: Adding Bookmarks to PDF file
 type: docs
 weight: 20
 url: /net/how-to-create-nested-bookmarks/

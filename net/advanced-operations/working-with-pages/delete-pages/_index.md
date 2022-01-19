@@ -4,7 +4,7 @@ linktitle: Delete PDF Pages
 type: docs
 weight: 30
 url: /net/delete-pages/
-description: You can delete pages from your PDF file using C# library.
+description: You can delete pages from your PDF file using Aspose.PDF for .NET  library. 
 lastmod: "2021-06-05"
 aliases:
     - /net/delete-pdf-pages/

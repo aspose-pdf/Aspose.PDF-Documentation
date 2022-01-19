@@ -1,5 +1,5 @@
 ---
-title: Set Privileges, Encrypt and Decrypt PDF File using C#
+title: Set Privileges, Encrypt and Decrypt PDF 
 linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 20

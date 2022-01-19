@@ -1,5 +1,5 @@
 ---
-title: Working with Portfolio in PDF documents using Aspose.PDF for .NET
+title: Working with Portfolio in PDF 
 linktitle: Portfolio
 type: docs
 weight: 40

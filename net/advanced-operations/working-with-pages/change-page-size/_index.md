@@ -1,10 +1,10 @@
 ---
-title: Change PDF Page Size Programmatically with C#
+title: Change PDF Page Size with C#
 linktitle: Change PDF Page Size
 type: docs
 weight: 40
 url: /net/change-page-size/
-description: Change Page Size from your PDF file using C# library.
+description: Change Page Size from your PDF document using Aspose.PDF for .NET library.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

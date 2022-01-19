@@ -1,10 +1,10 @@
 ---
-title: Advanced operations
+title: Advanced operations 
 linktitle: Advanced operations
 type: docs
 weight: 90
 url: /net/advanced-operations/
-description: Aspose.PDF for .NET can perform not only simple and easy tasks but also cope with more complex functions. For advanced users and developers, the Advanced section will detail these features for you.
+description: Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

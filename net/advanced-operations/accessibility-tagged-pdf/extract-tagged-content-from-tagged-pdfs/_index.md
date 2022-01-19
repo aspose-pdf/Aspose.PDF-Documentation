@@ -1,5 +1,5 @@
 ---
-title: Extract Tagged Content from PDF using C#
+title: Extract Tagged Content from PDF
 linktitle: Extract Tagged Content
 type: docs
 weight: 20

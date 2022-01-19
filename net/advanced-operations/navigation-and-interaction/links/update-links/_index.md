@@ -1,5 +1,5 @@
 ---
-title: Update Links in PDF using Aspose.PDF for .NET
+title: Update Links in PDF 
 linktitle: Update Links
 type: docs
 weight: 20

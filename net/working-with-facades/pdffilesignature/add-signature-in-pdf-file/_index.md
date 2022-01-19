@@ -3,7 +3,7 @@ title: Add Signature in PDF File
 type: docs
 weight: 10
 url: /net/add-signature-in-pdf/
-description: This section explains how to work with Signature in a PDF File using PdfFileSignature class.
+description: This section explains how to add signature to PDF File using PdfFileSignature class.
 lastmod: "2021-06-05"
 draft: false
 ---

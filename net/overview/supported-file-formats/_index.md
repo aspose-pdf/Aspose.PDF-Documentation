@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF Supported File Formats
+title: Supported File Formats
 linktitle: Supported File Formats
 type: docs
 weight: 10

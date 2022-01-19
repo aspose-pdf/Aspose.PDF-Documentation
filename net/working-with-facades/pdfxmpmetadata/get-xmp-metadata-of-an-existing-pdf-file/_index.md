@@ -1,5 +1,5 @@
 ---
-title: Get XMP Metadata of an Existing PDF File
+title: Get XMP Metadata of PDF File
 type: docs
 weight: 30
 url: /net/get-xmp-metadata-of-an-existing-pdf-file/

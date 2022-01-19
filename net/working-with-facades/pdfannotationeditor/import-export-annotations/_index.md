@@ -1,5 +1,5 @@
 ---
-title: Import and Export Annotations to XFDF format using Aspose.PDF Facades.
+title: Import and Export Annotations to XFDF 
 type: docs
 weight: 20
 url: /net/import-export-annotations/

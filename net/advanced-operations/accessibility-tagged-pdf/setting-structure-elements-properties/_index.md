@@ -1,10 +1,10 @@
 ---
-title: Setting Structure Elements Properties in Tagged PDF
+title: Setting Structure Elements Properties 
 linktitle: Setting Structure Elements Properties
 type: docs
 weight: 30
 url: /net/setting-structure-elements-properties/
-description: With Aspose.PDF for .NET, you may set different Structure Elements Properties. There are setting Text Block Structure Elements, setting Inline Structure Elements, adding Structure Element into Elements and etc.
+description:  You may set different structure elements properties in PDF document with Aspose.PDF for .NET.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
