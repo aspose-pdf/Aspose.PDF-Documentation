@@ -1,5 +1,5 @@
 ---
-title: Search and Get Images PDF 
+title: Get and Search Images in PDF 
 linktitle: Search and Get Images
 type: docs
 weight: 60
