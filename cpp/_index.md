@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF for C++ Documentation
+title: Documentation
 linktitle: Aspose.PDF for C++
 second_title: Aspose.PDF for C++
 type: docs

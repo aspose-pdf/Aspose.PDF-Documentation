@@ -1,5 +1,5 @@
 ---
-title: System Requirements for .NET
+title: System Requirements
 linktitle: System Requirements
 type: docs
 weight: 30

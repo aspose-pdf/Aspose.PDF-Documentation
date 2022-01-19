@@ -1,5 +1,5 @@
 ---
-title: Release Notes of .NET library
+title: Release Notes
 linktitle: Release Notes
 type: docs
 weight: 130

@@ -1,5 +1,5 @@
 ---
-title: Key Features of .NET library
+title: Key Features of Aspose.PDF
 linktitle: Key Features
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: Advanced operations for Java
+title: Advanced operations 
 linktitle: Advanced operations 
 type: docs
 weight: 70

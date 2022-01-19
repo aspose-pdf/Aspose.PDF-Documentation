@@ -1,5 +1,5 @@
 ---
-title: Supported File Formats of JasperReports
+title: Supported File Formats 
 type: docs
 weight: 20
 url: /jasperreports/supported-file-formats/

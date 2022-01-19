@@ -1,5 +1,5 @@
 ---
-title: Get Started of .NET
+title: Get Started 
 linktitle: Get Started
 type: docs
 weight: 30

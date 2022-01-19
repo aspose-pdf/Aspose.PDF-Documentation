@@ -1,5 +1,5 @@
 ---
-title: Key Features of Android via Java
+title: Key Features of Aspose.PDF
 linktitle: Key Features
 type: docs
 weight: 20

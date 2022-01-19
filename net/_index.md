@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF for .NET Documentation
+title: Documentation
 linktitle: Aspose.PDF for .NET
 second_title: Aspose.PDF for .NET
 type: docs

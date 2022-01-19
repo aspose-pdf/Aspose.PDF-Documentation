@@ -1,5 +1,5 @@
 ---
-title: FAQ from .NET
+title: FAQ 
 linktitle: FAQ
 type: docs
 weight: 140

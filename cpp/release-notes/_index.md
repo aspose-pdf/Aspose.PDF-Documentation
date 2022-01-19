@@ -1,5 +1,5 @@
 ---
-title: Release Notes of C++ library
+title: Release Notes 
 type: docs
 weight: 80
 url: /cpp/release-notes/

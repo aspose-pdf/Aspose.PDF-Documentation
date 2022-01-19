@@ -1,5 +1,5 @@
 ---
-title: Supported File Formats of Reporting Services
+title: Supported File Formats 
 type: docs
 weight: 20
 url: /reportingservices/supported-file-formats/

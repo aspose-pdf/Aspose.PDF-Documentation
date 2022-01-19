@@ -1,5 +1,5 @@
 ---
-title: Get Started of Java
+title: Get Started 
 linktitle: Get Started
 type: docs
 weight: 30

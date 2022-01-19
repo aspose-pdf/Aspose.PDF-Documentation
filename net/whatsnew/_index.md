@@ -1,5 +1,5 @@
 ---
-title: What's new from .NET
+title: What's new
 linktitle: What's new
 type: docs
 weight: 10

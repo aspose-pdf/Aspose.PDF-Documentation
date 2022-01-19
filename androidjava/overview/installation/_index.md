@@ -1,5 +1,5 @@
 ---
-title: Install Android via Java
+title: Install Aspose.PDF for Android via Java
 linktitle: Installation
 type: docs
 weight: 40

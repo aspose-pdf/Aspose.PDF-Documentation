@@ -1,5 +1,5 @@
 ---
-title: Java Overview
+title: Overview
 linktitle: Overview
 type: docs
 weight: 20

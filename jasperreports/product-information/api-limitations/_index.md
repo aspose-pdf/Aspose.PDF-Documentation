@@ -1,5 +1,5 @@
 ---
-title: API Limitations for JasperReports
+title: API Limitations 
 type: docs
 weight: 80
 url: /jasperreports/api-limitations/

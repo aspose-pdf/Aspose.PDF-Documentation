@@ -1,5 +1,5 @@
 ---
-title: FAQ from Java
+title: FAQ 
 linktitle: FAQ
 type: docs
 weight: 120
