@@ -21,6 +21,8 @@ The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 22.1
 
 1. The double-conversion library was upgraded to 3.1.7 version.
 
+1. Dll files are signed with Aspose certificate.
+
 ## Future Backward Incompatible API Changes
 
 1. The implementation of **System::Xml** classes was completely reworked. Some APIs may have become unavailable. Some APIs may have changed. The new API is much closer to such of .Net. Please use the API reference for more information.
