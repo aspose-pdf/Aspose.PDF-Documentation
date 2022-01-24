@@ -190,7 +190,7 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 ### Generate PDF document using ASP.NET Core Web App in Windows container
 
-In this example we will the same code as in previos example
+In this example, we will the same code as in the previous example.
 
 1. Create `images` folder in `wwwroot` folder and put image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png)
 1. Replace code in `HomeController.cs` with snippet above.
