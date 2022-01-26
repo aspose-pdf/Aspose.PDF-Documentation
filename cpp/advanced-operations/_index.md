@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/advanced-operations/
 description: Aspose.PDF for C++ can perform not only simple and easy tasks but also cope with more complex functions. For advanced users and developers, the Advanced section will detail these features for you.
-lastmod: "2021-11-10"
+lastmod: "2022-01-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -24,6 +24,7 @@ You'll learn different ways to:
 - [Working with Graphs](/pdf/cpp/graphs/) - manipulate with shapes on the page
 - [Annotations](/pdf/cpp/annotations/) - Annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
 - [Artifacts](/pdf/cpp/artifacts/) - deal with watermarks and other special objects in PDF
+- [Navigation and Interaction](/pdf/cpp/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages
 - [Accessibility. Tagged PDF](/pdf/cpp/accessibility-tagged-pdf/) - Tagging is essential for PDF accessibility. Aspose.PDF allows to add tags into PDF and establish logical reading order and to provide a means for indicating structure and type.
 - [Metadata in PDFs](/pdf/cpp/pdf-file-metadata/) - get or set meta data in documents, dealing with XMP data.
 - [Securing and Signing](/pdf/cpp/securing-and-signing/) - protect and sign your PDF document programmatically
