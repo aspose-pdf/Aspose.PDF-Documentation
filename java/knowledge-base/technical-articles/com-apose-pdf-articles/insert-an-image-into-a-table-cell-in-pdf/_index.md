@@ -3,7 +3,7 @@ title: Insert an Image into a Table Cell in PDF
 type: docs
 weight: 20
 url: /java/insert-an-image-into-a-table-cell-in-pdf/
-lastmod: "2021-06-05"
+lastmod: "2022-01-27"
 ---
 
 {{% alert color="primary" %}}
@@ -13,18 +13,21 @@ Tables are important elements for displaying data. They provide a presentable fo
 Rather than creating a simple table you can set different formatting options, for example the table border style, margin information, alignment, background color, column width, title information, the value of rows to be repeated on every page and many more.
 
 {{% /alert %}}
-### <ins>**Aspose.PDF Approach**
+
+## Aspose.PDF Approach
+
 According to our DOM (Document Object Model) a document is composed of Pages. A page contains one or more paragraphs, and a paragraph may be an image, text, a form field, a heading, a floating box, graph, attachment, or a table. A table, in turn, has a collection of rows and each row has a collection of cells. A cell is a collection of paragraphs.
 
 So according to our DOM a table cell can contain any of the paragraph elements specified above, including images.
-#### **Understanding Cell Width**
+
+## Understanding Cell Width
+
 One must have a clear understanding of cell width, especially when displaying an image in table cell, so that the image width is fixed to the width of a cell so it displays properly. The width of an image can be set by using the Image class' setFixedWidth() method.
 
 
-#### **Code Example**
-**Java**
+## Code Example
 
-{{< highlight csharp >}}
+```java
 
  String dataDir = "C:\\temp\\";
 
@@ -96,4 +99,4 @@ row1.getCells().get_Item(2).setVerticalAlignment(VerticalAlignment.Center);
 
 pdfDocument.save(dataDir + "Image_in_Cell.pdf");    
 
-{{< /highlight >}}
+```

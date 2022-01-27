@@ -3,7 +3,7 @@ title: Public API Changes in Aspose.PDF for Java 9.3.0
 type: docs
 weight: 50
 url: /java/public-api-changes-in-aspose-pdf-for-java-9-3-0/
-lastmod: "2021-06-05"
+lastmod: "2022-01-27"
 ---
 
 {{% alert color="primary" %}}
@@ -11,7 +11,9 @@ lastmod: "2021-06-05"
 This page lists the public API changes introduced in [Aspose.PDF for Java 9.3.0](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/entry559320.aspx). It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in Aspose.PDF for Java which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
 
 {{% /alert %}}
-##### **Classes Added:**
+
+## Classes Added:
+
 com.aspose.pdf.MemoryCleaner
 com.aspose.pdf.generator.legacy.CmykColorSpace
 com.aspose.pdf.generator.legacy.GrayColorSpace
@@ -40,19 +42,26 @@ com.aspose.pdf.Artifact.ArtifactSubtype
 com.aspose.pdf.ILicenseProvider
 com.aspose.pdf.Layer
 com.aspose.pdf.LettersPositioningMethods
-##### **Enumeration Classes Added:**
+
+## Enumeration Classes Added:
+
 com.aspose.pdf.generator.legacyxmlmodel.enums.FunctionType
 com.aspose.pdf.generator.legacyxmlmodel.enums.PaintType
 com.aspose.pdf.generator.legacyxmlmodel.enums.PatternType
 com.aspose.pdf.generator.legacyxmlmodel.enums.ShadingGradientType
 com.aspose.pdf.generator.legacyxmlmodel.enums.TilingType
 Implemented usage of enumeration classes: **TextEncodingInternal** and **ImageFormatInternal**
-##### **classes Removed:**
+
+## classes Removed:
+
 Depricated com.aspose.pdf.generator.legacyxmlmodel.enums.TextAlignmentType class was removed.
-##### **classes Moved:**
+
+## classes Moved:
+
 Classes from the package **com.aspose.pdf.generator.legacyxmlmodel.enums** are moved to the package **com.aspose.pdf.generator.legacyxmlmodel**
 
-##### **Classes Internalized:**
+## Classes Internalized:
+
 com.aspose.pdf.XfdfTags
 com.aspose.pdf.generator.legacyxmlmodel.NonClosedShape
 com.aspose.pdf.generator.legacyxmlmodel.ComplexShape
@@ -64,8 +73,8 @@ com.aspose.pdf.generator.legacyxmlmodel.PolyDashArray
 com.aspose.pdf.generator.legacyxmlmodel.PathArea
 com.aspose.pdf.generator.legacyxmlmodel.Rectangle
 
-##### **Changes in classes:**
-**Changes to classes**:
+## Changes in classes:
+
 In **PdfExtractor** class was added method 
 public extractText(java.nio.charset.Charset value) 
 
@@ -194,5 +203,7 @@ In **XslFoLoadOptions** class added method
 In **XslFoLoadOptions** class added method
 
 **All the boolean setter method names that were started from is was renamed ro set**
-**for example:
+
+for example:
+
 com.aspose.pdf.facades.ReplaceTextStrategy.isRegularExpressionUsed(boolean value) -> com.aspose.pdf.facades.ReplaceTextStrategy.setRegularExpressionUsed(boolean value)

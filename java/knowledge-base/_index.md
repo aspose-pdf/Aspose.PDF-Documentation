@@ -3,12 +3,9 @@ title: Knowledge Base
 type: docs
 weight: 30
 url: /java/knowledge-base/
-lastmod: "2021-06-05"
+lastmod: "2022-01-27"
 ---
 
-## **Knowledge Base**
-
-###### **This section includes the following topics:**
 - [API Limitations](/pdf/java/api-limitations/)
 - [Known Issues in Aspose.PDF for Android via Java](/pdf/java/known-issues-in-aspose-pdf-for-android-via-java/)
 - [Technical Articles](/pdf/java/technical-articles/)

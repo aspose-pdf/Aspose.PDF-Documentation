@@ -3,7 +3,7 @@ title: Migrating your code to Aspose.PDF for Java 2.5.0
 type: docs
 weight: 10
 url: /java/migrating-your-code-to-aspose-pdf-for-java-2-5-0/
-lastmod: "2021-06-05"
+lastmod: "2022-01-27"
 ---
 
 {{% alert color="primary" %}}
@@ -11,23 +11,15 @@ lastmod: "2021-06-05"
 In this article we have tried highlighting some of the areas from an existing code of Aspose.PDF for Java to make it compatible with the latest release version.
 
 {{% /alert %}}
-##### **Details**
+
+## Details
+
 With the release of Aspose.PDF for Java 2.5.0, there have been lots of changes in the API structure and class es construction. M ost of the class member’s names are updated, some existing class members are removed and also few more methods and properties are added to existing classes. Just to give you a brief of changes, we a re going to have a look over the following simple code , based over Aspose.PDF for Java versions published earlier to 2.5.0.
 
 In this simple code, we will add a hyperlink and link to the page within the same PDF document.
 
-
-
-**Java**
-
-{{< highlight csharp >}}
-
-
-
+```java
 import com.aspose.pdf.elements.*;
-
-
-
 com.aspose.pdf.License lic = new com.aspose.pdf.License();
 
 try {
@@ -41,7 +33,6 @@ lic.setLicense(new FileInputStream(new File("Aspose.Total.Java.lic")));
 System.out.println(e.getMessage());
 
 }
-
 
 
 //Instantiate a Pdf object by calling its empty constructor
@@ -69,7 +60,6 @@ Segment segment1 = text1.getSegments().add("this is a local link");
 segment1.getTextInfo().setUnderLine(true);
 
 
-
 //Set the link type of the text segment to Local
 
 //Assign the id of the desired paragraph as a target id for the text segment
@@ -95,20 +85,16 @@ text3.setFirstParagraph(true);
 text3.setID("product1"); 
 
 
-
 // save the PDF file
 
 FileOutputStream out = new FileOutputStream(new File("UpdateOfCode_Test.pdf"));
 
 pdf1.save(out);
-
-
-
-{{< /highlight >}}
+```
 
 When using the versions earlier to Aspose.PDF for Java 2.5.0, the code can successfully be executed and a resultant PDF document containing a hyperlink towards a page within the same document , can be generated. But, when the same code is compiled with 2.5.0 , you will notice number of errors because , there ha ve been change s in the class members and also some of the methods in classes have been removed . Now let ’ s start with the modification of code for version 2.5.0
 
-Use **import aspose.pdf.**;* instead of  **import com.aspose.pdf.elements.**;* to include the package.
+Use **import aspose.pdf.**;* instead of **import com.aspose.pdf.elements.**;* to include the package.
 
 For license initialization, please update your existing code from 
 
@@ -176,8 +162,10 @@ to
 {{< /highlight >}}
 {{% /alert %}}
 
-The method name **setFirstParagraph** is removed from Text class . So in order to display the text segment in new page, you need to create a new Section object and add the text object to the newly created section. As b y default every section is displayed over new page, so there is no need for calling a method like   **sec2.setIsNewPage(** **true** **);**
-#### ***Updated Save method***
+The method name **setFirstParagraph** is removed from Text class . So in order to display the text segment in new page, you need to create a new Section object and add the text object to the newly created section. As b y default every section is displayed over new page, so there is no need for calling a method like **sec2.setIsNewPage(true**)**;
+
+## Updated Save method
+
 The save method in Pdf class which used to take FileOutputStream object as an argument, has been removed. In new version, you can use either of the following overloaded method s of save.
 
 - save(BasicStream stream)
@@ -186,14 +174,8 @@ The save method in Pdf class which used to take FileOutputStream object as an ar
 
 After making all above specified changes, when using Aspose.PDF for Java 2.5.0 , the code will be compiled and executed without showing any error message s. The complete update d code snippet is specified below.
 
-**Java**
-
-{{< highlight csharp >}}
-
- import aspose.pdf.*;
-
-
-
+```java
+import aspose.pdf.*;
 aspose.pdf.License lic = new aspose.pdf.License();
 
 try {
@@ -207,8 +189,6 @@ lic.setLicense(new FileInputStream(new File("Aspose.Total.Java.lic")));
 System.out.println(e.getMessage());
 
 }
-
-
 
 try {
 
@@ -237,7 +217,6 @@ Segment segment1 = text1.getSegments().add("this is a local link");
 segment1.getTextInfo().setIsUnderline(true);
 
 
-
 //Set the link type of the text segment to Local
 
 //Assign the id of the desired paragraph as a target id for the text segment
@@ -263,11 +242,9 @@ sec2.getParagraphs().add(text3);
 text3.setID("product1");
 
 
-
 // save the PDF file
 
 pdf1.save("UpdateOfCode_Test.pdf");
-
 
 
      }catch(Exception e)
@@ -277,18 +254,12 @@ pdf1.save("UpdateOfCode_Test.pdf");
 System.out.println(e.getMessage());
 
 }
+```
 
+## Conclusion
 
-
-{{< /highlight >}}
-##### **Conclusion**
-{{% alert color="primary" %}}
 In above topic we have explained some of the classes and methods that have been changed in new release. For a complete list of all the classes and their members, please visit [Aspose.PDF for Java API Reference](http://www.aspose.com/documentation/java-components/aspose.pdf-for-java/aspose.pdf-for-java-api-reference.html)
-{{% /alert %}}
-
-
-{{% alert color="primary" %}}
 
 To learn more about Aspose and its products, please click here <http://www.aspose.com/>
 
-{{% /alert %}}
+

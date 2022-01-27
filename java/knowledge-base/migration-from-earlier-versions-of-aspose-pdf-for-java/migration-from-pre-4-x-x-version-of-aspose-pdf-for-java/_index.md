@@ -3,7 +3,7 @@ title: Migration from Pre 4.x.x version of Aspose.PDF for Java
 type: docs
 weight: 20
 url: /java/migration-from-pre-4-x-x-version-of-aspose-pdf-for-java/
-lastmod: "2021-06-05"
+lastmod: "2022-01-27"
 ---
 
 {{% alert color="primary" %}}
@@ -11,7 +11,9 @@ lastmod: "2021-06-05"
 A new auto-ported version of Aspose.PDF for Java has been released and now this single product supports the capability to generate PDF documents from scratch as well as provides the capability to manipulate existing PDF documents.
 
 {{% /alert %}}
-#### **Product binaries**
+
+## Product binaries
+
 {{% alert color="primary" %}}
 
 In first release version (v4.0.0), we are shipping two jar files i.e. **aspose.pdf-3.3.0.jdk15.jar** and **aspose.pdf-new-4.0.0.jar**.

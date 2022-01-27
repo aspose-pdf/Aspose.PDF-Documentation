@@ -3,7 +3,7 @@ title: Public API Changes in Aspose.PDF for Java 10.1.0
 type: docs
 weight: 100
 url: /java/public-api-changes-in-aspose-pdf-for-java-10-1-0/
-lastmod: "2021-06-05"
+lastmod: "2022-01-27"
 ---
 
 {{% alert color="primary" %}}
@@ -12,47 +12,67 @@ This page lists the public API changes introduced in [Aspose.PDF for Java 10.1.0
 
 {{% /alert %}}
 
+
 **Public API and Backwards Incompatible Changes**
-#### **Added new exception classes:**
+
+## Added new exception classes:
+
 - com.aspose.pdf.exceptions.UnsupportedFontTypeException
 - com.aspose.pdf.exceptions.InvalidFormTypeOperationException
 - com.aspose.pdf.exceptions.InvalidCgmFileFormatException
-#### **com.aspose.pdf.facades.PdfViewer**
-*Added methods:*
+
+**com.aspose.pdf.facades.PdfViewer**
+
+Added methods:
 
 - public boolean getUseIntermidiateImage()
 - public void setUseIntermidiateImage(boolean value)
-#### **com.aspose.pdf.XForm**
-*Added method:*
+
+**com.aspose.pdf.XForm**
+
+Added method:
 
 - public void freeMemory()
-#### **com.aspose.pdf.TextSearchOptions**
-*Added methods:*
+
+**com.aspose.pdf.TextSearchOptions**
+
+Added methods:
 
 - public boolean getUseFontEngineEncoding()
 - public void setUseFontEngineEncoding(boolean value)
-#### **com.aspose.pdf.TextEditOptions**
-*Added methods:*
+
+**com.aspose.pdf.TextEditOptions**
+
+Added methods:
 
 - public TextEditOptions(boolean allowLanguageTransformation)
 - public boolean getAllowLanguageTransformation()
 - public void setAllowLanguageTransformation(boolean value)
-#### **com.aspose.pdf.Page**
-*Added methods:*
+
+**com.aspose.pdf.Page**
+
+Added methods:
 
 - public void processParagraphs()
 - public void dispose()
-#### **com.aspose.pdf.IDocument**
-*Added methods:*
+
+**com.aspose.pdf.IDocument**
+
+Added methods:
 
 - public void processParagraphs();
-#### **com.aspose.pdf.Document**
-*Added methods:*
+
+**com.aspose.pdf.Document**
+
+Added methods:
 
 - public void processParagraphs();
-#### **com.aspose.pdf.DocSaveOptions**
-*Added methods:*
+
+**com.aspose.pdf.DocSaveOptions**
+
+Added methods:
 
 - public boolean getAddReturnToLineEnd()
 - public void setAddReturnToLineEnd(boolean value)
-#### **com.aspose.pdf.HtmlDocumentTypeInternal - removed.**
+
+**com.aspose.pdf.HtmlDocumentTypeInternal - removed.**

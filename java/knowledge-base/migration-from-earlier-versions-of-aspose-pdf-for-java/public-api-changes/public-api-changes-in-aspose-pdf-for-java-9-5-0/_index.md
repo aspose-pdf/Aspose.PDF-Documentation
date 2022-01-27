@@ -3,7 +3,7 @@ title: Public API Changes in Aspose.PDF for Java 9.5.0
 type: docs
 weight: 70
 url: /java/public-api-changes-in-aspose-pdf-for-java-9-5-0/
-lastmod: "2021-06-05"
+lastmod: "2022-01-27"
 ---
 
 {{% alert color="primary" %}}
@@ -17,47 +17,35 @@ The CoordinateType property allows to set printable area to MediaBox or CropBox 
 
 **SetFieldImage method was added to XFA class:** 
 
-
-
 public void SetFieldImage(string fieldName, Stream image)
 
 Example:
 Following code snippet shows how to set image for XFA form field:
 
-{{< highlight java >}}
+```java
 
 Document doc = new Document("doc.pdf");
 InputStream fs = new FileInputStream("image.jpg");
 doc.getForm().getXFA().setFieldImage("form1\[0\].ImageField1\[0\]", fs);
 doc.save("37017-1.pdf");
-
-{{< /highlight >}}
-
-
-
+```
 
 **ReplaceAdjustment** enumeration is added to **TextReplaceOptions** class
 
 This enum provides following values:
 
-
 - **None** - No action, length of the line may be changed
 - **AdjustSpaceWidth** - Try to adjust spaces between words to keep line length
-
 
 **ReplaceAdjustmentAction** property is added into **TextReplaceOptions** class
 
 **TextReplaceOptions** class has new constructor that allows to set **ReplaceAdjustment** parameter:
 
-
 TextReplaceOptions(int adjustment, int scope)
-
 
 **TextReplaceOptions** property is added into **TextFragmentAbsorber** class
 
 **Ellipse** class is implemented:
-
-
 
 Constructor:
 
@@ -73,8 +61,7 @@ Properties:
 Example:
 Following code snippet shows how to add Ellipse:
 
-{{< highlight java >}}
-
+```java
 String outFile = "Ellipse.pdf";
 Document doc = new Document();
 Page page = doc.getPages().add();
@@ -83,12 +70,9 @@ page.getParagraphs().add(canvas);
 Ellipse ellipse1 = new Ellipse(50, 10, 100, 50);
 canvas.getShapes().add(ellipse1);
 doc.save(outFile);
-
-{{< /highlight >}}
-
+```
 
 **Path** class was implemented
-
 
 Constructors:
 
@@ -102,8 +86,7 @@ Property:
 Example:
 following code snippet shows how o add Path:
 
-{{< highlight java >}}
-
+```java
 Document doc = new Document();
 Page page = doc.getPages().add();
 Graph graph = new Graph(100, 400);
@@ -123,13 +106,9 @@ path.getShapes().add(line);
 arc = new Arc(200, 50, 30, 270, 90);
 path.getShapes().add(arc);
 doc.Save(outFile);
-
-{{< /highlight >}}
-
-
+```
 
 **HtmlFragment** class was added into package com.aspose.pdf*
-
 
 Constructor:
 
@@ -144,8 +123,7 @@ Parameter:
 Example:
 Following code snippet shows how to add HTML fragment:
 
-{{< highlight java >}}
-
+```java
 Document doc = new Document();
 Page page = doc.getPages().add();
 HtmlFragment titel = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
@@ -154,21 +132,18 @@ titel.getMargin().setBottom (10);
 titel.getMargin().setTop (200);
 page.getParagraphs().add(titel);
 doc.Save(outFile);
-
-{{< /highlight >}}
-
+```
 
 **ContainsUsageRights()** method was added into **PdfFileSignature** class
 
 **RemoveUsageRights()** method was added into **PdfFileSignature** class
 
-
 Example:
+
 Following code shows ho to remove usage rights feature from the document:
 
-{{< highlight java >}}
-
- PdfFileSignature pdfSign = new PdfFileSignature();
+```java
+PdfFileSignature pdfSign = new PdfFileSignature();
 
 try
 
@@ -193,18 +168,15 @@ finally
 {
     pdfSign.dispose();
 }
-
-{{< /highlight >}}
-
+```
 
 **isContainSignature()** method was renamed into **ContainsSignature(...)**
 
-  - Previous method name was not removed but marked as obsolete to be removed in future.
+- Previous method name was not removed but marked as obsolete to be removed in future.
     **isCoversWholeDocument()** method was renamed into **CoversWholeDocument(...)**
-  - Previous method name was not removed but marked as obsolete to be removed in future.
+- Previous method name was not removed but marked as obsolete to be removed in future.
 
 **Measure** class was added into **com.aspose.pdf** package
-
 
 The Class describes Measure coordinate system. Members of Measure class:
 
@@ -224,9 +196,7 @@ get/set Properties:
 - Origin - Point that shall specify the origin of the measurement coordinate system in default user space coordinates.
 - XYFactor - A factor that shall be used to convert the largest units along the y axis to the largest units along the x axis.
 
-
 **NumberFormat** class was added into **Measure** class
-
 
 The class represents Number format for measure.
 
@@ -247,9 +217,7 @@ get/set Properties:
 - BeforeText - Text that shall be concatenated to the left of the label.
 - AfterText - Text that shall be concatenated after the label
 
-
 Enumeration **FractionStyle** was added into **NumberFormat** class
-
 
 FractionStyle values:
 
@@ -258,9 +226,7 @@ FractionStyle values:
 - Round - Round fractional values to the nearest whole integer.
 - Truncate - Truncate to achieve whole units.
 
-
 **NumberFormatList** class was added into **Measure** class
-
 
 The class represents Represents list of number formats.
 
@@ -282,15 +248,13 @@ Methods:
 - public void removeAt(int index)
 - Removes number format from list.
 
-
 **Measure** property was added to **LineAnnotation** and **PolyLineAnnotation** classes.
 
-
 Examples:
+
 Following example demonstrates how to use Measure with LineAnnotation:
 
-{{< highlight java >}}
-
+```java
 Document doc = new Document("source.pdf");
 Rectangle rect = new Rectangle(260, 630, 451, 662);
 LineAnnotation line = new LineAnnotation(doc.getPages().get_Item(1), rect, new Point(266, 657), new Point(446, 656));
@@ -317,13 +281,11 @@ line.setShowCaption(true);
 line.setCaptionPosition(CaptionPosition.Top);
 doc.getPages().get_Item(1).getAnnotations().add(line);
 doc.save("output.pdf");
-
-{{< /highlight >}}
+```
 
 Following example demonstrates how to use Measure with PolylineAnnotation:
 
-{{< highlight java >}}
-
+```java
  Document doc = new Document("source.pdf");
 
 Point[] vertices = new Point[]
@@ -352,14 +314,12 @@ area.getMeasure().getDistanceFormat().add(new Measure.NumberFormat(area.getMeasu
 area.getMeasure().getDistanceFormat().get_Item(1).setUnitLabel("mm");
 doc.getPages().get_Item(1).getAnnotations().add(area);
 doc.save("output.pdf");
-
-{{< /highlight >}}
+```
 
 Following code snippet demonstrates how to read Measure properties:
 
-{{< highlight java >}}
-
- //read Measure properties
+```java
+//read Measure properties
 
 Document doc = new Document("measure.pdf");
 
@@ -370,31 +330,26 @@ System.out.println(((LineAnnotation)doc.getPages().get_Item(1).getAnnotations().
 System.out.println(((LineAnnotation)doc.getPages().get_Item(1).getAnnotations().get_Item(1)).getMeasure().getAreaFormat().get_Item(1).getConvresionFactor());
 
 System.out.println(((LineAnnotation)doc.getPages().get_Item(1).getAnnotations().get_Item(1)).getMeasure().getAreaFormat().get_Item(1).getFractionSeparator());
-
-{{< /highlight >}}
-
+```
 
 **Breaking change** - PdfPageEditor.Pages property was renamed to **ProcessPages**
 
 Following code snippet shows the property usage (sets zoom coefficient for page #1 of the document):
 
-{{< highlight java >}}
-
- PdfPageEditor editor = new PdfPageEditor();
+```java
+PdfPageEditor editor = new PdfPageEditor();
 editor.bindPdf("input.pdf");
 editor.setZoom(0.5f);
 editor.setProcessPages(new int[] { 1 });
 editor.save("output.pdf");
-
-{{< /highlight >}}
+```
 
 **Breaking change** - RichTextBoxField.RValue property was renamed to **RichTextValue**
 
 Following code snippet shows a sample where the renamed field was used:
 
-{{< highlight java >}}
-
- Document doc = new Document("input.pdf");
+```java
+Document doc = new Document("input.pdf");
 
 RichTextBoxField rt = new RichTextBoxField(doc.getPages().get_Item(1), new Rectangle(50, 600, 250, 650));
 rt.setPartialName("rt");
@@ -404,34 +359,28 @@ Document doc1 = new Document("34834.pdf");
 ((RichTextBoxField)doc1.getForm().get("rt")).setRichTextValue("<p>This is my <b>paragraph</b></p>");
 
 doc1.save("output.pdf");
-
-{{< /highlight >}}
-
+```
 
 **InsertBlankColumnAtFirst** option was added into **ExcelSaveOptions class**
 
 Following code snippet shows how to suppress appearing of first blank column:
 
-{{< highlight java >}}
-
- Document doc = new Document(inFile);
+```java
+Document doc = new Document(inFile);
 
 ExcelSaveOptions options = new ExcelSaveOptions();
 
 options.setInsertBlankColumnAtFirst(false);
 
 doc.save(outFile, options);
-
-{{< /highlight >}}
-
+```
 
 **PageInfo** property was added to **SvgLoadOptions** class.
 
 Following code snippet shows how to use SvgLoadOptions and set margin info with PageInfo property:
 
-{{< highlight java >}}
-
- SvgLoadOptions options = new SvgLoadOptions();
+```java
+SvgLoadOptions options = new SvgLoadOptions();
 
 options.ConversionEngine = SvgLoadOptions.ConversionEngines.NewEngine;
 options.getPageInfo().getMargin().setTop(0);
@@ -442,9 +391,7 @@ String inFile = "35730.svg";
 String outFile = "35730.pdf";
 Document pdfDocument = new Document(inFile, options);
 pdfDocument.save(outFile);
-
-{{< /highlight >}}
-
+```
 
 **ConversionEngines** enumeration was added to **SvgLoadOptions** class.
 
@@ -455,24 +402,20 @@ Following values are defined:
 
 **ConversionEngine** property was added to **SvgLoadOptions** class
 
-
 The LegacyEngine is still default value because NewEngine is in B-testing stages.
 Following code snippet shows sample how to use new engine:
 
-{{< highlight java >}}
-
- SvgLoadOptions options = new SvgLoadOptions();
+```java
+SvgLoadOptions options = new SvgLoadOptions();
 
 options.ConversionEngine = SvgLoadOptions.ConversionEngines.NewEngine;
 String inFile = "36516_2_income.svg";
 String outFile = "36516_2_income.pdf";
 Document pdfDocument = new Document(inFile, options);
 pdfDocument.save(outFile);
-
-{{< /highlight >}}
+```
 
 **ColumnAdjustment** property was added to **Table** class
-
 
 ColumnAdjustment enumeration was added into com.aspose.pdf package
 
@@ -481,58 +424,44 @@ following values were added:
 - **Customized** - The user sets the ColumnWidth manually.
 - **AutoFitToContent** - Performs auto fit to content
 
-
 **ColumnAdjustment** property was added to **Table** class
-
 
 The Default value is Customized.
 
 Following code snippet shows sample of the ColumnAdjustment property usage:
 
-{{< highlight java >}}
-
+```java
 Table hTable = new Table();
 hTable.getMargin().setTop(4);
 hTable.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5F, Color.getBlack()));
 hTable.setDefaultCellPadding(new MarginInfo(1, 1, 1, 1));
 hTable.setAlignment(HorizontalAlignment.Left);
 hTable.setColumnAdjustment(ColumnAdjustment.AutoFitToContent);
-
-{{< /highlight >}}
-
+```
 
 **MinimizeTheNumberOfWorksheets** property was introduced into **ExcelSaveOptions** object.
 
-
 Following code snippet shows how to minimize possible number of worksheets:
 
-{{< highlight java >}}
-
- Document doc = new Document("Original.pdf");
+```java
+Document doc = new Document("Original.pdf");
 ExcelSaveOptions options = new ExcelSaveOptions();
 //Set this property to true
 options.setMinimizeTheNumberOfWorksheets(true);
 doc.save("output.xls", options);
-
-{{< /highlight >}}
-
+```
 
 **Default** value was added to **PageLayout** enumeration.
 
-
 Following code snippet sets PageLayout to Default value:
 
-{{< highlight java >}}
-
+```java
 Document doc1 = new Document("input.pdf");
 doc1.setPageLayout (PageLayout.Default);
 doc1.save("output.pdf");
-
-{{< /highlight >}}
-
+```
 
 **Rounded Ends** support was implemented for **InkAnnotation**
-
 
 **CapStyle** enumeration was added into **com.aspose.pdf** package
 The following values are present
@@ -541,11 +470,9 @@ The following values are present
 - **Rounded** - rounded corners
 - **CapStyle** property was added to **InkAnnotation** class
 
-
 Following code snippet shows how to set the InkAnnotation corners as rounded:
 
-{{< highlight java >}}
-
+```java
 Document doc = new Document("PdfWithText.pdf");
 Page pdfPage = doc.getPages().get_Item(1);
 java.awt.Rectangle drect = new java.awt.Rectangle();
@@ -569,46 +496,35 @@ border.setWidth(25);
 ia.setOpacity(0.5);
 pdfPage.getAnnotations().add(ia);
 doc.save("37071.pdf");
-
-{{< /highlight >}}
-
+```
 
 **PDFNEWJAVA-33498** - Provide support to add Image from BufferedImage into PDF document
 
-
 Following code snippet shows adding Image from BufferedImage:
 
-{{< highlight java >}}
-
- BufferedImage originalImage = ImageIO.read(new File("c:\\image\\anyImage.jpg"));
+```java
+BufferedImage originalImage = ImageIO.read(new File("c:\\image\\anyImage.jpg"));
 Document pdfDocument1 = new Document();
 Page page2 = pdfDocument1.getPages().add();
 page2.getResources().getImages().add(originalImage)
-
-{{< /highlight >}}
-
+```
 
 **PDFNEWJAVA-34088** - PDF to HTML conversion: To specify image folder
 
-
 Following code snippet shows how to specify image folder:
-{{< highlight java >}}
 
-
- Document pdfDocument = new Document(testdata + "PDFNEWJAVA_34088.pdf");
+```java
+Document pdfDocument = new Document(testdata + "PDFNEWJAVA_34088.pdf");
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
 saveOptions.SpecialFolderForAllImages = testdata + "SpecialFolderForAllImages";       
 pdfDocument.save(testout + "PDFNEWJAVA_34088.html", saveOptions);
-
-{{< /highlight >}}
+```
 
 **PDFNEWJAVA-33203** - Setting DPI/PPI of images in PDF
 
-
 Following code snippet shows how to change image resolution in the pdf file:
 
-{{< highlight java >}}
-
+```java
 String myDir = "D:\\Temp\\";
 File fileIn = new File(myDir+"image.jpg");
 FileInputStream in = new FileInputStream(fileIn)
@@ -630,12 +546,9 @@ page.getPageInfo().getMargin().setRight(0);
 page.getPageInfo().getMargin().setTop(0);
 page.getPageInfo().getMargin().setBottom(0);	
 doc.save(out);
+```
 
-{{< /highlight >}}
-
-
-{{< highlight java >}}
-
+```java
 //internal image resolution change
 doc = new Document(myDir+"image.pdf");
 XImageCollection images = doc.getPages().get_Item(1).getResources().getImages();
@@ -643,12 +556,10 @@ ByteArrayOutputStream baos = new ByteArrayOutputStream();
 images.get_Item(1).save(baos, 10, 10);//define horizontal and vertical resolutions
 images.get_Item(1).replace(new ByteArrayInputStream(baos.toByteArray()));
 doc.save(myDir+"imageWithNewResolution.pdf");
+```
 
-{{< /highlight >}}
+**Summary:**
 
-
-
-<ins> **Summary:**
 **Added classes:**
 
 - com.aspose.pdf.drawing.Ellipse
@@ -674,7 +585,7 @@ com.aspose.pdf.generator.legacyxmlmodel.BookmarkIncludeType
 - com.aspose.pdf.Measure
 - com.aspose.pdf.MemoryFontSource
 
-<ins>**Changes in the classes:**
+## Changes in the classes:
 
 **com.aspose.pdf.facades.Form**
 

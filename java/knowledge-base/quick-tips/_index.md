@@ -3,7 +3,7 @@ title: Quick Tips
 type: docs
 weight: 50
 url: /java/quick-tips/
-lastmod: "2021-06-05"
+lastmod: "2022-01-27"
 ---
 
 {{% alert color="primary" %}}
@@ -11,7 +11,9 @@ lastmod: "2021-06-05"
 This page contains some quick tips related to Aspose.PDF for Java API
 
 {{% /alert %}}
-#### **Add JavaScript to PDF**
+
+## Add JavaScript to PDF
+
 The following code snippet can be used to set/add JavaScript to PDF file.
 
 {{< highlight java >}}
@@ -51,6 +53,7 @@ finally { if (document != null) document.dispose(); document = null; }
 {{< /highlight >}}
 
 **Some more examples**
+
 {{< highlight java >}}
 
 // after printing
@@ -62,7 +65,8 @@ document.getActions().setAfterSaving(new JavascriptAction("app.alert('File was S
 
 {{< /highlight >}}
 
-#### **Free utilized Memory**
+## Free utilized Memory
+
 If you have completed the work with Aspose.PDF for Java and wants to clear the memory from different static instances,
 to make the maximum memory for other processes, you should execute following code line:
 
@@ -71,7 +75,9 @@ to make the maximum memory for other processes, you should execute following cod
  com.aspose.pdf.MemoryCleaner.clear();
 
 {{< /highlight >}}
-#### **Load PDF from ByteArrayInputStream**
+
+## Load PDF from ByteArrayInputStream
+
 The following code snippet shows the steps to laod PDF file into ByteArray and then instantiate Document object with ByteArrayInputStream.
 
 {{< highlight java >}}
@@ -105,7 +111,6 @@ try {
 } catch (java.io.IOException ex) {
 
 
-
 }
 
 byte[] bytes = bos.toByteArray();
@@ -119,7 +124,9 @@ com.aspose.pdf.Document doc = new 	com.aspose.pdf.Document(new java.io.ByteArray
  System.out.println(doc.getPages().size());
 
 {{< /highlight >}}
-#### **Save PDF to ByteArrayOutputStream**
+
+## Save PDF to ByteArrayOutputStream
+
 The following code snippet shows the steps to save resultant PDF file into ByteArrayOutputStream.
 
 {{< highlight java >}}

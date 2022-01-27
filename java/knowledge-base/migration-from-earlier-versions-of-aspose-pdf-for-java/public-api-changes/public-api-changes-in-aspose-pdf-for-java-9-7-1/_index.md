@@ -3,7 +3,7 @@ title: Public API Changes in Aspose.PDF for Java 9.7.1
 type: docs
 weight: 80
 url: /java/public-api-changes-in-aspose-pdf-for-java-9-7-1/
-lastmod: "2021-06-05"
+lastmod: "2022-01-27"
 ---
 
 {{% alert color="primary" %}}
@@ -18,6 +18,8 @@ Following methods are changed in **com.aspose.pdf.generator.legacyxmlmodel.Headi
 
 - isAutoSequence(boolean) is changed to setAutoSequence(boolean)
 - isInList(boolean) is changed to setInList(boolean)
-#### **New Features implemented.**
+
+## New Features implemented
+
 - [EPUB to PDF conversion](http://www.aspose.com/docs/display/pdfjava/Convert+EPUB+File+to+PDF+Format).
 - [Converting non searchable PDF to searchable PDF document](http://www.aspose.com/docs/display/pdfjava/Converting+non+searchable+PDF+to+searchable+PDF+document)
