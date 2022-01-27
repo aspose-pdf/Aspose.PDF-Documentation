@@ -94,7 +94,7 @@ pdf1.save(out);
 
 When using the versions earlier to Aspose.PDF for Java 2.5.0, the code can successfully be executed and a resultant PDF document containing a hyperlink towards a page within the same document , can be generated. But, when the same code is compiled with 2.5.0 , you will notice number of errors because , there ha ve been change s in the class members and also some of the methods in classes have been removed . Now let ’ s start with the modification of code for version 2.5.0
 
-Use **import aspose.pdf.**;* instead of **import com.aspose.pdf.elements.**;* to include the package.
+Use `import aspose.pdf.*` ; instead of `import com.aspose.pdf.elements.*`; to include the package.
 
 For license initialization, please update your existing code from 
 
@@ -102,15 +102,15 @@ For license initialization, please update your existing code from 
 {{% alert color="primary" %}}
 **com.aspose.pdf.License lic = new com.aspose.pdf.License();**
 
-{{< highlight csharp >}}
+```java
 
  try
 {
 lic.setLicense(new FileInputStream(new File("Aspose.Total.Java.lic")));
 }
 
+```
 
-{{< /highlight >}}
 {{% /alert %}}
 
 to 
@@ -119,15 +119,15 @@ to 
 {{% alert color="primary" %}}
 **aspose.pdf.License lic = new aspose.pdf.License();**
 
-{{< highlight csharp >}}
+```java
 
  try
 {
 lic.setLicense(new FileInputStream(new File("Aspose.Total.Java.lic")));
 }
 
+```
 
-{{< /highlight >}}
 {{% /alert %}}
 
 **TextInfo** does not contain a method **setUnderLine(...)** anymore. Please try using **TextInfo.setIsUnderline(...)** ** instead **.**
@@ -138,28 +138,27 @@ The class named  **HyperLinkToLocalPdf** has been removed. So please update you
 {{% alert color="primary" %}}
 **//Set the link type of the text segment to Local**
 
-{{< highlight csharp >}}
+```java
 
  //Assign the id of the desired paragraph as a target id for the text segment
 
 segment1.setHyperLink(new HyperLinkToLocalPdf("product1"));
 
+```
 
-{{< /highlight >}}
 {{% /alert %}}
 
 to
 
-
 {{% alert color="primary" %}}
 **segment1.getHyperlink().setLinkType(HyperlinkType.Local);**
 
-{{< highlight csharp >}}
+```java
 
  segment1.getHyperlink().setTargetID("product1");
 
+```
 
-{{< /highlight >}}
 {{% /alert %}}
 
 The method name **setFirstParagraph** is removed from Text class . So in order to display the text segment in new page, you need to create a new Section object and add the text object to the newly created section. As b y default every section is displayed over new page, so there is no need for calling a method like **sec2.setIsNewPage(true**)**;
@@ -261,5 +260,3 @@ System.out.println(e.getMessage());
 In above topic we have explained some of the classes and methods that have been changed in new release. For a complete list of all the classes and their members, please visit [Aspose.PDF for Java API Reference](http://www.aspose.com/documentation/java-components/aspose.pdf-for-java/aspose.pdf-for-java-api-reference.html)
 
 To learn more about Aspose and its products, please click here <http://www.aspose.com/>
-
-

@@ -14,7 +14,7 @@ This page lists the public API changes introduced in Aspose.PDF for Java 9.0.0. 
 
 ## Moved
 
-com.aspose.pdf.Text.FontSourceCollection moved to com.aspose.pdf.FontSourceCollection 
+com.aspose.pdf.Text.FontSourceCollection moved to com.aspose.pdf.FontSourceCollection
 
 ## Added
 

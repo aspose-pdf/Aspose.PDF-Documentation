@@ -516,7 +516,7 @@ Following code snippet shows how to specify image folder:
 ```java
 Document pdfDocument = new Document(testdata + "PDFNEWJAVA_34088.pdf");
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.SpecialFolderForAllImages = testdata + "SpecialFolderForAllImages";       
+saveOptions.SpecialFolderForAllImages = testdata + "SpecialFolderForAllImages";
 pdfDocument.save(testout + "PDFNEWJAVA_34088.html", saveOptions);
 ```
 
@@ -537,14 +537,14 @@ Page page = doc.getPages().add();
 com.aspose.pdf.Image image1 = new com.aspose.pdf.Image();
 image1.setImageStream(in);
 image1.setFixHeight(page.getMediaBox().getHeight()/4);
-image1.setFixWidth(page.getMediaBox().getWidth()/2);	
+image1.setFixWidth(page.getMediaBox().getWidth()/2);
 NewParagraphPlacementInfo placementInfo = new NewParagraphPlacementInfo();
 placementInfo.setStartNewPage(true);
-page.getParagraphs().add(image1, placementInfo);	
+page.getParagraphs().add(image1, placementInfo);
 page.getPageInfo().getMargin().setLeft(5);
 page.getPageInfo().getMargin().setRight(0);
 page.getPageInfo().getMargin().setTop(0);
-page.getPageInfo().getMargin().setBottom(0);	
+page.getPageInfo().getMargin().setBottom(0);
 doc.save(out);
 ```
 
@@ -804,14 +804,14 @@ Changed:
 
 - The next list of the fields was changed to the separate getter and setter field:
 
-{{< highlight java >}}
+```java
 
  FontSize, FontName, TruetypeFontFileName, IsUnicode, FontAfmFile, FontPfmFile, FontOutlineFile, FontEncodingFile,
  IsTrueTypeFontBold, IsTrueTypeFontItalic,{color} {color:#222222}FontEncoding, IsFontEmbedded, IsUnderline,{color}
  {color:#222222}IsOverline,{color} {color:#222222}CharSpace, WordSpace, LineSpacing, OverlineOffset, UnderlineOffset, RenderingMode,
  Color, BackgroundColor, IsRightToLeft, StrokeWidth, StrokeColor, IsBaseline, Alignment.
 
-{{< /highlight >}}
+```
 
 Added:
 

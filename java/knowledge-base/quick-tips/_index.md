@@ -16,7 +16,7 @@ This page contains some quick tips related to Aspose.PDF for Java API
 
 The following code snippet can be used to set/add JavaScript to PDF file.
 
-{{< highlight java >}}
+```java
 
 String path = "D:\\";
 String fileOut = path + "JavaScript.pdf";
@@ -35,10 +35,10 @@ try
     //Assigne JavascriptAction object to desired action of Document
     document.setOpenAction(javaScript);
     document.setOpenAction(new JavascriptAction("app.alert('Hello PDF')"));
-   
+
     //Adding JavaScript at Page Level
     document.getActions().setBeforeClosing(new JavascriptAction("app.alert('document is closing')"));
-   
+
     document.getPages().get_Item(1).getActions().setOnOpen(new JavascriptAction("app.alert('page 1 is opened')"));
 
     document.getPages().get_Item(2).getActions().setOnOpen(new JavascriptAction("app.alert('page 2 is opened')"));
@@ -50,11 +50,11 @@ try
 }
 finally { if (document != null) document.dispose(); document = null; }
 
-{{< /highlight >}}
+```
 
 **Some more examples**
 
-{{< highlight java >}}
+```java
 
 // after printing
 document.getActions().setAfterPrinting(new JavascriptAction("app.alert('File was printed')"));
@@ -63,24 +63,24 @@ document.getActions().setAfterPrinting(new JavascriptAction("app.alert('File was
 document.getActions().setAfterSaving(new JavascriptAction("app.alert('File was Saved')"));
 
 
-{{< /highlight >}}
+```
 
 ## Free utilized Memory
 
 If you have completed the work with Aspose.PDF for Java and wants to clear the memory from different static instances,
 to make the maximum memory for other processes, you should execute following code line:
 
-{{< highlight java >}}
+```java
 
  com.aspose.pdf.MemoryCleaner.clear();
 
-{{< /highlight >}}
+```
 
 ## Load PDF from ByteArrayInputStream
 
 The following code snippet shows the steps to laod PDF file into ByteArray and then instantiate Document object with ByteArrayInputStream.
 
-{{< highlight java >}}
+```java
 
  // source PDF file
 
@@ -123,13 +123,13 @@ com.aspose.pdf.Document doc = new 	com.aspose.pdf.Document(new java.io.ByteArray
 
  System.out.println(doc.getPages().size());
 
-{{< /highlight >}}
+```
 
 ## Save PDF to ByteArrayOutputStream
 
 The following code snippet shows the steps to save resultant PDF file into ByteArrayOutputStream.
 
-{{< highlight java >}}
+```java
 
  com.aspose.pdf.Document pdfDocument = new 	com.aspose.pdf.Document("source.pdf");
 
@@ -153,4 +153,4 @@ pdfDocument.close();
 
 }catch (Throwable e) {}
 
-{{< /highlight >}}
+```

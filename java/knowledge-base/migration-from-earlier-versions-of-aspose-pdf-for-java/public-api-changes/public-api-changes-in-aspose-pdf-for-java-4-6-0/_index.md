@@ -55,7 +55,7 @@ com.aspose.pdf.drawing.Line 
 
 com.aspose.pdf.drawing.Rectangle 
 
-com.aspose.pdf.drawing.Shape 
+com.aspose.pdf.drawing.Shape
 
 **Added**:
 
