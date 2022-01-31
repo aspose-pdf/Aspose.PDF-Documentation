@@ -3,7 +3,7 @@ title: Extract Links from the PDF File
 linktitle: Extract Links
 type: docs
 weight: 30
-url: /net/extract-links/
+url: /cpp/extract-links/
 description: Extract links from PDF with C#. This topic explain you how to extract links using AnnotationSelector class. 
 lastmod: "2021-06-05"
 sitemap:
@@ -13,29 +13,35 @@ sitemap:
 
 ## Extract Links from the PDF File
 
-Links are represented as annotations in a PDF file, so to extract links, extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) objects.
+Links are represented as annotations in a PDF file, so to extract links, extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) objects.
 
-1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
-1. Get the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) you want to extract links from.
-1. Use the [AnnotationSelector](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) class to extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) objects from the specified page.
-1. Pass the [AnnotationSelector](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) object to the Page object’s Accept method.
-1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) object’s Selected property.
+1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
+1. Get the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) you want to extract links from.
+1. Use the [AnnotationSelector](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) class to extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) objects from the specified page.
+1. Pass the [AnnotationSelector](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object to the Page object’s Accept method.
+1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object’s Selected property.
 
 The following code snippet shows you how to extract links from a PDF file.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Open document
-Document document = new Document(dataDir+ "ExtractLinks.pdf");
-// Extract actions
-Page page = document.Pages[1];
-AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
-page.Accept(selector);
-IList<Annotation> list = selector.Selected;
-Annotation annotation = (Annotation)list[0];
-dataDir = dataDir + "ExtractLinks_out.pdf";
-// Save updated document
-document.Save(dataDir);
+```cpp
+void ExtractLinksFromThePDFFile() {
+   
+    // Load the PDF file
+    String _dataDir("C:\\Samples\\");
+
+    // Create Document instance
+    auto document = MakeObject<Document>(_dataDir + u"UpdateLinks.pdf");
+
+    // Add page to pages collection of PDF file
+    auto page = document->get_Pages()->idx_get(1);
+
+
+    auto selector = MakeObject<Aspose::Pdf::Annotations::AnnotationSelector>(MakeObject<Aspose::Pdf::Annotations::LinkAnnotation>(page, Rectangle::get_Trivial()));
+    page->Accept(selector);
+    auto list = selector->get_Selected();
+    for (auto annot : list)
+    {
+        Console::WriteLine(u"Annotation located: {0}", annot->get_Rect());
+    }
+}
 ```

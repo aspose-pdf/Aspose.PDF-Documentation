@@ -3,9 +3,9 @@ title: Update Links in PDF
 linktitle: Update Links
 type: docs
 weight: 20
-url: /net/update-links/
-description: Update links in PDF programmatically. This guide is about how to update links in PDF in C# language. 
-lastmod: "2021-06-05"
+url: /cpp/update-links/
+description: Update links in PDF programmatically with Aspose.PDF for C++. This guide is about how to update links in PDF file. 
+lastmod: "2022-01-31"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,114 +13,137 @@ sitemap:
 
 ## Update Links in PDF File
 
-As discussed in Add Hyperlink in a PDF File, the [LinkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) class makes it possible to add links in a PDF file. There’s also a similar class used to get existing links from inside PDF files. Use this if you need to update an existing link. To update an existing link:
+As discussed in Add Hyperlink in a PDF File, the [LinkAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) class makes it possible to add links in a PDF file. There’s also a similar class used to get existing links from inside PDF files. Use this if you need to update an existing link. To update an existing link:
 
 1. Load a PDF file.
 1. Go to a specific page in the PDF file.
-1. Specify the link destination using the [GoToAction](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) object’s Destination property.
-1. The destination page is specified using the [XYZExplicitDestination](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) constructor.
+1. Specify the link destination using the [GoToAction](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.go_to_action) object’s Destination property.
+1. The destination page is specified using the [XYZExplicitDestination](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.x_y_z_explicit_destination) constructor.
 
 ### Set Link Target to a Page in the Same Document
 
 The following code snippet shows you how to update a link in a PDF file and set its target to the second page of the document.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Load the PDF file
-Document doc = new Document(dataDir + "UpdateLinks.pdf");
-// Get the first link annotation from first page of document
-LinkAnnotation linkAnnot = (LinkAnnotation)doc.Pages[1].Annotations[1];
-// Modification link: change link destination
-GoToAction goToAction = (GoToAction)linkAnnot.Action;
-// Specify the destination for link object
-// The first parameter is document object, second is destination page number.
-// The 5ht argument is zoom factor when displaying the respective page. When using 2, the page will be displayed in 200% zoom
-goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
-dataDir = dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf";
-// Save the document with updated link
-doc.Save(dataDir);
+```cpp
+void SetLinkTargetToAPageInTheSameDocument()
+{
+    String _dataDir("C:\\Samples\\");
+    // Create Document instance
+    auto document = MakeObject<Document>(_dataDir + u"UpdateLinks.pdf");
+
+    // Add page to pages collection of PDF file
+    auto page = document->get_Pages()->idx_get(1);
+    auto link = System::DynamicCast<Aspose::Pdf::Annotations::LinkAnnotation>(page->get_Annotations()->idx_get(1));
+
+    // Modification link: change link destination
+    auto goToAction = System::DynamicCast<Aspose::Pdf::Annotations::GoToAction>(link->get_Action());
+
+    // Specify the destination for link object
+    // Represents explicit destination that displays the page with the coordinates (left, top) positioned at the upper-left corner of 
+    // the window and the contents of the page magnified by the factor zoom.
+    // The 1st parameter is destination page number. 
+    // The 2nd is left coordinate
+    // The 3nd is top coordinate
+    // The 4th argument is zoom factor when displaying the respective page. Using 2 means page will be displayed in 200% zoom
+    goToAction->set_Destination(MakeObject<Aspose::Pdf::Annotations::XYZExplicitDestination>(1, 1, 2, 2));
+
+    // Save the document with updated link
+    document->Save(_dataDir + u"UpdateLinks_out.pdf");
+}
 ```
 
 ### Set Link Destination to a Web Address
 
-To update the hyperlink so that it points to a web address, instantiate the [GoToURIAction](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) object and pass it to the LinkAnnotation’s Action property. The following code snippet shows how to update a link in a PDF file and set its target to a web address.
+To update the hyperlink so that it points to a web address, instantiate the [GoToURIAction](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.go_to_u_r_i_action) object and pass it to the LinkAnnotation’s Action property. The following code snippet shows how to update a link in a PDF file and set its target to a web address.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Load the PDF file
-Document doc = new Document(dataDir + "UpdateLinks.pdf");
+```cpp
+void SetLinkDestinationToWebAddress() 
+{
+    // Load the PDF file
+    String _dataDir("C:\\Samples\\");
+    // Create Document instance
+    auto document = MakeObject<Document>(_dataDir + u"UpdateLinks.pdf");
 
-// Get the first link annotation from first page of document
-LinkAnnotation linkAnnot = (LinkAnnotation)doc.Pages[1].Annotations[1];
-// Modification link: change link action and set target as web address
-linkAnnot.Action = new GoToURIAction("www.aspose.com");
+    // Add page to pages collection of PDF file
+    auto page = document->get_Pages()->idx_get(1);
+    auto link = System::DynamicCast<Aspose::Pdf::Annotations::LinkAnnotation>(page->get_Annotations()->idx_get(1));
 
-dataDir = dataDir + "SetDestinationLink_out.pdf";
-// Save the document with updated link
-doc.Save(dataDir);
+    // Modification link: change link action and set target as web address
+    link->set_Action(MakeObject<Aspose::Pdf::Annotations::GoToURIAction>("www.aspose.com"));
+
+    // Save the document with updated link
+    document->Save(_dataDir + u"UpdateLinks_out.pdf");
+}
 ```
 
 ### Set Link Target to Another PDF File
 
 The following code snippet shows how to update a link in a PDF file and set its target to another PDF file.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Load the PDF file
-Document document = new Document(dataDir + "UpdateLinks.pdf");
+```cpp
+void SetLinkTargetToAnotherPDFFile()
+{
+    // Load the PDF file
+    String _dataDir("C:\\Samples\\");
+    // Create Document instance
+    auto document = MakeObject<Document>(_dataDir + u"UpdateLinks.pdf");
 
-LinkAnnotation linkAnnot = (LinkAnnotation)document.Pages[1].Annotations[1];
+    // Add page to pages collection of PDF file
+    auto page = document->get_Pages()->idx_get(1);
+    auto linkAnnot = System::DynamicCast<Aspose::Pdf::Annotations::LinkAnnotation>(page->get_Annotations()->idx_get(1));
 
-GoToRemoteAction goToR = (GoToRemoteAction)linkAnnot.Action;
-// Next line update destination, do not update file
-goToR.Destination = new XYZExplicitDestination(2, 0, 0, 1.5);
-// Next line update file
-goToR.File = new FileSpecification(dataDir +  "input.pdf");
+    // Modification link: change link action and set target as web address
+    auto goToR = System::DynamicCast<Aspose::Pdf::Annotations::GoToRemoteAction>(linkAnnot->get_Action());
+    // Next line update destination, do not update file
+    goToR->set_Destination(MakeObject<Aspose::Pdf::Annotations::XYZExplicitDestination>(2, 0, 0, 1.5));
+    // Next line update file
+    goToR->set_File(MakeObject<FileSpecification>(_dataDir + u"input.pdf"));
 
-dataDir = dataDir + "SetTargetLink_out.pdf";
-// Save the document with updated link
-document.Save(dataDir);
+    // Save the document with updated link
+    document->Save(_dataDir + u"UpdateLinks_out.pdf");
+}
 ```
 
 ### Update LinkAnnotation Text Color
 
 The link annotation does not contain text. Instead, the text is placed in the contents of the page under the annotation. Therefore, to change the color of the text, replace the color of the page text instead of trying change color of the annotation. The following code snippet shows how to update the color of link annotation in a PDF file.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Load the PDF file
-Document doc = new Document(dataDir + "UpdateLinks.pdf");
-foreach (Annotation annotation in doc.Pages[1].Annotations)
+```cpp
+void UpdateLinkAnnotationTextColor() 
 {
-    if (annotation is LinkAnnotation)
-    {
-        // Search the text under the annotation
-        TextFragmentAbsorber ta = new TextFragmentAbsorber();
-        Rectangle rect = annotation.Rect;
-        rect.LLX -= 10;
-        rect.LLY -= 10;
-        rect.URX += 10;
-        rect.URY += 10;
-        ta.TextSearchOptions = new TextSearchOptions(rect);
-        ta.Visit(doc.Pages[1]);
-        // Change color of the text.
-        foreach (TextFragment tf in ta.TextFragments)
-        {
-            tf.TextState.ForegroundColor = Color.Red;
-        }
-    }
+    // Load the PDF file
+    String _dataDir("C:\\Samples\\");
 
+    // Create Document instance
+    auto document = MakeObject<Document>(_dataDir + u"UpdateLinks.pdf");
+
+    // Add page to pages collection of PDF file
+    auto page = document->get_Pages()->idx_get(1);
+
+    for (auto annotation : page->get_Annotations())
+    {
+        if (annotation->get_AnnotationType() == Aspose::Pdf::Annotations::AnnotationType::Link)
+        {
+            // Search the text under the annotation
+            auto ta = MakeObject<Aspose::Pdf::Text::TextFragmentAbsorber>();
+            auto rect = annotation->get_Rect();
+            rect->set_LLX(rect->get_LLX() - 10);
+            rect->set_LLY(rect->get_LLY() - 10);
+            rect->set_URX(rect->get_URX() + 10);
+            rect->set_URY(rect->get_URY() + 10);
+
+            ta->set_TextSearchOptions(MakeObject<Aspose::Pdf::Text::TextSearchOptions>(rect));
+            ta->Visit(page);
+            // Change color of the text.
+            for (auto tf : ta->get_TextFragments())
+            {
+                tf->get_TextState()->set_ForegroundColor(Color::get_Red());
+            }
+        }
+
+    }
+    // Save the document with updated link
+    document->Save(_dataDir + u"UpdateLinkTextColor_out.pdf");
 }
-dataDir = dataDir + "UpdateLinkTextColor_out.pdf";
-// Save the document with updated link
-doc.Save(dataDir);
 ```
 
