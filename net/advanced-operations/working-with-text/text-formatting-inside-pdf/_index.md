@@ -1,13 +1,13 @@
 ---
- title: Text Formatting inside PDF using C#
+title: Text Formatting inside PDF using C#
 linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /net/text-formatting-inside-pdf/
 description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, and etc.
-lastmod: "2021-06-05"
+lastmod: "2022-01-31"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -25,7 +25,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 Aspose.Pdf.Document document = new Aspose.Pdf.Document();
 Aspose.Pdf.Page page = document.Pages.Add();
 
-Aspose.Pdf.Text.TextFragment text = new Aspose.Pdf.Text.TextFragment("A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog.");
+string textFragment = string.Concat(Enumerable.Repeat("A quick brown fox jumped over the lazy dog. ", 10));
+
+Aspose.Pdf.Text.TextFragment text = new Aspose.Pdf.Text.TextFragment(textFragment);
 
 // Initilize TextFormattingOptions for the text fragment and specify SubsequentLinesIndent value
 text.TextState.FormattingOptions = new Aspose.Pdf.Text.TextFormattingOptions()
@@ -47,7 +49,7 @@ page.Paragraphs.Add(text);
 text = new Aspose.Pdf.Text.TextFragment("Line5");
 page.Paragraphs.Add(text);
 
-document.Save(dataDir + "SubsequentIndent_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+document.Save(dataDir + "SubsequentIndent_out.pdf");
 ```
 
 ## How to add Text Border
@@ -140,7 +142,7 @@ editor.Save(dataDir);
 
 TextFragment doesn’t support line feed inside the text. However in order to add text with line feed, please use TextFragment with TextParagraph:
 
-- use “\r\n” or Environment.NewLine in TextFragment instead of single “\n”;
+- use "\r\n" or Environment.NewLine in TextFragment instead of single "\n";
 - create TextParagraph object. It will add text with line splitting;
 - add the TextFragment with TextParagraph.AppendLine;
 - add the TextParagraph with TextBuilder.AppendParagraph.
