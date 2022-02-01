@@ -29,10 +29,6 @@ The code below results in the following portfolio.
 ![A PDF Portfolio created with Aspose.PDF for Java](working-with-pdf-portfolio_1.jpg)
 
 ```java
-public class ExamplePortfolio {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Attachments/";
-
     public static void CreatePortfolio() throws IOException {
         // Instantiate Document Object
         Document pdfDocument = new Document();
@@ -58,7 +54,6 @@ public class ExamplePortfolio {
         // Save Portfolio document
         pdfDocument.save(_dataDir + "CreatePDFPortfolio_out.pdf");
     }
-}
 ```
 
 ## Extract files from PDF Portfolio
@@ -71,15 +66,36 @@ The following code snippet shows you the steps to extract files from PDF portfol
 
 ![Extract files from PDF Portfolio](working-with-pdf-portfolio_2.jpg)
 
+```java
+    public static void ExtractPortfolio() throws IOException {
+        // Open a document
+        Document pdfDocument = new Document(_dataDir + "PDFPortfolio.pdf");
+        // Get collection of embedded files
+        EmbeddedFileCollection embeddedFiles = pdfDocument.getEmbeddedFiles();
+
+        // Itterate through individual file of Portfolio
+        for (FileSpecification fileSpecification : embeddedFiles) {
+            InputStream initialStream = fileSpecification.getContents();
+            byte[] buffer = new byte[fileSpecification.getContents().available()];
+            initialStream.read(buffer);
+
+            File targetFile = new File(_dataDir + fileSpecification.getName());
+            OutputStream outStream = new FileOutputStream(targetFile);
+            outStream.write(buffer);
+            outStream.close();
+        }
+    }
+```
+
 ## Remove Files from PDF Portfolio
 
 In order to delete/remove files from PDF portfolio, try using the following code lines.
 
 ```java
-    public static void RemoveFilesFromPDFPortfolio() {
-        // Load source PDF Portfolio
-        Document pdfDocument = new Document(_dataDir + "PDFPortfolio.pdf");
-        pdfDocument.getCollection().delete();
-        pdfDocument.save(_dataDir + "No_PortFolio_out.pdf");
-    }
+public static void RemoveFilesFromPDFPortfolio() {
+    // Load source PDF Portfolio
+    Document pdfDocument = new Document(_dataDir + "PDFPortfolio.pdf");
+    pdfDocument.getCollection().delete();
+    pdfDocument.save(_dataDir + "No_PortFolio_out.pdf");
+}
 ```
