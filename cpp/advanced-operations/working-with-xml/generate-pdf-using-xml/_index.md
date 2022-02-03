@@ -543,7 +543,16 @@ Let's define the page with default parameters. Our page will have an A4 page siz
 
 To generate PDF document we will use BindXml() method.
 
+```cpp
+void WorkingWithXML::Example_XML_to_PDF()
+{
+ String _dataDir("C:\\Samples\\");
 
+ auto pdfDocument = MakeObject<Document>();
+ pdfDocument->BindXml(_dataDir + u"aspose_pdf_demo.xml");
+ pdfDocument->Save(_dataDir + u"data_xml.pdf");
+}
+```
 
 To define a new page size we should add a `PageInfo` element. In the following example, we were set A5 page size and margins 25mm and 10mm.
 
