@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/advanced-operations/
 description: Aspose.PDF for C++ can perform not only simple and easy tasks but also cope with more complex functions. For advanced users and developers, the Advanced section will detail these features for you.
-lastmod: "2021-11-10"
+lastmod: "2022-01-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
