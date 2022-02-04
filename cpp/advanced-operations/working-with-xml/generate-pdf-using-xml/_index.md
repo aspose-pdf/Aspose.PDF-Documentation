@@ -272,33 +272,37 @@ To convert this file to PDF we should create an XSL with HTML layout. Let's rend
 So, we need to transform XML and load into PDF document. The following example shows this way:
 
 ```cpp
-void ExampleXSLTtoPDF()
+void WorkingWithXML::ExampleXSLTtoPDF()
 {
-    String _dataDir("C:\\Samples\\");
+ String _dataDir("C:\\Samples\\");
 
-    auto XmlContent = System::IO::File::ReadAllText(u"XMLFile1.xml");
-    auto XsltContent = System::IO::File::ReadAllText(u"XSLTFile1.xslt");
+ auto XmlContent = System::IO::File::ReadAllText(u"XMLFile1.xml");
+ auto XsltContent = System::IO::File::ReadAllText(u"XSLTFile1.xslt");
 
-    auto options = MakeObject<Aspose::Pdf::HtmlLoadOptions>();
-    // set page size to A5
-    options->get_PageInfo()->set_Height (595);
-    options->get_PageInfo()->set_Width (420);
-    auto pdfDocument = MakeObject<Aspose::Pdf::Document>(TransformXmltoHtml(XmlContent, XsltContent), options);
-    pdfDocument->Save(_dataDir + u"data_xml.pdf");
+ auto options = MakeObject<Aspose::Pdf::HtmlLoadOptions>();
+ // set page size to A5
+ options->get_PageInfo()->set_Height(595);
+ options->get_PageInfo()->set_Width(420);
+ auto pdfDocument = MakeObject<Aspose::Pdf::Document>(TransformXmltoHtml(XmlContent, XsltContent), options);
+ pdfDocument->Save(_dataDir + u"data_xml.pdf");
 }
 
 System::SharedPtr<System::IO::MemoryStream> TransformXmltoHtml(String inputXml, String xsltString)
 {
-    auto transform = MakeObject<System::Xml::Xsl::XslCompiledTransform>();
-    auto reader = System::Xml::XmlReader::Create(MakeObject<System::IO::StringReader>(xsltString));
-    transform->Load(reader);
-    auto memoryStream = MakeObject<System::IO::MemoryStream>();
-    auto results = MakeObject<System::Xml::XmlWriter>(memoryStream);
-    auto reader = System::Xml::XmlReader::Create(MakeObject<System::IO::StringReader>(inputXml));
-        
-    transform->Transform(reader, results);
-    memoryStream->set_Position(0);
-    return memoryStream;
+ auto transform = MakeObject<System::Xml::Xsl::XslCompiledTransform>();
+
+ auto reader = System::Xml::XmlReader::Create(MakeObject<System::IO::StringReader>(xsltString));
+ transform->Load(reader);
+
+ auto memoryStream = MakeObject<System::IO::MemoryStream>();
+ auto results = System::Xml::XmlWriter::Create(memoryStream);
+
+ auto reader2 = System::Xml::XmlReader::Create(MakeObject<System::IO::StringReader>(inputXml));
+
+ transform->Transform(reader2,nullptr,results);
+
+ memoryStream->set_Position (0);
+ return memoryStream;
 }
 ```
 
@@ -394,14 +398,14 @@ Aspose.PDF has a special [XslFoLoadOptions](https://apireference.aspose.com/pdf/
 The following snippet shows how to use this class with the sample files described above.
 
 ```cpp
-void Example_XSLFO_to_PDF()
+void WorkingWithXML::Example_XSLFO_to_PDF()
 {
-    String _dataDir("C:\\Samples\\");
-        // Instantiate XslFoLoadOption object
-    auto options = MakeObject<Aspose::Pdf::XslFoLoadOptions>("employees.xslt");
-    // Create Document object
-    auto pdfDocument = MakeObject<Aspose::Pdf::Document>(u"employees.xml", options);
-    pdfDocument->Save(_dataDir + u"data_xml.pdf");
+ String _dataDir("C:\\Samples\\");
+ // Instantiate XslFoLoadOption object
+ auto options = MakeObject<Aspose::Pdf::XslFoLoadOptions>(u"employees.xslt");
+ // Create Document object
+ auto pdfDocument = MakeObject<Aspose::Pdf::Document>(u"employees.xml", options);
+ pdfDocument->Save(_dataDir + u"data_xml.pdf");
 }
 ```
 
@@ -504,21 +508,21 @@ set as property in [XslFoLoadOptions](https://apireference.aspose.com/pdf/cpp/cl
 The following snippet shows how to use this class with the sample files described above.
 
 ```cpp
-void Example_XSLFO_to_PDF_Param_21_7()
+void WorkingWithXML::Example_XSLFO_to_PDF_Param_21_7()
 {
-    String _dataDir("C:\\Samples\\");
-    String xmlInputFile(_dataDir + u"employees.xml");
-    String xsltInputFile(_dataDir + u"employees.xslt");
-    String outputFile (_dataDir + u"out.pdf");
+ String _dataDir("C:\\Samples\\");
+ String xmlInputFile(_dataDir + u"employees.xml");
+ String xsltInputFile(_dataDir + u"employees.xslt");
+ String outputFile(_dataDir + u"out.pdf");
 
-    auto options = MakeObject<Aspose::Pdf::XslFoLoadOptions>(xsltInputFile);
+ auto options = MakeObject<Aspose::Pdf::XslFoLoadOptions>(xsltInputFile);
 
-    options->set_XsltArgumentList(MakeObject<System::Xml::Xsl::XsltArgumentList>());
-    String value(u"yes");
-    options->get_XsltArgumentList()->AddParam(u"isBoldName", u"", value);
+ options->set_XsltArgumentList(MakeObject<System::Xml::Xsl::XsltArgumentList>());
+ auto value = System::ObjectExt::Box(System::String(u"yes"));
+ options->get_XsltArgumentList()->AddParam(u"isBoldName", u"", value);
 
-    auto document = MakeObject<Document>(xmlInputFile, options);
-    document->Save(outputFile);
+ auto document = MakeObject<Document>(xmlInputFile, options);
+ document->Save(outputFile);
 }
 ```
 
@@ -1007,22 +1011,22 @@ BindXML() method offers the feature to load XML file contents and Document.save(
 ```
 
 ```cpp
-void UpdatingontentDynamically() {
-    
-    String _dataDir("C:\\Samples\\");
+void WorkingWithXML::UpdatingontentDynamically() {
 
-    // Instantiate Document object
-    auto doc = MakeObject<Document>();
-    // Bind source XML file
-    doc->BindXml(_dataDir + u"log.xml");
-    // Get reference of page object from XML
-    auto page = System::DynamicCast<Page>(doc->GetObjectById(u"mainSection"));
-    // Get reference of first TextSegment with ID boldHtml
-    auto segment = System::DynamicCast<Aspose::Pdf::Text::TextSegment>(doc->GetObjectById(u"boldHtml"));
-    // Get reference of second TextSegment with ID strongHtml
-    segment = System::DynamicCast<Aspose::Pdf::Text::TextSegment>(doc->GetObjectById(u"strongHtml"));
-    // Save resultant PDF file
-    doc->Save(_dataDir + u"XMLToPDF_out.pdf");
+ String _dataDir("C:\\Samples\\");
+
+ // Instantiate Document object
+ auto doc = MakeObject<Document>();
+ // Bind source XML file
+ doc->BindXml(_dataDir + u"log.xml");
+ // Get reference of page object from XML
+ auto page = System::DynamicCast<Page>(doc->GetObjectById(u"mainSection"));
+ // Get reference of first TextSegment with ID boldHtml
+ auto segment = System::DynamicCast<Aspose::Pdf::Text::TextSegment>(doc->GetObjectById(u"boldHtml"));
+ // Get reference of second TextSegment with ID strongHtml
+ segment = System::DynamicCast<Aspose::Pdf::Text::TextSegment>(doc->GetObjectById(u"strongHtml"));
+ // Save resultant PDF file
+ doc->Save(_dataDir + u"XMLToPDF_out.pdf");
 }
 ```
 
@@ -1093,19 +1097,21 @@ Following XML template contains an `<Image>` tag in it with an ID "testImg". In 
 Code to set image path in XML template is as follows:
 
 ```cpp
-void UpdatingontentDynamically() {
-    String _dataDir("C:\\Samples\\");
-    String inFile =  _dataDir + u"aspose-logo.jpg";
-    String outFile = _dataDir + u"output_out.pdf";
+void WorkingWithXML::UpdatingontentDynamically2() {
 
-    // Instantiate Document object
-    auto doc = MakeObject<Document>();
-    // Bind source XML file
-    doc->BindXml(_dataDir + u"input.xml");
+ String _dataDir("C:\\Samples\\");
+ String inFile = _dataDir + u"aspose-logo.jpg";
+ String outFile = _dataDir + u"output_out.pdf";
 
-    auto image = System::DynamicCast<Image>(doc->GetObjectById(u"testImg");
-    
-    image->set_File(inFile);
-    doc->Save(outFile);
+ // Instantiate Document object
+ auto doc = MakeObject<Document>();
+ // Bind source XML file
+ doc->BindXml(_dataDir + u"input.xml");
+
+ auto image = System::DynamicCast<Image>(doc->GetObjectById(u"testImg"));
+
+ image->set_File(inFile);
+ doc->Save(outFile);
 }
 ```
+

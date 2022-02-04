@@ -60,23 +60,26 @@ Please follow these steps to convert an XML file into a PDF document using XSLT:
 using namespace System;
 using namespace Aspose::Pdf;
 
-void CreatingPDFfromXMLusingXSLT()
-{
-    String _dataDir("C:\\Samples\\");
-    //Create pdf document
-    auto pdf = MakeObject<Aspose::Pdf::Document>();
-    //Bind XML and XSLT files to the document
-    try
-    {
-        pdf->BindXml(_dataDir + u"\\HelloWorld.xml", _dataDir + u"\\HelloWorld.xslt");
-    }
-    catch (System::Exception ex)
-    {
-        std::cerr << ex.what();
-        throw;
-    }
+static System::SharedPtr<System::IO::MemoryStream> TransformXmltoHtml(String inputXml, String xsltString);
 
-    //Save the document
-    pdf->Save(_dataDir + u"HelloWorldUsingXmlAndXslt.pdf");
+void WorkingWithXML::CreatingPDFfromXMLusingXSLT()
+{
+ String _dataDir("C:\\Samples\\");
+ //Create pdf document
+ auto pdf = MakeObject<Aspose::Pdf::Document>();
+ //Bind XML and XSLT files to the document
+ try
+ {
+  pdf->BindXml(_dataDir + u"\\HelloWorld.xml", _dataDir + u"\\HelloWorld.xslt");
+ }
+ catch (System::Exception ex)
+ {
+  std::cerr << ex.what();
+  throw;
+ }
+
+ //Save the document
+ pdf->Save(_dataDir + u"HelloWorldUsingXmlAndXslt.pdf");
 }
+
 ```
