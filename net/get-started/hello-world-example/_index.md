@@ -18,10 +18,16 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Example of Hello World using C# language",
     "alternativeHeadline": "Aspose.PDF C# example",
-    "author": "Andriy Andrukhovskiy",
+    "author": {
+        "@type": "Person",
+        "givenName": "Andriy",
+        "familyName": "Andrukhovskiy",
+        "url":"https://www.linkedin.com/in/andruhovski/"
+    },
     "genre": "pdf document generation",
     "keywords": "pdf, c#, document generation",
     "wordcount": "302",
+    "proficiencyLevel":"Beginner",
     "publisher": {
         "@type": "Organization",
         "name": "Aspose.PDF Doc Team",
