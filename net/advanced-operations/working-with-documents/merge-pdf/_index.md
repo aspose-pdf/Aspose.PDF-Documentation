@@ -73,7 +73,7 @@ sitemap:
         "@id": "https://docs.aspose.com/pdf/net/merge-pdf-documents/"
     },
     "dateModified": "2022-02-04",
-    "description": "This page explain how to merge PDF documents into a single PDF file with C# or VB.NET.",
+    "description": "This page explain how to merge PDF documents into a single PDF file with C# or VB.NET."
 }
 </script>
 
@@ -182,3 +182,4 @@ pdfDocument1.Save(dataDir);
         "ratingCount": "16"
     }
 }
+</script>
