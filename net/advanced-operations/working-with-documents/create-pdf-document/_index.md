@@ -7,7 +7,7 @@ url: /net/create-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for .NET.
 lastmod: "2021-04-02"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -73,7 +73,7 @@ sitemap:
         "@id": "https://docs.aspose.com/pdf/net/create-pdf-document/"
     },
     "dateModified": "2022-02-04",
-    "description": "Create and format the PDF Document with Aspose.PDF for .NET.",
+    "description": "Create and format the PDF Document with Aspose.PDF for .NET."
 }
 </script>
 
