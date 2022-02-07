@@ -1,12 +1,10 @@
 ---
-title: Adding Attachment to a PDF document
-linktitle: Adding Attachment to a PDF document 
+title: Adding Attachment to PDF document
+linktitle: Adding Attachment to PDF document 
 type: docs
 weight: 10
-url: /net/add-attachment-to-pdf-document/
-description: This page describes how to add an attachment to a PDF file with Aspose.PDF for . NET library
-aliases:
-    - /net/adding-to-a-pdf-document/
+url: /cpp/add-attachment-to-pdf-document/
+description: This page describes how to add an attachment to a PDF file with Aspose.PDF for C++ library
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -15,30 +13,33 @@ sitemap:
 
 Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
 
-1. Create a new C# project.
+1. Create a new C++ project.
 1. Add a reference to Aspose.PDF DLL.
-1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
-1. Create a [FileSpecification](https://apireference.aspose.com/pdf/net/aspose.pdf/filespecification) object with the file you are adding, and file description.
-1. Add the [FileSpecification](https://apireference.aspose.com/pdf/net/aspose.pdf/filespecification) object to the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s [EmbeddedFiles](https://apireference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) collection, with the collection’s Add method.
+1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
+1. Create a [FileSpecification](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.file_specification) object with the file you are adding, and file description.
+1. Add the [FileSpecification](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.file_specification) object to the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s [EmbeddedFiles](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection, with the collection’s Add method.
 
-The [EmbeddedFiles](https://apireference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
+The [EmbeddedFiles](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+```cpp
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
-// Open document
-Document pdfDocument = new Document(dataDir + "AddAttachment.pdf");
+void WorkingWithAttachments::AddingAttachment()
+{
+	String _dataDir("C:\\Samples\\");
 
-// Setup new file to be added as attachment
-FileSpecification fileSpecification = new FileSpecification(dataDir + "test.txt", "Sample text file");
+	// Open document
+	auto pdfDocument = MakeObject<Document>(_dataDir + u"AddAttachment.pdf");
 
-// Add attachment to document's attachment collection
-pdfDocument.EmbeddedFiles.Add(fileSpecification);
+	// Setup new file to be added as attachment
+	auto fileSpecification = MakeObject<FileSpecification>(_dataDir + u"test.txt", u"Sample text file");
 
-dataDir = dataDir + "AddAttachment_out.pdf";
+	// Add attachment to document's attachment collection
+	pdfDocument->get_EmbeddedFiles()->Add(fileSpecification);
 
-// Save new output
-pdfDocument.Save(dataDir);
+	// Save new output
+	pdfDocument->Save(_dataDir + u"AddAttachment_out.pdf");
+}
 ```
