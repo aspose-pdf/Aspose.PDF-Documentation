@@ -11,6 +11,10 @@ sitemap:
 lastmod: "2021-06-05"
 ---
 
+## What's new in Aspose.PDF 22.1
+
+Aspose.PDF for Java allows loading documents Portable Document Format (PDF) version 2.0.
+
 ## What's new in Aspose.PDF 21.10
 
 ### How to detect hidden text?

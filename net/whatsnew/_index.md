@@ -11,6 +11,10 @@ sitemap:
 lastmod: "2021-12-24"
 ---
 
+## What's new in Aspose.PDF 22.1
+
+Now, Aspose.PDF for .NET supports loading documents from one of the most popular document formats, Portable Document Format (PDF) version 2.0.
+
 ## What's new in Aspose.PDF 21.11
 
 ### Allow non-latin characters in password
