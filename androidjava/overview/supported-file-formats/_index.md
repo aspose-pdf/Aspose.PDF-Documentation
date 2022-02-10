@@ -15,11 +15,10 @@ The following table indicates the file formats that Aspose.PDF for Android via J
 
 |**Format**|**Description**|**Load**|**Save**|**Remarks**|
 | :- | :- | :- | :- | :- |
-|[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
+|[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 |[EPUB](https://docs.fileformat.com/ebook/epub/)|Ebook file format| |{{< emoticons/tick >}}| |
 |[HTML](https://docs.fileformat.com/web/html/)|HTML Format| |{{< emoticons/tick >}}| |
 |[TeX](https://docs.fileformat.com/page-description-language/tex/)|LaTex typesetting file format| |{{< emoticons/tick >}}| |
-|[SVG](https://docs.fileformat.com/page-description-language/svg/)|Scalable Vector Graphics (An XML-based vector image format)|| }| |
 |[XML](https://docs.fileformat.com/web/xml/)|XML Format| |{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XPS](https://docs.fileformat.com/page-description-language/xps/)|XPS Documents|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Saves the document in the Microsoft Excel SpreadSheet| |{{< emoticons/tick >}}| |
