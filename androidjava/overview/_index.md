@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-_This page is an overview of  Aspose.PDF for Java features._
+_This page is an overview of  Aspose.PDF for Android via Java features._
 
-**Aspose for Java** is a robust Java component that lets developers create PDF documents from scratch without using Adobe Acrobat. Aspose.PDF for Java provides a very simple Application Programming Interface (API) for developers that is easy to learn and use.
+**Aspose for Java** is a robust Java component that lets developers create PDF documents from scratch without using Adobe Acrobat. Aspose.PDF for Android via Java provides a very simple Application Programming Interface (API) for developers that is easy to learn and use.
 
-The Aspose.PDF for Java supports a wide variety of functions such as:
+The Aspose.PDF for Android via Java supports a wide variety of functions such as:
 
 - document compression;
 - table creation and manipulation;
@@ -34,7 +34,7 @@ The Aspose.PDF for Java supports a wide variety of functions such as:
 - transform pages to image;
 - print PDF documents and much more.
 
-In addition, Aspose.PDF for Java can be applied to easily convert text, images, SVG, HTML to PDF and convert PDF to various document formats with excellent performance and good quality.
+In addition, Aspose.PDF for Android via Java can be applied to easily convert text, images, convert PDF to various document formats with excellent performance and good quality.
 
 Learn more about:
 
