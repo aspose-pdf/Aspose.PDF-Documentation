@@ -4,7 +4,7 @@ linktitle: Licensing and limitations
 type: docs
 weight: 50
 url: /androidjava/licensing/
-description: Aspose. PDF for Java invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
+description: Aspose.PDF for Android via Java invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -15,18 +15,18 @@ sitemap:
 
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
-- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for Java provides full product functionality, but all the pages in the generated PDF documents are watermarked with "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" at the top.
+- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for Android via Java provides full product functionality, but all the pages in the generated PDF documents are watermarked with "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" at the top.
 
 - **The limit of the number of collection items that can be processed.**
 In the evaluation version from any collection, you can process only four elements (for example, only 4 pages, 4 form fields, etc.).
 
-You can download an evaluation version of **Aspose.PDF** for Java from [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). The evaluation version provides absolutely the same capabilities as the licensed version of the product. Furthermore, evaluation version simply becomes licensed when you purchase a license and add a couple of lines of code to apply the license.
+You can download an evaluation version of Aspose.PDF for Android via Java from [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). The evaluation version provides absolutely the same capabilities as the licensed version of the product. Furthermore, evaluation version simply becomes licensed when you purchase a license and add a couple of lines of code to apply the license.
 
 Once you are happy with your evaluation of **Aspose.PDF**, you can [purchase a license](https://purchase.aspose.com/) at the Aspose website. Make yourself familiar with the different subscription types offered. If you have any questions, do not hesitate to contact the Aspose sales team.
 
 Every Aspose license carries a one-year subscription for free upgrades to any new versions or fixes that come out during this time. Technical support is free and unlimited and provided both to licensed and evaluation users.
 
->If you want to test Aspose.HTML for Java without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
+>If you want to test Aspose.PDF for Android via Java without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
 ## Classic license
 
@@ -59,6 +59,7 @@ com.aspose.pdf.License license = new com.aspose.pdf.License();
 // Call setLicense method to set license
 license.setLicense("Aspose.Pdf.Java.lic");
 ```
+
 ### Loading the license from a stream object
 
 The following example shows how to load a license from a stream.
@@ -69,7 +70,9 @@ com.aspose.pdf.License license = new com.aspose.pdf.License();
 // Set license from Stream
 license.setLicense(new java.io.FileInputStream("Aspose.Pdf.Java.lic"));
 ```
+
 #### Setting a License Purchased Before 2005/01/22
+
 **Aspose.PDF** for Java doesn't support old licenses anymore so please contact our [sales team](https://company.aspose.com/contact) to get new license file.
 
 ### Validate the License
@@ -87,8 +90,6 @@ if (com.aspose.pdf.Document.isLicensed()) {
 ## Metered License
 
 Aspose.PDF allows developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
-
-A new class [Metered](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Metered) has been introduced to apply metered key. Following is the sample code demonstrating how to set metered public and private key.
 
 ```java
 String publicKey = "";

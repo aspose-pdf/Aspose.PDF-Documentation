@@ -5,13 +5,13 @@ type: docs
 weight: 210
 url: /androidjava/convert-tiff-to-pdf/
 lastmod: "2021-06-05"
-description: Aspose.PDF for Java allows converting multi-page or multi-frame TIFF images to PDF applications. 
+description: Aspose.PDF for Android via Java allows converting multi-page or multi-frame TIFF images to PDF applications. 
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-**Aspose.PDF for Java** file format supported, be it a single frame or multi-frame <abbr title="Tag Image File Format">TIFF</abbr> image. It means that you can convert the TIFF image to PDF in your Java applications. 
+**Aspose.PDF for Android via Java** file format supported, be it a single frame or multi-frame <abbr title="Tag Image File Format">TIFF</abbr> image. It means that you can convert the TIFF image to PDF in your Java applications.
 
 TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. TIFF image can contain several frames with different images. Aspose.PDF file format is also supported, be it a single frame or multi-frame TIFF image. So you can convert the TIFF image to PDF in your Java applications. Therefore, we will consider an example of converting multi-page TIFF image to multi-page PDF document with below steps:
 
@@ -24,39 +24,36 @@ TIFF or TIF, Tagged Image File Format, represents raster images that are meant f
 Moreover, the following code snippet shows how to convert multi-page or multi-frame TIFF image to PDF:
 
 ```java
-package com.aspose.pdf.examples;
-
-/**
- * Convert TIFF to PDF
- */
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertTIFFtoPDF {
-
-    private ConvertTIFFtoPDF() {
-    }
-
-    final static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws IOException {
+ public void convertTIFFtoPDF () {
         // Initialize document object
-        Document document = new Document();
+        document=new Document();
 
-        Page page = document.getPages().add();
-        Image image = new Image();
+        Page page=document.getPages().add();
+        Image image=new Image();
 
-        // Load sample BMP image file
-        image.setFile(Paths.get(_dataDir.toString(), "Sample.tiff").toString());
+        File imgFileName=new File(fileStorage, "Conversion/sample.tiff");
+
+        try {
+            inputStream=new FileInputStream(imgFileName);
+        } catch (FileNotFoundException e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+
+        // Load sample TIFF image file
+        image.setImageStream(inputStream);
         page.getParagraphs().add(image);
 
-        // Save output PDF document
-        document.save(Paths.get(_dataDir.toString(), "TIFFtoPDF.pdf").toString());
+        File pdfFileName=new File(fileStorage, "TIFF-to-PDF.pdf");
+
+        // Save output document
+        try {
+            document.save(pdfFileName.toString());
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+        resultMessage.setText(R.string.success_message);
     }
-}
 
 ```

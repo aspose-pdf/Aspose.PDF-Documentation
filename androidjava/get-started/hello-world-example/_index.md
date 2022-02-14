@@ -15,8 +15,8 @@ sitemap:
 
 A "Hello World" example is traditionally used to introduce features of a programming language or software with a simple use case.
 
-Aspose.PDF for Java API empowers Java application developers to create, read, edit and manipulate PDF files in their applications. It lets you read and convert several different file types to and from PDF file format. This Hello World article shows how to create a PDF file in Java using Aspose.PDF for Java API.
-After [installing Aspose.PDF for Java](/pdf/java/installation/) in your environment, you can execute the below code sample to see how Aspose.PDF API works.
+Aspose.PDF for Android via Java API empowers Java application developers to create, read, edit and manipulate PDF files in their applications. It lets you read and convert several different file types to and from PDF file format. This Hello World article shows how to create a PDF file in Java using Aspose.PDF for Android via Java  API.
+After [installing Aspose.PDF for Android via Java](/pdf/androidjava/installation/) in your environment, you can execute the below code sample to see how Aspose.PDF API works.
 
 Below code snippet follows these steps:
 
@@ -27,75 +27,6 @@ Below code snippet follows these steps:
 1. Save the resultant PDF document
 
 The following code snippet shows basic steps of the working of Aspose.PDF for Android API.
-
-```java
-// Initialize document object
-Document document = new Document();
- 
-//Add page
-Page page = document.getPages().add();
- 
-// Add text to new page
-page.getParagraphs().add(new TextFragment("Hello World!"));
- 
-// Save updated PDF
-document.save("HelloWorld_out.pdf");
-```
-
-The whole sample is more complex. Let's take a look at the main scene.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent" android:layout_height="fill_parent"
-    android:orientation="vertical">
-
-    <TextView android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/logo"
-        android:textSize="24sp"/>
-
-    <EditText android:id="@+id/myInputText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10" android:lines="5"
-        android:minLines="3" android:gravity="top|left"
-        android:inputType="textMultiLine">
-
-        <requestFocus />
-    </EditText>
-
-    <LinearLayout
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1.0"
-        android:layout_marginTop="20dp">
-
-        <Button android:id="@+id/saveExternalStorage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SAVE"
-            android:layout_weight="0.5"/>
-
-        <Button android:id="@+id/getExternalStorage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:text="READ" />
-
-    </LinearLayout>
-
-    <TextView android:id="@+id/response"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:padding="5dp"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-</LinearLayout>
-```
-
-On this scene we have text view, input box and 2 buttons. User can type own text and then write it into PDF.
-Our sample app has 2 buttons. The 1st button will be used for saving created PDF, and 2nd one - for reading data from PDF.
 
 ```java
 package com.aspose.pdf.examplesimple;
@@ -190,7 +121,5 @@ public class MainActivity extends Activity {
         String extStorageState = Environment.getExternalStorageState();
         return Environment.MEDIA_MOUNTED.equals(extStorageState);
     }
-
-
 }
 ```

@@ -13,15 +13,12 @@ sitemap:
 
 ## General Features
 
-- Written completely in Java, works with JDK 1.8 and above
-- Supports all Java applications
-- API Reference in JavaDoc format
-- 32-bit OS support.
-- 64-bit OS support.
+- Aspose.PDF for Android via Java supports any mobile device that runs the Java runtime including
+- API offers 40-bit or 128-bit encryption
 
 ## Supported PDF versions
 
-Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
+Aspose.PDF for Android via Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 
 ## Fonts
 
@@ -67,6 +64,7 @@ Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Get attachments.
 - Delete attachments.
 - Get attachment information.
+- Modify attachments.
 
 ## Page
 
@@ -121,7 +119,7 @@ Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Delete annotations.
 - Modify annotations.
 - Import and export annotations.
-- 
+
 ## Forms
 
 - Add fields.

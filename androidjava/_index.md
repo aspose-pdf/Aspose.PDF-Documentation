@@ -23,13 +23,11 @@ Aspose.PDF for Android via Java is a component that allows developers to create 
 
 <h2>Chapters </h2>
 
-- [What's new](/pdf/androidjava/whatsnew/)
 - [Overview](/pdf/androidjava/overview/)
 - [Get Started](/pdf/androidjava/get-started/)
-- [Basic operations](/pdf/androidjava/basic-operations/)
 - [Converting documents](/pdf/androidjava/converting/)
+- [Advanced operations](/pdf/java/advanced-operations/)(Aspose.PDF for Android via Java is very similar to Aspose.PDF for Java. So, you can use the same API Reference Guide)
 - [Parsing PDF documents](/pdf/androidjava/parsing/)
-- [Advanced operations](/pdf/androidjava/advanced-operations/)
 - [Release Notes](/pdf/androidjava/release-notes/)
 
 Following are the links to some useful resources you may need to accomplish your tasks.
