@@ -20,30 +20,30 @@ The image's index returns an [XImage](https://apireference.aspose.com/pdf/java/c
 This object provides a [Save](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XImage#save-java.io.OutputStream-) method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.
 
  ```java
- public static void Extract_Fonts(){
-    // The path to the documents directory.
-    String dataDir = "/home/aspose/pdf-examples/Samples/";
-    String filePath = dataDir + "ExtractImages.pdf";
+ public static void Extract_Images(){
+        // The path to the documents directory.
+        String _dataDir = "/home/admin1/pdf-examples/Samples/";
+        String filePath = _dataDir + "ExtractImages.pdf";
 
-    // Load PDF document
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
+        // Load PDF document
+        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
 
-    com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
-    com.aspose.pdf.XImageCollection xImageCollection = page.getResources().getImages();
-    // Extract a particular image
-    com.aspose.pdf.XImage xImage = xImageCollection.get_Item(1);
+        com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
+        com.aspose.pdf.XImageCollection xImageCollection = page.getResources().getImages();
+        // Extract a particular image
+        com.aspose.pdf.XImage xImage = xImageCollection.get_Item(1);
 
-    try {
-        java.io.FileOutputStream outputImage = new java.io.FileOutputStream(dataDir + "output.jpg");
-        // Save output image
-        xImage.save(outputImage);
-        outputImage.close();
-    } catch (java.io.FileNotFoundException e) {
-        // TODO: handle exception
-        e.printStackTrace();
-    } catch (java.io.IOException e) {
-        // TODO: handle exception
-        e.printStackTrace();
+        try {
+            java.io.FileOutputStream outputImage = new java.io.FileOutputStream(_dataDir + "output.jpg");
+            // Save output image
+            xImage.save(outputImage);
+            outputImage.close();
+        } catch (java.io.FileNotFoundException e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        } catch (java.io.IOException e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
     }
-}
 ```

@@ -122,31 +122,29 @@ Please note, that it's a class from `com.aspose.pdf.facades`. Despite the simila
 
 In order to export data to FDF, you need to create an object of `Form` class and then call the `exportXfdf` method using the `OutputStream` object. The following code snippet shows you how to export data to XFDF file.
 
-```csharp
-public static void ExtractFormExportFDF() {
-    String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
-    String fdfFileName = Paths.get(_dataDir, "student.fdf").toString();
-    com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
+```java
+ public static void ExtractFormExportFDF() {
+        String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
+        String fdfFileName = Paths.get(_dataDir, "student.fdf").toString();
+        com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
 
-    OutputStream fdfOutputStream;
-    try {
-        
-        fdfOutputStream = new FileOutputStream(fdfFileName);
-        
-        // Export data
-        form.exportFdf(fdfOutputStream);
-        
-        // Close file stream
-        fdfOutputStream.close();
+        OutputStream fdfOutputStream;
+        try {
 
+            fdfOutputStream = new FileOutputStream(fdfFileName);
 
+            // Export data
+            form.exportFdf(fdfOutputStream);
 
-    } catch (IOException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }        
-    
-}
+            // Close file stream
+            fdfOutputStream.close();
+
+        } catch (IOException e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+
+    }
 ```
 
 ## Export Data to XFDF from a PDF File
@@ -156,29 +154,26 @@ To export PDF forms data to XFDF file, we can use the [exportXfdf](https://apire
 In order to export data to XFDF, you need to create an object of `Form` class and then call the `exportXfdf` method using the `OutputStream` object. 
 The following code snippet shows you how to export data to XFDF file.
 
-```csharp
+```java
 public static void ExtractFormExportXFDF() {
-    String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
-    String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
-    com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
+        String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
+        String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
+        com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
 
-    OutputStream fdfOutputStream;
-    try {
-        
-        fdfOutputStream = new FileOutputStream(fdfFileName);
-        
-        // Export data
-        form.exportXfdf(fdfOutputStream);
-        
-        // Close file stream
-        fdfOutputStream.close();
+        OutputStream fdfOutputStream;
+        try {
 
+            fdfOutputStream = new FileOutputStream(fdfFileName);
 
+            // Export data
+            form.exportXfdf(fdfOutputStream);
 
-    } catch (IOException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }        
-    
-}
+            // Close file stream
+            fdfOutputStream.close();
+
+        } catch (IOException e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    }
 ```

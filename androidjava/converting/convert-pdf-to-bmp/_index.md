@@ -19,7 +19,6 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-
 The BmpDevice class allows you to convert PDF pages to BMP images. This class provides a method named process(..) which allows you to convert a particular page of the PDF file to BMP image.
 
 ## Convert a PDF Page to BMP Image
@@ -32,51 +31,36 @@ To convert a PDF page to a BMP image:
 The following code snippet shows you how to convert particular page to BMP image.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.devices.BmpDevice;
-import com.aspose.pdf.devices.Resolution;
-
-public final class ConvertPDFtoBMP {
-
-    private ConvertPDFtoBMP() {
-
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws IOException {
-        ConvertPDFtoBmpSinglePage();
-    }
-
-    public static void ConvertPDFtoBmpSinglePage() throws IOException
-    {
-        // Open document
-        Document pdfDocument = new Document("input.pdf");
+//Convert PDF to BMP
+    public void convertPDFtoBMP() {
+        try {
+            document = new Document(inputStream);
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+        File file = new File(fileStorage, "PDF-to-BMP.bmp");
         // Create stream object to save the output image
-        
-        java.io.OutputStream imageStream = new java.io.FileOutputStream(Paths.get(_dataDir.toString(), "Converted_Image.bmp").toString());
-        
-        // Create Resolution object
-        Resolution resolution = new Resolution(300);
-        
-        //Create BmpDevice object with particular resolution
-        BmpDevice bmpDevice = new BmpDevice(resolution);
-        
-        //Convert a particular page and save the image to stream
-        bmpDevice.process(pdfDocument.getPages().get_Item(1), imageStream);
-        
-        // Close the stream
-        imageStream.close();
+        try {
+            OutputStream imageStream =
+                    new FileOutputStream(file.toString());
+
+            // Create Resolution object
+            Resolution resolution = new Resolution(300);
+
+            // Create BmpDevice object with particular resolution
+            BmpDevice BmpDevice = new BmpDevice(resolution);
+
+            // Convert a particular page and save the image to stream
+            BmpDevice.process(document.getPages().get_Item(1), imageStream);
+
+            // Close the stream
+            imageStream.close();
+            resultMessage.setText(file.toString());
+        } catch (IOException e) {
+            resultMessage.setText(e.getMessage());
+        }
     }
-}
 ```
 
 ## Convert All PDF Pages to BMP Images
@@ -84,27 +68,44 @@ public final class ConvertPDFtoBMP {
 To convert all page of PDF file to BMP format, you need to iterate through to get each individual page and convert it to BMP format. The following code snippet shows you how to traverse through all the pages of a PDF file and convert it to BMP.
 
 ```java
-public static void ConvertPDFtoBmpAllPages() throws IOException {
-    // Open document
-    Document pdfDocument = new Document("input.pdf");
+public void convertPDFtoBMP_AllPages() {
+        try {
+            document = new Document(inputStream);
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
 
-    // Loop through all the pages of PDF file
-    for (int pageCount = 1; pageCount <= pdfDocument.getPages().size(); pageCount++) {
-        // Create stream object to save the output image
-        java.io.OutputStream imageStream = new java.io.FileOutputStream("Converted_Image" + pageCount + ".bmp");
+        // Loop through all the pages of PDF file
+        for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
+            // Create stream object to save the output image
+            File file = new File(fileStorage, "PDF-to-BMP"+pageCount+".BMP");
+            java.io.OutputStream imageStream;
+            try {
+                imageStream = new java.io.FileOutputStream(file.toString());
+            } catch (FileNotFoundException e) {
+                resultMessage.setText(e.getMessage());
+                return;
+            }
 
-        // Create Resolution object
-        Resolution resolution = new Resolution(300);
-        // Create BmpDevice object with particular resolution
-        BmpDevice bmpDevice = new BmpDevice(resolution);
+            // Create Resolution object
+            Resolution resolution = new Resolution(300);
+            // Create BmpDevice object with particular resolution
+            BmpDevice BmpDevice = new BmpDevice(resolution);
 
-        // Convert a particular page and save the image to stream
-        bmpDevice.process(pdfDocument.getPages().get_Item(pageCount), imageStream);
+            // Convert a particular page and save the image to stream
+            BmpDevice.process(document.getPages().get_Item(pageCount), imageStream);
 
-        // Close the stream
-        imageStream.close();
+            // Close the stream
+            try {
+                imageStream.close();
+            } catch (Exception e) {
+                resultMessage.setText(e.getMessage());
+                return;
+            }
+        }
+        resultMessage.setText(R.string.success_message);
     }
-}
 ```
 
 ## Convert a particular page region to Image (DOM)
@@ -114,25 +115,37 @@ We can convert PDF documents to different Image formats using image devices obje
 The following code snippet shows you how to convert PDF pages to images.
 
 ```java
-public static void ConvertParticularPageRegionPDFtoBmpAllPages() throws IOException {
-    // open document
-    Document document = new Document("Input.pdf");
-    // Get rectangle of particular page region
-    Rectangle pageRect = new Rectangle(20, 671, 693, 1125);
-    // set CropBox value as per rectangle of desired page region
-    document.getPages().get_Item(1).setCropBox(pageRect);
-    // save cropped document into stream
-    ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-    document.save(outStream);
-    
-    // open cropped PDF document from stream and convert to image
-    document = new Document(new ByteArrayInputStream(outStream.toByteArray()));
-    // Create Resolution object
-    Resolution resolution = new Resolution(300);
-    // Create BMP device with specified attributes
-    BmpDevice bmpDevice = new BmpDevice(resolution);
-    // Convert a particular page and save the image to stream
-    bmpDevice.process(document.getPages().get_Item(1), "Output.bmp");
+public void convertPDFtoBmp_ParticularPageRegion() {
+        try {
+            document = new Document(inputStream);
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+        // Get rectangle of particular page region
+        //x=0,y=0, w=200, h=125;
+        Rectangle pageRect = new Rectangle(0, 0, 200, 125);
+        // set CropBox value as per rectangle of desired page region
+        document.getPages().get_Item(1).setCropBox(pageRect);
+        // save cropped document into stream
+        ByteArrayOutputStream outStream = new ByteArrayOutputStream();
+        document.save(outStream);
 
-}
+        // open cropped PDF document from stream and convert to image
+        document = new Document(new ByteArrayInputStream(outStream.toByteArray()));
+        // Create Resolution object
+        Resolution resolution = new Resolution(300);
+        // Create BMP device with specified attributes
+        BmpDevice BmpDevice = new BmpDevice(resolution);
+
+        File file = new File(fileStorage, "PDF-to-BMP.BMP");
+        try {
+            // Convert a particular page and save the image to stream
+            BmpDevice.process(document.getPages().get_Item(1), file.toString());
+        }
+        catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+        }
+        resultMessage.setText(R.string.success_message);
+    }
 ```
