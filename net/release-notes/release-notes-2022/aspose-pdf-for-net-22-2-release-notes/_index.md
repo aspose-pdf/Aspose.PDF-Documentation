@@ -25,7 +25,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.2.
 |PDFNET-51209|PDF 2.0 Remove ProcSet array while saving document|New Feature|
 |PDFNET-51211|PDF 2.0 Remove CharSet while saving document|New Feature|
 |PDFNET-51168|Support signing with SHA256|New Feature|
-|PDFNET-47326|Spelling mistake in error message|Enhancement|
+|PDFNET-47326|Spelling typo in error message|Enhancement|
 |PDFNET-46704|Aspose.PDF 19.7: Improve image quality when converting to image and downscale|Enhancement|
 |PDFNET-51179|Button border does not change width and style|Enhancement|
 |PDFNET-45242|HTML to PDF - Failed to parse URL|Bug|
