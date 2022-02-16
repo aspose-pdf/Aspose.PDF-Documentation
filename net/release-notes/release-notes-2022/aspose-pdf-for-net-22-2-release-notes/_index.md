@@ -48,6 +48,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.2.
 |PDFNET-50054|Regression: Line height has changed on merged document|Bug|
 |PDFNET-48113|The given key 'Wingdings' was not present in the dictionary exception when opening PS/EPS files|Bug|
 |PDFNET-51305|XPS to PDF conversion generates duplicate content|Bug|
+|PDFNET-50218|PDF to DOCX: link missing|Bug|
 
 ## Public API and Backward Incompatible Changes
 
