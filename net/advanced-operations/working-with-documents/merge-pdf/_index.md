@@ -5,12 +5,11 @@ type: docs
 weight: 50
 url: /net/merge-pdf-documents/
 description: This page explain how to merge PDF documents into a single PDF file with C# or VB.NET.
-lastmod: "2022-02-04"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",

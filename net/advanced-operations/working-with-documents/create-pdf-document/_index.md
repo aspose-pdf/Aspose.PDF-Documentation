@@ -5,18 +5,17 @@ type: docs
 weight: 10
 url: /net/create-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for .NET.
-lastmod: "2021-04-02"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "How to Create PDF using C#",
-    "alternativeHeadline": "Create (or Generate) PDF document using C# language",
+    "alternativeHeadline": "How to Create PDF using C#",
     "author": {
         "@type": "Person",
         "name":"Andriy Andrukhovskiy",
@@ -67,10 +66,10 @@ sitemap:
             }
         ]
     },
-    "url": "https://docs.aspose.com/pdf/net/create-pdf-document/",
+    "url": "/net/create-pdf-document/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://docs.aspose.com/pdf/net/create-pdf-document/"
+        "@id": "/net/create-pdf-document/"
     },
     "dateModified": "2022-02-04",
     "description": "Create and format the PDF Document with Aspose.PDF for .NET."
