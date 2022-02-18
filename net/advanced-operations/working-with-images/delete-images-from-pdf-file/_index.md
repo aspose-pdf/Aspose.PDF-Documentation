@@ -12,16 +12,16 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Delete Images from PDF File",
-    "alternativeHeadline": "Delete Images from PDF File",
+    "alternativeHeadline": "How to remove Images from PDF",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, delete, remove image from pdf",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

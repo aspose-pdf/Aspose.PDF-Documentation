@@ -17,7 +17,7 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add and Delete a Bookmark",
-    "alternativeHeadline": "Add and Delete a Bookmark",
+    "alternativeHeadline": "How to add and delete Bookmark from PDF",
     "author": {
         "@type": "Person",
         "name":"Andriy Andrukhovskiy",
@@ -26,7 +26,7 @@ aliases:
         "url":"https://www.linkedin.com/in/andruhovski/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, delete bookmark, add bookmark",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

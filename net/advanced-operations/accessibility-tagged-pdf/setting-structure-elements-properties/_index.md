@@ -15,16 +15,16 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Setting Structure Elements Properties",
-    "alternativeHeadline": "Setting Structure Elements Properties",
+    "alternativeHeadline": "How to set the properties of structural elements",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, set text structure, set language, set title, set Note structure element",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

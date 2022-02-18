@@ -15,16 +15,16 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Printing PDF in .NET Framework",
-    "alternativeHeadline": "Printing PDF in .NET Framework",
+    "alternativeHeadline": "How to print PDF in .NET Framework",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, pdf in .NET Framework",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

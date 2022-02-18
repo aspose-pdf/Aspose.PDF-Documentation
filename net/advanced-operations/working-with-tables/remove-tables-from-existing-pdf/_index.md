@@ -14,16 +14,16 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Remove Tables from existing PDF",
-    "alternativeHeadline": "Remove Tables from existing PDF",
+    "alternativeHeadline": "How to Delete Tables from PDF",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, remove table, delete tables",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

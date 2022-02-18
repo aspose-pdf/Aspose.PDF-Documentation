@@ -15,7 +15,7 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Links in PDF programmatically",
-    "alternativeHeadline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Manipulating with Links in PDF file",
     "author": {
         "@type": "Person",
         "name":"Andriy Andrukhovskiy",
@@ -24,7 +24,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/andruhovski/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, link in pdf",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

@@ -15,16 +15,16 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extra Annotations using C#",
-    "alternativeHeadline": "Extra Annotations using C#",
+    "alternativeHeadline": "How to add Extra Annotations in PDF",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, link annotation, caret annotation",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

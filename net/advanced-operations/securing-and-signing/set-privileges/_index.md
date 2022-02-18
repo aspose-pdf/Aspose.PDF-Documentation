@@ -15,16 +15,16 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Set Privileges, Encrypt and Decrypt PDF",
-    "alternativeHeadline": "Set Privileges, Encrypt and Decrypt PDF",
+    "alternativeHeadline": "How to encrypt and decrypt PDF file",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, encrypt pdf, decrypt pdf",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

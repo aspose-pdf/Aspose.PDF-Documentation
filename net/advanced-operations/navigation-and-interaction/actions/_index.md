@@ -15,7 +15,7 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Actions in PDF",
-    "alternativeHeadline": "Working with Actions in PDF",
+    "alternativeHeadline": "How to add Actions in PDF",
     "author": {
         "@type": "Person",
         "name":"Andriy Andrukhovskiy",
@@ -24,7 +24,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/andruhovski/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, actions in pdf",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

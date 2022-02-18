@@ -17,16 +17,16 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Securing and signing PDF in C#",
-    "alternativeHeadline": "Securing and signing PDF in C#",
+    "alternativeHeadline": "How to sign PDF",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, sign pdf",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

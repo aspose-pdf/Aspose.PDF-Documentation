@@ -15,16 +15,16 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "How to Merge PDF using C#",
-    "alternativeHeadline": "Merge (or Concatenate) PDF document using C# language",
+    "alternativeHeadline": "Combine PDF documents",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document manipulation",
-    "keywords": "pdf, c#, merge pdf, concatenate",
+    "keywords": "pdf, c#, merge pdf, concatenate, combine pdf",
     "wordcount": "212",
     "proficiencyLevel":"Beginner",
     "publisher": {

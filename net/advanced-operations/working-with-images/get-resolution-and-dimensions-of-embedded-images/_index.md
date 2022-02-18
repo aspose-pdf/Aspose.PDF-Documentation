@@ -12,16 +12,16 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Get Resolution and Dimensions of Images",
-    "alternativeHeadline": "Get Resolution and Dimensions of Images",
+    "alternativeHeadline": "How to get Resolution and Dimensions of Embedded Images",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, get resolution, get dimensions",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

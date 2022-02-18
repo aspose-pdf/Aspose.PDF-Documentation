@@ -17,16 +17,16 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Adding Attachment to a PDF document",
-    "alternativeHeadline": "Adding Attachment to a PDF document",
+    "alternativeHeadline": "How to add attachments to PDF",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, attachments in pdf",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

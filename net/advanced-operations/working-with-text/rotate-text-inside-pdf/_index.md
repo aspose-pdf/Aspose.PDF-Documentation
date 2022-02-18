@@ -15,13 +15,13 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Rotate Text Inside PDF using C#",
-    "alternativeHeadline": "Rotate Text Inside PDF using C#",
+    "alternativeHeadline": "How to rotate Text in PDF File",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
     "keywords": "pdf, c#, document generation",

@@ -17,16 +17,16 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Page Number to PDF with C#",
-    "alternativeHeadline": "Add Page Number to PDF with C#",
+    "alternativeHeadline": "How to add Page Number Stamp to PDF",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, page number stamp",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

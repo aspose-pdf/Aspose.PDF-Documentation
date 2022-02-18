@@ -12,16 +12,16 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Get and Search Images in PDF",
-    "alternativeHeadline": "Get and Search Images in PDF",
+    "alternativeHeadline": "How to Get and Search Images in PDF file",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, .net, get image, search image",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

@@ -9,16 +9,16 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Get and Set Page Properties",
-    "alternativeHeadline": "Get and Set Page Properties",
+    "alternativeHeadline": "Getting and Setting PDF Page Properties",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, get page properties, set page properties",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {

@@ -17,16 +17,16 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Delete PDF Pages programmatically C#",
-    "alternativeHeadline": "Delete PDF Pages programmatically C#",
+    "alternativeHeadline": "How to remove PDF Pages",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
+    "keywords": "pdf, c#, delete pdf pages, remove pdf pages",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
