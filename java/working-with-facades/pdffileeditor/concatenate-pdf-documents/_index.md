@@ -12,7 +12,7 @@ sitemap:
 
 ## Concatenate PDF Files Using File Paths (Facades)
 
-concatenate method of [**PdfFileEditor**](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/classes/PdfFileEditor) class can be used to concatenate two PDF files. The concatenate method allows you to pass three parameters: first input PDF, second input PDF, and output PDF. The final output PDF contains both the input PDF files.
+concatenate method of [PdfFileEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor) class can be used to concatenate two PDF files. The concatenate method allows you to pass three parameters: first input PDF, second input PDF, and output PDF. The final output PDF contains both the input PDF files.
 
 The following code snippet shows you how to concatenate PDF files using file paths.
 

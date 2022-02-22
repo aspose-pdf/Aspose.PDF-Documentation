@@ -13,7 +13,7 @@ sitemap:
 
 ## Creating Table
 
- The Aspose.PDF namespace contains classes named [Table](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Table), [Cell](https://apireference.aspose.com/pdf/java/com.aspose.pdf/cell), and [Row](https://apireference.aspose.com/pdf/java/com.aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
+ The Aspose.PDF namespace contains classes named [Table](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Table), [Cell](https://apireference.aspose.com/pdf/java/com.aspose.pdf/cell), and [Row](https://apireference.aspose.com/pdf/java/com.aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
 
 Table can be created by creating object of Table Class.
 

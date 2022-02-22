@@ -92,7 +92,7 @@ public class ExampleAddImages {
 
 ## Adding image from BufferedImage into PDF
 
-Starting release of Aspose.PDF for Java 9.5.0, we have introduced the support to add image from BufferedImage instance to PDF document. In order to support this requirement, a method is implemented: [XImageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/XImageCollection).add(BufferedImage image);
+Starting release of Aspose.PDF for Java 9.5.0, we have introduced the support to add image from BufferedImage instance to PDF document. In order to support this requirement, a method is implemented: [XImageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection).add(BufferedImage image);
 
 ```java
     public static void AddingImageFromBufferedImageIntoPDF() throws IOException {
