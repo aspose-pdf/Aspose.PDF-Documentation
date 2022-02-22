@@ -23,7 +23,7 @@ Aspose.PDF for Java offers many pre-defined numbering styles. These pre-defined 
 |NumeralsRomanLowercase|Roman lower type, for example, i,i.ii, ...|
 |LettersUppercase|English upper type, for example, A,A.B, ...|
 |LettersLowercase|English lower type, for example, a,a.b, ...|
-The [setStyle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/heading/methods/setStyle\(int\)/) property of [com.aspose.pdf.Heading](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Heading) class is used to set the numbering styles of the headings.
+The [setStyle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Heading) property of [com.aspose.pdf.Heading](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Heading) class is used to set the numbering styles of the headings.
 
 
 The source code, to obtain the output shown in the above figure, is given below in the example.

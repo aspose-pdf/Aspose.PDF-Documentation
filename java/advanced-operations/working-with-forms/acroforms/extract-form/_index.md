@@ -15,7 +15,7 @@ sitemap:
 
 The form field’s [getValue() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) allows you to get the value of a particular field.
 
-To get the value, get the form field from the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Document) object’s Form collection.
+To get the value, get the form field from the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s Form collection.
 
 This example selects a [TextBoxField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) and retrieves its value using the [getValue() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--).
 
@@ -46,7 +46,7 @@ public class ExamplesExtractFormData {
 
 ## Get Values from All Fields in a PDF Document
 
-To get values from all the fields in a PDF document, you need to navigate through all the form fields and then get the value using the [getValue() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--). Get each field from the Form collection using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Document) object’s [getForm() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) and get the list of form fields into an Field array using getFields() and traverse through array to get value of fields.
+To get values from all the fields in a PDF document, you need to navigate through all the form fields and then get the value using the [getValue() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--). Get each field from the Form collection using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s [getForm() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) and get the list of form fields into an Field array using getFields() and traverse through array to get value of fields.
 
 The following code snippet shows how to get the values of all the fields in a PDF document.
 
