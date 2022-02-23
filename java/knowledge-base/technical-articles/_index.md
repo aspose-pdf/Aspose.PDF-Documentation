@@ -6,4 +6,4 @@ url: /java/technical-articles/
 lastmod: "2022-01-27"
 ---
 
-- [com.apose.pdf Articles](/pdf/java/com-apose-pdf-articles/)
+- [Aspose.PDF Articles](/pdf/java/com-aspose-pdf-articles/)

@@ -1,8 +1,8 @@
 ---
-title: com.apose.pdf Articles
+title: Aspose.PDF Articles
 type: docs
 weight: 10
-url: /java/com-apose-pdf-articles/
+url: /java/com-aspose-pdf-articles/
 lastmod: "2022-01-27"
 ---
 
