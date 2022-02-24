@@ -4,6 +4,7 @@ linktitle: Printing PDF in .NET Framework
 type: docs
 weight: 10
 url: /net/printing-pdf-in-net-framework/
+keywords: "print pdf file c#, c# print pdf"
 description: You may print PDF files to the default printer using the printer and page settings with C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,6 +76,8 @@ sitemap:
     "description": "You may print PDF files to the default printer using the printer and page settings with C#."
 }
 </script>
+
+## **Print Pdf File in C# - Print PDF File to Default Printer using Printer and Page Settings**
 
 This article describes how to Print PDF File to Default Printer using Printer and Page Settings in C#.
 
