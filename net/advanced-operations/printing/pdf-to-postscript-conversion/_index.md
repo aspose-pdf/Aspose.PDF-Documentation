@@ -4,6 +4,7 @@ linktitle: PDF to PostScript conversion
 type: docs
 weight: 30
 url: /net/pdf-to-postscript-conversion/
+keywords: "pdf to postscript c#"
 description: We have a solution for PDF to PostScript conversion. Use for this task printing and PdfViewer class.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,6 +76,8 @@ sitemap:
     "description": "We have a solution for PDF to PostScript conversion. Use for this task printing and PdfViewer class."
 }
 </script>
+
+## **PDF To Postscript in C#**
 
 The PdfViewer class provides the capability to print PDF documents and with the help of this class, we can also convert PDF files to PostScript format. To convert a PDF file into PostScript, first install any PS printer and just print to file with the help of PdfViewer. You may follow the instructions specified by the University of Hawaii on how to install PS printer. The following code snippet shows you how to print and convert a PDF to PostScript format.
 
