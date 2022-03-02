@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Word documents 
+title: Convert PDF to Word Doc or Docx in C# .NET
 linktitle: Convert PDF to Word
 type: docs
 weight: 10
