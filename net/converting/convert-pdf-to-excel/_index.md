@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Excel 
+title: Convert PDF to Excel XLS, XLSX, CSV, ODS in C# 
 linktitle: Convert PDF to Excel
 type: docs
 weight: 20
