@@ -1,5 +1,5 @@
 ---
-title: Convert various file formats to PDF
+title: Convert EPUB, Markdown, Text, XPS, PostScript, XML, LaTex to PDF in C#
 linktitle: Convert other file formats to PDF
 type: docs
 weight: 80
