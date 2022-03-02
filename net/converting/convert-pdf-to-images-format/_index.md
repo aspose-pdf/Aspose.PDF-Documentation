@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Images formats 
+title: Convert PDF to Image formats BMP, JPG, GIF, PNG, TIFF, SVG in C#
 linktitle: Convert PDF to Images
 type: docs
 weight: 70
