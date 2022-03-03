@@ -1,5 +1,5 @@
 ---
-title: How to digitally sign PDF
+title: Add digital signature or digitally sign PDF in C#
 linktitle: Digitally sign PDF
 type: docs
 weight: 10
