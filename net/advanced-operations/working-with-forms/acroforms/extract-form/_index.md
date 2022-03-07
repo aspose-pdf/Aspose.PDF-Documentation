@@ -1,9 +1,10 @@
 ---
-title: Extract AcroForm
+title: Extract AcroForm - Extract Form Data from PDF in C#
 linktitle: Extract AcroForm
 type: docs
 weight: 30
 url: /net/extract-form/
+keywords: extract form data from pdf c#
 description: Extract form from your PDF document with Aspose.PDF for .NET library. Get value from an individual field of PDF file.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,7 +83,7 @@ sitemap:
 
 To get values from all the fields in a PDF document, you need to navigate through all the form fields and then get the value using the Value property. Get each field from the Form collection, in the base field type called Field and access its Value property.
 
-The following code snippets show how to get the values of all the fields from a PDF document.
+The following C# code snippets show how to get the values of all the fields from a PDF document.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -102,7 +103,7 @@ foreach (Field formField in pdfDocument.Form)
 
 ### Get Value from an Individual Field of PDF Document
 
-The form field’s Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This example selects a [TextBoxField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) and retrieves its value using the Value property.
+The form field’s Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This C# example selects a [TextBoxField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) and retrieves its value using the Value property.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -143,7 +144,7 @@ Sometimes, you might know where in a document a form field is, but not have it�
 1. Specify the rectangular region and pass it to the Form object’s GetFieldsInRect method. A Fields collection is returned.
 1. Use this to manipulate the fields.
 
-The following code snippet shows how to get form fields in a specific rectangular region of a PDF file.
+The following C# code snippet shows how to get form fields in a specific rectangular region of a PDF file.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
