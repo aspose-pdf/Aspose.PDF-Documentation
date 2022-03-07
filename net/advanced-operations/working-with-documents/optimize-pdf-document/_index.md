@@ -1,5 +1,5 @@
 ---
-title: Optimize PDF using C#
+title: Optimize, Compress or Reduce PDF Size in C#
 linktitle: Optimize PDF
 type: docs
 weight: 30
