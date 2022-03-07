@@ -1,5 +1,6 @@
 ---
-title: Optimize PDF Document
+title: Optimize, Compress or Reduce PDF Size in Java
+linktitle: Optimize PDF Document
 type: docs
 weight: 40
 url: /java/optimize-pdf/
