@@ -52,7 +52,6 @@ This page contains release notes information for Aspose.PDF for .NET 22.3.
 |PDFNET-51259|ComboBox with red font print issue|Bug|
 |PDFNET-51131|TextAnnotation.InReplyTo does not return comment reply|Bug|
 |PDFNET-51215|Remove adbe.pkcs7.sha1 subfilter while saving document|Bug|
-|PDFNET-51362|Wrong namespace in the resulting document when converting PDF to Excel|Bug|
 |PDFNET-51277|Endless Loop resulting to major Memory (RAM) usage and server breakdown while Converting HTML to PDF|Bug|
 |PDFNET-49567|HTML to PDF - ArgumentOutOfRangeException Occurs when margins are not set|Bug|
 
