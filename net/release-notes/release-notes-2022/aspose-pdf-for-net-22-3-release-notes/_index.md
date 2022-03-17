@@ -26,8 +26,8 @@ This page contains release notes information for Aspose.PDF for .NET 22.3.
 |PDFNET-51216|Remove adbe.x509.rsa_sha1 subfilter while saving document|New Feature|
 |PDFNET-51090|Add PDF header validation|New Feature|
 |PDFNET-38405|Provide support for AFRelationship|New Feature|
-|PDFNET-50978|The .Save() method hangs when merging multiple PDF files if a OptimizationOptions are included|Enhancement|
-|PDFNET-51306|PDF to TIFF: Improving the speed of conversio|Enhancement|
+|PDFNET-50978|Improve Document.Save() method when merging multiple PDF files if a Optimization Options are included|Enhancement|
+|PDFNET-51306|PDF to TIFF: Improving the speed of conversion|Enhancement|
 |PDFNET-51435|PDF to TIFF: slow on .NET framework|Enhancement|
 |PDFNET-48675|'System.IO.IOException : Stream was too long' exception on merging multiple PDF files|Bug|
 |PDFNET-50015|After repeated converting PDF to TIFF text is lost|Bug|
