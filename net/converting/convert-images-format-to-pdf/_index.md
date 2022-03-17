@@ -27,7 +27,7 @@ You can convert BMP to PDF files with Aspose.PDF for .NET API. Therefore, you ca
 So the following code snippet follows these steps and shows how to convert BMP to PDF using C#:
 
 ```csharp
-Initialize empty PDF document
+//Initialize empty PDF document
 using (Document pdfDocument = new Document())
 {
     pdfDocument.Pages.Add();
@@ -161,6 +161,43 @@ doc.Save(dataDir + "EMFtoPDF.pdf");
 Aspose presents you online free application ["EMF to PDF"](https://products.aspose.app/pdf/conversion/emf-to-pdf/), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion EMF to PDF using Free App](emf_to_pdf.png)](https://products.aspose.app/pdf/conversion/emf-to-pdf/)
+{{% /alert %}}
+
+## Convert GIF to PDF
+
+Convert GIF files to PDF document using **Aspose.PDF for .NET** library.
+
+<abbr title="Graphics Interchange Format">GIF</abbr> is able to store compressed data without loss of quality in a format of no more than 256 colors. The hardware-independent GIF format was developed in 1987 (GIF87a) by CompuServe for transmitting bitmap images over networks.
+You can convert GIF to PDF files with Aspose.PDF for .NET API. Therefore, you can follow the following steps to convert GIF images:
+
+1. Initialize a new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)
+1. Load input GIF image
+1. Finally, save the output PDF file
+
+So the following code snippet follows these steps and shows how to convert BMP to PDF using C#:
+
+```csharp
+//Initialize empty PDF document
+using (Document pdfDocument = new Document())
+{
+    pdfDocument.Pages.Add();
+    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+
+    // Load sample GIF image file
+    image.File = dataDir + "Sample.gif";
+    pdfDocument.Pages[1].Paragraphs.Add(image);
+
+    // Save output PDF document
+    pdfDocument.Save(dataDir + "GIFtoPDF.pdf");
+}
+```
+
+{{% alert color="success" %}}
+**Try to convert GIF to PDF online**
+
+Aspose presents you online free application ["GIF to PDF"](https://products.aspose.app/pdf/conversion/gif-to-pdf/), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion GIF to PDF using Free App](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/gif-to-pdf/)
 {{% /alert %}}
 
 ## Convert JPG to PDF
