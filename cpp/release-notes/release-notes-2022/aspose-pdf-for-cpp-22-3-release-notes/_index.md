@@ -15,7 +15,7 @@ This page contains release notes information for Aspose.PDF for C++ 22.3.
 
 ## Changes and Improvements
 
-1.The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 22.3.
+1. The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 22.3.
 1. The iterators provided by the **IEnumerable** class and the duck-typed collections were improved. The performance was raised for those implemented via the native C++ containers, and the assignment to the referenced element was supported where possible.
 1. The method overloads were added to numerous classes. These support ArrayView-typed parameters where only ArrayPtr was supported previously.
 1. The default messages of the exception classes were put in line with the .Net behavior. No language-specific messages are supported at the moment.
