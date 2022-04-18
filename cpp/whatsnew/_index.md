@@ -10,6 +10,11 @@ sitemap:
     priority: 0.8
 lastmod: "2021-12-22"
 ---
+
+## What's new in Aspose.PDF 22.3
+
+The method overloads were added to numerous classes. These support ArrayView-typed parameters where only ArrayPtr was supported previously.
+
 ## What's new in Aspose.PDF 22.1
 
 The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 22.1:
