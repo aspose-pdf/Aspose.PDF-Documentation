@@ -11,6 +11,20 @@ sitemap:
 lastmod: "2021-06-05"
 ---
 
+## What's new in Aspose.PDF 22.3
+
+PDF to ODS: Support for RTL is available in version 22.3
+
+```csharp
+ExcelSaveOptions options = new ExcelSaveOptions();
+options.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
+pdfDocument.save("output.ods", options);
+```
+
+## What's new in Aspose.PDF 22.2
+
+This release includes the PDF to XSLX: Support for RTL (Hebrew, Arabic).
+
 ## What's new in Aspose.PDF 22.1
 
 Aspose.PDF for Java allows loading documents Portable Document Format (PDF) version 2.0.
