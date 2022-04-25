@@ -28,6 +28,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.4.
 |PDFNET-51213|PDF 2.0 Remove Suspects flag in MarkInfo while saving document|New Feature|
 |PDFNET-51212|PDF 2.0 Remove Info while saving document|New Feature|
 |PDFNET-51627|PDF to DOCX: Recognize text in subscript and superscript in EnhancedFlow mode|Enhancement|
+|PDFNET-51368|PDF to DOCX: Recognition of multilevel bullet list|Enhancement|
 |PDFNET-49570|Speed up PDF to TIFF conversion time|Enhancement|
 |PDFNET-51438|PDF Concatenation takes long time|Bug|
 |PDFNET-51130|Memory issue when loading pages from PDF|Bug|
