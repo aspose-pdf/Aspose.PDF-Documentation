@@ -25,18 +25,18 @@ The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 22.4
 
 Added:
 
-M:Aspose::Pdf::Annotations::Annotation::ChangeAfterResize(Aspose::Pdf::Matrix)
-M:Aspose::Pdf::Annotations::TextMarkupAnnotation::ChangeAfterResize(Aspose::Pdf::Matrix)
-P:Aspose::Pdf::HtmlLoadOptions::PageLayoutOption
-T:Aspose::Pdf::HtmlPageLayoutOption
-F:Aspose::Pdf::HtmlPageLayoutOption::None
-F:Aspose::Pdf::HtmlPageLayoutOption::FitToWidestContentWidth
-F:Aspose::Pdf::HtmlPageLayoutOption::ScaleToPageWidth
-P:Aspose::Pdf::RenderingOptions::HeightExtraUnits
+- M:Aspose::Pdf::Annotations::Annotation::ChangeAfterResize(Aspose::Pdf::Matrix)
+- M:Aspose::Pdf::Annotations::TextMarkupAnnotation::ChangeAfterResize(Aspose::Pdf::Matrix)
+- P:Aspose::Pdf::HtmlLoadOptions::PageLayoutOption
+- T:Aspose::Pdf::HtmlPageLayoutOption
+- F:Aspose::Pdf::HtmlPageLayoutOption::None
+- F:Aspose::Pdf::HtmlPageLayoutOption::FitToWidestContentWidth
+- F:Aspose::Pdf::HtmlPageLayoutOption::ScaleToPageWidth
+- P:Aspose::Pdf::RenderingOptions::HeightExtraUnits
 
 Removed:
 
-M:Aspose::Pdf::Annotations::HighlightAnnotation::UpdateHighlights
-P:Aspose::Pdf::HtmlLoadOptions::IsFitToWidestContentWidth
+- M:Aspose::Pdf::Annotations::HighlightAnnotation::UpdateHighlights
+- P:Aspose::Pdf::HtmlLoadOptions::IsFitToWidestContentWidth
 
 Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).
