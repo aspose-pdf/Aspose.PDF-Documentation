@@ -34,7 +34,6 @@ This page contains release notes information for Aspose.PDF for .NET 22.4.
 |PDFNET-51478|"Output space is undefined" exception when rendering TEX files from MemoryStream|Bug|
 |PDFNET-51519|Adding LocalHyperlink to some pages does not work|Bug|
 |PDFNET-51121|HTML to PDF: right side is cut off|Bug|
-|PDFNET-51545|ComboBox font print issue|Bug|
 |PDFNET-51279|Regression: Form.importXml broken|Bug|
 |PDFNET-51424|TextFragmentAbsorber cannot find certain text|Bug|
 |PDFNET-51420|PDF to DOCX: using DocSaveOptions.RecognitionMode.Flow throws System.ArgumentOutOfRangeException|Bug|
@@ -59,6 +58,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.4.
 |PDFNET-50831|HTML to PDF - page break issue|Bug|
 |PDFNET-51581|StackOverflowException is thrown while loading HTML at Windows Server 2019|Bug|
 |PDFNET-51447|PDF to SVG rendering - output has wrong position|Bug|
+|PDFNET-44291|PDF to DOCX - Table borders are rendered as picture in output document|Bug|
 
 ## Public API and Backward Incompatible Changes
 
