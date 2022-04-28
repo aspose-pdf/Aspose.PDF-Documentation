@@ -31,6 +31,7 @@ This page contains release notes information for Aspose.PDF for Java 22.4.
 |PDFJAVA-41452|PDF to Excel: Extra line break|Bug|
 |PDFJAVA-41476|PDF to XMLSpreadSheet2003: Font size is incorrect|Bug|
 |PDFJAVA-39931|Resizing a PDF with annotations results in Errors in the resulting file|Bug|
+|PDFJAVA-41447|TextFragmentAbsorber does not able to search text fragment by regex|Bug|
 
 
 ## **Public API and Backwards Incompatible Changes**
