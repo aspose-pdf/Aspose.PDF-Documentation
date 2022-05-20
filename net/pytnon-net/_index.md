@@ -2,7 +2,6 @@
 title: Using Aspose.PDF for .NET in Python
 linktitle: Overview
 type: docs
-weight: 20
 url: /python-net
 description: Overview of key-features and way how to perform convert, split, merge or make other operation with PDF using Python
 lastmod: "2022-05-16"
@@ -38,4 +37,4 @@ In addition, Aspose.PDF for .NET can be applied to easily convert text, images, 
 
 Learn more about:
 
-- [Working with Document Object in Python](/pdf/python-net)
+- [Working with Document Object in Python](/pdf/python-net/)
