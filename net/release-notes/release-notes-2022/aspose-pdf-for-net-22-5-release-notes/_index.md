@@ -42,7 +42,6 @@ This page contains release notes information for Aspose.PDF for .NET 22.5.
 |PDFNET-50937|HTML to PDF startIndex cannot be larger than length of string exception|Bug|
 |PDFNET-48497|HTML to PDF - Code keeps running|Bug|
 |PDFNET-48488|HTML to PDF - CSS properties for word breaking are not working|Bug|
-|PDFNET-38198|Unable to convert XFA form to Standard form|Bug|
 |PDFNET-45257|Problem adding Multiple Signatures on a Single PDF|Bug|
 |PDFNET-39990|JpegDevice.Process ignores resolution|Bug|
 |PDFNET-40071|Exception when trying to retrieve page number for Bookmark|Bug|
