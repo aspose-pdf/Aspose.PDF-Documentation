@@ -24,6 +24,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.5.
 |PDFNET-50978|Improve Document.Save() method when merging multiple PDF files if a Optimization Options are included|Enhancement|
 |PDFNET-50645|Remove UserUnit property from PDF files|Enhancement|
 |PDFNET-51715|Redesign PdfFileSecurity API to prevent exceptions ignoring|Enhancement|
+|PDFNET-48246|Implement various options for placing tables on document pages|Enhancement|
 |PDFNET-49049|Resizing a PDF with annotations results in Errors in the resulting file|Bug|
 |PDFNET-38343|PDF to DOC - Hyperlinks are missing in resultant file|Bug|
 |PDFNET-38160|PDF to DOC: processing time issue|Bug|
@@ -44,7 +45,6 @@ This page contains release notes information for Aspose.PDF for .NET 22.5.
 |PDFNET-38198|Unable to convert XFA form to Standard form|Bug|
 |PDFNET-45257|Problem adding Multiple Signatures on a Single PDF|Bug|
 |PDFNET-39990|JpegDevice.Process ignores resolution|Bug|
-|PDFNET-48246|Add two tables on same page|Bug|
 |PDFNET-40071|Exception when trying to retrieve page number for Bookmark|Bug|
 |PDFNET-51678|Links are not clickable after replacement but they are present in the links collection|Bug|
 |PDFNET-46432|PDF to JPG - An exception occurred if PDF document is signed|Bug|
