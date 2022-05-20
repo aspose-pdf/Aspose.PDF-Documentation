@@ -38,7 +38,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.5.
 |PDFNET-34210|HTML to PDF Conversion: Object Reference Not Set Exception is thrown|Bug|
 |PDFNET-39099|HTML to PDF performance issue|Bug|
 |PDFNET-44741|KeyNotFoundException on HTML to PDF|Bug|
-|PDFNET-50937|HTML to PDF: 'startIndex cannot be larger than length of string. (Parameter 'startIndex')' exception|Bug|
+|PDFNET-50937|HTML to PDF startIndex cannot be larger than length of string exception|Bug|
 |PDFNET-48497|HTML to PDF - Code keeps running|Bug|
 |PDFNET-48488|HTML to PDF - CSS properties for word breaking are not working|Bug|
 |PDFNET-38198|Unable to convert XFA form to Standard form|Bug|
@@ -48,7 +48,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.5.
 |PDFNET-40071|Exception when trying to retrieve page number for Bookmark|Bug|
 |PDFNET-51678|Links are not clickable after replacement but they are present in the links collection|Bug|
 |PDFNET-46432|PDF to JPG - An exception occurred if PDF document is signed|Bug|
-|PDFNET-51691|TextFragment with emoji and new line causes "Index was outside the bounds of the array." exception|Bug|
+|PDFNET-51691|TextFragment with emoji and new line causes Index was outside the bounds of the array exception|Bug|
 |PDFNET-51552|Aspose.Pdf 22.3: Option AddReturnToLineEnd does not work with DocSaveOptions.RecognitionMode.Flow|Bug|
 |PDFNET-38399|A CrossTableNotFoundException appears when loading PDF document|Bug|
 |PDFNET-36386|Merging PDF document loses Form fields|Bug|
