@@ -4,6 +4,7 @@ type: docs
 weight: 10
 url: /sharepoint/product-overview/
 lastmod: "2020-12-16"
+description: PDF SharePoint API for Microsoft SharePoint Server allows the users to export lists, list items and SharePoint Wiki pages to the PDF file format. 
 ---
 
 {{% alert color="primary" %}}
