@@ -1,9 +1,11 @@
 ---
-title: Product Information
+title: Product Information of PDF SharePoint API
+linktitle: Product Information
 type: docs
 weight: 10
 url: /sharepoint/product-information/
 lastmod: "2020-12-16"
+description: Product Information section of PDF SharePoint covers topics related to Product Overview, Supported File Formats, Features and Installation.
 ---
 
 ## **Articles in this section**
