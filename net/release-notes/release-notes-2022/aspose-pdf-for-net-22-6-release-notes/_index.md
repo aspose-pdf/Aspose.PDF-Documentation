@@ -23,7 +23,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.6.
 | :- | :- | :- |
 |PDFNET-29992|Support to extract SubScript and SuperScript text from PDF|Feature|
 |PDFNET-48118|PDF to PNG - API is taking long time to convert PDF pages into PNG images|Enhancement|
-|PDFNET-51640|System.OutOfMemoryException on DeleteStampById|Enhancement|
+|PDFNET-51640|Improve memory usage for stamp delete by id|Enhancement|
 |PDFNET-51758|Redesign PdfFileEditor API to prevent exceptions ignoring|Enhancement|
 |PDFNET-48347|Object reference not set to an instance of an object when converting PDF to HTML on Linux|Bug|
 |PDFNET-50479|OOM exception when converting EPUB to DOC on Linux docker container|Bug|
