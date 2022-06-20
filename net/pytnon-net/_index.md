@@ -6,7 +6,7 @@ url: /python-net
 description: Overview of key-features and way how to perform convert, split, merge or make other operation with PDF using Python
 lastmod: "2022-05-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "montly"
     priority: 0.7
 ---
 
