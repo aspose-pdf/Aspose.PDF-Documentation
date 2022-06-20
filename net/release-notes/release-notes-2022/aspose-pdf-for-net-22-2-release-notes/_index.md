@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for .NET 22.2
 type: docs
 weight: 120
 url: /net/aspose-pdf-for-net-22-2-release-notes/
-lastmod: "2021-02-15"
+lastmod: "2022-02-15"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2022, version 22.2.
 sitemap:
     changefreq: "weekly"
