@@ -13,7 +13,9 @@ Visit the documentation to learn how tog et started with Aspose.PDF for ShhareP
 Note this download contains a fully working version of the product, however without a license set it will run in evaluation mode with some limitations. To test Aspose.PDF for SharePoint without these evaluation limitations you can request a free 30-day temporary license.
 
 The following is a list of changes in this version of Aspose.PDF for SharePoint
-## <ins>**New Features**
+
+## **New Features**
 - PDFSHP-33310 Support of PDF to PDF/A compliant PDF document
-## <ins>**Bugs**
+
+## **Bugs**
 - PDFSHP-33398 Workflows are not working in Aspose.PDF for SharePoint 1.9.3
