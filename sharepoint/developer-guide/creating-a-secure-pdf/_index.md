@@ -1,5 +1,6 @@
 ---
-title: Creating a Secure PDF
+title: Create a Secure PDF in SharePoint
+linktitle: Creating a Secure PDF
 type: docs
 weight: 60
 url: /sharepoint/creating-a-secure-pdf/
