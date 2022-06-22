@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 description: PDF SharePoint API lets you add a barcode to a PDF document as shown in the image below.
 ---
 
-## Add Barcode to a PDF File
+## **Add Barcode to a PDF File**
 
 {{% alert color="primary" %}}
 
