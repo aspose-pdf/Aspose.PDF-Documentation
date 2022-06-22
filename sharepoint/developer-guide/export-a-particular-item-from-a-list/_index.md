@@ -14,8 +14,6 @@ Aspose.PDF for SharePoint lets you convert several documents, or one at a time. 
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-
 To export a particular item from a list: select **Export to Pdf** from the item's Edit Control Block (ECB).
 
 ## **Selecting Export to Pdf in the item's ECB**
@@ -28,4 +26,3 @@ To export a particular item from a list: select **Export to Pdf** from the item'
 
 ![todo:image_alt_text](export-a-particular-item-from-a-list_2.png)
 
-{{% /alert %}}
