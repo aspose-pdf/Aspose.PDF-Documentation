@@ -4,6 +4,7 @@ type: docs
 weight: 50
 url: /sharepoint/converting-a-file-to-pdf-via-workflow-activity/
 lastmod: "2020-12-16"
+description: PDF SharePoint API can be used in a SharePoint workflow that converts a document to PDF.
 ---
 
 {{% alert color="primary" %}}
@@ -11,14 +12,14 @@ lastmod: "2020-12-16"
 Support for workflows is key functionality of Microsoft Office SharePoint Server. Workflows help automate movement of documents according to business logic and streamline the cost and time of document organization. This article demonstrates how to use Aspose.PDF for SharePoint in a workflow that converts a document to PDF.
 
 {{% /alert %}}
-### **Setting up a Workflow**
-
-{{% alert color="primary" %}}
+## **Setting up a Workflow**
 
 This example creates a workflow that converts any new item in a document library to PDF format and stores it in another document library. The example users the **Personal Documents** library as the source library and the **Pdf** sub-folder in the **Shared Documents** library as the destination library.
 
 Aspose.PDF for SharePoint supports conversion of HTML, text and image files.
-#### **Design the Workflow using SharePoint Designer**
+
+### **Design the Workflow using SharePoint Designer**
+
 1. Open **SharePoint Designer** and connect to the site where the workflow will be implemented.
 1. Select **Workflows** from **site objects** and then open **List Workflow**.
 1. Select the **Personal Documents** library to create and attach a new list workflow to the document library.
@@ -26,8 +27,6 @@ Aspose.PDF for SharePoint supports conversion of HTML, text and image files.
    **Selecting Personal Documents from the menu**
 
 ![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_1.png)
-
-
 
 
 1. Create and attach the list workflow to the **Personal Documents** library by typing a workflow name and description.
@@ -46,8 +45,6 @@ A workflow step editor appears. This is used to define conditions and actions fo
    **Selecting and action**
 
 ![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_3.png)
-
-
 
 
 1. Configure the action parameters:
@@ -85,7 +82,9 @@ A workflow step editor appears. This is used to define conditions and actions fo
 The workflow design is finished.
 
 1. Save and publish the workflow to implement it on the SharePoint site.
-#### **Test the Workflow**
+
+### **Test the Workflow**
+
 To test the workflow:
 
 1. Open the SharePoint site and upload a new document to the **Personal Documents** document library.
@@ -106,4 +105,3 @@ To test the workflow:
 
 ![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_9.png)
 
-{{% /alert %}}
