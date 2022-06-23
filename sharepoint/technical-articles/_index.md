@@ -1,5 +1,5 @@
 ---
-title: Technical Articles - Sharepoint PDF Library
+title: Technical Articles - SharePoint PDF Library
 linktitle: Technical Articles
 type: docs
 weight: 30
