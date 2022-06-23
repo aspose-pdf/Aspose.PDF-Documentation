@@ -4,6 +4,7 @@ type: docs
 weight: 10
 url: /sharepoint/creating-and-exporting-template/
 lastmod: "2020-12-16"
+description: You can create and export templates to PDF in SharePoint using PDF SharePoint API.
 ---
 
 {{% alert color="primary" %}}
@@ -13,7 +14,8 @@ This article shows how to create and export templates using Aspose.PDF for Share
 From Aspose.PDF for SharePoint 1.9.2, PDF template support also covers SharePoint subsites.
 
 {{% /alert %}}
-### **Creating and Exporting Templates**
+
+## **Creating and Exporting Templates**
 {{% alert color="primary" %}}
 
 To use the Aspose.PDF for SharePoint export feature, first create a list that uses “PDF Templates”.
