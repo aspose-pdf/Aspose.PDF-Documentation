@@ -1,8 +1,8 @@
 ---
-title: Knowledge Base
+title: Technical Articles
 type: docs
 weight: 30
-url: /java/knowledge-base/
+url: /java/technical-articles/
 lastmod: "2022-01-27"
 ---
 
