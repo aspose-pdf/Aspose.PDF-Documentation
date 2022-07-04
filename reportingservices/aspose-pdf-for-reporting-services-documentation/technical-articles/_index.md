@@ -1,7 +1,7 @@
 ---
 title: Technical Articles
 type: docs
-weight: 20
+weight: 120
 url: /reportingservices/technical-articles/
 lastmod: "2021-06-05"
 ---
