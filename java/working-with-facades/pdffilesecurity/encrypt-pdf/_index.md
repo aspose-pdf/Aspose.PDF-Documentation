@@ -10,7 +10,7 @@ draft: false
 
 ## Encrypt PDF File using Different Encryption Types and Algorithms
 
-In order to encrypt a PDF file, you need to create [PdfFileSecurity](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity) object and then call the [EncryptFile](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#encryptFile-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-) method. You can pass user password, owner password and privileges to [EncryptFile](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#encryptFile-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-) method. You also need to pass KeySize and Algorithm values to this method.
+In order to encrypt a PDF file, you need to create [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity) object and then call the [EncryptFile](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#encryptFile-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-) method. You can pass user password, owner password and privileges to [EncryptFile](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#encryptFile-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-) method. You also need to pass KeySize and Algorithm values to this method.
 
 The following code snippet shows you how to encrypt PDF file.
 

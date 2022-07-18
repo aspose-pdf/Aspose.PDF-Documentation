@@ -15,7 +15,7 @@ This section shows how to add pages to a PDF using **Aspose.PDF for C++** librar
 
 Aspose.PDF for C++ API provides full flexibility to work with pages in a PDF document using C++.
 
-It maintains all the pages of a PDF document in [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) that can be used to work with PDF pages.
+It maintains all the pages of a PDF document in [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) that can be used to work with PDF pages.
 Aspose.PDF for C++ lets you insert a page to a PDF document at any location in the file as well as add pages to the end of a PDF file.
 
 ## Add or Insert Page in a PDF File
@@ -26,8 +26,8 @@ Aspose.PDF for C++ lets you insert a page to a PDF document at any location in t
 
 The following code sample explains you on how to add page in a PDF document.
 
-1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the input PDF file.
-1. Call the [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's [Insert](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#a1fb1fe44df4d325df5ad41b691501bb2) method with specified index.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the input PDF file.
+1. Call the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's [Insert](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#a1fb1fe44df4d325df5ad41b691501bb2) method with specified index.
 1. Save the output PDF
 
 The following code snippet shows you how to insert a page in a PDF file.
@@ -92,8 +92,8 @@ Sometimes, you want to ensure that a document ends on an empty page. This topic 
 
 To insert an empty page at the end of a PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the input PDF file.
-1. Call the [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's [Add](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1) method, without any parameters.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the input PDF file.
+1. Call the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's [Add](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1) method, without any parameters.
 1. Save the output PDF using the Save method.
 
 The following code snippet shows you how to insert an empty page at the end of a PDF file.

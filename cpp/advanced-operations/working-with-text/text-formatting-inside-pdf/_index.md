@@ -13,7 +13,7 @@ sitemap:
 
 ## How to add Line Indent to PDF
 
-To add line indentation to PDF Aspose.PDF for C ++ uses the [SubsequentLinesIndent](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a89b064ab1f39d56040625d7d98194ad3) property in the [TextFormattingOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options/) class  and also help the [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) and [Paragraphs](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs) collections.
+To add line indentation to PDF Aspose.PDF for C ++ uses the [SubsequentLinesIndent](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a89b064ab1f39d56040625d7d98194ad3) property in the [TextFormattingOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options/) class  and also help the [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) and [Paragraphs](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs) collections.
 
 Please use the following code snippet to use the property:
 
@@ -62,7 +62,7 @@ void AddLineIndent() {
 
 ## How to add Text Border
 
-The following code snippet shows, how to add a border to a text using TextBuilder and setting DrawTextRectangleBorder property of [TextState](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state)
+The following code snippet shows, how to add a border to a text using TextBuilder and setting DrawTextRectangleBorder property of [TextState](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state)
 
 ```cpp
 void AddTextBorder() {
@@ -137,7 +137,7 @@ void AddUnderlineText() {
 
 ## How to add Border Around Added Text
 
-You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_content_editor/) class.
+You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_content_editor/) class.
 
 ```cpp
 void AddBorderAroundAddedText() {
@@ -168,7 +168,7 @@ void AddBorderAroundAddedText() {
 
 ## How to add NewLine feed
 
-For adding text with line feed, please use [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) with [TextParagraph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_paragraph).
+For adding text with line feed, please use [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) with [TextParagraph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_paragraph).
 
 The following code snippet shows you how to add NewLine feed in your PDF file:
 
@@ -214,7 +214,7 @@ void AddNewLineFeed() {
 
 ## How to add StrikeOut Text
 
-You can use [TextState](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state) class to set text formatting like Bold, Italic, Underline, and also, the API has provided the capabilities to mark text formatting as Strikeout.
+You can use [TextState](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state) class to set text formatting like Bold, Italic, Underline, and also, the API has provided the capabilities to mark text formatting as Strikeout.
 
 Please try using the following code snippet to add TextFragment with Strikeout formatting.
 
@@ -256,7 +256,7 @@ void AddStrikeOutText() {
 
 ## Apply Gradient Shading to the Text
 
-[Aspose.Pdf.Color](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.color) Class has further been enhanced by introducing new property of [PatternColorSpace](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.color#a8be6d8ab626d2ba6935a13a9c5b0de54), which can be used to specify shading colors for the text. This new property adds different Gradient Shading to the text e.g. Axial Shading, Radial (Type 3) Shading as shown in the following code snippet:
+[Aspose.Pdf.Color](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.color) Class has further been enhanced by introducing new property of [PatternColorSpace](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.color#a8be6d8ab626d2ba6935a13a9c5b0de54), which can be used to specify shading colors for the text. This new property adds different Gradient Shading to the text e.g. Axial Shading, Radial (Type 3) Shading as shown in the following code snippet:
 
 ```cpp
 void ApplyGradientShading() {
@@ -295,7 +295,7 @@ void ApplyGradientShading() {
 
 ## How to align text to float content
 
-Aspose.PDF supports setting text alignment for contents inside a Floating Box element. The alignment properties of [Aspose.Pdf.FloatingBox](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.floating_box) instance can be used to achieve this as shown in the following code sample.
+Aspose.PDF supports setting text alignment for contents inside a Floating Box element. The alignment properties of [Aspose.Pdf.FloatingBox](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.floating_box) instance can be used to achieve this as shown in the following code sample.
 
 ```cpp
 void ApplyGradientShadingRadial() {

@@ -15,7 +15,7 @@ sitemap:
 
 TextFragmentAbsorber allows you to find text, matching a particular phrase, from all pages of a PDF document.
 
-To search text in the whole document, call the [Pages](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) collection's accept() method. The [accept()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) method takes a TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects. Loop through all the fragments to get their properties, for example Text, Position, XIndent, YIndent, FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor etc.
+To search text in the whole document, call the [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) collection's accept() method. The [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) method takes a TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects. Loop through all the fragments to get their properties, for example Text, Position, XIndent, YIndent, FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor etc.
 
 The following code snippet shows how to search an the entire document and display all matches in a console.
 
@@ -58,7 +58,7 @@ pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber);
 
 To search text segments on all pages in a document, get a document's TextFragment objects.
 
-TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages in a PDF document. To search text in the whole document, call the [Pages](https://apireference.aspose.com/pdf//java/com.aspose.pdf/pagecollection) collection's [accept()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) method. The [accept()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) method takes a TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects.
+TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages in a PDF document. To search text in the whole document, call the [Pages](https://reference.aspose.com/pdf//java/com.aspose.pdf/pagecollection) collection's [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) method. The [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) method takes a TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects.
 
 {{% alert color="primary" %}}
 
@@ -115,7 +115,7 @@ To search and get text from a document:
 1. Pass the search term as a regular expression to the TextFragmentAbsorber constructor.
 1. Set the TextFragmentAbsorber object's TextSearchOptions property.
    This property requires a TextSearchOptions object: pass true to its constructor when creating a new object.
-1. To retrieve matching text from all pages, call the [Pages](https://apireference.aspose.com/pdf//java/com.aspose.pdf/pagecollection) collection's [accept()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) method.
+1. To retrieve matching text from all pages, call the [Pages](https://reference.aspose.com/pdf//java/com.aspose.pdf/pagecollection) collection's [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) method.
    TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression.
 
 The following code snippet shows how to search all pages in a document and get text based on a regular expression.

@@ -78,7 +78,7 @@ sitemap:
 
 ## Add Ellipse object
 
-Aspose.PDF for .NET supports to add [Ellipse](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) objects to PDF documents. It also offers the feature to fill ellipse  object with a certain color.
+Aspose.PDF for .NET supports to add [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) objects to PDF documents. It also offers the feature to fill ellipse  object with a certain color.
 
 ```csharp
  public static void Ellipse()
@@ -119,7 +119,7 @@ Aspose.PDF for .NET supports to add [Ellipse](https://apireference.aspose.com/pd
 
 ## Create Filled Ellipse Object
 
-The following code snippet shows how to add a [Ellipse](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse)  object that is filled with color.
+The following code snippet shows how to add a [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse)  object that is filled with color.
 
 ```csharp
      public static void EllipseFilled()

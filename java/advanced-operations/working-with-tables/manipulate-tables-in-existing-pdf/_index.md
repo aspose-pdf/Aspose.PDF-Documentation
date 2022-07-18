@@ -49,7 +49,7 @@ public class ExampleManipulate {
 
 ## Replace old Table with a new one in PDF document
 
-In case you need to find a particular table and replace it with the desired one, you can use Replace() the method of [TableAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) Class in order to do that. 
+In case you need to find a particular table and replace it with the desired one, you can use Replace() the method of [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) Class in order to do that. 
 
 Following example demonstrate the functionality to replace the table inside PDF document:
 

@@ -10,13 +10,13 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[PdfPageEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) class provides the facility to rotate a page.
+[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) class provides the facility to rotate a page.
 
 {{% /alert %}}
 
 ## Rotate page using PageRotations
 
-To rotate pages in document we can use [PageRotations](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
+To rotate pages in document we can use [PageRotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
 `PageRotations` contains the page number and rotation degree, the key represents the page number, the value of key represents the rotation in degrees.
 
 ```csharp
@@ -33,7 +33,7 @@ public static void RotatePages1()
 
 ## Rotate page using Rotation
 
-We can also use [Rotation](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation) propety. The rotation must be 0, 90, 180 or 270
+We can also use [Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation) propety. The rotation must be 0, 90, 180 or 270
 
 ```csharp
 public static void RotatePages2()

@@ -20,10 +20,10 @@ After [installing Aspose.PDF for Android via Java](/pdf/androidjava/installatio
 
 Below code snippet follows these steps:
 
-1. Instantiate a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) object
-1. Add a [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) to document object
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) object
-1. Add TextFragment to [Paragraph](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) collection of the page
+1. Instantiate a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) object
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) to document object
+1. Create a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) object
+1. Add TextFragment to [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) collection of the page
 1. Save the resultant PDF document
 
 The following code snippet shows basic steps of the working of Aspose.PDF for Android API.

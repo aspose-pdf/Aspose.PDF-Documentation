@@ -33,4 +33,4 @@ The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 22.1
 
 1. Some declarations (e.g. **StreamPtr**) will be removed from the global namespace in the upcoming releases.
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).

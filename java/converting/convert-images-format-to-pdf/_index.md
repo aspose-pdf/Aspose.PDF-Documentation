@@ -73,8 +73,8 @@ Aspose presents you online free application ["BMP to PDF"](https://products.aspo
 
 The following code snippet shows you how to convert CGM files to PDF format using Aspose.PDF for Java.
 
-1. Create a CGM [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions) class.
-1. Create an instance of [Document](https://apireference.aspose.com/page/java/com.aspose.page/Document) class with mention source filename and options.
+1. Create a CGM [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions) class.
+1. Create an instance of [Document](https://reference.aspose.com/page/java/com.aspose.page/Document) class with mention source filename and options.
 1. Save the document with the desired file name.
 
 ```java
@@ -115,7 +115,7 @@ public final class ConvertCGMtoPDF {
 Aspsoe.PDF for Java allows you to convert DICOM files to PDF format, check next code snippet:
 
 1. Load image into stream
-1. Initialize [`Document object`](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document)
+1. Initialize [`Document object`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
 1. Load sample DICOM image file
 1. Save output PDF document
 
@@ -184,10 +184,10 @@ drive, found at a web URL or in a Stream instance.
 To add an image:
 
 1. Create an object of the com.aspose.pdf.Image class. 
-1. Add the image to a [Paragraphs](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/paragraphs) collection of page instance.
+1. Add the image to a [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/paragraphs) collection of page instance.
 1. Specify the path or source of Image.
-    - If an image is at a location on the hard drive, specify the path location using the [Image.setFile(…)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Image) method.
-    - If an image is placed in a FileInputStream, pass the object holding the image to the [Image.setImageStream(…)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Image) method.
+    - If an image is at a location on the hard drive, specify the path location using the [Image.setFile(…)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Image) method.
+    - If an image is placed in a FileInputStream, pass the object holding the image to the [Image.setImageStream(…)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Image) method.
 
 The following code snippet shows how to load an image object, set the page margin, place the image on page and save the output as PDF.
 
@@ -286,15 +286,15 @@ public static void convertEMFtoPDF_02() throws IOException {
 
 ## Add Image using PDF Operators
 
-Every PDF page object contains the [getResources()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) and [getContents()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getContents--) methods. Resources can be images and forms, for example, while content is represented by a set of PDF operators. Each operator has its own name and argument. 
+Every PDF page object contains the [getResources()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) and [getContents()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getContents--) methods. Resources can be images and forms, for example, while content is represented by a set of PDF operators. Each operator has its own name and argument. 
 
 This example use operators to add an image to a PDF file.
 
 To add an image to an existing PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
 1. Get the page you want to add an image to.
-1. Add the image into the page's [getResources()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) collection.
+1. Add the image into the page's [getResources()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) collection.
 1. Use operators to place the image on the page:
    1. Use the GSave operator to save the current graphical state.
    1. Use the ConcatenateMatrix operator to specify where the image is to be placed.
@@ -362,7 +362,7 @@ No need to wonder how to convert JPG to PDF, because Apose.PDF for Java library 
 
 You can very easy convert a JPG images to PDF with Aspose.PDF for Java by following steps:
 
-1. Initialize object of [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class
+1. Initialize object of [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class
 1. Load JPG image and add to paragraph
 1. Save output PDF
 
@@ -482,7 +482,7 @@ SVG images and their behaviors are defined in XML text files. This means that th
 
 ## How to convert SVG file to PDF format
 
-To convert SVG files to PDF, use the class named [SvgLoadOptions](https://apireference.aspose.com/pdf//java/com.aspose.pdf/svgsaveoptions) which is used to initialize the [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. Later, this object is passed as an argument during the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the input format of the source document.
+To convert SVG files to PDF, use the class named [SvgLoadOptions](https://reference.aspose.com/pdf//java/com.aspose.pdf/svgsaveoptions) which is used to initialize the [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. Later, this object is passed as an argument during the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the input format of the source document.
 
 The following code snippet shows the process of converting SVG file into PDF format.
 

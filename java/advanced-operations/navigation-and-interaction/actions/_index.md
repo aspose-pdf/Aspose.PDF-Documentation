@@ -19,18 +19,18 @@ It is possible to add hyperlinks to PDF files, either to allow readers to naviga
 
 In order to add web hyperlinks to PDF documents:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) Class object.
-1. Get the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) Class you want to add the link to.
-1. Create a [LinkAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) object using the Page and [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) objects. The rectangle object is used to specify the location on the page where the link should be added.
-1. Set the getAction method to the [GoToURIAction](https://apireference.aspose.com/pdf/java/com.aspose.pdf/GoToURIAction) object which specifies the location of the remote URI.
-1. To display a hyperlink text, add a text string on a location similar to where the [LinkAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) object is placed.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) Class object.
+1. Get the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) Class you want to add the link to.
+1. Create a [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) object using the Page and [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) objects. The rectangle object is used to specify the location on the page where the link should be added.
+1. Set the getAction method to the [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToURIAction) object which specifies the location of the remote URI.
+1. To display a hyperlink text, add a text string on a location similar to where the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) object is placed.
 1. To add a free text:
 
-- Instantiate an [FreeTextAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation) object. It also accepts Page and Rectangle objects as argument, so it is possible to provide same values as specified against the LinkAnnotation constructor.
-- Using the [FreeTextAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation) object’s Contents property, specify the string that should be displayed in the output PDF.
-- Optionally, set the border width of both the [LinkAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) and FreeTextAnnotation objects to 0 so that they do not appear in the PDF document.
-- Once the [LinkAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) and [FreeTextAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation) objects have been defined, add these links to the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Annotations collection.
-- Finally, save the updated PDF using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object's Save method.
+- Instantiate an [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation) object. It also accepts Page and Rectangle objects as argument, so it is possible to provide same values as specified against the LinkAnnotation constructor.
+- Using the [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation) object’s Contents property, specify the string that should be displayed in the output PDF.
+- Optionally, set the border width of both the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) and FreeTextAnnotation objects to 0 so that they do not appear in the PDF document.
+- Once the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) and [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation) objects have been defined, add these links to the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Annotations collection.
+- Finally, save the updated PDF using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's Save method.
 
 The following code snippet shows you how to add a hyperlink to a PDF file.
 
@@ -91,7 +91,7 @@ public class ExampleActions {
 
 Aspose.PDF for Java provides a great feature to PDF creation as well as its manipulation. It also offers the feature to add links to PDF pages and a link can either direct to pages in another PDF file, a web URL, link to launch an Application or even link to pages in same PDF file.
 
-In order to add the local hyperlink, we need to create a TextFragment so that link can be associated with the TextFragment. The [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) class has a method named [getHyperlink](https://apireference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#getHyperlink--) which is used to associate LocalHyperlink instance. The following code snippet shows the steps to accomplish this requirement.
+In order to add the local hyperlink, we need to create a TextFragment so that link can be associated with the TextFragment. The [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) class has a method named [getHyperlink](https://reference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#getHyperlink--) which is used to associate LocalHyperlink instance. The following code snippet shows the steps to accomplish this requirement.
 
 ```java
 public static void CreateHyperlinkToPagesInSamePDF() {
@@ -145,11 +145,11 @@ Links are represented as annotations in a PDF file and they can be added, update
 
 To get a link’s URL:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
-1. Get the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) you want to extract links from.
-1. Use the [AnnotationSelector](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) class to extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation)) objects from the specified page.
-1. Pass the [AnnotationSelector](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) object to the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Accept method.
-1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) object’s Selected property.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
+1. Get the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) you want to extract links from.
+1. Use the [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) class to extract all the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation)) objects from the specified page.
+1. Pass the [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) object to the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Accept method.
+1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) object’s Selected property.
 1. Finally, extract the LinkAnnotation Action as GoToURIAction.
 
 The following code snippet shows how to get hyperlink destinations (URL) from a PDF file.
@@ -184,7 +184,7 @@ A hyperlink has two parts: the text that shows in the document, and the destinat
 
 Text and annotations/actions in a PDF file are represented by different entities. Text on a page is just a set of words and characters, while annotations bring some interactivity such as that inherent in a hyperlink.
 
-To find the URL content, you need to work with both annotation and text. The [Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Annotation) object does not have itself have the text but sits under the text on the page. So to get the text, the Annotation gives the URL’s bounds, while the Text object gives the URL contents. Please see the following code snippet.
+To find the URL content, you need to work with both annotation and text. The [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/Annotation) object does not have itself have the text but sits under the text on the page. So to get the text, the Annotation gives the URL’s bounds, while the Text object gives the URL contents. Please see the following code snippet.
 
 ```java
     public static void GetHyperlinkText() {
@@ -215,7 +215,7 @@ To find the URL content, you need to work with both annotation and text. The [An
 
 To remove an open action:
 
-1. Set the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s [getOpenAction](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getOpenAction--) method to null.
+1. Set the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s [getOpenAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getOpenAction--) method to null.
 1. Save the updated PDF using the Document object’s Save method.
 
 The following code snippet shows how to remove a document open action from the PDF file.
@@ -237,7 +237,7 @@ The following code snippet shows how to remove a document open action from the P
 
 When viewing PDF files in a PDF viewer such as Adobe Reader, the files usually open on the first page. However, it is possible to set the file to open on a different page.
 
-The [XYZExplicitDestination](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XYZExplicitDestination) class allows you to specify a page in a PDF file that you want to open. When passing the GoToAction object value to the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class getOpenAction method, the document opens at the page specified against the XYZExplicitDestination object. The following code snippet shows how to specify a page as the document open action.
+The [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/XYZExplicitDestination) class allows you to specify a page in a PDF file that you want to open. When passing the GoToAction object value to the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class getOpenAction method, the document opens at the page specified against the XYZExplicitDestination object. The following code snippet shows how to specify a page as the document open action.
 
 ```java
     public static void HowToSpecifyPDFPageWhenViewingDocument()

@@ -10,9 +10,9 @@ sitemap:
     priority: 0.7
 ---
 
-[modifyAnnotations](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor#modifyAnnotations-int-int-com.aspose.pdf.Annotation-) method allows you to change basic attributes of an annotation i.e. Subject, Modified date, Author, Annotation color, and Open flag. You can also set Author directly by using ModifyAnnotations method. This class also provides two overloaded methods to delete annotations. The first method called DeleteAnnotations deletes all the annotations from a PDF file.  
+[modifyAnnotations](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor#modifyAnnotations-int-int-com.aspose.pdf.Annotation-) method allows you to change basic attributes of an annotation i.e. Subject, Modified date, Author, Annotation color, and Open flag. You can also set Author directly by using ModifyAnnotations method. This class also provides two overloaded methods to delete annotations. The first method called DeleteAnnotations deletes all the annotations from a PDF file.  
 
-For example, in the following code, consider changing the author in our annotation using [modifyAnnotationsAuthor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor#modifyAnnotationsAuthor-int-int-java.lang.String-java.lang.String-).
+For example, in the following code, consider changing the author in our annotation using [modifyAnnotationsAuthor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor#modifyAnnotationsAuthor-int-int-java.lang.String-java.lang.String-).
 
 ```java
  public static void ModifyAnnotationsAuthor() {

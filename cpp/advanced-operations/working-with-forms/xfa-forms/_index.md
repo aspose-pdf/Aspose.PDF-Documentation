@@ -13,7 +13,7 @@ sitemap:
 
 XFA Forms is  XML Forms Architecture, a family of proprietary XML specifications that were proposed and developed by JetForm to improve the handling of web forms. It can also be used in PDF files starting with the PDF 1.5 specification.
 
-Fill XFA fields with [Form](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.form/) class by [Aspose.Pdf.Facades](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.facades).
+Fill XFA fields with [Form](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.form/) class by [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.facades).
 
 ## Fill XFA fields
 

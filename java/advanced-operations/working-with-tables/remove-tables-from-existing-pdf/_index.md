@@ -17,11 +17,11 @@ Aspose.PDF for Java offers the capabilities to insert/create Table inside PDF do
 
 {{% /alert %}}
 
-In order to remove the tables, we need to use [TableAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) class to get hold of tables in existing PDF and then call [Remove](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#remove-com.aspose.pdf.AbsorbedTable-) method.
+In order to remove the tables, we need to use [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) class to get hold of tables in existing PDF and then call [Remove](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#remove-com.aspose.pdf.AbsorbedTable-) method.
 
 ## Remove Table from PDF document
 
-We have added new function i.e. Remove() to the existing [TableAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
+We have added new function i.e. Remove() to the existing [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
 
 ```java
 package com.aspose.pdf.examples;

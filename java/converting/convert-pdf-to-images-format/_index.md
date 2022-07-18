@@ -19,15 +19,15 @@ There are several classes in the library that allow you to use a virtual device 
 
 **Aspose.PDF for Java** makes a possible to convert PDF Pages to TIFF  images.
 
-The [TiffDevice class](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice) allows you to convert PDF pages to TIFF images. This class provides a method named Process which allows you to convert all the pages in a PDF file to a single TIFF image.
+The [TiffDevice class](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice) allows you to convert PDF pages to TIFF images. This class provides a method named Process which allows you to convert all the pages in a PDF file to a single TIFF image.
 
 ### Convert PDF Pages to One TIFF Image
 
 Aspose.PDF for Java explain how to convert all pages in a PDF file to a single TIFF image:
 
-1. Create an object of the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
-1. Call the [Process](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/DocumentDevice#process-com.aspose.pdf.IDocument-int-int-java.io.OutputStream-) method to convert the document.
-1. To set the output file's properties, use the [TiffSettings](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/TiffSettings) class.
+1. Create an object of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
+1. Call the [Process](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/DocumentDevice#process-com.aspose.pdf.IDocument-int-int-java.io.OutputStream-) method to convert the document.
+1. To set the output file's properties, use the [TiffSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/TiffSettings) class.
 
 The following code snippet shows how to convert all the PDF pages to a single TIFF image.
 
@@ -180,15 +180,15 @@ Aspose.PDF for Java presents you online free application ["PDF to TIFF"](https:/
 
 `ImageDevice` is the ancestor for `BmpDevice`, `JpegDevice`, `GifDevice`, `PngDevice` and `EmfDevice`.
 
-- The [BmpDevice](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/BmpDevice) class allows you to convert PDF pages to <abbr title="Bitmap Image File">BMP</abbr> images.
-- The [EmfDevice](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/EmfDevice) class allows you to convert PDF pages to <abbr title="Enhanced Meta File">EMF</abbr> images.
-- The [JpegDevice](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/JpegDevice) class allows you to convert PDF pages to JPEG images.
-- The [PngDevice](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/PngDevice) class allows you to convert PDF pages to <abbr title="Portable Network Graphics">PNG</abbr> images.
-- The [GifDevice](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/GifDevice) class allows you to convert PDF pages to <abbr title="Graphics Interchange Format">GIF</abbr> images.
+- The [BmpDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/BmpDevice) class allows you to convert PDF pages to <abbr title="Bitmap Image File">BMP</abbr> images.
+- The [EmfDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/EmfDevice) class allows you to convert PDF pages to <abbr title="Enhanced Meta File">EMF</abbr> images.
+- The [JpegDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/JpegDevice) class allows you to convert PDF pages to JPEG images.
+- The [PngDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/PngDevice) class allows you to convert PDF pages to <abbr title="Portable Network Graphics">PNG</abbr> images.
+- The [GifDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/GifDevice) class allows you to convert PDF pages to <abbr title="Graphics Interchange Format">GIF</abbr> images.
 
 Let's take a look at how to convert a PDF page to an image.
 
-[BmpDevice](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/BmpDevice) class provides a method named [Process](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/BmpDevice#process-com.aspose.pdf.Page-com.aspose.ms.System.Drawing.Graphics-) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
+[BmpDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/BmpDevice) class provides a method named [Process](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/BmpDevice#process-com.aspose.pdf.Page-com.aspose.ms.System.Drawing.Graphics-) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
 
 The following code snippet shows this possibility:
 
@@ -257,7 +257,7 @@ SVG images and their behaviors are defined in XML text files. This means that th
 
 ### Convert PDF pages to SVG images
 
-Aspose.PDF for Java supports the feature to convert PDF file to SVG format. To accomplish this requirement, the [SvgSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) class has been introduced into the com.aspose.pdf package. Instantiate an object of [SvgSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) and pass it as a second argument to the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) method.
+Aspose.PDF for Java supports the feature to convert PDF file to SVG format. To accomplish this requirement, the [SvgSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) class has been introduced into the com.aspose.pdf package. Instantiate an object of [SvgSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) and pass it as a second argument to the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) method.
 
 The following code snippet shows the steps for converting a PDF file to SVG format.
 

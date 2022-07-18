@@ -12,7 +12,7 @@ sitemap:
 ---
 
 Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive
-">PDF/A</abbr> restriction from the original document. Class [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) has method RemovePdfaCompliance(..) to remove
+">PDF/A</abbr> restriction from the original document. Class [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) has method RemovePdfaCompliance(..) to remove
 the PDF compliance information from input/source file.
 
 ```java

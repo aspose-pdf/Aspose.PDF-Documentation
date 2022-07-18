@@ -78,7 +78,7 @@ sitemap:
 
 ## Get PDF File Information
 
-In order to get file specific information of a PDF file, you first need to get the [DocumentInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/documentinfo) object using [Info](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/info) property of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. Once the [DocumentInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/documentinfo) object is retrieved, you can get the values of the individual properties. The following code snippet shows you how to get PDF file information.
+In order to get file specific information of a PDF file, you first need to get the [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) object using [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) property of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object. Once the [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) object is retrieved, you can get the values of the individual properties. The following code snippet shows you how to get PDF file information.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -102,7 +102,7 @@ Console.WriteLine("Title: {0}", docInfo.Title);
 
 Aspose.PDF for .NET allows you to set file-specific information for a PDF, information like author, creation date, subject, and title. To set this information:
 
-1. Create a [DocumentInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/documentinfo) object.
+1. Create a [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) object.
 1. Set the values of the properties.
 1. Save the updated document using the Document class’ Save method.
 
@@ -141,8 +141,8 @@ pdfDocument.Save(dataDir);
 
 Aspose.PDF allows you to access a PDF file’s XMP metadata. To get a PDF file’s metadata:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object and open the input PDF file.
-1. Get the file’s metadata using the [Metadata](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) property.
+1. Create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object and open the input PDF file.
+1. Get the file’s metadata using the [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) property.
 
 The following code snippet shows you how to get metadata from the PDF file.
 
@@ -164,9 +164,9 @@ Console.WriteLine(pdfDocument.Metadata["xmp:CustomProperty"]);
 
 Aspose.PDF allows you to set metadata in a PDF file. To set metadata:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
-1. Set metadata values using the [Metadata](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) property.
-1. Save the updated document using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
+1. Create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object.
+1. Set metadata values using the [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) property.
+1. Save the updated document using the [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object.
 
 The following code snippet shows you how to set metadata in a PDF file.
 

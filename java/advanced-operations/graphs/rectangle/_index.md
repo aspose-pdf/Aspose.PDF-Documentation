@@ -13,29 +13,29 @@ sitemap:
 
 ## Add Rectangle object
 
-Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) object where you also offers the feature to fill rectangle object with a certain color, control Z-Order, add gradiant color fill and etc.
+Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) object where you also offers the feature to fill rectangle object with a certain color, control Z-Order, add gradiant color fill and etc.
 
 First, let's look at the possibility of creating a Rectangle object.
 
 Follow the steps below:
 
-1. Create a new PDF [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document)
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)
 
-1. Add [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) to pages collection of PDF file
+1. Add [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) to pages collection of PDF file
 
-1. Add [Text fragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) to paragraphs collection of page instance
+1. Add [Text fragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) to paragraphs collection of page instance
 
-1. Create [Graph](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) instance
+1. Create [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) instance
 
-1. Set border for [Drawing object](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame)
+1. Set border for [Drawing object](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame)
 
 1. Create Rectangle instance
 
-1. Add [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) object to shapes collection of Graph object
+1. Add [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) object to shapes collection of Graph object
 
 1. Add graph object to paragraphs collection of page instance
 
-1. Add [Text fragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) to paragraphs collection of page instance
+1. Add [Text fragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) to paragraphs collection of page instance
 
 1. And save your PDF file
 
@@ -96,7 +96,7 @@ public class WorkingWithGraphs {
 
 Aspose.PDF for Java also offers the feature to fill rectangle object with a certain color.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object that is filled with color.
+The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object that is filled with color.
 
 ```java
    public static void ExampleRectangleFilledSolidColor() {
@@ -133,7 +133,7 @@ Look at the result of rectangle filled solid color:
 
 Aspose.PDF for Java supports the feature to add graph objects to PDF documents and sometimes it is required to fill graph objects with Gradient Color. To Fill graph objects with Gradient Color, We need to set setPatterColorSpace with gradientAxialShading object as following.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object that is filled with Gradient Color.
+The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object that is filled with Gradient Color.
 
 ```java
    public static void ExampleRectangleFilledGradient() {
@@ -165,13 +165,13 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
 
 ## Create Rectangle with Alpha color channel
 
-Aspose.PDF for Java supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object with Alpha color channel.
+Aspose.PDF for Java supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object with Alpha color channel.
 
 Pixels of the image can store information about their opacity along with color value. This allows creating images with transparent or semi-transparent areas.
 
 Instead of making a color transparent, each pixel stores information on how opaque it is. This opacity data is called alpha channel and is typically stored after the color channels of the pixel.
 
-In our code snippet we used [fromArgb](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Color#fromArgb-int-int-int-) method of [com.aspose.pdf.Color](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Color). We need to specify values where the first 3 are color components, specified in the range 0 to 255, and the last is the opacity level (alpha channel), specified by fractional numbers from 0 to 1.
+In our code snippet we used [fromArgb](https://reference.aspose.com/pdf/java/com.aspose.pdf/Color#fromArgb-int-int-int-) method of [com.aspose.pdf.Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/Color). We need to specify values where the first 3 are color components, specified in the range 0 to 255, and the last is the opacity level (alpha channel), specified by fractional numbers from 0 to 1.
 
 ```java
     public static void ExampleRectangleAlphaChannelColor() {
@@ -208,7 +208,7 @@ In our code snippet we used [fromArgb](https://apireference.aspose.com/pdf/java/
 
 Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. When adding more than one instance of same object inside PDF file, we can control their rendering by specifying the Z-Order. Z-Order is also used when we need to render objects on top of each other.
 
-The following code snippet shows the steps to render [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) objects on top of each other.
+The following code snippet shows the steps to render [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) objects on top of each other.
 
 ```java
    public static void Controlling_Z_Order() {

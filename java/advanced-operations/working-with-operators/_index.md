@@ -19,24 +19,24 @@ A content stream is a PDF stream object whose data consists of instructions desc
 
 ### Implementation Details
 
-This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/Do), and [GRestore](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore).
+This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do), and [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore).
 
-- The [GSave](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) operator saves the PDF’s current graphical state.
-- The This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/Do), and [GRestore](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore).
+- The [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) operator saves the PDF’s current graphical state.
+- The This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do), and [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore).
  (concatenate matrix) operator is used to define how an image should be placed on the PDF page.
-- The [Do](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) operator draws the image on the page.
-- The [GRestore](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) operator restores the graphical state.
+- The [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) operator draws the image on the page.
+- The [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) operator restores the graphical state.
 
 To add an image into a PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
 1. Get the particular page the image is going to be added to.
 1. Add the image into the page’s Resources collection.
 1. Use the operators to place the image on the page:
-   - First, use the [GSave](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) operator to save the current graphical state.
-   - Then use the [ConcatenateMatrix](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix) operator to specify where the image is to be placed.
-   - Use the [Do](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) operator to draw the image on the page.
-1. Finally, use [GRestore](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) operator to save the updated graphical state.
+   - First, use the [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) operator to save the current graphical state.
+   - Then use the [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix) operator to specify where the image is to be placed.
+   - Use the [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) operator to draw the image on the page.
+1. Finally, use [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) operator to save the updated graphical state.
 
 The following code snippet shows how to use PDF operators.
 
@@ -172,7 +172,7 @@ The code below wraps a PDF file’s existing contents with the GSave/GRestore op
 
 ## Remove Graphics Objects using Operator Classes
 
-The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor) class’ [DeleteImage](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor#deleteImage--) method, the operator classes can be used to remove them instead.
+The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor) class’ [DeleteImage](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor#deleteImage--) method, the operator classes can be used to remove them instead.
 
 The following code snippet shows how to remove graphics. Please note that if the PDF file contains text labels for the graphics, they might persist in the PDF file, using this approach. Therefore search the graphic operators for an alternate method to delete such images.
 
@@ -203,7 +203,7 @@ Aspose.PDF for Java 9.0.0 supports changing a PDF document's color space. It is 
 
 {{% /alert %}}
 
-The following methods have been implemented in the [Operator](https://apireference.aspose.com/java/pdf/com.aspose.pdf/Operator) class to allow you to change the color space. Use it to change some specific RGB/CMYK colors to the CMYK/RGB color space, keeping the remaining PDF document as it is.
+The following methods have been implemented in the [Operator](https://reference.aspose.com/java/pdf/com.aspose.pdf/Operator) class to allow you to change the color space. Use it to change some specific RGB/CMYK colors to the CMYK/RGB color space, keeping the remaining PDF document as it is.
 
 {{% alert color="primary" %}}
 **Public API Changes**

@@ -81,7 +81,7 @@ sitemap:
 
 This article describes how to Print PDF File to Default Printer using Printer and Page Settings in C#.
 
-The [PdfViewer](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) class allows you to print a PDF file to the default printer. You need to create a PdfViewer object and open the PDF using the [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) method. To specify different print settings, use the `PageSettings` and `PrinterSettings` classes. Finally, call the [PrintDocumentWithSettings](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) method to print the PDF to the default printer. The following code snippet shows how to print PDF to the default printer with printer and page Settings.
+The [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) class allows you to print a PDF file to the default printer. You need to create a PdfViewer object and open the PDF using the [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) method. To specify different print settings, use the `PageSettings` and `PrinterSettings` classes. Finally, call the [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) method to print the PDF to the default printer. The following code snippet shows how to print PDF to the default printer with printer and page Settings.
 
 ```csharp
 public static void SimplePrint()

@@ -13,29 +13,29 @@ sitemap:
 
 ## Add Rectangle object
 
-Aspose.PDF for C++ supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Rectangle](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object where you also offers the feature to fill rectangle object with a certain color, control Z-Order, add gradiant color fill and etc.
+Aspose.PDF for C++ supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object where you also offers the feature to fill rectangle object with a certain color, control Z-Order, add gradiant color fill and etc.
 
 First, let's look at the possibility of creating a Rectangle object.
 
 Follow the steps below:
 
-1. Create a new PDF [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/)
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/)
 
-1. Add [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page/) to pages collection of PDF file
+1. Add [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page/) to pages collection of PDF file
 
-1. Add [Text fragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) to paragraphs collection of page instance
+1. Add [Text fragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) to paragraphs collection of page instance
 
-1. Create [Graph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph/) instance
+1. Create [Graph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph/) instance
 
-1. Set border for [Drawing object](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing)
+1. Set border for [Drawing object](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing)
 
 1. Create Rectangle instance
 
-1. Add [Rectangle](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object to shapes collection of Graph object
+1. Add [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object to shapes collection of Graph object
 
 1. Add graph object to paragraphs collection of page instance
 
-1. Add [Text fragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) to paragraphs collection of page instance
+1. Add [Text fragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) to paragraphs collection of page instance
 
 1. And save your PDF file
 
@@ -73,7 +73,7 @@ Follow the steps below:
 
 Aspose.PDF for C++ also offers the feature to fill rectangle object with a certain color.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object that is filled with color.
+The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object that is filled with color.
 
 ```csharp
     {
@@ -113,7 +113,7 @@ Look at the result of rectangle filled solid color:
 
 Aspose.PDF for C++ supports the feature to add graph objects to PDF documents and sometimes it is required to fill graph objects with Gradient Color. To Fill graph objects with Gradient Color, We need to set setPatterColorSpace with gradientAxialShading object as following.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object that is filled with Gradient Color.
+The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object that is filled with Gradient Color.
 
 ```csharp
  public static void CreateFilledRectangletGradientFill()
@@ -151,7 +151,7 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
 
 ## Create Rectangle with Alpha color channel
 
-Aspose.PDF for C+++ supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object with Alpha color channel.
+Aspose.PDF for C+++ supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object with Alpha color channel.
 
 Pixels of the image can store information about their opacity along with color value. This allows creating images with transparent or semi-transparent areas.
 
@@ -196,7 +196,7 @@ Instead of making a color transparent, each pixel stores information on how opaq
 
 Aspose.PDF for C++ supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. When adding more than one instance of same object inside PDF file, we can control their rendering by specifying the Z-Order. Z-Order is also used when we need to render objects on top of each other.
 
-The following code snippet shows the steps to render [Rectangle](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) objects on top of each other.
+The following code snippet shows the steps to render [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) objects on top of each other.
 
 ```csharp
  public static void AddRectangleZOrder()

@@ -394,7 +394,7 @@ Let's create yet another file - the XSL-FO markup file to transform employees' d
 </xsl:stylesheet>
 ```
 
-Aspose.PDF has a special [XslFoLoadOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.xsl_fo_load_options/) class that allows to apply XSL-FO tranformation.
+Aspose.PDF has a special [XslFoLoadOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.xsl_fo_load_options/) class that allows to apply XSL-FO tranformation.
 The following snippet shows how to use this class with the sample files described above.
 
 ```cpp
@@ -504,7 +504,7 @@ but in XSL-FO markup file we will add parameter: `<xsl:param name="isBoldName"><
 ```
 
 To add XSL params we need to create own 'XsltArgumentList' and
-set as property in [XslFoLoadOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.xsl_fo_load_options/).
+set as property in [XslFoLoadOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.xsl_fo_load_options/).
 The following snippet shows how to use this class with the sample files described above.
 
 ```cpp

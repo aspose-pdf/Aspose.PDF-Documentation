@@ -16,17 +16,17 @@ Aspose.Pdf.Facades namespace in [Aspose.PDF for .NET](/pdf/net/) allows you to m
 
 ## Explanation
 
-[PdfPageEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) class is different from [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) and [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class. First we need to understand the difference, and then we’ll be able to better understand the PdfPageEditor class. PdfFileEditor class allows you manipulate all the pages in a file like adding, deleting, or concatenating pages etc, while PdfContentEditor class helps you manipulate the contents of a page i.e. text and other objects etc. Whereas, PdfPageEditor class only works with the individual page itself like rotating, zooming, and aligning a page etc.
+[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) class is different from [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) and [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class. First we need to understand the difference, and then we’ll be able to better understand the PdfPageEditor class. PdfFileEditor class allows you manipulate all the pages in a file like adding, deleting, or concatenating pages etc, while PdfContentEditor class helps you manipulate the contents of a page i.e. text and other objects etc. Whereas, PdfPageEditor class only works with the individual page itself like rotating, zooming, and aligning a page etc.
 
 We can divide the features provided by this class into three main categories i.e. Transition, Alignment, and Display. We’re going to discuss these categories below:
 
 ### Transition
 
-This class contains two properties related to transition i.e. [TransitionType](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) and [TransitionDuration](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). TransitionType specifies the transition style to be used when moving to this page from another page during a presentation. TransitionDuration specifies display duration for the pages.
+This class contains two properties related to transition i.e. [TransitionType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) and [TransitionDuration](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). TransitionType specifies the transition style to be used when moving to this page from another page during a presentation. TransitionDuration specifies display duration for the pages.
 
 ### Alignment
 
-PdfPageEditor class supports both horizontal and vertical alignments. It provides two properties to serve the purpose i.e. [Alignment](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) and [VerticalAlignment](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). Alignment property is used to align the contents horizontally. Alignment property takes a value of AlignmentType, which contains three options i.e. Center, Left, and Right. VerticalAlignment property takes a value of VerticalAlignmentType, which contains three options i.e. Bottom, Center, and Top.
+PdfPageEditor class supports both horizontal and vertical alignments. It provides two properties to serve the purpose i.e. [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) and [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). Alignment property is used to align the contents horizontally. Alignment property takes a value of AlignmentType, which contains three options i.e. Center, Left, and Right. VerticalAlignment property takes a value of VerticalAlignmentType, which contains three options i.e. Bottom, Center, and Top.
 
 ### Display
 
@@ -41,5 +41,5 @@ You can find samples of the above mentioned methods in the code snippet given be
 ## Conclusion
 
 {{% alert color="primary" %}}
-In this article, we have taken a closer look on the [PdfPageEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) class. We have elaborated the properties and methods provided by this class. It makes the manipulation of individual pages in a class a very easy and simple task.
+In this article, we have taken a closer look on the [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) class. We have elaborated the properties and methods provided by this class. It makes the manipulation of individual pages in a class a very easy and simple task.
 {{% /alert %}}

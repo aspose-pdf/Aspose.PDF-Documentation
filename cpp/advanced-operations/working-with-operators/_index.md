@@ -19,7 +19,7 @@ A content stream is a PDF stream object whose data consists of instructions desc
 
 ### Implementation Details
 
-This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save), [ConcatenateMatrix](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.concatenate_matrix), [Do](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.do), and [GRestore](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_restore).
+This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save), [ConcatenateMatrix](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.concatenate_matrix), [Do](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.do), and [GRestore](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_restore).
 
 - The **GSave** operator saves the PDF’s current graphical state.
 - The **ConcatenateMatrix** (concatenate matrix) operator is used to define how an image should be placed on the PDF page.
@@ -28,7 +28,7 @@ This topic explains how to use operators with Aspose.PDF. The selected example a
 
 To add an image into a PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object and open the input PDF document.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object and open the input PDF document.
 1. Get the particular page the image is going to be added to.
 1. Add the image into the page’s Resources collection.
 1. Use the operators to place the image on the page:
@@ -157,7 +157,7 @@ void DrawXFormOnPageUsingOperators() {
 
 ## Remove Graphics Objects using Operator Classes
 
-The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_content_editor) class' [DeleteImage](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_content_editor#af7d23ef932737bf606f008ad5ec48380) method, the operator classes can be used to remove them instead.
+The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_content_editor) class' [DeleteImage](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_content_editor#af7d23ef932737bf606f008ad5ec48380) method, the operator classes can be used to remove them instead.
 
 The following code snippet shows how to remove graphics. Please note that if the PDF file contains text labels for the graphics, they might persist in the PDF file, using this approach. Therefore search the graphic operators for an alternate method to delete such images.
 

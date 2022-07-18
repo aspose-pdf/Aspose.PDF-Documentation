@@ -10,7 +10,7 @@ draft: false
 
 ## Add Form Field in an Existing PDF file
 
-In order to add a form field in an existing PDF file, you need to use [addField](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addField-int-java.lang.String-int-float-float-float-float-) method of [FormEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. This method requires you to specify the type of the field you want to add along with the name and location of the field. You need to create an object of [FormEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class, use [addField](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addField-int-java.lang.String-int-float-float-float-float-) method to add a new field in the PDF, Also, you can specify a limit on the number of characters in your field with [setFieldLimit] (https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#setFieldLimit-java.lang.String-int-) and finally use Save method to save the updated PDF file. The following code snippet shows you how to add form field in an existing PDF file.
+In order to add a form field in an existing PDF file, you need to use [addField](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addField-int-java.lang.String-int-float-float-float-float-) method of [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. This method requires you to specify the type of the field you want to add along with the name and location of the field. You need to create an object of [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class, use [addField](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addField-int-java.lang.String-int-float-float-float-float-) method to add a new field in the PDF, Also, you can specify a limit on the number of characters in your field with [setFieldLimit] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#setFieldLimit-java.lang.String-int-) and finally use Save method to save the updated PDF file. The following code snippet shows you how to add form field in an existing PDF file.
 
 ```java
     public static void AddField() {
@@ -24,8 +24,8 @@ In order to add a form field in an existing PDF file, you need to use [addField]
 
 ## Add Submit Button URL in an Existing PDF File 
 
-[addSubmitBtn](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addSubmitBtn-java.lang.String-int-java.lang.String-java.lang.String-float-float-float-float-) method allows you to set the submit button’s URL in a PDF file. This is the URL where the data is posted when the submit button is clicked. In our example code, we specify the URL, the name of our field, the page number to which we want to add, and the button placement coordinates.
-[addSubmitBtn](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addSubmitBtn-java.lang.String-int-java.lang.String-java.lang.String-float-float-float-float-) method required the name of the submit button field and the URL. This method is provided by [FormEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. The following code snippet shows you how to set submit button URL.
+[addSubmitBtn](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addSubmitBtn-java.lang.String-int-java.lang.String-java.lang.String-float-float-float-float-) method allows you to set the submit button’s URL in a PDF file. This is the URL where the data is posted when the submit button is clicked. In our example code, we specify the URL, the name of our field, the page number to which we want to add, and the button placement coordinates.
+[addSubmitBtn](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addSubmitBtn-java.lang.String-int-java.lang.String-java.lang.String-float-float-float-float-) method required the name of the submit button field and the URL. This method is provided by [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. The following code snippet shows you how to set submit button URL.
 
 ```java
 public static void AddSubmitBtn() {
@@ -38,7 +38,7 @@ public static void AddSubmitBtn() {
 
 ## Add JavaScript for Push Button
 
-[addFieldScript](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addFieldScript-java.lang.String-java.lang.String-) method allows you to add JavaScript to a push button in a PDF file. This method requires the name of the push button and the JavaScript . This method is provided by [FormEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. The following code snippet shows you how to set JavaScript to a push button.
+[addFieldScript](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addFieldScript-java.lang.String-java.lang.String-) method allows you to add JavaScript to a push button in a PDF file. This method requires the name of the push button and the JavaScript . This method is provided by [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. The following code snippet shows you how to set JavaScript to a push button.
 
 ```java
   public static void AddFieldScript() {

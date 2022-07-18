@@ -13,7 +13,7 @@ sitemap:
 
 ## Setting Structure Elements Properties
 
-In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers **createSectElement()** and **createHeaderElement()** methods of [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
+In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers **createSectElement()** and **createHeaderElement()** methods of [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -51,7 +51,7 @@ document.save(path + "StructureElementsProperties.pdf");
 
 ## Setting Text Structure Elements
 
-In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers [ParagraphElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/class-use/ParagraphElement) Class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
+In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/class-use/ParagraphElement) Class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -83,7 +83,7 @@ document.save(path + "TextStructureElement.pdf");
 
 ## Setting Text Block Structure Elements
 
-In order to set text block structure elements of a Tagged PDF Document, Aspose.PDF offers [HeaderElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls.class-use/headerelement) and [ParagraphElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/class-use/ParagraphElement) Classes. You can append objects of these classes as a child of **StructureElement** object. Following code snippet shows how to set text block structure elements of a Tagged PDF Document:
+In order to set text block structure elements of a Tagged PDF Document, Aspose.PDF offers [HeaderElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls.class-use/headerelement) and [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/class-use/ParagraphElement) Classes. You can append objects of these classes as a child of **StructureElement** object. Following code snippet shows how to set text block structure elements of a Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -132,7 +132,7 @@ document.save(path + "TextBlockStructureElements.pdf");
 
 ## Setting Inline Structure Elements
 
-In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF offers [SpanElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.ils/spanelement) and [ParagraphElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/class-use/ParagraphElement) Classes. You can append objects of these classes as a child of **StructureElement** object. Following code snippet shows how to set inline structure elements of a Tagged PDF Document:
+In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF offers [SpanElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.ils/spanelement) and [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/class-use/ParagraphElement) Classes. You can append objects of these classes as a child of **StructureElement** object. Following code snippet shows how to set inline structure elements of a Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -312,7 +312,7 @@ document.save(path + "CustomTag.pdf");
 
 ## Adding Structure Element into Elements
 
-In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers **createLinkElement()** method of [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
+In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers **createLinkElement()** method of [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java

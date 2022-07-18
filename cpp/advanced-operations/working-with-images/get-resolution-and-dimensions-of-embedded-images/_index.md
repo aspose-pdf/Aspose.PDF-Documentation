@@ -10,14 +10,14 @@ lastmod: "2021-12-18"
 
 This topic explains how to use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information about images without having to extract them.
 
-There are different ways of achieving this. This article explains how to use an `arraylist` and [image placement classes](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement).
+There are different ways of achieving this. This article explains how to use an `arraylist` and [image placement classes](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement).
 
 1. First, load the source PDF file (with images).
 1. Then create an ArrayList object to hold the names of any images in the document.
 1. Get the images using the Page.Resources.Images property.
 1. Create a stack object to hold the image’s graphics state and use it to keep track of different image states.
 1. Create a ConcatenateMatrix object which defines current transformation. It also supports scaling, rotating, and skewing any content. It concatenates the new matrix with previous one. Please note that we cannot define the transformation from scratch but only modify the existing transformation.
-1. Because we can modify the matrix with ConcatenateMatrix, we may also need to revert back to the original image state. Use [GSave operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save/) and [GRestore operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_restore/). These operators are paired so they should be called together. For example, if you do some graphics work with complex transformations and finally return transformations back to initial state, the approach will be something like this:
+1. Because we can modify the matrix with ConcatenateMatrix, we may also need to revert back to the original image state. Use [GSave operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save/) and [GRestore operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_restore/). These operators are paired so they should be called together. For example, if you do some graphics work with complex transformations and finally return transformations back to initial state, the approach will be something like this:
 
 The following code snippet shows you how to get an image’s dimensions and resolution without extracting the image from the PDF document.
 

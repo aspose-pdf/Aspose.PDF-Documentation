@@ -16,7 +16,7 @@ sitemap:
 Aspsoe.PDF for Java allows you to convert DICOM files to PDF format, check next code snippet:
 
 1. Load image into stream
-1. Initialize [`Document object`](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document)
+1. Initialize [`Document object`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
 1. Load sample DICOM image file
 1. Save output PDF document
 

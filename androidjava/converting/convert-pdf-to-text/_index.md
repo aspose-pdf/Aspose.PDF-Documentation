@@ -20,7 +20,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 ## Convert PDF page to text file
 
-You can convert PDF document to TXT file with Aspose.PDF for Android via Java. You should use Visit method of [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) class for resolve this task.
+You can convert PDF document to TXT file with Aspose.PDF for Android via Java. You should use Visit method of [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) class for resolve this task.
 
 The following code snippet explains how to extract the texts from the particular pages.
 

@@ -13,21 +13,21 @@ sitemap:
 
 ## Add Arc object
 
-Aspose.PDF for C++  supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. It also offers the feature to fill [Arc](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.arc) object with a certain color.
+Aspose.PDF for C++  supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. It also offers the feature to fill [Arc](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.arc) object with a certain color.
 
 Follow the steps below:
 
-1. Create [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) instance
+1. Create [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) instance
 
-1. Create [Drawing object](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) with certain dimensions
+1. Create [Drawing object](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) with certain dimensions
 
-1. Set [Border](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph#ab63dde9501441515b915fd68f66a01bd) for Drawing object
+1. Set [Border](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph#ab63dde9501441515b915fd68f66a01bd) for Drawing object
 
-1. Add [Graph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) object to paragraphs collection of page
+1. Add [Graph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) object to paragraphs collection of page
 
 1. Save our PDF file
 
-The following code snippet shows how to add a [Arc](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.arc/) object.
+The following code snippet shows how to add a [Arc](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.arc/) object.
 
 ```cpp
 void ExampleArc() {

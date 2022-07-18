@@ -29,4 +29,4 @@ The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 22.2
 
 1. The new **IEnumerable**-level iterators and iterators for collections with duck typing will be introduced in one of the upcoming releases. The code which is dependent on **EnumeratorBasedIterator** or **DuckTypedIterator** may require some changes.
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).

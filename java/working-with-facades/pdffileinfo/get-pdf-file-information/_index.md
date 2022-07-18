@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-In order to get information specific to PDF file, you need to create an object of [PdfFileInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileInfo) class. After that, you can get values of the individual properties like Subject, Title, Keywords and Creator etc.
+In order to get information specific to PDF file, you need to create an object of [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileInfo) class. After that, you can get values of the individual properties like Subject, Title, Keywords and Creator etc.
 
 The following code snippet shows you how to get PDF file information.
 
@@ -36,7 +36,7 @@ public static void GetPdfInfo()
 
 ## Get Meta Info
 
-In order to get information, we use the [getHeader](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileInfo#getHeader--) method. With 'Hashtable'  we get all the possible values.
+In order to get information, we use the [getHeader](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileInfo#getHeader--) method. With 'Hashtable'  we get all the possible values.
 
 ```java
 public static void GetMetaInfo()

@@ -23,7 +23,7 @@ Aspose.PDF for Java presents you online free application ["PDF to EPUB"](https:/
 
 **<abbr title="Electronic Publication">EPUB</abbr>** (short for electronic publication) is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
 
-Aspose.PDF for Java supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Java has a class named [EpubSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/EpubSaveOptions) which can be used as the second argument to the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) method, to generate an EPUB file. Please try using the following code snippet to accomplish this requirement.
+Aspose.PDF for Java supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Java has a class named [EpubSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/EpubSaveOptions) which can be used as the second argument to the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) method, to generate an EPUB file. Please try using the following code snippet to accomplish this requirement.
 
 ```java
 package com.aspose.pdf.examples;
@@ -62,7 +62,7 @@ public final class ConvertPDFtoEPUB {
 **Aspose.PDF for Java** support converting PDF to LaTeX/TeX.
 The LaTeX file format is a text file format with the special markup and used in TeX-based document preparation system for high-quality typesetting.
 
-To convert PDF files to TeX, Aspose.PDF has the class [TeXSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TeXSaveOptions) which provides the method `setOutDirectoryPath` for saving temporary images during the conversion process.
+To convert PDF files to TeX, Aspose.PDF has the class [TeXSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXSaveOptions) which provides the method `setOutDirectoryPath` for saving temporary images during the conversion process.
 
 The following code snippet shows the process of converting PDF files into the TEX format with Java.
 
@@ -99,7 +99,7 @@ Aspose.PDF for Java presents you online free application ["PDF to LaTeX"](https:
 
 ### Convert whole PDF document to Text file
 
-You can convert PDF document to TXT file using Visit method of [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) class.
+You can convert PDF document to TXT file using Visit method of [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) class.
 
 The following code snippet explains how to extract the texts from the all pages.
 
@@ -155,7 +155,7 @@ Aspose.PDF for Java presents you online free application ["PDF to Text"](https:/
 
 ### Convert PDF page to text file
 
-You can convert PDF document to TXT file with Aspose.PDF for Java. You should use Visit method of [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) class for resolve this task.
+You can convert PDF document to TXT file with Aspose.PDF for Java. You should use Visit method of [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) class for resolve this task.
 
 The following code snippet explains how to extract the texts from the particular pages.
 
@@ -195,7 +195,7 @@ Aspose.PDF for Java presents you online free application ["PDF to XPS"](https://
 
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into the Windows operating system.
 
-To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XpsSaveOptions) class that is used as the second argument to the Document.save(..) constructor to generate the XPS file. The following code snippet shows the process of converting PDF files into XPS format.
+To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/XpsSaveOptions) class that is used as the second argument to the Document.save(..) constructor to generate the XPS file. The following code snippet shows the process of converting PDF files into XPS format.
 
 ```java
 package com.aspose.pdf.examples;

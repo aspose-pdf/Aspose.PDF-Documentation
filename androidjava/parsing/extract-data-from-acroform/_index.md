@@ -15,7 +15,7 @@ sitemap:
 
 Aspose.PDF for Android via Java not only lets you create and fill in form fields, but also makes it easy to extract form field data or form field information from PDF files.
 
-Suppose we don't know the names of the form fields in advance. Then we should iterate over each page in PDF to extract information about all AcroForms in PDF as well as the values of the form fields. To get access to the form we need to use [getForm](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) method.
+Suppose we don't know the names of the form fields in advance. Then we should iterate over each page in PDF to extract information about all AcroForms in PDF as well as the values of the form fields. To get access to the form we need to use [getForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) method.
 
 ```java
  public void extractFormFields () {
@@ -43,7 +43,7 @@ If you do know the name of the form fields that you wish to extract values from 
 
 ## Retrieve form field value by title
 
-The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object's [form field collection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--). This example selects a [TextBoxField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) and retrieves its value using the [getValue](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) method.
+The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's [form field collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--). This example selects a [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) and retrieves its value using the [getValue](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) method.
 
 ```java
 
@@ -100,7 +100,7 @@ public void extractFormFieldsToXML () {
 
 ## Export Data to FDF from a PDF File
 
-To export PDF forms data to XFDF file, we can use the [exportFdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportFdf-java.io.OutputStream-) method in the [Form](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class.
+To export PDF forms data to XFDF file, we can use the [exportFdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportFdf-java.io.OutputStream-) method in the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class.
 
 Please note, that it's a class from `com.aspose.pdf.facades`. Despite the similar name, this class has a slightly different purpose.
 
@@ -140,7 +140,7 @@ public void extractFormExportFDF () {
 
 ## Export Data to XFDF from a PDF File
 
-To export PDF forms data to XFDF file, we can use the [exportXfdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportXfdf-java.io.OutputStream-) method in the [Form](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class.
+To export PDF forms data to XFDF file, we can use the [exportXfdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportXfdf-java.io.OutputStream-) method in the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class.
 
 In order to export data to XFDF, you need to create an object of `Form` class and then call the `exportXfdf` method using the `OutputStream` object. 
 The following code snippet shows you how to export data to XFDF file.

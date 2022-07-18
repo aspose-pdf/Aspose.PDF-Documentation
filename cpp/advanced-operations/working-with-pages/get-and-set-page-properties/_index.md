@@ -18,8 +18,8 @@ When working with documents, you often want to know how many pages they contain.
 
 To get the number of pages in a PDF file:
 
-1. Open the PDF file using the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
-1. Then use the [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's Count property (from the Document object) to get the total number of pages in the document.
+1. Open the PDF file using the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
+1. Then use the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's Count property (from the Document object) to get the total number of pages in the document.
 
 The following code snippet shows how to get the number of pages of a PDF file.
 
@@ -38,7 +38,7 @@ void GetNumberOfPages() {
 
 ### Get page count without saving the document
 
-Sometimes we generate the PDF files on the fly and during PDF file creation, we may come across the requirement (creating Table Of Contents etc.) to get page count of PDF file without saving the file over system or stream. So in order to cater to this requirement, a method [ProcessParagraphs](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#a1773e7b6a887eaddd602073e29939a6f) has been introduced in Document class. Please take a look over the following code snippet which shows the steps to get page count without saving the document.
+Sometimes we generate the PDF files on the fly and during PDF file creation, we may come across the requirement (creating Table Of Contents etc.) to get page count of PDF file without saving the file over system or stream. So in order to cater to this requirement, a method [ProcessParagraphs](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a1773e7b6a887eaddd602073e29939a6f) has been introduced in Document class. Please take a look over the following code snippet which shows the steps to get page count without saving the document.
 
 ```cpp
 void GetPageCountWithoutSavingTheDocument() {
@@ -62,7 +62,7 @@ void GetPageCountWithoutSavingTheDocument() {
 
 ### Accessing Page Properties
 
-The [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) class provides all the properties related to a particular PDF page. All the pages of the PDF files are contained in the of the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection.
+The [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) class provides all the properties related to a particular PDF page. All the pages of the PDF files are contained in the of the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection.
 
 From there, it is possible to access either individual Page objects using their index, or loop through the collection, using a foreach loop, to get all pages. Once an individual page is accessed, we can get its properties. The following code snippet shows how to get page properties.
 

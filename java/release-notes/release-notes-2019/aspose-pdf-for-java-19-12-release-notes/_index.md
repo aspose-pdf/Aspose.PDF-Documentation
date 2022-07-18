@@ -84,6 +84,6 @@ pdfDocument.save("result.pdf");
 
 **New Methods Added**
 
-- com.aspose.pdf.optimization.OptimizationOptions.[getSubsetFonts()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.optimization/OptimizationOptions#getSubsetFonts--)
-- com.aspose.pdf.optimization.OptimizationOptions.[setSubsetFonts(boolean)](https://apireference.aspose.com/pdf/java/com.aspose.pdf.optimization/OptimizationOptions#setSubsetFonts-boolean-)
-- com.aspose.pdf.RedactionAnnotation.[setFontSize(int)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/RedactionAnnotation#setFontSize-int-)
+- com.aspose.pdf.optimization.OptimizationOptions.[getSubsetFonts()](https://reference.aspose.com/pdf/java/com.aspose.pdf.optimization/OptimizationOptions#getSubsetFonts--)
+- com.aspose.pdf.optimization.OptimizationOptions.[setSubsetFonts(boolean)](https://reference.aspose.com/pdf/java/com.aspose.pdf.optimization/OptimizationOptions#setSubsetFonts-boolean-)
+- com.aspose.pdf.RedactionAnnotation.[setFontSize(int)](https://reference.aspose.com/pdf/java/com.aspose.pdf/RedactionAnnotation#setFontSize-int-)

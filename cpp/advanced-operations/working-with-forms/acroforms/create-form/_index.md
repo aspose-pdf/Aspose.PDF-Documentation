@@ -13,14 +13,14 @@ sitemap:
 
 ## Add Form Field in PDF Document
 
-The [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class provides a collection named Form which helps manage form fields in a PDF document.
+The [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class provides a collection named Form which helps manage form fields in a PDF document.
 
 To add a form field:
 
 1. Create the form field which you want to add.
-2. Call the [Form](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.forms) collection’s add method.
+2. Call the [Form](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.forms) collection’s add method.
 
-This example shows how to add a [TextBoxField](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.text_box_field). You can add any form field using the same approach:
+This example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.text_box_field). You can add any form field using the same approach:
 
 1. First, create a field object and set its properties.
 2. Then, add the field to the Form collection.
@@ -67,7 +67,7 @@ void AddingTextBoxField()
 
 A RadioButton is most commonly used for multiple choice questions, in the scenario where only one answer can be selected.
 
-The following code snippets show how to add [RadioButtonField](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.radio_button_field) in a PDF document.
+The following code snippets show how to add [RadioButtonField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.radio_button_field) in a PDF document.
 
 ```cpp
 void AddingRadioButtonField()
@@ -95,7 +95,7 @@ void AddingRadioButtonField()
 }
 ```
 
-The following code snippet shows the steps to add [RadioButtonField](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.radio_button_field) with three options and place them inside Table cells.
+The following code snippet shows the steps to add [RadioButtonField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.radio_button_field) with three options and place them inside Table cells.
 
 ```cpp
 void AddRadioButtonFieldInsideTableCells()
@@ -168,7 +168,7 @@ void AddRadioButtonFieldInsideTableCells()
 
 ## Adding Caption to RadioButtonField
 
-Following code snippet shows how to add caption which will be associated with [RadioButtonField](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.radio_button_field):
+Following code snippet shows how to add caption which will be associated with [RadioButtonField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.radio_button_field):
 
 ```cpp
 void AddingCaptionToRadioButtonField()
@@ -224,7 +224,7 @@ void AddingCaptionToRadioButtonField()
 
 A Combo Box is a form field which will add a dropdown menu to your document.
 
-The following code snippets show how to add [ComboBox](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.combo_box_field) field in a PDF document.
+The following code snippets show how to add [ComboBox](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.combo_box_field) field in a PDF document.
 
 ```cpp
 void AddingComboBoxField()

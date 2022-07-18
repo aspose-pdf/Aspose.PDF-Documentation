@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 This topic explains how to use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information about images without having to extract them.
 
-There are different ways of achieving this. This article explains how to use an `arraylist` and [Image placement classes](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacement).
+There are different ways of achieving this. This article explains how to use an `arraylist` and [Image placement classes](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacement).
 
 1. First, load the source PDF file (with images).
 1. Then create an ArrayList object to hold the names of any images in the document.

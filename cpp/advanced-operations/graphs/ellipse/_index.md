@@ -13,7 +13,7 @@ sitemap:
 
 ## Add Ellipse object
 
-Aspose.PDF for C++ supports to add [Ellipse](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.ellipse/) objects to PDF documents. It also offers the feature to fill ellipse  object with a certain color.
+Aspose.PDF for C++ supports to add [Ellipse](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.ellipse/) objects to PDF documents. It also offers the feature to fill ellipse  object with a certain color.
 
 ```cpp
 void ExampleEllipse() {
@@ -54,7 +54,7 @@ void ExampleEllipse() {
 
 ## Create Filled Ellipse Object
 
-The following code snippet shows how to add a [Ellipse](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.ellipse/)  object that is filled with color.
+The following code snippet shows how to add a [Ellipse](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.ellipse/)  object that is filled with color.
 
 ```csharp
 void ExampleFilledEllipse() {

@@ -100,9 +100,9 @@ A PDF document may sometimes contain additional data. Reducing the size of a PDF
 
 Optimization, or linearization for Web, refers to the process of making a PDF file suitable for online browsing using a web browser. To optimize a file for web display:
 
-1. Open the input document in an [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
-1. Use the [Optimize](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) method.
-1. Save the optimized document using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
+1. Open the input document in an [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object.
+1. Use the [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) method.
+1. Save the optimized document using the [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
 
 The following code snippet shows how to optimize a PDF document for the web.
 
@@ -125,7 +125,7 @@ pdfDocument.Save(dataDir);
 
 ## Reduce Size PDF
 
-The [OptimizeResources()](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
+The [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
 
 - Resources that are not used on the document pages are removed
 - Equal resources are joined into one object
@@ -148,11 +148,11 @@ pdfDocument.Save(dataDir);
 
 ## Optimization Strategy Management
 
-We can also customize the optimization strategy. Currently, the [OptimizeResources()](https://apireference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) method uses 5 techniques. These techniques can be applied using the OptimizeResources() method with the [OptimizationOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions) parameter.
+We can also customize the optimization strategy. Currently, the [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) method uses 5 techniques. These techniques can be applied using the OptimizeResources() method with the [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions) parameter.
 
 ### Shrinking or Compressing All Images
 
-We have two ways to work with images: reduce image quality and/or change their resolution. In any case, [ImageCompressionOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions) should be applied. In the following example, we shrink images by reducing [ImageQuality](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) to 50.
+We have two ways to work with images: reduce image quality and/or change their resolution. In any case, [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions) should be applied. In the following example, we shrink images by reducing [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) to 50.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ dataDir = dataDir + "ResizeImages_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-Another important issue is the execution time. But again, we can manage this setting too. Currently, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) property. The following snippet demonstrates the Fast algorithm:
+Another important issue is the execution time. But again, we can manage this setting too. Currently, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) property. The following snippet demonstrates the Fast algorithm:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -292,7 +292,7 @@ dataDir = dataDir + "OptimizeDocument_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-Additionally, we can use [AllowReusePageContent](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
+Additionally, we can use [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

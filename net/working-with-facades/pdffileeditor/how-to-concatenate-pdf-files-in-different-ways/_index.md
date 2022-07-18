@@ -11,11 +11,11 @@ draft: false
 
 {{% alert color="primary" %}}
 
-This articles describes that how you can [Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) multiple PDF Documents into a Single PDF Document with the help of [Aspose.PDF for .NET](/pdf/net/) Component. [Aspose.PDF for .NET](/pdf/net/) makes this job like a piece of cake.
+This articles describes that how you can [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) multiple PDF Documents into a Single PDF Document with the help of [Aspose.PDF for .NET](/pdf/net/) Component. [Aspose.PDF for .NET](/pdf/net/) makes this job like a piece of cake.
 
 {{% /alert %}}
 
-All you have to do is to call [Concatenate](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class and all of your input PDF files will be concatenated together and a single PDF file will be generated. Let's create an application to practice the concatenation of PDF files. We will create an application using Visual Studio.NET 2019.
+All you have to do is to call [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class and all of your input PDF files will be concatenated together and a single PDF file will be generated. Let's create an application to practice the concatenation of PDF files. We will create an application using Visual Studio.NET 2019.
 
 {{% alert color="primary" %}}
 
@@ -38,7 +38,7 @@ private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabe
 }
 ```
 
-A windows form application's view is shown for the demonstration of the [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class for the Concatenation of PDF Files.
+A windows form application's view is shown for the demonstration of the [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class for the Concatenation of PDF Files.
 
 ![Concatenate PDF Files](how-to-concatenate-pdf-files-in-different-ways_1.png)
 

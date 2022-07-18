@@ -31,4 +31,4 @@ The conversion from SVG to PDF format has been implemented.
 * Property: Aspose::Pdf::Facades::Page::Layers
 * Method: Aspose::Pdf::Facades::PdfFileSignature::Certify(System::String, Aspose::Pdf::Forms::DocMDPSignature)
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).

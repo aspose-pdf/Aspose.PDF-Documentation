@@ -101,7 +101,7 @@ void LoadingFontFromStream() {
 
 ## Add Text using TextParagraph
 
-The following code snippet shows you how to add text in PDF document using [TextParagraph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_paragraph) class.
+The following code snippet shows you how to add text in PDF document using [TextParagraph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_paragraph) class.
 
 ```cpp
 void AddTextUsingTextParagraph() {
@@ -146,7 +146,7 @@ void AddTextUsingTextParagraph() {
 
 ## Add Hyperlink to TextSegment
 
-A PDF page may comprise of one or more TextFragment objects, where each TextFragment object can have one or more TextSegment instance. In order to set hyperlink for TextSegment, Hyperlink property of [TextSegment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_segment) class can be used while providing the object of Aspose.Pdf.WebHyperlink instance. Please try using the following code snippet to accomplish this requirement.
+A PDF page may comprise of one or more TextFragment objects, where each TextFragment object can have one or more TextSegment instance. In order to set hyperlink for TextSegment, Hyperlink property of [TextSegment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_segment) class can be used while providing the object of Aspose.Pdf.WebHyperlink instance. Please try using the following code snippet to accomplish this requirement.
 
 ```cpp
 void AddHyperlinkToTextSegment() {
@@ -235,7 +235,7 @@ void UseOTFFont() {
 
 The Aspose.Pdf.Generator.Text class contains a property called IsHtmlTagSupported which makes it possible to add HTML tags/contents into PDF files. The added content is rendered in native HTML tags instead of appearing as a simple text string. To support a similar feature in the new Document Object Model (DOM) of the Aspose.Pdf namespace, the HtmlFragment class has been introduced.
 
-The [HtmlFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.html_fragment) instance can be used to specify the HTML contents which should be placed inside the PDF file. Similar to TextFragment, HtmlFragment is a paragraph level object and can be added to the Page object's paragraphs collection. The following code snippets show the steps to place HTML contents inside PDF file using the DOM approach.
+The [HtmlFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.html_fragment) instance can be used to specify the HTML contents which should be placed inside the PDF file. Similar to TextFragment, HtmlFragment is a paragraph level object and can be added to the Page object's paragraphs collection. The following code snippets show the steps to place HTML contents inside PDF file using the DOM approach.
 
 ```cpp
 void AddingHtmlString() {
@@ -380,10 +380,10 @@ The advantage of footnoting is that the reader can simply cast their eyes down t
 
 Foolow the next steps:
 
-- Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) instance
-- Create a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) object
-- Create a [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) object
-- Create a Note instance and pass it's value to TextFragment [FootNote](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment#abe1663009fbceed84a0a392527463219) property
+- Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) instance
+- Create a [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) object
+- Create a [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) object
+- Create a Note instance and pass it's value to TextFragment [FootNote](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment#abe1663009fbceed84a0a392527463219) property
 - Add TextFragment to paragraphs collection of a page instance
 
 ```cpp
@@ -573,7 +573,7 @@ void CustomFootNote_Label() {
 
 ## Adding Image and Table to Footnote
 
-The following code snippet shows the steps to add [Footnote](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment#a017ff999979d9f799b8e3cd32ab95722) to [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) object and then add Image and Table object to paragraphs collection of Footnote section.
+The following code snippet shows the steps to add [Footnote](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment#a017ff999979d9f799b8e3cd32ab95722) to [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) object and then add Image and Table object to paragraphs collection of Footnote section.
 
 ```cpp
 
@@ -825,7 +825,7 @@ This topic shows how you can create a multi-column PDF using Aspose.Pdf for C++.
 
 Today, we most often see news displayed in multiple columns on separate pages, rather than in books, where paragraphs of text are mostly printed on all pages from left to right. Many document processing applications, such as Microsoft Word and Adobe Acrobat Writer, allow users to create multiple columns on a single page and then add data to them. 
 
-Aspose.Pdf for C++ also offers the ability to create multiple columns in PDF document pages. To create a PDF with multiple columns, we can use the [Aspose.Pdf.FloatingBox](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.floating_box) class as it provides a ColumnInfo.ColumnCount property to specify the number of columns inside the FloatingBox, and we can also specify the column spacing and column widths using ColumnInfo .ColumnSpacing and ColumnInfo .ColumnWidths respectively.
+Aspose.Pdf for C++ also offers the ability to create multiple columns in PDF document pages. To create a PDF with multiple columns, we can use the [Aspose.Pdf.FloatingBox](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.floating_box) class as it provides a ColumnInfo.ColumnCount property to specify the number of columns inside the FloatingBox, and we can also specify the column spacing and column widths using ColumnInfo .ColumnSpacing and ColumnInfo .ColumnWidths respectively.
 
 An example is given below to demonstrate the creation of two columns with Graphs objects (Line) and they are added to paragraphs collection of FloatingBox, which is then added paragraphs collection of Page instance.
 
@@ -1025,7 +1025,7 @@ void AddTransparentText() {
 
 ## Specify LineSpacing for Fonts
 
-[Aspose.Pdf.Text.TextFormattingOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options) class has a an enumeration [LineSpacingMode](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a240276fd8a270b7c134d3355c5fb1c91) which is designed for specific fonts e.g input font "HPSimplified.ttf". Also class [Aspose.Pdf.Text.TextFormattingOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options) has a property [LineSpacing](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a240276fd8a270b7c134d3355c5fb1c91a9e120eead36071a90367e425c96b5eaf) of type LineSpacingMode. You just need to set LineSpacing into LineSpacingMode.FullSize. The code snippet to get a font displayed correctly, would be like as follows:
+[Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options) class has a an enumeration [LineSpacingMode](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a240276fd8a270b7c134d3355c5fb1c91) which is designed for specific fonts e.g input font "HPSimplified.ttf". Also class [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options) has a property [LineSpacing](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a240276fd8a270b7c134d3355c5fb1c91a9e120eead36071a90367e425c96b5eaf) of type LineSpacingMode. You just need to set LineSpacing into LineSpacingMode.FullSize. The code snippet to get a font displayed correctly, would be like as follows:
 
 ```cpp
 void SpecifyLineSpacingForFonts() {
@@ -1067,9 +1067,9 @@ void SpecifyLineSpacingForFonts() {
 
 ## Get Text Width Dynamically
 
-[Aspose.Pdf.Text.TextState](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state) class shows how to get text width dynamically in PDF document.
+[Aspose.Pdf.Text.TextState](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state) class shows how to get text width dynamically in PDF document.
 
-Sometimes, it is required to get the text width dynamically. Aspose.PDF for C++ includes two methods for string width measurement. You can invoke the [MeasureString](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state#a084c1781028cd3483c82b4fd4cec4967) method of Aspose.Pdf.Text.Font or Aspose.Pdf.Text.TextState classes (or both). The code snippet below shows how to use this functionality.
+Sometimes, it is required to get the text width dynamically. Aspose.PDF for C++ includes two methods for string width measurement. You can invoke the [MeasureString](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_state#a084c1781028cd3483c82b4fd4cec4967) method of Aspose.Pdf.Text.Font or Aspose.Pdf.Text.TextState classes (or both). The code snippet below shows how to use this functionality.
 
 ```cpp
 void GetTextWidthDynamicaly() {

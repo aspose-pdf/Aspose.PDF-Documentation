@@ -434,7 +434,7 @@ Aspose.PDF for .NET supports the feature to embed fonts while creating a PDF doc
 
 To replace fonts, use the following approach:
 
-1. Call the [TextFragmentAbsorber](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) class.
+1. Call the [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) class.
 1. Call the TextFragmentAbsorber class’ TextEditOptions.FontReplace.RemoveUnusedFonts parameter. (This removes fonts that have become unused during font replacement).
 1. Set font individually for each text fragment.
 

@@ -13,7 +13,7 @@ sitemap:
 
 ## Add Curve object
 
-A graph [Curve](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.curve/) is a connected union of projective lines, each line meeting three others in ordinary double points.
+A graph [Curve](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.curve/) is a connected union of projective lines, each line meeting three others in ordinary double points.
 
 Bézier curves are widely used in computer graphics to model smooth curves. The curve is completely contained in the convex hull of its control points, the points may be graphically displayed and used to manipulate the curve intuitively.
 The entire curve is contained in the quadrilateral whose corners are the four given points (their convex hull).
@@ -22,13 +22,13 @@ In this article, we will investigate  simply graph curves, and filled curves, th
 
 Follow the steps below:
 
-1. Create [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) instance
+1. Create [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) instance
 
-1. Create [Drawing object](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) with certain dimensions
+1. Create [Drawing object](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) with certain dimensions
 
-1. Set [Border](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph#ab63dde9501441515b915fd68f66a01bd) for Drawing object
+1. Set [Border](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph#ab63dde9501441515b915fd68f66a01bd) for Drawing object
 
-1. Add [Graph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) object to paragraphs collection of page
+1. Add [Graph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) object to paragraphs collection of page
 
 1. Save our PDF file
 

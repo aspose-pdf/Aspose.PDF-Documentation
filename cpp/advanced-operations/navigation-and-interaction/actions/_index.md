@@ -21,18 +21,18 @@ For example, you may want to add a clickable table of contents to your ebooks, c
 
 To create hyperlinks with a few clicks, follow these simple steps:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) Class object.
-1. Get the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) Class you want to add the link to.
-1. Create a [LinkAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) object using the Page and [Rectangle](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.rectangle/) objects. The rectangle object is used to specify the location on the page where the link should be added.
-1. Set the Action property to the [GoToURIAction](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.go_to_u_r_i_action) object which specifies the location of the remote URI.
-1. To display a hyperlink text, add a text string on a location similar to where the [LinkAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation) object is placed.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) Class object.
+1. Get the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) Class you want to add the link to.
+1. Create a [LinkAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) object using the Page and [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.rectangle/) objects. The rectangle object is used to specify the location on the page where the link should be added.
+1. Set the Action property to the [GoToURIAction](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.go_to_u_r_i_action) object which specifies the location of the remote URI.
+1. To display a hyperlink text, add a text string on a location similar to where the [LinkAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation) object is placed.
 1. To add a free text:
 
-- Instantiate an [FreeTextAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.free_text_annotation) object. It also accepts Page and Rectangle objects as argument, so it is possible to provide same values as specified against the LinkAnnotation constructor.
-- Using the [FreeTextAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.free_text_annotation) object’s Contents property, specify the string that should be displayed in the output PDF.
-- Optionally, set the border width of both the [LinkAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) and FreeTextAnnotation objects to 0 so that they do not appear in the PDF document.
-- Once the [LinkAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) and [FreeTextAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.free_text_annotation) objects have been defined, add these links to the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) object’s Annotations collection.
-- Finally, save the updated PDF using the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's Save method.
+- Instantiate an [FreeTextAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.free_text_annotation) object. It also accepts Page and Rectangle objects as argument, so it is possible to provide same values as specified against the LinkAnnotation constructor.
+- Using the [FreeTextAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.free_text_annotation) object’s Contents property, specify the string that should be displayed in the output PDF.
+- Optionally, set the border width of both the [LinkAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) and FreeTextAnnotation objects to 0 so that they do not appear in the PDF document.
+- Once the [LinkAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) and [FreeTextAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.free_text_annotation) objects have been defined, add these links to the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) object’s Annotations collection.
+- Finally, save the updated PDF using the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's Save method.
 
 The following code snippet shows you how to add a hyperlink to a PDF file.
 
@@ -82,9 +82,9 @@ void AddHyperlinkInPDFFile() {
 
 ## Create Hyperlink to pages in same PDF
 
-Aspose.PDF for C++ provides a great feature to PDF creation as well as its manipulation. It also offers the feature to add links to PDF pages and a link can either direct to pages in another PDF file, a web URL, link to launch an Application or even link to pages in same PDF file. In order to add local hyperlinks (links to pages in same PDF file), a class named [LocalHyperlink](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.local_hyperlink) is added to Aspose.PDF namespace and this class has a property named TargetPageNumber, which is used to specify the target/destination page for hyperlink.
+Aspose.PDF for C++ provides a great feature to PDF creation as well as its manipulation. It also offers the feature to add links to PDF pages and a link can either direct to pages in another PDF file, a web URL, link to launch an Application or even link to pages in same PDF file. In order to add local hyperlinks (links to pages in same PDF file), a class named [LocalHyperlink](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.local_hyperlink) is added to Aspose.PDF namespace and this class has a property named TargetPageNumber, which is used to specify the target/destination page for hyperlink.
 
-In order to add the local hyperlink, we need to create a TextFragment so that link can be associated with the TextFragment. The [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment) class has a property named Hyperlink which is used to associate LocalHyperlink instance. The following code snippet shows the steps to accomplish this requirement.
+In order to add the local hyperlink, we need to create a TextFragment so that link can be associated with the TextFragment. The [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment) class has a property named Hyperlink which is used to associate LocalHyperlink instance. The following code snippet shows the steps to accomplish this requirement.
 
 ```cpp
 void CreateHyperlinkToPagesInSamePDF() {
@@ -140,11 +140,11 @@ Links are represented as annotations in a PDF file and they can be added, update
 
 To get a link’s URL:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
-1. Get the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) you want to extract links from.
-1. Use the [AnnotationSelector](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) class to extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation) objects from the specified page.
-1. Pass the [AnnotationSelector](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object to the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) object’s Accept method.
-1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object’s Selected property.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
+1. Get the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) you want to extract links from.
+1. Use the [AnnotationSelector](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) class to extract all the [LinkAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation) objects from the specified page.
+1. Pass the [AnnotationSelector](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object to the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) object’s Accept method.
+1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object’s Selected property.
 1. Finally, extract the LinkAnnotation Action as GoToURIAction.
 
 The following code snippet shows how to get hyperlink destinations (URL) from a PDF file.
@@ -185,7 +185,7 @@ A hyperlink has two parts: the text that shows in the document, and the destinat
 
 Text and annotations/actions in a PDF file are represented by different entities. Text on a page is just a set of words and characters, while annotations bring some interactivity such as that inherent in a hyperlink.
 
-To find the URL content, you need to work with both annotation and text. The [Annotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation) object does not have itself have the text but sits under the text on the page. So to get the text, the Annotation gives the URL’s bounds, while the Text object gives the URL contents. Please see the following code snippet.
+To find the URL content, you need to work with both annotation and text. The [Annotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation) object does not have itself have the text but sits under the text on the page. So to get the text, the Annotation gives the URL’s bounds, while the Text object gives the URL contents. Please see the following code snippet.
 
 ```cpp
   void GetHyperlinkText() {
@@ -219,7 +219,7 @@ To find the URL content, you need to work with both annotation and text. The [An
 
 To remove an open action:
 
-1. Set the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s [OpenAction](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#a24b876bb6bee957feac48ac8031dc28e) property to null.
+1. Set the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s [OpenAction](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a24b876bb6bee957feac48ac8031dc28e) property to null.
 1. Save the updated PDF using the Document object’s Save  method.
 
 The following code snippet shows how to remove a document open action from the PDF file.
@@ -242,7 +242,7 @@ void RemoveDocumentOpenActionFromPDFFile()
 
 When viewing PDF files in a PDF viewer such as Adobe Reader, the files usually open on the first page. However, it is possible to set the file to open on a different page.
 
-The 'XYZExplicitDestination' class allows you to specify a page in a PDF file that you want to open. When passing the GoToAction object value to the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class OpenAction property, the document opens at the page specified against the XYZExplicitDestination object. The following code snippet shows how to specify a page as the document open action.
+The 'XYZExplicitDestination' class allows you to specify a page in a PDF file that you want to open. When passing the GoToAction object value to the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class OpenAction property, the document opens at the page specified against the XYZExplicitDestination object. The following code snippet shows how to specify a page as the document open action.
 
 ```cpp
 void HowToSpecifyPDFPageWhenViewingDocument()

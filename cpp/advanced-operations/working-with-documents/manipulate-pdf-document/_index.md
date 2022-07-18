@@ -14,7 +14,7 @@ sitemap:
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)
 
-To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class [Validate](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#aa1ac4565b320807c718c44eeee7cda8c) method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf#ac83739fd7c818167c2fdc4dd554de763) enumeration : PDF_A_1A or PDF_A_1B.
+To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class [Validate](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#aa1ac4565b320807c718c44eeee7cda8c) method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#ac83739fd7c818167c2fdc4dd554de763) enumeration : PDF_A_1A or PDF_A_1B.
 
 {{% alert color="primary" %}}
 
@@ -64,7 +64,7 @@ void ExampleValidate02() {
 
 Aspose.PDF API allows you to add a table of content either when creating a PDF, or to an existing file.
 
-To add a TOC to an existing PDF file, use the [Heading](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.heading) class in the Aspose.Pdf namespace. The Aspose.Pdf namespace allows you to create new and manipulates existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace.
+To add a TOC to an existing PDF file, use the [Heading](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.heading) class in the Aspose.Pdf namespace. The Aspose.Pdf namespace allows you to create new and manipulates existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace.
 
 The following code snippet shows how to create a table of contents inside an existing PDF file.
 
@@ -208,7 +208,7 @@ void ExampleToc02() {
 
 ### Hide Page Numbers in TOC
 
-If you want to hide page numbers along with titles in a table of contents, you can use the [IsShowPageNumbers](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.toc_info#ada10e841699bba062dcd0b440c26b832) property of [TOCInfo](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.toc_info) Class as false.
+If you want to hide page numbers along with titles in a table of contents, you can use the [IsShowPageNumbers](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.toc_info#ada10e841699bba062dcd0b440c26b832) property of [TOCInfo](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.toc_info) Class as false.
 
 Please check following code snippet to hide page numbers in the table of contents:
 
@@ -273,7 +273,7 @@ void ExampleToc03() {
 
 We apply access privileges on PDF files so that a certain group of users can access particular features/objects of PDF documents. In order to restrict the PDF file access, we usually apply encryption and we may have a requirement to set PDF file expiration, so that the user accessing/viewing the document gets a valid prompt regarding PDF file expiry.
 
-In order to accomplish the above stated requirement, we can use [JavascriptAction](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.javascript_action/) object. Please check the following code snippet.
+In order to accomplish the above stated requirement, we can use [JavascriptAction](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.javascript_action/) object. Please check the following code snippet.
 
 ```cpp
 void SetPDFexpiryDate() {
@@ -315,9 +315,9 @@ void SetPDFexpiryDate() {
 
 A customer asked us to add a feature that allows developers to determine the progress of PDF file generation. Here’s the response to that request.
 
-The field [CustomerProgressHandler](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options#a712bcc865fa8f75bbdc2a3b55e4581fb) of [DocSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options) class allows you to determine how PDF generation is going.
+The field [CustomerProgressHandler](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options#a712bcc865fa8f75bbdc2a3b55e4581fb) of [DocSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options) class allows you to determine how PDF generation is going.
 
-The code snippets below shows how to use [CustomerProgressHandler](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options#a712bcc865fa8f75bbdc2a3b55e4581fb).
+The code snippets below shows how to use [CustomerProgressHandler](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options#a712bcc865fa8f75bbdc2a3b55e4581fb).
 
 ```cpp
 using ProgressHandler = System::MulticastDelegate<void(SharedPtr<UnifiedSaveOptions::ProgressEventHandlerInfo>)>;

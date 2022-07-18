@@ -16,16 +16,16 @@ Our document will contain a image, two text fragments (header and paragraph), an
 
 If we create a document from scratch we need to follow certain steps:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
-1. Instantiate a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object. In this step we will create an empty PDF document with some metadata but without pages.
-1. Add a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to the document object. So, now our document will have one page.
-1. Add a [Image](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image) to the Page.
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) for header. For the header we will use Arial font with font size 24pt and center alignment.
-1. Add header to the page [Paragraphs](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#ac5c48bedc9fe8a7e0800a1d9b2c28170).
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) for description. For the description we will use Arial font with font size 24pt and center alignment.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Instantiate a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object. In this step we will create an empty PDF document with some metadata but without pages.
+1. Add a [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) to the document object. So, now our document will have one page.
+1. Add a [Image](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image) to the Page.
+1. Create a [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) for header. For the header we will use Arial font with font size 24pt and center alignment.
+1. Add header to the page [Paragraphs](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#ac5c48bedc9fe8a7e0800a1d9b2c28170).
+1. Create a [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) for description. For the description we will use Arial font with font size 24pt and center alignment.
 1. Add (description) to the page Paragraphs.
 1. Create a table, add table properties.
-1. Add (table) to the page [Paragraphs](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#ac5c48bedc9fe8a7e0800a1d9b2c28170).
+1. Add (table) to the page [Paragraphs](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#ac5c48bedc9fe8a7e0800a1d9b2c28170).
 1. Save a document "Complex.pdf".
 
 ```cpp

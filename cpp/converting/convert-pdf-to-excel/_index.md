@@ -105,7 +105,7 @@ void ConvertPDFtoExcel_Advanced_MinimizeTheNumberOfWorksheets()
 
 ## Convert to XLSX format
 
-By default Aspose.PDF uses  XML Spreadsheet 2003 for storing data. In order to convert PDF files to XLSX format, Aspose.PDF has a class called [ExcelSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.excel_save_options) with 'Format'. An object of the [ExcelSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.excel_save_options) class is passed as a second argument to the [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method.
+By default Aspose.PDF uses  XML Spreadsheet 2003 for storing data. In order to convert PDF files to XLSX format, Aspose.PDF has a class called [ExcelSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.excel_save_options) with 'Format'. An object of the [ExcelSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.excel_save_options) class is passed as a second argument to the [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method.
 
 The following code snippet shows the process for converting PDF file into XLSX format.
 

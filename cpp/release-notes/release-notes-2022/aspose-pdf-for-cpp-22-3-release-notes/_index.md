@@ -24,4 +24,4 @@ This page contains release notes information for Aspose.PDF for C++ 22.3.
 
 1. The iterator types of **System::Collections::Generic::IEnumerable** and duck typed-collections were completely reworked. This may alter some code.
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).

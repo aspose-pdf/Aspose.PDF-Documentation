@@ -16,9 +16,9 @@ sitemap:
 This topic explains how to move page from one PDF document to the end of another document using Java.
 To move an page we should:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the source PDF file.
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the destination PDF file.
-1. Get Page from the the [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the source PDF file.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the destination PDF file.
+1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's.
 1. Add page to the destination document.
 1. Save the output PDF using the Save method.
 1. Delete page in source document.
@@ -51,11 +51,11 @@ public class ExampleMovePDFPages {
 
 ## Moving bunch of Pages from one PDF Document to Another
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the source PDF file.
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the destination PDF file.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the source PDF file.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the destination PDF file.
 1. Define an array with page numbers to be moved.
 1. Run loop through array:
-    1. Get Page from the the [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's.
+    1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's.
     1. Add page to the destination document.
 1. Save the output PDF using the Save method.
 1. Delete page in source document using array.
@@ -85,8 +85,8 @@ The following code snippet shows you how to insert an empty page at the end of a
 
 ## Moving a Page in new location in the current PDF Document
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the source PDF file.
-1. Get Page from the the [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the source PDF file.
+1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's.
 1. Add page to the new location (for example to end).
 1. Delete page in previous location.
 1. Save the output PDF using the Save method.

@@ -135,15 +135,15 @@ Aspose.PDF for .NET has been supporting the feature to convert PDF to TIF using 
 
 `ImageDevice` is the ancestor for `BmpDevice`, `JpegDevice`, `GifDevice`, `PngDevice` and `EmfDevice`.
 
-- The [BmpDevice](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) class allows you to convert PDF pages to <abbr title="Bitmap Image File">BMP</abbr> images.
-- The [EmfDevice](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/emfdevice) class allows you to convert PDF pages to <abbr title="Enhanced Meta File">EMF</abbr> images.
-- The [JpegDevice](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) class allows you to convert PDF pages to JPEG images.
-- The [PngDevice](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice) class allows you to convert PDF pages to <abbr title="Portable Network Graphics">PNG</abbr> images.
-- The [GifDevice](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/gifdevice) class allows you to convert PDF pages to <abbr title="Graphics Interchange Format">GIF</abbr> images.
+- The [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) class allows you to convert PDF pages to <abbr title="Bitmap Image File">BMP</abbr> images.
+- The [EmfDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/emfdevice) class allows you to convert PDF pages to <abbr title="Enhanced Meta File">EMF</abbr> images.
+- The [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) class allows you to convert PDF pages to JPEG images.
+- The [PngDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice) class allows you to convert PDF pages to <abbr title="Portable Network Graphics">PNG</abbr> images.
+- The [GifDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/gifdevice) class allows you to convert PDF pages to <abbr title="Graphics Interchange Format">GIF</abbr> images.
 
 Let's take a look at how to convert a PDF page to an image.
 
-`BmpDevice` class provides a method named [Process](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
+`BmpDevice` class provides a method named [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
 
 The following code snippet shows this possibility:
 
@@ -219,7 +219,7 @@ Aspose.PDF for .NET presents you online free application ["PDF to SVG"](https://
 
 SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted and if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
 
-Aspose.PDF for .NET supports the feature to convert SVG image to PDF format and also offers the capability to convert PDF files to SVG format. To accomplish this requirement, the [`SvgSaveOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/svgsaveoptions/methods/index) class has been introduced into the Aspose.PDF namespace. Instantiate an object of SvgSaveOptions and pass it as a second argument to the [`Document.Save(..)`](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method.
+Aspose.PDF for .NET supports the feature to convert SVG image to PDF format and also offers the capability to convert PDF files to SVG format. To accomplish this requirement, the [`SvgSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/svgsaveoptions/methods/index) class has been introduced into the Aspose.PDF namespace. Instantiate an object of SvgSaveOptions and pass it as a second argument to the [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method.
 
 The following code snippet shows the steps for converting a PDF file to SVG format with .NET.
 

@@ -99,4 +99,4 @@ Added:
 * Enum Field: Aspose::Pdf::XfaTag::Localset
 * Enum Field: Aspose::Pdf::XfaTag::Form
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).

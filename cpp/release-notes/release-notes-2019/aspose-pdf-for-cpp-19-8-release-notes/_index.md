@@ -21,6 +21,6 @@ New version of Aspose.PDF for C++ has codebase of Aspose.PDF for .Net 19.8.
 |PDFCPP-1036|Implemented XmlAttribute::get_OwnerElement() when attribute represents namespace definition|Bug|
 |PDFCPP-990|Eliminated memory leaks in Float2Fixed subproject|Bug|
 ### **API Reference changes in Aspose.PDF for C++ 19.8**
-Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
+Full API reference is available on [API Reference](https://reference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
 #### **Added APIs:**
 Property Aspose.Pdf.HtmlSaveOptions.FlowLayoutParagraphFullWidth

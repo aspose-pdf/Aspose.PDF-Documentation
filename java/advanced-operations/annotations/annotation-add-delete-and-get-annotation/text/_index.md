@@ -17,13 +17,13 @@ Add, Delete, and Get Annotation are similar for different kinds of annotations. 
 
 In this tutorial, you will learn how to add the text to an existing PDF document. The text tool lets you add text anywhere in the document. A Text Annotation is an annotation attached to a specific location in a PDF document. When closed, the annotation is displayed as an icon; when opened, it should display a pop-up window containing the note text in the font and size chosen by the reader.
 
-Annotations are contained by the [Annotations](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/AnnotationCollection) collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection.
+Annotations are contained by the [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/AnnotationCollection) collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection.
 
 To add an annotation to a particular page, add it to that page’s Annotations collection with the Add method.
 
 1. First, create an annotation that you want to add to the PDF.
 1. Then open the input PDF.
-1. Add the annotation to the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Annotations collection.
+1. Add the annotation to the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Annotations collection.
 
 The following code snippet shows you how to add an annotation in a PDF page.
 
@@ -151,7 +151,7 @@ Please, check the next code snippet to resolve this task:
 
 ## Delete All Annotations from Page of PDF File
 
-A [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s [AnnotationCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/AnnotationCollection) collection contains all the annotations for that particular page. To delete all the annotations from a page, call the *Delete* method of the AnnotationCollectoin collection.
+A [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s [AnnotationCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/AnnotationCollection) collection contains all the annotations for that particular page. To delete all the annotations from a page, call the *Delete* method of the AnnotationCollectoin collection.
 
 The following code snippet shows you how to delete all the annotations from a particular page.
 
@@ -177,7 +177,7 @@ The following code snippet shows you how to delete all the annotations from a pa
 
 ## Get All Annotations from Page of PDF Document
 
-Aspose.PDF allows you to get annotations from an entire document, or from a given page. To get all annotations from the page in a PDF document, loop through the [AnnotationCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/AnnotationCollection) collection of desired page resources. The following code snippet shows you how to get all the annotations of a page.
+Aspose.PDF allows you to get annotations from an entire document, or from a given page. To get all annotations from the page in a PDF document, loop through the [AnnotationCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/AnnotationCollection) collection of desired page resources. The following code snippet shows you how to get all the annotations of a page.
 
 ```java
   public static void GetTextAnnotation() {
