@@ -72,6 +72,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.7.
 |PDFNET-51634|Export excel column cell format as numeric instead of text|Bug|
 |PDFNET-48678|PDF to Excel: Cell shifted to left|Bug|
 |PDFNET-48367|OutOfMemoryException from constructor of System.Drawing.Drawing2D.PathGradientBrush|Bug|
+|PDFNET-51455|Calculated fields are not updated when merging FDF to PDF|Bug|
 
 ## Public API and Backward Incompatible Changes
 
