@@ -13,7 +13,7 @@ sitemap:
 
 ## Add Curve object
 
-A graph [Curve](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Curve) is a connected union of projective lines, each line meeting three others in ordinary double points.
+A graph [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Curve) is a connected union of projective lines, each line meeting three others in ordinary double points.
 
 Aspose.PDF for Java shows how to use Bézier curves in your Graphs.
 Bézier curves are widely used in computer graphics to model smooth curves. The curve is completely contained in the convex hull of its control points, the points may be graphically displayed and used to manipulate the curve intuitively.
@@ -23,13 +23,13 @@ In this article, we will investigate  simply graph curves, and filled curves, th
 
 Follow the steps below:
 
-1. Create [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) instance.
+1. Create [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) instance.
 
-1. Create [Drawing object](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame) with certain dimensions.
+1. Create [Drawing object](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame) with certain dimensions.
 
-1. Set [Border](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph#setBorder-com.aspose.pdf.BorderInfo-) for Drawing object.
+1. Set [Border](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph#setBorder-com.aspose.pdf.BorderInfo-) for Drawing object.
 
-1. Add [Graph](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) object to paragraphs collection of page.
+1. Add [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) object to paragraphs collection of page.
 
 1. Save your PDF file
 

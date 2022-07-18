@@ -17,7 +17,7 @@ This article will show you how to generate a PDF document using the Aspose.PDF f
 
 ## Basics of generation PDF with Aspose.PDF
 
-One of the most important classes in Aspose.PDF is a [Document class](https://apireference.aspose.com/pdf/net/aspose.pdf/document). This class is a PDF rendering engine. To present a PDF structure, the Aspose.PDF library uses the Document-Page model, where:
+One of the most important classes in Aspose.PDF is a [Document class](https://reference.aspose.com/pdf/net/aspose.pdf/document). This class is a PDF rendering engine. To present a PDF structure, the Aspose.PDF library uses the Document-Page model, where:
 
 * Document - contains the properties of the PDF document including page collection;
 * Page - contains the properties of a specific page and various collections of elements associated with this page.
@@ -64,7 +64,7 @@ using (var streamOut = new MemoryStream())
 }
 ```
 
-The most common problem is the output of data in a table format. The [Table class](https://apireference.aspose.com/pdf/net/aspose.pdf/table) is used to process tables. This class gives us the ability to create tables and place them in the document, using [Rows](https://apireference.aspose.com/pdf/net/aspose.pdf/rows) and [Cells](https://apireference.aspose.com/pdf/net/aspose.pdf/cell). So, to create the table, you need to add the required number of rows and fill them with the appropriate number of cells.
+The most common problem is the output of data in a table format. The [Table class](https://reference.aspose.com/pdf/net/aspose.pdf/table) is used to process tables. This class gives us the ability to create tables and place them in the document, using [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) and [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). So, to create the table, you need to add the required number of rows and fill them with the appropriate number of cells.
 
 The following example creates the table 4x10.
 
@@ -96,10 +96,10 @@ var table = new Table
 
 When initializing the Table object, the minimal skin settings were used:
 
-* [ColumnWidths](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - width of columns (by default);
-* [DefaultCellPadding](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - the default fields for the table cell;
-* [Border](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - table frame attributes (style, thickness, color);
-* [DefaultCellBorder](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - attributes of the cell frame (style, thickness, color).
+* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - width of columns (by default);
+* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - the default fields for the table cell;
+* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - table frame attributes (style, thickness, color);
+* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - attributes of the cell frame (style, thickness, color).
 
 As a result, we get the table 4x10 with equal-width columns.
 
@@ -107,7 +107,7 @@ As a result, we get the table 4x10 with equal-width columns.
 
 ## Exporting Data from ADO.NET Objects
 
-The Table class provides methods for interacting with ADO.NET data sources - [ImportDataTable](https://apireference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) and [ImportDataView](https://apireference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). The first method imports data from the DataTable, the second from the DataView.
+The Table class provides methods for interacting with ADO.NET data sources - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) and [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). The first method imports data from the DataTable, the second from the DataView.
 Premising that these objects are not very convenient for working in the MVC template, we will limit ourselves to a brief example. In this example (line 50), the ImportDataTable method is called and receives as parameters a DataTable instance and additional settings like the header flag and the initial position (rows/cols) for the data output.
 
 ```csharp

@@ -78,7 +78,7 @@ sitemap:
 
 ## Add Page Stamp with C\#
 
-A [PdfPageStamp](https://apireference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) can be used when you need to apply a composite stamp containing graphics, text, tables. The following example shows how to use a stamp to create stationery like in using Adobe InDesign, Illustrator, Microsoft Word. Assume we have some input document and we want apply 2 kinds of border with blue and plum color.
+A [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) can be used when you need to apply a composite stamp containing graphics, text, tables. The following example shows how to use a stamp to create stationery like in using Adobe InDesign, Illustrator, Microsoft Word. Assume we have some input document and we want apply 2 kinds of border with blue and plum color.
 
 ```csharp
 public static void AddPageStamp()

@@ -16,22 +16,22 @@ Our document will contain a image, two text fragments (header and paragraph), an
 
 If we create a document from scratch we need to follow certain steps:
 
-1. Instantiate a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object. In this step we will create an empty PDF document with some metadata but without pages.
-1. Add a [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/page) to the document object. So, now our document will have one page.
-1. Add a [Image](https://apireference.aspose.com/pdf/java/com.aspose.pdf/image). It's a complex operation based on low level actions with PDF operators.
+1. Instantiate a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) object. In this step we will create an empty PDF document with some metadata but without pages.
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) to the document object. So, now our document will have one page.
+1. Add a [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image). It's a complex operation based on low level actions with PDF operators.
     - Load image from stream
     - Add image to Images collection of Page Resources
     - Using GSave operator: this operator saves current graphics state.
-    - Create a [Matrix](https://apireference.aspose.com/pdf/java/com.aspose.pdf/matrix/) object.
+    - Create a [Matrix](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) object.
     - Using ConcatenateMatrix operator: defines how image must be placed.
     - Using Do operator: this operator draws image.
     - Using GRestore operator: this operator restores graphics state.
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) for header. For the header we will use Arial font with font size 24pt and center alignment.
-1. Add header to the page [Paragraphs](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) for description. For the description we will use Arial font with font size 24pt and center alignment.
+1. Create a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) for header. For the header we will use Arial font with font size 24pt and center alignment.
+1. Add header to the page [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. Create a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) for description. For the description we will use Arial font with font size 24pt and center alignment.
 1. Add (description) to the page Paragraphs.
 1. Create a table, add table properties.
-1. Add (table) to the page [Paragraphs](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. Add (table) to the page [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
 1. Save a document "Complex.pdf".
 
 ```java

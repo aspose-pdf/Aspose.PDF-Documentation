@@ -45,7 +45,7 @@ public class ExampleDigitallySign {
 
 Aspose.PDF for Java supports to digitally sign the PDF with a timestamp server or Web service.
 
-In order to accomplish this requirement, the [TimestampSettings](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TimestampSettings) class has been added to the Aspose.PDF namespace. Please take a look at the following code snippet which obtains timestamp and adds it to PDF document:
+In order to accomplish this requirement, the [TimestampSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf/TimestampSettings) class has been added to the Aspose.PDF namespace. Please take a look at the following code snippet which obtains timestamp and adds it to PDF document:
 
 ```java
     public static void SignWithTimeStampServer() {

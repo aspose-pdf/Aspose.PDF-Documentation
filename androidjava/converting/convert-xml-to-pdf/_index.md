@@ -23,7 +23,7 @@ Consider option using XML document based on XSL-FO standard.
 
 ## Convert XSL-FO to PDF
 
-The conversion of XSL-FO files to PDF can be implemented using [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object with [XslFoLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions),  but sometimes you can meet with the incorrect file structure. 
+The conversion of XSL-FO files to PDF can be implemented using [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions),  but sometimes you can meet with the incorrect file structure. 
 
 ```java
 // Convert XML to PDF

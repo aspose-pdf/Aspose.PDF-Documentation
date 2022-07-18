@@ -80,7 +80,7 @@ aliases:
 
 ## Creating Table using C\#
 
-Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF namespace contains classes named [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell), and [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
+Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF namespace contains classes named [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), and [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
 
 Table can be created by creating object of Table Class.
 
@@ -133,7 +133,7 @@ doc.Save(dataDir);
 
 ### ColSpan and RowSpan in Tables
 
-Aspose.PDF for .NET provides [ColSpan](https://apireference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) property to merge the columns in a table and [RowSpan](https://apireference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) property to merge the rows.
+Aspose.PDF for .NET provides [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) property to merge the columns in a table and [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) property to merge the rows.
 
 We use `ColSpan` or `RowSpan` property on the `Cell` object which creates the table cell. After applying the required properties the created cell can be added to the table.
 
@@ -212,11 +212,11 @@ In the above figure, you can see that the borders of table, row and cell overlap
 
 ### Borders
 
-To set the borders of Table, [Row](https://apireference.aspose.com/pdf/net/aspose.pdf/row) and [Cell](https://apireference.aspose.com/pdf/net/aspose.pdf/cell) objects, use the Table.Border, Row.Border and Cell.Border properties. Cell borders can also be set using the [Table](https://apireference.aspose.com/pdf/net/aspose.pdf/table) or Row class’ DefaultCellBorder property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
+To set the borders of Table, [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) and [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) objects, use the Table.Border, Row.Border and Cell.Border properties. Cell borders can also be set using the [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) or Row class’ DefaultCellBorder property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
 
 ### Margins or Padding
 
-Cell padding can be managed using the Table class' [DefaultCellPadding](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) property. All padding related properties are assigned an instance of the [MarginInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/margininfo) class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters to create custom margins.
+Cell padding can be managed using the Table class' [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) property. All padding related properties are assigned an instance of the [MarginInfo](https://reference.aspose.com/pdf/net/aspose.pdf/margininfo) class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters to create custom margins.
 
 In the following example, the width of the cell border is set to 0.1 point, the width of the table border is set to 1 point and cell padding is set to 5 points.
 
@@ -346,7 +346,7 @@ doc.Save(dataDir);
 
 ### Get Table Width
 
-Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class has a method [GetWidth](https://apireference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) for the purpose. For example, you have not set table columns width explicitly and set [ColumnAdjustment](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) to AutoFitToContent. In this case you can get table width as following.
+Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class has a method [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) for the purpose. For example, you have not set table columns width explicitly and set [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) to AutoFitToContent. In this case you can get table width as following.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -513,7 +513,7 @@ By default, paragraphs are added to a Page object's Paragraphs collection. Howev
 
 ### Sample: How to Render a Table on New Page using C\#
 
-To render table on a new page, use the [IsInNewPage](https://apireference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) property in the BaseParagraph class. The following code snippet shows how.
+To render table on a new page, use the [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) property in the BaseParagraph class. The following code snippet shows how.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

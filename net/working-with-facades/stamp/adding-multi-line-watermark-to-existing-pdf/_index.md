@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-A lot of users want to stamp their PDF documents with multi-line text. They usually try to use `\n` and `<br>` but these types of characters are not supported by Aspose.Pdf.Facades namespace. So, to make it possible, we have added another method named [AddNewLineText()](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) in [FormattedText](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) class of Aspose.Pdf.Facades namespace.
+A lot of users want to stamp their PDF documents with multi-line text. They usually try to use `\n` and `<br>` but these types of characters are not supported by Aspose.Pdf.Facades namespace. So, to make it possible, we have added another method named [AddNewLineText()](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) in [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) class of Aspose.Pdf.Facades namespace.
 
 {{% /alert %}}
 

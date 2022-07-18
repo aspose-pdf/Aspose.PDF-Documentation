@@ -8,7 +8,7 @@ description: This section describes about replace image in existing PDF file usi
 lastmod: "2021-06-05"
 ---
 
-The [XImages](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) collection’s [Replace](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection#replace-int-java.io.InputStream-) method allows you to replace an image in an existing PDF file.
+The [XImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) collection’s [Replace](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection#replace-int-java.io.InputStream-) method allows you to replace an image in an existing PDF file.
 
 The Images collection can be found in a page’s Resources collection. To replace an image:
 

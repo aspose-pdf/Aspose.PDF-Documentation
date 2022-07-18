@@ -78,7 +78,7 @@ aliases:
 }
 </script>
 
-Aspose.PDF for .NET API provides full flexibility to work with pages in a PDF document using C# or any other .NET language. It maintains all the pages of a PDF document in [PageCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/pagecollection) that can be used to work with PDF pages.
+Aspose.PDF for .NET API provides full flexibility to work with pages in a PDF document using C# or any other .NET language. It maintains all the pages of a PDF document in [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) that can be used to work with PDF pages.
 Aspose.PDF for .NET lets you insert a page to a PDF document at any location in the file as well as add pages to the end of a PDF file.
 This section shows how to add pages to a PDF using C#.
 
@@ -90,9 +90,9 @@ Aspose.PDF for .NET lets you insert a page to a PDF document at any location in 
 
 To insert an empty page in a PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class object with the input PDF file.
-1. Call the [PageCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection's [Insert](https://apireference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) method with specified index.
-1. Save the output PDF using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
+1. Create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class object with the input PDF file.
+1. Call the [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection's [Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) method with specified index.
+1. Save the output PDF using the [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 The following code snippet shows you how to insert a page in a PDF file.
 
@@ -117,9 +117,9 @@ Sometimes, you want to ensure that a document ends on an empty page. This topic 
 
 To insert an empty page at the end of a PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class object with the input PDF file.
-1. Call the [PageCollection](https://apireference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection's [Add](https://apireference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) method, without any parameters.
-1. Save the output PDF using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
+1. Create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class object with the input PDF file.
+1. Call the [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection's [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) method, without any parameters.
+1. Save the output PDF using the [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 The following code snippet shows you how to insert an empty page at the end of a PDF file.
 

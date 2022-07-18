@@ -10,11 +10,11 @@ draft: false
 
 ## Convert PDF Pages to Different Image Formats (Facades)
 
-In order to convert PDF pages to different image formats, you need to create [PdfConverter](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter) object and open the PDF file using [bindPdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#bindPdf-java.lang.String-) method. 
+In order to convert PDF pages to different image formats, you need to create [PdfConverter](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter) object and open the PDF file using [bindPdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#bindPdf-java.lang.String-) method. 
 
-After that, you need to call [doConvert](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#doConvert--) method for initialization tasks. Then, you can loop through all the pages using [hasNextImage](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#hasNextImage--) and [getNextImage](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#getNextImage-java.io.OutputStream-) methods. The getNextImage method allows you to create image of a particular page. You also need to pass ImageType to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. 
+After that, you need to call [doConvert](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#doConvert--) method for initialization tasks. Then, you can loop through all the pages using [hasNextImage](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#hasNextImage--) and [getNextImage](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#getNextImage-java.io.OutputStream-) methods. The getNextImage method allows you to create image of a particular page. You also need to pass ImageType to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. 
 
-Finally, call the close method of the [PdfConverter](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter) class.
+Finally, call the close method of the [PdfConverter](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter) class.
 
 The following code snippet shows you how to convert PDF pages to images.
 
@@ -39,7 +39,7 @@ public static void ConvertPdfPagesToImages01() {
     }
 ```
 
-In the next code snippet, we will show how you can change some parameters. With [setCoordinateType](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#setCoordinateType-int-) we set the frame [CropBox](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCoordinateType#CropBox). Also, we can change [setResolution](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#setResolution-com.aspose.pdf.devices.Resolution-) specifying the number of dots per inch. The next one [setFormPresentationMode](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#setFormPresentationMode-int-) - form presentation mode. Then we indicate the [setStartPage](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#setStartPage-int-) with which the page number of the beginning of the conversion is set. We can also specify the last page by setting a range.
+In the next code snippet, we will show how you can change some parameters. With [setCoordinateType](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#setCoordinateType-int-) we set the frame [CropBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCoordinateType#CropBox). Also, we can change [setResolution](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#setResolution-com.aspose.pdf.devices.Resolution-) specifying the number of dots per inch. The next one [setFormPresentationMode](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#setFormPresentationMode-int-) - form presentation mode. Then we indicate the [setStartPage](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#setStartPage-int-) with which the page number of the beginning of the conversion is set. We can also specify the last page by setting a range.
 
 ```java
 public static void ConvertPdfPagesToImages02()

@@ -17,10 +17,10 @@ sitemap:
 
 To create a PDF file using Java, the following steps can be used.
 
-1. Instantiate a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object
-1. Add a [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) to document object
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) object
-1. Add [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) to [Paragraph](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) collection of the page
+1. Instantiate a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) to document object
+1. Create a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) object
+1. Add [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) to [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) collection of the page
 1. Save the resultant PDF document
 
 ```java

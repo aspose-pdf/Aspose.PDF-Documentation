@@ -17,10 +17,10 @@ Aspose.PDF for C++ is a feature rich PDF API that allows the developers to embed
 
 Below code snippet follows these steps:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
-1. Instantiate a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object. In this step we will create an empty PDF document with some metadata but without pages.
-1. Add a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to the document object. So, now our document will have one page.
-1. [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa)resultant PDF document
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Instantiate a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object. In this step we will create an empty PDF document with some metadata but without pages.
+1. Add a [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) to the document object. So, now our document will have one page.
+1. [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa)resultant PDF document
 
 Following code snippet is a Hello World program to exhibit working of Aspose.PDF for C++ API.
 

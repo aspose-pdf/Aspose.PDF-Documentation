@@ -13,7 +13,7 @@ sitemap:
 
 ## Add Ellipse object
 
-Aspose.PDF for Java supports to add [Ellipse](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Ellipse) objects to PDF documents. It also offers the feature to fill ellipse  object with a certain color.
+Aspose.PDF for Java supports to add [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Ellipse) objects to PDF documents. It also offers the feature to fill ellipse  object with a certain color.
 
 ```java
 public static void ExampleEllipse() {
@@ -50,7 +50,7 @@ public static void ExampleEllipse() {
 
 ## Create Filled Ellipse Object
 
-The following code snippet shows how to add a [Ellipse](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Ellipse) object that is filled with color.
+The following code snippet shows how to add a [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Ellipse) object that is filled with color.
 
 ```java
     public static void ExampleFilledEllipse() {

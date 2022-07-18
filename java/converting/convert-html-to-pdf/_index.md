@@ -44,8 +44,8 @@ Aspose presents you online free application ["HTML to PDF"](https://products.asp
 
 ## How to convert HTML file to PDF Simple variant:
 
-1. Create a HTML [HtmlLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
-1. Initialize [Document object](<https://apireference.aspose.com/page/java/com.aspose.page/document>).
+1. Create a HTML [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
+1. Initialize [Document object](<https://reference.aspose.com/page/java/com.aspose.page/document>).
 1. Save output PDF document.
 
 ```java
@@ -68,12 +68,12 @@ The HTML Conversion engine has several options that allow us to control the conv
 
 ### Media Queries Support
 
-1. Create a HTML [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
+1. Create a HTML [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
 1. Set Print or Screen mode. 
-1. Initialize [Document object](<https://apireference.aspose.com/page/java/com.aspose.page/document>).
+1. Initialize [Document object](<https://reference.aspose.com/page/java/com.aspose.page/document>).
 1. Save output PDF document. 
 
-Media queries are a popular technique for delivering a tailored style sheet to different devices. We can set device type using [HtmlMediaType](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlMediaType) property.
+Media queries are a popular technique for delivering a tailored style sheet to different devices. We can set device type using [HtmlMediaType](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlMediaType) property.
 
 ```java
   private static void ConvertHTMLtoPDFAdvanced_MediaType() {
@@ -94,11 +94,11 @@ Media queries are a popular technique for delivering a tailored style sheet to d
 
 ### Enable (disable) font embedding
 
-1. Add new Html [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
+1. Add new Html [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
 1. Disable font embedding.
 1. Save a new Document.
 
-HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We can also control the embedding of fonts in a document using a [IsEmbedFonts](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#isEmbedFonts--) property.
+HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We can also control the embedding of fonts in a document using a [IsEmbedFonts](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#isEmbedFonts--) property.
 
 ```java
 public static void ConvertHTMLtoPDFAdvanced_EmbedFonts() {
@@ -115,7 +115,7 @@ public static void ConvertHTMLtoPDFAdvanced_EmbedFonts() {
 ### Manage external resource loading
 
 The Conversion Engine provides a mechanism that allows you to control the loading of certain resources associated with the HTML document.
-The [HtmlLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) class has the property [CustomLoaderOfExternalResources](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#setCustomLoaderOfExternalResources-com.aspose.pdf.LoadOptions.ResourceLoadingStrategy-) with which we can define the behavior of the resource loader.
+The [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) class has the property [CustomLoaderOfExternalResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#setCustomLoaderOfExternalResources-com.aspose.pdf.LoadOptions.ResourceLoadingStrategy-) with which we can define the behavior of the resource loader.
 
 ```java
     public static void ConvertHTMLtoPDFAdvanced_DummyImage() {

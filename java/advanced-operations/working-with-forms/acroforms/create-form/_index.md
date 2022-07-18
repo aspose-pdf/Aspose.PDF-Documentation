@@ -13,12 +13,12 @@ sitemap:
 
 ## Add Form Field in a PDF Document
 
-The [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class provides a collection named Form which helps manage form fields in a PDF document.
+The [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class provides a collection named Form which helps manage form fields in a PDF document.
 
 To add a form field:
 
 1. Create the form field which you want to add.
-2. Call the [Form](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Form) collection’s add method.
+2. Call the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/Form) collection’s add method.
 
 This example shows how to add a TextBoxField. You can add any form field using the same approach:
 
@@ -67,7 +67,7 @@ public class ExamplesCreateForm {
 
 A Radio Button is most commonly used for multiple choice questions, in the scenario where only one answer can be selected.
 
-The following code snippets show how to add [RadioButtonField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField) in a PDF document.
+The following code snippets show how to add [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField) in a PDF document.
 
 ```java
 public static void AddingRadioButton() {
@@ -91,7 +91,7 @@ public static void AddingRadioButton() {
     }
 ```
 
-The following code snippet shows the steps to add [RadioButtonField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField) with three options and place them inside Table cells.
+The following code snippet shows the steps to add [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField) with three options and place them inside Table cells.
 
 ```java
 public static void AddingRadioButtonAdvanced() {
@@ -156,7 +156,7 @@ public static void AddingRadioButtonAdvanced() {
 
 ## Adding Caption to RadioButtonField
 
-Following code snippet shows how to add caption which will be associated with [RadioButtonField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField):
+Following code snippet shows how to add caption which will be associated with [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField):
 
 ```java
 public static void AddingCaptionToRadioButtonField() {
@@ -204,7 +204,7 @@ public static void AddingCaptionToRadioButtonField() {
 
 A Combo Box is a form field which will add a dropdown menu to your document. 
 
-The following code snippets show how to add [ComboBox](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ComboBoxField) field in a PDF document.
+The following code snippets show how to add [ComboBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/ComboBoxField) field in a PDF document.
 
 ```java
 public static void AddingComboboxField() {

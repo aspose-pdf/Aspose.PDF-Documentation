@@ -12,7 +12,7 @@ sitemap:
 
 ## Concatenate PDF Files Using File Paths (Facades)
 
-concatenate method of [PdfFileEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor) class can be used to concatenate two PDF files. The concatenate method allows you to pass three parameters: first input PDF, second input PDF, and output PDF. The final output PDF contains both the input PDF files.
+concatenate method of [PdfFileEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor) class can be used to concatenate two PDF files. The concatenate method allows you to pass three parameters: first input PDF, second input PDF, and output PDF. The final output PDF contains both the input PDF files.
 
 The following code snippet shows you how to concatenate PDF files using file paths.
 
@@ -43,7 +43,7 @@ In some cases, when there are a lot of outlines, users may disable them with set
 
 ## Concatenate multiple PDF files using MemoryStreams
 
-[Concatenate]https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor#concatenate-com.aspose.pdf.IDocument:A-com.aspose.pdf.IDocument-) method of [PdfFileEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor) class takes the source PDF files and the destination PDF file as parameters. These parameters can be either paths to the PDF files on the disk or they could be MemoryStreams. Now, for this example, we’ll first create two files streams to read the PDF files from the disk. Then we’ll convert these files into byte arrays. These byte arrays of the PDF files will be converted to MemoryStreams. Once we get the MemoryStreams out of PDF files, we’ll be able to pass them on to the concatenate method and merge into a single output file.
+[Concatenate]https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor#concatenate-com.aspose.pdf.IDocument:A-com.aspose.pdf.IDocument-) method of [PdfFileEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor) class takes the source PDF files and the destination PDF file as parameters. These parameters can be either paths to the PDF files on the disk or they could be MemoryStreams. Now, for this example, we’ll first create two files streams to read the PDF files from the disk. Then we’ll convert these files into byte arrays. These byte arrays of the PDF files will be converted to MemoryStreams. Once we get the MemoryStreams out of PDF files, we’ll be able to pass them on to the concatenate method and merge into a single output file.
 
 The following code snippet shows you how to concatenate multiple PDF files using MemoryStreams:
 
@@ -133,7 +133,7 @@ The following code snippet shows you how to concatenate array of PDF files using
 
 ## Concatenate PDF Forms and keep fields names unique
 
-P[PdfFileEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor) class in [com.aspose.pdf.facades](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/package-frame) namespace offers the capability to concatenate the PDF files. Now, if the Pdf files which are to be concatenated have form fields with similar field names, Aspose.PDF provides the feature to keep the fields in the resultant Pdf file as unique and also you can specify the suffix to make the field names unique. [KeepFieldsUnique](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor#getKeepFieldsUnique--) method of PdfFileEditor as true will make field names unique when Pdf forms are concatenated. Also, [UniqueSuffix](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor#getUniqueSuffix--) method of PdfFileEditor can be used to specify the user defined format of the suffix which is added to field name to make it unique when forms are concatenated. This string must contain %NUM% substring which will be replaced with numbers in the resultant file.
+P[PdfFileEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor) class in [com.aspose.pdf.facades](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/package-frame) namespace offers the capability to concatenate the PDF files. Now, if the Pdf files which are to be concatenated have form fields with similar field names, Aspose.PDF provides the feature to keep the fields in the resultant Pdf file as unique and also you can specify the suffix to make the field names unique. [KeepFieldsUnique](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor#getKeepFieldsUnique--) method of PdfFileEditor as true will make field names unique when Pdf forms are concatenated. Also, [UniqueSuffix](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileEditor#getUniqueSuffix--) method of PdfFileEditor can be used to specify the user defined format of the suffix which is added to field name to make it unique when forms are concatenated. This string must contain %NUM% substring which will be replaced with numbers in the resultant file.
 
 Please see the following simple code snippet to achieve this functionality.
 

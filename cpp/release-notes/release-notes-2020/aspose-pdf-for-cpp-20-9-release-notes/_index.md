@@ -27,4 +27,4 @@ lastmod: "2021-06-05"
 |PDFCPP-1395|PDF to Word - API is generating an error |Bug|
 |PDFCPP-1396|PDF to Word - API is generating an error |Bug|
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).

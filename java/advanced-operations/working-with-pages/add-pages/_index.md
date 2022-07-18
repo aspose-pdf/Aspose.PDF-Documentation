@@ -20,8 +20,8 @@ This section shows how to add pages to a PDF with Aspose.PDF for Java.
 
 The following code snippet shows how to insert an empty page into a PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the input PDF file.
-1. Call the [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) collection's Insert method with specified index.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the input PDF file.
+1. Call the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) collection's Insert method with specified index.
 1. Save the output PDF using the Save method.
 
 The following code snippet shows you how to insert a page in a PDF file.
@@ -80,8 +80,8 @@ Sometimes, you want to ensure that a document ends on an empty page. This topic 
 
 To insert an empty page at the end of a PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the input PDF file.
-1. Call the [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) collection's Add method, without any parameters.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the input PDF file.
+1. Call the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) collection's Add method, without any parameters.
 1. Save the output PDF using the Save method.
 
 The following code snippet shows you how to insert an empty page at the end of a PDF file.

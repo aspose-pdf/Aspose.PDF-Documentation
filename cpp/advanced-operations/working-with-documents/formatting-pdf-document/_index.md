@@ -15,7 +15,7 @@ sitemap:
 
 ### Get Document Window and Page Display Properties
 
-This topic helps you understand how to get properties of the document window, viewer application, and how pages are displayed. To set these properties, open the PDF file using the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class. Now you can set the properties of the Document object, such as:
+This topic helps you understand how to get properties of the document window, viewer application, and how pages are displayed. To set these properties, open the PDF file using the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class. Now you can set the properties of the Document object, such as:
 
 - CenterWindow – Center the document window on the screen. Default: false.
 - Direction – Reading order. This determines how pages are laid out when displayed side by side. Default: left to right.
@@ -27,7 +27,7 @@ This topic helps you understand how to get properties of the document window, vi
 - PageLayout – The page layout.
 - PageMode – How the document is displayed when first opened. The options are show thumbnails, full-screen, show attachment panel.
 
-The following code snippet shows you how to get the properties using [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
+The following code snippet shows you how to get the properties using [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
 
 ```cpp
 void GetDocumentWindowAndPageDisplayProperties()
@@ -81,7 +81,7 @@ void GetDocumentWindowAndPageDisplayProperties()
 
 This topic explains how to set the properties of the document window, viewer application, and page display. To set these different properties:
 
-1. Open the PDF file using the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
+1. Open the PDF file using the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
 1. Set different document properties:
 
 - CenterWindow
@@ -95,7 +95,7 @@ This topic explains how to set the properties of the document window, viewer app
 - PageLayout
 - PageMode
 
-1. [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) the updated PDF file using the Save method.
+1. [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) the updated PDF file using the Save method.
 
 Properties available are:
 
@@ -110,7 +110,7 @@ Properties available are:
 - PageLayout
 - PageMode
 
-Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
+Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
 
 ```cpp
 void SetDocumentWindowAndPageDisplayProperties()
@@ -168,7 +168,7 @@ void SetDocumentWindowAndPageDisplayProperties()
 
 PDF readers support [a core of 14 fonts](https://en.wikipedia.org/wiki/PDF#Text) so that documents can be displayed the same way regardless of the platform the document is displayed on. When a PDF contains a font that is not one of the 14 core fonts, embed the font to the PDF file to avoid font substitution.
 
-Aspose.PDF for C++ supports font embedding in existing PDF files. You can embed a complete font or a subset of the font. To embed the font, open the PDF file using the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class. Then use the [Aspose.Pdf.Text.Font](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.font) class to embed the font into the PDF file. To embed the full font, use the Font class’ IsEmbeded property; to use a subset of the font, use the IsSubset property.
+Aspose.PDF for C++ supports font embedding in existing PDF files. You can embed a complete font or a subset of the font. To embed the font, open the PDF file using the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class. Then use the [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.font) class to embed the font into the PDF file. To embed the full font, use the Font class’ IsEmbeded property; to use a subset of the font, use the IsSubset property.
 
 {{% alert color="primary" %}}
 
@@ -180,7 +180,7 @@ The following code snippet shows how to embed a font in a PDF file.
 
 ### Embedding Standard Type 1 Fonts
 
-There are PDF documents that use fonts from a special set are called “Standard Type 1 Fonts”. This set includes 14 fonts and embedding this type of font requires using of special flags i.e [Aspose.Pdf.Document.EmbedStandardFonts](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#a8f1a88eef22e05ee9ee22a79db9cb9f6).
+There are PDF documents that use fonts from a special set are called “Standard Type 1 Fonts”. This set includes 14 fonts and embedding this type of font requires using of special flags i.e [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a8f1a88eef22e05ee9ee22a79db9cb9f6).
 
 Following is the code snippet which can be used to get a document with all fonts embedded including Standard Type 1 Fonts:
 
@@ -281,7 +281,7 @@ void SetDefaultFontNameWhileSavingPDF()
 
 ### Get All Fonts from PDF Document
 
-In case you want to get all fonts from a PDF document, you can use [FontUtilities](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#a2e22a508e8baef176dfc34734cf0def9).GetAllFonts() method provided in [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
+In case you want to get all fonts from a PDF document, you can use [FontUtilities](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a2e22a508e8baef176dfc34734cf0def9).GetAllFonts() method provided in [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
 
 Please check following code snippet in order to get all fonts from an existing PDF document:
 
@@ -324,7 +324,7 @@ void GetWarningsForFontSubstitution()
 }
 ```
 
-The [OnFontSubstitution](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac776d8736d430532bdaa530a36eb51a0) method is as listed below.
+The [OnFontSubstitution](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac776d8736d430532bdaa530a36eb51a0) method is as listed below.
 
 ```cpp
 void OnFontSubstitution(Aspose::Pdf::Text::Font &font, Aspose::Pdf::Text::Font& newFont) {
@@ -336,7 +336,7 @@ void OnFontSubstitution(Aspose::Pdf::Text::Font &font, Aspose::Pdf::Text::Font& 
 
 ### Improve Fonts Embedding using FontSubsetStrategy
 
-The feature to embed the fonts as a subset can be accomplished by using the IsSubset property, but sometimes you want to reduce a fully embedded font set to only subsets that are used in the document. [Aspose.Pdf.Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) has property [FontUtilities](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document.i_document_font_utilities/) which includes method SubsetFonts(FontSubsetStrategy subsetStrategy). In the method SubsetFonts(), the parameter subsetStrategy helps to tune the subset strategy. FontSubsetStrategy supports two following variants of font subsetting.
+The feature to embed the fonts as a subset can be accomplished by using the IsSubset property, but sometimes you want to reduce a fully embedded font set to only subsets that are used in the document. [Aspose.Pdf.Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) has property [FontUtilities](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document.i_document_font_utilities/) which includes method SubsetFonts(FontSubsetStrategy subsetStrategy). In the method SubsetFonts(), the parameter subsetStrategy helps to tune the subset strategy. FontSubsetStrategy supports two following variants of font subsetting.
 
 - SubsetAllFonts - This will subset all fonts, used in a document.
 - SubsetEmbeddedFontsOnly - This will subset only those fonts which are fully embedded into the document.
@@ -365,9 +365,9 @@ void ImproveFontsEmbeddingUsingFontSubsetStrategy()
 
 ### Get-Set Zoom Factor of PDF File
 
-Sometimes, you want to set PDF document’s zoom factor. With Aspose.PDF for C++, you can set the value of zoom factor by [set_OpenAction(…) method](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#abb5c84979077034d06a673409b666e21) of Document class.
+Sometimes, you want to set PDF document’s zoom factor. With Aspose.PDF for C++, you can set the value of zoom factor by [set_OpenAction(…) method](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#abb5c84979077034d06a673409b666e21) of Document class.
 
-The [GoToAction](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.go_to_action/) class Destination property allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file’s zoom factor.
+The [GoToAction](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.go_to_action/) class Destination property allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file’s zoom factor.
 
 #### Set Zoom factor
 

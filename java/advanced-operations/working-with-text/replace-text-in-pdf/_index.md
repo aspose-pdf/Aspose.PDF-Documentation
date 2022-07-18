@@ -21,9 +21,9 @@ You can try to find in replace the text in the document using Aspose.PDF and get
 
 To replace text on all pages in a PDF document using [Aspose.PDF for Java](https://products.aspose.com/pdf/java):
 
-1. First use [TextFragmentAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) to find the particular phrase to be replaced.
-1. Then, go through all [TextFragments](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber#getTextFragments--) to replace the text and change any other attributes.
-1. Finally, save the output PDF using the Document class [save](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#save--) method.
+1. First use [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) to find the particular phrase to be replaced.
+1. Then, go through all [TextFragments](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber#getTextFragments--) to replace the text and change any other attributes.
+1. Finally, save the output PDF using the Document class [save](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#save--) method.
 
 ```java
 package com.aspose.pdf.examples;
@@ -62,7 +62,7 @@ public class ExampleReplaceText {
 
 ## Replace Text in particular page region
 
-In order to replace text in a particular page region, first, we need to instantiate TextFragmentAbsorber object, specify page region using [TextSearchOptions.setRectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextSearchOptions#setRectangle-com.aspose.pdf.Rectangle-) and then iterate through all the TextFragments to replace the text. Once these operations are completed, we only need to save the output PDF using the save method of the Document object.
+In order to replace text in a particular page region, first, we need to instantiate TextFragmentAbsorber object, specify page region using [TextSearchOptions.setRectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextSearchOptions#setRectangle-com.aspose.pdf.Rectangle-) and then iterate through all the TextFragments to replace the text. Once these operations are completed, we only need to save the output PDF using the save method of the Document object.
 
  The following code snippet shows you how to replace text in all pages of PDF document.
 
@@ -252,7 +252,7 @@ public static void RearrangeContent() {
 
 ## Rendering Replaceable Symbols during PDF creation
 
-Replaceable symbols are special symbols in a text string that can be replaced with corresponding content at run time. Replaceable symbols currently support by new Document Object Model of Aspose.PDF namespace are `$P`, `$p,` `\n`, `\r`. The `$p` and `$P` are used to deal with the page numbering at run time. `$p` is replaced with the number of the page where the current Paragraph class is in. `$P` is replaced with the total number of pages in the document. When adding [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TeXFragment) to the paragraphs collection of PDF documents, it does not support line feed inside the text. However in order to add text with a line feed, please use [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TeXFragment) with [TextParagraph](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextParagraph):
+Replaceable symbols are special symbols in a text string that can be replaced with corresponding content at run time. Replaceable symbols currently support by new Document Object Model of Aspose.PDF namespace are `$P`, `$p,` `\n`, `\r`. The `$p` and `$P` are used to deal with the page numbering at run time. `$p` is replaced with the number of the page where the current Paragraph class is in. `$P` is replaced with the total number of pages in the document. When adding [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXFragment) to the paragraphs collection of PDF documents, it does not support line feed inside the text. However in order to add text with a line feed, please use [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXFragment) with [TextParagraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextParagraph):
 
 - use "\r\n" or Environment.NewLine in TextFragment instead of single "\n";
 - create a TextParagraph object. It will add text with line splitting;

@@ -13,14 +13,14 @@ sitemap:
 
 **Aspose.PDF for C++** lets you track the progress of PDF to PPTX conversion.
 
-During PDF to <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr> conversion, the text is rendered as Text where you can select/update it. Please note that in order to convert PDF files to PPTX format, Aspose.PDF provides a class named [`PptxSaveOptions`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options). An object of the PptxSaveOptions class is passed as a second argument to the [`Document.Save(..) method`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method. The following code snippet shows the process for converting PDF files into PPTX format.
+During PDF to <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr> conversion, the text is rendered as Text where you can select/update it. Please note that in order to convert PDF files to PPTX format, Aspose.PDF provides a class named [`PptxSaveOptions`](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options). An object of the PptxSaveOptions class is passed as a second argument to the [`Document.Save(..) method`](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method. The following code snippet shows the process for converting PDF files into PPTX format.
 
 ## Simple conversion PDF to PPTX with Aspose.PDF for C++
 
 In order to convert PDF to PPTX, Aspose.PDF for C++ advice to use the following code steps.
 
-1. Create an instance of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class
-1. Create an instance of [PptxSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class
+1. Create an instance of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class
+1. Create an instance of [PptxSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class
 1. Use the Save method of the Document object to save the PDF as PPTX
 
 ```cpp
@@ -45,7 +45,7 @@ void ConvertPDFtoPPTX()
 
 ## Convert PDF to PPTX with Slides as Images
 
-In case if you need to convert a searchable PDF to PPTX as images instead of selectable text, Aspose.PDF provides such a feature via [Aspose.Pdf.PptxSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class. To achieve this, set property [SlidesAsImages](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options#aeca0659ae24ea7cdeb171d941440dcb2) of [PptxSaveOptios](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class to 'true' as shown in the following code sample.
+In case if you need to convert a searchable PDF to PPTX as images instead of selectable text, Aspose.PDF provides such a feature via [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class. To achieve this, set property [SlidesAsImages](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options#aeca0659ae24ea7cdeb171d941440dcb2) of [PptxSaveOptios](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class to 'true' as shown in the following code sample.
 
 ```cpp
 void ConvertPDFtoPPTX_SlidesAsImages()
@@ -72,7 +72,7 @@ void ConvertPDFtoPPTX_SlidesAsImages()
 
 ## Progress Detail of PPTX Conversion
 
-Aspose.PDF for C++ lets you track the progress of PDF to PPTX conversion. The [Aspose.Pdf.PptxSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class provides [CustomProgressHandler](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options#ac9ad606c4b4d7249c5f299fd8d766474) property that can be specified to a custom method for tracking the progress of conversion as shown in the following code sample.
+Aspose.PDF for C++ lets you track the progress of PDF to PPTX conversion. The [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options) class provides [CustomProgressHandler](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options#ac9ad606c4b4d7249c5f299fd8d766474) property that can be specified to a custom method for tracking the progress of conversion as shown in the following code sample.
 
 ```cpp
 void ConvertPDFtoPPTX_ProgressDetailConversion()

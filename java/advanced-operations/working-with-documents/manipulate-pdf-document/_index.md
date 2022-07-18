@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)
 
-To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class' [validate(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#validate-java.io.OutputStream-int-) method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PdfFormat) enumeration: PDF_A_1A or PDF_A_1B.
+To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class' [validate(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#validate-java.io.OutputStream-int-) method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/PdfFormat) enumeration: PDF_A_1A or PDF_A_1B.
 
 The output XML format is a custom Aspose format. The XML contains a collection of tags with the name Problem; each tag contains the details of a particular problem. The Problem tag's ObjectID attribute represents the ID of the particular object this problem is related to. The Clause attribute represents a corresponding rule in the PDF specification.
 
@@ -30,9 +30,9 @@ The output XML format is a custom Aspose format. The XML contains a collection o
 
 ### Add TOC to Existing PDF
 
-The ListSection class in the aspose.pdf package allows you to create a table of contents when creating a PDF document from scratch. To add headings, which are elements of the TOC, use the [aspose.pdf.Heading](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Heading) class.
+The ListSection class in the aspose.pdf package allows you to create a table of contents when creating a PDF document from scratch. To add headings, which are elements of the TOC, use the [aspose.pdf.Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/Heading) class.
 
-To add a TOC to an existing PDF file, use the [Heading](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Heading) class in the com.aspose.pdf package. The com.aspose.pdf package can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use com.aspose.pdf package.
+To add a TOC to an existing PDF file, use the [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/Heading) class in the com.aspose.pdf package. The com.aspose.pdf package can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use com.aspose.pdf package.
 
 The following code snippet shows how to create a table of contents inside an existing PDF file.
 
@@ -156,7 +156,7 @@ Aspose.PDF also allows setting different TabLeaderType for different TOC levels.
 ```
 ### Hide Page Numbers in TOC
 
-In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TocInfo) property of [TOCInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
+In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://reference.aspose.com/pdf/java/com.aspose.pdf/TocInfo) property of [TOCInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
 
 ```java
 public static void HidePageNumbersInTOC() {
@@ -258,13 +258,13 @@ Aspose.PDF for Java supports adding layers to PDF files.
 
 To work with layers in PDF files, use the following API members.
 
-The [Layer](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Layer) class represents a layer and contains the following properties:
+The [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/Layer) class represents a layer and contains the following properties:
 
 - **Name** – the layer's name.
 - **Id** – the layer's ID.
 - **Contents** – a list of layer operators.
 
-Once the [Layer](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Layer) objects have been defined, add them to the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object's Layers collection. The code below shows how to add layers to a PDF document.
+Once the [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/Layer) objects have been defined, add them to the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) object's Layers collection. The code below shows how to add layers to a PDF document.
 
 ```java
 public static void AddLayersToPDFFile() {

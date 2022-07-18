@@ -13,16 +13,16 @@ sitemap:
 
 Adding video, audio, and interactive content turns PDFs into multidimensional communication tools that increase interest and engagement with your documents. Such content in PDF format files is called Multimedia Annotations.
 
-Annotations in a PDF document are contained in a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method.
+Annotations in a PDF document are contained in a [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method.
 
-Use the [ScreenAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.screen_annotation) class in the Aspose.PDF.InteractiveFeatures.Annotations namespace to include SWF files as annotations in a PDF document instead. A screen annotation specifies a region of a page upon which media clips may be played.
+Use the [ScreenAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.screen_annotation) class in the Aspose.PDF.InteractiveFeatures.Annotations namespace to include SWF files as annotations in a PDF document instead. A screen annotation specifies a region of a page upon which media clips may be played.
 
-When you need to add an external video link in PDF document, you can use [MovieAnnotaiton](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.movie_annotation).
+When you need to add an external video link in PDF document, you can use [MovieAnnotaiton](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.movie_annotation).
 A Movie Annotation contains animated graphics and sound to be presented on the computer screen and through the speakers.
 
-A [Sound Annotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.sound_annotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound.
+A [Sound Annotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.sound_annotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound.
 
-However, when there is a requirement to embed media inside PDF document, you need to use [RichMediaAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.rich_media_annotation).
+However, when there is a requirement to embed media inside PDF document, you need to use [RichMediaAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.rich_media_annotation).
 
 ## Add Screen Annotation
 
@@ -200,9 +200,9 @@ This section shows the basic steps of creating a 3D annotation in a PDF document
 
 3D annotation is added using a model created in the U3D format.
 
-1. Create a new [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/)
-1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.p_d_f3_d_content/)
-1. Create [3dArtWork](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.p_d_f3_d_artwork/) object and link it to the document and 3DContent
+1. Create a new [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/)
+1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.p_d_f3_d_content/)
+1. Create [3dArtWork](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.p_d_f3_d_artwork/) object and link it to the document and 3DContent
 1. Tune pdf3dArtWork object:
 
 ```cpp
@@ -251,7 +251,7 @@ Since PDF v 1.2 we can use Widget Annotations. These are interactive form elemen
 
 Each form field for each location in the document represents one Annotation Widget. Location-specific annotation data for the widget is added to a specific page. Each form field has several options. A button can be a toggle, checkbox, or button. The selection widget can be a list box or a combo box.
 
-Aspose.PDF for C++ allows you to add this annotation using [Widget Annotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.widget_annotation/) class.
+Aspose.PDF for C++ allows you to add this annotation using [Widget Annotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.widget_annotation/) class.
 
 To add a button to the page we need use the next code snippet:
 

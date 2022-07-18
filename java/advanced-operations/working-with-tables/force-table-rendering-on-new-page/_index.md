@@ -12,7 +12,7 @@ By default, paragraphs are added to a Page object's Paragraphs collection. Howev
 
 ### Adding a Table
 
-To render table on a new page, use the [IsInNewPage](https://apireference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#isInNewPage--) method in the [BaseParagraph](https://apireference.aspose.com/pdf/java/com.aspose.pdf/baseparagraph) class. The following code snippet shows how.
+To render table on a new page, use the [IsInNewPage](https://reference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#isInNewPage--) method in the [BaseParagraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/baseparagraph) class. The following code snippet shows how.
 
 ```java
 public static void RenderTableOnNewPage(){
@@ -64,6 +64,6 @@ public static void RenderTableOnNewPage(){
 
 {{% alert color="primary" %}}
 
-The com.aspose.pdf.[Table](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Table) class provides makes it possible to create/render tables in PDF documents. A similar feature is also supported by the aspose.pdf.[Table](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Table) class but we encourage our customers to try using the latest Document Object Model (DOM) of the com.aspose.pdf package, because all the new features and issue resolution is being performed in new DOM. However, the legacy Aspose.PDF for Java (the aspose.pdf package) has a method [isInNewPage(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#isInNewPage--) in the paragraph class, so that the paragraph is rendered on a new page. For backward compatibility, the [isInNewPage(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#isInNewPage--) method has been added to the [BaseParagraph](https://apireference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph) class.
+The com.aspose.pdf.[Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table) class provides makes it possible to create/render tables in PDF documents. A similar feature is also supported by the aspose.pdf.[Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table) class but we encourage our customers to try using the latest Document Object Model (DOM) of the com.aspose.pdf package, because all the new features and issue resolution is being performed in new DOM. However, the legacy Aspose.PDF for Java (the aspose.pdf package) has a method [isInNewPage(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#isInNewPage--) in the paragraph class, so that the paragraph is rendered on a new page. For backward compatibility, the [isInNewPage(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#isInNewPage--) method has been added to the [BaseParagraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph) class.
 
 {{% /alert %}}

@@ -13,7 +13,7 @@ sitemap:
 
 ## Search and Get Text from All the Pages of PDF Document
 
-[TextFragmentAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment_absorber/) class allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of [Pages](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) collection. The 'Accept' method takes TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects.
+[TextFragmentAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment_absorber/) class allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of [Pages](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) collection. The 'Accept' method takes TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects.
 
 The following code snippet shows you how to search for text from all the pages.
 
@@ -54,7 +54,7 @@ void SearchAndGetTextFromAllThePagesOfPDFDocument() {
 
 ## Search and Get Text from all pages using Regular Expression
 
-TextFragmentAbsorber helps you search and retrieve text, from all the pages, based on a regular expression. First, you need to pass a regular expression to [TextFragmentAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment_absorber/) constructor as the phrase. After that, you have to set the [TextSearchOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_search_options/) property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as a parameter to its constructor while creating new objects. As you want to retrieve matching text from all the pages, you need to call Accept method of Pages collection. [TextFragmentAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment_absorber/) returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression. The following code snippet shows you how to search and get text from all the pages based on a regular expression.
+TextFragmentAbsorber helps you search and retrieve text, from all the pages, based on a regular expression. First, you need to pass a regular expression to [TextFragmentAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment_absorber/) constructor as the phrase. After that, you have to set the [TextSearchOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_search_options/) property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as a parameter to its constructor while creating new objects. As you want to retrieve matching text from all the pages, you need to call Accept method of Pages collection. [TextFragmentAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment_absorber/) returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression. The following code snippet shows you how to search and get text from all the pages based on a regular expression.
 
 ```cpp
 void SearchAndGetTextFromPagesUsingRegularExpression()

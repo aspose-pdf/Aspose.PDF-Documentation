@@ -13,7 +13,7 @@ sitemap:
 
 **Aspose.PDF for Android via Java** makes a possible to convert PDF Pages to TIFF  images.
 
-The [TiffDevice class](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice) allows you to convert PDF pages to TIFF images. This class provides a method named Process which allows you to convert all the pages in a PDF file to a single TIFF image.
+The [TiffDevice class](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice) allows you to convert PDF pages to TIFF images. This class provides a method named Process which allows you to convert all the pages in a PDF file to a single TIFF image.
 
 {{% alert color="primary" %}}
 

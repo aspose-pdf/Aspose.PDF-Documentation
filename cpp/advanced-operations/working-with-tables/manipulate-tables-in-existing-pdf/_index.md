@@ -17,7 +17,7 @@ Aspose.PDF for C++ allows you to quickly and efficiently work with tables, namel
 
 You also get the ability to integrate the table with the database (DOM) to create dynamic tables based on the contents of the database.
 
-The [Aspose.PDF.Text.TableAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.absorbed_table) class allows you to search and parse simple tables that already exist on a PDF document page. The following code snippet shows the steps to update the content in a specific cell in a table.
+The [Aspose.PDF.Text.TableAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.absorbed_table) class allows you to search and parse simple tables that already exist on a PDF document page. The following code snippet shows the steps to update the content in a specific cell in a table.
 
 >Headers:
 
@@ -83,7 +83,7 @@ void ManipulateTables() {
 
 ## Replace old Table with a new one in PDF document
 
-In case you need to find a particular table and replace it with the desired one, you can use Replace() the method of [TableAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.absorbed_table) Class in order to do that.
+In case you need to find a particular table and replace it with the desired one, you can use Replace() the method of [TableAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.absorbed_table) Class in order to do that.
 
 The following example demonstrate the functionality to replace the table inside the PDF document:
 

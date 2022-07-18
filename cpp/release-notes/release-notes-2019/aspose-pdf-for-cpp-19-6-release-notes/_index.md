@@ -27,7 +27,7 @@ New version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 19.6.
 |PDFCPP-975|Fix TaggedPdfStructure|Bug|
 |PDFCPP-977|Excluding not implemented functionality|Bug|
 ### **API Reference changes in Aspose.PDF for C++ 19.6**
-Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
+Full API reference is available on [API Reference](https://reference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
 #### **Added APIs:**
 - Property Aspose.Pdf.Annotations.FreeTextAnnotation.Callout  
 - Method Aspose.Pdf.Document.ExportAnnotationsToXfdf(System.IO.Stream)  

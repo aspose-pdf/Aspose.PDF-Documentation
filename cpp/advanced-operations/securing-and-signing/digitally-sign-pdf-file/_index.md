@@ -17,7 +17,7 @@ You can sign the PDF document to confirm its content, or you can approve the doc
 
 Aspose.PDF for C++ supports the feature to digitally sign the PDF files using the SignatureField class. You can also certify a PDF file with a PKCS12-Certificate. Something similar to [Adding Signatures and Security in Adobe Acrobat](https://www.adobepress.com/articles/article.asp?p=1272495&seqNum=6). 
 
-Use the [PdfFileSignature](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_file_signature) class for signing your PDF.
+Use the [PdfFileSignature](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_file_signature) class for signing your PDF.
 
 ```cpp
 using namespace System;
@@ -52,7 +52,7 @@ Aspose.PDF for C++ supports to digitally sign the PDF with a timestamp server or
 
 Timestamps are used to indicate the date and time when you signed the document. Reliable timestamping proves that the content of your PDFs existed at a specific point in time and has not changed since then.
 
-Use the [TimestampSettings](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.timestamp_settings) class for adding trusted time stamp to digital signatures or documents.
+Use the [TimestampSettings](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.timestamp_settings) class for adding trusted time stamp to digital signatures or documents.
 
 Please take a look at the following code snippet which obtains timestamp and adds it to PDF document:
 

@@ -103,7 +103,7 @@ foreach (Field formField in pdfDocument.Form)
 
 ### Get Value from an Individual Field of PDF Document
 
-The form field’s Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This C# example selects a [TextBoxField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) and retrieves its value using the Value property.
+The form field’s Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This C# example selects a [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) and retrieves its value using the Value property.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -139,7 +139,7 @@ Console.WriteLine(act.Url.Name);
 
 Sometimes, you might know where in a document a form field is, but not have it’s name. For example, if all you have to go from is a schematic of a printed form. With Aspose.PDF for .NET, this is not a problem. You can find out which fields are in a given region of a PDF file. To get form fields from a specific region of a PDF file:
 
-1. Open the PDF file using the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
+1. Open the PDF file using the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object.
 1. Get the form from the document’s Forms collection.
 1. Specify the rectangular region and pass it to the Form object’s GetFieldsInRect method. A Fields collection is returned.
 1. Use this to manipulate the fields.

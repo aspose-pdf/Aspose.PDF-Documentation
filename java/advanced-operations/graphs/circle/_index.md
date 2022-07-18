@@ -13,17 +13,17 @@ sitemap:
 
 ## Add Circle object
 
-Like bar graphs, circle graphs can be used to display data in a number of separate categories. Unlike bar graphs, however, circle graphs can be used only when you have data for all the categories that make up the whole. So let's take a look at adding a [Circle](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Circle) object with Aspose.PDF for Java.
+Like bar graphs, circle graphs can be used to display data in a number of separate categories. Unlike bar graphs, however, circle graphs can be used only when you have data for all the categories that make up the whole. So let's take a look at adding a [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Circle) object with Aspose.PDF for Java.
 
 Follow the steps below:
 
-1. Create [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) instance
+1. Create [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) instance
 
-1. Create [Drawing object](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame) with certain dimensions
+1. Create [Drawing object](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame) with certain dimensions
 
-1. Set [Border](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph#setBorder-com.aspose.pdf.BorderInfo-) for Drawing object
+1. Set [Border](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph#setBorder-com.aspose.pdf.BorderInfo-) for Drawing object
 
-1. Add [Graph](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) object to paragraphs collection of page
+1. Add [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) object to paragraphs collection of page
 
 1. Save our PDF file
 

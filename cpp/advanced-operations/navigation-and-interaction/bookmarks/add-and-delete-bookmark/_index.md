@@ -13,13 +13,13 @@ sitemap:
 
 ## Add a Bookmark to a PDF Document
 
-Bookmarks are held in the Document object’s [OutlineItemCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_item_collection/) collection, itself in the [OutlineCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection.
+Bookmarks are held in the Document object’s [OutlineItemCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_item_collection/) collection, itself in the [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection.
 
 To add a bookmark to a PDF:
 
-1. Open a PDF document using [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object.
+1. Open a PDF document using [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object.
 1. Create a bookmark and define its properties.
-1. Add the [OutlineItemCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection to the Outlines collection.
+1. Add the [OutlineItemCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection to the Outlines collection.
 
 The following code snippet shows you how to add a bookmark in a PDF document.
 
@@ -53,8 +53,8 @@ Bookmarks can be nested, indicating a hierarchical relationship with parent and 
 To add a child bookmark to a PDF file, first add a parent bookmark:
 
 1. Open a document.
-1. Add a bookmark to the [OutlineItemCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_item_collection/), defining its properties.
-1. Add the OutlineItemCollection to the Document object’s [OutlineCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection.
+1. Add a bookmark to the [OutlineItemCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_item_collection/), defining its properties.
+1. Add the OutlineItemCollection to the Document object’s [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection.
 
 The child bookmark is created just like the parent bookmark, explained above, but is added to the parent bookmark’s Outlines collection
 
@@ -91,12 +91,12 @@ void AddChildBookmark() {
 
 ## Delete all Bookmarks from a PDF Document
 
-All bookmarks in a PDF are held in the [OutlineCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection. This article explains how to delete all bookmarks from a PDF file.
+All bookmarks in a PDF are held in the [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection. This article explains how to delete all bookmarks from a PDF file.
 
 To delete all bookmarks from a PDF file:
 
-1. Call the [OutlineCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection’s Delete method.
-1. Save the modified file using the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object’s Save method.
+1. Call the [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection’s Delete method.
+1. Save the modified file using the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object’s Save method.
 
 The following code snippets show how to delete all bookmarks from a PDF document.
 
@@ -121,10 +121,10 @@ void DeleteAllBookmarksFromPDFDocument() {
 
 To delete a particular bookmark from a PDF file:
 
-1. Pass the bookmark’s title as parameter to the [OutlineCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection’s Delete method.
+1. Pass the bookmark’s title as parameter to the [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection’s Delete method.
 1. Then save the updated file with the Document object Save method.
 
-The [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) class’ provides the [OutlineCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection. The [Delete](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection#a04f36a1f4f7c4fde3189399eb046a98b) method removes any bookmark with the title passed to the method.
+The [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) class’ provides the [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection/) collection. The [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection#a04f36a1f4f7c4fde3189399eb046a98b) method removes any bookmark with the title passed to the method.
 
 The following code snippets show how to delete a particular bookmark from the PDF document.
 

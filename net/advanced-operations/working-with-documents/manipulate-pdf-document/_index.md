@@ -81,7 +81,7 @@ sitemap:
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)
 
-To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class Validate method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://apireference.aspose.com/pdf/net/aspose.pdf/pdfformat) enumeration : PDF_A_1A or PDF_A_1B.
+To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class Validate method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat) enumeration : PDF_A_1A or PDF_A_1B.
 
 {{% alert color="primary" %}}
 
@@ -250,7 +250,7 @@ doc.Save(outFile);
 
 ### Hide Page Numbers in TOC
 
-In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://apireference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) property of [TOCInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
+In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) property of [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -365,7 +365,7 @@ doc.Save(dataDir);
 
 A customer asked us to add a feature that allows developers to determine the progress of PDF file generation. Here’s the response to that request.
 
-The field [CustomerProgressHandler](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) of [DocSaveOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class allows you to determine how PDF generation is going. The handler has the following types:
+The field [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) of [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class allows you to determine how PDF generation is going. The handler has the following types:
 
 - DocSaveOptions.ConversionProgessEventHandler
 - DocSaveOptions.ProgressEventHandlerInfo

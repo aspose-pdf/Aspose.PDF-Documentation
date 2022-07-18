@@ -9,7 +9,7 @@ lastmod: "2021-06-05"
 
 ## Import Data from XML into a PDF File (facades)
 
-[Form](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class allows you to import data from an XML file to the PDF file using importXml method. In order to import data from XML, you need to create an object of Form class and then call the importXml method using the FileInputStream object. Finally, you can save the PDF file using save method of the Form class.
+[Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class allows you to import data from an XML file to the PDF file using importXml method. In order to import data from XML, you need to create an object of Form class and then call the importXml method using the FileInputStream object. Finally, you can save the PDF file using save method of the Form class.
 
 {{< gist "aspose-pdf" "474c352a71ac9477aa0d604fd32e1c6a" "ImportDataFromXmlInToPdf.java" >}}
 

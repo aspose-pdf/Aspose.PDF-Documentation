@@ -16,9 +16,9 @@ sitemap:
 Extracting text from a PDF document is a common requirement. In this example, you'll see how Aspose.PDF for Java allows extracting text from all the pages of a PDF document.
 To extract text from all the PDF pages:
 
-1. Create an object of the [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class.
-1. Open the PDF using [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class and call the [Accept](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) method of the [Pages](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) collection.
-1. The [TextAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class absorbs the text from the document and returns in **Text** property.
+1. Create an object of the [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class.
+1. Open the PDF using [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class and call the [Accept](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) method of the [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) collection.
+1. The [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class absorbs the text from the document and returns in **Text** property.
 
 The following code snippet shows you how to extract text from all pages of PDF document.
 

@@ -19,7 +19,7 @@ There are several classes in the library that allow you to use a virtual device 
 
 **Aspose.PDF for C++** makes a possible to convert PDF Pages to TIFF images.
 
-The [TiffDevice](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_device/) (based on DocumentDevice) class allows you to convert PDF pages to TIFF images. This class provides a method named [Process](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_device#a0790daa96125c5638a645647e9678f0c) which allows you to convert all the pages in a PDF file to a single TIFF image.
+The [TiffDevice](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_device/) (based on DocumentDevice) class allows you to convert PDF pages to TIFF images. This class provides a method named [Process](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_device#a0790daa96125c5638a645647e9678f0c) which allows you to convert all the pages in a PDF file to a single TIFF image.
 
 {{% alert color="success" %}}
 **Try to convert PDF to TIFF online**
@@ -33,10 +33,10 @@ Aspose.PDF for C++ presents you online free application ["PDF to TIFF"](https://
 
 Aspose.PDF for С++ explain how to convert all pages in a PDF file to a single TIFF image:
 
-1. Open [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) with MakeObject.
+1. Open [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) with MakeObject.
 1. Create Resolution object.
-1. Create [TIffSettings](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_settings/) object.
-1. Create [Tiff device](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_device/) with specified attributes.
+1. Create [TIffSettings](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_settings/) object.
+1. Create [Tiff device](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_device/) with specified attributes.
 1. Convert a particular page and save the image to stream.
 
 The following code snippet shows how to convert all the PDF pages to a single TIFF image.
@@ -152,15 +152,15 @@ void Convert_PDF_To_Images::ConvertPDFtoTiffBradleyBinarization()
 
 `ImageDevice` is the ancestor for `BmpDevice`, `JpegDevice`, `GifDevice`, `PngDevice` and `EmfDevice`.
 
-- The [BmpDevice](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.bmp_device/) class allows you to convert PDF pages to <abbr title="Bitmap Image File">BMP</abbr> images.
-- The [EmfDevice](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.emf_device/) class allows you to convert PDF pages to <abbr title="Enhanced Meta File">EMF</abbr> images.
-- The [JpegDevice](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.jpeg_device/) class allows you to convert PDF pages to JPEG images.
-- The [PngDevice](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.png_device/) class allows you to convert PDF pages to <abbr title="Portable Network Graphics">PNG</abbr> images.
-- The [GifDevice](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.gif_device/) class allows you to convert PDF pages to <abbr title="Graphics Interchange Format">GIF</abbr> images.
+- The [BmpDevice](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.bmp_device/) class allows you to convert PDF pages to <abbr title="Bitmap Image File">BMP</abbr> images.
+- The [EmfDevice](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.emf_device/) class allows you to convert PDF pages to <abbr title="Enhanced Meta File">EMF</abbr> images.
+- The [JpegDevice](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.jpeg_device/) class allows you to convert PDF pages to JPEG images.
+- The [PngDevice](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.png_device/) class allows you to convert PDF pages to <abbr title="Portable Network Graphics">PNG</abbr> images.
+- The [GifDevice](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.gif_device/) class allows you to convert PDF pages to <abbr title="Graphics Interchange Format">GIF</abbr> images.
 
 Let's take a look at how to convert a PDF page to an image.
 
-[BmpDevice](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.bmp_device) class provides a method named [Process](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.bmp_device#a22cefdb47b7c762320fa7973aa4f1f93) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
+[BmpDevice](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.bmp_device) class provides a method named [Process](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.bmp_device#a22cefdb47b7c762320fa7973aa4f1f93) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
 
 The following code snippet shows this possibility:
 
@@ -246,7 +246,7 @@ Aspose.PDF for C++ presents you online free application ["PDF to SVG"](https://p
 [![Aspose.PDF Convertion PDF to SVG with Free App](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 {{% /alert %}}
 
-In order to convert PDF to SVG, Aspose.PDF for CPP offers [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class. You need to pass the output path and enum SaveFormat:: svg to the Save method to convert PDF to SVG. The following code snippet shows how to convert PDF to SVG:
+In order to convert PDF to SVG, Aspose.PDF for CPP offers [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class. You need to pass the output path and enum SaveFormat:: svg to the Save method to convert PDF to SVG. The following code snippet shows how to convert PDF to SVG:
 
 This article teacher you how to convert PDF to <abbr title="Scalable Vector Graphics">SVG</abbr> using C++.
 
@@ -254,7 +254,7 @@ This article teacher you how to convert PDF to <abbr title="Scalable Vector Grap
 
 SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted and if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
 
-Aspose.PDF for C++ supports the feature to convert SVG image to PDF format and also offers the capability to convert PDF files to SVG format. To accomplish this requirement, the `SvgSaveOptions` class has been introduced into the Aspose.PDF namespace. Instantiate an object of SvgSaveOptions and pass it as a second argument to the [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method .
+Aspose.PDF for C++ supports the feature to convert SVG image to PDF format and also offers the capability to convert PDF files to SVG format. To accomplish this requirement, the `SvgSaveOptions` class has been introduced into the Aspose.PDF namespace. Instantiate an object of SvgSaveOptions and pass it as a second argument to the [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method .
 
 The following code snippet shows the steps for converting a PDF file to SVG format with C++.
 

@@ -10,7 +10,7 @@ draft: false
 
 ## Make NUp of PDF Using File Paths
 
-[MakeNUp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF file and save it to the output PDF file. This overload allows you to make NUp using file paths.The following code snippet shows you how to make NUP using file paths.
+[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF file and save it to the output PDF file. This overload allows you to make NUp using file paths.The following code snippet shows you how to make NUP using file paths.
 
 
 
@@ -18,7 +18,7 @@ draft: false
 
 ## Make NUp Using Page Size and File Paths
 
-[MakeNUp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF file and save it to the output PDF file. This overload allows you to make NUp using file paths. You can also set the page size of the output PDF file using this overload.The following code snippet shows you how to make NUp using page size and file paths.
+[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF file and save it to the output PDF file. This overload allows you to make NUp using file paths. You can also set the page size of the output PDF file using this overload.The following code snippet shows you how to make NUp using page size and file paths.
 
 
 
@@ -26,7 +26,7 @@ draft: false
 
 ## Make NUp of PDF Using Page Size, Horizontal and Vertical Values, and File Paths
 
-[MakeNUp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF file and save it to the output PDF file. This overload allows you to make NUp using file paths. You can also set the page size of the output PDF file and horizontal and vertical number of pages on each output page using this overload. The following code snippet shows you how to make NUp using page size, horizontal and vertical values, and file paths.
+[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF file and save it to the output PDF file. This overload allows you to make NUp using file paths. You can also set the page size of the output PDF file and horizontal and vertical number of pages on each output page using this overload. The following code snippet shows you how to make NUp using page size, horizontal and vertical values, and file paths.
 
 
 
@@ -34,7 +34,7 @@ draft: false
 
 ## Make NUp of PDF Using Array Of PDF Files and File Paths
 
-[MakeNUp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of an array of input PDF files and save them to a single output PDF file. This overload allows you to make NUp using file paths.The following code snippet shows you hot make NUp using array of PDF files and file paths.
+[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of an array of input PDF files and save them to a single output PDF file. This overload allows you to make NUp using file paths.The following code snippet shows you hot make NUp using array of PDF files and file paths.
 
 
 
@@ -42,7 +42,7 @@ draft: false
 
 ## Make NUp of PDF Using Streams
 
-[MakeNUp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF stream and save it to the output PDF stream. This overload allows you to make NUp using streams instead of file paths. The following code snippet shows you how to make NUp using streams.
+[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF stream and save it to the output PDF stream. This overload allows you to make NUp using streams instead of file paths. The following code snippet shows you how to make NUp using streams.
 
 
 
@@ -50,7 +50,7 @@ draft: false
 
 ## Make NUp of PDF Using Page Size and Streams
 
-[MakeNUp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF stream and save it to the output PDF stream. This overload allows you to make NUp using streams instead of file paths. You can also set the page size of the output PDF stream using this overload. The following code snippet shows you how to make NUp using page size and streams.
+[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF stream and save it to the output PDF stream. This overload allows you to make NUp using streams instead of file paths. You can also set the page size of the output PDF stream using this overload. The following code snippet shows you how to make NUp using page size and streams.
 
 
 
@@ -58,7 +58,7 @@ draft: false
 
 ## Make NUp of PDF Using Page Size, Horizontal and Vertical Values, and Streams
 
-[MakeNUp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF stream and save it to the output PDF stream. This overload allows you to make NUp using streams instead of file paths. You can also set the page size of the output PDF stream and horizontal and vertical number of pages on each output page using this overload. The following code snippet shows you how to make NUp using page size, horizontal and vertical values, and streams.
+[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF stream and save it to the output PDF stream. This overload allows you to make NUp using streams instead of file paths. You can also set the page size of the output PDF stream and horizontal and vertical number of pages on each output page using this overload. The following code snippet shows you how to make NUp using page size, horizontal and vertical values, and streams.
 
 
 
@@ -66,7 +66,7 @@ draft: false
 
 ## Make NUp of PDF Using Array Of PDF Files and Streams
 
-[MakeNUp](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of an array of input PDF streams and save them to a single output PDF stream. This overload allows you to make NUp using streams instead of file paths. The following code snippet shows you how to make NUp using array of PDF files using streams.
+[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of an array of input PDF streams and save them to a single output PDF stream. This overload allows you to make NUp using streams instead of file paths. The following code snippet shows you how to make NUp using array of PDF files using streams.
 
 
 

@@ -15,8 +15,8 @@ Aspose.PDF can remove attachments from PDF files. A PDF document’s attachments
 
 To delete all attachments associated with a PDF file:
 
-1. Call the [EmbeddedFiles](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection’s [Delete](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection#afff8b235b554a66c203464b61204b843) method.
-1. Save the updated file using the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s Save method.
+1. Call the [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection’s [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection#afff8b235b554a66c203464b61204b843) method.
+1. Save the updated file using the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s Save method.
 
 The following code snippet shows how to remove attachments from a PDF document.
 

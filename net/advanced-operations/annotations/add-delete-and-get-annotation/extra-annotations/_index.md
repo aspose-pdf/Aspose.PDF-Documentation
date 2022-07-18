@@ -82,10 +82,10 @@ Caret Annotation is a symbol that indicates text editing. Caret Annotation is al
 
 Steps with which we create Caret annotation:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
-1. Create new [Caret Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) and set Caret parameters (new Rectangle, title, Subject, Flags, color, width, StartingStyle and EndingStyle). This annotation is used to indicate the insertion of text.
-1. Create new [Caret Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) and set Caret parameters (new Rectangle, title, Subject, Flags, color, width, StartingStyle and EndingStyle). This annotation is used to indicate the replacement of text.
-1. Create new [StrikeOutAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) and set parameters (new Rectangle, title, color, new QuadPoints and new points, Subject, InReplyTo,ReplyType).
+1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Create new [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) and set Caret parameters (new Rectangle, title, Subject, Flags, color, width, StartingStyle and EndingStyle). This annotation is used to indicate the insertion of text.
+1. Create new [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) and set Caret parameters (new Rectangle, title, Subject, Flags, color, width, StartingStyle and EndingStyle). This annotation is used to indicate the replacement of text.
+1. Create new [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) and set parameters (new Rectangle, title, color, new QuadPoints and new points, Subject, InReplyTo,ReplyType).
 1. After we can Add annotations to the page.
 
 The following code snippet shows how to add Caret Annotation to a PDF file:
@@ -190,7 +190,7 @@ public static void DeleteCaretAnnotation()
 
 ## Add Link Annotation
 
-A [Link Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) is a hypertext link that leads to a destination elsewhere in the document or to an action to be performed.
+A [Link Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) is a hypertext link that leads to a destination elsewhere in the document or to an action to be performed.
 
 A Link is a rectangular area that can be placed anywhere on the page. Each link has a corresponding PDF action associated with it. This action is performed when the user clicks in the area of this link.
 
@@ -329,7 +329,7 @@ doc.Save(dataDir);
 
 ### Facades approach
 
-Aspose.PDF.Facades namespace also has a class named [PdfAnnotationEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) which provides the feature to manipulate existing Annotations inside PDF file. This class contains a method named [RedactArea(..)](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) which provides the capability to remove certain page regions.
+Aspose.PDF.Facades namespace also has a class named [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) which provides the feature to manipulate existing Annotations inside PDF file. This class contains a method named [RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) which provides the capability to remove certain page regions.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

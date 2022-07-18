@@ -17,8 +17,8 @@ You can use the ImageStamp class to add an image stamp to a PDF file. The ImageS
 
 To add an image stamp:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and an ImageStamp object using required properties.
-1. Call the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) class [AddStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#a3b998038dedf5266b4d60586b1b53d02) method to add the stamp to the PDF.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and an ImageStamp object using required properties.
+1. Call the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) class [AddStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#a3b998038dedf5266b4d60586b1b53d02) method to add the stamp to the PDF.
 
 The following code snippet shows how to add image stamp in the PDF file.
 
@@ -59,7 +59,7 @@ void AddImageStampToPDFFile()
 
 ## Control Image Quality when Adding Stamp
 
-When adding an image as a stamp object, you can control the quality of the image. The Quality property of the [ImageStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image_stamp) class is used for this purpose. It indicates the quality of image in percents (valid values are 0..100).
+When adding an image as a stamp object, you can control the quality of the image. The Quality property of the [ImageStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image_stamp) class is used for this purpose. It indicates the quality of image in percents (valid values are 0..100).
 
 ```cpp
 void ControlImageQualityWhenAddingStamp() {

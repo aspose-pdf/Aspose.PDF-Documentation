@@ -16,13 +16,13 @@ sitemap:
 All the documents must have page numbers in it. The page number makes it easier for the reader to locate different parts of the document.
 **Aspose.PDF for C++** allows you to add page numbers with PageNumberStamp.
 
-The following steps and sample code illustrate how to add page numbering labels to an existing PDF document using the [PageNumberStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_number_stamp) page element to automatically add page numbers to a PDF.
+The following steps and sample code illustrate how to add page numbering labels to an existing PDF document using the [PageNumberStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_number_stamp) page element to automatically add page numbers to a PDF.
 
 Steps for Adding Page Numbers to an Existing PDF Document:
 
-In order to add page number stamp, you need to create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and a [PageNumberStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_number_stamp) object using required properties.
+In order to add page number stamp, you need to create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and a [PageNumberStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_number_stamp) object using required properties.
 
-After that, you can call [AddStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#a3b998038dedf5266b4d60586b1b53d02) method of the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to add the stamp in the PDF.
+After that, you can call [AddStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#a3b998038dedf5266b4d60586b1b53d02) method of the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) to add the stamp in the PDF.
 
 You can also set the font attributes of the page number stamp.
 

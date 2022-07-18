@@ -20,10 +20,10 @@ EPUB also supports fixed-layout content. The format is intended as a single form
 
 Conversion steps:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
-1. Create an instance of [EpubLoadOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.load_options)class.
-1. Create an instance of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class with mention source filename and options.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Create an instance of [EpubLoadOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.load_options)class.
+1. Create an instance of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class with mention source filename and options.
+1. Load and [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
 
 Next following code snippet show you how to convert EPUB files to PDF format with C++.
 
@@ -64,13 +64,13 @@ Converting text to PDF means adding text fragments to the PDF page. As for text 
 
 In case of the plain text file, we can use the following technique:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
-1. Read the source text file using [TextReader](https://apireference.aspose.com/pdf/cpp/class/system.i_o.text_reader/.)
-1. Instantiate [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) Object.
-1. Add a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to pages collection of document.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Read the source text file using [TextReader](https://reference.aspose.com/pdf/cpp/class/system.i_o.text_reader/.)
+1. Instantiate [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) Object.
+1. Add a [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) to pages collection of document.
 1. Create a new object of TextFragment and pass TextReader object to its constructor.
 1. Add a new text paragraph in paragraphs collection and pass the TextFragment object.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
+1. Load and [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
 
 ```cpp
 void ConvertTextToPDF()
@@ -110,8 +110,8 @@ Follow these steps to convert pre-formatted text to PDF with C++:
 
 1. Instantiate a Document object by calling its empty constructor.
 1. Set left and right margins for better presentation.
-1. Instantiate [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and add a new page in Pages collection.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
+1. Instantiate [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and add a new page in Pages collection.
+1. Load and [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
 
 ```CPP
 void ConvertPreFormattedTextToPdf()
@@ -187,7 +187,7 @@ The file format is basically a zipped XML file which is primarily used for distr
 
 {{% /alert %}}
 
-In order to convert XPS to PDF with Aspose.PDF for C++, we have introduced a class named [XpsLoadOption](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.load_options) which is used to initialize a [LoadOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.load_options) object. Later, this object is passed as an argument during the Document object initialization and it helps the PDF rendering engine to determine the source document's input format.
+In order to convert XPS to PDF with Aspose.PDF for C++, we have introduced a class named [XpsLoadOption](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.load_options) which is used to initialize a [LoadOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.load_options) object. Later, this object is passed as an argument during the Document object initialization and it helps the PDF rendering engine to determine the source document's input format.
 
 The following code snippet shows the process of converting XPS file into PDF format with C++.
 
@@ -224,11 +224,11 @@ The XML format used to store structured data. There are several ways to convert 
 
 ## Convert XSL-FO to PDF
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
-1. Instantiate [XslFoLoadOption object](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.load_options).
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Instantiate [XslFoLoadOption object](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.load_options).
 1. Set error handling strategy.
-1. Instantiate [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) Object.
-1. [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
+1. Instantiate [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) Object.
+1. [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
 
 ```cpp
 void Convert_XSLFO_to_PDF()

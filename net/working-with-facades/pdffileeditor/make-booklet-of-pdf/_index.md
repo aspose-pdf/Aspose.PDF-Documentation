@@ -10,7 +10,7 @@ draft: false
 
 ## Make Booklet of PDF Using File Paths
 
-[MakeBooklet](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. The following code snippet shows you how to make booklet using file paths.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. The following code snippet shows you how to make booklet using file paths.
 
 
 
@@ -18,7 +18,7 @@ draft: false
 
 ## Make Booklet of PDF Using Page Size and File Paths
 
-[MakeBooklet](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also set the page size of the output PDF file with this overlaod. The following code snippet shows you how to make booklet using page size and file paths.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also set the page size of the output PDF file with this overlaod. The following code snippet shows you how to make booklet using page size and file paths.
 
 
 
@@ -26,7 +26,7 @@ draft: false
 
 ## Make Booklet of PDF Using Page Size, Specified Left and Right Pages, and File Paths
 
-[MakeBooklet](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also set the page size of the output PDF file and specify particular pages for the left and right sides of the output PDF file with this overlaod. The following code snippet shows you how to make booklet using page size, specified left and right pages and file paths.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also set the page size of the output PDF file and specify particular pages for the left and right sides of the output PDF file with this overlaod. The following code snippet shows you how to make booklet using page size, specified left and right pages and file paths.
 
 
 
@@ -34,7 +34,7 @@ draft: false
 
 ## Make Booklet of PDF Using Specified Left and Right Pages, and File Paths
 
-[MakeBooklet](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also specify particular pages for the left and right sides of the output PDF file with this overlaod.color:#000000}The following code snippet shows you how to make booklet using specified left and right pages and file paths.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also specify particular pages for the left and right sides of the output PDF file with this overlaod.color:#000000}The following code snippet shows you how to make booklet using specified left and right pages and file paths.
 
 
 
@@ -42,7 +42,7 @@ draft: false
 
 ## Make Booklet of PDF Using Streams
 
-[MakeBooklet](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF streams. This overload allows you to make booklet using streams instead of file paths. The following code snippet shows you how to make booklet using streams.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF streams. This overload allows you to make booklet using streams instead of file paths. The following code snippet shows you how to make booklet using streams.
 
 
 
@@ -50,7 +50,7 @@ draft: false
 
 ## Make Booklet of PDF Using Page Size and Streams
 
-[MakeBooklet](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF stream. This overload allows you to make booklet using streams instead of file paths. You can also set the page size of the output PDF stream with this overload. The following code snippet shows you how to make booklet using page size and streams.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF stream. This overload allows you to make booklet using streams instead of file paths. You can also set the page size of the output PDF stream with this overload. The following code snippet shows you how to make booklet using page size and streams.
 
 
 
@@ -58,7 +58,7 @@ draft: false
 
 ## Make Booklet of PDF Using Page Size, Sepcified Left and Right Pages, and Streams
 
-[MakeBooklet](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF stream. This overload allows you to make booklet using streams instead of file paths. You can also set the page size of the output PDF file and specify particular pages for the left and right sides of the output PDF stream with this overload. The following code snippet shows you how to make booklet using page size, specified left and right pages, and streams.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF stream. This overload allows you to make booklet using streams instead of file paths. You can also set the page size of the output PDF file and specify particular pages for the left and right sides of the output PDF stream with this overload. The following code snippet shows you how to make booklet using page size, specified left and right pages, and streams.
 
 
 
@@ -66,7 +66,7 @@ draft: false
 
 ## Make Booklet of PDF Using Specified Left and Right Pages, and Streams
 
-[MakeBooklet](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF stream. This overload allows you to make booklet using streams instead of file paths. You can also specify particular pages for the left and right sides of the output PDF stream with this overlaod. The following code snippet shows you how to make booklet using specified left and right pages and streams.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF stream. This overload allows you to make booklet using streams instead of file paths. You can also specify particular pages for the left and right sides of the output PDF stream with this overlaod. The following code snippet shows you how to make booklet using specified left and right pages and streams.
 
 
 

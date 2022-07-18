@@ -82,11 +82,11 @@ Attachments can contain a wide variety of information and can be of a variety of
 
 1. Create a new C# project.
 1. Add a reference to Aspose.PDF DLL.
-1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
-1. Create a [FileSpecification](https://apireference.aspose.com/pdf/net/aspose.pdf/filespecification) object with the file you are adding, and file description.
-1. Add the [FileSpecification](https://apireference.aspose.com/pdf/net/aspose.pdf/filespecification) object to the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s [EmbeddedFiles](https://apireference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) collection, with the collection’s Add method.
+1. Create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object.
+1. Create a [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) object with the file you are adding, and file description.
+1. Add the [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) object to the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object’s [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) collection, with the collection’s Add method.
 
-The [EmbeddedFiles](https://apireference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
+The [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

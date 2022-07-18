@@ -12,7 +12,7 @@ The ImagePlacementAbsorber allows you to search among images on all pages in a P
 
 To search a whole document for images:
 
-1. Call the [Pages](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection’s [Accept](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#ae71a2782e747936e3c14b7ded5c6dc3f) method. The Accept method takes an [ImagePlacementAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement_absorber/) object as a parameter. This returns a collection of ImagePlacement objects.
+1. Call the [Pages](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection’s [Accept](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#ae71a2782e747936e3c14b7ded5c6dc3f) method. The Accept method takes an [ImagePlacementAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement_absorber/) object as a parameter. This returns a collection of ImagePlacement objects.
 1. Loop through the ImagePlacements objects and get their properties (Image, dimensions, resolution and so on).
 
 The following code snippet shows how to search a document for all its images.

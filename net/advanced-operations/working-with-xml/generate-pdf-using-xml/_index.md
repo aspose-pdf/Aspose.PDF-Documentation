@@ -457,7 +457,7 @@ Let's create yet another file - the XSL-FO markup file to transform employees' d
 </xsl:stylesheet>
 ```
 
-Aspose.PDF has a special [XslFoLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) class that allows to apply XSL-FO tranformation.
+Aspose.PDF has a special [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) class that allows to apply XSL-FO tranformation.
 The following snippet shows how to use this class with the sample files described above.
 
 ```csharp
@@ -567,7 +567,7 @@ but in XSL-FO markup file we will add parameter: `<xsl:param name="isBoldName"><
 ```
 
 To add XSL params we need to create own [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) and
-set as property in [XslFoLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
+set as property in [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
 The following snippet shows how to use this class with the sample files described above.
 
 ```csharp
@@ -646,7 +646,7 @@ Let's define the page with default parameters. Our page will have an A4 page siz
 </Document>
 ```
 
-To generate PDF document we will use [BindXml](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index) method.
+To generate PDF document we will use [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index) method.
 
 ```csharp
 private static void Example_XML_to_PDF()

@@ -13,7 +13,7 @@ sitemap:
 
 ## Creating Structure Elements
 
-In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to create structure elements of Tagged PDF:
+In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to create structure elements of Tagged PDF:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -75,7 +75,7 @@ document.save(path + "StructureElements.pdf");
 
 ## Creating Structure Elements Tree
 
-In order to create structure elements tree in a Tagged PDF Document, Aspose.PDF offers methods to create a structure element tree using [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to create structure elements tree of Tagged PDF Document:
+In order to create structure elements tree in a Tagged PDF Document, Aspose.PDF offers methods to create a structure element tree using [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to create structure elements tree of Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -137,7 +137,7 @@ document.save(path + "StructureElementsTree.pdf");
 
 ## Styling Text Structure
 
-In order to style text structure in a Tagged PDF Document, Aspose.PDF offers **setFont()**, **setFontSize()**, **setFontStyle()** and **setForegroundColor()** properties of [StructureTextState](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/StructureTextState) Class. Following code snippet shows how to style text structure in a Tagged PDF Document:
+In order to style text structure in a Tagged PDF Document, Aspose.PDF offers **setFont()**, **setFontSize()**, **setFontStyle()** and **setForegroundColor()** properties of [StructureTextState](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/StructureTextState) Class. Following code snippet shows how to style text structure in a Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -169,7 +169,7 @@ document.save(path + "StyleTextStructure.pdf");
 
 ## Illustrating Structure Elements
 
-In order to illustrate structure elements in a Tagged PDF Document, Aspose.PDF offers [IllustrationElement](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/IllustrationElement) Class. Following code snippet shows how to illustrate structure elements in a Tagged PDF Document:
+In order to illustrate structure elements in a Tagged PDF Document, Aspose.PDF offers [IllustrationElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/IllustrationElement) Class. Following code snippet shows how to illustrate structure elements in a Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -199,7 +199,7 @@ document.save(path + "IllustrationStructureElements.pdf");
 
 ## **Create PDF with Tagged Image**
 
-In order to create PDF with Tagged Image, Aspose.PDF offers [createFigureElement()](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createFigureElement--) method of [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. The following code snippet shows the functionality.
+In order to create PDF with Tagged Image, Aspose.PDF offers [createFigureElement()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createFigureElement--) method of [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. The following code snippet shows the functionality.
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -222,7 +222,7 @@ document.save("PDFwithTaggedImage.pdf");
 
 ## Create PDF with Tagged Text
 
-In order to create PDF with Tagged Text, Aspose.PDF offers [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. The following code snippet shows the functionality.
+In order to create PDF with Tagged Text, Aspose.PDF offers [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. The following code snippet shows the functionality.
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java

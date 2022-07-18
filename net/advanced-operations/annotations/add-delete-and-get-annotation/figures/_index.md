@@ -83,10 +83,10 @@ Square annotations are like Circle annotations (instances of the Aspose.Pdf.Anno
 
 Steps for creating Square and Circle Annotations:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
-1. Create new [Circle Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) and set Circle parameters (new Rectangle, title, color, InteriorColor, Opacity).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
-1. Next we need to create [Square Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation).
+1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Create new [Circle Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) and set Circle parameters (new Rectangle, title, color, InteriorColor, Opacity).
+1. Create a new [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
+1. Next we need to create [Square Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation).
 1. Set the same Square parameters (new Rectangle, title, color, InteriorColor, Opacity).
 1. After we need to Add Square and Circle Annotations to the page.
 
@@ -196,10 +196,10 @@ The Polyline tool allows you to create shapes and outlines with an arbitrary num
 
 Steps with which we create Polygon and Polyline annotations:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
-1. Create new [Polygon Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/polygonannotation) and set Polygon parameters (new Rectangle, new Points, title, color, InteriorColor and Opacity).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
-1. Next, Create a [PolyLine Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/polylineannotation) and repeat all actions.
+1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Create new [Polygon Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/polygonannotation) and set Polygon parameters (new Rectangle, new Points, title, color, InteriorColor and Opacity).
+1. Create a new [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
+1. Next, Create a [PolyLine Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/polylineannotation) and repeat all actions.
 1. After we can Add annotations to the page.
 
 The following code snippet shows how to add Polygon and Polyline Annotations to a PDF file:
@@ -321,9 +321,9 @@ Also, this kind of annotation allows you to define Line ending styles.
 
 Steps with which we create an Line annotation:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
-1. Create new [Line Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/lineannotation/methods/index) and set Line parameters (new Rectangle, new Point, title, color, width, StartingStyle and EndingStyle).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
+1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Create new [Line Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/lineannotation/methods/index) and set Line parameters (new Rectangle, new Point, title, color, width, StartingStyle and EndingStyle).
+1. Create a new [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
 1. After we can Add annotation to the page
 
 The following code snippet shows how to add Line Annotation to a PDF file:
@@ -418,7 +418,7 @@ The following code snippet shows how Delete Line Annotation from a PDF file.
 
 An Ink Annotation represents a freehand "scribble" composed of one or more disjoint paths. When opened, it shall display a pop-up window containing the text of the associated note.
 
-The [InkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) represents freehand scribble composed of one or more disjoint points. Please try using the following code snippet to add InkAnnotation in PDF document.
+The [InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) represents freehand scribble composed of one or more disjoint points. Please try using the following code snippet to add InkAnnotation in PDF document.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -455,7 +455,7 @@ doc.Save(dataDir);
 
 ### Set Line width of InkAnnotation
 
-The width of [InkAnnottion](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) can be changed using LineInfo and Border objects.
+The width of [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) can be changed using LineInfo and Border objects.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

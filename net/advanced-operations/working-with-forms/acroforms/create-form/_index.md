@@ -80,16 +80,16 @@ sitemap:
 
 ### Add Form Field in a PDF Document
 
-The [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class provides a collection named [Form](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/form) which helps you manage form fields in a PDF document.
+The [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class provides a collection named [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) which helps you manage form fields in a PDF document.
 
 To add a form field:
 
 1. Create the form field you want to add.
-1. Call the [Form](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/form) collection’s Add method.
+1. Call the [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) collection’s Add method.
 
 ### Adding TextBoxField
 
-Below example shows how to add a [TextBoxField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
+Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -122,7 +122,7 @@ pdfDocument.Save(dataDir);
 
 ### Adding RadioButtonField
 
-The following code snippets show how to add [RadioButtonField](https://apireference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) in a PDF document.
+The following code snippets show how to add [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) in a PDF document.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

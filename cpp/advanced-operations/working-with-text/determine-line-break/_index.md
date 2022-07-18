@@ -13,7 +13,7 @@ sitemap:
 
 ## Track Line Breaking of Multi-Line TextFragment
 
-Aspose.PDF for C++ offers logging (tracking) background processing (line breaking) of multi-line text fragments in text adding scenarios. You can use the [GetNotifications](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#a6bb9655558affa2aa68f357a93395b12)() method of [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) Class as follows, in order to track line breaking of text fragment:
+Aspose.PDF for C++ offers logging (tracking) background processing (line breaking) of multi-line text fragments in text adding scenarios. You can use the [GetNotifications](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#a6bb9655558affa2aa68f357a93395b12)() method of [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) Class as follows, in order to track line breaking of text fragment:
 
 ```cpp
 using namespace System;

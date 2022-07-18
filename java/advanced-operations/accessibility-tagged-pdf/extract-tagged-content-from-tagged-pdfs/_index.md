@@ -13,7 +13,7 @@ sitemap:
 
 ## Getting Tagged PDF Content
 
-In order to get content of PDF Document with Tagged Text, Aspose.PDF offers [getTaggedContent()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getTaggedContent--) method of [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) Class. Following code snippet shows how to get content of a PDF document with Tagged Text:
+In order to get content of PDF Document with Tagged Text, Aspose.PDF offers [getTaggedContent()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getTaggedContent--) method of [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) Class. Following code snippet shows how to get content of a PDF document with Tagged Text:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java
@@ -40,7 +40,7 @@ document.save(path + "TaggedPDFContent.pdf");
 
 ## Getting Root Structure
 
-In order to get the root structure of Tagged PDF Document, Aspose.PDF offers [getStructTreeRootElement]()(https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#getStructTreeRootElement--) and **getStructureElement()** methods of [ITaggedContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to get the root structure of Tagged PDF Document:
+In order to get the root structure of Tagged PDF Document, Aspose.PDF offers [getStructTreeRootElement]()(https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#getStructTreeRootElement--) and **getStructureElement()** methods of [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) Interface. Following code snippet shows how to get the root structure of Tagged PDF Document:
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Java

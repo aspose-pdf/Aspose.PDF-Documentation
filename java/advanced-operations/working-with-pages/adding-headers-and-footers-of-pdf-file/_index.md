@@ -17,7 +17,7 @@ If you will read the above code snippets line by line, you must find that the sy
 
 ## Adding Text in Header of PDF File
 
-You can use [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) class to add text in the header of a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text in the header, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the text in the header of the PDF.
+You can use [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) class to add text in the header of a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text in the header, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the text in the header of the PDF.
 
 You need to set the TopMargin property in such a way that it adjusts the text in the header area of your PDF. You also need to set HorizontalAlignment to Center and VerticalAlignment to Top.
 
@@ -83,7 +83,7 @@ The following code snippet shows you how to add text in the footer of a PDF file
 
 ## Adding Image in Header of PDF File
 
-You can use [ImageStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) class to add image in the header of a PDF file. Image Stamp class provides properties necessary to create image based stamp like font size, font style, and font color etc. In order to add image in the header, you need to create a Document object and a Image Stamp object using required properties. After that, you can call [AddStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) method of the Page to add the image in the header of the PDF.
+You can use [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) class to add image in the header of a PDF file. Image Stamp class provides properties necessary to create image based stamp like font size, font style, and font color etc. In order to add image in the header, you need to create a Document object and a Image Stamp object using required properties. After that, you can call [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) method of the Page to add the image in the header of the PDF.
 
 ```java
 public static void AddingImageInHeaderOfPDFFile() {
@@ -118,7 +118,7 @@ You can use Image Stamp class to add image in the footer of a PDF file. Image St
 
 {{% alert color="primary" %}}
 
-You need to set the BottomMargin property in such a way that it adjusts the image in the footer area of your PDF. You also need to set [HorizontalAlignment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment) to `Center` and [VerticalAlignment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment) to `Bottom`.
+You need to set the BottomMargin property in such a way that it adjusts the image in the footer area of your PDF. You also need to set [HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment) to `Center` and [VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment) to `Bottom`.
 
 {{% /alert %}}
 
@@ -153,7 +153,7 @@ The following code snippet shows you how to add image in the footer of a PDF fil
 
 We know that we can add TextStamp in Header/Footer section of the document by using TopMargin or Bottom Margin properties, but sometimes we may have the requirement to add multiple header/footers in a single PDF document. **Aspose.PDF for Java** explains how to do this.
 
-In order to accomplish this requirement, we will create individual [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) objects (number of objects depends upon the number of Header/Footers required)and will add them to PDF document. We may also specify different formatting information for individual stamp object. In following example, we have created [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and three   [TextStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) objects and then we have used [AddStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) method of the Page to add the text in the header section of the PDF. The following code snippet shows you how to add image in the footer of a PDF file with Aspose.PDF for Java.
+In order to accomplish this requirement, we will create individual [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) objects (number of objects depends upon the number of Header/Footers required)and will add them to PDF document. We may also specify different formatting information for individual stamp object. In following example, we have created [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and three   [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) objects and then we have used [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) method of the Page to add the text in the header section of the PDF. The following code snippet shows you how to add image in the footer of a PDF file with Aspose.PDF for Java.
 
 ```java
 public static void AddingDifferentHeadersInOnePDFFile() {

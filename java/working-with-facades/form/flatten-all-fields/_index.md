@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-flattenAllFields(..) method of [Form](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class allows you to flatten all the fields of the PDF form. You first need to create [Form](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) object, bind source PDF file and then call the flattenAllFields(...) method and finally save the updated PDF using save(..) method.
+flattenAllFields(..) method of [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) class allows you to flatten all the fields of the PDF form. You first need to create [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) object, bind source PDF file and then call the flattenAllFields(...) method and finally save the updated PDF using save(..) method.
 
 The following code snippet shows you how to flatten all the fields of the PDF file.
 

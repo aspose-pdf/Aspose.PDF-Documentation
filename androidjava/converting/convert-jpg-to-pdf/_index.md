@@ -15,7 +15,7 @@ No need to wonder how to convert JPG to PDF, because Apose.PDF for Android via J
 
 You can very easy convert a JPG images to PDF with Aspose.PDF for Android via Java by following steps:
 
-1. Initialize object of [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class
+1. Initialize object of [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class
 1. Load JPG image and add to paragraph
 1. Save output PDF
 

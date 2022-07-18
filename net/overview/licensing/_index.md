@@ -26,13 +26,13 @@ In the evaluation version from any collection, you can process only four element
 
 The license can be loaded from a file or stream object. The easiest way to set a license is to put the license file in the same folder as the Aspose.PDF.dll file and specify the file name without a path, as shown in the example below.
 
-If you use any other Aspose for .NET component along with Aspose.PDF for .NET, please specify the namespace for License like [Aspose.Pdf.License](https://apireference.aspose.com/pdf/net/aspose.pdf/license).
+If you use any other Aspose for .NET component along with Aspose.PDF for .NET, please specify the namespace for License like [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license).
 
 ### Loading a license from file
 
 The easiest way to apply a license is to put the license file in the same folder as the Aspose.PDF.dll file and specify just the file name without a path.
 
-When you call the [SetLicense](https://apireference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) method, the license name that you pass should be that of your license file. For example, if you change the license file name to "Aspose.PDF.lic.xml" pass that file name to the Pdf.SetLicense(…) method.
+When you call the [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) method, the license name that you pass should be that of your license file. For example, if you change the license file name to "Aspose.PDF.lic.xml" pass that file name to the Pdf.SetLicense(…) method.
 
 ```csharp
 

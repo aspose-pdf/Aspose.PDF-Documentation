@@ -13,14 +13,14 @@ sitemap:
 
 Artifacts are generally graphics objects or other markings that are not part of the authored content. In your PDF examples of artifacts include different information, there are page header or footer, lines or other graphics separating sections of the page, or decorative images.
 
-The [Artifact](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Artifact) class contains:
+The [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/Artifact) class contains:
 
-- [Artifact.Type](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Artifact.ArtifactType) – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
-- [Artifact.Subtype](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Artifact.ArtifactSubtype) – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
+- [Artifact.Type](https://reference.aspose.com/pdf/java/com.aspose.pdf/Artifact.ArtifactType) – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
+- [Artifact.Subtype](https://reference.aspose.com/pdf/java/com.aspose.pdf/Artifact.ArtifactSubtype) – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
 
-A watermark created with Adobe Acrobat is called an artifact (as described in 14.8.2.2 Real Content and Artifacts of the PDF specification). In order to work with artifacts, Aspose.PDF has two classes: [Artifact](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Artifact) and [ArtifactCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ArtifactCollection).
+A watermark created with Adobe Acrobat is called an artifact (as described in 14.8.2.2 Real Content and Artifacts of the PDF specification). In order to work with artifacts, Aspose.PDF has two classes: [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/Artifact) and [ArtifactCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/ArtifactCollection).
 
-In order to get all artifacts on a particular page, the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) class has the Artifacts property. This topic explains how to work with artifact in PDF files.
+In order to get all artifacts on a particular page, the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) class has the Artifacts property. This topic explains how to work with artifact in PDF files.
 
 The following code snippet shows how to set watermark on the first page of a PDF file.
 
@@ -46,7 +46,7 @@ The following code snippet shows how to set watermark on the first page of a PDF
     }
 ```
 
-Background images can be used to add a watermark, or other subtle design, to documents. In Aspose.PDF for Java, each PDF document is a collection of pages and each page contains a collection of artifacts. The [BackgroundArtifact](https://apireference.aspose.com/pdf/java/com.aspose.pdf/BackgroundArtifact) class can be used to add a background image to a page object.
+Background images can be used to add a watermark, or other subtle design, to documents. In Aspose.PDF for Java, each PDF document is a collection of pages and each page contains a collection of artifacts. The [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/BackgroundArtifact) class can be used to add a background image to a page object.
 
 The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object.
 

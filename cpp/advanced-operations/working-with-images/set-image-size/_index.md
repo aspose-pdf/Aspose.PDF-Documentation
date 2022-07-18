@@ -8,7 +8,7 @@ description: This section describes how to set image size PDF file using C++ lib
 lastmod: "2021-12-18"
 ---
 
-It is possible to set the size of an image that’s being added to a PDF file. In order to set size, you can use [FixWidth](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image#a08f2f92b184632385eab19fb96c6d40e) and [FixHeight](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image#aed67b52e058b97df6931c214d7092dfa) properties of [Aspose.Pdf.Image Class](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image).
+It is possible to set the size of an image that’s being added to a PDF file. In order to set size, you can use [FixWidth](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image#a08f2f92b184632385eab19fb96c6d40e) and [FixHeight](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image#aed67b52e058b97df6931c214d7092dfa) properties of [Aspose.Pdf.Image Class](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image).
 
 The following code snippet demonstrates how to set the size of an image:
 

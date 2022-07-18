@@ -393,7 +393,7 @@ Let's create yet another file - the XSL-FO markup file to transform employees' d
 </xsl:stylesheet>
 ```
 
-Aspose.PDF has a special [XslFoLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XslFoLoadOptions) class that allows to apply XSL-FO tranformation.
+Aspose.PDF has a special [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/XslFoLoadOptions) class that allows to apply XSL-FO tranformation.
 The following snippet shows how to use this class with the sample files described above.
 
 ```java
@@ -425,7 +425,7 @@ Let's define the page with default parameters. Our page will have an A4 page siz
 </Document>
 ```
 
-To generate PDF document we will use [bindXml](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#bindXml--) method.
+To generate PDF document we will use [bindXml](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#bindXml--) method.
 
 ```java
 public static void Example_XML_to_PDF() {

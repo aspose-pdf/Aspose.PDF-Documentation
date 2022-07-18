@@ -14,7 +14,7 @@ The flattening process means when an annotation is removed from a document, its 
 
 When this option is selected, your annotations will be included in your exported PDF as PDF-standard annotations.
 
-Check how the [flatteningAnnotations](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) method used in the next code snippet.
+Check how the [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) method used in the next code snippet.
 
 ```csharp
 public static void Flattening()
