@@ -13,7 +13,7 @@ sitemap:
 
 Aspose PDF for .NET Release Notes list new features, enhancement, and fixed bugs that were made in 2022.
 
-- [Aspose.PDF for .NET 22.6](/pdf/net/aspose-pdf-for-net-22-7-release-notes/)
+- [Aspose.PDF for .NET 22.7](/pdf/net/aspose-pdf-for-net-22-7-release-notes/)
 - [Aspose.PDF for .NET 22.6](/pdf/net/aspose-pdf-for-net-22-6-release-notes/)
 - [Aspose.PDF for .NET 22.5](/pdf/net/aspose-pdf-for-net-22-5-release-notes/)
 - [Aspose.PDF for .NET 22.4](/pdf/net/aspose-pdf-for-net-22-4-release-notes/)
