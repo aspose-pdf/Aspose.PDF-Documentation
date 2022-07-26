@@ -11,6 +11,22 @@ sitemap:
 lastmod: "2021-12-22"
 ---
 
+## What's new in Aspose.PDF 22.7
+
+The Skia version used is updated.
+
+## What's new in Aspose.PDF 22.5
+
+Support of XFA forms in PDF documents was implemented.
+
+## What's new in Aspose.PDF 22.4
+
+The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 22.4 and Aspose.Imaging 22.4.
+
+- the System::Drawing::GetThumbnailImage() method was implemented;
+- the RegionDataNodeRect constructor was optimized;
+- the 1 bit per pixel black-and-white image loading was fixed.
+
 ## What's new in Aspose.PDF 22.3
 
 The method overloads were added to numerous classes. These support ArrayView-typed parameters where only ArrayPtr was supported previously.

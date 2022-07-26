@@ -11,6 +11,44 @@ sitemap:
 lastmod: "2021-12-24"
 ---
 
+## What's new in Aspose.PDF 22.6
+
+From 22.5 support to extract SubScript and SuperScript text from PDF.
+
+If the PDF document contains SubScript and SuperScript text such as H2O, then extracting the text from the PDF must also extract their formatting information (in the extracted plain text).
+If the PDF contains text in italics, it must also be included in the extracted content.
+
+```cs
+Document doc = new Document(input);
+TextFragmentAbsorber absorber = new TextFragmentAbsorber("TM");
+absorber.Visit(doc.Pages[1]);
+```
+
+## What's new in Aspose.PDF 22.4
+
+This release includes information for Aspose.PDF for .NET:
+
+- PDF to ODS: Recognize text in subscript and superscript;
+
+**example**
+
+```cs
+Document pdfDocument = new Document("Superscript-Subscript.pdf");
+ExcelSaveOptions options = new ExcelSaveOptions();
+options.Format = ExcelSaveOptions.ExcelFormat.ODS;
+pdfDocument.Save("output.ods"), options);
+```
+
+- PDF to XMLSpreadSheet2003: Recognize text in subscript and superscript;
+
+- PDF to Excel: Recognize text in subscript and superscript;
+
+- Remove UR signatures while saving document;
+
+- Remove Suspects flag in MarkInfo while saving document;
+
+- Remove Info while saving document
+
 ## What's new in Aspose.PDF 22.3
 
 This release includes the following updates:

@@ -11,6 +11,48 @@ sitemap:
 lastmod: "2021-06-05"
 ---
 
+## What's new in Aspose.PDF 22.6
+
+PDF to PDF_A_1A - implement option to remove transparency color to avoid large output file size.
+
+From version 22.5 customer is able to control quality of converted transparency, and the output file size as a result:
+
+```java
+    opts.setTransparencyResolution(300);
+```
+
+## What's new in Aspose.PDF 22.5
+
+During PDF/A conversion transparent content is removed and replaced with image.
+We have implemented a new feature, and now the customer can control the quality of the image with the parameter TransparencyResolution:
+
+```java
+    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document("input.pdf");
+    PdfFormatConversionOptions options = new PdfFormatConversionOptions("log.xml", PdfFormat.PDF_A_1A, ConvertErrorAction.Delete);
+    options.setTransparencyResolution(300);
+    pdfDocument.convert(options);
+    pdfDocument.save("finalOutput.pdf");
+```        
+
+## What's new in Aspose.PDF 22.4
+
+This release includes information for Aspose.PDF for Java:
+
+- PDF to ODS: Recognize text in subscript and superscript;
+
+**example**
+
+```cs
+Document pdfDocument = new Document("Superscript-Subscript.pdf");
+ExcelSaveOptions options = new ExcelSaveOptions();
+options.Format = ExcelSaveOptions.ExcelFormat.ODS;
+pdfDocument.Save("output.ods"), options);
+```
+
+- PDF to XMLSpreadSheet2003: Recognize text in subscript and superscript;
+
+- PDF to Excel: Recognize text in subscript and superscript;
+
 ## What's new in Aspose.PDF 22.3
 
 PDF to ODS: Support for RTL is available in version 22.3
