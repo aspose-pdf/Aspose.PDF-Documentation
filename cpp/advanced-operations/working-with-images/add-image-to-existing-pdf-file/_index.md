@@ -14,14 +14,14 @@ Every PDF page contains Resources and Contents properties. Resources can be imag
 
 To add an image to an existing PDF file:
 
-- Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object and open the input PDF document.
+- Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object and open the input PDF document.
 - Get the page you want to add an image to.
 - Add the image into the page’s Resources collection.
 - Use operators to place the image on the page:
-- Use the [GSave operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save/) to save the current graphical state.
-- Use [ConcatenateMatrix operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.concatenate_matrix#a40ca09b1fa45560d57a1fd042d3fbe96) to specify where the image is to be placed.
-- Use the [Do operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.do/) to draw the image on the page.
-- Finally, use [GRestore operator](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_restore/) to save the updated graphical state.
+- Use the [GSave operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save/) to save the current graphical state.
+- Use [ConcatenateMatrix operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.concatenate_matrix#a40ca09b1fa45560d57a1fd042d3fbe96) to specify where the image is to be placed.
+- Use the [Do operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.do/) to draw the image on the page.
+- Finally, use [GRestore operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_restore/) to save the updated graphical state.
 - Save the file.
 The following code snippet shows how to add the image in a PDF document.
 
@@ -86,7 +86,7 @@ void WorkingWithImages::AddImageToExistingPDF()
 
 ## Add Reference of a single Image multiple times in a PDF Document
 
-Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. [XImageCollection.Add(XImage)](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.x_image/) method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
+Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. [XImageCollection.Add(XImage)](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image/) method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
 
 ```cpp
 void WorkingWithImages::AddReferenceOfaSingleImageMultipleTimes() {
@@ -201,7 +201,7 @@ void WorkingWithImages::CheckColors() {
 
 ## Control Image Quality
 
-It is possible to control the quality of an image that’s being added to a PDF file. Use the overloaded [Replace](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection#a698b65051b073f0f4b84b1235889bd72) method in the [XImageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection) class.
+It is possible to control the quality of an image that’s being added to a PDF file. Use the overloaded [Replace](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection#a698b65051b073f0f4b84b1235889bd72) method in the [XImageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection) class.
 
 The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
 

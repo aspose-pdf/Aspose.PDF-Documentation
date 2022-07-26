@@ -1,11 +1,12 @@
 ---
-title: Convert PDF document
+title: Convert PDF documents using C# API
 linktitle: Convert PDF document
 type: docs
 weight: 70
 url: /net/converting/
 lastmod: "2021-11-01"
-description: This section contains a description of all possible options for converting PDF documents on C# using Aspose.PDF library.
+keywords: convert pdf c#
+description: This section contains articles relating to convert PDF documents in different formats using C# or .NET using PDF file format API.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

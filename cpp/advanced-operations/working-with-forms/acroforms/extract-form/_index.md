@@ -1,6 +1,6 @@
 ---
 title: Extract AcroForm Data using C++
-linktitle: Extract Data Form
+linktitle: Extract Data AcroForm
 type: docs
 weight: 30
 url: /cpp/extract-form/
@@ -41,7 +41,7 @@ void ExtractDataFromForm()
 
 ## Get Value from an Individual Field of PDF Document
 
-The form field’s Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This example selects a [TextBoxField](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.text_box_field) and retrieves its value using the Value property.
+The form field’s Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This example selects a [TextBoxField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.text_box_field) and retrieves its value using the Value property.
 
 The following code snippet shows how to get the values of individual the fields in a PDF document.
 

@@ -1,5 +1,5 @@
 ---
-title: Convert HTML to PDF file using C#
+title: Convert HTML to PDF file 
 linktitle: Convert HTML to PDF file
 type: docs
 weight: 40
@@ -41,7 +41,7 @@ The HTML Conversion engine has several options that allow us to control the conv
 
 ### Media Queries Support
 
-Media queries are a popular technique for delivering a tailored style sheet to different devices. We can set device type using [`HtmlMediaType`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype) property.
+Media queries are a popular technique for delivering a tailored style sheet to different devices. We can set device type using [`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype) property.
 
 ```csharp
 public static void ConvertHTMLtoPDFAdvanced_MediaType()
@@ -58,7 +58,7 @@ public static void ConvertHTMLtoPDFAdvanced_MediaType()
 
 ### Enable (disable) font embedding
 
-HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We can also control the embedding of fonts in a document using a [`IsEmbedFonts`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts) property.
+HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We can also control the embedding of fonts in a document using a [`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts) property.
 
 ```csharp
 public static void ConvertHTMLtoPDFAdvanced_EmbedFonts()
@@ -73,9 +73,9 @@ public static void ConvertHTMLtoPDFAdvanced_EmbedFonts()
 ### Manage external resource loading
 
 The Conversion Engine provides a mechanism that allows you to control the loading of certain resources associated with the HTML document.
-The [`HtmlLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) class has the property [`CustomLoaderOfExternalResources`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) with which we can define the behavior of the resource loader.
+The [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) class has the property [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) with which we can define the behavior of the resource loader.
 Assume we need to replace all PNG images with single image `test.jpg` and replace external URL to internal for other resources.
-To do this we can define a custom loader `SamePictureLoader` and points [`CustomLoaderOfExternalResources`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) to this name.
+To do this we can define a custom loader `SamePictureLoader` and points [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) to this name.
 
 ```csharp
 public static void ConvertHTMLtoPDFAdvanced_DummyImage()
@@ -122,7 +122,7 @@ Converting a web page is slightly different than converting a local HTML documen
 When converting a web page hosted on a webserver to PDF:
 
 1. Read the contents of the page using an HttpClient object.
-1. Instantiate the [HtmlLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) object and set the base URL.
+1. Instantiate the [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) object and set the base URL.
 1. Initialize a Document object while passing the stream object.
 1. Optionally, set the page size and/or orientation.
 
@@ -151,7 +151,7 @@ private static Stream GetContentFromUrlAsStream(string url, ICredentials credent
 
 ### Provide credentials Web page to PDF conversion
 
-Sometimes we need to perform the conversion of HTML files which require authentication and access privileges, so that only authentic users can fetch the page contents. It also includes the scenario where some resources/data referenced inside HTML are fetched from some external server which requires authentication and in order to cater to this requirement, the [`ExternalResourcesCredentials`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) property is added to [`HtmlLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) class. Following code snippet shows the steps to pass credentials to request HTML & its respective resources while converting HTML file to PDF conversion.
+Sometimes we need to perform the conversion of HTML files which require authentication and access privileges, so that only authentic users can fetch the page contents. It also includes the scenario where some resources/data referenced inside HTML are fetched from some external server which requires authentication and in order to cater to this requirement, the [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) property is added to [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) class. Following code snippet shows the steps to pass credentials to request HTML & its respective resources while converting HTML file to PDF conversion.
 
 ```csharp
 public static void ConvertHTMLtoPDFAdvanced_Authorized()

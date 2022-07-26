@@ -4,7 +4,7 @@ linktitle: Save PDF
 type: docs
 weight: 30
 url: /net/save-pdf-document/
-description: Learn how to save PDF file in C# Aspose.PDF for .NET PDF library.
+description: Learn how to save PDF file in C# Aspose.PDF for .NET PDF library. Save PDF document to file system, to stream, and in Web applications.
 aliases:
     - /net/saving/
 lastmod: "2021-06-05"
@@ -60,7 +60,7 @@ pdfDocument.Pages.Add();
 pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
 
-For more detailed explanation please follow to [Showcase] section.
+For more detailed explanation please follow to [Showcase](/pdf/net/showcases/) section.
 
 ## Save PDF/A or PDF/X format
 

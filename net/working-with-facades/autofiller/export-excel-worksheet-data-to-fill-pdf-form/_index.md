@@ -1,5 +1,5 @@
 ---
-title: Export Excel worksheet data to fill PDF form
+title: Export Excel data to fill PDF form
 type: docs
 weight: 10
 url: /net/export-excel-worksheet-data-to-fill-pdf-form/
@@ -10,8 +10,8 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades namespace](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) offers various ways to fill the Pdf forms. You can import data from XML file, DFD, XFDF, use API and even can use the data from Excel worksheet.
-We would be using [ExportDataTable](https://apireference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) method of [Cells](https://apireference.aspose.com/pdf/net/aspose.pdf/cells) class of [Aspose.Cells](https://docs.aspose.com//cells/net) to export the data from Excel sheet in to DataTable object. Then we need would be importing this data into Pdf form using [ImportDataTable](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) method of [AutoFiller](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) class. Make sure that, the Column name of DataTable is same as field name over PDF form.
+[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) offers various ways to fill the Pdf forms. You can import data from XML file, DFD, XFDF, use API and even can use the data from Excel worksheet.
+We would be using [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) method of [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) class of [Aspose.Cells](https://docs.aspose.com//cells/net) to export the data from Excel sheet in to DataTable object. Then we need would be importing this data into Pdf form using [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) method of [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) class. Make sure that, the Column name of DataTable is same as field name over PDF form.
 
 {{% /alert %}}
 
@@ -25,7 +25,7 @@ In the Form specified above has one page, with three fields named as "ID", "Name
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
-We need to create an object of [AutoFiller](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) class and bind the Pdf form present in the above pictures and use the [ImportDataTable](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) method to fill the form fields using the data present in DataTable object.
+We need to create an object of [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) class and bind the Pdf form present in the above pictures and use the [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) method to fill the form fields using the data present in DataTable object.
 Once the method is called a new Pdf form file is generated, which contains five pages with form filled based over the data from Excel sheet. Input Pdf form was single page and resultant is five pages, because the number of data rows in excel sheet is 5. The DataTable class offers the capability to use the first row of the sheet as ColumnName.
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
@@ -137,5 +137,5 @@ private static DataTable GenerateDataTable()
 ## Conclusion
 
 {{% alert color="primary" %}}
-[Aspose.PDF.Facades](https://apireference.aspose.com/pdf/net/aspose.pdf.facades) also offers the capability to fill PDF form using data from database but this feature is currently supported in .Net version.
+[Aspose.PDF.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) also offers the capability to fill PDF form using data from database but this feature is currently supported in .Net version.
 {{% /alert %}}

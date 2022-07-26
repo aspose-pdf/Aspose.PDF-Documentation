@@ -17,7 +17,7 @@ Since PDF is the most common format for exchanging documents, let's consider a d
 
 **Aspose.PDF for C++** provides developers with the tools they need to extract data from tables in PDF documents.
 
-This example demonstrates the use of the [TableAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) Class to retrieve tabular data from tables in a PDF file.
+This example demonstrates the use of the [TableAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) Class to retrieve tabular data from tables in a PDF file.
 
 The following example shows table extraction from the all pages:
 
@@ -59,7 +59,7 @@ void ExtractTable() {
 
 ## Extract table in specific area of PDF page
 
-Each abosorbed table has [Rectangle](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.rectangle/) property that describes position of the table on page.
+Each abosorbed table has [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.rectangle/) property that describes position of the table on page.
 
 So, if you need to extract tables located in a specific region, you have to work with specific coordinates.
 

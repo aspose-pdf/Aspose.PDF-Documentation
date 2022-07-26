@@ -14,7 +14,7 @@ sitemap:
 
 ## Set Privileges on an Existing PDF File
 
-For setting privileges on an existing PDF file Aspose.PDF for C++ use [DocumentPrivilege](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.document_privilege/) class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s [Encrypt](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#af7adb89eb21ef5e78b2ef5ce04fabcd7) method.
+For setting privileges on an existing PDF file Aspose.PDF for C++ use [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.document_privilege/) class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s [Encrypt](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#af7adb89eb21ef5e78b2ef5ce04fabcd7) method.
 
 The following code snippet shows you how to set the privileges of a PDF file.
 
@@ -46,7 +46,7 @@ void SecuringAndSigning::SetPrivilegesOnExistingPDF() {
 
 ## Encrypt PDF File using Different Encryption Types and Algorithms
 
-For the encrypting PDF file use [Encrypt](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#af7adb89eb21ef5e78b2ef5ce04fabcd7) method of the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object to encrypt a PDF file.
+For the encrypting PDF file use [Encrypt](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#af7adb89eb21ef5e78b2ef5ce04fabcd7) method of the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object to encrypt a PDF file.
 
 The following code snippet shows you how to encrypt PDF files.
 
@@ -75,7 +75,7 @@ void SecuringAndSigning::EncryptPDFFile() {
 
 ## Decrypt PDF File using Owner Password
 
-In order to decrypt the PDF file, you first need to create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and open the PDF using the owner’s password. After that, you need to call [Decrypt](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#a9c26014465f4368edc6fc62b7ef3d76a) method.
+In order to decrypt the PDF file, you first need to create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and open the PDF using the owner’s password. After that, you need to call [Decrypt](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a9c26014465f4368edc6fc62b7ef3d76a) method.
 
 ```cpp
 void SecuringAndSigning::DecryptPDFFile() {
@@ -97,7 +97,7 @@ void SecuringAndSigning::DecryptPDFFile() {
 
 Since your PDFs can carry important and confidential information, they must remain safe. Accordingly, you may need to change password of your PDF document.
 
-If you want to change the password of a PDF file, you first need to open the PDF file using owner password with the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object. After that, you need to call the [ChangePasswords](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#a9952055c2ac0afea827ce400b5ec951d) method.
+If you want to change the password of a PDF file, you first need to open the PDF file using owner password with the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object. After that, you need to call the [ChangePasswords](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a9952055c2ac0afea827ce400b5ec951d) method.
 
 The following code snippet shows you how to change the password of a PDF file.
 
@@ -117,7 +117,7 @@ void SecuringAndSigning::ChangePassword_PDF_File() {
 
 ## How to - determine if the source PDF is password protected
 
-A PDF document encrypted with the user's password cannot be opened without a password. We'd better determine if the document is password protected before we try to open it. Sometimes there are documents that do not require password information while opening them, but they require information in order to edit the contents of the file. So in order to fulfill the above requirements, [PdfFileInfo](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_file_info/) class present under Aspose.PDF.Facades provides the properties which can help in determining the required information.
+A PDF document encrypted with the user's password cannot be opened without a password. We'd better determine if the document is password protected before we try to open it. Sometimes there are documents that do not require password information while opening them, but they require information in order to edit the contents of the file. So in order to fulfill the above requirements, [PdfFileInfo](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.pdf_file_info/) class present under Aspose.PDF.Facades provides the properties which can help in determining the required information.
 
 ### Get information about PDF document security
 

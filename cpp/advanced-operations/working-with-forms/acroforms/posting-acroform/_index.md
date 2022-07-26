@@ -13,13 +13,13 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-AcroForm is an important type of the PDF document. You can not only create and edit an AcroForm using [Aspose.Pdf.Facades namepsace](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.facades), but also import and export form data to and XML file. Aspose.Pdf.Facades namespace in Aspose.PDF for C++ allows you to implement another feature of AcroForm, which helps you post an AcroForm data to an external web page. This web page then reads the post variables and uses this data for further processing. This feature is useful in the cases when you don’t just want to keep the data in the PDF file, rather you want to send it to your server and then save it in a database etc.
+AcroForm is an important type of the PDF document. You can not only create and edit an AcroForm using [Aspose.Pdf.Facades namepsace](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.facades), but also import and export form data to and XML file. Aspose.Pdf.Facades namespace in Aspose.PDF for C++ allows you to implement another feature of AcroForm, which helps you post an AcroForm data to an external web page. This web page then reads the post variables and uses this data for further processing. This feature is useful in the cases when you don’t just want to keep the data in the PDF file, rather you want to send it to your server and then save it in a database etc.
 
 {{% /alert %}}
 
 ## Implementation details
 
-In this article, we have tried to create an AcroForm using [Aspose.Pdf.Facades namepsace](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.facades) and [FormEditor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.facades.form_editor/) class. We have also added a submit button and set its target URL.
+In this article, we have tried to create an AcroForm using [Aspose.Pdf.Facades namepsace](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.facades) and [FormEditor](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.form_editor/) class. We have also added a submit button and set its target URL.
 
 The following code snippets show you how to create the form and then receive the posted data on the web page.
 

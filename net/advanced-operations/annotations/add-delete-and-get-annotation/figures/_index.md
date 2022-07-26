@@ -5,11 +5,76 @@ type: docs
 weight: 30
 url: /net/figures-annotation/
 description: This article describes how to add, get, and delete figures annotations from your PDF document with Aspose.PDF for .NET
-lastmod: "2021-11-24"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add Figures Annotations using C#",
+    "alternativeHeadline": "How to add Figures Annotations in PDF",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, figures annotations, polygon annotation, line annotation, square annotation, circle annotation",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/figures-annotation/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/figures-annotation/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "This article describes how to add, get, and delete figures annotations from your PDF document with Aspose.PDF for .NET"
+}
+</script>
 
 ## Add Square or Circle Annotations
 
@@ -18,10 +83,10 @@ Square annotations are like Circle annotations (instances of the Aspose.Pdf.Anno
 
 Steps for creating Square and Circle Annotations:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
-1. Create new [Circle Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) and set Circle parameters (new Rectangle, title, color, InteriorColor, Opacity).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
-1. Next we need to create [Square Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation).
+1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Create new [Circle Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) and set Circle parameters (new Rectangle, title, color, InteriorColor, Opacity).
+1. Create a new [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
+1. Next we need to create [Square Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation).
 1. Set the same Square parameters (new Rectangle, title, color, InteriorColor, Opacity).
 1. After we need to Add Square and Circle Annotations to the page.
 
@@ -131,10 +196,10 @@ The Polyline tool allows you to create shapes and outlines with an arbitrary num
 
 Steps with which we create Polygon and Polyline annotations:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
-1. Create new [Polygon Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/polygonannotation) and set Polygon parameters (new Rectangle, new Points, title, color, InteriorColor and Opacity).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
-1. Next, Create a [PolyLine Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/polylineannotation) and repeat all actions.
+1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Create new [Polygon Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/polygonannotation) and set Polygon parameters (new Rectangle, new Points, title, color, InteriorColor and Opacity).
+1. Create a new [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
+1. Next, Create a [PolyLine Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/polylineannotation) and repeat all actions.
 1. After we can Add annotations to the page.
 
 The following code snippet shows how to add Polygon and Polyline Annotations to a PDF file:
@@ -256,9 +321,9 @@ Also, this kind of annotation allows you to define Line ending styles.
 
 Steps with which we create an Line annotation:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document).
-1. Create new [Line Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/lineannotation/methods/index) and set Line parameters (new Rectangle, new Point, title, color, width, StartingStyle and EndingStyle).
-1. Create a new [PopupAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
+1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Create new [Line Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/lineannotation/methods/index) and set Line parameters (new Rectangle, new Point, title, color, width, StartingStyle and EndingStyle).
+1. Create a new [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
 1. After we can Add annotation to the page
 
 The following code snippet shows how to add Line Annotation to a PDF file:
@@ -353,7 +418,7 @@ The following code snippet shows how Delete Line Annotation from a PDF file.
 
 An Ink Annotation represents a freehand "scribble" composed of one or more disjoint paths. When opened, it shall display a pop-up window containing the text of the associated note.
 
-The [InkAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) represents freehand scribble composed of one or more disjoint points. Please try using the following code snippet to add InkAnnotation in PDF document.
+The [InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) represents freehand scribble composed of one or more disjoint points. Please try using the following code snippet to add InkAnnotation in PDF document.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -390,7 +455,7 @@ doc.Save(dataDir);
 
 ### Set Line width of InkAnnotation
 
-The width of [InkAnnottion](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) can be changed using LineInfo and Border objects.
+The width of [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) can be changed using LineInfo and Border objects.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -428,3 +493,67 @@ dataDir = dataDir + "lnkAnnotationLineWidth_out.pdf";
 // Save output file
 doc.Save(dataDir);
 ```
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

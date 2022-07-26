@@ -1,5 +1,5 @@
 ---
-title: Create or Add Table In PDF using Aspose.PDF for Java
+title: Create or Add Table In PDF 
 linktitle: Create or Add Table
 type: docs
 weight: 10
@@ -13,7 +13,7 @@ sitemap:
 
 ## Creating Table
 
- The Aspose.PDF namespace contains classes named [Table](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Table), [Cell](https://apireference.aspose.com/pdf/java/com.aspose.pdf/cell), and [Row](https://apireference.aspose.com/pdf/java/com.aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
+ The Aspose.PDF namespace contains classes named [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table), [Cell](https://reference.aspose.com/pdf/java/com.aspose.pdf/cell), and [Row](https://reference.aspose.com/pdf/java/com.aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
 
 Table can be created by creating object of Table Class.
 
@@ -69,9 +69,9 @@ public class ExampleAddTable {
 
 ### ColSpan and RowSpan in Aspose.PDF Tables using Java
 
-Aspose.PDF for Java provides [setColSpan](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Cell#setColSpan-int-) method to merge the columns in a table and [setRowSpan](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Cell#setRowSpan-int-) method to merge the rows.
+Aspose.PDF for Java provides [setColSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setColSpan-int-) method to merge the columns in a table and [setRowSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setRowSpan-int-) method to merge the rows.
 
-We use [setColSpan](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Cell#setColSpan-int-) or [setRowSpan](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Cell#setRowSpan-int-) methods on the [Cell](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Cell) object which creates the table cell. After applying the required properties the created cell can be added to the table.
+We use [setColSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setColSpan-int-) or [setRowSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setRowSpan-int-) methods on the [Cell](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell) object which creates the table cell. After applying the required properties the created cell can be added to the table.
 
 ```java
 public static void AddTable_RowColSpan() {
@@ -144,11 +144,11 @@ In the above figure, you can see that the borders of table, row and cell overlap
 
 ## Borders
 
-To set the borders of Table, [Row](https://apireference.aspose.com/pdf/java/com.aspose.pdf/row)  and [Cell](https://apireference.aspose.com/pdf/java/com.aspose.pdf/cell) objects, use the [Table.setBorder](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Table#setBorder-com.aspose.pdf.BorderInfo-), [Row.setBorder](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Row#setBorder-com.aspose.pdf.BorderInfo-) and [Cell.setBorder](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Cell#setBorder-com.aspose.pdf.BorderInfo-) methods. Cell borders can also be set using the [Table](https://apireference.aspose.com/pdf/java/com.aspose.pdf/table) or [Row](https://apireference.aspose.com/pdf/java/com.aspose.pdf/row) class [DefaultCellBorder](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Row#setDefaultCellBorder-com.aspose.pdf.BorderInfo-) method. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
+To set the borders of Table, [Row](https://reference.aspose.com/pdf/java/com.aspose.pdf/row)  and [Cell](https://reference.aspose.com/pdf/java/com.aspose.pdf/cell) objects, use the [Table.setBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#setBorder-com.aspose.pdf.BorderInfo-), [Row.setBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Row#setBorder-com.aspose.pdf.BorderInfo-) and [Cell.setBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setBorder-com.aspose.pdf.BorderInfo-) methods. Cell borders can also be set using the [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table) or [Row](https://reference.aspose.com/pdf/java/com.aspose.pdf/row) class [DefaultCellBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Row#setDefaultCellBorder-com.aspose.pdf.BorderInfo-) method. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
 
 ## Margins or Padding
 
-Cell padding can be managed using the Table class [DefaultCellPadding](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Table#setDefaultCellPadding-com.aspose.pdf.MarginInfo-) method. All padding related properties are assigned an instance of the [MarginInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/MarginInfo) class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters to create custom margins.
+Cell padding can be managed using the Table class [DefaultCellPadding](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#setDefaultCellPadding-com.aspose.pdf.MarginInfo-) method. All padding related properties are assigned an instance of the [MarginInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/MarginInfo) class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters to create custom margins.
 
 In the following example, the width of the cell border is set to 0.1 point, the width of the table border is set to 1 point and cell padding is set to 5 points.
 
@@ -202,7 +202,7 @@ public static void MargingPadding() {
 }
 ```
 
-To create table with rounded corner, use the [BorderInfo](https://apireference.aspose.com/pdf/java/com.aspose.pdf/BorderInfo) class' `RoundedBorderRadius` value and set the table corner style to round.
+To create table with rounded corner, use the [BorderInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/BorderInfo) class' `RoundedBorderRadius` value and set the table corner style to round.
 
 ```java
     public static void RoundedBorderRadius() {
@@ -297,7 +297,7 @@ To create table with rounded corner, use the [BorderInfo](https://apireference.a
 
 ### Get Table Width
 
-Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class has a method [GetWidth](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Table#getWidth--) for the purpose. For example, you have not set table columns width explicitly and set [ColumnAdjustment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ColumnAdjustment) to AutoFitToContent. In this case you can get table width as following.
+Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class has a method [GetWidth](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#getWidth--) for the purpose. For example, you have not set table columns width explicitly and set [ColumnAdjustment](https://reference.aspose.com/pdf/java/com.aspose.pdf/ColumnAdjustment) to AutoFitToContent. In this case you can get table width as following.
 
 ```java
 public static void GetTableWidth() {

@@ -31,4 +31,4 @@ Issues that have been fixed:
 * Method Aspose::Pdf::ImagePlacement::Hide
 * Method Aspose::Pdf::XImage::DetectColorType(System::Drawing::Bitmap)
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).

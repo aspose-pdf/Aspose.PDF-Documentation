@@ -1,5 +1,5 @@
 ---
-title: Rotate Text Inside PDF using Java
+title: Rotate Text Inside PDF 
 linktitle: Rotate Text Inside PDF
 type: docs
 weight: 50
@@ -13,7 +13,7 @@ sitemap:
 
 ## Rotate Text Inside PDF using Rotation Property
 
-By using the [setRotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentState#setRotation-double-) method of [TextFragment](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) Class, you can rotate text at various angles. The text rotation can be used in different scenarios of document generation. You can specify the rotation angle in degrees to rotate the text as per your requirement. Please check the following different scenarios, in which you can implement text rotation.
+By using the [setRotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentState#setRotation-double-) method of [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) Class, you can rotate text at various angles. The text rotation can be used in different scenarios of document generation. You can specify the rotation angle in degrees to rotate the text as per your requirement. Please check the following different scenarios, in which you can implement text rotation.
 
 ## Implement Rotation using TextFragment and TextBuilder
 

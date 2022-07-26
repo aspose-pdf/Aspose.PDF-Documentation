@@ -1,5 +1,5 @@
 ---
-title: Plugins
+title: Plugins from Java
 type: docs
 weight: 100
 url: /java/plugins/

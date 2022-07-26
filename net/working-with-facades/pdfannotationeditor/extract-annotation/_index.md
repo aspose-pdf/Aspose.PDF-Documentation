@@ -1,5 +1,5 @@
 ---
-title: Extract Annotations from an Existing PDF File (facades)
+title: Extract Annotations from PDF 
 type: docs
 weight: 30
 url: /net/extract-annotation/
@@ -10,9 +10,9 @@ sitemap:
     priority: 0.7
 ---
 
-[ExtractAnnotations](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) method allows you to extract annotations from a PDF file. In order to extract annotations, you need to create [PdfAnnotationEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) object and bind PDF file using [BindPdf](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, you need to create an enumeration of annotation types which you want to extract from PDF file. 
+[ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) method allows you to extract annotations from a PDF file. In order to extract annotations, you need to create [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) object and bind PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, you need to create an enumeration of annotation types which you want to extract from PDF file. 
 
-You can then use [ExtractAnnotations](https://apireference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) method to extract the annotations to an ArrayList. After that, you can loop through this list and get individual annotations. And finally, save the updated PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method of the [PdfAnnotationEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) object. The following code snippet shows you how to extract annotations from PDF file.
+You can then use [ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) method to extract the annotations to an ArrayList. After that, you can loop through this list and get individual annotations. And finally, save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method of the [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) object. The following code snippet shows you how to extract annotations from PDF file.
 
 ```csharp
  public static void ExtractAnnotation()

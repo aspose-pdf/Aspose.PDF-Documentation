@@ -1,5 +1,5 @@
 ---
-title: Expand Report Items Properties
+title: Expand Report Items Props
 type: docs
 weight: 90
 url: /reportingservices/expand-report-items-properties/

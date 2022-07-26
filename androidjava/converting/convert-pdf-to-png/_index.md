@@ -5,13 +5,13 @@ type: docs
 weight: 20
 url: /androidjava/convert-pdf-to-png/
 lastmod: "2021-06-05"
-description: This page describes how to convert PDF Pages to PNG image, convert all and single pages to PNG images with Aspose.PDF for Java.
+description: This page describes how to convert PDF Pages to PNG image, convert all and single pages to PNG images with Aspose.PDF for Android via Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Use the **Aspose.PDF for Java** library for converting PDF Pages to <abbr title="Portable Network Graphics">PNG</abbr> Images in an accessible and convenient way.
+Use the **Aspose.PDF for Android via Java** library for converting PDF Pages to <abbr title="Portable Network Graphics">PNG</abbr> Images in an accessible and convenient way.
 
 The PngDevice class allows you to convert PDF pages to PNG images. This class provides a method named Process which allows you to convert a particular page of the PDF file to PNG image format.
 
@@ -31,32 +31,41 @@ Pass the page index as an argument to the Process(..) method.
 The following code snippet shows the steps to convert the first page of PDF to PNG format.
 
 ```java
-    public static void ConvertPDFtoPngSinglePage() throws IOException {
-
-        // Open document
-        String inputFileName = Paths.get(_dataDir.toString(), "input.pdf").toString();
-        Document pdfDocument = new Document(inputFileName);
+   public void convertPDFtoPNG() {
+        try {
+            document = new Document(inputStream);
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+        File file = new File(fileStorage, "PDF-to-PNG.png");
         // Create stream object to save the output image
+        try {
+            OutputStream imageStream =
+                    new FileOutputStream(file.toString());
 
-        java.io.OutputStream imageStream = new java.io.FileOutputStream(
-                Paths.get(_dataDir.toString(), "converted_image.png").toString());
+            // Create Resolution object
+            Resolution resolution = new Resolution(300);
 
-        // Create Resolution object
-        Resolution resolution = new Resolution(300);
+            // Create PngDevice object with particular resolution
+            PngDevice PngDevice = new PngDevice(resolution);
 
-        // Create PngDevice object with particular resolution
-        PngDevice PngDevice = new PngDevice(resolution);
+            // Convert a particular page and save the image to stream
+            PngDevice.process(document.getPages().get_Item(1), imageStream);
 
-        // Convert a particular page and save the image to stream
-        PngDevice.process(pdfDocument.getPages().get_Item(1), imageStream);
-
-        // Close the stream
-        imageStream.close();
+            // Close the stream
+            imageStream.close();
+            resultMessage.setText(file.toString());
+        } catch (IOException e) {
+            resultMessage.setText(e.getMessage());
+        }
     }
+
 ```
+
 ## Convert all PDF pages to PNG image
 
-Aspose.PDF for Java show you how to convert all pages in a PDF file to images:
+Aspose.PDF for Android via Java show you how to convert all pages in a PDF file to images:
 
 1. Loop through all pages in the file.
 1. Convert each page individually:
@@ -67,60 +76,81 @@ Aspose.PDF for Java show you how to convert all pages in a PDF file to images:
 The following code snippet shows you how to convert all PDF pages to PNG images.
 
 ```java
-public static void ConvertPDFtoPngAllPages() throws IOException {
-        // Open document
-        String inputFileName = Paths.get(_dataDir.toString(), "input.pdf").toString();
-        Document pdfDocument = new Document(inputFileName);
+ public void convertPDFtoPNG_AllPages() {
+        try {
+            document = new Document(inputStream);
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
 
         // Loop through all the pages of PDF file
-        for (int pageCount = 1; pageCount <= pdfDocument.getPages().size(); pageCount++) {
+        for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
             // Create stream object to save the output image
-            java.io.OutputStream imageStream = new java.io.FileOutputStream("converted_image" + pageCount + ".png");
+            File file = new File(fileStorage, "PDF-to-PNG"+pageCount+".png");
+            java.io.OutputStream imageStream;
+            try {
+                imageStream = new java.io.FileOutputStream(file.toString());
+            } catch (FileNotFoundException e) {
+                resultMessage.setText(e.getMessage());
+                return;
+            }
 
             // Create Resolution object
             Resolution resolution = new Resolution(300);
-            // Create PngDevice object with particular resolution
-            PngDevice PngDevice = new PngDevice(resolution);
+            // Create JpegDevice object with particular resolution
+            PngDevice JpegDevice = new PngDevice(resolution);
 
             // Convert a particular page and save the image to stream
-            PngDevice.process(pdfDocument.getPages().get_Item(pageCount), imageStream);
+            JpegDevice.process(document.getPages().get_Item(pageCount), imageStream);
 
             // Close the stream
-            imageStream.close();
+            try {
+                imageStream.close();
+            } catch (Exception e) {
+                resultMessage.setText(e.getMessage());
+                return;
+            }
         }
+        resultMessage.setText(R.string.success_message);
     }
 ```
 
 ## Convert particular PDF page to PNG image
 
-Aspose.PDF for Java show you how to convert a particular page to PNG format:
+Aspose.PDF for Android via Java show you how to convert a particular page to PNG format:
 
 ```java
-public static void 
-ConvertParticularPageRegionPDFtoPngAllPages() throws IOException {
-        // open document
-        Document document = new Document("Input.pdf");
-        
+public void convertPDFtoPNG_ParticularPageRegion() {
+        try {
+            document = new Document(inputStream);
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
         // Get rectangle of particular page region
-        Rectangle pageRect = new Rectangle(20, 671, 693, 1125);
+        //x=0,y=0, w=200, h=125;
+        Rectangle pageRect = new Rectangle(0, 0, 200, 125);
         // set CropBox value as per rectangle of desired page region
         document.getPages().get_Item(1).setCropBox(pageRect);
         // save cropped document into stream
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         document.save(outStream);
-        
+
         // open cropped PDF document from stream and convert to image
         document = new Document(new ByteArrayInputStream(outStream.toByteArray()));
-        
         // Create Resolution object
         Resolution resolution = new Resolution(300);
-        
-        // Create Png device with specified attributes
+        // Create Jpeg device with specified attributes
         PngDevice PngDevice = new PngDevice(resolution);
-        
-        // Convert a particular page and save the image to stream
-        PngDevice.process(document.getPages().get_Item(1), "Output.Png");
 
+        File file = new File(fileStorage, "PDF-to-PNG.png");
+        try {
+            // Convert a particular page and save the image to stream
+            PngDevice.process(document.getPages().get_Item(1), file.toString());
+        }
+        catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+        }
     }
-}
 ```

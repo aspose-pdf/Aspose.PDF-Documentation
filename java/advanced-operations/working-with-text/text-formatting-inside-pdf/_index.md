@@ -1,5 +1,5 @@
 ---
-title: Text Formatting inside PDF using Java
+title: Text Formatting inside PDF 
 linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
@@ -13,7 +13,7 @@ sitemap:
 
 ## How to add Line Indent to PDF
 
-Aspose.PDF for Java offers SubsequentLinesIndent property into [TextFormattingOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextFormattingOptions) class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
+Aspose.PDF for Java offers SubsequentLinesIndent property into [TextFormattingOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFormattingOptions) class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
 
 Please use the following code snippet to use the property:
 
@@ -110,7 +110,7 @@ public static void AddUnderlineText(){
 
 ## How to add Border Around Added Text
 
-You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor) class.
+You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor) class.
 
 ```java
 public static void AddBorderAroundAddedText() {

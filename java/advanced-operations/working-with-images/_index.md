@@ -1,5 +1,5 @@
 ---
-title: Working with Images in PDF using Java
+title: Working with Images in PDF 
 linktitle: Working with Images
 type: docs
 weight: 40

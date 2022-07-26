@@ -11,45 +11,46 @@ sitemap:
     priority: 0.7
 ---
 
-No need to wonder how to convert JPG to PDF, because Apose.PDF for Java library has best decision.
+No need to wonder how to convert JPG to PDF, because Apose.PDF for Android via Java library has best decision.
 
-You can very easy convert a JPG images to PDF with Aspose.PDF for Java by following steps:
+You can very easy convert a JPG images to PDF with Aspose.PDF for Android via Java by following steps:
 
-1. Initialize object of [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class
+1. Initialize object of [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class
 1. Load JPG image and add to paragraph
 1. Save output PDF
 
-The code snippet below shows how to convert JPG Image to PDF using Java:
+The code snippet below shows how to convert JPG Image to PDF:
 
 ```java
-package com.aspose.pdf.examples;
+public void convertJPEGtoPDF () {
+        // Initialize document object
+        document=new Document();
 
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+        Page page=document.getPages().add();
+        Image image=new Image();
 
-import com.aspose.pdf.*;
+        File imgFileName=new File(fileStorage, "Conversion/sample.jpg");
 
-public final class ConvertJPEGtoPDF {
+        try {
+            inputStream=new FileInputStream(imgFileName);
+        } catch (FileNotFoundException e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
 
-private ConvertJPEGtoPDF() {
-}
+        // Load sample JPEG image file
+        image.setImageStream(inputStream);
+        page.getParagraphs().add(image);
 
-private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
+        File pdfFileName=new File(fileStorage, "JPEG-to-PDF.pdf");
 
-public static void main(String[] args) throws FileNotFoundException {
-// Initialize document object
-Document document = new Document();
-
-Page page = document.getPages().add();
-Image image = new Image();
-
-// Load sample JPEG image file
-image.setFile(Paths.get(_dataDir.toString(), "Sample.jpg").toString());
-page.getParagraphs().add(image);
-
-// Save output PDF document
-document.save(Paths.get(_dataDir.toString(),"JPEGtoPDF.pdf").toString());
-}
-}
+        // Save output document
+        try {
+            document.save(pdfFileName.toString());
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+        resultMessage.setText(R.string.success_message);
+    }
 ```

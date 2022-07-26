@@ -4,6 +4,7 @@ type: docs
 weight: 50
 url: /sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
 lastmod: "2020-12-16"
+description: PDF SharePoint Library enables you to convert multiple selected files to PDF files with a single conversion operation.
 ---
 
 {{% alert color="primary" %}}
@@ -11,6 +12,8 @@ lastmod: "2020-12-16"
 This article shows how to convert multiple selected files to PDF files with a single conversion operation using Aspose.PDF for SharePoint.
 
 {{% /alert %}}
+
+## Convert Multiple Selected Files to PDF
 
 {{% alert color="primary" %}}
 

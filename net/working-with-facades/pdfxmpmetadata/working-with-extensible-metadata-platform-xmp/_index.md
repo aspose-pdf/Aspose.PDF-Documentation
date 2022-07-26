@@ -1,5 +1,5 @@
 ---
-title: Working with Extensible Metadata Platform - XMP
+title: Extensible Metadata Platform - XMP
 type: docs
 weight: 10
 url: /net/working-with-extensible-metadata-platform-xmp/
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-The Extensible Metadata Platform (XMP) is a standard created by Adobe Systems Inc. This standard was developed to process and store standardized and proprietary metadata. This metadata can be embedded into different file formats, but in this article we’ll focus only on PDF file format. We’ll see how we can embed Meta data in a PDF file using Aspose.Pdf.Facades namespace in Aspose.PDF for .NET. We’ll use [PdfXmpMetadata](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) class to manipulate XMP in the PDF document.
+The Extensible Metadata Platform (XMP) is a standard created by Adobe Systems Inc. This standard was developed to process and store standardized and proprietary metadata. This metadata can be embedded into different file formats, but in this article we’ll focus only on PDF file format. We’ll see how we can embed Meta data in a PDF file using Aspose.Pdf.Facades namespace in Aspose.PDF for .NET. We’ll use [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) class to manipulate XMP in the PDF document.
 
 {{% /alert %}}
 
@@ -21,7 +21,7 @@ A PDF file goes through many stages during its life time. We create a PDF docume
 ## Explanation
 
 In order to manipulate XMP using Aspose.Pdf.Facades, we will use [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) class. We will use this class to manipulate predefined Meta data properties.[PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) class adds these properties to a PDF file. It also helps to open and save PDF files in which we’re adding Meta data. So, using [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) class, we can easily manipulate XMP in a PDF file.
-Following code snippet will help you understand how to use [PdfXmpMetadata](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) class to work with XMP:
+Following code snippet will help you understand how to use [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) class to work with XMP:
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ExtensibleMetadataPlatform-ExtensibleMetadataPlatform.cs" >}}
 

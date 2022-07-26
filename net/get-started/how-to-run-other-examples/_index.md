@@ -1,5 +1,5 @@
 ---
-title: How to run other Aspose.PDF for .NET examples
+title: How to run other examples
 linktitle: How to run other examples
 type: docs
 weight: 40

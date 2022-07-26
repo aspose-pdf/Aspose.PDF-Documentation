@@ -1,17 +1,82 @@
 ---
-title: Setting Structure Elements Properties in Tagged PDF
+title: Setting Structure Elements Properties
 linktitle: Setting Structure Elements Properties
 type: docs
 weight: 30
 url: /net/setting-structure-elements-properties/
-description: With Aspose.PDF for .NET, you may set different Structure Elements Properties. There are setting Text Block Structure Elements, setting Inline Structure Elements, adding Structure Element into Elements and etc.
-lastmod: "2021-06-05"
+description: You may set different structure elements properties in PDF document with Aspose.PDF for .NET.
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Setting Structure Elements Properties",
+    "alternativeHeadline": "How to set the properties of structural elements",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, set text structure, set language, set title, set Note structure element",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/setting-structure-elements-properties/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/setting-structure-elements-properties/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "You may set different structure elements properties in PDF document with Aspose.PDF for .NET."
+}
+</script>
 
-In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers [CreateSectElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) and [CreateHeaderElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) methods of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface.
+In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers [CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) and [CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) methods of [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface.
 
 Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
 
@@ -52,7 +117,7 @@ document.Save(dataDir + "StructureElementsProperties.pdf");
 
 ## Setting Text Structure Elements
 
-In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers [ParagraphElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
+In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -84,7 +149,7 @@ document.Save(dataDir + "TextStructureElement.pdf");
 
 ## Setting Text Block Structure Elements
 
-In order to set text block structure elements of a Tagged PDF Document, Aspose.PDF offers [HeaderElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) and [ParagraphElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) classes. You can append objects of these classes as a child of [StructureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) object.
+In order to set text block structure elements of a Tagged PDF Document, Aspose.PDF offers [HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) and [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) classes. You can append objects of these classes as a child of [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) object.
 Following code snippet shows how to set text block structure elements of a Tagged PDF Document:
 
 ```csharp
@@ -134,7 +199,7 @@ document.Save(dataDir + "TextBlockStructureElements.pdf");
 
 ## Setting Inline Structure Elements
 
-In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF offers [SpanElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) and [ParagraphElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) classes. You can append objects of these classes as a child of [StructureElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) object. Following code snippet shows how to set inline structure elements of a Tagged PDF Document:
+In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF offers [SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) and [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) classes. You can append objects of these classes as a child of [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) object. Following code snippet shows how to set inline structure elements of a Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -249,7 +314,7 @@ document.Save(dataDir + "InlineStructureElements.pdf");
 
 ## Setting Custom Tag Name
 
-In order to set a custom tag name of the elements of a Tagged PDF Document, Aspose.PDF offers [SetTag](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) method of StructureElement class for elements. Following code snippet shows how to set custom tag name:
+In order to set a custom tag name of the elements of a Tagged PDF Document, Aspose.PDF offers [SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) method of StructureElement class for elements. Following code snippet shows how to set custom tag name:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -318,7 +383,7 @@ document.Save(dataDir + "CustomTag.pdf");
 
 **This feature is supported by version 19.4 or greater.**
 
-In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers [CreateLinkElement](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) method of [ITaggedContent](https://apireference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
+In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers [CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) method of [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -497,7 +562,7 @@ Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 
 ## Setting Note Structure Element
 
-Aspose.PDF for .NET API also allows you to add [NoteElement](https://apireference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement) in a tagged PDF document. Following code snippet shows how to add note element in Tagged PDF Document:
+Aspose.PDF for .NET API also allows you to add [NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement) in a tagged PDF document. Following code snippet shows how to add note element in Tagged PDF Document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -601,3 +666,67 @@ taggedContent.RootElement.AppendChild(pSP);
 // Save Tagged Pdf Document
 document.Save(dataDir + "SetupLanguageAndTitle.pdf");
 ```
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

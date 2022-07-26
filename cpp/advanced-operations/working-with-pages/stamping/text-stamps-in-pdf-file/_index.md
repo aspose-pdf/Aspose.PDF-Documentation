@@ -13,7 +13,7 @@ sitemap:
 
 ## Add Text Stamp with C++
 
-You can use [TextStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text_stamp) class to add a text stamp in a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text stamp, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the stamp in the PDF. The following code snippet shows you how to add text stamp in the PDF file.
+You can use [TextStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text_stamp) class to add a text stamp in a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text stamp, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the stamp in the PDF. The following code snippet shows you how to add text stamp in the PDF file.
 
 ```cpp
 void AddTextStampToPDFFile() {
@@ -54,7 +54,7 @@ void AddTextStampToPDFFile() {
 
 ## Define alignment for TextStamp object
 
-Adding watermarks to PDF documents is one of the frequent demanded features and Aspose.PDF for C++ is fully capable of adding Image as well as Text watermarks. We have a class named [TextStamp](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text_stamp) which provides the feature to add text stamps over the PDF file. Recently there has been a requirement to support the feature to specify the alignment of text when using TextStamp object. So in order to fulfill this requirement, we have introduced TextAlignment property in TextStamp class. Using this property, we can specify the Horizontal text alignment.
+Adding watermarks to PDF documents is one of the frequent demanded features and Aspose.PDF for C++ is fully capable of adding Image as well as Text watermarks. We have a class named [TextStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text_stamp) which provides the feature to add text stamps over the PDF file. Recently there has been a requirement to support the feature to specify the alignment of text when using TextStamp object. So in order to fulfill this requirement, we have introduced TextAlignment property in TextStamp class. Using this property, we can specify the Horizontal text alignment.
 
 The following code snippets shows an example on how to load an existing PDF document and add TextStamp over it.
 

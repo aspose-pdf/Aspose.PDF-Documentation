@@ -7,7 +7,7 @@ url: /net/parsing/
 description: Do you want to parse PDF documents? Discover various PDF data extraction methods with Aspose.PDF for .NET.
 lastmod: "2021-06-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -18,4 +18,4 @@ sitemap:
 - [Extract Fonts from PDF](/pdf/net/extract-fonts-from-pdf/). Font Extraction is a specific operation with fonts in PDFs.
 - [Extract Data from the Form](/pdf/net/extract-data-from-acroform/). If you have a bunch of PDF documents with Forms, probably you need to get the data from those forms. This article will help to understand how to extract AcroForms data with Aspose.PDF for .NET
 - [Extract Text From Stamps](/pdf/net/extract-text-from-stamps/)
-- [Extract Data from Table](/pdf/net/extract-data-from-table-in-pdf/) 
+- [Extract Data from Table](/pdf/net/extract-data-from-table-in-pdf/)

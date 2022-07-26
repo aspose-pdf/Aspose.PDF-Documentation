@@ -13,5 +13,6 @@ Visit the documentation to learn how to get started with Aspose.PDF for SharePoi
 Note this download contains a fully working version of the product, however without a license set it will run in evaluation mode with some limitations. To test Aspose.PDF for SharePoint without these evaluation limitations you can request a free 30-day temporary license.
 
 The following is a list of changes in this version of Aspose.PDF for SharePoint
-## <ins>**New Features**
+
+## **New Features**
 - PDFSHP-33389 PDF to HTML conversion support

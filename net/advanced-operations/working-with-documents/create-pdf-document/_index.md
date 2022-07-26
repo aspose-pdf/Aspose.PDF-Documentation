@@ -1,32 +1,98 @@
 ---
-title: Create PDF C#
+title: How to Create PDF using C#
 linktitle: Create PDF Document
 type: docs
 weight: 10
 url: /net/create-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for .NET.
-lastmod: "2021-06-05"
+lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "How to Create PDF using C#",
+    "alternativeHeadline": "Create PDF document from scratch",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, dotnet, create pdf document",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/create-pdf-document/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/create-pdf-document/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "Create and format the PDF Document with Aspose.PDF for .NET."
+}
+</script>
 
 We are always looking for a way to generate PDF documents and work with them in C# projects more exactly, accurately, and effectively. Having easy-to-use functions from a library allows us to track more of the work, and less on the time-heavy details of trying to generate PDFs, whether in .NET.
 
-## Generate PDF
+## Create (or Generate) PDF document using C# language
 
 Aspose.PDF for .NET API lets you create and read PDF files using C# and VB.NET. The API can be used in a variety of .NET applications including WinForms, ASP.NET, and several others. In this article, we are going to show how to use Aspose.PDF for .NET API to easily generate and read PDF files in .NET applications.
 
-### How to Create PDF File using C# language
+### How to Create Simple PDF File
 
 To create a PDF file using C#, the following steps can be used.
 
-1. Create an object of [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class
-1. Add a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object to the [Pages](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) collection of the Document object
-1. Add [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) to [Paragraphs](https://apireference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) collection of the page
+1. Create an object of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class
+1. Add a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object to the [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) collection of the Document object
+1. Add [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) to [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) collection of the page
 1. Save the resultant PDF document
 
 ```csharp
+
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
@@ -40,7 +106,7 @@ page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
 document.Save(dataDir + "HelloWorld_out.pdf");
 ```
 
-## Create a searchable PDF document
+### How to Create a Searchable PDF document
 
 Aspose.PDF for .NET provides the feature to create as well as manipulate existing PDF documents. When adding Text elements inside PDF file, the resultant PDF is searchable. However if we are converting an Image containing text to PDF file, the contents inside PDF are not searchable. However as a workaround, we can use OCR over the resultant file, so that it becomes searchable.
 
@@ -56,13 +122,13 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
 {
     class ExampleCreateDocument
     {
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
+        private const string _dataDir = "C:\\Samples";
         public static void CreateSearchableDocuments(string file)
         {
             Aspose.Pdf.Document doc = new Aspose.Pdf.Document(file);
             bool convertResult = false;
             try
-            {               
+            {
                 convertResult = doc.Convert(CallBackGetHocr);
             }
             catch (Exception ex)
@@ -70,7 +136,7 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
                 Console.WriteLine(ex.Message);
             }
             doc.Save(file);
-            doc.Dispose();          
+            doc.Dispose();
         }
 
         static string CallBackGetHocr(System.Drawing.Image img)
@@ -109,7 +175,7 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
                 return text;
             }
             finally
-            {            
+            {
                 if (System.IO.File.Exists(tmpFile))
                     System.IO.File.Delete(tmpFile);
                 if (System.IO.File.Exists(tmpFile + ".hocr"))
@@ -119,3 +185,67 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
     }
 }
 ```
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

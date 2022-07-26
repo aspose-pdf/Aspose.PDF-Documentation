@@ -1,5 +1,5 @@
 ---
-title: Convert various file formats to PDF using Java
+title: Convert various file formats to PDF 
 linktitle: Convert other file formats to PDF 
 type: docs
 weight: 80
@@ -17,12 +17,12 @@ sitemap:
 
 <abbr title="electronic publication">EPUB</abbr> (short for electronic publication) is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub. EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device.
 
-In order to convert EPUB files to PDF format, Aspose.PDF for Java has a class named [EpubLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/EpubLoadOptions) which is used to load source EPUB file. After that, the object is passed as an argument to [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization, as it helps the PDF rendering engine to determine the source document's input format.
+In order to convert EPUB files to PDF format, Aspose.PDF for Java has a class named [EpubLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/EpubLoadOptions) which is used to load source EPUB file. After that, the object is passed as an argument to [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization, as it helps the PDF rendering engine to determine the source document's input format.
 
 The following code snippet shows the process of converting an EPUB file into PDF format.
 
-1. Create a EPUB [`LoadOptions`](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions).
-1. Initialize [`Document`](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object.
+1. Create a EPUB [`LoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions).
+1. Initialize [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object.
 1. Save output PDF document.
 
 ```java
@@ -143,7 +143,7 @@ Aspose.PDF for for Java presents you online free application ["PCL to PDF"](http
 
 ### Converting a PCL file into PDF format
 
-To allow conversion from PCL to PDF, [Aspose.PDF for Java](https://products.aspose.com/pdf/java) has the class [PclLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PclLoadOptions) which is used to initialize the [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. This object is then passed as an argument during [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the source document's input format.
+To allow conversion from PCL to PDF, [Aspose.PDF for Java](https://products.aspose.com/pdf/java) has the class [PclLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PclLoadOptions) which is used to initialize the [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. This object is then passed as an argument during [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the source document's input format.
 
 The following code snippet shows the process of converting a PCL file into PDF format.
 
@@ -322,7 +322,7 @@ XPS, XML Paper Specification, is a Microsoft file format used to integrate docum
 
 The file format is basically a zipped XML file, primarily used for distribution and storage. It's very difficult to edit and mostly implemented by Microsoft.
 
-To convert an XPS file to PDF using [Aspose.PDF for Java](https://products.aspose.com/pdf/java), use [XpsLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/XpsLoadOptions) class. This is used to initialize a [LoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. Later, this object is passed as an argument during the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the source document's input format.
+To convert an XPS file to PDF using [Aspose.PDF for Java](https://products.aspose.com/pdf/java), use [XpsLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/XpsLoadOptions) class. This is used to initialize a [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. Later, this object is passed as an argument during the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the source document's input format.
 
 In both XP and Windows 7, you should find an XPS Printer pre-installed if you look in the Control Panel and then Printers. To create XPS files you can use that printer for the output device. In Windows 7, you should be able to just double-click the file to open it in an XPS viewer. You may also download [XPS viewer](http://windows.microsoft.com/en-US/windows-vista/what-is-the-xps-viewer) from Microsoft's website.
 
@@ -370,7 +370,7 @@ Aspose.PDF for Java presents you online free application ["XPS to PDF"](https://
 
 **Aspose.PDF for Java** support features converting PostScript files to PDF format. One of the features from Aspose.PDF is that you can set a set of font folders to be used during conversion.
 
-In order to convert a PostScript file to PDF format, Aspose.PDF for Java offers [PsLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PsLoadOptions) class which is used to initialize the LoadOptions object. Later this object can be passed as an argument to Document object constructor, which will help PDF Rendering Engine to determine the format of source document.
+In order to convert a PostScript file to PDF format, Aspose.PDF for Java offers [PsLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PsLoadOptions) class which is used to initialize the LoadOptions object. Later this object can be passed as an argument to Document object constructor, which will help PDF Rendering Engine to determine the format of source document.
 
 Following code snippet can be used to convert a PostScript file into PDF format:
 
@@ -425,7 +425,7 @@ Consider option using XML document based on XSL-FO standard.
 
 ### Convert XSL-FO to PDF
 
-The conversion of XSL-FO files to PDF can be implemented using [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object with [XslFoLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions),  but sometimes you can meet with the incorrect file structure. 
+The conversion of XSL-FO files to PDF can be implemented using [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions),  but sometimes you can meet with the incorrect file structure. 
 
 ```java
 package com.aspose.pdf.examples;
@@ -494,7 +494,7 @@ public static void Convert_XSLFO_to_PDF_Adv() throws IOException {
 
 The LaTeX file format is a text file format with markup in the LaTeX derivative of the TeX family of languages and LaTeX is a derived format of the TeX system. LaTeX (ˈleɪtɛk/ lay-tek or lah-tek) is a document preparation system and document markup language. It is widely used for the communication and publication of scientific documents in many fields, including mathematics, physics, and computer science. It also has a prominent role in the preparation and publication of books and articles that contain complex multilingual materials, such as Sanskrit and Arabic, including critical editions. LaTeX uses the TeX typesetting program for formatting its output and is itself written in the TeX macro language.
 
-**Aspose.PDF for Java** supports the feature to convert TeX files to PDF format and in order to accomplish this requirement, com.aspose.pdf package has a class named [LatexLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LatexLoadOptions) which provides the capabilities to load LaTex files and render the output in PDF format using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/document) class. The following code snippet shows the process of converting LaTex file to PDF format.
+**Aspose.PDF for Java** supports the feature to convert TeX files to PDF format and in order to accomplish this requirement, com.aspose.pdf package has a class named [LatexLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LatexLoadOptions) which provides the capabilities to load LaTex files and render the output in PDF format using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) class. The following code snippet shows the process of converting LaTex file to PDF format.
 
 ```java
 package com.aspose.pdf.examples;

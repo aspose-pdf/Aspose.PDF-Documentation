@@ -15,13 +15,13 @@ sitemap:
 
 A Text Annotation is an annotation attached to a specific location in a PDF document. When closed, the annotation is displayed as an icon; when opened, it should display a pop-up window containing the note text in the font and size chosen by the reader.
 
-Annotations are contained by the [Annotations](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation) collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection.
+Annotations are contained by the [Annotations](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation) collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection.
 
-To add an annotation to a particular page, add it to that page’s Annotations collection with the [Add](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_collection#a1f7bf6c38fe2f97904a3575f5241d6c9) method.
+To add an annotation to a particular page, add it to that page’s Annotations collection with the [Add](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_collection#a1f7bf6c38fe2f97904a3575f5241d6c9) method.
 
 1. First, create an annotation that you want to add to the PDF.
 1. Then open the input PDF.
-1. Add the annotation to the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) object’s Annotations collection.
+1. Add the annotation to the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) object’s Annotations collection.
 
 The following code snippet shows you how to add an annotation in a PDF page.
 

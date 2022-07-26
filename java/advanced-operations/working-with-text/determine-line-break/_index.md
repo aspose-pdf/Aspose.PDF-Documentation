@@ -13,7 +13,7 @@ sitemap:
 
 ## Track Line Breaking of Multi-Line TextFragment
 
-Aspose.PDF for Java offers logging (tracking) background processing (line breaking) of multi-line text fragments in text adding scenarios. You can use the [GetNotifications](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getNotifications--)() method of [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) class as follows, in order to track line breaking of text fragment:
+Aspose.PDF for Java offers logging (tracking) background processing (line breaking) of multi-line text fragments in text adding scenarios. You can use the [GetNotifications](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getNotifications--)() method of [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) class as follows, in order to track line breaking of text fragment:
 
 ```java
 package com.aspose.pdf.examples;

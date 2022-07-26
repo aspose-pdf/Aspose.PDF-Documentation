@@ -1,5 +1,5 @@
 ---
-title: Release Notes
+title: Release Notes 
 type: docs
 weight: 90
 url: /java/release-notes/
@@ -10,6 +10,7 @@ lastmod: "2021-06-05"
 
 **Aspose.PDF** inform users about fixed bugs, functionality extensions, new features, and enhancement of our product.
 
+- [Release Notes - 2022](/pdf/java/release-notes-2022/)
 - [Release Notes - 2021](/pdf/java/release-notes-2021/)
 - [Release Notes - 2020](/pdf/java/release-notes-2020/)
 - [Release Notes - 2019](/pdf/java/release-notes-2019/)

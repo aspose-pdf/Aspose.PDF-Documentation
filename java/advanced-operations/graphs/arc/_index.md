@@ -17,17 +17,17 @@ Aspose.PDF for Java supports the feature to add graph objects (for example graph
 
 Follow the steps below:
 
-1. Create [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) instance
+1. Create [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) instance
 
-1. Create [Drawing object](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame) with certain dimensions
+1. Create [Drawing object](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame) with certain dimensions
 
-1. Set [Border](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph#setBorder-com.aspose.pdf.BorderInfo-) for Drawing object
+1. Set [Border](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph#setBorder-com.aspose.pdf.BorderInfo-) for Drawing object
 
-1. Add [Graph](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) object to paragraphs collection of page
+1. Add [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) object to paragraphs collection of page
 
 1. Save our PDF file
 
-The following code snippet shows how to add a [Arc](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Arc) object.
+The following code snippet shows how to add a [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Arc) object.
 
 ```java
     public static void ExampleArc() {

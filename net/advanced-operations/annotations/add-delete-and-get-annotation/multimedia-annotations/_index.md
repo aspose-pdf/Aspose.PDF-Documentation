@@ -5,22 +5,87 @@ type: docs
 weight: 40
 url: /net/multimedia-annotation/
 description: Aspose.PDF for .NET allows you to add, get, and delete the multimedia annotation from your PDF document.
-lastmod: "2021-11-24"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "PDF Multimedia Annotation using C#",
+    "alternativeHeadline": "How to add Multimedia Annotation in PDF",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, multimedia annotation, screen annotation, sound annotation, widget annotation, 3D annotation",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/multimedia-annotation/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/multimedia-annotation/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "Aspose.PDF for .NET allows you to add, get, and delete the multimedia annotation from your PDF document."
+}
+</script>
 
-Annotations in a PDF document are contained in a [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method.
+Annotations in a PDF document are contained in a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method.
 
-Use the [ScreenAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) class in the Aspose.PDF.InteractiveFeatures.Annotations namespace to include SWF files as annotations in a PDF document instead. A screen annotation specifies a region of a page upon which media clips may be played.
+Use the [ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) class in the Aspose.PDF.InteractiveFeatures.Annotations namespace to include SWF files as annotations in a PDF document instead. A screen annotation specifies a region of a page upon which media clips may be played.
 
-When you need to add an external video link in PDF document, you can use [MovieAnnotaiton](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation).
+When you need to add an external video link in PDF document, you can use [MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation).
 A Movie Annotation contains animated graphics and sound to be presented on the computer screen and through the speakers.
 
-A [Sound Annotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound.
+A [Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound.
 
-However, when there is a requirement to embed media inside PDF document, you need to use [RichMediaAnnotation](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
+However, when there is a requirement to embed media inside PDF document, you need to use [RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
 
 The following methods/properties of RichMediaAnnotation class can be used.
 
@@ -192,7 +257,7 @@ The following code snippet shows how to Delete MultimediaAnnotation from PDF fil
 
 ## Add Widget Annotations
 
-Interactive forms use [Widget Annotations](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) to represent the appearance of fields and to manage user interactions.
+Interactive forms use [Widget Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) to represent the appearance of fields and to manage user interactions.
 We use these form elements that add to a PDF to make it easier to enter, submit information, or perform some other user interactions.
 
 Widget Annotations are a graphical representation of a form field on specific pages, so we cannot create it directly as an annotation.
@@ -289,7 +354,7 @@ for (var pageIndex = 1; pageIndex <= document.Pages.Count;
 
 ```
 
-We call [Form.Add method](https://apireference.aspose.com/pdf/net/aspose.pdf.forms.form/add/methods/2) with the following parameters: field, name, and the index of the pages that this field will be added to.
+We call [Form.Add method](https://reference.aspose.com/pdf/net/aspose.pdf.forms.form/add/methods/2) with the following parameters: field, name, and the index of the pages that this field will be added to.
 
 And to get the full result, we need disable the “First” and “Prev” buttons on the first page and the “Next” and “Last” buttons on the last page.
 
@@ -316,14 +381,14 @@ The main task of 3D modeling is the idea of a future object or object because, i
 
 3D annotation is added using a model created in the U3D format.
 
-1. Create a new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)
-1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent)
-1. Create [3dArtWork](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) object and link it to the document and 3DContent
+1. Create a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
+1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent)
+1. Create [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) object and link it to the document and 3DContent
 1. Tune pdf3dArtWork object:
 
     - 3DLightingScheme - (we will set  `CAD` in example)
     - 3DRenderMode - (we will set `Solid` in example)
-    - Fill `ViewArray`, create at least one [3D View](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) and add it to array.
+    - Fill `ViewArray`, create at least one [3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) and add it to array.
 
 1. Set 3 basic parameters in annotation:
     - the `page` on which the annotation will be placed,
@@ -332,7 +397,7 @@ The main task of 3D modeling is the idea of a future object or object because, i
 1. For a better presentation of the 3D object, set the Border frame
 1. Set the default view (for example - TOP)
 1. Add some additional parameters: name, preview poster etc.
-1. Add Annotation to the [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page)
+1. Add Annotation to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)
 1. Save the result
 
 ### Example
@@ -373,3 +438,67 @@ Please check the following code snippet to add 3D Annotation.
 This code example showed us such a model:
 
 ![3D Annotation demo](3d_demo.png)
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

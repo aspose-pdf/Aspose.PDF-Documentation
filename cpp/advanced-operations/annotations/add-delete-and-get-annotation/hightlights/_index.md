@@ -25,12 +25,12 @@ The next feature is the ability to get or set the settings for underline annotat
 
 In order to add an Text Markup Annotation to the PDF document, we need to perform the following actions:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
+1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
 1. Create annotations:
-    - [HighlightAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.highlight_annotation) and set parameters (title, color).
-    - [StrikeOutAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.strike_out_annotation) and set parameters (title, color).
-    - [SquigglyAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.squiggly_annotation) and set parameters (title, color).
-    - [UnderlineAnnotation](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.underline_annotation) and set parameters (title, color).
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.highlight_annotation) and set parameters (title, color).
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.strike_out_annotation) and set parameters (title, color).
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.squiggly_annotation) and set parameters (title, color).
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.underline_annotation) and set parameters (title, color).
 1. After we should add all annotations to the page.
 
 ```cpp

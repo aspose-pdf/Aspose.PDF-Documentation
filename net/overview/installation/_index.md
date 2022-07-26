@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF Install 
+title: How to Install Aspose.PDF for .NET
 linktitle: Installation
 type: docs
 weight: 40

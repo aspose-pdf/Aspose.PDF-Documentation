@@ -13,11 +13,11 @@ sitemap:
 
 ## Extracting Image from Signature Field
 
-Aspose.PDF for C++ supports the feature to digitally sign the PDF files using the [SignatureField](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field) class and while signing the document.
+Aspose.PDF for C++ supports the feature to digitally sign the PDF files using the [SignatureField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field) class and while signing the document.
 
-In order to extract signature information, we have introduced the [ExtractImage](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field#a63f492fa6d3f83f0265b8e4f4c850293) method to the SignatureField class.
+In order to extract signature information, we have introduced the [ExtractImage](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field#a63f492fa6d3f83f0265b8e4f4c850293) method to the SignatureField class.
 
-Please take a look at the following code snippet which demonstrates the steps to extract an image from the [SignatureField](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field) object:
+Please take a look at the following code snippet which demonstrates the steps to extract an image from the [SignatureField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field) object:
 
 ```cpp
 void SecuringAndSigning::ExtractingImageFromSignatureField() {
@@ -46,7 +46,7 @@ void SecuringAndSigning::ExtractingImageFromSignatureField() {
 
 ## Extract Signature Information
 
-Aspose.PDF for C++ allows extracting signature information. For this, we have introduced the [ExtractCertificate](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field#a73686c960036f755b6e800b84c27bee1) method to the [SignatureField](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field) class. 
+Aspose.PDF for C++ allows extracting signature information. For this, we have introduced the [ExtractCertificate](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field#a73686c960036f755b6e800b84c27bee1) method to the [SignatureField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.signature_field) class. 
 
 Please take a look at the following code snippet which demonstrates the steps to extract the certificate from SignatureField object:
 

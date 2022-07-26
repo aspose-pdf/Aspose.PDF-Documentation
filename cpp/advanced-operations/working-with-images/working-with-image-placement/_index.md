@@ -8,7 +8,7 @@ description: This section describes the features of working with image placement
 lastmod: "2021-12-18"
 ---
 
-**Aspose.PDF for C++** suppots the [ImagePlacement](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement), [ImagePlacementAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement_absorber) and [ImagePlacementCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement_collection) which provide similar capability as the classes described above to get an image’s resolution and position in a PDF document.
+**Aspose.PDF for C++** suppots the [ImagePlacement](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement), [ImagePlacementAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement_absorber) and [ImagePlacementCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image_placement_collection) which provide similar capability as the classes described above to get an image’s resolution and position in a PDF document.
 
 - ImagePlacementAbsorber performs image usage search as the ImagePlacement objects collection.
 - ImagePlacement provides the members Resolution and Rectangle that return actual image placement values.

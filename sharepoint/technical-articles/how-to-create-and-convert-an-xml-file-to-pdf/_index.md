@@ -4,6 +4,7 @@ type: docs
 weight: 30
 url: /sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
 lastmod: "2020-12-16"
+description: PDF SharePoint API is capable of creating and converting XML files into PDF format.
 ---
 
 {{% alert color="primary" %}}
@@ -11,7 +12,8 @@ lastmod: "2020-12-16"
 Aspose.PDF for SharePoint is built on top of our award winning Aspose.PDF for .NET component. Aspose.PDF for .NET provides remarkable features from the creation of PDF document from scratch to manipulation of existing PDF files. Among these features, XML to PDF conversion is one of the great features support by this product. So we believe that Aspose.PDF for SharePoint will also be capable of converting XML files into PDF format.
 
 {{% /alert %}}
-### **Creating and XML File and Converting it to PDF**
+
+## **Creating and XML File and Converting it to PDF**
 
 {{% alert color="primary" %}}
 

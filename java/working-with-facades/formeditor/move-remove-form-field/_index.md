@@ -11,7 +11,7 @@ draft: false
 
 ## Move Form Field to a New Location in Existing PDF File
 
-If you want to move a form field to a new location then you can use [moveField](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#moveField-java.lang.String-float-float-float-float-) method of [FormEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. You only need to provide the field name and new location of this field to the [moveField](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#moveField-java.lang.String-float-float-float-float-) method. You also need to save the updated PDF file using Save method of [FormEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. The following code snippet shows you how to move a form field in a new location in a PDF file.
+If you want to move a form field to a new location then you can use [moveField](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#moveField-java.lang.String-float-float-float-float-) method of [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. You only need to provide the field name and new location of this field to the [moveField](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#moveField-java.lang.String-float-float-float-float-) method. You also need to save the updated PDF file using Save method of [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. The following code snippet shows you how to move a form field in a new location in a PDF file.
 
 ```java
  public static void MoveField()
@@ -25,7 +25,7 @@ If you want to move a form field to a new location then you can use [moveField](
 
 ## Delete Form Field from an Existing PDF File 
 
-In order to delete a form field from an existing PDF file, you can use RemoveField method of FormEditor class. This method takes only one argument: field name. You need to create an object of FormEditor class, call [removeField](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#removeField-java.lang.String-) method to remove a particular field from the PDF and then call the Save method to save the updated PDF file. The following code snippet shows you how to delete form fields from an existing PDF file.
+In order to delete a form field from an existing PDF file, you can use RemoveField method of FormEditor class. This method takes only one argument: field name. You need to create an object of FormEditor class, call [removeField](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#removeField-java.lang.String-) method to remove a particular field from the PDF and then call the Save method to save the updated PDF file. The following code snippet shows you how to delete form fields from an existing PDF file.
 
 ```java
  public static void RemoveFields()
@@ -40,7 +40,7 @@ In order to delete a form field from an existing PDF file, you can use RemoveFie
 
 ## Rename Form Fields in PDF
 
-Also you can rename your field using [renameField](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#renameField-java.lang.String-java.lang.String-) method of [FormEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class.
+Also you can rename your field using [renameField](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#renameField-java.lang.String-java.lang.String-) method of [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class.
 
 ```java
     public static void RenameFields()

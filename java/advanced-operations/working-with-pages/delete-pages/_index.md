@@ -1,5 +1,5 @@
 ---
-title: Delete PDF Pages programmatically Java
+title: Delete PDF Pages programmatically 
 linktitle: Delete PDF Pages
 type: docs
 weight: 40
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-You can delete pages from a PDF file using Aspose.PDF for Java. To delete a particular page from the [PageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection) simply call the delete() method and specify the index of the particular page you want to delete. Then call the save method to save the updated PDF file.
+You can delete pages from a PDF file using Aspose.PDF for Java. To delete a particular page from the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection) simply call the delete() method and specify the index of the particular page you want to delete. Then call the save method to save the updated PDF file.
 
 ## Delete Page from PDF File
 

@@ -1,5 +1,5 @@
 ---
-title: PDF Highlights Annotation using Java
+title: PDF Highlights Annotation 
 linktitle: Highlights Annotation
 type: docs
 weight: 20
@@ -25,12 +25,12 @@ The next feature is the ability to get or set the settings of the underline anno
 
 In order to add an Text Markup Annotation to the PDF document, we need to perform the following actions:
 
-1. Load the PDF file - new [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
+1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
 1. Create annotations:
-    - [HighlightAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/HighlightAnnotation) and set parameters (title, color).
-    - [StrikeOutAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/StrikeOutAnnotation) and set parameters (title, color).
-    - [SquigglyAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/SquigglyAnnotation) and set parameters (title, color).
-    - [UnderlineAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/UnderlineAnnotation) and set parameters (title, color).
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/HighlightAnnotation) and set parameters (title, color).
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/StrikeOutAnnotation) and set parameters (title, color).
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/SquigglyAnnotation) and set parameters (title, color).
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/UnderlineAnnotation) and set parameters (title, color).
 1. After we should add all annotations to the page.
 
 ```java

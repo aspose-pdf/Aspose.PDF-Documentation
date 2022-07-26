@@ -17,11 +17,11 @@ Moving PDF pages in document is very interesting and popular task.
 This topic explains how to move page from one PDF document to the end of another document using C++.
 To move an page we should:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the source PDF file.
-1. Get Page from the the [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's.
-1. [Add](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1) page to the destination document.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the source PDF file.
+1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's.
+1. [Add](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1) page to the destination document.
 1. Save the output PDF using the Save method.
-1. [Delete](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#afaa57836d1b206e396f2cb7dd91b5d15) page in source document.
+1. [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#afaa57836d1b206e396f2cb7dd91b5d15) page in source document.
 1. Save the source PDF using the Save method.
 
 The following code snippet shows you how to move one page.
@@ -48,13 +48,13 @@ void MovePage()
 
 ## Moving bunch of Pages from one PDF Document to Another
 
-1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the source PDF file.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the source PDF file.
 1. Define an array with page numbers to be moved.
 1. Run loop through array:
-1. Get Page from the the [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's.
-1. [Add](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1) page to the destination document.
+1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's.
+1. [Add](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1) page to the destination document.
 1. Save the output PDF using the Save method.
-1. [Delete](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#afaa57836d1b206e396f2cb7dd91b5d15) page in source document.
+1. [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#afaa57836d1b206e396f2cb7dd91b5d15) page in source document.
 1. Save the source PDF using the Save method.
 
 The following code snippet shows you how to insert an empty page at the end of a PDF file.
@@ -87,10 +87,10 @@ void MoveBunchPages()
 
 ## Moving a Page in new location in the current PDF Document
 
-1. Create a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the source PDF file.
-1. Get Page from the the [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's. collection's.
-1. [Add](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1)  page to the new location (for example to end).
-1. [Delete](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#afaa57836d1b206e396f2cb7dd91b5d15)  page in previous location.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the source PDF file.
+1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's. collection's.
+1. [Add](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1)  page to the new location (for example to end).
+1. [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#afaa57836d1b206e396f2cb7dd91b5d15)  page in previous location.
 1. Save the output PDF using the Save method.
 
 ```cpp

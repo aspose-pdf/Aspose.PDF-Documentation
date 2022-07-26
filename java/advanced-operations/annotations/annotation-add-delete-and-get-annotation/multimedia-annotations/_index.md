@@ -1,5 +1,5 @@
 ---
-title: PDF Multimedia Annotation using Java
+title: PDF Multimedia Annotation 
 linktitle: Multimedia Annotation
 type: docs
 weight: 40
@@ -11,16 +11,16 @@ sitemap:
     priority: 0.7
 ---
 
-Annotations in a PDF document are contained in a [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method.
+Annotations in a PDF document are contained in a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) object’s Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page’s Annotations collection using the Add method.
 
-Use the [ScreenAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/ScreenAnnotation) class in the Aspose.PDF.InteractiveFeatures.Annotations namespace to include SWF files as annotations in a PDF document instead. A screen annotation specifies a region of a page upon which media clips may be played.
+Use the [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/ScreenAnnotation) class in the Aspose.PDF.InteractiveFeatures.Annotations namespace to include SWF files as annotations in a PDF document instead. A screen annotation specifies a region of a page upon which media clips may be played.
 
-When you need to add an external video link in PDF document, you can use [MovieAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/MovieAnnotation).
+When you need to add an external video link in PDF document, you can use [MovieAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/MovieAnnotation).
 A Movie Annotation contains animated graphics and sound to be presented on the computer screen and through the speakers.
 
-A [Sound Annotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/soundannotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound.
+A [Sound Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation) shall analogous to a text annotation except that instead of a text note, it contains sound recorded from the computer’s microphone or imported from a file. When the annotation is activated, the sound shall be played. The annotation shall behave like a text annotation in most ways, with a different icon (by default, a speaker) to indicate that it represents a sound.
 
-However, when there is a requirement to embed media inside PDF document, you need to use [RichMediaAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/RichMediaAnnotation).
+However, when there is a requirement to embed media inside PDF document, you need to use [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/RichMediaAnnotation).
 
 The following methods/properties of RichMediaAnnotation class can be used.
 
@@ -190,7 +190,7 @@ The following code snippet shows how to Delete MultimediaAnnotation from PDF fil
 
 ## Add Widget Annotations
 
-Interactive forms use [Widget Annotations](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/WidgetAnnotation) to represent the appearance of fields and to manage user interactions.
+Interactive forms use [Widget Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/WidgetAnnotation) to represent the appearance of fields and to manage user interactions.
 We use these form elements that add to a PDF to make it easier to enter, submit information, or perform some other user interactions.
 
 Widget Annotations are a graphical representation of a form field on specific pages, so we cannot create it directly as an annotation.
@@ -328,14 +328,14 @@ The main task of 3D modeling is the idea of a future object or object because, i
 
 3D annotation is added using a model created in the U3D format with Aspose.PDF for Java
 
-1. Create a new [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document)
-1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/PDF3DContent)
-1. Create [3dArtWork](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PDF3DArtwork) object and link it to the document and 3DContent
+1. Create a new [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document)
+1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/PDF3DContent)
+1. Create [3dArtWork](https://reference.aspose.com/pdf/java/com.aspose.pdf/PDF3DArtwork) object and link it to the document and 3DContent
 1. Tune pdf3dArtWork object:
 
     - 3DLightingScheme - (we will set  `CAD` in example)
     - 3DRenderMode - (we will set `Solid` in example)
-    - Fill `ViewArray`, create at least one [3D View](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PDF3DView) and add it to array.
+    - Fill `ViewArray`, create at least one [3D View](https://reference.aspose.com/pdf/java/com.aspose.pdf/PDF3DView) and add it to array.
 
 1. Set 3 basic parameters in annotation:
     - the `page` on which the annotation will be placed,
@@ -344,7 +344,7 @@ The main task of 3D modeling is the idea of a future object or object because, i
 1. For a better presentation of the 3D object, set the Border frame
 1. Set the default view (for example - TOP)
 1. Add some additional parameters: name, preview poster etc.
-1. Add Annotation to the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page)
+1. Add Annotation to the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)
 1. Save the result
 
 ## Example

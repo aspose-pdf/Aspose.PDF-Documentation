@@ -1,5 +1,5 @@
 ---
-title: Add watermark to PDF using Java
+title: Add watermark to PDF 
 linktitle: Add watermark
 type: docs
 weight: 90
@@ -13,13 +13,13 @@ sitemap:
 
 **Aspose.PDF for Java** allows adding watermarks to your PDF document using Artifacts. Please check this article to resolve your task.
 
-A watermark created with Adobe Acrobat is called an artifact (as described in 14.8.2.2 Real Content and Artifacts of the PDF specification). In order to work with artifacts, Aspose.PDF has two classes: [Artifact](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Artifact) and [ArtifactCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/artifactcollection).
+A watermark created with Adobe Acrobat is called an artifact (as described in 14.8.2.2 Real Content and Artifacts of the PDF specification). In order to work with artifacts, Aspose.PDF has two classes: [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/Artifact) and [ArtifactCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/artifactcollection).
 
-In order to get all artifacts on a particular page, the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/Page) class has the Artifacts property. This topic explains how to work with artifact in PDF files.
+In order to get all artifacts on a particular page, the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/Page) class has the Artifacts property. This topic explains how to work with artifact in PDF files.
 
 ## Working with Artifacts
 
-The [Artifact](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Artifact) class contains following properties:
+The [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/Artifact) class contains following properties:
 
 **Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
 **Artifact.Subtype** – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).

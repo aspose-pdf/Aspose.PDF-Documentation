@@ -18,7 +18,7 @@ sitemap:
 According to the PDF / UA ISO reference, content that is not important or does not appear in the background does not carry relevant information, should be flagged as an artifact so that assistive technologies can ignore it.
 If artifacts cannot be identified in the program to create, this must be done manually using Aspose.PDF for C++.
 
-The [Artifact](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.artifact) class contains following properties:
+The [Artifact](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.artifact) class contains following properties:
 
 - **Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
 - **Artifact.Subtype** – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
@@ -40,9 +40,9 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 For an example of working with artifacts in a PDF file, let's take a watermark.
 
 A watermark created with support for Adobe Acrobat is referred to as an artifact (as described in 14.8.2.2 Present Content and PDF Specification Artifacts). For working with artifacts Aspose.PDF contains 2 classes:
-[Artifact](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.artifact) and [ArtifactCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.artifact_collection).
+[Artifact](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.artifact) and [ArtifactCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.artifact_collection).
 
-In order to get all artifacts on a particular page, the [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) class has the Artifacts property. This topic shows how to work with Watermark artifact in PDF files.
+In order to get all artifacts on a particular page, the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) class has the Artifacts property. This topic shows how to work with Watermark artifact in PDF files.
 
 The following code snippet shows how to get each watermark on the first page of a PDF file wiuth C++:
 
@@ -69,7 +69,7 @@ void Artifacts::SetWatermark() {
 }
 ```
 
-Background images can be used to add watermarks or exclusive designs to PDF documents. Aspose.PDF for C++ uses the [BackgroundArtifact](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.background_artifact) class to add a background image to the page object.
+Background images can be used to add watermarks or exclusive designs to PDF documents. Aspose.PDF for C++ uses the [BackgroundArtifact](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.background_artifact) class to add a background image to the page object.
 
 The next code snippet shows you how to add a background image to PDF pages with the BackgroundArtifact object:
 

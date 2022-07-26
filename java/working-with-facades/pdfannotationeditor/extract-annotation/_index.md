@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-[extractAnnotations](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor#extractAnnotations-int-int-int:A-0) method allows you to extract annotations from a PDF file. In order to extract annotations, you need to create [PdfAnnotationEditor](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor) object and bind PDF file using [BindPdf](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Facade#bindPdf-com.aspose.pdf.IDocument-) method. After that, you need to create an enumeration of annotation types which you want to extract from PDF file. And finally, save the updated PDF file using Save method of the PdfAnnotationEditor object. The following code snippet shows you how to extract annotations from PDF file.
+[extractAnnotations](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor#extractAnnotations-int-int-int:A-0) method allows you to extract annotations from a PDF file. In order to extract annotations, you need to create [PdfAnnotationEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfAnnotationEditor) object and bind PDF file using [BindPdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Facade#bindPdf-com.aspose.pdf.IDocument-) method. After that, you need to create an enumeration of annotation types which you want to extract from PDF file. And finally, save the updated PDF file using Save method of the PdfAnnotationEditor object. The following code snippet shows you how to extract annotations from PDF file.
 
 ```java
   public static void ExtractAnnotation() {

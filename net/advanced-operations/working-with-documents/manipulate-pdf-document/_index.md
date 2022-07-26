@@ -1,20 +1,87 @@
 ---
-title: Manipulate PDF Document using Aspose.PDF for .NET
+title: Manipulate PDF Document in C#
 linktitle: Manipulate PDF Document
 type: docs
 weight: 20
 url: /net/manipulate-pdf-document/
-lastmod: "2021-06-05"
-description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and how to determine the Progress of PDF file generation.
-lastmod: "2021-06-05"
+description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and etc.
+keywords: "manipulate pdf c#"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Manipulate PDF Document",
+    "alternativeHeadline": "How to manipulate PDF file",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, dotnet, manipulate pdf file",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/manipulate-pdf-document/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/manipulate-pdf-document/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and etc."
+}
+</script>
+
+## **Manipulate PDF Document in C#**
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)
 
-To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class Validate method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://apireference.aspose.com/pdf/net/aspose.pdf/pdfformat) enumeration : PDF_A_1A or PDF_A_1B.
+To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class Validate method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat) enumeration : PDF_A_1A or PDF_A_1B.
 
 {{% alert color="primary" %}}
 
@@ -183,7 +250,7 @@ doc.Save(outFile);
 
 ### Hide Page Numbers in TOC
 
-In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://apireference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) property of [TOCInfo](https://apireference.aspose.com/pdf/net/aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
+In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) property of [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -298,7 +365,7 @@ doc.Save(dataDir);
 
 A customer asked us to add a feature that allows developers to determine the progress of PDF file generation. Here’s the response to that request.
 
-The field [CustomerProgressHandler](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) of [DocSaveOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class allows you to determine how PDF generation is going. The handler has the following types:
+The field [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) of [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class allows you to determine how PDF generation is going. The handler has the following types:
 
 - DocSaveOptions.ConversionProgessEventHandler
 - DocSaveOptions.ProgressEventHandlerInfo
@@ -369,3 +436,67 @@ dataDir = dataDir + "FlattenForms_out.pdf";
 // Save the updated document
 doc.Save(dataDir);
 ```
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

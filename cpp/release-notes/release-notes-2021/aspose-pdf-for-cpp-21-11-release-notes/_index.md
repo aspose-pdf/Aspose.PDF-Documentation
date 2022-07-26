@@ -34,4 +34,4 @@ This page contains release notes information for Aspose.PDF for C++ 21.11.
 
 1. The new IEnumerable-level iterators and iterators for collections with duck typing will be added. The virtual native STL iterators are used where it is possible. New iterators are copiable, have full list of operators, work faster, and allow changing a container's element. But not all implementations provide all operators. E.g. the features of a one-direction iterator are available when Enumerator is used. An iterator dereferencement return type will be changed to reference.
 
-Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://apireference.aspose.com/pdf/cpp).
+Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).

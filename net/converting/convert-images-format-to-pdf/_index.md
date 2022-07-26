@@ -1,11 +1,11 @@
 ---
-title: Convert various Images formats to PDF using C#
+title: Convert various Images formats to PDF
 linktitle: Convert Images to PDF
 type: docs
 weight: 60
 url: /net/convert-images-format-to-pdf/
 lastmod: "2021-11-01"
-description: This topic show you how to Aspose.PDF for .NET library allows to convert various images formats such as, BMP, JPEG, JPEG, DICOM, PNG, TIFF, EMF and SVG to PDF.
+description: Convert various images formats such as, BMP, JPEG, JPEG, DICOM, PNG, TIFF, EMF and SVG to PDF with Aspose.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -20,14 +20,14 @@ Convert BMP files to PDF document using **Aspose.PDF for .NET** library.
 <abbr title="Bitmap Image File">BMP</abbr> images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
 You can convert BMP to PDF files with Aspose.PDF for .NET API. Therefore, you can follow the following steps to convert BMP images:
 
-1. Initialize a new [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)
+1. Initialize a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
 1. Load input BMP image
 1. Finally, save the output PDF file
 
 So the following code snippet follows these steps and shows how to convert BMP to PDF using C#:
 
 ```csharp
-Initialize empty PDF document
+//Initialize empty PDF document
 using (Document pdfDocument = new Document())
 {
     pdfDocument.Pages.Add();
@@ -56,8 +56,8 @@ Aspose presents you online free application ["BMP to PDF"](https://products.aspo
 
 Check next code snippet for converting CGM files  to PDF format.
 
-1. Create an instance of [CgmLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions) class.
-1. Create an instance of [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
+1. Create an instance of [CgmLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions) class.
+1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
 1. Save the document with the desired file name.
 
 ```csharp
@@ -77,7 +77,7 @@ public static void ConvertCGMtoPDF()
 
 1. Create an object of the Image class.
 1. Add the image to a page's Paragraphs collection.
-1. Specify the [FileType](https://apireference.aspose.com/pdf/net/aspose.pdf/image/properties/filetype) property.
+1. Specify the [FileType](https://reference.aspose.com/pdf/net/aspose.pdf/image/properties/filetype) property.
 1. Specify the file's path or source.
     - If an image is at a location on the hard drive, specify the path location using the Image.File property.
     - If an image is placed in a MemoryStream, pass the object holding the image to the Image.ImageStream property.
@@ -163,13 +163,50 @@ Aspose presents you online free application ["EMF to PDF"](https://products.aspo
 [![Aspose.PDF Convertion EMF to PDF using Free App](emf_to_pdf.png)](https://products.aspose.app/pdf/conversion/emf-to-pdf/)
 {{% /alert %}}
 
+## Convert GIF to PDF
+
+Convert GIF files to PDF document using **Aspose.PDF for .NET** library.
+
+<abbr title="Graphics Interchange Format">GIF</abbr> is able to store compressed data without loss of quality in a format of no more than 256 colors. The hardware-independent GIF format was developed in 1987 (GIF87a) by CompuServe for transmitting bitmap images over networks.
+You can convert GIF to PDF files with Aspose.PDF for .NET API. Therefore, you can follow the following steps to convert GIF images:
+
+1. Initialize a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
+1. Load input GIF image
+1. Finally, save the output PDF file
+
+So the following code snippet follows these steps and shows how to convert BMP to PDF using C#:
+
+```csharp
+//Initialize empty PDF document
+using (Document pdfDocument = new Document())
+{
+    pdfDocument.Pages.Add();
+    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+
+    // Load sample GIF image file
+    image.File = dataDir + "Sample.gif";
+    pdfDocument.Pages[1].Paragraphs.Add(image);
+
+    // Save output PDF document
+    pdfDocument.Save(dataDir + "GIFtoPDF.pdf");
+}
+```
+
+{{% alert color="success" %}}
+**Try to convert GIF to PDF online**
+
+Aspose presents you online free application ["GIF to PDF"](https://products.aspose.app/pdf/conversion/gif-to-pdf/), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion GIF to PDF using Free App](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/gif-to-pdf/)
+{{% /alert %}}
+
 ## Convert JPG to PDF
 
 No need to wonder how to convert JPG to PDF, because **Apose.PDF for .NET** library has best decision.
 
 You can very easy convert a JPG images to PDF with Aspose.PDF for .NET by following steps:
 
-1. Initialize object of [Document](https://apireference.aspose.com/page/net/aspose.page/document) class
+1. Initialize object of [Document](https://reference.aspose.com/page/net/aspose.page/document) class
 1. Add a new Page to PDF document
 1. Load JPG image and add to paragraph
 1. Save output PDF
@@ -310,10 +347,10 @@ Aspose.PDF for .NET presents you online free application ["SVG to PDF"](https://
 [![Aspose.PDF Convertion SVG to PDF with Free App](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
-To convert SVG files to PDF, use the class named [SvgLoadOptions](https://apireference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) which is used to initialize the [`LoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/loadoptions) object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
+To convert SVG files to PDF, use the class named [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) which is used to initialize the [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
 
-1. Create an instance of [`SvgLoadOptions`](https://apireference.aspose.com/pdf/net/aspose.pdf/loadoptions) class.
-1. Create an instance of [`Document`](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
+1. Create an instance of [`SvgLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) class.
+1. Create an instance of [`Document`](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
 1. Save the document with the desired file name.
 
 The following code snippet shows the process of converting SVG file into PDF format with Aspose.PDF for .NET.

@@ -1,5 +1,5 @@
 ---
-title: Using Tooltip in Java
+title: Using Tooltip 
 linktitle: PDF Tooltip
 type: docs
 weight: 20

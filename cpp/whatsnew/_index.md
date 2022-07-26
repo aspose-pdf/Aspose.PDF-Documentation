@@ -1,5 +1,5 @@
 ---
-title: What's new
+title: What's new from C++
 linktitle: What's new
 type: docs
 weight: 10
@@ -10,6 +10,20 @@ sitemap:
     priority: 0.8
 lastmod: "2021-12-22"
 ---
+
+## What's new in Aspose.PDF 22.3
+
+The method overloads were added to numerous classes. These support ArrayView-typed parameters where only ArrayPtr was supported previously.
+
+## What's new in Aspose.PDF 22.1
+
+The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 22.1:
+
+- the new implementation for System::Xml was provided. Previously, we had custom implementation which was based on the libxml2 and libxslt libraries. The new version is based on the ported CoreFX code
+
+- the double-conversion library was upgraded to 3.1.7 version
+
+- Dll files are signed with Aspose certificate
 
 ## What's new in Aspose.PDF 21.10
 

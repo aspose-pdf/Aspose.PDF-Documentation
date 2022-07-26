@@ -8,7 +8,7 @@ lastmod: "2021-06-05"
 draft: false
 ---
 
-In order to get file specific information of a PDF file, you need to create an object of [PdfFileInfo](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class. After that, you can get values of the individual properties like Subject, Title, Keywords and Creator etc.
+In order to get file specific information of a PDF file, you need to create an object of [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class. After that, you can get values of the individual properties like Subject, Title, Keywords and Creator etc.
 
 The following code snippet shows you how to get PDF file information.
 
@@ -35,7 +35,7 @@ The following code snippet shows you how to get PDF file information.
 
 ## Get Meta Info
 
-In order to get information, we use the [Header](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header) property. With 'Hashtable'  we get all the possible values.
+In order to get information, we use the [Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header) property. With 'Hashtable'  we get all the possible values.
 
 ```csharp
 public static void GetMetaInfo()

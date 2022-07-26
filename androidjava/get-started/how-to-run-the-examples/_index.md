@@ -1,5 +1,5 @@
 ---
-title: How to run other Aspose.PDF for Java examples
+title: How to run other Aspose.PDF for Android via Java examples
 linktitle: How to run other examples
 type: docs
 weight: 40
@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 ## Download from GitHub
 
-All examples of Aspose.PDF for Java are hosted on [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java). You can either clone the repository using your favorite Github client or download the ZIP file from [here](https://github.com/aspose-pdf/Aspose.PDF-for-Java/archive/master.zip).
+All examples of Aspose.PDF for Android via Java are hosted on [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java). You can either clone the repository using your favorite Github client or download the ZIP file from [here](https://github.com/aspose-pdf/Aspose.PDF-for-Java/archive/master.zip).
 
 Extract the contents of ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
 

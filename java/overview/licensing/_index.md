@@ -26,7 +26,7 @@ Once you are happy with your evaluation of **Aspose.PDF**, you can [purchase a l
 
 Every Aspose license carries a one-year subscription for free upgrades to any new versions or fixes that come out during this time. Technical support is free and unlimited and provided both to licensed and evaluation users.
 
->If you want to test Aspose.HTML for Java without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
+>If you want to test Aspose.PDF for Java without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
 ## Classic license
 
@@ -88,7 +88,7 @@ if (com.aspose.pdf.Document.isLicensed()) {
 
 Aspose.PDF allows developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
 
-A new class [Metered](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Metered) has been introduced to apply metered key. Following is the sample code demonstrating how to set metered public and private key.
+A new class [Metered](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered) has been introduced to apply metered key. Following is the sample code demonstrating how to set metered public and private key.
 
 ```java
 String publicKey = "";

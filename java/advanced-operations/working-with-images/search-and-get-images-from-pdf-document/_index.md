@@ -8,11 +8,11 @@ description: This section explain how to search and get images from PDF document
 lastmod: "2021-06-05"
 ---
 
-The [ImagePlacementAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacementAbsorber) allows you to search among images on all pages in a PDF document.
+The [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacementAbsorber) allows you to search among images on all pages in a PDF document.
 
 To search a whole document for images:
 
-1. Call the [Pages](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) collection’s Accept method. The Accept method takes an [ImagePlacementAbsorber](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacementAbsorber) object as a parameter. This returns a collection of [ImagePlacement](https://apireference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacement) objects.
+1. Call the [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) collection’s Accept method. The Accept method takes an [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacementAbsorber) object as a parameter. This returns a collection of [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacement) objects.
 1. Loop through the ImagePlacements objects and get their properties (Image, dimensions, resolution and so on).
 
 The following code snippet shows how to search a document for all its images.

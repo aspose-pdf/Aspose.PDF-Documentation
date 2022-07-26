@@ -13,11 +13,11 @@ sitemap:
 
 Aspose.PDF for C++ allows you to insert and create a Table inside PDF document while it's being generated from scratch or you can also add the table object in any existing PDF document. But you may have a requirement to [Manipulate Tables in existing PDF](https://docs.aspose.com/pdf/cpp/manipulate-tables-in-existing-pdf/) where you can update the contents in existing table cells. Also, you may come across a requirement to remove table objects from the existing PDF documents.
 
-In order to remove the tables, we need to use [TableAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.absorbed_table) class to get hold of tables in existing PDF and then call 'Remove' method.
+In order to remove the tables, we need to use [TableAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.absorbed_table) class to get hold of tables in existing PDF and then call 'Remove' method.
 
 ## Remove Table from PDF document
 
-We have added new function i.e. [Remove](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber#ace39006d8f44c9cb776ee26281a1cbb3) to the existing TableAbsorber Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
+We have added new function i.e. [Remove](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber#ace39006d8f44c9cb776ee26281a1cbb3) to the existing TableAbsorber Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
 
 >Headers:
 

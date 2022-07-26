@@ -1,5 +1,5 @@
 ---
-title: Crop PDF Pages programmatically Java
+title: Crop PDF Pages programmatically 
 linktitle: Crop Pages
 type: docs
 weight: 80

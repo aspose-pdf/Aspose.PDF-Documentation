@@ -20,4 +20,4 @@ This new version of Aspose.PDF for C++ has codebase of Aspose.PDF for .NET 20.2 
 - Property Aspose.Pdf.Facades.PdfFileEditor.KeepActions   
 - Property Aspose.Pdf.Forms.TextBoxField.TextVerticalAlignment
 
-You can refer to [API Reference](https://apireference.aspose.com/pdf/cpp) of Aspose.PDF for C++ for getting insight into the API's details.
+You can refer to [API Reference](https://reference.aspose.com/pdf/cpp) of Aspose.PDF for C++ for getting insight into the API's details.

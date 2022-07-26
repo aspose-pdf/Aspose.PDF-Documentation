@@ -4,7 +4,7 @@ linktitle: Release Notes
 type: docs
 weight: 130
 url: /net/release-notes/
-lastmod: "2021-06-05"
+lastmod: "2022-01-17"
 description: This section contains all the release notes that are regularly published and updated by the Aspose.PDF library.
 sitemap:
     changefreq: "weekly"
@@ -17,6 +17,7 @@ sitemap:
 
 **Aspose.PDF** inform users about fixed bugs, functionality extensions, new features, and enhancement of our product.
 
+- [Release Notes - 2022](/pdf/net/release-notes-2022/)
 - [Release Notes - 2021](/pdf/net/release-notes-2021/)
 - [Release Notes - 2020](/pdf/net/release-notes-2020/)
 - [Release Notes - 2019](/pdf/net/release-notes-2019/)

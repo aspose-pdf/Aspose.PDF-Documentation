@@ -10,7 +10,7 @@ draft: false
 
 ## Get Viewer Preference of an existing PDF File
 
-[ViewerPreference](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/viewerpreference) class represents display modes of PDF files; for example, positioning the document window in the center of the screen, hiding viewer application’s menu bar etc. 
+[ViewerPreference](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/viewerpreference) class represents display modes of PDF files; for example, positioning the document window in the center of the screen, hiding viewer application’s menu bar etc. 
 
 In order to read the settings we use 'getViewerPreference'. This method returns a variable where all settings are saved.
 

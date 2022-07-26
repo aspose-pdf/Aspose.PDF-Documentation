@@ -15,7 +15,7 @@ sitemap:
 
 Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner.
 
-Tables in a PDF document organize data in rows and columns in a systematic manner. Aspose.PDF for C++ API lets you add tables to a PDF document, and add rows and columns to it in your C++ applications. The [Table](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.table/) class is used to add a table to the document. The following steps can be followed to add a table to a PDF document using C++.
+Tables in a PDF document organize data in rows and columns in a systematic manner. Aspose.PDF for C++ API lets you add tables to a PDF document, and add rows and columns to it in your C++ applications. The [Table](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.table/) class is used to add a table to the document. The following steps can be followed to add a table to a PDF document using C++.
 
 ### Adding Table in Existing PDF Document
 
@@ -112,9 +112,9 @@ void AddingTableInExistingPDFDocument() {
 
 ### ColSpan and RowSpan in Tables
 
-Aspose.PDF for C++ presents a [ColSpan](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.cell#ae79c581d2245258699c98617e78c01d1) property to merge the columns in a table and [RowSpan](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.cell#a4eb7337d118314e6c2180670fb32721a) property to merge the rows.
+Aspose.PDF for C++ presents a [ColSpan](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.cell#ae79c581d2245258699c98617e78c01d1) property to merge the columns in a table and [RowSpan](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.cell#a4eb7337d118314e6c2180670fb32721a) property to merge the rows.
 
-We use [ColSpan](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.cell#ae79c581d2245258699c98617e78c01d1) or [RowSpan](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.cell#a4eb7337d118314e6c2180670fb32721a) property on the [Cell](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.cell) object which creates the table cell. After applying the required properties the created cell can be added to the table.
+We use [ColSpan](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.cell#ae79c581d2245258699c98617e78c01d1) or [RowSpan](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.cell#a4eb7337d118314e6c2180670fb32721a) property on the [Cell](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.cell) object which creates the table cell. After applying the required properties the created cell can be added to the table.
 
 ```cpp
 void AddTable_RowColSpan()
@@ -197,11 +197,11 @@ Check the drawing in detail. It shows that the borders of the table, rows, and c
 
 ## Borders
 
-To set the borders of Table, [Row](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.row) and [Cell](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.cell) objects, use the Table.Border, Row.Border and Cell.Border properties. Cell borders can also be set using the [Table](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.table) or Row class’ DefaultCellBorder property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
+To set the borders of Table, [Row](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.row) and [Cell](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.cell) objects, use the Table.Border, Row.Border and Cell.Border properties. Cell borders can also be set using the [Table](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.table) or Row class’ DefaultCellBorder property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
 
 ## Margins or Padding
 
-Cell padding can be managed using the Table class [DefaultCellPadding](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.table#ac64196de6dfed7550c3278892ed9dbe0) property. All padding related properties are assigned an instance of the [MarginInfo](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.margin_info/) class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters to create custom margins.
+Cell padding can be managed using the Table class [DefaultCellPadding](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.table#ac64196de6dfed7550c3278892ed9dbe0) property. All padding related properties are assigned an instance of the [MarginInfo](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.margin_info/) class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters to create custom margins.
 
 ![Margin and Border in PDF Table](margin-border.png)
 
@@ -260,7 +260,7 @@ void AddTable_MergingPadding() {
 }
 ```
 
-To create table with rounded corner, use the [BorderInfo](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.border_info) class [RoundedBorderRadius](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.border_info#a6a2bed69dd034fba9ce439dcbe1fd3de) value and set the table corner style to round.
+To create table with rounded corner, use the [BorderInfo](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.border_info) class [RoundedBorderRadius](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.border_info#a6a2bed69dd034fba9ce439dcbe1fd3de) value and set the table corner style to round.
 
 ```cpp
 void AddTable_RoundedBorderRadius()
@@ -342,7 +342,7 @@ void AddTable_AutoFitToWindow() {
 ### Get Table Width
 
 There are tasks in which you need to dynamically get the width of the table.
-The [Aspose.PDF.Table](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.table) class has a [GetWidth] method for this purpose (https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.table#a3361cc8d4af87eec2e3da616c474ac1c). For example, you haven't explicitly set the width of the table columns, and you haven't set [ColumnAdjustment] (https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf#afc01382935026dd569c96d77d09dc3a4) to AutoFitToContent. In this case, you can get the next table width.
+The [Aspose.PDF.Table](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.table) class has a [GetWidth] method for this purpose (https://reference.aspose.com/pdf/cpp/class/aspose.pdf.table#a3361cc8d4af87eec2e3da616c474ac1c). For example, you haven't explicitly set the width of the table columns, and you haven't set [ColumnAdjustment] (https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#afc01382935026dd569c96d77d09dc3a4) to AutoFitToContent. In this case, you can get the next table width.
 
 ```cpp
 void GetTableWidth() {
@@ -508,7 +508,7 @@ By default, paragraphs are added to a Page object's Paragraphs collection. Howev
 
 ### Sample: How to Render a Table on New Page using C++
 
-To render table on a new page, use the [IsInNewPage](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.base_paragraph#a614946048d22afb9dce4cd42346c7561) property in the [BaseParagraph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.base_paragraph) class.
+To render table on a new page, use the [IsInNewPage](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.base_paragraph#a614946048d22afb9dce4cd42346c7561) property in the [BaseParagraph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.base_paragraph) class.
 The following code snippet shows how.
 
 ```cpp

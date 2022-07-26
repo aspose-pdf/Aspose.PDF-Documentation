@@ -1,5 +1,5 @@
 ---
-title: Add Page Number to PDF with Java
+title: Add Page Number to PDF 
 linktitle: Add Page Number
 type: docs
 weight: 100
@@ -20,7 +20,7 @@ Try online. You can check the quality of Aspose.PDF conversion and view the resu
 
 {{% /alert %}}
 
-You can use [PageNumberStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageNumberStamp) class to add a page number stamp in a PDF document. The [PageNumberStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageNumberStamp) class provides methods to create a page number based stamp like format, margins, alignments, starting number etc. In order to add page number stamp, you need to create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and a [PageNumberStamp](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PageNumberStamp) object with required properties. After that, you can call [addStamp(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) method of the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) class to add the stamp in PDF file. You can also set the font attributes of the page number stamp.
+You can use [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageNumberStamp) class to add a page number stamp in a PDF document. The [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageNumberStamp) class provides methods to create a page number based stamp like format, margins, alignments, starting number etc. In order to add page number stamp, you need to create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and a [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageNumberStamp) object with required properties. After that, you can call [addStamp(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) method of the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) class to add the stamp in PDF file. You can also set the font attributes of the page number stamp.
 
 The following code snippet shows you how to add page numbers in a PDF file.
 

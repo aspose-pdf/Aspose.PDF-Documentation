@@ -1,19 +1,83 @@
 ---
-title: Set Privileges, Encrypt and Decrypt PDF File using C#
+title: Set Privileges, Encrypt and Decrypt PDF
 linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 20
 url: /net/set-privileges-encrypt-and-decrypt-pdf-file/
-keywords: encrypt pdf,password protect pdf,decrypt pdf,csharp
 description: Encrypt PDF File with C# using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.
-lastmod: "2021-12-17"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Set Privileges, Encrypt and Decrypt PDF",
+    "alternativeHeadline": "How to encrypt and decrypt PDF file",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, encrypt pdf, decrypt pdf",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/set-privileges-encrypt-and-decrypt-pdf-file/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/set-privileges-encrypt-and-decrypt-pdf-file/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "Encrypt PDF File with C# using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password."
+}
+</script>
 ## Set Privileges on an Existing PDF File
 
-To set privileges on a PDF file, create an object of the [DocumentPrivilege](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege)class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object’s [Encrypt](https://apireference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) method. The following code snippet shows you how to set the privileges of a PDF file.
+To set privileges on a PDF file, create an object of the [DocumentPrivilege](https://reference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege)class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object’s [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) method. The following code snippet shows you how to set the privileges of a PDF file.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -38,7 +102,7 @@ using (Document document = new Document(dataDir + "input.pdf"))
 
 ## Encrypt PDF File using Different Encryption Types and Algorithms
 
-You can use the [Encrypt](https://apireference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object to encrypt a PDF file. You can pass the user password, owner password, and permissions to the [Encrypt](https://apireference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) method. In addition to that, you can pass any value of the [CryptoAlgorithm](https://apireference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm) enum. This enum provides different combinations of encryption algorithms and key sizes. You can pass the value of your choice. Finally, save the encrypted PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
+You can use the [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) method of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object to encrypt a PDF file. You can pass the user password, owner password, and permissions to the [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) method. In addition to that, you can pass any value of the [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm) enum. This enum provides different combinations of encryption algorithms and key sizes. You can pass the value of your choice. Finally, save the encrypted PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object.
 
 >Please specify different user and owner passwords while encrypting the PDF file.
 
@@ -62,7 +126,12 @@ document.Save(dataDir);
 
 ## Decrypt PDF File using Owner Password
 
-In order to decrypt the PDF file, you first need to create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object and open the PDF using the owner’s password. After that, you need to call [Decrypt](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/decrypt) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. Finally, save the updated PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. The following code snippet shows you how to decrypt the PDF file.
+Increasingly, users are exchanging PDF files with encryption to prevent unauthorized access to documents, such as printing/copying/sharing / extracting information about the contents of a PDF file. Today, it is the best choice for encrypting a PDF file because it maintains the confidentiality and integrity of the content.
+In this regard, there is a need to access the encrypted PDF file, since such access can only be obtained by an authorized user. Also, people are looking for various solutions to decrypt PDF files over the Internet.
+
+It is better to solve this problem once by using the Aspose.PDF library.
+
+In order to decrypt the PDF file, you first need to create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object and open the PDF using the owner’s password. After that, you need to call [Decrypt](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/decrypt) method of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object. Finally, save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object. The following code snippet shows you how to decrypt the PDF file.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -79,7 +148,7 @@ document.Save(dataDir);
 
 ## Change Password of a PDF File
 
-If you want to change the password of a PDF file, you first need to open the PDF file using owner password with the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. After that, you need to call the [ChangePasswords](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object. You need to pass the current owner password along with the new user password and new owner password to this method. Finally, save the updated PDF file using [Save](https://apireference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method of the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)  object.
+If you want to change the password of a PDF file, you first need to open the PDF file using owner password with the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object. After that, you need to call the [ChangePasswords](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords) method of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object. You need to pass the current owner password along with the new user password and new owner password to this method. Finally, save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)  object.
 
 >- The User password, if set, is what you need to provide in order to open a PDF. Acrobat/Reader will prompt a user to enter the user password. If it’s not correct, the document will not open.
 >- The Owner password, if set, controls permissions, such as printing, editing, extracting, commenting, etc. Acrobat/Reader will disallow these things based on the permission settings. Acrobat will require this password if you want to set/change permissions.
@@ -146,3 +215,67 @@ for (int passwordcount = 0; passwordcount < passwords.Length; passwordcount++)
     }
 }
 ```
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

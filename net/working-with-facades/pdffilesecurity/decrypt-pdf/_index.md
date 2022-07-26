@@ -8,6 +8,8 @@ lastmod: "2021-06-05"
 draft: false
 ---
 
+A PDF document encrypted with a password or certificate must be unlocked before another operation can be performed on it. If you try to operate on an encrypted PDF document, you will throw an exception. After unlocking an encrypted PDF, you can perform one or more operations on it.
+
 ## Decrypt PDF File using Owner Password
 
 {{% alert color="primary" %}}
@@ -17,7 +19,7 @@ You can try to unlock document using Aspose.PDF and get the results online at th
 
 {{% /alert %}}
 
-In order to decrypt a PDF file, you need to create [PdfFileSecurity](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and then call the [DecryptFile](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. You also need to pass the owner password to [DecryptFile](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. The following code snippet shows you how to decrypt PDF file.
+In order to decrypt a PDF file, you need to create [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and then call the [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. You also need to pass the owner password to [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. The following code snippet shows you how to decrypt PDF file.
 
 ```csharp
     public static void DecryptPDFFile()

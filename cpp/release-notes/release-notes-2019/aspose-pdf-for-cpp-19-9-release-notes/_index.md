@@ -28,7 +28,7 @@ This page contains release notes for Aspose.PDF for C++ 19.9
 |PDFCPP-1051|Vulnerability 0809|Bug|
 |PDFCPP-1052|Vulnerability 0856|Bug|
 ### **API Reference changes in Aspose.PDF for C++ 19.9**
-Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
+Full API reference is available on [API Reference](https://reference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
 #### **Added APIs:**
 - Property Aspose.Pdf.Annotations.FreeTextAnnotation.TextRectangle              
 

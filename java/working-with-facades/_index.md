@@ -4,7 +4,7 @@ linktitle: Working with Facades
 type: docs
 weight: 80
 url: /java/working-with-facades/
-description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
+description: This section explains how to work with com.aspose.pdf.facades - a toolset for popular operations with PDF.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

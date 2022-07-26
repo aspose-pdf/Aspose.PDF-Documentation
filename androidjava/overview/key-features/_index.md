@@ -4,7 +4,7 @@ linktitle: Key Features
 type: docs
 weight: 20
 url: /androidjava/key-features/
-description: Aspose.PDF for Java demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, annotations, documents, etc.
+description: Aspose.PDF for Android via Java shows the main features in working with PDF documents.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -13,15 +13,12 @@ sitemap:
 
 ## General Features
 
-- Written completely in Java, works with JDK 1.8 and above
-- Supports all Java applications
-- API Reference in JavaDoc format
-- 32-bit OS support.
-- 64-bit OS support.
+- Aspose.PDF for Android via Java supports any mobile device that runs the Java runtime including
+- API offers 40-bit or 128-bit encryption
 
 ## Supported PDF versions
 
-Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
+Aspose.PDF for Android via Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 
 ## Fonts
 
@@ -67,6 +64,7 @@ Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Get attachments.
 - Delete attachments.
 - Get attachment information.
+- Modify attachments.
 
 ## Page
 
@@ -121,7 +119,7 @@ Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Delete annotations.
 - Modify annotations.
 - Import and export annotations.
-- 
+
 ## Forms
 
 - Add fields.

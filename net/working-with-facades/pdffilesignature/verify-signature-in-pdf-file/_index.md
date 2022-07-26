@@ -3,14 +3,14 @@ title: Verify Signature in PDF File
 type: docs
 weight: 30
 url: /net/verify-signature-in-pdf/
-description: This section explains how to work with Signature in a PDF File using PdfFileSignature class.
+description: This section explains how to verify signature in PDF File using PdfFileSignature class.
 lastmod: "2021-06-05"
 draft: false
 ---
 
 ## Verify Whether the PDF File is Signed Using a Signature
 
-To verify whether a PDF file is signed using a [particular signature](/pdf/net/working-with-signature-in-a-pdf-file/), use the VerifySigned method of the [PdfFileSignature](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class. This method requires the signature name and returns true if the PDF is signed using that signature name. It is also possible to verify that a [PDF is signed](/pdf/net/working-with-signature-in-a-pdf-file/), without verifying which signature it is signed with.
+To verify whether a PDF file is signed using a [particular signature](/pdf/net/working-with-signature-in-a-pdf-file/), use the VerifySigned method of the [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class. This method requires the signature name and returns true if the PDF is signed using that signature name. It is also possible to verify that a [PDF is signed](/pdf/net/working-with-signature-in-a-pdf-file/), without verifying which signature it is signed with.
 
 ### Verifying that a PDF is Signed with a Given Signature
 
@@ -49,7 +49,7 @@ To determine if a file is singed, without providing the signature name, use the 
 
 ## Verify whether the Signature is Valid
 
-[VerifySignature](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) method of [PdfFileSignature](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class allows you to validate a particular signature. This method requires signature name as input and returns true if the signature is valid. The following code snippet shows you how to validate a signature.
+[VerifySignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) method of [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class allows you to validate a particular signature. This method requires signature name as input and returns true if the signature is valid. The following code snippet shows you how to validate a signature.
 
 ```csharp
 public static void IsPdfSignatureValid()

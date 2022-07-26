@@ -1,19 +1,84 @@
- ---
+---
 title: Text Formatting inside PDF using C#
 linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /net/text-formatting-inside-pdf/
-description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, adding a border around the added text, text alignment for floating box contents and etc.
-lastmod: "2021-06-05"
+description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, and etc.
+lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Text Formatting inside PDF using C#",
+    "alternativeHeadline": "How to format text in PDF File",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, format text in pdf",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/text-formatting-inside-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/text-formatting-inside-pdf/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, and etc."
+}
+</script>
 
 ## How to add Line Indent to PDF
 
-Aspose.PDF for .NET offers SubsequentLinesIndent property into [TextFormattingOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
+Aspose.PDF for .NET offers SubsequentLinesIndent property into [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
 
 Please use the following code snippet to use the property:
 
@@ -25,7 +90,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 Aspose.Pdf.Document document = new Aspose.Pdf.Document();
 Aspose.Pdf.Page page = document.Pages.Add();
 
-Aspose.Pdf.Text.TextFragment text = new Aspose.Pdf.Text.TextFragment("A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog.");
+string textFragment = string.Concat(Enumerable.Repeat("A quick brown fox jumped over the lazy dog. ", 10));
+
+Aspose.Pdf.Text.TextFragment text = new Aspose.Pdf.Text.TextFragment(textFragment);
 
 // Initilize TextFormattingOptions for the text fragment and specify SubsequentLinesIndent value
 text.TextState.FormattingOptions = new Aspose.Pdf.Text.TextFormattingOptions()
@@ -47,7 +114,7 @@ page.Paragraphs.Add(text);
 text = new Aspose.Pdf.Text.TextFragment("Line5");
 page.Paragraphs.Add(text);
 
-document.Save(dataDir + "SubsequentIndent_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+document.Save(dataDir + "SubsequentIndent_out.pdf");
 ```
 
 ## How to add Text Border
@@ -115,7 +182,7 @@ pdfDocument.Save(dataDir);
 
 ## How to add Border Around Added Text
 
-You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class.
+You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -140,7 +207,7 @@ editor.Save(dataDir);
 
 TextFragment doesn’t support line feed inside the text. However in order to add text with line feed, please use TextFragment with TextParagraph:
 
-- use “\r\n” or Environment.NewLine in TextFragment instead of single “\n”;
+- use "\r\n" or Environment.NewLine in TextFragment instead of single "\n";
 - create TextParagraph object. It will add text with line splitting;
 - add the TextFragment with TextParagraph.AppendLine;
 - add the TextParagraph with TextBuilder.AppendParagraph.
@@ -288,3 +355,67 @@ doc.Pages[1].Paragraphs.Add(floatBox2);
 
 doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
 ```
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

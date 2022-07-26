@@ -14,7 +14,7 @@ This page contains release notes for Aspose.PDF for C++ 19.1
 ## <ins>**Improvements and Changes**
 New version of Aspose.PDF for C++ has codebase of Aspose.PDF for .Net 19.1
 ### **API Reference changes in Aspose.PDF for C++ 19.1**
-Full API reference is available on [API Reference](https://apireference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
+Full API reference is available on [API Reference](https://reference.aspose.com/pdf/cpp) Page of Aspose.PDF for C++.
 #### **Added APIs:**
 - Property Aspose.Pdf.ImagePlacementAbsorber.IsReadOnlyMode
 - Property Aspose.Pdf.LogicalStructure.BLSTextElement.StructureTextState

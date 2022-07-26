@@ -1,5 +1,5 @@
 ---
-title: Save PDF Document using Java
+title: Save PDF Document 
 linktitle: Save
 type: docs
 weight: 30
@@ -13,7 +13,7 @@ sitemap:
 
 ## Save PDF document to file system
 
-You can save the created or manipulated PDF document to file system using Save method of [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
+You can save the created or manipulated PDF document to file system using Save method of [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
 When you do not provide the format type (options), then the document is saved in Aspose.PDF v.1.7 (*.pdf) format.
 
 ```java
@@ -74,7 +74,7 @@ public static void SaveDocumentStream() {
 
 ## Save PDF document in Web applications
 
-To save documents in Web applications, you can use the ways proposed above. In addition, the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class has overloaded method Save.
+To save documents in Web applications, you can use the ways proposed above. In addition, the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class has overloaded method Save.
 ```java
     // @RequestMapping(value = "/files/{file_name}", method = RequestMethod.GET)
     // public void getFile(@PathVariable("file_name") String fileName, HttpServletResponse response) {

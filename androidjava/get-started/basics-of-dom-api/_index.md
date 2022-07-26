@@ -4,7 +4,7 @@ linktitle: Basics of DOM API
 type: docs
 weight: 10
 url: /androidjava/basics-of-dom-api/
-description: Aspose.PDF for Java also uses the idea of DOM to represent the structure of a PDF document in terms of objects. Here you can read the description of this structure.
+description: Aspose.PDF for Android via Java also uses the idea of DOM to represent the structure of a PDF document in terms of objects. Here you can read the description of this structure.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -15,7 +15,7 @@ sitemap:
 
 Document Object Model (DOM) is a form of representation of structured documents as an object-oriented model. DOM is the official World Wide Web Consortium (W3C) standard for representing structured document s in a platform and language-neutral manner.
 
-In simple words, DOM is a tree of objects that represent the structure of some document. Aspose.PDF for Java also uses the idea of DOM to represent the structure of a PDF document in terms of objects. However, the aspects of the DOM (such as its Elements) are manipulated within the syntax of the programming language in use. The public interface of a DOM is specified in its application programming interface (API).
+In simple words, DOM is a tree of objects that represent the structure of some document. Aspose.PDF for Android via Java also uses the idea of DOM to represent the structure of a PDF document in terms of objects. However, the aspects of the DOM (such as its Elements) are manipulated within the syntax of the programming language in use. The public interface of a DOM is specified in its application programming interface (API).
 
 ### Introduction to PDF Document
 
@@ -31,7 +31,7 @@ As the structure of a PDF file is hierarchical, Aspose.PDF for Java also accesse
 
 ### Accessing PDF Document Elements
 
-The Document object is at the root level of the object model. The Aspose.PDF for Java DOM API allows you to create a Document object and then access all other objects in the hierarchy. You can either access any of the collections like Pages or individual element like Page etc. The DOM API provides single entry and exit points to manipulate the PDF document as shown below:
+The Document object is at the root level of the object model. The Aspose.PDF for Android via Java DOM API allows you to create a Document object and then access all other objects in the hierarchy. You can either access any of the collections like Pages or individual element like Page etc. The DOM API provides single entry and exit points to manipulate the PDF document as shown below:
 
 - Open PDF document
 - Access PDF document structure in DOM style
@@ -40,20 +40,20 @@ The Document object is at the root level of the object model. The Aspose.PDF for
 - Export PDF document into different formats
 - Finally, save the updated PDF document
 
-## How to Use New Aspose.PDF for Java API
+## How to Use New Aspose.PDF for Android via Java API
 
-This topic will explain the new Aspose.PDF for Java API and guide you to get started quickly and easily. Please note that the details regarding the use of the particular features are not the part of this article. 
+This topic will explain the new Aspose.PDF for Android via Java API and guide you to get started quickly and easily. Please note that the details regarding the use of the particular features are not the part of this article.
 
-The Aspose.PDF for Java is composed of two parts:
+The Aspose.PDF for Android via Java is composed of two parts:
 
-- Aspose.PDF for Java DOM API
+- Aspose.PDF for Android via Java DOM API
 - Aspose.PDF.Facades 
 
 You'll find the details of each of these areas below.
 
-### Aspose.PDF for Java DOM API
+### Aspose.PDF for Android via Java DOM API
 
-The new Aspose.PDF for Java DOM API corresponds to the PDF document structure, which helps you to work with the PDF documents not only at the file and document level, but also at the object level. We have provided more flexibility to the developers to access all of the elements and objects of the PDF document. Using the Aspose.PDF DOM API's classes, you can gain programmatic access to document elements and formatting. This new DOM API is comprised of various namespaces as given below:
+The new Aspose.PDF for Android via Java DOM API corresponds to the PDF document structure, which helps you to work with the PDF documents not only at the file and document level, but also at the object level. We have provided more flexibility to the developers to access all of the elements and objects of the PDF document. Using the Aspose.PDF DOM API's classes, you can gain programmatic access to document elements and formatting. This new DOM API is comprised of various namespaces as given below:
 
 ### com.aspose.pdf
 

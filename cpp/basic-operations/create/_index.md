@@ -4,7 +4,7 @@ linktitle: Create
 type: docs
 weight: 10
 url: /cpp/create-document/
-description: Learn how to create PDF file in Aspose.PDF for C++.
+description: The most popular and basic task of working with a PDF file is creating a document from scratch. Use the Aspose.PDF for C++ library.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -17,10 +17,10 @@ sitemap:
 
 To create a PDF file using C++, the following steps can be used.
 
-1. Instantiate a [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object
-1. Add a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page/) to document object
-1. Create a [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) object
-1. Add [TextFragment](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) to [Paragraph](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs/) collection of the page
+1. Instantiate a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object
+1. Add a [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page/) to document object
+1. Create a [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) object
+1. Add [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) to [Paragraph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs/) collection of the page
 1. Save the resultant PDF document
 
 ```cpp

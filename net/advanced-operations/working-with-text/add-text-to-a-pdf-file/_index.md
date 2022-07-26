@@ -1,17 +1,82 @@
 ---
 title: Add Text to PDF using C#
-linktitle: Add Text to PDF 
+linktitle: Add Text to PDF
 type: docs
 weight: 10
 url: /net/add-text-to-pdf-file/
 description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
-aliases:
-    - /net/add-text-to-a-pdf-file/
-lastmod: "2021-06-05"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+aliases:
+    - /net/add-text-to-a-pdf-file/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add Text to PDF using C#",
+    "alternativeHeadline": "How to add Text to PDF",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, add text to pdf",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-text-to-pdf-file/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-text-to-pdf-file/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts."
+}
+</script>
 
 To add text to existing PDF file:
 
@@ -96,7 +161,7 @@ if (fontFile != "")
 
 ## Add Text using TextParagraph
 
-The following code snippet shows you how to add text in PDF document using [TextParagraph](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textparagraph) class.
+The following code snippet shows you how to add text in PDF document using [TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph) class.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,7 +197,7 @@ doc.Save(dataDir);
 
 ## Add Hyperlink to TextSegment
 
-A PDF page may comprise of one or more TextFragment objects, where each TextFragment object can have one or more TextSegment instance. In order to set hyperlink for TextSegment, Hyperlink property of [TextSegment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textsegment) class can be used while providing the object of Aspose.Pdf.WebHyperlink instance. Please try using the following code snippet to accomplish this requirement.
+A PDF page may comprise of one or more TextFragment objects, where each TextFragment object can have one or more TextSegment instance. In order to set hyperlink for TextSegment, Hyperlink property of [TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment) class can be used while providing the object of Aspose.Pdf.WebHyperlink instance. Please try using the following code snippet to accomplish this requirement.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -207,7 +272,7 @@ pdfDocument.Save(dataDir);
 
 The Aspose.Pdf.Generator.Text class contains a property called IsHtmlTagSupported which makes it possible to add HTML tags/contents into PDF files. The added content is rendered in native HTML tags instead of appearing as a simple text string. To support a similar feature in the new Document Object Model (DOM) of the Aspose.Pdf namespace, the HtmlFragment class has been introduced.
 
-The [HtmlFragment](https://apireference.aspose.com/pdf/net/aspose.pdf/htmlfragment) instance can be used to specify the HTML contents which should be placed inside the PDF file. Similar to TextFragment, HtmlFragment is a paragraph level object and can be added to the Page object's paragraphs collection. The following code snippets show the steps to place HTML contents inside PDF file using the DOM approach.
+The [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) instance can be used to specify the HTML contents which should be placed inside the PDF file. Similar to TextFragment, HtmlFragment is a paragraph level object and can be added to the Page object's paragraphs collection. The following code snippets show the steps to place HTML contents inside PDF file using the DOM approach.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -677,7 +742,7 @@ doc.Save(dataDir);
 
 A Tab Stop is a stop point for tabbing. In word processing, each line contains a number of tab stops placed at regular intervals (for example, every half inch). They can be changed, however, as most word processors allow you to set tab stops wherever you want. When you press the Tab key, the cursor or insertion point jumps to the next tab stop, which itself is invisible. Although tab stops do not exist in the text file, the word processor keeps track of them so that it can react correctly to the Tab key.
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) allows developers to use custom tab stops in PDF documents. The Aspose.Pdf.Text.TabStop class is used to set custom TAB stops in the [TextFragment](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textfragment) class.
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) allows developers to use custom tab stops in PDF documents. The Aspose.Pdf.Text.TabStop class is used to set custom TAB stops in the [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) class.
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/)  also offers some pre-defined tab leader types as an enumeration named, TabLeaderType whose pre-defined values and their descriptions are given below:
 
@@ -770,7 +835,7 @@ doc.Save(dataDir);
 
 ## Specify LineSpacing for Fonts
 
-Every font has an abstract square, whose height is the intended distance between lines of type in the same type size. This square is called the em square and it is the design grid on which the glyph outlines are defined. Many letters of input font have points that are placed out of font's em square bounds, so in order to display the font correctly, usage of special setting is needed. The object TextFragment has a set of text formatting options which are accessible via properties TextState.FormattingOptions. Last property of this path is property of type Aspose.Pdf.Text.TextFormattingOptions. This class has a an enumeration [LineSpacingMode](https://apireference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode) which is designed for specific fonts e.g input font "HPSimplified.ttf". Also class [Aspose.Pdf.Text.TextFormattingOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) has a property [LineSpacing](https://apireference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) of type LineSpacingMode. You just need to set LineSpacing into LineSpacingMode.FullSize. The code snippet to get a font displayed correctly, would be like as follows:
+Every font has an abstract square, whose height is the intended distance between lines of type in the same type size. This square is called the em square and it is the design grid on which the glyph outlines are defined. Many letters of input font have points that are placed out of font's em square bounds, so in order to display the font correctly, usage of special setting is needed. The object TextFragment has a set of text formatting options which are accessible via properties TextState.FormattingOptions. Last property of this path is property of type Aspose.Pdf.Text.TextFormattingOptions. This class has a an enumeration [LineSpacingMode](https://reference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode) which is designed for specific fonts e.g input font "HPSimplified.ttf". Also class [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) has a property [LineSpacing](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) of type LineSpacingMode. You just need to set LineSpacing into LineSpacingMode.FullSize. The code snippet to get a font displayed correctly, would be like as follows:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -814,7 +879,7 @@ if (fontFile != "")
 
 ## Get Text Width Dynamically
 
-Sometimes, it is required to get the text width dynamically. Aspose.PDF for .NET includes two methods for string width measurement. You can invoke the [MeasureString](https://apireference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) method of Aspose.Pdf.Text.Font or Aspose.Pdf.Text.TextState classes (or both). The code snippet below shows how to use this functionality.
+Sometimes, it is required to get the text width dynamically. Aspose.PDF for .NET includes two methods for string width measurement. You can invoke the [MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) method of Aspose.Pdf.Text.Font or Aspose.Pdf.Text.TextState classes (or both). The code snippet below shows how to use this functionality.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -841,3 +906,67 @@ for (char c = 'A'; c <= 'z'; c++)
         Console.WriteLine("Font and state string measuring doesn't match!");
 }
 ```
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

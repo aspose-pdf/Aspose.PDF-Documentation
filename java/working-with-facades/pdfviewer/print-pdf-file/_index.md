@@ -12,7 +12,7 @@ sitemap:
 
 ## Printing PDF File to Default Printer using Printer and Page Settings
 
-The [PdfViewer](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) class allows you to print a PDF file to the default printer. Therefore you need to create a [PdfViewer](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) object and open the PDF using the openPdfFile(..) method.
+The [PdfViewer](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) class allows you to print a PDF file to the default printer. Therefore you need to create a [PdfViewer](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) object and open the PDF using the openPdfFile(..) method.
 
 Call the printDocument(..) method to print the PDF to the default printer.
 
@@ -133,7 +133,7 @@ public static void PrintingPDFToSoftPrinter() {
 
 ## Hiding Print Dialog
 
-Aspose.PDF for Java allows you to hide the print dialog. For this use [getPrintPageDialog](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer#getPrintPageDialog--) method.
+Aspose.PDF for Java allows you to hide the print dialog. For this use [getPrintPageDialog](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer#getPrintPageDialog--) method.
 
 The following code snippet shows you how to hide the print dialog.
 
@@ -174,7 +174,7 @@ public static void PrintingPDFHidePrintDialog() {
 
 ## Printing Color PDF to XPS File as Grayscale
 
-A color PDF document can be printed to an XPS printer as grayscale, using [PdfViewer](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer). In order to achieve that you need to use the property PdfViewer.PrintAsGrayscale and set it to *true*. 
+A color PDF document can be printed to an XPS printer as grayscale, using [PdfViewer](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer). In order to achieve that you need to use the property PdfViewer.PrintAsGrayscale and set it to *true*. 
 
 Following code snippet demonstrates the implementation of PdfViewer.PrintAsGrayscale Property.
 
@@ -215,7 +215,7 @@ Following code snippet demonstrates the implementation of PdfViewer.PrintAsGrays
 
 ## PDF to PostScript conversion
 
-The [PdfViewer](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) class provides the capability to print PDF documents and with the help of this class, we can also convert PDF files to PostScript format. To convert a PDF file into PostScript, first install any PS printer and just print to file with the help of PdfViewer.
+The [PdfViewer](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) class provides the capability to print PDF documents and with the help of this class, we can also convert PDF files to PostScript format. To convert a PDF file into PostScript, first install any PS printer and just print to file with the help of PdfViewer.
 
 The following code snippet shows you how to print and convert a PDF to PostScript format.
 
@@ -259,7 +259,7 @@ public static void PrintingPDFToPostScript() {
 
 ## Checking Print Job Status
 
-A PDF file can be printed to a physical printer as well as to the Microsoft XPS Document Writer, without showing a print dialog, using the [PdfViewer](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) class. When printing large PDF files, the process might take a long time so the user might not be certain whether the printing process completed or encountered an issue. To determine the status of a printing job, use the PrintStatus property. The following code snippet shows you how to print the PDF file to an XPS file and get the printing status.
+A PDF file can be printed to a physical printer as well as to the Microsoft XPS Document Writer, without showing a print dialog, using the [PdfViewer](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfViewer) class. When printing large PDF files, the process might take a long time so the user might not be certain whether the printing process completed or encountered an issue. To determine the status of a printing job, use the PrintStatus property. The following code snippet shows you how to print the PDF file to an XPS file and get the printing status.
 
 ```java
 public static void CheckingPrintJobStatus() {

@@ -20,9 +20,9 @@ Convert BMP files to PDF document using **Aspose.PDF for C++** library.
 <abbr title="Bitmap Image File">BMP</abbr> images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
 You can convert BMP to PDF files with Aspose.PDF for C++ API. Therefore, you can follow the following steps to convert BMP images:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
 1. An instance of a new Document object is created.
-1. Add a new [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to this [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document).
+1. Add a new [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) to this [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document).
 1. A new Aspose.Pdf BMP is created.
 1. The Aspose.PDF BMP object is initialized using the input file.
 1. Aspose.PDF BMP is added to the Page as a Paragraph.
@@ -76,11 +76,11 @@ Aspose presents you online free application ["BMP to PDF"](https://products.aspo
 
 **Aspsoe.PDF for C++** allows you to convert DICOM and SVG images, but for technical reasons to add images you need to specify the type of file to be added to PDF:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
-1. Instantiate [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) Object.
-1. Add a [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) to pages collection of document.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Instantiate [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) Object.
+1. Add a [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) to pages collection of document.
 1. Aspose.PDF TDicom is added to the Page as a Paragraph.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
+1. Load and [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
 
 The following code snippet shows how to convert DICOM files to PDF  format with Aspose.PDF. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF.
 
@@ -123,13 +123,13 @@ Aspose presents you online free application ["DICOM to PDF"](https://products.as
 
 <abbr title="Enhanced metafile format">EMF</abbr>EMF stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device. Furthermore, you can convert EMF to PDF image using the below steps:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
 1. An instance of a new Document object is created.
-1. Add a new Page to this [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document).
+1. Add a new Page to this [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document).
 1. A new Aspose.Pdf TIFF is created.
 1. The Aspose.PDF TIFF object is initialized using the input file.
 1. Aspose.PDF TIFF is added to the Page as a Paragraph.
-1. Load and [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
+1. Load and [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input image file.
 
 Moreover, the following code snippet shows how to convert an EMF to PDF with C++ in your code snippet:
 
@@ -175,9 +175,9 @@ No need to wonder how to convert JPG to PDF, because **Aspose.PDF for C++** libr
 
 You can very easy convert a JPG images to PDF with Aspose.PDF for C++ by following steps:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
 1. An instance of a new Document object is created.
-1. Add a new Page to this [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document).
+1. Add a new Page to this [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document).
 1. A new Aspose::Pdf::Image is created.
 1. The Aspose.PDF Image object is initialized using the input file.
 1. Aspose.PDF Image is added to the Page as a Paragraph.
@@ -283,9 +283,9 @@ Aspose presents you online free application ["JPG to PDF"](https://products.aspo
 
 You can convert PNG to PDF image using the below steps:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
 1. An instance of a new Document object is created.
-1. Add a new Page to this [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document).
+1. Add a new Page to this [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document).
 1. A new Aspose.Pdf PNG is created.
 1. The Aspose.PDF PNG object is initialized using the input file.
 1. Aspose.PDF PNG is added to the Page as a Paragraph.
@@ -339,9 +339,9 @@ Scalable Vector Graphics (SVG) is a family of specifications of an XML-based fil
 
 SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
-1. Create an instance of [`SvgLoadOptions`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.svg_load_options) class.
-1. Create an instance of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document)class with mention source filename and options.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Create an instance of [`SvgLoadOptions`](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.svg_load_options) class.
+1. Create an instance of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)class with mention source filename and options.
 1. Save the document with the desired file name.
 
 The following code snippet shows the process of converting SVG file into PDF format with Aspose.PDF for C++.
@@ -408,9 +408,9 @@ Aspose.PDF for C++ presents you online free application ["SVG to PDF"](https://p
 
 TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. TIFF image can contain several frames with different images. Aspose.PDF file format is also supported, be it a single frame or multi-frame TIFF image. So you can convert the TIFF image to PDF in your C++ applications. Therefore, we will consider an example of converting multi-page TIFF image to multi-page PDF document with below steps:
 
-1. Create a [String Class](https://apireference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
+1. Create a [String Class](https://reference.aspose.com/pdf/cpp/class/system.string) for path name and file name.
 1. An instance of a new Document object is created.
-1. Add a new Page to this [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document).
+1. Add a new Page to this [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document).
 1. A new Aspose.Pdf TIFF is created.
 1. The Aspose.PDF TIFF object is initialized using the input file.
 1. Aspose.PDF TIFF is added to the Page as a Paragraph.

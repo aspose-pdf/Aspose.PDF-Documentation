@@ -5,14 +5,79 @@ type: docs
 weight: 170
 url: /net/operators/
 description: This topic explains how to use operators with Aspose.PDF. The operator classes provide great features for PDF manipulation.
-aliases:
-    - /net/working-with-operators/
-    - /net/operator/
-lastmod: "2021-06-05"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-operators/
+    - /net/operator/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Working with Operators",
+    "alternativeHeadline": "How to use PDF operators",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, operators in pdf, use pdf operators",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/operators/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/operators/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "This topic explains how to use operators with Aspose.PDF. The operator classes provide great features for PDF manipulation."
+}
+</script>
 
 ## Introduction to the PDF Operators and Their Usage
 
@@ -22,7 +87,7 @@ A content stream is a PDF stream object whose data consists of instructions desc
 
 ### Implementation Details
 
-This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://apireference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://apireference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://apireference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14), and [GRestore](https://apireference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26).
+This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14), and [GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26).
 
 - The **GSave** operator saves the PDF’s current graphical state.
 - The **ConcatenateMatrix** (concatenate matrix) operator is used to define how an image should be placed on the PDF page.
@@ -31,7 +96,7 @@ This topic explains how to use operators with Aspose.PDF. The selected example a
 
 To add an image into a PDF file:
 
-1. Create a [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object and open the input PDF document.
+1. Create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object and open the input PDF document.
 1. Get the particular page the image is going to be added to.
 1. Add the image into the page’s Resources collection.
 1. Use the operators to place the image on the page:
@@ -154,7 +219,7 @@ using (Document doc = new Document(inFile))
 
 ## Remove Graphics Objects using Operator Classes
 
-The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class’ [DeleteImage](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) method, the operator classes can be used to remove them instead.
+The operator classes provide great features for PDF manipulation. When a PDF file contains graphics that cannot be removed using the [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class’ [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) method, the operator classes can be used to remove them instead.
 
 The following code snippet shows how to remove graphics. Please note that if the PDF file contains text labels for the graphics, they might persist in the PDF file, using this approach. Therefore search the graphic operators for an alternate method to delete such images.
 
@@ -178,45 +243,66 @@ oc.Delete(operators);
 doc.Save(dataDir+ "No_Graphics_out.pdf");
 ```
 
-
-aaaa
-
-```
-Document doc = new Document("input_color.pdf");
-OperatorCollection contents = doc.getPages().get_Item(1).getContents();
-System.out.println("Values of RGB color operators in the pdf document");
-for (int j = 1; j <= contents.size(); j++) {
-	Operator oper = contents.get_Item(j);
-	if (oper instanceof Operator.SetRGBColor || oper instanceof Operator.SetRGBColorStroke)
-		try {
-			// Converting RGB to CMYK color
-			System.out.println(oper.toString());
-
-			double[] rgbFloatArray = new double[] { Double.valueOf(oper.getParameters().get(0).toString()), Double.valueOf(oper.getParameters().get(1).toString()), Double.valueOf(oper.getParameters().get(2).toString()), };
-			double[] cmyk = new double[4];
-			if (oper instanceof Operator.SetRGBColor) {
-				((Operator.SetRGBColor) oper).getCMYKColor(rgbFloatArray, cmyk);
-				contents.set_Item(j, new Operator.SetCMYKColor(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
-			} else if (oper instanceof Operator.SetRGBColorStroke) {
-				((Operator.SetRGBColorStroke) oper).getCMYKColor(rgbFloatArray, cmyk);
-				contents.set_Item(j, new Operator.SetCMYKColorStroke(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
-			} else
-				throw new java.lang.Throwable("Unsupported command");
-
-		} catch (Throwable e) {
-			e.printStackTrace();
-		}
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
 }
-doc.save("input_colorout.pdf");
-
-// Testing the result
-System.out.println("Values of converted CMYK color operators in the result pdf document");
-doc = new Document("input_colorout.pdf");
-contents = doc.getPages().get_Item(1).getContents();
-for (int j = 1; j <= contents.size(); j++) {
-	Operator oper = contents.get_Item(j);
-	if (oper instanceof Operator.SetCMYKColor || oper instanceof Operator.SetCMYKColorStroke) {
-		System.out.println(oper.toString());
-	}
-}
-```
+</script>

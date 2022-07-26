@@ -5,37 +5,102 @@ type: docs
 weight: 50
 url: /net/add-rectangle/
 description: This article explains how to create a Rectangle object to your PDF using Aspose.PDF for .NET.
-lastmod: "2021-06-05"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add Rectangle Object to PDF file",
+    "alternativeHeadline": "How to create Rectangle Object in PDF file",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, rectangle in pdf",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-rectangle/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-rectangle/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "This article explains how to create a Rectangle object to your PDF using Aspose.PDF for .NET."
+}
+</script>
 
 ## Add Rectangle object
 
-Aspose.PDF for .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object where you also offers the feature to fill rectangle object with a certain color, control Z-Order, add gradiant color fill and etc.
+Aspose.PDF for .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object where you also offers the feature to fill rectangle object with a certain color, control Z-Order, add gradiant color fill and etc.
 
 First, let's look at the possibility of creating a Rectangle object.
 
 Follow the steps below:
 
-1. Create a new PDF [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document)
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
 
-1. Add [Page](https://apireference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file
+1. Add [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file
 
-1. Add [Text fragment](https://apireference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance
+1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance
 
-1. Create [Graph](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/graph) instance
+1. Create [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) instance
 
-1. Set border for [Drawing object](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing)
+1. Set border for [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)
 
 1. Create Rectangle instance
 
-1. Add [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object to shapes collection of Graph object
+1. Add [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object to shapes collection of Graph object
 
 1. Add graph object to paragraphs collection of page instance
 
-1. Add [Text fragment](https://apireference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance
+1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance
 
 1. And save your PDF file
 
@@ -73,7 +138,7 @@ Follow the steps below:
 
 Aspose.PDF for .NET also offers the feature to fill rectangle object with a certain color.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with color.
+The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with color.
 
 ```csharp
     {
@@ -113,7 +178,7 @@ Look at the result of rectangle filled solid color:
 
 Aspose.PDF for .NET supports the feature to add graph objects to PDF documents and sometimes it is required to fill graph objects with Gradient Color. To Fill graph objects with Gradient Color, We need to set setPatterColorSpace with gradientAxialShading object as following.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with Gradient Color.
+The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with Gradient Color.
 
 ```csharp
  public static void CreateFilledRectangletGradientFill()
@@ -151,7 +216,7 @@ The following code snippet shows how to add a [Rectangle](https://apireference.a
 
 ## Create Rectangle with Alpha color channel
 
-Aspose.PDF for .NET supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object with Alpha color channel.
+Aspose.PDF for .NET supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object with Alpha color channel.
 
 Pixels of the image can store information about their opacity along with color value. This allows creating images with transparent or semi-transparent areas.
 
@@ -196,7 +261,7 @@ Instead of making a color transparent, each pixel stores information on how opaq
 
 Aspose.PDF for .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. When adding more than one instance of same object inside PDF file, we can control their rendering by specifying the Z-Order. Z-Order is also used when we need to render objects on top of each other.
 
-The following code snippet shows the steps to render [Rectangle](https://apireference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) objects on top of each other.
+The following code snippet shows the steps to render [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) objects on top of each other.
 
 ```csharp
  public static void AddRectangleZOrder()
@@ -223,3 +288,67 @@ The following code snippet shows the steps to render [Rectangle](https://apirefe
 ```
 
 ![Controlling Z Order](control.png)
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

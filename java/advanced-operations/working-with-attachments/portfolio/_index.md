@@ -1,5 +1,5 @@
 ---
-title: Working with Portfolio in PDF documents 
+title: Working with Portfolio in PDF documents
 linktitle: Portfolio
 type: docs
 weight: 40
@@ -18,7 +18,7 @@ We may place or assemble native files, in their original type or formats as atta
 
 ## How to Create a PDF Portfolio
 
-Aspose.PDF allows creating PDF Portfolio documents using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class. Add a file into a Document.Collection object after getting it with the [FileSpecification](https://apireference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) class. When the files have been added, use the Document class' Save method to save the portfolio document.
+Aspose.PDF allows creating PDF Portfolio documents using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class. Add a file into a Document.Collection object after getting it with the [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) class. When the files have been added, use the Document class' Save method to save the portfolio document.
 
 The following example uses a Microsoft Excel File, a Word document and an image file to create a PDF Portfolio.
 
@@ -29,11 +29,45 @@ The code below results in the following portfolio.
 ![A PDF Portfolio created with Aspose.PDF for Java](working-with-pdf-portfolio_1.jpg)
 
 ```java
-public class ExamplePortfolio {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Attachments/";
-
     public static void CreatePortfolio() throws IOException {
+        // Instantiate Document Object
+        Document pdfDocument = new Document();
+
+        // Instantiate document Collection object
+        pdfDocument.setCollection(new Collection());
+
+        // Get Files to add to Portfolio
+        FileSpecification excel = new FileSpecification(_dataDir + "HelloWorld.xlsx");
+        FileSpecification word = new FileSpecification(_dataDir + "HelloWorld.docx");
+        FileSpecification image = new FileSpecification(_dataDir + "aspose-logo.jpg");
+
+        // Provide description of the files
+        excel.setDescription ("Excel File");
+        word.setDescription ("Word File");
+        image.setDescription ("Image File");
+
+        // Add files to document collection
+        pdfDocument.getCollection().add(excel);
+        pdfDocument.getCollection().add(word);
+        pdfDocument.getCollection().add(image);
+
+        // Save Portfolio document
+        pdfDocument.save(_dataDir + "CreatePDFPortfolio_out.pdf");
+    }
+```
+
+## Extract files from PDF Portfolio
+
+PDF Portfolios allow you to bring together content from a variety of sources (for example, PDF, Word, Excel, JPEG files) into one unified container. The original files retain their individual identities but are assembled into a PDF Portfolio file. Users can open, read, edit, and format each component file independently of the other component files.
+
+Aspose.PDF allows the creation of PDF Portfolio documents using [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class. It also offers the capability to extract files from PDF portfolio.
+
+The following code snippet shows you the steps to extract files from PDF portfolio.
+
+![Extract files from PDF Portfolio](working-with-pdf-portfolio_2.jpg)
+
+```java
+    public static void ExtractPortfolio() throws IOException {
         // Open a document
         Document pdfDocument = new Document(_dataDir + "PDFPortfolio.pdf");
         // Get collection of embedded files
@@ -53,25 +87,15 @@ public class ExamplePortfolio {
     }
 ```
 
-## Extract files from PDF Portfolio
-
-PDF Portfolios allow you to bring together content from a variety of sources (for example, PDF, Word, Excel, JPEG files) into one unified container. The original files retain their individual identities but are assembled into a PDF Portfolio file. Users can open, read, edit, and format each component file independently of the other component files.
-
-Aspose.PDF allows the creation of PDF Portfolio documents using [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) class. It also offers the capability to extract files from PDF portfolio.
-
-The following code snippet shows you the steps to extract files from PDF portfolio.
-
-![Extract files from PDF Portfolio](working-with-pdf-portfolio_2.jpg)
-
 ## Remove Files from PDF Portfolio
 
 In order to delete/remove files from PDF portfolio, try using the following code lines.
 
 ```java
-    public static void RemoveFilesFromPDFPortfolio() {
-        // Load source PDF Portfolio
-        Document pdfDocument = new Document(_dataDir + "PDFPortfolio.pdf");
-        pdfDocument.getCollection().delete();
-        pdfDocument.save(_dataDir + "No_PortFolio_out.pdf");
-    }
+public static void RemoveFilesFromPDFPortfolio() {
+    // Load source PDF Portfolio
+    Document pdfDocument = new Document(_dataDir + "PDFPortfolio.pdf");
+    pdfDocument.getCollection().delete();
+    pdfDocument.save(_dataDir + "No_PortFolio_out.pdf");
+}
 ```

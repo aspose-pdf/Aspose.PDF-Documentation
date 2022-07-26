@@ -12,14 +12,14 @@ Every PDF page contains Resources and Contents properties. Resources can be imag
 
 To add an image to an existing PDF file:
 
-- Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
+- Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
 - Get the page you want to add an image to.
-- Add the image into the page’s [getResources](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) collection.
+- Add the image into the page’s [getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) collection.
 - Use operators to place the image on the page:
 - Use the GSave operator to save the current graphical state.
-- Use [ConcatenateMatrix](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators.class-use/concatenatematrix) operator to specify where the image is to be placed.
-- Use the [Do](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators/class-use/Do) operator to draw the image on the page.
-- Finally, use [GRestore](https://apireference.aspose.com/pdf/java/com.aspose.pdf.operators.class-use/grestore) operator to save the updated graphical state.
+- Use [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators.class-use/concatenatematrix) operator to specify where the image is to be placed.
+- Use the [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/class-use/Do) operator to draw the image on the page.
+- Finally, use [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators.class-use/grestore) operator to save the updated graphical state.
 - Save the file.
 
 The following code snippet shows how to add the image in a PDF document.
@@ -92,7 +92,7 @@ public class ExampleAddImages {
 
 ## Adding image from BufferedImage into PDF
 
-Starting release of Aspose.PDF for Java 9.5.0, we have introduced the support to add image from BufferedImage instance to PDF document. In order to support this requirement, a method is implemented: [XImageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/XImageCollection).add(BufferedImage image);
+Starting release of Aspose.PDF for Java 9.5.0, we have introduced the support to add image from BufferedImage instance to PDF document. In order to support this requirement, a method is implemented: [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection).add(BufferedImage image);
 
 ```java
     public static void AddingImageFromBufferedImageIntoPDF() throws IOException {
@@ -119,7 +119,7 @@ You can use any InputStream and not just only FileInputStream object to add imag
 
 ## Add Image in an Existing PDF File (Facades)
 
-There is also an alternative, easier way to add a Image to a PDF file. You can use AddImage method of the [PdfFileMend](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileMend) class. The AddImage method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using Close method. 
+There is also an alternative, easier way to add a Image to a PDF file. You can use AddImage method of the [PdfFileMend](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileMend) class. The AddImage method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using Close method. 
 
 The following code snippet shows you how to add image in an existing PDF file.
 

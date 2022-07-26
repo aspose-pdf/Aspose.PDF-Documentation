@@ -1,5 +1,5 @@
 ---
-title: XML Schema of Aspose.PDF
+title: XML Schema 
 linktitle: Supported XML Schema
 type: docs
 weight: 10

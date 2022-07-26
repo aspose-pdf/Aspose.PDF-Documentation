@@ -13,27 +13,27 @@ sitemap:
 
 ## Add Line object
 
-Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Line](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Line) object where you can also specify the dash pattern, color and other formatting for Line element.
+Aspose.PDF for Java supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Line) object where you can also specify the dash pattern, color and other formatting for Line element.
 
 Follow the steps below:
 
-1. Create [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) instance.
+1. Create [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) instance.
 
-1. Add [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) to pages collection of PDF file.
+1. Add [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) to pages collection of PDF file.
 
-1. Create [Graph](https://apireference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) instance.
+1. Create [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) instance.
 
 1. Add Graph object to paragraphs collection of page instance.
 
-1. Create [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) instance.
+1. Create [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) instance.
 
 1. Set line width.
 
-1. Add [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object to shapes collection of Graph object.
+1. Add [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object to shapes collection of Graph object.
 
 1. Save your PDF file.
 
-The following code snippet shows how to add a [Rectangle](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object that is filled with color.
+The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) object that is filled with color.
 
 ```java
  public static void ExampleLine() {

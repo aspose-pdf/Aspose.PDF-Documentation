@@ -45,7 +45,7 @@ public static void ExtractSignatureInfo() {
 
 Aspose.PDF for Java supports the feature to digitally sign the PDF files using the PdfFileSignature class and while signing the document, you can also set an image for SignatureAppearance. Now this API also provides the capability to extract signature information as well as the image associated with the signature field.
 
-In order to extract signature information, we have introduced the [extractImage(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature#extractImage-java.lang.String-) method to the PdfFileSignature class. Please take a look at the following code snippet which demonstrates the steps to extract image from the PdfFileSignature object:
+In order to extract signature information, we have introduced the [extractImage(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature#extractImage-java.lang.String-) method to the PdfFileSignature class. Please take a look at the following code snippet which demonstrates the steps to extract image from the PdfFileSignature object:
 
 ```java
  public static void ExtractSignatureImage() {
@@ -71,7 +71,7 @@ In order to extract signature information, we have introduced the [extractImage(
 
 ## Suppress Location and Reason
 
-Aspose.PDF functionality allows flexible configuration for digital sign instance. [PdfFileSignature ](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature) class provides ability sign PDF file. Sign method implementation allows to sign the PDF and pass the particular signature object to this class. Sign method contains set of attributes for the customization of output digital sing. In case if you need to suppress some text attributes from result sing you can leave them empty. The following code snippet demonstrate how to suppress Location and Reason two rows from signature block:
+Aspose.PDF functionality allows flexible configuration for digital sign instance. [PdfFileSignature ](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature) class provides ability sign PDF file. Sign method implementation allows to sign the PDF and pass the particular signature object to this class. Sign method contains set of attributes for the customization of output digital sing. In case if you need to suppress some text attributes from result sing you can leave them empty. The following code snippet demonstrate how to suppress Location and Reason two rows from signature block:
 
 ```java
 public static void SupressLocationReason() {

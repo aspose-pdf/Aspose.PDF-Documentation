@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 ---
 
-You can delete pages from a PDF file using Aspose.PDF for C++. To delete a particular page from the [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection.
+You can delete pages from a PDF file using Aspose.PDF for C++. To delete a particular page from the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection.
 
 ## Delete Page from PDF File
 
-1. Call the [Delete](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page#a02bb7a96e66ef6e10bcf4930b299b3b7) method and specify the page’s index
+1. Call the [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#a02bb7a96e66ef6e10bcf4930b299b3b7) method and specify the page’s index
 1. Call the Save method to save the updated PDF file
 The following code snippet shows how to delete a particular page from the PDF file using C++.
 

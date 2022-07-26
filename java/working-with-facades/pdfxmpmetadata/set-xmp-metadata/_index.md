@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-In order to set XMP metadata in a PDF file, you need to create [PdfXmpMetadata](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfXmpMetadata) object and bind the PDF file using [bindPdf(..)](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/Facade#bindPdf-com.aspose.pdf.IDocument-) method. You can use setByDefaultMetadataProperties(..) method of the [PdfXmpMetadata](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/classes/PdfXmpMetadata) class to add different properties. Finally, call the [save(...)](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/SaveableFacade#save-java.io.OutputStream-) method of [PdfXmpMetadata](https://apireference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfXmpMetadata) class.
+In order to set XMP metadata in a PDF file, you need to create [PdfXmpMetadata](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfXmpMetadata) object and bind the PDF file using [bindPdf(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Facade#bindPdf-com.aspose.pdf.IDocument-) method. You can use setByDefaultMetadataProperties(..) method of the [PdfXmpMetadata](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfXmpMetadata) class to add different properties. Finally, call the [save(...)](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/SaveableFacade#save-java.io.OutputStream-) method of [PdfXmpMetadata](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfXmpMetadata) class.
 
 The following code snippet shows you how to add XMP metadata in a PDF file.
 

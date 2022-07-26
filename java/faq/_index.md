@@ -1,9 +1,10 @@
 ---
-title: FAQ
+title: FAQ 
 linktitle: FAQ
 type: docs
 weight: 120
 url: /java/faq/
+description: Please learn Frequently Asked Questions from Aspose.PDF for Java library.
 lastmod: "2021-06-17"
 sitemap:
     changefreq: "weekly"

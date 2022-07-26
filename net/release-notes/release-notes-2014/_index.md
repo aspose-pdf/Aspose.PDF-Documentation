@@ -4,7 +4,7 @@ linktitle: Release Notes - 2014
 type: docs
 weight: 70
 url: /net/release-notes-2014/
-description: This page contains the Release Notes information for Aspose.PDF for .NET in 2014. This is a list of new Aspose.PDF for .NET features, enhancement, and bug fixes.
+description: This page contains the Release Notes information for Aspose.PDF for .NET in 2014. 
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

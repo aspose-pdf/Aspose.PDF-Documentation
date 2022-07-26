@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft Word documents using Java
+title: Convert PDF to Microsoft Word documents 
 linktitle: Convert PDF to Word
 type: docs
 weight: 10
@@ -38,9 +38,9 @@ The following code snippet shows the process of converting a PDF file into DOC f
 
 ## Using the DocSaveOptions Class 
 
-The [DocSaveOptions class](https://apireference.aspose.com/pdf/java/com.aspose.pdf/DocSaveOptions) provides numerous properties that improve the process of converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can specify any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
+The [DocSaveOptions class](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocSaveOptions) provides numerous properties that improve the process of converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can specify any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
 
-- [Textbox](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) mode is fast and good for preserving a PDF file’s original look, but the editability of the resulting document could be limited. Every visually grouped block of text in the original PDF is converted into a textbox in the output document. This achieves a maximal resemblance to the original so the output document looks good, but it consists entirely of textboxes and it could make editing in Microsoft Word hard.
+- [Textbox](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) mode is fast and good for preserving a PDF file’s original look, but the editability of the resulting document could be limited. Every visually grouped block of text in the original PDF is converted into a textbox in the output document. This achieves a maximal resemblance to the original so the output document looks good, but it consists entirely of textboxes and it could make editing in Microsoft Word hard.
 
 - Flow is full recognition mode, where the engine performs grouping and multi-level analysis to restore the original document as per the author’s intent while producing an easily editable document. The limitation is that the output document might look different from the original.
 
@@ -96,7 +96,7 @@ For quick conversion use Save() method with SaveFormat.DocX options:
     }
 ```
 
-The [DocSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions) class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.
+The [DocSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions) class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.
 
 Please take a look over the following code snippet which provides the capability to convert PDF file to DOCX format with Java.
 

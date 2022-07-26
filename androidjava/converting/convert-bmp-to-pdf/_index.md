@@ -5,7 +5,7 @@ type: docs
 weight: 220
 url: /androidjava/convert-bmp-to-pdf/
 lastmod: "2021-06-05"
-description: You may easily convert BMP bitmap files to PDF used to store digital bitmap images separately from the display device using Aspose.PDF. for Java.
+description: You may easily convert BMP bitmap files to PDF used to store digital bitmap images separately from the display device using Aspose.PDF. for Android via Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -21,34 +21,35 @@ You can convert BMP to PDF with Aspose.PDF for Java API. Therefore, you can foll
 So the following code snippet follows these steps and shows how to convert BMP to PDF using Java:
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertBMPtoPDF {
-
-    private ConvertBMPtoPDF() {
-    }
-
-    private static Path _dataDir = Paths.get("<set path to samples>");
-
-    public static void main(String[] args) throws FileNotFoundException {
+public void convertBMPtoPDF () {
         // Initialize document object
-        Document document = new Document();
+        document=new Document();
 
-        Page page = document.getPages().add();        
-        Image image = new Image();
-        
+        Page page=document.getPages().add();
+        Image image=new Image();
+
+        File imgFileName=new File(fileStorage, "Conversion/sample.bmp");
+
+        try {
+            inputStream=new FileInputStream(imgFileName);
+        } catch (FileNotFoundException e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+
         // Load sample BMP image file
-        image.setFile(Paths.get(_dataDir.toString(), "Sample.bmp").toString());
+        image.setImageStream(inputStream);
         page.getParagraphs().add(image);
-        
-        // Save output PDF document
-        document.save(Paths.get(_dataDir.toString(),"BMPtoPDF.pdf").toString());
+
+        File pdfFileName=new File(fileStorage, "BMP-to-PDF.pdf");
+
+        // Save output document
+        try {
+            document.save(pdfFileName.toString());
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+        resultMessage.setText(R.string.success_message);
     }
-}
 ```

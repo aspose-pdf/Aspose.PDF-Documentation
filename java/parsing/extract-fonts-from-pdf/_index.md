@@ -1,5 +1,5 @@
 ---
-title: Extract fonts from PDF using Java
+title: Extract fonts from PDF 
 linktitle: Extract fonts
 type: docs
 weight: 30

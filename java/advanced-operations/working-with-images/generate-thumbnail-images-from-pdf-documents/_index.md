@@ -17,7 +17,7 @@ Aspose.PDF has distinct benefits:
 - You don't need to have Adobe Acrobat installed on your system to work with PDF files.
 - Using Aspose.PDF for Java is simple and easy to understand as compared to Acrobat Automation.
 
-If we need to convert PDF pages into JPEGs, the [com.aspose.pdf.devices](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/package-frame) namespace provides a class named [JpegDevice](https://apireference.aspose.com/pdf/java/com.aspose.pdf.devices/JpegDevice) for rendering PDF pages into JPEG images. Please take a look over the following code snippet.
+If we need to convert PDF pages into JPEGs, the [com.aspose.pdf.devices](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/package-frame) namespace provides a class named [JpegDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/JpegDevice) for rendering PDF pages into JPEG images. Please take a look over the following code snippet.
 
 ```java
 package com.aspose.pdf.examples;

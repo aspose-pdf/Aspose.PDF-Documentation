@@ -1,17 +1,83 @@
 ---
-title: Optimize PDF using C#
+title: Optimize, Compress or Reduce PDF Size in C#
 linktitle: Optimize PDF
 type: docs
 weight: 30
 url: /net/optimize-pdf/
+keywords: "optimize pdf c#"
 description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with C#.
-lastmod: "2021-06-05"
-aliases:
-    - /net/changing-page-sizes-in-a-pdf-file/
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+aliases:
+    - /net/changing-page-sizes-in-a-pdf-file/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Optimize PDF using C#",
+    "alternativeHeadline": "How to optimize PDF with .NET",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, optimize pdf",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/optimize-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/optimize-pdf/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with C#."
+}
+</script>
 
 A PDF document may sometimes contain additional data. Reducing the size of a PDF file will help you optimize network transfer and storage. This is especially handy for publishing on web pages, sharing on social networks, sending by e-mail, or archiving in storage. We can use several techniques to optimize PDF:
 
@@ -34,9 +100,9 @@ A PDF document may sometimes contain additional data. Reducing the size of a PDF
 
 Optimization, or linearization for Web, refers to the process of making a PDF file suitable for online browsing using a web browser. To optimize a file for web display:
 
-1. Open the input document in an [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) object.
-1. Use the [Optimize](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) method.
-1. Save the optimized document using the [Save](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
+1. Open the input document in an [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object.
+1. Use the [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) method.
+1. Save the optimized document using the [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
 
 The following code snippet shows how to optimize a PDF document for the web.
 
@@ -59,7 +125,7 @@ pdfDocument.Save(dataDir);
 
 ## Reduce Size PDF
 
-The [OptimizeResources()](https://apireference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
+The [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
 
 - Resources that are not used on the document pages are removed
 - Equal resources are joined into one object
@@ -82,11 +148,11 @@ pdfDocument.Save(dataDir);
 
 ## Optimization Strategy Management
 
-We can also customize the optimization strategy. Currently, the [OptimizeResources()](https://apireference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) method uses 5 techniques. These techniques can be applied using the OptimizeResources() method with the [OptimizationOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions) parameter.
+We can also customize the optimization strategy. Currently, the [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) method uses 5 techniques. These techniques can be applied using the OptimizeResources() method with the [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions) parameter.
 
 ### Shrinking or Compressing All Images
 
-We have two ways to work with images: reduce image quality and/or change their resolution. In any case, [ImageCompressionOptions](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions) should be applied. In the following example, we shrink images by reducing [ImageQuality](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) to 50.
+We have two ways to work with images: reduce image quality and/or change their resolution. In any case, [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions) should be applied. In the following example, we shrink images by reducing [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) to 50.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -134,7 +200,7 @@ dataDir = dataDir + "ResizeImages_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-Another important issue is the execution time. But again, we can manage this setting too. Currently, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) property. The following snippet demonstrates the Fast algorithm:
+Another important issue is the execution time. But again, we can manage this setting too. Currently, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) property. The following snippet demonstrates the Fast algorithm:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +292,7 @@ dataDir = dataDir + "OptimizeDocument_out.pdf";
 pdfDocument.Save(dataDir);
 ```
 
-Additionally, we can use [AllowReusePageContent](https://apireference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
+Additionally, we can use [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -371,3 +437,67 @@ Aspose.PDF for .NET provides support of FlateDecode compression for PDF Optimisa
 Aspose.PDF for .NET provides the ability to store new images into **XImageCollection** with FlateDecode compression. To enable this option you can use **ImageFilterType.Flate** flag. The following code snippet shows how to use this functionality:
 
 {{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-StoreImageInXImageCollection-1.cs" >}}
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

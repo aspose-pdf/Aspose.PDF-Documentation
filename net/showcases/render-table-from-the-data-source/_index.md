@@ -13,7 +13,7 @@ sitemap:
 
 Aspose.PDF allows you to create the table with DataSource from DataSet, Data Table, arrays and IEnumerable objects using PdfLightTable class
 
-The [Table class](https://apireference.aspose.com/pdf/net/aspose.pdf/table) is used to process tables. This class gives us the ability to create tables and place them in the document, using [Rows](https://apireference.aspose.com/pdf/net/aspose.pdf/rows) and [Cells](https://apireference.aspose.com/pdf/net/aspose.pdf/cell). So, to create the table, you need to add the required number of rows and fill them with the appropriate number of cells.
+The [Table class](https://reference.aspose.com/pdf/net/aspose.pdf/table) is used to process tables. This class gives us the ability to create tables and place them in the document, using [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) and [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). So, to create the table, you need to add the required number of rows and fill them with the appropriate number of cells.
 
 The following example creates the table 4x10.
 
@@ -45,14 +45,14 @@ var table = new Table
 
 When initializing the Table object, the minimal skin settings were used:
 
-* [ColumnWidths](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - width of columns (by default);
-* [DefaultCellPadding](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - the default fields for the table cell;
-* [Border](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - table frame attributes (style, thickness, color);
-* [DefaultCellBorder](https://apireference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - attributes of the cell frame (style, thickness, color).
+* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - width of columns (by default);
+* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - the default fields for the table cell;
+* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - table frame attributes (style, thickness, color);
+* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - attributes of the cell frame (style, thickness, color).
 
 ## Exporting data from an array of objects
 
-The Table class provides methods for interacting with ADO.NET data sources - [ImportDataTable](https://apireference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) and [ImportDataView](https://apireference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). The first method imports data from the DataTable, the second from the DataView.
+The Table class provides methods for interacting with ADO.NET data sources - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) and [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). The first method imports data from the DataTable, the second from the DataView.
 Premising that these objects are not very convenient for working in the MVC template, we will limit ourselves to a brief example. In this example (line 50), the ImportDataTable method is called and receives as parameters a DataTable instance and additional settings like the header flag and the initial position (rows/cols) for the data output.
 
 ```csharp

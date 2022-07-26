@@ -23,70 +23,26 @@ Consider option using XML document based on XSL-FO standard.
 
 ## Convert XSL-FO to PDF
 
-The conversion of XSL-FO files to PDF can be implemented using [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object with [XslFoLoadOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions),  but sometimes you can meet with the incorrect file structure. 
+The conversion of XSL-FO files to PDF can be implemented using [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions),  but sometimes you can meet with the incorrect file structure. 
 
 ```java
-package com.aspose.pdf.examples;
-/**
- * Convert XML to PDF
- */
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertXMLtoPDF {
-
-    private ConvertXMLtoPDF() {
-    }
-
-    final static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-    public static void main(String[] args) throws IOException {
-        Convert_XSLFO_to_PDF();
-        Convert_XSLFO_to_PDF_Adv();
-    }
-
-    public static void Convert_XSLFO_to_PDF() throws IOException {
+// Convert XML to PDF
+    public void convertXMLtoPDF() {
         // Initialize document object
+        String pdfDocumentFileName = new File(fileStorage,"XML-to-PDF.pdf").toString();
+        String xmlDocumentFileName = new File(fileStorage,"Conversion/employees.xml").toString();
+        String xsltDocumentFileName = new File(fileStorage, "Conversion/employees.xslt").toString();
 
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo_txt.pdf").toString();
-        String xmlDocumentFileName = Paths.get(_dataDir.toString(), "demo.xml").toString();
-        String xsltDocumentFileName = Paths.get(_dataDir.toString(), "employees.xslt").toString();
-
-        XslFoLoadOptions options = new XslFoLoadOptions(xsltDocumentFileName);
-
-        // Instantiate a Document object by calling its empty constructor
-        Document pdfDocument = new Document(xmlDocumentFileName,options);
-
-        // Save resultant PDF file
-        pdfDocument.save(pdfDocumentFileName);
-    }
-    
+        try {
+            XslFoLoadOptions options = new XslFoLoadOptions(xsltDocumentFileName);
+            document = new Document(xmlDocumentFileName,options);
+            // Save resultant PDF file
+            document.save(pdfDocumentFileName.toString());
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+        resultMessage.setText(R.string.success_message);
+    }    
     ```
     
- ## Convert XSL-FO to PDF with set error handling strategy
-    
-    ```java
-    
-    public static void Convert_XSLFO_to_PDF_Adv() throws IOException {
-        // Initialize document object
-
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo_txt.pdf").toString();
-        String xmlDocumentFileName = Paths.get(_dataDir.toString(), "demo.xml").toString();
-        String xsltDocumentFileName = Paths.get(_dataDir.toString(), "employees.xslt").toString();
-
-        XslFoLoadOptions options = new XslFoLoadOptions(xsltDocumentFileName);
-        // Set error handling strategy
-        options.ParsingErrorsHandlingType = XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
-
-        // Instantiate a Document object by calling its empty constructor
-        Document pdfDocument = new Document(xmlDocumentFileName,options);
-
-        // Save resultant PDF file
-        pdfDocument.save(pdfDocumentFileName);
-    }
-
-}
-```

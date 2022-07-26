@@ -17,9 +17,9 @@ Merging pdf files is not an easy task, but very popular. You can use the Aspose.
 
 To concatenate two PDF files:
 
-1. Create two [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document)  objects, each containing one of the input PDF files.
-1. Then call the [PageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection’s Add method for the Document object you want to add the other PDF file to.
-1. Add [Page](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page) of second document to the first file.
+1. Create two [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)  objects, each containing one of the input PDF files.
+1. Then call the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection’s Add method for the Document object you want to add the other PDF file to.
+1. Add [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) of second document to the first file.
 1. Finally, save the output PDF file using the Save method.
 
 The following code snippet shows how to concatenate PDF files.

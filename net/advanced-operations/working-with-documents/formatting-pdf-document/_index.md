@@ -5,11 +5,76 @@ type: docs
 weight: 11
 url: /net/formatting-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for .NET. Use the next code snippet to resolve your tasks.
-lastmod: "2021-06-05"
+lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Formatting PDF Document using C#",
+    "alternativeHeadline": "How to format PDF Document in .NET",
+    "author": {
+        "@type": "Person",
+        "name":"Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "pdf, dotnet, format pdf document",
+    "wordcount": "302",
+    "proficiencyLevel":"Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF Doc Team",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/formatting-pdf-document/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/formatting-pdf-document/"
+    },
+    "dateModified": "2022-02-04",
+    "description": "Create and format the PDF Document with Aspose.PDF for .NET. Use the next code snippet to resolve your tasks."
+}
+</script>
 
 ## Formatting PDF Document
 
@@ -17,7 +82,7 @@ sitemap:
 
 This topic helps you understand how to get properties of the document window, viewer application, and how pages are displayed. To set these properties:
 
-Open the PDF file using the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class. Now, you can set the Document object’s properties, such as
+Open the PDF file using the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. Now, you can set the Document object’s properties, such as
 
 - CenterWindow – Center the document window on the screen. Default: false.
 - Direction – Reading order. This determines how pages are laid out when displayed side by side. Default: left to right.
@@ -29,7 +94,7 @@ Open the PDF file using the [Document](https://apireference.aspose.com/pdf/net/a
 - PageLayout – The page layout.
 - PageMode – How the document is displayed when first opened. The options are show thumbnails, full-screen, show attachment panel.
 
-The following code snippet shows you how to get the properties using [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class.
+The following code snippet shows you how to get the properties using [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -80,7 +145,7 @@ Console.WriteLine("pageMode : {0}", pdfDocument.PageMode);
 
 This topic explains how to set the properties of the document window, viewer application, and page display. To set these different properties:
 
-1. Open the PDF file using the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class.
+1. Open the PDF file using the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 1. Set the Document object’s properties.
 1. Save the updated PDF file using the Save method.
 
@@ -97,7 +162,7 @@ Properties available are:
 - PageLayout
 - PageMode
 
-Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class.
+Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -152,7 +217,7 @@ pdfDocument.Save(dataDir);
 
 PDF readers support [a core of 14 fonts](https://en.wikipedia.org/wiki/PDF#Text) so that documents can be displayed the same way regardless of the platform the document is displayed on. When a PDF contains a font that is not one of the 14 core fonts, embed the font to the PDF file to avoid font substitution.
 
-Aspose.PDF for .NET supports font embedding in existing PDF files. You can embed a complete font or a subset of the font. To embed the font, open the PDF file using the [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class. Then use the [Aspose.Pdf.Text.Font](https://apireference.aspose.com/pdf/net/aspose.pdf.text) class to embed the font into the PDF file. To embed the full font, use the Font class’ IsEmbeded property; to use a subset of the font, use the IsSubset property.
+Aspose.PDF for .NET supports font embedding in existing PDF files. You can embed a complete font or a subset of the font. To embed the font, open the PDF file using the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. Then use the [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) class to embed the font into the PDF file. To embed the full font, use the Font class’ IsEmbeded property; to use a subset of the font, use the IsSubset property.
 
 {{% alert color="primary" %}}
 
@@ -164,7 +229,7 @@ The following code snippet shows how to embed a font in a PDF file.
 
 ### Embedding Standard Type 1 Fonts
 
-Some PDF documents have fonts from a special Adobe font set. Fonts from this set are called “Standard Type 1 Fonts”. This set includes 14 fonts and embedding this type of fonts requires using of special flags i.e [Aspose.Pdf.Document.EmbedStandardFonts](https://apireference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). Following is the code snippet which can be used to get a document with all fonts embedded including Standard Type 1 Fonts:
+Some PDF documents have fonts from a special Adobe font set. Fonts from this set are called “Standard Type 1 Fonts”. This set includes 14 fonts and embedding this type of fonts requires using of special flags i.e [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). Following is the code snippet which can be used to get a document with all fonts embedded including Standard Type 1 Fonts:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +313,7 @@ using (Document document = new Document(fs))
 
 ### Get All Fonts from PDF Document
 
-In case you want to get all fonts from a PDF document, you can use FontUtilities.GetAllFonts() method provided in [Document](https://apireference.aspose.com/pdf/net/aspose.pdf/document) class. Please check following code snippet in order to get all fonts from an existing PDF document:
+In case you want to get all fonts from a PDF document, you can use FontUtilities.GetAllFonts() method provided in [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. Please check following code snippet in order to get all fonts from an existing PDF document:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -309,7 +374,7 @@ doc.Save(dataDir + "Output_out.pdf");
 
 Sometimes, you want to determine what a PDF document’s current zoom factor is. With Aspose.Pdf, you can find out the current value as well as set one.
 
-The [GoToAction](https://apireference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) class’ Destination property allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file’s zoom factor.
+The [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) class’ Destination property allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file’s zoom factor.
 
 #### Set Zoom factor
 
@@ -384,3 +449,67 @@ using (PdfContentEditor ed = new PdfContentEditor())
     ed.Save(dataDir + "SetPrintDlgPropertiesUsingPdfContentEditor_out.pdf");
 }
 ```
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

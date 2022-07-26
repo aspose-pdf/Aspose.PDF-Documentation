@@ -11,6 +11,50 @@ sitemap:
 lastmod: "2021-12-24"
 ---
 
+## What's new in Aspose.PDF 22.3
+
+This release includes the following updates:
+
+- Support for AFRelationship;
+
+- PDF header validation;
+
+- Remove adbe.x509.rsa_sha1 subfilter while saving document;
+
+- Format Field as Number and Date Format;
+
+- Prohibit use RC4 encryption in FDF 2.0ю
+
+## What's new in Aspose.PDF 22.2
+
+From the 22.2 version it is possible to sign a document using PdfFileSignature with LTV, and with being able to change the hashing from SHA1 to SHA256.
+
+```csharp
+Example of using:
+var inputPdf = "51168.pdf";
+var inputPfx = "51168.pfx";
+var inputPfxPassword = "111111";
+var outputPdf = "51168.pdf";
+
+using (var doc = new Document(inputPdf))
+{
+    using (PdfFileSignature signature = new PdfFileSignature(doc))
+    {
+        var pkcs = new PKCS7(inputPfx, inputPfxPassword)
+        {
+            UseLtv = true,
+            TimestampSettings = new TimestampSettings("http://freetsa.org/tsr", string.Empty, DigestHashAlgorithm.Sha256)
+        };
+        signature.Sign(1, false, new System.Drawing.Rectangle(300, 100, 1, 1), pkcs);
+        signature.Save(outputPdf);
+    }
+}
+```
+
+## What's new in Aspose.PDF 22.1
+
+Now, Aspose.PDF for .NET supports loading documents from one of the most popular document formats, Portable Document Format (PDF) version 2.0.
+
 ## What's new in Aspose.PDF 21.11
 
 ### Allow non-latin characters in password
@@ -114,7 +158,7 @@ using (PdfFileSignature pdfSign = new PdfFileSignature())
 
 ### PDF creation based on XML and XLS with parameters
 
-To add XSL params we need to create own [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) and set as property in [XslFoLoadOptions](https://apireference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). The following snippet shows how to use this class with the sample files described above.
+To add XSL params we need to create own [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) and set as property in [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). The following snippet shows how to use this class with the sample files described above.
 
 ```csharp
 public static void Example_XSLFO_to_PDF()

@@ -1,5 +1,5 @@
 ---
-title: Working with XFA Forms in PDF using Aspose.PDF for Java
+title: Working with XFA Forms in PDF 
 linktitle: XFA Forms
 type: docs
 weight: 20

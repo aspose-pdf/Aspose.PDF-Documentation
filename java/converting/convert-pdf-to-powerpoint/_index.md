@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft PowerPoint using Java
+title: Convert PDF to Microsoft PowerPoint 
 linktitle: Convert PDF to PowerPoint
 type: docs
 weight: 30
@@ -15,7 +15,7 @@ sitemap:
 **Aspose.PDF for Java** lets you track the progress of PDF to PPTX conversion.
 We have an API named Aspose.Slides which offers the feature to create as well as manipulate PPT/PPTX presentations. This API also provides the feature to convert PPT/PPTX files to PDF format. In Aspose.PDF for Java, we have introduced a feature to transform PDF documents into PPTX format. During this conversion, the individual pages of the PDF file are converted to separate slides in the PPTX file.
 
-During PDF to PPTX conversion, the text is rendered as Text where you can select/update it, instead of its rendered as an image. Please note that in order to convert PDF files to PPTX format, Aspose.PDF provides a class named PptxSaveOptions. An object of the [PptxSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) class is passed as a second argument to the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Document).save(..) method. 
+During PDF to PPTX conversion, the text is rendered as Text where you can select/update it, instead of its rendered as an image. Please note that in order to convert PDF files to PPTX format, Aspose.PDF provides a class named PptxSaveOptions. An object of the [PptxSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) class is passed as a second argument to the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) method.
 
 Check next code snippet to resolve your tasks with conversion PDF to PowerPoint format:
 
@@ -60,7 +60,7 @@ public final class ConvertPDFtoPPTX {
 
 ## Convert PDF to PPTX with Slides as Images
 
-In case if you need to convert a searchable PDF to PPTX as images instead of selectable text, Aspose.PDF provides such a feature via [Aspose.Pdf.PptxSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) class. To achieve this, set property SlidesAsImages  of [PptxSaveOptios](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) class to 'true' as shown in the following code sample.
+In case if you need to convert a searchable PDF to PPTX as images instead of selectable text, Aspose.PDF provides such a feature via [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) class. To achieve this, set property SlidesAsImages  of [PptxSaveOptios](https://reference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) class to 'true' as shown in the following code sample.
 
 The following code snippet shows the process for converting PDF files into PPTX format Slides as Images. 
 
@@ -135,7 +135,7 @@ class ShowProgressOnConsole extends ConversionProgressEventHandler{
 
 ## Progress Detail of PPTX Conversion
 
-Aspose.PDF for Java lets you track the progress of PDF to PPTX conversion. The [Aspose.Pdf.PptxSaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) class provides [CustomProgressHandler](https://apireference.aspose.com/pdf/java/com.aspose.pdf/HtmlSaveOptions) property that can be specified to a custom method for tracking the progress of conversion as shown in the following code sample.
+Aspose.PDF for Java lets you track the progress of PDF to PPTX conversion. The [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) class provides [CustomProgressHandler](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlSaveOptions) property that can be specified to a custom method for tracking the progress of conversion as shown in the following code sample.
 
 ```java
 package com.aspose.pdf.examples;

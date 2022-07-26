@@ -13,7 +13,7 @@ sitemap:
 
 ## Extract Text From All the Pages of a PDF Document
 
-Extracting text from a PDF document is a common requirement. In this example, you’ll see how Aspose.PDF for C++ allows extracting text from all the pages of a PDF document. You need to create an object of the [TextAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) class. After that, open the PDF using [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) class and call the 'Accept' method of the [Pages](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.page)collection. The  [TextAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) class absorbs the text from the document and returns in 'Text' property. The following code snippet shows you how to extract text from all pages of PDF document.
+Extracting text from a PDF document is a common requirement. In this example, you’ll see how Aspose.PDF for C++ allows extracting text from all the pages of a PDF document. You need to create an object of the [TextAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) class. After that, open the PDF using [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class and call the 'Accept' method of the [Pages](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page)collection. The  [TextAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) class absorbs the text from the document and returns in 'Text' property. The following code snippet shows you how to extract text from all pages of PDF document.
 
 ```cpp
 using namespace System;
@@ -75,7 +75,7 @@ void ExtractTextFromParticularPage() {
 
 ## Extract Text from Pages using Text Device
 
-You can use the [TextDevice](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.devices.text_device/)class to extract text from a PDF file TextDevice uses TextAbsorber in its implementation, thus, in fact, they do the same thing but TextDevice just implemented to unify the "Device" approach to extract anything from the page ImageDevice, PageDevice, etc. TextAbsorber may extract text from Page, entire PDF or XForm, this TextAbsorber is more universal
+You can use the [TextDevice](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.text_device/)class to extract text from a PDF file TextDevice uses TextAbsorber in its implementation, thus, in fact, they do the same thing but TextDevice just implemented to unify the "Device" approach to extract anything from the page ImageDevice, PageDevice, etc. TextAbsorber may extract text from Page, entire PDF or XForm, this TextAbsorber is more universal
 
 ### Extract text from all pages
 
@@ -134,9 +134,9 @@ void ExtractTextUsingTextDevice() {
 
 ## Extract Text from a particular page region
 
-[TextAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) class provides the capability to extract text from a particular or all pages of a PDF document. This class returns the extracted text in the 'Text' property. However, if we have the requirement to extract text from a particular page region, we can use the **Rectangle** property of [TextSearchOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_search_options/) The Rectangle property takes a Rectangle object as a value and using this property, we can specify the region of the page from which we need to extract the text.
+[TextAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) class provides the capability to extract text from a particular or all pages of a PDF document. This class returns the extracted text in the 'Text' property. However, if we have the requirement to extract text from a particular page region, we can use the **Rectangle** property of [TextSearchOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_search_options/) The Rectangle property takes a Rectangle object as a value and using this property, we can specify the region of the page from which we need to extract the text.
 
-The **Accept** method of a page is called to extract the text. Create objects of [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) and [TextAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) classes. Call 'Accept' method on the individual page, as **Page** Index, of the [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object. The **Index** is the particular page number from where text needs to be extracted. You can get text from the 'Text' property of the [TextAbsorber](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) class. The following code snippet shows you how to extract text from an individual page.
+The **Accept** method of a page is called to extract the text. Create objects of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) and [TextAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) classes. Call 'Accept' method on the individual page, as **Page** Index, of the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object. The **Index** is the particular page number from where text needs to be extracted. You can get text from the 'Text' property of the [TextAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) class. The following code snippet shows you how to extract text from an individual page.
 
 ```cpp
 void ExtractTextFromParticularPageRegion() {
@@ -218,7 +218,7 @@ void ExtractTextBasedOnColumns() {
 
 ### Second approach - Using ScaleFactor
 
-In this new release, we also have introduced several improvements in TextAbsorber and in the internal text formatting mechanism. So now during the text extraction using ‘Pure’ mode, you may specify the [ScaleFactor](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_extraction_options#a4f9a173765d483b493c31e416f8b035a) option and it can be another approach to extract text from a multi-column PDF document besides the above-stated approach. This scale factor may be set to adjust the grid which is used for the internal text formatting mechanism during text extraction. Specifying the ScaleFactor values between 1 and 0.1 (including 0.1) has the same effect as font reduction.
+In this new release, we also have introduced several improvements in TextAbsorber and in the internal text formatting mechanism. So now during the text extraction using ‘Pure’ mode, you may specify the [ScaleFactor](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_extraction_options#a4f9a173765d483b493c31e416f8b035a) option and it can be another approach to extract text from a multi-column PDF document besides the above-stated approach. This scale factor may be set to adjust the grid which is used for the internal text formatting mechanism during text extraction. Specifying the ScaleFactor values between 1 and 0.1 (including 0.1) has the same effect as font reduction.
 
 Specifying the ScaleFactor values between 0.1 and -0.1 is treated as zero value, but it makes the algorithm to calculate scale factor needed during extracting text automatically. The calculation is based on average glyph width of the most popular font on the page, but we cannot guarantee that in extracted text no string of column reaches the start of the next column. Please note that if ScaleFactor value is not specified, the default value of 1.0 will be used. It means no scaling will be carried out. If the specified ScaleFactor value is more than 10 or less than -0.1, the default value of 1.0 will be used.
 

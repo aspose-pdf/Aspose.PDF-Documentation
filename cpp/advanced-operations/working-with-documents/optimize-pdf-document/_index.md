@@ -27,8 +27,8 @@ We can use several techniques to optimize PDF, but the most essential:
 
 When you are faced with the task of optimizing the content of your PDF document for better ranking in search engines, Aspose.PDF for C++ has a solution.
 
-1. Open the input document in an [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
-1. Use the [Optimize](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#a04d95824c334f5e543c13f69a19d9cda) method.
+1. Open the input document in an [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
+1. Use the [Optimize](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a04d95824c334f5e543c13f69a19d9cda) method.
 1. Save the optimized document using the Save method.
 
 The following code snippet shows how to optimize a PDF document for the web.
@@ -61,7 +61,7 @@ void OptimizeForWeb() {
 
 ## Reduce Size PDF
 
-The [OptimizeResources()](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#aea33aac69a42423efb82bcdb359f2ec6) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
+The [OptimizeResources()](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#aea33aac69a42423efb82bcdb359f2ec6) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
 
 - Resources that are not used on the document pages are removed
 - Equal resources are joined into one object
@@ -93,12 +93,12 @@ void ReduceSizePDF() {
 
 ## Optimization Strategy Management
 
-We can also customize the optimization strategy. Currently, the [OptimizeResources()](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#aea33aac69a42423efb82bcdb359f2ec6) method uses 5 techniques. These techniques can be applied using the OptimizeResources() method with the [OptimizationOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document.optimization_options/) parameter.
+We can also customize the optimization strategy. Currently, the [OptimizeResources()](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#aea33aac69a42423efb82bcdb359f2ec6) method uses 5 techniques. These techniques can be applied using the OptimizeResources() method with the [OptimizationOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document.optimization_options/) parameter.
 
 ### Shrinking or Compressing All Images
 
-To optimize images in your PDF document, we will use [Aspose.Pdf.Optimization](https://apireference.aspose.com/pdf/cpp/namespace/aspose.pdf.optimization).
-To solve the problem with image optimization, we have the following options: reduce image quality and/or change their resolution. In any case, [ImageCompressionOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options/) should be applied. In the following example, we shrink images by reducing [ImageQuality](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#a92ee855b042a6b310984b4966ea7154e) to 50.
+To optimize images in your PDF document, we will use [Aspose.Pdf.Optimization](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.optimization).
+To solve the problem with image optimization, we have the following options: reduce image quality and/or change their resolution. In any case, [ImageCompressionOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options/) should be applied. In the following example, we shrink images by reducing [ImageQuality](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#a92ee855b042a6b310984b4966ea7154e) to 50.
 
 ```cpp
 void CompressImage() {
@@ -127,7 +127,7 @@ void CompressImage() {
 }
 ```
 
-To set the image at a lower resolution, set [ResizeImages](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#a0e5aad7e140ee380c09ebbb8a5238ff6) to true and [MaxResolution](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#a05a4d1ace23ef074b3dc203cb213755e) to the corresponding value.
+To set the image at a lower resolution, set [ResizeImages](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#a0e5aad7e140ee380c09ebbb8a5238ff6) to true and [MaxResolution](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#a05a4d1ace23ef074b3dc203cb213755e) to the corresponding value.
 
 ```cpp
 void ResizeImagesWithLowerResolution() {
@@ -161,7 +161,7 @@ void ResizeImagesWithLowerResolution() {
 }
 ```
 
-Aspose.PDF for C++ also offers you control over the runtime setting. Today, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#aa2f1d93725ce56f8fabe692152bbf3a4) property.
+Aspose.PDF for C++ also offers you control over the runtime setting. Today, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#aa2f1d93725ce56f8fabe692152bbf3a4) property.
 
 The following snippet demonstrates the Fast algorithm:
 
@@ -289,7 +289,7 @@ void LinkingDuplicateStreams() {
 }
 ```
 
-Additionally, we can use [AllowReusePageContent](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.optimization_options#aedaab36eaf8ed5059a2b1e11275bf6d8) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
+Additionally, we can use [AllowReusePageContent](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.optimization_options#aedaab36eaf8ed5059a2b1e11275bf6d8) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
 
 ```cpp
 void AllowReusePageContent() { 
@@ -481,7 +481,7 @@ void FlatDecodeCompression() {
 
 ### **Store Image in XImageCollection**
 
-Aspose.PDF for C++ provides the ability to store new images into [XImageCollection](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection) with FlateDecode compression. To enable this option you can use **ImageFilterType.Flate** flag.
+Aspose.PDF for C++ provides the ability to store new images into [XImageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection) with FlateDecode compression. To enable this option you can use **ImageFilterType.Flate** flag.
 The following code snippet shows how to use this functionality:
 
 ```cpp

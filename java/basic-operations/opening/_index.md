@@ -1,5 +1,5 @@
 ---
-title: Open PDF Document using Java
+title: Open PDF Document
 linktitle: Open
 type: docs
 weight: 20

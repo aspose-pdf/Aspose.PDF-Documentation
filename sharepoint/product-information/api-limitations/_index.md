@@ -1,9 +1,10 @@
 ---
-title: API Limitations
+title: API Limitations 
 type: docs
 weight: 70
 url: /sharepoint/api-limitations/
 lastmod: "2020-12-16"
+description: The article explains some of the PDF SharePoint API limitations.
 ---
 
 {{% alert color="primary" %}}
@@ -11,7 +12,7 @@ lastmod: "2020-12-16"
 There are some limitations while using this component.
 
 {{% /alert %}}
-## <ins>**PDF Creator information**
+## PDF Creator information
 
 {{% alert color="primary" %}}
 

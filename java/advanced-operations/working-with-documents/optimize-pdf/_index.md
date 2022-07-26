@@ -1,5 +1,6 @@
 ---
-title: Optimize PDF Document
+title: Optimize, Compress or Reduce PDF Size in Java
+linktitle: Optimize PDF Document
 type: docs
 weight: 40
 url: /java/optimize-pdf/
@@ -24,8 +25,8 @@ Optimization or linearization refers to the process of making a PDF file suitabl
 
 To optimize a PDF for web display:
 
-1. Open the input document in a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
-1. Use the [optimize()](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#optimize--) method.
+1. Open the input document in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
+1. Use the [optimize()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#optimize--) method.
 1. Save the optimized document using the save(..) method.
 
 The following code snippet shows how to optimize a PDF document for the web.
@@ -60,7 +61,7 @@ public class ExampleOptimize {
 
 ## Reduce PDF File Size
 
-This topic explains the steps to optimize/reduce the PDF file size. Aspose.PDF API provides the [OptimizationOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf.optimization/class-use/OptimizationOptions) class that gives the flexibility to optimize output PDF by removing unnecessary objects and compressing PDF files having images. Both these options are elaborated in the following sections.
+This topic explains the steps to optimize/reduce the PDF file size. Aspose.PDF API provides the [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf.optimization/class-use/OptimizationOptions) class that gives the flexibility to optimize output PDF by removing unnecessary objects and compressing PDF files having images. Both these options are elaborated in the following sections.
 
 ### Remove Unnecessary Objects
 We can optimize the size of PDF documents by removing duplicate and unused objects. The following code snippet shows how.
@@ -348,7 +349,7 @@ Aspose.PDF for Java provides support of FlateDecode compression for PDF Optimisa
 ```
 ## Store Image in XImageCollection 
 
-Aspose.PDF for Java provides the ability to store new images into [XImageCollection](https://apireference.aspose.com/pdf/java/com.aspose.pdf/class-use/XImageCollection) with FlateDecode compression. To enable this option you can use ImageFilterType.Flate flag. The following code snippet shows how to use this functionality:
+Aspose.PDF for Java provides the ability to store new images into [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/XImageCollection) with FlateDecode compression. To enable this option you can use ImageFilterType.Flate flag. The following code snippet shows how to use this functionality:
 
 ```java
     public static void StoreImageInXImageCollection() {

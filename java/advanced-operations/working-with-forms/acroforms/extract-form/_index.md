@@ -1,6 +1,6 @@
 ---
-title: Extract Data Form
-linktitle: Extract Data Form
+title: Extract Data AcroForms
+linktitle: Extract Data AcroForms
 type: docs
 weight: 30
 url: /java/extract-form/
@@ -13,11 +13,11 @@ sitemap:
 
 ## Get Value from an Individual Field of PDF Document
 
-The form field’s [getValue() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) allows you to get the value of a particular field.
+The form field’s [getValue() method](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) allows you to get the value of a particular field.
 
-To get the value, get the form field from the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Document) object’s Form collection.
+To get the value, get the form field from the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s Form collection.
 
-This example selects a [TextBoxField](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) and retrieves its value using the [getValue() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--).
+This example selects a [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) and retrieves its value using the [getValue() method](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--).
 
 ```java
 package com.aspose.pdf.examples;
@@ -29,24 +29,24 @@ import com.aspose.pdf.TextBoxField;
 public class ExamplesExtractFormData {
     private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
 
-    public static void GetValueFromIndividualFieldPDFDocument() {        
+    public static void GetValueFromIndividualFieldPDFDocument() {
         // Open a document
         Document pdfDocument = new Document(_dataDir+"GetValueFromField.pdf");
-        
+
         // Get a field
         TextBoxField textBoxField = (TextBoxField) pdfDocument.getForm().get("textbox1");
-        
+
         // Get the field name
         System.out.printf("PartialName :-" + textBoxField.getPartialName());
-        
+
         // Get the field value
-        System.out.printf("Value :-" + textBoxField.getValue());        
+        System.out.printf("Value :-" + textBoxField.getValue());
     }
 ```
 
 ## Get Values from All Fields in a PDF Document
 
-To get values from all the fields in a PDF document, you need to navigate through all the form fields and then get the value using the [getValue() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--). Get each field from the Form collection using the [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/classes/Document) object’s [getForm() method](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) and get the list of form fields into an Field array using getFields() and traverse through array to get value of fields.
+To get values from all the fields in a PDF document, you need to navigate through all the form fields and then get the value using the [getValue() method](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--). Get each field from the Form collection using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s [getForm() method](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) and get the list of form fields into an Field array using getFields() and traverse through array to get value of fields.
 
 The following code snippet shows how to get the values of all the fields in a PDF document.
 
@@ -62,6 +62,41 @@ The following code snippet shows how to get the values of all the fields in a PD
             System.out.println("Form field: " + fields[i].getValue());
         }
 
+    }
+}
+```
+
+## Get Form Fields from a Specific Region of PDF File
+
+In some cases, it is required to obtain data not from the entire form, but, for example, only from the upper left quarter of the printed sheet.
+With Aspose.PDF for Java, this is not a problem. You can specify a region to filter out fields that are outside the given region of the PDF file. To get form fields from a specific area of a PDF file:
+
+1. Open the PDF file using the Document object.
+1. Get the form from the document's Forms collection.
+1. Specify the rectangular region and pass it to the Form object's [getFieldsInRect](https://reference.aspose.com/pdf/java/com.aspose.pdf/Form#getFieldsInRect-com.aspose.pdf.Rectangle-) method. A [Fields](https://reference.aspose.com/pdf/java/com.aspose.pdf/Field) collection is returned.
+1. Use this to manipulate the fields.
+
+The following code snippet shows how to get form fields in a specific rectangular region of a PDF file.
+
+```java
+public static void GetValuesFromSpecificRegion() {
+    // Open pdf file
+    Document doc = new Document(_dataDir + "GetFieldsFromRegion.pdf");
+
+    // Create rectangle object to get fields in that area
+    Rectangle rectangle = new Rectangle(35, 30, 500, 500);
+
+    // Get the PDF form
+    com.aspose.pdf.Form form = doc.getForm();
+
+    // Get fields in the rectangular area
+    Field[] fields = form.getFieldsInRect(rectangle);
+
+    // Display Field names and values
+    for (Field field : fields)
+    {
+        // Display image placement properties for all placements
+        System.out.println("Field Name: " + field.getFullName() + "-" + "Field Value: " + field.getValue());
     }
 }
 ```

@@ -1,5 +1,5 @@
 ---
-title: Extract Links from the PDF File with Aspose.PDF for Java
+title: Extract Links from the PDF File 
 linktitle: Extract Links
 type: docs
 weight: 30
@@ -13,13 +13,13 @@ sitemap:
 
 ## Extract Links from the PDF File
 
-Links are represented as annotations in a PDF file, so to extract links, extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) objects.
+Links are represented as annotations in a PDF file, so to extract links, extract all the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) objects.
 
-1. Create a [Document](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
-1. Get the [Page](https://apireference.aspose.com/pdf/java/com.aspose.pdf/Page) you want to extract links from.
-1. Use the [AnnotationSelector](https://apireference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) class to extract all the [LinkAnnotation](https://apireference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) objects from the specified page.
-1. Pass the [AnnotationSelector](https://apireference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) object to the Page object’s Accept method.
-1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://apireference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) object’s [getSelected](https://apireference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector#getSelected--) method.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
+1. Get the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) you want to extract links from.
+1. Use the [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) class to extract all the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) objects from the specified page.
+1. Pass the [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) object to the Page object’s Accept method.
+1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) object’s [getSelected](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector#getSelected--) method.
 
 The following code snippet shows you how to extract links from a PDF file.
 

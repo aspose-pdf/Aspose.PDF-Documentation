@@ -95,7 +95,7 @@ void ConvertPDFtoHTML_SplittingOutputToMultiPageHTML()
 
 ## Specify Folder for Storing SVG Files
 
-During PDF to HTML conversion, it is possible to specify the folder that SVG images should be saved to. Use the [`HtmlSaveOption class`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.html_save_options) [`SpecialFolderForSvgImages property`](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.html_save_options#ac1bb3905c599118fb3db67fd67a5a06f) to specify a special SVG image directory. This property gets or sets the path to the directory to which SVG images must be saved to when encountered during conversion. If the parameter is empty or null, then any SVG files are saved together with other image files.
+During PDF to HTML conversion, it is possible to specify the folder that SVG images should be saved to. Use the [`HtmlSaveOption class`](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.html_save_options) [`SpecialFolderForSvgImages property`](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.html_save_options#ac1bb3905c599118fb3db67fd67a5a06f) to specify a special SVG image directory. This property gets or sets the path to the directory to which SVG images must be saved to when encountered during conversion. If the parameter is empty or null, then any SVG files are saved together with other image files.
 
 ```cpp
 void ConvertPDFtoHTML_SpecifyFolderForStoringSVGfiles()
@@ -187,7 +187,7 @@ void ConvertPDFtoHTML_SpecifyFolderForStoringAllImages()
 
 Recently, we were asked to introduce a feature where PDF files are converted to HTML and the user can get only the contents of the `<body>` tag for each page. This would produce one file with CSS, `<html>`, `<head>` details and all pages in other files just with `<body>` contents.
 
-To meet this requirement, a new property, HtmlMarkupGenerationMode, was introduced to the [HtmlSaveOptions](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.html_save_options) class.
+To meet this requirement, a new property, HtmlMarkupGenerationMode, was introduced to the [HtmlSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.html_save_options) class.
 
 With the following simple code snippet, you can split the output HTML into pages. In the output pages, all HTML objects must go exactly where they go now (fonts processing and output, CSS creation and output, images creation and output), except that the output HTML will contain contents currently placed inside thetags (now “body” tags will be omitted). However, when using this approach, the link to the CSS is the responsibility of your code, because things like will be stripped out. For this purpose, you may read the CSS via File.ReadAllText() and send it via AJAX to to a web page where it will be applied by jQuery.
 
@@ -219,7 +219,7 @@ void ConvertPDFtoHTML_CreateSubsequentFilesWithBodyContentsOnly()
 
 ## Transparent Text rendering
 
-In case the source/input PDF file contains transparent texts shadowed by foreground images, then there might be text rendering issues. So in order to cater such scenarios, [SaveShadowedTextsAsTransparentTexts](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.html_save_options#a6269cf414eb8c252f0ba64a0baf2f9ef) and SaveTransparentTexts properties can be used.
+In case the source/input PDF file contains transparent texts shadowed by foreground images, then there might be text rendering issues. So in order to cater such scenarios, [SaveShadowedTextsAsTransparentTexts](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.html_save_options#a6269cf414eb8c252f0ba64a0baf2f9ef) and SaveTransparentTexts properties can be used.
 
 ```cpp
 void ConvertPDFtoHTML_TransparentTextRendering()

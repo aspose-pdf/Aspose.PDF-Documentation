@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF for Java Documentation
+title: Documentation
 linktitle: Aspose.PDF for Java
 second_title: Aspose.PDF for Java
 type: docs
@@ -39,7 +39,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.PDF for Java Product Page](https://products.aspose.com/pdf/java)
 - [Download Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf)
 - [Install Aspose.PDF for Java from Aspose Repository](/pdf/java/installation/)
-- [Aspose.PDF for Java API Reference Guide](https://apireference.aspose.com/java/pdf)
+- [Aspose.PDF for Java API Reference Guide](https://reference.aspose.com/java/pdf)
 - [Download Examples at GitHub Repository](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 - [Aspose.PDF for Java Free Support Forum](https://forum.aspose.com/c/pdf)
 - [Aspose.PDF for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)

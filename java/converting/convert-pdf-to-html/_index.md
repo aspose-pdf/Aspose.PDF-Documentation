@@ -1,5 +1,5 @@
 ---
-title: Convert PDF file to HTML format using Java
+title: Convert PDF file to HTML format 
 linktitle: Convert PDF file to HTML format
 type: docs
 weight: 50
@@ -132,7 +132,7 @@ To compress SVG images during PDF to HTML conversion, please try using the follo
 
 ## Convert PDF to HTML - Specify Images Folder
 
-By default, when converting a PDF file to HTML, the images in the PDF are saved in a separate folder created in same directory that the output HTML is created. But sometimes, it is necessary to specify a different folder for saving images to when generating HTML files. To accomplish this, we introduced the [SaveOptions](https://apireference.aspose.com/pdf/java/com.aspose.pdf/SaveOptions). SpecialFolderForAllImages property. It is used to specify the target folder for storing images.
+By default, when converting a PDF file to HTML, the images in the PDF are saved in a separate folder created in same directory that the output HTML is created. But sometimes, it is necessary to specify a different folder for saving images to when generating HTML files. To accomplish this, we introduced the [SaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SaveOptions). SpecialFolderForAllImages property. It is used to specify the target folder for storing images.
 
 ```java
     public static void ConvertPDFtoHTML_SpecifyingImagesFolder() {

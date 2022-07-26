@@ -1,5 +1,5 @@
 ---
-title: Install Aspose.PDF for Reporting Services
+title: Install Aspose.PDF
 type: docs
 weight: 50
 url: /reportingservices/install-aspose-pdf-for-reporting-services/

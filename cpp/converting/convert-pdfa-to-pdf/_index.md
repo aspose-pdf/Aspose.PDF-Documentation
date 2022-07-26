@@ -14,8 +14,8 @@ sitemap:
 ## Convert PDF/A document to PDF
 
 Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive
-">PDF/A</abbr> restriction from the original document. Class [Document](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document) has method 'RemovePdfaCompliance' to remove the PDF compliance information from input/source file.
-After [Save](https://apireference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
+">PDF/A</abbr> restriction from the original document. Class [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) has method 'RemovePdfaCompliance' to remove the PDF compliance information from input/source file.
+After [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
 
 ```cpp
 void ConvertPDFAtoPDF()

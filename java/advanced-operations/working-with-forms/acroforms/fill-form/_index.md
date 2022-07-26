@@ -1,6 +1,6 @@
 ---
-title: Fill Form
-linktitle: Fill Form
+title: Fill AcroForms
+linktitle: Fill AcroForms
 type: docs
 weight: 20
 url: /java/fill-form/
