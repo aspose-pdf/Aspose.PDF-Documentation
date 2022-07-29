@@ -39,7 +39,7 @@ This page contains release notes information for Aspose.PDF for Java 22.7.
 |PDFJAVA-39718|The result of PDF to PNG conversion is the white output|Bug|
 |PDFJAVA-39581|PDF to JPG - Blank images are being generated|Bug|
 |PDFJAVA-41752|PDF to Word - Incorrect underline when using EnhancedFlow mode|Bug|
-|PDFJAVA-41454|PDF to JPG - Output is blank
+|PDFJAVA-41454|PDF to JPG - Output is blank|Bug|
 |PDFJAVA-41745|PDF to Excel: Alignment is incorrect|Bug|
 |PDFJAVA-41737|Some values are not visible with default zoom level|Bug|
 
