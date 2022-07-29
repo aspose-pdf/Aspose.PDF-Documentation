@@ -51,8 +51,8 @@ This page contains release notes information for Aspose.PDF for Java 22.7.
 
 **Added new  methods:**
 
-- com.aspose.pdf.devices**.TiffSettings**.isUseAlternativeImageEngine()
-- com.aspose.pdf.devices**.TiffSettings**.setUseAlternativeImageEngine(boolean)
+- com.aspose.pdf.devices.**TiffSettings**.isUseAlternativeImageEngine()
+- com.aspose.pdf.devices.**TiffSettings**.setUseAlternativeImageEngine(boolean)
 - com.aspose.pdf.**Table**.getHeight(Page)
 
 
