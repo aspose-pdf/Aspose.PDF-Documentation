@@ -1,15 +1,16 @@
 ---
-title: Convert PDF to Word Doc or Docx in C# .NET
-linktitle: Convert PDF to Word
+title: Convert PDF to Microsoft Word DOC or DOCX file in .NET 
+linktitle: Convert PDF to Microsoft Word 2003/2019
 type: docs
 weight: 10
 url: /net/convert-pdf-to-word/
-lastmod: "2021-11-01"
-description: Convert PDF to Word format with ease and full control with Aspose.PDF for .NET. Learn more how to tune up PDF to Microsoft Word documents conversion.
+lastmod: "2022-08-04"
+description: Learn how to write C# code for PDF to Microsoft Word formats conversion with Aspose.PDF for .NET. and tune up conversion PDF to DOC(DOCX).
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+
 
 One of the most popular features is the PDF to Microsoft Word DOC conversion, which makes content management easier. **Aspose.PDF for .NET** allows you to convert PDF files not only to DOC but also to DOCX format, easily and efficiently.
 
