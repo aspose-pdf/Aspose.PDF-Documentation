@@ -21,6 +21,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.8.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
+|PDFNET-50528|Add method for rebuild xref table|Feature|
 |PDFNET-38599|Implement AxialGradients conversion in PDF to APS converter|Enhancement|
 |PDFNET-47325|HTML to PDF - Rendering problem|Bug|
 |PDFNET-50784|Aspose.PDF loading documents throw exception Memory stream is empty|Bug|
