@@ -25,7 +25,6 @@ This page contains release notes information for Aspose.PDF for .NET 22.8.
 |PDFNET-38599|Implement AxialGradients conversion in PDF to APS converter|Enhancement|
 |PDFNET-47325|HTML to PDF - Rendering problem|Bug|
 |PDFNET-50784|Aspose.PDF loading documents throw exception Memory stream is empty|Bug|
-|PDFNET-51415|Get Page Count in PowerShell - API is throwing error|Bug|
 |PDFNET-38387|HTML to PDF - Curved edges for images are not rendered|Bug|
 |PDFNET-41397|HTML to PDF: relative path of resources(image/css) not working|Bug|
 |PDFNET-42966|HTML to PDF - missing a barcode image|Bug|
