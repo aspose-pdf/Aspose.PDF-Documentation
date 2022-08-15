@@ -7,7 +7,7 @@ url: /net/aspose-pdf-for-net-22-8-release-notes/
 lastmod: "2022-08-11"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2022, version 22.8.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -61,7 +61,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.8.
 |PDFNET-50159|Index was out of range. Must be non-negative and less than the size of the collection. exception when opening CGM|Bug|
 |PDFNET-51935|API is throwing an Exception while converting PDF to PNG|Bug|
 |PDFNET-51022|Saving PDF after calling Document.Repair method throws NullReferenceException|Bug|
-|PDFNET-51091|LaunchAcction.File throws System.NullReferenceException|Bug|
+|PDFNET-51091|LaunchAction.File throws System.NullReferenceException|Bug|
 |PDFNET-51834|AddStamp throws NullReferenceException|Bug|
 |PDFNET-51875|PDF to PDFA - System.NullReferenceException: Object reference not set to an instance of an object|Bug|
 |PDFNET-51679|Disposing single Page object is causing entire PageCollection to be NULL|Bug|
