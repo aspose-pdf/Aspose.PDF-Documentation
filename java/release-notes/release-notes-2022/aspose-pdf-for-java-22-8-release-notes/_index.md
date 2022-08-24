@@ -1,7 +1,7 @@
 ---
 title: Aspose.PDF for Java 22.8 Release Notes
 type: docs
-weight: 78
+weight: 60
 url: /java/aspose-pdf-for-java-22-8-release-notes/
 lastmod: "2021-06-05"
 ---
