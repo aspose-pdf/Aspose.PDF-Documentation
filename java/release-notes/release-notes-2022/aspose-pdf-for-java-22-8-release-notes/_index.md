@@ -1,9 +1,9 @@
 ---
 title: Aspose.PDF for Java 22.8 Release Notes
 type: docs
-weight: 70
+weight: 90
 url: /java/aspose-pdf-for-java-22-8-release-notes/
-lastmod: "2022-08-24"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
@@ -15,19 +15,16 @@ This page contains release notes information for Aspose.PDF for Java 22.8.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFJAVA-41941|Add method for rebuild xref table|Feature|
-|PDFJAVA-41842|Out of memory error throws when try to add gif image to empty document's paragraph|Enhancement|
-|PDFJAVA-41904|PDF to Excel: Extra column appears|Bug|
-|PDFJAVA-41856|PDF to XLSX: Image overlaps text|Bug|
-|PDFJAVA-41855|PDF to XLSX: Some column widths are not properly set|Bug|
-|PDFJAVA-40686|PDF to XLSX: Cells are merged into a single cell|Bug|
-|PDFJAVA-41875|PDF to DOCX: Table column width shortened|Bug|
-|PDFJAVA-41903|PDF to DOCX: Text position is incorrect|Bug|
-|PDFJAVA-41886|PDF to DOCX: Alignment of text columns is incorrect|Bug|
-|PDFJAVA-41647|PDF to DOCX: Some bullet list items are not recognized|Bug|
-|PDFJAVA-41854|Regression: PDF header shows %PDF-1.1.7|Bug|
-|PDFJAVA-41778|Crypto service provider type is incorrect|Bug|
-|PDFJAVA-40407|Digital signing a PDF file with security set shows that the document is altered or corrupted|Bug|
+|PDFJAVA-41680|Integrate the last version of Bouncy Castle|Enhancement|
+|PDFJAVA-41666|Export excel column cell format as numeric instead of text|Enhancement|
+|PDFJAVA-41654|PDF to Excel: Some texts are shifted|Bug|
+|PDFJAVA-35504|PDF to DOCX: a blank page is being added in resultant DOCX file|Bug|
+|PDFJAVA-36358|getPageIndex throws internal exception|Bug|
+|PDFJAVA-36928|The radio buttons get corrupted when flattening PDF|Bug|
+|PDFJAVA-41704|After repeated converting PDF to TIFF text is lost|Bug|
+|PDFJAVA-41706|Different image quality when running from docker|Bug|
+|PDFJAVA-41016|The .Save() method hangs when merging multiple PDF files if a OptimizationOptions are included|Bug|
+|PDFJAVA-40817|Mixed English and Arabic text in font problem|Bug|
 
 
 ## **Public API and Backwards Incompatible Changes**
@@ -35,18 +32,15 @@ This page contains release notes information for Aspose.PDF for Java 22.8.
 
 
 
-**Added new methods:**
+**The following methods became deprecated**
 
-- com.aspose.pdf.facades.**PdfFileSanitization**.getUseRebuildXrefAndTrailer()
-- com.aspose.pdf.facades.**PdfFileSanitization**.setUseRebuildXrefAndTrailer(boolean)
-- com.aspose.pdf.facades.**PdfFileSanitization**.rebuildXrefAndTrailer()
-- com.aspose.pdf.**RenderingOptions**.getIgnoreResourceFontErrors()
-- com.aspose.pdf.**RenderingOptions**.setIgnoreResourceFontErrors(boolean)
+- com.aspose.pdf.facades.**PdfFileEditor**.getAllowConcatenateExceptions()
+- com.aspose.pdf.facades.**PdfFileEditor**.setAllowConcatenateExceptions(boolean)
 
-**Added new constructor:**
 
-- com.aspose.pdf.**Rectangle**.#ctor(double,double,double,double,boolean)
+**Method was removed:**
 
+- com.aspose.pdf.facades.**PdfFileEditor**.getLastException()
 
 
 
