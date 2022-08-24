@@ -3,7 +3,7 @@ title: Aspose.PDF for Java 22.8 Release Notes
 type: docs
 weight: 60
 url: /java/aspose-pdf-for-java-22-8-release-notes/
-lastmod: "2021-06-05"
+lastmod: "2022-08-24"
 ---
 
 {{% alert color="primary" %}}
@@ -46,6 +46,7 @@ This page contains release notes information for Aspose.PDF for Java 22.8.
 **Added new constructor:**
 
 - com.aspose.pdf.**Rectangle**.#ctor(double,double,double,double,boolean)
+
 
 
 
