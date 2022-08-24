@@ -38,10 +38,10 @@ This page contains release notes information for Aspose.PDF for Java 22.8.
 **Added new methods:**
 
 - com.aspose.pdf.facades.**PdfFileSanitization**.getUseRebuildXrefAndTrailer()
-com.aspose.pdf.facades.**PdfFileSanitization**.setUseRebuildXrefAndTrailer(boolean)
-com.aspose.pdf.facades.**PdfFileSanitization**.rebuildXrefAndTrailer()
-com.aspose.pdf.**RenderingOptions**.getIgnoreResourceFontErrors()
-com.aspose.pdf.**RenderingOptions**.setIgnoreResourceFontErrors(boolean)
+- com.aspose.pdf.facades.**PdfFileSanitization**.setUseRebuildXrefAndTrailer(boolean)
+- com.aspose.pdf.facades.**PdfFileSanitization**.rebuildXrefAndTrailer()
+- com.aspose.pdf.**RenderingOptions**.getIgnoreResourceFontErrors()
+- com.aspose.pdf.**RenderingOptions**.setIgnoreResourceFontErrors(boolean)
 
 **Added new constructor:**
 
