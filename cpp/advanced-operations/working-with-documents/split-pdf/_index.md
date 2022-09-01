@@ -5,9 +5,9 @@ type: docs
 weight: 60
 url: /cpp/split-pdf-document/
 description: This topic shows how to split PDF pages into individual PDF files with C++.
-lastmod: "2021-11-11"
+lastmod: "2022-09-01"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthy"
     priority: 0.7
 ---
 
@@ -20,7 +20,7 @@ sitemap:
 This topic shows how to split PDF pages into individual PDF files in your C++ applications. To split PDF pages into single page PDF files using C++, the following steps can be followed:
 
 1. Loop through the pages of PDF document through the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection
-1. For each iteration, create a new Document object and add the individual [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) object into the empty document
+1. For each iteration, create a new Document object and copy the individual [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) object into the empty document
 1. Save the new PDF using Save method
 
 The following C++ code snippet shows you how to split PDF pages into individual PDF files.
@@ -42,7 +42,7 @@ void SplittingDocuments() {
     for(auto page : document->get_Pages())
     {
         auto newDocument = MakeObject<Document>(_dataDir + documentFileName);
-        newDocument->get_Pages()->Add(page);
+        newDocument->get_Pages()->CopyPage(page);
         newDocument->Save(_dataDir + u"page_" + pageCount + u"_out.pdf");
         pageCount++;
     }
