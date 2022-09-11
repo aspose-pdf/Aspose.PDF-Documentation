@@ -22,7 +22,7 @@ Aspose.PDF for Java presents you online free application ["PDF to XLSX"](https:/
 [![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-### Convert PDF to Excel XLS
+## Convert PDF to Excel XLS
 
 To convert PDF files to XLS format, Aspose.PDF has a class called [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). An object of the [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class is passed as a second argument to the Document.Save(..) constructor. 
 
@@ -69,7 +69,7 @@ public final class ConvertPDFtoXLSX {
 }
 ```
 
-### Convert PDF to XLS with Control Column
+## Convert PDF to XLS with Control Column
 
 When converting a PDF to XLS format, a blank column is added to the output file as first column. The in [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class InsertBlankColumnAtFirst option is used to control this column. Its default value is true.
 
@@ -85,7 +85,7 @@ When converting a PDF to XLS format, a blank column is added to the output file 
     }
 ```
 
-### Convert PDF to Single Excel Worksheet
+## Convert PDF to Single Excel Worksheet
 
 When exporting a PDF file with a lot of pages to XLS, each page is exported to a different sheet in the Excel file. This is because the MinimizeTheNumberOfWorksheets property is set to false by default. To ensure that all pages are exported to one single sheet in the output Excel file, set the MinimizeTheNumberOfWorksheets property to true.
 
@@ -103,7 +103,7 @@ When exporting a PDF file with a lot of pages to XLS, each page is exported to a
     }
 ```
 
-### Convert to XLSX format
+## Convert to XLSX format
 
 By default Aspose.PDF uses XML Spreadsheet 2003 for storing data. In order to convert PDF files to XLSX format, Aspose.PDF has a class called ExcelSaveOptions with Format. An object of the [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class is passed as a second argument to the Document.Save(..) method.
 
