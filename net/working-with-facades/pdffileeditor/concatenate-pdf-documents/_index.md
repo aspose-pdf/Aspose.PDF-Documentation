@@ -1,5 +1,6 @@
 ---
-title: Concatenate PDF documents
+title: Concatenate PDF documents in C#
+linktitle: Concatenate PDF documents
 type: docs
 weight: 20
 url: /net/concatenate-pdf-documents/
@@ -14,11 +15,19 @@ aliases:
 lastmod: "2021-06-05"
 ---
 
-{{% alert color="primary" %}}
+## **Overview**
 
-In this article, we’ll show you how to concatenate multiple PDF files using MemoryStreams.
+This article explains how to merge, combine or concatenate different PDF files into single PDF using C#. It covers topics e.g.
 
-{{% /alert %}}
+- [C# Merge PDF Files](#concatenate-pdf-files-using-file-paths)
+- [C# Combine PDF Files](#concatenate-pdf-files-using-file-paths)
+- [C# Merge Multiple PDF files into one PDF](#concatenate-array-of-pdf-files-using-file-paths)
+- [C# Combine Multiple PDF files into one PDF](#concatenate-array-of-pdf-files-using-file-paths)
+- [C# Merge all PDF files in a folder](#concatenating-all-pdf-files-in-particular-folder)
+- [C# Combine all PDF files in a folder](#concatenating-all-pdf-files-in-particular-folder)
+- [C# Merge PDF files using file paths](#concatenate-pdf-files-using-file-paths)
+- [C# Combine PDF files using streams](#concatenate-array-of-pdf-files-using-streams)
+- [C# Concatenate all PDF files in folder](#concatenate-pdf-files-in-folder)
 
 ## Concatenate PDF files using file paths
 
@@ -26,7 +35,7 @@ In this article, we’ll show you how to concatenate multiple PDF files using Me
 
 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class can be used to concatenate two PDF files. The [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method allows you to pass three parameters: first input PDF, second input PDF, and output PDF. The final output PDF contains both the input PDF files.
 
-The following code snippet shows you how to concatenate PDF files using file paths.
+The following C# code snippet shows you how to concatenate PDF files using file paths.
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateUsingPath-ConcatenateUsingPath.cs" >}}
 
@@ -38,19 +47,19 @@ In some cases, when there are a lot of outlines, users may disable them with set
 
 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class takes the source PDF files and the destination PDF file as parameters. These parameters can be either paths to the PDF files on the disk or they could be MemoryStreams. Now, for this example, we’ll first create two files streams to read the PDF files from the disk. Then we’ll convert these files into byte arrays. These byte arrays of the PDF files will be converted to MemoryStreams. Once we get the MemoryStreams out of PDF files, we’ll be able to pass them on to the concatenate method and merge into a single output file.
 
-The following code snippet shows you how to concatenate multiple PDF files using MemoryStreams:
+The following C# code snippet shows you how to concatenate multiple PDF files using MemoryStreams:
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenateMultiplePDFUsingMemoryStream-ConcatenateMultiplePDFUsingMemoryStream.cs" >}}
 
 ## Concatenate Array of PDF Files Using File Paths
 
-If you want to concatenate multiple PDF files, you can use the overload of the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method, which allows you to pass an array of PDF files. The final output is saved as a merged file created from all the files in the array.The following code snippet shows you how to concatenate array of PDF files using file paths.
+If you want to concatenate multiple PDF files, you can use the overload of the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method, which allows you to pass an array of PDF files. The final output is saved as a merged file created from all the files in the array.The following C# code snippet shows you how to concatenate array of PDF files using file paths.
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateArrayOfFilesWithPath-ConcatenateArrayOfFilesWithPath.cs" >}}
 
 ## Concatenate Array of PDF Files Using Streams
 
-Concatenating an array of PDF files is not limited to only files residing on the disk. You can also concatenate an array of PDF files from streams. If you want to concatenate multiple PDF files, you can use the appropriate overload of the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method. First, you need to create an array of input streams and one stream for output PDF and then call the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method. The output will be saved in the output stream.The following code snippet shows you how to concatenate array of PDF files using streams.
+Concatenating an array of PDF files is not limited to only files residing on the disk. You can also concatenate an array of PDF files from streams. If you want to concatenate multiple PDF files, you can use the appropriate overload of the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method. First, you need to create an array of input streams and one stream for output PDF and then call the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method. The output will be saved in the output stream.The following C# code snippet shows you how to concatenate array of PDF files using streams.
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateArrayOfPdfUsingStreams-ConcatenateArrayOfPdfUsingStreams.cs" >}}
 
@@ -58,7 +67,7 @@ Concatenating an array of PDF files is not limited to only files residing on the
 
 You can even read all the Pdf files in a particular folder at runtime and concatenate them, without even knowing the file names. Simply provide the path of directory, which contains the PDF documents, that you would like to concatenate.
 
-Please try using the following code snippet to achieve this functionality.
+Please try using the following C# code snippet to achieve this functionality.
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatingAllPdfFiles-ConcatenatingAllPdfFiles.cs" >}}
 
@@ -105,7 +114,7 @@ Now we need to add links towards the pages inside the concatenated file. In orde
 
 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class in Aspose.Pdf.Facades namespace offers you the capability to concatenate the PDF file. You can even read all the Pdf files in a particular folder at runtime and concatenate them, without even knowing the file names. Simply provide the path of directory, which contains the PDF documents, that you would like to concatenate.
 
-Please try using the following code snippet to achieve this functionality from Aspose.PDF:
+Please try using the following C# code snippet to achieve this functionality from Aspose.PDF:
 
 ```csharp
 // The path to the documents directory.
