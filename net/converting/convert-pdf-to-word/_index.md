@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to Microsoft Word DOC or DOCX file in .NET 
-linktitle: Convert PDF to Microsoft Word 2003/2019
+linktitle: Convert PDF to Word 2003/2019
 type: docs
 weight: 10
 url: /net/convert-pdf-to-word/
