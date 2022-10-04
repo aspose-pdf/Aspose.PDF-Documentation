@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-## **Overview**
+## Overview
 
 This article explains how to convert HTML to PDF using Java. The code is very simple, just load HTML to Document class and save it as output PDF. Converting MHTML to PDF in Java is also similar. It covers the following topics
 
@@ -35,7 +35,7 @@ This article explains how to convert HTML to PDF using Java. The code is very si
 - [Java Render HTML to PDF](#how-to-convert-html-file-to-pdf-simple-variant)
 - [Java How to Convert WebPage to PDF](#how-to-convert-html-file-to-pdf-simple-variant)
 
-## **Java HTML to PDF Converter Library**
+## Java HTML to PDF Converter Library
 
 **Aspose.PDF for Java** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly.
 The process of converting HTML to PDF can be flexibly customized.
