@@ -45,19 +45,14 @@ The process of converting HTML to PDF can be flexibly customized.
 Quick conversion is shown in the following example.
 
 ```java
-public final class ConvertHTMLtoPDF {
+// Create HTML load options
+HtmlLoadOptions htmloptions = new HtmlLoadOptions(); 		
 
-    private ConvertHTMLtoPDF() {
-    }
+// Load HTML file
+Document doc = new Document("Sample.html", htmloptions); 
 
-    private static Path _dataDir = Paths.get("/home/aspose/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-
-        ConvertHTMLtoPDF_Simple();
-        ConvertHTMLtoPDFAdvanced_MediaType();
-    }
-}
+// Convert HTML file to PDF
+doc.save("HTMLtoPDF.pdf");
 ```
 
 {{% alert color="success" %}}
