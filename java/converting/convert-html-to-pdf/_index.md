@@ -19,21 +19,10 @@ This article explains how to convert HTML to PDF using Java. The code is very si
 - [Java MHTML to PDF](#convert-mhtml-to-pdf)
 - [Java Convert HTML to PDF](#convert-html-to-pdf)
 - [Java Convert MHTML to PDF](#convert-mhtml-to-pdf)
-- [Java HTML to PDF Converter](#convert-html-to-pdf)
-- [Java HTML to PDF Converter Library](#convert-html-to-pdf)
-- [Java How to Convert HTML to PDF](#convert-html-to-pdf)
-- [Java HTML to PDF Library](#convert-html-to-pdf)
-- [Java HTML to PDF Code](#convert-html-to-pdf)
-- [Java Generate PDF from HTML](#convert-html-to-pdf)
 - [Java PDF from HTML](#convert-html-to-pdf)
 - [Java PDF from MHTML](#convert-mhtml-to-pdf)
-- [Java Convert HTML to PDF API](#convert-html-to-pdf)
-- [Java Create PDF from HTML](#convert-html-to-pdf)
-- [Java Save HTML as PDF](#convert-html-to-pdf)
-- [Java Save MHTML as PDF](#convert-mhtml-to-pdf)
-- [Java HTML to PDF Programmatically](#convert-html-to-pdf)
-- [Java Render HTML to PDF](#convert-html-to-pdf)
-- [Java How to Convert WebPage to PDF](#convert-html-to-pdf)
+- [Java HTML to PDF Converter - How to Convert WebPage to PDF](#convert-html-to-pdf)
+- [Java HTML to PDF Library, API or Code to Render, Save, Generate or Create PDF Programmatically from HTML](#convert-html-to-pdf)
 
 ## Java HTML to PDF Converter Library
 
