@@ -22,7 +22,7 @@ This article explains how to convert PDF to Word using Java. The code is very si
 - [Java Convert PDF to DOC](#convert-pdf-to-doc)
 - [Java Convert PDF to DOCX](#convert-pdf-to-docx)
 - [Java How to convert PDF file to Word DOC](#convert-pdf-to-doc) or [Word DOCX](#convert-pdf-to-docx)
-- [Java PDF to Word Library, API or Code to Save, Generate or Create Word Documents programmatically from PDF](#convert-pdf-to-docx)
+- [Java PDF to Word Library, API or Code to Save, Generate or Create Word Documents Programmatically from PDF](#convert-pdf-to-docx)
 
 ## Convert PDF to DOC
 
