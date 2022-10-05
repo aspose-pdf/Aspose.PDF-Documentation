@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft Word DOC or DOCX file in .NET 
+title: Convert PDF to Microsoft Word Documents in .NET
 linktitle: Convert PDF to Word 2003/2019
 type: docs
 weight: 10
@@ -11,6 +11,18 @@ sitemap:
     priority: 0.7
 ---
 
+## Overview
+
+This article explains how to convert PDF to Word using C#. The code is simple, just load PDF to Document class and save it as output Microsoft Word DOC or DOCX format. It covers the following topics.
+
+- [C# PDF to Word](#convert-pdf-to-doc-word-97-2003-file)
+- [C# PDF to DOC](#convert-pdf-to-doc-word-97-2003-file)
+- [C# PDF to DOCX](#convert-pdf-to-docx)
+- [C# Convert PDF to Word](#convert-pdf-to-docx)
+- [C# Convert PDF to DOC](#convert-pdf-to-doc-word-97-2003-file)
+- [C# Convert PDF to DOCX](#convert-pdf-to-docx)
+- [C# How to convert PDF file to Word DOC](#convert-pdf-to-doc-word-97-2003-file) or [Word DOCX](#convert-pdf-to-docx)
+- [C# PDF to Word Library, API or Code to Save, Generate or Create Word Documents Programmatically from PDF](#convert-pdf-to-docx)
 
 One of the most popular features is the PDF to Microsoft Word DOC conversion, which makes content management easier. **Aspose.PDF for .NET** allows you to convert PDF files not only to DOC but also to DOCX format, easily and efficiently.
 
@@ -22,7 +34,10 @@ A conversion that many of our customers have requested is PDF to DOC: converting
 
 Keeping alive the tradition of making things simple and understandable, Aspose.PDF for .NET lets you transform a source PDF file into a DOC file with two lines of code. To accomplish this feature, we have introduced an enumeration named SaveFormat and its value .Doc lets you save the source file to Microsoft Word format.
 
-The following code snippet shows the process of converting PDF file into DOC.
+The following C# code snippet shows the process of converting a PDF file into DOC format.
+
+1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object with the source PDF document.
+2. Save it to **SaveFormat.Doc** format by calling **Document.Save()** method.
 
 ```csharp
 public static void ConvertPDFtoWord()
@@ -76,7 +91,10 @@ Aspose.PDF for .NET presents you online free application ["PDF to DOC"](https://
 
 Aspose.PDF for .NET API lets you read and convert PDF documents to DOCX using C# and any .NET language. DOCX is a well-known format for Microsoft Word documents whose structure was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and lateral versions but not with the earlier versions of MS Word which support DOC file extensions.
 
-For quick conversion use `Save()` method with `SaveFormat.DocX` options:
+The following C# code snippet shows the process of converting a PDF file into DOCX format.
+
+1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object with the source PDF document.
+2. Save it to **SaveFormat.DocX** format by calling **Document.Save()** method.
 
 ```csharp
 public static void ConvertPDFtoWord_DOCX_Format()
