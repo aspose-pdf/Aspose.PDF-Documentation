@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft Word documents 
+title: Convert PDF to Microsoft Word Documents in C++
 linktitle: Convert PDF to Word
 type: docs
 weight: 10
@@ -21,7 +21,10 @@ A conversion that many of our customers have requested is PDF to DOC: converting
 
 Keeping alive the tradition of making things simple and understandable, Aspose.PDF for C++ lets you transform a source PDF file into a DOC file with two lines of code. To accomplish this feature, we have introduced an enumeration named SaveFormat and its value .Doc lets you save the source file to Microsoft Word format.
 
-The following code snippet shows the process of converting PDF file into DOC.
+The following C++ code snippet shows the process of converting a PDF file into DOC format.
+
+1. Create an instance of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object with the source PDF document.
+2. Save it to **SaveFormat::Doc** format by calling **Document->Save()** method.
 
 ```cpp
 void ConvertPDFtoWord()
@@ -98,7 +101,10 @@ Aspose.PDF for C++ presents you online free application ["PDF to DOC"](https://p
 
 Aspose.PDF for C++ API lets you read and convert PDF documents to DOCX using C++ language. DOCX is a well-known format for Microsoft Word documents whose structure was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and lateral versions but not with the earlier versions of MS Word which support DOC file extensions.
 
-For quick conversion use [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method with `SaveFormat.DocX` options:
+The following C++ code snippet shows the process of converting a PDF file into DOCX format.
+
+1. Create an instance of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object with the source PDF document.
+2. Save it to **SaveFormat::DocX** format by calling **Document->Save()** method.
 
 ```cpp
 void ConvertPDFtoWord_DOCX_Format()
