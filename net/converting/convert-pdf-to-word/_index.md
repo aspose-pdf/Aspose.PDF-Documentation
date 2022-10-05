@@ -24,6 +24,8 @@ This article explains how to convert PDF to Word using C#. The code is simple, j
 - [C# How to convert PDF file to Word DOC](#convert-pdf-to-doc-word-97-2003-file) or [Word DOCX](#convert-pdf-to-docx)
 - [C# PDF to Word Library, API or Code to Save, Generate or Create Word Documents Programmatically from PDF](#convert-pdf-to-docx)
 
+## C# PDF to DOC and DOCX Conversion
+
 One of the most popular features is the PDF to Microsoft Word DOC conversion, which makes content management easier. **Aspose.PDF for .NET** allows you to convert PDF files not only to DOC but also to DOCX format, easily and efficiently.
 
 ## Convert PDF to DOC (Word 97-2003) file
