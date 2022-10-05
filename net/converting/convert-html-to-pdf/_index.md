@@ -20,7 +20,7 @@ This article explains how to convert HTML to PDF using C# or .NET. The code is s
 - [C# Convert MHTML to PDF](#convert-mhtml-to-pdf)
 - [C# PDF from HTML](#convert-html-to-pdf)
 - [C# PDF from MHTML](#convert-mhtml-to-pdf)
-- [C# HTML to PDF Converter - How to Convert WebPage to PDF](#convert-html-to-pdf)
+- [C# HTML to PDF Converter - How to Convert WebPage to PDF](#convert-web-page-to-pdf)
 - [C# HTML to PDF Library, API or Code to Render, Save, Generate or Create PDF Programmatically from HTML](#convert-html-to-pdf)
 
 ## C# HTML to PDF Converter Library
