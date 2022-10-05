@@ -10,6 +10,20 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+## Overview
+
+This article explains how to convert PDF to Word using C++. The code is simple, just load PDF to Document class and save it as output Microsoft Word DOC or DOCX format. It covers the following topics.
+
+- [C++ PDF to Word](#convert-pdf-to-doc-word-97-2003-file)
+- [C++ PDF to DOC](#convert-pdf-to-doc-word-97-2003-file)
+- [C++ PDF to DOCX](#convert-pdf-to-docx)
+- [C++ Convert PDF to Word](#convert-pdf-to-docx)
+- [C++ Convert PDF to DOC](#convert-pdf-to-doc-word-97-2003-file)
+- [C++ Convert PDF to DOCX](#convert-pdf-to-docx)
+- [C++ How to convert PDF file to Word DOC](#convert-pdf-to-doc-word-97-2003-file) or [Word DOCX](#convert-pdf-to-docx)
+- [C++ PDF to Word Library, API or Code to Save, Generate or Create Word Documents Programmatically from PDF](#convert-pdf-to-docx)
+
+## C++ PDF to DOC and DOCX Conversion 
 
 One of the most popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. Aspose.PDF for C++ allows you to convert PDF files to DOC.
 
