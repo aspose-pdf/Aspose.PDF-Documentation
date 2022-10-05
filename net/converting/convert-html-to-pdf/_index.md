@@ -10,13 +10,30 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 ---
+## Overview 
 
-**Aspose.PDF for .NET** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly.
-The process of converting HTML to PDF can be flexibly customized.
+This article explains how to convert HTML to PDF using C# or .NET. The code is simple, just load HTML to Document class and save it as output PDF. Converting MHTML to PDF in C# is also similar. It covers the following topics.
+
+- [C# HTML to PDF](#convert-html-to-pdf)
+- [C# MHTML to PDF](#convert-mhtml-to-pdf)
+- [C# Convert HTML to PDF](#convert-html-to-pdf)
+- [C# Convert MHTML to PDF](#convert-mhtml-to-pdf)
+- [C# PDF from HTML](#convert-html-to-pdf)
+- [C# PDF from MHTML](#convert-mhtml-to-pdf)
+- [C# HTML to PDF Converter - How to Convert WebPage to PDF](#convert-html-to-pdf)
+- [C# HTML to PDF Library, API or Code to Render, Save, Generate or Create PDF Programmatically from HTML](#convert-html-to-pdf)
+
+## C# HTML to PDF Converter Library
+
+**Aspose.PDF for .NET** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly. The process of converting HTML to PDF can be flexibly customized.
 
 ## Convert HTML to PDF
 
-Quick conversion is shown in the following example.
+The following C# code sample shows how to convert an HTML document to a PDF.
+
+1. Create an instance of the [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/) class.
+2. Initialize [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object.
+3. Save output PDF document by calling **Document.Save()** method.
 
 ```csharp
 public static void ConvertHTMLtoPDF()
