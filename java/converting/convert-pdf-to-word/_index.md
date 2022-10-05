@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft Word documents 
+title: Convert PDF to Microsoft Word Documents in Java
 linktitle: Convert PDF to Word
 type: docs
 weight: 10
