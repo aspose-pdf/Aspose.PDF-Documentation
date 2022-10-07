@@ -19,3 +19,4 @@ sitemap:
 - [Extract Data from the Form](/pdf/net/extract-data-from-acroform/). If you have a bunch of PDF documents with Forms, probably you need to get the data from those forms. This article will help to understand how to extract AcroForms data with Aspose.PDF for .NET
 - [Extract Text From Stamps](/pdf/net/extract-text-from-stamps/)
 - [Extract Data from Table](/pdf/net/extract-data-from-table-in-pdf/)
+
