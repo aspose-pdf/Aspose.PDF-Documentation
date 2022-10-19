@@ -6,7 +6,7 @@ weight: 120
 url: /net/aspose-pdf-for-net-22-9-release-notes/
 lastmod: "2022-09-11"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2022, version 22.9.
-sitema * Property:
+sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
@@ -55,19 +55,22 @@ This page contains release notes information for Aspose.PDF for .NET 22.9.
 |PDFNET-46803|IndexOutOfRangeException when redaction is close to page bottom|Bug|
 |PDFNET-51967|Form field font size is changed after filling it|Bug|
 |PDFNET-37637|PDF to PNG - background layer is corrupted in resultant PNG file|Bug|
+
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
- * Property:Aspose.Pdf.RenderingOptions.IgnoreResourceFontErrors
- * Property:Aspose.Pdf.Devices.PngDevice.TransparentBackground
- * Property:Aspose.Pdf.Forms.SignatureCustomAppearance.UseDigitalSubjectFormat
- * Property:Aspose.Pdf.Forms.SignatureCustomAppearance.DigitalSubjectFormat
- * Type:Aspose.Pdf.Forms.SubjectNameElements
- * Field:Aspose.Pdf.Forms.SubjectNameElements.CN
- * Field:Aspose.Pdf.Forms.SubjectNameElements.O
- * Field:Aspose.Pdf.Forms.SubjectNameElements.L
- * Field:Aspose.Pdf.Forms.SubjectNameElements.OU
- * Field:Aspose.Pdf.Forms.SubjectNameElements.S
- * Field:Aspose.Pdf.Forms.SubjectNameElements.C
- * Field:Aspose.Pdf.Forms.SubjectNameElements.E
+
+* Property:Aspose.Pdf.RenderingOptions.IgnoreResourceFontErrors
+* Property:Aspose.Pdf.Devices.PngDevice.TransparentBackground
+* Property:Aspose.Pdf.Forms.SignatureCustomAppearance.UseDigitalSubjectFormat
+* Property:Aspose.Pdf.Forms.SignatureCustomAppearance.DigitalSubjectFormat
+* Type:Aspose.Pdf.Forms.SubjectNameElements
+* Field:Aspose.Pdf.Forms.SubjectNameElements.CN
+* Field:Aspose.Pdf.Forms.SubjectNameElements.O
+* Field:Aspose.Pdf.Forms.SubjectNameElements.L
+* Field:Aspose.Pdf.Forms.SubjectNameElements.OU
+* Field:Aspose.Pdf.Forms.SubjectNameElements.S
+* Field:Aspose.Pdf.Forms.SubjectNameElements.C
+* Field:Aspose.Pdf.Forms.SubjectNameElements.E
+
 ### Removed APIs
