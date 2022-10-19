@@ -6,7 +6,7 @@ weight: 120
 url: /net/aspose-pdf-for-net-22-10-release-notes/
 lastmod: "2022-10-15"
 description: This page contains new Aspose.PDF for .NET features, enhancement, and bug fixes in 2022, version 22.10.
-sitema * Property:
+sitemap * Property:
     changefreq: "monthly"
     priority: 0.7
 ---
@@ -61,7 +61,6 @@ This page contains release notes information for Aspose.PDF for .NET 22.10.
 |PDFNET-48413|Parameter is not valid exception when converting PS file|Bug|
 |PDFNET-52453|Read Paragraphs using ParagraphAbsorber excluding the header footer on the page|Bug|
 |PDFNET-52211|Out of memory error when adding image to table cell that spans many rows/columns|Bug|
-|PDFNET-51186|Add rotated image stamp in the PDF - The image is not rotated  from its center|Bug|
 |PDFNET-47001|Problem flattening document|Bug|
 |PDFNET-38787|Floating box off the page throws OutOfMemory Exception|Bug|
 |PDFNET-48393|Links are shifted after XFA conversion|Bug|
