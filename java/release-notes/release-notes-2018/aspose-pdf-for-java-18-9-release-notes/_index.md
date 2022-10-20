@@ -8,7 +8,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-This page contains release notes for [Aspose.PDF for Java 18.9](https://repository.aspose.com/repo/com/aspose/aspose-pdf/18.9/)
+This page contains release notes for [Aspose.PDF for Java 18.9](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/18.9/)
 
 {{% /alert %}}
 ### **Features and Improvements**

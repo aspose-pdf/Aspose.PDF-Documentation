@@ -17,7 +17,7 @@ sitemap:
 
 **Aspose.PDF is a Java** component built to allow developers to create PDF documents, whether simple or complex, on the fly programmatically. Aspose.PDF for Java allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. Moreover, it is also possible to compress PDF documents. Aspose.PDF for Java provides excellent security features to develop secure PDF documents. And the most distinct feature of Aspose.PDF for Java is that it supports the creation of PDF documents through both an API and from XML templates
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ## Product Description
 
@@ -32,7 +32,7 @@ Using this library, you can implement rich capabilities for creating PDF files f
 
 {{% alert color="primary" %}}
 
-You can download [Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf) for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to [apply the license](/pdf/java/licensing/).
+You can download [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to [apply the license](/pdf/java/licensing/).
 
 {{% /alert %}}
 
@@ -52,7 +52,7 @@ If you want to test Aspose.PDF for Java without the evaluation version limitatio
 
 ## Installing Aspose.PDF for Java from Aspose Repository
 
-Aspose hosts all Java APIs on [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). You can easily use Aspose.PDF for Java API directly in your Maven Projects with simple configurations.
+Aspose hosts all Java APIs on [Aspose Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). You can easily use Aspose.PDF for Java API directly in your Maven Projects with simple configurations.
 
 ### Specify Aspose Repository Configuration
 
@@ -63,7 +63,7 @@ First you need to specify Aspose Repository configuration / location in your Mav
     <repository>
         <id>AsposeJavaAPI</id>
         <name>Aspose Java API</name>
-        <url>http://repository.aspose.com/repo/</url>
+        <url>https://releases.aspose.com/java/repo/</url>
     </repository>
 </repositories>
 ```

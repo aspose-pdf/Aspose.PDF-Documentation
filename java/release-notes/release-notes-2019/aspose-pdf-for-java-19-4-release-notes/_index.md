@@ -8,7 +8,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-This page contains release notes for [Aspose.PDF for Java 19.4](https://repository.aspose.com/repo/com/aspose/aspose-pdf/19.4/)
+This page contains release notes for [Aspose.PDF for Java 19.4](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/19.4/)
 
 {{% /alert %}}
 ### **Features and Improvements**
