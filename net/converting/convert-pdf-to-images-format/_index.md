@@ -18,7 +18,7 @@ This article explains how to convert PDF to different image formats using C#. It
 _Image Format_: **TIFF**
 - [C# PDF to TIFF](#csharp-pdf-to-tiff)
 - [C# Convert PDF to TIFF](#csharp-pdf-to-tiff)
-- [C# Convert Single or Particular Pages of PDF to TIFF](#csharp-pdf-to-tiff)
+- [C# Convert Single or Particular Pages of PDF to TIFF](#csharp-pdf-to-tiff-pages)
 
 
 _Image Format_: **BMP**
@@ -26,6 +26,33 @@ _Image Format_: **BMP**
 - [C# Convert PDF to BMP](#csharp-pdf-to-bmp)
 - [C# PDF to BMP Converter](#csharp-pdf-to-bmp)
 
+_Image Format_: **EMF**
+- [C# PDF to EMF](#csharp-pdf-to-emf)
+- [C# Convert PDF to EMF](#csharp-pdf-to-emf)
+- [C# PDF to EMF Converter](#csharp-pdf-to-emf)
+
+
+_Image Format_: **JPG**
+- [C# PDF to JPG](#csharp-pdf-to-jpg)
+- [C# Convert PDF to JPG](#csharp-pdf-to-jpg)
+- [C# PDF to JPG Converter](#csharp-pdf-to-jpg)
+
+
+_Image Format_: **PNG**
+- [C# PDF to PNG](#csharp-pdf-to-png)
+- [C# Convert PDF to PNG](#csharp-pdf-to-png)
+- [C# PDF to PNG Converter](#csharp-pdf-to-png)
+
+
+_Image Format_: **GIF**
+- [C# PDF to GIF](#csharp-pdf-to-gif)
+- [C# Convert PDF to GIF](#csharp-pdf-to-gif)
+- [C# PDF to GIF Converter](#csharp-pdf-to-gif)
+
+_Image Format_: **SVG**
+- [C# PDF to SVG](#csharp-pdf-to-svg)
+- [C# Convert PDF to SVG](#csharp-pdf-to-svg)
+- [C# PDF to SVG Converter](#csharp-pdf-to-svg)
 
 ## C# Convert PDF to Image
 
@@ -175,6 +202,7 @@ Let's take a look at how to convert a PDF page to an image.
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
 <a name="csharp-pdf-to-jpg"></a>
+<a name="csharp-pdf-to-png"></a>
 <a name="csharp-pdf-to-gif"></a>
     
 The following steps and code snippet in C# shows this possibility
