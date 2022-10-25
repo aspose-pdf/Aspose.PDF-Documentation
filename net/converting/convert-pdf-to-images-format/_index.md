@@ -33,9 +33,12 @@ Aspose.PDF for .NET presents you online free application ["PDF to TIFF"](https:/
 
 Aspose.PDF for .NET explain how to convert all pages in a PDF file to a single TIFF image:
 
-1. Create an object of the `Document` class.
-1. Call the `Process` method to convert the document.
-1. To set the output file's properties, use the `TiffSettings` class.
+<a name="csharp-pdf-to-tiff"><strong>Steps: Convert PDF to TIFF in C#</strong></a>
+
+1. Create an object of the **Document** class.
+2. Create **TiffSettings** and **TiffDevice** objects
+3. Call the **TiffDevice.Process()** method to convert the PDF document to TIFF.
+4. To set the output file's properties, use the **TiffSettings** class.
 
 The following code snippet shows how to convert all the PDF pages to a single TIFF image.
 
@@ -68,6 +71,12 @@ public static void ConvertPDFtoTIFF()
 ### Convert One Page to TIFF Image
 
 Aspose.PDF for .NET allows to convert a particular page in a PDF file to a TIFF image, use an overloaded version of the Process(..) method which takes a page number as an argument for conversion. The following code snippet shows how to convert the first page of a PDF to TIFF format.
+
+<a name="csharp-pdf-to-tiff-pages"><strong>Steps: Convert Single or Particular Pages of PDF to TIFF in C#</strong></a>
+
+1. Create an object of the **Document** class.
+2. Create **TiffSettings** and **TiffDevice** objects
+3. Call the overloaded **TiffDevice.Process()** method with **fromPage** and **toPage** parameters to convert PDF document pages to TIFF.
 
 ```csharp
 public static void ConvertPDFtoTiffSinglePage()
