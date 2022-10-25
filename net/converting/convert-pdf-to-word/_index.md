@@ -104,7 +104,7 @@ Aspose.PDF for .NET API lets you read and convert PDF documents to DOCX using C#
 
 The following C# code snippet shows the process of converting a PDF file into DOCX format.
 
-<a name="csharp-pdf-to-docx"><strong>Steps: Convert PDF to DOC in C#</strong></a>
+<a name="csharp-pdf-to-docx"><strong>Steps: Convert PDF to DOCX in C#</strong></a>
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object with the source PDF document.
 2. Save it to **SaveFormat.DocX** format by calling **Document.Save()** method.
