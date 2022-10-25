@@ -1,11 +1,11 @@
 ---
-title: Convert PDF to Image formats BMP, JPG, GIF, PNG, TIFF, SVG in C#
+title: Convert PDF to Different Image Formats in C#
 linktitle: Convert PDF to Images
 type: docs
 weight: 70
 url: /net/convert-pdf-to-images-format/
 lastmod: "2021-11-01"
-description: This topic show you how to Aspose.PDF allows to convert PDF to various images formats. Convert PDF pages to PNG, JPEG, BMP images with a few lines of code.
+description: This topic show you how to use Aspose.PDF to convert PDF to various images formats e.g. TIFF, BMP, EMF, JPEG, PNG, GIF, SVG with a few lines of code.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
