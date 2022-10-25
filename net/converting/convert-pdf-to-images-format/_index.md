@@ -249,6 +249,12 @@ Aspose.PDF for .NET supports the feature to convert SVG image to PDF format and 
 
 The following code snippet shows the steps for converting a PDF file to SVG format with .NET.
 
+<a name="csharp-pdf-to-svg"><strong>Steps: Convert PDF to SVG in C#</strong></a>
+
+1. Create an object of the **Document** class.
+2. Create **SvgSaveOptions** object with needed settings.
+3. Call the **Document.Save()** method and pass it **SvgSaveOptions** object convert the PDF document to SVG.
+
 ```csharp
 public static void ConvertPDFtoSVG()
 {
