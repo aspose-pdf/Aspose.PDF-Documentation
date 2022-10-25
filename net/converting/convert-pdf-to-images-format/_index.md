@@ -11,6 +11,24 @@ sitemap:
     priority: 0.5
 ---
 
+## Overview
+
+This article explains how to convert PDF to different image formats using C#. It covers the following topics.
+
+_Image Format_: **TIFF**
+- [C# PDF to TIFF](#csharp-pdf-to-tiff)
+- [C# Convert PDF to TIFF](#csharp-pdf-to-tiff)
+- [C# Convert Single or Particular Pages of PDF to TIFF](#csharp-pdf-to-tiff)
+
+
+_Image Format_: **BMP**
+- [C# PDF to BMP](#csharp-pdf-to-bmp)
+- [C# Convert PDF to BMP](#csharp-pdf-to-bmp)
+- [C# PDF to BMP Converter](#csharp-pdf-to-bmp)
+
+
+## C# Convert PDF to Image
+
 **Aspose.PDF for .NET** uses several approaches to convert PDF to image. Generally speaking, we use two approaches: conversion using the Device approach and conversion using SaveOption. This section will show you how to convert PDF documents to image formats such as BMP, JPEG, GIF, PNG, EMF, TIFF, and SVG formats using one of those approaches.
 
 There are several classes in the library that allow you to use a virtual device to transform images. DocumentDevice is oriented for conversion whole document, but ImageDevice - for a particular page.
@@ -154,6 +172,11 @@ Let's take a look at how to convert a PDF page to an image.
 
 `BmpDevice` class provides a method named [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
 
+<a name="csharp-pdf-to-bmp"></a>
+<a name="csharp-pdf-to-emf"></a>
+<a name="csharp-pdf-to-jpg"></a>
+<a name="csharp-pdf-to-gif"></a>
+    
 The following steps and code snippet in C# shows this possibility
  
  - [Convert PDF to BMP in C#](#csharp-pdf-to-image)
