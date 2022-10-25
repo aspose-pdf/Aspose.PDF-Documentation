@@ -145,7 +145,24 @@ Let's take a look at how to convert a PDF page to an image.
 
 `BmpDevice` class provides a method named [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
 
-The following code snippet shows this possibility:
+The following steps and code snippet in C# shows this possibility
+ 
+ - [Convert PDF to BMP in C#](#csharp-pdf-to-image)
+ - [Convert PDF to EMF in C#](#csharp-pdf-to-image)
+ - [Convert PDF to JPG in C#](#csharp-pdf-to-image)
+ - [Convert PDF to PNG in C#](#csharp-pdf-to-image)
+ - [Convert PDF to GIF in C#](#csharp-pdf-to-image)
+
+<a name="csharp-pdf-to-image"><strong>**Steps: PDF to Image (BMP, EMF, JPG, PNG, GIF) in C#**</strong></a>
+
+1. Load the PDF file using **Document** class.
+2. Create an instance of subclass of **ImageDevice** i.e.
+   * **BmpDevice** (to convert PDF to BMP)
+   * **EmfDevice** (to convert PDF to Emf)
+   * **JpegDevice** (to convert PDF to JPG)
+   * **PngDevice** (to convert PDF to PNG)
+   * **GifDevice** (to convert PDF to GIF)
+3. Call the **ImageDevice.Process()** method to perform PDF to Image conversion.
 
 ```csharp
 public static class ExampleConvertPdfToImage
