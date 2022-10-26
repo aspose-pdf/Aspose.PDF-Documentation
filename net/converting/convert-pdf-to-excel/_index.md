@@ -45,8 +45,8 @@ _Format_: **CSV**
 
 _Format_: **ODS**
 - [C# PDF to ODS](#csharp-pdf-to-ods)
-- [C# Convert PDF to ODS](#csharp-pdf-to-csv)
-- [C# How to convert PDF file to ODS](#csharp-pdf-to-csv)
+- [C# Convert PDF to ODS](#csharp-pdf-to-ods)
+- [C# How to convert PDF file to ODS](#csharp-pdf-to-ods)
 
 ## C# PDF to Excel Conversions
 
