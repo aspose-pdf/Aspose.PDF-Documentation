@@ -26,7 +26,19 @@ Aspose.PDF for .NET presents you online free application ["PDF to XLSX"](https:/
 
 In order to convert PDF files to <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr> format, Aspose.PDF has a class called [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions). An object of the ExcelSaveOptions class is passed as a second argument to the Document.Save(..) constructor.
 
-The following code snippet shows the process for converting PDF file into XLS format with Aspose.PDF for .NET.
+The following code snippet shows the process for converting PDF file into XLS or XLSX format with Aspose.PDF for .NET.
+
+Steps: Convert PDF to XLS in C#
+
+1. Create an instance of **Document** object with the source PDF document.
+2. Create an instance of **ExcelSaveOptions**.
+3. Save it to **XLS** format by specifying **.xls extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**
+
+Steps: Convert PDF to XLSX in C#
+
+1. Create an instance of **Document** object with the source PDF document.
+2. Create an instance of **ExcelSaveOptions**.
+3. Save it to **XLSX** format by specifying **.xlsx extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -64,6 +76,12 @@ public static void ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst()
 
 When exporting a PDF file with a lot of pages to XLS, each page is exported to a different sheet in the Excel file. This is because the MinimizeTheNumberOfWorksheets property is set to false by default. To ensure that all pages are exported to one single sheet in the output Excel file, set the MinimizeTheNumberOfWorksheets property to true.
 
+Steps: Convert PDF to XLS or XLSX Single Worksheet in C#
+
+1. Create an instance of **Document** object with the source PDF document.
+2. Create an instance of **ExcelSaveOptions** with **MinimizeTheNumberOfWorksheets = true**.
+3. Save it to **XLS** or **XLSX** format having single worksheet by calling **Document.Save()** method and passing it **ExcelSaveOptions**.
+
 ```csharp
 public static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 {
@@ -84,7 +102,9 @@ public static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 Since version 20.8 Aspose.PDF uses Microsoft Excel Open XML Spreadsheet 2007 file format as default for storing data. In order to convert PDF files to XML Spreadsheet 2003 format, Aspose.PDF has a class called [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) with [Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format). An object of the [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) class is passed as a second argument to the [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method.
 
-The following code snippet shows the process for converting PDF file into XLSX format.
+The following code snippet shows the process for converting PDF file into XLS format.
+
+Steps: Convert PDF to Excel 2003 XML Format in C#
 
 ```csharp
 public static void ConvertPDFtoExcelAdvanced_SaveXLS2003()
