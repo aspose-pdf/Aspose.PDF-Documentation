@@ -32,13 +32,13 @@ Steps: Convert PDF to XLS in C#
 
 1. Create an instance of **Document** object with the source PDF document.
 2. Create an instance of **ExcelSaveOptions**.
-3. Save it to **XLS** format by specifying **.xls extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**
+3. Save it to **XLS** format specifying **.xls extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**
 
 Steps: Convert PDF to XLSX in C#
 
 1. Create an instance of **Document** object with the source PDF document.
 2. Create an instance of **ExcelSaveOptions**.
-3. Save it to **XLSX** format by specifying **.xlsx extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**
+3. Save it to **XLSX** format specifying **.xlsx extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
