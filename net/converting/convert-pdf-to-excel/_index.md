@@ -102,9 +102,13 @@ public static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 Since version 20.8 Aspose.PDF uses Microsoft Excel Open XML Spreadsheet 2007 file format as default for storing data. In order to convert PDF files to XML Spreadsheet 2003 format, Aspose.PDF has a class called [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) with [Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format). An object of the [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) class is passed as a second argument to the [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method.
 
-The following code snippet shows the process for converting PDF file into XLS format.
+The following code snippet shows the process for converting PDF file into XLS Excel 2003 XML format.
 
 Steps: Convert PDF to Excel 2003 XML Format in C#
+
+1. Create an instance of **Document** object with the source PDF document.
+2. Create an instance of **ExcelSaveOptions** with **Format = ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003**
+3. Save it to **XLS - Excel 2003 XML Format** format by calling **Document.Save()** method and passing it **ExcelSaveOptions**.
 
 ```csharp
 public static void ConvertPDFtoExcelAdvanced_SaveXLS2003()
@@ -126,12 +130,26 @@ public static void ConvertPDFtoExcelAdvanced_SaveXLS2003()
 
 Conversion to CSV format performs in the same way as above. All is what you need - set the appropriate format.
 
+Steps: Convert PDF to CSV in C#
+
+1. Create an instance of **Document** object with the source PDF document.
+2. Create an instance of **ExcelSaveOptions** with **Format = ExcelSaveOptions.ExcelFormat.CSV**
+3. Save it to **CSV** format by calling **Document.Save()** method and passing it **ExcelSaveOptions**.
+
+
 ```csharp
  // Instantiate ExcelSave Option object
     ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
 ```
 
 ### Convert to ODS
+
+Steps: Convert PDF to ODS in C#
+
+1. Create an instance of **Document** object with the source PDF document.
+2. Create an instance of **ExcelSaveOptions** with **Format = ExcelSaveOptions.ExcelFormat.ODS**
+3. Save it to **ODS** format by calling **Document.Save()** method and passing it **ExcelSaveOptions**.
+
 
 Conversion to ODS format performs in the same way as all other formats.
 
