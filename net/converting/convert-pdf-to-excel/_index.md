@@ -18,17 +18,37 @@ This article explains how to convert PDF to Excel formats using C#. It covers th
 _Format_: **XLS**
 - [C# PDF to XLS](#csharp-pdf-to-xls)
 - [C# Convert PDF to XLS](#csharp-pdf-to-xls)
-- [C# Convert PDF to XLS having Single Worksheet](#csharp-pdf-to-excel-single)
+- [C# How to convert PDF file to XLS](#csharp-pdf-to-xls)
 
 _Format_: **XLSX**
 - [C# PDF to XLSX](#csharp-pdf-to-xlsx)
 - [C# Convert PDF to XLSX](#csharp-pdf-to-xlsx)
-- [C# Convert PDF to XLSX having Single Worksheet](#csharp-pdf-to-excel-single)
+- [C# How to convert PDF file to XLSX](#csharp-pdf-to-xlsx)
 
 _Format_: **Excel**
 - [C# PDF to Excel](#csharp-pdf-to-xlsx)
 - [C# PDF to Excel XLS](#csharp-pdf-to-xls)
 - [C# PDF to Excel XLSX](#csharp-pdf-to-xlsx)
+
+_Format_: **Single Excel Worksheet**
+- [C# Convert PDF to XLS having Single Worksheet](#csharp-pdf-to-excel-single)
+- [C# Convert PDF to XLSX having Single Worksheet](#csharp-pdf-to-excel-single)
+
+_Format_: **XML Spreadsheet 2003 format**
+- [C# PDF to XML Excel](#csharp-pdf-to-excel-xml-2003)
+- [C# Convert PDF to XML Excel Spreadsheet](#csharp-pdf-to-excel-xml-2003)
+
+_Format_: **CSV**
+- [C# PDF to CSV](#csharp-pdf-to-csv)
+- [C# Convert PDF to CSV](#csharp-pdf-to-csv)
+- [C# How to convert PDF file to CSV](#csharp-pdf-to-csv)
+
+_Format_: **ODS**
+- [C# PDF to ODS](#csharp-pdf-to-ods)
+- [C# Convert PDF to ODS](#csharp-pdf-to-csv)
+- [C# How to convert PDF file to ODS](#csharp-pdf-to-csv)
+
+## C# PDF to Excel Conversions
 
 **Aspose.PDF for .NET** support the feature of converting PDF files to Excel 2007, CSV and SpeadsheetML formats.
 
