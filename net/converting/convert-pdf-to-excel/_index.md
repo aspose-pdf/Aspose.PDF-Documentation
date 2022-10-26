@@ -195,3 +195,16 @@ Conversion to ODS format performs in the same way as all other formats.
  // Instantiate ExcelSave Option object
     ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.ODS };
 ```
+
+## See Also 
+
+This article also covers these topics. The codes are same as above.
+
+- [C# PDF to Excel Code](#csharp-pdf-to-xlsx)
+- [C# PDF to Excel API](#csharp-pdf-to-xlsx)
+- [C# PDF to Excel Programmatically](#csharp-pdf-to-xlsx)
+- [C# PDF to Excel Library](#csharp-pdf-to-xlsx)
+- [C# Save PDF as Excel](#csharp-pdf-to-xlsx)
+- [C# Generate Excel from PDF](#csharp-pdf-to-xlsx)
+- [C# Create Excel from PDF](#csharp-pdf-to-xlsx)
+- [C# PDF to Excel Converter](#csharp-pdf-to-xlsx)
