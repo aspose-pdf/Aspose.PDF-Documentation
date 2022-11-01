@@ -122,3 +122,16 @@ switch (eventInfo.EventType)
         break;
 }
 ```
+
+## See Also 
+
+This article also covers these topics. The codes are same as above.
+
+- [C# PDF to PowerPoint Code](#csharp-pdf-to-powerpoint)
+- [C# PDF to PowerPoint API](#csharp-pdf-to-powerpoint)
+- [C# PDF to PowerPoint Programmatically](#csharp-pdf-to-powerpoint)
+- [C# PDF to PowerPoint Library](#csharp-pdf-to-powerpoint)
+- [C# Save PDF as PowerPoint](#csharp-pdf-to-powerpoint)
+- [C# Generate PowerPoint from PDF](#csharp-pdf-to-powerpoint)
+- [C# Create PowerPoint from PDF](#csharp-pdf-to-powerpoint)
+- [C# PDF to PowerPoint Converter](#csharp-pdf-to-powerpoint)
