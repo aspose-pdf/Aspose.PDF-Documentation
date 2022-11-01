@@ -13,7 +13,7 @@ sitemap:
 
 ## Overview
 
-This article explains how to convert PDF to Microsoft Word Documents e.g. DOC and DOCX using C#. It covers these topics.
+This article explains how to **convert PDF to Microsoft Word Documents using C#**. It covers these topics.
 
 _Format_: **DOC**
 - [C# PDF to DOC](#csharp-pdf-to-doc)
