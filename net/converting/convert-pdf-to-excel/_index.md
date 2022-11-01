@@ -13,7 +13,7 @@ sitemap:
 ---
 ## Overview
 
-This article explains how to convert PDF to Excel formats using C#. It covers the following topics.
+This article explains how to **convert PDF to Excel formats using C#**. It covers the following topics.
 
 _Format_: **XLS**
 - [C# PDF to XLS](#csharp-pdf-to-xls)
