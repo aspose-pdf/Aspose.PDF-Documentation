@@ -200,6 +200,7 @@ Conversion to ODS format performs in the same way as all other formats.
 
 This article also covers these topics. The codes are same as above.
 
+_Format_: **Excel**
 - [C# PDF to Excel Code](#csharp-pdf-to-xlsx)
 - [C# PDF to Excel API](#csharp-pdf-to-xlsx)
 - [C# PDF to Excel Programmatically](#csharp-pdf-to-xlsx)
@@ -208,3 +209,43 @@ This article also covers these topics. The codes are same as above.
 - [C# Generate Excel from PDF](#csharp-pdf-to-xlsx)
 - [C# Create Excel from PDF](#csharp-pdf-to-xlsx)
 - [C# PDF to Excel Converter](#csharp-pdf-to-xlsx)
+
+_Format_: **XLS**
+- [C# PDF to XLS Code](#csharp-pdf-to-xls)
+- [C# PDF to XLS API](#csharp-pdf-to-xls)
+- [C# PDF to XLS Programmatically](#csharp-pdf-to-xls)
+- [C# PDF to XLS Library](#csharp-pdf-to-xls)
+- [C# Save PDF as XLS](#csharp-pdf-to-xls)
+- [C# Generate XLS from PDF](#csharp-pdf-to-xls)
+- [C# Create XLS from PDF](#csharp-pdf-to-xls)
+- [C# PDF to XLS Converter](#csharp-pdf-to-xls)
+
+_Format_: **XLSX**
+- [C# PDF to XLSX Code](#csharp-pdf-to-xlsx)
+- [C# PDF to XLSX API](#csharp-pdf-to-xlsx)
+- [C# PDF to XLSX Programmatically](#csharp-pdf-to-xlsx)
+- [C# PDF to XLSX Library](#csharp-pdf-to-xlsx)
+- [C# Save PDF as XLSX](#csharp-pdf-to-xlsx)
+- [C# Generate XLSX from PDF](#csharp-pdf-to-xlsx)
+- [C# Create XLSX from PDF](#csharp-pdf-to-xlsx)
+- [C# PDF to XLSX Converter](#csharp-pdf-to-xlsx)
+
+_Format_: **CSV**
+- [C# PDF to CSV Code](#csharp-pdf-to-csv)
+- [C# PDF to CSV API](#csharp-pdf-to-csv)
+- [C# PDF to CSV Programmatically](#csharp-pdf-to-csv)
+- [C# PDF to CSV Library](#csharp-pdf-to-csv)
+- [C# Save PDF as CSV](#csharp-pdf-to-csv)
+- [C# Generate CSV from PDF](#csharp-pdf-to-csv)
+- [C# Create CSV from PDF](#csharp-pdf-to-csv)
+- [C# PDF to CSV Converter](#csharp-pdf-to-csv)
+
+_Format_: **ODS**
+- [C# PDF to ODS Code](#csharp-pdf-to-ods)
+- [C# PDF to ODS API](#csharp-pdf-to-ods)
+- [C# PDF to ODS Programmatically](#csharp-pdf-to-ods)
+- [C# PDF to ODS Library](#csharp-pdf-to-ods)
+- [C# Save PDF as ODS](#csharp-pdf-to-ods)
+- [C# Generate ODS from PDF](#csharp-pdf-to-ods)
+- [C# Create ODS from PDF](#csharp-pdf-to-ods)
+- [C# PDF to ODS Converter](#csharp-pdf-to-ods)
