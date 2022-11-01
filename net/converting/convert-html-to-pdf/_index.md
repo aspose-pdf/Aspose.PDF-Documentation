@@ -24,6 +24,11 @@ _Format_: **MHTML**
 - [C# Convert MHTML to PDF](#csharp-mhtml-to-pdf)
 - [C# How to convert MHTML to PDF](#csharp-mhtml-to-pdf)
 
+_Format_: **WebPage**
+- [C# WebPage to PDF](#csharp-webpage-to-pdf)
+- [C# Convert WebPage to PDF](#csharp-webpage-to-pdf)
+- [C# How to convert WebPage to PDF](#csharp-webpage-to-pdf)
+
 ## C# HTML to PDF Conversion
 
 **Aspose.PDF for .NET** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly. The process of converting HTML to PDF can be flexibly customized.
@@ -140,6 +145,8 @@ private static byte[] GetContentFromUrl(string url)
 Converting a web page is slightly different than converting a local HTML document. In order to convert Web page contents to PDF format, we can first fetch the HTML page contents using HttpClient instance, create Stream object, pass the contents to the Document object and render the output in PDF format.
 
 When converting a web page hosted on a webserver to PDF:
+
+<a name="csharp-webpage-to-pdf"><strong>Steps: Convert WebPage to PDF in C#</strong></a>
 
 1. Read the contents of the page using an HttpClient object.
 1. Instantiate the [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) object and set the base URL.
@@ -287,4 +294,14 @@ _Format_: **MHTML**
 - [C# Generate PDF from MHTML](#csharp-mhtml-to-pdf)
 - [C# Create PDF from MHTML](#csharp-mhtml-to-pdf)
 - [C# MHTML to PDF Converter](#csharp-mhtml-to-pdf)
+
+_Format_: **WebPage**
+- [C# WebPage to PDF Code](#csharp-webpage-to-pdf)
+- [C# WebPage to PDF API](#csharp-webpage-to-pdf)
+- [C# WebPage to PDF Programmatically](#csharp-webpage-to-pdf)
+- [C# WebPage to PDF Library](#csharp-webpage-to-pdf)
+- [C# Save WebPage as PDF](#csharp-webpage-to-pdf)
+- [C# Generate PDF from WebPage](#csharp-webpage-to-pdf)
+- [C# Create PDF from WebPage](#csharp-webpage-to-pdf)
+- [C# WebPage to PDF Converter](#csharp-webpage-to-pdf)
 
