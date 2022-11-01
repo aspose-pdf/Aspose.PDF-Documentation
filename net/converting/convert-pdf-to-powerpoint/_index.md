@@ -127,6 +127,7 @@ switch (eventInfo.EventType)
 
 This article also covers these topics. The codes are same as above.
 
+_Format_: **PowerPoint**
 - [C# PDF to PowerPoint Code](#csharp-pdf-to-powerpoint)
 - [C# PDF to PowerPoint API](#csharp-pdf-to-powerpoint)
 - [C# PDF to PowerPoint Programmatically](#csharp-pdf-to-powerpoint)
@@ -135,3 +136,13 @@ This article also covers these topics. The codes are same as above.
 - [C# Generate PowerPoint from PDF](#csharp-pdf-to-powerpoint)
 - [C# Create PowerPoint from PDF](#csharp-pdf-to-powerpoint)
 - [C# PDF to PowerPoint Converter](#csharp-pdf-to-powerpoint)
+
+_Format_: **PPTX**
+- [C# PDF to PPTX Code](#csharp-pdf-to-pptx)
+- [C# PDF to PPTX API](#csharp-pdf-to-pptx)
+- [C# PDF to PPTX Programmatically](#csharp-pdf-to-pptx)
+- [C# PDF to PPTX Library](#csharp-pdf-to-pptx)
+- [C# Save PDF as PPTX](#csharp-pdf-to-pptx)
+- [C# Generate PPTX from PDF](#csharp-pdf-to-pptx)
+- [C# Create PPTX from PDF](#csharp-pdf-to-pptx)
+- [C# PDF to PPTX Converter](#csharp-pdf-to-pptx)
