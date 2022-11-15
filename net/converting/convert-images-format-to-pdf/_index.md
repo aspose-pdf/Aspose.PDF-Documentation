@@ -23,7 +23,7 @@ Convert BMP files to PDF document using **Aspose.PDF for .NET** library.
 <abbr title="Bitmap Image File">BMP</abbr> images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
 You can convert BMP to PDF files with Aspose.PDF for .NET API. Therefore, you can follow the following steps to convert BMP images:
 
-<a name="user-content-csharp-bmp-to-pdf" id="user-content-csharp-bmp-to-pdf"><strong>Steps: Convert BMP to PDF in C#</strong></a>
+<a name="csharp-bmp-to-pdf" id="user-content-csharp-bmp-to-pdf"><strong>Steps: Convert BMP to PDF in C#</strong></a>
 
 1. Initialize a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
 1. Load input BMP image
