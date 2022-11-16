@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**Aspose.PDF for C++** lets you track the progress of PDF to PPTX conversion.
+**Aspose.PDF for C++** lets you track the progress of PDF to PPTX conversion. 
 
 During PDF to <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr> conversion, the text is rendered as Text where you can select/update it. Please note that in order to convert PDF files to PPTX format, Aspose.PDF provides a class named [`PptxSaveOptions`](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.pptx_save_options). An object of the PptxSaveOptions class is passed as a second argument to the [`Document.Save(..) method`](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) method. The following code snippet shows the process for converting PDF files into PPTX format.
 
