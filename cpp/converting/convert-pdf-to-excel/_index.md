@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Excel 
+title: Convert PDF to Excel in C++
 linktitle: Convert PDF to Excel
 type: docs
 weight: 20
@@ -11,6 +11,35 @@ sitemap:
     priority: 0.7
 ---
 
+## Overview
+
+This article explains how to **convert PDF to Excel formats using C++**. It covers the following topics.
+
+_Format_: **XLS**
+- [C++ PDF to XLS](#cpp-pdf-to-xls)
+- [C++ Convert PDF to XLS](#cpp-pdf-to-xls)
+- [C++ How to convert PDF file to XLS](#cpp-pdf-to-xls)
+
+_Format_: **XLSX**
+- [C++ PDF to XLSX](#cpp-pdf-to-xlsx)
+- [C++ Convert PDF to XLSX](#cpp-pdf-to-xlsx)
+- [C++ How to convert PDF file to XLSX](#cpp-pdf-to-xlsx)
+
+_Format_: **Microsoft Excel XLS format**
+- [C++ PDF to Excel](#cpp-pdf-to-excel-xls)
+- [C++ Convert PDF to Excel](#cpp-pdf-to-excel-xls)
+- [C++ How to convert PDF file to Excel](#cpp-pdf-to-excel-xls)
+
+_Format_: **Microsoft Excel XLSX format**
+- [C++ PDF to Excel](#cpp-pdf-to-excel-xlsx)
+- [C++ Convert PDF to Excel](#cpp-pdf-to-excel-xlsx)
+- [C++ How to convert PDF file to Excel](#cpp-pdf-to-excel-xlsx)
+
+Other topics covered by this article
+- [See Also](#see-also)
+
+## C++ PDF to Excel Conversions
+
 **Aspose.PDF for C++** support the feature of converting PDF files to Excel formats.
 
 Aspose.PDF for C++ is a PDF manipulation component, we have introduced a feature that renders PDF file to Excel workbook (XLS files). During this conversion, the individual pages of the PDF file are converted to Excel worksheets.
@@ -18,6 +47,11 @@ Aspose.PDF for C++ is a PDF manipulation component, we have introduced a feature
 In order to convert PDF files to <abbr title="Microsoft Excel Spreadsheet">XLS</abbr> format, Aspose.PDF has a class called ExcelSaveOptions. An object of the ExcelSaveOptions class is passed as a second argument to the Document.Save(..) constructor.
 
 The following code snippet shows the process for converting PDF file into XLS format with Aspose.PDF for C++.
+
+<a name="cpp-pdf-to-xls" id="cpp-pdf-to-xls"><strong>Steps: Convert PDF to XLS in C++</strong></a> | <a name="cpp-pdf-to-excel-xls" id="cpp-pdf-to-excel-xls"><strong>Steps: Convert PDF to Excel XLS format in C++</strong></a>
+
+1. Create an instance of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object with the source PDF document.
+2. Save it to _XLS_ format by calling **Document->Save()** method.
 
 ```cpp
 void ConvertPDFtoExcel()
@@ -28,13 +62,13 @@ void ConvertPDFtoExcel()
 
     // String for file name
     String infilename("sample.pdf");
-    String outfilename("PDFToExcel.xlsx");
+    String outfilename("PDFToExcel.xls");
 
     // Open document
     auto document = MakeObject<Document>(_dataDir + infilename);
 
     try {
-    // Save the output in XLSX format
+    // Save the output in XLS format
     document->Save(_dataDir + outfilename, SaveFormat::Excel);
     }
     catch (Exception ex) {
@@ -109,6 +143,13 @@ By default Aspose.PDF uses  XML Spreadsheet 2003 for storing data. In order to c
 
 The following code snippet shows the process for converting PDF file into XLSX format.
 
+<a name="cpp-pdf-to-xlsx" id="cpp-pdf-to-xlsx"><strong>Steps: Convert PDF to XLSX in C++</strong></a> | <a name="cpp-pdf-to-excel-xlsx" id="cpp-pdf-to-excel-xlsx"><strong>Steps: Convert PDF to Excel XLSX format in C++</strong></a>
+
+1. Create an instance of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object with the source PDF document.
+2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.excel_save_options).
+3. Set the format as _ExcelSaveOptions::ExcelFormat::XLSX_.
+4. Save it to _XLSX_ format by calling **Document->Save()** method and passing it instance of _ExcelSaveOptions_.
+
 ```cpp
 void ConvertPDFtoExcel_Advanced_SaveXLSX()
 {
@@ -142,3 +183,24 @@ Aspose.PDF for C++ presents you online free application ["PDF to XLSX"](https://
 [![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
+## See Also
+
+This article also covers these topics. The codes are same as above.
+
+_Format_: **Microsoft Excel XLS format**
+- [C# PDF to XLS Code](#cpp-pdf-to-excel-xls)
+- [C# PDF to XLS Programmatically](#cpp-pdf-to-excel-xls)
+- [C# PDF to XLS Library](#cpp-pdf-to-excel-xls)
+- [C# Save PDF as XLS](#cpp-pdf-to-excel-xls)
+- [C# Generate XLS from PDF](#cpp-pdf-to-excel-xls)
+- [C# Create XLS from PDF](#cpp-pdf-to-excel-xls)
+- [C# PDF to XLS Converter](#cpp-pdf-to-excel-xls)
+
+_Format_: **Microsoft Excel XLSX format**
+- [C# PDF to XLSX Code](#cpp-pdf-to-excel-xlsx)
+- [C# PDF to XLSX Programmatically](#cpp-pdf-to-excel-xlsx)
+- [C# PDF to XLSX Library](#cpp-pdf-to-excel-xlsx)
+- [C# Save PDF as XLSX](#cpp-pdf-to-excel-xlsx)
+- [C# Generate XLSX from PDF](#cpp-pdf-to-excel-xlsx)
+- [C# Create XLSX from PDF](#cpp-pdf-to-excel-xlsx)
+- [C# PDF to XLSX Converter](#cpp-pdf-to-excel-xlsx)
