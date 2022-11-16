@@ -24,7 +24,7 @@ _Format_: **Microsoft PowerPoint PPTX format**
 - [C++ Convert PDF to PowerPoint](#cpp-pdf-to-powerpoint-pptx)
 - [C++ How to convert PDF file to PowerPoint](#cpp-pdf-to-powerpoint-pptx)
 
-Other topics covered by this article
+Other topics covered by this article.
 - [See Also](#see-also)
 
 ## C++ PDF to PowerPoint Conversions
