@@ -188,19 +188,19 @@ Aspose.PDF for C++ presents you online free application ["PDF to XLSX"](https://
 This article also covers these topics. The codes are same as above.
 
 _Format_: **Microsoft Excel XLS format**
-- [C# PDF to XLS Code](#cpp-pdf-to-excel-xls)
-- [C# PDF to XLS Programmatically](#cpp-pdf-to-excel-xls)
-- [C# PDF to XLS Library](#cpp-pdf-to-excel-xls)
-- [C# Save PDF as XLS](#cpp-pdf-to-excel-xls)
-- [C# Generate XLS from PDF](#cpp-pdf-to-excel-xls)
-- [C# Create XLS from PDF](#cpp-pdf-to-excel-xls)
-- [C# PDF to XLS Converter](#cpp-pdf-to-excel-xls)
+- [C++ PDF to XLS Code](#cpp-pdf-to-excel-xls)
+- [C++ PDF to XLS Programmatically](#cpp-pdf-to-excel-xls)
+- [C++ PDF to XLS Library](#cpp-pdf-to-excel-xls)
+- [C++ Save PDF as XLS](#cpp-pdf-to-excel-xls)
+- [C++ Generate XLS from PDF](#cpp-pdf-to-excel-xls)
+- [C++ Create XLS from PDF](#cpp-pdf-to-excel-xls)
+- [C++ PDF to XLS Converter](#cpp-pdf-to-excel-xls)
 
 _Format_: **Microsoft Excel XLSX format**
-- [C# PDF to XLSX Code](#cpp-pdf-to-excel-xlsx)
-- [C# PDF to XLSX Programmatically](#cpp-pdf-to-excel-xlsx)
-- [C# PDF to XLSX Library](#cpp-pdf-to-excel-xlsx)
-- [C# Save PDF as XLSX](#cpp-pdf-to-excel-xlsx)
-- [C# Generate XLSX from PDF](#cpp-pdf-to-excel-xlsx)
-- [C# Create XLSX from PDF](#cpp-pdf-to-excel-xlsx)
-- [C# PDF to XLSX Converter](#cpp-pdf-to-excel-xlsx)
+- [C++ PDF to XLSX Code](#cpp-pdf-to-excel-xlsx)
+- [C++ PDF to XLSX Programmatically](#cpp-pdf-to-excel-xlsx)
+- [C++ PDF to XLSX Library](#cpp-pdf-to-excel-xlsx)
+- [C++ Save PDF as XLSX](#cpp-pdf-to-excel-xlsx)
+- [C++ Generate XLSX from PDF](#cpp-pdf-to-excel-xlsx)
+- [C++ Create XLSX from PDF](#cpp-pdf-to-excel-xlsx)
+- [C++ PDF to XLSX Converter](#cpp-pdf-to-excel-xlsx)
