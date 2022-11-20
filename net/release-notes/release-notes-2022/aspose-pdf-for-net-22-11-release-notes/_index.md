@@ -23,7 +23,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.11.
 | :- | :- | :- |
 |PDFNET-52163|TextFragmentAbsorber extracts characters separately|Enhancement|
 |PDFNET-52146|TextFragmentAbsorber extracts incorrect text|Enhancement|
-|PDFNET-39116|The page tree nodes in a PDF should be written as a balanced tree instead of a flat list|Enhancement|
+|PDFNET-39116|Add balanced tree instead of a flat list for page tree nodes|Enhancement|
 |PDFNET-40744|How to get FontStyle for provided text|Enhancement|
 |PDFNET-52631|Issue in Registrar.GetObject|Bug|
 |PDFNET-51711|Text is lost after PDF to PNG conversion|Bug|
@@ -57,7 +57,7 @@ This page contains release notes information for Aspose.PDF for .NET 22.11.
 
 ### Added APIs
  * Method: Aspose.Pdf.Document.PageNodesToBalancedTree(System.Byte)
- * Field: Aspose.Pdf.Text.TextExtractionOptions.TextFormattingMode.Plane
+ * Field: Aspose.Pdf.Text.TextExtractionOptions.TextFormattingMode.Flatten
  * Method:Aspose.Pdf.Facades.FormattedText.IsCjk
  * Method:Aspose.Pdf.Facades.FormattedText.SetCjkFontStyle
 
