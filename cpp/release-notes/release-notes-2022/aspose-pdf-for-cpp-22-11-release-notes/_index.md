@@ -31,6 +31,6 @@ Added:
 * Method: Aspose::Pdf::Document::PageNodesToBalancedTree(uint_8t)
 * Method: Aspose::Pdf::Facades::FormattedText::IsCjk
 * Method: Aspose::Pdf::Facades::FormattedText::SetCjkFontStyle
-* Field:  Aspose::Pdf::Text::TextExtractionOptions::TextFormattingMode::Flatten
+* Field: Aspose::Pdf::Text::TextExtractionOptions::TextFormattingMode::Flatten
 
 Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).
