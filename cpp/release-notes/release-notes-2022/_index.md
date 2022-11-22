@@ -3,10 +3,11 @@ title: Release Notes - 2022
 type: docs
 weight: 10
 url: /cpp/release-notes-2022/
-lastmod: "2022-10-20"
+lastmod: "2022-11-22"
 ---
 Aspose.PDF for C++ Release Notes list new features, enhancement, and fixed bugs that were made in 2022.
 
+- [Aspose.PDF for C++ 22.11](/pdf/cpp/aspose-pdf-for-cpp-22-11-release-notes/)
 - [Aspose.PDF for C++ 22.10](/pdf/cpp/aspose-pdf-for-cpp-22-10-release-notes/)
 - [Aspose.PDF for C++ 22.9](/pdf/cpp/aspose-pdf-for-cpp-22-9-release-notes/)
 - [Aspose.PDF for C++ 22.8](/pdf/cpp/aspose-pdf-for-cpp-22-8-release-notes/)
