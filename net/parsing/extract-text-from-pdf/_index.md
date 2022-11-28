@@ -15,3 +15,4 @@ sitemap:
 
 - [Extract Text from PDF](/pdf/net/extract-text-from-all-pdf/)
 - [Extract Paragraph from PDF](/pdf/net/extract-paragraph-from-pdf/)
+- [Extract SuperScripts and SubScripts text from PDF](/pdf/net/extract-superscripts-subscripts-from-pdf/)
