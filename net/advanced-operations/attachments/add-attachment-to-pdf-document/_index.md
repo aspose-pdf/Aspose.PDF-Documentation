@@ -102,10 +102,8 @@ FileSpecification fileSpecification = new FileSpecification(dataDir + "test.txt"
 // Add attachment to document's attachment collection
 pdfDocument.EmbeddedFiles.Add(fileSpecification);
 
-dataDir = dataDir + "AddAttachment_out.pdf";
-
-// Save new output
-pdfDocument.Save(dataDir);
+// Save updated document
+pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
 ```
 
 <script type="application/ld+json">

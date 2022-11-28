@@ -186,8 +186,6 @@ pdfDocument.Save(dataDir);
 
 ## Delete a Particular Bookmark from a PDF Document
 
-[Delete All Attachments from PDF document](https://docs.aspose.com/pdf/net/working-with-attachments/) showed how to delete all attachments from a PDF file. It is also possible to only remove specific attachments.
-
 To delete a particular bookmark from a PDF file:
 
 1. Pass the bookmark’s title as parameter to the [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) collection’s Delete method.
@@ -208,9 +206,8 @@ Document pdfDocument = new Document(dataDir + "DeleteParticularBookmark.pdf");
 // Delete particular outline by Title
 pdfDocument.Outlines.Delete("Child Outline");
 
-dataDir = dataDir + "DeleteParticularBookmark_out.pdf";
 // Save updated file
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
 ```
 
 <script type="application/ld+json">

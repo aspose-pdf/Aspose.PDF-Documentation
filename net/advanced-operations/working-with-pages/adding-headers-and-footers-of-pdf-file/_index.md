@@ -108,7 +108,6 @@ foreach (Page page in pdfDocument.Pages)
 {
     page.AddStamp(textStamp);
 }
-
 // Save updated document
 pdfDocument.Save(dataDir+ "TextinHeader_out.pdf");
 ```
@@ -143,9 +142,8 @@ foreach (Page page in pdfDocument.Pages)
 {
     page.AddStamp(textStamp);
 }
-dataDir = dataDir + "TextinFooter_out.pdf";
-// Save updated PDF file
-pdfDocument.Save(dataDir);
+// Save output file
+doc.Save(dataDir + "TextinFooter_out.pdf");
 ```
 
 ## Adding Image in Header of PDF File
@@ -179,9 +177,8 @@ foreach (Page page in pdfDocument.Pages)
 {
     page.AddStamp(imageStamp);
 }
-dataDir = dataDir + "ImageinHeader_out.pdf";
-// Save updated document
-pdfDocument.Save(dataDir);
+// Save output file
+doc.Save(dataDir + "ImageinHeader_out.pdf");
 ```
 
 ## Adding Image in Footer of PDF File
@@ -214,9 +211,8 @@ foreach (Page page in pdfDocument.Pages)
 {
     page.AddStamp(imageStamp);
 }
-dataDir = dataDir + "ImageInFooter_out.pdf";
-// Save updated PDF file
-pdfDocument.Save(dataDir);
+// Save output file
+doc.Save(dataDir + "ImageInFooter_out.pdf");
 ```
 
 ## Adding different Headers in one PDF File
@@ -272,9 +268,8 @@ doc.Pages[1].AddStamp(stamp1);
 doc.Pages[2].AddStamp(stamp2);
 // Third stamp is added on third page.
 doc.Pages[3].AddStamp(stamp3);
-dataDir = dataDir + "multiheader_out.pdf";
 // Save the updated document
-doc.Save(dataDir);
+doc.Save(dataDir + "MultiHeader_out.pdf");
 ```
 
 <script type="application/ld+json">
