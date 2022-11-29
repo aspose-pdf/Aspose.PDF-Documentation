@@ -81,7 +81,7 @@ Aspose.PDF for .NET presents you online free application ["EPUB to PDF"](https:/
 [![Aspose.PDF Convertion EPUB to PDF with Free App](epub.png)](https://products.aspose.app/pdf/conversion/epub-to-pdf)
 {{% /alert %}}
 
-<a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong>_Steps:_ Convert EPUB to PDF in C#</strong></a>
+<a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong><em>Steps:</em> Convert EPUB to PDF in C#</strong></a>
 
 1. Create an instance of [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
@@ -125,8 +125,8 @@ Aspose.PDF for .NET provides the functionality to create a PDF document based on
 
 The following code snippet shows how to use this functionality with Aspose.PDF library:
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong>_Steps:_ Convert Markdown to PDF in C#</strong></a> |
-<a name="csharp-convert-md-to-pdf" id="csharp-convert-md-to-pdf"><strong>_Steps:_ Convert MD to PDF in C#</strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Steps:</em> Convert Markdown to PDF in C#</strong></a> |
+<a name="csharp-convert-md-to-pdf" id="csharp-convert-md-to-pdf"><strong><em>Steps:</em> Convert MD to PDF in C#</strong></a>
 
 1. Create an instance of [MdLoadOptions ](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions/) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
@@ -381,7 +381,7 @@ To allow conversion from PCL to PDF, Aspose.PDF has the class [`PclLoadOptions`]
 
 The following code snippet shows the process of converting a PCL file into PDF format.
 
-<a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong>_Steps:_ Convert PCL to PDF in C#</strong></a>
+<a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong><em>Steps:</em> Convert PCL to PDF in C#</strong></a>
 
 1. Create an instance of [PclLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions/) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) class with mention source filename and options.
@@ -438,9 +438,9 @@ Aspose.PDF for .NET presents you online free application ["Text to PDF"](https:/
 
 In case of the plain text file, we can use the following technique:
 
-<a name="csharp-convert-text-to-pdf" id="csharp-convert-text-to-pdf"><strong>_Steps:_ Convert Text to PDF in C#</strong></a> |
-<a name="csharp-convert-txt-to-pdf" id="csharp-convert-txt-to-pdf"><strong>_Steps:_ Convert TXT to PDF in C#</strong></a> |
-<a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong>_Steps:_ Convert Plain Text to PDF in C#</strong></a>
+<a name="csharp-convert-text-to-pdf" id="csharp-convert-text-to-pdf"><strong><em>Steps:</em> Convert Text to PDF in C#</strong></a> |
+<a name="csharp-convert-txt-to-pdf" id="csharp-convert-txt-to-pdf"><strong><em>Steps:</em> Convert TXT to PDF in C#</strong></a> |
+<a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong><em>Steps:</em> Convert Plain Text to PDF in C#</strong></a>
 
 1. Use a _TextReader_ to read the whole text;
 2. Instantiate [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object and add a new page in Pages collection;
@@ -476,8 +476,8 @@ Converting pre-formatted text is like plain text but you need to make some addit
 
 Follow these steps to convert pre-formatted text to PDF with C#:
 
-<a name="csharp-convert-pre-text-to-pdf" id="csharp-convert-pre-text-to-pdf"><strong>_Steps:_ Convert Pre Text to PDF in C#</strong></a> |
-<a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong>_Steps:_ Convert Pre-formatted TXT to PDF in C#</strong></a>
+<a name="csharp-convert-pre-text-to-pdf" id="csharp-convert-pre-text-to-pdf"><strong><em>Steps:</em> Convert Pre Text to PDF in C#</strong></a> |
+<a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong><em>Steps:</em> Convert Pre-formatted TXT to PDF in C#</strong></a>
 
 1. Read the whole text as an array of strings;
 2. Instantiate [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object and add a new page in [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/pages/) collection;
@@ -555,7 +555,7 @@ In both XP and Windows 7, you should find an XPS Printer pre-installed if you lo
 
 The following code snippet shows the process of converting XPS file into PDF format with C#.
 
-<a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong>_Steps:_ Convert XPS to PDF in C#</strong></a>
+<a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong><em>Steps:</em> Convert XPS to PDF in C#</strong></a>
 
 1. Create an instance of [XpsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions/) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) class with mention source filename and options.
