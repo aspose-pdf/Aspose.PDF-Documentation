@@ -205,7 +205,7 @@ _Format_: **Microsoft Excel XLSX format**
 - [C++ Create Excel XLSX from PDF](#cpp-pdf-to-excel-xlsx)
 - [C++ PDF to Excel XLSX Converter](#cpp-pdf-to-excel-xlsx)
 
-_Format_: **XLSt**
+_Format_: **XLS**
 - [C++ PDF to XLS Code](#cpp-pdf-to-xls)
 - [C++ PDF to XLS Programmatically](#cpp-pdf-to-xls)
 - [C++ PDF to XLS Library](#cpp-pdf-to-xls)
