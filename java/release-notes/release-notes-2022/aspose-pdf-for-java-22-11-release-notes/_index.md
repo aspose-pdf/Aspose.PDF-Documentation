@@ -37,6 +37,7 @@ This page contains release notes information for Aspose.PDF for Java 22.11.
 |PDFJAVA-42100|PDF to DOCX: Text lines in a wrong order in multi-column page|Bug|
 |PDFJAVA-41873|PDF to DOCX: multi-columns are not recognized|Bug|
 |PDFJAVA-42153|PDF to DOCX: Extra page breaks after some tables|Bug|
+|PDFJAVA-42254|PDF to JPEG: Paragraphs and images not rendered|Bug|
 
 
 ## **Public API and Backwards Incompatible Changes**
