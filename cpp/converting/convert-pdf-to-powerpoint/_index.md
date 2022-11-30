@@ -156,7 +156,7 @@ Aspose.PDF for C++ presents you online free application ["PDF to PPTX"](https://
 
 This article also covers these topics. The codes are same as above.
 
-_Format_: **Microsoft PowerPoint PPTX format**
+_Format_: **PowerPoint**
 - [C++ PDF to PowerPoint Code](#cpp-pdf-to-powerpoint-pptx)
 - [C++ PDF to PowerPoint API](#cpp-pdf-to-powerpoint-pptx)
 - [C++ PDF to PowerPoint Programmatically](#cpp-pdf-to-powerpoint-pptx)
@@ -165,6 +165,16 @@ _Format_: **Microsoft PowerPoint PPTX format**
 - [C++ Generate PowerPoint from PDF](#cpp-pdf-to-powerpoint-pptx)
 - [C++ Create PowerPoint from PDF](#cpp-pdf-to-powerpoint-pptx)
 - [C++ PDF to PowerPoint Converter](#cpp-pdf-to-powerpoint-pptx)
+
+_Format_: **Microsoft PowerPoint PPTX format**
+- [C++ PDF to PowerPoint PPTX Code](#cpp-pdf-to-powerpoint-pptx)
+- [C++ PDF to PowerPoint PPTX API](#cpp-pdf-to-powerpoint-pptx)
+- [C++ PDF to PowerPoint PPTX Programmatically](#cpp-pdf-to-powerpoint-pptx)
+- [C++ PDF to PowerPoint PPTX Library](#cpp-pdf-to-powerpoint-pptx)
+- [C++ Save PDF as PowerPoint PPTX](#cpp-pdf-to-powerpoint-pptx)
+- [C++ Generate PowerPoint PPTX from PDF](#cpp-pdf-to-powerpoint-pptx)
+- [C++ Create PowerPoint PPTX from PDF](#cpp-pdf-to-powerpoint-pptx)
+- [C++ PDF to PowerPoint PPTX Converter](#cpp-pdf-to-powerpoint-pptx)
 
 _Format_: **PPTX**
 - [C++ PDF to PPTX Code](#cpp-pdf-to-pptx)
