@@ -12,7 +12,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-![Aspose.PDF for Python via .NET logo image](aspose_pdf-for-net.png)
+![Aspose.PDF for Python via .NET logo image](aspose_pdf-for-python-net.png)
 
 <h2>Welcome to Aspose.PDF for Python via .NET</h2>
 
