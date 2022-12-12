@@ -12,7 +12,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-![Aspose.PDF for Python via Java logo image](aspose_pdf-for-java.png)
+![Aspose.PDF for Python via Java logo image](aspose_pdf-for-python-java.png)
 
 <h2>Welcome to Aspose.PDF for Python via Java</h2>
 
