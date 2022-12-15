@@ -22,8 +22,8 @@ This page contains release notes information for Aspose.PDF for .NET 22.12.
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
 |PDFNET-49657|Convert PDF to DICOM Image|Feature|
-|PDFNET-52466|Out of memory when rendering PDF file on Linux|Enhancement|
-|PDFNET-49184|Out of memory exception on Linux after update to v20.12|Enhancement|
+|PDFNET-52466|Fix out of memory when rendering PDF file on Linux|Enhancement|
+|PDFNET-49184|Fix out of memory exception on Linux after update to v20.12|Enhancement|
 |PDFNET-51523|Different behavior when adding text to TextBoxField and ComboBoxField|Bug|
 |PDFNET-51415|Get Page Count in PowerShell - API is throwing error|Bug|
 |PDFNET-45580|Unable to replace the text using TextFragmentAbsorber|Bug|
