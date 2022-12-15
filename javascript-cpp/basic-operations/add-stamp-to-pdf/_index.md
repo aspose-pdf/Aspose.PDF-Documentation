@@ -31,15 +31,15 @@ The following code snippet shows how to add image stamp in the PDF file.
 
 ```js
 
-    //set the default stamp filename
-    var fileStamp = "/Aspose.jpg";
+  /*set the default stamp filename*/
+  var fileStamp = "/Aspose.jpg";
 
-    var ffileStamp = function (e) {
+  var ffileStamp = function (e) {
     const file_reader = new FileReader();
-    //set the stamp filename
+    /*set the stamp filename*/
     fileStamp = e.target.files[0].name;
     file_reader.onload = (event) => {
-      //prepare(save) the stamp file from BLOB
+      /*prepare(save) the stamp file from BLOB*/
       AsposePdfPrepare(event.target.result, fileStamp);
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
@@ -48,12 +48,12 @@ The following code snippet shows how to add image stamp in the PDF file.
   var ffileAddStamp = function (e) {
     const file_reader = new FileReader();
     file_reader.onload = (event) => {
-      //insert the stamp file to a PDF-file and save the "ResultImage.pdf"
+      /*insert the stamp file to a PDF-file and save the "ResultImage.pdf"*/
       const json = AsposePdfAddStamp(event.target.result, e.target.files[0].name, fileStamp, 0, 5, 5, 40, 40, Module.Rotation.on270, 0.5, "ResultStamp.pdf");
       if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
       else document.getElementById('output').textContent = json.errorText;
-      //make a link to download the result file
-      DownloadFile(json.fileNameResult, "image/jpeg");      
+      /*make a link to download the result file*/
+      DownloadFile(json.fileNameResult, "application/pdf");
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };

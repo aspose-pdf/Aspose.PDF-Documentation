@@ -34,12 +34,12 @@ The following code snippet shows you how to encrypt PDF files.
   var ffileEncrypt = function (e) {
     const file_reader = new FileReader();
     file_reader.onload = (event) => {
-      //encrypt a PDF-file with passwords "user" and "owner", and save the "ResultDecrypt.pdf"
+      /*encrypt a PDF-file with passwords "user" and "owner", and save the "ResultDecrypt.pdf"*/
       const json = AsposePdfEncrypt(event.target.result, e.target.files[0].name, "user", "owner", Module.Permissions.PrintDocument, Module.CryptoAlgorithm.RC4x40, "ResultEncrypt.pdf");
       if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
       else document.getElementById('output').textContent = json.errorText;
-      //make a link to download the result file
-      DownloadFile(json.fileNameResult, "mime/type");
+      /*make a link to download the result file*/
+      DownloadFile(json.fileNameResult, "application/pdf");
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
@@ -64,12 +64,12 @@ It is better to solve this problem once by using the Aspose.PDF for JavaScript v
   var ffileDecrypt = function (e) {
     const file_reader = new FileReader();
     file_reader.onload = (event) => {
-      //decrypt a PDF-file with password is "owner" and save the "ResultDecrypt.pdf"
+      /*decrypt a PDF-file with password is "owner" and save the "ResultDecrypt.pdf"*/
       const json = AsposePdfDecrypt(event.target.result, e.target.files[0].name, "owner", "ResultDecrypt.pdf");
       if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
       else document.getElementById('output').textContent = json.errorText;
-      //make a link to download the result file
-      DownloadFile(json.fileNameResult, "mime/type");
+      /*make a link to download the result file*/
+      DownloadFile(json.fileNameResult, "application/pdf");
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };

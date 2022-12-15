@@ -29,15 +29,15 @@ The following code snippet shows how to add the image in a PDF document.
 
 ```js
 
-  //set the default image filename
-    var fileImage = "/Aspose.jpg";
+  /*set the default image filename*/
+  var fileImage = "/Aspose.jpg";
 
-   var ffileImage = function (e) {
+  var ffileImage = function (e) {
     const file_reader = new FileReader();
-    //set the image filename
+    /*set the image filename*/
     fileImage = e.target.files[0].name;
     file_reader.onload = (event) => {
-      //prepare(save) the image file from BLOB
+      /*prepare(save) the image file from BLOB*/
       AsposePdfPrepare(event.target.result, fileImage);
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
@@ -46,12 +46,12 @@ The following code snippet shows how to add the image in a PDF document.
   var ffileAddImage = function (e) {
     const file_reader = new FileReader();
     file_reader.onload = (event) => {
-      //add the image file to end a PDF-file and save the "ResultImage.pdf"
+      /*add the image file to end a PDF-file and save the "ResultImage.pdf"*/
       const json = AsposePdfAddImage(event.target.result, e.target.files[0].name, fileImage, "ResultImage.pdf");
       if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
       else document.getElementById('output').textContent = json.errorText;
-      //make a link to download the result file
-      DownloadFile(json.fileNameResult, "image/jpeg");
+      /*make a link to download the result file*/
+      DownloadFile(json.fileNameResult, "application/pdf");
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };

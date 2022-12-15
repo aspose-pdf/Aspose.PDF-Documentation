@@ -28,19 +28,19 @@ The following JavaScript code snippet shows you how to split PDF pages into indi
 
 ```js
 
-    var ffileSplit = function (e) {
+  var ffileSplit = function (e) {
     const file_reader = new FileReader();
     file_reader.onload = (event) => {
-      //set number a page to split
+      /*set number a page to split*/
       const pageToSplit = 1;
-      //split a PDF-file and save the "ResultSplit1.pdf", "ResultSplit2.pdf"
+      /*split a PDF-file and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/
       const json = AsposePdfSplit2Files(event.target.result, e.target.files[0].name, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf");
       if (json.errorCode == 0) document.getElementById('output').textContent = e.target.files[0].name + " split: " + json.fileNameResult1 + ", " + json.fileNameResult2;
       else document.getElementById('output').textContent = json.errorText;
-      //make a link to download the first result file
-      DownloadFile(json.fileNameResult1, "mime/type");
-      //make a link to download the second result file
-      DownloadFile(json.fileNameResult2, "mime/type");
+      /*make a link to download the first result file*/
+      DownloadFile(json.fileNameResult1, "application/pdf");
+      /*make a link to download the second result file*/
+      DownloadFile(json.fileNameResult2, "application/pdf");
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };

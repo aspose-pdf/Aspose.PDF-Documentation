@@ -29,23 +29,22 @@ The following code snippet shows how to concatenate PDF files:
 
 ```js
 
-    var ffileMerge = function (e) {
+  var ffileMerge = function (e) {
     const file_reader = new FileReader();
     function readFile(index) {
-      //only two files
-
+      /*only two files*/
       if (index >= e.target.files.length || index >= 2) {
-        //merge two PDF-files and save the "ResultMerge.pdf"
+        /*merge two PDF-files and save the "ResultMerge.pdf"*/
         const json = AsposePdfMerge2Files(undefined, undefined, e.target.files[0].name, e.target.files[1].name, "ResultMerge.pdf");
         if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
         else document.getElementById('output').textContent = json.errorText;
-        //make a link to download the result file
-        DownloadFile(json.fileNameResult, "mime/type");
+        /*make a link to download the result file*/
+        DownloadFile(json.fileNameResult, "application/pdf");
         return;
       }
       const file = e.target.files[index];
       file_reader.onload = function (event) {
-        //prepare(save) file from BLOB
+        /*prepare(save) file from BLOB*/
         AsposePdfPrepare(event.target.result, file.name);
         readFile(index + 1)
       }
