@@ -20,8 +20,6 @@ We want our customers to test our components thoroughly before buying so the eva
 - **The limit of the number of collection items that can be processed.**
 In the evaluation version from any collection, you can process only four elements (for example, only 4 pages, 4 form fields, etc.).
 
->If you want to test Aspose.PDF for JavaScript without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
-
 ## Classic license
 
 ### Protect your license
