@@ -51,7 +51,7 @@ The following code snippet shows how to add the image in a PDF document.
       if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
       else document.getElementById('output').textContent = json.errorText;
       //make a link to download the result file
-      DownloadFile(json.fileNameResult, "mime/type");
+      DownloadFile(json.fileNameResult, "image/jpeg");
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
