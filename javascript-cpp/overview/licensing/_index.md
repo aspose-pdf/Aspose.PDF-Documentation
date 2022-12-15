@@ -1,0 +1,36 @@
+---
+title: License for Aspose.PDF for JavaScript via C++
+linktitle: Licensing and limitations of Aspose.PDF for JavaScript
+type: docs
+weight: 50
+url: /javascript-cpp/licensing/
+description: Aspose.PDF for JavaScript invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
+lastmod: "2022-12-13"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+---
+
+## Limitation of an evaluation version
+
+We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
+
+- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for JavaScript via C++ provides full product functionality, but all the pages in the generated PDF documents are watermarked with "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" at the top.
+
+- **The limit of the number of collection items that can be processed.**
+In the evaluation version from any collection, you can process only four elements (for example, only 4 pages, 4 form fields, etc.).
+
+>If you want to test Aspose.PDF for JavaScript without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
+
+## Classic license
+
+### Protect your license
+
+Aspose.PDF for JavaScript provided a mechanism to protect your license against theft. Your license must be encrypted before use. To do this, you need to use the "encrypt_lic.html" utility. Click the button and select your license file. Once encryption is complete, you will receive the message "Encrypt OK: aspose.enc". By clicking the link "Click here to download the file aspose.enc" you will download the encrypted license file (aspose.enc). Use it with"Aspose.PDF for JavaScript via C++".
+
+## Metered License
+
+Aspose.PDF allows developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to Metered Licensing FAQ section.
+
+For more details, please refer to the [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
+
