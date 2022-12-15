@@ -49,6 +49,9 @@ This page contains release notes information for Aspose.PDF for .NET 22.12.
 |PDFNET-40893|HTML to PDF: CSS is not being honored|Bug|
 |PDFNET-50995|HTML to SVG - Exception is thrown when there is an inline SVG|Bug|
 |PDFNET-47933|HTML to PDF - incorrect rendering of elements|Bug|
+|PDFNET-53125|PDF to PNG: Black rectangles on Linux|Bug|
+|PDFNET-52645|Application crashes when converting PDF to PNG on Linux|Bug|
+|PDFNET-49766|Image missing in rendered page in Linux|Bug|
 
 ## Public API and Backward Incompatible Changes
 
