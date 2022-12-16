@@ -52,6 +52,8 @@ This page contains release notes information for Aspose.PDF for .NET 22.12.
 |PDFNET-53125|PDF to PNG: Black rectangles on Linux|Bug|
 |PDFNET-52645|Application crashes when converting PDF to PNG on Linux|Bug|
 |PDFNET-49766|Image missing in rendered page in Linux|Bug|
+|PDFNET-53055|TextReplace causing moving text values|Bug|
+|PDFNET-46071|XML import to PDF issue|Bug|
 
 ## Public API and Backward Incompatible Changes
 
