@@ -54,6 +54,11 @@ This page contains release notes information for Aspose.PDF for .NET 22.12.
 |PDFNET-49766|Image missing in rendered page in Linux|Bug|
 |PDFNET-53055|TextReplace causing moving text values|Bug|
 |PDFNET-46071|XML import to PDF issue|Bug|
+|PDFNET-49831|Process crashed when converting PDF to HTML/PNG/JPG on Linux|Bug|
+|PDFNET-49769|Unable to convert specific pdf to jpg on docker for Linux|Bug|
+|PDFNET-47528|PDF to images missing content when the code is running on Linux|Bug|
+|PDFNET-49427|PDF to Image over MAC - Segmentation fault under Debian|Bug|
+|PDFNET-48116|Out of memory exception when saving CGM to HTML on Linux|Bug|
 
 ## Public API and Backward Incompatible Changes
 
