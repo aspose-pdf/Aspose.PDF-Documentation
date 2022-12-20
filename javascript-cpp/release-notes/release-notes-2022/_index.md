@@ -8,7 +8,4 @@ lastmod: "2022-12-14"
 
 ## **Release Notes - 2022**
 
-
-
-
-
+- [Aspose.PDF for .NET 22.12](/pdf/javascript-cpp/aspose_pdf-for-javascript-cpp-22-12-release-notes/)
