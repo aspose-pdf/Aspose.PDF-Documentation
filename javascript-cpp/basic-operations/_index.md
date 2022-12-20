@@ -19,4 +19,5 @@ sitemap:
 - [Split PDF](/pdf/javascript-cpp/split-pdf/) - this article describes how to split PDF into multiple files.
 - [Add Image to PDF](/pdf/javascript-cpp/add-image-to-pdf/) - this article describes how to add Image into your PDF document.
 - [Add Stamp to PDF](/pdf/javascript-cpp/add-stamp-to-pdf/) - this article describes how to add Stamp into your PDF document.
-- [Encrypt and Decrypt PDF](/pdf/javascript-cpp/encrypt-decrypt-pdf/) - this article describes about PDF Security Features by Aspose.PDF for JavaScript.
+- [Encrypt PDF](/pdf/javascript-cpp/encrypt-pdf/) - this article describes about PDF Security Features by Aspose.PDF for JavaScript.
+- [Decrypt PDF](/pdf/javascript-cpp/decrypt-pdf/) - this article describes about decrypting PDF documents by ASpose.PDF for JavaScript via C++.
