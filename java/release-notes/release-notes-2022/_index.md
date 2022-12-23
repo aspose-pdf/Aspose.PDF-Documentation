@@ -9,6 +9,7 @@ lastmod: "2021-06-05"
 ## **Release Notes - 2022**
 
 
+- [Aspose.PDF for Java 22.12 Release Notes](/pdf/java/aspose-pdf-for-java-22-12-release-notes/)
 - [Aspose.PDF for Java 22.11 Release Notes](/pdf/java/aspose-pdf-for-java-22-11-release-notes/)
 - [Aspose.PDF for Java 22.10 Release Notes](/pdf/java/aspose-pdf-for-java-22-10-release-notes/)
 - [Aspose.PDF for Java 22.9 Release Notes](/pdf/java/aspose-pdf-for-java-22-9-release-notes/)
