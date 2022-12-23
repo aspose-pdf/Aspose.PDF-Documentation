@@ -32,7 +32,7 @@ This page contains release notes information for Aspose.PDF for Java 22.12.
 ## **Public API and Backwards Incompatible Changes**
 
 
-**Added new class: **
+**Added new class:**
 
 - com.aspose.pdf.devices.**DicomDevice**
 
