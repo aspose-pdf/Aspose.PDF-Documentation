@@ -29,7 +29,7 @@ sitemap:
 
 You can easily download Aspose.PDF for Python for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to apply the license.
 
-You can download [Aspose.PDF for Python](https://releases.aspose.com/pdf/javascriptcpp/) for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to [apply the license](/pdf/python-net/licensing/).
+You can download [Aspose.PDF for Python](https://releases.aspose.com/pdf/python-net/) for evaluation. The evaluation download is the same as the purchased download. The evaluation version becomes licensed when you add a few lines of code to [apply for the license](/pdf/python-net/licensing/).
 
 The evaluation version of Aspose.PDF (without a license specified) provides full product functionality, but it has two limitations: it inserts an evaluation watermark, and only four elements of any collection can be viewed/edited.
 
