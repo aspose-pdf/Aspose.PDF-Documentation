@@ -13,7 +13,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-**Aspose.PDF for Python via .NET** is a native library that enables the developers to add PDF processing capabilities to their applications. API can be used to build any type of 32-bit and 64-bit applications to generate or read, convert and manipulate PDF files without the use of Adobe Acrobat.
+**Aspose.PDF for Python via .NET** is a library that lets developers add PDF processing capabilities to their applications. API can be used to build 32-bit and 64-bit applications to generate, read, convert, and manipulate PDF files without using Adobe Acrobat.
 
 {{% /alert %}}
 
