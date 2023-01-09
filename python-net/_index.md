@@ -32,6 +32,7 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 - [Converting documents](/pdf/python-net/converting/)
 - [Parsing PDF documents](/pdf/python-net/parsing/)
 - [Advanced operations](/pdf/python-net/advanced-operations/)
+- [Showcases](/pdf/python-net/showcases/)
 - [Release Notes](/pdf/python-net/release-notes/)
 
 <h2>Aspose.PDF for Python via .NET Resources</h2>
