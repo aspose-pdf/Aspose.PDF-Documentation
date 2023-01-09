@@ -41,7 +41,7 @@ _Format_: **ODS**
 - [Python Convert PDF to ODS](#python-pdf-to-ods)
 - [Python How to convert PDF file to ODS](#python-pdf-to-ods)
 
-## Python PDF to Excel Conversions
+## PDF to EXCEL conversion via Python
 
 **Aspose.PDF for Python via .NET** support the feature of converting PDF files to Excel, and CSV formats.
 
