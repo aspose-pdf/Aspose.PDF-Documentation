@@ -7,11 +7,12 @@ weight: 63
 url: /python-net/
 is_root: true
 lastmod: "2022-10-24"
-description: Learn to use Aspose.PDF .NET to create applications for PDF documents processing on any platform using Python. Browse tutorials, sample code, and more.    
+description: Learn to use Aspose.PDF Python via .NET to create applications for PDF document processing on any platform using Python. Browse tutorials, sample codes, and more.    
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+
 ![Aspose.PDF for Python via .NET logo image](aspose_pdf-for-python-net.png)
 
 <h2>Welcome to Aspose.PDF for Python via .NET</h2>
