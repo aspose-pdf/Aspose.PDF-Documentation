@@ -23,6 +23,8 @@ This page contains release notes information for Aspose.PDF for .NET 23.1.
 | :- | :- | :- |
 |PDFNET-49311|Extract table as single object if it is spanned over multiple pages|Feature|
 |PDFNET-39205|Create PrinterMark annotation|Feature|
+|PDFNET-48852|Detect if PDF file contains vector graphics|Feature|
+|PDFNET-36137|Support Vector images extraction|Feature|
 |PDFNET-53150|PDF to Excel conversion issue with number format|Enhancement|
 |PDFNET-52604|HTML to PDF conversion throws System.NullReferenceException|Bug|
 |PDFNET-48157|Annotations become lost when resizing PDF document content|Bug|
@@ -41,6 +43,9 @@ This page contains release notes information for Aspose.PDF for .NET 23.1.
 |PDFNET-46912|Non-English language characters gets reversed while replacing the text|Bug|
 |PDFNET-52930|PDF to Excel - Certain Cells are being merged together|Bug|
 |PDFNET-51857|PNG transparency is ignored when adding Image Stamp on Linux|Bug|
+|PDFNET-53223|PDF to image conversion throws System.IO.EndOfStreamException|Bug|
+|PDFNET-52448|PdfExtractor.ExtractText throws System.ArgumentOutOfRangeException|Bug|
+|PDFNET-52604|HTML to PDF conversion throws System.NullReferenceException|Bug|
 
 ## Public API and Backward Incompatible Changes
 
