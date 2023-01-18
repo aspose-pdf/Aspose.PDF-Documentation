@@ -50,7 +50,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.1.
 |PDFNET-46912|Non-English language characters gets reversed while replacing the text|Bug|
 |PDFNET-38644|LaTex to PDF - Exception during conversion|Bug|
 |PDFNET-44776|Rotation problem while adding images in a PDF document|Bug|
-
+|PDFNET-53179|Report generation crashes with IndexOutOfRangeException|Bug|
 
 ## Public API and Backward Incompatible Changes
 
