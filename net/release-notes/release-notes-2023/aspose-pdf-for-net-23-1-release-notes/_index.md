@@ -51,6 +51,12 @@ This page contains release notes information for Aspose.PDF for .NET 23.1.
 |PDFNET-38644|LaTex to PDF - Exception during conversion|Bug|
 |PDFNET-44776|Rotation problem while adding images in a PDF document|Bug|
 |PDFNET-53179|Report generation crashes with IndexOutOfRangeException|Bug|
+|PDFNET-38379|HTML to PDF: table columns are missing|Bug|
+|PDFNET-41266|HTML to PDF: text overlapping issue|Bug|
+|PDFNET-41261|HTML to PDF: Text overlapping issue in resultant PDF|Bug|
+|PDFNET-39759|HTML to PDF: background color is not rendered|Bug|
+|PDFNET-44424|HTML to PDF - API is taking more time when base64 images are present in source HTML|Bug|
+|PDFNET-38214|HTML to PDF table borders are incorrectly rendered|Bug|
 
 ## Public API and Backward Incompatible Changes
 
