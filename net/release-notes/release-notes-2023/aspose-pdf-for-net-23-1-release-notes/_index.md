@@ -47,6 +47,9 @@ This page contains release notes information for Aspose.PDF for .NET 23.1.
 |PDFNET-52448|PdfExtractor.ExtractText throws System.ArgumentOutOfRangeException|Bug|
 |PDFNET-52604|HTML to PDF conversion throws System.NullReferenceException|Bug|
 |PDFNET-53397|TextFragmentAbsorber finds extra TextFragments when searching by rectangle|Bug|
+|PDFNET-46912|Non-English language characters gets reversed while replacing the text|Bug|
+|PDFNET-38644|LaTex to PDF - Exception during conversion|Bug|
+
 
 ## Public API and Backward Incompatible Changes
 
