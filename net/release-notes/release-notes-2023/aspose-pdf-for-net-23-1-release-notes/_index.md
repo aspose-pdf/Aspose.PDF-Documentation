@@ -46,9 +46,29 @@ This page contains release notes information for Aspose.PDF for .NET 23.1.
 |PDFNET-53223|PDF to image conversion throws System.IO.EndOfStreamException|Bug|
 |PDFNET-52448|PdfExtractor.ExtractText throws System.ArgumentOutOfRangeException|Bug|
 |PDFNET-52604|HTML to PDF conversion throws System.NullReferenceException|Bug|
+|PDFNET-53397|TextFragmentAbsorber finds extra TextFragments when searching by rectangle|Bug|
 
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
+* Method:Aspose.Pdf.Annotations.AnnotationSelector.Visit(Aspose.Pdf.Annotations.ColorBarAnnotation)
+* Field:Aspose.Pdf.Annotations.AnnotationType.ColorBar
+* Type:Aspose.Pdf.Annotations.ColorBarAnnotation
+* Method:Aspose.Pdf.Annotations.ColorBarAnnotation.#ctor(Aspose.Pdf.Page,Aspose.Pdf.Rectangle,Aspose.Pdf.Annotations.ColorsOfCMYK)
+* Property:Aspose.Pdf.Annotations.ColorBarAnnotation.ColorOfCMYK
+* Property:Aspose.Pdf.Annotations.ColorBarAnnotation.AnnotationType
+* Method:Aspose.Pdf.Annotations.ColorBarAnnotation.Accept(Aspose.Pdf.Annotations.AnnotationSelector)
+* Method:Aspose.Pdf.Annotations.ColorBarAnnotation.ChangeAfterResize(Aspose.Pdf.Matrix)
+* Type:Aspose.Pdf.Annotations.ColorsOfCMYK
+* Field:Aspose.Pdf.Annotations.ColorsOfCMYK.Cyan
+* Field:Aspose.Pdf.Annotations.ColorsOfCMYK.Magenta
+* Field:Aspose.Pdf.Annotations.ColorsOfCMYK.Yellow
+* Field:Aspose.Pdf.Annotations.ColorsOfCMYK.Black
+* Type:Aspose.Pdf.Annotations.PrinterMarkAnnotation
+* Method:Aspose.Pdf.Annotations.PrinterMarkAnnotation.#ctor(Aspose.Pdf.Page,Aspose.Pdf.Rectangle)
+* Method:Aspose.Pdf.Annotations.PrinterMarkAnnotation.IsOutsideOfTrimBox
+* Method:Aspose.Pdf.Annotations.PrinterMarkAnnotation.MoveOutsideOfTrimBox
+* Method:Aspose.Pdf.Annotations.WatermarkAnnotation.ChangeAfterResize(Aspose.Pdf.Matrix)
+* Method:Aspose.Pdf.Page.TrySaveVectorGraphics(System.String)
 
 ### Removed APIs
