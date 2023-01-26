@@ -36,7 +36,7 @@ This page contains release notes information for Aspose.PDF for Java 23.1.
 ## **Public API and Backwards Incompatible Changes**
 
 
-**Added new classes:**
+**Added new classes**
 
 - com.aspose.pdf.**ColorBarAnnotation**
 - com.aspose.pdf.**PrinterMarkAnnotation**
