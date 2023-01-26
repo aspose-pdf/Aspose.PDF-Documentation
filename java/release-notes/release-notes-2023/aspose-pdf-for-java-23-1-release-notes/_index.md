@@ -1,9 +1,9 @@
----
+------
 title: Aspose.PDF for Java 23.1 Release Notes
 type: docs
 weight: 140
 url: /java/aspose-pdf-for-java-23-1-release-notes/
-lastmod: "2023-01-26
+lastmod: "2023-06-05"
 ---
 
 {{% alert color="primary" %}}
