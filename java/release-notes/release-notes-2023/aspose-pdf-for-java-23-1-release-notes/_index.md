@@ -24,7 +24,6 @@ This page contains release notes information for Aspose.PDF for Java 23.1.
 |PDFJAVA-42361|PDF to DOCX: Textlines are merged|Bug|
 |PDFJAVA-42382|OutOfMemoryError while converting PDF to DOCX|Bug|
 |PDFJAVA-42415|PDF to Excel: Border colors are incorrect|Bug|
-|PDFJAVA-42343|Aspose.Words 22.11: Text artefacts with DOCX to PDf conversion|Bug|
 |PDFJAVA-41958|Example shows compile time errors|Bug|
 |PDFJAVA-41796|Two "Overview" nodes in Aspose.PDF for Java documentation|Bug|
 |PDFJAVA-40734|Problem adding a visible but non selectable text watermark|Bug|
