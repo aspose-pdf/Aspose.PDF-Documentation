@@ -1,7 +1,7 @@
 ---
 title: Release Notes - 2023
 type: docs
-weight: 8
+weight: 7
 url: /java/release-notes-2023/
 lastmod: "2023-01-26"
 ---

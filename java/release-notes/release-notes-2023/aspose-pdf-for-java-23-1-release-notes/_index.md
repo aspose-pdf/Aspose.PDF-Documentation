@@ -51,3 +51,4 @@ This page contains release notes information for Aspose.PDF for Java 23.1.
 
 - com.aspose.pdf.**AnnotationType**.ColorBar
 
+
