@@ -1,14 +1,15 @@
 ---
-title: Aspose.PDF for JavaScript via C++ Release Notes
+title: Aspose.PDF for JavaScript via C++ 23.1 Release Notes
 type: docs
 weight: 120
 url: /javascript-cpp/release-notes-2023/aspose_pdf-for-javascript-cpp-23-1-release-notes/
+description: This article decsribes changes and updates in version 23.1 of Aspose.PDF for JavaScript via C++
 lastmod: "2023-01-31"
 ---
 
 {{% alert color="primary" %}}
 
-This page contains release notes information for Aspose.PDF for JavaScript via C++
+This page contains release notes information for Aspose.PDF for JavaScript via C++ 23.1
 
 {{% /alert %}}
 
