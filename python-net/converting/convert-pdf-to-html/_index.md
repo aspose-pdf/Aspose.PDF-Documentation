@@ -35,8 +35,8 @@ Aspose.PDF for Python presents you online free application ["PDF to HTML"](https
 
 <a name="csharp-pdf-to-html"><strong>Steps: Convert PDF to HTML in Python</strong></a>
 
-1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object with the source PDF document.
-2. Save it to **HtmlSaveOptions** by calling **Document.Save()** method.
+1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
+2. Save it to [HtmlSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlsaveoptions/) by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 ```python
 
