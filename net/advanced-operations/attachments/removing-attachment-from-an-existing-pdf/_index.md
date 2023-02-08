@@ -96,10 +96,8 @@ Document pdfDocument = new Document(dataDir + "DeleteAllAttachments.pdf");
 // Delete all attachments
 pdfDocument.EmbeddedFiles.Delete();
 
-dataDir = dataDir + "DeleteAllAttachments_out.pdf";
-
-// Save updated file
-pdfDocument.Save(dataDir);
+// Save updated document
+pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
 ```
 
 <script type="application/ld+json">
