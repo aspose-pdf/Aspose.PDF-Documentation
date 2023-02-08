@@ -20,10 +20,10 @@ It is better to solve this problem once by using the Aspose.PDF for JavaScript v
 
 1. Select a PDF file for decrypting.
 1. Create a 'FileReader'.
-1. The 'AsposePdfDecrypt' function is executed.
+1. The [AsposePdfDecrypt](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfdecrypt/) function is executed.
 1. The name of the resulting file is set, in this example "ResultDecrypt.pdf".
 1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the 'DownloadFile' function generates a link and allows you to download the resulting file to the user's operating system.
+1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
 
 ```js
 

@@ -19,7 +19,7 @@ Check the code snippet  and follow the steps to extract text from your PDF:
 
 1. Select a PDF file to extract text.
 1. Create a 'FileReader' is to read the text.
-1. The 'AsposePdfExtractText' function is executed.
+1. The [AsposePdfExtractText](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfextracttext/) function is executed.
 1. Next, if the 'json.errorCode' is 0, then the 'json.extractText' will contain the extracted content. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, your file will have an error, then information about such an error will be contained in the 'json.errorText'. 
 1. As a result, you will receive a string with the extracted text from your PDF.
 

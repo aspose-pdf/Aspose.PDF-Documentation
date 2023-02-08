@@ -20,10 +20,10 @@ This JavaScript tool allows to merge two PDF files into a single PDF document us
 
 1. Select a PDF files for merging.
 1. Create a 'FileReader'.
-1. The 'AsposePdfMerge2Files' function is executed.
+1. The [AsposePdfMerge2Files](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfmerge2files/) function is executed.
 1. The name of the resulting file is set, in this example "ResultMerge.pdf".
 1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the 'DownloadFile' function generates a link and allows you to download the resulting file to the user's operating system.
+1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
 
 The following code snippet shows how to concatenate PDF files:
 

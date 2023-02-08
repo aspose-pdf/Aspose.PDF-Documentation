@@ -26,10 +26,10 @@ Check the code snippet, follow the steps, and solve your tasks of converting PDF
 
 1. Select a PDF file for converting.
 1. Create a 'FileReader'.
-1. The 'AsposePdfPagesToJpg' function is executed.
+1. The [AsposePdfPagesToJpg](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfpagestojpg/) function is executed.
 1. The name of the resulting file is set, in this example "ResultPdfToJpg{0:D2}.jpg".
 1. Next, if the 'json.errorCode' is 0, then your result File is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the 'DownloadFile' function generates a link and allows you to download the resulting file to the user's operating system.
+1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
 
 ```js
 
@@ -54,10 +54,10 @@ Check the code snippet, follow the steps, and solve your tasks of converting PDF
 
 1. Select a PDF file for converting.
 1. Create a 'FileReader'.
-1. The 'AsposePdfPagesToPng' function is executed.
+1. The [AsposePdfPagesToPng](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfpagestopng/) function is executed.
 1. The name of the resulting file is set, in this example "ResultPdfToPng{0:D2}.png".
 1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the 'DownloadFile' function generates a link and allows you to download the resulting file to the user's operating system.
+1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
 
 ```js
 
