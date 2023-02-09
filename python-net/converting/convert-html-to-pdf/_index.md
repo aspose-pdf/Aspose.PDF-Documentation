@@ -30,8 +30,8 @@ _Format_: **HTML**
 
 The following Python code sample shows how to convert an HTML document to a PDF.
 
-1. Create an instance of the [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/) class.
-2. Initialize [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object.
+1. Create an instance of the [HtmlLoadOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlloadoptions/) class.
+2. Initialize [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
 3. Save output PDF document by calling **Document.Save()** method.
 
 ```python

@@ -47,8 +47,8 @@ The following Python code snippet shows the process of converting a PDF file int
 
 <a name="csharp-pdf-to-doc"><strong>Steps: Convert PDF to DOC in Python</strong></a>
 
-1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object with the source PDF document.
-2. Save it to **SaveFormat.Doc** format by calling **Document.Save()** method.
+1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
+2. Save it to [SaveFormat.Doc](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) format by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 ```python
 
@@ -64,7 +64,7 @@ The following Python code snippet shows the process of converting a PDF file int
 
 ### Using the DocSaveOptions Class
 
-The [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class provides numerous properties that improve the process of converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can specify any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
+The [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) class provides numerous properties that improve the process of converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can specify any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
 
 ```python
 
@@ -104,8 +104,8 @@ The following Python code snippet shows the process of converting a PDF file int
 
 <a name="csharp-pdf-to-docx"><strong>Steps: Convert PDF to DOCX in Python</strong></a>
 
-1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object with the source PDF document.
-2. Save it to **SaveFormat.DocX** format by calling **Document.Save()** method.
+1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
+2. Save it to [SaveFormat.DocX](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) format by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 ```python
 
@@ -129,7 +129,7 @@ The following Python code snippet shows the process of converting a PDF file int
     document.save(output_pdf, save_options)
 ```
 
-The [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.
+The [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.
 
 {{% alert color="warning" %}}
 **Try to convert PDF to DOCX online**
