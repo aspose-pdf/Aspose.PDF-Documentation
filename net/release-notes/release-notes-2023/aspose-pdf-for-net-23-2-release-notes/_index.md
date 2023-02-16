@@ -42,7 +42,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.2.
 |PDFNET-53291|NullReferenceException thrown when validating pdf document|Bug|
 |PDFNET-45708|Problem with underline text|Bug|
 |PDFNET-41047|HTML to PDF - Exception during conversion|Bug|
-|PDFNET-41053|HTML to DPF - Exception during conversion|Bug|
+|PDFNET-41053|HTML to PDF - Exception during conversion|Bug|
 |PDFNET-43541|PDF to PNG - Extra space in resultant file|Bug|
 |PDFNET-52490|Converting a particular pdf document to docx raises out of memory exception under linux|Bug|
 |PDFNET-51684|Saving pdf to tiff shifted content/image to lower right|Bug|
@@ -76,7 +76,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.2.
 |PDFNET-38360|HTML to PDF: text around images is not being rendered correctly|Bug|
 |PDFNET-40257|HTML to PDF - Image is not being rendered in PDF file|Bug|
 |PDFNET-53313|HTML to PDF - Index was outside the bounds of the array when margins 36 for all sides|Bug|
-|PDFNET-50045|Merge of PDF documents does not display correct|Bug|
+|PDFNET-50045|Merge of PDF documents does not display correct document|Bug|
 |PDFNET-50382|HTML to PDF - Memory consumption issue|Bug|
 |PDFNET-51061|Saving PDF with FloatingBox at Windows Server 2019 throws exception|Bug|
 |PDFNET-38549|HTML Header text is being mirrored|Bug|
