@@ -82,6 +82,8 @@ This page contains release notes information for Aspose.PDF for .NET 23.2.
 |PDFNET-38549|HTML Header text is being mirrored|Bug|
 |PDFNET-38532|HTML to PDF - Line Heingt is ignored|Bug|
 |PDFNET-53613|Calculated fields are not updated when merging FDF to PDF|Bug|
+|PDFNET-53643|Cannot integrate Aspose.Pdf.Drawing due to compilation incompatibility issue|Bug|
+|PDFNET-50496|System.ArgumentException when converting SVG to PDF on Linux docker container|Bug|
 
 ## Public API and Backward Incompatible Changes
 
