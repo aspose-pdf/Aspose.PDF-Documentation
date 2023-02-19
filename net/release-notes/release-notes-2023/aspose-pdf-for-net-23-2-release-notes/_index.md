@@ -66,7 +66,6 @@ This page contains release notes information for Aspose.PDF for .NET 23.2.
 |PDFNET-53162|CheckboxField.Style property getter throws System.ArgumentException|Bug|
 |PDFNET-42097|Problem with PDF to PNG conversion. Output image renders with wrong scaling|Bug|
 |PDFNET-47445|Conversion to Image results in random lines|Bug|
-|PDFNET-51684|Saving pdf to tiff shifted content/image to lower right|Bug|
 |PDFNET-43541|PDF to PNG - Extra space in resultant file|Bug|
 |PDFNET-38646|LaTex to PDF - Exception during conversion|Bug|
 |PDFNET-38645|LaTex to PDF - Exception during conversion|Bug|
