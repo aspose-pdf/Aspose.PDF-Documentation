@@ -15,7 +15,7 @@ This page contains release notes information for Aspose.PDF for Java 23.2.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFJAVA-40266|PDFJAVA-40266 API is unable to detect underline|Enhancement|
+|PDFJAVA-40266|API is unable to detect underline|Enhancement|
 |PDFJAVA-42373|Opacity of watermark is increased on subsequent pages|Bug|
 |PDFJAVA-36502|Replace list of old enums based on int values into java standard enums.|Bug|
 |PDFJAVA-42407|PDF to Docx: Extra line is appearing|Bug|
