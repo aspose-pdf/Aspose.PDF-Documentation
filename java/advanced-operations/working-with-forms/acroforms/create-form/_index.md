@@ -46,7 +46,7 @@ public class ExamplesCreateForm {
         textBoxField.setPartialName("textbox1");
         textBoxField.setValue("Text Box");
 
-        // TextBoxField.Border = new Border(
+        // TextBoxField.Border
         Border border = new Border(textBoxField);
         border.setWidth(5);
         border.setDash(new Dash(1, 1));
