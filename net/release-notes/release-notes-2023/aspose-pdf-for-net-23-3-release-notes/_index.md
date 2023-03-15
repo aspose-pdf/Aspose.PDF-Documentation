@@ -50,6 +50,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.3.
 |PDFNET-47880|HTML to PDF - text is overlapped in table|Bug|
 |PDFNET-41253|HTML to PDF: Render large HTML contents into a single PDF page|Bug|
 |PDFNET-41124|PDF to PDF/A - Exception during conversion|Bug|
+|PDFNET-44939|PDF to PNG - output image is in bad quality and distorted|Bug|
 
 ## Public API and Backward Incompatible Changes
 
