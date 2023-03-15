@@ -23,7 +23,6 @@ This page contains release notes information for Aspose.PDF for .NET 23.3.
 | :- | :- | :- |
 |PDFNET-34836|Get structure of TOC from PDF file|Feature|
 |PDFNET-51871|Add resolution to image|Feature|
-|PDFNET-33395|Support AnnotationEditor.ImportAnnotationFromFdf (from FDF)|Feature|
 |PDFNET-49799|Aspose.PDF Flatten all the layers in resultant PDF|Enhancement|
 |PDFNET-51851|PDF to PDFA: Image improved quality|Enhancement|
 |PDFNET-53348|Merging PDF/UA results in non PDF/UA|Bug|
@@ -33,7 +32,6 @@ This page contains release notes information for Aspose.PDF for .NET 23.3.
 |PDFNET-42181|Converting PDF to PDFA causes exception|Bug|
 |PDFNET-46511|OutOfMemoryException while converting PDF to HTML|Bug|
 |PDFNET-51281|PngDevice.Process throws  EndOfStreamException|Bug|
-|PDFNET-33391|FDF to PDF conversion supports annotations, sticky notes and highlights etc|Bug|
 |PDFNET-47516|PDF to TIFF conversion exception on linux centOS environment|Bug|
 |PDFNET-48803|TIFF to PDF - output PDF has blank pages|Bug|
 |PDFNET-49118|PDF to JPEG/PNG conversion: multiple differences in the output|Bug|
