@@ -56,3 +56,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.3.
 * Property: Aspose.Pdf.TocInfo.CopyToOutlines
 
 ### Removed APIs
+
+### Discontinued Features
+ * Support for .NET Standard 2.1 has been discontinued.
+ * Support for .NET 5.0 has been discontinued.
