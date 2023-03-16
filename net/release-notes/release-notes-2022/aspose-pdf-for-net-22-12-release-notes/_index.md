@@ -77,3 +77,9 @@ This page contains release notes information for Aspose.PDF for .NET 22.12.
 
 ### Removed APIs
  * Method:Aspose.Pdf.Forms.DateField.AddImage(System.Drawing.Image)
+
+### Removed APIs
+ * Method:Aspose.Pdf.Forms.DateField.AddImage(System.Drawing.Image)
+
+### Discontinued Features
+ * Support for .NET 3.5 has been discontinued.
