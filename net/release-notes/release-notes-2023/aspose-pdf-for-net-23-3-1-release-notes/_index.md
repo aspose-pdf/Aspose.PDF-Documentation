@@ -21,7 +21,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.3.1
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFNET-54012|Release plugins Aspose.PdfForm, Aspose.PdfConverter Pdf to Html, Aspose.PdfConverter Pdf to Xlsx, Aspose.PdfOrganizer Rotate, Aspose.PdfExtrator for Images|Feature|
+|PDFNET-54012|Release plugins Aspose.PdfForm, Aspose.PdfConverter PDF to HTML, Aspose.PdfConverter PDF to XLSX, Aspose.PdfOrganizer Rotate, Aspose.PdfExtrator for Images|Feature|
 
 ## Public API and Backward Incompatible Changes
 
