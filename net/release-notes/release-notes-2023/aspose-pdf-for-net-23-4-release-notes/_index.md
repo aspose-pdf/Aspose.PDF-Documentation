@@ -59,6 +59,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.4.
 |PDFNET-51486|Regression: PDF to XPS Output covered with black and grey areas|Bug|
 |PDFNET-52617|PDF to PNG: Colors not rendered correctly|Bug|
 |PDFNET-43530|EMF to PDF - Output is different as compared to old generator|Bug|
+|PDFNET-52292|StackOverflowException is thrown while extracting images|Bug|
 
 ## Public API and Backward Incompatible Changes
 
