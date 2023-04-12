@@ -60,6 +60,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.4.
 |PDFNET-52617|PDF to PNG: Colors not rendered correctly|Bug|
 |PDFNET-43530|EMF to PDF - Output is different as compared to old generator|Bug|
 |PDFNET-52292|StackOverflowException is thrown while extracting images|Bug|
+|PDFNET-50822|API is unable to flatten the annotations in 50+ pages PDF|Bug|
 
 ## Public API and Backward Incompatible Changes
 
