@@ -21,6 +21,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.4.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
+|PDFNET-53492|Aspose.PDF for .NET 7|Feature|
 |PDFNET-49440|Aspose.Pdf 21.2: merged XPS file size decreased|Enhancement|
 |PDFNET-37871|Setting Form field value improved|Enhancement|
 |PDFNET-54025|Wrong symbols are extracted via TextFragmentAbsorber|Bug|
