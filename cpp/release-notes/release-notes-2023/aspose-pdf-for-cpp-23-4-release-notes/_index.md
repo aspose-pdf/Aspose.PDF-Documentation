@@ -23,9 +23,4 @@ Fixed loading TIFF images.
 
 ## Public API and Backward Incompatible Changes
 
-### Added APIs
-
-* Function: Aspose::Pdf::TocInfo::get_CopyToOutlines
-* Function: Aspose::Pdf::TocInfo::set_CopyToOutlines
-
 Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).
