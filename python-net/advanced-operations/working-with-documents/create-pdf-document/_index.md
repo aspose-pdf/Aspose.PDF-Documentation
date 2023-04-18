@@ -1,21 +1,21 @@
 ---
-title: Advanced operations
-linktitle: Advanced operations
+title: How to Create PDF using Python
+linktitle: Create PDF Document
 type: docs
-weight: 90
-url: /python-net/advanced-operations/
-description: Aspose.PDF for Python via .NET can perform simple and easy tasks and cope with more complex goals. Check the next section for advanced users and developers.
-lastmod: "2023-04-17"
+weight: 10
+url: /python-net/create-pdf-document/
+description: Create and format the PDF Document with Aspose.PDF for Python via .NET.
+lastmod: "2023-04-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Advanced operations with PDF via Python",
-    "alternativeHeadline": "Using Advanced Features in working with PDF via Python",
+    "headline": "How to Create PDF using Python",
+    "alternativeHeadline": "Create PDF document from scratch via Python",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -24,7 +24,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, python, advanced operations in pdf, create pdf, delete pdf, manipulate pdf",
+    "keywords": "pdf, python, dotnet, create pdf document",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -66,18 +66,38 @@ sitemap:
             }
         ]
     },
-    "url": "/python-net/advanced-operations/",
+    "url": "/python-net/create-pdf-document/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/python-net/advanced-operations/"
+        "@id": "/python-net/create-pdf-document/"
     },
-    "dateModified": "2023-04-13",
-    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers using Python via .NET."
+    "dateModified": "2022-02-04",
+    "description": "Create and format the PDF Document with Aspose.PDF for Python via .NET."
 }
 </script>
 
-**Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF as discussed in [Basic Operations](/pdf/python-net/basic-operations/), or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
+**Aspose.PDF for Python via .NET** is a PDF manipulation API that allows developers to create, load, modify, and convert PDF files directly from Python for .NET applications with just a few lines of code.
 
-You'll learn different ways to:
+## How to Create Simple PDF File
 
-- [Working with Documents](/pdf/python-net/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document
+To create a PDF using Python via .NET with Aspose.PDF, you can follow these steps:
+
+1. Create an object of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class
+1. Add a [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) object to the [Pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) collection of the Document object
+1. Add [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) to [Paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection of the page
+1. Save the resultant PDF document
+
+```python
+
+    import aspose.pdf as ap
+
+    # Initialize document object
+    document = ap.Document()
+    # Add page
+    page = document.pages.add()
+    # Add text to new page
+    page.paragraphs.add(ap.text.TextFragment("Hello World!"))
+    # Save updated PDF
+    document.save(output_pdf)
+```
+
