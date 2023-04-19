@@ -239,7 +239,7 @@ If you need to use any font other than the 14 core fonts supported by Adobe Read
 
 >Please note the embedded font must be installed on the host machine i.e. in case of the following code ‘Univers Condensed’ font is installed over the system.
 
-We use the property IsEmbedded of Font class to embed the font information into PDF file. Setting the value of this property to ‘True’ will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
+We use the property IsEmbedded of Font class to embed the font information into a PDF file. Setting the value of this property to `True` will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
 
 ```python
 
