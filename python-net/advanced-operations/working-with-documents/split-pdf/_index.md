@@ -166,7 +166,7 @@ The following Python code snippet shows you how to split PDF pages into individu
     "applicationCategory": "PDF Manipulation Library for Python",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
+    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
         "@type": "AggregateRating",

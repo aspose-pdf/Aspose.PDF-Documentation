@@ -152,7 +152,7 @@ The following code snippet shows how to delete a particular page from the PDF fi
     "applicationCategory": "PDF Manipulation Library for Python",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
+    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
         "@type": "AggregateRating",

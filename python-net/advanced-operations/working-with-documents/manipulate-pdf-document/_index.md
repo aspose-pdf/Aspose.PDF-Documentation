@@ -414,7 +414,7 @@ Aspose.PDF provides the function to flatten your PDF in Python with just few lin
     "applicationCategory": "PDF Manipulation Library for Python via .NET",
     "downloadUrl": "https://releases.aspose.com/pdf/python-net",
     "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
+    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
         "@type": "AggregateRating",

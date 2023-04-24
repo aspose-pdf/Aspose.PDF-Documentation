@@ -203,7 +203,7 @@ The source code, to obtain the output shown in the above figure, is given below 
     "applicationCategory": "PDF Manipulation Library for Python via .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
+    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
         "@type": "AggregateRating",
