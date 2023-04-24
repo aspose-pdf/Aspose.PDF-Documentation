@@ -147,7 +147,7 @@ This topic explains how to set the properties of the document window, viewer app
 
 1. Open the PDF file using the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 1. Set the Document object’s properties.
-1. Save the updated PDF file using the Save method.
+1. Save the updated PDF file using the save method.
 
 Properties available are:
 
@@ -213,7 +213,7 @@ Each is used and described in the code below. The following - code snippet shows
 
 ### Embedding Standard Type 1 Fonts
 
-Some PDF documents have fonts from a special Adobe font set. Fonts from this set are called “Standard Type 1 Fonts”. This set includes 14 fonts and embedding this type of fonts requires using of special flags i.e [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). Following is the code snippet which can be used to get a document with all fonts embedded including Standard Type 1 Fonts:
+Some PDF documents have fonts from a special Adobe font set. Fonts from this set are called “Standard Type 1 Fonts”. This set includes 14 fonts and embedding this type of fonts requires using of special flags i.e [embed_standard_fonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). Following is the code snippet which can be used to get a document with all fonts embedded including Standard Type 1 Fonts:
 
 ```python
 
@@ -239,7 +239,7 @@ If you need to use any font other than the 14 core fonts supported by Adobe Read
 
 >Please note the embedded font must be installed on the host machine i.e. in case of the following code ‘Univers Condensed’ font is installed over the system.
 
-We use the property IsEmbedded of Font class to embed the font information into PDF file. Setting the value of this property to ‘True’ will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
+We use the property 'is_embedded' to embed the font information into PDF file. Setting the value of this property to 'True' will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
 
 ```python
 
@@ -266,7 +266,7 @@ We use the property IsEmbedded of Font class to embed the font information into 
 
 ### Set Default Font Name while Saving PDF
 
-When a PDF document contains fonts, which are not available in the document itself and on the device, API replaces these fonts with the default font. When font is available (is installed on the device or is embedded into the document), output PDF should have the same font (should not be replaced with default font). The value of the default font should contain the name of the font (not the path to the font files). We have implemented a feature to set default font name while saving a document as PDF. Following code snippet can be used to set default font:
+When a PDF document contains fonts, which are not available in the document itself and on the device, API replaces these fonts with the default font. If the font is available (installed on the device or embedded into the document), the output PDF should have the same font (should not be replaced with the default font). The value of the default font should contain the name of the font (not the path to the font files). We have implemented a feature to set default font name while saving a document as PDF. Following code snippet can be used to set default font:
 
 ```python
 
@@ -284,7 +284,7 @@ When a PDF document contains fonts, which are not available in the document itse
 
 ### Get All Fonts from PDF Document
 
-In case you want to get all fonts from a PDF document, you can use FontUtilities.GetAllFonts() method provided in [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class. Please check following code snippet in order to get all fonts from an existing PDF document:
+In case you want to get all fonts from a PDF document, you can use [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) method provided in [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class. Please check following code snippet in order to get all fonts from an existing PDF document:
 
 ```python
 
@@ -298,9 +298,7 @@ In case you want to get all fonts from a PDF document, you can use FontUtilities
 
 ### Improve Fonts Embedding using FontSubsetStrategy
 
-The feature to embed the fonts as a subset can be accomplished by using the IsSubset property, but sometimes you want to reduce a fully embedded font set to only subsets that are used in the document. Aspose.Pdf.Document has property FontUtilities which includes method SubsetFonts(FontSubsetStrategy subsetStrategy). In the method SubsetFonts(), the parameter subsetStrategy helps to tune the subset strategy. FontSubsetStrategy supports two following variants of font subsetting.
-
-Following code snippet shows how to set FontSubsetStrategy:
+Following code snippet shows how to set [FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) used [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) property:
 
 ```python
 
@@ -357,7 +355,7 @@ The following code snippet shows how to get a PDF file’s zoom factor.
 
 ### Setting Print Dialog Preset Properties
 
-Aspoose.PDF allows setting the Print Dialog Preset properties of a PDF document. It allows you to change the DuplexMode property for a PDF document which is set to simplex by default. This can be achieved using two different methodologies as shown below.
+Aspoose.PDF allows setting the [DUPLEX_FLIP_LONG_EDGE](https://reference.aspose.com/pdf/python-net/aspose.pdf/printduplex/#members) members of a PDF document. It allows you to change the DuplexMode property for a PDF document which is set to simplex by default. This can be achieved using two different methodologies as shown below.
 
 ```python
 

@@ -84,7 +84,7 @@ The following code snippet shows the process for converting PDF file into XLS or
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
 2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-3. Save it to **XLSX** format specifying **.xlsx extension** by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+3. Save it to **XLSX** format specifying **.xlsx extension** by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
 ```python
 
@@ -130,7 +130,7 @@ When exporting a PDF file with a lot of pages to XLS, each page is exported to a
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
 2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) with **MinimizeTheNumberOfWorksheets = true**.
-3. Save it to **XLS** or **XLSX** format having single worksheet by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+3. Save it to **XLS** or **XLSX** format having single worksheet by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
 ```python
 
@@ -160,7 +160,7 @@ Conversion to CSV format performs in the same way as above. All is what you need
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
 2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) with **Format = ExcelSaveOptions.ExcelFormat.CSV**
-3. Save it to **CSV** format by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)* method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+3. Save it to **CSV** format by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)* method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
 
 ```python
@@ -185,7 +185,7 @@ Conversion to CSV format performs in the same way as above. All is what you need
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
 2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) with **Format = ExcelSaveOptions.ExcelFormat.ODS**
-3. Save it to **ODS** format by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+3. Save it to **ODS** format by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
 
 Conversion to ODS format performs in the same way as all other formats.

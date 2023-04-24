@@ -100,7 +100,7 @@ Optimization, or linearization for Web, refers to the process of making a PDF fi
 
 1. Open the input document in an [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
 1. Use the [Optimize](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
-1. Save the optimized document using the [Save](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
+1. Save the optimized document using the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 The following code snippet shows how to optimize a PDF document for the web.
 

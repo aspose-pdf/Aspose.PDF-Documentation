@@ -77,17 +77,11 @@ sitemap:
 }
 </script>
 
-## **Manipulate PDF Document in Python**
+## Manipulate PDF Document in Python
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)
 
-To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class Validate method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type PdfFormat enumeration : PDF_A_1A or PDF_A_1B.
-
-{{% alert color="primary" %}}
-
-The output XML format is custom Aspose format. The XML contains a collection of tags with the name Problem; each tag contains the details of a particular problem. The Problem tag’s ObjectID attribute represents the ID of the particular object this problem is related to. The Clause attribute represents a corresponding rule in the PDF specification.
-
-{{% /alert %}}
+To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class [validate](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type PdfFormat enumeration : PDF_A_1A or PDF_A_1B.
 
 The following code snippet shows you how to validate PDF document for PDF/A-1A.
 
@@ -121,9 +115,7 @@ The following code snippet shows you how to validate PDF document for PDF/A-1b.
 
 TOC in PDF stands for "Table of Contents." It is a feature that allows users to quickly navigate through a document by providing an overview of its sections and headings. 
 
-Aspose.PDF API allows you to add a table of content either when creating a PDF, or to an existing file. The ListSection class in the Aspose.Pdf.Generator namespace allows you to create a table of contents when creating a PDF from scratch. To add headings, which are elements of the TOC, use the Aspose.Pdf.Generator.Heading class.
-
-To add a TOC to an existing PDF file, use the Heading class in the Aspose.Pdf namespace. The Aspose.Pdf namespace can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace. The following code snippet shows how to create a table of contents inside an existing PDF file using Python via .NET.
+To add a TOC to an existing PDF file, use the Heading class in the [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) namespace. The [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) namespace can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace. The following code snippet shows how to create a table of contents inside an existing PDF file using Python via .NET.
 
 ```python
 
@@ -172,7 +164,7 @@ To add a TOC to an existing PDF file, use the Heading class in the Aspose.Pdf na
 
 ### Set different TabLeaderType for different TOC Levels
 
-Aspose.PDF for Python also allows setting different TabLeaderType for different TOC levels. You need to set LineDash property of FormatArray with the appropriate value of TabLeaderType enum as following.
+Aspose.PDF for Python also allows setting different TabLeaderType for different TOC levels. You need to set [line_dash](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) property of [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/).
 
 ```python
 
@@ -234,7 +226,7 @@ Aspose.PDF for Python also allows setting different TabLeaderType for different 
 
 ### Hide Page Numbers in TOC
 
-In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) property of [TOCInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) Class as false. Please check following code snippet to hide page numbers in the table of contents:
+In case if you do not want to display page numbers, along with the headings in TOC, you can use [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) property of [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) Class as false. Please check following code snippet to hide page numbers in the table of contents:
 
 ```python
 
@@ -278,7 +270,7 @@ In case if you do not want to display page numbers, along with the headings in T
 
 ### Customize Page Numbers while adding TOC
 
-It is common to customize the page numbering in the TOC while adding TOC in a PDF document. For example, we may need to add some prefix before page number like P1, P2, P3 and so on. In such a case, Aspose.PDF for Python provides [PageNumbersPrefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) property of [TOCInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) class that can be used to customize page numbers as shown in the following code sample.
+It is common to customize the page numbering in the TOC while adding TOC in a PDF document. For example, we may need to add some prefix before page number like P1, P2, P3 and so on. In such a case, Aspose.PDF for Python provides [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) property of [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) class that can be used to customize page numbers as shown in the following code sample.
 
 ```python
 
@@ -320,8 +312,6 @@ It is common to customize the page numbering in the TOC while adding TOC in a PD
 ## How to set PDF expiry date
 
 We apply access privileges on PDF files so that a certain group of users can access particular features/objects of PDF documents. In order to restrict the PDF file access, we usually apply encryption and we may have a requirement to set PDF file expiration, so that the user accessing/viewing the document gets a valid prompt regarding PDF file expiry.
-
-In order to accomplish the above stated requirement, we can use *JavascriptAction* object. Please take a look over the following code snippet.
 
 ```python
 

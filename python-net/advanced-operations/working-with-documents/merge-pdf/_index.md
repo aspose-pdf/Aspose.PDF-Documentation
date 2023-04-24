@@ -91,9 +91,9 @@ This article shows how to merge multiple PDF files into a single PDF document us
 To concatenate two PDF files:
 
 1. Create two [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)  objects, each containing one of the input PDF files.
-1. Then call the [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) collection’s Add method for the Document object you want to add the other PDF file to.
-1. Pass the PageCollection collection of the second Document object to the first PageCollection collection’s Add method.
-1. Finally, save the output PDF file using the [Save](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
+1. Then call the [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) collection’s [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) method for the Document object you want to add the other PDF file to.
+1. Pass the PageCollection collection of the second Document object to the first PageCollection collection’s [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) method.
+1. Finally, save the output PDF file using the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 The following code snippet shows how to concatenate PDF files.
 
@@ -124,7 +124,7 @@ The following code snippet shows how to concatenate PDF files.
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
     "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
         "@type": "Organization",

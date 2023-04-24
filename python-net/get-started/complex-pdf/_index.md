@@ -19,11 +19,11 @@ If we create a document from scratch we need to follow certain steps:
 1. Add a [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) to the document object. So, now our document will have one page.
 1. Add a [Image](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/) to the Page.
 1. Create a [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) for header. For the header we will use Arial font with font size 24pt and center alignment.
-1. Add header to the page [Paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. Add header to the page [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
 1. Create a [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) for description. For the description we will use Arial font with font size 24pt and center alignment.
 1. Add (description) to the page Paragraphs.
 1. Create a table, add table properties.
-1. Add (table) to the page [Paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. Add (table) to the page [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
 1. Save a document "Complex.pdf".
 
 ```python

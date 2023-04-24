@@ -78,7 +78,7 @@ sitemap:
 
 Headings are the important parts of any document. Writers always try to make headings more prominent and meaningful to its readers. If there are more than one headings in a document, a writer has several options to organize these headings. One of the most common approach to organize headings is to write headings in Numbering Style.
 
-[Aspose.PDF for Python via .NET](/pdf/python-net/) offers many pre-defined numbering styles. These pre-defined numbering styles are stored in an enumeration, NumberingStyle. The pre-defined values of NumberingStyle enumeration and their descriptions are given below:
+[Aspose.PDF for Python via .NET](/pdf/python-net/) offers many pre-defined numbering styles. These pre-defined numbering styles are stored in an enumeration, [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). The pre-defined values of NumberingStyle enumeration and their descriptions are given below:
 
 |**Heading Types**|**Description**|
 | :- | :- |
@@ -87,7 +87,7 @@ Headings are the important parts of any document. Writers always try to make hea
 |NumeralsRomanLowercase|Roman lower type, for example, i,i.ii, ...|
 |LettersUppercase|English upper type, for example, A,A.B, ...|
 |LettersLowercase|English lower type, for example, a,a.b, ...|
-The **Style** property of **Aspose.PDF.Heading** class is used to set the numbering styles of the headings.
+The [style](https://reference.aspose.com/pdf/python-net/aspose.pdf/heading/#properties) property of [Heading](https://reference.aspose.com/pdf/python-net/aspose.pdf/heading/) class is used to set the numbering styles of the headings.
 
 |**Figure: Pre-defined numbering styles**|
 | :- |
@@ -154,13 +154,13 @@ The source code, to obtain the output shown in the above figure, is given below 
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
     "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
         "@type": "Organization",
         "name": "Aspose.PDF",
         "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
         "alternateName": "Aspose",
         "sameAs": [
             "https://facebook.com/aspose.pdf/",

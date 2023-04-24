@@ -48,7 +48,7 @@ The following Python code snippet shows the process of converting a PDF file int
 <a name="csharp-pdf-to-doc"><strong>Steps: Convert PDF to DOC in Python</strong></a>
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
-2. Save it to [SaveFormat.Doc](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) format by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
+2. Save it to [SaveFormat](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) format by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 ```python
 
@@ -105,7 +105,7 @@ The following Python code snippet shows the process of converting a PDF file int
 <a name="csharp-pdf-to-docx"><strong>Steps: Convert PDF to DOCX in Python</strong></a>
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
-2. Save it to [SaveFormat.DocX](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) format by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
+2. Save it to [SaveFormat](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) format by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 ```python
 

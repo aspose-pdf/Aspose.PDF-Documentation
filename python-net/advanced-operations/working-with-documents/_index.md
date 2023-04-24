@@ -95,13 +95,13 @@ You are able to do the following:
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
     "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
         "@type": "Organization",
         "name": "Aspose.PDF",
         "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
         "alternateName": "Aspose",
         "sameAs": [
             "https://facebook.com/aspose.pdf/",

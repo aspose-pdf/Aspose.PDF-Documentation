@@ -83,8 +83,8 @@ sitemap:
 To create a PDF using Python via .NET with Aspose.PDF, you can follow these steps:
 
 1. Create an object of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class
-1. Add a [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) object to the [Pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) collection of the Document object
-1. Add [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) to [Paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection of the page
+1. Add a [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) object to the [pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) collection of the Document object
+1. Add [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) to [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection of the page
 1. Save the resultant PDF document
 
 ```python

@@ -13,7 +13,7 @@ sitemap:
 
 ## Save PDF document to file system
 
-You can save the created or manipulated PDF document to file system using [Save](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
+You can save the created or manipulated PDF document to file system using [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 
 ```python
 
@@ -46,7 +46,7 @@ PDF/A differs from PDF in that it prohibits features not suitable for long-term 
 
 PDF/X is a subset of the PDF ISO standard. The purpose of PDF/X is to facilitate graphics exchange, and it therefore has a series of printing-related requirements which do not apply to standard PDF files.
 
-In both cases, the [Save](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method is used to store the documents, while the documents must be prepared using the [Convert](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
+In both cases, the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method is used to store the documents, while the documents must be prepared using the [convert](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 ```python
 

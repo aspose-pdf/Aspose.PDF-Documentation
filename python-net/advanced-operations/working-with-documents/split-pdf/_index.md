@@ -89,9 +89,10 @@ This topic shows how to split PDF pages into individual PDF files in your Python
 
 1. Loop through the pages of PDF document through the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object's [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) collection
 1. For each iteration, create a new Document object and add the individual [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) object into the empty document
-1. Save the new PDF using [Save](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method
+1. Save the new PDF using [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method
 
 ## Split PDF into multiple files or separate pdfs in Python
+
 The following Python code snippet shows you how to split PDF pages into individual PDF files.
 
 ```python

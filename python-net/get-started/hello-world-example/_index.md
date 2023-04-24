@@ -20,8 +20,8 @@ Below code snippet follows these steps:
 1. Instantiate a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object
 1. Add a [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) to document object
 1. Create a [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) object
-1. Add TextFragment to [Paragraph](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection of the page
-1. [Save](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) resultant PDF document
+1. Add TextFragment to [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection of the page
+1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) resultant PDF document
 
 Following code snippet is a "Hello World" program to exhibit working of Aspose.PDF for Python via .NET API.
 
