@@ -2,7 +2,7 @@
 title: Add watermark to PDF using Python
 linktitle: Add watermark
 type: docs
-weight: 90
+weight: 40
 url: /python-net/add-watermarks/
 description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the Python.
 lastmod: "2023-04-17"

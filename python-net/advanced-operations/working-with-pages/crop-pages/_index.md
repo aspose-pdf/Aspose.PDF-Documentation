@@ -2,7 +2,7 @@
 title: Crop PDF Pages programmatically Python
 linktitle: Crop Pages
 type: docs
-weight: 80
+weight: 70
 url: /python-net/crop-pages/
 description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for Python via .NET.
 lastmod: "2023-04-17"

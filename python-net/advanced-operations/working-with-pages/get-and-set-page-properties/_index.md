@@ -2,7 +2,7 @@
 title: Get and Set Page Properties using Python
 linktitle: Get and Set Page Properties
 type: docs
-weight: 120
+weight: 90
 url: /python-net/get-and-set-page-properties/
 description: This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties.
 lastmod: "2023-04-17"

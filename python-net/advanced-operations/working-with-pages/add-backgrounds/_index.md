@@ -2,7 +2,7 @@
 title: Add background to PDF with Python
 linktitle: Add backgrounds
 type: docs
-weight: 110
+weight: 20
 url: /python-net/add-backgrounds/
 description: Add background image to the your PDF file with Python. Use the BackgroundArtifact class.
 lastmod: "2023-04-17"

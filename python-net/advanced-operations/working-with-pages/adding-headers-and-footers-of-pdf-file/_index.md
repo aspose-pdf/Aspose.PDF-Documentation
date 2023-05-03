@@ -2,7 +2,7 @@
 title: Add Header and Footer to PDF using Python
 linktitle: Add Header and Footer to PDF
 type: docs
-weight: 70
+weight: 50
 url: /python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Python via .NET allows you to add headers and footers to your PDF file using TextStamp class.
 lastmod: "2023-04-17"

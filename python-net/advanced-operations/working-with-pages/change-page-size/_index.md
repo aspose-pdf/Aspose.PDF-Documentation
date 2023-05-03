@@ -2,7 +2,7 @@
 title: Change PDF Page Size with Python
 linktitle: Change PDF Page Size
 type: docs
-weight: 40
+weight: 60
 url: /python-net/change-page-size/
 description: Change Page Size from your PDF document using Aspose.PDF for Python via .NET library.
 lastmod: "2023-04-17"
