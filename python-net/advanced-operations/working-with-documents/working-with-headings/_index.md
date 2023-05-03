@@ -1,6 +1,7 @@
 ---
 title: Working with Headings in PDF
 type: docs
+weight: 40
 url: /python-net/working-with-headings/
 description: Create numbering in heading your PDF document with Python. Aspose.PDF for Python via .NET offers different kinds of numbering styles.
 lastmod: "2023-04-17"
