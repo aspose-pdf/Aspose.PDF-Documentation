@@ -2,7 +2,7 @@
 title: Decrypt PDF using JavaScript
 linktitle: Decrypt PDF File
 type: docs
-weight: 80
+weight: 40
 url: /javascript-cpp/decrypt-pdf/
 description: Decrypt PDF File with Aspose.PDF for JavaScript via C++.
 lastmod: "2022-12-15"
