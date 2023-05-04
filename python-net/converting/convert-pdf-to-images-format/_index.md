@@ -64,7 +64,7 @@ There are several classes in the library that allow you to use a virtual device 
 
 **Aspose.PDF for Python** makes a possible to convert PDF Pages to TIFF images.
 
-The [TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) (based on DocumentDevice) class allows you to convert PDF pages to TIFF images. This class provides a method named [`Process`](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) which allows you to convert all the pages in a PDF file to a single TIFF image.
+The [TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) (based on DocumentDevice) class allows you to convert PDF pages to TIFF images. This class provides a method named [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) which allows you to convert all the pages in a PDF file to a single TIFF image.
 
 {{% alert color="success" %}}
 **Try to convert PDF to TIFF online**
@@ -82,7 +82,7 @@ Aspose.PDF for Python explain how to convert all pages in a PDF file to a single
 
 1. Create an object of the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 2. Create [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) and [TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) objects
-3. Call the [TiffDevice.Process()](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) method to convert the PDF document to TIFF.
+3. Call the [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) method to convert the PDF document to TIFF.
 4. To set the output file's properties, use the [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) class.
 
 The following code snippet shows how to convert all the PDF pages to a single TIFF image.
@@ -124,7 +124,7 @@ The following code snippet shows how to convert all the PDF pages to a single TI
 
 Let's take a look at how to convert a PDF page to an image.
 
-[BmpDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/) class provides a method named [Process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/#methods) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
+[BmpDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/) class provides a method named [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/#methods) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
 
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
