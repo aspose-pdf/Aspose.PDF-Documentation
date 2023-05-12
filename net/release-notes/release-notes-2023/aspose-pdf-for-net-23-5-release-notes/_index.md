@@ -79,19 +79,20 @@ This page contains release notes information for Aspose.PDF for .NET 23.5.
 |PDFNET-51927|Regression: HTML to PDF layout issues with selected options|Bug|
 |PDFNET-52184|HTML to PDF conversion removes first character after dashes|Bug|
 |PDFNET-40856|PDF to Image results incorrect image|Bug|
+|PDFNET-53027|PDF to TIFF: Numbers not rendered correctly if TextAbsrober is used|Bug|
 
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
 * Property:Aspose.Pdf.Annotations.RedactionAnnotation.FontSize System.Single
-* Type:Aspose.Pdf.Engine.Presentation.Primitives.LineCap 
-* Field:Aspose.Pdf.Engine.Presentation.Primitives.LineCap.ButtCap 
-* Field:Aspose.Pdf.Engine.Presentation.Primitives.LineCap.RoundCap 
-* Field:Aspose.Pdf.Engine.Presentation.Primitives.LineCap.SquareCap 
-* Type:Aspose.Pdf.Engine.Presentation.Primitives.LineJoin 
-* Field:Aspose.Pdf.Engine.Presentation.Primitives.LineJoin.MitterJoin 
-* Field:Aspose.Pdf.Engine.Presentation.Primitives.LineJoin.RoundJoin 
-* Field:Aspose.Pdf.Engine.Presentation.Primitives.LineJoin.BevelJoin
+* Type:Aspose.Pdf.Operators.LineCap 
+* Field:Aspose.Pdf.Operators.LineCap.ButtCap 
+* Field:Aspose.Pdf.Operators.LineCap.RoundCap 
+* Field:Aspose.Pdf.Operators.LineCap.SquareCap 
+* Type:Aspose.Pdf.Operators.LineJoin 
+* Field:Aspose.Pdf.Operators.LineJoin.MitterJoin 
+* Field:Aspose.Pdf.Operators.LineJoin.RoundJoin 
+* Field:Aspose.Pdf.Operators.LineJoin.BevelJoin
 * Method:Aspose.Pdf.OperatorCollection.ResumeUpdate(System.Boolean) System.Void
 * Method:Aspose.Pdf.Operators.EOClip.#ctor System.Void
 * Method:Aspose.Pdf.Operators.EOFillStroke.#ctor System.Void
@@ -116,11 +117,11 @@ This page contains release notes information for Aspose.PDF for .NET 23.5.
 * Property:Aspose.Pdf.Operators.SetColor.B System.Double
 * Property:Aspose.Pdf.Operators.SetGray.Gray System.Double
 * Property:Aspose.Pdf.Operators.SetGrayStroke.Gray System.Double
-* Method:Aspose.Pdf.Operators.SetLineCap.#ctor(Aspose.Pdf.Engine.Presentation.Primitives.LineCap) System.Void
-* Property:Aspose.Pdf.Operators.SetLineCap.Cap Aspose.Pdf.Engine.Presentation.Primitives.LineCap
+* Method:Aspose.Pdf.Operators.SetLineCap.#ctor(Aspose.Pdf.Operators.LineCap) System.Void
+* Property:Aspose.Pdf.Operators.SetLineCap.Cap Aspose.Pdf.Operators.LineCap
 * Method:Aspose.Pdf.Operators.SetLineJoin.#ctor System.Void
-* Method:Aspose.Pdf.Operators.SetLineJoin.#ctor(Aspose.Pdf.Engine.Presentation.Primitives.LineJoin) System.Void
-* Property:Aspose.Pdf.Operators.SetLineJoin.Join Aspose.Pdf.Engine.Presentation.Primitives.LineJoin
+* Method:Aspose.Pdf.Operators.SetLineJoin.#ctor(Aspose.Pdf.Operators.LineJoin) System.Void
+* Property:Aspose.Pdf.Operators.SetLineJoin.Join Aspose.Pdf.Operators.LineJoin
 * Property:Aspose.Pdf.Operators.SetRGBColor.R System.Double
 * Property:Aspose.Pdf.Operators.SetRGBColor.G System.Double
 * Property:Aspose.Pdf.Operators.SetRGBColor.B System.Double
