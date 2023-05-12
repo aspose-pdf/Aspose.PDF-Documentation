@@ -69,6 +69,16 @@ This page contains release notes information for Aspose.PDF for .NET 23.5.
 |PDFNET-51838|PDF to TIFF: Out of memory exception|Bug|
 |PDFNET-51399|PDF to TIFF: missing text|Bug|
 |PDFNET-51072|PDF to JPG: output not as expected|Bug|
+|PDFNET-52255|Issue while rendering PDF into PNG|Bug|
+|PDFNET-44191|Incorrect HTML to PDF rendering|Bug|
+|PDFNET-45372|HTML to PDF - Specified Page Height/Width are ignored in output|Bug|
+|PDFNET-41565|HTML to PDF: API throws NullReferenceException while applying external CSS|Bug|
+|PDFNET-40004|HTML to PDF: Width and Height property of HtmlLoadOptions.PageInfo is not being honored|Bug|
+|PDFNET-43422|HTML to PDF - Issue while inserting Rotated content in PDF|Bug|
+|PDFNET-52085|Aspose.Pdf 22.6: Converting PDF to grayscale takes too much time|Bug|
+|PDFNET-51927|Regression: HTML to PDF layout issues with selected options|Bug|
+|PDFNET-52184|HTML to PDF conversion removes first character after dashes|Bug|
+|PDFNET-40856|PDF to Image results incorrect image|Bug|
 
 ## Public API and Backward Incompatible Changes
 
