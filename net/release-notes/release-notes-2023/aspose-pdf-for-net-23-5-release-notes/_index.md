@@ -80,6 +80,8 @@ This page contains release notes information for Aspose.PDF for .NET 23.5.
 |PDFNET-52184|HTML to PDF conversion removes first character after dashes|Bug|
 |PDFNET-40856|PDF to Image results incorrect image|Bug|
 |PDFNET-53027|PDF to TIFF: Numbers not rendered correctly if TextAbsrober is used|Bug|
+|PDFNET-47939|On conversion to JPG an image in the output document is missing|Bug|
+|PDFNET-45394|Problem converting PDF to JPG|Bug|
 
 ## Public API and Backward Incompatible Changes
 
