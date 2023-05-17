@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Aspose.PDF for .NET Documentation
 linktitle: Aspose.PDF for .NET
 second_title: Aspose.PDF for .NET
 type: docs
@@ -17,7 +17,7 @@ sitemap:
 ---
 ![Aspose.PDF for .NET logo image](aspose_pdf-for-net.png)
 
-<h2>Welcome to Aspose.PDF for .NET</h2>
+## Welcome to Aspose.PDF for .NET
 
 {{% alert color="primary" %}}
 
@@ -25,7 +25,7 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 
 {{% /alert %}}
 
-<h2>Chapters</h2>
+## Chapters
 
 - [What's new](/pdf/net/whatsnew/)
 - [Overview](/pdf/net/overview/)
@@ -37,7 +37,7 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 - [Showcases](/pdf/net/showcases/)
 - [Release Notes](/pdf/net/release-notes/)
 
-<h2>Aspose.PDF for .NET Resources</h2>
+## Aspose.PDF for .NET Resources
 
 The following are the links to some useful resources you may need to accomplish your tasks.
 

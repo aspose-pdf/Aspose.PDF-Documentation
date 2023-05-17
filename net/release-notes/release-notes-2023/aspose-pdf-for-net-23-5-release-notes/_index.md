@@ -30,8 +30,8 @@ This page contains release notes information for Aspose.PDF for .NET 23.5.
 |PDFNET-54489|Some Page Content Operators throw exceptions when called ToString method|Bug|
 |PDFNET-53914|Empty color is black for watermark in PDF files.|Bug|
 |PDFNET-52922|Throws NullReferenceException when setting TextFragment.Text|Bug|
-|PDFNET-53031|Temp files are generated while converting PDF to DOCX [Regression]|Bug|
-|PDFNET-52420|100 000+ temp files are generated while converting PDF to DOCX [Regression]|Bug|
+|PDFNET-53031|Temp files are generated while converting PDF to DOCX (Regression)|Bug|
+|PDFNET-52420|100 000+ temp files are generated while converting PDF to DOCX (Regression)|Bug|
 |PDFNET-54494|Document optimizing turns PDF to blank|Bug|
 |PDFNET-53925|Using TextStamp results in large font|Bug|
 |PDFNET-53926|Cannot save document that has an active PDF Document Signature|Bug|
@@ -86,9 +86,10 @@ This page contains release notes information for Aspose.PDF for .NET 23.5.
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
+
 * Property:Aspose.Pdf.Annotations.RedactionAnnotation.FontSize System.Single
-* Type:Aspose.Pdf.Operators.LineCap 
-* Field:Aspose.Pdf.Operators.LineCap.ButtCap 
+* Type:Aspose.Pdf.Operators.LineCap
+* Field:Aspose.Pdf.Operators.LineCap.ButtCap
 * Field:Aspose.Pdf.Operators.LineCap.RoundCap 
 * Field:Aspose.Pdf.Operators.LineCap.SquareCap 
 * Type:Aspose.Pdf.Operators.LineJoin 
@@ -134,8 +135,8 @@ This page contains release notes information for Aspose.PDF for .NET 23.5.
 * Method:Aspose.Pdf.Page.HasVectorGraphics System.Boolean
 * Type:Aspose.Pdf.Plugins.CheckBoxFieldCreateOptions 
 * Method:Aspose.Pdf.Plugins.CheckBoxFieldCreateOptions.#ctor(System.Int32,Aspose.Pdf.Rectangle) System.Void
-* Property:Aspose.Pdf.Plugins.CheckBoxFieldCreateOptions.Checked System.Nullable`1[[System.Boolean]]
-* Property:Aspose.Pdf.Plugins.CheckBoxFieldCreateOptions.Style System.Nullable`1[[Aspose.Pdf.Forms.BoxStyle]]
+* Property:Aspose.Pdf.Plugins.CheckBoxFieldCreateOptions.Checked System.Nullable`1((System.Boolean))
+* Property:Aspose.Pdf.Plugins.CheckBoxFieldCreateOptions.Style System.Nullable`1((Aspose.Pdf.Forms.BoxStyle))
 * Type:Aspose.Pdf.Plugins.Generator.PdfGeneratorTableBuilder 
 * Method:Aspose.Pdf.Plugins.Generator.PdfGeneratorTableBuilder.AddRow Aspose.Pdf.Plugins.Generator.PdfGeneratorTableRowBuidler
 * Method:Aspose.Pdf.Plugins.Generator.PdfGeneratorTableBuilder.AddTable Aspose.Pdf.Plugins.Generator.PdfGeneratorTableBuilder
@@ -151,14 +152,14 @@ This page contains release notes information for Aspose.PDF for .NET 23.5.
 * Method:Aspose.Pdf.Plugins.PdfFormFlattenFieldsOptions.#ctor(System.Collections.Generic.HashSet{System.Int32}) System.Void
 * Method:Aspose.Pdf.Plugins.PdfFormFlattenFieldsOptions.#ctor(System.Int32) System.Void
 * Method:Aspose.Pdf.Plugins.PdfFormFlattenFieldsOptions.#ctor(System.Int32,System.Int32) System.Void
-* Property:Aspose.Pdf.Plugins.PdfFormFlattenFieldsOptions.GetPageNumbers System.Collections.Generic.HashSet`1[[System.Int32]]
+* Property:Aspose.Pdf.Plugins.PdfFormFlattenFieldsOptions.GetPageNumbers System.Collections.Generic.HashSet`1((System.Int32))
 * Type:Aspose.Pdf.Plugins.PdfGenerator 
 * Method:Aspose.Pdf.Plugins.PdfGenerator.#ctor System.Void
 * Method:Aspose.Pdf.Plugins.PdfGenerator.Process(Aspose.Pdf.Plugins.IPluginOptions) Aspose.Pdf.Plugins.ResultContainer
 * Method:Aspose.Pdf.Plugins.PdfGenerator.Dispose System.Void
 * Type:Aspose.Pdf.Plugins.PdfGeneratorOptions 
-* Property:Aspose.Pdf.Plugins.PdfGeneratorOptions.DataCollection System.Collections.Generic.List`1[[Aspose.Pdf.Plugins.IDataSource]]
-* Property:Aspose.Pdf.Plugins.PdfGeneratorOptions.SaveTargetsCollection System.Collections.Generic.List`1[[Aspose.Pdf.Plugins.IDataSource]]
+* Property:Aspose.Pdf.Plugins.PdfGeneratorOptions.DataCollection System.Collections.Generic.List`1((Aspose.Pdf.Plugins.IDataSource))
+* Property:Aspose.Pdf.Plugins.PdfGeneratorOptions.SaveTargetsCollection System.Collections.Generic.List`1((Aspose.Pdf.Plugins.IDataSource))
 * Method:Aspose.Pdf.Plugins.PdfGeneratorOptions.AddDataSource(Aspose.Pdf.Plugins.IDataSource) System.Void
 * Method:Aspose.Pdf.Plugins.PdfGeneratorOptions.AddSaveDataSource(Aspose.Pdf.Plugins.IDataSource) System.Void
 * Type:Aspose.Pdf.Plugins.PdfGeneratorTOCOptions 
@@ -173,7 +174,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.5.
 * Method:Aspose.Pdf.Plugins.PdfImage.Process(Aspose.Pdf.Plugins.IPluginOptions) Aspose.Pdf.Plugins.ResultContainer
 * Method:Aspose.Pdf.Plugins.PdfImage.Dispose System.Void
 * Type:Aspose.Pdf.Plugins.PdfImageOptions 
-* Property:Aspose.Pdf.Plugins.PdfImageOptions.DataCollection System.Collections.Generic.List`1[[Aspose.Pdf.Plugins.IDataSource]]
+* Property:Aspose.Pdf.Plugins.PdfImageOptions.DataCollection System.Collections.Generic.List`1((Aspose.Pdf.Plugins.IDataSource))
 * Property:Aspose.Pdf.Plugins.PdfImageOptions.OperationName System.String
 * Method:Aspose.Pdf.Plugins.PdfImageOptions.AddDataSource(Aspose.Pdf.Plugins.IDataSource) System.Void
 * Type:Aspose.Pdf.Plugins.PdfImageToJpegOptions 
