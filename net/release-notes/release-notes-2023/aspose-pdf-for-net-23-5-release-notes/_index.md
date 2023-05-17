@@ -1,7 +1,7 @@
 ---
 title: Aspose.PDF for .NET 23.5 Release Notes
 linktitle: Aspose.PDF for .NET 23.5
-* Type: docs
+type: docs
 weight: 120
 url: /net/aspose-pdf-for-net-23-5-release-notes/
 lastmod: "2023-05-12"
