@@ -33,8 +33,8 @@ Using Aspose.PDF for JavaScript in your project gives you the following profits:
 - [Add a image to PDF file](/pdf/javascript-cpp/add-image-to-pdf/)
 - [Split PDF to two files](/pdf/javascript-cpp/split-pdf/)
 - [Merge two files to PDF](/pdf/javascript-cpp/merge-pdf/)
-- [Encrypt PDF documents](/pdf/javascript-cpp/encrypt-decrypt-pdf/)
-- [Decrypt PDF documents](/pdf/javascript-cpp/encrypt-decrypt-pdf/)
+- [Encrypt PDF documents](/pdf/javascript-cpp/encrypt-pdf/)
+- [Decrypt PDF documents](/pdf/javascript-cpp/decrypt-pdf/)
 
 ## Conversion Features
 

@@ -3,9 +3,9 @@ title: Add Image stamps in PDF using JavaScript via C++
 linktitle: Image stamps in PDF File
 type: docs
 weight: 60
-url: /javascript-cpp/add-stamp-to-pdf/
+url: /javascript-cpp/stamping/
 description: Add the Image Stamp in your PDF document using ImageStamp class with the JavaScript tool.
-lastmod: "2022-12-15"
+lastmod: "2023-04-15"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -22,10 +22,6 @@ To add an image stamp:
 1. Create a 'FileReader'.
 1. Set the image filename.
 1. Prepare the stamp file from BLOB.
-1. The [AsposePdfAddStamp](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfaddstamp/) function is executed.
-1. Add the image file to end a PDF-file and save the "ResultImage.pdf".
-1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
 
 The following code snippet shows how to add image stamp in the PDF file.
 
@@ -44,7 +40,15 @@ The following code snippet shows how to add image stamp in the PDF file.
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
+```
 
+1. Create a 'FileReader'.
+1. The [AsposePdfAddStamp](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfaddstamp/) function is executed.
+1. Add the image file to end a PDF-file and save the "ResultImage.pdf".
+1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
+1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
+
+```js
   var ffileAddStamp = function (e) {
     const file_reader = new FileReader();
     file_reader.onload = (event) => {

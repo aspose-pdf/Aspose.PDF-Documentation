@@ -2,9 +2,9 @@
 title:  Encrypt PDF using JavaScript
 linktitle: Encrypt PDF File
 type: docs
-weight: 70
+weight: 50
 url: /javascript-cpp/encrypt-pdf/
-description: Encryp PDF File with Aspose.PDF for JavaScript via C++.
+description: Encrypt PDF File with Aspose.PDF for JavaScript via C++.
 lastmod: "2022-12-15"
 sitemap:
     changefreq: "monthly"
