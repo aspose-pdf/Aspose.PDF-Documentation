@@ -2,7 +2,7 @@
 title: Working with Forms using Python
 linktitle: Forms in PDF document
 type: docs
-weight: 70
+weight: 60
 url: /python-java/forms/
 lastmod: "2023-04-06"
 description: This section contains articles relating to work with forms in PDF documents using Python API.
@@ -34,6 +34,33 @@ In this section describes a quick and simple approach to programmatically comple
 - determining valid radio button values
 - get field names, flags, types, values
 - rename fields
+
+
+```python
+
+from asposepdf import Api, Forms
+
+
+# init license
+documentName = "testdata/license/Aspose.PDF.PythonviaJava.lic"
+licenseObject = Api.License()
+licenseObject.setLicense(documentName)
+
+DIR_INPUT = baseDir+"testdata/forms/"
+DIR_OUTPUT = baseDir+"testout/"
+
+# fill field example
+
+input_pdf1 = DIR_INPUT + "Testing.pdf"
+output_pdf = DIR_OUTPUT + "test5_1.pdf"
+
+form = Forms.Form(sourceFileName=input_pdf1)
+print(form.getFieldType("form1[0].Page1[0].fldBarCode1[0]"))
+form.fillField("form1[0].Page1[0].fldBarCode1[0]", "54321")
+
+form.save(output_pdf)
+```
+
 
 {{% alert color="success" %}}
 
