@@ -4,7 +4,7 @@ linktitle: Forms in PDF document
 type: docs
 weight: 60
 url: /python-java/forms/
-lastmod: "2023-04-06"
+lastmod: "2023-05-19"
 description: This section contains articles relating to work with forms in PDF documents using Python API.
 sitemap:
     changefreq: "monthly"
@@ -69,3 +69,6 @@ You can try the conversion functionality by using our Aspose PDF APPS:
 [![Aspose PDF APP](app.png)](https://products.aspose.app/pdf/conversion)
 
 {{% /alert %}}
+
+
+
