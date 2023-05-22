@@ -4,7 +4,7 @@ type: docs
 weight: 120
 url: /cpp/aspose-pdf-for-cpp-23-5-release-notes/
 description: This article decsribes changes and updates in version 23.5 of Aspose.PDF for C++ library
-lastmod: "2023-05-19"
+lastmod: "2023-05-22"
 ---
 {{% alert color="primary" %}}
 
