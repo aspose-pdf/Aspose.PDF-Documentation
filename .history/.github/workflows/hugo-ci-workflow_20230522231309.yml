@@ -34,5 +34,3 @@ jobs:
           script: |
             sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
             sudo nginx -s reload
-      - name: Set permissions
-        run: sudo chmod -R 755 ${{ secrets.DEPLOYPATH }}
