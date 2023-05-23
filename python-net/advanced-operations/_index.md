@@ -82,3 +82,5 @@ You'll learn different ways to:
 
 - [Working with Documents](/pdf/python-net/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document
 - [Working with Pages](/pdf/python-net/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps, and etc.
+- [Working with Images](/pdf/python-net/working-with-images/) - add, extract or remove images from PDF documents.
+- [Attachments](/pdf/python-net/attachments/) - you will learn how to add and delete the attachment from PDF programmatically with Python.
