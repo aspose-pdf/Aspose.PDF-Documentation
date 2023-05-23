@@ -15,7 +15,7 @@ Do you want to convert PDF to other formats using Python? **Aspose.PDF for Pytho
 
 PDF files can contain not only text but also images, clickable buttons, hyperlinks, embedded fonts, signatures, stamps, etc. Users who are converting a PDF file to some other format are interested in doing so in order to be able to edit the PDF content.
 
-**Our Aspose.PDF for Python** library allows you to successfully, quickly and easily convert your PDF documents to the most popular formats and vice versa.
+**Our Aspose.PDF for Python via Java** library allows you to successfully, quickly and easily convert your PDF documents to the most popular formats and vice versa.
 
 ## How to use Aspose.PDF for conversion
 

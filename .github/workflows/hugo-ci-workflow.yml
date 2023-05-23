@@ -33,4 +33,5 @@ jobs:
           port: ${{ secrets.SSHPORT }}
           script: |
             sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
+            sudo chmod -R 755 ${{ secrets.DEPLOYPATH }}
             sudo nginx -s reload
