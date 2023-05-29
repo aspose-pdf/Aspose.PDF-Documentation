@@ -1,10 +1,10 @@
 ---
-title: Adding Attachment to a PDF document using Python
-linktitle: Adding Attachment to a PDF document
+title: Create AcroForm - Create Fillable PDF in Python
+linktitle: Create AcroForm
 type: docs
 weight: 10
-url: /python-net/add-attachment-to-pdf-document/
-description: This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library.
+url: /python-net/create-form/
+description: With Aspose.PDF for Python you may create a form from scratch in your PDF file
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,8 +14,8 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Adding Attachment to a PDF document via Python",
-    "alternativeHeadline": "How to add attachments to PDF",
+    "headline": "Create AcroForm in Python",
+    "alternativeHeadline": "How to create AcroForm in PDF",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -24,7 +24,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, python, attachments in pdf",
+    "keywords": "pdf, python, create acroform",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -66,41 +66,55 @@ sitemap:
             }
         ]
     },
-    "url": "/python-net/add-attachment-to-pdf-document/",
+    "url": "/python-net/create-form/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/python-net/add-attachment-to-pdf-document/"
+        "@id": "/python-net/create-form/"
     },
-    "dateModified": "2023-02-04",
-    "description": "This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library"
+    "dateModified": "2022-02-04",
+    "description": "With Aspose.PDF for Python you may create a form from scratch in your PDF file"
 }
 </script>
 
-Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
+## Create form from scratch
 
-1. Create a new Python project.
-1. Import the Aspose.PDF package
-1. Create a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
-1. Create a [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object with the file you are adding, and file description.
-1. Add the [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object to the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object’s [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection, with the collection’s [add](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) method.
+### Add Form Field in a PDF Document
 
-The [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
+The [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class provides a collection named [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) which helps you manage form fields in a PDF document.
+
+To add a form field:
+
+1. Create the form field you want to add.
+1. Call the [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) collection’s add method.
+
+### Adding TextBoxField
+
+Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
 
 ```python
 
     import aspose.pdf as ap
 
     # Open document
-    document = ap.Document(input_pdf)
+    pdfDocument = ap.Document(input_file)
 
-    # Setup new file to be added as attachment
-    fileSpecification = ap.FileSpecification(attachment_file, "Sample text file")
+    # Create a field
+    textBoxField = ap.forms.TextBoxField(pdfDocument.pages[1], ap.Rectangle(100, 200, 300, 300, True))
+    textBoxField.partial_name = "textbox1"
+    textBoxField.value = "Text Box"
 
-    # Add attachment to document's attachment collection
-    document.embedded_files.append(fileSpecification)
+    border = ap.annotations.Border(textBoxField)
+    border.width = 5
+    border.dash = ap.annotations.Dash(1, 1)
+    textBoxField.border = border
 
-    # Save new output
-    document.save(output_pdf)
+    textBoxField.color = ap.Color.green
+
+    # Add field to the document
+    pdfDocument.form.add(textBoxField, 1)
+
+    # Save modified PDF
+    pdfDocument.save(output_pdf)
 ```
 
 <script type="application/ld+json">

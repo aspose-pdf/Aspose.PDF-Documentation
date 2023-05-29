@@ -1,10 +1,10 @@
 ---
-title: Adding Attachment to a PDF document using Python
-linktitle: Adding Attachment to a PDF document
+title: Working with Forms using Python
+linktitle: Working with Forms
 type: docs
-weight: 10
-url: /python-net/add-attachment-to-pdf-document/
-description: This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library.
+weight: 60
+url: /python-net/working-with-forms/
+description: This section explains how to work with AcroForms in your PDF documents with Aspose.PDF for Python via .NET.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,8 +14,8 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Adding Attachment to a PDF document via Python",
-    "alternativeHeadline": "How to add attachments to PDF",
+    "headline": "Working with Forms using Python",
+    "alternativeHeadline": "How to work with AcroForms in PDF",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -24,7 +24,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, python, attachments in pdf",
+    "keywords": "pdf, python, acroforms",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -66,42 +66,21 @@ sitemap:
             }
         ]
     },
-    "url": "/python-net/add-attachment-to-pdf-document/",
+    "url": "/python-net/working-with-forms/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/python-net/add-attachment-to-pdf-document/"
+        "@id": "/python-net/working-with-forms/"
     },
     "dateModified": "2023-02-04",
-    "description": "This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library"
+    "description": "This section explains how to work with AcroForms in your PDF documents with Aspose.PDF for Python."
 }
 </script>
 
-Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
+This section describes a quick and simple approach to programmatically completing a PDF document through the use of the Aspose.PDF for Python via .NET Library. The section also discusses how one might go about using the Aspose.PDF for Python to discover and map the fields available within an existing PDF with AcroForms.
 
-1. Create a new Python project.
-1. Import the Aspose.PDF package
-1. Create a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
-1. Create a [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object with the file you are adding, and file description.
-1. Add the [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object to the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object’s [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection, with the collection’s [add](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) method.
+AcroForms allows users to fill in, submit and store the forms electronically, making them a convenient and efficient way to collect information.
 
-The [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
-
-```python
-
-    import aspose.pdf as ap
-
-    # Open document
-    document = ap.Document(input_pdf)
-
-    # Setup new file to be added as attachment
-    fileSpecification = ap.FileSpecification(attachment_file, "Sample text file")
-
-    # Add attachment to document's attachment collection
-    document.embedded_files.append(fileSpecification)
-
-    # Save new output
-    document.save(output_pdf)
-```
+- [AcroForms](/pdf/python-net/acroforms/) - create form, fill form field, extract data from form, add and remove fields in your PDF with Python library.
 
 <script type="application/ld+json">
 {

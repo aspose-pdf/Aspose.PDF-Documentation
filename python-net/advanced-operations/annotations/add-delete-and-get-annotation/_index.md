@@ -1,21 +1,21 @@
 ---
-title: Adding Attachment to a PDF document using Python
-linktitle: Adding Attachment to a PDF document
+title: Add, Delete and Get Annotation using Python
+linktitle: Add, Delete and Get Annotation
 type: docs
-weight: 10
-url: /python-net/add-attachment-to-pdf-document/
-description: This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library.
+weight: 20
+url: /python-net/add-delete-and-get-annotation/
+description: With Aspose.PDF for Python you may add, delete and get annotation from your PDF file. Check all lists of annotations to resolve your task.
 lastmod: "2023-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Adding Attachment to a PDF document via Python",
-    "alternativeHeadline": "How to add attachments to PDF",
+    "headline": "Add, Delete and Get Annotation with Python",
+    "alternativeHeadline": "Working with Annotations in PDF file",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -24,7 +24,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, python, attachments in pdf",
+    "keywords": "pdf, python, add annotation, get annotation, delete annotation",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -66,42 +66,27 @@ sitemap:
             }
         ]
     },
-    "url": "/python-net/add-attachment-to-pdf-document/",
+    "url": "/python-net/add-delete-and-get-annotation/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/python-net/add-attachment-to-pdf-document/"
+        "@id": "/python-net/add-delete-and-get-annotation/"
     },
     "dateModified": "2023-02-04",
-    "description": "This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library"
+    "description": "With Aspose.PDF for Python you may add, delete and get annotation from your PDF file. Check all lists of annotations to resolve your task."
 }
 </script>
 
-Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
+**What are annotations in PDF documents?**
 
-1. Create a new Python project.
-1. Import the Aspose.PDF package
-1. Create a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
-1. Create a [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object with the file you are adding, and file description.
-1. Add the [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object to the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object’s [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection, with the collection’s [add](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) method.
+Annotations in PDF documents are elements that allow users to allocate content in a certain way in the document. Annotations can be used to add different types of notes, highlight text, draw shapes, attach files, and perform other actions that improve viewing, interactivity, and interaction within a document.
 
-The [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
+We have combined the different kinds of annotation available for the Aspose.PDF for Python  library into groups:
 
-```python
-
-    import aspose.pdf as ap
-
-    # Open document
-    document = ap.Document(input_pdf)
-
-    # Setup new file to be added as attachment
-    fileSpecification = ap.FileSpecification(attachment_file, "Sample text file")
-
-    # Add attachment to document's attachment collection
-    document.embedded_files.append(fileSpecification)
-
-    # Save new output
-    document.save(output_pdf)
-```
+- [PDF Text Annotation](/pdf/python-net/text-annotation/)
+- [PDF Highlights Annotation](/pdf/python-net/highlights-annotation/)
+- [PDF Figures Annotation](/pdf/python-net/figures-annotation/)
+- [PDF sticky Annotations](/pdf/python-net/sticky-annotations/)
+- [Extra Annotations](/pdf/python-net/extra-annotations/)
 
 <script type="application/ld+json">
 {
