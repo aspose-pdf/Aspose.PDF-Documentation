@@ -23,7 +23,7 @@ In this section describes a quick and simple approach to programmatically comple
 - **AcroForms** - create form, fill form field, extract data from form, modifing fields in your PDF with Java library.
 - **XFA Forms** - fill XFA fields, convert XFA, get XFA fields properties.
 
-## The following functions is available:
+## The following functions are available:
 
 - export/import fdf
 - export/import xfdf
@@ -62,13 +62,6 @@ form.save(output_pdf)
 ```
 
 
-{{% alert color="success" %}}
-
-You can try the conversion functionality by using our Aspose PDF APPS:
-
-[![Aspose PDF APP](app.png)](https://products.aspose.app/pdf/conversion)
-
-{{% /alert %}}
 
 
 
