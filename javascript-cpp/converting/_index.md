@@ -13,6 +13,55 @@ sitemap:
 
 The PDF was developed to provide a standard for presenting documents and other reference materials in a format that is independent of application software, hardware, and operating system. The content of PDF files is not limited to text, it can be hyperlinks, images, clickable buttons and forms, electronic signatures, watermarks, and more. Therefore, it is often necessary to convert PDF files to some other format in order to edit or change their content. 
 
+## Convert PDF to DOCX
+
+1. Select a PDF file for converting.
+1. Create a 'FileReader'.
+1. The [AsposePdfToDocX](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdftodocx/) function is executed.
+1. The name of the resulting file is set, in this example "ResultPDFtoDocX.docx".
+1. Next, if the 'json.errorCode' is 0, then your result File is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
+1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
+
+```js
+
+  var ffileToDocX = function (e) {
+    const file_reader = new FileReader();
+    file_reader.onload = (event) => {
+      /*convert a PDF-file to DocX and save the "ResultPDFtoDocX.docx"*/
+      const json = AsposePdfToDocX(event.target.result, e.target.files[0].name, "ResultPDFtoDocX.docx");
+      if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
+      else document.getElementById('output').textContent = json.errorText;
+      /*make a link to download the result file*/
+      DownloadFile(json.fileNameResult, "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+    }
+    file_reader.readAsArrayBuffer(e.target.files[0]);
+  }
+```
+## Convert PDF to XLSX
+
+1. Select a PDF file for converting.
+1. Create a 'FileReader'.
+1. The [AsposePdfToXlsX](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdftoxlsx/) function is executed.
+1. The name of the resulting file is set, in this example "ResultPDFtoXlsX.xlsx".
+1. Next, if the 'json.errorCode' is 0, then your result File is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
+1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
+
+```js
+
+  var ffileToXlsX = function (e) {
+    const file_reader = new FileReader();
+    file_reader.onload = (event) => {
+      /*convert a PDF-file to XlsX and save the "ResultPDFtoXlsX.xlsx"*/
+      const json = AsposePdfToXlsX(event.target.result, e.target.files[0].name, "ResultPDFtoXlsX.xlsx");
+      if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
+      else document.getElementById('output').textContent = json.errorText;
+      /*make a link to download the result file*/
+      DownloadFile(json.fileNameResult, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+    }
+    file_reader.readAsArrayBuffer(e.target.files[0]);
+  }
+```
+
 ## Convert PDF to image formats using JavaScript
 
 In this article, we will show you the options for converting PDF to image formats.
