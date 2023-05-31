@@ -78,7 +78,7 @@ sitemap:
 
 ## How to add Caret Annotation into existing PDF file via Python
 
-Caret Annotation is a symbol that indicates text editing. Caret Annotation is also markup annotation, so the Caret class derives from the Markup class and also provides functions to get or set properties of the Caret Annotation and reset the flow of the Caret Annotation appearance.
+Caret Annotation is a symbol that indicates text editing. Caret Annotation is also a markup annotation, so the Caret class derives from the Markup class and also provides functions to get or set properties of the Caret Annotation and reset the flow of the Caret Annotation appearance.
 Caret annotations are often used to suggest changes, additions, or changes to the text.
 
 Steps with which we create Caret annotation:
