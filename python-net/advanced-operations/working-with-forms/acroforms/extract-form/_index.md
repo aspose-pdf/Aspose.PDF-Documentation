@@ -37,7 +37,7 @@ sitemap:
         "sameAs": [
             "https://facebook.com/aspose.pdf/",
             "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.youtube.com/@AsposePDF",
             "https://www.linkedin.com/company/aspose",
             "https://stackoverflow.com/questions/tagged/aspose",
             "https://aspose.quora.com/",
