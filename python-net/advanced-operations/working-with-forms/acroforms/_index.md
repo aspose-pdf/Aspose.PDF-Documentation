@@ -78,7 +78,7 @@ sitemap:
 
 ## Fundamentals of AcroForms
 
-**AcroForms** are the original PDF forms technology. AcroForms is a page oriented form. They were first introduced in 1998. They accept input in Forms Data Format or FDF and XML Forms Data Format or xFDF. Third party vendors support AcroForms. When Adobe introduced the AcroForms, they referred to them as “PDF form that is authored with Adobe Acrobat Pro/Standard and that is not a special type of static or dynamic XFA form. Acroforms are portable and they work on all platforms.
+**AcroForms** - unique PDF form technology from Adobe. AcroForms is a page-oriented form. They first appeared in 1998. They accept input in the form of Data format or FDF and XML form Data format or xFDF. Third-party providers support AcroForms. When Adobe introduced AcroForms, they called them the "PDF form, which is the author of Adobe Acrobat Pro/Standard and is not a special type of static or dynamic XFA form. AcroForms are portable and work on all platforms.```
 
 You can use AcroForms to add additional pages to the PDF form document. Thanks to the concept of Templates, you can use AcroForms to support populating the form with multiple database records.
 
