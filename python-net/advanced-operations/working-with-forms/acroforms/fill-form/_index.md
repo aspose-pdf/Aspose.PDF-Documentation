@@ -1,10 +1,11 @@
 ---
-title: Adding Attachment to a PDF document using Python
-linktitle: Adding Attachment to a PDF document
+title: Fill AcroForm - Fill PDF Form using Python
+linktitle: Fill AcroForm
 type: docs
-weight: 10
-url: /python-net/add-attachment-to-pdf-document/
-description: This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library.
+weight: 20
+url: /python-net/fill-form/
+keywords: Fill PDF Form Python
+description: You can fill forms in your PDF document  with Aspose.PDF for Python library.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,8 +15,8 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Adding Attachment to a PDF document via Python",
-    "alternativeHeadline": "How to add attachments to PDF",
+    "headline": "Fill AcroForm",
+    "alternativeHeadline": "How to fill AcroForm in PDf",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -24,7 +25,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, python, attachments in pdf",
+    "keywords": "pdf, python, fill acroform",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -66,42 +67,37 @@ sitemap:
             }
         ]
     },
-    "url": "/python-net/add-attachment-to-pdf-document/",
+    "url": "/python-net/fill-form/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/python-net/add-attachment-to-pdf-document/"
+        "@id": "/python-net/fill-form/"
     },
     "dateModified": "2023-02-04",
-    "description": "This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library"
+    "description": "You can fill forms in your PDF document  with Aspose.PDF for Python library."
 }
 </script>
 
-Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
+## Fill Form Field in a PDF Document
 
-1. Create a new Python project.
-1. Import the Aspose.PDF package
-1. Create a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
-1. Create a [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object with the file you are adding, and file description.
-1. Add the [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object to the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object’s [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection, with the collection’s [add](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) method.
+To fill a form field, get the field from the Document object’s [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) collection. then set the field value using the field’s [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#properties) property.
 
-The [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
+This example selects a [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) and sets its value using the Value property.
 
 ```python
 
     import aspose.pdf as ap
 
     # Open document
-    document = ap.Document(input_pdf)
+    pdfDocument = ap.Document(input_file)
+    for formField in pdfDocument.form.fields:
+        if formField.partial_name == "Field 1":
+            # Modify field value
+            formField.value = "777"
 
-    # Setup new file to be added as attachment
-    fileSpecification = ap.FileSpecification(attachment_file, "Sample text file")
-
-    # Add attachment to document's attachment collection
-    document.embedded_files.append(fileSpecification)
-
-    # Save new output
-    document.save(output_pdf)
+    # Save updated document
+    pdfDocument.save(output_pdf)
 ```
+
 
 <script type="application/ld+json">
 {

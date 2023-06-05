@@ -1,10 +1,10 @@
 ---
-title: Adding Attachment to a PDF document using Python
-linktitle: Adding Attachment to a PDF document
+title: PDF sticky Annotations using Python
+linktitle: sticky Annotation
 type: docs
-weight: 10
-url: /python-net/add-attachment-to-pdf-document/
-description: This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library.
+weight: 50
+url: /python-net/sticky-annotations/
+description: This topic about sticky annotations, as an example we shows the Watermark Annotation in the text.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,8 +14,8 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Adding Attachment to a PDF document via Python",
-    "alternativeHeadline": "How to add attachments to PDF",
+    "headline": "PDF sticky Annotations using Python",
+    "alternativeHeadline": "How to add Sticky Annotations in PDF",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -24,7 +24,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, python, attachments in pdf",
+    "keywords": "pdf, python, sticky annotations, watermark annotation",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -66,41 +66,90 @@ sitemap:
             }
         ]
     },
-    "url": "/python-net/add-attachment-to-pdf-document/",
+    "url": "/python-net/sticky-annotations/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/python-net/add-attachment-to-pdf-document/"
+        "@id": "/python-net/sticky-annotations/"
     },
     "dateModified": "2023-02-04",
-    "description": "This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library"
+    "description": "This topic about sticky annotations, as an example we shows the Watermark Annotation in the text using Python Library."
 }
 </script>
 
-Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
+## Add Watermark Annotation
 
-1. Create a new Python project.
-1. Import the Aspose.PDF package
-1. Create a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
-1. Create a [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object with the file you are adding, and file description.
-1. Add the [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object to the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object’s [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection, with the collection’s [add](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) method.
+The most visible and easy to visualize and transmit is the Watermark Annotation. This is the best way to place in your PDF document a logo or any other sign that confirms its originality.
 
-The [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
+A watermark annotation shall be used to represent graphics that shall be printed at a fixed size and position on a page, regardless of the dimensions of the printed page.
+
+You can add Watermark Text using [WatermarkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/) at a specific position of the PDF page. The opacity of Watermark can also be controlled by using [opacity](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/#properties) property.
+
+Please check the following code snippet to add WatermarkAnnotation.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Open document
-    document = ap.Document(input_pdf)
+    document = ap.Document(input_file)
+    # Create Annotation
+    # Load Page object to add Annotation
+    page = document.pages[1]
 
-    # Setup new file to be added as attachment
-    fileSpecification = ap.FileSpecification(attachment_file, "Sample text file")
+    # Create Annotation
+    wa = ap.annotations.WatermarkAnnotation(page, ap.Rectangle(100, 0, 400, 100, True))
 
-    # Add attachment to document's attachment collection
-    document.embedded_files.append(fileSpecification)
+    # Add annotaiton into Annotation collection of Page
+    page.annotations.append(wa)
 
-    # Save new output
-    document.save(output_pdf)
+    # Create TextState for Font settings
+    ts = ap.text.TextState()
+    ts.foreground_color = ap.Color.blue
+    ts.font_size = 25
+    ts.font = ap.text.FontRepository.find_font("Arial");
+
+    # Set opacity level of Annotaiton Text
+    wa.opacity = 0.5
+
+    # Add Text in Annotation
+    wa.set_text_and_state([ "HELLO", "Line 1", "Line 2" ], ts)
+
+    document.save(output_file)
+```
+
+## Get Watermark Annotation
+
+```python
+
+    import aspose.pdf as ap
+
+    document = ap.Document(input_file)
+    watermarkAnnotations = [
+        a
+        for a in document.pages[1].annotations
+        if (a.annotation_type == ap.annotations.AnnotationType.WATERMARK)
+    ]
+
+    for ta in watermarkAnnotations:
+        print(ta.rect)
+```
+
+## Delete Watermark Annotation
+
+```python
+
+    import aspose.pdf as ap
+
+    document = ap.Document(input_file)
+    watermarkAnnotations = [
+        a
+        for a in document.pages[1].annotations
+        if (a.annotation_type == ap.annotations.AnnotationType.WATERMARK)
+    ]
+
+    for ta in watermarkAnnotations:
+        document.pages[1].annotations.delete(ta)
+
+    document.save(output_file)
 ```
 
 <script type="application/ld+json">

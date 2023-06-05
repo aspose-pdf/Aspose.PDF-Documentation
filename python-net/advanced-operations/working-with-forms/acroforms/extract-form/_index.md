@@ -1,10 +1,11 @@
 ---
-title: Adding Attachment to a PDF document using Python
-linktitle: Adding Attachment to a PDF document
+title: Extract AcroForm - Extract Form Data from PDF in Python
+linktitle: Extract AcroForm
 type: docs
-weight: 10
-url: /python-net/add-attachment-to-pdf-document/
-description: This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library.
+weight: 30
+url: /python-net/extract-form/
+keywords: extract form data from pdf python
+description: Extract form from your PDF document with Aspose.PDF for Python library. Get value from an individual field of PDF file.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,8 +15,8 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Adding Attachment to a PDF document via Python",
-    "alternativeHeadline": "How to add attachments to PDF",
+    "headline": "Extract AcroForm",
+    "alternativeHeadline": "How to extract AcroForm from PDF in Python",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -24,7 +25,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, python, attachments in pdf",
+    "keywords": "pdf, python, extract acroform",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -36,7 +37,7 @@ sitemap:
         "sameAs": [
             "https://facebook.com/aspose.pdf/",
             "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.youtube.com/@AsposePDF",
             "https://www.linkedin.com/company/aspose",
             "https://stackoverflow.com/questions/tagged/aspose",
             "https://aspose.quora.com/",
@@ -66,41 +67,36 @@ sitemap:
             }
         ]
     },
-    "url": "/python-net/add-attachment-to-pdf-document/",
+    "url": "/python-net/extract-form/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/python-net/add-attachment-to-pdf-document/"
+        "@id": "/python-net/extract-form/"
     },
     "dateModified": "2023-02-04",
-    "description": "This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library"
+    "description": "Extract form from your PDF document with Aspose.PDF for Python library. Get value from an individual field of PDF file."
 }
 </script>
 
-Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
+## Extract data from form
 
-1. Create a new Python project.
-1. Import the Aspose.PDF package
-1. Create a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
-1. Create a [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object with the file you are adding, and file description.
-1. Add the [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) object to the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object’s [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection, with the collection’s [add](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) method.
+### Get Values from all the Fields of PDF Document
 
-The [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
+To get values from all the fields in a PDF document, you need to navigate through all the form fields and then get the value using the Value property. Get each field from the Form collection, in the base field type called [Field](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/) and access its [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/#properties) property.
+
+The following Python code snippets show how to get the values of all the fields from a PDF document.
 
 ```python
 
     import aspose.pdf as ap
 
     # Open document
-    document = ap.Document(input_pdf)
+    pdfDocument = ap.Document(input_file)
 
-    # Setup new file to be added as attachment
-    fileSpecification = ap.FileSpecification(attachment_file, "Sample text file")
-
-    # Add attachment to document's attachment collection
-    document.embedded_files.append(fileSpecification)
-
-    # Save new output
-    document.save(output_pdf)
+    # Get values from all fields
+    for formField in pdfDocument.form.fields:
+        # Analyze names and values if need
+        print("Field Name : " + formField.partial_name)
+        print("Value : " + str(formField.value))
 ```
 
 <script type="application/ld+json">
