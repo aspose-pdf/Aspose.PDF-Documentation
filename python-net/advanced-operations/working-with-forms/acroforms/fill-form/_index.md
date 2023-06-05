@@ -91,8 +91,6 @@ This example selects a [TextBoxField](https://reference.aspose.com/pdf/python-ne
     pdfDocument = ap.Document(input_file)
     for formField in pdfDocument.form.fields:
         if formField.partial_name == "Field 1":
-            # Get a field
-            textBoxField = formField
             # Modify field value
             textBoxField.value = "777"
 

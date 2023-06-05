@@ -85,7 +85,7 @@ Steps with which we create Caret annotation:
 
 1. Load the PDF file - new [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Create new [CaretAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/caretannotation/) and set Caret parameters (new Rectangle, title, subject, flags, color). This annotation is used to indicate the insertion of text.
-1. After we can Add annotations to the page.
+1. Once we are able to append annotations to the page.
 
 The following code snippet shows how to add Caret Annotation to a PDF file:
 
