@@ -92,7 +92,7 @@ This example selects a [TextBoxField](https://reference.aspose.com/pdf/python-ne
     for formField in pdfDocument.form.fields:
         if formField.partial_name == "Field 1":
             # Modify field value
-            textBoxField.value = "777"
+            formField.value = "777"
 
     # Save updated document
     pdfDocument.save(output_pdf)
