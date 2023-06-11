@@ -79,6 +79,8 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-50562|Pdf to Docx failed with NullReferenceException|Bug|
 |PDFNET-49878|Color image is turned to grayscale when converting from PDF to SVG|Bug|
 |PDFNET-37311|PDF to TIFF - Resultant file contents are garbled|Bug|
+|PDFNET-53031|Temp files are generated while converting PDF to DOCX|Bug|
+|PDFNET-52420|100 000+ temp files are generated while converting PDF to DOCX|Bug|
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
