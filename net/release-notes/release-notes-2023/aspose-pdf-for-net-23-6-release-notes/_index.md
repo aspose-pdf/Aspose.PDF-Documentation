@@ -100,6 +100,12 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 * Method:Aspose.Pdf.Text.TextFragmentCollection.GetEnumerator System.Collections.Generic.IEnumerator`1[[Aspose.Pdf.Text.TextFragment, Aspose.PDF, Version=23.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56]]
 * Method:Aspose.Pdf.Text.TextSegmentCollection.System#Collections#IEnumerable#GetEnumerator System.Collections.IEnumerator
 * Method:Aspose.Pdf.Text.TextSegmentCollection.GetEnumerator System.Collections.Generic.IEnumerator`1[[Aspose.Pdf.Text.TextSegment, Aspose.PDF, Version=23.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56]]
+* Type:Aspose.Pdf.Vector.SubPath
+* Type:Aspose.Pdf.Vector.SubPathCollection
+* Type:Aspose.Pdf.Vector.VectorGraphicsAbsorber
+* Field:Aspose.Pdf.Rotation.on360
+* Type:Aspose.Pdf.Plugins.PdfFormExportValuesToCSVOption
+* Method:Aspose.Pdf.Forms.OptionCollection.Clear()
 
 ### Removed APIs
 
