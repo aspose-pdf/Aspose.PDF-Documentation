@@ -83,6 +83,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-53031|Temp files are generated while converting PDF to DOCX|Bug|
 |PDFNET-52420|100 000+ temp files are generated while converting PDF to DOCX|Bug|
 |PDFNET-48193|Convert PDF to image (JPEG) crash from time to time|Bug|
+|PDFNET-47066|Cont. Adding text stamp is creating issues while generating PDF/U compliant PDF|Bug|
 
 ## Public API and Backward Incompatible Changes
 
