@@ -27,6 +27,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-54708|Aspose.PdfForm add feature 'Export 'Value's from fields in document to csv file'|Feature|
 |PDFNET-54499|Aspose.PdfForm Add the ability to set properties for a separate fields|Feature|
 |PDFNET-39373|How to remove Combobox options|Enhancement|
+|PDFNET-53491|Provide an API for positioning vector graphics|Enhancement|
 |PDFNET-51919|Bates stamps mismatch in the merged pdf file when using "LinkDuplcateStreams = true"|Bug|
 |PDFNET-47174|Absorber.Visit() throws out of range exception|Bug|
 |PDFNET-54456|Inconsistent Truncation of the text when adding TOC|Bug|
@@ -84,6 +85,9 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-52420|100 000+ temp files are generated while converting PDF to DOCX|Bug|
 |PDFNET-48193|Convert PDF to image (JPEG) crash from time to time|Bug|
 |PDFNET-47066|Cont. Adding text stamp is creating issues while generating PDF/U compliant PDF|Bug|
+|PDFNET-50448|Invalid conversion from PDF to DOCX on Linux Docker container|Bug|
+|PDFNET-53050|System.NullReferenceException is thrown while extracting text|Bug|
+|PDFNET-50847|HTML to PDF: Arabic text alignment issue|Bug|
 
 ## Public API and Backward Incompatible Changes
 
