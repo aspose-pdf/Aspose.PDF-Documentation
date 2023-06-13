@@ -21,6 +21,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
+|PDFNET-54559|Aspose PdfConverter Html to PDF|Feature|
 |PDFNET-52405|Aspose PdfOrganizer Resize API|Feature|
 |PDFNET-52407|Aspose PdfOrganizer Compress API|Feature|
 |PDFNET-54708|Aspose.PdfForm add feature 'Export 'Value's from fields in document to csv file'|Feature|
@@ -81,6 +82,8 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-37311|PDF to TIFF - Resultant file contents are garbled|Bug|
 |PDFNET-53031|Temp files are generated while converting PDF to DOCX|Bug|
 |PDFNET-52420|100 000+ temp files are generated while converting PDF to DOCX|Bug|
+|PDFNET-48193|Convert PDF to image (JPEG) crash from time to time|Bug|
+
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
@@ -105,7 +108,14 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 * Type:Aspose.Pdf.Vector.VectorGraphicsAbsorber
 * Field:Aspose.Pdf.Rotation.on360
 * Type:Aspose.Pdf.Plugins.PdfFormExportValuesToCSVOption
-* Method:Aspose.Pdf.Forms.OptionCollection.Clear()
+* Method:Aspose.Pdf.Forms.OptionCollection.Clear
+* Type:Aspose.Pdf.Plugins.PdfConverterHtmlToPdfOptions
+* Method:Aspose.Pdf.Plugins.PdfConverterHtmlToPdfOptions.#ctor System.Void
+* Property:Aspose.Pdf.Plugins.PdfConverterHtmlToPdfOptions.IsRenderToSinglePage System.Boolean
+* Property:Aspose.Pdf.Plugins.PdfConverterHtmlToPdfOptions.BasePath System.String
+* Property:Aspose.Pdf.Plugins.PdfConverterHtmlToPdfOptions.HtmlMediaType Aspose.Pdf.HtmlMediaType
+* Property:Aspose.Pdf.Plugins.PdfConverterHtmlToPdfOptions.PageLayoutOption Aspose.Pdf.PageLayoutOption
+* Property:Aspose.Pdf.Plugins.PdfConverterHtmlToPdfOptions.PageInfo Aspose.Pdf.PageInfo
 
 ### Removed APIs
 
