@@ -26,6 +26,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-52407|Aspose PdfOrganizer Compress API|Feature|
 |PDFNET-54708|Aspose.PdfForm add feature 'Export 'Value's from fields in document to csv file'|Feature|
 |PDFNET-54499|Aspose.PdfForm Add the ability to set properties for a separate fields|Feature|
+|PDFNET-53357|Add the ability to set the title of the HTML, Epub page|Feature|
 |PDFNET-39373|How to remove Combobox options|Enhancement|
 |PDFNET-53491|Provide an API for positioning vector graphics|Enhancement|
 |PDFNET-51919|Bates stamps mismatch in the merged pdf file when using "LinkDuplcateStreams = true"|Bug|
@@ -88,6 +89,11 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-50448|Invalid conversion from PDF to DOCX on Linux Docker container|Bug|
 |PDFNET-53050|System.NullReferenceException is thrown while extracting text|Bug|
 |PDFNET-50847|HTML to PDF: Arabic text alignment issue|Bug|
+|PDFNET-47646|HTML to PDF - IndexOutOfRangeException occurs|Bug|
+|PDFNET-40944|HTML to PDF: RTL text is rendering incorrectly|Bug|
+|PDFNET-38717|HTML to PDF conversion throws OutOfMemoryException|Bug|
+|PDFNET-40579|HTML to PDF: @page rule throwing exception with combination of page-break-before style|Bug|
+
 
 ## Public API and Backward Incompatible Changes
 
