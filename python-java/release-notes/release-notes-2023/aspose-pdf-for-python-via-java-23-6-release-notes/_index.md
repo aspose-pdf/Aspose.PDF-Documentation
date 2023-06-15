@@ -1,7 +1,7 @@
 ---
 title: Aspose.PDF for Python via Java 23.6 Release Notes
 type: docs
-weight: 110
+weight: 100
 url: /python-java/aspose-pdf-for-python-via-java-23-6-release-notes/
 lastmod: "2023-06-15"
 ---
