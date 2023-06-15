@@ -93,6 +93,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-40944|HTML to PDF: RTL text is rendering incorrectly|Bug|
 |PDFNET-38717|HTML to PDF conversion throws OutOfMemoryException|Bug|
 |PDFNET-40579|HTML to PDF: @page rule throwing exception with combination of page-break-before style|Bug|
+|PDFNET-54500|CMYK to RGB conversion error in the SetCMYKColor operator and in the Aspose.PDF.Color.FromCmyk method|Bug|
 
 
 ## Public API and Backward Incompatible Changes
