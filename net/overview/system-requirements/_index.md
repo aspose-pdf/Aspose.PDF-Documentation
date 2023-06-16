@@ -58,7 +58,6 @@ You can use Aspose.PDF for .NET to develop applications in any development envir
 The following .NET Framework versions are supported:
 
 - .NET Framework 4.0
-- .NET Framework 4.0_ClientProfile
 - .NET Framework 4.5.0
 - .NET Framework 4.5.1
 - .NET Framework 4.5.2
