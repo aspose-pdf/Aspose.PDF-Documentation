@@ -133,5 +133,4 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 
 ### Discontinued Features
 * Support for .NET 4.0 client profile has been discontinued.
-* Support for .NET 4.0 has been discontinued.
 
