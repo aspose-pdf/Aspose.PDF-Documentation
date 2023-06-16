@@ -17,8 +17,6 @@ To produce and manipulate PDF documents, the machine that Aspose.PDF for .NET ru
 ## Supported Operating System
 
 ### Windows
-- Microsoft Windows 2000 Professional ( x64, x86)
-- Microsoft Windows 2000 Server (x64, x86)
 - Microsoft Windows 2003 Server (x64, x86)
 - Microsoft Windows 2008 Server (x64, x86)
 - Microsoft Windows 2012 Server (x64, x86)
@@ -42,9 +40,6 @@ To produce and manipulate PDF documents, the machine that Aspose.PDF for .NET ru
 ## Development Environments
 You can use Aspose.PDF for .NET to develop applications in any development environment that targets the .NET platform, but the following environments are explicitly supported:
 
-- Microsoft Visual Studio 2003
-- Microsoft Visual Studio 2005
-- Microsoft Visual Studio 2008
 - Microsoft Visual Studio 2010
 - Microsoft Visual Studio 2011
 - Microsoft Visual Studio 2012
