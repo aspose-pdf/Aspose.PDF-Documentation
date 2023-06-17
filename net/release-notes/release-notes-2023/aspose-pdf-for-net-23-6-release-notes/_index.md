@@ -67,7 +67,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-53374|While creating hyperlinks text was disturbing in pdf document|Bug|
 |PDFNET-53235|System.NullReferenceException during concatenation|Bug|
 |PDFNET-53312|Table rows are merged after PDF to Excel conversion|Bug|
-|PDFNET-53784|PngDevice Does not sho image when processed|Bug|
+|PDFNET-53784|PngDevice does not show images when processed|Bug|
 |PDFNET-54592|Rotate Property not working with FreeTextAnnotation|Bug|
 |PDFNET-54006|Inquiries on PDF fonts embedding|Bug|
 |PDFNET-54343|Aspose PDF fails to word-wrap replaced text|Bug|
