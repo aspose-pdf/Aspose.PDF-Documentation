@@ -57,7 +57,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-45742|Incorrect rendering of PDF to TIFF|Bug|
 |PDFNET-53151|Issue reading and updating Javascript|Bug|
 |PDFNET-43855|PDF to DOCX - the table is not being maintained|Bug|
-|PDFNET-54427|Pdf.document.flatten throwing object reference exception|Bug|
+|PDFNET-54427|Pdf.Document.Flatten() throwing object reference exception|Bug|
 |PDFNET-53240|An Exception occurs while optimizing PDF document|Bug|
 |PDFNET-45711|Some parts of the document aren't gray scaled|Bug|
 |PDFNET-52756|IndexOutOfRangeException is thrown when PDF it converted to DOCX|Bug|
