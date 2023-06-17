@@ -71,7 +71,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-54592|Rotate Property not working with FreeTextAnnotation|Bug|
 |PDFNET-54006|Inquiries on PDF fonts embedding|Bug|
 |PDFNET-54343|Aspose PDF fails to word-wrap replaced text|Bug|
-|PDFNET-47392|Aspose.pdf c # version error when optimizing PDF file size|Bug|
+|PDFNET-47392|Aspose.Pdf error when optimizing PDF file size|Bug|
 |PDFNET-47202|ArgumentNullException on saving Specific PDF file|Bug|
 |PDFNET-50951|Document.PdfFormat throws System.FormatException|Bug|
 |PDFNET-54585|Processing Document.Flatten takes a long time|Bug|
