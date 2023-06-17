@@ -24,7 +24,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.6.
 |PDFNET-54559|Aspose PdfConverter Html to PDF|Feature|
 |PDFNET-52405|Aspose PdfOrganizer Resize API|Feature|
 |PDFNET-52407|Aspose PdfOrganizer Compress API|Feature|
-|PDFNET-54708|Aspose.PdfForm add feature 'Export 'Value's from fields in document to csv file'|Feature|
+|PDFNET-54708|Aspose.PdfForm add feature 'Export 'Value's from fields in document to CSV file'|Feature|
 |PDFNET-54499|Aspose.PdfForm Add the ability to set properties for a separate fields|Feature|
 |PDFNET-53357|Add the ability to set the title of the HTML, Epub page|Feature|
 |PDFNET-39373|Removing Combobox options|Enhancement|
