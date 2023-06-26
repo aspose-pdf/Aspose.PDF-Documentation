@@ -4,7 +4,7 @@ linktitle: Release Notes
 type: docs
 weight: 130
 url: /python-net/release-notes/
-lastmod: "2022-01-17"
+lastmod: "2023-06-27"
 description: This section contains all the release notes that are regularly published and updated by the Aspose.PDF library.
 sitemap:
     changefreq: "weekly"
@@ -17,6 +17,7 @@ sitemap:
 
 **Aspose.PDF** inform users about fixed bugs, functionality extensions, new features, and enhancement of our product.
 
+- [Release Notes - 2023](/pdf/python-net/release-notes-2023/)
 - [Release Notes - 2022](/pdf/python-net/release-notes-2022/)
 
 
