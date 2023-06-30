@@ -35,3 +35,52 @@ All the documents must have page numbers in it. The page number makes it easier 
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
 ```
+
+## Using Web Workers
+
+```js
+
+  /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `Result:\n${(evt.data.operation == 'AsposePdfPrepare') ? 'image prepared!': DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+
+    /*set the default image filename: 'Aspose.jpg' already loaded, see settings in 'settings.json'*/
+    var fileBackgroundImage = "Aspose.jpg";
+
+    /*Event handler*/
+    const ffileAddBackgroundImage = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*add a background image file a PDF-file and save the "ResultBackgroundImage.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfAddBackgroundImage', "params": [event.target.result, e.target.files[0].name, fileBackgroundImage, "ResultBackgroundImage.pdf"] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+
+    const ffileImage = e => {
+      const file_reader = new FileReader();
+      /*set the image filename*/
+      fileBackgroundImage = e.target.files[0].name;
+      file_reader.onload = event => {
+        /*prepare(save) the image file from BLOB*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfPrepare', "params": [event.target.result, e.target.files[0].name] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
+```
