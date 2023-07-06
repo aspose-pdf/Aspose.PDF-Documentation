@@ -36,3 +36,24 @@ Check the code snippet  and follow the steps to extract text from your PDF:
   file_reader.readAsArrayBuffer(e.target.files[0]);
 };
 ```
+
+## Using Web Workers
+
+```js
+    /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? evt.data.json.extractText : `Error: ${evt.data.json.errorText}`; 
+
+    /*Event handler*/
+    const ffileExtract = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*Extract text from a PDF-file - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfExtractText', "params": [event.target.result, e.target.files[0].name] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+```

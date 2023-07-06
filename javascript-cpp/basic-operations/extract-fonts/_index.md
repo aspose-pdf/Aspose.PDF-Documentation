@@ -33,3 +33,25 @@ Please check following code snippet in order to get all fonts from an existing P
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
 ```
+
+## Using Web Workers
+
+```js
+
+    /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `fonts:\n${JSON.stringify(evt.data.json.fonts, null, 4)}` : `Error: ${evt.data.json.errorText}`; 
+
+    /*Event handler*/
+    const ffilePdfGetAllFonts = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*get list of fonts from PDF file - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfGetAllFonts', "params": [event.target.result, e.target.files[0].name] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+```
