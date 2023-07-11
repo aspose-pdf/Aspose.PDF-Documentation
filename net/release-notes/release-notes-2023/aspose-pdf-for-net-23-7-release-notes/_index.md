@@ -27,6 +27,7 @@ Features
 |PDFNET-49893|Memory consumption decreased while adding image to PDF|Enhancement|
 |PDFNET-54323|Aspose.Pdf.Drawing 23.3: Performance of pdf to wordprocessing conversion in .net6, .net7 improved|Enhancement|
 |PDFNET-53854|Aspose.PDF.Drawing performance improved compared to Aspose.PDF|Enhancement|
+|PDFNET-53602|API is not reducing the file size more than 4MB|Enhancement|
 |PDFNET-54563|PDF to DOC - Exception is thrown on Windows Server 2019|Bug|
 |PDFNET-54320|PDF to PDF/A-1a: Text hidden|Bug|
 |PDFNET-54841|Hangups in .Net Framework 4.8 ?|Bug|
