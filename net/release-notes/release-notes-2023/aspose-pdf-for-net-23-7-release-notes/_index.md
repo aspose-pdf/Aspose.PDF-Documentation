@@ -23,6 +23,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.7.
 | :- | :- | :- |
 Features
 |PDFNET-51464|Copy OutputIntents from input PDF to destination PDF|Feature|
+|PDFNET-46298|Add the shape extraction support|Feature|
 |PDFNET-45863|Saving to APS takes less time|Enhancement|
 |PDFNET-49893|Memory consumption decreased while adding image to PDF|Enhancement|
 |PDFNET-54323|Aspose.Pdf.Drawing 23.3: Performance of pdf to wordprocessing conversion in .net6, .net7 improved|Enhancement|
@@ -73,6 +74,7 @@ Features
 |PDFNET-39321|PDF to DOCX - OutOfRangeException during conversion|Bug|
 |PDFNET-50058|Convert to pdf/a gives exception for a PDF|Bug|
 |PDFNET-49589|Convert PDF to Black and White|Bug|
+|PDFNET-44580|The convert procedure of Dynamic XFA Form to Standard AcroForm shows the hidden button|Bug|
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
