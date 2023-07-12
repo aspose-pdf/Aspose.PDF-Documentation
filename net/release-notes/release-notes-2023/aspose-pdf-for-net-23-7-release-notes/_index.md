@@ -129,6 +129,7 @@ Features
 * Method:Aspose.Pdf.OutputIntents.GetEnumerator System.Collections.Generic.IEnumerator`1[[Aspose.Pdf.OutputIntent, Aspose.PDF, Version=23.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56]]
 * Method:Aspose.Pdf.OutputIntents.Remove(Aspose.Pdf.OutputIntent) System.Boolean
 * Method:Aspose.Pdf.OutputIntents.System#Collections#IEnumerable#GetEnumerator System.Collections.IEnumerator
+* Method:Aspose.Pdf.Text.IsFitRectangle(string str, Rectangle rect) System.Boolean
 
 ### Removed APIs
 * Type:Aspose.Pdf.Plugins.PdfFormExportValuesToCSVOptions 
