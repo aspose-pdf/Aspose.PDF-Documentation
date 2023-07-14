@@ -24,11 +24,13 @@ This page contains release notes information for Aspose.PDF for .NET 23.7.
 Features
 |PDFNET-51464|Copy OutputIntents from input PDF to destination PDF|Feature|
 |PDFNET-46298|Add the shape extraction support|Feature|
+|PDFNET-53628|Detect Overflow when adding text|Feature|
 |PDFNET-45863|Saving to APS takes less time|Enhancement|
 |PDFNET-49893|Memory consumption decreased while adding image to PDF|Enhancement|
 |PDFNET-54323|Aspose.Pdf.Drawing 23.3: Performance of pdf to wordprocessing conversion in .net6, .net7 improved|Enhancement|
 |PDFNET-53854|Aspose.PDF.Drawing performance improved compared to Aspose.PDF|Enhancement|
 |PDFNET-53602|API is not reducing the file size more than 4MB|Enhancement|
+|PDFNET-48380|Add tagged content and concatenating that document with other tagged documents|Enhancement|
 |PDFNET-54563|PDF to DOC - Exception is thrown on Windows Server 2019|Bug|
 |PDFNET-54320|PDF to PDF/A-1a: Text hidden|Bug|
 |PDFNET-54841|Hangups in .Net Framework 4.8 ?|Bug|
@@ -74,7 +76,8 @@ Features
 |PDFNET-39321|PDF to DOCX - OutOfRangeException during conversion|Bug|
 |PDFNET-50058|Convert to pdf/a gives exception for a PDF|Bug|
 |PDFNET-49589|Convert PDF to Black and White|Bug|
-|PDFNET-44580|The convert procedure of Dynamic XFA Form to Standard AcroForm shows the hidden button|Bug|
+|PDFNET-54940|Text replace issue|Bug|
+|PDFNET-50021|Aspose.Pdf 21.5: FontEmbeddingException on loading a EPUB file|Bug|
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
