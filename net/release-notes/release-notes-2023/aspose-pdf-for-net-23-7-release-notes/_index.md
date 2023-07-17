@@ -66,7 +66,6 @@ Features
 |PDFNET-50227|Conversion to GrayScale issue|Bug|
 |PDFNET-50307|"Font embedding is prohibited because of font license restrictions" exception when open OXPS document|Bug|
 |PDFNET-54496|Loading HTML document raises System.ArgumentException|Bug|
-|PDFNET-47472|Removing specific images from PDF using operators|Bug|
 |PDFNET-41265|HTML to PDF: scaling issue|Bug|
 |PDFNET-40985|HTML to PDF: @media print style is not being honored|Bug|
 |PDFNET-44967|Print header and footer during HTML to PDF conversion|Bug|
