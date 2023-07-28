@@ -4,7 +4,7 @@ type: docs
 weight: 120
 url: /javascript-cpp/release-notes-2023/aspose_pdf-for-javascript-cpp-23-5-release-notes/
 description: This article decsribes changes and updates in version 23.5 of Aspose.PDF for JavaScript via C++
-lastmod: "2023-07-28"
+lastmod: "2023-07-26"
 ---
 
 {{% alert color="primary" %}}

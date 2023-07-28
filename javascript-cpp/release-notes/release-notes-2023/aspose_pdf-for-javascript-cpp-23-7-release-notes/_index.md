@@ -21,14 +21,14 @@ This page contains release notes information for Aspose.PDF for JavaScript via C
 
 ### Added APIs
 
-* **AsposePdfPagesToBmp** - Convert a PDF-file to BMP
-* **AsposePdfPagesToTiff** - Convert a PDF-file to TIFF
-* **AsposePdfPagesToSvg** - Convert a PDF-file to SVG
-* **AsposePdfPagesToSvgZip** - Convert a PDF-file to SVG(zip)
-* **AsposePdfTablesToCSV** - Convert a PDF-file to CSV (extract tables)
 * **AsposePdfToTeX** - Convert a PDF-file to TeX
 * **AsposePdfToXps** - Convert a PDF-file to Xps
 * **AsposePdfToTxt** - Convert a PDF-file to Txt
+* **AsposePdfPagesToSvg** - Convert a PDF-file to SVG
+* **AsposePdfPagesToSvgZip** - Convert a PDF-file to SVG(zip)
+* **AsposePdfPagesToBmp** - Convert a PDF-file to BMP
+* **AsposePdfPagesToTiff** - Convert a PDF-file to TIFF
+* **AsposePdfTablesToCSV** - Convert a PDF-file to CSV (extract tables)
 
 ### Removed APIs
 
