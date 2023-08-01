@@ -66,3 +66,75 @@ Aspose.PDF for JavaScript via C++ supports the feature to digitally sign the PDF
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
 ```
+
+### Using Web Workers
+
+```js
+
+    /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `Result:\n${(evt.data.operation == 'AsposePdfPrepare') ? 'file prepared!': DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+
+    /*set the default PKCS7 key filename*/
+    var fileSign = "test.pfx";
+    /*set the default image (Signature Appearance) filename: 'Aspose.jpg' already loaded, see settings in 'settings.json'*/
+    var signatureAppearance = "Aspose.jpg";
+
+    /*Event handler*/
+    const ffileSignPKCS7 = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        const pageNum = 1;
+        const pswSign = document.getElementById("passwordSign").value;
+        const setXIndent = 100;
+        const setYIndent = 100;
+        const setHeight = 200;
+        const setWidth = 100;
+        const reason = 'Reason';
+        const contact = 'contact@test.com';
+        const location = 'Location';
+        const isVisible = 1;
+        /*sign a PDF-file and save the "ResultSignPKCS7.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfSignPKCS7', "params": [event.target.result, e.target.files[0].name, pageNum, fileSign, pswSign, setXIndent, setYIndent, setHeight, setWidth, reason, contact, location, isVisible, signatureAppearance, "ResultSignPKCS7.pdf"] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+
+    const ffileSign = e => {
+      const file_reader = new FileReader();
+      /*set the PKCS7 key filename*/
+      fileSign = e.target.files[0].name;
+      file_reader.onload = event => {
+        /*prepare(save) the PKCS7 key file from BLOB*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfPrepare', "params": [event.target.result, fileSign] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+
+    const ffileImage = e => {
+      const file_reader = new FileReader();
+      /*set the image filename*/
+      signatureAppearance = e.target.files[0].name;
+      file_reader.onload = event => {
+        /*prepare(save) the image file from BLOB*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfPrepare', "params": [event.target.result, signatureAppearance] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
+```

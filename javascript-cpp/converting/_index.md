@@ -37,6 +37,42 @@ The PDF was developed to provide a standard for presenting documents and other r
     file_reader.readAsArrayBuffer(e.target.files[0]);
   }
 ```
+
+#### Using Web Workers
+
+```js
+
+  /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+
+    /*Event handler*/
+    const ffileToDocX = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*convert a PDF-file to DocX and save the "ResultPDFtoDocX.docx" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfToDocX', "params": [event.target.result, e.target.files[0].name, "ResultPDFtoDocX.docx"] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
+```
+
 ## Convert PDF to XLSX
 
 1. Select a PDF file for converting.
@@ -60,6 +96,41 @@ The PDF was developed to provide a standard for presenting documents and other r
     }
     file_reader.readAsArrayBuffer(e.target.files[0]);
   }
+```
+
+#### Using Web Workers
+
+```js
+
+  /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+
+    /*Event handler*/
+    const ffileToXlsX = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*convert a PDF-file to XlsX and save the "ResultPDFtoXlsX.xlsx" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfToXlsX', "params": [event.target.result, e.target.files[0].name, "ResultPDFtoXlsX.xlsx"] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
 ```
 
 ## Convert PDF to image formats using JavaScript
@@ -99,6 +170,46 @@ Check the code snippet, follow the steps, and solve your tasks of converting PDF
 
 ```
 
+#### Using Web Workers
+
+```js
+
+  /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? 
+          `Files(pages) count: ${evt.data.json.filesCount.toString()}\n${evt.data.params.forEach(
+            (element, index) => DownloadFile(evt.data.json.filesNameResult[index], "image/jpeg", element) ) ?? ""}` : 
+          `Error: ${evt.data.json.errorText}`;
+
+    /*Event handler*/
+    const ffileToJpg = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        const password = 'owner';
+        /*convert a PDF file to jpg-files with template "ResultPdfToJpg{0:D2}.jpg" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfPagesToJpg', "params": [event.target.result, e.target.files[0].name, "ResultPdfToJpg{0:D2}.jpg", 150] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
+```
+
+
 ### Convert PDF to PNG
 
 1. Select a PDF file for converting.
@@ -125,6 +236,45 @@ Check the code snippet, follow the steps, and solve your tasks of converting PDF
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
 
+```
+
+#### Using Web Workers
+
+```js
+
+  /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? 
+          `Files(pages) count: ${evt.data.json.filesCount.toString()}\n${evt.data.params.forEach(
+            (element, index) => DownloadFile(evt.data.json.filesNameResult[index], "image/png", element) ) ?? ""}` : 
+          `Error: ${evt.data.json.errorText}`;
+
+    /*Event handler*/
+    const ffileToPng = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        const password = 'owner';
+        /*convert a PDF file to png-files with template "ResultPdfToPng{0:D2}.png" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfPagesToPng', "params": [event.target.result, e.target.files[0].name, "ResultPdfToPng{0:D2}.png", 150] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
 ```
 
 ## Convert PDF to other formats using JavaScript
@@ -156,6 +306,41 @@ Why should I convert PDF to Grayscale? If the PDF file contains many color image
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
 
+```
+
+#### Using Web Workers
+
+```js
+
+  /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+
+    /*Event handler*/
+    const ffileConvertToGrayscale = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*convert a PDF-file to grayscale and save the "ResultConvertToGrayscale.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfConvertToGrayscale', "params": [event.target.result, e.target.files[0].name, "ResultConvertToGrayscale.pdf"] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
 ```
 
 ### Convert PDF to PDF/A format
@@ -190,6 +375,43 @@ Why should I convert PDF to Grayscale? If the PDF file contains many color image
 
 ```
 
+#### Using Web Workers
+
+```js
+
+  /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}\n${DownloadFile(evt.data.json.fileNameLogResult, "application/xml", evt.data.params[1])}` : `Error: ${evt.data.json.errorText}`;
+
+    /*Event handler*/
+    const ffilePdfConvertToPDFA = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        const pdfFormat = 'Module.PdfFormat.PDF_A_1A';
+        /*convert a PDF-file to PDF/A(1A) and save the "ResultConvertToPDFA.pdf"*/
+        /*during conversion process, the validation is also performed, "ResultConvertToPDFA.xml"- Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfConvertToPDFA', "params": [event.target.result, e.target.files[0].name, pdfFormat, "ResultConvertToPDFA.pdf", "ResultConvertToPDFA.xml"] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
+```
+
 ### Convert PDF/A to PDF format
 
 1. Select a PDF file for converting.
@@ -214,4 +436,39 @@ Why should I convert PDF to Grayscale? If the PDF file contains many color image
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
 
+```
+
+#### Using Web Workers
+
+```js
+
+  /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+
+    /*Event handler*/
+    const ffilePdfAConvertToPDF = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*convert a PDF/A-file to PDF and save the "ResultConvertToPDF.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfAConvertToPDF', "params": [event.target.result, e.target.files[0].name, "ResultConvertToPDF.pdf"] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
 ```

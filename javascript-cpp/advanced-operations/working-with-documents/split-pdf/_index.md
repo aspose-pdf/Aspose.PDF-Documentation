@@ -45,3 +45,40 @@ The following JavaScript code snippet shows you how to split PDF pages into indi
     file_reader.readAsArrayBuffer(e.target.files[0]);
   };
 ```
+
+## Using Web Workers
+
+```js
+
+  /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult1, "application/pdf", evt.data.params[0])}\n${DownloadFile(evt.data.json.fileNameResult2, "application/pdf", evt.data.params[1])}` : `Error: ${evt.data.json.errorText}`;
+
+    /*Event handler*/
+    const ffileSplit = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*set number a page to split*/
+        const pageToSplit = 1;
+        /*split a PDF-file and save the "ResultSplit1.pdf", "ResultSplit2.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfSplit2Files', "params": [event.target.result, e.target.files[0].name, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf"] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
+```

@@ -4,7 +4,7 @@ type: docs
 weight: 120
 url: /javascript-cpp/release-notes-2023/aspose_pdf-for-javascript-cpp-23-5-release-notes/
 description: This article decsribes changes and updates in version 23.5 of Aspose.PDF for JavaScript via C++
-lastmod: "2023-05-29"
+lastmod: "2023-07-26"
 ---
 
 {{% alert color="primary" %}}
@@ -21,8 +21,8 @@ This page contains release notes information for Aspose.PDF for JavaScript via C
 
 ### Added APIs
 
-* **Convert PDF to DocX** - Convert a PDF-file to DocX
-* **Convert PDF to XlsX** - Convert a PDF-file to XlsX
+* **AsposePdfToDocX** - Convert a PDF-file to DocX
+* **AsposePdfToXlsX** - Convert a PDF-file to XlsX
 
 ### Removed APIs
 

@@ -48,6 +48,28 @@ sitemap:
   };
 ```
 
+### Using Web Workers
+
+```js
+
+    /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `info:\n${JSON.stringify(evt.data.json, null, 4)}` : `Error: ${evt.data.json.errorText}`; 
+
+    /*Event handler*/
+    const ffilePdfGetInfo = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*get info (metadata) from PDF file - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfGetInfo', "params": [event.target.result, e.target.files[0].name] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+```
+
 ## Set PDF File Information
 
 Aspose.PDF for JavaScript via C++ allows you to set file-specific information for a PDF, information like author, creation date, subject, and title. To set this information:
@@ -78,3 +100,45 @@ Aspose.PDF for JavaScript via C++ allows you to set file-specific information fo
   };
 ```
 
+### Using Web Workers
+
+```js
+
+    /*Create Web Worker*/
+    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
+    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
+      (evt.data == 'ready') ? 'loaded!' :
+        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+
+    /*Event handler*/
+    const ffilePdfSetInfo = e => {
+      const file_reader = new FileReader();
+      file_reader.onload = event => {
+        /*PDF info: title, creator, author, subject, keywords, creation (date), mod (date modify)*/
+        const title = 'Setting PDF Document Information';
+        const creator = ''; /*if not need to set value, use: undefined or ""/'' (empty string)*/
+        const author = 'Aspose';
+        const subject = undefined;
+        const keywords = 'Aspose.Pdf, DOM, API';
+        const creation = undefined; /*create date*/
+        const mod = '16/02/2023 11:55 PM'; /*modify date*/
+        /*set info a PDF-file and save the "ResultSetInfo.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfSetInfo', "params": [event.target.result, e.target.files[0].name, title, creator, author, subject, keywords, creation, mod, "ResultSetInfo.pdf"] }, [event.target.result]);
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
+    };
+  /// [Code snippet]
+
+    /*make a link to download the result file*/
+    const DownloadFile = (filename, mime, content) => {
+        mime = mime || "application/octet-stream";
+        var link = document.createElement("a"); 
+        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
+        link.download = filename;
+        link.innerHTML = "Click here to download the file " + filename;
+        document.body.appendChild(link); 
+        document.body.appendChild(document.createElement("br"));
+        return filename;
+      }
+```
