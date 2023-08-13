@@ -78,10 +78,11 @@ This page contains release notes information for Aspose.PDF for .NET 23.8.
 |PDFNET-40925|PDF to PDFA: resultant PDFA fails the compliance verification|Bug|
 |PDFNET-54663|Aspose.PDF throws exception when saving PDF|Bug|
 |PDFNET-55206|PDF to TIFF content missing|Bug|
+|PDFNET-55050|Arabic word replacement breaks whole line|Bug|
 ## Public API and Backward Incompatible Changes
 
 ### Added APIs
-* Method:Aspose.Pdf.Document.HasIncrementalUpdates System.Boolean
+* Method:Aspose.Pdf.Document.HasIncrementalUpdate System.Boolean
 * Method:Aspose.Pdf.Matrix.Scale(System.Double,System.Double,System.Double@,System.Double@) System.Void
 * Method:Aspose.Pdf.Matrix.UnScale(System.Double,System.Double,System.Double@,System.Double@) System.Void
 * Method:Aspose.Pdf.Operator.ValueEquals(Aspose.Pdf.Operator) System.Boolean
