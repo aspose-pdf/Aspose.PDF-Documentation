@@ -72,7 +72,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.8.
 |PDFNET-42207|After Flattening fields some fields value disappear|Bug|
 |PDFNET-41701|Error extracting embedded attachments|Bug|
 |PDFNET-40984|HTML to PDF: list style rendering incorrectly|Bug|
-|PDFNET-38194|HTML to PDF - Unable to convert HTML to PDF|Bug|
+|PDFNET-38194|HTML to PDF: Unable to convert HTML to PDF|Bug|
 |PDFNET-39518|HTML to PDF: img with display:none CSS does not work|Bug|
 |PDFNET-40926|PDF to PDFA: image is removed in resultant file|Bug|
 |PDFNET-40925|PDF to PDFA: resultant PDFA fails the compliance verification|Bug|
