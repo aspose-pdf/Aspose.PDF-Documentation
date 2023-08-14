@@ -39,7 +39,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.8.
 |PDFNET-55025|SVG: Image clipped|Bug|
 |PDFNET-55222|System.NullReferenceException while setting appearance properties on TextBoxField|Bug|
 |PDFNET-55196|Text Replacement Changes the Background|Bug|
-|PDFNET-51890|PDF to DOCX: NullPointerException in EnchantedFlow mode|Bug|
+|PDFNET-51890|PDF to DOCX: NullPointerException in EnhancedFlow mode|Bug|
 |PDFNET-49236|Aspose.Pdf 20.12: Thai characters not converted properly when converting Pdf to Docs|Bug|
 |PDFNET-46702|Colored areas lost when converting PDF to TIFF|Bug|
 |PDFNET-53174|ComboBoxField value cannot be set in certain PDF forms|Bug|
