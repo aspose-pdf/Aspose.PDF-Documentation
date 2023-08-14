@@ -21,7 +21,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.8.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|PDFNET-54615|Add Incremental Updates detection|Fetaure|
+|PDFNET-54615|Add Incremental Updates detection|Feature|
 |PDFNET-55034|Provide a way to work with complex checkbox fields|Feature|
 |PDFNET-52395|Add Aspose.PdfOrganizer Optimize API|Feature|
 |PDFNET-51913|Extract Drawn Shapes from PDF document|Enhancement|
