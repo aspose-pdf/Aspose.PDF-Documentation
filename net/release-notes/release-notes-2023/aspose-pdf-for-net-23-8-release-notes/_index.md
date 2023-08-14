@@ -62,7 +62,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.8.
 |PDFNET-38790|PDF to PDFA2A/PDFA2B/PDFA3B: Converting PDF, generated from ppt using Aspose.Slides, to PDFA2A/PDFA2B/PDFA3B fails the compliance|Bug|
 |PDFNET-52495|System.IO.FileLoadException is thrown while loading XPS|Bug|
 |PDFNET-54094|ComboBox text cut off in browsers|Bug|
-|PDFNET-54003|OutOfMemoryException during pfd to pdf/a conversion|Bug|
+|PDFNET-54003|OutOfMemoryException during PDF to PDF/A conversion|Bug|
 |PDFNET-55039|Copying a field to the same page deletes the original field|Bug|
 |PDFNET-51558|PDF to Word conversion throws a IndexOutOfRangeException|Bug|
 |PDFNET-51811|System.ArgumentException is thrown while saving PDF to DOCX|Bug|
