@@ -22,12 +22,12 @@ This page contains release notes information for Aspose.PDF for .NET 23.8.
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
 |PDFNET-54615|Add Incremental Updates detection|Feature|
-|PDFNET-55034|Provide a way to work with complex checkbox fields|Feature|
+|PDFNET-55034|Provide a way to work with nested checkbox fields|Feature|
 |PDFNET-52395|Add Aspose.PdfOrganizer Optimize API|Feature|
 |PDFNET-51913|Extract Drawn Shapes from PDF document|Enhancement|
 |PDFNET-53955|ResizeContents raises InvalidCastException|Enhancement|
 |PDFNET-47472|Removing specific images from PDF using operators|Enhancement|
-|PDFNET-48653|APS-to-PDF conversion and saving consume a lot of memory and take long time|Enhancement|
+|PDFNET-48653|APS-to-PDF conversion and saving consume less and take long time|Enhancement|
 |PDFNET-52641|Change XFA button conversion|Enhancement|
 |PDFNET-52457|Difference between Page.PageInfo.Width(Height) and Page.Rectangle.Width(Height) is a bug or a malformed document? Hang case for Graph object|Bug|
 |PDFNET-53735|Huge file size after adding a fillable field|Bug|
@@ -165,5 +165,3 @@ This page contains release notes information for Aspose.PDF for .NET 23.8.
 * Property:Aspose.Pdf.Facades.Form.SaveOptions Aspose.Pdf.SaveOptions
 * Property:Aspose.Pdf.Facades.Form.AttachmentName System.String
 * Method:Aspose.Pdf.Document.Save(System.Web.HttpResponse,System.String,Aspose.Pdf.ContentDisposition,Aspose.Pdf.SaveOptions) System.Void
-
-
