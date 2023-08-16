@@ -21,7 +21,6 @@ This page contains release notes information for Aspose.PDF for .NET 23.7.
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-Features
 |PDFNET-51464|Copy OutputIntents from input PDF to destination PDF|Feature|
 |PDFNET-46298|Add the shape extraction support|Feature|
 |PDFNET-53628|Detect Overflow when adding text|Feature|
