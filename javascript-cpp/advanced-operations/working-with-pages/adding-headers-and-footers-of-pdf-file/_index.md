@@ -41,12 +41,14 @@ The following code snippet shows you how to add text in the header of a PDF file
 
 ```js
 
-  /*Create Web Worker*/
+    /*Create Web Worker*/
     const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
     AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
     AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
       (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+        (evt.data.json.errorCode == 0) ?
+          `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` :
+          `Error: ${evt.data.json.errorText}`;
 
     /*Event handler*/
     const ffileAddTextHeaderFooter = e => {
@@ -54,14 +56,17 @@ The following code snippet shows you how to add text in the header of a PDF file
       file_reader.onload = event => {
         const header = 'Aspose.PDF for JavaScript via C++';
         const footer = 'ASPOSE';
-        /*add page header a PDF-file and save the "ResultAddHeaderFooter.pdf" - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfAddTextHeaderFooter', "params": [event.target.result, e.target.files[0].name, header, footer, "ResultAddHeaderFooter.pdf"] }, [event.target.result]);
+        /*Add text in Header/Footer of a PDF-file and save the "ResultAddHeaderFooter.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage(
+          { "operation": 'AsposePdfAddTextHeaderFooter',
+            "params": [event.target.result, e.target.files[0].name, header, footer, "ResultAddHeaderFooter.pdf"] },
+          [event.target.result]
+        );
       };
       file_reader.readAsArrayBuffer(e.target.files[0]);
     };
-  /// [Code snippet]
 
-    /*make a link to download the result file*/
+    /*Make a link to download the result file*/
     const DownloadFile = (filename, mime, content) => {
         mime = mime || "application/octet-stream";
         var link = document.createElement("a"); 

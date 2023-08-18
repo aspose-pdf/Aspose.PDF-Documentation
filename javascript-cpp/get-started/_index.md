@@ -38,5 +38,18 @@ Using Aspose.PDF for JavaScript in your project gives you the following profits:
 
 ## Conversion Features
 
-- [Convert PDF to JPEG images](/pdf/javascript-cpp/conversion/)
-- [Convert PDF to PNG images](/pdf/javascript-cpp/conversion/)
+- [Convert PDF to JPEG](/pdf/javascript-cpp/conversion/)
+- [Convert PDF to PNG](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to Tiff](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to BMP](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to SVG](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to SVG(Zip)](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to TeX](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to Xps](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to CSV](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to TXT](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to DocX](/pdf/javascript-cpp/conversion/)
+- [Convert a PDF to XlsX](/pdf/javascript-cpp/conversion/)
+- [Convert PDF to Grayscale](/pdf/javascript-cpp/conversion/)
+- [Convert PDF/A to PDF format](/pdf/javascript-cpp/conversion/)
+- [Convert PDF to PDF/A format](/pdf/javascript-cpp/conversion/)

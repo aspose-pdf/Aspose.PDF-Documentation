@@ -31,15 +31,15 @@ The following JavaScript code snippet shows you how to split PDF pages into indi
   var ffileSplit = function (e) {
     const file_reader = new FileReader();
     file_reader.onload = (event) => {
-      /*set number a page to split*/
+      /*Set number a page to split*/
       const pageToSplit = 1;
-      /*split a PDF-file and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/
+      /*Split to two PDF-files and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/
       const json = AsposePdfSplit2Files(event.target.result, e.target.files[0].name, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf");
       if (json.errorCode == 0) document.getElementById('output').textContent = e.target.files[0].name + " split: " + json.fileNameResult1 + ", " + json.fileNameResult2;
       else document.getElementById('output').textContent = json.errorText;
-      /*make a link to download the first result file*/
+      /*Make a link to download the first result file*/
       DownloadFile(json.fileNameResult1, "application/pdf");
-      /*make a link to download the second result file*/
+      /*Make a link to download the second result file*/
       DownloadFile(json.fileNameResult2, "application/pdf");
     };
     file_reader.readAsArrayBuffer(e.target.files[0]);
@@ -50,27 +50,33 @@ The following JavaScript code snippet shows you how to split PDF pages into indi
 
 ```js
 
-  /*Create Web Worker*/
+    /*Create Web Worker*/
     const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
     AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
     AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
       (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult1, "application/pdf", evt.data.params[0])}\n${DownloadFile(evt.data.json.fileNameResult2, "application/pdf", evt.data.params[1])}` : `Error: ${evt.data.json.errorText}`;
+        (evt.data.json.errorCode == 0) ?
+          `Result:\n${DownloadFile(evt.data.json.fileNameResult1, "application/pdf", evt.data.params[0])}
+                  \n${DownloadFile(evt.data.json.fileNameResult2, "application/pdf", evt.data.params[1])}` :
+          `Error: ${evt.data.json.errorText}`;
 
     /*Event handler*/
     const ffileSplit = e => {
       const file_reader = new FileReader();
       file_reader.onload = event => {
-        /*set number a page to split*/
+        /*Set number a page to split*/
         const pageToSplit = 1;
-        /*split a PDF-file and save the "ResultSplit1.pdf", "ResultSplit2.pdf" - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfSplit2Files', "params": [event.target.result, e.target.files[0].name, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf"] }, [event.target.result]);
+        /*Split to two PDF-files and save the "ResultSplit1.pdf", "ResultSplit2.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage(
+          { "operation": 'AsposePdfSplit2Files',
+            "params": [event.target.result, e.target.files[0].name, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf"] },
+          [event.target.result]
+        );
       };
       file_reader.readAsArrayBuffer(e.target.files[0]);
     };
-  /// [Code snippet]
 
-    /*make a link to download the result file*/
+    /*Make a link to download the result file*/
     const DownloadFile = (filename, mime, content) => {
         mime = mime || "application/octet-stream";
         var link = document.createElement("a"); 

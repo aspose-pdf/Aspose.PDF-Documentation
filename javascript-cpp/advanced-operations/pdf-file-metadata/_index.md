@@ -57,14 +57,19 @@ sitemap:
     AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
     AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
       (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ? `info:\n${JSON.stringify(evt.data.json, null, 4)}` : `Error: ${evt.data.json.errorText}`; 
+        (evt.data.json.errorCode == 0) ?
+          `info:\n${JSON.stringify(evt.data.json, null, 4)}` :
+          `Error: ${evt.data.json.errorText}`; 
 
     /*Event handler*/
     const ffilePdfGetInfo = e => {
       const file_reader = new FileReader();
       file_reader.onload = event => {
-        /*get info (metadata) from PDF file - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfGetInfo', "params": [event.target.result, e.target.files[0].name] }, [event.target.result]);
+        /*Get info (metadata) from a PDF-file - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage(
+          { "operation": 'AsposePdfGetInfo', "params": [event.target.result, e.target.files[0].name] },
+          [event.target.result]
+        );
       };
       file_reader.readAsArrayBuffer(e.target.files[0]);
     };
@@ -83,21 +88,20 @@ Aspose.PDF for JavaScript via C++ allows you to set file-specific information fo
 
 ```js
 
-  var ffilePdfSetInfo = function (e) {
-    const file_reader = new FileReader();
-    file_reader.onload = (event) => {
-      /*Set info (metadata) in PDF file.*/
-      /*Set PDF info: title, creator, author, subject, keywords, creation (date), mod (date modify)*/
-      /*if not need to set value, use undefined or "" (empty string)*/
-      /*set info a PDF-file and save the "ResultSetInfo.pdf"*/
-      const json = AsposePdfSetInfo(event.target.result, e.target.files[0].name, "Setting PDF Document Information", "", "Aspose", undefined, "Aspose.Pdf, DOM, API", undefined, "16/02/2023 11:55 PM", "ResultSetInfo.pdf");
-      if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
-      else document.getElementById('output').textContent = json.errorText;
-      /*make a link to download the result file*/
-      DownloadFile(json.fileNameResult, "application/pdf");
+    var ffilePdfSetInfo = function (e) {
+      const file_reader = new FileReader();
+      file_reader.onload = (event) => {
+        /*Set PDF info: title, creator, author, subject, keywords, creation (date), mod (date modify)*/
+        /*If not need to set value, use undefined or "" (empty string)*/
+        /*Set info (metadata) in a PDF-file and save the "ResultSetInfo.pdf"*/
+        const json = AsposePdfSetInfo(event.target.result, e.target.files[0].name, "Setting PDF Document Information", "", "Aspose", undefined, "Aspose.Pdf, DOM, API", undefined, "16/02/2023 11:55 PM", "ResultSetInfo.pdf");
+        if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
+        else document.getElementById('output').textContent = json.errorText;
+        /*Make a link to download the result file*/
+        DownloadFile(json.fileNameResult, "application/pdf");
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
     };
-    file_reader.readAsArrayBuffer(e.target.files[0]);
-  };
 ```
 
 ### Using Web Workers
@@ -109,7 +113,9 @@ Aspose.PDF for JavaScript via C++ allows you to set file-specific information fo
     AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
     AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
       (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+        (evt.data.json.errorCode == 0) ?
+          `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` :
+          `Error: ${evt.data.json.errorText}`;
 
     /*Event handler*/
     const ffilePdfSetInfo = e => {
@@ -123,14 +129,17 @@ Aspose.PDF for JavaScript via C++ allows you to set file-specific information fo
         const keywords = 'Aspose.Pdf, DOM, API';
         const creation = undefined; /*create date*/
         const mod = '16/02/2023 11:55 PM'; /*modify date*/
-        /*set info a PDF-file and save the "ResultSetInfo.pdf" - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfSetInfo', "params": [event.target.result, e.target.files[0].name, title, creator, author, subject, keywords, creation, mod, "ResultSetInfo.pdf"] }, [event.target.result]);
+        /*Set info (metadata) in a PDF-file and save the "ResultSetInfo.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage(
+          { "operation": 'AsposePdfSetInfo',
+            "params": [event.target.result, e.target.files[0].name, title, creator, author, subject, keywords, creation, mod, "ResultSetInfo.pdf"] },
+          [event.target.result]
+        );
       };
       file_reader.readAsArrayBuffer(e.target.files[0]);
     };
-  /// [Code snippet]
 
-    /*make a link to download the result file*/
+    /*Make a link to download the result file*/
     const DownloadFile = (filename, mime, content) => {
         mime = mime || "application/octet-stream";
         var link = document.createElement("a"); 

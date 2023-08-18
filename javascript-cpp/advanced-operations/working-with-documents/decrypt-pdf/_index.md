@@ -27,44 +27,49 @@ It is better to solve this problem once by using the Aspose.PDF for JavaScript v
 
 ```js
 
-  var ffileDecrypt = function (e) {
-    const file_reader = new FileReader();
-    file_reader.onload = (event) => {
-      /*decrypt a PDF-file with password is "owner" and save the "ResultDecrypt.pdf"*/
-      const json = AsposePdfDecrypt(event.target.result, e.target.files[0].name, "owner", "ResultDecrypt.pdf");
-      if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
-      else document.getElementById('output').textContent = json.errorText;
-      /*make a link to download the result file*/
-      DownloadFile(json.fileNameResult, "application/pdf");
+    var ffileDecrypt = function (e) {
+      const file_reader = new FileReader();
+      file_reader.onload = (event) => {
+        /*Decrypt a PDF-file with password is "owner" and save the "ResultDecrypt.pdf"*/
+        const json = AsposePdfDecrypt(event.target.result, e.target.files[0].name, "owner", "ResultDecrypt.pdf");
+        if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
+        else document.getElementById('output').textContent = json.errorText;
+        /*Make a link to download the result file*/
+        DownloadFile(json.fileNameResult, "application/pdf");
+      };
+      file_reader.readAsArrayBuffer(e.target.files[0]);
     };
-    file_reader.readAsArrayBuffer(e.target.files[0]);
-  };
 ```
 
 ## Using Web Workers
 
 ```js
 
-  /*Create Web Worker*/
+    /*Create Web Worker*/
     const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
     AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
     AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
       (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+        (evt.data.json.errorCode == 0) ?
+          `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` :
+          `Error: ${evt.data.json.errorText}`;
 
     /*Event handler*/
     const ffileDecrypt = e => {
       const file_reader = new FileReader();
       file_reader.onload = event => {
         const password = 'owner';
-        /*decrypt a PDF-file with password is "owner" and save the "ResultDecrypt.pdf" - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfDecrypt', "params": [event.target.result, e.target.files[0].name, password, "ResultDecrypt.pdf"] }, [event.target.result]);
+        /*Decrypt a PDF-file with password is "owner" and save the "ResultDecrypt.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage(
+          { "operation": 'AsposePdfDecrypt',
+            "params": [event.target.result, e.target.files[0].name, password, "ResultDecrypt.pdf"] }, 
+          [event.target.result]
+        );
       };
       file_reader.readAsArrayBuffer(e.target.files[0]);
     };
-  /// [Code snippet]
 
-    /*make a link to download the result file*/
+    /*Make a link to download the result file*/
     const DownloadFile = (filename, mime, content) => {
         mime = mime || "application/octet-stream";
         var link = document.createElement("a"); 
