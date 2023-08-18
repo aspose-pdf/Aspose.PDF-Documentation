@@ -1,5 +1,5 @@
 ---
-title: Convert HTML to PDF file 
+title: Convert HTML to PDF file in Java
 linktitle: Convert HTML to PDF file
 type: docs
 weight: 40
@@ -11,27 +11,41 @@ sitemap:
     priority: 0.8
 ---
 
+## Overview
+
+This article explains how to convert HTML to PDF using Java. The code is very simple, just load HTML to Document class and save it as output PDF. Converting MHTML to PDF in Java is also similar. It covers the following topics
+
+- [Java HTML to PDF](#convert-html-to-pdf)
+- [Java MHTML to PDF](#convert-mhtml-to-pdf)
+- [Java Convert HTML to PDF](#convert-html-to-pdf)
+- [Java Convert MHTML to PDF](#convert-mhtml-to-pdf)
+- [Java PDF from HTML](#convert-html-to-pdf)
+- [Java PDF from MHTML](#convert-mhtml-to-pdf)
+- [Java HTML to PDF Converter - How to Convert WebPage to PDF](#convert-html-to-pdf)
+- [Java HTML to PDF Library, API or Code to Render, Save, Generate or Create PDF Programmatically from HTML](#convert-html-to-pdf)
+
+## Java HTML to PDF Converter Library
+
 **Aspose.PDF for Java** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly.
 The process of converting HTML to PDF can be flexibly customized.
 
 ## Convert HTML to PDF
 
-Quick conversion is shown in the following example.
+The following Java code sample shows how to convert an HTML document to a PDF.
+
+1. Create an instance of the [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) class.
+1. Initialize [Document](https://reference.aspose.com/page/java/com.aspose.page/document) object.
+1. Save output PDF document by calling **Document.save(String)** method.
 
 ```java
-public final class ConvertHTMLtoPDF {
+// Create HTML load options
+HtmlLoadOptions htmloptions = new HtmlLoadOptions(); 		
 
-    private ConvertHTMLtoPDF() {
-    }
+// Load HTML file
+Document doc = new Document("Sample.html", htmloptions); 
 
-    private static Path _dataDir = Paths.get("/home/aspose/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-
-        ConvertHTMLtoPDF_Simple();
-        ConvertHTMLtoPDFAdvanced_MediaType();
-    }
-}
+// Convert HTML file to PDF
+doc.save("HTMLtoPDF.pdf");
 ```
 
 {{% alert color="success" %}}

@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft Word documents 
+title: Convert PDF to Microsoft Word Documents in Java
 linktitle: Convert PDF to Word
 type: docs
 weight: 10
@@ -11,6 +11,19 @@ sitemap:
     priority: 0.7
 ---
 
+## Overview
+
+This article explains how to convert PDF to Word using Java. The code is very simple, just load PDF to Document class and save it as output Microsoft Word DOC or DOCX format. It covers the following topics
+
+- [Java PDF to Word](#convert-pdf-to-doc)
+- [Java PDF to DOC](#convert-pdf-to-doc)
+- [Java PDF to DOCX](#convert-pdf-to-docx)
+- [Java Convert PDF to Word](#convert-pdf-to-docx)
+- [Java Convert PDF to DOC](#convert-pdf-to-doc)
+- [Java Convert PDF to DOCX](#convert-pdf-to-docx)
+- [Java How to convert PDF file to Word DOC](#convert-pdf-to-doc) or [Word DOCX](#convert-pdf-to-docx)
+- [Java PDF to Word Library, API or Code to Save, Generate or Create Word Documents Programmatically from PDF](#convert-pdf-to-docx)
+
 ## Convert PDF to DOC
 
 One of the most popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. Aspose.PDF for Java allows you to convert PDF files to DOC.
@@ -19,7 +32,10 @@ One of the most popular feature is PDF to Microsoft Word DOC conversion, which m
 
 To make things simple and understandable, Aspose.PDF for Java provides a two-line code for transforming a source PDF file into a DOC file. 
 
-The following code snippet shows the process of converting a PDF file into DOC format.
+The following Java code snippet shows the process of converting a PDF file into DOC format.
+
+1. Create an instance of [Document](https://reference.aspose.com/page/java/com.aspose.page/document) object with the source PDF document.
+2. Save it to **SaveFormat.Doc** format by calling **Document.save()** method.
 
 ```java
     public static void main(String[] args) throws IOException {
@@ -85,7 +101,10 @@ The DocFormat enumeration also provides the option to choose DOCX as the output 
 
 ## How to convert PDF to DOCX
 
-For quick conversion use Save() method with SaveFormat.DocX options:
+The following Java code snippet shows the process of converting a PDF file into DOCX format.
+
+1. Create an instance of [Document](https://reference.aspose.com/page/java/com.aspose.page/document) object with the source PDF document.
+2. Save it to **SaveFormat.DocX** format by calling **Document.save()** method.
 
 ```java
     public static void ConvertPDFtoWord_DOCX_Format() {

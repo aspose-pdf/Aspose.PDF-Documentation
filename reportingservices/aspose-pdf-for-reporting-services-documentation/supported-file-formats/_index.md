@@ -6,14 +6,15 @@ url: /reportingservices/supported-file-formats/
 lastmod: "2021-06-05"
 ---
 
-## <ins>**Supported Load Formats**
+## **Supported Load Formats**
 The following table indicates the file formats that Aspose.PDF for Reporting Services can load.
 
 |**Format**|**Description**|
 | :- | :- |
 |RDL|Report Definition Language|
 |[HTML](https://docs.fileformat.com/web/html/)|Hypertext Markup Language|
-## <ins>**Supported Save Formats**
+
+## **Supported Save Formats**
 The following table indicates the file formats in which the document can be saved by using Aspose.PDF for Reporting Services. 
 
 |**Format**|**Description**|
