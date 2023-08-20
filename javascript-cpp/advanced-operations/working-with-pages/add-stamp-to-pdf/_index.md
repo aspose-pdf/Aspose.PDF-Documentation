@@ -67,14 +67,18 @@ The following code snippet shows how to add image stamp in the PDF file.
 
 ```js
 
-  /*Create Web Worker*/
+    /*Create Web Worker*/
     const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
     AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
     AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
       (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ? `Result:\n${(evt.data.operation == 'AsposePdfPrepare') ? 'image prepared!': DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+        (evt.data.json.errorCode == 0) ?
+          `Result:\n${(evt.data.operation == 'AsposePdfPrepare') ?
+            'image prepared!':
+            DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` :
+          `Error: ${evt.data.json.errorText}`;
 
-    /*set the default stamp filename: 'Aspose.jpg' already loaded, see settings in 'settings.json'*/
+    /*Set the default stamp filename: 'Aspose.jpg' already loaded, see settings in 'settings.json'*/
     var fileStamp = "Aspose.jpg";
 
     /*Event handler*/
@@ -88,25 +92,32 @@ The following code snippet shows how to add image stamp in the PDF file.
         const setWidth_ = 40;
         const rotation_ = 'Module.Rotation.on270';
         const setOpacity = 0.5;
-        /*insert the stamp file to a PDF-file and save the "ResultStamp.pdf" - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfAddStamp', "params": [event.target.result, e.target.files[0].name, fileStamp, setBackground, setXIndent_, setYIndent_, setHeight_, setWidth_, rotation_, setOpacity, "ResultStamp.pdf"] }, [event.target.result]);
+        /*Add stamp to a PDF-file and save the "ResultStamp.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage(
+          { "operation": 'AsposePdfAddStamp',
+            "params": [event.target.result, e.target.files[0].name, fileStamp, setBackground, setXIndent_, setYIndent_,
+                      setHeight_, setWidth_, rotation_, setOpacity, "ResultStamp.pdf"] },
+          [event.target.result]
+        );
       };
       file_reader.readAsArrayBuffer(e.target.files[0]);
     };
 
     const ffileStamp = e => {
       const file_reader = new FileReader();
-      /*set the stamp filename*/
+      /*Set the stamp filename*/
       fileStamp = e.target.files[0].name;
       file_reader.onload = event => {
-        /*prepare(save) the stamp file from BLOB*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfPrepare', "params": [event.target.result, e.target.files[0].name] }, [event.target.result]);
+        /*Save the BLOB in the Memory FS for processing*/
+        AsposePDFWebWorker.postMessage(
+            { "operation": 'AsposePdfPrepare', "params": [event.target.result, e.target.files[0].name] },
+            [event.target.result]
+        );
       };
       file_reader.readAsArrayBuffer(e.target.files[0]);
     };
-  /// [Code snippet]
 
-    /*make a link to download the result file*/
+    /*Make a link to download the result file*/
     const DownloadFile = (filename, mime, content) => {
         mime = mime || "application/octet-stream";
         var link = document.createElement("a"); 

@@ -49,12 +49,14 @@ The following code snippet shows you how to encrypt PDF files.
 
 ```js
 
-  /*Create Web Worker*/
+    /*Create Web Worker*/
     const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
     AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
     AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
       (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+        (evt.data.json.errorCode == 0) ?
+          `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` :
+          `Error: ${evt.data.json.errorText}`;
 
     /*Event handler*/
     const ffileEncrypt = e => {
@@ -64,14 +66,18 @@ The following code snippet shows you how to encrypt PDF files.
         const password_owner = 'owner';
         const permissions = 'Module.Permissions.PrintDocument';
         const algorithm = 'Module.CryptoAlgorithm.RC4x40';
-        /*encrypt a PDF-file with passwords "user" and "owner", and save the "ResultEncrypt.pdf" - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfEncrypt', "params": [event.target.result, e.target.files[0].name, password_user, password_owner, permissions, algorithm, "ResultEncrypt.pdf"] }, [event.target.result]);
+        /*Encrypt a PDF-file with passwords "user" and "owner", and save the "ResultEncrypt.pdf" - Ask Web Worker*/
+        AsposePDFWebWorker.postMessage(
+          { "operation": 'AsposePdfEncrypt',
+            "params": [event.target.result, e.target.files[0].name, password_user, password_owner,
+                      permissions, algorithm, "ResultEncrypt.pdf"] },
+          [event.target.result]
+        );
       };
       file_reader.readAsArrayBuffer(e.target.files[0]);
     };
-  /// [Code snippet]
 
-    /*make a link to download the result file*/
+    /*Make a link to download the result file*/
     const DownloadFile = (filename, mime, content) => {
         mime = mime || "application/octet-stream";
         var link = document.createElement("a"); 

@@ -11,6 +11,36 @@ sitemap:
 lastmod: "2023-04-14"
 ---
 
+## What's new in Aspose.PDF for JavaScript via C++ 23.7
+
+1. Improved ‘example.html’ and ‘example_worker.html’.
+1. **AsposePdfPagesToTiff** - [Convert a PDF-file to Tiff](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfPagesToBmp** - [Convert a PDF-file to BMP](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfPagesToSvg** - [Convert a PDF-file to SVG](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfPagesToSvgZip** - [Convert a PDF-file to SVG(Zip)](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfToTeX** - [Convert a PDF-file to TeX](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfToXps** - [Convert a PDF-file to Xps](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfTablesToCSV** - [Convert a PDF-file to CSV](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfToTxt** - [Convert a PDF-file to TXT](/pdf/javascript-cpp/conversion/)
+
+
+## What's new in Aspose.PDF for JavaScript via C++ 23.6
+
+1. Added the ability to use Web Workers.
+
+Examples using Web Workers are included in the distribution package (‘example_worker.html’ and ‘snippets’ folder).
+
+_Using Web Worker:_
+
+```js
+const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
+```
+
+## What's new in Aspose.PDF for JavaScript via C++ 23.5
+
+1. **AsposePdfToDocX** - [Convert a PDF-file to DocX](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfToXlsX** - [Convert a PDF-file to XlsX](/pdf/javascript-cpp/conversion/)
+
 ## What's new in Aspose.PDF for JavaScript via C++ 23.4
 
 1. **AsposePdfConvertToPDFA** - [Convert a PDF-file to PDF/A](/pdf/javascript-cpp/conversion/)
