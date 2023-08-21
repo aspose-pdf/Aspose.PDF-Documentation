@@ -43,6 +43,10 @@ Aspose.PDF for JavaScript supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Add image in PDF file
 - PDF to JPEG conversion
 - PDF to PNG conversion
+- PDF to Tiff conversion
+- PDF to BMP conversion
+- PDF to SVG conversion
+- PDF to SVG(Zip) conversion
 
 ## Page
 

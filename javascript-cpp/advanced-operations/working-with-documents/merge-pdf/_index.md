@@ -71,21 +71,29 @@ The following code snippet shows how to concatenate PDF files:
           `Error: ${evt.data.json.errorText}`;
 
     /*Event handler. Only two files are merged. If only one file is selected, then use it. For the second file you need to perform AsposePdfPrepare */
-    const ffileMerge = evt => fileProcess('AsposePdfPrepare',  evt.target.files[(evt.target.files.length == 1) ? 0 : 1], [{"operation": 'AsposePdfMerge2Files', "file": evt.target.files[0]}])
+    const ffileMerge = evt => fileProcess('AsposePdfPrepare',  evt.target.files[(evt.target.files.length == 1) ? 0 : 1],
+                                          [{"operation": 'AsposePdfMerge2Files', "file": evt.target.files[0]}])
     /* Ask Web Worker */
     const fileProcess = (operation, ffile, optdata) => {
       const file_reader = new FileReader();
       file_reader.onload = event => {
         if (operation == 'AsposePdfPrepare')
-          return AsposePDFWebWorker.postMessage({ "operation": operation, "params": [event.target.result, ffile.name, optdata] }, [event.target.result]);
+          return AsposePDFWebWorker.postMessage(
+                  { "operation": operation, "params": [event.target.result, ffile.name, optdata] },
+                  [event.target.result]
+                );
         else if (operation == 'AsposePdfMerge2Files')
-          return AsposePDFWebWorker.postMessage({ "operation": operation, "params": [event.target.result, undefined, ffile.name, (optdata === undefined) ? ffile.name : optdata.fileName2, `Result${operation}.pdf`] }, [event.target.result]);
+          return AsposePDFWebWorker.postMessage(
+                  { "operation": operation, 
+                    "params": [event.target.result, undefined, ffile.name, (optdata === undefined) ? ffile.name : optdata.fileName2,
+                                `Result${operation}.pdf`] },
+                  [event.target.result]
+                );
       }
       file_reader.readAsArrayBuffer(ffile);
     }
-  /// [Code snippet]
 
-    /*make a link to download the result file*/
+    /*Make a link to download the result file*/
     const DownloadFile = (filename, mime, content) => {
         mime = mime || "application/octet-stream";
         var link = document.createElement("a"); 
