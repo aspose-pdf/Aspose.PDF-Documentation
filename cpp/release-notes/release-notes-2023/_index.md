@@ -3,7 +3,7 @@ title: Release Notes - 2023
 type: docs
 weight: 10
 url: /cpp/release-notes-2023/
-lastmod: "2023-08-17"
+lastmod: "2023-08-23"
 ---
 Aspose.PDF for C++ Release Notes list new features, enhancement, and fixed bugs that were made in 2023.
 

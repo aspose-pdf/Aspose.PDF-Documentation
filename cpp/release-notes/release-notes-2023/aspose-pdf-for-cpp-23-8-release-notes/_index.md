@@ -4,13 +4,21 @@ type: docs
 weight: 120
 url: /cpp/aspose-pdf-for-cpp-23-8-release-notes/
 description: This article decsribes changes and updates in version 23.8 of Aspose.PDF for C++ library
-lastmod: "2023-08-17"
+lastmod: "2023-08-23"
 ---
 {{% alert color="primary" %}}
 
 This page contains release notes information for Aspose.PDF for C++ 23.8.
 
 {{% /alert %}}
+
+## Apple Silicon Support
+
+We are delighted to introduce the arm64 version of the Aspose.PDF for C++ macOS, tailored specifically for the innovative Apple Silicon platform.
+This architecture powers all contemporary Apple computers, showcasing exceptional performance and efficiency.
+
+Our archive now encompasses two library versions, each accompanied by its respective suffix: arm64 and x86_64.
+This ensures compatibility across different hardware configurations, offering enhanced flexibility to our users.
 
 ## Changes and Improvements
 
