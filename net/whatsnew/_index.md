@@ -21,7 +21,7 @@ The function for detecting Incremental Updates in a PDF document has been added.
 
     var path = "C:\test.pdf";
     var doc = new Document(path);
-    var updatedIncrementally = doc.HasIncrementalUpdate();
+    Console.WriteLine(doc.HasIncrementalUpdate());
 ```
 
 Also, 23.8 supports the ways to work with nested checkbox fields. Many fillable PDF forms have checkbox fields that act as radio groups:
@@ -255,12 +255,13 @@ From Aspose.PDF 23.1.1 support to add the next plugins:
 
 From 23.1 version support to create PrinterMark annotation.
 
-Printer’s marks are graphic symbols or text added to a page to assist production personnel in identifying components of a multiple-plate job and maintaining consistent output during production. Examples commonly used in the printing industry include:
+Printer's marks are graphic symbols or text added to a page to assist production personnel in identifying components of a multiple-plate job and maintaining consistent output during production. Examples commonly used in the printing industry include:
+
 - Registration targets for aligning plates
 - Gray ramps and colour bars for measuring colours and ink densities
 - Cut marks showing where the output medium is to be trimmed
 
-We will show the example of the option with color bars for measuring colors and ink densities. There is a basic abstract class PrinterMarkAnnotation and from it daughter ColorBarAnnotation - which already implements these stripes. Let's check the example:
+We will show the example of the option with color bars for measuring colors and ink densities. There is a basic abstract class PrinterMarkAnnotation and from it child ColorBarAnnotation - which already implements these stripes. Let's check the example:
 
 ```cs
 
@@ -298,7 +299,12 @@ Also support the vector images extraction. Try using the following code to detec
 ```cs
 
     var doc = new Document(input);
-    doc.Pages[1].TrySaveVectorGraphics(outputSvg);
+    try{
+        doc.Pages[1].TrySaveVectorGraphics(outputSvg);
+    }
+    catch(Exception){
+
+    }
 ```
 
 ## What's new in Aspose.PDF 22.12
