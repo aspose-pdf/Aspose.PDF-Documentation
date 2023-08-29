@@ -205,7 +205,7 @@ From Aspose.PDF 23.3 support to add the next plugins:
 
 ## What's new in Aspose.PDF 23.3
 
-From 23.3 support to add resolution to image. You can use two ways to solve this task:
+Version 23.3 introduced support for adding a resolution to an image. Two methods can be used to solve this problem:
 
 ```cs
     var table = new Table
