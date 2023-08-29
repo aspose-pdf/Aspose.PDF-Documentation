@@ -264,34 +264,33 @@ We will show the example of the option with color bars for measuring colors and 
 
 ```cs
 
-    var outFile = myDir + "ColorBarTest.pdf");
+var outFile = myDir + "ColorBarTest.pdf");
 
-            using (var doc = new Document())
-            {
-                Page page = doc.Pages.Add();
-                page.TrimBox = new Aspose.Pdf.Rectangle(20, 20, 580, 820);
-                AddAnnotations(page)
-;
-                doc.Save(outFile);
-            }
+using (var doc = new Document())
+{
+    Page page = doc.Pages.Add();
+    page.TrimBox = new Aspose.Pdf.Rectangle(20, 20, 580, 820);
+    AddAnnotations(page);
+    doc.Save(outFile);
+}
 
-        void AddAnnotations(Page page)
-        {
-            var rectBlack = new Aspose.Pdf.Rectangle(100, 300, 300, 320);
-            var rectCyan = new Aspose.Pdf.Rectangle(200, 600, 260, 690);
-            var rectMagenta = new Aspose.Pdf.Rectangle(10, 650, 140, 670);
+void AddAnnotations(Page page)
+{
+    var rectBlack = new Aspose.Pdf.Rectangle(100, 300, 300, 320);
+    var rectCyan = new Aspose.Pdf.Rectangle(200, 600, 260, 690);
+    var rectMagenta = new Aspose.Pdf.Rectangle(10, 650, 140, 670);
 
-            var colorBarBlack = new ColorBarAnnotation(page, rectBlack);
-            var colorBarCyan = new ColorBarAnnotation(page, rectCyan, ColorsOfCMYK.Cyan);
-            var colorBaMagenta = new ColorBarAnnotation(page, rectMagenta);
-            colorBaMagenta.ColorOfCMYK = ColorsOfCMYK.Magenta;
-            var colorBarYellow = new ColorBarAnnotation(page, new Aspose.Pdf.Rectangle(400, 250, 450, 700), ColorsOfCMYK.Yellow);
+    var colorBarBlack = new ColorBarAnnotation(page, rectBlack);
+    var colorBarCyan = new ColorBarAnnotation(page, rectCyan, ColorsOfCMYK.Cyan);
+    var colorBaMagenta = new ColorBarAnnotation(page, rectMagenta);
+    colorBaMagenta.ColorOfCMYK = ColorsOfCMYK.Magenta;
+    var colorBarYellow = new ColorBarAnnotation(page, new Aspose.Pdf.Rectangle(400, 250, 450, 700), ColorsOfCMYK.Yellow);
 
-            page.Annotations.Add(colorBarBlack);
-            page.Annotations.Add(colorBarCyan);
-            page.Annotations.Add(colorBaMagenta);
-            page.Annotations.Add(colorBarYellow);
-        }
+    page.Annotations.Add(colorBarBlack);
+    page.Annotations.Add(colorBarCyan);
+    page.Annotations.Add(colorBaMagenta);
+    page.Annotations.Add(colorBarYellow);
+}
 ```
 Also support the vector images extraction. Try using the following code to detect and extract vector graphics:
 
