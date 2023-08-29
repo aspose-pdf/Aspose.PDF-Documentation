@@ -311,10 +311,12 @@ Also support the vector images extraction. Try using the following code to detec
 From this release support to convert PDF to DICOM Image
 
 ```cs
+
     Document doc = new Document("source.pdf");
     DicomDevice dicom = new DicomDevice();
     FileStream outStream = new FileStream("out.dicom", FileMode.Create, FileAccess.ReadWrite);
     dicom.Process(doc.Pages[1], outStream);
+```    
 
 ## What's new in Aspose.PDF 22.09
 
