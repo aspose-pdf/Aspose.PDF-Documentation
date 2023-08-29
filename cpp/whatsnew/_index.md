@@ -11,6 +11,13 @@ sitemap:
 lastmod: "2021-12-22"
 ---
 
+## What's new in Aspose.PDF 22.11
+
+From 22.11 announced the first Public Release of **Aspose.PDF for C++ macOS**.
+
+We are pleased to announce the first public release of Aspose.PDF for C++ macOS. Aspose.PDF for C++ macOS is a proprietary C++ library that allows developers to create and manipulate PDF documents without using Adobe Acrobat.
+Aspose.PDF for C++ macOS allows developers to create forms, add/edit text, manipulate PDF pages, add annotations, process custom fonts, and more.
+
 ## What's new in Aspose.PDF 22.7
 
 The Skia version used is updated.
