@@ -91,6 +91,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-54333|When FlatteningAnnotations with PdfAnnotationEditor Throws System.IndexOutOfRangeException|Bug|
 |PDFNET-47851|PDF to TIFF - text is overlapped in output|Bug|
 |PDFNET-47306|Blank DOCX file generated|Bug|
+|PDFNET-50637|Redaction area is not correct|Bug|
 
 ## Public API and Backward Incompatible Changes
 
