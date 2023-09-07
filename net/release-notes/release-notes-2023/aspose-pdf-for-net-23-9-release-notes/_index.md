@@ -87,6 +87,10 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-55350|Widget page index is reset to 0 after importing a fillable field|Bug|
 |PDFNET-51102|Parallel processing - code is not executing properly|Bug|
 |PDFNET-54927|Page.AddStamp() throws System.IndexOutOfRangeException|Bug|
+|PDFNET-50853|Aspose.PDF 21.10: After adding annotation there are no annotations in the resulting pdf file if open it in Google Chrome|Bug|
+|PDFNET-54333|When FlatteningAnnotations with PdfAnnotationEditor Throws System.IndexOutOfRangeException|Bug|
+|PDFNET-47851|PDF to TIFF - text is overlapped in output|Bug|
+|PDFNET-47306|Blank DOCX file generated|Bug|
 
 ## Public API and Backward Incompatible Changes
 
