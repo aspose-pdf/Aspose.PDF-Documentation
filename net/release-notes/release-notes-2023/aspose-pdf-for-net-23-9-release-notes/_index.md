@@ -96,6 +96,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-50374|Aspose.Pdf 21.7: Cannot load Pcl on macOS|Bug|
 |PDFNET-46566|Implement setter for TextAnnotation|Bug|
 |PDFNET-55325|Reading FormFields throws System.ObjectDisposedException: Cannot access a disposed object|Bug|
+|PDFNET-38602|PDF to HTML: Image background is changed|Bug|
 
 ## Public API and Backward Incompatible Changes
 
