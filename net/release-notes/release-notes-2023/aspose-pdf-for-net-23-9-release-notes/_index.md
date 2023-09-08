@@ -26,6 +26,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-44218|PDF/A-1b Conversion: Bad performance on some files|Enhancement|
 |PDFNET-55385|Enhance CheckBoxField.AddOption method behavior|Enhancement|
 |PDFNET-55343|Huge file size after copying fillable fields from another document|Enhancement|
+|PDFNET-45377|Enhance the behavior of Annotation.CreationDate|Enhancement|
 |PDFNET-53213|PDF Text changing and getting mirrored when extracting text|Bug|
 |PDFNET-54761|TextFragmentAbsorber not finding text extracted|Bug|
 |PDFNET-55037|Adding images is very slow with Flate filter (REPSVC-1478)|Bug|
@@ -94,6 +95,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-50637|Redaction area is not correct|Bug|
 |PDFNET-50374|Aspose.Pdf 21.7: Cannot load Pcl on macOS|Bug|
 |PDFNET-46566|Implement setter for TextAnnotation|Bug|
+|PDFNET-55325|Reading FormFields throws System.ObjectDisposedException: Cannot access a disposed object|Bug|
 
 ## Public API and Backward Incompatible Changes
 
