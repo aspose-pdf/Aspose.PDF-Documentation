@@ -92,6 +92,8 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-47851|PDF to TIFF - text is overlapped in output|Bug|
 |PDFNET-47306|Blank DOCX file generated|Bug|
 |PDFNET-50637|Redaction area is not correct|Bug|
+|PDFNET-50374|Aspose.Pdf 21.7: Cannot load Pcl on macOS|Bug|
+|PDFNET-46566|Implement setter for TextAnnotation|Bug|
 
 ## Public API and Backward Incompatible Changes
 
