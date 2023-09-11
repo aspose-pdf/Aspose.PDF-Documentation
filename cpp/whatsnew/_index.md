@@ -11,6 +11,92 @@ sitemap:
 lastmod: "2021-12-22"
 ---
 
+## What's new in Aspose.PDF 23.7
+
+- The saving of PDF documents into EPUB format has been introduced:
+
+```cpp
+
+    void ConvertPDFtoEPUB()
+    {
+        std::clog << __func__ << ": Start" << std::endl;
+        // String for path name
+        String _dataDir("C:\\Samples\\Conversion\\");
+
+        // String for input file name
+        String infilename("sample.pdf");
+        // String for output file name
+        String outfilename("PDFToEPUB_out.epub");
+
+        // Open document
+        auto document = MakeObject<Document>(_dataDir + infilename);
+
+        // Save PDF file into EPUB format
+        document->Save(_dataDir + outfilename, SaveFormat::Epub);
+        std::clog << __func__ << ": Finish" << std::endl;
+    }
+```
+
+- Loading PCL format files has been implemented:
+
+```cpp
+
+    using namespace System;
+    using namespace Aspose::Pdf;
+
+    int main(int argc, char** argv)
+    {
+        try
+        {
+            auto lic = MakeObject<Aspose::Pdf::License>();
+            lic->SetLicense(u"c:/aspose.pdf/License/Aspose.PDF.C++.lic");
+
+            auto options = System::MakeObject<PclLoadOptions>();
+            options->ConversionEngine = Aspose::Pdf::PclLoadOptions::ConversionEngines::NewEngine;
+            options->SupressErrors = false;
+
+            auto doc = System::MakeObject<Document>(u"c:/aspose.pdf/PCL/37432.pcl", options);
+            doc->Save(u"e:/37432.pdf");
+        }
+        catch (const System::Exception& error)
+        {
+            Console::WriteLine(u"Error: {0}", error->get_Message());
+            return 1;
+        }
+        catch (const std::exception& error)
+        {
+            std::cerr << "Error: " << error.what() << std::endl;
+            return 1;
+        }
+
+        return 0;
+    }
+```
+
+
+
+## What's new in Aspose.PDF 23.1
+
+From 23.1 the support of Dicom format images was added:
+
+```cpp
+
+    using namespace System;
+    using namespace System::IO;
+    using namespace Aspose::Pdf;
+
+    int main()
+    {
+        auto document = MakeObject<Document>();
+        auto page = document->get_Pages()->Add();
+        auto image = MakeObject<Image>();
+        image->set_FileType(ImageFileType::Dicom);
+        image->set_ImageStream(MakeObject<FileStream>(u"c:/aspose.pdf/Aspose.Pdf/38067-1.dcm", FileMode::Open, FileAccess::Read));
+        page->get_Paragraphs()->Add(image);
+        document->Save(u"e:/document.pdf");
+    }
+```
+
 ## What's new in Aspose.PDF 22.11
 
 From 22.11 announced the first Public Release of **Aspose.PDF for C++ macOS**.
