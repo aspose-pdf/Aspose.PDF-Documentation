@@ -98,6 +98,9 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-46566|Implement setter for TextAnnotation|Bug|
 |PDFNET-55325|Reading FormFields throws System.ObjectDisposedException: Cannot access a disposed object|Bug|
 |PDFNET-38602|PDF to HTML: Image background is changed|Bug|
+|PDFNET-42936|Document.Save() is generating blank output|Bug|
+|PDFNET-41365|HTML to PDF: hidden fields are visible|Bug|
+|PDFNET-55143|HTML to PDF: 'System.NullReferenceException' in Linux|Bug|
 
 ## Public API and Backward Incompatible Changes
 
