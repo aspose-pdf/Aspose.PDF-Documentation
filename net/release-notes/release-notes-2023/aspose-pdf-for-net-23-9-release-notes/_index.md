@@ -34,7 +34,6 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-49287|PDF to TIFF - Need to speed up the conversion process|Bug|
 |PDFNET-55338|Investigation: Exception occurred while optimizing and saving PDF|Bug|
 |PDFNET-47643|Exception occurred during iterating PdfActions in Outline Items|Bug|
-|PDFNET-46601|Set of form field related problems during HTML->PDF conversion|Bug|
 |PDFNET-53384|PDF concatenate throws NullPointerException|Bug|
 |PDFNET-45331|The output isn't PDF/A_2A compliant|Bug|
 |PDFNET-43418|Conversion to pdfa1b gives incompliant output|Bug|
