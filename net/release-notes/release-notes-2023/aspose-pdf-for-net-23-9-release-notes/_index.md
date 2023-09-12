@@ -32,7 +32,6 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-54761|TextFragmentAbsorber not finding text extracted|Bug|
 |PDFNET-55037|Adding images is very slow with Flate filter (REPSVC-1478)|Bug|
 |PDFNET-49287|PDF to TIFF - Need to speed up the conversion process|Bug|
-|PDFNET-55338|Investigation: Exception occurred while optimizing and saving PDF|Bug|
 |PDFNET-47643|Exception occurred during iterating PdfActions in Outline Items|Bug|
 |PDFNET-53384|PDF concatenate throws NullPointerException|Bug|
 |PDFNET-45331|The output isn't PDF/A_2A compliant|Bug|
@@ -79,7 +78,6 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-54955|System.NullReferenceException on PDF to DOCX conversion|Bug|
 |PDFNET-46919|PDF to TIF (Various parts of the document are disappearing)|Bug|
 |PDFNET-53709|PDFs will not save to XPS or print|Bug|
-|PDFNET-53768|PDF to PDF/A1a: "Required key missing" for StructTreeRoot|Bug|
 |PDFNET-42007|PageIndex throws ArgumentException|Bug|
 |PDFNET-38754|PDF to PDFA2A/PDFA2B/PDFA3B: Converting PDF, generated from pptx using Aspose.Slides, to PDFA2A/PDFA2B/PDFA3B fails the compliance|Bug|
 |PDFNET-54065|[Aspose.PDF.Drawing] Squares instead of Japanese characters when converting PDF on Linux|Bug|
