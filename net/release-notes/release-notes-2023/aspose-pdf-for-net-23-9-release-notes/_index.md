@@ -101,6 +101,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-42936|Document.Save() is generating blank output|Bug|
 |PDFNET-41365|HTML to PDF: hidden fields are visible|Bug|
 |PDFNET-55143|HTML to PDF: 'System.NullReferenceException' in Linux|Bug|
+|PDFNET-55452|Latex file is not converting properly (latex to pdf)|Bug|
 
 ## Public API and Backward Incompatible Changes
 
