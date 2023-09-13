@@ -7,7 +7,7 @@ url: /net/release-notes-2023/
 lastmod: "2023-09-07"
 description: This section list all-new features, enhancement, and fixed bugs by Aspose.PDF for .NET library in 2023.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
