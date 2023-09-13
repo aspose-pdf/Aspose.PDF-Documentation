@@ -55,7 +55,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-53744|Image Left Margin does not work|Bug|
 |PDFNET-54301|Image horizontaly aligned to the right is outside the page|Bug|
 |PDFNET-54555|Document does not allow to add text, throwing 'Invalid font name' Exception|Bug|
-|PDFNET-53938|Rectangles not being drawn on document|Bug|
+|PDFNET-53938|Rectangles are not drawn in the document|Bug|
 |PDFNET-45776|Printing from PDFViewer brings corrupt File or empty Page|Bug|
 |PDFNET-42780|A null referenced error on converting a PDF to PDF A3B|Bug|
 |PDFNET-42788|Closed stream error on saving a PDF to PDF A1B|Bug|
