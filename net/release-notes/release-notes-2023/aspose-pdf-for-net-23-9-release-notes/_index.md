@@ -27,7 +27,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-55385|Enhance CheckBoxField.AddOption method behavior|Enhancement|
 |PDFNET-55343|Reduced file size after copying fillable fields from another document|Enhancement|
 |PDFNET-45377|Enhance the behavior of Annotation.CreationDate|Enhancement|
-|PDFNET-50826|Time while subsetting the fonts is improved|Enhancement|
+|PDFNET-50826|Reduced time for subset of fonts|Enhancement|
 |PDFNET-53213|PDF Text changing and getting mirrored when extracting text|Bug|
 |PDFNET-54761|TextFragmentAbsorber not finding text extracted|Bug|
 |PDFNET-55037|Adding images is very slow with Flate filter (REPSVC-1478)|Bug|
