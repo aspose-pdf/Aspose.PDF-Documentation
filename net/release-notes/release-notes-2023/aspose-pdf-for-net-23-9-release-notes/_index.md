@@ -23,7 +23,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 | :- | :- | :- |
 |PDFNET-55157|Adding image with ImageFilterType.Flate does not preserve transparency|Feature|
 |PDFNET-55270|Provide a way to remove a child annotation from a fillable field|Feature|
-|PDFNET-44218|PDF/A-1b Conversion: Bad performance on some files|Enhancement|
+|PDFNET-44218|PDF/A-1b Conversion: Improve performance on some files|Enhancement|
 |PDFNET-55385|Enhance CheckBoxField.AddOption method behavior|Enhancement|
 |PDFNET-55343|Huge file size after copying fillable fields from another document|Enhancement|
 |PDFNET-45377|Enhance the behavior of Annotation.CreationDate|Enhancement|
