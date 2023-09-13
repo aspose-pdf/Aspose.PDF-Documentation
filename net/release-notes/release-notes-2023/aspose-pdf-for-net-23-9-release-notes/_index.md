@@ -43,7 +43,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-55159|XslFoToPdfConverterTests.Testimages - transparency of GIF images|Bug|
 |PDFNET-55300|Adding bookmarks using Aspose.Pdf is very very slow for large PDF files|Bug|
 |PDFNET-45870|PDF to PDF/A - Parameter not valid Exception occurs|Bug|
-|PDFNET-47854|AddPageBreak Method is not working correctly|Bug|
+|PDFNET-47854|AddPageBreak Method does not working correctly|Bug|
 |PDFNET-49884|StackOverFlowError occurs while getting all fonts from PDF|Bug|
 |PDFNET-55027|Processing PDF documents with the RedactionAnnotation class throws IndexOutOfRangeException|Bug|
 |PDFNET-54485|Exception occurred while optimizing and saving PDF|Bug|
