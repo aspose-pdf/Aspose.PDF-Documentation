@@ -29,7 +29,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-45377|Enhance the behavior of Annotation.CreationDate|Enhancement|
 |PDFNET-50826|Reduced time for subset of fonts|Enhancement|
 |PDFNET-53213|PDF Text changing and getting mirrored when extracting text|Bug|
-|PDFNET-54761|TextFragmentAbsorber not finding text extracted|Bug|
+|PDFNET-54761|TextFragmentAbsorber doesn't find extracted text|Bug|
 |PDFNET-55037|Adding images is very slow with Flate filter (REPSVC-1478)|Bug|
 |PDFNET-49287|PDF to TIFF - Need to speed up the conversion process|Bug|
 |PDFNET-47643|Exception occurred during iterating PdfActions in Outline Items|Bug|
