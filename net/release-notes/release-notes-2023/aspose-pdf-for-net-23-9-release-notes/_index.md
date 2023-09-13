@@ -31,7 +31,7 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-53213|PDF Text changing and getting mirrored when extracting text|Bug|
 |PDFNET-54761|TextFragmentAbsorber doesn't find extracted text|Bug|
 |PDFNET-55037|Adding images is very slow with Flate filter (REPSVC-1478)|Bug|
-|PDFNET-49287|PDF to TIFF - Need to speed up the conversion process|Bug|
+|PDFNET-49287|PDF to TIFF - Need to speed up the conversion process|Enhancement|
 |PDFNET-47643|Exception occurred during iterating PdfActions in Outline Items|Bug|
 |PDFNET-53384|PDF concatenate throws NullPointerException|Bug|
 |PDFNET-45331|The output isn't PDF/A_2A compliant|Bug|
