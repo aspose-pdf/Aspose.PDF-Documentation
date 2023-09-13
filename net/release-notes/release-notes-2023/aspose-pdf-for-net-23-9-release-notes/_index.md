@@ -81,7 +81,6 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-42007|PageIndex throws ArgumentException|Bug|
 |PDFNET-38754|PDF to PDFA2A/PDFA2B/PDFA3B: Converting PDF, generated from pptx using Aspose.Slides, to PDFA2A/PDFA2B/PDFA3B fails the compliance|Bug|
 |PDFNET-54065|[Aspose.PDF.Drawing] Squares instead of Japanese characters when converting PDF on Linux|Bug|
-|PDFNET-53610|The gradient is lost when converting PDF|Bug|
 |PDFNET-55334|System.NullReferenceException while accessing to the Field.Parent property in certain cases|Bug|
 |PDFNET-55350|Widget page index is reset to 0 after importing a fillable field|Bug|
 |PDFNET-51102|Parallel processing - code is not executing properly|Bug|
@@ -91,7 +90,6 @@ This page contains release notes information for Aspose.PDF for .NET 23.9.
 |PDFNET-47851|PDF to TIFF - text is overlapped in output|Bug|
 |PDFNET-47306|Blank DOCX file generated|Bug|
 |PDFNET-50637|Redaction area is not correct|Bug|
-|PDFNET-50374|Aspose.Pdf 21.7: Cannot load Pcl on macOS|Bug|
 |PDFNET-46566|Implement setter for TextAnnotation|Bug|
 |PDFNET-55325|Reading FormFields throws System.ObjectDisposedException: Cannot access a disposed object|Bug|
 |PDFNET-38602|PDF to HTML: Image background is changed|Bug|
