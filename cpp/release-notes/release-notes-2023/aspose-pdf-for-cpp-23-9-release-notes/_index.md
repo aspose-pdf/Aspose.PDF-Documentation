@@ -20,8 +20,8 @@ The new version of Aspose.PDF for C++ has a codebase of Aspose.PDF for .Net 23.9
 
 ### Added API
 
-void Aspose::Pdf::Forms::CheckboxField::AddOption(System::String, int, SharedPtr&lt;Aspose:Pdf::Rectangle&gt;)
-void Aspose::Pdf::Forms::Form::RemoveFieldAppearance(SharedPtr&lt;Aspose::Pdf::Forms::Field&gt;, int)
-bool Aspose::Pdf::Forms::Form::HasField(System::String, bool)
+* void Aspose::Pdf::Forms::CheckboxField::AddOption(System::String, int, SharedPtr&lt;Aspose:Pdf::Rectangle&gt;)
+* void Aspose::Pdf::Forms::Form::RemoveFieldAppearance(SharedPtr&lt;Aspose::Pdf::Forms::Field&gt;, int)
+* bool Aspose::Pdf::Forms::Form::HasField(System::String, bool)
 
 Complete details of API can be referenced from [Aspose.PDF for C++ API Reference Guide](https://reference.aspose.com/pdf/cpp).
