@@ -4,7 +4,7 @@ linktitle: Extract fonts from PDF
 type: docs
 weight: 10
 url: /javascript-cpp/extract-fonts-from-pdf/
-description: This topic describes how to rotate the page orientation in an existing PDF file programmatically via JavaScript via C++ 
+description: This topic describes how to extract fonts from PDF with JavaScript toolkit.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "monthly"

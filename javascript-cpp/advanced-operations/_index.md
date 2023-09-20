@@ -30,3 +30,8 @@ You'll learn different ways to:
 - [Working with Documents](/pdf/javascript-cpp/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
 - [Working with Pages](/pdf/javascript-cpp/working-with-pages/) - add, move or remove, crop pages, stamps.
 - [Metadata in PDFs](/pdf/javascript-cpp/pdf-file-metadata/) - get or set meta data in documents.
+- [Working with Images](/pdf/javascript-cpp/working-with-images/) - insert, remove, extract image in document
+- [Navigation and Interaction](/pdf/javascript-cpp/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages
+- [Annotations](/pdf/javascript-cpp/annotations/) - Annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
+- [Securing and Signing](/pdf/javascript-cpp/securing-and-signing/) - protect and sign your PDF document programmatically
+- [Attachments](/pdf/javascript-cpp/attachments/) - PDF documents may contain file attachments. These attachments can be other PDF documents, or any kind of file, like audio files, Microsoft Office documents etc. You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with JavaScript.
