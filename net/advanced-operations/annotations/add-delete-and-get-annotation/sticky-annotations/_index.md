@@ -1,13 +1,13 @@
 ---
 title: PDF sticky Annotations using C#
-linktitle: sticky Annotation
+linktitle: Sticky Annotation
 type: docs
 weight: 50
 url: /net/sticky-annotations/
 description: This topic about sticky annotations, as an example we shows the Watermark Annotation in the text.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 <script type="application/ld+json">

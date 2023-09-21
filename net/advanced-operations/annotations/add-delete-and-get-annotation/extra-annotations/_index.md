@@ -5,10 +5,10 @@ type: docs
 weight: 60
 url: /net/extra-annotations/
 description: This section describes how to add, get, and delete extra kinds of annotations from your PDF document.
-lastmod: "2022-02-17"
+lastmod: "2023-09-12"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
 ---
 <script type="application/ld+json">
 {

@@ -7,7 +7,7 @@ url: /net/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 aliases:
     - /net/working-with-annotations/

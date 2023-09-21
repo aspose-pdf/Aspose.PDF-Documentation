@@ -1,13 +1,13 @@
 ---
-title: PDF Highlights Annotation using C#
-linktitle: Highlights Annotation
+title: PDF Highlight Annotation using C#
+linktitle: Highlight Annotation
 type: docs
 weight: 20
 url: /net/highlights-annotation/
 description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 <script type="application/ld+json">

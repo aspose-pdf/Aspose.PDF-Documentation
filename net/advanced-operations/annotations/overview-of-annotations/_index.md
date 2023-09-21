@@ -7,7 +7,7 @@ url: /net/overview-of-annotations/
 description: Check out the list of possible annotations you can work with using Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 <script type="application/ld+json">
