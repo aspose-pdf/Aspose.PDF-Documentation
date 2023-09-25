@@ -13,7 +13,7 @@ sitemap:
 
 _This page is an overview of Aspose.PDF for JavaScript via C++ features._
 
-**Aspose.PDF for JavaScript via C++** allows developers manipulate them PDF files directly in the Web. This JavaScript Solution is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET Lightweight. . You can easily use aspose-pdf for JavaScript via C++ from and then follow the installation instructions.
+**Aspose.PDF for JavaScript via C++** allows developers manipulate them PDF files directly in the Web. This JavaScript Solution is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET. You can easily use aspose-pdf for JavaScript via C++ from and then follow the installation instructions.
 
 The Aspose.PDF for JavaScript supports a wide variety of functions such as:
 

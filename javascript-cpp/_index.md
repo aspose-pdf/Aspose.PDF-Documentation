@@ -20,7 +20,7 @@ sitemap:
 
 Aspose.PDF for JavaScript via C++ is an easy and secure toolkit used to work with PDF directly in the web browser.
 
-Aspose.PDF for JavaScript via C++ is a scalable and feature-rich toolkit to process PDF using JavaScript. Developers can create their own JavaScript product and distribute them all over the web. Aspose.PDF for JavaScript via C++ is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET Lightweight.
+Aspose.PDF for JavaScript via C++ is a scalable and feature-rich toolkit to process PDF using JavaScript. Developers can create their own JavaScript product and distribute them all over the web. Aspose.PDF for JavaScript via C++ is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET.
 
 {{% /alert %}}
 

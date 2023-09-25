@@ -1,5 +1,5 @@
 ---
-title: Extract fonts from PDF with JavaScript via C++ 
+title: Extract Fonts from PDF with JavaScript via C++ 
 linktitle: Extract fonts from PDF
 type: docs
 weight: 10
