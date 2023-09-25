@@ -13,5 +13,5 @@ sitemap:
 
 **Basic operations** section describes the first and simplest operation with PDF documents in Aspose.PDF for JavaScript via C++:
 
-- [Extract fonts from PDF](/pdf/javascript-cpp/extract-fonts-from-pdf/)
+- [Repair PDF](/pdf/javascript-cpp/repair-pdf/)
 
