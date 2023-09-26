@@ -2,7 +2,7 @@
 title: Aspose PDF for Python via .NET 23.4 Release Notes
 linktitle: Aspose PDF for Python via .NET 23.4
 type: docs
-weight: 120
+weight: 90
 url: /python-net/aspose-pdf-for-python-net-23-4-release-notes/
 lastmod: "2023-06-26"
 description: This page contains new Aspose PDF for Python via .NET features, enhancement, and bug fixes in 2023, version 23.4.
