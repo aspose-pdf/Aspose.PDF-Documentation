@@ -3,12 +3,13 @@ title: Release Notes - 2023
 type: docs
 weight: 7
 url: /java/release-notes-2023/
-lastmod: "2023-08-29"
+lastmod: "2023-09-29"
 ---
 
 ## **Release Notes - 2023**
 
 
+- [Aspose.PDF for Java 23.9 Release Notes](/pdf/java/aspose-pdf-for-java-23-9-release-notes/)
 - [Aspose.PDF for Java 23.8 Release Notes](/pdf/java/aspose-pdf-for-java-23-8-release-notes/)
 - [Aspose.PDF for Java 23.7 Release Notes](/pdf/java/aspose-pdf-for-java-23-7-release-notes/)
 - [Aspose.PDF for Java 23.6 Release Notes](/pdf/java/aspose-pdf-for-java-23-6-release-notes/)
