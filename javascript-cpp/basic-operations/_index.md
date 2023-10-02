@@ -14,4 +14,7 @@ sitemap:
 **Basic operations** section describes the first and simplest operation with PDF documents in Aspose.PDF for JavaScript via C++:
 
 - [Repair PDF](/pdf/javascript-cpp/repair-pdf/)
+- [Optimize PDF File](/pdf/javascript-cpp/optimize-pdf/)
+- [Optimize PDF Resources](/pdf/javascript-cpp/optimize-pdf-resources/)
+
 
