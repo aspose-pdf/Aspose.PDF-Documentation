@@ -11,6 +11,27 @@ sitemap:
 lastmod: "2023-04-14"
 ---
 
+## What's new in Aspose.PDF for JavaScript via C++ 23.9
+
+1. **AsposePdfToDoc** - [Convert a PDF-file to Doc](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfToPptX** - [Convert a PDF-file to PptX](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfToEPUB** - [Convert a PDF-file to EPUB](/pdf/javascript-cpp/conversion/)
+1. **AsposePdfPagesToDICOM** - [Convert a PDF-file to DICOM](/pdf/javascript-cpp/conversion/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 23.8
+
+1. **AsposePdfExtractImage** - [Extract Images from PDF](/pdf/javascript-cpp/extract-images-from-the-pdf-file/)
+1. **AsposePdfRemoveMetadata** - [Remove PDF File Information](/pdf/javascript-cpp/pdf-file-metadata/)
+1. **AsposePdfChangePassword** - [Change Password of a PDF File](/pdf/javascript-cpp/change-password-pdf/)
+1. **AsposePdfRepair** - [Repair PDF](/pdf/javascript-cpp/repair-pdf/)
+1. **AsposePdfOptimizeResource** - [Optimize PDF Resources](/pdf/javascript-cpp/optimize-pdf-resources/)
+1. **AsposePdfSetBackgroundColor** - [Set background color](/pdf/javascript-cpp/set-background-color/)
+1. **AsposePdfDeleteAnnotations** - [Delete Annotation](/pdf/javascript-cpp/delete-annotation/)
+1. **AsposePdfDeleteBookmarks** - [Bookmarks in PDF](/pdf/javascript-cpp/bookmark/)
+1. **AsposePdfDeleteAttachments** - [Removing attachment from an existing PDF](/pdf/javascript-cpp/removing-attachment-from-an-existing-pdf/)
+1. **AsposePdfDeleteImages** - [Delete Images](/pdf/javascript-cpp/delete-images-from-pdf-file/)
+1. **AsposePdfDeleteJavaScripts** - [Delete JavaScripts](/pdf/javascript-cpp/delete-javascripts/)
+
 ## What's new in Aspose.PDF for JavaScript via C++ 23.7
 
 1. Improved ‘example.html’ and ‘example_worker.html’.

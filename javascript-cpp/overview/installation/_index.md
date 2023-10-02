@@ -18,21 +18,16 @@ sitemap:
 To install and use Aspose.PDF for JavaScript via C++ from a -*ZIP archive, follow the following instructions:
 - extract the files from the ZIP archive
 - encrypt your *.lic file using 'encrypt_lic.html'
-- edit  'settings.json' and setup your settings
+- edit  'settings.json' and setup your settings.
 
-Follow the link for [Direct Download](https://products.aspose.com/javascript-cpp/release-latest.zip)
+Follow the link for [Direct Download](https://releases.aspose.com/pdf/javascriptcpp/)
 
-{{% alert color="primary" %}}
+Another way to install using Python. If you are using Linux or Mac OS X, everything is ready on your system. If you are a Windows user, you can download the installation file from the Python home page:
 
-You can download [Aspose.PDF for JavaScript](https://releases.aspose.com/pdf/javascriptcpp/) for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to [apply the license](/pdf/javascript-cpp/licensing/).
-
-{{% /alert %}}
-
-
-{{% alert color="primary" %}}
-
-If you want to test JavaScript via C++ without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
-
-{{% /alert %}}
-
+- go to [python.org](https://www.python.org/)
+- in the download section, select the link to Python "3.xxx"
+- at the bottom of the page, select the Windows x86 executable installer and download it
+- after downloading the file, run it
+- on the first page of the installer, select the "Add Python 3.xxx to PATH" check box
+- click Install, and then click Close when the installation ends.
 
