@@ -17,12 +17,17 @@ _This page is an overview of Aspose.PDF for JavaScript via C++ features._
 
 The Aspose.PDF for JavaScript supports a wide variety of functions such as:
 
-- extract a text from PDF
-- optimize PDF document
-- add a stamp to PDF file
-- add a image to PDF file
-- split PDF to two files
-- convert PDF to Images format
+- Set, Get, and Remove PDF File Information
+- Delete Bookmarks
+- Delete Annotations
+- Delete JavaScripts
+- Extract a text from PDF
+- Optimize PDF document
+- Optimize resources 
+- Split PDF to two files
+- Merge two files to PDF
+- Repair PDF
+- Convertion features
 
 In addition, Aspose.PDF for JavaScript via C++ can be applied to easily convert PDF to JPEG, and PDF to PNG images with high performance and perfect quality. Also, this toolkit supports encrypting and decrypting PDF documents.
 

@@ -23,7 +23,7 @@ Using Aspose.PDF for JavaScript in your project gives you the following profits:
 
 - wide variety of functions
 - toolkit used to work with PDF directly in the web browser
-- based on Aspose.PDF for .NET Lightweight
+- based on Aspose.PDF for .NET
 
 ## Wide variety of functions
 
