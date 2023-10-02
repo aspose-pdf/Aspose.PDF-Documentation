@@ -454,7 +454,7 @@ Check the code snippet, follow the steps, and solve your tasks of converting PDF
       }
 ```
 
-## Convert PDF to DICOM
+### Convert PDF to DICOM
 
 1. Select a PDF file for converting.
 1. Create a 'FileReader'.
