@@ -39,6 +39,6 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.PDF for JavaScript Features](/pdf/javascript-cpp/key-features/)
 - [Aspose.PDF for JavaScript Release Notes](/pdf/javascript-cpp/release-notes/)
 - [Aspose.PDF for JavaScript Product Page](https://products.aspose.com/pdf/javascript-cpp/)
-- [Aspose.PDF for JavaScript API Reference Guide](https://reference.aspose.com/pdf/net)
+- [Aspose.PDF for JavaScript API Reference Guide](https://reference.aspose.com/pdf/javascript-cpp/)
 - [Aspose.PDF for JavaScript Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for JavaScript Paid Support Helpdesk](https://helpdesk.aspose.com/)
