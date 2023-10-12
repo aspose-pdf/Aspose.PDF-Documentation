@@ -30,14 +30,15 @@ Aspose.PDF for JavaScript via C++ is a scalable and feature-rich toolkit to proc
 - [Overview](/pdf/javascript-cpp/overview/)
 - [Get Started](/pdf/javascript-cpp/get-started/)
 - [Basic operations](/pdf/javascript-cpp/basic-operations/)
-- [Release Notes](/pdf/javascript-cpp/release-notes/)
+- [Release Notes](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
 
 <h2>Aspose.PDF for JavaScript Resources</h2>
 
 The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.PDF for JavaScript Features](/pdf/javascript-cpp/key-features/)
-- [Aspose.PDF for JavaScript Release Notes](/pdf/javascript-cpp/release-notes/)
+- [Aspose.PDF for JavaScript Release Notes](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
+- [Download Aspose.PDF for JavaScript](https://releases.aspose.com/pdf/javascriptcpp/)
 - [Aspose.PDF for JavaScript Product Page](https://products.aspose.com/pdf/javascript-cpp/)
 - [Aspose.PDF for JavaScript API Reference Guide](https://reference.aspose.com/pdf/javascript-cpp/)
 - [Aspose.PDF for JavaScript Free Support Forum](https://forum.aspose.com/c/pdf/10)

@@ -28,16 +28,17 @@ Aspose.PDF is a Java component built to allow developers to create PDF documents
 - [Converting documents](/pdf/java/converting/)
 - [Parsing PDF documents](/pdf/java/parsing/)
 - [Advanced operations](/pdf/java/advanced-operations/)
-- [Release Notes](/pdf/java/release-notes/)
+- [Release Notes](https://releases.aspose.com/pdf/java/release-notes/)
 
 <h2> Aspose.PDF for Java Resources</h2>
 Following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.PDF for Java Online Documentation](/pdf/java/)
 - [Aspose.PDF for Java Features](/pdf/java/key-features/)
-- [Aspose.PDF for Java Release Notes](/pdf/java/release-notes/)
+- [Aspose.PDF for Java Release Notes](https://releases.aspose.com/pdf/java/release-notes/)
 - [Aspose.PDF for Java Product Page](https://products.aspose.com/pdf/java)
-- [Download Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf)
+- [Aspose.PDF for Java Maven Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
+- [Download Aspose.PDF for Java](https://releases.aspose.com/pdf/java/)
 - [Install Aspose.PDF for Java from Aspose Repository](/pdf/java/installation/)
 - [Aspose.PDF for Java API Reference Guide](https://reference.aspose.com/java/pdf)
 - [Download Examples at GitHub Repository](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
