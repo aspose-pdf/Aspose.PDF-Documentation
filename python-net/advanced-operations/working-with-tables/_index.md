@@ -76,15 +76,15 @@ sitemap:
 }
 </script>
 
-**Aspose.PDF for .NET** allows you to work with tables in PDF file advanced. This perfect tool helps fight through the simplicity of PDFs by extracting tables of actual data. With .NET library resource you can easily create or add table in an existing PDF document, extract table, integrate table with data sources, and remove tables from existing PDFs.
+**Aspose.PDF for Python via .NET** allows you to work with tables in PDF file advanced. This perfect tool helps fight through the simplicity of PDFs by extracting tables of actual data. With Python library resource you can easily create or add table in an existing PDF document, extract table, integrate table with data sources, and remove tables from existing PDFs.
 
 You are able to do the following:
 
-- [Create or Add Table in existing PDF Document](/pdf/net/add-table-in-existing-pdf-document/) - create your table in pdf file with merging the columns or rows сonsidering borders, margins, and padding.
-- [Extract a Table from existing PDF Document](/pdf/net/extract-table-from-existing-pdf-document/) - you can extract table from PDF file or extract table border as Image.
-- [Integrate Table with Data Sources](/pdf/net/integrate-table/) - integrate table with Database, integrate table with the Entity Framework source using .NET library.
-- [Manipulate Tables in existing PDF](/pdf/net/manipulate-tables-in-existing-pdf/) - manipulate tables in your PDF using TableAbsorber.
-- [Remove Tables from existing PDF](/pdf/net/remove-tables-from-existing-pdf/) - remove table or multiple tables from PDF document.
+- [Create or Add Table in existing PDF Document](/pdf/python-net/add-table-in-existing-pdf-document/) - create your table in pdf file with merging the columns or rows сonsidering borders, margins, and padding.
+- [Extract a Table from existing PDF Document](/pdf/python-net/extract-table-from-existing-pdf-document/) - you can extract table from PDF file.
+- [Integrate Table with Data Sources](/pdf/python-net/integrate-table/) - integrate table with Database using Python via .NET library.
+- [Manipulate Tables in existing PDF](/pdf/python-net/manipulate-tables-in-existing-pdf/) - manipulate tables in your PDF using TableAbsorber.
+- [Remove Tables from existing PDF](/pdf/python-net/remove-tables-from-existing-pdf/) - remove table or multiple tables from PDF document.
 
 
 <script type="application/ld+json">

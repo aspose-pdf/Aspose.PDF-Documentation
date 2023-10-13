@@ -1,23 +1,21 @@
 ---
-title: Create or Add Table In PDF using C#
+title: Create or Add Table In PDF using Python 
 linktitle: Create or Add Table
 type: docs
 weight: 10
-url: /net/add-table-in-existing-pdf-document/
-description: Aspose.PDF for .NET is a library used to create, read, and edit PDF Tables. Check other advanced functions in this topic.
-lastmod: "2022-02-17"
+url: /python-net/add-table-in-existing-pdf-document/
+description: Aspose.PDF for Python via .NET is a library used to create, read, and edit PDF Tables. Check other advanced functions in this topic.
+lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/add-and-extract-a-table/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Create or Add Table In PDF using C#",
-    "alternativeHeadline": "How to add Table In PDF with .NET",
+    "headline": "Create or Add Table In PDF using Python ",
+    "alternativeHeadline": "How to add Table In PDF with Python via .NET",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -26,14 +24,14 @@ aliases:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, create table in pdf, add table",
+    "keywords": "pdf, python, create table in pdf, add table",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
         "@type": "Organization",
         "name": "Aspose.PDF Doc Team",
         "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
         "alternateName": "Aspose",
         "sameAs": [
             "https://facebook.com/aspose.pdf/",
@@ -68,29 +66,30 @@ aliases:
             }
         ]
     },
-    "url": "/net/add-table-in-existing-pdf-document/",
+    "url": "/python-net/add-table-in-existing-pdf-document/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/add-table-in-existing-pdf-document/"
+        "@id": "/python-net/add-table-in-existing-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NET is a library used to create, read, and edit PDF Tables. Check other advanced functions in this topic."
+    "dateModified": "2023-02-04",
+    "description": "Aspose.PDF for Python via .NET is a library used to create, read, and edit PDF Tables. Check other advanced functions in this topic."
 }
 </script>
 
-## Creating Table using C\#
+## Creating Table using Python
 
-Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF namespace contains classes named [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), and [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
+Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF namespace contains classes named [Table](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/), [Cell](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/), and [Row](https://reference.aspose.com/pdf/python-net/aspose.pdf/row/) which provides functionality for creating tables when generating PDF documents from scratch.
 
 Table can be created by creating object of Table Class.
 
-```csharp
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
+```python
+
+    table = ap.Table()
 ```
 
 ### Adding Table in Existing PDF Document
 
-To add a table to an existing PDF file with Aspose.PDF for .NET, take the following steps:
+To add a table to an existing PDF file with Aspose.PDF for Python via .NET, take the following steps:
 
 1. Load the source file.
 1. Initialize a table and set its columns and rows.
@@ -101,101 +100,89 @@ To add a table to an existing PDF file with Aspose.PDF for .NET, take the follow
 
 The following code snippets show how to add text in an existing PDF file.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+```python
 
-// Load source PDF document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "AddTable.pdf");
-// Initializes a new instance of the Table
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-// Set the table border color as LightGray
-table.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-// Set the border for table cells
-table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-// Create a loop to add 10 rows
-for (int row_count = 1; row_count < 10; row_count++)
-{
-    // Add row to table
-    Aspose.Pdf.Row row = table.Rows.Add();
-    // Add table cells
-    row.Cells.Add("Column (" + row_count + ", 1)");
-    row.Cells.Add("Column (" + row_count + ", 2)");
-    row.Cells.Add("Column (" + row_count + ", 3)");
-}
-// Add table object to first page of input document
-doc.Pages[1].Paragraphs.Add(table);
-dataDir = dataDir + "document_with_table_out.pdf";
-// Save updated document containing table object
-doc.Save(dataDir);
+    import aspose.pdf as ap
+
+    # Load source PDF document
+    doc = ap.Document(input_file)
+    # Initializes a new instance of the Table
+    table = ap.Table()
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.from_rgb(apd.Color.light_gray))
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.from_rgb(apd.Color.light_gray))
+    # Create a loop to add 10 rows
+    for row_count in range(0, 10):
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        row.cells.add("Column (" + str(row_count) + ", 1)")
+        row.cells.add("Column (" + str(row_count) + ", 2)")
+        row.cells.add("Column (" + str(row_count) + ", 3)")
+    # Add table object to first page of input document
+    doc.pages[1].paragraphs.add(table)
+    # Save updated document containing table object
+    doc.save(output_file)
 ```
 
 ### ColSpan and RowSpan in Tables
 
-Aspose.PDF for .NET provides [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) property to merge the columns in a table and [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) property to merge the rows.
+Aspose.PDF for Python via .NET provides [col_span](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/#properties) property to merge the columns in a table and [row_span](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/#properties) property to merge the rows.
 
-We use `ColSpan` or `RowSpan` property on the `Cell` object which creates the table cell. After applying the required properties the created cell can be added to the table.
+We use `col_span` or `row_span` property on the `Cell` object which creates the table cell. After applying the required properties the created cell can be added to the table.
 
-```csharp
-public static void AddTable_RowColSpan()
-{
-    // Load source PDF document
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document();
-    pdfDocument.Pages.Add();
+```python
 
-    // Initializes a new instance of the Table
-    Aspose.Pdf.Table table = new Aspose.Pdf.Table
-    {
-        // Set the table border color as LightGray
-        Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Color.Black),
-        // Set the border for table cells
-        DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Color.Black)
-    };
+    import aspose.pdf as ap
 
-    // Add 1st row to table
-    Aspose.Pdf.Row row1 = table.Rows.Add();
-    for (int cellCount = 1; cellCount <5; cellCount++)
-    {
-        // Add table cells
-        row1.Cells.Add($"Test 1 {cellCount}");
-    }
+    # Initialize the Document object by calling its empty constructor
+    pdf_document = ap.Document()
+    pdf_document.pages.add()
+    # Initializes a new instance of the Table
+    table = ap.Table()
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
+    # Add 1st row to table
+    row1 = table.rows.add()
+    for cellCount in range(1, 5):
+        # Add table cells
+        row1.cells.add("Test 1" + str(cellCount))
 
-    // Add 2nd row to table
-    Aspose.Pdf.Row row2 = table.Rows.Add();
-    row2.Cells.Add($"Test 2 1");
-    var cell = row2.Cells.Add($"Test 2 2");
-    cell.ColSpan = 2;
-    row2.Cells.Add($"Test 2 4");
+    # Add 2nd row to table
+    row2 = table.rows.add()
+    row2.cells.add("Test 2 1")
+    cell = row2.cells.add("Test 2 2")
+    cell.col_span = 2
+    row2.cells.add("Test 2 4")
 
-    // Add 3rd row to table
-    Aspose.Pdf.Row row3 = table.Rows.Add();
-    row4.Cells.Add("Test 3 1");
-    row4.Cells.Add("Test 3 2");
-    row4.Cells.Add("Test 3 3");
-    row4.Cells.Add("Test 3 4");
+    # Add 3rd row to table
+    row3 = table.rows.add()
+    row3.cells.add("Test 3 1")
+    row3.cells.add("Test 3 2")
+    row3.cells.add("Test 3 3")
+    row3.cells.add("Test 3 4")
 
-    // Add 4th row to table
-    Aspose.Pdf.Row row4 = table.Rows.Add();
-    row3.Cells.Add("Test 4 1");
-    cell = row3.Cells.Add("Test 4 2");
-    cell.RowSpan = 2;
-    row3.Cells.Add("Test 4 3");
-    row3.Cells.Add("Test 4 4");
+    # Add 4th row to table
+    row4 = table.rows.add()
+    row4.cells.add("Test 4 1")
+    cell = row4.cells.add("Test 4 2")
+    cell.row_span = 2
+    row4.cells.add("Test 4 3")
+    row4.cells.add("Test 4 4")
 
+    # Add 5th row to table
+    row5 = table.rows.add()
+    row5.cells.add("Test 5 1")
+    row5.cells.add("Test 5 3")
+    row5.cells.add("Test 5 4")
 
-    // Add 5th row to table
-    row4 = table.Rows.Add();
-    row4.Cells.Add("Test 5 1");
-    row4.Cells.Add("Test 5 3");
-    row4.Cells.Add("Test 5 4");
-
-    // Add table object to first page of input document
-    pdfDocument.Pages[1].Paragraphs.Add(table);
-
-    // Save updated document containing table object
-    doc.Save(Path.Combine(_dataDir, "document_with_table_out.pdf"));
-}
+    # Add table object to first page of input document
+    pdf_document.pages[1].paragraphs.add(table)
+    # Save updated document containing table object
+    pdf_document.save(output_file)
 ```
 
 The result of the execution code below is the table depicted on the following image:
@@ -212,79 +199,75 @@ In the above figure, you can see that the borders of table, row and cell overlap
 
 ### Borders
 
-To set the borders of Table, [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) and [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) objects, use the Table.Border, Row.Border and Cell.Border properties. Cell borders can also be set using the [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) or Row class’ DefaultCellBorder property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
+To set the borders of Table, [Row](https://reference.aspose.com/pdf/python-net/aspose.pdf/row/) and [Cell](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/) objects, use the Table.border, Row.border and Cell.border properties. Cell borders can also be set using the [Table](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) or Row class [default_cell_border](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#properties) property. All border related properties discussed above are assigned an instance of the Row class, which is created by calling its constructor. The Row class has many overloads that take almost all the parameters required to customize the border.
 
 ### Margins or Padding
 
-Cell padding can be managed using the Table class' [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) property. All padding related properties are assigned an instance of the [MarginInfo](https://reference.aspose.com/pdf/net/aspose.pdf/margininfo) class that takes information about the `Left`, `Right`, `Top` and `Bottom` parameters to create custom margins.
+Cell padding can be managed using the Table class' [default_cell_padding](https://reference.aspose.com/pdf/python-net/aspose.pdf/row/#properties) property. All padding related properties are assigned an instance of the [MarginInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) class that takes information about the `left`, `right`, `top` and `bottom` parameters to create custom margins.
 
 In the following example, the width of the cell border is set to 0.1 point, the width of the table border is set to 1 point and cell padding is set to 5 points.
 
 ![Margin and Border in PDF Table](margin-border.png)
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+```python
 
-// Instntiate the Document object by calling its empty constructor
-Document doc = new Document();
-Page page = doc.Pages.Add();
-// Instantiate a table object
-Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
-// Add the table in paragraphs collection of the desired section
-page.Paragraphs.Add(tab1);
-// Set with column widths of the table
-tab1.ColumnWidths = "50 50 50";
-// Set default cell border using BorderInfo object
-tab1.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F);
-// Set table border using another customized BorderInfo object
-tab1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1F);
-// Create MarginInfo object and set its left, bottom, right and top margins
-Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
-margin.Top = 5f;
-margin.Left = 5f;
-margin.Right = 5f;
-margin.Bottom = 5f;
-// Set the default cell padding to the MarginInfo object
-tab1.DefaultCellPadding = margin;
-// Create rows in the table and then cells in the rows
-Aspose.Pdf.Row row1 = tab1.Rows.Add();
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add();
-TextFragment mytext = new TextFragment("col3 with large text string");
-// Row1.Cells.Add("col3 with large text string to be placed inside cell");
-row1.Cells[2].Paragraphs.Add(mytext);
-row1.Cells[2].IsWordWrapped = false;
-// Row1.Cells[2].Paragraphs[0].FixedWidth= 80;
-Aspose.Pdf.Row row2 = tab1.Rows.Add();
-row2.Cells.Add("item1");
-row2.Cells.Add("item2");
-row2.Cells.Add("item3");
-dataDir = dataDir + "MarginsOrPadding_out.pdf";
-// Save the Pdf
-doc.Save(dataDir);
+    import aspose.pdf as ap
+
+    # Instantiate the Document object by calling its empty constructor
+    doc = ap.Document()
+    page = doc.pages.add()
+    # Instantiate a table object
+    tab1 = ap.Table()
+    # Add the table in paragraphs collection of the desired section
+    page.paragraphs.add(tab1)
+    # Set with column widths of the table
+    tab1.column_widths = "50 50 50"
+    # Set default cell border using BorderInfo object
+    tab1.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
+    # Set table border using another customized BorderInfo object
+    tab1.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
+    # Create MarginInfo object and set its left, bottom, right and top margins
+    margin = ap.MarginInfo()
+    margin.top = 5
+    margin.left = 5
+    margin.right = 5
+    margin.bottom = 5
+    # Set the default cell padding to the MarginInfo object
+    tab1.default_cell_padding = margin
+    # Create rows in the table and then cells in the rows
+    row1 = tab1.rows.add()
+    row1.cells.add("col1")
+    row1.cells.add("col2")
+    row1.cells.add()
+    my_text = ap.text.TextFragment("col3 with large text string")
+    # Row1.Cells.Add("col3 with large text string to be placed inside cell")
+    row1.cells[2].paragraphs.add(my_text)
+    row1.cells[2].is_word_wrapped = False
+    row2 = tab1.rows.add()
+    row2.cells.add("item1")
+    row2.cells.add("item2")
+    row2.cells.add("item3")
+    # Save the Pdf
+    doc.save(output_file)
 ```
 
-To create table with rounded corner, use the BorderInfo class' `RoundedBorderRadius` value and set the table corner style to round.
+To create table with rounded corner, use the [BorderInfo class](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/) [rounded_border_radius](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/#properties) value and set the table corner style to round.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
-
-GraphInfo graph = new GraphInfo();
-graph.Color = Aspose.Pdf.Color.Red;
-// Create a blank BorderInfo object
-BorderInfo bInfo = new BorderInfo(BorderSide.All, graph);
-// Set the border a rounder border where radius of round is 15
-bInfo.RoundedBorderRadius = 15;
-// Set the table Corner style as Round.
-tab1.CornerStyle = Aspose.Pdf.BorderCornerStyle.Round;
-// Set the table border information
-tab1.Border = bInfo;
+```python
+    
+    import aspose.pdf as ap
+    
+    tab1 = ap.Table()
+    graph = ap.GraphInfo()
+    graph.color = ap.Color.red
+    # Create a blank BorderInfo object
+    b_info = ap.BorderInfo(ap.BorderSide.ALL, graph)
+    # Set the border a rounder border where radius of round is 15
+    b_info.rounded_border_radius = 15
+    # Set the table Corner style as Round
+    tab1.corner_style = ap.BorderCornerStyle.ROUND
+    # Set the table border information
+    tab1.border = b_info
 ```
 
 ## Appling Different AutoFit Settings to a Table
@@ -295,8 +278,8 @@ By default Aspose.Pdf inserts a new table using `ColumnAdjustment` with `Customi
 
 As in Microsoft Word, an autofit method is actually a shortcut which applies different properties to the table all at once. These properties are actually what give the table the observed behavior. We will discuss these properties for each autofit option. We will use the following table and apply the different auto fit settings as a demonstration:
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```python
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Python via .NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
@@ -346,10 +329,10 @@ doc.Save(dataDir);
 
 ### Get Table Width
 
-Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class has a method [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) for the purpose. For example, you have not set table columns width explicitly and set [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) to AutoFitToContent. In this case you can get table width as following.
+Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class has a method [GetWidth](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/methods/getwidth) for the purpose. For example, you have not set table columns width explicitly and set [ColumnAdjustment](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/properties/columnadjustment) to AutoFitToContent. In this case you can get table width as following.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```python
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Python via .NET
 // Create a new document
 Document doc = new Document();
 // Add page in document
@@ -370,12 +353,12 @@ Console.WriteLine(table.GetWidth());
 
 ## Add SVG Image to Table Cell
 
-Aspose.PDF for .NET supports the feature to add a table cell into a PDF file. While creating a table, it is possible to add text or images into the cells. Furthermore, the API also offers the feature to convert SVG files to PDF format. Using a combination of these features, it is possible to load an SVG image and add it into a table cell.
+Aspose.PDF for Python via .NET supports the feature to add a table cell into a PDF file. While creating a table, it is possible to add text or images into the cells. Furthermore, the API also offers the feature to convert SVG files to PDF format. Using a combination of these features, it is possible to load an SVG image and add it into a table cell.
 
 The following code snippet shows the steps for creating a table instance and adding an SVG image inside a table cell.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```python
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Python via .NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
@@ -425,8 +408,8 @@ Please take into account that using of HTML Tags inside table element increases 
 
 {{% /alert %}}
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```python
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Python via .NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
@@ -469,8 +452,8 @@ doc.Save(dataDir + "HTMLInsideTableCell_out.pdf");
 
 As a default behavior, when creating a table inside a PDF file, the table flows to subsequent pages when it reaches tables Bottom margin. However, we may have a requirement to forcefully insert page break when a certain number of rows are added for table. The following code snippet shows the steps to insert page break when 10 rows are added for the table.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```python
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Python via .NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
@@ -511,12 +494,12 @@ doc.Save(dataDir);
 
 By default, paragraphs are added to a Page object's Paragraphs collection. However, it is possible to render a table on a new page instead of directly after the previously added paragraph level object on the page.
 
-### Sample: How to Render a Table on New Page using C\#
+### Sample: How to Render a Table on New Page using Python
 
-To render table on a new page, use the [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) property in the BaseParagraph class. The following code snippet shows how.
+To render table on a new page, use the [IsInNewPage](https://reference.aspose.com/pdf/python-net/aspose.pdf/baseparagraph/properties/isinnewpage) property in the BaseParagraph class. The following code snippet shows how.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+```python
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-Python via .NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
@@ -568,7 +551,7 @@ doc.Save(dataDir);
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
+    "name": "Aspose.PDF for Python via .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -615,10 +598,10 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "PDF Manipulation Library for .NET",
+    "applicationCategory": "PDF Manipulation Library for Python via .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
         "@type": "AggregateRating",
