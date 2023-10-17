@@ -24,6 +24,8 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [Aspose.PDF for Reporting Services Product Overview](/pdf/reportingservices/product-overview/)
 - [Aspose.PDF for Reporting Services Supported File Formats](/pdf/reportingservices/supported-file-formats/)
 - [Aspose.PDF for Reporting Services Features](/pdf/reportingservices/features/)
+- [Aspose.PDF for Reporting Services Release Notes](https://releases.aspose.com/pdf/reportingservices/release-notes/)
+- [Download Aspose.PDF for Reporting Services](https://releases.aspose.com/pdf/reportingservices/)
 - [Sample Reports Gallery Aspose.PDF for Reporting Services](/pdf/reportingservices/sample-reports-gallery/)
 - [Install Aspose.Pdf for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
 - [Integration with Microsoft Report Viewer in local mode](/pdf/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)

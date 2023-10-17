@@ -28,16 +28,17 @@ Aspose.PDF for Android via Java is a component that allows developers to create 
 - [Converting documents](/pdf/androidjava/converting/)
 - [Advanced operations](/pdf/java/advanced-operations/)(Aspose.PDF for Android via Java is very similar to Aspose.PDF for Java. So, you can use the same API Reference Guide)
 - [Parsing PDF documents](/pdf/androidjava/parsing/)
-- [Release Notes](/pdf/androidjava/release-notes/)
+- [Release Notes](https://releases.aspose.com/pdf/androidjava/release-notes/)
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.PDF for Android via Java Online Documentation](/pdf/androidjava/) (Aspose.PDF for Android via Java is very similar to Aspose.PDF for Android via Java. So, you can use the same documentation)
 - [Aspose.PDF for Android via Java Features](/pdf/androidjava/key-features/)
-- [Aspose.PDF for Android via Java Release Notes](/pdf/androidjava/aspose-pdf-for-android-via-java/)
+- [Aspose.PDF for Android via Java Release Notes](https://releases.aspose.com/pdf/androidjava/release-notes/)
 - [Aspose.PDF for Android via Java Product Page](https://products.aspose.com/pdf/android-java)
 - [Download Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java)
 - [Install Aspose.PDF for Android via Java](/pdf/androidjava/installation/)
 - [Aspose.PDF for Android via Java API Reference Guide](https://reference.aspose.com/java/pdf) (Aspose.PDF for Android via Java is very similar to Aspose.PDF for Java. So, you can use the same API Reference Guide)
+- [Download Aspose.PDF for Android via Java](https://releases.aspose.com/pdf/androidjava/)
 - [Aspose.PDF for Android via Java Free Support Forum](https://forum.aspose.com/c/pdf)
 - [Aspose.PDF for Android via Java Paid Support Helpdesk](https://helpdesk.aspose.com/)

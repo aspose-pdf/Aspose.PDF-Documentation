@@ -27,8 +27,9 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.PDF for SharePoint Product Overview](/pdf/sharepoint/product-overview/) 
 - [Aspose.PDF for SharePoint Supported File Formats](/pdf/sharepoint/supported-file-formats/)
 - [Aspose.PDF for SharePoint Features](/pdf/sharepoint/features/)
+- [Aspose.PDF for SharePoint Release Notes](https://releases.aspose.com/pdf/sharepoint/release-notes/)
+- [Download Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/)
 - [Install Aspose.Pdf for SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
 - [Evaluate Aspose.Pdf ](/pdf/sharepoint/evaluate-aspose-pdf/)
 - [License Aspose.Pdf for SharePoint](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
 - [ API Limitations](/pdf/sharepoint/api-limitations/)
-

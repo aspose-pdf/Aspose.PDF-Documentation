@@ -26,9 +26,10 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.PDF for JasperReports Product Overview](/pdf/jasperreports/product-overview/)
 - [Aspose.PDF for JasperReports Supported File Formats](/pdf/jasperreports/supported-file-formats/)
 - [Feature Tour Aspose.PDF for JasperReports](/pdf/jasperreports/feature-tour/)
+- [Aspose.PDF for JasperReports Release Notes](https://releases.aspose.com/pdf/jassperreport/release-notes/)
+- [Download Aspose.PDF for JasperReports](https://releases.aspose.com/pdf/jassperreport/)
 - [Aspose.PDF for JasperReports Sample Reports Gallery](/pdf/jasperreports/sample-reports-gallery/)
 - [Installation Aspose.PDF for JasperReports](/pdf/jasperreports/installation/)
 - [Licensing Aspose.PDF for JasperReports](/pdf/jasperreports/licensing/)
 - [Evaluate Aspose.Pdf](/pdf/jasperreports/evaluate-aspose-pdf/)
 - [Aspose.PDF for JasperReports  API Limitations](/pdf/jasperreports/api-limitations/)
-
