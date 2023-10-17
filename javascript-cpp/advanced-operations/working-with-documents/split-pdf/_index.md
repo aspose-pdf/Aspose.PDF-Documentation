@@ -13,10 +13,18 @@ sitemap:
 
 ## Split PDF into two files using JavaScript
 
-This topic shows how to split PDF pages into individual PDF files using JavaScript. 
-How does this feature work? In 'pageToSplit' we specify the number of pages, inclusive, to leave in the first file, the remaining pages of the document will be placed in the second. 
-Such operations are very time consuming, so we recommend using Web Worker.
-Let's try:
+This topic shows how to split PDF pages into individual PDF files using JavaScript. How does this feature work? In 'pageToSplit' we specify the number of pages, inclusive, to leave in the first file, the remaining pages of the document will be placed in the second. Such operations are very time consuming, so we recommend using Web Worker. Let's try!
+
+The provided code snippet is an example of using a Web Worker in JavaScript to split a PDF file into two separate PDF files and offer the user the option to download the resulting files. Here's a steps of the code:
+
+1. Creating a Web Worker. A web worker is initialized using the "AsposePDFforJS.js" script file. This web worker will handle PDF file splitting tasks in the background. Any errors that occur in the worker are captured and logged to the console.
+1. Message Handling. The web worker is set up to listen for messages using the onmessage event handler. When it receives a message from the web page, it processes the request and sends a response back to the main thread.
+1. File Splitting Event Handler. There is an event handler ffileSplit that triggers when a user selects a PDF file for splitting. It reads the selected PDF file using a FileReader and sends the file content and relevant parameters (such as the number of pages to split and output file names) to the web worker via a postMessage call.
+1. Download File Function. The [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function is responsible for generating a link that allows the user to download a file. It accepts the filename, MIME type, and file content. The function creates a download link, associates the file content with it, sets the filename, and adds it to the document. This allows the user to download the resulting PDF files.
+1. Message Handling in the Web Worker. Next, if the 'json.errorCode' is 0, then json.fileNameResult will contain the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' property.
+1. Result Display. The main page includes an element with the ID 'output'. When the web worker sends a message with the result, it updates the 'output' element. If the operation is successful, it displays download links for the two split PDF files. If there's an error, it displays an error message.
+
+This code demonstrates a way to offload resource-intensive PDF file splitting tasks to a web worker to prevent blocking the main UI thread. It also offers a user-friendly way to download the split PDF files.
 
 ```js
 
