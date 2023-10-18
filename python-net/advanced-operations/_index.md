@@ -80,7 +80,11 @@ sitemap:
 
 You'll learn different ways to:
 
-- [Working with Documents](/pdf/python-net/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document
+- [Working with Documents](/pdf/python-net/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
 - [Working with Pages](/pdf/python-net/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps, and etc.
 - [Working with Images](/pdf/python-net/working-with-images/) - add, extract or remove images from PDF documents.
 - [Attachments](/pdf/python-net/attachments/) - you will learn how to add and delete the attachment from PDF programmatically with Python.
+- [Navigation and Interaction](/pdf/python-net/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages.
+- [Annotations](/pdf/python-net/annotations/) - annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
+- [Working with Tables](/pdf/python-net/working-with-tables/) - insert, decorate table in PDF, extract tabular data.
+- [Working with Forms](/pdf/python-net/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.

@@ -3,8 +3,8 @@ title: Remove Tables from existing PDF
 linktitle: Remove Tables
 type: docs
 weight: 50
-url: /net/remove-tables-from-existing-pdf/
-lastmod: "2022-02-17"
+url: /python-net/remove-tables-from-existing-pdf/
+lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -23,14 +23,14 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, remove table, delete tables",
+    "keywords": "pdf, python, remove table, delete tables",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
         "@type": "Organization",
         "name": "Aspose.PDF Doc Team",
         "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
         "alternateName": "Aspose",
         "sameAs": [
             "https://facebook.com/aspose.pdf/",
@@ -65,100 +65,81 @@ sitemap:
             }
         ]
     },
-    "url": "/net/remove-tables-from-existing-pdf/",
+    "url": "/python-net/remove-tables-from-existing-pdf/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/remove-tables-from-existing-pdf/"
+        "@id": "/python-net/remove-tables-from-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2023-02-04",
     "description": ""
 }
 </script>
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for NET offers the capabilities to insert/create Table inside PDF document while its being generated from scratch or you can also add the table object in any existing PDF document. However you may have a requirement to [Manipulate Tables in existing PDF](https://docs.aspose.com/pdf/net/manipulate-tables-in-existing-pdf/) where you can update the contents in existing table cells. However you may come across a requirement to remove table objects from existing PDF document.
+Aspose.PDF for Python via .NET offers the capabilities to insert/create Table inside PDF document while its being generated from scratch or you can also add the table object in any existing PDF document. However you may have a requirement to [Manipulate Tables in existing PDF](https://docs.aspose.com/pdf/python-net/manipulate-tables-in-existing-pdf/) where you can update the contents in existing table cells. However you may come across a requirement to remove table objects from existing PDF document.
 
 {{% /alert %}}
 
-In order to remove the tables, we need to use [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) class to get hold of tables in existing PDF and then call [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
+In order to remove the tables, we need to use [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) class to get hold of tables in existing PDF and then call [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods).
 
 ## Remove Table from PDF document
 
-We have added new function i.e. Remove() to the existing TableAbsorber Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
+We have added new function i.e. [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods) to the existing [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+```python
 
-// Load existing PDF document
-Document pdfDocument = new Document(dataDir + "Table_input.pdf");
+    import aspose.pdf as ap
 
-// Create TableAbsorber object to find tables
-TableAbsorber absorber = new TableAbsorber();
-
-// Visit first page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
-
-// Get first table on the page
-AbsorbedTable table = absorber.TableList[0];
-
-// Remove the table
-absorber.Remove(table);
-
-// Save PDF
-pdfDocument.Save(dataDir + "Table_out.pdf");
+    # Load existing PDF document
+    pdf_document = ap.Document(input_file)
+    # Create TableAbsorber object to find tables
+    absorber = ap.text.TableAbsorber()
+    # Visit first page with absorber
+    absorber.visit(pdf_document.pages[1])
+    # Get first table on the page
+    table = absorber.table_list[0]
+    # Remove the table
+    absorber.remove(table)
+    # Save PDF
+    pdf_document.save(output_file)
 ```
 
 ## Remove Multiple Tables from PDF document
 
 Sometimes a PDF document may contain more than one table and you may come up with a requirement to remove multiple tables from it. In order to remove multiple tables from PDF document, please use the following code snippet:
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+```python
 
-// Load existing PDF document
-Document pdfDocument = new Document(dataDir + "Table_input2.pdf");
+    import aspose.pdf as ap
 
-// Create TableAbsorber object to find tables
-TableAbsorber absorber = new TableAbsorber();
-
-// Visit second page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
-
-// Get copy of table collection
-AbsorbedTable[] tables = new AbsorbedTable[absorber.TableList.Count];
-absorber.TableList.CopyTo(tables, 0);
-
-// Loop through the copy of collection and removing tables
-foreach (AbsorbedTable table in tables)
-    absorber.Remove(table);
-
-// Save document
-pdfDocument.Save(dataDir + "Table2_out.pdf");
+    # Load existing PDF document
+    pdf_document = ap.Document(input_file)
+    # Create TableAbsorber object to find tables
+    absorber = ap.text.TableAbsorber()
+    # Visit second page with absorber
+    absorber.visit(pdf_document.pages[1])
+    # Get copy of table collection
+    tables = absorber.table_list
+    #  Loop through the copy of collection and removing tables
+    for table in tables:
+        absorber.remove(table)
+    # Save document
+    pdf_document.save(output_file)
 ```
-
-{{% alert color="primary" %}}
-
-Please take into account that removing or replacing of a table changes TableList collection. Therefore, in case removing/replacing tables in a loop the copying of TableList collection is essential.
-
-{{% /alert %}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "name": "Aspose.PDF for Python via .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
         "@type": "Organization",
         "name": "Aspose.PDF",
         "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
         "alternateName": "Aspose",
         "sameAs": [
             "https://facebook.com/aspose.pdf/",
@@ -198,10 +179,10 @@ Please take into account that removing or replacing of a table changes TableList
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "PDF Manipulation Library for .NET",
+    "applicationCategory": "PDF Manipulation Library for Python via .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
         "@type": "AggregateRating",
