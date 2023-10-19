@@ -13,7 +13,11 @@ sitemap:
 
 ## Split PDF into two files using JavaScript
 
-This topic shows how to split PDF pages into individual PDF files using JavaScript. How does this feature work? In 'pageToSplit' we specify the number of pages, inclusive, to leave in the first file, the remaining pages of the document will be placed in the second. Such operations are very time-consuming, so we recommend using Web Worker. Let's try!
+This topic shows how to split PDF pages into individual PDF files using JavaScript. 
+
+**How does this feature work?** 
+
+In 'pageToSplit' we specify the number of pages, inclusive, to leave in the first file, the remaining pages of the document will be placed in the second. Such operations are very time-consuming, so we recommend using **Web Worker example**. Let's try!
 
 The next code snippet is a JavaScript program that uses a Web Worker to split a PDF file into two files. The Web Worker is created from the file "AsposePDFforJS.js" and has two event handlers: one for errors and one for messages. The error handler logs the error message to the console, while the message handler displays the result or the error text in the element with the id "output". The result is either a link to download the two split files or an error message. Here's a step of the code:
 
