@@ -22,7 +22,7 @@ To install and use Aspose.PDF for JavaScript via C++ from a -*ZIP archive, follo
 
 Follow the link for [Direct Download](https://releases.aspose.com/pdf/javascriptcpp/)
 
-Another way to install using Python. If you are using Linux or Mac OS X, everything is ready on your system. If you are a Windows user, you can download the installation file from the Python home page:
+If there is no web server installed you can run the examples locally, using Python. So, if you are using Linux or Mac OS X, everything is ready on your system. If you are a Windows user, you can download the installation file from the Python home page:
 
 - go to [python.org](https://www.python.org/)
 - in the download section, select the link to Python "3.xxx"
