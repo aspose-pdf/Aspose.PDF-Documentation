@@ -4,7 +4,7 @@ linktitle: Delete JavaScripts
 type: docs
 weight: 50
 url: /javascript-cpp/delete-javascripts/
-description: Clear JavaScripts from a PDF-file directly in the Web with Aspose.PDF.
+description: Clear JavaScript macros from a PDF file directly in the Web with Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:
     changefreq: "weekly"
