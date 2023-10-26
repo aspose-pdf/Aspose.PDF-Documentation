@@ -1,5 +1,5 @@
 ---
-title: Clear JavaScripts from a PDF-file
+title: Clear JavaScript code from a PDF file
 linktitle: Delete JavaScripts
 type: docs
 weight: 50
