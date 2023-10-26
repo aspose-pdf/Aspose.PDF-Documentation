@@ -1,6 +1,6 @@
 ---
 title: License for Aspose.PDF for JavaScript via C++
-linktitle: Licensing and limitations of Aspose.PDF for JavaScript
+linktitle: Licensing and limitations
 type: docs
 weight: 50
 url: /javascript-cpp/licensing/

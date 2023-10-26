@@ -11,42 +11,29 @@ sitemap:
     priority: 0.7
 ---
 
-## Split PDF into multiple files or separate PDFs in JavaScript
+## Split PDF into two files using JavaScript
 
 This topic shows how to split PDF pages into individual PDF files using JavaScript. 
 
-1. Select a PDF file for splitting.
-1. Create a 'FileReader'.
-1. Set number a page to split
-1. The [AsposePdfOptimize](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfsplit2files/) function is executed.
-1. The name of the resulting file is set, in this example "ResultSplit2.pdf".
-1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) function generates a links and allows you to download the resulting first and second files to the user's operating system.
+**How does this feature work?** 
 
+In 'pageToSplit' we specify the number of pages, inclusive, to leave in the first file, the remaining pages of the document will be placed in the second. Such operations are very time-consuming, so we recommend using **Web Worker example**. Let's try!
 
-The following JavaScript code snippet shows you how to split PDF pages into individual PDF files.
+The next code snippet is a JavaScript program that uses a Web Worker to split a PDF file into two files. The Web Worker is created from the file "AsposePDFforJS.js" and has two event handlers: one for errors and one for messages. The error handler logs the error message to the console, while the message handler displays the result or the error text in the element with the id "output". The result is either a link to download the two split files or an error message. Here's a step of the code:
 
-```js
+1. A Web Worker is initialized using the "AsposePDFforJS.js" script file. This Web Worker will handle PDF file-splitting tasks in the background. Any errors that occur in the worker are captured and logged into the console.
 
-  var ffileSplit = function (e) {
-    const file_reader = new FileReader();
-    file_reader.onload = (event) => {
-      /*Set number a page to split*/
-      const pageToSplit = 1;
-      /*Split to two PDF-files and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/
-      const json = AsposePdfSplit2Files(event.target.result, e.target.files[0].name, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf");
-      if (json.errorCode == 0) document.getElementById('output').textContent = e.target.files[0].name + " split: " + json.fileNameResult1 + ", " + json.fileNameResult2;
-      else document.getElementById('output').textContent = json.errorText;
-      /*Make a link to download the first result file*/
-      DownloadFile(json.fileNameResult1, "application/pdf");
-      /*Make a link to download the second result file*/
-      DownloadFile(json.fileNameResult2, "application/pdf");
-    };
-    file_reader.readAsArrayBuffer(e.target.files[0]);
-  };
-```
+1. The Web Worker also has a message event handler that receives messages from the main thread and responds accordingly. The messages contain the PDF file content and the parameters for the splitting operation, such as the page number to split at and the output file names.
 
-## Using Web Workers
+1. The program defines a function ffileSplit that is executed when the user selects a PDF file from a file input element. The function uses a FileReader to read the file as an array buffer and sends it to the Web Worker with a postMessage call.
+
+1. The program also defines a function [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/) that creates a download link for a given file. The function takes the file name, the MIME type, and the file content as arguments. The function creates a blob object from the file content and assigns it to the href attribute of the link. The function also sets the download attribute of the link to the file name and appends the link to the document body.
+
+1. Next, if the 'json.errorCode' is 0, then json.fileNameResult will contain the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' property.
+
+1. The program updates the element with id "output" with the result from the Web Worker. If the errorCode is 0, it means that the operation was successful and it displays two download links for the output files using the DownloadFile function. If the errorCode is not 0, it means that there was an error and it displays an error message using the errorText property.
+
+This code demonstrates a way to offload resource-intensive PDF file-splitting tasks to a Web Worker to prevent blocking the main UI thread. It also offers a user-friendly way to download the split PDF files.
 
 ```js
 
@@ -88,3 +75,38 @@ The following JavaScript code snippet shows you how to split PDF pages into indi
         return filename;
       }
 ```
+
+The following JavaScript code snippet shows simple example of splitting PDF pages into individual PDF files:
+
+1. Select a PDF file for splitting.
+1. Create a 'FileReader' object in handler.
+1. Set number a page to split.
+1. Call [AsposePdfSplit2Files](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfsplit2files/) in the last handler.
+1. Analyse the result. The name of the resulting file is set, in this example "ResultSplit2.pdf".
+1. Next, if the 'json.errorCode' is 0, then json.fileNameResult will contain the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' property.
+1. You can use helper function [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/).
+
+```js
+
+  var ffileSplit = function (e) {
+    const file_reader = new FileReader();
+    file_reader.onload = (event) => {
+      /*Set number a page to split*/
+      const pageToSplit = 1;
+      /*Split to two PDF-files and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/
+      const json = AsposePdfSplit2Files(event.target.result, e.target.files[0].name, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf");
+      if (json.errorCode == 0) document.getElementById('output').textContent = e.target.files[0].name + " split: " + json.fileNameResult1 + ", " + json.fileNameResult2;
+      else document.getElementById('output').textContent = json.errorText;
+      /*Make a link to download the first result file*/
+      DownloadFile(json.fileNameResult1, "application/pdf");
+      /*Make a link to download the second result file*/
+      DownloadFile(json.fileNameResult2, "application/pdf");
+    };
+    file_reader.readAsArrayBuffer(e.target.files[0]);
+  };
+```
+
+
+
+
+
