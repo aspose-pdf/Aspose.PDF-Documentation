@@ -29,8 +29,6 @@ Aspose.PDF for JavaScript presents you online free application ["PDF to EPUB"](h
 **<abbr title="Electronic Publication">EPUB</abbr>** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
 EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
 
-## Convert PDF to EPUB
-
 ```js
 
     /*Create Web Worker*/
