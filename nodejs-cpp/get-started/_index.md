@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /nodejs-cpp/get-started/
 description: This section describes the basic principles of work Aspose.PDF for Node.js via C++. Aspose.PDF for Node.js via C++ supports a wide variety of functions.
-lastmod: "2022-12-14"   
+lastmod: "2023-11-14"   
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -22,7 +22,7 @@ However, it is not enough just to open your document. In working with PDF, you w
 Using Aspose.PDF for Node.js in your project gives you the following profits:
 
 - wide variety of functions
-- toolkit used to work with PDF directly in the web browser
+- toolkit used to work with PDF in the Node.js environment
 - based on Aspose.PDF for .NET
 
 ## Wide variety of functions

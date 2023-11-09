@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /nodejs-cpp/supported-file-formats/
 description: This page shows which of Aspose.PDF for Node.js can load and save file formats.
-lastmod: "2021-06-05"
+lastmod: "2023-11-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

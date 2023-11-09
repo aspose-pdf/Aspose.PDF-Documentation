@@ -1,11 +1,11 @@
 ---
-title: Key Features of Aspose.PDF for JavaScript
+title: Key Features of Aspose.PDF for Node.js
 linktitle: Key Features
 type: docs
 weight: 20
 url: /nodejs-cpp/key-features/
-description: Aspose.PDF for Node.jsvia C++ demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, pages, etc.
-lastmod: "2022-12-13"
+description: Aspose.PDF for Node.js via C++ demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, pages, etc.
+lastmod: "2023-11-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,11 +13,10 @@ sitemap:
 
 ## General Features
 
-- **Aspose.PDF for Node.jsvia C++** is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET
+- **Aspose.PDF for Node.js via C++** is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET
 - Set, Get, and Remove PDF File Information
 - Delete Bookmarks
 - Delete Annotations
-- Delete JavaScripts
 - Extract a text from PDF
 - Optimize PDF document
 - Optimize resources 

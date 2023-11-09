@@ -5,15 +5,11 @@ type: docs
 weight: 10
 url: /nodejs-cpp/convert-pdf-to-doc/
 lastmod: "2023-08-04"
-description: Learn how to write Node.js code for conversion PDF to DOC(DOCX) directly in the Web.
+description: Learn how to convert PDF to DOC(DOCX) in the Node.js environment.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
-Converting operation depends on the number of pages in the document and can be very time-consuming. Therefore, we highly recommend using Web Workers. 
-
-This code demonstrates a way to offload resource-intensive PDF file converting tasks to a web worker to prevent blocking the main UI thread. It also offers a user-friendly way to download the converted file.
 
 To edit the content of a PDF file in Microsoft Word or other word processors that support DOC and DOCX formats. PDF files are editable, but DOC and DOCX files are more flexible and customizable.
 
@@ -27,61 +23,32 @@ Aspose.PDF for Node.js presents you online free application ["PDF to DOC"](https
 
 ## Convert PDF to DOC
 
-```js
+In case you want to convert PDF document, you can use [AsposePdfToDoc](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftodoc/) function. 
+Please check the following code snippet in order to convert in Node.js environment.
 
-  /*Create Web Worker*/
-  const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
-  AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
-  AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
-    (evt.data == 'ready') ? 'loaded!' :
-      (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/msword", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+**CommonJS:**
 
-  /*Event handler*/
-  const ffileToDoc = e => {
-    const file_reader = new FileReader();
-    file_reader.onload = event => {
-      /*Convert a PDF-file to Doc and save the "ResultPDFtoDoc.doc" - Ask Web Worker*/
-      AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfToDoc', "params": [event.target.result, e.target.files[0].name, "ResultPDFtoDoc.doc"] }, [event.target.result]);
-    };
-    file_reader.readAsArrayBuffer(e.target.files[0]);
-  };
+```cjs
 
-  /*Make a link to download the result file*/
-  const DownloadFile = (filename, mime, content) => {
-      mime = mime || "application/octet-stream";
-      var link = document.createElement("a"); 
-      link.href = URL.createObjectURL(new Blob([content], {type: mime}));
-      link.download = filename;
-      link.innerHTML = "Click here to download the file " + filename;
-      document.body.appendChild(link); 
-      document.body.appendChild(document.createElement("br"));
-      return filename;
-    }
+  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const pdf_file = 'ReadMe.pdf';
+  AsposePdf().then(AsposePdfModule => {
+      /*Convert a PDF-file to Doc and save the "ResultPDFtoDoc.doc"*/
+      const json = AsposePdfModule.AsposePdfToDoc(pdf_file, "ResultPDFtoDoc.doc");
+      console.log("AsposePdfToDoc => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
+  });
 ```
 
-The following Node.js code snippet shows simple example of coverting PDF pages into DOC files:
+**ECMAScript/ES6:**
 
-1. Select a PDF file for converting.
-1. Create a 'FileReader'.
-1. The [AsposePdfToDoc](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftodoc/) function is executed.
-1. The name of the resulting file is set, in this example "ResultPDFtoDoc.doc".
-1. Next, if the 'json.errorCode' is 0, then your result File is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/nodejs-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
+```mjs
 
-```js
-
-  var ffileToDoc = function (e) {
-    const file_reader = new FileReader();
-    file_reader.onload = (event) => {
-      /*Convert a PDF-file to Doc and save the "ResultPDFtoDoc.doc"*/
-      const json = AsposePdfToDoc(event.target.result, e.target.files[0].name, "ResultPDFtoDoc.doc");
-      if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
-      else document.getElementById('output').textContent = json.errorText;
-      /*Make a link to download the result file*/
-      DownloadFile(json.fileNameResult, "application/msword");
-    }
-    file_reader.readAsArrayBuffer(e.target.files[0]);
-  }
+  import AsposePdf from './/AsposePDFforNode.mjs';
+  const AsposePdfModule = await AsposePdf();
+  const pdf_file = 'ReadMe.pdf';
+  /*Convert a PDF-file to Doc and save the "ResultPDFtoDoc.doc"*/
+  const json = AsposePdfModule.AsposePdfToDoc(pdf_file, "ResultPDFtoDoc.doc");
+  console.log("AsposePdfToDoc => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```
 
 {{% alert color="warning" %}}
@@ -95,64 +62,34 @@ Aspose.PDF for Node.js presents you online free application ["PDF to Word"](http
 
 ## Convert PDF to DOCX
 
-Aspose.PDF for Node.js API lets you read and convert PDF documents to DOCX. DOCX is a well-known format for Microsoft Word documents whose structure was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and lateral versions but not with the earlier versions of MS Word which support DOC file extensions.
+Aspose.PDF for Node.js via C++ toolkit lets you read and convert PDF documents to DOCX. DOCX is a well-known format for Microsoft Word documents whose structure was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and lateral versions but not with the earlier versions of MS Word which support DOC file extensions.
 
-```js
+In case you want to convert PDF document, you can use [AsposePdfToDocX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftodocx/) function. 
+Please check the following code snippet in order to convert in Node.js environment.
 
-  /*Create Web Worker*/
-    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
-    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
-    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
-      (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
+**CommonJS:**
 
-    /*Event handler*/
-    const ffileToDocX = e => {
-      const file_reader = new FileReader();
-      file_reader.onload = event => {
-        /*convert a PDF-file to DocX and save the "ResultPDFtoDocX.docx" - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfToDocX', "params": [event.target.result, e.target.files[0].name, "ResultPDFtoDocX.docx"] }, [event.target.result]);
-      };
-      file_reader.readAsArrayBuffer(e.target.files[0]);
-    };
-  /// [Code snippet]
+```cjs
 
-    /*make a link to download the result file*/
-    const DownloadFile = (filename, mime, content) => {
-        mime = mime || "application/octet-stream";
-        var link = document.createElement("a"); 
-        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
-        link.download = filename;
-        link.innerHTML = "Click here to download the file " + filename;
-        document.body.appendChild(link); 
-        document.body.appendChild(document.createElement("br"));
-        return filename;
-      }
+  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const pdf_file = 'ReadMe.pdf';
+  AsposePdf().then(AsposePdfModule => {
+      /*Convert a PDF-file to DocX and save the "ResultPDFtoDocX.docx"*/
+      const json = AsposePdfModule.AsposePdfToDocX(pdf_file, "ResultPDFtoDocX.docx");
+      console.log("AsposePdfToDocX => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
+  });
 ```
 
-The following Node.js code snippet shows simple example of coverting PDF pages into DOCX files:
+**ECMAScript/ES6:**
 
-1. Select a PDF file for converting.
-1. Create a 'FileReader'.
-1. The [AsposePdfToDocX](https://reference.aspose.com/pdf/nodejs-cpp/core/asposepdftodocx/) function is executed.
-1. The name of the resulting file is set, in this example "ResultPDFtoDocX.docx".
-1. Next, if the 'json.errorCode' is 0, then your result File is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/nodejs-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
+```mjs
 
-```js
-
-  var ffileToDocX = function (e) {
-    const file_reader = new FileReader();
-    file_reader.onload = (event) => {
-      /*convert a PDF-file to DocX and save the "ResultPDFtoDocX.docx"*/
-      const json = AsposePdfToDocX(event.target.result, e.target.files[0].name, "ResultPDFtoDocX.docx");
-      if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
-      else document.getElementById('output').textContent = json.errorText;
-      /*make a link to download the result file*/
-      DownloadFile(json.fileNameResult, "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
-    }
-    file_reader.readAsArrayBuffer(e.target.files[0]);
-  }
+  import AsposePdf from './/AsposePDFforNode.mjs';
+  const AsposePdfModule = await AsposePdf();
+  const pdf_file = 'ReadMe.pdf';
+  /*Convert a PDF-file to DocX and save the "ResultPDFtoDocX.docx"*/
+  const json = AsposePdfModule.AsposePdfToDocX(pdf_file, "ResultPDFtoDocX.docx");
+  console.log("AsposePdfToDocX => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```
 
 

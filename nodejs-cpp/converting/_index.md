@@ -1,5 +1,5 @@
 ---
-title: Convert PDF documents using Node.js
+title: Convert PDF documents in Node.js
 linktitle: Convert PDF documents
 type: docs
 weight: 50
@@ -14,15 +14,15 @@ sitemap:
 The PDF was developed to provide a standard for presenting documents and other reference materials in a format that is independent of application software, hardware, and operating system. The content of PDF files is not limited to text, it can be hyperlinks, images, clickable buttons and forms, electronic signatures, watermarks, and more. Therefore, it is often necessary to convert PDF files to some other format in order to edit or change their content. 
 **Our Aspose.PDF for Node.js via C++** tool allows you to successfully, quickly and easily convert your PDF documents to the most popular formats. For a complete list of supported formats, see the section [Aspose.PDF Supported File Formats](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/).
 
-Aspose.PDF for Node.js via C++* allows converting PDF documents to various formats. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn the sections of converting documents with code snippets.
+Aspose.PDF for Node.js via C++ allows converting PDF documents to various formats in the Node.js environment. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn the sections of converting documents with code snippets.
 
 ## How to use Node.js via C++ for conversion
 
-Word documents are the most versatile and editable possible. Converting PDF to DOC manually is a very time-consuming task. In this article, you will learn how to convert PDF to DOC and DOCX in Javascript.
+Word documents are the most versatile and editable possible. Converting PDF to DOC manually is a very time-consuming task. In this article, you will learn how to convert PDF to DOC and DOCX in the Node.js environment by Aspose.PDF.
 
-- [Convert PDF to DOC](/pdf/nodejs-cpp/convert-pdf-to-doc/) - you can convert your PDF document to Word format with Javascript.
+- [Convert PDF to DOC](/pdf/nodejs-cpp/convert-pdf-to-doc/) - you can convert your PDF document to Word format with Node.js.
 
-Number formats are needed not only to make the data in the table easier to read, but also to make the table easier to use. Of course, if you need to convert such data from a PDF document to Excel format use our Aspose.PDF for Javascript.
+Number formats are needed not only to make the data in the table easier to read, but also to make the table easier to use. Of course, if you need to convert such data from a PDF document to Excel format use our Aspose.PDF for Node.js.
 
 - [Convert PDF to Microsoft XLSX](/pdf/nodejs-cpp/convert-pdf-to-xlsx/) - this section describes how to convert PDF document to XLSX, and CSV.
 
@@ -30,7 +30,7 @@ The PowerPoint format is used to create various presentations. PPT files contain
 
 - [Convert PDF to Microsoft PowerPoint](/pdf/nodejs-cpp/convert-pdf-to-powerpoint/) - here we are talking about converting PDF to PowerPoint by tracking the conversion process
 
-HyperText Markup Language is a hypertext document description language, a standard language for creating web pages. With Aspose.PDF for Javascript you can easily convert HTML documents and vice versa.
+HyperText Markup Language is a hypertext document description language, a standard language for creating web pages. With Aspose.PDF for Node.js you can easily convert HTML documents and vice versa.
 
 There are many image formats that need to be converted to PDF for different purposes. Aspose.PDF for Node.js allows the most popular images formats.
 
@@ -43,9 +43,9 @@ This section includes such formats as: EPUB, XPS, TeX, Text, and Grayscale PDF.
 PDF/A is a version of PDF designed for the long-term archiving of electronic documents.
 If honestly, externally, it is very difficult to determine if it is PDF or PDF/A. To check this file, validators are used. Check the following articles for a quality converting PDF to PDF/A and vice versa.
 
-- [Convert PDF to PDF/A formats](/pdf/nodejs-cpp/convert-pdf-to-pdfa/) - Javascript toolkit by Aspose.PDF has an easy way for converting PDF to PDF/A.
+- [Convert PDF to PDF/A formats](/pdf/nodejs-cpp/convert-pdf-to-pdfa/) - Node.js toolkit by Aspose.PDF has an easy way for converting PDF to PDF/A.
 
-- [Convert PDF/A to PDF format](/pdf/nodejs-cpp/convert-pdfa-to-pdf/) - convert PDF/A to PDF format with Javascript easy, fast, and high quality.
+- [Convert PDF/A to PDF format](/pdf/nodejs-cpp/convert-pdfa-to-pdf/) - convert PDF/A to PDF format with Node.js easy, fast, and high quality.
 
 ## Try to convert PDF files online
 

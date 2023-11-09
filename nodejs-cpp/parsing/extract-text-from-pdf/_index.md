@@ -16,50 +16,44 @@ sitemap:
 Extracting text from the PDF document is a very common and useful task. 
 Extracting text from PDFs serves a variety of purposes, from improving search and availability to enabling analysis and automation of data in various fields such as business, research, and information management.
 
-In case you want to extract text from PDF document, you can use [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/) class. 
+In case you want to extract text from PDF document, you can use [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/) function. 
 Please check following code snippet in order to extract text from PDF file using Node.js via C++.
 
-1. Create a 'FileReader'.
-1. The [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/) function is executed.
-1. Next, if the 'json.errorCode' is 0, then you can get links to result files. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
+Check the code snippets and follow the steps to extract text from your PDF:
 
-```js
+**CommonJS:**
 
-    var ffileExtract = function (e) {
-        const file_reader = new FileReader();
-        file_reader.onload = (event) => {
-        /*Extract text from a PDF-file*/
-        const json = AsposePdfExtractText(event.target.result, e.target.files[0].name);
-        if (json.errorCode == 0) document.getElementById('output').textContent = json.extractText;
-        else document.getElementById('output').textContent = json.errorText;
-        };
-        file_reader.readAsArrayBuffer(e.target.files[0]);
-    };
+1. Require the AsposePDFforNode.сjs module.
+1. The name of the resulting file is set, in this example "ReadMe.pdf".
+1. Waiting for module initialization with 'AsposePdf().then'. The object is returned.
+1. Call the function [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/) from the AsposePDFforNode module.
+1. Extracted text is stored in the JSON object. Thus, if 'json.errorCode' is 0, the extracted text is displayed using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+
+```cjs
+
+  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const pdf_file = 'ReadMe.pdf';
+  AsposePdf().then(AsposePdfModule => {
+      /*Extract text from a PDF-file*/
+      const json = AsposePdfModule.AsposePdfExtractText(pdf_file);
+      console.log("AsposePdfExtractText => %O", json.errorCode == 0 ? json.extractText : json.errorText);
+  });
 ```
 
-## Using Web Workers
+**ECMAScript/ES6:**
 
-```js
+1. Import the AsposePDFforNode.mjs module.
+1. The name of the resulting file is set, in this example "ReadMe.pdf".
+1. Waiting for module initialization with 'await AsposePdf()' The object is returned.
+1. Call the function [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/) from the AsposePDFforNode module.
+1. Extracted text is stored in the JSON object. Thus, if 'json.errorCode' is 0, the extracted text is displayed using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-    /*Create Web Worker*/
-    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
-    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
-    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
-        (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ?
-            evt.data.json.extractText :
-            `Error: ${evt.data.json.errorText}`; 
+```mjs
 
-    /*Event handler*/
-    const ffileExtract = e => {
-        const file_reader = new FileReader();
-        file_reader.onload = event => {
-        /*Extract text from a PDF-file - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage(
-            { "operation": 'AsposePdfExtractText', "params": [event.target.result, e.target.files[0].name] },
-            [event.target.result]
-        );
-        };
-        file_reader.readAsArrayBuffer(e.target.files[0]);
-    };
+  import AsposePdf from './/AsposePDFforNode.mjs';
+  const AsposePdfModule = await AsposePdf();
+  const pdf_file = 'ReadMe.pdf';
+  /*Extract text from a PDF-file*/
+  const json = AsposePdfModule.AsposePdfExtractText(pdf_file);
+  console.log("AsposePdfExtractText => %O", json.errorCode == 0 ? json.extractText : json.errorText);
 ```

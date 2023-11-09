@@ -15,12 +15,26 @@ _This page is an overview of Aspose.PDF for Node.js via C++ features._
 
 **Aspose.PDF for Node.js via C++** allows developers manipulate them PDF files directly in the Web. This Node.js Solution is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET. You can easily use aspose-pdf for Node.js via C++ from and then follow the installation instructions.
 
+**About CJS and MJS file extensions**
+
+Node.js supports two modular systems for organizing and sharing code. There are:
+
+- CommonJS Modules
+- ECMAScript modules
+
+The CommonJS modules were the classic dependency processing method in Node.js, while the ECMAScript modules are the newer add-on and follow the standard format used in modern browsers. 'cjs', 'mjs' - are extensions used to specify the module formats (CommonJS and ECMAScript Modules) used in JavaScript files. 
+
+**Two different approaches**
+
+JavaScript offers two methods, 'then' and 'await', for handling asynchronous operations.
+
+The 'then' method works with promises to manage both successful outcomes and errors in a sequential order. Conversely, 'await' is utilized inside async functions to halt execution until a promise is resolved, making the code appear more sequential and similar to synchronous code. 
+
 The Aspose.PDF for Node.js supports a wide variety of functions such as:
 
 - Set, Get, and Remove PDF File Information
 - Delete Bookmarks
 - Delete Annotations
-- Delete Node.jss
 - Extract a text from PDF
 - Optimize PDF document
 - Optimize resources 
@@ -29,7 +43,7 @@ The Aspose.PDF for Node.js supports a wide variety of functions such as:
 - Repair PDF
 - Convertion features
 
-In addition, Aspose.PDF for Node.js via C++ can be applied to easily convert PDF to JPEG, and PDF to PNG images with high performance and perfect quality. Also, this toolkit supports encrypting and decrypting PDF documents.
+In addition, Aspose.PDF for Node.js via C++ can be applied to easily convert PDF documents to various formats with high performance and perfect quality. See the section [Aspose.PDF Supported File Formats](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/). Also, this toolkit supports encrypting and decrypting PDF documents.
 
 Learn more about:
 

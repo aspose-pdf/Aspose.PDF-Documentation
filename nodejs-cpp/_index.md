@@ -6,15 +6,20 @@ type: docs
 weight: 68
 url: /nodejs-cpp/
 is_root: true
-lastmod: "2022-12-08"
-description: Learn to use Aspose.PDF for Node.js to create applications for PDF documents processing in browser.
+lastmod: "2023-11-08"
+description: Learn to use Aspose.PDF for Node.js to create applications for PDF documents processing in Web browser.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-![Aspose.PDF for Node.js logo image](aspose_pdf-for-javascript-cpp.png)
+
+![Aspose.PDF for Node.js logo image](aspose_pdf-for-nodejs-cpp.png)
 
 <h2>Welcome to Aspose.PDF for Node.js via C++</h2>
+
+Aspose.PDF for Node.js via C++ is a powerful toolkit that allows JavaScript to run and helps developers do various tasks for PDF in the Node.js environment.
+
+Aspose.PDF for Node.js allows developers to manipulate PDF files directly on the Web. Aspose.PDF for Node.js via C++ is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET.
 
 {{% alert color="primary" %}}
 
@@ -37,7 +42,7 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.PDF for Node.js Features](/pdf/nodejs-cpp/key-features/)
 - [Aspose.PDF for Node.js Release Notes]()
 - [Download Aspose.PDF for Node.js]()
-- [Aspose.PDF for Node.js Product Page]()
+- [Aspose.PDF for Node.js Product Page](https://products.aspose.com/pdf/nodejs-cpp/)
 - [Aspose.PDF for Node.js API Reference Guide](https://reference.aspose.com/pdf/nodejs-cpp/)
 - [Aspose.PDF for Node.js Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for Node.js Paid Support Helpdesk](https://helpdesk.aspose.com/)
