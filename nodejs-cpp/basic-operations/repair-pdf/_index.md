@@ -17,6 +17,12 @@ Please check following code snippet in order to repair PDF file in Node.js envir
 
 **CommonJS:**
 
+1. Require the AsposePDFforNode.сjs module.
+1. Specify the name of the PDF file that will be repaired.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfRepair](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrepair/).
+1. Repair the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfRepair.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
@@ -29,6 +35,12 @@ Please check following code snippet in order to repair PDF file in Node.js envir
 ```
 
 **ECMAScript/ES6:**
+
+1. Import the AsposePDFforNode.сjs module.
+1. Specify the name of the PDF file that will be repaired.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfRepair](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrepair/).
+1. Repair the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfRepair.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```mjs
 

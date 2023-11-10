@@ -19,10 +19,10 @@ Please check following code snippet in order to extract images from PDF file usi
 **CommonJS:**
 
 1. Require the AsposePDFforNode.сjs module.
-1. Specify the name for the PDF file from which the text will be extracted.
+1. Specify the name for the PDF file from which the image will be extracted.
 1. Initialize the Aspose Pdf() module. Receive the object if successful.
-1. Call the function [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).
-1. Extracted text is stored in the JSON object. Thus, if 'json.errorCode' is 0, the extracted text is displayed using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+1. Call the function [AsposePdfExtractImage](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextractimage/).
+1. Extract images from the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfExtractImage{0:D2}.jpg". Where {0:D2} represents the page number with a two-digit format. The images are saved with a resolution of 150 DPI. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```cjs
 
@@ -38,17 +38,17 @@ Please check following code snippet in order to extract images from PDF file usi
 **ECMAScript/ES6:**
 
 1. Import the AsposePDFforNode.mjs module.
-1. Specify the name for the PDF file from which the text will be extracted.
+1. Specify the name for the PDF file from which the image will be extracted.
 1. Initialize the Aspose Pdf() module. Receive the object if successful.
-1. Call the function [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).
-1. Extracted text is stored in the JSON object. Thus, if 'json.errorCode' is 0, the extracted text is displayed using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+1. Call the function [AsposePdfExtractImage](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextractimage/).
+1. Extract images from the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfExtractImage{0:D2}.jpg". Where {0:D2} represents the page number with a two-digit format. The images are saved with a resolution of 150 DPI. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```mjs
 
     import AsposePdf from './/AsposePDFforNode.mjs';
     const AsposePdfModule = await AsposePdf();
-    const pdf_file = 'Aspose.pdf';
-    /*Extract text from a PDF-file*/
-    const json = AsposePdfModule.AsposePdfExtractText(pdf_file);
-    console.log("AsposePdfExtractText => %O", json.errorCode == 0 ? json.extractText : json.errorText);
+    const pdf_file = 'ReadMe.pdf';
+    /*Extract image from a PDF-file with template "ResultPdfExtractImage{0:D2}.jpg" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
+    const json = AsposePdfModule.AsposePdfExtractImage(pdf_file, "ResultPdfExtractImage{0:D2}.jpg", 150);
+    console.log("AsposePdfExtractImage => %O", json.errorCode == 0 ? json.filesNameResult : json.errorText);
 ```

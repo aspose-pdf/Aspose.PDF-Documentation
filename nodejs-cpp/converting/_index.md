@@ -18,7 +18,7 @@ Aspose.PDF for Node.js via C++ allows converting PDF documents to various format
 
 ## How to use Node.js via C++ for conversion
 
-Word documents are the most versatile and editable possible. In this article, you will learn how to convert PDF to DOC and DOCX in the Node.js environment by Aspose.PDF.
+Word documents are the most versatile and editable possible. In this article, you will learn how to convert PDF to Word in the Node.js environment by Aspose.PDF.
 
 - [Convert PDF to DOC](/pdf/nodejs-cpp/convert-pdf-to-doc/) - you can convert your PDF document to Word format with Node.js.
 
