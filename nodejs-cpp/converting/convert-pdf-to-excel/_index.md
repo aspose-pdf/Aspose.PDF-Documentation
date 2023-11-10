@@ -12,8 +12,7 @@ sitemap:
     priority: 0.7
 ---
 
-
-## Node.js PDF to Excel Conversions
+## Creating spreadsheets from PDF using Node.js 
 
 **Aspose.PDF for Node.js via C++** support the feature of converting PDF files to Excel, and CSV formats.
 

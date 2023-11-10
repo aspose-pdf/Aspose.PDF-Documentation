@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to PPTX in Node.js
-linktitle: Convert PDF to PPTX
+linktitle: Convert PDF to PowerPoint
 type: docs
 weight: 30
 url: /nodejs-cpp/convert-pdf-to-powerpoint/
@@ -10,8 +10,6 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
-**Aspose.PDF for Node.js** lets you track the progress of PDF to PPTX conversion.
 
 {{% alert color="success" %}}
 **Try to convert PDF to PowerPoint online**

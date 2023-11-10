@@ -1,6 +1,6 @@
 ---
-title: Convert PDF to DOC and DOCX in Node.js
-linktitle: Convert PDF to DOC and DOCX
+title: Convert PDF to Word documents in Node.js
+linktitle: Convert PDF to Word
 type: docs
 weight: 10
 url: /nodejs-cpp/convert-pdf-to-doc/
