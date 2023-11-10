@@ -12,10 +12,10 @@ lastmod: "2023-12-15"
 
 Do you need to attach an image to a PDF? Want to Improve the readability of your PDF? Add images to your PDF and your presentation or resume will look more presentable.
 
-It is commonly believed that adding images to PDF files requires a complex special tool. However, with Aspose.PDF for Node.js you can quickly and easily add the images you need to PDF using Node.js directly in your browser.
+It is commonly believed that adding images to PDF files requires a complex special tool. However, with Aspose.PDF for Node.js you can quickly and easily add the images you need to PDF in Node.js environment.
 
-In case you want to split two PDFs into one, you can use [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/) function. 
-Please check the following code snippet in order to split two PDFs in Node.js environment.
+In case you want to add images, you can use [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/) function. 
+Please check the following code snippet in order to add images in Node.js environment.
 
 **CommonJS:**
 
@@ -23,12 +23,11 @@ Please check the following code snippet in order to split two PDFs in Node.js en
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_file = 'ReadMe.pdf';
+  const image_file = 'Aspose.jpg';
   AsposePdf().then(AsposePdfModule => {
-      /*Set number a page to split*/
-      const pageToSplit = 1;
-      /*Split to two PDF-files and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/
-      const json = AsposePdfModule.AsposePdfSplit2Files(pdf_file, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf");
-      console.log("AsposePdfSplit2Files => %O", json.errorCode == 0 ? [json.fileNameResult1, json.fileNameResult2] : json.errorText);
+      /*Add an image to end a PDF-file and save the "ResultImage.pdf"*/
+      const json = AsposePdfModule.AsposePdfAddImage(pdf_file, image_file, "ResultAddImage.pdf");
+      console.log("AsposePdfAddImage => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
   });
 ```
 
@@ -39,9 +38,8 @@ Please check the following code snippet in order to split two PDFs in Node.js en
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'ReadMe.pdf';
-  /*Set number a page to split*/
-  const pageToSplit = 1;
-  /*Split to two PDF-files and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/
-  const json = AsposePdfModule.AsposePdfSplit2Files(pdf_file, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf");
-  console.log("AsposePdfSplit2Files => %O", json.errorCode == 0 ? [json.fileNameResult1, json.fileNameResult2] : json.errorText);
+  const image_file = 'Aspose.jpg';
+  /*Add an image to end a PDF-file and save the "ResultImage.pdf"*/
+  const json = AsposePdfModule.AsposePdfAddImage(pdf_file, image_file, "ResultAddImage.pdf");
+  console.log("AsposePdfAddImage => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```
