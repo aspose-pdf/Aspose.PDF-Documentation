@@ -19,4 +19,4 @@ Node.js can be [installed](https://nodejs.org/en/learn/getting-started/how-to-in
 
 ## Supported Operating Systems
 
-All supported versions of Linux and macOS. 
+All supported versions of [Linux](https://en.wikipedia.org/wiki/Linux) and [macOS](https://www.apple.com/macos/). 
