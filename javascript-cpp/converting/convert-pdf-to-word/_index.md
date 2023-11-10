@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to Word documents in JavaScript
-linktitle: Convert PDF to DOC and DOCX
+linktitle: Convert PDF to Word
 type: docs
 weight: 10
 url: /javascript-cpp/convert-pdf-to-doc/
