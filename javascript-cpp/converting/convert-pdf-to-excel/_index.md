@@ -12,7 +12,6 @@ sitemap:
     priority: 0.7
 ---
 
-
 ## Creating spreadsheets from PDF using  JavaScript
 
 **Aspose.PDF for JavaScript** support the feature of converting PDF files to Excel, and CSV formats.

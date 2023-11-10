@@ -11,8 +11,6 @@ sitemap:
     priority: 0.7
 ---
 
-**Aspose.PDF for JavaScript** lets you track the progress of PDF to PPTX conversion.
-
 Converting operation depends on the number of pages in the document and can be very time-consuming. Therefore, we highly recommend using Web Workers. 
 
 This code demonstrates a way to offload resource-intensive PDF file converting tasks to a web worker to prevent blocking the main UI thread. It also offers a user-friendly way to download the converted file.
