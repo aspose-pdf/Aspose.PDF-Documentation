@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to DOC and DOCX in JavaScript
+title: Convert PDF to Word documents in JavaScript
 linktitle: Convert PDF to DOC and DOCX
 type: docs
 weight: 10
