@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to PPTX in JavaScript
-linktitle: Convert PDF to PPTX
+linktitle: Convert PDF to PowerPoint
 type: docs
 weight: 30
 url: /javascript-cpp/convert-pdf-to-powerpoint/
