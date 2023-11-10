@@ -19,7 +19,7 @@ Please check the following code snippet in order to delete annotations from a PD
 ```cjs
 
     const AsposePdf = require('.//AsposePDFforNode.cjs');
-    const pdf_file = 'ReadMe.pdf';
+    const pdf_file = 'Aspose.pdf';
     AsposePdf().then(AsposePdfModule => {
         /*Delete annotations from a PDF-file and save the "ResultPdfDeleteAnnotations.pdf"*/
         const json = AsposePdfModule.AsposePdfDeleteAnnotations(pdf_file, "ResultPdfDeleteAnnotations.pdf");
@@ -33,7 +33,7 @@ Please check the following code snippet in order to delete annotations from a PD
 
     import AsposePdf from './/AsposePDFforNode.mjs';
     const AsposePdfModule = await AsposePdf();
-    const pdf_file = 'ReadMe.pdf';
+    const pdf_file = 'Aspose.pdf';
     /*Delete annotations from a PDF-file and save the "ResultPdfDeleteAnnotations.pdf"*/
     const json = AsposePdfModule.AsposePdfDeleteAnnotations(pdf_file, "ResultPdfDeleteAnnotations.pdf");
     console.log("AsposePdfDeleteAnnotations => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);

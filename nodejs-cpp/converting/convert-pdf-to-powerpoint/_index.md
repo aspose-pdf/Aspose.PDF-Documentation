@@ -31,7 +31,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to PptX and save the "ResultPDFtoPptX.pptx"*/
       const json = AsposePdfModule.AsposePdfToPptX(pdf_file, "ResultPDFtoPptX.pptx");
@@ -45,7 +45,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to PptX and save the "ResultPDFtoPptX.pptx"*/
   const json = AsposePdfModule.AsposePdfToPptX(pdf_file, "ResultPDFtoPptX.pptx");
   console.log("AsposePdfToPptX => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);

@@ -40,7 +40,7 @@ If you want to sign PDF file try the next code snippet:
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Key PKCS7*/
       const test_pfx_file = 'test.pfx';
@@ -58,7 +58,7 @@ If you want to sign PDF file try the next code snippet:
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Key PKCS7*/
   const test_pfx_file = 'test.pfx';
   /*Signature appearance*/

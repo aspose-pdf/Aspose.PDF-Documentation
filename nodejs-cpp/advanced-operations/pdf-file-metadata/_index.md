@@ -20,8 +20,8 @@ Please check the following code snippet in order to get PDF file information in 
 
 ```cjs
 
-  const AsposePdf = require('../AsposePDFforNode.cjs');
-  const pdf_file = '../ReadMe.pdf';
+  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Get info (metadata) from a PDF-file*/
       const json = AsposePdfModule.AsposePdfGetInfo(pdf_file);
@@ -55,9 +55,9 @@ Please check the following code snippet in order to get PDF file information in 
 
 ```mjs
 
-  import AsposePdf from '../AsposePDFforNode.mjs';
+  import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = '../ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Get info (metadata) from a PDF-file*/
   const json = AsposePdfModule.AsposePdfGetInfo(pdf_file);
   /* JSON
@@ -97,7 +97,7 @@ Please check the following code snippet in order to get fonts from a PDF file in
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Get list fonts from a PDF-file*/
       const json = AsposePdfModule.AsposePdfGetAllFonts(pdf_file);
@@ -112,7 +112,7 @@ Please check the following code snippet in order to get fonts from a PDF file in
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Get list fonts from a PDF-file*/
   const json = AsposePdfModule.AsposePdfGetAllFonts(pdf_file);
   /*json.fonts - array of fonts: { fontName: <string>, isEmbedded: <boolean>, isAccessible: <boolean> }*/
@@ -141,7 +141,7 @@ Possible to set:
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Set PDF info: title, creator, author, subject, keywords, creation (date), mod (date modify)*/
       /*If not need to set value, use undefined or "" (empty string)*/
@@ -157,7 +157,7 @@ Possible to set:
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Set PDF info: title, creator, author, subject, keywords, creation (date), mod (date modify)*/
   /*If not need to set value, use undefined or "" (empty string)*/
   /*Set info (metadata) in a PDF-file and save the "ResultSetInfo.pdf"*/
@@ -177,7 +177,7 @@ Please check the following code snippet in order to remove metadata from PDF in 
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Remove metadata from a PDF-file and save the "ResultPdfRemoveMetadata.pdf"*/
       const json = AsposePdfModule.AsposePdfRemoveMetadata(pdf_file, "ResultPdfRemoveMetadata.pdf");
@@ -191,7 +191,7 @@ Please check the following code snippet in order to remove metadata from PDF in 
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Remove metadata from a PDF-file and save the "ResultPdfRemoveMetadata.pdf"*/
   const json = AsposePdfModule.AsposePdfRemoveMetadata(pdf_file, "ResultPdfRemoveMetadata.pdf");
   console.log("AsposePdfRemoveMetadata => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);

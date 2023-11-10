@@ -20,7 +20,7 @@ Please check the following code snippet in order to set background color of PDF 
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Set the background color for the PDF-file and save the "ResultPdfSetBackgroundColor.pdf"*/
       const json = AsposePdfModule.AsposePdfSetBackgroundColor(pdf_file, "#426bf4", "ResultPdfSetBackgroundColor.pdf");
@@ -34,7 +34,7 @@ Please check the following code snippet in order to set background color of PDF 
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Set the background color for the PDF-file and save the "ResultPdfSetBackgroundColor.pdf"*/
   const json = AsposePdfModule.AsposePdfSetBackgroundColor(pdf_file, "#426bf4", "ResultPdfSetBackgroundColor.pdf");
   console.log("AsposePdfSetBackgroundColor => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);

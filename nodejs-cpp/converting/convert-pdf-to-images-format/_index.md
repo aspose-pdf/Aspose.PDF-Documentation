@@ -38,7 +38,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to JPG with template "ResultPdfToJpg{0:D2}.jpg" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
       const json = AsposePdfModule.AsposePdfPagesToJpg(pdf_file, "ResultPdfToJpg{0:D2}.jpg", 150);
@@ -52,7 +52,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to JPG with template "ResultPdfToJpg{0:D2}.jpg" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
   const json = AsposePdfModule.AsposePdfPagesToJpg(pdf_file, "ResultPdfToJpg{0:D2}.jpg", 150);
   console.log("AsposePdfPagesToJpg => %O", json.errorCode == 0 ? json.filesNameResult : json.errorText);
@@ -76,7 +76,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to TIFF with template "ResultPdfToTiff{0:D2}.tiff" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
       const json = AsposePdfModule.AsposePdfPagesToTiff(pdf_file, "ResultPdfToTiff{0:D2}.tiff", 150);
@@ -90,7 +90,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to TIFF with template "ResultPdfToTiff{0:D2}.tiff" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
   const json = AsposePdfModule.AsposePdfPagesToTiff(pdf_file, "ResultPdfToTiff{0:D2}.tiff", 150);
   console.log("AsposePdfPagesToTiff => %O", json.errorCode == 0 ? json.filesNameResult : json.errorText);
@@ -116,7 +116,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to PNG with template "ResultPdfToPng{0:D2}.png" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
       const json = AsposePdfModule.AsposePdfPagesToPng(pdf_file, "ResultPdfToPng{0:D2}.png", 150);
@@ -130,7 +130,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to PNG with template "ResultPdfToPng{0:D2}.png" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
   const json = AsposePdfModule.AsposePdfPagesToPng(pdf_file, "ResultPdfToPng{0:D2}.png", 150);
   console.log("AsposePdfPagesToPng => %O", json.errorCode == 0 ? json.filesNameResult : json.errorText);
@@ -156,7 +156,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to SVG and save the "ResultPdfToSvg.svg"*/
       const json = AsposePdfModule.AsposePdfPagesToSvg(pdf_file, "ResultPdfToSvg.svg");
@@ -170,7 +170,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to SVG and save the "ResultPdfToSvg.svg"*/
   const json = AsposePdfModule.AsposePdfPagesToSvg(pdf_file, "ResultPdfToSvg.svg");
   console.log("AsposePdfPagesToSvg => %O", json.errorCode == 0 ? json.filesNameResult : json.errorText);
@@ -186,7 +186,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to SVG(zip) and save the "ResultPdfToSvgZip.zip"*/
       const json = AsposePdfModule.AsposePdfPagesToSvgZip(pdf_file, "ResultPdfToSvgZip.zip");
@@ -200,7 +200,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*convert a PDF-file to SVG zip and save the "ResultPdfToSvgZip.zip"*/
   const json = AsposePdfModule.AsposePdfPagesToSvgZip(pdf_file, "ResultPdfToSvgZip.zip");
   console.log("AsposePdfPagesToSvgZip => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText)
@@ -216,7 +216,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to DICOM with template "ResultPdfToDICOM{0:D2}.dcm" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
       const json = AsposePdfModule.AsposePdfPagesToDICOM(pdf_file, "ResultPdfToDICOM{0:D2}.dcm", 150);
@@ -230,7 +230,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to DICOM with template "ResultPdfToDICOM{0:D2}.dcm" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
   const json = AsposePdfModule.AsposePdfPagesToDICOM(pdf_file, "ResultPdfToDICOM{0:D2}.dcm", 150);
   console.log("AsposePdfPagesToDICOM => %O", json.errorCode == 0 ? json.filesNameResult : json.errorText);
@@ -246,7 +246,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to BMP with template "ResultPdfToBmp{0:D2}.bmp" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
       const json = AsposePdfModule.AsposePdfPagesToBmp(pdf_file, "ResultPdfToBmp{0:D2}.bmp", 150);
@@ -260,7 +260,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to BMP with template "ResultPdfToBmp{0:D2}.bmp" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
   const json = AsposePdfModule.AsposePdfPagesToBmp(pdf_file, "ResultPdfToBmp{0:D2}.bmp", 150);
   console.log("AsposePdfPagesToBmp => %O", json.errorCode == 0 ? json.filesNameResult : json.errorText);

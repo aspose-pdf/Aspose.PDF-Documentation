@@ -22,7 +22,7 @@ Please check the following code snippet in order to add images in Node.js enviro
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   const image_file = 'Aspose.jpg';
   AsposePdf().then(AsposePdfModule => {
       /*Add an image to end a PDF-file and save the "ResultImage.pdf"*/
@@ -37,7 +37,7 @@ Please check the following code snippet in order to add images in Node.js enviro
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   const image_file = 'Aspose.jpg';
   /*Add an image to end a PDF-file and save the "ResultImage.pdf"*/
   const json = AsposePdfModule.AsposePdfAddImage(pdf_file, image_file, "ResultAddImage.pdf");

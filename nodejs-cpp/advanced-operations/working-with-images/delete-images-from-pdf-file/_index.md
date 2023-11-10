@@ -19,7 +19,7 @@ Please check the following code snippet in order to delete images in Node.js env
 ```cjs
 
     const AsposePdf = require('.//AsposePDFforNode.cjs');
-    const pdf_file = 'ReadMe.pdf';
+    const pdf_file = 'Aspose.pdf';
     AsposePdf().then(AsposePdfModule => {
         /*Delete images from a PDF-file and save the "ResultPdfDeleteImages.pdf"*/
         const json = AsposePdfModule.AsposePdfDeleteImages(pdf_file, "ResultPdfDeleteImages.pdf");
@@ -33,7 +33,7 @@ Please check the following code snippet in order to delete images in Node.js env
 
     import AsposePdf from './/AsposePDFforNode.mjs';
     const AsposePdfModule = await AsposePdf();
-    const pdf_file = 'ReadMe.pdf';
+    const pdf_file = 'Aspose.pdf';
     /*Delete images from a PDF-file and save the "ResultPdfDeleteImages.pdf"*/
     const json = AsposePdfModule.AsposePdfDeleteImages(pdf_file, "ResultPdfDeleteImages.pdf");
     console.log("AsposePdfDeleteImages => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);

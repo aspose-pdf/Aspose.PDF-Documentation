@@ -21,7 +21,7 @@ Please check the following code snippet in order to split two PDFs in Node.js en
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Set number a page to split*/
       const pageToSplit = 1;
@@ -37,7 +37,7 @@ Please check the following code snippet in order to split two PDFs in Node.js en
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Set number a page to split*/
   const pageToSplit = 1;
   /*Split to two PDF-files and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/

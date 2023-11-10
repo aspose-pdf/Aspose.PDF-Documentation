@@ -23,7 +23,7 @@ Please check the following code snippet in order to add an image stamp to a PDF 
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   const stamp_file = 'Aspose.jpg';
   AsposePdf().then(AsposePdfModule => {
       /*Add stamp to a PDF-file and save the "ResultImage.pdf"*/
@@ -38,7 +38,7 @@ Please check the following code snippet in order to add an image stamp to a PDF 
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   const stamp_file = 'Aspose.jpg';
   /*Add stamp to a PDF-file and save the "ResultImage.pdf"*/
   const json = AsposePdfModule.AsposePdfAddStamp(pdf_file, stamp_file, 0, 5, 5, 40, 40, AsposePdfModule.Rotation.on270, 0.5, "ResultAddStamp.pdf");

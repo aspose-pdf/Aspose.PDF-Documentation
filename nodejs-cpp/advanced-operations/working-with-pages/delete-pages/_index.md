@@ -20,7 +20,7 @@ Please check the following code snippet in order to delete PDF pages in Node.js 
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*string, include number pages with interval: "7, 20, 22, 30-32, 33, 36-40, 46"*/
       /*const numPages = "1-3";*/
@@ -40,7 +40,7 @@ Please check the following code snippet in order to delete PDF pages in Node.js 
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*string, include number pages with interval: "7, 20, 22, 30-32, 33, 36-40, 46"*/
   /*const numPages = "1-3";*/
   /*array, array of number pages*/

@@ -20,7 +20,7 @@ Please check following code snippet in order to repair PDF file in Node.js envir
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
     /*Repair a PDF-file and save the "ResultPdfRepair.pdf"*/
     const json = AsposePdfModule.AsposePdfRepair(pdf_file, "ResultPdfRepair.pdf");
@@ -34,7 +34,7 @@ Please check following code snippet in order to repair PDF file in Node.js envir
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Repair a PDF-file and save the "ResultPdfRepair.pdf"*/
   const json = AsposePdfModule.AsposePdfRepair(pdf_file, "ResultPdfRepair.pdf");
   console.log("AsposePdfRepair => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);

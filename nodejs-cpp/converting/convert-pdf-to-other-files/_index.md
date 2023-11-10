@@ -33,7 +33,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to ePub and save the "ResultPDFtoEPUB.epub"*/
       const json = AsposePdfModule.AsposePdfToEPUB(pdf_file, "ResultPDFtoEPUB.epub");
@@ -47,7 +47,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to ePub and save the "ResultPDFtoEPUB.epub"*/
   const json = AsposePdfModule.AsposePdfToEPUB(pdf_file, "ResultPDFtoEPUB.epub");
   console.log("AsposePdfToEPUB => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
@@ -72,7 +72,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to TeX and save the "ResultPDFtoTeX.tex"*/
       const json = AsposePdfModule.AsposePdfToTeX(pdf_file, "ResultPDFtoTeX.tex");
@@ -86,7 +86,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to TeX and save the "ResultPDFtoTeX.tex"*/
   const json = AsposePdfModule.AsposePdfToTeX(pdf_file, "ResultPDFtoTeX.tex");
   console.log("AsposePdfToTeX => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
@@ -110,7 +110,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to Txt and save the "ResultPDFtoTxt.txt"*/
       const json = AsposePdfModule.AsposePdfToTxt(pdf_file, "ResultPDFtoTxt.txt");
@@ -124,7 +124,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to Txt and save the "ResultPDFtoTxt.txt"*/
   const json = AsposePdfModule.AsposePdfToTxt(pdf_file, "ResultPDFtoTxt.txt");
   console.log("AsposePdfToTxt => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
@@ -152,7 +152,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to Xps and save the "ResultPDFtoXps.xps"*/
       const json = AsposePdfModule.AsposePdfToXps(pdf_file, "ResultPDFtoXps.xps");
@@ -166,7 +166,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to Xps and save the "ResultPDFtoXps.xps"*/
   const json = AsposePdfModule.AsposePdfToXps(pdf_file, "ResultPDFtoXps.xps");
   console.log("AsposePdfToXps => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
@@ -185,7 +185,7 @@ Please check the following code snippet in order to convert in Node.js environme
 ```cjs
 
 const AsposePdf = require('.//AsposePDFforNode.cjs');
-const pdf_file = 'ReadMe.pdf';
+const pdf_file = 'Aspose.pdf';
 AsposePdf().then(AsposePdfModule => {
     /*Convert a PDF-file to grayscale and save the "ResultConvertToGrayscale.pdf"*/
     const json = AsposePdfModule.AsposePdfConvertToGrayscale(pdf_file, "ResultConvertToGrayscale.pdf");
@@ -199,7 +199,7 @@ AsposePdf().then(AsposePdfModule => {
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'ReadMe.pdf';
+  const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to grayscale and save the "ResultConvertToGrayscale.pdf"*/
   const json = AsposePdfModule.AsposePdfConvertToGrayscale(pdf_file, "ResultConvertToGrayscale.pdf");
   console.log("AsposePdfConvertToGrayscale => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
