@@ -13,5 +13,5 @@ sitemap:
 
 ## Classic license
 
-
+The license file name must be "aspose.lic". You need to rename the received license file and place it in the Product folder.
 
