@@ -19,7 +19,7 @@ PDF annotations such as highlighting, underlining, or adding comments allow user
 
 You are able to do the following:
 
-- [Delete Annotation](/pdf/nodejs-cpp/delete-annotation/) - this section explains how to delete annotations from your PDF with Node.js.
+- [Delete Annotation](/pdf/nodejs-cpp/delete-annotation/) - this section explains how to delete annotations from your PDF in the Node.js environment.
 
 
 

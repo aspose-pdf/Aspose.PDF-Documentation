@@ -13,260 +13,186 @@ sitemap:
 
 ## Get PDF File Information
 
-1. Create a 'FileReader'.
-1. The [AsposePdfGetInfo](https://reference.aspose.com/pdf/nodejs-cpp/core/asposepdfgetinfo/) function is executed.
-1. PDF metadata that can be obtained:
-- title - title
-- creator - creator
-- author - author
-- subject - subject
-- keywords - keywords
-- creation - creation date
-- mod - modify date
-1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
+In case you want to get PDF file information, you can use [AsposePdfGetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/) function. 
+Please check the following code snippet in order to get PDF file information in Node.js environment.
 
-```js
+**CommonJS:**
 
-  var ffilePdfGetInfo = function (e) {
-    const file_reader = new FileReader();
-    file_reader.onload = (event) => {
-      /*Get info (metadata) from PDF file.*/
-      const json = AsposePdfGetInfo(event.target.result, e.target.files[0].name);
+```cjs
+
+  const AsposePdf = require('../AsposePDFforNode.cjs');
+  const pdf_file = '../ReadMe.pdf';
+  AsposePdf().then(AsposePdfModule => {
+      /*Get info (metadata) from a PDF-file*/
+      const json = AsposePdfModule.AsposePdfGetInfo(pdf_file);
       /* JSON
-      title - title
-      creator - creator
-      author - author
-      subject - subject
-      keywords - keywords
-      format - PDF format
-      version - PDF version
-      ispdfa - PDF is PDF/A
-      ispdfua - PDF is PDF/UA
-      permission - PDF permission
-      size - PDF page size
-      pagecount - Page count
-      Creation Date: json.creation
-      Modify Date:   json.mod
+        Title           : json.title
+        Creator         : json.creator
+        Author          : json.author
+        Subject         : json.subject
+        Keywords        : json.keywords
+        Creation Date   : json.creation
+        Modify Date     : json.mod
+        PDF format      : json.format
+        PDF version     : json.version
+        PDF is PDF/A    : json.ispdfa
+        PDF is PDF/UA   : json.ispdfua
+        PDF permission  : json.permission
+        PDF page size   : json.size
+        Page count      : json.pagecount
+        Annotation count: json.annotationcount
+        Bookmark count  : json.bookmarkcount
+        Attachment count: json.attachmentcount
+        Metadata count  : json.metadatacount
+        JavaScript count: json.javascriptcount
+        Image count     : json.imagecount
       */
-      if (json.errorCode == 0) document.getElementById('output').textContent = "JSON:\n" + JSON.stringify(json, null, 4);
-      else document.getElementById('output').textContent = json.errorText;
-    };
-    file_reader.readAsArrayBuffer(e.target.files[0]);
-  };
+      console.log("AsposePdfGetInfo => %O", json.errorCode == 0 ? 'Title: ' + json.title : json.errorText);
+  });
 ```
 
-### Using Web Workers
+**ECMAScript/ES6:**
 
-```js
+```mjs
 
-    /*Create Web Worker*/
-    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
-    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
-    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
-      (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ?
-          `info:\n${JSON.stringify(evt.data.json, null, 4)}` :
-          `Error: ${evt.data.json.errorText}`; 
-
-    /*Event handler*/
-    const ffilePdfGetInfo = e => {
-      const file_reader = new FileReader();
-      file_reader.onload = event => {
-        /*Get info (metadata) from a PDF-file - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage(
-          { "operation": 'AsposePdfGetInfo', "params": [event.target.result, e.target.files[0].name] },
-          [event.target.result]
-        );
-      };
-      file_reader.readAsArrayBuffer(e.target.files[0]);
-    };
+  import AsposePdf from '../AsposePDFforNode.mjs';
+  const AsposePdfModule = await AsposePdf();
+  const pdf_file = '../ReadMe.pdf';
+  /*Get info (metadata) from a PDF-file*/
+  const json = AsposePdfModule.AsposePdfGetInfo(pdf_file);
+  /* JSON
+    Title           : json.title
+    Creator         : json.creator
+    Author          : json.author
+    Subject         : json.subject
+    Keywords        : json.keywords
+    Creation Date   : json.creation
+    Modify Date     : json.mod
+    PDF format      : json.format
+    PDF version     : json.version
+    PDF is PDF/A    : json.ispdfa
+    PDF is PDF/UA   : json.ispdfua
+    PDF permission  : json.permission
+    PDF page size   : json.size
+    Page count      : json.pagecount
+    Annotation count: json.annotationcount
+    Bookmark count  : json.bookmarkcount
+    Attachment count: json.attachmentcount
+    Metadata count  : json.metadatacount
+    JavaScript count: json.javascriptcount
+    Image count     : json.imagecount
+  */
+  console.log("AsposePdfGetInfo => %O", json.errorCode == 0 ? 'Title: ' + json.title : json.errorText);
 ```
 
 ## Get All Fonts
 
 Getting fonts from a PDF file can be a useful way to reuse fonts in other documents or applications. 
 
-In case you want to get all fonts from a PDF document, you can use [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/core/asposepdfgetallfonts/). 
-Please check following code snippet in order to get all fonts from an existing PDF document using Node.js via C++.
+In case you want to get fonts from a PDF file, you can use [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/) function. 
+Please check the following code snippet in order to get fonts from a PDF file in Node.js environment.
 
-1. Create a 'FileReader'.
-1. The [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/core/asposepdfgetallfonts/) function is executed.
-1. Next, if the 'json.errorCode' is 0, then you can get list of fonts from PDF file. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
+**CommonJS:**
 
-```js
+```cjs
 
-  var ffilePdfGetAllFonts = function (e) {
-    const file_reader = new FileReader();
-    file_reader.onload = (event) => {
-      /*get list of fonts from PDF file.*/
-      const json = AsposePdfGetAllFonts(event.target.result, e.target.files[0].name);
-      if (json.errorCode == 0) document.getElementById('output').textContent = "JSON:\n" + JSON.stringify(json, null, 4);
-      else document.getElementById('output').textContent = json.errorText;
-    };
-    file_reader.readAsArrayBuffer(e.target.files[0]);
-  };
+  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const pdf_file = 'ReadMe.pdf';
+  AsposePdf().then(AsposePdfModule => {
+      /*Get list fonts from a PDF-file*/
+      const json = AsposePdfModule.AsposePdfGetAllFonts(pdf_file);
+      /*json.fonts - array of fonts: { fontName: <string>, isEmbedded: <boolean>, isAccessible: <boolean> }*/
+      console.log("AsposePdfGetAllFonts => fonts: %O", json.errorCode == 0 ? json.fonts : json.errorText);
+  });
 ```
 
-## Using Web Workers
+**ECMAScript/ES6:**
 
-```js
+```mjs
 
-    /*Create Web Worker*/
-    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
-    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
-    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
-      (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ?
-          `fonts:\n${JSON.stringify(evt.data.json.fonts, null, 4)}` :
-          `Error: ${evt.data.json.errorText}`; 
-
-    /*Event handler*/
-    const ffilePdfGetAllFonts = e => {
-      const file_reader = new FileReader();
-      file_reader.onload = event => {
-        /*Get list fonts a PDF-file - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage(
-          { "operation": 'AsposePdfGetAllFonts', "params": [event.target.result, e.target.files[0].name] },
-          [event.target.result]
-        );
-      };
-      file_reader.readAsArrayBuffer(e.target.files[0]);
-    };
+  import AsposePdf from './/AsposePDFforNode.mjs';
+  const AsposePdfModule = await AsposePdf();
+  const pdf_file = 'ReadMe.pdf';
+  /*Get list fonts from a PDF-file*/
+  const json = AsposePdfModule.AsposePdfGetAllFonts(pdf_file);
+  /*json.fonts - array of fonts: { fontName: <string>, isEmbedded: <boolean>, isAccessible: <boolean> }*/
+  console.log("AsposePdfGetAllFonts => fonts: %O", json.errorCode == 0 ? json.fonts : json.errorText);
 ```
+
 ## Set PDF File Information
 
 Aspose.PDF for Node.js via C++ allows you to set file-specific information for a PDF, information like author, creation date, subject, and title. To set this information:
 
-1. Create a 'FileReader'.
-1. If not need to set value, use undefined or "" (empty string).
-1. The [AsposePdfSetInfo](https://reference.aspose.com/pdf/nodejs-cpp/core/asposepdfsetinfo/) function is executed.
-1. The name of the resulting file is set, in this example "ResultSetInfo.pdf".
-1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/nodejs-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
+In case you want to set file-specific information, you can use [AsposePdfSetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfsetinfo/) function. 
+Please check the following code snippet in order to set file information in Node.js environment.
 
-```js
+Possible to set: 
+- title
+- creator
+- author
+- subject
+- list keywords
+- creation date
+- modify date
+- result file name
 
-    var ffilePdfSetInfo = function (e) {
-      const file_reader = new FileReader();
-      file_reader.onload = (event) => {
-        /*Set PDF info: title, creator, author, subject, keywords, creation (date), mod (date modify)*/
-        /*If not need to set value, use undefined or "" (empty string)*/
-        /*Set info (metadata) in a PDF-file and save the "ResultSetInfo.pdf"*/
-        const json = AsposePdfSetInfo(event.target.result, e.target.files[0].name, "Setting PDF Document Information", "", "Aspose", undefined, "Aspose.Pdf, DOM, API", undefined, "16/02/2023 11:55 PM", "ResultSetInfo.pdf");
-        if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
-        else document.getElementById('output').textContent = json.errorText;
-        /*Make a link to download the result file*/
-        DownloadFile(json.fileNameResult, "application/pdf");
-      };
-      file_reader.readAsArrayBuffer(e.target.files[0]);
-    };
+**CommonJS:**
+
+```cjs
+
+  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const pdf_file = 'ReadMe.pdf';
+  AsposePdf().then(AsposePdfModule => {
+      /*Set PDF info: title, creator, author, subject, keywords, creation (date), mod (date modify)*/
+      /*If not need to set value, use undefined or "" (empty string)*/
+      /*Set info (metadata) in a PDF-file and save the "ResultSetInfo.pdf"*/
+      const json = AsposePdfModule.AsposePdfSetInfo(pdf_file, "Setting PDF Document Information", "", "Aspose", undefined, "Aspose.Pdf, DOM, API", undefined, "05/05/2023 11:55 PM", "ResultSetInfo.pdf");
+      console.log("AsposePdfSetInfo => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
+  });
 ```
 
-### Using Web Workers
+**ECMAScript/ES6:**
 
-```js
+```mjs
 
-    /*Create Web Worker*/
-    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
-    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
-    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
-      (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ?
-          `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` :
-          `Error: ${evt.data.json.errorText}`;
-
-    /*Event handler*/
-    const ffilePdfSetInfo = e => {
-      const file_reader = new FileReader();
-      file_reader.onload = event => {
-        /*PDF info: title, creator, author, subject, keywords, creation (date), mod (date modify)*/
-        const title = 'Setting PDF Document Information';
-        const creator = ''; /*if not need to set value, use: undefined or ""/'' (empty string)*/
-        const author = 'Aspose';
-        const subject = undefined;
-        const keywords = 'Aspose.Pdf, DOM, API';
-        const creation = undefined; /*create date*/
-        const mod = '16/02/2023 11:55 PM'; /*modify date*/
-        /*Set info (metadata) in a PDF-file and save the "ResultSetInfo.pdf" - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage(
-          { "operation": 'AsposePdfSetInfo',
-            "params": [event.target.result, e.target.files[0].name, title, creator, author, subject, keywords, creation, mod, "ResultSetInfo.pdf"] },
-          [event.target.result]
-        );
-      };
-      file_reader.readAsArrayBuffer(e.target.files[0]);
-    };
-
-    /*Make a link to download the result file*/
-    const DownloadFile = (filename, mime, content) => {
-        mime = mime || "application/octet-stream";
-        var link = document.createElement("a"); 
-        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
-        link.download = filename;
-        link.innerHTML = "Click here to download the file " + filename;
-        document.body.appendChild(link); 
-        document.body.appendChild(document.createElement("br"));
-        return filename;
-      }
+  import AsposePdf from './/AsposePDFforNode.mjs';
+  const AsposePdfModule = await AsposePdf();
+  const pdf_file = 'ReadMe.pdf';
+  /*Set PDF info: title, creator, author, subject, keywords, creation (date), mod (date modify)*/
+  /*If not need to set value, use undefined or "" (empty string)*/
+  /*Set info (metadata) in a PDF-file and save the "ResultSetInfo.pdf"*/
+  const json = AsposePdfModule.AsposePdfSetInfo(pdf_file, "Setting PDF Document Information", "", "Aspose", undefined, "Aspose.Pdf, DOM, API", undefined, "05/05/2023 11:55 PM", "ResultSetInfo.pdf");
+  console.log("AsposePdfSetInfo => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```
 
 ## Remove PDF File Information
 
 Aspose.PDF for Node.js via C++ allows you to remove PDF file Metadata:
 
-1. Create a 'FileReader'.
-1. The [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/) function is executed.
-1. The name of the resulting file is set, in this example "ResultPdfRemoveMetadata.pdf".
-1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
-1. As a result, the [DownloadFile](https://reference.aspose.com/pdf/nodejs-cpp/misc/downloadfile/) function generates a link and allows you to download the resulting file to the user's operating system.
+In case you want to remove metadata from PDF, you can use [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/) function. 
+Please check the following code snippet in order to remove metadata from PDF in Node.js environment.
 
-```js
+**CommonJS:**
 
-    var ffilePdfRemoveMetadata = function (e) {
-      const file_reader = new FileReader();
-      file_reader.onload = (event) => {
-        /*Remove metadata a PDF-file and save the "ResultPdfRemoveMetadata.pdf"*/
-        const json = AsposePdfRemoveMetadata(event.target.result, e.target.files[0].name, "ResultPdfRemoveMetadata.pdf");
-        if (json.errorCode == 0) document.getElementById('output').textContent = json.fileNameResult;
-        else document.getElementById('output').textContent = json.errorText;
-        /*Make a link to download the result file*/
-        DownloadFile(json.fileNameResult, "application/pdf");
-      };
-      file_reader.readAsArrayBuffer(e.target.files[0]);
-    };
+```cjs
+
+  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const pdf_file = 'ReadMe.pdf';
+  AsposePdf().then(AsposePdfModule => {
+      /*Remove metadata from a PDF-file and save the "ResultPdfRemoveMetadata.pdf"*/
+      const json = AsposePdfModule.AsposePdfRemoveMetadata(pdf_file, "ResultPdfRemoveMetadata.pdf");
+      console.log("AsposePdfRemoveMetadata => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
+  });
 ```
 
-### Using Web Workers
+**ECMAScript/ES6:**
 
-```js
+```mjs
 
-    /*Create Web Worker*/
-    const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
-    AsposePDFWebWorker.onerror = evt => console.log(`Error from Web Worker: ${evt.message}`);
-    AsposePDFWebWorker.onmessage = evt => document.getElementById('output').textContent = 
-      (evt.data == 'ready') ? 'loaded!' :
-        (evt.data.json.errorCode == 0) ? `Result:\n${DownloadFile(evt.data.json.fileNameResult, "application/pdf", evt.data.params[0])}` : `Error: ${evt.data.json.errorText}`;
-
-    /*Event handler*/
-    const ffilePdfRemoveMetadata = e => {
-      const file_reader = new FileReader();
-      file_reader.onload = event => {
-        /*Remove metadata a PDF-file and save the "ResultPdfRemoveMetadata.pdf" - Ask Web Worker*/
-        AsposePDFWebWorker.postMessage({ "operation": 'AsposePdfRemoveMetadata', "params": [event.target.result, e.target.files[0].name, "ResultPdfRemoveMetadata.pdf"] }, [event.target.result]);
-      };
-      file_reader.readAsArrayBuffer(e.target.files[0]);
-    };
-  /// [Code snippet]
-
-    /*Make a link to download the result file*/
-    const DownloadFile = (filename, mime, content) => {
-        mime = mime || "application/octet-stream";
-        var link = document.createElement("a"); 
-        link.href = URL.createObjectURL(new Blob([content], {type: mime}));
-        link.download = filename;
-        link.innerHTML = "Click here to download the file " + filename;
-        document.body.appendChild(link); 
-        document.body.appendChild(document.createElement("br"));
-        return filename;
-      }
+  import AsposePdf from './/AsposePDFforNode.mjs';
+  const AsposePdfModule = await AsposePdf();
+  const pdf_file = 'ReadMe.pdf';
+  /*Remove metadata from a PDF-file and save the "ResultPdfRemoveMetadata.pdf"*/
+  const json = AsposePdfModule.AsposePdfRemoveMetadata(pdf_file, "ResultPdfRemoveMetadata.pdf");
+  console.log("AsposePdfRemoveMetadata => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```

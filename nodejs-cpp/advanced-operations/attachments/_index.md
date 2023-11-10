@@ -4,7 +4,7 @@ linktitle: Working with Attachments
 type: docs
 weight: 120
 url: /nodejs-cpp/attachments/
-description: Use Node.js PDF toolkit to access, add and remove attachments in PDF files. Complete guide with Node.js code samples.
+description: Use in the Node.js environment to access, add and remove attachments in PDF files. Complete guide with Node.js code samples.
 lastmod: "2023-09-17"
 sitemap:
     changefreq: "weekly"

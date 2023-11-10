@@ -4,7 +4,7 @@ linktitle: Working with Documents
 type: docs
 weight: 10
 url: /nodejs-cpp/working-with-documents/
-description: This article describes to you what manipulations can be done with the document with Aspose.PDF for Node.js via C++ library.
+description: This article describes to you what manipulations can be done with the PDF document using the Aspose.PDF for Node.js via C++ toolkit.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"
@@ -25,4 +25,4 @@ You are able to do the following:
 - [Optimize PDF Resources](/pdf/nodejs-cpp/optimize-pdf-resources/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
 - [Merge PDF](/pdf/nodejs-cpp/merge-pdf/) - merge multiple PDF files into a single PDF document using Node.js.
 - [Split PDF](/pdf/nodejs-cpp/split-pdf/) - split PDF pages into individual PDF files in Node.js via C++.
-- [Delete Node.jss](/pdf/nodejs-cpp/delete-javascripts/) - delete Node.jss from a PDF-file.
+

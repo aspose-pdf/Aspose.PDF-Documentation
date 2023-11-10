@@ -12,8 +12,7 @@ sitemap:
 ---
 
 
-**How to add or delete images in PDF?** You will receive an answer to the most popular question about pictures in PDF with Aspose.PDF.
-
+**How to add or delete images in PDF?** You will receive an answer to the most popular question about pictures in PDF with Aspose.PDF for Node.js via C++.
 
 You are able to do the following:
 

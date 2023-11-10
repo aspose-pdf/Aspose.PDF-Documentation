@@ -1,5 +1,5 @@
 ---
-title: Navigation and Interaction in PDF via Node.js
+title: Navigation and Interaction in PDF in Node.js
 linktitle: Navigation and interaction
 type: docs
 weight: 80
