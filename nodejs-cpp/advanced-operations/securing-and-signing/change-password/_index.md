@@ -1,11 +1,11 @@
 ---
-title: Change Password of a PDF File
+title: Change Password of a PDF File in Node.js
 linktitle: Change Password
 type: docs
 weight: 50
 url: /nodejs-cpp/change-password-pdf/
 description: Change Password of a PDF File with Aspose.PDF for Node.js via C++.
-lastmod: "2023-09-13"
+lastmod: "2023-10-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,6 +17,13 @@ In case you want to change password of PDF, you can use [AsposePdfChangePassword
 If you want to change the password of a PDF file from "owner" to "newowner" or "newuser" try the next code snippet:
 
 **CommonJS:**
+
+1. Require the AsposePDFforNode.сjs module.
+1. Specify the name of the PDF file that will change the password.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfChangePassword](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfchangepassword/).
+1. Change Password. The existing owner password is set to "owner," and it is changed to "newowner" with the new user password "newuser".
+1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfChangePassword.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```cjs
 
@@ -30,6 +37,13 @@ If you want to change the password of a PDF file from "owner" to "newowner" or "
 ```
 
 **ECMAScript/ES6:**
+
+1. Import the AsposePDFforNode.mjs module.
+1. Specify the name of the PDF file that will change the password.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfChangePassword](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfchangepassword/).
+1. Change Password. The existing owner password is set to "owner," and it is changed to "newowner" with the new user password "newuser".
+1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfChangePassword.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```mjs
 

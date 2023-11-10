@@ -49,7 +49,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.сjs module.
+1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the Aspose Pdf() module. Receive the object if successful.
 1. Call the function [AsposePdfToEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/).
@@ -100,7 +100,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.сjs module.
+1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the Aspose Pdf() module. Receive the object if successful.
 1. Call the function [AsposePdfToTeX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftotex/).
@@ -150,7 +150,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.сjs module.
+1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the Aspose Pdf() module. Receive the object if successful.
 1. Call the function [AsposePdfToTxt](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftotxt/).
@@ -204,7 +204,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.сjs module.
+1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file that will be converted.
 1. Initialize the Aspose Pdf() module. Receive the object if successful.
 1. Call the function [AsposePdfToXps](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxps/).
@@ -249,7 +249,7 @@ AsposePdf().then(AsposePdfModule => {
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.сjs module.
+1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file that will be converted.
 1. Initialize the Aspose Pdf() module. Receive the object if successful.
 1. Call the function [AsposePdfConvertToGrayscale](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttograyscale/).

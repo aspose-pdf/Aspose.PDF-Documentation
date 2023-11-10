@@ -1,11 +1,11 @@
 ---
-title: Navigation and Interaction in PDF in Node.js
+title: Navigation and Interaction in PDF with Node.js
 linktitle: Navigation and interaction
 type: docs
 weight: 80
 url: /nodejs-cpp/navigation-and-interaction/
-description: This section describes the features of work with links, actions and bookmarks in Node.js.
-lastmod: "2023-02-17"
+description: This section describes the features of work with links, actions and bookmarks in Node.js via C++.
+lastmod: "2023-10-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
