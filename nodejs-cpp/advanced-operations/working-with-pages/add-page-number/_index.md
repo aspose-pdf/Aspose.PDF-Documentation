@@ -19,6 +19,12 @@ Please check the following code snippet in order to add a page numbers into PDF 
 
 **CommonJS:**
 
+1. Require the AsposePDFforNode.сjs module.
+1. Specify the name of the PDF file in which the page numbers will be added.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfAddPageNum](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddpagenum/).
+1. Add page number to a PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultAddPageNum.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
@@ -31,6 +37,12 @@ Please check the following code snippet in order to add a page numbers into PDF 
 ```
 
 **ECMAScript/ES6:**
+
+1. Import the AsposePDFforNode.mjs module.
+1. Specify the name of the PDF file in which the page numbers will be added.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfAddPageNum](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddpagenum/).
+1. Add page number to a PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultAddPageNum.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```mjs
 

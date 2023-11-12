@@ -11,6 +11,6 @@ sitemap:
 lastmod: "2023-04-14"
 ---
 
-## What's new in Aspose.PDF for Node.js via C++ 23.9
+
 
 

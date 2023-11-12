@@ -1,5 +1,5 @@
 ---
-title: Add Image to PDF using Node.js via C++ 
+title: Add Image to PDF in Node.js via C++ 
 linktitle: Add Image
 type: docs
 weight: 10
@@ -19,6 +19,12 @@ Please check the following code snippet in order to add images in Node.js enviro
 
 **CommonJS:**
 
+1. Require the AsposePDFforNode.сjs module.
+1. Specify the name of the PDF file in which the image will be added.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/).
+1. Add image to end a PDF. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultAddImage.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
@@ -32,6 +38,12 @@ Please check the following code snippet in order to add images in Node.js enviro
 ```
 
 **ECMAScript/ES6:**
+
+1. Import the AsposePDFforNode.mjs module.
+1. Specify the name of the PDF file in which the image will be added.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/).
+1. Add image to end a PDF. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultAddImage.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```mjs
 

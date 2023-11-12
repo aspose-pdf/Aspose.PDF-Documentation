@@ -33,9 +33,17 @@ It is possible to use **parameters** related to the signature:
 - signatureAppearance
 - fileNameResult 
 
-If you want to sign PDF file try the next code snippet:
+This code snippet utilizes the AsposePDFforNode.cjs module in a Node.js environment to digitally sign a PDF file using the PKCS7 signature.
 
 **CommonJS:**
+
+
+1. Require the AsposePDFforNode.сjs module.
+1. Specify the name of the PDF file to be signed, the PKCS7 key file, and the signature appearance image file.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) function. 
+1. Sign a PDF file with digital signatures. Parameters related to the signature (like the key file, password, coordinates, reason, contact, location, etc). 
+1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultSignPKCS7.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```cjs
 
@@ -53,6 +61,13 @@ If you want to sign PDF file try the next code snippet:
 ```
 
 **ECMAScript/ES6:**
+
+1. Import the AsposePDFforNode.mjs module.
+1. Specify the name of the PDF file to be signed, the PKCS7 key file, and the signature appearance image file.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) function. 
+1. Sign a PDF file with digital signatures. Parameters related to the signature (like the key file, password, coordinates, reason, contact, location, etc). 
+1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultSignPKCS7.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```mjs
 

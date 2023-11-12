@@ -19,6 +19,12 @@ Please check the following code snippet in order to rotate PDF pages in Node.js 
 
 **CommonJS:**
 
+1. Require the AsposePDFforNode.сjs module.
+1. Specify the name of the PDF file to rotate.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfRotateAllPages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrotateallpages/). 
+1. Rotate all PDF files. The rotation is set to 270 degrees (on270). Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultRotation.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
@@ -31,6 +37,12 @@ Please check the following code snippet in order to rotate PDF pages in Node.js 
 ```
 
 **ECMAScript/ES6:**
+
+1. Import the AsposePDFforNode.mjs module.
+1. Specify the name of the PDF file to rotate.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfRotateAllPages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrotateallpages/). 
+1. Rotate all PDF files. The rotation is set to 270 degrees (on270). Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultRotation.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```mjs
 

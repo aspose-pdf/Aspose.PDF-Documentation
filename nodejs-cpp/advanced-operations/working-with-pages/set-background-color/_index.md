@@ -17,6 +17,12 @@ Please check the following code snippet in order to set background color of PDF 
 
 **CommonJS:**
 
+1. Require the AsposePDFforNode.сjs module.
+1. Specify the name of the PDF file whose background color you want to set.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 
+1. Set the background color for the PDF file. The background color is set to "#426bf4," which is a hexadecimal color code representing a shade of blue. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultRotation.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
@@ -29,6 +35,12 @@ Please check the following code snippet in order to set background color of PDF 
 ```
 
 **ECMAScript/ES6:**
+
+1. Import the AsposePDFforNode.mjs module.
+1. Specify the name of the PDF file whose background color you want to set.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the function [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 
+1. Set the background color for the PDF file. The background color is set to "#426bf4," which is a hexadecimal color code representing a shade of blue. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultRotation.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```mjs
 

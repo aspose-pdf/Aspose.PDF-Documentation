@@ -21,6 +21,13 @@ If you want to decrypt PDF file try the next code snippet:
 
 **CommonJS:**
 
+1. Require the AsposePDFforNode.сjs module.
+1. Specify the name of the PDF file that will change the decrypted.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the [AsposePdfDecrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfdecrypt/) function.
+1. Decrypt PDF file with password is "owner".
+1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultDecrypt.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+
 ```cjs
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
@@ -33,6 +40,13 @@ If you want to decrypt PDF file try the next code snippet:
 ```
 
 **ECMAScript/ES6:**
+
+1. Import the AsposePDFforNode.mjs module.
+1. Specify the name of the PDF file that will change the decrypted.
+1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Call the [AsposePdfDecrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfdecrypt/) function.
+1. Decrypt PDF file with password is "owner".
+1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultDecrypt.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```mjs
 
