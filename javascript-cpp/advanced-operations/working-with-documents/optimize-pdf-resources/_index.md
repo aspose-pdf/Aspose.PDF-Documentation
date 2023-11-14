@@ -15,7 +15,7 @@ sitemap:
 
 Optimize resources in the document:
 
-  1. Resources that are not used on the document pages are removed;
+  1. Resources that are not used on the document pages are removed
   1. Equal resources are joined into a single object
   1. Unused objects are deleted.
  
