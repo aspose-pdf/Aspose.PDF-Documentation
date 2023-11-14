@@ -37,7 +37,7 @@ Aspose.PDF for Node.js allows developers to manipulate PDF files directly on the
 - [Basic operations](/pdf/nodejs-cpp/basic-operations/)
 - [Release Notes](https://releases.aspose.com/pdf/nodejscpp/release-notes/)
 
-<h2>Aspose.PDF for Node.js Resources</h2>
+## Aspose.PDF for Node.js Resources
 
 The following are the links to some useful resources you may need to accomplish your tasks.
 
