@@ -18,13 +18,13 @@ Please check the following code snippet in order to get PDF file information in 
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.сjs module.
+1. Require the AsposePDFforNode.cjs module.
 1. Specify the name of the PDF file from which the information will be extracted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfGetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/).
 1. Extracted metadata is stored in the JSON object. Thus, if 'json.errorCode' is 0, the extracted metadata is displayed using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```cjs
+```js
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_file = 'Aspose.pdf';
@@ -61,11 +61,11 @@ Please check the following code snippet in order to get PDF file information in 
 
 1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file from which the information will be extracted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfGetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/).
 1. Extracted metadata is stored in the JSON object. Thus, if 'json.errorCode' is 0, the extracted metadata is displayed using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```mjs
+```js
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
@@ -106,13 +106,13 @@ Please check the following code snippet in order to get fonts from a PDF file in
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.сjs module.
+1. Require the AsposePDFforNode.cjs module.
 1. Specify the name of the PDF file from which the fonts will be extracted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/).
 1. Extracted fonts is stored in the JSON object. Thus, if 'json.errorCode' is 0, it displays an array of font details, including font name, whether it is embedded, and its accessibility statu using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```cjs
+```js
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_file = 'Aspose.pdf';
@@ -128,11 +128,11 @@ Please check the following code snippet in order to get fonts from a PDF file in
 
 1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file from which the fonts will be extracted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/).
 1. Extracted fonts is stored in the JSON object. Thus, if 'json.errorCode' is 0, it displays an array of font details, including font name, whether it is embedded, and its accessibility statu using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```mjs
+```js
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
@@ -162,13 +162,13 @@ Possible to set:
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.сjs module.
+1. Require the AsposePDFforNode.cjs module.
 1. Specify the name of the PDF file where the information will be set.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfSetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfsetinfo/).
 1. Set PDF file information. Information such as title, creator, author, subject, keywords, creation date, and modification date are provided as parameters. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultSetInfo.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```cjs
+```js
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_file = 'Aspose.pdf';
@@ -185,11 +185,11 @@ Possible to set:
 
 1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file where the information will be set.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfSetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfsetinfo/).
 1. Set PDF file information. Information such as title, creator, author, subject, keywords, creation date, and modification date are provided as parameters. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultSetInfo.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```mjs
+```js
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
@@ -210,13 +210,13 @@ Please check the following code snippet in order to remove metadata from PDF in 
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.сjs module.
+1. Require the AsposePDFforNode.cjs module.
 1. Specify the name of the PDF file from which the information will be removed.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).
 1. Delete PDF file information. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfRemoveMetadata.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```cjs
+```js
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_file = 'Aspose.pdf';
@@ -231,11 +231,11 @@ Please check the following code snippet in order to remove metadata from PDF in 
 
 1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file from which the information will be removed.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).
 1. Delete PDF file information. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfRemoveMetadata.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```mjs
+```js
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();

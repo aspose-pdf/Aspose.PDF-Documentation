@@ -18,14 +18,14 @@ If you want to change the password of a PDF file from "owner" to "newowner" or "
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.сjs module.
+1. Require the AsposePDFforNode.cjs module.
 1. Specify the name of the PDF file that will change the password.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfChangePassword](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfchangepassword/).
 1. Change Password. The existing owner password is set to "owner," and it is changed to "newowner" with the new user password "newuser".
 1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfChangePassword.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```cjs
+```js
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_encrypt_file = 'ResultEncrypt.pdf';
@@ -40,12 +40,12 @@ If you want to change the password of a PDF file from "owner" to "newowner" or "
 
 1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file that will change the password.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfChangePassword](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfchangepassword/).
 1. Change Password. The existing owner password is set to "owner," and it is changed to "newowner" with the new user password "newuser".
 1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfChangePassword.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```mjs
+```js
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();

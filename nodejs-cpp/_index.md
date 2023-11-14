@@ -21,7 +21,7 @@ Node.js is a cross-platform runtime environment for server-side and networking a
 
 Aspose.PDF for Node.js via C++ is a powerful toolkit that allows JavaScript to run and helps developers do various tasks for PDF in the Node.js environment.
 
-Aspose.PDF for Node.js allows developers to manipulate PDF files directly on the Web. Aspose.PDF for Node.js via C++ is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET.
+Aspose.PDF for Node.js allows developers to manipulate PDF files directly. Aspose.PDF for Node.js via C++ is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET.
 
 {{% alert color="primary" %}}
 

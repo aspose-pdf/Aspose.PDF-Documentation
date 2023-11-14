@@ -31,13 +31,13 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.сjs module.
+1. Require the AsposePDFforNode.cjs module.
 1. Specify the name of the PDF file that will be converted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoXlsX.xlsx". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```cjs
+```js
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_file = 'Aspose.pdf';
@@ -52,11 +52,11 @@ Please check the following code snippet in order to convert in Node.js environme
 
 1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file that will be converted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoXlsX.xlsx". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```mjs
+```js
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
@@ -73,13 +73,13 @@ Please check following code snippet in order to convert PDF file in Node.js envi
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.сjs module.
+1. Require the AsposePDFforNode.cjs module.
 1. Specify the name of the PDF file that will be converted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfTablesToCSV](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftablestocsv/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoXlsX.xlsx". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```cjs
+```js
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_file = 'Aspose.pdf';
@@ -94,11 +94,11 @@ Please check following code snippet in order to convert PDF file in Node.js envi
 
 1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file that will be converted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfTablesToCSV](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftablestocsv/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoXlsX.xlsx". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```mjs
+```js
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();

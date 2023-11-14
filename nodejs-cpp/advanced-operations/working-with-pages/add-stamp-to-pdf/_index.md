@@ -20,13 +20,13 @@ Please check the following code snippet in order to add an image stamp to a PDF 
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.сjs module.
+1. Require the AsposePDFforNode.cjs module.
 1. Specify the name of the PDF file in which the image stamp will be added.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfAddStamp](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddstamp/).
 1. Add stamp to a PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultImage.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```cjs
+```js
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_file = 'Aspose.pdf';
@@ -42,11 +42,11 @@ Please check the following code snippet in order to add an image stamp to a PDF 
 
 1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file in which the image stamp will be added.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfAddStamp](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddstamp/).
 1. Add stamp to a PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultImage.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```mjs
+```js
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();

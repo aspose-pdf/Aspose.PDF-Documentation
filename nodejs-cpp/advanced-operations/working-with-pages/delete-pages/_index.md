@@ -17,13 +17,13 @@ Please check the following code snippet in order to delete PDF pages in Node.js 
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.сjs module.
+1. Require the AsposePDFforNode.cjs module.
 1. Specify the name of the PDF file from which pages will be deleted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfDeletePages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletepages/). This function helps to remove the specified pages from the PDF file. The operation is determined by the numPages variable, which can be a string with page intervals (e.g., "7, 20, 22, 30-32, 33, 36-40, 46"), an array of page numbers, or a single page number.
 1. Removes the particular pages from the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultDeletePages.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```cjs
+```js
 
   const AsposePdf = require('.//AsposePDFforNode.cjs');
   const pdf_file = 'Aspose.pdf';
@@ -44,11 +44,11 @@ Please check the following code snippet in order to delete PDF pages in Node.js 
 
 1. Import the AsposePDFforNode.mjs module.
 1. Specify the name of the PDF file from which pages will be deleted.
-1. Initialize the Aspose Pdf() module. Receive the object if successful.
+1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfDeletePages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletepages/). This function helps to remove the specified pages from the PDF file. The operation is determined by the numPages variable, which can be a string with page intervals (e.g., "7, 20, 22, 30-32, 33, 36-40, 46"), an array of page numbers, or a single page number.
 1. Removes the particular pages from the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultDeletePages.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
-```mjs
+```js
 
   import AsposePdf from './/AsposePDFforNode.mjs';
   const AsposePdfModule = await AsposePdf();
