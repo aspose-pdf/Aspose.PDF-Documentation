@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Advanced Operations is a section about how to deal with existing PDF files programmatically, be they documents repaired with Aspose.PDF as discussed in [Basic Operations](/pdf/nodejs-cpp/basic-operations/), or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
+Advanced Operations is a section about how to deal with existing PDF files programmatically, be they documents created with Aspose.PDF as discussed in [Basic Operations](/pdf/nodejs-cpp/basic-operations/), or PDFs generated with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
 You'll learn different ways to:
 
 - [Working with Documents](/pdf/nodejs-cpp/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
