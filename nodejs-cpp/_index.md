@@ -15,7 +15,7 @@ sitemap:
 
 ![Aspose.PDF for Node.js logo image](aspose_pdf-for-nodejs-cpp.png)
 
-<h2>Welcome to Aspose.PDF for Node.js via C++</h2>
+## Welcome to Aspose.PDF for Node.js via C++
 
 Node.js is a cross-platform runtime environment for server-side and networking applications written in JavaScript. Essentially it allows you to run JavaScript applications outside of a browser context.
 
