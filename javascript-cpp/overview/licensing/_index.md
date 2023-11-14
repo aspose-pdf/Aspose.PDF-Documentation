@@ -18,7 +18,7 @@ Aspose.PDF for JavaScript provided a mechanism to protect your license against t
 
 ## Limitation of an evaluation version
 
-We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
+We want our customers to have the possibility to test our components thoroughly before buying. You can do that with the evaluation version allows you to use it as you would normally.
 
 - **PDF created with an evaluation watermark.**
 The evaluation version of Aspose.PDF for JavaScript via C++ provides full product functionality, but all the pages in the generated PDF documents are watermarked with "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2023 Aspose Pty Ltd." at the top.
