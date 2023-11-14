@@ -29,7 +29,7 @@ Aspose.PDF for Node.js allows developers to manipulate PDF files directly on the
 
 {{% /alert %}}
 
-<h2>Chapters</h2>
+## Chapters
 
 - [What's new](/pdf/nodejs-cpp/whatsnew/)
 - [Overview](/pdf/nodejs-cpp/overview/)
