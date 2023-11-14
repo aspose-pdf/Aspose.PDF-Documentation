@@ -14,7 +14,8 @@ sitemap:
 ## Extract images from PDF files in the Node.js environment
 
 In case you want to extract images from PDF document, you can use [AsposePdfExtractImage](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextractimage/) function. 
-Please check following code snippet in order to extract images from PDF file using Node.js via C++.
+We must pass three arguments to this function:  input and output file name and resolution.
+Please check the following code snippet to extract images from a PDF file using Node.js.
 
 **CommonJS:**
 
