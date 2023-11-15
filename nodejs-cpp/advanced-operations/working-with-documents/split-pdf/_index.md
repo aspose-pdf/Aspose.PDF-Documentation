@@ -13,7 +13,7 @@ sitemap:
 
 ## Split PDF into two files using Node.js
 
-In case you want to split two PDFs into one, you can use [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/) function. 
+In case you want to split a single PDF into parts, you can use [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/) function. 
 Please check the following code snippet in order to split two PDFs in Node.js environment.
 
 **CommonJS:**
