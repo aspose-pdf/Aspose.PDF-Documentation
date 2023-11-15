@@ -8,7 +8,7 @@ description: This section describes how to add image to existing PDF file using 
 lastmod: "2023-12-15"
 ---
 
-## Add Image in an Existing PDF File
+## Add an image to an existing PDF file
 
 Do you need to attach an image to a PDF? Want to Improve the readability of your PDF? Add images to your PDF and your presentation or resume will look more presentable.
 
