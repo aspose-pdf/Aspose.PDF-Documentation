@@ -1,5 +1,5 @@
 ---
-title: Add Image stamps to PDF in Node.js via C++ 
+title: Add Image stamps to PDF in Node.js
 linktitle: Image stamps in PDF File
 type: docs
 weight: 60
