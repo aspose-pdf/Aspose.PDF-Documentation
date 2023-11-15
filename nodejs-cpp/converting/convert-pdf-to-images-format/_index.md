@@ -184,6 +184,8 @@ Aspose.PDF for Node.js presents you online free application ["PDF to SVG"](https
 
 ## Convert PDF to SVG
 
+### Convert PDF to classical SVG
+
 In case you want to convert PDF document, you can use [AsposePdfPagesToSvg](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvg/) function. 
 Please check the following code snippet in order to convert in Node.js environment.
 
