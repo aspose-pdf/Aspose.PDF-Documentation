@@ -1,5 +1,5 @@
 ---
-title: Add Page Number to PDF in Node.js via C++ 
+title: Add page numbering to PDF using Node.js
 linktitle: Add Page Number
 type: docs
 weight: 100
