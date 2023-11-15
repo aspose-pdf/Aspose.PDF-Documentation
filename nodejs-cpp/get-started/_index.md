@@ -45,7 +45,7 @@ Using Aspose.PDF for Node.js in your project gives you the following profits:
 - [Convert a PDF to SVG](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to SVG(Zip)](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to TeX](/pdf/nodejs-cpp/conversion/)
-- [Convert a PDF to Xps](/pdf/nodejs-cpp/conversion/)
+- [Convert a PDF to XPS](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to CSV](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to TXT](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to DocX](/pdf/nodejs-cpp/conversion/)
