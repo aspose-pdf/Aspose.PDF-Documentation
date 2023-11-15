@@ -44,13 +44,13 @@ Aspose.PDF for Node.jssupports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 
 ## Conversion
 
-- Convert a PDF-file to Doc
+- Convert a PDF-file to DOC
 - Convert a PDF-file to DOCX
-- Convert a PDF-file to PptX
+- Convert a PDF-file to PPTX
 - Convert a PDF-file to EPUB
-- Convert a PDF-file to XLsX
-- Convert a PDF-file to Grayscale	
-- Convert a PDF-file to TxT
+- Convert a PDF-file to XLSX
+- Convert a PDF-file to Grayscale PDF
+- Convert a PDF-file to TXT
 - Convert a PDF-file to TEX
 - Convert a PDF-file to CSV 
 - Convert a PDF-file to PDF/A

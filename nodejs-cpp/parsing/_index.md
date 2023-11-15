@@ -13,6 +13,6 @@ sitemap:
 
 **Parse PDF** documents is a term releated to extraction variuous kind of information from PDF file. This section covers how to:
 
-- [Extract Images from PDF](/pdf/nodejs-cpp/extract-images-from-the-pdf-file/). Image Extraction does the same for images as the operation above for text.
+- [Extract Images from PDF](/pdf/nodejs-cpp/extract-images-from-the-pdf-file/). Image Extraction allows extracting images and storing them as separate files.
 - [Extract Text from PDF](/pdf/nodejs-cpp/extract-text-from-pdf/). Text Parsing or Extraction is the most popular operation with ready-made PDFs. You will learn about text parsing from a whole document, a particular page, or a particular region in a page.
 
