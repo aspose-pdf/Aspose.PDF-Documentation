@@ -17,7 +17,7 @@ You are able to do the following:
 - [Rotate Pages](/pdf/nodejs-cpp/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
 - [Add Headers and Footers](/pdf/nodejs-cpp/add-headers-and-footers-of-pdf-file/) - add text or images to the headers, footers, or both.
 - [Add Page Numbering in PDF File](/pdf/nodejs-cpp/add-page-number/) - AsposePdfAddPageNum functions will help you to add a Page Number in your PDF file.
-- [Add Backgrounds](/pdf/nodejs-cpp/add-backgrounds/) - background images can be used to add a watermark.
+- [Add Background](/pdf/nodejs-cpp/add-background/) - background images can add a watermark.
 - [Stamping](/pdf/nodejs-cpp/stamping/) - you can use the AsposePdfAddStamp function to add an image stamp to a PDF file.
 - [Set the background color for PDF](/pdf/nodejs-cpp/set-background-color/) - set background color for the your PDF file.
 
