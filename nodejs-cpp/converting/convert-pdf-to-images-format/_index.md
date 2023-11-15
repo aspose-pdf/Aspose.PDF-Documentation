@@ -224,7 +224,7 @@ Please check the following code snippet in order to convert in Node.js environme
   console.log("AsposePdfPagesToSvg => %O", json.errorCode == 0 ? json.filesNameResult : json.errorText);
 ```
 
-### Convert PDF to SVG(zip)
+### Convert PDF to zipped SVG
 
 In case you want to convert PDF document, you can use [AsposePdfPagesToSvgZip](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvgzip/) function. 
 Please check the following code snippet in order to convert in Node.js environment.
