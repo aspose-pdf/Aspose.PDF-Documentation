@@ -15,7 +15,7 @@ You are able to do the following:
 
 - [Delete Pages](/pdf/nodejs-cpp/delete-pages/) - delete page from your PDF file in Node.js environment.
 - [Rotate Pages](/pdf/nodejs-cpp/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
-- [Add Headers and/or Footers](/pdf/nodejs-cpp/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file .
+- [Add Headers and Footers](/pdf/nodejs-cpp/add-headers-and-footers-of-pdf-file/) - add text or images to the headers, footers, or both.
 - [Add Page Numbering in PDF File](/pdf/nodejs-cpp/add-page-number/) - AsposePdfAddPageNum functions will help you to add a Page Number in your PDF file.
 - [Add Backgrounds](/pdf/nodejs-cpp/add-backgrounds/) - background images can be used to add a watermark.
 - [Stamping](/pdf/nodejs-cpp/stamping/) - you can use the AsposePdfAddStamp function to add an image stamp to a PDF file.
