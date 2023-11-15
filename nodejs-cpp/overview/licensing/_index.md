@@ -15,6 +15,8 @@ sitemap:
 
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
+>If you want to test Aspose.PDF for Node.js via C++ without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license/)
+
 - **PDF created with an evaluation watermark.**
 The evaluation version of Aspose.PDF for Node.js via C++ provides full product functionality, but all the pages in the generated PDF documents are watermarked with "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2023 Aspose Pty Ltd." at the top.
 

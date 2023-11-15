@@ -28,9 +28,9 @@ In the code snippets, you will notice a difference in work with the AsposePDFfor
 
 **Two different approaches**
 
-JavaScript offers two methods, 'then' and 'await', for handling asynchronous operations.
+JavaScript offers two approaches, 'then' and 'await', for handling asynchronous operations.
 
-The 'then' method works with promises to manage both successful outcomes and errors in a sequential order. Conversely, 'await' is utilized inside async functions to halt execution until a promise is resolved, making the code appear more sequential and similar to synchronous code. 
+The 'then' method works with promises to manage both successful outcomes and errors in a sequential order. Conversely, 'await' makes JavaScript wait, literally suspending the function execution until that promise settles and returns its result.
 
 The Aspose.PDF for Node.js supports a wide variety of functions such as:
 
