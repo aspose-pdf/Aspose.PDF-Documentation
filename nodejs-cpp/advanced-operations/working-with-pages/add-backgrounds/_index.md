@@ -3,7 +3,7 @@ title: Add background to PDF in Node.js via C++
 linktitle: Add backgrounds
 type: docs
 weight: 10
-url: /nodejs-cpp/add-backgrounds/
+url: /nodejs-cpp/add-background/
 description: Add background image to the your PDF file with Node.js via C++. 
 lastmod: "2023-10-17"
 sitemap:
