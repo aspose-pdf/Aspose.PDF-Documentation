@@ -49,7 +49,7 @@ Using Aspose.PDF for Node.js in your project gives you the following profits:
 - [Convert a PDF to CSV](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to TXT](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to DOCX](/pdf/nodejs-cpp/conversion/)
-- [Convert a PDF to XlsX](/pdf/nodejs-cpp/conversion/)
+- [Convert a PDF to XLSX](/pdf/nodejs-cpp/conversion/)
 - [Convert PDF to Grayscale PDF](/pdf/nodejs-cpp/conversion/)
 - [Convert PDF/A to PDF format](/pdf/nodejs-cpp/conversion/)
 - [Convert PDF to PDF/A format](/pdf/nodejs-cpp/conversion/)
