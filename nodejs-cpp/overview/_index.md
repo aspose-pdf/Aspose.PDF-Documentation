@@ -40,7 +40,7 @@ The Aspose.PDF for Node.js supports a wide variety of functions such as:
 - Extract a text from PDF
 - Optimize PDF document
 - Optimize resources 
-- Split PDF to two files
+- Split PDF into two files.
 - Merge two files to PDF
 - Repair PDF
 - Convertion features
