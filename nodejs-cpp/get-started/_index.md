@@ -40,7 +40,7 @@ Using Aspose.PDF for Node.js in your project gives you the following profits:
 
 - [Convert PDF to JPEG](/pdf/nodejs-cpp/conversion/)
 - [Convert PDF to PNG](/pdf/nodejs-cpp/conversion/)
-- [Convert a PDF to Tiff](/pdf/nodejs-cpp/conversion/)
+- [Convert a PDF to TIFF](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to BMP](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to SVG](/pdf/nodejs-cpp/conversion/)
 - [Convert a PDF to SVG(Zip)](/pdf/nodejs-cpp/conversion/)
