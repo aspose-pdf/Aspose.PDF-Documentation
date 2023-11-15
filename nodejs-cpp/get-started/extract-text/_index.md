@@ -13,7 +13,7 @@ sitemap:
 
 ## Extract Text From all the Pages of PDF Document
 
-Extracting text from PDF isn’t easy. Not many PDF readers can extract text from PDF images or scanned PDFs. But **Aspose.PDF for Node.js via C++** tool allows you to easily extract text from all PDF file in the Node.js environment. 
+Extracting text from PDF isn’t easy. Only a few PDF readers can extract text from PDF images or scanned PDFs. But **Aspose.PDF for Node.js via C++** tool allows you to easily extract text from all PDF file in the Node.js environment. 
 
 This code demonstrates how to use the AsposePDFforNode.cjs module to extract text from a specified PDF file and log either the extracted text or encountered errors.
 
