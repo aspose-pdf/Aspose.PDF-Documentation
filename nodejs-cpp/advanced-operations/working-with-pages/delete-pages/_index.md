@@ -1,5 +1,5 @@
 ---
-title: Delete PDF Pages in Node.js via C++ 
+title: Delete Page in PDF in Node.js
 linktitle: Delete PDF Pages
 type: docs
 weight: 30
