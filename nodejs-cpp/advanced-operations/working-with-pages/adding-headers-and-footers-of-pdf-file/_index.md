@@ -1,5 +1,5 @@
 ---
-title: Add Header and Footer to PDF in Node.js via C++ 
+title: Add Header and Footer to PDF in Node.js
 linktitle: Add Header and Footer to PDF
 type: docs
 weight: 70
