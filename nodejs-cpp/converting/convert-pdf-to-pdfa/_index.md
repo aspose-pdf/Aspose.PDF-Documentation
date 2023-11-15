@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-**Aspose.PDF for Node.js** allows you to convert a PDF file to a <abbr title="Portable Document Format / A">PDF/A</abbr> compliant PDF file. 
+**Aspose.PDF for Node.js** allows you to convert a PDF file to a <abbr title="Portable Document Format for Archiving of electronic documents">PDF/A</abbr> compliant PDF file. 
 
 {{% alert color="success" %}}
 **Try to convert PDF to PDF/A online**
