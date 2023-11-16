@@ -48,7 +48,7 @@ sitemap:
       size - PDF page size
       pagecount - Page count
       сreation Date: json.creation
-      ьodify Date:   json.mod
+      modify Date:   json.mod
       annotationcount - Annotation count
       bookmarkcount - Bookmark count
       attachmentcount - Attachment count
