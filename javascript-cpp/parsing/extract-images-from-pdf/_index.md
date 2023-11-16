@@ -13,7 +13,7 @@ sitemap:
 
 Web toolkit from Aspose.PDF allows you to easily extract images from PDF files.
 
-In case you want to extract images from PDF document, you can use [AsposePdfExtractImage](https://reference.aspose.com/pdf/javascript-cpp/convert/asposepdfextractimage/) class. 
+In case you want to extract images from PDF document, you can use [AsposePdfExtractImage](https://reference.aspose.com/pdf/javascript-cpp/convert/asposepdfextractimage/) function. 
 Please check following code snippet in order to extract images from PDF file using JavaScript via C++.
 
 1. Create a 'FileReader'.

@@ -16,7 +16,7 @@ sitemap:
 Extracting text from the PDF document is a very common and useful task. 
 Extracting text from PDFs serves a variety of purposes, from improving search and availability to enabling analysis and automation of data in various fields such as business, research, and information management.
 
-In case you want to extract text from PDF document, you can use [AsposePdfExtractText](https://reference.aspose.com/pdf/javascript-cpp/convert/asposepdfextracttext/) class. 
+In case you want to extract text from PDF document, you can use [AsposePdfExtractText](https://reference.aspose.com/pdf/javascript-cpp/convert/asposepdfextracttext/) function. 
 Please check following code snippet in order to extract text from PDF file using JavaScript via C++.
 
 1. Create a 'FileReader'.

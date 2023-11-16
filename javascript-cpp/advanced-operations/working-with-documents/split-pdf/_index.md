@@ -73,7 +73,7 @@ The following JavaScript code snippet shows simple example of splitting PDF page
 1. Select a PDF file for splitting.
 1. Create a 'FileReader' object in handler.
 1. Set number a page to split.
-1. Call [AsposePdfSplit2Files](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfsplit2files/) in the last handler.
+1. Call [AsposePdfSplit2Files](https://reference.aspose.com/pdf/javascript-cpp/organize/asposepdfsplit2files/) in the last handler.
 1. Analyse the result. The name of the resulting file is set, in this example "ResultSplit2.pdf".
 1. Next, if the 'json.errorCode' is 0, then json.fileNameResult will contain the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' property.
 1. You can use helper function [DownloadFile](https://reference.aspose.com/pdf/javascript-cpp/misc/downloadfile/).
