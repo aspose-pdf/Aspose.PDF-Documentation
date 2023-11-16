@@ -8,7 +8,7 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2023-04-14"
+lastmod: "2023-11-16"
 ---
 
 

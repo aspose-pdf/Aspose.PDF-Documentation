@@ -6,7 +6,7 @@ type: docs
 weight: 68
 url: /nodejs-cpp/
 is_root: true
-lastmod: "2023-11-08"
+lastmod: "2023-11-16"
 description: Learn to use Aspose.PDF for Node.js to create applications for PDF documents processing in Web browser.
 sitemap:
     changefreq: "weekly"

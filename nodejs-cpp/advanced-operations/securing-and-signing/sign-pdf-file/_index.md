@@ -1,11 +1,11 @@
 ---
-title: Add digital signature in PDF with Node.js via C++
+title: Add digital signature in PDF in Node.js
 linktitle: Digitally sign PDF
 type: docs
 weight: 70
 url: /nodejs-cpp/sign-pdf/
 description: Digitally sign PDF documents in the Node.js environment.
-lastmod: "2023-02-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -37,10 +37,9 @@ This code snippet utilizes the AsposePDFforNode.cjs module in a Node.js environm
 
 **CommonJS:**
 
-
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file to be signed, the PKCS7 key file, and the signature appearance image file.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file to be signed, the PKCS7 key file, and the signature appearance image file. The certificate and image can be placed anywhere on your file system from where you upload them for PDF signing.
+1. Call `AsposePdf` as Promise and perform the operation for signing file. Receive the object if successful.
 1. Call the [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) function. 
 1. Sign a PDF file with digital signatures. Parameters related to the signature (like the key file, password, coordinates, reason, contact, location, etc). 
 1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultSignPKCS7.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.

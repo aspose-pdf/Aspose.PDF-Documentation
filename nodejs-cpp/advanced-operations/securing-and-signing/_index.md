@@ -5,7 +5,7 @@ type: docs
 weight: 140
 url: /nodejs-cpp/securing-and-signing/
 description: This section describes the features of using a signature and securing your PDF document in the Node.js environment.
-lastmod: "2023-10-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

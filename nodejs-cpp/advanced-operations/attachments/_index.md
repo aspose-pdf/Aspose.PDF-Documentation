@@ -4,8 +4,8 @@ linktitle: Working with Attachments
 type: docs
 weight: 120
 url: /nodejs-cpp/attachments/
-description: Basic operations with attachments in PDF using Node.js. Guide with examples.
-lastmod: "2023-10-17"
+description: Basic operations with attachments in PDF in Node.js. Guide with examples.
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

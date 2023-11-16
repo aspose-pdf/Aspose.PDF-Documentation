@@ -4,8 +4,8 @@ linktitle: Extract Images from PDF
 type: docs
 weight: 20
 url: /nodejs-cpp/extract-images-from-the-pdf-file/
-description: How to extract a part of the image from PDF using Aspose.PDF for Node.js toolkit.
-lastmod: "2023-11-05"
+description: How to extract a part of the image from PDF using Aspose.PDF for Node.js via C++ toolkit.
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,9 +19,9 @@ Please check the following code snippet to extract images from a PDF file using 
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name for the PDF file from which the image will be extracted.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for extracting image. Receive the object if successful.
 1. Call the function [AsposePdfExtractImage](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextractimage/).
 1. Extract images from the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfExtractImage{0:D2}.jpg". Where {0:D2} represents the page number with a two-digit format. The images are saved with a resolution of 150 DPI. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

@@ -1,18 +1,18 @@
 ---
-title: Working with Images in PDF using Node.js via C++ 
+title: Working with Images in PDF in Node.js
 linktitle: Working with Images
 type: docs
 weight: 40
 url: /nodejs-cpp/working-with-images/
-description: This section describes the features of working with images in a PDF file using Node.js via C++.
-lastmod: "2023-10-17"
+description: This section describes the features of working with images in a PDF file in Node.js.
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
 
-**How to add or delete images in PDF?** You will receive an answer to the most popular question about pictures in PDF with Aspose.PDF for Node.js via C++.
+Use the **Aspose.PDF for Node.js via C++** for work with images in PDF documents. It's possible to add and delete images in your PDF file in the Node.js environment.
 
 You are able to do the following:
 

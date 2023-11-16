@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /nodejs-cpp/pdf-file-metadata/
 description: This section explains how to get PDF file information, how to get metadata from a PDF file, set PDF File Information in Node.js.
-lastmod: "2023-10-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,9 +18,9 @@ Please check the following code snippet in order to get PDF file information in 
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file from which the information will be extracted.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for extracting info. Receive the object if successful.
 1. Call the function [AsposePdfGetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/).
 1. Extracted metadata is stored in the JSON object. Thus, if 'json.errorCode' is 0, the extracted metadata is displayed using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -106,9 +106,9 @@ Please check the following code snippet in order to get fonts from a PDF file in
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file from which the fonts will be extracted.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for extracting fonts. Receive the object if successful.
 1. Call the function [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/).
 1. Extracted fonts is stored in the JSON object. Thus, if 'json.errorCode' is 0, it displays an array of font details, including font name, whether it is embedded, and its accessibility statu using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -162,9 +162,9 @@ Possible to set:
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file where the information will be set.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation. Receive the object if successful.
 1. Call the function [AsposePdfSetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfsetinfo/).
 1. Set PDF file information. Information such as title, creator, author, subject, keywords, creation date, and modification date are provided as parameters. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultSetInfo.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

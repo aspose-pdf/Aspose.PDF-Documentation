@@ -5,7 +5,7 @@ type: docs
 weight: 65
 url: /nodejs-cpp/parsing/
 description: Do you want to parse PDF documents? Discover various PDF data extraction methods with Aspose.PDF for Node.js via C++.
-lastmod: "2023-11-05"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

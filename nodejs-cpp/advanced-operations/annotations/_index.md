@@ -1,11 +1,11 @@
 ---
-title: PDF Annotations using Node.js
+title: PDF Annotations in Node.js
 linktitle: PDF Annotations
 type: docs
 weight: 90
 url: /nodejs-cpp/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF for Node.js via C++.
-lastmod: "2023-10-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

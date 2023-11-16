@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /nodejs-cpp/encrypt-pdf/
 description: Encrypt PDF File with Aspose.PDF for Node.js via C++.
-lastmod: "2023-11-15"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -25,11 +25,11 @@ If you want to encrypt PDF file try the next code snippet:
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will change the encrypted.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be encrypted.
+1. Call `AsposePdf` as Promise and perform the operation for encrypting file. Receive the object if successful.
 1. Call the [AsposePdfEncrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfencrypt/) function. 
-1. Decrypt PDF file with passwords "user" and "owner".
+1. Encrypt PDF file with passwords "user" and "owner".
 1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultEncrypt.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
 ```js
@@ -42,6 +42,24 @@ If you want to encrypt PDF file try the next code snippet:
       console.log("AsposePdfEncrypt => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
   });
 ```
+
+There are different [encrypt permissions](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#acbb404dc8d3b328891faa5fba341ce0c):
+
+- Module.Permissions.PrintDocument
+- Module.Permissions.ModifyContent
+- Module.Permissions.ExtractContent
+- Module.Permissions.ModifyTextAnnotations
+- Module.Permissions.FillForm
+- Module.Permissions.ExtractContentWithDisabilities
+- Module.Permissions.AssembleDocument
+- Module.Permissions.PrintingQuality
+
+There are various [encrypt algorithms](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#ae15d4d8afe86aae14972a6e493d19f66):
+
+- Module.CryptoAlgorithm.RC4x40
+- Module.CryptoAlgorithm.RC4x128
+- Module.CryptoAlgorithm.AESx128
+- Module.CryptoAlgorithm.AESx256
 
 **ECMAScript/ES6:**
 

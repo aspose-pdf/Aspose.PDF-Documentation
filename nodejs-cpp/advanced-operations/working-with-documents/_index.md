@@ -1,11 +1,11 @@
 ---
-title: Working with PDF Documents in Node.js via C++
+title: Working with PDF Documents in Node.js 
 linktitle: Working with Documents
 type: docs
 weight: 10
 url: /nodejs-cpp/working-with-documents/
 description: This article describes to you what manipulations can be done with the PDF document using the Aspose.PDF for Node.js via C++ toolkit.
-lastmod: "2023-10-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

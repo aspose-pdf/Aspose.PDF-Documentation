@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /nodejs-cpp/bookmark/
 description: You can add or delete a bookmarks in PDF document in the Node.js environment.
-lastmod: "2023-02-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,9 +18,9 @@ Please check the following code snippet in order to delete bookmarks from a PDF 
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file from which the bookmarks will be removed.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for removing bookmark. Receive the object if successful.
 1. Call the function [AsposePdfDeleteBookmarks](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletebookmarks/).
 1. Delete bookmarks. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfDeleteBookmarks.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

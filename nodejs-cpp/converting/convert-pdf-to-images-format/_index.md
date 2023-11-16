@@ -4,7 +4,7 @@ linktitle: Convert PDF to Images
 type: docs
 weight: 70
 url: /nodejs-cpp/convert-pdf-to-images-format/
-lastmod: "2023-11-01"
+lastmod: "2023-11-16"
 description: This topic show you how to use Aspose.PDF to convert PDF to various images formats e.g. TIFF, BMP, JPEG, PNG, SVG with a few lines of code in the Node.js environment.
 sitemap:
     changefreq: "monthly"
@@ -35,9 +35,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToJpg](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestojpg/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfToJpg{0:D2}.jpg". Where {0:D2} represents the page number with a two-digit format. The images are saved with a resolution of 150 DPI. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -85,9 +85,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToTiff](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestotiff/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfToTiff{0:D2}.tiff". Where {0:D2} represents the page number with a two-digit format. The images are saved with a resolution of 150 DPI. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -137,9 +137,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToPng](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestopng/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfToPng{0:D2}.png". Where {0:D2} represents the page number with a two-digit format. The images are saved with a resolution of 150 DPI. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -191,9 +191,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToSvg](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvg/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfToSvg.svg". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -233,9 +233,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToSvgZip](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvgzip/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfToSvgZip.zip". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -275,9 +275,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToDICOM](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestodicom/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfToDICOM{0:D2}.dcm". Where {0:D2} represents the page number with a two-digit format. The images are saved with a resolution of 150 DPI. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -317,9 +317,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToBmp](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestobmp/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfToBmp{0:D2}.bmp". Where {0:D2} represents the page number with a two-digit format. The images are saved with a resolution of 150 DPI. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

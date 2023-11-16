@@ -1,11 +1,11 @@
 ---
-title: Repair PDF with Node.js via C++ 
+title: Repair PDF in Node.js 
 linktitle: Repair PDF
 type: docs
 weight: 10
 url: /nodejs-cpp/repair-pdf/
 description: This topic describes how to Repair PDF in the Node.js environment.
-lastmod: "2023-10-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Please check following code snippet in order to repair PDF file in Node.js envir
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be repaired.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for repairing file. Receive the object if successful.
 1. Call the function [AsposePdfRepair](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrepair/).
 1. Repair the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfRepair.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

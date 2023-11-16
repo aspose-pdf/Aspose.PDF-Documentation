@@ -4,7 +4,7 @@ linktitle: Convert PDF to other formats
 type: docs
 weight: 90
 url: /nodejs-cpp/convert-pdf-to-other-files/
-lastmod: "2023-11-01"
+lastmod: "2023-11-16"
 keywords: convert, PDF, EPUB, TeX, Text, XPS, Node.js
 description: This topic shows you how to convert PDF file to other file formats like EPUB, LaTeX, Text, XPS etc in the Node.js environment.
 sitemap:
@@ -30,9 +30,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfToEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoEPUB.epub". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -81,9 +81,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfToTeX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftotex/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoTeX.tex". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -131,9 +131,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
-1. Specify the name of the PDF file that will be converted
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Specify the name of the PDF file that will be converted.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfToTxt](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftotxt/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoTxt.txt". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -185,9 +185,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfToXps](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxps/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoXps.xps". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
@@ -230,9 +230,9 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfConvertToGrayscale](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttograyscale/).
 1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultConvertToGrayscale.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /nodejs-cpp/working-with-pages/
 description: How to add pages, add headers and footers, rotate pages you can know in this section. Aspose.PDF for Node.js via C++ explain to you all details on this topic.
-lastmod: "2023-10-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

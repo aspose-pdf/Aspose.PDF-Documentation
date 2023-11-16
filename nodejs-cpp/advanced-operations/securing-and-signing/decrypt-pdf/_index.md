@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /nodejs-cpp/decrypt-pdf/
 description: Decrypt PDF File with Aspose.PDF for Node.js via C++.
-lastmod: "2022-12-15"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -21,9 +21,9 @@ If you want to decrypt PDF file try the next code snippet:
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will change the decrypted.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for decrypting file. Receive the object if successful.
 1. Call the [AsposePdfDecrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfdecrypt/) function.
 1. Decrypt PDF file with password is "owner".
 1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultDecrypt.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.

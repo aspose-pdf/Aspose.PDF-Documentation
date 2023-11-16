@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /nodejs-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF can remove attachments from your PDF documents. Use Node.js environment to remove attachments in PDF files by Aspose.PDF.
-lastmod: "2023-09-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -16,9 +16,9 @@ Please check the following code snippet in order to delete attachments from a PD
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file from which the attachments will be removed.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for removing attachments. Receive the object if successful.
 1. Call the function [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/).
 1. Delete attachments. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfDeleteAttachments.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

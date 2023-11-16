@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /nodejs-cpp/delete-pages/
 description: You can delete pages from your PDF file using Aspose.PDF for Node.js via C++.
-lastmod: "2023-10-17"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,13 +13,19 @@ sitemap:
 
 In case you want to delete PDF pages, you can use [AsposePdfDeletePages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletepages/) function. 
 
+A feature of this function is that it can accept several types as a numPages parameter:
+
+- string: in this case, we can mention a set of pages using particular pages or intervals. For example, string "7, 20, 30-32, 34" means we want to remove pages 7, 20, from 30 to 32 and 34.
+- array: in this case, we can mention pages only. Array [3,7] means we want to remove pages 3 and 7.
+- int: a single page number.
+
 Please check the following code snippet in order to delete PDF pages in Node.js environment.
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file from which pages will be deleted.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for removing pages. Receive the object if successful.
 1. Call the function [AsposePdfDeletePages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletepages/). 
 1. Removes the particular pages from the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultDeletePages.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

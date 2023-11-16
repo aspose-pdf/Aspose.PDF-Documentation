@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /nodejs-cpp/system-requirements/
 description: This section lists the supported operating systems that a developer needs to successfully work with Aspose.PDF for Node.js via C++.
-lastmod: "2022-12-13"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

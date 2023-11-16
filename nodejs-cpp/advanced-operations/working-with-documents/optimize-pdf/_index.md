@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /nodejs-cpp/optimize-pdf/
 description: Optimize and compress PDF files for fast web-view using the Node.js environment.
-lastmod: "2023-11-15"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -22,9 +22,9 @@ Please check the following code snippet in order to optimize PDF files in Node.j
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file which will be optimized.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for optimizing file. Receive the object if successful.
 1. Call the function [AsposePdfOptimize](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimize/).
 1. Optimize a PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultOptimize.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /nodejs-cpp/licensing/
 description: Aspose.PDF for Node.js invites its customers to get a Classic license.
-lastmod: "2022-12-13"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

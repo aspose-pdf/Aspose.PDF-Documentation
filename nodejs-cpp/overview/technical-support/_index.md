@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /nodejs-cpp/technical-support/
 description: This page gives recommendations for quick and quality to resolve your tasks using Aspose.PDF for Node.js.
-lastmod: "2022-12-13"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

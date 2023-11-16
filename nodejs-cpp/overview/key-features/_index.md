@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /nodejs-cpp/key-features/
 description: Aspose.PDF for Node.js via C++ demonstrates its general features. This page describes the supported PDF versions, and all the manipulations we can do with text, images, pages, etc.
-lastmod: "2023-11-13"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -4,8 +4,8 @@ linktitle: Basic operations
 type: docs
 weight: 40
 url: /nodejs-cpp/basic-operations/
-lastmod: "2023-04-14"
-description: Basic operations section describes the possibilities of simplest operation with PDF documents using the Aspose.PDF for Node.js.
+lastmod: "2023-11-16"
+description: Basic operations section describes the possibilities of simplest operation with PDF documents using the Aspose.PDF for Node.js via C++.
 sitemap:
     changefreq: "weekly"
     priority: 0.7

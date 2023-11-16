@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /nodejs-cpp/split-pdf/
 description: This topic shows how to split PDF pages into individual PDF file with Aspose.PDF for Node.js via C++ .
-lastmod: "2022-11-10"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,9 +18,9 @@ Please check the following code snippet in order to split two PDFs in Node.js en
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF files which will be split.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for splitting file. Receive the object if successful.
 1. Call the function [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/).
 1. Split two PDF files. It sets the variable pageToSplit to 1, indicating that the PDF file will be split at page 1. 
 1. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultSplit1.pdf", and "ResultSplit2.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.

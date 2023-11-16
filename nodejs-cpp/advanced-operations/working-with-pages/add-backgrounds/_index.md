@@ -1,11 +1,11 @@
 ---
-title: Add background to PDF in Node.js via C++
+title: Add background to PDF in Node.js
 linktitle: Add background
 type: docs
 weight: 10
 url: /nodejs-cpp/add-background/
-description: Add a background image to your PDF file with Node.js 
-lastmod: "2023-10-17"
+description: Add a background image to your PDF file in Node.js 
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,9 +17,9 @@ Please check the following code snippet in order to add a background image in No
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file in which the background image will be added.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for adding background image. Receive the object if successful.
 1. Call the function [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddbackgroundimage/).
 1. Add background image to a PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultAddBackgroundImage.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 

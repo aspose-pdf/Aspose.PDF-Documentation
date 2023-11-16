@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /nodejs-cpp/overview/
 description: Overview of key-features and supported formats of Aspose.PDF for Node.js via C++, installation and licensing manual.
-lastmod: "2022-12-13"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

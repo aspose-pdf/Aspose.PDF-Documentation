@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /nodejs-cpp/stamping/
 description: Add the Image Stamp in your PDF document using AsposePdfAddStamp with the Node.js tool.
-lastmod: "2023-10-15"
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,9 +20,9 @@ Please check the following code snippet in order to add an image stamp to a PDF 
 
 **CommonJS:**
 
-1. Require the AsposePDFforNode.cjs module.
+1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
 1. Specify the name of the PDF file in which the image stamp will be added.
-1. Initialize the AsposePdf module. Receive the object if successful.
+1. Call `AsposePdf` as Promise and perform the operation for adding image stamp. Receive the object if successful.
 1. Call the function [AsposePdfAddStamp](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddstamp/).
 1. Add stamp to a PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultImage.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
 
