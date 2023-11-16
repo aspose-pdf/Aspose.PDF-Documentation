@@ -24,7 +24,7 @@ Node.js supports two modular systems for organizing and sharing code. There are:
 
 The CommonJS modules were the classic dependency processing method in Node.js, while the ECMAScript modules are the newer add-on and follow the standard format used in modern browsers. 'cjs', 'mjs' - are extensions used to specify the module formats (CommonJS and ECMAScript Modules) used in JavaScript files. 
 
-In the code snippets, you will notice a difference in work with the AsposePDFforNode.cjs module. The primary distinction between 'require' and 'import' lies in their use cases. '***Require** is limited to importing entire modules, whereas **Import** has the flexibility to import both entire modules and specific exports from those modules.
+In the code snippets, you will notice a difference in work with the AsposePDFforNode.cjs module. The primary distinction between 'require' and 'import' lies in their use cases. **Require** is limited to importing entire modules, whereas **Import** has the flexibility to import both entire modules and specific exports from those modules.
 
 **Two different approaches**
 
