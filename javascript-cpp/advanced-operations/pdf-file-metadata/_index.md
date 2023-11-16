@@ -42,11 +42,19 @@ sitemap:
       version - PDF version
       ispdfa - PDF is PDF/A
       ispdfua - PDF is PDF/UA
+      islinearized - PDF is linearized
+      isencrypted - PDF is encrypted
       permission - PDF permission
       size - PDF page size
       pagecount - Page count
-      Creation Date: json.creation
-      Modify Date:   json.mod
+      сreation Date: json.creation
+      ьodify Date:   json.mod
+      annotationcount - Annotation count
+      bookmarkcount - Bookmark count
+      attachmentcount - Attachment count
+      metadatacount - Metadata count
+      javascriptcount - JavaScript count
+      imagecount - Image count
       */
       if (json.errorCode == 0) document.getElementById('output').textContent = "JSON:\n" + JSON.stringify(json, null, 4);
       else document.getElementById('output').textContent = json.errorText;
