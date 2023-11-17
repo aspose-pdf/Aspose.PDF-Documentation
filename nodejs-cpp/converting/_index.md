@@ -24,7 +24,7 @@ Microsoft Word documents are the most versatile and editable possible. In this a
 
 Number formats are needed not only to make the data in the table easier to read, but also to make the table easier to use. Of course, if you need to convert such data from a PDF document to Excel format use our Aspose.PDF for Node.js.
 
-- [Convert PDF to Microsoft XLSX](/pdf/nodejs-cpp/convert-pdf-to-xlsx/) - this section describes how to convert PDF document to XLSX, and CSV.
+- [Convert PDF to Microsoft XLSX](/pdf/nodejs-cpp/convert-pdf-to-xlsx/) - this section describes how to convert PDF document to XLSX.
 
 The PowerPoint format is used to create various presentations. PPT files contain a large number of slides or pages containing various information.
 
