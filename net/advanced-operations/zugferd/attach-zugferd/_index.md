@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/attach-zugferd/
 description: Learn how to generate a PDF document with ZUGFeRD in Aspose.PDF for .NET
-lastmod: "2023-09-27"
+lastmod: "2023-11-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,13 +15,13 @@ sitemap:
 
 We recommend following steps to attach ZUGFeRD to PDF:
 
-•  Define a path variable that points to a folder where the input and output PDF files are located.
-•  Create a document object by loading an existing PDF file (e.g. "ZUGFeRD-test.pdf") from the path.
-•  Create a [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification/) object by providing the path and description of another file named "factur-x.xml", which contains invoice metadata conforming to the ZUGFeRD standard.
-•  Add properties to the file specification object, such as the description, MIME type, and AF relationship. The AF relationship indicates how the embedded file is related to the PDF document. In this case, it is set to "Alternative", meaning the embedded file is an alternative representation of the PDF content.
-•  Add the file specification object to the document's embedded files collection. File name should be specified to ZUGFeRD standard, e.g. "factur-x.xml".
-•  Convert the document to PDF/A-3U format, a subset of PDF that ensures the long-term preservation of electronic documents. PDF/A-3U allows embedding files of any format in PDF documents.
-•  Save the converted document as a new PDF file (e.g. "ZUGFeRD-res.pdf").
+* Define a path variable that points to a folder where the input and output PDF files are located.
+* Create a document object by loading an existing PDF file (e.g. "ZUGFeRD-test.pdf") from the path.
+* Create a [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification/) object by providing the path and description of another file named "factur-x.xml", which contains invoice metadata conforming to the ZUGFeRD standard.
+* Add properties to the file specification object, such as the description, MIME type, and AF relationship. The AF relationship indicates how the embedded file is related to the PDF document. In this case, it is set to "Alternative", meaning the embedded file is an alternative representation of the PDF content.
+* Add the file specification object to the document's embedded files collection. File name should be specified to ZUGFeRD standard, e.g. "factur-x.xml".
+* Convert the document to PDF/A-3U format, a subset of PDF that ensures the long-term preservation of electronic documents. PDF/A-3U allows embedding files of any format in PDF documents.
+* Save the converted document as a new PDF file (e.g. "ZUGFeRD-res.pdf").
 
 ```cs
 var path = @"C:\Samples\ZUGFeRD\";
