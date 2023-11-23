@@ -26,4 +26,4 @@ The format is a hybrid that combines a PDF document that can be read by humans a
 It is also in compliance with the legal requirements for long-term archiving and tax compliance. ZUGFeRD has different versions and profiles that suit different needs and scenarios. The latest version is ZUGFeRD 2.0, which is compatible with the European standard EN 16931 for electronic invoicing.
 ZUGFeRD offers many benefits and cost savings for users, such as faster processing, reduced errors, improved cash flow, and lower environmental impact.
 
-* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in C#](attach-zugferd)
+* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in C#](/net/attach-zugferd/)
