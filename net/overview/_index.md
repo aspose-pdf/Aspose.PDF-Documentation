@@ -37,6 +37,20 @@ The Aspose.PDF for .NET supports a wide variety of functions such as:
 
 In addition, Aspose.PDF for .NET can be applied to easily convert text, images, SVG, HTML to PDF and convert PDF to various document formats with excellent performance and good quality.
 
+## About Aspose.PDF.Drawing for .NET
+
+**Aspose.PDF.Drawing for .NET** is a variation of Aspose.PDF, which provides a new graphical Aspose.Drawing interface instead of System.Drawing. 
+
+This component is written in a managed C# and allows developers to add PDF file creation and management features to their Microsoft applications. NET (WinForms, ASP.NET, and .NET Compact Framework).
+
+It helps to avoid numerous problems and bugs associated with using System.Drawing.Common on non-Windows platforms.
+
+**Aspose.PDF.Drawing for .NET** presents the same functions as Aspose.PDF. It provides the capability to interact with PDF documents, encompassing elements such as pages, text, images, attachments, fonts, bookmarks, annotations, forms, operators, stamps, watermarks, links, security functions, signatures, and printing.
+
+**Aspose.PDF.Drawing for .NET** boasts an extensive array of features, including options for compressing PDFs, creating and manipulating tables, supporting graph objects, facilitating comprehensive hyperlink functionality, implementing advanced security controls, managing custom fonts, integrating seamlessly with data sources, and enabling the addition or removal of bookmarks. Users can create a table of contents, manipulate attachments and annotations by adding, updating, or deleting them, import or export PDF form data, and modify text and images by adding, replacing, or removing them. Additionally, the software allows for actions such as splitting, concatenating, extracting, or inserting pages, transforming pages into images, and printing PDF documents, among other functionalities. For printing PDF documents, System.Drawing.Common is used, so it will only work on the Windows platform.
+
+To try **Aspose.PDF.Drawing for .NET** just runs `Install-Package Aspose.PDF` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.PDF for .NET and want to upgrade the version, please execute `Update-Package Aspose.PDF` to get the latest version. More information can be found at the link to [NuGet package](https://www.nuget.org/packages/Aspose.PDF.Drawing/).
+
 Learn more about:
 
 - [Supported File Formats](/pdf/net/supported-file-formats/)
