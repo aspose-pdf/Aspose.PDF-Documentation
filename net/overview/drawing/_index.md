@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/drawing/
 lastmod: "2023-12-21"
-description: Overview of key-features and supported formats of Aspose.PDF.Drawing for .NET library.
+description: Overview of key-features and advantages of Aspose.PDF.Drawing for .NET library.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
