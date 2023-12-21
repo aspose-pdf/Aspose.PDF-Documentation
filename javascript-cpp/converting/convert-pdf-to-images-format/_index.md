@@ -322,7 +322,7 @@ The following JavaScript code snippet shows simple example of coverting PDF page
     }
 ```
 
-### Convert PDF to SVG(zip)
+### Convert PDF to zipped SVG
 
 ```js
 

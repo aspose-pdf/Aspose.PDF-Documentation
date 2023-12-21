@@ -4,7 +4,7 @@ linktitle: Image stamps in PDF File
 type: docs
 weight: 60
 url: /javascript-cpp/stamping/
-description: Add the Image Stamp in your PDF document using ImageStamp class with the JavaScript tool.
+description: Add the Image Stamp to your PDF document using AsposePdfAddStamp function with the JavaScript toolkit.
 lastmod: "2023-04-15"
 sitemap:
     changefreq: "weekly"

@@ -11,6 +11,10 @@ sitemap:
 lastmod: "2023-04-14"
 ---
 
+## What's new in Aspose.PDF for JavaScript via C++ 23.10
+
+1. **AsposePdfAbout** - [Get info about Product](/pdf/javascript-cpp/get-info-about-product/)
+
 ## What's new in Aspose.PDF for JavaScript via C++ 23.9
 
 1. **AsposePdfToDoc** - [Convert a PDF-file to Doc](/pdf/javascript-cpp/conversion/)

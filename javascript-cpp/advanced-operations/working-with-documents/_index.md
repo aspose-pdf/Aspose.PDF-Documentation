@@ -26,3 +26,4 @@ You are able to do the following:
 - [Merge PDF](/pdf/javascript-cpp/merge-pdf/) - merge multiple PDF files into a single PDF document using JavaScript.
 - [Split PDF](/pdf/javascript-cpp/split-pdf/) - split PDF pages into individual PDF files in JavaScript via C++.
 - [Delete JavaScripts](/pdf/javascript-cpp/delete-javascripts/) - delete JavaScripts from a PDF-file.
+- [Get info about Product](/pdf/javascript-cpp/get-info-about-product/)

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-The following code snippets shows how to add a background image to PDF pages using the [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfaddbackgroundimage/) class with JavaScript.
+The following code snippets shows how to add a background image to PDF pages using the [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfaddbackgroundimage/) function with JavaScript.
 
 In the next code snippet, we upload the image for further work in the internal file system:
 

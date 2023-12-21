@@ -4,7 +4,7 @@ linktitle: Delete PDF Pages
 type: docs
 weight: 30
 url: /javascript-cpp/delete-pages/
-description: You can delete pages from your PDF file using Aspose.PDF for JavaScript via C++  library.
+description: You can delete pages from your PDF file using Aspose.PDF for JavaScript via C++.
 lastmod: "2023-04-17"
 sitemap:
     changefreq: "weekly"

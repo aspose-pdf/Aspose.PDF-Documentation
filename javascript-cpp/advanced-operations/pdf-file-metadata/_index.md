@@ -23,7 +23,7 @@ sitemap:
 - keywords - keywords
 - creation - creation date
 - mod - modify date
-1. Next, if the 'json.errorCode' is 0, then your DownloadFile is given the name you specified earlier. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
+1. Next, if the 'json.errorCode' is 0, then you can get list of PDF file Info. If the 'json.errorCode' parameter is not equal to 0 and, accordingly, there will be an error in your file, then information about such an error will be contained in the 'json.errorText' file.
 
 ```js
 
@@ -42,11 +42,19 @@ sitemap:
       version - PDF version
       ispdfa - PDF is PDF/A
       ispdfua - PDF is PDF/UA
+      islinearized - PDF is linearized
+      isencrypted - PDF is encrypted
       permission - PDF permission
       size - PDF page size
       pagecount - Page count
-      Creation Date: json.creation
-      Modify Date:   json.mod
+      сreation Date: json.creation
+      modify Date:   json.mod
+      annotationcount - Annotation count
+      bookmarkcount - Bookmark count
+      attachmentcount - Attachment count
+      metadatacount - Metadata count
+      javascriptcount - JavaScript count
+      imagecount - Image count
       */
       if (json.errorCode == 0) document.getElementById('output').textContent = "JSON:\n" + JSON.stringify(json, null, 4);
       else document.getElementById('output').textContent = json.errorText;

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-The following code snippets shows how to set the background color of PDF pages using the [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/javascript-cpp/organize/asposepdfsetbackgroundcolor/) class with JavaScript. 
+The following code snippets shows how to set the background color of PDF pages using the [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/javascript-cpp/organize/asposepdfsetbackgroundcolor/) function with JavaScript. 
 
 In the next example, we select the PDF file to handle.
 
