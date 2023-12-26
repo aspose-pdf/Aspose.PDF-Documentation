@@ -19,7 +19,7 @@ This component is written in a managed C# and allows developers to add PDF file 
 
 It helps to avoid numerous problems and bugs associated with using System.Drawing.Common on non-Windows platforms.
 
-Also, need to say that the Aspose.PDF.Drawing library successfully works on the Docker platform that allows you to package into a container your application. 
+Also, need to say that the Aspose.PDF.Drawing library successfully works on the Docker platform that allows you to package into a container your application. For more information check [How to run Aspose.PDF in Docker](https://docs.aspose.com/pdf/net/docker/) page. Our library successfully works in Docker with packages 'ttf-mscorefonts-installer' and  'fontconfig'.
 
 **Aspose.PDF.Drawing for .NET** presents the same functions as Aspose.PDF. It provides the capability to interact with PDF documents, encompassing elements such as pages, text, images, attachments, fonts, bookmarks, annotations, forms, operators, stamps, watermarks, links, security functions, signatures, and printing.
 
@@ -27,7 +27,7 @@ Also, need to say that the Aspose.PDF.Drawing library successfully works on the 
 
 ## Installation
 
-To try **Aspose.PDF.Drawing for .NET** just runs `Install-Package Aspose.PDF` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.PDF for .NET and want to upgrade the version, please execute `Update-Package Aspose.PDF` to get the latest version. More information can be found at the link to [NuGet package](https://www.nuget.org/packages/Aspose.PDF.Drawing/).
+To try **Aspose.PDF.Drawing for .NET** just runs `Install-Package Aspose.PDF.Drawing` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.PDF for .NET and want to upgrade the version, please execute `Update-Package Aspose.PDF.Drawing` to get the latest version. More information can be found at the link to [NuGet package](https://www.nuget.org/packages/Aspose.PDF.Drawing/).
 
 ![Aspose.PDF.Drawing for .NET](nuget.png)
 
@@ -39,7 +39,9 @@ Aspose.Drawing presents several advantages over the System.Drawing.Common librar
 
 1. Cross-platform support. Aspose.PDF.Drawing enables the development of drawing applications across diverse platforms, including Windows, Linux, macOS, Android, and iOS.
 
-1. High-performance rendering. The rendering quality and performance of the Aspose.PDF.Drawing for .NET library is not decreasing. With Aspose.PDF.Drawing, you can achieve top-notch rendering of text featuring anti-aliasing and hinting. This ensures smooth font edges without jagged artifacts, making text legible across various displays and resolutions.
+1. The performance of the Aspose.PDF.Drawing for .NET library is reduced by no more than 2%. 
+
+1. The rendering quality. With Aspose.PDF.Drawing, you can achieve top-notch rendering of text featuring anti-aliasing and hinting. This ensures smooth font edges without jagged artifacts, making text legible across various displays and resolutions. The difference in a document of A4 format is not more than 10 pixels per page.
 
 1. Comprehensive feature set. Aspose.PDF.Drawing boasts an extensive array of features for 2D graphics, encompassing shapes, lines, text, images, and charts.
 
@@ -77,9 +79,7 @@ For printing PDF documents, System.Drawing.Common is used, so it will only work 
 
 ## Licensing
 
-There is no special license for Aspose.PDF.Drawing, use the same as for Aspose.PDF. Check the [Aspose PDF License](/pdf/net/licensing/) section.
-
-In conclusion, Aspose.PDF.Drawing for .NET stands out as a robust and flexible cross-platform drawing library, providing numerous benefits compared to the System.Drawing.Common library. It proves to be an excellent option for developers seeking to develop high-quality drawing applications across various platforms.
+There is no additional license for Aspose.PDF.Drawing, use the same as for Aspose.PDF. Check the [Aspose PDF License](/pdf/net/licensing/) section.
 
 Learn more about:
 
