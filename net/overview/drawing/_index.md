@@ -19,7 +19,7 @@ This component is written in a managed C# and allows developers to add PDF file 
 
 It helps to avoid numerous problems and bugs associated with using System.Drawing.Common on non-Windows platforms.
 
-Also, need to say that the Aspose.PDF.Drawing library successfully works on the Docker platform that allows you to package into a container your application. For more information check [How to run Aspose.PDF in Docker](https://docs.aspose.com/pdf/net/docker/) page. Our library successfully works in Docker with packages 'ttf-mscorefonts-installer' and  'fontconfig'.
+Also, need to say that the Aspose.PDF.Drawing library successfully works on the Docker platform that allows you to package into a container your application. For more information check [How to run Aspose.PDF in Docker](https://docs.aspose.com/pdf/net/docker/) page.  The 'ttf-mscorefonts-installer' and  'fontconfig' packages are needed for successful work Aspose.PDF.Drawing for .NET library in Docker.
 
 **Aspose.PDF.Drawing for .NET** presents the same functions as Aspose.PDF. It provides the capability to interact with PDF documents, encompassing elements such as pages, text, images, attachments, fonts, bookmarks, annotations, forms, operators, stamps, watermarks, links, security functions, signatures, and printing.
 
