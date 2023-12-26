@@ -31,6 +31,6 @@ If there is no web server installed you can run the examples locally, using Pyth
 - on the first page of the installer, select the "Add Python 3.xxx to PATH" check box
 - click Install, and then click Close when the installation ends.
 - then go to the directory where to open the ZIP archive
-- run in the console 'start python -m http.server 8080'
-- start the following command 'start http://localhost:8080/example.html'
+- run in the console 'python -m http.server 8080'
+- then we open the browser and follow the link: 'http://localhost:8080/example.html'
 
