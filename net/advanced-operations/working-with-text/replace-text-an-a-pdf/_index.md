@@ -78,6 +78,8 @@ aliases:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Replace Text in all pages of PDF document
 
 {{% alert color="primary" %}}

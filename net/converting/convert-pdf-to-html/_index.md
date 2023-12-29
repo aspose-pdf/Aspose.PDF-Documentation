@@ -20,6 +20,7 @@ _Format_: **HTML**
 - [C# Convert PDF to HTML](#csharp-pdf-to-html)
 - [C# How to convert PDF file to HTML](#csharp-pdf-to-html)
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
 
 ## Convert PDF to HTML
 

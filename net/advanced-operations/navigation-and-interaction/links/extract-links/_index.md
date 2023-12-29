@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Extract Links from the PDF File
 
 Links are represented as annotations in a PDF file, so to extract links, extract all the [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) objects.

@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Add Ellipse object
 
 Aspose.PDF for .NET supports to add [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) objects to PDF documents. It also offers the feature to fill ellipse  object with a certain color.

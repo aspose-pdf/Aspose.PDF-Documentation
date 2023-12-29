@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Get PDF File Information
 
 In order to get file specific information of a PDF file, you first need to get the [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) object using [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) property of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object. Once the [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) object is retrieved, you can get the values of the individual properties. The following code snippet shows you how to get PDF file information.

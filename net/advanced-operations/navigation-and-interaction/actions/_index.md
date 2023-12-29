@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Add Hyperlink in a PDF File
 
 It is possible to add hyperlinks to PDF files, either to allow readers to navigate to another part of the PDF, or to external content.

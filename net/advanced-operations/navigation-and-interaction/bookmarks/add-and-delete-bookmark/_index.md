@@ -78,6 +78,8 @@ aliases:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Add a Bookmark to a PDF Document
 
 Bookmarks are held in the Document object’s [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) collection, itself in the [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) collection.

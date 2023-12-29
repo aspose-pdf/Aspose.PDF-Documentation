@@ -78,6 +78,8 @@ aliases:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 To add text to existing PDF file:
 
 1. Open the input PDF using the Document object.

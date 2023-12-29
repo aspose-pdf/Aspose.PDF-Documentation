@@ -81,6 +81,8 @@ aliases:
 
 **Aspose.PDF for .NET** allows adding watermarks to your PDF document using Artifacts. Please check this article to resolve your task.
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 A watermark created with Adobe Acrobat is called an artifact (as described in 14.8.2.2 Real Content and Artifacts of the PDF specification). In order to work with artifacts, Aspose.PDF has two classes: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) and [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 
 In order to get all artifacts on a particular page, the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) class has the Artifacts property. This topic explains how to work with artifact in PDF files.

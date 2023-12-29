@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Extracting Image from Signature Field
 
 Aspose.PDF for .NET supports the feature to digitally sign the PDF files using the [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) class and while signing the document, you can also set an image for SignatureAppearance. Now, this API also provides the capability to extract signature information as well as the image associated with the signature field.

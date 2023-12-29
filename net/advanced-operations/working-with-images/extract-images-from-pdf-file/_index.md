@@ -73,6 +73,8 @@ lastmod: "2022-02-17"
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 Images are held in each page’s [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) collection’s [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.
 
 The image’s index returns an [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage) object. This object provides a Save method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.

@@ -13,6 +13,8 @@ sitemap:
     priority: 0.7
 ---
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Open existing PDF document
 
 There are several ways to open a document. The easiest is to specify a file name.

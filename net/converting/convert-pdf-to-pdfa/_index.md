@@ -29,6 +29,7 @@ Aspose.PDF for .NET presents you online free application ["PDF to PDF/A-1A"](htt
 [![Aspose.PDF Convertion PDF to PDF/A with Free App](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
 
 ## Convert PDF file to PDF/A-1b
 

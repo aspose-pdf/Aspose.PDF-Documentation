@@ -79,6 +79,9 @@ sitemap:
 ## Moving a Page from one PDF Document to Another
 
 This topic explains how to move page from one PDF document to the end of another document using C#.
+
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 To move an page we should:
 
 1. Create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class object with the source PDF file.

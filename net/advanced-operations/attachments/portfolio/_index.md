@@ -84,6 +84,8 @@ The following example uses a Microsoft Excel File, a Word document and an image 
 
 The code below results in the following portfolio.
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ### A PDF Portfolio created with Aspose.PDF
 
 ![A PDF Portfolio created with Aspose.PDF for .NET](working-with-pdf-portfolio_1.jpg)

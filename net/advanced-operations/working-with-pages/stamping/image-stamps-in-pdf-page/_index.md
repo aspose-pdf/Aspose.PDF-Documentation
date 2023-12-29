@@ -80,6 +80,8 @@ sitemap:
 
 You can use the ImageStamp class to add an image stamp to a PDF file. The ImageStamp class provides the properties necessary for creating an image-based stamp, such as height, width, opacity and so on.
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 To add an image stamp:
 
 1. Create a Document object and an ImageStamp object using required properties.

@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Get or Set Field Limit
 
 The FormEditor class SetFieldLimit(field, limit) method allows you to set a field limit, the maximum number of characters that can be entered into a field.

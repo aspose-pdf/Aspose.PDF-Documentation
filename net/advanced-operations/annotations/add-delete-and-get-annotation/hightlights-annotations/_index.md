@@ -86,6 +86,8 @@ Also possible to get or set the settings of the strikethrough annotations using 
 
 The next feature is the ability to get or set the settings of the underline annotations using the underlineSettings property. The underlineSettings property is used to set the color, opacity, author, subject, modifiedDate, and isLocked properties of the underline annotations.
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Add Text Markup Annotation
 
 In order to add an Text Markup Annotation to the PDF document, we need to perform the following actions:

@@ -94,6 +94,8 @@ Open the PDF file using the [Document](https://reference.aspose.com/pdf/net/aspo
 - PageLayout – The page layout.
 - PageMode – How the document is displayed when first opened. The options are show thumbnails, full-screen, show attachment panel.
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 The following code snippet shows you how to get the properties using [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 
 ```csharp

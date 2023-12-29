@@ -73,6 +73,8 @@ lastmod: "2022-02-17"
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 This topic explains how to use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information about images without having to extract them.
 
 There are different ways of achieving this. This article explains how to use an `arraylist` and [image placement classes](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement).

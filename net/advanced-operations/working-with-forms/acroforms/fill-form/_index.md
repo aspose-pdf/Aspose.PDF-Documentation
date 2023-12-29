@@ -77,6 +77,8 @@ sitemap:
 }
 </script>
 
+The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Fill Form Field in a PDF Document
 
 To fill a form field, get the field from the Document object’s Form collection. then set the field value using the field’s Value property.
