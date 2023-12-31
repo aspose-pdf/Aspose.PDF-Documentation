@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Get Bookmarks
 
 The [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object’s [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) collection contains all a PDF file’s bookmarks. This article explains how to get bookmarks from a PDF file, and how to get which page a particular bookmark is on.

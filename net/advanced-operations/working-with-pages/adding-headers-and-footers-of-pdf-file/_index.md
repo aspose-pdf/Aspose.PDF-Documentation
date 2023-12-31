@@ -81,6 +81,8 @@ aliases:
 
 **Aspose.PDF for .NET** allows you to add header and footer in your existing PDF file. You may add images or text to a PDF document. Also, try to add different headers in one PDF File with C#.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Adding Text in Header of PDF File
 
 You can use [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) class to add text in the header of a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text in the header, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the text in the header of the PDF.

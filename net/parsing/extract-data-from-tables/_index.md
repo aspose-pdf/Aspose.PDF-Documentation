@@ -23,6 +23,8 @@ Aspose.PDF for .NET has a tool to make it easy to retrieve tables. To extract ta
 1. `TableList` is a List of [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). To get the date iterate throught `TableList` and handle [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) and [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)
 1. Each [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) contains [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments) collection. You can process it for your own purposes.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 The following example shows table extraction from the all pages:
 
 ```csharp
@@ -62,6 +64,8 @@ public static void Extract_Table()
 Each abosorbed table has [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle) property that describes position of the table on page.
 
 So, if you need to extract tables located in a specific region, you have to work with specific coordinates.
+
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 The following example show how to extract table marked with Square Annotation:
 
@@ -116,6 +120,8 @@ public static void Extract_Marked_Table()
 
 The following example shows how to extract table and store it as CSV file.
 To see how to convert PDF to Excel Spreadsheet please refer to [Convert PDF to Excel](/pdf/net/convert-pdf-to-excel/) article.
+
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
 public static void Extract_Table_Save_CSV()

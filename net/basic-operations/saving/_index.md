@@ -13,6 +13,8 @@ sitemap:
     priority: 0.7
 ---
 
+The next code snippet also works with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+
 ## Save PDF document to file system
 
 You can save the created or manipulated PDF document to file system using `Save` method of `Document` class.

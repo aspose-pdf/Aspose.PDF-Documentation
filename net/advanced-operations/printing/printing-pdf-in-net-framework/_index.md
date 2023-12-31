@@ -77,6 +77,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## **Print Pdf File in C# - Print PDF File to Default Printer using Printer and Page Settings**
 
 This article describes how to Print PDF File to Default Printer using Printer and Page Settings in C#.

@@ -87,6 +87,8 @@ A watermark created with Adobe Acrobat is called an artifact (as described in 14
 
 In order to get all artifacts on a particular page, the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) class has the Artifacts property. This topic explains how to work with artifact in PDF files.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 The following code snippet shows how to get each watermark on the first page of a PDF file.
 
 ```csharp

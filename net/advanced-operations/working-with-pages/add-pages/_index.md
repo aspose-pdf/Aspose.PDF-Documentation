@@ -86,6 +86,8 @@ This section shows how to add pages to a PDF using C#.
 
 Aspose.PDF for .NET lets you insert a page to a PDF document at any location in the file as well as add pages to the end of a PDF file.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ### Insert Empty Page in a PDF File at Desired Location
 
 To insert an empty page in a PDF file:

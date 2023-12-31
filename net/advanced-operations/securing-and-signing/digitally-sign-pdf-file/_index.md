@@ -82,6 +82,8 @@ When signing a PDF document using a signature, you basically confirm its content
 
 In other words, the document would still be considered to retain its integrity and the recipient could still trust the document. For further details, please visit Certifying and signing a PDF. In general, certifying a document can be compared to Code-signing a .NET executable.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Aspose.PDF for .NET signing features
 
 We can use follwing classed and method for PDF signing

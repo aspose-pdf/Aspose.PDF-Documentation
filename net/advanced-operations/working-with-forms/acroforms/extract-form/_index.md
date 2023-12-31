@@ -77,6 +77,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Extract data from form
 
 ### Get Values from all the Fields of PDF Document

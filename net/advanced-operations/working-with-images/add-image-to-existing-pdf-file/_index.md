@@ -77,6 +77,8 @@ lastmod: "2022-02-17"
 
 Every PDF page contains Resources and Contents properties. Resources can be images and forms for example, while content is represented by a set of PDF operators. Each operator has its name and argument. This example uses operators to add an image to a PDF file.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 To add an image to an existing PDF file:
 
 - Create a Document object and open the input PDF document.
