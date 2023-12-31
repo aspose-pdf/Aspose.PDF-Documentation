@@ -78,7 +78,7 @@ sitemap:
 
 ## How to add Text Annotation into existing PDF file
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 A Text Annotation is an annotation attached to a specific location in a PDF document. When closed, the annotation is displayed as an icon; when opened, it should display a pop-up window containing the note text in the font and size chosen by the reader.
 

@@ -89,7 +89,7 @@ PDF document management app provides various tools for annotating documents. Fro
 
 The approach to adding the annotation is typical for any of them.
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 1. Load the PDF file or create new by [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Create the new annottaion and set parameters (new Rectangle, new Point, title, color, width etc).

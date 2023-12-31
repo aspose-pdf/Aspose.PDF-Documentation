@@ -78,7 +78,7 @@ sitemap:
 
 Aspose.PDF can remove attachments from PDF files. A PDF document’s attachments are held in the Document object’s EmbeddedFiles collection.
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 To delete all attachments associated with a PDF file:
 

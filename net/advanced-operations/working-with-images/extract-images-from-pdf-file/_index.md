@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 Images are held in each page’s [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) collection’s [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.
 

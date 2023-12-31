@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ## Convert PDF/A document to PDF
 

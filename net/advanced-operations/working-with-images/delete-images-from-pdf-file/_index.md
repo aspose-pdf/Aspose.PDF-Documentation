@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 To delete an image from a PDF file:
 

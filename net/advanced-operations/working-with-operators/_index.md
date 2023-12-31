@@ -105,7 +105,7 @@ To add an image into a PDF file:
    - Use the Do operator to draw the image on the page.
 1. Finally, use GRestore operator to save the updated graphical state.
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 The following code snippet shows how to use PDF operators.
 

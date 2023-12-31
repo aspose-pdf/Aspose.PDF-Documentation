@@ -19,7 +19,7 @@ Aspose.PDF for NET lets you extract text from stamp annotations. In order to ext
 1. Define a new object of `TextAbsorber` class
 1. Use the TextAbsorber's visit method to get the Text
 
-The next code snippet also works with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
 public static void ExtractText()

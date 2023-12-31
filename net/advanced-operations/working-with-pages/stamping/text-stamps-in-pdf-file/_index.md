@@ -80,7 +80,7 @@ sitemap:
 
 You can use [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) class to add a text stamp in a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text stamp, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the stamp in the PDF. 
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 The following code snippet shows you how to add text stamp in the PDF file.
 

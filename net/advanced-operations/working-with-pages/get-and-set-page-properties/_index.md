@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
 
 Aspose.PDF for .NET lets you read and set properties of pages in a PDF file in your .NET applications. This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties. The examples given are in C# but you can use any .NET language such as VB.NET to achieve the same.
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ## Get Number of Pages in a PDF File
 

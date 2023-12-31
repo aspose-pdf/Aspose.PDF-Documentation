@@ -83,7 +83,7 @@ Aspose.PDF for NET offers the capabilities to insert/create Table inside PDF doc
 
 In order to remove the tables, we need to use [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) class to get hold of tables in existing PDF and then call [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
 
-The next code snippets also work with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ## Remove Table from PDF document
 

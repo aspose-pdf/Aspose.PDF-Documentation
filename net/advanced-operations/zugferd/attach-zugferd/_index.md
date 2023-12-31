@@ -13,7 +13,7 @@ sitemap:
 
 ## Attach ZUGFeRD to PDF
 
-The next code snippet also works with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 We recommend following steps to attach ZUGFeRD to PDF:
 
