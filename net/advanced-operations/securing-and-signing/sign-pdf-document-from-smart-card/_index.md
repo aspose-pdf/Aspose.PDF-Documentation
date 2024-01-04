@@ -76,7 +76,11 @@ sitemap:
 }
 </script>
 
-Aspose.PDF for .NET offers the functionality to add digital signatures from a key store location. You can apply the signature by accepting the certificate provided by the certificate store, smart card or [PIV card](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) connected to the system at run-time. Following are the code snippets to sign a PDF document from a smart card:
+Aspose.PDF for .NET offers the functionality to add digital signatures from a key store location. You can apply the signature by accepting the certificate provided by the certificate store, smart card or [PIV card](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) connected to the system at run-time. 
+
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
+Following are the code snippets to sign a PDF document from a smart card:
 
 ## Sign With Smart Card Using Signature Field
 

@@ -15,6 +15,8 @@ sitemap:
 
 This article explains how to convert various Images formats to PDF using C#. It covers these topics.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 _Format_: **BMP**
 - [C# BMP to PDF](#csharp-bmp-to-pdf)
 - [C# Convert BMP to PDF](#csharp-bmp-to-pdf)

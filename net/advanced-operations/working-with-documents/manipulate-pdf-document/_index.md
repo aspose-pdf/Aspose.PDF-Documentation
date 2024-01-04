@@ -89,6 +89,8 @@ The output XML format is custom Aspose format. The XML contains a collection of 
 
 {{% /alert %}}
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 The following code snippet shows you how to validate PDF document for PDF/A-1A.
 
 ```csharp

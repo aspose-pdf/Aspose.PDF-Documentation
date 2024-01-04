@@ -77,6 +77,8 @@ aliases:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 Generating a PDF document from an XML document is not a trivial task because XML document can describes different content Aspose.PDF for .NET has several ways to genereate PDF based on XML document:
 
 - using XSLT transformation

@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Integrate Table with Database
 
 Databases are built to store and manage data. It’s common practice for programmers to populate different objects with data from databases. This article discusses adding data from a database into a table. It is possible to populate a [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) object with data from any data source using Aspose.PDF for .NET. And it’s not only possible but it’s very easy.

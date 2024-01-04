@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 Aspose.PDF for .NET uses the following XML schema for working with XML documents:
 
 ```xml

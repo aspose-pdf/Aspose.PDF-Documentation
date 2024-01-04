@@ -77,6 +77,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## **Print Pdf document in .NET Core**
 
 The Aspose.PDF library allows us to convert PDF files to XPS. This function can be useful for organizing the printing of documents. Let's take a look at an example for using the default printer:

@@ -78,6 +78,8 @@ aliases:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 You can delete pages from a PDF file using Aspose.PDF for .NET. To delete a particular page from the [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection.
 
 ## Delete Page from PDF File

@@ -20,6 +20,8 @@ In one of the latest releases, the **Aspose.PDF for .NET** library added support
 
 Use the **TextFragmentAbsorber** class and you can already do anything with the found text, i.e., you can simply use the entire text. Try the next code snippet:
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));
     TextFragmentAbsorber absorber = new TextFragmentAbsorber();
@@ -31,6 +33,8 @@ Use the **TextFragmentAbsorber** class and you can already do anything with the 
 ```
 
 Or use **TextFragments** separately and do all sorts of manipulations with them, for example, sort by coordinates or by size.
+
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));

@@ -97,6 +97,8 @@ The following methods/properties of RichMediaAnnotation class can be used.
 - void Update():  Create a data structure of the annotation. This method should be called last
 - void SetPoster(Stream): Set poster of the video i.e. picture shown when the player is not active
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Add Screen Annotation
 
 The following code snippet shows how to add Screen Annotation to a PDF file:
