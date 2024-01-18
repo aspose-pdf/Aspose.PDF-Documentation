@@ -27,3 +27,8 @@ It also complies with the legal requirements for long-term archiving and tax com
 ZUGFeRD offers users many benefits and cost savings, such as faster processing, reduced errors, improved cash flow, and lower environmental impact.
 
 * [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in C#](/pdf/net/attach-zugferd/)
+
+See also:
+
+* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Java](/pdf/java/attach-zugferd/)
+* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Python](/pdf/python-net/attach-zugferd/)
