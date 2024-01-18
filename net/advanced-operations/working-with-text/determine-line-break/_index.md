@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Track Line Breaking of Multi-Line TextFragment
 
 Aspose.PDF for .NET offers logging (tracking) background processing (line breaking) of multi-line text fragments in text adding scenarios. You can use the [GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)() method of [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) Class as follows, in order to track line breaking of text fragment:

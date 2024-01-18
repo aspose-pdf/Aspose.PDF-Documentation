@@ -104,6 +104,8 @@ Optimization, or linearization for Web, refers to the process of making a PDF fi
 1. Use the [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) method.
 1. Save the optimized document using the [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 The following code snippet shows how to optimize a PDF document for the web.
 
 ```csharp

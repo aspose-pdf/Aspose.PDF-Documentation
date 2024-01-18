@@ -30,6 +30,7 @@ _Format_: **Word**
 - [C# Convert PDF to Word](#csharp-pdf-to-doc)
 - [C# How to convert PDF file to Word](#csharp-pdf-to-docx)
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ## C# PDF to DOC and DOCX Conversion
 

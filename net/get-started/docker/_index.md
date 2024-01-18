@@ -35,6 +35,8 @@ We will use code from **Complex Example** in this app. For more detailed explana
 1. Create `images` folder in `wwwroot` folder and put image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png)
 1. Replace code in `HomeController.cs` with following snippet (please note that you can have another namespace):
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ```cs
 using Aspose.Pdf;
 using Aspose.Pdf.Text;

@@ -73,6 +73,8 @@ lastmod: "2022-02-17"
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 To delete an image from a PDF file:
 
 1. Create a Document object and open the input PDF file.

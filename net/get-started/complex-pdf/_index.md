@@ -29,6 +29,8 @@ If we create a document from scratch we need to follow certain steps:
 1. Add (table) to the page [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs).
 1. Save a document "Complex.pdf".
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ```csharp
 using Aspose.Pdf.Text;
 using System;

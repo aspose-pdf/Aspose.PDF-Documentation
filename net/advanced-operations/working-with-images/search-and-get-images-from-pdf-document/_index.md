@@ -75,6 +75,8 @@ lastmod: "2022-02-17"
 
 The ImagePlacementAbsorber allows you to search among images on all pages in a PDF document.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 To search a whole document for images:
 
 1. Call the Pages collection’s Accept method. The Accept method takes an ImagePlacementAbsorber object as a parameter. This returns a collection of ImagePlacement objects.

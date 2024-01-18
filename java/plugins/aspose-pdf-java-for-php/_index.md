@@ -30,7 +30,7 @@ Project Aspose.PDF for PHP shows how different tasks can be performed using Aspo
 
 ### System Requirements
 
-Following are the system requirements to use Aspose.Words Java for PHP:
+Following are the system requirements to use Aspose.PDF for PHP via Java:
 
 - Tomcat Server 8.0 or above installed.
 - PHP/JavaBridge is configured.

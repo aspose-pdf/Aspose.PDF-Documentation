@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Direct print
 
 The Aspose.PDF library has the ability to convert PDF files to XPS. We can use this function to organize the printing of documents.
