@@ -144,3 +144,37 @@ The following code snippet shows the process of converting PDF file into XPS for
     # Save the XPS document
     document.save(output_pdf, save_options)
 ```
+## Convert PDF to XML
+
+{{% alert color="success" %}}
+**Try to convert PDF to XML online**
+
+Aspose.PDF for Python presents you online free application ["PDF to XML"](https://products.aspose.app/pdf/conversion/pdf-to-xml), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to XML with Free App](pdf_to_xml.png)](https://products.aspose.app/pdf/conversion/pdf-to-xml)
+{{% /alert %}}
+
+<abbr title="Extensible Markup Language">XML</abbr> is a markup language and file format for storing, transmitting, and reconstructing arbitrary data.
+
+Aspose.PDF for Python also supports the feature to convert PDF documents to XML format. Aspose.PDF for Python has a class named 'XmlSaveOptions' which can be used as the second argument to [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method, to generate an XML file.
+Please try using the following code snippet to accomplish this requirement with Python.
+
+```python
+
+    import aspose.pdf as ap
+
+    def convert_pdf_to_xml(self, infile, outfile):
+        path_infile = self.dataDir + infile
+        path_outfile = self.dataDir + outfile
+
+        # Open PDF document
+
+        document = ap.Document(path_infile)
+
+        # Instantiate XML Save options
+        save_options = ap.XmlSaveOptions()
+
+        # Save the XML document
+        document.save(path_outfile, save_options)
+        print(infile + " converted into " + outfile)
+```
