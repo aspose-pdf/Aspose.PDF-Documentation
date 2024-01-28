@@ -13,7 +13,7 @@ lastmod: "2021-12-24"
 
 ## What's new in Aspose.PDF 23.12
 
-From Aspose.PDF 23.12 support to add the new conversion features:
+From Aspose.PDF 23.12, support was added to the new conversion features:
 
 - Implement PDF to Markdown conversion
 
@@ -46,7 +46,7 @@ Support for Python 3.6 has been discontinued.
 
 ## What's new in Aspose.PDF 23.11
 
-From 23.11 possible to remove the hidden text, the following code snippet can be used:
+Since 23.11 possible to remove the hidden text. The following code snippet can be used:
 
 ```python
 
@@ -67,7 +67,7 @@ From 23.11 possible to remove the hidden text, the following code snippet can be
 
 ## What's new in Aspose.PDF 23.8
 
-From 23.8 support to add Incremental Updates detection.
+Since the 23.8 version supports to add Incremental Updates detection.
 
 The function for detecting Incremental Updates in a PDF document has been added. This function returns 'true' if a document was saved with incremental updates; otherwise, it returns 'false'.
 
@@ -167,7 +167,7 @@ Also, 23.8 supports the ways to work with nested checkbox fields. Many fillable 
 
 ## What's new in Aspose.PDF 23.7
 
-From Aspose.PDF 23.7 support to add the shape extraction:
+Since the 23.7 version supports to add the shape extraction:
 
 ```python
 
@@ -234,7 +234,7 @@ Support the ability to set the title of the HTML, Epub page:
 
 ## What's new in Aspose.PDF 23.5
 
-From 23.5 support to add RedactionAnnotation FontSize option. Use the next code snippet to solve this task:
+Since the 23.5 version supports to add RedactionAnnotation FontSize option. Use the next code snippet to solve this task:
 
 ```python
 
@@ -290,7 +290,7 @@ The image will be placed with scaled resolution or u can set FixedWidth or Fixed
 
 ## What's new in Aspose.PDF 23.1
 
-From 23.1 version support to create PrinterMark annotation.
+Since the 23.1 version supports to creation of PrinterMark annotation.
 
 Printer's marks are graphic symbols or text added to a page to assist production personnel in identifying components of a multiple-plate job and maintaining consistent output during production. Examples commonly used in the printing industry include:
 
