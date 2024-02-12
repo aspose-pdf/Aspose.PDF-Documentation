@@ -13,11 +13,11 @@ sitemap:
 
 ## Prerequisites
 
-Following examples tested with:
+The following examples tested with:
 
 * Docker v.25.0.2 and Docker Desktop 4.27.1
 * Visual Studio 2022 Community Edition v.17.0.5
-* .NET 8 SDK is used in the example, provided below.
+* .NET 8 SDK is used in the example provided below.
 * Aspose.PDF.Drawing v.24.01
 
 ## Create sample application for Docker Linux Container
@@ -30,12 +30,12 @@ Following examples tested with:
 
 ### Generate PDF document using ASP.NET Core Web App in Linux container
 
-We will use code from **Complex Example** in this app. For more detailed explanation, please follow [this link](/pdf/net/complex-pdf-example/).
+We will use code from **Complex Example** in this app. Please follow [this link](/pdf/net/complex-pdf-example/) for a more detailed explanation.
 
 1. Create `images` folder in `wwwroot` folder and put image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png)
 1. Create `fonts` folder in `wwwroot` folder and put [Roboto](https://fonts.google.com/specimen/Roboto) fonts there.
 1. Create `samples` folder in `wwwroot` folder and put sample data there.
-1. Replace code in `HomeController.cs` with following snippet (please note that you can have another namespace):
+1. Replace code in `HomeController.cs` with the following snippet (please note that you can have another namespace):
 
 ```cs
 using Aspose.Pdf;
@@ -213,7 +213,7 @@ namespace Docker.LinuxDemo.Controllers
 }
 ```
 
-1. Replace content in `Dockerfile` with following content:
+1. Replace content in `Dockerfile` with the following content:
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
