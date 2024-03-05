@@ -88,3 +88,4 @@ You'll learn different ways to:
 - [Annotations](/pdf/python-net/annotations/) - annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
 - [Working with Tables](/pdf/python-net/working-with-tables/) - insert, decorate table in PDF, extract tabular data.
 - [Working with Forms](/pdf/python-net/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.
+- [Working with Text](/pdf/python-net/working-with-text/) - add, format, search and replace text in PDF.
