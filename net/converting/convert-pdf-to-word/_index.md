@@ -16,35 +16,38 @@ sitemap:
 This article explains how to **convert PDF to Microsoft Word Documents using C#**. It covers these topics.
 
 _Format_: **DOC**
+
 - [C# PDF to DOC](#csharp-pdf-to-doc)
 - [C# Convert PDF to DOC](#csharp-pdf-to-doc)
 - [C# How to convert PDF file to DOC](#csharp-pdf-to-doc)
 
 _Format_: **DOCX**
+
 - [C# PDF to DOCX](#csharp-pdf-to-docx)
 - [C# Convert PDF to DOCX](#csharp-pdf-to-docx)
 - [C# How to convert PDF file to DOCX](#csharp-pdf-to-docx)
 
 _Format_: **Word**
+
 - [C# PDF to Word](#csharp-pdf-to-docx)
 - [C# Convert PDF to Word](#csharp-pdf-to-doc)
 - [C# How to convert PDF file to Word](#csharp-pdf-to-docx)
 
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+The following code snippet also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-## C# PDF to DOC and DOCX Conversion
+## PDF to DOC and DOCX Conversion
 
-One of the most popular features is the PDF to Microsoft Word DOC conversion, which makes content management easier. **Aspose.PDF for .NET** allows you to convert PDF files not only to DOC but also to DOCX format, easily and efficiently.
+One of the most popular features is the PDF to Microsoft Word DOC conversion, which makes content management more effortless. **Aspose.PDF for .NET** allows you to convert PDF files to DOC and DOCX format quickly and efficiently.
 
-## Convert PDF to DOC (Word 97-2003) file
+## Convert PDF to DOC (Microsoft Word 97-2003) file
 
-Convert PDF file to DOC format with ease and full control. Aspose.PDF for .NET is flexible and supports a wide variety of conversions. Converting pages from PDF documents to images, for example, is a very popular feature.
+Convert PDF files to DOC format with ease and complete control. Aspose.PDF for .NET is flexible and supports a wide variety of conversions. Converting pages from PDF documents to images, for example, is a very popular feature.
 
-A conversion that many of our customers have requested is PDF to DOC: converting a PDF file to a Microsoft Word document. Customers want this because PDF files cannot easily be edited, whereas Word documents can. Some companies want their users to be able to manipulate text, tables and images in files that started as PDFs.
+Many of our customers have requested a conversion from PDF to DOC: converting a PDF file to a Microsoft Word document. Customers want this because PDF files cannot easily be edited, whereas Word documents can. Some companies want their users to be able to manipulate text, tables and images in files that started as PDFs.
 
 Keeping alive the tradition of making things simple and understandable, Aspose.PDF for .NET lets you transform a source PDF file into a DOC file with two lines of code. To accomplish this feature, we have introduced an enumeration named SaveFormat and its value .Doc lets you save the source file to Microsoft Word format.
 
-The following C# code snippet shows the process of converting a PDF file into DOC format.
+The following C# code snippet shows converting a PDF file into DOC format.
 
 <a name="csharp-pdf-to-doc"><strong>Steps: Convert PDF to DOC in C#</strong></a>
 
@@ -64,12 +67,13 @@ public static void ConvertPDFtoWord()
 
 ### Using the DocSaveOptions Class
 
-The [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class provides numerous properties that improve the process of converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can specify any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
+The [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class provides numerous properties that improve converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can select any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
 
-- [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) mode is fast and good for preserving the original look of the PDF file, but the editability of the resulting document could be limited. Every visually grouped block of text in the original PDF is converted into a textbox in the output document. This achieves maximal resemblance to the original so the output document looks good, but it consists entirely of textboxes and it could make editing in Microsoft Word quite hard.
+- [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) mode is fast and good for preserving the original look of the PDF file, but the editability of the resulting document could be limited. Every visually grouped text block in the original PDF is converted into a textbox in the output document. This achieves maximal resemblance to the original, so the output document looks good, but it consists entirely of text boxes, which could be edited in Microsoft Word, which is quite challenging.
 - [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) is full recognition mode, where the engine performs grouping and multi-level analysis to restore the original document as per the author's intent while producing an easily editable document. The limitation is that the output document might look different from the original.
-- The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) property can be used to control the relative proximity between textual elements and means that distance is normed by the font size. Larger fonts may have bigger distances between syllables and still be looked at as a single whole. It is specified as a percentage of the font size, for example, 1 = 100%. This means that two characters of 12pt that are placed 12 pt apart are proximal.
-- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) is used to switch on the recognition of bullets during conversion.
+
+The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) property can be used to control the relative proximity between textual elements. It means that distance is normed by the font size. Larger fonts may have bigger spaces between syllables and still be considered a single whole. It is specified as a percentage of the font size; for example, 1 = 100%. This means that two characters of 12pt placed 12 pt apart are proximal.
+- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) is used to switch on bullet recognition during conversion.
 
 ```csharp
 public static void ConvertPDFtoWordDocAdvanced()
@@ -84,7 +88,7 @@ public static void ConvertPDFtoWordDocAdvanced()
         Mode = DocSaveOptions.RecognitionMode.Flow,
         // Set the Horizontal proximity as 2.5
         RelativeHorizontalProximity = 2.5f,
-        // Enable the value to recognize bullets during conversion process
+        // Enable the value to recognize bullets during the conversion process
         RecognizeBullets = true
     };
     pdfDocument.Save(docFile, saveOptions);
@@ -99,11 +103,11 @@ Aspose.PDF for .NET presents you online free application ["PDF to DOC"](https://
 [![Convert PDF to DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
-## Convert PDF to DOCX
+## Convert PDF to DOCX (Microsoft Word 2007-2021) file
 
-Aspose.PDF for .NET API lets you read and convert PDF documents to DOCX using C# and any .NET language. DOCX is a well-known format for Microsoft Word documents whose structure was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and lateral versions but not with the earlier versions of MS Word which support DOC file extensions.
+Aspose.PDF for .NET API lets you read and convert PDF documents to DOCX using C# and any .NET language. DOCX is a well-known format for Microsoft Word documents whose structure was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and later versions but not with earlier versions of MS Word, which support DOC file extensions.
 
-The following C# code snippet shows the process of converting a PDF file into DOCX format.
+The following C# code snippet shows converting a PDF file into DOCX format.
 
 <a name="csharp-pdf-to-docx"><strong>Steps: Convert PDF to DOCX in C#</strong></a>
 
@@ -120,14 +124,15 @@ public static void ConvertPDFtoWord_DOCX_Format()
 }
 ```
 
-The [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.
+## Convert PDF to DOCX in Enhanced Mode
 
-Please take a look over the following code snippet which provides the capability to convert PDF file to DOCX format with C#.
+To get better results of PDF to DOCX conversion, you can use `EnhancedFlow` mode.
+The main difference between Flow and Enhanced Flow is that tables (both with and without borders) are recognized as real tables, not as text with a picture in the background.
+There is also recognition of numbered lists and many other minor things.
 
 ```csharp
 public static void ConvertPDFtoWord_Advanced_DOCX_Format()
-{
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+{    
     // Open the source PDF document
     Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
 
@@ -137,7 +142,7 @@ public static void ConvertPDFtoWord_Advanced_DOCX_Format()
         // Specify the output format as DOCX
         Format = DocSaveOptions.DocFormat.DocX
         // Set other DocSaveOptions params
-        // ....
+        // ...
     };
     // Save document in docx format
     pdfDocument.Save("ConvertToDOCX_out.docx", saveOptions);
@@ -153,11 +158,12 @@ Aspose.PDF for .NET presents you online free application ["PDF to Word"](https:/
 
 {{% /alert %}}
 
-## See Also 
+## See Also
 
-This article also covers these topics. The codes are same as above.
+This article also covers these topics. The codes are the same as above.
 
 _Format_: **Word**
+
 - [C# PDF to Word Code](#csharp-pdf-to-docx)
 - [C# PDF to Word API](#csharp-pdf-to-docx)
 - [C# PDF to Word Programmatically](#csharp-pdf-to-docx)
@@ -168,6 +174,7 @@ _Format_: **Word**
 - [C# PDF to Word Converter](#csharp-pdf-to-docx)
 
 _Format_: **DOC**
+
 - [C# PDF to DOC Code](#csharp-pdf-to-doc)
 - [C# PDF to DOC API](#csharp-pdf-to-doc)
 - [C# PDF to DOC Programmatically](#csharp-pdf-to-doc)
@@ -178,6 +185,7 @@ _Format_: **DOC**
 - [C# PDF to DOC Converter](#csharp-pdf-to-doc)
 
 _Format_: **DOCX**
+
 - [C# PDF to DOCX Code](#csharp-pdf-to-docx)
 - [C# PDF to DOCX API](#csharp-pdf-to-docx)
 - [C# PDF to DOCX Programmatically](#csharp-pdf-to-docx)
