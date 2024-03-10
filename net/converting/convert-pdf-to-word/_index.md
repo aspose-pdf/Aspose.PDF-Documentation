@@ -124,7 +124,7 @@ public static void ConvertPDFtoWord_DOCX_Format()
 }
 ```
 
-## Convert PDF to DOCX in Enhanced Mode
+### Convert PDF to DOCX in Enhanced Mode
 
 To get better results of PDF to DOCX conversion, you can use `EnhancedFlow` mode.
 The main difference between Flow and Enhanced Flow is that tables (both with and without borders) are recognized as real tables, not as text with a picture in the background.
@@ -142,7 +142,7 @@ public static void ConvertPDFtoWord_Advanced_DOCX_Format()
         // Specify the output format as DOCX
         Format = DocSaveOptions.DocFormat.DocX
         // Set other DocSaveOptions params
-        // ...
+        Mode = DocSaveOptions.RecognitionMode.EnhancedFlow
     };
     // Save document in docx format
     pdfDocument.Save("ConvertToDOCX_out.docx", saveOptions);
