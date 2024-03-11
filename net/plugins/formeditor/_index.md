@@ -1,23 +1,23 @@
 ---
-title: Using Aspose.Pdf FormEditor plugin (.NET version)
+title: Using Aspose.PDF FormEditor plugin (.NET version)
 type: docs
-weight: 20
+weight: 30
 url: /net/plugins/formeditor/
-description: How to Add, Update, and Remove Form Fields in PDF Files using Aspose.Pdf Plugins
+description: How to Add, Update, and Remove Form Fields in PDF Files using Aspose.PDF Plugins
 lastmod: "2024-01-24"
 draft: false
 ---
 
-Aspose.Pdf is a powerful and versatile library that allows you to work with PDF documents in various ways. One of the features of Aspose.Pdf is the ability to use plugins that extend its functionality and provide additional capabilities. In this article, we will show you how to use the FormEditor plugin, which can add, update, and remove form fields in PDF files.
+Aspose.PDF is a powerful and versatile library that allows you to work with PDF documents in various ways. One of the features of Aspose.PDF is the ability to use plugins that extend its functionality and provide more capabilities. In this article, we will show you how to use the FormEditor plugin, which can add, update, and remove form fields in PDF files.
 
 Prerequisites
 To follow this tutorial, you will need the following:
 
 * Visual Studio 2019 or later
-* Aspose.Pdf for .NET 24.1 or later
+* Aspose.PDF for .NET 24.1 or later
 * A sample PDF file that contains some form fields
 
-You can download the Aspose.Pdf and Aspose.Pdf.Plugins libraries from the official website or install them using the NuGet Package Manager in Visual Studio.
+You can download the Aspose.PDF and Aspose.PDF.Plugins libraries from the official website or install them using the NuGet Package Manager in Visual Studio.
 
 ## Steps
 
@@ -41,7 +41,7 @@ var plugin = new FormEditor();
 
 ### Step 2: Create an object of the FormEditorAddOptions, FormEditorSetOptions, or FormRemoveSelectedFieldsOptions class, depending on the operation you want to perform
 
-The `FormEditorAddOptions`, `FormEditorSetOptions`, and `FormRemoveSelectedFieldsOptions` classes are helper classes that allow you to specify various options and parameters for the form editing operations, such as the form field types, values, properties, predicates, etc. To use them, you need to create an instance of the appropriate class and pass an array of form field creation options, a predicate and a value, or a predicate, respectively. For example, to add three form fields (a checkbox, a combo box, and a textbox) to the first page of the PDF file, you can use the following code:
+The `FormEditorAddOptions`, `FormEditorSetOptions`, and `FormRemoveSelectedFieldsOptions` classes are helper classes that allow you to specify various options and parameters for the form editing operations, such as the form field types, values, properties, predicates, etc. To use them, you need to create an instance of the appropriate class, and pass an array of form field creation options, a predicate and a value, or a predicate. For example, to add three form fields (a checkbox, a combo box, and a textbox) to the first page of the PDF file, you can use the following code:
 
 ```cs
     // Create options for adding form fields.

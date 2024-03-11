@@ -1,7 +1,7 @@
 ---
-title: Using Aspose.Pdf for .NET with Coldfusion
+title: Using Aspose.PDF PNG plugin (.NET version)
 type: docs
-weight: 20
+weight: 100
 url: /net/plugins/png/
 description: Convert PDF to PNG Images with Aspose.PDF PNG Pluging
 lastmod: "2024-01-24"

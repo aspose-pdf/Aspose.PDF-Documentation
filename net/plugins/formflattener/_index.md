@@ -1,7 +1,7 @@
 ---
-title: Using Aspose.Pdf FormExporter plugin (.NET version)
+title: Using Aspose.PDF FormExporter plugin (.NET version)
 type: docs
-weight: 20
+weight: 50
 url: /net/plugins/formflattener/
 description: How to Flatten Form Fields in PDF Files using Aspose.PDF FormFlattener Plugin
 lastmod: "2024-01-24"

@@ -1,7 +1,7 @@
 ---
-title: Using Aspose.Pdf ImageExtractor plugin (.NET version)
+title: Using Aspose.PDF ImageExtractor plugin (.NET version)
 type: docs
-weight: 20
+weight: 70
 url: /net/plugins/imageextractor/
 description: Extracting Images from PDFs Made Easy with ImageExtractor Plugin
 lastmod: "2024-01-24"

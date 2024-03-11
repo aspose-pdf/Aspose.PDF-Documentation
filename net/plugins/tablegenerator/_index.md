@@ -1,3 +1,13 @@
+---
+title: Using Aspose.PDF Table Generator (.NET version)
+type: docs
+weight: 120
+url: /net/plugins/tablegenerator/
+description: Allows adding/inserting a table on the specified page number of the PDF document.
+lastmod: "2024-01-24"
+draft: false
+---
+
 # Generating Tables in PDF Documents with Aspose.PDF for .NET
 
 Do you need to create dynamic and visually appealing tables in your PDF documents using .NET? Aspose.PDF for .NET provides a powerful TableGenerator class that simplifies the process. In this guide, we'll walk through the steps to generate tables in a PDF document using Aspose.PDF, from creating a demo document to generating tables with the TableGenerator class.

@@ -1,14 +1,14 @@
 ---
-title: Using Aspose.Pdf FormExporter plugin (.NET version)
+title: Using Aspose.PDF FormExporter plugin (.NET version)
 type: docs
-weight: 20
+weight: 40
 url: /net/plugins/formexpoter/
 description: How to Export Form Field Values to CSV Files using Aspose.PDF FormExporter Plugin
 lastmod: "2024-01-24"
 draft: false
 ---
 
-Aspose.PDF is a powerful and versatile library that allows you to work with PDF documents in various ways. One of the features of Aspose.PDF is the ability to use plugins that extend its functionality and provide additional capabilities. In this article, we will show you how to use the FormExporter plugin, which can export form field values from PDF files to CSV files.
+Aspose.PDF is a powerful and versatile library that allows you to work with PDF documents in various ways. One of the features of Aspose.PDF is the ability to use plugins that extend its functionality and provide more capabilities. In this article, we will show you how to use the FormExporter plugin, which can export form field values from PDF files to CSV files.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ var options = new FormExporterValuesToCsvOptions(
 
 ### Step 3: Add the input and output data sources to the options object
 
-The input and output data sources are the PDF files that you want to export from and the CSV file that you want to save to. They can be either file paths or streams. To add them to the options object, you need to use the AddInput and AddOutput methods of the options class. For example, to export from four PDF files named `inputFileNameWithFields-1.pdf`, `inputFileNameWithFields-2.pdf`, `inputFileNameWithFields-3.pdf`, and `inputFileNameWithFields-4`.pdf in the current folder, and save to a CSV file named outputFileName.csv in the same folder, you can use the following code:
+The input and output data sources are the PDF files that you want to export from and the CSV file that you want to save. They can be either file paths or streams. To add them to the options object, you need to use the AddInput and AddOutput methods of the options class. For example, to export from four PDF files named `inputFileNameWithFields-1.pdf`, `inputFileNameWithFields-2.pdf`, `inputFileNameWithFields-3.pdf`, and `inputFileNameWithFields-4`.pdf in the current folder, and save to a CSV file named outputFileName.csv in the same folder, you can use the following code:
 
 ```cs
 // Add input and output files to the options

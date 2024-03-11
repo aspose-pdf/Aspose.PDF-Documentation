@@ -1,9 +1,9 @@
 ---
-title: Using Aspose.Pdf chatGPT for .NET plugin
+title: Using Aspose.PDF Word Converter (.NET version)
 type: docs
-weight: 20
+weight: 140
 url: /net/plugins/word/
-description: You should work with Aspose.Pdf for .NET with Coldfusion using PdfFileInfo Class
+description: Converts PDF document to DOC or DOCX with PdfToWordOptions class.
 lastmod: "2024-01-24"
 draft: true
 ---

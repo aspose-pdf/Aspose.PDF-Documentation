@@ -1,9 +1,9 @@
 ---
-title: Using Aspose.Pdf chatGPT for .NET plugin
+title: Using Aspose.PDF ChatGPT for .NET plugin
 type: docs
-weight: 20
+weight: 10
 url: /net/plugins/chatGPT/
-description: You should work with Aspose.Pdf for .NET with Coldfusion using PdfFileInfo Class
+description: You should work with Aspose.PDF for .NET with Coldfusion using PdfFileInfo Class
 lastmod: "2024-01-24"
 draft: true
 ---

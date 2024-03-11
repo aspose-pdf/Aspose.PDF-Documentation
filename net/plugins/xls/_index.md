@@ -1,9 +1,9 @@
 ---
-title: Using Aspose.PDF Excel Converter for .NET (.NET version)
+title: Using Aspose.PDF Excel plugin (.NET version)
 type: docs
-weight: 20
+weight: 150
 url: /net/plugins/excel/
-description: How to Convert PDF to Excel using Aspose.PDF Plugins
+description: How to Convert PDF to Excel using Aspose.Pdf Plugins
 lastmod: "2024-01-24"
 draft: false
 ---
@@ -22,7 +22,7 @@ To follow this tutorial, you will need the following:
 * Aspose.PDF for .NET 24.1 or later
 * A sample PDF file that you want to convert to Excel format
 
-You can download the Aspose.PDF and Aspose.PDF.Plugins libraries from the official website or install them using the NuGet Package Manager in Visual Studio.
+You can download the Aspose.Pdf and Aspose.Pdf.Plugins libraries from the official website or install them using the NuGet Package Manager in Visual Studio.
 
 ## Steps
 
@@ -60,7 +60,7 @@ options.AddInput(new FileDataSource(inputPath));
 options.AddOutput(new FileDataSource(outputPath));
 ```
 
-You can also set other options, such as the output format, the page range, the worksheet name, etc. using the properties of the PdfToExcelOptions class. For example, to convert the PDF file to the XLSX format, insert a blank column at the first position, and name the worksheet "MySheet", you can use the following code:
+You can also set other options, such as the output format, the page range, the worksheet name, etc. using the properties of the PdfToExcelOptions class. For example, to convert the PDF file to the XLSX format, insert a blank column at the first position, and name the worksheet as "MySheet", you can use the following code:
 
 ```csharp
 // Set the output format to XLSX

@@ -1,7 +1,7 @@
 ---
-title: Using Aspose.Pdf JPEG plugin (.NET version)
+title: Using Aspose.PDF JPEG plugin (.NET version)
 type: docs
-weight: 20
+weight: 80
 url: /net/plugins/jpeg/
 description: How to Convert PDF Pages to JPEG Images using Aspose.PDF Jpeg Plugin
 lastmod: "2024-01-24"

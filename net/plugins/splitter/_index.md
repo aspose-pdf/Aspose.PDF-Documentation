@@ -1,3 +1,13 @@
+---
+title: Using Aspose.PDF Splitter (.NET version)
+type: docs
+weight: 110
+url: /net/plugins/splitter/
+description: Divides PDF document into separate pages
+lastmod: "2024-01-24"
+draft: false
+---
+
 # How to Split a PDF Document into Multiple Files using Aspose.PDF for .NET
 
 Do you have a large PDF document that you'd like to break down into smaller, more manageable files? With Aspose.PDF for .NET, you can easily achieve this task. In this guide, we'll explore the process of splitting a PDF document into multiple files using the Aspose.PDF.Plugins library. Let's dive into the code and walk through the steps.
