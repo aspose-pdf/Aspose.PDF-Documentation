@@ -1,7 +1,7 @@
 ---
 title: Using Aspose.PDF Text Extractor (.NET version)
 type: docs
-weight: 130
+weight: 140
 url: /net/plugins/textextractor/
 description: Extracts text content from the PDF document.
 lastmod: "2024-01-24"
@@ -28,7 +28,7 @@ Now, let's delve into the code and explore how to extract text from a PDF docume
 
 The provided code showcases a `TextExtractorDemo` class with a `Run` method. Let's break down the key steps:
 
-```csharp
+```cs
 using Aspose.Pdf.Plugins;
 
 namespace AsposePluginsNet8.Documentation

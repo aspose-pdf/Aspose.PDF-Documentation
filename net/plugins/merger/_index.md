@@ -1,24 +1,24 @@
 ---
 title: Using Aspose.PDF Merger plugin (.NET version)
 type: docs
-weight: 80
+weight: 100
 url: /net/plugins/merger/
 description: How to Merge Multiple PDF Files into One using Aspose.PDF Merger Plugin
 lastmod: "2024-01-24"
 draft: false
 ---
 
-Aspose.PDF is a powerful and versatile library that allows you to work with PDF documents in various ways. One of the features of Aspose.PDF is the ability to use plugins that extend its functionality and provide additional capabilities. In this article, we will show you how to use the Merger plugin, which can merge multiple PDF files into one and save it as a new file.
+In this article, we will show you how to use the Merger plugin, which can merge multiple PDF files into one and save it as a new file.
 
 ## Prerequisites
 
-To follow this tutorial, you will need the following:
+You will need the following:
 
 * Visual Studio 2019 or later
 * Aspose.PDF for .NET 21.1 or later
 * Three sample PDF files that you want to merge
 
-You can download the Aspose.PDF and Aspose.PDF.Plugins libraries from the official website or install them using the NuGet Package Manager in Visual Studio.
+You can download the Aspose.PDF for .NET library from the official website or install them using the NuGet Package Manager in Visual Studio.
 
 ## Steps
 
@@ -71,4 +71,3 @@ pdfMerger.Process(mergeOptions);
 // Print a confirmation message
 Console.WriteLine("The PDF files have been merged successfully.");
 ```
-

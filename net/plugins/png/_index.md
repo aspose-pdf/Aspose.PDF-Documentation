@@ -1,11 +1,10 @@
 ---
 title: Using Aspose.PDF PNG plugin (.NET version)
 type: docs
-weight: 100
+weight: 110
 url: /net/plugins/png/
-description: Convert PDF to PNG Images with Aspose.PDF PNG Pluging
+description: Convert PDF to PNG Images with Aspose.PDF PNG Plugin
 lastmod: "2024-01-24"
-draft: false
 ---
 
 If you're looking to convert PDF documents into PNG images using .NET, Aspose.PDF for .NET provides a robust solution. In this guide, we'll walk through the essential steps to create an object, add a data source, and run the process method using the Aspose.PDF library.

@@ -1,7 +1,7 @@
 ---
 title: Using Aspose.PDF Table Generator (.NET version)
 type: docs
-weight: 120
+weight: 130
 url: /net/plugins/tablegenerator/
 description: Allows adding/inserting a table on the specified page number of the PDF document.
 lastmod: "2024-01-24"

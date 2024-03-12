@@ -1,24 +1,24 @@
 ---
 title: Using Aspose.PDF FormExporter plugin (.NET version)
 type: docs
-weight: 40
+weight: 50
 url: /net/plugins/formexpoter/
 description: How to Export Form Field Values to CSV Files using Aspose.PDF FormExporter Plugin
 lastmod: "2024-01-24"
 draft: false
 ---
 
-Aspose.PDF is a powerful and versatile library that allows you to work with PDF documents in various ways. One of the features of Aspose.PDF is the ability to use plugins that extend its functionality and provide more capabilities. In this article, we will show you how to use the FormExporter plugin, which can export form field values from PDF files to CSV files.
+In this article, we will show you how to use the FormExporter plugin, which can export form field values from PDF files to CSV files.
 
 ## Prerequisites
 
-To follow this tutorial, you will need the following:
+You will need the following:
 
 * Visual Studio 2019 or later
 * Aspose.PDF for .NET 21.1 or later
 * A sample PDF file that contains some form fields
 
-You can download the Aspose.PDF and Aspose.PDF.Plugins libraries from the official website or install them using the NuGet Package Manager in Visual Studio.
+You can download the Aspose.PDF for .NET library from the official website or install them using the NuGet Package Manager in Visual Studio.
 
 ## Steps
 
@@ -76,21 +76,4 @@ Console.WriteLine(result);
 
 ```
 
-The result will contain information such as the input and output file paths, the status, the message, the exception, etc. For example, if the export process is successful, the result might look like this:
-
-Input: inputFileNameWithFields-1.pdf
-Output: outputFileName.csv
-Status: Success
-Message: Export process completed successfully
-Exception: null
-
-If the export process fails, the result might look like this:
-
-Input: inputFileNameWithFields-1.pdf
-Output: outputFileName.csv
-Status: Failure
-Message: An error occurred while exporting the form field values
-Exception: System.IO.FileNotFoundException: Could not find file 'inputFileNameWithFields-1.pdf'
-
-Conclusion
-In this article, we have shown you how to use the Aspose.PDF plugins to export form field values from PDF files to CSV files. We have explained the basic steps and the code examples for each step. We have also shown you how to access the results of the process and handle any errors. You can use the FormExporter plugin to export any form field values from any PDF file to any CSV file with ease and flexibility. You can also customize the export process using the various options and parameters available in the FormExporterValuesToCsvOptions class
+The result will contain information such as the input and output file paths.

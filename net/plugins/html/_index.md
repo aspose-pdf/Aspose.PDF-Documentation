@@ -1,7 +1,7 @@
 ---
 title: Using Aspose.PDF HTML plugin (.NET version)
 type: docs
-weight: 60
+weight: 70
 url: /net/plugins/html/
 description: How to Convert PDF Files to and from HTML Files using Aspose.PDF PdfHtml Plugin
 lastmod: "2024-01-24"
@@ -9,17 +9,17 @@ draft: false
 ---
 
 
-Aspose.PDF is a powerful and versatile library that allows you to work with PDF documents in various ways. One of the features of Aspose.PDF is the ability to use plugins that extend its functionality and provide more capabilities. In this article, we will show you how to use the PdfHtml plugin, which can convert PDF files to and from HTML files.
+In this article, we will show you how to use the PdfHtml plugin, which can convert PDF files to and from HTML files.
 
 ## Prerequisites
 
-To follow this tutorial, you will need the following:
+You will need the following:
 
 * Visual Studio 2019 or later
 * Aspose.PDF for .NET 21.1 or later
 * A sample PDF file and a sample HTML file
 
-You can download the Aspose.PDF and Aspose.PDF.Plugins libraries from the official website or install them using the NuGet Package Manager in Visual Studio.
+You can download the Aspose.PDF for .NET library from the official website or install them using the NuGet Package Manager in Visual Studio.
 
 ## Steps
 
@@ -56,6 +56,7 @@ To convert an HTML file to a PDF file with default settings, you can use the fol
 // Create a new instance of the HtmlToPdfOptions class
 var options = new HtmlToPdfOptions();
 ```
+
 You can also set other options, such as the output format, the page range, the encoding, the fonts, etc. using the properties of the options classes. For example, to convert a PDF file to an HTML file with UTF-8 encoding and Arial font, you can use the following code:
 
 ```cs
@@ -98,18 +99,4 @@ var result = resultContainer.ResultCollection[0];
 Console.WriteLine(result);
 ```
 
-The result will contain information such as the input and output file paths, the status, the message, the exception, etc. For example, if the conversion is successful, the result might look like this:
-
-Input: C:\Samples\sample.pdf
-Output: C:\Samples\sample.html
-Status: Success
-Message: Conversion completed successfully
-Exception: null
-
-If the conversion fails, the result might look like this:
-
-Input: C:\Samples\sample.pdf
-Output: C:\Samples\sample.html
-Status: Failure
-Message: An error occurred while converting the file
-Exception: System.IO.FileNotFoundException: Could not find file 'C:\Samples\sample.pdf'
+The result will contain information such as output file paths.

@@ -1,7 +1,7 @@
 ---
 title: Using Aspose.PDF Splitter (.NET version)
 type: docs
-weight: 110
+weight: 120
 url: /net/plugins/splitter/
 description: Divides PDF document into separate pages
 lastmod: "2024-01-24"

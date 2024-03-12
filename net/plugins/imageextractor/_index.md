@@ -1,7 +1,7 @@
 ---
 title: Using Aspose.PDF ImageExtractor plugin (.NET version)
 type: docs
-weight: 70
+weight: 80
 url: /net/plugins/imageextractor/
 description: Extracting Images from PDFs Made Easy with ImageExtractor Plugin
 lastmod: "2024-01-24"
@@ -12,14 +12,15 @@ draft: false
 
 If you've ever needed to extract images from a PDF file using .NET, Aspose.PDF for .NET provides a powerful and straightforward solution. In this guide, we'll walk through the basic steps to create an object, add a data source, and run the process method using the Aspose.PDF library.
 
-Before we begin, ensure you have the Aspose.PDF for .NET library installed on your system. If you haven't installed it yet, you can do so via NuGet using the following command:
+## Prerequisites
 
-```bash
-Install-Package Aspose.Pdf
-```
+You will need the following:
 
-Additionally, familiarize yourself with the `ImageExtractorOptions` class, which is essential for configuring the image extraction process. You can find detailed information about this class in the [Aspose.PDF documentation](https://reference.aspose.com/pdf/net/aspose.pdf/ImageExtractorOptions/).
+* Visual Studio 2019 or later
+* Aspose.PDF for .NET 21.1 or later
+* A sample PDF file
 
+You can download the Aspose.PDF for .NET library from the official website or install them using the NuGet Package Manager in Visual Studio.
 Now, let's dive into the code and learn how to use the ImageExtractor plugin.
 
 ## Steps
@@ -47,7 +48,7 @@ imageExtractorOptions.AddInput(new FileDataSource(Path.Combine(@"C:\Samples\", "
 
 Make sure to replace `"C:\Samples\"` and `"sample.pdf"` with the appropriate path and filename of your PDF file.
 
-### 3. **Run Process Method**
+### 3. Run Process Method
 
 The final step is to process the image extraction using the plugin and options:
 
@@ -57,7 +58,7 @@ var resultContainer = plugin.Process(imageExtractorOptions);
 
 The result is stored in the `resultContainer`, which contains the extracted image(s).
 
-### 4. **Handle Extracted Image(s)**
+### 4. Handle Extracted Image(s)
 
 After running the process, you can retrieve the extracted image(s) from the result container. The code below demonstrates saving the first extracted image to a temporary location:
 
@@ -97,7 +98,7 @@ internal static class ImageExtractorDemo
 
         // Get the extracted image from the result container.
         var imageExtracted = resultContainer.ResultCollection[0].ToStream();
-        var someTemporaryPlace = File.OpenWrite("C:\\tmp\\tmp.jpg");
+        var someTemporaryPlace = File.OpenWrite(Path.Combine(@"C:\Samples\","tmp.jpg"));
         imageExtracted.CopyTo(someTemporaryPlace);
     }
 }

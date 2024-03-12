@@ -1,23 +1,24 @@
 ---
 title: Using Aspose.PDF FormEditor plugin (.NET version)
 type: docs
-weight: 30
+weight: 40
 url: /net/plugins/formeditor/
 description: How to Add, Update, and Remove Form Fields in PDF Files using Aspose.PDF Plugins
 lastmod: "2024-01-24"
 draft: false
 ---
 
-Aspose.PDF is a powerful and versatile library that allows you to work with PDF documents in various ways. One of the features of Aspose.PDF is the ability to use plugins that extend its functionality and provide more capabilities. In this article, we will show you how to use the FormEditor plugin, which can add, update, and remove form fields in PDF files.
+In this article, we will show you how to use the FormEditor plugin, which can add, update, and remove form fields in PDF files.
 
-Prerequisites
-To follow this tutorial, you will need the following:
+## Prerequisites
+
+You will need the following:
 
 * Visual Studio 2019 or later
 * Aspose.PDF for .NET 24.1 or later
 * A sample PDF file that contains some form fields
 
-You can download the Aspose.PDF and Aspose.PDF.Plugins libraries from the official website or install them using the NuGet Package Manager in Visual Studio.
+You can download the Aspose.PDF for .NET library from the official website or install them using the NuGet Package Manager in Visual Studio.
 
 ## Steps
 
@@ -124,18 +125,4 @@ var result = resultContainer.ResultCollection[0];
 Console.WriteLine(result);
 ```
 
-The result will contain information such as the input and output file paths, the status, the message, the exception, etc. For example, if the operation is successful, the result might look like this:
-
-Input: C:\Samples\Output\sample_forms.pdf
-Output: C:\Samples\Output\sample_forms2.pdf
-Status: Success
-Message: Form editing operation completed successfully
-Exception: null
-
-If the operation fails, the result might look like this:
-
-Input: C:\Samples\Output\sample_forms.pdf
-Output: C:\Samples\Output\sample_forms2.pdf
-Status: Failure
-Message: An error occurred while editing the form fields
-Exception: System.IO.FileNotFoundException: Could not find file 'C:\Samples\Output\sample_forms.pdf'
+The result will contain information such as output file paths.

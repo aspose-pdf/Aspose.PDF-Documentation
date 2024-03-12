@@ -1,7 +1,7 @@
 ---
 title: Using Aspose.PDF ToC Generator (.NET version)
 type: docs
-weight: 140
+weight: 150
 url: /net/plugins/tocgenerator/
 description: Creates table of content with Aspose.PDF ToC Generator for .NET 
 lastmod: "2024-01-24"
