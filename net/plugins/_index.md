@@ -5,8 +5,7 @@ type: docs
 weight: 130
 url: /net/plugins/
 description: Learn how to use various plug-ins based on Aspose.PDF
-lastmod: "2024-01-07"
-draft: true
+lastmod: "2024-03-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -21,7 +20,7 @@ sitemap:
 * [Splitter for .NET](splitter/) "Transform your PDF experience with ease! Our tool effortlessly divides your PDF documents into individual pages, streamlining your workflow and enhancing document organization. Upgrade now for a more efficient and organized approach to handling PDFs!"
 * [Optimizer for .NET](optimizer/) Enhance your PDF experience with this versatile plug-in, effortlessly rotating and resizing pages with seamless precision. Moreover, enjoy enhanced optimization and compression features to streamline your documents like never before. Try it now for efficient and effortless PDF management!",
 * [HTML for .NET](html/) Effortlessly transform your documents from PDF to HTML or vice versa with ease and precision. Experience the convenience of this powerful tool for seamless document conversions to suit your needs. Try it now to unlock the flexibility of converting between PDF and HTML!",
-* [EXCEL for .NET](xls/) Unlock effortless data transformation with our Plug-in! Seamlessly convert PDF documents into XLSX, CSV, ODS, and more in just a few clicks. Streamline your workflow and save time by harnessing the power of our PDF to Spreadsheet Converter today!
+* [XLS for .NET](xls/) Unlock effortless data transformation with our Plug-in! Seamlessly convert PDF documents into XLSX, CSV, ODS, and more in just a few clicks. Streamline your workflow and save time by harnessing the power of our PDF to Spreadsheet Converter today!
 * [DOC for .NET](doc/) Experience seamless document conversion with our Plug-in! Effortlessly transform PDFs into editable DOC or DOCX files with just a click. Unlock enhanced flexibility and convenience in managing your documents – try our PDF to Word Converter Plug-in now!
 * [JPEG for .NET](jpeg/) Seamlessly transform your PDF document pages into high-quality JPEG images with ease. Experience effortless conversion for better compatibility and versatile usage. Try it now to unlock a world of possibilities for your PDF content!",
 * [PNG for .NET](png/) Effortlessly convert your PDF document pages into vibrant PNG images. Explore newfound versatility and compatibility with this seamless conversion tool. Transform your PDF content into visually stunning PNGs with ease – try it now and elevate your document experience!",
