@@ -46,4 +46,4 @@ This section contains a list of the plugins for the most popular web application
 ### Using Aspose.PDF with other languages
 
 * [Using Aspose.PDF for .NET with Coldfusion](/pdf/net/aspose-pdf-net-for-coldfusion/)
-* [Using Aspose.PDF for .NET with Python](/pdf/net/aspose-pdf-net-for-python/)
+
