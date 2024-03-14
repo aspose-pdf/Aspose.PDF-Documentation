@@ -1,5 +1,5 @@
 ---
-title: Using Aspose.PDF FormEditor plugin (.NET version)
+title: Form Editor
 type: docs
 weight: 40
 url: /net/plugins/formeditor/
@@ -8,7 +8,7 @@ lastmod: "2024-01-24"
 draft: false
 ---
 
-In this article, we will show you how to use the FormEditor plugin, which can add, update, and remove form fields in PDF files.
+In this article, we will show you how to use the Form Editor plugin, which can add, update, and remove form fields in PDF files.
 
 ## Prerequisites
 

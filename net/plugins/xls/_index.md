@@ -1,9 +1,9 @@
 ---
-title: Using Aspose.PDF Excel plugin (.NET version)
+title: XLS Converter
 type: docs
 weight: 20
 url: /net/plugins/xls/
-description: How to Convert PDF to Excel using Aspose.Pdf Plugin
+description: How to Convert PDF to Excel spreadsheets using Aspose.Pdf plugins
 lastmod: "2024-01-24"
 ---
 

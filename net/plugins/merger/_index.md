@@ -1,11 +1,10 @@
 ---
-title: Using Aspose.PDF Merger plugin (.NET version)
+title: Merger
 type: docs
 weight: 100
 url: /net/plugins/merger/
 description: How to Merge Multiple PDF Files into One using Aspose.PDF Merger Plugin
 lastmod: "2024-01-24"
-draft: false
 ---
 
 In this article, we will show you how to use the Merger plugin, which can merge multiple PDF files into one and save it as a new file.

@@ -1,5 +1,5 @@
 ---
-title: Using Aspose.PDF HTML plugin (.NET version)
+title: HTML Converter
 type: docs
 weight: 70
 url: /net/plugins/html/
@@ -7,7 +7,6 @@ description: How to Convert PDF Files to and from HTML Files using Aspose.PDF Pd
 lastmod: "2024-01-24"
 draft: false
 ---
-
 
 In this article, we will show you how to use the PdfHtml plugin, which can convert PDF files to and from HTML files.
 

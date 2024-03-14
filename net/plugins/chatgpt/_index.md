@@ -1,5 +1,5 @@
 ---
-title: Using Aspose.PDF ChatGPT for .NET plugin
+title: ChatGPT
 type: docs
 weight: 30
 url: /net/plugins/chatGPT/
@@ -7,9 +7,9 @@ description: How to generate AI-Powered ChatGPT responses and store them in PDF
 lastmod: "2024-02-24"
 ---
 
-## Generating AI-Powered Chat Responses with PdfChatGpt Plugin
+## Generating AI-Powered Chat Responses with ChatGpt Plugin
 
-Have you ever wanted to enhance your PDF documents with AI-generated chat responses? Look no further! In this guide, we'll walk you through the process of integrating the powerful PdfChatGpt plugin into your C# application. With just a few simple steps, you'll be generating engaging chat responses effortlessly.
+Have you ever wanted to enhance your PDF documents with AI-generated chat responses? Look no further! In this guide, we'll walk you through the process of integrating the powerful ChatGpt plugin into your C# application. With just a few simple steps, you'll be generating engaging chat responses effortlessly.
 
 ## Prerequisites
 

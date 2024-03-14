@@ -1,5 +1,5 @@
 ---
-title: Using Aspose.PDF Table Generator (.NET version)
+title: Table Generator
 type: docs
 weight: 130
 url: /net/plugins/tablegenerator/
@@ -8,38 +8,39 @@ lastmod: "2024-01-24"
 draft: false
 ---
 
-# Generating Tables in PDF Documents with Aspose.PDF for .NET
-
-Do you need to create dynamic and visually appealing tables in your PDF documents using .NET? Aspose.PDF for .NET provides a powerful TableGenerator class that simplifies the process. In this guide, we'll walk through the steps to generate tables in a PDF document using Aspose.PDF, from creating a demo document to generating tables with the TableGenerator class.
+Do you need to create dynamic and visually appealing tables in your PDF documents using .NET? Aspose.PDF for .NET provides a powerful TableGenerator class that simplifies the process. In this chapter, we'll walk through the steps to generate tables in a PDF document using Aspose.PDF Table Generator, from creating a demo document to generating tables with the TableGenerator class.
+Let's dive in and learn how to generate tables step by step.
 
 ## Prerequisites
 
-Before we begin, make sure you have the Aspose.PDF for .NET library installed on your system. If you haven't installed it yet, use the following NuGet command:
+You will need the following:
 
-```bash
-Install-Package Aspose.Pdf
-```
+* Visual Studio 2019 or later
+* Aspose.PDF for .NET 24.3 or later
+* A sample PDF file
 
-Additionally, familiarize yourself with the `TableOptions` class and its functionalities. Detailed information can be found in the [Aspose.PDF documentation](https://reference.aspose.com/pdf/net/aspose.pdf/TableOptions/).
+## Creating a Demo Document
 
-Now, let's dive into the code and explore how to create a demo document and generate tables.
+Before we dive into generating tables, let's create a demo document with empty pages where our tables will be inserted. The `CreateDemoDocument` method in the `TableDemo` class handles this task. Here's how to create a demo document:
 
-## Code Walkthrough
+* Create a new PDF document.
+* Add empty pages to the document.
+* Save the document to the specified file.
 
-The provided code showcases a TableDemo class with methods to create a demo document and generate tables. Let's break down the essential steps:
-
-### 1. Create a Demo Document
-
-The `CreateDemoDocument` method creates a new PDF document with four empty pages. This is achieved by adding empty pages to the document using the `Pages.Add` method.
-
-```csharp
+```cs
+// <summary>
+// Creates a demo document with empty pages.
+//
+// Parameters:
+// - fileName: The path and name of the output file.
+// </summary>
 internal static void CreateDemoDocument(string fileName)
 {
     // Create a new PDF document.
     var document = new Aspose.Pdf.Document();
 
     // Add four empty pages to the document.
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 2; i++)
     {
         document.Pages.Add();
     }
@@ -49,153 +50,215 @@ internal static void CreateDemoDocument(string fileName)
 }
 ```
 
-### 2. Generate Tables
+## Generating Tables
 
-The `TableGeneratorDemo` method demonstrates the generation of tables using the `TableGenerator` class. It creates an instance of `TableGenerator`, defines table options, and adds demo tables to the document.
+Once we have our demo document ready, we can start generating tables using the `TableGenerator` class. The following snippet demonstrates how to generate tables with various content types and formatting options. Here's how to generate tables:
 
-```csharp
-internal static void TableGeneratorDemo()
-{
-    // Create a new instance of the TableGenerator class.
-    var generator = new TableGenerator();
+* Create a new instance of the `TableGenerator` class.
+* Create table options and specify input and output file data sources.
+* Add tables with rows and cells to the options, specifying content and formatting.
+* Process the table generation using the `Process` method and get the result container.
 
-    // Create table options and add demo tables.
-    var options = new TableOptions()
-        .AddDemoTable(1)
-        .AddDemoTable(3);
+### Creating Tables
 
-    // Add input and output file data sources to the options.
-    options.AddInput(new FileDataSource(@"C:\Samples\Results\table-generator-demo.pdf"));
-    options.AddOutput(new FileDataSource(@"C:\Samples\Results\table-generator-demo.pdf"));
+To create a table using Aspose.PDF, follow these steps:
 
-    // Process the table generation and get the result container.
-    var resultContainer = generator.Process(options);
+```cs
+// Create a new instance of the TableGenerator class.
+var generator = new TableGenerator();
 
-    // Print the number of results in the result collection.
-    Console.WriteLine(resultContainer.ResultCollection.Count);
-}
+// Create table options and add demo tables.
+var options = new TableOptions();
+
+// Add input and output file data sources to the options.
+options.AddInput(new FileDataSource(@"C:\Samples\Results\table-generator-demo.pdf"));
+options.AddOutput(new FileDataSource(@"C:\Samples\Results\table-generator-demo.pdf"));
+
+// Add the first table to the options.
+options
+    .InsertPageAfter(1)
+    .AddTable()
 ```
 
-### 3. Helper Class for Demo Tables
+In the code above, we create an instance of `TableOptions` and specify input and output file data sources for the PDF document. We then add a table to the options using the `AddTable` method.
 
-The `Helper` class provides an extension method `AddDemoTable` to simplify the process of adding demo tables to the `TableOptions`. It allows you to specify the page number where the table should be inserted.
+### Adding Content to Tables
+
+Once the table is created, you can populate it with rows and cells containing various types of content, such as text, HTML, images, etc. Here's how to add content to a table:
 
 ```csharp
-internal static class Helper
+options
+    .AddTable()
+        .AddRow()
+            .AddCell()
+                .AddParagraph(new HtmlFragment("<h1>Header 1</h1>")) // Add HTML content to the cell.
+            .AddCell()
+                .AddParagraph(new HtmlFragment("<h2>Header 2</h2>"))
+            .AddCell()
+                .AddParagraph(new HtmlFragment("<h3>Header 3</h3>"));
+```
+
+In this example, we add a row to the table and populate it with cells containing HTML fragments representing headers.
+
+Useful methods:
+
+* **InsertPageAfter**: Inserts a page after the specified page number.
+* **InsertPageBefore**: Inserts a page after the specified page number.
+* **AddTable**: Adds a table to the document.
+* **AddRow**: Adds a row to the table.
+* **AddCell**: Adds cells to the row.
+* **AddParagraph**: Adds content to the cell.
+
+You can add the following types of content as paragraph:
+
+* **HtmlFragment** - a content based on HTML markup
+* **TeXFragment** - a content based on TeX/LaTeX markup
+* **TextFragment** - a simple text content
+* **Image** - graphics
+
+## Perform table generation
+
+After adding the content, we can start creating the table.
+
+```cs
+// Process the table generation and get the result container.
+var resultContainer = generator.Process(options);
+
+// Print the number of results in the result collection.            
+Console.WriteLine(resultContainer.ResultCollection.Count);
+```
+
+The `Process` method performs table generation. This method also can be wrapped with try-catch to handle errors.
+
+Below you can see the full code of example:
+
+```cs
+using Aspose.Pdf;
+using Aspose.Pdf.Plugins;
+using Aspose.Pdf.Text;
+
+namespace AsposePluginsNet8.Documentation
 {
-    // Adds a demo table to the TableOptions.
-    public static TableOptions AddDemoTable(this TableOptions tableOptions, int pageNumber)
+    // <summary>
+    // Represents a class that demonstrates the usage of table generation in Aspose.Pdf.
+    // </summary>
+    internal static class TableDemo
     {
-        return tableOptions
-            .InsertPageAfter(pageNumber)
-            .AddTable()
-                .AddRow()
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Header 1 1"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Header 1 2"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Header 1 3"))
-                .AddRow()
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 1"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 2"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 3"))
-                .AddRow()
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 1"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 3"));
+        // <summary>
+        // Runs the table generation demo.
+        // </summary>
+        internal static void Run()
+        {
+            // Create a demo document and generate tables.
+            CreateDemoDocument(@"C:\Samples\Results\table-generator-demo.pdf");
+            CreateDemoTable();
+        }
+
+        // <summary>
+        // Creates a demo document with four empty pages.
+        //
+        // Parameters:
+        // - fileName: The path and name of the output file.
+        // </summary>
+        internal static void CreateDemoDocument(string fileName)
+        {
+            // Create a new PDF document.
+            var document = new Aspose.Pdf.Document();
+
+            // Add four empty pages to the document.
+            for (int i = 0; i < 2; i++)
+            {
+                document.Pages.Add();
+            }
+
+            // Save the document to the specified file.
+            document.Save(fileName);
+        }
+
+        // <summary>
+        // Generates tables using the TableGenerator class.
+        // </summary>
+        internal static void CreateDemoTable()
+        {
+            // Create a new instance of the TableGenerator class.
+            var generator = new TableGenerator();
+
+            // Create table options and add demo tables.
+            var options = new TableOptions();
+
+            // Add input and output file data sources to the options.
+            options.AddInput(new FileDataSource(@"C:\Samples\Results\table-generator-demo.pdf"));
+            options.AddOutput(new FileDataSource(@"C:\Samples\Results\table-generator-demo.pdf"));
+
+            // Add the first table to the options.
+            options
+                .InsertPageAfter(1)
+                .AddTable()
+                    .AddRow()
+                        .AddCell()
+                            .AddParagraph(new HtmlFragment("<h1>Header 1</h1>"))
+                        .AddCell()
+                            .AddParagraph(new HtmlFragment("<h2>Header 2</h2>"))
+                        .AddCell()
+                            .AddParagraph(new HtmlFragment("<h3>Header 3</h3>"))
+                    .AddRow()
+                        .AddCell()
+                            .AddParagraph(new TeXFragment("{\\small The equation $E=mc^2$, discovered in 1905 by Albert Einstein.}", true))
+                        .AddCell()
+                            .AddParagraph(new TextFragment("Cell 2 2"))
+                        .AddCell()
+                            .AddParagraph(new TextFragment("Cell 2 3"))
+                    .AddRow()
+                        .AddCell()
+                            .AddParagraph(new TextFragment("Cell 3 1a"))
+                            .AddParagraph(new TextFragment("Cell 3 1b"))
+                        .AddCell()
+                            .AddParagraph(new TextFragment("Cell 3 2"))
+                        .AddCell()
+                            .AddParagraph(new TextFragment("Cell 3 3"));
+
+            // Add the second table to the options.
+            options
+                .InsertPageBefore(2)
+                .AddTable()
+                    .AddRow()
+                        .AddCell()
+                            .AddParagraph(new TextFragment("Header 1 1"))
+                        .AddCell()
+                            .AddParagraph(new TextFragment("Header 1 2"))
+                        .AddCell()
+                            .AddParagraph(new TextFragment("Header 1 3"))
+                    .AddRow()
+                        .AddCell()
+                            .AddParagraph(new Image()
+                            {
+                                File = @"C:\Samples\logo.png",
+                                FixWidth = 75,
+                                FixHeight = 75,
+                            })
+                        .AddCell()
+                            .AddParagraph(new Image()
+                            {
+                                File = @"C:\Samples\sample.svg",
+                                FileType = ImageFileType.Svg,
+                                FixWidth = 75,
+                                FixHeight = 75
+                            })
+                        .AddCell()
+                            .AddParagraph(new Image()
+                            {
+                                ImageStream = File.OpenRead(@"C:\Samples\Conversion\Demo.dcm"),
+                                FileType = ImageFileType.Dicom,
+                                FixWidth = 75,
+                                FixHeight = 75
+                            });
+
+            // Process the table generation and get the result container.
+            var resultContainer = generator.Process(options);
+
+            // Print the number of results in the result collection.
+            Console.WriteLine(resultContainer.ResultCollection.Count);
+        }
     }
 }
 ```
-
-## Conclusion
-
-Congratulations! You've learned how to create a demo document and generate tables in a PDF document using Aspose.PDF for .NET. Feel free to integrate these methods into your projects, customize the table content, and explore additional features provided by the Aspose.PDF library.
-
-For more in-depth information and options, refer to the [Aspose.PDF documentation](https://docs.aspose.com/pdf/net/). 
-
-
-# Creating Dynamic Tables in PDF Documents with Aspose.PDF for .NET
-
-Are you looking to enhance your PDF documents with dynamic and visually appealing tables? With Aspose.PDF for .NET and the `Helper` class, you can effortlessly create tables with custom content. In this guide, we'll explore the `AddDemoTable` method provided by the `Helper` class, allowing you to insert a demo table into your PDF using the `TableOptions` class.
-
-## Prerequisites
-
-Before you begin, ensure you have the Aspose.PDF for .NET library installed on your system. If you haven't installed it yet, use the following NuGet command:
-
-```bash
-Install-Package Aspose.Pdf
-```
-
-Additionally, familiarize yourself with the `TableOptions` class and its functionalities. Detailed information can be found in the [Aspose.PDF documentation](https://reference.aspose.com/pdf/net/aspose.pdf/TableOptions/).
-
-Now, let's delve into the code and explore how to use the `AddDemoTable` method to create dynamic tables.
-
-## Code Walkthrough
-
-The provided code showcases the `Helper` class with the `AddDemoTable` method. Let's break down the key steps:
-
-```csharp
-internal static class Helper
-{
-    // Adds a demo table to the TableOptions.
-    public static TableOptions AddDemoTable(this TableOptions tableOptions, int pageNumber)
-    {
-        return tableOptions
-            .InsertPageAfter(pageNumber)
-            .AddTable()
-                .AddRow()
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Header 1 1"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Header 1 2"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Header 1 3"))
-                .AddRow()
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 1"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 2"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 3"))
-                .AddRow()
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 1"))
-                    .AddCell()
-                        .AddParagraph(new TextFragment("Cell 1 3"));
-    }
-}
-```
-
-### 1. AddDemoTable Method
-
-The `AddDemoTable` method is an extension method for `TableOptions` that simplifies the process of adding a demo table. It takes the `TableOptions` instance and the page number where the table should be inserted as parameters.
-
-- **InsertPageAfter**: Inserts a page after the specified page number.
-- **AddTable**: Adds a table to the document.
-- **AddRow**: Adds a row to the table.
-- **AddCell**: Adds cells to the row.
-- **AddParagraph**: Adds text to the cell.
-
-### 2. Utilizing AddDemoTable
-
-To use the `AddDemoTable` method, include it in your code as follows:
-
-```csharp
-// Create an instance of TableOptions
-var tableOptions = new TableOptions();
-
-// Add a demo table to the options on page 1
-tableOptions.AddDemoTable(1);
-```
-
-This will insert a demo table into your PDF document on the specified page, complete with headers and cells.
-
-## Conclusion
-
-Congratulations! You've learned how to dynamically create tables in your PDF documents using the `AddDemoTable` method provided by the `Helper` class. Feel free to customize the content and structure of the table to suit your specific requirements. For further exploration of features and options, refer to the [Aspose.PDF documentation](https://docs.aspose.com/pdf/net/).
-

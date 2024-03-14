@@ -1,5 +1,5 @@
 ---
-title: Using Aspose.PDF Splitter (.NET version)
+title: Splitter
 type: docs
 weight: 120
 url: /net/plugins/splitter/
@@ -8,17 +8,15 @@ lastmod: "2024-01-24"
 draft: false
 ---
 
-# How to Split a PDF Document into Multiple Files using Aspose.PDF for .NET
-
-Do you have a large PDF document that you'd like to break down into smaller, more manageable files? With Aspose.PDF for .NET, you can easily achieve this task. In this guide, we'll explore the process of splitting a PDF document into multiple files using the Aspose.PDF.Plugins library. Let's dive into the code and walk through the steps.
+Do you have a large PDF document that you'd like to break down into smaller, more manageable files? With Aspose.PDF Splitter for .NET, you can easily achieve this task. In this article, we'll explore the process of splitting a PDF document into multiple files using the Aspose.PDF plugin. Let's dive into the code and walk through the steps.
 
 ## Prerequisites
 
-Before we begin, ensure you have the Aspose.PDF for .NET library installed on your system. If you haven't installed it yet, you can do so via NuGet using the following command:
+You will need the following:
 
-```bash
-Install-Package Aspose.Pdf
-```
+* Visual Studio 2019 or later
+* Aspose.PDF for .NET 24.1 or later
+* A sample PDF file
 
 Additionally, familiarize yourself with the `SplitOptions` class and its properties. You can find detailed information about this class in the [API Reference](https://reference.aspose.com/pdf/net/aspose.pdf/SplitOptions/). Note that each output `FileDataSource` represents a single page in the split PDF files.
 
@@ -30,40 +28,31 @@ The code below demonstrates a PDF splitting demo using the Aspose.PDF.Plugins:
 
 ```csharp
 using Aspose.Pdf.Plugins;
+// ...........
 
-namespace AsposePluginsNet8.Documentation
+// Set the input path of the PDF document to be split.
+using var inputStream = File.OpenRead(Path.Combine(@"C:\Samples\", "sample.pdf"));
 
-// Contains a demo method for splitting a PDF document using Aspose.Pdf.Plugins library.
-internal static class SplitterDemo
+// Create a new instance of Splitter.
+var splitter = new Splitter();
+
+// Create options for splitting the document.
+var options = new SplitOptions();
+
+// Add input and output data sources to the options.
+options.AddInput(new StreamDataSource(inputStream));
+
+var document = new Aspose.Pdf.Document(inputStream);
+
+for (int i = 1; i <= document.Pages.Count; i++)
 {
-    // Runs the demo to split a PDF document into two separate documents.
-    internal static void Run()
-    {
-        // Set the input path of the PDF document to be split.
-        using var inputStream = File.OpenRead(Path.Combine(@"C:\Samples\", "sample-43pages.pdf"));
-
-        // Create a new instance of Splitter.
-        var splitter = new Splitter();
-
-        // Create options for splitting the document.
-        var options = new SplitOptions();
-
-        // Add input and output data sources to the options.
-        options.AddInput(new StreamDataSource(inputStream));
-
-        var document = new Aspose.Pdf.Document(inputStream);
-
-        for (int i = 1; i <= document.Pages.Count; i++)
-        {
-            var pageNum = string.Format("{0,3}", i.ToString("D3"));
-            options.AddOutput(new FileDataSource(Path.Combine(@"C:\Samples\", $"splitter_{pageNum}.pdf")));
-        }
-
-        // Process the options to split the document.
-        var result = splitter.Process(options);
-        Console.WriteLine(result);
-    }
+   var pageNum = string.Format("{0,3}", i.ToString("D3"));
+   options.AddOutput(new FileDataSource(Path.Combine(@"C:\Samples\", $"splitter_{pageNum}.pdf")));
 }
+
+// Process the options to split the document.
+var result = splitter.Process(options);
+Console.WriteLine(result);
 ```
 
 Let's break down the key steps:
@@ -87,4 +76,3 @@ Let's break down the key steps:
 5. **Handle Result**
 
    The code prints the result to the console, providing information about the splitting process.
-

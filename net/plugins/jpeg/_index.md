@@ -1,14 +1,14 @@
 ---
-title: Using Aspose.PDF JPEG plugin (.NET version)
+title: JPEG Converter
 type: docs
 weight: 90
 url: /net/plugins/jpeg/
-description: How to Convert PDF Pages to JPEG Images using Aspose.PDF Jpeg Plugin
+description: How to Convert PDF Pages to JPEG Images using Aspose.PDF JPEG Converter
 lastmod: "2024-01-24"
 draft: false
 ---
 
-In this article, we will show you how to use the Jpeg plugin, which can convert PDF pages to JPEG images and save them as separate files.
+In this article, we will show you how to use the JPEG Converter, which can convert PDF pages to JPEG images and save them as separate files.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ You can download the Aspose.PDF for .NET library from the official website or in
 
 ## Steps
 
-The basic steps to convert PDF pages to JPEG images using the Jpeg plugin are:
+The basic steps to convert PDF pages to JPEG images using the JPEG Converter are:
 
 1. Create an object of the Jpeg class
 1. Create an object of the JpegOptions class and add the input and output file paths
