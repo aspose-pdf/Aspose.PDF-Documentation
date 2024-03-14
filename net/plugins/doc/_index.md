@@ -1,40 +1,47 @@
 ---
-title: Using Aspose.PDF DOC Converter (.NET version)
+title: DOC Converter
 type: docs
 weight: 10
 url: /net/plugins/doc/
 description: Converting PDF to Word Made Simple with PdfDoc Plugin
 lastmod: "2024-01-24"
-draft: true
 ---
 
-## Working with Aspose.Pdf.Doc plugin for Microsoft Word Conversion
+This article guides you through using the `Aspose.Pdf DOC Converter for .NET` to convert a PDF document to Microsoft Word format (.doc / .docx).
 
-This chapter guides you through using the Aspose.Pdf plugin for .NET to convert a PDF document to Microsoft Word format (.docx).
+## Prerequisites
 
-Aspose.Pdf provides a powerful set of tools for manipulating and converting PDF files. Here, we'll focus on the `PdfDoc` plugin specifically designed for seamless conversion between PDF and Word formats.
+You will need the following:
+
+* Visual Studio 2019 or later
+* Aspose.PDF for .NET 24.1 or later
+* A sample PDF file that contains some form fields
+
+You can download the Aspose.PDF for .NET library from the official website or install them using the NuGet Package Manager in Visual Studio.
+
+## Steps
 
 ### 1. Setting Up Your Conversion (screenshot of FileDataSource class)
 
 The conversion process involves three main steps: defining input and output files, creating a `PdfDoc` object, and specifying conversion options.
 
-#### 1.1. Defining Data Sources:
+#### 1.1. Defining Data Sources
 
-- **Input File:** We'll use the `FileDataSource` class to specify the location of the PDF file you want to convert. 
+* **Input File:** We'll use the `FileDataSource` class to specify the location of the PDF file you want to convert.
   
 ```csharp
   FileDataSource inputDataSource = new(Path.Combine(@"C:\Samples\", "sample.pdf"));
 ```
 
-    - Replace `"C:\Samples\sample.pdf"` with the actual path to your PDF file.
+  * Replace `"C:\Samples\sample.pdf"` with the actual path to your PDF file.
 
-- **Output File:** Similarly, use another `FileDataSource` object to define the location and filename for the resulting Word document.
+* **Output File:** Similarly, use another `FileDataSource` object to define the location and filename for the resulting Word document.
 
 ```csharp
   FileDataSource outputDataSource = new(Path.Combine(@"C:\Samples\", "sample.docx"));
 ```
 
-  - Replace `"C:\Samples\sample.docx"` with your desired output path and filename.
+* Replace `"C:\Samples\sample.docx"` with your desired output path and filename.
 
 ### 2. Creating the PdfDoc Plugin Object (screenshot of PdfDoc class)
 
@@ -46,13 +53,13 @@ Next, we create an instance of the `PdfDoc` class to perform the conversion.
 
 This object serves as the engine for the conversion process.
 
-### 3. Configuring Conversion Options (screenshot of PdfToDocOptions class)
+### 3. Configuring Conversion Options
 
 The `PdfToDocOptions` class allows you to fine-tune the conversion process. Here's how to set the essential options:
 
-  - **Save Format:** Specify the desired output format for the Word document. In this case, we use `SaveFormat.DocX` to generate a Microsoft Word 2007 or later compatible document (.docx).
+* **Save Format:** Specify the desired output format for the Word document. In this case, we use `SaveFormat.DocX` to generate a Microsoft Word 2007 or later compatible document (.docx).
 
-  - **Conversion Mode:** Define how the plugin interprets the PDF structure during conversion. We'll use `ConversionMode.EnhancedFlow` to optimize the resulting Word document for layout and formatting. 
+* **Conversion Mode:** Define how the plugin interprets the PDF structure during conversion. We'll use `ConversionMode.EnhancedFlow` to optimize the resulting Word document for layout and formatting.
 
 Here's the code snippet for configuring options:
 
@@ -66,7 +73,7 @@ Here's the code snippet for configuring options:
 
 **Adding Input and Output:**
 
-Finally, we associate the previously defined data sources with the conversion options using the `AddInput` and `AddOutput` methods: 
+Finally, we associate the previously defined data sources with the conversion options using the `AddInput` and `AddOutput` methods:
 
 ```csharp
   options.AddInput(inputDataSource);
@@ -98,4 +105,3 @@ Although not essential for basic conversion, you can access the results through 
 
 With this final step, your PDF document will be converted to the specified Word format and saved to the defined output location.
 
-This chapter provided a basic overview of using Aspose.Pdf for PDF to Word conversion. Remember to consult the official Aspose.Pdf documentation for more advanced options and functionalities.

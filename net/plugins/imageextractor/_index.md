@@ -1,5 +1,5 @@
 ---
-title: Using Aspose.PDF ImageExtractor plugin (.NET version)
+title: Image Extractor
 type: docs
 weight: 80
 url: /net/plugins/imageextractor/
@@ -8,9 +8,7 @@ lastmod: "2024-01-24"
 draft: false
 ---
 
-## Introduction
-
-If you've ever needed to extract images from a PDF file using .NET, Aspose.PDF for .NET provides a powerful and straightforward solution. In this guide, we'll walk through the basic steps to create an object, add a data source, and run the process method using the Aspose.PDF library.
+If you've ever needed to extract images from a PDF file using .NET, Aspose.PDF for .NET provides a powerful and straightforward solution. In this guide, we'll walk through the basic steps to create an object, add a data source, and run the process method using the Aspose.PDF Image Extractor.
 
 ## Prerequisites
 
