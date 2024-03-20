@@ -2,7 +2,7 @@
 title: Using Aspose.PDF Optimizer plugin (.NET version)
 type: docs
 weight: 80
-url: /net/plugins/merger/
+url: /net/plugins/optimizer/
 description: How to Optimizing and Manipulating PDF Files with Aspose.PDF Optimizer
 lastmod: "2024-01-24"
 ---
