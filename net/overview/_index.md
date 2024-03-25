@@ -24,16 +24,16 @@ Using this library, you can implement rich capabilities for creating PDF files f
 Compressing PDF documents helps reduce their file size, making them easier to store, share, and transfer over networks. This is particularly important when dealing with large PDF files that contain high-resolution images or graphics. Smaller file sizes result in faster loading times, especially when accessing PDF documents online or via email attachments. Compressed PDFs load quicker, improving user experience and productivity.
 **Aspose.PDF for .NET Library** provides different ways to reduce the size of your PDF, such as:
 
-- shrinking or Compressing All Images
-- removing Unused Objects
-- removing Unused Streams
-- linking Duplicate Streams
-- unembedding Fonts
-- removing or Flattening Annotations
-- removing Form Fields
-- flateDecode Compression
-- store Image in XImageCollection
-- convert a PDF from RGB colorspace to grayscale
+- shrinking or compressing all images
+- removing unused PDF objects
+- removing unused PDF streams
+- linking duplicate PDF streams
+- unembedding fonts
+- removing or flattening annotations
+- removing AcroForm Fields
+- using flateDecode compression
+- store images in XImageCollection (reusable images)
+- convert a PDF from RGB color space to grayscale
 
 Let's check Docs pages for more details: [Optimize PDF](/pdf/net/optimize-pdf/)
 
