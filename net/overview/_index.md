@@ -143,11 +143,13 @@ Printing PDF documents allows users to create physical copies that can be easily
 
 Aspose.PDF for .NET present different ways to print PDF files:
 
-- Printing PDF in .NET Framework
-- Printing PDF to an XPS Printer (Facades)
-- PDF to PostScript conversion, Checking Print Job Status
-- Printing PDF in .NET Core
-- Print PDF document in WPF application
+- Printing PDF using .NET Framework 4.x
+- Printing PDF in .NET Core / .NET
+- Printing PDF to an XPS Printer using Facades (console app)
+- Printing PDF in WPF application
+- various additional operations, like PDF to PostScript conversion, Checking Print Job Status etc.
+
+
 
 Let's check the next section for more details: [Printing PDF documents](/pdf/net/printing-document/).
 
