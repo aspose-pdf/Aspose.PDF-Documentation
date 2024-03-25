@@ -156,7 +156,7 @@ We can also customize the optimization strategy. Currently, the [OptimizeResourc
 
 We have two ways to work with images: reduce image quality and/or change their resolution. In any case, [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions) should be applied. In the following example, we shrink images by reducing [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) to 50.
 
-It is also worth noting that this is an analog of JPEG quality, where value 0 is loss, and value 100 is the best quality.
+`ImageQuality` works similarly to JPEG quality, where value 0 is the lowest and value 100 is the highest.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
