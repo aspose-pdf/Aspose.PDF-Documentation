@@ -19,7 +19,7 @@ Please check the following code snippet in order to add images in Node.js enviro
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file in which the image will be added.
 1. Call `AsposePdf` as Promise and perform the operation for adding image. Receive the object if successful.
 1. Call the function [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/).
@@ -27,7 +27,7 @@ Please check the following code snippet in order to add images in Node.js enviro
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   const image_file = 'Aspose.jpg';
   AsposePdf().then(AsposePdfModule => {
@@ -39,7 +39,7 @@ Please check the following code snippet in order to add images in Node.js enviro
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file in which the image will be added.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/).
@@ -47,7 +47,7 @@ Please check the following code snippet in order to add images in Node.js enviro
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   const image_file = 'Aspose.jpg';

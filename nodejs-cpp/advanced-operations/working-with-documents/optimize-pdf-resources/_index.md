@@ -25,7 +25,7 @@ Please check the following code snippet in order to optimize PDF resources in No
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file for which resources will be optimized.
 1. Call `AsposePdf` as Promise and perform the operation for optimizing file. Receive the object if successful.
 1. Call the function [AsposePdfOptimizeResource](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimizeresource/).
@@ -33,7 +33,7 @@ Please check the following code snippet in order to optimize PDF resources in No
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Optimize resources of PDF-file and save the "ResultPdfOptimizeResource.pdf"*/
@@ -44,7 +44,7 @@ Please check the following code snippet in order to optimize PDF resources in No
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file for which resources will be optimized.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfOptimizeResource](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimizeresource/).
@@ -52,7 +52,7 @@ Please check the following code snippet in order to optimize PDF resources in No
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Optimize resources of PDF-file and save the "ResultPdfOptimizeResource.pdf"*/

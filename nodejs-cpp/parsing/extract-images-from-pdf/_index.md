@@ -19,7 +19,7 @@ Please check the following code snippet to extract images from a PDF file using 
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name for the PDF file from which the image will be extracted.
 1. Call `AsposePdf` as Promise and perform the operation for extracting image. Receive the object if successful.
 1. Call the function [AsposePdfExtractImage](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextractimage/).
@@ -27,7 +27,7 @@ Please check the following code snippet to extract images from a PDF file using 
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Extract image from a PDF-file with template "ResultPdfExtractImage{0:D2}.jpg" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -38,7 +38,7 @@ Please check the following code snippet to extract images from a PDF file using 
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name for the PDF file from which the image will be extracted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfExtractImage](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextractimage/).
@@ -46,7 +46,7 @@ Please check the following code snippet to extract images from a PDF file using 
 
 ```js
 
-    import AsposePdf from './/AsposePDFforNode.mjs';
+    import AsposePdf from 'asposepdfnodejs';
     const AsposePdfModule = await AsposePdf();
     const pdf_file = 'Aspose.pdf';
     /*Extract image from a PDF-file with template "ResultPdfExtractImage{0:D2}.jpg" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/

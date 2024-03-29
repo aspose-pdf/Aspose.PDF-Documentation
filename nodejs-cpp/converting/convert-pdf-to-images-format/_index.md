@@ -35,7 +35,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
 1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToJpg](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestojpg/).
@@ -43,7 +43,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to JPG with template "ResultPdfToJpg{0:D2}.jpg" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -54,7 +54,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToJpg](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestojpg/).
@@ -62,7 +62,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to JPG with template "ResultPdfToJpg{0:D2}.jpg" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -85,7 +85,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
 1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToTiff](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestotiff/).
@@ -93,7 +93,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to TIFF with template "ResultPdfToTiff{0:D2}.tiff" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -104,7 +104,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToTiff](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestotiff/).
@@ -112,7 +112,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to TIFF with template "ResultPdfToTiff{0:D2}.tiff" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -137,7 +137,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
 1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToPng](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestopng/).
@@ -145,7 +145,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to PNG with template "ResultPdfToPng{0:D2}.png" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -156,7 +156,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToPng](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestopng/).
@@ -164,7 +164,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to PNG with template "ResultPdfToPng{0:D2}.png" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -191,7 +191,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
 1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToSvg](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvg/).
@@ -199,7 +199,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to SVG and save the "ResultPdfToSvg.svg"*/
@@ -210,7 +210,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToSvg](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvg/).
@@ -218,7 +218,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to SVG and save the "ResultPdfToSvg.svg"*/
@@ -233,7 +233,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
 1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToSvgZip](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvgzip/).
@@ -241,7 +241,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to SVG(zip) and save the "ResultPdfToSvgZip.zip"*/
@@ -252,7 +252,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToSvgZip](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvgzip/).
@@ -260,7 +260,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*convert a PDF-file to SVG zip and save the "ResultPdfToSvgZip.zip"*/
@@ -275,7 +275,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
 1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToDICOM](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestodicom/).
@@ -283,7 +283,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to DICOM with template "ResultPdfToDICOM{0:D2}.dcm" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -294,7 +294,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToDICOM](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestodicom/).
@@ -302,7 +302,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to DICOM with template "ResultPdfToDICOM{0:D2}.dcm" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -317,7 +317,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
 1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfPagesToBmp](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestobmp/).
@@ -325,7 +325,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to BMP with template "ResultPdfToBmp{0:D2}.bmp" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/
@@ -336,7 +336,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToBmp](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestobmp/).
@@ -344,7 +344,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to BMP with template "ResultPdfToBmp{0:D2}.bmp" ({0}, {0:D2}, {0:D3}, ... format page number), resolution 150 DPI and save*/

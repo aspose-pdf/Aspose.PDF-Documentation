@@ -25,7 +25,7 @@ If you want to encrypt PDF file try the next code snippet:
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be encrypted.
 1. Call `AsposePdf` as Promise and perform the operation for encrypting file. Receive the object if successful.
 1. Call the [AsposePdfEncrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfencrypt/) function. 
@@ -34,7 +34,7 @@ If you want to encrypt PDF file try the next code snippet:
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Encrypt a PDF-file with passwords "user" and "owner", and save the "ResultEncrypt.pdf"*/
@@ -63,7 +63,7 @@ There are various [encrypt algorithms](https://reference.aspose.com/pdf/cpp/name
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file that will change the encrypted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the [AsposePdfEncrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfencrypt/) function. 
@@ -72,7 +72,7 @@ There are various [encrypt algorithms](https://reference.aspose.com/pdf/cpp/name
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Encrypt a PDF-file with passwords "user" and "owner", and save the "ResultEncrypt.pdf"*/

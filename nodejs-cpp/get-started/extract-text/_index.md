@@ -15,13 +15,13 @@ sitemap:
 
 Extracting text from PDF isn’t easy. Only a few PDF readers can extract text from PDF images or scanned PDFs. But **Aspose.PDF for Node.js via C++** tool allows you to easily extract text from all PDF file in the Node.js environment. 
 
-This code demonstrates how to use the AsposePDFforNode.cjs module to extract text from a specified PDF file and log either the extracted text or encountered errors.
+This code demonstrates how to use the AsposePDFforNode.js module to extract text from a specified PDF file and log either the extracted text or encountered errors.
 
 Check the code snippets and follow the steps to extract text from your PDF:
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name for the PDF file from which the text will be extracted.
 1. Call `AsposePdf` as Promise and perform the operation for extracting text. Receive the object if successful.
 1. Call the function [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).
@@ -29,7 +29,7 @@ Check the code snippets and follow the steps to extract text from your PDF:
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Extract text from a PDF-file*/
@@ -40,7 +40,7 @@ Check the code snippets and follow the steps to extract text from your PDF:
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name for the PDF file from which the text will be extracted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).
@@ -48,7 +48,7 @@ Check the code snippets and follow the steps to extract text from your PDF:
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Extract text from a PDF-file*/

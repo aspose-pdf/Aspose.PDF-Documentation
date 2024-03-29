@@ -33,11 +33,11 @@ It is possible to use **parameters** related to the signature:
 - signatureAppearance
 - fileNameResult 
 
-This code snippet utilizes the AsposePDFforNode.cjs module in a Node.js environment to digitally sign a PDF file using the PKCS7 signature.
+This code snippet utilizes the AsposePDFforNode.js module in a Node.js environment to digitally sign a PDF file using the PKCS7 signature.
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file to be signed, the PKCS7 key file, and the signature appearance image file. The certificate and image can be placed anywhere on your file system from where you upload them for PDF signing.
 1. Call `AsposePdf` as Promise and perform the operation for signing file. Receive the object if successful.
 1. Call the [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) function. 
@@ -46,7 +46,7 @@ This code snippet utilizes the AsposePDFforNode.cjs module in a Node.js environm
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Key PKCS7*/
@@ -61,7 +61,7 @@ This code snippet utilizes the AsposePDFforNode.cjs module in a Node.js environm
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file to be signed, the PKCS7 key file, and the signature appearance image file.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) function. 
@@ -70,7 +70,7 @@ This code snippet utilizes the AsposePDFforNode.cjs module in a Node.js environm
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Key PKCS7*/

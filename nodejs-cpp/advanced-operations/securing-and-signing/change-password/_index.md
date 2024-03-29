@@ -18,7 +18,7 @@ If you want to change the password of a PDF file from "owner" to "newowner" or "
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will change the password.
 1. Call `AsposePdf` as Promise and perform the operation for changing password. Receive the object if successful.
 1. Call the function [AsposePdfChangePassword](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfchangepassword/).
@@ -27,7 +27,7 @@ If you want to change the password of a PDF file from "owner" to "newowner" or "
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_encrypt_file = 'ResultEncrypt.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Change passwords of the PDF-file from "owner" to "newowner" and save the "ResultPdfChangePassword.pdf"*/
@@ -45,7 +45,7 @@ Please note that if the password is an empty string:
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file that will change the password.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfChangePassword](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfchangepassword/).
@@ -54,7 +54,7 @@ Please note that if the password is an empty string:
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_encrypt_file = 'ResultEncrypt.pdf';
   /*Change passwords of the PDF-file from "owner" to "newowner" and save the "ResultPdfChangePassword.pdf"*/

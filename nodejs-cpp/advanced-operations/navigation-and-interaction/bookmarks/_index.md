@@ -18,7 +18,7 @@ Please check the following code snippet in order to delete bookmarks from a PDF 
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file from which the bookmarks will be removed.
 1. Call `AsposePdf` as Promise and perform the operation for removing bookmark. Receive the object if successful.
 1. Call the function [AsposePdfDeleteBookmarks](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletebookmarks/).
@@ -26,7 +26,7 @@ Please check the following code snippet in order to delete bookmarks from a PDF 
 
 ```js
 
-    const AsposePdf = require('.//AsposePDFforNode.cjs');
+    const AsposePdf = require('asposepdfnodejs');
     const pdf_file = 'Aspose.pdf';
     AsposePdf().then(AsposePdfModule => {
         /*Delete bookmarks from a PDF-file and save the "ResultPdfDeleteBookmarks.pdf"*/
@@ -37,7 +37,7 @@ Please check the following code snippet in order to delete bookmarks from a PDF 
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the AsposePDFforNode.js module.
 1. Specify the name of the PDF file from which the bookmarks will be removed.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfDeleteBookmarks](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletebookmarks/).
@@ -45,7 +45,7 @@ Please check the following code snippet in order to delete bookmarks from a PDF 
 
 ```js
 
-    import AsposePdf from './/AsposePDFforNode.mjs';
+    import AsposePdf from 'asposepdfnodejs';
     const AsposePdfModule = await AsposePdf();
     const pdf_file = 'Aspose.pdf';
     /*Delete bookmarks from a PDF-file and save the "ResultPdfDeleteBookmarks.pdf"*/
