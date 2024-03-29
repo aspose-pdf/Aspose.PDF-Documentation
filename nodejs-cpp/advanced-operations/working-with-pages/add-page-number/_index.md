@@ -17,7 +17,7 @@ Please check the following code snippet in order to add a page numbers into PDF 
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file in which the page numbers will be added.
 1. Call `AsposePdf` as Promise and perform the operation for adding page numbers. Receive the object if successful.
 1. Call the function [AsposePdfAddPageNum](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddpagenum/).
@@ -25,7 +25,7 @@ Please check the following code snippet in order to add a page numbers into PDF 
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Add page number to a PDF-file save the "ResultAddPageNum.pdf"*/
@@ -36,7 +36,7 @@ Please check the following code snippet in order to add a page numbers into PDF 
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file in which the page numbers will be added.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfAddPageNum](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddpagenum/).
@@ -44,7 +44,7 @@ Please check the following code snippet in order to add a page numbers into PDF 
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Add page number to a PDF-file and save the "ResultAddPageNum.pdf"*/

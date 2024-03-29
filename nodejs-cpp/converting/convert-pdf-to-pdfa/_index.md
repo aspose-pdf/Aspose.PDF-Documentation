@@ -29,7 +29,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
 1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/).
@@ -37,7 +37,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to PDF/A(1A) and save the "ResultConvertToPDFA.pdf"*/
@@ -49,7 +49,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be converted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/).
@@ -57,7 +57,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to PDF/A(1A) and save the "ResultConvertToPDFA.pdf"*/
