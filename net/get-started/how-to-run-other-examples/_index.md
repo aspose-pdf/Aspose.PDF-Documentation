@@ -5,8 +5,6 @@ type: docs
 weight: 40
 url: /net/how-to-run-other-examples/    
 description: This page demonstrates guidelines that will be helpful the following requirements before downloading and running the examples.
-aliases:
-    - /net/how-to-run-the-examples/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
