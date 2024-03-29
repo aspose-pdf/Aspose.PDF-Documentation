@@ -2,7 +2,7 @@
 title: Key Features of Aspose.PDF
 linktitle: Key Features
 type: docs
-weight: 20
+weight: 80
 url: /net/key-features/
 description: Aspose.PDF for .NET demonstrates its general features. Its shows the supported PDF versions, and all the manipulations we can do with PDF.
 lastmod: "2021-06-05"

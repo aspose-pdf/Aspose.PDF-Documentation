@@ -18,7 +18,7 @@ Investigate the most basic features and requirements of the Aspose.PDF for .NET 
 
 To find out more about Aspose.PDF, select the appropriate section:
 
-[Why Aspose.PDF](/pdf) – describes the reasons why it might be better to use Aspose products rather than other products, for example, Microsoft Office Automation or Open XML SDK
+[Why Aspose.PDF](/pdf/net/why-aspose-pdf/) – describes the reasons why it might be better to use Aspose products rather than other products, for example, Microsoft Office Automation or Open XML SDK
 
 [Installation](/pdf/net/installation/) – provides information on how to install Aspose.PDF
 

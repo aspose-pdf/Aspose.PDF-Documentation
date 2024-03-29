@@ -2,7 +2,7 @@
 title: How to run other examples
 linktitle: How to run other examples
 type: docs
-weight: 40
+weight: 50
 url: /net/how-to-run-other-examples/    
 description: This page demonstrates guidelines that will be helpful the following requirements before downloading and running the examples.
 lastmod: "2021-06-05"
