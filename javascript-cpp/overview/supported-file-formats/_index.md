@@ -18,7 +18,7 @@ The following table indicates the file formats that Aspose.PDF for JavaScript vi
 |[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
 |[PDF/A](https://docs.fileformat.com/pdf/a/)|PDF/A Versions |{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
 |[EPUB](https://docs.fileformat.com/ebook/epub/)|Ebook file format| |{{< emoticons/tick >}}| |
-|[TeX](https://docs.fileformat.com/page-description-language/tex/)|LaTex typesetting file format| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[TeX](https://docs.fileformat.com/page-description-language/tex/)|LaTex typesetting file format| |{{< emoticons/tick >}}| |
 |[SVG](https://docs.fileformat.com/page-description-language/svg/)|Scalable Vector Graphics (An XML-based vector image format)| |{{< emoticons/tick >}}| |
 |[SVGZ](https://docs.fileformat.com/image/svgz/)|SVGZ File Format| |{{< emoticons/tick >}}| |
 |[XPS](https://docs.fileformat.com/page-description-language/xps/)|XPS Documents| |{{< emoticons/tick >}}| |
@@ -31,7 +31,7 @@ The following table indicates the file formats that Aspose.PDF for JavaScript vi
 |[BMP](https://docs.fileformat.com/image/bmp/)|Saves the document in BMP Format| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Saves the document as Single or Multi-Page TIFF Image| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
 |Grayscale|Saves the document as Grayscale| |{{< emoticons/tick >}}| |
-|[Text](https://docs.fileformat.com/word-processing/txt/)|Save the document int Text Format| |{{< emoticons/tick >}}| |
+|[Text](https://docs.fileformat.com/word-processing/txt/)|Save the document int Text Format| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
 |[DICOM](https://docs.fileformat.com/image/dicom/)|Saves the document as DICOM Image| |{{< emoticons/tick >}}| |
 |[CSV](https://docs.fileformat.com/spreadsheet/csv/)|Saves the document as CSV| |{{< emoticons/tick >}}| |
 
