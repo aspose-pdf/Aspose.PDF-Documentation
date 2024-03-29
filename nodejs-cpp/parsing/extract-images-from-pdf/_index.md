@@ -38,7 +38,7 @@ Please check the following code snippet to extract images from a PDF file using 
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name for the PDF file from which the image will be extracted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfExtractImage](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextractimage/).

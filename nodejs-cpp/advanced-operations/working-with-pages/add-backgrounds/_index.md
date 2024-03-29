@@ -37,7 +37,7 @@ Please check the following code snippet in order to add a background image in No
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file in which the background image will be added.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddbackgroundimage/).

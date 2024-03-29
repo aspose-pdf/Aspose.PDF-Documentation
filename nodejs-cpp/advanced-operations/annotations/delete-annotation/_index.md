@@ -35,7 +35,7 @@ Please check the following code snippet in order to delete annotations from a PD
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file from which the annotation will be removed.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/).

@@ -36,7 +36,7 @@ Please check following code snippet in order to repair PDF file in Node.js envir
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be repaired.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfRepair](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrepair/).

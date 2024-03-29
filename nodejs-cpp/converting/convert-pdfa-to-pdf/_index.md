@@ -37,7 +37,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF/A file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfAConvertToPDF](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfaconverttopdf/).

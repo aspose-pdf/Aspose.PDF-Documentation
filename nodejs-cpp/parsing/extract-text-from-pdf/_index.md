@@ -42,7 +42,7 @@ Check the code snippets and follow the steps to extract text from your PDF:
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name for the PDF file from which the text will be extracted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).

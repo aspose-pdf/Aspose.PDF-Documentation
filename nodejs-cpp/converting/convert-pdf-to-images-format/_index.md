@@ -54,7 +54,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToJpg](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestojpg/).
@@ -104,7 +104,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToTiff](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestotiff/).
@@ -156,7 +156,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToPng](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestopng/).
@@ -210,7 +210,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToSvg](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvg/).
@@ -252,7 +252,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToSvgZip](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestosvgzip/).
@@ -294,7 +294,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToDICOM](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestodicom/).
@@ -336,7 +336,7 @@ Please check the following code snippet in order to convert in Node.js environme
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be converted
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfPagesToBmp](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfpagestobmp/).

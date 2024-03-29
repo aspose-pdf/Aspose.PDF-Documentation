@@ -40,7 +40,7 @@ Please check the following code snippet in order to split two PDFs in Node.js en
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF files which will be split.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/).

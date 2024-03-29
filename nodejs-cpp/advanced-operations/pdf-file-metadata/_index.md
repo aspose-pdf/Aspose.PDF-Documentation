@@ -61,7 +61,7 @@ Please check the following code snippet in order to get PDF file information in 
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file from which the information will be extracted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfGetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/).
@@ -130,7 +130,7 @@ Please check the following code snippet in order to get fonts from a PDF file in
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file from which the fonts will be extracted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/).
@@ -187,7 +187,7 @@ Possible to set:
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file where the information will be set.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfSetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfsetinfo/).
@@ -233,7 +233,7 @@ Please check the following code snippet in order to remove metadata from PDF in 
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file from which the information will be removed.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).

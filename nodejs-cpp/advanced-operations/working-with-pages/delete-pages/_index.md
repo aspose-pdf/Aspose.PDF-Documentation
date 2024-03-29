@@ -48,7 +48,7 @@ Please check the following code snippet in order to delete PDF pages in Node.js 
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file from which pages will be deleted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfDeletePages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletepages/). This function helps to remove the specified pages from the PDF file. The operation is determined by the numPages variable, which can be a string with page intervals (e.g., "7, 20, 22, 30-32, 33, 36-40, 46"), an array of page numbers, or a single page number.

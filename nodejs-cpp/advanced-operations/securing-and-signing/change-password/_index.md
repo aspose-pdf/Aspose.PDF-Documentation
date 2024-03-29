@@ -45,7 +45,7 @@ Please note that if the password is an empty string:
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will change the password.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfChangePassword](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfchangepassword/).

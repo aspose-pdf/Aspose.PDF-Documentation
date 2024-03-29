@@ -35,7 +35,7 @@ Please check the following code snippet in order to delete attachments from a PD
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.js module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file from which the attachments will be removed.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/).
