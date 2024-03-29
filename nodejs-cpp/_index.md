@@ -7,7 +7,7 @@ weight: 68
 url: /nodejs-cpp/
 is_root: true
 lastmod: "2023-11-16"
-description: Learn to use Aspose.PDF for Node.js to create applications for PDF documents processing in Web browser.
+description: Learn to use Aspose.PDF for Node.js to create applications for PDF documents processing in Node.js environment.
 sitemap:
     changefreq: "weekly"
     priority: 0.7

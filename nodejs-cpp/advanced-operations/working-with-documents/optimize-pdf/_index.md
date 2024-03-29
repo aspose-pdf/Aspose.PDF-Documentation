@@ -13,9 +13,9 @@ sitemap:
 
 ## Optimize PDF Document
 
-Toolkit by Aspose.PDF for Node.js via C++ allows you to optimize PDF content for the Web. 
+Toolkit by Aspose.PDF for Node.js via C++ allows you to optimize PDF content for the Node.js environment. 
 
-Optimization, or linearization for Web, refers to the process of making a PDF file suitable for online browsing using a web browser.
+Optimization, or linearization refers to the process of making a PDF file suitable for online browsing using a web browser.
 
 In case you want to optimize PDF, you can use [AsposePdfOptimize](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimize/) function. 
 Please check the following code snippet in order to optimize PDF files in Node.js environment.
