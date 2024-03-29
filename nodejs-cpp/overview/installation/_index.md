@@ -20,5 +20,9 @@ To install and use Aspose.PDF for Node.js via C++ from a -*ZIP archive, follow t
 - extract the files from the ZIP archive
 - rename your *.lic file to 'aspose.lic' if it exists
 
+To install and use Aspose.PDF for Node.js via C++ from NPMJS, follow the following instructions:
+* npm i asposepdfnodejs
+* rename your *.lic file to ‘aspose.lic’ if it exists
+
 Follow the link for [Direct Download](https://releases.aspose.com/pdf/nodejscpp/)
 
