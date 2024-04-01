@@ -2,7 +2,7 @@
 title: Basics of Aspose.PDF DOM API
 linktitle: Basics of DOM API
 type: docs
-weight: 10
+weight: 140
 url: /net/basics-of-dom-api/
 description: Aspose.PDF for .NET also uses the idea of DOM to represent the structure of a PDF document in terms of objects. 
 lastmod: "2021-06-05"
@@ -13,7 +13,7 @@ sitemap:
 
 ## Introduction to the DOM API
 
-Document Object Model (DOM) is a form of representation of structured documents as an object-oriented model. DOM is the official World Wide Web Consortium (W3C) standard for representing structured document s in a platform and language-neutral manner.
+Document Object Model (DOM) is a form of representation of structured documents as an object-oriented model. DOM is the official World Wide Web Consortium (W3C) standard for representing structured documents in a platform and language-neutral manner.
 
 In simple words, DOM is a tree of objects that represent the structure of some document. Aspose.PDF for .NET also uses the idea of DOM to represent the structure of a PDF document in terms of objects. However, the aspects of the DOM (such as its Elements) are manipulated within the syntax of the programming language in use. The public interface of a DOM is specified in its application programming interface (API).
 

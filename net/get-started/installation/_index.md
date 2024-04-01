@@ -2,7 +2,7 @@
 title: How to Install Aspose.PDF for .NET
 linktitle: Installation
 type: docs
-weight: 40
+weight: 20
 url: /net/installation/
 description: This section shows a product description and instructions for installing Aspose.PDF for .Net on your own, as well as using NuGet.
 lastmod: "2021-06-05"
@@ -85,10 +85,24 @@ If you have already referenced the component through NuGet, follow these steps t
 Follow these steps to reference the component using the package manager GUI:
 
 - Open you .NET application in Visual Studio.
+
 - From the Project menu select **Manage NuGet Packages**.
+
+![Installation_step](../images/install_step.png)
+
 - Select **Broswe** tab.
+
+![Installation_step1](../images/install_step1.png)
+
 - Type Aspose.PDF into the search box to find Aspose.PDF for .NET.
+
 - Click Install/Update next to the latest version of Aspose.PDF for .NET.
+
+![Installation_step2](../images/install_step2.png)
+
+- And click Accept in the pop up window.
+
+![Installation_step3](../images/install_step3.png)
 
 ![Installation](../images/install.gif)
 

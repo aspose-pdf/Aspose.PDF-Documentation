@@ -2,7 +2,7 @@
 title: Overview of Aspose.PDF.Drawing for .NET
 linktitle: PDF.Drawing version
 type: docs
-weight: 20
+weight: 130
 url: /net/drawing/
 lastmod: "2023-12-21"
 description: Overview of key features and advantages of Aspose.PDF.Drawing for .NET library.
