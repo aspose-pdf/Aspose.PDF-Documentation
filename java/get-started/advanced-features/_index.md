@@ -2,7 +2,7 @@
 title: Advanced Features
 linktitle: Advanced Features
 type: docs
-weight: 80
+weight: 120
 url: /java/advanced-features/
 description: This section shows how you can use LaTeX Tags in PDF document with Aspose.PDF for Java.
 lastmod: "2022-01-11"

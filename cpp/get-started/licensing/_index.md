@@ -2,7 +2,7 @@
 title: Aspose PDF License
 linktitle: Licensing and limitations
 type: docs
-weight: 50
+weight: 90
 url: /cpp/licensing/
 description: Aspose. PDF for C++ invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
 lastmod: "2021-11-08"
