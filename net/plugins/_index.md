@@ -15,7 +15,7 @@ sitemap:
 
 ### Plugins integrated into the library
 
-* [ChatGPT for .NET](chatGPT/) This plug-in allows sending requests as messages and receiving responses saved as PDFs or via the ChatCompletion object. It seamlessly integrates text extraction from added files into the chat message collection.",
+* [ChatGPT for .NET](chatgpt/) This plug-in allows sending requests as messages and receiving responses saved as PDFs or via the ChatCompletion object. It seamlessly integrates text extraction from added files into the chat message collection.",
 * [Merger for .NET](merger/) Experience seamless document consolidation with our plug-in! Effortlessly merge multiple PDF documents into a single, unified file, simplifying your document management and organizational tasks.",
 * [Splitter for .NET](splitter/) "Transform your PDF experience with ease! Our tool effortlessly divides your PDF documents into individual pages, streamlining your workflow and enhancing document organization. Upgrade now for a more efficient and organized approach to handling PDFs!"
 * [Optimizer for .NET](optimizer/) Enhance your PDF experience with this versatile plug-in, effortlessly rotating and resizing pages with seamless precision. Moreover, enjoy enhanced optimization and compression features to streamline your documents like never before. Try it now for efficient and effortless PDF management!",

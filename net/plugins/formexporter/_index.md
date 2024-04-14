@@ -8,7 +8,7 @@ lastmod: "2024-01-24"
 draft: false
 ---
 
-In this article, we will show you how to use the Form Exporter plugin, which can export form field values from PDF files to CSV files.
+In this article, we will show you how to use the [Form Exporter plugin](https://products.aspose.org/pdf/net/form-exporter/), which can export form field values from PDF files to CSV files.
 
 ## Prerequisites
 

@@ -7,7 +7,7 @@ description: How to Merge Multiple PDF Files into One using Aspose.PDF Merger Pl
 lastmod: "2024-01-24"
 ---
 
-In this article, we will show you how to use the Merger plugin, which can merge multiple PDF files into one and save it as a new file.
+In this article, we will show you how to use the [Merger plugin](https://products.aspose.org/pdf/net/merger/), which can merge multiple PDF files into one and save it as a new file.
 
 ## Prerequisites
 

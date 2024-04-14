@@ -8,7 +8,7 @@ lastmod: "2024-01-24"
 draft: false
 ---
 
-Do you need to create dynamic and visually appealing tables in your PDF documents using .NET? Aspose.PDF for .NET provides a powerful TableGenerator class that simplifies the process. In this chapter, we'll walk through the steps to generate tables in a PDF document using Aspose.PDF Table Generator, from creating a demo document to generating tables with the TableGenerator class.
+Do you need to create dynamic and visually appealing tables in your PDF documents using .NET? Aspose.PDF for .NET provides a powerful TableGenerator class that simplifies the process. In this chapter, we'll walk through the steps to generate tables in a PDF document using [Aspose.PDF Table Generator](https://products.aspose.org/pdf/net/table-generator/), from creating a demo document to generating tables with the TableGenerator class.
 Let's dive in and learn how to generate tables step by step.
 
 ## Prerequisites

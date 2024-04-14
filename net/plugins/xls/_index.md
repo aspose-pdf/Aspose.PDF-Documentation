@@ -9,7 +9,7 @@ lastmod: "2024-01-24"
 
 {{% alert color="primary" %}}
 
-In this article, we will show you how to use the PdfXls plugin, which can convert PDF files to Excel format with high fidelity and accuracy.
+In this article, we will show you how to use the [PdfXls plugin](https://products.aspose.org/pdf/net/xls-converter/), which can convert PDF files to Excel format with high fidelity and accuracy.
 
 {{% /alert %}}
 
