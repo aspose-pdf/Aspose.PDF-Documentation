@@ -11,43 +11,33 @@ sitemap:
     priority: 0.7
 ---
 
-## What is a PDF File?
+Investigate the most basic features and requirements of the Aspose.PDF for Java library in this Getting Started section.
 
-PDF stands for the Portable Document Format, used to display documents in an electronic form independent of the software, hardware or operating system they are viewed on. Originally developed by Adobe® Systems as a universally compatible file format based on the PostScript format, it has become an international de-facto standard for exchanging documents and information.
+To find out more about Aspose.PDF, select the appropriate section:
 
-A PDF file displays the exact same content and layout no matter which operating system, device or software application it is viewed on.
+[Why Aspose.PDF](/pdf/java/why-aspose-pdf/) – describes the reasons why it might be better to use Aspose products rather than other products, for example, Microsoft Office Automation or Open XML SDK
 
-The PDF format allows you to integrate various types of content – text, images and vector graphics, videos, animations, audio files, 3D models, interactive fields, hyperlinks, buttons, and etc.
+[Installation](/pdf/java/installation/) – provides information on how to install Aspose.PDF
 
-PDFs are easy to create, read and use by everyone.
+[System Requirements](/pdf/java/system-requirements/) – provides information about system and development environment requirements
 
-Offers options to set up different levels of access to protect the content and the whole document, such as watermarks, passwords or digital signatures.
+[Hello World](/pdf/java/hello-world-example/) – provides information on how to create simple PDF document using Java and Aspose.PDF 
 
-However, it is not enough just to open your document. In working with PDF, you will face the need to create such a document anew, edit it, or convert it to the format you need. Aspose.PDF for Java will help you to resolve your tasks.
+[How to Run the Examples](/pdf/java/how-to-run-other-examples/) – describes how to download and run the examples and what software requirements must be 
 
-## Why use Aspose.PDF for Java?
+[Complex PDF](/pdf/java/complex-pdf-example/) – describes how to create a more complex document with Java library
 
-Using Aspose.PDF
-for Java in your project gives you the following profits:
+[Supported Document Formats](/pdf/java/supported-file-formats/) – provides information about supported formats
 
-- wide variety of functions
-- surely works with Java Oracle JDK
-- convenience and ease of use
-- API Reference in JavaDoc format
-- Supports all Java applications
+[Supported Features](/pdf/java/key-features/) – provides information on what features are supported when loading or saving a document in various formats
 
-Aspose.PDF for Java can be integrated with any application, for example a JSP/JSF web application or a Windows application.
+[Licensing and Subscription](/pdf/java/licensing/) – provides information on applying a license and using multiple Aspose products
 
-Aspose.PDF for Java is fast and light weight. It creates PDF documents efficiently and helps your application perform better
+[Technical Support](/pdf/java/technical-support/) – This page gives recommendations for quick and quality to resolve your tasks
 
-## Wide variety of functions
+[Advanced Features](/pdf/java/advanced-features/) – provides information about using LaTeX Tags in PDF document with Aspose.PDF for Java
 
-- document compression
-- support for graph objects
-- integration with data sources
-- add, update, delete attachments and annotations
-- support easily converting PDF to other formats and vice versa
-- split, concatenate, extract or inset pages and much more
+[Basics of Aspose.PDF DOM API](/pdf/java/basics-of-dom-api/) – this section will show the features of working with DOM, the form of presentation of structured documents as object-oriented model 
 
 
 

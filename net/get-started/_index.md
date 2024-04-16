@@ -36,7 +36,7 @@ To find out more about Aspose.PDF, select the appropriate section:
 
 [Licensing and Subscription](/pdf/net/licensing/) – provides information on applying a license and using multiple Aspose products
 
-[Technical Support](/pdf/net/system-requirements/) – provides information about system and development environment requirements
+[Technical Support](/pdf/net/technical-support/) – This page gives recommendations for quick and quality to resolve your tasks
 
 [How to Run Aspose.PDF in Docker](/pdf/net/docker/) – provides information on how to utilize Aspose.PDF in a Docker container
 

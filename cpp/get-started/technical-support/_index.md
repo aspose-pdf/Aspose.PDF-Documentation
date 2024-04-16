@@ -2,7 +2,7 @@
 title: Aspose.PDF for C++ Support
 linktitle: Technical Support
 type: docs
-weight: 60
+weight: 100
 url: /cpp/technical-support/
 description: This page gives recommendations for quick and quality to resolve your tasks using Aspose.PDF for C++.
 lastmod: "2021-11-10"
