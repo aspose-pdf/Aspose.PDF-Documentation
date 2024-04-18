@@ -11,6 +11,650 @@ sitemap:
 lastmod: "2021-12-24"
 ---
 
+## What's new in Aspose.PDF 24.4
+
+This release supports applying a clipping mask to images:
+
+```cs
+
+    Document doc = new Document("input.pdf");
+    using (var fs1 = new FileStream("mask1.jpg", FileMode.Open))
+    using (var fs2 = new FileStream("mask2.png", FileMode.Open))
+    {
+        doc.Pages[1].Resources.Images[1].AddStencilMask(fs1);
+        doc.Pages[1].Resources.Images[2].AddStencilMask(fs2);
+    }
+```
+
+From 24.4 you can select the Choose paper source by PDF page size in the print dialog using the API
+
+Beginning with Aspose.PDF 24.4 this preference can be switched on and off using the Document.PickTrayByPdfSize property or the PdfContentEditor facade:
+
+```cs
+
+    using (Document document = new Document())
+    {
+        Page page = document.Pages.Add();
+        page.Paragraphs.Add(new TextFragment("Hello world!"));
+
+        // Set the flag to choose a paper tray using the PDF page size
+        document.PickTrayByPdfSize = true;
+        document.Save("result.pdf");
+    }
+```
+
+```cs
+
+    using (PdfContentEditor contentEditor = new PdfContentEditor())
+    {
+        contentEditor.BindPdf("input.pdf");
+
+        // Set the flag to choose a paper tray using the PDF page size
+        contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
+        contentEditor.Save("result.pdf");
+    }
+```
+
+From this release added the Aspose.PDF Signature for .NET plugin:
+
+- Example with creating new field and options:
+
+```cs
+
+    // create Signature
+    var plugin = new Signature();
+    // create SignOptions object to set instructions
+    var opt = new SignOptions(inputPfxPath, inputPfxPassword);
+    // add input file path
+    opt.AddInput(new FileDataSource(inputPath));
+    // set output file path
+    opt.AddOutput(new FileDataSource(outputPath));
+    // set extra options
+    opt.Reason = "my Reason";
+    opt.Contact = "my Contact";
+    opt.Location = "my Location";
+    // perform the process
+    plugin.Process(opt);
+```
+
+- Example with existing empty field
+
+```cs
+
+    // create Signature
+    var plugin = new Signature();
+    // create SignOptions object to set instructions
+    var opt = new SignOptions(inputPfxPath, inputPfxPassword);
+    // add input file path with empty signature field
+    opt.AddInput(new FileDataSource(inputPath));
+    // set output file path
+    opt.AddOutput(new FileDataSource(outputPath));
+    // set name of existing signature field
+    opt.Name = "Signature1";
+    // perform the process
+    plugin.Process(opt);
+```
+
+## What's new in Aspose.PDF 24.3
+
+From this release added the PDF/A Converter for .NET plugin:
+
+```cs
+
+    var options = new PdfAConvertOptions
+    {
+        PdfAVersion = PdfAStandardVersion.PDF_A_3B
+    };
+
+    // Add the source file
+    options.AddInput(new FileDataSource("path_to_your_pdf_file.pdf")); // replace with your actual file path
+
+    // Add the path to save the converted file
+    options.AddOutput(new FileDataSource("path_to_the_converted_file.pdf"));
+
+    // Create the plugin instance
+    var plugin = new PdfAConverter();
+
+    // Run the conversion
+    plugin.Process(options);
+```
+
+- Implement a search through a list of phrases in a TextFragmentAbsorber:
+
+```cs
+
+    var regexes = new Regex[]
+    {
+    new Regex(@"(?s)document\s+(?:(?:no\(?s?\)?\.?)|(?:number(?:\(?s\)?)?))\s+(?:(?:[\w-]*\d[\w-]*)+(?:[,;\s]|and)*)+", RegexOptions.IgnoreCase),
+    new Regex(@"[\s\r\n]+Tract[\s\r\n]+of:?", RegexOptions.IgnoreCase),
+    new Regex(@"vested[\s\r\n]+in", RegexOptions.IgnoreCase),
+    new Regex("Vested in:", RegexOptions.IgnoreCase),
+    new Regex(@"file.?[\s\r\n]+(?:nos?|numbers?|#s?|nums?).?[\s\r\n]+(\d+)-(\d+)", RegexOptions.IgnoreCase),
+    new Regex(@"file.?[\s\r\n]+nos?.?:?[\s\r\n]+([\d\r\n-]+)", RegexOptions.IgnoreCase)
+    };
+    var document = new Document(input);
+    var absorber = new TextFragmentAbsorber(
+    regexes,
+    new TextSearchOptions(true)
+    );
+    document.Pages.Accept(absorber);
+    // Get result
+    var result = absorber.RegexResults
+```
+
+From 24.3 possible to add an empty signature field on every page to the PDF/A file
+
+```cs
+
+    static void Main(string[] args)
+    {
+        try
+        {
+            var lic = new Aspose.Pdf.License();
+            lic.SetLicense("Aspose.Total.lic");
+
+            string source = "source.pdf";
+            string fieldName = "signature_1234";
+            string dest = "source_fieldNotInAllPages.pdf";
+            addFieldSingle_NewCode(source, dest, fieldName, 1);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+        Console.ReadLine(); 
+    }
+
+    private static void addFieldSingle_NewCode(string source, string dest, string fieldName, int page)
+    {
+        File.Copy(source, dest, true);
+        using (var fs = new FileStream(dest, FileMode.Open))
+        {
+            // The new suggested code, using SignatureField object (this code works fine)
+            var doc = new Document(fs);
+            var f = new SignatureField(doc.Pages[page], new Rectangle(10, 10, 100, 100));
+            // Add the default appearance for the signature field
+            f.DefaultAppearance = new DefaultAppearance("Helv", 12, System.Drawing.Color.Black);
+            var newAddedField = doc.Form.Add(f, fieldName, page);
+
+            // How can now get newAddedField visible in alla pages?
+            Aspose.Pdf.Annotations.Annotation addedField = null;
+            foreach (Aspose.Pdf.Annotations.Annotation a in doc.Pages[1].Annotations)
+            {
+            if (a.FullName == fieldName)
+                {
+                    addedField = a;
+                    break;
+                }
+            }
+            if (addedField != null)
+            {
+                for (int p = 1; p <= doc.Pages.Count; p++)
+                {
+                    if (p == page) continue;
+                    doc.Pages[p].Annotations.Add(addedField);
+                }
+            }
+
+            doc.Save();
+        }
+        System.Diagnostics.Process.Start(dest);
+    }
+```
+
+## What's new in Aspose.PDF 24.2
+
+From 24.2 possible to get the vector data from a PDF file
+
+It was implemented GraphicsAbsorber to get vector data from documents:
+
+```cs
+
+var doc = new Document(input);
+var grAbsorber = new GraphicsAbsorber();
+grAbsorber.Visit(doc.Pages[1]);
+var elements = grAbsorber.Elements;
+var operators = elements[1].Operators;
+var rectangle = elements[1].Rectangle;
+var position = elements[1].Position;
+```
+
+## What's new in Aspose.PDF 24.1
+
+From 24.1 release possible to import FDF format annotations to PDF:
+
+```cs
+
+    var fdfPath = Params.InputPath + "50745.fdf";
+    var templatePath = Params.InputPath + "Empty.pdf";
+    var outputPath = Params.OutputPath + "50745_form.pdf";
+
+    using (var form = new Aspose.Pdf.Facades.Form(templatePath))
+    {
+        using (var fdfInputStream = new FileStream(fdfPath, FileMode.Open))
+        {
+            form.ImportFdf(fdfInputStream);
+        }
+
+        form.Save(outputPath);
+    }
+```
+
+Also, supports for access to Page Dictionary or Document Catalog.
+
+Here are examples of code for DictionaryEditor:
+
+- Add new values
+
+```cs
+
+    // example of key's names
+    string KEY_NAME = "name";
+    string KEY_STRING = "str";
+    string KEY_BOOL = "bool";
+    string KEY_NUMBER = "number";
+
+    var outputPath = "page_dictionary_editor.pdf";
+    using (var doc = new Document())
+    {
+        var page = doc.Pages.Add();
+        var dictionaryEditor = new DictionaryEditor(page);
+
+        dictionaryEditor.Add(KEY_NAME, new CosPdfName("name data"));
+        dictionaryEditor.Add(KEY_STRING, new CosPdfString("string data"));
+        dictionaryEditor.Add(KEY_BOOL, new CosPdfBoolean(true));
+        dictionaryEditor.Add(KEY_NUMBER, new CosPdfNumber(11.2));
+
+        doc.Save(outputPath);
+    }
+```
+
+- Add and set values to dictionary
+
+```cs
+
+    using (var doc = new Document())
+    {
+        var page = doc.Pages.Add();
+        var dictionaryEditor = new DictionaryEditor(page);
+        dictionaryEditor.Add(KEY_NAME, new CosPdfName("Old name"));
+        // or 
+        dictionaryEditor[KEY_NAME] = new CosPdfName("New name");
+    }
+```
+
+- Get value from dictionary
+
+```cs
+
+    using (var doc = new Document())
+    {
+        var page = doc.Pages.Add();
+        var dictionaryEditor = new DictionaryEditor(page);
+        dictionaryEditor[KEY_NAME] = new CosPdfName("name");
+        var value = dictionaryEditor[KEY_NAME];
+        // or 
+        ICosPdfPrimitive primitive;
+        dictionaryEditor.TryGetValue(KEY_NAME, out primitive);
+    }
+```
+
+- Remove value from dictionary
+
+```cs
+
+    using (var doc = new Document())
+    {
+        var page = doc.Pages.Add();
+        var dictionaryEditor = new DictionaryEditor(page);
+        dictionaryEditor.Add(KEY_NAME, new CosPdfName(EXPECTED_NAME));
+        dictionaryEditor.Remove(KEY_NAME);
+    }
+```
+
+## What's new in Aspose.PDF 23.12
+
+The form can be found and the text can be replaced using the following code snippet:
+
+```cs
+
+    var document = new Document(input);
+    var forms = document.Pages[1].Resources.Forms;
+
+    foreach (var form in forms)
+    {
+        if (form.IT == "Typewriter" && form.Subtype == "Form")
+        {
+            var absorber = new TextFragmentAbsorber();
+            absorber.Visit(form);
+
+            foreach (var fragment in absorber.TextFragments)
+            {
+                fragment.Text = "";
+            }
+        }
+    }
+
+    document.Save(output);
+```            
+
+Or, the form can be completely removed:
+
+```cs
+
+    var document = new Document(input);
+    var forms = document.Pages[1].Resources.Forms;
+
+    for (int i = 1; i <= forms.Count; i++)
+    {
+        if (forms[i].IT == "Typewriter" && forms[i].Subtype == "Form")
+        {
+            forms.Delete(forms[i].Name);
+        }
+    }
+
+    document.Save(output);
+```            
+
+Another variant of removing the form:
+
+```cs
+
+    var document = new Document(input);
+    var forms = document.Pages[1].Resources.Forms;
+
+    foreach (var form in forms)
+    {
+        if (form.IT == "Typewriter" && form.Subtype == "Form")
+        {
+            var name = forms.GetFormName(form);
+            forms.Delete(name);
+        }
+    }
+
+    document.Save(output);
+``` 
+
+- All forms can be deleted using the following code snippet:
+
+```cs
+
+    var document = new Document(input);
+    var forms = document.Pages[1].Resources.Forms;
+
+    forms.Clear();
+
+    document.Save(output);
+```
+
+- Implement PDF to Markdown conversion:
+
+```cs
+
+    string markdownOutputFilePath = "output.md"
+    string inputPdfPath = "input.pdf"
+    using (Document doc = new Document(inputPdfPath))
+    {
+    MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
+    saveOptions.ResourcesDirectoryName = "images"; 
+    doc.Save(markdownOutputFilePath, saveOptions);
+    }
+```
+
+- Implement OFD to PDF conversion:
+
+```cs
+    var document = new Document("sample.ofd", new OfdLoadOptions());
+    document.Save("sample.pdf");
+```
+
+From this release added the Merger plugin:
+
+```cs
+    // Path to the output merged PDF file.
+    var outputPath = "TestMerge.pdf";
+
+    // Create a new instance of Merger.
+    var merger = new Merger();
+
+    // Create MergeOptions.
+    var opt = new MergeOptions();
+    opt.AddInput(new FileDataSource(inputPath1));
+    opt.AddInput(new FileDataSource(inputPath2));
+    opt.AddOutput(new FileDataSource(outputPath));
+
+    // Process the PDF merging.
+    merger.Process(opt);
+```
+
+Also, from this release added the ChatGPT plugin:
+
+## What's new in Aspose.PDF 23.11
+
+From this release possible to remove hidden text from PDF file:
+
+```cs
+    var document = new Document(inputFile);
+    var textAbsorber = new TextFragmentAbsorber();
+
+        // This option can be used to prevent other text fragments from moving after hidden text replacement.
+        textAbsorber.TextReplaceOptions = new TextReplaceOptions(TextReplaceOptions.ReplaceAdjustment.None);
+
+        document.Pages.Accept(textAbsorber);
+
+        foreach (var fragment in textAbsorber.TextFragments)
+        {
+            if (fragment.TextState.Invisible)
+            {
+                fragment.Text = "";
+            }
+        }
+
+        document.Save(outputFile);
+```
+
+From 23.11 supports for thread interruption:
+
+```cs
+
+    public void InterruptExample()
+    {
+        string outputFile = testdata + "sample.pdf";
+        //this is some large text, used Lorem Ipsum in 8350 characters to cause suspension 
+        string text = ExampleApp.LongText;
+        using (InterruptMonitor monitor = new InterruptMonitor())
+        {
+            RowSpanWorker worker = new RowSpanWorker (outputFile, monitor);
+            Thread thread = new Thread(new ThreadStart(worker.Work));
+            thread.Start();
+
+            // The timeout should be less than the time required for full document save (without interruption).
+            Thread.Sleep(500);
+
+            // Interrupt the process
+            monitor.Interrupt();
+
+            // Wait for interruption...
+            thread.Join();
+        }
+        private class RowSpanWorker
+        {
+            private readonly string outputPath;
+            private readonly InterruptMonitor monitor;
+
+            public RowSpanWorker(string outputPath, InterruptMonitor monitor)
+            {
+                this.outputPath = outputPath;
+                this.monitor = monitor;
+            }
+            public void Work()
+            {
+                string text = InterruptMonitorTests.LongText;
+                using (var doc = new Document())
+                {
+                    InterruptMonitor.ThreadLocalInstance = this.monitor;
+                    var page = doc.Pages.Add();
+
+                    var table = new Aspose.Pdf.Table
+                    {
+                        DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F)
+                    };
+
+                    var row0 = table.Rows.Add();
+
+                    // add a cell that spans for two rows and contains a long-long text
+                    var cell00 = row0.Cells.Add(text);
+                    cell00.RowSpan = 2;
+                    cell00.IsWordWrapped = true;
+                    row0.Cells.Add("Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum ");
+                    row0.Cells.Add("Dolor Dolor Dolor Dolor Dolor Dolor ");
+
+                    var row1 = table.Rows.Add();
+                    row1.Cells.Add("IpsumDolor Dolor Dolor Dolor Dolor ");
+                    row1.Cells.Add("DolorDolor Dolor Dolor Dolor Dolor ");
+
+                    page.Paragraphs.Add(table);
+
+                    try
+                    {
+                        doc.Save(this.outputPath);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                }
+            }
+        }
+    }
+```
+## What's new in Aspose.PDF 23.10
+
+The current update presents three versions of Removing tags from tagged PDFs.
+
+- Remove some node element from a documentElement (root tree element):
+
+```cs
+    var document = new Document("some tagged pdf");
+    var structure = document.LogicalStructure;
+    var documentElement = structure.Children[0];
+    var structElement = documentElement.Children.Count > 1 ? documentElement.Children[1] as StructElement : null;
+    if (documentElement.Children.Remove(structElement))
+    {
+        // element removed
+        document.Save(outputPath);
+    }
+
+    // You can also delete the structElement itself
+    //if (structElement != null)
+    //{
+    //    structElement.Remove();
+    //    document.Save(outputPath);
+    //}
+```
+
+- Remove all marked elements tags from the document, but keep the structure elements:
+
+```cs
+    var document = new Document("some tagged pdf");
+    var structure = document.LogicalStructure;
+    var root = structure.Children[0];
+    var queue = new Queue<Element>();
+    queue.Enqueue(root);
+    while(queue.TryDequeue(out var element))
+    {
+        foreach (var child in element.Children)
+        {
+            queue.Enqueue(child);
+        }
+
+        if (element is TextElement || element is FigureElement)
+        {
+            element.Remove();
+        }
+    }
+```
+
+- Remove tags at all:
+
+```cs
+    var document = new Document("some tagged pdf");
+    var structure = document.LogicalStructure;
+    var documentElement = structure.Children[0];
+    documentElement.Remove();
+    document.Save(outputPath);
+```
+
+From 23.10 was implemented a new feature to measure character height. Use the following code to measure the height of a character.
+
+```cs
+    var doc = new Document(input);
+    var absorber = new TextFragmentAbsorber();
+    absorber.Visit(doc.Pages[1]);
+    var height = absorber.TextFragments[1].TextState.MeasureHeight('A')
+```
+
+Note that the measurement is based on the font embedded in the document. If any information for a dimension is missing, this method returns 0.
+
+Also, this release provides the Sign a PDF using a signed HASH:
+
+```cs
+    public void PDFNET_54566()
+    {
+        var inputPdf = "54566.pdf";
+        var inputP12 = "54566.p12";
+        var inputPfxPassword = "123456";
+        var outputPdf = "54566_out.pdf";
+        using (var sign = new PdfFileSignature())
+        {
+            sign.BindPdf(inputPdf);
+            var pkcs7 = new PKCS7(inputP12, inputPfxPassword);
+            pkcs7.CustomSignHash = CustomSignHash;
+            sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
+            sign.Save(outputPdf);
+        }
+        using (var sign = new PdfFileSignature())
+        {
+            sign.BindPdf(outputPdf);
+            Assert.IsTrue(sign.VerifySignature("Signature1"));
+        }
+    }
+
+    private byte[] CustomSignHash(byte[] signableHash)
+    {
+        var inputP12 = "54566.p12";
+        var inputPfxPassword = "123456";
+        X509Certificate2 signerCert = new X509Certificate2(inputP12, inputPfxPassword, X509KeyStorageFlags.Exportable);
+        RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+        var xmlString = signerCert.PrivateKey.ToXmlString(true);
+        rsaCSP.FromXmlString(xmlString);
+        byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+        return signedData;
+    }
+```
+
+One more new feature is Print Dialog Presets Page Scaling:
+
+```cs
+    Document document = new Document();
+    document.Pages.Add();
+    document.PrintScaling = PrintScaling.None;
+    document.Save("output.pdf");
+```
+
+## What's new in Aspose.PDF 23.9
+
+From 23.9 support to remove a child annotation from a fillable field.
+
+```cs
+
+    doc = new Document("field-ref-add.pdf");
+    field = (Field)doc.Form[fieldName];
+    var annotation = field[1];
+    doc.Pages[annotation .PageIndex].Annotations.Remove(annotation);
+    doc.Save("field-ref-delete.pdf");
+```
+
 ## What's new in Aspose.PDF 23.8
 
 From 23.8 support to add Incremental Updates detection.
