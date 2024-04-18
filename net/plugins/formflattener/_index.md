@@ -8,7 +8,7 @@ lastmod: "2024-01-24"
 ---
 
 
-In this article, we will show you how to use the FormFlattener plugin, which can flatten form fields in PDF files.
+In this article, we will show you how to use the [FormFlattener plugin](https://products.aspose.org/pdf/net/form-flattener/), which can flatten form fields in PDF files.
 
 ## Prerequisites
 

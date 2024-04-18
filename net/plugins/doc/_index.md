@@ -7,7 +7,7 @@ description: Converting PDF to Word Made Simple with PdfDoc Plugin
 lastmod: "2024-01-24"
 ---
 
-This article guides you through using the `Aspose.Pdf DOC Converter for .NET` to convert a PDF document to Microsoft Word format (.doc / .docx).
+This article guides you through using the [Aspose.Pdf DOC Converter for .NET](https://products.aspose.org/pdf/net/doc-converter/) to convert a PDF document to Microsoft Word format (.doc / .docx).
 
 ## Prerequisites
 

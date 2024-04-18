@@ -8,7 +8,7 @@ lastmod: "2024-01-24"
 draft: false
 ---
 
-In this article, we will show you how to use the PdfHtml plugin, which can convert PDF files to and from HTML files.
+In this article, we will show you how to use the [PdfHtml plugin](https://products.aspose.org/pdf/net/html-converter/), which can convert PDF files to and from HTML files.
 
 ## Prerequisites
 

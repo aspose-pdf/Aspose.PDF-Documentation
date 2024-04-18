@@ -8,7 +8,7 @@ lastmod: "2024-01-24"
 draft: false
 ---
 
-Do you want to enhance your PDF documents by adding a Table of Contents (TOC) dynamically? Aspose.PDF for .NET provides a powerful `TocGenerator` class that allows you to generate TOCs with ease. In this guide, we'll walk through the basic steps to create a TOC in a PDF document using Aspose.PDF, covering the creation of a `TocGenerator` object, adding input/output paths, and running the TOC generation process.
+Do you want to enhance your PDF documents by [adding a Table of Contents (TOC)](https://products.aspose.org/pdf/net/toc-generator/) dynamically? Aspose.PDF for .NET provides a powerful `TocGenerator` class that allows you to generate TOCs with ease. In this guide, we'll walk through the basic steps to create a TOC in a PDF document using Aspose.PDF, covering the creation of a `TocGenerator` object, adding input/output paths, and running the TOC generation process.
 
 ## Prerequisites
 

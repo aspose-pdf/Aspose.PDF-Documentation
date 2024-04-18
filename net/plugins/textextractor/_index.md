@@ -7,7 +7,7 @@ description: Extracts text content from the PDF document.
 lastmod: "2024-01-24"
 ---
 
-Do you have a PDF document from which you need to extract text programmatically? With Aspose.PDF for .NET, you can easily achieve this task using the TextExtractor class. In this article, we'll walk through the basic steps to create a text extraction application in .NET, covering the creation of a TextExtractor object, adding a data source, and running the text extraction process.
+Do you have a PDF document from which you need to [extract text programmatically](https://products.aspose.org/pdf/net/text-extractor/)? With Aspose.PDF for .NET, you can easily achieve this task using the TextExtractor class. In this article, we'll walk through the basic steps to create a text extraction application in .NET, covering the creation of a TextExtractor object, adding a data source, and running the text extraction process.
 
 ## Prerequisites
 

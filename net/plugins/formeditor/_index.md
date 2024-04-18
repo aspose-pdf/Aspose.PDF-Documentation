@@ -8,7 +8,7 @@ lastmod: "2024-01-24"
 draft: false
 ---
 
-In this article, we will show you how to use the Form Editor plugin, which can add, update, and remove form fields in PDF files.
+In this article, we will show you how to use the [Form Editor plugin](https://products.aspose.org/pdf/net/form-editor/), which can add, update, and remove form fields in PDF files.
 
 ## Prerequisites
 
