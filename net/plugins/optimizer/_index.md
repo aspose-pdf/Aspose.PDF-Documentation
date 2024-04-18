@@ -7,7 +7,7 @@ description: How to Optimizing and Manipulating PDF Files with Aspose.PDF Optimi
 lastmod: "2024-01-24"
 ---
 
-In this chapter, we'll explore how to utilize the Aspose.PDF Optimizer to optimize, resize, and rotate PDF files in your C# applications.
+In this chapter, we'll explore how to utilize the [Aspose.PDF Optimizer](https://products.aspose.org/pdf/net/optimizer/) to optimize, resize, and rotate PDF files in your C# applications.
 Let's dive in and learn how to perform these tasks step by step.
 
 ## Prerequisites
