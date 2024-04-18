@@ -429,6 +429,35 @@ From this release added the Merger plugin:
 
 Also, from this release added the ChatGPT plugin:
 
+```cs
+
+    using (var plugin = new PdfChatGpt())
+    {
+    var options = new PdfChatGptRequestOptions();
+    options.AddOutput(new FileDataSource("PdfChatGPT_output.pdf")); // Add the output file path.
+    options.ApiKey = "Your API key."; // You need to provide the key to access the API.
+    options.MaxTokens = 1000; // The maximum number of tokens to generate in the chat completion.
+
+    // Add the request messages.
+    options.Messages.Add(new Message
+    {
+        Content = "You are a helpful assistant.",
+        Role = Role.System
+    });
+    options.Messages.Add(new Message
+    {
+        Content = "What is the biggest pizza diameter ever made?",
+        Role = Role.User
+    });
+
+    // Process the request.
+    var result = await plugin.ProcessAsync(options);
+
+    var fileResultPath = result.ResultCollection[0].Data;
+    var chatCompletionObject = result.ResultCollection[1].Data as ChatCompletion; // The ChatGPT API chat completion object.
+    }
+```
+
 ## What's new in Aspose.PDF 23.11
 
 From this release possible to remove hidden text from PDF file:
