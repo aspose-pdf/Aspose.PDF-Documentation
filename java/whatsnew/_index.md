@@ -13,51 +13,51 @@ lastmod: "2021-06-05"
 
 ## What's new in Aspose.PDF 24.4
 
-In this release was implemented Java Plugins for PDF
+This release introduced Java plugins for PDF:
 
-- Form Flatteners Plugin
+- Form Flattener Plugin
 
 ```java
 
     FormFlattener pdfFormPlugin = new FormFlattener();
 
-            FormFlattenAllFieldsOptions opt = new FormFlattenAllFieldsOptions();
+    FormFlattenAllFieldsOptions opt = new FormFlattenAllFieldsOptions();
 
-            opt.addInput(new FileDataSource("sample.pdf"));
-            opt.addOutput(new FileDataSource("sample-flat.pdf"));
+    opt.addInput(new FileDataSource("sample.pdf"));
+    opt.addOutput(new FileDataSource("sample-flat.pdf"));
 
-            ResultContainer result = pdfFormPlugin.process(opt);
+    ResultContainer result = pdfFormPlugin.process(opt);
 
-            // Check result.
-            java.util.List<IOperationResult> resultCollectionInternal = result.getResultCollection();
+    // Check result.
+    java.util.List < IOperationResult > resultCollectionInternal = result.getResultCollection();
 ```
 
-- Form Exporters
+- Form Exporter
 
 ```java
 
-    Rectangle rect =  new com.aspose.pdf.Rectangle(0, 220, 600, 330) ;
+    Rectangle rect = new com.aspose.pdf.Rectangle(0, 220, 600, 330);
 
-            // Plugin use.
+    // Plugin use.
     FormExporter pdfFormPlugin = new FormExporter();
-            SelectField selectField = new SelectField() {
-                public boolean invoke(Field field) {
-                    return field instanceof TextBoxField && field.getPageIndex() == 2 && rect.isInclude(field.getRect(), 0);
-                }
-            };
-            FormExporterValuesToCsvOptions opt = new FormExporterValuesToCsvOptions(selectField, ';');
+    SelectField selectField = new SelectField() {
+      public boolean invoke(Field field) {
+        return field instanceof TextBoxField && field.getPageIndex() == 2 && rect.isInclude(field.getRect(), 0);
+      }
+    };
+    FormExporterValuesToCsvOptions opt = new FormExporterValuesToCsvOptions(selectField, ';');
 
-            opt.addInput(new FileDataSource(inputFileNameWithFields));
-            opt.addInput(new FileDataSource(getInputPath("document-1.pdf")));
-            opt.addInput(new FileDataSource(getInputPath("document-2.pdf")));
-            opt.addInput(new FileDataSource(getInputPath("document-3.pdf")));
-            opt.addOutput(new FileDataSource(getOutputPath("out.csv")));
-            ResultContainer result = pdfFormPlugin.process(opt);
+    opt.addInput(new FileDataSource(inputFileNameWithFields));
+    opt.addInput(new FileDataSource(getInputPath("document-1.pdf")));
+    opt.addInput(new FileDataSource(getInputPath("document-2.pdf")));
+    opt.addInput(new FileDataSource(getInputPath("document-3.pdf")));
+    opt.addOutput(new FileDataSource(getOutputPath("out.csv")));
+    ResultContainer result = pdfFormPlugin.process(opt);
 
-            // Check result.
-            System.out.println(result.getResultCollectionInternal().size() > 0);
-            System.out.println(result.getResultCollectionInternal().get_Item(0).isFile());
-            System.out.println(result.getResultCollectionInternal().get_Item(0).getData().toString());
+    // Check result.
+    System.out.println(result.getResultCollectionInternal().size() > 0);
+    System.out.println(result.getResultCollectionInternal().get_Item(0).isFile());
+    System.out.println(result.getResultCollectionInternal().get_Item(0).getData().toString());
 ```
 
 - Merger Plugin
@@ -65,22 +65,22 @@ In this release was implemented Java Plugins for PDF
 ```java
 
     String input1 = "sample.pdf";
-            String input2 = "sample.pdf";
+    String input2 = "sample.pdf";
 
-            String output = "TestMergeFileAndStream_ResultAsFile.pdf";
+    String output = "TestMergeFileAndStream_ResultAsFile.pdf";
 
-            Merger merger = new Merger();
+    Merger merger = new Merger();
 
-            MergeOptions opt = new MergeOptions();
-            opt.addInput(new FileDataSource(input1));
-            opt.addInput(new StreamDataSource(new FileInputStream(input2)));
+    MergeOptions opt = new MergeOptions();
+    opt.addInput(new FileDataSource(input1));
+    opt.addInput(new StreamDataSource(new FileInputStream(input2)));
 
-            opt.addOutput(new FileDataSource(output));
+    opt.addOutput(new FileDataSource(output));
 
-            ResultContainer results = merger.process(opt);
+    ResultContainer results = merger.process(opt);
 
-            System.out.println(results.getResultCollection().size());
-            System.out.println(results.getResultCollection().get(0).isFile());
+    System.out.println(results.getResultCollection().size());
+    System.out.println(results.getResultCollection().get(0).isFile());
 ```
 
 - Optimizer Plugin
@@ -108,15 +108,15 @@ How to resize PDF Documents?
     String input = "sample.pdf";
     String output = "ResizeMain.pdf";
 
-            Optimizer organizer = new Optimizer();
+    Optimizer organizer = new Optimizer();
 
-            ResizeOptions opt = new ResizeOptions();
-            opt.addInput(new FileDataSource(input));
-            opt.addOutput(new FileDataSource(output));
+    ResizeOptions opt = new ResizeOptions();
+    opt.addInput(new FileDataSource(input));
+    opt.addOutput(new FileDataSource(output));
 
-            opt.setPageSize(PageSize.getA1());
+    opt.setPageSize(PageSize.getA1());
 
-            organizer.process(opt);
+    organizer.process(opt);
 ```
 
 How to rotate PDF Documents?
@@ -126,14 +126,14 @@ How to rotate PDF Documents?
     String input = "sample.pdf";
     String output = "OptimizerRotateMain.pdf";
 
-            Optimizer optimizer = new Optimizer();
+    Optimizer optimizer = new Optimizer();
 
-            RotateOptions opt = new RotateOptions();
-            opt.addInput(new FileDataSource(input));
-            opt.addOutput(new FileDataSource(output));
-            opt.setRotation(Rotation.on90);
+    RotateOptions opt = new RotateOptions();
+    opt.addInput(new FileDataSource(input));
+    opt.addOutput(new FileDataSource(output));
+    opt.setRotation(Rotation.on90);
 
-            ResultContainer results = optimizer.process(opt);
+    ResultContainer results = optimizer.process(opt);
 ```
 
 ## What's new in Aspose.PDF 24.3
@@ -142,33 +142,32 @@ From 24.3 implement a search through a list of phrases in a TextFragmentAbsorber
 
 ```java
 
-    String[] expressions = new String[]
-                    {
-    //detect phone number
-                    "\\b\\d{3}-\\d{3}-\\d{4}\\b",
-    //detect card number
-                    "\\b(?:\\d[ -]*?){13,16}\\b"                        
-                    };
-            Document document = new Document(input);
+    String[] expressions = new String[] {
+      //detect phone number
+      "\\b\\d{3}-\\d{3}-\\d{4}\\b",
+      //detect card number
+      "\\b(?:\\d[ -]*?){13,16}\\b"
+    };
+    Document document = new Document(input);
 
-            TextFragmentCollection newTextFragmentCollection = new TextFragmentCollection();
+    TextFragmentCollection newTextFragmentCollection = new TextFragmentCollection();
 
-            Pattern[] regexes = new Pattern[6];
-            for (int i = 0; i < expressions.length; i++) {
-                regexes[i] = Pattern.compile(expressions[i], Pattern.CASE_INSENSITIVE);
-            }
-            TextFragmentAbsorber newAbsorber = new TextFragmentAbsorber( regexes, new TextSearchOptions(true) );
-            document.getPages().accept(newAbsorber);
-            HashMap<Pattern, TextFragmentCollection> map = newAbsorber.getRegexResults();
+    Pattern[] regexes = new Pattern[6];
+    for (int i = 0; i < expressions.length; i++) {
+      regexes[i] = Pattern.compile(expressions[i], Pattern.CASE_INSENSITIVE);
+    }
+    TextFragmentAbsorber newAbsorber = new TextFragmentAbsorber(regexes, new TextSearchOptions(true));
+    document.getPages().accept(newAbsorber);
+    HashMap < Pattern, TextFragmentCollection > map = newAbsorber.getRegexResults();
 ```
 
 Next feature is adding  the ability to convert tables for the PDF to Markdown converter
 
 ```java
 
-    Document doc = new Document( dataDir+"56201.pdf");
-        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
-        doc.save(dataDir+"56201.md", saveOptions);
+    Document doc = new Document(dataDir + "56201.pdf");
+    MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
+    doc.save(dataDir + "56201.md", saveOptions);
 ```
 
 ## What's new in Aspose.PDF 24.2
@@ -178,29 +177,29 @@ From 24.2 possible to add the Watermark in PDF with AcroForms. TextStamp is suit
 ```java
 
     String sourceName = dataDir + "551.3xfa.pdf";
-            String targetName = dataDir + "output_2_" + BuildVersionInfo.AssemblyVersion + ".pdf";
+    String targetName = dataDir + "output_2_" + BuildVersionInfo.AssemblyVersion + ".pdf";
 
-            Document pdfDocument = new Document(sourceName);
-            XFA xfa = pdfDocument.getForm().getXFA();
+    Document pdfDocument = new Document(sourceName);
+    XFA xfa = pdfDocument.getForm().getXFA();
 
-            String watermark =
-                    "<subform>" +
-                        "<draw rotate=\"90\" x=\"100px\" y=\"100px\">" +
-                            "<value>" +
-                                "<text>Sample Stamp</text>\n" +
-                            "</value>" +
-                            "<font typeface=\"Arial\" size=\"14px\" weight=\"bold\" posture=\"italic\">" +
-                                "<fill>" +
-                                    "<color value=\"0,128,0\"/>" +
-                                "</fill>" +
-                            "</font>" +
-                        "</draw>" +
-                    "</subform>";
+    String watermark =
+    "<subform>" +
+    "<draw rotate=\"90\" x=\"100px\" y=\"100px\">" +
+    "<value>" +
+    "<text>Sample Stamp</text>\n" +
+    "</value>" +
+    "<font typeface=\"Arial\" size=\"14px\" weight=\"bold\" posture=\"italic\">" +
+    "<fill>" +
+    "<color value=\"0,128,0\"/>" +
+    "</fill>" +
+    "</font>" +
+    "</draw>" +
+    "</subform>";
 
-            xfa.appendToTemplate("//tpl:pageArea", watermark);
+    xfa.appendToTemplate("//tpl:pageArea", watermark);
 
-            pdfDocument.save(targetName);
-            pdfDocument.close();
+    pdfDocument.save(targetName);
+    pdfDocument.close();
 ```
 
 Set StateModel for Annotation
@@ -274,75 +273,72 @@ Also, in 24.1 thread interruption using the InterruptMonitor has been implemente
 
     final InterruptMonitor monitor = new InterruptMonitor();
 
-            new Thread(new Runnable() {
+    new Thread(new Runnable() {
 
-                public void run() {
+      public void run() {
 
+        InterruptMonitor.setThreadLocalInstance(monitor);
+        Document document = new Document();
 
-                    InterruptMonitor.setThreadLocalInstance(monitor);
-                    Document document = new Document();
+        try {
+          Page page = document.getPages().insert(1);
+          PageInfo pageInfo = page.getPageInfo();
+          pageInfo.setLandscape(true);
+          Table topicTable = new Table();
+          topicTable.setBorder(new BorderInfo(BorderSide.All, 0.5 f, Color.getBlack()));
+          topicTable.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5 f, Color.getBlack()));
+          topicTable.setColumnWidths("5% 10% 5% 60% 10% 10%");
+          topicTable.setRepeatingRowsCount(1);
 
-                    try {
-                        Page page = document.getPages().insert(1);
-                        PageInfo pageInfo = page.getPageInfo();
-                        pageInfo.setLandscape(true);
-                        Table topicTable = new Table();
-                        topicTable.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
-                        topicTable.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
-                        topicTable.setColumnWidths("5% 10% 5% 60% 10% 10%");
-                        topicTable.setRepeatingRowsCount(1);
+          Row topicRow = topicTable.getRows().add();
 
-                        Row topicRow = topicTable.getRows().add();
+          topicRow.getCells().add("text");
+          topicRow.getCells().add("text");
+          topicRow.getCells().add("text");
+          topicRow.getCells().add("text");
+          topicRow.getCells().add("text");
+          topicRow.getCells().add("text");
 
-                        topicRow.getCells().add("text");
-                        topicRow.getCells().add("text");
-                        topicRow.getCells().add("text");
-                        topicRow.getCells().add("text");
-                        topicRow.getCells().add("text");
-                        topicRow.getCells().add("text");
+          //foreach to while statements conversion
+          Iterator tmp0 = (topicRow.getCells()).iterator();
+          while (tmp0.hasNext()) {
+            Cell cell = (Cell) tmp0.next();
+            cell.setVerticalAlignment(VerticalAlignment.Center);
+            cell.setAlignment(HorizontalAlignment.Center);
+          }
 
-                        //foreach to while statements conversion
-                        Iterator tmp0 = (topicRow.getCells()).iterator();
-                        while (tmp0.hasNext()) {
-                            Cell cell = (Cell) tmp0.next();
-                            cell.setVerticalAlignment(VerticalAlignment.Center);
-                            cell.setAlignment(HorizontalAlignment.Center);
-                        }
+          Row row2 = topicTable.getRows().add();
+          row2.getCells().add("text");
+          row2.getCells().add("text");
+          row2.getCells().add("text");
+          String LongText = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.";
+          row2.getCells().add(LongText);
+          row2.getCells().add("text");
+          row2.getCells().add("text");
+          page.getParagraphs().add(topicTable);
+          document.save(dataDir + "out" + version + ".pdf");
 
-                        Row row2 = topicTable.getRows().add();
-                        row2.getCells().add("text");
-                        row2.getCells().add("text");
-                        row2.getCells().add("text");
-                        String LongText = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.";
-                        row2.getCells().add(LongText);
-                        row2.getCells().add("text");
-                        row2.getCells().add("text");
-                        page.getParagraphs().add(topicTable);
-                        document.save(dataDir + "out" + version + ".pdf");
+        } catch (com.aspose.pdf.exceptions.OperationCanceledException ex) {
+          System.out.println("Interrupting the save thread at " + System.currentTimeMillis());
+        } finally {
+          if (document != null) {
+            document.close();
+          }
+        }
 
-                    }catch (com.aspose.pdf.exceptions.OperationCanceledException ex){
-                        System.out.println("Interrupting the save thread at " + System.currentTimeMillis());
-                    }
-                    finally {
-                        if (document != null) {
-                            document.close();
-                        }
-                    }
+      }
 
+    }).start();
 
-                }
+    System.out.println("Process is started thread at " + System.currentTimeMillis());
 
-            }).start();
+    // The timeout should be less than the time required for full document save (without interruption).
+    Thread.sleep(500);
 
-            System.out.println("Process is started thread at " + System.currentTimeMillis());
+    // Interrupt the process
+    monitor.interrupt();
 
-            // The timeout should be less than the time required for full document save (without interruption).
-            Thread.sleep(500);
-
-            // Interrupt the process
-            monitor.interrupt();
-
-            System.out.println("Interrupted the save thread at " + System.currentTimeMillis());
+    System.out.println("Interrupted the save thread at " + System.currentTimeMillis());
 ```
 
 ## What's new in Aspose.PDF 23.12
@@ -352,26 +348,26 @@ The form can be found and the text can be replaced using the following code snip
 ```java
 
     Document document = new Document(input);
-        String expectedText = "This is a text added while creating new PDF in Kofx Power PDF Standard.";
+    String expectedText = "This is a text added while creating new PDF in Kofx Power PDF Standard.";
 
-        XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
+    XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
 
-        Iterator tmp0 = (forms).iterator();
-        while (tmp0.hasNext()) {
-            XForm form = (XForm) tmp0.next();
-            if ("Typewriter".equals(form.getIT()) && "Form".equals(form.getSubtype())) {
-                TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-                absorber.visit(form);
+    Iterator tmp0 = (forms).iterator();
+    while (tmp0.hasNext()) {
+      XForm form = (XForm) tmp0.next();
+      if ("Typewriter".equals(form.getIT()) && "Form".equals(form.getSubtype())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+        absorber.visit(form);
 
-                Iterator tmp1 = (absorber.getTextFragments()).iterator();
-                while (tmp1.hasNext()) {
-                    TextFragment fragment = (TextFragment) tmp1.next();
-                    fragment.setText("");
-                }
-            }
+        Iterator tmp1 = (absorber.getTextFragments()).iterator();
+        while (tmp1.hasNext()) {
+          TextFragment fragment = (TextFragment) tmp1.next();
+          fragment.setText("");
         }
+      }
+    }
 
-        document.save(output);
+    document.save(output);
 ```            
 
 Or, the form can be completely removed:
@@ -527,76 +523,74 @@ example 1:
 ```java
 
     String input = "55343_1.pdf";
-        Document doc = new Document(input);
-        final String fieldName = "1 Vehicle Identification Number";
-        Field field = (Field)doc.getForm().get_Item(fieldName);
-        System.out.println(0 == field.size());
-        Rectangle rect = field.getRect();
-        doc.getForm().addFieldAppearance(field, 2, rect);
-        System.out.println(2 == field.size());
+    Document doc = new Document(input);
+    final String fieldName = "1 Vehicle Identification Number";
+    Field field = (Field) doc.getForm().get_Item(fieldName);
+    System.out.println(0 == field.size());
+    Rectangle rect = field.getRect();
+    doc.getForm().addFieldAppearance(field, 2, rect);
+    System.out.println(2 == field.size());
 
-        field = (Field)doc.getForm().get_Item(fieldName);
-        System.out.println(2 == field.size());
-        doc.getForm().removeFieldAppearance(field, 1);
+    field = (Field) doc.getForm().get_Item(fieldName);
+    System.out.println(2 == field.size());
+    doc.getForm().removeFieldAppearance(field, 1);
 
-        System.out.println(0 == field.size());
-        field = (Field)doc.getForm().get_Item(fieldName);
-        System.out.println(0 == field.size());
+    System.out.println(0 == field.size());
+    field = (Field) doc.getForm().get_Item(fieldName);
+    System.out.println(0 == field.size());
 ```
 
 example 2:
 
 ```java
 
-{
-    String option1 = "option 1";
-        String option2 = "option 2";
-        String outputPdf = "output.pdf";
-
-        final Document document = new Document();
-        try /*JAVA: was using*/
-        {
-            Page page = document.getPages().add();
-
-            CheckboxField checkbox = new CheckboxField(page, new Rectangle(50, 50, 70, 70));
-
-            // Set the first checkbox group option value
-            checkbox.setExportValue(option1);
-            checkbox.addOption(option2);
-            document.getForm().add(checkbox);
-            java.util.List<String> tmp0 =new ArrayList<String>();
-            tmp0.add("Off");
-            tmp0.add(option1);
-            tmp0.add(option2);
-            System.out.println(collectionAssert_AreEqual(tmp0, checkbox.getAllowedStates()));
-            checkbox.setValue(option2);
-
-            WidgetAnnotation f = document.getForm().get_Item(1);
-            document.getForm().removeFieldAppearance((Field)f, 2);
-
-            checkbox = (CheckboxField)document.getForm().get_Item(1);
-            java.util.List<String> tmp1 =new java.util.ArrayList<String>();
-            tmp1.add("Off");
-            tmp1.add(option1);
-            System.out.println(collectionAssert_AreEqual(tmp1, checkbox.getAllowedStates()));
-
-            document.save(outputPdf);
-        }
-        finally { if (document != null) (document).close(); }
-}
-    public static boolean collectionAssert_AreEqual(java.util.List<String> value1,
-                                                    java.util.List<String> value2)
     {
-        if (value1.size()==value2.size())
-        {
-            for (int i = 0; i < value1.size(); i++) {
-                if (!value1.get(i).equals(value2.get(i)))
-                    return false;
-            }
-        }else {
+    String option1 = "option 1";
+    String option2 = "option 2";
+    String outputPdf = "output.pdf";
+
+    final Document document = new Document();
+    try /*JAVA: was using*/ {
+        Page page = document.getPages().add();
+
+        CheckboxField checkbox = new CheckboxField(page, new Rectangle(50, 50, 70, 70));
+
+        // Set the first checkbox group option value
+        checkbox.setExportValue(option1);
+        checkbox.addOption(option2);
+        document.getForm().add(checkbox);
+        java.util.List < String > tmp0 = new ArrayList < String > ();
+        tmp0.add("Off");
+        tmp0.add(option1);
+        tmp0.add(option2);
+        System.out.println(collectionAssert_AreEqual(tmp0, checkbox.getAllowedStates()));
+        checkbox.setValue(option2);
+
+        WidgetAnnotation f = document.getForm().get_Item(1);
+        document.getForm().removeFieldAppearance((Field) f, 2);
+
+        checkbox = (CheckboxField) document.getForm().get_Item(1);
+        java.util.List < String > tmp1 = new java.util.ArrayList < String > ();
+        tmp1.add("Off");
+        tmp1.add(option1);
+        System.out.println(collectionAssert_AreEqual(tmp1, checkbox.getAllowedStates()));
+
+        document.save(outputPdf);
+    } finally {
+        if (document != null)(document).close();
+    }
+    }
+    public static boolean collectionAssert_AreEqual(java.util.List < String > value1,
+    java.util.List < String > value2) {
+    if (value1.size() == value2.size()) {
+        for (int i = 0; i < value1.size(); i++) {
+        if (!value1.get(i).equals(value2.get(i)))
             return false;
         }
-        return true;
+    } else {
+        return false;
+    }
+    return true;
     }
 ```
 
@@ -605,25 +599,24 @@ Adding image with ImageFilterType.Flate does not preserve transparency.
 ```java
 
     Document document = new Document();
-        Page page = document.getPages().add();
+    Page page = document.getPages().add();
 
-        FileInputStream stream = new FileInputStream(("55037_1.png"));
+    FileInputStream stream = new FileInputStream(("55037_1.png"));
 
-        page.getResources().getImages().addWithImageFilterType(stream, ImageFilterType.Flate);
-        page.getContents().add(new GSave());
-        Rectangle rectangle = new Rectangle(413, 428, 548, 564);
-        Matrix matrix = new Matrix(
-                new double[]
-                        {
-                                rectangle.getURX() - rectangle.getLLX(), 0, 0, rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY()
-                        });
+    page.getResources().getImages().addWithImageFilterType(stream, ImageFilterType.Flate);
+    page.getContents().add(new GSave());
+    Rectangle rectangle = new Rectangle(413, 428, 548, 564);
+    Matrix matrix = new Matrix(
+      new double[] {
+        rectangle.getURX() - rectangle.getLLX(), 0, 0, rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY()
+      });
 
-        page.getContents().add(new ConcatenateMatrix(matrix));
-        XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
-        page.getContents().add(new Do(ximage.getName()));
-        page.getContents().add(new GRestore());
-        document.save(getOutputPath("55157.pdf"));
-        stream.close();
+    page.getContents().add(new ConcatenateMatrix(matrix));
+    XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
+    page.getContents().add(new Do(ximage.getName()));
+    page.getContents().add(new GRestore());
+    document.save(getOutputPath("55157.pdf"));
+    stream.close();
 ```
 
 ## What's new in Aspose.PDF 23.8
