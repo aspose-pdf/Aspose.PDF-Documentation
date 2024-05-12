@@ -3,7 +3,7 @@ title: Encrypt and Decrypt PDF
 linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 30
-url: /python-cpp/encrypt-decrypt-pdf/
+url: /python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Encrypt and Decrypt PDF File with Python via C++ application.
 lastmod: "2024-04-17"
 sitemap:
@@ -17,7 +17,7 @@ One effective way to safeguard PDF files is through encryption. In this article,
 
 PDF encryption involves scrambling the content of a PDF document using cryptographic algorithms to prevent unauthorized access. Encrypted PDF files require a password to open and may have restrictions on actions like printing, copying, and editing.
 
-- The **User password**, if set, is what you need to provide in order to open a PDF. Acrobat/Reader will prompt a user to enter the user password. If it’s not correct, the document will not open.
+- The **User password**, if set, is what you need to provide in order to open a PDF. Acrobat/Reader will prompt a user to enter the user password. If it's not correct, the document will not open.
 - The **Owner password**, if set, controls permissions, such as printing, editing, extracting, commenting, etc. Acrobat/Reader will disallow these things based on the permission settings. Acrobat will require this password if you want to set/change permissions.
 
 The following code snippet shows you how to encrypt PDF files.

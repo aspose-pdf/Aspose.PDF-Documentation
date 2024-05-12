@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /python-cpp/extract-text/
 description: This section describes how to extract text from PDF document using Python library.
-lastmod: "2023-07-14"
+lastmod: "2024-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -22,7 +22,6 @@ There are many image formats that need to be converted to PDF for different purp
 
 - [Convert PDF to various Images formats](/pdf/python-cpp/convert-pdf-to-images-format/) - convert PDF pages as images in JPEG, PNG and other formats
 
-
 ## Try to convert PDF files online
 
 {{% alert color="success" %}}

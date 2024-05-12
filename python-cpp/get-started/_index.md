@@ -39,9 +39,8 @@ It creates PDF documents effectively, allows you to use a familiar editor, and h
 - convert PDF to other formats and vice versa
 - split, merge, extract or insert pages and much more
 
-### Learn more about: 
+### Learn more about:
 
-- [Basics of DOM API](/pdf/python-cpp/basics-of-dom-api/)
 - ["Hello, World" Python Example](/pdf/python-cpp/hello-world-example/)
 - [Complex PDF](/pdf/python-cpp/complex-pdf-example/)
 - [How to run other examples](/pdf/python-cpp/how-to-run-other-examples/)
