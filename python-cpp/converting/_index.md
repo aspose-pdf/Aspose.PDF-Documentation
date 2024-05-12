@@ -4,33 +4,23 @@ linktitle: Convert PDF document
 type: docs
 weight: 70
 url: /python-cpp/converting/
-lastmod: "2024-04-22"
-description: This section contains articles relating to converting PDF documents into different formats and vice versa using Python via C++ API.
+lastmod: "2023-07-22"
+description: This section contains articles relating to converting PDF documents into different formats and vice versa using Python API.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 ---
 
-Are you looking to convert PDF files to different formats using Python? Look no further than Aspose.PDF for Python. Python, an object-oriented programming language, is commonly used for building software prototypes for web applications and data processing. Let's delve into how you can leverage Python to convert PDF to text.
+If you need to transform PDF documents into other formats with Python, you should try Aspose.PDF for Python via C++. This is a powerful tool for PDF conversion. Python is a versatile programming language that can create software prototypes for web applications and data analysis. In this article, we will show you how to extract text from PDF using Python.
 
-PDF documents often contain not just text, but also images, clickable buttons, hyperlinks, embedded fonts, signatures, stamps, and more. Those seeking to convert PDF files to other formats usually aim to make the content editable.
-
-With Aspose.PDF for Python, you can seamlessly and efficiently convert your PDF documents to and from the most popular formats.
+PDF files can contain not only text but also images, clickable buttons, hyperlinks, embedded fonts, signatures, stamps, etc. Users who are converting a PDF file to some other format are interested in doing so in order to be able to edit the PDF content.
+Our **Aspose.PDF for Python via C++** library allows you to successfully, quickly and easily convert your PDF documents to the most popular formats and vice versa.
 
 ## How to use Aspose.PDF for conversion
 
-The next section describes the most popular options for converting PDF documents.
-After learning the code examples, you will understand that the Aspose.PDF for Python via C++ library provides fairly universal solutions that will help you solve the tasks of converting documents.
+There are many image formats that need to be converted to PDF for different purposes. Aspose.PDF allows the most popular images formats and vice versa.
 
-For a complete list of supported formats, see the section [Aspose.PDF Supported File Formats](https://docs.aspose.com/pdf/python-cpp/supported-file-formats/).
-
-Aspose.PDF for Python via C++ allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter App. Learn the sections of converting documents with code snippets.
-
-Today, the Python via C++ library has implemented converters of the following formats:
-
-- [Convert Images to PDF file](/pdf/python-cpp/convert-image-to-pdf/) - this topic describes way for conversion images formats to PDF file
-
-- [Convert PDF file to TXT format](/pdf/python-cpp/convert-pdf-to-txt/) - this topic describes way for conversion PDF document to TXT format
+- [Convert PDF to various Images formats](/pdf/python-cpp/convert-pdf-to-images-format/) - convert PDF pages as images in JPEG, PNG and other formats
 
 
 ## Try to convert PDF files online
