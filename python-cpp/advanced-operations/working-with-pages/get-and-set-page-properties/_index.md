@@ -17,6 +17,14 @@ Aspose.PDF for Python via C++ lets you read and set properties of pages in a PDF
 
 The next code snippet opens a PDF file, resizes the first page by adjusting the **Crop box** (the crop box is the "page" size at which your PDF document is displayed in Adobe Acrobat), and saves the modified document to a new file.
 
+1. Create a document object from the input file
+1. Get the pages collection from the document using [document_get_pages](https://reference.aspose.com/pdf/python-cpp/core/document_get_pages/)
+1. Get the first page from the pages collection with [page_collection_get_page](https://reference.aspose.com/pdf/python-cpp/core/page_collection_get_page/)
+1. Get the crop box rectangle from the page using [page_get_rectangle](https://reference.aspose.com/pdf/python-cpp/core/page_get_rectangle/)
+1. Calculate the new coordinates for the crop box
+1. Update the crop box coordinates with the new values
+1. Save the modified document to the output file with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function
+
 ```python
 
     import AsposePDFPython as apCore

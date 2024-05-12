@@ -16,11 +16,12 @@ sitemap:
 Aspose.PDF for Python via C++ support converting PDF document to a Text file by following steps:
 
 1. Creating the input, and output file path
-1. Creating an instance of the PDF extractor facade
-1. Binding the PDF file to the extractor
-1. Extracting the text from the PDF file
+1. Creating an instance of the PDF extractor facade with [extractor_create]
+(https://reference.aspose.com/pdf/python-cpp/core/extractor_create/)
+1. Binding the PDF file to the extractor with [extractor_bind_pdf](https://reference.aspose.com/pdf/python-cpp/core/extractor_bind_pdf/)
+1. Extracting the text from the PDF file using [extractor_extract_text](https://reference.aspose.com/pdf/python-cpp/core/extractor_extract_text/)
 1. Writing the extracted text to the output file
-1. Save output PDF.
+1. Save the output PDF with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function.
 
 The code snippet below shows how to convert JPG Image to PDF using Python via C++:
 

@@ -18,12 +18,12 @@ Our library demonstrates code snippets for converting the most popular image for
 You can very easy convert a JPG images to PDF with Aspose.PDF for C++ by following steps:
 
 1. Open the input image file using PIL library
-1. Get the width and height of the image
-1. Create a new Document, and Image instance
-1. Set the fixed height and width of the image
+1. Get the [image_get_fix_height](https://reference.aspose.com/pdf/python-cpp/core/image_get_fix_height/) and [image_get_fix_width](https://reference.aspose.com/pdf/python-cpp/core/image_get_fix_width/) of the image
+1. Create a new Document with [document_create](https://reference.aspose.com/pdf/python-cpp/core/document_create/) function, and Image instance
+1. Set the fixed [image_set_fix_height](https://reference.aspose.com/pdf/python-cpp/core/image_set_fix_height/) and [image_set_fix_width](https://reference.aspose.com/pdf/python-cpp/core/image_set_fix_width/) of the image
 1. Add a new page to the document
 1. Add the image to the page
-1. Save output PDF.
+1. Save the output PDF with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function.
 
 The code snippet below shows how to convert JPG Image to PDF using Python via C++:
 

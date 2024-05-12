@@ -15,8 +15,8 @@ sitemap:
 ## Optimize PDF Document
 
 1. Load the PDF document using the AsposePDFPythonWrappers library
-1. Optimize the PDF document to reduce its size
-1. Save the optimized document to the specified output file path
+1. Optimize the PDF document to reduce its size using [document_optimize](https://reference.aspose.com/pdf/python-cpp/core/document_optimize/) function
+1. Save the optimized document to the specified output file path with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function
 
 This example loads a PDF file, optimizes it, and saves the optimized version to a specified output file:
 

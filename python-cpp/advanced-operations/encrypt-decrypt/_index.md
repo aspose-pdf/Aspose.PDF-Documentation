@@ -22,6 +22,13 @@ PDF encryption involves scrambling the content of a PDF document using cryptogra
 
 The following code snippet shows you how to encrypt PDF files.
 
+1. Creating the input, and output file path
+1. Load the PDF document using AsposePDFPythonWrappers
+1. Define the permissions for the encrypted document
+1. Define the encryption algorithm to be used
+1. Encrypt the document with the specified user and owner passwords, permissions, and encryption algorithm using [document_encrypt](https://reference.aspose.com/pdf/python-cpp/core/document_encrypt/)
+1. Save the encrypted document to the specified output file with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function.
+
 ```python
 
     import AsposePDFPythonWrappers as apw
@@ -56,7 +63,10 @@ The following code snippet shows you how to encrypt PDF files.
 
 ## Decrypt PDF File using Owner Password
 
-
+1. Creating the input, and output file path
+1. Create a new instance of the Document class from the AsposePDFPythonWrappers module
+1. Decrypt the document using the [document_decrypt](https://reference.aspose.com/pdf/python-cpp/core/document_decrypt/) method
+1. Save the decrypted document to the output file path using the save() method with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function.
 
 ```Python
 

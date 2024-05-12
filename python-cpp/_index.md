@@ -13,13 +13,17 @@ sitemap:
     priority: 0.7
 ---
 
-![Aspose.PDF for Python via C++ logo image]()
+![Aspose.PDF for Python via C++ logo image](aspose_pdf-for-python-cpp.png)
 
 <h2>Welcome to Aspose.PDF for Python via C++</h2>
 
 {{% alert color="primary" %}}
 
+Aspose.PDF for Python supports the development of applications across various operating systems, including Windows and Linux, as long as Python 3.5 or a later version is installed.
 
+The main feature of Aspose.PDF for Python via C++ is that it does not require .NET, Java, and other native libraries. Its speed is much higher than on other Python products.
+
+Aspose.PDF for Python via C++ offers a complete set of functions for working with PDF documents. Learn them on the next Documentation Pages.
 
 {{% /alert %}}
 
@@ -36,7 +40,7 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.PDF for Python via C++ Features](/pdf/python-cpp/key-features/)
 - [Aspose.PDF for Python via C++ Release Notes](https://releases.aspose.com/pdf/pythoncpp/)
 - [Aspose.PDF for Python via C++ Product Page](https://products.aspose.com/pdf/python-cpp/)
-- [Download Aspose.PDF for Python via C++]()
+- [Download Aspose.PDF for Python via C++](https://pypi.org/project/aspose-pdf-cpp-for-python/)
 - [Install Aspose.PDF for Python via C++ NuGet Package](https://www.nuget.org/packages/Aspose.PDF/)
 - [Aspose.PDF for Python via C++ API Reference Guide](https://reference.aspose.com/pdf/python-cpp/)
 - [Aspose.PDF for Python via C++ Free Support Forum](https://forum.aspose.com/c/pdf/10)
