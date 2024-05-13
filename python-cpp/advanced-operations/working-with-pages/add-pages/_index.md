@@ -19,7 +19,7 @@ To insert an empty page in a PDF file:
 
 1. Open the PDF document
 1. Add a new blank page to the document
-1. Save the modified document to the output file with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function
+1. Save the modified document to the output file with 'document.save' method
 
 The following code snippet shows you how to insert a page in a PDF file:
 

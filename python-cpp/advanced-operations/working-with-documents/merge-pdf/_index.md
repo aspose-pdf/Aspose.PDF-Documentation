@@ -20,7 +20,7 @@ To concatenate two PDF files:
 
 1. Open first document
 1. Then add pages of second document to the first
-1. Save concatenated output file with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function
+1. Save concatenated output file with 'document.save' method.
 
 The following code snippet shows how to concatenate PDF files.
 
@@ -46,9 +46,5 @@ The following code snippet shows how to concatenate PDF files.
     document1.save(output_file)
 ```
 
-## Live Example
 
-[Aspose.PDF Merger](https://products.aspose.app/pdf/merger) is an online free web application that allows you to investigate how presentation merging functionality works.
-
-[![Aspose.PDF Merger](merger.png)](https://products.aspose.app/pdf/merger)
 

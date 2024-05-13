@@ -23,7 +23,7 @@ The next code snippet opens a PDF file, resizes the first page by adjusting the 
 1. Get the crop box rectangle from the page using [page_get_rectangle](https://reference.aspose.com/pdf/python-cpp/core/page_get_rectangle/)
 1. Calculate the new coordinates for the crop box
 1. Update the crop box coordinates with the new values
-1. Save the modified document to the output file with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function
+1. Save the modified document to the output file with 'document.save' method
 
 ```python
 

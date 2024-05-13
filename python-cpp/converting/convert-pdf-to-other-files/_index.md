@@ -37,10 +37,4 @@ with open(output_pdf, 'w') as f:
     f.write(text)
 ```
 
-{{% alert color="success" %}}
-**Try to convert Convert PDF to Text online**
 
-Aspose.PDF for Python presents you online free application ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt), where you may try to investigate the functionality and quality it works.
-
-[![Aspose.PDF Convertion PDF to Text with Free App](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
-{{% /alert %}}

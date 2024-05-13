@@ -26,10 +26,10 @@ This topic describes how to update or change the page orientation of pages in an
 Aspose.PDF for Python via C++ support great features like changing the page orientation 
 
 1. Create a document object from the input file
-1. Get the pages collection from the document using [document_get_pages](https://reference.aspose.com/pdf/python-cpp/core/document_get_pages/)
-1. Get the first page from the pages collection with [page_collection_get_page](https://reference.aspose.com/pdf/python-cpp/core/page_collection_get_page/)
-1. Rotating the page by 90 degrees clockwise using [page_get_rotate](https://reference.aspose.com/pdf/python-cpp/core/page_get_rotate/)
-1. Save the modified document to the output file with [document_save](https://reference.aspose.com/pdf/python-cpp/core/document_save/) function
+1. Get the pages collection from the document using 'apCore.document_get_pages'
+1. Get the first page from the pages collection with 'apCore.page_collection_get_page'
+1. Rotating the page by 90 degrees clockwise using 'apCore.page_set_rotate'
+1. Save the modified document to the output file with 'document.save' method
 
 ```python
 
