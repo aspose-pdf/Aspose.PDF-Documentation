@@ -16,19 +16,21 @@ sitemap:
 There are several ways to open a document. The easiest is to specify a file name.
 
 ```python
-import AsposePDFPythonWrappers as ap
-# Open document
-document = ap.Document("sample.pdf")
-count = document.pages.count()
-print("Pages: " + str(count))
+
+    import AsposePDFPythonWrappers as ap
+    # Open document
+    document = ap.Document("sample.pdf")
+    count = document.pages.count()
+    print("Pages: " + str(count))
 ```
 
 ## Open encrypted PDF document
 
 ```python
-import AsposePDFPythonWrappers as ap
-# Open document
-document = ap.Document("sample.pdf","password")
-count = document.pages.count()
-print("Pages: " + str(count))
+
+    import AsposePDFPythonWrappers as ap
+    # Open document
+    document = ap.Document("sample.pdf","password")
+    count = document.pages.count()
+    print("Pages: " + str(count))
 ```

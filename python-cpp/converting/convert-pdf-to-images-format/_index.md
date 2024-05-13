@@ -52,14 +52,13 @@ png_device_save_page_to_file(pngDevice,page,"test.png")
 
 ```python
 
-from AsposePdfPython import *
+    from AsposePdfPython import *
 
-doc = document_open("blank_pdf_document.pdf")
-pages = document_get_pages(doc)
-page = page_collection_get_page(pages,1)
+    doc = document_open("blank_pdf_document.pdf")
+    pages = document_get_pages(doc)
+    page = page_collection_get_page(pages,1)
 
-res = resolution_create(300)
-jpegDevice = jpeg_device_create_from_width_height_resolution(1239,1754,res)
-jpeg_device_save_page_to_file(jpegDevice,page,"test.jpeg")
-
+    res = resolution_create(300)
+    jpegDevice = jpeg_device_create_from_width_height_resolution(1239,1754,res)
+    jpeg_device_save_page_to_file(jpegDevice,page,"test.jpeg")
 ```

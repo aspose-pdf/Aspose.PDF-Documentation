@@ -21,12 +21,8 @@ Our **Aspose.PDF for Python via C++** library allows you to successfully, quickl
 There are many image formats that need to be converted to PDF for different purposes. Aspose.PDF allows the most popular images formats and vice versa.
 
 - [Convert PDF to various Images formats](/pdf/python-cpp/convert-pdf-to-images-format/) - convert PDF pages as images in JPEG, PNG and other formats
+- [Convert Images to PDF](/pdf/python-cpp/convert-image-to-pdf/) - convert JPEG, PNG and other formats to PDF file
+- [Convert PDF to other formats](/pdf/python-cpp/convert-pdf-to-other-files/) - convert PDF pages into other formats
+- [Convert PDF to Text](/pdf/python-cpp/convert-pdf-to-txt/) - convert PDF pages to text
 
-## Try to convert PDF files online
 
-{{% alert color="success" %}}
-
-You can try the conversion functionality by using our Aspose PDF APPS:
-
-[![Aspose PDF APP](app.png)](https://products.aspose.app/pdf/conversion)
-{{% /alert %}}
