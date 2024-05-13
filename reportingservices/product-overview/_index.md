@@ -10,12 +10,13 @@ lastmod: "2021-06-05"
 
 ![Aspose.PDF for Reporting Services](../../aspose_pdf-for-reporting-services.png)
 
-### **Welcome to Aspose.PDF for Reporting Services!**
+## Welcome to Aspose.PDF for Reporting Services!
+
 Microsoft SQL Server Reporting Services fulfills a need that many organizations have: the need to build business intelligence and reporting solutions. Until now, developers were required to embed reports into their applications, or organizations were required to buy expensive and sometimes problematic third-party reporting solutions. Now, Microsoft SQL Server Reporting Services offers a complete solution for distributing reports across the enterprise; enabling businesses to make decisions better and faster.
 
 {{% /alert %}}
 
-## **Product Description**
+## Product Description
 
 {{% alert color="primary" %}}
 
@@ -25,11 +26,11 @@ Microsoft SQL Server Reporting Services have built-in abilities to export report
 
 Aspose.PDF for Reporting Services creates documents on the server without the Adobe.Pdf SDK. Aspose.PDF for Reporting Services uses Aspose.PDF for .NET – the world-class component for server-side document processing and conversions.
 
-**Aspose.PDF for Reporting Services makes it possible to export any report in PDF format**
+## Aspose.PDF for Reporting Services makes it possible to export any report in PDF format
 
 ![todo:image_alt_text](product-overview_2.png)
 
-**Aspose.PDF for Reporting Services exported a report as a PDF file**
+## Aspose.PDF for Reporting Services exported a report as a PDF file**
 
 ![todo:image_alt_text](product-overview_3.png)
 
