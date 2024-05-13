@@ -15,5 +15,5 @@ You are able to do the following:
 
 - [Add Pages](/pdf/python-cpp/add-pages/) - add pages at desired location or to the end of a PDF file and delete a page from you document.
 - [Rotate Pages](/pdf/python-cpp/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
-- [Get and Set Page Properties](/pdf/python-cpp/get-and-set-page-properties/) - this section shows how to set page size properties using Python via C++.
+- [Get and Set Page Properties](/pdf/python-cpp/get-and-set-page-properties/) - this section shows how to set page size properties using Python.
 
