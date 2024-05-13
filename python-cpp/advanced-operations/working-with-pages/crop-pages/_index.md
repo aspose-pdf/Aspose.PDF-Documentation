@@ -114,7 +114,7 @@ After the change, the page will look like Figure 2.
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
+    "name": "Aspose.PDF for Python via C++ Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
