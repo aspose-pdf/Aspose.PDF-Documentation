@@ -4,7 +4,7 @@ linktitle: Crop Pages
 type: docs
 weight: 70
 url: /python-cpp/crop-pages/
-description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for Python via .NET.
+description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for Python via C++.
 lastmod: "2023-04-17"
 sitemap:
     changefreq: "weekly"
