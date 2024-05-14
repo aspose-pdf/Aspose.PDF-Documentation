@@ -17,26 +17,31 @@ sitemap:
 This article explains how to **convert PDF to Excel formats using Python**. It covers the following topics.
 
 _Format_: **XLS**
+
 - [Python PDF to XLS](#python-pdf-to-xls)
 - [Python Convert PDF to XLS](#python-pdf-to-xls)
 - [Python How to convert PDF file to XLS](#python-pdf-to-xls)
 
 _Format_: **XLSX**
+
 - [Python PDF to XLSX](#python-pdf-to-xlsx)
 - [Python Convert PDF to XLSX](#python-pdf-to-xlsx)
 - [Python How to convert PDF file to XLSX](#python-pdf-to-xlsx)
 
 _Format_: **Excel**
+
 - [Python PDF to Excel](#python-pdf-to-xlsx)
 - [Python PDF to Excel XLS](#python-pdf-to-xls)
 - [Python PDF to Excel XLSX](#python-pdf-to-xlsx)
 
 _Format_: **CSV**
+
 - [Python PDF to CSV](#python-pdf-to-csv)
 - [Python Convert PDF to CSV](#python-pdf-to-csv)
 - [Python How to convert PDF file to CSV](#python-pdf-to-csv)
 
 _Format_: **ODS**
+
 - [Python PDF to ODS](#python-pdf-to-ods)
 - [Python Convert PDF to ODS](#python-pdf-to-ods)
 - [Python How to convert PDF file to ODS](#python-pdf-to-ods)
