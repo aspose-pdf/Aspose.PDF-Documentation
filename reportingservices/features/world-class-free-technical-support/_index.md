@@ -6,15 +6,14 @@ url: /reportingservices/world-class-free-technical-support/
 lastmod: "2021-06-05"
 ---
 
-{{% alert color="primary" %}}
+Aspose is renowned for its free and unlimited technical support, which is backed up by technical articles, manuals, forums and all-time ready support and product developers. If there is a new version or a Hot Fix of a product is released, all new releases are available free of cost if you have an active subscription.
 
-Aspose is renowned for its free and unlimited technical support provided directly by the developers of the products. If a new version of a product is available, or if resolving a question results in a fix, all new releases are free if you have an active subscription.
+**Aspose.Support Forums** is the place not only to resolve technical issues, but participate in development discussions with the vibrant and growing community of Aspose users. Currently there are over 129,000 users registered at the Aspose website.
 
-{{% /alert %}}
-### **Getting Support**
-#### <ins>**Forums**
-[Aspose's Support Forums](https://forum.aspose.com/) is the place not only to resolve technical issues, but to participate in discussions with the vibrant and growing community of Aspose users. Currently there are over 190,000 users registered at the Aspose website.   
-#### <ins>**Blogs**
-[Aspose.Blogs](https://blog.aspose.com/) is the place to look for information about the latest releases and about what Aspose developers have to say.   
-#### <ins>**Need more support?**
-Aspose offers free support to all users. For companies want that their issue will get prioritized, or who want to influence our product development road map, there are [advanced support options](https://helpdesk.aspose.com/kb/faq/2-Developer-Business-Support-Key-Benefits-Conditions) like Priority Support and Enterprise Support.
+Aspose.Blogs is the place to look for information about latest releases and about what Aspose developers have to say.
+
+There is plenty of activity in Aspose.Support Forums:
+
+![todo:image_alt_text](world-class-free-technical-support.png)
+
+ 

@@ -14,7 +14,8 @@ Now we need to perform similar steps as we did for the SharePoint WFE. First thi
 
 For the setup I choose Server Farm and a complete install to match my SharePoint Box, as I do not want a standalone install for SharePoint.
 
-##### <ins>**SharePoint Configuration**
+## SharePoint Configuration
+
 {{% alert color="primary" %}}
 
 **In the SharePoint Configuration Wizard, we want to connect to an existing farm.**

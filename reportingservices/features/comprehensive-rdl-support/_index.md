@@ -8,11 +8,10 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for Reporting Services supports RDL specification.
-This means that there's **no need** to:
+Aspose.Pdf for Reporting Services supports RDL specification. It means:
 
-- Redesign or customize existing reports.
-- Use a specific report designer. Uuse any RDL report designer and the report is exported exactly the way you designed it.
+* No need to redesign or customize existing reports.
+* No need to use a specific report designer. You can use any RDL report designer and the report will be exported exactly the way you designed it.
 
 {{% /alert %}}
 
