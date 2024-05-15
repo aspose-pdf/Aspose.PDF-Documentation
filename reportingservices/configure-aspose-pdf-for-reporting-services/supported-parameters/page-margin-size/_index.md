@@ -8,7 +8,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-RS designer does not support the setting of page margin size. Aspose.PDF for Reporting Services provides four parameters to set the corresponding page margin size, they are:
+Reporting Services report designer does not support setting page margins size. Aspose.Pdf for Reporting Services provides four parameters to set the corresponding page margin size, they are:
 
 {{% /alert %}}
 
@@ -16,37 +16,37 @@ RS designer does not support the setting of page margin size. Aspose.PDF for Rep
 1)  
 **Parameter Name**: PageMarginLeft  
 **Date Type**: Float  
-**Values supported**:  
+**Values supported**:  Any positive number or zero
 
 2)  
 **Parameter Name**: PageMarginRight  
 **Date Type**: Float  
-**Values supported**:  
+**Values supported**:  Any positive number or zero
 
 3)  
 **Parameter Name**: PageMarginTop  
 **Date Type**: Float  
-**Values supported**:  
+**Values supported**:  Any positive number or zero
 
 4)  
 **Parameter Name**: PageMarginBottom  
 **Date Type**: Float  
-**Values supported**:  
+**Values supported**:  Any positive number or zero
 
 **Example**
 
 {{< highlight csharp >}}
 
 <Render>
-...
-<Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices">
-<Configuration>
-<PageMarginLeft >50</PageMarginLeft>
- <PageMarginRight >50</PageMarginRight>
- <PageMarginTop >50</PageMarginTop>
- <PageMarginBottom >50</PageMarginBottom>
-</Configuration>
-</Extension>
+…
+    <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
+    <Configuration>
+    <PageMarginLeft>50</PageMarginLeft>
+    <PageMarginRight>50</PageMarginRight>
+    <PageMarginTop>50</PageMarginTop>
+    <PageMarginBottom>50</PageMarginBottom>
+    </Configuration>
+    </Extension>
 </Render>
 
 {{< /highlight >}}

@@ -20,9 +20,8 @@ Please note that this approach has some limitations
 
 {{% alert color="primary" %}}
 
-The formatting isn’t visible in design time (in Report Builder, Report Manager etc). Instead, you will see the HTML text as is.
-
-The Aspose.PDF for Reporting Services rendering extension can understand and properly format HTML code in textboxes. The default PDF renderer of RS does not so.
+- The formatting isn’t visible in design time (in the Report Builder, Reporting Services web portal etc.). Instead, you will see the HTML text in form of plain text with tags.
+- Aspose.PDF for Reporting Services rendering extension recognizes and properly formats HTML code in textboxes. The default PDF renderer of Reporting Services will export this markup as plain text.
 
 **Parameter Name**: IsHtmlTagSupported  
 **Date Type**: Boolean  
@@ -34,17 +33,18 @@ The Aspose.PDF for Reporting Services rendering extension can understand and pro
 
  <Render>
 ...
-<Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices ">
-<Configuration>
-<IsHtmlTagSupported >True</IsHtmlTagSupported>
-</Configuration>
-</Extension>
+    <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices ">
+    <Configuration>
+    <IsHtmlTagSupported >True</IsHtmlTagSupported>
+    </Configuration>
+    </Extension>
 </Render>
 
 {{< /highlight >}}
 
-If you want to set this parameter in Report Designer, the data type should be 'Boolean'.
+If you want to add this parameter in the Report Designer, use the 'Boolean' data type.
 
-Currently Aspose.PDF for Reporting Services does not support all HTML tags.
+ 
+Currently Aspose.Pdf for Reporting Services supports a subset of all the HTML tags. You may find more information in the Aspose.PDF [Documentation](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}

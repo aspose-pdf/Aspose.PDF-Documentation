@@ -8,49 +8,51 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, List of Tables or Figures. You should do as the following steps:
+Report Designer does not support adding table of contents for report documents. With Aspose.Pdf for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**1-** Make sure that Aspose.PDF.ListSectionStyle.xml file exists in <Instance>/bin, where < Instance> is the directory of Report Server. If the file does not exist, please create and edit it as the following code, and copy it to <Instance>/bin.
-##### **Table of Contents**
+Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
+
+## Table of Contents
+
 **Example**
 
 ```cs
- <ListSection ListType="TableOfContents">
-    <Title Alignment="Center">
+<ListSection ListType="TableOfContents">
+              <Title Alignment="Center">
             <Segment IsTrueTypeFontBold="true" FontSize="30">TableOfContents</Segment>
-    </Title>
-    <ListLevelFormat Level="1" LeftMargin="0">
+              </Title>
+              <ListLevelFormat Level="1" LeftMargin="0">
             <TextInfo IsTrueTypeFontBold="true" IsTrueTypeFontItalic="true"></TextInfo>
-    </ListLevelFormat>
-    <ListLevelFormat Level="2" LeftMargin="10">
+              </ListLevelFormat>
+              <ListLevelFormat Level="2" LeftMargin="10">
             <TextInfo IsUnderline="true" FontSize="10"></TextInfo>
-    </ListLevelFormat>
-    <ListLevelFormat Level="3" LeftMargin="20">
+              </ListLevelFormat>
+              <ListLevelFormat Level="3" LeftMargin="20">
             <TextInfo IsTrueTypeFontBold="true"></TextInfo>
-    </ListLevelFormat>
-    <ListLevelFormat Level="4" LeftMargin="30">
+              </ListLevelFormat>
+              <ListLevelFormat Level="4" LeftMargin="30">
             <TextInfo IsTrueTypeFontBold="true"></TextInfo>
-    </ListLevelFormat>
+              </ListLevelFormat>
 </ListSection>
-
 ```
 
-***List of Tables***
+##  List of TableS
+
 **Example**
 
 ```cs
- <ListSection ListType="ListOfTables">
-    <Title>
+<ListSection ListType="ListOfTables">
+              <Title>
             <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfTables</Segment>
-    </Title>
+              </Title>
 </ListSection>
-
 ```
 
- ***List of Figures***
+## List of Figures
+
 **Example**
 
 ```cs
@@ -62,12 +64,12 @@ Report Designer does not support adding table of contents for report documents. 
 
 ```
 
-**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as the chapter 'List Section'.
+Please refer to 'Working with TOC' section of the Aspose.Pdf online documentation.
+
+**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as shown in the 'List Section' paragraph.
 **3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
 
 {{% /alert %}}
-
-Please refer to List Section for further details, as specified in Aspose.PDF for .NET documentation.
 
 {{% alert color="primary" %}}
 
@@ -77,7 +79,7 @@ Please refer to List Section for further details, as specified in Aspose.PDF for
 
 {{% alert color="primary" %}}
 
-Which means that the current report item could be listed by index in the tables of contents, list of tables or figures.
+Marks the current report item as listed by index in the table of contents, or the list of tables or figures.
 
 {{% /alert %}}
 
@@ -86,7 +88,7 @@ Which means that the current report item could be listed by index in the tables 
 
 {{% alert color="primary" %}}
 
-Which means the title displayed in the table of contents, list of tables or figures.
+The item title displayed in the table of contents, list of tables or figures.
 {{% /alert %}}
 
 **Custom Property Name** : ListLevel
@@ -94,7 +96,7 @@ Which means the title displayed in the table of contents, list of tables or figu
 
 {{% alert color="primary" %}}
 
-Which means the level of listed items displayed in the table of contents.
+The level of listed items displayed in the table of contents.
 
 {{% /alert %}}
 

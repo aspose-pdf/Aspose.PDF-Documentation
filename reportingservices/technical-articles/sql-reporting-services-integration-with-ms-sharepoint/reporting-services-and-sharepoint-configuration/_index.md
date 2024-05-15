@@ -26,11 +26,11 @@ Select "Reporting Services Integration" link. Following screen will be displayed
 
 {{% /alert %}}
 
-##### <ins>**Web Service URL:**
+## Web Service URL:
 
 **We will provide the URL for the Report Server that we found in the Reporting Services Configuration Manager.**
 
-##### <ins>**Authentication Mode:**
+## Authentication Mode:
 
 **We will also select an Authentication Mode. The following MSDN link goes through in detail what these are.
 Security Overview for Reporting Services in SharePoint Integrated Mode**
@@ -41,7 +41,7 @@ Security Overview for Reporting Services in SharePoint Integrated Mode**
 
 {{% /alert %}}
 
-##### <ins>**Activate feature:**
+## Activate feature:
 
 {{% alert color="primary" %}}
 
@@ -59,6 +59,7 @@ Going back to the ReportServer URL, we should see something similar to the follo
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_4.png)
 
 **Image4:**- Reporting Services is successfully connected with SharePoint environment
+
 **NOTE:** ***If your SharePoint site is configured for SSL, it won't show up in this list. It is a known issue and doesn't mean there is a problem. Your reports should still work.***
 {{% /alert %}}
 

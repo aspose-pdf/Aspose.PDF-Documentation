@@ -8,47 +8,43 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-The RS designer does not support embedding XMP data. Aspose.PDF for Reporting Services provides four parameters for setting XMP Metadata, listed below.
+Reporting Services report designer does not support embedding XMP metadata in the document. Aspose.Pdf for Reporting Services provides four parameters to set the corresponding XMP metadata, they are:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 **Parameter Name**: CreationDate  
 **Date Type**: String  
-**Values supported**:  
+**Values supported**: Date in one of the date formats
 
 **Parameter Name**: ModifyDate  
 **Date Type**: String  
-**Values supported**:  
+**Values supported**: Date in one of the date formats 
 
 **Parameter Name**: MetaDataDate  
 **Date Type**: String  
-**Values supported**:  
+**Values supported**: Date in one of the date formats 
 
 **Parameter Name**: CreatorTool  
 **Date Type**: String  
-**Values supported**:  
+**Values supported**: Any plain text  
 
 **Example**
 {{< highlight csharp >}}
+
 <Render>
-...
-<Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer, Aspose.PDF.ReportingServices">
-<Configuration>
-<CreationDate >2007-12-10</CreationDate>
-<ModifyDate >2008-1-12</ModifyDate>
-<MetaDataDate >2008-3-7</MetaDataDate>
-<CreatorTool >Aspose.PDF for Reporting Services</CreatorTool>
-</Configuration>
-</Extension>
+…
+    <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer, Aspose.Pdf.ReportingServices">
+    <Configuration>
+    <CreationDate>2017-12-10</CreationDate>
+    <ModifyDate>2018-1-12</ModifyDate>
+    <MetaDataDate>2018-3-7</MetaDataDate>
+    <CreatorTool>Aspose.Pdf for Reporting Services</CreatorTool>
+    </Configuration>
+    </Extension>
 </Render>
 
 {{< /highlight >}}
 
 {{% /alert %}}
 
-
-## **PDF Creator information**
-{{% alert color="primary" %}}
-- Please note that you cannot set values against the **Application** and **Producer** fields, because Aspose Ltd. and Aspose.PDF for Reporting Services x.x.x will be displayed against these fields. 
-{{% /alert %}}

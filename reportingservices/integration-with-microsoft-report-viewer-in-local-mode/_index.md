@@ -8,7 +8,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Microsoft Report Viewer is a powerful .NET control allowing the use of RDL and RDLC reports in WinForms and ASP.NET applications. It enables users to view and export reports to different formats. The control is included with Microsoft Visual Studio 2005 and 2008, and is also available as a free download from Microsoft.
+Microsoft Report Viewer is a powerful .NET control allowing the use of RDL and RDLC reports in WinForms and ASP.NET applications. It enables users to view and export reports to different formats. The control is included with Microsoft Visual Studio 2005 - VS2022.
 
 {{% /alert %}}
 
@@ -36,49 +36,39 @@ Where ```<InstallDir>``` is the directory, where you installed or unpacked Aspos
 
 {{% /alert %}}
 
-##### ***Adding a Reference to Aspose.PDF.ReportingServices.dll to your project.***
+## Adding a Reference to Aspose.PDF.ReportingServices.dll to your project
 ![todo:image_alt_text](integration-with-microsoft-report-viewer-in-local-mode_1.png)
 
 {{% alert color="primary" %}}
 **Step 2. Copy and paste the following AddExtension method into your project.** This method adds the specified rendering extension to the list of supported extensions in Microsoft Report Viewer using private reflection.
 {{% /alert %}}
 
-**C#**
+```csharp
 
-{{< highlight csharp >}}
+    using System.Collections;
+    using System.Reflection;
+    using Microsoft.ReportingServices.ReportRendering;
 
- using System.Collections;
+    // Use one of the two namespaces below depending on whether you are developing
+    // a WinForms or WebForms application.
 
-using System.Reflection;
+    using Microsoft.Reporting.WinForms;
 
-using Microsoft.ReportingServices.ReportRendering;
+    // -- or --
+    // using Microsoft.Reporting.WebForms;
+    /// <summary>
+    /// Adds the specified rendering extension to the specified ReportViewer instance.
+    /// </summary>
 
-// Use one of the two namespaces below depending on whether you are developing
+    /// <param name="viewer">A ReportViewer control instance.</param>
 
-// a WinForms or WebForms application.
+    /// <param name="name">The name of the export format.</param>
 
-using Microsoft.Reporting.WinForms;
+    /// <param name="localizedName">The localized name of the export format that appears on the dropdown list.</param>
 
-// -- or --
+    /// <param name="extensionType">The class of the rendering extension to add.</param>
 
-// using Microsoft.Reporting.WebForms;
-
-
-/// <summary>
-
-/// Adds the specified rendering extension to the specified ReportViewer instance.
-
-/// </summary>
-
-/// <param name="viewer">A ReportViewer control instance.</param>
-
-/// <param name="name">The name of the export format.</param>
-
-/// <param name="localizedName">The localized name of the export format that appears on the dropdown list.</param>
-
-/// <param name="extensionType">The class of the rendering extension to add.</param>
-
-private static void AddExtension(ReportViewer viewer, string name, string localizedName, Type extensionType)
+    private static void AddExtension(ReportViewer viewer, string name, string localizedName, Type extensionType)
 
 {
 
@@ -141,8 +131,7 @@ private static void AddExtension(ReportViewer viewer, string name, string locali
     extensions.Add(instance);
 
 }
-
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}}
 
@@ -156,11 +145,9 @@ To add Aspose.Pdf for Reporting Services export format to Microsoft Report Viewe
 
 {{< highlight csharp >}}
 
- AddExtension(reportViewer1, "APPDF", "PDF via Aspose.PDF",
+AddExtension(reportViewer1, "APPDF", "PDF via Aspose.PDF",
 
 typeof(Aspose.PDF.ReportingServices.Renderer));
-
-
 
 {{< /highlight >}}
 
@@ -168,5 +155,6 @@ typeof(Aspose.PDF.ReportingServices.Renderer));
 **Step 4. Test the new export formats.** Run your application and you should notice the Aspose.PDF for Reporting Services export format available in the Export dropdown list in Report Viewer. Select it and run export. Verify the PDF document is created the way you expected.
 {{% /alert %}}
 
-##### ***New export format appear in Report Viewer running in local mode.***
+## New export format appear in Report Viewer running in local mode
+
 ![todo:image_alt_text](integration-with-microsoft-report-viewer-in-local-mode_2.png)
