@@ -26,14 +26,15 @@ The following table indicates the file formats that Aspose.PDF for Node.js via C
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Saves the document in the Microsoft PowerPoint Presentations format| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Saves the document in the Microsoft Word format| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Saves the document in the Microsoft Word format| |{{< emoticons/tick >}}| |
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|Saves the document in JPEG Format| |{{< emoticons/tick >}}| |
-|[PNG](https://docs.fileformat.com/image/png/)|Saves the document in PNG Format| |{{< emoticons/tick >}}| |
-|[BMP](https://docs.fileformat.com/image/bmp/)|Saves the document in BMP Format| |{{< emoticons/tick >}}| |
-|[TIFF](https://docs.fileformat.com/image/tiff/)|Saves the document as Single or Multi-Page TIFF Image| |{{< emoticons/tick >}}| |
+|[JPEG](https://docs.fileformat.com/image/jpeg/)|Saves the document in JPEG Format| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[PNG](https://docs.fileformat.com/image/png/)|Saves the document in PNG Format| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[BMP](https://docs.fileformat.com/image/bmp/)|Saves the document in BMP Format| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[TIFF](https://docs.fileformat.com/image/tiff/)|Saves the document as Single or Multi-Page TIFF Image| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
 |Grayscale|Saves the document as Grayscale| |{{< emoticons/tick >}}| |
-|[Text](https://docs.fileformat.com/word-processing/txt/)|Save the document int Text Format| |{{< emoticons/tick >}}| |
+|[Text](https://docs.fileformat.com/word-processing/txt/)|Save the document int Text Format| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
 |[DICOM](https://docs.fileformat.com/image/dicom/)|Saves the document as DICOM Image| |{{< emoticons/tick >}}| |
 |[CSV](https://docs.fileformat.com/spreadsheet/csv/)|Saves the document as CSV| |{{< emoticons/tick >}}| |
+
 
 
 

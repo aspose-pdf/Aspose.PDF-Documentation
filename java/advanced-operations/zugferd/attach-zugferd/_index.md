@@ -13,14 +13,14 @@ sitemap:
 
 ## Attach ZUGFeRD to PDF
 
-We recommend following steps to attach ZUGFeRD to PDF:
+We recommend the following steps to attach ZUGFeRD to PDF:
 
 * Define a path variable that points to a folder where the input and output PDF files are located.
-* Define a string variable path that stores the path to the PDF file that will be processed. Use the `Paths.get`` method to combine parts of full path.
+* Define a string variable path that stores the path to the PDF file that will be processed. Use the `Paths.get`` method to combine parts of the full path.
 * Create a try-with-resources statement that ensures that the Document object created from the path variable will be closed automatically after the statement ends. The Document object represents the PDF document that will be modified and saved.
 * Create a [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) object by providing the path and description of another file, which contains invoice metadata conforming to the ZUGFeRD standard.
 * Add properties to the file specification object, such as the description, MIME type, and AFrelationship. The AFrelationship indicates how the embedded file is related to the PDF document. In this case, it is set to "Alternative", meaning the embedded file is an alternative representation of the PDF content.
-* Add the file specification object to the document's embedded files collection. File name should be specified to ZUGFeRD standard, e.g. "factur-x.xml".
+* Add the file specification object to the document's embedded files collection. The file name should be specified to ZUGFeRD standard, e.g. "factor-x.xml".
 * Convert the document to PDF/A-3U format, a subset of PDF that ensures the long-term preservation of electronic documents. PDF/A-3U allows embedding files of any format in PDF documents.
 * Save the converted document as a new PDF file (e.g. "ZUGFeRD-res.pdf").
 * Close the try-with-resources statement and release the Document object.

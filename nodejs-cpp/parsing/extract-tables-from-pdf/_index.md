@@ -20,7 +20,7 @@ Please check following code snippet in order to convert PDF file in Node.js envi
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file that will be converted.
 1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
 1. Call the function [AsposePdfTablesToCSV](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftablestocsv/).
@@ -28,7 +28,7 @@ Please check following code snippet in order to convert PDF file in Node.js envi
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to CSV (extract tables) with template "ResultPdfTablesToCSV{0:D2}.csv" ({0}, {0:D2}, {0:D3}, ... format page number), TAB as delimiter and save*/
@@ -39,7 +39,7 @@ Please check following code snippet in order to convert PDF file in Node.js envi
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file that will be converted.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfTablesToCSV](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftablestocsv/).
@@ -47,7 +47,7 @@ Please check following code snippet in order to convert PDF file in Node.js envi
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to CSV (extract tables) with template "ResultPdfTablesToCSV{0:D2}.csv" ({0}, {0:D2}, {0:D3}, ... format page number), TAB as delimiter and save*/
