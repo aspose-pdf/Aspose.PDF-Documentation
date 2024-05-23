@@ -38,21 +38,16 @@ The following Java code snippet shows the process of converting a PDF file into 
 2. Save it to **SaveFormat.Doc** format by calling **Document.save()** method.
 
 ```java
-    public static void main(String[] args) throws IOException {
-        ConvertPDFtoWord();
-        ConvertPDFtoWordDocAdvanced();
-    }
-
-    public static void ConvertPDFtoWord() {
-        // Open the source PDF document
-        Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
-        // Save the file into MS document format
-        pdfDocument.save(_dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
-
-    }
+public static void convertPDFtoWord() {
+    // Open the source PDF document
+    Document document = new Document(DATA_DIR + "PDFToDOC.pdf");
+    // Save the file into MS document format
+    document.save(DATA_DIR + "PDFToDOC_out.doc", SaveFormat.Doc);
+    document.close();
+}
 ```
 
-## Using the DocSaveOptions Class 
+## Using the DocSaveOptions Class
 
 The [DocSaveOptions class](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocSaveOptions) provides numerous properties that improve the process of converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can specify any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
 
@@ -65,26 +60,26 @@ The [DocSaveOptions class](https://reference.aspose.com/pdf/java/com.aspose.pdf/
 - RecognitionBullets is used to switch on bullet recognition during conversion.
 
 ```java
-    public static void ConvertPDFtoWordDocAdvanced()
-    {
-        Path pdfFile = Paths.get(_dataDir.toString(), "PDF-to-DOC.pdf");
-        Path docFile = Paths.get(_dataDir.toString(), "PDF-to-DOC.doc");
-        Document pdfDocument = new Document(pdfFile.toString());        
-        DocSaveOptions saveOptions = new DocSaveOptions();
-        
-        // Specify the output format as DOC
-        saveOptions.setFormat(DocSaveOptions.DocFormat.Doc);
-        // Set the recognition mode as Flow
-        saveOptions.setMode(DocSaveOptions.RecognitionMode.Flow);
-        
-        // Set the Horizontal proximity as 2.5
-        saveOptions.setRelativeHorizontalProximity(2.5f);
-        
-        // Enable the value to recognize bullets during conversion process
-        saveOptions.setRecognizeBullets(true);
+public static void convertPDFtoWordDocAdvanced() {
+    Path pdfFile = Paths.get(DATA_DIR.toString(), "PDF-to-DOC.pdf");
+    Path docFile = Paths.get(DATA_DIR.toString(), "PDF-to-DOC.doc");
+    Document document = new Document(pdfFile.toString());
+    DocSaveOptions saveOptions = new DocSaveOptions();
 
-        pdfDocument.save(docFile.toString(), saveOptions);
-    }
+    // Specify the output format as DOC
+    saveOptions.setFormat(DocSaveOptions.DocFormat.Doc);
+    // Set the recognition mode as Flow
+    saveOptions.setMode(DocSaveOptions.RecognitionMode.Flow);
+
+    // Set the Horizontal proximity as 2.5
+    saveOptions.setRelativeHorizontalProximity(2.5f);
+
+    // Enable the value to recognize bullets during conversion process
+    saveOptions.setRecognizeBullets(true);
+
+    document.save(docFile.toString(), saveOptions);
+    document.close();
+}
 ```
 
 {{% alert color="success" %}}
@@ -107,12 +102,13 @@ The following Java code snippet shows the process of converting a PDF file into 
 2. Save it to **SaveFormat.DocX** format by calling **Document.save()** method.
 
 ```java
-    public static void ConvertPDFtoWord_DOCX_Format() {
-        // Open the source PDF document
-        Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
-        // Save the resultant DOC file
-        pdfDocument.save(_dataDir + "saveOptionsOutput_out.doc", SaveFormat.DocX);
-    }
+public static void convertPDFtoWord_DOCX_Format() {
+    // Open the source PDF document
+    Document document = new Document(DATA_DIR + "PDFToDOC.pdf");
+    // Save the resultant DOC file
+    document.save(DATA_DIR + "saveOptionsOutput_out.doc", SaveFormat.DocX);
+    document.close();
+}
 ```
 
 The [DocSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions) class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.
@@ -120,21 +116,21 @@ The [DocSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsav
 Please take a look over the following code snippet which provides the capability to convert PDF file to DOCX format with Java.
 
 ```java
-    public static void ConvertPDFtoWord_Advanced_DOCX_Format()
-    {        
-        // Open the source PDF document
-        Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
-    
-        // Instantiate DocSaveOptions object
-        DocSaveOptions saveOptions = new DocSaveOptions();
-        // Specify the output format as DOCX
-        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
-        // Set other DocSaveOptions params
-        // ....
-        
-        // Save document in docx format
-        pdfDocument.save("ConvertToDOCX_out.docx", saveOptions);
-    }
+public static void convertPDFtoWord_Advanced_DOCX_Format() {
+    // Open the source PDF document
+    Document document = new Document(DATA_DIR + "PDFToDOC.pdf");
+
+    // Instantiate DocSaveOptions object
+    DocSaveOptions saveOptions = new DocSaveOptions();
+    // Specify the output format as DOCX
+    saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
+    // Set other DocSaveOptions params
+    // ....
+
+    // Save document in docx format
+    document.save("ConvertToDOCX_out.docx", saveOptions);
+    document.close();
+}
 ```
 
 {{% alert color="warning" %}}

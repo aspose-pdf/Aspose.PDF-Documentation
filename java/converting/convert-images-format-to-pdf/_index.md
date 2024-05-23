@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-**Aspose.PDF for Java**  allows you to convert different formats of images to PDF files. Our library demonstrates code snippets for converting the most popular image formats, such as - BMP, CGM, D    MF, JPG, PNG, SVG and TIFF formats.
+**Aspose.PDF for Java**  allows you to convert different formats of images to PDF files. Our library demonstrates code snippets for converting the most popular image formats, such as - BMP, CGM, DICOM, EMF, JPG, PNG, SVG and TIFF formats.
 
 ## Convert BMP to PDF
 
@@ -73,7 +73,7 @@ Aspose presents you online free application ["BMP to PDF"](https://products.aspo
 
 The following code snippet shows you how to convert CGM files to PDF format using Aspose.PDF for Java.
 
-1. Create a CGM [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions) class.
+1. Create a [CgmLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/cgmloadoptions/) class.
 1. Create an instance of [Document](https://reference.aspose.com/page/java/com.aspose.page/Document) class with mention source filename and options.
 1. Save the document with the desired file name.
 
@@ -115,7 +115,7 @@ public final class ConvertCGMtoPDF {
 Aspsoe.PDF for Java allows you to convert DICOM files to PDF format, check next code snippet:
 
 1. Load image into stream
-1. Initialize [`Document object`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
+1. Initialize [Document object](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
 1. Load sample DICOM image file
 1. Save output PDF document
 
@@ -482,44 +482,19 @@ SVG images and their behaviors are defined in XML text files. This means that th
 
 ## How to convert SVG file to PDF format
 
-To convert SVG files to PDF, use the class named [SvgLoadOptions](https://reference.aspose.com/pdf//java/com.aspose.pdf/svgsaveoptions) which is used to initialize the [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. Later, this object is passed as an argument during the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the input format of the source document.
+To convert SVG files to PDF, use the class named [SvgLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgloadoptions) which is used to initialize the [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions) object. Later, this object is passed as an argument during the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) object initialization and helps the PDF rendering engine to determine the input format of the source document.
 
 The following code snippet shows the process of converting SVG file into PDF format.
 
 ```java
-package com.aspose.pdf.examples;
+// Initialize document object
 
-/**
- * Convert SVG to PDF
- */
+String pdfDocumentFileName = Paths.get(_dataDir.toString(), "svg_test.pdf").toString();
+String svgDocumentFileName = Paths.get(_dataDir.toString(), "car.svg").toString();
 
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertSVGtoPDF {
-
-    private ConvertSVGtoPDF() {
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-        ConvertSvgToPDF_Simple();
-    }
-
-    public static void ConvertSvgToPDF_Simple() {
-        // Initialize document object
-
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "svg_test.pdf").toString();
-        String svgDocumentFileName = Paths.get(_dataDir.toString(), "car.svg").toString();
-        
-        SvgLoadOptions option = new SvgLoadOptions();
-        Document pdfDocument = new Document(svgDocumentFileName, option);
-        pdfDocument.save(pdfDocumentFileName);
-    }
+SvgLoadOptions option = new SvgLoadOptions();
+Document pdfDocument = new Document(svgDocumentFileName, option);
+pdfDocument.save(pdfDocumentFileName);
 ```
 
 {{% alert color="success" %}}
@@ -538,46 +513,42 @@ TIFF or TIF, Tagged Image File Format, represents raster images that are meant f
 
 1. Instantiate an instance of Document class
 1. Load input TIFF image
-1. Get FrameDimension of the frames
-1. Add new page for each frame
-1. Finally, save images to PDF pages
+1. Finally, save image as PDF page
 
 Moreover, the following code snippet shows how to convert multi-page or multi-frame TIFF image to PDF:
 
 ```java
-package com.aspose.pdf.examples;
-
-/**
- * Convert TIFF to PDF
- */
+import com.aspose.pdf.Document;
+import com.aspose.pdf.Image;
+import com.aspose.pdf.Page;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import com.aspose.pdf.*;
-
+/**
+ * Convert TIFF to PDF.
+ */
 public final class ConvertTIFFtoPDF {
+
+    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
 
     private ConvertTIFFtoPDF() {
     }
 
-    final static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws IOException {
+    public static void run() throws IOException {
         // Initialize document object
         Document document = new Document();
 
         Page page = document.getPages().add();
         Image image = new Image();
 
-        // Load sample BMP image file
-        image.setFile(Paths.get(_dataDir.toString(), "Sample.tiff").toString());
+        image.setFile(Paths.get(DATA_DIR.toString(), "Sample.tiff").toString());
         page.getParagraphs().add(image);
 
         // Save output PDF document
-        document.save(Paths.get(_dataDir.toString(), "TIFFtoPDF.pdf").toString());
-    }
+        document.save(Paths.get(DATA_DIR.toString(), "TIFFtoPDF.pdf").toString());
+        document.close();
+    }    
 }
-
 ```
