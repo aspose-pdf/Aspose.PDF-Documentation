@@ -30,14 +30,14 @@ One of the most popular feature is PDF to Microsoft Word DOC conversion, which m
 
 **Aspose.PDF for PHP** can create PDF documents from scratch and is a great toolkit for updating, editing and manipulating existing PDF documents. An important feature is the ability to convert pages and entire PDF documents to images. Another popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. (Most users can’t edit PDF documents but can easily work with tables, text, and images in Microsoft Word.)
 
-To make things simple and understandable, Aspose.PDF for PHP provides a two-line code for transforming a source PDF file into a DOC file. 
+To make things simple and understandable, Aspose.PDF for PHP provides a two-line code for transforming a source PDF file into a DOC file.
 
 The following Java code snippet shows the process of converting a PDF file into DOC format.
 
 1. Create an instance of [Document](https://reference.aspose.com/page/java/com.aspose.page/document) object with the source PDF document.
 2. Save it to **SaveFormat.Doc** format by calling **Document.save()** method.
 
-``php
+```php
 // Load the PDF document
 $document = new Document($inputFile);
 
@@ -99,7 +99,7 @@ Aspose.PDF for PHP presents you online free application ["PDF to Word"](https://
 
 ## Convert PDF to DOCX
 
-The DocFormat enumeration also provides the option to choose DOCX as the output format for Word documents. To render the source PDF file to DOCX format, use the code snippet specified below. 
+The DocFormat enumeration also provides the option to choose DOCX as the output format for Word documents. To render the source PDF file to DOCX format, use the code snippet specified below.
 
 ## How to convert PDF to DOCX
 
