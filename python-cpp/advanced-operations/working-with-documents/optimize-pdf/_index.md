@@ -37,19 +37,20 @@ Optimization, or linearization for Web, refers to the process of making a PDF fi
 The following code snippet shows how to optimize a PDF document for the web.
 
 ```python
-import AsposePDFPythonWrappers as ap
 
-# The path to the documents directory.
-dataDir = "..."
+    import AsposePDFPythonWrappers as ap
 
-# Open document
-document = ap.Document(dataDir + "OptimizeDocument.pdf")
+    # The path to the documents directory.
+    dataDir = "..."
 
-# Optimize for web
-document.optimize()
+    # Open document
+    document = ap.Document(dataDir + "OptimizeDocument.pdf")
 
-dataDir = dataDir + "OptimizeDocument_out.pdf"
+    # Optimize for web
+    document.optimize()
 
-# Save output document
-document.Save(dataDir)
+    dataDir = dataDir + "OptimizeDocument_out.pdf"
+
+    # Save output document
+    document.Save(dataDir)
 ```

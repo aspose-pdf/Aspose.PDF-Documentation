@@ -16,7 +16,7 @@ Please check the following code snippet in order to delete attachments from a PD
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file from which the attachments will be removed.
 1. Call `AsposePdf` as Promise and perform the operation for removing attachments. Receive the object if successful.
 1. Call the function [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/).
@@ -24,7 +24,7 @@ Please check the following code snippet in order to delete attachments from a PD
 
 ```js
 
-    const AsposePdf = require('.//AsposePDFforNode.cjs');
+    const AsposePdf = require('asposepdfnodejs');
     const pdf_file = 'Aspose.pdf';
     AsposePdf().then(AsposePdfModule => {
         /*Delete attachments from a PDF-file and save the "ResultPdfDeleteAttachments.pdf"*/
@@ -35,7 +35,7 @@ Please check the following code snippet in order to delete attachments from a PD
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file from which the attachments will be removed.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/).
@@ -43,7 +43,7 @@ Please check the following code snippet in order to delete attachments from a PD
 
 ```js
 
-    import AsposePdf from './/AsposePDFforNode.mjs';
+    import AsposePdf from 'asposepdfnodejs';
     const AsposePdfModule = await AsposePdf();
     const pdf_file = 'Aspose.pdf';
     /*Delete attachments from a PDF-file and save the "ResultPdfDeleteAttachments.pdf"*/

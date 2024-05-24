@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Update Links in PDF File
 
 As discussed in Add Hyperlink in a PDF File, the [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) class makes it possible to add links in a PDF file. There’s also a similar class used to get existing links from inside PDF files. Use this if you need to update an existing link. To update an existing link:

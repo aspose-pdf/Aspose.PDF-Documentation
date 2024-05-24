@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Extract Table from PDF
 
 ```csharp

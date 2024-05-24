@@ -82,6 +82,8 @@ aliases:
 
 Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner. The Aspose.PDF namespace contains classes named [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), and [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) which provides functionality for creating tables when generating PDF documents from scratch.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 Table can be created by creating object of Table Class.
 
 ```csharp

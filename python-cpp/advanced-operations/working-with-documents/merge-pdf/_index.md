@@ -1,48 +1,50 @@
 ---
-title: How to Merge PDF using Python
+title: How to Merge PDF using Python via C++
 linktitle: Merge PDF files
 type: docs
-weight: 50
+weight: 10
 url: /python-cpp/merge-pdf-documents/
-keywords: "merge multiple pdf into single pdf Python, combine multiple pdf into one Python, merge multiple pdf into one Python"
+keywords: "merge multiple pdf into single pdf python, combine multiple pdf into one python, merge multiple pdf into one python"
 description: This page explain how to merge PDF documents into a single PDF file with Python.
-lastmod: "2023-12-22"
+lastmod: "2024-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-## Merge or combine multiple PDF into single PDF in Python
+## Merge or combine multiple PDF into single PDF in Python via C++
 
-Merging PDF in Python is not straightforward task without using 3rd party library.
-This article shows how to merge multiple PDF files into a single PDF document using Aspose.PDF for Python. PDF files are merged such that the first one is joined at the end of the other document.
-
-## Merge PDF Files using Python and DOM
+By leveraging Python and a C++ library by Aspose, you can efficiently merge multiple PDF files into a single PDF with ease. 
 
 To concatenate two PDF files:
+
+1. Open first document
+1. Then add pages of second document to the first
+1. Save concatenated output file with 'document.save' method.
 
 The following code snippet shows how to concatenate PDF files.
 
 ```python
-import AsposePDFPythonWrappers as ap
 
-# The path to the documents directory.
-dataDir = ""
+    import AsposePDFPythonWrappers as apw
+    import AsposePDFPython as apCore
+    import os
+    import os.path
 
-# Open first document
-pdfDocument1 = ap.Document(dataDir + "sample.pdf")
-pdfDocument2 = ap.Document(dataDir + "sample2.pdf")
+    dataDir = os.path.join(os.getcwd(), "samples")
+    input_file= os.path.join(dataDir , "sample0.pdf")
+    output_file = os.path.join(dataDir , "results", "concatenated-files.pdf")
 
-# Add pages of second document to the first
-pdfDocument1.pages.add(pdfDocument2.pages)
+    # Open first document
+    document1 = apw.Document(inputFile)
+    document2 = apw.Document(inputFile)
 
-dataDir = dataDir + "ConcatenatePdfFiles_out.pdf"
-# Save concatenated output file
-pdfDocument1.save(dataDir)
+    # Add pages of second document to the first
+    document1.pages.add(document2.pages)
+
+    # Save concatenated output file
+    document1.save(output_file)
 ```
 
-## Live Example
 
-[Aspose.PDF Merger](https://products.aspose.app/pdf/merger) is an online free web application that allows you to investigate how presentation merging functionality works.
 
-[![Aspose.PDF Merger](merger.png)](https://products.aspose.app/pdf/merger)

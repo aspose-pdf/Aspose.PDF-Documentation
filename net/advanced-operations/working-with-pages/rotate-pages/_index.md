@@ -78,6 +78,8 @@ sitemap:
 
 This topic describes how to update or change the page orientation of pages in an existing PDF file programmatically with C#.
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Change Page Orientation
 
 From Aspose.PDF for .NET 9.6.0 release, we have added great new features like changing the page orientation from landscape to portrait and vice versa. To change the page orientation, set the page’s MediaBox using the following code snippet. You can also change page orientation by setting rotation angle using Rotate() method.

@@ -76,6 +76,8 @@ sitemap:
 }
 </script>
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Add Curve object
 
 A graph [Curve](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve) is a connected union of projective lines, each line meeting three others in ordinary double points.

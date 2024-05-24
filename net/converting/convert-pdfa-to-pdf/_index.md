@@ -11,6 +11,8 @@ sitemap:
     priority: 0.8
 ---
 
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
 ## Convert PDF/A document to PDF
 
 Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive">PDF/A</abbr> restriction from the original document. 

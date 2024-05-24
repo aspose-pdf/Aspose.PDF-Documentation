@@ -14,9 +14,10 @@ sitemap:
 ## Save PDF document to file system
 
 ```python
-import AsposePDFPythonWrappers as ap
 
-document = ap.Document("sample.pdf")
-document.pages.add()
-document.save("sample_mod.pdf")
+    import AsposePDFPythonWrappers as ap
+
+    document = ap.Document("sample.pdf")
+    document.pages.add()
+    document.save("sample_mod.pdf")
 ```

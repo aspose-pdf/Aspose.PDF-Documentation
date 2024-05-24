@@ -13,16 +13,16 @@ sitemap:
 
 ## Optimize PDF Document
 
-Toolkit by Aspose.PDF for Node.js via C++ allows you to optimize PDF content for the Web. 
+Toolkit by Aspose.PDF for Node.js via C++ allows you to optimize PDF content for the Node.js environment. 
 
-Optimization, or linearization for Web, refers to the process of making a PDF file suitable for online browsing using a web browser.
+Optimization, or linearization refers to the process of making a PDF file suitable for online browsing using a web browser.
 
 In case you want to optimize PDF, you can use [AsposePdfOptimize](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimize/) function. 
 Please check the following code snippet in order to optimize PDF files in Node.js environment.
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF file which will be optimized.
 1. Call `AsposePdf` as Promise and perform the operation for optimizing file. Receive the object if successful.
 1. Call the function [AsposePdfOptimize](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimize/).
@@ -30,7 +30,7 @@ Please check the following code snippet in order to optimize PDF files in Node.j
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Optimize a PDF-file and save the "ResultOptimize.pdf"*/
@@ -41,7 +41,7 @@ Please check the following code snippet in order to optimize PDF files in Node.j
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF file which will be optimized.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfOptimize](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimize/).
@@ -49,7 +49,7 @@ Please check the following code snippet in order to optimize PDF files in Node.j
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Optimize a PDF-file and save the "ResultOptimize.pdf"*/

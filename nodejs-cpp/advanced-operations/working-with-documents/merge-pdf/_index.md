@@ -21,7 +21,7 @@ Please check the following code snippet in order to merge two PDFs files in Node
 
 **CommonJS:**
 
-1. Call `require` and import `AsposePDFforNode` module as `AsposePdf` variable.
+1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
 1. Specify the name of the PDF files which will be merged.
 1. Call `AsposePdf` as Promise and perform the operation for merging. Receive the object if successful.
 1. Call the function [AsposePdfMerge2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfmerge2files/).
@@ -29,7 +29,7 @@ Please check the following code snippet in order to merge two PDFs files in Node
 
 ```js
 
-  const AsposePdf = require('.//AsposePDFforNode.cjs');
+  const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Merge two PDF-files and save the "ResultMerge.pdf"*/
@@ -40,7 +40,7 @@ Please check the following code snippet in order to merge two PDFs files in Node
 
 **ECMAScript/ES6:**
 
-1. Import the AsposePDFforNode.mjs module.
+1. Import the `asposepdfnodejs` module.
 1. Specify the name of the PDF files which will be merged.
 1. Initialize the AsposePdf module. Receive the object if successful.
 1. Call the function [AsposePdfMerge2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfmerge2files/).
@@ -48,7 +48,7 @@ Please check the following code snippet in order to merge two PDFs files in Node
 
 ```js
 
-  import AsposePdf from './/AsposePDFforNode.mjs';
+  import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Merge two PDF-files and save the "ResultMerge.pdf"*/

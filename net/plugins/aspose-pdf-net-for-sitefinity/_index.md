@@ -1,7 +1,7 @@
 ---
 title: Aspose.PDF .NET for Sitefinity
 type: docs
-weight: 50
+weight: 300
 url: /net/aspose-pdf-net-for-sitefinity/
 description: Learn how to use PDF Import Module for Sitefinity
 lastmod: "2021-06-05"
