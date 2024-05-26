@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-**Aspose.PDF for PHP**  allows you to convert different formats of images to PDF files. Our library demonstrates code snippets for converting the most popular image formats, such as - BMP, CGM, DICOM, JPG, PNG, SVG and TIFF formats.
+**Aspose.PDF for PHP**  allows you to convert different formats of images to PDF files. Our library demonstrates code snippets for converting the most popular image formats, such as - BMP, CGM, D    MF, JPG, PNG, SVG and TIFF formats.
 
 ## Convert BMP to PDF
 
