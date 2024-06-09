@@ -15,54 +15,9 @@ sitemap:
 
 To produce PDF documents, the machine to run [Aspose.PDF for PHP via Java](https://products.aspose.com/pdf/php-java/) doesn't need to have [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) installed as Aspose.PDF for PHP via Java itself is a PDF document creation engine. However in order to view PDF documents produced by Aspose.PDF for PHP via Java the machine does need at least an [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html). It can be downloaded for free.
 
-## Supported Operating Systems
+## Prerequisites
 
-Aspose.PDF for PHP via Java supports any 32-bit or 64-bit operating system that runs the Java runtime including, but not limited:
-
-### Windows
-
-- Microsoft Windows 2000 Professional ( x64, x86)
-- Microsoft Windows 2000 Server (x64, x86)
-- Microsoft Windows 2003 Server (x64, x86)
-- Microsoft Windows 2008 Server (x64, x86)
-- Microsoft Windows 2012 Server (x64, x86)
-- Microsoft Windows 2012 R2 Server (x64, x86)
-- Microsoft Windows 2016 Server (x64, x86)
-- Microsoft Windows 2019 Server (x64, x86)
-- Microsoft Windows Vista (x64, x86)
-- Microsoft Windows XP (x64, x86)
-- Microsoft Windows 7 (x64, x86)
-- Microsoft Windows 8, 8.1 (x64, x86)
-- Microsoft Windows 10 (x64, x86)
-- Microsoft Azure
-
-### Linux
-
-- Linux (Ubuntu, CentOS, and others)
-
-### Mac
-
-- Mac OS X
-
-## Supported Java Versions
-
-Aspose.PDF for PHP via Java supports the following Java versions:
-
-- J2SE 8.0 (1.8) or above (*for example Java 10*) 
-- Support of Aspose.Pdf for Java on IBM i (Iseries or As/400)
-
-## Development Environments
-
-You can use Aspose.PDF for PHP via Java to develop applications in any development environment that targets the Java platform, but the following environments are explicitly supported:
-
-- Microsoft Visual Studio 2003
-- Microsoft Visual Studio 2005
-- Microsoft Visual Studio 2008
-- Microsoft Visual Studio 2010
-- Microsoft Visual Studio 2011
-- Microsoft Visual Studio 2012
-- Microsoft Visual Studio 2013
-- Microsoft Visual Studio 2015
-- Microsoft Visual Studio 2017
-- Microsoft Visual Studio 2019
-
+- JDK
+- PHP/Java Bridge
+- Web Server like Tomcat - 9.0 version
+- PHP 7,and 8 version

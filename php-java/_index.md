@@ -41,10 +41,10 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.PDF for PHP via Java Features](/pdf/php-java/key-features/)
 - [Aspose.PDF for PHP via Java Release Notes]()
 - [Aspose.PDF for PHP via Java Product Page](https://products.aspose.com/pdf/php-java/)
-- [Download Aspose.PDF for PHP via Java]()
+- [Download Aspose.PDF for PHP via Java](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)
 - [Install Aspose.PDF for Java from Aspose Repository](/pdf/php-java/installation/)
 - [Aspose.PDF for PHP via Java API Reference Guide](https://reference.aspose.com/java/pdf)
-- [Download Examples at GitHub Repository]()
+- [Download Examples at GitHub Repository](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)
 - [Aspose.PDF for PHP via Java Free Support Forum](https://forum.aspose.com/c/pdf)
 - [Aspose.PDF for PHP via Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
