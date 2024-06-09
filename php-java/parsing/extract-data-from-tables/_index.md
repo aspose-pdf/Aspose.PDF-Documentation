@@ -15,7 +15,7 @@ sitemap:
 
 Extracting tables from PDFs is not a trivial task because the table can be created variously.
 
-Aspose.PDF for Java has a tool to make it easy to retrieve tables. To extract table data, you should perform the following steps:
+Aspose.PDF for PHP via Java has a tool to make it easy to retrieve tables. To extract table data, you should perform the following steps:
 
 1. Open the PDF document - instantiate a [Document](https://reference.aspose.com/pdf/php-java/com.aspose.pdf/Document) object;
 1. Create a TableAbsorber [TableAbsorber](https://reference.aspose.com/pdf/php-java/com.aspose.pdf/tableabsorber) object to extract tables from the document.
@@ -27,6 +27,7 @@ Aspose.PDF for Java has a tool to make it easy to retrieve tables. To extract ta
 The following example shows table extraction from the all pages:
 
 ```php
+
 $document = new Document($inputFile);
 $tableAbsorber = new TableAbsorber();
 
@@ -83,15 +84,16 @@ The following example shows how to extract table and store it as CSV file.
 To see how to convert PDF to Excel Spreadsheet please refer to [Convert PDF to Excel](/pdf/php-java/convert-pdf-to-excel/) article.
 
 ```php
-// Load the input PDF document using the Document class.
-$document = new Document($inputFile);
 
-// Create an instance of the ExcelSaveOptions class to specify the save options.
-$saveOption = new ExcelSaveOptions();
+    // Load the input PDF document using the Document class.
+    $document = new Document($inputFile);
 
-// Set the output format to CSV.
-$saveOption->setFormat(ExcelSaveOptions_ExcelFormat::$CSV);
+    // Create an instance of the ExcelSaveOptions class to specify the save options.
+    $saveOption = new ExcelSaveOptions();
 
-// Save the PDF document as an Excel file using the specified save options.
-$document->save($outputFile, $saveOption);
+    // Set the output format to CSV.
+    $saveOption->setFormat(ExcelSaveOptions_ExcelFormat::$CSV);
+
+    // Save the PDF document as an Excel file using the specified save options.
+    $document->save($outputFile, $saveOption);
 ```

@@ -17,7 +17,7 @@ This article explains how to convert HTML to PDF using Java. The code is very si
 
 ## Java HTML to PDF Converter Library
 
-**Aspose.PDF for Java** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly.
+**Aspose.PDF for PHP via Java** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly.
 The process of converting HTML to PDF can be flexibly customized.
 
 ## Convert HTML to PDF

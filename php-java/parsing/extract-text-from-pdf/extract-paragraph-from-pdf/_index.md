@@ -18,6 +18,7 @@ We can get text from a PDF document by searching a particular text (using "plain
 ### Iterating through paragraphs collection and get the text of them
 
 ```php
+
 // Open an existing PDF file
 $document = new Document($inputFile);
 // Instantiate ParagraphAbsorber
