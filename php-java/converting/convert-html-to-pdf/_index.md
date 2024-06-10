@@ -13,7 +13,7 @@ sitemap:
 
 ## Overview
 
-This article explains how to convert HTML to PDF using Java. The code is very simple, just load HTML to Document class and save it as output PDF. Converting MHTML to PDF in Java is also similar. It covers the following topics
+This article explains how to convert HTML to PDF using PHP. The code is very simple, just load HTML to Document class and save it as output PDF. Converting MHTML to PDF in Java is also similar. It covers the following topics
 
 ## Java HTML to PDF Converter Library
 

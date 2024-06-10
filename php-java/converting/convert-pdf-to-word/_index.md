@@ -13,7 +13,7 @@ sitemap:
 
 ## Overview
 
-This article explains how to convert PDF to Word using Java. The code is very simple, just load PDF to Document class and save it as output Microsoft Word DOC or DOCX format. It covers the following topics
+This article explains how to convert PDF to Word using PHP. The code is very simple, just load PDF to Document class and save it as output Microsoft Word DOC or DOCX format. It covers the following topics
 
 - [PHP PDF to Word](#convert-pdf-to-doc)
 - [PHP PDF to DOC](#convert-pdf-to-doc)

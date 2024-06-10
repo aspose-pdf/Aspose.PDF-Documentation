@@ -21,6 +21,9 @@ But **Aspose.PDF for PHP via Java** can help you cope with most of the tasks tha
 
 You are able to do the following:
 
-- [Formatting PDF Document](/pdf/java/formatting-pdf-document/) - get and set document properties, embedding fonts, and other operations with PDF files.  
-- [Manipulate PDF Document](/pdf/java/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.
-
+- [Formatting PDF Document](/pdf/php-java/formatting-pdf-document/) - get and set document properties, embedding fonts, and other operations with PDF files.  
+- [Manipulate PDF Document](/pdf/php-java/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.
+- [Optimize PDF](/pdf/php-java/optimize-pdf/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
+- [Merge PDF](/pdf/php-java/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using PHP.
+- [Split PDF](/pdf/php-java/split-document/) - split PDF pages into individual PDF files in your Java applications.
+- [Working with Headings](/pdf/php-java/working-with-headings/) - you can create numbering in heading your PDF document with Java.
