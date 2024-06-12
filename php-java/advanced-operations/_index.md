@@ -17,3 +17,4 @@ You'll learn different ways to:
 
 - [Working with Documents](/pdf/php-java/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
 - [Working with Forms](/pdf/php-java/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.
+- [Working with Pages](/pdf/php-java/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps.

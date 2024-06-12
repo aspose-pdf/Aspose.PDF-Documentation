@@ -27,3 +27,4 @@ You are able to do the following:
 - [Merge PDF](/pdf/php-java/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using PHP.
 - [Split PDF](/pdf/php-java/split-document/) - split PDF pages into individual PDF files in your Java applications.
 - [Working with Headings](/pdf/php-java/working-with-headings/) - you can create numbering in heading your PDF document with Java.
+
