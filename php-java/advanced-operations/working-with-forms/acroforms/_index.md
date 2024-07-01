@@ -36,7 +36,7 @@ For a more detailed study of the possibilities of working with forms, study the 
 
 -[Create AcroForm](/pdf/php-java/create-form/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using PHP.
 
--[Fill AcroForm](/pdf/php-java/fill-form/) - to fill a form field, get the field from the Document object’s Form collection.
+-[Fill AcroForm](/pdf/php-java/fill-form/) - to fill a form field, get the field from the Document object's Form collection.
 
 -[Extract Data AcroForm](/pdf/php-java/extract-form/) - get values from all and individual the fields and etc.
 

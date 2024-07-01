@@ -18,7 +18,7 @@ The [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) cl
 To add a form field:
 
 1. Create the form field which you want to add.
-2. Call the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/Form) collection’s add method.
+2. Call the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/Form) collection's add method.
 
 This example shows how to add a TextBoxField. You can add any form field using the same approach:
 
@@ -191,7 +191,7 @@ The following code snippets show how to add [ComboBox](https://reference.aspose.
 
 ## Add Tooltip to Form
 
-The Document class provides a collection named Form which manages form fields in a PDF document. To add a tooltip to a form field, use the Field class AlternateName. Adobe Acrobat uses the ‘alternate name’ as a field tooltip.
+The Document class provides a collection named Form which manages form fields in a PDF document. To add a tooltip to a form field, use the Field class AlternateName. Adobe Acrobat uses the ‘alternate name' as a field tooltip.
 
 The code snippets that follow show how to add a tooltip to a form field with PHP.
 

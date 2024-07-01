@@ -18,3 +18,11 @@ You'll learn different ways to:
 - [Working with Documents](/pdf/php-java/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
 - [Working with Forms](/pdf/php-java/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.
 - [Working with Pages](/pdf/php-java/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps.
+- [Working with Text](/pdf/php-java/working-with-text/) - add, format, search and replace text in PDF.
+- [Working with Images](/pdf/php-java/working-with-images/) - insert, remove, extract image in document.
+- [Working with Tables](/pdf/php-java/working-with-tables/) - insert, decorate table in PDF, extract tabular data.
+- [Annotations](/pdf/php-java/annotations/) - annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
+- [Attachments](/pdf/php-java/attachments/) - PDF documents may contain file attachments. These attachments can be other PDF documents, or any kind of file, like audio files, Microsoft Office documents etc. You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with PHP.
+- [Metadata in PDFs](/pdf/php-java/pdf-file-metadata/) - get or set meta data in documents, dealing with XMP data.
+- [Securing and Signing](/pdf/php-java/securing-and-signing/) - protect and sign your PDF document programmatically
+

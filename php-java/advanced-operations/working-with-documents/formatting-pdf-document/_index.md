@@ -184,9 +184,9 @@ The following code snippet shows how to embed a font in a PDF file.
 
 ## Embedding Fonts while creating PDF
 
-If you need to use any font other than the 14 core fonts supported by Adobe Reader, then you must embed the font description while generating a PDF file. If font information is not embedded, Adobe Reader will take it from the Operating System if it’s installed over the system, or it will construct a substitute font according to the font descriptor in the PDF. Please note that embedded font must be installed on the host machine i.e. in case of the following code ‘Univers Condensed’ font is installed over the system.
+If you need to use any font other than the 14 core fonts supported by Adobe Reader, then you must embed the font description while generating a PDF file. If font information is not embedded, Adobe Reader will take it from the Operating System if it's installed over the system, or it will construct a substitute font according to the font descriptor in the PDF. Please note that embedded font must be installed on the host machine i.e. in case of the following code ‘Univers Condensed' font is installed over the system.
 
-We use the property setEmbedded of [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/Font) class to embed the font information into PDF file. Setting the value of this property to ‘true’ will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
+We use the property setEmbedded of [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/Font) class to embed the font information into PDF file. Setting the value of this property to ‘true' will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
 
 ```php
 

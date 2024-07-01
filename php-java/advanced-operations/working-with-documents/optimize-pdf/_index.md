@@ -147,7 +147,7 @@ Another important issue is the execution time. But again, we can manage this set
 
 ## Removing Unused Objects
 
-A PDF document sometimes contains the PDF objects that are not referenced from any other object in the document. This may happen, for example, when a page is removed from the document page tree but the page object itself isn’t removed. Removing these objects doesn’t make the document invalid but rather shrinks it.
+A PDF document sometimes contains the PDF objects that are not referenced from any other object in the document. This may happen, for example, when a page is removed from the document page tree but the page object itself isn't removed. Removing these objects doesn't make the document invalid but rather shrinks it.
 
 ```php
 
@@ -170,7 +170,7 @@ A PDF document sometimes contains the PDF objects that are not referenced from a
 
 ## Removing Unused Streams
 
-Sometimes a document contains unused resource streams. These streams are not “unused objects” because they are referenced from a page’s resource dictionary. This may happen in cases where an image has been removed from the page but not from the page resources. Also, this situation often occurs when pages are extracted from the document and document pages have “common” resources, that is, the same Resources object. Page contents are analyzed in order to determine if a resource stream is used or not. Unused streams are removed. Sometimes this decreases the document size.
+Sometimes a document contains unused resource streams. These streams are not “unused objects” because they are referenced from a page's resource dictionary. This may happen in cases where an image has been removed from the page but not from the page resources. Also, this situation often occurs when pages are extracted from the document and document pages have “common” resources, that is, the same Resources object. Page contents are analyzed in order to determine if a resource stream is used or not. Unused streams are removed. Sometimes this decreases the document size.
 
 ```php
 
@@ -235,7 +235,7 @@ Additionally, we can use AllowReusePageContent settings. If this property is set
 
 ## Unembedding Fonts 
 
-If the document uses embedded fonts it means that all font data is placed in the document. The advantage is that the document is viewable regardless of whether the font is installed on the user’s machine or not. But embedding fonts makes the document larger. The unembed fonts method removes all embedded fonts. This decreases the document size but the document may become unreadable if the correct font is not installed.
+If the document uses embedded fonts it means that all font data is placed in the document. The advantage is that the document is viewable regardless of whether the font is installed on the user's machine or not. But embedding fonts makes the document larger. The unembed fonts method removes all embedded fonts. This decreases the document size but the document may become unreadable if the correct font is not installed.
 
 ```php
 

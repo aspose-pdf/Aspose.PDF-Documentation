@@ -265,7 +265,7 @@ It is common to customize the page numbering in the TOC while adding TOC in a PD
 
 ## Add Layers to PDF File
 
-Layers can be used in PDF documents in many ways. You might have a multi-lingual file that you want to distribute and want text in each language to appear on different layers, with the background design appearing on a separate layer. You might also create documents with animation that appears on a separate layer. One example could be to add a license agreement to your file, and you don’t want a user to view the content until they agree to the terms of the agreement.
+Layers can be used in PDF documents in many ways. You might have a multi-lingual file that you want to distribute and want text in each language to appear on different layers, with the background design appearing on a separate layer. You might also create documents with animation that appears on a separate layer. One example could be to add a license agreement to your file, and you don't want a user to view the content until they agree to the terms of the agreement.
 
 Aspose.PDF for PHP via Java supports adding layers to PDF files.
 
