@@ -149,7 +149,7 @@ Another important issue is the execution time. But again, we can manage this set
 
 ## Removing Unused Objects
 
-A PDF document sometimes contains the PDF objects that are not referenced from any other object in the document. This may happen, for example, when a page is removed from the document page tree but the page object itself isn’t removed. Removing these objects doesn’t make the document invalid but rather shrinks it.
+A PDF document sometimes contains the PDF objects that are not referenced from any other object in the document. This may happen, for example, when a page is removed from the document page tree but the page object itself isn't removed. Removing these objects doesn't make the document invalid but rather shrinks it.
 
 ```php
 

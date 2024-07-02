@@ -14,7 +14,7 @@ sitemap:
 ## Set Custom Form Field Font
 
 Form fields in Adobe PDF files can be configured to use specific default fonts. Aspose.PDF allows developers to apply any font as a field default font, whether one of the 14 core fonts or a custom font.
-To set and update the default font used for form fields, Aspose.PDF has the DefaultAppearance (Font font, double size, Color color) class. This class can be accessed using com.aspose.pdf.DefaultAppearance. To use this object, use the Field class’ setDefaultAppearance(..) method.
+To set and update the default font used for form fields, Aspose.PDF has the DefaultAppearance (Font font, double size, Color color) class. This class can be accessed using com.aspose.pdf.DefaultAppearance. To use this object, use the Field class' setDefaultAppearance(..) method.
 
 The following code snippet shows you how to set the default font for PDF form field.
 

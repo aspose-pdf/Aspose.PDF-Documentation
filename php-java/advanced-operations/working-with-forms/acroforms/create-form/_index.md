@@ -191,7 +191,7 @@ The following code snippets show how to add [ComboBox](https://reference.aspose.
 
 ## Add Tooltip to Form
 
-The Document class provides a collection named Form which manages form fields in a PDF document. To add a tooltip to a form field, use the Field class AlternateName. Adobe Acrobat uses the ‘alternate name’ as a field tooltip.
+The Document class provides a collection named Form which manages form fields in a PDF document. To add a tooltip to a form field, use the Field class AlternateName. Adobe Acrobat uses the ‘alternate name' as a field tooltip.
 
 The code snippets that follow show how to add a tooltip to a form field with PHP.
 
