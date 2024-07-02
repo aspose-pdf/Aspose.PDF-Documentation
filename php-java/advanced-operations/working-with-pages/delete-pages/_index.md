@@ -13,7 +13,7 @@ sitemap:
 
 ## Delete Page from PDF File
 
-1. Call the delete method and specify the page’s index
+1. Call the delete method and specify the page's index
 1. Call the save method to save the updated PDF file
 The following code snippet shows how to delete a particular page from the PDF file using PHP.
 

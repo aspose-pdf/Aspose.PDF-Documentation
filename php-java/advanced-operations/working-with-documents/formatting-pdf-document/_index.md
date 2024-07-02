@@ -14,8 +14,8 @@ This topic helps you understand how to get the properties of the document window
 
 To set these different properties, open the PDF file using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class. You can now get the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's methods, such as
 
-- [IsCenterWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isCenterWindow--) – Center the document window on screen. Default: false.
-- [SetDirection](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-) – Reading order. This determines how pages are laid out when displayed side by side. Default: left to right.
+- [isCenterWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isCenterWindow--) – Center the document window on screen. Default: false.
+- [setDirection](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-) – Reading order. This determines how pages are laid out when displayed side by side. Default: left to right.
 - [isDisplayDocTitle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isDisplayDocTitle--) – Display the document title in the document window title bar. Default: false (the title is displayed).
 - [setHideMenuBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideMenubar-boolean-) – Hide or display the document window's menu bar. Default: false (menu bar is displayed).
 - [setHideToolBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideToolBar-boolean-) – Hide or display the document window's toolbar. Default: false (toolbar is displayed).
@@ -142,7 +142,7 @@ Aspose.PDF for PHP via Java supports font embedding in existing PDF documents. Y
 1. Open an existing PDF file using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
 1. Use the [com.aspose.pdf.Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/Font) class to embed the font.
    1. The setEmbedded(true) method embeds the full font.
-   1. The pageFont.isSubset(true) method embeds a subset of the font.
+   1. The [isSubset(true) method](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/#isSubset--) embeds a subset of the font.
 
 A font subset embeds only the characters that are used and is useful where fonts are used for short sentences or slogans, for example where a corporate font is used for a logo, but not for the body text. Using a subset reduces the file size of the output PDF.
 
@@ -151,7 +151,6 @@ However, if a custom font is used for the body text, embed it in its entirety.
 The following code snippet shows how to embed a font in a PDF file.
 
 ```php
-
   // Open document
     $document = new Document($inputFile);
     // Iterate through all the pages
@@ -184,7 +183,7 @@ The following code snippet shows how to embed a font in a PDF file.
 
 ## Embedding Fonts while creating PDF
 
-If you need to use any font other than the 14 core fonts supported by Adobe Reader, then you must embed the font description while generating a PDF file. If font information is not embedded, Adobe Reader will take it from the Operating System if it’s installed over the system, or it will construct a substitute font according to the font descriptor in the PDF. Please note that embedded font must be installed on the host machine i.e. in case of the following code ‘Univers Condensed’ font is installed over the system.
+If you need to use any font other than the 14 core fonts supported by Adobe Reader, then you must embed the font description while generating a PDF file. If font information is not embedded, Adobe Reader will take it from the Operating System if it's installed over the system, or it will construct a substitute font according to the font descriptor in the PDF. Please note that embedded font must be installed on the host machine i.e. in case of the following code ‘Univers Condensed’ font is installed over the system.
 
 We use the property setEmbedded of [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/Font) class to embed the font information into PDF file. Setting the value of this property to ‘true’ will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
 

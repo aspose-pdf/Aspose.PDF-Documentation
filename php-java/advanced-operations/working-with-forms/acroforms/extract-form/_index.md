@@ -13,9 +13,9 @@ sitemap:
 
 ## Get Value from an Individual Field of PDF Document
 
-The form field’s [getValue() method](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) allows you to get the value of a particular field.
+The form field's [getValue() method](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) allows you to get the value of a particular field.
 
-To get the value, get the form field from the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s Form collection.
+To get the value, get the form field from the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's Form collection.
 
 This example selects a [textBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) and retrieves its value using the [getValue() method](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--).
 
