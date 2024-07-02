@@ -425,7 +425,7 @@ Consider option using XML document based on XSL-FO standard.
 
 ### Convert XSL-FO to PDF
 
-The conversion of XSL-FO files to PDF can be implemented using [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions),  but sometimes you can meet with the incorrect file structure. 
+The conversion of XSL-FO files to PDF can be implemented using [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions).
 
 ```java
 package com.aspose.pdf.examples;
@@ -471,23 +471,23 @@ public final class ConvertXMLtoPDF {
 ### Convert XSL-FO to PDF with set error handling strategy
 
 ```java
-public static void Convert_XSLFO_to_PDF_Adv() throws IOException {
-        // Initialize document object
+// Initialize document object
 
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo_txt.pdf").toString();
-        String xmlDocumentFileName = Paths.get(_dataDir.toString(), "demo.xml").toString();
-        String xsltDocumentFileName = Paths.get(_dataDir.toString(), "employees.xslt").toString();
+String documentFileName = Paths.get(DATA_DIR.toString(), "demo_txt.pdf").toString();
+String xmlDocumentFileName = Paths.get(DATA_DIR.toString(), "demo.xml").toString();
+String xsltDocumentFileName = Paths.get(DATA_DIR.toString(), "employees.xslt").toString();
 
-        XslFoLoadOptions options = new XslFoLoadOptions(xsltDocumentFileName);
-        // Set error handling strategy
-        options.ParsingErrorsHandlingType = XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
+XslFoLoadOptions options = new XslFoLoadOptions(xsltDocumentFileName);
 
-        // Instantiate a Document object by calling its empty constructor
-        Document pdfDocument = new Document(xmlDocumentFileName,options);
+// Set error handling strategy
+options.setParsingErrorsHandlingType(XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately);
 
-        // Save resultant PDF file
-        pdfDocument.save(pdfDocumentFileName);
-    }
+// Instantiate a Document object by calling its empty constructor
+Document document = new Document(xmlDocumentFileName, options);
+
+// Save resultant PDF file
+document.save(documentFileName);
+document.close();
 ```
 
 ## Convert LaTeX/TeX to PDF
@@ -534,4 +534,3 @@ Aspose.PDF for Java presents you online free application ["LaTex to PDF"](https:
 
 [![Aspose.PDF Convertion LaTeX/TeX to PDF with Free App](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
 {{% /alert %}}
-

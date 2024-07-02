@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/convert-pdf-to-excel/
 lastmod: "2021-11-19"
-keywords: convert PDF to Excel using java, convert PDF to XLS using csharp, convert PDF to XLSX using csharp, export table from PDF to Excel in csharp.
+keywords: convert PDF to Excel using Java, convert PDF to XLS using Java, convert PDF to XLSX using Java, export table from PDF to Excel in Java
 description: Aspose.PDF for Java allows you to convert PDF to Excel format using java. During this, the individual pages of the PDF file are converted to Excel worksheets.
 sitemap:
     changefreq: "monthly"
@@ -24,7 +24,7 @@ Aspose.PDF for Java presents you online free application ["PDF to XLSX"](https:/
 
 ## Convert PDF to Excel XLS
 
-To convert PDF files to XLS format, Aspose.PDF has a class called [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). An object of the [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class is passed as a second argument to the Document.Save(..) constructor. 
+To convert PDF files to XLS format, Aspose.PDF has a class called [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). An object of the [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class is passed as a second argument to the Document.Save(..) method. 
 
 Converting a PDF file into XLSX format is part of the library from Aspose.PDF for Java 18.6 version. In order to convert PDF files to XLSX format, you need to set format as XLSX using setFormat() method of [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) Class.
 

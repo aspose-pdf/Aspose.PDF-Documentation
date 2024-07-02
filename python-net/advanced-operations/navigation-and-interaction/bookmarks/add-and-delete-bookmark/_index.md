@@ -78,7 +78,7 @@ sitemap:
 
 ## Add a Bookmark to a PDF Document
 
-Bookmarks are held in the Document object’s [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) collection, itself in the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection.
+Bookmarks are held in the Document object's [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) collection, itself in the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection.
 
 To add a bookmark to a PDF:
 
@@ -117,9 +117,9 @@ To add a child bookmark to a PDF file, first add a parent bookmark:
 
 1. Open a document.
 1. Add a bookmark to the [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/), defining its properties.
-1. Add the OutlineItemCollection to the Document object’s [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection.
+1. Add the OutlineItemCollection to the Document object's [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection.
 
-The child bookmark is created just like the parent bookmark, explained above, but is added to the parent bookmark’s Outlines collection
+The child bookmark is created just like the parent bookmark, explained above, but is added to the parent bookmark's Outlines collection
 
 The following code snippets show how to add child bookmark to a PDF document.
 
@@ -157,8 +157,8 @@ All bookmarks in a PDF are held in the [OutlineCollection](https://reference.asp
 
 To delete all bookmarks from a PDF file:
 
-1. Call the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection’s Delete method.
-1. Save the modified file using the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object’s [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
+1. Call the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection's Delete method.
+1. Save the modified file using the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object's [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 The following code snippets show how to delete all bookmarks from a PDF document.
 
@@ -181,7 +181,7 @@ The following code snippets show how to delete all bookmarks from a PDF document
 
 To delete a particular bookmark from a PDF file:
 
-1. Pass the bookmark’s title as parameter to the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection’s Delete method.
+1. Pass the bookmark's title as parameter to the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection's Delete method.
 1. Then save the updated file with the Document object Save method.
 
 The [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class’ provides the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection. The [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/#methods) method removes any bookmark with the title passed to the method.

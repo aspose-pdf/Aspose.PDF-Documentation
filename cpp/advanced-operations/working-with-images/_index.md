@@ -21,7 +21,7 @@ You are able to do the following:
 - [Delete Images from PDF File](/pdf/cpp/delete-images-from-pdf-file/) - check code snippet for deleting images from PDF file.
 - [Extract Images from PDF File](/pdf/cpp/extract-images-from-pdf-file/) - use Images collection for extract images from PDF file.
 - [Get the Resolution and Dimensions of Embedded Images](/pdf/cpp/get-resolution-and-dimensions-of-embedded-images/) - use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information.
-- [Working with Image Placement](/pdf/cpp/working-with-image-placement/) - it is possible to get an image’s resolution and position in a PDF document.
+- [Working with Image Placement](/pdf/cpp/working-with-image-placement/) - it is possible to get an image's resolution and position in a PDF document.
 - [Search and Get Images from PDF Document](/pdf/cpp/search-and-get-images-from-pdf-document/) - you can get an image from an individual page and search among images on all pages with C++.
 - [Replace Image in Existing PDF File](/pdf/cpp/replace-image-in-existing-pdf-file/) - check our code snippet, it shows you how to replace an image in a PDF file.
 - [Set Image Size](/pdf/cpp/set-image-size/) - C++ library allows you to set the size of an image.

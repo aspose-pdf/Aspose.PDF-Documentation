@@ -12,7 +12,7 @@ lastmod: "2021-06-05"
 
 Steps below demonstrates how to install **Aspose.PDF Java for IntelliJ IDEA (Maven)** plugin.
 
-The  plugin is listed on IntelliJ IDEA’s CE [official plugin website](https://plugins.jetbrains.com/plugin/7974-aspose-pdf-java-for-intellij-idea-maven/) - plugin repository as **Aspose.PDF Java for IntelliJ IDEA Maven**, so you don’t need to download it manually and install it from disk, but this extra option still exists in IntelliJ IDEA.
+The  plugin is listed on IntelliJ IDEA's CE [official plugin website](https://plugins.jetbrains.com/plugin/7974-aspose-pdf-java-for-intellij-idea-maven/) - plugin repository as **Aspose.PDF Java for IntelliJ IDEA Maven**, so you don’t need to download it manually and install it from disk, but this extra option still exists in IntelliJ IDEA.
 
 **Aspose.PDF Java for IntelliJ IDEA (Maven)** plugin can be easily installed (without manual downloading) from within IntelliJ IDEA. To do it:
 
@@ -74,7 +74,7 @@ Congratulations !  You have successfully created Aspose.PDF Maven project for us
 
 ![todo:image_alt_text](https://i.imgur.com/UJlSbuM.jpg)
 
-The created Aspose.PDF for Java API Maven project is ready to be modified as per your project’s requirements.
+The created Aspose.PDF for Java API Maven project is ready to be modified as per your project's requirements.
 
 If you have opted to download [Example Source Codes](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples).
 

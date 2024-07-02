@@ -81,7 +81,7 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 
 11. To run the demo:
    -  Download the ANT tool from <http://ant.apache.org/bindownload.cgi>.
-   - Unpack the ANT tool and set up environment variables as described in the tool’s manual.
+   - Unpack the ANT tool and set up environment variables as described in the tool's manual.
    -  Change the current directory to <InstallDir>\demo\hsqldb and run the following command line:
       ant runServer
 12. Open a new command prompt instance and change the current directory to <InstallDir>\demo\samples\fonts.ap and run the following commands in the command line:

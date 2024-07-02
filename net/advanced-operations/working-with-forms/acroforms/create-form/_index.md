@@ -87,7 +87,7 @@ The [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class p
 To add a form field:
 
 1. Create the form field you want to add.
-1. Call the [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) collection’s Add method.
+1. Call the [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) collection's Add method.
 
 ### Adding TextBoxField
 

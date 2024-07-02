@@ -79,7 +79,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 To search a whole document for images:
 
-1. Call the Pages collection’s Accept method. The Accept method takes an ImagePlacementAbsorber object as a parameter. This returns a collection of ImagePlacement objects.
+1. Call the Pages collection's Accept method. The Accept method takes an ImagePlacementAbsorber object as a parameter. This returns a collection of ImagePlacement objects.
 1. Loop through the ImagePlacements objects and get their properties (Image, dimensions, resolution and so on).
 
 The following code snippet shows how to search a document for all its images.

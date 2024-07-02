@@ -1,6 +1,6 @@
 ---
 title: Add PDF Header and Footer 
-linktitle: Add PDF Header and Footer
+linktitle: Add Header and Footer
 type: docs
 weight: 70
 url: /java/add-headers-and-footers-of-pdf-file/

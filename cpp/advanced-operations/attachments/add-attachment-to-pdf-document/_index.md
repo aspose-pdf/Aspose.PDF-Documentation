@@ -17,7 +17,7 @@ Attachments can contain a wide variety of information and can be of a variety of
 1. Add a reference to Aspose.PDF DLL.
 1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
 1. Create a [FileSpecification](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.file_specification) object with the file you are adding, and file description.
-1. Add the [FileSpecification](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.file_specification) object to the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection, with the collection’s Add method.
+1. Add the [FileSpecification](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.file_specification) object to the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection, with the collection's Add method.
 
 The [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
 

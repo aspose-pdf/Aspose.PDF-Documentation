@@ -24,7 +24,7 @@ In order to add a form field in an existing PDF file, you need to use [addField]
 
 ## Add Submit Button URL in an Existing PDF File 
 
-[addSubmitBtn](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addSubmitBtn-java.lang.String-int-java.lang.String-java.lang.String-float-float-float-float-) method allows you to set the submit button’s URL in a PDF file. This is the URL where the data is posted when the submit button is clicked. In our example code, we specify the URL, the name of our field, the page number to which we want to add, and the button placement coordinates.
+[addSubmitBtn](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addSubmitBtn-java.lang.String-int-java.lang.String-java.lang.String-float-float-float-float-) method allows you to set the submit button's URL in a PDF file. This is the URL where the data is posted when the submit button is clicked. In our example code, we specify the URL, the name of our field, the page number to which we want to add, and the button placement coordinates.
 [addSubmitBtn](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor#addSubmitBtn-java.lang.String-int-java.lang.String-java.lang.String-float-float-float-float-) method required the name of the submit button field and the URL. This method is provided by [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/FormEditor) class. The following code snippet shows you how to set submit button URL.
 
 ```java

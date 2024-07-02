@@ -14,7 +14,7 @@ In this article we have tried highlighting some of the areas from an existing co
 
 ## Details
 
-With the release of Aspose.PDF for Java 2.5.0, there have been lots of changes in the API structure and class es construction. M ost of the class member’s names are updated, some existing class members are removed and also few more methods and properties are added to existing classes. Just to give you a brief of changes, we a re going to have a look over the following simple code , based over Aspose.PDF for Java versions published earlier to 2.5.0.
+With the release of Aspose.PDF for Java 2.5.0, there have been lots of changes in the API structure and class es construction. M ost of the class member's names are updated, some existing class members are removed and also few more methods and properties are added to existing classes. Just to give you a brief of changes, we a re going to have a look over the following simple code , based over Aspose.PDF for Java versions published earlier to 2.5.0.
 
 In this simple code, we will add a hyperlink and link to the page within the same PDF document.
 

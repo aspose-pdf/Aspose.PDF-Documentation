@@ -26,35 +26,15 @@ Aspose.PDF for Java presents you online free application ["PDF to EPUB"](https:/
 Aspose.PDF for Java supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Java has a class named [EpubSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/EpubSaveOptions) which can be used as the second argument to the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) method, to generate an EPUB file. Please try using the following code snippet to accomplish this requirement.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertPDFtoEPUB {
-
-    private ConvertPDFtoEPUB() {
-
-    }
-
-    // The path to the documents directory.
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws IOException {
-
-        // Load PDF document
-        Document pdfDocument = new Document(_dataDir + "PDFToEPUB.pdf");
-        // Instantiate Epub Save options
-        EpubSaveOptions options = new EpubSaveOptions();
-        // Specify the layout for contents
-        options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
-        // Save the ePUB document
-        pdfDocument.save(_dataDir + "PDFToEPUB_out.epub", options);
-    }
-}
+// Load PDF document
+Document document = new Document(DATA_DIR + "PDFToEPUB.pdf");
+// Instantiate Epub Save options
+EpubSaveOptions options = new EpubSaveOptions();
+// Specify the layout for contents
+options.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
+// Save the ePUB document
+document.save(DATA_DIR + "PDFToEPUB_out.epub", options);
+document.close();
 ```
 
 ## Convert PDF to LaTeX/TeX
@@ -67,22 +47,24 @@ To convert PDF files to TeX, Aspose.PDF has the class [TeXSaveOptions](https://r
 The following code snippet shows the process of converting PDF files into the TEX format with Java.
 
 ```java
-public static void name() {
-    // Create Document object
-    com.aspose.pdf.Document doc = new com.aspose.pdf.Document(_dataDir + "PDFToTeX.pdf");
-        
-    // Instantiate LaTex save option          
-    com.aspose.pdf.TeXSaveOptions saveOptions = new com.aspose.pdf.TeXSaveOptions();
-        
-    // Specify the output directory
-    String pathToOutputDirectory = _dataDir;
-        
-    // Set the output directory path for save option object
-    saveOptions.setOutDirectoryPath (pathToOutputDirectory);
-        
-    // Save PDF file into LaTex format           
-    doc.save(_dataDir + "PDFToTeX_out.tex", saveOptions);        
-    }
+String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToTeX.pdf").toString();
+String texDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToTeX_out.tex").toString();
+
+// Create Document object
+Document document = new Document(documentFileName);
+
+// Instantiate LaTex save option
+TeXSaveOptions saveOptions = new TeXSaveOptions();
+
+// Specify the output directory
+String pathToOutputDirectory = DATA_DIR.toString();
+
+// Set the output directory path for save option object
+saveOptions.setOutDirectoryPath(pathToOutputDirectory);
+
+// Save PDF file into LaTex format
+document.save(texDocumentFileName, saveOptions);
+document.close();
 ```
 
 {{% alert color="success" %}}
@@ -104,45 +86,18 @@ You can convert PDF document to TXT file using Visit method of [TextAbsorber](ht
 The following code snippet explains how to extract the texts from the all pages.
 
 ```java
-package com.aspose.pdf.examples;
+// Open document
+String pdfFileName = Paths.get(DATA_DIR.toString(), "demo.pdf").toString();
+String txtFileName = Paths.get(DATA_DIR.toString(), "PDFToTXT_out.txt").toString();
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public class ConvertPDFtoTXT {
-    private ConvertPDFtoTXT() {
-
-    }
-
-    // The path to the documents directory.
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws IOException {
-        ConvertPDFDoctoTXT();
-        ConvertPDFPagestoTXT();
-    }
-
-    public static void ConvertPDFDoctoTXT() throws IOException {
-        // Open document
-        String pdfFileName = Paths.get(_dataDir.toString(), "demo.pdf").toString();
-        String txtFileName = Paths.get(_dataDir.toString(), "PDFToTXT_out.txt").toString();
-
-        // Load PDF document
-        Document pdfDocument = new Document(pdfFileName);
-        TextAbsorber ta = new TextAbsorber();
-        ta.visit(pdfDocument);
-        // Save the extracted text in text file
-        BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
-        writer.write(ta.getText());
-        writer.close();
-    }
-}
-
+// Load PDF document
+Document document = new Document(pdfFileName);
+TextAbsorber ta = new TextAbsorber();
+ta.visit(document);
+// Save the extracted text in text file
+BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
+writer.write(ta.getText());
+writer.close();
 ```
 
 {{% alert color="success" %}}
@@ -160,25 +115,24 @@ You can convert PDF document to TXT file with Aspose.PDF for Java. You should us
 The following code snippet explains how to extract the texts from the particular pages.
 
 ```java
-public static void ConvertPDFPagestoTXT() throws IOException {
-        String pdfFileName = Paths.get(_dataDir.toString(), "demo.pdf").toString();
-        String txtFileName = Paths.get(_dataDir.toString(), "PDFToTXT_out.txt").toString();
+String pdfFileName = Paths.get(DATA_DIR.toString(), "demo.pdf").toString();
+String txtFileName = Paths.get(DATA_DIR.toString(), "PDFToTXT_out.txt").toString();
 
-        // Load PDF document
-        Document pdfDocument = new Document(pdfFileName);
+// Load PDF document
+Document document = new Document(pdfFileName);
 
-        TextAbsorber ta = new TextAbsorber();
-        int[] pages = new int[] { 1, 3, 4 };
+TextAbsorber ta = new TextAbsorber();
+int[] pages = new int[] { 1, 3, 4 };
 
-        for (int page : pages) {
-            ta.visit(pdfDocument.getPages().get_Item(page));
-        }
+for (int page : pages) {
+    ta.visit(document.getPages().get_Item(page));
+}
 
-        // Save the extracted text in text file
-        BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
-        writer.write(ta.getText());
-        writer.close();
-    }
+// Save the extracted text in text file
+BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
+writer.write(ta.getText());
+writer.close();
+document.close();
 ```
 
 ## Convert PDF to XPS
@@ -198,32 +152,16 @@ The XPS file type is primarily associated with the XML Paper Specification by Mi
 To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/XpsSaveOptions) class that is used as the second argument to the Document.save(..) constructor to generate the XPS file. The following code snippet shows the process of converting PDF files into XPS format.
 
 ```java
-package com.aspose.pdf.examples;
+String documentFileName = Paths.get(DATA_DIR.toString(), "sample.pdf").toString();
+String xpsDocumentFileName = Paths.get(DATA_DIR.toString(), "sample-res-xps.xps").toString();
 
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+// Create Document object
+Document document = new Document(documentFileName);
 
-import com.aspose.pdf.*;
+// Instantiate XPS Save options
+XpsSaveOptions saveOptions = new XpsSaveOptions();
 
-public final class ConvertPDFtoXPS {
-
-    private ConvertPDFtoXPS() {
-    }
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws IOException {
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo.pdf").toString();
-        String xpsDocumentFileName = Paths.get(_dataDir.toString(), "demo_out.xps").toString();
-        
-        // Create Document object
-        Document doc = new Document(pdfDocumentFileName);
-
-        // Instantiate XPS Save options
-        XpsSaveOptions saveOptions = new XpsSaveOptions();
-
-        // Save output in XML format
-        doc.save(xpsDocumentFileName, saveOptions);
-    }
-}
+// Save output in XML format
+document.save(xpsDocumentFileName, saveOptions);
+document.close();
 ```

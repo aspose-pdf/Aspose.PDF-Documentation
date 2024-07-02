@@ -32,6 +32,6 @@ Please follow these simple steps in order to open and extend the source code wh
 1. Install only Python 2.7.x.x from: <https://www.python.org/downloads/>
 2. Install JPype from: <http://sourceforge.net/projects/jpype/files/JPype/>
 3. Install Java JDK from: <http://www.oracle.com/technetwork/java/javase/downloads>
-4. Download Aspose.PDF for Java APIs you want to use in your python projects from: <http://www.aspose.com/community/files/72/java-components/default.aspx> and copy downloaded APIs’s .jars into %Python%/lib folder.
+4. Download Aspose.PDF for Java APIs you want to use in your python projects from: <http://www.aspose.com/community/files/72/java-components/default.aspx> and copy downloaded APIs's .jars into %Python%/lib folder.
 5. Clone [Aspose.PDF Java for Python Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) from github.
 6. Clone [Aspose.PDF Java for Python Examples](http://asposepdfjavapython.codeplex.com/) from CodePlex.

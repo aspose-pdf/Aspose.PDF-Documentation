@@ -21,7 +21,7 @@ In simple words, DOM is a tree of objects that represent the structure of some d
 
 Portable Document Format (PDF) is an open standard for document exchange. A PDF document is a combination of text and binary data. If you open it in a text editor, you will see the raw objects that define the structure and contents of the document.
 
-The logical structure of a PDF file is hierarchical and determines the sequence by which a viewing application draws the document’s pages and their contents. A PDF is composed of four components: objects, file structure, document structure and content streams.
+The logical structure of a PDF file is hierarchical and determines the sequence by which a viewing application draws the document's pages and their contents. A PDF is composed of four components: objects, file structure, document structure and content streams.
 
 ### PDF Document Structure
 

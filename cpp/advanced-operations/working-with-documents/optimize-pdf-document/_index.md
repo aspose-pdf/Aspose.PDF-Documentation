@@ -319,9 +319,9 @@ void AllowReusePageContent() {
 
 ### Unembedding Fonts
 
-When you create a PDF version of your personal design file, a copy of all necessary fonts is added to the PDF file itself. It is embedding. Regardless of where this PDF is opened, whether it is on your computer, a friend’s computer, or your print provider’s computer, all of the correct fonts will be there and will render properly.
+When you create a PDF version of your personal design file, a copy of all necessary fonts is added to the PDF file itself. It is embedding. Regardless of where this PDF is opened, whether it is on your computer, a friend's computer, or your print provider's computer, all of the correct fonts will be there and will render properly.
 
-But, if the document uses embedded fonts, it means that all font data is stored in the document. The advantage is that the document is viewable regardless of whether the font is installed on the user’s machine or not. But embedding fonts makes the document larger. The unembed fonts method removes all embedded fonts. Thus, the document size decreases but the document itself may become unreadable if the correct font is not installed.
+But, if the document uses embedded fonts, it means that all font data is stored in the document. The advantage is that the document is viewable regardless of whether the font is installed on the user's machine or not. But embedding fonts makes the document larger. The unembed fonts method removes all embedded fonts. Thus, the document size decreases but the document itself may become unreadable if the correct font is not installed.
 
 ```cpp
 void UnembedFonts() {

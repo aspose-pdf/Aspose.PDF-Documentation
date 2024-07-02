@@ -18,7 +18,7 @@ To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Docu
 
 {{% alert color="primary" %}}
 
-The output XML format is custom Aspose format. The XML contains a collection of tags with the name Problem; each tag contains the details of a particular problem. The Problem tag’s ObjectID attribute represents the ID of the particular object this problem is related to. The Clause attribute represents a corresponding rule in the PDF specification.
+The output XML format is custom Aspose format. The XML contains a collection of tags with the name Problem; each tag contains the details of a particular problem. The Problem tag's ObjectID attribute represents the ID of the particular object this problem is related to. The Clause attribute represents a corresponding rule in the PDF specification.
 
 {{% /alert %}}
 
@@ -313,7 +313,7 @@ void SetPDFexpiryDate() {
 
 ## Determine Progress of PDF File Generation
 
-A customer asked us to add a feature that allows developers to determine the progress of PDF file generation. Here’s the response to that request.
+A customer asked us to add a feature that allows developers to determine the progress of PDF file generation. Here's the response to that request.
 
 The field [CustomerProgressHandler](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options#a712bcc865fa8f75bbdc2a3b55e4581fb) of [DocSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options) class allows you to determine how PDF generation is going.
 

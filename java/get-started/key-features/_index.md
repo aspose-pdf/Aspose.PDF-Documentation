@@ -128,7 +128,7 @@ Aspose.PDF for Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Fill fields.
 - Get option button values.
 - Get option button current Value.
-- Get form field facade (the field’s visual attributes).
+- Get form field facade (the field's visual attributes).
 - Delete field.
 - Move field to new location.
 - Flatten fields (a particular field or all).

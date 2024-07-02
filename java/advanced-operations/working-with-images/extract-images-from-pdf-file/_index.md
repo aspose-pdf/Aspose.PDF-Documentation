@@ -13,7 +13,7 @@ Each page holds a [Resources](https://reference.aspose.com/pdf/java/com.aspose.p
 To extract and image from a page:
 
 Get the image from the Images collection using the image index.
-Use the [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage) object’s save(..) method to save the extracted image.
+Use the [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage) object's save(..) method to save the extracted image.
 
 The following code snippet shows you how to extract images from the PDF file.
 

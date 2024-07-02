@@ -18,7 +18,7 @@ The [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) cl
 To add a form field:
 
 1. Create the form field which you want to add.
-2. Call the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/Form) collection’s add method.
+2. Call the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/Form) collection's add method.
 
 This example shows how to add a TextBoxField. You can add any form field using the same approach:
 

@@ -80,7 +80,7 @@ This topic describes how to update or change the page orientation of pages in an
 
 ## Change Page Orientation
 
-Aspose.PDF for Python via .NET support great features like changing the page orientation from landscape to portrait and vice versa. To change the page orientation, set the page’s MediaBox using the following code snippet. You can also change page orientation by setting rotation angle using 'rotate' method.
+Aspose.PDF for Python via .NET support great features like changing the page orientation from landscape to portrait and vice versa. To change the page orientation, set the page's MediaBox using the following code snippet. You can also change page orientation by setting rotation angle using 'rotate' method.
 
 ```python
 

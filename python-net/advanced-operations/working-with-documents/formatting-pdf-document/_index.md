@@ -82,15 +82,15 @@ sitemap:
 
 This topic helps you understand how to get properties of the document window, viewer application, and how pages are displayed. To set these properties:
 
-Open the PDF file using the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class. Now, you can set the Document object’s properties, such as
+Open the PDF file using the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class. Now, you can set the Document object's properties, such as
 
 - CenterWindow – Center the document window on the screen. Default: false.
 - Direction – Reading order. This determines how pages are laid out when displayed side by side. Default: left to right.
 - DisplayDocTitle – Display the document title in the document window title bar. Default: false (the title is displayed).
-- HideMenuBar – Hide or display the document window’s menu bar. Default: false (menu bar is displayed).
-- HideToolBar – Hide or display the document window’s toolbar. Default: false (toolbar is displayed).
+- HideMenuBar – Hide or display the document window's menu bar. Default: false (menu bar is displayed).
+- HideToolBar – Hide or display the document window's toolbar. Default: false (toolbar is displayed).
 - HideWindowUI – Hide or display document window elements like scroll bars. Default: false (UI elements are displayed).
-- NonFullScreenPageMode – How the document when it’s not displayed in full-page mode.
+- NonFullScreenPageMode – How the document when it's not displayed in full-page mode.
 - PageLayout – The page layout.
 - PageMode – How the document is displayed when first opened. The options are show thumbnails, full-screen, show attachment panel.
 
@@ -146,7 +146,7 @@ The following code snippet shows you how to get the properties using [Document](
 This topic explains how to set the properties of the document window, viewer application, and page display. To set these different properties:
 
 1. Open the PDF file using the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
-1. Set the Document object’s properties.
+1. Set the Document object's properties.
 1. Save the updated PDF file using the save method.
 
 Properties available are:
@@ -235,7 +235,7 @@ Some PDF documents have fonts from a special Adobe font set. Fonts from this set
 
 ### Embedding Fonts while creating PDF
 
-If you need to use any font other than the 14 core fonts supported by Adobe Reader, you must embed the font description while generating the PDF file. If font information is not embedded, Adobe Reader will take it from the Operating System if it’s installed over the system, or it will construct a substitute font according to the font descriptor in the PDF.
+If you need to use any font other than the 14 core fonts supported by Adobe Reader, you must embed the font description while generating the PDF file. If font information is not embedded, Adobe Reader will take it from the Operating System if it's installed over the system, or it will construct a substitute font according to the font descriptor in the PDF.
 
 >Please note the embedded font must be installed on the host machine i.e. in case of the following code ‘Univers Condensed’ font is installed over the system.
 
@@ -314,9 +314,9 @@ Following code snippet shows how to set [FontSubsetStrategy](https://reference.a
 
 ### Get-Set Zoom Factor of PDF File
 
-Sometimes, you want to determine what a PDF document’s current zoom factor is. With Aspose.Pdf, you can find out the current value as well as set one.
+Sometimes, you want to determine what a PDF document's current zoom factor is. With Aspose.Pdf, you can find out the current value as well as set one.
 
-The [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) class Destination property allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file’s zoom factor.
+The [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) class Destination property allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file's zoom factor.
 
 #### Set Zoom factor
 
@@ -337,7 +337,7 @@ The following code snippet shows how to set the zoom factor of a PDF file.
 
 #### Get Zoom Factor
 
-The following code snippet shows how to get a PDF file’s zoom factor.
+The following code snippet shows how to get a PDF file's zoom factor.
 
 ```python
 

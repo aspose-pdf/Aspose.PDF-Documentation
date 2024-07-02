@@ -12,7 +12,7 @@ sitemap:
 ---
 
 
-A digital signature in a PDF document is a way to verify the document’s authenticity and integrity. This is the process of the electronic signature of a PDF document using a private key and digital certificate. This signature guarantees the holder that the document has not been altered or altered since the signing and that the signatory is the one whom it approves. To sign PDF with Node.js, use the Aspose.PDF tool.
+A digital signature in a PDF document is a way to verify the document's authenticity and integrity. This is the process of the electronic signature of a PDF document using a private key and digital certificate. This signature guarantees the holder that the document has not been altered or altered since the signing and that the signatory is the one whom it approves. To sign PDF with Node.js, use the Aspose.PDF tool.
 
 In case you want to sign PDF file, you can use [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) function.
 

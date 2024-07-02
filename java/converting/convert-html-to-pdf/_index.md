@@ -38,14 +38,14 @@ The following Java code sample shows how to convert an HTML document to a PDF.
 1. Save output PDF document by calling **Document.save(String)** method.
 
 ```java
-// Create HTML load options
-HtmlLoadOptions htmloptions = new HtmlLoadOptions(); 		
+// Open the source PDF document
+Document document = new Document(DATA_DIR + "PDFToHTML.pdf")
 
-// Load HTML file
-Document doc = new Document("Sample.html", htmloptions); 
+// Instantiate HTML SaveOptions object
+HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
 
-// Convert HTML file to PDF
-doc.save("HTMLtoPDF.pdf");
+// Save the document
+document.save(DATA_DIR + "MultiPageHTML_out.html", htmlsaveOptions);
 ```
 
 {{% alert color="success" %}}
@@ -55,26 +55,6 @@ Aspose presents you online free application ["HTML to PDF"](https://products.asp
 
 [![Aspose.PDF Convertion HTML to PDF using Free App](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
 {{% /alert %}}
-
-## How to convert HTML file to PDF Simple variant:
-
-1. Create a HTML [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
-1. Initialize [Document object](<https://reference.aspose.com/page/java/com.aspose.page/document>).
-1. Save output PDF document.
-
-```java
- private static void ConvertHTMLtoPDF_Simple() {
-        // Create a HTML LoadOptions
-        HtmlLoadOptions options = new HtmlLoadOptions();
-
-        // Initialize document object
-        String htmlFileName = Paths.get(_dataDir.toString(), "test.html").toString();
-        Document document = new Document(htmlFileName, options);
-
-        // Save output PDF document
-        document.save(Paths.get(_dataDir.toString(), "HTMLtoPDF.pdf").toString());
-    }
-```
 
 ## Advanced conversion from HTML to PDF
 
@@ -90,40 +70,37 @@ The HTML Conversion engine has several options that allow us to control the conv
 Media queries are a popular technique for delivering a tailored style sheet to different devices. We can set device type using [HtmlMediaType](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlMediaType) property.
 
 ```java
-  private static void ConvertHTMLtoPDFAdvanced_MediaType() {
-        // Create a HTML LoadOptions
-        HtmlLoadOptions options = new HtmlLoadOptions();
+// Create a HTML LoadOptions
+HtmlLoadOptions options = new HtmlLoadOptions();
 
-        // Set Print or Screen mode
-        options.setHtmlMediaType(HtmlMediaType.Print);
+// Set Print or Screen mode
+options.setHtmlMediaType(HtmlMediaType.Print);
 
-        // Initialize document object
-        String htmlFileName = Paths.get(_dataDir.toString(), "test.html").toString();
-        Document document = new Document(htmlFileName, options);
+// Initialize document object
+String htmlFileName = Paths.get(DATA_DIR.toString(), "test.html").toString();
+Document document = new Document(htmlFileName, options);
 
-        // Save output PDF document
-        document.save(Paths.get(_dataDir.toString(), "HTMLtoPDF.pdf").toString());
-    }
+// Save output PDF document
+document.save(Paths.get(DATA_DIR.toString(), "HTMLtoPDF.pdf").toString());
+document.close();
 ```
 
 ### Enable (disable) font embedding
 
 1. Add new Html [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
-1. Disable font embedding.
+1. Enable/Disable font embedding.
 1. Save a new Document.
 
 HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We can also control the embedding of fonts in a document using a [IsEmbedFonts](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#isEmbedFonts--) property.
 
 ```java
-public static void ConvertHTMLtoPDFAdvanced_EmbedFonts() {
+HtmlLoadOptions options = new HtmlLoadOptions();
+// Enable/Disable font embedding
+options.setEmbedFonts(true);
 
-        HtmlLoadOptions options = new HtmlLoadOptions();
-        // Disable font embedding
-        options.setEmbedFonts(true);
-
-        Document document = new Document(_dataDir + "test_fonts.html", options);
-        document.save(_dataDir + "html_test.PDF");
-    }
+Document document = new Document(DATA_DIR + "test_fonts.html", options);
+document.save(DATA_DIR + "html_test.PDF");
+document.close();
 ```
 
 ### Manage external resource loading
@@ -132,9 +109,10 @@ The Conversion Engine provides a mechanism that allows you to control the loadin
 The [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) class has the property [CustomLoaderOfExternalResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#setCustomLoaderOfExternalResources-com.aspose.pdf.LoadOptions.ResourceLoadingStrategy-) with which we can define the behavior of the resource loader.
 
 ```java
-    public static void ConvertHTMLtoPDFAdvanced_DummyImage() {
-        HtmlLoadOptions options = new HtmlLoadOptions();
-        options.CustomLoaderOfExternalResources = new LoadOptions.ResourceLoadingStrategy() {
+HtmlLoadOptions options = new HtmlLoadOptions();
+
+options.setCustomLoaderOfExternalResources(
+        new LoadOptions.ResourceLoadingStrategy() {
             public LoadOptions.ResourceLoadingResult invoke(String resourceURI) {
                 // Creating clear template resource for replacing:
                 LoadOptions.ResourceLoadingResult res = new LoadOptions.ResourceLoadingResult(new byte[] {});
@@ -143,15 +121,15 @@ The [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlL
                     return res;
                 } else {
                     // Process resources with default resource loader
-                    res.LoadingCancelled = true;
+                    res.setLoadingCancelled(true);
                     return res;
                 }
-            }
-        };
+            }   
+});
 
-        Document pdfDocument = new Document(_dataDir + "test.html", options);
-        pdfDocument.save(_dataDir + "html_test.PDF");
-    }
+Document document = new Document(DATA_DIR + "test.html", options);
+document.save(DATA_DIR + "html_test.PDF");
+document.close();    
 ```
 
 ## Convert MHTML to PDF
@@ -169,24 +147,19 @@ Aspose.PDF for Java presents you online free application ["MHTML to PDF"](https:
 Next code snippet show how to covert MHTML files to PDF format with Java:
 
 ```java
-public final class ConvertMHTMLtoPDF {
+// Create an instance of MhtLoadOptions to specify the load options for the
+// MHTML file.
+MhtLoadOptions options = new MhtLoadOptions();
 
-    private ConvertMHTMLtoPDF() {
-    }
+// Set the path of the MHTML file.
+String mhtmlFileName = Paths.get(DATA_DIR.toString(), "samplefile.mhtml").toString();
 
-    private static Path _dataDir = Paths.get("/home/aspose/pdf-examples/Samples");
+// Load the MHTML file into a Document object.
+Document document = new Document(mhtmlFileName, options);
 
-    public static void main(String[] args) throws FileNotFoundException {
-        
-        // Instantiate MHTML Load option object
-        MhtLoadOptions options = new MhtLoadOptions();
-        
-        // Create Document object
-        String mhtmlFileName = Paths.get(_dataDir.toString(), "samplefile.mhtml").toString();
-        Document document = new Document(mhtmlFileName, options);
+// Save the document as a PDF file.
+document.save(Paths.get(DATA_DIR.toString(), "MarkdowntoPDF.pdf").toString());
 
-        // Save output PDF document
-        document.save(Paths.get(_dataDir.toString(),"TEXtoPDF.pdf").toString());
-    }
-}
+// Close the document.
+document.close();
 ```

@@ -20,10 +20,10 @@ This topic helps you understand how to get properties of the document window, vi
 - CenterWindow – Center the document window on the screen. Default: false.
 - Direction – Reading order. This determines how pages are laid out when displayed side by side. Default: left to right.
 - DisplayDocTitle – Display the document title in the document window title bar. Default: false (the title is displayed).
-- HideMenuBar – Hide or display the document window’s menu bar. Default: false (menu bar is displayed).
-- HideToolBar – Hide or display the document window’s toolbar. Default: false (toolbar is displayed).
+- HideMenuBar – Hide or display the document window's menu bar. Default: false (menu bar is displayed).
+- HideToolBar – Hide or display the document window's toolbar. Default: false (toolbar is displayed).
 - HideWindowUI – Hide or display document window elements like scroll bars. Default: false (UI elements are displayed).
-- NonFullScreenPageMode – How the document when it’s not displayed in full-page mode.
+- NonFullScreenPageMode – How the document when it's not displayed in full-page mode.
 - PageLayout – The page layout.
 - PageMode – How the document is displayed when first opened. The options are show thumbnails, full-screen, show attachment panel.
 
@@ -219,7 +219,7 @@ void EmbeddingStandardType1Fonts()
 
 ### Embedding Fonts while creating PDF
 
-If you need to use any font other than the 14 core fonts supported by Adobe Reader, you must embed the font description while generating the Pdf file. If font information is not embedded, Adobe Reader will take it from the Operating System if it’s installed over the system, or it will construct a substitute font according to the font descriptor in the Pdf.
+If you need to use any font other than the 14 core fonts supported by Adobe Reader, you must embed the font description while generating the Pdf file. If font information is not embedded, Adobe Reader will take it from the Operating System if it's installed over the system, or it will construct a substitute font according to the font descriptor in the Pdf.
 
 >Please note the embedded font must be installed on the host machine i.e. in case of the following code ‘Univers Condensed’ font is installed over the system.
 
@@ -365,9 +365,9 @@ void ImproveFontsEmbeddingUsingFontSubsetStrategy()
 
 ### Get-Set Zoom Factor of PDF File
 
-Sometimes, you want to set PDF document’s zoom factor. With Aspose.PDF for C++, you can set the value of zoom factor by [set_OpenAction(…) method](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#abb5c84979077034d06a673409b666e21) of Document class.
+Sometimes, you want to set PDF document's zoom factor. With Aspose.PDF for C++, you can set the value of zoom factor by [set_OpenAction(…) method](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#abb5c84979077034d06a673409b666e21) of Document class.
 
-The [GoToAction](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.go_to_action/) class Destination property allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file’s zoom factor.
+The [GoToAction](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.go_to_action/) class Destination property allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file's zoom factor.
 
 #### Set Zoom factor
 
@@ -396,7 +396,7 @@ void SetZoomFactor() {
 
 Get zoom factor in your PDF file using Aspose.PDF for C++.
 
-The following code snippet shows how to get a PDF file’s zoom factor:
+The following code snippet shows how to get a PDF file's zoom factor:
 
 ```cpp
 void GetZoomFactor() 

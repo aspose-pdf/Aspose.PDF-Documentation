@@ -85,8 +85,8 @@ It contains following useful properties:
 
 - **Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
 - **Artifact.Subtype** – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
-- **Artifact.Image** – Gets an artifact’s image (if an image is presents, else null).
-- **Artifact.Text** – Gets an artifact’s text.
+- **Artifact.Image** – Gets an artifact's image (if an image is presents, else null).
+- **Artifact.Text** – Gets an artifact's text.
 - **Artifact.Contents** – Gets a collection of artifact internal operators. Its supported type is System.Collections.ICollection.
 - **Artifact.Form** – Gets an artifact's XForm (if XForm is used). Watermarks, header, and footer artifacts contains XForm which shows all artifact contents.
 - **Artifact.Rectangle** – Gets an position of an artifact on the page.

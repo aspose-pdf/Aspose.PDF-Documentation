@@ -22,57 +22,31 @@ Before converting the PDF to a PDF/A compliant file, validate the PDF using the 
 The following code snippet shows how to convert PDF files to PDF/A-1b compliant PDF.
 
 ```java
-package com.aspose.pdf.examples;
+// Open document
+Document document = new Document(DATA_DIR + "PDFToPDFA.pdf");
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
+// Convert to PDF/A compliant document
+// During conversion process, the validation is also performed
+document.convert(DATA_DIR + "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-import com.aspose.pdf.*;
-
-public final class ConvertPDFtoPDFA {
-
-    private ConvertPDFtoPDFA() {
-
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples/");
-
-    public static void main(String[] args) {
-        ConvertPDFtoPDFa1b();
-        ValidatePDF_A_1B();
-    }
-
-    public static void ConvertPDFtoPDFa1b() {
-        // Open document
-        Document pdfDocument = new Document(_dataDir + "PDFToPDFA.pdf");
-
-        // Convert to PDF/A compliant document
-        // During conversion process, the validation is also performed
-        pdfDocument.convert(_dataDir + "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
-
-        // Save output document
-        pdfDocument.save(_dataDir + "PDFToPDFA_out.pdf");
-    }
+// Save output document
+document.save(DATA_DIR + "PDFToPDFA_out.pdf");
+document.close();
 ```
 
 To perform validation only, use the following line of code:
 
 ```java
-    public static void ValidatePDF_A_1B() {
-        
-        // Open document
-        Document pdfDocument = new Document(_dataDir + "ValidatePDFAStandard.pdf");
+// Open document
+Document document = new Document(DATA_DIR + "ValidatePDFAStandard.pdf");
 
-        // Validate PDF for PDF/A-1a
-        if (pdfDocument.validate(_dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B))
-        {
-            System.out.println("Valid");
-        }
-        else
-        {
-            System.out.println("Non valid");
-        }
-    }
+// Validate PDF for PDF/A-1a
+if (document.validate(DATA_DIR + "validation-result-A1A.xml", PdfFormat.PDF_A_1B)) {
+    System.out.println("Valid");
+} else {
+    System.out.println("Non valid");
+}
+document.close();
 ```
 
 ## PDF to PDF/A_3b Conversion
@@ -80,17 +54,16 @@ To perform validation only, use the following line of code:
 From [Aspose.PDF for Java 9.3.0](https://downloads.aspose.com/pdf/java), the API also supports converting PDF files to PDF/A_3b format.
 
 ```java
-    public static void ConvertPDFtoPDFa3b() {
-        // Open document
-        Document pdfDocument = new Document(_dataDir + "PDFToPDFA.pdf");
+// Open document
+Document document = new Document(DATA_DIR + "PDFToPDFA.pdf");
 
-        // Convert to PDF/A compliant document
-        // During conversion process, the validation is also performed
-        pdfDocument.convert(_dataDir + "log.xml", PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
+// Convert to PDF/A compliant document
+// During conversion process, the validation is also performed
+document.convert(DATA_DIR + "log.xml", PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
 
-        // Save output document
-        pdfDocument.save(_dataDir + "PDFToPDFA_out.pdf");
-    }
+// Save output document
+document.save(DATA_DIR + "PDFToPDFA_out.pdf");
+document.close();
 ```
 
 ## PDF to PDF/A_3a Conversion
@@ -98,17 +71,16 @@ From [Aspose.PDF for Java 9.3.0](https://downloads.aspose.com/pdf/java), the API
 From [Aspose.PDF for Java 10.6.0](https://downloads.aspose.com/pdf/java), the API also supports converting PDF files to PDF/A_3a format.
 
 ```java
-    public static void ConvertPDFtoPDFa3a() {
-        // Open document
-        Document pdfDocument = new Document(_dataDir + "PDFToPDFA.pdf");
+// Open document
+Document document = new Document(DATA_DIR + "PDFToPDFA.pdf");
 
-        // Convert to PDF/A compliant document
-        // During conversion process, the validation is also performed
-        pdfDocument.convert("file.log", PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
+// Convert to PDF/A compliant document
+// During conversion process, the validation is also performed
+document.convert("file.log", PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
 
-        // Save output document
-        pdfDocument.save(_dataDir + "PDFToPDFA_out.pdf");
-    }
+// Save output document
+document.save(DATA_DIR + "PDFToPDFA_out.pdf");
+document.close();
 ```
 
 ## PDF to PDF/A_2a Conversion
@@ -174,5 +146,3 @@ Aspose.PDF for Java presents you online free application ["PDF to PDF/A-1A"](htt
 
 [![Aspose.PDF Convertion PDF to PDF/A with Free App](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
-
-

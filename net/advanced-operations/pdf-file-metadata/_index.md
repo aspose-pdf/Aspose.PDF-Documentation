@@ -141,10 +141,10 @@ pdfDocument.Save(dataDir);
 
 ## Get XMP Metadata from PDF File
 
-Aspose.PDF allows you to access a PDF file’s XMP metadata. To get a PDF file’s metadata:
+Aspose.PDF allows you to access a PDF file's XMP metadata. To get a PDF file's metadata:
 
 1. Create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object and open the input PDF file.
-1. Get the file’s metadata using the [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) property.
+1. Get the file's metadata using the [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) property.
 
 The following code snippet shows you how to get metadata from the PDF file.
 

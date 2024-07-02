@@ -10,9 +10,9 @@ lastmod: "2021-12-18"
 
 You may use Aspose.PDF for C++ to extract all images from your PDF documents into separate files that can be reused in other programs.
 
-Images are held in each page’s Resources  collection’s Images collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.
+Images are held in each page's Resources  collection's Images collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.
 
-The image’s index returns an [XImage](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image) object. This object provides a Save method which can be used to save the extracted image.
+The image's index returns an [XImage](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image) object. This object provides a Save method which can be used to save the extracted image.
 
 The following code snippet shows how to extract images from a PDF file.
 

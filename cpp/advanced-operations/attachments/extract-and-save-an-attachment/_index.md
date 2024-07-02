@@ -17,8 +17,8 @@ With Aspose.PDF, it is possible to get all attachments from a PDF document. This
 
 To get all attachments from a PDF file:
 
-1. Loop through the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection. The [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection contains all attachments. Each element of this collection represents a [FileSpecification](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.file_specification) object. Each iteration of the foreach loop through the [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection returns a [FileSpecification](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.file_specification) object.
-1. Once the object is available, retrieve either all the attached file’s properties or the file itself.
+1. Loop through the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection. The [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection contains all attachments. Each element of this collection represents a [FileSpecification](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.file_specification) object. Each iteration of the foreach loop through the [EmbeddedFiles](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.embedded_file_collection) collection returns a [FileSpecification](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.file_specification) object.
+1. Once the object is available, retrieve either all the attached file's properties or the file itself.
 
 The following code snippets show how to get all the attachments from a PDF document.
 

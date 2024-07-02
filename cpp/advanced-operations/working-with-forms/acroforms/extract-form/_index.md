@@ -41,7 +41,7 @@ void ExtractDataFromForm()
 
 ## Get Value from an Individual Field of PDF Document
 
-The form field’s Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This example selects a [TextBoxField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.text_box_field) and retrieves its value using the Value property.
+The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object's Form collection. This example selects a [TextBoxField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.text_box_field) and retrieves its value using the Value property.
 
 The following code snippet shows how to get the values of individual the fields in a PDF document.
 
@@ -62,7 +62,7 @@ void GetValueFromIndividualField(){
 }
 ```
 
-To get the submit button’s URL, use the following lines of code.
+To get the submit button's URL, use the following lines of code.
 
 ```cpp
 void GetSubmitButtonURL()
@@ -80,11 +80,11 @@ void GetSubmitButtonURL()
 
 ## Get Form Fields from a Specific Region of PDF File
 
-Sometimes, you might know where in a document a form field is, but not have it’s name. For example, if all you have to go from is a schematic of a printed form. With Aspose.PDF for C++, this is not a problem. You can find out which fields are in a given region of a PDF file. To get form fields from a specific region of a PDF file:
+Sometimes, you might know where in a document a form field is, but not have it's name. For example, if all you have to go from is a schematic of a printed form. With Aspose.PDF for C++, this is not a problem. You can find out which fields are in a given region of a PDF file. To get form fields from a specific region of a PDF file:
 
 1. Open the PDF file using the Document object.
 1. Create rectangle object to get fields in that area
-1. Get the form from the document’s Forms collection.
+1. Get the form from the document's Forms collection.
 1. Display Field names and values
 
 The following code snippet shows how to get form fields in a specific rectangular region of a PDF file.

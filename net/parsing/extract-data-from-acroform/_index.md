@@ -36,7 +36,7 @@ If you do know the name of the form fields that you wish to extract values from 
 
 ## Retrieve form field value by title
 
-The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object’s Form collection. This example selects a TextBoxField and retrieves its value using the Value property.
+The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object's Form collection. This example selects a TextBoxField and retrieves its value using the Value property.
 
 ## Extract form fields from PDF document to JSON
 

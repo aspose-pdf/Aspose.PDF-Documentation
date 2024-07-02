@@ -15,7 +15,7 @@ This topic describes how to update or change the page orientation of pages in an
 
 ## Change Page Orientation
 
-Aspose.PDF for C++ allows you to change the page orientation from landscape to portrait and vice versa. To change the page orientation, set the page’s MediaBox using the following code snippet. You can also change page orientation by setting rotation angle using Rotate() method.
+Aspose.PDF for C++ allows you to change the page orientation from landscape to portrait and vice versa. To change the page orientation, set the page's MediaBox using the following code snippet. You can also change page orientation by setting rotation angle using Rotate() method.
 
 ```cpp
 void ChangePageOrientation() {
@@ -55,7 +55,7 @@ void ChangePageOrientation() {
 
 ## Fitting the Page Content to the New Page Orientation
 
-Please note that when using the above code snippet, some of the document’s content might be cut because the page height is decreased. To avoid this, increase width proportionally and leave the height intact. Example of calculations:
+Please note that when using the above code snippet, some of the document's content might be cut because the page height is decreased. To avoid this, increase width proportionally and leave the height intact. Example of calculations:
 
 ```cpp
 void FittingPageContentToNewPageOrientation()

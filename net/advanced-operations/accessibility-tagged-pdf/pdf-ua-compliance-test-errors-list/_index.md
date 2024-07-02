@@ -99,8 +99,8 @@ In this article, we list the errors that can arise during PDF/UA compliance test
 |7.1:4(14.8.4)|Warning|Standard structure type ‘[TYPE_NAME]’ is remapped to ‘[TYPE_NAME]’|
 |7.1:5|Need check manual|Color contrast|
 |7.1:6.1|Error|XMP metadata missing in document|
-|7.1:6.2|Error|Title missing in document’s XMP metadata|
-|7.1:6.3|Warning|Title is empty in document’s XMP metadata|
+|7.1:6.2|Error|Title missing in document's XMP metadata|
+|7.1:6.3|Warning|Title is empty in document's XMP metadata|
 |7.1:7.1(12.2)|Warning|‘ViewerPreferences’ dictionary missing|
 |7.1:7.2(12.2)|Error|‘DisplayDocTitle’ entry is not set|
 |7.1:8(14.7.1)|Error|‘Suspects’ entry is set|
@@ -213,7 +213,7 @@ In this article, we list the errors that can arise during PDF/UA compliance test
 
 |**Code**|**Severity**|**Message**|
 | :- | :- | :- |
-|7.16:1(7.6.3.2)|Error|Security settings block assistive technologies from accessing document’s content|
+|7.16:1(7.6.3.2)|Error|Security settings block assistive technologies from accessing document's content|
 |7.16:2(7.6.3.2)|Error|Conversion is not allowed by permission restrictions|
 
 ## **Navigation**

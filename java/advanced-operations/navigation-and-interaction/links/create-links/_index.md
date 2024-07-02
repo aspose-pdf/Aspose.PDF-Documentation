@@ -20,10 +20,10 @@ By adding a link to an application into a document, it is possible to link to ap
 1. Get the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) you want to add link to.
 1. Create a [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) object using the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) and [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) objects.
 1. Set the link attributes using the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) object.
-1. Also, set the to [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction) object’s and call setAction(..) method.
+1. Also, set the to [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction) object's and call setAction(..) method.
 1. When creating the [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction) object, specify the application you want to launch.
-1. Add the link to the Page object’s [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) collection.
-1. Finally, save the updated PDF using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s Save method.
+1. Add the link to the Page object's [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) collection.
+1. Finally, save the updated PDF using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's Save method.
 
 The following code snippet shows how to create a link to an application in a PDF file.
 
@@ -71,8 +71,8 @@ Aspose.PDF for Java allows you to add a link to an external PDF file so that you
 1. Set the link attributes using the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) object.
 1. Call setAction(..) method and pass [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction) object.
 1. While creating the [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction) object, specify the PDF file that should launch, as well as the page number it should open on.
-1. Add the link to the Page object’s [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) collection.
-1. Finally, save the updated PDF using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s Save method.
+1. Add the link to the Page object's [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) collection.
+1. Finally, save the updated PDF using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's Save method.
 
 The following code snippet shows how to create PDF document link in a PDF file.
 

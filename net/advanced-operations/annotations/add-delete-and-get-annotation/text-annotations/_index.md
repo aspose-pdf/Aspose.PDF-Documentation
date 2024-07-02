@@ -84,11 +84,11 @@ A Text Annotation is an annotation attached to a specific location in a PDF docu
 
 Annotations are contained by the [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection.
 
-To add an annotation to a particular page, add it to that page’s Annotations collection with the [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add) method.
+To add an annotation to a particular page, add it to that page's Annotations collection with the [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add) method.
 
 1. First, create an annotation that you want to add to the PDF.
 1. Then open the input PDF.
-1. Add the annotation to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object’s Annotations collection.
+1. Add the annotation to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object's Annotations collection.
 
 The following code snippet shows you how to add an annotation in a PDF page.
 
@@ -124,9 +124,9 @@ pdfDocument.Save(dataDir);
 
 ## How to add Popup Annotation
 
-A Pop-up Annotation displays text in a pop-up window for entry and editing. It shall not appear alone but is associated with a markup annotation, its parent annotation, and shall be used for editing the parent’s text.
+A Pop-up Annotation displays text in a pop-up window for entry and editing. It shall not appear alone but is associated with a markup annotation, its parent annotation, and shall be used for editing the parent's text.
 
-It shall have no appearance stream or associated actions of its own and shall be identified by the Popup entry in the parent’s annotation dictionary.
+It shall have no appearance stream or associated actions of its own and shall be identified by the Popup entry in the parent's annotation dictionary.
 
 The following code snippet shows you how to add [Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) in a PDF page using an example of adding a parent's [Line annotation](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
 
@@ -335,7 +335,7 @@ This feature is supported by version 19.6 or greater.
 
 ## Delete All Annotations from Page of PDF File
 
-A [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object’s [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection contains all the annotations for that particular page. To delete all the annotations from a page, call the *Delete* method of the AnnotationCollectoin collection.
+A [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object's [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection contains all the annotations for that particular page. To delete all the annotations from a page, call the *Delete* method of the AnnotationCollectoin collection.
 
 The following code snippet shows you how to delete all the annotations from a particular page.
 
@@ -366,7 +366,7 @@ You can check the quality of Aspose.PDF and get the results online at this link:
 
 Aspose.PDF allows you to remove a particular Annotation from PDF file. This topic explains how.
 
-To delete a particular annotation from a PDF, call the [AnnotationCollection collection’s Delete method](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). This collection belongs to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object. The Delete method requires the index of the annotation you want to delete. Then, save the updated PDF file. The following code snippet shows how to delete a particular annotation.
+To delete a particular annotation from a PDF, call the [AnnotationCollection collection's Delete method](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). This collection belongs to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object. The Delete method requires the index of the annotation you want to delete. Then, save the updated PDF file. The following code snippet shows how to delete a particular annotation.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -406,11 +406,11 @@ foreach (MarkupAnnotation annotation in pdfDocument.Pages[1].Annotations)
 }
 ```
 
-Please note that to get all annotations from the whole PDF, you have to loop through the document’s PageCollection Class collection before navigating through the AnnotationCollection class collection. You can get each annotation of the collection in a base annotation type called MarkupAnnotation Class and then show its properties.
+Please note that to get all annotations from the whole PDF, you have to loop through the document's PageCollection Class collection before navigating through the AnnotationCollection class collection. You can get each annotation of the collection in a base annotation type called MarkupAnnotation Class and then show its properties.
 
 ## Get Particular Annotation from PDF File
 
-Annotations are associated with individual pages and stored in a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object’s [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection. To get a particular annotation, specify its index. This returns an [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) object which needs to be cast to a particular annotation type, for example [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). The following code snippet shows how to get a particular annotation and its properties.
+Annotations are associated with individual pages and stored in a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object's [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection. To get a particular annotation, specify its index. This returns an [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) object which needs to be cast to a particular annotation type, for example [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). The following code snippet shows how to get a particular annotation and its properties.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

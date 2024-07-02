@@ -13,11 +13,11 @@ sitemap:
 
 ## Update Links in PDF File
 
-As discussed in Add Hyperlink in a PDF File, the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) class makes it possible to add links in a PDF file. There’s also a similar class used to get existing links from inside PDF files. Use this if you need to update an existing link. To update an existing link:
+As discussed in Add Hyperlink in a PDF File, the [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) class makes it possible to add links in a PDF file. There's also a similar class used to get existing links from inside PDF files. Use this if you need to update an existing link. To update an existing link:
 
 1. Load a PDF file.
 1. Go to a specific page in the PDF file.
-1. Specify the link destination using the [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction) object’s Destination property.
+1. Specify the link destination using the [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction) object's Destination property.
 1. The destination page is specified using the [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/XYZExplicitDestination) constructor.
 
 ### Set Link Target to a Page in the Same Document
@@ -51,7 +51,7 @@ The following code snippet shows you how to update a link in a PDF file and set 
 
 ### Set Link Destination to a Web Address
 
-To update the hyperlink so that it points to a web address, instantiate the [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction) object and pass it to the LinkAnnotation’s Action property. The following code snippet shows how to update a link in a PDF file and set its target to a web address.
+To update the hyperlink so that it points to a web address, instantiate the [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction) object and pass it to the LinkAnnotation's Action property. The following code snippet shows how to update a link in a PDF file and set its target to a web address.
 
 ```java
     public static void SetLinkDestinationToWebAddress() {        

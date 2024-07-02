@@ -80,7 +80,7 @@ You can delete pages from a PDF file using Aspose.PDF for Python via .NET. To de
 
 ## Delete Page from PDF File
 
-1. Call the [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) method and specify the page’s index
+1. Call the [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) method and specify the page's index
 1. Call the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method to save the updated PDF file
 The following code snippet shows how to delete a particular page from the PDF file using Python.
 

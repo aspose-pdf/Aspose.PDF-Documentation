@@ -82,11 +82,11 @@ A Text Annotation is an annotation attached to a specific location in a PDF docu
 
 Annotations are contained by the [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection.
 
-To add an annotation to a particular page, add it to that page’s Annotations collection with the [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods) method.
+To add an annotation to a particular page, add it to that page's Annotations collection with the [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods) method.
 
 1. First, create an annotation that you want to add to the PDF.
 1. Then open the input PDF.
-1. Add the annotation to the 'page' object’s [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) collection.
+1. Add the annotation to the 'page' object's [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) collection.
 
 The following code snippet shows you how to add an annotation in a PDF page.
 

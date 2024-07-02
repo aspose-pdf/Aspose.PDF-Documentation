@@ -20,40 +20,33 @@ During PDF to PPTX conversion, the text is rendered as Text where you can select
 Check next code snippet to resolve your tasks with conversion PDF to PowerPoint format:
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
 public final class ConvertPDFtoPPTX {
 
     private ConvertPDFtoPPTX() {
 
     }
 
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
+    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
 
-    public static void main(String[] args) throws IOException {
-
-        ConvertPDFtoPPTX_Simple();
-        ConvertPDFtoPPTX_SlideAsImages();
+    public static void run() throws IOException {
+        convertPDFtoPPTX_Simple();
+        convertPDFtoPPTX_SlideAsImages();
+        convertPDFtoPPTX_ProgresDetails();
     }
 
-    public static void ConvertPDFtoPPTX_Simple() {
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "PDFToPPTX.pdf").toString();
-        String pptxDocumentFileName = Paths.get(_dataDir.toString(), "PDFToPPTX_out.pptx").toString();
+    public static void convertPDFtoPPTX_Simple() {
+        String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX.pdf").toString();
+        String pptxDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX_out.pptx").toString();
 
         // Load PDF document
-        Document doc = new Document(pdfDocumentFileName);
+        Document document = new Document(documentFileName);
 
         // Instantiate PptxSaveOptions instance
         PptxSaveOptions pptx_save = new PptxSaveOptions();
 
         // Save the output in PPTX format
-        doc.save(pptxDocumentFileName, pptx_save);
+        document.save(pptxDocumentFileName, pptx_save);
+        document.close();
     }
 }
 ```
@@ -65,26 +58,55 @@ In case if you need to convert a searchable PDF to PPTX as images instead of sel
 The following code snippet shows the process for converting PDF files into PPTX format Slides as Images. 
 
 ```java
-    public static void ConvertPDFtoPPTX_SlideAsImages() {
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "PDFToPPTX.pdf").toString();
-        String pptxDocumentFileName = Paths.get(_dataDir.toString(), "PDFToPPTX_out.pptx").toString();
+public static void convertPDFtoPPTX_SlideAsImages() {
+    String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX.pdf").toString();
+    String pptxDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX_out.pptx").toString();
 
-        // Load PDF document
-        Document doc = new Document(pdfDocumentFileName);
-        // Instantiate PptxSaveOptions instance
-        PptxSaveOptions pptx_save = new PptxSaveOptions();
-        // Save the output in PPTX format
-        pptx_save.setSlidesAsImages(true);
+    // Load PDF document
+    Document document = new Document(documentFileName);
+    // Instantiate PptxSaveOptions instance
+    PptxSaveOptions pptxSaveOptions = new PptxSaveOptions();
+    // Save the output in PPTX format
+    pptxSaveOptions.setSlidesAsImages(true);
 
-        doc.save(pptxDocumentFileName, pptx_save);
+    document.save(pptxDocumentFileName, pptxSaveOptions);
+    document.close();
+}
+```
+
+## Show Progress On Console with Aspose.PDF for Java looks like this:
+
+```java
+package com.aspose.pdf.examples.conversion;
+
+import com.aspose.pdf.Document;
+import com.aspose.pdf.PptxSaveOptions;
+
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+/**
+ * Convert PDF to PPTX.
+ */
+public final class ConvertPDFtoPPTX {
+
+    private ConvertPDFtoPPTX() {
+
     }
 
-    public static void ConvertPDFtoPPTX_ProgresDetails() {
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "PDFToPPTX.pdf").toString();
-        String pptxDocumentFileName = Paths.get(_dataDir.toString(), "PDFToPPTX_out.pptx").toString();
+    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
+
+    public static void run() throws IOException {
+        convertPDFtoPPTX_ProgressDetails();
+    }
+
+    public static void convertPDFtoPPTX_ProgressDetails() {
+        String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX.pdf").toString();
+        String pptxDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX_out.pptx").toString();
 
         // Load PDF document
-        Document doc = new Document(pdfDocumentFileName);
+        Document document = new Document(documentFileName);
 
         // Instantiate PptxSaveOptions instance
         PptxSaveOptions pptx_save = new PptxSaveOptions();
@@ -93,44 +115,10 @@ The following code snippet shows the process for converting PDF files into PPTX 
         pptx_save.setCustomProgressHandler(new ShowProgressOnConsole());
 
         // Save the output in PPTX format
-        doc.save(pptxDocumentFileName, pptx_save);
+        document.save(pptxDocumentFileName, pptx_save);
+        document.close();
     }
-```
-
-## Show Progress On Console with Aspose.PDF for Java looks like this:
-
-```java
-package com.aspose.pdf.examples;
-
-import java.time.LocalDateTime;
-
-import com.aspose.pdf.ProgressEventType;
-import com.aspose.pdf.UnifiedSaveOptions.ConversionProgressEventHandler;
-import com.aspose.pdf.UnifiedSaveOptions.ProgressEventHandlerInfo;
-
-class ShowProgressOnConsole extends ConversionProgressEventHandler{
-
-    @Override
-    public void invoke(ProgressEventHandlerInfo eventInfo) {        
-        switch (eventInfo.EventType) {
-            case ProgressEventType.TotalProgress:
-                System.out.println(
-                        String.format("%s  - Conversion progress : %d %%.", LocalDateTime.now().toString(), eventInfo.Value));
-                break;
-            case ProgressEventType.ResultPageCreated:
-                System.out.println(String.format("%s  - Result page's %s of %d layout created.", LocalDateTime.now().toString(),
-                        eventInfo.Value, eventInfo.MaxValue));
-                break;
-            case ProgressEventType.ResultPageSaved:
-                System.out.println(String.format("%s  - Result page %d of %d exported.", LocalDateTime.now(), eventInfo.Value, eventInfo.MaxValue));
-                break;
-            case ProgressEventType.SourcePageAnalysed:
-                System.out.println(String.format("%s  - Source page %d of %d analyzed.", LocalDateTime.now(),  eventInfo.Value, eventInfo.MaxValue));
-                break;
-            default:
-                break;
-        }
-    }
+}
 ```
 
 ## Progress Detail of PPTX Conversion
@@ -178,5 +166,3 @@ Aspose.PDF for Java presents you online free application ["PDF to PPTX"](https:/
 
 [![Aspose.PDF Convertion PDF to PPTX with Free App](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
-
-

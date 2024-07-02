@@ -1,6 +1,6 @@
 ---
 title: Move PDF Pages 
-linktitle: Move PDF Pages
+linktitle: Move Pages
 type: docs
 weight: 20
 url: /java/move-pages/

@@ -87,12 +87,12 @@ In order to get all artifacts on a particular page, the [Page](https://reference
 The [Artifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) class contains following properties:
 
 **contents** – Gets a collection of artifact internal operators. Its supported type is System.Collections.ICollection.
-**form** – Gets an artifact’s XForm (if XForm is used). Watermarks, header, and footer artifacts contains XForm which shows all artifact contents.
-**image** – Gets an artifact’s image (if an image is presents, else null).
-**text** – Gets an artifact’s text.
+**form** – Gets an artifact's XForm (if XForm is used). Watermarks, header, and footer artifacts contains XForm which shows all artifact contents.
+**image** – Gets an artifact's image (if an image is presents, else null).
+**text** – Gets an artifact's text.
 **rectangle** – Gets an position of an artifact on the page.
-**rotation** – Gets an artifact’s rotation (in degrees, positive value indicates counter-clockwise rotation).
-**opacity** – Gets an artifact’s opacity. Possible values are in the range 0…1, where 1 is completely opaque.
+**rotation** – Gets an artifact's rotation (in degrees, positive value indicates counter-clockwise rotation).
+**opacity** – Gets an artifact's opacity. Possible values are in the range 0…1, where 1 is completely opaque.
 
 ## Programming Samples: How To Add Watermark On PDF Files
 

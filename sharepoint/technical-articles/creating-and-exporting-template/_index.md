@@ -69,7 +69,7 @@ When they have been saved, the new templates show up in the template list, ready
 
 
 #### **Developing Templates**
-A template is an XML file based on Aspose XML PDF. To make a template for a list, place special markers related to the SharePoint target content type field’s internal name into the XML PDF file.
+A template is an XML file based on Aspose XML PDF. To make a template for a list, place special markers related to the SharePoint target content type field's internal name into the XML PDF file.
 ##### **Markers**
 - **SPListItemsCount** – replaced by count of list items.
 - **SPListTitle** – replaced by list title.

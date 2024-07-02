@@ -1,6 +1,6 @@
 ---
 title: Change PDF Page Size Programmatically 
-linktitle: Change PDF Page Size
+linktitle: Change Page Size
 type: docs
 weight: 50
 url: /java/change-page-size/
