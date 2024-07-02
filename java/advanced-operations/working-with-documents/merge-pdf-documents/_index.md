@@ -22,8 +22,8 @@ You can merge PDF files using Aspose.PDF and get the results online at this link
 To concatenate two PDF files:
 
 1. Create two [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) objects, each containing one of the input PDF files.
-1. Then call the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection’s Add method for the Document object you want to add the other PDF file to.
-1. Pass the PageCollection collection of the second Document object to the first PageCollection collection’s Add method.
+1. Then call the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's Add method for the Document object you want to add the other PDF file to.
+1. Pass the PageCollection collection of the second Document object to the first PageCollection collection's Add method.
 1. Finally, save the output PDF file using the Save method.
 
 The following code snippet shows how to concatenate PDF files with Java.

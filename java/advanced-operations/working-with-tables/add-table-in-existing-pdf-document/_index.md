@@ -134,7 +134,7 @@ The result of the execution code below is the table depicted on the following im
 
 ## Working with Borders, Margins and Padding
 
-Aspose.PDF for Java allows developers to create tables in PDF documents. According to of Aspose.PDF’s Document Object Model, a table is a paragraph level element.
+Aspose.PDF for Java allows developers to create tables in PDF documents. According to of Aspose.PDF's Document Object Model, a table is a paragraph level element.
 
 Please note that it also supports the feature to set border style, margins and cell padding for tables. Before going into more technical details, it's important to understand the concepts of border, margins and padding which are presented below in a diagram:
 

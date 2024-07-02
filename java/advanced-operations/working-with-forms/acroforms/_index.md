@@ -36,7 +36,7 @@ For a more detailed study of the possibilities of working with forms, study the 
 
 -[Create AcroForm](/pdf/java/create-form/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using Java.
 
--[Fill AcroForm](/pdf/java/fill-form/) - to fill a form field, get the field from the Document object’s Form collection.
+-[Fill AcroForm](/pdf/java/fill-form/) - to fill a form field, get the field from the Document object's Form collection.
 
 -[Extract Data AcroForm](/pdf/java/extract-form/) - get values from all and individual the fields and etc.
 
