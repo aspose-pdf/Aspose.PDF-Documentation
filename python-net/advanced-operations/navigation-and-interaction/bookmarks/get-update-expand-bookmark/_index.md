@@ -78,9 +78,9 @@ sitemap:
 
 ## Get Bookmarks
 
-The [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object’s [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection contains all a PDF file’s bookmarks. This article explains how to get bookmarks from a PDF file, and how to get which page a particular bookmark is on.
+The [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object's [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection contains all a PDF file's bookmarks. This article explains how to get bookmarks from a PDF file, and how to get which page a particular bookmark is on.
 
-To get the bookmarks, loop through the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection and get each bookmark in the OutlineItemCollection. The [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) provides access to all the bookmark’s attributes. The following code snippet shows you how to get bookmarks from the PDF file.
+To get the bookmarks, loop through the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection and get each bookmark in the OutlineItemCollection. The [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) provides access to all the bookmark's attributes. The following code snippet shows you how to get bookmarks from the PDF file.
 
 ```python
 
@@ -98,7 +98,7 @@ To get the bookmarks, loop through the [OutlineCollection](https://reference.asp
         print(outline_item.color)
 ```
 
-## Getting a Bookmark’s Page Number
+## Getting a Bookmark's Page Number
 
 Once you have added a bookmark you can find out what page it is on by getting the destination PageNumber associated with the Bookmark object.
 
@@ -124,7 +124,7 @@ Once you have added a bookmark you can find out what page it is on by getting th
 
 ## Get Child Bookmarks from a PDF Document
 
-Bookmarks can be organized in a hierarchical structure, with parents and children. To get all bookmarks, loop through the Document object’s Outlines collections. However, to get child bookmarks as well, also loop through all the bookmarks in each [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) object obtained in the first loop. The following code snippets show how to get child bookmarks from a PDF document.
+Bookmarks can be organized in a hierarchical structure, with parents and children. To get all bookmarks, loop through the Document object's Outlines collections. However, to get child bookmarks as well, also loop through all the bookmarks in each [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) object obtained in the first loop. The following code snippets show how to get child bookmarks from a PDF document.
 
 ```python
 
@@ -154,7 +154,7 @@ Bookmarks can be organized in a hierarchical structure, with parents and childre
 
 ## Update Bookmarks in a PDF Document
 
-To update a bookmark in a PDF file, first, get the particular bookmark from the Document object’s OutlineColletion collection by specifying the bookmark’s index. Once you have retrieved the bookmark into [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) object, you can update its properties and then save the updated PDF file using the Save method. The following code snippets show how to update bookmarks in a PDF document.
+To update a bookmark in a PDF file, first, get the particular bookmark from the Document object's OutlineColletion collection by specifying the bookmark's index. Once you have retrieved the bookmark into [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) object, you can update its properties and then save the updated PDF file using the Save method. The following code snippets show how to update bookmarks in a PDF document.
 
 ```python
 
@@ -178,7 +178,7 @@ To update a bookmark in a PDF file, first, get the particular bookmark from the 
 
 ## Expanded Bookmarks when viewing document
 
-Bookmarks are held in the Document object’s [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) collection, itself in the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection. However, we may have a requirement to have all the bookmarks expanded when viewing the PDF file.
+Bookmarks are held in the Document object's [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) collection, itself in the [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection. However, we may have a requirement to have all the bookmarks expanded when viewing the PDF file.
 
 In order to accomplish this requirement, we can set open status for each outline/bookmark item as Open. The following code snippet shows you how to set the open status for each bookmark as expanded in a PDF document.
 
