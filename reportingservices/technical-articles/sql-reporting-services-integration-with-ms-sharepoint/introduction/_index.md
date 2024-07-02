@@ -14,7 +14,7 @@ Aspose.PDF for Reporting Services has been very remarkable for PDF generation th
 
 {{% alert color="primary" %}}
 
-Before we proceed further, let’s take a look over reference topics that we have consulted during the preparation of this article.
+Before we proceed further, let's take a look over reference topics that we have consulted during the preparation of this article.
 
 - [Overview of Reporting Services and SharePoint Technology Integration](http://msdn.microsoft.com/en-us/library/bb326358.aspx)
 - [Deployment Topologies for Reporting Services in SharePoint Integrated Mode](http://msdn.microsoft.com/en-us/library/bb510781.aspx)
