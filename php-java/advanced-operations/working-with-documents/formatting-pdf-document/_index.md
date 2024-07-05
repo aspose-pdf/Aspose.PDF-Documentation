@@ -79,7 +79,7 @@ To set these different properties:
 1. Set the Document object's properties.
 1. Save the updated PDF file using the Save method.
 
-Properties available are:
+Methods available are:
 
 - [setCenterWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setCenterWindow-boolean-)
 - [setDirection](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-)
