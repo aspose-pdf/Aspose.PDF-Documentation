@@ -25,7 +25,7 @@ The following code snippet shows how to delete a particular page from the PDF fi
     $pages = $document->getPages();
 
     // Delete a particular page
-    $pages()->delete(2);
+    $pages->delete(2);
 
     // Save output document
     $document->save($outputFile);
