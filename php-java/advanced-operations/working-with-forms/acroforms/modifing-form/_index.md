@@ -45,7 +45,7 @@ The following code snippet shows you how to set the default font for PDF form fi
 
 ## Get/Set FieldLimit
 
-The FormEditor class SetFieldLimit method allows you to set a field limit, the maximum number of characters that can be entered into a field.
+This code demonstrates the usage of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class to open a document, retrieve a form field, set its maximum length, retrieve the maximum length with 'setMaxLen', and 'getMaxLen' methods.
 
 ```php
 

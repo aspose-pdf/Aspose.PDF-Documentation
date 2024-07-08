@@ -31,15 +31,15 @@ The following code snippet shows you how to add text stamp in the PDF file.
     $textStamp->setXIndent(100);
     $textStamp->setYIndent(100);
     // rotate stamp
-    $textStamp->setRotate((new Rotation())->getOn90());
-    
+    $textStamp->setRotate((new Rotation())->On90);    
     // set text properties
     $fontRepository = new FontRepository();
+    $fontStyles = new FontStyles();
     $textStamp->getTextState()->setFont($fontRepository->findFont("Arial"));
     $textStamp->getTextState()->setFontSize(14);
-    $textStamp->getTextState()->setFontStyle(FontStyles::$Bold | FontStyles::$Italic);
+    $textStamp->getTextState()->setFontStyle($fontStyles->Bold | $fontStyles->Italic);
     $textStamp->getTextState()->setForegroundColor($colors->getGreen());
-    
+
     // add stamp to particular page
     $pages->get_Item(1)->addStamp($textStamp);
 

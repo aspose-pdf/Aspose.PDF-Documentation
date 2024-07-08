@@ -29,14 +29,14 @@ The following Java code sample shows how to convert an HTML document to a PDF.
 1. Save output PDF document by calling [Document.save(String)](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#save-java.lang.String-) method.
 
 ```php
-// Create an instance of HtmlLoadOptions to specify the load options for the HTML file
-$loadOption = new HtmlLoadOptions();
+    // Create an instance of HtmlLoadOptions to specify the load options for the HTML file
+    $loadOption = new HtmlLoadOptions();
 
-// Create a new Document object and load the HTML file
-$document = new Document($inputFile, $loadOption);
+    // Create a new Document object and load the HTML file
+    $document = new Document($inputFile, $loadOption);
 
-// Save the document as a PDF file
-$document->save($outputFile);
+    // Save the document as a PDF file
+    $document->save($outputFile);
 ```
 
 ## Advanced conversion from HTML to PDF
@@ -53,17 +53,18 @@ The HTML Conversion engine has several options that allow us to control the conv
 Media queries are a popular technique for delivering a tailored style sheet to different devices. We can set device type using [HtmlMediaType](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlMediaType) class.
 
 ```php
-// Create an instance of HtmlLoadOptions to specify the load options for the HTML file
-$loadOption = new HtmlLoadOptions();
 
-// Set Print or Screen mode
-$loadOption->setHtmlMediaType(HtmlMediaType::$Print);
+    // Create an instance of HtmlLoadOptions to specify the load options for the HTML file
+    $htmlMediaType = new HtmlMediaType();
 
-// Create a new Document object and load the HTML file
-$document = new Document($inputFile, $loadOption);
+    // Set Print or Screen mode
+    $loadOption->setHtmlMediaType($htmlMediaType->Print);
 
-// Save the document as a PDF file
-$document->save($outputFile);
+    // Create a new Document object and load the HTML file
+    $document = new Document($inputFile, $loadOption);
+
+    // Save the document as a PDF file
+    $document->save($outputFile);
 ```
 
 ### Enable (disable) font embedding
@@ -75,17 +76,18 @@ $document->save($outputFile);
 HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We can also control the embedding of fonts in a document using a [setEmbedFonts](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/#setEmbedFonts-boolean-) property.
 
 ```php
-// Create an instance of HtmlLoadOptions to specify the load options for the HTML file
-$loadOption = new HtmlLoadOptions();
 
-// Disable font embedding
-$loadOption->setEmbedFonts(true);
+    // Create an instance of HtmlLoadOptions to specify the load options for the HTML file
+    $loadOption = new HtmlLoadOptions();
 
-// Create a new Document object and load the HTML file
-$document = new Document($inputFile, $loadOption);
+    // Disable font embedding
+    $loadOption->setEmbedFonts(true);
 
-// Save the document as a PDF file
-$document->save($outputFile);
+    // Create a new Document object and load the HTML file
+    $document = new Document($inputFile, $loadOption);
+
+    // Save the document as a PDF file
+    $document->save($outputFile);
 ```
 
 ## Convert MHTML to PDF
@@ -95,12 +97,13 @@ $document->save($outputFile);
 Next code snippet show how to covert MHTML files to PDF format with Java:
 
 ```php
-// Create a new instance of the MhtLoadOptions class.
-$loadOption = new MhtLoadOptions();
 
-// Create a new instance of the Document class and load the MHTML file.
-$document = new Document($inputFile, $loadOption);
+    // Create a new instance of the MhtLoadOptions class.
+    $loadOption = new MhtLoadOptions();
 
-// Save the document as a PDF file.
-$document->save($outputFile);
+    // Create a new instance of the Document class and load the MHTML file.
+    $document = new Document($inputFile, $loadOption);
+
+    // Save the document as a PDF file.
+    $document->save($outputFile);
 ```

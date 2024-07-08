@@ -29,11 +29,9 @@ The output XML format is a custom Aspose format. The XML contains a collection o
 
 ### Add TOC to Existing PDF
 
-The ListSection class in the aspose.pdf package allows you to create a table of contents when creating a PDF document from scratch. To add headings, which are elements of the TOC, use the [aspose.pdf.Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/Heading) class.
-
 To add a TOC to an existing PDF file, use the [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/Heading) class in the com.aspose.pdf package. The com.aspose.pdf package can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use com.aspose.pdf package.
 
-The following code snippet shows how to create a table of contents inside an existing PDF file.
+This PHP code snippet uses Aspose.PDF to add a Table of Contents (TOC) to an existing PDF document:
 
 ```php
 

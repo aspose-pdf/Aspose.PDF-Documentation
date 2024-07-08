@@ -14,15 +14,16 @@ This topic helps you understand how to get the properties of the document window
 
 To set these different properties, open the PDF file using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class. You can now get the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's methods, such as
 
-- [IsCenterWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isCenterWindow--) – Center the document window on screen. Default: false.
-- [SetDirection](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-) – Reading order. This determines how pages are laid out when displayed side by side. Default: left to right.
+- [isCenterWindow()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isCenterWindow--) – Center the document window on screen. Default: false.
+- [getDirection](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#getDirection--) – Gets reading order of text: L2R (left to right) or R2L (right to left).
+- [isFitWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#isFitWindow--) - Gets flag specifying whether document window must be resized to fit the first displayed page.
 - [isDisplayDocTitle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isDisplayDocTitle--) – Display the document title in the document window title bar. Default: false (the title is displayed).
-- [setHideMenuBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideMenubar-boolean-) – Hide or display the document window's menu bar. Default: false (menu bar is displayed).
-- [setHideToolBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideToolBar-boolean-) – Hide or display the document window's toolbar. Default: false (toolbar is displayed).
-- [setHideWindowUI](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideWindowUI-boolean-) – Hide or display document window elements like scroll bars. Default: false (UI elements are displayed).
-- [setNonFullScreenPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setNonFullScreenPageMode-int-) – How the document is displayed when it is not displayed in full-page mode.
-- [setPageLayout](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageLayout-int-) – The page layout.
-- [setPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageMode-int-) – How the document is displayed when first opened. The options are show thumbnails, full-screen, show attachment panel.
+- [isHideMenubar](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#isHideMenubar--) – Gets flag specifying whether menu bar should be hidden when document is active.
+- [isHideToolBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#isHideToolBar--) – Gets flag specifying whether toolbar should be hidden when document is active.
+- [isHideWindowUI](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#isHideWindowUI--) – Gets flag specifying whether user interface elements should be hidden when document is active.
+- [getNonFullScreenPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#getNonFullScreenPageMode--) – Gets page mode, specifying how to display the document on exiting full-screen mode.
+- [getPageLayout](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#getPageLayout--) – The page layout.
+- [getPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#getPageMode--) – Gets page mode, specifying how document should be displayed when opened.
 
 The following code snippet shows you how to get the properties using the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class.
 

@@ -28,15 +28,16 @@ The following code snippets show how to add text in an existing PDF file.
 ```php
 
     // Open document
-    $document = new Document($inputFile);
-        
+    $document = new Document($inputFile);        
     // Initializes a new instance of the Table
     $table = new Table();
     $colors= new Color();
     // Set the table border color as LightGray
-    $table->setBorder(new BorderInfo(BorderSide::$All, 0.5, $colors->getLightGray()));
+    $borderSide = new BorderSide();
+    $borderInfo = new BorderInfo($borderSide->All, 0.5, $colors->getLightGray());
+    $table->setBorder($borderInfo);
     // set the border for table cells
-    $table->setDefaultCellBorder(new BorderInfo(BorderSide::$All, 0.5, $colors->getLightGray()));
+    $table->setDefaultCellBorder($borderInfo);
     // create a loop to add 10 rows
     for ($row_count = 1; $row_count < 10; $row_count++) {
         // add row to table
