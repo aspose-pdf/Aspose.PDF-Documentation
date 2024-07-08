@@ -8,7 +8,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-It is unavoidable that there is something wrong with the rendering or rendered result. For some reasons such as secrecy or privacy, we could not get the data source used in the user’s report, so could not reproduce the error in the report. To make the communication between customers and developers easier and smoother, we add this parameter. If you meet problems when rendering your report with Aspose.PDF for Reporting Services, please set this report parameter, then you will get the rendered document with the format of XML. After that, please post the XML file for us in the product forum.
+It is unavoidable that there is something wrong with the rendering or rendered result. For some reasons such as secrecy or privacy, we could not get the data source used in the user's report, so could not reproduce the error in the report. To make the communication between customers and developers easier and smoother, we add this parameter. If you meet problems when rendering your report with Aspose.PDF for Reporting Services, please set this report parameter, then you will get the rendered document with the format of XML. After that, please post the XML file for us in the product forum.
 
 {{% /alert %}}
 

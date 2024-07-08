@@ -15,7 +15,7 @@ PDF documents are the best, and really the preferred file type, for creating For
 
 This topic explains how to fill PDF forms using Aspose.PDF for C++.
 
-Aspose.PDF for C++ allows you to fill a form field, get the field from the Document object’s Form collection.
+Aspose.PDF for C++ allows you to fill a form field, get the field from the Document object's Form collection.
 
 Let's look at the following example how to resolve this task:
 

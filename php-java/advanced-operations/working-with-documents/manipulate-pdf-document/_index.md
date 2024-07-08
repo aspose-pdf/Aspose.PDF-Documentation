@@ -10,7 +10,7 @@ lastmod: "2024-06-05"
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)
 
-To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class' [validate(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#validate-java.io.OutputStream-int-) method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/PdfFormat) enumeration: PDF_A_1A or PDF_A_1B.
+To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class' [validate(...)](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/#validate-java.lang.String-com.aspose.pdf.PdfFormat-) method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/PdfFormat) enumeration: PDF_A_1A or PDF_A_1B.
 
 The output XML format is a custom Aspose format. The XML contains a collection of tags with the name Problem; each tag contains the details of a particular problem. The Problem tag's ObjectID attribute represents the ID of the particular object this problem is related to. The Clause attribute represents a corresponding rule in the PDF specification.
 
@@ -34,7 +34,6 @@ To add a TOC to an existing PDF file, use the [Heading](https://reference.aspose
 This PHP code snippet uses Aspose.PDF to add a Table of Contents (TOC) to an existing PDF document:
 
 ```php
-
     // Open document
     $document = new Document($inputFile);
 
@@ -86,7 +85,6 @@ This PHP code snippet uses Aspose.PDF to add a Table of Contents (TOC) to an exi
 Aspose.PDF also allows setting different TabLeaderType for different TOC levels. You need to set LineDash property of FormatArray with the appropriate value of TabLeaderType enum as following.
 
 ```php
-
     // Open document
     $document = new Document($inputFile);
     $tocPage = $document->getPages()->add();
@@ -153,10 +151,9 @@ Aspose.PDF also allows setting different TabLeaderType for different TOC levels.
 
 ### Hide Page Numbers in TOC
 
-In case if you do not want to display page numbers, along with the headings in TOC, you can use [ShowPageNumbers](https://reference.aspose.com/pdf/java/com.aspose.pdf/TocInfo) property of [TOCInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
+In case if you do not want to display page numbers, along with the headings in TOC, you can use [ShowPageNumbers](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/#setShowPageNumbers-boolean-) property of [TOCInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
 
 ```php
-
     // Open document
     $document = new Document();
     $tocPage = $document->getPages()->add();
@@ -269,16 +266,15 @@ Aspose.PDF for PHP via Java supports adding layers to PDF files.
 
 To work with layers in PDF files, use the following API members.
 
-The [layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/Layer) class represents a layer and contains the following properties:
+The [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/Layer) class represents a layer and contains the following properties:
 
 - **Name** – the layer's name.
 - **Id** – the layer's ID.
 - **Contents** – a list of layer operators.
 
-Once the [layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/Layer) objects have been defined, add them to the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) object's Layers collection. The code below shows how to add layers to a PDF document.
+Once the [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/Layer) objects have been defined, add them to the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) object's Layers collection. The code below shows how to add layers to a PDF document.
 
 ```php
-
     // Open document
     $document = new Document($inputFile);
     $page = $document->getPages()->add();
@@ -338,5 +334,3 @@ The PDF file can be created using PDF OwnerGuard using an existing file with an 
     $document->save($outputFile);
     $document->close();
 ```
-
-
