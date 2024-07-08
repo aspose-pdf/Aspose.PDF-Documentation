@@ -14,7 +14,7 @@ sitemap:
 
 ## Set Privileges on an Existing PDF File
 
-For setting privileges on an existing PDF file Aspose.PDF for C++ use [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.document_privilege/) class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s [Encrypt](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#af7adb89eb21ef5e78b2ef5ce04fabcd7) method.
+For setting privileges on an existing PDF file Aspose.PDF for C++ use [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.facades.document_privilege/) class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's [Encrypt](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#af7adb89eb21ef5e78b2ef5ce04fabcd7) method.
 
 The following code snippet shows you how to set the privileges of a PDF file.
 
@@ -75,7 +75,7 @@ void SecuringAndSigning::EncryptPDFFile() {
 
 ## Decrypt PDF File using Owner Password
 
-In order to decrypt the PDF file, you first need to create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and open the PDF using the owner’s password. After that, you need to call [Decrypt](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a9c26014465f4368edc6fc62b7ef3d76a) method.
+In order to decrypt the PDF file, you first need to create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and open the PDF using the owner's password. After that, you need to call [Decrypt](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a9c26014465f4368edc6fc62b7ef3d76a) method.
 
 ```cpp
 void SecuringAndSigning::DecryptPDFFile() {

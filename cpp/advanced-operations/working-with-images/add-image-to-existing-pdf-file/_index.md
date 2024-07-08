@@ -16,7 +16,7 @@ To add an image to an existing PDF file:
 
 - Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object and open the input PDF document.
 - Get the page you want to add an image to.
-- Add the image into the page’s Resources collection.
+- Add the image into the page's Resources collection.
 - Use operators to place the image on the page:
 - Use the [GSave operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save/) to save the current graphical state.
 - Use [ConcatenateMatrix operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.concatenate_matrix#a40ca09b1fa45560d57a1fd042d3fbe96) to specify where the image is to be placed.
@@ -201,7 +201,7 @@ void WorkingWithImages::CheckColors() {
 
 ## Control Image Quality
 
-It is possible to control the quality of an image that’s being added to a PDF file. Use the overloaded [Replace](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection#a698b65051b073f0f4b84b1235889bd72) method in the [XImageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection) class.
+It is possible to control the quality of an image that's being added to a PDF file. Use the overloaded [Replace](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection#a698b65051b073f0f4b84b1235889bd72) method in the [XImageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection) class.
 
 The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
 

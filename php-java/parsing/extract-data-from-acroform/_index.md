@@ -17,22 +17,41 @@ Aspose.PDF for PHP not only lets you create and fill in form fields, but also ma
 
 Suppose we don't know the names of the form fields in advance. Then we should iterate over each page in PDF to extract information about all AcroForms in PDF as well as the values of the form fields. To get access to the form we need to use [getForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) method.
 
-```java
-// Create a new instance of the Document class and load the input PDF file
-$document = new Document($inputFile);
+```php
 
-// Get the form fields from the document and convert them to PHP values
-$fields = java_values($document->getForm()->getFields());
+    // Create a new instance of the License class and set the license file
+    $licenceObject = new License();
+    $licenceObject->setLicense($license);
 
-// Loop through each form field and extract the field name and value
-foreach ($fields as $formField) {
-    // Concatenate the field name and value to the response data
-    $responseData = $responseData . "(Field Name: " . $formField->getPartialName() . " |";
-    $responseData = $responseData . " Value: " . $formField->getValue() . "),";
-}
+    // Set the path to the directory containing the PDF document
+    $dataDir = getcwd() . DIRECTORY_SEPARATOR . "samples";
 
-// Close the document
-$document->close(); 
+    // Set the path to the input PDF file
+    $inputFile = $dataDir . DIRECTORY_SEPARATOR . "StudentInfoFormElectronic.pdf";
+
+    // Set the response header to indicate that the response will be in JSON format
+    header('Content-Type: application/json; charset=utf-8');
+
+    // Initialize the response data variable
+    $responseData = "";
+
+    try {
+        // Create a new instance of the Document class and load the input PDF file
+        $document = new Document($inputFile);
+
+        // Get the form fields from the document and convert them to PHP values
+        $fields = java_values($document->getForm()->getFields());
+
+        // Loop through each form field and extract the field name and value
+        foreach ($fields as $formField) {
+            // Concatenate the field name and value to the response data
+            $responseData = $responseData . "(Field Name: " . $formField->getPartialName() . " |";
+            $responseData = $responseData . " Value: " . $formField->getValue() . "),";
+        }
+
+        // Close the document
+        $document->close();
+    }
 ```
 
 If you do know the name of the form fields that you wish to extract values from then you can use indexer in Documents.Form collection to quickly retrieve this data.
@@ -42,21 +61,22 @@ If you do know the name of the form fields that you wish to extract values from 
 Form class allows you to export data to an XML file from the PDF file using ExportXml method. In order to export data to XML, you need to create an object of Form class and then call the ExportXml method using the FileStream object. Finally, you can close FileStream object and dispose Form object. The following code snippet shows you how to export data to XML file.
 
 ```php
-// Open document
-$form = new facades_Form();
-$form->bindPdf($inputFile);
 
-// Create a FileOutputStream object to write the font file.
-$xmlOutputStream = new java("java.io.FileOutputStream", "output.xml");
+    // Open document
+    $form = new facades_Form();
+    $form->bindPdf($inputFile);
 
-// Export data
-$form->exportXml($xmlOutputStream);
+    // Create a FileOutputStream object to write the font file.
+    $xmlOutputStream = new java("java.io.FileOutputStream", "output.xml");
 
-// Close file stream
-$xmlOutputStream->close();
+    // Export data
+    $form->exportXml($xmlOutputStream);
 
-// Close the document
-$form->close();
+    // Close file stream
+    $xmlOutputStream->close();
+
+    // Close the document
+    $form->close();
 ```
 
 ## Export Data to FDF from a PDF File
@@ -68,21 +88,22 @@ Please note, that it's a class from `com.aspose.pdf.facades`. Despite the simila
 In order to export data to FDF, you need to create an object of `Form` class and then call the `exportXfdf` method using the `OutputStream` object. The following code snippet shows you how to export data to XFDF file.
 
 ```php
-// Open document
-$form = new facades_Form();
-$form->bindPdf($inputFile);
 
-// Create a FileOutputStream object to write the font file.
-$xmlOutputStream = new java("java.io.FileOutputStream", "output.fdf");
+    // Open document
+    $form = new facades_Form();
+    $form->bindPdf($inputFile);
 
-// Export data
-$form->exportFdf($xmlOutputStream);
+    // Create a FileOutputStream object to write the font file.
+    $xmlOutputStream = new java("java.io.FileOutputStream", "output.fdf");
 
-// Close file stream
-$xmlOutputStream->close();
+    // Export data
+    $form->exportFdf($xmlOutputStream);
 
-// Close the document
-$form->close();
+    // Close file stream
+    $xmlOutputStream->close();
+
+    // Close the document
+    $form->close();
 ```
 
 ## Export Data to XFDF from a PDF File
@@ -93,19 +114,20 @@ In order to export data to XFDF, you need to create an object of `Form` class an
 The following code snippet shows you how to export data to XFDF file.
 
 ```php
-// Open document
-$form = new facades_Form();
-$form->bindPdf($inputFile);
 
-// Create a FileOutputStream object to write the font file.
-$xmlOutputStream = new java("java.io.FileOutputStream", "output.xfdf");
+    // Open document
+    $form = new facades_Form();
+    $form->bindPdf($inputFile);
 
-// Export data
-$form->exportXfdf($xmlOutputStream);
+    // Create a FileOutputStream object to write the font file.
+    $xmlOutputStream = new java("java.io.FileOutputStream", "output.xfdf");
 
-// Close file stream
-$xmlOutputStream->close();
+    // Export data
+    $form->exportXfdf($xmlOutputStream);
 
-// Close the document
-$form->close();
+    // Close file stream
+    $xmlOutputStream->close();
+
+    // Close the document
+    $form->close();
 ```

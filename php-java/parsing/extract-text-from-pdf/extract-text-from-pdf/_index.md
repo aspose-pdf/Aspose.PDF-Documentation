@@ -23,18 +23,19 @@ To extract text from all the PDF pages:
 The following code snippet shows you how to extract text from all pages of PDF document.
 
 ```php
-// Create a new Document object from the input PDF file.
-$document = new Document($inputFile);
 
-// Create a new TextAbsorber object to extract text from the document.
-$textAbsorber = new TextAbsorber();
+    // Create a new Document object from the input PDF file.
+    $document = new Document($inputFile);
 
-// Extract text from the document.
-$textAbsorber->visit($document);
+    // Create a new TextAbsorber object to extract text from the document.
+    $textAbsorber = new TextAbsorber();
 
-// Get the extracted text content.
-$content = $textAbsorber->getText();
+    // Extract text from the document.
+    $textAbsorber->visit($document);
 
-// Save the extracted text to the output file.
-file_put_contents($outputFile, $content);
+    // Get the extracted text content.
+    $content = $textAbsorber->getText();
+
+    // Save the extracted text to the output file.
+    file_put_contents($outputFile, $content);
 ```

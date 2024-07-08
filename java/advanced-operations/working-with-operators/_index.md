@@ -21,7 +21,7 @@ A content stream is a PDF stream object whose data consists of instructions desc
 
 This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do), and [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore).
 
-- The [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) operator saves the PDF’s current graphical state.
+- The [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) operator saves the PDF's current graphical state.
 - The This topic explains how to use operators with Aspose.PDF. The selected example adds an image into a PDF file to illustrate the concept. To add an image in a PDF file, different operators are needed. This example uses [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do), and [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore).
  (concatenate matrix) operator is used to define how an image should be placed on the PDF page.
 - The [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) operator draws the image on the page.
@@ -31,7 +31,7 @@ To add an image into a PDF file:
 
 1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
 1. Get the particular page the image is going to be added to.
-1. Add the image into the page’s Resources collection.
+1. Add the image into the page's Resources collection.
 1. Use the operators to place the image on the page:
    - First, use the [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) operator to save the current graphical state.
    - Then use the [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix) operator to specify where the image is to be placed.
@@ -97,7 +97,7 @@ public class WorkingWithOperators {
 
 This topic demonstrates how to use the GSave/GRestore operators, the ContatenateMatrix operator to position an xForm and the Do operator to draw an xForm on a page.
 
-The code below wraps a PDF file’s existing contents with the GSave/GRestore operator pair. This approach helps get the initial graphics state at the and of the existing contents. Without this approach, undesirable transformations might remain at the end of the existing operator chain.
+The code below wraps a PDF file's existing contents with the GSave/GRestore operator pair. This approach helps get the initial graphics state at the and of the existing contents. Without this approach, undesirable transformations might remain at the end of the existing operator chain.
 
 ```java
     public static void DrawXFormUsingOpeartors() {

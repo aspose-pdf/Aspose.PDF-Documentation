@@ -41,7 +41,8 @@ $saveOption = new ExcelSaveOptions();
 // $saveOption->setFormat(ExcelSaveOptions_ExcelFormat::$XMLSpreadSheet2003);
 
 // Set the output format to XLSX.
-$saveOption->setFormat(ExcelSaveOptions_ExcelFormat::$XLSX);
+    $excelSaveOptions_ExcelFormat = new ExcelSaveOptions_ExcelFormat();
+    $saveOption->setFormat($excelSaveOptions_ExcelFormat->XLSX);
 
 // Save the PDF document as an Excel file using the specified save options.
 $document->save($outputFile, $saveOption);

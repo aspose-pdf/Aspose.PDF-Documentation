@@ -83,7 +83,7 @@ To add an image to an existing PDF file:
 
 - Create a Document object and open the input PDF document.
 - Get the page you want to add an image to.
-- Add the image into the page’s Resources collection.
+- Add the image into the page's Resources collection.
 - Use operators to place the image on the page:
 - Use the GSave operator to save the current graphical state.
 - Use ConcatenateMatrix operator to specify where the image is to be placed.
@@ -278,7 +278,7 @@ using (Document document = new Document(dataDir + "ExtractImages.pdf"))
 
 ## Control Image Quality
 
-It is possible to control the quality of an image that’s being added to a PDF file. Use the overloaded [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) method in the [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection) class.
+It is possible to control the quality of an image that's being added to a PDF file. Use the overloaded [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) method in the [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection) class.
 
 The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
 

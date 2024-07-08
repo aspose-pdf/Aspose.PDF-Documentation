@@ -20,24 +20,25 @@ The image's index returns an [XImage](https://reference.aspose.com/pdf/java/com.
 This object provides a [save](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage#save-java.io.OutputStream-) method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.
 
  ```php
-// Load the PDF document
-$document = new Document($inputFile);
+ 
+    // Load the PDF document
+    $document = new Document($inputFile);
 
-// Get the first page of the document
-$page = $document->getPages()->get_Item(1);
+    // Get the first page of the document
+    $page = $document->getPages()->get_Item(1);
 
-// Get the collection of images on the page
-$xImageCollection = $page->getResources()->getImages();
+    // Get the collection of images on the page
+    $xImageCollection = $page->getResources()->getImages();
 
-// Get the first image from the collection
-$xImage = $xImageCollection->get_Item(1);
+    // Get the first image from the collection
+    $xImage = $xImageCollection->get_Item(1);
 
-// Create a new FileOutputStream object to save the image
-$outputImage = new java("java.io.FileOutputStream", $outputFile);
+    // Create a new FileOutputStream object to save the image
+    $outputImage = new java("java.io.FileOutputStream", $outputFile);
 
-// Save the image to the output file
-$xImage->save($outputImage);
+    // Save the image to the output file
+    $xImage->save($outputImage);
 
-// Close the output image file
-$outputImage->close();
+    // Close the output image file
+    $outputImage->close();
 ```

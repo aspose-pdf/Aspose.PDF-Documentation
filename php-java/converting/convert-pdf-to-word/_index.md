@@ -4,7 +4,7 @@ linktitle: Convert PDF to Word
 type: docs
 weight: 10
 url: /php-java/convert-pdf-to-word/
-lastmod: "2025-05-20"
+lastmod: "2024-05-20"
 description: Convert PDF file to DOC and DOCX format with ease and full control with Aspose.PDF for PHP. Learn more how to tune up PDF to Microsoft Word documents conversion.
 sitemap:
     changefreq: "monthly"
@@ -13,7 +13,7 @@ sitemap:
 
 ## Overview
 
-This article explains how to convert PDF to Word using Java. The code is very simple, just load PDF to Document class and save it as output Microsoft Word DOC or DOCX format. It covers the following topics
+This article explains how to convert PDF to Word using PHP. The code is very simple, just load PDF to Document class and save it as output Microsoft Word DOC or DOCX format. It covers the following topics
 
 - [PHP PDF to Word](#convert-pdf-to-doc)
 - [PHP PDF to DOC](#convert-pdf-to-doc)
@@ -28,7 +28,7 @@ This article explains how to convert PDF to Word using Java. The code is very si
 
 One of the most popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. Aspose.PDF for PHP allows you to convert PDF files to DOC.
 
-**Aspose.PDF for PHP** can create PDF documents from scratch and is a great toolkit for updating, editing and manipulating existing PDF documents. An important feature is the ability to convert pages and entire PDF documents to images. Another popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. (Most users can’t edit PDF documents but can easily work with tables, text, and images in Microsoft Word.)
+**Aspose.PDF for PHP** can create PDF documents from scratch and is a great toolkit for updating, editing and manipulating existing PDF documents. An important feature is the ability to convert pages and entire PDF documents to images. Another popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. (Most users can't edit PDF documents but can easily work with tables, text, and images in Microsoft Word.)
 
 To make things simple and understandable, Aspose.PDF for PHP provides a two-line code for transforming a source PDF file into a DOC file.
 
@@ -55,9 +55,9 @@ $document->save($outputFile, $saveOption);
 
 The [DocSaveOptions class](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocSaveOptions) provides numerous properties that improve the process of converting PDF files to DOC format. Among these properties, Mode enables you to specify the recognition mode for PDF content. You can specify any value from the RecognitionMode enumeration for this property. Each of these values has specific benefits and limitations:
 
-- [Textbox](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) mode is fast and good for preserving a PDF file’s original look, but the editability of the resulting document could be limited. Every visually grouped block of text in the original PDF is converted into a textbox in the output document. This achieves a maximal resemblance to the original so the output document looks good, but it consists entirely of textboxes and it could make editing in Microsoft Word hard.
+- [Textbox](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) mode is fast and good for preserving a PDF file's original look, but the editability of the resulting document could be limited. Every visually grouped block of text in the original PDF is converted into a textbox in the output document. This achieves a maximal resemblance to the original so the output document looks good, but it consists entirely of textboxes and it could make editing in Microsoft Word hard.
 
-- Flow is full recognition mode, where the engine performs grouping and multi-level analysis to restore the original document as per the author’s intent while producing an easily editable document. The limitation is that the output document might look different from the original.
+- Flow is full recognition mode, where the engine performs grouping and multi-level analysis to restore the original document as per the author's intent while producing an easily editable document. The limitation is that the output document might look different from the original.
 
 - The RelativeHorizontalProximity property can be used to control the relative proximity between textual elements and means that distance is normed by the font size. Larger fonts may have bigger distances between syllables and still be considered a single whole. It is specified as a percentage of the font size, for example, 1 = 100%. This means that two characters of 12pt that are placed 12 pt apart are proximal.
 

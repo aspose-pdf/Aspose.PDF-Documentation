@@ -82,7 +82,7 @@ There are different ways of achieving this. This article explains how to use an 
 1. First, load the source PDF file (with images).
 1. Then create an ArrayList object to hold the names of any images in the document.
 1. Get the images using the Page.Resources.Images property.
-1. Create a stack object to hold the image’s graphics state and use it to keep track of different image states.
+1. Create a stack object to hold the image's graphics state and use it to keep track of different image states.
 1. Create a ConcatenateMatrix object which defines current transformation. It also supports scaling, rotating, and skewing any content. It concatenates the new matrix with previous one. Please note that we cannot define the transformation from scratch but only modify the existing transformation.
 1. Because we can modify the matrix with ConcatenateMatrix, we may also need to revert back to the original image state. Use GSave and GRestore operators. These operators are paired so they should be called together. For example, if you do some graphics work with complex transformations and finally return transformations back to initial state, the approach will be something like this:
 
@@ -110,7 +110,7 @@ We also have a class named XImage which provides two properties,l Width and Heig
 1. Perform some calculations to compute the image resolution.
 1. Display the information in a Command Prompt along with the image name.
 
-The following code snippet shows you how to get an image’s dimensions and resolution without extracting the image from the PDF document.
+The following code snippet shows you how to get an image's dimensions and resolution without extracting the image from the PDF document.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

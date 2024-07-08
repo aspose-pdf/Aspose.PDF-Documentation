@@ -53,7 +53,7 @@ catch(Exception ex)
 
 <ins> **This method is used with JasperReports.**
 
-1. Download the license to your computer and copy it to the appropriate folder (for example your application’s folder or JasperReports\lib).
+1. Download the license to your computer and copy it to the appropriate folder (for example your application's folder or JasperReports\lib).
 2. Add the following code to your project:
 
 ```

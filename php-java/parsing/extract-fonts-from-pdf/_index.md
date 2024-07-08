@@ -15,27 +15,44 @@ In case you want to get all fonts from a PDF document, you can use [Document.IDo
 Please check following code snippet in order to get all fonts from an existing PDF document:
 
 ```php
-// Load the PDF document.
-$document = new Document($inputFile);
 
-// Get all the fonts used in the PDF document.
-$fonts = java_values($document->getFontUtilities()->getAllFonts());
+    // Create a new instance of the License class and set the license file.
+    $licenceObject = new License();
+    $licenceObject->setLicense($license);
 
-// Iterate over each font and save it as a TrueType font file.
-foreach ($fonts as $font) {
-    // Set the output file path for the font file.
-    $outputFile = $dataDir . DIRECTORY_SEPARATOR . "results" . DIRECTORY_SEPARATOR . $font->getFontName() . ".ttf";
+    // Set the path to the directory containing the PDF document and the output directory for the extracted fonts.
+    $dataDir = getcwd() . DIRECTORY_SEPARATOR . "samples";
+    $inputFile = $dataDir . DIRECTORY_SEPARATOR . "sample.pdf";
 
-    // Create a FileOutputStream object to write the font file.
-    $fontStream = new java("java.io.FileOutputStream", $outputFile);
+    // Initialize the response data variable.
+    $responseData = "";
 
-    // Save the font as a TrueType font file.
-    $font->save($fontStream);
+    try {
+        // Load the PDF document.
+        $document = new Document($inputFile);
 
-    // Close the font stream.
-    $fontStream->close(); 
-}
+        // Get all the fonts used in the PDF document.
+        $fonts = java_values($document->getFontUtilities()->getAllFonts());
 
-// Close the PDF document.
-$document->close();
+        // Iterate over each font and save it as a TrueType font file.
+        foreach ($fonts as $font) {
+            // Set the output file path for the font file.
+            $outputFile = $dataDir . DIRECTORY_SEPARATOR . "results" . DIRECTORY_SEPARATOR . $font->getFontName() . ".ttf";
+
+            // Create a FileOutputStream object to write the font file.
+            $fontStream = new java("java.io.FileOutputStream", $outputFile);
+
+            // Save the font as a TrueType font file.
+            $font->save($fontStream);
+
+            // Close the font stream.
+            $fontStream->close();
+
+            // Append the font name to the response data.
+            $responseData = $responseData . $font->getFontName() . ", ";
+        }
+
+        // Close the PDF document.
+        $document->close();
+    }
 ```
