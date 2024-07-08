@@ -28,7 +28,7 @@ You are able to do the following:
 - [Delete Images from PDF File](/pdf/java/delete-images-from-pdf-file/) - check code snippet for deleting images from PDF file.
 - [Extract Images from PDF File](/pdf/java/extract-images-from-pdf-file/) - use Images collection for extract images from PDF file.
 - [Get the Resolution and Dimensions of Embedded Images](/pdf/java/get-resolution-and-dimensions-of-embedded-images/) - use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information.
-- [Working with Image Placement](/pdf/java/working-with-image-placement/) - it is possible to get an image’s resolution and position in a PDF document.
+- [Working with Image Placement](/pdf/java/working-with-image-placement/) - it is possible to get an image's resolution and position in a PDF document.
 - [Search and Get Images from PDF Document](/pdf/java/search-and-get-images-from-pdf-document/) - you can get an image from an individual page and search among images on all pages with Java.
 - [Replace Image in Existing PDF File](/pdf/java/replace-image-in-existing-pdf-file/) - check our code snippet, it shows you how to replace an image in a PDF file.
 - [Set Image Size](/pdf/java/set-image-size/) - Java library allows you to set the size of an image.

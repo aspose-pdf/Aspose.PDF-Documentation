@@ -15,7 +15,7 @@ You can delete pages from a PDF file using Aspose.PDF for Java. To delete a part
 
 ## Delete Page from PDF File
 
-1. Call the Delete method and specify the page’s index
+1. Call the Delete method and specify the page's index
 1. Call the Save method to save the updated PDF file
 The following code snippet shows how to delete a particular page from the PDF file using Java.
 

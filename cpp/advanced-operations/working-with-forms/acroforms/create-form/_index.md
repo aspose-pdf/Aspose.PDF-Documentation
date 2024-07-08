@@ -18,7 +18,7 @@ The [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) c
 To add a form field:
 
 1. Create the form field which you want to add.
-2. Call the [Form](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.forms) collection’s add method.
+2. Call the [Form](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.forms) collection's add method.
 
 This example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.text_box_field). You can add any form field using the same approach:
 

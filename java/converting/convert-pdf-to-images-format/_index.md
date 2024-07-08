@@ -32,28 +32,25 @@ Aspose.PDF for Java explain how to convert all pages in a PDF file to a single T
 The following code snippet shows how to convert all the PDF pages to a single TIFF image.
 
 ```java
-public static void ConvertPDFtoTiffAllPages() throws IOException {
+// Open document
+String documentFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF.pdf").toString();
+Document document = new Document(documentFileName);
 
-        // Open document
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "PageToTIFF.pdf").toString();
-        Document pdfDocument = new Document(pdfDocumentFileName);
+// Create Resolution object
+Resolution resolution = new Resolution(300);
 
-        // Create Resolution object
-        Resolution resolution = new Resolution(300);
+// Create TiffSettings object
+TiffSettings tiffSettings = new TiffSettings();
+tiffSettings.setCompression(CompressionType.None);
+tiffSettings.setDepth(ColorDepth.Default);
+tiffSettings.setShape(ShapeType.Landscape);
+tiffSettings.setSkipBlankPages(false);
 
-        // Create TiffSettings object
-        TiffSettings tiffSettings = new TiffSettings();
-        tiffSettings.setCompression(CompressionType.None);
-        tiffSettings.setDepth(ColorDepth.Default);
-        tiffSettings.setShape(ShapeType.Landscape);
-        tiffSettings.setSkipBlankPages(false);
+// Create TIFF device
+TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
 
-        // Create TIFF device
-        TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
-
-        // Convert a particular page and save the image to stream
-        tiffDevice.process(pdfDocument, _dataDir + "AllPagesToTIFF_out.tif");
-    }
+// Convert a particular page and save the image to stream
+tiffDevice.process(document, DATA_DIR + "AllPagesToTIFF_out.tif");
 ```
 
 ### Convert Single Page to TIFF Image
@@ -61,28 +58,25 @@ public static void ConvertPDFtoTiffAllPages() throws IOException {
 Aspose.PDF for Java allows to convert a particular page in a PDF file to a TIFF image, use an overloaded version of the Process(..) method which takes a page number as an argument for conversion. The following code snippet shows how to convert the first page of a PDF to TIFF format.
 
 ```java
-public static void ConvertPDFtoTiffSinglePage() throws IOException {
+// Open document
+String documentFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF.pdf").toString();
+String tiffFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF_out.tif").toString();
+Document document = new Document(documentFileName);
 
-        // Open document
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "PageToTIFF.pdf").toString();
-        String tiffFileName = Paths.get(_dataDir.toString(), "PageToTIFF_out.tif").toString();
-        Document pdfDocument = new Document(pdfDocumentFileName);
+// Create Resolution object
+Resolution resolution = new Resolution(300);
 
-        // Create Resolution object
-        Resolution resolution = new Resolution(300);
+// Create TiffSettings object
+TiffSettings tiffSettings = new TiffSettings();
+tiffSettings.setCompression(CompressionType.None);
+tiffSettings.setDepth(ColorDepth.Default);
+tiffSettings.setShape(ShapeType.Landscape);
 
-        // Create TiffSettings object
-        TiffSettings tiffSettings = new TiffSettings();
-        tiffSettings.setCompression(CompressionType.None);
-        tiffSettings.setDepth(ColorDepth.Default);
-        tiffSettings.setShape(ShapeType.Landscape);
+// Create TIFF device
+TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
 
-        // Create TIFF device
-        TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
-
-        // Convert a particular page and save the image to stream
-        tiffDevice.process(pdfDocument, 1, 1, tiffFileName);
-    }
+// Convert a particular page and save the image to stream
+tiffDevice.process(document, 1, 1, tiffFileName);
 ```
 
 ### Use Bradley algorithm during conversion
@@ -90,36 +84,32 @@ public static void ConvertPDFtoTiffSinglePage() throws IOException {
 Aspose.PDF for Java has been supporting the feature to convert PDF to TIFF using LZW compression and then with the use of AForge, Binarization can be applied. However one of the customers requested that for some images, they need to get the Threshold using Otsu, so they also would like to use Bradley.
 
 ```java
-    public static void ConvertPDFtoTiffBradleyBinarization() throws IOException {
+// Open document
+String documentFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF.pdf").toString();
+Document document = new Document(documentFileName);
 
-        // Open document
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "PageToTIFF.pdf").toString();
-        Document pdfDocument = new Document(pdfDocumentFileName);
+String outputImageFileName = Paths.get(DATA_DIR.toString(), "resultant_out.tif").toString();
+String outputBinImageFileName = Paths.get(DATA_DIR.toString(), "tiff-bin_out.tif").toString();
 
-        String outputImageFileName = Paths.get(_dataDir.toString(), "resultant_out.tif").toString();
-        String outputBinImageFileName = Paths.get(_dataDir.toString(), "37116-bin_out.tif").toString();
+java.io.OutputStream outputImageFile = new java.io.FileOutputStream(outputImageFileName);
+java.io.OutputStream outputBinImageFile = new java.io.FileOutputStream(outputBinImageFileName);
 
-        java.io.OutputStream outputImageFile = new java.io.FileOutputStream(outputImageFileName);
-        java.io.OutputStream outputBinImageFile = new java.io.FileOutputStream(outputBinImageFileName);
+// Create Resolution object
+Resolution resolution = new Resolution(300);
+// Create TiffSettings object
+TiffSettings tiffSettings = new TiffSettings();
+tiffSettings.setCompression(CompressionType.LZW);
+tiffSettings.setDepth(ColorDepth.Format1bpp);
 
-        // Create Resolution object
-        Resolution resolution = new Resolution(300);
-        // Create TiffSettings object
-        TiffSettings tiffSettings = new TiffSettings();
-        tiffSettings.setCompression(CompressionType.LZW);
-        tiffSettings.setDepth(ColorDepth.Format1bpp);
+// Create TIFF device
+TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
+// Convert a particular page and save the image to stream
+tiffDevice.process(document, outputImageFile);
+outputImageFile.close();
 
-        // Create TIFF device
-        TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
-        // Convert a particular page and save the image to stream
-        tiffDevice.process(pdfDocument, outputImageFile);
-        outputImageFile.close();
-
-        // Create stream object to save the output image
-        java.io.InputStream inStream = new java.io.FileInputStream(outputImageFileName);
-        tiffDevice.binarizeBradley(inStream, outputBinImageFile, 0.1);
-
-    }
+// Create stream object to save the output image
+java.io.InputStream inStream = new java.io.FileInputStream(outputImageFileName);
+tiffDevice.binarizeBradley(inStream, outputBinImageFile, 0.1);
 ```
 
 ### Convert PDF Pages to Pixelated TIFF Images
@@ -127,45 +117,43 @@ Aspose.PDF for Java has been supporting the feature to convert PDF to TIFF using
 To convert all pages in a PDF file to Pixelated TIFF format, use Pixelated option of IndexedConversionType
 
 ```java
-   public static void ConvertPDFtoTIFF_Pixelated() throws IOException {
-        // Convert PDF Pages to Pixelated TIFF Images
-        // To convert all pages in a PDF file to Pixelated TIFF format, use Pixelated
-        // option of IndexedConversionType.
+// Convert PDF Pages to Pixelated TIFF Images
+// To convert all pages in a PDF file to Pixelated TIFF format, use Pixelated
+// option of IndexedConversionType.
 
-        // Open document
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "PageToTIFF.pdf").toString();
-        Document pdfDocument = new Document(pdfDocumentFileName);
+// Open document
+String documentFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF.pdf").toString();
+Document document = new Document(documentFileName);
 
-        // Create stream object to save the output image
-        java.io.OutputStream imageStream = new java.io.FileOutputStream("Image.tiff");
+// Create stream object to save the output image
+java.io.OutputStream imageStream = new java.io.FileOutputStream("Image.tiff");
 
-        // Create Resolution object
-        com.aspose.pdf.devices.Resolution resolution = new com.aspose.pdf.devices.Resolution(300);
+// Create Resolution object
+com.aspose.pdf.devices.Resolution resolution = new com.aspose.pdf.devices.Resolution(300);
 
-        // instantiate TiffSettings object
-        com.aspose.pdf.devices.TiffSettings tiffSettings = new com.aspose.pdf.devices.TiffSettings();
+// instantiate TiffSettings object
+com.aspose.pdf.devices.TiffSettings tiffSettings = new com.aspose.pdf.devices.TiffSettings();
 
-        // set the compression of resultant TIFF image
-        tiffSettings.setCompression(com.aspose.pdf.devices.CompressionType.CCITT4);
-        // set the color depth for resultant image
-        tiffSettings.setDepth(com.aspose.pdf.devices.ColorDepth.Format4bpp);
-        // skip blank pages while rendering PDF to TIFF
-        tiffSettings.setSkipBlankPages(true);
-        // set image brightness
-        tiffSettings.setBrightness(.5f);
+// set the compression of resultant TIFF image
+tiffSettings.setCompression(com.aspose.pdf.devices.CompressionType.CCITT4);
+// set the color depth for resultant image
+tiffSettings.setDepth(com.aspose.pdf.devices.ColorDepth.Format4bpp);
+// skip blank pages while rendering PDF to TIFF
+tiffSettings.setSkipBlankPages(true);
+// set image brightness
+tiffSettings.setBrightness(.5f);
 
-        // set IndexedConversion Type, default value is simple
-        tiffSettings.setIndexedConversionType(IndexedConversionType.Pixelated);
+// set IndexedConversion Type, default value is simple
+tiffSettings.setIndexedConversionType(IndexedConversionType.Pixelated);
 
-        // Create TiffDevice object with particular resolution
-        TiffDevice tiffDevice = new TiffDevice(2480, 3508, resolution, tiffSettings);
+// Create TiffDevice object with particular resolution
+TiffDevice tiffDevice = new TiffDevice(2480, 3508, resolution, tiffSettings);
 
-        // Convert a particular page (Page 1) and save the image to stream
-        tiffDevice.process(pdfDocument, 1, 1, imageStream);
+// Convert a particular page (Page 1) and save the image to stream
+tiffDevice.process(document, 1, 1, imageStream);
 
-        // Close the stream
-        imageStream.close();
-    }
+// Close the stream
+imageStream.close();
 ```
 
 {{% alert color="success" %}}
@@ -193,10 +181,30 @@ Let's take a look at how to convert a PDF page to an image.
 The following code snippet shows this possibility:
 
 ```java
-public final class ConvertPDFtoImage {
-    private static Path _dataDir = Paths.get("/home/aspose/pdf-examples/Samples");
+package com.aspose.pdf.examples.conversion;
 
-    public static void ConvertPDFusingImageDevice() {
+import com.aspose.pdf.Document;
+import com.aspose.pdf.devices.*;
+
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+/**
+ * Convert PDF to Image.
+ */
+public final class ConvertPDFtoImage {
+    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
+
+    private ConvertPDFtoImage() {
+
+    }
+
+    public static void run() throws IOException {
+        runConvertPdfUsingImageDevice();
+    }
+
+    public static void runConvertPdfUsingImageDevice() throws IOException {
         // Create Resolution object
         Resolution resolution = new Resolution(300);
         BmpDevice bmpDevice = new BmpDevice(resolution);
@@ -205,28 +213,31 @@ public final class ConvertPDFtoImage {
         PngDevice pngDevice = new PngDevice(resolution);
         EmfDevice emfDevice = new EmfDevice(resolution);
 
-        Document document = new Document(_dataDir + "ConvertAllPagesToBmp.pdf");
+        Document document = new Document(DATA_DIR + "ConvertAllPagesToBmp.pdf");
 
-        ConvertPDFtoImage(bmpDevice, "bmp", document);
-        ConvertPDFtoImage(jpegDevice, "jpeg", document);
-        ConvertPDFtoImage(gifDevice, "gif", document);
-        ConvertPDFtoImage(pngDevice, "png", document);
-        ConvertPDFtoImage(emfDevice, "emf", document);
-
+        convertPDFtoImages(bmpDevice, "bmp", document);
+        convertPDFtoImages(jpegDevice, "jpeg", document);
+        convertPDFtoImages(gifDevice, "gif", document);
+        convertPDFtoImages(pngDevice, "png", document);
+        convertPDFtoImages(emfDevice, "emf", document);
     }
-}
 
-public static void ConvertPDFtoImage(ImageDevice imageDevice, string ext, Document pdfDocument) {
-        for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++) {
-            java.io.OutputStream outputBinImageFile = new java.io.FileOutputStream(
-                    _dataDir + "image" + pageCount + "_out." + ext);
+    public static void convertPDFtoImages(
+            ImageDevice imageDevice,
+            String ext,
+            Document document)
+            throws IOException {
+        for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
+            java.io.OutputStream imageStream = new java.io.FileOutputStream(
+                    DATA_DIR + "image" + pageCount + "_out." + ext);
             // Convert a particular page and save the image to stream
-            imageDevice.Process(pdfDocument.Pages[pageCount], imageStream);
+            imageDevice.process(document.getPages().get_Item(pageCount), imageStream);
 
             // Close stream
-            imageStream.Close();
+            imageStream.close();
         }
     }
+}
 ```
 
 {{% alert color="success" %}}
@@ -257,40 +268,47 @@ SVG images and their behaviors are defined in XML text files. This means that th
 
 ### Convert PDF pages to SVG images
 
-Aspose.PDF for Java supports the feature to convert PDF file to SVG format. To accomplish this requirement, the [SvgSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) class has been introduced into the com.aspose.pdf package. Instantiate an object of [SvgSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) and pass it as a second argument to the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) method.
+Aspose.PDF for Java supports the feature to convert PDF file to SVG format. To accomplish this requirement, the [SvgSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) class has been introduced into the com.aspose.pdf package. Instantiate an object of [SvgSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) and pass it as a second argument to the [Document.save(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) method.
 
 The following code snippet shows the steps for converting a PDF file to SVG format.
 
 ```java
-package com.aspose.pdf.examples;
+package com.aspose.pdf.examples.conversion;
+
+import com.aspose.pdf.Document;
+import com.aspose.pdf.SvgSaveOptions;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import com.aspose.pdf.*;
-
+/**
+ * Convert PDF to SVG.
+ */
 public class ConvertPDFtoSVG {
-    private ConvertPDFtoSVG() {
-    }
     // The path to the documents directory.
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
+    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
 
-    public static void main(String[] args) throws IOException {
-        String pdfFileName = Paths.get(_dataDir.toString(), "input.pdf").toString();
-        String svgFileName = Paths.get(_dataDir.toString(), "PDFToSVG_out.svg").toString();
-        
+    private ConvertPDFtoSVG() {
+
+    }
+
+    public static void run() throws IOException {
+        String pdfFileName = Paths.get(DATA_DIR.toString(), "input.pdf").toString();
+        String svgFileName = Paths.get(DATA_DIR.toString(), "PDFToSVG_out.svg").toString();
+
         // Load PDF document
-        Document doc = new Document(pdfFileName);
-        
+        Document document = new Document(pdfFileName);
+
         // Instantiate an object of SvgSaveOptions
         SvgSaveOptions saveOptions = new SvgSaveOptions();
-        
+
         // Do not compress SVG image to Zip archive
-        saveOptions.CompressOutputToZipArchive = false;
-        
+        saveOptions.setCompressOutputToZipArchive(false);
+
         // Save the output in SVG files
-        doc.save(svgFileName, saveOptions);
+        document.save(svgFileName, saveOptions);
+        document.close();
     }
 }
 ```

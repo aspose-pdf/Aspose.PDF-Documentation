@@ -14,7 +14,7 @@ sitemap:
 
 ## Set Privileges on an Existing PDF File
 
-To set privileges on a PDF file, create an object of the DocumentPrivilege class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object’s [Encrypt](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-boolean-) method. The following code snippet shows you how to set the privileges of a PDF file.
+To set privileges on a PDF file, create an object of the DocumentPrivilege class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's [Encrypt](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-boolean-) method. The following code snippet shows you how to set the privileges of a PDF file.
 
 ```java
   public static void SetPrivilegesOnExistingPDF()
@@ -66,7 +66,7 @@ public static void EncryptPDFFile() {
 
 ## Decrypt PDF File using Owner Password
 
-In order to decrypt the PDF file, you first need to create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the PDF using the owner’s password. After that, you need to call [Decrypt](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#decrypt--) method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)  object. Finally, save the updated PDF file using Save method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)  object. The following code snippet shows you how to decrypt the PDF file.
+In order to decrypt the PDF file, you first need to create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the PDF using the owner's password. After that, you need to call [Decrypt](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#decrypt--) method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)  object. Finally, save the updated PDF file using Save method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)  object. The following code snippet shows you how to decrypt the PDF file.
 
 ```java
 public static void DecryptPDFFile() {

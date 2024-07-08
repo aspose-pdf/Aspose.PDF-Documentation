@@ -13,9 +13,9 @@ sitemap:
 
 ## Get Bookmarks
 
-The [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object’s [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection) collection contains all a PDF file’s bookmarks. This article explains how to get bookmarks from a PDF file, and how to get which page a particular bookmark is on.
+The [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection) collection contains all a PDF file's bookmarks. This article explains how to get bookmarks from a PDF file, and how to get which page a particular bookmark is on.
 
-To get the bookmarks, loop through the [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection) collection and get each bookmark in the OutlineItemCollection. The OutlineItemCollection provides access to all the bookmark’s attributes. The following code snippet shows you how to get bookmarks from the PDF file.
+To get the bookmarks, loop through the [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection) collection and get each bookmark in the OutlineItemCollection. The OutlineItemCollection provides access to all the bookmark's attributes. The following code snippet shows you how to get bookmarks from the PDF file.
 
 ```cpp
 void GettingBookmarks() {
@@ -32,7 +32,7 @@ void GettingBookmarks() {
 }
 ```
 
-## Getting a Bookmark’s Page Number
+## Getting a Bookmark's Page Number
 
 Once you have added a bookmark you can find out what page it is on by getting the destination PageNumber associated with the Bookmark object.
 
@@ -60,7 +60,7 @@ void GettingBookmarksPageNumber() {
 
 ## Update Bookmarks in a PDF Document
 
-To update a bookmark in a PDF file, first, get the particular bookmark from the Document object’s OutlineColletion collection by specifying the bookmark’s index. Once you have retrieved the bookmark into [OutlineItemCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_item_collection) object, you can update its properties and then save the updated PDF file using the Save method. The following code snippets show how to update bookmarks in a PDF document.
+To update a bookmark in a PDF file, first, get the particular bookmark from the Document object's OutlineColletion collection by specifying the bookmark's index. Once you have retrieved the bookmark into [OutlineItemCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_item_collection) object, you can update its properties and then save the updated PDF file using the Save method. The following code snippets show how to update bookmarks in a PDF document.
 
 ```cpp
 void UpdateBookmarksInPDFDocument() {
@@ -92,7 +92,7 @@ To update a child bookmark:
 
 {{% alert color="primary" %}}
 
-Get a bookmark from the Document object’s OutlineCollection collection by specifying the bookmark’s index, and then get the child bookmark by specifying the index od this parent bookmark.
+Get a bookmark from the Document object's OutlineCollection collection by specifying the bookmark's index, and then get the child bookmark by specifying the index od this parent bookmark.
 
 {{% /alert %}}
 
@@ -123,7 +123,7 @@ void UpdateChildBookmarksInPDFDocument() {
 
 ## Expanded Bookmarks when viewing document
 
-Bookmarks are held in the Document object’s [OutlineItemCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_item_collection) collection, itself in the [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection) collection. However, we may have a requirement to have all the bookmarks expanded when viewing the PDF file.
+Bookmarks are held in the Document object's [OutlineItemCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_item_collection) collection, itself in the [OutlineCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.outline_collection) collection. However, we may have a requirement to have all the bookmarks expanded when viewing the PDF file.
 
 In order to accomplish this requirement, we can set open status for each outline/bookmark item as Open. The following code snippet shows you how to set the open status for each bookmark as expanded in a PDF document.
 

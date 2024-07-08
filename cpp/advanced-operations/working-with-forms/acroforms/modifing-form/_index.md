@@ -94,7 +94,7 @@ void SetCustomFontForField() {
 
 ## Delete fields from existing form
 
-All the form fields are contained in the Document object’s Form collection. This collection provides different methods that manage form fields, including the Delete method. If you want to delete a particular field, pass the field name as a parameter to the Delete method and then save the updated PDF document. The following code snippet shows how to delete a particular field from a PDF document.
+All the form fields are contained in the Document object's Form collection. This collection provides different methods that manage form fields, including the Delete method. If you want to delete a particular field, pass the field name as a parameter to the Delete method and then save the updated PDF document. The following code snippet shows how to delete a particular field from a PDF document.
 
 ```cpp
 void DeleteFormField() {    

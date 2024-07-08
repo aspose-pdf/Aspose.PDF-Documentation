@@ -11,7 +11,7 @@ lastmod: "2021-06-05"
 
 When you are happy with your evaluation, [buy a license](https://purchase.aspose.com/buy). Before purchasing, make sure you understand and agree to the license subscription terms.
 
-The license will be available for download from the order page after the order is paid. The license is a clear text, digitally signed XML file. The license contains information such as the client’s name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
+The license will be available for download from the order page after the order is paid. The license is a clear text, digitally signed XML file. The license contains information such as the client's name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
 
 ## Licensing a Server
 

@@ -79,7 +79,7 @@ sitemap:
 
 ## Fill Form Field in a PDF Document
 
-To fill a form field, get the field from the Document object’s [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) collection. then set the field value using the field’s [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#properties) property.
+To fill a form field, get the field from the Document object's [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) collection. then set the field value using the field's [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#properties) property.
 
 This example selects a [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) and sets its value using the Value property.
 

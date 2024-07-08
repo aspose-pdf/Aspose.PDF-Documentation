@@ -85,7 +85,7 @@ The [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)
 To add a form field:
 
 1. Create the form field you want to add.
-1. Call the Form collection’s [add](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#methods) method.
+1. Call the Form collection's [add](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#methods) method.
 
 ### Adding TextBoxField
 
