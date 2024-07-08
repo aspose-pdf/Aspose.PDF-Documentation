@@ -35,16 +35,15 @@ The following code snippet shows you how to add text in the header of a PDF file
 
     // Set properties of the stamp
     $textStamp->setTopMargin(10);
-    $textStamp->setHorizontalAlignment($horizontalAlignment->getCenter());
-    $textStamp->setVerticalAlignment($verticalAlignment->getTop());
+    $textStamp->setHorizontalAlignment($horizontalAlignment->Center);
+    $textStamp->setVerticalAlignment($verticalAlignment->Top);
 
     $pages = $document->getPages();
 
-    // Add header on all pages
-    foreach ($pages as $page) {
-        $page->addStamp($textStamp);
-    }
-
+    // Add footer on the 1st pages
+    $page = $pages->get_Item(1);
+    $page->addStamp($textStamp);
+    
     // Save output document
     $document->save($outputFile);
     $document->close();
@@ -68,16 +67,15 @@ The following code snippet shows you how to add text in the footer of a PDF file
 
     // Set properties of the stamp
     $textStamp->setBottomMargin(10);
-    $textStamp->setHorizontalAlignment($horizontalAlignment->getCenter());
-    $textStamp->setVerticalAlignment($verticalAlignment->getBottom());
+    $textStamp->setHorizontalAlignment($horizontalAlignment->Center);
+    $textStamp->setVerticalAlignment($verticalAlignment->Bottom);
 
     $pages = $document->getPages();
 
-    // Add footer on all pages
-    foreach ($pages as $page) {
-        $page->addStamp($textStamp);
-    }
-
+    // Add footer on the 1st pages
+    $page = $pages->get_Item(1);
+    $page->addStamp($textStamp);
+    
     // Save output document
     $document->save($outputFile);
     $document->close();
@@ -99,15 +97,14 @@ You can use [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/im
 
     // Set properties of the stamp
     $imageStamp->setTopMargin(10);
-    $imageStamp->setHorizontalAlignment($horizontalAlignment->getCenter());
-    $imageStamp->setVerticalAlignment($verticalAlignment->getTop());
+    $imageStamp->setHorizontalAlignment($horizontalAlignment->Center);
+    $imageStamp->setVerticalAlignment($verticalAlignment->Top);
 
     $pages = $document->getPages();
 
-    // Add footer on all pages
-    foreach ($pages as $page) {
-        $page->addStamp($textStamp);
-    }
+    // Add footer to 1st page
+    $page = $pages->get_Item(1);
+    $page->addStamp($imageStamp);
 
     // Save output document
     $document->save($outputFile);
@@ -140,15 +137,14 @@ The following code snippet shows you how to add image in the footer of a PDF fil
 
     // Set properties of the stamp
     $imageStamp->setBottomMargin(10);
-    $imageStamp->setHorizontalAlignment($horizontalAlignment->getCenter());
-    $imageStamp->setVerticalAlignment($verticalAlignment->getBottom());
+    $imageStamp->setHorizontalAlignment($horizontalAlignment->Center);
+    $imageStamp->setVerticalAlignment($verticalAlignment->Bottom);
 
     $pages = $document->getPages();
 
-    // Add footer on all pages
-    foreach ($pages as $page) {
-        $page->addStamp($textStamp);
-    }
+    // Add footer to 1st page
+    $page = $pages->get_Item(1);
+    $page->addStamp($imageStamp);
 
     // Save output document
     $document->save($outputFile);
@@ -173,41 +169,41 @@ In order to accomplish this requirement, we will create individual [TextStamp](h
     
     $horizontalAlignment = new HorizontalAlignment();
     $verticalAlignment = new VerticalAlignment();
+    $fontStyles = new FontStyles();
 
     // Set stamp alignment (place stamp on page top, centered horiznotally)
-    $stamp1->setVerticalAlignment ($verticalAlignment->getTop());
-    $stamp1->setHorizontalAlignment($horizontalAlignment->getCenter());
+    $stamp1->setVerticalAlignment ($verticalAlignment->Top);
+    $stamp1->setHorizontalAlignment($horizontalAlignment->Center);
 
     // Specify the font style as Bold
-    $stamp1->getTextState()->setFontStyle(FontStyles::$Bold);
+    $stamp1->getTextState()->setFontStyle($fontStyles->Bold);
     // Set the text fore ground color information as red
     $stamp1->getTextState()->setForegroundColor((new Color())->getRed());
     // Specify the font size as 14
     $stamp1->getTextState()->setFontSize(14);
 
     // Now we need to set the vertical alignment of 2nd stamp object as Top
-    $stamp2->setVerticalAlignment(($verticalAlignment->getTop()));
+    $stamp2->setVerticalAlignment($verticalAlignment->Top);
     // Set Horizontal alignment information for stamp as Center aligned
-    $stamp2->setHorizontalAlignment($horizontalAlignment->getCenter());
+    $stamp2->setHorizontalAlignment($horizontalAlignment->Center);
     // Set the zooming factor for stamp object
     $stamp2->setZoom(10);
 
     // Set the formatting of 3rd stamp object
     // Specify the Vertical alignment information for stamp object as TOP
-    $stamp3->setVerticalAlignment(($verticalAlignment->getTop()));
+    $stamp3->setVerticalAlignment($verticalAlignment->Top);
     // Set the Horizontal alignment inforamtion for stamp object as Center aligned
-    $stamp3->setHorizontalAlignment ($horizontalAlignment->getCenter());
+    $stamp3->setHorizontalAlignment ($horizontalAlignment->Center);
     // Set the rotation angle for stamp object
     $stamp3->setRotateAngle(35);
     // Set pink as background color for stamp
-    $stamp3->getTextState()->setBackgroundColor ((new Color())->getPink());
-    
+    $stamp3->getTextState()->setBackgroundColor ((new Color())->getPink());  
     // Change the font face information for stamp to Verdana
     $stamp3->getTextState()->setFont ((new FontRepository())->findFont("Verdana"));
 
     // First stamp is added on first page;
     $document->getPages()->get_Item(1)->addStamp($stamp1);
-    // Second stamp is added on second page;
+    // // Second stamp is added on second page;
     $document->getPages()->get_Item(2)->addStamp($stamp2);
     // Third stamp is added on third page.
     $document->getPages()->get_Item(3)->addStamp($stamp3);

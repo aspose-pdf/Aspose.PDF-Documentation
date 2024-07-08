@@ -19,21 +19,39 @@ Suppose we don't know the names of the form fields in advance. Then we should it
 
 ```php
 
-    // Create a new instance of the Document class and load the input PDF file
-    $document = new Document($inputFile);
+    // Create a new instance of the License class and set the license file
+    $licenceObject = new License();
+    $licenceObject->setLicense($license);
 
-    // Get the form fields from the document and convert them to PHP values
-    $fields = java_values($document->getForm()->getFields());
+    // Set the path to the directory containing the PDF document
+    $dataDir = getcwd() . DIRECTORY_SEPARATOR . "samples";
 
-    // Loop through each form field and extract the field name and value
-    foreach ($fields as $formField) {
-        // Concatenate the field name and value to the response data
-        $responseData = $responseData . "(Field Name: " . $formField->getPartialName() . " |";
-        $responseData = $responseData . " Value: " . $formField->getValue() . "),";
+    // Set the path to the input PDF file
+    $inputFile = $dataDir . DIRECTORY_SEPARATOR . "StudentInfoFormElectronic.pdf";
+
+    // Set the response header to indicate that the response will be in JSON format
+    header('Content-Type: application/json; charset=utf-8');
+
+    // Initialize the response data variable
+    $responseData = "";
+
+    try {
+        // Create a new instance of the Document class and load the input PDF file
+        $document = new Document($inputFile);
+
+        // Get the form fields from the document and convert them to PHP values
+        $fields = java_values($document->getForm()->getFields());
+
+        // Loop through each form field and extract the field name and value
+        foreach ($fields as $formField) {
+            // Concatenate the field name and value to the response data
+            $responseData = $responseData . "(Field Name: " . $formField->getPartialName() . " |";
+            $responseData = $responseData . " Value: " . $formField->getValue() . "),";
+        }
+
+        // Close the document
+        $document->close();
     }
-
-    // Close the document
-    $document->close(); 
 ```
 
 If you do know the name of the form fields that you wish to extract values from then you can use indexer in Documents.Form collection to quickly retrieve this data.

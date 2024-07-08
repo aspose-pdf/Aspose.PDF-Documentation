@@ -29,15 +29,15 @@ The following PHP code snippet shows you how to split PDF pages into individual 
 
     // Open document
     $document = new Document($inputFile);
-    $pageCount = 1;
-   
+    $pages = $document->getPages();
+    $pagesSize = java_values($pages->size());
+       
     // Loop through all the pages
-    foreach($document->getPages() as $page)
-    {
+    for ($pageCount = 1; $pageCount <= $pagesSize; $pageCount++) {
+        $page = $pages->get_Item($pageCount);
         $newDocument = new Document();
         $newDocument->getPages()->add($page);
-        $newDocument->save($outputFile . "page_" . $pageCount . ".pdf");        
-        $pageCount++;
+        $newDocument->save($outputFile . "page_" . $pageCount . ".pdf");
         $newDocument->close();
     }
     $document->close();

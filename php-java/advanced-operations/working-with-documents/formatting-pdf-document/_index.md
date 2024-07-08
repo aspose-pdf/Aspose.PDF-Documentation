@@ -151,13 +151,16 @@ However, if a custom font is used for the body text, embed it in its entirety.
 The following code snippet shows how to embed a font in a PDF file.
 
 ```php
-  // Open document
+
+    // Open document
     $document = new Document($inputFile);
-    // Iterate through all the pages
-    foreach ($document->getPages() as $page) {
+    $pages = $document->getPages();
+    for ($i = 1; $i <= $pages->size(); $i++) {
+      $page = $pages->get_Item($i);
       $fonts = $page->getResources()->getFonts();
       if (!is_null($fonts)) {
-        foreach ($fonts as $pageFont) {
+        for ($fontIndex = 1; $fontIndex <= $fonts->size(); $fontIndex++) {
+          $pageFont = $fonts->get_Item($fontIndex);
           // Check if font is already embedded
           if (!$pageFont->isEmbedded())
             $pageFont->setEmbedded(true);
@@ -165,19 +168,22 @@ The following code snippet shows how to embed a font in a PDF file.
       }
       $forms = $page->getResources()->getForms();
       // Check for the Form objects
-      foreach ($forms as $form) {
-        $formFonts = $form->getResources()->getFonts();
+      for ($formIndex = 0; $formIndex < -$forms->size(); $formIndex++) {
+        $formFonts = $forms->get_Item($formIndex)->getResources()->getFonts();
         if (!is_null($formFonts)) {
-          foreach ($formFonts as $formFont) {
-            // Check if the font is embedded
-            if (!$formFont->isEmbedded())
-              $formFont->setEmbedded(true);
+          for ($fontIndex = 1; $fontIndex <= $formFonts->size(); $fontIndex++) {
+            $pageFont = $formFonts->get_Item($fontIndex);
+            // Check if font is already embedded
+            if (!$pageFont->isEmbedded())
+              $pageFont->setEmbedded(true);
           }
         }
       }
+      $responseData = "Ok";
     }
+
     // Save updated PDF file
-    $document->save(DATA_DIR + "UpdatedFile_output.pdf");
+    $document->save($outputFile);
     $document->close();
 ```
 

@@ -26,12 +26,15 @@ Aspose.PDF for PHP via Java has feature to change the page orientation from land
 ```php
 
     // Open document
-    $document = new Document($inputFile);    
-    
+    $document = new Document($inputFile);                
     $pages = $document->getPages();
-    
-    foreach ($pages as $page) {
-        $page->setRotate((new Rotation())->getOn90());
+    $pagesSize = java_values($pages->size());
+       
+    // Loop through all the pages
+    for ($pageCount = 1; $pageCount <= $pagesSize; $pageCount++) {
+        $page = $pages->get_Item($pageCount);
+       
+        $page->setRotate((new Rotation())->On90);
     }
 
     // Save output document

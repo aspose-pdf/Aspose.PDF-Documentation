@@ -263,13 +263,15 @@ Annotations can be deleted when they are unnecessary. When they are needed but d
     $document = new Document($inputFile);
     $pages = $document->getPages();
 
-    foreach ($pages as $page) {
+    for ($i=1; $i < $pages->size() ; $i++) { 
+        $page = $pages->get_Item($i);
         $annotations = $page->getAnnotations();
-        foreach ($annotations as $annotation) {
+        for ($idx=0; $idx < $annotations->size(); $idx++) { 
+            $annotation = $annotations->get_Item($idx);
             $annotation->flatten();
         }
     }
-
+     
     // Save the updated document
     $document->save($outputFile);
     $document->close();
