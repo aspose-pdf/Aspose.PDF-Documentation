@@ -3,7 +3,7 @@ title: Documentation
 linktitle: Aspose.PDF for Python via .NET
 second_title: Aspose.PDF for Python via .NET
 type: docs
-weight: 63
+weight: 40
 url: /python-net/
 is_root: true
 lastmod: "2022-10-24"

@@ -3,7 +3,7 @@ title: Documentation
 linktitle: Aspose.PDF for SharePoint
 second_title: Aspose.PDF for SharePoint
 type: docs
-weight: 50
+weight: 110
 url: /sharepoint/
 is_root: true
 lastmod: "2021-06-01"

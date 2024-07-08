@@ -3,7 +3,7 @@ title: Documentation
 linktitle: Aspose.PDF for C++
 second_title: Aspose.PDF for C++
 type: docs
-weight: 40
+weight: 30
 url: /cpp/
 is_root: true
 description: Learn to use Aspose.PDF C++ to create applications for PDF documents processing on any platform using C#, VB. Browse tutorials, sample code, and more.

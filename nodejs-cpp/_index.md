@@ -3,7 +3,7 @@ title: Documentation
 linktitle: Aspose.PDF for Node.js
 second_title: Aspose.PDF for Node.js via C++
 type: docs
-weight: 68
+weight: 70
 url: /nodejs-cpp/
 is_root: true
 lastmod: "2023-11-16"
@@ -23,7 +23,7 @@ Aspose.PDF for Node.js via C++ is a powerful toolkit that allows JavaScript to r
 
 Aspose.PDF for Node.js allows developers to manipulate PDF files directly. Aspose.PDF for Node.js via C++ is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET.
 
-<h2>Chapters</h2>
+## Chapters
 
 - [What's new](/pdf/nodejs-cpp/whatsnew/)
 - [Overview](/pdf/nodejs-cpp/overview/)
