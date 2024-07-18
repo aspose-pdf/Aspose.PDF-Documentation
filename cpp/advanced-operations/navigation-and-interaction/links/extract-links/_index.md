@@ -18,8 +18,8 @@ Links are represented as annotations in a PDF file, so to extract links, extract
 1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
 1. Get the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) you want to extract links from.
 1. Use the [AnnotationSelector](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) class to extract all the [LinkAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) objects from the specified page.
-1. Pass the [AnnotationSelector](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object to the Page object’s Accept method.
-1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object’s Selected property.
+1. Pass the [AnnotationSelector](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object to the Page object's Accept method.
+1. Get all the selected link annotations into an IList object using the [AnnotationSelector](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.annotation_selector/) object's Selected property.
 
 The following code snippet shows you how to extract links from a PDF file.
 

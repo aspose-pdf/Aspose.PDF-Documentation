@@ -49,7 +49,7 @@ Here are the topics that you will eventually need to master:
 
 - Working with COM objects exposed by .NET COM Interop. See [Interoperating With Unmanaged Code](http://msdn.microsoft.com/en-us/library/sd10k43k.aspx) and [Exposing .NET Framework Components to COM](http://msdn.microsoft.com/en-us/library/zsfww439%28v=vs.110%29.aspx) in MSDN.
 
-- Aspose.PDF document object model. See [Aspose.PDF Programmer’s Guide](http://www.aspose.com/docs/display/pdfnet/Programmers+Guide) and [API Reference](http://www.aspose.com/docs/display/pdfnet/Aspose.PDF+for+.NET+API+Reference).
+- Aspose.PDF document object model. See [Aspose.PDF Programmer's Guide](http://www.aspose.com/docs/display/pdfnet/Programmers+Guide) and [API Reference](http://www.aspose.com/docs/display/pdfnet/Aspose.PDF+for+.NET+API+Reference).
 
 {{% /alert %}}
 
@@ -116,7 +116,7 @@ Set pdf = CreateObject("Aspose.PDF.Generator.Pdf")
 
 ```
 
-Once created, you are able to access the object’s methods and properties, as if it was a COM object:
+Once created, you are able to access the object's methods and properties, as if it was a COM object:
 
 ```vb
 'Add section to Pdf object

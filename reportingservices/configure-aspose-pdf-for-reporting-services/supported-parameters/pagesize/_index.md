@@ -8,7 +8,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-The RS designer does not support setting different page size such as A4, B5, Letter and so on. With Aspose.PDF for Reporting Services, however, you can.
+Reporting Services report designer does not support common page sizes such as A4, B5, Letter and so on. With Aspose.Pdf for Reporting Services, you can get it as in the following example.
 
 {{% /alert %}}
 
@@ -23,12 +23,12 @@ The RS designer does not support setting different page size such as A4, B5, Let
 {{< highlight csharp >}}
 
 <Render>
-...
-<Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer, Aspose.PDF.ReportingServices">
-<Configuration>
-<PageSize >A4</PageSize>
-</Configuration>
-</Extension>
+…
+    <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
+    <Configuration>
+    <PageSize>A4</PageSize>
+    </Configuration>
+    </Extension>
 </Render>
 
 {{< /highlight >}}

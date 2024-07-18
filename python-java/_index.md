@@ -3,7 +3,7 @@ title: Documentation
 linktitle: Aspose.PDF for Python via Java
 second_title: Aspose.PDF for Python via Java
 type: docs
-weight: 62
+weight: 60
 url: /python-java/
 is_root: true
 lastmod: "2023-04-06"

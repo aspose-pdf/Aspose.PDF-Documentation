@@ -12,7 +12,7 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 
 {{% /alert %}}
 
-##### <ins>**Service Account:**
+## Service Account:
 
 **Be sure to understand what service account you are using for Reporting Services. If we run into issues, it may be related to the service account you are using. The default is Network Service. When we go to deploy new builds, we always use Domain Accounts, because that is where we are likely to hit issues. For this instance of server, we have used a Domain Account called RSService.**
 
@@ -20,7 +20,8 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 
 **Image1:- Setting-up service account**
 
-##### <ins>**Web Service URL:**
+## Web Service URL:
+
 {{% alert color="primary" %}}
 
 **We will need to configure the Web Service URL. This is the ReportServer virtual directory (vdir) that hosts the Web Services Reporting Services uses, and what SharePoint will communicate with. Unless you want to customize the properties of the vdir (i.e. SSL, ports, host headers, etc…), you should just be able to click Apply here and be good to go.**
@@ -33,7 +34,7 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 **Image3:- Successful setup of Web service URL**
 {{% /alert %}}
 
-##### <ins>**Database:**
+## Database:
 
 **We need to create the Reporting Services Catalog Database. This can be placed on any SQL 2008 or SQL 2008 R2 Database Engine. SQL11 would work ok as well, but that is still in BETA. This action will create two databases, ReportServer and ReportServerTempDB, by default.**
 
@@ -72,11 +73,12 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 **Image9:- Report Server database completion summary**
 {{% /alert %}}
 
-##### <ins>**Report Manager URL:**
+## Report Manager URL:
 
 **We can skip the Report Manager URL as it isn't used when we are in SharePoint Integrated mode. SharePoint is our frontend. Report Manager doesn't work.**
 
-##### <ins>**Encryption Keys:**
+## Encryption Keys:
+
 {{% alert color="primary" %}}
 **Backup your Encryption Keys and make sure you know where you keep them. If you get into a situation where you need to migrate the Database or restore it, you will need these.**
 

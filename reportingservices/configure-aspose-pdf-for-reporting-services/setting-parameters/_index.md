@@ -18,45 +18,29 @@ To configure Aspose.Pdf for Reporting Services, you need to edit the C:\Program 
 
 {{< highlight csharp >}}
 
- <Render>
-
-...
-
-<Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices ">
-
+<Render>
+…
+<Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
 <!--Insert configuration elements for exporting to PDF here. The following is an example
-
 For PageOrientation -->
-
-<Configuration>
-
-<IsLandscape>True</IsLandscape>
-
-</Configuration>
-
+    <Configuration>
+    <IsLandscape>True</IsLandscape>
+    </Configuration>
 </Extension>
-
 </Render>
-
-
 
 {{< /highlight >}}
 
 {{% alert color="primary" %}}
 
-If you want to make the parameters for specific report file but not for all the reports, you can add report parameter for the specific report by the report builder as the following steps (for the 'IsLandscape' example):
+If you want to set parameters for specific report file but not for every report on the server, you can add a report parameter for the specific report in the Report Builder as the following steps (for example, we’ll add an 'IsLandscape' parameter shown earlier):
 
-1. Open the report in Report Designer and then open the menu 'Report', select the menu item 'report parameters'.
-1. In the report parameter dialog, click button 'Add' to add the parameter named 'IsLandscape', with the type of Boolean and the value should be True.
-
+1. Open the report in the Report Designer, right-click on the 'Parameters' folder in the 'Report Data' pane, and select 'Add Parameter…' (or, alternately, pull down the 'New' list and select 'Parameter…').
+ 
 ![todo:image_alt_text](setting-parameters_1.png)
 
-
-Figure for Report Builder Designer 2005.
+1. In the 'Report Parameter Properties' dialog, create the parameter named 'IsLandscape', with the data type of Boolean, and add the value True in the 'Default Values' tab.
 
 ![todo:image_alt_text](setting-parameters_2.png)
-
-
-Figure for Report Builder Designer 2008.
 
 {{% /alert %}}

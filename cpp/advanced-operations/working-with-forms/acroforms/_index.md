@@ -21,7 +21,7 @@ For a more detailed study of the possibilities of working with forms, study the 
 
 - [Create AcroForm](/pdf/cpp/create-form/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using C++.
 
-- [Fill AcroForm](/pdf/cpp/fill-form/) - to fill a form field, get the field from the Document object’s Form collection.
+- [Fill AcroForm](/pdf/cpp/fill-form/) - to fill a form field, get the field from the Document object's Form collection.
 
 - [Extract Data AcroForm](/pdf/cpp/extract-form/) - get values from all and individual the fields and etc.
 

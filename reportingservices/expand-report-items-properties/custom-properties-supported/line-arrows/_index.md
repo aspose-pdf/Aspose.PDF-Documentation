@@ -21,10 +21,10 @@ Add Start Arrow for Line
 **Custom Property Value**: True  
 
 Add End Arrow for Line  
-**Custom Property** **Name**: HasArrowAt End  
+**Custom Property** **Name**: HasArrowAtEnd  
 **Custom Property Value**: True  
 
-For example, there are two lines named 'line1' and 'line2' in the current report file, and line1 has the start arrow, line2 has the start and end arrows, to satisfy these requirements, you can add custom properties as the following code.
+For example, there are two lines named 'line1' and 'line2' in the current report file, and line1 has the start arrow, line2 has the start and end arrows, to satisfy these requirements, you can add custom properties as in the following code fragment.
 
 **Example**
 

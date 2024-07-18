@@ -8,11 +8,11 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-In the RDL specification for RS2005 and 2008, almost every report item can be extended by adding custom properties. Currently, Aspose.PDF for Reporting Services 2005 and 2008 supports three such properties:
+In RDL Specification for RS2016, RS2017, RS2019, RS2022, and Power BI, almost every report item can be extended by adding custom properties. Currently Aspose.Pdf for Reporting Services 2016, 2017, 2019, 2022, and Power BI supports three such properties, namely:
 
 - Table of contents, list of tables or figures.
-- Line arrows.
-- Footnote/endnote.
+- Line Arrows.
+- Footnote/Endnote.
 
 Find out how to use them in the [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/) article.
 

@@ -6,24 +6,17 @@ url: /reportingservices/install-with-configuring-tool/
 lastmod: "2021-06-05"
 ---
 
-{{% alert color="primary" %}}
+Aspose.Pdf for Reporting Services Configuring Tool can help you to configure the Aspose.Pdf for Reporting Services extension for any of the supported Report Server (RS) versions. Currently it supports RS2016, RS2017, RS2019, RS2022, and Power BI Report Server. The Configuring Tool requires .NET Framework 4.8.
 
-Aspose Pdf for Reporting Service Config uring to ol can help you to config the 'Aspose.PDF for ReportingServices.dll' file for Report Server(RS) and VisualStudio(VS) products. Currently it supports RS2000, RS2005, RS2008, VS2005 and VS2008.
-
-{{% /alert %}}
-
-{{% alert color="primary" %}}
-
-If you wan t to register the DLL file, the 'Register' action type should be selected. And 'Unregister' action type should be used for unregistering.
+If you want to install the extension and register it with the Report Server, select the 'Register' action type. For unregistering and uninstalling the extension select the 'Unregister' action type.
 
 ![todo:image_alt_text](install-with-configuring-tool_1.png)
 
 **The following steps describe how to use it in detail:**
 
-1. Input or browse the path of the DLL file for Aspose Pdf for Reporting Service;
-1. Select the corresponding action type: register or unregister;
-1. Select the corresponding product: ReportServer or VS Design tool;
-1. In the tab pages, select the version of the current product you want to configure. In this step, it is necessary for you to check the DLL file be suitable for the current version. If the current version of this product is not installed on your machine, the configuration tool will inform you with tips. If you are configuring for RS and the name of MS SQLServer instance is not 'MSSQLSERVER', please input the custom instance name, then press refresh button.
-1. Make sure that the configure file’s path and name showed in the textbox be correct. If not, you can press the button to look it up manually.
-1. Press 'Config' button. After several seconds, it will inform you the result of configuration, successful or failed.
-{{% /alert %}}
+1. Input or browse the path of the DLL file for Aspose.Pdf for Reporting Services extension;
+1. Select the corresponding action type: Register or Unregister;
+1. Select the tab corresponding to the version of the Report Server you want to configure.Please ensure that you selected the DLL file that is intended for your RS version. If the requested version of the product is not installed on the machine, the configuration tool will inform you with tips. If you are configuring the extension for the named RS2016 instance (not the default 'MSSQLSERVER' one), please input the custom instance name, then press the 'Refresh' button.
+1. Make sure that the configuration files paths and names shown in the bottom textboxes are correct. If they are not, you can press the 'Refresh' button to try to find the RS instance again, or you may look them up manually.
+1. Press the 'Config' button. The tool will now attempt to make the requested configuration, and will inform you whether the configuration is successful or not.
+ 

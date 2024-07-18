@@ -3,7 +3,7 @@ title: Documentation
 linktitle: Aspose.PDF for Python via C++
 second_title: Aspose.PDF for Python via C++
 type: docs
-weight: 63
+weight: 50
 url: /python-cpp/
 is_root: true
 lastmod: "2024-04-24"
