@@ -99,7 +99,7 @@ The following code snippet shows how to create a link to an application in a PDF
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
 // Open document
-Document document = new Document( dataDir + "CreateApplicationLink.pdf");
+Document document = new Document(dataDir + "CreateApplicationLink.pdf");
 
 // Create link
 Page page = document.Pages[1];
