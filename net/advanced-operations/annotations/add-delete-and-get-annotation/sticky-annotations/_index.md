@@ -118,6 +118,45 @@ wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
 doc.Save("Output.pdf");
 ```
 
+## Add Reference of a single Image multiple times in a PDF Document
+
+Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. We have added a new method XImageCollection.Add(XImage) in Aspose.PDF for .NET 17.1.0. This method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
+
+```csharp
+ Aspose.PDF.Rectangle imageRectangle = new Aspose.PDF.Rectangle(0, 0, 30, 15);
+
+using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
+{
+    using (var imageStream = File.Open("icon.png", FileMode.Open))
+    {
+        XImage image = null;
+        foreach (Page page in document.Pages)
+        {
+            WatermarkAnnotation annotation = new WatermarkAnnotation(page, page.Rect);
+            XForm form = annotation.Appearance["N"];
+            form.BBox = page.Rect;
+            string name;
+            if (image == null)
+            {
+                name = form.Resources.Images.Add(imageStream);
+                image = form.Resources.Images[name];
+            }
+            else
+            {
+                name = form.Resources.Images.Add(image);
+            }
+            form.Contents.Add(new Operator.GSave());
+            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.PDF.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
+            form.Contents.Add(new Operator.Do(name));
+            form.Contents.Add(new Operator.GRestore());
+            page.Annotations.Add(annotation, false);
+            imageRectangle = new Aspose.PDF.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
+        }
+    }
+    document.Save("output.pdf");
+}
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",

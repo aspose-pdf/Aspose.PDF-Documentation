@@ -87,6 +87,7 @@ We have combined the different kinds of annotation available for the Aspose.PDF 
 - [PDF Figures Annotation](/pdf/net/figures-annotation/)
 - [Multimedia Annotation](/pdf/net/multimedia-annotation/)
 - [PDF sticky Annotations](/pdf/net/sticky-annotations/)
+- [Link Annotations](/pdf/net/link-annotations/)
 - [Extra Annotations](/pdf/net/extra-annotations/)
 
 <script type="application/ld+json">
