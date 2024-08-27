@@ -1,6 +1,6 @@
 ---
-title: PDF Annotations
-linktitle: PDF Annotations
+title: Working with Annotations 
+linktitle: Annotations in PDF
 type: docs
 weight: 100
 url: /net/annotations/

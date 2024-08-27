@@ -3,7 +3,7 @@ title: Documentation
 linktitle: Aspose.PDF for JavaScript
 second_title: Aspose.PDF for JavaScript via C++
 type: docs
-weight: 68
+weight: 80
 url: /javascript-cpp/
 is_root: true
 lastmod: "2022-12-08"

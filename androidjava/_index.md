@@ -3,7 +3,7 @@ title: Documentation
 linktitle: Aspose.PDF for Android via Java
 second_title: Aspose.PDF for Android via Java
 type: docs
-weight: 40
+weight: 100
 url: /androidjava/
 is_root: true
 lastmod: "2021-05-08"

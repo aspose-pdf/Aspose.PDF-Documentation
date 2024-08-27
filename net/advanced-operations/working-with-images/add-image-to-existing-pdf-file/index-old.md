@@ -83,7 +83,7 @@ To add an image to an existing PDF file:
 
 - Create a Document object and open the input PDF document.
 - Get the page you want to add an image to.
-- Add the image into the page's Resources collection.
+- Add the image into the page’s Resources collection.
 - Use operators to place the image on the page:
 - Use the GSave operator to save the current graphical state.
 - Use ConcatenateMatrix operator to specify where the image is to be placed.
@@ -143,15 +143,63 @@ By default, the JPEG quality is set to 100%. To apply better compression and qua
 There is also an alternative, easier way to add a Image to a PDF file. You can use [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method of the [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) class. The [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using Close method. The following code snippet shows you how to add image in an existing PDF file.
 
 ```csharp
-string imageFileName = Path.Combine(_dataDir, "Images", "Sample-01.jpg");
-string outputPdfFileName = Path.Combine(_dataDir, "Example-add-image-mender.pdf");
-Document document = new Document();
-Page page = document.Pages.Add();
-page.SetPageSize(PageSize.A3.Height, PageSize.A3.Width);
-page = document.Pages.Add();
-Aspose.Pdf.Facades.PdfFileMend mender = new Aspose.Pdf.Facades.PdfFileMend(document);
-mender.AddImage(imageFileName, 1, 0, 0, (float)page.CropBox.Width, (float)page.CropBox.Height);
-document.Save(outputPdfFileName);
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// The path to the documents directory.
+string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Images();
+
+// Open document
+PdfFileMend mender = new PdfFileMend();
+
+// Create PdfFileMend object to add text
+mender.BindPdf(dataDir + "AddImage.pdf");
+
+// Add image in the PDF file
+mender.AddImage(dataDir+ "aspose-logo.jpg", 1, 100, 600, 200, 700);
+
+// Save changes
+mender.Save(dataDir + "AddImage_out.pdf");
+
+// Close PdfFileMend object
+mender.Close();
+```
+
+## Add Reference of a single Image multiple times in a PDF Document
+
+Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. We have added a new method XImageCollection.Add(XImage) in Aspose.PDF for .NET 17.1.0. This method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
+
+```csharp
+ Aspose.PDF.Rectangle imageRectangle = new Aspose.PDF.Rectangle(0, 0, 30, 15);
+
+using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
+{
+    using (var imageStream = File.Open("icon.png", FileMode.Open))
+    {
+        XImage image = null;
+        foreach (Page page in document.Pages)
+        {
+            WatermarkAnnotation annotation = new WatermarkAnnotation(page, page.Rect);
+            XForm form = annotation.Appearance["N"];
+            form.BBox = page.Rect;
+            string name;
+            if (image == null)
+            {
+                name = form.Resources.Images.Add(imageStream);
+                image = form.Resources.Images[name];
+            }
+            else
+            {
+                name = form.Resources.Images.Add(image);
+            }
+            form.Contents.Add(new Operator.GSave());
+            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.PDF.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
+            form.Contents.Add(new Operator.Do(name));
+            form.Contents.Add(new Operator.GRestore());
+            page.Annotations.Add(annotation, false);
+            imageRectangle = new Aspose.PDF.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
+        }
+    }
+    document.Save("output.pdf");
+}
 ```
 
 ## Place image on page and preserve (control) aspect ratio
@@ -230,7 +278,7 @@ using (Document document = new Document(dataDir + "ExtractImages.pdf"))
 
 ## Control Image Quality
 
-It is possible to control the quality of an image that's being added to a PDF file. Use the overloaded [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) method in the [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection) class.
+It is possible to control the quality of an image that’s being added to a PDF file. Use the overloaded [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) method in the [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection) class.
 
 The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
 
