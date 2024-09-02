@@ -1,10 +1,10 @@
 ---
-title: How to run Aspose.PDF in Docker
-linktitle: Using Docker
+title: How to run Aspose.PDF for .NET 8 in Docker
+linktitle: Using Aspose.PDF for .NET 8 in Docker
 type: docs
 weight: 20
 url: /net/docker/dotnet8/
-description: Integrate Aspose.PDF functionality into your application using Docker Linux containers
+description: Integrate Aspose.PDF functionality into .NET 8 application using Docker Linux or Windows containers 
 lastmod: "2024-01-21"
 sitemap:
     changefreq: "monthly"
