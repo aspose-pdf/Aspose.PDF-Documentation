@@ -39,6 +39,7 @@ The first code snippet demonstrates how to compare the first pages of two PDF do
 The second code snippet expands the scope to compare the entire content of two PDF documents.
 
 ```cs
+
     string documentPath1 = "";
     string documentPath2 = "";
 
