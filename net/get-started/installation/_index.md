@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/installation/
 description: This section shows a product description and instructions for installing Aspose.PDF for .Net on your own, as well as using NuGet.
-lastmod: "2021-06-05"
+lastmod: "2024-09-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -51,7 +51,7 @@ Due to the reasons specified above, Aspose .NET components cannot be used on ser
 
 You can easily download Aspose.PDF for .Net for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to apply the license.
 
-The evaluation version of Aspose.PDF (without a license specified) provides full product functionality, but it has two limitations: it inserts an evaluation watermark, and only four elements of any collection can be viewed/edited.
+The evaluation version of Aspose.PDF (without a license specified) provides full product functionality. Still, it has two limitations: it inserts an evaluation watermark, and only the first four pages of any document can be viewed/edited.
 
 {{% alert color="primary" %}}
 
