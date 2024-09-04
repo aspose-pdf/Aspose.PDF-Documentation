@@ -32,6 +32,7 @@ The code starts by initializing two PDF documents using their respective file pa
 'AdditionalChangeMarks = true'- this option ensures that additional change markers are displayed. These markers highlight differences that might be present on other pages, even if they are not on the current page being compared.
 
 'ComparisonMode = ComparisonMode.IgnoreSpaces' - this mode tells the comparer to ignore spaces in the text, focusing only on changes within words.
+
 3. The resulting comparison document, which highlights the differences between the two pages, is saved to the file path specified in 'resultPdfPath'.
 
 ```cs
