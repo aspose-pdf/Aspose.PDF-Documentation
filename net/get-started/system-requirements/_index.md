@@ -66,4 +66,4 @@ The following .NET Framework versions are supported:
 - .NET 7.0
 - .NET 8.0
 
-[^1]: Aspose.PDF for .NET is supported with .NET Framework 4.0. However, since .NET Framework 4.0 is obsolete, this support is provided solely for compatibility purposes. Please note that we reserve the right to discontinue publishing the assembly for .NET Framework 4.0 at any time during the second half of 2024.
+[^1]: Aspose.PDF for .NET is supported with .NET Framework 4.0. However, since .NET Framework 4.0 is obsolete, this support is provided solely for compatibility purposes. Please note that we reserve the right to discontinue publishing the assembly for .NET Framework 4.0 at any time.
