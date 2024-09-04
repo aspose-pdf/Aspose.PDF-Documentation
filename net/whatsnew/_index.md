@@ -15,7 +15,7 @@ lastmod: "2021-12-24"
 
 Comparing PDF Documents with Aspose.PDF for .NET
 
-From 24.7 it's possible to compare PDF documents content with annotation marks and side-by-side output:
+Since 24.7 it's possible to compare PDF documents content with annotation marks and side-by-side output:
 
 The first code snippet demonstrates how to compare the first pages of two PDF documents.
 

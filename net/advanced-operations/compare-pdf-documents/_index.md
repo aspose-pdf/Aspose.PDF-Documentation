@@ -4,7 +4,7 @@ linktitle: Compare PDF
 type: docs
 weight: 180
 url: /net/compare-pdf-documents/
-description: From 24.7 release it's possible to compare PDF documents content with annotation marks and side-by-side output
+description: Since 24.7 release it's possible to compare PDF documents content with annotation marks and side-by-side output
 lastmod: "2024-08-17"
 sitemap:
     changefreq: "weekly"
@@ -24,7 +24,7 @@ The first code snippet demonstrates how to compare the first pages of two PDF do
 Steps:
 
 1. Document Initialization.
-The code starts by initializing two PDF documents using their respective file paths (doc1Path and doc2Path). The paths are specified as empty strings for now, but in practice, you would replace these with the actual file paths.
+The code starts by initializing two PDF documents using their respective file paths (documentPath1 and documentPath2). The paths are specified as empty strings for now, but in practice, you would replace these with the actual file paths.
 1. Comparison Process.
 - Page Selection - the comparison is limited to the first page of each document ('Pages[1]').
 - Comparison Options:
@@ -36,19 +36,19 @@ The code starts by initializing two PDF documents using their respective file pa
 
 ```cs
 
-    string doc1Path = "";
-        string doc2Path = "";
+    string documentPath1 = "";
+    string documentPath2= "";
 
-        string resultPdfPath ="";
+    string resultPdfPath ="";
 
-        using (Document doc1 = new Document(doc1Path), doc2 = new Document(doc2Path))
+    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+    {
+        SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new SideBySideComparisonOptions()
         {
-            SideBySidePdfComparer.Compare(doc1.Pages[1], doc2.Pages[1], resultPdfPath, new SideBySideComparisonOptions()
-            {
-                AdditionalChangeMarks = true,
-                ComparisonMode = ComparisonMode.IgnoreSpaces
-            });
-        }
+            AdditionalChangeMarks = true,
+            ComparisonMode = ComparisonMode.IgnoreSpaces
+        });
+    }
 ```
 
 
@@ -67,14 +67,14 @@ Just like in the first example, two PDF documents are initialized with their fil
 1. The comparison result, which highlights differences across all pages of the two documents, is saved in the file specified by 'resultPdfPath'.
 
 ```cs
-    string doc1Path = "";
-    string doc2Path = "";
+    string documentPath1 = "";
+    string documentPath2 = "";
 
     string resultPdfPath ="";
 
-    using (Document doc1 = new Document(doc1Path), doc2 = new Document(doc2Path))
+    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
     {
-        SideBySidePdfComparer.Compare(doc1, doc2, resultPdfPath, new SideBySideComparisonOptions()
+        SideBySidePdfComparer.Compare(document1, document2, resultPdfPath, new SideBySideComparisonOptions()
         {
             AdditionalChangeMarks = true,
             ComparisonMode = ComparisonMode.IgnoreSpaces
