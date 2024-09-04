@@ -11,6 +11,55 @@ sitemap:
 lastmod: "2021-12-24"
 ---
 
+## What's new in Aspose.PDF 24.7
+
+Comparing PDF Documents with Aspose.PDF for .NET
+
+Since 24.7 it's possible to compare PDF documents content with annotation marks and side-by-side output:
+
+The first code snippet demonstrates how to compare the first pages of two PDF documents.
+
+```cs
+
+    string documentPath1 = "";
+    string documentPath2= "";
+
+    string resultPdfPath ="";
+
+    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+    {
+        SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new SideBySideComparisonOptions()
+        {
+            AdditionalChangeMarks = true,
+            ComparisonMode = ComparisonMode.IgnoreSpaces
+        });
+    }
+```
+
+The second code snippet expands the scope to compare the entire content of two PDF documents.
+
+```cs
+    string documentPath1 = "";
+    string documentPath2 = "";
+
+    string resultPdfPath ="";
+
+    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+    {
+        SideBySidePdfComparer.Compare(document1, document2, resultPdfPath, new SideBySideComparisonOptions()
+        {
+            AdditionalChangeMarks = true,
+            ComparisonMode = ComparisonMode.IgnoreSpaces
+        });
+    }
+```
+
+Files are attached to the task. The result was obtained in the mode:
+
+AdditionalChangeMarks = true
+ComparisonMode = ComparisonMode.ParseSpaces
+
+
 ## What's new in Aspose.PDF 24.4
 
 This release supports applying a clipping mask to images:
@@ -26,7 +75,7 @@ This release supports applying a clipping mask to images:
     }
 ```
 
-From 24.4 you can select the Choose paper source by PDF page size in the print dialog using the API
+Since 24.4 you can select the Choose paper source by PDF page size in the print dialog using the API
 
 Beginning with Aspose.PDF 24.4 this preference can be switched on and off using the Document.PickTrayByPdfSize property or the PdfContentEditor facade:
 
@@ -142,7 +191,7 @@ From this release added the PDF/A Converter for .NET plugin:
     var result = absorber.RegexResults
 ```
 
-From 24.3 possible to add an empty signature field on every page to the PDF/A file
+Since 24.3 possible to add an empty signature field on every page to the PDF/A file
 
 ```cs
 
@@ -204,7 +253,7 @@ From 24.3 possible to add an empty signature field on every page to the PDF/A fi
 
 ## What's new in Aspose.PDF 24.2
 
-From 24.2 possible to get the vector data from a PDF file
+Since 24.2 possible to get the vector data from a PDF file
 
 It was implemented GraphicsAbsorber to get vector data from documents:
 
@@ -221,7 +270,7 @@ var position = elements[1].Position;
 
 ## What's new in Aspose.PDF 24.1
 
-From 24.1 release possible to import FDF format annotations to PDF:
+Since 24.1 release possible to import FDF format annotations to PDF:
 
 ```cs
 
@@ -482,7 +531,7 @@ From this release possible to remove hidden text from PDF file:
         document.Save(outputFile);
 ```
 
-From 23.11 supports for thread interruption:
+Since 23.11 supports for thread interruption:
 
 ```cs
 
@@ -614,7 +663,7 @@ The current update presents three versions of Removing tags from tagged PDFs.
     document.Save(outputPath);
 ```
 
-From 23.10 was implemented a new feature to measure character height. Use the following code to measure the height of a character.
+Since 23.10 was implemented a new feature to measure character height. Use the following code to measure the height of a character.
 
 ```cs
     var doc = new Document(input);
@@ -673,7 +722,7 @@ One more new feature is Print Dialog Presets Page Scaling:
 
 ## What's new in Aspose.PDF 23.9
 
-From 23.9 support to remove a child annotation from a fillable field.
+Since 23.9 support to remove a child annotation from a fillable field.
 
 ```cs
 
@@ -686,7 +735,7 @@ From 23.9 support to remove a child annotation from a fillable field.
 
 ## What's new in Aspose.PDF 23.8
 
-From 23.8 support to add Incremental Updates detection.
+Since 23.8 support to add Incremental Updates detection.
 
 The function for detecting Incremental Updates in a PDF document has been added. This function returns 'true' if a document was saved with incremental updates; otherwise, it returns 'false'.
 
@@ -834,7 +883,7 @@ Also support the add the ability to set the title of the HTML, Epub page:
 
 ## What's new in Aspose.PDF 23.5
 
-From 23.5 support to add RedactionAnnotation FontSize option. Use the next code snippet to solve this task:
+Since 23.5 support to add RedactionAnnotation FontSize option. Use the next code snippet to solve this task:
 
 ```cs
 
@@ -926,7 +975,7 @@ From Aspose.PDF 23.1.1 support to add the next plugins:
 
 ## What's new in Aspose.PDF 23.1
 
-From 23.1 version support to create PrinterMark annotation.
+Since 23.1 version support to create PrinterMark annotation.
 
 Printer's marks are graphic symbols or text added to a page to assist production personnel in identifying components of a multiple-plate job and maintaining consistent output during production. Examples commonly used in the printing industry include:
 
@@ -993,7 +1042,7 @@ From this release support to convert PDF to DICOM Image
 
 ## What's new in Aspose.PDF 22.09
 
-From 22.09 support adding property for modify the order of the subject rubrics (E=, CN=, O=, OU=, ) into the signature.
+Since 22.09 support adding property for modify the order of the subject rubrics (E=, CN=, O=, OU=, ) into the signature.
 
 ```cs
 
@@ -1016,7 +1065,7 @@ From 22.09 support adding property for modify the order of the subject rubrics (
 
 ## What's new in Aspose.PDF 22.6
 
-From 22.5 support to extract SubScript and SuperScript text from PDF.
+Since 22.5 support to extract SubScript and SuperScript text from PDF.
 
 If the PDF document contains SubScript and SuperScript text such as H2O, then extracting the text from the PDF must also extract their formatting information (in the extracted plain text).
 If the PDF contains text in italics, it must also be included in the extracted content.
