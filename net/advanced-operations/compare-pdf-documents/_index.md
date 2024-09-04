@@ -25,14 +25,15 @@ Steps:
 
 1. Document Initialization.
 The code starts by initializing two PDF documents using their respective file paths (documentPath1 and documentPath2). The paths are specified as empty strings for now, but in practice, you would replace these with the actual file paths.
-1. Comparison Process.
+2. Comparison Process.
 - Page Selection - the comparison is limited to the first page of each document ('Pages[1]').
 - Comparison Options:
 
 'AdditionalChangeMarks = true'- this option ensures that additional change markers are displayed. These markers highlight differences that might be present on other pages, even if they are not on the current page being compared.
 
 'ComparisonMode = ComparisonMode.IgnoreSpaces' - this mode tells the comparer to ignore spaces in the text, focusing only on changes within words.
-1. The resulting comparison document, which highlights the differences between the two pages, is saved to the file path specified in 'resultPdfPath'.
+
+3. The resulting comparison document, which highlights the differences between the two pages, is saved to the file path specified in 'resultPdfPath'.
 
 ```cs
 
@@ -60,11 +61,11 @@ Steps:
 
 1. Document Initialization.
 Just like in the first example, two PDF documents are initialized with their file paths.
-1. Comparison Process.
+2. Comparison Process.
 - Entire Document Comparison - unlike the first snippet, this code compares the entire content of the two documents.
 - Comparison Options - the options are the same as in the first snippet, ensuring that spaces are ignored, and additional change markers are displayed.
 
-1. The comparison result, which highlights differences across all pages of the two documents, is saved in the file specified by 'resultPdfPath'.
+3. The comparison result, which highlights differences across all pages of the two documents, is saved in the file specified by 'resultPdfPath'.
 
 ```cs
     string documentPath1 = "";
