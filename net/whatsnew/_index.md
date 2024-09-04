@@ -21,32 +21,32 @@ The first code snippet demonstrates how to compare the first pages of two PDF do
 
 ```cs
 
-    string doc1Path = "";
-        string doc2Path = "";
+    string documentPath1 = "";
+    string documentPath2= "";
 
-        string resultPdfPath ="";
+    string resultPdfPath ="";
 
-        using (Document doc1 = new Document(doc1Path), doc2 = new Document(doc2Path))
+    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+    {
+        SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new SideBySideComparisonOptions()
         {
-            SideBySidePdfComparer.Compare(doc1.Pages[1], doc2.Pages[1], resultPdfPath, new SideBySideComparisonOptions()
-            {
-                AdditionalChangeMarks = true,
-                ComparisonMode = ComparisonMode.IgnoreSpaces
-            });
-        }
+            AdditionalChangeMarks = true,
+            ComparisonMode = ComparisonMode.IgnoreSpaces
+        });
+    }
 ```
 
 The second code snippet expands the scope to compare the entire content of two PDF documents.
 
 ```cs
-    string doc1Path = "";
-    string doc2Path = "";
+    string documentPath1 = "";
+    string documentPath2 = "";
 
     string resultPdfPath ="";
 
-    using (Document doc1 = new Document(doc1Path), doc2 = new Document(doc2Path))
+    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
     {
-        SideBySidePdfComparer.Compare(doc1, doc2, resultPdfPath, new SideBySideComparisonOptions()
+        SideBySidePdfComparer.Compare(document1, document2, resultPdfPath, new SideBySideComparisonOptions()
         {
             AdditionalChangeMarks = true,
             ComparisonMode = ComparisonMode.IgnoreSpaces
