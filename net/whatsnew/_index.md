@@ -11,6 +11,55 @@ sitemap:
 lastmod: "2021-12-24"
 ---
 
+## What's new in Aspose.PDF 24.7
+
+Comparing PDF Documents with Aspose.PDF for .NET
+
+From 24.7 it's possible to compare PDF documents content with annotation marks and side-by-side output:
+
+The first code snippet demonstrates how to compare the first pages of two PDF documents.
+
+```cs
+
+    string doc1Path = "";
+        string doc2Path = "";
+
+        string resultPdfPath ="";
+
+        using (Document doc1 = new Document(doc1Path), doc2 = new Document(doc2Path))
+        {
+            SideBySidePdfComparer.Compare(doc1.Pages[1], doc2.Pages[1], resultPdfPath, new SideBySideComparisonOptions()
+            {
+                AdditionalChangeMarks = true,
+                ComparisonMode = ComparisonMode.IgnoreSpaces
+            });
+        }
+```
+
+The second code snippet expands the scope to compare the entire content of two PDF documents.
+
+```cs
+    string doc1Path = "";
+    string doc2Path = "";
+
+    string resultPdfPath ="";
+
+    using (Document doc1 = new Document(doc1Path), doc2 = new Document(doc2Path))
+    {
+        SideBySidePdfComparer.Compare(doc1, doc2, resultPdfPath, new SideBySideComparisonOptions()
+        {
+            AdditionalChangeMarks = true,
+            ComparisonMode = ComparisonMode.IgnoreSpaces
+        });
+    }
+```
+
+Files are attached to the task. The result was obtained in the mode:
+
+AdditionalChangeMarks = true
+ComparisonMode = ComparisonMode.ParseSpaces
+
+
 ## What's new in Aspose.PDF 24.4
 
 This release supports applying a clipping mask to images:
