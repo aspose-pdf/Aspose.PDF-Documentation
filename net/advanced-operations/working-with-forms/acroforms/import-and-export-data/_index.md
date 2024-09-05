@@ -35,7 +35,7 @@ draft: false
 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class allows you to import data from an XFDF file to the PDF file using [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf) method. In order to import data from XFDF, you need to create an object of [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class and then call the [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf) method using the FileStream object. Finally, you can save the PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) method of the [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class. The following code snippet shows you how to import data from XFDF file.
 
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Forms-ImportDataFromXFDF-ImportDataFromXFDF.cs" >}}
-
+ 
 ## Export Data to XFDF from a PDF File
 
 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class allows you to export data to an XFDF file from the PDF file using [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf) method. In order to export data to XFDF, you need to create an object of [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class and then call the [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf) method using the FileStream object. Finally, you can save the PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) method of the [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class. The following code snippet shows you how to export data to XFDF file.
@@ -48,7 +48,7 @@ Manipulating form fields within PDF documents can be crucial when handling data 
 
 Since 24.7 it's possible to add Import and Export Data from Forms in JSON Format:
 
-**Export and import form fields to and from the JSON file**
+**Export form fields to and from the JSON file**
 
 This approach exports all the form fields from an existing PDF document into a JSON file and imports them into a new PDF document.
 
@@ -61,17 +61,26 @@ This approach exports all the form fields from an existing PDF document into a J
     options.WriteIndented = true;
     using (Document document = new Document(inputPdfPath))
     {
-    IEnumerable<FieldSerializationResult> exportResult = document.Form.ExportToJson(outputJsonPath, options);
-        }
-        using (Document newDocument = new Document())
-        {
-        Page page = newDocument.Pages.Add();
-        IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(outputJsonPath);
-            newDocument.Save(outputPdfPath);
-            }
+        IEnumerable<FieldSerializationResult> exportResult = document.Form.ExportToJson(outputJsonPath, options);
+    }
 ```
 
-**Export and import form fields to and from the JSON file using FileStream**
+**Import form fields to and from the JSON file**
+
+```cs
+
+    string inputPdfPath = "documentWithFields.pdf";
+    string outputJsonPath = "exportingFields.json";
+    string outputPdfPath = "newDocumentWithFields.pdf";
+    using (Document document = new Document(inputPdfPath))
+    {
+        Page page = newDocument.Pages.Add();
+        IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(outputJsonPath);
+        newDocument.Save(outputPdfPath);
+    }
+```
+
+**Export form fields to and from the JSON file using FileStream**
 
 This snippet performs the same operations as the previous one but utilizes 'FileStream' to manage the file input and output.
 
@@ -84,23 +93,32 @@ This snippet performs the same operations as the previous one but utilizes 'File
     options.WriteIndented = true;
     using (Document document = new Document(inputPdfPath))
     {
-    using (FileStream fileStream = File.Create(outputJsonPath))
-    {
-    IEnumerable<FieldSerializationResult> exportResult = document.Form.ExportToJson(fileStream, options);
-        }
-        }
-        using (Document newDocument = new Document())
+        using (FileStream fileStream = File.Create(outputJsonPath))
         {
+            IEnumerable<FieldSerializationResult> exportResult = document.Form.ExportToJson(fileStream, options);
+        }
+    }
+```
+
+**Import form fields to and from the JSON file using FileStream**
+
+```cs
+
+    string inputPdfPath = "documentWithFields.pdf";
+    string outputJsonPath = "exportingFields.json";
+    string outputPdfPath = "newDocumentWithFields.pdf";
+    using (Document document = new Document(inputPdfPath))
+    {
         Page page = newDocument.Pages.Add();
         using (FileStream fileStream = File.OpenRead(outputJsonPath))
         {
-        IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(fileStream);
-            }
-            newDocument.Save(outputPdfPath);
-            }
+            IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(fileStream);
+        }
+        newDocument.Save(outputPdfPath);
+    }
 ```
 
-**Export and import form fields in JSON format using MemoryStream**
+**Export form fields in JSON format using MemoryStream**
 
 In some scenarios, you might prefer to work with data in memory rather than with files on disk. This approach uses 'MemoryStream' to handle the export and import processes entirely in memory.
 
@@ -110,20 +128,28 @@ In some scenarios, you might prefer to work with data in memory rather than with
     string outputPdfPath = "newDocumentWithFields.pdf";
     using (MemoryStream memoryStream = new MemoryStream())
     {
-    using (Document document = new Document(inputPdfPath))
-    {
-    IEnumerable<FieldSerializationResult> exportResult = document.Form.ExportToJson(memoryStream);
-        }
-        Page page = newDocument.Pages.Add();
-        using (Document newDocument = new Document())
+        using (Document document = new Document(inputPdfPath))
         {
-        IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(memoryStream);
-            }
-            newDocument.Save(outputPdfPath);
-            }
+            IEnumerable<FieldSerializationResult> exportResult = document.Form.ExportToJson(memoryStream);
+        }
+    }
 ```
 
-**Export and import the specified field to and from the JSON file**
+**Import form fields in JSON format using MemoryStream**
+
+```cs
+
+    string inputPdfPath = "documentWithFields.pdf";
+    string outputPdfPath = "newDocumentWithFields.pdf";
+    using (Document document = new Document(inputPdfPath))
+    {
+        Page page = newDocument.Pages.Add();
+        IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(memoryStream);
+        newDocument.Save(outputPdfPath);
+    }
+```
+
+**Export the specified field to and from the JSON file**
 
 Sometimes, you may need to export or import only a specific field rather than all the fields in the document.
 
@@ -136,18 +162,27 @@ Sometimes, you may need to export or import only a specific field rather than al
     options.WriteIndented = true;
     using (Document document = new Document(inputPdfPath))
     {
-    WidgetAnnotation field = document.Form[1];
-    IEnumerable<FieldSerializationResult> exportResult = field.ExportToJson(outputJsonPath, options);
-        }
-        using (Document newDocument = new Document())
-        {
-        Page page = newDocument.Pages.Add();
-        IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(outputJsonPath);
-            newDocument.Save(outputPdfPath);
-            }
+        WidgetAnnotation field = document.Form[1];
+        IEnumerable<FieldSerializationResult> exportResult = field.ExportToJson(outputJsonPath, options);
+    }
 ```
 
-**Export and import the specified field to and from the JSON file using FileStream**
+**Import the specified field to and from the JSON file**
+
+```cs
+
+    string inputPdfPath = "documentWithFields.pdf";
+    string outputJsonPath = "exportingField.json";
+    string outputPdfPath = "newDocumentWithField.pdf";
+    using (Document document = new Document(inputPdfPath))
+    {
+        Page page = newDocument.Pages.Add();
+        IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(outputJsonPath);
+        newDocument.Save(outputPdfPath);
+    }
+```
+
+**Export the specified field to and from the JSON file using FileStream**
 
 This example is similar to the one above but uses 'FileStream' to handle the export and import operations for a specific field.
 
@@ -160,24 +195,32 @@ This example is similar to the one above but uses 'FileStream' to handle the exp
     options.WriteIndented = true;
     using (Document document = new Document(inputPdfPath))
     {
-    WidgetAnnotation field = document.Form[1];
-    using (FileStream fileStream = File.Create(outputJsonPath))
-    {
-    IEnumerable<FieldSerializationResult> exportResult = field.ExportToJson(fileStream, options);
-        }
-        }
-        using (Document newDocument = new Document())
+        WidgetAnnotation field = document.Form[1];
+        using (FileStream fileStream = File.Create(outputJsonPath))
         {
+            IEnumerable<FieldSerializationResult> exportResult = field.ExportToJson(fileStream, options);
+        }
+    }
+```
+
+**Import the specified field to and from the JSON file using FileStream**
+
+```cs
+    string inputPdfPath = "documentWithFields.pdf";
+    string outputJsonPath = "exportingField.json";
+    string outputPdfPath = "newDocumentWithField.pdf";
+    using (Document newDocument = new Document())
+    {
         Page page = newDocument.Pages.Add();
         using (FileStream fileStream = File.OpenRead(outputJsonPath))
         {
-        IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(fileStream);
-            }
-            newDocument.Save(outputPdfPath);
-            }
+            IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(fileStream);
+        }
+        newDocument.Save(outputPdfPath);
+    }
 ```
 
-**Export and import the specified field in JSON format using MemoryStream**
+**Export the specified field in JSON format using MemoryStream**
 
 This code snippet demonstrates how to export a specific form field from a PDF document into JSON format using a 'MemoryStream' and then import it into a new PDF document. 
 
@@ -187,18 +230,26 @@ This code snippet demonstrates how to export a specific form field from a PDF do
     string outputPdfPath = "newDocumentWithField.pdf";
     using (MemoryStream memoryStream = new MemoryStream())
     {
-    using (Document document = new Document(inputPdfPath))
-    {
-    WidgetAnnotation field = document.Form[1];
-    IEnumerable<FieldSerializationResult> exportResult = field.ExportToJson(memoryStream);
+        using (Document document = new Document(inputPdfPath))
+        {
+            WidgetAnnotation field = document.Form[1];
+            IEnumerable<FieldSerializationResult> exportResult = field.ExportToJson(memoryStream);
         }
+    }
+```
+
+**Import the specified field in JSON format using MemoryStream**
+
+```cs
+
+    string inputPdfPath = "documentWithFields.pdf";
+    string outputPdfPath = "newDocumentWithField.pdf";    
         using (Document newDocument = new Document())
         {
-        Page page = newDocument.Pages.Add();
-        IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(memoryStream);
+            Page page = newDocument.Pages.Add();
+            IEnumerable<FieldSerializationResult> importResult = newDocument.Form.ImportFromJson(memoryStream);
             newDocument.Save(outputPdfPath);
-            }
-            }
+        }
 ```
 
 **Export values from fields to the JSON file using FileStream with Aspose.Pdf.Facades**
@@ -211,10 +262,10 @@ Aspose.Pdf.Facades provides an alternative API for working with form fields. Thi
     string outputJsonPath = "fieldsValues.json";
     using (Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form(inputPdfPath))
     {
-    using (FileStream fileStream = File.Create(outputJsonPath))
-    {
-    form.ExportJson(fileStream);
-    }
+        using (FileStream fileStream = File.Create(outputJsonPath))
+        {
+            form.ExportJson(fileStream);
+        }
     }
 ```
 
@@ -229,11 +280,11 @@ This code snippet demonstrates how to import values into form fields of a PDF do
     string outputPdfPath = "documentWithImportingFieldsValues.pdf";
     using (Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form(inputPdfPath))
     {
-    using (FileStream fileStream = File.OpenRead(outputJsonPath))
-    {
-    form.ImportJson(fileStream);
-    }
-    form.Save(outputPdfPath);
+        using (FileStream fileStream = File.OpenRead(outputJsonPath))
+        {
+            form.ImportJson(fileStream);
+        }
+        form.Save(outputPdfPath);
     }
 ```
 
@@ -248,11 +299,11 @@ This code snippet shows how to export the value of a specific form field from a 
     string outputPdfPath = "documentWithImportingFieldsValues.pdf";
     using (Document document = new Document(inputPdfPath))
     {
-    Field field = document.Form.Fields[1];
-    using (FileStream fileStream = File.Create(outputJsonPath))
-    {
-    field.ExportValueToJson(fileStream);
-    }
+        Field field = document.Form.Fields[1];
+        using (FileStream fileStream = File.Create(outputJsonPath))
+        {
+            field.ExportValueToJson(fileStream);
+        }
     }
 ```
 
@@ -267,12 +318,12 @@ This code snippet demonstrates how to import a value from a JSON file into a spe
     string outputPdfPath = "documentWithImportingFieldsValues.pdf";
     using (Document document = new Document(inputPdfPath))
     {
-    Field field = document.Form.Fields[1];
-    using (FileStream fileStream = File.OpenRead(outputJsonPath))
-    {
-    field.ImportValueFromJson(fileStream);
-    }
-    document.Save(outputPdfPath);
+        Field field = document.Form.Fields[1];
+        using (FileStream fileStream = File.OpenRead(outputJsonPath))
+        {
+            field.ImportValueFromJson(fileStream);
+        }
+        document.Save(outputPdfPath);
     }
 ```
 
@@ -287,12 +338,12 @@ This code snippet demonstrates how to import a value of another field to the spe
     string outputPdfPath = "documentWithImportingFieldsValues.pdf";
     using (Document document = new Document(inputPdfPath))
     {
-    Field field = document.Form.Fields[1];
-    string fullNameOfOtherFieldInJson = "fullName.OfOtherField.InJson";
-    using (FileStream fileStream = File.OpenRead(outputJsonPath))
-    {
-    field.ImportValueFromJson(fileStream, fullNameOfOtherFieldInJson);
-    }
-    document.Save(outputPdfPath);
+        Field field = document.Form.Fields[1];
+        string fullNameOfOtherFieldInJson = "fullName.OfOtherField.InJson";
+        using (FileStream fileStream = File.OpenRead(outputJsonPath))
+        {
+            field.ImportValueFromJson(fileStream, fullNameOfOtherFieldInJson);
+        }
+        document.Save(outputPdfPath);
     }
 ```
