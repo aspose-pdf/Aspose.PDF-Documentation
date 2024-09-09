@@ -102,6 +102,7 @@ For more detailed learning of the capabilities of the Java library, see the foll
 - [Extract AcroForm](/pdf/net/extract-form) - get value from all or an individual field of PDF document.
 - [Modifing AcroForm](/pdf/net/modifing-form) - get or set FieldLimit, set form field font and etc.
 - [Posting AcroForm Data](/pdf/net/posting-acroform-data/) -  import and export form data to and XML file.
+- [Import and Export Data](/pdf/net/import-and-export-data/) -  import and export data using Form Class.
 
 <script type="application/ld+json">
 {

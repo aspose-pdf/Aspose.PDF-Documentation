@@ -1,5 +1,5 @@
 ---
-title: XFDF Format
+title: What's is the difference between FDF, XML, and XFDF formats
 type: docs
 weight: 30
 url: /net/whats-the-difference-between-xml-fdf-and-xfdf/
@@ -31,7 +31,7 @@ Let's assume that there are some PDF form fields whose values need to be present
 |Address.2|Additional Address Line|
 Let's see how to represent these values in FDF, XML and XFDF formats.
 
-### Using FDF
+### What is FDF format?
 
 As we know that FDF file store data in Key/Pair fashion where /T represents a Key, /V represents the Value and data in parenthesis () represents the content of either a Key or a Value. For example, /T(Company) means Company is the field key and /V(Aspose.com) is meant for a field value.
 
@@ -39,7 +39,7 @@ As we know that FDF file store data in Key/Pair fashion where /T represents a Ke
 /T(Address.1) /V( Sydney , Australia )
 /T(Address.2) /V(Additional Address Line)
 
-### Using XML
+### What is XML format? 
 
 Developers can represent each PDF form field in the form of a field tag, `<field>`. Each field tag has an attribute, name showing the field name and a sub tag, `<value>` represeting the field value as shown below:
 
@@ -58,7 +58,7 @@ Developers can represent each PDF form field in the form of a field tag, `<field
  </fields>
 ```
 
-### Using XFDF
+### ### What is XFDF format?  
 
 The representation of above data in XFDF form is similar to XML form except with few differences. In XFDF files, we add their XML Namespace, which is <http://ns.adpbe.com/xfdf/> and their is an additional tag, `<f>` that is used to point towards the PDF document containing these PDF form fields. Like XML, XFDF also contains fields in the form of field tags, `<field>` as shown below:
 
