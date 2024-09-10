@@ -8,8 +8,62 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2021-12-24"
+lastmod: "2024-09-06"
 ---
+
+## What's new in Aspose.PDF 24.8
+
+Converting PDF Documents into PDF/A-4 format
+
+Since version 24.8, it has been possible to convert PDF documents into PDF/A-4. Part 4 of the standard, based on PDF 2.0, was published in late 2020.
+
+The following code snippet demonstrates how to convert a document into PDF/A-4 format, assuming the input document is PDF 2.x.
+
+```cs
+
+    string documentPath = "";
+    string conversionLogPath = "";
+    string resultPdfPath ="";
+
+    using (var document = new Document(documentPath))
+    {
+        // Only PDF-2.x documents can be converted to PDF/A-4
+        document.Convert(conversionLogPath, PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
+        document.Save(resultPdfPath);
+    }
+```
+
+The second code snippet demonstrates how to convert a document into PDF/A-4 format when the input document is an earlier version.
+
+```cs
+
+    string documentPath = "";
+    string conversionLogPath = "";
+    string resultPdfPath ="";
+
+    using (var document = new Document(documentPath))
+    {
+        document.Convert(Stream.Null, PdfFormat.v_2_0, ConvertErrorAction.Delete);
+
+        document.Convert(conversionLogPath, PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
+        document.Save(resultPdfPath);
+    }
+```
+
+Since 24.8 we introduced a method for flattening transparent content in PDF documents:
+
+```cs
+
+    string documentPath = "";
+    string resultPdfPath ="";
+
+    using (var document = new Document(documentPath))
+    {
+        document.FlattenTransparency();
+        document.Save(resultPdfPath);
+    }
+```
+
 
 ## What's new in Aspose.PDF 24.7
 
