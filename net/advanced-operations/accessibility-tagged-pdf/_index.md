@@ -81,6 +81,7 @@ A Tagged PDF document can be accessed by people with disabilities. Adding access
 This section covers following topic:
 
 - [Create Tagged PDF](/pdf/net/create-tagged-pdf/)
+- [Edit Tagged PDF](/pdf/net/edit-pdf-file-tags/)
 - [Extract Tagged Content from Tagged PDFs](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
 - [Setting Structure Elements Properties](/pdf/net/setting-structure-elements-properties/)
 - [Working with Table in Tagged PDFs](/pdf/net/working-with-table-in-tagged-pdfs/)
