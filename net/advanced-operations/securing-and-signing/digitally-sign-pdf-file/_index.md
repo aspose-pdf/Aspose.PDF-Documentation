@@ -140,6 +140,45 @@ public static void SignWithTimeStampServer()
 }
 ```
 
+## Sign PDF with X509Certificate2 in base64 format
+
+This code signs the PDF using an external certificate, possibly interacting with a server to retrieve the signed hash and embed the signature into the PDF document.
+
+Steps to sign PDF:
+
+1. Create An instance of PdfFileSignature 
+1. Define the Custom Signature Hash
+1. Loading the certificate
+1. Signing the data
+1. Binding and Signing the PDF
+1. Saving the Signed PDF
+
+```cs
+
+    var base64Str = "sign";
+    using (var pdfSign = new PdfFileSignature())
+    {
+        var sign = new ExternalSignature(base64Str, false);//without Private Key
+        sign.ShowProperties = false;
+        SignHash customSignHash = delegate (byte[] signableHash)
+        {
+            //Simulated Server Part (This will probably just be sending data and receiving a response)
+            var signerCert = new X509Certificate2(inputP12, "123456", X509KeyStorageFlags.Exportable);//must have Private Key
+            var rsaCSP = new RSACryptoServiceProvider();
+            var xmlString = signerCert.PrivateKey.ToXmlString(true);
+            rsaCSP.FromXmlString(xmlString);
+            byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+            return signedData;
+        };
+        sign.CustomSignHash = customSignHash;
+        pdfSign.BindPdf(inputPdf);
+        pdfSign.Sign(1, "second approval", "two@mail.ru", "Ukraine", false,
+                        new System.Drawing.Rectangle(200, 200, 200, 100),
+                        sign);
+        pdfSign.Save(outputPdf);
+    }
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",

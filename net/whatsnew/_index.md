@@ -312,6 +312,34 @@ The next code snippet works with a PDF document and its tagged content, utilizin
     document.Save(output);
 ```
 
+Since 24.6 Aspose.PDF for .NET allows to sign PDF with X509Certificate2 in base64 format:
+
+```cs
+
+    var base64Str = "sign";
+    using (var pdfSign = new PdfFileSignature())
+    {
+        var sign = new ExternalSignature(base64Str, false);//without Private Key
+        sign.ShowProperties = false;
+        SignHash customSignHash = delegate (byte[] signableHash)
+        {
+            //Simulated Server Part (This will probably just be sending data and receiving a response)
+            var signerCert = new X509Certificate2(inputP12, "123456", X509KeyStorageFlags.Exportable);//must have Private Key
+            var rsaCSP = new RSACryptoServiceProvider();
+            var xmlString = signerCert.PrivateKey.ToXmlString(true);
+            rsaCSP.FromXmlString(xmlString);
+            byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+            return signedData;
+        };
+        sign.CustomSignHash = customSignHash;
+        pdfSign.BindPdf(inputPdf);
+        pdfSign.Sign(1, "second approval", "two@mail.ru", "Ukraine", false,
+                        new System.Drawing.Rectangle(200, 200, 200, 100),
+                        sign);
+        pdfSign.Save(outputPdf);
+    }
+```
+
 ## What's new in Aspose.PDF 24.4
 
 This release supports applying a clipping mask to images:
