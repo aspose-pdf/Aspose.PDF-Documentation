@@ -340,6 +340,25 @@ Since 24.6 Aspose.PDF for .NET allows to sign PDF with X509Certificate2 in base6
     }
 ```
 
+## What's new in Aspose.PDF 24.5
+
+Since the 24.5 release, you can open a PDF, lock a specific layer on the first page, and save the document with the changes. There are two new methods and one property was added:
+
+Layer.Lock(); -  Locks the layer.
+Layer.Unlock(); - Unlocks the layer.
+Layer.Locked; - Property, indicating the layer locked state.
+
+```cs
+
+    var document = new Document(input);
+    var page = document.Pages[1];
+    var layer = page.Layers[0];
+
+    layer.Lock();
+
+    document.Save(output);
+```
+
 ## What's new in Aspose.PDF 24.4
 
 This release supports applying a clipping mask to images:
