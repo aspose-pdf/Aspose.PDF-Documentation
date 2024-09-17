@@ -255,6 +255,25 @@ foreach (Aspose.PDF.Page page in pdfDocument.Pages)
 pdfDocument.Save(outFile);
 ```
 
+## Support applying a Clipping Mask to Images
+
+Placing a vector shape on top of the base bitmap image functions as a mask, exposing only the part of the base design that aligns with the vector shape. All areas outside the shape will be concealed.
+
+The code snippet loads a PDF, opens two image files, and applies those images as stencil masks to the first two images on the first page of the PDF.
+
+Stencil mask can be added by 'XImage.AddStencilMask(Stream maskStream)' method:
+
+```cs
+
+    Document doc = new Document("input.pdf");
+    using (var fs1 = new FileStream("mask1.jpg", FileMode.Open))
+    using (var fs2 = new FileStream("mask2.png", FileMode.Open))
+    {
+        doc.Pages[1].Resources.Images[1].AddStencilMask(fs1);
+        doc.Pages[1].Resources.Images[2].AddStencilMask(fs2);
+    }
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
