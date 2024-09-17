@@ -114,6 +114,35 @@ Files are attached to the task. The result was obtained in the mode:
 AdditionalChangeMarks = true
 ComparisonMode = ComparisonMode.ParseSpaces
 
+Also, from this release added the Aspose.PDF Security for .NET plugin:
+
+Encryption feature:
+
+```cs
+
+    var input = "sample.pdf";
+    var output = "encrypted.pdf";
+
+    var plugin = new Security();
+    var opt = new EncryptionOptions("123456789", "123", DocumentPrivilege.ForbidAll);
+    opt.AddInput(new FileDataSource(input));
+    opt.AddOutput(new FileDataSource(output));
+    plugin.Process(opt);
+```
+
+Decryption feature:
+
+```cs
+
+    var input = "encrypted.pdf";
+    var output = "decrypted.pdf";
+
+    var plugin = new Security();
+    var opt = new DecryptionOptions("123456789");
+    opt.AddInput(new FileDataSource(input));
+    opt.AddOutput(new FileDataSource(output));
+    plugin.Process(opt);
+```
 
 ## What's new in Aspose.PDF 24.6
 
