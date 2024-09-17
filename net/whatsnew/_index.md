@@ -342,6 +342,15 @@ Since 24.6 Aspose.PDF for .NET allows to sign PDF with X509Certificate2 in base6
 
 ## What's new in Aspose.PDF 24.5
 
+This release allows us to work with PDF layers. For example:
+
+- lock a PDF layer
+- extract PDF layer elements
+- flatten a layered PDF
+- merge All Layers inside the PDF into one
+
+**Lock a PDF layer**
+
 Since the 24.5 release, you can open a PDF, lock a specific layer on the first page, and save the document with the changes. There are two new methods and one property was added:
 
 Layer.Lock(); -  Locks the layer.
@@ -355,6 +364,66 @@ Layer.Locked; - Property, indicating the layer locked state.
     var layer = page.Layers[0];
 
     layer.Lock();
+
+    document.Save(output);
+```
+
+**Extract PDF layer elements**
+
+The Aspose.PDF for .NET library allows extracts of each layer from the first page and saves each layer to a separate file.
+
+To create a new PDF from a layer, the following code snippet can be used:
+
+```cs
+
+    var document = new Document(inputPath);
+
+    var layers = document.Pages[1].Layers;
+
+    foreach (var layer in layers)
+    {
+        layer.Save(outputPath);
+    }
+```
+
+**Flatten a layered PDF**
+
+Aspose.PDF for .NET library opens a PDF, iterates through each layer on the first page, and flattens each layer, making it permanent on the page.
+
+```cs
+
+    var document = new Document(input);
+
+    var page = document.Pages[1];
+
+    foreach (var layer in page.Layers)
+    {
+        layer.Flatten(true);
+    }
+```
+
+The 'Layer.Flatten(bool cleanupContentStream)' method accepts the boolean parameter that specifies whether to remove optional content group markers from the content stream. Setting the cleanupContentStream parameter to false speeds up the process of flattening.
+
+**Merge All Layers inside the PDF into one**
+
+The Aspose.PDF for .NET library allows merges either all PDF layers or a specific layer on the first page into a new layer and saves the updated document.
+
+Two methods were added to merge all layers on the page:
+
+- void MergeLayers(string newLayerName);
+- void MergeLayers(string newLayerName, string newOptionalContentGroupId); 
+
+The second parameter allows renaming the optional content group marker. The default value is "oc1" (/OC /oc1 BDC).
+
+```cs
+
+    var document = new Document(input);
+
+    var page = document.Pages[1];
+
+    page.MergeLayers("NewLayerName");
+
+    // Or page.MergeLayers("NewLayerName", "OC1");
 
     document.Save(output);
 ```
