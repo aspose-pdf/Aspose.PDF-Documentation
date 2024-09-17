@@ -452,27 +452,6 @@ using (PdfContentEditor ed = new PdfContentEditor())
 }
 ```
 
-### Lock a PDF layer
-
-With Aspose.PDF for .NET you can open a PDF, lock a specific layer on the first page, and save the document with the changes.
-
-Since the 24.5 release, this feature has been implemented. There are two new methods and one property was added:
-
-Layer.Lock(); -  Locks the layer.
-Layer.Unlock(); - Unlocks the layer.
-Layer.Locked; - Property, indicating the layer locked state.
-
-```cs
-
-    var document = new Document(input);
-    var page = document.Pages[1];
-    var layer = page.Layers[0];
-
-    layer.Lock();
-
-    document.Save(output);
-```
-
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
