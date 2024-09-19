@@ -11,6 +11,375 @@ sitemap:
 lastmod: "2021-06-05"
 ---
 
+## What's new in Aspose.PDF 24.7
+
+Since the 24.7 release, as part of the editing tagged PDF, were added methods on **Aspose.Pdf.LogicalStructure.Element**:
+
+- Tag (with different signatures for purposes)
+- InsertChild
+- RemoveChild
+- ClearChilds
+
+These methods allow you to edit PDF file tags, for example:
+
+```java
+
+    Document document = new Document(dataDir+"test.pdf");
+        Page page = document.getPages().get_Item(1);
+
+        BDC imageBdc = null;
+        BDC pBdc = null;
+        BDC link1Bdc = null;
+        BDC link2Bdc = null;
+        BDC helloBdc = null;
+        for (int i = 1; i <= page.getContents().size(); i++) {
+            Operator op = page.getContents().get_Item(i);
+            if (op instanceof  BDC) {
+                BDC bdc = (BDC) op;
+                if (bdc != null) {
+                    if (bdc.getProperties().getMCID()[0] != null && bdc.getProperties().getMCID()[0] == 0) {
+                        helloBdc = bdc;
+                    }
+                }
+            }
+
+
+            if (op instanceof  Do) {
+                Do doXobj = (Do) op;
+                if (doXobj != null) {
+                    imageBdc = new BDC("Figure");
+                    page.getContents().insert(i - 2, imageBdc);
+                    i++;
+                    page.getContents().insert(i + 1, new EMC());
+                    i++;
+                }
+            }
+
+            if (op instanceof  TextShowOperator) {
+                TextShowOperator tx = (TextShowOperator) op;
+                if (tx != null) {
+                    if (tx.getText().contains("efter Ukendt forfatter er licenseret under")) {
+                        pBdc = new BDC("P");
+                        page.getContents().insert(i - 1, pBdc);
+                        i++;
+                        page.getContents().insert(i + 1, new EMC());
+                        i++;
+                    }
+                    if (tx.getText().contains("CC")) {
+                        link1Bdc = new BDC("Link");
+                        page.getContents().insert(i - 1, link1Bdc);
+                        i++;
+                        page.getContents().insert(i + 1, new EMC());
+                        i++;
+                    }
+                    if (tx.getText().contains("Dette billede")) {
+                        link2Bdc = new BDC("Link");
+                        page.getContents().insert(i - 1, link2Bdc);
+                        i++;
+                        page.getContents().insert(i + 1, new EMC());
+                        i++;
+                    }
+                }
+            }
+        }
+
+        ITaggedContent tagged = document.getTaggedContent();
+        {
+            com.aspose.pdf.tagged.logicalstructure.elements.Element p = tagged.getRootElement().getChildElements().get_Item(1);
+            p.clearChilds();
+            MCRElement mcr = p.tag(helloBdc);
+            StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
+                    .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+            StructureAttribute attr = new StructureAttribute(AttributeKey.SpaceAfter);
+            attr.setNumberValue(30.625);
+            attrs.setAttribute(attr);
+        }
+
+        {
+            com.aspose.pdf.tagged.logicalstructure.elements.FigureElement figure = tagged.createFigureElement();
+            tagged.getRootElement().insertChild(figure, 2);
+            figure.setAlternativeText("A fly.");
+            MCRElement mcr = figure.tag(imageBdc);
+
+            StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
+                    .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+
+            StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
+            spaceAfter.setNumberValue(3.625);
+            attrs.setAttribute(spaceAfter);
+
+            StructureAttribute bbox = new StructureAttribute(AttributeKey.BBox);
+            bbox.setArrayNumberValue(new Double[][]{new Double[]{(71.9971)}, new Double[]{(375.839)}, new Double[]{(523.299)}, new Double[]{(714.345)}});
+            attrs.setAttribute(bbox);
+
+            StructureAttribute placement = new StructureAttribute(AttributeKey.Placement);
+            placement.setNameValue(AttributeName.Placement_Block);
+            attrs.setAttribute(placement);
+        }
+
+        StructureElement p2 = (StructureElement) tagged.getRootElement().getChildElements().get_Item(3);
+        p2.clearChilds();
+
+        SpanElement span1 = tagged.createSpanElement();
+        {
+            StructureAttributes attrs = span1.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+
+            StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
+            textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline);
+            attrs.setAttribute(textDecorationType);
+
+            StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
+            textDecorationThickness.setNumberValue(0);
+            attrs.setAttribute(textDecorationThickness);
+
+            StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
+            textDecorationColor.setArrayNumberValue(new Double[][]{new Double[]{(0.0196075)}, new Double[]{(0.384308)}, new Double[]{(0.756866)}});
+            attrs.setAttribute(textDecorationColor);
+        }
+        p2.appendChild(span1);
+
+        {
+            MCRElement mcr = p2.tag(pBdc);
+            StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
+                    .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+
+            StructureAttribute textAlign = new StructureAttribute(AttributeKey.TextAlign);
+            textAlign.setNameValue(AttributeName.TextAlign_Center);
+            attrs.setAttribute(textAlign);
+
+            StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
+            spaceAfter.setNumberValue(21.75);
+            attrs.setAttribute(spaceAfter);
+        }
+
+        SpanElement span2 = tagged.createSpanElement();
+        {
+            StructureAttributes attrs = span2.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+
+            StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
+            textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline);
+            attrs.setAttribute(textDecorationType);
+
+            StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
+            textDecorationThickness.setNumberValue(0);
+            attrs.setAttribute(textDecorationThickness);
+
+            StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
+            textDecorationColor.setArrayNumberValue(new Double[][]{new Double[]{(0.0196075)}, new Double[]{(0.384308)}, new Double[]{(0.756866)}});
+            attrs.setAttribute(textDecorationColor);
+        }
+        p2.appendChild(span2);
+
+        LinkElement link2 = tagged.createLinkElement();
+        link2.setId(UUID.randomUUID().toString());
+        span2.appendChild(link2);
+        link2.tag(page.getAnnotations().get_Item(1));
+        link2.tag(link2Bdc);
+
+        LinkElement link1 = tagged.createLinkElement();
+        link1.setId(UUID.randomUUID().toString());
+        span1.appendChild(link1);
+        link1.tag(page.getAnnotations().get_Item(2));
+        link1.tag(link1Bdc);
+
+        tagged.getRootElement().removeChild(0);
+
+        document.save(dataDir+"_out.pdf");
+
+```
+
+## What's new in Aspose.PDF 24.6
+
+Since 24.6 Aspose.PDF for Java allows to sign PDF with java.security.cert.X509Certificate, java.security.PrivateKey:
+
+This code retrieves a certificate and private key from the certificate store and then uses them to apply a digital signature to the first page of a PDF document. 
+
+```java
+
+    KeyStore trustStore = KeyStore.getInstance("Windows");
+    trustStore.load(null, null);
+    java.security.cert.X509Certificate certificate = (java.security.cert.X509Certificate) trustStore.getCertificate("ProfMoriarty");
+    PrivateKey key = (PrivateKey) trustStore.getKey("ProfMoriarty", null);
+
+    PdfFileSignature pdfSign = new PdfFileSignature(getInputPdf());
+    Signature signature = new ExternalSignature(certificate, key);
+    pdfSign.sign(1, "reasonTest", "contactTest", "locationTest", true, new java.awt.Rectangle(1, 691, 100, 100), signature);
+
+    pdfSign.save("PDFJAVA.pdf");
+    pdfSign.close();
+```
+
+## What's new in Aspose.PDF 24.5
+
+Since the 24.5 release, the Form Editor Plugins implemented.
+
+**How to Edit Forms in PDF using Form Editor**
+
+- Set your license keys
+- Create an instance of the FormEditor class, which provides methods for manipulating PDF forms
+- Create an instance of the FormEditorAddOptions class, which specifies the options for adding form fields to a PDF document
+- Add an input file source and an output file source to the FormEditorAddOptions object, using the FileDataSource class which represents a file path or stream
+- Call the Process method of the FormEditor object, passing the FormEditorAddOptions object as a parameter
+- Access the result using ResultContainer.resultCollection
+
+```java
+
+    // Specify the input and output paths for the PDF files.
+    String inputPath = "sample.pdf";
+    String outputPath = "out.pdf";
+
+    // Create an instance of the FormEditor plugin.
+    FormEditor pdfFormPlugin = new FormEditor();
+
+    // Create options for adding form fields.
+    ArrayList<FormFieldCreateOptions> options = new ArrayList<FormFieldCreateOptions>();
+
+    // Create a textbox form field.
+    FormTextBoxFieldCreateOptions tmp1 = new FormTextBoxFieldCreateOptions(1, new Rectangle(10, 600, 90, 610));
+    tmp1.setValue("TextBoxField");
+    tmp1.setColor(Color.getChocolate());
+    tmp1.setPartialName("TexBoxField");
+    options.add(tmp1);
+
+    // Create a combo box form field.
+    FormComboBoxFieldCreateOptions tmp2 = new FormComboBoxFieldCreateOptions(1, new Rectangle(310, 800, 350, 815));
+
+    tmp2.setColor(com.aspose.pdf.Color.getRed());
+    tmp2.setEditable(new Boolean[]{true});
+    tmp2.setDefaultAppearance(new DefaultAppearance("Arial Bold", 12, java.awt.Color.GREEN));
+    ArrayList<String> list1 = new ArrayList<String>();
+    list1.add("p1");
+    list1.add("p2");
+    list1.add("p3");
+    tmp2.setOptions(list1);
+    tmp2.setSelected(new Integer[]{2});
+    tmp2.setPartialName("ComboBoxField");
+    options.add(tmp2);
+
+    // Create a checkbox form field.
+    FormCheckBoxFieldCreateOptions tmp3 = new FormCheckBoxFieldCreateOptions(1, new Rectangle(10, 700, 90, 715));
+    tmp3.setValue("CheckBoxField 1");
+    tmp3.setPartialName("CheckBoxField_1");
+    tmp3.setColor(Color.getBlue());
+    options.add(tmp3);
+
+
+    // Create a checkbox form field.
+    FormCheckBoxFieldCreateOptions tmp4 = new FormCheckBoxFieldCreateOptions(1, new Rectangle(100, 700, 190, 715));
+    tmp4.setChecked(new Boolean[]{true});
+    tmp4.setValue("CheckBoxField 2");
+    tmp4.setDefaultAppearance(new DefaultAppearance("Arial Bold", 12, java.awt.Color.GREEN));
+    tmp4.setStyle(new Integer[]{BoxStyle.Cross});
+    options.add(tmp4);
+
+
+    // Create a checkbox form field.
+    FormCheckBoxFieldCreateOptions tmp5 = new FormCheckBoxFieldCreateOptions(1, new Rectangle(200, 700, 390, 715));
+    tmp5.setPartialName("CheckBoxField_3");
+    tmp5.setValue("CheckBoxField 3");
+    tmp5.setStyle(new Integer[]{BoxStyle.Star});
+    tmp5.setChecked(new Boolean[]{true});
+    tmp5.setTextHorizontalAlignment(new HorizontalAlignment[]{HorizontalAlignment.Center});
+    options.add(tmp5);
+
+    FormEditorAddOptions opt = new FormEditorAddOptions(options);
+
+    // Add input and output files to the options.
+    opt.addInput(new FileDataSource(inputPath));
+    opt.addOutput(new FileDataSource(outputPath));
+
+    // Process the form fields using the plugin.
+    ResultContainer results = pdfFormPlugin.process(opt);
+```
+
+This release allows us to work with PDF layers. For example:
+
+- lock a PDF layer
+- extract PDF layer elements
+- flatten a layered PDF
+- merge All Layers inside the PDF into one
+
+**Lock a PDF layer**
+
+Since the 24.5 release, you can open a PDF, lock a specific layer on the first page, and save the document with the changes. There are two new methods and one property was added:
+
+Layer.Lock(); -  Locks the layer.
+Layer.Unlock(); - Unlocks the layer.
+Layer.Locked; - Property, indicating the layer locked state.
+
+```java
+
+    Document document = new Document(input);
+    Page page = document.getPages().get_Item(1);
+    Layer layer = page.getLayers().get(0);
+
+    layer.lock();
+
+    document.save(output);
+```
+
+**Extract PDF layer elements**
+
+The Aspose.PDF for Java library allows extracts of each layer from the first page and saves each layer to a separate file.
+
+To create a new PDF from a layer, the following code snippet can be used:
+
+```java
+
+    Document document = new Document(inputPath);
+
+    java.util.List<Layer> layers = document.getPages().get_Item(1).getLayers();
+
+    for (Layer layer : layers)
+    {
+        layer.save(outputPath);
+    }
+```
+
+**Flatten a layered PDF**
+
+Aspose.PDF for Java library opens a PDF, iterates through each layer on the first page, and flattens each layer, making it permanent on the page.
+
+```java
+
+    Document document = new Document(input);
+
+    Page page = document.getPages().get_Item(1);
+
+    for (Layer layer : page.getLayers())
+    {
+        layer.flatten(true);
+    }
+    document.save(output);
+```
+
+The Layer.flatten(boolean cleanupContentStream) method accepts the boolean parameter that specifies whether to remove optional content group markers from the content stream.
+Setting the cleanupContentStream parameter to false speeds up the process of flattening.
+
+**Merge All Layers inside the PDF into one**
+
+The Aspose.PDF for Java library allows merges either all PDF layers or a specific layer on the first page into a new layer and saves the updated document.
+
+Two methods were added to merge all layers on the page:
+
+- void mergeLayers(String newLayerName);
+- void mergeLayers(String newLayerName, String newOptionalContentGroupId);
+
+The second parameter allows renaming the optional content group marker. The default value is "oc1" (/OC /oc1 BDC).
+
+```java
+
+    Document document = new Document(input);
+
+    Page page = document.getPages().get_Item(1);
+
+    page.mergeLayers("NewLayerName");
+
+    // Or page.mergeLayers("NewLayerName", "OC1");
+
+    document.save(output);
+```
+
 ## What's new in Aspose.PDF 24.4
 
 This release introduced Java plugins for PDF:

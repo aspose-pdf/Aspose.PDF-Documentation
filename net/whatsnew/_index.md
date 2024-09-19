@@ -153,7 +153,7 @@ Since the 24.7 release, as part of the editing tagged PDF, were added methods on
 - RemoveChild
 - ClearChilds
 
-These methods allow you to edit pdf file tags, for example:
+These methods allow you to edit PDF file tags, for example:
 
 ```cs
 
