@@ -114,7 +114,7 @@ doc.Save(dataDir);
 {{% alert color="primary" %}}
 
 Try online
-You can check the quality of Aspose.PDF conversion and view the results online at this link: [products.aspose.app/pdf/xfa/acroform](https://products.aspose.app/pdf/xfa/acroform)
+You can check the quality of Aspose.PDF conversion and view the results online at this link: [products.aspose.app/pdf/xfa/](https://products.aspose.app/pdf/xfa/)
 
 {{% /alert %}}
 
