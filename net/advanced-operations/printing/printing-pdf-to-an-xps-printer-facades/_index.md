@@ -122,6 +122,24 @@ public static void PrintToXpsPrinter()
 }
 ```
 
+## Choosing paper source by PDF page size
+ 
+Since the 24.4 release, choosing paper source by PDF page size in the print dialog is possible. The next code snippet enables picking a printer tray based on the PDF's page size.
+
+This preference can be switched on and off using the 'PdfContentEditor' facade.
+
+```cs
+
+    using (PdfContentEditor contentEditor = new PdfContentEditor())
+    {
+        contentEditor.BindPdf("input.pdf");
+
+        // Set the flag to choose a paper tray using the PDF page size
+        contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
+        contentEditor.Save("result.pdf");
+    }
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",

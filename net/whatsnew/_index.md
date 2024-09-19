@@ -540,7 +540,35 @@ From this release added the Aspose.PDF Signature for .NET plugin:
     // perform the process
     plugin.Process(opt);
 ```
+ 
+Since the 24.4 release, choosing paper source by PDF page size in the print dialog is possible. The next code snippet enables picking a printer tray based on the PDF's page size.
 
+This preference can be switched on and off using the 'Document.PickTrayByPdfSize' property or the 'PdfContentEditor' facade:
+
+```cs
+
+    using (Document document = new Document())
+    {
+        Page page = document.Pages.Add();
+        page.Paragraphs.Add(new TextFragment("Hello world!"));
+
+        // Set the flag to choose a paper tray using the PDF page size
+        document.PickTrayByPdfSize = true;
+        document.Save("result.pdf");
+    }
+```
+
+```cs
+
+    using (PdfContentEditor contentEditor = new PdfContentEditor())
+    {
+        contentEditor.BindPdf("input.pdf");
+
+        // Set the flag to choose a paper tray using the PDF page size
+        contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
+        contentEditor.Save("result.pdf");
+    }
+```
 ## What's new in Aspose.PDF 24.3
 
 From this release added the PDF/A Converter for .NET plugin:

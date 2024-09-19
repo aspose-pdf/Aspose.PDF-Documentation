@@ -133,6 +133,25 @@ if (printDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 }
 ```
 
+## Choosing paper source by PDF page size
+ 
+Since the 24.4 release, choosing paper source by PDF page size in the print dialog is possible. The next code snippet enables picking a printer tray based on the PDF's page size.
+
+This preference can be switched on and off using the 'Document.PickTrayByPdfSize' property.
+
+```cs
+
+    using (Document document = new Document())
+    {
+        Page page = document.Pages.Add();
+        page.Paragraphs.Add(new TextFragment("Hello world!"));
+
+        // Set the flag to choose a paper tray using the PDF page size
+        document.PickTrayByPdfSize = true;
+        document.Save("result.pdf");
+    }
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
