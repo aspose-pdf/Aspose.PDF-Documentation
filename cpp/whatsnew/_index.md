@@ -11,7 +11,25 @@ sitemap:
 lastmod: "2021-12-22"
 ---
 
+## What's new in Aspose.PDF 24.8
 
+Ability to add SVG images to a page.
+
+## What's new in Aspose.PDF 24.4
+
+Fixed an issue with loading SVG images.
+
+## What's new in Aspose.PDF 24.3
+
+Fixed memory leaks while converting PDF documents to other formats.
+
+## What's new in Aspose.PDF 24.2
+
+Since 24.2 was implemented:
+
+- The JPXDecoder performance has been improved.
+
+- Fixed reading documents with broken structure.
 
 ## What's new in Aspose.PDF 23.7
 
