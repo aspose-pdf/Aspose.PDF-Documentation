@@ -11,6 +11,8 @@ sitemap:
 lastmod: "2021-12-22"
 ---
 
+
+
 ## What's new in Aspose.PDF 23.7
 
 - The saving of PDF documents into EPUB format has been introduced:
@@ -66,8 +68,6 @@ lastmod: "2021-12-22"
         return 0;
     }
 ```
-
-
 
 ## What's new in Aspose.PDF 23.1
 

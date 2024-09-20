@@ -11,11 +11,98 @@ sitemap:
 lastmod: "2021-06-05"
 ---
 
+## What's new in Aspose.PDF 24.8
+
+Since 24.8, support for the PDF/A-4 format:
+
+```java
+
+    Document document = new Document(inputPdf);
+    // Only PDF-2.x documents can be converted to PDF/A-4
+    document.convert(new ByteArrayOutputStream(), PdfFormat.v_2_0, ConvertErrorAction.Delete);
+    boolean converted = document.convert(logFile, PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
+    document.save(outputFile);
+```
+
+Also, is it possible to add alternative text for the Image Stamp:
+
+The AlternativeText property has been added to ImageStamp - if a value is assigned to it, then when adding an ImageStamp to a document it has Alternative Text.
+
+```java
+
+    String p1_Alt1 = "*** page 1, Alt text 1 ***",
+                    p1_Alt2 = "*** page 1, Alt text 2 ***",
+                    p2_Alt1 = "--- page 1, Alt text 1 ---",
+                    p2_Alt2 = "--- page 1, Alt text 2 ---";
+
+    StructTreeRootElement structTreeRoot = document.getTaggedContent().getStructTreeRootElement();
+
+    ImageStamp imageStamp = new ImageStamp(dataDir + "test.jpg");
+    imageStamp.setXIndent(100);
+    imageStamp.setYIndent(700);
+    imageStamp.setWidth(50);
+    imageStamp.setHeight(50);
+    imageStamp.setQuality(100);
+    imageStamp.setAlternativeText(p1_Alt1);
+
+    // To page 1
+    document.getPages().get_Item(1).addStamp(imageStamp);
+
+    imageStamp.setYIndent(500);
+    imageStamp.setAlternativeText(p1_Alt2);
+    document.getPages().get_Item(1).addStamp(imageStamp);
+
+    // To page 2
+    document.getPages().add();
+    imageStamp.setXIndent(400);
+    imageStamp.setYIndent(700);
+    imageStamp.setWidth(50);
+    imageStamp.setHeight(50);
+    imageStamp.setAlternativeText(p2_Alt1);
+    document.getPages().get_Item(2).addStamp(imageStamp);
+
+    imageStamp.setYIndent(500);
+    imageStamp.setAlternativeText(p2_Alt2);
+    document.getPages().get_Item(2).addStamp(imageStamp);
+
+    // Save document
+    document.save(outFile);
+```
+
+Also, the following code shows how to add AlternativeText in the existing images in FigureElements.
+
+```java
+
+    String inFile = dataDir + "46040.pdf";
+    String outFile = dataDir + "46040_1_out.pdf";
+
+    Document document = new Document(inFile);
+
+    ITaggedContent taggedContent = document.getTaggedContent();
+    StructureElement rootElement = taggedContent.getRootElement();
+
+    Iterator tmp0 = (rootElement.getChildElements()).iterator();
+    while (tmp0.hasNext())
+    {
+        com.aspose.pdf.tagged.logicalstructure.elements.Element element = (com.aspose.pdf.tagged.logicalstructure.elements.Element)tmp0.next();
+        if (element instanceof com.aspose.pdf.tagged.logicalstructure.elements.FigureElement)
+                {
+            com.aspose.pdf.tagged.logicalstructure.elements.FigureElement figureElement = (com.aspose.pdf.tagged.logicalstructure.elements.FigureElement)element;
+
+            // Set Alternative Text
+            figureElement.setAlternativeText("Figure alternative text (technique 1)");
+        }
+    }
+
+    // Save document
+    document.save(outFile);
+```
+
 ## What's new in Aspose.PDF 24.7
 
 Since the 24.7 release, as part of the editing tagged PDF, were added methods on **Aspose.Pdf.LogicalStructure.Element**:
 
-- Tag (with different signatures for purposes)
+- Tag (add tags to specific operators like images, text, and links)
 - InsertChild
 - RemoveChild
 - ClearChilds
@@ -24,168 +111,175 @@ These methods allow you to edit PDF file tags, for example:
 
 ```java
 
-    Document document = new Document(dataDir+"test.pdf");
-        Page page = document.getPages().get_Item(1);
+    Document document = new Document(dataDir + "test.pdf");
+    Page page = document.getPages().get_Item(1);
 
-        BDC imageBdc = null;
-        BDC pBdc = null;
-        BDC link1Bdc = null;
-        BDC link2Bdc = null;
-        BDC helloBdc = null;
-        for (int i = 1; i <= page.getContents().size(); i++) {
-            Operator op = page.getContents().get_Item(i);
-            if (op instanceof  BDC) {
-                BDC bdc = (BDC) op;
-                if (bdc != null) {
-                    if (bdc.getProperties().getMCID()[0] != null && bdc.getProperties().getMCID()[0] == 0) {
-                        helloBdc = bdc;
-                    }
-                }
+    BDC imageBdc = null;
+    BDC pBdc = null;
+    BDC link1Bdc = null;
+    BDC link2Bdc = null;
+    BDC helloBdc = null;
+    for (int i = 1; i <= page.getContents().size(); i++)
+    {
+        Operator op = page.getContents().get_Item(i);
+        if (op instanceof BDC) {
+        BDC bdc = (BDC)op;
+        if (bdc != null)
+        {
+            if (bdc.getProperties().getMCID()[0] != null && bdc.getProperties().getMCID()[0] == 0)
+            {
+                helloBdc = bdc;
             }
+        }
+    }
 
 
-            if (op instanceof  Do) {
-                Do doXobj = (Do) op;
-                if (doXobj != null) {
-                    imageBdc = new BDC("Figure");
-                    page.getContents().insert(i - 2, imageBdc);
-                    i++;
-                    page.getContents().insert(i + 1, new EMC());
-                    i++;
-                }
+    if (op instanceof Do) {
+        Do doXobj = (Do)op;
+        if (doXobj != null)
+        {
+            imageBdc = new BDC("Figure");
+            page.getContents().insert(i - 2, imageBdc);
+            i++;
+            page.getContents().insert(i + 1, new EMC());
+            i++;
+        }
+    }
+
+    if (op instanceof TextShowOperator) {
+        TextShowOperator tx = (TextShowOperator)op;
+        if (tx != null)
+        {
+            if (tx.getText().contains("efter Ukendt forfatter er licenseret under"))
+            {
+                pBdc = new BDC("P");
+                page.getContents().insert(i - 1, pBdc);
+                i++;
+                page.getContents().insert(i + 1, new EMC());
+                i++;
             }
-
-            if (op instanceof  TextShowOperator) {
-                TextShowOperator tx = (TextShowOperator) op;
-                if (tx != null) {
-                    if (tx.getText().contains("efter Ukendt forfatter er licenseret under")) {
-                        pBdc = new BDC("P");
-                        page.getContents().insert(i - 1, pBdc);
-                        i++;
-                        page.getContents().insert(i + 1, new EMC());
-                        i++;
-                    }
-                    if (tx.getText().contains("CC")) {
-                        link1Bdc = new BDC("Link");
-                        page.getContents().insert(i - 1, link1Bdc);
-                        i++;
-                        page.getContents().insert(i + 1, new EMC());
-                        i++;
-                    }
-                    if (tx.getText().contains("Dette billede")) {
-                        link2Bdc = new BDC("Link");
-                        page.getContents().insert(i - 1, link2Bdc);
-                        i++;
-                        page.getContents().insert(i + 1, new EMC());
-                        i++;
-                    }
-                }
+            if (tx.getText().contains("CC"))
+            {
+                link1Bdc = new BDC("Link");
+                page.getContents().insert(i - 1, link1Bdc);
+                i++;
+                page.getContents().insert(i + 1, new EMC());
+                i++;
             }
+            if (tx.getText().contains("Dette billede"))
+            {
+                link2Bdc = new BDC("Link");
+                page.getContents().insert(i - 1, link2Bdc);
+                i++;
+                page.getContents().insert(i + 1, new EMC());
+                i++;
+            }
+        }
+    }
         }
 
         ITaggedContent tagged = document.getTaggedContent();
-        {
-            com.aspose.pdf.tagged.logicalstructure.elements.Element p = tagged.getRootElement().getChildElements().get_Item(1);
-            p.clearChilds();
-            MCRElement mcr = p.tag(helloBdc);
-            StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
-                    .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
-            StructureAttribute attr = new StructureAttribute(AttributeKey.SpaceAfter);
-            attr.setNumberValue(30.625);
-            attrs.setAttribute(attr);
-        }
+    {
+        com.aspose.pdf.tagged.logicalstructure.elements.Element p = tagged.getRootElement().getChildElements().get_Item(1);
+        p.clearChilds();
+        MCRElement mcr = p.tag(helloBdc);
+        StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
+                .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+        StructureAttribute attr = new StructureAttribute(AttributeKey.SpaceAfter);
+        attr.setNumberValue(30.625);
+        attrs.setAttribute(attr);
+    }
 
-        {
-            com.aspose.pdf.tagged.logicalstructure.elements.FigureElement figure = tagged.createFigureElement();
-            tagged.getRootElement().insertChild(figure, 2);
-            figure.setAlternativeText("A fly.");
-            MCRElement mcr = figure.tag(imageBdc);
+    {
+        com.aspose.pdf.tagged.logicalstructure.elements.FigureElement figure = tagged.createFigureElement();
+        tagged.getRootElement().insertChild(figure, 2);
+        figure.setAlternativeText("A fly.");
+        MCRElement mcr = figure.tag(imageBdc);
 
-            StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
-                    .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+        StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
+                .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-            StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
-            spaceAfter.setNumberValue(3.625);
-            attrs.setAttribute(spaceAfter);
+        StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
+        spaceAfter.setNumberValue(3.625);
+        attrs.setAttribute(spaceAfter);
 
-            StructureAttribute bbox = new StructureAttribute(AttributeKey.BBox);
-            bbox.setArrayNumberValue(new Double[][]{new Double[]{(71.9971)}, new Double[]{(375.839)}, new Double[]{(523.299)}, new Double[]{(714.345)}});
-            attrs.setAttribute(bbox);
+        StructureAttribute bbox = new StructureAttribute(AttributeKey.BBox);
+        bbox.setArrayNumberValue(new Double[][] { new Double[] { (71.9971) }, new Double[] { (375.839) }, new Double[] { (523.299) }, new Double[] { (714.345) } });
+        attrs.setAttribute(bbox);
 
-            StructureAttribute placement = new StructureAttribute(AttributeKey.Placement);
-            placement.setNameValue(AttributeName.Placement_Block);
-            attrs.setAttribute(placement);
-        }
+        StructureAttribute placement = new StructureAttribute(AttributeKey.Placement);
+        placement.setNameValue(AttributeName.Placement_Block);
+        attrs.setAttribute(placement);
+    }
 
-        StructureElement p2 = (StructureElement) tagged.getRootElement().getChildElements().get_Item(3);
-        p2.clearChilds();
+    StructureElement p2 = (StructureElement)tagged.getRootElement().getChildElements().get_Item(3);
+    p2.clearChilds();
 
-        SpanElement span1 = tagged.createSpanElement();
-        {
-            StructureAttributes attrs = span1.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+    SpanElement span1 = tagged.createSpanElement();
+    {
+        StructureAttributes attrs = span1.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-            StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
-            textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline);
-            attrs.setAttribute(textDecorationType);
+        StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
+        textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline);
+        attrs.setAttribute(textDecorationType);
 
-            StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
-            textDecorationThickness.setNumberValue(0);
-            attrs.setAttribute(textDecorationThickness);
+        StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
+        textDecorationThickness.setNumberValue(0);
+        attrs.setAttribute(textDecorationThickness);
 
-            StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
-            textDecorationColor.setArrayNumberValue(new Double[][]{new Double[]{(0.0196075)}, new Double[]{(0.384308)}, new Double[]{(0.756866)}});
-            attrs.setAttribute(textDecorationColor);
-        }
-        p2.appendChild(span1);
+        StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
+        textDecorationColor.setArrayNumberValue(new Double[][] { new Double[] { (0.0196075) }, new Double[] { (0.384308) }, new Double[] { (0.756866) } });
+        attrs.setAttribute(textDecorationColor);
+    }
+    p2.appendChild(span1);
 
-        {
-            MCRElement mcr = p2.tag(pBdc);
-            StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
-                    .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+    {
+        MCRElement mcr = p2.tag(pBdc);
+        StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
+                .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-            StructureAttribute textAlign = new StructureAttribute(AttributeKey.TextAlign);
-            textAlign.setNameValue(AttributeName.TextAlign_Center);
-            attrs.setAttribute(textAlign);
+        StructureAttribute textAlign = new StructureAttribute(AttributeKey.TextAlign);
+        textAlign.setNameValue(AttributeName.TextAlign_Center);
+        attrs.setAttribute(textAlign);
 
-            StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
-            spaceAfter.setNumberValue(21.75);
-            attrs.setAttribute(spaceAfter);
-        }
+        StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
+        spaceAfter.setNumberValue(21.75);
+        attrs.setAttribute(spaceAfter);
+    }
 
-        SpanElement span2 = tagged.createSpanElement();
-        {
-            StructureAttributes attrs = span2.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+    SpanElement span2 = tagged.createSpanElement();
+    {
+        StructureAttributes attrs = span2.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-            StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
-            textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline);
-            attrs.setAttribute(textDecorationType);
+        StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
+        textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline);
+        attrs.setAttribute(textDecorationType);
 
-            StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
-            textDecorationThickness.setNumberValue(0);
-            attrs.setAttribute(textDecorationThickness);
+        StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
+        textDecorationThickness.setNumberValue(0);
+        attrs.setAttribute(textDecorationThickness);
 
-            StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
-            textDecorationColor.setArrayNumberValue(new Double[][]{new Double[]{(0.0196075)}, new Double[]{(0.384308)}, new Double[]{(0.756866)}});
-            attrs.setAttribute(textDecorationColor);
-        }
-        p2.appendChild(span2);
+        StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
+        textDecorationColor.setArrayNumberValue(new Double[][] { new Double[] { (0.0196075) }, new Double[] { (0.384308) }, new Double[] { (0.756866) } });
+        attrs.setAttribute(textDecorationColor);
+    }
+    p2.appendChild(span2);
 
-        LinkElement link2 = tagged.createLinkElement();
-        link2.setId(UUID.randomUUID().toString());
-        span2.appendChild(link2);
-        link2.tag(page.getAnnotations().get_Item(1));
-        link2.tag(link2Bdc);
+    LinkElement link2 = tagged.createLinkElement();
+    link2.setId(UUID.randomUUID().toString());
+    span2.appendChild(link2);
+    link2.tag(page.getAnnotations().get_Item(1));
+    link2.tag(link2Bdc);
 
-        LinkElement link1 = tagged.createLinkElement();
-        link1.setId(UUID.randomUUID().toString());
-        span1.appendChild(link1);
-        link1.tag(page.getAnnotations().get_Item(2));
-        link1.tag(link1Bdc);
+    LinkElement link1 = tagged.createLinkElement();
+    link1.setId(UUID.randomUUID().toString());
+    span1.appendChild(link1);
+    link1.tag(page.getAnnotations().get_Item(2));
+    link1.tag(link1Bdc);
 
-        tagged.getRootElement().removeChild(0);
+    tagged.getRootElement().removeChild(0);
 
-        document.save(dataDir+"_out.pdf");
-
+    document.save(dataDir + "_out.pdf");
 ```
 
 ## What's new in Aspose.PDF 24.6

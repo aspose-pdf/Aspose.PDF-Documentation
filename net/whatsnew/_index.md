@@ -148,7 +148,7 @@ Decryption feature:
 
 Since the 24.7 release, as part of the editing tagged PDF, were added methods on **Aspose.Pdf.LogicalStructure.Element**:
 
-- Tag (with different signatures for purposes)
+- Tag (add tags to specific operators like images, text, and links)
 - InsertChild
 - RemoveChild
 - ClearChilds
