@@ -197,7 +197,7 @@ The example creates a new span element in the tagged content of the first page o
 You can create a bdc statement specifying mcid, lang, and expansion text using the BDCProperties object:
 
 ```cs
-    BDC bdc = new BDC(PdfConsts.P, new BDCProperties(1, "ru", "Hello world"));
+    BDC bdc = new BDC(PdfConsts.P, new BDCProperties(1, "de", "Hallo, welt!"));
 ```
 
 After creating the structure tree, it is possible to bind the BDC operator to the specified element of the structure with method Tag on the element object:

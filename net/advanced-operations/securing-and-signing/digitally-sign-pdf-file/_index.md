@@ -172,7 +172,7 @@ Steps to sign PDF:
         };
         sign.CustomSignHash = customSignHash;
         pdfSign.BindPdf(inputPdf);
-        pdfSign.Sign(1, "second approval", "two@mail.ru", "Ukraine", false,
+        pdfSign.Sign(1, "second approval", "second_user@example.com", "Australia", false,
                         new System.Drawing.Rectangle(200, 200, 200, 100),
                         sign);
         pdfSign.Save(outputPdf);
