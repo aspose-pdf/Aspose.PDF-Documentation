@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /net/convert-images-format-to-pdf/
 lastmod: "2021-11-01"
-description: Convert various images formats such as, BMP, CGM, JPEG, DICOM, PNG, TIFF, EMF and SVG to PDF using C# .NET.
+description: Convert various images formats such as, CDR, DJVU, BMP, CGM, JPEG, DICOM, PNG, TIFF, EMF and SVG to PDF using C# .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -61,6 +61,16 @@ _Format_: **TIFF**
 - [C# TIFF to PDF](#csharp-tiff-to-pdf)
 - [C# Convert TIFF to PDF](#csharp-tiff-to-pdf)
 - [C# How to convert TIFF image to PDF](#csharp-tiff-to-pdf)
+
+_Format_: **CDR**
+- [C# CDR to PDF](#csharp-cdr-to-pdf)
+- [C# Convert CDR to PDF](#csharp-cdr-to-pdf)
+- [C# How to convert CDR image to PDF](#csharp-cdr-to-pdf)
+
+_Format_: **DJVU**
+- [C# DJVU to PDF](#csharp-djvu-to-pdf)
+- [C# Convert DJVU to PDF](#csharp-djvu-to-pdf)
+- [C# How to convert DJVU image to PDF](#csharp-djvu-to-pdf)
 
 Other topics covered by this article
 - [See Also](#see-also)
@@ -721,6 +731,42 @@ public static void TiffToPDF2()
 }
 ```
 
+## Convert CDR to PDF
+
+<abbr title="CDR">CDR</abbr> is a file format that was developed by the Corel Corporation and is used mainly for vector graphic images and drawings. The CDR file format is recognized by the majority of image editing programs. The CDR format is the default format for Corel Draw Applications.
+
+Check next code snippet for converting CDR files to PDF format.
+
+<a name="csharp-cdr-to-pdf" id="csharp-cdr-to-pdf"><strong>Steps: Convert CDR to PDF in C#</strong></a>
+
+1. Create an instance of [CdrLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cdrloadoptions/) class.
+2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
+3. Save the document with the desired file name.
+
+```csharp
+
+    var doc = new Document("input.cdr", new CdrLoadOptions());
+    doc.Save("out.pdf");
+```
+
+## Convert DJVU to PDF
+
+<abbr title="DJVU">DjVu</abbr> is a compressed image format which was developed by LizardTech. This file format was primarily designed to store different kinds of scanned documents; especially documents that contain a combination of text, pictures, indexed color images, and line drawings.
+
+Check next code snippet for converting DJVU files to PDF format.
+
+<a name="csharp-djvu-to-pdf" id="csharp-djvu-to-pdf"><strong>Steps: Convert DJVU to PDF in C#</strong></a>
+
+1. Create an instance of [DjvuLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/djvuloadoptions/) class.
+2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
+3. Save the document with the desired file name.
+
+```csharp
+
+    var doc = new Document("input.djvu", new DjvuLoadOptions());
+    doc.Save("out.pdf");
+```
+
 ## Applies to
 
 |**Platform**|**Supported**|**Comments**|
@@ -774,3 +820,23 @@ _Format_: **EMF**
 - [C# Generate PDF from EMF](#csharp-emf-to-pdf)
 - [C# Create PDF from EMF](#csharp-emf-to-pdf)
 - [C# EMF to PDF Converter](#csharp-emf-to-pdf)
+
+_Format_: **DjVu**
+- [C# DjVu to PDF Code](#csharp-djvu-to-pdf)
+- [C# DjVu to PDF API](#csharp-djvu-to-pdf)
+- [C# DjVu to PDF Programmatically](#csharp-djvu-to-pdf)
+- [C# DjVu to PDF Library](#csharp-djvu-to-pdf)
+- [C# Save DjVu as PDF](#csharp-djvu-to-pdf)
+- [C# Generate PDF from DjVu](#csharp-djvu-to-pdf)
+- [C# Create PDF from DjVu](#csharp-djvu-to-pdf)
+- [C# DjVu to PDF Converter](#csharp-djvu-to-pdf)
+
+_Format_: **CDR**
+- [C# CDR to PDF Code](#csharp-cdr-to-pdf)
+- [C# CDR to PDF API](#csharp-cdr-to-pdf)
+- [C# CDR to PDF Programmatically](#csharp-cdr-to-pdf)
+- [C# CDR to PDF Library](#csharp-cdr-to-pdf)
+- [C# Save CDR as PDF](#csharp-cdr-to-pdf)
+- [C# Generate PDF from CDR](#csharp-cdr-to-pdf)
+- [C# Create PDF from CDR](#csharp-cdr-to-pdf)
+- [C# CDR to PDF Converter](#csharp-cdr-to-pdf)
