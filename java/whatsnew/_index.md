@@ -112,174 +112,240 @@ These methods allow you to edit PDF file tags, for example:
 ```java
 
     Document document = new Document(dataDir + "test.pdf");
+
+    // Retrieve the first page of the document.
     Page page = document.getPages().get_Item(1);
 
+    // Initialize variables to hold BDC (Begin Dictionary Context) elements for different purposes.
     BDC imageBdc = null;
     BDC pBdc = null;
     BDC link1Bdc = null;
     BDC link2Bdc = null;
     BDC helloBdc = null;
+
+    // Iterate through the contents of the page.
     for (int i = 1; i <= page.getContents().size(); i++)
     {
+        // Get the current operator from the page contents.
         Operator op = page.getContents().get_Item(i);
+
+        // Check if the operator is an instance of BDC.
         if (op instanceof BDC) {
-        BDC bdc = (BDC)op;
+        BDC bdc = (BDC)op; // Cast the operator to BDC type.
         if (bdc != null)
         {
+            // Check if the MCID (Mark Content Identifier) of the BDC is 0.
             if (bdc.getProperties().getMCID()[0] != null && bdc.getProperties().getMCID()[0] == 0)
             {
-                helloBdc = bdc;
+                helloBdc = bdc; // Store the BDC for later use.
             }
         }
     }
 
-
+    // Check if the operator is an instance of Do (Draw Object).
     if (op instanceof Do) {
-        Do doXobj = (Do)op;
+        Do doXobj = (Do)op; // Cast the operator to Do type.
         if (doXobj != null)
         {
+            // Create a new BDC for an image and insert it into the page contents.
             imageBdc = new BDC("Figure");
-            page.getContents().insert(i - 2, imageBdc);
-            i++;
-            page.getContents().insert(i + 1, new EMC());
-            i++;
+            page.getContents().insert(i - 2, imageBdc); // Insert before the current operator.
+            i++; // Increment the index to account for the inserted BDC.
+            page.getContents().insert(i + 1, new EMC()); // Insert an EMC (End Mark Content).
+            i++; // Increment the index again.
         }
     }
 
+    // Check if the operator is an instance of TextShowOperator (for text display).
     if (op instanceof TextShowOperator) {
-        TextShowOperator tx = (TextShowOperator)op;
+        TextShowOperator tx = (TextShowOperator)op; // Cast the operator to TextShowOperator type.
         if (tx != null)
         {
+            // Check for specific text content and insert corresponding BDCs.
             if (tx.getText().contains("efter Ukendt forfatter er licenseret under"))
             {
                 pBdc = new BDC("P");
-                page.getContents().insert(i - 1, pBdc);
-                i++;
-                page.getContents().insert(i + 1, new EMC());
-                i++;
+                page.getContents().insert(i - 1, pBdc); // Insert before the current operator.
+                i++; // Increment the index.
+                page.getContents().insert(i + 1, new EMC()); // Insert an EMC.
+                i++; // Increment the index.
             }
             if (tx.getText().contains("CC"))
             {
                 link1Bdc = new BDC("Link");
-                page.getContents().insert(i - 1, link1Bdc);
-                i++;
-                page.getContents().insert(i + 1, new EMC());
-                i++;
+                page.getContents().insert(i - 1, link1Bdc); // Insert before the current operator.
+                i++; // Increment the index.
+                page.getContents().insert(i + 1, new EMC()); // Insert an EMC.
+                i++; // Increment the index.
             }
             if (tx.getText().contains("Dette billede"))
             {
                 link2Bdc = new BDC("Link");
-                page.getContents().insert(i - 1, link2Bdc);
-                i++;
-                page.getContents().insert(i + 1, new EMC());
-                i++;
+                page.getContents().insert(i - 1, link2Bdc); // Insert before the current operator.
+                i++; // Increment the index.
+                page.getContents().insert(i + 1, new EMC()); // Insert an EMC.
+                i++; // Increment the index.
             }
         }
     }
-        }
+}
+ 
+    // Retrieve the tagged content from the document.
+    ITaggedContent tagged = document.getTaggedContent();
 
-        ITaggedContent tagged = document.getTaggedContent();
-    {
-        com.aspose.pdf.tagged.logicalstructure.elements.Element p = tagged.getRootElement().getChildElements().get_Item(1);
-        p.clearChilds();
-        MCRElement mcr = p.tag(helloBdc);
-        StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
-                .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
-        StructureAttribute attr = new StructureAttribute(AttributeKey.SpaceAfter);
-        attr.setNumberValue(30.625);
-        attrs.setAttribute(attr);
-    }
+    // Process the tagged content to modify structure attributes.
+    // Get the first child element of the root element in the tagged content.
+    com.aspose.pdf.tagged.logicalstructure.elements.Element p = tagged.getRootElement().getChildElements().get_Item(1);
+    p.clearChilds(); // Clear existing child elements.
 
-    {
-        com.aspose.pdf.tagged.logicalstructure.elements.FigureElement figure = tagged.createFigureElement();
-        tagged.getRootElement().insertChild(figure, 2);
-        figure.setAlternativeText("A fly.");
-        MCRElement mcr = figure.tag(imageBdc);
+    // Tag the helloBdc with the parent structure element.
+    MCRElement mcr = p.tag(helloBdc);
 
-        StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
-                .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+    // Create and set structure attributes for the tagged element.
+    StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
+            .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+    StructureAttribute attr = new StructureAttribute(AttributeKey.SpaceAfter);
+    attr.setNumberValue(30.625); // Set space after attribute.
+    attrs.setAttribute(attr); // Apply the attribute to the structure.
 
-        StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
-        spaceAfter.setNumberValue(3.625);
-        attrs.setAttribute(spaceAfter);
+    // Create  a new FigureElement in the tagged content.
+    com.aspose.pdf.tagged.logicalstructure.elements.FigureElement figure = tagged.createFigureElement();
+    tagged.getRootElement().insertChild(figure, 2); // Insert the figure element at the second position.
+    figure.setAlternativeText("A fly."); // Set alternative text for the figure.
 
-        StructureAttribute bbox = new StructureAttribute(AttributeKey.BBox);
-        bbox.setArrayNumberValue(new Double[][] { new Double[] { (71.9971) }, new Double[] { (375.839) }, new Double[] { (523.299) }, new Double[] { (714.345) } });
-        attrs.setAttribute(bbox);
+    // Tag the imageBdc with the figure element.
+    MCRElement mcr = figure.tag(imageBdc);
 
-        StructureAttribute placement = new StructureAttribute(AttributeKey.Placement);
-        placement.setNameValue(AttributeName.Placement_Block);
-        attrs.setAttribute(placement);
-    }
+    // Retrieve the parent structure element of the specified MCR (Marked Content Reference)
+    StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
+    .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
+    // Create a new StructureAttribute for space after the element
+    StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
+    spaceAfter.setNumberValue(3.625); // Set the space after value to 3.625 units
+    attrs.setAttribute(spaceAfter); // Assign the space after attribute to the structure attributes
+
+    // Create a new StructureAttribute for bounding box (BBox)
+    StructureAttribute bbox = new StructureAttribute(AttributeKey.BBox);
+    bbox.setArrayNumberValue(new Double[][] { new Double[] { (71.9971) }, new Double[] { (375.839) }, new Double[] { (523.299) }, new Double[] { (714.345) } });
+    // Set the bounding box values for the structure attribute
+    attrs.setAttribute(bbox); // Assign the bounding box attribute to the structure attributes
+
+    // Create a new StructureAttribute for placement
+    StructureAttribute placement = new StructureAttribute(AttributeKey.Placement);
+    placement.setNameValue(AttributeName.Placement_Block); // Set the placement type to block
+    attrs.setAttribute(placement); // Assign the placement attribute to the structure attributes
+
+    // Retrieve the fourth child element from the root element of the tagged structure
     StructureElement p2 = (StructureElement)tagged.getRootElement().getChildElements().get_Item(3);
-    p2.clearChilds();
+    p2.clearChilds(); // Clear any existing child elements from p2
 
+    // Create a new SpanElement to be added to p2
     SpanElement span1 = tagged.createSpanElement();
-    {
-        StructureAttributes attrs = span1.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-        StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
-        textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline);
-        attrs.setAttribute(textDecorationType);
+    // Create structure attributes for the span element
+    StructureAttributes attrs = span1.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-        StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
-        textDecorationThickness.setNumberValue(0);
-        attrs.setAttribute(textDecorationThickness);
+    // Create a new StructureAttribute for text decoration type
+    StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
+    textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline); // Set text decoration to underline
+    attrs.setAttribute(textDecorationType); // Assign the text decoration type attribute to the structure attributes
 
-        StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
-        textDecorationColor.setArrayNumberValue(new Double[][] { new Double[] { (0.0196075) }, new Double[] { (0.384308) }, new Double[] { (0.756866) } });
-        attrs.setAttribute(textDecorationColor);
-    }
-    p2.appendChild(span1);
+    // Create a new StructureAttribute for text decoration thickness
+    StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
+    textDecorationThickness.setNumberValue(0); // Set the thickness of the text decoration to 0
+    attrs.setAttribute(textDecorationThickness); // Assign the text decoration thickness attribute to the structure attributes
 
-    {
-        MCRElement mcr = p2.tag(pBdc);
-        StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
-                .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+    // Create a new StructureAttribute for text decoration color
+    StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
+    textDecorationColor.setArrayNumberValue(new Double[][] { new Double[] { (0.0196075) }, new Double[] { (0.384308) }, new Double[] { (0.756866) } });
+    // Set the RGB color values for the text decoration
+    attrs.setAttribute(textDecorationColor); // Assign the text decoration color attribute to the structure attributes
 
-        StructureAttribute textAlign = new StructureAttribute(AttributeKey.TextAlign);
-        textAlign.setNameValue(AttributeName.TextAlign_Center);
-        attrs.setAttribute(textAlign);
+    p2.appendChild(span1); // Append the span1 element to p2
 
-        StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
-        spaceAfter.setNumberValue(21.75);
-        attrs.setAttribute(spaceAfter);
-    }
 
+    // Create a new MCR element and tag it with pBdc
+    MCRElement mcr = p2.tag(pBdc);
+    // Retrieve the parent structure element of the MCR and create layout attributes
+    StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
+    .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
+
+    // Create a new StructureAttribute for text alignment
+    StructureAttribute textAlign = new StructureAttribute(AttributeKey.TextAlign);
+    textAlign.setNameValue(AttributeName.TextAlign_Center); // Set text alignment to center
+    attrs.setAttribute(textAlign); // Assign the text alignment attribute to the structure attributes
+
+    // Create a new StructureAttribute for space after the element
+    StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
+    spaceAfter.setNumberValue(21.75); // Set the space after value to 21.75 units
+    attrs.setAttribute(spaceAfter); // Assign the space after attribute to the structure attributes
+
+
+    // Create a new SpanElement to be added to p2
     SpanElement span2 = tagged.createSpanElement();
-    {
-        StructureAttributes attrs = span2.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-        StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
-        textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline);
-        attrs.setAttribute(textDecorationType);
+    // Create structure attributes for the span element
+    StructureAttributes attrs = span2.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-        StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
-        textDecorationThickness.setNumberValue(0);
-        attrs.setAttribute(textDecorationThickness);
+    // Create a new StructureAttribute for text decoration type
+    StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
+    textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline); // Set text decoration to underline
+    attrs.setAttribute(textDecorationType); // Assign the text decoration type attribute to the structure attributes
 
-        StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
-        textDecorationColor.setArrayNumberValue(new Double[][] { new Double[] { (0.0196075) }, new Double[] { (0.384308) }, new Double[] { (0.756866) } });
-        attrs.setAttribute(textDecorationColor);
-    }
+    // Create a new StructureAttribute for text decoration color using the specified key.
+    StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
+
+    // Set the array number value for the text decoration color attribute.
+    // The color is represented in an array of RGB values, where each value is a Double.
+    textDecorationColor.setArrayNumberValue(new Double[][] {
+    new Double[] { (0.0196075) }, // Red component
+    new Double[] { (0.384308) },  // Green component
+    new Double[] { (0.756866) }   // Blue component
+    });
+
+    // Set the text decoration color attribute to the attrs object.
+    attrs.setAttribute(textDecorationColor);
+
+    // Append a child span element to the parent element p2.
     p2.appendChild(span2);
 
+    // Create a new LinkElement instance for the second link.
     LinkElement link2 = tagged.createLinkElement();
+
+    // Assign a unique ID to the link element using a randomly generated UUID.
     link2.setId(UUID.randomUUID().toString());
+
+    // Append the link2 element as a child of span2.
     span2.appendChild(link2);
+
+    // Tag the link2 element with the corresponding annotation from the page's annotations.
     link2.tag(page.getAnnotations().get_Item(1));
+
+    // Tag the link2 element with additional metadata or context (link2Bdc).
     link2.tag(link2Bdc);
 
+    // Create another LinkElement instance for the first link.
     LinkElement link1 = tagged.createLinkElement();
+
+    // Assign a unique ID to the link1 element using a randomly generated UUID.
     link1.setId(UUID.randomUUID().toString());
+
+    // Append the link1 element as a child of span1.
     span1.appendChild(link1);
+
+    // Tag the link1 element with the corresponding annotation from the page's annotations.
     link1.tag(page.getAnnotations().get_Item(2));
+
+    // Tag the link1 element with additional metadata or context (link1Bdc).
     link1.tag(link1Bdc);
 
+    // Remove the first child element from the root element of the tagged document.
     tagged.getRootElement().removeChild(0);
 
+    // Save the document to the specified output directory with the filename "_out.pdf".
     document.save(dataDir + "_out.pdf");
+
 ```
 
 ## What's new in Aspose.PDF 24.6
@@ -421,7 +487,6 @@ To create a new PDF from a layer, the following code snippet can be used:
 ```java
 
     Document document = new Document(inputPath);
-
     java.util.List<Layer> layers = document.getPages().get_Item(1).getLayers();
 
     for (Layer layer : layers)
@@ -437,7 +502,6 @@ Aspose.PDF for Java library opens a PDF, iterates through each layer on the firs
 ```java
 
     Document document = new Document(input);
-
     Page page = document.getPages().get_Item(1);
 
     for (Layer layer : page.getLayers())
@@ -464,9 +528,7 @@ The second parameter allows renaming the optional content group marker. The defa
 ```java
 
     Document document = new Document(input);
-
     Page page = document.getPages().get_Item(1);
-
     page.mergeLayers("NewLayerName");
 
     // Or page.mergeLayers("NewLayerName", "OC1");

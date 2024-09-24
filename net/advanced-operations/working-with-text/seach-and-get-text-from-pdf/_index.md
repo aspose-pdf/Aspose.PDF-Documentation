@@ -139,15 +139,13 @@ The C# library can only pass one phrase to the TextFragmentAbsorber, but since t
     new Regex(@"vested[\s\r\n]+in", RegexOptions.IgnoreCase),
     new Regex("Vested in:", RegexOptions.IgnoreCase),
     new Regex(@"file.?[\s\r\n]+(?:nos?|numbers?|#s?|nums?).?[\s\r\n]+(\d+)-(\d+)", RegexOptions.IgnoreCase),
-    new Regex(@"file.?[\s\r\n]+nos?.?:?[\s\r\n]+([\d\r\n-]+)", RegexOptions.IgnoreCase)};
+    new Regex(@"file.?[\s\r\n]+nos?.?:?[\s\r\n]+([\d\r\n-]+)", RegexOptions.IgnoreCase);
     var document = new Document(input);
-    var absorber = new TextFragmentAbsorber(
-    regexes,
-    new TextSearchOptions(true)
-    );
+    var absorber = new TextFragmentAbsorber(regexes,new TextSearchOptions(true));
     document.Pages.Accept(absorber);
     // Get result
     var result = absorber.RegexResults
+    }
 ```
 
 The code snippet searches for specific patterns like document numbers, keywords, and file numbers in a PDF document using regular expressions. It loads the PDF, applies the search, and retrieves the matching results for further processing.

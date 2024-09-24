@@ -43,7 +43,6 @@ To create a new PDF from a layer, the following code snippet can be used:
 ```cs
 
     var document = new Document(inputPath);
-
     var layers = document.Pages[1].Layers;
 
     foreach (var layer in layers)
@@ -59,7 +58,6 @@ Aspose.PDF for .NET library opens a PDF, iterates through each layer on the firs
 ```cs
 
     var document = new Document(input);
-
     var page = document.Pages[1];
 
     foreach (var layer in page.Layers)
@@ -84,7 +82,6 @@ The second parameter allows renaming the optional content group marker. The defa
 ```cs
 
     var document = new Document(input);
-
     var page = document.Pages[1];
 
     page.MergeLayers("NewLayerName");

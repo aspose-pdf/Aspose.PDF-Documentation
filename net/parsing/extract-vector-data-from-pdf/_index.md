@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Extract Vector Data from PDF document
+## Access to Vector Data from PDF document
 
 Since the the 24.2 release, Aspose.PDF for .NET library allows vector data extraction from a PDF file.
 The next code snippet creates a new Document object using some input data, initializes a 'GraphicsAbsorber'(the GraphicsAbsorber returns the vector data) to handle graphic elements, and then visits the second page of the document to extract and analyze these elements.
@@ -41,3 +41,46 @@ It retrieves various properties of the second graphic element, such as its assoc
     var position = elements[1].Position; 
 ```
 
+## Extract Vector Data from PDF document
+
+For extraction of Vector Data from PDF, we can use SVG extractor:
+
+```csharp
+
+    var doc = new Document(input);
+    doc.Pages[1].TrySaveVectorGraphics(outputSvg);
+```
+
+### Extract all subpaths to images separately
+
+```csharp
+
+    SvgExtractionOptions options = new SvgExtractionOptions
+    {
+        ExtractEverySubPathToSvg = true
+    };
+
+    SvgExtractor extractor = new SvgExtractor(options);
+    extractor.Extract(page, svgDirPath);
+```
+
+### Extract list of elements to single image
+
+```csharp
+
+    List<GraphicElement> elements = new List<GraphicElement>();
+    // Fill elements list needed graphic elements.
+
+    SvgExtractor svgExtractor = new SvgExtractor();
+    svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "1.svg"));
+```
+
+### Extract single element
+
+```csharp
+
+    GraphicsAbsorber graphicsAbsorber = new GraphicsAbsorber();
+    graphicsAbsorber.Visit(page);
+    XFormPlacement xFormPlacement = graphicsAbsorber.Elements[1] as XFormPlacement;
+    xFormPlacement.Elements[2].SaveToSvg(page, Path.Combine(svgDirPath,"1.svg"));
+```
