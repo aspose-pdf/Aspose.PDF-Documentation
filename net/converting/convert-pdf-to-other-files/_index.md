@@ -150,18 +150,58 @@ The XPS file type is primarily associated with the XML Paper Specification by Mi
 
 To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) that is used as the second argument to the [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method to generate the XPS file.
 
+Since the 24.2 release, Aspose.PDF has implemented converting Searchable PDF to XPS while keeping Text Selectable in the resultant XPS. To preserve text, it's necessary to set the XpsSaveOptions.SaveTransparentTexts property to true.
+
 The following code snippet shows the process of converting PDF file into XPS format.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-// Load PDF document
-Document pdfDocument = new Document(dataDir + "input.pdf");
+using (var document = new Document("input.pdf"))
+{
+    var xpsOptions = new XpsSaveOptions
+    {
+        SaveTransparentTexts = true
+    };
+    document.Save("output.xps", xpsOptions);
+}
+```
 
-// Instantiate XPS Save options
-Aspose.Pdf.XpsSaveOptions saveOptions = new Aspose.Pdf.XpsSaveOptions();
-// Save the XPS document
-pdfDocument.Save("PDFToXPS_out.xps", saveOptions)
+## Convert PDF to Markdown
+
+**Aspose.PDF for .NET** gives a possibility to convert PDF files to <abbr title="Markdown">MD</abbr> format. Let try to use the presented code snippet for converting PDF files to MD format with C#.
+
+Markdown is a lightweight markup language designed to represent plain text formatting with maximum human readability and machine-readability to advanced publishing languages.
+
+### Optimize image usage by PDF to Markdown converter
+
+You can notice that in directories with images, the number of images is smaller than the number of images in PDF files.
+
+Since the markdown file cannot set the image size, without the MarkdownSaveOptions.UseImageHtmlTag option, the same kind of pictures with different sizes are saved as different.
+
+For the enabled option MarkdownSaveOptions.UseImageHtmlTag will save unique images, which are scaled in the document by the img tag.
+
+The code opens a PDF document, configures the parameters for converting it to a Markdown file (saving any images in the folder named "images"), and saves the resulting Markdown file in the specified output path.
+
+The following code snippet shows the process of converting PDF file into MD format.
+
+```csharp
+
+    string inputPdfPath = "";
+    string markdownOutputFilePath = "";
+
+    // Create a new Document object using the specified input PDF path.
+    using (Document doc = new Document(inputPdfPath))
+    {
+        // Create an instance of MarkdownSaveOptions to configure the Markdown export settings.
+        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions()
+        {
+            // Set to false to prevent the use of HTML <img> tags for images in the Markdown output.
+            UseImageHtmlTag = false
+        }
+            // Specify the directory name where resources (like images) will be stored.
+            saveOptions.ResourcesDirectoryName = "images";
+
+        // Save the document in Markdown format to the specified output file path using the defined save options.    
+        doc.Save(markdownOutputFilePath, saveOptions);
+    }
 ```

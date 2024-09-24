@@ -126,6 +126,30 @@ In case you need to search text inside any particular PDF page, please specify t
 pdfDocument.Pages[2].Accept(textFragmentAbsorber);
 ```
 
+### Search through a list of phrases in a TextFragmentAbsorber
+
+The C# library can only pass one phrase to the TextFragmentAbsorber, but since the 24.2 release of Aspose.PDF, it implemented a new algorithm for searching the list search algorithm.
+
+```csharp
+
+    var regexes = new Regex[]
+    {
+    new Regex(@"(?s)document\s+(?:(?:no\(?s?\)?\.?)|(?:number(?:\(?s\)?)?))\s+(?:(?:[\w-]*\d[\w-]*)+(?:[,;\s]|and)*)", RegexOptions.IgnoreCase),
+    new Regex(@"[\s\r\n]+Tract[\s\r\n]+of:? ", RegexOptions.IgnoreCase),
+    new Regex(@"vested[\s\r\n]+in", RegexOptions.IgnoreCase),
+    new Regex("Vested in:", RegexOptions.IgnoreCase),
+    new Regex(@"file.?[\s\r\n]+(?:nos?|numbers?|#s?|nums?).?[\s\r\n]+(\d+)-(\d+)", RegexOptions.IgnoreCase),
+    new Regex(@"file.?[\s\r\n]+nos?.?:?[\s\r\n]+([\d\r\n-]+)", RegexOptions.IgnoreCase);
+    var document = new Document(input);
+    var absorber = new TextFragmentAbsorber(regexes,new TextSearchOptions(true));
+    document.Pages.Accept(absorber);
+    // Get result
+    var result = absorber.RegexResults
+    }
+```
+
+The code snippet searches for specific patterns like document numbers, keywords, and file numbers in a PDF document using regular expressions. It loads the PDF, applies the search, and retrieves the matching results for further processing.
+
 ## Search and Get Text Segments from All Pages of PDF Document
 
 In order to search text segments from all the pages, you first need to get the TextFragment objects from the document. TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects. Once the TextFragmentCollection is fetched from the document, you need to loop through this collection and get TextSegmentCollection of each TextFragment object. After that, you can get all the properties of the individual TextSegment object. The following code snippet shows you how to search text segments from all the pages.

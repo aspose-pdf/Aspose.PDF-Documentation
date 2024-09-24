@@ -81,7 +81,9 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ## **Print Pdf document in .NET Core**
 
-The Aspose.PDF library allows us to convert PDF files to XPS. This function can be useful for organizing the printing of documents. Let's take a look at an example for using the default printer:
+The Aspose.PDF library allows us to convert PDF files to XPS. This function can be useful for organizing the printing of documents. Let's take a look at an example for using the default printer.
+
+In this example, we convert PDF document into XPS and add it as a job to the queue of the local printer:
 
 ```csharp
 class Program
@@ -128,7 +130,24 @@ class Program
 }//end Program class
 ```
 
-In this example, we convert PDF document into XPS and add it as a job to the queue of the local printer.
+## Choosing paper source by PDF page size
+ 
+Since the 24.4 release, choosing paper source by PDF page size in the print dialog is possible. The next code snippet enables picking a printer tray based on the PDF's page size.
+
+This preference can be switched on and off using the 'Document.PickTrayByPdfSize' property.
+
+```cs
+
+    using (Document document = new Document())
+    {
+        Page page = document.Pages.Add();
+        page.Paragraphs.Add(new TextFragment("Hello world!"));
+
+        // Set the flag to choose a paper tray using the PDF page size
+        document.PickTrayByPdfSize = true;
+        document.Save("result.pdf");
+    }
+```
 
 <script type="application/ld+json">
 {

@@ -114,6 +114,395 @@ Files are attached to the task. The result was obtained in the mode:
 AdditionalChangeMarks = true
 ComparisonMode = ComparisonMode.ParseSpaces
 
+Also, from this release added the Aspose.PDF Security for .NET plugin:
+
+Encryption feature:
+
+```cs
+
+    var input = "sample.pdf";
+    var output = "encrypted.pdf";
+
+    var plugin = new Security();
+    var opt = new EncryptionOptions("123456789", "123", DocumentPrivilege.ForbidAll);
+    opt.AddInput(new FileDataSource(input));
+    opt.AddOutput(new FileDataSource(output));
+    plugin.Process(opt);
+```
+
+Decryption feature:
+
+```cs
+
+    var input = "encrypted.pdf";
+    var output = "decrypted.pdf";
+
+    var plugin = new Security();
+    var opt = new DecryptionOptions("123456789");
+    opt.AddInput(new FileDataSource(input));
+    opt.AddOutput(new FileDataSource(output));
+    plugin.Process(opt);
+```
+
+## What's new in Aspose.PDF 24.6
+
+Since the 24.7 release, as part of the editing tagged PDF, were added methods on **Aspose.Pdf.LogicalStructure.Element**:
+
+- Tag (add tags to specific operators like images, text, and links)
+- InsertChild
+- RemoveChild
+- ClearChilds
+
+These methods allow you to edit PDF file tags, for example:
+
+```cs
+
+    var document = new Document(input);
+    var page = document.Pages[1];
+    // The marked content operator on page for the image.
+    BDC imageBdc = null;
+    // The marked content operator on page for the text.
+    BDC text1BDC = null;
+    // The marked content operator on page for the link1.
+    BDC link1Bdc = null;
+    // The marked content operator on page for the link2.
+    BDC link2Bdc = null;
+    // The marked content operator on page for the Hello text.
+    BDC helloBdc = null;
+    // Find the marked content operators for the elements on the page.
+    for (int i = 1; i <= page.Contents.Count; i++)
+    {
+        Operator op = page.Contents[i];
+        BDC bdc = op as BDC;
+        if (bdc != null)
+        {
+            // The text operator with marked content id = 0 was found.
+            if (bdc.Properties.MCID == 0)
+            {
+                helloBdc = bdc;
+            }
+        }
+
+        Do doXobj = op as Do;
+        if (doXobj != null)
+        {
+            // Wrap the image XObject with makred content operator.
+            imageBdc = new BDC(PdfConsts.Figure);
+            page.Contents.Insert(i - 2, imageBdc);
+            i++;
+            page.Contents.Insert(i + 1, new EMC());
+            i++;
+        }
+
+        TextShowOperator tx = op as TextShowOperator;
+        if (tx != null)
+        {
+            // Wrap the text operator on page with makred content operator.
+            if (tx.Text.Contains("efter Ukendt forfatter er licenseret under"))
+            {
+                text1BDC = new BDC(PdfConsts.P);
+                page.Contents.Insert(i - 1, text1BDC);
+                i++;
+                page.Contents.Insert(i + 1, new EMC());
+                i++;
+            }
+            // Wrap the text operator on page with makred content operator.
+            if (tx.Text.Contains("CC"))
+            {
+                link1Bdc = new BDC(PdfConsts.Link);
+                page.Contents.Insert(i - 1, link1Bdc);
+                i++;
+                page.Contents.Insert(i + 1, new EMC());
+                i++;
+            }
+            // Wrap the text operator on page with makred content operator.
+            if (tx.Text.Contains("Dette billede"))
+            {
+                link2Bdc = new BDC(PdfConsts.Link);
+                page.Contents.Insert(i - 1, link2Bdc);
+                i++;
+                page.Contents.Insert(i + 1, new EMC());
+                i++;
+            }
+        }
+    }
+
+    var tagged = document.TaggedContent;
+
+    // Find exist struct element in document.
+    var helloParagraph = tagged.RootElement.ChildElements[1];
+
+    // Clear the subtree of an existing structure tree element.
+    helloParagraph.ClearChilds();
+
+    // Tag paragraph struct element to text on page.
+    var helloMCR = helloParagraph.Tag(helloBdc);
+
+    // Get the struct element attributes.
+    var helloAttrs = helloMCR.ParentStructureElement.Attributes.CreateAttributes(AttributeOwnerStandard.Layout);
+
+    // Fill the paragraph struct element spaceAfter attribute.
+    var helloSpaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
+    helloSpaceAfter.SetNumberValue(30.625);
+    helloAttrs.SetAttribute(helloSpaceAfter);
+
+    // Create a figure element and place it to root element in second position.
+    var figure = tagged.CreateFigureElement();
+    tagged.RootElement.InsertChild(figure, 2);
+
+    // Set an alternative text for the figure.
+    figure.AlternativeText = "A fly.";
+
+    // Tag figure struct element to image element on page.
+    var figureMCR = figure.Tag(imageBdc);
+
+    // Get the figure struct element attributes.
+    var figureAttrs = figureMCR.ParentStructureElement.Attributes.CreateAttributes(AttributeOwnerStandard.Layout);
+
+    // Fill the figure struct element spaceAfter attribute.
+    var figureSpaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
+    figureSpaceAfter.SetNumberValue(3.625);
+    figureAttrs.SetAttribute(figureSpaceAfter);
+
+    // Fill the figure struct element BBox attribute.
+    var figureBBox = new StructureAttribute(AttributeKey.BBox);
+    figureBBox.SetArrayNumberValue(new double?[] { 71.9971, 375.839, 523.299, 714.345 });
+    figureAttrs.SetAttribute(figureBBox);
+
+    // Fill the figure struct element placement attribute.
+    var figurePlacement = new StructureAttribute(AttributeKey.Placement);
+    figurePlacement.SetNameValue(AttributeName.Placement_Block);
+    figureAttrs.SetAttribute(figurePlacement);
+
+    // Find exist struct element in document.
+    var p2 = (StructureElement)tagged.RootElement.ChildElements[3];
+    
+    // Clear the subtree of an existing structure tree element.
+    p2.ClearChilds();
+
+    // Create the span struct element.
+    var span1 = tagged.CreateSpanElement();
+
+    // Get the span1 struct element attributes.
+    var span1Attrs = span1.Attributes.CreateAttributes(AttributeOwnerStandard.Layout);
+
+    // Fill the span1 struct element textDecorationType attribute.
+    var span1TextDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
+    span1TextDecorationType.SetNameValue(AttributeName.TextDecorationType_Underline);
+    span1Attrs.SetAttribute(span1TextDecorationType);
+
+    // Fill the span1 struct element textDecorationThickness attribute.
+    var span1TextDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
+    span1TextDecorationThickness.SetNumberValue(0);
+    span1Attrs.SetAttribute(span1TextDecorationThickness);
+
+    // Fill the span1 struct element textDecorationColor attribute.
+    var span1TextDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
+    span1TextDecorationColor.SetArrayNumberValue(new double?[] { 0.0196075, 0.384308, 0.756866 });
+    span1Attrs.SetAttribute(span1TextDecorationColor);
+
+    // Append the span element to the paragraph element in the struct tree.
+    p2.AppendChild(span1);
+
+    // Tag paragraph struct element to text element on page.
+    var text1MCR = p2.Tag(text1BDC);
+
+    // Get the mcr struct element attributes.
+    var text1Attrs = text1MCR.ParentStructureElement.Attributes.CreateAttributes(AttributeOwnerStandard.Layout);
+
+    // Fill the text1 MCR struct element textAlign attribute.
+    var text1TextAlign = new StructureAttribute(AttributeKey.TextAlign);
+    text1TextAlign.SetNameValue(AttributeName.TextAlign_Center);
+    text1Attrs.SetAttribute(text1TextAlign);
+
+    // Create the span struct element.
+    var span2 = tagged.CreateSpanElement();
+
+    // Get the span2 struct element attributes.
+    var span2Attrs = span2.Attributes.CreateAttributes(AttributeOwnerStandard.Layout);
+
+    // Fill the span2 struct element textDecorationType attribute.
+    var textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
+    textDecorationType.SetNameValue(AttributeName.TextDecorationType_Underline);
+    span2Attrs.SetAttribute(textDecorationType);
+
+    // Fill the span2 struct element textDecorationThickness attribute.
+    var textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
+    textDecorationThickness.SetNumberValue(0);
+    span2Attrs.SetAttribute(textDecorationThickness);
+
+    // Fill the span2 struct element textDecorationColor attribute.
+    var textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
+    textDecorationColor.SetArrayNumberValue(new double?[] { 0.0196075, 0.384308, 0.756866 });
+    span2Attrs.SetAttribute(textDecorationColor);
+    
+    // Append the span struct element to the struct element tree.
+    p2.AppendChild(span2);
+
+    // Create the link struct element.
+    var link2 = tagged.CreateLinkElement();
+    // Set an id attribute of struct element.
+    link2.SetId(Guid.NewGuid().ToString());
+    // Append the link struct element to the struct element tree.
+    span2.AppendChild(link2);
+    // Tag link struct element to the page annotation element.
+    link2.Tag(page.Annotations[1]);
+    // Tag link struct element to text element on page.
+    link2.Tag(link2Bdc);
+
+    // Create the link struct element.
+    var link1 = tagged.CreateLinkElement();
+    // Set an id attribute of struct element.
+    link1.SetId(Guid.NewGuid().ToString());
+    // Append the link struct element to the struct element tree.
+    span1.AppendChild(link1);
+    // Tag link struct element to the page annotation element.
+    link1.Tag(page.Annotations[2]);
+    // Tag link struct element to text element on page.
+    link1.Tag(link1Bdc);
+
+    // Remove the struct element at index 0 from the struct tree.
+    tagged.RootElement.RemoveChild(0);
+
+    // Save document
+    document.Save(output);
+
+```
+
+Also, in this release possible to create an accessible PDF using low-level functions:
+
+The next code snippet works with a PDF document and its tagged content, utilizing an Aspose.PDF library to process it.
+
+```cs
+
+    var document = new Document(somepdffilepath);
+    ITaggedContent content = document.TaggedContent;
+    SpanElement span = content.CreateSpanElement();
+    content.RootElement.AppendChild(span);
+    foreach (var op in document.Pages[1].Contents)
+    {
+        BDC bdc = op as BDC;
+        if (bdc != null)
+        {
+            span.Tag(bdc);
+        }
+    }
+
+    document.Save(output);
+```
+
+Since 24.6 Aspose.PDF for .NET allows to sign PDF with X509Certificate2 in base64 format:
+
+```cs
+
+    var base64Str = "sign";
+    using (var pdfSign = new PdfFileSignature())
+    {
+        var sign = new ExternalSignature(base64Str, false);//without Private Key
+        sign.ShowProperties = false;
+        SignHash customSignHash = delegate (byte[] signableHash)
+        {
+            //Simulated Server Part (This will probably just be sending data and receiving a response)
+            var signerCert = new X509Certificate2(inputP12, "123456", X509KeyStorageFlags.Exportable);//must have Private Key
+            var rsaCSP = new RSACryptoServiceProvider();
+            var xmlString = signerCert.PrivateKey.ToXmlString(true);
+            rsaCSP.FromXmlString(xmlString);
+            byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+            return signedData;
+        };
+        sign.CustomSignHash = customSignHash;
+        pdfSign.BindPdf(inputPdf);
+        pdfSign.Sign(1, "second approval", "secondexample@mail.com", "Australia", false,
+                        new System.Drawing.Rectangle(200, 200, 200, 100),
+                        sign);
+        pdfSign.Save(outputPdf);
+    }
+```
+
+## What's new in Aspose.PDF 24.5
+
+This release allows us to work with PDF layers. For example:
+
+- lock a PDF layer
+- extract PDF layer elements
+- flatten a layered PDF
+- merge All Layers inside the PDF into one
+
+### Lock a PDF layer
+
+Since the 24.5 release, you can open a PDF, lock a specific layer on the first page, and save the document with the changes. There are two new methods and one property was added:
+
+Layer.Lock(); -  Locks the layer.
+Layer.Unlock(); - Unlocks the layer.
+Layer.Locked; - Property, indicating the layer locked state.
+
+```cs
+
+    var document = new Document(input);
+    var page = document.Pages[1];
+    var layer = page.Layers[0];
+
+    layer.Lock();
+
+    document.Save(output);
+```
+
+### Extract PDF layer elements
+
+The Aspose.PDF for .NET library allows extracts of each layer from the first page and saves each layer to a separate file.
+
+To create a new PDF from a layer, the following code snippet can be used:
+
+```cs
+
+    var document = new Document(inputPath);
+    var layers = document.Pages[1].Layers;
+
+    foreach (var layer in layers)
+    {
+        layer.Save(outputPath);
+    }
+```
+
+### Flatten a layered PDF
+
+Aspose.PDF for .NET library opens a PDF, iterates through each layer on the first page, and flattens each layer, making it permanent on the page.
+
+```cs
+
+    var document = new Document(input);
+    var page = document.Pages[1];
+
+    foreach (var layer in page.Layers)
+    {
+        layer.Flatten(true);
+    }
+```
+
+The 'Layer.Flatten(bool cleanupContentStream)' method accepts the boolean parameter that specifies whether to remove optional content group markers from the content stream. Setting the cleanupContentStream parameter to false speeds up the process of flattening.
+
+### Merge All Layers inside the PDF into one
+
+The Aspose.PDF for .NET library allows merges either all PDF layers or a specific layer on the first page into a new layer and saves the updated document.
+
+Two methods were added to merge all layers on the page:
+
+- void MergeLayers(string newLayerName);
+- void MergeLayers(string newLayerName, string newOptionalContentGroupId); 
+
+The second parameter allows renaming the optional content group marker. The default value is "oc1" (/OC /oc1 BDC).
+
+```cs
+
+    var document = new Document(input);
+    var page = document.Pages[1];
+
+    page.MergeLayers("NewLayerName");
+
+    // Or page.MergeLayers("NewLayerName", "OC1");
+
+    document.Save(output);
+```
 
 ## What's new in Aspose.PDF 24.4
 
@@ -197,6 +586,35 @@ From this release added the Aspose.PDF Signature for .NET plugin:
     opt.Name = "Signature1";
     // perform the process
     plugin.Process(opt);
+```
+ 
+Since the 24.4 release, choosing paper source by PDF page size in the print dialog is possible. The next code snippet enables picking a printer tray based on the PDF's page size.
+
+This preference can be switched on and off using the 'Document.PickTrayByPdfSize' property or the 'PdfContentEditor' facade:
+
+```cs
+
+    using (Document document = new Document())
+    {
+        Page page = document.Pages.Add();
+        page.Paragraphs.Add(new TextFragment("Hello world!"));
+
+        // Set the flag to choose a paper tray using the PDF page size
+        document.PickTrayByPdfSize = true;
+        document.Save("result.pdf");
+    }
+```
+
+```cs
+
+    using (PdfContentEditor contentEditor = new PdfContentEditor())
+    {
+        contentEditor.BindPdf("input.pdf");
+
+        // Set the flag to choose a paper tray using the PDF page size
+        contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
+        contentEditor.Save("result.pdf");
+    }
 ```
 
 ## What's new in Aspose.PDF 24.3
