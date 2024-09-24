@@ -190,7 +190,7 @@ These methods allow you to edit PDF file tags, for example:
         TextShowOperator tx = op as TextShowOperator;
         if (tx != null)
         {
-            if (tx.Text.Contains("efter Ukendt forfatter er licenseret under"))
+            if (tx.Text.Contains("TextExample1"))
             {
                 pBdc = new BDC("P");
                 page.Contents.Insert(i - 1, pBdc);
@@ -206,7 +206,7 @@ These methods allow you to edit PDF file tags, for example:
                 page.Contents.Insert(i + 1, new EMC());
                 i++;
             }
-            if (tx.Text.Contains("Dette billede"))
+            if (tx.Text.Contains("TextExample2"))
             {
                 link2Bdc = new BDC("Link");
                 page.Contents.Insert(i - 1, link2Bdc);
@@ -231,7 +231,7 @@ These methods allow you to edit PDF file tags, for example:
     {
         var figure = tagged.CreateFigureElement();
         tagged.RootElement.InsertChild(figure, 2);
-        figure.AlternativeText = "A fly.";
+        figure.AlternativeText = "AlternativeTextExample";
         var mcr = figure.Tag(imageBdc);
 
         var attrs = ((StructureElement)mcr.ParentElement).Attributes.CreateAttributes(AttributeOwnerStandard.Layout);
@@ -362,7 +362,7 @@ Since 24.6 Aspose.PDF for .NET allows to sign PDF with X509Certificate2 in base6
         };
         sign.CustomSignHash = customSignHash;
         pdfSign.BindPdf(inputPdf);
-        pdfSign.Sign(1, "second approval", "two@mail.ru", "Ukraine", false,
+        pdfSign.Sign(1, "second approval", "secondexample@mail.com", "Australia", false,
                         new System.Drawing.Rectangle(200, 200, 200, 100),
                         sign);
         pdfSign.Save(outputPdf);
@@ -378,7 +378,7 @@ This release allows us to work with PDF layers. For example:
 - flatten a layered PDF
 - merge All Layers inside the PDF into one
 
-**Lock a PDF layer**
+### Lock a PDF layer
 
 Since the 24.5 release, you can open a PDF, lock a specific layer on the first page, and save the document with the changes. There are two new methods and one property was added:
 
@@ -397,7 +397,7 @@ Layer.Locked; - Property, indicating the layer locked state.
     document.Save(output);
 ```
 
-**Extract PDF layer elements**
+### Extract PDF layer elements
 
 The Aspose.PDF for .NET library allows extracts of each layer from the first page and saves each layer to a separate file.
 
@@ -406,7 +406,6 @@ To create a new PDF from a layer, the following code snippet can be used:
 ```cs
 
     var document = new Document(inputPath);
-
     var layers = document.Pages[1].Layers;
 
     foreach (var layer in layers)
@@ -415,14 +414,13 @@ To create a new PDF from a layer, the following code snippet can be used:
     }
 ```
 
-**Flatten a layered PDF**
+### Flatten a layered PDF
 
 Aspose.PDF for .NET library opens a PDF, iterates through each layer on the first page, and flattens each layer, making it permanent on the page.
 
 ```cs
 
     var document = new Document(input);
-
     var page = document.Pages[1];
 
     foreach (var layer in page.Layers)
@@ -433,7 +431,7 @@ Aspose.PDF for .NET library opens a PDF, iterates through each layer on the firs
 
 The 'Layer.Flatten(bool cleanupContentStream)' method accepts the boolean parameter that specifies whether to remove optional content group markers from the content stream. Setting the cleanupContentStream parameter to false speeds up the process of flattening.
 
-**Merge All Layers inside the PDF into one**
+### Merge All Layers inside the PDF into one
 
 The Aspose.PDF for .NET library allows merges either all PDF layers or a specific layer on the first page into a new layer and saves the updated document.
 
@@ -447,7 +445,6 @@ The second parameter allows renaming the optional content group marker. The defa
 ```cs
 
     var document = new Document(input);
-
     var page = document.Pages[1];
 
     page.MergeLayers("NewLayerName");
