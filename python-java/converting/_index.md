@@ -6,6 +6,8 @@ weight: 70
 url: /python-java/converting/
 lastmod: "2023-04-06"
 description: This section contains articles relating to converting PDF documents into different formats and vice versa using Python API.
+aliases:
+    - /python-java/conversion/
 sitemap:
     changefreq: "monthly"
     priority: 0.8
