@@ -5,10 +5,9 @@ weight: 20
 url: /python-java/add-toc-to-existing-pdf-in-python/
 ---
 
-<ins>To add TOC in Pdf document using **Aspose.PDF Java for Python**, simply invoke **AddToc** class.
+To add TOC in Pdf document using **Aspose.PDF Java for Python**, simply invoke **AddToc** class.
 
-**Python Code**
-```
+```python
 
 # Open a pdf document.
 doc= self.Document()
@@ -34,7 +33,7 @@ i = 0;
 while (i < 2):
 
 # Create Heading object
-heading2 = self.Heading(1);
+heading2 = self.Heading(1)
 
 segment2 = self.TextSegment
 heading2.setTocPage(toc_page)
@@ -52,7 +51,7 @@ segment2.setText(titles[i])
 # Add heading to page containing TOC
 toc_page.getParagraphs().add(heading2)
 
-i +=1;
+i +=1
 
 # Save PDF Document
 doc.save(self.dataDir + "TOC.pdf")
@@ -66,4 +65,4 @@ print "Added TOC Successfully, please check the output file."
 Download **Add TOC (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddToc/AddToc.py)
-- [CodePlex](http://asposepdfjavapython.codeplex.com/SourceControl/latest#test/WorkingWithDocumentObject/AddToc/AddToc.py)
+
