@@ -14,7 +14,7 @@ sitemap:
 ---
 ![Aspose.PDF for Python via Java logo image](aspose_pdf-for-python-java.png)
 
-## Welcome to Aspose.PDF for Python via Java<
+## Welcome to Aspose.PDF for Python via Java
 
 {{% alert color="primary" %}}
 

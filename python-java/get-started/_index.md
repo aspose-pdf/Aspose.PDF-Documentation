@@ -1,12 +1,12 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
 url: /python-java/get-started/
 description: This page is an overview how to use Aspose.PDF for Python via Java for creating and editing a PDF document
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2024-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
@@ -20,6 +20,7 @@ Python via Java uses Java library, that speeds up the processing of program writ
 ## Why use Aspose.PDF for Python via Java?
 
 Using Aspose.PDF for Python via Java gives the following boons:
+
 - wide functionality
 - works with Java Oracle JDK
 - convenience and ease of use
@@ -41,7 +42,7 @@ It creates PDF documents effectively, allows you to use a familiar editor, and h
 - convert PDF to other formats and vice versa
 - split, merge, extract or insert pages and much more
 
-### Learn more about: 
+### Learn more about
 
 - [Basics of DOM API](/pdf/python-java/basics-of-dom-api/)
 - ["Hello, World" Java Example](/pdf/python-java/hello-world-example/)

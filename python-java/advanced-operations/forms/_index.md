@@ -35,7 +35,6 @@ In this section describes a quick and simple approach to programmatically comple
 - get field names, flags, types, values
 - rename fields
 
-
 ```python
 
 from asposepdf import Api, Forms
@@ -60,8 +59,3 @@ form.fillField("form1[0].Page1[0].fldBarCode1[0]", "54321")
 
 form.save(output_pdf)
 ```
-
-
-
-
-
