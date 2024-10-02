@@ -11,13 +11,12 @@ jobs:
     runs-on: [self-hosted, linux, x64, dev4-pdf]
     steps:
       - name: Hugo build
-        run: |       
-          sudo rm -rf aspose-pdf-docs 2> /dev/null
-          mkdir aspose-pdf-docs
-          cd aspose-pdf-docs
-          git clone --depth 1 --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git pull)
-          git clone --depth 1 --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git lutsk-aspose-prototype/themes/lutsk-aspose-theme || (cd lutsk-aspose-prototype/themes/lutsk-aspose-theme && git pull)   
-          git clone --depth 1 --single-branch --branch develop-deploy-test https://github.com/aspose-pdf/Aspose.PDF-Documentation.git lutsk-aspose-prototype/content/ || (cd lutsk-aspose-prototype/content && git pull)
+        run: |
+          sudo rm -rvf aspose-pdf-docs 2>1 /dev/null  
+          mkdir aspose-pdf-docs && cd aspose-pdf-docs
+          git clone --depth 1 --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git 
+          git clone --depth 1 --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git lutsk-aspose-prototype/themes/lutsk-aspose-theme 
+          git clone --depth 1 --single-branch --branch develop-deploy-test https://github.com/aspose-pdf/Aspose.PDF-Documentation.git lutsk-aspose-prototype/content/ 
           cd lutsk-aspose-prototype
           sudo npm install -D --save autoprefixer
           sudo npm install -D --save postcss-cli
