@@ -28,6 +28,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
           script: |
-            echo "${{aws-access-key-id}}" >> "secrets.txt"
-            echo "${{aws-secret-access-key}}" >> "secrets.txt"
+            echo "${{ secrets.AWS_ACCESS_KEY_ID }}" >> "secrets.txt"
+            echo "${{ secrets.AWS_SECRET_ACCESS_KEY }}" >> "secrets.txt"
             aws s3 sync public/ s3://docs-qa.aspose.com/pdf/
