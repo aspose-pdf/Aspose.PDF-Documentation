@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - develop-deploy-test
-#    paths-ignore:
-#        '.github/**'
+    paths-ignore:
+        '.github/**'
 jobs:
   job-one:
     name: Deploy
@@ -36,7 +36,6 @@ jobs:
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2
         env:
-          DEBUG: 1
           PATHS: '/pdf/*'
           AWS_REGION: 'us-west-2'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
