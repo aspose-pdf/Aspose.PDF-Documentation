@@ -10,7 +10,7 @@ jobs:
     name: Deploy
     runs-on: [self-hosted, linux, x64, dev4-pdf]
     steps:
-      - name: hugo build
+      - name: Hugo build
         run: |       
           sudo rm -rf aspose-pdf-docs 2> /dev/null
           mkdir aspose-pdf-docs
@@ -33,7 +33,7 @@ jobs:
           aws-region: us-west-2
           
       - name: Deploy to S3
-        run: aws s3 sync aspose-pdf-docs/lutsk-aspose-prototype/public/ s3://docs-qa.aspose.com/pdf/
+        run: aws s3 sync --quiet aspose-pdf-docs/lutsk-aspose-prototype/public/ s3://docs-qa.aspose.com/pdf/
 
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2
