@@ -5,7 +5,6 @@ on:
       - develop-deploy-test
 #    paths-ignore:
 #        '.github/**'
-
 jobs:
   job-one:
     name: Deploy
