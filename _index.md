@@ -17,7 +17,7 @@ lastmod: "2021-09-07"
 ---
 
 {{% alert color="primary" %}}
-11111111111111111111
+
 ![Aspose.PDF for .NET Product Logo](aspose_pdf-for-net.png)
 
 <h2> Welcome to the Aspose.PDF for .NET</h2>
@@ -27,7 +27,7 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 {{% /alert %}}
 
 <h3>Aspose.PDF for .NET Resources</h3>
-
+11111111111111111111
 The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.PDF for .NET Online Documentation](/pdf/net/)
