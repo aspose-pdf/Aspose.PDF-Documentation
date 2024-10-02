@@ -19,10 +19,8 @@ jobs:
           git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git themes/lutsk-aspose-theme || (cd themes/lutsk-aspose-theme && git pull)
           sudo npm install -D --save autoprefixer
           sudo npm install -D --save postcss-cli
-#          rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
           rm -rf public
           hugo --minify --baseURL https://docs-qa.aspose.com/pdf
-#          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         uses: aws-actions/configure-aws-credentials@v1
         with:
