@@ -30,7 +30,7 @@ jobs:
           aws-region: us-west-2
           
       - name: Deploy to S3
-        run: aws --debug s3 sync aspose-pdf-docs/lutsk-aspose-prototype/public/ s3://docs-qa.aspose.com/pdf/
+        run: aws s3 sync aspose-pdf-docs/lutsk-aspose-prototype/public/ s3://docs-qa.aspose.com/pdf/
 
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2
