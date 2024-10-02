@@ -13,8 +13,8 @@ jobs:
       - name: hugo build
         run: |       
           cd aspose-pdf-docs
-          rm -r Aspose.PDF-Documentation
-          rm -r lutsk-aspose-prototype
+          rm -rf Aspose.PDF-Documentation 2&> /dev/null
+          rm -rf lutsk-aspose-prototype 2&> /dev/null
           git clone --single-branch --branch develop-deploy-test https://github.com/aspose-pdf/Aspose.PDF-Documentation.git || (cd Aspose.PDF-Documentation && git pull)
           git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git pull)
           cd lutsk-aspose-prototype
