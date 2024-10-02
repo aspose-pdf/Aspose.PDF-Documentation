@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Hugo build
         run: |
-          sudo rm -rvf aspose-pdf-docs 2> /dev/null
+          sudo rm -rvf aspose-pdf-docs
           mkdir aspose-pdf-docs && cd aspose-pdf-docs
           git clone --depth 1 --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git 
           git clone --depth 1 --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git lutsk-aspose-prototype/themes/lutsk-aspose-theme 
