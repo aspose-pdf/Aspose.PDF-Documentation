@@ -28,6 +28,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
           script: |
-            pwd
-            cd lutsk-aspose-prototype/
-            aws s3 sync public/ s3://docs-qa.aspose.com/pdf/
+            echo pwd
+            aws s3 sync aspose-pdf-docs/lutsk-aspose-prototype/public/ s3://docs-qa.aspose.com/pdf/
