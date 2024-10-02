@@ -29,5 +29,14 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
           
-      - name: hugo deploy
+      - name: Deploy to S3
         run: aws --debug s3 sync aspose-pdf-docs/lutsk-aspose-prototype/public/ s3://docs-qa.aspose.com/pdf/
+
+      - name: Invalidate CloudFront
+        uses: chetan/invalidate-cloudfront-action@v2
+        env:
+          PATHS: "/pdf/*"
+          AWS_REGION: us-west-2
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}        
+          DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
