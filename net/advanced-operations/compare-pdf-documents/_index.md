@@ -11,6 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
+The following code snippets also work with [Aspose.PDF.Drawing](https://docs.aspose.com/pdf/net/drawing/) library.
+
 # Comparing PDF Documents with Aspose.PDF for .NET
 
 When working with PDF documents, there are times when you need to compare the content of two documents to identify differences. The Aspose.PDF for .NET library provides a powerful toolset for this purpose. In this article, we'll explore how to compare PDF documents using a couple of simple code snippets.
@@ -97,8 +99,6 @@ By setting 'AdditionalChangeMarks' to 'true', you can also see markers for chang
 **Aspose.PDF for .NET** provides robust tools for comparing PDF documents, whether you need to compare specific pages or entire documents. By using options like 'AdditionalChangeMarks' and different 'ComparisonMode settings', you can tailor the comparison process to your specific needs. The resulting document provides a clear, side-by-side view of changes, making it easier to track revisions and ensure document accuracy.
 
 ## Compare PDF documents using GraphicalPdfComparer
-
-The following code snippets also work with [Aspose.PDF.Drawing](https://docs.aspose.com/pdf/net/drawing/) library.
 
 When collaborating on documents, especially in professional environments, you often end up with multiple versions of the same file.
 
