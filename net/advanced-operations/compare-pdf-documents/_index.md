@@ -11,13 +11,25 @@ sitemap:
     priority: 0.7
 ---
 
-The following code snippets also work with [Aspose.PDF.Drawing](https://docs.aspose.com/pdf/net/drawing/) library.
+Please note that all comparing tools are available in [Aspose.PDF.Drawing](https://docs.aspose.com/pdf/net/drawing/) library.
 
-# Comparing PDF Documents with Aspose.PDF for .NET
+# Ways to compare PDF Documents
 
 When working with PDF documents, there are times when you need to compare the content of two documents to identify differences. The Aspose.PDF for .NET library provides a powerful toolset for this purpose. In this article, we'll explore how to compare PDF documents using a couple of simple code snippets.
 
 The comparison functionality in Aspose.PDF allows you to compare two PDF documents page by page. You can choose to compare either specific pages or entire documents. The resulting comparison document highlights differences, making it easier to identify changes between the two files.
+
+Here is a list of possible ways to compare PDF documents using Aspose.PDF for  .NET library:
+
+1. **Comparing Specific Pages** - compare the first pages of two PDF documents.
+
+1. **Comparing Entire Documents** - compare the entire content of two PDF documents.
+
+1. **Compare PDF documents graphically**:
+
+- compare PDF with GetDifference method - individual images where changes are marked.
+
+- compare PDF with CompareDocumentsToPdf method - PDF document with images where changes are marked.
 
 ## Comparing Specific Pages
 
@@ -151,50 +163,6 @@ This process can be useful for visually comparing changes or differences between
             {
                 destImg.Save(destPngFilePath);
             }
-        }
-    }
-```
-
-The provided code snippet used the [Aspose.PDF.Drawing](https://docs.aspose.com/pdf/net/drawing/) library and compares two PDF documents visually.  
-
-```cs
-
-    string doc1Path = "";
-    string doc2Path = "";
-    string destPngFilePath = "";
-    string diffPngFilePath = "";
-
-    using (Document doc1 = new Document(doc1Path), doc2 = new Document(doc2Path))
-    {
-        GraphicalPdfComparer comparer = new GraphicalPdfComparer();
-        using (ImagesDifference imagesDifference = comparer.GetDifference(doc1.Pages[1], doc2.Pages[1]))
-        {
-
-            using (PdfImage diffImg = imagesDifference.DifferenceToImage(Color.Red, Color.White))
-            {
-                using (FileStream fileStream = new FileStream(diffPngFilePath, FileMode.Create, FileAccess.Write))
-                {
-                    using (var imgStream = diffImg.BitmapStream)
-                    {
-                        imgStream.Seek(0, SeekOrigin.Begin);
-                        diffImg.BitmapStream.CopyTo(fileStream);
-                    }
-                }
-            }
-
-
-            using (PdfImage destImg = imagesDifference.GetDestinationImage())
-            {
-                using (FileStream fileStream = new FileStream(destPngFilePath, FileMode.Create, FileAccess.Write))
-                {
-                    using (var imgStream = destImg.BitmapStream)
-                    {
-                        imgStream.Seek(0, SeekOrigin.Begin);
-                        destImg.BitmapStream.CopyTo(fileStream);
-                    }
-                }
-            }
-
         }
     }
 ```
