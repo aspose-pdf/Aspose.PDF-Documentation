@@ -15,12 +15,12 @@ sitemap:
 
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
-- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for .NET provides full product functionality, but all the pages in the generated PDF documents are watermarked with "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" at the top.
+- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for .NET provides full product functionality, but all pages in the generated PDF documents are watermarked with the text "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2024 Aspose Pty Ltd." at the top.
 
-- **The limit of the number of collection items that can be processed.**
-In the evaluation version from any collection, you can process only four elements (for example, only 4 pages, 4 form fields, etc.).
+- **Limit the number of pages that can be processed.**
+In the evaluation version, you can only process the first four pages of a document.
 
->If you want to test Aspose.HTML for .NET without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
+>If you want to test Aspose.PDF for .NET without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
 ## Classic license
 
@@ -142,6 +142,4 @@ namespace Aspose.Pdf.Examples
     }
 }
 ```
-### Applying a License Bought Before 2005/01/22
 
-Aspose.PDF for .NET no longer supports the old-style licenses. If you have a license from before 22 January 2005 and you have updated to a more recent version of Aspose.PDF, please contact our Sales team to get a new license file.

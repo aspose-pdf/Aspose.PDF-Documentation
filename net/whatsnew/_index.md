@@ -11,6 +11,102 @@ sitemap:
 lastmod: "2024-09-06"
 ---
 
+## What's new in Aspose.PDF 24.9
+
+Since version 24.9, it has been possible to generate a crash report when the library throws an exception. A crash report includes information about the type of exception, application title, Aspose.Pdf version, OS version, error message, and stack trace.
+
+The following code snippet demonstrates a common scenario for generating a crash report:
+
+```cs
+
+     try
+     {
+        //some code that generates exception
+         throw new Exception("message", new Exception("inner message"));
+     }
+     catch (Exception ex)
+     {
+        PdfException.GenerateCrashReport(new CrashReportOptions(ex));
+     }
+```
+
+Extracting an PDF document layer elements and saving into new PDF stream are available from now. In PDF documents, layers (also known as Optional Content Groups or OCGs) are used for various purposes, primarily to manage and control the visibility of content within the document. This functionality is particularly useful in design, engineering, and publishing. For example: blueprint aspects, complex diagram components, language versions of the same content.
+
+```cs
+
+     var documentPath = "";
+     var resultPdfPath ="";
+
+     var inputDocument = new Document(documentPath);
+     var inputPage = inputDocument.Pages[1];
+
+     var layers = inputPage.Layers;
+
+     foreach (var layer in layers)
+     {
+         var outputPdf = string.Format("{0}_{1}.pdf", resultPdfPath, layer.Id);
+
+         using (var stream = File.Create(outputPdf))
+         {
+             layer.Save(stream);
+         }
+     }
+```
+
+The `GraphicalPdfComparer` class is added for the graphic comparison of PDF documents and pages. Graphic comparison deals with document page images. It returns the result as an `ImagesDifference` object or as a PDF document that contains images merged from the original and the differences. Graphic comparison is most useful for documents that have minor differences in text or graphic content.
+
+The following code snippet demonstrates the graphic comparison of two PDF documents and saves an image with the differences into the resultant PDF document:
+
+```cs
+
+     var firstDocumentPath = "";
+     var secondDocumentPath = "";
+     var resultPdfPath ="";
+
+    using (Document doc1 = new Document(firstDocumentPath), doc2 = new Document(secondDocumentPath))
+    {
+        GraphicalPdfComparer comparer = new GraphicalPdfComparer()
+        {
+            Threshold = 3.0,
+            Color = Color.Red,
+            Resolution = new Resolution(300)
+        };
+        comparer.CompareDocumentsToPdf(doc1, doc2, resultPdfPath);
+    }
+```
+
+API implemented for integrating FileFormat.HEIC and Aspose.PDF. The HEIC (High-Efficiency Image Coding) is a modern image file format introduced by Apple with iOS 11 in 2017 as the default image format for iPhones and iPads.
+
+To convert HEIC images to PDF user should add the reference to `FileFormat.HEIC` NuGet package and use the following code snippet:
+
+```cs
+
+     var heicImagePath = "iphone_photo.heic";
+     var resultPdfPath ="iphone_photo.pdf";
+
+     using (var fs = new FileStream(heicImagePath, FileMode.Open))
+     {
+         HeicImage image = HeicImage.Load(fs);
+         var pixels = image.GetByteArray(PixelFormat.Rgb24);
+         var width = (int)image.Width;
+         var height = (int)image.Height;
+
+         var document = new Document();
+         Aspose.Pdf.Page page = document.Pages.Add();
+         Aspose.Pdf.Image asposeImage = new Aspose.Pdf.Image();
+         asposeImage.BitmapInfo = new BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
+         page.PageInfo.Height = height;
+         page.PageInfo.Width = width;
+         page.PageInfo.Margin.Bottom = 0;
+         page.PageInfo.Margin.Top = 0;
+         page.PageInfo.Margin.Right = 0;
+         page.PageInfo.Margin.Left = 0;
+
+         page.Paragraphs.Add(asposeImage);
+         document.Save(resultPdfPath);
+     }
+```
+
 ## What's new in Aspose.PDF 24.8
 
 Converting PDF Documents into PDF/A-4 format

@@ -13,14 +13,23 @@ sitemap:
 
 # Installation
 
-**Aspose.PDF for JavaScript via C++** is a easy and secure toolkit used to work with PDF directly in the web browser. 
+**Aspose.PDF for JavaScript via C++** is a easy and secure toolkit used to work with PDF directly in the web browser.
 
 To install and use Aspose.PDF for JavaScript via C++ from a -*ZIP archive, follow the following instructions:
+
 - extract the files from the ZIP archive
 - encrypt your *.lic file using 'encrypt_lic.html'
 - edit  'settings.json' and setup your settings.
 
 Follow the link for [Direct Download](https://releases.aspose.com/pdf/javascriptcpp/)
+
+To install and use Aspose.PDF for JavaScript via C++ from NPMJS, follow the following instructions:
+
+- `npm i aspose-pdf-js`
+
+To install and use Aspose.PDF for JavaScript via C++ from GITHUB, follow the following instructions:
+
+- `npm install git+https://github.com/aspose-pdf/Aspose.PDF-for-JavaScript-via-CPP`
 
 If there is no web server installed you can run the examples locally, using Python. So, if you are using Linux or Mac OS X, everything is ready on your system. If you are a Windows user, you can download the installation file from the Python home page:
 

@@ -93,6 +93,7 @@ You are able to do the following:
 - [Overview of Annotations](/pdf/net/overview-of-annotations/) - learn which types of annotations are defined by the PDF specification, and what Aspose.PDF supports.
 - [Add, Delete and Get Annotation](/pdf/net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
 - [Import and export annotation with XFDF format](/pdf/net/import-export-xfdf/) - Aspose.PDF library provided methods to import and export annotations data to XFDF files.
+- [Import FDF format annotations to PDF](/pdf/net/import-fdf/) - Aspose.PDF library provided method to import FDF format annotations to PDF files.
 
 <script type="application/ld+json">
 {
