@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - develop-deploy-test
-#    paths-ignore:
-#        '.github/**'
+    paths-ignore:
+        '.github/**'
 jobs:
   job-one:
     name: Deploy
