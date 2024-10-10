@@ -17,11 +17,13 @@ PDF layers allow a PDF document to contain different sets of content that can be
 
 With Aspose.PDF for .NET you can open a PDF, lock a specific layer on the first page, and save the document with the changes.
 
-Since the 24.5 release, this feature has been implemented. There are two new methods and one property was added:
+Since the 24.5 release, this feature has been implemented. 
 
-Layer.Lock(); -  Locks the layer.
-Layer.Unlock(); - Unlocks the layer.
-Layer.Locked; - Property, indicating the layer locked state.
+There are two new methods and one property was added:
+
+- Layer.Lock(); -  Locks the layer.
+- Layer.Unlock(); - Unlocks the layer.
+- Layer.Locked; - Property, indicating the layer locked state.
 
 ```cs
 
@@ -48,6 +50,21 @@ To create a new PDF from a layer, the following code snippet can be used:
     foreach (var layer in layers)
     {
         layer.Save(outputPath);
+    }
+```
+
+Since the 24.9 release, this feature has been updated.
+
+It is possible to extract PDF layer elements and save them into a new PDF file stream:
+
+```cs
+
+    var document = new Document(inputPath);
+    var layers = document.Pages[1].Layers;
+
+    foreach (var layer in layers)
+    {
+        Layer.Save(Stream outputStream);
     }
 ```
 
