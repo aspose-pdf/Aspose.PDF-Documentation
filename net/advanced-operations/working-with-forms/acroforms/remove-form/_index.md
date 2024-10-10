@@ -59,6 +59,7 @@ The Aspose.PDF library provides two ways to remove such forms from PDFs:
 
     document.Save(output);
 ```
+Method 2:
 
 ```cs
 
