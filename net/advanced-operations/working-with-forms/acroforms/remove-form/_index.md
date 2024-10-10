@@ -4,7 +4,7 @@ linktitle: Delete Forms
 type: docs
 weight: 70
 url: /net/remove-form/
-keywords: delete form from pdf c#
+keywords: remove form from pdf c#
 description: Remove Text based on subtype/form with Aspose.PDF for .NET library. Remove all forms from the PDF.
 lastmod: "2024-09-17"
 sitemap:
@@ -59,6 +59,7 @@ The Aspose.PDF library provides two ways to remove such forms from PDFs:
 
     document.Save(output);
 ```
+
 Method 2:
 
 ```cs
