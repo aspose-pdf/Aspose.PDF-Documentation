@@ -179,6 +179,66 @@ Steps to sign PDF:
     }
 ```
 
+## Sign a PDF with HASH signing function
+
+Using a custom hash signing function, the signing authority can implement specific cryptographic standards or internal security policies that go beyond standard signing methods, ensuring the document's integrity. This approach helps verify that the document has not been altered since the signature was applied and provides a legally binding digital signature with verifiable proof of the signer's identity using the PFX certificate.
+
+This code snippet demonstrates digitally signing a PDF document using a PFX (PKCS#12) certificate with a custom hash signing function in C#.
+
+Let’s take a closer look at the DPF signing process:
+
+1. Define File Paths and Certificate Information:
+
+- inputPdf: The path to the input PDF document that needs to be signed.
+- inputP12: The path to the .p12 (PFX) certificate file used for signing.
+- inputPfxPassword: The password for the PFX certificate.
+- outputPdf: The path where the signed PDF will be saved.
+
+2. Signature Process:
+
+- A 'PdfFileSignature' object is created and bound to the input PDF.
+- A 'PKCS7' object is initialized using the PFX certificate and its password. The 'CustomSignHash' method is assigned as the custom hash signing function.
+- The Sign method is called, specifying the page number (1 in this case), signature details (reason, cont, loc), and the position (a rectangle with coordinates (0, 0, 500, 500)) for the signature.
+- The signed PDF is then saved to the specified output path.
+
+3. Custom Hash Signing:
+
+- The 'CustomSignHash' method accepts a byte array signableHash (the hash to be signed).
+- It loads the same PFX certificate and retrieves its private key.
+- The private key is used to sign the hash using the 'RSACryptoServiceProvider' and the SHA-1 algorithm.
+- The signed data (byte array) is returned to be applied to the PDF signature.
+
+```cs
+
+    public void PDFNET_111()
+    {
+        var inputPdf = "111.pdf";
+        var inputP12 = "111.p12";
+        var inputPfxPassword = "123456";
+        var outputPdf = "111_out.pdf";
+        using (var sign = new PdfFileSignature())
+        {
+            sign.BindPdf(inputPdf);
+            var pkcs7 = new PKCS7(inputP12, inputPfxPassword);
+            pkcs7.CustomSignHash = CustomSignHash;
+            sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
+            sign.Save(outputPdf);
+        }
+    }
+
+    private byte[] CustomSignHash(byte[] signableHash)
+    {
+        var inputP12 = "111.p12";
+        var inputPfxPassword = "123456";
+        X509Certificate2 signerCert = new X509Certificate2(inputP12, inputPfxPassword, X509KeyStorageFlags.Exportable);
+        RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+        var xmlString = signerCert.PrivateKey.ToXmlString(true);
+        rsaCSP.FromXmlString(xmlString);
+        byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+        return signedData;
+    }
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",

@@ -472,6 +472,7 @@ page.Paragraphs.Add(text);
 // Save resultant PDF file
 pdfDocument.Save(dataDir + "TexttoPDF_out.pdf");
 ```
+
 ### Convert pre-formatted text file to PDF
 
 Converting pre-formatted text is like plain text but you need to make some additional actions such as setting margins, font type and size. Obviously that font should be monospace (for example Courier New).
@@ -679,4 +680,18 @@ public static void ConvertTeXtoPDF()
     // Save the output in PDF file
     pdfDocument.Save(_dataDir + "TeXToPDF_out.pdf");
 }
+```
+
+## Convert OFD to PDF
+
+OFD format refers to "Open Fixed-layout Document," established as China's national standard for electronic file storage,  used as an alternative to the popular PDF format. It supports fixed-layout documents, ensuring consistent display across different platforms. OFD files are utilized for various purposes, including digital documents and business applications.
+
+Aspose.PDF for .NET supports the feature to convert OFD files to PDF format and in order to accomplish this requirement, Aspose.Pdf namespace has a class named [OfdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/ofdloadoptions/) which provides the capabilities to load OFD files and render the output in PDF format using [Document class](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+
+The following code snippet shows the process of converting OFD file to PDF format with C#.
+
+```csharp
+
+    var document = new Document("test.ofd", new OfdLoadOptions());
+    document.Save("test.pdf");
 ```

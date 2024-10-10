@@ -358,6 +358,33 @@ doc.Pages[1].Paragraphs.Add(floatBox2);
 doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
 ```
 
+## How to remove hidden text from a PDF file
+
+First, the code snippet creates a Document object from a file. Then, it adds a TextFragmentAbsorber to find and edit text. It then checks for hidden text and deletes it. Finally, it saves the updated document.
+
+This method keeps visible text intact and preserves the layout.
+
+```cs
+
+    var document = new Document(inputFile);
+    var textAbsorber = new TextFragmentAbsorber();
+
+    // This option can be used to prevent other text fragments from moving after hidden text replacement.
+    textAbsorber.TextReplaceOptions = new TextReplaceOptions(TextReplaceOptions.ReplaceAdjustment.None);
+
+    document.Pages.Accept(textAbsorber);
+
+    foreach (var fragment in textAbsorber.TextFragments)
+    {
+        if (fragment.TextState.Invisible)
+        {
+            fragment.Text = "";
+        }
+    }
+
+    document.Save(outputFile);
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
