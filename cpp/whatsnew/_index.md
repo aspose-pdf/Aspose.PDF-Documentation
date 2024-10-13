@@ -13,15 +13,49 @@ lastmod: "2021-12-22"
 
 ## What's new in Aspose.PDF 24.8
 
-Ability to add SVG images to a page.
+Ability to add SVG images to a page:
+
+```cpp
+
+    void add_svg()
+    {
+        auto doc = MakeObject<Document>();
+        auto page = doc->get_Pages()->Add();
+        page->AddImage(u"example.svg", MakeObject<Aspose::Pdf::Rectangle>(100, 100, 400, 400));
+        doc->Save(u"example.pdf");
+    }
+```
 
 ## What's new in Aspose.PDF 24.4
 
-Fixed an issue with loading SVG images.
+Fixed an issue with loading SVG images:
+
+```cpp
+
+    void load_svg()
+    {
+        auto doc = MakeObject<Document>(u"example.svg", MakeObject<SvgLoadOptions>());
+        doc->Save(u"example.pdf");
+    }
+```
 
 ## What's new in Aspose.PDF 24.3
 
-Fixed memory leaks while converting PDF documents to other formats.
+Converting PDF documents to TIFF format:
+
+```cpp
+
+    {
+        auto doc = MakeObject<Document>(u"example.pdf");
+        auto device = MakeObject<TiffDevice>();
+        auto settings = device->get_Settings();
+        settings->set_SkipBlankPages(true);
+        settings->set_Depth(ColorDepth::Format8bpp);
+
+        auto stream = MakeObject<FileStream>(u"example.tiff", FileMode::Create, FileAccess::Write);
+        device->Process(doc, 1, doc->get_Pages()->get_Count(), stream);
+    }
+```
 
 ## What's new in Aspose.PDF 24.2
 

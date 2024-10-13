@@ -1,25 +1,22 @@
 ---
-title: Working with PDF Documents using C#
-linktitle: Working with Documents
+title: How to Merge PDF using C#
+linktitle: Merge PDF files
 type: docs
-weight: 10
-url: /net/working-with-documents/
-description: This article describes to you what manipulations can be done with the document with Aspose.PDF library.
+weight: 50
+url: /net/merge-pdf-documents/
+keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
+description: This page explain how to merge PDF documents into a single PDF file with C# or VB.NET.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-aliases:
-    - /net/working-with-document/
-    - /net/working-with-document-facades/
-    - /net/create-document/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Working with PDF Documents using C#",
-    "alternativeHeadline": "Manipulating PDF Documents",
+    "headline": "How to Merge PDF using C#",
+    "alternativeHeadline": "Combine PDF documents",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -27,9 +24,9 @@ aliases:
         "familyName": "Holub",
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf documents",
-    "wordcount": "302",
+    "genre": "pdf document manipulation",
+    "keywords": "pdf, c#, merge pdf, concatenate, combine pdf",
+    "wordcount": "212",
     "proficiencyLevel":"Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,35 +67,62 @@ aliases:
             }
         ]
     },
-    "url": "/net/working-with-documents/",
+    "url": "https://docs.aspose.com/pdf/net/merge-pdf-documents/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/working-with-documents/"
+        "@id": "https://docs.aspose.com/pdf/net/merge-pdf-documents/"
     },
     "dateModified": "2022-02-04",
-    "description": "This article describes to you what manipulations can be done with the document with Aspose.PDF library."
+    "description": "This page explain how to merge PDF documents into a single PDF file with C# or VB.NET."
 }
 </script>
 
-PDF stands for the Portable Document Format, used to display documents in an electronic form independent of the software, hardware, or operating system they are viewed on.
+## Merge or combine multiple PDF into single PDF in C#
 
-The PDF is an open standard, maintained by the International Organisation for Standardisation (ISO) today.
+Merging PDF in C# is not straightforward task without using 3rd party library.
+This article shows how to merge multiple PDF files into a single PDF document using Aspose.PDF for .NET. The example is written in C# but the API can be used in other .NET programming languages as well such as VB.NET. PDF files are merged such that the first one is joined at the end of the other document.
 
-The original goal was to preserve and protect the content and layout of a document - no matter what platform or computer program it is viewed on. This is why PDFs are hard to edit and sometimes even extracting information from them is a challenge.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-But **Aspose.PDF for .NET** can help you cope with most of the tasks that arise when working with a PDF document.
+## Merge PDF Files using C# and DOM
 
-You are able to do the following:
+To concatenate two PDF files:
 
-- [Formatting PDF Document](/pdf/net/formatting-pdf-document/) - create a document, get and set document properties, embedding fonts, and other operations with PDF files. 
-- [Manipulate PDF Document](/pdf/net/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.
-- [Optimize PDF](/pdf/net/optimize-pdf/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
-- [Merge PDF](/pdf/net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using C#.
-- [Split PDF](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications.
-- [Concatenate PDF files in folder](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - concatenate all PDF files in Particular folder using PdfFileEditor class.
-- [Concatenate multiple PDF files using MemoryStreams](/pdf/net/concatenate-pdf-documents/) - you will learn how to concatenate multiple PDF files using MemoryStreams with C#.
-- [Working with Headings](/pdf/net/working-with-headings/) - you can create numbering in heading your PDF document with C#.
-- [Generate Crash Reports](/pdf/net/generate-crash-reports/) - generate crash reports using C#.
+1. Create two [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)  objects, each containing one of the input PDF files.
+1. Then call the [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection's Add method for the Document object you want to add the other PDF file to.
+1. Pass the PageCollection collection of the second Document object to the first PageCollection collection's Add method.
+1. Finally, save the output PDF file using the [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
+
+The following code snippet shows how to concatenate PDF files.
+
+```csharp
+// The path to the documents directory.
+string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+// Open first document
+Document pdfDocument1 = new Document(dataDir + "Concat1.pdf");
+// Open second document
+Document pdfDocument2 = new Document(dataDir + "Concat2.pdf");
+
+// Add pages of second document to the first
+pdfDocument1.Pages.Add(pdfDocument2.Pages);
+
+dataDir = dataDir + "ConcatenatePdfFiles_out.pdf";
+// Save concatenated output file
+pdfDocument1.Save(dataDir);
+```
+
+## Live Example
+
+[Aspose.PDF Merger](https://products.aspose.app/pdf/merger) is an online free web application that allows you to investigate how presentation merging functionality works.
+
+[![Aspose.PDF Merger](merger.png)](https://products.aspose.app/pdf/merger)
+
+## See also
+
+- [Split PDF using DOM](https://docs.aspose.com/pdf/net/split-pdf-document/)
+- [Concatenate PDF documents using Facades](https://docs.aspose.com/pdf/net/concatenate-pdf-documents/)
+- [Split PDF using Facades](https://docs.aspose.com/pdf/net/split-pdf-pages/)
 
 <script type="application/ld+json">
 {
