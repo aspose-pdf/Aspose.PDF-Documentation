@@ -21,7 +21,19 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-Aspose.PDF is a .NET component built to allow developers to create PDF documents, whether simple or complex, on the fly programmatically. Aspose.PDF for .NET allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. Moreover, it is also possible to compress PDF documents. Aspose.PDF for .NET provides excellent security features to develop secure PDF documents. And the most distinct feature of Aspose.PDF for .NET is that it supports the creation of PDF documents through both an API and from XML templates.
+Aspose.PDF is a .NET class library that allows developers to create PDF documents, whether simple or complex, on the fly programmatically. Aspose.PDF for .NET allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. Moreover, it is also possible to compress PDF documents. The product adheres all PDF standards including ISO 32000-1 (PDF 1.7), ISO 32000-2 (PDF 2.0)
+and a lot of extensions like PDF/A, PDF/UA, PDF/X, PDF/E.
+
+Aspose.PDF for .NET provides following key features:
+
+- Convert a document from HTML, Doc/Docx, Pptx, Markdown, Json, Jpeg and others
+- Supports with various AI providers with the ability to load data from PDF documents
+- Supports the creation of PDF documents through both an API and from JSOM and XML files
+- Excellent certificate-based security and password protection features to develop secure PDF documents
+- Compatible with robust digital signatures (including PAdES)
+- PDF Form creation (interactive forms, AcroForms, dynamic XFA forms)
+
+and many more.
 
 {{% /alert %}}
 
