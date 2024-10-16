@@ -19,10 +19,10 @@ The **Aspose.PDF for .NET** is a very powerful comprehensive product which can b
 - Best choice for projects requiring **extensive format conversions** (Office documents, HTML, images, text). It offers **high-quality conversion** options in both directions (to and from PDF).
 - You require advanced features like **OCR**, **form handling**, or **digital signatures**.
 - Best if you need extensive support for PDF/A creation, validation, and conversion. Ideal for enterprise-level applications requiring strict compliance with PDF/A standards for long-term archival.
--  **Cross-platform** compatibility is a priority, and you're targeting **Windows, macOS, or Linux**.
--  You want an easy-to-use, developer-friendly API for quick PDF generation.
--  Regular monthly updates make it ideal for projects that require constant improvements, new features, and up-to-date compliance with PDF standards.
--  Enterprise-level reliability, performance, and legal compliance are important to you.
+- **Cross-platform** compatibility is a priority, and you're targeting **Windows, macOS, or Linux**.
+- You want an easy-to-use, developer-friendly API for quick PDF generation.
+- Regular monthly updates make it ideal for projects that require constant improvements, new features, and up-to-date compliance with PDF standards.
+- Enterprise-level reliability, performance, and legal compliance are important to you.
 
 ### Quick Overview
 
@@ -39,85 +39,383 @@ The **Aspose.PDF for .NET** is a very powerful comprehensive product which can b
 | **.NET Support** | All versions | All versions | All versions | .NET 6+ | .NET 6+ |
 
 <details>
-<summary>**Core Features**</summary>
+<summary><strong>Core Features</strong></summary>
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th>Feature</th>
+<th><strong>Aspose.PDF for .NET</strong></th>
+<th><strong>IronPDF</strong></th>
+<th><strong>iText</strong></th>
+<th><strong>PdfSharp</strong></th>
+<th><strong>QuestPDF</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creation</strong></td>
+<td>Advanced PDF creation from scratch (text, images, tables, graphics)</td>
+<td>Primarily HTML-to-PDF conversion, some basic PDF creation</td>
+<td>Powerful for creating PDFs programmatically</td>
+<td>Basic PDF creation from text and images</td>
+<td>Fluent API for programmatic PDF creation (content-focused)</td>
+</tr>
+<tr>
+<td><strong>Editing</strong></td>
+<td>Full support (adding/removing pages, annotations, editing metadata)</td>
+<td>Basic editing (content addition/removal, manipulation)</td>
+<td>Comprehensive editing features (adding/removing content, pages, annotations)</td>
+<td>Minimal manipulation features</td>
+<td>Minimal manipulation (focused on layout creation)</td>
+</tr>
+<tr>
+<td><strong>Text and Image Extraction</strong></td>
+<td>Extracts text, images, and metadata from PDFs</td>
+<td>Can extract text and images</td>
+<td>Full support for text and image extraction</td>
+<td>Basic text extraction, no image extraction</td>
+<td>No extraction capabilities</td>
+</tr>
+<tr>
+<td><strong>Form</strong></td>
+<td>Advanced form filling, creation, and extraction</td>
+<td>Basic form handling (filling and reading forms)</td>
+<td>Extensive support for form filling, creation, and extraction</td>
+<td>No form support</td>
+<td>No form support</td>
+</tr>
+<tr>
+<td><strong>Merging/Splitting PDFs</strong></td>
+<td>Supports merging multiple PDFs, splitting large documents</td>
+<td>Basic merging/splitting capabilities</td>
+<td>Supports advanced merging, splitting, and stamping features</td>
+<td>Supports merging and splitting PDFs</td>
+<td>Basic merging, limited splitting</td>
+</tr>
+</tbody>
+</table>
 
-| Feature | **Aspose.PDF for .NET** | **IronPDF** | **iText** | **PdfSharp** | **QuestPDF** |
-|----------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------|
-| **Creation** | Advanced PDF creation from scratch (text, images, tables, graphics) | Primarily HTML-to-PDF conversion, some basic PDF creation | Powerful for creating PDFs programmatically | Basic PDF creation from text and images | Fluent API for programmatic PDF creation (content-focused) |
-| **Editing** | Full support (adding/removing pages, annotations, editing metadata) | Basic editing (content addition/removal, manipulation) | Comprehensive editing features (adding/removing content, pages, annotations) | Minimal manipulation features | Minimal manipulation (focused on layout creation) |
-| **Text and Image Extraction** | Extracts text, images, and metadata from PDFs | Can extract text and images | Full support for text and image extraction | Basic text extraction, no image extraction | No extraction capabilities |
-| **Form** | Advanced form filling, creation, and extraction | Basic form handling (filling and reading forms) | Extensive support for form filling, creation, and extraction | No form support | No form support |
-| **Merging/Splitting PDFs** | Supports merging multiple PDFs, splitting large documents | Basic merging/splitting capabilities | Supports advanced merging, splitting, and stamping features | Supports merging and splitting PDFs | Basic merging, limited splitting |
 </details>
 
 <details>
-<summary>**Rendering and Conversion**</summary>
+<summary><strong>Rendering and Conversion</strong></summary>
 
-| Feature | **Aspose.PDF for .NET** | **IronPDF** | **iText** | **PdfSharp** | **QuestPDF** |
-|----------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------|
-| **HTML to PDF Conversion** | Strong HTML to PDF | Strong support for HTML-to-PDF conversion (CSS and JavaScript supported) | Advanced HTML-to-PDF with CSS support via iText 7's `pdfHTML` add-on | No built-in support | No built-in support |
-| **PDF to HTML Conversion** | Supports PDF to HTML and other formats (XML, EPUB) | PDF to HTML supported | Full PDF to HTML conversion with text extraction | No built-in support | No built-in support |
-| **PDF to Image Conversion** | Converts PDFs to image formats like PNG, JPEG, TIFF | Converts PDFs to images | Converts PDFs to images (supports rendering individual pages) | No image conversion support | No image conversion support |
-| **Image to PDF Conversion** | Supports converting various image formats to PDF | Image to PDF conversion supported | Image to PDF supported | Supports image insertion but no direct conversion | Supports image insertion but no direct conversion |
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th>Feature</th>
+<th><strong>Aspose.PDF for .NET</strong></th>
+<th><strong>IronPDF</strong></th>
+<th><strong>iText</strong></th>
+<th><strong>PdfSharp</strong></th>
+<th><strong>QuestPDF</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HTML to PDF Conversion</strong></td>
+<td>Strong HTML to PDF</td>
+<td>Strong support for HTML-to-PDF conversion (CSS and JavaScript supported)</td>
+<td>Advanced HTML-to-PDF with CSS support via iText 7&#39;s <code>pdfHTML</code> add-on</td>
+<td>No built-in support</td>
+<td>No built-in support</td>
+</tr>
+<tr>
+<td><strong>PDF to HTML Conversion</strong></td>
+<td>Supports PDF to HTML and other formats (XML, EPUB)</td>
+<td>PDF to HTML supported</td>
+<td>Full PDF to HTML conversion with text extraction</td>
+<td>No built-in support</td>
+<td>No built-in support</td>
+</tr>
+<tr>
+<td><strong>PDF to Image Conversion</strong></td>
+<td>Converts PDFs to image formats like PNG, JPEG, TIFF</td>
+<td>Converts PDFs to images</td>
+<td>Converts PDFs to images (supports rendering individual pages)</td>
+<td>No image conversion support</td>
+<td>No image conversion support</td>
+</tr>
+<tr>
+<td><strong>Image to PDF Conversion</strong></td>
+<td>Supports converting various image formats to PDF</td>
+<td>Image to PDF conversion supported</td>
+<td>Image to PDF supported</td>
+<td>Supports image insertion but no direct conversion</td>
+<td>Supports image insertion but no direct conversion</td>
+</tr>
+</tbody>
+</table>
+
 </details>
 
 <details>
-<summary>**Format Conversion Support**</summary>
+<summary><strong>Format Conversion Support<strong></summary>
 
-| **Library**                 | **To PDF**                                                                                                                                                                 | **From PDF**                                                                                      | **Conversion Strengths**                                                                 |
-|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| **Aspose.PDF for .NET**      | **Word**, **Excel**, **PowerPoint**, **HTML**, **Images**, **Text**, **SVG**, **EPUB**, **XPS**, **LaTeX**                                                                | **Word**, **Excel**, **PowerPoint**, **HTML**, **Images**, **SVG**, **EPUB**, **XPS**               | Extensive, high-quality format conversions both **to and from PDF**.                      |
-| **IronPDF**                  | **HTML**, **Images**, **Text**, **SVG**                                                                                                                                  | **Images**                                                                                         | Strong HTML-to-PDF conversion but limited other format support.                          |
-| **iText (iText 7)**          | **HTML** (with add-ons), **Images**, **Text**, **SVG**                                                                                                                   | **Images**, **Text**                                                                                | Strong **HTML-to-PDF** with add-ons but lacks Office format conversion.                  |
-| **PdfSharp**                 | **Images**, **Text**                                                                                                                                                     | **Images**                                                                                         | Basic image and text-to-PDF conversion only, no support for complex formats.              |
-| **QuestPDF**                 | **Custom layouts from code**                                                                                                                                             | Not supported | Excellent for **custom layout generation**, but no support for format conversions.        |
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th><strong>Library</strong></th>
+<th><strong>To PDF</strong></th>
+<th><strong>From PDF</strong></th>
+<th><strong>Conversion Strengths</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Aspose.PDF for .NET</strong></td>
+<td><strong>Word</strong>, <strong>Excel</strong>, <strong>PowerPoint</strong>, <strong>HTML</strong>, <strong>Images</strong>, <strong>Text</strong>, <strong>SVG</strong>, <strong>EPUB</strong>, <strong>XPS</strong>, <strong>LaTeX</strong></td>
+<td><strong>Word</strong>, <strong>Excel</strong>, <strong>PowerPoint</strong>, <strong>HTML</strong>, <strong>Images</strong>, <strong>SVG</strong>, <strong>EPUB</strong>, <strong>XPS</strong></td>
+<td>Extensive, high-quality format conversions both <strong>to and from PDF</strong>.</td>
+</tr>
+<tr>
+<td><strong>IronPDF</strong></td>
+<td><strong>HTML</strong>, <strong>Images</strong>, <strong>Text</strong>, <strong>SVG</strong></td>
+<td><strong>Images</strong></td>
+<td>Strong HTML-to-PDF conversion but limited other format support.</td>
+</tr>
+<tr>
+<td><strong>iText (iText 7)</strong></td>
+<td><strong>HTML</strong> (with add-ons), <strong>Images</strong>, <strong>Text</strong>, <strong>SVG</strong></td>
+<td><strong>Images</strong>, <strong>Text</strong></td>
+<td>Strong <strong>HTML-to-PDF</strong> with add-ons but lacks Office format conversion.</td>
+</tr>
+<tr>
+<td><strong>PdfSharp</strong></td>
+<td><strong>Images</strong>, <strong>Text</strong></td>
+<td><strong>Images</strong></td>
+<td>Basic image and text-to-PDF conversion only, no support for complex formats.</td>
+</tr>
+<tr>
+<td><strong>QuestPDF</strong></td>
+<td><strong>Custom layouts from code</strong></td>
+<td>Not supported</td>
+<td>Excellent for <strong>custom layout generation</strong>, but no support for format conversions.</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <details>
-<summary>**Performance**</summary>
+<summary><strong>Performance</strong></summary>
 
-| Feature | **Aspose.PDF for .NET** | **IronPDF** | **iText** | **PdfSharp** | **QuestPDF** |
-|----------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------|
-| **Speed** | Optimized for handling large PDFs and complex layouts efficiently | Fast for HTML-to-PDF conversion, less optimized for large documents | High performance for large-scale PDF creation and processing | Lightweight, fast for basic operations | Fast for layout-based content creation |
-| **Memory Usage** | Optimized for handling large PDFs | Can be memory-intensive when rendering complex HTML | Efficient for most use cases, may require memory optimization for large files | Low memory footprint, suitable for small apps | Low memory footprint, but limited to layout generation |
-| **Multithreading** | Fully supports multithreading for high-performance applications | Supports multithreading, optimized for web apps | Supports multithreading, but requires careful handling for optimal performance | Supports multithreading | No built-in multithreading support |
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th>Feature</th>
+<th><strong>Aspose.PDF for .NET</strong></th>
+<th><strong>IronPDF</strong></th>
+<th><strong>iText</strong></th>
+<th><strong>PdfSharp</strong></th>
+<th><strong>QuestPDF</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Optimized for handling large PDFs and complex layouts efficiently</td>
+<td>Fast for HTML-to-PDF conversion, less optimized for large documents</td>
+<td>High performance for large-scale PDF creation and processing</td>
+<td>Lightweight, fast for basic operations</td>
+<td>Fast for layout-based content creation</td>
+</tr>
+<tr>
+<td><strong>Memory Usage</strong></td>
+<td>Optimized for handling large PDFs</td>
+<td>Can be memory-intensive when rendering complex HTML</td>
+<td>Efficient for most use cases, may require memory optimization for large files</td>
+<td>Low memory footprint, suitable for small apps</td>
+<td>Low memory footprint, but limited to layout generation</td>
+</tr>
+<tr>
+<td><strong>Multithreading</strong></td>
+<td>Fully supports multithreading for high-performance applications</td>
+<td>Supports multithreading, optimized for web apps</td>
+<td>Supports multithreading, but requires careful handling for optimal performance</td>
+<td>Supports multithreading</td>
+<td>No built-in multithreading support</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <details>
-<summary>**Licensing and Pricing**</summary>
+<summary><strong>Licensing and Pricing</strong></summary>
 
-| Feature | **Aspose.PDF for .NET** | **IronPDF** | **iText** | **PdfSharp** | **QuestPDF** |
-|----------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------|
-| **Licensing Model** | Commercial, with flexible developer and enterprise licenses | Commercial, licensed by developer or server usage | Dual license (AGPL for open-source, commercial for proprietary use) | Open-source (MIT License) | Open-source (MIT License) |
-| **Cost** | Designed for enterprise-level features and performance | Focused on HTML-to-PDF conversion | Commercial licensing can be expensive for large-scale enterprise applications | Free | Free |
-| **Trial Version** | Free trial available with some limitations (e.g., watermarks) | Free trial available, watermarked PDFs | Free AGPL version available, with restrictions on proprietary software usage | Free | Free |
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th>Feature</th>
+<th><strong>Aspose.PDF for .NET</strong></th>
+<th><strong>IronPDF</strong></th>
+<th><strong>iText</strong></th>
+<th><strong>PdfSharp</strong></th>
+<th><strong>QuestPDF</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Licensing Model</strong></td>
+<td>Commercial, with flexible developer and enterprise licenses</td>
+<td>Commercial, licensed by developer or server usage</td>
+<td>Dual license (AGPL for open-source, commercial for proprietary use)</td>
+<td>Open-source (MIT License)</td>
+<td>Open-source (MIT License)</td>
+</tr>
+<tr>
+<td><strong>Cost</strong></td>
+<td>Designed for enterprise-level features and performance</td>
+<td>Focused on HTML-to-PDF conversion</td>
+<td>Commercial licensing can be expensive for large-scale enterprise applications</td>
+<td>Free</td>
+<td>Free</td>
+</tr>
+<tr>
+<td><strong>Trial Version</strong></td>
+<td>Free trial available with some limitations (e.g., watermarks)</td>
+<td>Free trial available, watermarked PDFs</td>
+<td>Free AGPL version available, with restrictions on proprietary software usage</td>
+<td>Free</td>
+<td>Free</td>
+</tr>
+</tbody>
+</table>
+
 </details>
 
 <details>
-<summary>**Security and Encryption**</summary>
-| Feature | **Aspose.PDF for .NET** | **IronPDF** | **iText** | **PdfSharp** | **QuestPDF** |
-|----------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------|
-| **Encryption** | Full encryption support (AES, RC4), password protection, and permissions, FIPS-compliant | Basic encryption and security options | Full encryption support (AES, RC4), password protection, and permissions | No built-in encryption | No built-in encryption |
-| **Digital Signatures** | Advanced digital signature capabilities, including PAdES and X.509 certificate support | Basic digital signature support | Comprehensive digital signature capabilities (including PKCS#7, PAdES) | No built-in support | No built-in support |
-| **Redaction** | Allows redacting sensitive content in PDFs | No redaction capabilities | Supports content redaction in PDF documents | No built-in support | No built-in support |
+<summary><strong>Security and Encryption</strong></summary>
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th>Feature</th>
+<th><strong>Aspose.PDF for .NET</strong></th>
+<th><strong>IronPDF</strong></th>
+<th><strong>iText</strong></th>
+<th><strong>PdfSharp</strong></th>
+<th><strong>QuestPDF</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Encryption</strong></td>
+<td>Full encryption support (AES, RC4), password protection, and permissions, FIPS-compliant</td>
+<td>Basic encryption and security options</td>
+<td>Full encryption support (AES, RC4), password protection, and permissions</td>
+<td>No built-in encryption</td>
+<td>No built-in encryption</td>
+</tr>
+<tr>
+<td><strong>Digital Signatures</strong></td>
+<td>Advanced digital signature capabilities, including PAdES and X.509 certificate support</td>
+<td>Basic digital signature support</td>
+<td>Comprehensive digital signature capabilities (including PKCS#7, PAdES)</td>
+<td>No built-in support</td>
+<td>No built-in support</td>
+</tr>
+<tr>
+<td><strong>Redaction</strong></td>
+<td>Allows redacting sensitive content in PDFs</td>
+<td>No redaction capabilities</td>
+<td>Supports content redaction in PDF documents</td>
+<td>No built-in support</td>
+<td>No built-in support</td>
+</tr>
+</tbody>
+</table>
+
 </details>
 
 <details>
-<summary>**PDF/A**</summary>
-| Feature                   | **Aspose.PDF for .NET**                                                                 | **IronPDF**                                             | **iText**                                              | **PdfSharp**                                         | **QuestPDF**                                        |
-|----------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|
-| **PDF/A Creation**         | Full support for **PDF/A-1**, **PDF/A-2**, **PDF/A-3**                                   | No native support                                        | Full support for **PDF/A-1**, **PDF/A-2**, **PDF/A-3** | No native support                                    | No native support                                    |
-| **PDF/A Validation**       | Yes, with detailed **compliance checks**                                                 | No native support                                        | Yes, full validation support                           | No native support                                    | No native support                                    |
-| **PDF to PDF/A Conversion** | Yes, can **convert standard PDFs to PDF/A** formats                                      | No native support                                        | Yes, can convert **existing PDFs to PDF/A**            | No native support                                    | No native support                                    |
-| **Customization**          | Full control over PDF/A **compliance levels**                                            | No customization for PDF/A                               | Full customization for PDF/A compliance                | No customization for PDF/A                           | No customization for PDF/A                           |
+<summary><strong>PDF/A</strong></summary>
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th>Feature</th>
+<th><strong>Aspose.PDF for .NET</strong></th>
+<th><strong>IronPDF</strong></th>
+<th><strong>iText</strong></th>
+<th><strong>PdfSharp</strong></th>
+<th><strong>QuestPDF</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PDF/A Creation</strong></td>
+<td>Full support for <strong>PDF/A-1</strong>, <strong>PDF/A-2</strong>, <strong>PDF/A-3</strong></td>
+<td>No native support</td>
+<td>Full support for <strong>PDF/A-1</strong>, <strong>PDF/A-2</strong>, <strong>PDF/A-3</strong></td>
+<td>No native support</td>
+<td>No native support</td>
+</tr>
+<tr>
+<td><strong>PDF/A Validation</strong></td>
+<td>Yes, with detailed <strong>compliance checks</strong></td>
+<td>No native support</td>
+<td>Yes, full validation support</td>
+<td>No native support</td>
+<td>No native support</td>
+</tr>
+<tr>
+<td><strong>PDF to PDF/A Conversion</strong></td>
+<td>Yes, can <strong>convert standard PDFs to PDF/A</strong> formats</td>
+<td>No native support</td>
+<td>Yes, can convert <strong>existing PDFs to PDF/A</strong></td>
+<td>No native support</td>
+<td>No native support</td>
+</tr>
+<tr>
+<td><strong>Customization</strong></td>
+<td>Full control over PDF/A <strong>compliance levels</strong></td>
+<td>No customization for PDF/A</td>
+<td>Full customization for PDF/A compliance</td>
+<td>No customization for PDF/A</td>
+<td>No customization for PDF/A</td>
+</tr>
+</tbody>
+</table>
+
 </details>
 
 <details>
-<summary>**Extra**</summary>
+<summary><strong>Extra</strong></summary>
 
-| Feature | **Aspose.PDF for .NET** | **IronPDF** | **iText** | **PdfSharp** | **QuestPDF** |
-|----------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------|
-| **OCR** | Built-in OCR for scanned PDFs | No OCR support | No native OCR support (third-party integration available) | No OCR support | No OCR support |
-| **Annotations** | Full support for PDF annotations (comments, highlights, form fields, etc.) | Supports basic annotations | Full support for adding and extracting annotations | No built-in support | No built-in support |
-| **Complex Layout Handling**| Excellent for handling complex PDFs with multi-column layouts, tables, graphics | Handles complex HTML layouts well | Handles complex layouts well, especially for structured content | Limited layout capabilities | Best suited for custom, structured PDF layouts |
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th>Feature</th>
+<th><strong>Aspose.PDF for .NET</strong></th>
+<th><strong>IronPDF</strong></th>
+<th><strong>iText</strong></th>
+<th><strong>PdfSharp</strong></th>
+<th><strong>QuestPDF</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OCR</strong></td>
+<td>Built-in OCR for scanned PDFs</td>
+<td>No OCR support</td>
+<td>No native OCR support (third-party integration available)</td>
+<td>No OCR support</td>
+<td>No OCR support</td>
+</tr>
+<tr>
+<td><strong>Annotations</strong></td>
+<td>Full support for PDF annotations (comments, highlights, form fields, etc.)</td>
+<td>Supports basic annotations</td>
+<td>Full support for adding and extracting annotations</td>
+<td>No built-in support</td>
+<td>No built-in support</td>
+</tr>
+<tr>
+<td><strong>Complex Layout Handling</strong></td>
+<td>Excellent for handling complex PDFs with multi-column layouts, tables, graphics</td>
+<td>Handles complex HTML layouts well</td>
+<td>Handles complex layouts well, especially for structured content</td>
+<td>Limited layout capabilities</td>
+<td>Best suited for custom, structured PDF layouts</td>
+</tr>
+</tbody>
+</table>
 </details>
