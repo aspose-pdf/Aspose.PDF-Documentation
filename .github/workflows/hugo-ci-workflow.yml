@@ -2,36 +2,43 @@ name: Hugo-CI
 on:
   push:
     branches:
-      - master
+      - develop
     paths-ignore:
         '.github/**'
-
 jobs:
   job-one:
     name: Deploy
     runs-on: [self-hosted, linux, x64, dev4-pdf]
     steps:
-      - name: hugo build
+      - name: Hugo build
         run: |
-          cd aspose-pdf-docs
-          git clone https://github.com/aspose-pdf/Aspose.PDF-Documentation.git || (cd Aspose.PDF-Documentation && git pull)
-          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git pull)
+          sudo rm -rf aspose-pdf-docs
+          mkdir aspose-pdf-docs && cd aspose-pdf-docs
+          git clone --depth 1 --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git 
+          git clone --depth 1 --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git lutsk-aspose-prototype/themes/lutsk-aspose-theme 
+          git clone --depth 1 --single-branch --branch develop https://github.com/aspose-pdf/Aspose.PDF-Documentation.git lutsk-aspose-prototype/content/ 
           cd lutsk-aspose-prototype
-          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git themes/lutsk-aspose-theme || (cd themes/lutsk-aspose-theme && git pull)
           sudo npm install -D --save autoprefixer
           sudo npm install -D --save postcss-cli
-          rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
+          sudo apt install jq -y
           rm -rf public
-          hugo --minify --baseURL https://docs.aspose.com/pdf
-          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
-      - name: hugo deploy
-        uses: appleboy/ssh-action@master
+          hugo --minify --baseURL https://docs-qa.aspose.com/pdf
+          
+      - name: AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSHKEY }}
-          port: ${{ secrets.SSHPORT }}
-          script: |
-            sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
-            sudo chmod -R 755 ${{ secrets.DEPLOYPATH }}
-            sudo nginx -s reload
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-west-2
+          
+      - name: Deploy to S3
+        run: aws s3 sync --quiet aspose-pdf-docs/lutsk-aspose-prototype/public/ s3://docs-qa.aspose.com/pdf/
+
+      - name: Invalidate CloudFront
+        uses: chetan/invalidate-cloudfront-action@v2
+        env:
+          PATHS: '/pdf/*'
+          AWS_REGION: 'us-west-2'
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}        
+          DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
