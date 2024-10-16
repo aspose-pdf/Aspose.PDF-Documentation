@@ -24,19 +24,96 @@ The **Aspose.PDF for .NET** is a very powerful comprehensive product which can b
 - Regular monthly updates make it ideal for projects that require constant improvements, new features, and up-to-date compliance with PDF standards.
 - Enterprise-level reliability, performance, and legal compliance are important to you.
 
-### Quick Overview
+## Quick Overview
 
-| Feature | Aspose.PDF | IronPDF | iText | PdfSharp | QuestPDF |
-|---------|------------|----------|--------|-----------|-----------|
-| **License Type** | Commercial | Commercial | Commercial/AGPL | MIT | MIT |
-| **Learning Curve** | Easy | Easy | Moderate | Moderate | Easy |
-| **Documentation** | Excellent | Good | Excellent | Good | Good |
-| **Community Size** | Large | Medium | Large | Medium | Growing |
-| **Performance** | Excellent | Good | Excellent | Good | Good |
-| **AI built-in client** | Yes | No | No | No | No |
-| **Regular updates** | Monthly | Quarterly | Major releases once or twice a year, minor updates every few months | Infrequent updates (every few years) | Bi-monthly updates (every 1-2 months) |
-| **Cross-Platform** | Cross-platform (Windows, macOS, Linux) | Primarily Windows-focused, Linux support available | Cross-platform (Windows, macOS, Linux) | Windows, limited cross-platform via .NET Core | Cross-platform (Windows, macOS, Linux) |
-| **.NET Support** | All versions | All versions | All versions | .NET 6+ | .NET 6+ |
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th>Feature</th>
+<th>Aspose.PDF</th>
+<th>IronPDF</th>
+<th>iText</th>
+<th>PdfSharp</th>
+<th>QuestPDF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>License Type</strong></td>
+<td>Commercial</td>
+<td>Commercial</td>
+<td>Commercial/AGPL</td>
+<td>MIT</td>
+<td>MIT</td>
+</tr>
+<tr>
+<td><strong>Learning Curve</strong></td>
+<td>Easy</td>
+<td>Easy</td>
+<td>Moderate</td>
+<td>Moderate</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td><strong>Documentation</strong></td>
+<td>Excellent</td>
+<td>Good</td>
+<td>Excellent</td>
+<td>Good</td>
+<td>Good</td>
+</tr>
+<tr>
+<td><strong>Community Size</strong></td>
+<td>Large</td>
+<td>Medium</td>
+<td>Large</td>
+<td>Medium</td>
+<td>Growing</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>Excellent</td>
+<td>Good</td>
+<td>Excellent</td>
+<td>Good</td>
+<td>Good</td>
+</tr>
+<tr>
+<td><strong>AI built-in client</strong></td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Regular updates</strong></td>
+<td>Monthly</td>
+<td>Quarterly</td>
+<td>Major releases once or twice a year, minor updates every few months</td>
+<td>Infrequent updates (every few years)</td>
+<td>Bi-monthly updates (every 1-2 months)</td>
+</tr>
+<tr>
+<td><strong>Cross-Platform</strong></td>
+<td>Cross-platform (Windows, macOS, Linux)</td>
+<td>Primarily Windows-focused, Linux support available</td>
+<td>Cross-platform (Windows, macOS, Linux)</td>
+<td>Windows, limited cross-platform via .NET Core</td>
+<td>Cross-platform (Windows, macOS, Linux)</td>
+</tr>
+<tr>
+<td><strong>.NET Support</strong></td>
+<td>All versions</td>
+<td>All versions</td>
+<td>All versions</td>
+<td>.NET 6+</td>
+<td>.NET 6+</td>
+</tr>
+</tbody>
+</table>
+
+## Deep dive
 
 <details>
 <summary><strong>Core Features</strong></summary>
