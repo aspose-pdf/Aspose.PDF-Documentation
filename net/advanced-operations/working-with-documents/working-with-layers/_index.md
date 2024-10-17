@@ -53,7 +53,7 @@ To create a new PDF from a layer, the following code snippet can be used:
     }
 ```
 
-Since the 24.9 release, this feature has been updated.
+The 24.9 release has resulted in an update to this feature.
 
 It is possible to extract PDF layer elements and save them into a new PDF file stream:
 
