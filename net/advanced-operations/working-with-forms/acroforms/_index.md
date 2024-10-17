@@ -103,6 +103,7 @@ For more detailed learning of the capabilities of the Java library, see the foll
 - [Modifing AcroForm](/pdf/net/modifing-form) - get or set FieldLimit, set form field font and etc.
 - [Posting AcroForm Data](/pdf/net/posting-acroform-data/) -  import and export form data to and XML file.
 - [Import and Export Data](/pdf/net/import-and-export-data/) -  import and export data using Form Class.
+- [Remove Forms from PDF](/pdf/net/remove-form/) -  remove Text based on subtype/form, delete all forms.
 
 <script type="application/ld+json">
 {
