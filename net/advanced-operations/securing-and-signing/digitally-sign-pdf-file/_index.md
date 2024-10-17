@@ -210,22 +210,19 @@ Let’s take a closer look at the DPF signing process:
 
 ```cs
 
-    public void PDFNET_111()
+    var inputPdf = "111.pdf";
+    var inputP12 = "111.p12";
+    var inputPfxPassword = "123456";
+    var outputPdf = "111_out.pdf";
+    using (var sign = new PdfFileSignature())
     {
-        var inputPdf = "111.pdf";
-        var inputP12 = "111.p12";
-        var inputPfxPassword = "123456";
-        var outputPdf = "111_out.pdf";
-        using (var sign = new PdfFileSignature())
-        {
-            sign.BindPdf(inputPdf);
-            var pkcs7 = new PKCS7(inputP12, inputPfxPassword);
-            pkcs7.CustomSignHash = CustomSignHash;
-            sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
-            sign.Save(outputPdf);
-        }
+        sign.BindPdf(inputPdf);
+        var pkcs7 = new PKCS7(inputP12, inputPfxPassword);
+        pkcs7.CustomSignHash = CustomSignHash;
+        sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
+        sign.Save(outputPdf);
     }
-
+    // Custom hash signing function to generate a digital signature using SHA1 hashing algorithm.
     private byte[] CustomSignHash(byte[] signableHash)
     {
         var inputP12 = "111.p12";

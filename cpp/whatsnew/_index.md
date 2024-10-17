@@ -17,7 +17,6 @@ Ability to add SVG images to a page:
 
 ```cpp
 
-    void add_svg()
     {
         auto doc = MakeObject<Document>();
         auto page = doc->get_Pages()->Add();
@@ -32,7 +31,6 @@ Fixed an issue with loading SVG images:
 
 ```cpp
 
-    void load_svg()
     {
         auto doc = MakeObject<Document>(u"example.svg", MakeObject<SvgLoadOptions>());
         doc->Save(u"example.pdf");
@@ -45,16 +43,15 @@ Converting PDF documents to TIFF format:
 
 ```cpp
 
-    {
-        auto doc = MakeObject<Document>(u"example.pdf");
-        auto device = MakeObject<TiffDevice>();
-        auto settings = device->get_Settings();
-        settings->set_SkipBlankPages(true);
-        settings->set_Depth(ColorDepth::Format8bpp);
+    auto doc = MakeObject<Document>(u"example.pdf");
+    auto device = MakeObject<TiffDevice>();
+    auto settings = device->get_Settings();
+    settings->set_SkipBlankPages(true);
+    settings->set_Depth(ColorDepth::Format8bpp);
 
-        auto stream = MakeObject<FileStream>(u"example.tiff", FileMode::Create, FileAccess::Write);
-        device->Process(doc, 1, doc->get_Pages()->get_Count(), stream);
-    }
+    auto stream = MakeObject<FileStream>(u"example.tiff", FileMode::Create, FileAccess::Write);
+    device->Process(doc, 1, doc->get_Pages()->get_Count(), stream);
+
 ```
 
 ## What's new in Aspose.PDF 24.2
