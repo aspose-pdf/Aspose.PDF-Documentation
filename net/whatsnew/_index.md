@@ -8,8 +8,87 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2024-09-06"
+lastmod: "2024-10-18"
 ---
+
+## What's new in Aspose.PDF 24.10
+
+The Elliptic Curve Digital Signature Algorithm (ECDSA) is a modern cryptographic algorithm known for providing strong security with smaller key sizes compared to traditional algorithms. Since version 24.10, it has been possible to sign PDF documents using ECDSA, as well as verify ECDSA signatures. The following elliptic curves are supported for creating and verifying digital signatures:
+* P-256 (secp256r1)
+* P-384 (secp384r1)
+* P-521 (secp521r1)
+* brainpoolP256r1
+* brainpoolP384r1
+* brainpoolP512r1
+
+The SHA-256 hash algorithm is used for generating the signature. ECDSA signatures can be verified using the following hash algorithms: SHA-256, SHA-384, SHA-512, SHA3-256, SHA3-384, and SHA3-512.
+
+You can use your usual code to sign documents with ECDSA and to verify signatures:
+ 
+```cs
+     public void Sign(string cert, string inputPdfFile, string outFile)
+     {
+
+         using (Document document = new Document(inputPdfFile))
+         {
+             using (PdfFileSignature signature = new PdfFileSignature(document))
+             {
+                 PKCS7Detached pkcs = new PKCS7Detached(cert, "12345");
+                 signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
+                 signature.Save(outFile);
+             }
+         }
+     }
+
+    public static void Verify(string fileName)
+    {
+
+        using (Document document = new Document(fileName))
+        {
+            using (PdfFileSignature signature = new PdfFileSignature(document))
+            {
+                var sigNames = signature.GetSignNames();
+                foreach (var sigName in sigNames)
+                {
+                    bool isValid = signature.VerifySignature(sigName);
+                    Console.WriteLine("Signature '{0}' validation returns {1}", sigName, isValid);
+                }
+            }
+        }
+    }
+```
+
+Sometimes, it is necessary to crop an image before inserting it into a PDF. We have added an overloaded version of the `AddImage()` method to support adding cropped images:
+
+```cs
+
+    var imagePath = "";
+    var resultPdfPath = "";
+
+    using (Document document = new Document())
+    {
+        using (Stream imgStream = File.OpenRead(imagePath))
+        {
+            // Define the rectangle where the image will be placed on the PDF page
+            Rectangle imageRect = new Rectangle(17.62, 65.25, 602.62, 767.25);                    
+
+            // Crop the image to half its original width and height
+            var w = imageRect.Width / 2;
+            var h = imageRect.Height / 2;
+            Rectangle bbox = new Rectangle(imageRect.LLX, imageRect.LLY, imageRect.LLX + w, imageRect.LLY + h);
+
+            // Add a new page to the document
+            Page page = document.Pages.Add();
+
+            // Insert the cropped image onto the page, specifying the original position (imageRect)
+            // and the cropping area (bbox)
+            page.AddImage(imgStream, imageRect, bbox);
+        }
+
+        // Save the document to the specified file path
+        document.Save(resultPdfPath);
+    }
+```
 
 ## What's new in Aspose.PDF 24.9
 
