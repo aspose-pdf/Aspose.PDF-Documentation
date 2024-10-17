@@ -236,6 +236,94 @@ Let’s take a closer look at the DPF signing process:
     }
 ```
 
+## Signing PDF documents using ECDSA
+
+Signing PDF documents using ECDSA (Elliptic Curve Digital Signature Algorithm) involves utilizing elliptic curve cryptography to generate digital signatures. This offers high security and efficiency, especially for mobile and resource-constrained environments. This approach ensures that your PDF documents are digitally signed with the security advantages of elliptic curve cryptography.
+
+Aspose.Pdf supports ECDSA-based digital signature creation and verification.
+The following elliptic curves are supported for digital signature creation and verification:
+
+- P-256(secp256r1)
+- P-384(secp384r1)
+- P-521(secp521r1)
+- brainpoolP256r1
+- brainpoolP384r1
+- brainpoolP512r1
+
+The SHA-256 digest algorithm is used for the signature.
+
+ECDSA digital signatures with the following digest algorithms can be verified: SHA-256, SHA-384, SHA3–512, SHA3–256, SHA3–384, SHA3–512.
+
+You can check the signature and verification by creating a PFX(output.pfx) certificate in OpenSSL.
+
+```cs
+
+    openssl ecparam -genkey -name brainpoolP512r1 -out private.key
+    openssl ec -in private.key -pubout -out public.pem
+    openssl req -new -x509 -days 365 -key private.key -out certificate.crt -subj "/C=PL/ST=Silesia/L=Katowice/O=My2 Organization/CN=example2.com"
+    openssl pkcs12 -export -out output.pfx -inkey private.key -in certificate.crt
+
+```
+
+Available curve names for signature and verification in Aspose.Pdf (the list of curves in OpenSSL can be obtained with the command 'openssl ecparam -list_curves'): prime256v1, secp384r1, secp521r1, brainpoolP256r1, brainpoolP384r1, brainpoolP512r1.
+
+To sign a PDF document using ECDSA, the general steps in C# would be:
+
+1. You'll need an ECDSA certificate in PFX or P12 format. These certificates contain both the public and private keys needed for signing.
+
+1. Using an Aspose.PDF library, you bind the document to a signature handler.
+
+1. Use the ECDSA private key to sign the hash of the document content.
+
+1. Place the generated signature inside the PDF file along with metadata such as the reason for signing, location, and contact details.
+
+```cs
+
+    public void Verify(string fileName)
+    {
+        // Open the PDF document from the specified file
+        using (Document document = new Document(fileName))
+        {
+            // Create an instance of PdfFileSignature for working with signatures in the document
+            using (PdfFileSignature signature = new PdfFileSignature(document))
+            {
+                // Check if the document contains any digital signatures
+                Assert.IsTrue(signature.ContainsSignature());
+
+                // Get a list of signature names in the document
+                var sigNames = signature.GetSignNames();
+
+                // Loop through all signature names to verify each one
+                foreach (var sigName in sigNames)
+                {
+                    // Verify that the signature with the given name is valid
+                    Assert.IsTrue(signature.VerifySigned(sigName));
+                }
+            }
+        }
+    }
+
+    public void Sign(string cert, string inputPdfFile, string outFile)
+    {
+        // Open the PDF document from the specified input file
+        using (Document document = new Document(inputPdfFile))
+        {
+            // Create an instance of PdfFileSignature to sign the document
+            using (PdfFileSignature signature = new PdfFileSignature(document))
+            {
+                // Create a PKCS7Detached object using the provided certificate and password
+                PKCS7Detached pkcs = new PKCS7Detached(cert, "12345");
+
+                // Sign the first page of the document, setting the signature's appearance at the specified location
+                signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
+
+                // Save the signed document to the specified output file
+                signature.Save(outFile);
+            }
+        }
+    }
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
