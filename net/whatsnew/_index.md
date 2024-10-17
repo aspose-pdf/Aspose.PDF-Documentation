@@ -14,12 +14,12 @@ lastmod: "2024-10-18"
 ## What's new in Aspose.PDF 24.10
 
 The Elliptic Curve Digital Signature Algorithm (ECDSA) is a modern cryptographic algorithm known for providing strong security with smaller key sizes compared to traditional algorithms. Since version 24.10, it has been possible to sign PDF documents using ECDSA, as well as verify ECDSA signatures. The following elliptic curves are supported for creating and verifying digital signatures:
-* P-256 (secp256r1)
-* P-384 (secp384r1)
-* P-521 (secp521r1)
-* brainpoolP256r1
-* brainpoolP384r1
-* brainpoolP512r1
+* P-256 (secp256r1).
+* P-384 (secp384r1).
+* P-521 (secp521r1).
+* brainpoolP256r1.
+* brainpoolP384r1.
+* brainpoolP512r1.
 
 The SHA-256 hash algorithm is used for generating the signature. ECDSA signatures can be verified using the following hash algorithms: SHA-256, SHA-384, SHA-512, SHA3-256, SHA3-384, and SHA3-512.
 
