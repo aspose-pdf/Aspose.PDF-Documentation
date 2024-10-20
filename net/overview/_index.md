@@ -155,7 +155,7 @@ In addition, Aspose.PDF for .NET can be applied to easily convert text, images, 
 
 ## Pricing and Policies
 
-Please visit the [Licensing](/pdf/net/licensing/) page for information on licenses and review the [Pricing Information](https://purchase.aspose.com/pricing/pdf/family/) page for details on pricing.
+Please visit the [Licensing](/pdf/net/licensing/) page for information on licenses and review the [Pricing Information](https://purchase.aspose.com/pricing/pdf/net/) page for details on pricing.
 
 ## Technical Support
 
