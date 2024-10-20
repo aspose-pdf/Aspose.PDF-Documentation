@@ -149,6 +149,35 @@ This preference can be switched on and off using the 'Document.PickTrayByPdfSize
     }
 ```
 
+## Print Dialog Presets Page Scaling
+
+The next code snippet is intended to ensure that the [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) property is correctly applied and saved in the PDF.
+
+The [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) property has been added to the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) class with values ​​Aspose.Pdf.PrintScaling.AppDefault or Aspose.Pdf.PrintScaling.None.
+
+The page scaling option that shall be selected when a print dialog is displayed for this document. Valid values are None, which indicates no page scaling, and AppDefault, which indicates the conforming reader's default print scaling. If this entry has an unrecognized value, AppDefault should be used. Default value: AppDefault.
+
+```cs
+
+    public void PDFNET_111()
+    {
+        Object[] printScalingValues = { null, PrintScaling.None, PrintScaling.Default };
+        PrintScaling[] printScalingExpected = { PrintScaling.Default, PrintScaling.None, PrintScaling.Default };
+        for (int i = 0; i < printScalingValues.Length; i++)
+        {
+            Document document = new Document();
+            document.Pages.Add();
+            Object printScalingValue = printScalingValues[i];
+            if (printScalingValue != null)
+                document.PrintScaling = (PrintScaling)printScalingValue;
+            String outputPdf = GetOutputPdf("PDFNET-111_" + i);
+            document.Save(outputPdf);
+            Document documentOutput = new Document(outputPdf);
+            Assert.AreEqual(printScalingExpected[i], documentOutput.PrintScaling);
+        }
+    }
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",

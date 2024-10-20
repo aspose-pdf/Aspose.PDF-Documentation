@@ -767,6 +767,37 @@ Check next code snippet for converting DJVU files to PDF format.
     doc.Save("out.pdf");
 ```
 
+## Convert HEIC to PDF
+
+A HEIC file is a High-Efficiency Container Image file format that can store multiple images as a collection in a single file.
+
+Convert HEIC images to PDF using Aspose.PDF:
+
+```cs
+
+    using (var fs = new FileStream("iphone_photo.heic", FileMode.Open))
+    {
+        HeicImage image = HeicImage.Load(fs);
+        var pixels = image.GetByteArray(PixelFormat.Rgb24);
+        var width = (int)image.Width;
+        var height = (int)image.Height;
+
+        var document = new Document();
+        Aspose.Pdf.Page page = document.Pages.Add();
+        Aspose.Pdf.Image asposeImage = new Aspose.Pdf.Image();
+        asposeImage.BitmapInfo = new BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
+        page.PageInfo.Height = height;
+        page.PageInfo.Width = width;
+        page.PageInfo.Margin.Bottom = 0;
+        page.PageInfo.Margin.Top = 0;
+        page.PageInfo.Margin.Right = 0;
+        page.PageInfo.Margin.Left = 0;
+
+        page.Paragraphs.Add(asposeImage);
+        document.Save("iphone_photo.pdf");
+    }
+```
+
 ## Applies to
 
 |**Platform**|**Supported**|**Comments**|
