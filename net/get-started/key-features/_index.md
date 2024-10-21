@@ -21,31 +21,110 @@ Supports various platforms and .NET versions. See [System Requirements](/net/sys
 
 Aspose.PDF provides powerful Document Object Model (DOM) to explore and modify all types of PDF content. Supports loading from and saving to a wide list of [file formats](/net/supported-file-formats/). 
 
-## Supported PDF versions
+## Supported PDF standards
 
-Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6, 1.7 and 2.0.
+- ISO 32000-1 (PDF 1.2, PDF 1.3, PDF 1.4, PDF 1.5, PDF 1.6, PDF 1.7).
+- ISO 32000-2 (PDF 2.0).
+- ISO 19005 (PDF/A), ISO 15930 (PDF/X), ISO 24517 (PDF/E), ISO 14289 (PDF/UA).
 
-## Document
+## AI capabilities
 
-- Get and Set document viewer properties.
-- Get and Set page display properties.
-- Get and Set PDF file information.
-- Get and Set XMP metadata.
-- Linearization (optimization for the web).
-- Validation for archiving and long-term preservation standards such as PDF/A-1a, PDF/A-1b, and PDF/A-2a.
-- Conversion capabilities include PDF to DOC/DOCX, PDF to HTML, PDF to XPS, PDF to Tex, and more.
-- Repair to fix broken PDF documents.
+Supports various AI providers with the ability to load data from PDF documents.
 
-## Page
+## Features by the content type
 
-- Get page count.
-- Get page properties.
-- Get a particular page.
-- Insert empty page in a PDF file.
-- Insert entire PDF pages.
-- Delete PDF pages.
-- Concatenate PDF files.
-- Split PDF to individual pages.
+<table>
+  <tr>
+    <td rowspan="9">
+      Document
+    </td>
+    <td>
+      Modify document viewer properties.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify document viewer properties.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify page display properties.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify PDF file information.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify XMP metadata.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Linearization (optimization for the web).
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Support for archiving and long-term preservation standards such as PDF/A-1a, PDF/A-1b, and PDF/A-2a.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Conversion capabilities include PDF to DOC/DOCX, PDF to HTML, PDF to XPS, PDF to Tex, and more.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Repair to fix broken PDF documents.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="8">
+      Page
+    </td>
+    <td>
+      Get page count.
+    </td>
+  <tr>
+    <td>
+      Get page properties.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Get a particular page.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Insert empty page in a PDF file.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Insert entire PDF pages.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Delete PDF pages.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Concatenate PDF files.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Split PDF to individual pages.
+    </td>
+  </tr>
+</table>
 
 ## Text
 
@@ -129,7 +208,8 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6, 1.7 and 2.0.
 - Encrypt PDF.
 - Decrypt PDF.
 - Modify password.
+- Sign PDF.
+- Verify signatures.
+- PAdES support.
 
-## AI capabilities
 
-- Perform popular or personalized queries to a PDF document with your chatGPT or Llama account.
