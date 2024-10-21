@@ -13,20 +13,128 @@ sitemap:
     priority: 0.7
 ---
 
+## Cross-platform software
+
+Supports various platforms and .NET versions. See [System Requirements](/net/system-requirements/) for details.
+
 ## General Features
 
-- Written completely in C#, works with .NET Framework.
-- .NET environment required.
-- Supports Windows Forms and ASP.NET applications.
-- API reference in HTML and Microsoft Help format.
-- Supported .NET Frameworks (2.0, 3.5, 4.0, 4.0_ClientProfile, 4.5.0, 4.5.1, 4.6.0, 4.6.2, 4.7, 4.7.2).
-- .NET Standard 2.0 (.NET Core 2.0/2.1)
-- 32-bit OS
-- 64-bit OS
+Aspose.PDF provides powerful Document Object Model (DOM) to explore and modify all types of PDF content. Supports loading from and saving to a wide list of [file formats](/net/supported-file-formats/). 
 
-## Supported PDF versions
+## Supported PDF standards
 
-Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
+- ISO 32000-1 (PDF 1.2, PDF 1.3, PDF 1.4, PDF 1.5, PDF 1.6, PDF 1.7).
+- ISO 32000-2 (PDF 2.0).
+- ISO 19005 (PDF/A), ISO 15930 (PDF/X), ISO 24517 (PDF/E), ISO 14289 (PDF/UA).
+
+## AI capabilities
+
+Supports various AI providers with the ability to load data from PDF documents.
+
+## Features by the content type
+
+<table>
+  <tr>
+    <td rowspan="9">
+      Document
+    </td>
+    <td>
+      Modify document viewer properties.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify document viewer properties.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify page display properties.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify PDF file information.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify XMP metadata.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Linearization (optimization for the web).
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Support for archiving and long-term preservation standards such as PDF/A-1a, PDF/A-1b, and PDF/A-2a.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Conversion capabilities include PDF to DOC/DOCX, PDF to HTML, PDF to XPS, PDF to Tex, and more.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Repair to fix broken PDF documents.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="8">
+      Page
+    </td>
+    <td>
+      Get page count.
+    </td>
+  <tr>
+    <td>
+      Get page properties.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Get a particular page.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Insert empty page in a PDF file.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Insert entire PDF pages.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Delete PDF pages.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Concatenate PDF files.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Split PDF to individual pages.
+    </td>
+  </tr>
+</table>
+
+## Text
+
+- Extract text from pages.
+- Retrieving specific text segment(s).
+- Search and replace text from pages.
+- Search and replace text using regular expressions.
+- Replace the first or particular occurrence of a phrase.
+- Search and replace text paragraphs.
+- Add text in PDF file.
 
 ## Fonts
 
@@ -37,62 +145,28 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - CJK fonts.
 - Unicode support.
 
-## Text
-
-- Extract text from pages.
-- Search text from pages.
-- Get text segments.
-- Search text using regular expressions.
-- Replace text.
-- Replace text using regular expressions.
-- Replace first or particular occurrence of a phrase.
-- Add text in PDF file.
-
 ## Images
 
 - Add image in PDF file.
+- Find and Replace images.
 - Delete images.
-- Replace images.
 - Extract images.
-- PDF to JPEG conversion (particular page or all pages).
-- PDF to TIFF conversion (individual pages or a single TIFF image).
-- PDF to PNG conversion (particular page or all pages).
-- PDF to BMP conversion.
+- PDF to Image conversion deals with particular page or all pages and supports PDF to JPEG, PDF to TIFF (including multipage TIFF image), PDF to PNG, PDF to BMP, and more.
 
-## Attachments
+## Annotations
 
-- Add attachment.
-- Get attachments.
-- Delete attachments.
-- Get attachment information.
+- Add annotations.
+- Get annotations.
+- Delete annotations.
+- Modify annotations.
 
-## Page
+## Forms
 
-- Get page count.
-- Get page properties.
-- Concatenate PDF files.
-- Insert empty page in a PDF file.
-- Insert PDF pages.
-- Delete PDF pages.
-- Split PDF to individual pages.
-- Get a particular page.
-
-## Document
-
-- Get document viewer properties.
-- Set document viewer properties.
-- Get page display properties.
-- Set page display properties.
-- Get PDF file information.
-- Set PDF file information.
-- Linearization (optimization for the web).
-- Validation (PDF/A-1a, PDF/A-1b, PDF/A-2a).
-- Set XMP metadata.
-- Get XMP metadata.
-- PDF to DOC/DOCX conversion.
-- PDF to HTML conversion.
-- PDF to XPS conversion.
-- PDF to Tex conversion.
+- Add, Delete and Modify fields.
+- Fill fields.
+- Get field values.
+- Import and export field values.
+- Support for XFA (XML based Forms) and AcroForms (Standard Forms).
 
 ## Bookmarks
 
@@ -104,50 +178,38 @@ Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 - Modify bookmarks.
 - Modify child bookmarks.
 
-## Annotations
+## Attachments
 
-- Add annotations.
-- Get annotations.
-- Delete annotations.
-- Modify annotations.
-
-## Forms
-
-- Add fields.
-- Delete fields.
-- Modify fields.
-- Fill fields.
-- Get field values.
-- Support for XFA (XML based Forms) and AcroForms (Standard Forms)
+- Add attachment.
+- Get attachments.
+- Delete attachments.
+- Get attachment information.
 
 ## Operators
 
-- Add operators in PDF file.
+- Obtain page content operators to explore low-level content presentation.
+- Add, Remove and Insert page content operators in PDF file.
 
 ## Stamp and Watermark
 
-- Add text stamp.
-- Add image stamp.
-- Add PDF page stamp.
+- Add text, image, and PDF page stamps.
 - Add page number stamp.
-- Add text in the header.
-- Add image in the header.
-- Add text in the footer.
-- Add image in the footer.
+- Add header and footer artifacts on PDF page. Adding both image and text content is possible.
 
 ## Links and Actions
 
-- Create application link.
-- Create JavaScript link.
-- Remove document open action.
+- Create application, Web, and JavaScript links.
 - Extract links.
+- Remove document open action.
+- Sanitize a PDF document from potentially harmful links and actions.
 
 ## Security and Signatures
 
 - Encrypt PDF.
 - Decrypt PDF.
 - Modify password.
+- Sign PDF.
+- Verify signatures.
+- PAdES support.
 
-## Miscellaneous
 
-Get build version information.
