@@ -10,8 +10,9 @@ sitemap:
     priority: 0.8
 lastmod: "2024-10-22"
 ---
-
+{{% alert color="primary" %}}
 **Aspose.PDF AI Copilot API** designed to allows users to process PDF documents using LLMs from different providers. This [API](https://reference.aspose.com/pdf/net/aspose.pdf/) will help users in building chatbot applications and integrating PDF solutions with LLMs.
+{{% /alert %}}
 
 ## Key Features:
 
@@ -28,17 +29,17 @@ Currently, the following copilots available:
 ```cs
 // Create AI client.
 var openAiClient = OpenAIClient
-.CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-.WithProject("proj_123") // Configure optional parameters.
-.Build();
+    .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
+    .WithProject("proj_123") // Configure optional parameters.
+    .Build();
 
 // Create copilot options.
 var options = OpenAISummaryCopilotOptions
-.Create() // Create options like this, or...
-//.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
-.WithTemperature(0.5) // Configure other optional parameters.
-.WithDocument("DocumentInputPath") // .WithDocument methods allows to add text, pdf and paths to documents.
-.WithDocuments(new List<TextDocument>()); // .WithDocuments methods allows to add text, pdf and path collections.
+    .Create() // Create options like this, or...
+    //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
+    .WithTemperature(0.5) // Configure other optional parameters.
+    .WithDocument("DocumentInputPath") // .WithDocument methods allows to add text, pdf and paths to documents.
+    .WithDocuments(new List<TextDocument>()); // .WithDocuments methods allows to add text, pdf and path collections.
 
 // Create summary copilot.
 var summaryCopilot = AICopilotFactory.CreateSummaryCopilot(openAiClient, options);
@@ -64,20 +65,20 @@ The provided code demonstrates the creation of an OpenAI client, configuration o
 // Create AI client.
 var openAiClient = OpenAIClient
 .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-.WithProject("proj_123") // Configure optional parameters.
-.WithOrganization("org_123")
-.Build(); // Build.
+    .WithProject("proj_123") // Configure optional parameters.
+    .WithOrganization("org_123")
+    .Build(); // Build.
 
 // Create copilot options.
 var options = OpenAIChatCopilotOptions
-.Create() // Create options like this, or...
-//.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
-.WithModel(OpenAIModels.Gpt35Turbo) // Configure other optional parameters.
-.WithTemperature(0.5)
-.WithTopP(1)
-.WithDocument("DocumentInputPath") // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents.
-.WithContextBackupJsonPath("PathToContextBackup") // Supply context backup to resume the conversation session.
-.WithRestoreContextFromBackup(true); // If set to true, the context
+    .Create() // Create options like this, or...
+    //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
+    .WithModel(OpenAIModels.Gpt35Turbo) // Configure other optional parameters.
+    .WithTemperature(0.5)
+    .WithTopP(1)
+    .WithDocument("DocumentInputPath") // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents.
+    .WithContextBackupJsonPath("PathToContextBackup") // Supply context backup to resume the conversation session.
+    .WithRestoreContextFromBackup(true); // If set to true, the context
 
 // Create summary copilot.
 var chatCopilot = AICopilotFactory.CreateChatCopilot(openAiClient, options);
@@ -86,21 +87,24 @@ var chatCopilot = AICopilotFactory.CreateChatCopilot(openAiClient, options);
 string copilotResponse1 = await chatCopilot.GetResponseAsync("user message");
 
 // Get response on a list of queries.
-string copilotResponse2 = await chatCopilot.GetResponseAsync(new List<string>
-{
-"message1",
-"message2"
-});
+string copilotResponse2 = await chatCopilot
+    .GetResponseAsync(new List<string>
+    {
+        "message1",
+        "message2"
+    });
 
 // Save summary as PDF document.
 await chatCopilot.SaveResponseAsync("message1", "outputPath");
 
 // Save summary as PDF document.
-await chatCopilot.SaveResponseAsync(new List<string>
-{
-"message1",
-"message2"
-}, "outputPath");
+await chatCopilot
+    .SaveResponseAsync(new List<string>
+    {
+    "message1",
+    "message2"
+    },
+    "outputPath");
 ```
 
 **OpenAI Image Description** is an AI copilot designed for generating image descriptions of images inside PDF documents as well as separate image files. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot provides the ability to get image descriptions for all attached documents at once.
@@ -110,25 +114,25 @@ The provided code snippet demonstrates the creation of an OpenAI client, configu
 ```cs
 // Create AI client.
 var openAiClient = OpenAIClient
-.CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-.WithProject("proj_123") // Configure optional parameters.
-.WithOrganization("org_123")
-.Build(); // Build.
+    .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
+    .WithProject("proj_123") // Configure optional parameters.
+    .WithOrganization("org_123")
+    .Build(); // Build.
 
 // Create copilot options.
 var options = OpenAIImageDescriptionCopilotOptions
-.Create() // Create options like this, or...
-//.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
-.WithModel(OpenAIModels.Gpt35Turbo) // Configure other optional parameters.
-.WithTemperature(0.5)
-.WithTopP(1)
-.WithDocument(new PdfDocument // Attach documents.
-{
-Name = "Another_Pdf_with_images",
-Document = new Document(GetInputPath("Pdf_with_images_low_res_bw.pdf"))
-})
-.WithDocument(GetInputPath("Mona_liza.jpg")) // Attach images
-.WithDocument(GetInputPath("Pdf_with_images.pdf")); // Attach document paths.
+    .Create() // Create options like this, or...
+    //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
+    .WithModel(OpenAIModels.Gpt35Turbo) // Configure other optional parameters.
+    .WithTemperature(0.5)
+    .WithTopP(1)
+    .WithDocument(new PdfDocument // Attach documents.
+        {
+        Name = "Another_Pdf_with_images",
+        Document = new Document(GetInputPath("Pdf_with_images_low_res_bw.pdf"))
+        })
+    .WithDocument(GetInputPath("Mona_liza.jpg")) // Attach images
+    .WithDocument(GetInputPath("Pdf_with_images.pdf")); // Attach document paths.
 
 // Create copilot.
 var copilot = AICopilotFactory.CreateImageDescriptionCopilot(openAiClient, options);
@@ -143,51 +147,51 @@ await copilot.AddPdfImageDescriptionsAsync("DocumentsOutputDirectory");
 **Llama Chat** allows the creation of a client to send requests to the Llama chat completion API.
 
 ```cs
-    var llamaClient = LlamaClient
-        .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
-        .Build();
+var llamaClient = LlamaClient
+    .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
+    .Build();
 
-    var result = await llamaClient.CreateCompletionAsync(new LlamaChatCompletionRequest
+var result = await llamaClient.CreateCompletionAsync(new LlamaChatCompletionRequest
+{
+    Messages = new List<ChatMessage>
     {
-        Messages = new List<ChatMessage>
-        {
-            ChatMessage.FromUser("Hello!")
-        }
-    });
+        ChatMessage.FromUser("Hello!")
+    }
+});
 
-    var response = result.Choices[0].Message.Content; // Hello! How can I assist you today?
+var response = result.Choices[0].Message.Content; // Hello! How can I assist you today?
 ```
 
 **Llama Summary** allows client can be used to create the Summary Copilot.
 
 ```cs
-    var llamaClient = LlamaClient
-        .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
-        .Build();
-    
-    // Create copilot options.
-    var options = LlamaSummaryCopilotOptions
-        .Create() // Create options like this, or...
-        //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate.
-        .WithTemperature(0.5) // Configure other optional parameters.
-        .WithDocument("DocumentInputPath") // .WithDocument methods allow to add text, pdf, and paths to documents.
-        .WithDocuments(new List<TextDocument>()); // .WithDocuments methods allow to add text, pdf and path collections.
+var llamaClient = LlamaClient
+    .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
+    .Build();
 
-    // Create summary copilot.
-    var summaryCopilot = AICopilotFactory.CreateSummaryCopilot(llamaClient, options);
+// Create copilot options.
+var options = LlamaSummaryCopilotOptions
+    .Create() // Create options like this, or...
+    //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate.
+    .WithTemperature(0.5) // Configure other optional parameters.
+    .WithDocument("DocumentInputPath") // .WithDocument methods allow to add text, pdf, and paths to documents.
+    .WithDocuments(new List<TextDocument>()); // .WithDocuments methods allow to add text, pdf and path collections.
 
-    // Get summary text.
-    string summaryText = await summaryCopilot.GetSummaryAsync();
+// Create summary copilot.
+var summaryCopilot = AICopilotFactory.CreateSummaryCopilot(llamaClient, options);
 
-    // Get summary document.
-    Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
+// Get summary text.
+string summaryText = await summaryCopilot.GetSummaryAsync();
 
-    // Get the summary document with page info.
-    Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new PageInfo());
+// Get summary document.
+Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
 
-    // Save the summary as a PDF document.
-    await summaryCopilot.SaveSummaryAsync("outputPath");
+// Get the summary document with page info.
+Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new PageInfo());
 
-    // Save summary with specified format.
-    await summaryCopilot.SaveSummaryAsync("outputPath", SaveFormat.DocX);
+// Save the summary as a PDF document.
+await summaryCopilot.SaveSummaryAsync("outputPath");
+
+// Save summary with specified format.
+await summaryCopilot.SaveSummaryAsync("outputPath", SaveFormat.DocX);
 ```
