@@ -24,7 +24,7 @@ lastmod: "2024-10-22"
 
 Currently, the following copilots available:
 
-**OpenAI Summary** allows users to generate summaries from documents. It provides a convenient way to create summaries by configuring options such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot can asynchronously generate summaries as text, as documents, and save the summaries in various formats.The provided demo code showcases the creation of an OpenAI client, the configuration of copilot options, and the usage of the SummaryCopilot to generate and save summaries.
+**OpenAI Summary** allows users to generate summaries from documents. It provides a convenient way to create summaries by configuring options such as the model, temperature, number of tokens, model instructions, document attachments and others. The copilot can asynchronously generate summaries as text, documents and save the summaries in various formats. The provided demo code showcases the creation of an OpenAI client, the configuration of copilot options and the usage of the SummaryCopilot to generate and save summaries.
 
 ```cs
 // Create AI client.
@@ -57,9 +57,9 @@ Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAs
 await summaryCopilot.SaveSummaryAsync("outputPath");
 ```
 
-**OpenAI Chat** is an AI copilot designed for chat interactions with documents. It facilitates generating responses to user queries and managing context. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot can provide responses to single or multiple queries, save responses in various formats, save and delete the context.
+**OpenAI Chat** is an AI copilot designed for chat interactions with documents. It facilitates generating responses to user queries and managing context. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments and others. The copilot can provide responses to single or multiple queries, save responses in various formats, save and delete the context.
 
-The provided code demonstrates the creation of an OpenAI client, configuration of ChatCopilot options, and usage of the ChatCopilot to interact with user queries and manage context.
+The provided code demonstrates the creation of an OpenAI client, configuration of ChatCopilot options and usage of the ChatCopilot to interact with user queries and manage context.
 
 ```cs
 // Create AI client.
@@ -107,9 +107,9 @@ await chatCopilot
     "outputPath");
 ```
 
-**OpenAI Image Description** is an AI copilot designed for generating image descriptions of images inside PDF documents as well as separate image files. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot provides the ability to get image descriptions for all attached documents at once.
+**OpenAI Image Description** is an AI copilot designed for generating image descriptions of images inside PDF documents as well as separate image files. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments and others. The copilot provides the ability to get image descriptions for all attached documents at once.
 
-The provided code snippet demonstrates the creation of an OpenAI client, configuration of ImageDescriptionCopilot options, and usage of the copilot to obtain image descriptions for attached documents. Additionally, there is an extension method that allows adding image descriptions to images in the attached documents and saving new documents in the provided directory.
+The provided code snippet demonstrates the creation of an OpenAI client, configuration of ImageDescriptionCopilot options and usage of the copilot to obtain image descriptions for attached documents. Additionally, there is an extension method that allows adding image descriptions to images in the attached documents and saving new documents in the provided directory.
 
 ```cs
 // Create AI client.
