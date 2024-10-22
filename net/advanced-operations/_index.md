@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /net/advanced-operations/
 description: Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers.
-lastmod: "2022-02-17"
+lastmod: "2024-10-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -90,6 +90,7 @@ You'll learn different ways to:
 - [Working with XML](/pdf/net/working-with-xml) - construct PDF documents based on the XML structure
 - [Compare PDF documents](/pdf/net/compare-pdf-documents/) - possible to compare PDF documents content
 - [Navigation and Interaction](/pdf/net/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages
+- [AI Copilot](/pdf/net/ai-copilot/) - allow to process PDF documents using LLMs from different providers
 - [Annotations](/pdf/net/annotations/) - Annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
 - [Artifacts](/pdf/net/artifacts/) - deal with watermarks and other special objects in PDF
 - [Accessibility. Tagged PDF](/pdf/net/accessibility-tagged-pdf/) - Tagging is essential for PDF accessibility. Aspose.PDF allows to add tags into PDF and establish logical reading order and to provide a means for indicating structure and type.
