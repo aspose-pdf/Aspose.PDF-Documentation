@@ -1,25 +1,25 @@
 ---
-title: Working with PDF Documents using C#
-linktitle: Working with Documents
+title: Split PDF programmatically
+linktitle: Split PDF files
 type: docs
-weight: 10
-url: /net/working-with-documents/
-description: This article describes to you what manipulations can be done with the document with Aspose.PDF library.
+weight: 60
+url: /net/split-pdf-document/
+keywords: split pdf into multiple files, split pdf into separate pdfs, split pdf c#
+description: This topic shows how to split PDF pages into individual PDF files in your .NET applications with C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 aliases:
-    - /net/working-with-document/
-    - /net/working-with-document-facades/
-    - /net/create-document/
+    - /net/split-document/
+    - /net/split-pdf-pages/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Working with PDF Documents using C#",
-    "alternativeHeadline": "Manipulating PDF Documents",
+    "headline": "Split PDF programmatically",
+    "alternativeHeadline": "How to split PDF with .NET",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -28,7 +28,7 @@ aliases:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf documents",
+    "keywords": "pdf, c#, split pdf",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -70,35 +70,53 @@ aliases:
             }
         ]
     },
-    "url": "/net/working-with-documents/",
+    "url": "/net/split-pdf-document/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/working-with-documents/"
+        "@id": "/net/split-pdf-document/"
     },
     "dateModified": "2022-02-04",
-    "description": "This article describes to you what manipulations can be done with the document with Aspose.PDF library."
+    "description": "This topic shows how to split PDF pages into individual PDF files in your .NET applications with C#."
 }
 </script>
 
-PDF stands for the Portable Document Format, used to display documents in an electronic form independent of the software, hardware, or operating system they are viewed on.
+## Live Example
 
-The PDF is an open standard, maintained by the International Organisation for Standardisation (ISO) today.
+[Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) is an online free web application that allows you to investigate how presentation splitting functionality works.
 
-The original goal was to preserve and protect the content and layout of a document - no matter what platform or computer program it is viewed on. This is why PDFs are hard to edit and sometimes even extracting information from them is a challenge.
+[![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-But **Aspose.PDF for .NET** can help you cope with most of the tasks that arise when working with a PDF document.
+This topic shows how to split PDF pages into individual PDF files in your .NET applications. To split PDF pages into single page PDF files using C#, the following steps can be followed:
 
-You are able to do the following:
+1. Loop through the pages of PDF document through the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object's [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection
+1. For each iteration, create a new Document object and add the individual [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object into the empty document
+1. Save the new PDF using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method
 
-- [Formatting PDF Document](/pdf/net/formatting-pdf-document/) - create a document, get and set document properties, embedding fonts, and other operations with PDF files. 
-- [Manipulate PDF Document](/pdf/net/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.
-- [Optimize PDF](/pdf/net/optimize-pdf/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
-- [Merge PDF](/pdf/net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using C#.
-- [Split PDF](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications.
-- [Concatenate PDF files in folder](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - concatenate all PDF files in Particular folder using PdfFileEditor class.
-- [Concatenate multiple PDF files using MemoryStreams](/pdf/net/concatenate-pdf-documents/) - you will learn how to concatenate multiple PDF files using MemoryStreams with C#.
-- [Working with Headings](/pdf/net/working-with-headings/) - you can create numbering in heading your PDF document with C#.
-- [Generate Crash Reports](/pdf/net/generate-crash-reports/) - generate crash reports using C#.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
+## Split PDF into multiple files or separate pdfs in C#
+
+The following C# code snippet shows you how to split PDF pages into individual PDF files.
+
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory.
+string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+// Open document
+Document pdfDocument = new Document(dataDir + "SplitToPages.pdf");
+
+int pageCount = 1;
+
+// Loop through all the pages
+foreach (Page pdfPage in pdfDocument.Pages)
+{
+    Document newDocument = new Document();
+    newDocument.Pages.Add(pdfPage);
+    newDocument.Save(dataDir + "page_" + pageCount + "_out" + ".pdf");
+    pageCount++;
+}
+```
 
 <script type="application/ld+json">
 {
