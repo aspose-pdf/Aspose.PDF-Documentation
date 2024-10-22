@@ -35,14 +35,9 @@ Supports various AI providers with the ability to load data from PDF documents.
 
 <table>
   <tr>
-    <td rowspan="9">
+    <td rowspan="8">
       Document
     </td>
-    <td>
-      Modify document viewer properties.
-    </td>
-  </tr>
-  <tr>
     <td>
       Modify document viewer properties.
     </td>
@@ -89,6 +84,7 @@ Supports various AI providers with the ability to load data from PDF documents.
     <td>
       Get page count.
     </td>
+  </tr>
   <tr>
     <td>
       Get page properties.
@@ -124,92 +120,303 @@ Supports various AI providers with the ability to load data from PDF documents.
       Split PDF to individual pages.
     </td>
   </tr>
+  <tr>
+    <td rowspan="7">
+      Text
+    </td>
+    <td>
+      Extract text from pages.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Retrieving specific text segment(s).
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Search and replace text from pages.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Search and replace text using regular expressions.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Replace the first or particular occurrence of a phrase.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Search and replace text paragraphs.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Add text in PDF file.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="6">
+      Font
+    </td>
+    <td>
+      14 core fonts.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Type 1 fonts.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      TrueType fonts.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Type 3 fonts.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      CJK fonts.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Unicode support.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="5">
+      Image
+    </td>
+    <td>
+      Add image in PDF file.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Find and Replace images.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Delete images.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Extract images.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      PDF to Image conversion deals with particular page or all pages and supports PDF to JPEG, PDF to TIFF (including multipage TIFF image), PDF to PNG, PDF to BMP, and more.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="4">
+      Annotations
+    </td>
+    <td>
+      Add annotations.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Get annotations.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Delete annotations.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify annotations.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="5">
+      Forms
+    </td>
+    <td>
+      Add, Delete and Modify fields.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Fill fields.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Get field values.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Import and export field values.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Support for XFA (XML based Forms) and AcroForms (Standard Forms).
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="7">
+      Bookmarks
+    </td>
+    <td>
+      Add bookmarks.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Add child bookmarks.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Delete bookmarks.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Get bookmarks.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Get child bookmarks.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify bookmarks.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify child bookmarks.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="4">
+      Attachments
+    </td>
+    <td>
+      Add attachment.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Get attachments.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Delete attachments.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Get attachment information.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2">
+      Operators
+    </td>
+    <td>
+      Obtain page content operators to explore low-level content presentation.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Add, Remove and Insert page content operators in PDF file.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="3">
+      Stamp and Watermark
+    </td>
+    <td>
+      Add text, image, and PDF page stamps.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Add page number stamp.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Add header and footer artifacts on PDF page. Adding both image and text content is possible.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="4">
+      Links and Actions
+    </td>
+    <td>
+      Create application, Web, and JavaScript links.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Extract links.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Remove document open action.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Sanitize a PDF document from potentially harmful links and actions.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="6">
+      Security and Signatures
+    </td>
+    <td>
+      Encrypt PDF.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Decrypt PDF.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Modify password.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Sign PDF.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Verify signatures.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      PAdES support.
+    </td>
+  </tr>
 </table>
-
-## Text
-
-- Extract text from pages.
-- Retrieving specific text segment(s).
-- Search and replace text from pages.
-- Search and replace text using regular expressions.
-- Replace the first or particular occurrence of a phrase.
-- Search and replace text paragraphs.
-- Add text in PDF file.
-
-## Fonts
-
-- 14 core fonts.
-- Type 1 fonts.
-- TrueType fonts.
-- Type 3 fonts.
-- CJK fonts.
-- Unicode support.
-
-## Images
-
-- Add image in PDF file.
-- Find and Replace images.
-- Delete images.
-- Extract images.
-- PDF to Image conversion deals with particular page or all pages and supports PDF to JPEG, PDF to TIFF (including multipage TIFF image), PDF to PNG, PDF to BMP, and more.
-
-## Annotations
-
-- Add annotations.
-- Get annotations.
-- Delete annotations.
-- Modify annotations.
-
-## Forms
-
-- Add, Delete and Modify fields.
-- Fill fields.
-- Get field values.
-- Import and export field values.
-- Support for XFA (XML based Forms) and AcroForms (Standard Forms).
-
-## Bookmarks
-
-- Add bookmarks.
-- Add child bookmarks.
-- Delete bookmarks.
-- Get bookmarks.
-- Get child bookmarks.
-- Modify bookmarks.
-- Modify child bookmarks.
-
-## Attachments
-
-- Add attachment.
-- Get attachments.
-- Delete attachments.
-- Get attachment information.
-
-## Operators
-
-- Obtain page content operators to explore low-level content presentation.
-- Add, Remove and Insert page content operators in PDF file.
-
-## Stamp and Watermark
-
-- Add text, image, and PDF page stamps.
-- Add page number stamp.
-- Add header and footer artifacts on PDF page. Adding both image and text content is possible.
-
-## Links and Actions
-
-- Create application, Web, and JavaScript links.
-- Extract links.
-- Remove document open action.
-- Sanitize a PDF document from potentially harmful links and actions.
-
-## Security and Signatures
-
-- Encrypt PDF.
-- Decrypt PDF.
-- Modify password.
-- Sign PDF.
-- Verify signatures.
-- PAdES support.
-
 
