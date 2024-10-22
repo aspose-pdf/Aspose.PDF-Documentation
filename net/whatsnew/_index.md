@@ -1498,7 +1498,7 @@ Also supports the ability to detect Overflow when adding text:
 
 From Aspose.PDF 23.6 support to add the next plugins:
 
-- Aspose PdfConverter Html to PDF
+- Aspose PdfConverter Html to PDF 
 - Aspose PdfOrganizer Resize API
 - Aspose PdfOrganizer Compress API
 
