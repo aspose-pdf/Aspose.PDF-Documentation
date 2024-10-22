@@ -179,6 +179,151 @@ Steps to sign PDF:
     }
 ```
 
+## Sign a PDF with HASH signing function
+
+Using a custom hash signing function, the signing authority can implement specific cryptographic standards or internal security policies that go beyond standard signing methods, ensuring the document's integrity. This approach helps verify that the document has not been altered since the signature was applied and provides a legally binding digital signature with verifiable proof of the signer's identity using the PFX certificate.
+
+This code snippet demonstrates digitally signing a PDF document using a PFX (PKCS#12) certificate with a custom hash signing function in C#.
+
+Let’s take a closer look at the DPF signing process:
+
+1. Define File Paths and Certificate Information:
+
+- inputPdf: The path to the input PDF document that needs to be signed.
+- inputP12: The path to the .p12 (PFX) certificate file used for signing.
+- inputPfxPassword: The password for the PFX certificate.
+- outputPdf: The path where the signed PDF will be saved.
+
+2. Signature Process:
+
+- A 'PdfFileSignature' object is created and bound to the input PDF.
+- A 'PKCS7' object is initialized using the PFX certificate and its password. The 'CustomSignHash' method is assigned as the custom hash signing function.
+- The Sign method is called, specifying the page number (1 in this case), signature details (reason, cont, loc), and the position (a rectangle with coordinates (0, 0, 500, 500)) for the signature.
+- The signed PDF is then saved to the specified output path.
+
+3. Custom Hash Signing:
+
+- The 'CustomSignHash' method accepts a byte array signableHash (the hash to be signed).
+- It loads the same PFX certificate and retrieves its private key.
+- The private key is used to sign the hash using the 'RSACryptoServiceProvider' and the SHA-1 algorithm.
+- The signed data (byte array) is returned to be applied to the PDF signature.
+
+```cs
+
+    var inputPdf = "111.pdf";
+    var inputP12 = "111.p12";
+    var inputPfxPassword = "123456";
+    var outputPdf = "111_out.pdf";
+    using (var sign = new PdfFileSignature())
+    {
+        sign.BindPdf(inputPdf);
+        var pkcs7 = new PKCS7(inputP12, inputPfxPassword);
+        pkcs7.CustomSignHash = CustomSignHash;
+        sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
+        sign.Save(outputPdf);
+    }
+    // Custom hash signing function to generate a digital signature using SHA1 hashing algorithm.
+    private byte[] CustomSignHash(byte[] signableHash)
+    {
+        var inputP12 = "111.p12";
+        var inputPfxPassword = "123456";
+        X509Certificate2 signerCert = new X509Certificate2(inputP12, inputPfxPassword, X509KeyStorageFlags.Exportable);
+        RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+        var xmlString = signerCert.PrivateKey.ToXmlString(true);
+        rsaCSP.FromXmlString(xmlString);
+        byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+        return signedData;
+    }
+```
+
+## Signing PDF documents using ECDSA
+
+Signing PDF documents using ECDSA (Elliptic Curve Digital Signature Algorithm) involves utilizing elliptic curve cryptography to generate digital signatures. This offers high security and efficiency, especially for mobile and resource-constrained environments. This approach ensures that your PDF documents are digitally signed with the security advantages of elliptic curve cryptography.
+
+Aspose.Pdf supports ECDSA-based digital signature creation and verification.
+The following elliptic curves are supported for digital signature creation and verification:
+
+- P-256(secp256r1)
+- P-384(secp384r1)
+- P-521(secp521r1)
+- brainpoolP256r1
+- brainpoolP384r1
+- brainpoolP512r1
+
+The SHA-256 digest algorithm is used for the signature.
+
+ECDSA digital signatures with the following digest algorithms can be verified: SHA-256, SHA-384, SHA3–512, SHA3–256, SHA3–384, SHA3–512.
+
+You can check the signature and verification by creating a PFX(output.pfx) certificate in OpenSSL.
+
+```cs
+
+    openssl ecparam -genkey -name brainpoolP512r1 -out private.key
+    openssl ec -in private.key -pubout -out public.pem
+    openssl req -new -x509 -days 365 -key private.key -out certificate.crt -subj "/C=PL/ST=Silesia/L=Katowice/O=My2 Organization/CN=example2.com"
+    openssl pkcs12 -export -out output.pfx -inkey private.key -in certificate.crt
+
+```
+
+Available curve names for signature and verification in Aspose.Pdf (the list of curves in OpenSSL can be obtained with the command 'openssl ecparam -list_curves'): prime256v1, secp384r1, secp521r1, brainpoolP256r1, brainpoolP384r1, brainpoolP512r1.
+
+To sign a PDF document using ECDSA, the general steps in C# would be:
+
+1. You'll need an ECDSA certificate in PFX or P12 format. These certificates contain both the public and private keys needed for signing.
+
+1. Using an Aspose.PDF library, you bind the document to a signature handler.
+
+1. Use the ECDSA private key to sign the hash of the document content.
+
+1. Place the generated signature inside the PDF file along with metadata such as the reason for signing, location, and contact details.
+
+```cs
+
+    public void Verify(string fileName)
+    {
+        // Open the PDF document from the specified file
+        using (Document document = new Document(fileName))
+        {
+            // Create an instance of PdfFileSignature for working with signatures in the document
+            using (PdfFileSignature signature = new PdfFileSignature(document))
+            {
+                // Check if the document contains any digital signatures
+                Assert.IsTrue(signature.ContainsSignature());
+
+                // Get a list of signature names in the document
+                var sigNames = signature.GetSignNames();
+
+                // Loop through all signature names to verify each one
+                foreach (var sigName in sigNames)
+                {
+                    // Verify that the signature with the given name is valid
+                    Assert.IsTrue(signature.VerifySigned(sigName));
+                }
+            }
+        }
+    }
+
+    public void Sign(string cert, string inputPdfFile, string outFile)
+    {
+        // Open the PDF document from the specified input file
+        using (Document document = new Document(inputPdfFile))
+        {
+            // Create an instance of PdfFileSignature to sign the document
+            using (PdfFileSignature signature = new PdfFileSignature(document))
+            {
+                // Create a PKCS7Detached object using the provided certificate and password
+                PKCS7Detached pkcs = new PKCS7Detached(cert, "12345");
+
+                // Sign the first page of the document, setting the signature's appearance at the specified location
+                signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
+
+                // Save the signed document to the specified output file
+                signature.Save(outFile);
+            }
+        }
+    }
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
