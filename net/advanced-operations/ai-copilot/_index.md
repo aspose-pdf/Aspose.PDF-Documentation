@@ -23,7 +23,7 @@ lastmod: "2024-10-22"
 
 Currently, the following copilots available:
 
-**OpenAISummaryCopilot** allows users to generate summaries from documents. It provides a convenient way to create summaries by configuring options such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot can asynchronously generate summaries as text, as documents, and save the summaries in various formats.The provided demo code showcases the creation of an OpenAI client, the configuration of copilot options, and the usage of the SummaryCopilot to generate and save summaries.
+**OpenAI Summary** allows users to generate summaries from documents. It provides a convenient way to create summaries by configuring options such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot can asynchronously generate summaries as text, as documents, and save the summaries in various formats.The provided demo code showcases the creation of an OpenAI client, the configuration of copilot options, and the usage of the SummaryCopilot to generate and save summaries.
 
 ```cs
 // Create AI client.
@@ -56,7 +56,7 @@ Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAs
 await summaryCopilot.SaveSummaryAsync("outputPath");
 ```
 
-**OpenAIChatCopilot** is an AI copilot designed for chat interactions with documents. It facilitates generating responses to user queries and managing context. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot can provide responses to single or multiple queries, save responses in various formats, save and delete the context.
+**OpenAI Chat** is an AI copilot designed for chat interactions with documents. It facilitates generating responses to user queries and managing context. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot can provide responses to single or multiple queries, save responses in various formats, save and delete the context.
 
 The provided code demonstrates the creation of an OpenAI client, configuration of ChatCopilot options, and usage of the ChatCopilot to interact with user queries and manage context.
 
@@ -103,7 +103,7 @@ await chatCopilot.SaveResponseAsync(new List<string>
 }, "outputPath");
 ```
 
-**OpenAIImageDescriptionCopilot** is an AI copilot designed for generating image descriptions of images inside PDF documents as well as separate image files. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot provides the ability to get image descriptions for all attached documents at once.
+**OpenAI Image Description** is an AI copilot designed for generating image descriptions of images inside PDF documents as well as separate image files. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, and others. The copilot provides the ability to get image descriptions for all attached documents at once.
 
 The provided code snippet demonstrates the creation of an OpenAI client, configuration of ImageDescriptionCopilot options, and usage of the copilot to obtain image descriptions for attached documents. Additionally, there is an extension method that allows adding image descriptions to images in the attached documents and saving new documents in the provided directory.
 
@@ -138,4 +138,56 @@ List<ImageDescriptionResult> imageDescriptions = await copilot.GetImageDescripti
 
 // Use extension method to add image descriptions to attached documents.
 await copilot.AddPdfImageDescriptionsAsync("DocumentsOutputDirectory");
+```
+
+**Llama Chat** allows the creation of a client to send requests to the Llama chat completion API.
+
+```cs
+    var llamaClient = LlamaClient
+        .CreateWithApiKey(ApiKey)
+        .Build();
+
+    var result = await llamaClient.CreateCompletionAsync(new LlamaChatCompletionRequest
+    {
+        Messages = new List<ChatMessage>
+        {
+            ChatMessage.FromUser("Hello!")
+        }
+    });
+
+    var response = result.Choices[0].Message.Content; // Hello! How can I assist you today?
+```
+
+**Llama Summary** allows client can be used to create the Summary Copilot.
+
+```cs
+    var llamaClient = LlamaClient
+        .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
+        .Build();
+    
+    // Create copilot options.
+    var options = LlamaSummaryCopilotOptions
+        .Create() // Create options like this, or...
+        //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate.
+        .WithTemperature(0.5) // Configure other optional parameters.
+        .WithDocument("DocumentInputPath") // .WithDocument methods allow to add text, pdf, and paths to documents.
+        .WithDocuments(new List<TextDocument>()); // .WithDocuments methods allow to add text, pdf and path collections.
+
+    // Create summary copilot.
+    var summaryCopilot = AICopilotFactory.CreateSummaryCopilot(llamaClient, options);
+
+    // Get summary text.
+    string summaryText = await summaryCopilot.GetSummaryAsync();
+
+    // Get summary document.
+    Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
+
+    // Get the summary document with page info.
+    Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new PageInfo());
+
+    // Save the summary as a PDF document.
+    await summaryCopilot.SaveSummaryAsync("outputPath");
+
+    // Save summary with specified format.
+    await summaryCopilot.SaveSummaryAsync("outputPath", SaveFormat.DocX);
 ```
