@@ -144,7 +144,7 @@ await copilot.AddPdfImageDescriptionsAsync("DocumentsOutputDirectory");
 
 ```cs
     var llamaClient = LlamaClient
-        .CreateWithApiKey(ApiKey)
+        .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
         .Build();
 
     var result = await llamaClient.CreateCompletionAsync(new LlamaChatCompletionRequest
