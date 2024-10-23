@@ -1,6 +1,6 @@
 ---
-title: Working with PDF Documents using AI Copilot
-linktitle: Working with PDF Documents using AI Copilot
+title: Working with AI Copilot
+linktitle: Working with AI Copilot
 type: docs
 weight: 10
 url: /net/ai-copilot/
@@ -8,19 +8,19 @@ description: This article describes how AI Copilot can be used to process the PD
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2024-10-22"
+lastmod: "2024-10-23"
 ---
 {{% alert color="primary" %}}
 **Aspose.PDF AI Copilot API** designed to allows users to process PDF documents using LLMs from different providers. This [API](https://reference.aspose.com/pdf/net/aspose.pdf/) will help users in building chatbot applications and integrating PDF solutions with LLMs.
 {{% /alert %}}
 
-## Key Features:
+## Key Features
 
 * Document summary.
 * Chat with documents.
 * Get images from documents and provide descriptions.
 
-## Examples:
+## Examples
 
 Currently, the following copilots available:
 
