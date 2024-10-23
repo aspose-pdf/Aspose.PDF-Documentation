@@ -13,141 +13,412 @@ sitemap:
     priority: 0.7
 ---
 
+## Cross-platform software
+
+Supports various platforms and .NET versions. See [System Requirements](/net/system-requirements/) for details.
+
 ## General Features
 
-- Written completely in C#, works with .NET Framework.
-- .NET environment required.
-- Supports Windows Forms and ASP.NET applications.
-- API reference in HTML and Microsoft Help format.
-- Supported .NET Frameworks (2.0, 3.5, 4.0, 4.0_ClientProfile, 4.5.0, 4.5.1, 4.6.0, 4.6.2, 4.7, 4.7.2).
-- .NET Standard 2.0 (.NET Core 2.0/2.1)
-- 32-bit OS
-- 64-bit OS
+Aspose.PDF provides powerful Document Object Model (DOM) to explore and modify all types of PDF content. Supports loading from and saving to a wide list of [file formats](/net/supported-file-formats/). 
 
-## Supported PDF versions
+## Supported PDF standards
 
-Aspose.PDF for .NET supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
+- ISO 32000-1 (PDF 1.2, PDF 1.3, PDF 1.4, PDF 1.5, PDF 1.6, PDF 1.7).
+- ISO 32000-2 (PDF 2.0).
+- ISO 19005 (PDF/A), ISO 15930 (PDF/X), ISO 24517 (PDF/E), ISO 14289 (PDF/UA).
 
-## Fonts
+## AI capabilities
 
-- 14 core fonts.
-- Type 1 fonts.
-- TrueType fonts.
-- Type 3 fonts.
-- CJK fonts.
-- Unicode support.
+Supports various AI providers with the ability to load data from PDF documents.
 
-## Text
+## Features by the content type
 
-- Extract text from pages.
-- Search text from pages.
-- Get text segments.
-- Search text using regular expressions.
-- Replace text.
-- Replace text using regular expressions.
-- Replace first or particular occurrence of a phrase.
-- Add text in PDF file.
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th scope="col" rowspan="8">
+        Document
+      </th>
+      <td>
+        Modify document viewer properties.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Modify page display properties.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Modify PDF file information.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Modify XMP metadata.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Linearization (optimization for the web).
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Support for archiving and long-term preservation standards such as PDF/A-1a, PDF/A-1b, and PDF/A-2a.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Conversion capabilities include PDF to DOC/DOCX, PDF to HTML, PDF to XPS, PDF to Tex, and more.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Repair to fix broken PDF documents.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="8">
+        Page
+      </th>
+     <td>
+        Get page count.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Get page properties.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Get a particular page.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Insert empty page in a PDF file.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Insert entire PDF pages.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Delete PDF pages.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Concatenate PDF files.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Split PDF to individual pages.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="7">
+        Text
+      </th>
+      <td>
+        Extract text from pages.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Retrieving specific text segment(s).
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Search and replace text from pages.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Search and replace text using regular expressions.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Replace the first or particular occurrence of a phrase.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Search and replace text paragraphs.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Add text in PDF file.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="6">
+        Font
+      </th>
+      <td>
+        14 core fonts.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Type 1 fonts.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        TrueType fonts.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Type 3 fonts.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        CJK fonts.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Unicode support.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="5">
+        Image
+      </th>
+      <td>
+        Add image in PDF file.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Find and Replace images.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Delete images.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Extract images.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        PDF to Image conversion deals with particular page or all pages and supports PDF to JPEG, PDF to TIFF (including multipage TIFF image), PDF to PNG, PDF to BMP, and more.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="4">
+        Annotations
+      </th>
+    <td>
+      Add annotations.
+    </td>
+    </tr>
+    <tr>
+      <td>
+        Get annotations.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Delete annotations.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Modify annotations.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="5">
+        Forms
+      </th>
+      <td>
+        Add, Delete and Modify fields.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Fill fields.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Get field values.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Import and export field values.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Support for XFA (XML based Forms) and AcroForms (Standard Forms).
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="7">
+        Bookmarks
+      </th>
+      <td>
+        Add bookmarks.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Add child bookmarks.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Delete bookmarks.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Get bookmarks.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Get child bookmarks.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Modify bookmarks.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Modify child bookmarks.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="4">
+        Attachments
+      </th>
+      <td>
+        Add attachment.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Get attachments.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Delete attachments.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Get attachment information.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="2">
+        Operators
+      </th>
+      <td>
+        Obtain page content operators to explore low-level content presentation.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Add, Remove and Insert page content operators in PDF file.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="3">
+        Stamp and Watermark
+      </th>
+      <td>
+        Add text, image, and PDF page stamps.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Add page number stamp.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Add header and footer artifacts on PDF page. Adding both image and text content is possible.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="4">
+        Links and Actions
+      </th>
+      <td>
+        Create application, Web, and JavaScript links.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Extract links.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Remove document open action.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sanitize a PDF document from potentially harmful links and actions.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="6">
+        Security and Signatures
+      </th>
+      <td>
+        Encrypt PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Decrypt PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Modify password.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sign PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Verify signatures.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        PAdES support.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-## Images
-
-- Add image in PDF file.
-- Delete images.
-- Replace images.
-- Extract images.
-- PDF to JPEG conversion (particular page or all pages).
-- PDF to TIFF conversion (individual pages or a single TIFF image).
-- PDF to PNG conversion (particular page or all pages).
-- PDF to BMP conversion.
-
-## Attachments
-
-- Add attachment.
-- Get attachments.
-- Delete attachments.
-- Get attachment information.
-
-## Page
-
-- Get page count.
-- Get page properties.
-- Concatenate PDF files.
-- Insert empty page in a PDF file.
-- Insert PDF pages.
-- Delete PDF pages.
-- Split PDF to individual pages.
-- Get a particular page.
-
-## Document
-
-- Get document viewer properties.
-- Set document viewer properties.
-- Get page display properties.
-- Set page display properties.
-- Get PDF file information.
-- Set PDF file information.
-- Linearization (optimization for the web).
-- Validation (PDF/A-1a, PDF/A-1b, PDF/A-2a).
-- Set XMP metadata.
-- Get XMP metadata.
-- PDF to DOC/DOCX conversion.
-- PDF to HTML conversion.
-- PDF to XPS conversion.
-- PDF to Tex conversion.
-
-## Bookmarks
-
-- Add bookmarks.
-- Add child bookmarks.
-- Delete bookmarks.
-- Get bookmarks.
-- Get child bookmarks.
-- Modify bookmarks.
-- Modify child bookmarks.
-
-## Annotations
-
-- Add annotations.
-- Get annotations.
-- Delete annotations.
-- Modify annotations.
-
-## Forms
-
-- Add fields.
-- Delete fields.
-- Modify fields.
-- Fill fields.
-- Get field values.
-- Support for XFA (XML based Forms) and AcroForms (Standard Forms)
-
-## Operators
-
-- Add operators in PDF file.
-
-## Stamp and Watermark
-
-- Add text stamp.
-- Add image stamp.
-- Add PDF page stamp.
-- Add page number stamp.
-- Add text in the header.
-- Add image in the header.
-- Add text in the footer.
-- Add image in the footer.
-
-## Links and Actions
-
-- Create application link.
-- Create JavaScript link.
-- Remove document open action.
-- Extract links.
-
-## Security and Signatures
-
-- Encrypt PDF.
-- Decrypt PDF.
-- Modify password.
-
-## Miscellaneous
-
-Get build version information.
