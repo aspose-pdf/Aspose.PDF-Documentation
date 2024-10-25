@@ -1,5 +1,5 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
@@ -8,9 +8,9 @@ description: This section describes the basic principles of work and using DOM A
 is_node: true
 aliases:
     - /net/getting-started/
-lastmod: "2021-06-05"   
+lastmod: "2024-10-25"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -24,9 +24,9 @@ To find out more about Aspose.PDF, select the appropriate section:
 
 [System Requirements](/pdf/net/system-requirements/) – provides information about system and development environment requirements
 
-[Hello World](/pdf/net/hello-world-example/) – provides information on how to create simple PDF document using C# and Aspose.PDF 
+[Hello World](/pdf/net/hello-world-example/) – provides information on how to create simple PDF document using C# and Aspose.PDF
 
-[How to Run the Examples](/pdf/net/how-to-run-other-examples/) – describes how to download and run the examples and what software requirements must be 
+[How to Run the Examples](/pdf/net/how-to-run-other-examples/) – describes how to download and run the examples and what software requirements must be
 
 [Complex PDF](/pdf/net/complex-pdf-example/) – describes how to create a more complex document with C# library
 
@@ -40,11 +40,11 @@ To find out more about Aspose.PDF, select the appropriate section:
 
 [How to Run Aspose.PDF in Docker](/pdf/net/docker/) – provides information on how to utilize Aspose.PDF in a Docker container
 
-[Overview of Aspose.PDF.Drawing for .NET](/pdf/net/drawing/) – provides information on how to use a new graphical Aspose.Drawing interface instead of System.Drawing 
+[Overview of Aspose.PDF.Drawing for .NET](/pdf/net/drawing/) – provides information on how to use a new graphical Aspose.Drawing interface instead of System.Drawing
 
-[Basics of Aspose.PDF DOM API](/pdf/net/basics-of-dom-api/) – this section will show the features of working with DOM, the form of presentation of structured documents as object-oriented model 
+[Basics of Aspose.PDF DOM API](/pdf/net/basics-of-dom-api/) – this section will show the features of working with DOM, the form of presentation of structured documents as object-oriented model
 
-### Learn more about:
+## Learn more about
 
 - [Basics of DOM API](/pdf/net/basics-of-dom-api/)
 - ["Hello, World" C# Example](/pdf/net/hello-world-example/)

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/text-stamps-in-the-pdf-file/
 description: Add a text stamp to a PDF file using the TextStamp class with C++.
-lastmod: "2021-12-95"
+lastmod: "2024-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,7 +17,7 @@ You can use [TextStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te
 
 ```cpp
 void AddTextStampToPDFFile() {
-   
+
     String _dataDir("C:\\Samples\\");
 
     // String for input file name
@@ -26,7 +26,7 @@ void AddTextStampToPDFFile() {
 
     // Open document
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // Create text stamp
     auto textStamp =MakeObject<TextStamp>(u"Sample Stamp");
 
@@ -69,7 +69,7 @@ void DefineAlignmentTextStamp() {
 
     // Open document
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // instantiate FormattedText object with sample string
     auto text = MakeObject<Aspose::Pdf::Facades::FormattedText>("This");
 
