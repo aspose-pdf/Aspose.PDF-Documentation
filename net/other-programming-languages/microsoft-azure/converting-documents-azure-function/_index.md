@@ -1,9 +1,9 @@
 ---
-title: Converting Documents in Microsoft Azure
-linktitle: Converting Documents in Microsoft Azure
+title: Converting Documents with Microsoft Azure function
+linktitle: Converting Documents with Microsoft Azure function
 type: docs
-weight: 110
-url: /net/converting-documents-microsoft-azure/
+weight: 20
+url: /net/converting-documents-with-microsoft-azure-function/
 lastmod: "2024-10-25"
 sitemap:
     changefreq: "weekly"
@@ -18,8 +18,8 @@ The following code snippet tested with:
 
 * Visual Studio 2022 Community Edition with installed Azure development or Visual Studio Code.
 * Azure Account: You need an Azure subscription, create a free account before begin.
-* .NET 6.0 SDK.
-* Aspose.PDF for .NET 24.10.
+* .NET 6.0 SDK or later.
+* Aspose.PDF for .NET.
 
 ## Step 1: Create Azure Resources
 
