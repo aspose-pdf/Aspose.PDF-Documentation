@@ -1,6 +1,6 @@
 ---
-title: Converting Documents in Windows Azure
-linktitle: Converting Documents in Windows Azure
+title: Converting Documents in Microsoft Azure
+linktitle: Converting Documents in Microsoft Azure
 type: docs
 weight: 110
 url: /net/converting-documents-microsoft-azure/
