@@ -31,7 +31,7 @@ This add-on will work with all versions of **Microsoft Dynamics CRM 2015 and CRM
 
 ### System Requirements
 
-In order to install and use Aspose .Net OneClick PDF Document Generator for Microsoft Dynamics CRM you need to have one of the following CRM version
+In order to install and use Aspose .NET OneClick PDF Document Generator for Microsoft Dynamics CRM you need to have one of the following CRM version
 
 - Microsoft Dynamics CRM 2015.
 - Microsoft Dynamics CRM Online.
