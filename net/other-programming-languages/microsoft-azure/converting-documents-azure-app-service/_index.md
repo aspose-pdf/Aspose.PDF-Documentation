@@ -13,9 +13,6 @@ sitemap:
 This article provides detailed step-by-step instructions for converting PDF documents in Microsoft Azure using Aspose.PDF for .NET and Azure App service.
 
 ## Prerequisites
-
-The following code snippet tested with:
-
 * Visual Studio 2022 Community Edition with installed Azure development or Visual Studio Code.
 * Azure Account: You need an Azure subscription, create a free account before begin.
 * .NET 6 SDK.
