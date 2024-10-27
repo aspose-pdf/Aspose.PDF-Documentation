@@ -18,10 +18,10 @@ The following code snippet tested with:
 
 * Visual Studio 2022 Community Edition with installed Azure development or Visual Studio Code.
 * Azure Account: You need an Azure subscription, create a free account before begin.
-* .NET 6.0 SDK or later.
+* .NET 6 SDK.
 * Aspose.PDF for .NET.
 
-## Step 1: Create Azure Resources
+## Create Azure Resources
 
 ### Create Storage Account
 1. Go to Azure Portal (https://portal.azure.com).
@@ -46,17 +46,18 @@ The following code snippet tested with:
 5. Set public access level to "Private".
 6. Click "Create".
 
-## Step 2: Create Visual Studio Project
+## Create Project
 
-1. Open Visual Studio.
-2. Create a new project.
+### Create Visual Studio Project
+1. Open Visual Studio 2022.
+2. Click "Create a new project".
 3. Select "Azure Functions".
 4. Name your project "PdfConverterAzure".
-5. Choose ".NET 6.0" and "HTTP trigger".
+5. Choose ".NET 6.0" or later and "HTTP trigger".
+6. Click "Create".
 
-## Step 2.1: Create Visual Studio Code Project
-
-### Install Prerequisites
+### Create Visual Studio Code Project
+#### Install Prerequisites
 1. Visual Code extensions:
 ```bash
 code --install-extension ms-dotnettools.csharp
@@ -74,8 +75,7 @@ npm install -g azure-functions-core-tools@4 --unsafe-perm true
 - macOS: `brew install azure-cli`
 - Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
 
-### Configure Project
-
+#### Configure Project
 1. Open project in Visual Studio Code:
 ```bash
 code .
@@ -90,15 +90,14 @@ code .
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.1" />
-    <PackageReference Include="Aspose.PDF" Version="23.1.0" />
+    <PackageReference Include="Aspose.PDF" Version="24.10.0" />
     <PackageReference Include="Azure.Storage.Blobs" Version="12.14.1" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="5.0.1" />
   </ItemGroup>
 </Project>
 ```
 
-## Step 3: Install Required NuGet Packages
-
+## Install Required NuGet Packages
 In Visual Studio open Package Manager Console and run:
 ```powershell
 Install-Package Aspose.PDF
@@ -111,8 +110,7 @@ In Visual Studio Code run:
 dotnet restore
 ```
 
-## Step 4: Configure Azure Storage Connection
-
+## Configure Azure Storage Connection
 Get Access Keys for the storage account under Access keys in the Azure Portal. These keys will be used to authenticate your application.
 
 1. Open `local.settings.json`:
@@ -129,8 +127,18 @@ Get Access Keys for the storage account under Access keys in the Azure Portal. T
 
 2. Replace `YOUR_STORAGE_CONNECTION_STRING` with your actual storage connection string from Azure Portal.
 
-## Step 5: Create PDF Converter Class
+## Configure Aspose License
+In Visual Studio:
+1. Copy your Aspose.PDF license file to the project.
+2. Right-click on the license file.
+3. Set "Copy to Output Directory" to "Copy always".
+4. Add license initialization code in Program.cs:
+   ```csharp
+   var license = new Aspose.Pdf.License();
+   license.SetLicense("Aspose.PDF.lic");
+   ```
 
+## Create code
 Create a new file `PdfConverter.cs`:
 
 ```csharp
@@ -211,8 +219,6 @@ public class PdfConverter
 }
 ```
 
-## Step 6: Create Azure Function
-
 Create a new file `ConvertPdfFunction.cs`:
 
 ```csharp
@@ -235,6 +241,8 @@ public static class ConvertPdfFunction
     {
         try
         {
+            SetAsposeLicense();
+
             // Read request body
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
@@ -263,12 +271,26 @@ public static class ConvertPdfFunction
             return new StatusCodeResult(500);
         }
     }
+
+    private static void SetAsposeLicense()
+    {
+        var license = new License();
+
+        // Load the license from the embedded resource stream
+        using (Stream licenseStream = Assembly.GetExecutingAssembly()
+                                              .GetManifestResourceStream("YourNamespace.YourLicenseFileName.lic"))
+        {
+            if (licenseStream == null)
+                throw new FileNotFoundException("Aspose license file not found in resources.");
+
+            license.SetLicense(licenseStream);
+        }
+    }
 }
 ```
 
-## Step 7: Test Locally
-
-Using Visual Studio:
+## Test Locally
+In Visual Studio:
 1. Start the Azure Storage Emulator.
 2. Run the project in Visual Studio.
 3. Use Postman or curl to test:
@@ -279,7 +301,7 @@ curl -X POST http://localhost:7071/api/ConvertPdf \
 -d '{"sourceBlob": "sample.pdf", "targetFormat": "docx"}'
 ```
 
-Using Visual Studio Code:
+In Visual Studio Code:
 1. Start the function app:
 ```bash
 func start
@@ -301,9 +323,8 @@ curl -X POST http://localhost:7071/api/ConvertPdf \
 -d '{"sourceBlob": "sample.pdf", "targetFormat": "docx"}'
 ```
 
-## Step 8: Deploy to Azure
-
-Using Visual Studio:
+## Deploy to Azure
+In Visual Studio:
 1. Right-click the project in Visual Studio.
 2. Select "Publish".
 3. Choose "Azure Function App".
@@ -311,15 +332,14 @@ Using Visual Studio:
 5. Create new or select existing Function App.
 6. Click "Publish".
 
-Using Visual Studio Code:
+In Visual Studio Code:
 1. Press F1 or Ctrl+Shift+P.
 2. Select "Azure Functions: Deploy to Function App".
 3. Choose your subscription.
 4. Select the function app created above.
 5. Click "Deploy".
 
-## Step 9: Configure Azure Function App
-
+## Configure Azure Function App
 1. Go to Azure Portal.
 2. Open your Function App.
 3. Go to "Configuration".
@@ -328,37 +348,10 @@ Using Visual Studio Code:
    - Value: "pdfdocs".
 5. Save changes.
 
-## Usage Examples
-
-### Convert PDF to Word
-```json
-{
-    "sourceBlob": "document.pdf",
-    "targetFormat": "docx"
-}
-```
-
-### Convert PDF to Excel
-```json
-{
-    "sourceBlob": "spreadsheet.pdf",
-    "targetFormat": "xlsx"
-}
-```
-
-### Convert PDF to JPEG
-```json
-{
-    "sourceBlob": "image.pdf",
-    "targetFormat": "jpeg"
-}
-```
-
 ## Supported Formats
 The list of supported formats can be found [here](https://docs.aspose.com/pdf/net/supported-file-formats/).
 
 ## Performance
-
 1. Use appropriate memory settings in host.json:
 ```json
 {
