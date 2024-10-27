@@ -322,6 +322,7 @@ curl -X POST "https://your-app.azurewebsites.net/api/pdf/convert?outputFormat=do
      -F "file=@sample.pdf" \
      -o converted.docx
 ```
+
 ## Supported Formats
 The list of supported formats can be found [here](https://docs.aspose.com/pdf/net/supported-file-formats/).
 

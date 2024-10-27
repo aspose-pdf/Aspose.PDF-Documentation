@@ -129,7 +129,7 @@ In Visual Studio:
 1. Copy your Aspose.PDF license file to the project.
 2. Right-click on the license file.
 3. Set "Copy to Output Directory" to "Copy always".
-4. Add license initialization code in Program.cs:
+4. Add license initialization code in Startup.cs:
    ```csharp
    var license = new Aspose.Pdf.License();
    license.SetLicense("Aspose.PDF.lic");
@@ -233,13 +233,11 @@ public static class ConvertPdfFunction
 {
     [FunctionName("ConvertPdf")]
     public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequest req,
+        [HttpTrigger(AuthorizationLevel.Function, "post"), Route = "convert"] HttpRequest req,
         ILogger log)
     {
         try
         {
-            SetAsposeLicense();
-
             // Read request body
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
@@ -268,19 +266,31 @@ public static class ConvertPdfFunction
             return new StatusCodeResult(500);
         }
     }
+}
+```
 
-    private static void SetAsposeLicense()
+```csharp
+// Startup.cs
+[assembly: FunctionsStartup(typeof(PdfConverterAzure.Functions.Startup))]
+namespace PdfConverterAzure.Functions
+{
+    public class Startup : FunctionsStartup
     {
-        var license = new License();
-
-        // Load the license from the embedded resource stream
-        using (Stream licenseStream = Assembly.GetExecutingAssembly()
-                                              .GetManifestResourceStream("YourNamespace.YourLicenseFileName.lic"))
+        public override void Configure(IFunctionsHostBuilder builder)
         {
-            if (licenseStream == null)
-                throw new FileNotFoundException("Aspose license file not found in resources.");
+            // Read configuration
+            var config = builder.GetContext().Configuration;
 
-            license.SetLicense(licenseStream);
+            // Register services
+            builder.Services.AddLogging();
+
+            // Register Azure Storage
+            builder.Services.AddSingleton(x => 
+                new BlobServiceClient(config["AzureWebJobsStorage"]));
+
+            // Configure Aspose License
+            var license = new Aspose.Pdf.License();
+            license.SetLicense("Aspose.PDF.lic");
         }
     }
 }
@@ -293,7 +303,7 @@ In Visual Studio:
 3. Use Postman or curl to test:
 
 ```bash
-curl -X POST http://localhost:7071/api/ConvertPdf \
+curl -X POST http://localhost:7071/api/convert \
 -H "Content-Type: application/json" \
 -d '{"sourceBlob": "sample.pdf", "targetFormat": "docx"}'
 ```
@@ -307,7 +317,7 @@ func start
 2. Upload a PDF to test:
 ```bash
 az storage blob upload \
-    --account-name pdfconverterstore \
+    --account-name $AccountName \
     --container-name pdfdocs \
     --name sample.pdf \
     --file /path/to/your/sample.pdf
@@ -315,7 +325,7 @@ az storage blob upload \
 
 3. Use Postman or curl to test:
 ```bash
-curl -X POST http://localhost:7071/api/ConvertPdf \
+curl -X POST http://localhost:7071/api/convert \
 -H "Content-Type: application/json" \
 -d '{"sourceBlob": "sample.pdf", "targetFormat": "docx"}'
 ```
@@ -345,16 +355,32 @@ In Visual Studio Code:
    - Value: "pdfdocs".
 5. Save changes.
 
+## Test the Deployed Service
+Use Postman or curl to test:
+```bash
+curl -X POST "https://your-function.azurewebsites.net/api/convert" \
+     -H "x-functions-key: your-function-key" \
+     -H "Content-Type: application/json" \
+     -d '{"sourceBlob": "sample.pdf", "targetFormat": "docx"}'
+```
+
 ## Supported Formats
 The list of supported formats can be found [here](https://docs.aspose.com/pdf/net/supported-file-formats/).
 
-## Performance
-1. Use appropriate memory settings in host.json:
-```json
+## Trobleshooting
+### Important Configuration Options
+1. Add authentication:
+```csharp
+[FunctionName("ConvertPdf")]
+public async Task<IActionResult> Run(
+    [HttpTrigger(AuthorizationLevel.Function, "post", Route = "convert")] HttpRequest req,
+    ClaimsPrincipal principal,
+    ILogger log)
 {
-    "version": "2.0",
-    "functionTimeout": "00:10:00",
-    "memoryThreshold": 1536
+    // Check authentication
+    if (!principal.Identity.IsAuthenticated)
+        return new UnauthorizedResult();
+    // ...
 }
 ```
 
