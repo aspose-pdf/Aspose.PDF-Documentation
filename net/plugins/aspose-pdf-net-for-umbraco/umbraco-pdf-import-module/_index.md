@@ -101,7 +101,6 @@ Aspose .NET PDF Import for Umbraco is open source and its source code is availab
 
 You can get the latest source code from one of the following locations
 
-- [CodePlex](https://asposeumbraco.codeplex.com/SourceControl/latest)
 - [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco)
 - [Sourceforge](https://sourceforge.net/p/asposeumbraco/code/ci/master/tree/)
 - [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/src)
