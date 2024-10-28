@@ -43,9 +43,7 @@ Please feel free to contact us if you find any issues in installing or using thi
 
 You can download the latest solution at:
 
-- [Codeplex](https://asposepdfmscrm.codeplex.com/releases/view/620418)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/OneClickPDFGenerator)
-- [Code.MSDN](https://code.msdn.microsoft.com/Aspose-NET-OneClick-PDF-ca034b5d)
 
 ## Installing or Uninstalling
 
@@ -91,17 +89,13 @@ We offer free support. Anyone who uses our product, whether they have bought the
 
 You can log any issues or suggestions related to Aspose OneClick PDF Document Generator using any of the following platforms:
 
-- [Codeplex](https://asposepdfmscrm.codeplex.com/workitem/list/basic)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/issues)
-- [Code.MSDN](https://code.msdn.microsoft.com/Aspose-NET-OneClick-PDF-ca034b5d/view/Discussions#content)
 
 ## Extend and Contribute
 
 You can download the latest source code at:
 
-- [Codeplex](https://asposepdfmscrm.codeplex.com/workitem/list/basic)
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Dynamics%20CRM/OneClick%20PDF%20Document%20Generator).
-- [Code.MSDN](https://code.msdn.microsoft.com/Aspose-NET-OneClick-PDF-ca034b5d/view/SourceCode#content).
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Dynamics%20CRM/OneClick%20PDF%20Document%20Generator)
 
 To Customize the solution download and install the unmanaged solution into CRM.
 
