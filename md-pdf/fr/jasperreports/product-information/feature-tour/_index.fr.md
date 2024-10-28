@@ -1,0 +1,20 @@
+---
+title: Feature Tour
+
+type: docs
+
+weight: 30
+
+url: /jasperreports/feature-tour/
+
+lastmod: "2021-06-05"
+
+---
+
+**Cette section comprend les sujets suivants :**
+
+- [Déploiement facile et léger](/pdf/jasperreports/easy-and-lightweight-deployment/)
+
+- [Licences simples et abordables](/pdf/jasperreports/simple-and-affordable-licensing/)
+
+- [Support technique gratuit de classe mondiale](/pdf/jasperreports/world-class-free-technical-support/)
