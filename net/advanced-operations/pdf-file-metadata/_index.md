@@ -1,8 +1,8 @@
 ---
-title: Working with PDF File Metadata | C#
+title: Working with PDF File Metadata in C#
 linktitle: PDF File Metadata
 type: docs
-weight: 140
+weight: 200
 url: /net/pdf-file-metadata/
 description: This section explains how to get PDF file information, how to get XMP Metadata from a PDF file, set PDF File Information.
 lastmod: "2022-02-17"

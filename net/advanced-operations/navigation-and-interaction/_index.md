@@ -2,7 +2,7 @@
 title: Navigation and Interaction in PDF
 linktitle: Navigation and interaction
 type: docs
-weight: 90
+weight: 140
 url: /net/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks.
 lastmod: "2022-02-17"

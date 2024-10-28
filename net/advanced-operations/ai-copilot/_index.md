@@ -1,8 +1,8 @@
 ---
-title: Working with AI Copilot
-linktitle: Working with AI Copilot
+title: PDF AI Copilot
+linktitle: PDF AI Copilot
 type: docs
-weight: 10
+weight: 150
 url: /net/ai-copilot/
 description: This article describes how AI Copilot can be used to process the PDF document with Aspose.PDF library.
 sitemap:

@@ -3,7 +3,7 @@ title: Working with Graphs in PDF file
 linktitle: Working with Graphs
 type: docs
 weight: 70
-url: /net/graphs/
+url: /net/working-with-graphs/
 description: This article explains what a is Graph, how to create a filled rectangle object, and other functions
 lastmod: "2022-02-17"
 sitemap:
