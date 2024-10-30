@@ -243,7 +243,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 // Counter for grayscale images
 int grayscaled = 0;
 // Counter for RGB images
-int rgd = 0;
+int rgb = 0;
 
 using (Document document = new Document(dataDir + "ExtractImages.pdf"))
 {
@@ -266,7 +266,7 @@ using (Document document = new Document(dataDir + "ExtractImages.pdf"))
                     Console.WriteLine("Image {0} is GrayScale...", image_counter);
                     break;
                 case ColorType.Rgb:
-                    ++rgd;
+                    ++rgb;
                     Console.WriteLine("Image {0} is RGB...", image_counter);
                     break;
             }

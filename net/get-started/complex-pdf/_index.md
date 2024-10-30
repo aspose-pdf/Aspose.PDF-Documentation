@@ -41,7 +41,7 @@ namespace Aspose.Pdf.Examples
     public static class ExampleGetStarted
     {
         private static readonly string _dataDir = "..\\..\\..\\Samples";
-public static void MakeComplexDocument()
+        public static void MakeComplexDocument()
         {
             // Initialize document object
             Document document = new Document();
