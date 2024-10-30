@@ -69,10 +69,10 @@ aliases:
             }
         ]
     },
-    "url": "/net/operators/",
+    "url": "/net/working-with-operators/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/operators/"
+        "@id": "/net/working-with-operators/"
     },
     "dateModified": "2022-02-04",
     "description": "This topic explains how to use operators with Aspose.PDF. The operator classes provide great features for PDF manipulation."
