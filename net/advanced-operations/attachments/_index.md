@@ -2,7 +2,7 @@
 title: Working with Attachments in PDF
 linktitle: Working with Attachments
 type: docs
-weight: 130
+weight: 190
 url: /net/attachments/
 description: Use C# PDF API to access, add and remove attachments in PDF files using C# from within your applications. Complete guide with C# code samples.
 lastmod: "2022-02-17"

@@ -1,8 +1,9 @@
 ---
 title: Working with JavaScript
 type: docs
+weight: 120
 url: /net/working-with-javascript/
-lastmod: "2022-02-17"
+lastmod: "2024-10-28"
 ---
 <script type="application/ld+json">
 {

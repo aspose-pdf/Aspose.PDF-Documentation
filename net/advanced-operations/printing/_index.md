@@ -2,7 +2,7 @@
 title: Printing PDF documents
 linktitle: Printing document
 type: docs
-weight: 160
+weight: 220
 url: /net/printing-document/
 description: C# Print PDF techniques and walkthrough for C# PDF printer settings and .NET project tips
 lastmod: "2022-02-17"

@@ -2,10 +2,10 @@
 title: Working with ZUGFeRD
 linktitle: Working with ZUGFeRD
 type: docs
-weight: 90
+weight: 110
 url: /net/working-with-zugferd/
 description: Learn how to create ZUGFeRD-compliant PDF Invoices in C# in Aspose.PDF for .NET
-lastmod: "2023-09-27"
+lastmod: "2024-10-28"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

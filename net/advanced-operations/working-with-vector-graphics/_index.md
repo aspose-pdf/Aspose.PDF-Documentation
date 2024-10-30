@@ -2,7 +2,7 @@
 title: Working with Vector Graphics
 linktitle: Working with Vector Graphics
 type: docs
-weight: 120
+weight: 100
 url: /net/working-with-vector-graphics/
 description: This articles describes the features of working with GraphicsAbsorber tool using C#.
 lastmod: "2024-02-17"
