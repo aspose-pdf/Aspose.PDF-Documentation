@@ -178,7 +178,6 @@ Please take a look over following code snippet to accomplish this requirement.
 ```csharp
 public static void ExampleLineAcrossPage()
 {
-
     // Create Document instance
     var document = new Document();
 

@@ -163,7 +163,6 @@ public static void ArcFilled()
 
     // Save PDF file
     document.Save(_dataDir + "ExampleFilledArc_out.pdf");
-
 }
 ```
 

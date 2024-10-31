@@ -184,7 +184,6 @@ public static void EllipseWithText()
     ellipse1.Text = textFragment;
     graph.Shapes.Add(ellipse1);
 
-
     var ellipse2 = new Ellipse(200, 150, 180, 120);
     ellipse2.GraphInfo.FillColor = Color.DarkRed;
     ellipse2.Text = textFragment;
@@ -195,7 +194,6 @@ public static void EllipseWithText()
 
     // Save PDF file
     document.Save(_dataDir + "DrawingEllipseText_out.pdf");
-
 }
  ```
 

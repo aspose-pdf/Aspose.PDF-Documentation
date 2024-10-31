@@ -182,10 +182,12 @@ public static void AddHighlightAnnotationAdvanced()
     }
     document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
 }
+
 private static HighlightAnnotation HighLightTextFragment(Aspose.Pdf.Page page,
     TextFragment textFragment, Color color)
 {
     if (textFragment.Segments.Count == 1)
+    {
         return new HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
         {
             Title = "Aspose User",
@@ -199,6 +201,7 @@ private static HighlightAnnotation HighLightTextFragment(Aspose.Pdf.Page page,
                 new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
             }
         };
+    }
 
     var offset = 0;
     var quadPoints = new Point[textFragment.Segments.Count * 4];

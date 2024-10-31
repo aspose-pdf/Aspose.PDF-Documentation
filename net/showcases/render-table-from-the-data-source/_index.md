@@ -29,6 +29,7 @@ var table = new Table
     // Set the border for table cells as Black
     DefaultCellBorder = new BorderInfo(BorderSide.All, .2f, Color.Green),
 };
+
 for (var rowCount = 0; rowCount < 10; rowCount++)
 {
     // Add row to table

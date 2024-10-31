@@ -17,20 +17,21 @@ Follow the next code snippet for resolve your task:
 ```csharp
 public static class ExamplePdfConverter
 {
-private static readonly string _dataDir = @"C:\Samples\Facades\PdfConverter\";
-public static void MergeImages01()
-{
-    var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
-                            .OrderBy(f => f)
-                            .Select(f => File.OpenRead(f))
-                            .Cast<Stream>()
-                            .ToList();
-
-    using (Stream inputStream =
-            PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
+    private static readonly string _dataDir = @"C:\Samples\Facades\PdfConverter\";
+    public static void MergeImages01()
     {
-        FileStream outputStream = new FileStream(_dataDir+"merged_images.jpg", FileMode.Create);
-        inputStream.CopyTo(outputStream);
+        var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+                                .OrderBy(f => f)
+                                .Select(f => File.OpenRead(f))
+                                .Cast<Stream>()
+                                .ToList();
+
+        using (Stream inputStream =
+                PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
+        {
+            FileStream outputStream = new FileStream(_dataDir+"merged_images.jpg", FileMode.Create);
+            inputStream.CopyTo(outputStream);
+        }
     }
 }
 ```
