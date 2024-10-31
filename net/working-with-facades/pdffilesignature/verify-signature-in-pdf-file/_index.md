@@ -18,13 +18,15 @@ The following code snippet shows you how to verify whether PDF is signed using a
 
 ```csharp
 public static void IsPdfSigned()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
-            if (pdfSign.ContainsSignature())
-                Console.WriteLine("Document Signed");
-            pdfSign.Close();
-        }
+{
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    if (pdfSign.ContainsSignature())
+    {
+        Console.WriteLine("Document Signed");
+    }
+    pdfSign.Close();
+}
 ```
 
 ### Verifying that a PDF is Signed
@@ -32,19 +34,15 @@ public static void IsPdfSigned()
 To determine if a file is singed, without providing the signature name, use the following code.
 
 ```csharp
- public static void IsPdfSignedWithGivenSignature()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
-            if (pdfSign.VerifySigned("Signature1"))
-            {
-                Console.WriteLine("PDF Signed");
-            }
-            //if (pdfSign.VerifySigned("Signature2"))
-            //{
-            //    Console.WriteLine("PDF Signed");
-            //}
-        }
+public static void IsPdfSignedWithGivenSignature()
+{
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    if (pdfSign.VerifySigned("Signature1"))
+    {
+        Console.WriteLine("PDF Signed");
+    }
+}
 ```
 
 ## Verify whether the Signature is Valid
@@ -53,12 +51,12 @@ To determine if a file is singed, without providing the signature name, use the 
 
 ```csharp
 public static void IsPdfSignatureValid()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
-            if (pdfSign.VerifySignature("Signature1"))
-            {
-                Console.WriteLine("Signature Verified");
-            }
-        }
+{
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    if (pdfSign.VerifySignature("Signature1"))
+    {
+        Console.WriteLine("Signature Verified");
+    }
+}
 ```
