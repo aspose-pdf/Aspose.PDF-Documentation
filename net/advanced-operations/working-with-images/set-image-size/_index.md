@@ -91,7 +91,7 @@ Aspose.Pdf.Image img = new Aspose.Pdf.Image();
 img.FixWidth = 100;
 img.FixHeight = 100;
 // Set image type as SVG
-img.FileType = Aspose.Pdf.ImageFileType.Svg;
+img.FileType = Aspose.Pdf.ImageFileType.Unknown;
 // Path for source file
 img.File = dataDir + "aspose-logo.jpg";
 page.Paragraphs.Add(img);
