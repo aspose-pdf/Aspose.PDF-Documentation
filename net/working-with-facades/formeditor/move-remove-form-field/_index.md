@@ -15,12 +15,12 @@ If you want to move a form field to a new location then you can use [MoveField](
 
 ```csharp
 public static void MoveField()
-        {
-            var editor = new FormEditor();
-            editor.BindPdf(_dataDir + "Sample-Form-05.pdf");
-            editor.MoveField("Last Name", 262.56f, 496.75f, 382.28f, 514.03f);
-            editor.Save(_dataDir + "Sample-Form-05-mod.pdf");
-        }
+{
+    var editor = new FormEditor();
+    editor.BindPdf(_dataDir + "Sample-Form-05.pdf");
+    editor.MoveField("Last Name", 262.56f, 496.75f, 382.28f, 514.03f);
+    editor.Save(_dataDir + "Sample-Form-05-mod.pdf");
+}
 ```
 
 ## Delete Form Field from an Existing PDF File 
@@ -28,14 +28,14 @@ public static void MoveField()
 In order to delete a form field from an existing PDF file, you can use RemoveField method of FormEditor class. This method takes only one argument: field name. You need to create an object of FormEditor class, call [RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield) method to remove a particular field from the PDF and then call the Save method to save the updated PDF file. The following code snippet shows you how to delete form fields from an existing PDF file.
 
 ```csharp
-  public static void RemoveFields()
-        {
-            var editor = new FormEditor();
-            editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
-            editor.RemoveField("First Name");
-            editor.RemoveField("Last Name");
-            editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
-        }
+public static void RemoveFields()
+{
+    var editor = new FormEditor();
+    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+    editor.RemoveField("First Name");
+    editor.RemoveField("Last Name");
+    editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
+}
 ```
 
 ## Rename Form Fields in PDF
@@ -43,13 +43,12 @@ In order to delete a form field from an existing PDF file, you can use RemoveFie
 Also you can rename your field using [RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield) method of [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class.
 
 ```csharp
-
-        public static void RenameFields()
-        {
-            var editor = new FormEditor();
-            editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
-            editor.RenameField("Last Name", "LastName");
-            editor.RenameField("First Name", "FirstName");
-            editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
-        }
+public static void RenameFields()
+{
+    var editor = new FormEditor();
+    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+    editor.RenameField("Last Name", "LastName");
+    editor.RenameField("First Name", "FirstName");
+    editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
+}
 ```

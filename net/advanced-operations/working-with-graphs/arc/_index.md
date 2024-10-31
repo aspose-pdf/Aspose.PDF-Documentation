@@ -97,39 +97,38 @@ Follow the steps below:
 The following code snippet shows how to add a [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc) object.
 
 ```csharp
- public static void Arc()
-        {
-            // Create Document instance
-            var document = new Document();
+public static void Arc()
+{
+    // Create Document instance
+    var document = new Document();
 
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
+    // Add page to pages collection of PDF file
+    var page = document.Pages.Add();
 
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
+    // Create Drawing object with certain dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
+    // Set border for Drawing object
+    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
+    graph.Border = borderInfo;
 
-            var arc1 = new Arc(100, 100, 95, 0, 90);
-            arc1.GraphInfo.Color = Color.GreenYellow;
-            graph.Shapes.Add(arc1);
+    var arc1 = new Arc(100, 100, 95, 0, 90);
+    arc1.GraphInfo.Color = Color.GreenYellow;
+    graph.Shapes.Add(arc1);
 
-            var arc2 = new Arc(100, 100, 90, 70, 180);
-            arc2.GraphInfo.Color = Color.DarkBlue;
-            graph.Shapes.Add(arc2);
+    var arc2 = new Arc(100, 100, 90, 70, 180);
+    arc2.GraphInfo.Color = Color.DarkBlue;
+    graph.Shapes.Add(arc2);
 
-            var arc3 = new Arc(100, 100, 85, 120, 210);
-            arc3.GraphInfo.Color = Color.Red;
-            graph.Shapes.Add(arc3);
+    var arc3 = new Arc(100, 100, 85, 120, 210);
+    arc3.GraphInfo.Color = Color.Red;
+    graph.Shapes.Add(arc3);
 
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
+    // Add Graph object to paragraphs collection of page
+    page.Paragraphs.Add(graph);
 
-            // Save PDF file
-            document.Save(_dataDir + "DrawingArc_out.pdf");
-
-        }
+    // Save PDF file
+    document.Save(_dataDir + "DrawingArc_out.pdf");
+}
 ```
 
 ## Create Filled Arc Object
@@ -137,35 +136,35 @@ The following code snippet shows how to add a [Arc](https://reference.aspose.com
 Next example shows how to add a Arc object that is filled with color and certain dimensions.
 
 ```csharp
-        public static void ArcFilled()
-        {
-            // Create Document instance
-            var document = new Document();
+public static void ArcFilled()
+{
+    // Create Document instance
+    var document = new Document();
 
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
+    // Add page to pages collection of PDF file
+    var page = document.Pages.Add();
 
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
+    // Create Drawing object with certain dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
+    // Set border for Drawing object
+    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
+    graph.Border = borderInfo;
 
-            var arc = new Arc(100, 100, 95, 0, 90);
-            arc.GraphInfo.FillColor = Color.GreenYellow;
-            graph.Shapes.Add(arc);
+    var arc = new Arc(100, 100, 95, 0, 90);
+    arc.GraphInfo.FillColor = Color.GreenYellow;
+    graph.Shapes.Add(arc);
 
-            var line = new Line(new float[] { 195, 100, 100, 100, 100, 195 });
-            line.GraphInfo.FillColor = Color.GreenYellow;
-            graph.Shapes.Add(line);
+    var line = new Line(new float[] { 195, 100, 100, 100, 100, 195 });
+    line.GraphInfo.FillColor = Color.GreenYellow;
+    graph.Shapes.Add(line);
 
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
+    // Add Graph object to paragraphs collection of page
+    page.Paragraphs.Add(graph);
 
-            // Save PDF file
-            document.Save(_dataDir + "ExampleFilledArc_out.pdf");
+    // Save PDF file
+    document.Save(_dataDir + "ExampleFilledArc_out.pdf");
 
-        }
+}
 ```
 
 Let's see the result of adding a filled Arс:

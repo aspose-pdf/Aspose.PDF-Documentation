@@ -15,13 +15,13 @@ Bookmarks give you the option to keep track/link to specific page inside the PDF
 Other than the creation of simple bookmarks, sometimes you have a requirement to create a bookmark in the form of chapters where you nest the individual bookmarks inside of the chapter bookmarks so that when you click on the + sign for a chapter you would see the pages inside when the bookmarks expands, as shown in the picture below .
  
 ```csharp
-   public static void AddBookmarksAction()
-        {
-            var document = new Document(_dataDir + "Sample.pdf");
-            PdfContentEditor editor = new PdfContentEditor(document);
-            editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
+public static void AddBookmarksAction()
+{
+    var document = new Document(_dataDir + "Sample.pdf");
+    PdfContentEditor editor = new PdfContentEditor(document);
+    editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
 
-            // Saves the result PDF to file
-            editor.Save(_dataDir + "PdfContentEditorDemo_Bookmark.pdf");
-        }
+    // Saves the result PDF to file
+    editor.Save(_dataDir + "PdfContentEditorDemo_Bookmark.pdf");
+}
 ```

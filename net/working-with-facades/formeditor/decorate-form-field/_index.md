@@ -15,22 +15,22 @@ The following code snippet shows you how to decorate a particular form field.
 
 ```csharp
 public static void DecorateField()
-        {
-            var editor = new FormEditor();
-            editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+{
+    var editor = new FormEditor();
+    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
 
-            var cityDecoration = new FormFieldFacade
-            {
-                Font = FontStyle.Courier,
-                FontSize = 12,
-                BorderColor = System.Drawing.Color.Black,
-                BorderWidth = 2
-            };
+    var cityDecoration = new FormFieldFacade
+    {
+        Font = FontStyle.Courier,
+        FontSize = 12,
+        BorderColor = System.Drawing.Color.Black,
+        BorderWidth = 2
+    };
 
-            editor.Facade = cityDecoration;
-            editor.DecorateField("City");
-            editor.Save(_dataDir + "Sample-Form-02.pdf");
-        }
+    editor.Facade = cityDecoration;
+    editor.DecorateField("City");
+    editor.Save(_dataDir + "Sample-Form-02.pdf");
+}
 ```
 
 ## Decorate All Fields of a Particular Type in an Existing PDF File
@@ -39,20 +39,20 @@ public static void DecorateField()
 
 
 ```csharp
-        public static void DecorateField2()
-        {
-            var editor = new FormEditor();
-            editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+public static void DecorateField2()
+{
+    var editor = new FormEditor();
+    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
 
-            var textFieldDecoration = new FormFieldFacade
-            {
-                Alignment = FormFieldFacade.AlignCenter,
-            };
+    var textFieldDecoration = new FormFieldFacade
+    {
+        Alignment = FormFieldFacade.AlignCenter,
+    };
 
-            editor.Facade = textFieldDecoration;
-            editor.DecorateField(FieldType.Text);
-            editor.Save(_dataDir + "Sample-Form-01-align-text.pdf");
-        }
+    editor.Facade = textFieldDecoration;
+    editor.DecorateField(FieldType.Text);
+    editor.Save(_dataDir + "Sample-Form-01-align-text.pdf");
+}
 ```
 
 

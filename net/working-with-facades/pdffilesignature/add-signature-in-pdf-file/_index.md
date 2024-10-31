@@ -16,121 +16,119 @@ Once the object of a particular signature type is created, you can use the [Sign
 
 ```csharp
 public static void AddPdfFileSignature()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample01.pdf");
+{
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.BindPdf(_dataDir + "sample01.pdf");
 
-            // Create a rectangle for signature location
-            System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
-            // Set signature appearance
-            pdfSign.SignatureAppearance = _dataDir + "aspose-logo.png";
+    // Create a rectangle for signature location
+    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
+    
+    // Set signature appearance
+    pdfSign.SignatureAppearance = _dataDir + "aspose-logo.png";
 
-            // Create any of the three signature types
-            PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+    // Create any of the three signature types
+    PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
 
-            pdfSign.Sign(1, "I'm document author", "test01@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect, signature);
-            // Save output PDF file
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
+    pdfSign.Sign(1, "I'm document author", "test01@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect, signature);
+    // Save output PDF file
+    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+}
 ```
 
 The following code example shows us the ability to sign a document with two signatures. In our example, we put the first signature on the first page, and the second on the second page. You can specify the pages that you need.
 
 ```csharp
- public static void AddTwoSignature()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
+public static void AddTwoSignature()
+{
+    PdfFileSignature pdfSign = new PdfFileSignature();
 
-            // Sign with 1st signature
+    // Sign with 1st signature
+    pdfSign.BindPdf(_dataDir + "sample01.pdf");
 
-            pdfSign.BindPdf(_dataDir + "sample01.pdf");
+    // Create a rectangle for 1st signature location
+    System.Drawing.Rectangle rect1 = new System.Drawing.Rectangle(10, 10, 300, 50);
 
-            // Create a rectangle for 1st signature location
-            System.Drawing.Rectangle rect1 = new System.Drawing.Rectangle(10, 10, 300, 50);
+    // Create 1st signature object
+    PKCS1 signature1 = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
 
-            // Create 1st signature object
-            PKCS1 signature1 = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+    pdfSign.Sign(1, "I'm document author", "test@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect1, signature1);
+    pdfSign.Save(_dataDir + "DigitallySign.pdf");
 
-            pdfSign.Sign(1, "I'm document author", "test@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect1, signature1);
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
+    // Sign with 2nd signature
+    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
 
+    // Create a rectangle for 2nd signature location
+    System.Drawing.Rectangle rect2 = new System.Drawing.Rectangle(10, 10, 300, 50);
 
-            // Sign with 2nd signature
+    // Create 2nd signature object
+    PKCS1 signature2 = new PKCS1(_dataDir + "test02.pfx", "Aspose2021"); // PKCS#1
 
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.Sign(2, "I'm document reviewer", "test02@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect2, signature2);
 
-            // Create a rectangle for 2nd signature location
-            System.Drawing.Rectangle rect2 = new System.Drawing.Rectangle(10, 10, 300, 50);
-
-            // Create 2nd signature object
-            PKCS1 signature2 = new PKCS1(_dataDir + "test02.pfx", "Aspose2021"); // PKCS#1
-
-            pdfSign.Sign(2, "I'm document reviewer", "test02@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect2, signature2);
-
-            // Save output PDF file
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
+    // Save output PDF file
+    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+}
 ```
 
 For a document with forms or acroforms that needs to be signed, see the following example.
 You need to create an object of [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class using input and output PDF files. Use [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1) for binding. Create a signature with the ability to add the required properties. In our example they are 'Reason' and 'CustomAppearance'.
 
 ```csharp
- public static void AddPdfFileSignatureField()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample02.pdf");
+public static void AddPdfFileSignatureField()
+{
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.BindPdf(_dataDir + "sample02.pdf");
 
-            // Create any of the three signature types
-            PKCS1 signature = new PKCS1(_dataDir + "test02.pfx", "Aspose2021")
-            {
-                Reason = "Sign as Author",
-                CustomAppearance = new SignatureCustomAppearance
-                {
-                    FontSize = 6,
-                    FontFamilyName = "Calibri"
-                }
-            }; // PKCS#1
-            pdfSign.Sign("Signature1", signature);
-            // Save output PDF file
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
+    // Create any of the three signature types
+    PKCS1 signature = new PKCS1(_dataDir + "test02.pfx", "Aspose2021")
+    {
+        Reason = "Sign as Author",
+        CustomAppearance = new SignatureCustomAppearance
+        {
+            FontSize = 6,
+            FontFamilyName = "Calibri"
         }
+    }; // PKCS#1
+    pdfSign.Sign("Signature1", signature);
+    // Save output PDF file
+    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+}
 ```
 
 If our document has two fields, the algorithm for signing it is similar to the first example.
 
 ```csharp
 public static void AddPdfFileSignatureField2()
+{
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.BindPdf(_dataDir + "sample03.pdf");
+
+    // Create any of the three signature types
+    PKCS1 signature1 = new PKCS1(_dataDir + "test01.pfx", "Aspose2021")
+    {
+        Reason = "Sign as Author",
+        CustomAppearance = new SignatureCustomAppearance
         {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample03.pdf");
-
-            // Create any of the three signature types
-            PKCS1 signature1 = new PKCS1(_dataDir + "test01.pfx", "Aspose2021")
-            {
-                Reason = "Sign as Author",
-                CustomAppearance = new SignatureCustomAppearance
-                {
-                    FontSize = 6
-                }
-            }; // PKCS#1
-            pdfSign.Sign("Signature1", signature1);
-            // Save output PDF file
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
-
-            // Create any of the three signature types
-            PKCS1 signature2 = new PKCS1(_dataDir + "test02.pfx", "Aspose2021")
-            {
-                Reason = "Sign as Reviwer",
-                CustomAppearance = new SignatureCustomAppearance
-                {
-                    FontSize = 6
-                }
-            }; // PKCS#1
-            pdfSign.Sign("Signature2", signature2);
-            // Save output PDF file
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
+            FontSize = 6
         }
+    }; // PKCS#1
+    pdfSign.Sign("Signature1", signature1);
+    // Save output PDF file
+    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+
+    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+
+    // Create any of the three signature types
+    PKCS1 signature2 = new PKCS1(_dataDir + "test02.pfx", "Aspose2021")
+    {
+        Reason = "Sign as Reviwer",
+        CustomAppearance = new SignatureCustomAppearance
+        {
+            FontSize = 6
+        }
+    }; // PKCS#1
+    pdfSign.Sign("Signature2", signature2);
+    // Save output PDF file
+    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+}
 ```
