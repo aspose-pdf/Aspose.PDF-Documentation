@@ -19,17 +19,17 @@ Ater that, you can call [ChangeViewerPreference](https://reference.aspose.com/pd
 For example, we specify the parameter [CenterWindow](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/centerwindow) with which we center the window, after remove the top toolbar with [HideMenubar](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar) and with [PageModeUseNone](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone) open full-screen mode.
 
 ```csharp
- public static void SetViewerPreference()
-        {
-            var document = new Document(_dataDir + "Sample.pdf");
-            PdfContentEditor editor = new PdfContentEditor(document);
+public static void SetViewerPreference()
+{
+    var document = new Document(_dataDir + "Sample.pdf");
+    PdfContentEditor editor = new PdfContentEditor(document);
 
-            // Change Viewer Preferences
-            editor.ChangeViewerPreference(ViewerPreference.CenterWindow);
-            editor.ChangeViewerPreference(ViewerPreference.HideMenubar);
-            editor.ChangeViewerPreference(ViewerPreference.PageModeFullScreen);
-            // Saves the result PDF to file
-            editor.Save(_dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
-            GetViewerPreference();
-        }
+    // Change Viewer Preferences
+    editor.ChangeViewerPreference(ViewerPreference.CenterWindow);
+    editor.ChangeViewerPreference(ViewerPreference.HideMenubar);
+    editor.ChangeViewerPreference(ViewerPreference.PageModeFullScreen);
+    // Saves the result PDF to file
+    editor.Save(_dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
+    GetViewerPreference();
+}
 ```

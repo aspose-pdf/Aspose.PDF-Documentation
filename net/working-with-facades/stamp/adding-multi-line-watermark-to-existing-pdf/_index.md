@@ -19,7 +19,6 @@ A lot of users want to stamp their PDF documents with multi-line text. They usua
 Please refer to the following code chunk to add multi-line watermark in existing PDF.
 
 ```csharp
-
 // Instantiate a stamp object
 Stamp logoStamp = new Stamp();
 

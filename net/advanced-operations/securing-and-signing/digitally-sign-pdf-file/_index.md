@@ -154,29 +154,28 @@ Steps to sign PDF:
 1. Saving the Signed PDF
 
 ```cs
-
-    var base64Str = "sign";
-    using (var pdfSign = new PdfFileSignature())
+var base64Str = "sign";
+using (var pdfSign = new PdfFileSignature())
+{
+    var sign = new ExternalSignature(base64Str, false);//without Private Key
+    sign.ShowProperties = false;
+    SignHash customSignHash = delegate (byte[] signableHash)
     {
-        var sign = new ExternalSignature(base64Str, false);//without Private Key
-        sign.ShowProperties = false;
-        SignHash customSignHash = delegate (byte[] signableHash)
-        {
-            //Simulated Server Part (This will probably just be sending data and receiving a response)
-            var signerCert = new X509Certificate2(inputP12, "123456", X509KeyStorageFlags.Exportable);//must have Private Key
-            var rsaCSP = new RSACryptoServiceProvider();
-            var xmlString = signerCert.PrivateKey.ToXmlString(true);
-            rsaCSP.FromXmlString(xmlString);
-            byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
-            return signedData;
-        };
-        sign.CustomSignHash = customSignHash;
-        pdfSign.BindPdf(inputPdf);
-        pdfSign.Sign(1, "second approval", "second_user@example.com", "Australia", false,
-                        new System.Drawing.Rectangle(200, 200, 200, 100),
-                        sign);
-        pdfSign.Save(outputPdf);
-    }
+        //Simulated Server Part (This will probably just be sending data and receiving a response)
+        var signerCert = new X509Certificate2(inputP12, "123456", X509KeyStorageFlags.Exportable);//must have Private Key
+        var rsaCSP = new RSACryptoServiceProvider();
+        var xmlString = signerCert.PrivateKey.ToXmlString(true);
+        rsaCSP.FromXmlString(xmlString);
+        byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+        return signedData;
+    };
+    sign.CustomSignHash = customSignHash;
+    pdfSign.BindPdf(inputPdf);
+    pdfSign.Sign(1, "second approval", "second_user@example.com", "Australia", false,
+                    new System.Drawing.Rectangle(200, 200, 200, 100),
+                    sign);
+    pdfSign.Save(outputPdf);
+}
 ```
 
 ## Sign a PDF with HASH signing function
@@ -209,31 +208,30 @@ Let’s take a closer look at the DPF signing process:
 - The signed data (byte array) is returned to be applied to the PDF signature.
 
 ```cs
-
-    var inputPdf = "111.pdf";
+var inputPdf = "111.pdf";
+var inputP12 = "111.p12";
+var inputPfxPassword = "123456";
+var outputPdf = "111_out.pdf";
+using (var sign = new PdfFileSignature())
+{
+    sign.BindPdf(inputPdf);
+    var pkcs7 = new PKCS7(inputP12, inputPfxPassword);
+    pkcs7.CustomSignHash = CustomSignHash;
+    sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
+    sign.Save(outputPdf);
+}
+// Custom hash signing function to generate a digital signature using SHA1 hashing algorithm.
+private byte[] CustomSignHash(byte[] signableHash)
+{
     var inputP12 = "111.p12";
     var inputPfxPassword = "123456";
-    var outputPdf = "111_out.pdf";
-    using (var sign = new PdfFileSignature())
-    {
-        sign.BindPdf(inputPdf);
-        var pkcs7 = new PKCS7(inputP12, inputPfxPassword);
-        pkcs7.CustomSignHash = CustomSignHash;
-        sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
-        sign.Save(outputPdf);
-    }
-    // Custom hash signing function to generate a digital signature using SHA1 hashing algorithm.
-    private byte[] CustomSignHash(byte[] signableHash)
-    {
-        var inputP12 = "111.p12";
-        var inputPfxPassword = "123456";
-        X509Certificate2 signerCert = new X509Certificate2(inputP12, inputPfxPassword, X509KeyStorageFlags.Exportable);
-        RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
-        var xmlString = signerCert.PrivateKey.ToXmlString(true);
-        rsaCSP.FromXmlString(xmlString);
-        byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
-        return signedData;
-    }
+    X509Certificate2 signerCert = new X509Certificate2(inputP12, inputPfxPassword, X509KeyStorageFlags.Exportable);
+    RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+    var xmlString = signerCert.PrivateKey.ToXmlString(true);
+    rsaCSP.FromXmlString(xmlString);
+    byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+    return signedData;
+}
 ```
 
 ## Signing PDF documents using ECDSA
@@ -256,13 +254,11 @@ ECDSA digital signatures with the following digest algorithms can be verified: S
 
 You can check the signature and verification by creating a PFX(output.pfx) certificate in OpenSSL.
 
-```cs
-
-    openssl ecparam -genkey -name brainpoolP512r1 -out private.key
-    openssl ec -in private.key -pubout -out public.pem
-    openssl req -new -x509 -days 365 -key private.key -out certificate.crt -subj "/C=PL/ST=Silesia/L=Katowice/O=My2 Organization/CN=example2.com"
-    openssl pkcs12 -export -out output.pfx -inkey private.key -in certificate.crt
-
+```bash
+openssl ecparam -genkey -name brainpoolP512r1 -out private.key
+openssl ec -in private.key -pubout -out public.pem
+openssl req -new -x509 -days 365 -key private.key -out certificate.crt -subj "/C=PL/ST=Silesia/L=Katowice/O=My2 Organization/CN=example2.com"
+openssl pkcs12 -export -out output.pfx -inkey private.key -in certificate.crt
 ```
 
 Available curve names for signature and verification in Aspose.Pdf (the list of curves in OpenSSL can be obtained with the command 'openssl ecparam -list_curves'): prime256v1, secp384r1, secp521r1, brainpoolP256r1, brainpoolP384r1, brainpoolP512r1.
@@ -278,50 +274,49 @@ To sign a PDF document using ECDSA, the general steps in C# would be:
 1. Place the generated signature inside the PDF file along with metadata such as the reason for signing, location, and contact details.
 
 ```cs
-
-    public void Verify(string fileName)
+public void Verify(string fileName)
+{
+    // Open the PDF document from the specified file
+    using (Document document = new Document(fileName))
     {
-        // Open the PDF document from the specified file
-        using (Document document = new Document(fileName))
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (PdfFileSignature signature = new PdfFileSignature(document))
         {
-            // Create an instance of PdfFileSignature for working with signatures in the document
-            using (PdfFileSignature signature = new PdfFileSignature(document))
+            // Check if the document contains any digital signatures
+            Assert.IsTrue(signature.ContainsSignature());
+
+            // Get a list of signature names in the document
+            var sigNames = signature.GetSignNames();
+
+            // Loop through all signature names to verify each one
+            foreach (var sigName in sigNames)
             {
-                // Check if the document contains any digital signatures
-                Assert.IsTrue(signature.ContainsSignature());
-
-                // Get a list of signature names in the document
-                var sigNames = signature.GetSignNames();
-
-                // Loop through all signature names to verify each one
-                foreach (var sigName in sigNames)
-                {
-                    // Verify that the signature with the given name is valid
-                    Assert.IsTrue(signature.VerifySigned(sigName));
-                }
+                // Verify that the signature with the given name is valid
+                Assert.IsTrue(signature.VerifySigned(sigName));
             }
         }
     }
+}
 
-    public void Sign(string cert, string inputPdfFile, string outFile)
+public void Sign(string cert, string inputPdfFile, string outFile)
+{
+    // Open the PDF document from the specified input file
+    using (Document document = new Document(inputPdfFile))
     {
-        // Open the PDF document from the specified input file
-        using (Document document = new Document(inputPdfFile))
+        // Create an instance of PdfFileSignature to sign the document
+        using (PdfFileSignature signature = new PdfFileSignature(document))
         {
-            // Create an instance of PdfFileSignature to sign the document
-            using (PdfFileSignature signature = new PdfFileSignature(document))
-            {
-                // Create a PKCS7Detached object using the provided certificate and password
-                PKCS7Detached pkcs = new PKCS7Detached(cert, "12345");
+            // Create a PKCS7Detached object using the provided certificate and password
+            PKCS7Detached pkcs = new PKCS7Detached(cert, "12345");
 
-                // Sign the first page of the document, setting the signature's appearance at the specified location
-                signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
+            // Sign the first page of the document, setting the signature's appearance at the specified location
+            signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
 
-                // Save the signed document to the specified output file
-                signature.Save(outFile);
-            }
+            // Save the signed document to the specified output file
+            signature.Save(outFile);
         }
     }
+}
 ```
 
 <script type="application/ld+json">

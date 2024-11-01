@@ -131,9 +131,8 @@ pdfDocument.Pages[2].Accept(textFragmentAbsorber);
 The C# library can only pass one phrase to the TextFragmentAbsorber, but since the 24.2 release of Aspose.PDF, it implemented a new algorithm for searching the list search algorithm.
 
 ```csharp
-
-    var regexes = new Regex[]
-    {
+var regexes = new Regex[]
+{
     new Regex(@"(?s)document\s+(?:(?:no\(?s?\)?\.?)|(?:number(?:\(?s\)?)?))\s+(?:(?:[\w-]*\d[\w-]*)+(?:[,;\s]|and)*)", RegexOptions.IgnoreCase),
     new Regex(@"[\s\r\n]+Tract[\s\r\n]+of:? ", RegexOptions.IgnoreCase),
     new Regex(@"vested[\s\r\n]+in", RegexOptions.IgnoreCase),
@@ -144,8 +143,8 @@ The C# library can only pass one phrase to the TextFragmentAbsorber, but since t
     var absorber = new TextFragmentAbsorber(regexes,new TextSearchOptions(true));
     document.Pages.Accept(absorber);
     // Get result
-    var result = absorber.RegexResults
-    }
+    var result = absorber.RegexResults;
+}
 ```
 
 The code snippet searches for specific patterns like document numbers, keywords, and file numbers in a PDF document using regular expressions. It loads the PDF, applies the search, and retrieves the matching results for further processing.

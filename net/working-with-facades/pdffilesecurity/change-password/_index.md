@@ -23,16 +23,16 @@ The following code snippet shows you how to change passwords of a PDF file.
 
 ```csharp
 public static void ChangePassword()
-        {
-            PdfFileInfo pdfFileInfo = new PdfFileInfo(_dataDir + "sample_encrypted.pdf");
-            // Create PdfFileSecurity object
-            if (pdfFileInfo.IsEncrypted)
-            {
-                PdfFileSecurity fileSecurity = new PdfFileSecurity();
-                fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
-                fileSecurity.ChangePassword("OwnerP@ssw0rd", "Pa$$w0rd1", "Pa$$w0rd2", DocumentPrivilege.Print, KeySize.x256);
-                fileSecurity.Save(_dataDir + "sample_encrtypted1.pdf");
-            }
-        }
+{
+    PdfFileInfo pdfFileInfo = new PdfFileInfo(_dataDir + "sample_encrypted.pdf");
+    // Create PdfFileSecurity object
+    if (pdfFileInfo.IsEncrypted)
+    {
+        PdfFileSecurity fileSecurity = new PdfFileSecurity();
+        fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
+        fileSecurity.ChangePassword("OwnerP@ssw0rd", "Pa$$w0rd1", "Pa$$w0rd2", DocumentPrivilege.Print, KeySize.x256);
+        fileSecurity.Save(_dataDir + "sample_encrtypted1.pdf");
+    }
+}
 ```
 

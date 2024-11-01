@@ -16,33 +16,33 @@ To extract signature information, we have introduced the ExtractCertificate(..) 
 
 ```csharp
 public static void ExtractSignatureInfo()
+{
+    string input = _dataDir + "DigitallySign.pdf";
+    string certificateFileName = "extracted_cert.pfx";
+    using (PdfFileSignature pdfFileSignature = new PdfFileSignature())
+    {
+        pdfFileSignature.BindPdf(input);
+        var sigNames = pdfFileSignature.GetSignNames();
+        if (sigNames.Count > 0)
         {
-            string input = _dataDir + "DigitallySign.pdf";
-            string certificateFileName = "extracted_cert.pfx";
-            using (PdfFileSignature pdfFileSignature = new PdfFileSignature())
+            string sigName = sigNames[0];
+            if (!string.IsNullOrEmpty(sigName))
             {
-                pdfFileSignature.BindPdf(input);
-                var sigNames = pdfFileSignature.GetSignNames();
-                if (sigNames.Count > 0)
+                Stream cerStream = pdfFileSignature.ExtractCertificate(sigName);
+                if (cerStream != null)
                 {
-                    string sigName = sigNames[0];
-                    if (!string.IsNullOrEmpty(sigName))
+                    using (cerStream)
                     {
-                        Stream cerStream = pdfFileSignature.ExtractCertificate(sigName);
-                        if (cerStream != null)
+                        using (FileStream fs = new FileStream(_dataDir + certificateFileName, FileMode.CreateNew))
                         {
-                            using (cerStream)
-                            {
-                                using (FileStream fs = new FileStream(_dataDir + certificateFileName, FileMode.CreateNew))
-                                {
-                                    cerStream.CopyTo(fs);
-                                }
-                            }
+                            cerStream.CopyTo(fs);
                         }
                     }
                 }
             }
         }
+    }
+}
 ```
 
 ## Extracting Image from Signature Field (PdfFileSignature)
@@ -53,31 +53,31 @@ In order to extract signature information, we have introduced the ExtractImage(.
 
 ```csharp
 public static void ExtractSignatureImage()
-        {
-            using (PdfFileSignature signature = new PdfFileSignature())
-            {
-                signature.BindPdf(_dataDir + "DigitallySign.pdf");
+{
+    using (PdfFileSignature signature = new PdfFileSignature())
+    {
+        signature.BindPdf(_dataDir + "DigitallySign.pdf");
 
-                if (signature.ContainsSignature())
+        if (signature.ContainsSignature())
+        {
+            foreach (string sigName in signature.GetSignNames())
+            {
+                string outFile = _dataDir + "ExtractImages_out.jpg";
+                using (Stream imageStream = signature.ExtractImage(sigName))
                 {
-                    foreach (string sigName in signature.GetSignNames())
+                    if (imageStream != null)
                     {
-                        string outFile = _dataDir + "ExtractImages_out.jpg";
-                        using (Stream imageStream = signature.ExtractImage(sigName))
+                        imageStream.Position = 0;
+                        using (FileStream fs = new FileStream(outFile, FileMode.OpenOrCreate))
                         {
-                            if (imageStream != null)
-                            {
-                                imageStream.Position = 0;
-                                using (FileStream fs = new FileStream(outFile, FileMode.OpenOrCreate))
-                                {
-                                    imageStream.CopyTo(fs);
-                                }
-                            }
+                            imageStream.CopyTo(fs);
                         }
                     }
                 }
             }
         }
+    }
+}
 ```
 
 ## Suppress Location and Reason
@@ -86,22 +86,22 @@ Aspose.PDF functionality allows flexible configuration for digital sign instance
 
 ```csharp
 public static void SupressLocationReason()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample01.pdf");
+{
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.BindPdf(_dataDir + "sample01.pdf");
 
-            // Create a rectangle for signature location
-            System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
-            // Set signature appearance
-            pdfSign.SignatureAppearance = _dataDir + "aspose-logo.png";
+    // Create a rectangle for signature location
+    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
+    // Set signature appearance
+    pdfSign.SignatureAppearance = _dataDir + "aspose-logo.png";
 
-            // Create any of the three signature types
-            PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+    // Create any of the three signature types
+    PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
 
-            pdfSign.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
-            // Save output PDF file
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
+    pdfSign.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
+    // Save output PDF file
+    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+}
 ```
 
 ## Customization Features for Digital Sign
@@ -109,29 +109,29 @@ public static void SupressLocationReason()
 Aspose.PDF for .NET allows customization features for a digital sign. The Sign method of class [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance)implements with 6 overloads for your comfortable usage. For example, you can configure result sign only by SignatureCustomAppearance class instance and its properties values. The following code snippet demonstrates how to hide "Digitally signed by" caption from output digital sign of your PDF. 
 
 ```csharp
-  public static void CustomizationFeaturesForDigitalSign()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample01.pdf");
+public static void CustomizationFeaturesForDigitalSign()
+{
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.BindPdf(_dataDir + "sample01.pdf");
 
-            // Create a rectangle for signature location
-            System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
+    // Create a rectangle for signature location
+    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
 
-            // Create any of the three signature types
-            PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+    // Create any of the three signature types
+    PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
 
-            SignatureCustomAppearance signatureCustomAppearance = new SignatureCustomAppearance
-            {
-                FontSize = 6,
-                FontFamilyName = "Times New Roman",
-                DigitalSignedLabel = "Signed by:"
-            };
-            signature.CustomAppearance = signatureCustomAppearance;
+    SignatureCustomAppearance signatureCustomAppearance = new SignatureCustomAppearance
+    {
+        FontSize = 6,
+        FontFamilyName = "Times New Roman",
+        DigitalSignedLabel = "Signed by:"
+    };
+    signature.CustomAppearance = signatureCustomAppearance;
 
-            pdfSign.Sign(1, true, rect, signature);
-            // Save output PDF file
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
+    pdfSign.Sign(1, true, rect, signature);
+    // Save output PDF file
+    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+}
 ```
 
 ## Change Language In Digital Sign Text
@@ -145,41 +145,41 @@ Using Aspose.PDF for .NET API, you can sign a PDF file using any of the followin
 Each of provided signatures contains a set of configuration properties implemented for your convenience(localization, date time format, font family etc). Class [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) provides corresponding functionality. The following code snippet demonstrates how to change language in digital sign text:
 
 ```csharp
-     public static void ChangeLanguageInDigitalSignText()
+public static void ChangeLanguageInDigitalSignText()
+{
+    string inFile = _dataDir + "sample01.pdf";
+    string outFile = _dataDir + "DigitallySign.pdf";
+
+    using (Aspose.Pdf.Facades.PdfFileSignature pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        pdfSign.BindPdf(inFile);
+        //create a rectangle for signature location
+        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
+
+        //create any of the three signature types
+        PKCS7 pkcs = new PKCS7(_dataDir + "test01.pfx", "Aspose2021")
         {
-            string inFile = _dataDir + "sample01.pdf";
-            string outFile = _dataDir + "DigitallySign.pdf";
-
-            using (Aspose.Pdf.Facades.PdfFileSignature pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
-            {
-                pdfSign.BindPdf(inFile);
-                //create a rectangle for signature location
-                System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
-
-                //create any of the three signature types
-                PKCS7 pkcs = new PKCS7(_dataDir + "test01.pfx", "Aspose2021")
-                {
-                    Reason = "Pruebas Firma",
-                    ContactInfo = "Contacto Pruebas",
-                    Location = "Población (Provincia)",
-                    Date = DateTime.Now
-                };
-                SignatureCustomAppearance signatureCustomAppearance = new SignatureCustomAppearance
-                {
-                    DateSignedAtLabel = "Fecha",
-                    DigitalSignedLabel = "Digitalmente firmado por",
-                    ReasonLabel = "Razón",
-                    LocationLabel = "Localización",
-                    FontFamilyName = "Arial",
-                    FontSize = 10d,
-                    Culture = System.Globalization.CultureInfo.InvariantCulture,
-                    DateTimeFormat = "yyyy.MM.dd HH:mm:ss"
-                };
-                pkcs.CustomAppearance = signatureCustomAppearance;
-                // sign the PDF file
-                pdfSign.Sign(1, true, rect, pkcs);
-                //save output PDF file
-                pdfSign.Save(outFile);
-            }
-        }
+            Reason = "Pruebas Firma",
+            ContactInfo = "Contacto Pruebas",
+            Location = "Población (Provincia)",
+            Date = DateTime.Now
+        };
+        SignatureCustomAppearance signatureCustomAppearance = new SignatureCustomAppearance
+        {
+            DateSignedAtLabel = "Fecha",
+            DigitalSignedLabel = "Digitalmente firmado por",
+            ReasonLabel = "Razón",
+            LocationLabel = "Localización",
+            FontFamilyName = "Arial",
+            FontSize = 10d,
+            Culture = System.Globalization.CultureInfo.InvariantCulture,
+            DateTimeFormat = "yyyy.MM.dd HH:mm:ss"
+        };
+        pkcs.CustomAppearance = signatureCustomAppearance;
+        // sign the PDF file
+        pdfSign.Sign(1, true, rect, pkcs);
+        //save output PDF file
+        pdfSign.Save(outFile);
+    }
+}
 ```

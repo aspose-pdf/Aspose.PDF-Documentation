@@ -18,27 +18,26 @@ The next code snippet creates a new Document object using some input data, initi
 It retrieves various properties of the second graphic element, such as its associated operators, rectangle, and position.
 
 ```csharp
+// Creates a new Document object using the provided input data.
+var doc = new Document(input);
 
-    // Creates a new Document object using the provided input data.
-    var doc = new Document(input);
+// Instantiates a new GraphicsAbsorber object to process graphic elements. 
+var grAbsorber = new GraphicsAbsorber(); 
 
-    // Instantiates a new GraphicsAbsorber object to process graphic elements. 
-    var grAbsorber = new GraphicsAbsorber(); 
+// Visits the second page of the document to extract graphic elements. 
+grAbsorber.Visit(doc.Pages[1]); 
 
-    // Visits the second page of the document to extract graphic elements. 
-    grAbsorber.Visit(doc.Pages[1]); 
-    
-    // Retrieves the list of graphic elements from the GraphicsAbsorber. 
-    var elements = grAbsorber.Elements; 
-    
-    // Accesses the operators associated with the second graphic element. 
-    var operations = elements[1].Operators; 
-    
-    // Retrieves the rectangle associated with the second graphic element. 
-    var rectangle = elements[1].Rectangle; 
+// Retrieves the list of graphic elements from the GraphicsAbsorber. 
+var elements = grAbsorber.Elements; 
 
-    // Gets the position of the second graphic element. 
-    var position = elements[1].Position; 
+// Accesses the operators associated with the second graphic element. 
+var operations = elements[1].Operators; 
+
+// Retrieves the rectangle associated with the second graphic element. 
+var rectangle = elements[1].Rectangle; 
+
+// Gets the position of the second graphic element. 
+var position = elements[1].Position;
 ```
 
 ## Extract Vector Data from PDF document
@@ -46,41 +45,37 @@ It retrieves various properties of the second graphic element, such as its assoc
 For extraction of Vector Data from PDF, we can use SVG extractor:
 
 ```csharp
-
-    var doc = new Document(input);
-    doc.Pages[1].TrySaveVectorGraphics(outputSvg);
+var doc = new Document(input);
+doc.Pages[1].TrySaveVectorGraphics(outputSvg);
 ```
 
 ### Extract all subpaths to images separately
 
 ```csharp
+SvgExtractionOptions options = new SvgExtractionOptions
+{
+    ExtractEverySubPathToSvg = true
+};
 
-    SvgExtractionOptions options = new SvgExtractionOptions
-    {
-        ExtractEverySubPathToSvg = true
-    };
-
-    SvgExtractor extractor = new SvgExtractor(options);
-    extractor.Extract(page, svgDirPath);
+SvgExtractor extractor = new SvgExtractor(options);
+extractor.Extract(page, svgDirPath);
 ```
 
 ### Extract list of elements to single image
 
 ```csharp
+List<GraphicElement> elements = new List<GraphicElement>();
+// Fill elements list needed graphic elements.
 
-    List<GraphicElement> elements = new List<GraphicElement>();
-    // Fill elements list needed graphic elements.
-
-    SvgExtractor svgExtractor = new SvgExtractor();
-    svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "1.svg"));
+SvgExtractor svgExtractor = new SvgExtractor();
+svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "1.svg"));
 ```
 
 ### Extract single element
 
 ```csharp
-
-    GraphicsAbsorber graphicsAbsorber = new GraphicsAbsorber();
-    graphicsAbsorber.Visit(page);
-    XFormPlacement xFormPlacement = graphicsAbsorber.Elements[1] as XFormPlacement;
-    xFormPlacement.Elements[2].SaveToSvg(page, Path.Combine(svgDirPath,"1.svg"));
+GraphicsAbsorber graphicsAbsorber = new GraphicsAbsorber();
+graphicsAbsorber.Visit(page);
+XFormPlacement xFormPlacement = graphicsAbsorber.Elements[1] as XFormPlacement;
+xFormPlacement.Elements[2].SaveToSvg(page, Path.Combine(svgDirPath,"1.svg"));
 ```

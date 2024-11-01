@@ -16,7 +16,6 @@ According to Document Object Model of Aspose.PDF for .NET, a PDF file contains o
 **C#**
 
 ```csharp
-
 //open document
 Aspose.PDF.Document pdfDocument = new Aspose.PDF.Document("source.pdf");
 

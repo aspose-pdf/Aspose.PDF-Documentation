@@ -15,15 +15,15 @@ The [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/P
 First of all, an object is drawn in the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), in our example a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle). And set the action [createJavaScriptLink](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) to the Rectangle. After you may save your document.
 
 ```csharp
-  public static void AddingJavascriptActions()
-        {
-            PdfContentEditor editor = new PdfContentEditor();
-            editor.BindPdf(_dataDir + "sample.pdf");
-            // create Javascript link
-            System.Drawing.Rectangle rect = new System.Drawing.Rectangle(50, 750, 50, 50);
-            String code = "app.alert('Welcome to Aspose!');";
-            editor.CreateJavaScriptLink(code, rect, 1, System.Drawing.Color.Green);
-            // save the output file
-            editor.Save(_dataDir + "JavaScriptAdded_output.pdf");
-        }
+public static void AddingJavascriptActions()
+{
+    PdfContentEditor editor = new PdfContentEditor();
+    editor.BindPdf(_dataDir + "sample.pdf");
+    // create Javascript link
+    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(50, 750, 50, 50);
+    String code = "app.alert('Welcome to Aspose!');";
+    editor.CreateJavaScriptLink(code, rect, 1, System.Drawing.Color.Green);
+    // save the output file
+    editor.Save(_dataDir + "JavaScriptAdded_output.pdf");
+}
 ```

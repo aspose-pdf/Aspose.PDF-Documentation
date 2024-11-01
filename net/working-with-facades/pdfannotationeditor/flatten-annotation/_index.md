@@ -18,17 +18,17 @@ Check how the [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspos
 
 ```csharp
 public static void Flattening()
-        {
-            PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-            annotationEditor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
-            FlattenSettings flattenSettings = new FlattenSettings
-            {
-                ApplyRedactions = true,
-                CallEvents = false,
-                HideButtons = true,
-                UpdateAppearances = true
-            };
-            annotationEditor.FlatteningAnnotations(flattenSettings);
-            annotationEditor.Save(_dataDir + "FlattenAnnotation.pdf");
-        }
+{
+    PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
+    annotationEditor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    FlattenSettings flattenSettings = new FlattenSettings
+    {
+        ApplyRedactions = true,
+        CallEvents = false,
+        HideButtons = true,
+        UpdateAppearances = true
+    };
+    annotationEditor.FlatteningAnnotations(flattenSettings);
+    annotationEditor.Save(_dataDir + "FlattenAnnotation.pdf");
+}
 ```
