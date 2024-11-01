@@ -61,6 +61,7 @@ namespace Docker.Linux.Demo01.Controllers
         {
             return View();
         }
+        
         public IActionResult Generate()
         {
             const string file_type = "application/pdf";
