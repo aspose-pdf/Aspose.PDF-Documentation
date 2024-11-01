@@ -40,7 +40,7 @@ To find out more about Aspose.PDF, select the appropriate section:
 
 [How to Run Aspose.PDF in Docker](/pdf/net/docker/) – provides information on how to utilize Aspose.PDF in a Docker container
 
-[Overview of Aspose.PDF.Drawing for .NET](/pdf/net/drawing/) – provides information on how to use a new graphical Aspose.Drawing interface instead of System.Drawing
+[Overview of Aspose.PDF.Drawing for .NET](/pdf/net/drawing/) – provides information on how to use Aspose.Drawing library instead of System.Drawing
 
 [Basics of Aspose.PDF DOM API](/pdf/net/basics-of-dom-api/) – this section will show the features of working with DOM, the form of presentation of structured documents as object-oriented model
 

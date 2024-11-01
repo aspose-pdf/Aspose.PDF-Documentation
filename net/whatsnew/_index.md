@@ -61,7 +61,6 @@ You can use your usual code to sign documents with ECDSA and to verify signature
 Sometimes, it is necessary to crop an image before inserting it into a PDF. We have added an overloaded version of the `AddImage()` method to support adding cropped images:
 
 ```cs
-
     var imagePath = "";
     var resultPdfPath = "";
 

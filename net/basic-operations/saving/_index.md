@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-The next code snippet also works with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) library.
 
 ## Save PDF document to file system
 

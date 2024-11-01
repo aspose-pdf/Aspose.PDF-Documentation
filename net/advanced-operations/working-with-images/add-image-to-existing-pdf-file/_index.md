@@ -154,6 +154,37 @@ mender.AddImage(imageFileName, 1, 0, 0, (float)page.CropBox.Width, (float)page.C
 document.Save(outputPdfFileName);
 ```
 
+Sometimes, it is necessary to crop an image before inserting it into a PDF. Use can use `AddImage()` method to support adding cropped images:
+
+```csharp
+var imageFileName = Path.Combine(_dataDir, "Images", "Sample-01.jpg");
+var outputPdfFileName = Path.Combine(_dataDir, "Example-add-image-mender.pdf");;
+
+using (Document document = new Document())
+{
+    using (Stream imgStream = File.OpenRead(imageFileName))
+    {
+        // Define the rectangle where the image will be placed on the PDF page
+        Rectangle imageRect = new Rectangle(17.62, 65.25, 602.62, 767.25);                    
+
+        // Crop the image to half its original width and height
+        var w = imageRect.Width / 2;
+        var h = imageRect.Height / 2;
+        Rectangle bbox = new Rectangle(imageRect.LLX, imageRect.LLY, imageRect.LLX + w, imageRect.LLY + h);
+
+        // Add a new page to the document
+        Page page = document.Pages.Add();
+
+        // Insert the cropped image onto the page, specifying the original position (imageRect)
+        // and the cropping area (bbox)
+        page.AddImage(imgStream, imageRect, bbox);
+    }
+
+    // Save the document to the specified file path
+    document.Save(outputPdfFileName);
+}
+```
+
 ## Place image on page and preserve (control) aspect ratio
 
 If we do not know the dimensions of the image there is every chance of getting a distorted image on the page. The following example shows one of the ways to avoid this.
@@ -195,7 +226,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 // Counter for grayscale images
 int grayscaled = 0;
 // Counter for RGB images
-int rgd = 0;
+int rgb = 0;
 
 using (Document document = new Document(dataDir + "ExtractImages.pdf"))
 {
@@ -218,7 +249,7 @@ using (Document document = new Document(dataDir + "ExtractImages.pdf"))
                     Console.WriteLine("Image {0} is GrayScale...", image_counter);
                     break;
                 case ColorType.Rgb:
-                    ++rgd;
+                    ++rgb;
                     Console.WriteLine("Image {0} is RGB...", image_counter);
                     break;
             }

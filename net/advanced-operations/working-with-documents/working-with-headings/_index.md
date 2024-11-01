@@ -93,7 +93,7 @@ The **Style** property of **Aspose.PDF.Heading** class is used to set the number
 | :- |
 The source code, to obtain the output shown in the above figure, is given below in the example.
 
-The next code snippet also works with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
 // The path to the documents directory.

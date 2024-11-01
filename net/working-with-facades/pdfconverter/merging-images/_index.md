@@ -99,13 +99,13 @@ public static void MergeImages04()
 To save the merged images as one image on PDF page, we place them in the imageStream, place the result on the page with addImage method, where we specify the coordinates where we want to place them.
 
 ```csharp
-public static void MergeImages05()
-{
-    var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
-                            .OrderBy(f => f)
-                            .Select(f => File.OpenRead(f))
-                            .Cast<Stream>()
-                            .ToList();
+   public static void MergeImages05()
+        {
+            var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+                                    .OrderBy(f => f)
+                                    .Select(f => File.OpenRead(f))
+                                    .Cast<Stream>()
+                                    .ToList();
 
     using (Stream inputStream =
             PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
