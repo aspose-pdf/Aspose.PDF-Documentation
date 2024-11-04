@@ -11,8 +11,7 @@ jobs:
     steps:
     - name: hugo build
       run: |
-        git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/aspose-pdf/Aspose.PDF-Hugo-template.git
-        cd Aspose.PDF-Hugo-template && ls -l
+        git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/aspose-pdf/Aspose.PDF-Hugo-template.git || (cd Aspose.PDF-Hugo-template && git pull)
         sudo npm install -D --save autoprefixer
         sudo npm install -D --save postcss-cli
         rsync --recursive --delete --force --progress ../* content/
