@@ -31,13 +31,13 @@ The following code snippet shows you how to encrypt PDF file.
 
 ```csharp
 public static void EncryptPDFFile()
-        {
-            // Create PdfFileSecurity object
-            PdfFileSecurity fileSecurity = new PdfFileSecurity();
-            fileSecurity.BindPdf(_dataDir + "sample.pdf");
-            // Encrypt file using 256-bit encryption
-            fileSecurity.EncryptFile("User_P@ssw0rd", "OwnerP@ssw0rd", DocumentPrivilege.Print, KeySize.x256, Algorithm.AES);
-            fileSecurity.Save(_dataDir + "sample_encrypted.pdf");
-        }
+{
+    // Create PdfFileSecurity object
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.BindPdf(_dataDir + "sample.pdf");
+    // Encrypt file using 256-bit encryption
+    fileSecurity.EncryptFile("User_P@ssw0rd", "OwnerP@ssw0rd", DocumentPrivilege.Print, KeySize.x256, Algorithm.AES);
+    fileSecurity.Save(_dataDir + "sample_encrypted.pdf");
+}
 ```
 

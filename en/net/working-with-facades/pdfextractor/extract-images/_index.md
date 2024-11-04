@@ -32,28 +32,28 @@ lastmod: "2021-07-15"
 [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class allows you to extract images from a PDF file into streams. First off, you need to create an object of [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. After that, call [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) method to extract all the images into memory. Once the images are extracted, you can get those images with the help of [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) and [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) methods. You need to loop through all the extracted images using a while loop. In order to save the images to stream, you can call the overload of the [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) method which takes Stream as argument. The following code snippet shows you how to extract images from the whole PDF to streams.
 
 ```csharp
-    public static void ExtractImagesWholePDFStreams()
-        {
-            // Open input PDF
-            PdfExtractor pdfExtractor = new PdfExtractor();
-            pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+public static void ExtractImagesWholePDFStreams()
+{
+    // Open input PDF
+    PdfExtractor pdfExtractor = new PdfExtractor();
+    pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
 
-            // Extract images
-            pdfExtractor.ExtractImage();
-            // Get all the extracted images
-            while (pdfExtractor.HasNextImage())
-            {
-                // Read image into memory stream
-                MemoryStream memoryStream = new MemoryStream();
-                pdfExtractor.GetNextImage(memoryStream);
+    // Extract images
+    pdfExtractor.ExtractImage();
+    // Get all the extracted images
+    while (pdfExtractor.HasNextImage())
+    {
+        // Read image into memory stream
+        MemoryStream memoryStream = new MemoryStream();
+        pdfExtractor.GetNextImage(memoryStream);
 
-                // Write to disk, if you like, or use it otherwise.
-                FileStream fileStream = new
-                FileStream(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
-                memoryStream.WriteTo(fileStream);
-                fileStream.Close();
-            }
-        }
+        // Write to disk, if you like, or use it otherwise.
+        FileStream fileStream = new
+        FileStream(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
+        memoryStream.WriteTo(fileStream);
+        fileStream.Close();
+    }
+}
 ```
 
 ## Extract Images from a Particular Page of a PDF (Facades)
@@ -151,48 +151,42 @@ public static void ExtractImagesImageExtractionMode()
     }
 }
 ```
-<<<<<<< HEAD
 
 For checking if Pdf contains Text Or Images use next code snippet:
 
 ```csharp
 public static void CheckIfPdfContainsTextOrImages()
-        {
-            // Instantiate a memoryStream object to hold the extracted text from Document
-            MemoryStream ms = new MemoryStream();
-            // Instantiate PdfExtractor object
-            PdfExtractor extractor = new PdfExtractor();
+{
+    // Instantiate a memoryStream object to hold the extracted text from Document
+    MemoryStream ms = new MemoryStream();
+    // Instantiate PdfExtractor object
+    PdfExtractor extractor = new PdfExtractor();
 
-            // Bind the input PDF document to extractor
-            extractor.BindPdf(_dataDir + "FilledForm.pdf");
-            // Extract text from the input PDF document
-            extractor.ExtractText();
-            // Save the extracted text to a text file
-            extractor.GetText(ms);
-            // Check if the MemoryStream length is greater than or equal to 1
+    // Bind the input PDF document to extractor
+    extractor.BindPdf(_dataDir + "FilledForm.pdf");
+    // Extract text from the input PDF document
+    extractor.ExtractText();
+    // Save the extracted text to a text file
+    extractor.GetText(ms);
+    // Check if the MemoryStream length is greater than or equal to 1
 
-            bool containsText = ms.Length >= 1;
+    bool containsText = ms.Length >= 1;
 
-            // Extract images from the input PDF document
-            extractor.ExtractImage();
+    // Extract images from the input PDF document
+    extractor.ExtractImage();
 
-            // Calling HasNextImage method in while loop. When images will finish, loop will exit
-            bool containsImage = extractor.HasNextImage();
+    // Calling HasNextImage method in while loop. When images will finish, loop will exit
+    bool containsImage = extractor.HasNextImage();
 
-            // Now find out whether this PDF is text only or image only
+    // Now find out whether this PDF is text only or image only
 
-            if (containsText && !containsImage)
-                Console.WriteLine("PDF contains text only");
-            else if (!containsText && containsImage)
-                Console.WriteLine("PDF contains image only");
-            else if (containsText && containsImage)
-                Console.WriteLine("PDF contains both text and image");
-            else if (!containsText && !containsImage)
-                Console.WriteLine("PDF contains neither text or nor image");
-        }
-
-    }
+    if (containsText && !containsImage)
+        Console.WriteLine("PDF contains text only");
+    else if (!containsText && containsImage)
+        Console.WriteLine("PDF contains image only");
+    else if (containsText && containsImage)
+        Console.WriteLine("PDF contains both text and image");
+    else if (!containsText && !containsImage)
+        Console.WriteLine("PDF contains neither text or nor image");
+}
 ```
-
-=======
->>>>>>> d1f729f85236a04d88c3a4fbbdd7b360877ef59a

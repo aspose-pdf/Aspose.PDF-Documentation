@@ -22,24 +22,24 @@ After that, you can call [CreateFreeText](https://reference.aspose.com/pdf/net/a
 The following code snippet shows you how to add free text annotation in a PDF file.
 
 ```csharp
-  public static void AddFreeTextAnnotation()
-        {
-            var document = new Document(_dataDir + "sample.pdf");
-            PdfContentEditor editor = new PdfContentEditor(document);
-            TextFragmentAbsorber tfa = new TextFragmentAbsorber("PDF");
-            tfa.Visit(document.Pages[1]);
+public static void AddFreeTextAnnotation()
+{
+    var document = new Document(_dataDir + "sample.pdf");
+    PdfContentEditor editor = new PdfContentEditor(document);
+    TextFragmentAbsorber tfa = new TextFragmentAbsorber("PDF");
+    tfa.Visit(document.Pages[1]);
 
-            var rect = new System.Drawing.Rectangle
-            {
-                X = (int)tfa.TextFragments[1].Rectangle.LLX,
-                Y = (int)tfa.TextFragments[1].Rectangle.URY + 5,
-                Height = 18,
-                Width = 100
-            };
+    var rect = new System.Drawing.Rectangle
+    {
+        X = (int)tfa.TextFragments[1].Rectangle.LLX,
+        Y = (int)tfa.TextFragments[1].Rectangle.URY + 5,
+        Height = 18,
+        Width = 100
+    };
 
-            editor.CreateFreeText(rect, "Free Text Demo", 1); // last param is a page number
-            editor.Save(_dataDir + "PdfContentEditorDemo_FreeTextAnnotation.pdf");
-        }
+    editor.CreateFreeText(rect, "Free Text Demo", 1); // last param is a page number
+    editor.Save(_dataDir + "PdfContentEditorDemo_FreeTextAnnotation.pdf");
+}
 ```
 
 ## Add Text Annotation in an Existing PDF File (facades)
@@ -47,24 +47,24 @@ The following code snippet shows you how to add free text annotation in a PDF fi
 In this example also, you need to create an object of type [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. Secondly, you have to create a Rectangle object to specify the area of the annotation. After that, you can call [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) method to add FreeText annotation, create title of your annotations, and the page number on which the annotation is located.
 
 ```csharp
- public static void AddTextAnnotation()
-        {
-            var document = new Document(_dataDir + "sample.pdf");
-            PdfContentEditor editor = new PdfContentEditor(document);
-            TextFragmentAbsorber tfa = new TextFragmentAbsorber("PDF");
-            tfa.Visit(document.Pages[1]);
+public static void AddTextAnnotation()
+{
+    var document = new Document(_dataDir + "sample.pdf");
+    PdfContentEditor editor = new PdfContentEditor(document);
+    TextFragmentAbsorber tfa = new TextFragmentAbsorber("PDF");
+    tfa.Visit(document.Pages[1]);
 
-            var rect = new System.Drawing.Rectangle
-            {
-                X = (int)tfa.TextFragments[1].Rectangle.LLX,
-                Y = (int)tfa.TextFragments[1].Rectangle.URY + 5,
-                Height = 18,
-                Width = 100
-            };
+    var rect = new System.Drawing.Rectangle
+    {
+        X = (int)tfa.TextFragments[1].Rectangle.LLX,
+        Y = (int)tfa.TextFragments[1].Rectangle.URY + 5,
+        Height = 18,
+        Width = 100
+    };
 
-            editor.CreateText(rect, "Aspose User", "PDF is a better format for modern documents", false, "Key", 1);
-            editor.Save(_dataDir + "PdfContentEditorDemo_TextAnnotation.pdf");
-        }
+    editor.CreateText(rect, "Aspose User", "PDF is a better format for modern documents", false, "Key", 1);
+    editor.Save(_dataDir + "PdfContentEditorDemo_TextAnnotation.pdf");
+}
 ```
 
 ## Add Line Annotation in an Existing PDF File (facades)
@@ -72,19 +72,19 @@ In this example also, you need to create an object of type [PdfContentEditor](ht
 We also specify the Rectangle, coordinates of the beginning and end of the line, page number, thickness, style and color of the annotation frame, type of line dash, type of start and end of the line.
 
 ```csharp
-  public static void AddLineAnnotation()
-        {
-            var document = new Document(_dataDir + "Appartments.pdf");
-            PdfContentEditor editor = new PdfContentEditor(document);
-            // Create Line Annotation
-            editor.CreateLine(
-                new System.Drawing.Rectangle(550, 93, 562, 439),
-                "Test",
-                556, 99, 556, 443, 1, 2,
-                System.Drawing.Color.Red,
-                "dash",
-                new int[] { 1, 0, 3 },
-                new[] { "Open", "Open" });
-            editor.Save(_dataDir + "PdfContentEditorDemo_LineAnnotation.pdf");
-        }
+public static void AddLineAnnotation()
+{
+    var document = new Document(_dataDir + "Appartments.pdf");
+    PdfContentEditor editor = new PdfContentEditor(document);
+    // Create Line Annotation
+    editor.CreateLine(
+        new System.Drawing.Rectangle(550, 93, 562, 439),
+        "Test",
+        556, 99, 556, 443, 1, 2,
+        System.Drawing.Color.Red,
+        "dash",
+        new int[] { 1, 0, 3 },
+        new[] { "Open", "Open" });
+    editor.Save(_dataDir + "PdfContentEditorDemo_LineAnnotation.pdf");
+}
 ```

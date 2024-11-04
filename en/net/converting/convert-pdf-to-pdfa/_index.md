@@ -15,7 +15,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-Please note we follow Adobe Preflight for validating PDF/A conformance. All tools on the market have their own “representation” of PDF/A conformance. Please check this article on PDF/A validation tools for reference. We chose Adobe products for verifying how Aspose.PDF produces PDF files because Adobe is at the center of everything connected to PDF.
+Please note we follow Adobe Preflight and veraPDF for validating PDF/A conformance. All tools on the market have their own “representation” of PDF/A conformance. Please check this article on PDF/A validation tools for reference. We chose Adobe products for verifying how Aspose.PDF produces PDF files because Adobe is at the center of everything connected to PDF.
 
 {{% /alert %}}
 
@@ -30,6 +30,9 @@ Aspose.PDF for .NET presents you online free application ["PDF to PDF/A-1A"](htt
 {{% /alert %}}
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+
+## Supported standards
+We support the following standards: PDF/A-1b, PDF/A-1a, PDF/A-2b, PDF/A-2u, PDF/A-2a, PDF/A-3b, PDF/A-3u, PDF/A-3a, PDF/A-4, PDF/A-4e, PDF/A-4f.
 
 ## Convert PDF file to PDF/A-1b
 
@@ -107,6 +110,23 @@ string outFile = "output.pdf";
 Aspose.PDF.Document doc = new Aspose.PDF.Document(inFile);
 doc.Convert(new MemoryStream(), PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
 doc.Save(outFile);
+```
+
+## Convert PDF file to PDF/A-4
+
+Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3u format.
+
+```csharp
+string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+using (var document = new Document(dataDir + "input.pdf"))
+{
+    // If the document version is less than PDF-2.0, it must be converted to PDF-2.0
+    document.Convert(Stream.Null, PdfFormat.v_2_0, ConvertErrorAction.Delete);
+
+    document.Convert(dataDir + "log.xml", PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
+    document.Save(dataDir + "output.pdf");
+}
 ```
 
 ## Add Attachment to PDF/A file

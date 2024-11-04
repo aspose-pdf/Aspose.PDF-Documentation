@@ -137,16 +137,15 @@ Since the 24.4 release, choosing paper source by PDF page size in the print dial
 This preference can be switched on and off using the 'Document.PickTrayByPdfSize' property.
 
 ```cs
+using (Document document = new Document())
+{
+    Page page = document.Pages.Add();
+    page.Paragraphs.Add(new TextFragment("Hello world!"));
 
-    using (Document document = new Document())
-    {
-        Page page = document.Pages.Add();
-        page.Paragraphs.Add(new TextFragment("Hello world!"));
-
-        // Set the flag to choose a paper tray using the PDF page size
-        document.PickTrayByPdfSize = true;
-        document.Save("result.pdf");
-    }
+    // Set the flag to choose a paper tray using the PDF page size
+    document.PickTrayByPdfSize = true;
+    document.Save("result.pdf");
+}
 ```
 
 ## Print Dialog Presets Page Scaling
@@ -158,24 +157,23 @@ The [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/prin
 The page scaling option that shall be selected when a print dialog is displayed for this document. Valid values are None, which indicates no page scaling, and AppDefault, which indicates the conforming reader's default print scaling. If this entry has an unrecognized value, AppDefault should be used. Default value: AppDefault.
 
 ```cs
-
-    public void PDFNET_111()
+public void PDFNET_111()
+{
+    Object[] printScalingValues = { null, PrintScaling.None, PrintScaling.Default };
+    PrintScaling[] printScalingExpected = { PrintScaling.Default, PrintScaling.None, PrintScaling.Default };
+    for (int i = 0; i < printScalingValues.Length; i++)
     {
-        Object[] printScalingValues = { null, PrintScaling.None, PrintScaling.Default };
-        PrintScaling[] printScalingExpected = { PrintScaling.Default, PrintScaling.None, PrintScaling.Default };
-        for (int i = 0; i < printScalingValues.Length; i++)
-        {
-            Document document = new Document();
-            document.Pages.Add();
-            Object printScalingValue = printScalingValues[i];
-            if (printScalingValue != null)
-                document.PrintScaling = (PrintScaling)printScalingValue;
-            String outputPdf = GetOutputPdf("PDFNET-111_" + i);
-            document.Save(outputPdf);
-            Document documentOutput = new Document(outputPdf);
-            Assert.AreEqual(printScalingExpected[i], documentOutput.PrintScaling);
-        }
+        Document document = new Document();
+        document.Pages.Add();
+        Object printScalingValue = printScalingValues[i];
+        if (printScalingValue != null)
+            document.PrintScaling = (PrintScaling)printScalingValue;
+        String outputPdf = GetOutputPdf("PDFNET-111_" + i);
+        document.Save(outputPdf);
+        Document documentOutput = new Document(outputPdf);
+        Assert.AreEqual(printScalingExpected[i], documentOutput.PrintScaling);
     }
+}
 ```
 
 <script type="application/ld+json">

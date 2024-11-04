@@ -24,32 +24,30 @@ Also, [Class Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/
 The following code snippet shows you how to Import FDF format annotations to PDF with Form.ImportFdf() method:
 
 ```csharp
+var fdfPath = Params.InputPath + "test.fdf";
+var templatePath = Params.InputPath + "Empty.pdf";
+var outputPath = Params.OutputPath + "test_form.pdf";
 
-    var fdfPath = Params.InputPath + "test.fdf";
-    var templatePath = Params.InputPath + "Empty.pdf";
-    var outputPath = Params.OutputPath + "test_form.pdf";
-
-    using (var form = new Aspose.Pdf.Facades.Form(templatePath))
+using (var form = new Aspose.Pdf.Facades.Form(templatePath))
+{
+    using (var fdfInputStream = new FileStream(fdfPath, FileMode.Open))
     {
-        using (var fdfInputStream = new FileStream(fdfPath, FileMode.Open))
-        {
-            form.ImportFdf(fdfInputStream);
-        }
-
-        form.Save(outputPath);
+        form.ImportFdf(fdfInputStream);
     }
+
+    form.Save(outputPath);
+}
 ```
 
 The next code snippet shows how to import FDF format annotations to PDF with PdfAnnotationEditor.ImportAnnotationsFromFdf() method:
 
 ```csharp
+var fdfPath = Params.InputPath + "test.fdf";
+var templatePath = Params.InputPath + "Empty.pdf";
+var outputPath = Params.OutputPath + "test_annEditor.pdf";
 
-    var fdfPath = Params.InputPath + "test.fdf";
-    var templatePath = Params.InputPath + "Empty.pdf";
-    var outputPath = Params.OutputPath + "test_annEditor.pdf";
-
-    var editor = new PdfAnnotationEditor();
-    editor.BindPdf(new Document(templatePath));
-    editor.ImportAnnotationsFromFdf(fdfPath);
-    editor.Save(outputPath);
+var editor = new PdfAnnotationEditor();
+editor.BindPdf(new Document(templatePath));
+editor.ImportAnnotationsFromFdf(fdfPath);
+editor.Save(outputPath);
 ```

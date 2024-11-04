@@ -14,80 +14,80 @@ Firstly document is converted into image and then printed on the printer.
 We create an instance of the [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) class that allows you to print a PDF file to the default printer, using BindPdf method for document to it, and make certain settings. In our example, we are using A4 format, portrait orientation. In the printerSettings, first of all, we indicate the name of the printer to which we are printing. Or else it will print to the default printer. Next, put down the number of copies we need.
 
 ```csharp
- public static void PrintingPDFFile()
-        {
-            // Create PdfViewer object
-            PdfViewer viewer = new PdfViewer();
+public static void PrintingPDFFile()
+{
+    // Create PdfViewer object
+    PdfViewer viewer = new PdfViewer();
 
-            // Open input PDF file
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Open input PDF file
+    viewer.BindPdf(_dataDir + "sample.pdf");
 
-            // Set attributes for printing
-            viewer.AutoResize = true;         // Print the file with adjusted size
-            viewer.AutoRotate = true;         // Print the file with adjusted rotation
-            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Set attributes for printing
+    viewer.AutoResize = true;         // Print the file with adjusted size
+    viewer.AutoRotate = true;         // Print the file with adjusted rotation
+    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
 
-            // Create objects for printer and page settings and PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
-            System.Drawing.Printing.PrintDocument prtdoc = new System.Drawing.Printing.PrintDocument();
+    // Create objects for printer and page settings and PrintDocument
+    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+    System.Drawing.Printing.PrintDocument prtdoc = new System.Drawing.Printing.PrintDocument();
 
-            // Set printer name
-            ps.PrinterName = prtdoc.PrinterSettings.PrinterName;
+    // Set printer name
+    ps.PrinterName = prtdoc.PrinterSettings.PrinterName;
 
-            // Set PageSize (if required)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    // Set PageSize (if required)
+    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-            // Set PageMargins (if required)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+    // Set PageMargins (if required)
+    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
-            // Print document using printer and page settings
-            viewer.PrintDocumentWithSettings(pgs, ps);
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
 
-            // Close the PDF file after printing
-            viewer.Close();
-        }
+    // Close the PDF file after printing
+    viewer.Close();
+}
 ```
 
 In order to display a print dialog, try using the following code snippet:
 
 ```csharp
-        public static void PrintingPDFDisplayPrintDialog()
-        {
-            // Create PdfViewer object
-            PdfViewer viewer = new PdfViewer();
+public static void PrintingPDFDisplayPrintDialog()
+{
+    // Create PdfViewer object
+    PdfViewer viewer = new PdfViewer();
 
-            // Open input PDF file
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Open input PDF file
+    viewer.BindPdf(_dataDir + "sample.pdf");
 
-            // Set attributes for printing
-            viewer.AutoResize = true;         // Print the file with adjusted size
-            viewer.AutoRotate = true;         // Print the file with adjusted rotation
+    // Set attributes for printing
+    viewer.AutoResize = true;         // Print the file with adjusted size
+    viewer.AutoRotate = true;         // Print the file with adjusted rotation
 
-            // Create objects for printer and page settings and PrintDocument
+    // Create objects for printer and page settings and PrintDocument
 
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings
-            {
+    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings
+    {
 
-                // Set PageSize (if required)
-                PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169),
+        // Set PageSize (if required)
+        PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169),
 
-                // Set PageMargins (if required)
-                Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0)
-            };
+        // Set PageMargins (if required)
+        Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0)
+    };
 
-            System.Windows.Forms.PrintDialog printDialog = new System.Windows.Forms.PrintDialog();
-            if (printDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                // Document printing code goes here
-                // Print document using printer and page settings
-                System.Drawing.Printing.PrinterSettings ps = printDialog.PrinterSettings;
-                viewer.PrintDocumentWithSettings(pgs, ps);
-            }
+    System.Windows.Forms.PrintDialog printDialog = new System.Windows.Forms.PrintDialog();
+    if (printDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+    {
+        // Document printing code goes here
+        // Print document using printer and page settings
+        System.Drawing.Printing.PrinterSettings ps = printDialog.PrinterSettings;
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
 
-            // Close the PDF file after priting
-            viewer.Close();
-        }
+    // Close the PDF file after priting
+    viewer.Close();
+}
 ```
 
 ## Print PDF to Soft Printer
@@ -96,41 +96,41 @@ There are printers that print to a file. We set the name of the virtual printer,
 
 ```csharp
 public static void PrintingPDFToSoftPrinter()
-        {
-            // Create PdfViewer object
-            PdfViewer viewer = new PdfViewer();
+{
+    // Create PdfViewer object
+    PdfViewer viewer = new PdfViewer();
 
-            // Open input PDF file
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Open input PDF file
+    viewer.BindPdf(_dataDir + "sample.pdf");
 
-            // Set attributes for printing
-            viewer.AutoResize = true;         // Print the file with adjusted size
-            viewer.AutoRotate = true;         // Print the file with adjusted rotation
-            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Set attributes for printing
+    viewer.AutoResize = true;         // Print the file with adjusted size
+    viewer.AutoRotate = true;         // Print the file with adjusted rotation
+    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
 
-            viewer.PrintAsImage = false;
+    viewer.PrintAsImage = false;
 
-            // Create objects for printer and page settings and PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+    // Create objects for printer and page settings and PrintDocument
+    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
 
-            // Set printer name
-            ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
-            // Or set the PDF printer
-            //ps.PrinterName = "Adobe PDF";
+    // Set printer name
+    ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+    // Or set the PDF printer
+    //ps.PrinterName = "Adobe PDF";
 
-            // Set PageSize (if required)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    // Set PageSize (if required)
+    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-            // Set PageMargins (if required)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+    // Set PageMargins (if required)
+    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
-            // Print document using printer and page settings
-            viewer.PrintDocumentWithSettings(pgs, ps);
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
 
-            // Close the PDF file after priting
-            viewer.Close();
-        }
+    // Close the PDF file after priting
+    viewer.Close();
+}
 ```
 
 ## Hiding Print Dialog
@@ -141,39 +141,39 @@ The following code snippet shows you how to hide the print dialog.
 
 ```csharp
 public static void PrintingPDFHidePrintDialog()
-        {
-            // Create PdfViewer object
-            PdfViewer viewer = new PdfViewer();
+{
+    // Create PdfViewer object
+    PdfViewer viewer = new PdfViewer();
 
-            // Open input PDF file
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Open input PDF file
+    viewer.BindPdf(_dataDir + "sample.pdf");
 
-            // Set attributes for printing
-            viewer.AutoResize = true;         // Print the file with adjusted size
-            viewer.AutoRotate = true;         // Print the file with adjusted rotation
+    // Set attributes for printing
+    viewer.AutoResize = true;         // Print the file with adjusted size
+    viewer.AutoRotate = true;         // Print the file with adjusted rotation
 
 
-            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
 
-            // Create objects for printer and page settings and PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+    // Create objects for printer and page settings and PrintDocument
+    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
 
-            // Set XPS/PDF printer name
-            ps.PrinterName = "OneNote for Windows 10";
+    // Set XPS/PDF printer name
+    ps.PrinterName = "OneNote for Windows 10";
 
-            // Set PageSize (if required)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    // Set PageSize (if required)
+    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-            // Set PageMargins (if required)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+    // Set PageMargins (if required)
+    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
-            // Print document using printer and page settings
-            viewer.PrintDocumentWithSettings(pgs, ps);
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
 
-            // Close the PDF file after priting
-            viewer.Close();
-        }
+    // Close the PDF file after priting
+    viewer.Close();
+}
 ```
 
 ## Printing Color PDF to XPS File as Grayscale
@@ -182,40 +182,40 @@ A color PDF document can be printed to an XPS printer as grayscale, using [PdfVi
 
 ```csharp
 public static void PrintingPDFasGrayscale()
-        {
-            // Create PdfViewer object
-            PdfViewer viewer = new PdfViewer();
+{
+    // Create PdfViewer object
+    PdfViewer viewer = new PdfViewer();
 
-            // Open input PDF file
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Open input PDF file
+    viewer.BindPdf(_dataDir + "sample.pdf");
 
-            // Set attributes for printing
-            viewer.AutoResize = true;         // Print the file with adjusted size
-            viewer.AutoRotate = true;         // Print the file with adjusted rotation
+    // Set attributes for printing
+    viewer.AutoResize = true;         // Print the file with adjusted size
+    viewer.AutoRotate = true;         // Print the file with adjusted rotation
 
 
-            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-            viewer.PrintAsGrayscale = false;
+    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    viewer.PrintAsGrayscale = false;
 
-            // Create objects for printer and page settings and PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+    // Create objects for printer and page settings and PrintDocument
+    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
 
-            // Set XPS/PDF printer name
-            ps.PrinterName = "OneNote for Windows 10";
+    // Set XPS/PDF printer name
+    ps.PrinterName = "OneNote for Windows 10";
 
-            // Set PageSize (if required)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    // Set PageSize (if required)
+    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-            // Set PageMargins (if required)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+    // Set PageMargins (if required)
+    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
-            // Print document using printer and page settings
-            viewer.PrintDocumentWithSettings(pgs, ps);
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
 
-            // Close the PDF file after priting
-            viewer.Close();
-        }
+    // Close the PDF file after priting
+    viewer.Close();
+}
 ```
 
 ## PDF to PostScript conversion
@@ -226,42 +226,42 @@ The following code snippet shows you how to print and convert a PDF to PostScrip
 
 ```csharp
 public static void PrintingPDFToPostScript()
-        {
-            // Create PdfViewer object
-            PdfViewer viewer = new PdfViewer();
+{
+    // Create PdfViewer object
+    PdfViewer viewer = new PdfViewer();
 
-            // Open input PDF file
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Open input PDF file
+    viewer.BindPdf(_dataDir + "sample.pdf");
 
-            // Set attributes for printing
-            viewer.AutoResize = true;         // Print the file with adjusted size
-            viewer.AutoRotate = true;         // Print the file with adjusted rotation
-            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Set attributes for printing
+    viewer.AutoResize = true;         // Print the file with adjusted size
+    viewer.AutoRotate = true;         // Print the file with adjusted rotation
+    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
 
-            viewer.PrintAsImage = false;
+    viewer.PrintAsImage = false;
 
-            // Create objects for printer and page settings and PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+    // Create objects for printer and page settings and PrintDocument
+    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
 
-            // Set XPS/PDF printer name
-            ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
-            // Set output file name and PrintToFile attribute
-            ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
-            ps.PrintToFile = true;
+    // Set XPS/PDF printer name
+    ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+    // Set output file name and PrintToFile attribute
+    ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
+    ps.PrintToFile = true;
 
-            // Set PageSize (if required)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    // Set PageSize (if required)
+    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-            // Set PageMargins (if required)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+    // Set PageMargins (if required)
+    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
-            // Print document using printer and page settings
-            viewer.PrintDocumentWithSettings(pgs, ps);
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
 
-            // Close the PDF file after priting
-            viewer.Close();
-        }
+    // Close the PDF file after priting
+    viewer.Close();
+}
 ```
 
 ## Checking Print Job Status
@@ -270,61 +270,61 @@ A PDF file can be printed to a physical printer as well as to the Microsoft XPS 
 
 ```csharp
 public static void CheckingPrintJobStatus()
-        {
-            // Create PdfViewer object
-            PdfViewer viewer = new PdfViewer();
+{
+    // Create PdfViewer object
+    PdfViewer viewer = new PdfViewer();
 
-            // Open input PDF file
-            viewer.BindPdf(_dataDir + "sample1.pdf");
+    // Open input PDF file
+    viewer.BindPdf(_dataDir + "sample1.pdf");
 
-            // Set attributes for printing
-            viewer.AutoResize = true;         // Print the file with adjusted size
-            viewer.AutoRotate = true;         // Print the file with adjusted rotation
-            viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Set attributes for printing
+    viewer.AutoResize = true;         // Print the file with adjusted size
+    viewer.AutoRotate = true;         // Print the file with adjusted rotation
+    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
 
-            viewer.PrintAsImage = false;
+    viewer.PrintAsImage = false;
 
-            // Create objects for printer and page settings and PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+    // Create objects for printer and page settings and PrintDocument
+    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
+    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
 
-            // Set XPS/PDF printer name
-            ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
-            // Set output file name and PrintToFile attribute
-            ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
-            ps.PrintToFile = true;
+    // Set XPS/PDF printer name
+    ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+    // Set output file name and PrintToFile attribute
+    ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
+    ps.PrintToFile = true;
 
-            // Set PageSize (if required)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    // Set PageSize (if required)
+    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-            // Set PageMargins (if required)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+    // Set PageMargins (if required)
+    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
-            // Print document using printer and page settings
-            viewer.PrintDocumentWithSettings(pgs, ps);
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
 
-            // Check the print status
-            if (viewer.PrintStatus != null && viewer.PrintStatus is Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            else
-            {
-                // No errors were found. Printing job has completed successfully
-                Console.WriteLine("Printing completed without any issue..");
-            }
+    // Check the print status
+    if (viewer.PrintStatus != null && viewer.PrintStatus is Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+    else
+    {
+        // No errors were found. Printing job has completed successfully
+        Console.WriteLine("Printing completed without any issue..");
+    }
 
-            // Close the PDF file after priting
-            viewer.Close();
-        }
+    // Close the PDF file after priting
+    viewer.Close();
+}
 
-        struct PrintingJobSettings
-        {
-            public int ToPage { get; set; }
-            public int FromPage { get; set; }
-            public string OutputFile { get; set; }
-            public System.Drawing.Printing.Duplex Mode { get; set; }
-        }
+struct PrintingJobSettings
+{
+    public int ToPage { get; set; }
+    public int FromPage { get; set; }
+    public string OutputFile { get; set; }
+    public System.Drawing.Printing.Duplex Mode { get; set; }
+}
 ```
 
 ## Printing pages in Simplex and Duplex mode
@@ -332,77 +332,77 @@ public static void CheckingPrintJobStatus()
 In a particular printing job, the pages of PDF document can either be printed in Duplex or in Simplex mode but you cannot print some pages as simplex and some pages as duplex within a single print job. However in order to accomplish the requirement, different page ranges and PrintingJobSettings object can be used. The following code snippet shows how to print some pages of PDF file in Simplex and some pages in Duplex mode.
 
 ```csharp
- public static void PrintingPagesInSimplexAndDuplexMode()
+public static void PrintingPagesInSimplexAndDuplexMode()
+{
+    int printingJobIndex = 0;
+    string inPdf = _dataDir + "sample-8page.pdf";
+    string output = _dataDir;
+    IList<PrintingJobSettings> printingJobs = new List<PrintingJobSettings>();
+
+    PrintingJobSettings printingJob1 = new PrintingJobSettings
+    {
+        FromPage = 1,
+        ToPage = 3,
+        OutputFile = output + "sample_1_3.xps",
+        Mode = Duplex.Default
+    };
+
+    printingJobs.Add(printingJob1);
+
+    PrintingJobSettings printingJob2 = new PrintingJobSettings
+    {
+        FromPage = 4,
+        ToPage = 6,
+        OutputFile = output + "sample_4_6.xps",
+        Mode = Duplex.Simplex
+    };
+
+    printingJobs.Add(printingJob2);
+
+    PrintingJobSettings printingJob3 = new PrintingJobSettings
+    {
+        FromPage = 7,
+        ToPage = 7,
+        OutputFile = output + "sample_7.xps",
+        Mode = Duplex.Default
+    };
+
+    printingJobs.Add(printingJob3);
+
+    PdfViewer viewer = new PdfViewer();
+
+    viewer.BindPdf(inPdf);
+    viewer.AutoResize = true;
+    viewer.AutoRotate = true;
+    viewer.PrintPageDialog = false;
+
+    PrinterSettings ps = new PrinterSettings();
+    PageSettings pgs = new PageSettings();
+
+    ps.PrinterName = "Microsoft XPS Document Writer";
+    ps.PrintFileName = System.IO.Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+    ps.PrintToFile = true;
+    ps.FromPage = printingJobs[printingJobIndex].FromPage;
+    ps.ToPage = printingJobs[printingJobIndex].ToPage;
+    ps.Duplex = printingJobs[printingJobIndex].Mode;
+    ps.PrintRange = PrintRange.SomePages;
+
+    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
+    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+
+    viewer.EndPrint += (sender, args) =>
+    {
+        if (++printingJobIndex < printingJobs.Count)
         {
-            int printingJobIndex = 0;
-            string inPdf = _dataDir + "sample-8page.pdf";
-            string output = _dataDir;
-            IList<PrintingJobSettings> printingJobs = new List<PrintingJobSettings>();
-
-            PrintingJobSettings printingJob1 = new PrintingJobSettings
-            {
-                FromPage = 1,
-                ToPage = 3,
-                OutputFile = output + "sample_1_3.xps",
-                Mode = Duplex.Default
-            };
-
-            printingJobs.Add(printingJob1);
-
-            PrintingJobSettings printingJob2 = new PrintingJobSettings
-            {
-                FromPage = 4,
-                ToPage = 6,
-                OutputFile = output + "sample_4_6.xps",
-                Mode = Duplex.Simplex
-            };
-
-            printingJobs.Add(printingJob2);
-
-            PrintingJobSettings printingJob3 = new PrintingJobSettings
-            {
-                FromPage = 7,
-                ToPage = 7,
-                OutputFile = output + "sample_7.xps",
-                Mode = Duplex.Default
-            };
-
-            printingJobs.Add(printingJob3);
-
-            PdfViewer viewer = new PdfViewer();
-
-            viewer.BindPdf(inPdf);
-            viewer.AutoResize = true;
-            viewer.AutoRotate = true;
-            viewer.PrintPageDialog = false;
-
-            PrinterSettings ps = new PrinterSettings();
-            PageSettings pgs = new PageSettings();
-
-            ps.PrinterName = "Microsoft XPS Document Writer";
             ps.PrintFileName = System.IO.Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
-            ps.PrintToFile = true;
             ps.FromPage = printingJobs[printingJobIndex].FromPage;
             ps.ToPage = printingJobs[printingJobIndex].ToPage;
             ps.Duplex = printingJobs[printingJobIndex].Mode;
-            ps.PrintRange = PrintRange.SomePages;
-
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
-            ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-
-            viewer.EndPrint += (sender, args) =>
-            {
-                if (++printingJobIndex < printingJobs.Count)
-                {
-                    ps.PrintFileName = System.IO.Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
-                    ps.FromPage = printingJobs[printingJobIndex].FromPage;
-                    ps.ToPage = printingJobs[printingJobIndex].ToPage;
-                    ps.Duplex = printingJobs[printingJobIndex].Mode;
-                    viewer.PrintDocumentWithSettings(pgs, ps);
-                }
-            };
-
             viewer.PrintDocumentWithSettings(pgs, ps);
         }
+    };
+
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
 ```

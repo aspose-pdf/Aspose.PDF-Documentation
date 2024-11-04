@@ -35,7 +35,6 @@ The easiest way to apply a license is to put the license file in the same folder
 When you call the [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) method, the license name that you pass should be that of your license file. For example, if you change the license file name to "Aspose.PDF.lic.xml" pass that file name to the Pdf.SetLicense(…) method.
 
 ```csharp
-
 public static void SetLicenseExample()
 {
     // Initialize license object

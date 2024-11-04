@@ -185,8 +185,8 @@ Conversion to CSV format performs in the same way as above. All is what you need
 
 
 ```csharp
- // Instantiate ExcelSave Option object
-    ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
+// Instantiate ExcelSave Option object
+ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
 ```
 
 ### Convert to ODS
@@ -201,8 +201,8 @@ Conversion to CSV format performs in the same way as above. All is what you need
 Conversion to ODS format performs in the same way as all other formats.
 
 ```csharp
- // Instantiate ExcelSave Option object
-    ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.ODS };
+// Instantiate ExcelSave Option object
+ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.ODS };
 ```
 
 ## See Also 

@@ -2,7 +2,7 @@
 title: Securing and signing PDF in C#
 linktitle: Securing and signing in PDF
 type: docs
-weight: 150
+weight: 210
 url: /net/securing-and-signing/
 description: This section describes the features of using a signature and securing your PDF document using C#
 lastmod: "2022-02-17"

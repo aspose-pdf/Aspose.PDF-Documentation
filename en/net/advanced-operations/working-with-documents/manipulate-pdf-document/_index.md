@@ -190,7 +190,7 @@ doc.Save(dataDir);
 Aspose.PDF also allows setting different TabLeaderType for different TOC levels. You need to set LineDash property of FormatArray with the appropriate value of TabLeaderType enum as following.
 
 ```csharp
- string outFile = "TOC.pdf";
+string outFile = "TOC.pdf";
 
 Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
 Page tocPage = doc.Pages.Add();
@@ -421,7 +421,6 @@ PDF documents often include forms with interactive fillable widgets such as radi
 Aspose.PDF provides the function to flatten your PDF in C# with just few line of code:
 
 ```csharp
-
 // Load source PDF form
 Document doc = new Document(dataDir + "input.pdf");
 

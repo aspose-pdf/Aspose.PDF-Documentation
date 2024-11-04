@@ -70,28 +70,29 @@ The following example creates the table 4x10.
 
 ```csharp
 var table = new Table
+{
+    // Set column auto widths of the table
+    ColumnWidths = "25% 25% 25% 25%",
+    // Set cell padding
+    DefaultCellPadding = new MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
+    // Set the table border color as Green
+    Border = new BorderInfo(BorderSide.All, .5f, Color.Green),
+    // Set the border for table cells as Black
+    DefaultCellBorder = new BorderInfo(BorderSide.All, .2f, Color.Green),
+};
+
+for (var rowCount = 0; rowCount < 10; rowCount++)
+{
+    // Add row to table
+    var row = table.Rows.Add();
+    // Add table cells
+    for (int i = 0; i < 4; i++)
     {
-        // Set column auto widths of the table
-        ColumnWidths = "25% 25% 25% 25%",
-        // Set cell padding
-        DefaultCellPadding = new MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
-        // Set the table border color as Green
-        Border = new BorderInfo(BorderSide.All, .5f, Color.Green),
-        // Set the border for table cells as Black
-        DefaultCellBorder = new BorderInfo(BorderSide.All, .2f, Color.Green),
-    };
-    for (var rowCount = 0; rowCount < 10; rowCount++)
-    {
-        // Add row to table
-        var row = table.Rows.Add();
-        // Add table cells
-        for (int i = 0; i < 4; i++)
-        {
-            row.Cells.Add($"Cell ({i+1}, {rowCount +1})");
-        }
+        row.Cells.Add($"Cell ({i+1}, {rowCount +1})");
     }
-    // Add table object to first page of input document
-    document.Pages[1].Paragraphs.Add(table);
+}
+// Add table object to first page of input document
+document.Pages[1].Paragraphs.Add(table);
 ```
 
 When initializing the Table object, the minimal skin settings were used:
@@ -141,7 +142,9 @@ var configuration = new ConfigurationBuilder()
 var connectionString = configuration.GetSection("connectionString").Value;
 
 if (string.IsNullOrEmpty(connectionString))
+{
     throw new ArgumentException("No connection string in config.json");
+}
 
 var resultTable = new DataTable();
 
@@ -177,107 +180,108 @@ More relevant for modern .NET is the import of data from ORM frameworks. In this
 
 ```csharp
 public static class PdfHelper
+{
+    public static void ImportEntityList<TSource>(this Pdf.Table table, IList<TSource> data)
     {
-        public static void ImportEntityList<TSource>(this Pdf.Table table, IList<TSource> data)
+        var headRow = table.Rows.Add();
+
+        var props = typeof(TSource).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+        foreach (var prop in props)
         {
-            var headRow = table.Rows.Add();
+            headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);
+        }
 
-            var props = typeof(TSource).GetProperties(BindingFlags.Public | BindingFlags.Instance);
-            foreach (var prop in props)
+        foreach (var item in data)
+        {
+            // Add row to table
+            var row = table.Rows.Add();
+            // Add table cells
+            foreach (var t in props)
             {
-                headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);
+                var dataItem = t.GetValue(item, null);
+                if (t.GetCustomAttribute(typeof(DataTypeAttribute)) is DataTypeAttribute dataType)
+                    switch (dataType.DataType)
+                    {
+
+                        case DataType.Currency:
+                            row.Cells.Add(string.Format("{0:C}", dataItem));
+                            break;
+                        case DataType.Date:
+                            var dateTime = (DateTime)dataItem;
+                            if (t.GetCustomAttribute(typeof(DisplayFormatAttribute)) is DisplayFormatAttribute df)
+                            {
+                                row.Cells.Add(string.IsNullOrEmpty(df.DataFormatString)
+                                    ? dateTime.ToShortDateString()
+                                    : string.Format(df.DataFormatString, dateTime));
+                            }
+                            break;
+                        default:
+                            row.Cells.Add(dataItem.ToString());
+                            break;
+                    }
+                else
+                {
+                    row.Cells.Add(dataItem.ToString());
+                }
             }
+        }
+    }
+    
+    public static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
+    {
+        var headRow = table.Rows.Add();           
+        var props = typeof(TValue).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+        foreach (var prop in props)
+        {
+            headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);               
+        }
 
-            foreach (var item in data)
+        foreach (var group in groupedData)
+        {
+            // Add group row to table
+            var row = table.Rows.Add();
+            var cell = row.Cells.Add(group.Key.ToString());
+            cell.ColSpan = props.Length;
+            cell.BackgroundColor = Pdf.Color.DarkGray;
+            cell.DefaultCellTextState.ForegroundColor = Pdf.Color.White;
+
+            foreach (var item in group.Values)
             {
-                // Add row to table
-                var row = table.Rows.Add();
-                // Add table cells
+                // Add data row to table
+                var dataRow = table.Rows.Add();
+                // Add cells
                 foreach (var t in props)
                 {
                     var dataItem = t.GetValue(item, null);
+
                     if (t.GetCustomAttribute(typeof(DataTypeAttribute)) is DataTypeAttribute dataType)
                         switch (dataType.DataType)
                         {
-
                             case DataType.Currency:
-                                row.Cells.Add(string.Format("{0:C}", dataItem));
+                                dataRow.Cells.Add(string.Format("{0:C}", dataItem));
                                 break;
                             case DataType.Date:
                                 var dateTime = (DateTime)dataItem;
                                 if (t.GetCustomAttribute(typeof(DisplayFormatAttribute)) is DisplayFormatAttribute df)
                                 {
-                                    row.Cells.Add(string.IsNullOrEmpty(df.DataFormatString)
+                                    dataRow.Cells.Add(string.IsNullOrEmpty(df.DataFormatString)
                                         ? dateTime.ToShortDateString()
                                         : string.Format(df.DataFormatString, dateTime));
                                 }
                                 break;
                             default:
-                                row.Cells.Add(dataItem.ToString());
+                                dataRow.Cells.Add(dataItem.ToString());
                                 break;
                         }
                     else
                     {
-                        row.Cells.Add(dataItem.ToString());
-                    }
-                }
-            }
-        }
-        public static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
-        {
-            var headRow = table.Rows.Add();           
-            var props = typeof(TValue).GetProperties(BindingFlags.Public | BindingFlags.Instance);
-            foreach (var prop in props)
-            {
-               headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);               
-            }
-
-            foreach (var group in groupedData)
-            {
-                // Add group row to table
-                var row = table.Rows.Add();
-                var cell = row.Cells.Add(group.Key.ToString());
-                cell.ColSpan = props.Length;
-                cell.BackgroundColor = Pdf.Color.DarkGray;
-                cell.DefaultCellTextState.ForegroundColor = Pdf.Color.White;
-
-                foreach (var item in group.Values)
-                {
-                    // Add data row to table
-                    var dataRow = table.Rows.Add();
-                    // Add cells
-                    foreach (var t in props)
-                    {
-                        var dataItem = t.GetValue(item, null);
-
-                        if (t.GetCustomAttribute(typeof(DataTypeAttribute)) is DataTypeAttribute dataType)
-                            switch (dataType.DataType)
-                            {
-                                case DataType.Currency:
-                                    dataRow.Cells.Add(string.Format("{0:C}", dataItem));
-                                    break;
-                                case DataType.Date:
-                                    var dateTime = (DateTime)dataItem;
-                                    if (t.GetCustomAttribute(typeof(DisplayFormatAttribute)) is DisplayFormatAttribute df)
-                                    {
-                                        dataRow.Cells.Add(string.IsNullOrEmpty(df.DataFormatString)
-                                            ? dateTime.ToShortDateString()
-                                            : string.Format(df.DataFormatString, dateTime));
-                                    }
-                                    break;
-                                default:
-                                    dataRow.Cells.Add(dataItem.ToString());
-                                    break;
-                            }
-                        else
-                        {
-                            dataRow.Cells.Add(dataItem.ToString());
-                        }
+                        dataRow.Cells.Add(dataItem.ToString());
                     }
                 }
             }
         }
     }
+}
 ```
 
 The Data Annotations attributes are often used to describe models and help us to create the table. Therefore, the following table generation algorithm was chosen for ImportEntityList:
@@ -289,12 +293,12 @@ In this example, additional customizations were made for DataType.Currency (line
 The algorithm of the ImportGroupedData method is almost the same as the previous one. An additional GroupViewModel class is used, to store the grouped data.
 
 ```csharp
-.using System.Collections.Generic;
-    public class GroupViewModel<K,T>
-    {
-        public K Key;
-        public IEnumerable<T> Values;
-    }
+using System.Collections.Generic;
+public class GroupViewModel<K,T>
+{
+    public K Key;
+    public IEnumerable<T> Values;
+}
 ```
 
 Since we process groups, first we generate a line for the key value (lines 66-71), and after it - the lines of this group.

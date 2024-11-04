@@ -94,7 +94,6 @@ To create a PDF file using C#, the following steps can be used.
 1. Save the resultant PDF document
 
 ```csharp
-
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
@@ -117,7 +116,6 @@ This logic specified below recognizes text for PDF images. For recognition you m
 Following is complete code to accomplish this requirement:
 
 ```csharp
-
 using System;
 
 namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
@@ -197,14 +195,14 @@ The example creates a new span element in the tagged content of the first page o
 You can create a bdc statement specifying mcid, lang, and expansion text using the BDCProperties object:
 
 ```cs
-    BDC bdc = new BDC(PdfConsts.P, new BDCProperties(1, "de", "Hallo, welt!"));
+BDC bdc = new BDC(PdfConsts.P, new BDCProperties(1, "de", "Hallo, welt!"));
 ```
 
 After creating the structure tree, it is possible to bind the BDC operator to the specified element of the structure with method Tag on the element object:
 
 ```cs
-    SpanElement span = content.CreateSpanElement();
-    span.Tag(bdc);
+SpanElement span = content.CreateSpanElement();
+span.Tag(bdc);
 ```
 
 Steps to creating an accessible PDF:
@@ -218,21 +216,20 @@ Steps to creating an accessible PDF:
 1. Save the Modified Document
 
 ```cs
-
-    var document = new Document(somepdffilepath);
-    ITaggedContent content = document.TaggedContent;
-    SpanElement span = content.CreateSpanElement();
-    content.RootElement.AppendChild(span);
-    foreach (var op in document.Pages[1].Contents)
+var document = new Document(somepdffilepath);
+ITaggedContent content = document.TaggedContent;
+SpanElement span = content.CreateSpanElement();
+content.RootElement.AppendChild(span);
+foreach (var op in document.Pages[1].Contents)
+{
+    BDC bdc = op as BDC;
+    if (bdc != null)
     {
-        BDC bdc = op as BDC;
-        if (bdc != null)
-        {
-            span.Tag(bdc);
-        }
+        span.Tag(bdc);
     }
+}
 
-    document.Save(output);
+document.Save(output);
 ```
 
 This code modifies a PDF by creating a span element within the document's tagged content and tagging specific content (BDC operations) from the first page with this span. The modified PDF is then saved to a new file.

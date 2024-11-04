@@ -744,9 +744,8 @@ Check next code snippet for converting CDR files to PDF format.
 3. Save the document with the desired file name.
 
 ```csharp
-
-    var doc = new Document("input.cdr", new CdrLoadOptions());
-    doc.Save("out.pdf");
+var doc = new Document("input.cdr", new CdrLoadOptions());
+doc.Save("out.pdf");
 ```
 
 ## Convert DJVU to PDF
@@ -762,9 +761,8 @@ Check next code snippet for converting DJVU files to PDF format.
 3. Save the document with the desired file name.
 
 ```csharp
-
-    var doc = new Document("input.djvu", new DjvuLoadOptions());
-    doc.Save("out.pdf");
+var doc = new Document("input.djvu", new DjvuLoadOptions());
+doc.Save("out.pdf");
 ```
 
 ## Convert HEIC to PDF
@@ -774,28 +772,27 @@ A HEIC file is a High-Efficiency Container Image file format that can store mult
 Convert HEIC images to PDF using Aspose.PDF:
 
 ```cs
+using (var fs = new FileStream("iphone_photo.heic", FileMode.Open))
+{
+    HeicImage image = HeicImage.Load(fs);
+    var pixels = image.GetByteArray(PixelFormat.Rgb24);
+    var width = (int)image.Width;
+    var height = (int)image.Height;
 
-    using (var fs = new FileStream("iphone_photo.heic", FileMode.Open))
-    {
-        HeicImage image = HeicImage.Load(fs);
-        var pixels = image.GetByteArray(PixelFormat.Rgb24);
-        var width = (int)image.Width;
-        var height = (int)image.Height;
+    var document = new Document();
+    Aspose.Pdf.Page page = document.Pages.Add();
+    Aspose.Pdf.Image asposeImage = new Aspose.Pdf.Image();
+    asposeImage.BitmapInfo = new BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
+    page.PageInfo.Height = height;
+    page.PageInfo.Width = width;
+    page.PageInfo.Margin.Bottom = 0;
+    page.PageInfo.Margin.Top = 0;
+    page.PageInfo.Margin.Right = 0;
+    page.PageInfo.Margin.Left = 0;
 
-        var document = new Document();
-        Aspose.Pdf.Page page = document.Pages.Add();
-        Aspose.Pdf.Image asposeImage = new Aspose.Pdf.Image();
-        asposeImage.BitmapInfo = new BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
-        page.PageInfo.Height = height;
-        page.PageInfo.Width = width;
-        page.PageInfo.Margin.Bottom = 0;
-        page.PageInfo.Margin.Top = 0;
-        page.PageInfo.Margin.Right = 0;
-        page.PageInfo.Margin.Left = 0;
-
-        page.Paragraphs.Add(asposeImage);
-        document.Save("iphone_photo.pdf");
-    }
+    page.Paragraphs.Add(asposeImage);
+    document.Save("iphone_photo.pdf");
+}
 ```
 
 ## Applies to

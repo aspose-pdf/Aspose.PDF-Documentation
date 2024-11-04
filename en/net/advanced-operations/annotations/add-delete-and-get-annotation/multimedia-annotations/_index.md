@@ -140,28 +140,28 @@ namespace Aspose.Pdf.Examples.Advanced
 The following code snippet shows how to add Sound Annotation to a PDF file:
 
 ```csharp
-        public static void AddSoundAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
+public static void AddSoundAnnotation()
+{
+    // Load the PDF file
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
 
-            var mediaFile = System.IO.Path.Combine(_dataDir, "file_example_WAV_1MG.wav");
-            // Create Sound Annotation
-            var soundAnnotation = new SoundAnnotation(
-                document.Pages[1],
-                new Rectangle(20, 700, 60, 740),
-                mediaFile)
-            {
-                Color = Color.Blue,
-                Title = "John Smith",
-                Subject = "Sound Annotation demo",
-                Popup = new PopupAnnotation(document)
-            };
+    var mediaFile = System.IO.Path.Combine(_dataDir, "file_example_WAV_1MG.wav");
+    // Create Sound Annotation
+    var soundAnnotation = new SoundAnnotation(
+        document.Pages[1],
+        new Rectangle(20, 700, 60, 740),
+        mediaFile)
+    {
+        Color = Color.Blue,
+        Title = "John Smith",
+        Subject = "Sound Annotation demo",
+        Popup = new PopupAnnotation(document)
+    };
 
-            document.Pages[1].Annotations.Add(soundAnnotation);
+    document.Pages[1].Annotations.Add(soundAnnotation);
 
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_wav.pdf"));
-        }
+    document.Save(System.IO.Path.Combine(_dataDir, "sample_wav.pdf"));
+}
 ```
 
 ## Add RichMediaAnnotation
@@ -169,49 +169,49 @@ The following code snippet shows how to add Sound Annotation to a PDF file:
 The following code snippet shows how to add RichMediaAnnotation to a PDF file:
 
 ```csharp
-        public static void AddRichMediaAnnotation()
-        {
-            Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-            var pathToAdobeApp = @"C:\Program Files (x86)\Adobe\Acrobat 2017\Acrobat\Multimedia Skins";
-            Page page = doc.Pages.Add();
-            //give name to video data. This data will be embedded into document with this name and referenced from flash variables by this name.
-            //videoName should not contain path to the file; this is rather "key" to access data inside of the PDF document
-            const string videoName = "file_example_MP4_480_1_5MG.mp4";
-            const string posterName = "file_example_MP4_480_1_5MG_poster.jpg";
-            //also we use skin for video player
-            string skinName = "SkinOverAllNoFullNoCaption.swf";
-            RichMediaAnnotation rma = new RichMediaAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 300, 600))
-            {
-                //here we should specify stream containing code of the video player
-                CustomPlayer = new FileStream(Path.Combine(pathToAdobeApp,"Players","Videoplayer.swf"), FileMode.Open, FileAccess.Read),
-                //compose flash variables line for player. please note that different players may have different format of the flash variables line. Refer to documentation for your player.
-                CustomFlashVariables = $"source={videoName}&skin={skinName}"
-            };
-            //add skin code.
-            rma.AddCustomData(skinName,
-                new FileStream(Path.Combine(pathToAdobeApp,"SkinOverAllNoFullNoCaption.swf"), FileMode.Open, FileAccess.Read));
-            //set poster for video
-            rma.SetPoster(new FileStream(Path.Combine(_dataDir, posterName), FileMode.Open, FileAccess.Read));
+public static void AddRichMediaAnnotation()
+{
+    Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
+    var pathToAdobeApp = @"C:\Program Files (x86)\Adobe\Acrobat 2017\Acrobat\Multimedia Skins";
+    Page page = doc.Pages.Add();
+    //give name to video data. This data will be embedded into document with this name and referenced from flash variables by this name.
+    //videoName should not contain path to the file; this is rather "key" to access data inside of the PDF document
+    const string videoName = "file_example_MP4_480_1_5MG.mp4";
+    const string posterName = "file_example_MP4_480_1_5MG_poster.jpg";
+    //also we use skin for video player
+    string skinName = "SkinOverAllNoFullNoCaption.swf";
+    RichMediaAnnotation rma = new RichMediaAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 300, 600))
+    {
+        //here we should specify stream containing code of the video player
+        CustomPlayer = new FileStream(Path.Combine(pathToAdobeApp,"Players","Videoplayer.swf"), FileMode.Open, FileAccess.Read),
+        //compose flash variables line for player. please note that different players may have different format of the flash variables line. Refer to documentation for your player.
+        CustomFlashVariables = $"source={videoName}&skin={skinName}"
+    };
+    //add skin code.
+    rma.AddCustomData(skinName,
+        new FileStream(Path.Combine(pathToAdobeApp,"SkinOverAllNoFullNoCaption.swf"), FileMode.Open, FileAccess.Read));
+    //set poster for video
+    rma.SetPoster(new FileStream(Path.Combine(_dataDir, posterName), FileMode.Open, FileAccess.Read));
 
-            Stream fs = new FileStream(Path.Combine(_dataDir,videoName), FileMode.Open, FileAccess.Read);
+    Stream fs = new FileStream(Path.Combine(_dataDir,videoName), FileMode.Open, FileAccess.Read);
 
-            //set video content
-            rma.SetContent(videoName, fs);
+    //set video content
+    rma.SetContent(videoName, fs);
 
-            //set type of the content (video)
-            rma.Type = RichMediaAnnotation.ContentType.Video;
+    //set type of the content (video)
+    rma.Type = RichMediaAnnotation.ContentType.Video;
 
-            //active player by click
-            rma.ActivateOn = RichMediaAnnotation.ActivationEvent.Click;
+    //active player by click
+    rma.ActivateOn = RichMediaAnnotation.ActivationEvent.Click;
 
-            //update annotation data. This method should be called after all assignments/setup. This method initializes data structure of the annotation and embeds required data.
-            rma.Update();
+    //update annotation data. This method should be called after all assignments/setup. This method initializes data structure of the annotation and embeds required data.
+    rma.Update();
 
-            //add annotation on the page.
-            page.Annotations.Add(rma);
+    //add annotation on the page.
+    page.Annotations.Add(rma);
 
-            doc.Save(Path.Combine(_dataDir,"RichMediaAnnotation.pdf"));
-        }
+    doc.Save(Path.Combine(_dataDir,"RichMediaAnnotation.pdf"));
+}
 ```
 
 ### Get MultimediaAnnotation
@@ -219,21 +219,21 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
 Please try using the following code snippet to Get MultimediaAnnotation from PDF document.
 
 ```csharp
-        public static void GetMultimediaAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(
-                Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));
-            var mediaAnnotations = document.Pages[1].Annotations
-                .Where(a => (a.AnnotationType == AnnotationType.Screen)
-                || (a.AnnotationType == AnnotationType.Sound)
-                || (a.AnnotationType == AnnotationType.RichMedia))
-                .Cast<Annotation>();
-            foreach (var ma in mediaAnnotations)
-            {
-                Console.WriteLine($"{ma.AnnotationType} [{ma.Rect}]");
-            }
-        }
+public static void GetMultimediaAnnotation()
+{
+    // Load the PDF file
+    Document document = new Document(
+        Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));
+    var mediaAnnotations = document.Pages[1].Annotations
+        .Where(a => (a.AnnotationType == AnnotationType.Screen)
+        || (a.AnnotationType == AnnotationType.Sound)
+        || (a.AnnotationType == AnnotationType.RichMedia))
+        .Cast<Annotation>();
+    foreach (var ma in mediaAnnotations)
+    {
+        Console.WriteLine($"{ma.AnnotationType} [{ma.Rect}]");
+    }
+}
 ```
 
 ### Delete MultimediaAnnotation
@@ -241,20 +241,20 @@ Please try using the following code snippet to Get MultimediaAnnotation from PDF
 The following code snippet shows how to Delete MultimediaAnnotation from PDF file.
 
 ```csharp
-        public static void DeletePolyAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));
-            var richMediaAnnotations = document.Pages[1].Annotations
-                            .Where(a => a.AnnotationType == AnnotationType.RichMedia)
-                            .Cast<RichMediaAnnotation>();
+public static void DeletePolyAnnotation()
+{
+    // Load the PDF file
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));
+    var richMediaAnnotations = document.Pages[1].Annotations
+                    .Where(a => a.AnnotationType == AnnotationType.RichMedia)
+                    .Cast<RichMediaAnnotation>();
 
-            foreach (var rma in richMediaAnnotations)
-            {
-                document.Pages[1].Annotations.Delete(rma);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation_del.pdf"));
-        }
+    foreach (var rma in richMediaAnnotations)
+    {
+        document.Pages[1].Annotations.Delete(rma);
+    }
+    document.Save(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation_del.pdf"));
+}
 ```
 
 ## Add Widget Annotations
@@ -348,11 +348,13 @@ for (var i = 0; i < 4; i++)
 We should duplicate this array of buttons on each page in the document.
 
 ```csharp
-for (var pageIndex = 1; pageIndex <= document.Pages.Count;
-                                                        pageIndex++)
+for (var pageIndex = 1; pageIndex <= document.Pages.Count; pageIndex++)
+{
     for (var i = 0; i < 4; i++)
-        document.Form.Add(buttons[i],
-          $"btn{pageIndex}_{i + 1}", pageIndex);
+    {
+        document.Form.Add(buttons[i], $"btn{pageIndex}_{i + 1}", pageIndex);
+    }
+}
 
 ```
 
@@ -407,8 +409,8 @@ The main task of 3D modeling is the idea of a future object or object because, i
 Please check the following code snippet to add 3D Annotation.
 
 ```csharp
-    public static void Add3dAnnotation()
-    {
+public static void Add3dAnnotation()
+{
     // Load the PDF file
     Document document = new Document();
     PDF3DContent pdf3DContent = new PDF3DContent(System.IO.Path.Combine(_dataDir,"Ring.u3d"));
@@ -434,7 +436,7 @@ Please check the following code snippet to add 3D Annotation.
     document.Pages[1].Annotations.Add(pdf3dAnnotation);
 
     document.Save(System.IO.Path.Combine(_dataDir, "sample_3d.pdf"));
-    }
+}
 ```
 
 This code example showed us such a model:

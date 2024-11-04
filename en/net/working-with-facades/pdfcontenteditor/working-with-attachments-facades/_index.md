@@ -18,11 +18,11 @@ The following code snippet shows you how to add attachment from a file. For exam
 
 ```csharp
 public static void AttachmentDemo01()
-    {
-        PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample.pdf"));
-        editor.AddDocumentAttachment(@"C:\Samples\file_example_MP3_700KB.mp3","Demo MP3 file");
-        editor.Save(_dataDir + "PdfContentEditorDemo07.pdf");
-    }
+{
+    PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample.pdf"));
+    editor.AddDocumentAttachment(@"C:\Samples\file_example_MP3_700KB.mp3","Demo MP3 file");
+    editor.Save(_dataDir + "PdfContentEditorDemo07.pdf");
+}
 ```
 
 ## Add Attachment from a Stream in an Existing PDF
@@ -31,12 +31,12 @@ Attachment can be added in a PDF file from a stream – FileStream – using [Ad
 
 ```csharp
 public static void AttachmentDemo02()
-    {
-        PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample.pdf"));
-        var fileStream = System.IO.File.OpenRead(@"C:\Samples\file_example_MP3_700KB.mp3");
-        editor.AddDocumentAttachment(fileStream, "file_example_MP3_700KB.mp3", "Demo MP3 file");
-        editor.Save(_dataDir + "PdfContentEditorDemo08.pdf");
-    }
+{
+    PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample.pdf"));
+    var fileStream = System.IO.File.OpenRead(@"C:\Samples\file_example_MP3_700KB.mp3");
+    editor.AddDocumentAttachment(fileStream, "file_example_MP3_700KB.mp3", "Demo MP3 file");
+    editor.Save(_dataDir + "PdfContentEditorDemo08.pdf");
+}
 ```
 
 ## Delete All Attachments from an Existing PDF File
@@ -44,11 +44,11 @@ public static void AttachmentDemo02()
 [DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) method of [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class allows you to delete all the attachments from an existing PDF file. Call the [DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) method. Finally, you have to call [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method to save the updated PDF file. The following code snippet shows you how to delete all attachments from an existing PDF file.
 
 ```csharp
-    public static void DeleteAllAttachments()
-    {
-        AttachmentDemo02();
-        PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "PdfContentEditorDemo07.pdf"));
-        editor.DeleteAttachments();
-        editor.Save(_dataDir + "PdfContentEditorDemo09.pdf");
-    }
+public static void DeleteAllAttachments()
+{
+    AttachmentDemo02();
+    PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "PdfContentEditorDemo07.pdf"));
+    editor.DeleteAttachments();
+    editor.Save(_dataDir + "PdfContentEditorDemo09.pdf");
+}
 ```

@@ -226,52 +226,50 @@ Text and annotations/actions in a PDF file are represented by different entities
 To find the URL content, you need to work with both annotation and text. The [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) object does not have itself have the text but sits under the text on the page. So to get the text, the Annotation gives the URL's bounds, while the Text object gives the URL contents. Please see the following code snippet.
 
 ```csharp
-  {
-        public static void Run()
+    public static void Run()
+    {
+        try
         {
-            try
+            // ExStart:GetHyperlinkText
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+            // Load the PDF file
+            Document document = new Document(dataDir + "input.pdf");
+            // Iterate through each page of PDF
+            foreach (Page page in document.Pages)
             {
-                // ExStart:GetHyperlinkText
-                // The path to the documents directory.
-                string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-                // Load the PDF file
-                Document document = new Document(dataDir + "input.pdf");
-                // Iterate through each page of PDF
-                foreach (Page page in document.Pages)
-                {
-                    // Show link annotation
-                    ShowLinkAnnotations(page);
-                }
-                // ExEnd:GetHyperlinkText
+                // Show link annotation
+                ShowLinkAnnotations(page);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            // ExEnd:GetHyperlinkText
         }
-        // ExStart:ShowLinkAnnotations
-        public static void ShowLinkAnnotations(Page page)
+        catch (Exception ex)
         {
-            foreach (Aspose.Pdf.Annotations.Annotation annot in page.Annotations)
-            {
-                if (annot is LinkAnnotation)
-                {
-                    // Print the URL of each Link Annotation
-                    Console.WriteLine("URI: " + ((annot as LinkAnnotation).Action as GoToURIAction).URI);
-                    TextAbsorber absorber = new TextAbsorber();
-                    absorber.TextSearchOptions.LimitToPageBounds = true;
-                    absorber.TextSearchOptions.Rectangle = annot.Rect;
-                    page.Accept(absorber);
-                    string extractedText = absorber.Text;
-                    // Print the text associated with hyperlink
-                    Console.WriteLine(extractedText);
-                }
-
-            }
+            Console.WriteLine(ex.Message);
         }
-        // ExEnd:ShowLinkAnnotations
     }
-}
+    
+    // ExStart:ShowLinkAnnotations
+    public static void ShowLinkAnnotations(Page page)
+    {
+        foreach (Aspose.Pdf.Annotations.Annotation annot in page.Annotations)
+        {
+            if (annot is LinkAnnotation)
+            {
+                // Print the URL of each Link Annotation
+                Console.WriteLine("URI: " + ((annot as LinkAnnotation).Action as GoToURIAction).URI);
+                TextAbsorber absorber = new TextAbsorber();
+                absorber.TextSearchOptions.LimitToPageBounds = true;
+                absorber.TextSearchOptions.Rectangle = annot.Rect;
+                page.Accept(absorber);
+                string extractedText = absorber.Text;
+                // Print the text associated with hyperlink
+                Console.WriteLine(extractedText);
+            }
+
+        }
+    }
+    // ExEnd:ShowLinkAnnotations
 ```
 
 ## Remove Document Open Action from a PDF File
