@@ -28,6 +28,7 @@ Setelah halaman telah dikonversi menjadi format gambar, kita dapat menggunakan A
 {{% alert color="primary" %}}
 
 Kelas PdfConverter berisi sebuah metode yang bernama GetNextImage yang menghasilkan sebuah gambar dari halaman PDF saat ini. Untuk menentukan format gambar keluaran, metode ini menerima sebuah argumen dari enumerasi System.Drawing.Imaging.ImageFormat.
+{{% /alert %}}
 
 Aspose.Barcode mengandung ruang nama, BarCodeRecognition, yang berisi kelas BarCodeReader. Kelas BarCodeReader memungkinkan Anda membaca, menentukan, dan mengidentifikasi barcode dari file gambar.
 

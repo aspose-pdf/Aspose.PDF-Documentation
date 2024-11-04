@@ -17,6 +17,7 @@ Los documentos PDF generalmente comprenden texto, imágenes, tablas, adjuntos, g
 Aspose.PDF para .NET es un producto muy poderoso para gestionar documentos PDF. Facilita la conversión de páginas de documentos PDF en imágenes. Aspose.BarCode para .NET es un producto igualmente poderoso para generar y reconocer códigos de barras.
 
 La clase PdfConverter bajo el espacio de nombres Aspose.PDF.Facades soporta la conversión de páginas PDF a varios formatos de imagen.
+{{% /alert %}}
 #### **Usando Aspose.PDF.Facades**
 
 {{% alert color="primary" %}}
@@ -26,6 +27,7 @@ La clase PdfConverter contiene un método llamado GetNextImage que genera una im
 Aspose.Barcode contiene un espacio de nombres, BarCodeRecognition, que incluye la clase BarCodeReader. La clase BarCodeReader te permite leer, determinar e identificar códigos de barras desde archivos de imagen.
 
 Para los propósitos de este ejemplo, primero convierte una página de un archivo PDF en una imagen con Aspose.PDF.Facades.PdfConverter.
+{{% /alert %}}
 ##### **Ejemplos de Programación**
 **C#**
 

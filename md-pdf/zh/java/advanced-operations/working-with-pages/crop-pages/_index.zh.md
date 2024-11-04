@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 sitemap:  
     changefreq: "weekly"  
     priority: 0.7  
-
+---
 ## 获取页面属性
 
 PDF文件中的每一页都有许多属性，例如宽度、高度、出血框、裁剪框和修整框。Aspose.PDF for Java允许您访问这些属性。

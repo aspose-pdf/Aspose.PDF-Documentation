@@ -108,6 +108,7 @@ editor.Save();
 
 O trecho de código a seguir mostra como receber os valores postados na página web de destino.
 O seguinte trecho de código mostra como receber os valores postados na página web de destino.
+{{% /alert %}}
 
 ```csharp
 // Exibe os valores postados na página web de destino

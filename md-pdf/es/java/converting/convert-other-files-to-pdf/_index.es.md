@@ -214,6 +214,7 @@ Cuando necesites convertir un archivo de texto a PDF, inicialmente lee el archiv
 
 Aspose.PDF para Java te presenta la aplicación gratuita en línea ["Text to PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), donde puedes intentar investigar la funcionalidad y calidad con la que trabaja.
 
+{{% alert color="primary" %}}
 [![Aspose.PDF Convertion TEXT to PDF with Free App](text_to_pdf.png)](https://products.aspose.app/pdf/conversion/txt-to-pdf)
 {{% /alert %}}
 

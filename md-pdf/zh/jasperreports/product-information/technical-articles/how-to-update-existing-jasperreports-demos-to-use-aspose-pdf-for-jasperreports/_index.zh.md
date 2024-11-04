@@ -23,6 +23,7 @@ Aspose.PDF for JasperReports 包含多个演示项目，帮助您开始将报告
 {{% alert color="primary" %}}
 
 以下步骤说明了如何更新现有演示以使用 Aspose.PDF for JasperReports 导出扩展，而不是使用 JasperReport 的标准 PDF 导出功能。
+{{% /alert %}}
 
 1. 从 <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579> 下载 JasperReports。
    确保下载整个存档项目，包括源代码和演示，而不仅仅是一个 JAR。 本教程使用 JasperReports-3.5.2 准备。  

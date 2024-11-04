@@ -81,6 +81,7 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="このコードグルー�
 
 {{% alert color="primary" %}}
 **ステップ5.** Aspose.Pdf for Reporting Servicesが正常にインストールされたことを確認します。 Reporting Services の Web ポータルを開き、レポートの利用可能なエクスポート形式のリストを確認します。Web ブラウザを起動し、アドレスバーに Reporting Services Web ポータルの URL を入力して Web ポータルを起動します (デフォルトでは http://```<Reporting_Services_server_name>```/reports/ です)。Web ポータル内で利用可能なレポートの 1 つを選択し、[エクスポート] ドロップダウンリストを引き出します。Aspose.Pdf for Reporting Services 拡張機能によって提供されるものを含むエクスポート形式のリストが表示されるはずです。[PDF via Aspose.PDF] アイテムを選択します。
+{{% /alert %}}
 
 ![todo:image_alt_text](install-to-report-server_1.png)
 

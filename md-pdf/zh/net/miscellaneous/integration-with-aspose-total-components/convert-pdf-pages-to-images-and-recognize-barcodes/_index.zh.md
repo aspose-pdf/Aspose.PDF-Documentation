@@ -15,6 +15,7 @@ PDF文档通常包含文本、图像、表格、附件、图表、注释和其�
 {{% alert color="primary" %}}
 
 Aspose.PDF for .NET是一个非常强大的PDF文档管理产品。它可以轻松地将PDF文档中的页面转换为图像。Aspose.BarCode for .NET同样是一个功能强大的产品，用于生成和识别条形码。
+{{% /alert %}}
 
 类PdfConverter位于Aspose.PDF.Facades命名空间下，支持将PDF页面转换为各种图像格式。
 #### **使用 Aspose.PDF.Facades**
@@ -22,6 +23,7 @@ Aspose.PDF for .NET是一个非常强大的PDF文档管理产品。它可以轻�
 {{% alert color="primary" %}}
 
 PdfConverter 类包含一个名为 GetNextImage 的方法，该方法从当前 PDF 页面生成图像。为了指定输出图像格式，这个方法接受来自 System.Drawing.Imaging.ImageFormat 枚举的参数。
+{{% /alert %}}
 
 Aspose.Barcode 包含一个命名空间，BarCodeRecognition，其中包含 BarCodeReader 类。BarCodeReader 类允许您从图像文件读取、确定和识别条形码。
 

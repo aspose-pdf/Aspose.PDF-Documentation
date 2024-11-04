@@ -20,6 +20,7 @@ Report Builder 无法为文本框设置脚注或尾注。使用 Aspose.Pdf for R
 尾注
 **自定义属性** **名称**: Endnote
 **自定义属性值**: *值应该是一个字符串*
+{{% /alert %}}
 
 {{% alert color="primary" %}}
 在以下示例中，报告包含一个值为 'AsposePdf4RS' 的文本框，我们希望以脚注的形式添加补充说明，文本为 "An optional PDF renderer for SSRS from Aspose Pty. Ltd."。

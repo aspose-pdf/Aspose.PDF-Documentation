@@ -1,5 +1,4 @@
 ---
-
 title: Get Started  
 linktitle: Get Started  
 type: docs  
@@ -10,7 +9,7 @@ lastmod: "2024-06-05"
 sitemap:  
     changefreq: "weekly"  
     priority: 0.7  
-
+---
 ## ¿Qué es Python a través de Java?
 
 Python es un lenguaje de scripting. Es universal, por lo tanto, es adecuado para resolver diversas tareas en diferentes sistemas operativos: Windows, iOS, Android, etc.  

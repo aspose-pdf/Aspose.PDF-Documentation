@@ -9,7 +9,7 @@ weight: 20
 url: /jasperreports/supported-file-formats/
 
 lastmod: "2021-06-05"
-
+---
 ## <ins>**支持的加载格式**
 
 下表显示了 Aspose.PDF for JasperReports 可以加载的文件格式。

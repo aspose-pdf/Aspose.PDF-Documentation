@@ -50,5 +50,7 @@ In this article, we have taken a closer look on the [PdfPageEditor](https://refe
 Dans cet article, nous avons examiné de plus près la classe [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor). We have elaborated the properties and methods provided by this class. It makes the manipulation of individual pages in a class a very easy and simple task.  
 {{% /alert %}}
 
+{{% alert color="primary" %}}
+
 Nous avons élaboré les propriétés et méthodes fournies par cette classe. Cela rend la manipulation des pages individuelles dans une classe une tâche très facile et simple.  
 {{% /alert %}}

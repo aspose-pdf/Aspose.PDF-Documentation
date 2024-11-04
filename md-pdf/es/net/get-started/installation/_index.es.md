@@ -57,7 +57,6 @@ Puedes descargar fácilmente Aspose.PDF para .Net para evaluación. La descarga 
 La versión de evaluación de Aspose.PDF (sin una licencia especificada) proporciona la funcionalidad completa del producto, pero tiene dos limitaciones: inserta una marca de agua de evaluación, y solo se pueden ver/editar cuatro elementos de cualquier colección.
 
 {{% alert color="primary" %}}
-{{% alert color="primary" %}}
 
 Si desea probar Aspose.PDF para .NET sin las limitaciones de la versión de evaluación, también puede solicitar una Licencia Temporal de 30 días. Por favor, consulte [¿Cómo obtener una Licencia Temporal?](https://purchase.aspose.com/temporary-license)
 

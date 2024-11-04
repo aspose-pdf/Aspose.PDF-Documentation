@@ -4,13 +4,13 @@ linktitle: Ejemplo de Hola Mundo
 type: docs
 weight: 20
 url: /androidjava/hello-world-example/
-description: Esta página muestra cómo usar programación simple para crear un documento PDF que contiene texto: Hola Mundo utilizando Aspose.PDF para Android.
+description: Esta página muestra cómo usar programación simple para crear un documento PDF que contiene texto - Hola Mundo utilizando Aspose.PDF para Android.
 lastmod: "2021-08-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
+ 
 ## Ejemplo de Hola Mundo
 
 Un ejemplo de "Hola Mundo" se utiliza tradicionalmente para presentar las características de un lenguaje de programación o software con un caso de uso simple.

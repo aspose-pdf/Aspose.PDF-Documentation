@@ -181,6 +181,7 @@ public static void ConvertDICOMtoPDF()
 
 [![Aspose.PDF تحويل DICOM إلى PDF باستخدام التطبيق المجاني](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
 [![تحويل Aspose.PDF DICOM إلى PDF باستخدام التطبيق المجاني](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
+{{% /alert %}}
 
 ## تحويل EMF إلى PDF
 

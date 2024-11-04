@@ -17,7 +17,7 @@ Une nouvelle version auto-portée d'Aspose.PDF pour Java a été publiée et mai
 {{% alert color="primary" %}}
 
 Dans la première version (v4.0.0), nous livrons deux fichiers jar, à savoir **aspose.pdf-3.3.0.jdk15.jar** et **aspose.pdf-new-4.0.0.jar**.
-
+{{% /alert %}}
 - **aspose.pdf-3.3.0.jdk14.jar**
 
 Ce fichier jar est la même version du produit que celle actuellement disponible dans le module de téléchargement avec le titre [Aspose.PDF for java 3.3.0](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/entry417659.aspx). Par la suite, nous allons appeler cette version de publication comme legacy Aspose.PDF for Java. Dans cette première version, les utilisateurs existants d'Aspose.PDF pour Java pourraient ne pas être impactés car ils obtiennent la même version de publication. Cependant, bientôt, nous retirerons ce fichier jar séparé et toutes les classes et énumérations de l'ancien Aspose.PDF pour Java (avant 4.x.x) seront disponibles sous le package com.aspose.pdf.generator du fichier unique aspose.pdf-new-4.x.x.jar.

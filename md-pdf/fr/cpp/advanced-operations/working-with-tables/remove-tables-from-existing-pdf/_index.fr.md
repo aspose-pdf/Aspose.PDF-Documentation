@@ -94,4 +94,3 @@ Veuillez prendre en compte que la suppression ou le remplacement d'un tableau mo
 
 Par conséquent, en cas de suppression/remplacement des tables dans une boucle, la copie de la collection TableList est essentielle.
 
-{{% /alert %}}

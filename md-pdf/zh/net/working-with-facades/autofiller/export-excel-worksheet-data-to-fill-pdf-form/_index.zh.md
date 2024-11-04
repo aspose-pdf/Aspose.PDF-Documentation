@@ -12,6 +12,7 @@ draft: false
 
 [Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/net/) 中提供了多种填写Pdf表单的方法。您可以从XML文件、DFD、XFDF导入数据，可以使用API，甚至可以使用Excel工作表中的数据。
 我们将使用 [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) 方法，该方法属于 [Aspose.Cells](https://docs.aspose.com//cells/net) 的 [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) 类，将Excel表中的数据导出到DataTable对象中。 然后，我们需要使用 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 类的 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 方法将这些数据导入到 PDF 表单中。确保 DataTable 的列名称与 PDF 表单上的字段名称相同。
+{{% /alert %}}
 
 ## 实施细节
 

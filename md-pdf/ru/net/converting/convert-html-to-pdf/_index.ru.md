@@ -59,7 +59,7 @@ public static void ConvertHTMLtoPDF()
 **Попробуйте конвертировать HTML в PDF онлайн**
 
 Aspose представляет вам бесплатное онлайн-приложение ["HTML в PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), где вы можете изучить функциональность и качество его работы.
-Aspose представляет вам бесплатное онлайн-приложение ["HTML в PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), где вы можете изучить функциональность и качество его работы.
+{{% /alert %}}
 
 [![Преобразование Aspose.PDF HTML в PDF с помощью бесплатного приложения](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
 

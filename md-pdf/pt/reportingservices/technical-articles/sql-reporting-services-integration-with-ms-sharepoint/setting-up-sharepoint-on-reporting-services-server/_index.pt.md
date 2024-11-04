@@ -27,7 +27,7 @@ Para a configuração, escolho Server Farm e uma instalação completa para corr
 
 {{% alert color="primary" %}}
 
-**Em seguida, apontaremos para o banco de dados SharePoint_Config que nossa farm está usando. {{% alert color="primary" %}}
+**Em seguida, apontaremos para o banco de dados SharePoint_Config que nossa farm está usando. 
 
 **Se você não sabe onde está, pode descobrir através do Central Admin em Configurações do Sistema -> Gerenciar Servidores nesta fazenda.**
 

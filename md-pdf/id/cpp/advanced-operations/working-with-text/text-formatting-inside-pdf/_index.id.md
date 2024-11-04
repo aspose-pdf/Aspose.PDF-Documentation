@@ -10,7 +10,7 @@ lastmod: "2021-12-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-
+---
 ## Cara menambahkan Indentasi Baris ke PDF
 
 Untuk menambahkan indentasi baris ke PDF Aspose.PDF untuk C++ menggunakan properti [SubsequentLinesIndent](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options#a89b064ab1f39d56040625d7d98194ad3) dalam kelas [TextFormattingOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_formatting_options/) dan juga membantu koleksi [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) dan [Paragraphs](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs).

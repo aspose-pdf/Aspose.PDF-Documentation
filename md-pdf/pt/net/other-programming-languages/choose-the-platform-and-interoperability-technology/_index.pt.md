@@ -41,6 +41,7 @@ Usar Aspose.PDF de qualquer outra linguagem de programação requer o uso de alg
 
 A seguir está a lista das tecnologias de interoperabilidade sugeridas para usar em uma variedade de linguagens de programação:
 Segue a lista das tecnologias de interoperabilidade sugeridas para uso em uma variedade de linguagens de programação:
+{{% /alert %}}
 
 |**Linguagem de Programação** |**Aspose.PDF para Usar** |**Tecnologia de Interoperabilidade** |
 | :- | :- | :- |

@@ -68,6 +68,7 @@ SharePoint 集成模式下 Reporting Services 的安全概述**
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_5.png)
 
 **图5:**- 报表生成器
+{{% alert color="primary" %}}
 
 “Reporter Builder” 是一个 ActiveX 控件，所以我们需要通过服务器下载它，如下图6所示。
 

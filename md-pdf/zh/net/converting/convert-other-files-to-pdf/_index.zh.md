@@ -607,8 +607,8 @@ LaTeX文件格式是一种带有标记的文本文件格式，它使用的是TeX
 
 Aspose.PDF for .NET为您提供在线免费应用程序["LaTex to PDF"](https://products.aspose.app/pdf/conversion/tex-to-pdf)，您可以在此尝试探索其功能和工作质量。
 
-[![Aspose.PDF Convertion LaTeX/TeX to PDF with Free App](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
-[![Aspose.PDF 转换 LaTeX/TeX 至 PDF 的免费应用](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
+{{% /alert %}}
+
 
 Aspose.PDF for .NET 支持将 TeX 文件转换为 PDF 格式的功能，为了实现这一需求，Aspose.Pdf 命名空间中有一个名为 [LatexLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexloadoptions) 的类，它提供了加载 LaTex 文件并使用 [Document 类](https://reference.aspose.com/pdf/net/aspose.pdf/document) 渲染输出为 PDF 格式的功能。以下代码片段显示了使用 C# 将 LaTex 文件转换为 PDF 格式的过程。
 

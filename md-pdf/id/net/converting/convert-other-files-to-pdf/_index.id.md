@@ -616,6 +616,7 @@ Format file LaTeX adalah format file teks dengan markup dalam turunan LaTeX dari
 **Coba konversi LaTeX/TeX ke PDF secara online**
 
 Aspose.PDF untuk .NET menyajikan aplikasi gratis online ["LaTex ke PDF"](https://products.aspose.app/pdf/conversion/tex-to-pdf), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas kerjanya.
+{{% /alert %}}
 
 [![Aspose.PDF Konversi LaTeX/TeX ke PDF dengan Aplikasi Gratis](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
 Aspose.PDF untuk .NET mendukung fitur untuk mengonversi file TeX ke format PDF dan untuk mencapai kebutuhan ini, ruang nama Aspose.Pdf memiliki kelas bernama [LatexLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexloadoptions) yang menyediakan kemampuan untuk memuat file LaTex dan merender output dalam format PDF menggunakan [Kelas Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document).

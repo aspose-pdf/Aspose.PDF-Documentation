@@ -32,3 +32,4 @@ Pour exécuter les démos Aspose.PDF pour JasperReports :
 13. Exécutez la commande suivante dans la ligne de commande :
    ant pdf – pour produire un fichier PDF à partir du rapport de démonstration.
 14. Ouvrez l'un des documents résultants pour visualiser, par exemple ```<InstallDir>```\demo\samples\charts.ap\AreaChartReport.pdf dans Adobe Reader ou une autre application.
+{{% /alert %}}

@@ -60,6 +60,7 @@ public static void ConvertHTMLtoPDF()
 
 Aspose mempersembahkan aplikasi gratis online ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf) di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas kerjanya.
 Aspose mempersembahkan aplikasi gratis online ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), di mana Anda dapat mencoba untuk mengeksplorasi fungsionalitas dan kualitas kerjanya.
+{{% /alert %}}
 
 [![Konversi Aspose.PDF HTML ke PDF menggunakan Aplikasi Gratis](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
 

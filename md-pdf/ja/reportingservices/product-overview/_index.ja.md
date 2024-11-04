@@ -23,3 +23,4 @@ Aspose.Pdf for Reporting Servicesは、Adobe.Pdf SDKを使用せずにサーバ�
 ## Aspose.PDF for Reporting Servicesは、任意のレポートをPDF形式でエクスポートすることを可能にします
 
 ![todo:image_alt_text](product-overview_2.png)
+{{% /alert %}}

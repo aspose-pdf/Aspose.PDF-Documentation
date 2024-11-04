@@ -35,8 +35,8 @@ PdfPageEditor クラスは、水平および垂直の両方の配置をサポー
 以下のコードスニペットで上記のメソッドのサンプルを見つけることができます：
 
 ## 結論
+{{% alert color="primary" %}}
 
 この記事では、[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor)クラスを詳しく見てきました。 ```
 私たちは、このクラスが提供するプロパティとメソッドを詳しく説明しました。これにより、クラス内の個々のページの操作が非常に簡単でシンプルな作業になります。
 {{% /alert %}}
-```

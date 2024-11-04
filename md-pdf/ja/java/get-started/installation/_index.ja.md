@@ -33,6 +33,7 @@ sitemap:
 
 評価のために [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) をダウンロードできます。
  ダウンロード評価版は、購入版ダウンロードと同じです。評価版は、[ライセンスを適用する](/pdf/java/licensing/)ために数行のコードを追加すると、ライセンス版になります。
+{{% /alert %}}
 
 評価版のAspose.PDFは全機能を提供しますが、2つの制限があります：
 

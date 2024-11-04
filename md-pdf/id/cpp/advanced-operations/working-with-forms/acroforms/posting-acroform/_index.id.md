@@ -14,6 +14,7 @@ sitemap:
 {{% alert color="primary" %}}
 
 AcroForm adalah jenis dokumen PDF yang penting. Anda tidak hanya dapat membuat dan mengedit AcroForm menggunakan [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.facades), tetapi juga mengimpor dan mengekspor data formulir ke dan dari file XML. Namespace Aspose.Pdf.Facades di Aspose.PDF untuk C++ memungkinkan Anda untuk mengimplementasikan fitur lain dari AcroForm, yang membantu Anda mengirim data AcroForm ke halaman web eksternal. Halaman web ini kemudian membaca variabel yang dikirim dan menggunakan data ini untuk pemrosesan lebih lanjut. Fitur ini berguna dalam kasus ketika Anda tidak hanya ingin menyimpan data di file PDF, melainkan ingin mengirimkannya ke server Anda dan kemudian menyimpannya di database dll.
+{{% /alert %}}
 
 ## Detail implementasi
 

@@ -17,6 +17,7 @@ lastmod: "2022-01-27"
 {{% alert color="primary" %}}
 
 في إصدار النسخة الأولى (v4.0.0)، نقوم بشحن ملفين jar وهما **aspose.pdf-3.3.0.jdk15.jar** و **aspose.pdf-new-4.0.0.jar**.
+{{% /alert %}}
 
 - **aspose.pdf-3.3.0.jdk14.jar**
 

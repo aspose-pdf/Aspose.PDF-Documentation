@@ -29,6 +29,7 @@ Voici un exemple simple de code C++ pour extraire du texte des fichiers PDF en u
 ```
 
 et comporte une ou plusieurs **#import**. Copiez-les simplement dans votre code avant d'importer la bibliothèque de types principale et faites-le dans le ***même*** ordre. Ainsi, vous éviterez le premier type de problème. Le type de problème suivant provient du fait que l'environnement C++ a un grand nombre de macros, de fonctions prédéfinies, etc., qui peuvent entrer en conflit avec les méthodes de la bibliothèque de types. Par exemple, GetType est déjà largement utilisé en C++ mais aussi Aspose.PDF l'utilise. J'ai trouvé que les attributs **rename** et **auto_rename** de la directive **#import** sont très pratiques pour éviter les avertissements et les erreurs possibles.
+{{% alert color="primary" %}}
 
 - parfois, les classes dans les espaces de noms **uses** entrent en conflit avec les noms dans la bibliothèque de types, donc dans de tels cas, le nom complet de la classe doit être utilisé au lieu de **using namespace**. Par exemple, voyez comment StringToBSTR est appelé dans l'extrait de code ci-dessous.
 {{% /alert %}}

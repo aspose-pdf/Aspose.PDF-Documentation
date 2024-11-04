@@ -408,6 +408,7 @@ doc.Save(dataDir + "ImagetoPDF.pdf");
 
 Aspose는 기능과 품질을 조사해 볼 수 있는 무료 온라인 애플리케이션 ["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/)를 제공합니다.
 **Aspose.PDF for .NET**에서는 SVG 이미지를 PDF 형식으로 변환하는 방법과 원본 <abbr title="Scalable Vector Graphics">SVG</abbr> 파일의 크기를 얻는 방법을 설명합니다.
+{{% /alert %}}
 
 스케일러블 벡터 그래픽(SVG)은 정적 및 동적(대화형 또는 애니메이션)의 2차원 벡터 그래픽을 위한 XML 기반 파일 형식의 사양 가족입니다. SVG 사양은 1999년부터 World Wide Web Consortium (W3C)에 의해 개발되고 있는 개방형 표준입니다.
 

@@ -603,6 +603,7 @@ XML 형식은 구조화된 데이터를 저장하는 데 사용됩니다. Aspose
 
 Aspose.PDF for .NET은 기능과 품질을 조사해 볼 수 있는 무료 온라인 애플리케이션 ["XML to PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf)를 제공합니다.
 Aspose.PDF for .NET은 ["XML to PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf)라는 무료 온라인 애플리케이션을 제공합니다. 여기에서 기능과 품질을 테스트해볼 수 있습니다.
+{{% /alert %}}
 
 [![Aspose.PDF Convertion XML to PDF with Free App](xml_to_pdf.png)](https://products.aspose.app/pdf/conversion/xml-to-pdf)
 

@@ -23,7 +23,7 @@ lastmod: "2021-06-05"
 - 默认情况下，Power BI Report Server 安装在 C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer 目录中。
 
 在以下文本中，Reporting Services 的安装目录（上述路径之一）将被称为 ```<Instance>```。
-{{% /alert %}}**步骤 2.** 将适用于相应 SSRS 版本的 Aspose.Pdf.ReportingServices.dll 复制到 ```<Instance>```\bin 文件夹中。
+**步骤 2.** 将适用于相应 SSRS 版本的 Aspose.Pdf.ReportingServices.dll 复制到 ```<Instance>```\bin 文件夹中。
 {{% /alert %}}
 
 {{% alert color="primary" %}}
@@ -81,3 +81,4 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="此代码组授予对 AP4S
 **步骤5。** 验证 Aspose.Pdf for Reporting Services 是否成功安装。 打开 Reporting Services Web 门户并查看报表可用的导出格式列表。您可以通过启动 web 浏览器并在地址栏中键入 Reporting Services Web 门户 URL 来启动 Web 门户（默认情况下为 http://```<Reporting_Services_server_name>```/reports/）。选择 Web 门户中可用的报表之一并拉出导出下拉列表。您应该会看到导出格式列表，包括由 Aspose.Pdf for Reporting Services 扩展提供的格式。选择通过 Aspose.PDF 的 PDF 项目。
 
 点击所选项目。它将在所选格式中生成报表，将其发送给客户端，并根据您的 web 浏览器设置，显示保存文件对话框以选择保存导出报表的位置，或自动将文件下载到您的下载文件夹。
+{{% /alert %}}

@@ -35,6 +35,7 @@ sitemap:
  评估下载与购买的下载相同。当您添加几行代码以[应用许可证](/pdf/androidjava/licensing/)时，评估版本就会变得可授权。
 
 如果您想在没有评估版本限制的情况下测试 Aspose.PDF for Android via Java，您也可以申请30天的临时许可证。请参考[如何获取临时许可证？](https://purchase.aspose.com/temporary-license)
+{{% /alert %}}
 
 ## 从 Aspose 仓库安装 Aspose.PDF for Android via Java
 

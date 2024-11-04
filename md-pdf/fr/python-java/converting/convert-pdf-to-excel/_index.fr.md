@@ -1,5 +1,4 @@
 ---
-
 title: Convertir PDF en Excel en Python  
 linktitle: Convertir PDF en Excel  
 type: docs  
@@ -11,7 +10,7 @@ description: La bibliothèque Aspose.PDF pour Python vous permet de convertir un
 sitemap:  
     changefreq: "monthly"  
     priority: 0.7  
-
+---
 ## Aperçu
 
 Cet article explique comment **convertir un PDF en formats Excel en utilisant Python**. Il couvre les sujets suivants.

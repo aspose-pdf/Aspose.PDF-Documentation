@@ -15,6 +15,7 @@ Les documents PDF comprennent généralement du texte, des images, des tableaux,
 {{% alert color="primary" %}}
 
 Aspose.PDF pour .NET est un produit très puissant pour la gestion des documents PDF. Il facilite la conversion des pages de documents PDF en images. Aspose.BarCode pour .NET est un produit tout aussi puissant pour générer et reconnaître des codes-barres.
+{{% /alert %}}
 
 La classe PdfConverter sous l'espace de noms Aspose.PDF.Facades prend en charge la conversion des pages PDF en divers formats d'image.
 #### **Utilisation d'Aspose.PDF.Facades**

@@ -41,4 +41,5 @@ PageSize 属性指定文件中单个页面的大小。此属性以 PageSize 对�
 
 {{% alert color="primary" %}}
 在本文中，我们深入研究了 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 类。
-``` 我们详细说明了该类提供的属性和方法。这使得在类中操作单个页面变得非常简单和容易。
+ 我们详细说明了该类提供的属性和方法。这使得在类中操作单个页面变得非常简单和容易。
+{{% /alert %}}

@@ -16,6 +16,7 @@ description: 평가가 만족스러우면 PDF SharePoint API에 대한 라이선
 {{% alert color="primary" %}}
 
 주문이 결제된 후 라이선스가 이메일로 발송됩니다. 라이선스는 일반 SharePoint 솔루션 패키지를 포함하는 .zip 아카이브입니다.
+{{% /alert %}}
 
 이 아카이브에는 다음이 포함됩니다:
 

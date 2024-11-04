@@ -62,6 +62,7 @@ En revenant à l'URL ReportServer, nous devrions voir quelque chose de similaire
 
 **REMARQUE :** ***Si votre site SharePoint est configuré pour SSL, il n'apparaîtra pas dans cette liste. C'est un problème connu et cela ne signifie pas qu'il y a un problème. Vos rapports devraient toujours fonctionner.***
 {{% /alert %}}
+{{% alert color="primary" %}}
 
 Maintenant que nous avons intégré avec succès les deux produits, nous sommes prêts à utiliser les Services de Reporting dans SharePoint 2010. Comme la version précédente, nous avons une fonctionnalité (activée lorsque nous configurons l'intégration des Services de Reporting) dans la "Fonctionnalité de collection de sites". De plus, l'installation a ajouté 3 types de contenu à ajouter à notre site. Dans l'Image 7, nous pouvons voir 2 de ces types de contenu ajoutés dans une bibliothèque de documents pour créer un rapport personnalisé, comme nous pouvons le voir dans l'Image5 ci-dessous.
 

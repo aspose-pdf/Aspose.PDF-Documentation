@@ -1,11 +1,10 @@
 ---
-
 title: Aspose.PDF Java pour Ruby  
 type: docs  
 weight: 20  
 url: /java/aspose-pdf-java-for-ruby/  
 lastmod: "2021-06-05"  
-
+---
 ## Introduction
 
 ### Rjb - Ruby Java Bridge

@@ -33,7 +33,7 @@ sitemap:
 
 Вы можете скачать [Aspose.PDF для Android через Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java) для оценки.
  Загрузка для оценки такая же, как и загрузка для покупки. Оценочная версия просто становится лицензированной, когда вы добавляете несколько строк кода для [применения лицензии](/pdf/androidjava/licensing/).
-
+{{% /alert %}}
 Если вы хотите протестировать Aspose.PDF для Android через Java без ограничений оценочной версии, вы также можете запросить временную лицензию на 30 дней. Пожалуйста, обратитесь к [Как получить временную лицензию?](https://purchase.aspose.com/temporary-license)
 
 ## Установка Aspose.PDF для Android через Java из репозитория Aspose

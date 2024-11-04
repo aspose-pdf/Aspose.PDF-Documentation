@@ -179,6 +179,7 @@ public static void ConvertDICOMtoPDF()
 **Coba konversi DICOM ke PDF secara online**
 
 Aspose menyajikan aplikasi gratis online ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas kerjanya.
+{{% /alert %}}
 
 [![Aspose.PDF Konversi DICOM ke PDF menggunakan Aplikasi Gratis](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
 ## Mengonversi EMF ke PDF
@@ -406,6 +407,7 @@ doc.Save(dataDir + "ImagetoPDF.pdf");
 Aspose menyajikan aplikasi gratis online ["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas kerjanya.
 
 Aspose menyajikan aplikasi online gratis ["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
+{{% /alert %}}
 
 [![Konversi Aspose.PDF PNG ke PDF menggunakan Aplikasi Gratis](png_to_pdf.png)](https://products.aspose.app/pdf/conversion/png-to-pdf/)
 

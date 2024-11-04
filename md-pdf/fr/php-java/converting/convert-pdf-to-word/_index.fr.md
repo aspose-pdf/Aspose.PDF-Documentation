@@ -1,5 +1,4 @@
 ---
-
 title: Convertir PDF en Microsoft Word  
 linktitle: Convertir PDF en Word  
 type: docs  
@@ -10,7 +9,7 @@ description: Convertir un fichier PDF en format DOC et DOCX facilement et avec u
 sitemap:  
     changefreq: "monthly"  
     priority: 0.7  
-
+---
 ## Aperçu
 
 Cet article explique comment convertir un PDF en Word en utilisant PHP. Le code est très simple, il suffit de charger le PDF dans la classe Document et de l'enregistrer au format de sortie Microsoft Word DOC ou DOCX. Il couvre les sujets suivants
@@ -145,6 +144,7 @@ $document->save($outputFile, $saveOption);
 **Essayez de convertir PDF en DOCX en ligne**
 
 Aspose.PDF pour PHP vous présente l'application en ligne gratuite ["PDF to DOCX"](https://products.aspose.app/pdf/conversion/pdf-to-docx), où vous pouvez essayer d'examiner la fonctionnalité et la qualité de son fonctionnement.
+{{% /alert %}}
 
 
 [![Application gratuite Aspose.PDF Conversion PDF en DOCX](pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)

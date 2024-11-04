@@ -28,6 +28,7 @@ Este es un ejemplo simple de código C++ para extraer texto de archivos PDF usan
 ```cpp
 // Bibliotecas de tipos cruzadas:
 ```
+{{% alert color="primary" %}}
 
 y tiene uno o más **#import**. Simplemente cópielos en su código antes de importar la biblioteca de tipos principal y hágalo en el ***mismo*** orden. Así evitarás el primer tipo de problema. El siguiente tipo de problema proviene del hecho de que el entorno C++ tiene un gran número de macros, funciones predefinidas, etc., que pueden entrar en conflicto con los métodos de la biblioteca de tipos. Por ejemplo, GetType ya ha sido ampliamente utilizado en C++, pero también lo tiene Aspose.PDF. Descubrí que los atributos **rename** y **auto_rename** de la directiva **#import** son muy convenientes para evitar posibles advertencias y errores.
 

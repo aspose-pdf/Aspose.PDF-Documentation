@@ -68,6 +68,7 @@ Agora que integramos com sucesso ambos os produtos, estamos prontos para usar o 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_5.png)
 
 **Imagem5:**- Construtor de Relatórios
+{{% alert color="primary" %}}
 
 O “Construtor de Relatórios” é um controle ActiveX, então precisamos baixá-lo pelo servidor, como podemos ver na Imagem 6 abaixo.
 

@@ -33,6 +33,7 @@ sitemap:
 
 Você pode baixar [Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java) para avaliação.
  O download de avaliação é o mesmo que o download adquirido. A versão de avaliação simplesmente se torna licenciada quando você adiciona algumas linhas de código para [aplicar a licença](/pdf/androidjava/licensing/).
+{{% /alert %}}
 
 Se você deseja testar o Aspose.PDF para Android via Java sem as limitações da versão de avaliação, você também pode solicitar uma Licença Temporária de 30 dias. Por favor, consulte [Como obter uma Licença Temporária?](https://purchase.aspose.com/temporary-license)
 

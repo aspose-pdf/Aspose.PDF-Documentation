@@ -615,6 +615,7 @@ O formato XML é usado para armazenar dados estruturados. Existem várias maneir
 **Tente converter XML para PDF online**
 
 Aspose.PDF para .NET apresenta a você a aplicação gratuita online ["XML para PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf), onde você pode tentar investigar a funcionalidade e a qualidade com que funciona.
+{{% /alert %}}
 
 Aspose.PDF para .NET apresenta a você a aplicação gratuita online ["XML para PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf), onde você pode experimentar a funcionalidade e a qualidade com que funciona.
 

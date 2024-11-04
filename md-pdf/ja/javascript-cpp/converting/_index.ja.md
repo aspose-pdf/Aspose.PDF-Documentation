@@ -54,4 +54,4 @@ PDF/Aは、電子文書の長期保存を目的としたPDFのバージョンで
 Aspose PDF APPSを使用して、変換機能をお試しいただけます：
 
 [![Aspose PDF APP](app.png)](https://products.aspose.app/pdf/conversion)
-{{% /アラート %}}
+{{% /alert %}}

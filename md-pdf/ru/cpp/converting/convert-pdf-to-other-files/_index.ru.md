@@ -211,3 +211,4 @@ Aspose.PDF для C++ предлагает бесплатное онлайн-п�
 
 
 [![Aspose.PDF Конвертация PDF в SVG с бесплатным приложением](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+{{% /alert %}}

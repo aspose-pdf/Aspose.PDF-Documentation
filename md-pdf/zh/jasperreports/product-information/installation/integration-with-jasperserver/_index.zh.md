@@ -90,6 +90,7 @@
 4. 将 **Aspose-pdf-jasperreports.jar** 从 **Aspose.PDF.JasperReports.zip** 的 \lib 文件夹复制到 <InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\lib\。
 
 5. 将以下行添加到 **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml** 文件中。
+{{% /alert %}}
 
    这个 bean 可能包含各种配置设置，用于配置导出。例如，您可以使用 JasperReports 字体映射功能或指定 Aspose.Cells for JasperReports 许可证文件的位置。
 

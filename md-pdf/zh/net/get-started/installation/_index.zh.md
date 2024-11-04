@@ -57,7 +57,6 @@ sitemap:
 Aspose.PDF的评估版本（未指定许可证）提供完整的产品功能，但它有两个限制：它插入一个评估水印，且任何集合的只有四个元素可以被查看/编辑。
 
 {{% alert color="primary" %}}
-{{% alert color="primary" %}}
 
 如果您想要测试 Aspose.PDF for .NET 而不受评估版限制，您也可以申请一个为期30天的临时许可证。请参阅[如何获取临时许可证？](https://purchase.aspose.com/temporary-license)
 

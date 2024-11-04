@@ -95,3 +95,4 @@ lastmod: "2021-06-05"
 **Image11:- インストール後のレポートサーバーアクセス**
 
 **エラーの理由: SharePointが私たちのWFEにインストールされており、Reporting Servicesのセットアップが完了しました。この例では、Reporting ServicesとSharePointは異なるマシンにあります。同じマシンにあれば、このエラーは発生しません。技術的にはRSボックスにSharePointをインストールする必要があります。それはIISも有効になることを意味します。**
+{{% /alert %}}

@@ -209,6 +209,7 @@ public final class ConvertPCLtoPDF {
 
 عندما تحتاج إلى تحويل ملف نصي إلى PDF، قم بقراءة ملف النص المصدر في البداية باستخدام قارئ ما. لقد استخدمنا StringBuilder لقراءة محتويات ملف النص. قم بإنشاء كائن Document وأضف صفحة جديدة في مجموعة Pages. أنشئ كائنًا جديدًا من TextFragment ومرر كائن StringBuilder إلى منشئه. أضف فقرة جديدة في مجموعة Paragraphs باستخدام كائن TextFragment واحفظ ملف PDF الناتج باستخدام طريقة Save لفئة Document.
  **حاول تحويل النص إلى PDF عبر الإنترنت**
+{{% alert color="primary" %}} 
 
 توفر لك Aspose.PDF for Java تطبيقًا مجانيًا عبر الإنترنت ["النص إلى PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
 

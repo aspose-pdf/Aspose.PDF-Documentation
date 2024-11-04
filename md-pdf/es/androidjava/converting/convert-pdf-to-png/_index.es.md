@@ -14,10 +14,11 @@ Utilice la biblioteca **Aspose.PDF para Android a través de Java** para convert
 
 La clase PngDevice le permite convertir páginas PDF a imágenes PNG. Esta clase proporciona un método llamado Process que le permite convertir una página particular del archivo PDF al formato de imagen PNG.
 
-## Convertir páginas PDF a imágenes PNG
+## Convertir páginas PDF a imágenes PNG 
 
 Para convertir todas las páginas de un archivo PDF a archivos PNG, recorra las páginas individuales y convierta cada una al formato PNG. El siguiente fragmento de código muestra cómo recorrer todas las páginas de un archivo PDF y convertir cada una a una imagen PNG.
 
+{{% alert color="primary" %}} 
 
 Inténtalo en línea. Puedes comprobar la calidad de la conversión de Aspose.PDF y ver los resultados en línea en este enlace [products.aspose.app/pdf/conversion/pdf-to-png](https://products.aspose.app/pdf/conversion/pdf-to-png)
 

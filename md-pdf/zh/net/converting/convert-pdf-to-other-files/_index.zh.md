@@ -107,9 +107,8 @@ public static void ConvertPDFDocToTXT()
 **尝试在线转换 PDF 到文本**
 
 Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)，您可以在此尝试探索功能和它的工作质量。
-Aspose.PDF for .NET 为您提供在线免费应用程序 [“PDF 转文本”](https://products.aspose.app/pdf/conversion/pdf-to-txt)，您可以尝试探索其功能和工作质量。
+{{% /alert %}}
 
-[![Aspose.PDF 转换 PDF 到文本的免费应用](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 
 ### 将 PDF 页面转换为文本文件
 

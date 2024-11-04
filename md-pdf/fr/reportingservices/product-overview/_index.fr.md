@@ -9,6 +9,7 @@ lastmod: "2021-06-05"
 {{% alert color="primary" %}}
 
 ![Aspose.PDF pour Reporting Services](../../aspose_pdf-for-reporting-services.png)
+{{% /alert %}}
 
 ## Bienvenue sur Aspose.PDF pour Reporting Services !
 

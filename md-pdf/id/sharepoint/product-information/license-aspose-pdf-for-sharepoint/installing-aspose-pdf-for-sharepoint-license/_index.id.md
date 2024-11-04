@@ -16,6 +16,7 @@ Setelah Anda puas dengan evaluasi Anda, Anda dapat [membeli lisensi](https://pur
 {{% alert color="primary" %}}
 
 Lisensi akan dikirimkan ke email Anda setelah pesanan telah dibayar. Lisensi adalah arsip .zip yang berisi paket solusi SharePoint biasa.
+{{% /alert %}}
 
 Arsip ini berisi:
 

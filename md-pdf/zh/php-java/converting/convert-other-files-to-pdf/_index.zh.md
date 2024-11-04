@@ -136,7 +136,7 @@ $document->save($outputFile);
 当您需要将文本文件转换为 PDF 时，首先使用某种读取器读取源文本文件。我们使用 StringBuilder 来读取文本文件内容。实例化 Document 对象并在 Pages 集合中添加新页面。创建一个新的 TextFragment 对象，并将 StringBuilder 对象传递给它的构造函数。使用 TextFragment 对象在 Paragraphs 集合中添加一个新段落，并使用 Document 类的 Save 方法保存生成的 PDF 文件。
 **尝试在线将文本转换为PDF**
 
-Aspose.PDF for PHP 为您提供在线免费应用程序 ["Text to PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf)，您可以在其中尝试调查其功能和工作质量。
+{{% alert color="primary" %}}
 
 [![Aspose.PDF 转换文本为PDF的免费应用程序](text_to_pdf.png)](https://products.aspose.app/pdf/conversion/txt-to-pdf)
 {{% /alert %}}

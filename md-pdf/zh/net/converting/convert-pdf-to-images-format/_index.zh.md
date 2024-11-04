@@ -71,8 +71,6 @@ TiffDevice（基于 DocumentDevice）类允许您将 PDF 页面转换为 TIFF �
 
 Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF 到 TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff)，您可以尝试探索它的功能和工作质量。
 
-[![Aspose.PDF conversion PDF to TIFF with Free App](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
-{{% /alert %}}
 {{% /alert %}}
 
 ### 将 PDF 页面转换为一个 TIFF 图像

@@ -18,6 +18,7 @@ Depois de estar satisfeito com sua avaliação, você pode [adquirir uma licenç
 A licença será enviada por e-mail após o pagamento do pedido. A licença é um arquivo .zip contendo um pacote regular de solução SharePoint.
 
 Este arquivo contém:
+{{% /alert %}}
 
 - Aspose.PDF.SharePoint.License.wsp
 

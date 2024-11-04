@@ -33,6 +33,7 @@ sitemap:
 
 يمكنك تنزيل [Aspose.PDF for Android عبر Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java) للتقييم.
  تنزيل التقييم هو نفسه تنزيل الشراء. تصبح نسخة التقييم مرخصة ببساطة عندما تضيف بعض الأسطر من الكود لـ [تطبيق الترخيص](/pdf/androidjava/licensing/).
+{{% /alert %}}
 
 إذا كنت ترغب في اختبار Aspose.PDF لأجهزة الأندرويد عبر جافا بدون قيود نسخة التقييم، يمكنك أيضًا طلب ترخيص مؤقت لمدة 30 يومًا. يرجى الرجوع إلى [كيف تحصل على ترخيص مؤقت؟](https://purchase.aspose.com/temporary-license)
 

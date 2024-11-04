@@ -136,6 +136,7 @@ Lorsque vous avez besoin de convertir un fichier texte en PDF, commencez par lir
 **Essayez de convertir le TEXTE en PDF en ligne**
 
 Aspose.PDF pour PHP vous présente l'application en ligne gratuite ["Texte en PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), où vous pouvez essayer d'examiner la fonctionnalité et la qualité de son fonctionnement.
+{{% alert color="primary" %}}
 
 [![Conversion Aspose.PDF TEXTE en PDF avec application gratuite](text_to_pdf.png)](https://products.aspose.app/pdf/conversion/txt-to-pdf)
 {{% /alert %}}

@@ -19,8 +19,8 @@ lastmod: "2021-06-05"
 {{% alert color="primary" %}}
 
 If you want to test Aspose.PDF for Reporting Services without the evaluation version limitations, you can also request a 30-day Temporary License.
+{{% /alert %}}
 
----
 
 평가 다운로드는 구매한 다운로드와 동일합니다. 평가 버전은 단순히 Aspose.PDF.ReportingServices.dll이 포함된 폴더에 라이선스 파일을 배치하거나 로컬 모드에서 Report Viewer와 함께 구성 요소를 사용할 때 라이선스를 초기화하는 몇 줄의 코드를 입력하면 라이선스가 됩니다. Aspose.PDF for Reporting Services의 평가 버전(라이선스가 지정되지 않은 경우)은 전체 제품 기능을 제공하지만, .RDL 파일을 PDF 형식으로 렌더링할 때 문서 상단에 평가 워터마크를 삽입합니다. [Aspose.PDF for Reporting Services 라이선스 방법](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)에 대한 추가 지침을 보려면 다음 페이지를 방문하세요.
 

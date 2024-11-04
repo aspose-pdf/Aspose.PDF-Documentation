@@ -76,7 +76,6 @@ Aspose.PDF for .NETは、無料のオンラインアプリケーション ["PDF 
 
 [![Aspose.PDF conversion PDF to TIFF with Free App](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
-{{% /alert %}}
 
 ### PDFページを1つのTIFFイメージに変換する
 

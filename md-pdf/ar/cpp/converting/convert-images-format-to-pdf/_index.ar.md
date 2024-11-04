@@ -1,5 +1,4 @@
 ---
-
 title: تحويل صيغ الصور المختلفة إلى PDF  
 linktitle: تحويل الصور إلى PDF  
 type: docs  
@@ -10,7 +9,7 @@ description: يوضح هذا الموضوع كيفية تحويل مكتبة Asp
 sitemap:  
     changefreq: "monthly"  
     priority: 0.5  
-
+---
 **Aspose.PDF for C++** تتيح لك تحويل صيغ مختلفة من الصور إلى ملفات PDF. توضح مكتبتنا مقتطفات الشيفرة لتحويل أكثر صيغ الصور شيوعًا، مثل - BMP، DICOM، EMF، JPG، PNG، SVG وTIFF.
 
 ## تحويل BMP إلى PDF

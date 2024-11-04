@@ -16,6 +16,7 @@ sitemap:
 {{% alert color="primary" %}}
 
 ![Aspose.PDF para PHP via Java](aspose_pdf-for-php-java.png)
+{{% /alert %}}
 
 ## Bem-vindo ao Aspose.PDF para PHP via Java
 

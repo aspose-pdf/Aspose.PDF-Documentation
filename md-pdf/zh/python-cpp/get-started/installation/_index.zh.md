@@ -24,6 +24,7 @@ Aspose.PDF 的评估版本（未指定许可证）提供完整的产品功能，
 {{% alert color="primary" %}}
 
 如果您想在没有评估版限制的情况下测试 Aspose.PDF for Python，您还可以申请30天的临时许可证。请参考[如何获取临时许可证？](https://purchase.aspose.com/temporary-license)
+{{% /alert %}}
 
 ## 安装 Aspose.PDF for Python via C++
 

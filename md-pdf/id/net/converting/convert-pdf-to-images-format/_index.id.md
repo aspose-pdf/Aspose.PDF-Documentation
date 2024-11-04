@@ -76,7 +76,6 @@ Aspose.PDF for .NET menyajikan aplikasi gratis online ["PDF to TIFF"](https://pr
 
 [![Aspose.PDF conversion PDF to TIFF with Free App](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
-{{% /alert %}}
 
 ### Mengonversi Halaman PDF menjadi Satu Gambar TIFF
 
@@ -289,6 +288,7 @@ Bagian artikel ini menunjukkan cara mengonversi PDF ke <abbr title="Scalable Vec
 **Cobalah untuk mengonversi PDF ke SVG secara online**
 
 Aspose.PDF untuk .NET memperkenalkan aplikasi gratis online ["PDF ke SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), di mana Anda dapat mencoba untuk meneliti fungsionalitas dan kualitas kerjanya.
+{{% /alert %}}
 
 [![Konversi Aspose.PDF PDF ke SVG dengan Aplikasi Gratis](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 **Grafik Vektor Skalabel (SVG)** adalah keluarga spesifikasi dari format file berbasis XML untuk grafik vektor dua dimensi, baik statis maupun dinamis (interaktif atau animasi). Spesifikasi SVG adalah standar terbuka yang telah dikembangkan oleh Konsorsium World Wide Web (W3C) sejak tahun 1999.

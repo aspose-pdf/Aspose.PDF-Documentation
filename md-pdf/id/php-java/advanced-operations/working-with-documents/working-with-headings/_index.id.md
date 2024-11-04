@@ -9,7 +9,7 @@ description: Buat penomoran pada judul dokumen PDF Anda menggunakan PHP. Aspose.
 sitemap:  
     changefreq: "weekly"  
     priority: 0.7  
-
+---
 ## Terapkan Gaya Penomoran pada Judul
 
 Judul adalah bagian penting dari setiap dokumen. Penulis selalu berusaha membuat judul lebih menonjol dan bermakna bagi pembacanya. Jika ada lebih dari satu judul dalam sebuah dokumen, seorang penulis memiliki beberapa opsi untuk mengatur judul-judul ini. Salah satu pendekatan yang paling umum untuk mengatur judul adalah menulis judul dalam Gaya Penomoran.

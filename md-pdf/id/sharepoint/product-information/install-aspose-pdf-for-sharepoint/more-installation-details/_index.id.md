@@ -31,3 +31,4 @@ description: Informasi lebih lanjut tentang pemasangan PDF SharePoint API menjel
 
 Selama aktivasi, fitur ini membuat beberapa perubahan pada direktori virtual dari aplikasi web induk dari koleksi situs: Menambahkan halaman pengaturan konversi ke file sitemap.
  Salin file sumber daya yang diperlukan ke folder App_GlobalResources di direktori virtual.
+ {{% /alert %}}

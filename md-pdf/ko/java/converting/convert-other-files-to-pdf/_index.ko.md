@@ -208,6 +208,7 @@ public final class ConvertPCLtoPDF {
 
 텍스트 파일을 PDF로 변환해야 할 때, 처음에는 어떤 리더에서 원본 텍스트 파일을 읽어야 합니다. 우리는 StringBuilder를 사용하여 텍스트 파일 내용을 읽었습니다. Document 객체를 인스턴스화하고 Pages 컬렉션에 새 페이지를 추가합니다. TextFragment의 새 객체를 생성하고 StringBuilder 객체를 생성자에 전달합니다. TextFragment 객체를 사용하여 Paragraphs 컬렉션에 새 단락을 추가하고 Document 클래스의 Save 메서드를 사용하여 결과 PDF 파일을 저장합니다.
 **텍스트를 PDF로 온라인에서 변환해보세요**
+{{% alert color="success" %}}
 
 Aspose.PDF for Java는 온라인 무료 애플리케이션 ["텍스트를 PDF로"](https://products.aspose.app/pdf/conversion/txt-to-pdf)를 제공하여, 기능 및 품질을 조사해볼 수 있습니다.
 

@@ -204,6 +204,7 @@ public final class ConvertPCLtoPDF {
 1. Se o arquivo PCL analisado contiver comandos de macros, o resultado da análise será muito diferente do arquivo de origem, porque os comandos de macros não são suportados.
 
 ## Converter Texto para PDF
+{{% alert color="success" %}}
 
 **Aspose.PDF para Java** fornece a capacidade de converter arquivos de texto para o formato PDF. Neste artigo, demonstramos como podemos converter de forma fácil e eficiente um arquivo de texto para PDF usando Aspose.PDF.
 

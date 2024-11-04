@@ -22,6 +22,7 @@ sitemap:
 Aspose.PDF untuk Python mendukung pengembangan aplikasi di berbagai sistem operasi, termasuk Windows dan Linux, selama Python 3.5 atau versi yang lebih baru terpasang.
 
 Fitur utama Aspose.PDF untuk Python via C++ adalah tidak memerlukan .NET, Java, dan pustaka asli lainnya. Kecepatannya jauh lebih tinggi dibandingkan produk Python lainnya.
+{{% /alert %}}
 
 Aspose.PDF untuk Python via C++ menawarkan satu set lengkap fungsi untuk bekerja dengan dokumen PDF.
  Pelajari mereka di Halaman Dokumentasi berikutnya.

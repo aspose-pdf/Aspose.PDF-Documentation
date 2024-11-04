@@ -56,4 +56,4 @@ PDF/A هو إصدار من PDF مصمم لأرشفة الوثائق الإلكت
 يمكنك تجربة وظيفة التحويل باستخدام تطبيقات Aspose PDF الخاصة بنا:
 
 [![تطبيق Aspose PDF](app.png)](https://products.aspose.app/pdf/conversion)
-{{% /تنبيه %}}
+{{% /alert %}}

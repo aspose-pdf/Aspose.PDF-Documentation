@@ -15,6 +15,7 @@ description: Microsoft SharePoint ServerのPDF SharePoint APIを使用すると�
 ![todo:image_alt_text](../../aspose_pdf-for-sharepoint.png)
 
 ### **Aspose.PDF for SharePointドキュメントへようこそ！**
+{{% alert color="primary" %}}
 
 Aspose.PDF for SharePointは、ユーザーがリスト、リスト項目、SharePoint WikiページをPDFファイル形式にエクスポートできるソリューションです。
 
@@ -32,4 +33,3 @@ Aspose.PDF for SharePointは、Microsoft SharePoint Server 2010と共に使用�
 
 
 ![todo:image_alt_text](product-overview_2.png)
-```

@@ -134,6 +134,7 @@ $document->save($outputFile);
 
 Ketika Anda perlu mengonversi file Teks ke PDF, mulailah dengan membaca file teks sumber dalam pembaca tertentu. Kami telah menggunakan StringBuilder untuk membaca konten file Teks. Instansiasi objek Document dan tambahkan halaman baru dalam koleksi Pages. Buat objek baru dari TextFragment dan berikan objek StringBuilder ke konstruktor. Tambahkan paragraf baru dalam koleksi Paragraphs menggunakan objek TextFragment dan simpan file PDF yang dihasilkan menggunakan metode Save dari kelas Document.
 **Coba ubah TEKS ke PDF secara online**
+{{% alert color="primary" %}}
 
 Aspose.PDF untuk PHP menghadirkan aplikasi gratis online ["Teks ke PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 

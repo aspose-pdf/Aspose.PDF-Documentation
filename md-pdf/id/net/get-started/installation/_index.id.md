@@ -58,7 +58,6 @@ Anda dapat dengan mudah mengunduh Aspose.PDF untuk .Net untuk evaluasi. Unduhan 
 Versi evaluasi Aspose.PDF (tanpa lisensi yang ditentukan) menyediakan fungsionalitas produk penuh, tetapi memiliki dua batasan: menyisipkan watermark evaluasi, dan hanya empat elemen dari setiap koleksi yang dapat dilihat/diedit.
 
 {{% alert color="primary" %}}
-{{% alert color="primary" %}}
 
 Jika Anda ingin mencoba Aspose.PDF untuk .NET tanpa batasan versi evaluasi, Anda juga dapat meminta Lisensi Sementara selama 30 hari. Silakan merujuk ke [Cara mendapatkan Lisensi Sementara?](https://purchase.aspose.com/temporary-license)
 

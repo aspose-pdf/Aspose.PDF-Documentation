@@ -17,6 +17,7 @@ sitemap:
 
 جرب عبر الإنترنت.
  يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت على هذا الرابط [products.aspose.app/pdf/conversion/pdf-to-xlsx](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+{{% /alert %}}
 
 ## تحويل PDF إلى Excel XLS
 

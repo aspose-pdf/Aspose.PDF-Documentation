@@ -73,7 +73,6 @@ _تنسيق الصورة_: **SVG**
 
 [![تحويل Aspose.PDF PDF إلى TIFF مع التطبيق المجاني](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
-{{% /alert %}}
 
 ### تحويل صفحات PDF إلى صورة TIFF واحدة
 
@@ -280,6 +279,7 @@ public static void ConvertPDFtoImage(ImageDevice imageDevice,
 **حاول تحويل PDF إلى SVG عبر الإنترنت**
 
 يقدم لك Aspose.PDF لـ .NET تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
+{{% /alert %}}
 
 [![تحويل Aspose.PDF لـ PDF إلى SVG بالتطبيق المجاني](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 **رسومات الفيكتور المتجهة القابلة للتوسيع (SVG)** هي مجموعة من المواصفات لتنسيق ملف قائم على XML للرسومات المتجهة ثنائية الأبعاد، سواء كانت ثابتة أو ديناميكية (تفاعلية أو متحركة). مواصفات SVG هي معيار مفتوح تم تطويره بواسطة مجموعة الشبكة العالمية (W3C) منذ عام 1999.

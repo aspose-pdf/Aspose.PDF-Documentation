@@ -25,6 +25,7 @@ A principal característica do Aspose.PDF para Python via C++ é que ele não re
 
 O Aspose.PDF para Python via C++ oferece um conjunto completo de funções para trabalhar com documentos PDF.
  Aprenda sobre eles nas próximas páginas de documentação.
+{{% /alert %}}
 
 ## Capítulos
 

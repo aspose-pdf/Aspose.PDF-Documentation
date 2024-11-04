@@ -561,7 +561,6 @@ Aspose.PDF for .NETは、機能性と品質を調査できる無料オンライ�
 
 [![Aspose.PDF Convertion XPS to PDF with Free App](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
 {{% /alert %}}
-{{% /alert %}}
 
 ## PostScriptをPDFに変換
 

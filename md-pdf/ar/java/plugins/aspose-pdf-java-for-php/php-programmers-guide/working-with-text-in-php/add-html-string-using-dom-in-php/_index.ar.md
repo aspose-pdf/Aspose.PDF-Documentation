@@ -5,7 +5,7 @@ type: docs
 weight: 10  
 url: /java/add-html-string-using-dom-in-php/  
 lastmod: "2021-06-05"  
-
+---
 ## Aspose.PDF - إضافة HTML
 
 لإضافة سلسلة HTML في مستند PDF باستخدام **Aspose.PDF Java for PHP**، ببساطة قم باستدعاء وحدة **AddHtml**.

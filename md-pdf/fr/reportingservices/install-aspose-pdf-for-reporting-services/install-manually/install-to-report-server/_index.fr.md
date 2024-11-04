@@ -87,4 +87,4 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="Ce groupe de code accorde 
 
 Cliquez sur l'élément sélectionné. Cela générera le rapport dans le format sélectionné, l'enverra au client et, en fonction des paramètres de votre navigateur web, soit vous montrera la boîte de dialogue Enregistrer le fichier pour choisir où enregistrer le rapport exporté, soit téléchargera automatiquement le fichier dans votre dossier Téléchargements.
 
-Félicitations, vous avez installé avec succès Aspose.Pdf pour Reporting Services et exporté un rapport en tant que document PDF !{{% /alerte %}}
+Félicitations, vous avez installé avec succès Aspose.Pdf pour Reporting Services et exporté un rapport en tant que document PDF !{{% /alert %}}

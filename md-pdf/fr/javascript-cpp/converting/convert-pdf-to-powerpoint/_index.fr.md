@@ -22,7 +22,7 @@ Aspose.PDF pour JavaScript vous présente l'application en ligne gratuite ["PDF 
 
 
 [![Aspose.PDF Conversion PDF en PPTX avec application gratuite](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
-{{% /alerte %}}
+{{% /alert %}}
 
 ## Convertir PDF en PPTX
 

@@ -208,6 +208,7 @@ void ConvertPDFtoXPS()
 **Coba ubah PDF ke SVG secara online**
 
 Aspose.PDF untuk C++ mempersembahkan aplikasi gratis online ["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
+{{% /alert %}}
 
 
 [![Aspose.PDF Konversi PDF ke SVG dengan Aplikasi Gratis](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)

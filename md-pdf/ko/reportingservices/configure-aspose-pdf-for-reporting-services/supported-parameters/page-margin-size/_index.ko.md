@@ -1,4 +1,4 @@
-```
+---
 title: 페이지 여백 크기
 type: docs
 weight: 70
@@ -35,22 +35,19 @@ lastmod: "2021-06-05"
 
 **예제**
 
-<Render>
-…
-    <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
+{{< highlight csharp >}}
 
+<Render>
+â¦
+    <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
     <Configuration>
-```
-```
-<PageMarginLeft>50</PageMarginLeft>
-<PageMarginRight>50</PageMarginRight>
-<PageMarginTop>50</PageMarginTop>
-<PageMarginBottom>50</PageMarginBottom>
-</Configuration>
-</Extension>
+    <PageMarginLeft>50</PageMarginLeft>
+    <PageMarginRight>50</PageMarginRight>
+    <PageMarginTop>50</PageMarginTop>
+    <PageMarginBottom>50</PageMarginBottom>
+    </Configuration>
+    </Extension>
 </Render>
 
 {{< /highlight >}}
-
 {{% /alert %}}
-```

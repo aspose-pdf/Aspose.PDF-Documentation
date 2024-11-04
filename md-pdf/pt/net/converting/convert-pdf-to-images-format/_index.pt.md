@@ -73,7 +73,6 @@ Aspose.PDF para .NET apresenta a você a aplicação gratuita online ["PDF para 
 
 [![Conversão de Aspose.PDF de PDF para TIFF com Aplicativo Gratuito](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
-{{% /alert %}}
 
 ### Converter Páginas de PDF para Uma Imagem TIFF
 
@@ -286,6 +285,7 @@ Esta parte do artigo mostra como converter PDF para <abbr title="Scalable Vector
 **Tente converter PDF para SVG online**
 
 Aspose.PDF para .NET apresenta a aplicação gratuita online ["PDF para SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), onde você pode explorar a funcionalidade e a qualidade com que ela funciona.
+{{% /alert %}}
 
 [![Conversão de PDF para SVG com o aplicativo gratuito Aspose.PDF](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 [![Conversão de PDF para SVG com Aplicativo Gratuito da Aspose.PDF](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)

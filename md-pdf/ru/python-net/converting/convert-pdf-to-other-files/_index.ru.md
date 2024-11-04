@@ -101,8 +101,9 @@ Aspose.PDF для Python предлагает вам бесплатное онл
 
     # Преобразовать конкретную страницу и сохранить
     textDevice.process(document.pages[1], output_pdf)
-
+```
  **Попробуйте конвертировать PDF в текст онлайн**
+{{% alert color="success" %}}
 
 Aspose.PDF для Python предлагает вам бесплатное онлайн-приложение ["PDF в текст"](https://products.aspose.app/pdf/conversion/pdf-to-txt), где вы можете попробовать оценить функциональность и качество его работы.
 

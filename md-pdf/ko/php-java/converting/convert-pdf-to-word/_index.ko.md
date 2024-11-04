@@ -148,4 +148,4 @@ Aspose.PDF for PHP는 ["PDF to DOCX"](https://products.aspose.app/pdf/conversion
 
 
 [![Aspose.PDF Convertion PDF to DOCX Free App](pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
-I'm sorry, but the text you provided does not contain any content to translate. If you provide the specific text or document that you need translated to Korean, I would be happy to assist you with that.
+{{% /alert %}}

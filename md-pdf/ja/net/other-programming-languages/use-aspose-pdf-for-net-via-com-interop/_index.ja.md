@@ -95,6 +95,7 @@ ProgIDは「プログラム的識別子」を意味します。これはオブ�
 あなたのプログラミング言語（例えばVisual BasicやDelphi）がCOMタイプライブラリを参照できる場合、Aspose.PDF.tlbへの参照を追加し、オブジェクトブラウザでAspose.PDF for .NETのすべてのクラス、メソッド、プロパティ、および列挙を確認します。
 
 TLBファイルを生成するには：
+{{% alert color="primary" %}}
 
 - .NET Framework 2.0
   regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net2.0\Aspose.PDF.dll" /tlb: "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net2.0\Aspose.PDF.tlb" /codebase

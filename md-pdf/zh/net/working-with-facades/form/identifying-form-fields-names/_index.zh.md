@@ -24,3 +24,4 @@ draft: false
 这个问题的解决方案是在 [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormFieldFacade) 类中的 Box 属性，它保存字段的位置。 我们需要将这些值保存到一个矩形类型的数组中，并使用这些值来识别添加新文本字段的位置。
 
 在 [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 命名空间中，我们有一个名为 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) 的类，它提供了操作 PDF 表单的功能。打开一个 PDF 表单；在每个现有表单字段下添加一个文本字段，并以新名称保存 PDF 表单。
+{{% /alert %}}

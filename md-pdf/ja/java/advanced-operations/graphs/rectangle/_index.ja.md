@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 sitemap:  
     changefreq: "monthly"  
     priority: 0.7  
-
+---
 ## 長方形オブジェクトを追加する
 
 Aspose.PDF for Javaは、PDFドキュメントにグラフオブジェクト（例えば、グラフ、線、長方形など）を追加する機能をサポートしています。また、[Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) オブジェクトを追加する機能を提供しており、特定の色で長方形オブジェクトを塗りつぶしたり、Zオーダーを制御したり、グラデーションカラーで塗りつぶしたりする機能もあります。

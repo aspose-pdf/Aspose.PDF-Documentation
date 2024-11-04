@@ -35,19 +35,18 @@ Reporting Services 报表设计器不支持设置页面边距大小。Aspose.Pdf
 
 **例子**
 
+{{< highlight csharp >}}
+
 <Render>
-…
+â¦
     <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
-
     <Configuration>
-```
-
-<PageMarginLeft>50</PageMarginLeft>
-<PageMarginRight>50</PageMarginRight>
-<PageMarginTop>50</PageMarginTop>
-<PageMarginBottom>50</PageMarginBottom>
-</Configuration>
-</Extension>
+    <PageMarginLeft>50</PageMarginLeft>
+    <PageMarginRight>50</PageMarginRight>
+    <PageMarginTop>50</PageMarginTop>
+    <PageMarginBottom>50</PageMarginBottom>
+    </Configuration>
+    </Extension>
 </Render>
 
 {{< /highlight >}}

@@ -25,6 +25,7 @@ Aspose.PDF for Python via C++ 的主要特点是它不需要 .NET、Java 和其�
 
 Aspose.PDF for Python via C++ 提供了一整套用于处理 PDF 文档的功能。
  学习它们在下一个文档页面。
+{{% /alert %}}
 
 ## 章节
 

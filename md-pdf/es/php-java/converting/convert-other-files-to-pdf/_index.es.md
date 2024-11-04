@@ -134,6 +134,7 @@ $document->save($outputFile);
 
 Cuando necesites convertir un archivo de texto a PDF, inicialmente lee el archivo de texto fuente en algún lector. Hemos utilizado StringBuilder para leer los contenidos del archivo de texto. Instancia un objeto Document y añade una nueva página en la colección Pages. Crea un nuevo objeto de TextFragment y pasa el objeto StringBuilder a su constructor. Agrega un nuevo párrafo en la colección Paragraphs usando el objeto TextFragment y guarda el archivo PDF resultante usando el método Save de la clase Document.
 **Intenta convertir TEXTO a PDF en línea**
+{{% alert color="success" %}}
 
 Aspose.PDF para PHP te presenta la aplicación gratuita en línea ["Texto a PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), donde puedes intentar investigar la funcionalidad y calidad con la que trabaja.
 

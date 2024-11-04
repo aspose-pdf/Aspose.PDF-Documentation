@@ -101,10 +101,10 @@ Aspose.PDF for Python 为您提供免费的在线应用程序 ["PDF to LaTeX"](h
 
     # 转换特定页面并保存
     textDevice.process(document.pages[1], output_pdf)
-
+```
 **尝试在线转换 PDF 为文本**
 
-Aspose.PDF for Python 为您提供了在线免费应用程序["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)，您可以在其中尝试调查其功能和工作质量。
+{{% alert color="success" %}}
 
 [![Aspose.PDF 转换 PDF 为文本的免费应用程序](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}

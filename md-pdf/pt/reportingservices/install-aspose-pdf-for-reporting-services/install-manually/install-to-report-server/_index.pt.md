@@ -23,7 +23,7 @@ Nas etapas a seguir, você precisará copiar e modificar arquivos no diretório 
 - O Power BI Report Server, por padrão, é instalado no diretório C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer.
 
 No texto a seguir, o diretório de instalação do Reporting Services (um dos caminhos mencionados acima) será referenciado como ```<Instance>```.
-{{% /alert %}}**Passo 2.** Copie Aspose.Pdf.ReportingServices.dll para a versão correspondente do SSRS para a pasta ```<Instance>```\bin.
+**Passo 2.** Copie Aspose.Pdf.ReportingServices.dll para a versão correspondente do SSRS para a pasta ```<Instance>```\bin.
 {{% /alert %}}
 
 {{% alert color="primary" %}}

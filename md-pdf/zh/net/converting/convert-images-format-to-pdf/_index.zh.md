@@ -179,8 +179,8 @@ public static void ConvertDICOMtoPDF()
 **尝试在线将 DICOM 转换为 PDF**
 
 Aspose 为您提供在线免费应用程序 ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)，您可以在此尝试探索其功能和工作质量。
+{{% /alert %}}
 
-[![Aspose.PDF 转换 DICOM 到 PDF 使用免费应用程序](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
 ## 将EMF转换为PDF
 
 <abbr title="增强型元文件格式">EMF</abbr>EMF独立于设备地存储图形图像。EMF的元文件包括按时间顺序的可变长度记录，可以在任何输出设备上解析后呈现存储的图像。此外，您可以使用以下步骤将EMF转换为PDF图像：
@@ -404,9 +404,7 @@ doc.Save(dataDir + "ImagetoPDF.pdf");
 
 Aspose为您提供在线免费应用程序["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/)，您可以尝试探索其功能和工作质量。
 
-Aspose 为您呈现在线免费应用程序[“PNG 转 PDF”](https://products.aspose.app/pdf/conversion/png-to-pdf/)，您可以尝试探索其功能和工作质量。
-
-[![Aspose.PDF 转换 PNG 到 PDF 使用免费应用](png_to_pdf.png)](https://products.aspose.app/pdf/conversion/png-to-pdf/)
+{{% /alert %}}
 
 ## 将 SVG 转换为 PDF
 

@@ -65,6 +65,7 @@ TextFragmentAbsorberを使用すると、PDFドキュメント内のすべての
 
 ドキュメントからTextFragmentCollectionコレクションを取得したら、それをループして各TextFragmentオブジェクトのTextSegmentCollectionコレクションを取得します。
  その後、個々のTextSegmentオブジェクトのプロパティを取得できます。
+{{% /alert %}}
 
 次のコードスニペットは、すべてのページでテキストセグメントを検索する方法を示しています。
 

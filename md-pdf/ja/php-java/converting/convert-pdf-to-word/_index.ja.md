@@ -95,6 +95,7 @@ $document->save($outputFile, $saveOption);
 **PDFをオンラインでDOCに変換してみてください**
 
 Aspose.PDF for PHPは、オンラインで無料のアプリケーション["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-doc)を提供しており、そこで機能と品質を調査することができます。
+{{% /alert %}}
 
 
 [![Convert PDF to DOC](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)

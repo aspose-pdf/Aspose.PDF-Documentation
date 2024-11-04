@@ -35,6 +35,7 @@ PdfPageEditor 클래스는 수평 및 수직 정렬을 모두 지원합니다. I
 위에서 언급한 메서드의 샘플은 아래 제공된 코드 스니펫에서 찾을 수 있습니다:
 
 ## 결론
+{{% alert color="primary" %}}
 
 이 기사에서는 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 클래스에 대해 자세히 살펴보았습니다. We have elaborated the properties and methods provided by this class. It makes the manipulation of individual pages in a class a very easy and simple task.
 {{% /alert %}}

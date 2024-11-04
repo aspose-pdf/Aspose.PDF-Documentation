@@ -11,7 +11,7 @@ description: Aspose.PDF لـ JavaScript يسمح لك بتحويل PDF إلى XL
 sitemap:  
     changefreq: "monthly"  
     priority: 0.7  
-
+---
 ## إنشاء جداول بيانات من PDF باستخدام JavaScript
 
 **Aspose.PDF لـ JavaScript** يدعم ميزة تحويل ملفات PDF إلى صيغ Excel وCSV.

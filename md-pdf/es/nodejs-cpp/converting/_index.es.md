@@ -50,6 +50,7 @@ PDF/A es una versión de PDF diseñada para el archivo a largo plazo de document
 
 {{% alert color="success" %}}
 **Intenta convertir archivos PDF en línea**
+{{% /alert %}}
 
 Puedes probar la funcionalidad de conversión usando nuestras Aspose PDF APPS:
 

@@ -71,4 +71,4 @@ description: 您可以使用 SharePoint 的 PDF SharePoint API 创建和导出�
 **使用任务列表模板将列表导出为 PDF：**
 ![todo:图片替代文本](creating-and-exporting-template_7.png)
 
-{{% /警告 %}}
+{{% /alert %}}

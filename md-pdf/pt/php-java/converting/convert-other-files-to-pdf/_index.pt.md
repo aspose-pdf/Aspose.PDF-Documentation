@@ -129,6 +129,7 @@ $document->save($outputFile);
 1. Se o arquivo PCL analisado contiver comandos macros, o resultado da análise diferirá muito do arquivo de origem, porque os comandos macros não são suportados.
 
 ## Converter Texto para PDF
+{{% alert color="success" %}}
 
 **Aspose.PDF para PHP** oferece a capacidade de converter arquivos de Texto para o formato PDF. Neste artigo, demonstramos como podemos converter de forma fácil e eficiente um arquivo de texto para PDF usando o Aspose.PDF.
 

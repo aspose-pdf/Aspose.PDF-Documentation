@@ -670,6 +670,7 @@ public static void ConvertPostscriptToPDFAvdanced()
 Aspose.PDF لـ .NET يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["XML إلى PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf)، حيث يمكنك تجربة استكشاف الوظائف وجودة عمله.
 
 [![تحويل Aspose.PDF من XML إلى PDF بتطبيق مجاني](xml_to_pdf.png)](https://products.aspose.app/pdf/conversion/xml-to-pdf)
+{{% /alert %}}
 
 ## تحويل XSL-FO إلى PDF
 

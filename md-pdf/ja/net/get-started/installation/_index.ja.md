@@ -57,7 +57,6 @@ Aspose.PDF for .Netの評価版を簡単にダウンロードできます。評�
 ライセンスが指定されていないAspose.PDFの評価版は、製品の全機能を提供しますが、評価用の透かしを挿入し、任意のコレクションの要素を4つまでのみ表示・編集できるという2つの制限があります。
 
 {{% alert color="primary" %}}
-{{% alert color="primary" %}}
 
 Aspose.PDF for .NETの評価版の制限なしでテストしたい場合、30日間の一時ライセンスもリクエストできます。[一時ライセンスの取得方法は？](https://purchase.aspose.com/temporary-license)を参照してください。
 

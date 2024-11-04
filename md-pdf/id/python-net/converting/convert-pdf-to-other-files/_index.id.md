@@ -100,8 +100,9 @@ Cuplikan kode berikut menjelaskan cara mengekstrak teks dari semua halaman.
 
     # Mengonversi halaman tertentu dan simpan
     textDevice.process(document.pages[1], output_pdf)
-
+```
 **Coba ubah Convert PDF ke Teks secara online**
+{{% alert color="success" %}}
 
 Aspose.PDF untuk Python mempersembahkan kepada Anda aplikasi online gratis ["PDF ke Teks"](https://products.aspose.app/pdf/conversion/pdf-to-txt), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 

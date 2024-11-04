@@ -15,6 +15,7 @@ url: /net/convert-pdf-pages-to-images-and-recognize-barcodes/
 {{% alert color="primary" %}}
 
 Aspose.PDF لـ .NET هو منتج قوي جدًا لإدارة مستندات PDF. يسهل تحويل الصفحات في مستندات PDF إلى صور. Aspose.BarCode لـ .NET هو منتج قوي بالمثل لتوليد وتعرف الباركود.
+{{% /alert %}}
 
 تدعم الفئة PdfConverter تحت فضاء الأسماء Aspose.PDF.Facades تحويل صفحات PDF إلى تنسيقات صور متعددة.
 #### **استخدام Aspose.PDF.Facades**
@@ -30,6 +31,7 @@ Aspose.PDF لـ .NET هو منتج قوي جدًا لإدارة مستندات P
 
 ##### **أمثلة برمجية**
 **C#**
+{{< highlight csharp>}}
 
 ```csharp
  //إنشاء كائن PdfConverter
@@ -71,7 +73,6 @@ while (converter.HasNextImage())
     converter.GetNextImage(imageStream, System.Drawing.Imaging.ImageFormat.Png);
 
     // تعيين موضع الدفق إلى بداية الدفق
-```
 
 // تعيين موضع البث إلى بداية البث
 imageStream.Position = 0;

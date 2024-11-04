@@ -24,3 +24,4 @@ Neste ponto, surge uma pergunta "como determinaríamos a localização onde adic
 A solução para esse problema é a propriedade Box na classe [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormFieldFacade), que mantém a localização do campo. Precisamos salvar esses valores em um array do tipo retângulo e usar esses valores para identificar a posição onde adicionar os novos campos de texto.
 
 No namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades), temos uma classe chamada [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) que fornece a capacidade de manipular formulários PDF. Abra um formulário pdf; adicione um campo de texto abaixo de cada campo de formulário existente e salve o formulário Pdf com um novo nome.
+{{% /alert %}}

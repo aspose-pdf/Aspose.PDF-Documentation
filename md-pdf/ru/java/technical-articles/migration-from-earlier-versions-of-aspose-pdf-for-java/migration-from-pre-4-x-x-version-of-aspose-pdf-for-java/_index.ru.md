@@ -17,6 +17,7 @@ lastmod: "2022-01-27"
 {{% alert color="primary" %}}
 
 В первой версии релиза (v4.0.0) мы поставляем два jar-файла, т.е. **aspose.pdf-3.3.0.jdk15.jar** и **aspose.pdf-new-4.0.0.jar**.
+{{% /alert %}}
 
 - **aspose.pdf-3.3.0.jdk14.jar**
 

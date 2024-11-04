@@ -14,6 +14,7 @@ lastmod: "2021-11-10"
 {{% alert color="primary" %}}
 
 ![Aspose.PDF for C++ Logo](aspose_pdf-for-cpp.png)
+{{% /alert %}}
 
 <h2>欢迎来到 Aspose.PDF for C++ 文档部分</h2>
 

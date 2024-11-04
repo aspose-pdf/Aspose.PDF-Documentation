@@ -22,5 +22,6 @@ Pada titik ini, muncul pertanyaan "bagaimana kita menentukan lokasi di mana mena
 
 {{% alert color="primary" %}}
 Solusi untuk masalah ini adalah properti Box dalam kelas [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormFieldFacade), yang menyimpan lokasi bidang tersebut. Kita perlu menyimpan nilai-nilai ini ke dalam array tipe persegi panjang dan menggunakan nilai-nilai ini untuk mengidentifikasi posisi di mana akan menambahkan kolom teks baru.
+{{% /alert %}}
 
 Dalam namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) kami memiliki kelas bernama [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) yang menyediakan kemampuan untuk memanipulasi formulir PDF. Buka formulir pdf; tambahkan kolom teks di bawah setiap kolom formulir yang ada dan simpan formulir Pdf dengan nama baru.

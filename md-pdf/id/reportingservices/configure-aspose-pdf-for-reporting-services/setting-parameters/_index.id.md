@@ -32,6 +32,7 @@ Untuk PageOrientation -->
 {{< /highlight >}}
 
 Jika Anda ingin mengatur parameter untuk file laporan tertentu tetapi tidak untuk setiap laporan di server, Anda dapat menambahkan parameter laporan untuk laporan tertentu di Report Builder dengan langkah-langkah berikut (misalnya, kita akan menambahkan parameter 'IsLandscape' yang ditunjukkan sebelumnya):
+{{% alert color="primary" %}}
 
 1. Buka laporan di Report Designer, klik kanan pada folder 'Parameters' di panel 'Report Data', dan pilih 'Add Parameter…' (atau, sebagai alternatif, tarik daftar 'New' dan pilih 'Parameter…').
 

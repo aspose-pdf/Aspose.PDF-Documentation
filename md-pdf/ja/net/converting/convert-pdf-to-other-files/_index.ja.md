@@ -108,6 +108,7 @@ public static void ConvertPDFDocToTXT()
 
 Aspose.PDF for .NETは、無料のオンラインアプリケーション["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)を提供しています。ここで機能と品質を試すことができます。
 Aspose.PDF for .NETは、無料のオンラインアプリケーション ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt) を提供しており、その機能と品質を試すことができます。
+{{% /alert %}}
 
 [![Aspose.PDF 変換 PDF to Text 無料アプリ](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 

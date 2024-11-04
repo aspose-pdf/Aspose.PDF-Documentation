@@ -22,6 +22,7 @@ Aspose.PDF for Android via Java API позволяет преобразовыв�
 
 Для конвертации файлов PDF в формат XLS, Aspose.PDF имеет класс под названием [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). Объект класса [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) передается в качестве второго аргумента в конструктор Document.Save(..).
 
+{{% /alert %}}
 Конвертация PDF файла в формат XLSX является частью библиотеки Aspose.PDF для версии Java 18.6. Для того чтобы конвертировать PDF файлы в формат XLSX, необходимо установить формат как XLSX, используя метод setFormat() класса [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions).
 
 Следующий фрагмент кода показывает, как конвертировать PDF файл в формат xls и .xlsx:

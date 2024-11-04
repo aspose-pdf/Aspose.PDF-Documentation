@@ -16,6 +16,7 @@ Una vez que esté satisfecho con su evaluación, puede [comprar una licencia](ht
 {{% alert color="primary" %}}
 
 La licencia se le enviará por correo electrónico después de que se haya pagado el pedido. La licencia es un archivo .zip que contiene un paquete de solución regular de SharePoint.
+{{% /alert %}}
 
 Este archivo contiene:
 

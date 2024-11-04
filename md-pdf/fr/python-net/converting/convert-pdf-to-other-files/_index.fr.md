@@ -101,10 +101,11 @@ Le code suivant explique comment extraire les textes de toutes les pages.
 
     # Convertir une page particulière et enregistrer
     textDevice.process(document.pages[1], output_pdf)
-`
+```
 **Essayez de convertir Convertir PDF en Texte en ligne**
 
 Aspose.PDF pour Python vous présente l'application gratuite en ligne ["PDF en Texte"](https://products.aspose.app/pdf/conversion/pdf-to-txt), où vous pouvez essayer d'examiner la fonctionnalité et la qualité de son fonctionnement.
+{{% alert color="primary" %}}
 
 [![Aspose.PDF Conversion PDF en Texte avec une Application Gratuite](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}

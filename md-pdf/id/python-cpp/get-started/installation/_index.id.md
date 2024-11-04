@@ -14,6 +14,7 @@ sitemap:
 # Instalasi
 
 ## Mengevaluasi Aspose.PDF untuk Python via C++
+{{% alert color="primary" %}}
 
 Anda dapat dengan mudah mengunduh Aspose.PDF untuk Python untuk evaluasi. Unduhan evaluasi sama dengan unduhan yang dibeli. Versi evaluasi akan menjadi berlisensi saat Anda menambahkan beberapa baris kode untuk menerapkan lisensi.
 

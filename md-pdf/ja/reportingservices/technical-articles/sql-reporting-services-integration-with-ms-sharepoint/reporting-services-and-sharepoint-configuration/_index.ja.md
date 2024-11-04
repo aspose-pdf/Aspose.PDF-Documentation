@@ -68,6 +68,7 @@ ReportServer URL に戻ると、以下のようなものが表示されるはず
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_5.png)
 
 **イメージ5:**- レポートビルダー
+{{% alert color="primary" %}}
 
 「レポートビルダー」はActiveXコントロールなので、サーバー経由でダウンロードする必要があります。以下のイメージ6で確認できます。
 

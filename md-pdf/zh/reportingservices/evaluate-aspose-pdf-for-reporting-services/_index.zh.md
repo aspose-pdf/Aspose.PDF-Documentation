@@ -19,3 +19,4 @@ lastmod: "2021-06-05"
 {{% alert color="primary" %}}
 
 如果您想在没有评估版本限制的情况下测试 Aspose.PDF for Reporting Services，您还可以申请 30 天的临时许可证。 请参阅[如何获取临时许可证？](<https://about.aspose.com/>)
+{{% /alert %}}

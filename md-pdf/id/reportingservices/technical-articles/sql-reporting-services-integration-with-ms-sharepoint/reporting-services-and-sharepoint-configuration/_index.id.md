@@ -67,6 +67,7 @@ Kembali ke URL ReportServer, kita harus melihat sesuatu yang mirip dengan yang b
 Sekarang setelah kami berhasil mengintegrasikan kedua produk, kami siap menggunakan Layanan Pelaporan di SharePoint 2010. Seperti versi sebelumnya, kami memiliki fitur (diaktifkan ketika kami mengkonfigurasi Integrasi Layanan Pelaporan) di "Fitur Koleksi Situs". Selain itu, instalasi menambahkan 3 tipe konten untuk ditambahkan ke situs kami. Pada Gambar 7 kita dapat melihat 2 dari tipe konten tersebut ditambahkan ke dalam perpustakaan dokumen untuk membuat laporan kustom menggunakan, seperti yang dapat kita lihat pada Gambar 5 di bawah.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_5.png)
+{{% alert color="primary" %}}
 
 **Gambar 5:**- Pembuat Laporan
 

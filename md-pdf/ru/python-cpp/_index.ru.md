@@ -43,3 +43,4 @@ Aspose.PDF для Python через C++ предлагает полный наб
 - [Форум бесплатной поддержки Aspose.PDF для Python через C++](https://forum.aspose.com/c/pdf/10)
 
 - [Служба платной поддержки Aspose.PDF для Python через C++](https://helpdesk.aspose.com/)
+{{% /alert %}}

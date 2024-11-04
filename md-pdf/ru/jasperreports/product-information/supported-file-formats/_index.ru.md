@@ -9,7 +9,7 @@ weight: 20
 url: /jasperreports/supported-file-formats/
 
 lastmod: "2021-06-05"
-
+---
 ## <ins>**Поддерживаемые форматы загрузки**
 
 В следующей таблице указаны форматы файлов, которые Aspose.PDF для JasperReports может загружать.

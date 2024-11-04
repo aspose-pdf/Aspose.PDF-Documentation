@@ -20,6 +20,7 @@ Nota al pie
 Nota al final
 **Nombre de Propiedad Personalizada**: Endnote
 **Valor de Propiedad Personalizada**: *el* *valor* *debe* *ser* *una* *cadena*
+{{% /alert %}}
 
 {{% alert color="primary" %}}
 En el siguiente ejemplo, el informe contiene un cuadro de texto con el valor 'AsposePdf4RS', y queremos agregar una descripción suplementaria en forma de nota al pie con el texto "Un renderizador PDF opcional para SSRS de Aspose Pty. Ltd.".

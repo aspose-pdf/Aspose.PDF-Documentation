@@ -22,6 +22,7 @@ Veuillez noter que cette approche présente certaines limitations
 
 - Le formatage n'est pas visible lors de la conception (dans le Report Builder, le portail web de Reporting Services, etc.). Au lieu de cela, vous verrez le texte HTML sous forme de texte brut avec des balises.
 - L'extension de rendu Aspose.PDF pour Reporting Services reconnaît et formate correctement le code HTML dans les zones de texte. Le moteur de rendu PDF par défaut de Reporting Services exportera ce balisage en tant que texte brut.
+{{% /alert %}}
 
 **Nom du Paramètre**: IsHtmlTagSupported  
 **Type de Donnée**: Boolean  

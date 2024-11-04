@@ -54,4 +54,4 @@ PDF/A est une version de PDF conçue pour l'archivage à long terme de documents
 Vous pouvez essayer la fonctionnalité de conversion en utilisant nos applications Aspose PDF :
 
 [![Aspose PDF APP](app.png)](https://products.aspose.app/pdf/conversion)
-{{% /alerte %}}
+{{% /alert %}}

@@ -141,4 +141,4 @@ public static void convertPDFtoWord_Advanced_DOCX_Format() {
 Aspose.PDF pour Java vous propose une application en ligne gratuite ["PDF to DOCX"](https://products.aspose.app/pdf/conversion/pdf-to-docx), où vous pouvez essayer d'examiner la fonctionnalité et la qualité qu'elle offre.
 [![Aspose.PDF Conversion PDF to DOCX Free App](pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
-{{% /alerte %}}
+{{% /alert %}}

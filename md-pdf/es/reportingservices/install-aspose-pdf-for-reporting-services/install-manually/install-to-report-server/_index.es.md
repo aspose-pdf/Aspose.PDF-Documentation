@@ -82,6 +82,7 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="Este grupo de código otor
 
 {{% alert color="primary" %}}
 **Paso 5.** Verifique que Aspose.Pdf para Servicios de Reportes se haya instalado correctamente. Abre el portal web de Reporting Services y verifica la lista de formatos de exportación disponibles para un informe. Puedes lanzar el portal web iniciando un navegador web y escribiendo la URL del portal web de Reporting Services en la barra de direcciones (por defecto es http://```<Reporting_Services_server_name>```/reports/). Selecciona uno de los informes disponibles en tu portal web y despliega la lista de exportación. Deberías ver la lista de formatos de exportación incluyendo los proporcionados por la extensión Aspose.Pdf para Reporting Services. Selecciona el elemento PDF vía Aspose.PDF.
+{{% /alert %}}
 
 Haz clic en el elemento seleccionado. Generará el informe en el formato seleccionado, lo enviará al cliente y, dependiendo de la configuración de tu navegador web, ya sea que te muestre el cuadro de diálogo Guardar archivo para elegir dónde guardar el informe exportado, o descargue automáticamente el archivo en tu carpeta de Descargas.
 

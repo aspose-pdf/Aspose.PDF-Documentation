@@ -17,6 +17,7 @@ Aspose.PDF for Java의 새로운 자동 포팅 버전이 출시되었으며, 이
 {{% alert color="primary" %}}
 
 첫 번째 릴리스 버전(v4.0.0)에서는 두 개의 jar 파일, 즉 **aspose.pdf-3.3.0.jdk15.jar**와 **aspose.pdf-new-4.0.0.jar**를 제공합니다.
+{{% /alert %}}
 
 - **aspose.pdf-3.3.0.jdk14.jar**
 

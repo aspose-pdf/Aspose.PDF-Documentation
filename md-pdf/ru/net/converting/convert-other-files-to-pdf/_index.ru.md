@@ -591,8 +591,6 @@ Aspose.PDF для .NET представляет вам бесплатное он
 
 [![Aspose.PDF Конвертация XPS в PDF с помощью бесплатного приложения](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
 {{% /alert %}}
-{{% /alert %}}
-
 ## Конвертация PostScript в PDF
 
 **Aspose.PDF для .NET** поддерживает возможность конвертации файлов PostScript в формат PDF. Одной из особенностей Aspose.PDF является возможность установки набора папок шрифтов, которые будут использоваться во время конвертации.
@@ -670,7 +668,7 @@ public static void Convert_XSLFO_to_PDF()
 Aspose.PDF для .NET представляет вам бесплатное онлайн-приложение ["LaTex в PDF"](https://products.aspose.app/pdf/conversion/tex-to-pdf), где вы можете исследовать функциональность и качество его работы.
 
 [![Aspose.PDF Преобразование LaTeX/TeX в PDF с помощью бесплатного приложения](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
-[![Aspose.PDF Преобразование LaTeX/TeX в PDF с помощью бесплатного приложения](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
+{{% /alert %}}
 
 Aspose.PDF для .NET поддерживает функционал конвертации файлов TeX в формат PDF. Для реализации этой задачи пространство имен Aspose.Pdf содержит класс под названием [LatexLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexloadoptions), который предоставляет возможности загрузки файлов LaTex и вывода результатов в формате PDF с использованием [класса Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 Следующий фрагмент кода демонстрирует процесс конвертации файла LaTex в формат PDF на языке C#.

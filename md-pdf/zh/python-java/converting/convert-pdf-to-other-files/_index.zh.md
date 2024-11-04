@@ -98,10 +98,10 @@ for i in range(0, document.getPages.size):
     imageFileName = output_pdf + "_page_" + str(i + 1) + "_out.txt"
     # 转换特定页面并保存为文本文件
     device.process(document.getPages.getPage(i + 1), imageFileName)
-`
+```
 **尝试在线将 PDF 转换为文本**
 
-Aspose.PDF for Python 为您提供了一个在线免费应用程序 ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)，您可以尝试研究其功能和工作质量。
+{{% alert color="success" %}}
 
 [![Aspose.PDF 转换 PDF 为文本的免费应用](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}

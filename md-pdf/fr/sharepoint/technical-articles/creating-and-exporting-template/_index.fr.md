@@ -78,4 +78,4 @@ Lorsqu'un modèle est complètement configuré, vous êtes prêt à exporter des
 **Exportation d'une liste en PDF à l'aide d'un modèle de liste de tâches :**
 ![todo:image_alt_text](creating-and-exporting-template_7.png)
 
-{{% /alerte %}}
+{{% /alert %}}

@@ -16,6 +16,7 @@ description: 一旦您对评估满意，您可以购买 PDF SharePoint API 的�
 {{% alert color="primary" %}}
 
 订单支付后，许可证将通过电子邮件发送给您。许可证是一个包含常规 SharePoint 解决方案包的 .zip 压缩文件。
+{{% /alert %}}
 
 此压缩文件包含：
 

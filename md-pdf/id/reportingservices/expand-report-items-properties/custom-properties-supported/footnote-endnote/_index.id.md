@@ -20,6 +20,7 @@ Catatan Kaki
 Catatan Akhir
 **Nama Properti Kustom**: Catatan Akhir
 **Nilai Properti Kustom**: *nilai* *harus* *berupa* *string*
+{{% /alert %}}
 
 {{% alert color="primary" %}}
 Dalam contoh berikut, laporan berisi Kotak Teks dengan nilai 'AsposePdf4RS', dan kami ingin menambahkan deskripsi tambahan dalam bentuk catatan kaki dengan teks "Renderer PDF opsional untuk SSRS dari Aspose Pty. Ltd.".

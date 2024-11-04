@@ -60,6 +60,7 @@ public static void ConvertHTMLtoPDF()
 
 Aspose apresenta a você a aplicação gratuita online ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), onde você pode experimentar investigar a funcionalidade e a qualidade com que funciona.
 Aspose apresenta a você a aplicação online gratuita ["HTML para PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), onde você pode experimentar a funcionalidade e a qualidade com que funciona.
+{{% /alert %}}
 
 [![Aspose.PDF Conversão de HTML para PDF usando o App Gratuito](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
 
@@ -247,6 +248,7 @@ pdfDocument.Save(outFile);
 {{% alert color="success" %}}
 **Tente converter MHTML para PDF online**
 **Tente converter MHTML para PDF online**
+{{% /alert %}}
 
 O Aspose.PDF para .NET apresenta a você uma aplicação online gratuita ["MHTML para PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf), onde você pode explorar a funcionalidade e a qualidade com que funciona.
 

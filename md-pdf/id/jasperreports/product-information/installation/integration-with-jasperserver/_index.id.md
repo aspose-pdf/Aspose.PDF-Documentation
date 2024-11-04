@@ -86,6 +86,7 @@ Dalam langkah-langkah berikut <InstallDir> merupakan direktori instalasi JasperS
 
 5. Tambahkan baris berikut ke file **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml**.
 
+{{% /alert %}}
 
 
    Bean ini mungkin mengandung berbagai pengaturan konfigurasi yang dimaksudkan untuk mengonfigurasi ekspor. Misalnya, Anda dapat menggunakan fitur pemetaan font JasperReports atau menentukan lokasi file lisensi Aspose.Cells for JasperReports.

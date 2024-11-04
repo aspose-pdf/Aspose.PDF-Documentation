@@ -177,7 +177,7 @@ public static void ConvertDICOMtoPDF()
 
 {{% alert color="success" %}}
 **Prueba la conversión de DICOM a PDF en línea**
-
+{{% /alert %}}
 Aspose te presenta la aplicación gratuita en línea ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/), donde puedes explorar la funcionalidad y calidad con la que trabaja.
 
 [![Aspose.PDF Conversión de DICOM a PDF usando la App Gratuita](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)

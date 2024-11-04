@@ -16,6 +16,7 @@ Aspose.PDF for JasperReports는 보고서를 PDF로 내보내는 데 도움이 �
 {{% alert color="primary" %}}
 
 다음 단계는 JasperReport의 표준 PDF 내보내기 기능 대신 Aspose.PDF for JasperReports 내보내기 확장을 사용하도록 기존 데모를 업데이트하는 방법을 설명합니다.
+{{% /alert %}}
 
 1. <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>에서 JasperReports를 다운로드합니다.
    단일 JAR만이 아닌 소스 코드 및 데모가 포함된 전체 아카이브 프로젝트를 다운로드했는지 확인하십시오. 이 튜토리얼은 JasperReports-3.5.2를 사용하여 준비되었습니다.  

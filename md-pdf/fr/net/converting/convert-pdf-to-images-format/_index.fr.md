@@ -73,7 +73,6 @@ Aspose.PDF pour .NET vous présente une application gratuite en ligne ["PDF en T
 
 [![Conversion de Aspose.PDF PDF en TIFF avec application gratuite](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
-{{% /alert %}}
 
 ### Convertir les pages PDF en une seule image TIFF
 
@@ -286,6 +285,7 @@ Cette partie de l'article vous montre comment convertir un PDF en <abbr title="S
 **Essayez de convertir des PDF en SVG en ligne**
 
 Aspose.PDF pour .NET vous présente l'application gratuite en ligne ["PDF en SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), où vous pouvez explorer la fonctionnalité et la qualité de son fonctionnement.
+{{% /alert %}}
 
 [![Conversion de PDF en SVG avec l'application gratuite Aspose.PDF](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 **Graphiques Vectoriels Scalables (SVG)** est une famille de spécifications d'un format de fichier basé sur XML pour des graphiques vectoriels bidimensionnels, à la fois statiques et dynamiques (interactifs ou animés). La spécification SVG est une norme ouverte qui est en cours de développement par le World Wide Web Consortium (W3C) depuis 1999.

@@ -100,8 +100,9 @@ PDFファイルをTeXに変換するには、Aspose.PDFには[LaTeXSaveOptions](
 
     # 特定のページを変換して保存
     textDevice.process(document.pages[1], output_pdf)
-
+```
 **PDFをテキストにオンラインで変換してみる**
+{{% alert color="success" %}}
 
 Aspose.PDF for Pythonは、オンラインで無料のアプリケーション["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)を提供しています。これを使って、その機能性と品質を調査してみてください。
 

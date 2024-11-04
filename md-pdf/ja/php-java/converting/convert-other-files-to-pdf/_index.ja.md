@@ -132,6 +132,7 @@ $document->save($outputFile);
 ## テキストをPDFに変換
 
 **Aspose.PDF for PHP**は、テキストファイルをPDF形式に変換する機能を提供します。この記事では、Aspose.PDFを使用してテキストファイルをどのように簡単かつ効率的にPDFに変換できるかを示します。
+{{% alert color="success" %}}
 
 テキストファイルをPDFに変換する必要がある場合、最初にリーダーでソーステキストファイルを読み込みます。テキストファイルの内容を読むためにStringBuilderを使用しました。Documentオブジェクトをインスタンス化し、Pagesコレクションに新しいページを追加します。TextFragmentの新しいオブジェクトを作成し、そのコンストラクタにStringBuilderオブジェクトを渡します。TextFragmentオブジェクトを使用してParagraphsコレクションに新しい段落を追加し、DocumentクラスのSaveメソッドを使用して結果のPDFファイルを保存します。
 **テキストをPDFにオンラインで変換しよう**

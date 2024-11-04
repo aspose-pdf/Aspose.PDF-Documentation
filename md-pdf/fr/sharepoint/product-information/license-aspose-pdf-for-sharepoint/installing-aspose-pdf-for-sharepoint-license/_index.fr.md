@@ -16,6 +16,7 @@ Une fois que vous êtes satisfait de votre évaluation, vous pouvez [acheter une
 {{% alert color="primary" %}}
 
 La licence vous sera envoyée par email après que la commande ait été réglée. La licence est une archive .zip contenant un paquet de solution SharePoint régulier.
+{{% /alert %}}
 
 Cette archive contient :
 

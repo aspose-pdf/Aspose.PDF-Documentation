@@ -145,5 +145,4 @@ $document->save($outputFile, $saveOption);
 
 Aspose.PDF for PHP 为您提供在线免费应用程序 ["PDF to DOCX"](https://products.aspose.app/pdf/conversion/pdf-to-docx)，您可以尝试研究其功能和工作质量。
 
-[![Aspose.PDF 转换 PDF 到 DOCX 免费应用](pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
-{{% /警报 %}}
+{{% /alert %}}

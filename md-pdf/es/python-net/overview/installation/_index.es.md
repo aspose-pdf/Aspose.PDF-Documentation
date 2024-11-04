@@ -32,6 +32,7 @@ Puedes descargar fácilmente Aspose.PDF para Python para su evaluación. La desc
 Puedes descargar [Aspose.PDF para Python](https://releases.aspose.com/pdf/pythonnet/) para su evaluación. La descarga de evaluación es la misma que la descarga comprada. La versión de evaluación se convierte en licenciada cuando añades unas pocas líneas de código para [solicitar la licencia](/pdf/python-net/licensing/).
 
 La versión de evaluación de Aspose.PDF (sin una licencia especificada) proporciona la funcionalidad completa del producto, pero tiene dos limitaciones: inserta una marca de agua de evaluación, y solo se pueden ver/editar cuatro elementos de cualquier colección.
+{{% alert color="success" %}}
 
 Si desea probar Aspose.PDF para Python sin las limitaciones de la versión de evaluación, también puede solicitar una Licencia Temporal de 30 días. Por favor, consulte [¿Cómo obtener una Licencia Temporal?](https://purchase.aspose.com/temporary-license)
 

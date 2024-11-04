@@ -20,6 +20,7 @@ Report Builder는 텍스트 상자에 각주나 미주를 설정할 수 없습�
 미주
 **사용자 정의 속성** **이름**: Endnote
 **사용자 정의 속성 값**: *값은* *문자열이어야* *합니다*
+{{% /alert %}}
 
 {{% alert color="primary" %}}
 다음 예에서는 'AsposePdf4RS'라는 값을 가진 텍스트 상자가 포함된 보고서에 "An optional PDF renderer for SSRS from Aspose Pty. Ltd."라는 텍스트를 각주 형태로 보충 설명을 추가하고자 합니다.

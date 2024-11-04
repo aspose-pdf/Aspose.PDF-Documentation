@@ -16,6 +16,7 @@ Aspose.PDF for JasperReportsには、レポートをPDFにエクスポートす�
 {{% alert color="primary" %}}
 
 次の手順では、JasperReportの標準のPDFエクスポート機能を使用するのではなく、Aspose.PDF for JasperReportsエクスポート拡張機能を使用するように既存のデモを更新する方法を説明します。
+{{% /alert %}}
 
 1. <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>からJasperReportsをダウンロードします。
    ソースコードとデモを含むアーカイブされたプロジェクト全体をダウンロードし、単一のJARだけでなく、すべてを含めるようにしてください。 このチュートリアルはJasperReports-3.5.2を使用して準備されました。  

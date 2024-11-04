@@ -107,6 +107,7 @@ editor.Save();
 
 Potongan kode berikut menunjukkan bagaimana Anda menerima nilai yang diposting di halaman web target.
 Potongan kode berikut menunjukkan cara menerima nilai yang diposting di halaman web tujuan.
+{{% /alert %}}
 
 ```csharp
 // Tampilkan nilai yang diposting di halaman web tujuan

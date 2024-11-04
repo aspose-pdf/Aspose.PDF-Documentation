@@ -23,7 +23,7 @@ com.aspose.ms.System.Text.TextEncoding -> com.aspose.pdf.TextEncodingInternal
 
 com.aspose.html.HtmlDocumentType -> com.aspose.pdf.HtmlDocumentTypeInternal
 
-{{% /alerte %}}
+{{% /alert %}}
 
 **Déplacé** :
 

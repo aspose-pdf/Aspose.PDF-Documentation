@@ -179,6 +179,7 @@ public static void ConvertDICOMtoPDF()
 **Tente converter DICOM para PDF online**
 
 Aspose apresenta a você a aplicação gratuita online ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/), onde você pode explorar a funcionalidade e a qualidade com que funciona.
+{{% /alert %}}
 
 [![Aspose.PDF Conversão de DICOM para PDF usando App Gratuito](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
 ## Converter EMF para PDF

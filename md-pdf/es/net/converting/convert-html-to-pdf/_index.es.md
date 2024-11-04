@@ -57,7 +57,7 @@ public static void ConvertHTMLtoPDF()
 
 {{% alert color="success" %}}
 **Intenta convertir HTML a PDF en línea**
-
+{{% /alert %}}
 Aspose te presenta la aplicación gratuita en línea ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), donde puedes probar a investigar la funcionalidad y calidad con la que funciona.
 Aspose te presenta la aplicación gratuita en línea ["HTML a PDF"](https://products.aspose.app/html/es/conversion/html-to-pdf), donde puedes explorar la funcionalidad y la calidad con la que funciona.
 

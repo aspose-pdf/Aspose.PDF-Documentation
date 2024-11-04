@@ -25,6 +25,7 @@ description: 評価に満足したら、PDF SharePoint API のライセンスを
 注文が支払われた後、ライセンスはメールで送信されます。ライセンスは、通常の SharePoint ソリューション パッケージを含む .zip アーカイブです。
 
 このアーカイブには以下が含まれています:
+{{% /alert %}}
 
 - Aspose.PDF.SharePoint.License.wsp
 

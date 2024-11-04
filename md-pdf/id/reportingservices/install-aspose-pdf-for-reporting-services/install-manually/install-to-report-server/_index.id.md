@@ -1,4 +1,3 @@
-```
 ---
 title: Installasi ke Server Laporan
 type: docs
@@ -86,3 +85,4 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="Grup kode ini memberikan k
 **Langkah 5.** Verifikasi bahwa Aspose.Pdf untuk Layanan Pelaporan telah terpasang dengan sukses. Buka portal web Reporting Services dan periksa daftar format ekspor yang tersedia untuk sebuah laporan. Anda dapat meluncurkan portal web dengan memulai peramban web dan mengetik URL portal web Reporting Services di bilah alamat (secara default adalah http://```<Reporting_Services_server_name>```/reports/). Pilih salah satu laporan yang tersedia di portal web Anda dan tarik daftar dropdown Ekspor. Anda harus melihat daftar format ekspor termasuk yang disediakan oleh ekstensi Aspose.Pdf for Reporting Services. Pilih item PDF via Aspose.PDF.
 
 Klik item yang dipilih. Ini akan menghasilkan laporan dalam format yang dipilih, mengirimkannya ke klien, dan, tergantung pada pengaturan peramban web Anda, baik menampilkan dialog Simpan File untuk memilih di mana menyimpan laporan yang diekspor, atau secara otomatis mengunduh file ke folder Unduhan Anda.
+{{% /alert %}}

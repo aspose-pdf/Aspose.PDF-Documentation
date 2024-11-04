@@ -102,8 +102,9 @@ sitemap:
 
     # تحويل صفحة معينة وحفظها
     textDevice.process(document.pages[1], output_pdf)
-
+```
 **حاول تحويل PDF إلى نص عبر الإنترنت**
+{{% alert color="success" %}}
 
 يقدم لك Aspose.PDF لـ Python تطبيقًا مجانيًا عبر الإنترنت ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
 

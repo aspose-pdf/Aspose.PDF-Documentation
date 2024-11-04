@@ -98,8 +98,9 @@ for i in range(0, document.getPages.size):
     imageFileName = output_pdf + "_page_" + str(i + 1) + "_out.txt"
     # Konversi halaman tertentu dan simpan sebagai file teks
     device.process(document.getPages.getPage(i + 1), imageFileName)
-`
+```
 **Coba konversi PDF ke Teks online**
+{{% alert color="success" %}}
 
 Aspose.PDF untuk Python menawarkan aplikasi online gratis ["PDF ke Teks"](https://products.aspose.app/pdf/conversion/pdf-to-txt), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 

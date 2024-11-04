@@ -67,7 +67,7 @@ lastmod: "2021-06-05"
 
 
 ![todo:image_alt_text](setting-up-reporting-services_8.png)
-```
+
 **الصورة 8:- تقدم إنشاء قاعدة بيانات خادم التقارير**
 
 ![todo:image_alt_text](setting-up-reporting-services_9.png)
@@ -97,3 +97,4 @@ lastmod: "2021-06-05"
 **Image11:- Report Server access after installation**
 
 **سبب الخطأ: تم تثبيت SharePoint على WFE لدينا وانتهينا من إعداد خدمات التقارير. في هذا المثال، توجد خدمات التقارير وSharePoint على أجهزة مختلفة. إذا كانت على نفس الجهاز، فلن ترى هذا الخطأ. نحن بحاجة تقنيًا لتثبيت SharePoint على صندوق RS. وهذا يعني أنه سيتم تمكين IIS كذلك.**
+{{% /alert %}}

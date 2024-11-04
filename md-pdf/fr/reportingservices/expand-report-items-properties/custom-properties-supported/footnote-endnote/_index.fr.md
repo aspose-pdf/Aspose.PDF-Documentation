@@ -20,6 +20,7 @@ Note de bas de page
 Note de fin
 **Nom de la propriété personnalisée**: Endnote
 **Valeur de la propriété personnalisée**: *la* *valeur* *doit* *être* *une* *chaîne*
+{{% /alert %}}
 
 {{% alert color="primary" %}}
 Dans l'exemple suivant, le rapport contient une zone de texte avec la valeur 'AsposePdf4RS', et nous voulons ajouter une description complémentaire sous la forme d'une note de bas de page avec le texte "Un moteur de rendu PDF optionnel pour SSRS de Aspose Pty. Ltd.".

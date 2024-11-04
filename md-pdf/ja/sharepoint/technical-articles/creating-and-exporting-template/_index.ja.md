@@ -81,4 +81,4 @@ PDFテンプレートを使用するリストを作成する:
 
 ![todo:画像の代替テキスト](creating-and-exporting-template_7.png)
 
-{{% /警告 %}}
+{{% /alert %}}

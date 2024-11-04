@@ -6,10 +6,9 @@ weight: 30
 url: /java/import-bookmark/  
 description: 本节解释如何使用 PdfBookmarEditor 类通过 Aspose.PDF Facades 导入书签。  
 lastmod: "2021-06-05"  
-sitemap:  
-&nbsp;&nbsp;&nbsp;&nbsp;changefreq: "monthly"  
-&nbsp;&nbsp;&nbsp;&nbsp;priority: 0.7  
-
+sitemap:
+    changefreq: "monthly"
+    priority: 0.5
 ---
 
 importBookmarksWithXml 方法允许您从 XML 文件中导入书签到 PDF 文件。

@@ -1,4 +1,3 @@
-```
 ---
 title: Ikhtisar Produk
 type: docs
@@ -14,6 +13,7 @@ lastmod: "2021-06-05"
 ## Selamat datang di Aspose.PDF untuk Layanan Pelaporan!
 
 Microsoft SQL Server Reporting Services memenuhi kebutuhan yang dihadapi banyak organisasi - kebutuhan untuk membangun solusi intelijen bisnis dan pelaporan. Hingga sekarang, pengembang diharuskan untuk menyematkan laporan ke dalam aplikasi mereka, atau organisasi diharuskan membeli solusi pelaporan pihak ketiga yang mahal dan terkadang bermasalah. Sekarang, Microsoft SQL Server Reporting Services menawarkan solusi lengkap untuk mendistribusikan laporan di seluruh perusahaan; memungkinkan bisnis untuk membuat keputusan lebih baik dan lebih cepat.
+{{% /alert %}}
 
 **Aspose.Pdf untuk Layanan Pelaporan** adalah solusi unik lainnya dari Aspose, yang memungkinkan pembuatan laporan PDF di Microsoft SQL Server 2016/2017/2019/2022 Reporting Services dan Power BI Report Server.
 ``` Semua fitur laporan RDL, termasuk tabel, matriks, grafik, dan gambar dikonversi dengan tingkat presisi tertinggi ke PDF.
