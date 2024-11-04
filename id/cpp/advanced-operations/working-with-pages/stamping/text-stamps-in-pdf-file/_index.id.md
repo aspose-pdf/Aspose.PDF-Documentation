@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/text-stamps-in-the-pdf-file/
 description: Tambahkan cap teks ke file PDF menggunakan kelas TextStamp dengan C++.
-lastmod: "2021-12-95"
+lastmod: "2021-12-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,7 +17,7 @@ Anda dapat menggunakan kelas [TextStamp](https://reference.aspose.com/pdf/cpp/cl
 
 ```cpp
 void AddTextStampToPDFFile() {
-   
+
     String _dataDir("C:\\Samples\\");
 
     // String untuk nama file input
@@ -26,7 +26,7 @@ void AddTextStampToPDFFile() {
 
     // Buka dokumen
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // Buat cap teks
     auto textStamp =MakeObject<TextStamp>(u"Sample Stamp");
 
@@ -69,7 +69,7 @@ void DefineAlignmentTextStamp() {
 
     // Buka dokumen
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // instansiasi objek FormattedText dengan string contoh
     auto text = MakeObject<Aspose::Pdf::Facades::FormattedText>("This");
 

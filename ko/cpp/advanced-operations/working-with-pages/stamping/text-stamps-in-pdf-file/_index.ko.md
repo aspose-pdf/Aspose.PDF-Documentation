@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/text-stamps-in-the-pdf-file/
 description: C++의 TextStamp 클래스를 사용하여 PDF 파일에 텍스트 스탬프를 추가합니다.
-lastmod: "2021-12-95"
+lastmod: "2021-12-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,7 +17,7 @@ sitemap:
 
 ```cpp
 void AddTextStampToPDFFile() {
-   
+
     String _dataDir("C:\\Samples\\");
 
     // 입력 파일 이름을 위한 문자열
@@ -26,7 +26,7 @@ void AddTextStampToPDFFile() {
 
     // 문서 열기
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // 텍스트 스탬프 생성
     auto textStamp =MakeObject<TextStamp>(u"Sample Stamp");
 
@@ -69,7 +69,7 @@ void DefineAlignmentTextStamp() {
 
     // 문서 열기
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // 샘플 문자열로 FormattedText 객체 인스턴스화
     auto text = MakeObject<Aspose::Pdf::Facades::FormattedText>("This");
 

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/text-stamps-in-the-pdf-file/
 description: Adicione um carimbo de texto a um arquivo PDF usando a classe TextStamp com C++.
-lastmod: "2021-12-95"
+lastmod: "2021-12-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,7 +17,7 @@ Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/cpp/class/
 
 ```cpp
 void AddTextStampToPDFFile() {
-   
+
     String _dataDir("C:\\Samples\\");
 
     // String para nome do arquivo de entrada
@@ -26,7 +26,7 @@ void AddTextStampToPDFFile() {
 
     // Abrir documento
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // Criar carimbo de texto
     auto textStamp =MakeObject<TextStamp>(u"Sample Stamp");
 
@@ -69,7 +69,7 @@ void DefineAlignmentTextStamp() {
 
     // Abrir documento
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // instanciar objeto FormattedText com string de exemplo
     auto text = MakeObject<Aspose::Pdf::Facades::FormattedText>("This");
 

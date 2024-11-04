@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/text-stamps-in-the-pdf-file/
 description: 使用C++的TextStamp类向PDF文件添加文字印章。
-lastmod: "2021-12-95"
+lastmod: "2021-12-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,7 +17,7 @@ sitemap:
 
 ```cpp
 void AddTextStampToPDFFile() {
-   
+
     String _dataDir("C:\\Samples\\");
 
     // 输入文件名的字符串
@@ -26,7 +26,7 @@ void AddTextStampToPDFFile() {
 
     // 打开文档
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // 创建文字印章
     auto textStamp = MakeObject<TextStamp>(u"Sample Stamp");
 
@@ -69,7 +69,7 @@ void DefineAlignmentTextStamp() {
 
     // 打开文档
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // 使用示例字符串实例化 FormattedText 对象
     auto text = MakeObject<Aspose::Pdf::Facades::FormattedText>("This");
 

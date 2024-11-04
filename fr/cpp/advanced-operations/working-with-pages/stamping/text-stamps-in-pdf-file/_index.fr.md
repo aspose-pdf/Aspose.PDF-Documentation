@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/text-stamps-in-the-pdf-file/
 description: Ajoutez un tampon de texte à un fichier PDF en utilisant la classe TextStamp avec C++.
-lastmod: "2021-12-95"
+lastmod: "2021-12-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,7 +17,7 @@ Vous pouvez utiliser la classe [TextStamp](https://reference.aspose.com/pdf/cpp/
 
 ```cpp
 void AddTextStampToPDFFile() {
-   
+
     String _dataDir("C:\\Samples\\");
 
     // String pour le nom du fichier d'entrée
@@ -26,7 +26,7 @@ void AddTextStampToPDFFile() {
 
     // Ouvrir le document
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // Créer un tampon de texte
     auto textStamp =MakeObject<TextStamp>(u"Sample Stamp");
 
@@ -69,7 +69,7 @@ void DefineAlignmentTextStamp() {
 
     // Ouvrir le document
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // instancier un objet FormattedText avec une chaîne d'exemple
     auto text = MakeObject<Aspose::Pdf::Facades::FormattedText>("This");
 

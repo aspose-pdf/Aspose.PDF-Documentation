@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/text-stamps-in-the-pdf-file/
 description: Añade un sello de texto a un archivo PDF utilizando la clase TextStamp con C++.
-lastmod: "2021-12-95"
+lastmod: "2021-12-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,7 +17,7 @@ Puedes usar la clase [TextStamp](https://reference.aspose.com/pdf/cpp/class/aspo
 
 ```cpp
 void AddTextStampToPDFFile() {
-   
+
     String _dataDir("C:\\Samples\\");
 
     // String para el nombre del archivo de entrada
@@ -26,7 +26,7 @@ void AddTextStampToPDFFile() {
 
     // Abrir documento
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // Crear sello de texto
     auto textStamp =MakeObject<TextStamp>(u"Sample Stamp");
 
@@ -69,7 +69,7 @@ void DefineAlignmentTextStamp() {
 
     // Abrir documento
     auto document = MakeObject<Document>(_dataDir + inputFileName);
-    
+
     // instanciar objeto FormattedText con cadena de ejemplo
     auto text = MakeObject<Aspose::Pdf::Facades::FormattedText>("This");
 
