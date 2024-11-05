@@ -74,24 +74,32 @@ pdfDoc.Save("output.pdf");
 To edit the text in a PDF using Aspose.PDF for .NET, you can follow these steps:
 
 ```csharp
-// Load or create a new PDF document
+// Load the PDF document
 Document pdfDoc = new Document("input.pdf");
 
-// Access the page where the image will be added
-Page page = pdfDoc.Pages[1];
+// Define the text to search for
+string searchText = "old text";
 
-// Load the image
-Image image = new Image
+// Create TextFragmentAbsorber to find specific text
+TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber(searchText);
+
+// Accept the absorber for all pages in the document
+pdfDoc.Pages.Accept(textAbsorber);
+
+// Loop through the found text fragments and modify them
+foreach (TextFragment fragment in textAbsorber.TextFragments)
 {
-    File = "image.jpg",
-    FixWidth = 100,
-    FixHeight = 100
-};
+    // Change the text content
+    fragment.Text = "new text";
+    
+    // Optional: Modify the text appearance
+    fragment.TextState.Font = FontRepository.FindFont("Arial");
+    fragment.TextState.FontSize = 12;
+    fragment.TextState.ForegroundColor = Color.Blue;
+    fragment.TextState.BackgroundColor = Color.Yellow;
+}
 
-// Define the image position
-page.Paragraphs.Add(image);
-
-// Save the PDF document
+// Save the updated PDF document
 pdfDoc.Save("output.pdf");
 ```
 
