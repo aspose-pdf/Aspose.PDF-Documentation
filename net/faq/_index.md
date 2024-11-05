@@ -108,20 +108,20 @@ To add page numbers to a PDF using Aspose.PDF for .NET, you can use the followin
 
 ```csharp
 // Create a new PDF document
-Document doc = new Document();
+Document pdfDoc = new Document();
 
 // Add pages to the document
 for (int i = 0; i < 5; i++)
 {
-    Page page = doc.Pages.Add();
+    Page page = pdfDoc.Pages.Add();
     page.Paragraphs.Add($"This is page {i + 1}.");
 }
 
 // Add page numbers to the document
-for (int i = 0; i < doc.Pages.Count; i++)
+for (int i = 0; i < pdfDoc.Pages.Count; i++)
 {
-    Page page = doc.Pages[i];
-    Paragraph paragraph = page.Paragraphs.Add($"Page {i + 1} of {doc.Pages.Count}");
+    Page page = pdfDoc.Pages[i];
+    Paragraph paragraph = page.Paragraphs.Add($"Page {i + 1} of {pdfDoc.Pages.Count}");
     paragraph.Format.Alignment = ParagraphAlignment.Right;
     paragraph.Format.FontSize = 10;
     paragraph.Format.VerticalAlignment = VerticalAlignment.Bottom;
@@ -129,7 +129,7 @@ for (int i = 0; i < doc.Pages.Count; i++)
 }
 
 // Save the PDF document
-doc.Save("output.pdf");
+pdfDoc.Save("output.pdf");
 ```
 
 ## How to create a background for PDF Documents?
@@ -238,13 +238,13 @@ To use regex with the `TextFragmentAbsorber` class in Aspose.PDF for .NET, you c
 
 ```csharp
 // Create a new PDF document
-Document doc = new Document("input.pdf");
+Document pdfDoc = new Document("input.pdf");
 
 // Create a TextFragmentAbsorber with a regex pattern
 TextFragmentAbsorber absorber = new TextFragmentAbsorber(@"\b\w+\b", new TextSearchOptions(true));
 
 // Process the PDF document
-absorber.Visit(doc);
+absorber.Visit(pdfDoc);
 
 // Loop through matched fragments
 foreach (TextFragment fragment in asorber.TextFragments)
@@ -255,6 +255,9 @@ foreach (TextFragment fragment in asorber.TextFragments)
     // Example: Modify the matched text if needed
     fragment.Text = "[REDACTED]";  // Replace with custom text
 }
+
+// Save the PDF document
+pdfDoc.Save("output.pdf");
 ```
 
 The key points are:
