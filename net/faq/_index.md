@@ -14,6 +14,8 @@ sitemap:
 ## What formats does Aspose.PDF for .NET support?
 Aspose.PDF for .NET supports popular file formats such as PDF, TXT, HTML, PCL, XML, XPS, EPUB, TEX, and image formats. For more details, please visit the page [Supported File Formats](https://docs.aspose.com/pdf/net/supported-file-formats/)
 
+## What AI features Aspose.PDF for .NET support?
+
 ## How many files can I combine to PDF at once?
 You can merge an unlimited number of files into PDF at once.
 
@@ -34,7 +36,16 @@ foreach (string file in pdfFiles)
 mergedDoc.Save("merged_output.pdf");
 ```
 
-## How to Insert Image into PDF?
+or
+
+```csharp
+using (Document mergedDocuments = Document.MergeDocuments("input1.pdf", "input2.pdf", `"input3.pdf"))
+{
+     mergedDocuments.Save("merged_output.pdf");
+}
+```
+
+## How to insert Image into PDF?
 To insert an image into a PDF using Aspose.PDF for .NET, you can use the following code:
 
 ```csharp
@@ -84,7 +95,7 @@ page.Paragraphs.Add(image);
 pdfDoc.Save("output.pdf");
 ```
 
-## Add page numbers to PDF file
+## How to add page numbers to PDF file?
 To add page numbers to a PDF using Aspose.PDF for .NET, you can use the following code:
 
 ```csharp
@@ -113,7 +124,7 @@ for (int i = 0; i < doc.Pages.Count; i++)
 doc.Save("output.pdf");
 ```
 
-## How to Create a Background for PDF Documents?
+## How to create a background for PDF Documents?
 To create a background for a PDF document using Aspose.PDF for .NET, you can use the following code:
 
 ```csharp
@@ -135,7 +146,7 @@ foreach (Page page in pdfDoc.Pages)
 pdfDoc.Save("output_with_image_background.pdf");
 ```
 
-## How to Secure PDF File or a Document?
+## How to secure PDF document?
 To secure a PDF document using Aspose.PDF for .NET, you can apply password protection and set permissions. Here's an example:
 
 ```csharp
@@ -179,7 +190,7 @@ page.Annotations.Add(highlight);
 pdfDoc.Save("output.pdf");
 ```
 
-## Use GoToRemoteAction and XYZExplicitDestination to create a hyperlink to another PDF file, inheriting the current document's zoom level?
+## How to use GoToRemoteAction and XYZExplicitDestination to create a hyperlink to another PDF file, inheriting the current document's zoom level?
 To create a hyperlink to another PDF file that preserves the current zoom level:
 - Use `GoToRemoteAction` for linking to an external PDF.
 - Apply `XYZExplicitDestination` to inherit the zoom level from the current document.
@@ -214,7 +225,7 @@ Document pdfDoc = new Document("tagged.pdf");
 pdfDoc.Validate("validation-log.xml", PdfFormat.PDF_UA_1);
 ```
 
-## How to implement regex for TextSegmentAbsorber?
+## How to implement regex search for TextSegmentAbsorber?
 To use regex with the `TextSegmentAbsorber` class in Aspose.PDF for .NET, you can follow this example:
 
 ```csharp
@@ -227,13 +238,14 @@ TextSegmentAbsorber absorber = new TextSegmentAbsorber(@"\b\w+\b", new TextSearc
 // Process the PDF document
 absorber.Visit(doc);
 
-// Get the extracted text segments
-List<TextSegment> segments = absorber.TextSegments;
-
-// Do something with the extracted text segments
-foreach (TextSegment segment in segments)
+// Loop through matched fragments
+foreach (TextFragment fragment in asorber.TextFragments)
 {
-    Console.WriteLine(segment.Text);
+    // Example: Change text color of matched fragments
+    fragment.TextState.ForegroundColor = Color.Red;
+    
+    // Example: Modify the matched text if needed
+    fragment.Text = "[REDACTED]";  // Replace with custom text
 }
 ```
 
@@ -243,7 +255,7 @@ The key points are:
 - Call the `Visit()` method to process the PDF document
 - Access the extracted `TextSegment` objects from the `TextSegments` property
 
-## Make a valid PDF/A document unless the missing font or its substitution is provided?
+## How to make a valid PDF/A document unless the missing font or its substitution is provided?
 To create a valid PDF/A document in Aspose.PDF for .NET, you need to ensure that all required fonts are embedded or substituted. Here's an example:
 
 - Set the `DefaultFontName` property to define a substitute font.
@@ -263,12 +275,10 @@ pdfDoc.Convert("conversion-log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Dele
 pdfDoc.Save("output-pdfa.pdf");
 ```
 
-## Do you support .NET under Linux?
-
+## Does Aspose.PDF for .NET support Linux?
 Yes, Aspose.PDF for .NET supports running on Linux environments. You can use the .NET Core version or later, which is cross-platform and can be used on Windows, macOS, and Linux.
 
 ## Does Aspose.PDF for .NET support .NET 2.0, 3.5, and 4.0 frameworks?
-
 Yes, Aspose.PDF for .NET supports the following .NET frameworks:
 
 - .NET 2.0
