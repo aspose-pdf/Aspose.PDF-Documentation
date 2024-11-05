@@ -14,11 +14,11 @@ sitemap:
 
 **Aspose.PDF for .NET** is a PDF document creation and manipulation component that enables your .NET applications to read, write and manipulate existing PDF documents without using Adobe Acrobat. It also allows you to create forms and manage form fields embedded in a PDF document.
 
-**Aspose.PDF for .NET** is affordable and offers an incredible wealth of features including PDF compression options; table creation and manipulation; support for graph objects; extensive hyperlink functionality; extended security controls; custom font handling; integration with data sources; add or remove bookmarks; create table of contents; add, update, delete attachments and annotations; import or export PDF form data; add, replace or remove text and images; split, concatenate, extract or inset pages; transform pages to image; print PDF documents and much more
+**Aspose.PDF for .NET** is affordable and offers an incredible wealth of features including PDF compression options; table creation and manipulation; support for graph objects; extensive hyperlink functionality; extended security controls; custom font handling; integration with data sources; add or remove bookmarks; create table of contents; add, update, delete attachments and annotations; import or export PDF form data; add, replace or remove text and images; split, concatenate, extract or inset pages; transform pages to image; print PDF documents and much more.
 
 ### **Module Features**
 
-Umbraco PDF Import is an open source add-on from [Aspose](http://www.aspose.com/) that allow developers to get/read contents of any PDF document without requiring any other software. This add-on demonstrates the powerful import feature provided by [Aspose.PDF](http://www.aspose.com/pdf-component-suite.aspx). It adds a simple file browser control and **Import from PDF** button on the page where the add-on is added. When clicking on the button, the document contents are fetched from the file and displayed on the screen immediately.
+Umbraco PDF Import is an open source add-on from [Aspose](http://www.aspose.com/) that allow developers to get/read contents of any PDF document without requiring any other software. This add-on demonstrates the powerful import feature provided by [Aspose.PDF](https://products.aspose.com/pdf/net/). It adds a simple file browser control and **Import from PDF** button on the page where the add-on is added. When clicking on the button, the document contents are fetched from the file and displayed on the screen immediately.
 
 ## System Requirements and Supported Platforms
 
@@ -40,11 +40,10 @@ The module is supported on all versions of
 
 You can download Aspose .NET Pdf Import for Umbraco from one of the following locations
 
-- [CodePlex](https://asposeumbraco.codeplex.com/releases)
 - [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco/releases)
 - [Sourceforge](https://sourceforge.net/projects/asposeumbraco/files/)
 - [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/downloads)
-- [Umbraco](https://our.umbraco.org/projects/developer-tools/import-from-pdf-using-aspose-pdf)
+- [Umbraco](https://our.umbraco.com/packages/developer-tools/import-from-pdf-using-asposepdf/)
 
 ## Installing
 
@@ -87,16 +86,12 @@ From the very first days of Aspose, we knew that just giving our customers good 
 
 This is why we offer free support. Anyone who uses our product, whether they have bought them or are using an evaluation, deserves our full attention and respect.
 
-You can log any issues or suggestions related to Aspose.PDF .NET for Umbraco Modules using any of the following platforms
+You can log any issues or suggestions related to Aspose.PDF .NET for Umbraco Modules using any of the following platforms:
 
-- [CodePlex](https://asposeumbraco.codeplex.com/workitem/list/basic)
 - [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco/issues)
 - [Sourceforge](https://sourceforge.net/p/asposeumbraco/tickets/?source=navbar)
 - [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/issues?status=new&status=open)
 
-#### Import from Pdf
-
-- [Microsoft Developer Network - Q and A](https://code.msdn.microsoft.com/Umbraco-Import-from-Pdf-d4659bc8/view/Discussions#content)
 
 ### Extend and Contribute
 
@@ -106,7 +101,6 @@ Aspose .NET PDF Import for Umbraco is open source and its source code is availab
 
 You can get the latest source code from one of the following locations
 
-- [CodePlex](https://asposeumbraco.codeplex.com/SourceControl/latest)
 - [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco)
 - [Sourceforge](https://sourceforge.net/p/asposeumbraco/code/ci/master/tree/)
 - [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/src)

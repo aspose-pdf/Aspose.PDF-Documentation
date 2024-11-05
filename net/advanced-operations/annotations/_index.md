@@ -2,7 +2,7 @@
 title: Working with Annotations 
 linktitle: Annotations in PDF
 type: docs
-weight: 100
+weight: 160
 url: /net/annotations/
 description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library.
 lastmod: "2022-02-17"

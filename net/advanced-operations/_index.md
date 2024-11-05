@@ -86,19 +86,22 @@ You'll learn different ways to:
 - [Working with Images](/pdf/net/working-with-images/) - insert, remove, extract image in document
 - [Working with Tables](/pdf/net/working-with-tables/) - insert, decorate table in PDF, extract tabular data
 - [Working with Forms](/pdf/net/working-with-forms/) - deal with interact PDF documents, add formfields, extract data
-- [Working with Graphs](/pdf/net/graphs/) - manipulate with shapes on the page
+- [Working with Graphs](/pdf/net/working-with-graphs/) - manipulate with shapes on the page
 - [Working with XML](/pdf/net/working-with-xml) - construct PDF documents based on the XML structure
+- [Working with Operators](/pdf/net/working-with-operators/) - make low-level operations in PDF
+- [Working with Vector Graphics](/pdf/net/working-with-vector-graphics) - describes the features of working with GraphicsAbsorber
+- [Working with ZUGFeRD](pdf/net/working-with-zugferd) - create ZUGFeRD-compliant PDF invoices
+- [Working with Javascript](pdf/net/working-with-javascript) - add, remove Javascript code in PDF
 - [Compare PDF documents](/pdf/net/compare-pdf-documents/) - possible to compare PDF documents content
 - [Navigation and Interaction](/pdf/net/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages
-- [AI Copilot](/pdf/net/ai-copilot/) - allow to process PDF documents using LLMs from different providers
-- [Annotations](/pdf/net/annotations/) - Annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
+- [PDF AI Copilot](/pdf/net/ai-copilot/) - allow to process PDF documents using LLMs from different providers
+- [Annotations](/pdf/net/annotations/) - Annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents
 - [Artifacts](/pdf/net/artifacts/) - deal with watermarks and other special objects in PDF
-- [Accessibility. Tagged PDF](/pdf/net/accessibility-tagged-pdf/) - Tagging is essential for PDF accessibility. Aspose.PDF allows to add tags into PDF and establish logical reading order and to provide a means for indicating structure and type.
-- [Attachments](/pdf/net/attachments/) - PDF documents may contain file attachments. These attachments can be other PDF documents, or any kind of file, like audio files, Microsoft Office documents etc. You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with C#.
-- [Metadata in PDFs](/pdf/net/pdf-file-metadata/) - get or set meta data in documents, dealing with XMP data.
+- [Accessibility. Tagged PDF](/pdf/net/accessibility-tagged-pdf/) - Tagging is essential for PDF accessibility. Aspose.PDF allows to add tags into PDF and establish logical reading order and to provide a means for indicating structure and type
+- [Attachments](/pdf/net/attachments/) - PDF documents may contain file attachments. These attachments can be other PDF documents, or any kind of file, like audio files, Microsoft Office documents etc. You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with C#
+- [Metadata in PDFs](/pdf/net/pdf-file-metadata/) - get or set meta data in documents, dealing with XMP data
 - [Securing and Signing](/pdf/net/securing-and-signing/) - protect and sign your PDF document programmatically
 - [Printing Document](/pdf/net/printing-document/) - print PDFs in various types of applications (WinForms, WPF, etc.)
-- [Operators](/pdf/net/operators/) - make low-level operations in PDF
 
 <script type="application/ld+json">
 {

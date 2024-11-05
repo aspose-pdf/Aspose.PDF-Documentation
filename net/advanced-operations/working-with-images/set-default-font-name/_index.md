@@ -75,7 +75,7 @@ lastmod: "2022-02-17"
 
 **Aspose.PDF for .NET** API allows you to set a default font name when a font is not available in the document. You can use DefaultFontName property of RenderingOptions class to set the default font name. In case DefaultFontName is set to null the **Times New Roman** font will be used. The following code snippet shows how to set a default font name when saving PDF into an image:
 
-The next code snippet also works with a new graphical [Aspose.Drawing](/pdf/net/drawing/) interface.
+The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

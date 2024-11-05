@@ -7,7 +7,7 @@ url: /net/visual-studio-export-gridview-to-pdf-control/
 
 ## Introduction
 
-Export GridView To Pdf Control is an ASP.NET server control which allows exporting contents of GridView into Pdf document using [Aspose.PDF](http://www.aspose.com/.net/pdf-component.aspx). It adds **Export to Pdf** button on top of the GridView control. Clicking the button dynamically exports the content of the GridView control to a Pdf document and then automatically downloads the exported file to the disk location selected by the user in just couple of seconds.
+Export GridView To Pdf Control is an ASP.NET server control which allows exporting contents of GridView into Pdf document using [Aspose.PDF](https://products.aspose.com/pdf/net/). It adds **Export to Pdf** button on top of the GridView control. Clicking the button dynamically exports the content of the GridView control to a Pdf document and then automatically downloads the exported file to the disk location selected by the user in just couple of seconds.
 
 ### Module Features
 
@@ -43,7 +43,6 @@ Export GridView To Pdf Control for Visual Studio is supported of all version of 
 
 You can download Export GridView To Pdf Control from one of the following locations
 
-- [CodePlex](https://asposevs.codeplex.com/releases/view/617022)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/AsposeExportGridViewToPdfControl_1.0)
 
 ## Installing
@@ -176,10 +175,7 @@ This is why we offer free support. Anyone who uses our product, whether they hav
 
 You can log any issues or suggestions related to this Pdf using any of the following platforms
 
-- [CodePlex](https://asposevs.codeplex.com/workitem/list/basic)
-- [Visual Studio Gallery - Q and A](https://visualstudiogallery.msdn.microsoft.com/fb8b9944-cfe5-44a9-8aa7-c785d32d1066)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/issues)
-- [Microsoft Developer Network - Q and A](https://code.msdn.microsoft.com/Aspose-NET-Export-GridView-caddbb6d/view/Discussions#content)
 
 ### Extend and Contribute
 
@@ -189,7 +185,6 @@ Aspose .NET Export GridView To Pdf for Visual Studio is open source and its sour
 
 You can get the latest source code from one of the following locations
 
-- [CodePlex](https://asposevs.codeplex.com/SourceControl/latest#Aspose.PDF.GridViewExport/)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Visual%20Studio/Aspose.PDF.GridViewExport)
 
 #### How to configure the source code
