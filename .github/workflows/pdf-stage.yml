@@ -20,6 +20,7 @@ jobs:
         rm -rf content/Aspose.PDF-Hugo-template
         rm -rf public
         hugo0.136 --baseURL docs-qa.aspose.com/pdf  --config ./config.toml,./configs/docs-qa.aspose.com-pdf.toml
+        ls -l
 
     - name: Configure AWS credential
       uses: aws-actions/configure-aws-credentials@v3
