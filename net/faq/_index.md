@@ -5,10 +5,302 @@ type: docs
 weight: 140
 url: /net/faq/
 description: Here you can find answers to Frequently Asked Questions for Aspose.PDF for .NET library.
-lastmod: "2021-06-05"
+lastmod: "2024-11-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-<div class="schema-faq-code" itemscope="" itemtype="https://schema.org/FAQPage"><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">What formats does Aspose.PDF for .NET support?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Aspose.PDF for .NET supports popular file formats such as PDF, TXT, HTML, PCL, XML, XPS, EPUB, TEX, and image formats. For more details, please visit the page <a href="/pdf/net/supported-file-formats/">Supported File Formats</a></p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How to convert files to and from PDFs?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Converting PDFs document with Aspose.PDF for .NET is very easy. Our company provides many features for converting various file formats into PDF documents and converting PDF files into various output formats.You can see the full list in the <a href="/pdf/net/converting/">Converting</a> section.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How many files can I combine to PDF at once?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">You can merge an unlimited number of files into PDF at once.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How to Insert Image into PDF?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">We have two solutions to this problem for you. First and simple way: you can use AddImage method of the PdfFileMend class. <a href="/pdf/net/working-with-images-in-pdf/#add-image-in-an-existing-pdf-file-facades/">Check this</a> And the second option is adding Image to Existing PDF File with the Page method <a href="https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addimage/index"check here></a>. <a href="/pdf/net/working-with-images-in-pdf/">link</a> and you will see a code snippet that shows how to add an image to a PDF file.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How to edit the text in PDF?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Aspose.PDF for .NET offers the ability to add line indent, add text border, add underline text, apply gradient shading to the text, and other useful features. You can check all of them <a href="/pdf/net/text-formatting-inside-pdf/">here</a>.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">Add page numbers to PDF file</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">You can use the PageNumber Stamp class to add a page number stamp in a PDF file. PageNumber Stamp class provides properties necessary to create a page number based stamp like format, margins, alignments, starting number, etc. All details you can see <a href="/pdf/net/add-page-number/">here</a>.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How to Create a Background for PDF Documents?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Background images can be used to add a watermark, or other subtle design, to documents. In Aspose.PDF for .NET, each PDF document is a collection of pages and each page contains a collection of artifacts. The BackgroundArtifact class can be used to add a background image to a page object. Follow the <a href="/pdf/net/add-backgrounds/">link</a> to show an example of code for adding a background.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">PDF File Security: How to Secure PDF File or a Document?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Aspose.PDF for .NET allows you to set privileges on an existing PDF file. You can use the Encrypt method of the Document object to encrypt a PDF file. Also, you can decrypt PDF files using the owner's password or change the password of a PDF file. For more details visit the documentation <a href="/pdf/net/digitally-sign-pdf-file/">page</a>.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">Where are your .NET Examples?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">You can check all of them on <a href="https://github.com/aspose-pdf">GitHub</a>.</p></div></div></div>
+## What formats does Aspose.PDF for .NET support?
+Aspose.PDF for .NET supports popular file formats such as PDF, TXT, HTML, PCL, XML, XPS, EPUB, TEX, and image formats. For more details, please visit the page [Supported File Formats](https://docs.aspose.com/pdf/net/supported-file-formats/)
+
+## How many files can I combine to PDF at once?
+You can merge an unlimited number of files into PDF at once.
+
+```csharp
+// Create a new PDF document
+Document mergedDoc = new Document();
+
+// List of files to merge
+string[] pdfFiles = { "file1.pdf", "file2.pdf", "file3.pdf" };
+
+foreach (string file in pdfFiles)
+{
+    Document tempDoc = new Document(file);
+    mergedDoc.Pages.Add(tempDoc.Pages);
+}
+
+// Save the merged PDF document
+mergedDoc.Save("merged_output.pdf");
+```
+
+## How to Insert Image into PDF?
+To insert an image into a PDF using Aspose.PDF for .NET, you can use the following code:
+
+```csharp
+// Load or create a new PDF document
+Document pdfDoc = new Document("input.pdf");
+
+// Access the page where the image will be added
+Page page = pdfDoc.Pages[1];
+
+// Load the image
+Image image = new Image
+{
+    File = "image.jpg",
+    FixWidth = 100,
+    FixHeight = 100
+};
+
+// Define the image position
+page.Paragraphs.Add(image);
+
+// Save the PDF document
+pdfDoc.Save("output.pdf");
+```
+
+## How to edit the text in PDF?
+To edit the text in a PDF using Aspose.PDF for .NET, you can follow these steps:
+
+```csharp
+// Load or create a new PDF document
+Document pdfDoc = new Document("input.pdf");
+
+// Access the page where the image will be added
+Page page = pdfDoc.Pages[1];
+
+// Load the image
+Image image = new Image
+{
+    File = "image.jpg",
+    FixWidth = 100,
+    FixHeight = 100
+};
+
+// Define the image position
+page.Paragraphs.Add(image);
+
+// Save the PDF document
+pdfDoc.Save("output.pdf");
+```
+
+## Add page numbers to PDF file
+To add page numbers to a PDF using Aspose.PDF for .NET, you can use the following code:
+
+```csharp
+// Create a new PDF document
+Document doc = new Document();
+
+// Add pages to the document
+for (int i = 0; i < 5; i++)
+{
+    Page page = doc.Pages.Add();
+    page.Paragraphs.Add($"This is page {i + 1}.");
+}
+
+// Add page numbers to the document
+for (int i = 0; i < doc.Pages.Count; i++)
+{
+    Page page = doc.Pages[i];
+    Paragraph paragraph = page.Paragraphs.Add($"Page {i + 1} of {doc.Pages.Count}");
+    paragraph.Format.Alignment = ParagraphAlignment.Right;
+    paragraph.Format.FontSize = 10;
+    paragraph.Format.VerticalAlignment = VerticalAlignment.Bottom;
+    paragraph.Format.LineSpacing = 1;
+}
+
+// Save the PDF document
+doc.Save("output.pdf");
+```
+
+or using TextStamp:
+
+```csharp
+// Load or create a new PDF document
+Document pdfDoc = new Document("input.pdf");
+
+// Access the page where the image will be added
+Page page = pdfDoc.Pages[1];
+
+// Load the image
+Image image = new Image
+{
+    File = "image.jpg",
+    FixWidth = 100,
+    FixHeight = 100
+};
+
+// Define the image position
+page.Paragraphs.Add(image);
+
+// Save the PDF document
+pdfDoc.Save("output.pdf");
+```
+
+## How to Create a Background for PDF Documents?
+To create a background for a PDF document using Aspose.PDF for .NET, you can use the following code:
+
+```csharp
+// Load the PDF document
+Document pdfDoc = new Document("input.pdf");
+
+// Create an image and set it as a background
+foreach (Page page in pdfDoc.Pages)
+{
+    ImageStamp backgroundImage = new ImageStamp("background.jpg")
+    {
+        Opacity = 0.5,
+        Background = true
+    };
+    page.AddStamp(backgroundImage);
+}
+
+// Save the PDF with background image
+pdfDoc.Save("output_with_image_background.pdf");
+```
+
+## How to Secure PDF File or a Document?
+To secure a PDF document using Aspose.PDF for .NET, you can apply password protection and set permissions. Here's an example:
+
+```csharp
+// Load the PDF document
+Document pdfDoc = new Document("input.pdf");
+
+// Set encryption and password options
+pdfDoc.Encrypt("user_password", "owner_password", Permissions.PrintDocument | Permissions.FillIn, CryptoAlgorithm.AESx128);
+
+// Save the secured PDF document
+pdfDoc.Save("secured_output.pdf");
+```
+
+- Specify the permissions using the `Security.Permissions` property
+
+With these password and permissions settings, the PDF document will be secured and users will need to provide the correct passwords to access and use the document.
+
+## How to add bold text in highlighted annotation on a PDF page?
+To add bold text in a highlighted annotation:
+- Use the `TextAnnotation` class to create the highlight annotation.
+- Set the annotation’s `RichText` property with the HTML string that specifies the text style (e.g., `<b>` tag for bold).
+
+```csharp
+// Initialize PDF Document
+Document pdfDoc = new Document("input.pdf");
+Page page = pdfDoc.Pages[1];
+
+// Create a highlight annotation
+TextAnnotation highlight = new TextAnnotation(page, new Rectangle(100, 600, 200, 650))
+{
+    Title = "Highlight Annotation",
+    RichText = "<b>This is bold text in a highlighted annotation</b>",
+    Color = Color.Yellow,
+    Opacity = 0.5
+};
+
+// Add annotation to the page
+page.Annotations.Add(highlight);
+
+// Save document
+pdfDoc.Save("output.pdf");
+```
+
+## Use GoToRemoteAction and XYZExplicitDestination to create a hyperlink to another PDF file, inheriting the current document's zoom level?
+To create a hyperlink to another PDF file that preserves the current zoom level:
+- Use `GoToRemoteAction` for linking to an external PDF.
+- Apply `XYZExplicitDestination` to inherit the zoom level from the current document.
+
+```csharp
+// Initialize PDF Document
+Document pdfDoc = new Document("input.pdf");
+
+// Create GoToRemoteAction with XYZExplicitDestination
+GoToRemoteAction remoteAction = new GoToRemoteAction("target.pdf", new XYZExplicitDestination(1, 100, 100, 1));
+
+// Add link annotation with remote action
+LinkAnnotation link = new LinkAnnotation(pdfDoc.Pages[1], new Rectangle(100, 600, 200, 650))
+{
+    Action = remoteAction
+};
+pdfDoc.Pages[1].Annotations.Add(link);
+
+// Save document
+pdfDoc.Save("output.pdf");
+```
+
+## How to validate a tagged PDF?
+- This method verifies compliance with PDF/UA standards.
+- Validation results are typically saved to a log file.
+
+```csharp
+// Load the tagged PDF document
+Document pdfDoc = new Document("tagged.pdf");
+
+// Validate for PDF/UA compliance
+pdfDoc.Validate("validation-log.xml", PdfFormat.PDF_UA_1);
+```
+
+## How to implement regex for TextSegmentAbsorber?
+To use regex with the `TextSegmentAbsorber` class in Aspose.PDF for .NET, you can follow this example:
+
+```csharp
+// Create a new PDF document
+Document doc = new Document("input.pdf");
+
+// Create a TextSegmentAbsorber with a regex pattern
+TextSegmentAbsorber absorber = new TextSegmentAbsorber(@"\b\w+\b", new TextSearchOptions(true));
+
+// Process the PDF document
+absorber.Visit(doc);
+
+// Get the extracted text segments
+List<TextSegment> segments = absorber.TextSegments;
+
+// Do something with the extracted text segments
+foreach (TextSegment segment in segments)
+{
+    Console.WriteLine(segment.Text);
+}
+```
+
+The key points are:
+- Pass a regular expression pattern to the `TextSegmentAbsorber` constructor
+- The pattern `@"\b\w+\b"` will match whole words
+- Call the `Visit()` method to process the PDF document
+- Access the extracted `TextSegment` objects from the `TextSegments` property
+
+## Make a valid PDF/A document unless the missing font or its substitution is provided?
+To create a valid PDF/A document in Aspose.PDF for .NET, you need to ensure that all required fonts are embedded or substituted. Here's an example:
+
+- Set the `DefaultFontName` property to define a substitute font.
+- Use `Convert` to ensure the document meets PDF/A standards.
+
+```csharp
+// Load the document
+Document pdfDoc = new Document("input.pdf");
+
+// Set default font for substitution
+pdfDoc.FontUtilities.DefaultFontName = "Arial";
+
+// Convert to PDF/A
+pdfDoc.Convert("conversion-log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
+
+// Save as PDF/A
+pdfDoc.Save("output-pdfa.pdf");
+```
+
+## Do you support .NET under Linux?
+
+Yes, Aspose.PDF for .NET supports running on Linux environments. You can use the .NET Core version or later, which is cross-platform and can be used on Windows, macOS, and Linux.
+
+## Does Aspose.PDF for .NET support .NET 2.0, 3.5, and 4.0 frameworks?
+
+Yes, Aspose.PDF for .NET supports the following .NET frameworks:
+
+- .NET 2.0
+- .NET 3.5
+- .NET 4.0
+- .NET Standard 2.0 (which is compatible with .NET Core 2.0 and later)
+
+You can use Aspose.PDF for .NET with any of these frameworks in your project. The library provides a consistent API across the different .NET versions, making it easy to migrate your code between frameworks as needed.
+
+## Where are your .NET Examples?
+You can check all of them on [GitHub](https://github.com/aspose-pdf).
