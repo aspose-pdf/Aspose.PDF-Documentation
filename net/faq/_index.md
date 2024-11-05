@@ -113,30 +113,6 @@ for (int i = 0; i < doc.Pages.Count; i++)
 doc.Save("output.pdf");
 ```
 
-or using TextStamp:
-
-```csharp
-// Load or create a new PDF document
-Document pdfDoc = new Document("input.pdf");
-
-// Access the page where the image will be added
-Page page = pdfDoc.Pages[1];
-
-// Load the image
-Image image = new Image
-{
-    File = "image.jpg",
-    FixWidth = 100,
-    FixHeight = 100
-};
-
-// Define the image position
-page.Paragraphs.Add(image);
-
-// Save the PDF document
-pdfDoc.Save("output.pdf");
-```
-
 ## How to Create a Background for PDF Documents?
 To create a background for a PDF document using Aspose.PDF for .NET, you can use the following code:
 
