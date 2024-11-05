@@ -160,30 +160,27 @@ public static void ImportAnnotationXFDF()
 In the code below an ImportAnnotations method allows import annotations directly from another PDF doc.
 
 ```csharp
-        /// <summary>
-        /// ImportAnnotations method allow import annotations directly from another PDF doc
-        /// </summary>
+/// <summary>
+/// ImportAnnotations method allow import annotations directly from another PDF doc
+/// </summary>
+public static void ImportAnnotationFromPDF()
+{
+    // Create PdfAnnotationEditor object
+    PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
+    // Create a new PDF document
+    var document = new Document();
+    document.Pages.Add();
+    AnnotationEditor.BindPdf(document);
+    var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
+    if (!File.Exists(exportFileName))
+        ExportAnnotationXFDF();
 
-        public static void ImportAnnotationFromPDF()
-        {
-            // Create PdfAnnotationEditor object
-            PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-            // Create a new PDF document
-            var document = new Document();
-            document.Pages.Add();
-            AnnotationEditor.BindPdf(document);
-            var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
-            if (!File.Exists(exportFileName))
-                ExportAnnotationXFDF();
+    // Annotation Editor allows import annotations from several PDF documents,
+    // but in this example, we use only one.
+    AnnotationEditor.ImportAnnotations(new[] { Path.Combine(_dataDir, "AnnotationDemo1.pdf") });
 
-            // Annotation Editor allows import annotations from several PDF documents,
-            // but in this example, we use only one.
-            AnnotationEditor.ImportAnnotations(new[] { Path.Combine(_dataDir, "AnnotationDemo1.pdf") });
-
-            // Save output PDF
-            document.Save(Path.Combine(_dataDir, "AnnotationDemo3.pdf"));
-        }
-    }
+    // Save output PDF
+    document.Save(Path.Combine(_dataDir, "AnnotationDemo3.pdf"));
 }
 ```
 

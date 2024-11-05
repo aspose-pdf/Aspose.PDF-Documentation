@@ -17,25 +17,24 @@ sitemap:
 The next code snippet creates a new Document object using an input variable that contains the path to the PDF file. The example accesses the forms presented on page 2 of the document and checks for forms with certain properties. If a form with the type "Typewriter" and subtype "Form" is found, it uses TextFragmentAbsorber to visit and remove all text fragments in this form. Finally, the modified document is saved in two different output ways.
 
 ```cs
+var document = new Document(input);
+var forms = document.Pages[1].Resources.Forms;
 
-    var document = new Document(input);
-    var forms = document.Pages[1].Resources.Forms;
-
-    foreach (var form in forms)
+foreach (var form in forms)
+{
+    if (form.IT == "Typewriter" && form.Subtype == "Form")
     {
-        if (form.IT == "Typewriter" && form.Subtype == "Form")
-        {
-            var absorber = new TextFragmentAbsorber();
-            absorber.Visit(form);
+        var absorber = new TextFragmentAbsorber();
+        absorber.Visit(form);
 
-            foreach (var fragment in absorber.TextFragments)
-            {
-                fragment.Text = "";
-            }
+        foreach (var fragment in absorber.TextFragments)
+        {
+            fragment.Text = "";
         }
     }
+}
 
-    document.Save(output);
+document.Save(output);
 ```
 
 ## Remove Forms with "Typewriter" and a Subtype of "Form" from PDF
@@ -45,38 +44,36 @@ This code snippet searches the forms on the first page of a PDF document for for
 The Aspose.PDF library provides two ways to remove such forms from PDFs:
 
 ```cs
+var document = new Document(input);
+var forms = document.Pages[1].Resources.Forms;
 
-    var document = new Document(input);
-    var forms = document.Pages[1].Resources.Forms;
-
-    for (int i = 1; i <= forms.Count; i++)
+for (int i = 1; i <= forms.Count; i++)
+{
+    if (forms[i].IT == "Typewriter" && forms[i].Subtype == "Form")
     {
-        if (forms[i].IT == "Typewriter" && forms[i].Subtype == "Form")
-        {
-            forms.Delete(forms[i].Name);
-        }
+        forms.Delete(forms[i].Name);
     }
+}
 
-    document.Save(output);
+document.Save(output);
 ```
 
 Method 2:
 
 ```cs
+var document = new Document(input);
+var forms = document.Pages[1].Resources.Forms;
 
-    var document = new Document(input);
-    var forms = document.Pages[1].Resources.Forms;
-
-    foreach (var form in forms)
+foreach (var form in forms)
+{
+    if (form.IT == "Typewriter" && form.Subtype == "Form")
     {
-        if (form.IT == "Typewriter" && form.Subtype == "Form")
-        {
-            var name = forms.GetFormName(form);
-            forms.Delete(name);
-        }
+        var name = forms.GetFormName(form);
+        forms.Delete(name);
     }
+}
 
-    document.Save(output);
+document.Save(output);
 ```
 
 ## Remove all Forms from PDF
@@ -84,11 +81,10 @@ Method 2:
 This code removes all form elements from the first page of a PDF document and then saves the modified document to the specified output path.
 
 ```cs
+var document = new Document(input);
+var forms = document.Pages[1].Resources.Forms;
 
-    var document = new Document(input);
-    var forms = document.Pages[1].Resources.Forms;
+forms.Clear();
 
-    forms.Clear();
-
-    document.Save(output);
+document.Save(output);
 ```

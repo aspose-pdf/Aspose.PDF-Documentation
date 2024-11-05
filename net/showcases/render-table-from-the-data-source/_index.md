@@ -19,28 +19,29 @@ The following example creates the table 4x10.
 
 ```csharp
 var table = new Table
+{
+    // Set column auto widths of the table
+    ColumnWidths = "25% 25% 25% 25%",
+    // Set cell padding
+    DefaultCellPadding = new MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
+    // Set the table border color as Green
+    Border = new BorderInfo(BorderSide.All, .5f, Color.Green),
+    // Set the border for table cells as Black
+    DefaultCellBorder = new BorderInfo(BorderSide.All, .2f, Color.Green),
+};
+
+for (var rowCount = 0; rowCount < 10; rowCount++)
+{
+    // Add row to table
+    var row = table.Rows.Add();
+    // Add table cells
+    for (int i = 0; i < 4; i++)
     {
-        // Set column auto widths of the table
-        ColumnWidths = "25% 25% 25% 25%",
-        // Set cell padding
-        DefaultCellPadding = new MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
-        // Set the table border color as Green
-        Border = new BorderInfo(BorderSide.All, .5f, Color.Green),
-        // Set the border for table cells as Black
-        DefaultCellBorder = new BorderInfo(BorderSide.All, .2f, Color.Green),
-    };
-    for (var rowCount = 0; rowCount < 10; rowCount++)
-    {
-        // Add row to table
-        var row = table.Rows.Add();
-        // Add table cells
-        for (int i = 0; i < 4; i++)
-        {
-            row.Cells.Add($"Cell ({i+1}, {rowCount +1})");
-        }
+        row.Cells.Add($"Cell ({i+1}, {rowCount +1})");
     }
-    // Add table object to first page of input document
-    document.Pages[1].Paragraphs.Add(table);
+}
+// Add table object to first page of input document
+document.Pages[1].Paragraphs.Add(table);
 ```
 
 When initializing the Table object, the minimal skin settings were used:
@@ -86,7 +87,9 @@ var configuration = new ConfigurationBuilder()
 var connectionString = configuration.GetSection("connectionString").Value;
 
 if (string.IsNullOrEmpty(connectionString))
+{
     throw new ArgumentException("No connection string in config.json");
+}
 
 var resultTable = new DataTable();
 

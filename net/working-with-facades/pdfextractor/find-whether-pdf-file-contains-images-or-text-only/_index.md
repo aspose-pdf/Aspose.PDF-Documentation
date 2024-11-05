@@ -20,7 +20,7 @@ Following code snippet shows you how to fulfill this requirement.
 {{% /alert %}}
 
 ```csharp
- public static void CheckIfPdfContainsTextOrImages()
+public static void CheckIfPdfContainsTextOrImages()
 {
     // Instantiate a memoryStream object to hold the extracted text from Document
     MemoryStream ms = new MemoryStream();

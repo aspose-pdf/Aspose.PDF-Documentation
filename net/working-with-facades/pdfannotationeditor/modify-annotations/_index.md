@@ -15,40 +15,40 @@ sitemap:
 For example, in the following code, consider changing the author in our annotation using [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
 
 ```csharp
-   public static void ModifyAnnotationsAuthor()
-        {
-            PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-            annotationEditor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
-            annotationEditor.ModifyAnnotationsAuthor(1, 2, "Aspose User", "Aspose.PDF user");
-            annotationEditor.Save(_dataDir + "ModifyAnnotationsAuthor.pdf");
-        }
+public static void ModifyAnnotationsAuthor()
+{
+    PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
+    annotationEditor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    annotationEditor.ModifyAnnotationsAuthor(1, 2, "Aspose User", "Aspose.PDF user");
+    annotationEditor.Save(_dataDir + "ModifyAnnotationsAuthor.pdf");
+}
 ```
 
 The second method allows you to delete all the annotations of a specified type.
 
 ```csharp
-   public static void ModifyAnnotations()
-        {
-            var document = new Document(_dataDir + "sample_cats_dogs.pdf");
-            PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-            annotationEditor.BindPdf(document);
+public static void ModifyAnnotations()
+{
+    var document = new Document(_dataDir + "sample_cats_dogs.pdf");
+    PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
+    annotationEditor.BindPdf(document);
 
-            // Create a new object of type Annotation to modify annotation attributes
-            var defaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance();
-            Aspose.Pdf.Annotations.FreeTextAnnotation annotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(
-                document.Pages[1],
-                new Aspose.Pdf.Rectangle(1, 1, 1, 1),
-                defaultAppearance)
-            {
+    // Create a new object of type Annotation to modify annotation attributes
+    var defaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance();
+    Aspose.Pdf.Annotations.FreeTextAnnotation annotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(
+        document.Pages[1],
+        new Aspose.Pdf.Rectangle(1, 1, 1, 1),
+        defaultAppearance)
+    {
 
-                // Set new annotation attributees
-                Title = "Aspose.PDF Demo User",
-                Subject = "Technical Article"
-            };
-            // Modify annotations in the PDF file
-            annotationEditor.ModifyAnnotations(1, 1, annotation);
-            annotationEditor.Save(_dataDir + "ModifyAnnotations.pdf");
-        }
+        // Set new annotation attributees
+        Title = "Aspose.PDF Demo User",
+        Subject = "Technical Article"
+    };
+    // Modify annotations in the PDF file
+    annotationEditor.ModifyAnnotations(1, 1, annotation);
+    annotationEditor.Save(_dataDir + "ModifyAnnotations.pdf");
+}
 ```
 
 ## See also

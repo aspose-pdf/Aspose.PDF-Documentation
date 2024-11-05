@@ -166,79 +166,82 @@ namespace Aspose.Pdf.Examples.Advanced
 If you want to highlight a multi-line fragment you should use advanced example:
 
 ```csharp
-        /// <summary>
-        /// Advanced example for you want to highlight a multi-line fragment
-        /// </summary>
-        public static void AddHighlightAnnotationAdvanced()
-        {
-            var document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var page = document.Pages[1];
-            var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
-            tfa.Visit(page);
-            foreach (var textFragment in tfa.TextFragments)
-            {
-                var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
-                page.Annotations.Add(highlightAnnotation);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-        }
-        private static HighlightAnnotation HighLightTextFragment(Aspose.Pdf.Page page,
-            TextFragment textFragment, Color color)
-        {
-            if (textFragment.Segments.Count == 1)
-                return new HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
-                {
-                    Title = "Aspose User",
-                    Color = color,
-                    Modified = DateTime.Now,
-                    QuadPoints = new Point[]
-                    {
-                        new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.URY),
-                        new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.URY),
-                        new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.LLY),
-                        new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
-                    }
-                };
+/// <summary>
+/// Advanced example for you want to highlight a multi-line fragment
+/// </summary>
+public static void AddHighlightAnnotationAdvanced()
+{
+    var document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+    var page = document.Pages[1];
+    var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
+    tfa.Visit(page);
+    foreach (var textFragment in tfa.TextFragments)
+    {
+        var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
+        page.Annotations.Add(highlightAnnotation);
+    }
+    document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+}
 
-            var offset = 0;
-            var quadPoints = new Point[textFragment.Segments.Count * 4];
-            foreach (var segment in textFragment.Segments)
-            {
-                quadPoints[offset + 0] = new Point(segment.Rectangle.LLX, segment.Rectangle.URY);
-                quadPoints[offset + 1] = new Point(segment.Rectangle.URX, segment.Rectangle.URY);
-                quadPoints[offset + 2] = new Point(segment.Rectangle.LLX, segment.Rectangle.LLY);
-                quadPoints[offset + 3] = new Point(segment.Rectangle.URX, segment.Rectangle.LLY);
-                offset += 4;
-            }
-
-            var llx = quadPoints.Min(pt => pt.X);
-            var lly = quadPoints.Min(pt => pt.Y);
-            var urx = quadPoints.Max(pt => pt.X);
-            var ury = quadPoints.Max(pt => pt.Y);
-            return new HighlightAnnotation(page, new Rectangle(llx, lly, urx, ury))
-            {
-                Title = "Aspose User",
-                Color = color,
-                Modified = DateTime.Now,
-                QuadPoints = quadPoints
-            };
-        }
-
-        /// <summary>
-        /// How to get a Highlighted Text
-        /// </summary>
-        public static void GetHighlightedText()
+private static HighlightAnnotation HighLightTextFragment(Aspose.Pdf.Page page,
+    TextFragment textFragment, Color color)
+{
+    if (textFragment.Segments.Count == 1)
+    {
+        return new HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
         {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var highlightAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Highlight)
-                .Cast<HighlightAnnotation>();
-            foreach (var ta in highlightAnnotations)
+            Title = "Aspose User",
+            Color = color,
+            Modified = DateTime.Now,
+            QuadPoints = new Point[]
             {
-                Console.WriteLine($"[{ta.GetMarkedText()}]");
+                new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.URY),
+                new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.URY),
+                new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.LLY),
+                new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
             }
-        }
+        };
+    }
+
+    var offset = 0;
+    var quadPoints = new Point[textFragment.Segments.Count * 4];
+    foreach (var segment in textFragment.Segments)
+    {
+        quadPoints[offset + 0] = new Point(segment.Rectangle.LLX, segment.Rectangle.URY);
+        quadPoints[offset + 1] = new Point(segment.Rectangle.URX, segment.Rectangle.URY);
+        quadPoints[offset + 2] = new Point(segment.Rectangle.LLX, segment.Rectangle.LLY);
+        quadPoints[offset + 3] = new Point(segment.Rectangle.URX, segment.Rectangle.LLY);
+        offset += 4;
+    }
+
+    var llx = quadPoints.Min(pt => pt.X);
+    var lly = quadPoints.Min(pt => pt.Y);
+    var urx = quadPoints.Max(pt => pt.X);
+    var ury = quadPoints.Max(pt => pt.Y);
+    return new HighlightAnnotation(page, new Rectangle(llx, lly, urx, ury))
+    {
+        Title = "Aspose User",
+        Color = color,
+        Modified = DateTime.Now,
+        QuadPoints = quadPoints
+    };
+}
+
+/// <summary>
+/// How to get a Highlighted Text
+/// </summary>
+public static void GetHighlightedText()
+{
+    // Load the PDF file
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+    var highlightAnnotations = document.Pages[1].Annotations
+        .Where(a => a.AnnotationType == AnnotationType.Highlight)
+        .Cast<HighlightAnnotation>();
+    foreach (var ta in highlightAnnotations)
+    {
+        Console.WriteLine($"[{ta.GetMarkedText()}]");
+    }
+}
 ```
 
 ## Get Text Markup Annotation
@@ -246,19 +249,19 @@ If you want to highlight a multi-line fragment you should use advanced example:
 Please try using the following code snippet to Get Text Markup Annotation from PDF document.
 
 ```csharp
-    public static void GetTextMarkupAnnotation()
-    {
-        // Load the PDF file
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-        var textMarkupAnnotations = document.Pages[1].Annotations
-            .Where(a => a.AnnotationType == AnnotationType.Highlight
-            || a.AnnotationType == AnnotationType.Squiggly)
-            .Cast<TextMarkupAnnotation>();
-            foreach (var ta in textMarkupAnnotations)
-            {
-                Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
-            }
-    }
+public static void GetTextMarkupAnnotation()
+{
+    // Load the PDF file
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+    var textMarkupAnnotations = document.Pages[1].Annotations
+        .Where(a => a.AnnotationType == AnnotationType.Highlight
+        || a.AnnotationType == AnnotationType.Squiggly)
+        .Cast<TextMarkupAnnotation>();
+        foreach (var ta in textMarkupAnnotations)
+        {
+            Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
+        }
+}
 ```
 
 ## Delete Text Markup Annotation
@@ -266,20 +269,20 @@ Please try using the following code snippet to Get Text Markup Annotation from P
 The following code snippet shows how to Delete Text Markup Annotation from PDF file.
 
 ```csharp
-    public static void DeleteTextMarkupAnnotation()
-    {
-        // Load the PDF file
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-        var textMarkupAnnotations = document.Pages[1].Annotations
-            .Where(a => a.AnnotationType == AnnotationType.Highlight
-            ||a.AnnotationType == AnnotationType.Squiggly)
-            .Cast<TextMarkupAnnotation>();
-            foreach (var ta in textMarkupAnnotations)
-            {
-            document.Pages[1].Annotations.Delete(ta);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_del.pdf"));
-    }
+public static void DeleteTextMarkupAnnotation()
+{
+    // Load the PDF file
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+    var textMarkupAnnotations = document.Pages[1].Annotations
+        .Where(a => a.AnnotationType == AnnotationType.Highlight
+        ||a.AnnotationType == AnnotationType.Squiggly)
+        .Cast<TextMarkupAnnotation>();
+        foreach (var ta in textMarkupAnnotations)
+        {
+        document.Pages[1].Annotations.Delete(ta);
+        }
+        document.Save(System.IO.Path.Combine(_dataDir, "sample_del.pdf"));
+}
 ```
 
 <script type="application/ld+json">

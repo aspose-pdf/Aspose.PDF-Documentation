@@ -184,7 +184,6 @@ foreach (Annotation annotation in doc.Pages[1].Annotations)
             tf.TextState.ForegroundColor = Color.Red;
         }
     }
-
 }
 dataDir = dataDir + "UpdateLinkTextColor_out.pdf";
 // Save the document with updated link

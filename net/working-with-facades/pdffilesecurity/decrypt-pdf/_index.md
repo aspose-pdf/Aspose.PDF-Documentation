@@ -22,17 +22,17 @@ You can try to unlock document using Aspose.PDF and get the results online at th
 In order to decrypt a PDF file, you need to create [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and then call the [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. You also need to pass the owner password to [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. The following code snippet shows you how to decrypt PDF file.
 
 ```csharp
-    public static void DecryptPDFFile()
-        {
-            PdfFileInfo pdfFileInfo = new PdfFileInfo(_dataDir + "sample_encrypted.pdf");
-            // Create PdfFileSecurity object
-            if (pdfFileInfo.IsEncrypted)
-            {
-                PdfFileSecurity fileSecurity = new PdfFileSecurity();
-                fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
-                // Decrypt PDF document
-                fileSecurity.DecryptFile("P@ssw0rd");
-                fileSecurity.Save(_dataDir + "sample_decrtypted.pdf");
-            }
-        }
+public static void DecryptPDFFile()
+{
+    PdfFileInfo pdfFileInfo = new PdfFileInfo(_dataDir + "sample_encrypted.pdf");
+    // Create PdfFileSecurity object
+    if (pdfFileInfo.IsEncrypted)
+    {
+        PdfFileSecurity fileSecurity = new PdfFileSecurity();
+        fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
+        // Decrypt PDF document
+        fileSecurity.DecryptFile("P@ssw0rd");
+        fileSecurity.Save(_dataDir + "sample_decrtypted.pdf");
+    }
+}
 ```

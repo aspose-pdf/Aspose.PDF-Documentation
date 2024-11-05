@@ -69,7 +69,6 @@ form.Dispose();
 This code snippet demonstrates how to import values into form fields of a PDF document from a JSON file using the Aspose.Pdf.Facades API. The FileStream is used to handle the JSON file.
 
 ```cs
-
 Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
 // Open Document
 form.BindPdf("Sample-Form-01.pdf");

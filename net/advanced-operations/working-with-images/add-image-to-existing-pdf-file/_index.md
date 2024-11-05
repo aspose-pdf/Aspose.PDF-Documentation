@@ -295,14 +295,13 @@ The code snippet loads a PDF, opens two image files, and applies those images as
 Stencil mask can be added by 'XImage.AddStencilMask(Stream maskStream)' method:
 
 ```cs
-
-    Document doc = new Document("input.pdf");
-    using (var fs1 = new FileStream("mask1.jpg", FileMode.Open))
-    using (var fs2 = new FileStream("mask2.png", FileMode.Open))
-    {
-        doc.Pages[1].Resources.Images[1].AddStencilMask(fs1);
-        doc.Pages[1].Resources.Images[2].AddStencilMask(fs2);
-    }
+Document doc = new Document("input.pdf");
+using (var fs1 = new FileStream("mask1.jpg", FileMode.Open))
+using (var fs2 = new FileStream("mask2.png", FileMode.Open))
+{
+    doc.Pages[1].Resources.Images[1].AddStencilMask(fs1);
+    doc.Pages[1].Resources.Images[2].AddStencilMask(fs2);
+}
 ```
 
 <script type="application/ld+json">

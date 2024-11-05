@@ -14,19 +14,19 @@ draft: false
 The following code snippet shows you how to set PDF file information.
 
 ```csharp
- public static void SetPdfInfo()
-        {
-            PdfFileInfo fileInfo = new PdfFileInfo(_dataDir + "sample.pdf")
-            {
-                // Set PDF information
-                Author = "Aspose",
-                Title = "Hello World!",
-                Keywords = "Peace and Development",
-                Creator = "Aspose"
-            };
-            // Save updated file
-            fileInfo.SaveNewInfo(_dataDir + "SetFileInfo_out.pdf");
-        }
+public static void SetPdfInfo()
+{
+    PdfFileInfo fileInfo = new PdfFileInfo(_dataDir + "sample.pdf")
+    {
+        // Set PDF information
+        Author = "Aspose",
+        Title = "Hello World!",
+        Keywords = "Peace and Development",
+        Creator = "Aspose"
+    };
+    // Save updated file
+    fileInfo.SaveNewInfo(_dataDir + "SetFileInfo_out.pdf");
+}
 ```
 
 ## Set Meta Info
@@ -34,14 +34,15 @@ The following code snippet shows you how to set PDF file information.
 [SetMetaInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) method allows you to add any information. In our example, we added a field. Check next code snippet:
 
 ```csharp
- public static void SetMetaInfo()
-        {
-            // Create instance of PdfFileInfo object
-            Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(_dataDir + "sample.pdf");
+public static void SetMetaInfo()
+{
+    // Create instance of PdfFileInfo object
+    Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(_dataDir + "sample.pdf");
 
-            // Set new customer attribute as meta info
-            fInfo.SetMetaInfo("Reviewer", "Aspose.PDF user");
+    // Set new customer attribute as meta info
+    fInfo.SetMetaInfo("Reviewer", "Aspose.PDF user");
 
-            // Save updated file
-            fInfo.SaveNewInfo(_dataDir + "SetMetaInfo_out.pdf");
+    // Save updated file
+    fInfo.SaveNewInfo(_dataDir + "SetMetaInfo_out.pdf");
+}
 ```

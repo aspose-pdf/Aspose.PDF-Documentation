@@ -84,43 +84,43 @@ The Aspose.PDF library has the ability to convert PDF files to XPS. We can use t
 Let's consider the example for direct printing:
 
 ```csharp
-    private void Print_OnClick(object sender, RoutedEventArgs e)
+private void Print_OnClick(object sender, RoutedEventArgs e)
+{
+    var openFileDialog = new OpenFileDialog
     {
-        var openFileDialog = new OpenFileDialog
-        {
-            Filter = "PDF Documents|*.pdf"
-        };
-        openFileDialog.ShowDialog();
+        Filter = "PDF Documents|*.pdf"
+    };
+    openFileDialog.ShowDialog();
 
-        Aspose.Pdf.Document document = new Document(openFileDialog.FileName);
-        var memoryStream = new MemoryStream();
-        document.Save(memoryStream, SaveFormat.Xps);
-        var package = Package.Open(memoryStream);
+    Aspose.Pdf.Document document = new Document(openFileDialog.FileName);
+    var memoryStream = new MemoryStream();
+    document.Save(memoryStream, SaveFormat.Xps);
+    var package = Package.Open(memoryStream);
 
-        //Create URI for Xps Package
-        //Any Uri will actually be fine here. It acts as a place holder for the
-        //Uri of the package inside of the PackageStore
-        var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
-        var packageUri = new Uri(inMemoryPackageName);
+    //Create URI for Xps Package
+    //Any Uri will actually be fine here. It acts as a place holder for the
+    //Uri of the package inside of the PackageStore
+    var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
+    var packageUri = new Uri(inMemoryPackageName);
 
-        //Add package to PackageStore
-        PackageStore.AddPackage(packageUri, package);
+    //Add package to PackageStore
+    PackageStore.AddPackage(packageUri, package);
 
-        var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
-        var fixedDocumentSequence = xpsDoc.GetFixedDocumentSequence();
+    var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
+    var fixedDocumentSequence = xpsDoc.GetFixedDocumentSequence();
 
-        var printDialog = new PrintDialog();
-        if (printDialog.ShowDialog() == true)
-        {
-            if (fixedDocumentSequence != null)
-                printDialog.PrintDocument(fixedDocumentSequence.DocumentPaginator, "A fixed document");
-            else
-                throw new NullReferenceException();
-        }
-        PackageStore.RemovePackage(packageUri);
-        xpsDoc.Close();
-
+    var printDialog = new PrintDialog();
+    if (printDialog.ShowDialog() == true)
+    {
+        if (fixedDocumentSequence != null)
+            printDialog.PrintDocument(fixedDocumentSequence.DocumentPaginator, "A fixed document");
+        else
+            throw new NullReferenceException();
     }
+    PackageStore.RemovePackage(packageUri);
+    xpsDoc.Close();
+
+}
 ```
 
 In this case, we will follow these steps:

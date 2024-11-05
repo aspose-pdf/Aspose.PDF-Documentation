@@ -102,30 +102,30 @@ Follow the steps below:
 
 ```csharp
  public static void ExampleCurve()
-        {
-            // Create Document instance
-            var document = new Document();
+{
+    // Create Document instance
+    var document = new Document();
 
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
+    // Add page to pages collection of PDF file
+    var page = document.Pages.Add();
 
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
+    // Create Drawing object with certain dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
 
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
+    // Set border for Drawing object
+    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
+    graph.Border = borderInfo;
 
-            var curve1 = new Curve(new float[] { 10, 10, 50, 60, 70, 10, 100, 120 });
-            curve1.GraphInfo.Color = Color.GreenYellow;
-            graph.Shapes.Add(curve1);
+    var curve1 = new Curve(new float[] { 10, 10, 50, 60, 70, 10, 100, 120 });
+    curve1.GraphInfo.Color = Color.GreenYellow;
+    graph.Shapes.Add(curve1);
 
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
+    // Add Graph object to paragraphs collection of page
+    page.Paragraphs.Add(graph);
 
-            // Save PDF file
-            document.Save(_dataDir + "DrawingCurve1_out.pdf");
-        }
+    // Save PDF file
+    document.Save(_dataDir + "DrawingCurve1_out.pdf");
+}
 ```
 
 The following picture shows the result executed with our code snippet:
@@ -137,31 +137,31 @@ The following picture shows the result executed with our code snippet:
 This example shows how to add a Curve object that is filled with color.
 
 ```csharp
-      public static void CurveFilled()
-        {
-            // Create Document instance
-            var document = new Document();
+public static void CurveFilled()
+{
+    // Create Document instance
+    var document = new Document();
 
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
+    // Add page to pages collection of PDF file
+    var page = document.Pages.Add();
 
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
+    // Create Drawing object with certain dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
 
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
+    // Set border for Drawing object
+    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
+    graph.Border = borderInfo;
 
-            var curve1 = new Curve(new float[] { 10, 10, 50, 60, 70, 10, 100, 120 });
-            curve1.GraphInfo.FillColor = Color.GreenYellow;
-            graph.Shapes.Add(curve1);
+    var curve1 = new Curve(new float[] { 10, 10, 50, 60, 70, 10, 100, 120 });
+    curve1.GraphInfo.FillColor = Color.GreenYellow;
+    graph.Shapes.Add(curve1);
 
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
+    // Add Graph object to paragraphs collection of page
+    page.Paragraphs.Add(graph);
 
-            // Save PDF file
-            document.Save(_dataDir + "DrawingCurve2_out.pdf");
-        }
+    // Save PDF file
+    document.Save(_dataDir + "DrawingCurve2_out.pdf");
+}
 ```
 
 Look at the result of adding a filled Curve:

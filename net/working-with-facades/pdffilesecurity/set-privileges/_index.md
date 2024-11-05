@@ -14,7 +14,7 @@ To set a PDF file's privileges, create a [PdfFileSecurity](https://reference.asp
 
 ```csharp
 public static void SetPrivilege1()
- {
+{
     // Create DocumentPrivileges object
     DocumentPrivilege privilege = DocumentPrivilege.ForbidAll;
     privilege.ChangeAllowLevel = 1;
@@ -32,8 +32,8 @@ public static void SetPrivilege1()
 See the following method with specifying a password:
 
 ```csharp
- public static void SetPrivilege2()
- {
+public static void SetPrivilege2()
+{
     // Create DocumentPrivileges object
     DocumentPrivilege privilege = DocumentPrivilege.ForbidAll;
     privilege.ChangeAllowLevel = 1;

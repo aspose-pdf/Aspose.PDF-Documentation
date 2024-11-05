@@ -95,31 +95,31 @@ Follow the steps below:
 1. Save our PDF file
 
 ```csharp
-        public static void Circle()
-        {
-            // Create Document instance
-            var document = new Document();
+public static void Circle()
+{
+    // Create Document instance
+    var document = new Document();
 
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
+    // Add page to pages collection of PDF file
+    var page = document.Pages.Add();
 
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
+    // Create Drawing object with certain dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
+    // Set border for Drawing object
+    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
+    graph.Border = borderInfo;
 
-            var circle = new Circle(100, 100, 40);
+    var circle = new Circle(100, 100, 40);
 
-            circle.GraphInfo.Color = Color.GreenYellow;
-            graph.Shapes.Add(circle);
+    circle.GraphInfo.Color = Color.GreenYellow;
+    graph.Shapes.Add(circle);
 
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
+    // Add Graph object to paragraphs collection of page
+    page.Paragraphs.Add(graph);
 
-            // Save PDF file
-            document.Save(_dataDir + "DrawingCircle1_out.pdf");
-        }
+    // Save PDF file
+    document.Save(_dataDir + "DrawingCircle1_out.pdf");
+}
 ```
 
 Our drawn circle will look like this:
@@ -131,34 +131,34 @@ Our drawn circle will look like this:
 This example shows how to add a Circle object that is filled with color.
 
 ```csharp
-        public static void CircleFilled()
-        {
-            // Create Document instance
-            var document = new Document();
+public static void CircleFilled()
+{
+    // Create Document instance
+    var document = new Document();
 
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
+    // Add page to pages collection of PDF file
+    var page = document.Pages.Add();
 
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
+    // Create Drawing object with certain dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
 
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
+    // Set border for Drawing object
+    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
+    graph.Border = borderInfo;
 
-            var circle = new Circle(100, 100, 40);
-            circle.GraphInfo.Color = Color.GreenYellow;
-            circle.GraphInfo.FillColor = Color.Green;
-            circle.Text = new TextFragment("Circle");
+    var circle = new Circle(100, 100, 40);
+    circle.GraphInfo.Color = Color.GreenYellow;
+    circle.GraphInfo.FillColor = Color.Green;
+    circle.Text = new TextFragment("Circle");
 
-            graph.Shapes.Add(circle);
+    graph.Shapes.Add(circle);
 
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
+    // Add Graph object to paragraphs collection of page
+    page.Paragraphs.Add(graph);
 
-            // Save PDF file
-            document.Save(_dataDir + "DrawingCircle2_out.pdf");
-        }
+    // Save PDF file
+    document.Save(_dataDir + "DrawingCircle2_out.pdf");
+}
 ```
 
 Let's see the result of adding a filled Circle:

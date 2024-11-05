@@ -17,23 +17,23 @@ The [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/p
 The following code snippet shows how to remove digital signature from the PDF file.
 
 ```csharp
- public static void RemoveSignature()
-        {
-            // Create PdfFileSignature object
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            // Open PDF document
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
-            // Get list of signature names
-            var sigNames = pdfSign.GetSignNames();
-            // Remove all the signatures from the PDF file
-            for (int index = 0; index < sigNames.Count; index++)
-            {
-                Console.WriteLine($"Removed {sigNames[index]}");
-                pdfSign.RemoveSignature(sigNames[index]);
-            }
-            // Save updated PDF file
-            pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
-        }
+public static void RemoveSignature()
+{
+    // Create PdfFileSignature object
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    // Open PDF document
+    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    // Get list of signature names
+    var sigNames = pdfSign.GetSignNames();
+    // Remove all the signatures from the PDF file
+    for (int index = 0; index < sigNames.Count; index++)
+    {
+        Console.WriteLine($"Removed {sigNames[index]}");
+        pdfSign.RemoveSignature(sigNames[index]);
+    }
+    // Save updated PDF file
+    pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
+}
 ```
 
 ### Remove Signature but Keep the Signature field
@@ -42,39 +42,38 @@ As shown above, the [PdfFileSignature](https://reference.aspose.com/pdf/net/aspo
 
 ```csharp
 public static void RemoveSignatureButKeepField()
-        {
-            // Create PdfFileSignature object
-            PdfFileSignature pdfSign = new PdfFileSignature();
+{
+    // Create PdfFileSignature object
+    PdfFileSignature pdfSign = new PdfFileSignature();
 
-            // Open PDF document
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    // Open PDF document
+    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
 
-            pdfSign.RemoveSignature("Signature1", false);
+    pdfSign.RemoveSignature("Signature1", false);
 
-            // Save updated PDF file
-            pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
-        }
+    // Save updated PDF file
+    pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
+}
 ```
 
 The following example shows how to remove all signatures from fields.
 
 ```csharp
 public static void RemoveSignatureButKeepField2()
-        {
-            // Create PdfFileSignature object
-            PdfFileSignature pdfSign = new PdfFileSignature();
+{
+    // Create PdfFileSignature object
+    PdfFileSignature pdfSign = new PdfFileSignature();
 
-            // Open PDF document
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    // Open PDF document
+    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
 
-            var sigNames = pdfSign.GetSignNames();
-            foreach (var sigName in sigNames)
-            {
-                pdfSign.RemoveSignature(sigName, false);
-            }
+    var sigNames = pdfSign.GetSignNames();
+    foreach (var sigName in sigNames)
+    {
+        pdfSign.RemoveSignature(sigName, false);
+    }
 
-            // Save updated PDF file
-            pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
-        }
-
+    // Save updated PDF file
+    pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
+}
 ```
