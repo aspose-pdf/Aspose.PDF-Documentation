@@ -232,8 +232,8 @@ To use regex with the `TextSegmentAbsorber` class in Aspose.PDF for .NET, you ca
 // Create a new PDF document
 Document doc = new Document("input.pdf");
 
-// Create a TextSegmentAbsorber with a regex pattern
-TextSegmentAbsorber absorber = new TextSegmentAbsorber(@"\b\w+\b", new TextSearchOptions(true));
+// Create a TextFragmentAbsorber with a regex pattern
+TextFragmentAbsorber absorber = new TextFragmentAbsorber(@"\b\w+\b", new TextSearchOptions(true));
 
 // Process the PDF document
 absorber.Visit(doc);
@@ -250,10 +250,10 @@ foreach (TextFragment fragment in asorber.TextFragments)
 ```
 
 The key points are:
-- Pass a regular expression pattern to the `TextSegmentAbsorber` constructor
+- Pass a regular expression pattern to the `TextFragmentAbsorber` constructor
 - The pattern `@"\b\w+\b"` will match whole words
 - Call the `Visit()` method to process the PDF document
-- Access the extracted `TextSegment` objects from the `TextSegments` property
+- Access the extracted `TextFragments` objects from the `TextFragments` property
 
 ## How to make a valid PDF/A document unless the missing font or its substitution is provided?
 To create a valid PDF/A document in Aspose.PDF for .NET, you need to ensure that all required fonts are embedded or substituted. Here's an example:
