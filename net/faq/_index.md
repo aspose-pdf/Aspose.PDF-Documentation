@@ -225,8 +225,8 @@ Document pdfDoc = new Document("tagged.pdf");
 pdfDoc.Validate("validation-log.xml", PdfFormat.PDF_UA_1);
 ```
 
-## How to implement regex search for TextSegmentAbsorber?
-To use regex with the `TextSegmentAbsorber` class in Aspose.PDF for .NET, you can follow this example:
+## How to implement regex search for TextFragemntAbsorber?
+To use regex with the `TextFragmentAbsorber` class in Aspose.PDF for .NET, you can follow this example:
 
 ```csharp
 // Create a new PDF document
