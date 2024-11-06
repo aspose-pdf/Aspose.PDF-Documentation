@@ -2,7 +2,7 @@
 title: Copiere Câmp Interior și Exterior
 type: docs
 weight: 40
-url: /java/copy-inner-and-outer-field/
+url: ar/java/copy-inner-and-outer-field/
 description: Această secțiune explică cum să copiați câmpul interior și exterior folosind com.aspose.pdf.facades cu clasa FormEditor.
 lastmod: "2021-06-05"
 draft: false

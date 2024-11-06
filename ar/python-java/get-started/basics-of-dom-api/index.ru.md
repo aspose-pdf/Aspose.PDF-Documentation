@@ -3,7 +3,7 @@ title: Основы Aspose.PDF DOM API
 linktitle: Основы DOM API
 type: docs
 weight: 110
-url: /python-java/basics-of-dom-api/
+url: ar/python-java/basics-of-dom-api/
 description: Aspose.PDF для Java также использует идею DOM для представления структуры PDF-документа в виде объектов. Здесь вы можете прочитать описание этой структуры.
 lastmod: "2024-06-05"
 sitemap:

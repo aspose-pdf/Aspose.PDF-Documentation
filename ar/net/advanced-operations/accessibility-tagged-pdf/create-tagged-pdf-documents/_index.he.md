@@ -3,7 +3,7 @@ title: יצירת PDF מתויג באמצעות C#
 linktitle: יצירת PDF מתויג
 type: docs
 weight: 10
-url: /net/create-tagged-pdf/
+url: ar/net/create-tagged-pdf/
 description: מאמר זה מסביר כיצד ליצור אלמנטים מובנים עבור מסמך PDF מתויג תוכניתית באמצעות Aspose.PDF עבור .NET.
 lastmod: "2022-02-17"
 sitemap:
