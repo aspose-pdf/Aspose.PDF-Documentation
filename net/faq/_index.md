@@ -15,6 +15,60 @@ sitemap:
 Aspose.PDF for .NET supports popular file formats such as PDF, TXT, HTML, PCL, XML, XPS, EPUB, TEX, and image formats. For more details, please visit the page [Supported File Formats](https://docs.aspose.com/pdf/net/supported-file-formats/).
 
 ## What AI features Aspose.PDF for .NET support?
+Yes, the library has built-in OpenAI and Llama API clients. They allow you to make API requests and create AI copilots. Here are examples of the OpenAI client usage:
+
+- as a chat completion client:
+
+```csharp
+var client = OpenAIClient
+    .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
+    .WithProject(ProjectKey) // Configure optional parameters.
+    .Build();
+
+CompletionResponse result = await client.CreateCompletionAsync(new CompletionCreateRequest
+{
+    Messages = new List<ChatMessage>
+    {
+        ChatMessage.FromUser("Hello!")
+    }
+});
+
+string response = result.Choices[0].Message.Content; // Hello! How can I assist you today?
+```
+
+- as a client to create the AI Summary Copilot:
+
+```csharp
+var client = OpenAIClient
+    .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
+    .Build();
+
+// Create copilot options.
+var options = OpenAISummaryCopilotOptions
+    .Create() // Create options like this, or...
+    //.Create(options => { options.Model = OpenAIModels.Gpt4O; }) // ...create using delegate.
+    .WithTemperature(0.5) // Configure other optional parameters.
+    .WithDocument("DocumentInputPath") // .WithDocument methods allow to add text, pdf, and paths to documents.
+    .WithDocuments(new List<TextDocument>()); // .WithDocuments methods allow to add text, pdf and path collections.
+
+// Create summary copilot.
+var summaryCopilot = AICopilotFactory.CreateSummaryCopilot(client, options);
+
+// Get summary text.
+string summaryText = await summaryCopilot.GetSummaryAsync();
+
+// Get summary document.
+Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
+
+// Get the summary document with page info.
+Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new PageInfo());
+
+// Save the summary as a PDF document.
+await summaryCopilot.SaveSummaryAsync("outputPath");
+
+// Save summary with specified format.
+await summaryCopilot.SaveSummaryAsync("outputPath", SaveFormat.DocX);
+```
 
 ## How many files can I combine to PDF at once?
 You can merge an unlimited number of files into PDF at once.
