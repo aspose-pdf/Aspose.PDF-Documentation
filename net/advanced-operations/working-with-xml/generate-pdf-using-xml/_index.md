@@ -592,40 +592,39 @@ public static void Example_XSLFO_to_PDF_Param_21_7()
 If you use version earlier than 21.7, please use following techinque:
 
 ```csharp
-  public static void Example_XSLFO_to_PDF_Param_21_6()
-  {
-      var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
-      var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+public static void Example_XSLFO_to_PDF_Param_21_6()
+{
+    var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
+    var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
 
-      var options = new Aspose.Pdf.XslFoLoadOptions();
-      var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
-      pdfDocument.Save(_dataDir + "data_xml.pdf");
-  }
+    var options = new Aspose.Pdf.XslFoLoadOptions();
+    var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
+    pdfDocument.Save(_dataDir + "data_xml.pdf");
+}
 
-  public static MemoryStream TransformXSL(string inputXml, string xsltString)
-  {
-      var transform = new XslCompiledTransform();
+public static MemoryStream TransformXSL(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
 
-      //Create own XsltArgumentList
-      XsltArgumentList argsList = new XsltArgumentList();
-      argsList.AddParam("isBoldName", "", "no");
-      //---------------------
+    //Create own XsltArgumentList
+    XsltArgumentList argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
+    //---------------------
 
-      using (var reader = XmlReader.Create(new StringReader(xsltString)))
-      {
-          transform.Load(reader);
-      }
-      var memoryStream = new MemoryStream();
+    using (var reader = XmlReader.Create(new StringReader(xsltString)))
+    {
+        transform.Load(reader);
+    }
+    var memoryStream = new MemoryStream();
 
-      var results = new StreamWriter(memoryStream);
-      using (var reader = XmlReader.Create(new StringReader(inputXml)))
-      {
-          transform.Transform(reader, argsList, results);
-      }
+    var results = new StreamWriter(memoryStream);
+    using (var reader = XmlReader.Create(new StringReader(inputXml)))
+    {
+        transform.Transform(reader, argsList, results);
+    }
 
-      memoryStream.Position = 0;
-      return memoryStream;
-  }
+    memoryStream.Position = 0;
+    return memoryStream;
 }
 ```
 

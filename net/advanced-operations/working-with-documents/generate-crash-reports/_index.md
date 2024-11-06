@@ -29,72 +29,68 @@ Inside the catch block, the PdfException.GenerateCrashReport() method is called.
 **Basic workflow:**
 
 ```cs
+try
+{
 
-    try
-    {
-    
-        throw new Exception("message", new Exception("inner message"));
-    }
-    catch (Exception ex)
-    {
-    PdfException.GenerateCrashReport(new CrashReportOptions(ex));
-    }
+    throw new Exception("message", new Exception("inner message"));
+}
+catch (Exception ex)
+{
+PdfException.GenerateCrashReport(new CrashReportOptions(ex));
+}
 ```
 
 **Set a directory where crash report will be generated:**
 
 ```cs
+try
+{
+    
+    throw new Exception("message", new Exception("inner message"));
+}
+catch (Exception ex)
+{
+    CrashReportOptions options = new CrashReportOptions(ex);
+    //by default it's working directory of application
+    options.CrashReportDirectory = "C:\Temp";
 
-    try
-    {
-        
-        throw new Exception("message", new Exception("inner message"));
-    }
-    catch (Exception ex)
-    {
-        CrashReportOptions options = new CrashReportOptions(ex);
-        //by default it's working directory of application
-        options.CrashReportDirectory = "C:\Temp";
-
-        PdfException.GenerateCrashReport(new CrashReportOptions(ex));
-    }
+    PdfException.GenerateCrashReport(new CrashReportOptions(ex));
+}
 ```
 
 **Set your own crash report name:**
 
 ```cs
+try
+{
 
-    try
-    {
-    
-        throw new Exception("message", new Exception("inner message"));
-    }
-    catch (Exception ex)
-    {
-        CrashReportOptions options = new CrashReportOptions(ex);
+    throw new Exception("message", new Exception("inner message"));
+}
+catch (Exception ex)
+{
+    CrashReportOptions options = new CrashReportOptions(ex);
 
-        //by default crash report name will be generated like following:
-        //string.Format(@"CrashReport_{0}_{1}.html", DateTime.Today.ToShortDateString(), DateTime.Now.Ticks)
-        options.CrashReportFilename = "custom_crash_report_name.html";
+    //by default crash report name will be generated like following:
+    //string.Format(@"CrashReport_{0}_{1}.html", DateTime.Today.ToShortDateString(), DateTime.Now.Ticks)
+    options.CrashReportFilename = "custom_crash_report_name.html";
 
-        PdfException.GenerateCrashReport(options);
-    }
+    PdfException.GenerateCrashReport(options);
+}
 ```
 
 **Provide additional information about exceptional circumstances in the CustomMessage field:**
 
 ```cs
-
-    try
-    {
-        
-        throw new Exception("message", new Exception("inner message"));
-    }
-    catch (Exception ex)
-    {
-        CrashReportOptions options = new CrashReportOptions(ex);
-        options.CustomMessage = "Exception occured while processing PDF files with XFA formated forms";
-        PdfException.GenerateCrashReport(options);
-    }
+try
+{
+    
+    throw new Exception("message", new Exception("inner message"));
+}
+catch (Exception ex)
+{
+    CrashReportOptions options = new CrashReportOptions(ex);
+    options.CustomMessage = "Exception occured while processing PDF files with XFA formated forms";
+    PdfException.GenerateCrashReport(options);
+}
 ```
 

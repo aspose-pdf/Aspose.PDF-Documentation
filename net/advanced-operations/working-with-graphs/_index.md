@@ -1,21 +1,23 @@
 ---
-title: Add Arc Object to PDF file
-linktitle: Add Arc
+title: Working with Graphs in PDF file
+linktitle: Working with Graphs
 type: docs
-weight: 10
-url: /net/add-arc/
-description: This article explains how to create a arc object to your PDF using Aspose.PDF for .NET.
+weight: 70
+url: /net/working-with-graphs/
+description: This article explains what a is Graph, how to create a filled rectangle object, and other functions
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-graphs/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Add Arc Object to PDF file",
-    "alternativeHeadline": "How to create Arc in PDF file",
+    "headline": "Working with Graphs in PDF file",
+    "alternativeHeadline": "How to create graphs in PDF",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -24,7 +26,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, arc in pdf",
+    "keywords": "pdf, c#, graphs in pdf",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -66,111 +68,34 @@ sitemap:
             }
         ]
     },
-    "url": "/net/add-arc/",
+    "url": "/net/graphs/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/add-arc/"
+        "@id": "/net/graphs/"
     },
     "dateModified": "2022-02-04",
-    "description": "This article explains how to create a arc object to your PDF using Aspose.PDF for .NET."
+    "description": "This article explains what a is Graph, how to create a filled rectangle object, and other functions"
 }
 </script>
 
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+## What is Graph
 
-## Add Arc object
+Adding graphs to PDF documents is a very common task for developers while working with Adobe Acrobat Writer or other PDF processing applications. There are many types of graphs that can be used in PDF applications.
+[Aspose.PDF for .NET](/pdf/net/) also supports adding graphs to PDF documents. For this purpose, the Graph class is provided. Graph is a paragraph level element and it can be added to the Paragraphs collection in a Page instance. A Graph instance contains a collection of Shapes.
 
-Aspose.PDF for .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. It also offers the feature to fill arc object with a certain color.
+The following types of shapes are supported by the [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) class:
 
-Follow the steps below:
+- [Arc](/pdf/net/add-arc/) - sometimes also called a flag is an ordered pair of adjacent vertices, but sometimes also called a directed line.
+- [Circle](/pdf/net/add-circle/) - displays data using a circle divided into sectors. We use a circle graph (also called a pie chart) to show how data represent portions of one whole or one group.
+- [Curve](/pdf/net/add-curve/) - is a connected union of projective lines, each line meeting three others in ordinary double points.
+- [Line](/pdf/net/add-line) - line graphs are used to display continuous data and can be useful in predicting future events when they show trends over time.
+- [Rectangle](/pdf/net/add-rectangle/) - is one of the many fundamental shapes you'll see in graphs, its can be very useful in helping you solve a problem.
+- [Ellipse](/pdf/net/add-ellipse/) - is a set of points on a plane, creating an oval, curved shape.
 
-1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance
+The above details are also depicted in the figures below:
 
-1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions
+![Figures in Graphs](graphs.png)
 
-1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object
-
-1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page
-
-1. Save our PDF file
-
-The following code snippet shows how to add a [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc) object.
-
-```csharp
- public static void Arc()
-        {
-            // Create Document instance
-            var document = new Document();
-
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
-
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
-
-            var arc1 = new Arc(100, 100, 95, 0, 90);
-            arc1.GraphInfo.Color = Color.GreenYellow;
-            graph.Shapes.Add(arc1);
-
-            var arc2 = new Arc(100, 100, 90, 70, 180);
-            arc2.GraphInfo.Color = Color.DarkBlue;
-            graph.Shapes.Add(arc2);
-
-            var arc3 = new Arc(100, 100, 85, 120, 210);
-            arc3.GraphInfo.Color = Color.Red;
-            graph.Shapes.Add(arc3);
-
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
-
-            // Save PDF file
-            document.Save(_dataDir + "DrawingArc_out.pdf");
-
-        }
-```
-
-## Create Filled Arc Object
-
-Next example shows how to add a Arc object that is filled with color and certain dimensions.
-
-```csharp
-        public static void ArcFilled()
-        {
-            // Create Document instance
-            var document = new Document();
-
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
-
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
-
-            var arc = new Arc(100, 100, 95, 0, 90);
-            arc.GraphInfo.FillColor = Color.GreenYellow;
-            graph.Shapes.Add(arc);
-
-            var line = new Line(new float[] { 195, 100, 100, 100, 100, 195 });
-            line.GraphInfo.FillColor = Color.GreenYellow;
-            graph.Shapes.Add(line);
-
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
-
-            // Save PDF file
-            document.Save(_dataDir + "ExampleFilledArc_out.pdf");
-
-        }
-```
-
-Let's see the result of adding a filled Arс:
-
-![Filled Arc](filled_arc.png)
 
 <script type="application/ld+json">
 {

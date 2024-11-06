@@ -179,19 +179,18 @@ Since version 24.6, it is possible to add alternative text to the image stamp.
 This code opens a PDF file, adds an image as a stamp at a specific position, and includes alternative text for accessibility. The updated PDF is then saved with a new filename.
 
 ```cs
+var pdfDocument = new Document(dataDir + "yourDoc.pdf");
+var imageStamp = new ImageStamp(dataDir + "yourImage.jpg")
+{
+    XIndent = 100,
+    YIndent = 700,
+    Quality = 100,
+    AlternativeText = "Your alt text"  // This property added.
+};
 
-    var pdfDocument = new Document(dataDir + "yourDoc.pdf");
-    var imageStamp = new ImageStamp(dataDir + "yourImage.jpg")
-    {
-        XIndent = 100,
-        YIndent = 700,
-        Quality = 100,
-        AlternativeText = "Your alt text"  // This property added.
-    };
+pdfDocument.Pages[1].AddStamp(imageStamp);
 
-    pdfDocument.Pages[1].AddStamp(imageStamp);
-
-    pdfDocument.Save(dataDir + "yourDocWithImageStamp.pdf");
+pdfDocument.Save(dataDir + "yourDocWithImageStamp.pdf");
 ```
 
 <script type="application/ld+json">

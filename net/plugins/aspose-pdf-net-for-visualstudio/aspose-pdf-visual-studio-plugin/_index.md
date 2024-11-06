@@ -18,7 +18,7 @@ Microsoft Visual Studio is an integrated development environment (IDE) from Micr
 
 Aspose.PDF for .NET is a PDF document creation and manipulation component that enables your .NET applications to read, write and manipulate existing PDF documents without using Adobe Acrobat.
 
-For more details about [Aspose.PDF for .NET API](http://www.aspose.com/.net/Pdf-component.aspx)
+For more details about [Aspose.PDF for .NET API](https://products.aspose.com/pdf/net/)
 
 ### Explore Aspose.PDF for .NET Examples using Visual Studio
 
@@ -48,9 +48,7 @@ Please feel free to contact us if you find any issues in installing or using thi
 
 You can download Aspose Visual Studio Plugin from one of the following locations
 
-- [CodePlex](https://asposePdfvs.codeplex.com/releases)
-- [Code.MSDN](https://code.msdn.microsoft.com/Explore-AsposePdf-for-NET-58ac45ed)
-- [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/b45659c0-9414-4ede-aed2-acc0c27a6b15)
+- [Visual Studio Gallery](https://marketplace.visualstudio.com/items?itemName=AsposeMarketplace.AsposePdfforNET)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/AsposePdfExamplesVSPlugin)
 
 ## Installing
@@ -101,10 +99,8 @@ This is why we offer free support. Anyone who uses our product, whether they hav
 
 You can log any issues or suggestions related to Aspose Visual Studio Plugin using any of the following platforms
 
-- [CodePlex](https://asposePdfvs.codeplex.com/workitem/list/basic)
-- [Visual Studio Gallery - Q and A](https://visualstudiogallery.msdn.microsoft.com/b45659c0-9414-4ede-aed2-acc0c27a6b15)
+- [Visual Studio Gallery - Q and A](https://marketplace.visualstudio.com/items?itemName=AsposeMarketplace.AsposePdfforNET)
 - [Github](https://github.com/asposePdf/Aspose.PDF-for-.NET/issues)
-- [Microsoft Developer Network - Q and A](https://code.msdn.microsoft.com/Explore-AsposePdf-for-NET-58ac45ed/view/Discussions#content)
 
 ### Extend and Contribute
 
@@ -114,9 +110,7 @@ You can log any issues or suggestions related to Aspose Visual Studio Plugin usi
 
 You can get the latest source code from one of the following locations
 
-- [CodePlex](https://asposePdfvs.codeplex.com/SourceControl/latest)
 - [Github](https://github.com/asposePdf/Aspose.PDF-for-.NET)
-- [Microsoft Developer Network](https://code.msdn.microsoft.com/Explore-AsposePdf-for-NET-58ac45ed)
 
 #### How to configure the source code
 

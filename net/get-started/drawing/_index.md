@@ -13,7 +13,7 @@ sitemap:
 
 ## Introduction
 
-**Aspose.PDF.Drawing for .NET** is a variation of Aspose.PDF, which provides a new graphical Aspose.Drawing interface instead of System.Drawing. 
+**Aspose.PDF.Drawing for .NET** is a variation of Aspose.PDF, which provides Aspose.Drawing library instead of System.Drawing. 
 
 This component is written in a managed C#, allowing developers to add PDF file creation and management features to their Microsoft applications. NET (WinForms, ASP.NET, and .NET Compact Framework).
 

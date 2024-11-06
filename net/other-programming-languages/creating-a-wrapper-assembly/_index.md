@@ -18,9 +18,9 @@ Reducing the number of classes and methods that you need to invoke via COM Inter
 ## Aspose.PDF for .NET Wrapper
 
 ```csharp
-
 using System;
 using System.Runtime.InteropServices;
+
 namespace PdfText
 {
     [Guid("FC969AC9-6591-46FB-A4AB-DB12A776F3BF")]

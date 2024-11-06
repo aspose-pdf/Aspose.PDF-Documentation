@@ -1,10 +1,10 @@
 ---
-title: Add Curve Object to PDF file
-linktitle: Add Curve
+title: Add Arc Object to PDF file
+linktitle: Add Arc
 type: docs
-weight: 30
-url: /net/add-curve/
-description: This article explains how to create a curve object to your PDF using Aspose.PDF for .NET.
+weight: 10
+url: /net/add-arc/
+description: This article explains how to create a arc object to your PDF using Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,8 +14,8 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Add Curve Object to PDF file",
-    "alternativeHeadline": "How to create Curve Object in PDF file",
+    "headline": "Add Arc Object to PDF file",
+    "alternativeHeadline": "How to create Arc in PDF file",
     "author": {
         "@type": "Person",
         "name":"Anastasiia Holub",
@@ -24,7 +24,7 @@ sitemap:
         "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, .net, curve in pdf",
+    "keywords": "pdf, c#, arc in pdf",
     "wordcount": "302",
     "proficiencyLevel":"Beginner",
     "publisher": {
@@ -66,27 +66,21 @@ sitemap:
             }
         ]
     },
-    "url": "/net/add-curve/",
+    "url": "/net/add-arc/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/add-curve/"
+        "@id": "/net/add-arc/"
     },
     "dateModified": "2022-02-04",
-    "description": "This article explains how to create a curve object to your PDF using Aspose.PDF for .NET."
+    "description": "This article explains how to create a arc object to your PDF using Aspose.PDF for .NET."
 }
 </script>
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-## Add Curve object
+## Add Arc object
 
-A graph [Curve](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve) is a connected union of projective lines, each line meeting three others in ordinary double points.
-
-Aspose.PDF for .NET shows how to use Bézier curves in your Graphs.
-Bézier curves are widely used in computer graphics to model smooth curves. The curve is completely contained in the convex hull of its control points, the points may be graphically displayed and used to manipulate the curve intuitively.
-The entire curve is contained in the quadrilateral whose corners are the four given points (their convex hull).
-
-In this article, we will investigate  simply graph curves, and filled curves, that you can create in your PDF document.
+Aspose.PDF for .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. It also offers the feature to fill arc object with a certain color.
 
 Follow the steps below:
 
@@ -100,73 +94,81 @@ Follow the steps below:
 
 1. Save our PDF file
 
-```csharp
- public static void ExampleCurve()
-        {
-            // Create Document instance
-            var document = new Document();
-
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
-
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
-
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
-
-            var curve1 = new Curve(new float[] { 10, 10, 50, 60, 70, 10, 100, 120 });
-            curve1.GraphInfo.Color = Color.GreenYellow;
-            graph.Shapes.Add(curve1);
-
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
-
-            // Save PDF file
-            document.Save(_dataDir + "DrawingCurve1_out.pdf");
-        }
-```
-
-The following picture shows the result executed with our code snippet:
-
-![Drawing Curve](drawing_curve.png)
-
-## Create Filled Curve Object
-
-This example shows how to add a Curve object that is filled with color.
+The following code snippet shows how to add a [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc) object.
 
 ```csharp
-      public static void CurveFilled()
-        {
-            // Create Document instance
-            var document = new Document();
+public static void Arc()
+{
+    // Create Document instance
+    var document = new Document();
 
-            // Add page to pages collection of PDF file
-            var page = document.Pages.Add();
+    // Add page to pages collection of PDF file
+    var page = document.Pages.Add();
 
-            // Create Drawing object with certain dimensions
-            var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
+    // Create Drawing object with certain dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
+    // Set border for Drawing object
+    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
+    graph.Border = borderInfo;
 
-            // Set border for Drawing object
-            var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-            graph.Border = borderInfo;
+    var arc1 = new Arc(100, 100, 95, 0, 90);
+    arc1.GraphInfo.Color = Color.GreenYellow;
+    graph.Shapes.Add(arc1);
 
-            var curve1 = new Curve(new float[] { 10, 10, 50, 60, 70, 10, 100, 120 });
-            curve1.GraphInfo.FillColor = Color.GreenYellow;
-            graph.Shapes.Add(curve1);
+    var arc2 = new Arc(100, 100, 90, 70, 180);
+    arc2.GraphInfo.Color = Color.DarkBlue;
+    graph.Shapes.Add(arc2);
 
-            // Add Graph object to paragraphs collection of page
-            page.Paragraphs.Add(graph);
+    var arc3 = new Arc(100, 100, 85, 120, 210);
+    arc3.GraphInfo.Color = Color.Red;
+    graph.Shapes.Add(arc3);
 
-            // Save PDF file
-            document.Save(_dataDir + "DrawingCurve2_out.pdf");
-        }
+    // Add Graph object to paragraphs collection of page
+    page.Paragraphs.Add(graph);
+
+    // Save PDF file
+    document.Save(_dataDir + "DrawingArc_out.pdf");
+}
 ```
 
-Look at the result of adding a filled Curve:
+## Create Filled Arc Object
 
-![Filled Curve](filled_curve.png)
+Next example shows how to add a Arc object that is filled with color and certain dimensions.
+
+```csharp
+public static void ArcFilled()
+{
+    // Create Document instance
+    var document = new Document();
+
+    // Add page to pages collection of PDF file
+    var page = document.Pages.Add();
+
+    // Create Drawing object with certain dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
+    // Set border for Drawing object
+    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
+    graph.Border = borderInfo;
+
+    var arc = new Arc(100, 100, 95, 0, 90);
+    arc.GraphInfo.FillColor = Color.GreenYellow;
+    graph.Shapes.Add(arc);
+
+    var line = new Line(new float[] { 195, 100, 100, 100, 100, 195 });
+    line.GraphInfo.FillColor = Color.GreenYellow;
+    graph.Shapes.Add(line);
+
+    // Add Graph object to paragraphs collection of page
+    page.Paragraphs.Add(graph);
+
+    // Save PDF file
+    document.Save(_dataDir + "ExampleFilledArc_out.pdf");
+}
+```
+
+Let's see the result of adding a filled Arс:
+
+![Filled Arc](filled_arc.png)
 
 <script type="application/ld+json">
 {

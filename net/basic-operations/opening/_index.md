@@ -56,20 +56,20 @@ public static void OpenDocumentStream()
 ## Open encrypted PDF document
 
 ```csharp
-    public static void OpenDocumentWithPassword()
+public static void OpenDocumentWithPassword()
+{
+    const string fileName = @"C:\tmp\DocSite.pdf";
+    const string password = "Aspose2020";
+    try
     {
-        const string fileName = @"C:\tmp\DocSite.pdf";
-        const string password = "Aspose2020";
-        try
+        using (var pdfDocument = new Aspose.Pdf.Document(fileName, password))
         {
-            using (var pdfDocument = new Aspose.Pdf.Document(fileName, password))
-            {
-                Console.WriteLine($"Pages {pdfDocument.Pages.Count}");
-            }
-        }
-        catch (InvalidPasswordException e)
-        {
-            Console.WriteLine(e);
+            Console.WriteLine($"Pages {pdfDocument.Pages.Count}");
         }
     }
+    catch (InvalidPasswordException e)
+    {
+        Console.WriteLine(e);
+    }
+}
 ```

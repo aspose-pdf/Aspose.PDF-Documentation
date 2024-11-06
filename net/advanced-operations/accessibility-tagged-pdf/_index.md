@@ -2,7 +2,7 @@
 title: Accessibility and Tagged PDFs
 linktitle: Accessibility. Tagged PDF
 type: docs
-weight: 120
+weight: 180
 url: /net/accessibility-tagged-pdf/
 description: Aspose.PDF provides the ability to create Tagged PDF documents, allowing you to tag the structural elements. Learn more about how to get accessible PDFs.
 lastmod: "2022-02-17"
