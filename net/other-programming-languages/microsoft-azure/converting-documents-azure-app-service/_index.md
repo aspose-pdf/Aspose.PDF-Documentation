@@ -94,7 +94,7 @@ code .
 }
 ```
 
-3. Create project structure:
+4. Create project structure:
 ```bash
 mkdir Controllers
 touch Controllers/PdfController.cs
@@ -116,7 +116,7 @@ dotnet restore
 ## Configure Aspose License
 In Visual Studio:
 1. Copy your Aspose.PDF license file to the project.
-2. Right-click on the license file.
+2. Right-click on the license file, select "Properties".
 3. Set "Copy to Output Directory" to "Copy always".
 4. Add license initialization code in Program.cs:
    ```csharp
@@ -127,7 +127,7 @@ In Visual Studio:
 ### Create code
 In Visual Studio:
 1. Right-click on Controllers folder
-2. Add → New Item → API Controller Class
+2. Add → New Item → API Controller - Empty
 3. Name your file "PdfController.cs"
 
 ```csharp
