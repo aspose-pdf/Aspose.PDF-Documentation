@@ -236,10 +236,11 @@ using (Document pdfDoc = new Document("input.pdf"))
 
 ```csharp
 // Load the tagged PDF document
-Document pdfDoc = new Document("tagged.pdf");
-
-// Validate for PDF/UA compliance
-pdfDoc.Validate("validation-log.xml", PdfFormat.PDF_UA_1);
+using (Document pdfDoc = new Document("tagged.pdf"))
+{
+    // Validate for PDF/UA compliance
+    pdfDoc.Validate("validation-log.xml", PdfFormat.PDF_UA_1);
+}
 ```
 
 ## How to implement regex search for TextFragmentAbsorber?
