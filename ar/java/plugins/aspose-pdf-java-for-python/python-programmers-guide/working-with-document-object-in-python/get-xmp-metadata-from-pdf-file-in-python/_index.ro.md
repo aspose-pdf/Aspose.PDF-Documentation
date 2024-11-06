@@ -2,7 +2,7 @@
 title: Obțineți Metadate XMP din Fișier PDF în Python
 type: docs
 weight: 50
-url: /java/get-xmp-metadata-from-pdf-file-in-python/
+url: ar/java/get-xmp-metadata-from-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

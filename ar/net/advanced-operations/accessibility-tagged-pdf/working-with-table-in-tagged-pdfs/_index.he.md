@@ -3,7 +3,7 @@ title: עבודה עם טבלה ב-PDF מתויגים
 linktitle: עבודה עם טבלה ב-PDF מתויגים
 type: docs
 weight: 40
-url: /net/working-with-table-in-tagged-pdfs/
+url: ar/net/working-with-table-in-tagged-pdfs/
 description: מאמר זה מסביר איך לעבוד עם טבלה במסמך PDF מתויג עם Aspose.PDF עבור .NET.
 lastmod: "2022-02-17"
 sitemap:

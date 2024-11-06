@@ -3,7 +3,7 @@ title: נגישות ו-PDF מתויגים
 linktitle: נגישות. PDF מתויג
 type: docs
 weight: 120
-url: /net/accessibility-tagged-pdf/
+url: ar/net/accessibility-tagged-pdf/
 description: Aspose.PDF מספקת את היכולת ליצור מסמכי PDF מתויגים, ומאפשרת לך לתייג את האלמנטים המבניים. למד עוד על איך להשיג PDF נגישים.
 lastmod: "2022-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Clasa PdfContentEditor
 type: docs
 weight: 30
-url: /java/pdfcontenteditor-class/
+url: zh/java/pdfcontenteditor-class/
 description: Această secțiune explică cum să lucrați cu Aspose.PDF Facades folosind Clasa PdfContentEditor.
 lastmod: "2021-06-05"
 sitemap:
