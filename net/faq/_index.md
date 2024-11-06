@@ -174,7 +174,7 @@ using (Document pdfDoc = new Document("input.pdf"))
 }
 ```
 
-- Specify the permissions using the `Security.Permissions` property
+- Specify the permissions using the `Security.Permissions` property.
 
 With these password and permissions settings, the PDF document will be secured and users will need to provide the correct passwords to access and use the document.
 
@@ -272,10 +272,10 @@ using (Document pdfDoc = new Document("input.pdf"))
 ```
 
 The key points are:
-- Pass a regular expression pattern to the `TextFragmentAbsorber` constructor
-- The pattern `@"\b\w+\b"` will match whole words
-- Call the `Visit()` method to process the PDF document
-- Access the extracted `TextFragments` objects from the `TextFragments` property
+- Pass a regular expression pattern to the `TextFragmentAbsorber` constructor.
+- The pattern `@"\b\w+\b"` will match whole words.
+- Call the `Visit()` method to process the PDF document.
+- Access the extracted `TextFragments` objects from the `TextFragments` property.
 
 ## How to make a valid PDF/A document unless the missing font or its substitution is provided?
 To create a valid PDF/A document in Aspose.PDF for .NET, you need to ensure that all required fonts are embedded or substituted. Here's an example:
