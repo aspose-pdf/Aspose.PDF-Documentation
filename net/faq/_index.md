@@ -21,19 +21,20 @@ You can merge an unlimited number of files into PDF at once.
 
 ```csharp
 // Create a new PDF document
-Document mergedDoc = new Document();
-
-// List of files to merge
-string[] pdfFiles = { "file1.pdf", "file2.pdf", "file3.pdf" };
-
-foreach (string file in pdfFiles)
+using (Document mergedDoc = new Document())
 {
-    Document tempDoc = new Document(file);
-    mergedDoc.Pages.Add(tempDoc.Pages);
-}
+    // List of files to merge
+    string[] pdfFiles = { "file1.pdf", "file2.pdf", "file3.pdf" };
 
-// Save the merged PDF document
-mergedDoc.Save("merged_output.pdf");
+    foreach (string file in pdfFiles)
+    {
+        Document tempDoc = new Document(file);
+        mergedDoc.Pages.Add(tempDoc.Pages);
+    }
+
+    // Save the merged PDF document
+    mergedDoc.Save("merged_output.pdf");
+}
 ```
 
 or
@@ -50,24 +51,25 @@ To insert an image into a PDF using Aspose.PDF for .NET, you can use the followi
 
 ```csharp
 // Load or create a new PDF document
-Document pdfDoc = new Document("input.pdf");
-
-// Access the page where the image will be added
-Page page = pdfDoc.Pages[1];
-
-// Load the image
-Image image = new Image
+using (Document pdfDoc = new Document("input.pdf"))
 {
-    File = "image.jpg",
-    FixWidth = 100,
-    FixHeight = 100
-};
+    // Access the page where the image will be added
+    Page page = pdfDoc.Pages[1];
 
-// Define the image position
-page.Paragraphs.Add(image);
+    // Load the image
+    Image image = new Image
+    {
+        File = "image.jpg",
+        FixWidth = 100,
+        FixHeight = 100
+    };
 
-// Save the PDF document
-pdfDoc.Save("output.pdf");
+    // Define the image position
+    page.Paragraphs.Add(image);
+
+    // Save the PDF document
+    pdfDoc.Save("output.pdf");
+}
 ```
 
 ## How to edit the text in PDF?
@@ -75,32 +77,33 @@ To edit the text in a PDF using Aspose.PDF for .NET, you can follow these steps:
 
 ```csharp
 // Load the PDF document
-Document pdfDoc = new Document("input.pdf");
-
-// Define the text to search for
-string searchText = "old text";
-
-// Create TextFragmentAbsorber to find specific text
-TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber(searchText);
-
-// Accept the absorber for all pages in the document
-pdfDoc.Pages.Accept(textAbsorber);
-
-// Loop through the found text fragments and modify them
-foreach (TextFragment fragment in textAbsorber.TextFragments)
+using (Document pdfDoc = new Document("input.pdf"))
 {
-    // Change the text content
-    fragment.Text = "new text";
-    
-    // Optional: Modify the text appearance
-    fragment.TextState.Font = FontRepository.FindFont("Arial");
-    fragment.TextState.FontSize = 12;
-    fragment.TextState.ForegroundColor = Color.Blue;
-    fragment.TextState.BackgroundColor = Color.Yellow;
-}
+    // Define the text to search for
+    string searchText = "old text";
 
-// Save the updated PDF document
-pdfDoc.Save("output.pdf");
+    // Create TextFragmentAbsorber to find specific text
+    TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber(searchText);
+
+    // Accept the absorber for all pages in the document
+    pdfDoc.Pages.Accept(textAbsorber);
+
+    // Loop through the found text fragments and modify them
+    foreach (TextFragment fragment in textAbsorber.TextFragments)
+    {
+        // Change the text content
+        fragment.Text = "new text";
+        
+        // Optional: Modify the text appearance
+        fragment.TextState.Font = FontRepository.FindFont("Arial");
+        fragment.TextState.FontSize = 12;
+        fragment.TextState.ForegroundColor = Color.Blue;
+        fragment.TextState.BackgroundColor = Color.Yellow;
+    }
+
+    // Save the updated PDF document
+    pdfDoc.Save("output.pdf");
+}
 ```
 
 ## How to add page numbers to PDF file?
@@ -108,28 +111,29 @@ To add page numbers to a PDF using Aspose.PDF for .NET, you can use the followin
 
 ```csharp
 // Create a new PDF document
-Document pdfDoc = new Document();
-
-// Add pages to the document
-for (int i = 0; i < 5; i++)
+using (Document pdfDoc = new Document())
 {
-    Page page = pdfDoc.Pages.Add();
-    page.Paragraphs.Add($"This is page {i + 1}.");
-}
+    // Add pages to the document
+    for (int i = 0; i < 5; i++)
+    {
+        Page page = pdfDoc.Pages.Add();
+        page.Paragraphs.Add($"This is page {i + 1}.");
+    }
 
-// Add page numbers to the document
-for (int i = 0; i < pdfDoc.Pages.Count; i++)
-{
-    Page page = pdfDoc.Pages[i];
-    Paragraph paragraph = page.Paragraphs.Add($"Page {i + 1} of {pdfDoc.Pages.Count}");
-    paragraph.Format.Alignment = ParagraphAlignment.Right;
-    paragraph.Format.FontSize = 10;
-    paragraph.Format.VerticalAlignment = VerticalAlignment.Bottom;
-    paragraph.Format.LineSpacing = 1;
-}
+    // Add page numbers to the document
+    for (int i = 0; i < pdfDoc.Pages.Count; i++)
+    {
+        Page page = pdfDoc.Pages[i];
+        Paragraph paragraph = page.Paragraphs.Add($"Page {i + 1} of {pdfDoc.Pages.Count}");
+        paragraph.Format.Alignment = ParagraphAlignment.Right;
+        paragraph.Format.FontSize = 10;
+        paragraph.Format.VerticalAlignment = VerticalAlignment.Bottom;
+        paragraph.Format.LineSpacing = 1;
+    }
 
-// Save the PDF document
-pdfDoc.Save("output.pdf");
+    // Save the PDF document
+    pdfDoc.Save("output.pdf");
+}
 ```
 
 ## How to create a background for PDF Documents?
@@ -137,21 +141,22 @@ To create a background for a PDF document using Aspose.PDF for .NET, you can use
 
 ```csharp
 // Load the PDF document
-Document pdfDoc = new Document("input.pdf");
-
-// Create an image and set it as a background
-foreach (Page page in pdfDoc.Pages)
+using (Document pdfDoc = new Document("input.pdf"))
 {
-    ImageStamp backgroundImage = new ImageStamp("background.jpg")
+    // Create an image and set it as a background
+    foreach (Page page in pdfDoc.Pages)
     {
-        Opacity = 0.5,
-        Background = true
-    };
-    page.AddStamp(backgroundImage);
-}
+        ImageStamp backgroundImage = new ImageStamp("background.jpg")
+        {
+            Opacity = 0.5,
+            Background = true
+        };
+        page.AddStamp(backgroundImage);
+    }
 
-// Save the PDF with background image
-pdfDoc.Save("output_with_image_background.pdf");
+    // Save the PDF with background image
+    pdfDoc.Save("output_with_image_background.pdf");
+}
 ```
 
 ## How to secure PDF document?
@@ -159,13 +164,14 @@ To secure a PDF document using Aspose.PDF for .NET, you can apply password prote
 
 ```csharp
 // Load the PDF document
-Document pdfDoc = new Document("input.pdf");
+using (Document pdfDoc = new Document("input.pdf"))
+{
+    // Set encryption and password options
+    pdfDoc.Encrypt("user_password", "owner_password", Permissions.PrintDocument | Permissions.FillIn, CryptoAlgorithm.AESx128);
 
-// Set encryption and password options
-pdfDoc.Encrypt("user_password", "owner_password", Permissions.PrintDocument | Permissions.FillIn, CryptoAlgorithm.AESx128);
-
-// Save the secured PDF document
-pdfDoc.Save("secured_output.pdf");
+    // Save the secured PDF document
+    pdfDoc.Save("secured_output.pdf");
+}
 ```
 
 - Specify the permissions using the `Security.Permissions` property
@@ -179,23 +185,25 @@ To add bold text in a highlighted annotation:
 
 ```csharp
 // Initialize PDF Document
-Document pdfDoc = new Document("input.pdf");
-Page page = pdfDoc.Pages[1];
-
-// Create a highlight annotation
-TextAnnotation highlight = new TextAnnotation(page, new Rectangle(100, 600, 200, 650))
+using (Document pdfDoc = new Document("input.pdf"))
 {
-    Title = "Highlight Annotation",
-    RichText = "<b>This is bold text in a highlighted annotation</b>",
-    Color = Color.Yellow,
-    Opacity = 0.5
-};
+    Page page = pdfDoc.Pages[1];
 
-// Add annotation to the page
-page.Annotations.Add(highlight);
+    // Create a highlight annotation
+    TextAnnotation highlight = new TextAnnotation(page, new Rectangle(100, 600, 200, 650))
+    {
+        Title = "Highlight Annotation",
+        RichText = "<b>This is bold text in a highlighted annotation</b>",
+        Color = Color.Yellow,
+        Opacity = 0.5
+    };
 
-// Save document
-pdfDoc.Save("output.pdf");
+    // Add annotation to the page
+    page.Annotations.Add(highlight);
+
+    // Save document
+    pdfDoc.Save("output.pdf");
+}
 ```
 
 ## How to use GoToRemoteAction and XYZExplicitDestination to create a hyperlink to another PDF file, inheriting the current document's zoom level?
@@ -205,20 +213,21 @@ To create a hyperlink to another PDF file that preserves the current zoom level:
 
 ```csharp
 // Initialize PDF Document
-Document pdfDoc = new Document("input.pdf");
-
-// Create GoToRemoteAction with XYZExplicitDestination
-GoToRemoteAction remoteAction = new GoToRemoteAction("target.pdf", new XYZExplicitDestination(1, 100, 100, 1));
-
-// Add link annotation with remote action
-LinkAnnotation link = new LinkAnnotation(pdfDoc.Pages[1], new Rectangle(100, 600, 200, 650))
+using (Document pdfDoc = new Document("input.pdf"))
 {
-    Action = remoteAction
-};
-pdfDoc.Pages[1].Annotations.Add(link);
+    // Create GoToRemoteAction with XYZExplicitDestination
+    GoToRemoteAction remoteAction = new GoToRemoteAction("target.pdf", new XYZExplicitDestination(1, 100, 100, 1));
 
-// Save document
-pdfDoc.Save("output.pdf");
+    // Add link annotation with remote action
+    LinkAnnotation link = new LinkAnnotation(pdfDoc.Pages[1], new Rectangle(100, 600, 200, 650))
+    {
+        Action = remoteAction
+    };
+    pdfDoc.Pages[1].Annotations.Add(link);
+
+    // Save document
+    pdfDoc.Save("output.pdf");
+}
 ```
 
 ## How to validate a tagged PDF?
@@ -238,26 +247,27 @@ To use regex with the `TextFragmentAbsorber` class in Aspose.PDF for .NET, you c
 
 ```csharp
 // Create a new PDF document
-Document pdfDoc = new Document("input.pdf");
-
-// Create a TextFragmentAbsorber with a regex pattern
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(@"\b\w+\b", new TextSearchOptions(true));
-
-// Process the PDF document
-absorber.Visit(pdfDoc);
-
-// Loop through matched fragments
-foreach (TextFragment fragment in asorber.TextFragments)
+using (Document pdfDoc = new Document("input.pdf"))
 {
-    // Example: Change text color of matched fragments
-    fragment.TextState.ForegroundColor = Color.Red;
-    
-    // Example: Modify the matched text if needed
-    fragment.Text = "[REDACTED]";  // Replace with custom text
-}
+    // Create a TextFragmentAbsorber with a regex pattern
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber(@"\b\w+\b", new TextSearchOptions(true));
 
-// Save the PDF document
-pdfDoc.Save("output.pdf");
+    // Process the PDF document
+    absorber.Visit(pdfDoc);
+
+    // Loop through matched fragments
+    foreach (TextFragment fragment in asorber.TextFragments)
+    {
+        // Example: Change text color of matched fragments
+        fragment.TextState.ForegroundColor = Color.Red;
+        
+        // Example: Modify the matched text if needed
+        fragment.Text = "[REDACTED]";  // Replace with custom text
+    }
+
+    // Save the PDF document
+    pdfDoc.Save("output.pdf");
+}
 ```
 
 The key points are:
@@ -269,35 +279,38 @@ The key points are:
 ## How to make a valid PDF/A document unless the missing font or its substitution is provided?
 To create a valid PDF/A document in Aspose.PDF for .NET, you need to ensure that all required fonts are embedded or substituted. Here's an example:
 
-- Set the `DefaultFontName` property to define a substitute font.
 - Use `Convert` to ensure the document meets PDF/A standards.
 
 ```csharp
 // Load the document
-Document pdfDoc = new Document("input.pdf");
+using (Document pdfDoc = new Document("input.pdf"))
+{
+    PdfFormatConversionOptions options = new PdfFormatConversionOptions("conversion-log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-// Set default font for substitution
-pdfDoc.FontUtilities.DefaultFontName = "Arial";
+    // Substitute all missing fonts with the default one
+    options.FontEmbeddingOptions.UseDefaultSubstitution = true;
 
-// Convert to PDF/A
-pdfDoc.Convert("conversion-log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
+    // Convert to PDF/A
+    pdfDoc.Convert(options);
 
-// Save as PDF/A
-pdfDoc.Save("output-pdfa.pdf");
+    // Save as PDF/A
+    pdfDoc.Save("output-pdfa.pdf");
+}
 ```
+
+## I see errors in PDF/A conversion log. Does it mean that the document wasn't converted successfully?
+No, Aspose.PDF logs all problems it encountered, including the ones that were automatically fixed. If all entries in the log are marked as Convertable="True", it means that all problems were fixed, and the document was successfully converted. Only the entries with Convertable="False" indicate the conversion failure.
 
 ## Does Aspose.PDF for .NET support Linux?
 Yes, Aspose.PDF for .NET supports running on Linux environments. You can use the .NET Core version or later, which is cross-platform and can be used on Windows, macOS, and Linux.
 
 ## Does Aspose.PDF for .NET support .NET 2.0, 3.5, and 4.0 frameworks?
-Yes, Aspose.PDF for .NET supports the following .NET frameworks:
+Aspose.PDF for .NET does not support the following .NET frameworks:
 
 - .NET 2.0
 - .NET 3.5
-- .NET 4.0
-- .NET Standard 2.0 (which is compatible with .NET Core 2.0 and later)
 
-You can use Aspose.PDF for .NET with any of these frameworks in your project. The library provides a consistent API across the different .NET versions, making it easy to migrate your code between frameworks as needed.
+But you can use Aspose.PDF for .NET with any of these frameworks in your project. The library provides a consistent API across the different .NET versions, making it easy to migrate your code between frameworks as needed.
 
 ## Where are your .NET Examples?
 You can check all of them on [GitHub](https://github.com/aspose-pdf).
