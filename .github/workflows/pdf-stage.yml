@@ -9,6 +9,11 @@ jobs:
     name: Deploy
     runs-on: [self-hosted, linux, x64, dev4-pdf]
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+          submodules: true
+          fetch-depth: 0
     - name: hugo build
       run: |
         git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/aspose-pdf/Aspose.PDF-Hugo-template.git || (cd Aspose.PDF-Hugo-template && git pull)
