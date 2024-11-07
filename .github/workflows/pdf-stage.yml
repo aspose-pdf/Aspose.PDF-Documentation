@@ -16,6 +16,7 @@ jobs:
         rm -rf content
         sudo npm install -D --save autoprefixer
         sudo npm install -D --save postcss-cli
+        sudo npm install
         rsync --recursive --delete --force --progress ../* content/
         rm -rf content/Aspose.PDF-Hugo-template
         rm -rf public
