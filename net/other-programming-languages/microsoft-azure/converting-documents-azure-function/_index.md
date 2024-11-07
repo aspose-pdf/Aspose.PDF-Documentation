@@ -400,8 +400,7 @@ public async Task<IActionResult> Run(
         "@type": "Person",
         "name":"Anastasiia Holub",
         "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "familyName": "Holub"
     },
     "genre": "pdf document generation",
     "keywords": "pdf, c#, advanced operations in pdf, microsoft azure, function",
