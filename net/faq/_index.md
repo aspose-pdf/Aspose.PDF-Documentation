@@ -11,66 +11,36 @@ sitemap:
     priority: 0.7
 ---
 
-## What formats does Aspose.PDF for .NET support?
-Aspose.PDF for .NET supports popular file formats such as PDF, TXT, HTML, PCL, XML, XPS, EPUB, TEX, and image formats. For more details, please visit the page [Supported File Formats](https://docs.aspose.com/pdf/net/supported-file-formats/).
+<div class="schema-faq-code" itemscope itemtype="https://schema.org/FAQPage">
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+What formats does Aspose.PDF for .NET support?
+        </h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text" class="faq-a">
+Aspose.PDF for .NET supports popular file formats such as PDF, TXT, HTML, PCL, XML, XPS, EPUB, TEX, and image formats. For more details, please visit the page <a itemprop="url" href="https://docs.aspose.com/pdf/net/supported-file-formats/">Supported File Formats</a>.
+            </p>
+        </div>
+    </div>
 
-## What AI features Aspose.PDF for .NET support?
-Yes, the library has built-in OpenAI and Llama API clients. They allow you to make API requests and create AI copilots. Here are examples of the OpenAI client usage:
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+What AI features Aspose.PDF for .NET support?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
+Yes, the library has built-in OpenAI and Llama API clients. They allow you to make API requests and create AI copilots. You can find examples on <a itemprop="url" href="https://docs.aspose.com/pdf/net/ai-copilot/">PDF AI Copilot</a> page.
+        </p>
+    </div>
 
-- as a chat completion client:
-
-```csharp
-var client = OpenAIClient
-    .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-    .WithProject(ProjectKey) // Configure optional parameters.
-    .Build();
-
-CompletionResponse result = await client.CreateCompletionAsync(new CompletionCreateRequest
-{
-    Messages = new List<ChatMessage>
-    {
-        ChatMessage.FromUser("Hello!")
-    }
-});
-
-string response = result.Choices[0].Message.Content; // Hello! How can I assist you today?
-```
-
-- as a client to create the AI Summary Copilot:
-
-```csharp
-var client = OpenAIClient
-    .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
-    .Build();
-
-// Create copilot options.
-var options = OpenAISummaryCopilotOptions
-    .Create() // Create options like this, or...
-    //.Create(options => { options.Model = OpenAIModels.Gpt4O; }) // ...create using delegate.
-    .WithTemperature(0.5) // Configure other optional parameters.
-    .WithDocument("DocumentInputPath") // .WithDocument methods allow to add text, pdf, and paths to documents.
-    .WithDocuments(new List<TextDocument>()); // .WithDocuments methods allow to add text, pdf and path collections.
-
-// Create summary copilot.
-var summaryCopilot = AICopilotFactory.CreateSummaryCopilot(client, options);
-
-// Get summary text.
-string summaryText = await summaryCopilot.GetSummaryAsync();
-
-// Get summary document.
-Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
-
-// Get the summary document with page info.
-Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new PageInfo());
-
-// Save the summary as a PDF document.
-await summaryCopilot.SaveSummaryAsync("outputPath");
-
-// Save summary with specified format.
-await summaryCopilot.SaveSummaryAsync("outputPath", SaveFormat.DocX);
-```
-
-## How many files can I combine to PDF at once?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How many files can I combine to PDF at once?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 You can merge an unlimited number of files into PDF at once.
 
 ```csharp
@@ -99,8 +69,16 @@ using (Document mergedDocuments = Document.MergeDocuments("input1.pdf", "input2.
      mergedDocuments.Save("merged_output.pdf");
 }
 ```
+        </p>
+    </div>
 
-## How to insert Image into PDF?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to insert Image into PDF?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 To insert an image into a PDF using Aspose.PDF for .NET, you can use the following code:
 
 ```csharp
@@ -125,8 +103,16 @@ using (Document pdfDoc = new Document("input.pdf"))
     pdfDoc.Save("output.pdf");
 }
 ```
+        </p>
+    </div>
 
-## How to edit the text in PDF?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to edit the text in PDF?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 To edit the text in a PDF using Aspose.PDF for .NET, you can follow these steps:
 
 ```csharp
@@ -159,8 +145,16 @@ using (Document pdfDoc = new Document("input.pdf"))
     pdfDoc.Save("output.pdf");
 }
 ```
+        </p>
+    </div>
 
-## How to add page numbers to PDF file?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to add page numbers to PDF file?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 To add page numbers to a PDF using Aspose.PDF for .NET, you can use the following code:
 
 ```csharp
@@ -189,8 +183,16 @@ using (Document pdfDoc = new Document())
     pdfDoc.Save("output.pdf");
 }
 ```
+        </p>
+    </div>
 
-## How to create a background for PDF Documents?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to create a background for PDF Documents?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 To create a background for a PDF document using Aspose.PDF for .NET, you can use the following code:
 
 ```csharp
@@ -212,8 +214,16 @@ using (Document pdfDoc = new Document("input.pdf"))
     pdfDoc.Save("output_with_image_background.pdf");
 }
 ```
+        </p>
+    </div>
 
-## How to secure PDF document?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to secure PDF document?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 To secure a PDF document using Aspose.PDF for .NET, you can apply password protection and set permissions. Here's an example:
 
 ```csharp
@@ -231,8 +241,16 @@ using (Document pdfDoc = new Document("input.pdf"))
 - Specify the permissions using the `Security.Permissions` property.
 
 With these password and permissions settings, the PDF document will be secured and users will need to provide the correct passwords to access and use the document.
+        </p>
+    </div>
 
-## How to add bold text in highlighted annotation on a PDF page?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to add bold text in highlighted annotation on a PDF page?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 To add bold text in a highlighted annotation:
 - Use the `TextAnnotation` class to create the highlight annotation.
 - Set the annotation’s `RichText` property with the HTML string that specifies the text style (e.g., `<b>` tag for bold).
@@ -259,8 +277,16 @@ using (Document pdfDoc = new Document("input.pdf"))
     pdfDoc.Save("output.pdf");
 }
 ```
+        </p>
+    </div>
 
-## How to use GoToRemoteAction and XYZExplicitDestination to create a hyperlink to another PDF file, inheriting the current document's zoom level?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to use GoToRemoteAction and XYZExplicitDestination to create a hyperlink to another PDF file, inheriting the current document's zoom level?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 To create a hyperlink to another PDF file that preserves the current zoom level:
 - Use `GoToRemoteAction` for linking to an external PDF.
 - Apply `XYZExplicitDestination` to inherit the zoom level from the current document.
@@ -283,8 +309,16 @@ using (Document pdfDoc = new Document("input.pdf"))
     pdfDoc.Save("output.pdf");
 }
 ```
+        </p>
+    </div>
 
-## How to validate a tagged PDF?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to validate a tagged PDF?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 - This method verifies compliance with PDF/UA standards.
 - Validation results are typically saved to a log file.
 
@@ -296,8 +330,16 @@ using (Document pdfDoc = new Document("tagged.pdf"))
     pdfDoc.Validate("validation-log.xml", PdfFormat.PDF_UA_1);
 }
 ```
+        </p>
+    </div>
 
-## How to implement regex search for TextFragmentAbsorber?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to implement regex search for TextFragmentAbsorber?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 To use regex with the `TextFragmentAbsorber` class in Aspose.PDF for .NET, you can follow this example:
 
 ```csharp
@@ -330,8 +372,16 @@ The key points are:
 - The pattern `@"\b\w+\b"` will match whole words.
 - Call the `Visit()` method to process the PDF document.
 - Access the extracted `TextFragments` objects from the `TextFragments` property.
+        </p>
+    </div>
 
-## How to make a valid PDF/A document unless the missing font or its substitution is provided?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+How to make a valid PDF/A document unless the missing font or its substitution is provided?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 To create a valid PDF/A document in Aspose.PDF for .NET, you need to ensure that all required fonts are embedded or substituted. Here's an example:
 
 - Use `Convert` to ensure the document meets PDF/A standards.
@@ -352,23 +402,58 @@ using (Document pdfDoc = new Document("input.pdf"))
     pdfDoc.Save("output-pdfa.pdf");
 }
 ```
+        </p>
+    </div>
 
-## I see errors in PDF/A conversion log. Does it mean that the document wasn't converted successfully?
-No, Aspose.PDF logs all problems it encountered, including the ones that were automatically fixed. If all entries in the log are marked as Convertable="True", it means that all problems were fixed, and the document was successfully converted. Only the entries with Convertable="False" indicate the conversion failure.
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+I see errors in PDF/A conversion log. Does it mean that the document wasn't converted successfully?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
+No, Aspose.PDF logs all problems it encountered, including the ones that were automatically fixed. If all entries in the log are marked as Convertable="True", it means that all problems were fixed, and the document was successfully converted. Only the entries with Convertable=False indicate the conversion failure.
+        </p>
+    </div>
 
-## Does Aspose.PDF for .NET support Linux?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+Does Aspose.PDF for .NET support Linux?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 Yes, Aspose.PDF for .NET supports running on Linux environments. You can use the .NET Core version or later, which is cross-platform and can be used on Windows, macOS, and Linux.
+        </p>
+    </div>
 
-## Does Aspose.PDF for .NET support .NET 2.0, 3.5, and 4.0 frameworks?
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+Does Aspose.PDF for .NET support .NET 2.0, 3.5, and 4.0 frameworks?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
 Aspose.PDF for .NET does not support the following .NET frameworks:
 
 - .NET 2.0
 - .NET 3.5
 
 But you can use Aspose.PDF for .NET with any of these frameworks in your project. The library provides a consistent API across the different .NET versions, making it easy to migrate your code between frameworks as needed.
+        </p>
+    </div>
 
-## Where are your .NET Examples?
-You can check all of them on [GitHub](https://github.com/aspose-pdf).
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+        <h3 itemprop="name" class="faq-q">
+Where are your .NET Examples?
+        </h3>
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text" class="faq-a">
+You can check all of them on <a itemprop="url" href="https://github.com/aspose-pdf">GitHub</a>.
+        </p>
+    </div>
+</div>
 
 <script type="application/ld+json">
 {
