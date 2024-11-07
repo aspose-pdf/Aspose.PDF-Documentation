@@ -7,7 +7,7 @@ url: /net/faq/
 description: Here you can find answers to Frequently Asked Questions for Aspose.PDF for .NET library.
 lastmod: "2021-06-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
