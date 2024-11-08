@@ -2,7 +2,7 @@
 title: 정렬 꽉 채우기 텍스트 정렬
 type: docs
 weight: 40
-url: ko/reportingservices/justify-fulljustify-text-alignment/
+url: /ko/reportingservices/justify-fulljustify-text-alignment/
 lastmod: "2021-06-05"
 ---
 

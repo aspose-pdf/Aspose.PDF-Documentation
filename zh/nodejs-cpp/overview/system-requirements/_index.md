@@ -3,7 +3,7 @@ title: Aspose.PDF for Node.js 的系统要求
 linktitle: 系统要求
 type: docs
 weight: 30
-url: zh/nodejs-cpp/system-requirements/
+url: /zh/nodejs-cpp/system-requirements/
 description: 本节列出了开发人员需要成功使用 Aspose.PDF for Node.js via C++ 的支持操作系统。
 lastmod: "2023-11-16"
 sitemap:

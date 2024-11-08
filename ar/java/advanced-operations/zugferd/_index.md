@@ -3,7 +3,7 @@ title: Working with ZUGFeRD
 linktitle: Working with ZUGFeRD
 type: docs
 weight: 90
-url: ar/java/working-with-zugferd/
+url: /ar/java/working-with-zugferd/
 description: تعلم كيفية إنشاء فواتير PDF متوافقة مع ZUGFeRD باستخدام Aspose.PDF for Java
 lastmod: "2024-01-17"
 sitemap:
@@ -26,9 +26,9 @@ ZUGFeRD هو معيار ألماني للفوترة الإلكترونية. إن
 
 كما يلبي المتطلبات القانونية للأرشفة طويلة الأمد والامتثال الضريبي. يحتوي ZUGFeRD على إصدارات وملفات تعريف مختلفة تتناسب مع الاحتياجات والسيناريوهات المختلفة. الإصدار الأحدث هو ZUGFeRD 2.0، الذي يتماشى مع المعيار الأوروبي EN 16931 للفوترة الإلكترونية. يوفر ZUGFeRD للمستخدمين العديد من الفوائد وتوفير التكاليف، مثل المعالجة الأسرع، وتقليل الأخطاء، وتحسين التدفق النقدي، وتقليل الأثر البيئي.
 
-* [إنشاء PDF متوافق مع PDF/3-A وإرفاق فاتورة ZUGFeRD في Java](/pdf/java/attach-zugferd/)
+* [إنشاء PDF متوافق مع PDF/3-A وإرفاق فاتورة ZUGFeRD في Java](/pdf/ar/java/attach-zugferd/)
 
 انظر أيضًا:
 
-* [إنشاء PDF متوافق مع PDF/3-A وإرفاق فاتورة ZUGFeRD في .NET](/pdf/net/attach-zugferd/)
-* [إنشاء PDF متوافق مع PDF/3-A وإرفاق فاتورة ZUGFeRD في Python](/pdf/python-net/attach-zugferd/)
+* [إنشاء PDF متوافق مع PDF/3-A وإرفاق فاتورة ZUGFeRD في .NET](/pdf/ar/net/attach-zugferd/)
+* [إنشاء PDF متوافق مع PDF/3-A وإرفاق فاتورة ZUGFeRD في Python](/pdf/ar/python-net/attach-zugferd/)

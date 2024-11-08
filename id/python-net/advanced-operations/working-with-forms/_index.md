@@ -3,7 +3,7 @@ title: Bekerja dengan Formulir menggunakan Python
 linktitle: Bekerja dengan Formulir
 type: docs
 weight: 60
-url: id/python-net/working-with-forms/
+url: /id/python-net/working-with-forms/
 description: Bagian ini menjelaskan cara bekerja dengan AcroForms dalam dokumen PDF dengan Aspose.PDF untuk Python via .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -81,4 +81,4 @@ Bagian ini menjelaskan pendekatan cepat dan sederhana untuk melengkapi dokumen P
 
 AcroForms memungkinkan pengguna untuk mengisi, mengirim, dan menyimpan formulir secara elektronik, menjadikannya cara yang nyaman dan efisien untuk mengumpulkan informasi.
 
-- [AcroForms](/pdf/python-net/acroforms/) - membuat formulir, mengisi bidang formulir, mengekstrak data dari formulir, menambahkan dan menghapus bidang dalam PDF Anda dengan pustaka Python.
+- [AcroForms](/pdf/id/python-net/acroforms/) - membuat formulir, mengisi bidang formulir, mengekstrak data dari formulir, menambahkan dan menghapus bidang dalam PDF Anda dengan pustaka Python.

@@ -2,7 +2,7 @@
 title: 파이썬에서 페이지 크기 업데이트
 type: docs
 weight: 90
-url: ko/java/update-page-dimensions-in-python/
+url: /ko/java/update-page-dimensions-in-python/
 lastmod: "2021-06-05"
 ---
 

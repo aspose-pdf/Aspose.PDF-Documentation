@@ -3,7 +3,7 @@ title: PDF 파일에 텍스트 추가
 linktitle: PDF 파일에 텍스트 추가
 type: docs
 weight: 10
-url: ko/php-java/add-text-to-pdf-file/
+url: /ko/php-java/add-text-to-pdf-file/
 description: 이 문서는 Aspose.PDF에서 텍스트 작업의 다양한 측면을 설명합니다. PDF에 텍스트를 추가하거나 HTML 조각을 추가하거나 사용자 지정 OTF 글꼴을 사용하는 방법을 알아보십시오.
 lastmod: "2024-06-05"
 sitemap:

@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for Python via C++
 second_title: Aspose.PDF for Python via C++
 type: docs
 weight: 50
-url: ja/python-cpp/
+url: /ja/python-cpp/
 is_root: true
 lastmod: "2024-04-24"
 description: Aspose.PDF Python via C++を使用して、任意のプラットフォームでPDFドキュメントを処理するアプリケーションをPythonで作成する方法を学びます。チュートリアル、サンプルコードなどをご覧ください。
@@ -29,15 +29,15 @@ Aspose.PDF for Python via C++は、PDFドキュメントを操作するための
 
 ## 章
 
-- [ドキュメントの変換](/pdf/python-cpp/converting/)
-- [高度な操作](/pdf/python-cpp/advanced-operations/)
+- [ドキュメントの変換](/pdf/ja/python-cpp/converting/)
+- [高度な操作](/pdf/ja/python-cpp/advanced-operations/)
 - [リリースノート](https://releases.aspose.com/pdf/pythoncpp/)
 
 ## C++経由でのPython用Aspose.PDFリソース
 
 以下は、タスクを達成するために必要になるかもしれないいくつかの便利なリソースへのリンクです。
 
-- [C++経由でのPython用Aspose.PDFの機能](/pdf/python-cpp/key-features/)
+- [C++経由でのPython用Aspose.PDFの機能](/pdf/ja/python-cpp/key-features/)
 - [C++経由でのPython用Aspose.PDFリリースノート](https://releases.aspose.com/pdf/pythoncpp/)
 - [C++経由でのPython用Aspose.PDF製品ページ](https://products.aspose.com/pdf/python-cpp/)
 - [C++経由でのPython用Aspose.PDFのダウンロード](https://releases.aspose.com/pdf/pythoncpp/)

@@ -2,7 +2,7 @@
 title: Mengatur Parameter
 type: docs
 weight: 10
-url: id/reportingservices/setting-parameters/
+url: /id/reportingservices/setting-parameters/
 lastmod: "2021-06-05"
 ---
 

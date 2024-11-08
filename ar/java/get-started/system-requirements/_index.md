@@ -3,7 +3,7 @@ title: متطلبات النظام
 linktitle: متطلبات النظام
 type: docs
 weight: 30
-url: ar/java/system-requirements/
+url: /ar/java/system-requirements/
 description: تسرد هذه القسم أنظمة التشغيل المدعومة التي يحتاجها المطور للعمل بنجاح مع Aspose.PDF لـ Java.
 lastmod: "2021-06-05"
 sitemap:

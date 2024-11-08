@@ -3,7 +3,7 @@ title: 使用 Python 和 Aspose.PDF 进行盖章
 linktitle: 盖章
 type: docs
 weight: 120
-url: zh/python-net/stamping/
+url: /zh/python-net/stamping/
 description: 本节介绍如何通过 Python 向 PDF 页面添加图像印章和文本印章。
 lastmod: "2023-04-17"
 sitemap:
@@ -82,5 +82,5 @@ PDF 文件中的印章提供了 PDF 文件的附加信息，例如保护 PDF 文
 
 查看以下部分以了解如何使用 Python 添加印章：
 
-- [在 PDF 页面中添加图像印章](/pdf/python-net/image-stamps-in-pdf-page/) - 添加图像印章，控制图像质量，将图像印章作为 PDF 文件的背景。
-- [在 PDF 文件中添加文字印章](/pdf/python-net/text-stamps-in-the-pdf-file/) - 添加文字印章，为 TextStamp 对象定义对齐方式，在 PDF 文件中填充描边文字作为印章。
+- [在 PDF 页面中添加图像印章](/pdf/zh/python-net/image-stamps-in-pdf-page/) - 添加图像印章，控制图像质量，将图像印章作为 PDF 文件的背景。
+- [在 PDF 文件中添加文字印章](/pdf/zh/python-net/text-stamps-in-the-pdf-file/) - 添加文字印章，为 TextStamp 对象定义对齐方式，在 PDF 文件中填充描边文字作为印章。

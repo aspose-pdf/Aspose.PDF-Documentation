@@ -3,7 +3,7 @@ title: Apa yang baru
 linktitle: Apa yang baru
 type: docs
 weight: 10
-url: id/python-net/whatsnew/
+url: /id/python-net/whatsnew/
 description: Halaman ini memperkenalkan fitur baru paling populer di Aspose.PDF untuk Python via .NET yang telah diperkenalkan dalam rilis terbaru.
 sitemap:
     changefreq: "monthly"

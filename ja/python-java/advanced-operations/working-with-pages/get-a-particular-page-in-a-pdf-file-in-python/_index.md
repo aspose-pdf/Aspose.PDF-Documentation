@@ -2,7 +2,7 @@
 title: PythonでPDFファイルの特定のページを取得する
 type: docs
 weight: 30
-url: ja/python-java/get-a-particular-page-in-a-pdf-file-in-python/
+url: /ja/python-java/get-a-particular-page-in-a-pdf-file-in-python/
 ---
 
 **Aspose.PDF Java for Python**を使用してPDFドキュメントの特定のページを取得するには、単に**GetPage**クラスを呼び出します。

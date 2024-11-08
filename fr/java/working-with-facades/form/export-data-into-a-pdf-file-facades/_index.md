@@ -2,7 +2,7 @@
 title: Exporter des Données vers XML à partir d'un Fichier PDF (Façades)
 type: docs
 weight: 20
-url: fr/java/export-data-into-a-pdf-file-facades/
+url: /fr/java/export-data-into-a-pdf-file-facades/
 description: Cette section explique comment exporter des Données vers XML à partir d'un Fichier PDF avec Aspose.PDF Facades en utilisant la classe Form.
 lastmod: "2021-06-05"
 sitemap:

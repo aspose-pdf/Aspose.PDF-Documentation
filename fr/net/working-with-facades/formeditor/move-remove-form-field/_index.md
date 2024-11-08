@@ -2,7 +2,7 @@
 title: Déplacer et Supprimer un Champ de Formulaire
 type: docs
 weight: 50
-url: fr/net/move-remove-form-field/
+url: /fr/net/move-remove-form-field/
 description: Cette section explique comment vous pouvez déplacer et supprimer des Champs de Formulaire avec la Classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

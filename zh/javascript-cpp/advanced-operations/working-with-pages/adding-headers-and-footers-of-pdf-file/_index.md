@@ -3,7 +3,7 @@ title: 通过 C++ 使用 JavaScript 向 PDF 添加页眉和页脚
 linktitle: 向 PDF 添加页眉和页脚
 type: docs
 weight: 70
-url: zh/javascript-cpp/add-headers-and-footers-of-pdf-file/
+url: /zh/javascript-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for JavaScript via C++ 允许您使用 AsposePdfAddTextHeaderFooter 向 PDF 文件添加页眉和页脚。
 lastmod: "2023-02-17"
 sitemap:

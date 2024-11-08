@@ -3,7 +3,7 @@ title: Работа с вложениями в PDF с использование
 linktitle: Работа с вложениями
 type: docs
 weight: 130
-url: ru/python-net/attachments/
+url: /ru/python-net/attachments/
 description: Используйте Python PDF API для доступа, добавления и удаления вложений в PDF-файлах с использованием Python в ваших приложениях. Полное руководство с примерами кода на Python.
 lastmod: "2023-02-17"
 sitemap:
@@ -84,9 +84,9 @@ An attachment is an additional file that is attached to a parent document, it ca
 You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with Python.  
 Вы узнаете, как добавлять вложения в pdf, получать информацию о вложении и сохранять его в файл, удалять вложение из PDF программно с помощью Python.  
 
-- [Adding attachment to a PDF document](/pdf/python-net/add-attachment-to-pdf-document/)  
-- [Removing attachment from an existing PDF](/pdf/python-net/removing-attachment-from-an-existing-pdf/)  
-- [Portfolio](/pdf/python-net/portfolio/)  
+- [Adding attachment to a PDF document](/pdf/ru/python-net/add-attachment-to-pdf-document/)  
+- [Removing attachment from an existing PDF](/pdf/ru/python-net/removing-attachment-from-an-existing-pdf/)  
+- [Portfolio](/pdf/ru/python-net/portfolio/)  
 
 <script type="application/ld+json">
 {

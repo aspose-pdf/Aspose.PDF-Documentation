@@ -3,7 +3,7 @@ title: Características Clave de Aspose.PDF para JavaScript
 linktitle: Características Clave
 type: docs
 weight: 20
-url: es/javascript-cpp/key-features/
+url: /es/javascript-cpp/key-features/
 description: Aspose.PDF para JavaScript a través de C++ demuestra sus características generales. Esta página describe las versiones de PDF compatibles y todas las manipulaciones que podemos hacer con texto, imágenes, páginas, etc.
 lastmod: "2022-12-13"
 sitemap:

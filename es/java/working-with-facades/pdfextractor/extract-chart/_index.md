@@ -2,7 +2,7 @@
 title: Extraer objetos de gráfico del documento PDF (facades)
 type: docs
 weight: 20
-url: es/java/extract-chart-objects/
+url: /es/java/extract-chart-objects/
 description: Esta sección explica cómo extraer objetos de gráfico de un PDF con Aspose.PDF Facades usando la clase PdfExtractor.
 lastmod: "2021-06-05"
 sitemap:

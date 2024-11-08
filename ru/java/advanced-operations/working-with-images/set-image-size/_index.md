@@ -3,7 +3,7 @@ title: Установить Размер Изображения
 linktitle: Установить Размер Изображения
 type: docs
 weight: 80
-url: ru/java/set-image-size/
+url: /ru/java/set-image-size/
 description: Этот раздел описывает, как установить размер изображения в PDF файле, используя библиотеку Java.
 lastmod: "2021-06-05"
 ---

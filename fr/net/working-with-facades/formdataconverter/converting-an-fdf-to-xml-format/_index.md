@@ -2,7 +2,7 @@
 title: Conversion d'un FDF en format XML
 type: docs
 weight: 10
-url: fr/net/converting-an-fdf-to-xml-format/
+url: /fr/net/converting-an-fdf-to-xml-format/
 description: Cette section explique comment vous pouvez convertir un FDF en format XML avec la classe FormDataConverter.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Le namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/net/) supporte très bien les AcroForms. Il supporte également l'importation et l'exportation des données de formulaire vers différents formats de fichiers comme FDF, XFDF et XML. Cependant, parfois, les développeurs peuvent avoir besoin de convertir un format en un autre. Cet article examine la fonctionnalité qui convertit FDF en XML.
+Le namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/fr/net/) supporte très bien les AcroForms. Il supporte également l'importation et l'exportation des données de formulaire vers différents formats de fichiers comme FDF, XFDF et XML. Cependant, parfois, les développeurs peuvent avoir besoin de convertir un format en un autre. Cet article examine la fonctionnalité qui convertit FDF en XML.
 
 {{% /alert %}}
 

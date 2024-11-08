@@ -2,7 +2,7 @@
 title: 从印章中提取文本
 type: docs
 weight: 60
-url: zh/php-java/extract-text-from-stamps/
+url: /zh/php-java/extract-text-from-stamps/
 ---
 
 ## 从印章注释中提取文本

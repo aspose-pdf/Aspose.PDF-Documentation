@@ -3,7 +3,7 @@ title: Comenzar
 linktitle: Comenzar
 type: docs
 weight: 30
-url: es/nodejs-cpp/get-started/
+url: /es/nodejs-cpp/get-started/
 description: Esta sección describe los principios básicos de trabajo de Aspose.PDF para Node.js a través de C++. Aspose.PDF para Node.js a través de C++ soporta una amplia variedad de funciones.
 lastmod: "2023-11-16"   
 sitemap:
@@ -27,31 +27,31 @@ Usar Aspose.PDF para Node.js en tu proyecto te ofrece los siguientes beneficios:
 
 ## Amplia variedad de funciones
 
-- [Extraer texto de PDF](/pdf/nodejs-cpp/extract-text/)
-- [Optimizar documento PDF](/pdf/nodejs-cpp/optimize-pdf/)
-- [Agregar un sello al archivo PDF](/pdf/nodejs-cpp/add-stamp-to-pdf/)
-- [Agregar una imagen al archivo PDF](/pdf/nodejs-cpp/add-image-to-pdf/)
-- [Dividir PDF en dos archivos](/pdf/nodejs-cpp/split-pdf/)
-- [Combinar dos archivos a PDF](/pdf/nodejs-cpp/merge-pdf/)
-- [Encriptar documentos PDF](/pdf/nodejs-cpp/encrypt-pdf/)
-- [Desencriptar documentos PDF](/pdf/nodejs-cpp/decrypt-pdf/)
+- [Extraer texto de PDF](/pdf/es/nodejs-cpp/extract-text/)
+- [Optimizar documento PDF](/pdf/es/nodejs-cpp/optimize-pdf/)
+- [Agregar un sello al archivo PDF](/pdf/es/nodejs-cpp/add-stamp-to-pdf/)
+- [Agregar una imagen al archivo PDF](/pdf/es/nodejs-cpp/add-image-to-pdf/)
+- [Dividir PDF en dos archivos](/pdf/es/nodejs-cpp/split-pdf/)
+- [Combinar dos archivos a PDF](/pdf/es/nodejs-cpp/merge-pdf/)
+- [Encriptar documentos PDF](/pdf/es/nodejs-cpp/encrypt-pdf/)
+- [Desencriptar documentos PDF](/pdf/es/nodejs-cpp/decrypt-pdf/)
 
 ## Funciones de Conversión
 
-- [Convertir PDF a JPEG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convertir PDF a PNG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convertir un PDF a TIFF](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convertir un PDF a BMP](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convertir un PDF a SVG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
+- [Convertir PDF a JPEG](/pdf/es/nodejs-cpp/convert-pdf-to-images-format/)
+- [Convertir PDF a PNG](/pdf/es/nodejs-cpp/convert-pdf-to-images-format/)
+- [Convertir un PDF a TIFF](/pdf/es/nodejs-cpp/convert-pdf-to-images-format/)
+- [Convertir un PDF a BMP](/pdf/es/nodejs-cpp/convert-pdf-to-images-format/)
+- [Convertir un PDF a SVG](/pdf/es/nodejs-cpp/convert-pdf-to-images-format/)
 
-- [Convertir un PDF a SVG(Zip)](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convertir un PDF a TeX](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Convertir un PDF a XPS](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Convertir un PDF a CSV](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [Convertir un PDF a TXT](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Convertir PDF a Word](/pdf/nodejs-cpp/convert-pdf-to-doc/)
-- [Convertir un PDF a XLSX](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [Convertir PDF a PDF en escala de grises](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Convertir PDF a Microsoft PowerPoint](/pdf/nodejs-cpp/convert-pdf-to-powerpoint/)
-- [Convertir PDF/A a formato PDF](/pdf/nodejs-cpp/convert-pdfa-to-pdf/)
-- [Convertir PDF a formato PDF/A](/pdf/nodejs-cpp/convert-pdf-to-pdfa/)
+- [Convertir un PDF a SVG(Zip)](/pdf/es/nodejs-cpp/convert-pdf-to-images-format/)
+- [Convertir un PDF a TeX](/pdf/es/nodejs-cpp/convert-pdf-to-other-files/)
+- [Convertir un PDF a XPS](/pdf/es/nodejs-cpp/convert-pdf-to-other-files/)
+- [Convertir un PDF a CSV](/pdf/es/nodejs-cpp/convert-pdf-to-xlsx/)
+- [Convertir un PDF a TXT](/pdf/es/nodejs-cpp/convert-pdf-to-other-files/)
+- [Convertir PDF a Word](/pdf/es/nodejs-cpp/convert-pdf-to-doc/)
+- [Convertir un PDF a XLSX](/pdf/es/nodejs-cpp/convert-pdf-to-xlsx/)
+- [Convertir PDF a PDF en escala de grises](/pdf/es/nodejs-cpp/convert-pdf-to-other-files/)
+- [Convertir PDF a Microsoft PowerPoint](/pdf/es/nodejs-cpp/convert-pdf-to-powerpoint/)
+- [Convertir PDF/A a formato PDF](/pdf/es/nodejs-cpp/convert-pdfa-to-pdf/)
+- [Convertir PDF a formato PDF/A](/pdf/es/nodejs-cpp/convert-pdf-to-pdfa/)

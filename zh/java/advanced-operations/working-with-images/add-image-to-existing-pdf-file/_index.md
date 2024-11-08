@@ -3,7 +3,7 @@ title: 将图像添加到现有PDF文件
 linktitle: 添加图像
 type: docs
 weight: 10
-url: zh/java/add-image-to-existing-pdf-file/
+url: /zh/java/add-image-to-existing-pdf-file/
 description: 本节介绍如何使用Java库将图像添加到现有PDF文件。
 lastmod: "2021-06-05"
 ---

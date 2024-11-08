@@ -2,7 +2,7 @@
 title: Импорт и экспорт данных
 type: docs
 weight: 70
-url: ru/net/import-and-export-data/
+url: /ru/net/import-and-export-data/
 description: Этот раздел объясняет, как импортировать и экспортировать данные с помощью Aspose.PDF Facades, используя класс Form.
 lastmod: "2024-06-05"
 draft: false

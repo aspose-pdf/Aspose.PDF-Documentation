@@ -2,7 +2,7 @@
 title: 使用 PdfContentEditor 处理图像
 type: docs
 weight: 50
-url: zh/net/working-with-images-in-pdf
+url: /zh/net/working-with-images-in-pdf
 description: 本节介绍如何使用 Aspose.PDF Facades 和 PdfContentEditor 类添加和删除图像。
 lastmod: "2021-06-24"
 ---

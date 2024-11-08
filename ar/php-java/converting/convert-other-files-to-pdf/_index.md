@@ -3,7 +3,7 @@ title: تحويل صيغ الملفات المختلفة إلى PDF
 linktitle: تحويل صيغ الملفات الأخرى إلى PDF
 type: docs
 weight: 80
-url: ar/php-java/convert-other-files-to-pdf/
+url: /ar/php-java/convert-other-files-to-pdf/
 lastmod: "2024-05-20"
 description: يوضح لك هذا الموضوع كيف يسمح لك Aspose.PDF بتحويل صيغ الملفات الأخرى إلى مستند PDF.
 sitemap:

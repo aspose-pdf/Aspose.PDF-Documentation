@@ -3,7 +3,7 @@ title: PythonでPDFページを操作する
 linktitle: ページの操作
 type: docs
 weight: 20
-url: ja/python-net/working-with-pages/
+url: /ja/python-net/working-with-pages/
 description: ページを追加したり、ヘッダーとフッターを追加したり、ウォーターマークを追加したりする方法をこのセクションで知ることができます。Aspose.PDF for Python via .NETがこのトピックに関するすべての詳細を説明します。
 lastmod: "2023-04-19"
 sitemap:
@@ -84,20 +84,20 @@ sitemap:
 
 You are able to do the following:
 
-- [ページを追加する](/pdf/python-net/add-pages/) - PDFファイルの任意の場所または末尾にページを追加し、ドキュメントからページを削除します。
-- [ページを移動する](/pdf/python-net/move-pages/) - ページを他のドキュメントに移動します。
-- [ページを削除する](/pdf/python-net/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
-- [ページサイズを変更する](/pdf/python-net/change-page-size/) - Aspose.PDFライブラリを使用してコードスニペットでPDFページのサイズを変更できます。
-- [ページを回転する](/pdf/python-net/rotate-pages/) - 既存のPDFファイルのページの向きを変更できます。
-- [ページを分割する](/pdf/python-net/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
-- [ヘッダーやフッターを追加する](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
-- [ページをトリミングする](/pdf/python-net/crop-pages/) - 異なるページプロパティを使用して、プログラムでPDFドキュメントのページをトリミングできます。
+- [ページを追加する](/pdf/ja/python-net/add-pages/) - PDFファイルの任意の場所または末尾にページを追加し、ドキュメントからページを削除します。
+- [ページを移動する](/pdf/ja/python-net/move-pages/) - ページを他のドキュメントに移動します。
+- [ページを削除する](/pdf/ja/python-net/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
+- [ページサイズを変更する](/pdf/ja/python-net/change-page-size/) - Aspose.PDFライブラリを使用してコードスニペットでPDFページのサイズを変更できます。
+- [ページを回転する](/pdf/ja/python-net/rotate-pages/) - 既存のPDFファイルのページの向きを変更できます。
+- [ページを分割する](/pdf/ja/python-net/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
+- [ヘッダーやフッターを追加する](/pdf/ja/python-net/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
+- [ページをトリミングする](/pdf/ja/python-net/crop-pages/) - 異なるページプロパティを使用して、プログラムでPDFドキュメントのページをトリミングできます。
 
-- [透かしを追加する](/pdf/python-net/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
-- [PDFファイルにページ番号を追加する](/pdf/python-net/add-page-number/) - PageNumberStampクラスはPDFファイルにページ番号を追加するのに役立ちます。
-- [背景を追加する](/pdf/python-net/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
-- [スタンプ](/pdf/python-net/stamping/) - ImageStampクラスを使用して、PDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
-- [ページプロパティの取得と設定](/pdf/python-net/get-and-set-page-properties/) - このセクションでは、PDFファイルのページ数を取得したり、色などのPDFページプロパティの情報を取得したり、ページプロパティを設定したりする方法を示します。
+- [透かしを追加する](/pdf/ja/python-net/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
+- [PDFファイルにページ番号を追加する](/pdf/ja/python-net/add-page-number/) - PageNumberStampクラスはPDFファイルにページ番号を追加するのに役立ちます。
+- [背景を追加する](/pdf/ja/python-net/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
+- [スタンプ](/pdf/ja/python-net/stamping/) - ImageStampクラスを使用して、PDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
+- [ページプロパティの取得と設定](/pdf/ja/python-net/get-and-set-page-properties/) - このセクションでは、PDFファイルのページ数を取得したり、色などのPDFページプロパティの情報を取得したり、ページプロパティを設定したりする方法を示します。
 
 <script type="application/ld+json">
 {

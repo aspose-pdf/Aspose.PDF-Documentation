@@ -3,7 +3,7 @@ title: 获取、更新和展开书签使用Python
 linktitle: 获取、更新和展开书签
 type: docs
 weight: 20
-url: zh/python-net/get-update-and-expand-bookmark/
+url: /zh/python-net/get-update-and-expand-bookmark/
 description: 本文描述了如何使用我们的Aspose.PDF for Python库在PDF文件中使用书签。
 lastmod: "2023-02-17"
 sitemap:

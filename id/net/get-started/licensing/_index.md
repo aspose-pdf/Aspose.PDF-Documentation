@@ -3,7 +3,7 @@ title: Lisensi Aspose PDF
 linktitle: Lisensi dan Batasan
 type: docs
 weight: 90
-url: id/net/licensing/
+url: /id/net/licensing/
 description: Aspose. PDF untuk .NET mengundang pelanggannya untuk mendapatkan lisensi Klasik dan Lisensi Metered. Serta menggunakan lisensi terbatas untuk lebih menjelajahi produk.
 lastmod: "2021-06-05"
 sitemap:

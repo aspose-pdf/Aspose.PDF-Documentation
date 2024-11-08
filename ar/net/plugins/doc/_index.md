@@ -2,7 +2,7 @@
 title: DOC Converter
 type: docs
 weight: 10
-url: ar/net/plugins/doc/
+url: /ar/net/plugins/doc/
 description: تحويل PDF إلى Word بسهولة باستخدام إضافة PdfDoc
 lastmod: "2024-01-24"
 ---

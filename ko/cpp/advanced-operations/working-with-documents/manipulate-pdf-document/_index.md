@@ -3,7 +3,7 @@ title: PDF 문서 조작
 linktitle: PDF 문서 조작
 type: docs
 weight: 30
-url: ko/cpp/manipulate-pdf-document/
+url: /ko/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: 이 섹션에서는 PDF A 표준에 대한 PDF 문서 검증, TOC 작업 방법, PDF 만료 날짜 설정 방법 및 PDF 파일 생성 진행 상태를 결정하는 방법에 대해 설명합니다.
 lastmod: "2021-11-11"

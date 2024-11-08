@@ -4,7 +4,7 @@ title: PDFをXPSプリンターに印刷する
 linktitle: PDFをXPSプリンターに印刷する（ファサード）
 type: docs
 weight: 20
-url: ja/net/printing-pdf-to-an-xps-printer-facades/
+url: /ja/net/printing-pdf-to-an-xps-printer-facades/
 keywords: "print pdf to xps, print pdf to xps c#"
 description: このページでは、PdfViewerクラスを使用してPDFをXPSプリンターに印刷する方法を示しています。
 lastmod: "2022-02-17"
@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 ```
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## **C#でPDFをXPSプリンタに印刷する**
 

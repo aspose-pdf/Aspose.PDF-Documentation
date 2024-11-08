@@ -3,7 +3,7 @@ title: Requisitos do Sistema do Aspose.PDF para Node.js
 linktitle: Requisitos do Sistema
 type: docs
 weight: 30
-url: pt/nodejs-cpp/system-requirements/
+url: /pt/nodejs-cpp/system-requirements/
 description: Esta seção lista os sistemas operacionais suportados que um desenvolvedor precisa para trabalhar com sucesso com o Aspose.PDF para Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

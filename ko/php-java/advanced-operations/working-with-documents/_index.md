@@ -3,7 +3,7 @@ title: PDF 문서 작업
 linktitle: 문서 작업
 type: docs
 weight: 10
-url: ko/php-java/working-with-documents/
+url: /ko/php-java/working-with-documents/
 lastmod: "2024-06-05"
 description: 이 기사는 Aspose.PDF for PHP via Java를 사용하여 문서로 수행할 수 있는 조작에 대해 설명합니다.
 sitemap:
@@ -21,9 +21,9 @@ PDF 문서의 주요 목적은 문서의 내용과 레이아웃을 보존하고 
 
 You are able to do the following:
 
-- [PDF 문서 형식화](/pdf/php-java/formatting-pdf-document/) - 문서 속성 가져오기 및 설정, 글꼴 포함 및 기타 PDF 파일 작업.
-- [PDF 문서 조작](/pdf/php-java/manipulate-pdf-document/) - PDF A 표준에 대한 PDF 문서 검증, 목차 작업, PDF 만료 날짜 설정 등.
-- [PDF 최적화](/pdf/php-java/optimize-pdf/) - 페이지 내용 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 성공적인 문서 최적화를 위한 모든 이미지 압축.
-- [PDF 병합](/pdf/php-java/merge-pdf-documents/) - 여러 PDF 파일을 PHP를 사용하여 단일 PDF 문서로 병합.
-- [PDF 분할](/pdf/php-java/split-document/) - Java 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할.
-- [제목 작업](/pdf/php-java/working-with-headings/) - Java로 PDF 문서의 제목에 번호 매기기를 생성할 수 있습니다.
+- [PDF 문서 형식화](/pdf/ko/php-java/formatting-pdf-document/) - 문서 속성 가져오기 및 설정, 글꼴 포함 및 기타 PDF 파일 작업.
+- [PDF 문서 조작](/pdf/ko/php-java/manipulate-pdf-document/) - PDF A 표준에 대한 PDF 문서 검증, 목차 작업, PDF 만료 날짜 설정 등.
+- [PDF 최적화](/pdf/ko/php-java/optimize-pdf/) - 페이지 내용 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 성공적인 문서 최적화를 위한 모든 이미지 압축.
+- [PDF 병합](/pdf/ko/php-java/merge-pdf-documents/) - 여러 PDF 파일을 PHP를 사용하여 단일 PDF 문서로 병합.
+- [PDF 분할](/pdf/ko/php-java/split-document/) - Java 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할.
+- [제목 작업](/pdf/ko/php-java/working-with-headings/) - Java로 PDF 문서의 제목에 번호 매기기를 생성할 수 있습니다.

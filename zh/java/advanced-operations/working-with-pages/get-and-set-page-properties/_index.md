@@ -2,7 +2,7 @@
 title: 获取和设置页面属性
 type: docs
 weight: 30
-url: zh/java/get-and-set-page-properties/
+url: /zh/java/get-and-set-page-properties/
 description: 本主题解释如何在PDF文件中获取页码、获取页面属性以及使用Aspose.PDF for Java确定页面颜色。
 lastmod: "2021-06-05"
 ---

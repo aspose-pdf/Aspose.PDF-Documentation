@@ -2,7 +2,7 @@
 title: Объединение документов PDF
 type: docs
 weight: 10
-url: ru/java/concatenate-pdf-documents/
+url: /ru/java/concatenate-pdf-documents/
 description: Этот раздел объясняет, как объединять PDF-документы с использованием com.aspose.pdf.facades и класса PdfFileEditor.
 lastmod: "2021-06-05"
 sitemap:

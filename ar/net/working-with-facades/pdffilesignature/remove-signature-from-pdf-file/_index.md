@@ -2,7 +2,7 @@
 title: إزالة التوقيع من ملف PDF
 type: docs
 weight: 20
-url: ar/net/remove-signature-from-pdf/
+url: /ar/net/remove-signature-from-pdf/
 description: يوضح هذا القسم كيفية إزالة التوقيع من ملف PDF باستخدام فئة PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

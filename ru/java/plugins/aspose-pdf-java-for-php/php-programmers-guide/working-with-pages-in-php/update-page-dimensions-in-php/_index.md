@@ -2,7 +2,7 @@
 title: Обновление размеров страницы в PHP
 type: docs
 weight: 90
-url: ru/java/update-page-dimensions-in-php/
+url: /ru/java/update-page-dimensions-in-php/
 lastmod: "2021-06-05"
 ---
 

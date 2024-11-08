@@ -3,7 +3,7 @@ title: إضافة وحذف إشارة مرجعية باستخدام Python
 linktitle: إضافة وحذف إشارة مرجعية
 type: docs
 weight: 10
-url: ar/python-net/add-and-delete-bookmark/
+url: /ar/python-net/add-and-delete-bookmark/
 description: يمكنك إضافة إشارة مرجعية إلى مستند PDF باستخدام Python. من الممكن حذف جميع الإشارات المرجعية أو إشارات مرجعية معينة من مستند PDF.
 lastmod: "2023-02-17"
 sitemap:

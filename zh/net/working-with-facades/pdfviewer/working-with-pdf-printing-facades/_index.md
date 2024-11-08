@@ -2,7 +2,7 @@
 title: 使用 PDF 打印 - 门面
 type: docs
 weight: 10
-url: zh/net/working-with-pdf-printing-facades/
+url: /zh/net/working-with-pdf-printing-facades/
 description: 本节介绍如何使用 Aspose.PDF Facades 的 PdfFileEditor 类打印 PDF 文件。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: 줄 바꿈 결정
 linktitle: 줄 바꿈 결정
 type: docs
 weight: 70
-url: ko/java/determine-line-break/
+url: /ko/java/determine-line-break/
 description: Java를 사용하여 다중 라인 TextFragment의 줄 바꿈을 결정하는 방법에 대해 알아보세요
 lastmod: "2021-06-05"
 sitemap:

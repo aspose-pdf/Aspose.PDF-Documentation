@@ -3,7 +3,7 @@ title: تنسيق النص داخل PDF
 linktitle: تنسيق النص داخل PDF
 type: docs
 weight: 30
-url: ar/java/text-formatting-inside-pdf/
+url: /ar/java/text-formatting-inside-pdf/
 description: توضح هذه الصفحة كيفية تنسيق النص داخل ملف PDF الخاص بك. هناك إضافة مسافة بادئة للسطر، إضافة حدود للنص، إضافة نص مسطر، إضافة إطار حول النص المضاف، محاذاة النص لمحتويات الصندوق العائم إلخ.
 lastmod: "2021-06-05"
 sitemap:

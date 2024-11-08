@@ -2,7 +2,7 @@
 title: تحويل PDF إلى تنسيق DOC أو DOCX في بايثون
 type: docs
 weight: 10
-url: ar/java/convert-pdf-to-doc-or-docx-format-in-python/
+url: /ar/java/convert-pdf-to-doc-or-docx-format-in-python/
 lastmod: "2021-06-05"
 ---
 

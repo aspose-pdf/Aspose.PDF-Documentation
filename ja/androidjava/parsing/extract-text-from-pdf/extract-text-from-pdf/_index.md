@@ -3,7 +3,7 @@ title: PDFファイルから生のテキストを抽出
 linktitle: PDFからテキストを抽出
 type: docs
 weight: 10
-url: ja/androidjava/extract-text-from-all-pdf/
+url: /ja/androidjava/extract-text-from-all-pdf/
 description: この記事では、Java経由でAndroid向けにAspose.PDFを使用してPDFドキュメントからテキストを抽出するさまざまな方法を説明します。全ページから、一部から、列に基づいて、など。
 lastmod: "2021-06-05"
 sitemap:

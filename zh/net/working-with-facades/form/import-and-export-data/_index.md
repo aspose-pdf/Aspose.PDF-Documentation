@@ -2,7 +2,7 @@
 title: 导入和导出数据
 type: docs
 weight: 70
-url: zh/net/import-and-export-data/
+url: /zh/net/import-and-export-data/
 description: 本节介绍如何使用 Form 类通过 Aspose.PDF Facades 导入和导出数据。
 lastmod: "2024-06-05"
 draft: false

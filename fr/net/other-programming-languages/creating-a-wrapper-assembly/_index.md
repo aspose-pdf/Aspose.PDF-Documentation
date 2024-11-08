@@ -2,7 +2,7 @@
 title: Création d'un Assembly de Contournement
 type: docs
 weight: 80
-url: fr/net/creating-a-wrapper-assembly/
+url: /fr/net/creating-a-wrapper-assembly/
 ---
 
 {{% alert color="primary" %}}

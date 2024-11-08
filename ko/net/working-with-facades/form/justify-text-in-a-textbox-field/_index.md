@@ -2,7 +2,7 @@
 title: 텍스트 상자 필드에서 텍스트 양쪽 맞춤
 type: docs
 weight: 20
-url: ko/net/justify-text-in-a-textbox-field/
+url: /ko/net/justify-text-in-a-textbox-field/
 description: 이 기사는 Form Class를 사용하여 텍스트 상자 필드에서 텍스트를 양쪽 맞춤하는 방법을 보여줍니다.
 lastmod: "2021-06-05"
 draft: false

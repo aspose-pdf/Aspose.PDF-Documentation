@@ -2,7 +2,7 @@
 title: Установка на сервер отчетов
 type: docs
 weight: 10
-url: ru/reportingservices/install-to-report-server/
+url: /ru/reportingservices/install-to-report-server/
 lastmod: "2021-06-05"
 ---
 

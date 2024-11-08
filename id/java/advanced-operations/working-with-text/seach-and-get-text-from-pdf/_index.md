@@ -3,7 +3,7 @@ title: Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF
 linktitle: Mencari dan Mendapatkan Teks
 type: docs
 weight: 60
-url: id/java/search-and-get-text-from-pdf/
+url: /id/java/search-and-get-text-from-pdf/
 description: Artikel ini menjelaskan cara menggunakan berbagai alat untuk mencari dan mendapatkan teks dari dokumen PDF. Kita dapat mencari dengan ekspresi reguler dari halaman tertentu atau seluruh halaman.
 lastmod: "2021-06-05"
 sitemap:

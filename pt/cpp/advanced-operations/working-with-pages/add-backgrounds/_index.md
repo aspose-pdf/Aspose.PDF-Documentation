@@ -3,7 +3,7 @@ title: Adicionar fundo ao PDF com C++
 linktitle: Adicionar fundos
 type: docs
 weight: 110
-url: pt/cpp/add-backgrounds/
+url: /pt/cpp/add-backgrounds/
 descriptions: Adicione imagem de fundo ao seu arquivo PDF com C++. Use o objeto BackgroundArtifact.
 lastmod: "2021-12-03"
 sitemap:

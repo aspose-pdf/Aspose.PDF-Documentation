@@ -3,7 +3,7 @@ title: 시작하기
 linktitle: 시작하기
 type: docs
 weight: 30
-url: ko/python-cpp/get-started/
+url: /ko/python-cpp/get-started/
 description: 이 페이지는 Aspose.PDF for Python via C++를 사용하여 PDF 문서를 생성하고 편집하는 방법에 대한 개요입니다.
 lastmod: "2021-06-05"   
 sitemap: 
@@ -40,6 +40,6 @@ Aspose.PDF for Python via C++는 빠르고 가볍고 사용하기 쉽습니다. 
 
 ### 자세히 알아보기:
 
-- ["Hello, World" Python 예제](/pdf/python-cpp/hello-world-example/)
-- [복잡한 PDF](/pdf/python-cpp/complex-pdf-example/)
-- [다른 예제 실행 방법](/pdf/python-cpp/how-to-run-other-examples/)
+- ["Hello, World" Python 예제](/pdf/ko/python-cpp/hello-world-example/)
+- [복잡한 PDF](/pdf/ko/python-cpp/complex-pdf-example/)
+- [다른 예제 실행 방법](/pdf/ko/python-cpp/how-to-run-other-examples/)

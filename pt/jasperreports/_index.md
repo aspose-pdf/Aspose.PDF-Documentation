@@ -10,7 +10,7 @@ type: docs
 
 weight: 120
 
-url: pt/jasperreports/
+url: /pt/jasperreports/
 
 is_root: true
 
@@ -32,22 +32,22 @@ Aspose.PDF para JasperReports é um componente flexível projetado para exportar
 
 A seguir estão os links para alguns recursos úteis que você pode precisar para realizar suas tarefas.
 
-- [Visão Geral do Produto Aspose.PDF para JasperReports](/pdf/jasperreports/product-overview/)
+- [Visão Geral do Produto Aspose.PDF para JasperReports](/pdf/pt/jasperreports/product-overview/)
 
-- [Formatos de Arquivo Suportados pelo Aspose.PDF para JasperReports](/pdf/jasperreports/supported-file-formats/)
+- [Formatos de Arquivo Suportados pelo Aspose.PDF para JasperReports](/pdf/pt/jasperreports/supported-file-formats/)
 
-- [Tour de Recursos do Aspose.PDF para JasperReports](/pdf/jasperreports/feature-tour/)
+- [Tour de Recursos do Aspose.PDF para JasperReports](/pdf/pt/jasperreports/feature-tour/)
 
 - [Notas de Lançamento do Aspose.PDF para JasperReports](https://releases.aspose.com/pdf/jassperreport/release-notes/)
 
 - [Baixar Aspose.PDF para JasperReports](https://releases.aspose.com/pdf/jassperreport/)
 
-- [Galeria de Relatórios de Exemplos do Aspose.PDF para JasperReports](/pdf/jasperreports/sample-reports-gallery/)
+- [Galeria de Relatórios de Exemplos do Aspose.PDF para JasperReports](/pdf/pt/jasperreports/sample-reports-gallery/)
 
-- [Instalação do Aspose.PDF para JasperReports](/pdf/jasperreports/installation/)
+- [Instalação do Aspose.PDF para JasperReports](/pdf/pt/jasperreports/installation/)
 
-- [Licenciamento do Aspose.PDF para JasperReports](/pdf/jasperreports/licensing/)
+- [Licenciamento do Aspose.PDF para JasperReports](/pdf/pt/jasperreports/licensing/)
 
-- [Avaliar Aspose.Pdf](/pdf/jasperreports/evaluate-aspose-pdf/)
+- [Avaliar Aspose.Pdf](/pdf/pt/jasperreports/evaluate-aspose-pdf/)
 
-- [Limitações da API do Aspose.PDF para JasperReports](/pdf/jasperreports/api-limitations/)
+- [Limitações da API do Aspose.PDF para JasperReports](/pdf/pt/jasperreports/api-limitations/)

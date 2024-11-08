@@ -3,7 +3,7 @@ title: 対応ファイル形式
 linktitle: 対応ファイル形式
 type: docs
 weight: 70
-url: ja/php-java/supported-file-formats/
+url: /ja/php-java/supported-file-formats/
 description: このページでは、Aspose.PDF for PHP via Javaが読み込みおよび保存できるファイル形式を示しています。
 lastmod: "2024-06-05"
 sitemap:

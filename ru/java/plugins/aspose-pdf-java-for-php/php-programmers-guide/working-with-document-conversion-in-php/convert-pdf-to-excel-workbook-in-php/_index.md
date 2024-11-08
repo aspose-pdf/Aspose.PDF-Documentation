@@ -2,7 +2,7 @@
 title: Конвертировать PDF в Excel Workbook на PHP
 type: docs
 weight: 20
-url: ru/java/convert-pdf-to-excel-workbook-in-php/
+url: /ru/java/convert-pdf-to-excel-workbook-in-php/
 lastmod: "2021-06-05"
 ---
 

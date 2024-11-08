@@ -3,7 +3,7 @@ title: Abrir documento PDF programaticamente
 linktitle: Abrir PDF
 type: docs
 weight: 20
-url: pt/python-cpp/open-pdf-document/
+url: /pt/python-cpp/open-pdf-document/
 description: Aprenda como abrir um arquivo PDF em Python Aspose.PDF para biblioteca Python via C++. Você pode abrir um PDF existente, documento de um fluxo e documento PDF criptografado.
 lastmod: "2022-12-22"
 sitemap:

@@ -3,7 +3,7 @@ title: Añadiendo un archivo adjunto a un documento PDF utilizando Python
 linktitle: Añadiendo un archivo adjunto a un documento PDF
 type: docs
 weight: 10
-url: es/python-net/add-attachment-to-pdf-document/
+url: /es/python-net/add-attachment-to-pdf-document/
 description: Esta página describe cómo agregar un archivo adjunto a un archivo PDF con Aspose.PDF para Python a través de la biblioteca .NET.
 lastmod: "2023-02-17"
 sitemap:

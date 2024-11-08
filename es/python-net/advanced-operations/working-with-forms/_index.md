@@ -3,7 +3,7 @@ title: Trabajando con Formularios usando Python
 linktitle: Trabajando con Formularios
 type: docs
 weight: 60
-url: es/python-net/working-with-forms/
+url: /es/python-net/working-with-forms/
 description: Esta sección describe cómo trabajar con AcroForms en documentos PDF con Aspose.PDF. para Python vía .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -81,4 +81,4 @@ Esta sección describe un enfoque rápido y sencillo para completar programátic
 
 AcroForms permite a los usuarios completar, enviar y almacenar formularios electrónicamente, lo que los convierte en una forma conveniente y eficiente de recopilar información.
 
-- [AcroForms](/pdf/python-net/acroforms/) - crear formulario, llenar campo de formulario, extraer datos del formulario, agregar y eliminar campos en tu PDF con la biblioteca de Python.
+- [AcroForms](/pdf/es/python-net/acroforms/) - crear formulario, llenar campo de formulario, extraer datos del formulario, agregar y eliminar campos en tu PDF con la biblioteca de Python.

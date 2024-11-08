@@ -3,7 +3,7 @@ title: Optimize, Compress or Reduce PDF Size in PHP
 linktitle: Optimize PDF Document
 type: docs
 weight: 40
-url: id/php-java/optimize-pdf/
+url: /id/php-java/optimize-pdf/
 description: Optimalkan file PDF, perkecil semua gambar, kurangi ukuran PDF, Hapus font yang disematkan, Hapus objek yang tidak digunakan menggunakan PHP.
 lastmod: "2024-06-05"
 ---

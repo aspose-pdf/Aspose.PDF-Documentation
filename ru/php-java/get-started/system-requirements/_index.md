@@ -3,7 +3,7 @@ title: Системные требования
 linktitle: Системные требования
 type: docs
 weight: 30
-url: ru/php-java/system-requirements/
+url: /ru/php-java/system-requirements/
 description: Этот раздел перечисляет поддерживаемые операционные системы, которые разработчику необходимо иметь для успешной работы с Aspose.PDF для PHP через Java.
 lastmod: "2024-06-05"
 sitemap:

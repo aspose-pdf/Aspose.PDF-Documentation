@@ -2,7 +2,7 @@
 title: Umbraco PDF 가져오기 모듈
 type: docs
 weight: 10
-url: ko/net/umbraco-pdf-import-module/
+url: /ko/net/umbraco-pdf-import-module/
 description: Umbraco PDF 가져오기 모듈 설치 및 사용 방법을 알아보세요
 lastmod: "2021-06-05"
 sitemap:

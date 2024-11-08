@@ -3,7 +3,7 @@ title: Exemple de Hello World en utilisant Python
 linktitle: Exemple de Hello World
 type: docs
 weight: 20
-url: fr/python-net/hello-world-example/
+url: /fr/python-net/hello-world-example/
 description: Cet exemple démontre comment créer un document PDF simple avec le texte Hello World en utilisant Aspose.PDF pour Python via .NET.
 lastmod: "2022-12-22"
 sitemap:

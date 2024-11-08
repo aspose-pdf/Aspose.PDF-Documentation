@@ -3,7 +3,7 @@ title: Potong Halaman PDF secara Programatis dengan Python
 linktitle: Potong Halaman
 type: docs
 weight: 70
-url: id/python-net/crop-pages/
+url: /id/python-net/crop-pages/
 description: Anda dapat mendapatkan properti halaman, seperti lebar, tinggi, bleed-, crop- dan trimbox menggunakan Aspose.PDF untuk Python melalui .NET.
 lastmod: "2023-04-17"
 sitemap:

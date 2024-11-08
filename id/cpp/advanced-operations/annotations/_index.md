@@ -3,7 +3,7 @@ title: PDF Annotations menggunakan C++
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: id/cpp/annotations/
+url: /id/cpp/annotations/
 description: Bagian ini menunjukkan cara menggunakan semua jenis anotasi ke file PDF Anda dengan pustaka Aspose.PDF. Pelajari cara menggambar, membuka, atau menambahkan anotasi dalam C++
 lastmod: "2021-11-24"
 sitemap:
@@ -21,6 +21,6 @@ Jadi, untuk membuat pengeditan, komentar, menambahkan gambar, tautan, sorotan, m
 
 Anda dapat melakukan hal berikut:
 
-- [Gambaran Umum Anotasi](/pdf/cpp/overview-of-annotations/) - pelajari jenis anotasi apa yang ditentukan oleh spesifikasi PDF, dan apa yang didukung oleh Aspose.PDF.
-- [Menambah, Menghapus dan Mendapatkan Anotasi](/pdf/cpp/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
-- [Impor dan Ekspor Anotasi ke format XFDF](/pdf/cpp/import-export-xfdf/) - Anda akan mengetahui cara mengimpor dan mengekspor anotasi dengan format XFDF menggunakan C++
+- [Gambaran Umum Anotasi](/pdf/id/cpp/overview-of-annotations/) - pelajari jenis anotasi apa yang ditentukan oleh spesifikasi PDF, dan apa yang didukung oleh Aspose.PDF.
+- [Menambah, Menghapus dan Mendapatkan Anotasi](/pdf/id/cpp/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
+- [Impor dan Ekspor Anotasi ke format XFDF](/pdf/id/cpp/import-export-xfdf/) - Anda akan mengetahui cara mengimpor dan mengekspor anotasi dengan format XFDF menggunakan C++

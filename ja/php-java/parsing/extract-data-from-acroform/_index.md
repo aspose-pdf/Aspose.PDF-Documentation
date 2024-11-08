@@ -3,7 +3,7 @@ title: AcroFormからデータを抽出する
 linktitle: AcroFormからデータを抽出する
 type: docs
 weight: 50
-url: ja/php-java/extract-data-from-acroform/
+url: /ja/php-java/extract-data-from-acroform/
 description: AcroFormsは多くのPDFドキュメントに存在します。この記事は、PHPとAspose.PDFを使用してAcroFormsからデータを抽出する方法を理解するのに役立ちます。
 lastmod: "2024-05-20"
 sitemap:

@@ -3,7 +3,7 @@ title: العمل مع الأفعال في ملف PDF
 linktitle: الأفعال
 type: docs
 weight: 20
-url: ar/net/actions/
+url: /ar/net/actions/
 description: هذا القسم يشرح كيفية إضافة أفعال إلى المستند وحقول النموذج برمجياً باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "هذا القسم يشرح كيفية إضافة أفعال إلى المستند وحقول النموذج برمجياً باستخدام C#."
 }
 </script>
-يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة رابط تشعبي في ملف PDF
 

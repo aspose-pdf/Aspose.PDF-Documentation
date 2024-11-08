@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: zh/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/
+url: /zh/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/
 
 lastmod: "2021-06-05"
 

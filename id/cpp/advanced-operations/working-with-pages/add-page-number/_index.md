@@ -4,7 +4,7 @@ title: Tambahkan Nomor Halaman ke PDF dengan C++
 linktitle: Tambahkan Nomor Halaman
 type: docs
 weight: 100
-url: id/cpp/add-page-number/
+url: /id/cpp/add-page-number/
 description: Aspose.PDF untuk C++ memungkinkan Anda menambahkan Cap Nomor Halaman ke file PDF Anda menggunakan kelas PageNumber Stamp.
 lastmod: "2021-12-03"
 sitemap:

@@ -2,7 +2,7 @@
 title: PHPでのドキュメントウィンドウとページ表示プロパティの取得
 type: docs
 weight: 30
-url: ja/java/get-document-window-and-page-display-properties-in-php/
+url: /ja/java/get-document-window-and-page-display-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

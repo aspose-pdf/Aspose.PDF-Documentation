@@ -2,7 +2,7 @@
 title: Detail pemasangan lebih lanjut
 type: docs
 weight: 30
-url: id/sharepoint/more-installation-details/
+url: /id/sharepoint/more-installation-details/
 lastmod: "2020-12-16"
 description: Informasi lebih lanjut tentang pemasangan PDF SharePoint API menjelaskan cara menerapkan, mengaktifkan, dan menonaktifkannya pada koleksi situs.
 ---

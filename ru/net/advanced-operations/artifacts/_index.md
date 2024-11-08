@@ -3,7 +3,7 @@ title: Работа с артефактами в .NET
 linktitle: Работа с артефактами
 type: docs
 weight: 110
-url: ru/net/artifacts/
+url: /ru/net/artifacts/
 description: Aspose.PDF для .NET позволяет добавлять фоновое изображение на страницы PDF и получать каждый водяной знак с использованием класса Artifact.
 lastmod: "2024-01-17"
 sitemap:
@@ -110,8 +110,8 @@ sitemap:
 
 Следующий фрагмент кода показывает, как получить все водяные знаки на первой странице PDF-файла.
 
-_Примечание:_ Этот код также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
-_Примечание:_ Этот код также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+_Примечание:_ Этот код также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+_Примечание:_ Этот код также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 var document = new Document(System.IO.Path.Combine(_dataDir, "sample-w.pdf"));

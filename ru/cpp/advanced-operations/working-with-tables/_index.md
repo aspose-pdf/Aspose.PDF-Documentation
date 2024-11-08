@@ -3,7 +3,7 @@ title: Работа с таблицами в PDF с использованием
 linktitle: Работа с таблицами
 type: docs
 weight: 50
-url: ru/cpp/working-with-tables/
+url: /ru/cpp/working-with-tables/
 description: Этот раздел описывает, как добавлять и извлекать таблицу, как манипулировать и интегрировать таблицу с использованием библиотеки C++.
 lastmod: "2021-11-11"
 sitemap:
@@ -19,7 +19,7 @@ sitemap:
 
 Вы можете сделать следующее:
 
-- [Создать или добавить таблицу в существующий PDF-документ](/pdf/cpp/add-table-in-existing-pdf-document/) - создайте свою таблицу в PDF-файле с объединением столбцов или строк, учитывая границы, поля и отступы.
-- [Извлечь таблицу из существующего PDF документа](/pdf/cpp/extract-table-from-existing-pdf-document/) - вы можете извлечь таблицу из PDF файла или извлечь границу таблицы как изображение.
-- [Изменить таблицы в существующем PDF](/pdf/cpp/manipulate-tables-in-existing-pdf/) - изменяйте таблицы в вашем PDF с помощью TableAbsorber.
-- [Удалить таблицы из существующего PDF](/pdf/cpp/remove-tables-from-existing-pdf/) - удалите таблицу или несколько таблиц из PDF документа.
+- [Создать или добавить таблицу в существующий PDF-документ](/pdf/ru/cpp/add-table-in-existing-pdf-document/) - создайте свою таблицу в PDF-файле с объединением столбцов или строк, учитывая границы, поля и отступы.
+- [Извлечь таблицу из существующего PDF документа](/pdf/ru/cpp/extract-table-from-existing-pdf-document/) - вы можете извлечь таблицу из PDF файла или извлечь границу таблицы как изображение.
+- [Изменить таблицы в существующем PDF](/pdf/ru/cpp/manipulate-tables-in-existing-pdf/) - изменяйте таблицы в вашем PDF с помощью TableAbsorber.
+- [Удалить таблицы из существующего PDF](/pdf/ru/cpp/remove-tables-from-existing-pdf/) - удалите таблицу или несколько таблиц из PDF документа.

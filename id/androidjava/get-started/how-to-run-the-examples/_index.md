@@ -3,7 +3,7 @@ title: Cara menjalankan contoh Aspose.PDF lainnya untuk Android via Java
 linktitle: Cara menjalankan contoh lainnya
 type: docs
 weight: 40
-url: id/androidjava/how-to-run-other-examples/    
+url: /id/androidjava/how-to-run-other-examples/    
 description: Halaman ini menunjukkan pedoman yang akan membantu persyaratan berikut sebelum mengunduh dan menjalankan contoh.
 lastmod: "2021-06-05"
 ---

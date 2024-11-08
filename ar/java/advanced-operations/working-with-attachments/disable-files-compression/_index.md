@@ -3,7 +3,7 @@ title: تعطيل ضغط الملفات عند إضافتها كموارد مد�
 linktitle: تعطيل ضغط الملفات
 type: docs
 weight: 40
-url: ar/java/disable-files-compression-when-adding-as-embedded-resources/
+url: /ar/java/disable-files-compression-when-adding-as-embedded-resources/
 description: يشرح هذا المقال كيفية تعطيل ضغط الملفات عند إضافتها كموارد مدمجة
 lastmod: "2021-06-05"
 ---

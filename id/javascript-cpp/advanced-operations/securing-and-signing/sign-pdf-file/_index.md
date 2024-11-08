@@ -3,7 +3,7 @@ title: Tambahkan tanda tangan digital atau tandatangani PDF secara digital dalam
 linktitle: Tandatangani PDF secara digital
 type: docs
 weight: 70
-url: id/javascript-cpp/sign-pdf/
+url: /id/javascript-cpp/sign-pdf/
 description: Tandatangani dokumen PDF secara digital menggunakan JavaScript melalui C++.
 lastmod: "2023-02-17"
 sitemap:

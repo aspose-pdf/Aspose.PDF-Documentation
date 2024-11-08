@@ -3,7 +3,7 @@ title: العمل مع المرفقات في PDF في Node.js
 linktitle: العمل مع المرفقات
 type: docs
 weight: 120
-url: ar/nodejs-cpp/attachments/
+url: /ar/nodejs-cpp/attachments/
 description: العمليات الأساسية مع المرفقات في PDF في Node.js. دليل مع أمثلة.
 lastmod: "2023-11-16"
 sitemap:
@@ -17,4 +17,4 @@ sitemap:
 
 سوف تتعلم كيفية حذف المرفقات من PDF برمجيًا باستخدام Node.js.
 
-- [إزالة المرفق من ملف PDF موجود](/pdf/nodejs-cpp/removing-attachment-from-an-existing-pdf/)
+- [إزالة المرفق من ملف PDF موجود](/pdf/ar/nodejs-cpp/removing-attachment-from-an-existing-pdf/)

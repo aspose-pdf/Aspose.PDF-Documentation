@@ -2,7 +2,7 @@
 title: 在 Python 中使用 DOM 添加 HTML 字符串
 type: docs
 weight: 10
-url: zh/python-java/add-html-string-using-dom-in-python/
+url: /zh/python-java/add-html-string-using-dom-in-python/
 ---
 
 要在使用 **Aspose.PDF Java for Python** 的 Pdf 文档中添加 HTML 字符串，只需调用 **AddHtml** 模块。

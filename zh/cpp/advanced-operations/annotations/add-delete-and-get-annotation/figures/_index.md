@@ -3,7 +3,7 @@ title: 使用 C++ 添加图形注释
 linktitle: 图形注释
 type: docs
 weight: 30
-url: zh/cpp/figures-annotation/
+url: /zh/cpp/figures-annotation/
 description: 本文描述了如何使用 Aspose.PDF for C++ 添加、获取和删除 PDF 文档中的图形注释
 lastmod: "2021-11-24"
 sitemap:

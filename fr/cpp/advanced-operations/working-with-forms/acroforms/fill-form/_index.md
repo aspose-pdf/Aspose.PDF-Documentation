@@ -3,7 +3,7 @@ title: Remplir AcroForm
 linktitle: Remplir AcroForm
 type: docs
 weight: 20
-url: fr/cpp/fill-form/
+url: /fr/cpp/fill-form/
 description: Cette section explique comment remplir un champ de formulaire dans un document PDF avec Aspose.PDF pour C++.
 lastmod: "2021-12-01"
 sitemap:

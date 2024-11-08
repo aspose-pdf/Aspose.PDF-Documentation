@@ -2,7 +2,7 @@
 title: Convertisseur XLS
 type: docs
 weight: 20
-url: fr/net/plugins/xls/
+url: /fr/net/plugins/xls/
 description: Comment convertir des fichiers PDF en feuilles de calcul Excel en utilisant les plugins Aspose.Pdf
 lastmod: "2024-01-24"
 ---

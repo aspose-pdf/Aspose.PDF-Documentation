@@ -3,7 +3,7 @@
 title: Mettre à jour, Supprimer et Obtenir des Signets
 type: docs
 weight: 30
-url: fr/net/update-delete-and-get-bookmarks/
+url: /fr/net/update-delete-and-get-bookmarks/
 description: Cette section explique comment mettre à jour, supprimer et obtenir des signets avec Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

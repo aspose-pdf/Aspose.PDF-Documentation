@@ -3,7 +3,7 @@ title: C++を使用したPDFドキュメントのフォーマット
 linktitle: PDFドキュメントのフォーマット
 type: docs
 weight: 20
-url: ja/cpp/formatting-pdf-document/
+url: /ja/cpp/formatting-pdf-document/
 description: Aspose.PDF for C++を使用してPDFドキュメントを作成およびフォーマットします。タスクを解決するために次のコードスニペットを使用してください。
 lastmod: "2021-11-11"
 sitemap:

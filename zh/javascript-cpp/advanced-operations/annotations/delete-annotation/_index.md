@@ -3,7 +3,7 @@ title: 使用 JavaScript 删除注释
 linktitle: 删除注释
 type: docs
 weight: 10
-url: zh/javascript-cpp/delete-annotation/
+url: /zh/javascript-cpp/delete-annotation/
 description: 使用 Aspose.PDF for JavaScript 您可以从 PDF 文件中删除注释。
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: XML схема Aspose.PDF
 linktitle: Поддерживаемая XML схема
 type: docs
 weight: 10
-url: ru/cpp/supported-xml-schema/
+url: /ru/cpp/supported-xml-schema/
 description: В этой статье описывается XML-схема для работы с XML-документами в Aspose.PDF для C++.
 lastmod: "2022-01-31"
 sitemap:

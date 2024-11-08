@@ -2,7 +2,7 @@
 title: PDFファイルのNUpを作成する
 type: docs
 weight: 90
-url: ja/net/make-nup-of-pdf-files/
+url: /ja/net/make-nup-of-pdf-files/
 description: この記事では、PdfFileEditorクラスを使用してAspose.PDF Facadesと連携してPDFファイルのNUpを作成する方法を示します。
 lastmod: "2021-06-05"
 draft: false

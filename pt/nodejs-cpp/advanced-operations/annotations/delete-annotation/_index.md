@@ -3,7 +3,7 @@ title: Excluir Anotação no Node.js
 linktitle: Excluir Anotação
 type: docs
 weight: 10
-url: pt/nodejs-cpp/delete-annotation/
+url: /pt/nodejs-cpp/delete-annotation/
 description: Com Aspose.PDF para Node.js, você pode excluir anotações do seu arquivo PDF.
 lastmod: "2023-11-16"
 sitemap:

@@ -2,7 +2,7 @@
 title: Bekerja dengan Gambar
 type: docs
 weight: 30
-url: id/java/working-with-image/
+url: /id/java/working-with-image/
 description: Bagian ini menjelaskan cara mengganti gambar dengan Aspose.PDF Facades - seperangkat alat untuk operasi populer dengan PDF.
 lastmod: "2021-06-25"
 sitemap:

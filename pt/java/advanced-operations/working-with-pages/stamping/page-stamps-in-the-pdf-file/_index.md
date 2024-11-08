@@ -3,7 +3,7 @@ title: Adicionar Carimbo de Página ao PDF
 linktitle: Carimbos de página em arquivo PDF
 type: docs
 weight: 30
-url: pt/java/page-stamps-in-the-pdf-file/
+url: /pt/java/page-stamps-in-the-pdf-file/
 description: Adicione um carimbo de página a um arquivo PDF usando a classe PdfPageStamp com Java.
 lastmod: "2021-09-10"
 sitemap:

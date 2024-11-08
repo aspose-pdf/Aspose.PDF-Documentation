@@ -3,7 +3,7 @@ title: 保护和签署PDF文件
 linktitle: PDF中的保护和签署
 type: docs
 weight: 150
-url: zh/cpp/securing-and-signing/
+url: /zh/cpp/securing-and-signing/
 description: 本节介绍了使用C++签署和保护PDF文档的功能
 lastmod: "2021-12-15"
 sitemap:
@@ -15,6 +15,6 @@ sitemap:
 
 在本文中，您将学习如何在PDF文件中添加数字签名并从智能卡签名，如何从PDF中提取图像和签名信息。此外，本主题还展示了如何加密和解密PDF文档。
 
-- [数字签署PDF文件](/pdf/cpp/digitally-sign-pdf-file/)
-- [设置权限，加密和解密 PDF 文件](/pdf/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [提取图像和签名信息](/pdf/cpp/extract-image-and-signature-information/)
+- [数字签署PDF文件](/pdf/zh/cpp/digitally-sign-pdf-file/)
+- [设置权限，加密和解密 PDF 文件](/pdf/zh/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [提取图像和签名信息](/pdf/zh/cpp/extract-image-and-signature-information/)

@@ -3,7 +3,7 @@ title: 접근성 및 태그가 지정된 PDF 작업
 linktitle: 접근성. 태그가 지정된 PDF
 type: docs
 weight: 120
-url: ko/androidjava/accessibility-tagged-pdf/
+url: /ko/androidjava/accessibility-tagged-pdf/
 description: 이 장에서는 태그가 지정된 PDF 문서를 생성하는 가능성을 설명합니다. 이 기능은 구조적 문서에 태그를 추가할 수 있습니다. 저렴한 PDF를 얻는 방법에 대해 자세히 알아보세요.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ Aspose.PDF는 PDF/UA 표준(일명 "Section 508" 또는 "WCAG 표준")에 따라
 
 이 섹션에서는 다음 주제를 다룹니다:
 
-- [태그가 지정된 PDF 생성하기](/pdf/andriodjava/create-tagged-pdf-documents/)
-- [태그가 지정된 PDF에서 태그가 지정된 콘텐츠 추출하기](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)
-- [구조 요소 속성 설정하기](/pdf/androidjava/set-tagged-pdfs-element-properties/)
-- [태그가 지정된 PDF의 테이블 작업하기](/pdf/androidjava/working-with-table-in-tagged-pdfs/)
+- [태그가 지정된 PDF 생성하기](/pdf/ko/andriodjava/create-tagged-pdf-documents/)
+- [태그가 지정된 PDF에서 태그가 지정된 콘텐츠 추출하기](/pdf/ko/androidjava/extract-tagged-content-from-tagged-pdfs/)
+- [구조 요소 속성 설정하기](/pdf/ko/androidjava/set-tagged-pdfs-element-properties/)
+- [태그가 지정된 PDF의 테이블 작업하기](/pdf/ko/androidjava/working-with-table-in-tagged-pdfs/)

@@ -3,7 +3,7 @@ title: Добавление изображений штампов в PDF с ис
 linktitle: Изображения штампов в PDF файле
 type: docs
 weight: 60
-url: ru/javascript-cpp/stamping/
+url: /ru/javascript-cpp/stamping/
 description: Добавьте изображение штампа в ваш PDF документ с помощью функции AsposePdfAddStamp и JavaScript.
 lastmod: "2023-04-15"
 sitemap:

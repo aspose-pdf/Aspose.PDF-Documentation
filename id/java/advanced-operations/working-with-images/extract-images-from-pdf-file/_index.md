@@ -3,7 +3,7 @@ title: Ekstrak Gambar dari File PDF
 linktitle: Ekstrak Gambar
 type: docs
 weight: 30
-url: id/java/extract-images-from-pdf-file/
+url: /id/java/extract-images-from-pdf-file/
 description: Bagian ini menunjukkan cara mengekstrak gambar dari file PDF menggunakan pustaka Java.
 lastmod: "2021-06-05"
 ---

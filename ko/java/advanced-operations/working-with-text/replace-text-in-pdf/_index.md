@@ -3,7 +3,7 @@ title: PDF에서 텍스트 대체
 linktitle: PDF에서 텍스트 대체
 type: docs
 weight: 40
-url: ko/java/replace-text-in-a-pdf-document/
+url: /ko/java/replace-text-in-a-pdf-document/
 description: PDF에서 텍스트를 대체하고 제거하는 다양한 방법에 대해 알아보세요. Aspose.PDF는 특정 영역에서 또는 정규 표현식을 사용하여 텍스트를 대체할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

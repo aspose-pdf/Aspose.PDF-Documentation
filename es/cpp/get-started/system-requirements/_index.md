@@ -3,7 +3,7 @@ title: Requisitos del Sistema para C++
 linktitle: Requisitos del Sistema
 type: docs
 weight: 30
-url: es/cpp/system-requirements/
+url: /es/cpp/system-requirements/
 description: Esta sección enumera los sistemas operativos compatibles que un desarrollador necesita para trabajar con éxito con Aspose.PDF para C++.
 lastmod: "2021-11-08"
 sitemap:

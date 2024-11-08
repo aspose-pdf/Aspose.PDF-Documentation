@@ -3,7 +3,7 @@ title: Извлечение содержимого с тегами из PDF
 linktitle: Извлечение содержимого с тегами
 type: docs
 weight: 20
-url: ru/java/extract-tagged-content-from-tagged-pdfs/
+url: /ru/java/extract-tagged-content-from-tagged-pdfs/
 description: Эта статья объясняет, как извлечь содержимое с тегами из PDF-документа с использованием Aspose.PDF для Java
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 데이터 추출 AcroForms
 linktitle: 데이터 추출 AcroForms
 type: docs
 weight: 30
-url: ko/php-java/extract-form/
+url: /ko/php-java/extract-form/
 description: 이 섹션에서는 Aspose.PDF for PHP via Java를 사용하여 PDF 문서에서 양식을 추출하는 방법을 설명합니다.
 lastmod: "2024-06-05"
 sitemap:

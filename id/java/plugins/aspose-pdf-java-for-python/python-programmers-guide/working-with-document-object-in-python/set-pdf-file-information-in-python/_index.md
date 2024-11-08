@@ -2,7 +2,7 @@
 title: Mengatur Informasi File PDF di Python
 type: docs
 weight: 90
-url: id/java/set-pdf-file-information-in-python/
+url: /id/java/set-pdf-file-information-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Obtener Propiedades de Ventana de Documento y Visualización de Página en Python
 type: docs
 weight: 30
-url: es/java/get-document-window-and-page-display-properties-in-python/
+url: /es/java/get-document-window-and-page-display-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

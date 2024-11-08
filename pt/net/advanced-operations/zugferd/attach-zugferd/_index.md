@@ -3,7 +3,7 @@ title: Criando um PDF compatível com PDF/A-3 e anexando uma fatura ZUGFeRD em C
 linktitle: Anexar ZUGFeRD ao PDF
 type: docs
 weight: 10
-url: pt/net/attach-zugferd/
+url: /pt/net/attach-zugferd/
 description: Aprenda a gerar um documento PDF com ZUGFeRD no Aspose.PDF para .NET
 lastmod: "2023-11-22"
 sitemap:
@@ -13,7 +13,7 @@ sitemap:
 
 ## Anexar ZUGFeRD ao PDF
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Recomendamos seguir os seguintes passos para anexar ZUGFeRD ao PDF:
 

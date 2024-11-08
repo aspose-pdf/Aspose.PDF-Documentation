@@ -3,7 +3,7 @@ title: 使用 Python 从 PDF 中提取文本
 linktitle: 从 PDF 中提取文本
 type: docs
 weight: 10
-url: zh/python-cpp/extract-text/
+url: /zh/python-cpp/extract-text/
 description: 本节介绍如何使用 Python 库从 PDF 文档中提取文本。
 lastmod: "2024-04-14"
 sitemap:

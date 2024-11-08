@@ -3,7 +3,7 @@ title: Bekerja dengan Tautan dalam PDF secara programatis
 linktitle: Tautan
 type: docs
 weight: 10
-url: id/net/links/
+url: /id/net/links/
 description: Panduan ini membahas cara menambahkan tautan halaman internal dalam PDF atau memasukkan hyperlink situs web eksternal ke PDF dalam bahasa C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-- [Buat Tautan](/pdf/net/create-links/) - pelajari cara mudah untuk membuat tautan dalam file PDF Anda menggunakan C#.
-- [Perbarui Tautan](/pdf/net/update-links/) - coba atur target ke PDF, coba atur tujuan tautan ke alamat web, coba atur target tautan ke file PDF lain, perbarui warna teks tautan.
-- [Ekstrak Tautan](/pdf/net/extract-links) - ekstrak tautan dari file PDF menggunakan kelas AnnotationSelector.
+- [Buat Tautan](/pdf/id/net/create-links/) - pelajari cara mudah untuk membuat tautan dalam file PDF Anda menggunakan C#.
+- [Perbarui Tautan](/pdf/id/net/update-links/) - coba atur target ke PDF, coba atur tujuan tautan ke alamat web, coba atur target tautan ke file PDF lain, perbarui warna teks tautan.
+- [Ekstrak Tautan](/pdf/id/net/extract-links) - ekstrak tautan dari file PDF menggunakan kelas AnnotationSelector.
 

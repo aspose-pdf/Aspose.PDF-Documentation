@@ -3,7 +3,7 @@ title: C#を使用して図形注釈を追加する
 linktitle: 図形注釈
 type: docs
 weight: 30
-url: ja/net/figures-annotation/
+url: /ja/net/figures-annotation/
 description: この記事では、Aspose.PDF for .NETを使用してPDFドキュメントから図形注釈を追加、取得、削除する方法について説明します。
 lastmod: "2023-09-12"
 sitemap:
@@ -89,7 +89,7 @@ PDFドキュメント管理アプリは、ドキュメントに注釈を付け�
 
 注釈を追加するアプローチは、どれも典型的です。
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)を利用してPDFファイルをロードするか新規作成する。
 1. 新しい注釈を作成し、パラメータを設定する（新しいRectangle、新しいPoint、タイトル、色、幅など）。

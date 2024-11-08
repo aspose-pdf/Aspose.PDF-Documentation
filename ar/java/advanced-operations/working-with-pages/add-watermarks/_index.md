@@ -3,7 +3,7 @@ title: إضافة علامة مائية إلى PDF
 linktitle: إضافة علامة مائية
 type: docs
 weight: 90
-url: ar/java/add-watermarks/
+url: /ar/java/add-watermarks/
 description: تشرح هذه المقالة ميزات العمل مع القطع الأثرية والحصول على العلامات المائية في ملفات PDF باستخدام البرمجة بلغة Java.
 lastmod: "2021-06-05"
 sitemap:

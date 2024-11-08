@@ -3,7 +3,7 @@ title: Potong Halaman PDF menggunakan PHP
 linktitle: Potong Halaman
 type: docs
 weight: 80
-url: id/php-java/crop-pages/
+url: /id/php-java/crop-pages/
 description: Anda dapat memperoleh properti halaman, seperti lebar, tinggi, bleed-, crop- dan trimbox menggunakan Aspose.PDF untuk PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

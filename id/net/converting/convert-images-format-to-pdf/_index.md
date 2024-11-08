@@ -3,7 +3,7 @@ title: Mengonversi Berbagai Format Gambar ke PDF di .NET
 linktitle: Mengonversi Gambar ke PDF
 type: docs
 weight: 60
-url: id/net/convert-images-format-to-pdf/
+url: /id/net/convert-images-format-to-pdf/
 lastmod: "2021-11-01"
 description: Mengonversi berbagai format gambar seperti BMP, CGM, JPEG, DICOM, PNG, TIFF, EMF, dan SVG menjadi PDF menggunakan C# .NET.
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 Artikel ini menjelaskan cara mengonversi berbagai format gambar menjadi PDF menggunakan C#. Artikel ini mencakup topik-topik berikut.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 _Format_: **BMP**
 - [C# BMP ke PDF](#csharp-bmp-to-pdf)

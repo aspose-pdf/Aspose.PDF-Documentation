@@ -2,7 +2,7 @@
 title: Decrypt PDF File
 type: docs
 weight: 20
-url: ru/net/decrypt-pdf-file/
+url: /ru/net/decrypt-pdf-file/
 description: Эта тема объясняет, как расшифровать PDF файл с использованием класса PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

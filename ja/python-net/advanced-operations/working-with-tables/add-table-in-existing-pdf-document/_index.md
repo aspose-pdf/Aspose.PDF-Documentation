@@ -3,7 +3,7 @@ title: Pythonを使用してPDFにテーブルを作成または追加する
 linktitle: テーブルを作成または追加
 type: docs
 weight: 10
-url: ja/python-net/add-table-in-existing-pdf-document/
+url: /ja/python-net/add-table-in-existing-pdf-document/
 description: Aspose.PDF for Python via .NETは、PDFテーブルを作成、読み取り、編集するためのライブラリです。このトピックの他の高度な機能を確認してください。
 lastmod: "2023-02-17"
 sitemap:

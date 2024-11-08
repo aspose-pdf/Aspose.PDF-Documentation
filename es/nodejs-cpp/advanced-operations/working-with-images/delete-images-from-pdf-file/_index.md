@@ -3,7 +3,7 @@ title: Eliminar Imágenes de un Archivo PDF en Node.js
 linktitle: Eliminar Imágenes
 type: docs
 weight: 20
-url: es/nodejs-cpp/delete-images-from-pdf-file/
+url: /es/nodejs-cpp/delete-images-from-pdf-file/
 description: Esta sección explica cómo eliminar imágenes de un archivo PDF usando Aspose.PDF para Node.js a través de C++.
 lastmod: "2023-11-16"
 ---

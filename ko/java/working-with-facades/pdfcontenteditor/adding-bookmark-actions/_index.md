@@ -2,7 +2,7 @@
 title: 기존 PDF 파일에 북마크 작업 추가
 type: docs
 weight: 20
-url: ko/java/adding-bookmark-actions/
+url: /ko/java/adding-bookmark-actions/
 description: 이 섹션은 Aspose.PDF Facades로 기존 PDF 파일에 북마크 작업을 추가하는 방법을 설명합니다.
 lastmod: "2021-06-30"
 sitemap:

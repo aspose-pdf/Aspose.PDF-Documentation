@@ -2,7 +2,7 @@
 title: Aspose.PDF .NET для CRM
 type: docs
 weight: 310
-url: ru/net/aspose-pdf-net-for-crm/
+url: /ru/net/aspose-pdf-net-for-crm/
 description: Узнайте, как использовать Aspose.PDF для Microsoft Dynamics CRM
 lastmod: "2021-06-05"
 sitemap:
@@ -28,5 +28,5 @@ Aspose .NET может использоваться с Dynamics CRM различ
 
 Мы создали следующие плагины для CRM с использованием Aspose.PDF
 
-- [Генератор документов PDF в один клик](/pdf/net/oneclick-pdf-document-generator/)
-  - [Использование генератора документов PDF в один клик](/pdf/net/using-oneclick-pdf-document-generator/)
+- [Генератор документов PDF в один клик](/pdf/ru/net/oneclick-pdf-document-generator/)
+  - [Использование генератора документов PDF в один клик](/pdf/ru/net/using-oneclick-pdf-document-generator/)

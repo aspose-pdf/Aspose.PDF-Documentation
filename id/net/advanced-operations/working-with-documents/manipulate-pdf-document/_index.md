@@ -3,7 +3,7 @@ title: Manipulasi Dokumen PDF di C#
 linktitle: Manipulasi Dokumen PDF
 type: docs
 weight: 20
-url: id/net/manipulate-pdf-document/
+url: /id/net/manipulate-pdf-document/
 description: Artikel ini berisi informasi tentang cara memvalidasi Dokumen PDF untuk Standar PDF A, cara bekerja dengan TOC, cara mengatur tanggal kedaluwarsa PDF, dan lainnya.
 keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
@@ -88,7 +88,7 @@ Format XML keluaran adalah format khusus Aspose. XML ini berisi kumpulan tag den
 
 {{% /alert %}}
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara memvalidasi dokumen PDF untuk PDF/A-1A.
 Potongan kode berikut menunjukkan cara memvalidasi dokumen PDF untuk PDF/A-1A.

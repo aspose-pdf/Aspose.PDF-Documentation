@@ -3,7 +3,7 @@ title: PDFページを回転させる方法 (Python via C++)
 linktitle: PDFページを回転する
 type: docs
 weight: 20
-url: ja/python-cpp/rotate-pages/
+url: /ja/python-cpp/rotate-pages/
 description: このトピックでは、Python経由でC++を使用して既存のPDFファイルのページの向きをプログラムで回転させる方法について説明します。
 lastmod: "2024-04-17"
 sitemap:

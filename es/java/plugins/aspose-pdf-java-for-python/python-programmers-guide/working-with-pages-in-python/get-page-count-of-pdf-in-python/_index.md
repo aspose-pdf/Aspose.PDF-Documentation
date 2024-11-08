@@ -2,7 +2,7 @@
 title: Obtener el conteo de páginas de PDF en Python
 type: docs
 weight: 40
-url: es/java/get-page-count-of-pdf-in-python/
+url: /es/java/get-page-count-of-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

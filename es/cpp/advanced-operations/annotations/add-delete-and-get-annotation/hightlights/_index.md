@@ -3,7 +3,7 @@ title: PDF Highlights Annotation using C++
 linktitle: Highlights Annotation
 type: docs
 weight: 20
-url: es/cpp/highlights-annotation/
+url: /es/cpp/highlights-annotation/
 description: Las anotaciones de marcado se presentan en el texto como resaltados, subrayados, tachados o subrayados irregulares en el texto de un documento.
 lastmod: "2021-11-24"
 sitemap:

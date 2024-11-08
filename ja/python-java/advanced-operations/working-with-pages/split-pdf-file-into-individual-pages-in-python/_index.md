@@ -2,7 +2,7 @@
 title: PythonでPDFファイルを個々のページに分割する
 type: docs
 weight: 80
-url: ja/python-java/split-pdf-file-into-individual-pages-in-python/
+url: /ja/python-java/split-pdf-file-into-individual-pages-in-python/
 ---
 
 <ins>**Aspose.PDF Java for PHP**を使用してPDFドキュメントを個々のページに分割するには、単に**SplitAllPages**クラスを呼び出します。

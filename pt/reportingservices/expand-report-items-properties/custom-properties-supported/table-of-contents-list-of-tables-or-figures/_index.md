@@ -2,7 +2,7 @@
 title: Índice Lista de Tabelas ou Figuras
 type: docs
 weight: 10
-url: pt/reportingservices/table-of-contents-list-of-tables-or-figures/
+url: /pt/reportingservices/table-of-contents-list-of-tables-or-figures/
 lastmod: "2021-06-05"
 ---
 

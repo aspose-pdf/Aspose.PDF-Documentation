@@ -2,7 +2,7 @@
 title: Optimizar Documento PDF para la Web en Python
 type: docs
 weight: 60
-url: es/java/optimize-pdf-document-for-the-web-in-python/
+url: /es/java/optimize-pdf-document-for-the-web-in-python/
 lastmod: "2021-06-05"
 ---
 

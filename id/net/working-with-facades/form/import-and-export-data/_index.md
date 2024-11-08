@@ -2,7 +2,7 @@
 title: Impor dan Ekspor Data
 type: docs
 weight: 70
-url: id/net/import-and-export-data/
+url: /id/net/import-and-export-data/
 description: Bagian ini menjelaskan cara mengimpor dan Mengekspor Data dengan Aspose.PDF Facades menggunakan Kelas Form.
 lastmod: "2024-06-05"
 draft: false

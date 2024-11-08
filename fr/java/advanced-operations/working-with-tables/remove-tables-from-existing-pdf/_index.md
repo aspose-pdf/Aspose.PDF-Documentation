@@ -3,7 +3,7 @@ title: Supprimer des tableaux d'un PDF existant
 linktitle: Supprimer des tableaux
 type: docs
 weight: 40
-url: fr/java/remove-tables-from-existing-pdf/
+url: /fr/java/remove-tables-from-existing-pdf/
 description: Aspose.PDF pour Java vous permet de supprimer un tableau et plusieurs tableaux de votre document PDF.
 lastmod: "2021-06-05"
 sitemap:

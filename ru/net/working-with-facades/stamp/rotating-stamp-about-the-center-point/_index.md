@@ -2,7 +2,7 @@
 title: Вращение штампа вокруг центральной точки
 type: docs
 weight: 10
-url: ru/net/rotating-stamp-about-the-center-point/
+url: /ru/net/rotating-stamp-about-the-center-point/
 description: Этот раздел объясняет, как вращать штамп вокруг центральной точки с использованием класса Stamp.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Пространство имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF для .NET](/pdf/net/) позволяет добавлять штамп в существующий PDF-файл. Иногда пользователям необходимо вращать штамп. В этой статье мы рассмотрим, как вращать штамп вокруг его центральной точки.
+[Пространство имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF для .NET](/pdf/ru/net/) позволяет добавлять штамп в существующий PDF-файл. Иногда пользователям необходимо вращать штамп. В этой статье мы рассмотрим, как вращать штамп вокруг его центральной точки.
 
 {{% /alert %}}
 

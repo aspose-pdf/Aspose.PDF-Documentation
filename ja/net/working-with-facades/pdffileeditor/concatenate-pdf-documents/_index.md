@@ -3,7 +3,7 @@ title: C#でPDFドキュメントを結合する
 linktitle: PDFドキュメントを結合する
 type: docs
 weight: 20
-url: ja/net/concatenate-pdf-documents/
+url: /ja/net/concatenate-pdf-documents/
 description: このセクションでは、PdfFileEditorクラスを使用してAspose.PDF FacadesでPDFドキュメントを結合する方法を説明します。
 aliases:
     - /pdf/net/concatenate-multiple-pdf-files-using-memorystreams/

@@ -3,7 +3,7 @@ title: Добавить объект круга в PDF файл
 linktitle: Добавить круг
 type: docs
 weight: 20
-url: ru/java/add-circle/
+url: /ru/java/add-circle/
 description: Эта статья объясняет, как создать объект круга в вашем PDF с использованием Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

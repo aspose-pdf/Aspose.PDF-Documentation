@@ -2,7 +2,7 @@
 title: Объединение изображений
 type: docs
 weight: 20
-url: ru/net/merge-images/
+url: /ru/net/merge-images/
 description: Этот раздел объясняет, как объединить изображения, и возможно сохранить в формате Tiff.
 lastmod: "2021-06-05"
 draft: false

@@ -4,7 +4,7 @@ title: Ekstra Anotasi menggunakan C++
 linktitle: Ekstra Anotasi
 type: docs
 weight: 60
-url: id/cpp/extra-annotations/
+url: /id/cpp/extra-annotations/
 description: Bagian ini menjelaskan cara menambahkan, mendapatkan, dan menghapus jenis anotasi ekstra dari dokumen PDF Anda.
 lastmod: "2021-11-24"
 sitemap:

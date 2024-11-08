@@ -8,7 +8,7 @@ type: docs
 
 weight: 40
 
-url: ru/sharepoint/add-barcode-to-a-pdf-file/
+url: /ru/sharepoint/add-barcode-to-a-pdf-file/
 
 lastmod: "2020-12-16"
 

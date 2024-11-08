@@ -3,7 +3,7 @@ title: Mengonversi berbagai format file ke PDF
 linktitle: Mengonversi format file lain ke PDF 
 type: docs
 weight: 80
-url: id/php-java/convert-other-files-to-pdf/
+url: /id/php-java/convert-other-files-to-pdf/
 lastmod: "2024-05-20"
 description: Topik ini menunjukkan cara Aspose.PDF memungkinkan untuk mengonversi format file lain ke dokumen PDF.
 sitemap:

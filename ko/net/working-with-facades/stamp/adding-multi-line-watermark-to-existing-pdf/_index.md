@@ -2,7 +2,7 @@
 title: 여러 줄 워터마크 추가
 type: docs
 weight: 10
-url: ko/net/adding-multi-line-watermark-to-existing-pdf/
+url: /ko/net/adding-multi-line-watermark-to-existing-pdf/
 description: 이 섹션에서는 FormattedText 클래스를 사용하여 기존 PDF에 여러 줄 워터마크를 추가하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

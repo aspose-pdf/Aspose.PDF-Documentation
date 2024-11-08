@@ -3,7 +3,7 @@ title: Ekstrak Paragraf dari PDF
 linktitle: Ekstrak Paragraf
 type: docs
 weight: 20
-url: id/php-java/extract-paragraph-from-pdf/
+url: /id/php-java/extract-paragraph-from-pdf/
 description: Artikel ini menjelaskan cara menggunakan ParagraphAbsorber - alat khusus di Aspose.PDF untuk mengekstrak teks dari dokumen PDF.
 lastmod: "2024-05-20"
 sitemap:

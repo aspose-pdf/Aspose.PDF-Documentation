@@ -3,7 +3,7 @@ title: PDFにページ番号を追加する方法 (Python)
 linktitle: ページ番号を追加
 type: docs
 weight: 30
-url: ja/python-net/add-page-number/
+url: /ja/python-net/add-page-number/
 description: Aspose.PDF for Python via .NET を使用して、PageNumber Stamp クラスでPDFファイルにページ番号スタンプを追加することができます。
 lastmod: "2023-04-17"
 sitemap:

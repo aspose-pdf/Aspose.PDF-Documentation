@@ -2,7 +2,7 @@
 title: إضافة نص إلى ملف PDF موجود باستخدام Python
 type: docs
 weight: 20
-url: ar/java/add-text-to-an-existing-pdf-file-in-python/
+url: /ar/java/add-text-to-an-existing-pdf-file-in-python/
 lastmod: "2021-06-05"
 keywords: إضافة نص pdf بايثون، كتابة نص pdf بايثون
 description: مثال على الكود لكيفية إضافة أو كتابة نص في مستند Pdf باستخدام Python مع مكتبة PDF.

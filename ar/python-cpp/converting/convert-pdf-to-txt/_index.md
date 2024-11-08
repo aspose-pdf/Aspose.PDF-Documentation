@@ -3,7 +3,7 @@ title: تحويل PDF إلى TXT باستخدام بايثون
 linktitle: تحويل PDF إلى TXT
 type: docs
 weight: 20
-url: ar/python-cpp/convert-pdf-to-txt/
+url: /ar/python-cpp/convert-pdf-to-txt/
 lastmod: "2024-04-23"
 description: تتيح لك مكتبة Aspose.PDF for Python عبر C++ تحويل ملفات PDF إلى تنسيق TXT باستخدام بايثون.
 sitemap:

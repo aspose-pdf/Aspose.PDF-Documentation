@@ -3,7 +3,7 @@ title: تدوير صفحات PDF في Node.js
 linktitle: تدوير صفحات PDF
 type: docs
 weight: 50
-url: ar/nodejs-cpp/rotate-pages/
+url: /ar/nodejs-cpp/rotate-pages/
 description: يصف هذا الموضوع كيفية تدوير اتجاه الصفحة في ملف PDF موجود برمجيًا في بيئة Node.js.
 lastmod: "2023-11-16"
 sitemap:

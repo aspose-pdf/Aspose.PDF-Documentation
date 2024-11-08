@@ -2,7 +2,7 @@
 title: 在 Python 中设置 PDF 到期
 type: docs
 weight: 80
-url: zh/java/set-pdf-expiration-in-python/
+url: /zh/java/set-pdf-expiration-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Ajouter En-tête et Pied de page au PDF dans Node.js
 linktitle: Ajouter En-tête et Pied de page au PDF
 type: docs
 weight: 70
-url: fr/nodejs-cpp/add-headers-and-footers-of-pdf-file/
+url: /fr/nodejs-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF pour Node.js via C++ vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant AsposePdfAddTextHeaderFooter.
 lastmod: "2023-11-16"
 sitemap:

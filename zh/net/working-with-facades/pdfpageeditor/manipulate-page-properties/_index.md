@@ -2,7 +2,7 @@
 title: 操作页面属性
 type: docs
 weight: 80
-url: zh/net/manipulate-page-properties/
+url: /zh/net/manipulate-page-properties/
 description: 本节介绍如何使用 Aspose.PDF Facades 和 PdfPageEditor 类操作页面属性。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Объединение PDF программно
 linktitle: Объединение PDF файлов
 type: docs
 weight: 50
-url: ru/java/merge-pdf-documents/
+url: /ru/java/merge-pdf-documents/
 description: Эта страница объясняет, как объединить PDF-документы в один PDF-файл с помощью Java.
 lastmod: "2021-06-05"
 ---

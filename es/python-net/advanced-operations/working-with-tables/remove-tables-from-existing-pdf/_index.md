@@ -3,7 +3,7 @@ title: Eliminar tablas de un PDF existente
 linktitle: Eliminar Tablas
 type: docs
 weight: 50
-url: es/python-net/remove-tables-from-existing-pdf/
+url: /es/python-net/remove-tables-from-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

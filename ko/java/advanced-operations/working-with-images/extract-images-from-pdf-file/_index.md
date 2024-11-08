@@ -3,7 +3,7 @@ title: PDF 파일에서 이미지 추출
 linktitle: 이미지 추출
 type: docs
 weight: 30
-url: ko/java/extract-images-from-pdf-file/
+url: /ko/java/extract-images-from-pdf-file/
 description: 이 섹션에서는 Java 라이브러리를 사용하여 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
 lastmod: "2021-06-05"
 ---

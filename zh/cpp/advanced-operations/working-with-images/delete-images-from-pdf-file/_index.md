@@ -3,7 +3,7 @@ title: 使用C++从PDF文件中删除图像
 linktitle: 删除图像
 type: docs
 weight: 20
-url: zh/cpp/delete-images-from-pdf-file/
+url: /zh/cpp/delete-images-from-pdf-file/
 description: 本节解释如何使用Aspose.PDF for C++从PDF文件中删除图像。
 lastmod: "2021-12-18"
 ---

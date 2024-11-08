@@ -3,7 +3,7 @@ title: تحويل ملفات PDF إلى صيغ PDF/A
 linktitle: تحويل ملفات PDF إلى صيغ PDF/A
 type: docs
 weight: 100
-url: ar/net/convert-pdf-to-pdfa/
+url: /ar/net/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
 description: هذا الموضوع يوضح كيف يتيح Aspose.PDF تحويل ملف PDF إلى ملف PDF متوافق مع PDF/A.
 sitemap:
@@ -28,7 +28,7 @@ Aspose.PDF لـ .NET يقدم لك تطبيقًا مجانيًا عبر الإن
 [![Aspose.PDF تحويل PDF إلى PDF/A بواسطة التطبيق المجاني](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تحويل ملف PDF إلى PDF/A-1b
 

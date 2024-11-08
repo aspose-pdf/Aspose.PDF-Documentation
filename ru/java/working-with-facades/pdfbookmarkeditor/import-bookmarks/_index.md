@@ -2,7 +2,7 @@
 title: Импорт закладок из XML в существующий PDF файл (facades)
 type: docs
 weight: 30
-url: ru/java/import-bookmark/
+url: /ru/java/import-bookmark/
 description: В этом разделе объясняется, как импортировать закладки с помощью Aspose.PDF Facades, используя класс PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

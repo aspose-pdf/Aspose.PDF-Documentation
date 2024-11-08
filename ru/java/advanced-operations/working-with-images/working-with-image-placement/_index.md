@@ -3,7 +3,7 @@ title: Работа с размещением изображений
 linktitle: Размещение изображений
 type: docs
 weight: 50
-url: ru/java/working-with-image-placement/
+url: /ru/java/working-with-image-placement/
 description: Этот раздел описывает функции работы с размещением изображений в PDF файле с использованием Java библиотеки.
 lastmod: "2021-06-05"
 ---

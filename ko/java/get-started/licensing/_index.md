@@ -3,7 +3,7 @@ title: Licensing and limitations
 linktitle: Licensing and limitations
 type: docs
 weight: 90
-url: ko/java/licensing/
+url: /ko/java/licensing/
 description: Aspose. PDF for Java는 고객들에게 Classic 라이선스와 Metered License를 제공하여 제품을 보다 잘 탐색할 수 있도록 제한된 라이선스를 사용합니다.
 lastmod: "2021-06-05"
 sitemap:

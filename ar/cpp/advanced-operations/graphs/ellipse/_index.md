@@ -3,7 +3,7 @@ title: إضافة كائن القطع الناقص إلى ملف PDF
 linktitle: إضافة القطع الناقص
 type: docs
 weight: 60
-url: ar/cpp/add-ellipse/
+url: /ar/cpp/add-ellipse/
 description: توضح هذه المقالة كيفية إنشاء كائن قطع ناقص إلى ملف PDF باستخدام Aspose.PDF for C++.
 lastmod: "2021-12-21"
 sitemap:

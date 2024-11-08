@@ -3,7 +3,7 @@ title: PDFファイルにラインオブジェクトを追加する
 linktitle: ラインを追加
 type: docs
 weight: 40
-url: ja/cpp/add-line/
+url: /ja/cpp/add-line/
 description: この記事では、Aspose.PDF for C++を使用してPDFにラインオブジェクトを作成する方法を説明します。
 lastmod: "2021-12-18"
 sitemap:

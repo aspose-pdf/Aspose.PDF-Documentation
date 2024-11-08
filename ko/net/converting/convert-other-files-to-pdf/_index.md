@@ -3,7 +3,7 @@ title: 다른 파일 형식을 PDF로 변환하기 in .NET
 linktitle: 다른 파일 형식을 PDF로 변환하기
 type: docs
 weight: 80
-url: ko/net/convert-other-files-to-pdf/
+url: /ko/net/convert-other-files-to-pdf/
 lastmod: "2021-11-01"
 description: 이 주제에서는 Aspose.PDF를 사용하여 EPUB, MD, PCL, XPS, PS, XML 및 LaTeX와 같은 다른 파일 형식을 PDF 문서로 변환하는 방법을 보여줍니다.
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 이 문서에서는 **C#을 사용하여 다양한 다른 유형의 파일 형식을 PDF로 변환하는 방법**에 대해 설명합니다. 다음 주제를 다룹니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 사용할 수도 있습니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 사용할 수도 있습니다.
 
 _형식_: **EPUB**
 - [C# EPUB을 PDF로 변환](#csharp-convert-epub-to-pdf)

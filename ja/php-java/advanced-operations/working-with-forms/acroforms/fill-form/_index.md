@@ -3,7 +3,7 @@ title: AcroFormsを記入する
 linktitle: AcroFormsを記入する
 type: docs
 weight: 20
-url: ja/php-java/fill-form/
+url: /ja/php-java/fill-form/
 description: このセクションでは、Aspose.PDF for PHP via Javaを使用してPDFドキュメントのフォームフィールドに入力する方法を説明します。
 lastmod: "2024-06-05"
 sitemap:

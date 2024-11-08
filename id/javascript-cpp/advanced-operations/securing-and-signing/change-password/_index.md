@@ -3,7 +3,7 @@ title: Ubah Kata Sandi dari File PDF
 linktitle: Ubah Kata Sandi
 type: docs
 weight: 50
-url: id/javascript-cpp/change-password-pdf/
+url: /id/javascript-cpp/change-password-pdf/
 description: Ubah Kata Sandi dari File PDF dengan Aspose.PDF untuk JavaScript via C++.
 lastmod: "2023-09-13"
 sitemap:

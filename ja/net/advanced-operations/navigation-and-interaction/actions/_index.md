@@ -3,7 +3,7 @@ title: PDFでのアクションの操作
 linktitle: アクション
 type: docs
 weight: 20
-url: ja/net/actions/
+url: /ja/net/actions/
 description: このセクションでは、C#を使用してドキュメントとフォームフィールドにプログラムでアクションを追加する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "このセクションでは、C#を使用してドキュメントとフォームフィールドにプログラムでアクションを追加する方法について説明します。"
 }
 </script>
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## PDFファイルにハイパーリンクを追加する
 

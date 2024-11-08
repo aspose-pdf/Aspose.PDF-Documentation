@@ -3,7 +3,7 @@ title: Marcadores en PDF con JavaScript
 linktitle: Marcadores en PDF
 type: docs
 weight: 10
-url: es/javascript-cpp/bookmark/
+url: /es/javascript-cpp/bookmark/
 description: Puede agregar o eliminar marcadores en un documento PDF con JavaScript.
 lastmod: "2023-02-17"
 sitemap:

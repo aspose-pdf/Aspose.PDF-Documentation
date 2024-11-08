@@ -2,7 +2,7 @@
 title: 设置报表服务
 type: docs
 weight: 20
-url: zh/reportingservices/setting-up-reporting-services/
+url: /zh/reportingservices/setting-up-reporting-services/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@ title: Contoh Hello World menggunakan Python
 linktitle: Contoh Hello World
 type: docs
 weight: 20
-url: id/python-net/hello-world-example/
+url: /id/python-net/hello-world-example/
 description: Contoh ini menunjukkan cara membuat dokumen PDF sederhana dengan teks Hello World menggunakan Aspose.PDF untuk Python via .NET.
 lastmod: "2022-12-22"
 sitemap:

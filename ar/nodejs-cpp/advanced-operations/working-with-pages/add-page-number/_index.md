@@ -3,7 +3,7 @@ title: إضافة ترقيم الصفحات إلى PDF في Node.js
 linktitle: إضافة رقم الصفحة
 type: docs
 weight: 100
-url: ar/nodejs-cpp/add-page-number/
+url: /ar/nodejs-cpp/add-page-number/
 description: Aspose.PDF لـ Node.js عبر C++ يتيح لك إضافة ختم رقم الصفحة إلى ملف PDF باستخدام AsposePdfAddPageNum.
 lastmod: "2023-11-16"
 sitemap:

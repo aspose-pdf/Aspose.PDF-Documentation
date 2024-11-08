@@ -3,7 +3,7 @@ title: Ajouter et supprimer un signet
 linktitle: Ajouter et supprimer un signet
 type: docs
 weight: 10
-url: fr/net/add-and-delete-bookmark/
+url: /fr/net/add-and-delete-bookmark/
 description: Vous pouvez ajouter un signet à un document PDF avec C#. Il est possible de supprimer tous les signets ou des signets particuliers d'un document PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "Vous pouvez ajouter un signet à un document PDF avec C#. Il est possible de supprimer tous les signets ou des signets particuliers d'un document PDF."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter un Signet à un Document PDF
 

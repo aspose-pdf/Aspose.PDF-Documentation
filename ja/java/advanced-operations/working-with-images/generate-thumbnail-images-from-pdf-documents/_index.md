@@ -3,7 +3,7 @@ title: PDFドキュメントからサムネイル画像を生成
 linktitle: サムネイル画像を生成
 type: docs
 weight: 100
-url: ja/java/generate-thumbnail-images-from-pdf-documents/
+url: /ja/java/generate-thumbnail-images-from-pdf-documents/
 description: このセクションでは、Aspose.PDF for Javaを使用してPDFドキュメントからサムネイル画像を生成する方法について説明します。
 lastmod: "2021-06-05"
 ---

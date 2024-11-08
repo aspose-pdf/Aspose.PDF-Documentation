@@ -3,7 +3,7 @@ title: 改行を決定する
 linktitle: 改行を決定する
 type: docs
 weight: 70
-url: ja/java/determine-line-break/
+url: /ja/java/determine-line-break/
 description: Javaを使用してマルチラインのTextFragmentの改行を決定する方法について学ぶ
 lastmod: "2021-06-05"
 sitemap:

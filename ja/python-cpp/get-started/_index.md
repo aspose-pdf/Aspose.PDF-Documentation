@@ -3,7 +3,7 @@ title: 始める
 linktitle: 始める
 type: docs
 weight: 30
-url: ja/python-cpp/get-started/
+url: /ja/python-cpp/get-started/
 description: このページは、Aspose.PDF for Python via C++ を使用してPDFドキュメントを作成および編集する方法の概要です
 lastmod: "2021-06-05"   
 sitemap: 
@@ -41,6 +41,6 @@ PDFドキュメントを効果的に作成し、使い慣れたエディタを�
 
 ### もっと詳しく知る:
 
-- ["Hello, World" Pythonの例](/pdf/python-cpp/hello-world-example/)
-- [複雑なPDF](/pdf/python-cpp/complex-pdf-example/)
-- [他の例を実行する方法](/pdf/python-cpp/how-to-run-other-examples/)
+- ["Hello, World" Pythonの例](/pdf/ja/python-cpp/hello-world-example/)
+- [複雑なPDF](/pdf/ja/python-cpp/complex-pdf-example/)
+- [他の例を実行する方法](/pdf/ja/python-cpp/how-to-run-other-examples/)

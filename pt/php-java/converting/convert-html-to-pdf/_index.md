@@ -3,7 +3,7 @@ title: Convert HTML to PDF
 linktitle: Convert HTML to PDF
 type: docs
 weight: 40
-url: pt/php-java/convert-html-to-pdf/
+url: /pt/php-java/convert-html-to-pdf/
 lastmod: "2024-05-20"
 description: Este tópico mostra como o Aspose.PDF permite converter formatos HTML e MHTML para arquivo PDF.
 sitemap:

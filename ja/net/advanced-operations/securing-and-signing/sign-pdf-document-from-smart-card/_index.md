@@ -3,7 +3,7 @@ title: スマートカード署名をPDFに追加する方法
 linktitle: スマートカードでのPDF署名
 type: docs
 weight: 40
-url: ja/net/sign-pdf-document-from-smart-card/
+url: /ja/net/sign-pdf-document-from-smart-card/
 description: Aspose.PDF for .NETは、署名フィールドを使用してスマートカードからPDFドキュメントに署名することを可能にします。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Aspose.PDF for .NETは、キーストアの場所からデジタル署名を追加する機能を提供します。証明書ストア、スマートカード、またはシステムに接続されている[PIVカード](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card)によって提供される証明書を受け入れることによって署名を適用できます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 以下は、スマートカードからPDFドキュメントに署名するためのコードスニペットです：
 

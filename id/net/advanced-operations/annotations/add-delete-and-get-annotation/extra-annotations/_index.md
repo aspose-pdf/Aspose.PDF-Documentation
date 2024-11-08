@@ -3,7 +3,7 @@ title: Anotasi Ekstra menggunakan C#
 linktitle: Anotasi Ekstra
 type: docs
 weight: 60
-url: id/net/extra-annotations/
+url: /id/net/extra-annotations/
 description: Bagian ini menjelaskan bagaimana menambahkan, mendapatkan, dan menghapus berbagai jenis anotasi ekstra dari dokumen PDF Anda.
 lastmod: "2023-09-12"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 Anotasi Caret adalah simbol yang menunjukkan penyuntingan teks. Anotasi Caret juga merupakan anotasi markup, sehingga kelas Caret berasal dari kelas Markup dan juga menyediakan fungsi untuk mendapatkan atau mengatur properti Anotasi Caret dan mengatur ulang alur tampilan Anotasi Caret.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Langkah-langkah dalam membuat anotasi Caret:
 

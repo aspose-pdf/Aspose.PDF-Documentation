@@ -3,7 +3,7 @@ title: 从PDF文件中提取链接
 linktitle: 提取链接
 type: docs
 weight: 30
-url: zh/java/extract-links/
+url: /zh/java/extract-links/
 description: 使用Java从PDF中提取链接。本主题向您解释如何使用AnnotationSelector类提取链接。
 lastmod: "2021-06-05"
 sitemap:

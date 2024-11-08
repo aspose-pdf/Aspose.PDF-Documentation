@@ -3,7 +3,7 @@ title: PDF에 이미지 또는 텍스트가 포함되어 있는지 확인
 linktitle: 텍스트 및 이미지 존재 확인
 type: docs
 weight: 40
-url: ko/net/find-whether-pdf-file-contains-images-or-text-only/
+url: /ko/net/find-whether-pdf-file-contains-images-or-text-only/
 description: 이 주제는 PdfExtractor 클래스를 사용하여 PDF 파일에 이미지 또는 텍스트만 포함되어 있는지 찾는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Novedades de C++
 linktitle: Novedades
 type: docs
 weight: 10
-url: es/cpp/whatsnew/
+url: /es/cpp/whatsnew/
 description: En esta página se presentan las características nuevas más populares en Aspose.PDF para C++ que se han introducido en lanzamientos recientes.
 sitemap:
     changefreq: "monthly"

@@ -3,7 +3,7 @@ title: Converter documentos PDF em Node.js
 linktitle: Converter documentos PDF
 type: docs
 weight: 50
-url: pt/nodejs-cpp/conversion/
+url: /pt/nodejs-cpp/conversion/
 description: Esta seção contém artigos relacionados à conversão de documentos PDF para outros formatos usando o Aspose.PDF para Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:
@@ -20,30 +20,30 @@ Aspose.PDF para Node.js via C++ permite converter documentos PDF para vários fo
 
 Documentos do Microsoft Word são os mais versáteis e editáveis possíveis. Neste artigo, você aprenderá como converter PDF para Word no ambiente Node.js usando Aspose.PDF.
 
-- [Converter PDF para DOC](/pdf/nodejs-cpp/convert-pdf-to-doc/) - você pode converter seu documento PDF para o formato Word com Node.js.
+- [Converter PDF para DOC](/pdf/pt/nodejs-cpp/convert-pdf-to-doc/) - você pode converter seu documento PDF para o formato Word com Node.js.
 
 Os formatos de número são necessários não apenas para tornar os dados na tabela mais fáceis de ler, mas também para tornar a tabela mais fácil de usar. Claro, se você precisar converter esses dados de um documento PDF para o formato Excel, use nosso Aspose.PDF para Node.js.
 
-- [Converter PDF para Microsoft XLSX](/pdf/nodejs-cpp/convert-pdf-to-xlsx/) - esta seção descreve como converter um documento PDF para XLSX.
+- [Converter PDF para Microsoft XLSX](/pdf/pt/nodejs-cpp/convert-pdf-to-xlsx/) - esta seção descreve como converter um documento PDF para XLSX.
 
 O formato PowerPoint é usado para criar várias apresentações. Arquivos PPT contêm um grande número de slides ou páginas contendo várias informações.
 
-- [Converter PDF para Microsoft PowerPoint](/pdf/nodejs-cpp/convert-pdf-to-powerpoint/) - aqui estamos falando sobre converter PDF para PowerPoint acompanhando o processo de conversão
+- [Converter PDF para Microsoft PowerPoint](/pdf/pt/nodejs-cpp/convert-pdf-to-powerpoint/) - aqui estamos falando sobre converter PDF para PowerPoint acompanhando o processo de conversão
 
 A HyperText Markup Language é uma linguagem de descrição de documentos de hipertexto, uma linguagem padrão para criar páginas da web. Com o Aspose.PDF para Node.js, você pode facilmente converter documentos HTML e vice-versa.
 
 Existem muitos formatos de imagem que precisam ser convertidos para PDF para diferentes propósitos. Aspose.PDF para Node.js permite os formatos de imagem mais populares.
 
-- [Converter PDF para vários formatos de Imagens](/pdf/nodejs-cpp/convert-pdf-to-images-format/) - converter páginas PDF como imagens em JPEG, PNG, SVG e outros formatos
+- [Converter PDF para vários formatos de Imagens](/pdf/pt/nodejs-cpp/convert-pdf-to-images-format/) - converter páginas PDF como imagens em JPEG, PNG, SVG e outros formatos
 Esta seção inclui formatos como: EPUB, XPS, TeX, Texto e PDF em tons de cinza.
 
-- [Converter arquivo PDF para outros formatos](/pdf/nodejs-cpp/convert-pdf-to-other-files/) - este tópico descreve o método para converter documento PDF para vários formatos
+- [Converter arquivo PDF para outros formatos](/pdf/pt/nodejs-cpp/convert-pdf-to-other-files/) - este tópico descreve o método para converter documento PDF para vários formatos
 
 PDF/A é uma versão do PDF projetada para o arquivamento a longo prazo de documentos eletrônicos. Para ser honesto, externamente, é muito difícil determinar se é PDF ou PDF/A. Para verificar esse arquivo, são usados validadores. Confira os seguintes artigos para uma conversão de qualidade de PDF para PDF/A e vice-versa.
 
-- [Converter PDF para formatos PDF/A](/pdf/nodejs-cpp/convert-pdf-to-pdfa/) - o kit de ferramentas Node.js da Aspose.PDF tem uma maneira fácil de converter PDF para PDF/A.
+- [Converter PDF para formatos PDF/A](/pdf/pt/nodejs-cpp/convert-pdf-to-pdfa/) - o kit de ferramentas Node.js da Aspose.PDF tem uma maneira fácil de converter PDF para PDF/A.
 
-- [Converter PDF/A para formato PDF](/pdf/nodejs-cpp/convert-pdfa-to-pdf/) - converta PDF/A para formato PDF com Node.js de forma fácil, rápida e de alta qualidade.
+- [Converter PDF/A para formato PDF](/pdf/pt/nodejs-cpp/convert-pdfa-to-pdf/) - converta PDF/A para formato PDF com Node.js de forma fácil, rápida e de alta qualidade.
 
 ## Tente converter arquivos PDF online
 

@@ -3,7 +3,7 @@ title: הגדרת תכונות אלמנטים מבניים
 linktitle: הגדרת תכונות אלמנטים מבניים
 type: docs
 weight: 30
-url: ar/net/setting-structure-elements-properties/
+url: /ar/net/setting-structure-elements-properties/
 description: תוכל להגדיר תכונות של אלמנטים מבניים שונים במסמך PDF עם Aspose.PDF עבור .NET.
 lastmod: "2022-02-17"
 sitemap:

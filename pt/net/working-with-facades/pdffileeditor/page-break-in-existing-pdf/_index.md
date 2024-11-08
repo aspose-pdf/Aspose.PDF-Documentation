@@ -2,7 +2,7 @@
 title: Quebra de Página em PDF Existente
 type: docs
 weight: 30
-url: pt/net/page-break-in-existing-pdf/
+url: /pt/net/page-break-in-existing-pdf/
 description: Esta seção explica como quebrar páginas em um PDF existente usando a classe PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

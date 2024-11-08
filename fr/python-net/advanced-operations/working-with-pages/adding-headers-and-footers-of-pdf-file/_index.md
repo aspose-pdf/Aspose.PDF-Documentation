@@ -3,7 +3,7 @@ title: Ajouter un en-tête et un pied de page au PDF en utilisant Python
 linktitle: Ajouter un en-tête et un pied de page au PDF
 type: docs
 weight: 50
-url: fr/python-net/add-headers-and-footers-of-pdf-file/
+url: /fr/python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF pour Python via .NET vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp.
 lastmod: "2023-04-17"
 sitemap:

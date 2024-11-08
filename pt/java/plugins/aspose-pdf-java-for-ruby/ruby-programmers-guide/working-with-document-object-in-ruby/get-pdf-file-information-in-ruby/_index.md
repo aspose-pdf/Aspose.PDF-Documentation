@@ -2,7 +2,7 @@
 title: Obter Informações do Arquivo PDF em Ruby
 type: docs
 weight: 50
-url: pt/java/get-pdf-file-information-in-ruby/
+url: /pt/java/get-pdf-file-information-in-ruby/
 lastmod: "2021-06-05"
 ---
 

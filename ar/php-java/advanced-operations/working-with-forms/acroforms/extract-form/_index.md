@@ -3,7 +3,7 @@ title: استخراج البيانات من نماذج AcroForms
 linktitle: استخراج البيانات من نماذج AcroForms
 type: docs
 weight: 30
-url: ar/php-java/extract-form/
+url: /ar/php-java/extract-form/
 description: يوضح هذا القسم كيفية استخراج النماذج من مستند PDF الخاص بك باستخدام Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

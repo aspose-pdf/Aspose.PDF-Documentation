@@ -2,7 +2,7 @@
 title: 텍스트 교체 - Facades
 type: docs
 weight: 40
-url: ko/net/replace-text-facades/
+url: /ko/net/replace-text-facades/
 description: 이 섹션은 PdfContentEditor 클래스를 사용하여 텍스트 - Facades를 작업하는 방법을 설명합니다.
 lastmod: "2021-06-24"
 draft: false

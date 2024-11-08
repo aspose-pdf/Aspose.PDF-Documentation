@@ -3,7 +3,7 @@ title: Замена текста в PDF с помощью Python
 linktitle: Замена текста в PDF
 type: docs
 weight: 40
-url: ru/python-net/replace-text-in-pdf/
+url: /ru/python-net/replace-text-in-pdf/
 description: Узнайте больше о различных способах замены и удаления текста с помощью библиотеки Aspose.PDF для Python через .NET.
 lastmod: "2024-02-17"
 sitemap:

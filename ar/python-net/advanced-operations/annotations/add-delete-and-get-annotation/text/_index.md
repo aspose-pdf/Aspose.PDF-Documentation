@@ -3,7 +3,7 @@ title: استخدام التعليقات النصية لملفات PDF عبر ب
 linktitle: التعليقات النصية
 type: docs
 weight: 10
-url: ar/python-net/text-annotation/
+url: /ar/python-net/text-annotation/
 description: Aspose.PDF لبايثون يتيح لك إضافة، الحصول على، وحذف التعليقات النصية من وثيقة PDF الخاصة بك.
 lastmod: "2023-02-17"
 sitemap:

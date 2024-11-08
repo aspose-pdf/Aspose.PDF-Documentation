@@ -2,7 +2,7 @@
 title: PDF에서 이미지 추출하기 (facades)
 type: docs
 weight: 30
-url: ko/java/extract-images/
+url: /ko/java/extract-images/
 description: 이 섹션에서는 PdfExtractor 클래스를 사용하여 Aspose.PDF Facades로 이미지를 추출하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Support Technique Gratuit de Classe Mondiale
 type: docs
 weight: 50
-url: fr/reportingservices/world-class-free-technical-support/
+url: /fr/reportingservices/world-class-free-technical-support/
 lastmod: "2021-06-05"
 ---
 

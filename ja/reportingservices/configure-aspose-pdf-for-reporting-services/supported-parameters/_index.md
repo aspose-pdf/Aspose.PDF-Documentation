@@ -2,7 +2,7 @@
 title: サポートされているパラメーター
 type: docs
 weight: 20
-url: ja/reportingservices/supported-parameters/
+url: /ja/reportingservices/supported-parameters/
 lastmod: "2021-06-05"
 ---
 
@@ -12,13 +12,13 @@ lastmod: "2021-06-05"
 
 **このセクションには次のトピックが含まれています:**
 
-- [ページの向き](/pdf/reportingservices/page-orientation/)
-- [HTMLフォーマット](/pdf/reportingservices/html-formatting/)
-- [セキュリティ設定](/pdf/reportingservices/security-setting/)
-- [IsFontEmbedded](/pdf/reportingservices/isfontembedded/)
+- [ページの向き](/pdf/ja/reportingservices/page-orientation/)
+- [HTMLフォーマット](/pdf/ja/reportingservices/html-formatting/)
+- [セキュリティ設定](/pdf/ja/reportingservices/security-setting/)
+- [IsFontEmbedded](/pdf/ja/reportingservices/isfontembedded/)
 
-- [ページサイズ](/pdf/reportingservices/pagesize/)
-- [ページ余白のサイズ](/pdf/reportingservices/page-margin-size/)
-- [XMPメタデータ](/pdf/reportingservices/xmp-metadata/)
-- [デバッグ情報](/pdf/reportingservices/debug-information/)
-- [PDF_A準拠](/pdf/reportingservices/pdf_a-conformance/)
+- [ページサイズ](/pdf/ja/reportingservices/pagesize/)
+- [ページ余白のサイズ](/pdf/ja/reportingservices/page-margin-size/)
+- [XMPメタデータ](/pdf/ja/reportingservices/xmp-metadata/)
+- [デバッグ情報](/pdf/ja/reportingservices/debug-information/)
+- [PDF_A準拠](/pdf/ja/reportingservices/pdf_a-conformance/)

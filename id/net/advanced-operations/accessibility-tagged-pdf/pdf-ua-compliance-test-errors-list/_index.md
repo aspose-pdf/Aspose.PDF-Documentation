@@ -3,7 +3,7 @@ title: PDF-UA Compliance Test - Errors List
 linktitle: PDF-UA Compliance Test - Errors List
 type: docs
 weight: 50
-url: id/net/pdf-ua-compliance-test-errors-list/
+url: /id/net/pdf-ua-compliance-test-errors-list/
 description: Artikel ini menunjukkan daftar kesalahan yang dapat muncul selama pengujian kepatuhan PDF/UA menggunakan API Aspose.PDF dan C# atau VB.
 lastmod: "2022-02-17"
 sitemap:

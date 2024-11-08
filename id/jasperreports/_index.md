@@ -10,7 +10,7 @@ type: docs
 
 weight: 120
 
-url: id/jasperreports/
+url: /id/jasperreports/
 
 is_root: true
 
@@ -32,22 +32,22 @@ Aspose.PDF untuk JasperReports adalah komponen fleksibel yang dirancang untuk me
 
 Berikut adalah tautan ke beberapa sumber daya berguna yang mungkin Anda perlukan untuk menyelesaikan tugas Anda.
 
-- [Ikhtisar Produk Aspose.PDF untuk JasperReports](/pdf/jasperreports/product-overview/)
+- [Ikhtisar Produk Aspose.PDF untuk JasperReports](/pdf/id/jasperreports/product-overview/)
 
-- [Format File yang Didukung Aspose.PDF untuk JasperReports](/pdf/jasperreports/supported-file-formats/)
+- [Format File yang Didukung Aspose.PDF untuk JasperReports](/pdf/id/jasperreports/supported-file-formats/)
 
-- [Tur Fitur Aspose.PDF untuk JasperReports](/pdf/jasperreports/feature-tour/)
+- [Tur Fitur Aspose.PDF untuk JasperReports](/pdf/id/jasperreports/feature-tour/)
 
 - [Catatan Rilis Aspose.PDF untuk JasperReports](https://releases.aspose.com/pdf/jassperreport/release-notes/)
 
 - [Unduh Aspose.PDF untuk JasperReports](https://releases.aspose.com/pdf/jassperreport/)
 
-- [Galeri Laporan Contoh Aspose.PDF untuk JasperReports](/pdf/jasperreports/sample-reports-gallery/)
+- [Galeri Laporan Contoh Aspose.PDF untuk JasperReports](/pdf/id/jasperreports/sample-reports-gallery/)
 
-- [Instalasi Aspose.PDF untuk JasperReports](/pdf/jasperreports/installation/)
+- [Instalasi Aspose.PDF untuk JasperReports](/pdf/id/jasperreports/installation/)
 
-- [Lisensi Aspose.PDF untuk JasperReports](/pdf/jasperreports/licensing/)
+- [Lisensi Aspose.PDF untuk JasperReports](/pdf/id/jasperreports/licensing/)
 
-- [Evaluasi Aspose.Pdf](/pdf/jasperreports/evaluate-aspose-pdf/)
+- [Evaluasi Aspose.Pdf](/pdf/id/jasperreports/evaluate-aspose-pdf/)
 
-- [Batasan API Aspose.PDF untuk JasperReports](/pdf/jasperreports/api-limitations/)
+- [Batasan API Aspose.PDF untuk JasperReports](/pdf/id/jasperreports/api-limitations/)

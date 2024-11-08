@@ -2,7 +2,7 @@
 title: 설치 후 활성화 및 비활성화
 type: docs
 weight: 40
-url: ko/sharepoint/activation-and-deactivation-after-installation/
+url: /ko/sharepoint/activation-and-deactivation-after-installation/
 lastmod: "2020-12-16"
 description: PDF SharePoint API 설치 후 사이트 컬렉션의 루트 웹 사이트에서 사이트 작업 메뉴를 사용하여 활성화 및 비활성화할 수 있습니다.
 ---

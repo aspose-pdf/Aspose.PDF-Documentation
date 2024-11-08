@@ -3,7 +3,7 @@ title: PDF에 배경 추가
 linktitle: 배경 추가
 type: docs
 weight: 110
-url: ko/java/add-backgrounds/
+url: /ko/java/add-backgrounds/
 descriptions: Java로 PDF 파일에 배경 이미지를 추가하세요. BackgroundArtifact 객체를 사용합니다.
 lastmod: "2021-06-05"
 sitemap:

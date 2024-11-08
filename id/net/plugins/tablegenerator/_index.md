@@ -2,7 +2,7 @@
 title: Table Generator
 type: docs
 weight: 130
-url: id/net/plugins/tablegenerator/
+url: /id/net/plugins/tablegenerator/
 description: Memungkinkan menambahkan/memasukkan tabel pada nomor halaman tertentu dari dokumen PDF.
 lastmod: "2024-01-24"
 draft: false

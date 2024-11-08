@@ -3,7 +3,7 @@ title: Удаление вложений из PDF в Node.js
 linktitle: Удаление вложения из существующего PDF
 type: docs
 weight: 10
-url: ru/nodejs-cpp/removing-attachment-from-an-existing-pdf/
+url: /ru/nodejs-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF может удалять вложения из ваших PDF-документов. Используйте среду Node.js для удаления вложений в PDF-файлах с помощью Aspose.PDF.
 lastmod: "2023-11-16"
 sitemap:

@@ -2,7 +2,7 @@
 title: Pythonでのドキュメントウィンドウおよびページ表示プロパティの取得
 type: docs
 weight: 30
-url: ja/java/get-document-window-and-page-display-properties-in-python/
+url: /ja/java/get-document-window-and-page-display-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

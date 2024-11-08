@@ -2,7 +2,7 @@
 title: Definir Expiração de PDF em Python
 type: docs
 weight: 80
-url: pt/java/set-pdf-expiration-in-python/
+url: /pt/java/set-pdf-expiration-in-python/
 lastmod: "2021-06-05"
 ---
 

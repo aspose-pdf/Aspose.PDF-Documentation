@@ -3,7 +3,7 @@ title: Tambahkan latar belakang ke PDF dengan C++
 linktitle: Tambahkan latar belakang
 type: docs
 weight: 110
-url: id/cpp/add-backgrounds/
+url: /id/cpp/add-backgrounds/
 descriptions: Tambahkan gambar latar belakang ke file PDF Anda dengan C++. Gunakan objek BackgroundArtifact.
 lastmod: "2021-12-03"
 sitemap:

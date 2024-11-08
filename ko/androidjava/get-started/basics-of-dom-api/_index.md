@@ -3,7 +3,7 @@ title: Aspose.PDF DOM API의 기초
 linktitle: DOM API의 기초
 type: docs
 weight: 10
-url: ko/androidjava/basics-of-dom-api/
+url: /ko/androidjava/basics-of-dom-api/
 description: Aspose.PDF for Android via Java는 또한 DOM의 아이디어를 사용하여 객체 관점에서 PDF 문서의 구조를 나타냅니다. 여기에서 이 구조의 설명을 읽을 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

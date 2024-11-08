@@ -3,7 +3,7 @@ title: Trabalhando com Acessibilidade e PDFs Marcados
 linktitle: Acessibilidade. PDF Marcado
 type: docs
 weight: 120
-url: pt/java/accessibility-tagged-pdf/
+url: /pt/java/accessibility-tagged-pdf/
 description: Aspose.PDF fornece a capacidade de criar documentos PDF Marcados, permitindo marcar os elementos estruturais. Saiba mais sobre como obter PDFs acessíveis.
 lastmod: "2021-06-05"
 sitemap:
@@ -22,11 +22,11 @@ This section covers following topic:
 
 Esta seção cobre o seguinte tópico:
 
-- [Create Tagged PDF](/pdf/java/create-tagged-pdf-documents/)  
-  - [Criar PDF Marcado](/pdf/java/create-tagged-pdf-documents/)
-- [Extract Tagged Content from Tagged PDFs](/pdf/java/extract-tagged-content-from-tagged-pdfs/)  
-  - [Extrair Conteúdo Marcado de PDFs Marcados](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
-- [Setting Structure Elements Properties](/pdf/java/set-tagged-pdfs-element-properties/)  
-  - [Configurando Propriedades de Elementos Estruturais](/pdf/java/set-tagged-pdfs-element-properties/)
-- [Working with Table in Tagged PDFs](/pdf/java/working-with-table-in-tagged-pdfs/)  
-  - [Trabalhando com Tabela em PDFs Marcados](/pdf/java/working-with-table-in-tagged-pdfs/)
+- [Create Tagged PDF](/pdf/pt/java/create-tagged-pdf-documents/)  
+  - [Criar PDF Marcado](/pdf/pt/java/create-tagged-pdf-documents/)
+- [Extract Tagged Content from Tagged PDFs](/pdf/pt/java/extract-tagged-content-from-tagged-pdfs/)  
+  - [Extrair Conteúdo Marcado de PDFs Marcados](/pdf/pt/java/extract-tagged-content-from-tagged-pdfs/)
+- [Setting Structure Elements Properties](/pdf/pt/java/set-tagged-pdfs-element-properties/)  
+  - [Configurando Propriedades de Elementos Estruturais](/pdf/pt/java/set-tagged-pdfs-element-properties/)
+- [Working with Table in Tagged PDFs](/pdf/pt/java/working-with-table-in-tagged-pdfs/)  
+  - [Trabalhando com Tabela em PDFs Marcados](/pdf/pt/java/working-with-table-in-tagged-pdfs/)

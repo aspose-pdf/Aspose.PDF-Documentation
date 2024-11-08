@@ -3,7 +3,7 @@ title: 添加和删除书签
 linktitle: 添加和删除书签
 type: docs
 weight: 10
-url: zh/cpp/add-and-delete-bookmark/
+url: /zh/cpp/add-and-delete-bookmark/
 description: 本主题解释如何使用C++库向PDF文档添加书签。您还可以从PDF文档中删除所有或特定书签。
 lastmod: "2022-01-31"
 sitemap:

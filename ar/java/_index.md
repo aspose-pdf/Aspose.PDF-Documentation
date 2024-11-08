@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for Java
 second_title: Aspose.PDF for Java
 type: docs
 weight: 20
-url: ar/java/
+url: /ar/java/
 is_root: true
 lastmod: "2021-06-05"
 ---
@@ -21,26 +21,26 @@ Aspose.PDF هو مكون جافا مصمم للسماح للمطورين بإن�
 
 <h2>الفصول </h2>
 
-- [ما الجديد](/pdf/java/whatsnew/)
-- [نظرة عامة](/pdf/java/overview/)
-- [البدء](/pdf/java/get-started/)
+- [ما الجديد](/pdf/ar/java/whatsnew/)
+- [نظرة عامة](/pdf/ar/java/overview/)
+- [البدء](/pdf/ar/java/get-started/)
 
-- [العمليات الأساسية](/pdf/java/basic-operations/)
-- [تحويل المستندات](/pdf/java/converting/)
-- [تحليل مستندات PDF](/pdf/java/parsing/)
-- [العمليات المتقدمة](/pdf/java/advanced-operations/)
+- [العمليات الأساسية](/pdf/ar/java/basic-operations/)
+- [تحويل المستندات](/pdf/ar/java/converting/)
+- [تحليل مستندات PDF](/pdf/ar/java/parsing/)
+- [العمليات المتقدمة](/pdf/ar/java/advanced-operations/)
 - [ملاحظات الإصدار](https://releases.aspose.com/pdf/java/release-notes/)
 
 <h2>موارد Aspose.PDF لـ Java</h2>
 فيما يلي روابط لبعض الموارد المفيدة التي قد تحتاجها لإنجاز مهامك.
 
-- [التوثيق الإلكتروني لـ Aspose.PDF لـ Java](/pdf/java/)
-- [ميزات Aspose.PDF لـ Java](/pdf/java/key-features/)
+- [التوثيق الإلكتروني لـ Aspose.PDF لـ Java](/pdf/ar/java/)
+- [ميزات Aspose.PDF لـ Java](/pdf/ar/java/key-features/)
 - [ملاحظات إصدار Aspose.PDF لـ Java](https://releases.aspose.com/pdf/java/release-notes/)
 - [صفحة منتج Aspose.PDF لـ Java](https://products.aspose.com/pdf/java)
 - [مستودع Maven لـ Aspose.PDF لـ Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
 - [تنزيل Aspose.PDF لـ Java](https://releases.aspose.com/pdf/java/)
-- [تثبيت Aspose.PDF لـ Java من مستودع Aspose](/pdf/java/installation/)
+- [تثبيت Aspose.PDF لـ Java من مستودع Aspose](/pdf/ar/java/installation/)
 - [دليل مرجعي لـ API لـ Aspose.PDF لـ Java](https://reference.aspose.com/java/pdf)
 
 - [تنزيل الأمثلة من مستودع GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java)

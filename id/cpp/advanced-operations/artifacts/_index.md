@@ -3,7 +3,7 @@ title: Bekerja dengan Artefak di C++
 linktitle: Bekerja dengan Artefak
 type: docs
 weight: 110
-url: id/cpp/artifacts/
+url: /id/cpp/artifacts/
 description: Halaman ini menjelaskan cara bekerja dengan kelas Artifact menggunakan Aspose.PDF untuk C++. Cuplikan kode menunjukkan cara menambahkan gambar latar belakang ke halaman PDF dan cara mendapatkan setiap watermark pada halaman pertama dari file PDF.
 lastmod: "2021-11-22"
 sitemap:

@@ -3,7 +3,7 @@ title: Obter, Atualizar e Expandir um Marcador usando Python
 linktitle: Obter, Atualizar e Expandir um Marcador
 type: docs
 weight: 20
-url: pt/python-net/get-update-and-expand-bookmark/
+url: /pt/python-net/get-update-and-expand-bookmark/
 description: Este artigo descreve como usar marcadores em um arquivo PDF com nossa biblioteca Aspose.PDF para Python.
 lastmod: "2023-02-17"
 sitemap:

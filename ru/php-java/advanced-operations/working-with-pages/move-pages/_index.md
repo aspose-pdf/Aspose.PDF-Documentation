@@ -3,7 +3,7 @@ title: Перемещение страниц PDF
 linktitle: Перемещение страниц PDF
 type: docs
 weight: 20
-url: ru/php-java/move-pages/
+url: /ru/php-java/move-pages/
 description: Попробуйте переместить страницы в нужное место или в конец файла PDF с помощью Aspose.PDF для PHP через Java.
 lastmod: "2024-06-05"
 sitemap:

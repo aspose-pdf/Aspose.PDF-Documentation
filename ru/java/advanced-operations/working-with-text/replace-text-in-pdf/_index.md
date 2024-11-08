@@ -3,7 +3,7 @@ title: Замена текста в PDF
 linktitle: Замена текста в PDF
 type: docs
 weight: 40
-url: ru/java/replace-text-in-a-pdf-document/
+url: /ru/java/replace-text-in-a-pdf-document/
 description: Узнайте больше о различных способах замены и удаления текста из PDF. Aspose.PDF позволяет заменять текст в определенной области или с использованием регулярного выражения.
 lastmod: "2021-06-05"
 sitemap:

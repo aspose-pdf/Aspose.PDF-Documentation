@@ -2,7 +2,7 @@
 title: PdfFileMend 类
 type: docs
 weight: 20
-url: zh/net/pdffilemend-class/
+url: /zh/net/pdffilemend-class/
 description: 本节解释如何使用 PdfFileMend 类与 Aspose.PDF Facades 一起工作。
 lastmod: "2021-06-05"
 draft: false
@@ -11,4 +11,4 @@ sitemap:
     priority: 0.7
 ---
 
-- [使用 PdfFileMend 类添加图像和文本](/pdf/net/adding-images-and-text-using-pdffilemend-class/)
+- [使用 PdfFileMend 类添加图像和文本](/pdf/zh/net/adding-images-and-text-using-pdffilemend-class/)

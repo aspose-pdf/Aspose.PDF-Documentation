@@ -3,7 +3,7 @@ title: Добавление аннотаций к фигурам с исполь
 linktitle: Аннотации к фигурам
 type: docs
 weight: 30
-url: ru/cpp/figures-annotation/
+url: /ru/cpp/figures-annotation/
 description: В этой статье описывается, как добавлять, получать и удалять аннотации к фигурам в вашем PDF-документе с помощью Aspose.PDF для C++
 lastmod: "2021-11-24"
 sitemap:

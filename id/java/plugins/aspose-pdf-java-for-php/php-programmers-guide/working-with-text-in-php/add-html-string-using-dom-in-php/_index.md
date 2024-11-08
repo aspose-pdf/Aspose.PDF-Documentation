@@ -2,7 +2,7 @@
 title: Tambahkan String HTML menggunakan DOM di PHP
 type: docs
 weight: 10
-url: id/java/add-html-string-using-dom-in-php/
+url: /id/java/add-html-string-using-dom-in-php/
 lastmod: "2021-06-05"
 ---
 

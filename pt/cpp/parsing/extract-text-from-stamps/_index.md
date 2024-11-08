@@ -3,7 +3,7 @@ title: Extrair Texto De Carimbos
 linktitle: Extrair Texto De Carimbos
 type: docs
 weight: 60
-url: pt/cpp/extract-text-from-stamps/
+url: /pt/cpp/extract-text-from-stamps/
 ---
 
 ## Extrair Texto de Anotações de Carimbo

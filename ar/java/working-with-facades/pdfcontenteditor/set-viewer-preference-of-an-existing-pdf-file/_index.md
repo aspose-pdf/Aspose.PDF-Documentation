@@ -2,7 +2,7 @@
 title: تعيين تفضيلات العارض لملف PDF موجود
 type: docs
 weight: 60
-url: ar/java/set-viewer-preference-of-an-existing-pdf-file/
+url: /ar/java/set-viewer-preference-of-an-existing-pdf-file/
 description: يوضح هذا القسم كيفية العمل مع Aspose.PDF Facades باستخدام فئة PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

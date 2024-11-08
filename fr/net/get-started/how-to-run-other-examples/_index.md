@@ -3,7 +3,7 @@ title: Comment exécuter d'autres exemples
 linktitle: Comment exécuter d'autres exemples
 type: docs
 weight: 50
-url: fr/net/how-to-run-other-examples/    
+url: /fr/net/how-to-run-other-examples/    
 description: Cette page présente des directives qui seront utiles pour respecter les exigences suivantes avant de télécharger et d'exécuter les exemples.
 lastmod: "2021-06-05"
 sitemap:

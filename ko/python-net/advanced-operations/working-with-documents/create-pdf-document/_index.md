@@ -3,7 +3,7 @@ title: Python을 사용하여 PDF 생성하는 방법
 linktitle: PDF 문서 생성
 type: docs
 weight: 10
-url: ko/python-net/create-pdf-document/
+url: /ko/python-net/create-pdf-document/
 description: Aspose.PDF for Python via .NET으로 PDF 문서를 생성하고 형식화합니다.
 lastmod: "2023-04-12"
 sitemap:

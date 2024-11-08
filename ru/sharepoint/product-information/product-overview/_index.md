@@ -4,7 +4,7 @@ title: Обзор продукта
 
 weight: 10
 
-url: ru/sharepoint/product-overview/
+url: /ru/sharepoint/product-overview/
 
 lastmod: "2020-12-16"
 
@@ -34,7 +34,7 @@ Aspose.PDF для SharePoint предназначен для использов�
 
 
 
-Эта документация описывает [возможности](/pdf/sharepoint/features/), [установку](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/), [ограничения оценки](/pdf/sharepoint/evaluate-aspose-pdf/), [лицензирование](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/), общие случаи использования и настройки Aspose.PDF для SharePoint.
+Эта документация описывает [возможности](/pdf/ru/sharepoint/features/), [установку](/pdf/ru/sharepoint/install-aspose-pdf-for-sharepoint/), [ограничения оценки](/pdf/ru/sharepoint/evaluate-aspose-pdf/), [лицензирование](/pdf/ru/sharepoint/license-aspose-pdf-for-sharepoint/), общие случаи использования и настройки Aspose.PDF для SharePoint.
 
 
 {{% /alert %}}

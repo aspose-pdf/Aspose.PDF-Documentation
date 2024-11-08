@@ -2,7 +2,7 @@
 title: Aspose.PDFのロケールを設定する方法
 type: docs
 weight: 30
-url: ja/java/how-to-set-locale-for-aspose-pdf/
+url: /ja/java/how-to-set-locale-for-aspose-pdf/
 lastmod: "2022-01-27"
 ---
 

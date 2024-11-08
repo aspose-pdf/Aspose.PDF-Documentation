@@ -3,7 +3,7 @@ title: Ubah Ukuran Halaman PDF dengan Python
 linktitle: Ubah Ukuran Halaman PDF
 type: docs
 weight: 60
-url: id/python-net/change-page-size/
+url: /id/python-net/change-page-size/
 description: Ubah Ukuran Halaman dari dokumen PDF Anda menggunakan Aspose.PDF untuk Python melalui pustaka .NET.
 lastmod: "2023-04-17"
 sitemap:

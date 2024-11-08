@@ -3,7 +3,7 @@ title: Extractar Contenido Etiquetado de PDF
 linktitle: Extractar Contenido Etiquetado
 type: docs
 weight: 20
-url: es/net/extract-tagged-content-from-tagged-pdfs/
+url: /es/net/extract-tagged-content-from-tagged-pdfs/
 description: Este artículo explica cómo extraer contenido etiquetado de un documento PDF utilizando Aspose.PDF para .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 En este artículo aprenderás cómo extraer contenido etiquetado de un documento PDF usando C#.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Obtención de Contenido PDF Etiquetado
 

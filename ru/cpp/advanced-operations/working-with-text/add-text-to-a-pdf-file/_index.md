@@ -3,7 +3,7 @@ title: Добавление текста в PDF с использованием 
 linktitle: Добавление текста в PDF
 type: docs
 weight: 10
-url: ru/cpp/add-text-to-pdf-file/
+url: /ru/cpp/add-text-to-pdf-file/
 description: Эта статья описывает различные аспекты работы с текстом в Aspose.PDF. Узнайте, как добавить текст в PDF, добавить HTML-фрагменты или использовать пользовательские шрифты OTF.
 lastmod: "2021-12-10"
 sitemap:

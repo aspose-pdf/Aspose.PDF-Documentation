@@ -3,7 +3,7 @@ title: Tambahkan Anotasi Gambar menggunakan Python
 linktitle: Anotasi Gambar
 type: docs
 weight: 30
-url: id/python-net/figures-annotation/
+url: /id/python-net/figures-annotation/
 description: Artikel ini menjelaskan bagaimana cara menambahkan, mendapatkan, dan menghapus anotasi gambar dari dokumen PDF Anda dengan Aspose.PDF untuk Python melalui .NET
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 更改PDF文件的密码
 linktitle: 更改密码
 type: docs
 weight: 50
-url: zh/javascript-cpp/change-password-pdf/
+url: /zh/javascript-cpp/change-password-pdf/
 description: 使用Aspose.PDF for JavaScript通过C++更改PDF文件的密码。
 lastmod: "2023-09-13"
 sitemap:

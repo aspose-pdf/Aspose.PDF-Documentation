@@ -2,7 +2,7 @@
 title: استخراج الصور باستخدام PdfExtractor
 type: docs
 weight: 20
-url: ar/net/extract-images/
+url: /ar/net/extract-images/
 description: يشرح هذا القسم كيفية استخراج الصور باستخدام Aspose.PDF Facades باستخدام فئة PdfExtractor.
 lastmod: "2021-07-15"
 ---

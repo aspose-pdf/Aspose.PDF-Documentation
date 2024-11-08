@@ -3,7 +3,7 @@ title: Stamping with Aspose.PDF using C#
 linktitle: Stamping
 type: docs
 weight: 120
-url: ar/net/stamping/
+url: /ar/net/stamping/
 description: تصف هذه القسم كيفية إضافة ختم الصورة وختم النص إلى صفحة PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,8 +86,8 @@ aliases:
 
 تحقق من الأقسام التالية لمعرفة كيفية إضافة ختم باستخدام C#:
 
-- [إضافة ختم الصور في صفحة PDF](/pdf/net/image-stamps-in-pdf-page/) - إضافة ختم الصورة، التحكم في جودة الصورة، ختم الصورة كخلفية لملف PDF الخاص بك.
-- [إضافة ختم النصوص في ملف PDF](/pdf/net/text-stamps-in-the-pdf-file/) - إضافة ختم النص، تحديد محاذاة لكائن TextStamp، ملء النص الضرب كختم في ملف PDF.
+- [إضافة ختم الصور في صفحة PDF](/pdf/ar/net/image-stamps-in-pdf-page/) - إضافة ختم الصورة، التحكم في جودة الصورة، ختم الصورة كخلفية لملف PDF الخاص بك.
+- [إضافة ختم النصوص في ملف PDF](/pdf/ar/net/text-stamps-in-the-pdf-file/) - إضافة ختم النص، تحديد محاذاة لكائن TextStamp، ملء النص الضرب كختم في ملف PDF.
 
 <script type="application/ld+json">
 {

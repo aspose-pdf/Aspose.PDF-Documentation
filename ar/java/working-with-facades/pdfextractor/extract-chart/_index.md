@@ -2,7 +2,7 @@
 title: استخراج كائنات الرسم البياني من مستند PDF (واجهات)
 type: docs
 weight: 20
-url: ar/java/extract-chart-objects/
+url: /ar/java/extract-chart-objects/
 description: يشرح هذا القسم كيفية استخراج كائنات الرسم البياني من PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfExtractor.
 lastmod: "2021-06-05"
 sitemap:

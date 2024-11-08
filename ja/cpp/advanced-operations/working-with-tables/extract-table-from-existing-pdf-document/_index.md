@@ -3,7 +3,7 @@ title: 既存のPDFからテーブルを抽出する
 linktitle: テーブルを抽出する
 type: docs
 weight: 20
-url: ja/cpp/extract-table-from-existing-pdf-document/
+url: /ja/cpp/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for C++を使用すると、PDFドキュメントに含まれるテーブルに対して様々な操作を行うことができます。既存のPDFドキュメントにテーブルを追加したり抽出したり、新しいページにテーブルをレンダリングしたりすることができます。
 lastmod: "2021-11-11"
 sitemap:

@@ -3,7 +3,7 @@ title: Faire pivoter les pages PDF en Node.js
 linktitle: Faire pivoter les pages PDF
 type: docs
 weight: 50
-url: fr/nodejs-cpp/rotate-pages/
+url: /fr/nodejs-cpp/rotate-pages/
 description: Ce sujet décrit comment faire pivoter l'orientation des pages dans un fichier PDF existant de manière programmatique dans un environnement Node.js.
 lastmod: "2023-11-16"
 sitemap:

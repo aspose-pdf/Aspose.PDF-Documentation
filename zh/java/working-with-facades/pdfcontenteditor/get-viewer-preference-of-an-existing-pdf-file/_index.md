@@ -2,7 +2,7 @@
 title: 获取现有PDF文件的查看器偏好
 type: docs
 weight: 70
-url: zh/java/get-viewer-preference-of-an-existing-pdf-file/
+url: /zh/java/get-viewer-preference-of-an-existing-pdf-file/
 description: 本节展示如何使用PdfContentEditor类与Aspose.PDF Facades一起工作。
 lastmod: "2021-06-05"
 draft: false

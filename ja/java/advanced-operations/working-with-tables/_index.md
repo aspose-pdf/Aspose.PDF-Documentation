@@ -3,7 +3,7 @@ title: PDFでのテーブルの操作
 linktitle: テーブルの操作
 type: docs
 weight: 50
-url: ja/java/working-with-tables/
+url: /ja/java/working-with-tables/
 description: このセクションでは、Javaライブラリを使用してテーブルを追加および抽出し、操作および統合する方法について説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -20,7 +20,7 @@ Aspose.PDF for Javaがサポートする最初の機能の1つは、テーブル
 
 次のことが可能です：
 
-- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/java/add-table-in-existing-pdf-document/) - 境界線、余白、パディングを考慮して列や行を結合してPDFファイルにテーブルを作成します。
-- [既存のPDFドキュメントからテーブルを抽出する](/pdf/java/extract-table-from-existing-pdf-document/) - PDFファイルからテーブルを抽出したり、テーブルの境界線を画像として抽出できます。
-- [既存のPDFでテーブルを操作する](/pdf/java/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内のテーブルを操作します。
-- [既存のPDFからテーブルを削除する](/pdf/java/remove-tables-from-existing-pdf/) - PDFドキュメントからテーブルまたは複数のテーブルを削除します。
+- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/ja/java/add-table-in-existing-pdf-document/) - 境界線、余白、パディングを考慮して列や行を結合してPDFファイルにテーブルを作成します。
+- [既存のPDFドキュメントからテーブルを抽出する](/pdf/ja/java/extract-table-from-existing-pdf-document/) - PDFファイルからテーブルを抽出したり、テーブルの境界線を画像として抽出できます。
+- [既存のPDFでテーブルを操作する](/pdf/ja/java/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内のテーブルを操作します。
+- [既存のPDFからテーブルを削除する](/pdf/ja/java/remove-tables-from-existing-pdf/) - PDFドキュメントからテーブルまたは複数のテーブルを削除します。

@@ -3,7 +3,7 @@ title: 在 PDF 中使用 C++ 格式化文本
 linktitle: 在 PDF 中格式化文本
 type: docs
 weight: 30
-url: zh/cpp/text-formatting-inside-pdf/
+url: /zh/cpp/text-formatting-inside-pdf/
 description: 本页解释了如何在 PDF 文件中格式化文本。包括添加行缩进、添加文本边框、添加下划线文本、在添加的文本周围添加边框、浮动框内容的文本对齐等。
 lastmod: "2021-12-13"
 sitemap:

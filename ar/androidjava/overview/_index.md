@@ -3,7 +3,7 @@ title: نظرة عامة
 linktitle: نظرة عامة
 type: docs
 weight: 20
-url: ar/androidjava/overview/
+url: /ar/androidjava/overview/
 description: نظرة عامة على الميزات الرئيسية والصيغ المدعومة لـ Aspose.PDF لأندرويد عبر جافا، دليل التثبيت والترخيص لمكتبة جافا.
 lastmod: "2021-06-05"
 sitemap:
@@ -38,9 +38,9 @@ Aspose.PDF لأندرويد جافا هو API لمعالجة ملفات PDF يت
 
 تعرف على المزيد حول:
 
-- [تنسيقات الملفات المدعومة](/pdf/androidjava/supported-file-formats/)
-- [الميزات الرئيسية لـ Aspose.PDF](/pdf/androidjava/key-features/)
-- [متطلبات النظام](/pdf/androidjava/system-requirements/)
-- [التثبيت](/pdf/androidjava/installation/)
-- [الترخيص](/pdf/androidjava/licensing/)
-- [الدعم الفني](/pdf/androidjava/technical-support/)
+- [تنسيقات الملفات المدعومة](/pdf/ar/androidjava/supported-file-formats/)
+- [الميزات الرئيسية لـ Aspose.PDF](/pdf/ar/androidjava/key-features/)
+- [متطلبات النظام](/pdf/ar/androidjava/system-requirements/)
+- [التثبيت](/pdf/ar/androidjava/installation/)
+- [الترخيص](/pdf/ar/androidjava/licensing/)
+- [الدعم الفني](/pdf/ar/androidjava/technical-support/)

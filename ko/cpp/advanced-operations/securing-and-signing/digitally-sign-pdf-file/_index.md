@@ -3,7 +3,7 @@ title: PDF를 디지털 서명하는 방법
 linktitle: PDF 디지털 서명
 type: docs
 weight: 10
-url: ko/cpp/digitally-sign-pdf-file/
+url: /ko/cpp/digitally-sign-pdf-file/
 description: C++를 사용하여 PDF 문서에 디지털 서명합니다. C++를 사용하여 디지털 서명된 PDF를 확인하거나 검증하십시오.
 lastmod: "2021-12-15"
 sitemap:

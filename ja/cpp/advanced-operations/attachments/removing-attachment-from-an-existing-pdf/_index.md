@@ -3,7 +3,7 @@ title: PDFから添付ファイルを削除する
 linktitle: 既存のPDFから添付ファイルを削除する
 type: docs
 weight: 30
-url: ja/cpp/removing-attachment-from-an-existing-pdf/
+url: /ja/cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF for C++はPDFドキュメントから添付ファイルを削除できます。C++ PDF APIを使用してPDFファイルから添付ファイルを削除するには、Aspose.PDFライブラリを使用します。
 lastmod: "2022-02-07"
 sitemap:

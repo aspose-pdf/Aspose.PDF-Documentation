@@ -3,7 +3,7 @@ title: 使用 Python 旋转 PDF 页面
 linktitle: 旋转 PDF 页面
 type: docs
 weight: 110
-url: zh/python-net/rotate-pages/
+url: /zh/python-net/rotate-pages/
 description: 本主题描述如何使用 Python 编程旋转现有 PDF 文件中的页面方向。
 lastmod: "2023-04-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 연산자 사용하기
 linktitle: 연산자 사용하기
 type: docs
 weight: 170
-url: ko/net/operators/
+url: /ko/net/operators/
 description: 이 주제는 Aspose.PDF에서 연산자를 사용하는 방법을 설명합니다. 연산자 클래스는 PDF 조작을 위한 훌륭한 기능을 제공합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -105,8 +105,8 @@ PDF 파일에 이미지를 추가하는 방법:
    - Do 연산자를 사용하여 페이지에 이미지를 그립니다.
 1. 마지막으로, GRestore 연산자를 사용하여 업데이트된 그래픽 상태를 저장합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 조각은 PDF 연산자 사용 방법을 보여줍니다.
 

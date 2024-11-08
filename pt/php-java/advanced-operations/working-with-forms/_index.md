@@ -3,7 +3,7 @@ title: Trabalhando com Formulários
 linktitle: Trabalhando com Formulários
 type: docs
 weight: 50
-url: pt/php-java/working-with-forms/
+url: /pt/php-java/working-with-forms/
 description: Esta seção explica como trabalhar com AcroForms e XFA Forms em seus documentos PDF com Aspose.PDF para PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -18,5 +18,5 @@ AcroForms são arquivos PDF que contêm campos de formulário. Os dados podem se
 Nesta seção, descreve-se uma abordagem rápida e simples para completar programaticamente um documento PDF através do uso do Aspose.PDF.
  A seção também discute como alguém pode usar o Aspose.PDF para PHP via Java para descobrir e mapear os campos disponíveis em um PDF existente com AcroForms. Além disso, você aprenderá como trabalhar com XFA - outra tecnologia para formulários de apresentação baseada em XML.
 
-- [AcroForms](/pdf/php-java/acroforms/) - criar formulário, preencher campo de formulário, extrair dados do formulário, modificar campos no seu PDF com a biblioteca PHP.
-- [Formulários XFA](/pdf/php-java/xfa-forms/) - preencher campos XFA, converter XFA, obter propriedades dos campos XFA.
+- [AcroForms](/pdf/pt/php-java/acroforms/) - criar formulário, preencher campo de formulário, extrair dados do formulário, modificar campos no seu PDF com a biblioteca PHP.
+- [Formulários XFA](/pdf/pt/php-java/xfa-forms/) - preencher campos XFA, converter XFA, obter propriedades dos campos XFA.

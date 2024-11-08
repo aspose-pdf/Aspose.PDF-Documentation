@@ -3,7 +3,7 @@ title: Extrair Imagens de Arquivo PDF usando Python
 linktitle: Extrair Imagens
 type: docs
 weight: 30
-url: pt/python-net/extract-images-from-pdf-file/
+url: /pt/python-net/extract-images-from-pdf-file/
 description: Esta seção mostra como extrair imagens de um arquivo PDF usando a biblioteca Python.
 lastmod: "2023-02-17"
 ---

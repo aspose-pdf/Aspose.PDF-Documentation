@@ -3,7 +3,7 @@ title: إضافة كائن خط إلى ملف PDF
 linktitle: إضافة خط
 type: docs
 weight: 40
-url: ar/net/add-line/
+url: /ar/net/add-line/
 description: يشرح هذا المقال كيفية إنشاء كائن خط في ملف PDF الخاص بك باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "يشرح هذا المقال كيفية إنشاء كائن خط في ملف PDF الخاص بك باستخدام Aspose.PDF لـ .NET."
 }
 </script>
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة كائن خط
 

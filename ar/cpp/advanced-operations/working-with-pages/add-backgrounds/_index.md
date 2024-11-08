@@ -3,7 +3,7 @@ title: إضافة خلفية إلى PDF باستخدام C++
 linktitle: إضافة الخلفيات
 type: docs
 weight: 110
-url: ar/cpp/add-backgrounds/
+url: /ar/cpp/add-backgrounds/
 descriptions: أضف صورة خلفية إلى ملف PDF الخاص بك باستخدام C++. استخدم كائن BackgroundArtifact.
 lastmod: "2021-12-03"
 sitemap:

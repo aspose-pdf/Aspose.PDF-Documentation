@@ -3,7 +3,7 @@ title: C++を使用してPDFドキュメントを開く
 linktitle: 開く
 type: docs
 weight: 20
-url: ja/cpp/open-pdf-document/
+url: /ja/cpp/open-pdf-document/
 description: 次のAspose.PDFのコードスニペットを使用して、PDFドキュメントを開くためのC++ライブラリを使用します。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Fonctionnalités Avancées
 linktitle: Fonctionnalités Avancées
 type: docs
 weight: 120
-url: fr/java/advanced-features/
+url: /fr/java/advanced-features/
 description: Cette section montre comment vous pouvez utiliser les balises LaTeX dans un document PDF avec Aspose.PDF pour Java.
 lastmod: "2022-01-11"
 sitemap:

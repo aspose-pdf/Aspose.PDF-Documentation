@@ -2,7 +2,7 @@
 title: دعم عنصر التقرير المخصص
 type: docs
 weight: 30
-url: ar/reportingservices/custom-report-item-support/
+url: /ar/reportingservices/custom-report-item-support/
 lastmod: "2021-06-05"
 ---
 
@@ -14,7 +14,7 @@ lastmod: "2021-06-05"
 - الأسهم الخطية.
 - الحاشية السفلية/الحاشية الختامية.
 
-اكتشف كيفية استخدامها في مقال [توسيع خصائص عناصر التقرير](/pdf/reportingservices/expand-report-items-properties/).
+اكتشف كيفية استخدامها في مقال [توسيع خصائص عناصر التقرير](/pdf/ar/reportingservices/expand-report-items-properties/).
 
 {{% /alert %}}
 ```

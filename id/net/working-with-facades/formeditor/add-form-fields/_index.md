@@ -2,7 +2,7 @@
 title: Add PDF Form Fields
 type: docs
 weight: 10
-url: id/net/add-form-fields/
+url: /id/net/add-form-fields/
 description: Topik ini menjelaskan cara bekerja dengan Form Fields menggunakan Aspose.PDF Facades dengan menggunakan Kelas FormEditor.
 lastmod: "2021-06-05"
 draft: false

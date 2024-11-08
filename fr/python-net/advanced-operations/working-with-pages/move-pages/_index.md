@@ -3,7 +3,7 @@ title: Déplacer des pages PDF par programmation via Python
 linktitle: Déplacer des pages PDF
 type: docs
 weight: 100
-url: fr/python-net/move-pages/
+url: /fr/python-net/move-pages/
 description: Essayez de déplacer des pages à l'emplacement souhaité ou à la fin d'un fichier PDF à l'aide de Aspose.PDF pour Python via .NET.
 lastmod: "2023-04-17"
 sitemap:

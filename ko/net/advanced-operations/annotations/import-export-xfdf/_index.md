@@ -3,7 +3,7 @@ title: Import and Export Annotations to XFDF
 linktitle: Import and Export Annotations to XFDF
 type: docs
 weight: 40
-url: ko/net/import-export-xfdf/
+url: /ko/net/import-export-xfdf/
 description: XFDF 형식으로 주석을 가져오고 내보낼 수 있습니다. C# 및 Aspose.PDF for .NET 라이브러리를 사용합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ XFDF는 XML Forms Data Format를 의미합니다. 이는 XML 기반 파일 형�
 [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 클래스는 XFDF 파일로 주석을 가져오고 내보내는 두 가지 메소드를 포함하고 있습니다.
 [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 클래스는 XFDF 파일로 주석을 가져오고 내보내는 두 가지 방법을 포함합니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 조각은 XFDF 파일로 주석을 내보내는 방법을 보여줍니다:
 

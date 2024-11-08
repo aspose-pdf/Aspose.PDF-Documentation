@@ -2,7 +2,7 @@
 title: Limitaciones de la API
 type: docs
 weight: 10
-url: es/java/api-limitations/
+url: /es/java/api-limitations/
 lastmod: "2022-01-27"
 ---
 

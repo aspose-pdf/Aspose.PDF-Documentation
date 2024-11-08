@@ -2,7 +2,7 @@
 title: PHPでPDFのページ数を取得する
 type: docs
 weight: 40
-url: ja/java/get-page-count-of-pdf-in-php/
+url: /ja/java/get-page-count-of-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

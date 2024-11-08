@@ -3,7 +3,7 @@ title: Extrair fontes de PDF
 linktitle: Extrair fontes
 type: docs
 weight: 30
-url: pt/php-java/extract-fonts-from-pdf/
+url: /pt/php-java/extract-fonts-from-pdf/
 description: Como extrair fonte de PDF usando Aspose.PDF para PHP
 lastmod: "2024-05-20"
 sitemap:

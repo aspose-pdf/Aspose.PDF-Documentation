@@ -3,7 +3,7 @@ title: Как объединить PDF с использованием Python ч
 linktitle: Объединение PDF файлов
 type: docs
 weight: 10
-url: ru/python-cpp/merge-pdf-documents/
+url: /ru/python-cpp/merge-pdf-documents/
 keywords: "объединение нескольких pdf в один pdf python, объединить несколько pdf в один python, объединение нескольких pdf в один python"
 description: Эта страница объясняет, как объединить PDF документы в один файл PDF с помощью Python.
 lastmod: "2024-04-14"

@@ -3,7 +3,7 @@ title: Entity Framework를 사용하여 테이블 렌더링
 linktitle: Entity Framework를 사용하여 테이블 렌더링
 type: docs
 weight: 40
-url: ko/net/render-table-using-entity-framework-model-as-data-source/
+url: /ko/net/render-table-using-entity-framework-model-as-data-source/
 description: 이 문서는 Aspose.PDF for .NET을 사용하여 Entity Framework 모델을 데이터 소스로 사용하여 테이블을 렌더링하는 방법을 보여줍니다.
 lastmod: "2021-06-05"
 sitemap:

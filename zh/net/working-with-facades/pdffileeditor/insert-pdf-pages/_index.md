@@ -2,7 +2,7 @@
 title: 插入 PDF 页面
 type: docs
 weight: 50
-url: zh/net/insert-pdf-pages/
+url: /zh/net/insert-pdf-pages/
 description: 本节说明如何使用 PdfFileEditor 类通过 Aspose.PDF Facades 插入 PDF 页面。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Extraire le formulaire XFA
 linktitle: Extraire le formulaire XFA
 type: docs
 weight: 30
-url: fr/php-java/extract-form/
+url: /fr/php-java/extract-form/
 description: Cette section explique comment extraire des formulaires de votre document PDF avec Aspose.PDF pour PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

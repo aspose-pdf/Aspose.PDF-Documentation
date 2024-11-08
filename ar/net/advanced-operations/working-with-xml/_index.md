@@ -3,7 +3,7 @@ title: العمل مع XML باستخدام C#
 linktitle: العمل مع XML
 type: docs
 weight: 80
-url: ar/net/working-with-xml/
+url: /ar/net/working-with-xml/
 description: تعلم كيفية إنشاء مستند PDF من XML في Aspose.PDF لـ .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -78,9 +78,9 @@ sitemap:
 
 XML (Extensible Markup Language) هو وسيلة لإعادة استخدام البيانات في ملف أو أتمتة عملية استبدال البيانات في ملف واحد ببيانات من ملف آخر. إنشاء مخطط XML هو أمر صعب؛ إنشاء عدة مخططات متشابكة يمكن تمديدها هو أصعب. دعونا نتعلم كيف يتعامل Aspose.PDF مع مهام العمل مع XML.
 
-- [مخطط XML المدعوم](/pdf/net/supported-xml-schema/) - استخدم مخطط XML التالي للعمل مع مستندات XML.
-- [مثال 'Hello World' بسيط يعتمد على XML و XSLT](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - استخدم XSLT لتحويل مستند XML الحالي إلى PDF.
-- [إنشاء PDF من XML](/pdf/net/generate-pdf-from-xml/) - لدى Aspose.PDF عدة طرق لإنشاء PDF استنادًا إلى مستند XML.
+- [مخطط XML المدعوم](/pdf/ar/net/supported-xml-schema/) - استخدم مخطط XML التالي للعمل مع مستندات XML.
+- [مثال 'Hello World' بسيط يعتمد على XML و XSLT](/pdf/ar/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - استخدم XSLT لتحويل مستند XML الحالي إلى PDF.
+- [إنشاء PDF من XML](/pdf/ar/net/generate-pdf-from-xml/) - لدى Aspose.PDF عدة طرق لإنشاء PDF استنادًا إلى مستند XML.
 
 <script type="application/ld+json">
 {

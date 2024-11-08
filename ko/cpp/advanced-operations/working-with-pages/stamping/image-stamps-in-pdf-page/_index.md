@@ -3,7 +3,7 @@ title: PDF에 이미지 스탬프 프로그래밍 방식으로 추가하기
 linktitle: PDF 파일의 이미지 스탬프
 type: docs
 weight: 10
-url: ko/cpp/image-stamps-in-pdf-page/
+url: /ko/cpp/image-stamps-in-pdf-page/
 description: Aspose.PDF for C++ 라이브러리의 ImageStamp 클래스를 사용하여 PDF 문서에 이미지 스탬프를 추가합니다.
 lastmod: "2021-12-08"
 sitemap:

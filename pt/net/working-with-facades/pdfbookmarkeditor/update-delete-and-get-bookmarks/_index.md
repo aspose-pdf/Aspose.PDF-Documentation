@@ -2,7 +2,7 @@
 title: Atualizar, Excluir e Obter Favoritos
 type: docs
 weight: 30
-url: pt/net/update-delete-and-get-bookmarks/
+url: /pt/net/update-delete-and-get-bookmarks/
 description: Esta seção explica como atualizar, excluir e obter Favoritos com Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

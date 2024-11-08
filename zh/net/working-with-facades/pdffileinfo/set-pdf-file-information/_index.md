@@ -2,7 +2,7 @@
 title: 设置PDF文件信息
 type: docs
 weight: 40
-url: zh/net/set-pdf-file-information/
+url: /zh/net/set-pdf-file-information/
 description: 本节说明如何使用Aspose.PDF Facades设置PDF文件信息。
 lastmod: "2021-06-05"
 draft: false

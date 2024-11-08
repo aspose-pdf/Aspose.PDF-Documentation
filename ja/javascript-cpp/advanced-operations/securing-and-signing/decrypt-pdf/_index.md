@@ -3,7 +3,7 @@ title: JavaScriptを使用してPDFを復号化
 linktitle: PDFファイルの復号化
 type: docs
 weight: 40
-url: ja/javascript-cpp/decrypt-pdf/
+url: /ja/javascript-cpp/decrypt-pdf/
 description: Aspose.PDF for JavaScript via C++を使用してPDFファイルを復号化します。
 lastmod: "2022-12-15"
 sitemap:

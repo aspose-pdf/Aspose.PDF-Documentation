@@ -2,7 +2,7 @@
 title: 将PDF转换为SVG格式在PHP中
 type: docs
 weight: 30
-url: zh/java/convert-pdf-to-svg-format-in-php/
+url: /zh/java/convert-pdf-to-svg-format-in-php/
 lastmod: "2021-06-05"
 ---
 

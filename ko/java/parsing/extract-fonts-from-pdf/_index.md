@@ -3,7 +3,7 @@ title: PDF에서 폰트 추출
 linktitle: 폰트 추출
 type: docs
 weight: 30
-url: ko/java/extract-fonts-from-pdf/
+url: /ko/java/extract-fonts-from-pdf/
 description: Aspose.PDF for Java를 사용하여 PDF에서 폰트를 추출하는 방법
 lastmod: "2021-06-05"
 sitemap:

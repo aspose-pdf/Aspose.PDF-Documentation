@@ -2,7 +2,7 @@
 title: احصل على صفحة معينة في ملف PDF باستخدام بايثون
 type: docs
 weight: 30
-url: ar/python-java/get-a-particular-page-in-a-pdf-file-in-python/
+url: /ar/python-java/get-a-particular-page-in-a-pdf-file-in-python/
 ---
 
 للحصول على صفحة معينة في مستند PDF باستخدام **Aspose.PDF Java for Python**، قم ببساطة باستدعاء فئة **GetPage**.

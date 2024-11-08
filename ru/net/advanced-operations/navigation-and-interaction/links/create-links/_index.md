@@ -3,7 +3,7 @@ title: Создание ссылок в PDF-файле с помощью C#
 linktitle: Создание ссылок
 type: docs
 weight: 10
-url: ru/net/create-links/
+url: /ru/net/create-links/
 description: В этом разделе объясняется, как создать ссылки в вашем PDF-документе с помощью C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Создание ссылок
 

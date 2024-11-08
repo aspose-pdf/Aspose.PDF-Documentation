@@ -2,7 +2,7 @@
 title: Menggunakan Generator Dokumen PDF OneClick
 type: docs
 weight: 10
-url: id/net/using-oneclick-pdf-document-generator/
+url: /id/net/using-oneclick-pdf-document-generator/
 description: Pelajari cara menggunakan Generator Dokumen PDF OneClick Aspose.PDF di Microsoft Dynamics
 lastmod: "2021-06-05"
 sitemap:

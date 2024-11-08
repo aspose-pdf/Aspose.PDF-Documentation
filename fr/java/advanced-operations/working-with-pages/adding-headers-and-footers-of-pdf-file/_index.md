@@ -3,7 +3,7 @@ title: Ajouter un en-tête et un pied de page PDF
 linktitle: Ajouter un en-tête et un pied de page
 type: docs
 weight: 70
-url: fr/java/add-headers-and-footers-of-pdf-file/
+url: /fr/java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF pour Java vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp.
 lastmod: "2021-06-05"
 sitemap:

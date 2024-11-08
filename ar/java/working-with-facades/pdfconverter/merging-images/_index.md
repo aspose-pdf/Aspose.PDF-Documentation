@@ -2,7 +2,7 @@
 title: دمج الصور
 type: docs
 weight: 10
-url: ar/java/merge-images/
+url: /ar/java/merge-images/
 description: يشرح هذا القسم كيفية دمج الصور، ومن الممكن الحفظ بتنسيق Tiff.
 lastmod: "2021-07-01"
 draft: false

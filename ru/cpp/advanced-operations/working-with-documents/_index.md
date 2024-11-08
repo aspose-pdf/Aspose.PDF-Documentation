@@ -3,7 +3,7 @@ title: Работа с PDF документами
 linktitle: Работа с документами
 type: docs
 weight: 10
-url: ru/cpp/working-with-documents/
+url: /ru/cpp/working-with-documents/
 lastmod: "2021-06-05"
 description: Эта статья описывает, какие манипуляции можно выполнять с документом с помощью библиотеки Aspose.PDF для C++.
 sitemap:
@@ -21,10 +21,10 @@ PDF файлы могут содержать неограниченное кол
 
 You are able to do the following:
 
-- [Create PDF Document](/pdf/cpp/create-pdf-document/) - создать PDF, создать документ PDF с возможностью поиска.
-- [Formatting PDF Document](/pdf/cpp/formatting-pdf-document/) - получить и установить свойства документа, встраивание шрифтов и другие операции с PDF-файлами.
-- [Manipulate PDF Document](/pdf/cpp/manipulate-pdf-document/) - проверить документ PDF на соответствие стандарту PDF A, работа с оглавлением, установка срока действия PDF и т.д.
-- [Optimize PDF Documents](/pdf/cpp/optimize-pdf/) - оптимизировать содержание страницы, оптимизировать размер файла, удалить неиспользуемые объекты, сжать все изображения для успешной оптимизации документа.
-- [Merge PDF](/pdf/cpp/merge-pdf-documents/) - объединить несколько PDF-файлов в один PDF-документ с использованием C++.
-- [Split PDF](/pdf/cpp/split-pdf-document/) - разделить страницы PDF на отдельные PDF-файлы в ваших приложениях на C++.
-- [Working with Headings](/pdf/cpp/working-with-headings/) - вы можете создать нумерацию в заголовке вашего документа PDF с помощью C++.
+- [Create PDF Document](/pdf/ru/cpp/create-pdf-document/) - создать PDF, создать документ PDF с возможностью поиска.
+- [Formatting PDF Document](/pdf/ru/cpp/formatting-pdf-document/) - получить и установить свойства документа, встраивание шрифтов и другие операции с PDF-файлами.
+- [Manipulate PDF Document](/pdf/ru/cpp/manipulate-pdf-document/) - проверить документ PDF на соответствие стандарту PDF A, работа с оглавлением, установка срока действия PDF и т.д.
+- [Optimize PDF Documents](/pdf/ru/cpp/optimize-pdf/) - оптимизировать содержание страницы, оптимизировать размер файла, удалить неиспользуемые объекты, сжать все изображения для успешной оптимизации документа.
+- [Merge PDF](/pdf/ru/cpp/merge-pdf-documents/) - объединить несколько PDF-файлов в один PDF-документ с использованием C++.
+- [Split PDF](/pdf/ru/cpp/split-pdf-document/) - разделить страницы PDF на отдельные PDF-файлы в ваших приложениях на C++.
+- [Working with Headings](/pdf/ru/cpp/working-with-headings/) - вы можете создать нумерацию в заголовке вашего документа PDF с помощью C++.

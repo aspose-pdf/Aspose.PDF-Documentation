@@ -3,7 +3,7 @@ title: Formatage de texte à l'intérieur d'un PDF en utilisant Python
 linktitle: Formatage de texte à l'intérieur d'un PDF
 type: docs
 weight: 30
-url: fr/python-net/text-formatting-inside-pdf/
+url: /fr/python-net/text-formatting-inside-pdf/
 description: Cette page explique comment formater du texte à l'intérieur de votre fichier PDF. Il y a l'ajout d'un retrait de ligne, l'ajout d'une bordure de texte, l'ajout de texte souligné, etc.
 lastmod: "2024-02-17"
 sitemap:

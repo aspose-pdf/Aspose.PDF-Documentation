@@ -3,7 +3,7 @@ title: إنشاء PDF من XML
 linktitle: إنشاء PDF من XML
 type: docs
 weight: 10
-url: ar/cpp/generate-pdf-from-xml
+url: /ar/cpp/generate-pdf-from-xml
 description: يوفر Aspose.PDF for C++ عدة طرق لتحويل ملف XML إلى مستند PDF يتطلب أن يكون ملف XML المدخل.
 lastmod: "2022-01-31"
 sitemap:

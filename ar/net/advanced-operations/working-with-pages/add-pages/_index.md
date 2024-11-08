@@ -3,7 +3,7 @@ title: إضافة صفحات إلى مستند PDF
 linktitle: إضافة صفحات
 type: docs
 weight: 10
-url: ar/net/add-pages/
+url: /ar/net/add-pages/
 description: هذا المقال يعلم كيفية إدراج (إضافة) صفحة في الموقع المطلوب في ملف PDF. تعلم كيفية نقل، إزالة (حذف) الصفحات من ملف PDF باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ Aspose.PDF لـ .NET يتيح لك إدراج صفحة في مستند PDF في 
 
 Aspose.PDF لـ .NET يتيح لك إدراج صفحة في مستند PDF في أي مكان في الملف بالإضافة إلى إضافة صفحات إلى نهاية ملف PDF.
 
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ### إدراج صفحة فارغة في ملف PDF في الموقع المطلوب
 

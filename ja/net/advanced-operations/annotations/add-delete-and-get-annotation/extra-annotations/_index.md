@@ -3,7 +3,7 @@ title: C#を使用した追加の注釈
 linktitle: 追加の注釈
 type: docs
 weight: 60
-url: ja/net/extra-annotations/
+url: /ja/net/extra-annotations/
 description: このセクションでは、PDFドキュメントから追加の種類の注釈を追加、取得、削除する方法について説明します。
 lastmod: "2023-09-12"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 キャレット注釈は、テキスト編集を示す記号です。キャレット注釈はマークアップ注釈でもあるため、CaretクラスはMarkupクラスから派生し、キャレット注釈のプロパティを取得または設定し、キャレット注釈の外観の流れをリセットする機能も提供します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも動作します。
 
 キャレット注釈を作成する手順：
 

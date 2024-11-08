@@ -3,7 +3,7 @@ title: .NET에서 PDF를 PowerPoint로 변환
 linktitle: PDF를 PowerPoint로 변환
 type: docs
 weight: 30
-url: ko/net/convert-pdf-to-powerpoint/
+url: /ko/net/convert-pdf-to-powerpoint/
 lastmod: "2021-11-01"
 description: Aspose.PDF를 사용하면 .NET을 사용하여 PDF를 PPT (PowerPoint) 형식으로 변환할 수 있습니다. PDF를 PPTX로 변환하는 방법 중 하나는 슬라이드를 이미지로 사용하는 것입니다.
 lastmod: "2021-10-18"
@@ -25,7 +25,7 @@ _형식_: **PowerPoint**
 - [C# PDF를 PowerPoint로 변환](#csharp-pdf-to-powerpoint)
 - [C# PDF 파일을 PowerPoint로 변환하는 방법](#csharp-pdf-to-powerpoint)
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 사용할 수도 있습니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 사용할 수도 있습니다.
 
 ## C# PDF를 PowerPoint 및 PPTX로 변환
 ## C# PDF에서 PowerPoint 및 PPTX 변환

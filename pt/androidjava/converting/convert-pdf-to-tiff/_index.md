@@ -3,7 +3,7 @@ title: Converter PDF para TIFF
 linktitle: Converter PDF para TIFF  
 type: docs
 weight: 30
-url: pt/androidjava/convert-pdf-to-tiff/
+url: /pt/androidjava/convert-pdf-to-tiff/
 lastmod: "2021-06-05"
 description: Este artigo descreve como converter páginas em um documento PDF em imagem TIFF. Você aprenderá como converter todas ou páginas únicas em imagens TIFF com Aspose.PDF para Android via Android via Java.
 sitemap:

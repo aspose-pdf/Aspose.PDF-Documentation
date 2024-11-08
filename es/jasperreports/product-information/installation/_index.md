@@ -6,7 +6,7 @@ type: docs
 
 weight: 50
 
-url: es/jasperreports/installation/
+url: /es/jasperreports/installation/
 
 lastmod: "2021-06-05"
 
@@ -18,8 +18,8 @@ lastmod: "2021-06-05"
 
 
 
-- [Requisitos del sistema](/pdf/jasperreports/system-requirements/)
+- [Requisitos del sistema](/pdf/es/jasperreports/system-requirements/)
 
-- [Integración con ](/pdf/jasperreports/integration-with-jasperreports/)
+- [Integración con ](/pdf/es/jasperreports/integration-with-jasperreports/)
 
-- [Integración con JasperServer](/pdf/jasperreports/integration-with-jasperserver/)
+- [Integración con JasperServer](/pdf/es/jasperreports/integration-with-jasperserver/)

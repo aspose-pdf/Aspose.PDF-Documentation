@@ -3,7 +3,7 @@ title: FAQ
 linktitle: FAQ
 type: docs
 weight: 120
-url: es/java/faq/
+url: /es/java/faq/
 description: Por favor, aprenda las Preguntas Frecuentes de la biblioteca Aspose.PDF para Java.
 lastmod: "2021-06-17"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF 파일에 타원 객체 추가
 linktitle: 타원 추가
 type: docs
 weight: 60
-url: ko/net/add-ellipse/
+url: /ko/net/add-ellipse/
 description: 이 글은 Aspose.PDF for .NET을 사용하여 PDF에 타원 객체를 생성하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ## 타원 객체 추가
 

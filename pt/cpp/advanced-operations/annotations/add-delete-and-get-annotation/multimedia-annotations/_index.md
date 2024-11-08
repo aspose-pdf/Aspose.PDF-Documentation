@@ -3,7 +3,7 @@ title: Anotação Multimídia em PDF usando C++
 linktitle: Anotação Multimídia
 type: docs
 weight: 40
-url: pt/cpp/multimedia-annotation/
+url: /pt/cpp/multimedia-annotation/
 description: Aspose.PDF para C++ permite adicionar, obter e excluir a anotação multimídia do seu documento PDF.
 lastmod: "2021-11-24"
 sitemap:

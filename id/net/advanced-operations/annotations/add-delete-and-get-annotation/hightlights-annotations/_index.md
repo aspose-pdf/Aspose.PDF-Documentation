@@ -3,7 +3,7 @@ title: Anotasi Penyorotan PDF menggunakan C#
 linktitle: Anotasi Penyorotan
 type: docs
 weight: 20
-url: id/net/highlights-annotation/
+url: /id/net/highlights-annotation/
 description: Anotasi markup disajikan dalam teks sebagai penyorotan, garis bawah, coretan, atau garis bawah bergigi pada teks dokumen.
 lastmod: "2022-02-17"
 sitemap:
@@ -87,7 +87,7 @@ Juga memungkinkan untuk mendapatkan atau mengatur pengaturan anotasi coretan men
 Fitur selanjutnya adalah kemampuan untuk mendapatkan atau mengatur pengaturan anotasi garis bawah menggunakan properti underlineSettings.
 Fitur berikutnya adalah kemampuan untuk mendapatkan atau mengatur pengaturan anotasi garis bawah menggunakan properti underlineSettings.
 
-Potongan kode berikut ini juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut ini juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan Anotasi Markup Teks
 

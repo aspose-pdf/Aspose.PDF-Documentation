@@ -3,7 +3,7 @@ title: PDF 中的文本格式化
 linktitle: PDF 中的文本格式化
 type: docs
 weight: 30
-url: zh/java/text-formatting-inside-pdf/
+url: /zh/java/text-formatting-inside-pdf/
 description: 本页解释了如何在 PDF 文件中格式化文本。这包括添加行缩进、添加文本边框、添加下划线文本、在添加的文本周围添加边框、浮动框内容的文本对齐等。
 lastmod: "2021-06-05"
 sitemap:

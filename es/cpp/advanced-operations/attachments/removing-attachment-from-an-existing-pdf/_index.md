@@ -3,7 +3,7 @@ title: Eliminando adjuntos de un PDF
 linktitle: Eliminando adjuntos de un PDF existente
 type: docs
 weight: 30
-url: es/cpp/removing-attachment-from-an-existing-pdf/
+url: /es/cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF para C++ puede eliminar adjuntos de sus documentos PDF. Use la API de PDF en C++ para eliminar adjuntos en archivos PDF usando la biblioteca Aspose.PDF.
 lastmod: "2022-02-07"
 sitemap:

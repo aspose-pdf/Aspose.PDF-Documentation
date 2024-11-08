@@ -3,7 +3,7 @@ title: استيراد وتصدير التعليقات إلى تنسيق XFDF ب�
 linktitle: استيراد وتصدير التعليقات إلى تنسيق XFDF
 type: docs
 weight: 40
-url: ar/cpp/import-export-xfdf/
+url: /ar/cpp/import-export-xfdf/
 description: يمكنك استيراد وتصدير التعليقات باستخدام تنسيق XFDF مع C++ ومكتبة Aspose.PDF لـ C++.
 lastmod: "2021-12-02"
 sitemap:

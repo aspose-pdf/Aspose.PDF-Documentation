@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 북마크 가져오기, 업데이트 및 확장
 linktitle: 북마크 가져오기, 업데이트 및 확장
 type: docs
 weight: 20
-url: ko/python-net/get-update-and-expand-bookmark/
+url: /ko/python-net/get-update-and-expand-bookmark/
 description: 이 문서는 Aspose.PDF for Python 라이브러리를 사용하여 PDF 파일에서 북마크를 사용하는 방법에 대해 설명합니다.
 lastmod: "2023-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Dapatkan Halaman Tertentu dalam File PDF di Ruby
 type: docs
 weight: 30
-url: id/java/get-a-particular-page-in-a-pdf-file-in-ruby/
+url: /id/java/get-a-particular-page-in-a-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

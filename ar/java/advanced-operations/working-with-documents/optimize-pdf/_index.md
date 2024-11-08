@@ -3,7 +3,7 @@ title: تحسين أو ضغط أو تقليل حجم PDF في Java
 linktitle: تحسين مستند PDF
 type: docs
 weight: 40
-url: ar/java/optimize-pdf/
+url: /ar/java/optimize-pdf/
 description: تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة تضمين الخطوط، إزالة الكائنات غير المستخدمة باستخدام Java.
 lastmod: "2021-06-05"
 ---

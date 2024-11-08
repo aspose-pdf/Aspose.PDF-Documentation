@@ -2,7 +2,7 @@
 title: PdfBookmarkEditor Class
 type: docs
 weight: 45
-url: es/net/working-with-bookmarks-facades/
+url: /es/net/working-with-bookmarks-facades/
 description: Esta sección explica cómo trabajar con Aspose.PDF Facades usando la clase PdfBookmarEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -13,6 +13,6 @@ aliases:
     - /net/pdfbookmarkeditor-class/
 ---
 
-- [Crear Marcadores](/pdf/net/create-bookmarks/)
-- [Importar y Exportar Marcadores](/pdf/net/import-and-export-bookmarks/)
-- [Actualizar, Eliminar y Obtener Marcadores](/pdf/net/update-delete-and-get-bookmarks/)
+- [Crear Marcadores](/pdf/es/net/create-bookmarks/)
+- [Importar y Exportar Marcadores](/pdf/es/net/import-and-export-bookmarks/)
+- [Actualizar, Eliminar y Obtener Marcadores](/pdf/es/net/update-delete-and-get-bookmarks/)

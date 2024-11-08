@@ -3,7 +3,7 @@ title: Create AcroForm - Create Fillable PDF in C#
 linktitle: Create AcroForm
 type: docs
 weight: 10
-url: ja/net/create-form/
+url: /ja/net/create-form/
 description: Aspose.PDF for .NETを使用して、PDFファイルでゼロからフォームを作成できます
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## スクラッチからフォームを作成
 

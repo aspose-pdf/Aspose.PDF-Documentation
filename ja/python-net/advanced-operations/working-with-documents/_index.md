@@ -3,7 +3,7 @@ title: Pythonを使用したPDFドキュメントの操作
 linktitle: ドキュメントの操作
 type: docs
 weight: 10
-url: ja/python-net/working-with-documents/
+url: /ja/python-net/working-with-documents/
 description: この記事では、Aspose.PDF for Python via .NETライブラリを使用してドキュメントに対して行うことができる操作について説明します。
 lastmod: "2023-04-12"
 sitemap:
@@ -83,14 +83,14 @@ PDFドキュメントは表示および印刷が可能ですが、常に簡単�
 
 以下のことが可能です：
 
-- [PDFドキュメントの作成](/pdf/python-net/create-pdf-document/) - 単純なPDFドキュメントを作成します。
-- [PDFドキュメントのフォーマット](/pdf/python-net/formatting-pdf-document/) - ドキュメントを作成し、ドキュメントのプロパティを取得および設定し、フォントを埋め込み、PDFファイルに対して他の操作を行います。
+- [PDFドキュメントの作成](/pdf/ja/python-net/create-pdf-document/) - 単純なPDFドキュメントを作成します。
+- [PDFドキュメントのフォーマット](/pdf/ja/python-net/formatting-pdf-document/) - ドキュメントを作成し、ドキュメントのプロパティを取得および設定し、フォントを埋め込み、PDFファイルに対して他の操作を行います。
 
-- [PDFドキュメントの操作](/pdf/python-net/manipulate-pdf-document/) - PDF A標準に対するPDFドキュメントの検証、目次の操作、PDFの有効期限設定などを行います。
-- [PDFの最適化](/pdf/python-net/optimize-pdf/) - ページコンテンツの最適化、ファイルサイズの最適化、未使用オブジェクトの削除、すべての画像を圧縮してドキュメントを最適化します。
-- [PDFの結合](/pdf/python-net/merge-pdf-documents/) - 複数のPDFファイルをPythonを使用して単一のPDFドキュメントに結合します。
-- [PDFの分割](/pdf/python-net/split-document/) - PythonアプリケーションでPDFページを個別のPDFファイルに分割します。
-- [見出しの操作](/pdf/python-net/working-with-headings/) - PythonでPDFドキュメントの見出しに番号を付けることができます。
+- [PDFドキュメントの操作](/pdf/ja/python-net/manipulate-pdf-document/) - PDF A標準に対するPDFドキュメントの検証、目次の操作、PDFの有効期限設定などを行います。
+- [PDFの最適化](/pdf/ja/python-net/optimize-pdf/) - ページコンテンツの最適化、ファイルサイズの最適化、未使用オブジェクトの削除、すべての画像を圧縮してドキュメントを最適化します。
+- [PDFの結合](/pdf/ja/python-net/merge-pdf-documents/) - 複数のPDFファイルをPythonを使用して単一のPDFドキュメントに結合します。
+- [PDFの分割](/pdf/ja/python-net/split-document/) - PythonアプリケーションでPDFページを個別のPDFファイルに分割します。
+- [見出しの操作](/pdf/ja/python-net/working-with-headings/) - PythonでPDFドキュメントの見出しに番号を付けることができます。
 
 <script type="application/ld+json">
 {

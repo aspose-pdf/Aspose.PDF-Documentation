@@ -2,7 +2,7 @@
 title: 페이지 회전 작업
 type: docs
 weight: 10
-url: ko/net/working-with-page-rotation/
+url: /ko/net/working-with-page-rotation/
 description: 이 섹션은 PdfPageEditor 클래스를 사용하여 페이지 회전 작업을 설명합니다.
 lastmod: "2021-07-07"
 draft: false

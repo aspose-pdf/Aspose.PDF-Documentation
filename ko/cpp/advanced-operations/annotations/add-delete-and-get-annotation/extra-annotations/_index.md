@@ -3,7 +3,7 @@ title: 추가 주석 사용 C++
 linktitle: 추가 주석
 type: docs
 weight: 60
-url: ko/cpp/extra-annotations/
+url: /ko/cpp/extra-annotations/
 description: 이 섹션은 PDF 문서에서 추가 종류의 주석을 추가, 가져오기 및 삭제하는 방법을 설명합니다.
 lastmod: "2021-11-24"
 sitemap:

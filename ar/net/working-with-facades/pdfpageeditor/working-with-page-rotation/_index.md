@@ -2,7 +2,7 @@
 title: العمل مع تدوير الصفحات
 type: docs
 weight: 10
-url: ar/net/working-with-page-rotation/
+url: /ar/net/working-with-page-rotation/
 description: يشرح هذا القسم كيفية العمل مع تدوير الصفحات باستخدام فئة PdfPageEditor.
 lastmod: "2021-07-07"
 draft: false

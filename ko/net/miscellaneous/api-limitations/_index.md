@@ -2,7 +2,7 @@
 title: API 제한 사항
 type: docs
 weight: 70
-url: ko/net/api-limitations/
+url: /ko/net/api-limitations/
 ---
 
 ## **Xsl Fo to Pdf**

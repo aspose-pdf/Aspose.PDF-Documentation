@@ -3,7 +3,7 @@ title: Закладки в PDF в Node.js
 linktitle: Закладки в PDF
 type: docs
 weight: 10
-url: ru/nodejs-cpp/bookmark/
+url: /ru/nodejs-cpp/bookmark/
 description: Вы можете добавить или удалить закладки в PDF документе в среде Node.js.
 lastmod: "2023-11-16"
 sitemap:

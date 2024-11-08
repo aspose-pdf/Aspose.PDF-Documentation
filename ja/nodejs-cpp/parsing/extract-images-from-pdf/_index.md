@@ -3,7 +3,7 @@ title: PDFから画像を抽出する方法 Node.js
 linktitle: PDFから画像を抽出
 type: docs
 weight: 20
-url: ja/nodejs-cpp/extract-images-from-the-pdf-file/
+url: /ja/nodejs-cpp/extract-images-from-the-pdf-file/
 description: Aspose.PDF for Node.js via C++ツールキットを使用して、PDFから画像の一部を抽出する方法。
 lastmod: "2023-11-16"
 sitemap:

@@ -2,7 +2,7 @@
 title: تثبيت Aspose.Pdf لـ SharePoint
 type: docs
 weight: 20
-url: ar/sharepoint/installing-aspose-pdf-for-sharepoint/
+url: /ar/sharepoint/installing-aspose-pdf-for-sharepoint/
 lastmod: "2020-12-16"
 description: حزمة واجهة برمجة تطبيقات PDF SharePoint كحل SharePoint لتبسيط نشر مزرعة الخادم، والتراجع، والتنشيط، وإلغاء التنشيط.
 ---

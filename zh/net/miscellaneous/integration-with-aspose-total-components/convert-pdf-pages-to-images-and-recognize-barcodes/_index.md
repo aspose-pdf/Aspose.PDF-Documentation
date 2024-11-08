@@ -2,7 +2,7 @@
 title: 将PDF页面转换为图像并识别条形码
 type: docs
 weight: 10
-url: zh/net/convert-pdf-pages-to-images-and-recognize-barcodes/
+url: /zh/net/convert-pdf-pages-to-images-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

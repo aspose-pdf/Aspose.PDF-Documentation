@@ -2,7 +2,7 @@
 title: Convertir un PDF en Classeur Excel en PHP
 type: docs
 weight: 20
-url: fr/java/convert-pdf-to-excel-workbook-in-php/
+url: /fr/java/convert-pdf-to-excel-workbook-in-php/
 lastmod: "2021-06-05"
 ---
 

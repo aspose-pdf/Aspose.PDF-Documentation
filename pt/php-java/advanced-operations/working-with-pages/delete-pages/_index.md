@@ -3,7 +3,7 @@ title: Excluir Páginas de PDF programaticamente
 linktitle: Excluir Páginas de PDF
 type: docs
 weight: 40
-url: pt/php-java/delete-pages/
+url: /pt/php-java/delete-pages/
 description: Você pode excluir páginas do seu arquivo PDF usando PHP.
 lastmod: "2024-06-05"
 sitemap:

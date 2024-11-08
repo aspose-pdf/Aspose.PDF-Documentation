@@ -3,7 +3,7 @@ title: Adicionar Cabeçalho e Rodapé em PDF
 linktitle: Adicionar Cabeçalho e Rodapé 
 type: docs
 weight: 70
-url: pt/java/add-headers-and-footers-of-pdf-file/
+url: /pt/java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para Java permite que você adicione cabeçalhos e rodapés ao seu arquivo PDF usando a classe TextStamp.
 lastmod: "2021-06-05"
 sitemap:

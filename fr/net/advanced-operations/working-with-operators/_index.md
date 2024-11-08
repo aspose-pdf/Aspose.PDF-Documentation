@@ -3,7 +3,7 @@ title: Working with Operators
 linktitle: Working with Operators
 type: docs
 weight: 170
-url: fr/net/operators/
+url: /fr/net/operators/
 description: Ce sujet explique comment utiliser les opérateurs avec Aspose.PDF. Les classes d'opérateurs offrent de grandes fonctionnalités pour la manipulation de PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -106,8 +106,8 @@ Pour ajouter une image dans un fichier PDF :
    - Utilisez l'opérateur Do pour dessiner l'image sur la page.
 1. Enfin, utilisez l'opérateur GRestore pour sauvegarder l'état graphique mis à jour.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Le code suivant montre comment utiliser les opérateurs PDF.
 

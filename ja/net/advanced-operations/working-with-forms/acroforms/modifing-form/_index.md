@@ -3,7 +3,7 @@ title: Modifing AcroForm
 linktitle: Modifing AcroForm
 type: docs
 weight: 40
-url: ja/net/modifing-form/
+url: /ja/net/modifing-form/
 description: Aspose.PDF for .NET ライブラリを使用してPDFファイル内のフォームを修正します。既存のフォームにフィールドを追加または削除し、フィールドリミットの取得と設定などができます。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Aspose.PDF for .NET ライブラリを使用してPDFファイル内のフォームを修正します。既存のフォームにフィールドを追加または削除し、フィールドリミットの取得と設定などができます。"
 }
 </script>
-以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 ## フィールド制限の取得または設定
 

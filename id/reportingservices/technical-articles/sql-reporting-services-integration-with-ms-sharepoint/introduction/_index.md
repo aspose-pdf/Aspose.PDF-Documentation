@@ -2,7 +2,7 @@
 title: Introduction
 type: docs
 weight: 10
-url: id/reportingservices/introduction/
+url: /id/reportingservices/introduction/
 lastmod: "2021-06-05"
 ---
 

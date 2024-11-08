@@ -3,7 +3,7 @@ title: PDF 파일에서 이미지 추출
 linktitle: 이미지 추출
 type: docs
 weight: 30
-url: ko/net/extract-images-from-pdf-file/
+url: /ko/net/extract-images-from-pdf-file/
 description: 이 섹션은 C# 라이브러리를 사용하여 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 이미지는 각 페이지의 [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) 컬렉션의 [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) 컬렉션에 저장됩니다. 특정 페이지를 추출한 다음 이미지 컬렉션에서 이미지의 특정 인덱스를 사용하여 이미지를 가져옵니다.
 

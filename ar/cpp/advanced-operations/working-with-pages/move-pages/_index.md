@@ -3,7 +3,7 @@ title: نقل صفحات PDF برمجيًا C++
 linktitle: نقل صفحات PDF
 type: docs
 weight: 20
-url: ar/cpp/move-pages/
+url: /ar/cpp/move-pages/
 description: حاول نقل الصفحات إلى الموقع المطلوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF لـ C++.
 lastmod: "2021-12-09"
 sitemap:

@@ -3,7 +3,7 @@ title: إضافة، حذف، واسترجاع التعليقات التوضيح�
 linktitle: إضافة، حذف، واسترجاع التعليقات التوضيحية
 type: docs
 weight: 20
-url: ar/net/add-delete-and-get-annotation/
+url: /ar/net/add-delete-and-get-annotation/
 description: مع Aspose.PDF لـ .NET، يمكنك إضافة، حذف، واسترجاع التعليقات التوضيحية من ملف PDF الخاص بك. تحقق من جميع قوائم التعليقات التوضيحية لحل مهمتك.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,13 +81,13 @@ sitemap:
 
 لقد قمنا بتجميع أنواع التعليقات التوضيحية المتاحة لمكتبة Aspose.PDF لـ .NET في مجموعات:
 
-- [تعليق نصي PDF](/pdf/net/text-annotation/)
-- [تعليق تمييز PDF](/pdf/net/highlights-annotation/)
-- [تعليق الأشكال PDF](/pdf/net/figures-annotation/)
-- [تعليق الوسائط المتعددة](/pdf/net/multimedia-annotation/)
-- [تعليقات PDF اللاصقة](/pdf/net/sticky-annotations/)
-- [تعليقات الروابط](/pdf/net/link-annotations/)
-- [تعليقات إضافية](/pdf/net/extra-annotations/)
+- [تعليق نصي PDF](/pdf/ar/net/text-annotation/)
+- [تعليق تمييز PDF](/pdf/ar/net/highlights-annotation/)
+- [تعليق الأشكال PDF](/pdf/ar/net/figures-annotation/)
+- [تعليق الوسائط المتعددة](/pdf/ar/net/multimedia-annotation/)
+- [تعليقات PDF اللاصقة](/pdf/ar/net/sticky-annotations/)
+- [تعليقات الروابط](/pdf/ar/net/link-annotations/)
+- [تعليقات إضافية](/pdf/ar/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

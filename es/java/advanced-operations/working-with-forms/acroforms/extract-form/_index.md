@@ -3,7 +3,7 @@ title: Extraer Datos AcroForms
 linktitle: Extraer Datos AcroForms
 type: docs
 weight: 30
-url: es/java/extract-form/
+url: /es/java/extract-form/
 description: Esta sección explica cómo extraer formularios de su documento PDF con Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

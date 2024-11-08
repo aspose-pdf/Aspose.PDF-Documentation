@@ -3,7 +3,7 @@ title: Tambahkan Objek Persegi Panjang ke file PDF
 linktitle: Tambahkan Persegi Panjang
 type: docs
 weight: 50
-url: id/java/add-rectangle/
+url: /id/java/add-rectangle/
 description: Artikel ini menjelaskan cara membuat objek Persegi Panjang ke PDF Anda menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

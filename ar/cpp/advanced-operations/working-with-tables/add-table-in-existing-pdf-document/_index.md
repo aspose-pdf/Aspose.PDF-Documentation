@@ -3,7 +3,7 @@ title: إنشاء أو إضافة جدول في PDF
 linktitle: إنشاء أو إضافة جدول
 type: docs
 weight: 10
-url: ar/cpp/add-table-in-existing-pdf-document/
+url: /ar/cpp/add-table-in-existing-pdf-document/
 description: Aspose.PDF for C++ هي مكتبة تُستخدم لإنشاء وقراءة وتحرير الجداول في PDF. باستخدام هذه المكتبة، يمكنك تقسيم جدول على صفحة PDF باستخدام C++.
 lastmod: "2021-11-11"
 sitemap:

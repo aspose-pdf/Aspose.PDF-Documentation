@@ -2,7 +2,7 @@
 title: Tambahkan String HTML menggunakan DOM di Python
 type: docs
 weight: 10
-url: id/python-java/add-html-string-using-dom-in-python/
+url: /id/python-java/add-html-string-using-dom-in-python/
 ---
 
 Untuk menambahkan string HTML dalam dokumen Pdf menggunakan **Aspose.PDF Java untuk Python**, cukup panggil modul **AddHtml**.

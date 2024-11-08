@@ -3,7 +3,7 @@ title: Pythonを使用したフォームの操作
 linktitle: フォームの操作
 type: docs
 weight: 60
-url: ja/python-net/working-with-forms/
+url: /ja/python-net/working-with-forms/
 description: このセクションでは、Aspose.PDF を使用して PDF ドキュメントで AcroForms を操作する方法について説明します。Python via .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -81,7 +81,7 @@ sitemap:
 
 AcroFormsを使用すると、ユーザーはフォームを電子的に入力、送信、および保存できるため、情報を収集するための便利で効率的な方法です。
 
-- [AcroForms](/pdf/python-net/acroforms/) - フォームの作成、フォームフィールドの入力、フォームからのデータ抽出、Pythonライブラリを使用したPDF内のフィールドの追加および削除。
+- [AcroForms](/pdf/ja/python-net/acroforms/) - フォームの作成、フォームフィールドの入力、フォームからのデータ抽出、Pythonライブラリを使用したPDF内のフィールドの追加および削除。
 
 <script type="application/ld+json">
 {

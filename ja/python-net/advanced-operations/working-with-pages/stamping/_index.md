@@ -3,7 +3,7 @@ title: Aspose.PDFを使用したPythonによるスタンピング
 linktitle: スタンピング
 type: docs
 weight: 120
-url: ja/python-net/stamping/
+url: /ja/python-net/stamping/
 description: このセクションでは、Pythonを介してPDFページに画像スタンプとテキストスタンプを追加する方法について説明します。
 lastmod: "2023-04-17"
 sitemap:
@@ -82,5 +82,5 @@ PDFファイル内のスタンプは、他の人が使用することを防ぎ�
 
 以下のセクションを確認して、Pythonでスタンプを追加する方法を学んでください：
 
-- [PDFページに画像スタンプを追加する](/pdf/python-net/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを設定。
-- [PDFファイルにテキストスタンプを追加する](/pdf/python-net/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、PDFファイルにスタンプとしてストロークテキストを塗りつぶします。
+- [PDFページに画像スタンプを追加する](/pdf/ja/python-net/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを設定。
+- [PDFファイルにテキストスタンプを追加する](/pdf/ja/python-net/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、PDFファイルにスタンプとしてストロークテキストを塗りつぶします。

@@ -3,7 +3,7 @@ title: 既存のPDF内のテーブルを操作する
 linktitle: テーブルの操作
 type: docs
 weight: 40
-url: ja/python-net/manipulate-tables-in-existing-pdf/
+url: /ja/python-net/manipulate-tables-in-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

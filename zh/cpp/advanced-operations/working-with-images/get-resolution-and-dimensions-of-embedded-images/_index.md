@@ -3,7 +3,7 @@ title: 获取嵌入图像的分辨率和尺寸使用C++
 linktitle: 获取分辨率和尺寸
 type: docs
 weight: 40
-url: zh/cpp/get-resolution-and-dimensions-of-embedded-images/
+url: /zh/cpp/get-resolution-and-dimensions-of-embedded-images/
 description: 本节展示如何获取嵌入图像的分辨率和尺寸的详细信息
 lastmod: "2021-12-18"
 ---

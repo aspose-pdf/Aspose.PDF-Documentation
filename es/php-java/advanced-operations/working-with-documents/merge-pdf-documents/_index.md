@@ -3,7 +3,7 @@ title: Fusionar PDF programáticamente
 linktitle: Fusionar archivos PDF
 type: docs
 weight: 50
-url: es/php-java/merge-pdf-documents/
+url: /es/php-java/merge-pdf-documents/
 description: Esta página explica cómo fusionar documentos PDF en un solo archivo PDF usando PHP.
 lastmod: "2024-06-05"
 ---

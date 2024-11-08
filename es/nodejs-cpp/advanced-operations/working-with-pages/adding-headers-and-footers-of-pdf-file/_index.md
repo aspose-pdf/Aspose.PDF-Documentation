@@ -3,7 +3,7 @@ title: Añadir Encabezado y Pie de Página a PDF en Node.js
 linktitle: Añadir Encabezado y Pie de Página a PDF
 type: docs
 weight: 70
-url: es/nodejs-cpp/add-headers-and-footers-of-pdf-file/
+url: /es/nodejs-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para Node.js a través de C++ le permite añadir encabezados y pies de página a su archivo PDF usando AsposePdfAddTextHeaderFooter.
 lastmod: "2023-11-16"
 sitemap:

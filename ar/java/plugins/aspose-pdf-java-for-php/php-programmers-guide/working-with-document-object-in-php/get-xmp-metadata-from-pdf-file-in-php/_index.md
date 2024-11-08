@@ -2,7 +2,7 @@
 title: الحصول على بيانات XMP الوصفية من ملف PDF في PHP
 type: docs
 weight: 50
-url: ar/java/get-xmp-metadata-from-pdf-file-in-php/
+url: /ar/java/get-xmp-metadata-from-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

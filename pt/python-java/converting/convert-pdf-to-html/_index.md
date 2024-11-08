@@ -3,7 +3,7 @@ title: Converter PDF para HTML em Python
 linktitle: Converter PDF para formato HTML
 type: docs
 weight: 50
-url: pt/python-java/convert-pdf-to-html/
+url: /pt/python-java/convert-pdf-to-html/
 lastmod: "2021-11-01"
 description: Este tópico mostra como converter arquivo PDF para formato HTML com a biblioteca Aspose.PDF para Python Java.
 sitemap:

@@ -3,7 +3,7 @@ title: AcroFormからデータを抽出する
 linktitle: AcroFormからデータを抽出する
 type: docs
 weight: 50
-url: ja/cpp/extract-data-from-acroform/
+url: /ja/cpp/extract-data-from-acroform/
 description: Aspose.PDFを使用すると、PDFファイルからフォームフィールドデータを簡単に抽出できます。AcroFormsからデータを抽出し、XMLまたはFDF形式に保存する方法を学びます。
 lastmod: "2021-12-13"
 sitemap:

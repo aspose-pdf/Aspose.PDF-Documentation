@@ -2,7 +2,7 @@
 title: Ekstrak Teks Dari Semua Halaman Dokumen PDF di Python
 type: docs
 weight: 30
-url: id/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
+url: /id/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 ---
 
 Untuk mengekstrak teks dari semua halaman dokumen PDF menggunakan **Aspose.PDF Java for Python**, cukup panggil modul **ExtractTextFromAllPages**.

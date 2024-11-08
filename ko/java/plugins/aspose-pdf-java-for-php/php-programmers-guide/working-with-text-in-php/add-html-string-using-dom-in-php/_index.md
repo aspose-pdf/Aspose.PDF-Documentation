@@ -2,7 +2,7 @@
 title: PHP에서 DOM을 사용하여 HTML 문자열 추가
 type: docs
 weight: 10
-url: ko/java/add-html-string-using-dom-in-php/
+url: /ko/java/add-html-string-using-dom-in-php/
 lastmod: "2021-06-05"
 ---
 

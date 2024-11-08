@@ -3,7 +3,7 @@ title: 从PDF中提取表格数据
 linktitle: 提取表格数据
 type: docs
 weight: 40
-url: zh/php-java/extract-data-from-table-in-pdf/
+url: /zh/php-java/extract-data-from-table-in-pdf/
 description: 学习如何使用Aspose.PDF for PHP从PDF中提取表格
 lastmod: "2021-05-20"
 sitemap:
@@ -83,7 +83,7 @@ $document->close();
 
 ## 从PDF中提取表格数据并存储到CSV文件
 
-以下示例展示了如何提取表格并将其存储为CSV文件。 要了解如何将PDF转换为Excel电子表格，请参阅[将PDF转换为Excel](/pdf/php-java/convert-pdf-to-excel/)文章。
+以下示例展示了如何提取表格并将其存储为CSV文件。 要了解如何将PDF转换为Excel电子表格，请参阅[将PDF转换为Excel](/pdf/zh/php-java/convert-pdf-to-excel/)文章。
 
 ```php
 

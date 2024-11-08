@@ -3,7 +3,7 @@ title: Formats de Fichiers Pris en Charge C++
 linktitle: Formats de Fichiers Pris en Charge
 type: docs
 weight: 70
-url: fr/cpp/supported-file-formats/
+url: /fr/cpp/supported-file-formats/
 description: Cette page montre quels formats de fichiers Aspose.PDF pour C++ peut charger et enregistrer.
 lastmod: "2021-11-08"
 sitemap:

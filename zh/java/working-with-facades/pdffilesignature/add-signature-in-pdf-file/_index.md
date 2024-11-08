@@ -2,7 +2,7 @@
 title: 在 PDF 文件中添加签名
 type: docs
 weight: 10
-url: zh/java/add-signature-in-pdf/
+url: /zh/java/add-signature-in-pdf/
 description: 本节解释如何使用 PdfFileSignature 类在 PDF 文件中处理签名。
 lastmod: "2021-06-05"
 draft: false

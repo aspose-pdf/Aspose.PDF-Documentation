@@ -2,7 +2,7 @@
 title: PHPでPDFファイルを個々のページに分割する
 type: docs
 weight: 80
-url: ja/java/split-pdf-file-into-individual-pages-in-php/
+url: /ja/java/split-pdf-file-into-individual-pages-in-php/
 lastmod: "2021-06-05"
 ---
 

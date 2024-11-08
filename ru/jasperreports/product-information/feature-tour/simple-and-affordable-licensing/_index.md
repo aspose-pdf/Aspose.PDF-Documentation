@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: ru/jasperreports/simple-and-affordable-licensing/
+url: /ru/jasperreports/simple-and-affordable-licensing/
 
 lastmod: "2021-06-05"
 
@@ -34,6 +34,6 @@ lastmod: "2021-06-05"
 
 
 
-Режим оценки вставляет водяные знаки в экспортированные отчеты. When you [buy a license](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simply apply the license](/pdf/jasperreports/licensing/) and watermark will no more appear in the output documents.
+Режим оценки вставляет водяные знаки в экспортированные отчеты. When you [buy a license](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simply apply the license](/pdf/ru/jasperreports/licensing/) and watermark will no more appear in the output documents.
 
-Когда вы [покупаете лицензию](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [просто примените лицензию](/pdf/jasperreports/licensing/), и водяной знак больше не будет появляться в выходных документах.
+Когда вы [покупаете лицензию](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [просто примените лицензию](/pdf/ru/jasperreports/licensing/), и водяной знак больше не будет появляться в выходных документах.

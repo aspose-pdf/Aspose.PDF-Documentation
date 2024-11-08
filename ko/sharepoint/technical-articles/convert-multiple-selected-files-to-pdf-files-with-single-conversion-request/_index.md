@@ -2,7 +2,7 @@
 title: 여러 선택된 파일을 단일 변환 요청으로 PDF 파일로 변환
 type: docs
 weight: 50
-url: ko/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
+url: /ko/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
 lastmod: "2020-12-16"
 description: PDF SharePoint 라이브러리를 사용하여 여러 선택된 파일을 단일 변환 작업으로 PDF 파일로 변환할 수 있습니다.
 ---

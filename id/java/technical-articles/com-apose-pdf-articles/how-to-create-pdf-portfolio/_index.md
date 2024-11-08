@@ -2,7 +2,7 @@
 title: Cara Membuat Portofolio PDF
 type: docs
 weight: 10
-url: id/java/how-to-create-pdf-portfolio/
+url: /id/java/how-to-create-pdf-portfolio/
 lastmod: "2022-01-27"
 ---
 

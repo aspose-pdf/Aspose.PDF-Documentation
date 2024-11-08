@@ -2,7 +2,7 @@
 title: Convertir PDF en format DOC ou DOCX dans Jython
 type: docs
 weight: 10
-url: fr/java/convert-pdf-to-doc-or-docx-format-in-jython/
+url: /fr/java/convert-pdf-to-doc-or-docx-format-in-jython/
 lastmod: "2021-06-05"
 ---
 

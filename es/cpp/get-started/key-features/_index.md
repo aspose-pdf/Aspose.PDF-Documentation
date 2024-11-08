@@ -3,7 +3,7 @@ title: Características Clave de Aspose.PDF
 linktitle: Características Clave
 type: docs
 weight: 80
-url: es/cpp/key-features/
+url: /es/cpp/key-features/
 description: Aspose.PDF para C++ demuestra sus características generales. Esta página describe las versiones PDF compatibles y todas las manipulaciones que podemos hacer con texto, imágenes, anotaciones, documentos, etc.
 lastmod: "2021-11-08"
 sitemap:

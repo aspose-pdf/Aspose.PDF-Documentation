@@ -3,7 +3,7 @@ title: PDF 스티커 주석
 linktitle: 스티커 주석
 type: docs
 weight: 50
-url: ko/java/sticky-annotations/
+url: /ko/java/sticky-annotations/
 description: 이 주제는 스티커 주석에 관한 것으로, 예시로 본문에서 워터마크 주석을 보여줍니다. 페이지에 그래픽을 나타내는 데 사용됩니다. 이 작업을 해결하기 위한 코드 스니펫을 확인하세요.
 lastmod: "2021-11-24"
 sitemap:

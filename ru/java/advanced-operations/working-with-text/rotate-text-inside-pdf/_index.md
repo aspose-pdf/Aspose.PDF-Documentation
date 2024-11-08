@@ -3,7 +3,7 @@ title: Поворот текста внутри PDF
 linktitle: Поворот текста внутри PDF
 type: docs
 weight: 50
-url: ru/java/rotate-text-inside-pdf/
+url: /ru/java/rotate-text-inside-pdf/
 description: Узнайте различные способы поворота текста в PDF. Aspose.PDF позволяет поворачивать текст на любой угол, поворачивать фрагмент текста или целый абзац.
 lastmod: "2021-06-05"
 sitemap:

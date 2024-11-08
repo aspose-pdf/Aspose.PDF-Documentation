@@ -2,7 +2,7 @@
 title: 在Jython中使用DOM添加JavaScript
 type: docs
 weight: 10
-url: zh/java/adding-javascript-using-dom-in-jython/
+url: /zh/java/adding-javascript-using-dom-in-jython/
 lastmod: "2021-06-05"
 ---
 

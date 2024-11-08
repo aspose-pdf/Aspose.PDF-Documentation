@@ -3,7 +3,7 @@ title: JavaScript로 PDF에 북마크 추가
 linktitle: PDF의 북마크
 type: docs
 weight: 10
-url: ko/javascript-cpp/bookmark/
+url: /ko/javascript-cpp/bookmark/
 description: JavaScript로 PDF 문서에 북마크를 추가하거나 삭제할 수 있습니다.
 lastmod: "2023-02-17"
 sitemap:

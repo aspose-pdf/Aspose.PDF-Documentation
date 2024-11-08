@@ -3,7 +3,7 @@ title: تشفير وفك تشفير PDF
 linktitle: تشفير وفك تشفير ملف PDF
 type: docs
 weight: 30
-url: ar/python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ar/python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 description: تشفير وفك تشفير ملف PDF باستخدام بايثون عبر تطبيق C++.
 lastmod: "2024-04-17"
 sitemap:

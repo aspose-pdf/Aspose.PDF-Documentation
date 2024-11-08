@@ -2,7 +2,7 @@
 title: 複数行の透かしを追加する
 type: docs
 weight: 10
-url: ja/net/adding-multi-line-watermark-to-existing-pdf/
+url: /ja/net/adding-multi-line-watermark-to-existing-pdf/
 description: このセクションでは、FormattedTextクラスを使用して既存のPDFに複数行の透かしを追加する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

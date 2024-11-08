@@ -3,7 +3,7 @@ title: AcroFormsとの作業
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ja/net/acroforms/
+url: /ja/net/acroforms/
 description: Aspose.PDF for .NETを使用して、ゼロからフォームを作成したり、PDFドキュメントのフォームフィールドに記入したり、フォームからデータを抽出したりすることができます。
 lastmod: "2022-02-17"
 sitemap:
@@ -98,12 +98,12 @@ AcroFormsにはXFAにはない機能があり、逆もまた同様です。例�
 Javaライブラリの機能について詳しく学ぶには、次の記事を参照してください：
 Javaライブラリの機能を詳しく学ぶために、以下の記事を参照してください：
 
-- [Create AcroForm](/pdf/net/create-form) - C#を使って最初からフォームを作成します。
-- [Fill AcroForm](/pdf/net/fill-form) - PDFドキュメントのフォームフィールドを入力します。
-- [Extract AcroForm](/pdf/net/extract-form) - PDFドキュメントのすべてまたは個々のフィールドから値を取得します。
-- [Modifing AcroForm](/pdf/net/modifing-form) - FieldLimitを取得または設定し、フォームフィールドのフォント等を設定します。
-- [Posting AcroForm Data](/pdf/net/posting-acroform-data/) - フォームデータをXMLファイルにインポートおよびエクスポートします。
-- [Import and Export Data](/pdf/net/import-and-export-data/) - Form Classを使用してデータをインポートおよびエクスポートします。
+- [Create AcroForm](/pdf/ja/net/create-form) - C#を使って最初からフォームを作成します。
+- [Fill AcroForm](/pdf/ja/net/fill-form) - PDFドキュメントのフォームフィールドを入力します。
+- [Extract AcroForm](/pdf/ja/net/extract-form) - PDFドキュメントのすべてまたは個々のフィールドから値を取得します。
+- [Modifing AcroForm](/pdf/ja/net/modifing-form) - FieldLimitを取得または設定し、フォームフィールドのフォント等を設定します。
+- [Posting AcroForm Data](/pdf/ja/net/posting-acroform-data/) - フォームデータをXMLファイルにインポートおよびエクスポートします。
+- [Import and Export Data](/pdf/ja/net/import-and-export-data/) - Form Classを使用してデータをインポートおよびエクスポートします。
 
 <script type="application/ld+json">
 {

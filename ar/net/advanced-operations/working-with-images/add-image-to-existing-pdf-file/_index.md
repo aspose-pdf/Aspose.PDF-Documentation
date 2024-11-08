@@ -3,7 +3,7 @@ title: إضافة صورة إلى ملف PDF باستخدام C#
 linktitle: إضافة صورة
 type: docs
 weight: 10
-url: ar/net/add-image-to-existing-pdf-file/
+url: /ar/net/add-image-to-existing-pdf-file/
 description: تصف هذه القسم كيفية إضافة صورة إلى ملف PDF موجود باستخدام مكتبة C#.
 lastmod: "2022-02-17"
 ---
@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 
 كل صفحة PDF تحتوي على خصائص الموارد والمحتويات. يمكن أن تكون الموارد صورًا ونماذج على سبيل المثال، بينما يتم تمثيل المحتوى بمجموعة من مُشغلات PDF. كل مُشغل له اسمه وحجته. يستخدم هذا المثال مشغلات لإضافة صورة إلى ملف PDF.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 لإضافة صورة إلى ملف PDF موجود:
 

@@ -2,7 +2,7 @@
 title: Définir les informations du fichier PDF - façades
 type: docs
 weight: 20
-url: fr/java/set-pdf-information/
+url: /fr/java/set-pdf-information/
 description: Cette section explique comment définir les informations du fichier PDF avec Aspose.PDF Facades en utilisant la classe PdfFileInfo.
 lastmod: "2021-06-05"
 sitemap:

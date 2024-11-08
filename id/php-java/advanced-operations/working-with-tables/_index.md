@@ -3,7 +3,7 @@ title: Bekerja dengan Tabel dalam PDF
 linktitle: Bekerja dengan Tabel
 type: docs
 weight: 50
-url: id/php-java/working-with-tables/
+url: /id/php-java/working-with-tables/
 description: Bagian ini menjelaskan cara menambahkan dan mengekstrak tabel, bagaimana memanipulasi dan mengintegrasikan tabel menggunakan PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -19,4 +19,4 @@ Salah satu fitur paling awal yang didukung oleh Aspose.PDF untuk PHP adalah kema
 
 Anda dapat melakukan hal berikut:
 
-- [Buat atau Tambah Tabel dalam Dokumen PDF yang Ada](/pdf/php-java/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
+- [Buat atau Tambah Tabel dalam Dokumen PDF yang Ada](/pdf/id/php-java/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.

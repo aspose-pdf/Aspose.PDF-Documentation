@@ -2,7 +2,7 @@
 title: Trabajando con la impresión de PDF
 type: docs
 weight: 10
-url: es/java/print-pdf-file/
+url: /es/java/print-pdf-file/
 description: Esta sección explica cómo imprimir un archivo PDF con Aspose.PDF Facades usando la clase PdfViewer.
 lastmod: "2021-06-05"
 sitemap:

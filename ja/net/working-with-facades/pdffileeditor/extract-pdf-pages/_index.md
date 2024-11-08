@@ -2,7 +2,7 @@
 title: PDFページの抽出
 type: docs
 weight: 40
-url: ja/net/extract-pdf-pages/
+url: /ja/net/extract-pdf-pages/
 description: このセクションでは、PdfFileEditorクラスを使用してAspose.PDF FacadesでPDFページを抽出する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

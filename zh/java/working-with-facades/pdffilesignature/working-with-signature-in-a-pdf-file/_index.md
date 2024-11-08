@@ -2,7 +2,7 @@
 title: 在PDF文件中使用签名
 type: docs
 weight: 40
-url: zh/java/working-with-signature-in-a-pdf-file/
+url: /zh/java/working-with-signature-in-a-pdf-file/
 description: 本节介绍如何使用PdfFileSignature类在PDF文件中处理签名。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Posting AcroForm Data
 linktitle: Posting AcroForm
 type: docs
 weight: 50
-url: pt/cpp/posting-acroform-data/
+url: /pt/cpp/posting-acroform-data/
 description: Você pode importar e exportar dados de formulário para um arquivo XML com o namespace Aspose.Pdf.Facades no Aspose.PDF para C++.
 lastmod: "2021-12-01"
 sitemap:

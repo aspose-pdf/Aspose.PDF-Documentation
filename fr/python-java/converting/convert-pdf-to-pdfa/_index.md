@@ -3,7 +3,7 @@ title: Convertir des PDF aux formats PDF/A en Python
 linktitle: Convertir des PDF aux formats PDF/A
 type: docs
 weight: 100
-url: fr/python-java/convert-pdf-to-pdfa/
+url: /fr/python-java/convert-pdf-to-pdfa/
 lastmod: "2023-04-06"
 description: Ce sujet vous montre comment Aspose.PDF pour Python via Python permet de convertir un fichier PDF en un fichier PDF conforme à PDF/A.
 sitemap:

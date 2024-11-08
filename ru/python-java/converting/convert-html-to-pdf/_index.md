@@ -3,7 +3,7 @@ title: Преобразование HTML в PDF на Python
 linktitle: Преобразование HTML в файл PDF
 type: docs
 weight: 40
-url: ru/python-java/convert-html-to-pdf/
+url: /ru/python-java/convert-html-to-pdf/
 lastmod: "2023-04-06"
 description: Эта тема покажет вам, как преобразовать HTML в PDF и MHTML в PDF с использованием Aspose.PDF для Python.
 sitemap:

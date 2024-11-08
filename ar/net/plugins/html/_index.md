@@ -2,7 +2,7 @@
 title: محول HTML
 type: docs
 weight: 70
-url: ar/net/plugins/html/
+url: /ar/net/plugins/html/
 description: كيفية تحويل ملفات PDF إلى ملفات HTML والعكس باستخدام إضافة Aspose.PDF PdfHtml
 lastmod: "2024-01-24"
 draft: false

@@ -2,7 +2,7 @@
 title: Gerador de TdC
 type: docs
 weight: 150
-url: pt/net/plugins/tocgenerator/
+url: /pt/net/plugins/tocgenerator/
 description: Cria tabela de conteúdo com Aspose.PDF Gerador de TdC para .NET
 lastmod: "2024-01-24"
 draft: false

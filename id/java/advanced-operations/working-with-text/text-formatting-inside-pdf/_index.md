@@ -3,7 +3,7 @@ title: Pemformatan Teks di dalam PDF
 linktitle: Pemformatan Teks di dalam PDF
 type: docs
 weight: 30
-url: id/java/pemformatan-teks-di-dalam-pdf/
+url: /id/java/pemformatan-teks-di-dalam-pdf/
 description: Halaman ini menjelaskan cara memformat teks di dalam file PDF Anda. Ada penambahan garis Indent, penambahan batas teks, penambahan teks bergaris bawah, penambahan batas di sekitar teks yang ditambahkan, perataan teks untuk isi kotak mengambang dan lain-lain.
 lastmod: "2021-06-05"
 sitemap:

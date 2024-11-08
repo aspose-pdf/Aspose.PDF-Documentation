@@ -3,7 +3,7 @@ title: Trabajando con Portafolio en PDF
 linktitle: Portafolio
 type: docs
 weight: 40
-url: es/net/portfolio/
+url: /es/net/portfolio/
 description: Cómo crear un portafolio en PDF con C#. Debes usar un archivo de Microsoft Excel, un documento Word y un archivo de imagen para crear un portafolio en PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ El siguiente ejemplo utiliza un archivo de Microsoft Excel, un documento Word y 
 
 El código a continuación resulta en el siguiente portafolio.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ### Un Portafolio PDF creado con Aspose.PDF
 

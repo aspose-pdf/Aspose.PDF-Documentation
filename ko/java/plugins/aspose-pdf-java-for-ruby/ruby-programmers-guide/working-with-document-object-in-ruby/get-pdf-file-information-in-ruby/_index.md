@@ -2,7 +2,7 @@
 title: 루비에서 PDF 파일 정보 가져오기
 type: docs
 weight: 50
-url: ko/java/get-pdf-file-information-in-ruby/
+url: /ko/java/get-pdf-file-information-in-ruby/
 lastmod: "2021-06-05"
 ---
 

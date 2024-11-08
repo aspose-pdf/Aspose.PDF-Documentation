@@ -3,7 +3,7 @@ title: 使用文本注释处理PDF通过Python
 linktitle: 文本注释
 type: docs
 weight: 10
-url: zh/python-net/text-annotation/
+url: /zh/python-net/text-annotation/
 description: Aspose.PDF for Python 允许您从PDF文档中添加、获取和删除文本注释。
 lastmod: "2023-02-17"
 sitemap:

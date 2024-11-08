@@ -3,7 +3,7 @@ title: Split PDFをプログラムで行う
 linktitle: PDFファイルを分割する
 type: docs
 weight: 60
-url: ja/cpp/split-pdf-document/
+url: /ja/cpp/split-pdf-document/
 description: このトピックでは、C++でPDFページを個別のPDFファイルに分割する方法を示します。
 lastmod: "2022-09-01"
 sitemap:

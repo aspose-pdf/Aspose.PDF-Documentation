@@ -2,7 +2,7 @@
 title: Características Avanzadas
 type: docs
 weight: 210
-url: es/net/advanced-features/
+url: /es/net/advanced-features/
 ---
 
 ## Enviando Pdf al Navegador para Descarga

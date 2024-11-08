@@ -3,7 +3,7 @@ title: Optimizar Recursos PDF usando JavaScript a través de C++
 linktitle: Optimizar Recursos PDF
 type: docs
 weight: 15
-url: es/javascript-cpp/optimize-pdf-resources/
+url: /es/javascript-cpp/optimize-pdf-resources/
 description: Optimizar los recursos de archivos PDF para una vista web rápida usando la herramienta JavaScript.
 lastmod: "2022-12-15"
 sitemap:

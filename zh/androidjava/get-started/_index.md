@@ -3,7 +3,7 @@ title: 开始使用
 linktitle: 开始使用
 type: docs
 weight: 30
-url: zh/androidjava/get-started/
+url: /zh/androidjava/get-started/
 description: 本节介绍通过 Java 使用 Aspose.PDF for Android 的基本原则。同时展示创建 PDF 文档的简单和复杂示例
 lastmod: "2021-08-05"   
 sitemap: 
@@ -51,7 +51,7 @@ Aspose.PDF for Android via Java 速度快且重量轻。它高效地创建 PDF �
 
 ### 了解更多关于：
 
-- [DOM API 基础](/pdf/androidjava/basics-of-dom-api/)
-- [“Hello, World” Android Java 示例](/pdf/androidjava/hello-world-example/)
-- [复杂 PDF 示例](/pdf/androidjava/complex-pdf-example/)
-- [如何运行其他示例](/pdf/androidjava/how-to-run-other-examples/)
+- [DOM API 基础](/pdf/zh/androidjava/basics-of-dom-api/)
+- [“Hello, World” Android Java 示例](/pdf/zh/androidjava/hello-world-example/)
+- [复杂 PDF 示例](/pdf/zh/androidjava/complex-pdf-example/)
+- [如何运行其他示例](/pdf/zh/androidjava/how-to-run-other-examples/)

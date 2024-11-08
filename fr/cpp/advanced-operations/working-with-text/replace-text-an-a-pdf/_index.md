@@ -3,7 +3,7 @@ title: Remplacer le texte dans un PDF en utilisant C++
 linktitle: Remplacer le texte dans un PDF
 type: docs
 weight: 40
-url: fr/cpp/replace-text-in-pdf/
+url: /fr/cpp/replace-text-in-pdf/
 description: En savoir plus sur les différentes façons de remplacer et de supprimer du texte dans un PDF. Aspose.PDF permet de remplacer du texte dans une région particulière ou avec une expression régulière.
 lastmod: "2021-12-13"
 sitemap:

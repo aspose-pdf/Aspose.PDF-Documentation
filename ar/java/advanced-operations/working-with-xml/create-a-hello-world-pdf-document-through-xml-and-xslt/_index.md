@@ -3,7 +3,7 @@ title: إنشاء مستند PDF "مرحبا بالعالم" باستخدام XM
 linktitle: إنشاء مستند PDF "مرحبا بالعالم" باستخدام XML وXSLT
 type: docs
 weight: 10
-url: ar/java/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /ar/java/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: يوفر Aspose.PDF for Java الفرصة لتحويل ملف XML إلى مستند PDF بشرط أن يتبع ملف XML المدخل مخطط Aspose.PDF XSD Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -10,7 +10,7 @@ type: docs
 
 weight: 110
 
-url: id/sharepoint/
+url: /id/sharepoint/
 
 is_root: true
 
@@ -50,21 +50,21 @@ Berikut adalah tautan ke beberapa sumber daya berguna yang mungkin Anda perlukan
 
 
 
-- [Gambaran Umum Produk Aspose.PDF untuk SharePoint](/pdf/sharepoint/product-overview/) 
+- [Gambaran Umum Produk Aspose.PDF untuk SharePoint](/pdf/id/sharepoint/product-overview/) 
 
-- [Format File yang Didukung Aspose.PDF untuk SharePoint](/pdf/sharepoint/supported-file-formats/)
+- [Format File yang Didukung Aspose.PDF untuk SharePoint](/pdf/id/sharepoint/supported-file-formats/)
 
 
-- [Fitur Aspose.PDF untuk SharePoint](/pdf/sharepoint/features/)
+- [Fitur Aspose.PDF untuk SharePoint](/pdf/id/sharepoint/features/)
 
 - [Catatan Rilis Aspose.PDF untuk SharePoint](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 
 - [Unduh Aspose.PDF untuk SharePoint](https://releases.aspose.com/pdf/sharepoint/)
 
-- [Instal Aspose.Pdf untuk SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Instal Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/install-aspose-pdf-for-sharepoint/)
 
-- [Evaluasi Aspose.Pdf](/pdf/sharepoint/evaluate-aspose-pdf/)
+- [Evaluasi Aspose.Pdf](/pdf/id/sharepoint/evaluate-aspose-pdf/)
 
-- [Lisensi Aspose.Pdf untuk SharePoint](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Lisensi Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/license-aspose-pdf-for-sharepoint/)
 
-- [Batasan API](/pdf/sharepoint/api-limitations/)
+- [Batasan API](/pdf/id/sharepoint/api-limitations/)

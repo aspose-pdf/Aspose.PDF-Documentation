@@ -3,7 +3,7 @@ title: Удалить изображения из PDF файла с помощь
 linktitle: Удалить изображения
 type: docs
 weight: 20
-url: ru/javascript-cpp/delete-images-from-pdf-file/
+url: /ru/javascript-cpp/delete-images-from-pdf-file/
 description: В этом разделе объясняется, как удалить изображения из PDF файла с использованием Aspose.PDF для JavaScript.
 lastmod: "2022-02-17"
 ---

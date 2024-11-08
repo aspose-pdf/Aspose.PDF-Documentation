@@ -3,7 +3,7 @@ title: Annotation de surlignage PDF en utilisant Python
 linktitle: Annotation de surlignage
 type: docs
 weight: 20
-url: fr/python-net/highlights-annotation/
+url: /fr/python-net/highlights-annotation/
 description: Les annotations de balisage sont présentées dans le texte sous forme de surlignages, de soulignements, de barrés ou de soulignements en zigzag dans le texte d'un document.
 lastmod: "2023-02-17"
 sitemap:

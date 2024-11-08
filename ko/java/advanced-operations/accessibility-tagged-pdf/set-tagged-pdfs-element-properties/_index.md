@@ -3,7 +3,7 @@ title: 태그된 PDF에서 구조 요소 속성 설정
 linktitle: 구조 요소 속성 설정
 type: docs
 weight: 30
-url: ko/java/set-tagged-pdfs-element-properties/
+url: /ko/java/set-tagged-pdfs-element-properties/
 description: Aspose.PDF for Java를 사용하여 다양한 구조 요소 속성을 설정할 수 있습니다. 텍스트 블록 구조 요소 설정, 인라인 구조 요소 설정, 요소에 구조 요소 추가 등이 있습니다.
 lastmod: "2021-06-05"
 sitemap:

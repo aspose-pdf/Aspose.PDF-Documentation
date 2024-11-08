@@ -2,7 +2,7 @@
 title: 将Javascript操作添加到现有PDF文件
 type: docs
 weight: 10
-url: zh/java/adding-javascript-actions/
+url: /zh/java/adding-javascript-actions/
 description: 本节介绍如何使用Aspose.PDF Facades将Javascript操作添加到现有PDF文件。
 lastmod: "2021-06-30"
 sitemap:

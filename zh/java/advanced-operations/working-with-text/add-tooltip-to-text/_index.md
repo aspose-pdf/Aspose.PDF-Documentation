@@ -3,7 +3,7 @@ title: 使用工具提示
 linktitle: PDF 工具提示
 type: docs
 weight: 20
-url: zh/java/pdf-tooltip/
+url: /zh/java/pdf-tooltip/
 description: 了解如何使用 Java 和 Aspose.PDF 在 PDF 中为文本片段添加工具提示。
 lastmod: "2021-06-05"
 sitemap:

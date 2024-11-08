@@ -3,7 +3,7 @@ title: Définir la Taille de l'Image
 linktitle: Définir la Taille de l'Image
 type: docs
 weight: 80
-url: fr/java/set-image-size/
+url: /fr/java/set-image-size/
 description: Cette section décrit comment définir la taille de l'image dans un fichier PDF en utilisant la bibliothèque Java.
 lastmod: "2021-06-05"
 ---

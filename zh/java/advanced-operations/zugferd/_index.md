@@ -3,7 +3,7 @@ title: 使用 ZUGFeRD
 linktitle: 使用 ZUGFeRD
 type: docs
 weight: 90
-url: zh/java/working-with-zugferd/
+url: /zh/java/working-with-zugferd/
 description: 学习如何使用 Aspose.PDF for Java 创建符合 ZUGFeRD 标准的 PDF 发票
 lastmod: "2024-01-17"
 sitemap:
@@ -26,9 +26,9 @@ ZUGFeRD 是德国的电子发票标准。它是“德国电子发票论坛的中
 
 它还满足长期存档和税务合规的法律要求。ZUGFeRD具有不同的版本和配置文件，以满足不同的需求和场景。最新版本是ZUGFeRD 2.0，与欧洲电子发票标准EN 16931一致。ZUGFeRD为用户提供了许多好处和成本节约，例如更快的处理、更少的错误、更好的现金流和更少的环境影响。
 
-* [在Java中创建符合PDF/3-A标准的PDF并附加ZUGFeRD发票](/pdf/java/attach-zugferd/)
+* [在Java中创建符合PDF/3-A标准的PDF并附加ZUGFeRD发票](/pdf/zh/java/attach-zugferd/)
 
 另请参见：
 
-* [在.NET中创建符合PDF/3-A标准的PDF并附加ZUGFeRD发票](/pdf/net/attach-zugferd/)
-* [在Python中创建符合PDF/3-A标准的PDF并附加ZUGFeRD发票](/pdf/python-net/attach-zugferd/)
+* [在.NET中创建符合PDF/3-A标准的PDF并附加ZUGFeRD发票](/pdf/zh/net/attach-zugferd/)
+* [在Python中创建符合PDF/3-A标准的PDF并附加ZUGFeRD发票](/pdf/zh/python-net/attach-zugferd/)

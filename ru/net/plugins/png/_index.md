@@ -2,7 +2,7 @@
 title: PNG конвертер
 type: docs
 weight: 110
-url: ru/net/plugins/png/
+url: /ru/net/plugins/png/
 description: Конвертирование PDF в изображения PNG с помощью плагина Aspose.PDF PNG
 lastmod: "2024-01-24"
 ---

@@ -3,7 +3,7 @@ title: C#을 사용하여 PDF 병합 방법
 linktitle: PDF 파일 병합
 type: docs
 weight: 50
-url: ko/net/merge-pdf-documents/
+url: /ko/net/merge-pdf-documents/
 keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
 description: 이 페이지는 C# 또는 VB.NET을 사용하여 PDF 문서를 단일 PDF 파일로 병합하는 방법을 설명합니다.
 lastmod: "2022-02-17"
@@ -82,7 +82,7 @@ sitemap:
 C#에서 PDF를 병합하는 것은 3rd 파티 라이브러리를 사용하지 않고는 간단하지 않습니다.
 이 글은 Aspose.PDF for .NET을 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합하는 방법을 보여줍니다. 예제는 C#으로 작성되었지만, API는 VB.NET과 같은 다른 .NET 프로그래밍 언어에서도 사용할 수 있습니다. PDF 파일은 첫 번째 파일이 다른 문서의 끝에 연결되도록 병합됩니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## C# 및 DOM을 사용하여 PDF 파일 병합
 

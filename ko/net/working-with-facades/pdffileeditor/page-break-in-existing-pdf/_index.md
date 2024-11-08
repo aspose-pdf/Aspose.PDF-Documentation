@@ -2,7 +2,7 @@
 title: 기존 PDF에서 페이지 나누기
 type: docs
 weight: 30
-url: ko/net/page-break-in-existing-pdf/
+url: /ko/net/page-break-in-existing-pdf/
 description: 이 섹션에서는 PdfFileEditor 클래스를 사용하여 기존 PDF에서 페이지를 나누는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

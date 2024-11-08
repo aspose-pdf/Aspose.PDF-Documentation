@@ -3,7 +3,7 @@ title: PDF에 PDF 페이지 스탬프 추가
 linktitle: PDF 파일의 페이지 스탬프
 type: docs
 weight: 30
-url: ko/php-java/page-stamps-in-the-pdf-file/
+url: /ko/php-java/page-stamps-in-the-pdf-file/
 description: PHP에서 PdfPageStamp 클래스를 사용하여 PDF 파일에 페이지 스탬프 추가.
 lastmod: "2024-09-10"
 sitemap:

@@ -3,7 +3,7 @@ title: 将 PDF 文件转换为其他格式
 linktitle: 将 PDF 转换为其他格式
 type: docs
 weight: 90
-url: zh/php-java/convert-pdf-to-other-files/
+url: /zh/php-java/convert-pdf-to-other-files/
 lastmod: "2024-05-20"
 description: 本主题向您展示如何使用 Aspose.PDF 将 PDF 文件转换为其他文件格式。
 sitemap:

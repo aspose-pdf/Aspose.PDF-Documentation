@@ -3,7 +3,7 @@ title: Définition des propriétés des éléments de structure
 linktitle: Définition des propriétés des éléments de structure
 type: docs
 weight: 30
-url: fr/net/setting-structure-elements-properties/
+url: /fr/net/setting-structure-elements-properties/
 description: Vous pouvez définir différentes propriétés des éléments de structure dans un document PDF avec Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:

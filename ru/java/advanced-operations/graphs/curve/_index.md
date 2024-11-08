@@ -3,7 +3,7 @@ title: Добавление Объекта Кривой в PDF файл
 linktitle: Добавить Кривую
 type: docs
 weight: 30
-url: ru/java/add-curve/
+url: /ru/java/add-curve/
 description: В этой статье объясняется, как создать объект кривой в вашем PDF с использованием Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

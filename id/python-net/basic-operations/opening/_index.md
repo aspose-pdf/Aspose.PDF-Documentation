@@ -3,7 +3,7 @@ title: Buka dokumen PDF secara programatis
 linktitle: Buka PDF
 type: docs
 weight: 20
-url: id/python-net/open-pdf-document/
+url: /id/python-net/open-pdf-document/
 description: Pelajari cara membuka file PDF di Python Aspose.PDF untuk pustaka Python via .NET. Anda dapat membuka PDF yang sudah ada, dokumen dari stream, dan dokumen PDF terenkripsi.
 lastmod: "2022-12-22"
 sitemap:

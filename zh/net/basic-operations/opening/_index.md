@@ -3,7 +3,7 @@ title: 以编程方式打开 PDF 文档
 linktitle: 打开 PDF
 type: docs
 weight: 20
-url: zh/net/open-pdf-document/
+url: /zh/net/open-pdf-document/
 description: 学习如何在 C# Aspose.PDF for .NET PDF 库中打开 PDF 文件。您可以打开现有的 PDF 文件、流中的文档以及加密的 PDF 文档。
 aliases:
     - /net/opening-a-pdf-document/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 打开现有的 PDF 文档
 

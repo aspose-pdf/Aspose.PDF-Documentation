@@ -2,7 +2,7 @@
 title: Экспорт данных в XML из PDF файла (Facades)
 type: docs
 weight: 20
-url: ru/java/export-data-into-a-pdf-file-facades/
+url: /ru/java/export-data-into-a-pdf-file-facades/
 description: Этот раздел объясняет, как экспортировать данные в XML из PDF файла с использованием Aspose.PDF Facades и класса Form.
 lastmod: "2021-06-05"
 sitemap:

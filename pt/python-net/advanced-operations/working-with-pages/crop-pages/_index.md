@@ -3,7 +3,7 @@ title: Cortar Páginas de PDF programaticamente Python
 linktitle: Cortar Páginas
 type: docs
 weight: 70
-url: pt/python-net/crop-pages/
+url: /pt/python-net/crop-pages/
 description: Você pode obter propriedades de página, como largura, altura, bleed-, crop- e trimbox usando Aspose.PDF para Python via .NET.
 lastmod: "2023-04-17"
 sitemap:

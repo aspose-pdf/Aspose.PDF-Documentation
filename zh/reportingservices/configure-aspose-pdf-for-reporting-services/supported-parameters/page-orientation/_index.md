@@ -2,7 +2,7 @@
 title: 页面方向
 type: docs
 weight: 10
-url: zh/reportingservices/page-orientation/
+url: /zh/reportingservices/page-orientation/
 lastmod: "2021-06-05"
 ---
 

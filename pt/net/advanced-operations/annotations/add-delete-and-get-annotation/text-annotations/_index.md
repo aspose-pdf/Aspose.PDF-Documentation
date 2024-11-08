@@ -3,7 +3,7 @@ title: Usando Anotação de Texto para PDF
 linktitle: Anotação de Texto
 type: docs
 weight: 10
-url: pt/net/text-annotation/
+url: /pt/net/text-annotation/
 description: Aspose.PDF para .NET permite que você Adicione, Obtenha e Delete Anotações de Texto do seu documento PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 ## Como adicionar Anotação de Texto em um arquivo PDF existente
 
-O trecho de código a seguir também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O trecho de código a seguir também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Uma Anotação de Texto é uma anotação vinculada a uma localização específica no documento PDF. Quando fechada, a anotação é exibida como um ícone; quando aberta, deve exibir uma janela pop-up contendo o texto da nota na fonte e tamanho escolhidos pelo leitor.
 
@@ -126,7 +126,7 @@ Uma Anotação Pop-up exibe texto em uma janela pop-up para entrada e edição. 
 
 Ela não deve ter fluxo de aparência ou ações associadas próprias e deve ser identificada pela entrada Popup no dicionário de anotação do pai.
 
-O seguinte trecho de código mostra como adicionar [Anotação Pop-up](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) em uma página PDF usando um exemplo de adição de uma [Anotação de Linha](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) do pai.
+O seguinte trecho de código mostra como adicionar [Anotação Pop-up](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) em uma página PDF usando um exemplo de adição de uma [Anotação de Linha](/pdf/pt/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) do pai.
 
 ```csharp
 using Aspose.Pdf.Annotations;

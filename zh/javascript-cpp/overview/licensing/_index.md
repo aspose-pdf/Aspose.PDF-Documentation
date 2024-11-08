@@ -3,7 +3,7 @@ title: Aspose.PDF for JavaScript通过C++的许可
 linktitle: 许可和限制
 type: docs
 weight: 50
-url: zh/javascript-cpp/licensing/
+url: /zh/javascript-cpp/licensing/
 description: Aspose.PDF for JavaScript邀请其客户获取经典许可证和计量许可证。还可以使用有限许可证更好地探索产品。
 lastmod: "2022-12-13"
 sitemap:

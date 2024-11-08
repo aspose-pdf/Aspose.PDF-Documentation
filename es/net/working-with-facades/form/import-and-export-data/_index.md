@@ -2,7 +2,7 @@
 title: Importar y Exportar Datos
 type: docs
 weight: 70
-url: es/net/import-and-export-data/
+url: /es/net/import-and-export-data/
 description: Esta sección explica cómo importar y exportar datos con Aspose.PDF Facades usando la clase Form.
 lastmod: "2024-06-05"
 draft: false

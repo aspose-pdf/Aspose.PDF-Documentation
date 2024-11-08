@@ -3,7 +3,7 @@ title: Manipuler les tableaux dans un PDF existant
 linktitle: Manipuler les tableaux
 type: docs
 weight: 30
-url: fr/java/manipulate-tables-in-existing-pdf/
+url: /fr/java/manipulate-tables-in-existing-pdf/
 description: Manipulez les tableaux dans un fichier PDF existant et remplacez l'ancien tableau par un nouveau dans un document PDF avec Aspose.PDF pour Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Python을 사용하여 PDF에서 테이블 작업하기
 linktitle: 테이블 작업하기
 type: docs
 weight: 50
-url: ko/python-net/working-with-tables/
+url: /ko/python-net/working-with-tables/
 description: 이 섹션은 Python 라이브러리를 사용하여 테이블을 추가하고 추출하는 방법, 테이블을 조작하는 방법을 설명합니다.
 lastmod: "2023-09-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 다음 작업을 수행할 수 있습니다:
 
-- [기존 PDF 문서에 테이블 생성 또는 추가](/pdf/python-net/add-table-in-existing-pdf-document/) - 테두리, 여백, 패딩을 고려하여 열이나 행을 병합하여 PDF 파일에 테이블을 생성합니다.
-- [기존 PDF 문서에서 테이블 추출](/pdf/python-net/extract-table-from-existing-pdf-document/) - PDF 파일에서 테이블을 추출할 수 있습니다.
-- [기존 PDF에서 테이블 조작](/pdf/python-net/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF에서 테이블을 조작합니다.
+- [기존 PDF 문서에 테이블 생성 또는 추가](/pdf/ko/python-net/add-table-in-existing-pdf-document/) - 테두리, 여백, 패딩을 고려하여 열이나 행을 병합하여 PDF 파일에 테이블을 생성합니다.
+- [기존 PDF 문서에서 테이블 추출](/pdf/ko/python-net/extract-table-from-existing-pdf-document/) - PDF 파일에서 테이블을 추출할 수 있습니다.
+- [기존 PDF에서 테이블 조작](/pdf/ko/python-net/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF에서 테이블을 조작합니다.
 
-- [기존 PDF에서 테이블 제거](/pdf/python-net/remove-tables-from-existing-pdf/) - PDF 문서에서 하나 또는 여러 개의 테이블을 제거합니다.
+- [기존 PDF에서 테이블 제거](/pdf/ko/python-net/remove-tables-from-existing-pdf/) - PDF 문서에서 하나 또는 여러 개의 테이블을 제거합니다.
 
 <script type="application/ld+json">
 {

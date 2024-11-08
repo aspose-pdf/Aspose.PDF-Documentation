@@ -2,7 +2,7 @@
 title: 页面边距大小
 type: docs
 weight: 70
-url: zh/reportingservices/page-margin-size/
+url: /zh/reportingservices/page-margin-size/
 lastmod: "2021-06-05"
 ---
 

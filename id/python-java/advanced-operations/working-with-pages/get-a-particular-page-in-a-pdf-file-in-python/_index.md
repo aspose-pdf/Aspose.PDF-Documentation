@@ -2,7 +2,7 @@
 title: Mendapatkan Halaman Tertentu dalam File PDF di Python
 type: docs
 weight: 30
-url: id/python-java/get-a-particular-page-in-a-pdf-file-in-python/
+url: /id/python-java/get-a-particular-page-in-a-pdf-file-in-python/
 ---
 
 Untuk mendapatkan Halaman Tertentu dalam dokumen PDF menggunakan **Aspose.PDF Java untuk Python**, cukup panggil kelas **GetPage**.

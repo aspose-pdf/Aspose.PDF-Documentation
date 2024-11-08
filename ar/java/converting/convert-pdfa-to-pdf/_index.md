@@ -3,7 +3,7 @@ title: تحويل PDF/A إلى تنسيق PDF
 linktitle: تحويل PDF/A إلى تنسيق PDF
 type: docs
 weight: 110
-url: ar/java/convert-pdfa-to-pdf/
+url: /ar/java/convert-pdfa-to-pdf/
 lastmod: "2021-11-19"
 description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF لتحويل ملف PDF/A إلى مستند PDF باستخدام مكتبة Java.
 sitemap:

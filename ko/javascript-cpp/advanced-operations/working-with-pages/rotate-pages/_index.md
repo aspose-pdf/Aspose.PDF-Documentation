@@ -3,7 +3,7 @@ title: JavaScript를 통해 C++로 PDF 페이지 회전
 linktitle: PDF 페이지 회전
 type: docs
 weight: 50
-url: ko/javascript-cpp/rotate-pages/
+url: /ko/javascript-cpp/rotate-pages/
 description: 이 주제는 JavaScript를 통해 C++로 기존 PDF 파일에서 페이지 방향을 프로그래밍 방식으로 회전하는 방법을 설명합니다. 
 lastmod: "2023-02-17"
 sitemap:

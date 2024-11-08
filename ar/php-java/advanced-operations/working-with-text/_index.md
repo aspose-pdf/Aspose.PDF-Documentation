@@ -3,7 +3,7 @@ title: التعامل مع النص في PDF
 linktitle: التعامل مع النص
 type: docs
 weight: 30
-url: ar/php-java/working-with-text/
+url: /ar/php-java/working-with-text/
 description: تشرح هذه القسم تقنيات مختلفة لمعالجة النصوص. تعلم كيفية إضافة، استبدال، تدوير، والبحث عن النص باستخدام Aspose.PDF وPHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -15,4 +15,4 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إضافة نص إلى ملف PDF](/pdf/php-java/add-text-to-pdf-file/) - إضافة نص إلى PDF الخاص بك، استخدام الخطوط من التدفق والملفات، إضافة سلسلة HTML، إضافة رابط تشعبي، إلخ.
+- [إضافة نص إلى ملف PDF](/pdf/ar/php-java/add-text-to-pdf-file/) - إضافة نص إلى PDF الخاص بك، استخدام الخطوط من التدفق والملفات، إضافة سلسلة HTML، إضافة رابط تشعبي، إلخ.

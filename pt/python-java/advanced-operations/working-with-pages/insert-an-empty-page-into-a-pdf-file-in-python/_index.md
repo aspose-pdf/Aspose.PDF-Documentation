@@ -2,7 +2,7 @@
 title: Inserir uma Página Vazia em um Arquivo PDF em Python
 type: docs
 weight: 70
-url: pt/python-java/inserir-uma-pagina-vazia-em-um-arquivo-pdf-em-python/
+url: /pt/python-java/inserir-uma-pagina-vazia-em-um-arquivo-pdf-em-python/
 ---
 
 <ins>Para inserir uma página vazia em um documento Pdf usando **Aspose.PDF Java para Python**, basta invocar a classe **InsertEmptyPage**.

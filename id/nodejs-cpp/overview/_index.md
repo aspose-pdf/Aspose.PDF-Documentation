@@ -3,7 +3,7 @@ title: Ikhtisar
 linktitle: Ikhtisar
 type: docs
 weight: 20
-url: id/nodejs-cpp/overview/
+url: /id/nodejs-cpp/overview/
 description: Ikhtisar fitur utama dan format yang didukung dari Aspose.PDF untuk Node.js melalui C++, panduan instalasi dan lisensi.
 lastmod: "2023-11-16"
 sitemap:
@@ -50,9 +50,9 @@ Selain itu, Aspose.PDF untuk Node.js melalui C++ dapat diterapkan untuk dengan m
 
 Pelajari lebih lanjut tentang:
 
-- [Format File yang Didukung](/pdf/nodejs-cpp/supported-file-formats/)
-- [Fitur Utama dari Aspose.PDF](/pdf/nodejs-cpp/key-features/)
-- [Persyaratan Sistem](/pdf/nodejs-cpp/system-requirements/)
-- [Instalasi](/pdf/nodejs-cpp/installation/)
-- [Lisensi](/pdf/nodejs-cpp/licensing/)
-- [Dukungan Teknis](/pdf/nodejs-cpp/technical-support/)
+- [Format File yang Didukung](/pdf/id/nodejs-cpp/supported-file-formats/)
+- [Fitur Utama dari Aspose.PDF](/pdf/id/nodejs-cpp/key-features/)
+- [Persyaratan Sistem](/pdf/id/nodejs-cpp/system-requirements/)
+- [Instalasi](/pdf/id/nodejs-cpp/installation/)
+- [Lisensi](/pdf/id/nodejs-cpp/licensing/)
+- [Dukungan Teknis](/pdf/id/nodejs-cpp/technical-support/)

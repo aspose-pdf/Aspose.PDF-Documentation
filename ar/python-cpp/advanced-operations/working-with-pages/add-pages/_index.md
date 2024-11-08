@@ -3,7 +3,7 @@ title: إضافة صفحات في PDF باستخدام بايثون عبر C++
 linktitle: إضافة صفحات
 type: docs
 weight: 10
-url: ar/python-cpp/add-pages/
+url: /ar/python-cpp/add-pages/
 description: تعلمك هذه المقالة كيفية إدراج (إضافة) صفحة في الموقع المطلوب في ملف PDF باستخدام بايثون عبر C++.
 lastmod: "2024-04-17"
 sitemap:

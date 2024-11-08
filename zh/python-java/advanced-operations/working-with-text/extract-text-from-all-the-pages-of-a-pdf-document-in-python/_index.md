@@ -2,7 +2,7 @@
 title: 从PDF文档的所有页面提取文本在Python中
 type: docs
 weight: 30
-url: zh/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
+url: /zh/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 ---
 
 要使用**Aspose.PDF Java for Python**从PDF文档的所有页面提取文本，只需调用**ExtractTextFromAllPages**模块。

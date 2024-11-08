@@ -3,7 +3,7 @@ title: 이미지 및 서명 정보 추출
 linktitle: 이미지 및 서명 정보 추출
 type: docs
 weight: 30
-url: ko/net/extract-image-and-signature-information/
+url: /ko/net/extract-image-and-signature-information/
 description: 서명 필드에서 이미지를 추출하고 SignatureField 클래스를 사용하여 서명 정보를 추출할 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 서명 필드에서 이미지 추출
 

@@ -2,7 +2,7 @@
 title: Features 
 type: docs
 weight: 30
-url: pt/sharepoint/features/
+url: /pt/sharepoint/features/
 lastmod: "2020-12-16"
 description: As funcionalidades da API PDF SharePoint incluem Exportação para PDF e Suporte Técnico Gratuito.
 
@@ -10,5 +10,5 @@ description: As funcionalidades da API PDF SharePoint incluem Exportação para 
 
 **Esta seção inclui os seguintes tópicos:**
 
-- [Exportar para PDF](/pdf/sharepoint/export-to-pdf/)
-- [Suporte Técnico Gratuito de Classe Mundial](/pdf/sharepoint/world-class-free-technical-support/)
+- [Exportar para PDF](/pdf/pt/sharepoint/export-to-pdf/)
+- [Suporte Técnico Gratuito de Classe Mundial](/pdf/pt/sharepoint/world-class-free-technical-support/)

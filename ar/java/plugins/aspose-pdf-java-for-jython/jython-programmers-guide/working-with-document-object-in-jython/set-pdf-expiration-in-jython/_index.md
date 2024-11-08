@@ -2,7 +2,7 @@
 title: تعيين انتهاء صلاحية PDF في Jython
 type: docs
 weight: 60
-url: ar/java/set-pdf-expiration-in-jython/
+url: /ar/java/set-pdf-expiration-in-jython/
 lastmod: "2021-06-05"
 ---
 

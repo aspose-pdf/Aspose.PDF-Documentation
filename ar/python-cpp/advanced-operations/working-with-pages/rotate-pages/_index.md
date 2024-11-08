@@ -3,7 +3,7 @@ title: تدوير صفحات PDF باستخدام Python عبر C++
 linktitle: تدوير صفحات PDF
 type: docs
 weight: 20
-url: ar/python-cpp/rotate-pages/
+url: /ar/python-cpp/rotate-pages/
 description: يصف هذا الموضوع كيفية تدوير اتجاه الصفحة في ملف PDF موجود برمجيًا باستخدام Python عبر C++.
 lastmod: "2024-04-17"
 sitemap:

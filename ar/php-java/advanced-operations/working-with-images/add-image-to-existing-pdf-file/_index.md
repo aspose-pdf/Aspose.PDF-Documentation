@@ -3,7 +3,7 @@ title: إضافة صورة إلى ملف PDF موجود
 linktitle: إضافة صورة
 type: docs
 weight: 10
-url: ar/php-java/add-image-to-existing-pdf-file/
+url: /ar/php-java/add-image-to-existing-pdf-file/
 description: يصف هذا القسم كيفية إضافة صورة إلى ملف PDF موجود باستخدام PHP.
 lastmod: "2024-06-05"
 ---

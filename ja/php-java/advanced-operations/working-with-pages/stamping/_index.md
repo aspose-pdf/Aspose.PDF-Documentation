@@ -3,7 +3,7 @@ title: Stamping
 linktitle: Stamping
 type: docs
 weight: 120
-url: ja/php-java/stamping/
+url: /ja/php-java/stamping/
 description: このセクションでは、PDFページに画像スタンプとテキストスタンプを追加する方法について説明します。
 lastmod: "2024-06-05"
 sitemap:
@@ -15,7 +15,7 @@ PDFドキュメントのスタンプは、紙のドキュメントにゴム印�
 
 PHPでスタンプを追加する方法を学ぶには、次のセクションを確認してください：
 
-- [PDFページに画像スタンプを追加する](/pdf/php-java/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを設定します。
-- [PDFファイルにテキストスタンプを追加する](/pdf/php-java/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、PDFにスタンプとしてストロークテキストを塗りつぶします。
+- [PDFページに画像スタンプを追加する](/pdf/ja/php-java/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを設定します。
+- [PDFファイルにテキストスタンプを追加する](/pdf/ja/php-java/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、PDFにスタンプとしてストロークテキストを塗りつぶします。
 
-- [PDFにページスタンプを追加する](/pdf/php-java/page-stamps-in-the-pdf-file/) - 別のPDFファイルのページに基づいた複雑なスタンプを追加します。
+- [PDFにページスタンプを追加する](/pdf/ja/php-java/page-stamps-in-the-pdf-file/) - 別のPDFファイルのページに基づいた複雑なスタンプを追加します。

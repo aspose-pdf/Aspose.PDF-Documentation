@@ -3,7 +3,7 @@ title: Menambahkan Halaman ke Dokumen PDF
 linktitle: Tambah Halaman
 type: docs
 weight: 10
-url: id/net/add-pages/
+url: /id/net/add-pages/
 description: Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghapus) halaman dari file PDF menggunakan C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -85,7 +85,7 @@ Bagian ini menunjukkan cara menambahkan halaman ke PDF menggunakan C#.
 
 Aspose.PDF untuk .NET memungkinkan Anda memasukkan halaman ke dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ### Sisipkan Halaman Kosong di File PDF di Lokasi yang Diinginkan
 

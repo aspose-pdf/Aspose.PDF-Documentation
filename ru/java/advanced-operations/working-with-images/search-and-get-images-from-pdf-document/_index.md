@@ -3,7 +3,7 @@ title: Поиск и Извлечение Изображений из PDF Док
 linktitle: Поиск и Извлечение Изображений
 type: docs
 weight: 60
-url: ru/java/search-and-get-images-from-pdf-document/
+url: /ru/java/search-and-get-images-from-pdf-document/
 description: Этот раздел объясняет, как искать и извлекать изображения из PDF документа с помощью библиотеки Aspose.PDF для Java.
 lastmod: "2021-06-05"
 ---

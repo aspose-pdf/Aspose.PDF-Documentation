@@ -3,7 +3,7 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: ja/nodejs-cpp/get-started/
+url: /ja/nodejs-cpp/get-started/
 description: このセクションでは、C++ 経由で Aspose.PDF for Node.js の基本原則について説明します。Aspose.PDF for Node.js via C++ は、さまざまな機能をサポートしています。
 lastmod: "2023-11-16"   
 sitemap:
@@ -27,31 +27,31 @@ PDFは、1990年代にAdobeによって、2つの目的を達成するために�
 
 ## 様々な機能
 
-- [PDFからテキストを抽出する](/pdf/nodejs-cpp/extract-text/)
-- [PDFドキュメントを最適化する](/pdf/nodejs-cpp/optimize-pdf/)
-- [PDFファイルにスタンプを追加する](/pdf/nodejs-cpp/add-stamp-to-pdf/)
-- [PDFファイルに画像を追加する](/pdf/nodejs-cpp/add-image-to-pdf/)
-- [PDFを2つのファイルに分割する](/pdf/nodejs-cpp/split-pdf/)
-- [2つのファイルをPDFにマージする](/pdf/nodejs-cpp/merge-pdf/)
-- [PDFドキュメントを暗号化する](/pdf/nodejs-cpp/encrypt-pdf/)
-- [PDFドキュメントを復号化する](/pdf/nodejs-cpp/decrypt-pdf/)
+- [PDFからテキストを抽出する](/pdf/ja/nodejs-cpp/extract-text/)
+- [PDFドキュメントを最適化する](/pdf/ja/nodejs-cpp/optimize-pdf/)
+- [PDFファイルにスタンプを追加する](/pdf/ja/nodejs-cpp/add-stamp-to-pdf/)
+- [PDFファイルに画像を追加する](/pdf/ja/nodejs-cpp/add-image-to-pdf/)
+- [PDFを2つのファイルに分割する](/pdf/ja/nodejs-cpp/split-pdf/)
+- [2つのファイルをPDFにマージする](/pdf/ja/nodejs-cpp/merge-pdf/)
+- [PDFドキュメントを暗号化する](/pdf/ja/nodejs-cpp/encrypt-pdf/)
+- [PDFドキュメントを復号化する](/pdf/ja/nodejs-cpp/decrypt-pdf/)
 
 ## 変換機能
 
-- [PDFをJPEGに変換する](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをPNGに変換する](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをTIFFに変換する](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをBMPに変換する](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをSVGに変換する](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをJPEGに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをPNGに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをTIFFに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをBMPに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをSVGに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
 
-- [PDFをSVG(Zip)に変換する](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをTeXに変換する](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDFをXPSに変換する](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDFをCSVに変換する](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [PDFをTXTに変換する](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDFをWordに変換する](/pdf/nodejs-cpp/convert-pdf-to-doc/)
-- [PDFをXLSXに変換する](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [PDFをグレースケールPDFに変換する](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDFをMicrosoft PowerPointに変換する](/pdf/nodejs-cpp/convert-pdf-to-powerpoint/)
-- [PDF/AをPDF形式に変換する](/pdf/nodejs-cpp/convert-pdfa-to-pdf/)
-- [PDFをPDF/A形式に変換する](/pdf/nodejs-cpp/convert-pdf-to-pdfa/)
+- [PDFをSVG(Zip)に変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをTeXに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDFをXPSに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDFをCSVに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-xlsx/)
+- [PDFをTXTに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDFをWordに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-doc/)
+- [PDFをXLSXに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-xlsx/)
+- [PDFをグレースケールPDFに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDFをMicrosoft PowerPointに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-powerpoint/)
+- [PDF/AをPDF形式に変換する](/pdf/ja/nodejs-cpp/convert-pdfa-to-pdf/)
+- [PDFをPDF/A形式に変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-pdfa/)

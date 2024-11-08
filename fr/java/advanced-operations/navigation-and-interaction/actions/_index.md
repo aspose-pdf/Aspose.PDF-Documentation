@@ -3,7 +3,7 @@ title: Travailler avec les Actions
 linktitle: Actions
 type: docs
 weight: 20
-url: fr/java/actions/
+url: /fr/java/actions/
 description: Cette section explique comment ajouter des actions aux documents et aux champs de formulaire par programmation avec Java. Apprenez à Ajouter, Créer et Obtenir un Hyperlien dans un Fichier PDF.
 lastmod: "2021-06-05"
 sitemap:

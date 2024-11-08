@@ -3,7 +3,7 @@ title: Trabalhando com Metadados de Arquivos PDF | C#
 linktitle: Metadados de Arquivo PDF
 type: docs
 weight: 140
-url: pt/net/pdf-file-metadata/
+url: /pt/net/pdf-file-metadata/
 description: Esta seção explica como obter informações de arquivos PDF, como obter Metadados XMP de um arquivo PDF, definir informações de arquivo PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Esta seção explica como obter informações de arquivos PDF, como obter Metadados XMP de um arquivo PDF, definir informações de arquivo PDF."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Obter Informações do Arquivo PDF
 

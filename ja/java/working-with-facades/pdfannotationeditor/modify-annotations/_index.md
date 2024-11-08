@@ -2,7 +2,7 @@
 title: PDFファイル内の注釈を修正する (ファサード)
 type: docs
 weight: 50
-url: ja/java/modify-annotations/
+url: /ja/java/modify-annotations/
 description: このセクションでは、Aspose.PDF Facadesを使用してPDFファイルからXFDFに注釈を修正する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -48,4 +48,4 @@ sitemap:
 
 ## 参照
 
-注釈を使用するための方法を比較し、自分に合った方法を見つけてみてください。[PDF 注釈](/pdf/java/annotations/)セクションを学びましょう。
+注釈を使用するための方法を比較し、自分に合った方法を見つけてみてください。[PDF 注釈](/pdf/ja/java/annotations/)セクションを学びましょう。

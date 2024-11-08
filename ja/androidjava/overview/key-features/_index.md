@@ -3,7 +3,7 @@ title: Aspose.PDFの主な機能
 linktitle: 主な機能
 type: docs
 weight: 20
-url: ja/androidjava/key-features/
+url: /ja/androidjava/key-features/
 description: Aspose.PDF for Android via Javaは、PDFドキュメントの操作における主な機能を示しています。
 lastmod: "2021-06-05"
 sitemap:

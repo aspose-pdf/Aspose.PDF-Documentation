@@ -2,7 +2,7 @@
 title: PDF 파일에서 서명 작업
 type: docs
 weight: 40
-url: ko/java/working-with-signature-in-a-pdf-file/
+url: /ko/java/working-with-signature-in-a-pdf-file/
 description: 이 섹션에서는 PdfFileSignature 클래스를 사용하여 PDF 파일에서 서명 작업을 수행하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

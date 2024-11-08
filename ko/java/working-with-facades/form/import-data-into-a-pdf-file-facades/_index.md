@@ -2,7 +2,7 @@
 title: PDF 파일로 데이터 가져오기 - facades
 type: docs
 weight: 10
-url: ko/java/import-data-into-a-pdf-file-facades/
+url: /ko/java/import-data-into-a-pdf-file-facades/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF 파일에서 XML로 데이터를 가져오는 방법을 설명합니다.
 lastmod: "2021-06-05"
 ---

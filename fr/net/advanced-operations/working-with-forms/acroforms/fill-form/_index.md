@@ -3,7 +3,7 @@ title: Fill AcroForm - Remplir un formulaire PDF en utilisant C#
 linktitle: Fill AcroForm
 type: docs
 weight: 20
-url: fr/net/fill-form/
+url: /fr/net/fill-form/
 keywords: Fill PDF Form C#
 description: Vous pouvez remplir des formulaires dans votre document PDF avec la bibliothèque Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "Vous pouvez remplir des formulaires dans votre document PDF avec la bibliothèque Aspose.PDF pour .NET."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Remplir un champ de formulaire dans un document PDF
 

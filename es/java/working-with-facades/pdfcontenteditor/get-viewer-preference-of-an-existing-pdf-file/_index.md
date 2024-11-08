@@ -2,7 +2,7 @@
 title: Obtener Preferencias del Visor de un Archivo PDF Existente
 type: docs
 weight: 70
-url: es/java/get-viewer-preference-of-an-existing-pdf-file/
+url: /es/java/get-viewer-preference-of-an-existing-pdf-file/
 description: Esta sección muestra cómo trabajar con Aspose.PDF Facades usando la Clase PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

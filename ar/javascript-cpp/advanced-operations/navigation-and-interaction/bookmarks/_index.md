@@ -3,7 +3,7 @@ title: العلامات المرجعية في PDF باستخدام JavaScript
 linktitle: العلامات المرجعية في PDF
 type: docs
 weight: 10
-url: ar/javascript-cpp/bookmark/
+url: /ar/javascript-cpp/bookmark/
 description: يمكنك إضافة أو حذف العلامات المرجعية في مستند PDF باستخدام JavaScript.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Stamping
 linktitle: Stamping
 type: docs
 weight: 120
-url: ja/java/stamping/
+url: /ja/java/stamping/
 description: このセクションでは、PDFページに画像スタンプとテキストスタンプを追加する方法について説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -15,7 +15,7 @@ PDFドキュメントのスタンプは、紙の文書にゴム印を押すこ�
 
 Javaでスタンプを追加する方法を学ぶには、次のセクションを確認してください:
 
-- [PDFページに画像スタンプを追加](/pdf/java/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを使用します。
-- [PDFファイルにテキストスタンプを追加](/pdf/java/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、PDFにスタンプとしてストロークテキストを塗りつぶします。
-- [PDFにページスタンプを追加](/pdf/java/page-stamps-in-the-pdf-file/) - 別のPDFのページに基づいた複雑なスタンプを追加します。
+- [PDFページに画像スタンプを追加](/pdf/ja/java/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを使用します。
+- [PDFファイルにテキストスタンプを追加](/pdf/ja/java/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、PDFにスタンプとしてストロークテキストを塗りつぶします。
+- [PDFにページスタンプを追加](/pdf/ja/java/page-stamps-in-the-pdf-file/) - 別のPDFのページに基づいた複雑なスタンプを追加します。
  申し訳ありませんが、指定された内容を翻訳することはできません。

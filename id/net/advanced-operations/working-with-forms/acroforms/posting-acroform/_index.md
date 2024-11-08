@@ -3,7 +3,7 @@ title: Posting AcroForm Data
 linktitle: Posting AcroForm
 type: docs
 weight: 50
-url: id/net/posting-acroform-data/
+url: /id/net/posting-acroform-data/
 description: Anda dapat mengimpor dan mengekspor data formulir ke dan dari file XML dengan namespace Aspose.Pdf.Facades di Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ AcroForm adalah tipe penting dari dokumen PDF. Anda tidak hanya dapat membuat da
 
 ## Detail Implementasi
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Dalam artikel ini, kami telah mencoba membuat AcroForm menggunakan [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
 Dalam artikel ini, kami telah mencoba membuat AcroForm menggunakan [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).

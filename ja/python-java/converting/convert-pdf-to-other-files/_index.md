@@ -3,7 +3,7 @@ title: PDFをEPUB、LaTeX、Text、XPSに変換する方法（Python）
 linktitle: PDFを他の形式に変換
 type: docs
 weight: 90
-url: ja/python-java/convert-pdf-to-other-files/
+url: /ja/python-java/convert-pdf-to-other-files/
 lastmod: "2023-04-06"
 keywords: 変換, PDF, EPUB, LaText, テキスト, XPS, Python
 description: このトピックでは、Pythonを使用してPDFファイルをEPUB、LaTeX、テキスト、XPSなどの他のファイル形式に変換する方法を示します。

@@ -2,7 +2,7 @@
 title: Flatten Annotation from PDF File to XFDF (facades)
 type: docs
 weight: 40
-url: ar/java/flatten-annotation/
+url: /ar/java/flatten-annotation/
 description: يوضح هذا القسم كيفية تصدير التعليقات التوضيحية من ملف PDF إلى XFDF باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:

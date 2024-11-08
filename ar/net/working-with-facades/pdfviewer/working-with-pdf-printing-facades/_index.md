@@ -2,7 +2,7 @@
 title: العمل مع طباعة PDF - الواجهات
 type: docs
 weight: 10
-url: ar/net/working-with-pdf-printing-facades/
+url: /ar/net/working-with-pdf-printing-facades/
 description: يشرح هذا القسم كيفية طباعة ملفات PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

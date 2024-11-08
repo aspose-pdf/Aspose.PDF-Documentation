@@ -2,7 +2,7 @@
 title: 高度な機能
 type: docs
 weight: 210
-url: ja/net/advanced-features/
+url: /ja/net/advanced-features/
 ---
 
 ## ブラウザにPDFをダウンロードするために送信する

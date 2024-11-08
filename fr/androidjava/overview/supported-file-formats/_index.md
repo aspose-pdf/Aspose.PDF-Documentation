@@ -3,7 +3,7 @@ title: Aspose.PDF Formats de Fichier Pris en Charge
 linktitle: Formats de Fichier Pris en Charge
 type: docs
 weight: 10
-url: fr/androidjava/supported-file-formats/
+url: /fr/androidjava/supported-file-formats/
 description: Cette page montre quels formats de fichiers Aspose.PDF pour Android via Java peut charger et enregistrer.
 lastmod: "2021-06-05"
 sitemap:

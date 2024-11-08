@@ -3,7 +3,7 @@ title: Annotations PDF
 linktitle: Annotations PDF
 type: docs
 weight: 100
-url: fr/python-net/annotations/
+url: /fr/python-net/annotations/
 description: Cette section montre comment utiliser toutes sortes d'annotations dans votre fichier PDF avec la bibliothèque Aspose.PDF.
 lastmod: "2023-02-17"
 sitemap:
@@ -85,7 +85,7 @@ Les annotations peuvent être utilisées pour commenter, réviser, marquer des d
 
 Vous êtes capable de faire ce qui suit :
 
-- [Ajouter, Supprimer et Obtenir une Annotation](/pdf/python-net/add-delete-and-get-annotation/) - cette section explique comment travailler avec tous les types d'annotations autorisées.
+- [Ajouter, Supprimer et Obtenir une Annotation](/pdf/fr/python-net/add-delete-and-get-annotation/) - cette section explique comment travailler avec tous les types d'annotations autorisées.
 
 <script type="application/ld+json">
 {

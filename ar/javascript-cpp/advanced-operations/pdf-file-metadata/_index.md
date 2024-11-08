@@ -3,7 +3,7 @@ title: التعامل مع بيانات وصف ملف PDF باستخدام JavaS
 linktitle: بيانات وصف ملف PDF
 type: docs
 weight: 130
-url: ar/javascript-cpp/pdf-file-metadata/
+url: /ar/javascript-cpp/pdf-file-metadata/
 description: يوضح هذا القسم كيفية الحصول على معلومات ملف PDF، وكيفية الحصول على البيانات الوصفية من ملف PDF، وتعيين معلومات ملف PDF.
 lastmod: "2023-02-17"
 sitemap:

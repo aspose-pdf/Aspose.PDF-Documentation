@@ -2,7 +2,7 @@
 title: Aspose.PDF Visual Studio Plugin
 type: docs
 weight: 20
-url: ar/net/aspose-pdf-visual-studio-plugin/
+url: /ar/net/aspose-pdf-visual-studio-plugin/
 description: تعلم كيفية استخدام وحدة استيراد PDF في Umbraco
 lastmod: "2021-06-05"
 sitemap:

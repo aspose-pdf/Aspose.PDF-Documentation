@@ -2,7 +2,7 @@
 title: 기존 PDF 파일에 주석 추가
 type: docs
 weight: 80
-url: ko/net/adding-annotations-to-existing-pdf-file/
+url: /ko/net/adding-annotations-to-existing-pdf-file/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 기존 PDF 파일에 주석을 추가하는 방법을 설명합니다.
 lastmod: "2021-06-30"
 sitemap:

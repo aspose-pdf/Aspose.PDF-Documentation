@@ -2,7 +2,7 @@
 title: com.aspose.pdf.facades를 사용하여 주석을 XFDF 형식으로 가져오기 및 내보내기
 type: docs
 weight: 20
-url: ko/java/import-export-annotations/
+url: /ko/java/import-export-annotations/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF 파일에서 XFDF로 주석을 내보내고 가져오는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

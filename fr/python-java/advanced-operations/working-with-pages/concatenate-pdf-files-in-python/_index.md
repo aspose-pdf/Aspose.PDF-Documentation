@@ -2,7 +2,7 @@
 title: Concaténer des fichiers PDF en Python
 type: docs
 weight: 10
-url: fr/python-java/concatenate-pdf-files-in-python/
+url: /fr/python-java/concatenate-pdf-files-in-python/
 ---
 
 Pour concaténer des fichiers PDF en utilisant **Aspose.PDF Java pour Python**, il suffit d'invoquer la classe **ConcatenatePdfFiles**.

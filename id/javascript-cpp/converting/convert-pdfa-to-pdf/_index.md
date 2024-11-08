@@ -3,7 +3,7 @@ title: Mengonversi format PDF/A ke PDF
 linktitle: Mengonversi format PDF/A ke PDF
 type: docs
 weight: 110
-url: id/javascript-cpp/convert-pdfa-to-pdf/
+url: /id/javascript-cpp/convert-pdfa-to-pdf/
 lastmod: "2023-11-01"
 description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan konversi file PDF/A ke dokumen PDF dengan JavaScript.
 sitemap:

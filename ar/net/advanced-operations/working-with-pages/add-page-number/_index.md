@@ -3,7 +3,7 @@ title: إضافة رقم الصفحة إلى ملف PDF باستخدام C#
 linktitle: إضافة رقم الصفحة
 type: docs
 weight: 100
-url: ar/net/add-page-number/
+url: /ar/net/add-page-number/
 description: يتيح لك Aspose.PDF لـ .NET إضافة ختم رقم الصفحة إلى ملف PDF باستخدام فئة ختم رقم الصفحة.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 كل الوثائق يجب أن تحتوي على أرقام الصفحات فيها. يسهل رقم الصفحة على القارئ تحديد أجزاء مختلفة من الوثيقة.
 **Aspose.PDF لـ .NET** يتيح لك إضافة أرقام الصفحات مع PageNumberStamp.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يمكنك استخدام فئة [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) لإضافة ختم رقم الصفحة في ملف PDF.
 يمكنك استخدام فئة [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) لإضافة ختم رقم الصفحة في ملف PDF.

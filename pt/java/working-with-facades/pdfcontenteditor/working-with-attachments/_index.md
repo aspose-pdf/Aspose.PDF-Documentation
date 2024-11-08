@@ -2,7 +2,7 @@
 title: Trabalhando com Anexos
 type: docs
 weight: 50
-url: pt/java/working-with-attachments/
+url: /pt/java/working-with-attachments/
 description: Esta seção explica como trabalhar com anexos em seu PDF com Aspose.PDF Facades - um conjunto de ferramentas para operações populares com PDF.
 lastmod: "2021-06-24"
 sitemap:

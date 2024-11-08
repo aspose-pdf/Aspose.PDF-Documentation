@@ -3,7 +3,7 @@ title: Faire Pivoter le Texte à l'Intérieur du PDF
 linktitle: Faire Pivoter le Texte à l'Intérieur du PDF
 type: docs
 weight: 50
-url: fr/java/rotate-text-inside-pdf/
+url: /fr/java/rotate-text-inside-pdf/
 description: Apprenez différentes façons de faire pivoter du texte dans un PDF. Aspose.PDF vous permet de faire pivoter le texte à n'importe quel angle, faire pivoter un fragment de texte ou un paragraphe entier.
 lastmod: "2021-06-05"
 sitemap:

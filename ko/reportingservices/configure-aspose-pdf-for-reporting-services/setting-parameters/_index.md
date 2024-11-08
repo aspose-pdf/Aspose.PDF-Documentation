@@ -2,7 +2,7 @@
 title: 매개 변수 설정
 type: docs
 weight: 10
-url: ko/reportingservices/setting-parameters/
+url: /ko/reportingservices/setting-parameters/
 lastmod: "2021-06-05"
 ---
 

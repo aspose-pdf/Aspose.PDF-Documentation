@@ -3,7 +3,7 @@ title: Aspose.PDF의 주요 기능
 linktitle: 주요 기능
 type: docs
 weight: 80
-url: ko/net/key-features/
+url: /ko/net/key-features/
 description: Aspose.PDF for .NET은 일반적인 기능을 보여줍니다. 지원되는 PDF 버전과 PDF를 가지고 할 수 있는 모든 조작을 보여줍니다.
 lastmod: "2021-06-05"
 aliases:

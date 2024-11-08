@@ -3,7 +3,7 @@ title: Extraire un tableau d'un document PDF
 linktitle: Extraire un tableau
 type: docs
 weight: 20
-url: fr/python-net/extract-table-from-existing-pdf-document/
+url: /fr/python-net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF pour Python via .NET permet d'effectuer diverses manipulations avec les tableaux contenus dans votre document PDF.
 lastmod: "2023-02-17"
 sitemap:

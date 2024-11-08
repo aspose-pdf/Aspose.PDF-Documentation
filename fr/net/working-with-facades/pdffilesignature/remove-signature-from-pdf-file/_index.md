@@ -2,7 +2,7 @@
 title: Supprimer la Signature d'un Fichier PDF
 type: docs
 weight: 20
-url: fr/net/remove-signature-from-pdf/
+url: /fr/net/remove-signature-from-pdf/
 description: Cette section explique comment supprimer la signature d'un fichier PDF en utilisant la classe PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

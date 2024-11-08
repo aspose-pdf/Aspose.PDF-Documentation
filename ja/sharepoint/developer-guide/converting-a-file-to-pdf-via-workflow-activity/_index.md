@@ -2,7 +2,7 @@
 title: ワークフローアクティビティを介してファイルをPDFに変換する
 type: docs
 weight: 50
-url: ja/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
+url: /ja/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIは、ドキュメントをPDFに変換するSharePointワークフローで使用できます。
 ---

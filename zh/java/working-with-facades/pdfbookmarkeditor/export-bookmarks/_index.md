@@ -2,7 +2,7 @@
 title: 从现有PDF文件导出书签到XML（外观）
 type: docs
 weight: 20
-url: zh/java/export-bookmark/
+url: /zh/java/export-bookmark/
 description: 本节解释如何使用PdfBookmarEditor类通过Aspose.PDF Facades导出书签。
 lastmod: "2021-06-05"
 sitemap:

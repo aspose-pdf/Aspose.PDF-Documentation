@@ -3,7 +3,7 @@ title: Pisahkan PDF secara programatik
 linktitle: Pisahkan file PDF
 type: docs
 weight: 60
-url: id/cpp/split-pdf-document/
+url: /id/cpp/split-pdf-document/
 description: Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individu dengan C++.
 lastmod: "2022-09-01"
 sitemap:

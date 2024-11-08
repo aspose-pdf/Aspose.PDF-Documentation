@@ -3,7 +3,7 @@ title: Node.jsで注釈を削除する
 linktitle: 注釈を削除する
 type: docs
 weight: 10
-url: ja/nodejs-cpp/delete-annotation/
+url: /ja/nodejs-cpp/delete-annotation/
 description: Aspose.PDF for Node.jsを使用してPDFファイルから注釈を削除することができます。
 lastmod: "2023-11-16"
 sitemap:

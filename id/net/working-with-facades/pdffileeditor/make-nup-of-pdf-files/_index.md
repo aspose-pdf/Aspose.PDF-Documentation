@@ -2,7 +2,7 @@
 title: Buat NUp dari File PDF
 type: docs
 weight: 90
-url: id/net/make-nup-of-pdf-files/
+url: /id/net/make-nup-of-pdf-files/
 description: Artikel ini menunjukkan cara membuat NUp dari file PDF menggunakan Aspose.PDF Facades dengan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

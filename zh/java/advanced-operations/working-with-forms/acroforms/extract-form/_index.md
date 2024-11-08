@@ -3,7 +3,7 @@ title: 提取数据 AcroForms
 linktitle: 提取数据 AcroForms
 type: docs
 weight: 30
-url: zh/java/extract-form/
+url: /zh/java/extract-form/
 description: 本节解释如何使用 Aspose.PDF for Java 从 PDF 文档中提取表单。
 lastmod: "2021-06-05"
 sitemap:

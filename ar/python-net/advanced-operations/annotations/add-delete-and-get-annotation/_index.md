@@ -3,7 +3,7 @@ title: إضافة وحذف والحصول على التعليقات التوضي
 linktitle: إضافة وحذف والحصول على التعليقات التوضيحية
 type: docs
 weight: 20
-url: ar/python-net/add-delete-and-get-annotation/
+url: /ar/python-net/add-delete-and-get-annotation/
 description: باستخدام Aspose.PDF لبايثون يمكنك إضافة وحذف والحصول على التعليقات التوضيحية من ملف PDF الخاص بك. تحقق من جميع قوائم التعليقات التوضيحية لحل مهمتك.
 lastmod: "2023-02-17"
 sitemap:
@@ -83,8 +83,8 @@ sitemap:
 
 لقد قمنا بتجميع الأنواع المختلفة من التعليقات التوضيحية المتاحة لمكتبة Aspose.PDF لـ Python في مجموعات:
 
-- [تعليقات توضيحية نصية لـ PDF](/pdf/python-net/text-annotation/)
-- [تعليقات توضيحية للتظليل لـ PDF](/pdf/python-net/highlights-annotation/)
-- [تعليقات توضيحية للأشكال لـ PDF](/pdf/python-net/figures-annotation/)
-- [تعليقات توضيحية لاصقة لـ PDF](/pdf/python-net/sticky-annotations/)
-- [تعليقات توضيحية إضافية](/pdf/python-net/extra-annotations/)
+- [تعليقات توضيحية نصية لـ PDF](/pdf/ar/python-net/text-annotation/)
+- [تعليقات توضيحية للتظليل لـ PDF](/pdf/ar/python-net/highlights-annotation/)
+- [تعليقات توضيحية للأشكال لـ PDF](/pdf/ar/python-net/figures-annotation/)
+- [تعليقات توضيحية لاصقة لـ PDF](/pdf/ar/python-net/sticky-annotations/)
+- [تعليقات توضيحية إضافية](/pdf/ar/python-net/extra-annotations/)

@@ -3,7 +3,7 @@ title: 在标记 PDF 中处理表格
 linktitle: 在标记 PDF 中处理表格
 type: docs
 weight: 40
-url: zh/java/working-with-table-in-tagged-pdfs/
+url: /zh/java/working-with-table-in-tagged-pdfs/
 description: 本文解释了如何使用 Aspose.PDF for Java 在标记 PDF 文档中处理表格。
 lastmod: "2021-06-05"
 sitemap:

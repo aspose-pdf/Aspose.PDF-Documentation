@@ -2,7 +2,7 @@
 title: Извлечение страниц PDF
 type: docs
 weight: 40
-url: ru/net/extract-pdf-pages/
+url: /ru/net/extract-pdf-pages/
 description: В этом разделе объясняется, как извлекать страницы PDF с использованием Aspose.PDF Facades, используя класс PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

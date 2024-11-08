@@ -2,7 +2,7 @@
 title: 既存のPDFファイルからブックマークをXMLにエクスポートする(facades)
 type: docs
 weight: 20
-url: ja/java/export-bookmark/
+url: /ja/java/export-bookmark/
 description: このセクションでは、PdfBookmarEditorクラスを使用してAspose.PDF Facadesでブックマークをエクスポートする方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

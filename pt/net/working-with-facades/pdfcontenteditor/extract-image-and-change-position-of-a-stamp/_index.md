@@ -2,7 +2,7 @@
 title: Extrair imagem e mudar posição do carimbo
 type: docs
 weight: 30
-url: pt/net/extract-image-and-change-position-of-a-stamp/
+url: /pt/net/extract-image-and-change-position-of-a-stamp/
 description: Esta seção explica como extrair imagem e mudar posição de um carimbo com Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

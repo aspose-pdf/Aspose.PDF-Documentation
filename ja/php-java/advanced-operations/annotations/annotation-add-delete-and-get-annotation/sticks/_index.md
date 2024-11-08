@@ -3,7 +3,7 @@ title: PDF スティッキー注釈
 linktitle: スティッキー注釈
 type: docs
 weight: 50
-url: ja/php-java/sticky-annotations/
+url: /ja/php-java/sticky-annotations/
 description: このトピックはスティッキー注釈についてであり、例としてテキスト内のウォーターマーク注釈を示しています。ページ上のグラフィックを表現するために使用されます。このタスクを解決するコードスニペットをチェックしてください。
 lastmod: "2024-06-24"
 sitemap:

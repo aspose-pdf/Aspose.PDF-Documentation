@@ -3,7 +3,7 @@ title: Menambahkan Cap Teks di PDF C#
 linktitle: Cap Teks di File PDF
 type: docs
 weight: 20
-url: id/net/text-stamps-in-the-pdf-file/
+url: /id/net/text-stamps-in-the-pdf-file/
 description: Menambahkan cap teks ke dokumen PDF menggunakan kelas TextStamp dengan pustaka Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 Anda dapat menggunakan kelas [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) untuk menambahkan cap teks dalam file PDF. Kelas TextStamp menyediakan properti yang diperlukan untuk membuat cap berbasis teks seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan cap teks, Anda perlu membuat objek Dokumen dan objek TextStamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode AddStamp dari Halaman untuk menambahkan cap dalam PDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara menambahkan cap teks dalam file PDF.
 

@@ -3,7 +3,7 @@ title: إنشاء مستند PDF
 linktitle: إنشاء PDF
 type: docs
 weight: 10
-url: ar/python-cpp/create-document/
+url: /ar/python-cpp/create-document/
 description: تصف هذه الصفحة كيفية إنشاء مستند PDF من الصفر باستخدام Aspose.PDF لـ Python عبر مكتبة C++.
 ---
 

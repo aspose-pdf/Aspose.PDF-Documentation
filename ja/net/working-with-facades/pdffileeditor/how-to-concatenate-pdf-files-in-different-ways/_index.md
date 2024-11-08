@@ -3,7 +3,7 @@ title: .NET 5を使用してPDFファイルをマージする
 linktitle: PDFをマージする方法
 type: docs
 weight: 75
-url: ja/net/how-to-concatenate-pdf-files-in-different-ways/
+url: /ja/net/how-to-concatenate-pdf-files-in-different-ways/
 description: この記事では、既存の複数のPDFファイルを単一のPDFファイルに結合するための可能な方法を説明します。
 lastmod: "2021-06-05"
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-この記事では、[Aspose.PDF for .NET](/pdf/net/)コンポーネントを使用して、複数のPDFドキュメントを単一のPDFドキュメントに[結合](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)する方法について説明します。[Aspose.PDF for .NET](/pdf/net/)は、この作業を簡単にします。
+この記事では、[Aspose.PDF for .NET](/pdf/ja/net/)コンポーネントを使用して、複数のPDFドキュメントを単一のPDFドキュメントに[結合](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)する方法について説明します。[Aspose.PDF for .NET](/pdf/ja/net/)は、この作業を簡単にします。
 
 {{% /alert %}}
 

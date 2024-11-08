@@ -3,7 +3,7 @@ title: PythonでPDFにページを追加
 linktitle: ページを追加
 type: docs
 weight: 10
-url: ja/python-net/add-pages/
+url: /ja/python-net/add-pages/
 description: この記事では、PDFファイルの希望の場所にページを挿入（追加）する方法を教えます。C#を使用して、PDFファイルからページを移動、削除（削除）する方法を学びます。
 lastmod: "2022-02-17"
 sitemap:

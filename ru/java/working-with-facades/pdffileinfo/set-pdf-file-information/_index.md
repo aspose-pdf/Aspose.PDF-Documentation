@@ -2,7 +2,7 @@
 title: Установить информацию о PDF-файле - фасады
 type: docs
 weight: 20
-url: ru/java/set-pdf-information/
+url: /ru/java/set-pdf-information/
 description: Этот раздел объясняет, как установить информацию о PDF-файле с использованием Aspose.PDF Facades и класса PdfFileInfo.
 lastmod: "2021-06-05"
 sitemap:

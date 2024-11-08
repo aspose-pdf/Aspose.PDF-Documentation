@@ -3,7 +3,7 @@ title: PDFドキュメントのページからテキストを検索して取得�
 linktitle: 検索とテキスト取得
 type: docs
 weight: 60
-url: ja/cpp/search-and-get-text-from-pdf/
+url: /ja/cpp/search-and-get-text-from-pdf/
 description: この記事では、さまざまなツールを使用してPDFドキュメントからテキストを検索して取得する方法を説明します。特定のページまたは全体のページから正規表現で検索できます。
 lastmod: "2021-12-13"
 sitemap:

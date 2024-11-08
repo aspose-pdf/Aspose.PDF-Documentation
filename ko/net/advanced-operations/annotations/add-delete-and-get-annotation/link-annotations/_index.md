@@ -3,7 +3,7 @@ title: PDF에서 링크 주석 사용하기
 linktitle: 링크 주석
 type: docs
 weight: 70
-url: ko/net/link-annotations/
+url: /ko/net/link-annotations/
 description: Aspose.PDF for .NET을 사용하면 PDF 문서에서 링크 주석을 추가, 가져오기 및 삭제할 수 있습니다.
 lastmod: "2024-07-28"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 ## 기존 PDF 파일에 링크 주석 추가
 
-> 다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+> 다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 [링크 주석](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)은 하이퍼링크, 다른 곳의 목적지, 문서를 나타냅니다. PDF 표준에 따르면 링크 주석은 세 가지 경우에 사용할 수 있습니다: 페이지 뷰 열기, 파일 열기, 웹 페이지 열기.
 

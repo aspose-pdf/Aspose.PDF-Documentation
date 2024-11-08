@@ -3,7 +3,7 @@ title: PDFから添付ファイルを削除するJavaScript
 linktitle: 既存のPDFから添付ファイルを削除
 type: docs
 weight: 10
-url: ja/javascript-cpp/removing-attachment-from-an-existing-pdf/
+url: /ja/javascript-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDFはPDFドキュメントから添付ファイルを削除できます。Aspose.PDFを使用してPDFファイルの添付ファイルを削除するJavaScript Webツールキットを使用します。
 lastmod: "2023-09-17"
 sitemap:

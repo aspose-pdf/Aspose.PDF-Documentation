@@ -3,7 +3,7 @@ title: قص صفحات PDF برمجيًا C#
 linktitle: قص الصفحات
 type: docs
 weight: 80
-url: ar/net/crop-pages/
+url: /ar/net/crop-pages/
 description: يمكنك الحصول على خصائص الصفحة، مثل العرض والطول والهوامش وصندوق القص والتشذيب باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -88,7 +88,7 @@ sitemap:
 - **Page.Rect**: تقاطع (المستطيل المرئي المشترك) لـ MediaBox و DropBox. الصورة أدناه توضح هذه الخصائص.
 لمزيد من التفاصيل، يرجى زيارة [هذه الصفحة](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 الشفرة أدناه توضح كيفية قص الصفحة:
 

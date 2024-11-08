@@ -3,7 +3,7 @@ title: 修改AcroForm
 linktitle: 修改AcroForm
 type: docs
 weight: 40
-url: zh/cpp/modifing-form/
+url: /zh/cpp/modifing-form/
 description: 使用Aspose.PDF for C++库修改PDF文件中的表单。您可以在现有表单中添加或删除字段，获取和设置字段限制等。
 lastmod: "2021-12-01"
 sitemap:

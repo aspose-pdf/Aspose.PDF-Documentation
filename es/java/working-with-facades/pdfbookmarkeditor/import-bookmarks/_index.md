@@ -2,7 +2,7 @@
 title: Importar Marcadores desde XML a un Archivo PDF Existente (fachadas)
 type: docs
 weight: 30
-url: es/java/import-bookmark/
+url: /es/java/import-bookmark/
 description: Esta sección explica cómo importar marcadores con Aspose.PDF Facades usando la Clase PdfBookmarkEditor.
 lastmod: "2021-06-05"
 sitemap:

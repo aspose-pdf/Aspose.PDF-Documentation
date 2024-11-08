@@ -3,7 +3,7 @@ title: العمل مع الحافظة في مستندات PDF
 linktitle: الحافظة
 type: docs
 weight: 40
-url: ar/java/portfolio/
+url: /ar/java/portfolio/
 description: كيفية إنشاء حافظة PDF باستخدام جافا. يجب عليك استخدام ملف Microsoft Excel، ومستند Word، وملف صورة لإنشاء حافظة PDF.
 lastmod: "2021-06-05"
 sitemap:

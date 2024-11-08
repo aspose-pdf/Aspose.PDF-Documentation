@@ -2,7 +2,7 @@
 title: PDF印刷の操作 - ファサード
 type: docs
 weight: 10
-url: ja/net/working-with-pdf-printing-facades/
+url: /ja/net/working-with-pdf-printing-facades/
 description: このセクションでは、PdfFileEditorクラスを使用してAspose.PDFファサードでPDFファイルを印刷する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

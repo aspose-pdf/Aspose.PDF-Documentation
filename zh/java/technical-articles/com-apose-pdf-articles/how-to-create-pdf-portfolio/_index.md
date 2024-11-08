@@ -2,7 +2,7 @@
 title: 如何创建 PDF 作品集
 type: docs
 weight: 10
-url: zh/java/how-to-create-pdf-portfolio/
+url: /zh/java/how-to-create-pdf-portfolio/
 lastmod: "2022-01-27"
 ---
 

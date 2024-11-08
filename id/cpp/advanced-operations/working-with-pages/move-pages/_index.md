@@ -3,7 +3,7 @@ title: Memindahkan Halaman PDF secara Pemrograman C++
 linktitle: Memindahkan Halaman PDF
 type: docs
 weight: 20
-url: id/cpp/move-pages/
+url: /id/cpp/move-pages/
 description: Cobalah memindahkan halaman ke lokasi yang diinginkan atau di akhir file PDF menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-12-09"
 sitemap:

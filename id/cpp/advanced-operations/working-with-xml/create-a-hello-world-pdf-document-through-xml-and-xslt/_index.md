@@ -3,7 +3,7 @@ title: Membuat PDF dari XML menggunakan XSLT
 linktitle: Membuat PDF dari XML menggunakan XSLT
 type: docs
 weight: 10
-url: id/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /id/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: Perpustakaan C++ menyediakan kemampuan untuk mengonversi file XML menjadi dokumen PDF dengan syarat file XML input harus mengikuti Skema Aspose.PDF.
 lastmod: "2022-01-31"
 sitemap:

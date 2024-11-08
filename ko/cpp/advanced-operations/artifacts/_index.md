@@ -3,7 +3,7 @@ title: C++에서 아티팩트 작업하기
 linktitle: 아티팩트 작업하기
 type: docs
 weight: 110
-url: ko/cpp/artifacts/
+url: /ko/cpp/artifacts/
 description: 이 페이지는 Aspose.PDF for C++를 사용하여 Artifact 클래스를 작업하는 방법을 설명합니다. 코드 스니펫은 PDF 페이지에 배경 이미지를 추가하는 방법과 PDF 파일의 첫 페이지에 있는 각 워터마크를 얻는 방법을 보여줍니다.
 lastmod: "2021-11-22"
 sitemap:

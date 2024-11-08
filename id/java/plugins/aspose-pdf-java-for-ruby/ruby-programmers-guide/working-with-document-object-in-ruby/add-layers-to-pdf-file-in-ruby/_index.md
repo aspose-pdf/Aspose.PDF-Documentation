@@ -2,7 +2,7 @@
 title: Tambahkan Lapisan ke File PDF di Ruby
 type: docs
 weight: 20
-url: id/java/add-layers-to-pdf-file-in-ruby/
+url: /id/java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

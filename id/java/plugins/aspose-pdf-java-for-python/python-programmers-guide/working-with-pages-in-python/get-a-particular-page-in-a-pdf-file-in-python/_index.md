@@ -2,7 +2,7 @@
 title: Mendapatkan Halaman Tertentu dalam File PDF di Python
 type: docs
 weight: 30
-url: id/java/get-a-particular-page-in-a-pdf-file-in-python/
+url: /id/java/get-a-particular-page-in-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

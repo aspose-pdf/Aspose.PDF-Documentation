@@ -3,7 +3,7 @@ title: توليد صور مصغرة من مستندات PDF
 linktitle: توليد صور مصغرة
 type: docs
 weight: 110
-url: ar/net/generate-thumbnail-images-from-pdf-documents/
+url: /ar/net/generate-thumbnail-images-from-pdf-documents/
 description: تصف هذا القسم كيفية توليد صور مصغرة من مستندات PDF
 lastmod: "2022-02-17"
 ---

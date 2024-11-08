@@ -3,7 +3,7 @@ title: PDF 문서에 첨부 파일 추가하기
 linktitle: PDF 문서에 첨부 파일 추가하기 
 type: docs
 weight: 10
-url: ko/java/add-attachment-to-pdf-document/
+url: /ko/java/add-attachment-to-pdf-document/
 description: 이 페이지는 Java를 사용하여 PDF 파일에 첨부 파일을 추가하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

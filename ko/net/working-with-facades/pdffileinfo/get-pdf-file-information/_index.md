@@ -2,7 +2,7 @@
 title: PDF 파일 정보 가져오기
 type: docs
 weight: 50
-url: ko/net/get-pdf-file-information/
+url: /ko/net/get-pdf-file-information/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF 파일 정보를 가져오는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

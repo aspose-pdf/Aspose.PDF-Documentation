@@ -2,7 +2,7 @@
 title: Reporting Services ServerでのSharePointのセットアップ
 type: docs
 weight: 30
-url: ja/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+url: /ja/reportingservices/setting-up-sharepoint-on-reporting-services-server/
 lastmod: "2021-06-05"
 ---
 

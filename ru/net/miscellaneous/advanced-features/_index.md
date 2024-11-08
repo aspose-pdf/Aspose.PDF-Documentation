@@ -2,7 +2,7 @@
 title: Расширенные возможности
 type: docs
 weight: 210
-url: ru/net/advanced-features/
+url: /ru/net/advanced-features/
 ---
 
 ## Отправка PDF в браузер для скачивания

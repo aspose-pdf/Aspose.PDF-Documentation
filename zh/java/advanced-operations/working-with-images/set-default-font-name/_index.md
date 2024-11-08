@@ -3,7 +3,7 @@ title: 设置默认字体名称
 linktitle: 设置默认字体名称
 type: docs
 weight: 90
-url: zh/java/set-default-font-name/
+url: /zh/java/set-default-font-name/
 description: 本节介绍如何使用 Aspose.PDF for Java 库设置默认字体名称。
 lastmod: "2021-06-05"
 ---

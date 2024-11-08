@@ -3,7 +3,7 @@ title: تعيين اسم الخط الافتراضي
 linktitle: تعيين اسم الخط الافتراضي
 type: docs
 weight: 90
-url: ar/java/set-default-font-name/
+url: /ar/java/set-default-font-name/
 description: يصف هذا القسم كيفية تعيين اسم الخط الافتراضي باستخدام مكتبة Aspose.PDF لـ Java.
 lastmod: "2021-06-05"
 ---

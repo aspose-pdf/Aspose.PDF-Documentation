@@ -4,7 +4,7 @@ title: Girar Páginas de PDF em Node.js
 linktitle: Girar Páginas de PDF  
 type: docs  
 weight: 50  
-url: pt/nodejs-cpp/rotate-pages/  
+url: /pt/nodejs-cpp/rotate-pages/  
 description: Este tópico descreve como girar a orientação da página em um arquivo PDF existente programaticamente no ambiente Node.js.  
 lastmod: "2023-11-16"  
 sitemap:  

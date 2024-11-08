@@ -2,7 +2,7 @@
 title: PDFファイル内の特定のページをRubyで取得
 type: docs
 weight: 30
-url: ja/java/get-a-particular-page-in-a-pdf-file-in-ruby/
+url: /ja/java/get-a-particular-page-in-a-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: إضافة نص إلى PDF باستخدام C++
 linktitle: إضافة نص إلى PDF
 type: docs
 weight: 10
-url: ar/cpp/add-text-to-pdf-file/
+url: /ar/cpp/add-text-to-pdf-file/
 description: تصف هذه المقالة جوانب مختلفة من العمل مع النصوص في Aspose.PDF. تعلم كيفية إضافة نص إلى PDF، إضافة أجزاء HTML، أو استخدام خطوط OTF مخصصة.
 lastmod: "2021-12-10"
 sitemap:

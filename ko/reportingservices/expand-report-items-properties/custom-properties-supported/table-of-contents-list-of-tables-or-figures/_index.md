@@ -2,7 +2,7 @@
 title: 목차 목록 또는 표 목록
 type: docs
 weight: 10
-url: ko/reportingservices/table-of-contents-list-of-tables-or-figures/
+url: /ko/reportingservices/table-of-contents-list-of-tables-or-figures/
 lastmod: "2021-06-05"
 ---
 

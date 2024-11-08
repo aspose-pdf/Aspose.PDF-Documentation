@@ -3,7 +3,7 @@ title: Bekerja dengan Halaman PDF di Python
 linktitle: Bekerja dengan Halaman
 type: docs
 weight: 20
-url: id/python-net/working-with-pages/
+url: /id/python-net/working-with-pages/
 description: Cara menambahkan halaman, menambahkan header dan footer, menambahkan watermark dapat Anda ketahui di bagian ini. Aspose.PDF untuk Python via .NET menjelaskan semua detail tentang topik ini.
 lastmod: "2023-04-19"
 sitemap:
@@ -84,20 +84,20 @@ Bagian ini mengajarkan Anda cara menambahkan watermark dalam file PDF Anda mengg
 
 Anda dapat melakukan hal berikut:
 
-- [Add Pages](/pdf/python-net/add-pages/) - tambahkan halaman di lokasi yang diinginkan atau ke akhir file PDF dan hapus halaman dari dokumen Anda.
-- [Move Pages](/pdf/python-net/move-pages/) - pindahkan halaman dari satu dokumen ke dokumen lain.
-- [Delete Pages](/pdf/python-net/delete-pages/) - hapus halaman dari file PDF Anda menggunakan koleksi PageCollection.
-- [Change Page size](/pdf/python-net/change-page-size/) - Anda dapat mengubah ukuran halaman PDF dengan potongan kode menggunakan pustaka Aspose.PDF.
-- [Rotate Pages](/pdf/python-net/rotate-pages/) - Anda dapat mengubah orientasi halaman dalam file PDF yang ada.
-- [Split Pages](/pdf/python-net/split-document/) - Anda dapat membagi file PDF menjadi satu atau beberapa PDF.
-- [Add Headers and/or Footers](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - tambahkan teks atau gambar di header dan footer file PDF Anda.
-- [Crop Pages](/pdf/python-net/crop-pages/) - Anda dapat memotong halaman dalam dokumen PDF secara programatis dengan Properti Halaman yang berbeda.
+- [Add Pages](/pdf/id/python-net/add-pages/) - tambahkan halaman di lokasi yang diinginkan atau ke akhir file PDF dan hapus halaman dari dokumen Anda.
+- [Move Pages](/pdf/id/python-net/move-pages/) - pindahkan halaman dari satu dokumen ke dokumen lain.
+- [Delete Pages](/pdf/id/python-net/delete-pages/) - hapus halaman dari file PDF Anda menggunakan koleksi PageCollection.
+- [Change Page size](/pdf/id/python-net/change-page-size/) - Anda dapat mengubah ukuran halaman PDF dengan potongan kode menggunakan pustaka Aspose.PDF.
+- [Rotate Pages](/pdf/id/python-net/rotate-pages/) - Anda dapat mengubah orientasi halaman dalam file PDF yang ada.
+- [Split Pages](/pdf/id/python-net/split-document/) - Anda dapat membagi file PDF menjadi satu atau beberapa PDF.
+- [Add Headers and/or Footers](/pdf/id/python-net/add-headers-and-footers-of-pdf-file/) - tambahkan teks atau gambar di header dan footer file PDF Anda.
+- [Crop Pages](/pdf/id/python-net/crop-pages/) - Anda dapat memotong halaman dalam dokumen PDF secara programatis dengan Properti Halaman yang berbeda.
 
-- [Add Watermarks](/pdf/python-net/add-watermarks/) - tambahkan watermark dalam file PDF Anda dengan Kelas Artefak.
-- [Tambahkan Penomoran Halaman di File PDF](/pdf/python-net/add-page-number/) - Kelas PageNumberStamp akan membantu Anda menambahkan Nomor Halaman di file PDF Anda.
-- [Tambahkan Latar Belakang](/pdf/python-net/add-backgrounds/) - gambar latar belakang dapat digunakan untuk menambahkan watermark.
-- [Penyegelan](/pdf/python-net/stamping/) - Anda dapat menggunakan kelas ImageStamp untuk menambahkan cap gambar ke file PDF dan kelas TextStamp untuk menambahkan teks.
-- [Dapatkan dan Atur Properti Halaman](/pdf/python-net/get-and-set-page-properties/) - bagian ini menunjukkan cara mendapatkan jumlah halaman dalam file PDF, mendapatkan informasi tentang properti halaman PDF seperti warna dan mengatur properti halaman.
+- [Add Watermarks](/pdf/id/python-net/add-watermarks/) - tambahkan watermark dalam file PDF Anda dengan Kelas Artefak.
+- [Tambahkan Penomoran Halaman di File PDF](/pdf/id/python-net/add-page-number/) - Kelas PageNumberStamp akan membantu Anda menambahkan Nomor Halaman di file PDF Anda.
+- [Tambahkan Latar Belakang](/pdf/id/python-net/add-backgrounds/) - gambar latar belakang dapat digunakan untuk menambahkan watermark.
+- [Penyegelan](/pdf/id/python-net/stamping/) - Anda dapat menggunakan kelas ImageStamp untuk menambahkan cap gambar ke file PDF dan kelas TextStamp untuk menambahkan teks.
+- [Dapatkan dan Atur Properti Halaman](/pdf/id/python-net/get-and-set-page-properties/) - bagian ini menunjukkan cara mendapatkan jumlah halaman dalam file PDF, mendapatkan informasi tentang properti halaman PDF seperti warna dan mengatur properti halaman.
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: نشر بيانات AcroForm
 linktitle: نشر AcroForm
 type: docs
 weight: 50
-url: ar/net/posting-acroform-data/
+url: /ar/net/posting-acroform-data/
 description: يمكنك استيراد وتصدير بيانات النموذج إلى ملف XML باستخدام فضاء الأسماء Aspose.Pdf.Facades في Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -84,7 +84,7 @@ AcroForm هو نوع مهم من مستند PDF. يمكنك ليس فقط إنش
 
 ## تفاصيل التنفيذ
 
-يعمل الجزء التالي من الشفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الشفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 في هذه المقالة، حاولنا إنشاء AcroForm باستخدام [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
 في هذا المقال، حاولنا إنشاء نموذج أكرو باستخدام [فضاء أسماء Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).

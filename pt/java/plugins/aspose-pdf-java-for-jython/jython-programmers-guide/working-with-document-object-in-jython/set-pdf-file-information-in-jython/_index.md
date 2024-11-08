@@ -2,7 +2,7 @@
 title: Definir Informações do Arquivo PDF no Jython
 type: docs
 weight: 70
-url: pt/java/set-pdf-file-information-in-jython/
+url: /pt/java/set-pdf-file-information-in-jython/
 lastmod: "2021-06-05"
 ---
 

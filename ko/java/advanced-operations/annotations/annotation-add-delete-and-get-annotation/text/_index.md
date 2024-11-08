@@ -3,7 +3,7 @@ title: PDF 텍스트 주석
 Texttitle: 텍스트 주석
 type: docs
 weight: 10
-url: ko/java/text-annotation/
+url: /ko/java/text-annotation/
 description: Aspose.PDF for Java를 사용하여 PDF 문서에서 텍스트 주석을 추가, 가져오기 및 삭제할 수 있습니다.
 lastmod: "2021-11-24"
 sitemap:

@@ -3,7 +3,7 @@ title: Navigation et interaction dans les PDF
 linktitle: Navigation et interaction
 type: docs
 weight: 90
-url: fr/net/navigation-and-interaction/
+url: /fr/net/navigation-and-interaction/
 description: Cette section décrit les fonctionnalités de travail avec les liens, les actions et les signets.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,9 +76,9 @@ sitemap:
 }
 </script>
 
-- [Liens](/pdf/net/links/) - vous pouvez facilement créer, mettre à jour et extraire des liens avec C#.
-- [Actions](/pdf/net/actions/) - il est possible d'ajouter et d'obtenir, de créer des hyperliens vers des fichiers PDF. De plus, dans cet article, vous apprendrez comment supprimer l'Action d'Ouverture de Document d'un fichier PDF et comment Spécifier la Page PDF lors de la Visualisation du Document.
-- [Signets](/pdf/net/bookmarks/)- les grandes publications incluent généralement un cadre de signets qui peuvent être facilement visualisés et sélectionnés dans le volet des Signets, vous permettant de cliquer sur un signet pour sauter à la page ou au chapitre qu'il représente. Le volet des Signets est un élément sensible au contenu, et est visible dans la barre latérale uniquement si le document PDF ouvert contient une structure de signet.
+- [Liens](/pdf/fr/net/links/) - vous pouvez facilement créer, mettre à jour et extraire des liens avec C#.
+- [Actions](/pdf/fr/net/actions/) - il est possible d'ajouter et d'obtenir, de créer des hyperliens vers des fichiers PDF. De plus, dans cet article, vous apprendrez comment supprimer l'Action d'Ouverture de Document d'un fichier PDF et comment Spécifier la Page PDF lors de la Visualisation du Document.
+- [Signets](/pdf/fr/net/bookmarks/)- les grandes publications incluent généralement un cadre de signets qui peuvent être facilement visualisés et sélectionnés dans le volet des Signets, vous permettant de cliquer sur un signet pour sauter à la page ou au chapitre qu'il représente. Le volet des Signets est un élément sensible au contenu, et est visible dans la barre latérale uniquement si le document PDF ouvert contient une structure de signet.
 
 <script type="application/ld+json">
 {

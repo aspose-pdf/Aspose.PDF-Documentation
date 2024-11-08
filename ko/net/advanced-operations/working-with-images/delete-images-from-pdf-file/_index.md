@@ -3,7 +3,7 @@ title: PDF 파일에서 이미지 삭제
 linktitle: 이미지 삭제
 type: docs
 weight: 20
-url: ko/net/delete-images-from-pdf-file/
+url: /ko/net/delete-images-from-pdf-file/
 description: 이 섹션은 Aspose.PDF for .NET을 사용하여 PDF 파일에서 이미지를 삭제하는 방법에 대해 설명합니다.
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "이 섹션은 Aspose.PDF for .NET을 사용하여 PDF 파일에서 이미지를 삭제하는 방법에 대해 설명합니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 PDF 파일에서 이미지를 삭제하기 위해:
 

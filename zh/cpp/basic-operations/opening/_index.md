@@ -3,7 +3,7 @@ title: 用C++打开PDF文档
 linktitle: 打开
 type: docs
 weight: 20
-url: zh/cpp/open-pdf-document/
+url: /zh/cpp/open-pdf-document/
 description: 使用Aspose.PDF的下一个代码片段，通过C++库打开您的PDF文档。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Adicionar Cabeçalho e Rodapé ao PDF usando Python
 linktitle: Adicionar Cabeçalho e Rodapé ao PDF
 type: docs
 weight: 50
-url: pt/python-net/add-headers-and-footers-of-pdf-file/
+url: /pt/python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para Python via .NET permite que você adicione cabeçalhos e rodapés ao seu arquivo PDF usando a classe TextStamp.
 lastmod: "2023-04-17"
 sitemap:

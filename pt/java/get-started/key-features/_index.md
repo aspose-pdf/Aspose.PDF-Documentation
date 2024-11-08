@@ -3,7 +3,7 @@ title: Características Principais do Aspose.PDF
 linktitle: Características Principais
 type: docs
 weight: 80
-url: pt/java/key-features/
+url: /pt/java/key-features/
 description: Aspose.PDF para Java mostra as principais características e descreve as versões de PDF suportadas, e todas as manipulações que podemos fazer com documentos.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: إضافة كائن خط إلى ملف PDF
 linktitle: إضافة خط
 type: docs
 weight: 40
-url: ar/cpp/add-line/
+url: /ar/cpp/add-line/
 description: توضح هذه المقالة كيفية إنشاء كائن خط إلى ملف PDF باستخدام Aspose.PDF for C++.
 lastmod: "2021-12-18"
 sitemap:

@@ -3,7 +3,7 @@ title: PDFファイルをHTML形式に変換
 linktitle: PDFファイルをHTML形式に変換
 type: docs
 weight: 50
-url: ja/cpp/convert-pdf-to-html/
+url: /ja/cpp/convert-pdf-to-html/
 lastmod: "2021-11-19"
 description: このトピックでは、Aspose.PDFを使用してC++ライブラリでPDFファイルをHTML形式に変換する方法を示します。
 sitemap:

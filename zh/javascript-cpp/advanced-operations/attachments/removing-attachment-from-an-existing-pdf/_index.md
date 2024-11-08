@@ -3,7 +3,7 @@ title: 从PDF中移除附件与JavaScript
 linktitle: 从现有PDF中移除附件
 type: docs
 weight: 10
-url: zh/javascript-cpp/removing-attachment-from-an-existing-pdf/
+url: /zh/javascript-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF可以从您的PDF文档中移除附件。使用JavaScript Web工具包通过Aspose.PDF来移除PDF文件中的附件。
 lastmod: "2023-09-17"
 sitemap:

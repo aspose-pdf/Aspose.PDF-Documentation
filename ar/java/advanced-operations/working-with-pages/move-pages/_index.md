@@ -4,7 +4,7 @@ title: نقل صفحات PDF
 linktitle: نقل الصفحات  
 type: docs  
 weight: 20  
-url: ar/java/move-pages/  
+url: /ar/java/move-pages/  
 description: حاول نقل الصفحات إلى الموقع المرغوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF for Java.  
 lastmod: "2021-06-05"  
 sitemap:  

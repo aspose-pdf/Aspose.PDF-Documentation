@@ -3,7 +3,7 @@ title: C#을 사용한 PDF 스티키 주석
 linktitle: 스티키 주석
 type: docs
 weight: 50
-url: ko/net/sticky-annotations/
+url: /ko/net/sticky-annotations/
 description: 이 주제는 스티키 주석에 대해 설명하며, 예로써 텍스트에서 워터마크 주석을 보여줍니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "이 주제는 스티키 주석에 대해 설명하며, 예로써 텍스트에서 워터마크 주석을 보여줍니다."
 }
 </script>
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 워터마크 주석 추가
 

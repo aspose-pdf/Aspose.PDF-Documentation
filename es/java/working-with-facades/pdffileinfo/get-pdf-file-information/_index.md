@@ -2,7 +2,7 @@
 title: Obtener información de archivo PDF - fachadas
 type: docs
 weight: 10
-url: es/java/get-pdf-information/
+url: /es/java/get-pdf-information/
 description: Esta sección explica cómo obtener información del archivo PDF con Aspose.PDF Facades usando la clase PdfFileInfo.
 lastmod: "2021-06-05"
 sitemap:

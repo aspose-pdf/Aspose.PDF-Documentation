@@ -2,7 +2,7 @@
 title: Настройка Reporting Services
 type: docs
 weight: 20
-url: ru/reportingservices/setting-up-reporting-services/
+url: /ru/reportingservices/setting-up-reporting-services/
 lastmod: "2021-06-05"
 ---
 

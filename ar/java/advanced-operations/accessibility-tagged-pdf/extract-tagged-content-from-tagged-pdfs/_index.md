@@ -3,7 +3,7 @@ title: استخراج المحتوى الموسوم من PDF
 linktitle: استخراج المحتوى الموسوم
 type: docs
 weight: 20
-url: ar/java/extract-tagged-content-from-tagged-pdfs/
+url: /ar/java/extract-tagged-content-from-tagged-pdfs/
 description: يشرح هذا المقال كيفية استخراج مستند PDF الموسوم باستخدام Aspose.PDF لـ Java
 lastmod: "2021-06-05"
 sitemap:

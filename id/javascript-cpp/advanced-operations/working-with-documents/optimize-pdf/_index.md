@@ -3,7 +3,7 @@ title: Optimalkan PDF menggunakan Aspose.PDF untuk JavaScript via C++
 linktitle: Optimalkan File PDF
 type: docs
 weight: 10
-url: id/javascript-cpp/optimize-pdf/
+url: /id/javascript-cpp/optimize-pdf/
 description: Optimalkan dan kompres file PDF untuk tampilan web cepat menggunakan alat JavaScript.
 lastmod: "2022-12-15"
 sitemap:

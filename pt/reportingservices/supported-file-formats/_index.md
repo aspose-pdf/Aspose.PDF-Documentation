@@ -2,7 +2,7 @@
 title: Supported File Formats 
 type: docs
 weight: 20
-url: pt/reportingservices/supported-file-formats/
+url: /pt/reportingservices/supported-file-formats/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: 책갈피 만들기
 type: docs
 weight: 10
-url: ko/net/create-bookmarks/
+url: /ko/net/create-bookmarks/
 description: 이 섹션에서는 PdfBookmarEditor 클래스를 사용하여 Aspose.PDF Facades로 PDF 파일에 책갈피를 만드는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
@@ -56,4 +56,4 @@ You can add individual [Bookmark](https://reference.aspose.com/pdf/net/aspose.pd
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-AddChildBookmark-AddChildBookmark.cs" >}}
 ## See also
 
-비교하고 자신에게 맞는 북마크 작업 방법을 찾아보세요. [PDF에서 북마크 작업하기](/pdf/net/bookmarks/) 섹션을 학습해 봅시다.
+비교하고 자신에게 맞는 북마크 작업 방법을 찾아보세요. [PDF에서 북마크 작업하기](/pdf/ko/net/bookmarks/) 섹션을 학습해 봅시다.

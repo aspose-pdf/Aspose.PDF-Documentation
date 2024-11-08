@@ -3,7 +3,7 @@ title: 导出PDF到SharePoint
 linktitle: 导出PDF
 type: docs
 weight: 10
-url: zh/sharepoint/export-to-pdf/
+url: /zh/sharepoint/export-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint API可以将SharePoint库中的列表、列表项和SharePoint Wiki页面导出为PDF格式。
 ---

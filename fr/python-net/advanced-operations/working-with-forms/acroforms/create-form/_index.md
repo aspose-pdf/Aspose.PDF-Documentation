@@ -3,7 +3,7 @@ title: Créer un AcroForm - Créer un PDF remplissable en Python
 linktitle: Créer un AcroForm
 type: docs
 weight: 10
-url: fr/python-net/create-form/
+url: /fr/python-net/create-form/
 description: Avec Aspose.PDF pour Python, vous pouvez créer un formulaire à partir de zéro dans votre fichier PDF
 lastmod: "2023-02-17"
 sitemap:

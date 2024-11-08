@@ -3,7 +3,7 @@ title: Penanda Buku di PDF dengan JavaScript
 linktitle: Penanda Buku di PDF
 type: docs
 weight: 10
-url: id/javascript-cpp/bookmark/
+url: /id/javascript-cpp/bookmark/
 description: Anda dapat menambahkan atau menghapus penanda buku dalam dokumen PDF dengan JavaScript.
 lastmod: "2023-02-17"
 sitemap:

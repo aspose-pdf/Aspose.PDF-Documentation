@@ -3,7 +3,7 @@ title: العمل مع بيانات ملف PDF الوصفية | C#
 linktitle: بيانات ملف PDF الوصفية
 type: docs
 weight: 140
-url: ar/net/pdf-file-metadata/
+url: /ar/net/pdf-file-metadata/
 description: يشرح هذا القسم كيفية الحصول على معلومات ملف PDF، وكيفية الحصول على بيانات XMP الوصفية من ملف PDF، وتعيين معلومات ملف PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "يشرح هذا القسم كيفية الحصول على معلومات ملف PDF، وكيفية الحصول على بيانات XMP الوصفية من ملف PDF، وتعيين معلومات ملف PDF."
 }
 </script>
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## الحصول على معلومات ملف PDF
 

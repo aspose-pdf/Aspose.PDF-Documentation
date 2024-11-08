@@ -3,7 +3,7 @@ title: Isi AcroForms
 linktitle: Isi AcroForms
 type: docs
 weight: 20
-url: id/java/fill-form/
+url: /id/java/fill-form/
 description: Bagian ini menjelaskan bagaimana mengisi bidang formulir dalam dokumen PDF dengan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

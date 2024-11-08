@@ -2,7 +2,7 @@
 title: إنشاء كتيب من PDF
 type: docs
 weight: 80
-url: ar/net/make-booklet-of-pdf/
+url: /ar/net/make-booklet-of-pdf/
 description: يشرح هذا القسم كيفية إنشاء كتيب من PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

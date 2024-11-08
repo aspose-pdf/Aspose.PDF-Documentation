@@ -3,7 +3,7 @@ title: Exemple de Hello World en utilisant le langage C#
 linktitle: Exemple Hello World
 type: docs
 weight: 40
-url: fr/net/hello-world-example/
+url: /fr/net/hello-world-example/
 description: Cet échantillon démontre comment créer un document PDF simple avec le texte Hello World en utilisant Aspose.PDF
 aliases:
     - /net/hello-world/
@@ -81,7 +81,7 @@ Un exemple "Hello World" est traditionnellement utilisé pour présenter les fon
 
 Aspose.PDF pour .NET est une API PDF riche en fonctionnalités qui permet aux développeurs d'intégrer la création, la manipulation et la conversion de documents PDF dans leurs applications .NET. Elle prend en charge de nombreux formats de fichiers populaires incluant PDF, XFA, TXT, HTML, PCL, XML, XPS, EPUB, TEX et les formats de fichiers image. Dans cet article, nous créons un document PDF contenant le texte "Hello World!". Après avoir installé Aspose.PDF pour .NET dans votre environnement, vous pouvez exécuter l'exemple de code ci-dessous pour voir comment fonctionne l'API Aspose.PDF.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Ce fragment de code suit ces étapes :
 

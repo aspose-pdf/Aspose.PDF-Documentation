@@ -3,7 +3,7 @@ title: Ekstrak dan Simpan Lampiran
 linktitle: Ekstrak dan Simpan Lampiran
 type: docs
 weight: 20
-url: id/java/extract-and-save-an-attachment/
+url: /id/java/extract-and-save-an-attachment/
 description: Aspose.PDF untuk Java memungkinkan Anda mendapatkan semua lampiran dari dokumen PDF. Selain itu, Anda dapat mendapatkan lampiran individual dari dokumen Anda.
 lastmod: "2021-06-05"
 sitemap:
@@ -55,7 +55,7 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## Dapatkan Informasi Lampiran
 
-Seperti yang disebutkan dalam [Dapatkan Lampiran dari Dokumen PDF](/pdf/java/get-attachments-from-a-pdf-document/), informasi lampiran disimpan dalam objek [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification), dikumpulkan bersama lampiran lainnya dalam koleksi EmbeddedFiles pada objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+Seperti yang disebutkan dalam [Dapatkan Lampiran dari Dokumen PDF](/pdf/id/java/get-attachments-from-a-pdf-document/), informasi lampiran disimpan dalam objek [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification), dikumpulkan bersama lampiran lainnya dalam koleksi EmbeddedFiles pada objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
 
 Objek [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) menyediakan metode yang mendapatkan informasi tentang lampiran, misalnya:
 

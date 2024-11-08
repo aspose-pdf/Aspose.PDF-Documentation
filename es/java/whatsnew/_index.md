@@ -3,7 +3,7 @@ title: Qué hay de nuevo
 linktitle: Qué hay de nuevo
 type: docs
 weight: 10
-url: es/java/whatsnew/
+url: /es/java/whatsnew/
 description: En esta página se presentan las características nuevas más populares en Aspose.PDF para Java que se han introducido en lanzamientos recientes.
 sitemap:
     changefreq: "monthly"

@@ -2,7 +2,7 @@
 title: Instalando e Usando Aspose.Pdf para IntelliJ IDEA - Maven
 type: docs
 weight: 10
-url: pt/java/installing-and-using-aspose-pdf-for-intellij-idea-maven/
+url: /pt/java/installing-and-using-aspose-pdf-for-intellij-idea-maven/
 lastmod: "2021-06-05"
 ---
 

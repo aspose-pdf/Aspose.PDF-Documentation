@@ -3,7 +3,7 @@ title: PDF에서 테이블 데이터 추출하기
 linktitle: 테이블 데이터 추출
 type: docs
 weight: 40
-url: ko/net/extract-data-from-table-in-pdf/
+url: /ko/net/extract-data-from-table-in-pdf/
 description: Aspose.PDF for .NET을 사용하여 C#에서 PDF의 테이블 데이터를 추출하는 방법을 알아보세요
 lastmod: "2021-06-05"
 sitemap:
@@ -23,7 +23,7 @@ Aspose.PDF for .NET은 테이블을 쉽게 검색할 수 있는 도구를 제공
 1. `TableList`는 [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable)의 목록입니다. 데이터를 얻으려면 `TableList`를 순회하면서 [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist)와 [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)를 처리하세요.
 1. 각 [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell)은 [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments) 컬렉션을 포함하고 있습니다. 이를 원하는 목적으로 처리할 수 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 예제는 모든 페이지에서 표 추출을 보여줍니다:
 
@@ -65,7 +65,7 @@ public static void Extract_Table()
 
 따라서 특정 지역에 위치한 테이블을 추출해야 할 경우, 특정 좌표와 함께 작업해야 합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 다음 예제는 사각형 주석으로 표시된 테이블을 추출하는 방법을 보여줍니다:
 
@@ -118,9 +118,9 @@ public static void Extract_Marked_Table()
 ## PDF에서 테이블 데이터 추출하고 CSV 파일에 저장하기
 
 다음 예제는 테이블을 추출하여 CSV 파일로 저장하는 방법을 보여줍니다.
-PDF를 엑셀 스프레드시트로 변환하는 방법은 [PDF를 엑셀로 변환하기](/pdf/net/convert-pdf-to-excel/) 문서를 참조하세요.
+PDF를 엑셀 스프레드시트로 변환하는 방법은 [PDF를 엑셀로 변환하기](/pdf/ko/net/convert-pdf-to-excel/) 문서를 참조하세요.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 public static void Extract_Table_Save_CSV()

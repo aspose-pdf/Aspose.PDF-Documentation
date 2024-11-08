@@ -3,7 +3,7 @@ title: 在PDF中使用AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: zh/java/acroforms/
+url: /zh/java/acroforms/
 description: 使用Aspose.PDF for Java，您可以从头开始创建表单、填写PDF文档中的表单字段、从表单中提取数据、在现有表单中添加或删除字段。
 lastmod: "2021-06-05"
 sitemap:
@@ -34,10 +34,10 @@ AcroForms具有XFA没有的功能，反之亦然。例如：
 
 要详细了解使用表单的可能性，请研究以下部分中的文章：
 
--[创建 AcroForm](/pdf/java/create-form/) - 从头开始创建表单，使用 Java 添加 RadioButtonField、TextBoxField、Caption Field。
+-[创建 AcroForm](/pdf/zh/java/create-form/) - 从头开始创建表单，使用 Java 添加 RadioButtonField、TextBoxField、Caption Field。
 
--[填写 AcroForm](/pdf/java/fill-form/) - 要填写表单字段，从 Document 对象的 Form 集合中获取字段。
+-[填写 AcroForm](/pdf/zh/java/fill-form/) - 要填写表单字段，从 Document 对象的 Form 集合中获取字段。
 
--[提取数据 AcroForm](/pdf/java/extract-form/) - 从所有和单个字段获取值等。
+-[提取数据 AcroForm](/pdf/zh/java/extract-form/) - 从所有和单个字段获取值等。
 
--[修改 AcroForm](/pdf/java/modifing-form/) - 获取/设置 FieldLimit，删除现有表单中的字段，使用 Java 设置非 14 核心 PDF 字体的表单字段字体。
+-[修改 AcroForm](/pdf/zh/java/modifing-form/) - 获取/设置 FieldLimit，删除现有表单中的字段，使用 Java 设置非 14 核心 PDF 字体的表单字段字体。

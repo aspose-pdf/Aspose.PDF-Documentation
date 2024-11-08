@@ -4,7 +4,7 @@ title: 程序化地裁剪PDF页面
 linktitle: 裁剪页面  
 type: docs  
 weight: 80  
-url: zh/java/crop-pages/  
+url: /zh/java/crop-pages/  
 description: 您可以使用Aspose.PDF for Java获取页面属性，例如宽度、高度、出血框、裁剪框和修整框。  
 lastmod: "2021-06-05"  
 sitemap:  

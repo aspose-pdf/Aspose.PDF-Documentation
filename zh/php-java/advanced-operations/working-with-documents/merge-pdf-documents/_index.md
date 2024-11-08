@@ -3,7 +3,7 @@ title: 通过编程合并PDF
 linktitle: 合并PDF文件
 type: docs
 weight: 50
-url: zh/php-java/merge-pdf-documents/
+url: /zh/php-java/merge-pdf-documents/
 description: 本页面解释如何使用PHP将多个PDF文件合并为一个PDF文件。
 lastmod: "2024-06-05"
 ---

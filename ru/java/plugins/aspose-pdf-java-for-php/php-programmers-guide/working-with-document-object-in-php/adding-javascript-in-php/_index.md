@@ -2,7 +2,7 @@
 title: Добавление JavaScript в PHP
 type: docs
 weight: 10
-url: ru/java/adding-javascript-in-php/
+url: /ru/java/adding-javascript-in-php/
 lastmod: "2021-06-05"
 ---
 

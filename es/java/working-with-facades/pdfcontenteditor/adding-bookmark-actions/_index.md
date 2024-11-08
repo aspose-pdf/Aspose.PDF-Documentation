@@ -2,7 +2,7 @@
 title: Añadir acciones de Marcadores a un archivo PDF existente
 type: docs
 weight: 20
-url: es/java/adding-bookmark-actions/
+url: /es/java/adding-bookmark-actions/
 description: Esta sección explica cómo añadir acciones de Marcadores a un archivo PDF existente con Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

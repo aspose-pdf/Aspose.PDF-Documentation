@@ -2,7 +2,7 @@
 title: 在PHP中向现有PDF文件添加文本
 type: docs
 weight: 20
-url: zh/java/add-text-to-an-existing-pdf-file-in-php/
+url: /zh/java/add-text-to-an-existing-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

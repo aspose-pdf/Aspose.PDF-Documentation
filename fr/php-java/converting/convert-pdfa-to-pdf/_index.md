@@ -3,7 +3,7 @@ title: Convertir le format PDF/A en PDF
 linktitle: Convertir le format PDF/A en PDF
 type: docs
 weight: 110
-url: fr/php-java/convert-pdfa-to-pdf/
+url: /fr/php-java/convert-pdfa-to-pdf/
 lastmod: "2024-05-20"
 description: Ce sujet vous montre comment Aspose.PDF permet de convertir un fichier PDF/A en document PDF avec la bibliothèque PHP.
 sitemap:

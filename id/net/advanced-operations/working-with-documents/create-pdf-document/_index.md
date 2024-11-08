@@ -3,7 +3,7 @@ title: Cara Membuat PDF Menggunakan C#
 linktitle: Membuat Dokumen PDF
 type: docs
 weight: 10
-url: id/net/create-pdf-document/
+url: /id/net/create-pdf-document/
 description: Buat dan format Dokumen PDF dengan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Kami selalu mencari cara untuk menghasilkan dokumen PDF dan bekerja dengan mereka dalam proyek C# lebih tepat, akurat, dan efektif. Memiliki fungsi yang mudah digunakan dari sebuah perpustakaan memungkinkan kami untuk melacak lebih banyak pekerjaan, dan kurang pada detail yang memakan waktu dalam mencoba menghasilkan PDF, baik dalam .NET.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Membuat (atau Menghasilkan) dokumen PDF menggunakan bahasa C#
 

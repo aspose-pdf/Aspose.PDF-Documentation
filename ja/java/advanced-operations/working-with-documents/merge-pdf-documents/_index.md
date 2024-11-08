@@ -3,7 +3,7 @@ title: プログラムによるPDFの結合
 linktitle: PDFファイルの結合
 type: docs
 weight: 50
-url: ja/java/merge-pdf-documents/
+url: /ja/java/merge-pdf-documents/
 description: このページでは、Javaを使用してPDFドキュメントを単一のPDFファイルに結合する方法を説明します。
 lastmod: "2021-06-05"
 ---

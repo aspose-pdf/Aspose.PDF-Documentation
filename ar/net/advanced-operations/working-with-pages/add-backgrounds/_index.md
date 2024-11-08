@@ -3,7 +3,7 @@ title: إضافة خلفية إلى ملف PDF باستخدام C#
 linktitle: إضافة خلفيات
 type: docs
 weight: 110
-url: ar/net/add-backgrounds/
+url: /ar/net/add-backgrounds/
 description: أضف صورة خلفية إلى ملف PDF الخاص بك باستخدام C#. استخدم كائن BackgroundArtifact.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 يمكن استخدام الصور الخلفية لإضافة علامة مائية، أو تصميم خفي آخر، إلى المستندات. في Aspose.PDF لـ .NET، يتكون كل مستند PDF من مجموعة صفحات وكل صفحة تحتوي على مجموعة من الأدوات. يمكن استخدام فئة [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) لإضافة صورة خلفية إلى كائن صفحة.
 
-تعمل الشفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل الشفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 توضح الشفرة البرمجية التالية كيفية إضافة صورة خلفية إلى صفحات PDF باستخدام كائن BackgroundArtifact مع C#.
 

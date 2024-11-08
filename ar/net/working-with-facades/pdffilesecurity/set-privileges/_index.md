@@ -2,7 +2,7 @@
 title: تعيين الامتيازات على ملف PDF
 type: docs
 weight: 50
-url: ar/net/set-privileges/
+url: /ar/net/set-privileges/
 description: يشرح هذا الموضوع كيفية تعيين الامتيازات على ملف PDF موجود باستخدام فئة PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

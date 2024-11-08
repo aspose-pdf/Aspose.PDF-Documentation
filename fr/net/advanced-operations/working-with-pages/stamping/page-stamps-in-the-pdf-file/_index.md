@@ -3,7 +3,7 @@ title: Ajouter des timbres de page PDF dans un PDF à l'aide de C#
 linktitle: Timbres de page dans le fichier PDF
 type: docs
 weight: 30
-url: fr/net/page-stamps-in-the-pdf-file/
+url: /fr/net/page-stamps-in-the-pdf-file/
 description: Ajouter un timbre de page à un document PDF en utilisant la classe PdfPageStamp avec la bibliothèque Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Un [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) peut être utilisé lorsque vous avez besoin d'appliquer un cachet composite contenant des graphiques, du texte, des tableaux. L'exemple suivant montre comment utiliser un cachet pour créer une papeterie comme avec Adobe InDesign, Illustrator, Microsoft Word. Supposons que nous ayons un document d'entrée et que nous voulions appliquer 2 types de bordures de couleur bleue et prune.
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 public static void AddPageStamp()

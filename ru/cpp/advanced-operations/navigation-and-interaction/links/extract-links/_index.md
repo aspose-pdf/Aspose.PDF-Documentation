@@ -3,7 +3,7 @@ title: Извлечение ссылок из PDF файла
 linktitle: Извлечение ссылок
 type: docs
 weight: 30
-url: ru/cpp/extract-links/
+url: /ru/cpp/extract-links/
 description: Извлечение ссылок из PDF с использованием C#. Эта тема объясняет, как извлечь ссылки с помощью класса AnnotationSelector.
 lastmod: "2021-06-05"
 sitemap:

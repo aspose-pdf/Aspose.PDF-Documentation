@@ -3,7 +3,7 @@ title: Funciones Avanzadas
 linktitle: Funciones Avanzadas
 type: docs
 weight: 120
-url: es/java/advanced-features/
+url: /es/java/advanced-features/
 description: Esta sección muestra cómo puedes usar etiquetas LaTeX en documentos PDF con Aspose.PDF para Java.
 lastmod: "2022-01-11"
 sitemap:

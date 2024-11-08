@@ -3,7 +3,7 @@ title: Convertir DICOM a PDF
 linktitle: Convertir DICOM a PDF
 type: docs
 weight: 250
-url: es/androidjava/convert-dicom-to-pdf/
+url: /es/androidjava/convert-dicom-to-pdf/
 lastmod: "2021-06-05"
 description: Convierta imágenes médicas guardadas en formato DICOM a un archivo PDF usando Aspose.PDF para Android a través de Java.
 sitemap:

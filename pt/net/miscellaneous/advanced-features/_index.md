@@ -2,7 +2,7 @@
 title: Funcionalidades Avançadas
 type: docs
 weight: 210
-url: pt/net/advanced-features/
+url: /pt/net/advanced-features/
 ---
 
 ## Enviando PDF para o Navegador para Download

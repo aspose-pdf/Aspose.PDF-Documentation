@@ -3,7 +3,7 @@ title: Ajouter une Image à un Fichier PDF Existant
 linktitle: Ajouter une Image
 type: docs
 weight: 10
-url: fr/java/add-image-to-existing-pdf-file/
+url: /fr/java/add-image-to-existing-pdf-file/
 description: Cette section décrit comment ajouter une image à un fichier PDF existant en utilisant une bibliothèque Java.
 lastmod: "2021-06-05"
 ---

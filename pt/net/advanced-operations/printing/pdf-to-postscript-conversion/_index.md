@@ -3,7 +3,7 @@ title: Conversão de PDF para PostScript
 linktitle: Conversão de PDF para PostScript
 type: docs
 weight: 30
-url: pt/net/pdf-to-postscript-conversion/
+url: /pt/net/pdf-to-postscript-conversion/
 keywords: "pdf to postscript c#"
 description: Temos uma solução para conversão de PDF para PostScript. Use para essa tarefa a impressão e a classe PdfViewer.
 lastmod: "2022-02-17"
@@ -77,7 +77,7 @@ sitemap:
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## **PDF Para Postscript em C#**
 

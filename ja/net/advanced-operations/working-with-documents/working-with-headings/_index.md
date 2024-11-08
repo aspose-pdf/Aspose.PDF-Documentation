@@ -1,7 +1,7 @@
 ---
 title: PDFでの見出しの操作
 type: docs
-url: ja/net/working-with-headings/
+url: /ja/net/working-with-headings/
 description: C#を使用してPDFドキュメントの見出しに番号を付ける。Aspose.PDF for .NETは、さまざまな種類の番号付けスタイルを提供します。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 
 見出しはどのドキュメントにとっても重要な部分です。ライターは常に、見出しを読者にとってより目立つようにし、意味のあるものにしようと努力します。ドキュメントに複数の見出しがある場合、ライターにはこれらの見出しを整理するいくつかの方法があります。最も一般的な方法の一つは、番号スタイルで見出しを書くことです。
 
-[Aspose.PDF for .NET](/pdf/net/)は、多くの事前定義された番号スタイルを提供しています。これらの事前定義された番号スタイルは、NumberingStyleという列挙に保存されています。NumberingStyle列挙の事前定義された値とその説明は以下の通りです：
+[Aspose.PDF for .NET](/pdf/ja/net/)は、多くの事前定義された番号スタイルを提供しています。これらの事前定義された番号スタイルは、NumberingStyleという列挙に保存されています。NumberingStyle列挙の事前定義された値とその説明は以下の通りです：
 
 |**見出しタイプ**|**説明**|
 | :- | :- |
@@ -94,7 +94,7 @@ sitemap:
 | :- |
 上の図に示された出力を得るためのソースコードは、以下の例に示されています。
 
-次のコードスニペットは、新しいグラフィカル [Aspose.Drawing](/pdf/net/drawing/) インターフェイスでも動作します。
+次のコードスニペットは、新しいグラフィカル [Aspose.Drawing](/pdf/ja/net/drawing/) インターフェイスでも動作します。
 
 ```csharp
 // 文書ディレクトリへのパス。

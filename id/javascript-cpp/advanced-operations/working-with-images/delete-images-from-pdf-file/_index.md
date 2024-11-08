@@ -3,7 +3,7 @@ title: Hapus Gambar dari File PDF melalui JavaScript
 linktitle: Hapus Gambar
 type: docs
 weight: 20
-url: id/javascript-cpp/delete-images-from-pdf-file/
+url: /id/javascript-cpp/delete-images-from-pdf-file/
 description: Bagian ini menjelaskan cara menghapus gambar dari file PDF menggunakan Aspose.PDF untuk JavaScript.
 lastmod: "2022-02-17"
 ---

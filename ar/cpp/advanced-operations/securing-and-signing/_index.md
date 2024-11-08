@@ -3,7 +3,7 @@ title: تأمين وتوقيع مستندات PDF
 linktitle: تأمين وتوقيع في PDF
 type: docs
 weight: 150
-url: ar/cpp/securing-and-signing/
+url: /ar/cpp/securing-and-signing/
 description: يصف هذا القسم ميزات استخدام التوقيع وتأمين مستند PDF الخاص بك باستخدام C++
 lastmod: "2021-12-15"
 sitemap:
@@ -15,8 +15,8 @@ sitemap:
 
 في هذه المقالة، ستتعلم كيفية إضافة توقيع رقمي إلى ملفات PDF والتوقيع من البطاقة الذكية، وكيفية استخراج معلومات الصورة والتوقيع من PDF الخاص بك. كما توضح هذه الموضوع كيفية تشفير وفك تشفير مستندات PDF.
 
-- [توقيع ملف PDF رقميًا](/pdf/cpp/digitally-sign-pdf-file/)
+- [توقيع ملف PDF رقميًا](/pdf/ar/cpp/digitally-sign-pdf-file/)
 ```
-- [تعيين الامتيازات، تشفير وفك تشفير ملف PDF](/pdf/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [استخراج معلومات الصورة والتوقيع](/pdf/cpp/extract-image-and-signature-information/)
+- [تعيين الامتيازات، تشفير وفك تشفير ملف PDF](/pdf/ar/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [استخراج معلومات الصورة والتوقيع](/pdf/ar/cpp/extract-image-and-signature-information/)
 ```

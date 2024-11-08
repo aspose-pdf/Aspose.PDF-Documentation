@@ -2,7 +2,7 @@
 title: إضافة جدول محتويات إلى ملف PDF موجود في روبي
 type: docs
 weight: 30
-url: ar/java/add-toc-to-existing-pdf-in-ruby/
+url: /ar/java/add-toc-to-existing-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

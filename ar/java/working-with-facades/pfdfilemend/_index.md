@@ -2,7 +2,7 @@
 title: PdfFileMend Class
 type: docs
 weight: 20
-url: ar/java/pdffilemend-class/
+url: /ar/java/pdffilemend-class/
 description: يشرح هذا القسم كيفية العمل مع Aspose.PDF Facades باستخدام فئة PdfFileMend.
 lastmod: "2021-06-05"
 sitemap:
@@ -33,7 +33,7 @@ sitemap:
 
 تحقق كيف يبدو:
 
-![إضافة نص](/pdf/net/images/add_text.png)
+![إضافة نص](/pdf/ar/net/images/add_text.png)
 
 الطريقة الثانية لإضافة [FormattedText](https://reference.aspose.com/pdf//java/com.aspose.pdf.facades/formattedtext). بالإضافة إلى ذلك، نحدد مستطيل يجب أن يناسب نصنا داخله.
 
@@ -99,7 +99,7 @@ public static void AddImage01()
     }
 ```
 
-![إضافة صورة](/pdf/net/images/add_image1.png)
+![إضافة صورة](/pdf/ar/net/images/add_image1.png)
 
 لننظر في الشيفرة الثانية. باستخدام تغييرات في معلمات فئة [CompositingParameters](https://reference.aspose.com/pdf/java/com.aspose.pdf/CompositingParameters)، يمكننا الحصول على تأثيرات تصميم مختلفة. لقد جربنا واحدة منها.
 
@@ -125,7 +125,7 @@ public static void AddImage01()
 ```
 
 
-![إضافة صورة](/pdf/net/images/add_image2.png)
+![إضافة صورة](/pdf/ar/net/images/add_image2.png)
 
 في مقتطف الشيفرة التالي نستخدم [ImageFilterType](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageFilterType). يشير ImageFilterType إلى نوع ترميز الدفق الذي سيتم استخدامه للترميز، افتراضيًا Jpeg. إذا قمت بتحميل صورة بتنسيق PNG، فسيتم حفظها في المستند كـ JPEG (أو بتنسيق آخر قمت بتحديده).
 

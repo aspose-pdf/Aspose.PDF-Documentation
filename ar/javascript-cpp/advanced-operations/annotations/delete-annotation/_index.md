@@ -3,7 +3,7 @@ title: حذف التعليق التوضيحي باستخدام JavaScript
 linktitle: حذف التعليق التوضيحي
 type: docs
 weight: 10
-url: ar/javascript-cpp/delete-annotation/
+url: /ar/javascript-cpp/delete-annotation/
 description: باستخدام Aspose.PDF لـ JavaScript يمكنك حذف التعليق التوضيحي من ملف PDF الخاص بك.
 lastmod: "2023-02-17"
 sitemap:

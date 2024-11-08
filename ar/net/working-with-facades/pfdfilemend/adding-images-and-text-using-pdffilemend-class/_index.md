@@ -3,7 +3,7 @@
 title: إضافة الصور والنصوص
 type: docs
 weight: 10
-url: ar/net/adding-images-and-text-using-pdffilemend-class/
+url: /ar/net/adding-images-and-text-using-pdffilemend-class/
 description: يشرح هذا القسم كيفية إضافة الصور والنصوص باستخدام فئة PdfFileMend.
 lastmod: "2021-06-05"
 draft: false
@@ -17,7 +17,7 @@ draft: false
 
 الصور جزء مهم من محتويات مستند PDF.
 ``` 
-التلاعب بالصور في ملف PDF موجود هو مطلب شائع للأشخاص الذين يعملون مع ملفات PDF. في هذه المقالة، سنستكشف كيفية التلاعب بالصور في ملف PDF موجود بمساعدة [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) لـ [Aspose.PDF for .NET](/pdf/net/). تم دمج جميع العمليات المتعلقة بالصور لـ [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في هذه المقالة.
+التلاعب بالصور في ملف PDF موجود هو مطلب شائع للأشخاص الذين يعملون مع ملفات PDF. في هذه المقالة، سنستكشف كيفية التلاعب بالصور في ملف PDF موجود بمساعدة [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) لـ [Aspose.PDF for .NET](/pdf/ar/net/). تم دمج جميع العمليات المتعلقة بالصور لـ [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في هذه المقالة.
 
 ## تفاصيل التنفيذ
 
@@ -50,7 +50,7 @@ public static void AddImage01()
         }
 ```
 
-![Add Image](/pdf/net/images/add_image1.png)
+![Add Image](/pdf/ar/net/images/add_image1.png)
 
 بمساعدة [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)، يمكننا تركيب صورة واحدة فوق أخرى:
 ```csharp
@@ -74,7 +74,7 @@ public static void AddImage02()
         }
 ```
 
-![إضافة صورة](/pdf/net/images/add_image2.png)
+![إضافة صورة](/pdf/ar/net/images/add_image2.png)
 
 هناك عدة طرق لتخزين صورة في ملف PDF. سنوضح واحدة منها في المثال التالي:
 
@@ -140,7 +140,7 @@ public static void AddText01()
 
 تحقق كيف يبدو:
 
-![Add Text](/pdf/net/images/add_text.png)
+![Add Text](/pdf/ar/net/images/add_text.png)
 
 الطريقة الثانية لإضافة [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). بالإضافة إلى ذلك، نشير إلى مستطيل يجب أن يتناسب النص الخاص بنا داخله.
 

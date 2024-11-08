@@ -2,7 +2,7 @@
 title: 既存のPDFでの改ページ
 type: docs
 weight: 30
-url: ja/java/page-break-in-existing-pdf/
+url: /ja/java/page-break-in-existing-pdf/
 description: このセクションでは、PdfFileEditorクラスを使用して既存のPDFでページを分割する方法について説明します。
 lastmod: "2021-06-05"
 draft: false

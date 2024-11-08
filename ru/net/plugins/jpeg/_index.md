@@ -2,7 +2,7 @@
 title: JPEG Конвертер
 type: docs
 weight: 90
-url: ru/net/plugins/jpeg/
+url: /ru/net/plugins/jpeg/
 description: Как конвертировать страницы PDF в изображения JPEG с использованием Aspose.PDF JPEG Конвертера
 lastmod: "2024-01-24"
 draft: false

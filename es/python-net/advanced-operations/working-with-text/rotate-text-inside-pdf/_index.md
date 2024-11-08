@@ -3,7 +3,7 @@ title: Rotar Texto Dentro de PDF usando Python
 linktitle: Rotar Texto Dentro de PDF
 type: docs
 weight: 50
-url: es/python-net/rotate-text-inside-pdf/
+url: /es/python-net/rotate-text-inside-pdf/
 description: Aprenda diferentes maneras de rotar texto en PDF. Aspose.PDF le permite rotar texto a cualquier ángulo, rotar un fragmento de texto o un párrafo completo.
 lastmod: "2024-02-17"
 sitemap:

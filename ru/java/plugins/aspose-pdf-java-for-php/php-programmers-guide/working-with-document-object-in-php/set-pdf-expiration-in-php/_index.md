@@ -2,7 +2,7 @@
 title: Установить срок действия PDF в PHP
 type: docs
 weight: 80
-url: ru/java/set-pdf-expiration-in-php/
+url: /ru/java/set-pdf-expiration-in-php/
 lastmod: "2021-06-05"
 ---
 

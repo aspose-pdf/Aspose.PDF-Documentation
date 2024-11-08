@@ -3,7 +3,7 @@ title: Trabajando con Texto en PDF
 linktitle: Trabajando con Texto
 type: docs
 weight: 30
-url: es/php-java/working-with-text/
+url: /es/php-java/working-with-text/
 description: Esta sección explica varias técnicas de manejo de texto. Aprende cómo agregar, reemplazar, rotar, buscar texto usando Aspose.PDF y PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -15,4 +15,4 @@ Todos en algún momento necesitamos agregar texto al archivo PDF. Por ejemplo, c
 
 Puedes hacer lo siguiente:
 
-- [Agregar Texto al archivo PDF](/pdf/php-java/add-text-to-pdf-file/) - agrega texto a tu PDF, usa fuentes de flujo y archivos, agrega una cadena HTML, agrega un hipervínculo, etc.
+- [Agregar Texto al archivo PDF](/pdf/es/php-java/add-text-to-pdf-file/) - agrega texto a tu PDF, usa fuentes de flujo y archivos, agrega una cadena HTML, agrega un hipervínculo, etc.

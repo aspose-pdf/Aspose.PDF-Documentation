@@ -2,7 +2,7 @@
 title: 下载和配置 Aspose.Pdf 在 Ruby 中
 type: docs
 weight: 10
-url: zh/java/download-and-configure-aspose-pdf-in-ruby/
+url: /zh/java/download-and-configure-aspose-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Extraire des données d'AcroForm
 linktitle: Extraire des données d'AcroForm
 type: docs
 weight: 50
-url: fr/cpp/extract-data-from-acroform/
+url: /fr/cpp/extract-data-from-acroform/
 description: Aspose.PDF facilite l'extraction des données des champs de formulaire à partir de fichiers PDF. Apprenez à extraire des données d'AcroForms et à les enregistrer au format XML ou FDF.
 lastmod: "2021-12-13"
 sitemap:

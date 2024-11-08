@@ -3,7 +3,7 @@ title: Criar ou Adicionar Tabela em PDF usando C#
 linktitle: Criar ou Adicionar Tabela
 type: docs
 weight: 10
-url: pt/net/add-table-in-existing-pdf-document/
+url: /pt/net/add-table-in-existing-pdf-document/
 description: Aspose.PDF para .NET é uma biblioteca usada para criar, ler e editar Tabelas PDF. Verifique outras funções avançadas neste tópico.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 
 Tabelas são importantes ao trabalhar com documentos PDF. Elas oferecem ótimas funcionalidades para exibição de informações de maneira sistemática. O namespace Aspose.PDF contém classes chamadas [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) e [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) que fornecem funcionalidades para a criação de tabelas ao gerar documentos PDF do zero.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Uma tabela pode ser criada ao criar um objeto da Classe Table.
 

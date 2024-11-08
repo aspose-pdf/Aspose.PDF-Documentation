@@ -2,7 +2,7 @@
 title: تحميل وتكوين Aspose.Pdf في روبي
 type: docs
 weight: 10
-url: ar/java/download-and-configure-aspose-pdf-in-ruby/
+url: /ar/java/download-and-configure-aspose-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

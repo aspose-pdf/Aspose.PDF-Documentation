@@ -3,7 +3,7 @@ title: C++를 사용한 이미지 배치 작업
 linktitle: 이미지 배치 작업
 type: docs
 weight: 50
-url: ko/cpp/working-with-image-placement/
+url: /ko/cpp/working-with-image-placement/
 description: 이 섹션에서는 C++ 라이브러리를 사용하여 이미지 배치 PDF 파일 작업의 기능에 대해 설명합니다.
 lastmod: "2021-12-18"
 ---

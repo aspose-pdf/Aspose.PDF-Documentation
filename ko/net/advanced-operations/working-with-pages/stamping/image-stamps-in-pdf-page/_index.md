@@ -3,7 +3,7 @@ title: C#를 사용하여 PDF에 이미지 스탬프 추가
 linktitle: PDF 파일의 이미지 스탬프
 type: docs
 weight: 10
-url: ko/net/image-stamps-in-pdf-page/
+url: /ko/net/image-stamps-in-pdf-page/
 description: Aspose.PDF 라이브러리를 사용하여 PDF 문서에 ImageStamp 클래스로 이미지 스탬프를 추가합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 PDF 파일에 이미지 스탬프를 추가하기 위해 ImageStamp 클래스를 사용할 수 있습니다. ImageStamp 클래스는 높이, 너비, 불투명도 등과 같은 이미지 기반 스탬프를 생성하는 데 필요한 속성들을 제공합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 이미지 스탬프를 추가하는 방법:
 

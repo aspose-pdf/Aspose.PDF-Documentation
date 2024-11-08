@@ -3,7 +3,7 @@ title: إزالة المرفقات من ملف PDF
 linktitle: إزالة المرفقات من ملف PDF موجود
 type: docs
 weight: 30
-url: ar/cpp/removing-attachment-from-an-existing-pdf/
+url: /ar/cpp/removing-attachment-from-an-existing-pdf/
 description: يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم C++ PDF API لإزالة المرفقات في ملفات PDF باستخدام مكتبة Aspose.PDF.
 lastmod: "2022-02-07"
 sitemap:

@@ -2,7 +2,7 @@
 title: 获取 PHP 中的页面属性
 type: docs
 weight: 50
-url: zh/java/get-page-properties-in-php/
+url: /zh/java/get-page-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

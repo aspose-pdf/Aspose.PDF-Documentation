@@ -2,7 +2,7 @@
 title: XLS コンバーター
 type: docs
 weight: 20
-url: ja/net/plugins/xls/
+url: /ja/net/plugins/xls/
 description: Aspose.Pdf プラグインを使用して PDF を Excel スプレッドシートに変換する方法
 lastmod: "2024-01-24"
 ---

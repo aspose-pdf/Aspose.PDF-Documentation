@@ -3,7 +3,7 @@ title: C++를 사용하여 XFA 양식 작업하기
 linktitle: XFA 양식
 type: docs
 weight: 20
-url: ko/cpp/xfa-forms/
+url: /ko/cpp/xfa-forms/
 description: Aspose.PDF for C++ API는 PDF 문서에서 XFA 및 XFA Acroform 필드를 다룰 수 있게 합니다. Aspose.PDF.Facades.
 lastmod: "2021-12-01"
 sitemap:

@@ -2,7 +2,7 @@
 title: 기존 PDF 파일에 권한 설정
 type: docs
 weight: 50
-url: ko/java/set-privileges/
+url: /ko/java/set-privileges/
 description: 이 주제는 PdfFileSecurity 클래스를 사용하여 기존 PDF 파일에 권한을 설정하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

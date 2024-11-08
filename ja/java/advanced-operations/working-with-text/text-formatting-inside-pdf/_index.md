@@ -3,7 +3,7 @@ title: PDF内のテキストフォーマット
 linktitle: PDF内のテキストフォーマット 
 type: docs
 weight: 30
-url: ja/java/text-formatting-inside-pdf/
+url: /ja/java/text-formatting-inside-pdf/
 description: このページでは、PDFファイル内のテキストをフォーマットする方法を説明します。行インデントの追加、テキスト境界線の追加、下線付きテキストの追加、追加されたテキストの周囲に境界線を追加、フローティングボックス内容のテキスト配置などがあります。
 lastmod: "2021-06-05"
 sitemap:

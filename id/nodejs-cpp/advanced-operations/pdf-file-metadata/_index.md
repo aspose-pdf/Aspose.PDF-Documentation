@@ -4,7 +4,7 @@ title: Bekerja dengan Metadata File PDF di Node.js
 linktitle: Metadata File PDF  
 type: docs  
 weight: 130  
-url: id/nodejs-cpp/pdf-file-metadata/  
+url: /id/nodejs-cpp/pdf-file-metadata/  
 description: Bagian ini menjelaskan cara mendapatkan informasi file PDF, cara mendapatkan metadata dari file PDF, mengatur Informasi File PDF di Node.js.  
 lastmod: "2023-11-16"  
 sitemap:  

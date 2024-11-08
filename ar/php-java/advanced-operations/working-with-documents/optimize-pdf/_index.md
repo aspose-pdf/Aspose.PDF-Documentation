@@ -3,7 +3,7 @@ title: تحسين، ضغط أو تقليل حجم ملف PDF باستخدام PH
 linktitle: تحسين مستند PDF
 type: docs
 weight: 40
-url: ar/php-java/optimize-pdf/
+url: /ar/php-java/optimize-pdf/
 description: تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة تضمين الخطوط، إزالة الكائنات غير المستخدمة باستخدام PHP.
 lastmod: "2024-06-05"
 ---

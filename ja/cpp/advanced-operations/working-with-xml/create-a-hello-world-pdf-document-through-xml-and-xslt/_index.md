@@ -3,7 +3,7 @@ title: XMLからXSLTを使用してPDFを作成
 linktitle: XMLからXSLTを使用してPDFを作成
 type: docs
 weight: 10
-url: ja/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /ja/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: C++ライブラリは、入力XMLファイルがAspose.PDFスキーマに従う必要があるPDFドキュメントにXMLファイルを変換する機能を提供します。
 lastmod: "2022-01-31"
 sitemap:

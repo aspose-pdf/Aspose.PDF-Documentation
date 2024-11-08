@@ -2,7 +2,7 @@
 title: 扁平化现有 PDF 文件中的所有字段 (facades)
 type: docs
 weight: 30
-url: zh/java/flatten-all-fields/
+url: /zh/java/flatten-all-fields/
 description: 本节解释如何使用 Aspose.PDF Facades 的 Form 类扁平化所有字段。
 lastmod: "2021-06-05"
 sitemap:

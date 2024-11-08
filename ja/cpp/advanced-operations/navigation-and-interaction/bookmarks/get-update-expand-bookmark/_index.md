@@ -3,7 +3,7 @@ title: ブックマークの取得、更新、展開
 linktitle: ブックマークの取得、更新、展開
 type: docs
 weight: 20
-url: ja/cpp/get-update-and-expand-bookmark/
+url: /ja/cpp/get-update-and-expand-bookmark/
 description: Aspose.PDF for C++ ライブラリを使用して PDF ファイル内のブックマークを取得、更新できます。
 lastmod: "2022-01-31"
 sitemap:

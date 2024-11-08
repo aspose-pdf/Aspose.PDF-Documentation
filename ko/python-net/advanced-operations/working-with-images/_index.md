@@ -3,7 +3,7 @@ title: PDF에서 Python을 사용하여 이미지 작업
 linktitle: 이미지 작업
 type: docs
 weight: 40
-url: ko/python-net/working-with-images/
+url: /ko/python-net/working-with-images/
 description: 이 섹션에서는 Python 라이브러리를 사용하여 PDF 파일에서 이미지 작업의 기능을 설명합니다.
 lastmod: "2023-04-17"
 sitemap:
@@ -83,6 +83,6 @@ PDF 파일에서 이미지를 추가하고 제거하는 일반적인 기능 외�
 
 다음 작업을 수행할 수 있습니다:
 
-- [기존 PDF 파일에 이미지 추가](/pdf/python-net/add-image-to-existing-pdf-file/) - PDF 문서에 단일 이미지와 참조를 추가한 후, 품질을 제어합니다.
-- [PDF 파일에서 이미지 삭제](/pdf/python-net/delete-images-from-pdf-file/) - PDF 파일에서 이미지를 삭제하는 코드 스니펫을 확인합니다.
-- [PDF 파일에서 이미지 추출](/pdf/python-net/extract-images-from-pdf-file/) - 다음 글에서는 Python 라이브러리를 사용하여 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
+- [기존 PDF 파일에 이미지 추가](/pdf/ko/python-net/add-image-to-existing-pdf-file/) - PDF 문서에 단일 이미지와 참조를 추가한 후, 품질을 제어합니다.
+- [PDF 파일에서 이미지 삭제](/pdf/ko/python-net/delete-images-from-pdf-file/) - PDF 파일에서 이미지를 삭제하는 코드 스니펫을 확인합니다.
+- [PDF 파일에서 이미지 추출](/pdf/ko/python-net/extract-images-from-pdf-file/) - 다음 글에서는 Python 라이브러리를 사용하여 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.

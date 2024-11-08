@@ -2,7 +2,7 @@
 title: 自定义报表项支持
 type: docs
 weight: 30
-url: zh/reportingservices/custom-report-item-support/
+url: /zh/reportingservices/custom-report-item-support/
 lastmod: "2021-06-05"
 ---
 
@@ -14,6 +14,6 @@ lastmod: "2021-06-05"
 - 线箭头。
 - 脚注/尾注。
 
-了解如何在[扩展报表项属性](/pdf/reportingservices/expand-report-items-properties/)文章中使用它们。
+了解如何在[扩展报表项属性](/pdf/zh/reportingservices/expand-report-items-properties/)文章中使用它们。
 
 {{% /alert %}}

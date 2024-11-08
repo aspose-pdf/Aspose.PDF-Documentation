@@ -3,7 +3,7 @@ title: Aspose PDF ライセンス
 linktitle: ライセンスと制限
 type: docs
 weight: 90
-url: ja/net/licensing/
+url: /ja/net/licensing/
 description: Aspose. PDF for .NET では、クラシックライセンスとメータードライセンスをお客様に提供しています。また、製品をより深く探求するために限定ライセンスを使用することもできます。
 lastmod: "2021-06-05"
 sitemap:

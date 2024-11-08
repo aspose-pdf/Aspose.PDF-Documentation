@@ -3,7 +3,7 @@ title: Memutar Halaman PDF di Node.js
 linktitle: Memutar Halaman PDF
 type: docs
 weight: 50
-url: id/nodejs-cpp/rotate-pages/
+url: /id/nodejs-cpp/rotate-pages/
 description: Topik ini menjelaskan cara memutar orientasi halaman dalam file PDF yang ada secara terprogram di lingkungan Node.js.
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: 기존 PDF에서 표 제거
 linktitle: 표 제거
 type: docs
 weight: 50
-url: ko/cpp/remove-tables-from-existing-pdf/
+url: /ko/cpp/remove-tables-from-existing-pdf/
 description: 이 섹션에서는 PDF 문서에서 표를 제거하는 방법을 설명합니다.
 lastmod: "2021-11-11"
 sitemap:

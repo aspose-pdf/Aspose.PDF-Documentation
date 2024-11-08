@@ -3,7 +3,7 @@ title: Trabajando con Documentos PDF usando C#
 linktitle: Trabajando con Documentos
 type: docs
 weight: 10
-url: es/net/working-with-documents/
+url: /es/net/working-with-documents/
 description: Este artículo describe las manipulaciones que se pueden realizar con el documento con la biblioteca Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -90,15 +90,15 @@ Pero **Aspose.PDF for .NET** puede ayudarte a enfrentar la mayoría de las tarea
 
 Puedes hacer lo siguiente:
 
-- [Formatear Documento PDF](/pdf/net/formatting-pdf-document/) - crear un documento, obtener y establecer propiedades del documento, incrustar fuentes y otras operaciones con archivos PDF.
-- [Manipular Documento PDF](/pdf/net/manipulate-pdf-document/) - validar un documento PDF para el estándar PDF A, trabajar con TOC, establecer fecha de caducidad del PDF, y etc.
-- [Optimizar PDF](/pdf/net/optimize-pdf/) - optimizar contenido de página, optimizar tamaño de archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
-- [Optimizar PDF](/pdf/net/optimize-pdf/) - optimizar el contenido de la página, optimizar el tamaño del archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
-- [Fusionar PDF](/pdf/net/merge-pdf-documents/) - fusionar múltiples archivos PDF en un solo documento PDF utilizando C#.
-- [Dividir PDF](/pdf/net/split-document/) - dividir páginas PDF en archivos PDF individuales en sus aplicaciones .NET.
-- [Concatenar archivos PDF en una carpeta](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - concatenar todos los archivos PDF en una carpeta en particular utilizando la clase PdfFileEditor.
-- [Concatenar múltiples archivos PDF usando MemoryStreams](/pdf/net/concatenate-pdf-documents/) - aprenderás cómo concatenar múltiples archivos PDF utilizando MemoryStreams con C#.
-- [Trabajar con Encabezados](/pdf/net/working-with-headings/) - puedes crear numeración en el encabezado de tu documento PDF con C#.
+- [Formatear Documento PDF](/pdf/es/net/formatting-pdf-document/) - crear un documento, obtener y establecer propiedades del documento, incrustar fuentes y otras operaciones con archivos PDF.
+- [Manipular Documento PDF](/pdf/es/net/manipulate-pdf-document/) - validar un documento PDF para el estándar PDF A, trabajar con TOC, establecer fecha de caducidad del PDF, y etc.
+- [Optimizar PDF](/pdf/es/net/optimize-pdf/) - optimizar contenido de página, optimizar tamaño de archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
+- [Optimizar PDF](/pdf/es/net/optimize-pdf/) - optimizar el contenido de la página, optimizar el tamaño del archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
+- [Fusionar PDF](/pdf/es/net/merge-pdf-documents/) - fusionar múltiples archivos PDF en un solo documento PDF utilizando C#.
+- [Dividir PDF](/pdf/es/net/split-document/) - dividir páginas PDF en archivos PDF individuales en sus aplicaciones .NET.
+- [Concatenar archivos PDF en una carpeta](/pdf/es/net/concatenating-all-pdf-files-in-particular-folder/) - concatenar todos los archivos PDF en una carpeta en particular utilizando la clase PdfFileEditor.
+- [Concatenar múltiples archivos PDF usando MemoryStreams](/pdf/es/net/concatenate-pdf-documents/) - aprenderás cómo concatenar múltiples archivos PDF utilizando MemoryStreams con C#.
+- [Trabajar con Encabezados](/pdf/es/net/working-with-headings/) - puedes crear numeración en el encabezado de tu documento PDF con C#.
 
 <script type="application/ld+json">
 {

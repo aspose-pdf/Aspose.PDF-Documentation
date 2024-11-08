@@ -3,7 +3,7 @@ title: Travailler avec les pages PDF en C++
 linktitle: Travailler avec les pages
 type: docs
 weight: 20
-url: fr/cpp/working-with-pages/
+url: /fr/cpp/working-with-pages/
 description: Comment ajouter des pages, ajouter des en-têtes et des pieds de page, ajouter des filigranes, vous pouvez le savoir dans cette section. Aspose.PDF pour C++ vous explique tous les détails sur ce sujet.
 lastmod: "2021-12-03"
 sitemap:
@@ -23,14 +23,14 @@ Ajoutez des filigranes, numérotez vos pages, ajoutez des arrière-plans aux pag
 
 Vous êtes capable de faire ce qui suit :
 
-- [Ajouter des Pages](/pdf/cpp/add-pages/) - ajouter des pages à l'emplacement souhaité ou à la fin d'un fichier PDF et supprimer une page de votre document.
-- [Déplacer des Pages](/pdf/cpp/move-pages/) - déplacer des pages d'un document à un autre.
-- [Supprimer des Pages](/pdf/cpp/delete-pages/) - supprimer une page de votre fichier PDF en utilisant la collection PageCollection.
-- [Changer la Taille de la Page](/pdf/cpp/change-page-size) - vous pouvez changer la taille de la page PDF avec un extrait de code en utilisant la bibliothèque Aspose.PDF.
-- [Faire Pivoter les Pages](/pdf/cpp/rotate-pages/) - vous pouvez changer l'orientation des pages dans un fichier PDF existant.
-- [Ajouter des En-têtes et/ou Pieds de page](/pdf/cpp/add-headers-and-footers-of-pdf-file/) - ajouter du texte ou des images dans les en-têtes et pieds de page de votre fichier PDF.
-- [Rogner des Pages](/pdf/cpp/crop-pages/) - vous pouvez rogner des pages dans un document PDF de manière programmée avec différentes Propriétés de Page.
+- [Ajouter des Pages](/pdf/fr/cpp/add-pages/) - ajouter des pages à l'emplacement souhaité ou à la fin d'un fichier PDF et supprimer une page de votre document.
+- [Déplacer des Pages](/pdf/fr/cpp/move-pages/) - déplacer des pages d'un document à un autre.
+- [Supprimer des Pages](/pdf/fr/cpp/delete-pages/) - supprimer une page de votre fichier PDF en utilisant la collection PageCollection.
+- [Changer la Taille de la Page](/pdf/fr/cpp/change-page-size) - vous pouvez changer la taille de la page PDF avec un extrait de code en utilisant la bibliothèque Aspose.PDF.
+- [Faire Pivoter les Pages](/pdf/fr/cpp/rotate-pages/) - vous pouvez changer l'orientation des pages dans un fichier PDF existant.
+- [Ajouter des En-têtes et/ou Pieds de page](/pdf/fr/cpp/add-headers-and-footers-of-pdf-file/) - ajouter du texte ou des images dans les en-têtes et pieds de page de votre fichier PDF.
+- [Rogner des Pages](/pdf/fr/cpp/crop-pages/) - vous pouvez rogner des pages dans un document PDF de manière programmée avec différentes Propriétés de Page.
 
-- [Ajouter des Filigranes](/pdf/cpp/add-watermarks/) - ajouter des filigranes dans votre fichier PDF avec la Classe Artifact.- [Add Page Numbering in PDF File](/pdf/cpp/add-page-number/) - La classe PageNumberStamp vous aidera à ajouter un numéro de page dans votre fichier PDF.
-- [Add Backgrounds](/pdf/cpp/add-backgrounds/) - Des images de fond peuvent être utilisées pour ajouter un filigrane.
-- [Stamping](/pdf/cpp/stamping/) - Vous pouvez utiliser la classe ImageStamp pour ajouter un tampon d'image à un fichier PDF et la classe TextStamp pour ajouter un texte.
+- [Ajouter des Filigranes](/pdf/fr/cpp/add-watermarks/) - ajouter des filigranes dans votre fichier PDF avec la Classe Artifact.- [Add Page Numbering in PDF File](/pdf/fr/cpp/add-page-number/) - La classe PageNumberStamp vous aidera à ajouter un numéro de page dans votre fichier PDF.
+- [Add Backgrounds](/pdf/fr/cpp/add-backgrounds/) - Des images de fond peuvent être utilisées pour ajouter un filigrane.
+- [Stamping](/pdf/fr/cpp/stamping/) - Vous pouvez utiliser la classe ImageStamp pour ajouter un tampon d'image à un fichier PDF et la classe TextStamp pour ajouter un texte.

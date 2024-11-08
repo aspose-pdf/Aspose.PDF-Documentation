@@ -4,7 +4,7 @@ title: PDF 파일에 선 객체 추가
 linktitle: 선 추가
 type: docs
 weight: 40
-url: ko/net/add-line/
+url: /ko/net/add-line/
 description: 이 문서는 Aspose.PDF for .NET을 사용하여 PDF에 선 객체를 생성하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 }
 </script>
 ```
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## 선 객체 추가
 

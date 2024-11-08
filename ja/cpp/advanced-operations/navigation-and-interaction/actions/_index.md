@@ -3,7 +3,7 @@ title: PDFでのアクションの操作
 linktitle: アクション
 type: docs
 weight: 20
-url: ja/cpp/actions/
+url: /ja/cpp/actions/
 description: このセクションでは、C++を使用してドキュメントやフォームフィールドにアクションをプログラムで追加する方法を説明します。
 lastmod: "2022-01-25"
 sitemap:

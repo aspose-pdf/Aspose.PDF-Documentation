@@ -3,7 +3,7 @@ title: Ремонт PDF в Node.js
 linktitle: Ремонт PDF
 type: docs
 weight: 10
-url: ru/nodejs-cpp/repair-pdf/
+url: /ru/nodejs-cpp/repair-pdf/
 description: Эта тема описывает, как ремонтировать PDF в среде Node.js.
 lastmod: "2023-11-16"
 sitemap:

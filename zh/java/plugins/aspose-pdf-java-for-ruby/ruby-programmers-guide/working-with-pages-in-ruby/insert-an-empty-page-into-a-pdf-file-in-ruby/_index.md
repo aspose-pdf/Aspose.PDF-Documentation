@@ -2,7 +2,7 @@
 title: 在 Ruby 中将空白页插入 PDF 文件
 type: docs
 weight: 70
-url: zh/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
+url: /zh/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

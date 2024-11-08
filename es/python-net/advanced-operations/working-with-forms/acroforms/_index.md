@@ -3,7 +3,7 @@ title: Trabajando con AcroForms usando Python
 linktitle: AcroForms
 type: docs
 weight: 10
-url: es/python-net/acroforms/
+url: /es/python-net/acroforms/
 description: Con Aspose.PDF para Python puedes crear un formulario desde cero, completar el campo del formulario en un documento PDF, extraer datos del formulario, etc.
 lastmod: "2023-02-17"
 sitemap:
@@ -89,9 +89,9 @@ PDF 1.7 admite dos métodos diferentes para integrar datos y formularios PDF.
 
 Para un aprendizaje más detallado de las capacidades de la biblioteca Java, consulta los siguientes artículos:
 
-- [Crear AcroForm](/pdf/python-net/create-form) - crear formulario desde cero con Python.
-- [Rellenar AcroForm](/pdf/python-net/fill-form) - rellena el campo de formulario en tu documento PDF.
-- [Extraer AcroForm](/pdf/python-net/extract-form) - obtiene el valor de todos o de un campo individual del documento PDF.
+- [Crear AcroForm](/pdf/es/python-net/create-form) - crear formulario desde cero con Python.
+- [Rellenar AcroForm](/pdf/es/python-net/fill-form) - rellena el campo de formulario en tu documento PDF.
+- [Extraer AcroForm](/pdf/es/python-net/extract-form) - obtiene el valor de todos o de un campo individual del documento PDF.
 
 <script type="application/ld+json">
 {

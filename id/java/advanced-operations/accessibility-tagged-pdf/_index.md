@@ -3,7 +3,7 @@ title: Bekerja dengan Aksesibilitas dan PDF Bertanda
 linktitle: Aksesibilitas. PDF Bertanda
 type: docs
 weight: 120
-url: id/java/accessibility-tagged-pdf/
+url: /id/java/accessibility-tagged-pdf/
 description: Aspose.PDF menyediakan kemampuan untuk membuat dokumen PDF Bertanda, memungkinkan Anda untuk menandai elemen struktural. Pelajari lebih lanjut tentang cara mendapatkan PDF yang dapat diakses.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ Aspose.PDF menyediakan fungsionalitas untuk membuat dokumen PDF yang kompatibel 
 
 Bagian ini mencakup topik berikut:
 
-- [Membuat Tagged PDF](/pdf/java/create-tagged-pdf-documents/)
-- [Mengekstrak Konten Bertanda dari Tagged PDFs](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
-- [Mengatur Properti Elemen Struktur](/pdf/java/set-tagged-pdfs-element-properties/)
-- [Bekerja dengan Tabel dalam Tagged PDFs](/pdf/java/working-with-table-in-tagged-pdfs/)
+- [Membuat Tagged PDF](/pdf/id/java/create-tagged-pdf-documents/)
+- [Mengekstrak Konten Bertanda dari Tagged PDFs](/pdf/id/java/extract-tagged-content-from-tagged-pdfs/)
+- [Mengatur Properti Elemen Struktur](/pdf/id/java/set-tagged-pdfs-element-properties/)
+- [Bekerja dengan Tabel dalam Tagged PDFs](/pdf/id/java/working-with-table-in-tagged-pdfs/)

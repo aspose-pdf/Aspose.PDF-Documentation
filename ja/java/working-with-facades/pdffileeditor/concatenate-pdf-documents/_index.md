@@ -2,7 +2,7 @@
 title: PDF文書を連結する
 type: docs
 weight: 10
-url: ja/java/concatenate-pdf-documents/
+url: /ja/java/concatenate-pdf-documents/
 description: このセクションでは、PdfFileEditorクラスを使用してcom.aspose.pdf.facadesでPDF文書を連結する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

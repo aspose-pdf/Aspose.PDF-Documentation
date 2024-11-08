@@ -3,7 +3,7 @@ title: Adicionar Páginas em PDF
 linktitle: Adicionar Páginas
 type: docs
 weight: 10
-url: pt/java/add-pages/
+url: /pt/java/add-pages/
 description: Este artigo ensina como inserir (adicionar) uma página na localização desejada no arquivo PDF. Aprenda como mover, remover (excluir) páginas de um arquivo PDF usando a biblioteca Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -1,7 +1,7 @@
 title: Perubahan API Publik di Aspose.PDF untuk Java 9.0.0
 type: docs
 weight: 30
-url: id/java/public-api-changes-in-aspose-pdf-for-java-9-0-0/
+url: /id/java/public-api-changes-in-aspose-pdf-for-java-9-0-0/
 lastmod: "2022-01-27"
 ---
 

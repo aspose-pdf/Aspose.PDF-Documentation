@@ -3,7 +3,7 @@ title: PDF Tooltip с использованием Python
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: ru/python-net/pdf-tooltip/
+url: /ru/python-net/pdf-tooltip/
 description: Узнайте, как добавить всплывающую подсказку к текстовому фрагменту в PDF с использованием Python и Aspose.PDF
 lastmod: "2024-02-17"
 sitemap:

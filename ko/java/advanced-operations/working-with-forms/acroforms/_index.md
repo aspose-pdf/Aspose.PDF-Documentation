@@ -4,7 +4,7 @@ title: PDF에서 AcroForms 작업하기
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ko/java/acroforms/
+url: /ko/java/acroforms/
 description: Aspose.PDF for Java를 사용하여 처음부터 양식을 생성하고, PDF 문서에서 양식 필드를 채우고, 양식에서 데이터를 추출하고, 기존 양식에서 필드를 추가하거나 제거할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -35,10 +35,10 @@ AcroForms는 XFA에서 찾을 수 없는 기능을 가지고 있으며, 반대�
 
 양식 작업의 가능성에 대한 보다 자세한 연구를 위해, 다음 섹션의 기사를 공부하세요:
 
--[Create AcroForm](/pdf/java/create-form/) - RadioButtonField, TextBoxField, Caption Field를 Java를 사용하여 처음부터 양식을 만들기.
+-[Create AcroForm](/pdf/ko/java/create-form/) - RadioButtonField, TextBoxField, Caption Field를 Java를 사용하여 처음부터 양식을 만들기.
 
--[Fill AcroForm](/pdf/java/fill-form/) - 문서 객체의 Form 컬렉션에서 필드를 가져와 양식 필드를 채우기.
+-[Fill AcroForm](/pdf/ko/java/fill-form/) - 문서 객체의 Form 컬렉션에서 필드를 가져와 양식 필드를 채우기.
 
--[Extract Data AcroForm](/pdf/java/extract-form/) - 모든 필드 및 개별 필드에서 값을 가져오기 등.
+-[Extract Data AcroForm](/pdf/ko/java/extract-form/) - 모든 필드 및 개별 필드에서 값을 가져오기 등.
 
--[Modifing AcroForm](/pdf/java/modifing-form/) - FieldLimit 설정/해제, 기존 양식에서 필드 제거, Java로 14개의 기본 PDF 폰트 외의 양식 필드 폰트 설정.
+-[Modifing AcroForm](/pdf/ko/java/modifing-form/) - FieldLimit 설정/해제, 기존 양식에서 필드 제거, Java로 14개의 기본 PDF 폰트 외의 양식 필드 폰트 설정.

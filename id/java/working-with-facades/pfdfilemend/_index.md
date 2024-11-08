@@ -2,7 +2,7 @@
 title: PdfFileMend Class
 type: docs
 weight: 20
-url: id/java/pdffilemend-class/
+url: /id/java/pdffilemend-class/
 description: Bagian ini menjelaskan cara bekerja dengan Aspose.PDF Facades menggunakan Kelas PdfFileMend.
 lastmod: "2021-06-05"
 sitemap:
@@ -33,7 +33,7 @@ Kita dapat menambahkan teks dengan beberapa cara.
 
 Periksa bagaimana tampilannya:
 
-![Tambahkan Teks](/pdf/net/images/add_text.png)
+![Tambahkan Teks](/pdf/id/net/images/add_text.png)
 
 Cara kedua untuk menambahkan [FormattedText](https://reference.aspose.com/pdf//java/com.aspose.pdf.facades/formattedtext). Selain itu, kami menunjukkan sebuah persegi panjang di mana teks kami harus sesuai.
 
@@ -99,7 +99,7 @@ public static void AddImage01()
     }
 ```
 
-![Add Image](/pdf/net/images/add_image1.png)
+![Add Image](/pdf/id/net/images/add_image1.png)
 
 Mari kita pertimbangkan cuplikan kode kedua. Dengan menggunakan variasi dari parameter kelas [CompositingParameters](https://reference.aspose.com/pdf/java/com.aspose.pdf/CompositingParameters), kita dapat memperoleh efek desain yang berbeda. Kami mencoba salah satu dari mereka.
 
@@ -125,7 +125,7 @@ Mari kita pertimbangkan cuplikan kode kedua. Dengan menggunakan variasi dari par
 ```
 
 
-![Tambahkan Gambar](/pdf/net/images/add_image2.png)
+![Tambahkan Gambar](/pdf/id/net/images/add_image2.png)
 
 Dalam cuplikan kode berikut, kita menggunakan [ImageFilterType](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageFilterType). ImageFilterType menunjukkan jenis codec aliran yang akan digunakan untuk encoding, secara default Jpeg. jika Anda memuat gambar dari format PNG, maka akan disimpan dalam dokumen sebagai JPEG (atau dalam format lain yang telah saya tentukan).
 

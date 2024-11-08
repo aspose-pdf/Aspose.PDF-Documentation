@@ -3,7 +3,7 @@ title: Añadir sellos de imagen a PDF en Node.js
 linktitle: Sellos de imagen en archivo PDF
 type: docs
 weight: 60
-url: es/nodejs-cpp/stamping/
+url: /es/nodejs-cpp/stamping/
 description: Añadir el sello de imagen en su documento PDF utilizando AsposePdfAddStamp con la herramienta Node.js.
 lastmod: "2023-11-16"
 sitemap:

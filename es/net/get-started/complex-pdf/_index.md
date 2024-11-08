@@ -3,7 +3,7 @@ title: Creando un PDF complejo
 linktitle: Creando un PDF complejo
 type: docs
 weight: 60
-url: es/net/complex-pdf-example/
+url: /es/net/complex-pdf-example/
 description: Aspose.PDF para NET permite crear documentos más complejos que contienen imágenes, fragmentos de texto y tablas en un solo documento.
 aliases:
     - /net/complex-pdf/
@@ -13,8 +13,8 @@ sitemap:
     priority: 0.7
 ---
 
-El ejemplo [Hola, Mundo](/pdf/net/hello-world-example/) mostró pasos simples para crear un documento PDF usando C# y Aspose.PDF. En este artículo, veremos cómo crear un documento más complejo con C# y Aspose.PDF para .NET. Como ejemplo, tomaremos un documento de una compañía ficticia que opera servicios de ferry para pasajeros.
-Nuestro documento contendrá una imagen, dos fragmentos de texto (encabezado y párrafo) y una tabla. Para construir un documento así, utilizaremos el enfoque basado en DOM. Puedes leer más en la sección [Fundamentos de la API DOM](/pdf/net/basics-of-dom-api/).
+El ejemplo [Hola, Mundo](/pdf/es/net/hello-world-example/) mostró pasos simples para crear un documento PDF usando C# y Aspose.PDF. En este artículo, veremos cómo crear un documento más complejo con C# y Aspose.PDF para .NET. Como ejemplo, tomaremos un documento de una compañía ficticia que opera servicios de ferry para pasajeros.
+Nuestro documento contendrá una imagen, dos fragmentos de texto (encabezado y párrafo) y una tabla. Para construir un documento así, utilizaremos el enfoque basado en DOM. Puedes leer más en la sección [Fundamentos de la API DOM](/pdf/es/net/basics-of-dom-api/).
 
 Si creamos un documento desde cero necesitamos seguir ciertos pasos:
 
@@ -29,8 +29,8 @@ Si creamos un documento desde cero necesitamos seguir ciertos pasos:
 1. Añade (tabla) a los [Párrafos](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la página.
 1. Guarda el documento "Complex.pdf".
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 using Aspose.Pdf.Text;

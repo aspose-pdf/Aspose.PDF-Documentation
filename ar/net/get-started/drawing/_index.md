@@ -3,7 +3,7 @@ title: نظرة عامة على Aspose.PDF.Drawing لـ .NET
 linktitle: نسخة PDF.Drawing
 type: docs
 weight: 130
-url: ar/net/drawing/
+url: /ar/net/drawing/
 lastmod: "2023-12-21"
 description: نظرة عامة على الميزات الرئيسية والمزايا لمكتبة Aspose.PDF.Drawing لـ .NET.
 sitemap:
@@ -71,7 +71,7 @@ sitemap:
 
 ## Licensing
 
-لا توجد رخصة إضافية لـ Aspose.PDF.Drawing، استخدم نفس الرخصة المستخدمة لـ Aspose.PDF. تحقق من قسم [رخصة Aspose PDF](/pdf/net/licensing/).
+لا توجد رخصة إضافية لـ Aspose.PDF.Drawing، استخدم نفس الرخصة المستخدمة لـ Aspose.PDF. تحقق من قسم [رخصة Aspose PDF](/pdf/ar/net/licensing/).
 
 ## Installation
 
@@ -84,7 +84,7 @@ sitemap:
 
 تعرف أكثر على:
 
-- [صيغ الملفات المدعومة](/pdf/net/supported-file-formats/)
-- [متطلبات النظام](/pdf/net/system-requirements/)
-- [الترخيص](/pdf/net/licensing/)
-- [الدعم الفني](/pdf/net/technical-support/)
+- [صيغ الملفات المدعومة](/pdf/ar/net/supported-file-formats/)
+- [متطلبات النظام](/pdf/ar/net/system-requirements/)
+- [الترخيص](/pdf/ar/net/licensing/)
+- [الدعم الفني](/pdf/ar/net/technical-support/)

@@ -3,7 +3,7 @@ title: Tambahkan Cap Teks di PDF melalui Python
 linktitle: Cap Teks dalam Berkas PDF
 type: docs
 weight: 20
-url: id/python-net/text-stamps-in-the-pdf-file/
+url: /id/python-net/text-stamps-in-the-pdf-file/
 description: Tambahkan cap teks ke dokumen PDF menggunakan kelas TextStamp dengan pustaka Aspose.PDF untuk Python.
 lastmod: "2023-04-17"
 sitemap:

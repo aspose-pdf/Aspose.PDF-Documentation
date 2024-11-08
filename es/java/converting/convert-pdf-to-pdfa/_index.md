@@ -3,7 +3,7 @@ title: Convertir PDF a formatos PDF/A
 linktitle: Convertir PDF a formatos PDF/A
 type: docs
 weight: 100
-url: es/java/convert-pdf-to-pdfa/
+url: /es/java/convert-pdf-to-pdfa/
 lastmod: "2021-11-19"
 description: Este tema muestra cómo Aspose.PDF permite convertir un archivo PDF a un archivo PDF conforme con PDF/A.
 sitemap:

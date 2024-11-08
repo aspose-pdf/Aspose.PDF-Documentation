@@ -3,7 +3,7 @@ title: 更新 PDF 中的链接
 linktitle: 更新链接
 type: docs
 weight: 20
-url: zh/java/update-links/
+url: /zh/java/update-links/
 description: 以编程方式更新 PDF 中的链接。本指南介绍如何在 Java 语言中更新 PDF 中的链接。
 lastmod: "2021-06-05"
 sitemap:

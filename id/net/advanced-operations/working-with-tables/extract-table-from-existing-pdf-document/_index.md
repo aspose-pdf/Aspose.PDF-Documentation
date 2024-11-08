@@ -3,7 +3,7 @@ title: Ekstrak Tabel dari Dokumen PDF
 linktitle: Ekstrak Tabel
 type: docs
 weight: 20
-url: id/net/extract-table-from-existing-pdf-document/
+url: /id/net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF untuk .NET memungkinkan untuk melakukan berbagai manipulasi dengan tabel yang terkandung dalam dokumen pdf Anda.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga dapat bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga dapat bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Ekstrak Tabel dari PDF
 

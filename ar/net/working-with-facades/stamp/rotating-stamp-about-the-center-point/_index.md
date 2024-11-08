@@ -2,7 +2,7 @@
 title: تدوير الختم حول نقطة المركز
 type: docs
 weight: 10
-url: ar/net/rotating-stamp-about-the-center-point/
+url: /ar/net/rotating-stamp-about-the-center-point/
 description: يشرح هذا القسم كيفية تدوير الختم حول نقطة المركز باستخدام فئة Stamp.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-تسمح لك [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/net/) بإضافة ختم في ملف PDF موجود. في بعض الأحيان، يحتاج المستخدمون إلى تدوير الختم. في هذه المقالة، سنرى كيفية تدوير الختم حول نقطة مركزه.
+تسمح لك [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) بإضافة ختم في ملف PDF موجود. في بعض الأحيان، يحتاج المستخدمون إلى تدوير الختم. في هذه المقالة، سنرى كيفية تدوير الختم حول نقطة مركزه.
 
 {{% /alert %}}
 

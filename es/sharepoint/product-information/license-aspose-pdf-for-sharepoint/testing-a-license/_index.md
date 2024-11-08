@@ -2,7 +2,7 @@
 title: Probando una Licencia
 type: docs
 weight: 20
-url: es/sharepoint/testing-a-license/
+url: /es/sharepoint/testing-a-license/
 lastmod: "2020-12-16"
 description: Para probar que una licencia para PDF SharePoint API se ha instalado correctamente, convierta cualquier documento al formato deseado y debería generarse sin ninguna Advertencia de Evaluación.
 ---

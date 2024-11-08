@@ -2,7 +2,7 @@
 title: الحصول على خصائص الصفحة في بايثون
 type: docs
 weight: 50
-url: ar/python-java/get-page-properties-in-python/
+url: /ar/python-java/get-page-properties-in-python/
 ---
 
 للحصول على خصائص الصفحة لوثيقة Pdf باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء فئة **GetPageProperties**.

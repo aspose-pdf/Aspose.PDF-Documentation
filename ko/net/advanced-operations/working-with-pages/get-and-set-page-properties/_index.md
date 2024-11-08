@@ -1,7 +1,7 @@
 ---
 title: 페이지 속성 가져오기 및 설정하기
 type: docs
-url: ko/net/get-and-set-page-properties/
+url: /ko/net/get-and-set-page-properties/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -71,7 +71,7 @@ lastmod: "2022-02-17"
 </script>
 Aspose.PDF for .NET을 사용하면 .NET 애플리케이션에서 PDF 파일의 페이지 속성을 읽고 설정할 수 있습니다. 이 섹션에서는 PDF 파일의 페이지 수를 가져오고, PDF 페이지 속성(예: 색상)에 대한 정보를 가져오고 페이지 속성을 설정하는 방법을 보여줍니다. 제공된 예제는 C#으로 되어 있지만 VB.NET과 같은 다른 .NET 언어를 사용하여 동일한 작업을 수행할 수 있습니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ## PDF 파일의 페이지 수 가져오기
 
@@ -120,7 +120,7 @@ PDF 파일의 각 페이지에는 너비, 높이, 블리드, 크롭 및 트림�
 
 ## PDF 파일의 특정 페이지 가져오기
 
-Aspose.PDF는 PDF를 개별 페이지로 [분할](/pdf/net/split-pdf-document/)하고 PDF 파일로 저장할 수 있습니다. PDF 파일에서 지정된 페이지를 가져와 새 PDF로 저장하는 것은 매우 유사한 작업입니다: 원본 문서를 열고, 페이지에 접근하고, 새 문서를 생성하고 페이지를 추가합니다.
+Aspose.PDF는 PDF를 개별 페이지로 [분할](/pdf/ko/net/split-pdf-document/)하고 PDF 파일로 저장할 수 있습니다. PDF 파일에서 지정된 페이지를 가져와 새 PDF로 저장하는 것은 매우 유사한 작업입니다: 원본 문서를 열고, 페이지에 접근하고, 새 문서를 생성하고 페이지를 추가합니다.
 
 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)은 PDF 파일의 페이지를 보유합니다.
 [문서](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)은 PDF 파일의 페이지를 보유합니다.

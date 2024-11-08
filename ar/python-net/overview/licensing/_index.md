@@ -3,7 +3,7 @@ title: Aspose PDF License
 linktitle: Licensing and limitations
 type: docs
 weight: 50
-url: ar/python-net/licensing/
+url: /ar/python-net/licensing/
 description: تدعو Aspose. PDF for Python عملاءها للحصول على ترخيص كلاسيكي. وكذلك استخدام ترخيص محدود لاستكشاف المنتج بشكل أفضل.
 lastmod: "2022-12-21"
 sitemap:

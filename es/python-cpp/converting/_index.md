@@ -3,7 +3,7 @@ title: Convertir documentos PDF usando Python
 linktitle: Convertir documento PDF
 type: docs
 weight: 70
-url: es/python-cpp/converting/
+url: /es/python-cpp/converting/
 lastmod: "2023-07-22"
 description: Esta sección contiene artículos relacionados con la conversión de documentos PDF a diferentes formatos y viceversa usando la API de Python.
 sitemap:
@@ -21,7 +21,7 @@ Nuestra biblioteca **Aspose.PDF para Python a través de C++** te permite conver
 
 Hay muchos formatos de imagen que necesitan ser convertidos a PDF para diferentes propósitos. Aspose.PDF permite los formatos de imágenes más populares y viceversa.
 
-- [Convertir PDF a varios formatos de imágenes](/pdf/python-cpp/convert-pdf-to-images-format/) - convertir páginas de PDF como imágenes en formatos JPEG, PNG y otros
-- [Convertir Imágenes a PDF](/pdf/python-cpp/convert-image-to-pdf/) - convertir JPEG, PNG y otros formatos a archivo PDF
-- [Convertir PDF a otros formatos](/pdf/python-cpp/convert-pdf-to-other-files/) - convertir páginas de PDF en otros formatos
-- [Convertir PDF a Texto](/pdf/python-cpp/convert-pdf-to-txt/) - convertir páginas de PDF a texto
+- [Convertir PDF a varios formatos de imágenes](/pdf/es/python-cpp/convert-pdf-to-images-format/) - convertir páginas de PDF como imágenes en formatos JPEG, PNG y otros
+- [Convertir Imágenes a PDF](/pdf/es/python-cpp/convert-image-to-pdf/) - convertir JPEG, PNG y otros formatos a archivo PDF
+- [Convertir PDF a otros formatos](/pdf/es/python-cpp/convert-pdf-to-other-files/) - convertir páginas de PDF en otros formatos
+- [Convertir PDF a Texto](/pdf/es/python-cpp/convert-pdf-to-txt/) - convertir páginas de PDF a texto

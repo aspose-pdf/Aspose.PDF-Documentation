@@ -2,7 +2,7 @@
 title: Insertar una Página Vacía en un Archivo PDF en Ruby
 type: docs
 weight: 70
-url: es/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
+url: /es/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

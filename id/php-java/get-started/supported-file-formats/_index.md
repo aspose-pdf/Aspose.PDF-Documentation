@@ -3,7 +3,7 @@ title: Format File yang Didukung
 linktitle: Format File yang Didukung
 type: docs
 weight: 70
-url: id/php-java/supported-file-formats/
+url: /id/php-java/supported-file-formats/
 description: Halaman ini menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF untuk PHP melalui Java.
 lastmod: "2024-06-05"
 sitemap:

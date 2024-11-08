@@ -3,7 +3,7 @@ title: SharePointでPDFファイルをマージする
 linktitle: PDFファイルをマージする
 type: docs
 weight: 90
-url: ja/sharepoint/merge-pdf-files/
+url: /ja/sharepoint/merge-pdf-files/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIを使用して、SharePointドキュメントライブラリから複数のPDFファイルを単一のPDFにマージできます。
 ---

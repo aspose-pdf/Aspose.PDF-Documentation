@@ -2,7 +2,7 @@
 title: Insertar una Imagen en una Celda de Tabla en PDF
 type: docs
 weight: 20
-url: es/java/insert-an-image-into-a-table-cell-in-pdf/
+url: /es/java/insert-an-image-into-a-table-cell-in-pdf/
 lastmod: "2022-01-27"
 ---
 

@@ -3,7 +3,7 @@ title: Annotations adhésives PDF en utilisant C#
 linktitle: Annotation Adhésive
 type: docs
 weight: 50
-url: fr/net/sticky-annotations/
+url: /fr/net/sticky-annotations/
 description: Ce sujet concerne les annotations adhésives, comme exemple nous montrons l'Annotation Filigrane dans le texte.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Ce sujet concerne les annotations adhésives, comme exemple nous montrons l'Annotation Filigrane dans le texte."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter une annotation de filigrane
 

@@ -3,7 +3,7 @@ title: C#을 사용하여 PDF 문서 작업하기
 linktitle: 문서 작업하기
 type: docs
 weight: 10
-url: ko/net/working-with-documents/
+url: /ko/net/working-with-documents/
 description: 이 글은 Aspose.PDF 라이브러리로 문서를 조작할 수 있는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -90,18 +90,18 @@ PDF는 현재 국제 표준화 기구(ISO)에 의해 유지되는 개방형 표�
 
 다음과 같은 작업이 가능합니다:
 
-- [PDF 문서 형식](/pdf/net/formatting-pdf-document/) - 문서 생성, 문서 속성 가져오기 및 설정, 글꼴 임베딩 및 PDF 파일과 관련된 기타 작업.
-- [PDF 문서 조작](/pdf/net/manipulate-pdf-document/) - PDF 문서를 PDF A 표준에 대해 검증, 목차 작업, PDF 만료 날짜 설정 등.
-- [PDF 최적화](/pdf/net/optimize-pdf/) - 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 모든 이미지 압축을 통한 문서 최적화 성공.
+- [PDF 문서 형식](/pdf/ko/net/formatting-pdf-document/) - 문서 생성, 문서 속성 가져오기 및 설정, 글꼴 임베딩 및 PDF 파일과 관련된 기타 작업.
+- [PDF 문서 조작](/pdf/ko/net/manipulate-pdf-document/) - PDF 문서를 PDF A 표준에 대해 검증, 목차 작업, PDF 만료 날짜 설정 등.
+- [PDF 최적화](/pdf/ko/net/optimize-pdf/) - 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 모든 이미지 압축을 통한 문서 최적화 성공.
 
 type: docs
 changefreq: "monthly"
-- [PDF 최적화](/pdf/net/optimize-pdf/) - 페이지 내용 최적화, 파일 크기 최적화, 사용하지 않는 객체 제거, 모든 이미지 압축을 통한 문서 최적화.
-- [PDF 병합](/pdf/net/merge-pdf-documents/) - C#을 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합합니다.
-- [PDF 분할](/pdf/net/split-document/) - .NET 응용 프로그램에서 PDF 페이지를 개별 PDF 파일로 분할합니다.
-- [폴더의 PDF 파일 연결](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - PdfFileEditor 클래스를 사용하여 특정 폴더의 모든 PDF 파일을 연결합니다.
-- [MemoryStreams를 사용하여 여러 PDF 파일 연결](/pdf/net/concatenate-pdf-documents/) - C#을 사용하여 MemoryStreams를 사용하여 여러 PDF 파일을 연결하는 방법을 배웁니다.
-- [제목 작업](/pdf/net/working-with-headings/) - C#을 사용하여 PDF 문서의 제목에 번호 매기기를 생성할 수 있습니다.
+- [PDF 최적화](/pdf/ko/net/optimize-pdf/) - 페이지 내용 최적화, 파일 크기 최적화, 사용하지 않는 객체 제거, 모든 이미지 압축을 통한 문서 최적화.
+- [PDF 병합](/pdf/ko/net/merge-pdf-documents/) - C#을 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합합니다.
+- [PDF 분할](/pdf/ko/net/split-document/) - .NET 응용 프로그램에서 PDF 페이지를 개별 PDF 파일로 분할합니다.
+- [폴더의 PDF 파일 연결](/pdf/ko/net/concatenating-all-pdf-files-in-particular-folder/) - PdfFileEditor 클래스를 사용하여 특정 폴더의 모든 PDF 파일을 연결합니다.
+- [MemoryStreams를 사용하여 여러 PDF 파일 연결](/pdf/ko/net/concatenate-pdf-documents/) - C#을 사용하여 MemoryStreams를 사용하여 여러 PDF 파일을 연결하는 방법을 배웁니다.
+- [제목 작업](/pdf/ko/net/working-with-headings/) - C#을 사용하여 PDF 문서의 제목에 번호 매기기를 생성할 수 있습니다.
 
 <script type="application/ld+json">
 {

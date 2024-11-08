@@ -2,7 +2,7 @@
 title: Obter Contagem de Páginas de PDF em PHP
 type: docs
 weight: 40
-url: pt/java/get-page-count-of-pdf-in-php/
+url: /pt/java/get-page-count-of-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

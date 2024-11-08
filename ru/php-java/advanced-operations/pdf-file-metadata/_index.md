@@ -3,7 +3,7 @@ title: Работа с метаданными PDF файла
 linktitle: Метаданные PDF файла
 type: docs
 weight: 140
-url: ru/php-java/pdf-file-metadata/
+url: /ru/php-java/pdf-file-metadata/
 description: Этот раздел объясняет, как получить информацию о PDF файле, как получить XMP метаданные из PDF файла, установить информацию о PDF файле.
 lastmod: "2024-06-05"
 sitemap:

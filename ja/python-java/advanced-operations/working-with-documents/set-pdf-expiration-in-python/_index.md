@@ -2,7 +2,7 @@
 title: PythonでPDFの有効期限を設定する
 type: docs
 weight: 80
-url: ja/python-java/set-pdf-expiration-in-python/
+url: /ja/python-java/set-pdf-expiration-in-python/
 ---
 
 <ins>**Aspose.PDF Java for Python** を使用してPDFドキュメントの有効期限を設定するには、単に **SetExpiration** クラスを呼び出します。

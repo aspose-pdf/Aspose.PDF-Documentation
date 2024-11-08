@@ -3,7 +3,7 @@ title: C#을 사용한 추가 주석
 linktitle: 추가 주석
 type: docs
 weight: 60
-url: ko/net/extra-annotations/
+url: /ko/net/extra-annotations/
 description: 이 섹션에서는 PDF 문서에서 추가 주석을 추가, 가져오기 및 삭제하는 방법을 설명합니다.
 lastmod: "2023-09-12"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 캐럿 주석은 텍스트 편집을 나타내는 기호입니다. 캐럿 주석은 또한 마크업 주석이므로 캐럿 클래스는 마크업 클래스에서 파생되며 캐럿 주석의 속성을 가져오거나 설정하고 캐럿 주석 외관의 흐름을 재설정하는 기능을 제공합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 캐럿 주석을 만드는 단계는 다음과 같습니다:
 

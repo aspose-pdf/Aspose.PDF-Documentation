@@ -4,7 +4,7 @@ title: Impression de PDF dans .NET Framework
 linktitle: Impression de PDF dans .NET Framework
 type: docs
 weight: 10
-url: fr/net/printing-pdf-in-net-framework/
+url: /fr/net/printing-pdf-in-net-framework/
 keywords: "imprimer fichier pdf c#, c# imprimer pdf"
 description: Vous pouvez imprimer des fichiers PDF sur l'imprimante par défaut en utilisant les paramètres d'imprimante et de page avec C#.
 lastmod: "2022-02-17"
@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 ```
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## **Imprimer un fichier PDF en C# - Imprimer un fichier PDF sur l'imprimante par défaut en utilisant les paramètres d'imprimante et de page**
 

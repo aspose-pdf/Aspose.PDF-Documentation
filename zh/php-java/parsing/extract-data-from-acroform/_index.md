@@ -3,7 +3,7 @@ title:  从AcroForm提取数据
 linktitle:  从AcroForm提取数据
 type: docs
 weight: 50
-url: zh/php-java/extract-data-from-acroform/
+url: /zh/php-java/extract-data-from-acroform/
 description: AcroForms存在于许多PDF文档中。本文旨在帮助您了解如何使用PHP和Aspose.PDF从AcroForms中提取数据。
 lastmod: "2024-05-20"
 sitemap:

@@ -3,7 +3,7 @@ title: 从AcroForm中提取数据
 linktitle: 从AcroForm中提取数据
 type: docs
 weight: 50
-url: zh/cpp/extract-data-from-acroform/
+url: /zh/cpp/extract-data-from-acroform/
 description: Aspose.PDF使从PDF文件中提取表单字段数据变得容易。了解如何从AcroForms中提取数据并将其保存为XML或FDF格式。
 lastmod: "2021-12-13"
 sitemap:

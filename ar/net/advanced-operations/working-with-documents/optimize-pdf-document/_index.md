@@ -3,7 +3,7 @@ title: تحسين أو ضغط أو تقليل حجم ملف PDF في C#
 linktitle: تحسين PDF
 type: docs
 weight: 30
-url: ar/net/optimize-pdf/
+url: /ar/net/optimize-pdf/
 keywords: "optimize pdf c#"
 description: تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة التضمين للخطوط، إزالة العناصر غير المستخدمة باستخدام C#.
 lastmod: "2022-02-17"
@@ -103,7 +103,7 @@ aliases:
 1.
 1. احفظ المستند المُحسّن باستخدام طريقة [الحفظ](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 الشفرة التالية توضح كيفية تحسين مستند PDF للويب.
 

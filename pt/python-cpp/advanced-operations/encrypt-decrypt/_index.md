@@ -3,7 +3,7 @@ title: Encrypt and Decrypt PDF
 linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 30
-url: pt/python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /pt/python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Encrypt and Decrypt PDF File with Python via C++ application.
 lastmod: "2024-04-17"
 sitemap:

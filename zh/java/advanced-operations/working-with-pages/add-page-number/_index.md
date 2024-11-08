@@ -3,7 +3,7 @@ title: 为 PDF 添加页码
 linktitle: 添加页码
 type: docs
 weight: 100
-url: zh/java/add-page-number/
+url: /zh/java/add-page-number/
 description: Aspose.PDF for Java 允许您使用 PageNumber Stamp 类向 PDF 文件添加页码印章。
 lastmod: "2021-06-05"
 sitemap:

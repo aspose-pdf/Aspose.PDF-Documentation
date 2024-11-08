@@ -2,7 +2,7 @@
 title: 制作 PDF 文件的 NUp
 type: docs
 weight: 90
-url: zh/net/make-nup-of-pdf-files/
+url: /zh/net/make-nup-of-pdf-files/
 description: 本文展示了如何使用 Aspose.PDF Facades 和 PdfFileEditor 类制作 PDF 文件的 NUp。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: حذف صفحات PDF برمجياً
 linktitle: حذف صفحات PDF
 type: docs
 weight: 40
-url: ar/java/delete-pages/
+url: /ar/java/delete-pages/
 description: يمكنك حذف صفحات من ملف PDF باستخدام مكتبة Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF 머리글 및 바닥글 추가
 linktitle: PDF 머리글 및 바닥글 추가
 type: docs
 weight: 70
-url: ko/php-java/add-headers-and-footers-of-pdf-file/
+url: /ko/php-java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for PHP via Java를 사용하여 TextStamp 클래스를 사용하여 PDF 파일에 머리글 및 바닥글을 추가할 수 있습니다.
 lastmod: "2024-06-05"
 sitemap:

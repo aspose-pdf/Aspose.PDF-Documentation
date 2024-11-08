@@ -2,7 +2,7 @@
 title: Instalar com a Ferramenta de Configuração
 type: docs
 weight: 30
-url: pt/reportingservices/install-with-configuring-tool/
+url: /pt/reportingservices/install-with-configuring-tool/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Obter Propriedades de Janela de Documento e Exibição de Página em Jython
 type: docs
 weight: 20
-url: pt/java/get-document-window-and-page-display-properties-in-jython/
+url: /pt/java/get-document-window-and-page-display-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

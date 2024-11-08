@@ -10,7 +10,7 @@ type: docs
 
 weight: 120
 
-url: fr/jasperreports/
+url: /fr/jasperreports/
 
 is_root: true
 
@@ -48,23 +48,23 @@ Voici des liens vers des ressources utiles dont vous pourriez avoir besoin pour 
 
 
 
-- [Aperçu du produit Aspose.PDF pour JasperReports](/pdf/jasperreports/product-overview/)
+- [Aperçu du produit Aspose.PDF pour JasperReports](/pdf/fr/jasperreports/product-overview/)
 
-- [Formats de fichiers pris en charge par Aspose.PDF pour JasperReports](/pdf/jasperreports/supported-file-formats/)
+- [Formats de fichiers pris en charge par Aspose.PDF pour JasperReports](/pdf/fr/jasperreports/supported-file-formats/)
 
 
-- [Visite des fonctionnalités Aspose.PDF pour JasperReports](/pdf/jasperreports/feature-tour/)
+- [Visite des fonctionnalités Aspose.PDF pour JasperReports](/pdf/fr/jasperreports/feature-tour/)
 
 - [Notes de version d'Aspose.PDF pour JasperReports](https://releases.aspose.com/pdf/jassperreport/release-notes/)
 
 - [Télécharger Aspose.PDF pour JasperReports](https://releases.aspose.com/pdf/jassperreport/)
 
-- [Galerie de rapports d'exemples Aspose.PDF pour JasperReports](/pdf/jasperreports/sample-reports-gallery/)
+- [Galerie de rapports d'exemples Aspose.PDF pour JasperReports](/pdf/fr/jasperreports/sample-reports-gallery/)
 
-- [Installation d'Aspose.PDF pour JasperReports](/pdf/jasperreports/installation/)
+- [Installation d'Aspose.PDF pour JasperReports](/pdf/fr/jasperreports/installation/)
 
-- [Licence Aspose.PDF pour JasperReports](/pdf/jasperreports/licensing/)
+- [Licence Aspose.PDF pour JasperReports](/pdf/fr/jasperreports/licensing/)
 
-- [Évaluer Aspose.Pdf](/pdf/jasperreports/evaluate-aspose-pdf/)
+- [Évaluer Aspose.Pdf](/pdf/fr/jasperreports/evaluate-aspose-pdf/)
 
-- [Limitations de l'API Aspose.PDF pour JasperReports](/pdf/jasperreports/api-limitations/)
+- [Limitations de l'API Aspose.PDF pour JasperReports](/pdf/fr/jasperreports/api-limitations/)

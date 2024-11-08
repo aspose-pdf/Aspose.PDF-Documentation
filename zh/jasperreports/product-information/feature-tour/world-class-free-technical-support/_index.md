@@ -6,7 +6,7 @@ type: docs
 
 weight: 30
 
-url: zh/jasperreports/world-class-free-technical-support/
+url: /zh/jasperreports/world-class-free-technical-support/
 
 lastmod: "2021-06-05"
 

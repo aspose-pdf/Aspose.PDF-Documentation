@@ -2,7 +2,7 @@
 title: PDFページの挿入
 type: docs
 weight: 50
-url: ja/net/insert-pdf-pages/
+url: /ja/net/insert-pdf-pages/
 description: このセクションでは、PdfFileEditorクラスを使用してAspose.PDF FacadesでPDFページを挿入する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

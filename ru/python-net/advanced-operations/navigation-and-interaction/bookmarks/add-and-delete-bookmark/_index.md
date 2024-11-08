@@ -3,7 +3,7 @@ title: Добавление и Удаление Закладки с исполь
 linktitle: Добавление и Удаление Закладки
 type: docs
 weight: 10
-url: ru/python-net/add-and-delete-bookmark/
+url: /ru/python-net/add-and-delete-bookmark/
 description: Вы можете добавить закладку в PDF документ с помощью Python. Возможно удалить все или конкретные закладки из PDF документа.
 lastmod: "2023-02-17"
 sitemap:

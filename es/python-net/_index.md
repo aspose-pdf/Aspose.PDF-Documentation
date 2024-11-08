@@ -4,7 +4,7 @@ linktitle: Aspose.PDF para Python a través de .NET
 second_title: Aspose.PDF para Python a través de .NET
 type: docs
 weight: 40
-url: es/python-net/
+url: /es/python-net/
 is_root: true
 lastmod: "2022-10-24"
 description: Aprenda a usar Aspose.PDF Python a través de .NET para crear aplicaciones para el procesamiento de documentos PDF en cualquier plataforma usando Python. Explore tutoriales, códigos de muestra y más.
@@ -26,20 +26,20 @@ Aspose.PDF es un componente .NET diseñado para permitir a los desarrolladores c
 
 <h2>Capítulos</h2>
 
-- [Qué hay de nuevo](/pdf/python-net/whatsnew/)
-- [Visión general](/pdf/python-net/overview/)
-- [Comenzar](/pdf/python-net/get-started/)
-- [Operaciones básicas](/pdf/python-net/basic-operations/)
-- [Conversión de documentos](/pdf/python-net/converting/)
-- [Análisis de documentos PDF](/pdf/python-net/parsing/)
-- [Operaciones avanzadas](/pdf/python-net/advanced-operations/)
-- [Muestras](/pdf/python-net/showcases/)
+- [Qué hay de nuevo](/pdf/es/python-net/whatsnew/)
+- [Visión general](/pdf/es/python-net/overview/)
+- [Comenzar](/pdf/es/python-net/get-started/)
+- [Operaciones básicas](/pdf/es/python-net/basic-operations/)
+- [Conversión de documentos](/pdf/es/python-net/converting/)
+- [Análisis de documentos PDF](/pdf/es/python-net/parsing/)
+- [Operaciones avanzadas](/pdf/es/python-net/advanced-operations/)
+- [Muestras](/pdf/es/python-net/showcases/)
 - [Notas de la versión](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 
 <h2>Recursos de Aspose.PDF para Python via .NET</h2>
 
 Los siguientes son los enlaces a algunos recursos útiles que puede necesitar para realizar sus tareas.
-- [Aspose.PDF para Python a través de .NET Características Clave](/pdf/python-net/key-features/)
+- [Aspose.PDF para Python a través de .NET Características Clave](/pdf/es/python-net/key-features/)
 - [Aspose.PDF para Python a través de .NET Notas de la Versión](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 - [Aspose.PDF para Python a través de .NET Página del Producto](https://products.aspose.com/pdf/python-net/)
 - [Descargar Aspose.PDF para Python a través de .NET](https://releases.aspose.com/pdf/pythonnet/)

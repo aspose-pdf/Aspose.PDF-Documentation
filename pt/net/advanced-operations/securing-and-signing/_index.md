@@ -3,7 +3,7 @@ title: Protegendo e assinando PDF em C#
 linktitle: Protegendo e assinando em PDF
 type: docs
 weight: 150
-url: pt/net/securing-and-signing/
+url: /pt/net/securing-and-signing/
 description: Esta seção descreve os recursos de usar uma assinatura e proteger seu documento PDF usando C#
 lastmod: "2022-02-17"
 sitemap:
@@ -80,10 +80,10 @@ aliases:
 
 Esta seção descreve como assinar digitalmente documentos PDF de forma segura usando C#. Os termos assinatura eletrônica e assinatura digital são usados de forma intercambiável, mas essencialmente os dois são diferentes. Mais geralmente, uma assinatura digital vem com um selo aprovado por uma [autoridade de certificação](https://pt.wikipedia.org/wiki/Autoridade_certificadora) e é usada para proteger o documento assinado contra adulteração. Em vez disso, uma assinatura eletrônica é frequentemente usada para demonstrar a intenção de assinar um documento.
 
-- [Assinar digitalmente arquivo PDF](/pdf/net/digitally-sign-pdf-file/)
-- [Definir privilégios, criptografar e descriptografar arquivo PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extrair imagem e informações de assinatura](/pdf/net/extract-image-and-signature-information/)
-- [Assinar documento PDF a partir de Smart Card](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Assinar digitalmente arquivo PDF](/pdf/pt/net/digitally-sign-pdf-file/)
+- [Definir privilégios, criptografar e descriptografar arquivo PDF](/pdf/pt/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Extrair imagem e informações de assinatura](/pdf/pt/net/extract-image-and-signature-information/)
+- [Assinar documento PDF a partir de Smart Card](/pdf/pt/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

@@ -2,7 +2,7 @@
 title: 기존 PDF 파일에 주석 추가, 삭제 및 가져오기 - Facades
 type: docs
 weight: 10
-url: ko/cpp/add-delete-and-get-annotation-facades/
+url: /ko/cpp/add-delete-and-get-annotation-facades/
 ---
 
 ## <ins>**PdfContentEditor를 사용하여 기존 PDF 파일에 주석 추가**

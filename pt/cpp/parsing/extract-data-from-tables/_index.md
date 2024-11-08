@@ -3,7 +3,7 @@ title: Extrair Dados de Tabela em PDF
 linktitle: Extrair Dados de Tabela
 type: docs
 weight: 40
-url: pt/cpp/extract-data-from-table-in-pdf/
+url: /pt/cpp/extract-data-from-table-in-pdf/
 description: Aprenda a extrair tabelas de PDF usando Aspose.PDF para C++.
 lastmod: "2021-06-05"
 sitemap:
@@ -121,7 +121,7 @@ void ExtractMarkedTable()
 
 ## Extrair Dados da Tabela do PDF e armazená-los em arquivo CSV
 
-O exemplo a seguir mostra como extrair uma tabela e armazená-la como arquivo CSV. Para ver como converter PDF em Planilha Excel, consulte o artigo [Converter PDF para Excel](/pdf/cpp/convert-pdf-to-excel/).
+O exemplo a seguir mostra como extrair uma tabela e armazená-la como arquivo CSV. Para ver como converter PDF em Planilha Excel, consulte o artigo [Converter PDF para Excel](/pdf/pt/cpp/convert-pdf-to-excel/).
 
 ```cpp
 void ExtractTableSaveCSV()

@@ -3,7 +3,7 @@ title: PDF 툴팁을 C++를 사용하여 추가하기
 linktitle: PDF 툴팁
 type: docs
 weight: 20
-url: ko/cpp/pdf-tooltip/
+url: /ko/cpp/pdf-tooltip/
 description: C++ 및 Aspose.PDF를 사용하여 PDF의 텍스트 조각에 툴팁을 추가하는 방법을 배워보세요.
 lastmod: "2021-12-13"
 sitemap:

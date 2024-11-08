@@ -3,7 +3,7 @@ title: Преобразование изображения в PDF на Python
 linktitle: Преобразование изображения в файл PDF
 type: docs
 weight: 10
-url: ru/python-cpp/convert-image-to-pdf/
+url: /ru/python-cpp/convert-image-to-pdf/
 lastmod: "2024-04-22"
 description: Эта тема показывает, как преобразовать изображение в PDF, используя библиотеку Aspose.PDF для Python через C++.
 sitemap:

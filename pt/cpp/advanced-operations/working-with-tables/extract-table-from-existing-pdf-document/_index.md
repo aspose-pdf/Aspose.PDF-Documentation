@@ -3,7 +3,7 @@ title: Extrair Tabela de PDF
 linktitle: Extrair Tabela
 type: docs
 weight: 20
-url: pt/cpp/extract-table-from-existing-pdf-document/
+url: /pt/cpp/extract-table-from-existing-pdf-document/
 description: Aspose.PDF para C++ torna possível realizar várias manipulações com as tabelas contidas em seu documento PDF. Você pode adicionar e extrair uma tabela no documento PDF existente, renderizar a tabela em uma nova página, etc.
 lastmod: "2021-11-11"
 sitemap:

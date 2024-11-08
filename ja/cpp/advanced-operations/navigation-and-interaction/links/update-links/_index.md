@@ -3,7 +3,7 @@ title: PDF のリンクを更新する
 linktitle: リンクを更新する
 type: docs
 weight: 20
-url: ja/cpp/update-links/
+url: /ja/cpp/update-links/
 description: Aspose.PDF for C++ を使用してプログラムで PDF 内のリンクを更新します。このガイドは、PDF ファイル内のリンクを更新する方法について説明しています。
 lastmod: "2022-01-31"
 sitemap:

@@ -3,7 +3,7 @@ title: Travailler avec des documents PDF dans Node.js
 linktitle: Travailler avec des documents
 type: docs
 weight: 10
-url: fr/nodejs-cpp/working-with-documents/
+url: /fr/nodejs-cpp/working-with-documents/
 description: Cet article vous décrit quelles manipulations peuvent être faites avec le document PDF en utilisant l'outil Aspose.PDF pour Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:
@@ -22,7 +22,7 @@ Mais **Aspose.PDF pour Node.js via C++** peut vous aider à faire face à la plu
 
 You are able to do the following:
 
-- [Optimiser PDF](/pdf/nodejs-cpp/optimize-pdf/) - optimiser le contenu des pages, optimiser la taille du fichier, supprimer les objets inutilisés, compresser toutes les images pour une optimisation réussie du document.
-- [Optimiser les ressources PDF](/pdf/nodejs-cpp/optimize-pdf-resources/) - optimiser le contenu des pages, optimiser la taille du fichier, supprimer les objets inutilisés, compresser toutes les images pour une optimisation réussie du document.
-- [Fusionner PDF](/pdf/nodejs-cpp/merge-pdf/) - fusionner plusieurs fichiers PDF en un seul document PDF en utilisant Node.js.
-- [Diviser PDF](/pdf/nodejs-cpp/split-pdf/) - diviser les pages PDF en fichiers PDF individuels dans Node.js via C++.
+- [Optimiser PDF](/pdf/fr/nodejs-cpp/optimize-pdf/) - optimiser le contenu des pages, optimiser la taille du fichier, supprimer les objets inutilisés, compresser toutes les images pour une optimisation réussie du document.
+- [Optimiser les ressources PDF](/pdf/fr/nodejs-cpp/optimize-pdf-resources/) - optimiser le contenu des pages, optimiser la taille du fichier, supprimer les objets inutilisés, compresser toutes les images pour une optimisation réussie du document.
+- [Fusionner PDF](/pdf/fr/nodejs-cpp/merge-pdf/) - fusionner plusieurs fichiers PDF en un seul document PDF en utilisant Node.js.
+- [Diviser PDF](/pdf/fr/nodejs-cpp/split-pdf/) - diviser les pages PDF en fichiers PDF individuels dans Node.js via C++.

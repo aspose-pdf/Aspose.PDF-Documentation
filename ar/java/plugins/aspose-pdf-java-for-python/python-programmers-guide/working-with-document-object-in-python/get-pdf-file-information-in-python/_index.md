@@ -2,7 +2,7 @@
 title: الحصول على معلومات ملف PDF في بايثون
 type: docs
 weight: 40
-url: ar/java/get-pdf-file-information-in-python/
+url: /ar/java/get-pdf-file-information-in-python/
 lastmod: "2021-06-05"
 ---
 

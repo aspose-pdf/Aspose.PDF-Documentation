@@ -3,7 +3,7 @@ title: 在 PDF 中使用 AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: zh/php-java/acroforms/
+url: /zh/php-java/acroforms/
 description: 使用 Aspose.PDF for PHP via Java，您可以从头创建表单、填写 PDF 文档中的表单字段、从表单中提取数据、在现有表单中添加或删除字段。
 lastmod: "2024-06-05"
 sitemap:
@@ -34,10 +34,10 @@ AcroForms具有XFA中没有的功能，反之亦然，XFA也有一些AcroForms�
 
 有关表单处理可能性的更详细研究，请查看以下部分中的文章：
 
--[创建 AcroForm](/pdf/php-java/create-form/) - 从头创建表单，使用 PHP 添加 RadioButtonField、TextBoxField、Caption Field。
+-[创建 AcroForm](/pdf/zh/php-java/create-form/) - 从头创建表单，使用 PHP 添加 RadioButtonField、TextBoxField、Caption Field。
 
--[填写 AcroForm](/pdf/php-java/fill-form/) - 要填写表单字段，从 Document 对象的 Form 集合中获取字段。
+-[填写 AcroForm](/pdf/zh/php-java/fill-form/) - 要填写表单字段，从 Document 对象的 Form 集合中获取字段。
 
--[提取数据 AcroForm](/pdf/php-java/extract-form/) - 获取所有和个别字段的值等。
+-[提取数据 AcroForm](/pdf/zh/php-java/extract-form/) - 获取所有和个别字段的值等。
 
--[修改 AcroForm](/pdf/php-java/modifing-form/) - 获取/设置 FieldLimit，移除现有表单中的字段，设置非 14 核心 PDF 字体的表单字段字体，使用 PHP。
+-[修改 AcroForm](/pdf/zh/php-java/modifing-form/) - 获取/设置 FieldLimit，移除现有表单中的字段，设置非 14 核心 PDF 字体的表单字段字体，使用 PHP。

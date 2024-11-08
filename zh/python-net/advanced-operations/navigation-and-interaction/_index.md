@@ -3,7 +3,7 @@ title: 使用 Python 在 PDF 中的导航和交互
 linktitle: 导航和交互
 type: docs
 weight: 90
-url: zh/python-net/navigation-and-interaction/
+url: /zh/python-net/navigation-and-interaction/
 description: 本节介绍使用 Python 库进行链接、动作和书签的工作特性。
 lastmod: "2023-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 
 
-- [书签](/pdf/python-net/bookmarks/)- 大型出版物通常包含一个书签框架，可以在书签窗格中轻松查看和选择，允许您点击书签跳转到它所代表的页面或章节。书签窗格是一个内容感知元素，只有在打开的 PDF 文档包含书签结构时，才会在侧边栏中可见。
+- [书签](/pdf/zh/python-net/bookmarks/)- 大型出版物通常包含一个书签框架，可以在书签窗格中轻松查看和选择，允许您点击书签跳转到它所代表的页面或章节。书签窗格是一个内容感知元素，只有在打开的 PDF 文档包含书签结构时，才会在侧边栏中可见。
 
 <script type="application/ld+json">
 {

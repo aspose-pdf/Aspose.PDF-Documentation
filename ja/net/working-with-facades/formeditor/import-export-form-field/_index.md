@@ -2,13 +2,13 @@
 title: フォームフィールドのインポートとエクスポート
 type: docs
 weight: 60
-url: ja/net/import-export-form-field/
+url: /ja/net/import-export-form-field/
 description: Aspose.PDF for .NETのFormEditorクラスを使用してDataTableを使用してフォームフィールドを入力します
 lastmod: "2021-06-05"
 draft: false
 ---
 
-Aspose.PDF for .NETは、PDFドキュメント内のフォームフィールドの作成/操作のための優れた機能を提供します。このAPIを使用すると、プログラムによってPDFファイル内のフォームフィールドを入力したり、[FDFからPDFファイルへのデータのインポート](/pdf/net/import-and-export-data/)、[XFDFからPDFファイルへのデータのインポート](/pdf/net/import-and-export-data/)、[XMLからPDFファイルへのデータのインポート](/pdf/net/import-and-export-data/)を行ったり、[System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1)オブジェクトからデータをインポートすることもできます。
+Aspose.PDF for .NETは、PDFドキュメント内のフォームフィールドの作成/操作のための優れた機能を提供します。このAPIを使用すると、プログラムによってPDFファイル内のフォームフィールドを入力したり、[FDFからPDFファイルへのデータのインポート](/pdf/ja/net/import-and-export-data/)、[XFDFからPDFファイルへのデータのインポート](/pdf/ja/net/import-and-export-data/)、[XMLからPDFファイルへのデータのインポート](/pdf/ja/net/import-and-export-data/)を行ったり、[System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1)オブジェクトからデータをインポートすることもできます。
 
 ```csharp
  public static void ImportData()

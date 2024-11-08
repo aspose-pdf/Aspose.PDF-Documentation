@@ -3,7 +3,7 @@ title: حذف الصور من ملف PDF عبر JavaScript
 linktitle: حذف الصور
 type: docs
 weight: 20
-url: ar/javascript-cpp/delete-images-from-pdf-file/
+url: /ar/javascript-cpp/delete-images-from-pdf-file/
 description: يشرح هذا القسم كيفية حذف الصور من ملف PDF باستخدام Aspose.PDF لـ JavaScript.
 lastmod: "2022-02-17"
 ---

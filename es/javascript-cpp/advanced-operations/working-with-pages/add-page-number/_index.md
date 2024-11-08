@@ -3,7 +3,7 @@ title: Agregar Número de Página al PDF con JavaScript via C++
 linktitle: Agregar Número de Página
 type: docs
 weight: 100
-url: es/javascript-cpp/add-page-number/
+url: /es/javascript-cpp/add-page-number/
 description: Aspose.PDF para JavaScript via C++ te permite agregar un Sello de Número de Página a tu archivo PDF usando AsposePdfAddPageNum.
 lastmod: "2023-04-17"
 sitemap:

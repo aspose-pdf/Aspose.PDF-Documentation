@@ -2,7 +2,7 @@
 title: تحسين حجم ملف PDF في روبي
 type: docs
 weight: 80
-url: ar/java/optimize-pdf-file-size-in-ruby/
+url: /ar/java/optimize-pdf-file-size-in-ruby/
 lastmod: "2021-06-05"
 ---
 

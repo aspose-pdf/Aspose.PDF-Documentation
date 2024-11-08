@@ -3,7 +3,7 @@ title: إضافة رقم الصفحة إلى PDF باستخدام Python
 linktitle: إضافة رقم الصفحة
 type: docs
 weight: 30
-url: ar/python-net/add-page-number/
+url: /ar/python-net/add-page-number/
 description: Aspose.PDF لـ Python عبر .NET يتيح لك إضافة ختم رقم الصفحة إلى ملف PDF الخاص بك باستخدام فئة PageNumberStamp.
 lastmod: "2023-04-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 在PDF中以编程方式添加文字印章
 linktitle: 在PDF文件中添加文字印章
 type: docs
 weight: 20
-url: zh/java/text-stamps-in-the-pdf-file/
+url: /zh/java/text-stamps-in-the-pdf-file/
 description: 使用TextStamp类通过Java向PDF文件添加文字印章。
 lastmod: "2021-06-05"
 sitemap:

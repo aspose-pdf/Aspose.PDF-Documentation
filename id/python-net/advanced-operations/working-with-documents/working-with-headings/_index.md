@@ -2,7 +2,7 @@
 title: Bekerja dengan Judul di PDF
 type: docs
 weight: 40
-url: id/python-net/working-with-headings/
+url: /id/python-net/working-with-headings/
 description: Buat penomoran dalam judul dokumen PDF Anda dengan Python. Aspose.PDF untuk Python via .NET menawarkan berbagai jenis gaya penomoran.
 lastmod: "2023-04-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 Judul adalah bagian penting dari setiap dokumen. Penulis selalu berusaha membuat judul lebih menonjol dan bermakna bagi pembacanya. Jika ada lebih dari satu judul dalam sebuah dokumen, penulis memiliki beberapa opsi untuk mengatur judul-judul ini. Salah satu pendekatan paling umum untuk mengatur judul adalah menulis judul dalam Gaya Penomoran.
 
-[Aspose.PDF untuk Python via .NET](/pdf/python-net/) menawarkan banyak gaya penomoran yang telah ditentukan sebelumnya. Gaya penomoran yang telah ditentukan sebelumnya ini disimpan dalam enumerasi, [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). Nilai-nilai yang telah ditentukan sebelumnya dari enumerasi NumberingStyle dan deskripsinya diberikan di bawah ini:
+[Aspose.PDF untuk Python via .NET](/pdf/id/python-net/) menawarkan banyak gaya penomoran yang telah ditentukan sebelumnya. Gaya penomoran yang telah ditentukan sebelumnya ini disimpan dalam enumerasi, [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). Nilai-nilai yang telah ditentukan sebelumnya dari enumerasi NumberingStyle dan deskripsinya diberikan di bawah ini:
 
 |**Jenis Judul**|**Deskripsi**|
 | :- | :- |

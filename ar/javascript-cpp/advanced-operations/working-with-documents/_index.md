@@ -3,7 +3,7 @@ title: العمل مع مستندات PDF باستخدام JavaScript عبر C++
 linktitle: العمل مع المستندات
 type: docs
 weight: 10
-url: ar/javascript-cpp/working-with-documents/
+url: /ar/javascript-cpp/working-with-documents/
 description: يصف لك هذا المقال ما يمكن القيام به من تلاعبات في المستند باستخدام مكتبة Aspose.PDF لـ JavaScript عبر C++.
 lastmod: "2023-02-17"
 sitemap:
@@ -21,9 +21,9 @@ PDF هو معيار مفتوح، يتم الحفاظ عليه من قبل الم
 
 أنت قادر على القيام بما يلي:
 
-- [تحسين ملف PDF](/pdf/javascript-cpp/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للوثيقة.
-- [تحسين موارد PDF](/pdf/javascript-cpp/optimize-pdf-resources/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للوثيقة.
-- [دمج ملفات PDF](/pdf/javascript-cpp/merge-pdf/) - دمج ملفات PDF متعددة في وثيقة PDF واحدة باستخدام جافا سكريبت.
-- [تقسيم ملف PDF](/pdf/javascript-cpp/split-pdf/) - تقسيم صفحات PDF إلى ملفات PDF فردية في جافا سكريبت عبر C++.
-- [حذف جافا سكريبت](/pdf/javascript-cpp/delete-javascripts/) - حذف جافا سكريبت من ملف PDF.
-- [الحصول على معلومات حول المنتج](/pdf/javascript-cpp/get-info-about-product/)
+- [تحسين ملف PDF](/pdf/ar/javascript-cpp/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للوثيقة.
+- [تحسين موارد PDF](/pdf/ar/javascript-cpp/optimize-pdf-resources/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للوثيقة.
+- [دمج ملفات PDF](/pdf/ar/javascript-cpp/merge-pdf/) - دمج ملفات PDF متعددة في وثيقة PDF واحدة باستخدام جافا سكريبت.
+- [تقسيم ملف PDF](/pdf/ar/javascript-cpp/split-pdf/) - تقسيم صفحات PDF إلى ملفات PDF فردية في جافا سكريبت عبر C++.
+- [حذف جافا سكريبت](/pdf/ar/javascript-cpp/delete-javascripts/) - حذف جافا سكريبت من ملف PDF.
+- [الحصول على معلومات حول المنتج](/pdf/ar/javascript-cpp/get-info-about-product/)

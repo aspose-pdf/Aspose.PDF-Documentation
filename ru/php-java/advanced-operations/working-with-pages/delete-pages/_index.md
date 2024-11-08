@@ -3,7 +3,7 @@ title: Программное удаление страниц PDF
 linktitle: Удаление страниц PDF
 type: docs
 weight: 40
-url: ru/php-java/delete-pages/
+url: /ru/php-java/delete-pages/
 description: Вы можете удалить страницы из вашего PDF файла, используя PHP.
 lastmod: "2024-06-05"
 sitemap:

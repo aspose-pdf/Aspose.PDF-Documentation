@@ -3,7 +3,7 @@ title: إنشاء PDF معقد
 linktitle: إنشاء PDF معقد
 type: docs
 weight: 60
-url: ar/net/complex-pdf-example/
+url: /ar/net/complex-pdf-example/
 description: يتيح لك Aspose.PDF لـ NET إنشاء مستندات أكثر تعقيداً تحتوي على صور وأجزاء نصية وجداول في مستند واحد.
 aliases:
     - /net/complex-pdf/
@@ -13,8 +13,8 @@ sitemap:
     priority: 0.7
 ---
 
-أظهر مثال [مرحباً، العالم](/pdf/net/hello-world-example/) خطوات بسيطة لإنشاء مستند PDF باستخدام C# و Aspose.PDF. في هذا المقال، سنلقي نظرة على إنشاء مستند أكثر تعقيداً باستخدام C# و Aspose.PDF لـ .NET. كمثال، سنأخذ مستنداً من شركة وهمية تعمل في خدمات العبّارات الركابية.
-سيحتوي مستندنا على صورة، وجزأين نصيين (الرأس والفقرة)، وجدول. لبناء مثل هذا المستند، سنستخدم نهج DOM. يمكنك قراءة المزيد في قسم [أساسيات واجهة برمجة التطبيقات DOM](/pdf/net/basics-of-dom-api/).
+أظهر مثال [مرحباً، العالم](/pdf/ar/net/hello-world-example/) خطوات بسيطة لإنشاء مستند PDF باستخدام C# و Aspose.PDF. في هذا المقال، سنلقي نظرة على إنشاء مستند أكثر تعقيداً باستخدام C# و Aspose.PDF لـ .NET. كمثال، سنأخذ مستنداً من شركة وهمية تعمل في خدمات العبّارات الركابية.
+سيحتوي مستندنا على صورة، وجزأين نصيين (الرأس والفقرة)، وجدول. لبناء مثل هذا المستند، سنستخدم نهج DOM. يمكنك قراءة المزيد في قسم [أساسيات واجهة برمجة التطبيقات DOM](/pdf/ar/net/basics-of-dom-api/).
 
 إذا كنا ننشئ مستنداً من الصفر فإننا نحتاج إلى اتباع خطوات معينة:
 
@@ -30,8 +30,8 @@ sitemap:
 1. أضف (الجدول) إلى [الفقرات](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) الصفحة.
 1. احفظ المستند "Complex.pdf".
 
-يعمل الشفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الشفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 using Aspose.Pdf.Text;

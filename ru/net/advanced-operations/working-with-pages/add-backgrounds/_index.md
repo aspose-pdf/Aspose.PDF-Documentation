@@ -3,7 +3,7 @@ title: Добавить фон в PDF с помощью C#
 linktitle: Добавить фоны
 type: docs
 weight: 110
-url: ru/net/add-backgrounds/
+url: /ru/net/add-backgrounds/
 description: Добавьте изображение фона в ваш PDF-файл с помощью C#. Используйте объект BackgroundArtifact.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Фоновые изображения можно использовать для добавления водяного знака или другого дискретного дизайна в документы. В Aspose.PDF для .NET каждый PDF-документ представляет собой коллекцию страниц, и каждая страница содержит коллекцию артефактов. Класс [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) можно использовать для добавления фонового изображения на объект страницы.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Следующий фрагмент кода показывает, как добавить фоновое изображение на страницы PDF с использованием объекта BackgroundArtifact на C#.
 

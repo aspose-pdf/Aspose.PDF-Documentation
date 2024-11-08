@@ -3,7 +3,7 @@ title: Navigasi dan Interaksi dalam PDF menggunakan Python
 linktitle: Navigasi dan interaksi
 type: docs
 weight: 90
-url: id/python-net/navigation-and-interaction/
+url: /id/python-net/navigation-and-interaction/
 description: Bagian ini menjelaskan fitur kerja dengan tautan, tindakan, dan penanda buku dengan Perpustakaan Python.
 lastmod: "2023-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 
 
-- [Penanda Buku](/pdf/python-net/bookmarks/)- publikasi besar biasanya menyertakan kerangka penanda buku yang dapat dengan mudah dilihat dan dipilih di Panel Penanda Buku, memungkinkan Anda untuk mengklik penanda buku untuk melompat ke halaman atau bab yang diwakilinya. Panel Penanda Buku adalah elemen yang sadar konten, dan terlihat di bilah samping hanya jika dokumen PDF yang terbuka berisi struktur penanda buku.
+- [Penanda Buku](/pdf/id/python-net/bookmarks/)- publikasi besar biasanya menyertakan kerangka penanda buku yang dapat dengan mudah dilihat dan dipilih di Panel Penanda Buku, memungkinkan Anda untuk mengklik penanda buku untuk melompat ke halaman atau bab yang diwakilinya. Panel Penanda Buku adalah elemen yang sadar konten, dan terlihat di bilah samping hanya jika dokumen PDF yang terbuka berisi struktur penanda buku.
 
 <script type="application/ld+json">
 {

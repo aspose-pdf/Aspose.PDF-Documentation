@@ -3,7 +3,7 @@ title: PDFファイルにC#でリンクを作成する
 linktitle: リンクを作成
 type: docs
 weight: 10
-url: ja/net/create-links/
+url: /ja/net/create-links/
 description: このセクションでは、C#を使用してPDFドキュメントにリンクを作成する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-以下のコードスニペットは[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## リンクを作成する
 

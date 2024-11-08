@@ -3,7 +3,7 @@ title: Eliminar páginas de PDF con JavaScript a través de C++
 linktitle: Eliminar páginas de PDF
 type: docs
 weight: 30
-url: es/javascript-cpp/delete-pages/
+url: /es/javascript-cpp/delete-pages/
 description: Puede eliminar páginas de su archivo PDF usando Aspose.PDF para JavaScript a través de C++.
 lastmod: "2023-04-17"
 sitemap:

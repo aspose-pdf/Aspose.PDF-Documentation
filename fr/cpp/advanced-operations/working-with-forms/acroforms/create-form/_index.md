@@ -3,7 +3,7 @@ title: Créer des AcroForms en utilisant C++
 linktitle: Créer des AcroForms
 type: docs
 weight: 10
-url: fr/cpp/create-form/
+url: /fr/cpp/create-form/
 description: Cette section explique comment créer des AcroForms à partir de zéro dans vos documents PDF avec Aspose.PDF pour C++.
 lastmod: "2021-12-01"
 sitemap:

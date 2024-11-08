@@ -3,7 +3,7 @@ title: Как запустить другие примеры Aspose.PDF для A
 linktitle: Как запустить другие примеры
 type: docs
 weight: 40
-url: ru/androidjava/how-to-run-other-examples/    
+url: /ru/androidjava/how-to-run-other-examples/    
 description: Эта страница демонстрирует рекомендации, которые будут полезны для выполнения следующих требований перед загрузкой и запуском примеров.
 lastmod: "2021-06-05"
 ---

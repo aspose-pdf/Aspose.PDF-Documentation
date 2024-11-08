@@ -3,7 +3,7 @@ title: 从PDF中移除附件
 linktitle: 从现有PDF中移除附件
 type: docs
 weight: 30
-url: zh/cpp/removing-attachment-from-an-existing-pdf/
+url: /zh/cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF for C++ 可以从您的PDF文档中移除附件。使用C++ PDF API通过Aspose.PDF库移除PDF文件中的附件。
 lastmod: "2022-02-07"
 sitemap:

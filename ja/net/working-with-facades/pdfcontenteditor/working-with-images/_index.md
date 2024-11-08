@@ -2,7 +2,7 @@
 title: 画像を使用したPDFコンテンツエディター
 type: docs
 weight: 50
-url: ja/net/working-with-images-in-pdf
+url: /ja/net/working-with-images-in-pdf
 description: このセクションでは、Aspose.PDF Facadesを使用してPdfContentEditorクラスで画像を追加および削除する方法について説明します。
 lastmod: "2021-06-24"
 ---

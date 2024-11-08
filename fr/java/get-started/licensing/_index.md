@@ -3,7 +3,7 @@ title: Licence et limitations
 linktitle: Licence et limitations
 type: docs
 weight: 90
-url: fr/java/licensing/
+url: /fr/java/licensing/
 description: Aspose.PDF pour Java invite ses clients à obtenir une licence Classique et une Licence Mesurée. Ainsi qu'à utiliser une licence limitée pour mieux explorer le produit.
 lastmod: "2021-06-05"
 sitemap:

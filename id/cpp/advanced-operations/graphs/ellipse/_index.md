@@ -3,7 +3,7 @@ title: Tambahkan Objek Elips ke file PDF
 linktitle: Tambahkan Elips
 type: docs
 weight: 60
-url: id/cpp/add-ellipse/
+url: /id/cpp/add-ellipse/
 description: Artikel ini menjelaskan bagaimana cara membuat objek Elips ke PDF Anda menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-12-21"
 sitemap:

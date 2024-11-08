@@ -3,7 +3,7 @@ title: Aspose.PDF Editor
 linktitle: Aspose.PDF Editor
 type: docs
 weight: 10
-url: id/net/aspose-pdf-editor/
+url: /id/net/aspose-pdf-editor/
 description: Aspose.PDF untuk .NET menunjukkan HTML5 PDF Editor adalah editor PDF berbasis web sumber terbuka.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Définir le Nom de la Police par Défaut
 linktitle: Définir le Nom de la Police par Défaut
 type: docs
 weight: 90
-url: fr/java/set-default-font-name/
+url: /fr/java/set-default-font-name/
 description: Cette section décrit comment définir le nom de la police par défaut en utilisant la bibliothèque Aspose.PDF pour Java.
 lastmod: "2021-06-05"
 ---

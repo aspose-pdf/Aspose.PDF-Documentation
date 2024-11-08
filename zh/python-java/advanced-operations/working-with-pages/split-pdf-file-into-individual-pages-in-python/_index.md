@@ -2,7 +2,7 @@
 title: 将 PDF 文件拆分为单个页面的 Python
 type: docs
 weight: 80
-url: zh/python-java/split-pdf-file-into-individual-pages-in-python/
+url: /zh/python-java/split-pdf-file-into-individual-pages-in-python/
 ---
 
 <ins>要使用 **Aspose.PDF Java for PHP** 将 PDF 文档拆分为单个页面，只需调用 **SplitAllPages** 类。

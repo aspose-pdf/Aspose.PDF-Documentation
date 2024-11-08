@@ -2,7 +2,7 @@
 title: Obtener el Recuento de Páginas del PDF en Ruby
 type: docs
 weight: 40
-url: es/java/get-page-count-of-pdf-in-ruby/
+url: /es/java/get-page-count-of-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

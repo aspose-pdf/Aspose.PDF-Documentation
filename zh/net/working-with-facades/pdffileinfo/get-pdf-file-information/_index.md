@@ -2,7 +2,7 @@
 title: 获取PDF文件信息
 type: docs
 weight: 50
-url: zh/net/get-pdf-file-information/
+url: /zh/net/get-pdf-file-information/
 description: 本节解释如何使用Aspose.PDF Facades获取PDF文件信息。
 lastmod: "2021-06-05"
 draft: false

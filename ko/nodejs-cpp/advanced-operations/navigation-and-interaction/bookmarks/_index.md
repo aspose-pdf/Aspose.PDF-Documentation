@@ -3,7 +3,7 @@ title: Node.js에서 PDF의 북마크
 linktitle: PDF의 북마크
 type: docs
 weight: 10
-url: ko/nodejs-cpp/bookmark/
+url: /ko/nodejs-cpp/bookmark/
 description: Node.js 환경에서 PDF 문서에 북마크를 추가하거나 삭제할 수 있습니다.
 lastmod: "2023-11-16"
 sitemap:

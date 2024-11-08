@@ -3,7 +3,7 @@ title: Манипулирование документом PDF в C#
 linktitle: Манипулирование документом PDF
 type: docs
 weight: 20
-url: ru/net/manipulate-pdf-document/
+url: /ru/net/manipulate-pdf-document/
 description: Эта статья содержит информацию о том, как проверить документ PDF на соответствие стандарту PDF A, как работать с оглавлением, как установить срок действия PDF и т.д.
 keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
@@ -88,7 +88,7 @@ sitemap:
 
 {{% /alert %}}
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Следующий фрагмент кода показывает, как проверить PDF документ на соответствие PDF/A-1A.
 Следующий фрагмент кода показывает, как проверить документ PDF на соответствие PDF/A-1A.

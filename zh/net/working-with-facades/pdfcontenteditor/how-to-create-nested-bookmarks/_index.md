@@ -2,7 +2,7 @@
 title: 添加书签到 PDF 文件
 type: docs
 weight: 20
-url: zh/net/how-to-create-nested-bookmarks/
+url: /zh/net/how-to-create-nested-bookmarks/
 description: 本节说明如何使用 PdfContentEditor 类创建嵌套书签。
 lastmod: "2021-06-05"
 draft: false

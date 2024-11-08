@@ -3,7 +3,7 @@ title: Рендеринг WebForms DataGridView в PDF
 linktitle: Рендеринг WebForms DataGridView в PDF
 type: docs
 weight: 20
-url: ru/net/render-webforms-datagridview-to-pdf/
+url: /ru/net/render-webforms-datagridview-to-pdf/
 description: Этот пример показывает, как использовать библиотеку Aspose.PDF для рендеринга WebForm в PDF.
 lastmod: "2021-06-05"
 sitemap:

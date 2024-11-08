@@ -2,7 +2,7 @@
 title: معرض التقارير النموذجية 
 type: docs
 weight: 40
-url: ar/reportingservices/sample-reports-gallery/
+url: /ar/reportingservices/sample-reports-gallery/
 lastmod: "2024-05-05"
 ---
 

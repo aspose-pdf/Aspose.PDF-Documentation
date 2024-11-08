@@ -4,7 +4,7 @@ linktitle: Aspose.PDF pour Python via .NET
 second_title: Aspose.PDF pour Python via .NET
 type: docs
 weight: 40
-url: fr/python-net/
+url: /fr/python-net/
 is_root: true
 lastmod: "2022-10-24"
 description: Apprenez à utiliser Aspose.PDF Python via .NET pour créer des applications de traitement de documents PDF sur n'importe quelle plateforme en utilisant Python. Parcourez les tutoriels, les exemples de code, et plus encore.
@@ -26,20 +26,20 @@ Aspose.PDF est un composant .NET conçu pour permettre aux développeurs de cré
 
 <h2>Chapitres</h2>
 
-- [Quoi de neuf](/pdf/python-net/whatsnew/)
-- [Vue d'ensemble](/pdf/python-net/overview/)
-- [Commencer](/pdf/python-net/get-started/)
-- [Opérations de base](/pdf/python-net/basic-operations/)
-- [Conversion de documents](/pdf/python-net/converting/)
-- [Analyse des documents PDF](/pdf/python-net/parsing/)
-- [Opérations avancées](/pdf/python-net/advanced-operations/)
-- [Vitrines](/pdf/python-net/showcases/)
+- [Quoi de neuf](/pdf/fr/python-net/whatsnew/)
+- [Vue d'ensemble](/pdf/fr/python-net/overview/)
+- [Commencer](/pdf/fr/python-net/get-started/)
+- [Opérations de base](/pdf/fr/python-net/basic-operations/)
+- [Conversion de documents](/pdf/fr/python-net/converting/)
+- [Analyse des documents PDF](/pdf/fr/python-net/parsing/)
+- [Opérations avancées](/pdf/fr/python-net/advanced-operations/)
+- [Vitrines](/pdf/fr/python-net/showcases/)
 - [Notes de version](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 
 <h2>Ressources Aspose.PDF pour Python via .NET</h2>
 
 Vous trouverez ci-dessous les liens vers certaines ressources utiles dont vous pourriez avoir besoin pour accomplir vos tâches.
-- [Fonctionnalités d'Aspose.PDF pour Python via .NET](/pdf/python-net/key-features/)
+- [Fonctionnalités d'Aspose.PDF pour Python via .NET](/pdf/fr/python-net/key-features/)
 - [Notes de version d'Aspose.PDF pour Python via .NET](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 - [Page produit Aspose.PDF pour Python via .NET](https://products.aspose.com/pdf/python-net/)
 - [Télécharger Aspose.PDF pour Python via .NET](https://releases.aspose.com/pdf/pythonnet/)

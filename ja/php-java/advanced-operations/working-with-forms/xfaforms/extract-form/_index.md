@@ -3,7 +3,7 @@ title: XFAフォームの抽出
 linktitle: XFAフォームの抽出
 type: docs
 weight: 30
-url: ja/php-java/extract-form/
+url: /ja/php-java/extract-form/
 description: このセクションでは、Aspose.PDF for PHP via Javaを使用してPDFドキュメントからフォームを抽出する方法について説明します。
 lastmod: "2024-06-05"
 sitemap:

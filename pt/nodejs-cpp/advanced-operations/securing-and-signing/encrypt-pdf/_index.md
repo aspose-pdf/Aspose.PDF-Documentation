@@ -3,7 +3,7 @@ title:  Criptografar PDF em Node.js
 linktitle: Criptografar Arquivo PDF
 type: docs
 weight: 50
-url: pt/nodejs-cpp/encrypt-pdf/
+url: /pt/nodejs-cpp/encrypt-pdf/
 description: Criptografar Arquivo PDF com Aspose.PDF para Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

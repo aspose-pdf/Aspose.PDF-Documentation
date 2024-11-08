@@ -2,7 +2,7 @@
 title: PythonでPDFファイルを連結
 type: docs
 weight: 10
-url: ja/python-java/concatenate-pdf-files-in-python/
+url: /ja/python-java/concatenate-pdf-files-in-python/
 ---
 
 **Aspose.PDF Java for Python**を使用してPDFファイルを連結するには、単に**ConcatenatePdfFiles**クラスを呼び出します。

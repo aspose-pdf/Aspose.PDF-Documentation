@@ -3,7 +3,7 @@ title: Get Resolution and Dimensions of Embedded Images using C++
 linktitle: Get Resolution and Dimensions
 type: docs
 weight: 40
-url: ru/cpp/get-resolution-and-dimensions-of-embedded-images/
+url: /ru/cpp/get-resolution-and-dimensions-of-embedded-images/
 description: Этот раздел показывает детали получения разрешения и размеров встроенных изображений
 lastmod: "2021-12-18"
 ---

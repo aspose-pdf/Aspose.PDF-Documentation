@@ -3,7 +3,7 @@ title: PDFファイルにカーブオブジェクトを追加
 linktitle: カーブを追加
 type: docs
 weight: 30
-url: ja/net/add-curve/
+url: /ja/net/add-curve/
 description: この記事では、Aspose.PDF for .NETを使用してPDFにカーブオブジェクトを作成する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "この記事では、Aspose.PDF for .NETを使用してPDFにカーブオブジェクトを作成する方法について説明します。"
 }
 </script>
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも機能します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも機能します。
 
 ## Curve オブジェクトの追加
 

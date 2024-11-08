@@ -2,7 +2,7 @@
 title: إضافة الإشارات المرجعية إلى ملف PDF
 type: docs
 weight: 20
-url: ar/net/how-to-create-nested-bookmarks/
+url: /ar/net/how-to-create-nested-bookmarks/
 description: يوضح هذا القسم كيفية إنشاء إشارات مرجعية متداخلة باستخدام فئة PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

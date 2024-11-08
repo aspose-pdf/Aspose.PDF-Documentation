@@ -2,7 +2,7 @@
 title: Добавить текст в существующий PDF файл на PHP
 type: docs
 weight: 20
-url: ru/java/add-text-to-an-existing-pdf-file-in-php/
+url: /ru/java/add-text-to-an-existing-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: PDF/3-A 준수 PDF 생성 및 ZUGFeRD 인보이스를 Python에 첨부
 linktitle: PDF에 ZUGFeRD 첨부
 type: docs
 weight: 10
-url: ko/python-net/attach-zugferd/
+url: /ko/python-net/attach-zugferd/
 description: Aspose.PDF for Python via .NET에서 ZUGFeRD가 포함된 PDF 문서를 생성하는 방법을 알아봅니다.
 lastmod: "2024-01-18"
 sitemap:

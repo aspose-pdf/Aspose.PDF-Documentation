@@ -3,7 +3,7 @@ title: 获取、更新和展开书签
 linktitle: 获取、更新和展开书签
 type: docs
 weight: 20
-url: zh/java/get-update-and-expand-bookmark/
+url: /zh/java/get-update-and-expand-bookmark/
 description: 本文描述了如何在 PDF 文件中使用书签。使用我们的 Java 库，您可以从 PDF 文件中获取书签，获取书签的页码，更新 PDF 文档中的书签，以及在查看文档时展开书签。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDFにヘッダーとフッターを追加
 linktitle: PDFにヘッダーとフッターを追加
 type: docs
 weight: 70
-url: ja/cpp/add-headers-and-footers-of-pdf-file/
+url: /ja/cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for C++を使用して、PDFファイルにヘッダーとフッターをTextStampクラスで追加できます。
 lastmod: "2021-12-08"
 sitemap:

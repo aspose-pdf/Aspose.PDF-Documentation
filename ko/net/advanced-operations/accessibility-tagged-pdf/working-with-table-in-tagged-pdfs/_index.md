@@ -3,7 +3,7 @@ title: 태그된 PDF에서 표 사용하기
 linktitle: 태그된 PDF에서 표 사용하기
 type: docs
 weight: 40
-url: ko/net/working-with-table-in-tagged-pdfs/
+url: /ko/net/working-with-table-in-tagged-pdfs/
 description: 이 글은 Aspose.PDF for .NET을 사용하여 태그된 PDF 문서에서 표를 다루는 방법에 대해 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 Aspose.PDF for .NET은 태그된 PDF 문서에서 테이블을 생성할 수 있습니다.
 Aspose.PDF for .NET은 태그가 지정된 PDF 문서에서 테이블을 생성할 수 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 태그가 지정된 PDF 문서에서 테이블을 생성하는 방법을 보여줍니다:
 

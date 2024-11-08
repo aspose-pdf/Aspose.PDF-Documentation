@@ -3,7 +3,7 @@ title: Add Pages in PDF with C++
 linktitle: Add Pages
 type: docs
 weight: 10
-url: ko/cpp/add-pages/
+url: /ko/cpp/add-pages/
 description: 이 문서는 원하는 위치의 PDF 파일에 페이지를 삽입(추가)하는 방법을 가르칩니다. C++를 사용하여 PDF 파일에서 페이지를 이동, 제거(삭제)하는 방법을 알아보세요.
 lastmod: "2021-12-08"
 sitemap:

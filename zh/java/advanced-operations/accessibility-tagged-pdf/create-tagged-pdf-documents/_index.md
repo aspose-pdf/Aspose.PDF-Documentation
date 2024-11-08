@@ -4,7 +4,7 @@ linktitle: 创建带标签的PDF
 type: docs
 weight: 10
 lastmod: "2021-06-05"
-url: zh/java/create-tagged-pdf-documents/
+url: /zh/java/create-tagged-pdf-documents/
 description: 本文解释了如何使用Aspose.PDF for Java以编程方式为带标签的PDF文档创建结构元素。
 sitemap:
     changefreq: "weekly"

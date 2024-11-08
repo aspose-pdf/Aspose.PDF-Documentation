@@ -2,7 +2,7 @@
 title: Вставка пустой страницы в конец PDF файла на Python
 type: docs
 weight: 60
-url: ru/python-java/insert-an-empty-page-at-end-of-pdf-file-in-python/
+url: /ru/python-java/insert-an-empty-page-at-end-of-pdf-file-in-python/
 ---
 
 <ins>Чтобы вставить пустую страницу в конец PDF документа с использованием **Aspose.PDF Java for Python**, просто вызовите класс **InsertEmptyPageAtEndOfFile**.

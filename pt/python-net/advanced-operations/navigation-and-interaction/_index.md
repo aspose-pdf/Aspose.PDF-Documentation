@@ -3,7 +3,7 @@ title: Navegação e Interação em PDF usando Python
 linktitle: Navegação e interação
 type: docs
 weight: 90
-url: pt/python-net/navigation-and-interaction/
+url: /pt/python-net/navigation-and-interaction/
 description: Esta seção descreve os recursos de trabalho com links, ações e marcadores com a Biblioteca Python.
 lastmod: "2023-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 
 
-- [Favoritos](/pdf/python-net/bookmarks/)- publicações grandes geralmente incluem uma estrutura de favoritos que pode ser facilmente visualizada e selecionada no Painel de Favoritos, permitindo que você clique em um favorito para pular para a página ou capítulo que ele representa. O Painel de Favoritos é um elemento sensível ao conteúdo e é visível na barra lateral apenas se o documento PDF aberto contiver uma estrutura de favoritos.
+- [Favoritos](/pdf/pt/python-net/bookmarks/)- publicações grandes geralmente incluem uma estrutura de favoritos que pode ser facilmente visualizada e selecionada no Painel de Favoritos, permitindo que você clique em um favorito para pular para a página ou capítulo que ele representa. O Painel de Favoritos é um elemento sensível ao conteúdo e é visível na barra lateral apenas se o documento PDF aberto contiver uma estrutura de favoritos.
 
 <script type="application/ld+json">
 {

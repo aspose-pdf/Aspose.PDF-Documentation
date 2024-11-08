@@ -3,7 +3,7 @@ title: التصدير إلى PDF في SharePoint
 linktitle: التصدير إلى PDF
 type: docs
 weight: 10
-url: ar/sharepoint/export-to-pdf/
+url: /ar/sharepoint/export-to-pdf/
 lastmod: "2020-12-16"
 description: يمكن لواجهة برمجة تطبيقات PDF SharePoint تصدير القوائم وعناصر القوائم وصفحات الويكي من مكتبات SharePoint إلى تنسيق PDF.
 ---

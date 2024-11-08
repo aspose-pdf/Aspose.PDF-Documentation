@@ -3,7 +3,7 @@ title: Extraer Imágenes de un Archivo PDF
 linktitle: Extraer Imágenes
 type: docs
 weight: 30
-url: es/java/extract-images-from-pdf-file/
+url: /es/java/extract-images-from-pdf-file/
 description: Esta sección muestra cómo extraer imágenes de un archivo PDF usando una biblioteca Java.
 lastmod: "2021-06-05"
 ---

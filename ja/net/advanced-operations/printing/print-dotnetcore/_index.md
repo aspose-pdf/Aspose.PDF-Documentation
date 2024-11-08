@@ -3,7 +3,7 @@ title: .NET CoreでPDFファイルを印刷する方法
 linktitle: .NET CoreでのPDF印刷
 type: docs
 weight: 40
-url: ja/net/print-dotnetcore/
+url: /ja/net/print-dotnetcore/
 keywords: "print pdf .net core"
 description: このページでは、.NET CoreでPDFドキュメントをXPSに変換し、ローカルプリンターのキューにジョブとして追加する方法について説明します。
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "このページでは、PDFドキュメントをXPSに変換し、ローカルプリンターのキューにジョブとして追加する方法について説明します。"
 }
 </script>
-以下のコードスニペットは [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## **.NET CoreでPdfドキュメントを印刷する**
 

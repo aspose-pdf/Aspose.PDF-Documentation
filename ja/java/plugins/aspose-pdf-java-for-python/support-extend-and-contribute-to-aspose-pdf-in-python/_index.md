@@ -2,7 +2,7 @@
 title: Aspose.Pdf を Python でサポート、拡張、貢献する
 type: docs
 weight: 30
-url: ja/java/support-extend-and-contribute-to-aspose-pdf-in-python/
+url: /ja/java/support-extend-and-contribute-to-aspose-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 ## サポート

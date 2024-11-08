@@ -8,7 +8,7 @@ type: docs
 
 weight: 60
 
-url: es/sharepoint/creating-a-secure-pdf/
+url: /es/sharepoint/creating-a-secure-pdf/
 
 lastmod: "2020-12-16"
 

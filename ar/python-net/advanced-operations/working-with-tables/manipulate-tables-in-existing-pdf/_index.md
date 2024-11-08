@@ -3,7 +3,7 @@ title: معالجة الجداول في ملفات PDF الموجودة
 linktitle: معالجة الجداول
 type: docs
 weight: 40
-url: ar/python-net/manipulate-tables-in-existing-pdf/
+url: /ar/python-net/manipulate-tables-in-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

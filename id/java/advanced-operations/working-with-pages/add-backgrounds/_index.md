@@ -3,7 +3,7 @@ title: Tambahkan latar belakang ke PDF
 linktitle: Tambahkan latar belakang
 type: docs
 weight: 110
-url: id/java/add-backgrounds/
+url: /id/java/add-backgrounds/
 descriptions: Tambahkan gambar latar belakang ke file PDF Anda dengan Java. Gunakan objek BackgroundArtifact.
 lastmod: "2021-06-05"
 sitemap:

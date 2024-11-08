@@ -3,7 +3,7 @@ title: استخراج البيانات من جدول في PDF باستخدام C
 linktitle: استخراج البيانات من جدول
 type: docs
 weight: 40
-url: ar/net/extract-data-from-table-in-pdf/
+url: /ar/net/extract-data-from-table-in-pdf/
 description: تعلم كيفية استخراج الجداول من PDF باستخدام Aspose.PDF لـ .NET في C#
 lastmod: "2021-06-05"
 sitemap:
@@ -23,7 +23,7 @@ Aspose.PDF لـ .NET لديه أداة لتسهيل استرجاع الجداو�
 1. `TableList` هي قائمة من [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). للحصول على التاريخ قم بالتنقل خلال `TableList` وتعامل مع [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) و [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)
 2. تحتوي كل [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) على مجموعة [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). يمكنك معالجتها لأغراضك الخاصة.
 
-يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 المثال التالي يظهر استخراج الجدول من جميع الصفحات:
 
@@ -65,7 +65,7 @@ public static void Extract_Table()
 
 لذا، إذا كنت بحاجة لاستخراج الجداول الموجودة في منطقة معينة، يجب أن تعمل مع إحداثيات محددة.
 
-شفرة البرنامج التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+شفرة البرنامج التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 المثال التالي يوضح كيفية استخراج جدول محدد بتعليق مربع:
 
@@ -118,9 +118,9 @@ public static void Extract_Marked_Table()
 ## استخراج بيانات الجدول من ملف PDF وتخزينها في ملف CSV
 
 المثال التالي يوضح كيفية استخراج الجدول وتخزينه كملف CSV.
-لمعرفة كيفية تحويل PDF إلى جدول بيانات Excel يرجى الرجوع إلى مقال [تحويل PDF إلى Excel](/pdf/net/convert-pdf-to-excel/).
+لمعرفة كيفية تحويل PDF إلى جدول بيانات Excel يرجى الرجوع إلى مقال [تحويل PDF إلى Excel](/pdf/ar/net/convert-pdf-to-excel/).
 
-هذا الجزء من الكود يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+هذا الجزء من الكود يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 public static void Extract_Table_Save_CSV()

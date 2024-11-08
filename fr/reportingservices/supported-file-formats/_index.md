@@ -2,7 +2,7 @@
 title: Formats de Fichiers Prise en Charge 
 type: docs
 weight: 20
-url: fr/reportingservices/supported-file-formats/
+url: /fr/reportingservices/supported-file-formats/
 lastmod: "2021-06-05"
 ---
 

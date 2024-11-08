@@ -3,7 +3,7 @@ title: Persyaratan Sistem
 linktitle: Persyaratan Sistem
 type: docs
 weight: 30
-url: id/python-net/system-requirements/
+url: /id/python-net/system-requirements/
 description: Bagian ini mencantumkan sistem operasi yang didukung yang dibutuhkan pengembang untuk bekerja dengan sukses dengan Aspose.PDF untuk Python.
 lastmod: "2022-12-22"
 sitemap:

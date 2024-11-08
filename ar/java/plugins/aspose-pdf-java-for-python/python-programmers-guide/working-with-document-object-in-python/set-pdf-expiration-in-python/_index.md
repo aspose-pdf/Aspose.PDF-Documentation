@@ -2,7 +2,7 @@
 title: ضبط انتهاء صلاحية ملف PDF في بايثون
 type: docs
 weight: 80
-url: ar/java/set-pdf-expiration-in-python/
+url: /ar/java/set-pdf-expiration-in-python/
 lastmod: "2021-06-05"
 ---
 

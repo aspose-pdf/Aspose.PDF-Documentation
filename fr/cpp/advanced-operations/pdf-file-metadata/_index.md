@@ -2,7 +2,7 @@
 title: Métadonnées de fichier PDF
 type: docs
 weight: 20
-url: fr/cpp/pdf-file-metadata/
+url: /fr/cpp/pdf-file-metadata/
 ---
 
 ## Obtenir/Configurer les informations du fichier PDF

@@ -3,7 +3,7 @@ title: Formatação de Documento PDF
 linktitle: Formatação de Documento PDF
 type: docs
 weight: 20
-url: pt/php-java/formatting-pdf-document/
+url: /pt/php-java/formatting-pdf-document/
 description: Formate o Documento PDF com Aspose.PDF para PHP via Java. Use o próximo trecho de código para resolver suas tarefas.
 lastmod: "2024-06-05"
 ---

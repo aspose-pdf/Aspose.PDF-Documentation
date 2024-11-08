@@ -2,7 +2,7 @@
 title: Paramètre de sécurité
 type: docs
 weight: 30
-url: fr/reportingservices/security-setting/
+url: /fr/reportingservices/security-setting/
 lastmod: "2021-06-05"
 ---
 

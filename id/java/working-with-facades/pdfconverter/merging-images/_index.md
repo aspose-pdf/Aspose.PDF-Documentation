@@ -2,7 +2,7 @@
 title: Menggabungkan gambar
 type: docs
 weight: 10
-url: id/java/merge-images/
+url: /id/java/merge-images/
 description: Bagian ini menjelaskan cara menggabungkan gambar, dan dapat disimpan dalam format Tiff.
 lastmod: "2021-07-01"
 draft: false

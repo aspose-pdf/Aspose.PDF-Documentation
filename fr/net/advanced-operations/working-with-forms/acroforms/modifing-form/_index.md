@@ -4,7 +4,7 @@ title: Modifing AcroForm
 linktitle: Modifing AcroForm
 type: docs
 weight: 40
-url: fr/net/modifing-form/
+url: /fr/net/modifing-form/
 description: Modifier le formulaire dans votre fichier PDF avec la bibliothèque Aspose.PDF pour .NET. Vous pouvez ajouter ou supprimer des champs dans le formulaire existant, obtenir et définir la limite de champ, etc.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 }
 </script>
 ```
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Obtenir ou définir la limite de champ
 

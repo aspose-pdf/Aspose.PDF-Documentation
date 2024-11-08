@@ -3,7 +3,7 @@ title: PDF 粘性注释使用 Python
 linktitle: 粘性注释
 type: docs
 weight: 50
-url: zh/python-net/sticky-annotations/
+url: /zh/python-net/sticky-annotations/
 description: 本主题关于粘性注释，作为示例，我们展示文本中的水印注释。
 lastmod: "2023-02-17"
 sitemap:

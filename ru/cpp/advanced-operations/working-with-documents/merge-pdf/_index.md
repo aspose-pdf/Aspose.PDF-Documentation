@@ -3,7 +3,7 @@ title: Объединение PDF с использованием C++
 linktitle: Объединение файлов PDF
 type: docs
 weight: 50
-url: ru/cpp/merge-pdf-documents/
+url: /ru/cpp/merge-pdf-documents/
 description: На этой странице объясняется, как объединить документы PDF в один файл PDF с помощью C++.
 lastmod: "2021-11-11"
 sitemap:

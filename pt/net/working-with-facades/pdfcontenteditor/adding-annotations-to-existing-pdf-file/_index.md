@@ -2,7 +2,7 @@
 title: Adicionando Anotações a um arquivo PDF existente
 type: docs
 weight: 80
-url: pt/net/adding-annotations-to-existing-pdf-file/
+url: /pt/net/adding-annotations-to-existing-pdf-file/
 description: Esta seção explica como adicionar Anotações a um arquivo PDF existente com Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

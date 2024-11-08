@@ -2,7 +2,7 @@
 title: DOC Converter
 type: docs
 weight: 10
-url: ru/net/plugins/doc/
+url: /ru/net/plugins/doc/
 description: Преобразование PDF в Word стало простым с помощью плагина PdfDoc
 lastmod: "2024-01-24"
 ---

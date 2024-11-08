@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: fr/jasperreports/simple-and-affordable-licensing/
+url: /fr/jasperreports/simple-and-affordable-licensing/
 
 lastmod: "2021-06-05"
 
@@ -34,4 +34,4 @@ Veuillez profiter de la version d'évaluation d'Aspose.PDF pour JasperReports : 
 
 
 
-Le mode d'évaluation injecte des filigranes dans les rapports exportés. When you [achetez une licence](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [appliquez simplement la licence](/pdf/jasperreports/licensing/) et le filigrane n'apparaîtra plus dans les documents de sortie.
+Le mode d'évaluation injecte des filigranes dans les rapports exportés. When you [achetez une licence](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [appliquez simplement la licence](/pdf/fr/jasperreports/licensing/) et le filigrane n'apparaîtra plus dans les documents de sortie.

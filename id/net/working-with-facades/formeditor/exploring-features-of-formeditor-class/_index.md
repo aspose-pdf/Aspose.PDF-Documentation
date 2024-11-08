@@ -2,7 +2,7 @@
 title: Menjelajahi fitur kelas FormEditor
 type: docs
 weight: 10
-url: id/net/exploring-features-of-formeditor-class/
+url: /id/net/exploring-features-of-formeditor-class/
 description: Anda dapat mempelajari detail menjelajahi fitur kelas FormEditor dengan pustaka Aspose. PDF untuk .NET
 lastmod: "2021-06-05"
 draft: false
@@ -16,7 +16,7 @@ Dokumen PDF kadang-kadang berisi formulir interaktif, yang dikenal sebagai AcroF
 
 ## Detail implementasi
 
-Pengembang dapat menggunakan [ruang nama Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) tidak hanya untuk menambahkan formulir baru dan bidang formulir dalam dokumen PDF, tetapi juga memungkinkan Anda untuk mengedit bidang yang ada. Lingkup artikel ini terbatas pada fitur-fitur [Aspose.PDF for .NET](/pdf/net/) yang berhubungan dengan pengeditan formulir.
+Pengembang dapat menggunakan [ruang nama Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) tidak hanya untuk menambahkan formulir baru dan bidang formulir dalam dokumen PDF, tetapi juga memungkinkan Anda untuk mengedit bidang yang ada. Lingkup artikel ini terbatas pada fitur-fitur [Aspose.PDF for .NET](/pdf/id/net/) yang berhubungan dengan pengeditan formulir.
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) adalah kelas yang berisi sebagian besar metode dan properti yang memungkinkan pengembang untuk mengedit bidang formulir. Anda tidak hanya dapat menambahkan bidang baru, tetapi juga menghapus bidang yang ada, memindahkan satu bidang ke posisi lain, mengubah nama bidang, atau atribut lainnya. Daftar fitur yang disediakan oleh kelas ini cukup komprehensif, dan sangat mudah untuk bekerja dengan bidang formulir menggunakan kelas ini.
 

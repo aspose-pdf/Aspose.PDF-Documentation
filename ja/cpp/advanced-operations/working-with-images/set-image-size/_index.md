@@ -3,7 +3,7 @@ title: C++を使用して画像サイズを設定
 linktitle: 画像サイズを設定
 type: docs
 weight: 80
-url: ja/cpp/set-image-size/
+url: /ja/cpp/set-image-size/
 description: このセクションでは、C++ライブラリを使用してPDFファイルの画像サイズを設定する方法について説明します。
 lastmod: "2021-12-18"
 ---

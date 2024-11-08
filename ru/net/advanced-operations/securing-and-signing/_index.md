@@ -3,7 +3,7 @@ title: Защита и подпись PDF в C#
 linktitle: Защита и подпись в PDF
 type: docs
 weight: 150
-url: ru/net/securing-and-signing/
+url: /ru/net/securing-and-signing/
 description: Этот раздел описывает возможности использования подписи и защиты вашего PDF документа с помощью C#
 lastmod: "2022-02-17"
 sitemap:
@@ -80,10 +80,10 @@ aliases:
 
 Этот раздел описывает, как безопасно цифровать подписывать документы PDF с использованием C#. Термины электронная подпись и цифровая подпись используются как взаимозаменяемые, но по сути они различаются. В общем случае, цифровая подпись сопровождается печатью, утвержденной [сертификационным органом](https://ru.wikipedia.org/wiki/Центр_сертификации_ключей), и используется для защиты подписанного документа от вмешательства. Вместо этого, электронная подпись часто используется для демонстрации намерения подписать документ.
 
-- [Цифровая подпись файла PDF](/pdf/net/digitally-sign-pdf-file/)
-- [Установка привилегий, шифрование и дешифрование файла PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Извлечение информации о изображении и подписи](/pdf/net/extract-image-and-signature-information/)
-- [Подпись документа PDF с помощью смарт-карты](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Цифровая подпись файла PDF](/pdf/ru/net/digitally-sign-pdf-file/)
+- [Установка привилегий, шифрование и дешифрование файла PDF](/pdf/ru/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Извлечение информации о изображении и подписи](/pdf/ru/net/extract-image-and-signature-information/)
+- [Подпись документа PDF с помощью смарт-карты](/pdf/ru/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

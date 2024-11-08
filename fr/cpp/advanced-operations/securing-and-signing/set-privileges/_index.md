@@ -3,7 +3,7 @@ title: Définir les privilèges, chiffrer et déchiffrer un fichier PDF en utili
 linktitle: Chiffrer et déchiffrer un fichier PDF
 type: docs
 weight: 20
-url: fr/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /fr/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: chiffrer pdf,protéger pdf par mot de passe,déchiffrer pdf,c++
 description: Chiffrer un fichier PDF avec C++ en utilisant différents types et algorithmes de chiffrement. De plus, déchiffrer des fichiers PDF en utilisant le mot de passe du propriétaire.
 lastmod: "2021-12-17"

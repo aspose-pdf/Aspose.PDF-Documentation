@@ -3,7 +3,7 @@ title: Trabajando con Documentos PDF
 linktitle: Trabajando con Documentos
 type: docs
 weight: 10
-url: es/php-java/working-with-documents/
+url: /es/php-java/working-with-documents/
 lastmod: "2024-06-05"
 description: Este artículo describe qué manipulaciones se pueden hacer con el documento con Aspose.PDF para PHP a través de Java.
 sitemap:
@@ -21,9 +21,9 @@ Pero **Aspose.PDF para PHP a través de Java** puede ayudarte a lidiar con la ma
 
 You are able to do the following:
 
-- [Formatting PDF Document](/pdf/php-java/formatting-pdf-document/) - obtener y establecer propiedades del documento, incrustar fuentes y otras operaciones con archivos PDF.  
-- [Manipulate PDF Document](/pdf/php-java/manipulate-pdf-document/) - validar un documento PDF para el estándar PDF A, trabajar con TOC, establecer la fecha de caducidad del PDF, etc.
-- [Optimize PDF](/pdf/php-java/optimize-pdf/) - optimizar el contenido de la página, optimizar el tamaño del archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
-- [Merge PDF](/pdf/php-java/merge-pdf-documents/) - fusionar múltiples archivos PDF en un solo documento PDF usando PHP.
-- [Split PDF](/pdf/php-java/split-document/) - dividir páginas PDF en archivos PDF individuales en tus aplicaciones Java.
-- [Working with Headings](/pdf/php-java/working-with-headings/) - puedes crear numeración en el encabezado de tu documento PDF con Java.
+- [Formatting PDF Document](/pdf/es/php-java/formatting-pdf-document/) - obtener y establecer propiedades del documento, incrustar fuentes y otras operaciones con archivos PDF.  
+- [Manipulate PDF Document](/pdf/es/php-java/manipulate-pdf-document/) - validar un documento PDF para el estándar PDF A, trabajar con TOC, establecer la fecha de caducidad del PDF, etc.
+- [Optimize PDF](/pdf/es/php-java/optimize-pdf/) - optimizar el contenido de la página, optimizar el tamaño del archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
+- [Merge PDF](/pdf/es/php-java/merge-pdf-documents/) - fusionar múltiples archivos PDF en un solo documento PDF usando PHP.
+- [Split PDF](/pdf/es/php-java/split-document/) - dividir páginas PDF en archivos PDF individuales en tus aplicaciones Java.
+- [Working with Headings](/pdf/es/php-java/working-with-headings/) - puedes crear numeración en el encabezado de tu documento PDF con Java.

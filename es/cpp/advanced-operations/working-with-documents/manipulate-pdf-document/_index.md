@@ -3,7 +3,7 @@ title: Manipular Documento PDF
 linktitle: Manipular Documento PDF
 type: docs
 weight: 30
-url: es/cpp/manipulate-pdf-document/
+url: /es/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: Esta sección explica sobre la validación del Documento PDF para el Estándar PDF A, cómo trabajar con TOC, cómo establecer la fecha de caducidad del PDF y cómo determinar el Progreso de la generación del archivo PDF.
 lastmod: "2021-11-11"

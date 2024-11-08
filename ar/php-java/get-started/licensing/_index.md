@@ -3,7 +3,7 @@ title: Licensing and limitations
 linktitle: Licensing and limitations
 type: docs
 weight: 90
-url: ar/php-java/licensing/
+url: /ar/php-java/licensing/
 description: يدعو Aspose.PDF for PHP عبر Java عملاءه للحصول على ترخيص كلاسيكي وترخيص مدفوع الأجر. وكذلك استخدام ترخيص محدود لاستكشاف المنتج بشكل أفضل.
 lastmod: "2024-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Извлечение Вложений из PDF Файла
 type: docs
 weight: 10
-url: ru/java/extract-attachments/
+url: /ru/java/extract-attachments/
 description: Этот раздел объясняет, как извлекать вложения из pdf с помощью класса PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

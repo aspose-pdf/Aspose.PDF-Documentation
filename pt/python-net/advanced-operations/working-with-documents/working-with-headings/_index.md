@@ -2,7 +2,7 @@
 title: Trabalhando com Títulos em PDF
 type: docs
 weight: 40
-url: pt/python-net/working-with-headings/
+url: /pt/python-net/working-with-headings/
 description: Crie numeração no título do seu documento PDF com Python. Aspose.PDF para Python via .NET oferece diferentes tipos de estilos de numeração.
 lastmod: "2023-04-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 Cabeçalhos são partes importantes de qualquer documento. Os escritores sempre tentam tornar os cabeçalhos mais proeminentes e significativos para seus leitores. Se houver mais de um cabeçalho em um documento, um escritor tem várias opções para organizar esses cabeçalhos. Uma das abordagens mais comuns para organizar cabeçalhos é escrever cabeçalhos no Estilo de Numeração.
 
-[Aspose.PDF para Python via .NET](/pdf/python-net/) oferece muitos estilos de numeração predefinidos. Esses estilos de numeração predefinidos são armazenados em uma enumeração, [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). Os valores predefinidos da enumeração NumberingStyle e suas descrições são apresentados abaixo:
+[Aspose.PDF para Python via .NET](/pdf/pt/python-net/) oferece muitos estilos de numeração predefinidos. Esses estilos de numeração predefinidos são armazenados em uma enumeração, [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). Os valores predefinidos da enumeração NumberingStyle e suas descrições são apresentados abaixo:
 
 |**Tipos de Cabeçalhos**|**Descrição**|
 | :- | :- |

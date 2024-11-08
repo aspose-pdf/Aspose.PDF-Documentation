@@ -3,7 +3,7 @@ title: Установить Имя Шрифта По Умолчанию
 linktitle: Установить Имя Шрифта По Умолчанию
 type: docs
 weight: 90
-url: ru/java/set-default-font-name/
+url: /ru/java/set-default-font-name/
 description: Этот раздел описывает, как установить имя шрифта по умолчанию, используя библиотеку Aspose.PDF для Java.
 lastmod: "2021-06-05"
 ---

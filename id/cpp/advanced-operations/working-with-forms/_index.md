@@ -3,7 +3,7 @@ title: Bekerja dengan Formulir menggunakan C++
 linktitle: Bekerja dengan Formulir
 type: docs
 weight: 50
-url: id/cpp/working-with-forms/
+url: /id/cpp/working-with-forms/
 description: Bagian ini menjelaskan cara bekerja dengan AcroForms dan XFA Forms dalam dokumen PDF Anda menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-11-30"
 sitemap:
@@ -21,5 +21,5 @@ Ya, Anda dapat membuat PDF kosong, tambahkan label dan bidang yang Anda inginkan
 Anda akan menemukan jawaban untuk pertanyaan-pertanyaan ini dan banyak lainnya dengan mempelajari bagian selanjutnya dari dokumentasi.
 
 
-- [AcroForms](/pdf/cpp/acroforms/) - membuat formulir, mengisi bidang formulir, mengekstrak data dari formulir, memodifikasi bidang dalam PDF Anda dengan pustaka C++.
-- [XFA Forms](/pdf/cpp/xfa-forms/) - isi bidang XFA, konversi XFA, dapatkan properti bidang XFA.
+- [AcroForms](/pdf/id/cpp/acroforms/) - membuat formulir, mengisi bidang formulir, mengekstrak data dari formulir, memodifikasi bidang dalam PDF Anda dengan pustaka C++.
+- [XFA Forms](/pdf/id/cpp/xfa-forms/) - isi bidang XFA, konversi XFA, dapatkan properti bidang XFA.

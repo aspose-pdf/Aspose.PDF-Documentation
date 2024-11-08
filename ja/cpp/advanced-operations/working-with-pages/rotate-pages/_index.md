@@ -3,7 +3,7 @@ title: C++を使用してPDFページを回転させる
 linktitle: PDFページを回転させる
 type: docs
 weight: 50
-url: ja/cpp/rotate-pages/
+url: /ja/cpp/rotate-pages/
 description: このトピックでは、既存のPDFファイルのページの向きをC++でプログラム的に回転させる方法について説明します。
 lastmod: "2021-12-08"
 sitemap:

@@ -3,7 +3,7 @@ title: Ajouter une pièce jointe au document PDF
 linktitle: Ajouter une pièce jointe au document PDF
 type: docs
 weight: 10
-url: fr/cpp/add-attachment-to-pdf-document/
+url: /fr/cpp/add-attachment-to-pdf-document/
 description: Cette page décrit comment ajouter une pièce jointe à un fichier PDF avec la bibliothèque Aspose.PDF pour C++
 lastmod: "2021-06-05"
 sitemap:

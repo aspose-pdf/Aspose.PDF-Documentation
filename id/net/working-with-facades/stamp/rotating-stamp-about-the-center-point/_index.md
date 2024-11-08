@@ -2,7 +2,7 @@
 title: Memutar stempel di sekitar titik pusat
 type: docs
 weight: 10
-url: id/net/rotating-stamp-about-the-center-point/
+url: /id/net/rotating-stamp-about-the-center-point/
 description: Bagian ini menjelaskan cara memutar stempel di sekitar titik pusat menggunakan Kelas Stamp.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/net/) memungkinkan Anda menambahkan stempel dalam file PDF yang sudah ada. Terkadang, pengguna perlu memutar stempel tersebut. Dalam artikel ini, kita akan melihat cara memutar stempel di sekitar titik pusatnya.
+[Namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/id/net/) memungkinkan Anda menambahkan stempel dalam file PDF yang sudah ada. Terkadang, pengguna perlu memutar stempel tersebut. Dalam artikel ini, kita akan melihat cara memutar stempel di sekitar titik pusatnya.
 
 {{% /alert %}}
 

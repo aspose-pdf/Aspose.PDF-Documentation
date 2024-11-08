@@ -3,7 +3,7 @@
 title: Conversion d'un fichier en PDF via une activité de workflow  
 type: docs  
 weight: 50  
-url: fr/sharepoint/converting-a-file-to-pdf-via-workflow-activity/  
+url: /fr/sharepoint/converting-a-file-to-pdf-via-workflow-activity/  
 lastmod: "2020-12-16"  
 description: PDF SharePoint API peut être utilisé dans un workflow SharePoint qui convertit un document en PDF.  
 

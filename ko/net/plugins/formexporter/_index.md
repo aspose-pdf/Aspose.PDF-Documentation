@@ -2,7 +2,7 @@
 title: Form Exporter
 type: docs
 weight: 50
-url: ko/net/plugins/formexpoter/
+url: /ko/net/plugins/formexpoter/
 description: Aspose.PDF Form Exporter 플러그인을 사용하여 폼 필드 값을 CSV 파일로 내보내는 방법
 lastmod: "2024-01-24"
 draft: false

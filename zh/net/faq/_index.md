@@ -3,7 +3,7 @@ title: FAQ
 linktitle: FAQ
 type: docs
 weight: 140
-url: zh/net/faq/
+url: /zh/net/faq/
 description: 在这里，您可以找到有关 Aspose.PDF for .NET 库的常见问题解答。
 lastmod: "2021-06-05"
 sitemap:

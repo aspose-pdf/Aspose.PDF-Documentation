@@ -3,7 +3,7 @@ title: PDFを画像形式に変換
 linktitle: PDFを画像に変換
 type: docs
 weight: 70
-url: ja/php-java/convert-pdf-to-images-format/
+url: /ja/php-java/convert-pdf-to-images-format/
 lastmod: "2024-05-20"
 description: このトピックでは、Aspose.PDFがPDFをさまざまな画像形式に変換する方法を示します。PDFページを数行のコードでPNG、JPEG、BMP画像に変換します。
 sitemap:

@@ -3,7 +3,7 @@ title: العمل مع القطع الأثرية
 linktitle: العمل مع القطع الأثرية
 type: docs
 weight: 110
-url: ar/java/artifacts/
+url: /ar/java/artifacts/
 description: تصف هذه الصفحة كيفية العمل مع فئة Artifact باستخدام Aspose.PDF لـ Java. تعرض مقتطفات الكود كيفية إضافة صورة خلفية إلى صفحات PDF وكيفية الحصول على كل علامة مائية في الصفحة الأولى من ملف PDF.
 lastmod: "2021-06-05"
 sitemap:

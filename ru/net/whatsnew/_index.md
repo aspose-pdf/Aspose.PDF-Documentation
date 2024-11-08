@@ -3,7 +3,7 @@ title: Что нового
 linktitle: Что нового
 type: docs
 weight: 10
-url: ru/net/whatsnew/
+url: /ru/net/whatsnew/
 description: На этой странице представлены самые популярные новые функции в Aspose.PDF для .NET, которые были внедрены в последних выпусках.
 sitemap:
     changefreq: "monthly"

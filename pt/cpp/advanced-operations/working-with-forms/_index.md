@@ -3,7 +3,7 @@ title: Trabalhando com Formulários usando C++
 linktitle: Trabalhando com Formulários
 type: docs
 weight: 50
-url: pt/cpp/working-with-forms/
+url: /pt/cpp/working-with-forms/
 description: Esta seção explica como trabalhar com AcroForms e XFA Forms em seus documentos PDF com Aspose.PDF para C++.
 lastmod: "2021-11-30"
 sitemap:
@@ -21,5 +21,5 @@ Posso criar um formulário PDF preenchível a partir de um documento existente? 
 
 Você encontrará respostas para essas perguntas e muitas outras aprendendo a próxima seção da documentação.
 
-- [AcroForms](/pdf/cpp/acroforms/) - criar formulário, preencher campo de formulário, extrair dados do formulário, modificar campos em seu PDF com a biblioteca C++.
-- [Formulários XFA](/pdf/cpp/xfa-forms/) - preencher campos XFA, converter XFA, obter propriedades dos campos XFA.
+- [AcroForms](/pdf/pt/cpp/acroforms/) - criar formulário, preencher campo de formulário, extrair dados do formulário, modificar campos em seu PDF com a biblioteca C++.
+- [Formulários XFA](/pdf/pt/cpp/xfa-forms/) - preencher campos XFA, converter XFA, obter propriedades dos campos XFA.

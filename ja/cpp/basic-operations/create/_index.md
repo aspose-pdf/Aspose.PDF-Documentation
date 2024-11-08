@@ -3,7 +3,7 @@ title: C++を使用してPDFドキュメントを作成する
 linktitle: 作成
 type: docs
 weight: 10
-url: ja/cpp/create-document/
+url: /ja/cpp/create-document/
 description: PDFファイルを操作する際の最も一般的で基本的なタスクは、最初から文書を作成することです。Aspose.PDF for C++ライブラリを使用します。
 lastmod: "2021-06-05"
 sitemap:

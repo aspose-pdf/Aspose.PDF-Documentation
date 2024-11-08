@@ -3,7 +3,7 @@ title: PDFページの操作
 linktitle: ページの操作
 type: docs
 weight: 20
-url: ja/java/working-with-pages/
+url: /ja/java/working-with-pages/
 description: Aspose.PDF for Javaを使用すると、PDFファイルにページを追加したり、ヘッダーとフッターを追加したり、透かしを追加したりできます。このセクションでは、このトピックの詳細を説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -24,16 +24,16 @@ PageNumberStampクラスを使用してページ番号を追加します。ド�
 
 次のことが可能です：
 
-- [ページを追加する](/pdf/java/add-pages/) - PDFファイルの任意の位置または末尾にページを追加し、ドキュメントからページを削除します。
-- [ページを移動する](/pdf/java/move-pages/) - ページをあるドキュメントから別のドキュメントへ移動します。
-- [ページプロパティを取得および設定する](/pdf/java/get-and-set-page-properties/) - PDFファイルのページ番号を取得し、ページプロパティを取得し、ページの色を判断する方法を学べます。
-- [ページを削除する](/pdf/java/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
-- [ページサイズを変更する](/pdf/java/change-page-size) - Aspose.PDFライブラリを使用したコードスニペットでPDFページサイズを変更できます。
+- [ページを追加する](/pdf/ja/java/add-pages/) - PDFファイルの任意の位置または末尾にページを追加し、ドキュメントからページを削除します。
+- [ページを移動する](/pdf/ja/java/move-pages/) - ページをあるドキュメントから別のドキュメントへ移動します。
+- [ページプロパティを取得および設定する](/pdf/ja/java/get-and-set-page-properties/) - PDFファイルのページ番号を取得し、ページプロパティを取得し、ページの色を判断する方法を学べます。
+- [ページを削除する](/pdf/ja/java/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
+- [ページサイズを変更する](/pdf/ja/java/change-page-size) - Aspose.PDFライブラリを使用したコードスニペットでPDFページサイズを変更できます。
 
-- [ページを回転する](/pdf/java/rotate-pages/) - 既存のPDFファイル内のページの向きを変更できます。- [ページを分割](/pdf/java/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
-- [ヘッダーおよび/またはフッターを追加](/pdf/java/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
-- [ページをクロップ](/pdf/java/crop-pages/) - 異なるページプロパティを使用してPDFドキュメント内のページをプログラムでクロップできます。
-- [透かしを追加](/pdf/java/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
-- [PDFファイルにページ番号を追加](/pdf/java/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加します。
-- [背景を追加](/pdf/java/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
-- [スタンピング](/pdf/java/stamping/) - ImageStampクラスを使用してPDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
+- [ページを回転する](/pdf/ja/java/rotate-pages/) - 既存のPDFファイル内のページの向きを変更できます。- [ページを分割](/pdf/ja/java/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
+- [ヘッダーおよび/またはフッターを追加](/pdf/ja/java/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
+- [ページをクロップ](/pdf/ja/java/crop-pages/) - 異なるページプロパティを使用してPDFドキュメント内のページをプログラムでクロップできます。
+- [透かしを追加](/pdf/ja/java/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
+- [PDFファイルにページ番号を追加](/pdf/ja/java/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加します。
+- [背景を追加](/pdf/ja/java/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
+- [スタンピング](/pdf/ja/java/stamping/) - ImageStampクラスを使用してPDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。

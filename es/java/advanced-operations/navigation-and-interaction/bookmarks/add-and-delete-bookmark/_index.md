@@ -3,7 +3,7 @@ title: Añadir y Eliminar un Marcador
 linktitle: Añadir y Eliminar un Marcador
 type: docs
 weight: 10
-url: es/java/add-and-delete-bookmark/
+url: /es/java/add-and-delete-bookmark/
 description: Puedes añadir un marcador a un documento PDF con Java. Es posible eliminar todos o algunos marcadores de un documento PDF.
 lastmod: "2021-06-05"
 sitemap:

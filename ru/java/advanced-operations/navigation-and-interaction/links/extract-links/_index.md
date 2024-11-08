@@ -3,7 +3,7 @@ title: Извлечение ссылок из PDF-файла
 linktitle: Извлечение ссылок
 type: docs
 weight: 30
-url: ru/java/extract-links/
+url: /ru/java/extract-links/
 description: Извлечение ссылок из PDF с помощью Java. Эта тема объясняет, как извлечь ссылки с помощью класса AnnotationSelector.
 lastmod: "2021-06-05"
 sitemap:

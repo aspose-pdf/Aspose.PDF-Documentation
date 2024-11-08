@@ -3,7 +3,7 @@ title: Hapus Tabel dari PDF yang Ada
 linktitle: Hapus Tabel
 type: docs
 weight: 50
-url: id/net/remove-tables-from-existing-pdf/
+url: /id/net/remove-tables-from-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -82,7 +82,7 @@ Aspose.PDF untuk NET menawarkan kemampuan untuk memasukkan/membuat Tabel di dala
 
 Untuk menghapus tabel, kita perlu menggunakan kelas [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) untuk mendapatkan tabel di PDF yang ada dan kemudian memanggil [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Menghapus Tabel dari Dokumen PDF
 

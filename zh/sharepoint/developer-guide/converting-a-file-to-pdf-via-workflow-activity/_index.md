@@ -2,7 +2,7 @@
 title: 将文件转换为PDF通过工作流活动
 type: docs
 weight: 50
-url: zh/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
+url: /zh/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
 lastmod: "2020-12-16"
 description: PDF SharePoint API可以在将文档转换为PDF的SharePoint工作流中使用。
 ---

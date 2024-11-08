@@ -2,7 +2,7 @@
 title: تحويل ملف SVG إلى تنسيق PDF في بايثون
 type: docs
 weight: 40
-url: ar/java/convert-svg-file-to-pdf-format-in-python/
+url: /ar/java/convert-svg-file-to-pdf-format-in-python/
 lastmod: "2021-06-05"
 ---
 

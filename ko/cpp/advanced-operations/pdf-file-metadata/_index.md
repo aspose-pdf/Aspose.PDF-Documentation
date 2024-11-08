@@ -2,7 +2,7 @@
 title: PDF 파일 메타데이터
 type: docs
 weight: 20
-url: ko/cpp/pdf-file-metadata/
+url: /ko/cpp/pdf-file-metadata/
 ---
 
 ## PDF 파일 정보 가져오기/설정하기

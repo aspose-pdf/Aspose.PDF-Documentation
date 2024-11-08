@@ -2,7 +2,7 @@
 title: ضبط النص في حقل مربع النص
 type: docs
 weight: 20
-url: ar/net/justify-text-in-a-textbox-field/
+url: /ar/net/justify-text-in-a-textbox-field/
 description: توضح هذه المقالة كيفية ضبط النص في حقل مربع النص باستخدام فئة النموذج.
 lastmod: "2021-06-05"
 draft: false

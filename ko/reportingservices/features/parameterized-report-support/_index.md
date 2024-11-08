@@ -2,7 +2,7 @@
 title: 쉬운 경량 배포
 type: docs
 weight: 40
-url: ko/reportingservices/easy-and-lightweight-deployment/
+url: /ko/reportingservices/easy-and-lightweight-deployment/
 lastmod: "2021-06-05"
 ---
 

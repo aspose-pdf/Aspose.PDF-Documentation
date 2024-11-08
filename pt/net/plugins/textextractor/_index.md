@@ -2,7 +2,7 @@
 title: Extrator de Texto
 type: docs
 weight: 140
-url: pt/net/plugins/textextractor/
+url: /pt/net/plugins/textextractor/
 description: Extrai o conteúdo de texto do documento PDF.
 lastmod: "2024-01-24"
 ---

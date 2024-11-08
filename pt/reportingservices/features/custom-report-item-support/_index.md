@@ -2,7 +2,7 @@
 title: Suporte para Item de Relatório Personalizado
 type: docs
 weight: 30
-url: pt/reportingservices/custom-report-item-support/
+url: /pt/reportingservices/custom-report-item-support/
 lastmod: "2021-06-05"
 ---
 
@@ -14,6 +14,6 @@ Na Especificação RDL para RS2016, RS2017, RS2019, RS2022 e Power BI, quase tod
 - Setas de linha.
 - Nota de rodapé/Nota de fim.
 
-Descubra como usá-los no artigo [Expandir Propriedades de Itens de Relatório](/pdf/reportingservices/expand-report-items-properties/).
+Descubra como usá-los no artigo [Expandir Propriedades de Itens de Relatório](/pdf/pt/reportingservices/expand-report-items-properties/).
 
 {{% /alert %}}

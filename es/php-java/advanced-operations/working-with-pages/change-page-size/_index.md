@@ -3,7 +3,7 @@ title: Cambiar Tamaño de Página de PDF Programáticamente
 linktitle: Cambiar Tamaño de Página de PDF
 type: docs
 weight: 50
-url: es/php-java/change-page-size/
+url: /es/php-java/change-page-size/
 description: Cambiar el tamaño de página de su archivo PDF usando PHP.
 lastmod: "2024-06-05"
 sitemap:

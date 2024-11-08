@@ -3,7 +3,7 @@ title: Gerar PDF a partir de XML
 linktitle: Gerar PDF a partir de XML
 type: docs
 weight: 10
-url: pt/cpp/generate-pdf-from-xml
+url: /pt/cpp/generate-pdf-from-xml
 description: Aspose.PDF para C++ fornece várias maneiras de converter um arquivo XML em um documento PDF exigindo que o arquivo XML de entrada.
 lastmod: "2022-01-31"
 sitemap:

@@ -2,7 +2,7 @@
 title: Justificar Alinhamento de Texto Completo
 type: docs
 weight: 40
-url: pt/reportingservices/justify-fulljustify-text-alignment/
+url: /pt/reportingservices/justify-fulljustify-text-alignment/
 lastmod: "2021-06-05"
 ---
 

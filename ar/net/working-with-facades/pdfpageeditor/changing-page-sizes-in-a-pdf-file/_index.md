@@ -2,7 +2,7 @@
 title: تغيير أحجام الصفحات في ملف PDF
 type: docs
 weight: 30
-url: ar/net/changing-page-sizes-in-a-pdf-file/
+url: /ar/net/changing-page-sizes-in-a-pdf-file/
 description: حاول تعلم كيفية تغيير أحجام الصفحات في ملف PDF باستخدام فئة PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false

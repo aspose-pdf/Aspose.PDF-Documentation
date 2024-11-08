@@ -3,7 +3,7 @@ title: XMLとXSLTを使用してHello World PDFドキュメントを作成する
 linktitle: XMLとXSLTを使用してHello World PDFドキュメントを作成する
 type: docs
 weight: 10
-url: ja/java/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /ja/java/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: Aspose.PDF for Javaは、入力XMLファイルがAspose.PDF XSD Java Schemaに従う必要があることを要求し、XMLファイルをPDFドキュメントに変換する機会を提供します。
 lastmod: "2021-06-05"
 sitemap:

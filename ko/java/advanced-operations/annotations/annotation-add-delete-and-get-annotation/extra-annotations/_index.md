@@ -3,7 +3,7 @@ title: 추가 유형의 PDF 주석 사용
 linktitle: 추가 주석
 type: docs
 weight: 60
-url: ko/java/extra-annotations/
+url: /ko/java/extra-annotations/
 description: 이 섹션에서는 PDF 문서에 추가 유형의 주석을 추가하고, 가져오고, 삭제하는 방법을 설명합니다.
 lastmod: "2021-11-24"
 sitemap:

@@ -3,7 +3,7 @@ title: Aspose.PDF for JavaScriptの主な機能
 linktitle: 主な機能
 type: docs
 weight: 20
-url: ja/javascript-cpp/key-features/
+url: /ja/javascript-cpp/key-features/
 description: Aspose.PDF for JavaScript via C++の一般的な機能を示します。このページでは、サポートされているPDFバージョンと、テキスト、画像、ページなどでできるすべての操作について説明します。
 lastmod: "2022-12-13"
 sitemap:

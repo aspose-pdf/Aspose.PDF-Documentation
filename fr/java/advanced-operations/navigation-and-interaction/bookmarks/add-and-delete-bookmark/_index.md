@@ -3,7 +3,7 @@ title: Ajouter et Supprimer un Signet
 linktitle: Ajouter et Supprimer un Signet
 type: docs
 weight: 10
-url: fr/java/add-and-delete-bookmark/
+url: /fr/java/add-and-delete-bookmark/
 description: Vous pouvez ajouter un signet à un document PDF avec Java. Il est possible de supprimer tous ou certains signets d'un document PDF.
 lastmod: "2021-06-05"
 sitemap:

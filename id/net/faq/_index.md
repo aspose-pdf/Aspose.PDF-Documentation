@@ -3,7 +3,7 @@ title: FAQ
 linktitle: FAQ
 type: docs
 weight: 140
-url: id/net/faq/
+url: /id/net/faq/
 description: Di sini Anda dapat menemukan jawaban atas Pertanyaan yang Sering Diajukan untuk pustaka Aspose.PDF untuk .NET.
 lastmod: "2021-06-05"
 sitemap:

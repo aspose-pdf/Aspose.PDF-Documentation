@@ -3,7 +3,7 @@ title: Trabalhando com Gráficos Vetoriais
 linktitle: Trabalhando com Gráficos Vetoriais
 type: docs
 weight: 120
-url: pt/net/working-with-vector-graphics/
+url: /pt/net/working-with-vector-graphics/
 description: Este artigo descreve as funcionalidades do uso da ferramenta GraphicsAbsorber em C#.
 lastmod: "2024-02-17"
 ---

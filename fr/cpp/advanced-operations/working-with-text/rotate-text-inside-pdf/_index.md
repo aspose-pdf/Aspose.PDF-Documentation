@@ -3,7 +3,7 @@ title: Tourner le texte à l'intérieur du PDF en utilisant C++
 linktitle: Tourner le texte à l'intérieur du PDF
 type: docs
 weight: 50
-url: fr/cpp/rotate-text-inside-pdf/
+url: /fr/cpp/rotate-text-inside-pdf/
 description: Découvrez différentes façons de faire pivoter le texte vers le PDF. Aspose.PDF vous permet de faire pivoter le texte à n'importe quel angle, de faire pivoter un fragment de texte ou un paragraphe entier.
 lastmod: "2021-12-13"
 sitemap:

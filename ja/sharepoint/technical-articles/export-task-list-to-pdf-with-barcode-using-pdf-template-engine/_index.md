@@ -2,7 +2,7 @@
 title: バーコード付きPDFテンプレートエンジンを使用してタスクリストをPDFにエクスポート
 type: docs
 weight: 40
-url: ja/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
+url: /ja/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIは、PDFテンプレートエンジンを使用してタスクリストをバーコード付きでPDFにエクスポートできます。
 ---

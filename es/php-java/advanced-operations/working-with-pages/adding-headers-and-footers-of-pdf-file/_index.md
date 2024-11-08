@@ -3,7 +3,7 @@ title: Agregar Encabezado y Pie de Página en PDF
 linktitle: Agregar Encabezado y Pie de Página en PDF
 type: docs
 weight: 70
-url: es/php-java/add-headers-and-footers-of-pdf-file/
+url: /es/php-java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para PHP a través de Java le permite agregar encabezados y pies de página a su archivo PDF usando la clase TextStamp.
 lastmod: "2024-06-05"
 sitemap:

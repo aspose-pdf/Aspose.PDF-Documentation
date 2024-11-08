@@ -3,7 +3,7 @@ title: Bekerja dengan Tabel dalam PDF Berlabel
 linktitle: Bekerja dengan Tabel dalam PDF Berlabel
 type: docs
 weight: 40
-url: id/java/working-with-table-in-tagged-pdfs/
+url: /id/java/working-with-table-in-tagged-pdfs/
 description: Artikel ini menjelaskan cara bekerja dengan tabel dalam dokumen PDF Berlabel menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 以编程方式旋转PDF页面
 linktitle: 旋转PDF页面
 type: docs
 weight: 60
-url: zh/php-java/rotate-pages/
+url: /zh/php-java/rotate-pages/
 description: 使用Java更改页面方向并使页面内容适应新页面方向。
 lastmod: "2024-06-05"
 sitemap:

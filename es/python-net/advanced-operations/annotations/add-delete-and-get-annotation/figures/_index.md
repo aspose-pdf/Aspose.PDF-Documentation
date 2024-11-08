@@ -3,7 +3,7 @@ title: Añadir Anotaciones de Figuras usando Python
 linktitle: Anotaciones de Figuras
 type: docs
 weight: 30
-url: es/python-net/figures-annotation/
+url: /es/python-net/figures-annotation/
 description: Este artículo describe cómo agregar, obtener y eliminar anotaciones de figuras de su documento PDF con Aspose.PDF para Python a través de .NET
 lastmod: "2023-02-17"
 sitemap:

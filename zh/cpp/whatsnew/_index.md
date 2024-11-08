@@ -3,7 +3,7 @@ title: C++ 的新功能
 linktitle: 新功能
 type: docs
 weight: 10
-url: zh/cpp/whatsnew/
+url: /zh/cpp/whatsnew/
 description: 本页介绍了最近发布的 Aspose.PDF for C++ 中引入的最受欢迎的新功能。
 sitemap:
     changefreq: "monthly"

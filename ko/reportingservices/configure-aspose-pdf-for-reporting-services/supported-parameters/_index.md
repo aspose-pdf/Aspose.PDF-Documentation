@@ -2,7 +2,7 @@
 title: Supported Parameters
 type: docs
 weight: 20
-url: ko/reportingservices/supported-parameters/
+url: /ko/reportingservices/supported-parameters/
 lastmod: "2021-06-05"
 ---
 
@@ -12,13 +12,13 @@ lastmod: "2021-06-05"
 
 **이 섹션에는 다음 주제가 포함됩니다:**
 
-- [페이지 방향](/pdf/reportingservices/page-orientation/)
-- [HTML 형식화](/pdf/reportingservices/html-formatting/)
-- [보안 설정](/pdf/reportingservices/security-setting/)
-- [IsFontEmbedded](/pdf/reportingservices/isfontembedded/)
+- [페이지 방향](/pdf/ko/reportingservices/page-orientation/)
+- [HTML 형식화](/pdf/ko/reportingservices/html-formatting/)
+- [보안 설정](/pdf/ko/reportingservices/security-setting/)
+- [IsFontEmbedded](/pdf/ko/reportingservices/isfontembedded/)
 
-- [페이지 크기](/pdf/reportingservices/pagesize/)
-- [페이지 여백 크기](/pdf/reportingservices/page-margin-size/)
-- [XMP 메타데이터](/pdf/reportingservices/xmp-metadata/)
-- [디버그 정보](/pdf/reportingservices/debug-information/)
-- [PDF_A 적합성](/pdf/reportingservices/pdf_a-conformance/)
+- [페이지 크기](/pdf/ko/reportingservices/pagesize/)
+- [페이지 여백 크기](/pdf/ko/reportingservices/page-margin-size/)
+- [XMP 메타데이터](/pdf/ko/reportingservices/xmp-metadata/)
+- [디버그 정보](/pdf/ko/reportingservices/debug-information/)
+- [PDF_A 적합성](/pdf/ko/reportingservices/pdf_a-conformance/)

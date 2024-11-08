@@ -2,7 +2,7 @@
 title: 合并图片
 type: docs
 weight: 20
-url: zh/net/merge-images/
+url: /zh/net/merge-images/
 description: 本节解释如何合并图像，并可以保存为Tiff格式。
 lastmod: "2021-06-05"
 draft: false

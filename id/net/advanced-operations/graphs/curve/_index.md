@@ -3,7 +3,7 @@ title: Menambahkan Objek Kurva ke Berkas PDF
 linktitle: Tambah Kurva
 type: docs
 weight: 30
-url: id/net/add-curve/
+url: /id/net/add-curve/
 description: Artikel ini menjelaskan bagaimana cara membuat objek kurva pada PDF Anda menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Artikel ini menjelaskan bagaimana cara membuat objek kurva pada PDF Anda menggunakan Aspose.PDF untuk .NET."
 }
 </script>
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan Objek Kurva
 

@@ -3,7 +3,7 @@ title: 툴팁 사용
 linktitle: PDF 툴팁
 type: docs
 weight: 20
-url: ko/java/pdf-tooltip/
+url: /ko/java/pdf-tooltip/
 description: Java와 Aspose.PDF를 사용하여 PDF의 텍스트 조각에 툴팁을 추가하는 방법을 배웁니다.
 lastmod: "2021-06-05"
 sitemap:

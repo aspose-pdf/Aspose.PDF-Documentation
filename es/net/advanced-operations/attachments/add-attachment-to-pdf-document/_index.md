@@ -3,7 +3,7 @@ title: Agregar Adjunto a un documento PDF
 linktitle: Agregar Adjunto a un documento PDF
 type: docs
 weight: 10
-url: es/net/add-attachment-to-pdf-document/
+url: /es/net/add-attachment-to-pdf-document/
 description: Esta página describe cómo agregar un adjunto a un archivo PDF con la biblioteca Aspose.PDF para .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 
 Los adjuntos pueden contener una amplia variedad de información y pueden ser de varios tipos de archivos. Este artículo explica cómo agregar un adjunto a un archivo PDF.
 
-El siguiente fragmento de código también funciona con la nueva interfaz gráfica [Aspose.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la nueva interfaz gráfica [Aspose.Drawing](/pdf/es/net/drawing/).
 
 1. Crea un nuevo proyecto en C#.
 1. Agrega una referencia a Aspose.PDF DLL.

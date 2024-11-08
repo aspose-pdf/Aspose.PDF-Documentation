@@ -3,7 +3,7 @@ title: 使用 Facades
 linktitle: 使用 Facades
 type: docs
 weight: 80
-url: zh/python-java/working-with-facades/
+url: /zh/python-java/working-with-facades/
 description: 本节解释如何使用 Facades - 一套用于流行的 PDF 操作的工具集。
 lastmod: "2023-06-15"
 sitemap:

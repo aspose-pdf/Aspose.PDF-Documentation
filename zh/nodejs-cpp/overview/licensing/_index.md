@@ -3,7 +3,7 @@ title: Aspose.PDF for Node.js via C++ 的许可证
 linktitle: 许可和限制
 type: docs
 weight: 50
-url: zh/nodejs-cpp/licensing/
+url: /zh/nodejs-cpp/licensing/
 description: Aspose.PDF for Node.js 邀请客户获取经典许可证。
 lastmod: "2023-11-16"
 sitemap:

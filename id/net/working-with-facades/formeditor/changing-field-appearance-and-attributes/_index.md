@@ -2,7 +2,7 @@
 title: Penampilan dan atribut bidang
 type: docs
 weight: 20
-url: id/net/changing-field-appearance-and-attributes/
+url: /id/net/changing-field-appearance-and-attributes/
 description: Bagian ini menjelaskan bagaimana Anda dapat mengubah penampilan dan atribut bidang dengan Kelas FormEditor.
 lastmod: "2021-06-05"
 draft: false

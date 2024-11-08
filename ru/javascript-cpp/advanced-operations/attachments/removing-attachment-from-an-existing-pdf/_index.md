@@ -3,7 +3,7 @@ title: Удаление вложения из PDF с помощью JavaScript
 linktitle: Удаление вложения из существующего PDF
 type: docs
 weight: 10
-url: ru/javascript-cpp/removing-attachment-from-an-existing-pdf/
+url: /ru/javascript-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF может удалять вложения из ваших PDF документов. Используйте JavaScript Web toolkit для удаления вложений в файлах PDF с помощью Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: استخراج الصور من ملف PDF والتعرف على الباركود
 type: docs
 weight: 20
-url: ar/net/extract-images-from-pdf-and-recognize-barcodes/
+url: /ar/net/extract-images-from-pdf-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

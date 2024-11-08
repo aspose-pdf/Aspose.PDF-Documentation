@@ -3,7 +3,7 @@ title: Determinar Quebra de Linha
 linktitle: Determinar Quebra de Linha
 type: docs
 weight: 70
-url: pt/python-net/determine-line-break/
+url: /pt/python-net/determine-line-break/
 description: Saiba mais sobre como determinar uma quebra de linha de TextFragment multi-linha usando Python
 lastmod: "2024-02-17"
 sitemap:

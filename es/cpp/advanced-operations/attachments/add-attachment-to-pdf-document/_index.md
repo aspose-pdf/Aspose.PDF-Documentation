@@ -3,7 +3,7 @@ title: Adding Attachment to PDF document
 linktitle: Adding Attachment to PDF document 
 type: docs
 weight: 10
-url: es/cpp/add-attachment-to-pdf-document/
+url: /es/cpp/add-attachment-to-pdf-document/
 description: Esta página describe cómo agregar un adjunto a un archivo PDF con la biblioteca Aspose.PDF para C++
 lastmod: "2021-06-05"
 sitemap:

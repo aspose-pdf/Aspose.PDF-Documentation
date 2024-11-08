@@ -3,7 +3,7 @@ title: Поиск и Извлечение Изображений из PDF Док
 linktitle: Поиск и Извлечение Изображений
 type: docs
 weight: 60
-url: ru/cpp/search-and-get-images-from-pdf-document/
+url: /ru/cpp/search-and-get-images-from-pdf-document/
 description: Этот раздел объясняет, как искать и извлекать изображения из PDF документа с библиотекой Aspose.PDF.
 lastmod: "2021-12-18"
 ---

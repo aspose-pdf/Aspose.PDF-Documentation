@@ -2,7 +2,7 @@
 title: Alterar Senha de Arquivo PDF
 type: docs
 weight: 40
-url: pt/java/change-password/
+url: /pt/java/change-password/
 description: Este tópico explica como alterar a senha de um arquivo PDF usando a classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

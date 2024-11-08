@@ -3,7 +3,7 @@ title: Annotations collantes PDF utilisant Python
 linktitle: Annotation collante
 type: docs
 weight: 50
-url: fr/python-net/sticky-annotations/
+url: /fr/python-net/sticky-annotations/
 description: Ce sujet concerne les annotations collantes, en tant qu'exemple nous montrons l'Annotation Filigrane dans le texte.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 向PDF添加页码使用C++
 linktitle: 添加页码
 type: docs
 weight: 100
-url: zh/cpp/add-page-number/
+url: /zh/cpp/add-page-number/
 description: Aspose.PDF for C++允许您使用PageNumber Stamp类向PDF文件添加页码戳。
 lastmod: "2021-12-03"
 sitemap:

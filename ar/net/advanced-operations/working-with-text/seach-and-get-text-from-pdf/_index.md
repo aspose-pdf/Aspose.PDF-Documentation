@@ -3,7 +3,7 @@ title: البحث والحصول على نص من صفحات PDF
 linktitle: البحث والحصول على نص
 type: docs
 weight: 60
-url: ar/net/search-and-get-text-from-pdf/
+url: /ar/net/search-and-get-text-from-pdf/
 description: يشرح هذا المقال كيفية استخدام الأدوات المختلفة للبحث والحصول على نص من Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "يشرح هذا المقال كيفية استخدام الأدوات المختلفة للبحث والحصول على نص من Aspose.PDF لـ .NET."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## البحث والحصول على نص من جميع صفحات مستند PDF
 

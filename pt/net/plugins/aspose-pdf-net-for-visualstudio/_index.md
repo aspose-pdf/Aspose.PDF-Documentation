@@ -2,7 +2,7 @@
 title: Aspose.PDF .NET for VisualStudio
 type: docs
 weight: 340
-url: pt/net/aspose-pdf-net-for-visualstudio/
+url: /pt/net/aspose-pdf-net-for-visualstudio/
 description: Aprenda a usar os plugins Aspose.PDF para Visual Studio
 lastmod: "2021-06-05"
 sitemap:
@@ -12,5 +12,5 @@ sitemap:
 
 Esta seção contém os seguintes tópicos:
 
-- [Controle de Exportação GridView para PDF do Visual Studio](/pdf/net/visual-studio-export-gridview-to-pdf-control/)
-- [Plugin Aspose.PDF para Visual Studio](/pdf/net/aspose-pdf-visual-studio-plugin/)
+- [Controle de Exportação GridView para PDF do Visual Studio](/pdf/pt/net/visual-studio-export-gridview-to-pdf-control/)
+- [Plugin Aspose.PDF para Visual Studio](/pdf/pt/net/aspose-pdf-visual-studio-plugin/)

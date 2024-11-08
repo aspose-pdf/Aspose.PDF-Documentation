@@ -3,7 +3,7 @@ title: PDFファイルから画像を削除
 linktitle: 画像を削除
 type: docs
 weight: 20
-url: ja/java/delete-images-from-pdf-file/
+url: /ja/java/delete-images-from-pdf-file/
 description: このセクションでは、Aspose.PDF for Javaを使用してPDFファイルから画像を削除する方法を説明します。
 lastmod: "2021-06-05"
 ---

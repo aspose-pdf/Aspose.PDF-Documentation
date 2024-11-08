@@ -2,7 +2,7 @@
 title: استخدام مولد مستندات PDF بنقرة واحدة
 type: docs
 weight: 10
-url: ar/net/using-oneclick-pdf-document-generator/
+url: /ar/net/using-oneclick-pdf-document-generator/
 description: تعلم كيفية استخدام مولد مستندات PDF بنقرة واحدة في Microsoft Dynamics
 lastmod: "2021-06-05"
 sitemap:

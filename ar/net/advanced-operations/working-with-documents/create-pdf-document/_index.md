@@ -3,7 +3,7 @@ title: كيفية إنشاء ملف PDF باستخدام C#
 linktitle: إنشاء مستند PDF
 type: docs
 weight: 10
-url: ar/net/create-pdf-document/
+url: /ar/net/create-pdf-document/
 description: إنشاء وتنسيق مستند PDF باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 نحن دائمًا نبحث عن طريقة لإنشاء مستندات PDF والعمل معها في مشاريع C# بشكل أكثر دقة وفعالية. وجود وظائف سهلة الاستخدام من مكتبة يتيح لنا تتبع المزيد من العمل، وأقل على التفاصيل التي تستغرق وقتًا طويلاً في محاولة لإنشاء PDFs، سواء في .NET.
 
-الشفرة التالية تعمل أيضا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إنشاء (أو توليد) مستند PDF باستخدام لغة C#
 

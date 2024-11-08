@@ -3,7 +3,7 @@ title: Merge PDF programmatically
 linktitle: Merge PDF files
 type: docs
 weight: 50
-url: fr/java/merge-pdf-documents/
+url: /fr/java/merge-pdf-documents/
 description: Cette page explique comment fusionner des documents PDF en un seul fichier PDF avec Java.
 lastmod: "2021-06-05"
 ---

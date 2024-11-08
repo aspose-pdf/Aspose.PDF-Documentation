@@ -3,7 +3,7 @@ title: Añadir objeto de arco al archivo PDF
 linktitle: Añadir Arco
 type: docs
 weight: 10
-url: es/cpp/add-arc/
+url: /es/cpp/add-arc/
 description: Este artículo explica cómo crear un objeto de arco en su PDF utilizando Aspose.PDF para C++.
 lastmod: "2021-12-18"
 sitemap:

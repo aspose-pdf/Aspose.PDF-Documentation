@@ -3,7 +3,7 @@ title: تعيين لون الخلفية لملف PDF باستخدام JavaScript
 linktitle: تعيين لون الخلفية
 type: docs
 weight: 80
-url: ar/javascript-cpp/set-background-color/
+url: /ar/javascript-cpp/set-background-color/
 description: تعيين لون الخلفية لملف PDF الخاص بك باستخدام JavaScript عبر C++.
 lastmod: "2023-02-17"
 sitemap:

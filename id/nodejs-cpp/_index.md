@@ -4,7 +4,7 @@ linktitle: Aspose.PDF untuk Node.js
 second_title: Aspose.PDF untuk Node.js via C++
 type: docs
 weight: 70
-url: id/nodejs-cpp/
+url: /id/nodejs-cpp/
 is_root: true
 lastmod: "2023-11-16"
 description: Pelajari cara menggunakan Aspose.PDF untuk Node.js untuk membuat aplikasi pemrosesan dokumen PDF di lingkungan Node.js.
@@ -26,17 +26,17 @@ Aspose.PDF untuk Node.js memungkinkan pengembang memanipulasi file PDF secara la
 
 ## Bab
 
-- [Apa yang baru](/pdf/nodejs-cpp/whatsnew/)
-- [Ikhtisar](/pdf/nodejs-cpp/overview/)
-- [Memulai](/pdf/nodejs-cpp/get-started/)
-- [Operasi dasar](/pdf/nodejs-cpp/basic-operations/)
+- [Apa yang baru](/pdf/id/nodejs-cpp/whatsnew/)
+- [Ikhtisar](/pdf/id/nodejs-cpp/overview/)
+- [Memulai](/pdf/id/nodejs-cpp/get-started/)
+- [Operasi dasar](/pdf/id/nodejs-cpp/basic-operations/)
 - [Catatan Rilis](https://releases.aspose.com/pdf/nodejscpp/release-notes/)
 
 ## Sumber Daya Aspose.PDF untuk Node.js
 
 Berikut adalah tautan ke beberapa sumber daya berguna yang mungkin Anda perlukan untuk menyelesaikan tugas Anda.
 
-- [Fitur Aspose.PDF untuk Node.js](/pdf/nodejs-cpp/key-features/)
+- [Fitur Aspose.PDF untuk Node.js](/pdf/id/nodejs-cpp/key-features/)
 - [Catatan Rilis Aspose.PDF untuk Node.js](https://releases.aspose.com/pdf/nodejscpp/release-notes/)
 - [Unduh Aspose.PDF untuk Node.js](https://releases.aspose.com/pdf/nodejscpp/)
 - [Halaman Produk Aspose.PDF untuk Node.js](https://products.aspose.com/pdf/nodejs-cpp/)

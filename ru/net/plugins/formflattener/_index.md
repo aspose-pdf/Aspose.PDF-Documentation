@@ -2,7 +2,7 @@
 title: Form Exporter
 type: docs
 weight: 60
-url: ru/net/plugins/formflattener/
+url: /ru/net/plugins/formflattener/
 description: Как сгладить поля форм в файлах PDF с помощью плагина Aspose.PDF FormFlattener
 lastmod: "2024-01-24"
 ---

@@ -2,7 +2,7 @@
 title: Obter uma Página Específica em um Arquivo PDF em Ruby
 type: docs
 weight: 30
-url: pt/java/get-a-particular-page-in-a-pdf-file-in-ruby/
+url: /pt/java/get-a-particular-page-in-a-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

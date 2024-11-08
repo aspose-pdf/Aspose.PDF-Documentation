@@ -3,7 +3,7 @@ title: PDF 문서 열기
 linktitle: 열기
 type: docs
 weight: 20
-url: ko/php-java/open-pdf-document/
+url: /ko/php-java/open-pdf-document/
 description: Aspose.PDF for PHP via Java를 사용하여 PDF 파일을 여는 방법을 배우십시오.
 lastmod: "2024-06-05"
 sitemap:

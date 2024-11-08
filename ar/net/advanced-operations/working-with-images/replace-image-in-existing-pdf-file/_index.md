@@ -3,7 +3,7 @@ title: استبدال الصورة في ملف PDF موجود
 linktitle: استبدال الصورة
 type: docs
 weight: 70
-url: ar/net/replace-image-in-existing-pdf-file/
+url: /ar/net/replace-image-in-existing-pdf-file/
 description: تصف هذه القسم كيفية استبدال الصورة في ملف PDF موجود باستخدام مكتبة C#.
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-يعمل الجزء التالي من الشيفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الشيفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 تسمح طريقة [الاستبدال](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) في مجموعة الصور بتبديل صورة في ملف PDF موجود.
 

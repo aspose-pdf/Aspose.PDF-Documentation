@@ -3,7 +3,7 @@ title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: zh/java/annotations/
+url: /zh/java/annotations/
 description: 本节展示如何使用Aspose.PDF库在PDF文件中使用各种注释。了解如何用Java绘制、打开或添加注释。
 lastmod: "2021-11-26"    
 sitemap:
@@ -22,6 +22,6 @@ PDF查看器通常允许创建和编辑各种类型的注释，例如文本高�
 
 您可以执行以下操作：
 
-- [注释概述](/pdf/java/overview-of-annotations/) - 了解 PDF 规范定义了哪些类型的注释，以及 Aspose.PDF 支持哪些注释。
-- [添加、删除和获取注释](/pdf/java/add-delete-and-get-annotation/) - 本节解释如何处理所有允许的注释类型。
-- [使用 XFDF 格式导入和导出注释](/pdf/java/import-export-xfdf/) - Aspose.PDF 库提供了将注释数据导入和导出到 XFDF 文件的方法。
+- [注释概述](/pdf/zh/java/overview-of-annotations/) - 了解 PDF 规范定义了哪些类型的注释，以及 Aspose.PDF 支持哪些注释。
+- [添加、删除和获取注释](/pdf/zh/java/add-delete-and-get-annotation/) - 本节解释如何处理所有允许的注释类型。
+- [使用 XFDF 格式导入和导出注释](/pdf/zh/java/import-export-xfdf/) - Aspose.PDF 库提供了将注释数据导入和导出到 XFDF 文件的方法。

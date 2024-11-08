@@ -2,7 +2,7 @@
 title: パラメーターを設定する
 type: docs
 weight: 10
-url: ja/reportingservices/setting-parameters/
+url: /ja/reportingservices/setting-parameters/
 lastmod: "2021-06-05"
 ---
 

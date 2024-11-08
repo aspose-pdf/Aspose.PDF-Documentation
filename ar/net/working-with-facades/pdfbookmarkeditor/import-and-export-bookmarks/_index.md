@@ -2,7 +2,7 @@
 title: استيراد وتصدير العلامات المرجعية
 type: docs
 weight: 20
-url: ar/net/import-and-export-bookmarks/
+url: /ar/net/import-and-export-bookmarks/
 description: يوضح هذا القسم كيفية استيراد وتصدير العلامات المرجعية باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Aspose.PDF for Java Support
 linktitle: Technical Support
 type: docs
 weight: 100
-url: ko/java/technical-support/
+url: /ko/java/technical-support/
 description: 이 페이지는 Aspose.PDF for Java를 사용하여 작업을 빠르고 품질 있게 해결하기 위한 권장 사항을 제공합니다.
 lastmod: "2021-06-05"
 sitemap:

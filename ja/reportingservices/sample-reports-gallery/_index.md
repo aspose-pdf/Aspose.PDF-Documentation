@@ -2,7 +2,7 @@
 title: サンプルレポートギャラリー
 type: docs
 weight: 40
-url: ja/reportingservices/sample-reports-gallery/
+url: /ja/reportingservices/sample-reports-gallery/
 lastmod: "2024-05-05"
 ---
 

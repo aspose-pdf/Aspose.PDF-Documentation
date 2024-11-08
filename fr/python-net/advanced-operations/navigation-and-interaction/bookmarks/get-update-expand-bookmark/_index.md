@@ -3,7 +3,7 @@ title: Obtenir, Mettre à Jour et Développer un Signet en utilisant Python
 linktitle: Obtenir, Mettre à Jour et Développer un Signet
 type: docs
 weight: 20
-url: fr/python-net/get-update-and-expand-bookmark/
+url: /fr/python-net/get-update-and-expand-bookmark/
 description: Cet article décrit comment utiliser les signets dans un fichier PDF avec notre bibliothèque Aspose.PDF pour Python.
 lastmod: "2023-02-17"
 sitemap:

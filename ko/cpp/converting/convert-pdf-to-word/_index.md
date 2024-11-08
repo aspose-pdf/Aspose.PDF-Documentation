@@ -3,7 +3,7 @@ title: C++에서 PDF를 Microsoft Word 문서로 변환
 linktitle: PDF를 Word로 변환
 type: docs
 weight: 10
-url: ko/cpp/convert-pdf-to-word/
+url: /ko/cpp/convert-pdf-to-word/
 lastmod: "2021-11-19"
 description: Aspose.PDF for C++ 라이브러리를 사용하면 C++로 PDF를 Word 형식으로 쉽게 변환하고 완전한 제어가 가능합니다. 이 형식에는 DOC 및 DOCX가 포함됩니다. PDF를 Microsoft Word 문서로 변환하는 방법을 더 알아보세요.
 sitemap:

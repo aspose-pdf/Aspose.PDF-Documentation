@@ -3,7 +3,7 @@ title: العمليات الأساسية مع PDF بواسطة Aspose.PDF لـ N
 linktitle: العمليات الأساسية
 type: docs
 weight: 40
-url: ar/nodejs-cpp/basic-operations/
+url: /ar/nodejs-cpp/basic-operations/
 lastmod: "2023-11-16"
 description: يصف قسم العمليات الأساسية إمكانيات أبسط العمليات مع مستندات PDF باستخدام Aspose.PDF لـ Node.js عبر C++.
 sitemap:
@@ -13,6 +13,6 @@ sitemap:
 
 **قسم العمليات الأساسية** يصف أول وأبسط العمليات مع مستندات PDF في Aspose.PDF لـ Node.js عبر C++:
 
-- [إصلاح PDF](/pdf/nodejs-cpp/repair-pdf/)
-- [تحسين ملف PDF](/pdf/nodejs-cpp/optimize-pdf/)
-- [تحسين موارد PDF](/pdf/nodejs-cpp/optimize-pdf-resources/)
+- [إصلاح PDF](/pdf/ar/nodejs-cpp/repair-pdf/)
+- [تحسين ملف PDF](/pdf/ar/nodejs-cpp/optimize-pdf/)
+- [تحسين موارد PDF](/pdf/ar/nodejs-cpp/optimize-pdf-resources/)

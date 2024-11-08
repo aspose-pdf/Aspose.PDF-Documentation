@@ -3,7 +3,7 @@ title: PDFでの画像操作についてのC#使用方法
 linktitle: 画像操作
 type: docs
 weight: 40
-url: ja/net/working-with-images/
+url: /ja/net/working-with-images/
 description: このセクションでは、C# ライブラリを使用して PDF ファイルで画像を操作する機能について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -87,17 +87,17 @@ C#ライブラリを使用することも、レポートにチャートを挿入
 以下の操作が可能です：
 以下の操作が可能です：
 
-- [既存のPDFファイルに画像を追加する](/pdf/net/add-image-to-existing-pdf-file/) - PDFドキュメントに単一の画像とその参照を追加し、その後品質を管理します。
-- [PDFファイルから画像を削除する](/pdf/net/delete-images-from-pdf-file/) - PDFファイルから画像を削除するためのコードスニペットを確認します。
-- [PDFファイルから画像を抽出する](/pdf/net/extract-images-from-pdf-file/) - Imagesコレクションを使用してPDFファイルから画像を抽出します。
-- [埋め込まれた画像の解像度と寸法を取得する](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - Aspose.PDF名前空間内のオペレータークラスを使用して、解像度と寸法情報を取得する機能を提供します。
-- [画像配置の操作](/pdf/net/working-with-image-placement/) - PDFドキュメントで画像の解像度と位置を取得することが可能です。
-- [PDFドキュメントから画像を検索して取得する](/pdf/net/search-and-get-images-from-pdf-document/) - 個々のページから画像を取得し、C#を使用して全ページの画像の中から検索することができます。
-- [PDFドキュメントから画像を検索して取得する](/pdf/net/search-and-get-images-from-pdf-document/) - 個々のページから画像を取得し、すべてのページの画像を検索することができます。
-- [既存のPDFファイル内の画像を置換する](/pdf/net/replace-image-in-existing-pdf-file/) - このコードスニペットを確認してください。PDFファイル内の画像を置換する方法を示しています。
-- [画像サイズの設定](/pdf/net/set-image-size/) - C# ライブラリを使用して画像のサイズを設定できます。
-- [デフォルトフォント名の設定](/pdf/net/set-default-font-name/) - 変換プロセスのデフォルトフォント名を設定します。
-- [PDFドキュメントからサムネイル画像を生成する](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - 次の記事では、最初にAcrobat SDKを使用し、次にAspose.PDFを使用してPDFドキュメントからサムネイル画像を生成する方法を示しています。
+- [既存のPDFファイルに画像を追加する](/pdf/ja/net/add-image-to-existing-pdf-file/) - PDFドキュメントに単一の画像とその参照を追加し、その後品質を管理します。
+- [PDFファイルから画像を削除する](/pdf/ja/net/delete-images-from-pdf-file/) - PDFファイルから画像を削除するためのコードスニペットを確認します。
+- [PDFファイルから画像を抽出する](/pdf/ja/net/extract-images-from-pdf-file/) - Imagesコレクションを使用してPDFファイルから画像を抽出します。
+- [埋め込まれた画像の解像度と寸法を取得する](/pdf/ja/net/get-resolution-and-dimensions-of-embedded-images/) - Aspose.PDF名前空間内のオペレータークラスを使用して、解像度と寸法情報を取得する機能を提供します。
+- [画像配置の操作](/pdf/ja/net/working-with-image-placement/) - PDFドキュメントで画像の解像度と位置を取得することが可能です。
+- [PDFドキュメントから画像を検索して取得する](/pdf/ja/net/search-and-get-images-from-pdf-document/) - 個々のページから画像を取得し、C#を使用して全ページの画像の中から検索することができます。
+- [PDFドキュメントから画像を検索して取得する](/pdf/ja/net/search-and-get-images-from-pdf-document/) - 個々のページから画像を取得し、すべてのページの画像を検索することができます。
+- [既存のPDFファイル内の画像を置換する](/pdf/ja/net/replace-image-in-existing-pdf-file/) - このコードスニペットを確認してください。PDFファイル内の画像を置換する方法を示しています。
+- [画像サイズの設定](/pdf/ja/net/set-image-size/) - C# ライブラリを使用して画像のサイズを設定できます。
+- [デフォルトフォント名の設定](/pdf/ja/net/set-default-font-name/) - 変換プロセスのデフォルトフォント名を設定します。
+- [PDFドキュメントからサムネイル画像を生成する](/pdf/ja/net/generate-thumbnail-images-from-pdf-documents/) - 次の記事では、最初にAcrobat SDKを使用し、次にAspose.PDFを使用してPDFドキュメントからサムネイル画像を生成する方法を示しています。
 - DICOM画像のサポート - Aspose.PDF for .NETは、特別な医療用グラフィック標準の画像をサポートしています。
 - DICOM画像のサポート - Aspose.PDF for .NETは、特別な医療用グラフィック標準の画像をサポートしています。
 

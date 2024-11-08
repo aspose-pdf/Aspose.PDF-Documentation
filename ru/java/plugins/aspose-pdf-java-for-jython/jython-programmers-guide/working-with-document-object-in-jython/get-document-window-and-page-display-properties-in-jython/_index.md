@@ -2,7 +2,7 @@
 title: Получить свойства окна документа и отображения страницы в Jython
 type: docs
 weight: 20
-url: ru/java/get-document-window-and-page-display-properties-in-jython/
+url: /ru/java/get-document-window-and-page-display-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

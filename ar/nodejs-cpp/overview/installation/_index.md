@@ -3,7 +3,7 @@ title: تثبيت Aspose.PDF لـ Node.js عبر C++
 linktitle: التثبيت
 type: docs
 weight: 40
-url: ar/nodejs-cpp/installation/
+url: /ar/nodejs-cpp/installation/
 description: يوضح هذا القسم وصف المنتج وتعليمات تثبيت Aspose.PDF لـ Node.js عبر C++.
 lastmod: "2023-11-16"
 sitemap:

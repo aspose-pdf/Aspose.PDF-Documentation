@@ -3,7 +3,7 @@ title: Rotation des pages PDF par programmation
 linktitle: Rotation des pages PDF
 type: docs
 weight: 60
-url: fr/java/rotate-pages/
+url: /fr/java/rotate-pages/
 description: Changer l'orientation de la page et adapter le contenu de la page à la nouvelle orientation de la page en utilisant Java.
 lastmod: "2021-06-05"
 sitemap:

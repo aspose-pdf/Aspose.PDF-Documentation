@@ -2,7 +2,7 @@
 title: PHP에서 PDF 파일 정보 가져오기
 type: docs
 weight: 40
-url: ko/java/get-pdf-file-information-in-php/
+url: /ko/java/get-pdf-file-information-in-php/
 lastmod: "2021-06-05"
 ---
 

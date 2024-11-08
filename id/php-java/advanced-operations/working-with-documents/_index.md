@@ -3,7 +3,7 @@ title: Bekerja dengan Dokumen PDF
 linktitle: Bekerja dengan Dokumen
 type: docs
 weight: 10
-url: id/php-java/working-with-documents/
+url: /id/php-java/working-with-documents/
 lastmod: "2024-06-05"
 description: Artikel ini menjelaskan kepada Anda manipulasi apa yang dapat dilakukan dengan dokumen menggunakan Aspose.PDF untuk PHP via Java.
 sitemap:
@@ -21,9 +21,9 @@ Namun, **Aspose.PDF untuk PHP via Java** dapat membantu Anda mengatasi sebagian 
 
 Anda dapat melakukan hal berikut:
 
-- [Memformat Dokumen PDF](/pdf/php-java/formatting-pdf-document/) - mendapatkan dan mengatur properti dokumen, menyematkan font, dan operasi lainnya dengan file PDF.
-- [Memanipulasi Dokumen PDF](/pdf/php-java/manipulate-pdf-document/) - memvalidasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lain-lain.
-- [Optimalkan PDF](/pdf/php-java/optimize-pdf/) - mengoptimalkan konten halaman, mengoptimalkan ukuran file, menghapus objek yang tidak digunakan, mengompres semua gambar untuk optimalisasi dokumen yang berhasil.
-- [Gabungkan PDF](/pdf/php-java/merge-pdf-documents/) - menggabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan PHP.
-- [Pisahkan PDF](/pdf/php-java/split-document/) - memisahkan halaman PDF ke dalam file PDF individu dalam aplikasi Java Anda.
-- [Bekerja dengan Judul](/pdf/php-java/working-with-headings/) - Anda dapat membuat penomoran dalam judul dokumen PDF Anda dengan Java.
+- [Memformat Dokumen PDF](/pdf/id/php-java/formatting-pdf-document/) - mendapatkan dan mengatur properti dokumen, menyematkan font, dan operasi lainnya dengan file PDF.
+- [Memanipulasi Dokumen PDF](/pdf/id/php-java/manipulate-pdf-document/) - memvalidasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lain-lain.
+- [Optimalkan PDF](/pdf/id/php-java/optimize-pdf/) - mengoptimalkan konten halaman, mengoptimalkan ukuran file, menghapus objek yang tidak digunakan, mengompres semua gambar untuk optimalisasi dokumen yang berhasil.
+- [Gabungkan PDF](/pdf/id/php-java/merge-pdf-documents/) - menggabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan PHP.
+- [Pisahkan PDF](/pdf/id/php-java/split-document/) - memisahkan halaman PDF ke dalam file PDF individu dalam aplikasi Java Anda.
+- [Bekerja dengan Judul](/pdf/id/php-java/working-with-headings/) - Anda dapat membuat penomoran dalam judul dokumen PDF Anda dengan Java.

@@ -2,7 +2,7 @@
 title: تحويل ملف SVG إلى تنسيق PDF في PHP
 type: docs
 weight: 40
-url: ar/java/convert-svg-file-to-pdf-format-in-php/
+url: /ar/java/convert-svg-file-to-pdf-format-in-php/
 lastmod: "2021-06-05"
 ---
 

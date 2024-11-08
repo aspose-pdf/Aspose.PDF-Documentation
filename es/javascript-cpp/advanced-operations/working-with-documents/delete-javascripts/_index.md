@@ -3,7 +3,7 @@ title: Limpiar código JavaScript de un archivo PDF
 linktitle: Eliminar JavaScripts
 type: docs
 weight: 50
-url: es/javascript-cpp/delete-javascripts/
+url: /es/javascript-cpp/delete-javascripts/
 description: Limpiar macros de JavaScript de un archivo PDF directamente en la Web con Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:

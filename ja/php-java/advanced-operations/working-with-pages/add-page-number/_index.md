@@ -3,7 +3,7 @@ title: PDFにページ番号を追加
 linktitle: ページ番号を追加
 type: docs
 weight: 100
-url: ja/php-java/add-page-number/
+url: /ja/php-java/add-page-number/
 description: Aspose.PDF for PHP via Javaは、PageNumber Stampクラスを使用してPDFファイルにページ番号のスタンプを追加できます。
 lastmod: "2024-06-05"
 sitemap:

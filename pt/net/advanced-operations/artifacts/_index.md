@@ -3,7 +3,7 @@ title: Trabalhando com Artefatos em .NET
 linktitle: Trabalhando com Artefatos
 type: docs
 weight: 110
-url: pt/net/artifacts/
+url: /pt/net/artifacts/
 description: Aspose.PDF para .NET permite que você adicione uma imagem de fundo às páginas PDF e obtenha cada marca d'água usando a classe Artifact.
 lastmod: "2024-01-17"
 sitemap:
@@ -110,8 +110,8 @@ Para obter todas as marcas d'água em uma página específica, a classe [Page](h
 
 O seguinte trecho de código mostra como obter todas as marcas d'água na primeira página de um arquivo PDF.
 
-_Nota:_ Este código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
-_Nota:_ Este código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+_Nota:_ Este código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
+_Nota:_ Este código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 var document = new Document(System.IO.Path.Combine(_dataDir, "sample-w.pdf"));

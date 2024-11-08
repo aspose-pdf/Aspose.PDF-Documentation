@@ -3,7 +3,7 @@ title: Importer et Exporter des Annotations au format XFDF en utilisant Aspose.P
 linktitle: Importer et Exporter des Annotations au format XFDF
 type: docs
 weight: 40
-url: fr/cpp/import-export-xfdf/
+url: /fr/cpp/import-export-xfdf/
 description: Vous pouvez importer et exporter des annotations avec le format XFDF avec C++ et la bibliothèque Aspose.PDF pour C++.
 lastmod: "2021-12-02"
 sitemap:

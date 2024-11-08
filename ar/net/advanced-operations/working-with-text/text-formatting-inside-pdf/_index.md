@@ -3,7 +3,7 @@ title: تنسيق النص داخل ملف PDF باستخدام C#
 linktitle: تنسيق النص داخل PDF
 type: docs
 weight: 30
-url: ar/net/text-formatting-inside-pdf/
+url: /ar/net/text-formatting-inside-pdf/
 description: تشرح هذه الصفحة كيفية تنسيق النص داخل ملف PDF الخاص بك. هناك إضافة مسافة بادئة للسطر، إضافة حد للنص، إضافة تسطير للنص، وغير ذلك.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## كيفية إضافة مسافة بادئة للسطور في ملف PDF
 

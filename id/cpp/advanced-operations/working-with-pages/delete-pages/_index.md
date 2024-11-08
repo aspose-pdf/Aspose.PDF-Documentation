@@ -4,7 +4,7 @@ title: Hapus Halaman PDF secara programatis
 linktitle: Hapus Halaman PDF
 type: docs
 weight: 30
-url: id/cpp/delete-pages/
+url: /id/cpp/delete-pages/
 description: Anda dapat menghapus halaman dari file PDF Anda menggunakan pustaka C++.
 lastmod: "2021-12-09"
 sitemap:

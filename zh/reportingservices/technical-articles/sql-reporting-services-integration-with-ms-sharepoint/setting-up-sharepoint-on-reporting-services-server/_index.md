@@ -2,7 +2,7 @@
 title: 在报告服务服务器上设置 SharePoint
 type: docs
 weight: 30
-url: zh/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+url: /zh/reportingservices/setting-up-sharepoint-on-reporting-services-server/
 lastmod: "2021-06-05"
 ---
 

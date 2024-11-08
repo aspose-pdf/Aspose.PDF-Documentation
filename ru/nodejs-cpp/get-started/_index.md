@@ -3,7 +3,7 @@ title: Начало работы
 linktitle: Начало работы
 type: docs
 weight: 30
-url: ru/nodejs-cpp/get-started/
+url: /ru/nodejs-cpp/get-started/
 description: Этот раздел описывает основные принципы работы Aspose.PDF для Node.js через C++. Aspose.PDF для Node.js через C++ поддерживает широкий спектр функций.
 lastmod: "2023-11-16"   
 sitemap:
@@ -27,31 +27,31 @@ PDF был создан компанией Adobe в 1990-х годах для д
 
 ## Широкий выбор функций
 
-- [Извлечение текста из PDF](/pdf/nodejs-cpp/extract-text/)
-- [Оптимизация PDF документа](/pdf/nodejs-cpp/optimize-pdf/)
-- [Добавление штампа в PDF файл](/pdf/nodejs-cpp/add-stamp-to-pdf/)
-- [Добавление изображения в PDF файл](/pdf/nodejs-cpp/add-image-to-pdf/)
-- [Разделение PDF на два файла](/pdf/nodejs-cpp/split-pdf/)
-- [Объединение двух файлов в PDF](/pdf/nodejs-cpp/merge-pdf/)
-- [Шифрование PDF документов](/pdf/nodejs-cpp/encrypt-pdf/)
-- [Дешифрование PDF документов](/pdf/nodejs-cpp/decrypt-pdf/)
+- [Извлечение текста из PDF](/pdf/ru/nodejs-cpp/extract-text/)
+- [Оптимизация PDF документа](/pdf/ru/nodejs-cpp/optimize-pdf/)
+- [Добавление штампа в PDF файл](/pdf/ru/nodejs-cpp/add-stamp-to-pdf/)
+- [Добавление изображения в PDF файл](/pdf/ru/nodejs-cpp/add-image-to-pdf/)
+- [Разделение PDF на два файла](/pdf/ru/nodejs-cpp/split-pdf/)
+- [Объединение двух файлов в PDF](/pdf/ru/nodejs-cpp/merge-pdf/)
+- [Шифрование PDF документов](/pdf/ru/nodejs-cpp/encrypt-pdf/)
+- [Дешифрование PDF документов](/pdf/ru/nodejs-cpp/decrypt-pdf/)
 
 ## Функции конвертации
 
-- [Конвертация PDF в JPEG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Конвертация PDF в PNG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Конвертация PDF в TIFF](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Конвертация PDF в BMP](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Конвертация PDF в SVG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
+- [Конвертация PDF в JPEG](/pdf/ru/nodejs-cpp/convert-pdf-to-images-format/)
+- [Конвертация PDF в PNG](/pdf/ru/nodejs-cpp/convert-pdf-to-images-format/)
+- [Конвертация PDF в TIFF](/pdf/ru/nodejs-cpp/convert-pdf-to-images-format/)
+- [Конвертация PDF в BMP](/pdf/ru/nodejs-cpp/convert-pdf-to-images-format/)
+- [Конвертация PDF в SVG](/pdf/ru/nodejs-cpp/convert-pdf-to-images-format/)
 
-- [Конвертация PDF в SVG(Zip)](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Преобразовать PDF в TeX](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Преобразовать PDF в XPS](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Преобразовать PDF в CSV](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [Преобразовать PDF в TXT](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Преобразовать PDF в Word](/pdf/nodejs-cpp/convert-pdf-to-doc/)
-- [Преобразовать PDF в XLSX](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [Преобразовать PDF в градации серого PDF](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Преобразовать PDF в Microsoft PowerPoint](/pdf/nodejs-cpp/convert-pdf-to-powerpoint/)
-- [Преобразовать PDF/A в формат PDF](/pdf/nodejs-cpp/convert-pdfa-to-pdf/)
-- [Преобразовать PDF в формат PDF/A](/pdf/nodejs-cpp/convert-pdf-to-pdfa/)
+- [Конвертация PDF в SVG(Zip)](/pdf/ru/nodejs-cpp/convert-pdf-to-images-format/)
+- [Преобразовать PDF в TeX](/pdf/ru/nodejs-cpp/convert-pdf-to-other-files/)
+- [Преобразовать PDF в XPS](/pdf/ru/nodejs-cpp/convert-pdf-to-other-files/)
+- [Преобразовать PDF в CSV](/pdf/ru/nodejs-cpp/convert-pdf-to-xlsx/)
+- [Преобразовать PDF в TXT](/pdf/ru/nodejs-cpp/convert-pdf-to-other-files/)
+- [Преобразовать PDF в Word](/pdf/ru/nodejs-cpp/convert-pdf-to-doc/)
+- [Преобразовать PDF в XLSX](/pdf/ru/nodejs-cpp/convert-pdf-to-xlsx/)
+- [Преобразовать PDF в градации серого PDF](/pdf/ru/nodejs-cpp/convert-pdf-to-other-files/)
+- [Преобразовать PDF в Microsoft PowerPoint](/pdf/ru/nodejs-cpp/convert-pdf-to-powerpoint/)
+- [Преобразовать PDF/A в формат PDF](/pdf/ru/nodejs-cpp/convert-pdfa-to-pdf/)
+- [Преобразовать PDF в формат PDF/A](/pdf/ru/nodejs-cpp/convert-pdf-to-pdfa/)

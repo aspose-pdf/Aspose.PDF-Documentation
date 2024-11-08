@@ -3,7 +3,7 @@ title: 使用 Python 处理 PDF 中的表格
 linktitle: 处理表格
 type: docs
 weight: 50
-url: zh/python-net/working-with-tables/
+url: /zh/python-net/working-with-tables/
 description: 本节描述如何添加和提取表格，如何使用 Python 库操作和处理表格。
 lastmod: "2023-09-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 您可以执行以下操作：
 
-- [在现有 PDF 文档中创建或添加表格](/pdf/python-net/add-table-in-existing-pdf-document/) - 在 PDF 文件中创建表格时合并列或行，并考虑边框、边距和填充。
-- [从现有 PDF 文档中提取表格](/pdf/python-net/extract-table-from-existing-pdf-document/) - 您可以从 PDF 文件中提取表格。
-- [在现有 PDF 中操作表格](/pdf/python-net/manipulate-tables-in-existing-pdf/) - 使用 TableAbsorber 操作 PDF 中的表格。
+- [在现有 PDF 文档中创建或添加表格](/pdf/zh/python-net/add-table-in-existing-pdf-document/) - 在 PDF 文件中创建表格时合并列或行，并考虑边框、边距和填充。
+- [从现有 PDF 文档中提取表格](/pdf/zh/python-net/extract-table-from-existing-pdf-document/) - 您可以从 PDF 文件中提取表格。
+- [在现有 PDF 中操作表格](/pdf/zh/python-net/manipulate-tables-in-existing-pdf/) - 使用 TableAbsorber 操作 PDF 中的表格。
 
-- [从现有 PDF 中删除表格](/pdf/python-net/remove-tables-from-existing-pdf/) - 从 PDF 文档中删除一个或多个表格。
+- [从现有 PDF 中删除表格](/pdf/zh/python-net/remove-tables-from-existing-pdf/) - 从 PDF 文档中删除一个或多个表格。
 
 <script type="application/ld+json">
 {

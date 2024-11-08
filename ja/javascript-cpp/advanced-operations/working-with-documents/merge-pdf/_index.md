@@ -4,7 +4,7 @@ title: JavaScriptを介してC++でPDFをマージする方法
 linktitle: PDFファイルをマージする  
 type: docs  
 weight: 20  
-url: ja/javascript-cpp/merge-pdf/  
+url: /ja/javascript-cpp/merge-pdf/  
 description: このページでは、Aspose.PDF for JavaScriptを介してC++でPDF文書を単一のPDFファイルにマージする方法を説明します  
 lastmod: "2022-12-15"  
 sitemap:  

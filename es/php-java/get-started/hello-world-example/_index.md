@@ -3,7 +3,7 @@ title: Hello World PHP via Java Ejemplo
 linktitle: Hello World Ejemplo
 type: docs
 weight: 40
-url: es/php-java/hello-world-example/
+url: /es/php-java/hello-world-example/
 description: Esta página muestra cómo usar programación simple para crear un documento PDF que contiene el texto - Hello World usando Aspose.PDF para PHP via Java.
 lastmod: "2024-06-05"
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 Un ejemplo de “Hello World” se utiliza típicamente para demostrar las características básicas de un lenguaje de programación o software con un caso de uso sencillo.
 
-Aspose.PDF para PHP via Java API permite a los desarrolladores crear, leer, editar y manipular archivos PDF dentro de sus aplicaciones Java. Soporta la lectura y conversión de varios tipos de archivos hacia y desde el formato PDF. Este artículo de Hello World muestra cómo crear un archivo PDF usando Aspose.PDF para PHP via Java API. Después de [instalar Aspose.PDF para PHP via Java](/pdf/php-java/installation/) en su entorno, puede ejecutar el siguiente ejemplo de código para ver cómo funciona la API de Aspose.PDF.
+Aspose.PDF para PHP via Java API permite a los desarrolladores crear, leer, editar y manipular archivos PDF dentro de sus aplicaciones Java. Soporta la lectura y conversión de varios tipos de archivos hacia y desde el formato PDF. Este artículo de Hello World muestra cómo crear un archivo PDF usando Aspose.PDF para PHP via Java API. Después de [instalar Aspose.PDF para PHP via Java](/pdf/es/php-java/installation/) en su entorno, puede ejecutar el siguiente ejemplo de código para ver cómo funciona la API de Aspose.PDF.
 
 El siguiente fragmento de código sigue estos pasos:
 

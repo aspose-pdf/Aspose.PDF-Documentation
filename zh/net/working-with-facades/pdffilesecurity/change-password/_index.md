@@ -2,7 +2,7 @@
 title: 更改PDF文件的密码
 type: docs
 weight: 40
-url: zh/net/change-password/
+url: /zh/net/change-password/
 description: 本主题解释如何使用PdfFileSecurity类更改PDF文件上的密码。
 lastmod: "2021-06-05"
 draft: false

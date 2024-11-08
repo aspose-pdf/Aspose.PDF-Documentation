@@ -2,7 +2,7 @@
 title: Скачать и настроить Aspose.Pdf в Ruby
 type: docs
 weight: 10
-url: ru/java/download-and-configure-aspose-pdf-in-ruby/
+url: /ru/java/download-and-configure-aspose-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

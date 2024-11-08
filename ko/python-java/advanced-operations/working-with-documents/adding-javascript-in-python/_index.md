@@ -2,7 +2,7 @@
 title: 파이썬에 자바스크립트 추가
 type: docs
 weight: 10
-url: ko/python-java/adding-javascript-in-python/
+url: /ko/python-java/adding-javascript-in-python/
 ---
 
 Aspose.PDF Java를 사용하여 파이썬에 자바스크립트를 추가하려면, Document 클래스의 AddJavascript() 메서드를 호출하십시오.

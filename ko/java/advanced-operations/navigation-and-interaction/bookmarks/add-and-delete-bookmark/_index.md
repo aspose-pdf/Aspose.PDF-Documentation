@@ -3,7 +3,7 @@ title: 책갈피 추가 및 삭제
 linktitle: 책갈피 추가 및 삭제
 type: docs
 weight: 10
-url: ko/java/add-and-delete-bookmark/
+url: /ko/java/add-and-delete-bookmark/
 description: Java로 PDF 문서에 책갈피를 추가할 수 있습니다. PDF 문서에서 모든 또는 특정 책갈피를 삭제할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

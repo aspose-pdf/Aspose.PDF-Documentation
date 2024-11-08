@@ -3,7 +3,7 @@ title: إضافة كائن الإهليلج إلى ملف PDF
 linktitle: إضافة إهليلج
 type: docs
 weight: 60
-url: ar/java/add-ellipse/
+url: /ar/java/add-ellipse/
 description: توضح هذه المقالة كيفية إنشاء كائن إهليلج في ملف PDF باستخدام Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

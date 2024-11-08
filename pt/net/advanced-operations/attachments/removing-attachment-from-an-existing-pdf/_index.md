@@ -3,7 +3,7 @@ title: Removendo anexo de PDF
 linktitle: Removendo anexo de um PDF existente
 type: docs
 weight: 30
-url: pt/net/removing-attachment-from-an-existing-pdf/
+url: /pt/net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF pode remover anexos dos seus documentos PDF. Use a API PDF C# para remover anexos em arquivos PDF usando a biblioteca Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Aspose.PDF pode remover anexos de arquivos PDF. Os anexos de um documento PDF são mantidos na coleção EmbeddedFiles do objeto Document.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Para deletar todos os anexos associados a um arquivo PDF:
 

@@ -2,7 +2,7 @@
 title: 设置PDF文件信息 - 外观
 type: docs
 weight: 20
-url: zh/java/set-pdf-information/
+url: /zh/java/set-pdf-information/
 description: 本节介绍如何使用Aspose.PDF Facades通过PdfFileInfo类设置PDF文件信息。
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Splitter
 type: docs
 weight: 120
-url: ja/net/plugins/splitter/
+url: /ja/net/plugins/splitter/
 description: PDFドキュメントを個別のページに分割します
 lastmod: "2024-01-24"
 draft: false

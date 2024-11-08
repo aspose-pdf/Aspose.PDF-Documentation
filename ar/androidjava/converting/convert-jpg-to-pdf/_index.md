@@ -3,7 +3,7 @@ title: تحويل JPG إلى PDF
 linktitle: تحويل JPG إلى PDF 
 type: docs
 weight: 190
-url: ar/androidjava/convert-jpg-to-pdf/
+url: /ar/androidjava/convert-jpg-to-pdf/
 lastmod: "2021-06-05"
 description: تعلم كيفية تحويل صورة JPG بسهولة إلى ملف PDF. كما يمكنك تحويل صورة إلى PDF مع الاحتفاظ بنفس ارتفاع وعرض الصفحة.
 sitemap:

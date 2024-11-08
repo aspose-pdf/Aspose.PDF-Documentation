@@ -3,7 +3,7 @@ title: Добавление вложения в PDF документ
 linktitle: Добавление вложения в PDF документ 
 type: docs
 weight: 10
-url: ru/java/add-attachment-to-pdf-document/
+url: /ru/java/add-attachment-to-pdf-document/
 description: На этой странице описывается, как добавить вложение в PDF файл с помощью Java.
 lastmod: "2021-06-05"
 sitemap:

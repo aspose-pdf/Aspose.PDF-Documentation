@@ -2,7 +2,7 @@
 title: Добавление многострочного водяного знака
 type: docs
 weight: 10
-url: ru/net/adding-multi-line-watermark-to-existing-pdf/
+url: /ru/net/adding-multi-line-watermark-to-existing-pdf/
 description: Этот раздел объясняет, как добавить многострочный водяной знак в существующий PDF с помощью класса FormattedText.
 lastmod: "2021-06-05"
 draft: false

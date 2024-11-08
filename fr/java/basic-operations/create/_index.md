@@ -3,7 +3,7 @@ title: Créer un Document PDF
 linktitle: Créer
 type: docs
 weight: 10
-url: fr/java/create-document/
+url: /fr/java/create-document/
 description: Apprenez à créer un fichier PDF avec Aspose.PDF pour Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: ToC Generator
 type: docs
 weight: 150
-url: id/net/plugins/tocgenerator/
+url: /id/net/plugins/tocgenerator/
 description: Membuat daftar isi dengan Aspose.PDF ToC Generator untuk .NET
 lastmod: "2024-01-24"
 draft: false

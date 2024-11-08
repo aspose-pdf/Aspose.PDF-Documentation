@@ -2,7 +2,7 @@
 title: 产品概述
 type: docs
 weight: 10
-url: zh/reportingservices/product-overview/
+url: /zh/reportingservices/product-overview/
 lastmod: "2021-06-05"
 ---
 

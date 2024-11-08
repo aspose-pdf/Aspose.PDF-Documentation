@@ -3,7 +3,7 @@ title: Node.jsでPDFに背景を追加する
 linktitle: 背景を追加
 type: docs
 weight: 10
-url: ja/nodejs-cpp/add-background/
+url: /ja/nodejs-cpp/add-background/
 description: Node.jsでPDFファイルに背景画像を追加する
 lastmod: "2023-11-16"
 sitemap:

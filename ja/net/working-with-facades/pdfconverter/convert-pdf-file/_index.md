@@ -2,7 +2,7 @@
 title: PDFファイルの変換
 type: docs
 weight: 30
-url: ja/net/convert-pdf-file/
+url: /ja/net/convert-pdf-file/
 description: このセクションでは、PdfConverterクラスを使用してAspose.PDF FacadesでPDFファイルを変換する方法を説明します。
 lastmod: "2021-06-05"
 draft: false
@@ -61,4 +61,4 @@ PDFページを異なる画像形式に変換するには、[PdfConverter](https
 
 ## See also
 
-Aspose.PDF for .NETは、PDFドキュメントをさまざまな形式に変換したり、他の形式からPDFに変換したりすることができます。また、Aspose.PDF変換アプリを使用してAspose.PDFの変換品質を確認し、結果をオンラインで確認することもできます。[変換](/pdf/net/converting/)セクションを学んで、タスクを解決してください。
+Aspose.PDF for .NETは、PDFドキュメントをさまざまな形式に変換したり、他の形式からPDFに変換したりすることができます。また、Aspose.PDF変換アプリを使用してAspose.PDFの変換品質を確認し、結果をオンラインで確認することもできます。[変換](/pdf/ja/net/converting/)セクションを学んで、タスクを解決してください。

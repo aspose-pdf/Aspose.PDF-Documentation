@@ -3,7 +3,7 @@ title: PDF에 페이지 추가
 linktitle: 페이지 추가
 type: docs
 weight: 10
-url: ko/java/add-pages/
+url: /ko/java/add-pages/
 description: 이 문서는 원하는 위치에 PDF 파일에 페이지를 삽입(추가)하는 방법을 가르칩니다. Java 라이브러리를 사용하여 PDF 파일에서 페이지를 이동하고 제거(삭제)하는 방법을 배웁니다.
 lastmod: "2021-06-05"
 sitemap:

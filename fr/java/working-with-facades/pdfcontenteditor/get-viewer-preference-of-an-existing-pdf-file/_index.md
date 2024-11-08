@@ -2,7 +2,7 @@
 title: Obtenir la préférence de visualisation d'un fichier PDF existant
 type: docs
 weight: 70
-url: fr/java/get-viewer-preference-of-an-existing-pdf-file/
+url: /fr/java/get-viewer-preference-of-an-existing-pdf-file/
 description: Cette section montre comment travailler avec Aspose.PDF Facades en utilisant la classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

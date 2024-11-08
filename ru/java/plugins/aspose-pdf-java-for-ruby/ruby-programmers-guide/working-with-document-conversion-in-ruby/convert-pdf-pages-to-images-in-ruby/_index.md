@@ -2,7 +2,7 @@
 title: Преобразование страниц PDF в изображения на Ruby
 type: docs
 weight: 20
-url: ru/java/convert-pdf-pages-to-images-in-ruby/
+url: /ru/java/convert-pdf-pages-to-images-in-ruby/
 lastmod: "2021-06-05"
 ---
 

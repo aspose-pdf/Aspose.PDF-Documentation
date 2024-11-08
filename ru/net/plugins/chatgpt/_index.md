@@ -2,7 +2,7 @@
 title: ChatGPT
 type: docs
 weight: 30
-url: ru/net/plugins/chatGPT/
+url: /ru/net/plugins/chatGPT/
 description: Как генерировать ответы ChatGPT на базе ИИ и сохранять их в PDF
 lastmod: "2024-02-24"
 ---

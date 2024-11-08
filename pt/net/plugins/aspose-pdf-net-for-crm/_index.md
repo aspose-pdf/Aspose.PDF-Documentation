@@ -2,7 +2,7 @@
 title: Aspose.PDF .NET para CRM
 type: docs
 weight: 310
-url: pt/net/aspose-pdf-net-for-crm/
+url: /pt/net/aspose-pdf-net-for-crm/
 description: Aprenda a usar o Aspose.PDF para Microsoft Dynamics CRM
 lastmod: "2021-06-05"
 sitemap:
@@ -28,5 +28,5 @@ Aspose .NET pode ser usado com o Dynamics CRM de várias maneiras. Quando você 
 
 Criamos os seguintes plugins para CRM usando Aspose.PDF
 
-- [Gerador de Documentos PDF OneClick](/pdf/net/oneclick-pdf-document-generator/)
-  - [Usando o Gerador de Documentos PDF OneClick](/pdf/net/using-oneclick-pdf-document-generator/)
+- [Gerador de Documentos PDF OneClick](/pdf/pt/net/oneclick-pdf-document-generator/)
+  - [Usando o Gerador de Documentos PDF OneClick](/pdf/pt/net/using-oneclick-pdf-document-generator/)

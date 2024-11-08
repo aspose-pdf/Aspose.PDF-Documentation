@@ -3,7 +3,7 @@ title: Menambahkan Objek Lingkaran ke File PDF
 linktitle: Tambah Lingkaran
 type: docs
 weight: 20
-url: id/net/add-circle/
+url: /id/net/add-circle/
 description: Artikel ini menjelaskan cara membuat objek lingkaran pada PDF Anda menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Artikel ini menjelaskan cara membuat objek lingkaran pada PDF Anda menggunakan Aspose.PDF untuk .NET."
 }
 </script>
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan Objek Lingkaran
 

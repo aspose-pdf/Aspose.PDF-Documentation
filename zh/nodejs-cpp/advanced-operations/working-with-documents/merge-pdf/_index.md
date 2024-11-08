@@ -3,7 +3,7 @@ title: 如何在 Node.js 中合并 PDF
 linktitle: 合并 PDF 文件
 type: docs
 weight: 20
-url: zh/nodejs-cpp/merge-pdf/
+url: /zh/nodejs-cpp/merge-pdf/
 description: 本页解释如何使用 Aspose.PDF for Node.js via C++ 将 PDF 文档合并为一个 PDF 文件。
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: Changer la taille des pages PDF par programmation
 linktitle: Changer la taille des pages PDF  
 type: docs  
 weight: 40  
-url: fr/cpp/change-page-size/  
+url: /fr/cpp/change-page-size/  
 description: Modifier la taille des pages de votre fichier PDF en utilisant la bibliothèque C++.  
 lastmod: "2021-12-08"  
 sitemap:  

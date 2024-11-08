@@ -3,7 +3,7 @@ title: Добавление вложения в PDF документ
 linktitle: Добавление вложения в PDF документ
 type: docs
 weight: 10
-url: ru/cpp/add-attachment-to-pdf-document/
+url: /ru/cpp/add-attachment-to-pdf-document/
 description: Эта страница описывает, как добавить вложение в PDF файл с помощью библиотеки Aspose.PDF для C++
 lastmod: "2021-06-05"
 sitemap:

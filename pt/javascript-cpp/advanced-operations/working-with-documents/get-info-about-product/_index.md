@@ -3,7 +3,7 @@ title: Obter informações sobre o Produto usando JavaScript
 linktitle: Obter informações sobre o Produto
 type: docs
 weight: 70
-url: pt/javascript-cpp/get-info-about-product/
+url: /pt/javascript-cpp/get-info-about-product/
 description: Este tópico mostra como obter informações sobre o Produto com Aspose.PDF para JavaScript via C++.
 lastmod: "2023-11-16"
 sitemap:

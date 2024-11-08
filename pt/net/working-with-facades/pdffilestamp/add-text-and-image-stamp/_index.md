@@ -2,7 +2,7 @@
 title: Adicionar Carimbo de Texto e Imagem
 type: docs
 weight: 20
-url: pt/net/add-text-and-image-stamp/
+url: /pt/net/add-text-and-image-stamp/
 description: Esta seção explica como adicionar Carimbo de Texto e Imagem com Aspose.PDF Facades usando a Classe PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

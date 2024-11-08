@@ -3,7 +3,7 @@ title: تصيير الجدول باستخدام Entity Framework
 linktitle: تصيير الجدول باستخدام Entity Framework
 type: docs
 weight: 40
-url: ar/net/render-table-using-entity-framework-model-as-data-source/
+url: /ar/net/render-table-using-entity-framework-model-as-data-source/
 description: هذا المقال سيوضح لك كيفية تصيير جدول باستخدام نموذج Entity Framework كمصدر بيانات باستخدام Aspose.PDF لـ .NET.
 lastmod: "2021-06-05"
 sitemap:

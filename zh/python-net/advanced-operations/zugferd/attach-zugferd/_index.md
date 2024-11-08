@@ -3,7 +3,7 @@ title: 创建符合PDF/3-A标准的PDF并在Python中附加ZUGFeRD发票
 linktitle: 将ZUGFeRD附加到PDF
 type: docs
 weight: 10
-url: zh/python-net/attach-zugferd/
+url: /zh/python-net/attach-zugferd/
 description: 了解如何通过Aspose.PDF for Python via .NET生成带有ZUGFeRD的PDF文档
 lastmod: "2024-01-18"
 sitemap:

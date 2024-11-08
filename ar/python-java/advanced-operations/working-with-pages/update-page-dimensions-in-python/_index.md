@@ -2,7 +2,7 @@
 title: تحديث أبعاد الصفحة في Python
 type: docs
 weight: 90
-url: ar/python-java/update-page-dimensions-in-python/
+url: /ar/python-java/update-page-dimensions-in-python/
 ---
 
 <ins>لتحديث أبعاد الصفحة باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء فئة **UpdatePageDimensions**.

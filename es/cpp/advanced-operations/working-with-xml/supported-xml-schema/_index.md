@@ -3,7 +3,7 @@ title: Esquema XML de Aspose.PDF
 linktitle: Esquema XML Soportado
 type: docs
 weight: 10
-url: es/cpp/supported-xml-schema/
+url: /es/cpp/supported-xml-schema/
 description: Este artículo describe un esquema XML para trabajar con documentos XML en Aspose.PDF para C++.
 lastmod: "2022-01-31"
 sitemap:

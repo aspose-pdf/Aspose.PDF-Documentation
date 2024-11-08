@@ -3,7 +3,7 @@
 title: Enkripsi, Dekripsi, dan Atur Hak Istimewa pada Dokumen PDF
 type: docs
 weight: 10
-url: id/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+url: /id/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
 ---
 
 ## <ins>**Atur Hak Istimewa pada File PDF yang Ada**

@@ -3,7 +3,7 @@ title: Отображение таблицы с использованием Ent
 linktitle: Отображение таблицы с использованием Entity Framework
 type: docs
 weight: 40
-url: ru/net/render-table-using-entity-framework-model-as-data-source/
+url: /ru/net/render-table-using-entity-framework-model-as-data-source/
 description: В этой статье показано, как отобразить таблицу, используя модель Entity Framework в качестве источника данных с помощью Aspose.PDF для .NET.
 lastmod: "2021-06-05"
 sitemap:

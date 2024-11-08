@@ -2,7 +2,7 @@
 title: Insertar páginas PDF
 type: docs
 weight: 50
-url: es/net/insert-pdf-pages/
+url: /es/net/insert-pdf-pages/
 description: Esta sección explica cómo insertar páginas PDF con Aspose.PDF Facades usando la clase PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

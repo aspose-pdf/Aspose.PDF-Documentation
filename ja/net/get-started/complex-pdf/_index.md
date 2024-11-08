@@ -3,7 +3,7 @@ title: 複雑なPDFの作成
 linktitle: 複雑なPDFの作成
 type: docs
 weight: 60
-url: ja/net/complex-pdf-example/
+url: /ja/net/complex-pdf-example/
 description: Aspose.PDF for NETを使用すると、画像、テキストフラグメント、およびテーブルを含む複雑なドキュメントを作成できます。
 aliases:
     - /net/complex-pdf/
@@ -13,8 +13,8 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/net/hello-world-example/)の例では、C# と Aspose.PDF を使用してPDFドキュメントを作成するための簡単な手順を示しました。この記事では、C# と Aspose.PDF for .NETを使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、旅客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。
-このドキュメントには、画像、2つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。このようなドキュメントを構築するために、DOMベースのアプローチを使用します。詳細はセクション[Basics of DOM API](/pdf/net/basics-of-dom-api/)で読むことができます。
+[Hello, World](/pdf/ja/net/hello-world-example/)の例では、C# と Aspose.PDF を使用してPDFドキュメントを作成するための簡単な手順を示しました。この記事では、C# と Aspose.PDF for .NETを使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、旅客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。
+このドキュメントには、画像、2つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。このようなドキュメントを構築するために、DOMベースのアプローチを使用します。詳細はセクション[Basics of DOM API](/pdf/ja/net/basics-of-dom-api/)で読むことができます。
 
 ゼロからドキュメントを作成する場合、以下の手順に従う必要があります：
 
@@ -29,8 +29,8 @@ sitemap:
 1. ページの[段落](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)に（テーブル）を追加します。
 1. ドキュメント「Complex.pdf」を保存します。
 
-このコードスニペットは[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+このコードスニペットは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ```csharp
 using Aspose.Pdf.Text;

@@ -3,7 +3,7 @@ title: Ajouter des tampons texte dans un PDF via Python
 linktitle: Tampons texte dans un fichier PDF
 type: docs
 weight: 20
-url: fr/python-net/text-stamps-in-the-pdf-file/
+url: /fr/python-net/text-stamps-in-the-pdf-file/
 description: Ajouter un tampon texte à un document PDF en utilisant la classe TextStamp avec la bibliothèque Aspose.PDF pour Python.
 lastmod: "2023-04-17"
 sitemap:

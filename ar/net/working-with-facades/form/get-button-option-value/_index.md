@@ -2,7 +2,7 @@
 title: احصل على قيمة خيار الزر
 type: docs
 weight: 40
-url: ar/net/get-button-option-value/
+url: /ar/net/get-button-option-value/
 description: يشرح هذا القسم كيفية الحصول على قيمة خيار الزر باستخدام Aspose.PDF Facades مع فئة Form.
 lastmod: "2021-06-05"
 draft: false

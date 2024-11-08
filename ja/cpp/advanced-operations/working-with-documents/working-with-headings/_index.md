@@ -2,7 +2,7 @@
 title: PDFでの見出しの操作
 type: docs
 weight: 90
-url: ja/cpp/working-with-headings/
+url: /ja/cpp/working-with-headings/
 lastmod: "2021-11-11"
 description: C++を使用してPDFドキュメントの見出しに番号を作成します。Aspose.PDF for C++ はさまざまな種類の番号スタイルを示します。
 sitemap:
@@ -16,7 +16,7 @@ sitemap:
 見出しは、テキストへの注意を引き、ユーザーがドキュメント内で必要な情報を見つけるのに役立ち、可読性と視覚的な認識を向上させます。見出しスタイルを使用すると、目次を素早く作成し、ドキュメントの構造を変更することもできます。
 それでは、Aspose.PDF for C++ ライブラリを使用してヘッダーを操作する方法を確認しましょう。
 
-[Aspose.PDF for C++](/pdf/cpp/) は多くの事前定義された番号スタイルを提供します。 これらの事前定義された番号スタイルは、列挙型NumberingStyleに格納されています。NumberingStyle列挙型の事前定義された値とその説明は以下の通りです：
+[Aspose.PDF for C++](/pdf/ja/cpp/) は多くの事前定義された番号スタイルを提供します。 これらの事前定義された番号スタイルは、列挙型NumberingStyleに格納されています。NumberingStyle列挙型の事前定義された値とその説明は以下の通りです：
 
 |**見出しの種類**|**説明**|
 | :- | :- |

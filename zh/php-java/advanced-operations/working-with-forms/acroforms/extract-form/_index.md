@@ -3,7 +3,7 @@ title: 提取数据AcroForms
 linktitle: 提取数据AcroForms
 type: docs
 weight: 30
-url: zh/php-java/extract-form/
+url: /zh/php-java/extract-form/
 description: 本节介绍如何使用Aspose.PDF for PHP通过Java从PDF文档中提取表单。
 lastmod: "2024-06-05"
 sitemap:

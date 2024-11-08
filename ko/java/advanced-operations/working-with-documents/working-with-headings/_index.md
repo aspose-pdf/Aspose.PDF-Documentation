@@ -2,7 +2,7 @@
 title: PDF에서 제목 작업하기
 type: docs
 weight: 70
-url: ko/java/working-with-headings/
+url: /ko/java/working-with-headings/
 lastmod: "2021-06-05"
 description: Java로 PDF 문서의 제목에 번호 매기기를 만드세요. Aspose.PDF for Java는 다양한 종류의 번호 매기기 스타일을 제공합니다.
 sitemap:

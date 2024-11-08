@@ -3,7 +3,7 @@ title: استخدام Aspose.PDF لـ .NET مع Python
 linktitle: التكامل مع Python
 type: docs
 weight: 100
-url: ar/net/python-net/
+url: /ar/net/python-net/
 description: في هذا البرنامج التعليمي، ستستكشف الطرق المختلفة لإنشاء وتعديل ملفات PDF في Python.
 lastmod: "2022-01-10"
 sitemap:

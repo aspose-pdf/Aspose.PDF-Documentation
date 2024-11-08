@@ -2,7 +2,7 @@
 title: الحصول على خصائص الصفحة وتعيينها
 type: docs
 weight: 20
-url: ar/cpp/get-and-set-page-properties/
+url: /ar/cpp/get-and-set-page-properties/
 description: يمكنك الحصول على خصائص الصفحة وتعيينها من ملف PDF الخاص بك باستخدام مكتبة C++.
 lastmod: "2021-12-09"
 sitemap:

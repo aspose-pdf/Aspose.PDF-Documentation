@@ -2,7 +2,7 @@
 title: الحصول على بيانات XMP الوصفية من ملف PDF في روبي
 type: docs
 weight: 60
-url: ar/java/get-xmp-metadata-from-pdf-file-in-ruby/
+url: /ar/java/get-xmp-metadata-from-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

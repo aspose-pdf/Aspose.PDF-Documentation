@@ -4,7 +4,7 @@ title: PDFでのXFAフォームの操作
 linktitle: XFAフォーム  
 type: docs  
 weight: 20  
-url: ja/java/xfa-forms/  
+url: /ja/java/xfa-forms/  
 description: Aspose.PDF for Javaを使用して、ゼロからフォームを作成したり、PDFドキュメントのフォームフィールドに入力したり、フォームからデータを抽出したり、既存のフォームにフィールドを追加または削除したりできます。  
 lastmod: "2021-06-05"  
 sitemap:  

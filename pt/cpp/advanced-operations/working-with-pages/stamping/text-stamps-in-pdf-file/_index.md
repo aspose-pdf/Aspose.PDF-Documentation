@@ -3,7 +3,7 @@ title: Adicionar Carimbos de Texto em Arquivo PDF
 linktitle: Carimbos de Texto em Arquivo PDF
 type: docs
 weight: 20
-url: pt/cpp/text-stamps-in-the-pdf-file/
+url: /pt/cpp/text-stamps-in-the-pdf-file/
 description: Adicione um carimbo de texto a um arquivo PDF usando a classe TextStamp com C++.
 lastmod: "2021-12-05"
 sitemap:

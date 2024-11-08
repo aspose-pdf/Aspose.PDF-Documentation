@@ -3,7 +3,7 @@ title: Как распечатать PDF-файл в .NET Core
 linktitle: Печать PDF в .NET Core
 type: docs
 weight: 40
-url: ru/net/print-dotnetcore/
+url: /ru/net/print-dotnetcore/
 keywords: "print pdf .net core"
 description: Эта страница объясняет, как преобразовать PDF-документ в XPS в .NET Core и добавить его в очередь локального принтера.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "Эта страница объясняет, как преобразовать PDF-документ в XPS и добавить его в очередь локального принтера."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## **Печать PDF-документа в .NET Core**
 

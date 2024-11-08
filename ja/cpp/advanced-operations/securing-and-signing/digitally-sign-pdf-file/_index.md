@@ -3,7 +3,7 @@ title: PDFにデジタル署名をする方法
 linktitle: PDFにデジタル署名
 type: docs
 weight: 10
-url: ja/cpp/digitally-sign-pdf-file/
+url: /ja/cpp/digitally-sign-pdf-file/
 description: C++を使用してPDFドキュメントにデジタル署名をします。C++を使用してデジタル署名されたPDFを確認または検証します。
 lastmod: "2021-12-15"
 sitemap:

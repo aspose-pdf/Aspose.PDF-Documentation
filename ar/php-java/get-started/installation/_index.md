@@ -3,7 +3,7 @@ title: تثبيت Aspose.PDF لـ PHP عبر Java
 linktitle: التثبيت
 type: docs
 weight: 20
-url: ar/php-java/installation/
+url: /ar/php-java/installation/
 description: يعرض هذا القسم وصف المنتج وتعليمات تثبيت Aspose.PDF لـ PHP عبر Java بنفسك، وكذلك باستخدام NuGet.
 lastmod: "2024-06-05"
 sitemap:

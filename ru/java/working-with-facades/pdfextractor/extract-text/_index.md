@@ -2,7 +2,7 @@
 title: Извлечение изображений из PDF (фасады)
 type: docs
 weight: 30
-url: ru/java/extract-images/
+url: /ru/java/extract-images/
 description: Этот раздел объясняет, как извлекать изображения с помощью Aspose.PDF Facades, используя класс PdfExtractor.
 lastmod: "2021-06-05"
 sitemap:

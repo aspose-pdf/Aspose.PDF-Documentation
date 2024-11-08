@@ -3,7 +3,7 @@ title: إضافة تعليقات توضيحية على الأشكال باستخ
 linktitle: تعليقات توضيحية للأشكال
 type: docs
 weight: 30
-url: ar/net/figures-annotation/
+url: /ar/net/figures-annotation/
 description: يصف هذا المقال كيفية إضافة، الحصول على، وحذف التعليقات التوضيحية للأشكال من مستند PDF الخاص بك باستخدام Aspose.PDF لـ.NET
 lastmod: "2023-09-12"
 sitemap:
@@ -88,7 +88,7 @@ sitemap:
 
 النهج لإضافة التعليق التوضيحي هو نموذجي لأي منها.
 
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 1. تحميل ملف PDF أو إنشاء جديد بواسطة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. إنشاء التعليق التوضيحي الجديد وتعيين المعاملات (مستطيل جديد، نقطة جديدة، العنوان، اللون، العرض، إلخ).

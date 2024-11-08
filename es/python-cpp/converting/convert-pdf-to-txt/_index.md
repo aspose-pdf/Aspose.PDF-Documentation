@@ -3,7 +3,7 @@ title: Convertir PDF a TXT en Python
 linktitle: Convertir PDF a TXT
 type: docs
 weight: 20
-url: es/python-cpp/convert-pdf-to-txt/
+url: /es/python-cpp/convert-pdf-to-txt/
 lastmod: "2024-04-23"
 description: La biblioteca Aspose.PDF para Python a través de C++ le permite convertir PDF a formato TXT usando Python.
 sitemap:

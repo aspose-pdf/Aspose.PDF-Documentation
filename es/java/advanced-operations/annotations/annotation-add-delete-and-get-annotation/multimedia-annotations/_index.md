@@ -3,7 +3,7 @@ title: Anotación Multimedia en PDF
 linktitle: Anotación Multimedia
 type: docs
 weight: 40
-url: es/java/multimedia-annotation/
+url: /es/java/multimedia-annotation/
 description: Aspose.PDF para Java le permite agregar, obtener y eliminar la anotación multimedia de su documento PDF.
 lastmod: "2021-11-24"
 sitemap:

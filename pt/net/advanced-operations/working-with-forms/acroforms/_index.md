@@ -3,7 +3,7 @@ title: Trabalhando com AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: pt/net/acroforms/
+url: /pt/net/acroforms/
 description: Com Aspose.PDF para .NET você pode criar um formulário do zero, preencher o campo de formulário em um documento PDF, extrair dados do formulário, e etc.
 lastmod: "2022-02-17"
 sitemap:
@@ -99,12 +99,12 @@ AcroForms têm capacidades não encontradas em XFA e vice-versa, XFA tem algumas
 Para aprender mais detalhadamente sobre as capacidades da biblioteca Java, veja os seguintes artigos:
 Para um aprendizado mais detalhado das capacidades da biblioteca Java, veja os seguintes artigos:
 
-- [Criar AcroForm](/pdf/net/create-form) - criar formulário do zero com C#.
-- [Preencher AcroForm](/pdf/net/fill-form) - preencher campo de formulário no seu documento PDF.
-- [Extrair AcroForm](/pdf/net/extract-form) - obter valor de todos ou de um campo individual do documento PDF.
-- [Modificar AcroForm](/pdf/net/modifing-form) - obter ou definir FieldLimit, definir fonte do campo de formulário e etc.
-- [Postar Dados de AcroForm](/pdf/net/posting-acroform-data/) - importar e exportar dados de formulário para um arquivo XML.
-- [Importar e Exportar Dados](/pdf/net/import-and-export-data/) - importar e exportar dados usando a Classe Form.
+- [Criar AcroForm](/pdf/pt/net/create-form) - criar formulário do zero com C#.
+- [Preencher AcroForm](/pdf/pt/net/fill-form) - preencher campo de formulário no seu documento PDF.
+- [Extrair AcroForm](/pdf/pt/net/extract-form) - obter valor de todos ou de um campo individual do documento PDF.
+- [Modificar AcroForm](/pdf/pt/net/modifing-form) - obter ou definir FieldLimit, definir fonte do campo de formulário e etc.
+- [Postar Dados de AcroForm](/pdf/pt/net/posting-acroform-data/) - importar e exportar dados de formulário para um arquivo XML.
+- [Importar e Exportar Dados](/pdf/pt/net/import-and-export-data/) - importar e exportar dados usando a Classe Form.
 
 <script type="application/ld+json">
 {

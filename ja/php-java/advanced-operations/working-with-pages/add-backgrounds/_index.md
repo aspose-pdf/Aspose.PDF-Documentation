@@ -3,7 +3,7 @@ title: PDFに背景を追加
 linktitle: 背景を追加
 type: docs
 weight: 110
-url: ja/php-java/add-backgrounds/
+url: /ja/php-java/add-backgrounds/
 descriptions: PHPを使用してPDFファイルに背景画像を追加します。BackgroundArtifactオブジェクトを使用します。
 lastmod: "2024-06-05"
 sitemap:

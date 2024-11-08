@@ -3,7 +3,7 @@ title: Merender tabel dengan Entity Framework
 linktitle: Merender tabel dengan Entity Framework
 type: docs
 weight: 40
-url: id/net/render-table-using-entity-framework-model-as-data-source/
+url: /id/net/render-table-using-entity-framework-model-as-data-source/
 description: Artikel ini akan menunjukkan cara merender tabel menggunakan model Entity Framework sebagai sumber data menggunakan Aspose.PDF untuk .NET.
 lastmod: "2021-06-05"
 sitemap:

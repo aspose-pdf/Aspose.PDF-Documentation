@@ -3,7 +3,7 @@ title: 以编程方式合并PDF
 linktitle: 合并PDF文件
 type: docs
 weight: 50
-url: zh/java/merge-pdf-documents/
+url: /zh/java/merge-pdf-documents/
 description: 本页面解释如何使用Java将多个PDF文档合并为一个PDF文件。
 lastmod: "2021-06-05"
 ---

@@ -3,7 +3,7 @@ title: PDFからテキストを抽出するC#
 linktitle: PDFからテキストを抽出する
 type: docs
 weight: 10
-url: ja/net/extract-text-from-all-pdf/
+url: /ja/net/extract-text-from-all-pdf/
 description: この記事では、Aspose.PDFを使用してC#でPDFドキュメントからテキストを抽出するさまざまな方法について説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 PDFドキュメントからテキストを抽出することは一般的な要件です。この例では、Aspose.PDF for .NETがPDFドキュメントの全ページからテキストを抽出する方法を示します。**TextAbsorber**クラスのオブジェクトを作成する必要があります。その後、**Document**クラスを使用してPDFを開き、**Pages**コレクションの**Accept**メソッドを呼び出します。**TextAbsorber**クラスはドキュメントからテキストを吸収し、**Text**プロパティで返します。次のコードスニペットは、PDFドキュメントの全ページからテキストを抽出する方法を示しています。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリとも機能します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも機能します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
@@ -40,7 +40,7 @@ tw.Close();
 ```
 ドキュメントオブジェクトの特定のページで**Accept**メソッドを呼び出します。インデックスはテキストを抽出する必要がある特定のページ番号です。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも機能します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
@@ -83,7 +83,7 @@ tw.Close();
 1. TextDeviceクラスのProcessメソッドを使用して内容をテキストに変換する
 1. テキストを出力ファイルに保存する
 
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
@@ -132,8 +132,8 @@ File.WriteAllText(dataDir, builder.ToString());
 
 ページの **Accept** メソッドがテキストを抽出するために呼び出されます。**Document** および **TextAbsorber** クラスのオブジェクトを作成します。**Document** オブジェクトの個々のページに対して **Accept** メソッドを呼び出します。**Index** はテキストを抽出する特定のページ番号です。**TextAbsorber** クラスの **Text** プロパティからテキストを取得できます。次のコードスニペットは、個々のページからテキストを抽出する方法を示しています。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも動作します。
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
@@ -166,7 +166,7 @@ tw.Close();
 PDFファイルは、テキスト、イメージ、アノテーション、添付ファイル、グラフなどの要素で構成されている場合があり、Aspose.PDF for .NETはこれらの要素を追加および操作する機能を提供します。
 PDFファイルにはテキスト、画像、注釈、添付ファイル、グラフなどの要素が含まれている場合があり、Aspose.PDF for .NETはこれらの要素を追加および操作する機能を提供します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
@@ -205,7 +205,7 @@ ScaleFactorの値を0.1から-0.1の間で指定すると、ゼロ値として�
 
 大量のPDFファイルをテキスト内容抽出に処理する際は、自動スケーリング（ScaleFactor = 0）の使用を提案します。または、グリッド幅の冗長な削減を手動で設定します（約ScaleFactor = 0.5）。ただし、具体的な文書にスケーリングが必要かどうかを判断してはいけません。文書に不必要なグリッド幅の冗長な削減を設定すると（それが必要でない場合）、抽出されるテキスト内容は完全に適切です。次のコードスニペットをご覧ください。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも動作します。
 
 ```csharp
 // 完全な例やデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
@@ -232,8 +232,8 @@ System.IO.File.WriteAllText(dataDir + "ExtractTextUsingScaleFactor_out.text", ex
 
 PDFドキュメントからテキストを抽出するさまざまなシナリオで、PDFドキュメントから強調表示されたテキストのみを抽出する要件が発生することがあります。この機能を実装するために、APIにはTextMarkupAnnotation.GetMarkedText()メソッドとTextMarkupAnnotation.GetMarkedTextFragments()メソッドが追加されました。TextMarkupAnnotationをフィルタリングして、上記のメソッドを使用してPDFドキュメントから強調表示されたテキストを抽出できます。次のコードスニペットは、PDFドキュメントから強調表示されたテキストを抽出する方法を示しています。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリとも連携します。
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも連携します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
@@ -263,7 +263,7 @@ foreach (Annotation annotation in doc.Pages[1].Annotations)
 時々、XMLから生成されたPDFドキュメントを処理する際に、TextFragementまたはTextSegment項目にアクセスする必要があります。
 時々、XMLから生成されたPDFドキュメントを処理する際に、TextFragementまたはTextSegmentアイテムにアクセスする必要があります。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも動作します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。

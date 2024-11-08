@@ -3,7 +3,7 @@ title: Aspose.PDFの主な機能
 linktitle: 主な機能
 type: docs
 weight: 80
-url: ja/java/key-features/
+url: /ja/java/key-features/
 description: Aspose.PDF for Javaは、主な機能を示し、サポートされているPDFバージョンと、ドキュメントで行えるすべての操作を説明します。
 lastmod: "2021-06-05"
 sitemap:

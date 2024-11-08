@@ -2,7 +2,7 @@
 title: Установка информации о PDF файле
 type: docs
 weight: 40
-url: ru/net/set-pdf-file-information/
+url: /ru/net/set-pdf-file-information/
 description: Этот раздел объясняет, как установить информацию о PDF файле с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

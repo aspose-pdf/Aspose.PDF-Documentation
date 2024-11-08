@@ -2,7 +2,7 @@
 title: 강제 테이블 렌더링을 새 페이지에서 시작하기
 type: docs
 weight: 20
-url: ko/java/force-table-rendering-on-new-page/
+url: /ko/java/force-table-rendering-on-new-page/
 lastmod: "2021-06-05"
 ---
 

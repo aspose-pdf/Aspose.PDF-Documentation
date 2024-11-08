@@ -3,7 +3,7 @@ title: Bekerja dengan Formulir
 linktitle: Bekerja dengan Formulir
 type: docs
 weight: 60
-url: id/net/working-with-forms/
+url: /id/net/working-with-forms/
 description: Bagian ini menjelaskan bagaimana cara bekerja dengan AcroForms dan Formulir XFA dalam dokumen PDF Anda dengan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,8 +79,8 @@ sitemap:
 Bagian ini menjelaskan pendekatan cepat dan sederhana untuk secara programatis melengkapi dokumen PDF melalui penggunaan Aspose.PDF. Bagian ini juga membahas bagaimana seseorang dapat menggunakan Aspose.PDF untuk .NET untuk menemukan dan memetakan bidang yang tersedia dalam PDF yang ada dengan AcroForms.
 Selain itu, Anda akan belajar cara bekerja dengan XFA - teknologi lain untuk formulir presentasi berbasis XML.
 
-- [AcroForms](/pdf/net/acroforms/) - membuat formulir, mengisi bidang formulir, mengekstrak data dari formulir, menambah dan menghapus bidang di PDF Anda dengan perpustakaan .NET.
-- [XFA Forms](/pdf/net/xfa-forms/) - mengisi bidang XFA, mengonversi XFA, mendapatkan properti bidang XFA.
+- [AcroForms](/pdf/id/net/acroforms/) - membuat formulir, mengisi bidang formulir, mengekstrak data dari formulir, menambah dan menghapus bidang di PDF Anda dengan perpustakaan .NET.
+- [XFA Forms](/pdf/id/net/xfa-forms/) - mengisi bidang XFA, mengonversi XFA, mendapatkan properti bidang XFA.
 
 <script type="application/ld+json">
 {

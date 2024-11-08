@@ -3,7 +3,7 @@ titre: Annotations supplémentaires en C++
 linktitle: Annotations supplémentaires
 type: docs
 poids: 60
-url: fr/cpp/extra-annotations/
+url: /fr/cpp/extra-annotations/
 description: Cette section décrit comment ajouter, obtenir et supprimer différents types d'annotations de votre document PDF.
 lastmod: "2021-11-24"
 sitemap:

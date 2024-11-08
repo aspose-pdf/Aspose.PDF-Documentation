@@ -2,7 +2,7 @@
 title: JPEG 변환기
 type: docs
 weight: 90
-url: ko/net/plugins/jpeg/
+url: /ko/net/plugins/jpeg/
 description: Aspose.PDF JPEG 변환기를 사용하여 PDF 페이지를 JPEG 이미지로 변환하는 방법
 lastmod: "2024-01-24"
 draft: false

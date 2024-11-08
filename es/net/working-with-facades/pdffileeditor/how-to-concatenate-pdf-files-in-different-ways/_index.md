@@ -3,7 +3,7 @@ title: Merge PDF files using .NET 5
 linktitle: How to merge PDF
 type: docs
 weight: 75
-url: es/net/how-to-concatenate-pdf-files-in-different-ways/
+url: /es/net/how-to-concatenate-pdf-files-in-different-ways/
 description: Este artículo explica las posibles formas de concatenar cualquier número de archivos PDF existentes en un solo archivo PDF.
 lastmod: "2021-06-05"
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Este artículo describe cómo puede [Concatenar](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) múltiples documentos PDF en un solo documento PDF con la ayuda del componente [Aspose.PDF for .NET](/pdf/net/). [Aspose.PDF for .NET](/pdf/net/) hace este trabajo como si fuera pan comido.
+Este artículo describe cómo puede [Concatenar](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) múltiples documentos PDF en un solo documento PDF con la ayuda del componente [Aspose.PDF for .NET](/pdf/es/net/). [Aspose.PDF for .NET](/pdf/es/net/) hace este trabajo como si fuera pan comido.
 
 {{% /alert %}}
 

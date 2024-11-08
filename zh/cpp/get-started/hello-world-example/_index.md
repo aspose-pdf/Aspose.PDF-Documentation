@@ -3,7 +3,7 @@ title: Aspose.PDF C++ 示例
 linktitle: Hello World 示例
 type: docs
 weight: 40
-url: zh/cpp/hello-world-example/
+url: /zh/cpp/hello-world-example/
 description: 本页面展示如何使用简单的编程来创建包含文本 - Hello World 的 PDF 文档。
 lastmod: "2021-11-01"
 sitemap:

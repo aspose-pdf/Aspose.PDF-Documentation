@@ -3,7 +3,7 @@ title: Removendo anexos de PDF em Node.js
 linktitle: Removendo anexo de um PDF existente
 type: docs
 weight: 10
-url: pt/nodejs-cpp/removing-attachment-from-an-existing-pdf/
+url: /pt/nodejs-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF pode remover anexos de seus documentos PDF. Use o ambiente Node.js para remover anexos em arquivos PDF com Aspose.PDF.
 lastmod: "2023-11-16"
 sitemap:

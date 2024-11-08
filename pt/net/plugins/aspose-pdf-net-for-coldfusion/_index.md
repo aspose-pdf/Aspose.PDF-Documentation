@@ -2,7 +2,7 @@
 title: Utilizando Aspose.Pdf para .NET com Coldfusion
 type: docs
 weight: 300
-url: pt/net/using-aspose-pdf-for-net-with-coldfusion/
+url: /pt/net/using-aspose-pdf-for-net-with-coldfusion/
 description: Você deve trabalhar com Aspose.Pdf para .NET com Coldfusion usando a classe PdfFileInfo
 lastmod: "2021-07-14"
 draft: false

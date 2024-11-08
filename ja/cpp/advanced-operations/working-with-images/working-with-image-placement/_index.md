@@ -3,7 +3,7 @@ title: C++を使用した画像配置の操作
 linktitle: 画像配置の操作
 type: docs
 weight: 50
-url: ja/cpp/working-with-image-placement/
+url: /ja/cpp/working-with-image-placement/
 description: このセクションでは、C++ライブラリを使用した画像配置PDFファイルの操作機能について説明します。
 lastmod: "2021-12-18"
 ---

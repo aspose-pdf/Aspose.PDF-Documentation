@@ -3,7 +3,7 @@ title: Eliminando adjunto de PDF usando Python
 linktitle: Eliminando adjunto de un PDF existente
 type: docs
 weight: 30
-url: es/python-net/removing-attachment-from-an-existing-pdf/
+url: /es/python-net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF puede eliminar adjuntos de tus documentos PDF. Usa la API de PDF de Python para eliminar adjuntos en archivos PDF usando Aspose.PDF para la biblioteca de Python a través de .NET.
 lastmod: "2023-02-17"
 sitemap:

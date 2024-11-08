@@ -2,7 +2,7 @@
 title: Тестирование лицензии
 type: docs
 weight: 20
-url: ru/sharepoint/testing-a-license/
+url: /ru/sharepoint/testing-a-license/
 lastmod: "2020-12-16"
 description: Чтобы проверить, что лицензия для PDF SharePoint API была успешно установлена, конвертируйте любой документ в желаемый формат, и он должен быть сгенерирован без какого-либо предупреждения об оценке.
 ---

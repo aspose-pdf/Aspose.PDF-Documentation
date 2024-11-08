@@ -2,7 +2,7 @@
 title: Get Button Option Value
 type: docs
 weight: 40
-url: ko/net/get-button-option-value/
+url: /ko/net/get-button-option-value/
 description: 이 섹션에서는 Form Class를 사용하여 Aspose.PDF Facades로 버튼 옵션 값을 얻는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: 添加、删除和获取注释使用 Python
 linktitle: 添加、删除和获取注释
 type: docs
 weight: 20
-url: zh/python-net/add-delete-and-get-annotation/
+url: /zh/python-net/add-delete-and-get-annotation/
 description: 使用 Aspose.PDF for Python，您可以从 PDF 文件中添加、删除和获取注释。检查所有注释列表以解决您的任务。
 lastmod: "2023-02-17"
 sitemap:
@@ -83,8 +83,8 @@ PDF文档中的注释是允许用户以某种方式在文档中分配内容的�
 
 我们将Aspose.PDF for Python库中可用的不同种类的注释组合成组：
 
-- [PDF文本注释](/pdf/python-net/text-annotation/)
-- [PDF高亮注释](/pdf/python-net/highlights-annotation/)
-- [PDF图形注释](/pdf/python-net/figures-annotation/)
-- [PDF便签注释](/pdf/python-net/sticky-annotations/)
-- [额外注释](/pdf/python-net/extra-annotations/)
+- [PDF文本注释](/pdf/zh/python-net/text-annotation/)
+- [PDF高亮注释](/pdf/zh/python-net/highlights-annotation/)
+- [PDF图形注释](/pdf/zh/python-net/figures-annotation/)
+- [PDF便签注释](/pdf/zh/python-net/sticky-annotations/)
+- [额外注释](/pdf/zh/python-net/extra-annotations/)

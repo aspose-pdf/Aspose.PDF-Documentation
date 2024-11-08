@@ -2,7 +2,7 @@
 title: Extraer Texto de Todas las Páginas de un Documento PDF en Jython
 type: docs
 weight: 30
-url: es/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/
+url: /es/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Генерация миниатюрных изображений из PDF
 linktitle: Генерация миниатюрных изображений
 type: docs
 weight: 110
-url: ru/net/generate-thumbnail-images-from-pdf-documents/
+url: /ru/net/generate-thumbnail-images-from-pdf-documents/
 description: Этот раздел описывает, как создавать миниатюрные изображения из документов PDF
 lastmod: "2022-02-17"
 ---

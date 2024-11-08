@@ -3,7 +3,7 @@ title: Rogner les pages PDF par programmation
 linktitle: Rogner les pages
 type: docs
 weight: 80
-url: fr/java/crop-pages/
+url: /fr/java/crop-pages/
 description: Vous pouvez obtenir les propriétés de la page, telles que la largeur, la hauteur, la boîte de fond perdu, de rognage et de découpe à l'aide de Aspose.PDF pour Java.
 lastmod: "2021-06-05"
 sitemap:

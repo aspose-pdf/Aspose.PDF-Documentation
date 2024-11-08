@@ -2,7 +2,7 @@
 title: JPEG コンバーター
 type: docs
 weight: 90
-url: ja/net/plugins/jpeg/
+url: /ja/net/plugins/jpeg/
 description: Aspose.PDF JPEG コンバーターを使用して PDF ページを JPEG 画像に変換する方法
 lastmod: "2024-01-24"
 draft: false

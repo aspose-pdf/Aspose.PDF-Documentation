@@ -2,7 +2,7 @@
 title: Qt에서 PDF 문서 작업
 type: docs
 weight: 130
-url: ko/cpp/work-with-pdf-documents-in-qt/
+url: /ko/cpp/work-with-pdf-documents-in-qt/
 lastmod: "2021-11-01"
 ---
 

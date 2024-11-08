@@ -2,7 +2,7 @@
 title: 方法名称的更改
 type: docs
 weight: 10
-url: zh/java/change-in-methods-name/
+url: /zh/java/change-in-methods-name/
 lastmod: "2022-01-27"
 ---
 

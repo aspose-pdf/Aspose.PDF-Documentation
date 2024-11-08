@@ -3,7 +3,7 @@ title: Características Clave de Aspose.PDF para Node.js
 linktitle: Características Clave
 type: docs
 weight: 20
-url: es/nodejs-cpp/key-features/
+url: /es/nodejs-cpp/key-features/
 description: Aspose.PDF para Node.js via C++ demuestra sus características generales. Esta página describe las versiones de PDF compatibles, y todas las manipulaciones que podemos hacer con texto, imágenes, páginas, etc.
 lastmod: "2023-11-16"
 sitemap:

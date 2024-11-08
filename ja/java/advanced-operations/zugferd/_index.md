@@ -3,7 +3,7 @@ title: ZUGFeRDを使う
 linktitle: ZUGFeRDを使う
 type: docs
 weight: 90
-url: ja/java/working-with-zugferd/
+url: /ja/java/working-with-zugferd/
 description: Aspose.PDF for Javaを使用してZUGFeRD準拠のPDF請求書を作成する方法を学ぶ
 lastmod: "2024-01-17"
 sitemap:
@@ -31,13 +31,13 @@ It also meets the legal requirements for long-term archiving and tax compliance.
 ZUGFeRD provides users with many benefits and cost savings, such as quicker processing, fewer errors, better cash flow, and less environmental impact.  
 ZUGFeRDは、より迅速な処理、エラーの減少、キャッシュフローの改善、環境への影響の低減など、多くの利点とコスト削減をユーザーに提供します。
 
-* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Java](/pdf/java/attach-zugferd/)  
+* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Java](/pdf/ja/java/attach-zugferd/)  
   JavaでPDF/3-Aに準拠したPDFを作成し、ZUGFeRD請求書を添付する
 
 See also:  
 関連情報:
 
-* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in .NET](/pdf/net/attach-zugferd/)  
+* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in .NET](/pdf/ja/net/attach-zugferd/)  
   .NETでPDF/3-Aに準拠したPDFを作成し、ZUGFeRD請求書を添付する
-* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Python](/pdf/python-net/attach-zugferd/)  
+* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Python](/pdf/ja/python-net/attach-zugferd/)  
   PythonでPDF/3-Aに準拠したPDFを作成し、ZUGFeRD請求書を添付する

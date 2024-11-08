@@ -2,7 +2,7 @@
 title: 既存のPDFにTOCを追加する（Python）
 type: docs
 weight: 20
-url: ja/java/add-toc-to-existing-pdf-in-python/
+url: /ja/java/add-toc-to-existing-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

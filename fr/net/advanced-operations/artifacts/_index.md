@@ -3,7 +3,7 @@ title: Travailler avec les artefacts en .NET
 linktitle: Travailler avec les artefacts
 type: docs
 weight: 110
-url: fr/net/artifacts/
+url: /fr/net/artifacts/
 description: Aspose.PDF pour .NET vous permet d'ajouter une image de fond aux pages PDF, et d'obtenir chaque filigrane en utilisant la classe Artifact.
 lastmod: "2024-01-17"
 sitemap:
@@ -110,8 +110,8 @@ Pour obtenir tous les filigranes sur une page particulière, la classe [Page](ht
 
 Le snippet de code suivant montre comment obtenir tous les filigranes sur la première page d'un fichier PDF.
 
-_Note :_ Ce code fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
-_Note :_ Ce code fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+_Note :_ Ce code fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+_Note :_ Ce code fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 var document = new Document(System.IO.Path.Combine(_dataDir, "sample-w.pdf"));

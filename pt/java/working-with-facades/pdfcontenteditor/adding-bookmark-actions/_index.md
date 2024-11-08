@@ -2,7 +2,7 @@
 title: Adicionando ações de Favoritos a um arquivo PDF existente
 type: docs
 weight: 20
-url: pt/java/adding-bookmark-actions/
+url: /pt/java/adding-bookmark-actions/
 description: Esta seção explica como adicionar ações de Favoritos a um arquivo PDF existente com Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

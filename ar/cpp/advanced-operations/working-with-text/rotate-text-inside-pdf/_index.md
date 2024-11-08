@@ -3,7 +3,7 @@ title: تدوير النص داخل PDF باستخدام C++
 linktitle: تدوير النص داخل PDF
 type: docs
 weight: 50
-url: ar/cpp/rotate-text-inside-pdf/
+url: /ar/cpp/rotate-text-inside-pdf/
 description: تعرف على طرق مختلفة لتدوير النص إلى PDF. يتيح لك Aspose.PDF تدوير النص بأي زاوية، تدوير جزء من النص أو فقرة كاملة.
 lastmod: "2021-12-13"
 sitemap:

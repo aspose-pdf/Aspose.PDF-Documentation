@@ -2,7 +2,7 @@
 title: الحصول على بيانات XMP الوصفية من ملف PDF موجود - الواجهات
 type: docs
 weight: 10
-url: ar/java/get-xmp-metadata/
+url: /ar/java/get-xmp-metadata/
 description: يوضح هذا القسم كيفية الحصول على بيانات xmp الوصفية باستخدام Aspose.PDF Facades باستخدام فئة PdfXmpMetadata.
 lastmod: "2021-06-05"
 sitemap:

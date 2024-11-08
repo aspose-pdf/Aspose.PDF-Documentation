@@ -3,7 +3,7 @@ title: Trabalhando com Metadados de Arquivo PDF usando JavaScript via C++
 linktitle: Metadados de Arquivo PDF
 type: docs
 weight: 130
-url: pt/javascript-cpp/pdf-file-metadata/
+url: /pt/javascript-cpp/pdf-file-metadata/
 description: Esta seção explica como obter informações de arquivo PDF, como obter metadados de um arquivo PDF, definir Informações de Arquivo PDF.
 lastmod: "2023-02-17"
 sitemap:

@@ -8,7 +8,7 @@ type: docs
 
 weight: 20
 
-url: id/sharepoint/add-watermark-to-pdf/
+url: /id/sharepoint/add-watermark-to-pdf/
 
 lastmod: "2020-12-16"
 

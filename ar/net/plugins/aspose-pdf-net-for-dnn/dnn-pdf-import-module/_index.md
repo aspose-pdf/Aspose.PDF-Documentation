@@ -2,7 +2,7 @@
 title: وحدة استيراد PDF لـ DNN
 type: docs
 weight: 10
-url: ar/net/dnn-pdf-import-module/
+url: /ar/net/dnn-pdf-import-module/
 description: تعرف على كيفية تثبيت واستخدام وحدة استيراد PDF لـ DotNetNuke
 lastmod: "2021-06-05"
 sitemap:

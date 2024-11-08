@@ -3,7 +3,7 @@ title: PDF에서 텍스트 추출 C#
 linktitle: PDF에서 텍스트 추출
 type: docs
 weight: 10
-url: ko/net/extract-text-from-all-pdf/
+url: /ko/net/extract-text-from-all-pdf/
 description: 이 문서는 C#에서 Aspose.PDF를 사용하여 PDF 문서에서 텍스트를 추출하는 다양한 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 PDF 문서에서 텍스트를 추출하는 것은 일반적인 요구사항입니다. 이 예제에서는 Aspose.PDF for .NET이 PDF 문서의 모든 페이지에서 텍스트를 추출할 수 있게 하는 방법을 보여줍니다. **TextAbsorber** 클래스의 객체를 생성해야 합니다. 그 후, **Document** 클래스를 사용하여 PDF를 열고 **Pages** 컬렉션의 **Accept** 메서드를 호출합니다. **TextAbsorber** 클래스는 문서에서 텍스트를 흡수하고 **Text** 속성에서 반환합니다. 다음 코드 스니펫은 PDF 문서의 모든 페이지에서 텍스트를 추출하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ```csharp
 // 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
@@ -40,7 +40,7 @@ tw.Close();
 ```
 **Accept** 메소드를 Document 객체의 특정 페이지에서 호출하세요. Index는 텍스트를 추출해야 하는 특정 페이지 번호입니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ```csharp
 // 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
@@ -83,7 +83,7 @@ tw.Close();
 1. TextDevice 클래스의 Process 메서드를 사용하여 내용을 텍스트로 변환합니다
 1. 텍스트를 출력 파일에 저장합니다
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요
@@ -132,8 +132,8 @@ File.WriteAllText(dataDir, builder.ToString());
 
 페이지의 **Accept** 메소드가 텍스트를 추출하기 위해 호출됩니다. **Document** 및 **TextAbsorber** 클래스의 객체를 생성합니다. **Document** 객체의 개별 페이지에 대해 **Accept** 메소드를 호출하세요. **Index**는 텍스트를 추출할 특정 페이지 번호입니다. **TextAbsorber** 클래스의 **Text** 속성에서 텍스트를 가져올 수 있습니다. 다음 코드 스니펫은 개별 페이지에서 텍스트를 추출하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ```csharp
 // 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
@@ -166,7 +166,7 @@ tw.Close();
 PDF 파일은 텍스트, 이미지, 주석, 첨부 파일, 그래프 등의 요소로 구성될 수 있으며, Aspose.PDF for .NET은 이러한 모든 요소를 추가하고 조작하는 기능을 제공합니다.
 PDF 파일은 텍스트, 이미지, 주석, 첨부 파일, 그래프 등의 요소를 포함할 수 있으며, Aspose.PDF for .NET은 이러한 모든 요소를 추가하고 조작하는 기능을 제공합니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
@@ -205,7 +205,7 @@ ScaleFactor 값을 0.1과 -0.1 사이로 지정하면 값이 0으로 처리되�
 
 텍스트 콘텐츠 추출을 위해 대량의 PDF 파일을 처리할 때 자동 스케일링(ScaleFactor = 0) 사용을 제안합니다. 또는 수동으로 그리드 너비의 중복 감소(대략 ScaleFactor = 0.5)를 설정합니다. 그러나 구체적인 문서에 대해 스케일링이 필요한지 여부를 결정해서는 안 됩니다. 문서에 대해 그리드 너비의 중복 감소를 설정하면(그것이 필요하지 않은 경우), 추출된 텍스트 콘텐츠는 완전히 적절하게 유지됩니다. 다음 코드 조각을 확인하십시오.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // 완벽한 예제와 데이터 파일을 보려면 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 으로 이동하세요
@@ -234,8 +234,8 @@ System.IO.File.WriteAllText( dataDir + "ExtractTextUsingScaleFactor_out.text", e
 
 PDF 문서에서 텍스트를 추출하는 다양한 시나리오에서 PDF 문서에서 하이라이트된 텍스트만을 추출할 필요가 있을 수 있습니다. 이 기능을 구현하기 위해, API에 TextMarkupAnnotation.GetMarkedText() 및 TextMarkupAnnotation.GetMarkedTextFragments() 메소드를 추가했습니다. TextMarkupAnnotation을 필터링하고 언급된 메소드를 사용하여 PDF 문서에서 하이라이트된 텍스트를 추출할 수 있습니다. 다음 코드 스니펫은 PDF 문서에서 하이라이트된 텍스트를 추출하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ```csharp
 // 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
@@ -265,7 +265,7 @@ foreach (Annotation annotation in doc.Pages[1].Annotations)
 때때로, XML에서 생성된 PDF 문서를 처리할 때 TextFragement나 TextSegment 항목에 접근할 필요가 있습니다.
 가끔 XML에서 생성된 PDF 문서를 처리할 때 TextFragment나 TextSegment 항목에 접근할 필요가 있습니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하십시오.

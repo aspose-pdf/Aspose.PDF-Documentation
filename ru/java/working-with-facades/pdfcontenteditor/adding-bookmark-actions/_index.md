@@ -2,7 +2,7 @@
 title: Добавление действий закладки в существующий PDF файл
 type: docs
 weight: 20
-url: ru/java/adding-bookmark-actions/
+url: /ru/java/adding-bookmark-actions/
 description: В этом разделе объясняется, как добавить действия закладки в существующий PDF файл с помощью Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

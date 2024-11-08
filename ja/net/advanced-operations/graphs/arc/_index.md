@@ -3,7 +3,7 @@ title: PDFファイルにアークオブジェクトを追加
 linktitle: アークの追加
 type: docs
 weight: 10
-url: ja/net/add-arc/
+url: /ja/net/add-arc/
 description: この記事では、Aspose.PDF for .NETを使用してPDFにアークオブジェクトを作成する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## アークオブジェクトを追加する
 

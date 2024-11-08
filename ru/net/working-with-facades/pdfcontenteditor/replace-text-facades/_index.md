@@ -2,7 +2,7 @@
 title: Замена текста - Фасады
 type: docs
 weight: 40
-url: ru/net/replace-text-facades/
+url: /ru/net/replace-text-facades/
 description: Этот раздел объясняет, как работать с текстом - фасадами, используя класс PdfContentEditor.
 lastmod: "2021-06-24"
 draft: false

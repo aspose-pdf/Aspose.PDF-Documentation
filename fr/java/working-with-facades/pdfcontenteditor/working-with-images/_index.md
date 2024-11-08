@@ -2,7 +2,7 @@
 title: Travailler avec des Images
 type: docs
 weight: 30
-url: fr/java/working-with-image/
+url: /fr/java/working-with-image/
 description: Cette section explique comment remplacer une image avec Aspose.PDF Facades - un ensemble d'outils pour les opérations populaires avec PDF.
 lastmod: "2021-06-25"
 sitemap:

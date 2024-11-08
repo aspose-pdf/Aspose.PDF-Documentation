@@ -2,7 +2,7 @@
 title: Decorar Campo de Formulário em PDF
 type: docs
 weight: 20
-url: pt/java/decorate-form-field/
+url: /pt/java/decorate-form-field/
 description: Esta seção explica como decorar Campo de Formulário em PDF usando a Classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

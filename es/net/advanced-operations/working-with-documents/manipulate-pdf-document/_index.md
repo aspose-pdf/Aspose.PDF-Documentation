@@ -3,7 +3,7 @@ title: Manipular Documento PDF en C#
 linktitle: Manipular Documento PDF
 type: docs
 weight: 20
-url: es/net/manipulate-pdf-document/
+url: /es/net/manipulate-pdf-document/
 description: Este artículo contiene información sobre cómo validar un Documento PDF para el Estándar PDF A, cómo trabajar con TOC, cómo establecer la fecha de expiración de un PDF, etc.
 keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
@@ -88,7 +88,7 @@ El formato XML de salida es un formato personalizado de Aspose. El XML contiene 
 
 {{% /alert %}}
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente fragmento de código te muestra cómo validar un documento PDF para PDF/A-1A.
 El siguiente fragmento de código te muestra cómo validar un documento PDF para PDF/A-1A.

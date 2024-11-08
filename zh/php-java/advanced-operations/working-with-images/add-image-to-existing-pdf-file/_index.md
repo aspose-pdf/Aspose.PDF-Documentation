@@ -3,7 +3,7 @@ title: 将图像添加到现有PDF文件
 linktitle: 添加图像
 type: docs
 weight: 10
-url: zh/php-java/add-image-to-existing-pdf-file/
+url: /zh/php-java/add-image-to-existing-pdf-file/
 description: 本节描述如何使用PHP将图像添加到现有PDF文件。
 lastmod: "2024-06-05"
 ---

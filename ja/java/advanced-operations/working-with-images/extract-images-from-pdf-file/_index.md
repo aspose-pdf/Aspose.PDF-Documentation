@@ -3,7 +3,7 @@ title: PDFファイルから画像を抽出する
 linktitle: 画像を抽出する
 type: docs
 weight: 30
-url: ja/java/extract-images-from-pdf-file/
+url: /ja/java/extract-images-from-pdf-file/
 description: このセクションでは、Javaライブラリを使用してPDFファイルから画像を抽出する方法を示します。
 lastmod: "2021-06-05"
 ---

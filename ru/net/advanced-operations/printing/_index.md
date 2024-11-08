@@ -3,7 +3,7 @@ title: Печать PDF документов
 linktitle: Печать документа
 type: docs
 weight: 160
-url: ru/net/printing-document/
+url: /ru/net/printing-document/
 description: Техники печати PDF в C# и руководство по настройкам принтера PDF в C# и советы для проектов .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -79,11 +79,11 @@ aliases:
 </script>
 ## Как печатать PDF-файлы в C#
 
-- [Печать PDF в .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
-- [Печать PDF на XPS принтере (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [Конвертация PDF в PostScript, Проверка статуса задания печати](/pdf/net/pdf-to-postscript-conversion/)
-- [Печать PDF в .NET Core](/pdf/net/print-dotnetcore/)
-- [Печать PDF-документа в приложении WPF](/pdf/net/print-pdf-document-in-wpf-application/)
+- [Печать PDF в .NET Framework](/pdf/ru/net/printing-pdf-in-net-framework/)
+- [Печать PDF на XPS принтере (Facades)](/pdf/ru/net/printing-pdf-to-an-xps-printer-facades/)
+- [Конвертация PDF в PostScript, Проверка статуса задания печати](/pdf/ru/net/pdf-to-postscript-conversion/)
+- [Печать PDF в .NET Core](/pdf/ru/net/print-dotnetcore/)
+- [Печать PDF-документа в приложении WPF](/pdf/ru/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

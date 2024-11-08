@@ -2,7 +2,7 @@
 title: العمل مع عنصر القائمة
 type: docs
 weight: 30
-url: ar/net/working-with-list-item/
+url: /ar/net/working-with-list-item/
 description: يشرح هذا القسم كيفية العمل مع عنصر القائمة باستخدام Aspose.PDF Facades باستخدام فئة FormEditor.
 lastmod: "2021-06-05"
 draft: false

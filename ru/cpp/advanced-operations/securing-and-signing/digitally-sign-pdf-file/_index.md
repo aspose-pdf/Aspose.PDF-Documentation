@@ -3,7 +3,7 @@ title: Как цифрово подписать PDF
 linktitle: Цифровая подпись PDF
 type: docs
 weight: 10
-url: ru/cpp/digitally-sign-pdf-file/
+url: /ru/cpp/digitally-sign-pdf-file/
 description: Цифровая подпись PDF документов с использованием C++. Проверка или валидация цифрово подписанных PDF с использованием C++.
 lastmod: "2021-12-15"
 sitemap:

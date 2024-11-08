@@ -3,7 +3,7 @@ title: Extrair Textos SuperScripts e SubScripts de PDF
 linktitle: Extrair SuperScripts e SubScripts
 type: docs
 weight: 30
-url: pt/net/extract-superscripts-subscripts-from-pdf/
+url: /pt/net/extract-superscripts-subscripts-from-pdf/
 description: Este artigo descreve várias maneiras de extrair textos SuperScripts e SubScripts de PDF usando Aspose.PDF em C#.
 lastmod: "2022-10-07"
 sitemap:
@@ -21,7 +21,7 @@ Em um dos últimos lançamentos, a biblioteca **Aspose.PDF for .NET** adicionou 
 
 Use a classe **TextFragmentAbsorber** e você já pode fazer qualquer coisa com o texto encontrado, ou seja, você pode simplesmente usar todo o texto. Experimente o próximo trecho de código:
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));
@@ -35,8 +35,8 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 Ou use **TextFragments** separadamente e faça todo tipo de manipulações com eles, por exemplo, ordenar por coordenadas ou por tamanho.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));

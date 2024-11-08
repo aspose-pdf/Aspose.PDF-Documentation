@@ -2,7 +2,7 @@
 title: 在 PDF 文件中插入空白页（Python）
 type: docs
 weight: 70
-url: zh/java/insert-an-empty-page-into-a-pdf-file-in-python/
+url: /zh/java/insert-an-empty-page-into-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

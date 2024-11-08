@@ -2,7 +2,7 @@
 title: 高级功能
 type: docs
 weight: 210
-url: zh/net/advanced-features/
+url: /zh/net/advanced-features/
 ---
 
 ## 将 Pdf 发送到浏览器以下载

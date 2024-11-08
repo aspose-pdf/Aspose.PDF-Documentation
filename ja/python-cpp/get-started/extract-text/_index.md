@@ -3,7 +3,7 @@ title: Pythonを使用してPDFからテキストを抽出
 linktitle: PDFからテキストを抽出
 type: docs
 weight: 10
-url: ja/python-cpp/extract-text/
+url: /ja/python-cpp/extract-text/
 description: このセクションでは、Pythonライブラリを使用してPDFドキュメントからテキストを抽出する方法について説明します。
 lastmod: "2024-04-14"
 sitemap:

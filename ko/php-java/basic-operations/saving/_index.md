@@ -3,7 +3,7 @@ title: PDF 문서 저장
 linktitle: 저장
 type: docs
 weight: 30
-url: ko/php-java/save-pdf-document/
+url: /ko/php-java/save-pdf-document/
 description: Aspose.PDF for PHP via Java 라이브러리를 사용하여 PDF 파일을 저장하는 방법을 학습합니다.
 lastmod: "2024-06-05"
 sitemap:

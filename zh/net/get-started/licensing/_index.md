@@ -3,7 +3,7 @@ title: Aspose PDF 许可证
 linktitle: 许可与限制
 type: docs
 weight: 90
-url: zh/net/licensing/
+url: /zh/net/licensing/
 description: Aspose. PDF for .NET 邀请其客户获取经典许可证和计量许可证。以及使用有限许可证更好地探索产品。
 lastmod: "2021-06-05"
 sitemap:

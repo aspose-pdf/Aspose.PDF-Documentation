@@ -2,7 +2,7 @@
 title: 更改 PDF 文件的密码
 type: docs
 weight: 40
-url: zh/java/change-password/
+url: /zh/java/change-password/
 description: 本主题讲解如何使用 PdfFileSecurity 类更改 PDF 文件的密码。
 lastmod: "2021-06-05"
 draft: false

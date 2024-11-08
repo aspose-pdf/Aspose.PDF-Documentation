@@ -2,7 +2,7 @@
 title: Rubyでドキュメントウィンドウとページ表示プロパティを設定する
 type: docs
 weight: 100
-url: ja/java/set-document-window-and-page-display-properties-in-ruby/
+url: /ja/java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: 确定换行符
 linktitle: 确定换行符
 type: docs
 weight: 70
-url: zh/python-net/determine-line-break/
+url: /zh/python-net/determine-line-break/
 description: 了解更多关于如何使用Python确定多行TextFragment的换行符
 lastmod: "2024-02-17"
 sitemap:

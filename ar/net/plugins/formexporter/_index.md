@@ -2,7 +2,7 @@
 title: مصدر النموذج
 type: docs
 weight: 50
-url: ar/net/plugins/formexpoter/
+url: /ar/net/plugins/formexpoter/
 description: كيفية تصدير قيم حقول النموذج إلى ملفات CSV باستخدام إضافة Aspose.PDF Form Exporter
 lastmod: "2024-01-24"
 draft: false

@@ -3,7 +3,7 @@ title: Travailler avec des tableaux dans PDF
 linktitle: Travailler avec des tableaux
 type: docs
 weight: 50
-url: fr/php-java/working-with-tables/
+url: /fr/php-java/working-with-tables/
 description: Cette section décrit comment ajouter et extraire un tableau, comment manipuler et intégrer un tableau en utilisant le PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -19,4 +19,4 @@ L'une des premières fonctionnalités prises en charge par Aspose.PDF pour PHP e
 
 Vous êtes capable de faire les actions suivantes :
 
-- [Créer ou ajouter un tableau dans un document PDF existant](/pdf/php-java/add-table-in-existing-pdf-document/) - créez votre tableau dans un fichier PDF en fusionnant les colonnes ou les lignes en tenant compte des bordures, marges et espacements.
+- [Créer ou ajouter un tableau dans un document PDF existant](/pdf/fr/php-java/add-table-in-existing-pdf-document/) - créez votre tableau dans un fichier PDF en fusionnant les colonnes ou les lignes en tenant compte des bordures, marges et espacements.

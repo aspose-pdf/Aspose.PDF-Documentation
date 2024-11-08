@@ -2,7 +2,7 @@
 title: Convertisseur JPEG
 type: docs
 weight: 90
-url: fr/net/plugins/jpeg/
+url: /fr/net/plugins/jpeg/
 description: Comment convertir des pages PDF en images JPEG à l'aide du convertisseur JPEG Aspose.PDF
 lastmod: "2024-01-24"
 draft: false

@@ -3,7 +3,7 @@ title: Aspose.PDF for JavaScript 的系统要求
 linktitle: 系统要求
 type: docs
 weight: 30
-url: zh/javascript-cpp/system-requirements/
+url: /zh/javascript-cpp/system-requirements/
 description: 本节列出了开发人员需要通过 C++ 成功使用 Aspose.PDF for JavaScript 所支持的操作系统。
 lastmod: "2022-12-13"
 sitemap:

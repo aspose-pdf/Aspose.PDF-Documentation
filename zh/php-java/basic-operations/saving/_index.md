@@ -3,7 +3,7 @@ title: 保存 PDF 文档
 linktitle: 保存
 type: docs
 weight: 30
-url: zh/php-java/save-pdf-document/
+url: /zh/php-java/save-pdf-document/
 description: 了解如何使用 Aspose.PDF for PHP via Java 库保存 PDF 文件。
 lastmod: "2024-06-05"
 sitemap:

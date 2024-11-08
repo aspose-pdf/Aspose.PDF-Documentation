@@ -2,7 +2,7 @@
 title: Преобразование PDF в Excel книгу в Ruby
 type: docs
 weight: 40
-url: ru/java/convert-pdf-to-excel-workbook-in-ruby/
+url: /ru/java/convert-pdf-to-excel-workbook-in-ruby/
 lastmod: "2021-06-05"
 ---
 

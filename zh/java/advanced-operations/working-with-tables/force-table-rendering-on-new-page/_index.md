@@ -2,7 +2,7 @@
 title: 强制表格在新页面渲染
 type: docs
 weight: 20
-url: zh/java/force-table-rendering-on-new-page/
+url: /zh/java/force-table-rendering-on-new-page/
 lastmod: "2021-06-05"
 ---
 

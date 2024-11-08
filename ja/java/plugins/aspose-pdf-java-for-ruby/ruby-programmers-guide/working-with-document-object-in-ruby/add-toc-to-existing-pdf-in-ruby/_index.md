@@ -2,7 +2,7 @@
 title: 既存のPDFにTOCを追加する方法（Ruby）
 type: docs
 weight: 30
-url: ja/java/add-toc-to-existing-pdf-in-ruby/
+url: /ja/java/add-toc-to-existing-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -4,7 +4,7 @@ title: Dasar-dasar Aspose.PDF DOM API
 linktitle: Dasar-dasar DOM API
 type: docs
 weight: 120
-url: id/cpp/basics-of-dom-api/
+url: /id/cpp/basics-of-dom-api/
 description: Aspose.PDF untuk C++ juga menggunakan ide DOM untuk merepresentasikan struktur dokumen PDF dalam bentuk objek. Di sini Anda dapat membaca deskripsi struktur ini.
 lastmod: "2021-06-05"
 sitemap:

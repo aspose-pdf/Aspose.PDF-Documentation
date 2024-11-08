@@ -3,7 +3,7 @@ title: Modifier la Taille des Pages PDF Programmatiquement
 linktitle: Modifier la Taille des Pages
 type: docs
 weight: 50
-url: fr/java/change-page-size/
+url: /fr/java/change-page-size/
 description: Modifier la taille des pages de votre fichier PDF en utilisant la bibliothèque Java.
 lastmod: "2021-06-05"
 sitemap:

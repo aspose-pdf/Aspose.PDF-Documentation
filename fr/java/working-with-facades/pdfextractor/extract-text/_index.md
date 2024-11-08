@@ -2,7 +2,7 @@
 title: Extraire des images d'un PDF (facades)
 type: docs
 weight: 30
-url: fr/java/extract-images/
+url: /fr/java/extract-images/
 description: Cette section explique comment extraire des images avec Aspose.PDF Facades en utilisant la classe PdfExtractor.
 lastmod: "2021-06-05"
 sitemap:

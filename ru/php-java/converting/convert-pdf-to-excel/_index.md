@@ -3,7 +3,7 @@ title: Конвертировать PDF в Microsoft Excel
 linktitle: Конвертировать PDF в Excel
 type: docs
 weight: 20
-url: ru/php-java/convert-pdf-to-excel/
+url: /ru/php-java/convert-pdf-to-excel/
 lastmod: "2024-05-20"
 keywords: конвертировать PDF в Excel с использованием PHP, конвертировать PDF в XLS с использованием PHP, конвертировать PDF в XLSX с использованием PHP, экспортировать таблицу из PDF в Excel в PHP.
 description: Aspose.PDF для PHP позволяет конвертировать PDF в формат Excel с использованием PHP. При этом отдельные страницы PDF файла конвертируются в листы Excel.

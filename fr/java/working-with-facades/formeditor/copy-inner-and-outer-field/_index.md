@@ -2,7 +2,7 @@
 title: Copier le Champ Intérieur et Extérieur
 type: docs
 weight: 40
-url: fr/java/copy-inner-and-outer-field/
+url: /fr/java/copy-inner-and-outer-field/
 description: Cette section explique comment copier le champ intérieur et extérieur avec com.aspose.pdf.facades en utilisant la classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

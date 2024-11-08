@@ -3,7 +3,7 @@ title: Ajouter un tampon de page PDF au PDF
 linktitle: Tampons de page dans le fichier PDF
 type: docs
 weight: 30
-url: fr/java/page-stamps-in-the-pdf-file/
+url: /fr/java/page-stamps-in-the-pdf-file/
 description: Ajouter un tampon de page à un fichier PDF en utilisant la classe PdfPageStamp avec Java.
 lastmod: "2021-09-10"
 sitemap:

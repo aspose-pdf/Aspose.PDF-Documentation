@@ -3,7 +3,7 @@ title: Использование FloatingBox для генерации текс
 linktitle: Использование FloatingBox
 type: docs
 weight: 30
-url: ru/net/floating-box/
+url: /ru/net/floating-box/
 description: Эта страница объясняет, как форматировать текст внутри плавающего блока.
 lastmod: "2022-02-17"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-Эта функция также работает в библиотеке [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Эта функция также работает в библиотеке [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Основы использования инструмента FloatingBox
 

@@ -2,7 +2,7 @@
 title: Python에서 PDF를 Excel 워크북으로 변환
 type: docs
 weight: 20
-url: ko/java/convert-pdf-to-excel-workbook-in-python/
+url: /ko/java/convert-pdf-to-excel-workbook-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Ekstrak dan Simpan Lampiran
 linktitle: Ekstrak dan Simpan Lampiran
 type: docs
 weight: 20
-url: id/cpp/extract-and-save-an-attachment/
+url: /id/cpp/extract-and-save-an-attachment/
 description: Aspose.PDF untuk C++ memungkinkan Anda untuk mendapatkan semua lampiran dari dokumen PDF. Juga, Anda dapat mendapatkan lampiran individual dari dokumen Anda.
 lastmod: "2022-02-07"
 sitemap:

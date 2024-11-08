@@ -2,7 +2,7 @@
 title: Ekstrak Teks Dari Semua Halaman Dokumen PDF di PHP
 type: docs
 weight: 30
-url: id/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
+url: /id/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
 lastmod: "2021-06-05"
 ---
 

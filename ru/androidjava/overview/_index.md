@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: ru/androidjava/overview/
+url: /ru/androidjava/overview/
 description: Обзор ключевых функций и поддерживаемых форматов Aspose.PDF для Android через Java, руководство по установке и лицензированию библиотеки Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -38,9 +38,9 @@ Aspose.PDF для Android через Java поддерживает широки�
 
 Узнайте больше о:
 
-- [Поддерживаемые форматы файлов](/pdf/androidjava/supported-file-formats/)
-- [Ключевые особенности Aspose.PDF](/pdf/androidjava/key-features/)
-- [Системные требования](/pdf/androidjava/system-requirements/)
-- [Установка](/pdf/androidjava/installation/)
-- [Лицензирование](/pdf/androidjava/licensing/)
-- [Техническая поддержка](/pdf/androidjava/technical-support/)
+- [Поддерживаемые форматы файлов](/pdf/ru/androidjava/supported-file-formats/)
+- [Ключевые особенности Aspose.PDF](/pdf/ru/androidjava/key-features/)
+- [Системные требования](/pdf/ru/androidjava/system-requirements/)
+- [Установка](/pdf/ru/androidjava/installation/)
+- [Лицензирование](/pdf/ru/androidjava/licensing/)
+- [Техническая поддержка](/pdf/ru/androidjava/technical-support/)

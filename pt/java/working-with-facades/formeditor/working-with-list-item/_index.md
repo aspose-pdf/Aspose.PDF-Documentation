@@ -2,7 +2,7 @@
 title: Trabalhando com Item de Lista
 type: docs
 weight: 30
-url: pt/java/working-with-list-item/
+url: /pt/java/working-with-list-item/
 description: Esta seção explica como trabalhar com Item de Lista usando com.aspose.pdf.facades com a classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

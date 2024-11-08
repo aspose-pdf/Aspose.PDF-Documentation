@@ -3,7 +3,7 @@ title: 将JPG转换为PDF
 linktitle: 将JPG转换为PDF 
 type: docs
 weight: 190
-url: zh/androidjava/convert-jpg-to-pdf/
+url: /zh/androidjava/convert-jpg-to-pdf/
 lastmod: "2021-06-05"
 description: 了解如何轻松将JPG图像转换为PDF文件。此外，您还可以将图像转换为与页面具有相同高度和宽度的PDF。
 sitemap:

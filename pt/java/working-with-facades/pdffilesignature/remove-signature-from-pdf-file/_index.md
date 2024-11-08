@@ -2,7 +2,7 @@
 title: Remover Assinatura de Arquivo PDF
 type: docs
 weight: 20
-url: pt/java/remove-signature-from-pdf/
+url: /pt/java/remove-signature-from-pdf/
 description: Esta seção explica como trabalhar com Assinatura em um Arquivo PDF usando a classe PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

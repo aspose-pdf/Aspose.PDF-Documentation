@@ -3,7 +3,7 @@ title: تحسين موارد PDF باستخدام JavaScript عبر C++
 linktitle: تحسين موارد PDF
 type: docs
 weight: 15
-url: ar/javascript-cpp/optimize-pdf-resources/
+url: /ar/javascript-cpp/optimize-pdf-resources/
 description: تحسين موارد ملفات PDF لعرض الويب السريع باستخدام أداة JavaScript.
 lastmod: "2022-12-15"
 sitemap:

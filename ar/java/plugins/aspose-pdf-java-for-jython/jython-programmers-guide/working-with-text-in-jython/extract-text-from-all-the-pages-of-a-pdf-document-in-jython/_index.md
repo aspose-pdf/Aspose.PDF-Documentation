@@ -2,7 +2,7 @@
 title: استخراج النص من جميع صفحات مستند PDF في Jython
 type: docs
 weight: 30
-url: ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/
+url: /ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/
 lastmod: "2021-06-05"
 ---
 

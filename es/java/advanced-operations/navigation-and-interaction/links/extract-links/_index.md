@@ -3,7 +3,7 @@ title: Extraer Enlaces del Archivo PDF
 linktitle: Extraer Enlaces
 type: docs
 weight: 30
-url: es/java/extract-links/
+url: /es/java/extract-links/
 description: Extraer enlaces de PDF con Java. Este tema le explica cómo extraer enlaces utilizando la clase AnnotationSelector.
 lastmod: "2021-06-05"
 sitemap:

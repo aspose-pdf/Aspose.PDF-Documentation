@@ -3,7 +3,7 @@ title: Основные возможности Aspose.PDF
 linktitle: Ключевые особенности
 type: docs
 weight: 80
-url: ru/net/key-features/
+url: /ru/net/key-features/
 description: Aspose.PDF для .NET демонстрирует его общие функции. Показывает поддерживаемые версии PDF и все манипуляции, которые мы можем проводить с PDF.
 lastmod: "2021-06-05"
 aliases:

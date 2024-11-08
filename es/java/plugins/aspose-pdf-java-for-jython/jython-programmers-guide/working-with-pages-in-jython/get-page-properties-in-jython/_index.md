@@ -2,7 +2,7 @@
 title: Obtener Propiedades de la Página en Jython
 type: docs
 weight: 50
-url: es/java/get-page-properties-in-jython/
+url: /es/java/get-page-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Работа с вложениями в PDF с использование
 linktitle: Работа с вложениями
 type: docs
 weight: 120
-url: ru/javascript-cpp/attachments/
+url: /ru/javascript-cpp/attachments/
 description: Используйте JavaScript PDF toolkit для доступа, добавления и удаления вложений в PDF файлах. Полное руководство с примерами кода на JavaScript.
 lastmod: "2023-09-17"
 sitemap:
@@ -17,4 +17,4 @@ sitemap:
 
 Вы узнаете, как добавлять вложения в pdf, получать информацию о вложении и сохранять его в файл, удалять вложение из PDF программно с помощью JavaScript.
 
-- [Удаление вложения из существующего PDF](/pdf/javascript-cpp/removing-attachment-from-an-existing-pdf/)
+- [Удаление вложения из существующего PDF](/pdf/ru/javascript-cpp/removing-attachment-from-an-existing-pdf/)

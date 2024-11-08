@@ -3,7 +3,7 @@ title: إضافة رأس وتذييل إلى PDF باستخدام بايثون
 linktitle: إضافة رأس وتذييل إلى PDF
 type: docs
 weight: 50
-url: ar/python-net/add-headers-and-footers-of-pdf-file/
+url: /ar/python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF لبايثون عبر .NET يتيح لك إضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام فئة TextStamp.
 lastmod: "2023-04-17"
 sitemap:

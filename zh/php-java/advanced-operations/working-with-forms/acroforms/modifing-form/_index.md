@@ -3,7 +3,7 @@ title: 修改AcroForms
 linktitle: 修改AcroForms
 type: docs
 weight: 40
-url: zh/java/modifing-form/
+url: /zh/java/modifing-form/
 description: 本节说明如何使用Aspose.PDF for PHP via Java修改PDF文档中的表单。
 lastmod: "2024-06-05"
 sitemap:

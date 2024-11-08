@@ -3,7 +3,7 @@ title: Поиск и Извлечение Текста со Страниц PDF
 linktitle: Поиск и Извлечение Текста
 type: docs
 weight: 60
-url: ru/python-net/search-and-get-text-from-pdf/
+url: /ru/python-net/search-and-get-text-from-pdf/
 description: Эта статья объясняет, как использовать различные инструменты для поиска и извлечения текста из Aspose.PDF для .NET.
 lastmod: "2024-02-17"
 sitemap:

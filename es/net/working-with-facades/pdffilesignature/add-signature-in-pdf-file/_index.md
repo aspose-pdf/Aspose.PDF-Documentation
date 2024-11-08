@@ -2,7 +2,7 @@
 title: Agregar Firma en Archivo PDF
 type: docs
 weight: 10
-url: es/net/add-signature-in-pdf/
+url: /es/net/add-signature-in-pdf/
 description: Esta sección explica cómo agregar firma a un archivo PDF usando la clase PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

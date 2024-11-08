@@ -3,7 +3,7 @@ title: Reparar PDF en Node.js
 linktitle: Reparar PDF
 type: docs
 weight: 10
-url: es/nodejs-cpp/repair-pdf/
+url: /es/nodejs-cpp/repair-pdf/
 description: Este tema describe cómo reparar PDF en el entorno de Node.js.
 lastmod: "2023-11-16"
 sitemap:

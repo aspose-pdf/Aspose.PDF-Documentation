@@ -2,7 +2,7 @@
 title: Управление Заголовком и Нижним Колонтитулом
 type: docs
 weight: 40
-url: ru/java/manage-header-and-footer/
+url: /ru/java/manage-header-and-footer/
 description: В этом разделе объясняется, как управлять заголовком и нижним колонтитулом с использованием Aspose.PDF Facades и класса PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

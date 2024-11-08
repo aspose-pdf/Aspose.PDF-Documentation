@@ -3,7 +3,7 @@ title: Travailler avec les pièces jointes dans les fichiers PDF
 linktitle: Travailler avec les pièces jointes
 type: docs
 weight: 130
-url: fr/net/attachments/
+url: /fr/net/attachments/
 description: Utilisez l'API PDF C# pour accéder, ajouter et supprimer des pièces jointes dans les fichiers PDF en utilisant C# depuis vos applications. Guide complet avec des exemples de code C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,10 +82,10 @@ Dans cette section, nous expliquerons comment travailler avec des pièces jointe
 Une pièce jointe est un fichier supplémentaire qui est attaché à un document parent, il peut s'agir de divers types de fichiers, tels que pdf, word, image ou d'autres fichiers. 
 Vous apprendrez comment ajouter des pièces jointes à un pdf, obtenir les informations d'une pièce jointe et l'enregistrer dans un fichier, supprimer la pièce jointe du PDF de manière programmatique avec C#.
 
-- [Ajout d'une pièce jointe à un document PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [Extraire et enregistrer une pièce jointe](/pdf/net/extract-and-save-an-attachment/)
-- [Suppression d'une pièce jointe d'un PDF existant](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Portfolio](/pdf/net/portfolio/)
+- [Ajout d'une pièce jointe à un document PDF](/pdf/fr/net/add-attachment-to-pdf-document/)
+- [Extraire et enregistrer une pièce jointe](/pdf/fr/net/extract-and-save-an-attachment/)
+- [Suppression d'une pièce jointe d'un PDF existant](/pdf/fr/net/removing-attachment-from-an-existing-pdf/)
+- [Portfolio](/pdf/fr/net/portfolio/)
 
 <script type="application/ld+json">
 {

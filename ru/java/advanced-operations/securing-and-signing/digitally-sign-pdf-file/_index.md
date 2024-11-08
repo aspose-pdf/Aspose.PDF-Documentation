@@ -3,7 +3,7 @@ title: How to digitally sign PDF
 linktitle: Digitally sign PDF
 type: docs
 weight: 10
-url: ru/java/digitally-sign-pdf-file/
+url: /ru/java/digitally-sign-pdf-file/
 description: Подпишите PDF документы с использованием Java. Проверьте или подтвердите цифровую подпись PDF с помощью Java-приложения с библиотекой PDF. Вы можете сертифицировать PDF файл с помощью PKCS1-сертификата.
 lastmod: "2021-06-05"
 sitemap:

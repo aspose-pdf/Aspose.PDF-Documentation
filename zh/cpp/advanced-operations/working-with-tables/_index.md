@@ -3,7 +3,7 @@ title: 使用 C++ 处理 PDF 中的表格
 linktitle: 使用表格
 type: docs
 weight: 50
-url: zh/cpp/working-with-tables/
+url: /zh/cpp/working-with-tables/
 description: 本节介绍如何使用 C++ 库添加和提取表格，如何操作和集成表格。
 lastmod: "2021-11-11"
 sitemap:
@@ -19,7 +19,7 @@ sitemap:
 
 您可以执行以下操作：
 
-- [在现有 PDF 文档中创建或添加表格](/pdf/cpp/add-table-in-existing-pdf-document/) - 在 PDF 文件中创建表格，并结合边框、边距和填充合并列或行。
-- [从现有 PDF 文档中提取表格](/pdf/cpp/extract-table-from-existing-pdf-document/) - 您可以从 PDF 文件中提取表格或将表格边框提取为图像。
-- [操作现有 PDF 中的表格](/pdf/cpp/manipulate-tables-in-existing-pdf/) - 使用 TableAbsorber 操作 PDF 中的表格。
-- [从现有 PDF 中删除表格](/pdf/cpp/remove-tables-from-existing-pdf/) - 从 PDF 文档中删除单个或多个表格。
+- [在现有 PDF 文档中创建或添加表格](/pdf/zh/cpp/add-table-in-existing-pdf-document/) - 在 PDF 文件中创建表格，并结合边框、边距和填充合并列或行。
+- [从现有 PDF 文档中提取表格](/pdf/zh/cpp/extract-table-from-existing-pdf-document/) - 您可以从 PDF 文件中提取表格或将表格边框提取为图像。
+- [操作现有 PDF 中的表格](/pdf/zh/cpp/manipulate-tables-in-existing-pdf/) - 使用 TableAbsorber 操作 PDF 中的表格。
+- [从现有 PDF 中删除表格](/pdf/zh/cpp/remove-tables-from-existing-pdf/) - 从 PDF 文档中删除单个或多个表格。

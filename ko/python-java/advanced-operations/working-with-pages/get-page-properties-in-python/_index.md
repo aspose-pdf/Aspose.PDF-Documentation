@@ -2,7 +2,7 @@
 title: 파이썬에서 페이지 속성 가져오기
 type: docs
 weight: 50
-url: ko/python-java/get-page-properties-in-python/
+url: /ko/python-java/get-page-properties-in-python/
 ---
 
 **Aspose.PDF Java for Python**을 사용하여 PDF 문서의 페이지 속성을 가져오려면, **GetPageProperties** 클래스를 호출하세요.

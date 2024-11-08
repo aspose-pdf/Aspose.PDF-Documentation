@@ -3,7 +3,7 @@ title: Trabalhando com Páginas de PDF
 linktitle: Trabalhando com Páginas
 type: docs
 weight: 20
-url: pt/java/working-with-pages/
+url: /pt/java/working-with-pages/
 description: Com Aspose.PDF para Java você pode adicionar páginas, adicionar cabeçalhos e rodapés, adicionar marcas d'água em seu arquivo PDF. Esta seção explica todos os detalhes sobre este tópico. 
 lastmod: "2021-06-05"
 sitemap:
@@ -23,16 +23,16 @@ Adicione números de página usando a classe PageNumberStamp. Para adicionar um 
 
 Você é capaz de fazer o seguinte:
 
-- [Adicionar Páginas](/pdf/java/add-pages/) - adicionar páginas na localização desejada ou ao final de um arquivo PDF e excluir uma página do seu documento.
-- [Mover Páginas](/pdf/java/move-pages/) - mover páginas de um documento para outro.
-- [Obter e Definir Propriedades da Página](/pdf/java/get-and-set-page-properties/) - você pode aprender como obter números em um arquivo PDF, obter propriedades da página e determinar a cor da página.
-- [Excluir Páginas](/pdf/java/delete-pages/) - excluir página do seu arquivo PDF usando a coleção PageCollection.
-- [Alterar Tamanho da Página](/pdf/java/change-page-size) - você pode alterar o tamanho da página PDF com um trecho de código usando a biblioteca Aspose.PDF.
+- [Adicionar Páginas](/pdf/pt/java/add-pages/) - adicionar páginas na localização desejada ou ao final de um arquivo PDF e excluir uma página do seu documento.
+- [Mover Páginas](/pdf/pt/java/move-pages/) - mover páginas de um documento para outro.
+- [Obter e Definir Propriedades da Página](/pdf/pt/java/get-and-set-page-properties/) - você pode aprender como obter números em um arquivo PDF, obter propriedades da página e determinar a cor da página.
+- [Excluir Páginas](/pdf/pt/java/delete-pages/) - excluir página do seu arquivo PDF usando a coleção PageCollection.
+- [Alterar Tamanho da Página](/pdf/pt/java/change-page-size) - você pode alterar o tamanho da página PDF com um trecho de código usando a biblioteca Aspose.PDF.
 
-- [Girar Páginas](/pdf/java/rotate-pages/) - você pode alterar a orientação das páginas em um arquivo PDF existente.- [Split Pages](/pdf/java/split-document/) - você pode dividir arquivos PDF em um ou vários PDFs.
-- [Add Headers and/or Footers](/pdf/java/add-headers-and-footers-of-pdf-file/) - adicionar texto ou imagens nos cabeçalhos e rodapés do seu arquivo PDF.
-- [Crop Pages](/pdf/java/crop-pages/) - você pode cortar páginas em um documento PDF programaticamente com diferentes Propriedades da Página.
-- [Add Watermarks](/pdf/java/add-watermarks/) - adicionar marcas d'água em seu arquivo PDF com a Classe Artifact.
-- [Add Page Numbering in PDF File](/pdf/java/add-page-number/) - a classe PageNumberStamp ajudará você a adicionar um Número de Página em seu arquivo PDF.
-- [Add Backgrounds](/pdf/java/add-backgrounds/) - imagens de fundo podem ser usadas para adicionar uma marca d'água.
-- [Stamping](/pdf/java/stamping/) - você pode usar a classe ImageStamp para adicionar um selo de imagem a um arquivo PDF e a classe TextStamp para adicionar um texto.
+- [Girar Páginas](/pdf/pt/java/rotate-pages/) - você pode alterar a orientação das páginas em um arquivo PDF existente.- [Split Pages](/pdf/pt/java/split-document/) - você pode dividir arquivos PDF em um ou vários PDFs.
+- [Add Headers and/or Footers](/pdf/pt/java/add-headers-and-footers-of-pdf-file/) - adicionar texto ou imagens nos cabeçalhos e rodapés do seu arquivo PDF.
+- [Crop Pages](/pdf/pt/java/crop-pages/) - você pode cortar páginas em um documento PDF programaticamente com diferentes Propriedades da Página.
+- [Add Watermarks](/pdf/pt/java/add-watermarks/) - adicionar marcas d'água em seu arquivo PDF com a Classe Artifact.
+- [Add Page Numbering in PDF File](/pdf/pt/java/add-page-number/) - a classe PageNumberStamp ajudará você a adicionar um Número de Página em seu arquivo PDF.
+- [Add Backgrounds](/pdf/pt/java/add-backgrounds/) - imagens de fundo podem ser usadas para adicionar uma marca d'água.
+- [Stamping](/pdf/pt/java/stamping/) - você pode usar a classe ImageStamp para adicionar um selo de imagem a um arquivo PDF e a classe TextStamp para adicionar um texto.

@@ -3,7 +3,7 @@ title: Criando um PDF complexo
 linktitle: Criando um PDF complexo
 type: docs
 weight: 60
-url: pt/php-java/complex-pdf-example/
+url: /pt/php-java/complex-pdf-example/
 description: Aspose.PDF para PHP via Java permite criar documentos mais complexos que contêm imagens, fragmentos de texto e tabelas em um único documento.
 lastmod: "2024-06-05"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-O exemplo [Hello, World](/pdf/php-java/hello-world-example/) mostrou etapas simples para criar um documento PDF usando Aspose.PDF. Neste artigo, vamos dar uma olhada em como criar um documento mais complexo com Aspose.PDF para PHP via Java. Como exemplo, usaremos um documento de uma empresa fictícia que opera serviços de balsa para passageiros.
+O exemplo [Hello, World](/pdf/pt/php-java/hello-world-example/) mostrou etapas simples para criar um documento PDF usando Aspose.PDF. Neste artigo, vamos dar uma olhada em como criar um documento mais complexo com Aspose.PDF para PHP via Java. Como exemplo, usaremos um documento de uma empresa fictícia que opera serviços de balsa para passageiros.
 
 Se criarmos um documento do zero, precisamos seguir certas etapas:
 

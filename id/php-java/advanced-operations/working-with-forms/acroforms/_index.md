@@ -3,7 +3,7 @@ title: Bekerja dengan AcroForms dalam PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: id/php-java/acroforms/
+url: /id/php-java/acroforms/
 description: Dengan Aspose.PDF untuk PHP melalui Java, Anda dapat membuat formulir dari awal, mengisi bidang formulir dalam dokumen PDF, mengekstrak data dari formulir, menambah atau menghapus bidang dalam formulir yang ada.
 lastmod: "2024-06-05"
 sitemap:
@@ -34,10 +34,10 @@ Jadi, PDF adalah format file terbaik untuk formulir karena dapat didistribusikan
 
 Untuk studi lebih mendalam tentang kemungkinan bekerja dengan formulir, pelajari artikel berikut di bagian ini:
 
--[Buat AcroForm](/pdf/php-java/create-form/) - buat formulir dari awal, tambahkan RadioButtonField, TextBoxField, Caption Field menggunakan PHP.
+-[Buat AcroForm](/pdf/id/php-java/create-form/) - buat formulir dari awal, tambahkan RadioButtonField, TextBoxField, Caption Field menggunakan PHP.
 
--[Isi AcroForm](/pdf/php-java/fill-form/) - untuk mengisi bidang formulir, dapatkan bidang dari koleksi Form objek Dokumen.
+-[Isi AcroForm](/pdf/id/php-java/fill-form/) - untuk mengisi bidang formulir, dapatkan bidang dari koleksi Form objek Dokumen.
 
--[Ekstrak Data AcroForm](/pdf/php-java/extract-form/) - dapatkan nilai dari semua dan setiap bidang, dll.
+-[Ekstrak Data AcroForm](/pdf/id/php-java/extract-form/) - dapatkan nilai dari semua dan setiap bidang, dll.
 
--[Modifikasi AcroForm](/pdf/php-java/modifing-form/) - dapatkan/atur FieldLimit, hapus bidang dalam formulir yang ada, atur font bidang formulir selain dari 14 Font Inti PDF dengan PHP.
+-[Modifikasi AcroForm](/pdf/id/php-java/modifing-form/) - dapatkan/atur FieldLimit, hapus bidang dalam formulir yang ada, atur font bidang formulir selain dari 14 Font Inti PDF dengan PHP.

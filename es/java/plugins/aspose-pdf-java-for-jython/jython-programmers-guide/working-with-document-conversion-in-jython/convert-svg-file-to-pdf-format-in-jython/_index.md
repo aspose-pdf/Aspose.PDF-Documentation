@@ -2,7 +2,7 @@
 title: Convertir archivo SVG a formato PDF en Jython
 type: docs
 weight: 40
-url: es/java/convert-svg-file-to-pdf-format-in-jython/
+url: /es/java/convert-svg-file-to-pdf-format-in-jython/
 lastmod: "2021-06-05"
 ---
 

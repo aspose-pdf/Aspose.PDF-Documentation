@@ -2,7 +2,7 @@
 title: 簡単で軽量なデプロイ
 type: docs
 weight: 40
-url: ja/reportingservices/easy-and-lightweight-deployment/
+url: /ja/reportingservices/easy-and-lightweight-deployment/
 lastmod: "2021-06-05"
 ---
 

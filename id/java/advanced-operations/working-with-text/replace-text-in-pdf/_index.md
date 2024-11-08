@@ -3,7 +3,7 @@ title: Ganti Teks dalam PDF
 linktitle: Ganti Teks dalam PDF
 type: docs
 weight: 40
-url: id/java/replace-text-in-a-pdf-document/
+url: /id/java/replace-text-in-a-pdf-document/
 description: Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari PDF. Aspose.PDF memungkinkan penggantian teks di wilayah tertentu atau dengan ekspresi reguler.
 lastmod: "2021-06-05"
 sitemap:

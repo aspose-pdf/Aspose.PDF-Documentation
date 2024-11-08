@@ -2,7 +2,7 @@
 title: PDF 파일 암호화
 type: docs
 weight: 10
-url: ko/java/encrypt-pdf-file/
+url: /ko/java/encrypt-pdf-file/
 description: 이 주제는 PdfFileSecurity 클래스를 사용하여 PDF 파일을 암호화하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

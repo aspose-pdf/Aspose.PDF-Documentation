@@ -3,7 +3,7 @@ title: PDFを暗号化および復号化する
 linktitle: PDFファイルを暗号化および復号化する
 type: docs
 weight: 30
-url: ja/python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ja/python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Pythonを介してC++アプリケーションでPDFファイルを暗号化および復号化します。
 lastmod: "2024-04-17"
 sitemap:

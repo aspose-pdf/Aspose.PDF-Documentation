@@ -3,7 +3,7 @@ title: 添加 PDF 页面印章到 PDF
 linktitle: PDF 文件中的页面印章
 type: docs
 weight: 30
-url: zh/php-java/page-stamps-in-the-pdf-file/
+url: /zh/php-java/page-stamps-in-the-pdf-file/
 description: 使用 PdfPageStamp 类通过 PHP 向 PDF 文件添加页面印章。
 lastmod: "2024-09-10"
 sitemap:

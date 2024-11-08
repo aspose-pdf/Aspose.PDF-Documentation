@@ -2,7 +2,7 @@
 title: PdfFileMend Class
 type: docs
 weight: 20
-url: ko/java/pdffilemend-class/
+url: /ko/java/pdffilemend-class/
 description: 이 섹션에서는 PdfFileMend 클래스를 사용하여 Aspose.PDF Facades를 사용하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -33,7 +33,7 @@ sitemap:
 
 어떻게 보이는지 확인하십시오:
 
-![텍스트 추가](/pdf/net/images/add_text.png)
+![텍스트 추가](/pdf/ko/net/images/add_text.png)
 
 [FormattedText](https://reference.aspose.com/pdf//java/com.aspose.pdf.facades/formattedtext)를 추가하는 두 번째 방법입니다. 추가적으로, 텍스트가 맞아야 할 사각형을 지정합니다.
 
@@ -99,7 +99,7 @@ public static void AddImage01()
     }
 ```
 
-![이미지 추가](/pdf/net/images/add_image1.png)
+![이미지 추가](/pdf/ko/net/images/add_image1.png)
 
 두 번째 코드 스니펫을 고려해봅시다. [CompositingParameters](https://reference.aspose.com/pdf/java/com.aspose.pdf/CompositingParameters) 클래스 매개변수의 변형을 사용하여 다양한 디자인 효과를 얻을 수 있습니다. 우리는 그 중 하나를 시도했습니다.
 
@@ -125,7 +125,7 @@ public static void AddImage01()
 ```
 
 
-![이미지 추가](/pdf/net/images/add_image2.png)
+![이미지 추가](/pdf/ko/net/images/add_image2.png)
 
 다음 코드 스니펫에서는 [ImageFilterType](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageFilterType)을 사용합니다. ImageFilterType은 인코딩에 사용될 스트림 코덱의 유형을 나타내며, 기본적으로 Jpeg입니다. PNG 형식에서 이미지를 로드하면 문서에 JPEG(또는 내가 지정한 다른 형식)으로 저장됩니다.
 

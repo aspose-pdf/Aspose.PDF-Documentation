@@ -3,7 +3,7 @@ title: PDF ページをプログラムでクロップ C++
 linktitle: ページをクロップ
 type: docs
 weight: 80
-url: ja/cpp/crop-pages/
+url: /ja/cpp/crop-pages/
 description: Aspose.PDF for C++を使用して、幅、高さ、裁ち切り、クロップ、トリムボックスなどのページプロパティを取得できます。
 lastmod: "2021-12-09"
 sitemap:

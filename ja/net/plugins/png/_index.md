@@ -2,7 +2,7 @@
 title: PNG変換器
 type: docs
 weight: 110
-url: ja/net/plugins/png/
+url: /ja/net/plugins/png/
 description: Aspose.PDF PNGプラグインを使用してPDFをPNG画像に変換
 lastmod: "2024-01-24"
 ---

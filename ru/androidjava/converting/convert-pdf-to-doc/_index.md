@@ -3,7 +3,7 @@ title: Преобразование PDF в DOC
 linktitle: Преобразование PDF в DOC
 type: docs
 weight: 70
-url: ru/androidjava/convert-pdf-to-doc/
+url: /ru/androidjava/convert-pdf-to-doc/
 lastmod: "2021-06-05"
 description: Преобразуйте PDF-файл в формат DOC с легкостью и полным контролем с помощью Aspose.PDF для Android через Java. Узнайте больше о том, как настроить преобразование файла Microsoft Word Doc в PDF.
 sitemap:

@@ -4,7 +4,7 @@ title: طباعة مستندات PDF
 linktitle: طباعة المستند
 type: docs
 weight: 160
-url: ar/net/printing-document/
+url: /ar/net/printing-document/
 description: تقنيات طباعة PDF في C# والدليل الإرشادي لإعدادات طابعة PDF في C# ونصائح مشروع .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -81,11 +81,11 @@ aliases:
 ```
 ## كيفية طباعة ملفات PDF في C#
 
-- [طباعة PDF في إطار .NET](/pdf/net/printing-pdf-in-net-framework/)
-- [طباعة PDF إلى طابعة XPS (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [تحويل PDF إلى PostScript، التحقق من حالة وظيفة الطباعة](/pdf/net/pdf-to-postscript-conversion/)
-- [طباعة PDF في .NET Core](/pdf/net/print-dotnetcore/)
-- [طباعة مستند PDF في تطبيق WPF](/pdf/net/print-pdf-document-in-wpf-application/)
+- [طباعة PDF في إطار .NET](/pdf/ar/net/printing-pdf-in-net-framework/)
+- [طباعة PDF إلى طابعة XPS (Facades)](/pdf/ar/net/printing-pdf-to-an-xps-printer-facades/)
+- [تحويل PDF إلى PostScript، التحقق من حالة وظيفة الطباعة](/pdf/ar/net/pdf-to-postscript-conversion/)
+- [طباعة PDF في .NET Core](/pdf/ar/net/print-dotnetcore/)
+- [طباعة مستند PDF في تطبيق WPF](/pdf/ar/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

@@ -2,7 +2,7 @@
 title: 保存 SharePoint Wiki 页面为 PDF
 type: docs
 weight: 20
-url: zh/sharepoint/save-sharepoint-wiki-page-as-pdf/
+url: /zh/sharepoint/save-sharepoint-wiki-page-as-pdf/
 lastmod: "2020-12-16"
 keywords: sharepoint wiki pdf export
 description: Sharepoint PDF 库可以用于将 SharePoint Wiki 页面导出为 PDF。

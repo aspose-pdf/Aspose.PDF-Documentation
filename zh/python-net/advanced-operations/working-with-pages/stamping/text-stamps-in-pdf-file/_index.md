@@ -3,7 +3,7 @@ title: 在 PDF 中添加文字印章通过 Python
 linktitle: PDF 文件中的文字印章
 type: docs
 weight: 20
-url: zh/python-net/text-stamps-in-the-pdf-file/
+url: /zh/python-net/text-stamps-in-the-pdf-file/
 description: 使用 Aspose.PDF for Python 库的 TextStamp 类向 PDF 文档添加文字印章。
 lastmod: "2023-04-17"
 sitemap:

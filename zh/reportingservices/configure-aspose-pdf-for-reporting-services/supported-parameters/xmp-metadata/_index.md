@@ -2,7 +2,7 @@
 title: XMP 元数据
 type: docs
 weight: 80
-url: zh/reportingservices/xmp-metadata/
+url: /zh/reportingservices/xmp-metadata/
 lastmod: "2021-06-05"
 ---
 

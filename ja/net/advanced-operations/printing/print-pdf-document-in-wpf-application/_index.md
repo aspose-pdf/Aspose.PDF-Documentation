@@ -3,7 +3,7 @@ title: WPFアプリケーションでPDFを印刷する
 linktitle: WPFアプリケーションでPDFドキュメントを印刷する
 type: docs
 weight: 50
-url: ja/net/print-pdf-document-in-wpf-application/
+url: /ja/net/print-pdf-document-in-wpf-application/
 description: WPFアプリケーションからC#を使用してPDFドキュメントを印刷します。このコードサンプルは、C#を使用してWPFアプリケーションからPDFドキュメントを印刷する方法を示しています。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "WPFアプリケーションからC#を使用してPDFドキュメントを印刷します。このコードサンプルは、C#を使用してWPFアプリケーションからPDFドキュメントを印刷する方法を示しています。"
 }
 </script>
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## 直接印刷
 

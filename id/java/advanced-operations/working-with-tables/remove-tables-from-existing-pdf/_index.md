@@ -3,7 +3,7 @@ title: Menghapus Tabel dari PDF yang Ada
 linktitle: Hapus Tabel
 type: docs
 weight: 40
-url: id/java/remove-tables-from-existing-pdf/
+url: /id/java/remove-tables-from-existing-pdf/
 description: Aspose.PDF untuk Java memungkinkan Anda menghapus tabel dan beberapa tabel dari dokumen PDF Anda.
 lastmod: "2021-06-05"
 sitemap:

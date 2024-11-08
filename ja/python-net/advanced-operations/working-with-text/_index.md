@@ -3,7 +3,7 @@ title: Pythonを使用してPDFでテキストを操作する
 linktitle: テキストを操作する
 type: docs
 weight: 30
-url: ja/python-net/working-with-text/
+url: /ja/python-net/working-with-text/
 description: このセクションでは、テキスト処理のさまざまな技法を説明します。Aspose.PDF for Pythonを使用して、テキストを追加、置換、回転、検索する方法を学びます。
 lastmod: "2024-01-17"
 sitemap:
@@ -81,12 +81,12 @@ sitemap:
 
 次のことが可能です:
 
-- [PDFファイルへのテキストの追加](/pdf/python-net/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームやファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクを追加するなど。
-- [PDFツールチップ](/pdf/python-net/pdf-tooltip/) - Pythonを使用して見えないボタンを追加することで、検索されたテキストにツールチップを追加できます。
-- [PDF内のテキストフォーマット](/pdf/python-net/text-formatting-inside-pdf/) - ドキュメント内のテキストをフォーマットするときに多くの機能を追加できます。
+- [PDFファイルへのテキストの追加](/pdf/ja/python-net/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームやファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクを追加するなど。
+- [PDFツールチップ](/pdf/ja/python-net/pdf-tooltip/) - Pythonを使用して見えないボタンを追加することで、検索されたテキストにツールチップを追加できます。
+- [PDF内のテキストフォーマット](/pdf/ja/python-net/text-formatting-inside-pdf/) - ドキュメント内のテキストをフォーマットするときに多くの機能を追加できます。
  行のインデントを追加し、テキストの枠を追加し、テキストに下線を引き、Aspose.PDFライブラリで改行を追加します。
 
-- [PDF内のテキストを置換](/pdf/python-net/replace-text-in-pdf/) - PDFドキュメントのすべてのページでテキストを置換します。最初にTextFragmentAbsorberを使用する必要があります。
-- [PDF内のテキストを回転](/pdf/python-net/rotate-text-inside-pdf/) - TextFragmentクラスの回転プロパティを使用してPDF内のテキストを回転させます。
-- [PDFドキュメントのページからテキストを検索して取得](/pdf/python-net/search-and-get-text-from-pdf/) - ページからテキストを検索して取得するためにTextFragmentAbsorberクラスを使用できます。
-- [改行を判定](/pdf/python-net/determine-line-break/) - このトピックでは、マルチラインテキストフラグメントの改行を追跡する方法を説明します。
+- [PDF内のテキストを置換](/pdf/ja/python-net/replace-text-in-pdf/) - PDFドキュメントのすべてのページでテキストを置換します。最初にTextFragmentAbsorberを使用する必要があります。
+- [PDF内のテキストを回転](/pdf/ja/python-net/rotate-text-inside-pdf/) - TextFragmentクラスの回転プロパティを使用してPDF内のテキストを回転させます。
+- [PDFドキュメントのページからテキストを検索して取得](/pdf/ja/python-net/search-and-get-text-from-pdf/) - ページからテキストを検索して取得するためにTextFragmentAbsorberクラスを使用できます。
+- [改行を判定](/pdf/ja/python-net/determine-line-break/) - このトピックでは、マルチラインテキストフラグメントの改行を追跡する方法を説明します。

@@ -3,7 +3,7 @@ title: Rotacionar Páginas de PDF Usando Python
 linktitle: Rotacionar Páginas de PDF
 type: docs
 weight: 110
-url: pt/python-net/rotate-pages/
+url: /pt/python-net/rotate-pages/
 description: Este tópico descreve como rotacionar a orientação da página em um arquivo PDF existente programaticamente com Python.
 lastmod: "2023-04-17"
 sitemap:

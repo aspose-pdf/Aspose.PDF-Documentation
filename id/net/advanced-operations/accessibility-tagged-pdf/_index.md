@@ -3,7 +3,7 @@ title: Aksesibilitas dan PDF Bertag
 linktitle: Aksesibilitas. PDF Bertag
 type: docs
 weight: 120
-url: id/net/accessibility-tagged-pdf/
+url: /id/net/accessibility-tagged-pdf/
 description: Aspose.PDF menyediakan kemampuan untuk membuat dokumen PDF Bertag, memungkinkan Anda menandai elemen struktural. Pelajari lebih lanjut tentang cara mendapatkan PDF yang dapat diakses.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,11 +80,11 @@ Dokumen PDF Bertag dapat diakses oleh orang dengan disabilitas. Menambahkan tag 
 
 Bagian ini mencakup topik berikut:
 
-- [Buat PDF Bertag](/pdf/net/create-tagged-pdf/)
-- [Ekstrak Konten Bertag dari PDF Bertag](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [Pengaturan Properti Elemen Struktur](/pdf/net/setting-structure-elements-properties/)
-- [Bekerja dengan Tabel dalam PDF Bertag](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [Tes Kepatuhan PDF-UA - Daftar Kesalahan](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [Buat PDF Bertag](/pdf/id/net/create-tagged-pdf/)
+- [Ekstrak Konten Bertag dari PDF Bertag](/pdf/id/net/extract-tagged-content-from-tagged-pdfs/)
+- [Pengaturan Properti Elemen Struktur](/pdf/id/net/setting-structure-elements-properties/)
+- [Bekerja dengan Tabel dalam PDF Bertag](/pdf/id/net/working-with-table-in-tagged-pdfs/)
+- [Tes Kepatuhan PDF-UA - Daftar Kesalahan](/pdf/id/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

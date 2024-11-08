@@ -2,7 +2,7 @@
 title: ChatGPT
 type: docs
 weight: 30
-url: fr/net/plugins/chatGPT/
+url: /fr/net/plugins/chatGPT/
 description: Comment générer des réponses ChatGPT alimentées par l'IA et les stocker en PDF
 lastmod: "2024-02-24"
 ---

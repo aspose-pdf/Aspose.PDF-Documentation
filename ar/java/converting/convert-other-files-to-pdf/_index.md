@@ -3,7 +3,7 @@ title: تحويل صيغ الملفات المختلفة إلى PDF
 linktitle: تحويل صيغ الملفات الأخرى إلى PDF
 type: docs
 weight: 80
-url: ar/java/convert-other-files-to-pdf/
+url: /ar/java/convert-other-files-to-pdf/
 lastmod: "2021-11-19"
 description: يوضح هذا الموضوع كيفية تحويل Aspose.PDF لصيغ الملفات الأخرى إلى مستند PDF.
 sitemap:

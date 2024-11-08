@@ -2,7 +2,7 @@
 title: العمل مع المرفقات
 type: docs
 weight: 50
-url: ar/java/working-with-attachments/
+url: /ar/java/working-with-attachments/
 description: يشرح هذا القسم كيفية العمل مع المرفقات في ملف PDF الخاص بك باستخدام Aspose.PDF Facades - مجموعة أدوات للعمليات الشائعة مع PDF.
 lastmod: "2021-06-24"
 sitemap:

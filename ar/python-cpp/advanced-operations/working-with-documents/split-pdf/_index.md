@@ -3,7 +3,7 @@ title: تقسيم ملفات PDF برمجياً باستخدام بايثون
 linktitle: تقسيم ملفات PDF
 type: docs
 weight: 20
-url: ar/python-cpp/split-pdf-document/
+url: /ar/python-cpp/split-pdf-document/
 keywords: تقسيم pdf إلى ملفات متعددة، تقسيم pdf إلى ملفات منفصلة، تقسيم pdf بايثون
 description: يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات بايثون الخاصة بك عبر C++.
 lastmod: "2024-04-17"

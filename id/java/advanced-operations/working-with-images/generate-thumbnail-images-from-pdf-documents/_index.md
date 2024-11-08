@@ -3,7 +3,7 @@ title: Menghasilkan Gambar Mini dari Dokumen PDF
 linktitle: Menghasilkan Gambar Mini
 type: docs
 weight: 100
-url: id/java/generate-thumbnail-images-from-pdf-documents/
+url: /id/java/generate-thumbnail-images-from-pdf-documents/
 description: Bagian ini menjelaskan cara menghasilkan gambar mini dari dokumen PDF menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 ---

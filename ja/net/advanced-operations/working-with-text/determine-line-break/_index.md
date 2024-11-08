@@ -3,7 +3,7 @@ title: Determine Line Break
 linktitle: Determine Line Break
 type: docs
 weight: 70
-url: ja/net/determine-line-break/
+url: /ja/net/determine-line-break/
 description: C#を使用して複数行のTextFragmentの改行を特定する方法について詳しく学びます
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## 複数行のTextFragmentの改行追跡
 

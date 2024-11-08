@@ -2,7 +2,7 @@
 title: Obtenir les Propriétés de Fenêtre de Document et d'Affichage de Page en Python
 type: docs
 weight: 30
-url: fr/java/get-document-window-and-page-display-properties-in-python/
+url: /fr/java/get-document-window-and-page-display-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

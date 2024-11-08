@@ -3,7 +3,7 @@ title: ملء AcroForms
 linktitle: ملء AcroForms
 type: docs
 weight: 20
-url: ar/java/fill-form/
+url: /ar/java/fill-form/
 description: يوضح هذا القسم كيفية ملء حقل النموذج في مستند PDF باستخدام Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

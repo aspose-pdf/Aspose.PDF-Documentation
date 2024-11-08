@@ -3,7 +3,7 @@ title: 使用 C++ 合并 PDF
 linktitle: 合并 PDF 文件
 type: docs
 weight: 50
-url: zh/cpp/merge-pdf-documents/
+url: /zh/cpp/merge-pdf-documents/
 description: 本页解释如何使用 C++ 将多个 PDF 文档合并为单个 PDF 文件。
 lastmod: "2021-11-11"
 sitemap:

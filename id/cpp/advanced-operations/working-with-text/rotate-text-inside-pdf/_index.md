@@ -3,7 +3,7 @@ title: Memutar Teks di Dalam PDF menggunakan C++
 linktitle: Memutar Teks di Dalam PDF
 type: docs
 weight: 50
-url: id/cpp/rotate-text-inside-pdf/
+url: /id/cpp/rotate-text-inside-pdf/
 description: Pelajari berbagai cara untuk memutar teks ke PDF. Aspose.PDF memungkinkan Anda memutar teks ke sudut mana pun, memutar fragmen teks atau seluruh paragraf.
 lastmod: "2021-12-13"
 sitemap:

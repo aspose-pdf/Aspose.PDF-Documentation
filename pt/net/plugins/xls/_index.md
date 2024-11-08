@@ -2,7 +2,7 @@
 title: XLS Converter
 type: docs
 weight: 20
-url: pt/net/plugins/xls/
+url: /pt/net/plugins/xls/
 description: Como converter arquivos PDF para planilhas Excel usando plugins Aspose.Pdf
 lastmod: "2024-01-24"
 ---

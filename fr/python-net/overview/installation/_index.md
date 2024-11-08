@@ -3,7 +3,7 @@ title: Comment Installer Aspose.PDF pour Python
 linktitle: Installation
 type: docs
 weight: 40
-url: fr/python-net/installation/
+url: /fr/python-net/installation/
 description: Cette section montre une description du produit et des instructions pour installer Aspose.PDF pour Python.
 lastmod: "2022-12-21"
 sitemap:
@@ -29,7 +29,7 @@ sitemap:
 
 Vous pouvez facilement télécharger Aspose.PDF pour Python pour évaluation. Le téléchargement d'évaluation est identique au téléchargement acheté. La version d'évaluation devient simplement sous licence lorsque vous ajoutez quelques lignes de code pour appliquer la licence.
 
-Vous pouvez télécharger [Aspose.PDF pour Python](https://releases.aspose.com/pdf/pythonnet/) pour évaluation. Le téléchargement d'évaluation est identique au téléchargement acheté. La version d'évaluation devient sous licence lorsque vous ajoutez quelques lignes de code pour [appliquer la licence](/pdf/python-net/licensing/).
+Vous pouvez télécharger [Aspose.PDF pour Python](https://releases.aspose.com/pdf/pythonnet/) pour évaluation. Le téléchargement d'évaluation est identique au téléchargement acheté. La version d'évaluation devient sous licence lorsque vous ajoutez quelques lignes de code pour [appliquer la licence](/pdf/fr/python-net/licensing/).
 
 La version d'évaluation d'Aspose.PDF (sans licence spécifiée) offre une fonctionnalité complète du produit, mais elle présente deux limitations : elle insère un filigrane d'évaluation et seuls quatre éléments de toute collection peuvent être visualisés/modifiés.
 {{% alert color="primary" %}}

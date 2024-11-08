@@ -2,7 +2,7 @@
 title: 중심점을 기준으로 도장을 회전시키기
 type: docs
 weight: 10
-url: ko/net/rotating-stamp-about-the-center-point/
+url: /ko/net/rotating-stamp-about-the-center-point/
 description: 이 섹션에서는 Stamp 클래스를 사용하여 중심점을 기준으로 도장을 회전시키는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 [Aspose.PDF for .NET](/pdf/net/)에서 기존 PDF 파일에 도장을 추가할 수 있게 합니다. 때때로, 사용자는 도장을 회전시킬 필요가 있습니다. 이 기사에서는 도장을 중심점을 기준으로 회전시키는 방법을 살펴보겠습니다.
+[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 [Aspose.PDF for .NET](/pdf/ko/net/)에서 기존 PDF 파일에 도장을 추가할 수 있게 합니다. 때때로, 사용자는 도장을 회전시킬 필요가 있습니다. 이 기사에서는 도장을 중심점을 기준으로 회전시키는 방법을 살펴보겠습니다.
 
 {{% /alert %}}
 

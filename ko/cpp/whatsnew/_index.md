@@ -3,7 +3,7 @@ title: C++의 새로운 기능
 linktitle: 새로운 기능
 type: docs
 weight: 10
-url: ko/cpp/whatsnew/
+url: /ko/cpp/whatsnew/
 description: 이 페이지는 최근 릴리스에서 소개된 Aspose.PDF for C++의 가장 인기 있는 새로운 기능을 소개합니다.
 sitemap:
     changefreq: "monthly"

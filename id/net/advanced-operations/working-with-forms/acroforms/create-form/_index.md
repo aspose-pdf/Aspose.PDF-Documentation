@@ -3,7 +3,7 @@ title: Membuat AcroForm - Membuat PDF yang Dapat Diisi di C#
 linktitle: Membuat AcroForm
 type: docs
 weight: 10
-url: id/net/create-form/
+url: /id/net/create-form/
 description: Dengan Aspose.PDF untuk .NET Anda dapat membuat formulir dari awal di file PDF Anda
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Dengan Aspose.PDF untuk .NET Anda dapat membuat formulir dari awal di file PDF Anda"
 }
 </script>
-Snippet kode berikut juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Snippet kode berikut juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Buat formulir dari awal
 

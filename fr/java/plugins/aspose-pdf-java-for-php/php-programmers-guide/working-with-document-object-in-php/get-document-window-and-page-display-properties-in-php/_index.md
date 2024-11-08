@@ -2,7 +2,7 @@
 title: Obtenir les Propriétés de Fenêtre et d'Affichage de Page du Document en PHP
 type: docs
 weight: 30
-url: fr/java/get-document-window-and-page-display-properties-in-php/
+url: /fr/java/get-document-window-and-page-display-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

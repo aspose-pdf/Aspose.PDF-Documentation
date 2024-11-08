@@ -3,7 +3,7 @@ title: JavaScriptを使用してC++経由でPDFページを回転
 linktitle: PDFページを回転
 type: docs
 weight: 50
-url: ja/javascript-cpp/rotate-pages/
+url: /ja/javascript-cpp/rotate-pages/
 description: このトピックでは、JavaScriptを使用してC++経由で既存のPDFファイルのページの向きをプログラムで回転する方法について説明します。
 lastmod: "2023-02-17"
 sitemap:

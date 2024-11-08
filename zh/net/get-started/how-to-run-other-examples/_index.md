@@ -3,7 +3,7 @@ title: 如何运行其他示例
 linktitle: 如何运行其他示例
 type: docs
 weight: 50
-url: zh/net/how-to-run-other-examples/    
+url: /zh/net/how-to-run-other-examples/    
 description: 本页面提供的指南将帮助您在下载和运行示例之前满足以下要求。
 lastmod: "2021-06-05"
 sitemap:

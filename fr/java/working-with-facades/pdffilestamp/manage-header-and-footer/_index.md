@@ -2,7 +2,7 @@
 title: Gérer l'en-tête et le pied de page
 type: docs
 weight: 40
-url: fr/java/manage-header-and-footer/
+url: /fr/java/manage-header-and-footer/
 description: Cette section explique comment gérer l'en-tête et le pied de page avec Aspose.PDF Facades en utilisant la classe PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

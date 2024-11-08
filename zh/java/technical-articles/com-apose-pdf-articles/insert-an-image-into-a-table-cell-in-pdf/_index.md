@@ -2,7 +2,7 @@
 title: 在PDF中的表格单元格中插入图片
 type: docs
 weight: 20
-url: zh/java/insert-an-image-into-a-table-cell-in-pdf/
+url: /zh/java/insert-an-image-into-a-table-cell-in-pdf/
 lastmod: "2022-01-27"
 ---
 

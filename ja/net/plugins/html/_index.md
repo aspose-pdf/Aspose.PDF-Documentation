@@ -2,7 +2,7 @@
 title: HTML コンバーター
 type: docs
 weight: 70
-url: ja/net/plugins/html/
+url: /ja/net/plugins/html/
 description: Aspose.PDF PdfHtml プラグインを使用して PDF ファイルを HTML ファイルに変換する方法
 lastmod: "2024-01-24"
 draft: false

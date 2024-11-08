@@ -2,7 +2,7 @@
 title: Fusionar imágenes 
 type: docs
 weight: 10
-url: es/java/merge-images/
+url: /es/java/merge-images/
 description: Esta sección explica cómo fusionar Imágenes, y es posible guardar en el formato Tiff.
 lastmod: "2021-07-01"
 draft: false

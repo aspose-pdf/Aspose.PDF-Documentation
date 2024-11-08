@@ -6,7 +6,7 @@ type: docs
 
 weight: 70
 
-url: es/sharepoint/api-limitations/
+url: /es/sharepoint/api-limitations/
 
 lastmod: "2020-12-16"
 

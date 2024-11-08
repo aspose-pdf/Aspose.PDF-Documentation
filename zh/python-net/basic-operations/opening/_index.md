@@ -3,7 +3,7 @@ title: 以编程方式打开PDF文档
 linktitle: 打开PDF
 type: docs
 weight: 20
-url: zh/python-net/open-pdf-document/
+url: /zh/python-net/open-pdf-document/
 description: 了解如何在Python Aspose.PDF for Python via .NET库中打开PDF文件。您可以打开现有的PDF、从流中打开文档以及加密的PDF文档。
 lastmod: "2022-12-22"
 sitemap:

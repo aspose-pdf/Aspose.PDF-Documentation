@@ -2,7 +2,7 @@
 title: Поддерживаемые параметры
 type: docs
 weight: 20
-url: ru/reportingservices/supported-parameters/
+url: /ru/reportingservices/supported-parameters/
 lastmod: "2021-06-05"
 ---
 
@@ -12,15 +12,15 @@ lastmod: "2021-06-05"
 
 **Этот раздел включает следующие темы:**
 
-- [Ориентация страницы](/pdf/reportingservices/page-orientation/)
-- [Форматирование HTML](/pdf/reportingservices/html-formatting/)
-- [Настройки безопасности](/pdf/reportingservices/security-setting/)
-- [Встраивание шрифтов](/pdf/reportingservices/isfontembedded/)
+- [Ориентация страницы](/pdf/ru/reportingservices/page-orientation/)
+- [Форматирование HTML](/pdf/ru/reportingservices/html-formatting/)
+- [Настройки безопасности](/pdf/ru/reportingservices/security-setting/)
+- [Встраивание шрифтов](/pdf/ru/reportingservices/isfontembedded/)
 
-- [Размер страницы](/pdf/reportingservices/pagesize/)
+- [Размер страницы](/pdf/ru/reportingservices/pagesize/)
 ```
-- [Размер полей страницы](/pdf/reportingservices/page-margin-size/)
-- [Метаданные XMP](/pdf/reportingservices/xmp-metadata/)
-- [Информация для отладки](/pdf/reportingservices/debug-information/)
-- [Соответствие PDF_A](/pdf/reportingservices/pdf_a-conformance/)
+- [Размер полей страницы](/pdf/ru/reportingservices/page-margin-size/)
+- [Метаданные XMP](/pdf/ru/reportingservices/xmp-metadata/)
+- [Информация для отладки](/pdf/ru/reportingservices/debug-information/)
+- [Соответствие PDF_A](/pdf/ru/reportingservices/pdf_a-conformance/)
 ```

@@ -2,7 +2,7 @@
 title: Definir Informações do Arquivo PDF em PHP
 type: docs
 weight: 90
-url: pt/java/set-pdf-file-information-in-php/
+url: /pt/java/set-pdf-file-information-in-php/
 lastmod: "2021-06-05"
 ---
 

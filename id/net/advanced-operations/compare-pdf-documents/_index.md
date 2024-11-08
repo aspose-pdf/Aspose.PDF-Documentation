@@ -3,7 +3,7 @@ title: Membandingkan Dokumen PDF
 linktitle: Membandingkan PDF
 type: docs
 weight: 180
-url: id/net/compare-pdf-documents/
+url: /id/net/compare-pdf-documents/
 description: Sejak rilis 24.7, sudah memungkinkan untuk membandingkan konten dokumen PDF dengan tanda anotasi dan output berdampingan
 lastmod: "2024-08-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Как создать PDF-портфолио
 type: docs
 weight: 10
-url: ru/java/how-to-create-pdf-portfolio/
+url: /ru/java/how-to-create-pdf-portfolio/
 lastmod: "2022-01-27"
 ---
 

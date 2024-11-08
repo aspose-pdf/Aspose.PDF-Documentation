@@ -3,7 +3,7 @@ title: Добавить Штамп Страницы в PDF
 linktitle: Штампы страниц в PDF файле
 type: docs
 weight: 30
-url: ru/java/page-stamps-in-the-pdf-file/
+url: /ru/java/page-stamps-in-the-pdf-file/
 description: Добавьте штамп страницы в PDF файл, используя класс PdfPageStamp с Java.
 lastmod: "2021-09-10"
 sitemap:

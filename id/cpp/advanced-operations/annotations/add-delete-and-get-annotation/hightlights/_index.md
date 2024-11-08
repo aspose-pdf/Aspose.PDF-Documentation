@@ -3,7 +3,7 @@ title: Penyorotan Anotasi PDF menggunakan C++
 linktitle: Penyorotan Anotasi
 type: docs
 weight: 20
-url: id/cpp/highlights-annotation/
+url: /id/cpp/highlights-annotation/
 description: Anotasi Markup disajikan dalam teks sebagai sorotan, garis bawah, coretan, atau garis bawah bergelombang dalam teks dokumen.
 lastmod: "2021-11-24"
 sitemap:

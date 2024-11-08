@@ -3,7 +3,7 @@ title: Extraer datos de una tabla en PDF con C#
 linktitle: Extraer datos de la tabla
 type: docs
 weight: 40
-url: es/net/extract-data-from-table-in-pdf/
+url: /es/net/extract-data-from-table-in-pdf/
 description: Aprende cómo extraer datos tabulares de un PDF utilizando Aspose.PDF para .NET en C#
 lastmod: "2021-06-05"
 sitemap:
@@ -22,7 +22,7 @@ Aspose.PDF para .NET tiene una herramienta para facilitar la recuperación de ta
 1. `TableList` es una Lista de [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). Para obtener la fecha, itera a través de `TableList` y maneja [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) y [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)
 1. Cada [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) contiene una colección de [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). Puedes procesarla para tus propios fines.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente ejemplo muestra la extracción de tablas de todas las páginas:
 
@@ -63,7 +63,7 @@ Cada tabla absorbida tiene una propiedad [Rectangle](https://reference.aspose.co
 
 Por lo tanto, si necesitas extraer tablas ubicadas en una región específica, tienes que trabajar con coordenadas específicas.
 
-El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente ejemplo muestra cómo extraer una tabla marcada con una Anotación Cuadrada:
 
@@ -116,9 +116,9 @@ public static void Extract_Marked_Table()
 ## Extraer datos de tabla de PDF y almacenarlos en archivo CSV
 
 El siguiente ejemplo muestra cómo extraer una tabla y almacenarla como archivo CSV.
-Para ver cómo convertir un PDF a una hoja de cálculo de Excel, consulte el artículo [Convertir PDF a Excel](/pdf/net/convert-pdf-to-excel/).
+Para ver cómo convertir un PDF a una hoja de cálculo de Excel, consulte el artículo [Convertir PDF a Excel](/pdf/es/net/convert-pdf-to-excel/).
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 public static void Extract_Table_Save_CSV()

@@ -3,7 +3,7 @@ title: استخراج الخطوط من PDF
 linktitle: استخراج الخطوط
 type: docs
 weight: 30
-url: ar/php-java/extract-fonts-from-pdf/
+url: /ar/php-java/extract-fonts-from-pdf/
 description: كيفية استخراج الخطوط من PDF باستخدام Aspose.PDF لـ PHP
 lastmod: "2024-05-20"
 sitemap:

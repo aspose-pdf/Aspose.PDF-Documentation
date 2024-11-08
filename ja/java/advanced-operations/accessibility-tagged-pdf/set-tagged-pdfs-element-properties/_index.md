@@ -3,7 +3,7 @@ title: タグ付きPDFにおける構造要素のプロパティ設定
 linktitle: 構造要素のプロパティ設定
 type: docs
 weight: 30
-url: ja/java/set-tagged-pdfs-element-properties/
+url: /ja/java/set-tagged-pdfs-element-properties/
 description: Aspose.PDF for Javaを使用すると、さまざまな構造要素のプロパティを設定できます。テキストブロック構造要素の設定、インライン構造要素の設定、構造要素の追加などがあります。
 lastmod: "2021-06-05"
 sitemap:

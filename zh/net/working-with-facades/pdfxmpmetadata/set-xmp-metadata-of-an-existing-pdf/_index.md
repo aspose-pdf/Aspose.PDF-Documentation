@@ -2,7 +2,7 @@
 title: 设置现有 PDF 的 XMP 元数据
 type: docs
 weight: 20
-url: zh/net/set-xmp-metadata-of-an-existing-pdf/
+url: /zh/net/set-xmp-metadata-of-an-existing-pdf/
 description: 本节解释如何使用 Aspose.PDF Facades 设置现有 PDF 的 XMP 元数据。
 lastmod: "2021-06-05"
 draft: false

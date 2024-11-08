@@ -3,7 +3,7 @@ title: Bekerja dengan Dokumen PDF
 linktitle: Bekerja dengan Dokumen
 type: docs
 weight: 10
-url: id/java/working-with-documents/
+url: /id/java/working-with-documents/
 lastmod: "2021-06-05"
 description: Artikel ini menjelaskan kepada Anda manipulasi apa yang dapat dilakukan dengan dokumen menggunakan Aspose.PDF untuk Java.
 sitemap:
@@ -21,10 +21,10 @@ Namun **Aspose.PDF untuk Java** dapat membantu Anda mengatasi sebagian besar tug
 
 You are able to do the following:
 
-- [Buat Dokumen](/pdf/java/create-pdf-document/) - buat dokumen PDF.
-- [Format Dokumen PDF](/pdf/java/formatting-pdf-document/) - dapatkan dan atur properti dokumen, menyematkan font, dan operasi lain dengan file PDF.
-- [Manipulasi Dokumen PDF](/pdf/java/manipulate-pdf-document/) - validasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lain-lain.
-- [Optimalkan PDF](/pdf/java/optimize-pdf/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimasi dokumen yang berhasil.
-- [Gabung PDF](/pdf/java/merge-pdf-documents/) - gabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan Java.
-- [Pisahkan PDF](/pdf/java/split-document/) - pisahkan halaman PDF menjadi file PDF individu dalam aplikasi Java Anda.
-- [Bekerja dengan Judul](/pdf/java/working-with-headings/) - Anda dapat membuat penomoran dalam judul dokumen PDF Anda dengan Java.
+- [Buat Dokumen](/pdf/id/java/create-pdf-document/) - buat dokumen PDF.
+- [Format Dokumen PDF](/pdf/id/java/formatting-pdf-document/) - dapatkan dan atur properti dokumen, menyematkan font, dan operasi lain dengan file PDF.
+- [Manipulasi Dokumen PDF](/pdf/id/java/manipulate-pdf-document/) - validasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lain-lain.
+- [Optimalkan PDF](/pdf/id/java/optimize-pdf/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimasi dokumen yang berhasil.
+- [Gabung PDF](/pdf/id/java/merge-pdf-documents/) - gabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan Java.
+- [Pisahkan PDF](/pdf/id/java/split-document/) - pisahkan halaman PDF menjadi file PDF individu dalam aplikasi Java Anda.
+- [Bekerja dengan Judul](/pdf/id/java/working-with-headings/) - Anda dapat membuat penomoran dalam judul dokumen PDF Anda dengan Java.

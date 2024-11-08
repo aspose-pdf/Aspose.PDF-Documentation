@@ -2,7 +2,7 @@
 title: IsFontEmbedded
 type: docs
 weight: 50
-url: zh/reportingservices/isfontembedded/
+url: /zh/reportingservices/isfontembedded/
 lastmod: "2021-06-05"
 ---
 

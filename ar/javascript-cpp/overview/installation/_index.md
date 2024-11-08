@@ -3,7 +3,7 @@ title: تثبيت Aspose.PDF لـ JavaScript عبر C++
 linktitle: التثبيت
 type: docs
 weight: 40
-url: ar/javascript-cpp/installation/
+url: /ar/javascript-cpp/installation/
 description: يوضح هذا القسم وصف المنتج وتعليمات تثبيت Aspose.PDF لـ JavaScript عبر C++.
 lastmod: "2022-12-13"
 sitemap:

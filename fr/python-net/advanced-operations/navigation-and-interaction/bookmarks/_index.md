@@ -3,7 +3,7 @@ title: Travailler avec les signets dans les PDF en utilisant Python
 linktitle: Signets
 type: docs
 weight: 30
-url: fr/python-net/bookmarks/
+url: /fr/python-net/bookmarks/
 description: Cette section explique comment ajouter, supprimer et obtenir un signet avec Aspose.PDF pour Python via .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -89,11 +89,11 @@ In this section you will learn how to:
 
 Dans cette section, vous apprendrez comment :
 
-- [Add and Delete a Bookmark](/pdf/python-net/add-and-delete-bookmark/)  
-  - [Ajouter et Supprimer un Signet](/pdf/python-net/add-and-delete-bookmark/)
+- [Add and Delete a Bookmark](/pdf/fr/python-net/add-and-delete-bookmark/)  
+  - [Ajouter et Supprimer un Signet](/pdf/fr/python-net/add-and-delete-bookmark/)
 
-- [Get, Update and Expand a Bookmark](/pdf/python-net/get-update-and-expand-bookmark/)  
-  - [Obtenir, Mettre à Jour et Développer un Signet](/pdf/python-net/get-update-and-expand-bookmark/)
+- [Get, Update and Expand a Bookmark](/pdf/fr/python-net/get-update-and-expand-bookmark/)  
+  - [Obtenir, Mettre à Jour et Développer un Signet](/pdf/fr/python-net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

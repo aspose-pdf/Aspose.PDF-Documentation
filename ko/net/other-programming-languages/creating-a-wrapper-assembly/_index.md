@@ -2,7 +2,7 @@
 title: 래퍼 어셈블리 생성
 type: docs
 weight: 80
-url: ko/net/creating-a-wrapper-assembly/
+url: /ko/net/creating-a-wrapper-assembly/
 ---
 
 {{% alert color="primary" %}}

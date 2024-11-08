@@ -2,7 +2,7 @@
 title: 线箭头
 type: docs
 weight: 20
-url: zh/reportingservices/line-arrows/
+url: /zh/reportingservices/line-arrows/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Вставка Пустой Страницы в PDF Файл на Python
 type: docs
 weight: 70
-url: ru/java/insert-an-empty-page-into-a-pdf-file-in-python/
+url: /ru/java/insert-an-empty-page-into-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

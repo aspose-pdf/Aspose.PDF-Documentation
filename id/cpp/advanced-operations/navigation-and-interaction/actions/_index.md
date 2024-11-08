@@ -3,7 +3,7 @@ title: Bekerja dengan Aksi dalam PDF
 linktitle: Aksi
 type: docs
 weight: 20
-url: id/cpp/actions/
+url: /id/cpp/actions/
 description: Bagian ini menjelaskan cara menambahkan aksi ke dokumen dan bidang formulir secara programatis dengan C++.
 lastmod: "2022-01-25"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF липкие аннотации с использованием Pytho
 linktitle: липкая аннотация
 type: docs
 weight: 50
-url: ru/python-net/sticky-annotations/
+url: /ru/python-net/sticky-annotations/
 description: Эта тема о липких аннотациях, в качестве примера мы показываем аннотацию водяного знака в тексте.
 lastmod: "2023-02-17"
 sitemap:

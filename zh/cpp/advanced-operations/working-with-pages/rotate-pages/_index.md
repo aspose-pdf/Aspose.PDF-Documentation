@@ -3,7 +3,7 @@ title: 使用C++旋转PDF页面
 linktitle: 旋转PDF页面
 type: docs
 weight: 50
-url: zh/cpp/rotate-pages/
+url: /zh/cpp/rotate-pages/
 description: 本主题描述了如何使用C++以编程方式旋转现有PDF文件中的页面方向。
 lastmod: "2021-12-08"
 sitemap:

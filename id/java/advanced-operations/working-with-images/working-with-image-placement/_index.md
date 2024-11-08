@@ -3,7 +3,7 @@ title: Bekerja dengan Penempatan Gambar
 linktitle: Penempatan Gambar
 type: docs
 weight: 50
-url: id/java/working-with-image-placement/
+url: /id/java/working-with-image-placement/
 description: Bagian ini menjelaskan fitur bekerja dengan penempatan gambar file PDF menggunakan pustaka Java.
 lastmod: "2021-06-05"
 ---

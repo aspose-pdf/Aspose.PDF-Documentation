@@ -2,7 +2,7 @@
 title: Concatenar archivos PDF en Python
 type: docs
 weight: 10
-url: es/java/concatenate-pdf-files-in-python/
+url: /es/java/concatenate-pdf-files-in-python/
 lastmod: "2021-06-05"
 ---
 

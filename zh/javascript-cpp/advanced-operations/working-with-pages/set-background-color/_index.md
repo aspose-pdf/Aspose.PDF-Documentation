@@ -3,7 +3,7 @@ title: 使用 C++ 中的 JavaScript 设置 PDF 的背景颜色
 linktitle: 设置背景颜色
 type: docs
 weight: 80
-url: zh/javascript-cpp/set-background-color/
+url: /zh/javascript-cpp/set-background-color/
 description: 使用 C++ 中的 JavaScript 为您的 PDF 文件设置背景颜色。
 lastmod: "2023-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Merger
 type: docs
 weight: 100
-url: ko/net/plugins/merger/
+url: /ko/net/plugins/merger/
 description: Aspose.PDF Merger 플러그인을 사용하여 여러 PDF 파일을 하나로 병합하는 방법
 lastmod: "2024-01-24"
 ---

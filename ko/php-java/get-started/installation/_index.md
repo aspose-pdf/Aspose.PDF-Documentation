@@ -3,7 +3,7 @@ title: Aspose.PDF for PHP via Java 설치
 linktitle: 설치
 type: docs
 weight: 20
-url: ko/php-java/installation/
+url: /ko/php-java/installation/
 description: 이 섹션에서는 Aspose.PDF for PHP via Java를 직접 설치하는 방법과 NuGet을 사용하는 방법을 포함한 제품 설명 및 설치 지침을 보여줍니다.
 lastmod: "2024-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Создание и Экспорт Шаблона
 type: docs
 weight: 10
-url: ru/sharepoint/creating-and-exporting-template/
+url: /ru/sharepoint/creating-and-exporting-template/
 lastmod: "2020-12-16"
 description: Вы можете создавать и экспортировать шаблоны в PDF в SharePoint с использованием PDF SharePoint API.
 ---

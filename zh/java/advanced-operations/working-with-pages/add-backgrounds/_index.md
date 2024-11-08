@@ -3,7 +3,7 @@ title: 为PDF添加背景
 linktitle: 添加背景
 type: docs
 weight: 110
-url: zh/java/add-backgrounds/
+url: /zh/java/add-backgrounds/
 descriptions: 使用Java为您的PDF文件添加背景图像。使用BackgroundArtifact对象。
 lastmod: "2021-06-05"
 sitemap:

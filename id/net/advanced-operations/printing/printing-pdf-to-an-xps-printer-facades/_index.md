@@ -3,7 +3,7 @@ title: Mencetak PDF ke Printer XPS
 linktitle: Mencetak PDF ke Printer XPS (Facades)
 type: docs
 weight: 20
-url: id/net/printing-pdf-to-an-xps-printer-facades/
+url: /id/net/printing-pdf-to-an-xps-printer-facades/
 keywords: "print pdf to xps, print pdf to xps c#"
 description: Halaman ini menunjukkan cara mencetak PDF ke printer XPS menggunakan kelas PdfViewer.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "Halaman ini menunjukkan cara mencetak PDF ke printer XPS menggunakan kelas PdfViewer."
 }
 </script>
-Kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## **Mencetak PDF ke printer XPS dalam C#**
 

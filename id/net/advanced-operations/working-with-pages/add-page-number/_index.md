@@ -3,7 +3,7 @@ title: Menambahkan Nomor Halaman ke PDF dengan C#
 linktitle: Tambahkan Nomor Halaman
 type: docs
 weight: 100
-url: id/net/add-page-number/
+url: /id/net/add-page-number/
 description: Aspose.PDF untuk .NET memungkinkan Anda untuk menambahkan Stempel Nomor Halaman ke file PDF Anda menggunakan kelas PageNumber Stamp.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 Semua dokumen harus memiliki nomor halaman di dalamnya. Nomor halaman memudahkan pembaca untuk menemukan berbagai bagian dokumen.
 **Aspose.PDF for .NET** memungkinkan Anda untuk menambahkan nomor halaman dengan PageNumberStamp.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Anda dapat menggunakan kelas [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) untuk menambahkan cap nomor halaman dalam file PDF.
 Anda dapat menggunakan kelas [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) untuk menambahkan cap nomor halaman dalam file PDF.

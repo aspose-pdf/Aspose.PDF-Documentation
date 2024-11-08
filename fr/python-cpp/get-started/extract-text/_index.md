@@ -3,7 +3,7 @@ title: Extraire du texte d'un PDF en utilisant Python
 linktitle: Extraire du texte d'un PDF
 type: docs
 weight: 10
-url: fr/python-cpp/extract-text/
+url: /fr/python-cpp/extract-text/
 description: Cette section décrit comment extraire du texte d'un document PDF en utilisant une bibliothèque Python.
 lastmod: "2024-04-14"
 sitemap:

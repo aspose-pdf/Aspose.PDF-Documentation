@@ -3,7 +3,7 @@ title: PDFファイルにアークオブジェクトを追加
 linktitle: アークを追加
 type: docs
 weight: 10
-url: ja/java/add-arc/
+url: /ja/java/add-arc/
 description: この記事では、Aspose.PDF for Javaを使用してPDFにアークオブジェクトを作成する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

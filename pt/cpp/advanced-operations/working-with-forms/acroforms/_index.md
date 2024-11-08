@@ -3,7 +3,7 @@ title: Trabalhando com AcroForms em PDF usando Aspose.PDF para C++
 linktitle: AcroForms
 type: docs
 weight: 10
-url: pt/cpp/acroforms/
+url: /pt/cpp/acroforms/
 description: Com Aspose.PDF para C++, você pode criar um formulário do zero, preencher o campo de formulário em um documento PDF, extrair dados do formulário, adicionar ou remover campos no formulário existente.
 lastmod: "2021-12-01"
 sitemap:
@@ -19,12 +19,12 @@ sitemap:
 
 Para um estudo mais detalhado das possibilidades de trabalho com formulários, estude os seguintes artigos na seção:
 
-- [Criar AcroForm](/pdf/cpp/create-form/) - criar formulário do zero, adicionando RadioButtonField, TextBoxField, Campo de Legenda usando C++.
+- [Criar AcroForm](/pdf/pt/cpp/create-form/) - criar formulário do zero, adicionando RadioButtonField, TextBoxField, Campo de Legenda usando C++.
 
-- [Preencher AcroForm](/pdf/cpp/fill-form/) - para preencher um campo de formulário, obtenha o campo da coleção de Formulários do objeto Documento.
+- [Preencher AcroForm](/pdf/pt/cpp/fill-form/) - para preencher um campo de formulário, obtenha o campo da coleção de Formulários do objeto Documento.
 
-- [Extrair Dados AcroForm](/pdf/cpp/extract-form/) - obter valores de todos e de campos individuais, etc.
+- [Extrair Dados AcroForm](/pdf/pt/cpp/extract-form/) - obter valores de todos e de campos individuais, etc.
 
-- [Modificar AcroForm](/pdf/cpp/modifing-form/) - obter/definir FieldLimit, remover campos em um formulário existente, definir fonte de campo de formulário diferente das 14 Fontes PDF Core com C++.
+- [Modificar AcroForm](/pdf/pt/cpp/modifing-form/) - obter/definir FieldLimit, remover campos em um formulário existente, definir fonte de campo de formulário diferente das 14 Fontes PDF Core com C++.
 
-- [Postar Dados AcroForm](/pdf/cpp/posting-acroform-data/) - importar e exportar dados de formulário para e de um arquivo XML.
+- [Postar Dados AcroForm](/pdf/pt/cpp/posting-acroform-data/) - importar e exportar dados de formulário para e de um arquivo XML.

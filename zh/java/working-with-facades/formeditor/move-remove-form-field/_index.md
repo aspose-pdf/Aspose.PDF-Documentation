@@ -2,7 +2,7 @@
 title: 移动和删除表单字段
 type: docs
 weight: 50
-url: zh/java/move-remove-form-field/
+url: /zh/java/move-remove-form-field/
 description: 本节介绍如何使用FormEditor类移动和删除表单字段。
 lastmod: "2021-06-05"
 draft: false

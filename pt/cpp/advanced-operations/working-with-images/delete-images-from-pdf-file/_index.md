@@ -3,7 +3,7 @@ title: Excluir Imagens de Arquivo PDF usando C++
 linktitle: Excluir Imagens
 type: docs
 weight: 20
-url: pt/cpp/delete-images-from-pdf-file/
+url: /pt/cpp/delete-images-from-pdf-file/
 description: Esta seção explica como excluir Imagens de Arquivo PDF usando Aspose.PDF para C++.
 lastmod: "2021-12-18"
 ---

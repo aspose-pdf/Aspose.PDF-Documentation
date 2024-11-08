@@ -2,7 +2,7 @@
 title: PDF 파일에서 XML로 데이터 내보내기 (Facades)
 type: docs
 weight: 20
-url: ko/java/export-data-into-a-pdf-file-facades/
+url: /ko/java/export-data-into-a-pdf-file-facades/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF 파일에서 XML로 데이터를 내보내는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

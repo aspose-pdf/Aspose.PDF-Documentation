@@ -3,7 +3,7 @@ title: 添加水印到 PDF
 linktitle: 添加水印
 type: docs
 weight: 90
-url: zh/php-java/add-watermarks/
+url: /zh/php-java/add-watermarks/
 description: 本文解释了使用 PHP 处理工件和获取 PDF 水印的功能。
 lastmod: "2024-06-05"
 sitemap:

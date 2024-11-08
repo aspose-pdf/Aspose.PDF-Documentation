@@ -2,7 +2,7 @@
 title: Justify Text in a Textbox Field
 type: docs
 weight: 20
-url: id/net/justify-text-in-a-textbox-field/
+url: /id/net/justify-text-in-a-textbox-field/
 description: Artikel ini menunjukkan cara untuk Meratakan Teks dalam Field Kotak Teks menggunakan Form Class.
 lastmod: "2021-06-05"
 draft: false

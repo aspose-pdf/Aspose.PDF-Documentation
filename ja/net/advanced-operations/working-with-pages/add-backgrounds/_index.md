@@ -3,7 +3,7 @@ title: C#を使用してPDFに背景を追加
 linktitle: 背景の追加
 type: docs
 weight: 110
-url: ja/net/add-backgrounds/
+url: /ja/net/add-backgrounds/
 description: C#を使用してPDFファイルに背景画像を追加します。BackgroundArtifactオブジェクトを使用してください。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 背景画像は、ウォーターマークやその他の控えめなデザインをドキュメントに追加するために使用できます。Aspose.PDF for .NETでは、各PDFドキュメントはページのコレクションであり、各ページにはアーティファクトのコレクションが含まれています。[BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) クラスを使用して、ページオブジェクトに背景画像を追加することができます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
 次のコードスニペットは、C#を使用してPDFページに背景画像を追加する方法を示しています。
 

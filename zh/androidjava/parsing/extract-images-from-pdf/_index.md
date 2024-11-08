@@ -3,7 +3,7 @@ title: 从 PDF 中提取图像
 linktitle: 提取图像
 type: docs
 weight: 20
-url: zh/androidjava/extract-images-from-the-pdf-file/
+url: /zh/androidjava/extract-images-from-the-pdf-file/
 description: 如何使用 Aspose.PDF for Android via Java 从 PDF 中提取部分图像
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Установка XMP Метаданных существующего PDF
 type: docs
 weight: 20
-url: ru/net/set-xmp-metadata-of-an-existing-pdf/
+url: /ru/net/set-xmp-metadata-of-an-existing-pdf/
 description: Этот раздел объясняет, как установить XMP метаданные существующего PDF с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

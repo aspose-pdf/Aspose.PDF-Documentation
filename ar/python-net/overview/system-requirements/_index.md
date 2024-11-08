@@ -3,7 +3,7 @@ title: متطلبات النظام
 linktitle: متطلبات النظام
 type: docs
 weight: 30
-url: ar/python-net/system-requirements/
+url: /ar/python-net/system-requirements/
 description: تسرد هذه القسم أنظمة التشغيل المدعومة التي يحتاجها المطور للعمل بنجاح مع Aspose.PDF لـ Python.
 lastmod: "2022-12-22"
 sitemap:

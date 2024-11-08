@@ -3,7 +3,7 @@ title: JavaScriptを介してC++でPDFの背景色を設定する
 linktitle: 背景色を設定
 type: docs
 weight: 80
-url: ja/javascript-cpp/set-background-color/
+url: /ja/javascript-cpp/set-background-color/
 description: JavaScriptを介してC++でPDFファイルの背景色を設定します。
 lastmod: "2023-02-17"
 sitemap:

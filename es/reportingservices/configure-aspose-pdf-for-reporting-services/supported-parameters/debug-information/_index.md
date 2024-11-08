@@ -2,7 +2,7 @@
 title: Información de Depuración
 type: docs
 weight: 90
-url: es/reportingservices/debug-information/
+url: /es/reportingservices/debug-information/
 lastmod: "2021-06-05"
 ---
 

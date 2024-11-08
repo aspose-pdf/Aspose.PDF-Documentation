@@ -3,7 +3,7 @@ title: AcroForm 수정
 linktitle: AcroForm 수정
 type: docs
 weight: 40
-url: ko/cpp/modifing-form/
+url: /ko/cpp/modifing-form/
 description: Aspose.PDF for C++ 라이브러리를 사용하여 PDF 파일의 양식을 수정합니다. 기존 양식에 필드를 추가하거나 제거하고, 필드 제한을 설정 및 가져오는 등의 작업을 수행할 수 있습니다.
 lastmod: "2021-12-01"
 sitemap:

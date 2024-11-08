@@ -3,7 +3,7 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: ja/python-java/get-started/
+url: /ja/python-java/get-started/
 description: このページは、Aspose.PDF for Python via Java を使用して PDF ドキュメントを作成および編集する方法の概要です
 lastmod: "2024-06-05"
 sitemap:
@@ -43,7 +43,7 @@ Aspose.PDF for Python via Javaは高速で軽量、そして使いやすいで�
 
 ### 詳しく学ぶ
 
-- [DOM APIの基本](/pdf/python-java/basics-of-dom-api/)
-- ["Hello, World" Java例](/pdf/python-java/hello-world-example/)
-- [複雑なPDF](/pdf/python-java/complex-pdf-example/)
-- [他の例を実行する方法](/pdf/python-java/how-to-run-other-examples/)
+- [DOM APIの基本](/pdf/ja/python-java/basics-of-dom-api/)
+- ["Hello, World" Java例](/pdf/ja/python-java/hello-world-example/)
+- [複雑なPDF](/pdf/ja/python-java/complex-pdf-example/)
+- [他の例を実行する方法](/pdf/ja/python-java/how-to-run-other-examples/)

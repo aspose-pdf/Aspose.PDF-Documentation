@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: zh/jasperreports/working-with-jasperreports/
+url: /zh/jasperreports/working-with-jasperreports/
 
 lastmod: "2021-06-05"
 
@@ -24,11 +24,11 @@ Aspose.Words for JasperReports 可以从下载页面免费获取，且无时间�
 
 有几种方法可以激活许可证：
 
-- [调用 setLicense](/pdf/jasperreports/working-with-jasperreports/#call-setlicense)。
+- [调用 setLicense](/pdf/zh/jasperreports/working-with-jasperreports/#call-setlicense)。
 
-- [在代码中设置导出参数](/pdf/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code)。
+- [在代码中设置导出参数](/pdf/zh/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code)。
 
-- [在 **applicationContext.xml** 中设置导出参数](/pdf/jasperreports/working-with-jasperserver/)。
+- [在 **applicationContext.xml** 中设置导出参数](/pdf/zh/jasperreports/working-with-jasperserver/)。
 
 前两个用于 JasperReports，最后一个用于 JasperServer。
 

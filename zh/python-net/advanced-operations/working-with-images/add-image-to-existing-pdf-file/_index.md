@@ -3,7 +3,7 @@ title: 使用 Python 向 PDF 添加图像
 linktitle: 添加图像
 type: docs
 weight: 10
-url: zh/python-net/add-image-to-existing-pdf-file/
+url: /zh/python-net/add-image-to-existing-pdf-file/
 description: 本节介绍如何使用 Python 库向现有 PDF 文件添加图像。
 lastmod: "2022-02-17"
 ---

@@ -3,7 +3,7 @@ title: Преобразование PDF в форматы PDF/A
 linktitle: Преобразование PDF в форматы PDF/A
 type: docs
 weight: 100
-url: ru/php-java/convert-pdf-to-pdfa/
+url: /ru/php-java/convert-pdf-to-pdfa/
 lastmod: "2024-05-20"
 description: В этой теме показано, как Aspose.PDF позволяет преобразовать PDF файл в PDF файл, соответствующий стандарту PDF/A.
 sitemap:

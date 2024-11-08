@@ -3,7 +3,7 @@ title: Fusionar PDF usando C++
 linktitle: Fusionar archivos PDF
 type: docs
 weight: 50
-url: es/cpp/merge-pdf-documents/
+url: /es/cpp/merge-pdf-documents/
 description: Esta página explica cómo fusionar documentos PDF en un solo archivo PDF con C++.
 lastmod: "2021-11-11"
 sitemap:

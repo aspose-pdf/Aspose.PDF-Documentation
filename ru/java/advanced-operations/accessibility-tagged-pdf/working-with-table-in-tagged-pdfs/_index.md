@@ -3,7 +3,7 @@ title: Работа с таблицей в Tagged PDF
 linktitle: Работа с таблицей в Tagged PDF
 type: docs
 weight: 40
-url: ru/java/working-with-table-in-tagged-pdfs/
+url: /ru/java/working-with-table-in-tagged-pdfs/
 description: В этой статье объясняется, как работать с таблицей в документе Tagged PDF с помощью Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

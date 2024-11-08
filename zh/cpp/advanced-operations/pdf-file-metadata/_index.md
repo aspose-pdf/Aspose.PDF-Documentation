@@ -2,7 +2,7 @@
 title: PDF 文件元数据
 type: docs
 weight: 20
-url: zh/cpp/pdf-file-metadata/
+url: /zh/cpp/pdf-file-metadata/
 ---
 
 ## 获取/设置 PDF 文件信息

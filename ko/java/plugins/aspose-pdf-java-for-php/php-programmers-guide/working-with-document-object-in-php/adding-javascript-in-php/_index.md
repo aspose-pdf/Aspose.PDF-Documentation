@@ -2,7 +2,7 @@
 title: PHP에 JavaScript 추가
 type: docs
 weight: 10
-url: ko/java/adding-javascript-in-php/
+url: /ko/java/adding-javascript-in-php/
 lastmod: "2021-06-05"
 ---
 

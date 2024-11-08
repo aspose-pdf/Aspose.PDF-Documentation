@@ -2,7 +2,7 @@
 title: 워크플로우 활동을 통해 파일을 PDF로 변환하기
 type: docs
 weight: 50
-url: ko/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
+url: /ko/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
 lastmod: "2020-12-16"
 description: PDF SharePoint API는 문서를 PDF로 변환하는 SharePoint 워크플로우에서 사용할 수 있습니다.
 ---

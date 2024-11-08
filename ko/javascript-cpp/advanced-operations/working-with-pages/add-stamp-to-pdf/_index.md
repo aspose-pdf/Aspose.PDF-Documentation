@@ -3,7 +3,7 @@ title: JavaScript를 통한 C++로 PDF에 이미지 스탬프 추가
 linktitle: PDF 파일의 이미지 스탬프
 type: docs
 weight: 60
-url: ko/javascript-cpp/stamping/
+url: /ko/javascript-cpp/stamping/
 description: JavaScript 툴킷을 사용하여 AsposePdfAddStamp 함수를 통해 PDF 문서에 이미지 스탬프를 추가합니다.
 lastmod: "2023-04-15"
 sitemap:

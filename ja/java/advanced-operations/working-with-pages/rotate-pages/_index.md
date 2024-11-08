@@ -3,7 +3,7 @@ title: プログラムでPDFページを回転
 linktitle: PDFページを回転
 type: docs
 weight: 60
-url: ja/java/rotate-pages/
+url: /ja/java/rotate-pages/
 description: Javaを使用してページの向きを変更し、新しいページの向きにページ内容を合わせる。
 lastmod: "2021-06-05"
 sitemap:

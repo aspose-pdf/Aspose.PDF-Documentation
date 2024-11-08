@@ -2,7 +2,7 @@
 title: 画像を抽出してスタンプの位置を変更する
 type: docs
 weight: 30
-url: ja/net/extract-image-and-change-position-of-a-stamp/
+url: /ja/net/extract-image-and-change-position-of-a-stamp/
 description: このセクションでは、Aspose.PDF Facadesを使用して画像を抽出し、スタンプの位置を変更する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

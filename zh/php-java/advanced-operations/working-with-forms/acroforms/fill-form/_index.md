@@ -3,7 +3,7 @@ title: 填写AcroForms
 linktitle: 填写AcroForms
 type: docs
 weight: 20
-url: zh/php-java/fill-form/
+url: /zh/php-java/fill-form/
 description: 本节介绍如何使用Aspose.PDF for PHP通过Java在PDF文档中填写表单字段。
 lastmod: "2024-06-05"
 sitemap:

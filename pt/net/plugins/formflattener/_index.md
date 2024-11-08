@@ -2,7 +2,7 @@
 title: Form Exporter
 type: docs
 weight: 60
-url: pt/net/plugins/formflattener/
+url: /pt/net/plugins/formflattener/
 description: Como achatar campos de formulários em arquivos PDF usando o Plugin FormFlattener da Aspose.PDF
 lastmod: "2024-01-24"
 ---

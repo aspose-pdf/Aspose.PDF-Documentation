@@ -2,7 +2,7 @@
 title: Изменение аннотаций в вашем PDF файле (facades)
 type: docs
 weight: 50
-url: ru/java/modify-annotations/
+url: /ru/java/modify-annotations/
 description: Этот раздел объясняет, как изменить аннотации из PDF файла в XFDF с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -48,4 +48,4 @@ sitemap:
 
 ## См. также
 
-Попробуйте сравнить и найти способ работы с аннотациями, который вам подходит. Давайте изучим раздел [Аннотации PDF](/pdf/java/annotations/).
+Попробуйте сравнить и найти способ работы с аннотациями, который вам подходит. Давайте изучим раздел [Аннотации PDF](/pdf/ru/java/annotations/).

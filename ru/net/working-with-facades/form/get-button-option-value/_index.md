@@ -2,7 +2,7 @@
 title: Получить Значение Опции Кнопки
 type: docs
 weight: 40
-url: ru/net/get-button-option-value/
+url: /ru/net/get-button-option-value/
 description: Этот раздел объясняет, как получить значение опции кнопки с использованием Aspose.PDF Facades и класса Form.
 lastmod: "2021-06-05"
 draft: false

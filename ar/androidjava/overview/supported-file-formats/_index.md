@@ -3,7 +3,7 @@ title: تنسيقات الملفات المدعومة من Aspose.PDF
 linktitle: تنسيقات الملفات المدعومة
 type: docs
 weight: 10
-url: ar/androidjava/supported-file-formats/
+url: /ar/androidjava/supported-file-formats/
 description: تعرض هذه الصفحة تنسيقات الملفات التي يمكن لـ Aspose.PDF لأندرويد عبر Java تحميلها وحفظها.
 lastmod: "2021-06-05"
 sitemap:

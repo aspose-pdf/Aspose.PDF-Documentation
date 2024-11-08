@@ -3,7 +3,7 @@ title: SharePointでPDFにエクスポート
 linktitle: PDFにエクスポート
 type: docs
 weight: 10
-url: ja/sharepoint/export-to-pdf/
+url: /ja/sharepoint/export-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIは、SharePointライブラリからリスト、リストアイテム、およびSharePoint WikiページをPDF形式にエクスポートできます。
 ---

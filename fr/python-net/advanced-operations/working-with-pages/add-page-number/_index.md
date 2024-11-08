@@ -3,7 +3,7 @@ title: Ajouter un Numéro de Page au PDF avec Python
 linktitle: Ajouter un Numéro de Page
 type: docs
 weight: 30
-url: fr/python-net/add-page-number/
+url: /fr/python-net/add-page-number/
 description: Aspose.PDF pour Python via .NET vous permet d'ajouter un tampon de numéro de page à votre fichier PDF en utilisant la classe PageNumberStamp.
 lastmod: "2023-04-17"
 sitemap:

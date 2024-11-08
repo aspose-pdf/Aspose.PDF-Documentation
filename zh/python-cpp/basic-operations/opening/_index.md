@@ -3,7 +3,7 @@ title: 以编程方式打开 PDF 文档
 linktitle: 打开 PDF
 type: docs
 weight: 20
-url: zh/python-cpp/open-pdf-document/
+url: /zh/python-cpp/open-pdf-document/
 description: 学习如何在 Python Aspose.PDF for Python via C++ 库中打开 PDF 文件。您可以打开现有 PDF、来自流的文档和加密的 PDF 文档。
 lastmod: "2022-12-22"
 sitemap:

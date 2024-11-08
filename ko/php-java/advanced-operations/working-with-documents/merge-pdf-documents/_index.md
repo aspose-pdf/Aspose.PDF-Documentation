@@ -3,7 +3,7 @@ title: PDF 병합을 프로그래밍 방식으로 수행하기
 linktitle: PDF 파일 병합
 type: docs
 weight: 50
-url: ko/php-java/merge-pdf-documents/
+url: /ko/php-java/merge-pdf-documents/
 description: 이 페이지는 PHP를 사용하여 PDF 문서를 단일 PDF 파일로 병합하는 방법을 설명합니다.
 lastmod: "2024-06-05"
 ---

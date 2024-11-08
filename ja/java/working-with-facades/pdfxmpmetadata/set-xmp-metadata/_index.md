@@ -2,7 +2,7 @@
 title: 既存のPDFのXMPメタデータを設定する - ファサード
 type: docs
 weight: 20
-url: ja/java/set-xmp-metadata/
+url: /ja/java/set-xmp-metadata/
 description: このセクションでは、PdfXmpMetadataクラスを使用してAspose.PDFファサードでXMPメタデータを設定する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

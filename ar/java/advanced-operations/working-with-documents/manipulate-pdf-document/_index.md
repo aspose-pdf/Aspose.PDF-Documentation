@@ -3,7 +3,7 @@ title: التلاعب بمستند PDF
 linktitle: التلاعب بمستند PDF
 type: docs
 weight: 30
-url: ar/java/manipulate-pdf-document/
+url: /ar/java/manipulate-pdf-document/
 description: تحتوي هذه المقالة على معلومات حول كيفية التحقق من صحة مستند PDF لمعيار PDF A، وكيفية العمل مع TOC، وكيفية تعيين تاريخ انتهاء صلاحية PDF، وكيفية تحديد تقدم إنشاء ملف PDF.
 lastmod: "2021-06-05"
 ---

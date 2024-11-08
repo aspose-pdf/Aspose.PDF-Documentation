@@ -2,7 +2,7 @@
 title: 获取 PDF 文件中特定页面的 Ruby
 type: docs
 weight: 30
-url: zh/java/get-a-particular-page-in-a-pdf-file-in-ruby/
+url: /zh/java/get-a-particular-page-in-a-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

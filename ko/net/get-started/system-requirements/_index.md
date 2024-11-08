@@ -3,7 +3,7 @@ title: 시스템 요구 사항
 linktitle: 시스템 요구 사항
 type: docs
 weight: 30
-url: ko/net/system-requirements/
+url: /ko/net/system-requirements/
 description: 이 섹션에서는 개발자가 Aspose.PDF for .NET을 성공적으로 작업할 수 있도록 지원하는 운영 체제를 나열합니다.
 lastmod: "2023-05-12"
 sitemap:

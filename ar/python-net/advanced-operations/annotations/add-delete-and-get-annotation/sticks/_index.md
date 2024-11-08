@@ -3,7 +3,7 @@ title: PDF sticky Annotations using Python
 linktitle: sticky Annotation
 type: docs
 weight: 50
-url: ar/python-net/sticky-annotations/
+url: /ar/python-net/sticky-annotations/
 description: هذا الموضوع عن التعليقات اللاصقة، كمثال نعرض تعليق العلامة المائية في النص.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Конвертировать PDF файл в HTML формат
 linktitle: Конвертировать PDF файл в HTML формат
 type: docs
 weight: 50
-url: ru/cpp/convert-pdf-to-html/
+url: /ru/cpp/convert-pdf-to-html/
 lastmod: "2021-11-19"
 description: Эта тема показывает, как Aspose.PDF позволяет конвертировать PDF файл в HTML формат с помощью библиотеки C++.
 sitemap:

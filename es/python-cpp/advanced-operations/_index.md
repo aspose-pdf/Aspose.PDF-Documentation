@@ -3,7 +3,7 @@ title: Operaciones avanzadas
 linktitle: Operaciones avanzadas
 type: docs
 weight: 90
-url: es/python-cpp/advanced-operations/
+url: /es/python-cpp/advanced-operations/
 description: Aspose.PDF para Python a través de C++ puede realizar tareas simples y fáciles y enfrentarse a objetivos más complejos. Consulte la siguiente sección para usuarios avanzados y desarrolladores.
 lastmod: "2024-04-17"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**Operaciones Avanzadas** es una sección sobre cómo manejar archivos PDF existentes programáticamente, ya sean documentos creados con Aspose.PDF como se discute en [Operaciones Básicas](/pdf/python-cpp/basic-operations/), o PDFs creados con Adobe Acrobat, Google Docs, Microsoft Office, Open Office o cualquier otro productor de PDF.
+**Operaciones Avanzadas** es una sección sobre cómo manejar archivos PDF existentes programáticamente, ya sean documentos creados con Aspose.PDF como se discute en [Operaciones Básicas](/pdf/es/python-cpp/basic-operations/), o PDFs creados con Adobe Acrobat, Google Docs, Microsoft Office, Open Office o cualquier otro productor de PDF.
 
 Usar Python para realizar operaciones avanzadas con PDFs a través de una biblioteca de C++ puede ser una combinación poderosa. Integrar Python con una biblioteca de C++ permite un procesamiento eficiente y de alto rendimiento de archivos PDF. Aspose.PDF para Python a través de C++ es una opción popular debido a sus amplias características y rendimiento.
 
@@ -27,7 +27,7 @@ Al combinar la flexibilidad y facilidad de uso de Python con el rendimiento y la
 
 Aprenderás diferentes maneras de:
 
-- [Trabajar con Documentos](/pdf/python-cpp/working-with-documents/) - comprimir, dividir y combinar documentos y realizar otras operaciones con todo el documento.
-- [Trabajar con Páginas](/pdf/python-cpp/working-with-pages/) - agregar, mover o eliminar, recortar páginas, agregar marcas de agua, sellos, etc.
+- [Trabajar con Documentos](/pdf/es/python-cpp/working-with-documents/) - comprimir, dividir y combinar documentos y realizar otras operaciones con todo el documento.
+- [Trabajar con Páginas](/pdf/es/python-cpp/working-with-pages/) - agregar, mover o eliminar, recortar páginas, agregar marcas de agua, sellos, etc.
 
-- [Encriptar y Desencriptar PDF](/pdf/python-cpp/encrypt-decrypt-pdf/) - encriptar y desencriptar PDFs usando Python.
+- [Encriptar y Desencriptar PDF](/pdf/es/python-cpp/encrypt-decrypt-pdf/) - encriptar y desencriptar PDFs usando Python.

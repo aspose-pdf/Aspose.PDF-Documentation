@@ -3,7 +3,7 @@ title: PDF 注释
 linktitle: PDF 注释
 type: docs
 weight: 100
-url: zh/python-net/annotations/
+url: /zh/python-net/annotations/
 description: 本节介绍如何使用 Aspose.PDF 库对 PDF 文件添加各种注释。
 lastmod: "2023-02-17"
 sitemap:
@@ -93,9 +93,9 @@ You are able to do the following:
 
 您可以执行以下操作：
 
-- [Add, Delete and Get Annotation](/pdf/python-net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
+- [Add, Delete and Get Annotation](/pdf/zh/python-net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
 
-- [添加、删除和获取注释](/pdf/python-net/add-delete-and-get-annotation/) - 本节解释如何处理所有类型的允许注释。
+- [添加、删除和获取注释](/pdf/zh/python-net/add-delete-and-get-annotation/) - 本节解释如何处理所有类型的允许注释。
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: 将弧形对象添加到PDF文件
 linktitle: 添加弧形
 type: docs
 weight: 10
-url: zh/cpp/add-arc/
+url: /zh/cpp/add-arc/
 description: 本文介绍如何使用Aspose.PDF for C++在PDF中创建弧形对象。
 lastmod: "2021-12-18"
 sitemap:

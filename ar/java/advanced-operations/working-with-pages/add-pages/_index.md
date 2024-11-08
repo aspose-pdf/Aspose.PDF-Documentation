@@ -3,7 +3,7 @@ title: إضافة صفحات في PDF
 linktitle: إضافة صفحات
 type: docs
 weight: 10
-url: ar/java/add-pages/
+url: /ar/java/add-pages/
 description: تعلمك هذه المقالة كيفية إدراج (إضافة) صفحة في المكان المطلوب في ملف PDF. تعلم كيفية نقل وحذف (إزالة) صفحات من ملف PDF باستخدام مكتبة Java.
 lastmod: "2021-06-05"
 sitemap:

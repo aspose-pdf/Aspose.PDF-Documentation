@@ -3,7 +3,7 @@ title: Tambah dan Hapus Penanda Buku
 linktitle: Tambah dan Hapus Penanda Buku
 type: docs
 weight: 10
-url: id/java/add-and-delete-bookmark/
+url: /id/java/add-and-delete-bookmark/
 description: Anda dapat menambahkan penanda buku ke dokumen PDF dengan Java. Dimungkinkan untuk menghapus semua atau penanda buku tertentu dari dokumen PDF.
 lastmod: "2021-06-05"
 sitemap:

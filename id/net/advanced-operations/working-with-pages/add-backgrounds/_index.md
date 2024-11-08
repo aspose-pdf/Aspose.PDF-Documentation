@@ -3,7 +3,7 @@ title: Tambahkan Latar Belakang ke PDF dengan C#
 linktitle: Tambahkan Latar Belakang
 type: docs
 weight: 110
-url: id/net/add-backgrounds/
+url: /id/net/add-backgrounds/
 description: Tambahkan gambar latar belakang ke file PDF Anda dengan C#. Gunakan objek BackgroundArtifact.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Gambar latar belakang dapat digunakan untuk menambahkan watermark, atau desain halus lainnya, pada dokumen. Dalam Aspose.PDF untuk .NET, setiap dokumen PDF adalah kumpulan halaman dan setiap halaman mengandung kumpulan artifak. Kelas [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) dapat digunakan untuk menambahkan gambar latar belakang ke objek halaman.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara menambahkan gambar latar belakang ke halaman PDF menggunakan objek BackgroundArtifact dengan C#.
 

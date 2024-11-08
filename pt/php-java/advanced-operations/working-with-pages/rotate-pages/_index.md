@@ -3,7 +3,7 @@ title: Rotacionar Páginas de PDF programaticamente
 linktitle: Rotacionar Páginas de PDF
 type: docs
 weight: 60
-url: pt/php-java/rotate-pages/
+url: /pt/php-java/rotate-pages/
 description: Mudar a orientação da página e ajustar o conteúdo da página para a nova orientação usando Java.
 lastmod: "2024-06-05"
 sitemap:

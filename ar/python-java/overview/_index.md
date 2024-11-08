@@ -3,7 +3,7 @@ title: استخدام Aspose.PDF لـ Python عبر Java
 linktitle: نظرة عامة
 type: docs
 weight: 20
-url: ar/python-java/overview/
+url: /ar/python-java/overview/
 description: الوظائف الرئيسية، ميزات التحويل، التقسيم، الدمج والقيام بعمليات أخرى متعلقة بإنشاء وتحرير ملفات PDF باستخدام Python عبر Java
 lastmod: "2022-05-16"
 sitemap:
@@ -39,7 +39,7 @@ _هذه الصفحة هي نظرة عامة على الخوارزمية لاست
 
 اقرأ المزيد حول:
 
-- [العمل مع تحويل المستندات في Python عبر Java](/pdf/python-java/conversion/)
-- [العمل مع كائن المستند في Python عبر Java](/pdf/python-java/working-with-documents/)
-- [العمل مع الصفحات في Python عبر Java](/pdf/python-java/working-with-pages/)
-- [العمل مع النصوص في Python عبر Java](/pdf/python-java/working-with-text/)
+- [العمل مع تحويل المستندات في Python عبر Java](/pdf/ar/python-java/conversion/)
+- [العمل مع كائن المستند في Python عبر Java](/pdf/ar/python-java/working-with-documents/)
+- [العمل مع الصفحات في Python عبر Java](/pdf/ar/python-java/working-with-pages/)
+- [العمل مع النصوص في Python عبر Java](/pdf/ar/python-java/working-with-text/)

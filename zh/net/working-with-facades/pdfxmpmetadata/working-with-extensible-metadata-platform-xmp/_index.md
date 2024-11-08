@@ -2,7 +2,7 @@
 title: Extensible Metadata Platform - XMP
 type: docs
 weight: 10
-url: zh/net/working-with-extensible-metadata-platform-xmp/
+url: /zh/net/working-with-extensible-metadata-platform-xmp/
 description: 本节解释如何使用 PdfXmpMetadata 类处理可扩展元数据平台 - XMP。
 lastmod: "2021-06-05"
 draft: false

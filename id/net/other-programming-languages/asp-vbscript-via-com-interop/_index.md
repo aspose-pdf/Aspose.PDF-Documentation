@@ -2,7 +2,7 @@
 title: ASP - VBScript via COM Interop
 type: docs
 weight: 30
-url: id/net/asp-vbscript-via-com-interop/
+url: /id/net/asp-vbscript-via-com-interop/
 ---
 
 ## Prasyarat
@@ -17,7 +17,7 @@ url: id/net/asp-vbscript-via-com-interop/
 
 {{% alert color="primary" %}}
 
-Ini adalah aplikasi ASP sederhana yang menunjukkan cara membuat file PDF dengan teks contoh menggunakan [Aspose.PDF for .NET](/pdf/net/) dan VBScript via COM Interop.
+Ini adalah aplikasi ASP sederhana yang menunjukkan cara membuat file PDF dengan teks contoh menggunakan [Aspose.PDF for .NET](/pdf/id/net/) dan VBScript via COM Interop.
 
 {{% /alert %}}
 

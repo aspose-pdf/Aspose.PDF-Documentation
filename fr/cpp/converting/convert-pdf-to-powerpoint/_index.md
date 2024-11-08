@@ -3,7 +3,7 @@ title: Convertir un PDF en Microsoft PowerPoint en C++
 linktitle: Convertir un PDF en PowerPoint
 type: docs
 weight: 30
-url: fr/cpp/convert-pdf-to-powerpoint/
+url: /fr/cpp/convert-pdf-to-powerpoint/
 description: Aspose.PDF vous permet de convertir un PDF au format PowerPoint en utilisant C++. Il est possible de convertir un PDF en PPTX avec des diapositives sous forme d'images.
 lastmod: "2021-11-19"
 sitemap:

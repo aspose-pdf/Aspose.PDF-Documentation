@@ -2,7 +2,7 @@
 title: テキストボックスフィールドでテキストを両端揃えする
 type: docs
 weight: 20
-url: ja/net/justify-text-in-a-textbox-field/
+url: /ja/net/justify-text-in-a-textbox-field/
 description: この記事では、フォームクラスを使用してテキストボックスフィールドでテキストを両端揃えする方法を示します。
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: Python에서 PDF 파일 정보 가져오기
 type: docs
 weight: 40
-url: ko/python-java/get-pdf-file-information-in-python/
+url: /ko/python-java/get-pdf-file-information-in-python/
 ---
 
 <ins>**Aspose.PDF Java for Python**을 사용하여 Pdf 문서의 파일 정보를 얻으려면, **GetPdfFileInfo** 클래스를 호출하십시오.

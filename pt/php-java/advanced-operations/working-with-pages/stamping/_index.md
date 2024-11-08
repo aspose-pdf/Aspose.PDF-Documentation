@@ -3,7 +3,7 @@ title: Estampagem
 linktitle: Estampagem
 type: docs
 weight: 120
-url: pt/php-java/stamping/
+url: /pt/php-java/stamping/
 description: Esta seção descreve como adicionar carimbos de imagem e carimbos de texto a uma página PDF.
 lastmod: "2024-06-05"
 sitemap:
@@ -15,7 +15,7 @@ Um carimbo em um documento PDF é análogo à aplicação de um carimbo de borra
 
 Consulte as seguintes seções para aprender como adicionar um carimbo com PHP:
 
-- [Adicionar carimbos de imagem na página PDF](/pdf/php-java/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
-- [Adicionar carimbos de texto no arquivo PDF](/pdf/php-java/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto traçado como carimbo no PDF
+- [Adicionar carimbos de imagem na página PDF](/pdf/pt/php-java/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
+- [Adicionar carimbos de texto no arquivo PDF](/pdf/pt/php-java/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto traçado como carimbo no PDF
 
-- [Adicionar carimbos de página em PDFs](/pdf/php-java/page-stamps-in-the-pdf-file/) - adicionar carimbo complexo baseado em página de outro arquivo PDF.
+- [Adicionar carimbos de página em PDFs](/pdf/pt/php-java/page-stamps-in-the-pdf-file/) - adicionar carimbo complexo baseado em página de outro arquivo PDF.

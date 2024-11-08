@@ -3,7 +3,7 @@ title: 程序化创建PDF文档
 linktitle: 创建PDF
 type: docs
 weight: 10
-url: zh/python-net/create-document/
+url: /zh/python-net/create-document/
 description: 本页描述如何使用Aspose.PDF for Python via .NET库从头开始创建PDF文档。
 ---
 

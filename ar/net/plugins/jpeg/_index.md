@@ -2,7 +2,7 @@
 title: محول JPEG
 type: docs
 weight: 90
-url: ar/net/plugins/jpeg/
+url: /ar/net/plugins/jpeg/
 description: كيفية تحويل صفحات PDF إلى صور JPEG باستخدام محول JPEG من Aspose.PDF
 lastmod: "2024-01-24"
 draft: false

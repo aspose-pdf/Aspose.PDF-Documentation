@@ -2,7 +2,7 @@
 title: PHPにJavaScriptを追加
 type: docs
 weight: 10
-url: ja/java/adding-javascript-in-php/
+url: /ja/java/adding-javascript-in-php/
 lastmod: "2021-06-05"
 ---
 

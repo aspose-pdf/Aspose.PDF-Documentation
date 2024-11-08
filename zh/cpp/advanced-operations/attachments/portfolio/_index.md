@@ -3,7 +3,7 @@ title: 使用 PDF 创建作品集
 linktitle: 作品集
 type: docs
 weight: 40
-url: zh/cpp/portfolio/
+url: /zh/cpp/portfolio/
 description: 使用 Aspose.PDF for C++ 创建 PDF 作品集。您应该使用 Microsoft Excel 文件、Word 文档和图像文件来创建 PDF 作品集。
 lastmod: "2022-02-07"
 sitemap:

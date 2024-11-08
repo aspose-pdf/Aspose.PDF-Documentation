@@ -3,7 +3,7 @@ title: Install Aspose.PDF untuk JavaScript via C++
 linktitle: Instalasi
 type: docs
 weight: 40
-url: id/javascript-cpp/installation/
+url: /id/javascript-cpp/installation/
 description: Bagian ini menunjukkan deskripsi produk dan petunjuk untuk menginstal Aspose.PDF untuk JavaScript via C++.
 lastmod: "2022-12-13"
 sitemap:

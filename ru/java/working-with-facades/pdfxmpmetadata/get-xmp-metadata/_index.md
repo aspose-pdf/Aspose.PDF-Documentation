@@ -2,7 +2,7 @@
 title: Получение XMP метаданных из существующего PDF файла - фасады
 type: docs
 weight: 10
-url: ru/java/get-xmp-metadata/
+url: /ru/java/get-xmp-metadata/
 description: Этот раздел объясняет, как получить XMP метаданные с помощью Aspose.PDF Facades, используя класс PdfXmpMetadata.
 lastmod: "2021-06-05"
 sitemap:

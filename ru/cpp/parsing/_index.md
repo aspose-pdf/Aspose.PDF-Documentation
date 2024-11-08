@@ -3,7 +3,7 @@ title: Разбор PDF документов C/C++
 linktitle: Разбор PDF документов
 type: docs
 weight: 50
-url: ru/cpp/parsing/
+url: /ru/cpp/parsing/
 description: Хотите извлечь данные из PDF-документов? Откройте для себя различные методы извлечения данных из PDF с помощью Aspose.PDF для C++.
 lastmod: "2021-12-13"
 sitemap:
@@ -19,8 +19,8 @@ sitemap:
 
 Разбор PDF документов - это термин, связанный с извлечением различного рода информации из PDF файла. Этот раздел охватывает, как:
 
-- [Извлечь текст из PDF](/pdf/cpp/extract-text-from-pdf/). Text Parsing or Extraction is the most popular operation with ready-made PDFs. You will learn about text parsing from a whole document, a particular page, or a particular region in a page.  
-- [Извлечение изображений из PDF](/pdf/cpp/extract-images-from-the-pdf-file/). Извлечение изображений выполняет ту же операцию для изображений, что и операция выше для текста.  
-- [Извлечение данных из формы](/pdf/cpp/extract-data-from-acroform/). Если у вас есть куча PDF документов с формами, вероятно, вам нужно получить данные из этих форм. Эта статья поможет понять, как извлечь данные из AcroForms с помощью Aspose.PDF для C++.  
-- [Извлечение данных из таблицы](/pdf/cpp/extract-data-from-table-in-pdf/). Программное извлечение таблиц из PDF.  
-- [Извлечение текста из штампов с использованием C++](/pdf/cpp/extract-text-from-stamps/). Если у вас есть текст в штампе внутри вашего PDF, вы можете легко извлечь его оттуда.
+- [Извлечь текст из PDF](/pdf/ru/cpp/extract-text-from-pdf/). Text Parsing or Extraction is the most popular operation with ready-made PDFs. You will learn about text parsing from a whole document, a particular page, or a particular region in a page.  
+- [Извлечение изображений из PDF](/pdf/ru/cpp/extract-images-from-the-pdf-file/). Извлечение изображений выполняет ту же операцию для изображений, что и операция выше для текста.  
+- [Извлечение данных из формы](/pdf/ru/cpp/extract-data-from-acroform/). Если у вас есть куча PDF документов с формами, вероятно, вам нужно получить данные из этих форм. Эта статья поможет понять, как извлечь данные из AcroForms с помощью Aspose.PDF для C++.  
+- [Извлечение данных из таблицы](/pdf/ru/cpp/extract-data-from-table-in-pdf/). Программное извлечение таблиц из PDF.  
+- [Извлечение текста из штампов с использованием C++](/pdf/ru/cpp/extract-text-from-stamps/). Если у вас есть текст в штампе внутри вашего PDF, вы можете легко извлечь его оттуда.

@@ -3,7 +3,7 @@ title: 複雑なPDFの作成
 linktitle: 複雑なPDFの作成
 type: docs
 weight: 30
-url: ja/python-net/complex-pdf-example/
+url: /ja/python-net/complex-pdf-example/
 description: Aspose.PDF for Python via .NETを使用すると、画像、テキスト断片、およびテーブルを1つのドキュメントに含むより複雑なドキュメントを作成できます。
 lastmod: "2022-12-22"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/python-net/hello-world-example/)の例では、PythonとAspose.PDFを使用してPDFドキュメントを作成する簡単な手順を示しました。この記事では、Aspose.PDF for Pythonを使用してより複雑なドキュメントを作成する方法を見ていきます。例として、旅客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。このドキュメントには、画像、2つのテキスト断片（ヘッダーと段落）、およびテーブルが含まれます。
+[Hello, World](/pdf/ja/python-net/hello-world-example/)の例では、PythonとAspose.PDFを使用してPDFドキュメントを作成する簡単な手順を示しました。この記事では、Aspose.PDF for Pythonを使用してより複雑なドキュメントを作成する方法を見ていきます。例として、旅客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。このドキュメントには、画像、2つのテキスト断片（ヘッダーと段落）、およびテーブルが含まれます。
 
 最初からドキュメントを作成する場合、特定の手順に従う必要があります：
 

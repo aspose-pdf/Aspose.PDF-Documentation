@@ -3,7 +3,7 @@ title: 使用 C++ 替换现有 PDF 文件中的图像
 linktitle: 替换图像
 type: docs
 weight: 70
-url: zh/cpp/replace-image-in-existing-pdf-file/
+url: /zh/cpp/replace-image-in-existing-pdf-file/
 description: 本节介绍如何使用 ++ 库替换现有 PDF 文件中的图像。
 lastmod: "2021-12-18"
 ---

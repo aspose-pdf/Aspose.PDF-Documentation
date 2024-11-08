@@ -3,7 +3,7 @@ title: Добавление текстовых штампов в PDF с помо
 linktitle: Текстовые штампы в PDF файле
 type: docs
 weight: 20
-url: ru/python-net/text-stamps-in-the-pdf-file/
+url: /ru/python-net/text-stamps-in-the-pdf-file/
 description: Добавьте текстовый штамп в PDF документ с использованием класса TextStamp из библиотеки Aspose.PDF для Python.
 lastmod: "2023-04-17"
 sitemap:

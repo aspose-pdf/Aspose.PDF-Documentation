@@ -2,7 +2,7 @@
 title: PDF 파일에서 텍스트 추출
 type: docs
 weight: 30
-url: ko/net/extract-text/
+url: /ko/net/extract-text/
 description: 이 섹션은 PdfExtractor 클래스를 사용하여 PDF에서 텍스트를 추출하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 ---

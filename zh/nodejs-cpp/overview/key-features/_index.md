@@ -3,7 +3,7 @@ title: Aspose.PDF for Node.js 的关键功能
 linktitle: 关键功能
 type: docs
 weight: 20
-url: zh/nodejs-cpp/key-features/
+url: /zh/nodejs-cpp/key-features/
 description: Aspose.PDF for Node.js via C++ 展示了其一般功能。本页面描述了支持的 PDF 版本，以及我们可以对文本、图像、页面等进行的所有操作。
 lastmod: "2023-11-16"
 sitemap:

@@ -2,7 +2,7 @@
 title: 从 PDF 中移除元数据在 Python 中
 type: docs
 weight: 70
-url: zh/python-java/remove-metadata-from-pdf-in-python/
+url: /zh/python-java/remove-metadata-from-pdf-in-python/
 ---
 
 <ins>要使用 **Aspose.PDF Java for Python** 从 PDF 文档中移除元数据，只需调用 **RemoveMetadata** 类。

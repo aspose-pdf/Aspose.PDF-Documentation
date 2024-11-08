@@ -3,7 +3,7 @@ title: JavaScript를 통해 C++로 PDF 문서 작업
 linktitle: 문서 작업
 type: docs
 weight: 10
-url: ko/javascript-cpp/working-with-documents/
+url: /ko/javascript-cpp/working-with-documents/
 description: 이 기사는 Aspose.PDF for JavaScript via C++ 라이브러리를 사용하여 문서로 수행할 수 있는 조작에 대해 설명합니다.
 lastmod: "2023-02-17"
 sitemap:
@@ -21,9 +21,9 @@ PDF는 국제 표준화 기구(ISO)에 의해 유지 관리되는 개방형 표�
 
 You are able to do the following:
 
-- [PDF 최적화](/pdf/javascript-cpp/optimize-pdf/) - 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 모든 이미지 압축하여 문서 최적화 성공.
-- [PDF 리소스 최적화](/pdf/javascript-cpp/optimize-pdf-resources/) - 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 모든 이미지 압축하여 문서 최적화 성공.
-- [PDF 병합](/pdf/javascript-cpp/merge-pdf/) - JavaScript를 사용하여 여러 PDF 파일을 하나의 PDF 문서로 병합.
-- [PDF 분할](/pdf/javascript-cpp/split-pdf/) - C++를 통해 JavaScript에서 PDF 페이지를 개별 PDF 파일로 분할.
-- [JavaScripts 삭제](/pdf/javascript-cpp/delete-javascripts/) - PDF 파일에서 JavaScripts 삭제.
-- [제품 정보 얻기](/pdf/javascript-cpp/get-info-about-product/)
+- [PDF 최적화](/pdf/ko/javascript-cpp/optimize-pdf/) - 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 모든 이미지 압축하여 문서 최적화 성공.
+- [PDF 리소스 최적화](/pdf/ko/javascript-cpp/optimize-pdf-resources/) - 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 모든 이미지 압축하여 문서 최적화 성공.
+- [PDF 병합](/pdf/ko/javascript-cpp/merge-pdf/) - JavaScript를 사용하여 여러 PDF 파일을 하나의 PDF 문서로 병합.
+- [PDF 분할](/pdf/ko/javascript-cpp/split-pdf/) - C++를 통해 JavaScript에서 PDF 페이지를 개별 PDF 파일로 분할.
+- [JavaScripts 삭제](/pdf/ko/javascript-cpp/delete-javascripts/) - PDF 파일에서 JavaScripts 삭제.
+- [제품 정보 얻기](/pdf/ko/javascript-cpp/get-info-about-product/)

@@ -3,7 +3,7 @@ title: Trabalhando com XML usando C#
 linktitle: Trabalhando com XML
 type: docs
 weight: 80
-url: pt/net/working-with-xml/
+url: /pt/net/working-with-xml/
 description: Aprenda a gerar um documento PDF a partir de XML no Aspose.PDF para .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -78,9 +78,9 @@ sitemap:
 
 XML (Extensible Markup Language) é uma maneira de reutilizar dados em um arquivo ou automatizar o processo de substituir os dados em um arquivo com dados de outro arquivo. Criar um esquema XML é difícil de acertar; criar vários esquemas interligados que podem ser estendidos é ainda mais difícil. Vamos aprender como o Aspose.PDF lida com as tarefas de trabalhar com XML.
 
-- [Esquema XML Suportado](/pdf/net/supported-xml-schema/) - use o seguinte esquema XML para trabalhar com documentos XML.
-- [Exemplo simples 'Hello World' baseado em XML e XSLT](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - use XSLT para transformar seu documento XML existente em PDF.
-- [Gerar PDF a partir de XML](/pdf/net/generate-pdf-from-xml/) - Aspose.PDF tem várias maneiras de gerar PDF com base em um documento XML.
+- [Esquema XML Suportado](/pdf/pt/net/supported-xml-schema/) - use o seguinte esquema XML para trabalhar com documentos XML.
+- [Exemplo simples 'Hello World' baseado em XML e XSLT](/pdf/pt/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - use XSLT para transformar seu documento XML existente em PDF.
+- [Gerar PDF a partir de XML](/pdf/pt/net/generate-pdf-from-xml/) - Aspose.PDF tem várias maneiras de gerar PDF com base em um documento XML.
 
 <script type="application/ld+json">
 {

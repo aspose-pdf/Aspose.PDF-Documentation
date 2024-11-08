@@ -2,7 +2,7 @@
 title: Travailler avec les en-têtes dans PDF
 type: docs
 weight: 90
-url: fr/cpp/working-with-headings/
+url: /fr/cpp/working-with-headings/
 lastmod: "2021-11-11"
 description: Créez une numérotation dans l'en-tête de votre document PDF avec C++. Aspose.PDF pour C++ montre différents styles de numérotation.
 sitemap:
@@ -16,7 +16,7 @@ Tout texte dans un document commence par un en-tête. Les en-têtes sont une par
 Les en-têtes aident à attirer l'attention sur le texte et aident les utilisateurs à trouver l'information dont ils ont besoin dans le document, améliorant ainsi la lisibilité et la perception visuelle. En utilisant des styles d'en-tête, vous pouvez également créer rapidement une table des matières, modifier la structure du document.
 Alors, voyons comment travailler avec les en-têtes en utilisant la bibliothèque Aspose.PDF pour C++.
 
-[Aspose.PDF pour C++](/pdf/cpp/) offre de nombreux styles de numérotation prédéfinis. Ces styles de numérotation prédéfinis sont stockés dans une énumération, NumberingStyle. Les valeurs prédéfinies de l'énumération NumberingStyle et leurs descriptions sont données ci-dessous :
+[Aspose.PDF pour C++](/pdf/fr/cpp/) offre de nombreux styles de numérotation prédéfinis. Ces styles de numérotation prédéfinis sont stockés dans une énumération, NumberingStyle. Les valeurs prédéfinies de l'énumération NumberingStyle et leurs descriptions sont données ci-dessous :
 
 |**Types de Titres**|**Description**|
 | :- | :- |

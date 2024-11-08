@@ -3,7 +3,7 @@ title: PDFドキュメントを操作する
 linktitle: PDFドキュメントを操作する
 type: docs
 weight: 30
-url: ja/cpp/manipulate-pdf-document/
+url: /ja/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: このセクションでは、PDF A標準に対するPDFドキュメントの検証、目次の操作、PDFの有効期限の設定、PDFファイル生成の進行状況の確認方法について説明します。
 lastmod: "2021-11-11"

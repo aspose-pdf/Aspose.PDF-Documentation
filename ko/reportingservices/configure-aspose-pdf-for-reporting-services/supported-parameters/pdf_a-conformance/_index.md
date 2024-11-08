@@ -2,7 +2,7 @@
 title: PDF_A 적합성
 type: docs
 weight: 100
-url: ko/reportingservices/pdf_a-conformance/
+url: /ko/reportingservices/pdf_a-conformance/
 lastmod: "2021-06-05"
 ---
 

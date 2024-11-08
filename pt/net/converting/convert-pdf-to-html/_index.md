@@ -3,7 +3,7 @@ title: Converter PDF para HTML em .NET
 linktitle: Converter formato PDF para HTML
 type: docs
 weight: 50
-url: pt/net/convert-pdf-to-html/
+url: /pt/net/convert-pdf-to-html/
 lastmod: "2021-11-01"
 description: Este tópico mostra como converter um arquivo PDF para formato HTML com a biblioteca Aspose.PDF C#.
 sitemap:
@@ -20,7 +20,7 @@ _Formato_: **HTML**
 - [C# Converter PDF para HTML](#csharp-pdf-to-html)
 - [C# Como converter arquivo PDF para HTML](#csharp-pdf-to-html)
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Converter PDF para HTML
 

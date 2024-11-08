@@ -3,7 +3,7 @@ title: Mencetak Dokumen PDF
 linktitle: Mencetak Dokumen
 type: docs
 weight: 160
-url: id/net/printing-document/
+url: /id/net/printing-document/
 description: Teknik mencetak PDF dengan C# dan panduan untuk pengaturan printer PDF C# serta tips proyek .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -80,11 +80,11 @@ aliases:
 
 ## Cara mencetak file PDF di C#
 
-- [Mencetak PDF di .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
-- [Mencetak PDF ke Printer XPS (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [Konversi PDF ke PostScript, Memeriksa Status Pekerjaan Cetak](/pdf/net/pdf-to-postscript-conversion/)
-- [Mencetak PDF di .NET Core](/pdf/net/print-dotnetcore/)
-- [Mencetak dokumen PDF dalam aplikasi WPF](/pdf/net/print-pdf-document-in-wpf-application/)
+- [Mencetak PDF di .NET Framework](/pdf/id/net/printing-pdf-in-net-framework/)
+- [Mencetak PDF ke Printer XPS (Facades)](/pdf/id/net/printing-pdf-to-an-xps-printer-facades/)
+- [Konversi PDF ke PostScript, Memeriksa Status Pekerjaan Cetak](/pdf/id/net/pdf-to-postscript-conversion/)
+- [Mencetak PDF di .NET Core](/pdf/id/net/print-dotnetcore/)
+- [Mencetak dokumen PDF dalam aplikasi WPF](/pdf/id/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: Работа с AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ru/net/acroforms/
+url: /ru/net/acroforms/
 description: С помощью Aspose.PDF для .NET вы можете создать форму с нуля, заполнить поля формы в документе PDF, извлечь данные из формы и т.д.
 lastmod: "2022-02-17"
 sitemap:
@@ -98,12 +98,12 @@ AcroForms обладают возможностями, которых нет в 
 Для более подробного изучения возможностей Java библиотеки, смотрите следующие статьи:
 Для более подробного изучения возможностей библиотеки Java ознакомьтесь со следующими статьями:
 
-- [Создать AcroForm](/pdf/net/create-form) - создать форму с нуля с помощью C#.
-- [Заполнить AcroForm](/pdf/net/fill-form) - заполнить поле формы в вашем PDF-документе.
-- [Извлечь AcroForm](/pdf/net/extract-form) - получить значение из всех или отдельного поля PDF-документа.
-- [Изменение AcroForm](/pdf/net/modifing-form) - получить или установить FieldLimit, установить шрифт поля формы и т.д.
-- [Отправка данных AcroForm](/pdf/net/posting-acroform-data/) - импортировать и экспортировать данные формы в XML-файл и из него.
-- [Импорт и экспорт данных](/pdf/net/import-and-export-data/) - импортировать и экспортировать данные с использованием класса Form.
+- [Создать AcroForm](/pdf/ru/net/create-form) - создать форму с нуля с помощью C#.
+- [Заполнить AcroForm](/pdf/ru/net/fill-form) - заполнить поле формы в вашем PDF-документе.
+- [Извлечь AcroForm](/pdf/ru/net/extract-form) - получить значение из всех или отдельного поля PDF-документа.
+- [Изменение AcroForm](/pdf/ru/net/modifing-form) - получить или установить FieldLimit, установить шрифт поля формы и т.д.
+- [Отправка данных AcroForm](/pdf/ru/net/posting-acroform-data/) - импортировать и экспортировать данные формы в XML-файл и из него.
+- [Импорт и экспорт данных](/pdf/ru/net/import-and-export-data/) - импортировать и экспортировать данные с использованием класса Form.
 
 <script type="application/ld+json">
 {

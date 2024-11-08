@@ -2,7 +2,7 @@
 title: حذف صفحة معينة من ملف PDF باستخدام لغة بايثون
 type: docs
 weight: 20
-url: ar/java/delete-a-particular-page-from-the-pdf-file-in-python/
+url: /ar/java/delete-a-particular-page-from-the-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

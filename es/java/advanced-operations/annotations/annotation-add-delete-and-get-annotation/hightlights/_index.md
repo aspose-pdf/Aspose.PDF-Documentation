@@ -3,7 +3,7 @@ title: Anotación de Resaltados en PDF
 linktitle: Anotación de Resaltados
 type: docs
 weight: 20
-url: es/java/highlights-annotation/
+url: /es/java/highlights-annotation/
 description: Las anotaciones de marcado se presentan en el texto como resaltados, subrayados, tachados o subrayados ondulados en el texto de un documento.
 lastmod: "2021-11-24"
 sitemap:

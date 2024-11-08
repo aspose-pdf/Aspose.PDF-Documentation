@@ -3,7 +3,7 @@ title: Mengamankan dan Menandatangani PDF dalam C#
 linktitle: Mengamankan dan Menandatangani dalam PDF
 type: docs
 weight: 150
-url: id/net/securing-and-signing/
+url: /id/net/securing-and-signing/
 description: Bagian ini menjelaskan fitur menggunakan tanda tangan dan mengamankan dokumen PDF Anda menggunakan C#
 lastmod: "2022-02-17"
 sitemap:
@@ -80,10 +80,10 @@ aliases:
 
 Bagian ini menjelaskan cara menandatangani dokumen PDF secara digital dengan aman menggunakan C#. Istilah tanda tangan elektronik dan tanda tangan digital digunakan secara bergantian, tetapi pada dasarnya kedua istilah tersebut berbeda. Secara umum, tanda tangan digital disertai dengan segel yang disetujui oleh [otoritas sertifikasi](https://en.wikipedia.org/wiki/Certificate_authority) dan digunakan untuk melindungi dokumen yang ditandatangani dari perubahan. Sebaliknya, tanda tangan elektronik sering digunakan untuk menunjukkan niat untuk menandatangani dokumen.
 
-- [Tandatangani File PDF secara Digital](/pdf/net/digitally-sign-pdf-file/)
-- [Atur Hak Akses, Enkripsi dan Dekripsi File PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Ekstrak Informasi Gambar dan Tanda Tangan](/pdf/net/extract-image-and-signature-information/)
-- [Tandatangani Dokumen PDF dari Kartu Pintar](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Tandatangani File PDF secara Digital](/pdf/id/net/digitally-sign-pdf-file/)
+- [Atur Hak Akses, Enkripsi dan Dekripsi File PDF](/pdf/id/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Ekstrak Informasi Gambar dan Tanda Tangan](/pdf/id/net/extract-image-and-signature-information/)
+- [Tandatangani Dokumen PDF dari Kartu Pintar](/pdf/id/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

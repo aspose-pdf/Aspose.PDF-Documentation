@@ -3,7 +3,7 @@ title: テキストフラグメントにおける改行の判定
 linktitle: 改行の判定
 type: docs
 weight: 70
-url: ja/cpp/determine-line-break/
+url: /ja/cpp/determine-line-break/
 description: C++を使用してマルチラインテキストフラグメントの改行を判定する方法について学ぶ
 lastmod: "2021-12-13"
 sitemap:

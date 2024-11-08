@@ -3,7 +3,7 @@ title: Получение и Установка Свойств Страницы 
 linktitle: Получение и Установка Свойств Страницы
 type: docs
 weight: 90
-url: ru/python-net/get-and-set-page-properties/
+url: /ru/python-net/get-and-set-page-properties/
 description: Этот раздел показывает, как получить количество страниц в PDF файле, получить информацию о свойствах страниц PDF, таких как цвет, и установить свойства страницы.
 lastmod: "2023-04-17"
 sitemap:
@@ -223,7 +223,7 @@ Aspose.PDF for Python via .NET позволяет читать и задават
 
 ## Получение Конкретной Страницы PDF Файла
 
-Aspose.PDF для Python позволяет [разделить PDF на отдельные страницы](/pdf/python-net/split-pdf-document/) и сохранить их как PDF файлы. Получение определённой страницы в PDF файле и её сохранение как нового PDF - это очень похожая операция: откройте исходный документ, получите доступ к странице, создайте новый документ и добавьте туда страницу.
+Aspose.PDF для Python позволяет [разделить PDF на отдельные страницы](/pdf/ru/python-net/split-pdf-document/) и сохранить их как PDF файлы. Получение определённой страницы в PDF файле и её сохранение как нового PDF - это очень похожая операция: откройте исходный документ, получите доступ к странице, создайте новый документ и добавьте туда страницу.
 
 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection) объекта [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) содержит страницы в PDF файле. Чтобы получить конкретную страницу из этой коллекции:
 

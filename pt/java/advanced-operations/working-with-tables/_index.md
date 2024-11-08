@@ -3,7 +3,7 @@ title: Trabalhando com Tabelas em PDF
 linktitle: Trabalhando com Tabelas
 type: docs
 weight: 50
-url: pt/java/working-with-tables/
+url: /pt/java/working-with-tables/
 description: Esta seção descreve como adicionar e extrair uma tabela, como manipular e integrar uma tabela usando a biblioteca Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -20,7 +20,7 @@ Uma das primeiras funcionalidades suportadas pelo Aspose.PDF para Java são suas
 
 Você pode fazer o seguinte:
 
-- [Criar ou Adicionar Tabela em Documento PDF existente](/pdf/java/add-table-in-existing-pdf-document/) - crie sua tabela no arquivo PDF mesclando colunas ou linhas considerando bordas, margens e preenchimento.
-- [Extrair uma Tabela de Documento PDF existente](/pdf/java/extract-table-from-existing-pdf-document/) - você pode extrair tabela do arquivo PDF ou extrair borda da tabela como Imagem.
-- [Manipular Tabelas em PDF existente](/pdf/java/manipulate-tables-in-existing-pdf/) - manipule tabelas no seu PDF usando TableAbsorber.
-- [Remover Tabelas de PDF existente](/pdf/java/remove-tables-from-existing-pdf/) - remova a tabela ou múltiplas tabelas do documento PDF.
+- [Criar ou Adicionar Tabela em Documento PDF existente](/pdf/pt/java/add-table-in-existing-pdf-document/) - crie sua tabela no arquivo PDF mesclando colunas ou linhas considerando bordas, margens e preenchimento.
+- [Extrair uma Tabela de Documento PDF existente](/pdf/pt/java/extract-table-from-existing-pdf-document/) - você pode extrair tabela do arquivo PDF ou extrair borda da tabela como Imagem.
+- [Manipular Tabelas em PDF existente](/pdf/pt/java/manipulate-tables-in-existing-pdf/) - manipule tabelas no seu PDF usando TableAbsorber.
+- [Remover Tabelas de PDF existente](/pdf/pt/java/remove-tables-from-existing-pdf/) - remova a tabela ou múltiplas tabelas do documento PDF.

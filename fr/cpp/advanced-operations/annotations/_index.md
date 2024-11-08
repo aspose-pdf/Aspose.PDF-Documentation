@@ -3,7 +3,7 @@ title: PDF Annotations using C++
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: fr/cpp/annotations/
+url: /fr/cpp/annotations/
 description: Cette section montre comment utiliser toutes sortes d'annotations dans votre fichier PDF avec la bibliothèque Aspose.PDF. Apprenez à dessiner, ouvrir ou ajouter une annotation en C++
 lastmod: "2021-11-24"
 sitemap:
@@ -21,6 +21,6 @@ Ainsi, pour faire des modifications, des commentaires, ajouter des figures, des 
 
 Vous êtes capable de faire ce qui suit :
 
-- [Aperçu des Annotations](/pdf/cpp/overview-of-annotations/) - découvrez quels types d'annotations sont définis par la spécification PDF, et ce que prend en charge Aspose.PDF.
-- [Ajouter, Supprimer et Obtenir une Annotation](/pdf/cpp/add-delete-and-get-annotation/) - cette section explique comment travailler avec tous les types d'annotations autorisées.
-- [Importer et Exporter des Annotations au format XFDF](/pdf/cpp/import-export-xfdf/) - vous saurez comment importer et exporter des annotations au format XFDF avec C++.
+- [Aperçu des Annotations](/pdf/fr/cpp/overview-of-annotations/) - découvrez quels types d'annotations sont définis par la spécification PDF, et ce que prend en charge Aspose.PDF.
+- [Ajouter, Supprimer et Obtenir une Annotation](/pdf/fr/cpp/add-delete-and-get-annotation/) - cette section explique comment travailler avec tous les types d'annotations autorisées.
+- [Importer et Exporter des Annotations au format XFDF](/pdf/fr/cpp/import-export-xfdf/) - vous saurez comment importer et exporter des annotations au format XFDF avec C++.

@@ -2,7 +2,7 @@
 title: Слияние
 type: docs
 weight: 100
-url: ru/net/plugins/merger/
+url: /ru/net/plugins/merger/
 description: Как объединить несколько PDF-файлов в один с помощью плагина Aspose.PDF Merger
 lastmod: "2024-01-24"
 ---

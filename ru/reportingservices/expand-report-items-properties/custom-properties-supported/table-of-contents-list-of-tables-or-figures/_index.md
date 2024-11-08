@@ -2,7 +2,7 @@
 title: Оглавление Список таблиц или рисунков
 type: docs
 weight: 10
-url: ru/reportingservices/table-of-contents-list-of-tables-or-figures/
+url: /ru/reportingservices/table-of-contents-list-of-tables-or-figures/
 lastmod: "2021-06-05"
 ---
 

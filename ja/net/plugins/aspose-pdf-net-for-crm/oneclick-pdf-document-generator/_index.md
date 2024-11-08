@@ -2,7 +2,7 @@
 title: OneClick PDFドキュメントジェネレーター
 type: docs
 weight: 10
-url: ja/net/oneclick-pdf-document-generator/
+url: /ja/net/oneclick-pdf-document-generator/
 description: Aspose.PDF OneClick PDFドキュメントジェネレーターの使用方法を学ぶ
 lastmod: "2021-06-05"
 sitemap:

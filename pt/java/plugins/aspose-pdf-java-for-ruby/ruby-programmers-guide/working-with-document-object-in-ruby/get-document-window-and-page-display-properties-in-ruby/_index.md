@@ -2,7 +2,7 @@
 title: Obter Propriedades da Janela do Documento e Exibição de Página em Ruby
 type: docs
 weight: 40
-url: pt/java/get-document-window-and-page-display-properties-in-ruby/
+url: /pt/java/get-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

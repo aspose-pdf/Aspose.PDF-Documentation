@@ -2,7 +2,7 @@
 title: Extrair Texto de Todas as Páginas de um Documento PDF em Ruby
 type: docs
 weight: 30
-url: pt/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
+url: /pt/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
 lastmod: "2021-06-05"
 ---
 

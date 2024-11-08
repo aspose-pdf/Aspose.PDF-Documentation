@@ -3,7 +3,7 @@ title: Ajouter des tampons d'image dans un PDF en utilisant Python
 linktitle: Tampons d'image dans un fichier PDF
 type: docs
 weight: 10
-url: fr/python-net/image-stamps-in-pdf-page/
+url: /fr/python-net/image-stamps-in-pdf-page/
 description: Ajoutez le tampon d'image dans votre document PDF en utilisant la classe ImageStamp avec la bibliothèque Aspose.PDF pour Python.
 lastmod: "2023-04-17"
 sitemap:

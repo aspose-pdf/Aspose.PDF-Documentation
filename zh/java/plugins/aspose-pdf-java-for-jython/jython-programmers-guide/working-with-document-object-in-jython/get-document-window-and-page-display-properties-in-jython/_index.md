@@ -2,7 +2,7 @@
 title: 获取 Jython 中的文档窗口和页面显示属性
 type: docs
 weight: 20
-url: zh/java/get-document-window-and-page-display-properties-in-jython/
+url: /zh/java/get-document-window-and-page-display-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Cómo ejecutar otros ejemplos de Aspose.PDF para C++
 linktitle: Cómo ejecutar otros ejemplos
 type: docs
 weight: 50
-url: es/cpp/how-to-run-other-examples/
+url: /es/cpp/how-to-run-other-examples/
 description: Esta página demuestra pautas que serán útiles para los siguientes requisitos antes de descargar y ejecutar los ejemplos.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ Asegúrese de cumplir con los siguientes requisitos antes de descargar y ejecuta
 1. Microsoft Visual Studio 2017 o posterior.
 1. Administrador de paquetes NuGet instalado en Visual Studio. Asegúrese de que la última versión de la API de NuGet esté instalada en Visual Studio. Para obtener detalles sobre cómo instalar el administrador de paquetes NuGet, consulte <http://docs.nuget.org/ndocs/guides/install-nuget>
 1. Vaya a `Herramientas->Opciones->Administrador de paquetes NuGet->Fuentes de paquetes` y asegúrese de que la opción **nuget.org** esté marcada
-1. El proyecto de ejemplo utiliza la función de Restauración Automática de Paquetes de NuGet, por lo tanto, debes tener una conexión a internet activa. Si no tienes una conexión a internet activa en la máquina donde se van a ejecutar los ejemplos, por favor revisa [Instalación](/pdf/cpp/installation/) y añade manualmente la referencia a Aspose.PDF.dll en el proyecto de ejemplo.
+1. El proyecto de ejemplo utiliza la función de Restauración Automática de Paquetes de NuGet, por lo tanto, debes tener una conexión a internet activa. Si no tienes una conexión a internet activa en la máquina donde se van a ejecutar los ejemplos, por favor revisa [Instalación](/pdf/es/cpp/installation/) y añade manualmente la referencia a Aspose.PDF.dll en el proyecto de ejemplo.
 
 ## Descargar desde GitHub
 

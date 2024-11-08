@@ -2,7 +2,7 @@
 title: Добавить HTML строку с использованием DOM в Ruby
 type: docs
 weight: 10
-url: ru/java/add-html-string-using-dom-in-ruby/
+url: /ru/java/add-html-string-using-dom-in-ruby/
 lastmod: "2021-06-05"
 ---
 

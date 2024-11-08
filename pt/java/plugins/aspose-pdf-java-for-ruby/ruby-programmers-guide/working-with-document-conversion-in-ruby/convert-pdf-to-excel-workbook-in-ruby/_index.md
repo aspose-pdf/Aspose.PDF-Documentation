@@ -2,7 +2,7 @@
 title: Converter PDF para Planilha Excel em Ruby
 type: docs
 weight: 40
-url: pt/java/convert-pdf-to-excel-workbook-in-ruby/
+url: /pt/java/convert-pdf-to-excel-workbook-in-ruby/
 lastmod: "2021-06-05"
 ---
 

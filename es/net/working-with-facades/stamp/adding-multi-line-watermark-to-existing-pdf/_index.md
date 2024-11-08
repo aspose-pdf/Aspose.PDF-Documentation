@@ -2,7 +2,7 @@
 title: Adding multi line watermark 
 type: docs
 weight: 10
-url: es/net/adding-multi-line-watermark-to-existing-pdf/
+url: /es/net/adding-multi-line-watermark-to-existing-pdf/
 description: Esta sección explica cómo agregar una marca de agua de varias líneas a un PDF existente usando la clase FormattedText.
 lastmod: "2021-06-05"
 draft: false

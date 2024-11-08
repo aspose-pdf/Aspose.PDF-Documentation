@@ -3,7 +3,7 @@ title: Aspose.PDF for Python عبر C++
 linktitle: نظرة عامة
 type: docs
 weight: 20
-url: ar/python-cpp/overview/
+url: /ar/python-cpp/overview/
 lastmod: "2024-04-08"
 description: نظرة عامة على الميزات الرئيسية والصيغ المدعومة لـ Aspose.PDF for Python عبر C++، بالإضافة إلى دليل التثبيت والترخيص الخاص بالمكتبة.
 sitemap:

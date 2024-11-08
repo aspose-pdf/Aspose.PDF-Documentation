@@ -2,7 +2,7 @@
 title: OneClick PDF 문서 생성기 사용법
 type: docs
 weight: 10
-url: ko/net/using-oneclick-pdf-document-generator/
+url: /ko/net/using-oneclick-pdf-document-generator/
 description: Microsoft Dynamics에서 Aspose.PDF OneClick PDF 문서 생성기 사용 방법을 배우세요
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 在PDF文件中创建链接使用C++
 linktitle: 创建链接
 type: docs
 weight: 10
-url: zh/cpp/create-links/
+url: /zh/cpp/create-links/
 description: 本节解释如何使用C++在PDF文档中创建链接。
 lastmod: "2021-06-05"
 sitemap:

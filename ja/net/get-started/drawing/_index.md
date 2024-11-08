@@ -3,7 +3,7 @@ title: Aspose.PDF.Drawing for .NET の概要
 linktitle: PDF.Drawing バージョン
 type: docs
 weight: 130
-url: ja/net/drawing/
+url: /ja/net/drawing/
 lastmod: "2023-12-21"
 description: Aspose.PDF.Drawing for .NET ライブラリの主要機能と利点の概要。
 sitemap:
@@ -69,7 +69,7 @@ PDFドキュメントを印刷する場合、System.Drawing.Commonが使用さ�
 
 ## Licensing
 
-Aspose.PDF.Drawingに追加のライセンスはありません。Aspose.PDFと同じものを使用してください。[Aspose PDF License](/pdf/net/licensing/)セクションを確認してください。
+Aspose.PDF.Drawingに追加のライセンスはありません。Aspose.PDFと同じものを使用してください。[Aspose PDF License](/pdf/ja/net/licensing/)セクションを確認してください。
 
 ## Installation
 
@@ -82,7 +82,7 @@ Aspose.PDF.Drawingに追加のライセンスはありません。Aspose.PDFと�
 
 さらに詳しく知る:
 
-- [サポートされているファイル形式](/pdf/net/supported-file-formats/)
-- [システム要件](/pdf/net/system-requirements/)
-- [ライセンシング](/pdf/net/licensing/)
-- [テクニカルサポート](/pdf/net/technical-support/)
+- [サポートされているファイル形式](/pdf/ja/net/supported-file-formats/)
+- [システム要件](/pdf/ja/net/system-requirements/)
+- [ライセンシング](/pdf/ja/net/licensing/)
+- [テクニカルサポート](/pdf/ja/net/technical-support/)

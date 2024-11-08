@@ -2,7 +2,7 @@
 title: Establecer Preferencia de Visualización del PDF
 type: docs
 weight: 60
-url: es/net/set-viewer-preference-of-an-existing-pdf-file/
+url: /es/net/set-viewer-preference-of-an-existing-pdf-file/
 description: Esta sección muestra cómo establecer la preferencia de visualización de un archivo PDF existente utilizando la clase PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

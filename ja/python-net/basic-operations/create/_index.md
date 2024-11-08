@@ -3,7 +3,7 @@ title: プログラムでPDFドキュメントを作成する
 linktitle: PDFを作成
 type: docs
 weight: 10
-url: ja/python-net/create-document/
+url: /ja/python-net/create-document/
 description: このページでは、Aspose.PDF for Python via .NETライブラリを使用して、PDFドキュメントをゼロから作成する方法を説明します。
 ---
 

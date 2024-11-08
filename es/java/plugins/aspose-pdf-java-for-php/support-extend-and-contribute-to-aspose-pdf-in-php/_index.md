@@ -2,7 +2,7 @@
 title: Support, Extend and Contribute to Aspose.Pdf in PHP
 type: docs
 weight: 30
-url: es/java/support-extend-and-contribute-to-aspose-pdf-in-php/
+url: /es/java/support-extend-and-contribute-to-aspose-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

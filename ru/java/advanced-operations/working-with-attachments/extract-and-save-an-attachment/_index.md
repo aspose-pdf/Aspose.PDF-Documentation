@@ -3,7 +3,7 @@ title: Извлечение и сохранение вложения
 linktitle: Извлечение и сохранение вложения
 type: docs
 weight: 20
-url: ru/java/extract-and-save-an-attachment/
+url: /ru/java/extract-and-save-an-attachment/
 description: Aspose.PDF для Java позволяет получить все вложения из PDF-документа. Также вы можете получить отдельное вложение из вашего документа.
 lastmod: "2021-06-05"
 sitemap:
@@ -55,7 +55,7 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## Получить информацию о вложении
 
-Как упоминалось в разделе [Получение вложений из PDF-документа](/pdf/java/get-attachments-from-a-pdf-document/), информация о вложении содержится в объекте [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification), собранном с другими вложениями в коллекции EmbeddedFiles объекта [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+Как упоминалось в разделе [Получение вложений из PDF-документа](/pdf/ru/java/get-attachments-from-a-pdf-document/), информация о вложении содержится в объекте [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification), собранном с другими вложениями в коллекции EmbeddedFiles объекта [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
 
 Объект [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) предоставляет методы, которые получают информацию о вложении, например:
 

@@ -3,7 +3,7 @@ title: PDF 스티커 주석을 파이썬으로 사용하기
 linktitle: 스티커 주석
 type: docs
 weight: 50
-url: ko/python-net/sticky-annotations/
+url: /ko/python-net/sticky-annotations/
 description: 이 주제는 스티커 주석에 관한 것이며, 예시로 텍스트에 워터마크 주석을 보여줍니다.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Ajouter un filigrane au PDF en utilisant C++
 linktitle: Ajouter un filigrane
 type: docs
 weight: 90
-url: fr/cpp/add-watermarks/
+url: /fr/cpp/add-watermarks/
 description: Cet article explique les fonctionnalités de travail avec les artefacts et l'obtention de filigranes dans les PDFs de manière programmatique avec le C++.
 lastmod: "2021-12-08"
 sitemap:

@@ -3,7 +3,7 @@ title: Annotation de surbrillance PDF en utilisant C#
 linktitle: Annotation de surbrillance
 type: docs
 weight: 20
-url: fr/net/highlights-annotation/
+url: /fr/net/highlights-annotation/
 description: Les annotations de balisage sont présentées dans le texte sous forme de surlignages, de soulignements, de barrages ou de soulignements irréguliers dans le texte d'un document.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ Il est également possible d'obtenir ou de définir les paramètres des annotati
 La prochaine fonctionnalité est la possibilité d'obtenir ou de définir les paramètres des annotations de soulignement à l'aide de la propriété underlineSettings.
 La prochaine fonctionnalité est la capacité d'obtenir ou de définir les paramètres des annotations de soulignement en utilisant la propriété underlineSettings.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter une annotation de balisage de texte
 

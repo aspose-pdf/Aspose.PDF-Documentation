@@ -2,7 +2,7 @@
 title: Dapatkan Jumlah Halaman PDF di Ruby
 type: docs
 weight: 40
-url: id/java/get-page-count-of-pdf-in-ruby/
+url: /id/java/get-page-count-of-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: PDF 문서 만들기
 linktitle: PDF 만들기
 type: docs
 weight: 10
-url: ko/cpp/create-pdf-document/
+url: /ko/cpp/create-pdf-document/
 description: 이 글은 C++용 Aspose.PDF를 사용하여 PDF 문서를 만들고 형식화하는 방법을 설명합니다.
 lastmod: "2021-11-11"
 sitemap:

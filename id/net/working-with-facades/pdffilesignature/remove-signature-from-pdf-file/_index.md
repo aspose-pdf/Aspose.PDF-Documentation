@@ -2,7 +2,7 @@
 title: Remove Signature from PDF File
 type: docs
 weight: 20
-url: id/net/remove-signature-from-pdf/
+url: /id/net/remove-signature-from-pdf/
 description: Bagian ini menjelaskan cara menghapus tanda tangan dari File PDF menggunakan kelas PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

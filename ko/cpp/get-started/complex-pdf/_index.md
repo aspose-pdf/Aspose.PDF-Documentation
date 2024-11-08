@@ -3,7 +3,7 @@ title: 복잡한 PDF 만들기
 linktitle: 복잡한 PDF 만들기
 type: docs
 weight: 60
-url: ko/cpp/complex-pdf-example/
+url: /ko/cpp/complex-pdf-example/
 description: Aspose.PDF for C++를 사용하면 하나의 문서에 이미지, 텍스트 조각 및 테이블을 포함하는 더 복잡한 문서를 만들 수 있습니다.
 lastmod: "2021-11-05"
 sitemap:
@@ -11,8 +11,8 @@ sitemap:
     priority: 0.5
 ---
 
-[Hello, World](/pdf/cpp/hello-world-example/) 예제는 C++와 Aspose.PDF를 사용하여 PDF 문서를 만드는 간단한 단계를 보여주었습니다. 이 기사에서는 C++와 Aspose.PDF for C++를 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예를 들어, 승객 페리 서비스를 운영하는 가상의 회사의 문서를 살펴보겠습니다.
-우리의 문서에는 이미지, 두 개의 텍스트 조각 (헤더 및 단락), 그리고 테이블이 포함될 것입니다. 이러한 문서를 만들기 위해 DOM 기반 접근 방식을 사용할 것입니다. [DOM API의 기본](/pdf/cpp/basics-of-dom-api/) 섹션에서 더 많은 정보를 읽을 수 있습니다.
+[Hello, World](/pdf/ko/cpp/hello-world-example/) 예제는 C++와 Aspose.PDF를 사용하여 PDF 문서를 만드는 간단한 단계를 보여주었습니다. 이 기사에서는 C++와 Aspose.PDF for C++를 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예를 들어, 승객 페리 서비스를 운영하는 가상의 회사의 문서를 살펴보겠습니다.
+우리의 문서에는 이미지, 두 개의 텍스트 조각 (헤더 및 단락), 그리고 테이블이 포함될 것입니다. 이러한 문서를 만들기 위해 DOM 기반 접근 방식을 사용할 것입니다. [DOM API의 기본](/pdf/ko/cpp/basics-of-dom-api/) 섹션에서 더 많은 정보를 읽을 수 있습니다.
 
 문서를 처음부터 만들려면 특정 단계를 따라야 합니다:
 

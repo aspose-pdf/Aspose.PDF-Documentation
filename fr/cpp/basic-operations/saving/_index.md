@@ -3,7 +3,7 @@ title: Enregistrer un document PDF en utilisant C++
 linktitle: Enregistrer
 type: docs
 weight: 30
-url: fr/cpp/save-pdf-document/
+url: /fr/cpp/save-pdf-document/
 description: Apprenez à enregistrer un fichier PDF avec la bibliothèque Aspose.PDF pour C++.
 lastmod: "2021-11-01"
 sitemap:

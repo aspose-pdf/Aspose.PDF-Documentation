@@ -3,7 +3,7 @@ title: Mover páginas de PDF programáticamente C++
 linktitle: Mover páginas de PDF
 type: docs
 weight: 20
-url: es/cpp/move-pages/
+url: /es/cpp/move-pages/
 description: Intente mover páginas a la ubicación deseada o al final de un archivo PDF usando Aspose.PDF para C++.
 lastmod: "2021-12-09"
 sitemap:

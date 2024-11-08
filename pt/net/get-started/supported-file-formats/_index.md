@@ -3,7 +3,7 @@ title: Supported File Formats
 linktitle: Supported File Formats
 type: docs
 weight: 70
-url: pt/net/supported-file-formats/
+url: /pt/net/supported-file-formats/
 description: Esta página mostra quais formatos de arquivo o Aspose.PDF para .NET pode carregar e salvar.
 lastmod: "2021-06-05"
 sitemap:

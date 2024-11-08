@@ -3,7 +3,7 @@ title: Tambahkan Stempel Gambar dalam PDF menggunakan JavaScript via C++
 linktitle: Stempel gambar dalam File PDF
 type: docs
 weight: 60
-url: id/javascript-cpp/stamping/
+url: /id/javascript-cpp/stamping/
 description: Tambahkan Stempel Gambar ke dokumen PDF Anda menggunakan fungsi AsposePdfAddStamp dengan toolkit JavaScript.
 lastmod: "2023-04-15"
 sitemap:

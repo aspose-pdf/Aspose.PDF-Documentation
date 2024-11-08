@@ -3,7 +3,7 @@ title: PDF Липкие Аннотации
 linktitle: Липкая Аннотация
 type: docs
 weight: 50
-url: ru/php-java/sticky-annotations/
+url: /ru/php-java/sticky-annotations/
 description: Эта тема о липких аннотациях, в качестве примера мы показываем водяной знак аннотации в тексте. Он используется для представления графики на странице. Проверьте фрагмент кода, чтобы решить эту задачу.
 lastmod: "2024-06-24"
 sitemap:

@@ -3,7 +3,7 @@ title: 데이터 소스 PDF와 테이블 통합
 linktitle: 테이블 통합
 type: docs
 weight: 30
-url: ko/net/integrate-table/
+url: /ko/net/integrate-table/
 description: 이 기사는 PDF 테이블을 통합하는 방법을 보여줍니다. 데이터베이스와 테이블을 통합하고 현재 페이지에서 테이블이 분할될지 결정합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "이 기사는 PDF 테이블을 통합하는 방법을 보여줍니다. 데이터베이스와 테이블을 통합하고 현재 페이지에서 테이블이 분할될지 결정합니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 데이터베이스와 테이블 통합
 

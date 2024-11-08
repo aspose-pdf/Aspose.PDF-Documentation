@@ -2,7 +2,7 @@
 title: Создание буклета из PDF
 type: docs
 weight: 80
-url: ru/net/make-booklet-of-pdf/
+url: /ru/net/make-booklet-of-pdf/
 description: В этом разделе объясняется, как создать буклет из PDF с использованием Aspose.PDF Facades и класса PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

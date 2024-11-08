@@ -10,7 +10,7 @@ type: docs
 
 weight: 120
 
-url: ru/jasperreports/
+url: /ru/jasperreports/
 
 is_root: true
 
@@ -48,23 +48,23 @@ Aspose.PDF для JasperReports — это гибкий компонент, пр
 
 
 
-- [Обзор продукта Aspose.PDF для JasperReports](/pdf/jasperreports/product-overview/)
+- [Обзор продукта Aspose.PDF для JasperReports](/pdf/ru/jasperreports/product-overview/)
 
-- [Поддерживаемые форматы файлов Aspose.PDF для JasperReports](/pdf/jasperreports/supported-file-formats/)
+- [Поддерживаемые форматы файлов Aspose.PDF для JasperReports](/pdf/ru/jasperreports/supported-file-formats/)
 
 
-- [Обзор возможностей Aspose.PDF для JasperReports](/pdf/jasperreports/feature-tour/)
+- [Обзор возможностей Aspose.PDF для JasperReports](/pdf/ru/jasperreports/feature-tour/)
 
 - [Aspose.PDF для JasperReports Примечания к выпуску](https://releases.aspose.com/pdf/jassperreport/release-notes/)
 
 - [Скачать Aspose.PDF для JasperReports](https://releases.aspose.com/pdf/jassperreport/)
 
-- [Галерея образцов отчетов Aspose.PDF для JasperReports](/pdf/jasperreports/sample-reports-gallery/)
+- [Галерея образцов отчетов Aspose.PDF для JasperReports](/pdf/ru/jasperreports/sample-reports-gallery/)
 
-- [Установка Aspose.PDF для JasperReports](/pdf/jasperreports/installation/)
+- [Установка Aspose.PDF для JasperReports](/pdf/ru/jasperreports/installation/)
 
-- [Лицензирование Aspose.PDF для JasperReports](/pdf/jasperreports/licensing/)
+- [Лицензирование Aspose.PDF для JasperReports](/pdf/ru/jasperreports/licensing/)
 
-- [Оценка Aspose.Pdf](/pdf/jasperreports/evaluate-aspose-pdf/)
+- [Оценка Aspose.Pdf](/pdf/ru/jasperreports/evaluate-aspose-pdf/)
 
-- [Ограничения API Aspose.PDF для JasperReports](/pdf/jasperreports/api-limitations/)
+- [Ограничения API Aspose.PDF для JasperReports](/pdf/ru/jasperreports/api-limitations/)

@@ -3,7 +3,7 @@ title: 从现有PDF中移除表格
 linktitle: 移除表格
 type: docs
 weight: 40
-url: zh/java/remove-tables-from-existing-pdf/
+url: /zh/java/remove-tables-from-existing-pdf/
 description: Aspose.PDF for Java允许您从PDF文档中移除表格和多个表格。
 lastmod: "2021-06-05"
 sitemap:

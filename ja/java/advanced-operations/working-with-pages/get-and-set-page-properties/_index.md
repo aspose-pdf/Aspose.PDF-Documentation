@@ -2,7 +2,7 @@
 title: Get and Set Page Properties
 type: docs
 weight: 30
-url: ja/java/get-and-set-page-properties/
+url: /ja/java/get-and-set-page-properties/
 description: このトピックでは、Aspose.PDF for Javaを使用してPDFファイルの数値を取得し、ページプロパティを取得し、ページの色を判定する方法を説明します。
 lastmod: "2021-06-05"
 ---

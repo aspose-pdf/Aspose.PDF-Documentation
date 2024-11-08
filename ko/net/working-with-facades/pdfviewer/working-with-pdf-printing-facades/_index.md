@@ -2,7 +2,7 @@
 title: PDF 인쇄 작업 - Facades
 type: docs
 weight: 10
-url: ko/net/working-with-pdf-printing-facades/
+url: /ko/net/working-with-pdf-printing-facades/
 description: 이 섹션에서는 PdfFileEditor 클래스를 사용하여 Aspose.PDF Facades로 PDF 파일을 인쇄하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

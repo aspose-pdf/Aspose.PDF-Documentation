@@ -3,7 +3,7 @@ title:  C#を使用してAcroFormからデータを抽出する
 linktitle:  AcroFormからデータを抽出する
 type: docs
 weight: 50
-url: ja/net/extract-data-from-acroform/
+url: /ja/net/extract-data-from-acroform/
 description: Aspose.PDFを使用すると、PDFファイルからフォームフィールドデータを簡単に抽出できます。AcroFormsからデータを抽出し、JSON、XML、またはFDF形式で保存する方法を学びましょう。
 lastmod: "2021-06-05"
 sitemap:
@@ -17,7 +17,7 @@ Aspose.PDF for .NETは、フォームフィールドを生成したり、フォ�
 
 以下のサンプルコードでは、PDF内のすべてのAcroFormおよびフォームフィールド値についての情報を抽出するために、PDFの各ページを反復処理する方法を示しています。このサンプルコードは、事前にフォームフィールドの名前を知らないという前提で作成されています。
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 ```csharp
 public static void ExtractFormFields()
@@ -39,7 +39,7 @@ public static void ExtractFormFields()
 
 ## PDFドキュメントからフォームフィールドをJSONに抽出する
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ```csharp
 public static void ExtractFormFieldsToJson()
@@ -54,7 +54,7 @@ public static void ExtractFormFieldsToJson()
 
 Formクラスを使用すると、ExportXmlメソッドを使用してPDFファイルからXMLファイルにデータをエクスポートできます。XMLにデータをエクスポートするには、Formクラスのオブジェクトを作成し、FileStreamオブジェクトを使用してExportXmlメソッドを呼び出す必要があります。最後に、FileStreamオブジェクトを閉じてFormオブジェクトを破棄します。次のコードスニペットは、XMLファイルにデータをエクスポートする方法を示しています。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.Pdf-for-.NET をご覧ください。
@@ -78,7 +78,7 @@ form.Dispose();
 
 Formクラスを使用して、PDFファイルからFDFファイルにデータをエクスポートすることができます。FDFにデータをエクスポートするためには、Formクラスのオブジェクトを作成し、FileStreamオブジェクトを使用してExportFdfメソッドを呼び出す必要があります。最後に、FormクラスのSaveメソッドを使用してPDFファイルを保存します。以下のコードスニペットは、FDFファイルにデータをエクスポートする方法を示しています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ```csharp
 // 完全な例やデータファイルについては、https://github.com/aspose-pdf/Aspose.Pdf-for-.NET にアクセスしてください。
@@ -105,7 +105,7 @@ form.Save(dataDir + "ExportDataToPdf_out.pdf");
 
 Formクラスを使用して、PDFファイルからXFDFファイルへデータをエクスポートすることができます。XFDFへデータをエクスポートするには、Formクラスのオブジェクトを作成し、FileStreamオブジェクトを使用してExportXfdfメソッドを呼び出す必要があります。最後に、FormクラスのSaveメソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、XFDFファイルへデータをエクスポートする方法を示しています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリとも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも動作します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.Pdf-for-.NET をご覧ください

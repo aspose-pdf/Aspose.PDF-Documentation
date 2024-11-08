@@ -3,7 +3,7 @@ title: Determine Line Break
 linktitle: Determine Line Break
 type: docs
 weight: 70
-url: ko/net/determine-line-break/
+url: /ko/net/determine-line-break/
 description: 멀티 라인 TextFragment의 줄 바꿈을 결정하는 방법에 대해 알아보세요
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 멀티 라인 TextFragment의 줄바꿈 추적
 

@@ -2,7 +2,7 @@
 title: PdfContentEditor를 사용하여 이미지 작업
 type: docs
 weight: 50
-url: ko/net/working-with-images-in-pdf
+url: /ko/net/working-with-images-in-pdf
 description: 이 섹션에서는 PdfContentEditor 클래스를 사용하여 Aspose.PDF Facades로 이미지를 추가하고 삭제하는 방법을 설명합니다.
 lastmod: "2021-06-24"
 ---

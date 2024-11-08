@@ -2,7 +2,7 @@
 title: Encrypt PDF File
 type: docs
 weight: 10
-url: pt/net/encrypt-pdf-file/
+url: /pt/net/encrypt-pdf-file/
 description: Este tópico explica como criptografar um arquivo PDF usando a classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

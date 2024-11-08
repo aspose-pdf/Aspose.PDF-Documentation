@@ -2,7 +2,7 @@
 title: Daftar Isi Daftar Tabel atau Gambar
 type: docs
 weight: 10
-url: id/reportingservices/table-of-contents-list-of-tables-or-figures/
+url: /id/reportingservices/table-of-contents-list-of-tables-or-figures/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: العمل مع الجداول في PDF
 linktitle: العمل مع الجداول  
 type: docs  
 weight: 50  
-url: ar/java/working-with-tables/  
+url: /ar/java/working-with-tables/  
 description: يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية معالجة ودمج جدول باستخدام مكتبة جافا.  
 lastmod: "2021-06-05"  
 sitemap:  
@@ -20,7 +20,7 @@ sitemap:
 
 يمكنك القيام بالآتي:
 
-- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/java/add-table-in-existing-pdf-document/) - أنشئ جدولك في ملف PDF مع دمج الأعمدة أو الصفوف مع مراعاة الحدود والهوامش والحشوة.
-- [استخراج جدول من مستند PDF موجود](/pdf/java/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
-- [التلاعب بالجداول في PDF موجود](/pdf/java/manipulate-tables-in-existing-pdf/) - تلاعب بالجداول في ملف PDF الخاص بك باستخدام TableAbsorber.
-- [إزالة الجداول من PDF موجود](/pdf/java/remove-tables-from-existing-pdf/) - قم بإزالة جدول أو جداول متعددة من مستند PDF.
+- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/ar/java/add-table-in-existing-pdf-document/) - أنشئ جدولك في ملف PDF مع دمج الأعمدة أو الصفوف مع مراعاة الحدود والهوامش والحشوة.
+- [استخراج جدول من مستند PDF موجود](/pdf/ar/java/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
+- [التلاعب بالجداول في PDF موجود](/pdf/ar/java/manipulate-tables-in-existing-pdf/) - تلاعب بالجداول في ملف PDF الخاص بك باستخدام TableAbsorber.
+- [إزالة الجداول من PDF موجود](/pdf/ar/java/remove-tables-from-existing-pdf/) - قم بإزالة جدول أو جداول متعددة من مستند PDF.

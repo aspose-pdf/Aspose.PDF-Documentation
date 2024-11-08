@@ -3,7 +3,7 @@ title: Dekripsi PDF menggunakan JavaScript
 linktitle: Dekripsi File PDF
 type: docs
 weight: 40
-url: id/javascript-cpp/decrypt-pdf/
+url: /id/javascript-cpp/decrypt-pdf/
 description: Dekripsi File PDF dengan Aspose.PDF untuk JavaScript melalui C++.
 lastmod: "2022-12-15"
 sitemap:

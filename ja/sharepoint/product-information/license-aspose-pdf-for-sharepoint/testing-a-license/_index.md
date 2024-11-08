@@ -2,7 +2,7 @@
 title: ライセンスのテスト
 type: docs
 weight: 20
-url: ja/sharepoint/testing-a-license/
+url: /ja/sharepoint/testing-a-license/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIのライセンスが正常にインストールされたことをテストするには、任意のドキュメントを希望の形式に変換し、評価警告なしで生成されることを確認します。
 ---

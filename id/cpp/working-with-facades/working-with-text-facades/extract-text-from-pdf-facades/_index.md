@@ -2,7 +2,7 @@
 title: Extract Text from PDF - Facades
 type: docs
 weight: 10
-url: id/cpp/extract-text-from-pdf-facades/
+url: /id/cpp/extract-text-from-pdf-facades/
 ---
 
 ## <ins>**Ekstrak Teks dari Semua Halaman Dokumen**

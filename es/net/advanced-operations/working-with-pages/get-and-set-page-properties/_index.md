@@ -1,7 +1,7 @@
 ---
 title: Obtener y Establecer Propiedades de Página
 type: docs
-url: es/net/get-and-set-page-properties/
+url: /es/net/get-and-set-page-properties/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -71,7 +71,7 @@ lastmod: "2022-02-17"
 </script
 Aspose.PDF para .NET le permite leer y establecer propiedades de las páginas en un archivo PDF en sus aplicaciones .NET. Esta sección muestra cómo obtener el número de páginas en un archivo PDF, obtener información sobre propiedades de la página PDF como el color y establecer propiedades de la página. Los ejemplos dados están en C#, pero puede usar cualquier lenguaje .NET como VB.NET para lograr lo mismo.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Obtener el Número de Páginas en un Archivo PDF
 
@@ -120,7 +120,7 @@ Desde allí, es posible acceder a objetos Page individuales usando su índice, o
 
 ## Obtener una Página Específica del Archivo PDF
 
-Aspose.PDF permite [dividir un PDF en páginas individuales](/pdf/net/split-pdf-document/) y guardarlas como archivos PDF. Obtener una página especificada en un archivo PDF y guardarla como un nuevo PDF es una operación muy similar: abrir el documento fuente, acceder a la página, crear un nuevo documento y agregar la página a este.
+Aspose.PDF permite [dividir un PDF en páginas individuales](/pdf/es/net/split-pdf-document/) y guardarlas como archivos PDF. Obtener una página especificada en un archivo PDF y guardarla como un nuevo PDF es una operación muy similar: abrir el documento fuente, acceder a la página, crear un nuevo documento y agregar la página a este.
 
 El objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) y su [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) contienen las páginas en el archivo PDF.
 El objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) contiene la [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) que alberga las páginas del archivo PDF.

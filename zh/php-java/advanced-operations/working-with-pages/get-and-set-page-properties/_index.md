@@ -2,7 +2,7 @@
 title: 获取和设置页面属性
 type: docs
 weight: 30
-url: zh/php-java/get-and-set-page-properties/
+url: /zh/php-java/get-and-set-page-properties/
 description: 本主题解释如何在 PDF 文件中获取数字，获取页面属性并使用 Aspose.PDF for PHP via Java 确定页面颜色。
 lastmod: "2024-06-05"
 ---

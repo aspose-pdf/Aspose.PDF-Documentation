@@ -3,7 +3,7 @@ title: Изменение размера страницы PDF с помощью 
 linktitle: Изменение размера страницы PDF
 type: docs
 weight: 40
-url: ru/net/change-page-size/
+url: /ru/net/change-page-size/
 description: Измените размер страницы вашего PDF-документа с помощью библиотеки Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 Aspose.PDF для .NET позволяет изменять размер страницы PDF с помощью нескольких строк кода в ваших .NET приложениях. Эта тема объясняет, как обновить/изменить размеры страницы (размер) существующего PDF файла.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Класс [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) содержит метод SetPageSize(...), который позволяет установить размер страницы. Приведенный ниже фрагмент кода обновляет размеры страницы в несколько простых шагов:
 

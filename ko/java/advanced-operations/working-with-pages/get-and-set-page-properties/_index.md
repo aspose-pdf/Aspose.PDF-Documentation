@@ -2,7 +2,7 @@
 title: 페이지 속성 가져오기 및 설정
 type: docs
 weight: 30
-url: ko/java/get-and-set-page-properties/
+url: /ko/java/get-and-set-page-properties/
 description: 이 주제는 Aspose.PDF for Java를 사용하여 PDF 파일에서 숫자를 가져오고, 페이지 속성을 가져오고, 페이지 색상을 결정하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 ---

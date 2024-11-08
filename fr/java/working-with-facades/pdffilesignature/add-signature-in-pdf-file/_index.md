@@ -2,7 +2,7 @@
 title: Ajouter une Signature dans un Fichier PDF
 type: docs
 weight: 10
-url: fr/java/add-signature-in-pdf/
+url: /fr/java/add-signature-in-pdf/
 description: Cette section explique comment travailler avec la Signature dans un fichier PDF en utilisant la classe PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

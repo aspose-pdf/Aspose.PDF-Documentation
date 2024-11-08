@@ -3,7 +3,7 @@ title: 解密 Node.js 中的 PDF
 linktitle: 解密 PDF 文件
 type: docs
 weight: 40
-url: zh/nodejs-cpp/decrypt-pdf/
+url: /zh/nodejs-cpp/decrypt-pdf/
 description: 使用 Aspose.PDF for Node.js via C++ 解密 PDF 文件。
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: 첨부 파일 추출 및 저장
 linktitle: 첨부 파일 추출 및 저장
 type: docs
 weight: 20
-url: ko/java/extract-and-save-an-attachment/
+url: /ko/java/extract-and-save-an-attachment/
 description: Aspose.PDF for Java를 사용하면 PDF 문서에서 모든 첨부 파일을 가져올 수 있습니다. 또한, 문서에서 개별 첨부 파일을 가져올 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -55,7 +55,7 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## 첨부 파일 정보 가져오기
 
-[PDF 문서에서 첨부 파일 가져오기](/pdf/java/get-attachments-from-a-pdf-document/)에서 언급한 바와 같이, 첨부 파일 정보는 [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) 객체에 보관되며, [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체의 EmbeddedFiles 컬렉션에 다른 첨부 파일들과 함께 수집됩니다.
+[PDF 문서에서 첨부 파일 가져오기](/pdf/ko/java/get-attachments-from-a-pdf-document/)에서 언급한 바와 같이, 첨부 파일 정보는 [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) 객체에 보관되며, [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체의 EmbeddedFiles 컬렉션에 다른 첨부 파일들과 함께 수집됩니다.
 
 [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) 객체는 첨부 파일에 대한 정보를 얻기 위한 메서드를 제공합니다. 예를 들어:
 

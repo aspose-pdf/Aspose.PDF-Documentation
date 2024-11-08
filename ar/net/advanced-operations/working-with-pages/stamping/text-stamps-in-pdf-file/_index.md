@@ -3,7 +3,7 @@ title: إضافة ختم نصي في PDF C#
 linktitle: ختم نصي في ملف PDF
 type: docs
 weight: 20
-url: ar/net/text-stamps-in-the-pdf-file/
+url: /ar/net/text-stamps-in-the-pdf-file/
 description: أضف ختم نصي إلى مستند PDF باستخدام فئة TextStamp مع مكتبة Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) لإضافة ختم نصي في ملف PDF. توفر فئة TextStamp الخصائص اللازمة لإنشاء ختم نصي مثل حجم الخط، نمط الخط، ولون الخط وغيرها. لإضافة ختم نصي، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة AddStamp للصفحة لإضافة الختم في ملف PDF.
 
-يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يوضح الشفرة التالية كيفية إضافة ختم نصي في ملف PDF.
 

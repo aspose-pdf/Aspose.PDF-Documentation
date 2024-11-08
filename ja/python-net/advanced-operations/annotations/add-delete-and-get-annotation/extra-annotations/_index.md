@@ -3,7 +3,7 @@ title: Pythonを使用した追加注釈
 linktitle: 追加注釈
 type: docs
 weight: 60
-url: ja/python-net/extra-annotations/
+url: /ja/python-net/extra-annotations/
 description: このセクションでは、PDFドキュメントに追加の種類の注釈を追加、取得、削除する方法について説明します。
 lastmod: "2023-02-17"
 sitemap:

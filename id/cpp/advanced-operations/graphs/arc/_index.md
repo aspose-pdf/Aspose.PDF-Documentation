@@ -3,7 +3,7 @@ title: Tambahkan Objek Busur ke file PDF
 linktitle: Tambahkan Busur
 type: docs
 weight: 10
-url: id/cpp/add-arc/
+url: /id/cpp/add-arc/
 description: Artikel ini menjelaskan cara membuat objek busur ke dalam PDF Anda menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-12-18"
 sitemap:

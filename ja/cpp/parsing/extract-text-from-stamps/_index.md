@@ -3,7 +3,7 @@ title: スタンプからテキストを抽出
 linktitle: スタンプからテキストを抽出
 type: docs
 weight: 60
-url: ja/cpp/extract-text-from-stamps/
+url: /ja/cpp/extract-text-from-stamps/
 ---
 
 ## スタンプ注釈からテキストを抽出

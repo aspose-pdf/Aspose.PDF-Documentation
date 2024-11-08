@@ -3,7 +3,7 @@ title: Membagi PDF secara programatis dalam Python
 linktitle: Membagi file PDF
 type: docs
 weight: 20
-url: id/python-cpp/split-pdf-document/
+url: /id/python-cpp/split-pdf-document/
 keywords: membagi pdf menjadi beberapa file, membagi pdf menjadi pdf terpisah, membagi pdf python
 description: Topik ini menunjukkan cara membagi halaman PDF menjadi file PDF individual dalam aplikasi Python melalui C++ Anda.
 lastmod: "2024-04-17"

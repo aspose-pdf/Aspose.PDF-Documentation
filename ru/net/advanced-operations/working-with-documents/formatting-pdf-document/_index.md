@@ -3,7 +3,7 @@ title: Форматирование документа PDF с использов
 linktitle: Форматирование документа PDF
 type: docs
 weight: 11
-url: ru/net/formatting-pdf-document/
+url: /ru/net/formatting-pdf-document/
 description: Создайте и отформатируйте документ PDF с помощью Aspose.PDF для .NET. Используйте следующий фрагмент кода для решения ваших задач.
 lastmod: "2022-02-17"
 sitemap:
@@ -94,7 +94,7 @@ sitemap:
 - PageLayout – Макет страницы.
 - PageMode – Как документ отображается при первом открытии. Варианты: показать миниатюры, полноэкранный режим, показать панель вложений.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Следующий фрагмент кода показывает, как получить свойства с использованием класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 

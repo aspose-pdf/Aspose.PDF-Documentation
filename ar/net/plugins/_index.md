@@ -3,7 +3,7 @@ title: الإضافات والتكامل مع لغات أخرى
 linktitle: الإضافات
 type: docs
 weight: 130
-url: ar/net/plugins/
+url: /ar/net/plugins/
 description: تعلم كيفية استخدام مختلف الإضافات المعتمدة على Aspose.PDF
 lastmod: "2024-03-13"
 sitemap:
@@ -41,14 +41,14 @@ sitemap:
 
 هذا القسم يحتوي على قائمة الإضافات لأكثر تطبيقات الويب شهرة: DotNetNuke، Sitefinity، Umbraco، وغيرها.
 
-* [Aspose.PDF .NET لـ DNN](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF .NET لـ Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF .NET لـ VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
-* [Aspose.PDF .NET لـ CRM](/pdf/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF .NET لـ Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF .NET لـ DNN](/pdf/ar/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF .NET لـ Umbraco](/pdf/ar/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF .NET لـ VisualStudio](/pdf/ar/net/aspose-pdf-net-for-visualstudio/)
+* [Aspose.PDF .NET لـ CRM](/pdf/ar/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF .NET لـ Sitefinity](/pdf/ar/net/aspose-pdf-net-for-sitefinity/)
 
 ### استخدام Aspose.PDF مع لغات أخرى
 
-* [استخدام Aspose.PDF لـ .NET مع Coldfusion](/pdf/net/aspose-pdf-net-for-coldfusion/)
+* [استخدام Aspose.PDF لـ .NET مع Coldfusion](/pdf/ar/net/aspose-pdf-net-for-coldfusion/)
 
 

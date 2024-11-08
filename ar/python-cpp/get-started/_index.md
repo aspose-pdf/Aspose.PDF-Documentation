@@ -3,7 +3,7 @@ title: البدء
 linktitle: البدء
 type: docs
 weight: 30
-url: ar/python-cpp/get-started/
+url: /ar/python-cpp/get-started/
 description: هذه الصفحة هي نظرة عامة على كيفية استخدام Aspose.PDF لـ Python عبر C++ لإنشاء وتحرير مستند PDF
 lastmod: "2021-06-05"   
 sitemap: 
@@ -41,6 +41,6 @@ Aspose.PDF لـ Python عبر C++ سريع، خفيف وسهل الاستخدا�
 
 ### تعلم المزيد عن:
 
-- ["Hello, World" مثال بلغة Python](/pdf/python-cpp/hello-world-example/)
-- [PDF معقد](/pdf/python-cpp/complex-pdf-example/)
-- [كيفية تشغيل أمثلة أخرى](/pdf/python-cpp/how-to-run-other-examples/)
+- ["Hello, World" مثال بلغة Python](/pdf/ar/python-cpp/hello-world-example/)
+- [PDF معقد](/pdf/ar/python-cpp/complex-pdf-example/)
+- [كيفية تشغيل أمثلة أخرى](/pdf/ar/python-cpp/how-to-run-other-examples/)

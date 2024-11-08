@@ -3,7 +3,7 @@ title: 安装 Aspose.PDF for JavaScript via C++
 linktitle: 安装
 type: docs
 weight: 40
-url: zh/javascript-cpp/installation/
+url: /zh/javascript-cpp/installation/
 description: 本节展示了产品描述和通过 C++ 安装 Aspose.PDF for JavaScript 的说明。
 lastmod: "2022-12-13"
 sitemap:

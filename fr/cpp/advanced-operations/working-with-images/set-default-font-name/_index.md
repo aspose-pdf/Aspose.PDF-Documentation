@@ -3,7 +3,7 @@ title: Définir le Nom de Police par Défaut en utilisant C++
 linktitle: Définir le Nom de Police par Défaut
 type: docs
 weight: 90
-url: fr/cpp/set-default-font-name/
+url: /fr/cpp/set-default-font-name/
 description: Cette section décrit comment définir le nom de police par défaut en utilisant la bibliothèque C++.
 lastmod: "2021-12-18"
 ---

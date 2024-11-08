@@ -3,7 +3,7 @@ title: Integrar Tabla con Fuentes de Datos PDF
 linktitle: Integrar Tabla
 type: docs
 weight: 30
-url: es/net/integrate-table/
+url: /es/net/integrate-table/
 description: Este artículo muestra cómo integrar tablas PDF. Integrar Tabla con Base de Datos y determinar si la tabla se dividirá en la página actual.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Integrar Tabla con Base de Datos
 

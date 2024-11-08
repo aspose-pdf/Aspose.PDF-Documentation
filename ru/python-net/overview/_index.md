@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: ru/python-net/overview/
+url: /ru/python-net/overview/
 lastmod: "2022-12-20"
 description: Обзор ключевых функций и поддерживаемых форматов Aspose.PDF для Python через .NET, руководство по установке и лицензированию библиотеки.
 sitemap:
@@ -31,9 +31,9 @@ Aspose.PDF для Python поддерживает широкий спектр ф
 
 Узнайте больше о:
 
-- [Поддерживаемые Форматы Файлов](/pdf/python-net/supported-file-formats/)
-- [Ключевые Особенности Aspose.PDF](/pdf/python-net/key-features/)
-- [Системные Требования](/pdf/python-net/system-requirements/)
-- [Установка](/pdf/python-net/installation/)
-- [Лицензирование](/pdf/python-net/licensing/)
-- [Техническая Поддержка](/pdf/python-net/technical-support/)
+- [Поддерживаемые Форматы Файлов](/pdf/ru/python-net/supported-file-formats/)
+- [Ключевые Особенности Aspose.PDF](/pdf/ru/python-net/key-features/)
+- [Системные Требования](/pdf/ru/python-net/system-requirements/)
+- [Установка](/pdf/ru/python-net/installation/)
+- [Лицензирование](/pdf/ru/python-net/licensing/)
+- [Техническая Поддержка](/pdf/ru/python-net/technical-support/)

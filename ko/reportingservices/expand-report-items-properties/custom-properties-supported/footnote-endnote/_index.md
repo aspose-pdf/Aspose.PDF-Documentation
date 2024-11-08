@@ -2,7 +2,7 @@
 title: 각주 미주
 type: docs
 weight: 30
-url: ko/reportingservices/footnote-endnote/
+url: /ko/reportingservices/footnote-endnote/
 lastmod: "2021-06-05"
 ---
 

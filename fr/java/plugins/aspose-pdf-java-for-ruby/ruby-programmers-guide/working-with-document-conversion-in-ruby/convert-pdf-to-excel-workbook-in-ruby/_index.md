@@ -2,7 +2,7 @@
 title: Convertir un PDF en Classeur Excel en Ruby
 type: docs
 weight: 40
-url: fr/java/convert-pdf-to-excel-workbook-in-ruby/
+url: /fr/java/convert-pdf-to-excel-workbook-in-ruby/
 lastmod: "2021-06-05"
 ---
 

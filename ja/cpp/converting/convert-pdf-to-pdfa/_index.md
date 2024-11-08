@@ -4,7 +4,7 @@ title: PDFをPDF/A形式に変換
 linktitle: PDFをPDF/A形式に変換
 type: docs
 weight: 100
-url: ja/cpp/convert-pdf-to-pdfa/
+url: /ja/cpp/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
 description: このトピックでは、Aspose.PDFを使用してPDFファイルをPDF/A準拠のPDFファイルに変換する方法を紹介します。
 sitemap:

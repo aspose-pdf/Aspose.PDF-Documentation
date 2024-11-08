@@ -3,7 +3,7 @@ title: Tambahkan Header dan Footer ke PDF
 linktitle: Tambahkan Header dan Footer ke PDF
 type: docs
 weight: 70
-url: id/cpp/add-headers-and-footers-of-pdf-file/
+url: /id/cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF untuk C++ memungkinkan Anda menambahkan header dan footer ke file PDF Anda menggunakan kelas TextStamp.
 lastmod: "2021-12-08"
 sitemap:

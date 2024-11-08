@@ -3,7 +3,7 @@ title: PDF에서 C#을 사용한 텍스트 작업
 linktitle: 텍스트 작업
 type: docs
 weight: 30
-url: ko/net/working-with-text/
+url: /ko/net/working-with-text/
 description: 이 섹션은 텍스트 처리의 다양한 기술을 설명합니다. Aspose.PDF와 C#을 사용하여 텍스트를 추가, 교체, 회전, 검색하는 방법을 배우십시오.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,14 +79,14 @@ sitemap:
 
 다음 작업을 수행할 수 있습니다:
 
-- [PDF 파일에 텍스트 추가](/pdf/net/add-text-to-pdf-file/) - PDF에 텍스트 추가, 스트림과 파일에서 글꼴 사용, HTML 문자열 추가, 하이퍼링크 추가 등.
-- [PDF 도구팁](/pdf/net/pdf-tooltip/) - C#을 사용하여 보이지 않는 버튼을 추가함으로써 검색된 텍스트에 도구팁을 추가할 수 있습니다.
-- [PDF 내부의 텍스트 포맷팅](/pdf/net/text-formatting-inside-pdf/) - 텍스트를 포맷할 때 문서에 추가할 수 있는 많은 기능들이 있습니다.
-- [PDF 내에서 텍스트 서식 지정](/pdf/net/text-formatting-inside-pdf/) - 텍스트 서식을 지정할 때 문서에 추가할 수 있는 여러 기능이 있습니다.
-- [PDF에서 텍스트 교체](/pdf/net/replace-text-in-pdf/) - PDF 문서의 모든 페이지에서 텍스트를 교체하려면 TextFragmentAbsorber를 사용해야 합니다.
-- [PDF 내에서 텍스트 회전](/pdf/net/rotate-text-inside-pdf/) - TextFragment 클래스의 회전 속성을 사용하여 PDF 내에서 텍스트를 회전시킵니다.
-- [PDF 문서의 페이지에서 텍스트 검색 및 가져오기](/pdf/net/search-and-get-text-from-pages-of-pdf/) - 페이지에서 텍스트를 검색하고 가져오기 위해 TextFragmentAbsorber 클래스를 사용할 수 있습니다.
-- [줄 바꿈 결정](/pdf/net/determine-line-break/) - 이 주제는 여러 줄의 텍스트 조각의 줄 바꿈을 추적하는 방법을 설명합니다.
+- [PDF 파일에 텍스트 추가](/pdf/ko/net/add-text-to-pdf-file/) - PDF에 텍스트 추가, 스트림과 파일에서 글꼴 사용, HTML 문자열 추가, 하이퍼링크 추가 등.
+- [PDF 도구팁](/pdf/ko/net/pdf-tooltip/) - C#을 사용하여 보이지 않는 버튼을 추가함으로써 검색된 텍스트에 도구팁을 추가할 수 있습니다.
+- [PDF 내부의 텍스트 포맷팅](/pdf/ko/net/text-formatting-inside-pdf/) - 텍스트를 포맷할 때 문서에 추가할 수 있는 많은 기능들이 있습니다.
+- [PDF 내에서 텍스트 서식 지정](/pdf/ko/net/text-formatting-inside-pdf/) - 텍스트 서식을 지정할 때 문서에 추가할 수 있는 여러 기능이 있습니다.
+- [PDF에서 텍스트 교체](/pdf/ko/net/replace-text-in-pdf/) - PDF 문서의 모든 페이지에서 텍스트를 교체하려면 TextFragmentAbsorber를 사용해야 합니다.
+- [PDF 내에서 텍스트 회전](/pdf/ko/net/rotate-text-inside-pdf/) - TextFragment 클래스의 회전 속성을 사용하여 PDF 내에서 텍스트를 회전시킵니다.
+- [PDF 문서의 페이지에서 텍스트 검색 및 가져오기](/pdf/ko/net/search-and-get-text-from-pages-of-pdf/) - 페이지에서 텍스트를 검색하고 가져오기 위해 TextFragmentAbsorber 클래스를 사용할 수 있습니다.
+- [줄 바꿈 결정](/pdf/ko/net/determine-line-break/) - 이 주제는 여러 줄의 텍스트 조각의 줄 바꿈을 추적하는 방법을 설명합니다.
 
 <script type="application/ld+json">
 {

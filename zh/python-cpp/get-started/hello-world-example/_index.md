@@ -3,7 +3,7 @@ title: 使用 Python 语言的 Hello World 示例
 linktitle: Hello World 示例
 type: docs
 weight: 20
-url: zh/python-cpp/hello-world-example/
+url: /zh/python-cpp/hello-world-example/
 description: 此示例演示如何使用 Aspose.PDF for Python 创建一个简单的 PDF "Hello, World!" 文档
 lastmod: "2023-07-27"
 sitemap:

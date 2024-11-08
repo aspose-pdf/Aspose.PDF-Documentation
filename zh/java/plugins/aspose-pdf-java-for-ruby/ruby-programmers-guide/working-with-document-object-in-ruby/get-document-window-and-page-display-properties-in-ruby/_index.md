@@ -2,7 +2,7 @@
 title: 获取文档窗口和页面显示属性在 Ruby 中
 type: docs
 weight: 40
-url: zh/java/get-document-window-and-page-display-properties-in-ruby/
+url: /zh/java/get-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

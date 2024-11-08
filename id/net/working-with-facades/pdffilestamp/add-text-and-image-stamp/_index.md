@@ -3,7 +3,7 @@
 title: Tambahkan Cap Teks dan Gambar
 type: docs
 weight: 20
-url: id/net/add-text-and-image-stamp/
+url: /id/net/add-text-and-image-stamp/
 description: Bagian ini menjelaskan cara menambahkan Cap Teks dan Gambar dengan Aspose.PDF Facades menggunakan Kelas PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

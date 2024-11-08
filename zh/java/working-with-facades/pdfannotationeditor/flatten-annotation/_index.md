@@ -2,7 +2,7 @@
 title: 从PDF文件到XFDF的扁平化注释（facades）
 type: docs
 weight: 40
-url: zh/java/flatten-annotation/
+url: /zh/java/flatten-annotation/
 description: 本节解释了如何使用Aspose.PDF Facades将注释从PDF文件导出到XFDF。
 lastmod: "2021-06-05"
 sitemap:

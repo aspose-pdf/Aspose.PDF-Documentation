@@ -3,7 +3,7 @@ title: Obtener Resolución y Dimensiones de Imágenes Incrustadas usando C++
 linktitle: Obtener Resolución y Dimensiones
 type: docs
 weight: 40
-url: es/cpp/get-resolution-and-dimensions-of-embedded-images/
+url: /es/cpp/get-resolution-and-dimensions-of-embedded-images/
 description: Esta sección muestra detalles sobre cómo obtener la resolución y dimensiones de Imágenes Incrustadas
 lastmod: "2021-12-18"
 ---

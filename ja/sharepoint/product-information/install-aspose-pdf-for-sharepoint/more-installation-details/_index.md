@@ -2,7 +2,7 @@
 title: さらなるインストールの詳細
 type: docs
 weight: 30
-url: ja/sharepoint/more-installation-details/
+url: /ja/sharepoint/more-installation-details/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIのインストールに関する詳細情報では、サイトコレクションでの展開、アクティベーション、非アクティベーションの方法について説明します。
 ---

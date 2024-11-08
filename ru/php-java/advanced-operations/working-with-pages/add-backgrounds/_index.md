@@ -3,7 +3,7 @@ title: Добавить фон в PDF
 linktitle: Добавить фоны
 type: docs
 weight: 110
-url: ru/php-java/add-backgrounds/
+url: /ru/php-java/add-backgrounds/
 descriptions: Добавьте фоновое изображение в ваш PDF файл с использованием PHP. Используйте объект BackgroundArtifact.
 lastmod: "2024-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: 이미지 추출 및 도장 위치 변경
 type: docs
 weight: 30
-url: ko/net/extract-image-and-change-position-of-a-stamp/
+url: /ko/net/extract-image-and-change-position-of-a-stamp/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 이미지 추출 및 도장 위치 변경 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

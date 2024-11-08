@@ -2,7 +2,7 @@
 title: 获取现有PDF文件的XMP元数据 - facades
 type: docs
 weight: 10
-url: zh/java/get-xmp-metadata/
+url: /zh/java/get-xmp-metadata/
 description: 本节介绍如何使用PdfXmpMetadata类通过Aspose.PDF Facades获取XMP元数据。
 lastmod: "2021-06-05"
 sitemap:

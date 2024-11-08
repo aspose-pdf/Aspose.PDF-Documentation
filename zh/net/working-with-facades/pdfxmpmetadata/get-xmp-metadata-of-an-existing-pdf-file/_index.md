@@ -2,7 +2,7 @@
 title: 获取 PDF 文件的 XMP 元数据
 type: docs
 weight: 30
-url: zh/net/get-xmp-metadata-of-an-existing-pdf-file/
+url: /zh/net/get-xmp-metadata-of-an-existing-pdf-file/
 description: 本节介绍如何使用 Aspose.PDF Facades 获取现有 PDF 的 XMP 元数据。
 lastmod: "2021-06-05"
 draft: false

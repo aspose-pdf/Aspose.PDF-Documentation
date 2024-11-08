@@ -2,7 +2,7 @@
 title: Rubyでのドキュメントウィンドウおよびページ表示プロパティの取得
 type: docs
 weight: 40
-url: ja/java/get-document-window-and-page-display-properties-in-ruby/
+url: /ja/java/get-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

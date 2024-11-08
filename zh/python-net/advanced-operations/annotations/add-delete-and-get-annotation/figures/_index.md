@@ -3,7 +3,7 @@ title: 用Python添加图形注释
 linktitle: 图形注释
 type: docs
 weight: 30
-url: zh/python-net/figures-annotation/
+url: /zh/python-net/figures-annotation/
 description: 本文描述了如何使用Aspose.PDF for Python通过.NET添加、获取和删除PDF文档中的图形注释
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Trabajando con Adjuntos en PDF en Node.js
 linktitle: Trabajando con Adjuntos
 type: docs
 weight: 120
-url: es/nodejs-cpp/attachments/
+url: /es/nodejs-cpp/attachments/
 description: Operaciones básicas con adjuntos en PDF en Node.js. Guía con ejemplos.
 lastmod: "2023-11-16"
 sitemap:
@@ -17,4 +17,4 @@ Un adjunto es un archivo adicional que se adjunta a un documento principal, pued
 
 Aprenderás cómo eliminar los adjuntos de un PDF de manera programática con Node.js.
 
-- [Eliminar adjunto de un PDF existente](/pdf/nodejs-cpp/removing-attachment-from-an-existing-pdf/)
+- [Eliminar adjunto de un PDF existente](/pdf/es/nodejs-cpp/removing-attachment-from-an-existing-pdf/)

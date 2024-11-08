@@ -3,7 +3,7 @@ title: Tambahkan Teks ke PDF menggunakan Python
 linktitle: Tambahkan Teks ke PDF
 type: docs
 weight: 10
-url: id/python-net/add-text-to-pdf-file/
+url: /id/python-net/add-text-to-pdf-file/
 description: Artikel ini menjelaskan berbagai aspek bekerja dengan teks di Aspose.PDF. Pelajari cara menambahkan teks ke PDF, menambahkan fragmen HTML, atau menggunakan font OTF kustom.
 lastmod: "2024-02-17"
 sitemap:

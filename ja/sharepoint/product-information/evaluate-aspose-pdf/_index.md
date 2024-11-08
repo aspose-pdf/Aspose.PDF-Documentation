@@ -4,7 +4,7 @@ title: Aspose.Pdf for SharePoint の評価
 
 linktitle: 評価
 
-url: ja/sharepoint/evaluate-aspose-pdf/
+url: /ja/sharepoint/evaluate-aspose-pdf/
 
 lastmod: "2020-12-16"
 

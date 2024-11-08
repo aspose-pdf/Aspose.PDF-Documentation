@@ -2,7 +2,7 @@
 title: 기존 PDF에 목차 추가하기 - Ruby
 type: docs
 weight: 30
-url: ko/java/add-toc-to-existing-pdf-in-ruby/
+url: /ko/java/add-toc-to-existing-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

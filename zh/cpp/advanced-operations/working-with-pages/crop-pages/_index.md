@@ -3,7 +3,7 @@ title: 使用 C++ 编程裁剪 PDF 页面
 linktitle: 裁剪页面
 type: docs
 weight: 80
-url: zh/cpp/crop-pages/
+url: /zh/cpp/crop-pages/
 description: 您可以使用 Aspose.PDF for C++ 获取页面属性，例如宽度、高度、出血框、裁剪框和修整框。
 lastmod: "2021-12-09"
 sitemap:

@@ -2,7 +2,7 @@
 title: PDF 포트폴리오 생성 방법
 type: docs
 weight: 10
-url: ko/java/how-to-create-pdf-portfolio/
+url: /ko/java/how-to-create-pdf-portfolio/
 lastmod: "2022-01-27"
 ---
 

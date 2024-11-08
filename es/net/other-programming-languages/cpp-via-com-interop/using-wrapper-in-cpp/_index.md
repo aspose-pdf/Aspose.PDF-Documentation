@@ -2,14 +2,14 @@
 title: Usando wrapper en CPP
 type: docs
 weight: 30
-url: es/net/using-wrapper-in-cpp/
+url: /es/net/using-wrapper-in-cpp/
 ---
 
 ## Prerrequisitos
 
 {{% alert color="primary" %}}
 
-Por favor, regístrese en Aspose.PDF para .NET con COM Interop, consulte el artículo titulado [Usar Aspose.pdf para .NET vía COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Por favor, regístrese en Aspose.PDF para .NET con COM Interop, consulte el artículo titulado [Usar Aspose.pdf para .NET vía COM Interop](/pdf/es/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

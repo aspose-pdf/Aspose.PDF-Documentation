@@ -3,7 +3,7 @@ title: إضافة علامة مائية إلى PDF باستخدام C++
 linktitle: إضافة علامة مائية
 type: docs
 weight: 90
-url: ar/cpp/add-watermarks/
+url: /ar/cpp/add-watermarks/
 description: توضح هذه المقالة ميزات العمل مع القطع الأثرية والحصول على العلامات المائية في ملفات PDF باستخدام البرمجة بلغة C++.
 lastmod: "2021-12-08"
 sitemap:

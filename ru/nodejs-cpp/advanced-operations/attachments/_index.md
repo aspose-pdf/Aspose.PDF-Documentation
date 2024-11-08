@@ -3,7 +3,7 @@ title: Работа с вложениями в PDF в Node.js
 linktitle: Работа с вложениями
 type: docs
 weight: 120
-url: ru/nodejs-cpp/attachments/
+url: /ru/nodejs-cpp/attachments/
 description: Основные операции с вложениями в PDF в Node.js. Руководство с примерами.
 lastmod: "2023-11-16"
 sitemap:
@@ -17,4 +17,4 @@ sitemap:
 
 Вы узнаете, как удалить вложения из PDF программно с помощью Node.js.
 
-- [Удаление вложения из существующего PDF](/pdf/nodejs-cpp/removing-attachment-from-an-existing-pdf/)
+- [Удаление вложения из существующего PDF](/pdf/ru/nodejs-cpp/removing-attachment-from-an-existing-pdf/)

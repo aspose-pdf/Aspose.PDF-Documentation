@@ -2,7 +2,7 @@
 title: ASP - VBScript via COM Interop
 type: docs
 weight: 30
-url: ja/net/asp-vbscript-via-com-interop/
+url: /ja/net/asp-vbscript-via-com-interop/
 ---
 
 ## 前提条件
@@ -17,7 +17,7 @@ url: ja/net/asp-vbscript-via-com-interop/
 
 {{% alert color="primary" %}}
 
-これは、[Aspose.PDF for .NET](/pdf/net/) と VBScript を介して COM Interop を使用してサンプルテキストを含む PDF ファイルを作成する方法を示すシンプルなASPアプリケーションです。
+これは、[Aspose.PDF for .NET](/pdf/ja/net/) と VBScript を介して COM Interop を使用してサンプルテキストを含む PDF ファイルを作成する方法を示すシンプルなASPアプリケーションです。
 
 {{% /alert %}}
 

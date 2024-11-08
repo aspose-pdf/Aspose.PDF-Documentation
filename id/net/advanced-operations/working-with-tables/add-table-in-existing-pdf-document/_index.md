@@ -3,7 +3,7 @@ title: Membuat atau Menambahkan Tabel dalam PDF menggunakan C#
 linktitle: Membuat atau Menambahkan Tabel
 type: docs
 weight: 10
-url: id/net/add-table-in-existing-pdf-document/
+url: /id/net/add-table-in-existing-pdf-document/
 description: Aspose.PDF untuk .NET adalah perpustakaan yang digunakan untuk membuat, membaca, dan mengedit Tabel PDF. Periksa fungsi lanjutan lainnya dalam topik ini.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 
 Tabel sangat penting ketika bekerja dengan dokumen PDF. Mereka menyediakan fitur yang baik untuk menampilkan informasi secara sistematis. Namespace Aspose.PDF mengandung kelas yang bernama [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), dan [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) yang menyediakan fungsionalitas untuk membuat tabel saat menghasilkan dokumen PDF dari awal.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Tabel dapat dibuat dengan membuat objek dari Kelas Tabel.
 

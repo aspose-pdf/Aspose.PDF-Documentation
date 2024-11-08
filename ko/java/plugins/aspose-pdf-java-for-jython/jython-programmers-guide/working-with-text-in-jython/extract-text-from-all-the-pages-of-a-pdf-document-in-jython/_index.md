@@ -2,7 +2,7 @@
 title: Jython에서 PDF 문서의 모든 페이지에서 텍스트 추출
 type: docs
 weight: 30
-url: ko/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/
+url: /ko/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/
 lastmod: "2021-06-05"
 ---
 

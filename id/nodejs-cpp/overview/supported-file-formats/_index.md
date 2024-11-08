@@ -3,7 +3,7 @@ title: Format File yang Didukung
 linktitle: Format File yang Didukung
 type: docs
 weight: 10
-url: id/nodejs-cpp/supported-file-formats/
+url: /id/nodejs-cpp/supported-file-formats/
 description: Halaman ini menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF untuk Node.js.
 lastmod: "2023-11-16"
 sitemap:

@@ -2,7 +2,7 @@
 title: 在 Jython 中优化 PDF 文档
 type: docs
 weight: 50
-url: zh/java/optimize-pdf-document-in-jython/
+url: /zh/java/optimize-pdf-document-in-jython/
 lastmod: "2021-06-05"
 ---
 

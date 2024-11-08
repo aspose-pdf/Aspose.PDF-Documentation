@@ -3,7 +3,7 @@ title: Mettre à jour les liens dans un PDF
 linktitle: Mettre à jour les liens
 type: docs
 weight: 20
-url: fr/java/update-links/
+url: /fr/java/update-links/
 description: Mettre à jour les liens dans un PDF par programmation. Ce guide explique comment mettre à jour les liens dans un PDF en langage Java.
 lastmod: "2021-06-05"
 sitemap:

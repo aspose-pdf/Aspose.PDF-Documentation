@@ -3,7 +3,7 @@ title: 権限を設定し、PDFを暗号化および復号化する
 linktitle: PDFファイルの暗号化および復号化
 type: docs
 weight: 20
-url: ja/net/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ja/net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: 異なる暗号化タイプとアルゴリズムを使用してC#でPDFファイルを暗号化します。また、所有者のパスワードを使用してPDFファイルを復号化します。
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## 既存のPDFファイルに権限を設定する
 

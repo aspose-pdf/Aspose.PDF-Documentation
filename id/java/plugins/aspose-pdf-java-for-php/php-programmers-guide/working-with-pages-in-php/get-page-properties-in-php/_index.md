@@ -2,7 +2,7 @@
 title: Dapatkan Properti Halaman di PHP
 type: docs
 weight: 50
-url: id/java/get-page-properties-in-php/
+url: /id/java/get-page-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

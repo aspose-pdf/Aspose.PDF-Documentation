@@ -2,7 +2,7 @@
 title: 更改PDF文件中的页面大小
 type: docs
 weight: 30
-url: zh/net/changing-page-sizes-in-a-pdf-file/
+url: /zh/net/changing-page-sizes-in-a-pdf-file/
 description: 尝试学习如何使用PdfPageEditor类更改PDF文件中的页面大小。
 lastmod: "2021-06-05"
 draft: false

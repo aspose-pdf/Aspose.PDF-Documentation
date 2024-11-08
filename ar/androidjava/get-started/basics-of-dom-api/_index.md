@@ -3,7 +3,7 @@ title: أساسيات Aspose.PDF DOM API
 linktitle: أساسيات DOM API
 type: docs
 weight: 10
-url: ar/androidjava/basics-of-dom-api/
+url: /ar/androidjava/basics-of-dom-api/
 description: يستخدم Aspose.PDF لنظام Android عبر Java أيضًا فكرة DOM لتمثيل هيكل مستند PDF من حيث الكائنات. هنا يمكنك قراءة وصف لهذا الهيكل.
 lastmod: "2021-06-05"
 sitemap:

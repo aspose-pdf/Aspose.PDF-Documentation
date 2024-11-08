@@ -3,7 +3,7 @@ title: ライセンスと制限
 linktitle: ライセンスと制限  
 type: docs  
 weight: 90  
-url: ja/java/licensing/  
+url: /ja/java/licensing/  
 description: Aspose.PDF for Java は、クラシックライセンスとメータードライセンスを取得することを顧客に勧めています。また、製品をよりよく探索するために限定ライセンスを使用します。  
 lastmod: "2021-06-05"  
 sitemap:  

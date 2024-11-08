@@ -3,7 +3,7 @@ title: 将PDF转换为EPUB、TeX、Text、XPS格式在JavaScript中
 linktitle: 将PDF转换为其他格式
 type: docs
 weight: 90
-url: zh/javascript-cpp/convert-pdf-to-other-files/
+url: /zh/javascript-cpp/convert-pdf-to-other-files/
 lastmod: "2023-11-01"
 keywords: convert, PDF, EPUB, TeX, Text, XPS, JavaScript
 description: 本主题向您展示如何使用JavaScript将PDF文件转换为其他文件格式，如EPUB、LaTeX、Text、XPS等。

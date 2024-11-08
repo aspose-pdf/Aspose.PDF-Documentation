@@ -3,7 +3,7 @@ title: Comment fusionner des PDF en utilisant C#
 linktitle: Fusionner des fichiers PDF
 type: docs
 weight: 50
-url: fr/net/merge-pdf-documents/
+url: /fr/net/merge-pdf-documents/
 keywords: "fusionner plusieurs pdf en un seul pdf c#, combiner plusieurs pdf en un seul c#, fusionner plusieurs pdf en un seul c#"
 description: Cette page explique comment fusionner des documents PDF en un seul fichier PDF avec C# ou VB.NET.
 lastmod: "2022-02-17"
@@ -81,7 +81,7 @@ sitemap:
 Fusionner des PDF en C# n'est pas une tâche simple sans utiliser de bibliothèque tierce.
 Cet article montre comment fusionner plusieurs fichiers PDF en un seul document PDF en utilisant Aspose.PDF pour .NET. L'exemple est écrit en C#, mais l'API peut également être utilisée dans d'autres langages de programmation .NET tels que VB.NET. Les fichiers PDF sont fusionnés de sorte que le premier soit joint à la fin de l'autre document.
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Fusionner des fichiers PDF en utilisant C# et DOM
 

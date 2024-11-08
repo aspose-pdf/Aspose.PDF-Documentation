@@ -3,7 +3,7 @@ title: 기존 PDF에서 첨부 파일 제거
 linktitle: 기존 PDF에서 첨부 파일 제거
 type: docs
 weight: 30
-url: ko/java/removing-attachment-from-an-existing-pdf/
+url: /ko/java/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF는 PDF 문서에서 첨부 파일을 제거할 수 있습니다. Aspose.PDF 라이브러리를 사용하여 Java PDF API로 PDF 파일의 첨부 파일을 제거하세요.
 lastmod: "2021-06-05"
 sitemap:

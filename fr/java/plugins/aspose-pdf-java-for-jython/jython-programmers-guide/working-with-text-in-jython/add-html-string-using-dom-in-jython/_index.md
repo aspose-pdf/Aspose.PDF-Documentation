@@ -2,7 +2,7 @@
 title: Ajouter une chaîne HTML en utilisant DOM dans Jython
 type: docs
 weight: 10
-url: fr/java/add-html-string-using-dom-in-jython/
+url: /fr/java/add-html-string-using-dom-in-jython/
 lastmod: "2021-06-05"
 ---
 

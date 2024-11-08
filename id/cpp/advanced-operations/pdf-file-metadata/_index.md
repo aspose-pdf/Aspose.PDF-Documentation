@@ -2,7 +2,7 @@
 title: Metadata File PDF
 type: docs
 weight: 20
-url: id/cpp/pdf-file-metadata/
+url: /id/cpp/pdf-file-metadata/
 ---
 
 ## Mendapatkan/Mengatur Informasi File PDF

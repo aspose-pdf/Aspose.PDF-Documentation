@@ -3,7 +3,7 @@ title: كيفية تشغيل أمثلة Aspose.PDF الأخرى لـ C++
 linktitle: كيفية تشغيل أمثلة أخرى
 type: docs
 weight: 50
-url: ar/cpp/how-to-run-other-examples/
+url: /ar/cpp/how-to-run-other-examples/
 description: توضح هذه الصفحة إرشادات ستكون مفيدة للمتطلبات التالية قبل تنزيل وتشغيل الأمثلة.
 lastmod: "2021-06-05"
 sitemap:
@@ -17,7 +17,7 @@ sitemap:
 
 1. Microsoft Visual Studio 2017 أو أحدث.
 2. يجب أن يكون مدير حزم NuGet مثبتًا في Visual Studio. تأكد من تثبيت أحدث إصدار من واجهة برمجة التطبيقات NuGet في Visual Studio. للحصول على تفاصيل حول كيفية تثبيت مدير حزم NuGet، يرجى مراجعة <http://docs.nuget.org/ndocs/guides/install-nuget>
-3. انتقل إلى `Tools->Options->NuGet Package Manager->Package Sources` وتأكد من أن الخيار **nuget.org** مفعل.     يستخدم مشروع المثال ميزة الاستعادة التلقائية للحزم في NuGet لذلك يجب أن يكون لديك اتصال إنترنت نشط. إذا لم يكن لديك اتصال إنترنت نشط على الجهاز حيث يتم تنفيذ الأمثلة، يرجى التحقق من [التثبيت](/pdf/cpp/installation/) وإضافة مرجع يدويًا إلى Aspose.PDF.dll في مشروع المثال.
+3. انتقل إلى `Tools->Options->NuGet Package Manager->Package Sources` وتأكد من أن الخيار **nuget.org** مفعل.     يستخدم مشروع المثال ميزة الاستعادة التلقائية للحزم في NuGet لذلك يجب أن يكون لديك اتصال إنترنت نشط. إذا لم يكن لديك اتصال إنترنت نشط على الجهاز حيث يتم تنفيذ الأمثلة، يرجى التحقق من [التثبيت](/pdf/ar/cpp/installation/) وإضافة مرجع يدويًا إلى Aspose.PDF.dll في مشروع المثال.
 
 ## التحميل من GitHub
 

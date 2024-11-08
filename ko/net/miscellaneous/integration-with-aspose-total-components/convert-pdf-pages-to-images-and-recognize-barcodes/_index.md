@@ -2,7 +2,7 @@
 title: PDF 페이지를 이미지로 변환하고 바코드 인식
 type: docs
 weight: 10
-url: ko/net/convert-pdf-pages-to-images-and-recognize-barcodes/
+url: /ko/net/convert-pdf-pages-to-images-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

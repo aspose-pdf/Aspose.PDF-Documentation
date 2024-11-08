@@ -3,7 +3,7 @@ title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: ja/java/annotations/
+url: /ja/java/annotations/
 description: このセクションでは、Aspose.PDFライブラリを使用してPDFファイルにさまざまなアノテーションを使用する方法を示します。Javaを使用してアノテーションを描画、開く、または追加する方法を学びます。
 lastmod: "2021-11-26"    
 sitemap:
@@ -22,6 +22,6 @@ PDFビューアは通常、テキストのハイライト、メモ、線、ま�
 
 次のことができます:
 
-- [注釈の概要](/pdf/java/overview-of-annotations/) - PDF 仕様で定義されている注釈の種類と、Aspose.PDF がサポートするものを学びます。
-- [注釈の追加、削除、取得](/pdf/java/add-delete-and-get-annotation/) - このセクションでは、許可されているすべての種類の注釈を操作する方法を説明します。
-- [XFDF 形式での注釈のインポートとエクスポート](/pdf/java/import-export-xfdf/) - Aspose.PDF ライブラリは、注釈データを XFDF ファイルにインポートおよびエクスポートするためのメソッドを提供します。
+- [注釈の概要](/pdf/ja/java/overview-of-annotations/) - PDF 仕様で定義されている注釈の種類と、Aspose.PDF がサポートするものを学びます。
+- [注釈の追加、削除、取得](/pdf/ja/java/add-delete-and-get-annotation/) - このセクションでは、許可されているすべての種類の注釈を操作する方法を説明します。
+- [XFDF 形式での注釈のインポートとエクスポート](/pdf/ja/java/import-export-xfdf/) - Aspose.PDF ライブラリは、注釈データを XFDF ファイルにインポートおよびエクスポートするためのメソッドを提供します。

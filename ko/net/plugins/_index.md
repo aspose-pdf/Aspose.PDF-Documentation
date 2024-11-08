@@ -3,7 +3,7 @@ title: 다른 언어와의 플러그인 및 통합
 linktitle: 플러그인
 type: docs
 weight: 130
-url: ko/net/plugins/
+url: /ko/net/plugins/
 description: Aspose.PDF를 기반으로 다양한 플러그인 사용 방법을 알아보세요.
 lastmod: "2024-03-13"
 sitemap:
@@ -41,12 +41,12 @@ sitemap:
 
 이 섹션은 가장 인기 있는 웹 애플리케이션용 플러그인 목록을 포함하고 있습니다: DotNetNuke, Sitefinity, Umbraco 등.
 
-* [Aspose.PDF .NET for DNN](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF .NET for Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF .NET for VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
-* [Aspose.PDF .NET for CRM](/pdf/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF .NET for Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF .NET for DNN](/pdf/ko/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF .NET for Umbraco](/pdf/ko/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF .NET for VisualStudio](/pdf/ko/net/aspose-pdf-net-for-visualstudio/)
+* [Aspose.PDF .NET for CRM](/pdf/ko/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF .NET for Sitefinity](/pdf/ko/net/aspose-pdf-net-for-sitefinity/)
 
 ### 다른 언어로 Aspose.PDF 사용하기
 
-* [Using Aspose.PDF for .NET with Coldfusion](/pdf/net/aspose-pdf-net-for-coldfusion/)
+* [Using Aspose.PDF for .NET with Coldfusion](/pdf/ko/net/aspose-pdf-net-for-coldfusion/)

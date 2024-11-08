@@ -3,7 +3,7 @@ title: إضافة نص إلى PDF باستخدام C#
 linktitle: إضافة نص إلى PDF
 type: docs
 weight: 10
-url: ar/net/add-text-to-pdf-file/
+url: /ar/net/add-text-to-pdf-file/
 description: يصف هذا المقال الجوانب المختلفة للعمل مع النص في Aspose.PDF. تعلم كيفية إضافة نص إلى PDF، إضافة أجزاء HTML، أو استخدام خطوط OTF المخصصة.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "يصف هذا المقال الجوانب المختلفة للعمل مع النص في Aspose.PDF. تعلم كيفية إضافة نص إلى PDF، إضافة أجزاء HTML، أو استخدام خطوط OTF المخصصة."
 }
 </script>
-يعمل الجزء التالي من الشفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الشفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 لإضافة نص إلى ملف PDF موجود:
 

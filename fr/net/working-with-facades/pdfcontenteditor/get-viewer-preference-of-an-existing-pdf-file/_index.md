@@ -2,7 +2,7 @@
 title: Obtenir la Préférence du Visionneur d'un Fichier PDF
 type: docs
 weight: 70
-url: fr/net/get-viewer-preference-of-an-existing-pdf-file/
+url: /fr/net/get-viewer-preference-of-an-existing-pdf-file/
 description: Cette section montre comment obtenir la préférence du visionneur d'un fichier PDF existant en utilisant la Classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: Taille de marge de page
 type: docs
 weight: 70
-url: fr/reportingservices/page-margin-size/
+url: /fr/reportingservices/page-margin-size/
 lastmod: "2021-06-05"
 ---
 

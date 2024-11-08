@@ -2,7 +2,7 @@
 title: Dividir páginas PDF
 type: docs
 weight: 60
-url: es/net/split-pdf-pages/
+url: /es/net/split-pdf-pages/
 description: Esta sección explica cómo dividir páginas PDF con Aspose.PDF Facades utilizando la clase PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

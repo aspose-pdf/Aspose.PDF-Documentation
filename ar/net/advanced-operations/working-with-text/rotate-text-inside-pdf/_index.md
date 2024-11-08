@@ -3,7 +3,7 @@ title: قم بتدوير النص داخل PDF باستخدام C#
 linktitle: تدوير النص داخل PDF
 type: docs
 weight: 50
-url: ar/net/rotate-text-inside-pdf/
+url: /ar/net/rotate-text-inside-pdf/
 description: تعلم طرق مختلفة لتدوير النص إلى PDF. يتيح لك Aspose.PDF تدوير النص إلى أي زاوية، تدوير جزء من النص أو فقرة كاملة.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "تعلم طرق مختلفة لتدوير النص إلى PDF. يتيح لك Aspose.PDF تدوير النص إلى أي زاوية، تدوير جزء من النص أو فقرة كاملة."
 }
 </script>
-الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تدوير النص داخل PDF باستخدام خاصية التدوير
 

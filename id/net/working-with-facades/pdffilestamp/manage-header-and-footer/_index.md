@@ -2,7 +2,7 @@
 title: Manage Header and Footer
 type: docs
 weight: 40
-url: id/net/manage-header-and-footer/
+url: /id/net/manage-header-and-footer/
 description: Bagian ini menjelaskan cara mengelola Header dan Footer dengan Aspose.PDF Facades menggunakan Kelas PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

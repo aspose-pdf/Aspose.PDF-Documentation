@@ -3,7 +3,7 @@ title: Добавить объект круга в PDF файл
 linktitle: Добавить круг
 type: docs
 weight: 20
-url: ru/cpp/add-circle/
+url: /ru/cpp/add-circle/
 description: В этой статье объясняется, как создать объект круга в вашем PDF с помощью Aspose.PDF для C++.
 lastmod: "2021-12-18"
 sitemap:

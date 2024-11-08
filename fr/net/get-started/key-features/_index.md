@@ -3,7 +3,7 @@ title: Fonctionnalités clés d'Aspose.PDF
 linktitle: Fonctionnalités clés
 type: docs
 weight: 80
-url: fr/net/key-features/
+url: /fr/net/key-features/
 description: Aspose.PDF pour .NET démontre ses fonctionnalités générales. Il montre les versions de PDF prises en charge, et toutes les manipulations que nous pouvons faire avec PDF.
 lastmod: "2021-06-05"
 aliases:

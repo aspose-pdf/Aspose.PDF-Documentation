@@ -3,7 +3,7 @@ title: Trabalhando com Imagens em PDF
 linktitle: Trabalhando com Imagens
 type: docs
 weight: 40
-url: pt/php-java/working-with-images/
+url: /pt/php-java/working-with-images/
 description: Esta seção descreve os recursos de trabalho com imagens em um arquivo PDF usando PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -25,4 +25,4 @@ aprender os próximos artigos para resolver suas tarefas.
 
 Você é capaz de fazer o seguinte:
 
-- [Adicionar Imagem a um Arquivo PDF Existente](/pdf/php-java/add-image-to-existing-pdf-file/) - adicionar imagens e referências de uma única imagem no documento PDF, após isso controlar a qualidade.
+- [Adicionar Imagem a um Arquivo PDF Existente](/pdf/pt/php-java/add-image-to-existing-pdf-file/) - adicionar imagens e referências de uma única imagem no documento PDF, após isso controlar a qualidade.

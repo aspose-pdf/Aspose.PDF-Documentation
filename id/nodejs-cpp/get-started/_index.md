@@ -3,7 +3,7 @@ title: Memulai
 linktitle: Memulai
 type: docs
 weight: 30
-url: id/nodejs-cpp/get-started/
+url: /id/nodejs-cpp/get-started/
 description: Bagian ini menjelaskan prinsip dasar kerja Aspose.PDF untuk Node.js melalui C++. Aspose.PDF untuk Node.js melalui C++ mendukung berbagai macam fungsi.
 lastmod: "2023-11-16"   
 sitemap:
@@ -27,31 +27,31 @@ Menggunakan Aspose.PDF untuk Node.js dalam proyek Anda memberikan keuntungan seb
 
 ## Berbagai macam fungsi
 
-- [Ekstrak teks dari PDF](/pdf/nodejs-cpp/extract-text/)
-- [Optimalkan dokumen PDF](/pdf/nodejs-cpp/optimize-pdf/)
-- [Tambahkan stempel ke file PDF](/pdf/nodejs-cpp/add-stamp-to-pdf/)
-- [Tambahkan gambar ke file PDF](/pdf/nodejs-cpp/add-image-to-pdf/)
-- [Pisahkan PDF ke dua file](/pdf/nodejs-cpp/split-pdf/)
-- [Gabungkan dua file ke PDF](/pdf/nodejs-cpp/merge-pdf/)
-- [Enkripsi dokumen PDF](/pdf/nodejs-cpp/encrypt-pdf/)
-- [Dekripsi dokumen PDF](/pdf/nodejs-cpp/decrypt-pdf/)
+- [Ekstrak teks dari PDF](/pdf/id/nodejs-cpp/extract-text/)
+- [Optimalkan dokumen PDF](/pdf/id/nodejs-cpp/optimize-pdf/)
+- [Tambahkan stempel ke file PDF](/pdf/id/nodejs-cpp/add-stamp-to-pdf/)
+- [Tambahkan gambar ke file PDF](/pdf/id/nodejs-cpp/add-image-to-pdf/)
+- [Pisahkan PDF ke dua file](/pdf/id/nodejs-cpp/split-pdf/)
+- [Gabungkan dua file ke PDF](/pdf/id/nodejs-cpp/merge-pdf/)
+- [Enkripsi dokumen PDF](/pdf/id/nodejs-cpp/encrypt-pdf/)
+- [Dekripsi dokumen PDF](/pdf/id/nodejs-cpp/decrypt-pdf/)
 
 ## Fitur Konversi
 
-- [Konversi PDF ke JPEG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Konversi PDF ke PNG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Konversi PDF ke TIFF](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Konversi PDF ke BMP](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Konversi PDF ke SVG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
+- [Konversi PDF ke JPEG](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
+- [Konversi PDF ke PNG](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
+- [Konversi PDF ke TIFF](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
+- [Konversi PDF ke BMP](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
+- [Konversi PDF ke SVG](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
 
-- [Konversi PDF ke SVG(Zip)](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Konversi PDF ke TeX](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Konversi PDF ke XPS](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Konversi PDF ke CSV](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [Konversi PDF ke TXT](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Konversi PDF ke Word](/pdf/nodejs-cpp/convert-pdf-to-doc/)
-- [Konversi PDF ke XLSX](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [Konversi PDF ke PDF Grayscale](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Konversi PDF ke Microsoft PowerPoint](/pdf/nodejs-cpp/convert-pdf-to-powerpoint/)
-- [Konversi PDF/A ke format PDF](/pdf/nodejs-cpp/convert-pdfa-to-pdf/)
-- [Konversi PDF ke format PDF/A](/pdf/nodejs-cpp/convert-pdf-to-pdfa/)
+- [Konversi PDF ke SVG(Zip)](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
+- [Konversi PDF ke TeX](/pdf/id/nodejs-cpp/convert-pdf-to-other-files/)
+- [Konversi PDF ke XPS](/pdf/id/nodejs-cpp/convert-pdf-to-other-files/)
+- [Konversi PDF ke CSV](/pdf/id/nodejs-cpp/convert-pdf-to-xlsx/)
+- [Konversi PDF ke TXT](/pdf/id/nodejs-cpp/convert-pdf-to-other-files/)
+- [Konversi PDF ke Word](/pdf/id/nodejs-cpp/convert-pdf-to-doc/)
+- [Konversi PDF ke XLSX](/pdf/id/nodejs-cpp/convert-pdf-to-xlsx/)
+- [Konversi PDF ke PDF Grayscale](/pdf/id/nodejs-cpp/convert-pdf-to-other-files/)
+- [Konversi PDF ke Microsoft PowerPoint](/pdf/id/nodejs-cpp/convert-pdf-to-powerpoint/)
+- [Konversi PDF/A ke format PDF](/pdf/id/nodejs-cpp/convert-pdfa-to-pdf/)
+- [Konversi PDF ke format PDF/A](/pdf/id/nodejs-cpp/convert-pdf-to-pdfa/)

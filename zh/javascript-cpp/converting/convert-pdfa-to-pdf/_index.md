@@ -3,7 +3,7 @@ title: 将 PDF/A 转换为 PDF 格式
 linktitle: 将 PDF/A 转换为 PDF 格式
 type: docs
 weight: 110
-url: zh/javascript-cpp/convert-pdfa-to-pdf/
+url: /zh/javascript-cpp/convert-pdfa-to-pdf/
 lastmod: "2023-11-01"
 description: 本主题向您展示如何使用 Aspose.PDF 通过 JavaScript 将 PDF/A 文件转换为 PDF 文档。
 sitemap:

@@ -2,7 +2,7 @@
 title: Удалить подпись из PDF-файла
 type: docs
 weight: 20
-url: ru/java/remove-signature-from-pdf/
+url: /ru/java/remove-signature-from-pdf/
 description: Этот раздел объясняет, как работать с подписью в PDF-файле с использованием класса PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

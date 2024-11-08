@@ -2,7 +2,7 @@
 title: Configurando Serviços de Relatórios
 type: docs
 weight: 20
-url: pt/reportingservices/setting-up-reporting-services/
+url: /pt/reportingservices/setting-up-reporting-services/
 lastmod: "2021-06-05"
 ---
 

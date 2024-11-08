@@ -3,7 +3,7 @@ title: استخراج جدول من مستند PDF موجود
 linktitle: استخراج جدول
 type: docs
 weight: 25
-url: ar/java/extract-table-from-existing-pdf-document/
+url: /ar/java/extract-table-from-existing-pdf-document/
 description: تجعل Aspose.PDF for Java من الممكن تنفيذ عمليات مختلفة مع الجداول الموجودة في مستند PDF الخاص بك. يمكنك إضافة واستخراج جدول في مستند PDF موجود، وعرض الجدول في صفحة جديدة وغيرها.
 lastmod: "2021-06-05"
 sitemap:

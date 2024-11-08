@@ -3,7 +3,7 @@ title: Добавить Штамп Страницы в PDF
 linktitle: Штампы страниц в PDF файле
 type: docs
 weight: 30
-url: ru/php-java/page-stamps-in-the-pdf-file/
+url: /ru/php-java/page-stamps-in-the-pdf-file/
 description: Добавьте штамп страницы в PDF файл с использованием класса PdfPageStamp на PHP.
 lastmod: "2024-09-10"
 sitemap:

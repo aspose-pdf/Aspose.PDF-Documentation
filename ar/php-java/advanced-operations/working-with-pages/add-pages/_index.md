@@ -3,7 +3,7 @@ title: إضافة صفحات في PDF
 linktitle: إضافة صفحات
 type: docs
 weight: 10
-url: ar/php-java/add-pages/
+url: /ar/php-java/add-pages/
 description: تُعلِّم هذه المقالة كيفية إدراج (إضافة) صفحة في الموقع المرغوب في ملف PDF. تعلّم كيفية نقل، إزالة (حذف) الصفحات من ملف PDF باستخدام PHP.
 lastmod: "2024-06-05"
 sitemap:

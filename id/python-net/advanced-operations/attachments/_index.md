@@ -3,7 +3,7 @@ title: Bekerja dengan Lampiran di PDF menggunakan Python
 linktitle: Bekerja dengan Lampiran
 type: docs
 weight: 130
-url: id/python-net/attachments/
+url: /id/python-net/attachments/
 description: Gunakan Python PDF API untuk mengakses, menambah, dan menghapus lampiran dalam file PDF menggunakan Python dari dalam aplikasi Anda. Panduan lengkap dengan contoh kode Python.
 lastmod: "2023-02-17"
 sitemap:
@@ -86,14 +86,14 @@ Lampiran adalah file tambahan yang dilampirkan ke dokumen induk, bisa berupa ber
 You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with Python.  
 Anda akan belajar cara menambahkan lampiran ke pdf, mendapatkan informasi lampiran, dan menyimpannya ke file, menghapus lampiran dari PDF secara programatis dengan Python.  
 
-- [Adding attachment to a PDF document](/pdf/python-net/add-attachment-to-pdf-document/)  
-- [Menambahkan lampiran ke dokumen PDF](/pdf/python-net/add-attachment-to-pdf-document/)  
+- [Adding attachment to a PDF document](/pdf/id/python-net/add-attachment-to-pdf-document/)  
+- [Menambahkan lampiran ke dokumen PDF](/pdf/id/python-net/add-attachment-to-pdf-document/)  
 
-- [Removing attachment from an existing PDF](/pdf/python-net/removing-attachment-from-an-existing-pdf/)  
-- [Menghapus lampiran dari PDF yang ada](/pdf/python-net/removing-attachment-from-an-existing-pdf/)  
+- [Removing attachment from an existing PDF](/pdf/id/python-net/removing-attachment-from-an-existing-pdf/)  
+- [Menghapus lampiran dari PDF yang ada](/pdf/id/python-net/removing-attachment-from-an-existing-pdf/)  
 
-- [Portfolio](/pdf/python-net/portfolio/)  
-- [Portofolio](/pdf/python-net/portfolio/)  
+- [Portfolio](/pdf/id/python-net/portfolio/)  
+- [Portofolio](/pdf/id/python-net/portfolio/)  
 
 <script type="application/ld+json">  
 {  

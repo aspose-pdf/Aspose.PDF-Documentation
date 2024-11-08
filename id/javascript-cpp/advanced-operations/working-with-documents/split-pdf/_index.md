@@ -3,7 +3,7 @@ title: Memisahkan PDF menggunakan JavaScript
 linktitle: Memisahkan file PDF
 type: docs
 weight: 30
-url: id/javascript-cpp/split-pdf/
+url: /id/javascript-cpp/split-pdf/
 description: Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individual dengan Aspose.PDF untuk JavaScript melalui C++.
 lastmod: "2022-12-15"
 sitemap:

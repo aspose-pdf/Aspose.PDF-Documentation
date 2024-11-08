@@ -2,7 +2,7 @@
 title: Extrair Anexos de Arquivo PDF
 type: docs
 weight: 10
-url: pt/java/extract-attachments/
+url: /pt/java/extract-attachments/
 description: Esta seção explica sobre extração de anexos de pdf com a classe PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

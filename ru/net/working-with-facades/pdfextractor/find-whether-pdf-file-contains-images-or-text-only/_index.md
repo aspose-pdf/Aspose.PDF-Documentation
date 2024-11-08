@@ -3,7 +3,7 @@ title: Узнать, содержит ли PDF изображения или т�
 linktitle: Проверка наличия текста и изображений
 type: docs
 weight: 40
-url: ru/net/find-whether-pdf-file-contains-images-or-text-only/
+url: /ru/net/find-whether-pdf-file-contains-images-or-text-only/
 description: Эта тема объясняет, как определить, содержит ли файл PDF только изображения или только текст с помощью класса PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

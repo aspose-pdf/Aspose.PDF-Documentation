@@ -2,7 +2,7 @@
 title: Definindo Parâmetros
 type: docs
 weight: 10
-url: pt/reportingservices/setting-parameters/
+url: /pt/reportingservices/setting-parameters/
 lastmod: "2021-06-05"
 ---
 

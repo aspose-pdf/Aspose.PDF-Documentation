@@ -3,7 +3,7 @@ title: Aspose.PDF для Python через C++
 linktitle: Обзор
 type: docs
 weight: 20
-url: ru/python-cpp/overview/
+url: /ru/python-cpp/overview/
 lastmod: "2024-04-08"
 description: Обзор ключевых функций и поддерживаемых форматов Aspose.PDF для Python через C++, а также руководство по установке и лицензированию библиотеки.
 sitemap:

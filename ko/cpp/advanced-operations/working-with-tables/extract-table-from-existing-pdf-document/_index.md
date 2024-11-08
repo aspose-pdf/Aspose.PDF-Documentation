@@ -3,7 +3,7 @@ title: PDF에서 테이블 추출
 linktitle: 테이블 추출
 type: docs
 weight: 20
-url: ko/cpp/extract-table-from-existing-pdf-document/
+url: /ko/cpp/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for C++를 사용하면 PDF 문서에 포함된 테이블을 다양한 방식으로 조작할 수 있습니다. 기존 PDF 문서에 테이블을 추가하고 추출하며, 새 페이지에 테이블을 렌더링할 수 있습니다.
 lastmod: "2021-11-11"
 sitemap:

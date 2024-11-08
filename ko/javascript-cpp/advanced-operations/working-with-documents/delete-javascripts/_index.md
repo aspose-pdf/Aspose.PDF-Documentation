@@ -3,7 +3,7 @@ title: PDF 파일에서 JavaScript 코드 제거
 linktitle: JavaScripts 삭제
 type: docs
 weight: 50
-url: ko/javascript-cpp/delete-javascripts/
+url: /ko/javascript-cpp/delete-javascripts/
 description: Aspose.PDF와 함께 웹에서 직접 PDF 파일의 JavaScript 매크로를 제거합니다.
 lastmod: "2023-09-17"
 sitemap:

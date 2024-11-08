@@ -3,7 +3,7 @@ title: PDF C#でテキストスタンプを追加
 linktitle: PDFファイルのテキストスタンプ
 type: docs
 weight: 20
-url: ja/net/text-stamps-in-the-pdf-file/
+url: /ja/net/text-stamps-in-the-pdf-file/
 description: TextStamp クラスと Aspose.PDF for .NET ライブラリを使用して PDF 文書にテキストスタンプを追加します。
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) クラスを使用して、PDFファイルにテキストスタンプを追加できます。TextStampクラスは、フォントサイズ、フォントスタイル、フォントカラーなど、テキストベースのスタンプを作成するために必要なプロパティを提供します。テキストスタンプを追加するためには、必要なプロパティを使用してDocumentオブジェクトとTextStampオブジェクトを作成する必要があります。その後、PDFにスタンプを追加するためにPageのAddStampメソッドを呼び出すことができます。
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 次のコードスニペットは、PDFファイルにテキストスタンプを追加する方法を示しています。
 

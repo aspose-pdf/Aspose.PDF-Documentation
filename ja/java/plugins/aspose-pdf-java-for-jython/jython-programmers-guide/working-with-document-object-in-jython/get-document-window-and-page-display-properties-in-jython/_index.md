@@ -2,7 +2,7 @@
 title: Jythonでドキュメントウィンドウとページ表示プロパティを取得
 type: docs
 weight: 20
-url: ja/java/get-document-window-and-page-display-properties-in-jython/
+url: /ja/java/get-document-window-and-page-display-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

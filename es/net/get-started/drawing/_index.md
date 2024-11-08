@@ -3,7 +3,7 @@ title: Visión general de Aspose.PDF.Drawing para .NET
 linktitle: Versión de PDF.Drawing
 type: docs
 weight: 130
-url: es/net/drawing/
+url: /es/net/drawing/
 lastmod: "2023-12-21"
 description: Visión general de las características clave y ventajas de la biblioteca Aspose.PDF.Drawing para .NET.
 sitemap:
@@ -71,7 +71,7 @@ Para imprimir documentos PDF, se utiliza System.Drawing.Common, por lo que solo 
 
 ## Licencia
 
-No hay licencia adicional para Aspose.PDF.Drawing, se utiliza la misma que para Aspose.PDF. Consulta la sección [Licencia de Aspose PDF](/pdf/net/licensing/).
+No hay licencia adicional para Aspose.PDF.Drawing, se utiliza la misma que para Aspose.PDF. Consulta la sección [Licencia de Aspose PDF](/pdf/es/net/licensing/).
 
 ## Instalación
 
@@ -84,7 +84,7 @@ Aprende sobre las clases disponibles en Aspose.PDF.Drawing en el sitio de [Refer
 
 Aprende más sobre:
 
-- [Formatos de Archivos Soportados](/pdf/net/supported-file-formats/)
-- [Requisitos del Sistema](/pdf/net/system-requirements/)
-- [Licenciamiento](/pdf/net/licensing/)
-- [Soporte Técnico](/pdf/net/technical-support/)
+- [Formatos de Archivos Soportados](/pdf/es/net/supported-file-formats/)
+- [Requisitos del Sistema](/pdf/es/net/system-requirements/)
+- [Licenciamiento](/pdf/es/net/licensing/)
+- [Soporte Técnico](/pdf/es/net/technical-support/)

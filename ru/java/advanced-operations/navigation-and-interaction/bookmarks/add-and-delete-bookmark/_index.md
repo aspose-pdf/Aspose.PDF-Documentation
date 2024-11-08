@@ -3,7 +3,7 @@ title: Добавить и Удалить Закладку
 linktitle: Добавить и Удалить Закладку
 type: docs
 weight: 10
-url: ru/java/add-and-delete-bookmark/
+url: /ru/java/add-and-delete-bookmark/
 description: Вы можете добавить закладку в PDF-документ с помощью Java. Возможно удалить все или определенные закладки из PDF-документа.
 lastmod: "2021-06-05"
 sitemap:

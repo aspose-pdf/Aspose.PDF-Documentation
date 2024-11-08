@@ -2,7 +2,7 @@
 title: PDFファイルに署名を追加
 type: docs
 weight: 10
-url: ja/net/add-signature-in-pdf/
+url: /ja/net/add-signature-in-pdf/
 description: このセクションでは、PdfFileSignatureクラスを使用してPDFファイルに署名を追加する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

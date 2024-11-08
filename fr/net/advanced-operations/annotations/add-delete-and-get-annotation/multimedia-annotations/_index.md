@@ -3,7 +3,7 @@ title: Annotation multimédia PDF en utilisant C#
 linktitle: Annotation multimédia
 type: docs
 weight: 40
-url: fr/net/multimedia-annotation/
+url: /fr/net/multimedia-annotation/
 description: Aspose.PDF pour .NET vous permet d'ajouter, de récupérer et de supprimer l'annotation multimédia de votre document PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -97,7 +97,7 @@ Les méthodes/propriétés suivantes de la classe RichMediaAnnotation peuvent ê
 - void Update(): Créer une structure de données pour l'annotation. Cette méthode doit être appelée en dernier.
 - void SetPoster(Stream): Définir l'affiche de la vidéo, c'est-à-dire l'image affichée lorsque le lecteur n'est pas actif.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter une Annotation de l'Écran
 
@@ -364,7 +364,7 @@ document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
 document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
 ```
 
-Pour plus d'informations détaillées et les possibilités de ces fonctionnalités, consultez également [Travailler avec les formulaires](/pdf/net/acroforms/).
+Pour plus d'informations détaillées et les possibilités de ces fonctionnalités, consultez également [Travailler avec les formulaires](/pdf/fr/net/acroforms/).
 
 Dans les documents PDF, vous pouvez visualiser et gérer des contenus 3D de haute qualité créés avec des logiciels de CAO 3D ou de modélisation 3D et intégrés dans le document PDF. Vous pouvez faire pivoter les éléments 3D dans toutes les directions comme si vous les teniez dans vos mains.
 

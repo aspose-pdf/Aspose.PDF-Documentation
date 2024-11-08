@@ -3,7 +3,7 @@ title: Удалить таблицы из существующего PDF
 linktitle: Удалить таблицы
 type: docs
 weight: 50
-url: ru/python-net/remove-tables-from-existing-pdf/
+url: /ru/python-net/remove-tables-from-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

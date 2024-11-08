@@ -3,7 +3,7 @@ title: Exigences Système pour C++
 linktitle: Exigences Système
 type: docs
 weight: 30
-url: fr/cpp/system-requirements/
+url: /fr/cpp/system-requirements/
 description: Cette section répertorie les systèmes d'exploitation pris en charge qu'un développeur doit avoir pour travailler avec succès avec Aspose.PDF pour C++.
 lastmod: "2021-11-08"
 sitemap:

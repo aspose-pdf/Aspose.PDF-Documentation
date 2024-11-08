@@ -2,7 +2,7 @@
 title: Работа с элементом списка
 type: docs
 weight: 30
-url: ru/net/working-with-list-item/
+url: /ru/net/working-with-list-item/
 description: Этот раздел объясняет, как работать с элементом списка с использованием Aspose.PDF Facades и класса FormEditor.
 lastmod: "2021-06-05"
 draft: false

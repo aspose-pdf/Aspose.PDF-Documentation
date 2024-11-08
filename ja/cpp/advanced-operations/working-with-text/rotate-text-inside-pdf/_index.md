@@ -3,7 +3,7 @@ title: PDF内のテキストを回転させる方法 (C++使用)
 linktitle: PDF内のテキストを回転させる
 type: docs
 weight: 50
-url: ja/cpp/rotate-text-inside-pdf/
+url: /ja/cpp/rotate-text-inside-pdf/
 description: PDFにテキストを回転させるさまざまな方法を学びます。Aspose.PDFを使用すると、任意の角度にテキストを回転させたり、テキストフラグメントや段落全体を回転させたりできます。
 lastmod: "2021-12-13"
 sitemap:

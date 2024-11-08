@@ -3,7 +3,7 @@ title: Конвертировать PDF в EPUB, TeX, Text, XPS на JavaScript
 linktitle: Конвертировать PDF в другие форматы
 type: docs
 weight: 90
-url: ru/javascript-cpp/convert-pdf-to-other-files/
+url: /ru/javascript-cpp/convert-pdf-to-other-files/
 lastmod: "2023-11-01"
 keywords: конвертировать, PDF, EPUB, TeX, Text, XPS, JavaScript
 description: Эта тема показывает, как конвертировать PDF файл в другие форматы файлов, такие как EPUB, LaTeX, Text, XPS и т.д., используя JavaScript или JavaScript.

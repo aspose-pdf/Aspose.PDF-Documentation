@@ -2,7 +2,7 @@
 title: Obtenez le nombre de pages du PDF en Jython
 type: docs
 weight: 40
-url: fr/java/get-page-count-of-pdf-in-jython/
+url: /fr/java/get-page-count-of-pdf-in-jython/
 lastmod: "2021-06-05"
 ---
 

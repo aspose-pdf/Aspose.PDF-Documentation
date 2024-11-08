@@ -2,7 +2,7 @@
 title: Generador de Tablas
 type: docs
 weight: 130
-url: es/net/plugins/tablegenerator/
+url: /es/net/plugins/tablegenerator/
 description: Permite agregar/insertar una tabla en el número de página especificado del documento PDF.
 lastmod: "2024-01-24"
 draft: false

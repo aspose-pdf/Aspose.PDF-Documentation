@@ -3,7 +3,7 @@ title: Извлечение шрифтов из PDF C#
 linktitle: Извлечение шрифтов из PDF
 type: docs
 weight: 30
-url: ru/net/extract-fonts-from-pdf/
+url: /ru/net/extract-fonts-from-pdf/
 description: Используйте библиотеку Aspose.PDF для .NET для извлечения всех встроенных шрифтов из вашего PDF документа.
 lastmod: "2021-06-05"
 sitemap:
@@ -13,7 +13,7 @@ sitemap:
 
 Если вы хотите получить все шрифты из документа PDF, вы можете использовать метод FontUtilities.GetAllFonts(), предоставленный в классе Document. Пожалуйста, проверьте следующий фрагмент кода, чтобы получить все шрифты из существующего документа PDF:
 
-Данный фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Данный фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET

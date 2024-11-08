@@ -2,7 +2,7 @@
 title: Obter uma Página Particular em um Arquivo PDF em Python
 type: docs
 weight: 30
-url: pt/java/get-a-particular-page-in-a-pdf-file-in-python/
+url: /pt/java/get-a-particular-page-in-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

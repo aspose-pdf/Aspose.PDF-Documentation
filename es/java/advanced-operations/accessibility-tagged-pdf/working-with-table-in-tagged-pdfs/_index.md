@@ -3,7 +3,7 @@ title: Trabajando con Tablas en PDFs Etiquetados
 linktitle: Trabajando con Tablas en PDFs Etiquetados
 type: docs
 weight: 40
-url: es/java/working-with-table-in-tagged-pdfs/
+url: /es/java/working-with-table-in-tagged-pdfs/
 description: Este artículo explica cómo trabajar con tablas en documentos PDF etiquetados con Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

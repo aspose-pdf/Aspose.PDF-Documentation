@@ -2,7 +2,7 @@
 title: リストアイテムの操作
 type: docs
 weight: 30
-url: ja/net/working-with-list-item/
+url: /ja/net/working-with-list-item/
 description: このセクションでは、FormEditorクラスを使用してAspose.PDF Facadesでリストアイテムを操作する方法について説明します。
 lastmod: "2021-06-05"
 draft: false

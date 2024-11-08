@@ -3,7 +3,7 @@ title: PDF内のテキストをC#を使用して操作する
 linktitle: テキスト操作
 type: docs
 weight: 30
-url: ja/net/working-with-text/
+url: /ja/net/working-with-text/
 description: このセクションでは、テキスト処理のさまざまな技術について説明します。Aspose.PDFとC#を使用してテキストを追加、置換、回転、検索する方法を学びます。
 lastmod: "2022-02-17"
 sitemap:
@@ -79,14 +79,14 @@ sitemap:
 
 以下の操作が可能です：
 
-- [PDFファイルにテキストを追加する](/pdf/net/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームとファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクなどを追加します。
-- [PDFツールチップ](/pdf/net/pdf-tooltip/) - C#を使用して透明なボタンを追加することにより、検索されたテキストにツールチップを追加できます。
-- [PDF内のテキストフォーマット](/pdf/net/text-formatting-inside-pdf/) - ドキュメントに追加できる多くの機能があります。
-- [PDF内のテキストフォーマット](/pdf/net/text-formatting-inside-pdf/) - テキストのフォーマット時に文書に追加できる多くの機能。
-- [PDF内のテキストを置換する](/pdf/net/replace-text-in-pdf/) - PDFドキュメントの全ページのテキストを置換するには、最初にTextFragmentAbsorberを使用する必要があります。
-- [PDF内のテキストを回転する](/pdf/net/rotate-text-inside-pdf/) - TextFragmentクラスの回転プロパティを使用してPDF内のテキストを回転します。
-- [PDFドキュメントのページからテキストを検索して取得する](/pdf/net/search-and-get-text-from-pdf/) - ページからテキストを検索して取得するためにTextFragmentAbsorberクラスを使用できます。
-- [改行を特定する](/pdf/net/determine-line-break/) - このトピックでは、複数行のテキストフラグメントの改行を追跡する方法について説明します。
+- [PDFファイルにテキストを追加する](/pdf/ja/net/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームとファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクなどを追加します。
+- [PDFツールチップ](/pdf/ja/net/pdf-tooltip/) - C#を使用して透明なボタンを追加することにより、検索されたテキストにツールチップを追加できます。
+- [PDF内のテキストフォーマット](/pdf/ja/net/text-formatting-inside-pdf/) - ドキュメントに追加できる多くの機能があります。
+- [PDF内のテキストフォーマット](/pdf/ja/net/text-formatting-inside-pdf/) - テキストのフォーマット時に文書に追加できる多くの機能。
+- [PDF内のテキストを置換する](/pdf/ja/net/replace-text-in-pdf/) - PDFドキュメントの全ページのテキストを置換するには、最初にTextFragmentAbsorberを使用する必要があります。
+- [PDF内のテキストを回転する](/pdf/ja/net/rotate-text-inside-pdf/) - TextFragmentクラスの回転プロパティを使用してPDF内のテキストを回転します。
+- [PDFドキュメントのページからテキストを検索して取得する](/pdf/ja/net/search-and-get-text-from-pdf/) - ページからテキストを検索して取得するためにTextFragmentAbsorberクラスを使用できます。
+- [改行を特定する](/pdf/ja/net/determine-line-break/) - このトピックでは、複数行のテキストフラグメントの改行を追跡する方法について説明します。
 
 <script type="application/ld+json">
 {

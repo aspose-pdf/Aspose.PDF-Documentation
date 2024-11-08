@@ -3,7 +3,7 @@ title: 複雑なPDFをAspose.PDFで作成する
 linktitle: 複雑なPDFを作成する
 type: docs
 weight: 30
-url: ja/androidjava/complex-pdf-example/
+url: /ja/androidjava/complex-pdf-example/
 description: Aspose.PDF for Android via Javaを使用すると、1つのドキュメントに画像、テキストフラグメント、テーブルを含むより複雑なドキュメントを作成できます。
 lastmod: "2021-06-05"
 sitemap:
@@ -11,8 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/java/hello-world-example/) の例では、JavaとAspose.PDFを使用してPDFドキュメントを作成する簡単なステップを示しました。この記事では、JavaとAspose.PDF for Javaを使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、架空の会社が運営する旅客フェリーサービスのドキュメントを取り上げます。
-私たちのドキュメントには、画像、2つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。このようなドキュメントを作成するために、DOMベースのアプローチを使用します。詳細は、[DOM APIの基本](/pdf/java/basics-of-dom-api/)のセクションで読むことができます。
+[Hello, World](/pdf/ja/java/hello-world-example/) の例では、JavaとAspose.PDFを使用してPDFドキュメントを作成する簡単なステップを示しました。この記事では、JavaとAspose.PDF for Javaを使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、架空の会社が運営する旅客フェリーサービスのドキュメントを取り上げます。
+私たちのドキュメントには、画像、2つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。このようなドキュメントを作成するために、DOMベースのアプローチを使用します。詳細は、[DOM APIの基本](/pdf/ja/java/basics-of-dom-api/)のセクションで読むことができます。
 
 ドキュメントをゼロから作成する場合、特定の手順に従う必要があります：
 

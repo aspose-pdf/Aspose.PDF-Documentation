@@ -2,7 +2,7 @@
 title: 调试信息
 type: docs
 weight: 90
-url: zh/reportingservices/debug-information/
+url: /zh/reportingservices/debug-information/
 lastmod: "2021-06-05"
 ---
 

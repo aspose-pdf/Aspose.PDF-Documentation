@@ -3,7 +3,7 @@ title: Rogner les Pages PDF en utilisant PHP
 linktitle: Rogner les Pages
 type: docs
 weight: 80
-url: fr/php-java/crop-pages/
+url: /fr/php-java/crop-pages/
 description: Vous pouvez obtenir les propriétés de la page, telles que la largeur, la hauteur, la boîte de fond perdu, de rognage et de découpe en utilisant Aspose.PDF pour PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

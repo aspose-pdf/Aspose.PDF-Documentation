@@ -2,7 +2,7 @@
 title: Copier le Champ Intérieur et Extérieur
 type: docs
 weight: 40
-url: fr/net/copy-inner-and-outer-field/
+url: /fr/net/copy-inner-and-outer-field/
 description: Cette section explique comment copier le Champ Intérieur et Extérieur avec Aspose.PDF Facades en utilisant la classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

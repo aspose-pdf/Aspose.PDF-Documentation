@@ -3,7 +3,7 @@ title: Working with Tables in PDF using C++
 linktitle: Working with Tables
 type: docs
 weight: 50
-url: es/cpp/working-with-tables/
+url: /es/cpp/working-with-tables/
 description: Esta sección describe cómo agregar y extraer una tabla, cómo manipular e integrar una tabla usando la biblioteca C++.
 lastmod: "2021-11-11"
 sitemap:
@@ -19,7 +19,7 @@ Y, por supuesto, tendrá que trabajar con dichas tablas.
 
 Usted es capaz de hacer lo siguiente:
 
-- [Crear o Agregar Tabla en un Documento PDF existente](/pdf/cpp/add-table-in-existing-pdf-document/) - cree su tabla en el archivo pdf con la combinación de columnas o filas considerando bordes, márgenes y relleno.
-- [Extract a Table from existing PDF Document](/pdf/cpp/extract-table-from-existing-pdf-document/) - puedes extraer una tabla de un archivo PDF o extraer el borde de la tabla como imagen.
-- [Manipulate Tables in existing PDF](/pdf/cpp/manipulate-tables-in-existing-pdf/) - manipula tablas en tu PDF usando TableAbsorber.
-- [Remove Tables from existing PDF](/pdf/cpp/remove-tables-from-existing-pdf/) - elimina una tabla o múltiples tablas de un documento PDF.
+- [Crear o Agregar Tabla en un Documento PDF existente](/pdf/es/cpp/add-table-in-existing-pdf-document/) - cree su tabla en el archivo pdf con la combinación de columnas o filas considerando bordes, márgenes y relleno.
+- [Extract a Table from existing PDF Document](/pdf/es/cpp/extract-table-from-existing-pdf-document/) - puedes extraer una tabla de un archivo PDF o extraer el borde de la tabla como imagen.
+- [Manipulate Tables in existing PDF](/pdf/es/cpp/manipulate-tables-in-existing-pdf/) - manipula tablas en tu PDF usando TableAbsorber.
+- [Remove Tables from existing PDF](/pdf/es/cpp/remove-tables-from-existing-pdf/) - elimina una tabla o múltiples tablas de un documento PDF.

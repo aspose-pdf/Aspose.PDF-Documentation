@@ -3,7 +3,7 @@ title: PDFにページスタンプを追加する
 linktitle: PDFファイルのページスタンプ
 type: docs
 weight: 30
-url: ja/java/page-stamps-in-the-pdf-file/
+url: /ja/java/page-stamps-in-the-pdf-file/
 description: JavaでPdfPageStampクラスを使用してPDFファイルにページスタンプを追加します。
 lastmod: "2021-09-10"
 sitemap:

@@ -2,7 +2,7 @@
 title: Ekspor Data ke XML dari File PDF (Fasad)
 type: docs
 weight: 20
-url: id/java/export-data-into-a-pdf-file-facades/
+url: /id/java/export-data-into-a-pdf-file-facades/
 description: Bagian ini menjelaskan cara mengekspor Data ke XML dari File PDF dengan Aspose.PDF Fasad menggunakan Kelas Form.
 lastmod: "2021-06-05"
 sitemap:

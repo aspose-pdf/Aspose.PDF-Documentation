@@ -3,7 +3,7 @@ title: كيفية دمج PDF باستخدام JavaScript عبر C++
 linktitle: دمج ملفات PDF
 type: docs
 weight: 20
-url: ar/javascript-cpp/merge-pdf/
+url: /ar/javascript-cpp/merge-pdf/
 description: تشرح هذه الصفحة كيفية دمج مستندات PDF في ملف PDF واحد باستخدام Aspose.PDF لـ JavaScript عبر C++ 
 lastmod: "2022-12-15"
 sitemap:

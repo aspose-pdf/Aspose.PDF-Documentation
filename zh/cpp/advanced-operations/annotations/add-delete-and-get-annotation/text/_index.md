@@ -3,7 +3,7 @@ title: PDF 文本注释
 Texttitle: 文本注释
 type: docs
 weight: 10
-url: zh/cpp/text-annotation/
+url: /zh/cpp/text-annotation/
 description: Aspose.PDF for C++ 允许您从 PDF 文档中添加、获取和删除文本注释。
 lastmod: "2021-11-24"
 sitemap:

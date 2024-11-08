@@ -3,7 +3,7 @@ title: Как подписать PDF цифровой подписью
 linktitle: Цифровая подпись PDF
 type: docs
 weight: 10
-url: ru/php-java/digitally-sign-pdf-file/
+url: /ru/php-java/digitally-sign-pdf-file/
 description: Подписывайте PDF документы с помощью Java. Проверьте или подтвердите цифровую подпись PDF с использованием Java приложения с библиотекой PDF. Вы можете сертифицировать PDF файл с помощью сертификата PKCS1.
 lastmod: "2024-06-05"
 sitemap:

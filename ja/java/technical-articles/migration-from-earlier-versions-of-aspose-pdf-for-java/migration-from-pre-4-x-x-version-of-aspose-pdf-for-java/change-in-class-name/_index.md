@@ -2,7 +2,7 @@
 title: クラス名の変更
 type: docs
 weight: 20
-url: ja/java/change-in-class-name/
+url: /ja/java/change-in-class-name/
 lastmod: "2022-01-27"
 ---
 

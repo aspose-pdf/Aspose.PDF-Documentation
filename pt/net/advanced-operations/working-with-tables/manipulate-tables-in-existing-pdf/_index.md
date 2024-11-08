@@ -3,7 +3,7 @@ title: Manipular Tabelas em PDF existente
 linktitle: Manipular Tabelas
 type: docs
 weight: 40
-url: pt/net/manipulate-tables-in-existing-pdf/
+url: /pt/net/manipulate-tables-in-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -78,7 +78,7 @@ sitemap:
 
 Uma das primeiras funcionalidades suportadas pelo Aspose.PDF para .NET é a sua capacidade de Trabalhar com Tabelas, oferecendo ótimo suporte para adicionar tabelas em arquivos PDF que estão sendo gerados do zero ou em qualquer arquivo PDF existente. Você também obtém a capacidade de Integrar Tabela com Banco de Dados (DOM) para criar tabelas dinâmicas baseadas em conteúdos de banco de dados. Neste novo lançamento, implementamos a nova funcionalidade de buscar e analisar tabelas simples que já existem na página do documento PDF. Uma nova classe chamada **Aspose.PDF.Text.TableAbsorber** fornece essas capacidades. O uso do TableAbsorber é muito semelhante à classe TextFragmentAbsorber existente. O seguinte trecho de código mostra os passos para atualizar conteúdos em uma célula de tabela específica.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET

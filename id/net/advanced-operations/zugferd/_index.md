@@ -3,7 +3,7 @@ title: Bekerja dengan ZUGFeRD
 linktitle: Bekerja dengan ZUGFeRD
 type: docs
 weight: 90
-url: id/net/working-with-zugferd/
+url: /id/net/working-with-zugferd/
 description: Pelajari cara membuat Faktur PDF yang sesuai dengan ZUGFeRD dalam C# di Aspose.PDF untuk .NET
 lastmod: "2023-09-27"
 sitemap:
@@ -27,9 +27,9 @@ Format ini menggabungkan dokumen PDF yang dapat dibaca oleh manusia dan file dat
 Ini juga memenuhi persyaratan hukum untuk arsip jangka panjang dan kepatuhan pajak. ZUGFeRD memiliki berbagai versi dan profil yang sesuai dengan kebutuhan dan skenario yang berbeda. Versi terbaru adalah ZUGFeRD 2.0, yang kompatibel dengan standar Eropa EN 16931 untuk faktur elektronik.
 ZUGFeRD menawarkan banyak manfaat dan penghematan biaya bagi pengguna, seperti pemrosesan lebih cepat, pengurangan kesalahan, arus kas yang lebih baik, dan dampak lingkungan yang lebih rendah.
 
-* [Membuat PDF/3-A compliant PDF dan melampirkan faktur ZUGFeRD di C#](/pdf/net/attach-zugferd/)
+* [Membuat PDF/3-A compliant PDF dan melampirkan faktur ZUGFeRD di C#](/pdf/id/net/attach-zugferd/)
 
 Lihat juga:
 
-* [Membuat PDF/3-A compliant PDF dan melampirkan faktur ZUGFeRD di Java](/pdf/java/attach-zugferd/)
-* [Membuat PDF/3-A compliant PDF dan melampirkan faktur ZUGFeRD di Python](/pdf/python-net/attach-zugferd/)
+* [Membuat PDF/3-A compliant PDF dan melampirkan faktur ZUGFeRD di Java](/pdf/id/java/attach-zugferd/)
+* [Membuat PDF/3-A compliant PDF dan melampirkan faktur ZUGFeRD di Python](/pdf/id/python-net/attach-zugferd/)

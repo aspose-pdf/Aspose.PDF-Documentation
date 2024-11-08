@@ -3,7 +3,7 @@ title: PDF 파일에 링크 생성
 linktitle: 링크 생성
 type: docs
 weight: 10
-url: ko/java/create-links/
+url: /ko/java/create-links/
 description: 이 섹션에서는 Java로 PDF 문서에 링크를 생성하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

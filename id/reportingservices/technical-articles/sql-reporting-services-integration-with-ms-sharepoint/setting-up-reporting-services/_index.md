@@ -2,7 +2,7 @@
 title: Mengatur Layanan Pelaporan
 type: docs
 weight: 20
-url: id/reportingservices/setting-up-reporting-services/
+url: /id/reportingservices/setting-up-reporting-services/
 lastmod: "2021-06-05"
 ---
 

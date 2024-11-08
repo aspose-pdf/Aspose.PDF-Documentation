@@ -3,7 +3,7 @@ title: Добавить объект Прямоугольник в PDF файл
 linktitle: Добавить Прямоугольник
 type: docs
 weight: 50
-url: ru/java/add-rectangle/
+url: /ru/java/add-rectangle/
 description: Эта статья объясняет, как создать объект Прямоугольник в вашем PDF с помощью Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 使用图像放置
 linktitle: 图像放置
 type: docs
 weight: 50
-url: zh/java/working-with-image-placement/
+url: /zh/java/working-with-image-placement/
 description: 本节介绍使用Java库处理图像放置PDF文件的功能。
 lastmod: "2021-06-05"
 ---

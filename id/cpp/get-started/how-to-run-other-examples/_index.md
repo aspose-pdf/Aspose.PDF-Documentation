@@ -3,7 +3,7 @@ title: How to run other Aspose.PDF for C++ examples
 linktitle: How to run other examples
 type: docs
 weight: 50
-url: id/cpp/how-to-run-other-examples/
+url: /id/cpp/how-to-run-other-examples/
 description: Halaman ini menunjukkan pedoman yang akan membantu persyaratan berikut sebelum mengunduh dan menjalankan contoh.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ Pastikan Anda memenuhi persyaratan berikut sebelum mengunduh dan menjalankan con
 1. Microsoft Visual Studio 2017 atau yang lebih baru.
 1. NuGet Package Manager terinstal di Visual Studio. Pastikan bahwa versi API NuGet terbaru terinstal di Visual Studio. Untuk detail tentang cara menginstal NuGet package manager silakan cek <http://docs.nuget.org/ndocs/guides/install-nuget>
 1. Pergi ke `Tools->Options->NuGet Package Manager->Package Sources` dan pastikan bahwa opsi **nuget.org** dicentang
-1. Example project menggunakan fitur Pemulihan Paket Otomatis NuGet oleh karena itu Anda harus memiliki koneksi internet yang aktif. Jika Anda tidak memiliki koneksi internet yang aktif pada mesin di mana contoh akan dijalankan, silakan periksa [Instalasi](/pdf/cpp/installation/) dan tambahkan referensi secara manual ke Aspose.PDF.dll dalam proyek contoh.
+1. Example project menggunakan fitur Pemulihan Paket Otomatis NuGet oleh karena itu Anda harus memiliki koneksi internet yang aktif. Jika Anda tidak memiliki koneksi internet yang aktif pada mesin di mana contoh akan dijalankan, silakan periksa [Instalasi](/pdf/id/cpp/installation/) dan tambahkan referensi secara manual ke Aspose.PDF.dll dalam proyek contoh.
 
 ## Unduh dari GitHub
 

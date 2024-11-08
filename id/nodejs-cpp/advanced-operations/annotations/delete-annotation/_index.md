@@ -3,7 +3,7 @@ title: Hapus Anotasi di Node.js
 linktitle: Hapus Anotasi
 type: docs
 weight: 10
-url: id/nodejs-cpp/delete-annotation/
+url: /id/nodejs-cpp/delete-annotation/
 description: Dengan Aspose.PDF untuk Node.js Anda dapat menghapus anotasi dari file PDF Anda.
 lastmod: "2023-11-16"
 sitemap:

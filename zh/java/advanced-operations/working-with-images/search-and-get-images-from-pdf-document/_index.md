@@ -3,7 +3,7 @@ title: 从 PDF 文档中搜索和获取图像
 linktitle: 搜索和获取图像
 type: docs
 weight: 60
-url: zh/java/search-and-get-images-from-pdf-document/
+url: /zh/java/search-and-get-images-from-pdf-document/
 description: 本节解释如何使用 Aspose.PDF for Java 库从 PDF 文档中搜索和获取图像。
 lastmod: "2021-06-05"
 ---

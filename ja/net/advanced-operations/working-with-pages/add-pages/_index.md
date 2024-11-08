@@ -3,7 +3,7 @@ title: PDFドキュメントにページを追加する
 linktitle: ページを追加
 type: docs
 weight: 10
-url: ja/net/add-pages/
+url: /ja/net/add-pages/
 description: この記事では、PDFファイルの希望の位置にページを挿入（追加）する方法を学びます。C#を使用してPDFファイルからページを移動、削除（削除）する方法についても説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ Aspose.PDF for .NETでは、ファイルの任意の位置にPDFドキュメン�
 
 Aspose.PDF for .NETでは、ファイルの任意の位置にPDFドキュメントにページを挿入したり、PDFファイルの末尾にページを追加することができます。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ### PDFファイルの望ましい位置に空ページを挿入する
 

@@ -3,7 +3,7 @@ title: Aspose.PDF 対応ファイル形式
 linktitle: 対応ファイル形式
 type: docs
 weight: 10
-url: ja/androidjava/supported-file-formats/
+url: /ja/androidjava/supported-file-formats/
 description: このページは、Aspose.PDF for Android via Java がどのファイル形式を読み込みおよび保存できるかを示しています。
 lastmod: "2021-06-05"
 sitemap:

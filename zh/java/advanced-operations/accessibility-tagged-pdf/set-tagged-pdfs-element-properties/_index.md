@@ -3,7 +3,7 @@ title: 设置标记 PDF 中的结构元素属性
 linktitle: 设置结构元素属性
 type: docs
 weight: 30
-url: zh/java/set-tagged-pdfs-element-properties/
+url: /zh/java/set-tagged-pdfs-element-properties/
 description: 使用 Aspose.PDF for Java，您可以设置不同的结构元素属性。有设置文本块结构元素、设置内联结构元素、将结构元素添加到元素中等。
 lastmod: "2021-06-05"
 sitemap:

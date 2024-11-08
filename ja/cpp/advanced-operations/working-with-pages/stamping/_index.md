@@ -3,7 +3,7 @@ title: Aspose.PDFを使用したC++でのスタンピング
 linktitle: スタンピング
 type: docs
 weight: 120
-url: ja/cpp/stamping/
+url: /ja/cpp/stamping/
 description: このセクションでは、PDFページに画像スタンプとテキストスタンプを追加する方法について説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -15,6 +15,6 @@ PDFドキュメントのスタンプは、紙のドキュメントにゴム印�
 
 C++でスタンプを追加する方法を学ぶには、次のセクションを確認してください：
 
-- [PDFページに画像スタンプを追加](/pdf/cpp/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを使用します。
+- [PDFページに画像スタンプを追加](/pdf/ja/cpp/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを使用します。
 
-- [PDFファイルにテキストスタンプを追加](/pdf/cpp/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、スタンプとしてPDFファイルにストロークテキストを塗りつぶします。
+- [PDFファイルにテキストスタンプを追加](/pdf/ja/cpp/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、スタンプとしてPDFファイルにストロークテキストを塗りつぶします。

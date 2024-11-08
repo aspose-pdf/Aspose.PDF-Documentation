@@ -3,7 +3,7 @@ title: البحث والحصول على النص من صفحات مستند PDF
 linktitle: البحث والحصول على النص
 type: docs
 weight: 60
-url: ar/java/search-and-get-text-from-pdf/
+url: /ar/java/search-and-get-text-from-pdf/
 description: توضح هذه المقالة كيفية استخدام أدوات مختلفة للبحث والحصول على نص من مستندات PDF. يمكننا البحث باستخدام التعبير العادي من صفحات معينة أو كاملة.
 lastmod: "2021-06-05"
 sitemap:

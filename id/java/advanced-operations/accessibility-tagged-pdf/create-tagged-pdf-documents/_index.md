@@ -4,7 +4,7 @@ linktitle: Membuat PDF Bertag
 type: docs
 weight: 10
 lastmod: "2021-06-05"
-url: id/java/create-tagged-pdf-documents/
+url: /id/java/create-tagged-pdf-documents/
 description: Artikel ini menjelaskan cara membuat elemen struktur untuk dokumen PDF bertag secara programatis menggunakan Aspose.PDF untuk Java.
 sitemap:
     changefreq: "weekly"

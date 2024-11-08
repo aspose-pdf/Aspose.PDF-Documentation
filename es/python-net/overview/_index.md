@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: es/python-net/overview/
+url: /es/python-net/overview/
 lastmod: "2022-12-20"
 description: Descripción general de las características clave y formatos compatibles de Aspose.PDF para Python a través de .NET, manual de instalación y licenciamiento de la biblioteca.
 sitemap:
@@ -31,9 +31,9 @@ Prueba nuestras [Aplicaciones en Línea Gratis](https://products.aspose.app/pdf/
 
 Aprende más sobre:  
 
-- [Formatos de Archivo Soportados](/pdf/python-net/supported-file-formats/)  
-- [Características Clave de Aspose.PDF](/pdf/python-net/key-features/)  
-- [Requisitos del Sistema](/pdf/python-net/system-requirements/)  
-- [Instalación](/pdf/python-net/installation/)  
-- [Licenciamiento](/pdf/python-net/licensing/)  
-- [Soporte Técnico](/pdf/python-net/technical-support/)
+- [Formatos de Archivo Soportados](/pdf/es/python-net/supported-file-formats/)  
+- [Características Clave de Aspose.PDF](/pdf/es/python-net/key-features/)  
+- [Requisitos del Sistema](/pdf/es/python-net/system-requirements/)  
+- [Instalación](/pdf/es/python-net/installation/)  
+- [Licenciamiento](/pdf/es/python-net/licensing/)  
+- [Soporte Técnico](/pdf/es/python-net/technical-support/)

@@ -3,7 +3,7 @@ title: C#을 사용하여 PDF 페이지 회전
 linktitle: PDF 페이지 회전
 type: docs
 weight: 50
-url: ko/net/rotate-pages/
+url: /ko/net/rotate-pages/
 description: 이 주제는 기존 PDF 파일에서 페이지 방향을 프로그래밍 방식으로 회전하는 방법에 대해 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 이 주제는 기존 PDF 파일에서 페이지 방향을 프로그래밍 방식으로 업데이트하거나 변경하는 방법에 대해 설명합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## 페이지 방향 변경
 

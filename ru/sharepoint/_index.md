@@ -9,7 +9,7 @@ type: docs
 
 weight: 110
 
-url: ru/sharepoint/
+url: /ru/sharepoint/
 
 is_root: true
 
@@ -33,20 +33,20 @@ Aspose.PDF для SharePoint — это решение, которое позв�
 
 Ниже приведены ссылки на некоторые полезные ресурсы, которые могут понадобиться вам для выполнения ваших задач.
 
-- [Обзор продукта Aspose.PDF для SharePoint](/pdf/sharepoint/product-overview/)
+- [Обзор продукта Aspose.PDF для SharePoint](/pdf/ru/sharepoint/product-overview/)
 
-- [Поддерживаемые форматы файлов Aspose.PDF для SharePoint](/pdf/sharepoint/supported-file-formats/)
+- [Поддерживаемые форматы файлов Aspose.PDF для SharePoint](/pdf/ru/sharepoint/supported-file-formats/)
 
-- [Функции Aspose.PDF для SharePoint](/pdf/sharepoint/features/)```
+- [Функции Aspose.PDF для SharePoint](/pdf/ru/sharepoint/features/)```
 
 - [Aspose.PDF для SharePoint Заметки о выпуске](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 
 - [Скачать Aspose.PDF для SharePoint](https://releases.aspose.com/pdf/sharepoint/)
 
-- [Установить Aspose.Pdf для SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Установить Aspose.Pdf для SharePoint](/pdf/ru/sharepoint/install-aspose-pdf-for-sharepoint/)
 
-- [Оценить Aspose.Pdf](/pdf/sharepoint/evaluate-aspose-pdf/)
+- [Оценить Aspose.Pdf](/pdf/ru/sharepoint/evaluate-aspose-pdf/)
 
-- [Лицензировать Aspose.Pdf для SharePoint](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Лицензировать Aspose.Pdf для SharePoint](/pdf/ru/sharepoint/license-aspose-pdf-for-sharepoint/)
 
-- [Ограничения API](/pdf/sharepoint/api-limitations/)
+- [Ограничения API](/pdf/ru/sharepoint/api-limitations/)

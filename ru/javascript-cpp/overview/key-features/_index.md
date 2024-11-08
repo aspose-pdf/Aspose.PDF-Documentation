@@ -3,7 +3,7 @@ title: Основные возможности Aspose.PDF для JavaScript
 linktitle: Основные возможности
 type: docs
 weight: 20
-url: ru/javascript-cpp/key-features/
+url: /ru/javascript-cpp/key-features/
 description: Aspose.PDF для JavaScript через C++ демонстрирует свои общие возможности. Эта страница описывает поддерживаемые версии PDF и все манипуляции, которые мы можем выполнять с текстом, изображениями, страницами и т.д.
 lastmod: "2022-12-13"
 sitemap:

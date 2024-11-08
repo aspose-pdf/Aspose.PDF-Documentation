@@ -3,7 +3,7 @@ title: プログラムでPDFページを削除する
 linktitle: PDFページを削除する
 type: docs
 weight: 30
-url: ja/cpp/delete-pages/
+url: /ja/cpp/delete-pages/
 description: C++ライブラリを使用してPDFファイルからページを削除できます。
 lastmod: "2021-12-09"
 sitemap:

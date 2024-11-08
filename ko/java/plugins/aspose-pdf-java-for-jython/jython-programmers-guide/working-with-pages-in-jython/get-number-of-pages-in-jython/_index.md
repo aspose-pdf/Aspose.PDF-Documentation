@@ -2,7 +2,7 @@
 title: Jython에서 페이지 수 가져오기
 type: docs
 weight: 30
-url: ko/java/get-number-of-pages-in-jython/
+url: /ko/java/get-number-of-pages-in-jython/
 lastmod: "2021-06-05"
 ---
 

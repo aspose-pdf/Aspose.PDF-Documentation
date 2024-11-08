@@ -3,7 +3,7 @@ title: PDF 페이지 이동
 linktitle: PDF 페이지 이동
 type: docs
 weight: 20
-url: ko/php-java/move-pages/
+url: /ko/php-java/move-pages/
 description: Aspose.PDF for PHP via Java를 사용하여 원하는 위치나 PDF 파일의 끝으로 페이지를 이동해 보세요.
 lastmod: "2024-06-05"
 sitemap:

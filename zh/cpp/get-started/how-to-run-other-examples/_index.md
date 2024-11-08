@@ -3,7 +3,7 @@ title: 如何运行其他 Aspose.PDF for C++ 示例
 linktitle: 如何运行其他示例
 type: docs
 weight: 50
-url: zh/cpp/how-to-run-other-examples/
+url: /zh/cpp/how-to-run-other-examples/
 description: 本页展示了在下载和运行示例之前会有帮助的指南。
 lastmod: "2021-06-05"
 sitemap:
@@ -17,7 +17,7 @@ sitemap:
 
 1. Microsoft Visual Studio 2017 或更高版本。
 1. 在 Visual Studio 中安装了 NuGet 包管理器。确保在 Visual Studio 中安装了最新的 NuGet API 版本。有关如何安装 NuGet 包管理器的详细信息，请查看 <http://docs.nuget.org/ndocs/guides/install-nuget>
-1. 转到 `工具->选项->NuGet 包管理器->包源` 并确保选中选项 **nuget.org** 示例项目使用NuGet自动包还原功能，因此您应该有一个活动的互联网连接。如果您在要执行示例的计算机上没有活动的互联网连接，请检查[安装](/pdf/cpp/installation/)并在示例项目中手动添加对Aspose.PDF.dll的引用。
+1. 转到 `工具->选项->NuGet 包管理器->包源` 并确保选中选项 **nuget.org** 示例项目使用NuGet自动包还原功能，因此您应该有一个活动的互联网连接。如果您在要执行示例的计算机上没有活动的互联网连接，请检查[安装](/pdf/zh/cpp/installation/)并在示例项目中手动添加对Aspose.PDF.dll的引用。
 
 ## 从GitHub下载
 

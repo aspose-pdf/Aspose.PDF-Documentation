@@ -8,7 +8,7 @@ type: docs
 
 weight: 40
 
-url: ko/python-net/installation/
+url: /ko/python-net/installation/
 
 description: 이 섹션은 Aspose.PDF for Python의 제품 설명과 설치 지침을 보여줍니다.
 
@@ -41,7 +41,7 @@ sitemap:
 
 Aspose.PDF for Python을 쉽게 다운로드하여 평가할 수 있습니다. 평가 다운로드는 구매 다운로드와 동일합니다. 평가 버전은 라이센스를 적용하기 위해 몇 줄의 코드를 추가하면 간단히 라이센스가 부여됩니다.
 
-[Aspose.PDF for Python](https://releases.aspose.com/pdf/pythonnet/)을 평가를 위해 다운로드할 수 있습니다. 평가 다운로드는 구매 다운로드와 동일합니다. 평가 버전은 [라이센스를 적용](/pdf/python-net/licensing/)하기 위해 몇 줄의 코드를 추가하면 라이센스가 부여됩니다.
+[Aspose.PDF for Python](https://releases.aspose.com/pdf/pythonnet/)을 평가를 위해 다운로드할 수 있습니다. 평가 다운로드는 구매 다운로드와 동일합니다. 평가 버전은 [라이센스를 적용](/pdf/ko/python-net/licensing/)하기 위해 몇 줄의 코드를 추가하면 라이센스가 부여됩니다.
 
 라이센스가 지정되지 않은 Aspose.PDF의 평가 버전은 전체 제품 기능을 제공하지만 두 가지 제한이 있습니다: 평가 워터마크가 삽입되며, 모든 컬렉션의 네 가지 요소만 볼 수 있거나 편집할 수 있습니다.
 {{% alert color="primary" %}}

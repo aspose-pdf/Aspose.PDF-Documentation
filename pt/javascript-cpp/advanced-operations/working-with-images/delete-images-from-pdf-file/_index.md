@@ -3,7 +3,7 @@ title: Excluir Imagens de Arquivo PDF via JavaScript
 linktitle: Excluir Imagens
 type: docs
 weight: 20
-url: pt/javascript-cpp/delete-images-from-pdf-file/
+url: /pt/javascript-cpp/delete-images-from-pdf-file/
 description: Esta seção explica como excluir imagens de um arquivo PDF usando Aspose.PDF para JavaScript.
 lastmod: "2022-02-17"
 ---

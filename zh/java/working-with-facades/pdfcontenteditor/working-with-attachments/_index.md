@@ -2,7 +2,7 @@
 title: 使用附件
 type: docs
 weight: 50
-url: zh/java/working-with-attachments/
+url: /zh/java/working-with-attachments/
 description: 本节解释如何使用 Aspose.PDF Facades 工具在 PDF 中处理附件，该工具适用于 PDF 的常用操作。
 lastmod: "2021-06-24"
 sitemap:

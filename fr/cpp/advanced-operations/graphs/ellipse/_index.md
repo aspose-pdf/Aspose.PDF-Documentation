@@ -3,7 +3,7 @@ title: Ajouter un objet Ellipse au fichier PDF
 linktitle: Ajouter Ellipse
 type: docs
 weight: 60
-url: fr/cpp/add-ellipse/
+url: /fr/cpp/add-ellipse/
 description: Cet article explique comment créer un objet Ellipse dans votre PDF en utilisant Aspose.PDF pour C++.
 lastmod: "2021-12-21"
 sitemap:

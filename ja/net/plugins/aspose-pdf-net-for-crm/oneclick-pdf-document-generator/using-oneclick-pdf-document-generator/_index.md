@@ -2,7 +2,7 @@
 title: OneClick PDFドキュメントジェネレータの使用
 type: docs
 weight: 10
-url: ja/net/using-oneclick-pdf-document-generator/
+url: /ja/net/using-oneclick-pdf-document-generator/
 description: Microsoft DynamicsでAspose.PDF OneClick PDFドキュメントジェネレータを使用する方法を学ぶ
 lastmod: "2021-06-05"
 sitemap:

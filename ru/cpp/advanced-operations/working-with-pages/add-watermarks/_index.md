@@ -3,7 +3,7 @@ title: Добавить водяной знак в PDF с использован
 linktitle: Добавить водяной знак
 type: docs
 weight: 90
-url: ru/cpp/add-watermarks/
+url: /ru/cpp/add-watermarks/
 description: В этой статье объясняются функции работы с артефактами и получения водяных знаков в PDF программным способом с использованием C++.
 lastmod: "2021-12-08"
 sitemap:

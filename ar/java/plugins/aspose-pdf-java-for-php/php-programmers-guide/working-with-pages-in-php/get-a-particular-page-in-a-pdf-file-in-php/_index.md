@@ -2,7 +2,7 @@
 title: احصل على صفحة معينة في ملف PDF باستخدام PHP
 type: docs
 weight: 30
-url: ar/java/get-a-particular-page-in-a-pdf-file-in-php/
+url: /ar/java/get-a-particular-page-in-a-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

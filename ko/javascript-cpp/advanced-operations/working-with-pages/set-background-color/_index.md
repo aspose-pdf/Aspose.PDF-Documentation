@@ -3,7 +3,7 @@ title: JavaScript를 통해 C++로 PDF의 배경색 설정
 linktitle: 배경색 설정
 type: docs
 weight: 80
-url: ko/javascript-cpp/set-background-color/
+url: /ko/javascript-cpp/set-background-color/
 description: JavaScript를 통해 C++로 PDF 파일의 배경색을 설정합니다.
 lastmod: "2023-02-17"
 sitemap:

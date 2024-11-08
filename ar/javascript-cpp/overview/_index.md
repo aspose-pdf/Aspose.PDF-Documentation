@@ -3,7 +3,7 @@ title: نظرة عامة
 linktitle: نظرة عامة
 type: docs
 weight: 20
-url: ar/javascript-cpp/overview/
+url: /ar/javascript-cpp/overview/
 description: نظرة عامة على الميزات الرئيسية والصيغ المدعومة لـ Aspose.PDF لـ JavaScript عبر C++، دليل التثبيت والترخيص.
 lastmod: "2022-12-13"
 sitemap:
@@ -34,9 +34,9 @@ _هذه الصفحة هي نظرة عامة على ميزات Aspose.PDF لـ Ja
 
 تعرف على المزيد حول:
 
-- [تنسيقات الملفات المدعومة](/pdf/javascript-cpp/supported-file-formats/)
-- [الميزات الرئيسية لـ Aspose.PDF](/pdf/javascript-cpp/key-features/)
-- [متطلبات النظام](/pdf/javascript-cpp/system-requirements/)
-- [التثبيت](/pdf/javascript-cpp/installation/)
-- [التراخيص](/pdf/javascript-cpp/licensing/)
-- [الدعم الفني](/pdf/javascript-cpp/technical-support/)
+- [تنسيقات الملفات المدعومة](/pdf/ar/javascript-cpp/supported-file-formats/)
+- [الميزات الرئيسية لـ Aspose.PDF](/pdf/ar/javascript-cpp/key-features/)
+- [متطلبات النظام](/pdf/ar/javascript-cpp/system-requirements/)
+- [التثبيت](/pdf/ar/javascript-cpp/installation/)
+- [التراخيص](/pdf/ar/javascript-cpp/licensing/)
+- [الدعم الفني](/pdf/ar/javascript-cpp/technical-support/)

@@ -3,7 +3,7 @@ title: Convert Text to PDF
 linktitle: Convert Text to PDF
 type: docs
 weight: 300
-url: id/androidjava/convert-text-to-pdf/
+url: /id/androidjava/convert-text-to-pdf/
 lastmod: "2021-06-05"
 description: Aspose.PDF untuk Android via Java memungkinkan Anda untuk mengonversi file teks biasa ke PDF atau mengonversi file teks yang telah diformat sebelumnya ke PDF.
 sitemap:

@@ -2,7 +2,7 @@
 title: Optimizer 
 type: docs
 weight: 80
-url: ja/net/plugins/optimizer/
+url: /ja/net/plugins/optimizer/
 description: Aspose.PDF Optimizerを使用してPDFファイルの最適化と操作を行う方法
 lastmod: "2024-01-24"
 ---

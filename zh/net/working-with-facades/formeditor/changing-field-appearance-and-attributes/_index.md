@@ -2,7 +2,7 @@
 title: 字段外观和属性
 type: docs
 weight: 20
-url: zh/net/changing-field-appearance-and-attributes/
+url: /zh/net/changing-field-appearance-and-attributes/
 description: 本节解释如何使用FormEditor类更改字段外观和属性。
 lastmod: "2021-06-05"
 draft: false

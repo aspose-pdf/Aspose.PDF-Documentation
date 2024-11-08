@@ -3,7 +3,7 @@ title: Modifing AcroForm
 linktitle: Modifing AcroForm
 type: docs
 weight: 40
-url: ru/net/modifing-form/
+url: /ru/net/modifing-form/
 description: Изменение формы в вашем PDF-файле с помощью библиотеки Aspose.PDF для .NET. Вы можете добавлять или удалять поля в существующей форме, получать и устанавливать лимит поля и т.д.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Изменение формы в вашем PDF-файле с помощью библиотеки Aspose.PDF для .NET. Вы можете добавлять или удалять поля в существующей форме, получать и устанавливать лимит поля и т.д."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Получение или установка лимита поля
 

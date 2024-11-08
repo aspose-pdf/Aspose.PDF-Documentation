@@ -3,7 +3,7 @@ title: Formateo de Texto dentro de PDF usando C++
 linktitle: Formateo de Texto dentro de PDF
 type: docs
 weight: 30
-url: es/cpp/text-formatting-inside-pdf/
+url: /es/cpp/text-formatting-inside-pdf/
 description: Esta página explica cómo formatear texto dentro de su archivo PDF. Hay agregar sangría de línea, agregar borde de texto, agregar subrayado de texto, agregar un borde alrededor del texto agregado, alineación de texto para contenidos de cuadro flotante, etc.
 lastmod: "2021-12-13"
 sitemap:

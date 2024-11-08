@@ -3,7 +3,7 @@ title: 将PDF转换为Microsoft Word文档在C++
 linktitle: 将PDF转换为Word
 type: docs
 weight: 10
-url: zh/cpp/convert-pdf-to-word/
+url: /zh/cpp/convert-pdf-to-word/
 lastmod: "2021-11-19"
 description: Aspose.PDF for C++库允许您使用C++轻松且完全控制地将PDF转换为Word格式。这些格式包括DOC和DOCX。了解更多关于如何调整PDF到Microsoft Word文档的转换。
 sitemap:

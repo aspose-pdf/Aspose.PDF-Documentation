@@ -3,7 +3,7 @@ title: Aspose.PDF for C++를 사용하여 XFDF 형식으로 주석 가져오기 
 linktitle: XFDF 형식으로 주석 가져오기 및 내보내기
 type: docs
 weight: 40
-url: ko/cpp/import-export-xfdf/
+url: /ko/cpp/import-export-xfdf/
 description: C++ 및 Aspose.PDF for C++ 라이브러리를 사용하여 XFDF 형식으로 주석을 가져오고 내보낼 수 있습니다.
 lastmod: "2021-12-02"
 sitemap:

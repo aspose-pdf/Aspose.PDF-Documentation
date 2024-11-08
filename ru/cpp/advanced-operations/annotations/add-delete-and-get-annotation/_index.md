@@ -3,7 +3,7 @@ title: Добавление, удаление и получение аннота
 type: docs
 linktitle: Добавление, удаление и получение аннотации
 weight: 20
-url: ru/cpp/add-delete-and-get-annotation/
+url: /ru/cpp/add-delete-and-get-annotation/
 description: С Aspose.PDF для C++ вы можете добавлять, удалять и получать аннотации из вашего PDF файла. Проверьте все списки аннотаций для решения вашей задачи.
 lastmod: "2021-11-24"
 sitemap:
@@ -17,12 +17,12 @@ sitemap:
 
 Мы объединили различные виды аннотаций, доступные для библиотеки Aspose.PDF для C++, в группы:
 
-- [Аннотация текста в PDF](/pdf/cpp/text-annotation/)
-- [Аннотация выделения в PDF](/pdf/cpp/highlights-annotation/)
-- [Аннотация фигур в PDF](/pdf/cpp/figures-annotation/)
+- [Аннотация текста в PDF](/pdf/ru/cpp/text-annotation/)
+- [Аннотация выделения в PDF](/pdf/ru/cpp/highlights-annotation/)
+- [Аннотация фигур в PDF](/pdf/ru/cpp/figures-annotation/)
 
-- [Мультимедийная аннотация](/pdf/cpp/multimedia-annotation/)
+- [Мультимедийная аннотация](/pdf/ru/cpp/multimedia-annotation/)
 
-- [Дополнительные Аннотации](/pdf/cpp/extra-annotations/)
-- [Липкая Аннотация](/pdf/cpp/sticky-annotations/)
+- [Дополнительные Аннотации](/pdf/ru/cpp/extra-annotations/)
+- [Липкая Аннотация](/pdf/ru/cpp/sticky-annotations/)
 ```

@@ -3,7 +3,7 @@ title: Ajouter une signature numérique ou signer numériquement un PDF en JavaS
 linktitle: Signer numériquement un PDF
 type: docs
 weight: 70
-url: fr/javascript-cpp/sign-pdf/
+url: /fr/javascript-cpp/sign-pdf/
 description: Signer numériquement des documents PDF en utilisant JavaScript via C++.
 lastmod: "2023-02-17"
 sitemap:

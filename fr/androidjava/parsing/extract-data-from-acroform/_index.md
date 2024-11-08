@@ -3,7 +3,7 @@ title:  Extraire des données d'AcroForm
 linktitle:  Extraire des données d'AcroForm
 type: docs
 weight: 50
-url: fr/androidjava/extract-data-from-acroform/
+url: /fr/androidjava/extract-data-from-acroform/
 description: Les AcroForms existent dans de nombreux documents PDF. Cet article vise à vous aider à comprendre comment extraire des données d'AcroForms avec Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

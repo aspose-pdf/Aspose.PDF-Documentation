@@ -4,7 +4,7 @@ title: استخراج فقرة من PDF
 linktitle: استخراج فقرة من PDF
 type: docs
 weight: 20
-url: ar/cpp/extract-paragraph-from-pdf/
+url: /ar/cpp/extract-paragraph-from-pdf/
 description: تصف هذه المقالة كيفية استخدام ParagraphAbsorber - أداة خاصة في Aspose.PDF لاستخراج النص من مستندات PDF.
 lastmod: "2021-12-13"
 sitemap:

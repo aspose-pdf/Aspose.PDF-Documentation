@@ -2,7 +2,7 @@
 title: تغيير في أسماء الأساليب
 type: docs
 weight: 10
-url: ar/java/change-in-methods-name/
+url: /ar/java/change-in-methods-name/
 lastmod: "2022-01-27"
 ---
 

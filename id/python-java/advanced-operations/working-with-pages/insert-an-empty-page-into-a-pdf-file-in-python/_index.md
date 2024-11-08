@@ -2,7 +2,7 @@
 title: Menyisipkan Halaman Kosong ke dalam File PDF di Python
 type: docs
 weight: 70
-url: id/python-java/insert-an-empty-page-into-a-pdf-file-in-python/
+url: /id/python-java/insert-an-empty-page-into-a-pdf-file-in-python/
 ---
 
 <ins>Untuk Menyisipkan Halaman Kosong ke dalam dokumen Pdf menggunakan **Aspose.PDF Java untuk Python**, cukup panggil kelas **InsertEmptyPage**.

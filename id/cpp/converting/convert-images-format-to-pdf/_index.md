@@ -3,7 +3,7 @@ title: Mengonversi berbagai format Gambar ke PDF
 linktitle: Konversi Gambar ke PDF
 type: docs
 weight: 60
-url: id/cpp/convert-images-format-to-pdf/
+url: /id/cpp/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: Topik ini menunjukkan bagaimana pustaka Aspose.PDF untuk C++ memungkinkan untuk mengonversi berbagai format gambar ke PDF.
 sitemap:

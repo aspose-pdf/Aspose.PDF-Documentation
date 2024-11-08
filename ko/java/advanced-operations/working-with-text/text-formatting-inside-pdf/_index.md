@@ -3,7 +3,7 @@ title: PDF 내 텍스트 서식
 linktitle: PDF 내 텍스트 서식
 type: docs
 weight: 30
-url: ko/java/text-formatting-inside-pdf/
+url: /ko/java/text-formatting-inside-pdf/
 description: 이 페이지는 PDF 파일 내에서 텍스트를 서식화하는 방법을 설명합니다. 줄 들여쓰기 추가, 텍스트 경계 추가, 밑줄 텍스트 추가, 추가된 텍스트 주위에 경계 추가, 플로팅 박스 내용의 텍스트 정렬 등을 포함합니다.
 lastmod: "2021-06-05"
 sitemap:

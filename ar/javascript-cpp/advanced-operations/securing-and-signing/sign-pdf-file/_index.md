@@ -3,7 +3,7 @@ title: إضافة توقيع رقمي أو توقيع PDF رقميًا في Java
 linktitle: توقيع PDF رقميًا
 type: docs
 weight: 70
-url: ar/javascript-cpp/sign-pdf/
+url: /ar/javascript-cpp/sign-pdf/
 description: توقيع مستندات PDF رقميًا باستخدام JavaScript عبر C++.
 lastmod: "2023-02-17"
 sitemap:

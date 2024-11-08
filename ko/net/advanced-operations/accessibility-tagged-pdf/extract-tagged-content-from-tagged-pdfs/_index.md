@@ -3,7 +3,7 @@ title: PDF에서 태그된 콘텐츠 추출
 linktitle: 태그된 콘텐츠 추출
 type: docs
 weight: 20
-url: ko/net/extract-tagged-content-from-tagged-pdfs/
+url: /ko/net/extract-tagged-content-from-tagged-pdfs/
 description: 이 글은 Aspose.PDF for .NET을 사용하여 PDF 문서에서 태그된 콘텐츠를 추출하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 이 문서에서는 C#을 사용하여 태그가 지정된 콘텐츠 PDF 문서를 추출하는 방법을 배우게 됩니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## 태그된 PDF 콘텐츠 가져오기
 

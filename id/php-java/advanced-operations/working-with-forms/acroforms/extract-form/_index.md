@@ -3,7 +3,7 @@ title: Ekstrak Data AcroForms
 linktitle: Ekstrak Data AcroForms
 type: docs
 weight: 30
-url: id/php-java/extract-form/
+url: /id/php-java/extract-form/
 description: Bagian ini menjelaskan cara mengekstrak formulir dari dokumen PDF Anda dengan Aspose.PDF untuk PHP melalui Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: 设置现有PDF文件的查看器偏好
 type: docs
 weight: 60
-url: zh/java/set-viewer-preference-of-an-existing-pdf-file/
+url: /zh/java/set-viewer-preference-of-an-existing-pdf-file/
 description: 本节介绍如何使用PdfContentEditor类与Aspose.PDF Facades进行操作。
 lastmod: "2021-06-05"
 draft: false

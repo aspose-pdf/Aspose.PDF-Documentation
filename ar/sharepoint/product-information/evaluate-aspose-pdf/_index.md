@@ -4,7 +4,7 @@ title: تقييم Aspose.Pdf لـ SharePoint
 
 linktitle: تقييم
 
-url: ar/sharepoint/evaluate-aspose-pdf/
+url: /ar/sharepoint/evaluate-aspose-pdf/
 
 lastmod: "2020-12-16"
 

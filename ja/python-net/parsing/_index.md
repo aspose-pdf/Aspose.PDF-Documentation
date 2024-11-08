@@ -3,7 +3,7 @@ title: PDFドキュメントを解析する
 linktitle: PDFドキュメントを解析する
 type: docs
 weight: 80
-url: ja/python-net/parsing/
+url: /ja/python-net/parsing/
 description: PDFドキュメントを解析したいですか？Aspose.PDF for Python via .NETを使用したさまざまなPDFデータ抽出方法を発見してください。
 lastmod: "2021-06-05"
 sitemap:

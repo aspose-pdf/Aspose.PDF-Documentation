@@ -3,7 +3,7 @@ title: PDFページをプログラムで回転
 linktitle: PDFページを回転
 type: docs
 weight: 60
-url: ja/php-java/rotate-pages/
+url: /ja/php-java/rotate-pages/
 description: Javaを使用してページの向きを変更し、新しいページの向きに合わせてページコンテンツを調整します。
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: كيفية توقيع PDF رقميًا
 linktitle: التوقيع الرقمي PDF
 type: docs
 weight: 10
-url: ar/php-java/digitally-sign-pdf-file/
+url: /ar/php-java/digitally-sign-pdf-file/
 description: توقيع مستندات PDF رقميًا باستخدام Java. تحقق أو تحقق من التوقيعات الرقمية لـ PDF باستخدام تطبيق قائم على Java مع مكتبة PDF. يمكنك اعتماد ملف PDF بشهادة PKCS1.
 lastmod: "2024-06-05"
 sitemap:

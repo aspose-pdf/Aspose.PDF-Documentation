@@ -4,7 +4,7 @@ title: Tambahkan dan Hapus Penanda
 linktitle: Tambahkan dan Hapus Penanda 
 type: docs
 weight: 10
-url: id/cpp/add-and-delete-bookmark/
+url: /id/cpp/add-and-delete-bookmark/
 description: Topik ini menjelaskan cara menambahkan penanda ke dokumen PDF dengan pustaka C++. Anda juga dapat menghapus semua atau penanda tertentu dari dokumen PDF.
 lastmod: "2022-01-31"
 sitemap:

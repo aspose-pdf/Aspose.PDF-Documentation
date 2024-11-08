@@ -3,7 +3,7 @@ title: 使用 Python 处理 AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: zh/python-net/acroforms/
+url: /zh/python-net/acroforms/
 description: 使用 Aspose.PDF for Python，您可以从头创建表单、填写 PDF 文档中的表单字段、从表单中提取数据等。
 lastmod: "2023-02-17"
 sitemap:
@@ -89,9 +89,9 @@ PDF 1.7 支持两种不同的方法来集成数据和 PDF 表单。
 
 有关 Java 库功能的更详细学习，请参阅以下文章：
 
-- [创建 AcroForm](/pdf/python-net/create-form) - 从头开始使用 Python 创建表单。
-- [填写 AcroForm](/pdf/python-net/fill-form) - 填写 PDF 文档中的表单字段。
-- [提取 AcroForm](/pdf/python-net/extract-form) - 从 PDF 文档的所有字段或单个字段获取值。
+- [创建 AcroForm](/pdf/zh/python-net/create-form) - 从头开始使用 Python 创建表单。
+- [填写 AcroForm](/pdf/zh/python-net/fill-form) - 填写 PDF 文档中的表单字段。
+- [提取 AcroForm](/pdf/zh/python-net/extract-form) - 从 PDF 文档的所有字段或单个字段获取值。
 
 <script type="application/ld+json">
 {

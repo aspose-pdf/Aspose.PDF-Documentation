@@ -3,7 +3,7 @@ title: Отключение сжатия файлов при добавлени�
 linktitle: Отключение сжатия файлов
 type: docs
 weight: 40
-url: ru/java/disable-files-compression-when-adding-as-embedded-resources/
+url: /ru/java/disable-files-compression-when-adding-as-embedded-resources/
 description: В этой статье объясняется, как отключить сжатие файлов при добавлении в качестве встроенных ресурсов
 lastmod: "2021-06-05"
 ---

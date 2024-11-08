@@ -3,7 +3,7 @@ title: 移动 PDF 页面
 linktitle: 移动页面
 type: docs
 weight: 20
-url: zh/java/move-pages/
+url: /zh/java/move-pages/
 description: 尝试使用 Aspose.PDF for Java 将页面移动到 PDF 文件的所需位置或末尾。
 lastmod: "2021-06-05"
 sitemap:

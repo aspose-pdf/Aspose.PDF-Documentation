@@ -2,7 +2,7 @@
 title: جدول المحتويات قائمة الجداول أو الأشكال
 type: docs
 weight: 10
-url: ar/reportingservices/table-of-contents-list-of-tables-or-figures/
+url: /ar/reportingservices/table-of-contents-list-of-tables-or-figures/
 lastmod: "2021-06-05"
 ---
 

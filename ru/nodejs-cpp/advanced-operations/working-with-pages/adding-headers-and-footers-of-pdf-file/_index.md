@@ -3,7 +3,7 @@ title: Добавить Заголовок и Колонтитул в PDF на N
 linktitle: Добавить Заголовок и Колонтитул в PDF
 type: docs
 weight: 70
-url: ru/nodejs-cpp/add-headers-and-footers-of-pdf-file/
+url: /ru/nodejs-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Node.js через C++ позволяет добавлять заголовки и колонтитулы в ваш PDF файл, используя AsposePdfAddTextHeaderFooter.
 lastmod: "2023-11-16"
 sitemap:

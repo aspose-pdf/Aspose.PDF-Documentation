@@ -3,7 +3,7 @@ title: Membuat PDF dari XML menggunakan XSLT
 linktitle: Membuat PDF dari XML menggunakan XSLT
 type: docs
 weight: 10
-url: id/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /id/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: Perpustakaan C# menyediakan kemampuan untuk mengkonversi file XML menjadi dokumen pdf dengan syarat file XML input harus mengikuti Skema Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Perpustakaan C# menyediakan kemampuan untuk mengkonversi file XML menjadi dokumen pdf dengan syarat file XML input harus mengikuti Skema Aspose.PDF."
 }
 </script>
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+The following code snippet also work with [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
 Terkadang Anda mungkin memiliki file XML yang ada yang berisi data aplikasi dan Anda ingin menghasilkan laporan PDF menggunakan file-file ini. Anda dapat menggunakan XSLT untuk mengubah dokumen XML yang ada menjadi dokumen XML yang kompatibel dengan Aspose.Pdf dan kemudian menghasilkan file PDF. Ada 3 langkah untuk menghasilkan PDF menggunakan XML dan XSLT.
 

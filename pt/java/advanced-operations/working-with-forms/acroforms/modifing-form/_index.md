@@ -3,7 +3,7 @@ title: Modificando AcroForms
 linktitle: Modificando AcroForms
 type: docs
 weight: 40
-url: pt/java/modifing-form/
+url: /pt/java/modifing-form/
 description: Esta seção explica como modificar formulários em seu documento PDF com Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

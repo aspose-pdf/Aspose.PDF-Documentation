@@ -2,7 +2,7 @@
 title: 更新页面尺寸在Jython中
 type: docs
 weight: 90
-url: zh/java/update-page-dimensions-in-jython/
+url: /zh/java/update-page-dimensions-in-jython/
 lastmod: "2021-06-05"
 ---
 

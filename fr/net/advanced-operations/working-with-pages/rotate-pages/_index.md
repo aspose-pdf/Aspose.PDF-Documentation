@@ -3,7 +3,7 @@ title: Faire pivoter les pages PDF en utilisant C#
 linktitle: Faire pivoter les pages PDF
 type: docs
 weight: 50
-url: fr/net/rotate-pages/
+url: /fr/net/rotate-pages/
 description: Ce sujet décrit comment faire pivoter l'orientation des pages dans un fichier PDF existant de manière programmatique avec C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Ce sujet décrit comment mettre à jour ou changer l'orientation des pages d'un fichier PDF existant de manière programmatique avec C#.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Changer l'Orientation de la Page
 

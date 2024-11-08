@@ -2,7 +2,7 @@
 title: Mesclar imagens
 type: docs
 weight: 20
-url: pt/net/merge-images/
+url: /pt/net/merge-images/
 description: Esta seção explica como mesclar imagens e é possível salvar no formato Tiff.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Memformat Dokumen PDF menggunakan C++
 linktitle: Memformat Dokumen PDF
 type: docs
 weight: 20
-url: id/cpp/formatting-pdf-document/
+url: /id/cpp/formatting-pdf-document/
 description: Buat dan format Dokumen PDF dengan Aspose.PDF untuk C++. Gunakan potongan kode berikut untuk menyelesaikan tugas Anda.
 lastmod: "2021-11-11"
 sitemap:

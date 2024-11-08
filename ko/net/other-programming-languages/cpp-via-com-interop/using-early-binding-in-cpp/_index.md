@@ -2,14 +2,14 @@
 title: CPP에서 초기 바인딩 사용하기
 type: docs
 weight: 10
-url: ko/net/using-early-binding-in-cpp/
+url: /ko/net/using-early-binding-in-cpp/
 ---
 
 ## 사전 요구 사항
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for .NET을 COM Interop를 통해 등록하십시오. [Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)라는 기사를 확인하세요.
+Aspose.PDF for .NET을 COM Interop를 통해 등록하십시오. [Use Aspose.pdf for .NET via COM Interop](/pdf/ko/net/use-aspose-pdf-for-net-via-com-interop/)라는 기사를 확인하세요.
 
 {{% /alert %}}
 

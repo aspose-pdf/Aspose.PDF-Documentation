@@ -4,7 +4,7 @@ linktitle: Aspose.PDF untuk Python via C++
 second_title: Aspose.PDF untuk Python via C++
 type: docs
 weight: 50
-url: id/python-cpp/
+url: /id/python-cpp/
 is_root: true
 lastmod: "2024-04-24"
 description: Pelajari penggunaan Aspose.PDF Python via C++ untuk membuat aplikasi pemrosesan dokumen PDF pada platform apapun menggunakan Python. Jelajahi tutorial, contoh kode, dan lainnya.
@@ -29,15 +29,15 @@ Aspose.PDF untuk Python via C++ menawarkan satu set lengkap fungsi untuk bekerja
 
 ## Bab
 
-- [Mengonversi dokumen](/pdf/python-cpp/converting/)
-- [Operasi lanjutan](/pdf/python-cpp/advanced-operations/)
+- [Mengonversi dokumen](/pdf/id/python-cpp/converting/)
+- [Operasi lanjutan](/pdf/id/python-cpp/advanced-operations/)
 - [Catatan Rilis](https://releases.aspose.com/pdf/pythoncpp/)
 
 ## Aspose.PDF untuk Python via C++ Sumber Daya
 
 Berikut adalah tautan ke beberapa sumber daya berguna yang mungkin Anda perlukan untuk menyelesaikan tugas Anda.
 
-- [Fitur Aspose.PDF untuk Python via C++](/pdf/python-cpp/key-features/)
+- [Fitur Aspose.PDF untuk Python via C++](/pdf/id/python-cpp/key-features/)
 - [Catatan Rilis Aspose.PDF untuk Python via C++](https://releases.aspose.com/pdf/pythoncpp/)
 - [Halaman Produk Aspose.PDF untuk Python via C++](https://products.aspose.com/pdf/python-cpp/)
 - [Unduh Aspose.PDF untuk Python via C++](https://releases.aspose.com/pdf/pythoncpp/)

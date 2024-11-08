@@ -3,7 +3,7 @@ title: تحويل PDF إلى تنسيقات PDF/A في بايثون
 linktitle: تحويل PDF إلى تنسيقات PDF/A
 type: docs
 weight: 100
-url: ar/python-net/convert-pdf-to-pdfa/
+url: /ar/python-net/convert-pdf-to-pdfa/
 lastmod: "2022-12-23"
 description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF لبايثون لتحويل ملف PDF إلى ملف PDF متوافق مع PDF/A.
 sitemap:

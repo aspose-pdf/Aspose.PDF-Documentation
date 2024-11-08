@@ -3,7 +3,7 @@ title: Comment signer numériquement un PDF
 linktitle: Signer numériquement un PDF
 type: docs
 weight: 10
-url: fr/cpp/digitally-sign-pdf-file/
+url: /fr/cpp/digitally-sign-pdf-file/
 description: Signez numériquement des documents PDF en utilisant C++. Vérifiez ou validez les PDF signés numériquement en utilisant C++.
 lastmod: "2021-12-15"
 sitemap:

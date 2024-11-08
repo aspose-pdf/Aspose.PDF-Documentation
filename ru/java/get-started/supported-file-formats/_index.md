@@ -3,7 +3,7 @@ title: Поддерживаемые форматы файлов
 linktitle: Поддерживаемые форматы файлов
 type: docs
 weight: 70
-url: ru/java/supported-file-formats/
+url: /ru/java/supported-file-formats/
 description: Эта страница показывает, какие форматы файлов Aspose.PDF для Java может загружать и сохранять.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@
 title: 페이지 속성 조작
 type: docs
 weight: 80
-url: ko/net/manipulate-page-properties/
+url: /ko/net/manipulate-page-properties/
 description: 이 섹션에서는 PdfPageEditor 클래스를 사용하여 Aspose.PDF Facades로 페이지 속성을 조작하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

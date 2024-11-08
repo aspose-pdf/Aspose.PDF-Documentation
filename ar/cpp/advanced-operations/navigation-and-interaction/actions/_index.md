@@ -3,7 +3,7 @@ title: العمل مع الإجراءات في PDF
 linktitle: الإجراءات
 type: docs
 weight: 20
-url: ar/cpp/actions/
+url: /ar/cpp/actions/
 description: يشرح هذا القسم كيفية إضافة إجراءات إلى الوثيقة وحقول النموذج برمجيًا باستخدام C++.
 lastmod: "2022-01-25"
 sitemap:

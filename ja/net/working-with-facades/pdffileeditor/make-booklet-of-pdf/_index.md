@@ -2,7 +2,7 @@
 title: PDFのブックレットを作成
 type: docs
 weight: 80
-url: ja/net/make-booklet-of-pdf/
+url: /ja/net/make-booklet-of-pdf/
 description: このセクションでは、PdfFileEditorクラスを使用してAspose.PDF FacadesでPDFのブックレットを作成する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Извлечение абзаца из PDF в C#
 linktitle: Извлечение абзаца из PDF
 type: docs
 weight: 20
-url: ru/net/extract-paragraph-from-pdf/
+url: /ru/net/extract-paragraph-from-pdf/
 description: В этой статье описывается использование инструмента ParagraphAbsorber - особого инструмента в Aspose.PDF для извлечения текста из PDF документов.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ sitemap:
 
 **1- Нарисовав границу разделов и абзацев текста на странице PDF:**
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -79,7 +79,7 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page)
 ```
 **2- Перебор коллекции абзацев и получение их текста:**
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET

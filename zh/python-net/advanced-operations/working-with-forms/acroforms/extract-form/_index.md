@@ -3,7 +3,7 @@ title: 提取 AcroForm - 在 Python 中从 PDF 提取表单数据
 linktitle: 提取 AcroForm
 type: docs
 weight: 30
-url: zh/python-net/extract-form/
+url: /zh/python-net/extract-form/
 keywords: 从 pdf 提取表单数据 python
 description: 使用 Aspose.PDF for Python 库从您的 PDF 文档中提取表单。获取 PDF 文件中单个字段的值。
 lastmod: "2023-02-17"

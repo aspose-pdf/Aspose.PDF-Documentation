@@ -2,7 +2,7 @@
 title: Insérer une Page Vide dans un Fichier PDF en Python
 type: docs
 weight: 70
-url: fr/java/insérer-une-page-vide-dans-un-fichier-pdf-en-python/
+url: /fr/java/insérer-une-page-vide-dans-un-fichier-pdf-en-python/
 lastmod: "2021-06-05"
 ---
 

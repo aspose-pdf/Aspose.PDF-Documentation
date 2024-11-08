@@ -2,7 +2,7 @@
 title: الحصول على و ضبط خصائص الصفحة
 type: docs
 weight: 30
-url: ar/php-java/get-and-set-page-properties/
+url: /ar/php-java/get-and-set-page-properties/
 description: يشرح هذا الموضوع كيفية الحصول على الأرقام في ملف PDF، والحصول على خصائص الصفحة وتحديد لون الصفحة باستخدام Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 ---

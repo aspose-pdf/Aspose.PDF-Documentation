@@ -3,7 +3,7 @@ title: Ajouter des tampons d'image dans un PDF en utilisant C#
 linktitle: Tampons d'image dans un fichier PDF
 type: docs
 weight: 10
-url: fr/net/image-stamps-in-pdf-page/
+url: /fr/net/image-stamps-in-pdf-page/
 description: Ajoutez le tampon d'image dans votre document PDF en utilisant la classe ImageStamp avec la bibliothèque Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Vous pouvez utiliser la classe ImageStamp pour ajouter un tampon d'image à un fichier PDF. La classe ImageStamp fournit les propriétés nécessaires pour créer un tampon basé sur une image, telles que la hauteur, la largeur, l'opacité, etc.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Pour ajouter un tampon d'image :
 

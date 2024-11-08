@@ -3,7 +3,7 @@ title: 程序化地保存 PDF 文档
 linktitle: 保存 PDF
 type: docs
 weight: 30
-url: zh/python-net/save-pdf-document/
+url: /zh/python-net/save-pdf-document/
 description: 学习如何在 Python Aspose.PDF for Python via .NET 库中保存 PDF 文件。将 PDF 文档保存到文件系统、流和 Web 应用程序中。
 lastmod: "2022-12-22"
 sitemap:

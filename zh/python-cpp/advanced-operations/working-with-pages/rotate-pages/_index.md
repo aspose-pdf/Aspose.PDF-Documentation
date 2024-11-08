@@ -3,7 +3,7 @@ title: 使用Python通过C++旋转PDF页面
 linktitle: 旋转PDF页面
 type: docs
 weight: 20
-url: zh/python-cpp/rotate-pages/
+url: /zh/python-cpp/rotate-pages/
 description: 本主题描述如何通过Python使用C++以编程方式旋转现有PDF文件中的页面方向。
 lastmod: "2024-04-17"
 sitemap:

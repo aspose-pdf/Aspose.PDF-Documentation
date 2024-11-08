@@ -3,7 +3,7 @@ title: さまざまな画像形式をPDFに変換する
 linktitle: 画像をPDFに変換する
 type: docs
 weight: 60
-url: ja/cpp/convert-images-format-to-pdf/
+url: /ja/cpp/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: このトピックでは、Aspose.PDF for C++ライブラリを使用して、さまざまな画像形式をPDFに変換する方法を紹介します。
 sitemap:

@@ -3,7 +3,7 @@ title: Determinar Quebra de Linha
 linktitle: Determinar Quebra de Linha
 type: docs
 weight: 70
-url: pt/java/determine-line-break/
+url: /pt/java/determine-line-break/
 description: Saiba mais sobre como determinar uma quebra de linha de TextFragment de várias linhas usando Java
 lastmod: "2021-06-05"
 sitemap:

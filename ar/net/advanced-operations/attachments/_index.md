@@ -3,7 +3,7 @@ title: العمل مع المرفقات في ملفات PDF
 linktitle: العمل مع المرفقات
 type: docs
 weight: 130
-url: ar/net/attachments/
+url: /ar/net/attachments/
 description: استخدم واجهة برمجة تطبيقات PDF بلغة C# للوصول إلى المرفقات وإضافتها وإزالتها في ملفات PDF باستخدام C# ضمن تطبيقاتك. دليل كامل مع أمثلة كود بلغة C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,10 +82,10 @@ aliases:
 المرفق هو ملف إضافي مرتبط بمستند رئيسي، ويمكن أن يكون من مجموعة متنوعة من أنواع الملفات، مثل pdf، word، صورة، أو ملفات أخرى.
 ستتعلم كيفية إضافة المرفقات إلى pdf، الحصول على معلومات المرفق، وحفظها في ملف، حذف المرفق من PDF برمجيًا باستخدام C#.
 
-- [إضافة مرفق إلى مستند PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [استخراج وحفظ مرفق](/pdf/net/extract-and-save-an-attachment/)
-- [إزالة مرفق من PDF موجود](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Portfolio](/pdf/net/portfolio/)
+- [إضافة مرفق إلى مستند PDF](/pdf/ar/net/add-attachment-to-pdf-document/)
+- [استخراج وحفظ مرفق](/pdf/ar/net/extract-and-save-an-attachment/)
+- [إزالة مرفق من PDF موجود](/pdf/ar/net/removing-attachment-from-an-existing-pdf/)
+- [Portfolio](/pdf/ar/net/portfolio/)
 
 <script type="application/ld+json">
 {

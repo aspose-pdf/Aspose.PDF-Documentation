@@ -3,7 +3,7 @@ title: Docker에서 Aspose.PDF 실행 방법
 linktitle: Docker 사용하기
 type: docs
 weight: 120
-url: ko/net/docker/
+url: /ko/net/docker/
 description: Docker Linux 또는 Windows 컨테이너를 사용하여 애플리케이션에 Aspose.PDF 기능을 통합하십시오
 lastmod: "2021-01-21"
 sitemap:

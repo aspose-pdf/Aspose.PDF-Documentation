@@ -2,7 +2,7 @@
 title: Работа с печатью PDF - Фасады
 type: docs
 weight: 10
-url: ru/net/working-with-pdf-printing-facades/
+url: /ru/net/working-with-pdf-printing-facades/
 description: В этом разделе объясняется, как печатать PDF файлы с помощью Aspose.PDF Facades, используя класс PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

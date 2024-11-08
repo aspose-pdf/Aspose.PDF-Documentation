@@ -3,7 +3,7 @@ title: Dukungan untuk Gambar DICOM
 linktitle: Dukungan untuk Gambar DICOM
 type: docs
 weight: 100
-url: id/net/support-for-dicom-mages/
+url: /id/net/support-for-dicom-mages/
 description: Bagian ini menjelaskan cara mendukung gambar DICOM dalam file PDF menggunakan pustaka C#.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 Standar DICOM dikembangkan oleh National Electrical Manufacturers Association. Format ini mencakup fungsi pembuatan, penyimpanan, transfer, dan pencetakan bingkai gambar tunggal, serangkaian bingkai, informasi pasien, penelitian, peralatan, institusi, personel medis yang melakukan pemeriksaan, dan sejenisnya.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 **Aspose.PDF untuk .NET** mendukung fungsionalitas untuk menambahkan gambar DICOM ke dokumen PDF. Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini.
 

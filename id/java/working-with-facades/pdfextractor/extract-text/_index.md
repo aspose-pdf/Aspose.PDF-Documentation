@@ -2,7 +2,7 @@
 title: Ekstrak Gambar dari PDF (facades)
 type: docs
 weight: 30
-url: id/java/extract-images/
+url: /id/java/extract-images/
 description: Bagian ini menjelaskan cara mengekstrak gambar dengan Aspose.PDF Facades menggunakan Kelas PdfExtractor.
 lastmod: "2021-06-05"
 sitemap:

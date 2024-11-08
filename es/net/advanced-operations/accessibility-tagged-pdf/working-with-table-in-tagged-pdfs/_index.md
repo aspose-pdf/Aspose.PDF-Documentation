@@ -3,7 +3,7 @@ title: Trabajando con Tablas en PDFs Etiquetados
 linktitle: Trabajando con Tablas en PDFs Etiquetados
 type: docs
 weight: 40
-url: es/net/working-with-table-in-tagged-pdfs/
+url: /es/net/working-with-table-in-tagged-pdfs/
 description: Este artículo explica cómo trabajar con tablas en documentos PDF etiquetados con Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 Aspose.PDF para .NET permite crear una tabla en documentos PDF etiquetados.
 Aspose.PDF para .NET permite crear una tabla en documentos PDF etiquetados.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente fragmento de código muestra cómo crear una tabla en el documento PDF etiquetado:
 

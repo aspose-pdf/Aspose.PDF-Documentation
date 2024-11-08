@@ -3,7 +3,7 @@ title: إنشاء PDF من XML باستخدام XSLT
 linktitle: إنشاء PDF من XML باستخدام XSLT
 type: docs
 weight: 10
-url: ar/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /ar/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: توفر مكتبة C# القدرة على تحويل ملف XML إلى مستند PDF بشرط أن يتبع ملف XML المدخل مخطط Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-يعمل مقتطف الشيفرة التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف الشيفرة التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 في بعض الأحيان قد يكون لديك ملفات XML موجودة تحتوي على بيانات تطبيقية وترغب في إنشاء تقرير PDF باستخدام هذه الملفات. يمكنك استخدام XSLT لتحويل مستند XML الموجود لديك إلى مستند XML متوافق مع Aspose.Pdf ثم إنشاء ملف PDF. هناك 3 خطوات لإنشاء PDF باستخدام XML وXSLT.
 

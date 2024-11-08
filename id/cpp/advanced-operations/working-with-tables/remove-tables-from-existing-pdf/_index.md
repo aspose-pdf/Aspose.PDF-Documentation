@@ -3,7 +3,7 @@ title: Hapus Tabel dari PDF yang Ada
 linktitle: Hapus Tabel
 type: docs
 weight: 50
-url: id/cpp/remove-tables-from-existing-pdf/
+url: /id/cpp/remove-tables-from-existing-pdf/
 description: Bagian ini menjelaskan cara menghapus Tabel dari dokumen PDF.
 lastmod: "2021-11-11"
 sitemap:

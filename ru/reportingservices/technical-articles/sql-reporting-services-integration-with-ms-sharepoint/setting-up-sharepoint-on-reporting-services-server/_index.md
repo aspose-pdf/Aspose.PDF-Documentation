@@ -2,7 +2,7 @@
 title: Настройка SharePoint на сервере Reporting Services
 type: docs
 weight: 30
-url: ru/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+url: /ru/reportingservices/setting-up-sharepoint-on-reporting-services-server/
 lastmod: "2021-06-05"
 ---
 

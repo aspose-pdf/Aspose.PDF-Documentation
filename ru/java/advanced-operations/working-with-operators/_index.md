@@ -3,7 +3,7 @@ title: Работа с Операторами
 linktitle: Работа с Операторами
 type: docs
 weight: 170
-url: ru/java/operators/
+url: /ru/java/operators/
 description: Эта тема объясняет, как использовать операторы с Aspose.PDF. Классы операторов предоставляют отличные возможности для манипуляции с PDF.
 lastmod: "2021-06-05"
 sitemap:

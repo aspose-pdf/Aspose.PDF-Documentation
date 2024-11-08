@@ -3,7 +3,7 @@ title: Déplacer des Pages PDF
 linktitle: Déplacer des Pages
 type: docs
 weight: 20
-url: fr/java/move-pages/
+url: /fr/java/move-pages/
 description: Essayez de déplacer des pages à l'emplacement souhaité ou à la fin d'un fichier PDF en utilisant Aspose.PDF pour Java.
 lastmod: "2021-06-05"
 sitemap:

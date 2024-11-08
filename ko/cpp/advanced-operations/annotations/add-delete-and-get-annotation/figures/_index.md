@@ -3,7 +3,7 @@ title: Add Figures Annotations using C++
 linktitle: Figures Annotations
 type: docs
 weight: 30
-url: ko/cpp/figures-annotation/
+url: /ko/cpp/figures-annotation/
 description: 이 문서에서는 Aspose.PDF for C++를 사용하여 PDF 문서에서 도형 주석을 추가, 가져오기 및 삭제하는 방법을 설명합니다.
 lastmod: "2021-11-24"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF内のテーブルからデータを抽出するC#
 linktitle: テーブルからデータを抽出する
 type: docs
 weight: 40
-url: ja/net/extract-data-from-table-in-pdf/
+url: /ja/net/extract-data-from-table-in-pdf/
 description: Aspose.PDF for .NET を使用してPDFから表データを抽出する方法を学ぶ
 lastmod: "2021-06-05"
 sitemap:
@@ -22,7 +22,7 @@ Aspose.PDF for .NETには、テーブルを簡単に取得するためのツー�
 1. `TableList`は[AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable)のリストです。日付を取得するには、`TableList`を反復処理し、[RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist)と[CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)を扱います。
 1. 各[AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell)には[TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments)コレクションが含まれています。これを自分の目的で処理できます。
 
-以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 以下の例は、すべてのページから表を抽出する方法を示しています：
 
@@ -63,7 +63,7 @@ public static void Extract_Table()
 
 したがって、特定の領域に位置する表を抽出する必要がある場合、特定の座標で作業する必要があります。
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 次の例は、四角注釈でマークされた表を抽出する方法を示しています：
 
@@ -116,9 +116,9 @@ public static void Extract_Marked_Table()
 ## PDFから表データを抽出し、CSVファイルに保存する
 
 次の例は、表を抽出してCSVファイルとして保存する方法を示しています。
-PDFをExcelスプレッドシートに変換する方法については、[PDFをExcelに変換する](/pdf/net/convert-pdf-to-excel/)記事を参照してください。
+PDFをExcelスプレッドシートに変換する方法については、[PDFをExcelに変換する](/pdf/ja/net/convert-pdf-to-excel/)記事を参照してください。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 public static void Extract_Table_Save_CSV()

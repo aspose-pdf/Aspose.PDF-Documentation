@@ -4,7 +4,7 @@ title: 在 Node.js 中旋转 PDF 页面
 linktitle: 旋转 PDF 页面  
 type: docs  
 weight: 50  
-url: zh/nodejs-cpp/rotate-pages/  
+url: /zh/nodejs-cpp/rotate-pages/  
 description: 本主题介绍如何在 Node.js 环境中以编程方式旋转现有 PDF 文件的页面方向。  
 lastmod: "2023-11-16"  
 sitemap:  

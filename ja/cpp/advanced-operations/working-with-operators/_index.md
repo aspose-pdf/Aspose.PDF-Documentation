@@ -3,7 +3,7 @@ title: C++を使用した演算子の操作
 linktitle: 演算子の操作
 type: docs
 weight: 170
-url: ja/cpp/operators/
+url: /ja/cpp/operators/
 description: このトピックでは、C++でAspose.PDFを使用して演算子をどのように使用するかを説明します。演算子クラスはPDF操作のための優れた機能を提供します。
 lastmod: "2021-12-14"
 sitemap:

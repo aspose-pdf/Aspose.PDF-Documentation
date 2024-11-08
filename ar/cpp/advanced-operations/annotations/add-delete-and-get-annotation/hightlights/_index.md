@@ -3,7 +3,7 @@ title: تعليق التمييز في ملفات PDF باستخدام C++
 linktitle: تعليق التمييز
 type: docs
 weight: 20
-url: ar/cpp/highlights-annotation/
+url: /ar/cpp/highlights-annotation/
 description: يتم عرض تعليقات التوصيف في النص كتمييزات أو خطوط تحتية أو خطوط مشطوبة أو خطوط متعرجة في نص المستند.
 lastmod: "2021-11-24"
 sitemap:

@@ -2,7 +2,7 @@
 title: 获取Jython中的页面数量
 type: docs
 weight: 30
-url: zh/java/get-number-of-pages-in-jython/
+url: /zh/java/get-number-of-pages-in-jython/
 lastmod: "2021-06-05"
 ---
 

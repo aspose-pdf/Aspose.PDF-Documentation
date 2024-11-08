@@ -3,7 +3,7 @@ title: Node.jsでのPDFのブックマーク
 linktitle: PDFのブックマーク
 type: docs
 weight: 10
-url: ja/nodejs-cpp/bookmark/
+url: /ja/nodejs-cpp/bookmark/
 description: Node.js環境でPDFドキュメントにブックマークを追加または削除できます。
 lastmod: "2023-11-16"
 sitemap:

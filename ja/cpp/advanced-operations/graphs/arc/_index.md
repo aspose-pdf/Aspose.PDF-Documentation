@@ -3,7 +3,7 @@ title: PDFファイルにアークオブジェクトを追加する
 linktitle: アークを追加
 type: docs
 weight: 10
-url: ja/cpp/add-arc/
+url: /ja/cpp/add-arc/
 description: 本記事では、Aspose.PDF for C++を使用してPDFにアークオブジェクトを作成する方法を説明します。
 lastmod: "2021-12-18"
 sitemap:

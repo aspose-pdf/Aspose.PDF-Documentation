@@ -2,7 +2,7 @@
 title: Trabalhando com Impressão de PDF - Facades
 type: docs
 weight: 10
-url: pt/net/working-with-pdf-printing-facades/
+url: /pt/net/working-with-pdf-printing-facades/
 description: Esta seção explica como imprimir arquivos PDF com Aspose.PDF Facades usando a classe PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

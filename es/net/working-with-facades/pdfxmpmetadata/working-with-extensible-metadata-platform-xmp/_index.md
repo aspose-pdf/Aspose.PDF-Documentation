@@ -2,7 +2,7 @@
 title: Extensible Metadata Platform - XMP
 type: docs
 weight: 10
-url: es/net/working-with-extensible-metadata-platform-xmp/
+url: /es/net/working-with-extensible-metadata-platform-xmp/
 description: Esta sección explica cómo trabajar con la Plataforma de Metadatos Extensible - XMP usando la Clase PdfXmpMetadata.
 lastmod: "2021-06-05"
 draft: false

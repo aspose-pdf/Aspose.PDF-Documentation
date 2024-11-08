@@ -2,7 +2,7 @@
 title: ヘッダーとフッターの管理
 type: docs
 weight: 40
-url: ja/java/manage-header-and-footer/
+url: /ja/java/manage-header-and-footer/
 description: このセクションでは、PdfFileStampクラスを使用してAspose.PDF Facadesでヘッダーとフッターを管理する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

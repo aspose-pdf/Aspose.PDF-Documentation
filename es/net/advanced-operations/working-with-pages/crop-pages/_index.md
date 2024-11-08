@@ -3,7 +3,7 @@ title: Recortar páginas de PDF programáticamente en C#
 linktitle: Recortar Páginas
 type: docs
 weight: 80
-url: es/net/crop-pages/
+url: /es/net/crop-pages/
 description: Puede obtener las propiedades de la página, como el ancho, el alto, la sangría, el recorte y la caja de corte usando Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -88,7 +88,7 @@ Cada página en un archivo PDF tiene una serie de propiedades, como el ancho, al
 - **Page.Rect**: la intersección (rectángulo comúnmente visible) de MediaBox y DropBox. La imagen a continuación ilustra estas propiedades.
 Para más detalles, por favor visita [esta página](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El fragmento a continuación muestra cómo recortar la página:
 

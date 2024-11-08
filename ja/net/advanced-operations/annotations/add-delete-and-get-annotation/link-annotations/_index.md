@@ -3,7 +3,7 @@ title: PDFでのリンク注釈の使用
 linktitle: リンク注釈
 type: docs
 weight: 70
-url: ja/net/link-annotations/
+url: /ja/net/link-annotations/
 description: Aspose.PDF for .NETは、PDFドキュメントからリンク注釈を追加、取得、削除することができます。
 lastmod: "2024-07-28"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 ## 既存のPDFファイルにリンク注釈を追加する
 
-> 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+> 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 [リンク注釈](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)は、ハイパーリンク、他の場所へのリンク、または文書を表します。PDF標準によると、リンク注釈は三つのケースで使用できます：ページビューを開く、ファイルを開く、ウェブページを開く。
 

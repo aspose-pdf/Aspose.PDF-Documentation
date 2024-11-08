@@ -2,7 +2,7 @@
 title: Добавление подписи в PDF файл
 type: docs
 weight: 10
-url: ru/net/add-signature-in-pdf/
+url: /ru/net/add-signature-in-pdf/
 description: Этот раздел объясняет, как добавить подпись в PDF файл с использованием класса PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

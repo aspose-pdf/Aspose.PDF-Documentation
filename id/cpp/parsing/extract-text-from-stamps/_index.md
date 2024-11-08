@@ -3,7 +3,7 @@ title: Ekstrak Teks Dari Stempel
 linktitle: Ekstrak Teks Dari Stempel
 type: docs
 weight: 60
-url: id/cpp/extract-text-from-stamps/
+url: /id/cpp/extract-text-from-stamps/
 ---
 
 ## Ekstrak Teks dari Anotasi Stempel

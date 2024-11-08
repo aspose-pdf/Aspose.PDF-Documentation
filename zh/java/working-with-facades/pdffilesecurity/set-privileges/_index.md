@@ -2,7 +2,7 @@
 title: 设置现有 PDF 文件的权限
 type: docs
 weight: 50
-url: zh/java/set-privileges/
+url: /zh/java/set-privileges/
 description: 本主题解释如何使用 PdfFileSecurity 类设置现有 PDF 文件的权限。
 lastmod: "2021-06-05"
 draft: false

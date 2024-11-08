@@ -3,7 +3,7 @@ title: Formateo de texto dentro de PDF usando C#
 linktitle: Formateo de texto dentro de PDF
 type: docs
 weight: 30
-url: es/net/text-formatting-inside-pdf/
+url: /es/net/text-formatting-inside-pdf/
 description: Esta página explica cómo formatear texto dentro de su archivo PDF. Incluye agregar sangría de línea, agregar borde de texto, agregar texto subrayado, y etc.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Cómo agregar Sangría de Línea a PDF
 

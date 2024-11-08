@@ -3,7 +3,7 @@ title: Извлечение и сохранение вложения
 linktitle: Извлечение и сохранение вложения
 type: docs
 weight: 20
-url: ru/net/extract-and-save-an-attachment/
+url: /ru/net/extract-and-save-an-attachment/
 description: Aspose.PDF для .NET позволяет получить все вложения из документа PDF. Также вы можете получить отдельное вложение из вашего документа.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ sitemap:
 
 Следующие примеры кода показывают, как получить все вложения из документа PDF.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET

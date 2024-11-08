@@ -2,7 +2,7 @@
 title: Преобразование файла SVG в формат PDF на Ruby
 type: docs
 weight: 60
-url: ru/java/convert-svg-file-to-pdf-format-in-ruby/
+url: /ru/java/convert-svg-file-to-pdf-format-in-ruby/
 lastmod: "2021-06-05"
 ---
 

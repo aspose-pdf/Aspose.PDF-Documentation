@@ -3,7 +3,7 @@ title: Obtenir et Définir les Propriétés des Pages avec Python
 linktitle: Obtenir et Définir les Propriétés des Pages
 type: docs
 weight: 90
-url: fr/python-net/get-and-set-page-properties/
+url: /fr/python-net/get-and-set-page-properties/
 description: Cette section montre comment obtenir le nombre de pages dans un fichier PDF, obtenir des informations sur les propriétés des pages PDF telles que la couleur et définir les propriétés des pages.
 lastmod: "2023-04-17"
 sitemap:
@@ -223,7 +223,7 @@ La classe [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) f
 
 ## Obtenir une Page Particulière du Fichier PDF
 
-Aspose.PDF pour Python vous permet de [diviser un PDF en pages individuelles](/pdf/python-net/split-pdf-document/) et de les enregistrer sous forme de fichiers PDF. Obtenir une page spécifiée dans un fichier PDF et l'enregistrer en tant que nouveau PDF est une opération très similaire : ouvrez le document source, accédez à la page, créez un nouveau document et ajoutez la page à celui-ci.
+Aspose.PDF pour Python vous permet de [diviser un PDF en pages individuelles](/pdf/fr/python-net/split-pdf-document/) et de les enregistrer sous forme de fichiers PDF. Obtenir une page spécifiée dans un fichier PDF et l'enregistrer en tant que nouveau PDF est une opération très similaire : ouvrez le document source, accédez à la page, créez un nouveau document et ajoutez la page à celui-ci.
 
 L'objet [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) de [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection) contient les pages du fichier PDF. Pour obtenir une page particulière de cette collection :
 

@@ -3,7 +3,7 @@ title: 创建复杂的PDF文档
 linktitle: 创建复杂的PDF文档
 type: docs
 weight: 60
-url: zh/net/complex-pdf-example/
+url: /zh/net/complex-pdf-example/
 description: Aspose.PDF for NET允许您创建包含图片、文本片段和表格的更复杂的文档。
 aliases:
     - /net/complex-pdf/
@@ -13,8 +13,8 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/net/hello-world-example/) 示例展示了使用C#和Aspose.PDF创建PDF文档的简单步骤。在本文中，我们将探讨使用C#和Aspose.PDF for .NET创建更复杂的文档。作为示例，我们将采用一家虚构公司运营的客运渡轮服务的文档。
-我们的文档将包含一个图像、两个文本片段（标题和段落）和一个表格。为了构建这样的文档，我们将采用基于DOM的方法。您可以在[Basics of DOM API](/pdf/net/basics-of-dom-api/)部分阅读更多信息。
+[Hello, World](/pdf/zh/net/hello-world-example/) 示例展示了使用C#和Aspose.PDF创建PDF文档的简单步骤。在本文中，我们将探讨使用C#和Aspose.PDF for .NET创建更复杂的文档。作为示例，我们将采用一家虚构公司运营的客运渡轮服务的文档。
+我们的文档将包含一个图像、两个文本片段（标题和段落）和一个表格。为了构建这样的文档，我们将采用基于DOM的方法。您可以在[Basics of DOM API](/pdf/zh/net/basics-of-dom-api/)部分阅读更多信息。
 
 如果我们从头开始创建文档，我们需要遵循以下步骤：
 
@@ -29,8 +29,8 @@ sitemap:
 1. 将（表格）添加到页面[段落](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)中。
 1. 保存文档“Complex.pdf”。
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 ```csharp
 using Aspose.Pdf.Text;

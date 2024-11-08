@@ -3,7 +3,7 @@ title: PDF Annotations using C++
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: ja/cpp/annotations/
+url: /ja/cpp/annotations/
 description: このセクションでは、Aspose.PDFライブラリを使用してPDFファイルにあらゆる種類の注釈を追加する方法を示します。C++で注釈を描画、開く、または追加する方法を学びます。
 lastmod: "2021-11-24"
 sitemap:
@@ -22,6 +22,6 @@ PDFがドキュメント交換の決定的な形式になりつつある中で�
 
 次のことができます：
 
-- [注釈の概要](/pdf/cpp/overview-of-annotations/) - PDF 仕様で定義されている注釈の種類と、Aspose.PDF がサポートするものを学びます。
-- [注釈の追加、削除、および取得](/pdf/cpp/add-delete-and-get-annotation/) - 許可されているすべての種類の注釈を操作する方法について説明します。
-- [XFDF 形式への注釈のインポートとエクスポート](/pdf/cpp/import-export-xfdf/) - C++ で XFDF 形式で注釈をインポートおよびエクスポートする方法を知ることができます。
+- [注釈の概要](/pdf/ja/cpp/overview-of-annotations/) - PDF 仕様で定義されている注釈の種類と、Aspose.PDF がサポートするものを学びます。
+- [注釈の追加、削除、および取得](/pdf/ja/cpp/add-delete-and-get-annotation/) - 許可されているすべての種類の注釈を操作する方法について説明します。
+- [XFDF 形式への注釈のインポートとエクスポート](/pdf/ja/cpp/import-export-xfdf/) - C++ で XFDF 形式で注釈をインポートおよびエクスポートする方法を知ることができます。

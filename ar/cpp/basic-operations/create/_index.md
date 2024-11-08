@@ -3,7 +3,7 @@ title: إنشاء مستند PDF باستخدام C++
 linktitle: إنشاء
 type: docs
 weight: 10
-url: ar/cpp/create-document/
+url: /ar/cpp/create-document/
 description: المهمة الأكثر شيوعًا وأساسًا في العمل مع ملف PDF هي إنشاء مستند من البداية. استخدم مكتبة Aspose.PDF for C++.
 lastmod: "2021-06-05"
 sitemap:

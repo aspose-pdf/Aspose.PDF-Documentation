@@ -2,7 +2,7 @@
 title: Nota de Rodapé Nota de Fim
 type: docs
 weight: 30
-url: pt/reportingservices/footnote-endnote/
+url: /pt/reportingservices/footnote-endnote/
 lastmod: "2021-06-05"
 ---
 

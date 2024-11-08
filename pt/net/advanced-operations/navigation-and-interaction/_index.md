@@ -3,7 +3,7 @@ title: Navegação e Interação em PDF
 linktitle: Navegação e interação
 type: docs
 weight: 90
-url: pt/net/navigation-and-interaction/
+url: /pt/net/navigation-and-interaction/
 description: Esta seção descreve as funcionalidades de trabalho com links, ações e marcadores.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,9 +76,9 @@ sitemap:
 }
 </script>
 
-- [Links](/pdf/net/links/) - você pode facilmente criar, atualizar e extrair links com C#.
-- [Actions](/pdf/net/actions/) - é possível adicionar e obter, criar hiperlinks para arquivos PDF. Além disso, neste artigo, você aprenderá como remover a Ação de Abertura de Documento de um Arquivo PDF e como Especificar a Página do PDF ao Visualizar o Documento.
-- [Bookmarks](/pdf/net/bookmarks/)- publicações grandes geralmente incluem uma estrutura de bookmarks que pode ser facilmente visualizada e selecionada no Painel de Bookmarks, permitindo que você clique em um bookmark para saltar para a página ou capítulo que ele representa. O Painel de Bookmarks é um elemento consciente do conteúdo e está visível na barra lateral apenas se o documento PDF aberto contiver uma estrutura de bookmark.
+- [Links](/pdf/pt/net/links/) - você pode facilmente criar, atualizar e extrair links com C#.
+- [Actions](/pdf/pt/net/actions/) - é possível adicionar e obter, criar hiperlinks para arquivos PDF. Além disso, neste artigo, você aprenderá como remover a Ação de Abertura de Documento de um Arquivo PDF e como Especificar a Página do PDF ao Visualizar o Documento.
+- [Bookmarks](/pdf/pt/net/bookmarks/)- publicações grandes geralmente incluem uma estrutura de bookmarks que pode ser facilmente visualizada e selecionada no Painel de Bookmarks, permitindo que você clique em um bookmark para saltar para a página ou capítulo que ele representa. O Painel de Bookmarks é um elemento consciente do conteúdo e está visível na barra lateral apenas se o documento PDF aberto contiver uma estrutura de bookmark.
 
 <script type="application/ld+json">
 {

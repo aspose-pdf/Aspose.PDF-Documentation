@@ -2,7 +2,7 @@
 title: Ajouter une chaîne HTML en utilisant DOM dans Python
 type: docs
 weight: 10
-url: fr/python-java/add-html-string-using-dom-in-python/
+url: /fr/python-java/add-html-string-using-dom-in-python/
 ---
 
 Pour ajouter une chaîne HTML dans un document PDF en utilisant **Aspose.PDF Java pour Python**, il suffit d'invoquer le module **AddHtml**.

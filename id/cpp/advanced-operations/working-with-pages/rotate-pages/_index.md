@@ -3,7 +3,7 @@ title: Memutar Halaman PDF Menggunakan C++
 linktitle: Memutar Halaman PDF
 type: docs
 weight: 50
-url: id/cpp/rotate-pages/
+url: /id/cpp/rotate-pages/
 description: Topik ini menjelaskan cara memutar orientasi halaman dalam file PDF yang sudah ada secara terprogram dengan C++.
 lastmod: "2021-12-08"
 sitemap:

@@ -3,7 +3,7 @@ title: 将图像添加到 PDF 使用 C++
 linktitle: 添加图像
 type: docs
 weight: 10
-url: zh/cpp/add-image-to-existing-pdf-file/
+url: /zh/cpp/add-image-to-existing-pdf-file/
 description: 本节描述如何使用 C++ 库将图像添加到现有的 PDF 文件中。
 lastmod: "2021-12-18"
 ---

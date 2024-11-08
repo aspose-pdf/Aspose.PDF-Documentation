@@ -3,7 +3,7 @@ title: Bekerja dengan XML menggunakan C#
 linktitle: Bekerja dengan XML
 type: docs
 weight: 80
-url: id/net/working-with-xml/
+url: /id/net/working-with-xml/
 description: Pelajari cara menghasilkan dokumen PDF dari XML di Aspose.PDF untuk .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -78,9 +78,9 @@ sitemap:
 
 XML (Extensible Markup Language) adalah cara untuk menggunakan ulang data dalam sebuah file atau mengotomatisasi proses menggantikan data dalam satu file dengan data dari file lain. Membuat skema XML yang benar sangat sulit; membuat beberapa skema yang saling terkait yang dapat diperluas bahkan lebih sulit. Mari kita pelajari bagaimana Aspose.PDF menghadapi tugas bekerja dengan XML.
 
-- [Skema XML yang Didukung](/pdf/net/supported-xml-schema/) - gunakan skema XML berikut untuk bekerja dengan dokumen XML.
-- [Contoh 'Hello World' sederhana berdasarkan XML dan XSLT](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - gunakan XSLT untuk mengubah dokumen XML Anda yang ada menjadi PDF.
-- [Menghasilkan PDF dari XML](/pdf/net/generate-pdf-from-xml/) - Aspose.PDF memiliki beberapa cara untuk menghasilkan PDF berdasarkan dokumen XML.
+- [Skema XML yang Didukung](/pdf/id/net/supported-xml-schema/) - gunakan skema XML berikut untuk bekerja dengan dokumen XML.
+- [Contoh 'Hello World' sederhana berdasarkan XML dan XSLT](/pdf/id/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - gunakan XSLT untuk mengubah dokumen XML Anda yang ada menjadi PDF.
+- [Menghasilkan PDF dari XML](/pdf/id/net/generate-pdf-from-xml/) - Aspose.PDF memiliki beberapa cara untuk menghasilkan PDF berdasarkan dokumen XML.
 
 <script type="application/ld+json">
 {

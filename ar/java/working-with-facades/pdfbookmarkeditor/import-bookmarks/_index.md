@@ -3,7 +3,7 @@
 title: استيراد الإشارات المرجعية من XML إلى ملف PDF موجود (واجهات)
 type: docs
 weight: 30
-url: ar/java/import-bookmark/
+url: /ar/java/import-bookmark/
 description: يوضح هذا القسم كيفية استيراد الإشارات المرجعية باستخدام Aspose.PDF Facades باستخدام فئة PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

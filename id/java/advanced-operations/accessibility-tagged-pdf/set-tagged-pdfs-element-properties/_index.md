@@ -3,7 +3,7 @@ title: Mengatur Properti Elemen Struktur dalam PDF Bertanda
 linktitle: Mengatur Properti Elemen Struktur
 type: docs
 weight: 30
-url: id/java/set-tagged-pdfs-element-properties/
+url: /id/java/set-tagged-pdfs-element-properties/
 description: Dengan Aspose.PDF untuk Java, Anda dapat mengatur berbagai Properti Elemen Struktur. Ada pengaturan Elemen Struktur Blok Teks, pengaturan Elemen Struktur Inline, menambahkan Elemen Struktur ke dalam Elemen dan lain-lain.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: PDFファイルでの署名の操作
 type: docs
 weight: 40
-url: ja/net/working-with-signature-in-a-pdf-file/
+url: /ja/net/working-with-signature-in-a-pdf-file/
 description: このセクションでは、PdfFileSignatureクラスを使用して署名情報を抽出し、署名から画像を抽出し、言語を変更する方法などについて説明します。
 lastmod: "2021-06-05"
 draft: false

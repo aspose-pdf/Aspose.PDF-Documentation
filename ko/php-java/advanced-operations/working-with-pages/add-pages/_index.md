@@ -3,7 +3,7 @@ title: PDF에 페이지 추가
 linktitle: 페이지 추가
 type: docs
 weight: 10
-url: ko/php-java/add-pages/
+url: /ko/php-java/add-pages/
 description: 이 문서는 원하는 위치에 PDF 파일에 페이지를 삽입(추가)하는 방법을 가르칩니다. PHP를 사용하여 PDF 파일에서 페이지를 이동, 제거(삭제)하는 방법을 배우십시오.
 lastmod: "2024-06-05"
 sitemap:

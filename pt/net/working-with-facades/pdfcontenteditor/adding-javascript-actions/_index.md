@@ -2,7 +2,7 @@
 title: Adicionando ações Javascript PDF
 type: docs
 weight: 10
-url: pt/net/adding-javascript-actions/
+url: /pt/net/adding-javascript-actions/
 description: Esta seção explica como adicionar ações Javascript a um arquivo PDF existente com Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

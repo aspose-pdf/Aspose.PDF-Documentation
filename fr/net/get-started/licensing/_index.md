@@ -3,7 +3,7 @@ title: Licence Aspose PDF
 linktitle: Licence et limitations
 type: docs
 weight: 90
-url: fr/net/licensing/
+url: /fr/net/licensing/
 description: Aspose. PDF pour .NET invite ses clients à obtenir une licence classique et une licence mesurée. Ainsi qu'à utiliser une licence limitée pour mieux explorer le produit.
 lastmod: "2021-06-05"
 sitemap:

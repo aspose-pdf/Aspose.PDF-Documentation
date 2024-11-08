@@ -3,7 +3,7 @@ title: Работа с ZUGFeRD
 linktitle: Работа с ZUGFeRD
 type: docs
 weight: 90
-url: ru/net/working-with-zugferd/
+url: /ru/net/working-with-zugferd/
 description: Узнайте, как создавать счета-фактуры в формате PDF, соответствующие стандарту ZUGFeRD, на C# в Aspose.PDF для .NET
 lastmod: "2023-09-27"
 sitemap:
@@ -27,9 +27,9 @@ ZUGFeRD - это стандарт для электронного выставл
 Он также соответствует законодательным требованиям к долгосрочному архивированию и налоговому учету. ZUGFeRD имеет различные версии и профили, которые подходят для разных потребностей и сценариев. Последняя версия - ZUGFeRD 2.0, совместимая с европейским стандартом EN 16931 для электронного выставления счетов.
 ZUGFeRD предлагает пользователям множество преимуществ и экономию затрат, таких как более быстрая обработка, снижение ошибок, улучшение денежного потока и снижение воздействия на окружающую среду.
 
-* [Создание PDF/3-A совместимого PDF и прикрепление счета ZUGFeRD в C#](/pdf/net/attach-zugferd/)
+* [Создание PDF/3-A совместимого PDF и прикрепление счета ZUGFeRD в C#](/pdf/ru/net/attach-zugferd/)
 
 Смотрите также:
 
-* [Создание PDF/3-A совместимого PDF и прикрепление счета ZUGFeRD в Java](/pdf/java/attach-zugferd/)
-* [Создание PDF/3-A совместимого PDF и прикрепление счета ZUGFeRD в Python](/pdf/python-net/attach-zugferd/)
+* [Создание PDF/3-A совместимого PDF и прикрепление счета ZUGFeRD в Java](/pdf/ru/java/attach-zugferd/)
+* [Создание PDF/3-A совместимого PDF и прикрепление счета ZUGFeRD в Python](/pdf/ru/python-net/attach-zugferd/)

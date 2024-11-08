@@ -2,7 +2,7 @@
 title: 连接 PDF 文件在 Ruby 中
 type: docs
 weight: 10
-url: zh/java/concatenate-pdf-files-in-ruby/
+url: /zh/java/concatenate-pdf-files-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -2,11 +2,11 @@
 title: ASP - JScript через COM Interop
 type: docs
 weight: 40
-url: ru/net/asp-jscript-via-com-interop/
+url: /ru/net/asp-jscript-via-com-interop/
 ---
 {{% alert color="primary" %}}
 
-Это простое приложение ASP, которое показывает, как добавить простую текстовую строку в файл PDF с использованием [Aspose.PDF для .NET](/pdf/net/) и JScript через COM Interop.
+Это простое приложение ASP, которое показывает, как добавить простую текстовую строку в файл PDF с использованием [Aspose.PDF для .NET](/pdf/ru/net/) и JScript через COM Interop.
 
 {{% /alert %}}
 

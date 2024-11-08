@@ -2,7 +2,7 @@
 title: Удалить подпись из PDF файла
 type: docs
 weight: 20
-url: ru/net/remove-signature-from-pdf/
+url: /ru/net/remove-signature-from-pdf/
 description: Этот раздел объясняет, как удалить подпись из PDF файла, используя класс PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

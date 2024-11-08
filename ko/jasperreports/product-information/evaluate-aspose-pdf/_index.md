@@ -4,7 +4,7 @@ type: docs
 
 weight: 70
 
-url: ko/jasperreports/evaluate-aspose-pdf/
+url: /ko/jasperreports/evaluate-aspose-pdf/
 
 lastmod: "2021-06-05"
 

@@ -8,7 +8,7 @@ type: docs
 
 weight: 10
 
-url: fr/sharepoint/informations-sur-le-produit/
+url: /fr/sharepoint/informations-sur-le-produit/
 
 lastmod: "2020-12-16"
 
@@ -22,16 +22,16 @@ description: La section Informations sur le produit de PDF SharePoint couvre des
 
 
 
-- [Présentation du produit](/pdf/sharepoint/presentation-du-produit/)
+- [Présentation du produit](/pdf/fr/sharepoint/presentation-du-produit/)
 
-- [Formats de fichier pris en charge](/pdf/sharepoint/formats-de-fichier-pris-en-charge/)
+- [Formats de fichier pris en charge](/pdf/fr/sharepoint/formats-de-fichier-pris-en-charge/)
 
-- [Fonctionnalités](/pdf/sharepoint/fonctionnalites/)
+- [Fonctionnalités](/pdf/fr/sharepoint/fonctionnalites/)
 
-- [Installer Aspose.Pdf pour SharePoint](/pdf/sharepoint/installer-aspose-pdf-pour-sharepoint/)
+- [Installer Aspose.Pdf pour SharePoint](/pdf/fr/sharepoint/installer-aspose-pdf-pour-sharepoint/)
 
-- [Évaluer Aspose.Pdf](/pdf/sharepoint/evaluer-aspose-pdf/)
+- [Évaluer Aspose.Pdf](/pdf/fr/sharepoint/evaluer-aspose-pdf/)
 
-- [Licence Aspose.Pdf pour SharePoint](/pdf/sharepoint/licence-aspose-pdf-pour-sharepoint/)
+- [Licence Aspose.Pdf pour SharePoint](/pdf/fr/sharepoint/licence-aspose-pdf-pour-sharepoint/)
 
-- [Limitations de l'API](/pdf/sharepoint/limitations-de-lapi/)
+- [Limitations de l'API](/pdf/fr/sharepoint/limitations-de-lapi/)

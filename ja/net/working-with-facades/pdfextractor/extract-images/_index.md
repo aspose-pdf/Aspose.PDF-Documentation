@@ -3,7 +3,7 @@
 title: PdfExtractorを使用して画像を抽出
 type: docs
 weight: 20
-url: ja/net/extract-images/
+url: /ja/net/extract-images/
 description: このセクションでは、PdfExtractorクラスを使用してAspose.PDF Facadesで画像を抽出する方法を説明します。
 lastmod: "2021-07-15"
 ---

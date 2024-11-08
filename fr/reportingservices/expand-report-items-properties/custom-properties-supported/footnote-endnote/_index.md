@@ -2,7 +2,7 @@
 title: Note de bas de page Note de fin
 type: docs
 weight: 30
-url: fr/reportingservices/footnote-endnote/
+url: /fr/reportingservices/footnote-endnote/
 lastmod: "2021-06-05"
 ---
 

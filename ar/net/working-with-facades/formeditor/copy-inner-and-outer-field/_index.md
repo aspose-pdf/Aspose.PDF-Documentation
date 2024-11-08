@@ -2,7 +2,7 @@
 title: نسخ الحقل الداخلي والخارجي
 type: docs
 weight: 40
-url: ar/net/copy-inner-and-outer-field/
+url: /ar/net/copy-inner-and-outer-field/
 description: تشرح هذه القسم كيفية نسخ الحقل الداخلي والخارجي باستخدام Aspose.PDF Facades باستخدام فئة FormEditor.
 lastmod: "2021-06-05"
 draft: false

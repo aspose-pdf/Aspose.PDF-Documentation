@@ -3,7 +3,7 @@ title: 画像サイズの設定
 linktitle: 画像サイズの設定
 type: docs
 weight: 80
-url: ja/java/set-image-size/
+url: /ja/java/set-image-size/
 description: このセクションでは、Javaライブラリを使用してPDFファイルの画像サイズを設定する方法について説明します。
 lastmod: "2021-06-05"
 ---

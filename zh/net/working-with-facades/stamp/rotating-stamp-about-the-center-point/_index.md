@@ -2,7 +2,7 @@
 title: 围绕中心点旋转印章
 type: docs
 weight: 10
-url: zh/net/rotating-stamp-about-the-center-point/
+url: /zh/net/rotating-stamp-about-the-center-point/
 description: 本节介绍如何使用 Stamp 类围绕中心点旋转印章。
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/net/) 中允许您在现有的 PDF 文件中添加印章。有时，用户确实需要旋转印章。在本文中，我们将看到如何围绕其中心点旋转印章。
+[Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/zh/net/) 中允许您在现有的 PDF 文件中添加印章。有时，用户确实需要旋转印章。在本文中，我们将看到如何围绕其中心点旋转印章。
 
 {{% /alert %}}
 

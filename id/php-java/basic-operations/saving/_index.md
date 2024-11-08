@@ -3,7 +3,7 @@ title: Simpan Dokumen PDF
 linktitle: Simpan
 type: docs
 weight: 30
-url: id/php-java/save-pdf-document/
+url: /id/php-java/save-pdf-document/
 description: Pelajari cara menyimpan file PDF dengan Aspose.PDF untuk PHP melalui perpustakaan Java.
 lastmod: "2024-06-05"
 sitemap:

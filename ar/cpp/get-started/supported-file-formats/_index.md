@@ -3,7 +3,7 @@ title: تنسيقات الملفات المدعومة C++
 linktitle: تنسيقات الملفات المدعومة
 type: docs
 weight: 70
-url: ar/cpp/supported-file-formats/
+url: /ar/cpp/supported-file-formats/
 description: تعرض هذه الصفحة تنسيقات الملفات التي يمكن لـ Aspose.PDF for C++ تحميلها وحفظها.
 lastmod: "2021-11-08"
 sitemap:

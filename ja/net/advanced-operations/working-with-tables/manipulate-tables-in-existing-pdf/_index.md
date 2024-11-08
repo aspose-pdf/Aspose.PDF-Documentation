@@ -3,7 +3,7 @@ title: 既存のPDFで表を操作する
 linktitle: 表の操作
 type: docs
 weight: 40
-url: ja/net/manipulate-tables-in-existing-pdf/
+url: /ja/net/manipulate-tables-in-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -79,7 +79,7 @@ sitemap:
 
 Aspose.PDF for .NETがサポートする最も初期の機能の一つは、テーブルの操作であり、スクラッチから生成されるPDFファイルや既存のPDFファイルにテーブルを追加するための大きなサポートを提供します。また、データベースの内容に基づいて動的なテーブルを作成するために、データベース（DOM）とテーブルを統合する機能も利用できます。この新しいリリースで、PDFドキュメントのページに既に存在する簡単なテーブルを検索して解析する新機能を実装しました。**Aspose.PDF.Text.TableAbsorber** という新しいクラスがこれらの機能を提供します。TableAbsorberの使用方法は、既存のTextFragmentAbsorberクラスに非常に似ています。次のコードスニペットは、特定のテーブルセルの内容を更新する手順を示しています。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
 ```csharp
 // 完全な例やデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。

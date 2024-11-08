@@ -3,7 +3,7 @@ title: تحويل PDF إلى صيغ الصور
 linktitle: تحويل PDF إلى الصور
 type: docs
 weight: 70
-url: ar/php-java/convert-pdf-to-images-format/
+url: /ar/php-java/convert-pdf-to-images-format/
 lastmod: "2024-05-20"
 description: يوضح هذا الموضوع كيف يسمح لك Aspose.PDF بتحويل PDF إلى صيغ الصور المختلفة. تحويل صفحات PDF إلى صور PNG وJPEG وBMP ببضع سطور من الشيفرة.
 sitemap:

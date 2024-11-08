@@ -3,7 +3,7 @@ title: Diviser un PDF de manière programmatique
 linktitle: Diviser des fichiers PDF
 type: docs
 weight: 60
-url: fr/net/split-pdf-document/
+url: /fr/net/split-pdf-document/
 keywords: diviser pdf en plusieurs fichiers, diviser pdf en pdf séparés, diviser pdf c#
 description: Ce sujet montre comment diviser les pages PDF en fichiers PDF individuels dans vos applications .NET avec C#.
 lastmod: "2022-02-17"
@@ -92,8 +92,8 @@ Ce sujet montre comment diviser les pages PDF en fichiers PDF individuels dans v
 1. À chaque itération, créer un nouvel objet Document et ajouter l'objet [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) individuel dans le document vide
 1. Enregistrer le nouveau PDF en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Diviser un PDF en plusieurs fichiers ou pdf séparés en C#
 

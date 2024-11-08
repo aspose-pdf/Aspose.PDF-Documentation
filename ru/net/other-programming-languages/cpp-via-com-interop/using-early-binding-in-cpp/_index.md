@@ -2,14 +2,14 @@
 title: Использование раннего связывания в CPP
 type: docs
 weight: 10
-url: ru/net/using-early-binding-in-cpp/
+url: /ru/net/using-early-binding-in-cpp/
 ---
 
 ## Предварительные требования
 
 {{% alert color="primary" %}}
 
-Пожалуйста, зарегистрируйте Aspose.PDF для .NET с COM Interop, обратитесь к статье под названием [Использование Aspose.pdf для .NET через COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Пожалуйста, зарегистрируйте Aspose.PDF для .NET с COM Interop, обратитесь к статье под названием [Использование Aspose.pdf для .NET через COM Interop](/pdf/ru/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

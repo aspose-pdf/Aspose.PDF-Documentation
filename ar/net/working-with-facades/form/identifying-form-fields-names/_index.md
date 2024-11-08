@@ -2,13 +2,13 @@
 title: تحديد أسماء حقول النماذج
 type: docs
 weight: 10
-url: ar/net/identifying-form-fields-names/
+url: /ar/net/identifying-form-fields-names/
 description: تتيح لك Aspose.PDF.Facades تحديد أسماء حقول النماذج باستخدام فئة النموذج.
 lastmod: "2021-06-05"
 draft: false
 ---
 
-[Aspose.PDF for .NET](/pdf/net/) توفر القدرة على إنشاء وتحرير وملء النماذج المكونة بالفعل. تحتوي مساحة الأسماء [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) على فئة [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)، والتي تحتوي على وظيفة تسمى [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) وتأخذ وسيطين وهما اسم الحقل وقيمة الحقل. لذلك، من أجل ملء حقول النموذج، يجب أن تكون على دراية بالاسم الدقيق لحقل النموذج.
+[Aspose.PDF for .NET](/pdf/ar/net/) توفر القدرة على إنشاء وتحرير وملء النماذج المكونة بالفعل. تحتوي مساحة الأسماء [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) على فئة [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)، والتي تحتوي على وظيفة تسمى [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) وتأخذ وسيطين وهما اسم الحقل وقيمة الحقل. لذلك، من أجل ملء حقول النموذج، يجب أن تكون على دراية بالاسم الدقيق لحقل النموذج.
 
 ## تفاصيل التنفيذ
 

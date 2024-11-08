@@ -77,7 +77,7 @@ sitemap:
 </script>
 ```
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 Aspose.PDF for .NET 使用以下 XML 模式来处理 XML 文档：
 

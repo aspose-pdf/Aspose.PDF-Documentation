@@ -3,7 +3,7 @@ title: إزالة المرفقات من PDF باستخدام JavaScript
 linktitle: إزالة المرفقات من ملف PDF موجود
 type: docs
 weight: 10
-url: ar/javascript-cpp/removing-attachment-from-an-existing-pdf/
+url: /ar/javascript-cpp/removing-attachment-from-an-existing-pdf/
 description: يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم مجموعة أدوات الويب JavaScript لإزالة المرفقات في ملفات PDF باستخدام Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:

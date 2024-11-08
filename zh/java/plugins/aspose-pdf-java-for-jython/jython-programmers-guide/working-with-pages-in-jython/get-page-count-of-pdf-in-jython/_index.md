@@ -2,7 +2,7 @@
 title: 获取 Jython 中 PDF 的页数
 type: docs
 weight: 40
-url: zh/java/get-page-count-of-pdf-in-jython/
+url: /zh/java/get-page-count-of-pdf-in-jython/
 lastmod: "2021-06-05"
 ---
 

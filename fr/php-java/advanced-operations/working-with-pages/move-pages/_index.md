@@ -3,7 +3,7 @@ title: Déplacer des Pages PDF
 linktitle: Déplacer des Pages PDF
 type: docs
 weight: 20
-url: fr/php-java/move-pages/
+url: /fr/php-java/move-pages/
 description: Essayez de déplacer des pages à l'emplacement souhaité ou à la fin d'un fichier PDF en utilisant Aspose.PDF pour PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

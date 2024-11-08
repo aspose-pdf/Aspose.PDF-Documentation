@@ -2,7 +2,7 @@
 title: Encriptar, Desencriptar y establecer privilegios en documentos PDF
 type: docs
 weight: 10
-url: es/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+url: /es/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
 ---
 
 ## <ins>**Establecer privilegios en un archivo PDF existente**

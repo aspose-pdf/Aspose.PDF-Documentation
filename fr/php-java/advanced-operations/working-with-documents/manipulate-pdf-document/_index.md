@@ -3,7 +3,7 @@ title: Manipuler un document PDF
 linktitle: Manipuler un document PDF
 type: docs
 weight: 30
-url: fr/php-java/manipulate-pdf-document/
+url: /fr/php-java/manipulate-pdf-document/
 description: Cet article contient des informations sur la façon de valider un document PDF selon la norme PDF A, comment travailler avec la table des matières, comment définir une date d'expiration pour le PDF, et comment déterminer la progression de la génération du fichier PDF.
 lastmod: "2024-06-05"
 ---

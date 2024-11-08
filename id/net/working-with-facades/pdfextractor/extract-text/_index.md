@@ -2,7 +2,7 @@
 title: Extract Text from PDF File
 type: docs
 weight: 30
-url: id/net/extract-text/
+url: /id/net/extract-text/
 description: Bagian ini menjelaskan cara mengekstrak teks dari pdf menggunakan kelas PdfExtractor.
 lastmod: "2021-06-05"
 ---

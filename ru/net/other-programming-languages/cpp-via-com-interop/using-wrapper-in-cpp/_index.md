@@ -2,14 +2,14 @@
 title: Использование оболочки в CPP
 type: docs
 weight: 30
-url: ru/net/using-wrapper-in-cpp/
+url: /ru/net/using-wrapper-in-cpp/
 ---
 
 ## Предварительные требования
 
 {{% alert color="primary" %}}
 
-Пожалуйста, зарегистрируйте Aspose.PDF для .NET с COM Interop, обратите внимание на статью под названием [Использование Aspose.pdf для .NET через COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Пожалуйста, зарегистрируйте Aspose.PDF для .NET с COM Interop, обратите внимание на статью под названием [Использование Aspose.pdf для .NET через COM Interop](/pdf/ru/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

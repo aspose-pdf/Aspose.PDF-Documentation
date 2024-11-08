@@ -2,7 +2,7 @@
 title: PDF 파일에서 주석을 XFDF로 변환 (facades)
 type: docs
 weight: 40
-url: ko/java/flatten-annotation/
+url: /ko/java/flatten-annotation/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF 파일에서 주석을 XFDF로 내보내는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

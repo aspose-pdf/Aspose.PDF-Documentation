@@ -3,7 +3,7 @@ title: تدوير صفحات PDF باستخدام C++
 linktitle: تدوير صفحات PDF
 type: docs
 weight: 50
-url: ar/cpp/rotate-pages/
+url: /ar/cpp/rotate-pages/
 description: يصف هذا الموضوع كيفية تدوير اتجاه الصفحة في ملف PDF موجود برمجياً باستخدام C++.
 lastmod: "2021-12-08"
 sitemap:

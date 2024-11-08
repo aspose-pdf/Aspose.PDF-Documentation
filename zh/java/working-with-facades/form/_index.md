@@ -2,7 +2,7 @@
 title: 表单类
 type: docs
 weight: 140
-url: zh/java/form-class/
+url: /zh/java/form-class/
 description: 本节介绍如何使用表单类与 Aspose.PDF Facades 进行操作。
 lastmod: "2021-06-05"
 sitemap:
@@ -10,6 +10,6 @@ sitemap:
     priority: 0.7
 ---
 
-- [在现有 PDF 文件中扁平化所有字段（facades）](/pdf/java/flatten-all-fields/)
-- [从 PDF 文件导出数据到 XML、FDF（Facades）](/pdf/java/export-data-into-a-pdf-file-facades/)
-- [导入数据到 PDF 文件 - facades](/pdf/java/import-data-into-a-pdf-file-facades/)
+- [在现有 PDF 文件中扁平化所有字段（facades）](/pdf/zh/java/flatten-all-fields/)
+- [从 PDF 文件导出数据到 XML、FDF（Facades）](/pdf/zh/java/export-data-into-a-pdf-file-facades/)
+- [导入数据到 PDF 文件 - facades](/pdf/zh/java/import-data-into-a-pdf-file-facades/)

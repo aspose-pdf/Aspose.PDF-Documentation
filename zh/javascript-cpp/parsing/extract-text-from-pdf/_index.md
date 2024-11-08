@@ -3,7 +3,7 @@ title: 使用JavaScript从PDF中提取文本
 linktitle: 从PDF中提取文本
 type: docs
 weight: 30
-url: zh/javascript-cpp/extract-text-from-pdf/
+url: /zh/javascript-cpp/extract-text-from-pdf/
 description: 本文描述了使用Aspose.PDF for JavaScript从PDF文档中提取文本的各种方法。
 lastmod: "2023-06-05"
 sitemap:

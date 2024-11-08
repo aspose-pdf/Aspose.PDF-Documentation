@@ -3,7 +3,7 @@ title: تحويل تنسيقات الصور المختلفة إلى PDF
 linktitle: تحويل الصور إلى PDF
 type: docs
 weight: 60
-url: ar/java/convert-images-format-to-pdf/
+url: /ar/java/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: يوضح هذا الموضوع كيفية استخدام مكتبة Aspose.PDF for Java لتحويل تنسيقات الصور المختلفة إلى PDF.
 sitemap:

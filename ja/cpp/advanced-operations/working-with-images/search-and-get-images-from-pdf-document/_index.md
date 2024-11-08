@@ -3,7 +3,7 @@ title: C++を使用してPDFドキュメントから画像を検索および取�
 linktitle: 画像の検索と取得
 type: docs
 weight: 60
-url: ja/cpp/search-and-get-images-from-pdf-document/
+url: /ja/cpp/search-and-get-images-from-pdf-document/
 description: このセクションでは、Aspose.PDFライブラリを使用してPDFドキュメントから画像を検索および取得する方法を説明します。
 lastmod: "2021-12-18"
 ---

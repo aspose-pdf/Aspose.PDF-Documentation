@@ -2,7 +2,7 @@
 title: Definir Informações do Arquivo PDF em Ruby
 type: docs
 weight: 120
-url: pt/java/set-pdf-file-information-in-ruby/
+url: /pt/java/set-pdf-file-information-in-ruby/
 lastmod: "2021-06-05"
 ---
 

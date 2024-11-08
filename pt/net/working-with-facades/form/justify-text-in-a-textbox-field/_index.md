@@ -2,7 +2,7 @@
 title: Justificar Texto em um Campo de Caixa de Texto
 type: docs
 weight: 20
-url: pt/net/justify-text-in-a-textbox-field/
+url: /pt/net/justify-text-in-a-textbox-field/
 description: Este artigo mostra como Justificar Texto em um Campo de Caixa de Texto usando a Classe Form.
 lastmod: "2021-06-05"
 draft: false

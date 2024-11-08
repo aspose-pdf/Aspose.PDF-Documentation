@@ -3,7 +3,7 @@ title: PDFにデジタル署名する方法
 linktitle: PDFにデジタル署名
 type: docs
 weight: 10
-url: ja/java/digitally-sign-pdf-file/
+url: /ja/java/digitally-sign-pdf-file/
 description: Javaを使用してPDF文書にデジタル署名を行います。JavaベースのアプリケーションでPDFライブラリを使用して、デジタル署名されたPDFを検証または確認します。PKCS1証明書を使用してPDFファイルを認証できます。
 lastmod: "2021-06-05"
 sitemap:

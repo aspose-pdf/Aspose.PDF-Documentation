@@ -3,7 +3,7 @@ title: Extraire les données de tableau d'un PDF
 linktitle: Extraire les données de tableau
 type: docs
 weight: 40
-url: fr/php-java/extract-data-from-table-in-pdf/
+url: /fr/php-java/extract-data-from-table-in-pdf/
 description: Apprenez à extraire des données tabulaires d'un PDF en utilisant Aspose.PDF pour PHP
 lastmod: "2021-05-20"
 sitemap:
@@ -85,7 +85,7 @@ $document->close();
 ## Extraire des données de tableau à partir d'un PDF et les stocker dans un fichier CSV
 
 L'exemple suivant montre comment extraire un tableau et le stocker en tant que fichier CSV.
-Pour voir comment convertir un PDF en feuille de calcul Excel, veuillez vous référer à l'article [Convertir PDF en Excel](/pdf/php-java/convert-pdf-to-excel/).
+Pour voir comment convertir un PDF en feuille de calcul Excel, veuillez vous référer à l'article [Convertir PDF en Excel](/pdf/fr/php-java/convert-pdf-to-excel/).
 
 ```php
 

@@ -3,7 +3,7 @@ title: Mesclar PDF usando C++
 linktitle: Mesclar arquivos PDF
 type: docs
 weight: 50
-url: pt/cpp/merge-pdf-documents/
+url: /pt/cpp/merge-pdf-documents/
 description: Esta página explica como mesclar documentos PDF em um único arquivo PDF com C++.
 lastmod: "2021-11-11"
 sitemap:

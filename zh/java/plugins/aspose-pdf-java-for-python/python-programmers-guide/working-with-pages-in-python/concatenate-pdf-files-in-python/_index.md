@@ -2,7 +2,7 @@
 title: 在 Python 中合并 PDF 文件
 type: docs
 weight: 10
-url: zh/java/concatenate-pdf-files-in-python/
+url: /zh/java/concatenate-pdf-files-in-python/
 lastmod: "2021-06-05"
 ---
 

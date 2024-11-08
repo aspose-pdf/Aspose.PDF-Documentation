@@ -2,7 +2,7 @@
 title: 在 Python 中设置 PDF 文件信息
 type: docs
 weight: 90
-url: zh/java/set-pdf-file-information-in-python/
+url: /zh/java/set-pdf-file-information-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Fitur Utama Aspose.PDF
 linktitle: Fitur Utama
 type: docs
 weight: 80
-url: id/net/key-features/
+url: /id/net/key-features/
 description: Aspose.PDF untuk .NET menunjukkan fitur-fitur umumnya. Menampilkan versi PDF yang didukung, dan semua manipulasi yang dapat kita lakukan dengan PDF.
 lastmod: "2021-06-05"
 aliases:

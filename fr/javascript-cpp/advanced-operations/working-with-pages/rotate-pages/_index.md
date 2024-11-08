@@ -3,7 +3,7 @@ title: Faire pivoter les pages PDF avec JavaScript via C++
 linktitle: Faire pivoter les pages PDF
 type: docs
 weight: 50
-url: fr/javascript-cpp/rotate-pages/
+url: /fr/javascript-cpp/rotate-pages/
 description: Ce sujet décrit comment faire pivoter l'orientation des pages dans un fichier PDF existant de manière programmée via JavaScript via C++
 lastmod: "2023-02-17"
 sitemap:

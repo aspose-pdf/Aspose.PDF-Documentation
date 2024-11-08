@@ -3,7 +3,7 @@ title: Node.jsでPDFからテキストを抽出
 linktitle: PDFからテキストを抽出
 type: docs
 weight: 10
-url: ja/nodejs-cpp/extract-text/
+url: /ja/nodejs-cpp/extract-text/
 description: このセクションでは、Aspose.PDF for Node.js via C++ ツールキットを使用してPDFドキュメントからテキストを抽出する方法について説明します。
 lastmod: "2023-11-16"
 sitemap:

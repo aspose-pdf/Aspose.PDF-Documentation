@@ -3,7 +3,7 @@ title: Оптимизация ресурсов PDF с использование
 linktitle: Оптимизация ресурсов PDF
 type: docs
 weight: 15
-url: ru/javascript-cpp/optimize-pdf-resources/
+url: /ru/javascript-cpp/optimize-pdf-resources/
 description: Оптимизация ресурсов PDF файлов для быстрого просмотра в интернете с использованием инструмента JavaScript.
 lastmod: "2022-12-15"
 sitemap:

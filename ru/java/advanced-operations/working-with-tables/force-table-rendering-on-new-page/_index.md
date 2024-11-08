@@ -2,7 +2,7 @@
 title: Принудительное Рендеринг Таблицы на Новой Странице
 type: docs
 weight: 20
-url: ru/java/force-table-rendering-on-new-page/
+url: /ru/java/force-table-rendering-on-new-page/
 lastmod: "2021-06-05"
 ---
 

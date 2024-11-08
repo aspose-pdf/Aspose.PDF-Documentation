@@ -3,7 +3,7 @@ title: 以编程方式创建PDF文档
 linktitle: 创建PDF
 type: docs
 weight: 10
-url: zh/net/create-document/
+url: /zh/net/create-document/
 description: 本页面描述了如何从头开始使用Aspose.PDF库创建PDF文档。
 ---
 
@@ -18,7 +18,7 @@ Aspose.PDF for .NET API允许您使用C#和VB.NET创建和读取PDF文件。该A
 1.
 1. 保存生成的PDF文件
 
-下一个代码示例也适用于新的图形 [Aspose.Drawing](/pdf/net/drawing/) 接口。
+下一个代码示例也适用于新的图形 [Aspose.Drawing](/pdf/zh/net/drawing/) 接口。
 
 ```csharp
 // 完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET

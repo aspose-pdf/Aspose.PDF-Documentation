@@ -2,7 +2,7 @@
 title: Jythonでページプロパティを取得する
 type: docs
 weight: 50
-url: ja/java/get-page-properties-in-jython/
+url: /ja/java/get-page-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

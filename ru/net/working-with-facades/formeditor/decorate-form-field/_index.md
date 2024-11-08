@@ -2,7 +2,7 @@
 title: Украшение Поля Формы в PDF
 type: docs
 weight: 20
-url: ru/net/decorate-form-field/
+url: /ru/net/decorate-form-field/
 description: Этот раздел объясняет, как украсить поле формы в PDF, используя класс FormEditor.
 lastmod: "2021-06-05"
 draft: false

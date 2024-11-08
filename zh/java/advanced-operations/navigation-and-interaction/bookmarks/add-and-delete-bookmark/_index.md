@@ -3,7 +3,7 @@ title: 添加和删除书签
 linktitle: 添加和删除书签
 type: docs
 weight: 10
-url: zh/java/add-and-delete-bookmark/
+url: /zh/java/add-and-delete-bookmark/
 description: 您可以使用 Java 向 PDF 文档添加书签。可以从 PDF 文档中删除所有或特定书签。
 lastmod: "2021-06-05"
 sitemap:

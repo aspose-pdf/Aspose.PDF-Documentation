@@ -3,7 +3,7 @@ title: 从PDF中的表格提取数据
 linktitle: 提取表格数据
 type: docs
 weight: 40
-url: zh/cpp/extract-data-from-table-in-pdf/
+url: /zh/cpp/extract-data-from-table-in-pdf/
 description: 学习如何使用Aspose.PDF for C++从PDF中提取表格数据。
 lastmod: "2021-06-05"
 sitemap:
@@ -122,7 +122,7 @@ void ExtractMarkedTable()
 
 ## 从 PDF 提取表格数据并存储到 CSV 文件
 
-以下示例显示了如何提取表格并将其存储为 CSV 文件。要了解如何将 PDF 转换为 Excel 电子表格，请参阅[将 PDF 转换为 Excel](/pdf/cpp/convert-pdf-to-excel/)文章。
+以下示例显示了如何提取表格并将其存储为 CSV 文件。要了解如何将 PDF 转换为 Excel 电子表格，请参阅[将 PDF 转换为 Excel](/pdf/zh/cpp/convert-pdf-to-excel/)文章。
 
 ```cpp
 void ExtractTableSaveCSV()

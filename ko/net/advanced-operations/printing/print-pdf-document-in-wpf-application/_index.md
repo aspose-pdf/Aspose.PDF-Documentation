@@ -3,7 +3,7 @@ title: WPF 애플리케이션에서 PDF 인쇄
 linktitle: WPF 애플리케이션에서 PDF 문서 인쇄
 type: docs
 weight: 50
-url: ko/net/print-pdf-document-in-wpf-application/
+url: /ko/net/print-pdf-document-in-wpf-application/
 description: WPF 애플리케이션에서 C#을 사용하여 PDF 문서를 인쇄합니다. 이 코드 샘플은 WPF 애플리케이션에서 C#을 사용하여 PDF 문서를 인쇄하는 방법을 보여줍니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 직접 인쇄
 

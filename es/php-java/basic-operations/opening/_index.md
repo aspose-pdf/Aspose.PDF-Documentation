@@ -3,7 +3,7 @@ title: Abrir Documento PDF
 linktitle: Abrir
 type: docs
 weight: 20
-url: es/php-java/open-pdf-document/
+url: /es/php-java/open-pdf-document/
 description: Aprende cómo abrir un archivo PDF con Aspose.PDF para PHP a través de Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: 이미지 추출기
 type: docs
 weight: 80
-url: ko/net/plugins/imageextractor/
+url: /ko/net/plugins/imageextractor/
 description: ImageExtractor 플러그인으로 PDF에서 이미지 추출하기
 lastmod: "2024-01-24"
 draft: false

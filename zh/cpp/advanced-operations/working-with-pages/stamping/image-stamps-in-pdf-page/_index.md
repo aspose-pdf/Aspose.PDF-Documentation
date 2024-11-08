@@ -3,7 +3,7 @@ title: 在PDF中以编程方式添加图片印章
 linktitle: PDF文件中的图片印章
 type: docs
 weight: 10
-url: zh/cpp/image-stamps-in-pdf-page/
+url: /zh/cpp/image-stamps-in-pdf-page/
 description: 使用Aspose.PDF for C++库中的ImageStamp类在PDF文档中添加图片印章。
 lastmod: "2021-12-08"
 sitemap:

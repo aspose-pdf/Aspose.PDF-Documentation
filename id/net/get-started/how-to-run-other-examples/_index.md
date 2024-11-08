@@ -3,7 +3,7 @@ title: Bagaimana menjalankan contoh lainnya
 linktitle: Bagaimana menjalankan contoh lainnya
 type: docs
 weight: 50
-url: id/net/how-to-run-other-examples/    
+url: /id/net/how-to-run-other-examples/    
 description: Halaman ini menunjukkan pedoman yang akan membantu persyaratan berikut sebelum mengunduh dan menjalankan contoh-contohnya.
 lastmod: "2021-06-05"
 sitemap:

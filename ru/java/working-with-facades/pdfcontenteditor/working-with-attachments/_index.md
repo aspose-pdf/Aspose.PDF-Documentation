@@ -2,7 +2,7 @@
 title: Работа с вложениями
 type: docs
 weight: 50
-url: ru/java/working-with-attachments/
+url: /ru/java/working-with-attachments/
 description: Этот раздел объясняет, как работать с вложениями в вашем PDF с помощью Aspose.PDF Facades - набора инструментов для популярных операций с PDF.
 lastmod: "2021-06-24"
 sitemap:

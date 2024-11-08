@@ -2,7 +2,7 @@
 title: التحقق من التوقيع في ملف PDF
 type: docs
 weight: 30
-url: ar/net/verify-signature-in-pdf/
+url: /ar/net/verify-signature-in-pdf/
 description: يوضح هذا القسم كيفية التحقق من التوقيع في ملف PDF باستخدام فئة PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## التحقق مما إذا كان ملف PDF موقعًا باستخدام توقيع
 
-للتحقق مما إذا كان ملف PDF موقعًا باستخدام [توقيع معين](/pdf/net/working-with-signature-in-a-pdf-file/)، استخدم طريقة VerifySigned من فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). تتطلب هذه الطريقة اسم التوقيع وتعيد true إذا كان ملف PDF موقعًا باستخدام اسم التوقيع هذا. من الممكن أيضًا التحقق مما إذا كان [ملف PDF موقعًا](/pdf/net/working-with-signature-in-a-pdf-file/)، دون التحقق من التوقيع الذي تم التوقيع به.
+للتحقق مما إذا كان ملف PDF موقعًا باستخدام [توقيع معين](/pdf/ar/net/working-with-signature-in-a-pdf-file/)، استخدم طريقة VerifySigned من فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). تتطلب هذه الطريقة اسم التوقيع وتعيد true إذا كان ملف PDF موقعًا باستخدام اسم التوقيع هذا. من الممكن أيضًا التحقق مما إذا كان [ملف PDF موقعًا](/pdf/ar/net/working-with-signature-in-a-pdf-file/)، دون التحقق من التوقيع الذي تم التوقيع به.
 
 ### التحقق من توقيع ملف PDF بتوقيع معين
 

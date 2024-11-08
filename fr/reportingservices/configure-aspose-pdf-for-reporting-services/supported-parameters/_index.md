@@ -2,7 +2,7 @@
 title: Paramètres Pris en Charge
 type: docs
 weight: 20
-url: fr/reportingservices/supported-parameters/
+url: /fr/reportingservices/supported-parameters/
 lastmod: "2021-06-05"
 ---
 
@@ -12,13 +12,13 @@ Actuellement, le moteur de rendu Aspose.Pdf prend en charge une large gamme de p
 
 **Cette section inclut les sujets suivants :**
 
-- [Orientation de la Page](/pdf/reportingservices/page-orientation/)
-- [Mise en Forme HTML](/pdf/reportingservices/html-formatting/)
-- [Paramètre de Sécurité](/pdf/reportingservices/security-setting/)
-- [IsFontEmbedded](/pdf/reportingservices/isfontembedded/)
+- [Orientation de la Page](/pdf/fr/reportingservices/page-orientation/)
+- [Mise en Forme HTML](/pdf/fr/reportingservices/html-formatting/)
+- [Paramètre de Sécurité](/pdf/fr/reportingservices/security-setting/)
+- [IsFontEmbedded](/pdf/fr/reportingservices/isfontembedded/)
 
-- [Taille de la Page](/pdf/reportingservices/pagesize/)
-- [Taille des marges de page](/pdf/reportingservices/page-margin-size/)
-- [Métadonnées XMP](/pdf/reportingservices/xmp-metadata/)
-- [Informations de débogage](/pdf/reportingservices/debug-information/)
-- [Conformité PDF_A](/pdf/reportingservices/pdf_a-conformance/)
+- [Taille de la Page](/pdf/fr/reportingservices/pagesize/)
+- [Taille des marges de page](/pdf/fr/reportingservices/page-margin-size/)
+- [Métadonnées XMP](/pdf/fr/reportingservices/xmp-metadata/)
+- [Informations de débogage](/pdf/fr/reportingservices/debug-information/)
+- [Conformité PDF_A](/pdf/fr/reportingservices/pdf_a-conformance/)

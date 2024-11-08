@@ -3,7 +3,7 @@ title: 提取 XFA 表单
 linktitle: 提取 XFA 表单
 type: docs
 weight: 30
-url: zh/php-java/extract-form/
+url: /zh/php-java/extract-form/
 description: 本节说明如何使用 Aspose.PDF for PHP via Java 从 PDF 文档中提取表单。
 lastmod: "2024-06-05"
 sitemap:

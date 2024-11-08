@@ -3,7 +3,7 @@ title: Simpan Dokumen PDF
 linktitle: Simpan
 type: docs
 weight: 30
-url: id/java/save-pdf-document/
+url: /id/java/save-pdf-document/
 description: Pelajari cara menyimpan file PDF dengan pustaka Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

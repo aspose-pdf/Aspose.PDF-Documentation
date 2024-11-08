@@ -3,7 +3,7 @@ title: Definir Nome de Fonte Padrão
 linktitle: Definir Nome de Fonte Padrão
 type: docs
 weight: 90
-url: pt/java/set-default-font-name/
+url: /pt/java/set-default-font-name/
 description: Esta seção descreve como definir o nome de fonte padrão usando a biblioteca Aspose.PDF para Java.
 lastmod: "2021-06-05"
 ---

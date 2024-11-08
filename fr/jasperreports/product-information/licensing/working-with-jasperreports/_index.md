@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: fr/jasperreports/working-with-jasperreports/
+url: /fr/jasperreports/working-with-jasperreports/
 
 lastmod: "2021-06-05"
 
@@ -38,12 +38,12 @@ Il existe plusieurs façons d'activer une licence :
 
 
 
-- [Appelez setLicense](/pdf/jasperreports/working-with-jasperreports/#call-setlicense).
+- [Appelez setLicense](/pdf/fr/jasperreports/working-with-jasperreports/#call-setlicense).
 
 
-- [Définir un paramètre d'exportation dans le code](/pdf/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
+- [Définir un paramètre d'exportation dans le code](/pdf/fr/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
 
-- [Définir un paramètre d'exportateur dans **applicationContext.xml**](/pdf/jasperreports/working-with-jasperserver/).
+- [Définir un paramètre d'exportateur dans **applicationContext.xml**](/pdf/fr/jasperreports/working-with-jasperserver/).
 
 Les deux premiers sont utilisés avec JasperReports, le dernier avec JasperServer.
 

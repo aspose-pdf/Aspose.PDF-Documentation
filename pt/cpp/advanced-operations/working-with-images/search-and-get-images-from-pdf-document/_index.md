@@ -3,7 +3,7 @@ title: Pesquisar e Obter Imagens de Documento PDF usando C++
 linktitle: Pesquisar e Obter Imagens
 type: docs
 weight: 60
-url: pt/cpp/search-and-get-images-from-pdf-document/
+url: /pt/cpp/search-and-get-images-from-pdf-document/
 description: Esta seção explica como pesquisar e obter imagens de um documento PDF com a biblioteca Aspose.PDF.
 lastmod: "2021-12-18"
 ---

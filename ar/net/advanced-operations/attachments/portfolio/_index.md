@@ -3,7 +3,7 @@ title: العمل مع المحفظة في ملف PDF
 linktitle: المحفظة
 type: docs
 weight: 40
-url: ar/net/portfolio/
+url: /ar/net/portfolio/
 description: كيفية إنشاء محفظة PDF باستخدام C#. يجب استخدام ملف Microsoft Excel ومستند Word وملف صورة لإنشاء محفظة PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -84,7 +84,7 @@ sitemap:
 
 الكود أدناه يؤدي إلى المحفظة التالية.
 
-الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ### محفظة PDF التي تم إنشاؤها بواسطة Aspose.PDF
 

@@ -3,7 +3,7 @@ title: الحصول على الدقة والأبعاد للصور
 linktitle: الحصول على الدقة والأبعاد
 type: docs
 weight: 40
-url: ar/net/get-resolution-and-dimensions-of-embedded-images/
+url: /ar/net/get-resolution-and-dimensions-of-embedded-images/
 description: هذا القسم يظهر التفاصيل في الحصول على الدقة والأبعاد للصور المضمنة
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "هذا القسم يظهر التفاصيل في الحصول على الدقة والأبعاد للصور المضمنة"
 }
 </script>
-يعمل الجزء التالي من الشيفرة أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الشيفرة أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يشرح هذا الموضوع كيفية استخدام فئات العمليات في فضاء الأسماء Aspose.PDF والتي توفر القدرة على الحصول على معلومات الدقة والأبعاد عن الصور دون الحاجة إلى استخراجها.
 

@@ -2,7 +2,7 @@
 title: Supported Parameters
 type: docs
 weight: 20
-url: es/reportingservices/supported-parameters/
+url: /es/reportingservices/supported-parameters/
 lastmod: "2021-06-05"
 ---
 
@@ -12,13 +12,13 @@ Actualmente, el renderizador Aspose.Pdf soporta una amplia gama de parámetros, 
 
 **Esta sección incluye los siguientes temas:**
 
-- [Orientación de la Página](/pdf/reportingservices/page-orientation/)
-- [Formato HTML](/pdf/reportingservices/html-formatting/)
-- [Configuración de Seguridad](/pdf/reportingservices/security-setting/)
-- [IsFontEmbedded](/pdf/reportingservices/isfontembedded/)
+- [Orientación de la Página](/pdf/es/reportingservices/page-orientation/)
+- [Formato HTML](/pdf/es/reportingservices/html-formatting/)
+- [Configuración de Seguridad](/pdf/es/reportingservices/security-setting/)
+- [IsFontEmbedded](/pdf/es/reportingservices/isfontembedded/)
 
-- [Tamaño de Página](/pdf/reportingservices/pagesize/)
-- [Tamaño del margen de la página](/pdf/reportingservices/page-margin-size/)
-- [Metadatos XMP](/pdf/reportingservices/xmp-metadata/)
-- [Información de depuración](/pdf/reportingservices/debug-information/)
-- [Conformidad PDF_A](/pdf/reportingservices/pdf_a-conformance/)
+- [Tamaño de Página](/pdf/es/reportingservices/pagesize/)
+- [Tamaño del margen de la página](/pdf/es/reportingservices/page-margin-size/)
+- [Metadatos XMP](/pdf/es/reportingservices/xmp-metadata/)
+- [Información de depuración](/pdf/es/reportingservices/debug-information/)
+- [Conformidad PDF_A](/pdf/es/reportingservices/pdf_a-conformance/)

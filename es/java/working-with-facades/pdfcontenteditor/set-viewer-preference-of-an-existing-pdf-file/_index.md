@@ -2,7 +2,7 @@
 title: Establecer Preferencia de Visor de un Archivo PDF Existente
 type: docs
 weight: 60
-url: es/java/set-viewer-preference-of-an-existing-pdf-file/
+url: /es/java/set-viewer-preference-of-an-existing-pdf-file/
 description: Esta sección muestra cómo trabajar con Aspose.PDF Facades utilizando la Clase PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

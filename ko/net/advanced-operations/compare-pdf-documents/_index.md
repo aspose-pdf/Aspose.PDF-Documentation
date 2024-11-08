@@ -3,7 +3,7 @@ title: PDF 문서 비교
 linktitle: PDF 비교 
 type: docs
 weight: 180
-url: ko/net/compare-pdf-documents/
+url: /ko/net/compare-pdf-documents/
 description: 24.7 릴리스부터 PDF 문서의 내용을 주석 표시와 나란히 출력으로 비교할 수 있습니다
 lastmod: "2024-08-17"
 sitemap:

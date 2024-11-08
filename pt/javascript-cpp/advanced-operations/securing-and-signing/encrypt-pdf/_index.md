@@ -3,7 +3,7 @@ title:  Criptografar PDF usando JavaScript
 linktitle: Criptografar Arquivo PDF
 type: docs
 weight: 50
-url: pt/javascript-cpp/encrypt-pdf/
+url: /pt/javascript-cpp/encrypt-pdf/
 description: Criptografar Arquivo PDF com Aspose.PDF para JavaScript via C++.
 lastmod: "2022-12-15"
 sitemap:

@@ -3,7 +3,7 @@
 title: 删除注释（外观）
 type: docs
 weight: 10
-url: zh/net/delete-annotations/
+url: /zh/net/delete-annotations/
 description: 本节介绍如何使用 Aspose.PDF Facades 和 PdfAnnotationEditor 类删除注释。
 lastmod: "2021-06-05"
 sitemap:

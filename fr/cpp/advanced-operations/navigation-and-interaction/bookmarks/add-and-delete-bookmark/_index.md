@@ -3,7 +3,7 @@ title: Ajouter et Supprimer un Signet
 linktitle: Ajouter et Supprimer un Signet
 type: docs
 weight: 10
-url: fr/cpp/add-and-delete-bookmark/
+url: /fr/cpp/add-and-delete-bookmark/
 description: Ce sujet explique comment ajouter un signet à un document PDF avec la bibliothèque C++. Vous pouvez également supprimer tous les signets ou des signets particuliers d'un document PDF.
 lastmod: "2022-01-31"
 sitemap:

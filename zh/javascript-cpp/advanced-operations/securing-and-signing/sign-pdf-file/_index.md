@@ -3,7 +3,7 @@ title: 添加数字签名或通过 C++ 在 JavaScript 中对 PDF 进行数字签
 linktitle: 对 PDF 进行数字签名
 type: docs
 weight: 70
-url: zh/javascript-cpp/sign-pdf/
+url: /zh/javascript-cpp/sign-pdf/
 description: 使用 JavaScript 通过 C++ 对 PDF 文档进行数字签名。
 lastmod: "2023-02-17"
 sitemap:

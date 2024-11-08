@@ -2,7 +2,7 @@
 title: 기존 PDF 파일의 뷰어 환경 설정 가져오기
 type: docs
 weight: 70
-url: ko/java/get-viewer-preference-of-an-existing-pdf-file/
+url: /ko/java/get-viewer-preference-of-an-existing-pdf-file/
 description: 이 섹션에서는 PdfContentEditor 클래스를 사용하여 Aspose.PDF Facades와 작업하는 방법을 보여줍니다.
 lastmod: "2021-06-05"
 draft: false

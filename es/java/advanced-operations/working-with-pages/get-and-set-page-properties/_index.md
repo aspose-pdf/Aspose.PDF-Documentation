@@ -2,7 +2,7 @@
 title: Obtener y Establecer Propiedades de Página
 type: docs
 weight: 30
-url: es/java/get-and-set-page-properties/
+url: /es/java/get-and-set-page-properties/
 description: Este tema explica cómo obtener números en un archivo PDF, obtener propiedades de página y determinar el color de la página utilizando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 ---

@@ -3,7 +3,7 @@ title: Mengekstrak Konten Bertag dari PDF
 linktitle: Mengekstrak Konten Bertag
 type: docs
 weight: 20
-url: id/net/extract-tagged-content-from-tagged-pdfs/
+url: /id/net/extract-tagged-content-from-tagged-pdfs/
 description: Artikel ini menjelaskan cara mengekstrak konten bertag dari dokumen PDF menggunakan Aspose.PDF untuk .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Dalam artikel ini Anda akan belajar bagaimana mengekstrak konten bertag dari dokumen PDF menggunakan C#.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mendapatkan Konten PDF Bertag
 

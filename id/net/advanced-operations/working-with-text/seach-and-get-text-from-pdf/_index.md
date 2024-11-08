@@ -3,7 +3,7 @@ title: Mencari dan Mendapatkan Teks dari Halaman PDF
 linktitle: Mencari dan Mendapatkan Teks
 type: docs
 weight: 60
-url: id/net/search-and-get-text-from-pdf/
+url: /id/net/search-and-get-text-from-pdf/
 description: Artikel ini menjelaskan cara menggunakan berbagai alat untuk mencari dan mendapatkan teks dari Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mencari dan Mendapatkan Teks dari Semua Halaman Dokumen PDF
 

@@ -3,7 +3,7 @@ title: Bookmarks em PDF com JavaScript
 linktitle: Bookmarks em PDF
 type: docs
 weight: 10
-url: pt/javascript-cpp/bookmark/
+url: /pt/javascript-cpp/bookmark/
 description: Você pode adicionar ou excluir bookmarks em um documento PDF com JavaScript.
 lastmod: "2023-02-17"
 sitemap:

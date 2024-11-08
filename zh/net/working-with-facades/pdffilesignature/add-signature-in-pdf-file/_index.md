@@ -2,7 +2,7 @@
 title: 在 PDF 文件中添加签名
 type: docs
 weight: 10
-url: zh/net/add-signature-in-pdf/
+url: /zh/net/add-signature-in-pdf/
 description: 本节介绍如何使用 PdfFileSignature 类向 PDF 文件添加签名。
 lastmod: "2021-06-05"
 draft: false

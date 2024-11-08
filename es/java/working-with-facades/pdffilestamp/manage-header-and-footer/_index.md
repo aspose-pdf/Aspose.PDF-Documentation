@@ -2,7 +2,7 @@
 title: Administrar Encabezado y Pie de Página
 type: docs
 weight: 40
-url: es/java/manage-header-and-footer/
+url: /es/java/manage-header-and-footer/
 description: Esta sección explica cómo administrar el Encabezado y Pie de Página con Aspose.PDF Facades utilizando la Clase PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

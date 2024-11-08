@@ -2,7 +2,7 @@
 title: Importar e Exportar Favoritos
 type: docs
 weight: 20
-url: pt/net/import-and-export-bookmarks/
+url: /pt/net/import-and-export-bookmarks/
 description: Esta seção explica como importar e exportar Favoritos com Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: Establecer Privilegios en PDF
 type: docs
 weight: 50
-url: es/net/set-privileges/
+url: /es/net/set-privileges/
 description: Este tema explica cómo establecer privilegios en un archivo PDF existente utilizando la clase PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

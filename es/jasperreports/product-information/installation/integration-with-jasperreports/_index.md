@@ -4,7 +4,7 @@ type: docs
 
 weight: 20
 
-url: es/jasperreports/integration-with-jasperreports/
+url: /es/jasperreports/integration-with-jasperreports/
 
 lastmod: "2021-06-05"
 

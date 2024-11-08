@@ -3,7 +3,7 @@ title: Trabalhando com Colocação de Imagem usando C++
 linktitle: Trabalhando com Colocação de Imagem
 type: docs
 weight: 50
-url: pt/cpp/working-with-image-placement/
+url: /pt/cpp/working-with-image-placement/
 description: Esta seção descreve as funcionalidades de trabalhar com colocação de imagem em um arquivo PDF usando a biblioteca C++.
 lastmod: "2021-12-18"
 ---

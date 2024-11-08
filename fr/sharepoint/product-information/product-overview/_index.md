@@ -4,7 +4,7 @@ title: Présentation du produit
 
 weight: 10
 
-url: fr/sharepoint/aperçu-du-produit/
+url: /fr/sharepoint/aperçu-du-produit/
 
 lastmod: "2020-12-16"
 
@@ -39,7 +39,7 @@ Aspose.PDF pour SharePoint est conçu pour être utilisé avec Microsoft SharePo
 
 
 
-Cette documentation décrit les [fonctionnalités](/pdf/sharepoint/features/), l'[installation](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/), les [limitations d'évaluation](/pdf/sharepoint/evaluate-aspose-pdf/), la [licence](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/) d'Aspose.PDF pour SharePoint, les cas d'utilisation courants et les paramètres.
+Cette documentation décrit les [fonctionnalités](/pdf/fr/sharepoint/features/), l'[installation](/pdf/fr/sharepoint/install-aspose-pdf-for-sharepoint/), les [limitations d'évaluation](/pdf/fr/sharepoint/evaluate-aspose-pdf/), la [licence](/pdf/fr/sharepoint/license-aspose-pdf-for-sharepoint/) d'Aspose.PDF pour SharePoint, les cas d'utilisation courants et les paramètres.
 
 
 {{% /alert %}}

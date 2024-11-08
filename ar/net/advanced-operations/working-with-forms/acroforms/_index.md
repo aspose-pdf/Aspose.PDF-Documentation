@@ -3,7 +3,7 @@ title: العمل مع AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ar/net/acroforms/
+url: /ar/net/acroforms/
 description: من خلال Aspose.PDF لـ .NET يمكنك إنشاء نموذج من البداية، ملء حقل النموذج في مستند PDF، استخراج البيانات من النموذج، وغير ذلك.
 lastmod: "2022-02-17"
 sitemap:
@@ -99,12 +99,12 @@ sitemap:
 لمزيد من التعلم المفصل لقدرات مكتبة Java، راجع المقالات التالية:
 للحصول على دراسة أكثر تفصيلاً لقدرات مكتبة Java، راجع المقالات التالية:
 
-- [إنشاء AcroForm](/pdf/net/create-form) - إنشاء نموذج من البداية باستخدام C#.
-- [ملء AcroForm](/pdf/net/fill-form) - ملء حقل النموذج في مستند PDF الخاص بك.
-- [استخراج AcroForm](/pdf/net/extract-form) - الحصول على قيمة من جميع الحقول أو حقل فردي من مستند PDF.
-- [تعديل AcroForm](/pdf/net/modifing-form) - الحصول أو تعيين FieldLimit، تعيين خط حقل النموذج وغيرها.
-- [نشر بيانات AcroForm](/pdf/net/posting-acroform-data/) - استيراد وتصدير بيانات النموذج إلى ملف XML ومنه.
-- [استيراد وتصدير البيانات](/pdf/net/import-and-export-data/) - استيراد وتصدير البيانات باستخدام فئة النموذج.
+- [إنشاء AcroForm](/pdf/ar/net/create-form) - إنشاء نموذج من البداية باستخدام C#.
+- [ملء AcroForm](/pdf/ar/net/fill-form) - ملء حقل النموذج في مستند PDF الخاص بك.
+- [استخراج AcroForm](/pdf/ar/net/extract-form) - الحصول على قيمة من جميع الحقول أو حقل فردي من مستند PDF.
+- [تعديل AcroForm](/pdf/ar/net/modifing-form) - الحصول أو تعيين FieldLimit، تعيين خط حقل النموذج وغيرها.
+- [نشر بيانات AcroForm](/pdf/ar/net/posting-acroform-data/) - استيراد وتصدير بيانات النموذج إلى ملف XML ومنه.
+- [استيراد وتصدير البيانات](/pdf/ar/net/import-and-export-data/) - استيراد وتصدير البيانات باستخدام فئة النموذج.
 
 <script type="application/ld+json">
 {

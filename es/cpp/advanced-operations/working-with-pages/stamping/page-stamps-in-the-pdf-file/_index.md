@@ -3,7 +3,7 @@ title: Añadir Sellos de Página en PDF
 linktitle: Sellos de página en archivo PDF
 type: docs
 weight: 30
-url: es/cpp/page-stamps-in-the-pdf-file/
+url: /es/cpp/page-stamps-in-the-pdf-file/
 description: Añadir un sello de página a un archivo PDF usando la clase PdfPageStamp con C++.
 lastmod: "2021-12-08"
 sitemap:

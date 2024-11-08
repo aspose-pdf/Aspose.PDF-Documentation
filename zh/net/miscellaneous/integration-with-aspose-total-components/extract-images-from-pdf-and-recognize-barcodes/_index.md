@@ -2,7 +2,7 @@
 title: 从PDF提取图像并识别条形码
 type: docs
 weight: 20
-url: zh/net/extract-images-from-pdf-and-recognize-barcodes/
+url: /zh/net/extract-images-from-pdf-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

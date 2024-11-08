@@ -3,7 +3,7 @@ title: Preencher AcroForm
 linktitle: Preencher AcroForm
 type: docs
 weight: 20
-url: pt/cpp/fill-form/
+url: /pt/cpp/fill-form/
 description: Esta seção explica como preencher um campo de formulário em um documento PDF com Aspose.PDF para C++.
 lastmod: "2021-12-01"
 sitemap:

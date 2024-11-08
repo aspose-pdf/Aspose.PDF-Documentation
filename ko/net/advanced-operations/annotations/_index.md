@@ -3,7 +3,7 @@ title: 주석 작업하기
 linktitle: PDF의 주석
 type: docs
 weight: 100
-url: ko/net/annotations/
+url: /ko/net/annotations/
 description: 이 섹션에서는 Aspose.PDF 라이브러리를 사용하여 PDF 파일에 모든 종류의 주석을 사용하는 방법을 보여줍니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -90,10 +90,10 @@ PDF 뷰어는 일반적으로 텍스트 하이라이트, 메모, 선 또는 도�
 
 다음을 수행할 수 있습니다:
 
-- [주석 개요](/pdf/net/overview-of-annotations/) - PDF 사양에서 정의하는 주석 유형과 Aspose.PDF가 지원하는 내용을 학습합니다.
-- [주석 추가, 삭제 및 가져오기](/pdf/net/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석을 사용하는 방법을 설명합니다.
-- [주석 추가, 삭제 및 가져오기](/pdf/net/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석을 다루는 방법을 설명합니다.
-- [XFDF 형식으로 주석 가져오기 및 내보내기](/pdf/net/import-export-xfdf/) - Aspose.PDF 라이브러리는 XFDF 파일로 주석 데이터를 가져오고 내보내는 메소드를 제공합니다.
+- [주석 개요](/pdf/ko/net/overview-of-annotations/) - PDF 사양에서 정의하는 주석 유형과 Aspose.PDF가 지원하는 내용을 학습합니다.
+- [주석 추가, 삭제 및 가져오기](/pdf/ko/net/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석을 사용하는 방법을 설명합니다.
+- [주석 추가, 삭제 및 가져오기](/pdf/ko/net/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석을 다루는 방법을 설명합니다.
+- [XFDF 형식으로 주석 가져오기 및 내보내기](/pdf/ko/net/import-export-xfdf/) - Aspose.PDF 라이브러리는 XFDF 파일로 주석 데이터를 가져오고 내보내는 메소드를 제공합니다.
 
 <script type="application/ld+json">
 {

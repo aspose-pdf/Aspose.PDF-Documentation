@@ -3,7 +3,7 @@ title: 打开 PDF 文档
 linktitle: 打开
 type: docs
 weight: 20
-url: zh/java/open-pdf-document/
+url: /zh/java/open-pdf-document/
 description: 学习如何使用 Aspose.PDF for Java 打开 PDF 文件。
 lastmod: "2021-06-05"
 sitemap:

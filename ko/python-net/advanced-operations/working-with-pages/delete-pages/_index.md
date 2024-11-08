@@ -3,7 +3,7 @@ title: Python으로 프로그래밍 방식으로 PDF 페이지 삭제
 linktitle: PDF 페이지 삭제
 type: docs
 weight: 80
-url: ko/python-net/delete-pages/
+url: /ko/python-net/delete-pages/
 description: Aspose.PDF for Python via .NET 라이브러리를 사용하여 PDF 파일에서 페이지를 삭제할 수 있습니다.
 lastmod: "2023-04-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Cómo Unir PDF en Node.js
 linktitle: Unir archivos PDF
 type: docs
 weight: 20
-url: es/nodejs-cpp/merge-pdf/
+url: /es/nodejs-cpp/merge-pdf/
 description: Esta página explica cómo unir documentos PDF en un solo archivo PDF con Aspose.PDF para Node.js a través de C++.
 lastmod: "2023-11-16"
 sitemap:

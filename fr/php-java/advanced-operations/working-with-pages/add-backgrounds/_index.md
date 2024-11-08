@@ -3,7 +3,7 @@ title: Ajouter un arrière-plan au PDF
 linktitle: Ajouter des arrière-plans
 type: docs
 weight: 110
-url: fr/php-java/add-backgrounds/
+url: /fr/php-java/add-backgrounds/
 descriptions: Ajoutez une image d'arrière-plan à votre fichier PDF en utilisant PHP. Utilisez l'objet BackgroundArtifact.
 lastmod: "2024-06-05"
 sitemap:

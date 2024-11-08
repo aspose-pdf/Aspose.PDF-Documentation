@@ -2,7 +2,7 @@
 title: Extrair Texto do PDF - Fachadas
 type: docs
 weight: 10
-url: pt/cpp/extract-text-from-pdf-facades/
+url: /pt/cpp/extract-text-from-pdf-facades/
 ---
 
 ## <ins>**Extrair Texto de Todas as Páginas do Documento**

@@ -3,7 +3,7 @@ title: Get, Update and Expand a Bookmark
 linktitle: Get, Update and Expand a Bookmark
 type: docs
 weight: 20
-url: ar/java/get-update-and-expand-bookmark/
+url: /ar/java/get-update-and-expand-bookmark/
 description: يصف هذا المقال كيفية استخدام العلامات المرجعية في ملف PDF. باستخدام مكتبتنا لـ Java، يمكنك الحصول على العلامات المرجعية من ملف PDF، والحصول على رقم صفحة العلامات المرجعية، وتحديث العلامات المرجعية في مستند PDF، وتوسيع العلامات المرجعية عند عرض مستند.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Obter Informações de Arquivo PDF em Python
 type: docs
 weight: 40
-url: pt/python-java/get-pdf-file-information-in-python/
+url: /pt/python-java/get-pdf-file-information-in-python/
 ---
 
 <ins>Para obter informações de arquivo de um documento PDF usando **Aspose.PDF Java para Python**, simplesmente invoque a classe **GetPdfFileInfo**.

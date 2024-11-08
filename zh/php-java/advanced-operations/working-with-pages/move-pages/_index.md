@@ -3,7 +3,7 @@ title: 移动 PDF 页面
 linktitle: 移动 PDF 页面
 type: docs
 weight: 20
-url: zh/php-java/move-pages/
+url: /zh/php-java/move-pages/
 description: 尝试使用 Aspose.PDF for PHP via Java 将页面移动到所需位置或 PDF 文件的末尾。
 lastmod: "2024-06-05"
 sitemap:

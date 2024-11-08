@@ -3,7 +3,7 @@ title: ブックマークの追加と削除
 linktitle: ブックマークの追加と削除
 type: docs
 weight: 10
-url: ja/cpp/add-and-delete-bookmark/
+url: /ja/cpp/add-and-delete-bookmark/
 description: このトピックでは、C++ライブラリを使用してPDFドキュメントにブックマークを追加する方法を説明します。また、PDFドキュメントからすべてまたは特定のブックマークを削除することもできます。
 lastmod: "2022-01-31"
 sitemap:

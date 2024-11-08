@@ -2,7 +2,7 @@
 title: スタンプからテキストを抽出する方法を学ぶ
 type: docs
 weight: 60
-url: ja/net/extract-text-from-stamps/
+url: /ja/net/extract-text-from-stamps/
 description: Aspose.PDF for .NETの特別機能を使用して、スタンプ注釈からテキストを抽出する方法を学びます
 lastmod: "2021-01-30"
 sitemap:
@@ -19,7 +19,7 @@ Aspose.PDF for NETでは、スタンプ注釈からテキストを抽出する�
 1. `TextAbsorber` クラスの新しいオブジェクトを定義する
 1. テキストを取得するために TextAbsorber の visit メソッドを使用する
 
-次のコードスニペットは [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ```csharp
 public static void ExtractText()

@@ -2,7 +2,7 @@
 title: PDF 템플릿 엔진을 사용하여 바코드와 함께 작업 목록을 PDF로 내보내기
 type: docs
 weight: 40
-url: ko/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
+url: /ko/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
 lastmod: "2020-12-16"
 description: PDF SharePoint API는 PDF 템플릿 엔진을 사용하여 작업 목록을 바코드와 함께 PDF로 내보낼 수 있습니다.
 ---

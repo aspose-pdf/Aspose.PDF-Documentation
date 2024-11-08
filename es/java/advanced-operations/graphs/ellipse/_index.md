@@ -3,7 +3,7 @@ title: Agregar Objeto Elipse al Archivo PDF
 linktitle: Agregar Elipse
 type: docs
 weight: 60
-url: es/java/add-ellipse/
+url: /es/java/add-ellipse/
 description: Este artículo explica cómo crear un objeto Elipse en su PDF utilizando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

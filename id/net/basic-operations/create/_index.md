@@ -3,7 +3,7 @@ title: Membuat dokumen PDF secara programatis
 linktitle: Membuat PDF
 type: docs
 weight: 10
-url: id/net/create-document/
+url: /id/net/create-document/
 description: Halaman ini menjelaskan bagaimana cara membuat dokumen PDF dari awal dengan perpustakaan Aspose.PDF.
 ---
 
@@ -18,7 +18,7 @@ Untuk membuat file PDF menggunakan C#, langkah-langkah berikut dapat digunakan.
 3.
 1. Simpan dokumen PDF yang dihasilkan
 
-Potongan kode berikut juga bekerja dengan antarmuka grafis [Aspose.Drawing](/pdf/net/drawing/) yang baru.
+Potongan kode berikut juga bekerja dengan antarmuka grafis [Aspose.Drawing](/pdf/id/net/drawing/) yang baru.
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET

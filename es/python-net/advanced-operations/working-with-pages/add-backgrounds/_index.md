@@ -3,7 +3,7 @@ title: Añadir fondo a PDF con Python
 linktitle: Añadir fondos
 type: docs
 weight: 20
-url: es/python-net/add-backgrounds/
+url: /es/python-net/add-backgrounds/
 description: Añadir imagen de fondo a su archivo PDF con Python. Use la clase BackgroundArtifact.
 lastmod: "2023-04-17"
 sitemap:

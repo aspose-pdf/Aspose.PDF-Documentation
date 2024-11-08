@@ -2,7 +2,7 @@
 title: مستخرج الصور
 type: docs
 weight: 80
-url: ar/net/plugins/imageextractor/
+url: /ar/net/plugins/imageextractor/
 description: استخراج الصور من ملفات PDF بسهولة مع إضافة ImageExtractor
 lastmod: "2024-01-24"
 draft: false

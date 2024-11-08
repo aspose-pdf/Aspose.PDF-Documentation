@@ -3,7 +3,7 @@ title: 向PDF文件添加椭圆对象
 linktitle: 添加椭圆
 type: docs
 weight: 60
-url: zh/java/add-ellipse/
+url: /zh/java/add-ellipse/
 description: 本文解释了如何使用Aspose.PDF for Java向PDF中创建椭圆对象。
 lastmod: "2021-06-05"
 sitemap:

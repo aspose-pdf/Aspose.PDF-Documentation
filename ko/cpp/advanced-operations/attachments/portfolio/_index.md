@@ -3,7 +3,7 @@ title: PDF 포트폴리오 작업
 linktitle: 포트폴리오
 type: docs
 weight: 40
-url: ko/cpp/portfolio/
+url: /ko/cpp/portfolio/
 description: Aspose.PDF for C++를 사용하여 PDF 포트폴리오를 만듭니다. Microsoft Excel 파일, Word 문서 및 이미지 파일을 사용하여 PDF 포트폴리오를 만들어야 합니다.
 lastmod: "2022-02-07"
 sitemap:

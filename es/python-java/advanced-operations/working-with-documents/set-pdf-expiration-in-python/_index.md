@@ -2,7 +2,7 @@
 title: Establecer Expiración de PDF en Python
 type: docs
 weight: 80
-url: es/python-java/set-pdf-expiration-in-python/
+url: /es/python-java/set-pdf-expiration-in-python/
 ---
 
 <ins>Para establecer la expiración de un documento Pdf utilizando **Aspose.PDF Java para Python**, simplemente invoque la clase **SetExpiration**.

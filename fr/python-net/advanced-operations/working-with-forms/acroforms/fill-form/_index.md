@@ -3,7 +3,7 @@ title: Remplir AcroForm - Remplir le formulaire PDF en utilisant Python
 linktitle: Remplir AcroForm
 type: docs
 weight: 20
-url: fr/python-net/fill-form/
+url: /fr/python-net/fill-form/
 keywords: Remplir Formulaire PDF Python
 description: Vous pouvez remplir des formulaires dans votre document PDF avec la bibliothèque Aspose.PDF pour Python.
 lastmod: "2023-02-17"

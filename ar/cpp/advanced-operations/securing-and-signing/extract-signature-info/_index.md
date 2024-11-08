@@ -3,7 +3,7 @@ title: استخراج معلومات الصورة والتوقيع باستخد�
 linktitle: استخراج معلومات الصورة والتوقيع
 type: docs
 weight: 30
-url: ar/cpp/extract-image-and-signature-information/
+url: /ar/cpp/extract-image-and-signature-information/
 description: يمكنك استخراج الصور من حقل التوقيع واستخراج معلومات التوقيع باستخدام فئة SignatureField مع C++.
 lastmod: "2021-12-15"
 sitemap:

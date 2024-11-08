@@ -3,7 +3,7 @@ title: 格式化PDF文档
 linktitle: 格式化PDF文档
 type: docs
 weight: 20
-url: zh/java/formatting-pdf-document/
+url: /zh/java/formatting-pdf-document/
 description: 使用Aspose.PDF for Java格式化PDF文档。使用下一个代码片段来解决您的任务。
 lastmod: "2021-06-05"
 ---

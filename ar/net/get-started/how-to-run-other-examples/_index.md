@@ -3,7 +3,7 @@ title: كيفية تشغيل أمثلة أخرى
 linktitle: كيفية تشغيل أمثلة أخرى
 type: docs
 weight: 50
-url: ar/net/how-to-run-other-examples/    
+url: /ar/net/how-to-run-other-examples/    
 description: توضح هذه الصفحة الإرشادات التي ستكون مفيدة في تلبية المتطلبات التالية قبل تنزيل وتشغيل الأمثلة.
 lastmod: "2021-06-05"
 sitemap:

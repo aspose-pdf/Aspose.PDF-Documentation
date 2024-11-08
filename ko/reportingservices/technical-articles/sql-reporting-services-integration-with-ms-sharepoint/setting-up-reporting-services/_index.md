@@ -2,7 +2,7 @@
 title: Reporting Services 설정하기
 type: docs
 weight: 20
-url: ko/reportingservices/setting-up-reporting-services/
+url: /ko/reportingservices/setting-up-reporting-services/
 lastmod: "2021-06-05"
 ---
 

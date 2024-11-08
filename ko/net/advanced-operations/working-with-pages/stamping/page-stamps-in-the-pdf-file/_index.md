@@ -3,7 +3,7 @@ title: PDF에서 C#을 사용하여 PDF 페이지 스탬프 추가
 linktitle: PDF 파일의 페이지 스탬프
 type: docs
 weight: 30
-url: ko/net/page-stamps-in-the-pdf-file/
+url: /ko/net/page-stamps-in-the-pdf-file/
 description: Aspose.PDF for .NET 라이브러리와 PdfPageStamp 클래스를 사용하여 PDF 문서에 페이지 스탬프를 추가합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp)는 그래픽, 텍스트, 테이블을 포함하는 복합 스탬프를 적용할 때 사용할 수 있습니다. 다음 예제는 Adobe InDesign, Illustrator, Microsoft Word를 사용하여 문구류와 같은 스탬프를 만드는 방법을 보여줍니다. 입력 문서가 있다고 가정하고 파란색과 자주색 테두리를 적용하려고 합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 public static void AddPageStamp()

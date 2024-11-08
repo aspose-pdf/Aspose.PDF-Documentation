@@ -3,7 +3,7 @@ title: Accessibilité et PDF balisés
 linktitle: Accessibilité. PDF balisé
 type: docs
 weight: 120
-url: fr/net/accessibility-tagged-pdf/
+url: /fr/net/accessibility-tagged-pdf/
 description: Aspose.PDF permet de créer des documents PDF balisés, vous permettant de baliser les éléments structurels. En savoir plus sur comment obtenir des PDF accessibles.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,11 +80,11 @@ Un document PDF balisé peut être consulté par des personnes handicapées. L'a
 
 Cette section couvre le sujet suivant :
 
-- [Créer un PDF balisé](/pdf/net/create-tagged-pdf/)
-- [Extraire le contenu balisé des PDF balisés](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [Définir les propriétés des éléments de structure](/pdf/net/setting-structure-elements-properties/)
-- [Travailler avec des tables dans des PDF balisés](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [Test de conformité PDF-UA - Liste des erreurs](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [Créer un PDF balisé](/pdf/fr/net/create-tagged-pdf/)
+- [Extraire le contenu balisé des PDF balisés](/pdf/fr/net/extract-tagged-content-from-tagged-pdfs/)
+- [Définir les propriétés des éléments de structure](/pdf/fr/net/setting-structure-elements-properties/)
+- [Travailler avec des tables dans des PDF balisés](/pdf/fr/net/working-with-table-in-tagged-pdfs/)
+- [Test de conformité PDF-UA - Liste des erreurs](/pdf/fr/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

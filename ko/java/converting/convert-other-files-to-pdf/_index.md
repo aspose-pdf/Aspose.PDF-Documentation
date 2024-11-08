@@ -3,7 +3,7 @@ title: 다양한 파일 형식을 PDF로 변환
 linktitle: 다른 파일 형식을 PDF로 변환
 type: docs
 weight: 80
-url: ko/java/convert-other-files-to-pdf/
+url: /ko/java/convert-other-files-to-pdf/
 lastmod: "2021-11-19"
 description: 이 주제는 Aspose.PDF가 다른 파일 형식을 PDF 문서로 변환하는 방법을 보여줍니다.
 sitemap:

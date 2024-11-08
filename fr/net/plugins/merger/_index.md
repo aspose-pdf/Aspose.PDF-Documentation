@@ -2,7 +2,7 @@
 title: Fusion
 type: docs
 weight: 100
-url: fr/net/plugins/merger/
+url: /fr/net/plugins/merger/
 description: Comment fusionner plusieurs fichiers PDF en un seul en utilisant le plugin de fusion Aspose.PDF
 lastmod: "2024-01-24"
 ---

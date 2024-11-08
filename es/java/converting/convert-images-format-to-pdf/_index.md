@@ -3,7 +3,7 @@ title: Convertir varios formatos de imágenes a PDF
 linktitle: Convertir Imágenes a PDF
 type: docs
 weight: 60
-url: es/java/convert-images-format-to-pdf/
+url: /es/java/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: Este tema muestra cómo la biblioteca Aspose.PDF para Java permite convertir varios formatos de imágenes a PDF.
 sitemap:

@@ -3,7 +3,7 @@ title: 从 PDF 中提取图像
 linktitle: 从 PDF 中提取图像
 type: docs
 weight: 20
-url: zh/cpp/extract-images-from-the-pdf-file/
+url: /zh/cpp/extract-images-from-the-pdf-file/
 description: 如何使用 Aspose.PDF for C++ 从 PDF 中提取图像的一部分。
 lastmod: "2021-06-05"
 sitemap:

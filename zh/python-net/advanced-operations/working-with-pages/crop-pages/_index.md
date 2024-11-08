@@ -3,7 +3,7 @@ title: 使用 Python 编程裁剪 PDF 页面
 linktitle: 裁剪页面
 type: docs
 weight: 70
-url: zh/python-net/crop-pages/
+url: /zh/python-net/crop-pages/
 description: 您可以通过 Aspose.PDF for Python via .NET 获取页面属性，例如宽度、高度、出血框、裁剪框和修剪框。
 lastmod: "2023-04-17"
 sitemap:

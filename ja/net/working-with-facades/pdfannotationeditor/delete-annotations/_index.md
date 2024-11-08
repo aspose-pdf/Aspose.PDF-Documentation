@@ -2,7 +2,7 @@
 title: アノテーションを削除する（ファサード）
 type: docs
 weight: 10
-url: ja/net/delete-annotations/
+url: /ja/net/delete-annotations/
 description: このセクションでは、PdfAnnotationEditor クラスを使用して Aspose.PDF Facades でアノテーションを削除する方法について説明します。
 lastmod: "2021-06-05"
 sitemap:

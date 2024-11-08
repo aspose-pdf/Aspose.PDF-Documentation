@@ -3,7 +3,7 @@ title: 从PDF文件中清除JavaScript代码
 linktitle: 删除JavaScripts
 type: docs
 weight: 50
-url: zh/javascript-cpp/delete-javascripts/
+url: /zh/javascript-cpp/delete-javascripts/
 description: 使用Aspose.PDF直接在Web中清除PDF文件中的JavaScript宏。
 lastmod: "2023-09-17"
 sitemap:

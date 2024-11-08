@@ -2,7 +2,7 @@
 title: إضافة نص إلى ملف PDF موجود في بايثون
 type: docs
 weight: 20
-url: ar/python-java/add-text-to-an-existing-pdf-file-in-python/
+url: /ar/python-java/add-text-to-an-existing-pdf-file-in-python/
 ---
 
 لإضافة نص في مستند PDF باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء وحدة **AddText**.

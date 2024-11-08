@@ -2,7 +2,7 @@
 title: 修改PDF中的注释
 type: docs
 weight: 50
-url: zh/net/modify-annotations/
+url: /zh/net/modify-annotations/
 description: 本节解释如何使用Aspose.PDF Facades将PDF文件中的注释修改为XFDF。
 lastmod: "2021-06-05"
 sitemap:
@@ -53,4 +53,4 @@ sitemap:
 
 ## 另请参阅
 
-尝试比较并找到适合您的注释工作方式。让我们学习 [PDF 注释](/pdf/net/annotations/) 部分。
+尝试比较并找到适合您的注释工作方式。让我们学习 [PDF 注释](/pdf/zh/net/annotations/) 部分。

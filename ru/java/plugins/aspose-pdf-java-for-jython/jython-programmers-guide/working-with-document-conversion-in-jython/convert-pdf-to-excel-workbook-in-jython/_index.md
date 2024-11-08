@@ -2,7 +2,7 @@
 title: Преобразование PDF в Excel Workbook в Jython
 type: docs
 weight: 20
-url: ru/java/convert-pdf-to-excel-workbook-in-jython/
+url: /ru/java/convert-pdf-to-excel-workbook-in-jython/
 lastmod: "2021-06-05"
 ---
 

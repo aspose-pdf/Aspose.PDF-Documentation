@@ -3,7 +3,7 @@ title: Optimize, Compress or Reduce PDF Size in Java
 linktitle: Optimize PDF Document
 type: docs
 weight: 40
-url: id/java/optimize-pdf/
+url: /id/java/optimize-pdf/
 description: Optimalkan file PDF, perkecil semua gambar, kurangi ukuran PDF, Hapus font yang tidak terbenam, Hapus objek yang tidak digunakan dengan Java.
 lastmod: "2021-06-05"
 ---

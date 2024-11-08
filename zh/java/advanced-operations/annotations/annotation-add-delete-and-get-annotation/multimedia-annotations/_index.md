@@ -3,7 +3,7 @@ title: PDF 多媒体注释
 linktitle: 多媒体注释
 type: docs
 weight: 40
-url: zh/java/multimedia-annotation/
+url: /zh/java/multimedia-annotation/
 description: Aspose.PDF for Java 允许您在 PDF 文档中添加、获取和删除多媒体注释。
 lastmod: "2021-11-24"
 sitemap:

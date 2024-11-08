@@ -2,7 +2,7 @@
 title: ブックマークのインポートとエクスポート
 type: docs
 weight: 20
-url: ja/net/import-and-export-bookmarks/
+url: /ja/net/import-and-export-bookmarks/
 description: このセクションでは、Aspose.PDF Facadesを使用してブックマークをインポートおよびエクスポートする方法について説明します。
 lastmod: "2021-06-05"
 draft: false

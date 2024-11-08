@@ -2,7 +2,7 @@
 title: ما الفرق بين تنسيقات FDF وXML وXFDF
 type: docs
 weight: 30
-url: ar/net/whats-the-difference-between-xml-fdf-and-xfdf/
+url: /ar/net/whats-the-difference-between-xml-fdf-and-xfdf/
 description: يوضح هذا القسم الفرق بين نماذج XML وFDF وXFDF باستخدام Aspose.PDF Facades باستخدام فئة Form.
 lastmod: "2021-06-05"
 draft: false

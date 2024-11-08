@@ -2,7 +2,7 @@
 title: Dapatkan Jumlah Halaman PDF di PHP
 type: docs
 weight: 40
-url: id/java/get-page-count-of-pdf-in-php/
+url: /id/java/get-page-count-of-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: أساسيات Aspose.PDF DOM API
 linktitle: أساسيات DOM API
 type: docs
 weight: 120
-url: ar/cpp/basics-of-dom-api/
+url: /ar/cpp/basics-of-dom-api/
 description: يستخدم Aspose.PDF for C++ أيضًا فكرة DOM لتمثيل هيكل مستند PDF من حيث الكائنات. هنا يمكنك قراءة وصف هذا الهيكل.
 lastmod: "2021-06-05"
 sitemap:

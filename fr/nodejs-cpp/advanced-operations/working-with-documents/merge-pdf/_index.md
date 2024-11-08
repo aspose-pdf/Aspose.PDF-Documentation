@@ -3,7 +3,7 @@ title: Comment Fusionner des PDF dans Node.js
 linktitle: Fusionner des fichiers PDF
 type: docs
 weight: 20
-url: fr/nodejs-cpp/merge-pdf/
+url: /fr/nodejs-cpp/merge-pdf/
 description: Cette page explique comment fusionner des documents PDF en un seul fichier PDF avec Aspose.PDF pour Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

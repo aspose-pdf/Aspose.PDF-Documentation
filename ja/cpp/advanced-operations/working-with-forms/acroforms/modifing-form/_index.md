@@ -3,7 +3,7 @@ title: AcroFormの変更
 linktitle: AcroFormの変更
 type: docs
 weight: 40
-url: ja/cpp/modifing-form/
+url: /ja/cpp/modifing-form/
 description: Aspose.PDF for C++ライブラリを使用してPDFファイル内のフォームを変更します。既存のフォームにフィールドを追加または削除したり、フィールド制限を取得および設定したりすることができます。
 lastmod: "2021-12-01"
 sitemap:

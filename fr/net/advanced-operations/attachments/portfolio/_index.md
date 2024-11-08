@@ -3,7 +3,7 @@ title: Travailler avec un Portfolio en PDF
 linktitle: Portfolio
 type: docs
 weight: 40
-url: fr/net/portfolio/
+url: /fr/net/portfolio/
 description: Comment créer un Portfolio PDF avec C#. Vous devriez utiliser un fichier Microsoft Excel, un document Word et un fichier image pour créer un Portfolio PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ L'exemple suivant utilise un fichier Microsoft Excel, un document Word et un fic
 
 Le code ci-dessous aboutit au portfolio suivant.
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ### Un portfolio PDF créé avec Aspose.PDF
 

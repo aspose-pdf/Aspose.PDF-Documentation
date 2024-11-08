@@ -3,7 +3,7 @@ title: Ekstrak teks dari PDF C#
 linktitle: Ekstrak teks dari PDF
 type: docs
 weight: 10
-url: id/net/extract-text-from-all-pdf/
+url: /id/net/extract-text-from-all-pdf/
 description: Artikel ini menjelaskan berbagai cara untuk mengekstrak teks dari dokumen PDF menggunakan Aspose.PDF di C#. 
 lastmod: "2021-06-05"
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 Mengekstrak teks dari dokumen PDF adalah kebutuhan umum. Dalam contoh ini, Anda akan melihat bagaimana Aspose.PDF untuk .NET memungkinkan mengekstrak teks dari semua halaman dokumen PDF. Anda perlu membuat objek dari kelas **TextAbsorber**. Setelah itu, buka PDF menggunakan kelas **Document** dan panggil metode **Accept** dari koleksi **Pages**. Kelas **TextAbsorber** menyerap teks dari dokumen dan mengembalikannya dalam properti **Text**. Potongan kode berikut menunjukkan cara mengekstrak teks dari semua halaman dokumen PDF.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -40,7 +40,7 @@ tw.Close();
 ```
 Panggil metode **Accept** pada halaman tertentu dari objek Dokumen. Indeks adalah nomor halaman tertentu dari mana teks perlu diekstrak.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -84,7 +84,7 @@ Langkah-langkah berikut dan potongan kode menunjukkan cara mengekstrak teks dari
 1. Gunakan metode Process dari kelas TextDevice untuk mengonversi isi ke dalam teks
 1. Simpan teks ke file keluaran
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,8 +133,8 @@ Kelas **TextAbsorber** menyediakan kemampuan untuk mengekstrak teks dari area te
 
 Metode **Accept** dari halaman dipanggil untuk mengekstrak teks. Buat objek dari kelas **Document** dan **TextAbsorber**. Panggil metode **Accept** pada halaman individu, sebagai **Page** Index, dari objek **Document**. **Index** adalah nomor halaman tertentu dari mana teks perlu diekstrak. Anda dapat mendapatkan teks dari properti **Text** dari kelas **TextAbsorber**. Potongan kode berikut menunjukkan cara mengekstrak teks dari halaman individu.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan berkas data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -167,7 +167,7 @@ tw.Close();
 Sebuah berkas PDF mungkin terdiri dari elemen Teks, Gambar, Anotasi, Lampiran, Grafik, dll dan Aspose.PDF untuk .NET menawarkan fitur untuk Menambahkan serta memanipulasi semua elemen ini.
 Sebuah file PDF dapat terdiri dari elemen Teks, Gambar, Anotasi, Lampiran, Grafik, dll dan Aspose.PDF untuk .NET menawarkan fitur untuk Menambahkan serta memanipulasi semua elemen ini.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -206,7 +206,7 @@ Menentukan nilai ScaleFactor antara 0.1 dan -0.1 dianggap sebagai nilai nol, nam
 
 Kami menyarankan penggunaan penskalaan otomatis (ScaleFactor = 0) saat memproses sejumlah besar file PDF untuk ekstraksi konten teks. Atau secara manual mengatur pengurangan redundan lebar grid (sekitar ScaleFactor = 0.5). Namun, Anda tidak boleh menentukan apakah penskalaan diperlukan untuk dokumen konkret atau tidak. Jika Anda mengatur pengurangan redundan lebar grid untuk dokumen (yang tidak memerlukannya), konten teks yang diekstrak akan tetap sepenuhnya memadai. Silakan lihat cuplikan kode berikut.
 
-Cuplikan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -235,8 +235,8 @@ Harap diperhatikan bahwa tidak ada korespondensi langsung antara ScaleFactor bar
 
 Dalam berbagai skenario ekstraksi teks dari dokumen PDF, Anda mungkin membutuhkan fungsi untuk hanya mengekstrak teks yang diberi sorotan dari dokumen PDF. Untuk mengimplementasikan fungsionalitas ini, kami telah menambahkan metode TextMarkupAnnotation.GetMarkedText() dan TextMarkupAnnotation.GetMarkedTextFragments() dalam API. Anda dapat mengekstrak teks yang diberi sorotan dari dokumen PDF dengan memfilter TextMarkupAnnotation dan menggunakan metode yang disebutkan. Potongan kode berikut menunjukkan bagaimana Anda dapat mengekstrak teks yang diberi sorotan dari dokumen PDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -266,7 +266,7 @@ foreach (Annotation annotation in doc.Pages[1].Annotations)
 Terkadang kita memerlukan akses ke item TextFragement atau TextSegment saat memproses dokumen PDF yang dihasilkan dari XML.
 Terkadang kita membutuhkan akses ke item TextFragement atau TextSegment ketika memproses dokumen PDF yang dihasilkan dari XML.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET

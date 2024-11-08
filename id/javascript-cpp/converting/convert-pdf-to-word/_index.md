@@ -3,7 +3,7 @@ title: Mengonversi PDF ke Dokumen Word dalam JavaScript
 linktitle: Mengonversi PDF ke Word
 type: docs
 weight: 10
-url: id/javascript-cpp/convert-pdf-to-doc/
+url: /id/javascript-cpp/convert-pdf-to-doc/
 lastmod: "2023-08-04"
 description: Pelajari cara menulis kode JavaScript untuk konversi PDF ke DOC(DOCX) langsung di Web.
 sitemap:
@@ -22,7 +22,7 @@ Untuk mengedit konten file PDF di Microsoft Word atau pengolah kata lainnya yang
 
 Aspose.PDF untuk JavaScript menghadirkan aplikasi gratis online ["PDF ke DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 
-[![Konversi PDF ke DOC](/pdf/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![Konversi PDF ke DOC](/pdf/id/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## Konversi PDF ke DOC
@@ -91,7 +91,7 @@ Berikut adalah cuplikan kode JavaScript yang menunjukkan contoh sederhana mengub
 
 Aspose.PDF untuk JavaScript menyajikan aplikasi online gratis ["PDF ke Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
 
-[![Aplikasi Gratis Aspose.PDF Konversi PDF ke Word](/pdf/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aplikasi Gratis Aspose.PDF Konversi PDF ke Word](/pdf/id/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

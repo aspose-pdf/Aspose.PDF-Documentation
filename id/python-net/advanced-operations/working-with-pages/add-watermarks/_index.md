@@ -3,7 +3,7 @@ title: Tambahkan watermark ke PDF menggunakan Python
 linktitle: Tambahkan watermark
 type: docs
 weight: 40
-url: id/python-net/add-watermarks/
+url: /id/python-net/add-watermarks/
 description: Artikel ini menjelaskan fitur bekerja dengan artefak dan mendapatkan watermark di PDF menggunakan Python secara programatis.
 lastmod: "2023-04-17"
 sitemap:

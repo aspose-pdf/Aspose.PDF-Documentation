@@ -3,7 +3,7 @@ title: Hapus Gambar dari Berkas PDF
 linktitle: Hapus Gambar
 type: docs
 weight: 20
-url: id/net/delete-images-from-pdf-file/
+url: /id/net/delete-images-from-pdf-file/
 description: Bagian ini menjelaskan cara menghapus gambar dari berkas PDF menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "Bagian ini menjelaskan cara menghapus gambar dari berkas PDF menggunakan Aspose.PDF untuk .NET."
 }
 </script>
-Kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk menghapus gambar dari file PDF:
 

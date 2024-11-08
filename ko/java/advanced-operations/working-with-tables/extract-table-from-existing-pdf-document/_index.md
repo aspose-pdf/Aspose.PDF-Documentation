@@ -3,7 +3,7 @@ title: 기존 PDF 문서에서 테이블 추출
 linktitle: 테이블 추출
 type: docs
 weight: 25
-url: ko/java/extract-table-from-existing-pdf-document/
+url: /ko/java/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for Java를 사용하면 PDF 문서에 포함된 테이블에 대한 다양한 조작을 수행할 수 있습니다. 기존 PDF 문서에서 테이블을 추가 및 추출하고, 새 페이지에 테이블을 렌더링하는 등의 작업을 할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

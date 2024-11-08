@@ -2,7 +2,7 @@
 title: 创建文档
 type: docs
 weight: 10
-url: zh/java/create-pdf-document/
+url: /zh/java/create-pdf-document/
 description: Aspose.PDF for Java 帮助您在几个简单的步骤中创建 PDF 文档和可搜索的 PDF 文件。
 lastmod: "2021-06-05"
 ---

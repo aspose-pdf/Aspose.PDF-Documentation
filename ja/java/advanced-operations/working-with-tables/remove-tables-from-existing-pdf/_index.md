@@ -3,7 +3,7 @@ title: 既存のPDFからテーブルを削除
 linktitle: テーブルを削除
 type: docs
 weight: 40
-url: ja/java/remove-tables-from-existing-pdf/
+url: /ja/java/remove-tables-from-existing-pdf/
 description: Aspose.PDF for Javaを使用すると、PDFドキュメントからテーブルおよび複数のテーブルを削除できます。
 lastmod: "2021-06-05"
 sitemap:

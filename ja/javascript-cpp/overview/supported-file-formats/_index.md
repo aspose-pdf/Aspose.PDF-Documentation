@@ -3,7 +3,7 @@ title: サポートされているファイル形式
 linktitle: サポートされているファイル形式
 type: docs
 weight: 10
-url: ja/javascript-cpp/supported-file-formats/
+url: /ja/javascript-cpp/supported-file-formats/
 description: このページは、Aspose.PDF for JavaScript がどのファイル形式を読み込みおよび保存できるかを示しています。
 lastmod: "2021-06-05"
 sitemap:

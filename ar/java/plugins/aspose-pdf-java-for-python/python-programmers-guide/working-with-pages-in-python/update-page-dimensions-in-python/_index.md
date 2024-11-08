@@ -2,7 +2,7 @@
 title: تحديث أبعاد الصفحة في بايثون
 type: docs
 weight: 90
-url: ar/java/update-page-dimensions-in-python/
+url: /ar/java/update-page-dimensions-in-python/
 lastmod: "2021-06-05"
 ---
 

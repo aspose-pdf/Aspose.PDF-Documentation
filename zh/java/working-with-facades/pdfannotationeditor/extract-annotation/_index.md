@@ -2,7 +2,7 @@
 title: 提取注释（facades）
 type: docs
 weight: 30
-url: zh/java/extract-annotation/
+url: /zh/java/extract-annotation/
 description: 本节解释如何使用 Aspose.PDF Facades 从 PDF 文件中提取注释到 XFDF。
 lastmod: "2021-06-05"
 sitemap:

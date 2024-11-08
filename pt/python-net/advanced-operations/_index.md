@@ -3,7 +3,7 @@ title: Advanced operations
 linktitle: Advanced operations
 type: docs
 weight: 90
-url: pt/python-net/advanced-operations/
+url: /pt/python-net/advanced-operations/
 description: Aspose.PDF para Python via .NET pode realizar tarefas simples e fáceis e lidar com objetivos mais complexos. Verifique a próxima seção para usuários avançados e desenvolvedores.
 lastmod: "2023-04-17"
 sitemap:
@@ -77,17 +77,17 @@ sitemap:
 </script>
 
 
-**Advanced Operations** é uma seção sobre como lidar com arquivos PDF existentes programaticamente, sejam eles documentos criados com Aspose.PDF, conforme discutido em [Operações Básicas](/pdf/python-net/basic-operations/), ou PDFs criados com Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou qualquer outro produtor de PDF.
+**Advanced Operations** é uma seção sobre como lidar com arquivos PDF existentes programaticamente, sejam eles documentos criados com Aspose.PDF, conforme discutido em [Operações Básicas](/pdf/pt/python-net/basic-operations/), ou PDFs criados com Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou qualquer outro produtor de PDF.
 
 Você aprenderá diferentes maneiras de:
 
-- [Trabalhando com Documentos](/pdf/python-net/working-with-documents/) - comprimir, dividir e mesclar documentos e fazer outras operações com o documento inteiro.
-- [Trabalhando com Páginas](/pdf/python-net/working-with-pages/) - adicionar, mover ou remover, cortar páginas, adicionar marcas d'água, carimbos, etc.
-- [Trabalhando com Imagens](/pdf/python-net/working-with-images/) - adicionar, extrair ou remover imagens de documentos PDF.
-- [Anexos](/pdf/python-net/attachments/) - você aprenderá como adicionar e excluir anexos de PDFs programaticamente com Python.
-- [Navegação e Interação](/pdf/python-net/navigation-and-interaction/) - lidar com ações, marcadores, navegar entre páginas.
-- [Anotações](/pdf/python-net/annotations/) - as anotações permitem que os usuários adicionem conteúdo personalizado nas páginas do PDF.
+- [Trabalhando com Documentos](/pdf/pt/python-net/working-with-documents/) - comprimir, dividir e mesclar documentos e fazer outras operações com o documento inteiro.
+- [Trabalhando com Páginas](/pdf/pt/python-net/working-with-pages/) - adicionar, mover ou remover, cortar páginas, adicionar marcas d'água, carimbos, etc.
+- [Trabalhando com Imagens](/pdf/pt/python-net/working-with-images/) - adicionar, extrair ou remover imagens de documentos PDF.
+- [Anexos](/pdf/pt/python-net/attachments/) - você aprenderá como adicionar e excluir anexos de PDFs programaticamente com Python.
+- [Navegação e Interação](/pdf/pt/python-net/navigation-and-interaction/) - lidar com ações, marcadores, navegar entre páginas.
+- [Anotações](/pdf/pt/python-net/annotations/) - as anotações permitem que os usuários adicionem conteúdo personalizado nas páginas do PDF.
  Você pode adicionar, excluir e modificar a anotação nos documentos PDF.
-- [Trabalhando com Tabelas](/pdf/python-net/working-with-tables/) - inserir, decorar tabela em PDF, extrair dados tabulares.
-- [Trabalhando com Formulários](/pdf/python-net/working-with-forms/) - lidar com documentos PDF interativos, adicionar campos de formulário, extrair dados.
-- [Trabalhando com Texto](/pdf/python-net/working-with-text/) - adicionar, formatar, pesquisar e substituir texto em PDF.
+- [Trabalhando com Tabelas](/pdf/pt/python-net/working-with-tables/) - inserir, decorar tabela em PDF, extrair dados tabulares.
+- [Trabalhando com Formulários](/pdf/pt/python-net/working-with-forms/) - lidar com documentos PDF interativos, adicionar campos de formulário, extrair dados.
+- [Trabalhando com Texto](/pdf/pt/python-net/working-with-text/) - adicionar, formatar, pesquisar e substituir texto em PDF.

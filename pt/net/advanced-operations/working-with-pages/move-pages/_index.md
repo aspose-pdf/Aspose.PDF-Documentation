@@ -3,7 +3,7 @@ title: Mova Páginas PDF Programaticamente em C#
 linktitle: Mover Páginas PDF
 type: docs
 weight: 20
-url: pt/net/move-pages/
+url: /pt/net/move-pages/
 description: Tente mover páginas para o local desejado ou para o final de um arquivo PDF usando Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 Este tópico explica como mover uma página de um documento PDF para o final de outro documento usando C#.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Para mover uma página, devemos:
 

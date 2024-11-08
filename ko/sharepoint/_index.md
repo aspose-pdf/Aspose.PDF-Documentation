@@ -10,7 +10,7 @@ type: docs
 
 weight: 110
 
-url: ko/sharepoint/
+url: /ko/sharepoint/
 
 is_root: true
 
@@ -50,21 +50,21 @@ Aspose.PDF for SharePoint는 사용자가 목록, 목록 항목 및 SharePoint �
 
 
 
-- [Aspose.PDF for SharePoint 제품 개요](/pdf/sharepoint/product-overview/) 
+- [Aspose.PDF for SharePoint 제품 개요](/pdf/ko/sharepoint/product-overview/) 
 
-- [Aspose.PDF for SharePoint 지원 파일 형식](/pdf/sharepoint/supported-file-formats/)
+- [Aspose.PDF for SharePoint 지원 파일 형식](/pdf/ko/sharepoint/supported-file-formats/)
 
 
-- [Aspose.PDF for SharePoint 기능](/pdf/sharepoint/features/)
+- [Aspose.PDF for SharePoint 기능](/pdf/ko/sharepoint/features/)
 
 - [Aspose.PDF for SharePoint 릴리스 노트](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 
 - [Aspose.PDF for SharePoint 다운로드](https://releases.aspose.com/pdf/sharepoint/)
 
-- [Aspose.Pdf for SharePoint 설치](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Aspose.Pdf for SharePoint 설치](/pdf/ko/sharepoint/install-aspose-pdf-for-sharepoint/)
 
-- [Aspose.Pdf 평가하기](/pdf/sharepoint/evaluate-aspose-pdf/)
+- [Aspose.Pdf 평가하기](/pdf/ko/sharepoint/evaluate-aspose-pdf/)
 
-- [Aspose.Pdf for SharePoint 라이선스](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Aspose.Pdf for SharePoint 라이선스](/pdf/ko/sharepoint/license-aspose-pdf-for-sharepoint/)
 
-- [ API 제한사항](/pdf/sharepoint/api-limitations/)
+- [ API 제한사항](/pdf/ko/sharepoint/api-limitations/)

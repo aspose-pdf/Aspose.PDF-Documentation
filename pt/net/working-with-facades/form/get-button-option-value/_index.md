@@ -2,7 +2,7 @@
 title: Obter Valor da Opção de Botão
 type: docs
 weight: 40
-url: pt/net/get-button-option-value/
+url: /pt/net/get-button-option-value/
 description: Esta seção explica como obter o Valor da Opção de Botão com Aspose.PDF Facades usando a Classe Form.
 lastmod: "2021-06-05"
 draft: false

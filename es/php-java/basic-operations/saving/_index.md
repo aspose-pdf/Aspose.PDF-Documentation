@@ -3,7 +3,7 @@ title: Guardar Documento PDF
 linktitle: Guardar
 type: docs
 weight: 30
-url: es/php-java/save-pdf-document/
+url: /es/php-java/save-pdf-document/
 description: Aprenda cómo guardar un archivo PDF con la biblioteca Aspose.PDF para PHP a través de Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF 파일을 다른 형식으로 변환
 linktitle: PDF를 다른 형식으로 변환 
 type: docs
 weight: 90
-url: ko/cpp/convert-pdf-to-other-files/
+url: /ko/cpp/convert-pdf-to-other-files/
 lastmod: "2021-11-19"
 description: 이 주제는 Aspose.PDF가 PDF 파일을 다른 파일 형식으로 변환할 수 있는 방법을 보여줍니다.
 sitemap:

@@ -3,7 +3,7 @@ title: Преобразование файла PDF в формат HTML
 linktitle: Преобразование файла PDF в формат HTML
 type: docs
 weight: 50
-url: ru/java/convert-pdf-to-html/
+url: /ru/java/convert-pdf-to-html/
 lastmod: "2021-11-19"
 description: Эта тема показывает, как Aspose.PDF позволяет конвертировать файл PDF в формат HTML с использованием Java библиотеки.
 sitemap:

@@ -3,7 +3,7 @@ title: Excluir Páginas PDF programaticamente
 linktitle: Excluir Páginas PDF
 type: docs
 weight: 40
-url: pt/java/delete-pages/
+url: /pt/java/delete-pages/
 description: Você pode excluir páginas do seu arquivo PDF usando a biblioteca Java.
 lastmod: "2021-06-05"
 sitemap:

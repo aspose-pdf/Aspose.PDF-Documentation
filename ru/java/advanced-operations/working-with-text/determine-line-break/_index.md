@@ -3,7 +3,7 @@ title: Определение Разрыва Строки
 linktitle: Определение Разрыва Строки
 type: docs
 weight: 70
-url: ru/java/determine-line-break/
+url: /ru/java/determine-line-break/
 description: Узнайте больше о том, как определить разрыв строки многострочного TextFragment с помощью Java
 lastmod: "2021-06-05"
 sitemap:

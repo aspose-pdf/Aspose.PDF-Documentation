@@ -3,7 +3,7 @@ title: Дополнительные аннотации с использован
 linktitle: Дополнительные аннотации
 type: docs
 weight: 60
-url: ru/python-net/extra-annotations/
+url: /ru/python-net/extra-annotations/
 description: Этот раздел описывает, как добавлять, получать и удалять дополнительные виды аннотаций из вашего PDF документа.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 使用C++为PDF添加背景
 linktitle: 添加背景
 type: docs
 weight: 110
-url: zh/cpp/add-backgrounds/
+url: /zh/cpp/add-backgrounds/
 descriptions: 使用C++将背景图像添加到PDF文件。使用BackgroundArtifact对象。
 lastmod: "2021-12-03"
 sitemap:

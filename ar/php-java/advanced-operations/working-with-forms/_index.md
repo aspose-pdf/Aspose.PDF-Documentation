@@ -3,7 +3,7 @@ title: العمل مع النماذج
 linktitle: العمل مع النماذج
 type: docs
 weight: 50
-url: ar/php-java/working-with-forms/
+url: /ar/php-java/working-with-forms/
 description: توضح هذه القسم كيفية العمل مع AcroForms و XFA Forms في مستندات PDF الخاصة بك باستخدام Aspose.PDF لـ PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -20,5 +20,5 @@ AcroForms هي ملفات PDF تحتوي على حقول نموذج. يمكن إ
 
 يناقش القسم أيضًا كيفية استخدام Aspose.PDF لـ PHP عبر Java لاكتشاف وتعيين الحقول المتاحة داخل ملف PDF موجود مع AcroForms. أيضًا، ستتعلم كيفية العمل مع XFA - وهي تقنية أخرى لعرض النماذج تعتمد على XML.
 
-- [AcroForms](/pdf/php-java/acroforms/) - إنشاء نموذج، تعبئة حقل النموذج، استخراج البيانات من النموذج، تعديل الحقول في ملف PDF الخاص بك باستخدام مكتبة PHP.
-- [XFA Forms](/pdf/php-java/xfa-forms/) - تعبئة حقول XFA، تحويل XFA، الحصول على خصائص حقول XFA.
+- [AcroForms](/pdf/ar/php-java/acroforms/) - إنشاء نموذج، تعبئة حقل النموذج، استخراج البيانات من النموذج، تعديل الحقول في ملف PDF الخاص بك باستخدام مكتبة PHP.
+- [XFA Forms](/pdf/ar/php-java/xfa-forms/) - تعبئة حقول XFA، تحويل XFA، الحصول على خصائص حقول XFA.

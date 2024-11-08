@@ -3,7 +3,7 @@ title: Mengubah Gambar ke PDF dalam Python
 linktitle: Mengubah Gambar ke file PDF
 type: docs
 weight: 10
-url: id/python-cpp/convert-image-to-pdf/
+url: /id/python-cpp/convert-image-to-pdf/
 lastmod: "2024-04-22"
 description: Topik ini menunjukkan cara mengubah Gambar menjadi PDF menggunakan Aspose.PDF untuk Python melalui pustaka C++.
 sitemap:

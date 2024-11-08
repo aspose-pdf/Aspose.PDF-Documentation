@@ -3,7 +3,7 @@ title: تحويل HTML والنصوص والصور إلى PDF في SharePoint
 linktitle: التحويل إلى PDF
 type: docs
 weight: 30
-url: ar/sharepoint/convert-to-pdf/
+url: /ar/sharepoint/convert-to-pdf/
 lastmod: "2020-12-16"
 description: يتيح PDF SharePoint API تحويل ملفات HTML وملفات النصوص والصور (JPG، PNG، GIF، TIFF، BMP) إلى تنسيق PDF.
 ---

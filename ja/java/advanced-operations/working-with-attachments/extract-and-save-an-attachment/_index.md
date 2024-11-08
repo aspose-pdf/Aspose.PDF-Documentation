@@ -3,7 +3,7 @@ title: 添付ファイルの抽出と保存
 linktitle: 添付ファイルの抽出と保存
 type: docs
 weight: 20
-url: ja/java/extract-and-save-an-attachment/
+url: /ja/java/extract-and-save-an-attachment/
 description: Aspose.PDF for Javaを使用すると、PDFドキュメントからすべての添付ファイルを取得できます。また、ドキュメントから個々の添付ファイルを取得することもできます。
 lastmod: "2021-06-05"
 sitemap:
@@ -55,7 +55,7 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## 添付ファイル情報の取得
 
-[PDFドキュメントから添付ファイルを取得する](/pdf/java/get-attachments-from-a-pdf-document/)で説明されているように、添付ファイル情報は[FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification)オブジェクトに保持され、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)オブジェクトのEmbeddedFilesコレクションに他の添付ファイルと一緒に収集されます。
+[PDFドキュメントから添付ファイルを取得する](/pdf/ja/java/get-attachments-from-a-pdf-document/)で説明されているように、添付ファイル情報は[FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification)オブジェクトに保持され、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)オブジェクトのEmbeddedFilesコレクションに他の添付ファイルと一緒に収集されます。
 
 [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification)オブジェクトは、添付ファイルに関する情報を取得するメソッドを提供します。例えば：
 

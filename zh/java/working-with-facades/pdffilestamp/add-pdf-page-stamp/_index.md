@@ -2,7 +2,7 @@
 title: 添加 PDF 页面印章
 type: docs
 weight: 10
-url: zh/java/add-pdf-page-stamp/
+url: /zh/java/add-pdf-page-stamp/
 description: 本节解释了如何使用 PdfFileStamp 类与 Aspose.PDF Facades 一起工作。
 lastmod: "2021-06-05"
 draft: false

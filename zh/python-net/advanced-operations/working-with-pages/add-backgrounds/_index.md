@@ -3,7 +3,7 @@ title: 使用 Python 添加背景到 PDF
 linktitle: 添加背景
 type: docs
 weight: 20
-url: zh/python-net/add-backgrounds/
+url: /zh/python-net/add-backgrounds/
 description: 使用 Python 向您的 PDF 文件添加背景图像。使用 BackgroundArtifact 类。
 lastmod: "2023-04-17"
 sitemap:

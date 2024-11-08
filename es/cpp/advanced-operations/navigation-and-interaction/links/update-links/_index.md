@@ -3,7 +3,7 @@ title: Actualizar Enlaces en PDF
 linktitle: Actualizar Enlaces
 type: docs
 weight: 20
-url: es/cpp/update-links/
+url: /es/cpp/update-links/
 description: Actualizar enlaces en PDF programáticamente con Aspose.PDF para C++. Esta guía trata sobre cómo actualizar enlaces en un archivo PDF. 
 lastmod: "2022-01-31"
 sitemap:

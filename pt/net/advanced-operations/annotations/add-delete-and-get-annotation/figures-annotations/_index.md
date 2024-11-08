@@ -3,7 +3,7 @@ title: Adicionar Anotações de Figuras usando C#
 linktitle: Anotações de Figuras
 type: docs
 weight: 30
-url: pt/net/figures-annotation/
+url: /pt/net/figures-annotation/
 description: Este artigo descreve como adicionar, obter e deletar anotações de figuras do seu documento PDF com Aspose.PDF para .NET
 lastmod: "2023-09-12"
 sitemap:
@@ -89,7 +89,7 @@ Aplicativo de gerenciamento de documentos PDF oferece várias ferramentas para a
 
 A abordagem para adicionar a anotação é típica para qualquer uma delas.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 1. Carregue o arquivo PDF ou crie um novo por [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Crie a nova anotação e defina os parâmetros (novo Retângulo, novo Ponto, título, cor, largura etc).

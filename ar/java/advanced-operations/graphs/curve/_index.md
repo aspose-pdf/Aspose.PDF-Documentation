@@ -3,7 +3,7 @@ title: إضافة كائن منحنى إلى ملف PDF
 linktitle: إضافة منحنى
 type: docs
 weight: 30
-url: ar/java/add-curve/
+url: /ar/java/add-curve/
 description: تشرح هذه المقالة كيفية إنشاء كائن منحنى في ملف PDF باستخدام Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

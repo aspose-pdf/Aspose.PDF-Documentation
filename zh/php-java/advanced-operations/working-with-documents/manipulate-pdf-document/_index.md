@@ -3,7 +3,7 @@ title: 操作 PDF 文档
 linktitle: 操作 PDF 文档
 type: docs
 weight: 30
-url: zh/php-java/manipulate-pdf-document/
+url: /zh/php-java/manipulate-pdf-document/
 description: 本文包含有关如何验证 PDF A 标准的 PDF 文档、如何处理目录、如何设置 PDF 到期日期以及如何确定 PDF 文件生成进度的信息。
 lastmod: "2024-06-05"
 ---

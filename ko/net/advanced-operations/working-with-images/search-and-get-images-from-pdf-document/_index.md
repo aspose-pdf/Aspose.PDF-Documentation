@@ -3,7 +3,7 @@ title: PDF에서 이미지 검색 및 가져오기
 linktitle: 이미지 검색 및 가져오기
 type: docs
 weight: 60
-url: ko/net/search-and-get-images-from-pdf-document/
+url: /ko/net/search-and-get-images-from-pdf-document/
 description: 이 섹션에서는 Aspose.PDF 라이브러리를 사용하여 PDF 문서에서 이미지를 검색하고 가져오는 방법을 설명합니다.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 ImagePlacementAbsorber는 PDF 문서의 모든 페이지에서 이미지를 검색할 수 있게 해줍니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 문서 전체에서 이미지를 검색하려면:
 

@@ -3,7 +3,7 @@ title: 使用运算符
 linktitle: 使用运算符
 type: docs
 weight: 170
-url: zh/java/operators/
+url: /zh/java/operators/
 description: 本主题解释了如何使用 Aspose.PDF 的运算符。运算符类为 PDF 操作提供了强大的功能。
 lastmod: "2021-06-05"
 sitemap:

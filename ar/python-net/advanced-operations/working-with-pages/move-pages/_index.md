@@ -3,7 +3,7 @@ title: نقل صفحات PDF برمجياً باستخدام بايثون
 linktitle: نقل صفحات PDF
 type: docs
 weight: 100
-url: ar/python-net/move-pages/
+url: /ar/python-net/move-pages/
 description: حاول نقل الصفحات إلى الموقع المطلوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF لبايثون عبر .NET.
 lastmod: "2023-04-17"
 sitemap:

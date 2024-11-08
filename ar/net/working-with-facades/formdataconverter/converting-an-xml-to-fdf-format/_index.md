@@ -2,7 +2,7 @@
 title: تحويل XML إلى تنسيق FDF
 type: docs
 weight: 20
-url: ar/net/converting-an-xml-to-fdf-format/
+url: /ar/net/converting-an-xml-to-fdf-format/
 description: يوضح هذا القسم كيفية تحويل XML إلى تنسيق FDF باستخدام FormDataConverter.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-يدعم النطاق [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/net/) نماذج AcroForms بشكل جيد جداً. كما يدعم استيراد وتصدير بيانات النماذج إلى تنسيقات ملفات مختلفة مثل FDF وXFDF وXML. ومع ذلك، في بعض الأحيان يحتاج المطور إلى تحويل تنسيق إلى آخر. في هذه المقالة، سوف نلقي نظرة على الميزة التي تسمح لنا بتحويل تنسيق FDF إلى XML.
+يدعم النطاق [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) نماذج AcroForms بشكل جيد جداً. كما يدعم استيراد وتصدير بيانات النماذج إلى تنسيقات ملفات مختلفة مثل FDF وXFDF وXML. ومع ذلك، في بعض الأحيان يحتاج المطور إلى تحويل تنسيق إلى آخر. في هذه المقالة، سوف نلقي نظرة على الميزة التي تسمح لنا بتحويل تنسيق FDF إلى XML.
 
 {{% /alert %}}
 

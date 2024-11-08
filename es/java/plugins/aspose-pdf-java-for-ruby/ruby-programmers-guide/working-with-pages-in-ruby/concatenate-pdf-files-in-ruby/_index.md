@@ -2,7 +2,7 @@
 title: Concatenate archivos PDF en Ruby
 type: docs
 weight: 10
-url: es/java/concatenate-pdf-files-in-ruby/
+url: /es/java/concatenate-pdf-files-in-ruby/
 lastmod: "2021-06-05"
 ---
 

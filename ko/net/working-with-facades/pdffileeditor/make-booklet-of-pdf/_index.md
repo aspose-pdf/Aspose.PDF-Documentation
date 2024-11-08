@@ -2,7 +2,7 @@
 title: PDF 소책자 만들기
 type: docs
 weight: 80
-url: ko/net/make-booklet-of-pdf/
+url: /ko/net/make-booklet-of-pdf/
 description: 이 섹션에서는 PdfFileEditor 클래스를 사용하여 Aspose.PDF Facades로 PDF 소책자를 만드는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

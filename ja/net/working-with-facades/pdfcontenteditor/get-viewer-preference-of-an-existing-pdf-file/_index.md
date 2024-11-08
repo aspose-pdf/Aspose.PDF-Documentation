@@ -2,7 +2,7 @@
 title: 既存のPDFファイルのビューアプリファレンスを取得する
 type: docs
 weight: 70
-url: ja/net/get-viewer-preference-of-an-existing-pdf-file/
+url: /ja/net/get-viewer-preference-of-an-existing-pdf-file/
 description: このセクションでは、PdfContentEditorクラスを使用して既存のPDFファイルのビューアプリファレンスを取得する方法を示します。
 lastmod: "2021-06-05"
 draft: false

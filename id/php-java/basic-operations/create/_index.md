@@ -3,7 +3,7 @@ title: Membuat Dokumen PDF
 linktitle: Buat
 type: docs
 weight: 10
-url: id/php-java/create-document/
+url: /id/php-java/create-document/
 description: Pelajari cara membuat file PDF di Aspose.PDF untuk PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

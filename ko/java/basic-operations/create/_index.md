@@ -3,7 +3,7 @@ title: PDF 문서 생성
 linktitle: 생성
 type: docs
 weight: 10
-url: ko/java/create-document/
+url: /ko/java/create-document/
 description: Aspose.PDF for Java에서 PDF 파일을 생성하는 방법을 배우세요.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Ekstrak AcroForm - Ekstrak Data Formulir dari PDF dalam Python
 linktitle: Ekstrak AcroForm
 type: docs
 weight: 30
-url: id/python-net/extract-form/
+url: /id/python-net/extract-form/
 keywords: ekstrak data formulir dari pdf python
 description: Ekstrak formulir dari dokumen PDF Anda dengan pustaka Aspose.PDF untuk Python. Dapatkan nilai dari bidang individu dari file PDF.
 lastmod: "2023-02-17"

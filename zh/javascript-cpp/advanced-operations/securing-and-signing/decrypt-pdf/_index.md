@@ -3,7 +3,7 @@ title: 使用JavaScript解密PDF
 linktitle: 解密PDF文件
 type: docs
 weight: 40
-url: zh/javascript-cpp/decrypt-pdf/
+url: /zh/javascript-cpp/decrypt-pdf/
 description: 使用Aspose.PDF for JavaScript via C++解密PDF文件。
 lastmod: "2022-12-15"
 sitemap:

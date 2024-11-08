@@ -3,7 +3,7 @@ title: Извлечение изображений из PDF файла
 linktitle: Извлечение изображений
 type: docs
 weight: 30
-url: ru/java/extract-images-from-pdf-file/
+url: /ru/java/extract-images-from-pdf-file/
 description: Этот раздел показывает, как извлечь изображения из PDF файла с использованием Java библиотеки.
 lastmod: "2021-06-05"
 ---

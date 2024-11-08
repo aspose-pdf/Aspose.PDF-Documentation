@@ -3,7 +3,7 @@ title: Aspose.PDF for Python의 주요 기능
 linktitle: 주요 기능
 type: docs
 weight: 20
-url: ko/python-net/key-features/
+url: /ko/python-net/key-features/
 description: Aspose.PDF for Python via .NET은 일반적인 기능을 보여줍니다. 지원되는 PDF 버전과 PDF로 수행할 수 있는 모든 조작을 보여줍니다.
 lastmod: "2022-12-21"
 sitemap:

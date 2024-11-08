@@ -3,7 +3,7 @@ title: Rogner les pages PDF programmablement en C#
 linktitle: Rogner les Pages
 type: docs
 weight: 80
-url: fr/net/crop-pages/
+url: /fr/net/crop-pages/
 description: Vous pouvez obtenir les propriétés des pages, telles que la largeur, la hauteur, les boîtes de saignement, de rognage et de coupe en utilisant Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ Chaque page d'un fichier PDF possède un certain nombre de propriétés, telles 
 - **Page.Rect** : l'intersection (rectangle communément visible) du MediaBox et du DropBox. L'image ci-dessous illustre ces propriétés.
 Pour plus de détails, veuillez visiter [cette page](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Le snippet ci-dessous montre comment rogner la page :
 

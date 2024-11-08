@@ -2,7 +2,7 @@
 title: Python에서 DOM을 사용하여 HTML 문자열 추가
 type: docs
 weight: 10
-url: ko/python-java/add-html-string-using-dom-in-python/
+url: /ko/python-java/add-html-string-using-dom-in-python/
 ---
 
 **Aspose.PDF Java for Python**을 사용하여 PDF 문서에 HTML 문자열을 추가하려면, **AddHtml** 모듈을 호출하십시오.

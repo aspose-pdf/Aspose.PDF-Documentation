@@ -3,7 +3,7 @@ title: تحسين PDF باستخدام Aspose.PDF لـ Node.js عبر C++
 linktitle: تحسين ملف PDF
 type: docs
 weight: 10
-url: ar/nodejs-cpp/optimize-pdf/
+url: /ar/nodejs-cpp/optimize-pdf/
 description: تحسين وضغط ملفات PDF لتصفح سريع عبر الويب باستخدام بيئة Node.js.
 lastmod: "2023-11-16"
 sitemap:

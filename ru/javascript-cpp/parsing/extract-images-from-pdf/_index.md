@@ -3,7 +3,7 @@ title: Извлечение изображений из PDF на JavaScript
 linktitle: Извлечение изображений из PDF
 type: docs
 weight: 20
-url: ru/javascript-cpp/extract-images-from-the-pdf-file/
+url: /ru/javascript-cpp/extract-images-from-the-pdf-file/
 description: Как извлечь часть изображения из PDF с использованием инструментария Aspose.PDF для JavaScript.
 lastmod: "2023-09-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 画像と署名情報を抽出
 linktitle: 画像と署名情報を抽出
 type: docs
 weight: 30
-url: ja/net/extract-image-and-signature-information/
+url: /ja/net/extract-image-and-signature-information/
 description: 署名フィールドから画像を抽出し、SignatureField クラスを使用して署名情報を抽出することができます。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "署名フィールドから画像を抽出し、SignatureField クラスを使用して署名情報を抽出することができます。"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## 署名フィールドから画像を抽出する
 

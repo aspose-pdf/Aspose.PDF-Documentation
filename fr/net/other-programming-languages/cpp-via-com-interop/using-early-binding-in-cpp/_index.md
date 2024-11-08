@@ -2,14 +2,14 @@
 title: Utilisation du liage précoce en CPP
 type: docs
 weight: 10
-url: fr/net/using-early-binding-in-cpp/
+url: /fr/net/using-early-binding-in-cpp/
 ---
 
 ## Prérequis
 
 {{% alert color="primary" %}}
 
-Veuillez enregistrer Aspose.PDF pour .NET avec COM Interop, veuillez consulter l'article intitulé [Utiliser Aspose.pdf pour .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Veuillez enregistrer Aspose.PDF pour .NET avec COM Interop, veuillez consulter l'article intitulé [Utiliser Aspose.pdf pour .NET via COM Interop](/pdf/fr/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

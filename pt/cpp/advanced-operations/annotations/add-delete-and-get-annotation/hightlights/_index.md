@@ -3,7 +3,7 @@ title: Anotação de Destaques em PDF usando C++
 linktitle: Anotação de Destaques
 type: docs
 weight: 20
-url: pt/cpp/highlights-annotation/
+url: /pt/cpp/highlights-annotation/
 description: As anotações de marcação são apresentadas no texto como destaques, sublinhados, tachados ou sublinhados irregulares no texto de um documento.
 lastmod: "2021-11-24"
 sitemap:

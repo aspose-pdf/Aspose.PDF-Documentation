@@ -3,7 +3,7 @@ title: PDFドキュメントの保護と署名
 linktitle: PDFの保護と署名
 type: docs
 weight: 150
-url: ja/cpp/securing-and-signing/
+url: /ja/cpp/securing-and-signing/
 description: このセクションでは、C++を使用してPDFドキュメントに署名を使用し保護する機能について説明します
 lastmod: "2021-12-15"
 sitemap:
@@ -15,6 +15,6 @@ sitemap:
 
 この記事では、PDFファイルにデジタル署名を追加し、スマートカードから署名する方法、PDFから画像と署名情報を抽出する方法を学びます。また、このトピックでは、PDFドキュメントを暗号化および復号化する方法も示しています。
 
-- [PDFファイルにデジタル署名を追加する](/pdf/cpp/digitally-sign-pdf-file/)
-- [特権の設定、PDFファイルの暗号化と復号化](/pdf/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [画像と署名情報の抽出](/pdf/cpp/extract-image-and-signature-information/)
+- [PDFファイルにデジタル署名を追加する](/pdf/ja/cpp/digitally-sign-pdf-file/)
+- [特権の設定、PDFファイルの暗号化と復号化](/pdf/ja/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [画像と署名情報の抽出](/pdf/ja/cpp/extract-image-and-signature-information/)

@@ -3,7 +3,7 @@ title: Python에서 PDF를 텍스트로 변환
 linktitle: PDF를 다른 형식으로 변환
 type: docs
 weight: 90
-url: ko/python-cpp/convert-pdf-to-other-files/
+url: /ko/python-cpp/convert-pdf-to-other-files/
 lastmod: "2022-12-23"
 keywords: convert, PDF, EPUB, LaText, Text, XPS, Python
 description: 이 주제에서는 PDF 파일을 Python을 사용하여 텍스트와 같은 다른 파일 형식으로 변환하는 방법을 보여줍니다.

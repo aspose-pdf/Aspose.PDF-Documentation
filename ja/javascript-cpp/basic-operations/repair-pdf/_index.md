@@ -3,7 +3,7 @@ title: JavaScript経由でC++を使用してPDFを修復する
 linktitle: PDFを修復
 type: docs
 weight: 10
-url: ja/javascript-cpp/repair-pdf/
+url: /ja/javascript-cpp/repair-pdf/
 description: このトピックでは、JavaScriptを介してC++でPDFを修復する方法について説明します
 lastmod: "2023-02-17"
 sitemap:

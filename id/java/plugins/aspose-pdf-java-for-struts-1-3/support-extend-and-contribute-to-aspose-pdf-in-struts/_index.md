@@ -2,7 +2,7 @@
 title: Mendukung, Memperluas, dan Berkontribusi pada Aspose.Pdf di Struts
 type: docs
 weight: 20
-url: id/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
+url: /id/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
 lastmod: "2021-06-05"
 ---
 

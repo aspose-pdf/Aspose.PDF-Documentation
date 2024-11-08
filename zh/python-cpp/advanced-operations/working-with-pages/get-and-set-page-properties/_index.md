@@ -3,7 +3,7 @@ title: 使用C++通过Python设置PDF的大小
 linktitle: 设置PDF大小
 type: docs
 weight: 30
-url: zh/python-cpp/get-and-set-page-properties/
+url: /zh/python-cpp/get-and-set-page-properties/
 description: 本节介绍如何使用Python通过C++获取或设置PDF页面属性，例如文档的大小。
 lastmod: "2024-04-17"
 sitemap:

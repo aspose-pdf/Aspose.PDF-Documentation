@@ -3,7 +3,7 @@ title: 이미지 크기 설정
 linktitle: 이미지 크기 설정
 type: docs
 weight: 80
-url: ko/java/set-image-size/
+url: /ko/java/set-image-size/
 description: 이 섹션은 Java 라이브러리를 사용하여 PDF 파일의 이미지 크기를 설정하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 ---

@@ -2,7 +2,7 @@
 title: 첨부 파일 작업하기
 type: docs
 weight: 50
-url: ko/java/working-with-attachments/
+url: /ko/java/working-with-attachments/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF에서 첨부 파일을 작업하는 방법을 설명합니다. 이 도구는 PDF와 관련된 일반적인 작업을 수행하는 도구 모음입니다.
 lastmod: "2021-06-24"
 sitemap:

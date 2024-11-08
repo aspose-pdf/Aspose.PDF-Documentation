@@ -3,7 +3,7 @@ title: Ajouter un objet Arc au fichier PDF
 linktitle: Ajouter un Arc
 type: docs
 weight: 10
-url: fr/cpp/add-arc/
+url: /fr/cpp/add-arc/
 description: Cet article explique comment créer un objet arc dans votre PDF en utilisant Aspose.PDF pour C++.
 lastmod: "2021-12-18"
 sitemap:

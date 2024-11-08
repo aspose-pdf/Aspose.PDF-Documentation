@@ -2,7 +2,7 @@
 title: PythonにJavaScriptを追加する
 type: docs
 weight: 10
-url: ja/java/adding-javascript-in-python/
+url: /ja/java/adding-javascript-in-python/
 lastmod: "2021-06-05"
 ---
 

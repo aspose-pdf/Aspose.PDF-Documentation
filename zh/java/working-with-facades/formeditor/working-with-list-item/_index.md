@@ -2,7 +2,7 @@
 title: 使用列表项
 type: docs
 weight: 30
-url: zh/java/working-with-list-item/
+url: /zh/java/working-with-list-item/
 description: 本节介绍如何使用 FormEditor 类通过 com.aspose.pdf.facades 处理列表项。
 lastmod: "2021-06-05"
 draft: false

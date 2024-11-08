@@ -3,7 +3,7 @@ title: Update Links in PDF
 linktitle: Update Links
 type: docs
 weight: 20
-url: fr/net/update-links/
+url: /fr/net/update-links/
 description: Mettre à jour les liens dans un PDF de manière programmatique. Ce guide concerne la mise à jour des liens dans un PDF en langage C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Mettre à jour les liens dans un fichier PDF
 

@@ -3,7 +3,7 @@ title: Définir la couleur d'arrière-plan pour PDF en Node.js
 linktitle: Définir la couleur d'arrière-plan
 type: docs
 weight: 80
-url: fr/nodejs-cpp/set-background-color/
+url: /fr/nodejs-cpp/set-background-color/
 description: Définissez la couleur d'arrière-plan de votre fichier PDF avec Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

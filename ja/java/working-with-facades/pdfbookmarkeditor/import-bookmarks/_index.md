@@ -2,7 +2,7 @@
 title: 既存のPDFファイルにXMLからブックマークをインポートする (facades)
 type: docs
 weight: 30
-url: ja/java/import-bookmark/
+url: /ja/java/import-bookmark/
 description: このセクションでは、Aspose.PDF Facadesを使用してPdfBookmarkEditorクラスでブックマークをインポートする方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

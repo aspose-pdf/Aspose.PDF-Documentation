@@ -2,7 +2,7 @@
 title: 向现有PDF文件添加书签操作
 type: docs
 weight: 20
-url: zh/java/adding-bookmark-actions/
+url: /zh/java/adding-bookmark-actions/
 description: 本节解释如何使用Aspose.PDF Facades向现有PDF文件添加书签操作。
 lastmod: "2021-06-30"
 sitemap:

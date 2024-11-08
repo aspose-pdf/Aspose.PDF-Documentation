@@ -2,7 +2,7 @@
 title: العمل مع الصور باستخدام PdfContentEditor
 type: docs
 weight: 50
-url: ar/net/working-with-images-in-pdf
+url: /ar/net/working-with-images-in-pdf
 description: يشرح هذا القسم كيفية إضافة وحذف الصور باستخدام واجهات Aspose.PDF باستخدام فئة PdfContentEditor.
 lastmod: "2021-06-24"
 ---

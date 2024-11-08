@@ -3,7 +3,7 @@ title: العمل مع المحفظة في PDF باستخدام Python
 linktitle: المحفظة
 type: docs
 weight: 20
-url: ar/python-net/portfolio/
+url: /ar/python-net/portfolio/
 description: كيفية إنشاء محفظة PDF باستخدام Python. يجب عليك استخدام ملف Microsoft Excel، ومستند Word، وملف صورة لإنشاء محفظة PDF.
 lastmod: "2023-02-17"
 sitemap:

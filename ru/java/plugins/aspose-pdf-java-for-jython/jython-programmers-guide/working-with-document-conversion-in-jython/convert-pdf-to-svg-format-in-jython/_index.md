@@ -2,7 +2,7 @@
 title: Преобразование PDF в SVG формат в Jython
 type: docs
 weight: 30
-url: ru/java/convert-pdf-to-svg-format-in-jython/
+url: /ru/java/convert-pdf-to-svg-format-in-jython/
 lastmod: "2021-06-05"
 ---
 

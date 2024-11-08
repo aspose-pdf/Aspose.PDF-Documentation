@@ -3,7 +3,7 @@ title: Aspose PDF 라이선스
 linktitle: 라이선싱 및 제한 사항
 type: docs
 weight: 50
-url: ko/python-net/licensing/
+url: /ko/python-net/licensing/
 description: Aspose. PDF for Python은 고객에게 Classic 라이선스를 얻도록 권장합니다. 제품을 더 잘 탐색하기 위해 제한된 라이선스도 사용할 수 있습니다.
 lastmod: "2022-12-21"
 sitemap:

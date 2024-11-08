@@ -3,7 +3,7 @@ title: Bekerja dengan Grafik Vektor
 linktitle: Bekerja dengan Grafik Vektor
 type: docs
 weight: 120
-url: id/net/working-with-vector-graphics/
+url: /id/net/working-with-vector-graphics/
 description: Artikel ini menjelaskan fitur-fitur dari bekerja dengan alat GraphicsAbsorber menggunakan C#.
 lastmod: "2024-02-17"
 ---

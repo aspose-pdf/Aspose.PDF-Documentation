@@ -3,7 +3,7 @@ title: PDFドキュメントのフォーマット
 linktitle: PDFドキュメントのフォーマット
 type: docs
 weight: 20
-url: ja/php-java/formatting-pdf-document/
+url: /ja/php-java/formatting-pdf-document/
 description: Aspose.PDF for PHP via Javaを使用してPDFドキュメントをフォーマットします。タスクを解決するために次のコードスニペットを使用してください。
 lastmod: "2024-06-05"
 ---

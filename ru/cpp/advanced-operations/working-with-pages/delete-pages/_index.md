@@ -3,7 +3,7 @@ title: Программное удаление страниц PDF
 linktitle: Удаление страниц PDF
 type: docs
 weight: 30
-url: ru/cpp/delete-pages/
+url: /ru/cpp/delete-pages/
 description: Вы можете удалить страницы из вашего PDF файла, используя библиотеку C++.
 lastmod: "2021-12-09"
 sitemap:

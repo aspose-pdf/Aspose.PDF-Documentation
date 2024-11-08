@@ -3,7 +3,7 @@ title: Добавление текстовых штампов в PDF файл
 linktitle: Текстовые штампы в PDF файле
 type: docs
 weight: 20
-url: ru/cpp/text-stamps-in-the-pdf-file/
+url: /ru/cpp/text-stamps-in-the-pdf-file/
 description: Добавьте текстовый штамп в PDF файл с использованием класса TextStamp на C++.
 lastmod: "2021-12-05"
 sitemap:

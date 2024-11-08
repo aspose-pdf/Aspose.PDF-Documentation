@@ -3,7 +3,7 @@ title: Enregistrer le document PDF
 linktitle: Enregistrer
 type: docs
 weight: 30
-url: fr/php-java/save-pdf-document/
+url: /fr/php-java/save-pdf-document/
 description: Apprenez à enregistrer un fichier PDF avec la bibliothèque Aspose.PDF pour PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

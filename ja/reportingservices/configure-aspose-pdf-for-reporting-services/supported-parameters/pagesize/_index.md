@@ -2,7 +2,7 @@
 title: PageSize
 type: docs
 weight: 60
-url: ja/reportingservices/pagesize/
+url: /ja/reportingservices/pagesize/
 lastmod: "2021-06-05"
 ---
 

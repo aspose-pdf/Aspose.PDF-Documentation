@@ -3,7 +3,7 @@ title: Konversi File PDF ke Format Lain
 linktitle: Konversi PDF ke format lain 
 type: docs
 weight: 90
-url: id/java/convert-pdf-to-other-files/
+url: /id/java/convert-pdf-to-other-files/
 lastmod: "2021-11-19"
 description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF ke format file lain.
 sitemap:

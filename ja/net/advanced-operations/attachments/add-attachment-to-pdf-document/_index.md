@@ -3,7 +3,7 @@ title: PDFドキュメントへの添付ファイルの追加
 linktitle: PDFドキュメントへの添付ファイルの追加
 type: docs
 weight: 10
-url: ja/net/add-attachment-to-pdf-document/
+url: /ja/net/add-attachment-to-pdf-document/
 description: このページは、Aspose.PDF for .NETライブラリを使用してPDFファイルに添付ファイルを追加する方法について説明しています
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ aliases:
 </script>
 添付ファイルはさまざまな情報を含むことができ、ファイルタイプもさまざまです。この記事では、PDFファイルに添付ファイルを追加する方法について説明します。
 
-次のコードスニペットは、新しいグラフィカル[Aspose.Drawing](/pdf/net/drawing/)インターフェースでも機能します。
+次のコードスニペットは、新しいグラフィカル[Aspose.Drawing](/pdf/ja/net/drawing/)インターフェースでも機能します。
 
 1. 新しいC#プロジェクトを作成します。
 1. Aspose.PDF DLLへの参照を追加します。

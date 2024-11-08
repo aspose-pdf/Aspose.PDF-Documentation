@@ -3,7 +3,7 @@ title: PDF Highlights Annotation
 linktitle: Highlights Annotation
 type: docs
 weight: 20
-url: ru/java/highlights-annotation/
+url: /ru/java/highlights-annotation/
 description: Аннотации разметки представлены в тексте как выделения, подчеркивания, зачеркивания или волнистые подчеркивания в тексте документа.
 lastmod: "2021-11-24"
 sitemap:

@@ -3,7 +3,7 @@ title: العمل مع بيانات ملف PDF الوصفية في Node.js
 linktitle: بيانات ملف PDF الوصفية
 type: docs
 weight: 130
-url: ar/nodejs-cpp/pdf-file-metadata/
+url: /ar/nodejs-cpp/pdf-file-metadata/
 description: يشرح هذا القسم كيفية الحصول على معلومات ملف PDF، وكيفية الحصول على البيانات الوصفية من ملف PDF، وضبط معلومات ملف PDF في Node.js.
 lastmod: "2023-11-16"
 sitemap:

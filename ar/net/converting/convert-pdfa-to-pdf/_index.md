@@ -3,7 +3,7 @@ title: تحويل من تنسيق PDF/A إلى تنسيق PDF
 linktitle: تحويل من تنسيق PDF/A إلى تنسيق PDF
 type: docs
 weight: 110
-url: ar/net/convert-pdfa-to-pdf/
+url: /ar/net/convert-pdfa-to-pdf/
 lastmod: "2021-11-01"
 description: يوضح هذا الموضوع كيفية السماح Aspose.PDF بتحويل ملف PDF/A إلى مستند PDF باستخدام مكتبة .NET.
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تحويل مستند PDF/A إلى PDF
 

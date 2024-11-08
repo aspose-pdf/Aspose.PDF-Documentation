@@ -3,7 +3,7 @@ title: Добавить фон в PDF
 linktitle: Добавить фоны
 type: docs
 weight: 110
-url: ru/java/add-backgrounds/
+url: /ru/java/add-backgrounds/
 descriptions: Добавьте фоновое изображение в ваш PDF файл с помощью Java. Используйте объект BackgroundArtifact.
 lastmod: "2021-06-05"
 sitemap:

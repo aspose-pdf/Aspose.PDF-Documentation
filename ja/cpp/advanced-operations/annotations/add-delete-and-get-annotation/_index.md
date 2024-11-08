@@ -3,7 +3,7 @@ title: Add, Delete and Get Annotation using Aspose.PDF for C++
 type: docs
 linktitle: Add, Delete and Get Annotation
 weight: 20
-url: ja/cpp/add-delete-and-get-annotation/
+url: /ja/cpp/add-delete-and-get-annotation/
 description: Aspose.PDF for C++ を使用して、PDF ファイルに注釈を追加、削除、および取得できます。タスクを解決するために、すべての注釈リストを確認してください。
 lastmod: "2021-11-24"
 sitemap:
@@ -17,12 +17,12 @@ sitemap:
 
 Aspose.PDF for C++ ライブラリで利用可能なさまざまな種類の注釈をグループに分けました：
 
-- [PDF テキスト注釈](/pdf/cpp/text-annotation/)
-- [PDF ハイライト注釈](/pdf/cpp/highlights-annotation/)
-- [PDF 図形注釈](/pdf/cpp/figures-annotation/)
+- [PDF テキスト注釈](/pdf/ja/cpp/text-annotation/)
+- [PDF ハイライト注釈](/pdf/ja/cpp/highlights-annotation/)
+- [PDF 図形注釈](/pdf/ja/cpp/figures-annotation/)
 
-- [マルチメディア注釈](/pdf/cpp/multimedia-annotation/)
+- [マルチメディア注釈](/pdf/ja/cpp/multimedia-annotation/)
 ```
-- [追加注釈](/pdf/cpp/extra-annotations/)
-- [スティッキー注釈](/pdf/cpp/sticky-annotations/)
+- [追加注釈](/pdf/ja/cpp/extra-annotations/)
+- [スティッキー注釈](/pdf/ja/cpp/sticky-annotations/)
 ```

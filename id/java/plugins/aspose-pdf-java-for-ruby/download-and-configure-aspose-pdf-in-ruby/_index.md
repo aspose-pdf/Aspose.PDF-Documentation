@@ -2,7 +2,7 @@
 title: Unduh dan Konfigurasi Aspose.Pdf di Ruby
 type: docs
 weight: 10
-url: id/java/download-and-configure-aspose-pdf-in-ruby/
+url: /id/java/download-and-configure-aspose-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

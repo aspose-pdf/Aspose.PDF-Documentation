@@ -3,7 +3,7 @@
 title: 从 PDF 文档中提取图表对象（外观）
 type: docs
 weight: 20
-url: zh/java/extract-chart-objects/
+url: /zh/java/extract-chart-objects/
 description: 本节介绍如何使用 PdfExtractor 类从 PDF 中提取图表对象。
 lastmod: "2021-06-05"
 sitemap:

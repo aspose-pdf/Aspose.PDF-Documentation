@@ -2,7 +2,7 @@
 title: Criar NUp de arquivos PDF
 type: docs
 weight: 90
-url: pt/net/make-nup-of-pdf-files/
+url: /pt/net/make-nup-of-pdf-files/
 description: Este artigo mostra como fazer NUp de arquivos PDF funcionar com Aspose.PDF Facades usando a classe PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

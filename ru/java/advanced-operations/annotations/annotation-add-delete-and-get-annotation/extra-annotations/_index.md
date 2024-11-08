@@ -3,7 +3,7 @@ title: Использование дополнительных типов анн
 linktitle: Дополнительные Аннотации
 type: docs
 weight: 60
-url: ru/java/extra-annotations/
+url: /ru/java/extra-annotations/
 description: В этом разделе описывается, как добавлять, получать и удалять дополнительные виды аннотаций из вашего PDF документа.
 lastmod: "2021-11-24"
 sitemap:

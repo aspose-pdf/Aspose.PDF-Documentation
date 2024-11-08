@@ -3,7 +3,7 @@ title: Recortar Páginas de PDF usando PHP
 linktitle: Recortar Páginas
 type: docs
 weight: 80
-url: es/php-java/crop-pages/
+url: /es/php-java/crop-pages/
 description: Puede obtener propiedades de la página, como el ancho, la altura, bleed-, crop- y trimbox usando Aspose.PDF para PHP vía Java.
 lastmod: "2024-06-05"
 sitemap:

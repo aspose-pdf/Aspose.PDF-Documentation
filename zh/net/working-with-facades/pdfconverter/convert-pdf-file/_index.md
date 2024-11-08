@@ -2,7 +2,7 @@
 title: Convert PDF File
 type: docs
 weight: 30
-url: zh/net/convert-pdf-file/
+url: /zh/net/convert-pdf-file/
 description: 本节介绍如何使用 Aspose.PDF Facades 和 PdfConverter 类转换 PDF 文件。
 lastmod: "2021-06-05"
 draft: false
@@ -61,4 +61,4 @@ draft: false
 
 ## 另请参阅
 
-Aspose.PDF for .NET 允许将 PDF 文档转换为多种格式，也可以从其他格式转换为 PDF。此外，您可以使用 Aspose.PDF 转换应用程序在线检查 Aspose.PDF 转换的质量并查看结果。了解[转换](/pdf/net/converting/)部分以解决您的任务。
+Aspose.PDF for .NET 允许将 PDF 文档转换为多种格式，也可以从其他格式转换为 PDF。此外，您可以使用 Aspose.PDF 转换应用程序在线检查 Aspose.PDF 转换的质量并查看结果。了解[转换](/pdf/zh/net/converting/)部分以解决您的任务。

@@ -3,7 +3,7 @@ title: حذف صفحات PDF برمجيًا
 linktitle: حذف صفحات PDF
 type: docs
 weight: 30
-url: ar/cpp/delete-pages/
+url: /ar/cpp/delete-pages/
 description: يمكنك حذف الصفحات من ملف PDF باستخدام مكتبة C++.
 lastmod: "2021-12-09"
 sitemap:

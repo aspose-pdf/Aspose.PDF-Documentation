@@ -3,7 +3,7 @@ title: Membuat Tautan dalam Berkas PDF dengan C#
 linktitle: Membuat Tautan
 type: docs
 weight: 10
-url: id/net/create-links/
+url: /id/net/create-links/
 description: Bagian ini menjelaskan bagaimana cara membuat tautan dalam dokumen PDF Anda dengan C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Membuat Tautan
 

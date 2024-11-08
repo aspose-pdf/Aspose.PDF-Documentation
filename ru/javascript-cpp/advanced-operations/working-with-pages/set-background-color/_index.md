@@ -3,7 +3,7 @@ title: Установите цвет фона для PDF с помощью JavaS
 linktitle: Установить цвет фона
 type: docs
 weight: 80
-url: ru/javascript-cpp/set-background-color/
+url: /ru/javascript-cpp/set-background-color/
 description: Установите цвет фона для вашего PDF файла с помощью JavaScript через C++.
 lastmod: "2023-02-17"
 sitemap:

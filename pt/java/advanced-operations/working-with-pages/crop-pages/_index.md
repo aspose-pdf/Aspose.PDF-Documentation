@@ -3,7 +3,7 @@ title: Cortar Páginas de PDF programaticamente
 linktitle: Cortar Páginas
 type: docs
 weight: 80
-url: pt/java/crop-pages/
+url: /pt/java/crop-pages/
 description: Você pode obter propriedades da página, como largura, altura, bleed-, crop- e trimbox usando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

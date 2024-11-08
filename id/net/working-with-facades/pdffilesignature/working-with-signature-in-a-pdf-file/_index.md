@@ -2,7 +2,7 @@
 title: Bekerja dengan Tanda Tangan dalam File PDF
 type: docs
 weight: 40
-url: id/net/working-with-signature-in-a-pdf-file/
+url: /id/net/working-with-signature-in-a-pdf-file/
 description: Bagian ini menjelaskan cara mengekstrak informasi tanda tangan, mengekstrak gambar dari tanda tangan, mengubah bahasa, dan lain-lain menggunakan kelas PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

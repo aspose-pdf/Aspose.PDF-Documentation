@@ -3,7 +3,7 @@ title: JavaScript에서 PDF를 Excel로 변환
 linktitle: PDF를 Excel로 변환
 type: docs
 weight: 20
-url: ko/javascript-cpp/convert-pdf-to-xlsx/
+url: /ko/javascript-cpp/convert-pdf-to-xlsx/
 lastmod: "2023-11-01"
 keywords: javascript를 사용하여 PDF를 Excel로 변환, PDF를 XLSX로 변환, PDF를 CSV로 변환.
 description: Aspose.PDF for JavaScript를 사용하면 PDF를 XLSX 및 CSV 형식으로 변환할 수 있습니다.

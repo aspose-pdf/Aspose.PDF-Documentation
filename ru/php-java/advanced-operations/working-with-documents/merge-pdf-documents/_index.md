@@ -3,7 +3,7 @@ title: Объединение PDF программно
 linktitle: Объединение файлов PDF
 type: docs
 weight: 50
-url: ru/php-java/merge-pdf-documents/
+url: /ru/php-java/merge-pdf-documents/
 description: Эта страница объясняет, как объединить PDF-документы в один PDF файл с использованием PHP.
 lastmod: "2024-06-05"
 ---

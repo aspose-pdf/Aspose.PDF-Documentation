@@ -3,7 +3,7 @@ title: C++を使用したPDF内のテーブル操作
 linktitle: テーブル操作
 type: docs
 weight: 50
-url: ja/cpp/working-with-tables/
+url: /ja/cpp/working-with-tables/
 description: このセクションでは、C++ライブラリを使用してテーブルを追加および抽出する方法、テーブルを操作および統合する方法について説明します。
 lastmod: "2021-11-11"
 sitemap:
@@ -19,7 +19,7 @@ sitemap:
 
 次のことが可能です：
 
-- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/cpp/add-table-in-existing-pdf-document/) - 境界線、余白、パディングを考慮して列や行をマージしてPDFファイルにテーブルを作成します。
-- [既存のPDFドキュメントからテーブルを抽出](/pdf/cpp/extract-table-from-existing-pdf-document/) - PDFファイルからテーブルを抽出するか、テーブルの境界を画像として抽出できます。
-- [既存のPDF内のテーブルを操作](/pdf/cpp/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内のテーブルを操作します。
-- [既存のPDFからテーブルを削除](/pdf/cpp/remove-tables-from-existing-pdf/) - PDFドキュメントからテーブルまたは複数のテーブルを削除します。
+- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/ja/cpp/add-table-in-existing-pdf-document/) - 境界線、余白、パディングを考慮して列や行をマージしてPDFファイルにテーブルを作成します。
+- [既存のPDFドキュメントからテーブルを抽出](/pdf/ja/cpp/extract-table-from-existing-pdf-document/) - PDFファイルからテーブルを抽出するか、テーブルの境界を画像として抽出できます。
+- [既存のPDF内のテーブルを操作](/pdf/ja/cpp/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内のテーブルを操作します。
+- [既存のPDFからテーブルを削除](/pdf/ja/cpp/remove-tables-from-existing-pdf/) - PDFドキュメントからテーブルまたは複数のテーブルを削除します。

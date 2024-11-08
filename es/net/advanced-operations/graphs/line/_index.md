@@ -3,7 +3,7 @@ title: Agregar objeto de línea al archivo PDF
 linktitle: Agregar línea
 type: docs
 weight: 40
-url: es/net/add-line/
+url: /es/net/add-line/
 description: Este artículo explica cómo crear un objeto de línea en su PDF utilizando Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Este artículo explica cómo crear un objeto de línea en su PDF utilizando Aspose.PDF para .NET."
 }
 </script>
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Agregar objeto Linea
 

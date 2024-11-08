@@ -3,7 +3,7 @@ title: Définir les Propriétés des Éléments de Structure dans un PDF Tagué
 linktitle: Définir les Propriétés des Éléments de Structure
 type: docs
 weight: 30
-url: fr/java/set-tagged-pdfs-element-properties/
+url: /fr/java/set-tagged-pdfs-element-properties/
 description: Avec Aspose.PDF pour Java, vous pouvez définir différentes propriétés des éléments de structure. Il s'agit de définir les éléments de structure de bloc de texte, de définir les éléments de structure en ligne, d'ajouter un élément de structure dans les éléments, etc.
 lastmod: "2021-06-05"
 sitemap:

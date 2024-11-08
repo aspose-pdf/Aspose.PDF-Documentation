@@ -2,7 +2,7 @@
 title: تشفير ملف PDF
 type: docs
 weight: 10
-url: ar/java/encrypt-pdf-file/
+url: /ar/java/encrypt-pdf-file/
 description: يشرح هذا الموضوع كيفية تشفير ملف PDF باستخدام فئة PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

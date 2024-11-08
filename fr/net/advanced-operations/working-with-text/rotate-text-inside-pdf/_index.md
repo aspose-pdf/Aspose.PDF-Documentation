@@ -3,7 +3,7 @@ title: Faire pivoter le texte à l'intérieur d'un PDF en utilisant C#
 linktitle: Faire pivoter le texte à l'intérieur d'un PDF
 type: docs
 weight: 50
-url: fr/net/rotate-text-inside-pdf/
+url: /fr/net/rotate-text-inside-pdf/
 description: Apprenez différentes méthodes pour faire pivoter le texte dans un PDF. Aspose.PDF vous permet de faire pivoter le texte à n'importe quel angle, de faire pivoter un fragment de texte ou un paragraphe entier.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Apprenez différentes méthodes pour faire pivoter le texte dans un PDF. Aspose.PDF vous permet de faire pivoter le texte à n'importe quel angle, de faire pivoter un fragment de texte ou un paragraphe entier."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Faire pivoter le texte à l'intérieur du PDF en utilisant la propriété Rotation
 

@@ -3,7 +3,7 @@ title: タグ付きPDFでのテーブルの操作
 linktitle: タグ付きPDFでのテーブルの操作
 type: docs
 weight: 40
-url: ja/net/working-with-table-in-tagged-pdfs/
+url: /ja/net/working-with-table-in-tagged-pdfs/
 description: この記事では、Aspose.PDF for .NETを使用してタグ付きPDFドキュメントでテーブルを操作する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 Aspose.PDF for .NETは、タグ付きPDFドキュメントにテーブルを作成することができます。
 Aspose.PDF for .NETは、タグ付きPDFドキュメントで表を作成することができます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 次のコードスニペットは、タグ付きPDFドキュメントで表を作成する方法を示しています：
 

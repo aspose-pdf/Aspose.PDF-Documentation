@@ -2,7 +2,7 @@
 title: Trabajando con Encabezados en PDF
 type: docs
 weight: 40
-url: es/python-net/working-with-headings/
+url: /es/python-net/working-with-headings/
 description: Crear numeración en el encabezado de su documento PDF con Python. Aspose.PDF para Python a través de .NET ofrece diferentes tipos de estilos de numeración.
 lastmod: "2023-04-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 Los encabezados son partes importantes de cualquier documento. Los escritores siempre intentan hacer que los encabezados sean más prominentes y significativos para sus lectores. Si hay más de un encabezado en un documento, un escritor tiene varias opciones para organizar estos encabezados. Una de las aproximaciones más comunes para organizar encabezados es escribirlos en Estilo de Numeración.
 
-[Aspose.PDF para Python via .NET](/pdf/python-net/) ofrece muchos estilos de numeración predefinidos. Estos estilos de numeración predefinidos se almacenan en una enumeración, [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). Los valores predefinidos de la enumeración NumberingStyle y sus descripciones se dan a continuación:
+[Aspose.PDF para Python via .NET](/pdf/es/python-net/) ofrece muchos estilos de numeración predefinidos. Estos estilos de numeración predefinidos se almacenan en una enumeración, [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). Los valores predefinidos de la enumeración NumberingStyle y sus descripciones se dan a continuación:
 
 |**Tipos de Encabezado**|**Descripción**|
 | :- | :- |

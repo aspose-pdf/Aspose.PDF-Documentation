@@ -3,7 +3,7 @@ title: Menentukan Pemutusan Baris
 linktitle: Menentukan Pemutusan Baris
 type: docs
 weight: 70
-url: id/python-net/determine-line-break/
+url: /id/python-net/determine-line-break/
 description: Pelajari lebih lanjut tentang cara menentukan pemutusan baris dari TextFragment multi-baris menggunakan Python
 lastmod: "2024-02-17"
 sitemap:

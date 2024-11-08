@@ -3,7 +3,7 @@ title: إزالة الجداول من ملف PDF موجود
 linktitle: إزالة الجداول
 type: docs
 weight: 50
-url: ar/cpp/remove-tables-from-existing-pdf/
+url: /ar/cpp/remove-tables-from-existing-pdf/
 description: يصف هذا القسم كيفية إزالة الجدول من مستند PDF.
 lastmod: "2021-11-11"
 sitemap:

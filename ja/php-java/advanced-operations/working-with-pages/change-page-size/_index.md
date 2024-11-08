@@ -3,7 +3,7 @@ title: PDFページサイズをプログラムで変更する
 linktitle: PDFページサイズを変更する
 type: docs
 weight: 50
-url: ja/php-java/change-page-size/
+url: /ja/php-java/change-page-size/
 description: PHPを使用してPDFファイルのページサイズを変更します。
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 프로그래밍 방식으로 PDF 페이지 자르기
 linktitle: 페이지 자르기
 type: docs
 weight: 80
-url: ko/java/crop-pages/
+url: /ko/java/crop-pages/
 description: Aspose.PDF for Java를 사용하여 너비, 높이, 블리드, 크롭 및 트림박스와 같은 페이지 속성을 가져올 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

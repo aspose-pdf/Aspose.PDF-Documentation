@@ -3,7 +3,7 @@ title: Menambahkan watermark ke PDF menggunakan C#
 linktitle: Tambahkan watermark
 type: docs
 weight: 90
-url: id/net/add-watermarks/
+url: /id/net/add-watermarks/
 description: Artikel ini menjelaskan fitur-fitur bekerja dengan artefak dan mendapatkan watermark di PDF menggunakan C# secara programatik.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 
 **Aspose.PDF for .NET** memungkinkan menambahkan watermark pada dokumen PDF Anda menggunakan Artifacts. Silakan periksa artikel ini untuk menyelesaikan tugas Anda.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Watermark yang dibuat dengan Adobe Acrobat disebut sebagai artifact (seperti yang dijelaskan dalam 14.8.2.2 Konten Nyata dan Artifacts dari spesifikasi PDF). Untuk bekerja dengan artifacts, Aspose.PDF memiliki dua kelas: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) dan [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

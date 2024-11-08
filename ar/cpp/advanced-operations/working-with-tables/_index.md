@@ -3,7 +3,7 @@ title: العمل مع الجداول في PDF باستخدام C++
 linktitle: العمل مع الجداول
 type: docs
 weight: 50
-url: ar/cpp/working-with-tables/
+url: /ar/cpp/working-with-tables/
 description: يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية التلاعب ودمج جدول باستخدام مكتبة C++.
 lastmod: "2021-11-11"
 sitemap:
@@ -19,9 +19,9 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/cpp/add-table-in-existing-pdf-document/) - قم بإنشاء الجدول الخاص بك في ملف pdf مع دمج الأعمدة أو الصفوف مع مراعاة الحدود والهوامش والحشو.
-- [استخراج جدول من مستند PDF موجود](/pdf/cpp/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
+- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/ar/cpp/add-table-in-existing-pdf-document/) - قم بإنشاء الجدول الخاص بك في ملف pdf مع دمج الأعمدة أو الصفوف مع مراعاة الحدود والهوامش والحشو.
+- [استخراج جدول من مستند PDF موجود](/pdf/ar/cpp/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
 
-- [التلاعب بالجداول في PDF موجود](/pdf/cpp/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في ملف PDF الخاص بك باستخدام TableAbsorber.
+- [التلاعب بالجداول في PDF موجود](/pdf/ar/cpp/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في ملف PDF الخاص بك باستخدام TableAbsorber.
 
-- [إزالة الجداول من PDF موجود](/pdf/cpp/remove-tables-from-existing-pdf/) - إزالة جدول أو جداول متعددة من مستند PDF.
+- [إزالة الجداول من PDF موجود](/pdf/ar/cpp/remove-tables-from-existing-pdf/) - إزالة جدول أو جداول متعددة من مستند PDF.

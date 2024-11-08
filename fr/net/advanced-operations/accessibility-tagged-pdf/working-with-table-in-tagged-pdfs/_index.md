@@ -3,7 +3,7 @@ title: Travailler avec les tables dans les PDF balisés
 linktitle: Travailler avec les tables dans les PDF balisés
 type: docs
 weight: 40
-url: fr/net/working-with-table-in-tagged-pdfs/
+url: /fr/net/working-with-table-in-tagged-pdfs/
 description: Cet article explique comment travailler avec les tables dans un document PDF balisé avec Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 Aspose.PDF pour .NET permet de créer une table dans des documents PDF balisés.
 Aspose.PDF pour .NET permet de créer une table dans les documents PDF étiquetés.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Le code suivant montre comment créer une table dans le document PDF étiqueté :
 

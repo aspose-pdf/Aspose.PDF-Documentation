@@ -3,7 +3,7 @@ title: Convert PDF documents using JavaScript
 linktitle: Convert PDF documents
 type: docs
 weight: 50
-url: pt/javascript-cpp/conversion/
+url: /pt/javascript-cpp/conversion/
 description: Esta seção contém artigos relacionados à conversão de documentos PDF para outros formatos pelo Aspose.PDF para JavaScript via C++.
 lastmod: "2022-12-14"
 sitemap:
@@ -20,30 +20,30 @@ O Aspose.PDF para JavaScript via C++* permite converter documentos PDF para vár
 
 Documentos Word são os mais versáteis e editáveis possíveis. Converter PDF para DOC manualmente é uma tarefa muito demorada. Neste artigo, você aprenderá como converter PDF para DOC e DOCX em Javascript.
 
-- [Converter PDF para DOC](/pdf/javascript-cpp/convert-pdf-to-doc/) - você pode converter seu documento PDF para o formato Word com Javascript.
+- [Converter PDF para DOC](/pdf/pt/javascript-cpp/convert-pdf-to-doc/) - você pode converter seu documento PDF para o formato Word com Javascript.
 
 Os formatos numéricos são necessários não apenas para tornar os dados na tabela mais fáceis de ler, mas também para tornar a tabela mais fácil de usar. Claro, se você precisar converter esses dados de um documento PDF para o formato Excel, use nosso Aspose.PDF para Javascript.
 
-- [Converter PDF para Microsoft XLSX](/pdf/javascript-cpp/convert-pdf-to-xlsx/) - esta seção descreve como converter documento PDF para XLSX e CSV.
+- [Converter PDF para Microsoft XLSX](/pdf/pt/javascript-cpp/convert-pdf-to-xlsx/) - esta seção descreve como converter documento PDF para XLSX e CSV.
 
 O formato PowerPoint é usado para criar várias apresentações. Arquivos PPT contêm um grande número de slides ou páginas contendo várias informações.
 
-- [Converter PDF para Microsoft PowerPoint](/pdf/javascript-cpp/convert-pdf-to-powerpoint/) - aqui falamos sobre converter PDF para PowerPoint acompanhando o processo de conversão
+- [Converter PDF para Microsoft PowerPoint](/pdf/pt/javascript-cpp/convert-pdf-to-powerpoint/) - aqui falamos sobre converter PDF para PowerPoint acompanhando o processo de conversão
 
 HyperText Markup Language é uma linguagem de descrição de documento hipertexto, uma linguagem padrão para criar páginas web. Com Aspose.PDF para Javascript, você pode facilmente converter documentos HTML e vice-versa.
 
 Existem muitos formatos de imagem que precisam ser convertidos para PDF para diferentes propósitos. Aspose.PDF para JavaScript permite os formatos de imagens mais populares.
 
-- [Converter PDF para vários formatos de Imagens](/pdf/javascript-cpp/convert-pdf-to-images-format/) - converter páginas PDF como imagens em JPEG, PNG, SVG e outros formatos
+- [Converter PDF para vários formatos de Imagens](/pdf/pt/javascript-cpp/convert-pdf-to-images-format/) - converter páginas PDF como imagens em JPEG, PNG, SVG e outros formatos
 Esta seção inclui formatos como: EPUB, XPS, TeX, Texto e PDF em tons de cinza.
 
-- [Converter arquivo PDF para outros formatos](/pdf/javascript-cpp/convert-pdf-to-other-files/) - este tópico descreve a maneira de converter documentos PDF para vários formatos
+- [Converter arquivo PDF para outros formatos](/pdf/pt/javascript-cpp/convert-pdf-to-other-files/) - este tópico descreve a maneira de converter documentos PDF para vários formatos
 
 PDF/A é uma versão do PDF projetada para o arquivamento a longo prazo de documentos eletrônicos. Honestamente, externamente, é muito difícil determinar se é PDF ou PDF/A. Para verificar este arquivo, são utilizados validadores. Confira os seguintes artigos para uma conversão de qualidade de PDF para PDF/A e vice-versa.
 
-- [Converter PDF para formatos PDF/A](/pdf/javascript-cpp/convert-pdf-to-pdfa/) - o toolkit Javascript da Aspose.PDF tem um jeito fácil de converter PDF para PDF/A.
+- [Converter PDF para formatos PDF/A](/pdf/pt/javascript-cpp/convert-pdf-to-pdfa/) - o toolkit Javascript da Aspose.PDF tem um jeito fácil de converter PDF para PDF/A.
 
-- [Converter PDF/A para formato PDF](/pdf/javascript-cpp/convert-pdfa-to-pdf/) - converta PDF/A para formato PDF com Javascript de maneira fácil, rápida e de alta qualidade.
+- [Converter PDF/A para formato PDF](/pdf/pt/javascript-cpp/convert-pdfa-to-pdf/) - converta PDF/A para formato PDF com Javascript de maneira fácil, rápida e de alta qualidade.
 
 ## Tente converter arquivos PDF online
 

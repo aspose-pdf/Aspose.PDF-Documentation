@@ -3,7 +3,7 @@ title: Добавить водяной знак в PDF с использован
 linktitle: Добавить водяной знак
 type: docs
 weight: 40
-url: ru/python-net/add-watermarks/
+url: /ru/python-net/add-watermarks/
 description: Эта статья объясняет особенности работы с артефактами и получения водяных знаков в PDF программным способом с использованием Python.
 lastmod: "2023-04-17"
 sitemap:

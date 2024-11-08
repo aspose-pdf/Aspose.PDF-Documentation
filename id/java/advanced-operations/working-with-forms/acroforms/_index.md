@@ -3,7 +3,7 @@ title: Bekerja dengan AcroForms di PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: id/java/acroforms/
+url: /id/java/acroforms/
 description: Dengan Aspose.PDF untuk Java Anda dapat membuat formulir dari awal, mengisi bidang formulir dalam dokumen PDF, mengekstrak data dari formulir, menambah atau menghapus bidang dalam formulir yang ada.
 lastmod: "2021-06-05"
 sitemap:
@@ -34,10 +34,10 @@ Jadi, PDF adalah format file terbaik untuk formulir karena dapat didistribusikan
 
 Untuk studi lebih mendalam tentang kemungkinan bekerja dengan formulir, pelajari artikel-artikel berikut di bagian ini:
 
--[Create AcroForm](/pdf/java/create-form/) - membuat formulir dari awal, menambahkan RadioButtonField, TextBoxField, Caption Field menggunakan Java.
+-[Create AcroForm](/pdf/id/java/create-form/) - membuat formulir dari awal, menambahkan RadioButtonField, TextBoxField, Caption Field menggunakan Java.
 
--[Fill AcroForm](/pdf/java/fill-form/) - untuk mengisi bidang formulir, dapatkan bidang dari koleksi Form objek Dokumen.
+-[Fill AcroForm](/pdf/id/java/fill-form/) - untuk mengisi bidang formulir, dapatkan bidang dari koleksi Form objek Dokumen.
 
--[Extract Data AcroForm](/pdf/java/extract-form/) - mendapatkan nilai dari semua dan masing-masing bidang, dan lain-lain.
+-[Extract Data AcroForm](/pdf/id/java/extract-form/) - mendapatkan nilai dari semua dan masing-masing bidang, dan lain-lain.
 
--[Modifing AcroForm](/pdf/java/modifing-form/) - mendapatkan/mengatur FieldLimit, menghapus bidang dalam formulir yang ada, mengatur font bidang formulir selain 14 Font Inti PDF dengan Java.
+-[Modifing AcroForm](/pdf/id/java/modifing-form/) - mendapatkan/mengatur FieldLimit, menghapus bidang dalam formulir yang ada, mengatur font bidang formulir selain 14 Font Inti PDF dengan Java.

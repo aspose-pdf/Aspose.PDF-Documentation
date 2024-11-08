@@ -3,7 +3,7 @@ title: PythonでPDFにテキストスタンプを追加
 linktitle: PDFファイルにおけるテキストスタンプ
 type: docs
 weight: 20
-url: ja/python-net/text-stamps-in-the-pdf-file/
+url: /ja/python-net/text-stamps-in-the-pdf-file/
 description: Aspose.PDF for Pythonライブラリを使用してTextStampクラスでPDFドキュメントにテキストスタンプを追加します。
 lastmod: "2023-04-17"
 sitemap:

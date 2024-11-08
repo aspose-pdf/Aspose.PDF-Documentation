@@ -3,7 +3,7 @@ title: Преобразование PDF документов с использо
 linktitle: Преобразование PDF документа
 type: docs
 weight: 70
-url: ru/python-cpp/converting/
+url: /ru/python-cpp/converting/
 lastmod: "2023-07-22"
 description: Этот раздел содержит статьи, относящиеся к преобразованию PDF документов в различные форматы и наоборот, с использованием Python API.
 sitemap:
@@ -21,7 +21,7 @@ PDF файлы могут содержать не только текст, но 
 
 Существует множество форматов изображений, которые необходимо конвертировать в PDF для различных целей. Aspose.PDF позволяет использовать наиболее популярные форматы изображений и наоборот.
 
-- [Конвертация PDF в различные форматы изображений](/pdf/python-cpp/convert-pdf-to-images-format/) - конвертация страниц PDF в изображения в форматах JPEG, PNG и других
-- [Конвертация изображений в PDF](/pdf/python-cpp/convert-image-to-pdf/) - конвертация JPEG, PNG и других форматов в файл PDF
-- [Конвертация PDF в другие форматы](/pdf/python-cpp/convert-pdf-to-other-files/) - конвертация страниц PDF в другие форматы
-- [Конвертация PDF в текст](/pdf/python-cpp/convert-pdf-to-txt/) - конвертация страниц PDF в текст
+- [Конвертация PDF в различные форматы изображений](/pdf/ru/python-cpp/convert-pdf-to-images-format/) - конвертация страниц PDF в изображения в форматах JPEG, PNG и других
+- [Конвертация изображений в PDF](/pdf/ru/python-cpp/convert-image-to-pdf/) - конвертация JPEG, PNG и других форматов в файл PDF
+- [Конвертация PDF в другие форматы](/pdf/ru/python-cpp/convert-pdf-to-other-files/) - конвертация страниц PDF в другие форматы
+- [Конвертация PDF в текст](/pdf/ru/python-cpp/convert-pdf-to-txt/) - конвертация страниц PDF в текст

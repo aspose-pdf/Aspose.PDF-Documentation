@@ -3,7 +3,7 @@ title: PDF에서 텍스트 추출
 linktitle: 텍스트 추출 
 type: docs
 weight: 10
-url: ko/androidjava/extract-text-from-pdf/
+url: /ko/androidjava/extract-text-from-pdf/
 description: Aspose.PDF는 다양한 종류의 정보를 추출할 수 있습니다. 이 섹션은 Aspose.PDF for Android via Java를 사용하여 PDF 문서에서 텍스트를 추출하는 방법에 대한 기사를 포함하고 있습니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -17,5 +17,5 @@ PDF 파일에서 텍스트를 추출하는 것은 Android via Java 개발자에�
 데이터 마이닝, 콘텐츠 관리 및 양식 처리 회사에게 텍스트 추출은 특히 유용할 것입니다.
  텍스트 추출은 다음과 같은 경우에 유용합니다: 보관: 텍스트와 그 구성 요소를 검색하여 문서를 색인화하고 전체 검색 기능과 함께 보관할 수 있습니다; 양식에서 데이터 검색 및 처리; 계정 데이터, 우편 주소, 전화번호와 같은 정보를 관리 목적으로 추출; 사진과 이미지 추출.
 
-- [PDF에서 텍스트 추출하기](/pdf/androidjava/extract-text-from-all-pdf/)
-- [PDF에서 단락 추출하기](/pdf/androidjava/extract-paragraph-from-pdf/)
+- [PDF에서 텍스트 추출하기](/pdf/ko/androidjava/extract-text-from-all-pdf/)
+- [PDF에서 단락 추출하기](/pdf/ko/androidjava/extract-paragraph-from-pdf/)

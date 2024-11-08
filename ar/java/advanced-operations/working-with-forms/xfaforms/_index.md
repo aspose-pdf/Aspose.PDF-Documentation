@@ -3,7 +3,7 @@ title: العمل مع نماذج XFA في PDF
 linktitle: نماذج XFA
 type: docs
 weight: 20
-url: ar/java/xfa-forms/
+url: /ar/java/xfa-forms/
 description: مع Aspose.PDF for Java يمكنك إنشاء نموذج من البداية، تعبئة حقل النموذج في مستند PDF، استخراج البيانات من النموذج، إضافة أو إزالة الحقول في النموذج الموجود.
 lastmod: "2021-06-05"
 sitemap:

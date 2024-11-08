@@ -3,7 +3,7 @@ title: Объединение PDF документов в C#
 linktitle: Объединение PDF документов
 type: docs
 weight: 20
-url: ru/net/concatenate-pdf-documents/
+url: /ru/net/concatenate-pdf-documents/
 description: Этот раздел объясняет, как объединить PDF документы с использованием Aspose.PDF Facades и класса PdfFileEditor.
 aliases:
     - /pdf/net/concatenate-multiple-pdf-files-using-memorystreams/

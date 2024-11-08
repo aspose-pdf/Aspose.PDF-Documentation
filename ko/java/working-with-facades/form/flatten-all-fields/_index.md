@@ -2,7 +2,7 @@
 title: 기존 PDF 파일의 모든 필드 평탄화하기 (facades)
 type: docs
 weight: 30
-url: ko/java/flatten-all-fields/
+url: /ko/java/flatten-all-fields/
 description: 이 섹션에서는 Form 클래스를 사용하여 Aspose.PDF Facades로 모든 필드를 평탄화하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

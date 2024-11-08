@@ -3,7 +3,7 @@ title: Aspose.PDF for Python 的关键功能
 linktitle: 关键功能
 type: docs
 weight: 20
-url: zh/python-net/key-features/
+url: /zh/python-net/key-features/
 description: Aspose.PDF for Python via .NET 展示了其一般功能。它显示了支持的 PDF 版本以及我们可以对 PDF 进行的所有操作。
 lastmod: "2022-12-21"
 sitemap:

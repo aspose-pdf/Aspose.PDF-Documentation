@@ -2,7 +2,7 @@
 title: Метаданные PDF файла
 type: docs
 weight: 20
-url: ru/cpp/pdf-file-metadata/
+url: /ru/cpp/pdf-file-metadata/
 ---
 
 ## Получение/Установка информации о PDF файле

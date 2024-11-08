@@ -3,7 +3,7 @@ title: Ekstrak Data dari Tabel dalam PDF dengan C#
 linktitle: Ekstrak Data dari Tabel
 type: docs
 weight: 40
-url: id/net/extract-data-from-table-in-pdf/
+url: /id/net/extract-data-from-table-in-pdf/
 description: Pelajari cara mengekstrak tabel dari PDF menggunakan Aspose.PDF untuk .NET dalam C#
 lastmod: "2021-06-05"
 sitemap:
@@ -22,7 +22,7 @@ Aspose.PDF untuk .NET memiliki alat untuk memudahkan pengambilan tabel. Untuk me
 1. `TableList` adalah daftar dari [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). Untuk mendapatkan data, iterasi melalui `TableList` dan tangani [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) dan [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)
 1. Setiap [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) berisi koleksi [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). Anda dapat memprosesnya untuk tujuan Anda sendiri.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Contoh berikut menunjukkan ekstraksi tabel dari semua halaman:
 
@@ -63,7 +63,7 @@ Setiap tabel yang terserap memiliki properti [Rectangle](https://reference.aspos
 
 Jadi, jika Anda perlu mengekstrak tabel yang berada di wilayah tertentu, Anda harus bekerja dengan koordinat tertentu.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Contoh berikut menunjukkan cara mengekstrak tabel yang ditandai dengan Anotasi Kotak:
 
@@ -116,9 +116,9 @@ public static void Extract_Marked_Table()
 ## Ekstrak Data Tabel dari PDF dan simpan dalam file CSV
 
 Contoh berikut menunjukkan cara mengekstrak tabel dan menyimpannya sebagai file CSV.
-Untuk melihat cara mengonversi PDF ke Spreadsheet Excel, silakan lihat artikel [Konversi PDF ke Excel](/pdf/net/convert-pdf-to-excel/).
+Untuk melihat cara mengonversi PDF ke Spreadsheet Excel, silakan lihat artikel [Konversi PDF ke Excel](/pdf/id/net/convert-pdf-to-excel/).
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 public static void Extract_Table_Save_CSV()

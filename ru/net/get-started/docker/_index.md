@@ -3,7 +3,7 @@ title: Как запустить Aspose.PDF в Docker
 linktitle: Использование Docker
 type: docs
 weight: 120
-url: ru/net/docker/
+url: /ru/net/docker/
 description: Интеграция функциональности Aspose.PDF в ваше приложение с использованием контейнеров Docker Linux или Windows
 lastmod: "2021-01-21"
 sitemap:

@@ -3,7 +3,7 @@ title: إضافة رقم الصفحة إلى PDF باستخدام C++
 linktitle: إضافة رقم الصفحة
 type: docs
 weight: 100
-url: ar/cpp/add-page-number/
+url: /ar/cpp/add-page-number/
 description: تتيح لك Aspose.PDF for C++ إضافة ختم رقم الصفحة إلى ملف PDF الخاص بك باستخدام فئة PageNumber Stamp.
 lastmod: "2021-12-03"
 sitemap:

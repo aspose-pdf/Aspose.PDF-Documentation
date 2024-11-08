@@ -3,7 +3,7 @@ title: Membuat AcroForms - Membuat PDF Isian di PHP
 linktitle: Membuat AcroForms
 type: docs
 weight: 10
-url: id/php-java/create-forms/
+url: /id/php-java/create-forms/
 description: Bagian ini menjelaskan cara membuat AcroForms dari awal dalam dokumen PDF Anda dengan Aspose.PDF untuk PHP melalui Java.
 lastmod: "2024-06-05"
 sitemap:

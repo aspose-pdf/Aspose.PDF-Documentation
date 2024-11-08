@@ -3,7 +3,7 @@ title: Удаление вложения из PDF с использование�
 linktitle: Удаление вложения из существующего PDF
 type: docs
 weight: 30
-url: ru/python-net/removing-attachment-from-an-existing-pdf/
+url: /ru/python-net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF может удалять вложения из ваших PDF-документов. Используйте Python PDF API для удаления вложений в PDF-файлах с использованием библиотеки Aspose.PDF для Python через .NET.
 lastmod: "2023-02-17"
 sitemap:

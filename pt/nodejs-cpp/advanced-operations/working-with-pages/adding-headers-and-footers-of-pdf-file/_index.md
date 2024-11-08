@@ -3,7 +3,7 @@ title: Adicionar Cabeçalho e Rodapé ao PDF em Node.js
 linktitle: Adicionar Cabeçalho e Rodapé ao PDF
 type: docs
 weight: 70
-url: pt/nodejs-cpp/add-headers-and-footers-of-pdf-file/
+url: /pt/nodejs-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para Node.js via C++ permite que você adicione cabeçalhos e rodapés ao seu arquivo PDF usando AsposePdfAddTextHeaderFooter.
 lastmod: "2023-11-16"
 sitemap:

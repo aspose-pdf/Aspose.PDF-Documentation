@@ -4,7 +4,7 @@ title: Tambahkan Objek Lingkaran ke file PDF
 linktitle: Tambahkan Lingkaran
 type: docs
 weight: 20
-url: id/java/add-circle/
+url: /id/java/add-circle/
 description: Artikel ini menjelaskan cara membuat objek lingkaran ke PDF Anda menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

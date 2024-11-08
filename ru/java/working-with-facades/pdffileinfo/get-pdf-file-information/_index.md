@@ -2,7 +2,7 @@
 title: Получение информации о PDF-файле - фасады
 type: docs
 weight: 10
-url: ru/java/get-pdf-information/
+url: /ru/java/get-pdf-information/
 description: Этот раздел объясняет, как получить информацию о PDF-файле с помощью Aspose.PDF Facades, используя класс PdfFileInfo.
 lastmod: "2021-06-05"
 sitemap:

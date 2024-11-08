@@ -5,7 +5,7 @@ type: docs
 
 weight: 20
 
-url: id/sharepoint/format-file-yang-didukung/
+url: /id/sharepoint/format-file-yang-didukung/
 
 lastmod: "2020-12-16"
 

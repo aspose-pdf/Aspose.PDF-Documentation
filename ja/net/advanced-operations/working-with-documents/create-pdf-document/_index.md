@@ -3,7 +3,7 @@ title: C#を使用してPDFを作成する方法
 linktitle: PDFドキュメントの作成
 type: docs
 weight: 10
-url: ja/net/create-pdf-document/
+url: /ja/net/create-pdf-document/
 description: Aspose.PDF for .NETを使用してPDFドキュメントを作成およびフォーマットします。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 私たちは常にC#プロジェクトでPDFドキュメントを生成し、それらをより正確で効果的に扱う方法を探しています。ライブラリから使いやすい機能を使用することで、作業の追跡が可能になり、PDFを生成しようとする際の時間がかかる詳細について心配することが少なくなります。これが.NETであるかどうかです。
 
-以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 ## C#言語を使用してPDFドキュメントを作成（または生成）
 

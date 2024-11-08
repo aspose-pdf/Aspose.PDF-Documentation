@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for Python via .NET
 second_title: Aspose.PDF for Python via .NET
 type: docs
 weight: 40
-url: ja/python-net/
+url: /ja/python-net/
 is_root: true
 lastmod: "2022-10-24"
 description: Pythonを使用して任意のプラットフォームでPDFドキュメント処理のためのアプリケーションを作成するためのAspose.PDF Python via .NETの使用方法を学びます。チュートリアル、サンプルコードなどを参照してください。
@@ -26,20 +26,20 @@ Aspose.PDFは、開発者がプログラムで動的にPDFドキュメントを�
 
 <h2>章</h2>
 
-- [新着情報](/pdf/python-net/whatsnew/)
-- [概要](/pdf/python-net/overview/)
-- [はじめに](/pdf/python-net/get-started/)
-- [基本操作](/pdf/python-net/basic-operations/)
-- [ドキュメントの変換](/pdf/python-net/converting/)
-- [PDFドキュメントの解析](/pdf/python-net/parsing/)
-- [高度な操作](/pdf/python-net/advanced-operations/)
-- [ショーケース](/pdf/python-net/showcases/)
+- [新着情報](/pdf/ja/python-net/whatsnew/)
+- [概要](/pdf/ja/python-net/overview/)
+- [はじめに](/pdf/ja/python-net/get-started/)
+- [基本操作](/pdf/ja/python-net/basic-operations/)
+- [ドキュメントの変換](/pdf/ja/python-net/converting/)
+- [PDFドキュメントの解析](/pdf/ja/python-net/parsing/)
+- [高度な操作](/pdf/ja/python-net/advanced-operations/)
+- [ショーケース](/pdf/ja/python-net/showcases/)
 - [リリースノート](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 
 <h2>Aspose.PDF for Python via .NET リソース</h2>
 
 以下は、タスクを達成するために必要な有用なリソースへのリンクです。
-- [Aspose.PDF for Python via .NET の機能](/pdf/python-net/key-features/)
+- [Aspose.PDF for Python via .NET の機能](/pdf/ja/python-net/key-features/)
 - [Aspose.PDF for Python via .NET リリースノート](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 - [Aspose.PDF for Python via .NET 製品ページ](https://products.aspose.com/pdf/python-net/)
 - [Aspose.PDF for Python via .NET のダウンロード](https://releases.aspose.com/pdf/pythonnet/)

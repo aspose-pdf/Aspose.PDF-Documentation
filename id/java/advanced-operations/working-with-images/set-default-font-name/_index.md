@@ -3,7 +3,7 @@ title: Setel Nama Font Default
 linktitle: Setel Nama Font Default
 type: docs
 weight: 90
-url: id/java/set-default-font-name/
+url: /id/java/set-default-font-name/
 description: Bagian ini menjelaskan cara mengatur nama font default menggunakan pustaka Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 ---

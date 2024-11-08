@@ -3,7 +3,7 @@ title: Diviser un PDF par programmation
 linktitle: Diviser des fichiers PDF
 type: docs
 weight: 60
-url: fr/php-java/split-document/
+url: /fr/php-java/split-document/
 description: Ce sujet montre comment diviser les pages PDF en fichiers PDF individuels dans vos applications PHP.
 lastmod: "2024-06-05"
 sitemap:

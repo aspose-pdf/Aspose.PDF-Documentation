@@ -3,7 +3,7 @@ title: PDFにページスタンプを追加する
 linktitle: PDFファイルのページスタンプ
 type: docs
 weight: 30
-url: ja/php-java/page-stamps-in-the-pdf-file/
+url: /ja/php-java/page-stamps-in-the-pdf-file/
 description: PdfPageStampクラスを使用してPDFファイルにページスタンプを追加する方法をPHPで説明します。
 lastmod: "2024-09-10"
 sitemap:

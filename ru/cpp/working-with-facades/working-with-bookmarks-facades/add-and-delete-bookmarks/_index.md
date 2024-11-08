@@ -3,7 +3,7 @@
 title: Добавление и Удаление Закладок
 type: docs
 weight: 10
-url: ru/cpp/add-and-delete-bookmarks/
+url: /ru/cpp/add-and-delete-bookmarks/
 ---
 
 ## <ins>**Добавить Закладку**

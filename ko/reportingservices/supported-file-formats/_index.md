@@ -2,7 +2,7 @@
 title: 지원되는 파일 형식
 type: docs
 weight: 20
-url: ko/reportingservices/supported-file-formats/
+url: /ko/reportingservices/supported-file-formats/
 lastmod: "2021-06-05"
 ---
 

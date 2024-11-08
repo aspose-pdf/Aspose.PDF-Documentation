@@ -4,7 +4,7 @@ title: استخراج مستندات PDF
 linktitle: استخراج مستندات PDF  
 type: docs  
 weight: 80  
-url: ar/python-net/parsing/  
+url: /ar/python-net/parsing/  
 description: هل تريد استخراج مستندات PDF؟ اكتشف طرقًا مختلفة لاستخراج بيانات PDF باستخدام Aspose.PDF لـ Python عبر .NET.  
 lastmod: "2021-06-05"  
 sitemap:  

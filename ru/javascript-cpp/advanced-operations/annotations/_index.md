@@ -3,7 +3,7 @@ title: Аннотации PDF с использованием JavaScript
 linktitle: Аннотации PDF
 type: docs
 weight: 90
-url: ru/javascript-cpp/annotations/
+url: /ru/javascript-cpp/annotations/
 description: Этот раздел показывает, как использовать все виды аннотаций в вашем PDF-файле с помощью Aspose.PDF для JavaScript через C++.
 lastmod: "2023-09-17"
 sitemap:
@@ -19,4 +19,4 @@ sitemap:
 
 Вы можете выполнить следующее:
 
-- [Удалить аннотацию](/pdf/javascript-cpp/delete-annotation/) - этот раздел объясняет, как удалить аннотации из вашего PDF с помощью JavaScript.
+- [Удалить аннотацию](/pdf/ru/javascript-cpp/delete-annotation/) - этот раздел объясняет, как удалить аннотации из вашего PDF с помощью JavaScript.

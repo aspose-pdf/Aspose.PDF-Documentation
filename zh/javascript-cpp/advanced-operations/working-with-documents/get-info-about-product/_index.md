@@ -3,7 +3,7 @@ title: 使用 JavaScript 获取有关产品的信息
 linktitle: 获取有关产品的信息
 type: docs
 weight: 70
-url: zh/javascript-cpp/get-info-about-product/
+url: /zh/javascript-cpp/get-info-about-product/
 description: 本主题演示如何使用 Aspose.PDF for JavaScript via C++ 获取有关产品的信息。
 lastmod: "2023-11-16"
 sitemap:

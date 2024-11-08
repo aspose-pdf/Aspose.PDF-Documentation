@@ -2,7 +2,7 @@
 title: 在 Python 中向现有 PDF 添加目录
 type: docs
 weight: 20
-url: zh/java/add-toc-to-existing-pdf-in-python/
+url: /zh/java/add-toc-to-existing-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

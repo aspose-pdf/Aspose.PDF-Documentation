@@ -2,7 +2,7 @@
 title: Générateur de tableaux
 type: docs
 weight: 130
-url: fr/net/plugins/tablegenerator/
+url: /fr/net/plugins/tablegenerator/
 description: Permet d'ajouter/insérer un tableau sur le numéro de page spécifié du document PDF.
 lastmod: "2024-01-24"
 draft: false

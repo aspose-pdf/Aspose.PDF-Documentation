@@ -3,7 +3,7 @@ title: 이미지의 해상도와 크기 얻기
 linktitle: 해상도 및 크기 얻기
 type: docs
 weight: 40
-url: ko/net/get-resolution-and-dimensions-of-embedded-images/
+url: /ko/net/get-resolution-and-dimensions-of-embedded-images/
 description: 이 섹션은 임베디드 이미지의 해상도와 크기를 얻는 세부사항을 보여줍니다
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "이 섹션은 임베디드 이미지의 해상도와 크기를 얻는 세부사항을 보여줍니다"
 }
 </script>
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 이 주제는 Aspose.PDF 네임스페이스의 연산자 클래스를 사용하는 방법을 설명합니다. 이 클래스는 이미지를 추출하지 않고도 이미지의 해상도와 크기 정보를 얻을 수 있는 기능을 제공합니다.
 

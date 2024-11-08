@@ -3,7 +3,7 @@ title: 为 Node.js 中的 PDF 设置背景颜色
 linktitle: 设置背景颜色
 type: docs
 weight: 80
-url: zh/nodejs-cpp/set-background-color/
+url: /zh/nodejs-cpp/set-background-color/
 description: 使用 Node.js 通过 C++ 为您的 PDF 文件设置背景颜色。
 lastmod: "2023-11-16"
 sitemap:

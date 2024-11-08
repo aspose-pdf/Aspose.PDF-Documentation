@@ -3,7 +3,7 @@ title: PDF에 테이블 생성 또는 추가
 linktitle: 테이블 생성 또는 추가
 type: docs
 weight: 10
-url: ko/cpp/add-table-in-existing-pdf-document/
+url: /ko/cpp/add-table-in-existing-pdf-document/
 description: Aspose.PDF for C++는 PDF 테이블을 생성, 읽기 및 편집하는 데 사용되는 라이브러리입니다. 이 라이브러리를 사용하여 C++로 PDF 페이지에 테이블을 페이지 매김할 수 있습니다.
 lastmod: "2021-11-11"
 sitemap:

@@ -3,7 +3,7 @@ title: 스탬프에서 텍스트 추출
 linktitle: 스탬프에서 텍스트 추출
 type: docs
 weight: 60
-url: ko/cpp/extract-text-from-stamps/
+url: /ko/cpp/extract-text-from-stamps/
 ---
 
 ## 스탬프 주석에서 텍스트 추출

@@ -3,7 +3,7 @@ title: 他のAspose.PDF for C++の例を実行する方法
 linktitle: 他の例を実行する方法
 type: docs
 weight: 50
-url: ja/cpp/how-to-run-other-examples/
+url: /ja/cpp/how-to-run-other-examples/
 description: このページは、例をダウンロードして実行する前に役立つガイドラインを示しています。
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ sitemap:
 1. Microsoft Visual Studio 2017以降。
 1. Visual StudioにNuGetパッケージマネージャーがインストールされていること。Visual Studioに最新のNuGet APIバージョンがインストールされていることを確認してください。NuGetパッケージマネージャーのインストール方法については、<http://docs.nuget.org/ndocs/guides/install-nuget>を確認してください。
 1. `ツール->オプション->NuGetパッケージマネージャー->パッケージソース`に移動し、オプション**nuget.org**がチェックされていることを確認してください。
-1. Example project uses NuGet Automatic Package Restore feature therefore you should have an active internet connection. If you do not have an active internet connection on the machine where examples are to be executed please check [Installation](/pdf/cpp/installation/) and manually add reference to Aspose.PDF.dll in the example project.
+1. Example project uses NuGet Automatic Package Restore feature therefore you should have an active internet connection. If you do not have an active internet connection on the machine where examples are to be executed please check [Installation](/pdf/ja/cpp/installation/) and manually add reference to Aspose.PDF.dll in the example project.
 
 ## Download from GitHub
 

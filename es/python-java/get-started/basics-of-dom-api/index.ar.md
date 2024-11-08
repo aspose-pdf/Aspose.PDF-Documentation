@@ -3,7 +3,7 @@ title: أساسيات واجهة برمجة تطبيقات Aspose.PDF DOM
 linktitle: أساسيات واجهة برمجة التطبيقات DOM
 type: docs
 weight: 110
-url: es/python-java/basics-of-dom-api/
+url: /es/python-java/basics-of-dom-api/
 description: يستخدم Aspose.PDF لـ Java أيضًا فكرة DOM لتمثيل هيكل مستند PDF من حيث الكائنات. هنا يمكنك قراءة وصف هذا الهيكل.
 lastmod: "2024-06-05"
 sitemap:

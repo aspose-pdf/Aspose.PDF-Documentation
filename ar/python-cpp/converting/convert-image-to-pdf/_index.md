@@ -3,7 +3,7 @@ title: تحويل الصورة إلى PDF في بايثون
 linktitle: تحويل الصورة إلى ملف PDF
 type: docs
 weight: 10
-url: ar/python-cpp/convert-image-to-pdf/
+url: /ar/python-cpp/convert-image-to-pdf/
 lastmod: "2024-04-22"
 description: يوضح هذا الموضوع كيفية تحويل الصورة إلى PDF باستخدام Aspose.PDF لبايثون عبر مكتبة C++.
 sitemap:

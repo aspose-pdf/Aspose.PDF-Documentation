@@ -3,7 +3,7 @@ title: Envío de Datos de AcroForm
 linktitle: Envío de AcroForm
 type: docs
 weight: 50
-url: es/net/posting-acroform-data/
+url: /es/net/posting-acroform-data/
 description: Puede importar y exportar datos de formulario a un archivo XML con el espacio de nombres Aspose.Pdf.Facades en Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -84,7 +84,7 @@ AcroForm es un tipo importante de documento PDF. No solo puede crear y editar un
 
 ## Detalles de implementación
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 En este artículo, hemos intentado crear un AcroForm usando el [espacio de nombres Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
 En este artículo, hemos intentado crear un AcroForm usando [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).

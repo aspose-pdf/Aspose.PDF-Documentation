@@ -3,7 +3,7 @@ title: 使用 C++ 和 Aspose.PDF 进行盖章
 linktitle: 盖章
 type: docs
 weight: 120
-url: zh/cpp/stamping/
+url: /zh/cpp/stamping/
 description: 本节介绍如何向 PDF 页面添加图像印章和文本印章。
 lastmod: "2021-06-05"
 sitemap:
@@ -15,6 +15,6 @@ sitemap:
 
 查看以下部分以了解如何使用 C++ 添加印章：
 
-- [在 PDF 页面中添加图像印章](/pdf/cpp/image-stamps-in-pdf-page/) - 添加图像印章，控制图像质量，图像印章作为 PDF 文件的背景。
+- [在 PDF 页面中添加图像印章](/pdf/zh/cpp/image-stamps-in-pdf-page/) - 添加图像印章，控制图像质量，图像印章作为 PDF 文件的背景。
 
-- [在 PDF 文件中添加文本印章](/pdf/cpp/text-stamps-in-the-pdf-file/) - 添加文本印章，为 TextStamp 对象定义对齐方式，将填充描边文本作为 PDF 文件中的印章。
+- [在 PDF 文件中添加文本印章](/pdf/zh/cpp/text-stamps-in-the-pdf-file/) - 添加文本印章，为 TextStamp 对象定义对齐方式，将填充描边文本作为 PDF 文件中的印章。

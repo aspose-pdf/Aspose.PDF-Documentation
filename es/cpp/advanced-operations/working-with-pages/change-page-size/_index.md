@@ -3,7 +3,7 @@ title: Cambiar el Tamaño de Página de un PDF Programáticamente
 linktitle: Cambiar el Tamaño de Página de un PDF
 type: docs
 weight: 40
-url: es/cpp/change-page-size/
+url: /es/cpp/change-page-size/
 description: Cambia el tamaño de página de tu archivo PDF usando una biblioteca C++.
 lastmod: "2021-12-08"
 sitemap:

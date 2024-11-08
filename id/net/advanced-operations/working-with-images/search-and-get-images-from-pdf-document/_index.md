@@ -3,7 +3,7 @@ title: Dapatkan dan Cari Gambar dalam PDF
 linktitle: Cari dan Dapatkan Gambar
 type: docs
 weight: 60
-url: id/net/search-and-get-images-from-pdf-document/
+url: /id/net/search-and-get-images-from-pdf-document/
 description: Bagian ini menjelaskan cara mencari dan mendapatkan gambar dari dokumen PDF dengan perpustakaan Aspose.PDF.
 lastmod: "2022-02-17"
 ---
@@ -75,7 +75,7 @@ lastmod: "2022-02-17"
 
 ImagePlacementAbsorber memungkinkan Anda untuk mencari di antara gambar di semua halaman dalam dokumen PDF.
 
-Kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk mencari seluruh dokumen untuk gambar:
 

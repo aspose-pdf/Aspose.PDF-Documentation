@@ -3,7 +3,7 @@ title: PDFでの画像の操作
 linktitle: 画像の操作
 type: docs
 weight: 40
-url: ja/java/working-with-images/
+url: /ja/java/working-with-images/
 description: このセクションでは、Javaライブラリを使用してPDFファイル内の画像を操作する機能について説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -22,14 +22,14 @@ Aspose.PDF for Javaを使用してPDF画像を編集する方法を学びまし�
 
 次のことができます：
 
-- [既存のPDFファイルへの画像追加](/pdf/java/add-image-to-existing-pdf-file/) - PDFドキュメントに単一の画像の画像と参照を追加し、その後品質を制御します。- [PDFファイルから画像を削除する](/pdf/java/delete-images-from-pdf-file/) - PDFファイルから画像を削除するためのコードスニペットを確認してください。
-- [PDFファイルから画像を抽出する](/pdf/java/extract-images-from-pdf-file/) - PDFファイルから画像を抽出するためにImagesコレクションを使用します。
-- [埋め込まれた画像の解像度と寸法を取得する](/pdf/java/get-resolution-and-dimensions-of-embedded-images/) - 解像度と寸法情報を取得する機能を提供するAspose.PDF名前空間のオペレータークラスを使用します。
-- [画像の配置を操作する](/pdf/java/working-with-image-placement/) - PDFドキュメントで画像の解像度と位置を取得することが可能です。
-- [PDFドキュメントから画像を検索して取得する](/pdf/java/search-and-get-images-from-pdf-document/) - 個々のページから画像を取得し、Javaを使用してすべてのページ上の画像を検索することができます。
-- [既存のPDFファイル内の画像を置き換える](/pdf/java/replace-image-in-existing-pdf-file/) - PDFファイル内の画像を置き換える方法を示すコードスニペットを確認してください。
+- [既存のPDFファイルへの画像追加](/pdf/ja/java/add-image-to-existing-pdf-file/) - PDFドキュメントに単一の画像の画像と参照を追加し、その後品質を制御します。- [PDFファイルから画像を削除する](/pdf/ja/java/delete-images-from-pdf-file/) - PDFファイルから画像を削除するためのコードスニペットを確認してください。
+- [PDFファイルから画像を抽出する](/pdf/ja/java/extract-images-from-pdf-file/) - PDFファイルから画像を抽出するためにImagesコレクションを使用します。
+- [埋め込まれた画像の解像度と寸法を取得する](/pdf/ja/java/get-resolution-and-dimensions-of-embedded-images/) - 解像度と寸法情報を取得する機能を提供するAspose.PDF名前空間のオペレータークラスを使用します。
+- [画像の配置を操作する](/pdf/ja/java/working-with-image-placement/) - PDFドキュメントで画像の解像度と位置を取得することが可能です。
+- [PDFドキュメントから画像を検索して取得する](/pdf/ja/java/search-and-get-images-from-pdf-document/) - 個々のページから画像を取得し、Javaを使用してすべてのページ上の画像を検索することができます。
+- [既存のPDFファイル内の画像を置き換える](/pdf/ja/java/replace-image-in-existing-pdf-file/) - PDFファイル内の画像を置き換える方法を示すコードスニペットを確認してください。
 
-- [画像サイズを設定する](/pdf/java/set-image-size/) - Javaライブラリでは画像のサイズを設定することができます。
-- [デフォルトフォント名を設定する](/pdf/java/set-default-font-name/) - DefaultFontNameプロパティを使用してデフォルトフォント名を設定します。
-- [PDFドキュメントからサムネイル画像を生成する](/pdf/java/generate-thumbnail-images-from-pdf-documents/) - 次の記事では、最初にAcrobat SDKを使用し、その後Aspose.PDFを使用してPDFドキュメントからサムネイル画像を生成する方法を示します。
-- DICOM画像のサポート - Aspose.PDF for Javaは、特別な医療用グラフィックス標準の画像をサポートしています。Aspose.PDF for Javaは、DICOMおよびSVG画像を変換することができます。[DICOMをPDFに変換する](/pdf/java/convert-dicom-to-pdf/)セクションをご覧ください。
+- [画像サイズを設定する](/pdf/ja/java/set-image-size/) - Javaライブラリでは画像のサイズを設定することができます。
+- [デフォルトフォント名を設定する](/pdf/ja/java/set-default-font-name/) - DefaultFontNameプロパティを使用してデフォルトフォント名を設定します。
+- [PDFドキュメントからサムネイル画像を生成する](/pdf/ja/java/generate-thumbnail-images-from-pdf-documents/) - 次の記事では、最初にAcrobat SDKを使用し、その後Aspose.PDFを使用してPDFドキュメントからサムネイル画像を生成する方法を示します。
+- DICOM画像のサポート - Aspose.PDF for Javaは、特別な医療用グラフィックス標準の画像をサポートしています。Aspose.PDF for Javaは、DICOMおよびSVG画像を変換することができます。[DICOMをPDFに変換する](/pdf/ja/java/convert-dicom-to-pdf/)セクションをご覧ください。

@@ -3,7 +3,7 @@ title: JavaScriptでPDFをPPTXに変換
 linktitle: PDFをPowerPointに変換
 type: docs
 weight: 30
-url: ja/javascript-cpp/convert-pdf-to-powerpoint/
+url: /ja/javascript-cpp/convert-pdf-to-powerpoint/
 lastmod: "2023-11-01"
 description: Aspose.PDFを使用すると、JavaScriptを使ってPDFをPPTX形式に直接変換できます。
 sitemap:

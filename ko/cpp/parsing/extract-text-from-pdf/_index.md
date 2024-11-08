@@ -3,7 +3,7 @@ title: PDF에서 텍스트 추출
 linktitle: PDF에서 텍스트 추출
 type: docs
 weight: 10
-url: ko/cpp/extract-text-from-pdf/
+url: /ko/cpp/extract-text-from-pdf/
 description: Aspose.PDF는 다양한 종류의 정보를 추출할 수 있습니다. 이 섹션에는 C++에서 Aspose.PDF를 사용하여 PDF 문서에서 텍스트를 추출하는 방법에 대한 기사가 포함되어 있습니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -17,5 +17,5 @@ PDF 파일은 플랫폼 간 및 동일한 소프트웨어를 사용하지 않는
 
 ## 이 섹션의 기사
 
-- [PDF에서 텍스트 추출](/pdf/cpp/extract-text-from-all-pdf/)
-- [PDF에서 단락 추출](/pdf/cpp/extract-paragraph-from-pdf/)
+- [PDF에서 텍스트 추출](/pdf/ko/cpp/extract-text-from-all-pdf/)
+- [PDF에서 단락 추출](/pdf/ko/cpp/extract-paragraph-from-pdf/)

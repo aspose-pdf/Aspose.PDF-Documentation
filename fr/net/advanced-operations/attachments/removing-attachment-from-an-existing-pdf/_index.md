@@ -3,7 +3,7 @@ title: Suppression de pièce jointe d'un PDF
 linktitle: Suppression de pièce jointe d'un PDF existant
 type: docs
 weight: 30
-url: fr/net/removing-attachment-from-an-existing-pdf/
+url: /fr/net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF peut supprimer les pièces jointes de vos documents PDF. Utilisez l'API PDF C# pour supprimer les pièces jointes dans les fichiers PDF en utilisant la bibliothèque Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Aspose.PDF peut supprimer les pièces jointes des fichiers PDF. Les pièces jointes d'un document PDF sont contenues dans la collection EmbeddedFiles de l'objet Document.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Pour supprimer toutes les pièces jointes associées à un fichier PDF :
 

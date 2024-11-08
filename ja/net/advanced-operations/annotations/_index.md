@@ -3,7 +3,7 @@ title: アノテーションを使用する
 linktitle: PDFのアノテーション
 type: docs
 weight: 100
-url: ja/net/annotations/
+url: /ja/net/annotations/
 description: このセクションでは、Aspose.PDF ライブラリを使用して PDF ファイルにすべての種類のアノテーションを使用する方法を示します。
 lastmod: "2022-02-17"
 sitemap:
@@ -89,10 +89,10 @@ PDFビューアは通常、テキストのハイライト、ノート、ライ�
 
 以下のことができます：
 
-- [注釈の概要](/pdf/net/overview-of-annotations/) - PDF仕様によって定義された注釈の種類とAspose.PDFがサポートする内容を学びます。
-- [注釈の追加、削除、取得](/pdf/net/add-delete-and-get-annotation/) - このセクションでは、許可されたすべてのタイプの注釈を扱う方法について説明します。
-- [アノテーションの追加、削除、取得](/pdf/net/add-delete-and-get-annotation/) - このセクションでは、許可されているすべてのタイプのアノテーションの操作方法について説明します。
-- [XFDF形式でアノテーションをインポートおよびエクスポートする](/pdf/net/import-export-xfdf/) - Aspose.PDFライブラリは、アノテーションデータをXFDFファイルにインポートおよびエクスポートするための方法を提供します。
+- [注釈の概要](/pdf/ja/net/overview-of-annotations/) - PDF仕様によって定義された注釈の種類とAspose.PDFがサポートする内容を学びます。
+- [注釈の追加、削除、取得](/pdf/ja/net/add-delete-and-get-annotation/) - このセクションでは、許可されたすべてのタイプの注釈を扱う方法について説明します。
+- [アノテーションの追加、削除、取得](/pdf/ja/net/add-delete-and-get-annotation/) - このセクションでは、許可されているすべてのタイプのアノテーションの操作方法について説明します。
+- [XFDF形式でアノテーションをインポートおよびエクスポートする](/pdf/ja/net/import-export-xfdf/) - Aspose.PDFライブラリは、アノテーションデータをXFDFファイルにインポートおよびエクスポートするための方法を提供します。
 
 <script type="application/ld+json">
 {

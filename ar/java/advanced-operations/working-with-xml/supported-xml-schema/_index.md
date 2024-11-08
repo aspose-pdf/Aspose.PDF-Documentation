@@ -3,7 +3,7 @@ title: XML Schema
 linktitle: Supported XML Schema
 type: docs
 weight: 10
-url: ar/java/supported-xml-schema/
+url: /ar/java/supported-xml-schema/
 description: يصف هذا المقال مخطط XML للعمل مع مستندات XML في Aspose.PDF for Java
 lastmod: "2021-06-05"
 sitemap:

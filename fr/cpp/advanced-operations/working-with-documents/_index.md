@@ -3,7 +3,7 @@ title: Travailler avec des documents PDF
 linktitle: Travailler avec des documents
 type: docs
 weight: 10
-url: fr/cpp/working-with-documents/
+url: /fr/cpp/working-with-documents/
 lastmod: "2021-06-05"
 description: Cet article vous décrit quelles manipulations peuvent être effectuées avec le document avec la bibliothèque Aspose.PDF pour C++.
 sitemap:
@@ -21,10 +21,10 @@ Mais **Aspose.PDF pour C++** peut vous aider à faire face à la plupart des tâ
 
 Vous êtes capable de faire ce qui suit :
 
-- [Créer un document PDF](/pdf/cpp/create-pdf-document/) - créer un PDF, créer un document PDF consultable.
-- [Mise en forme du document PDF](/pdf/cpp/formatting-pdf-document/) - obtenir et définir les propriétés du document, intégrer des polices et autres opérations avec des fichiers PDF.
-- [Manipuler le document PDF](/pdf/cpp/manipulate-pdf-document/) - valider un document PDF pour la norme PDF A, travailler avec la table des matières, définir la date d'expiration du PDF, etc.
-- [Optimiser les documents PDF](/pdf/cpp/optimize-pdf/) - optimiser le contenu des pages, optimiser la taille du fichier, supprimer les objets non utilisés, compresser toutes les images pour une optimisation réussie du document.
-- [Fusionner des PDF](/pdf/cpp/merge-pdf-documents/) - fusionner plusieurs fichiers PDF en un seul document PDF en utilisant C++.
-- [Diviser un PDF](/pdf/cpp/split-pdf-document/) - diviser les pages PDF en fichiers PDF individuels dans vos applications C++.
-- [Travailler avec les titres](/pdf/cpp/working-with-headings/) - vous pouvez créer une numérotation dans le titre de votre document PDF avec C++.
+- [Créer un document PDF](/pdf/fr/cpp/create-pdf-document/) - créer un PDF, créer un document PDF consultable.
+- [Mise en forme du document PDF](/pdf/fr/cpp/formatting-pdf-document/) - obtenir et définir les propriétés du document, intégrer des polices et autres opérations avec des fichiers PDF.
+- [Manipuler le document PDF](/pdf/fr/cpp/manipulate-pdf-document/) - valider un document PDF pour la norme PDF A, travailler avec la table des matières, définir la date d'expiration du PDF, etc.
+- [Optimiser les documents PDF](/pdf/fr/cpp/optimize-pdf/) - optimiser le contenu des pages, optimiser la taille du fichier, supprimer les objets non utilisés, compresser toutes les images pour une optimisation réussie du document.
+- [Fusionner des PDF](/pdf/fr/cpp/merge-pdf-documents/) - fusionner plusieurs fichiers PDF en un seul document PDF en utilisant C++.
+- [Diviser un PDF](/pdf/fr/cpp/split-pdf-document/) - diviser les pages PDF en fichiers PDF individuels dans vos applications C++.
+- [Travailler avec les titres](/pdf/fr/cpp/working-with-headings/) - vous pouvez créer une numérotation dans le titre de votre document PDF avec C++.

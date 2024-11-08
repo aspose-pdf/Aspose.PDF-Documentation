@@ -4,7 +4,7 @@ title: Ekstrak Tautan dari File PDF
 linktitle: Ekstrak Tautan
 type: docs
 weight: 30
-url: id/cpp/extract-links/
+url: /id/cpp/extract-links/
 description: Ekstrak tautan dari PDF dengan C#. Topik ini menjelaskan bagaimana cara mengekstrak tautan menggunakan kelas AnnotationSelector.
 lastmod: "2021-06-05"
 sitemap:

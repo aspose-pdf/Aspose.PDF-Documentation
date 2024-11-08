@@ -3,7 +3,7 @@ title: Desativar Compressão de Arquivos ao Adicionar como Recursos Incorporados
 linktitle: Desativar Compressão de Arquivos
 type: docs
 weight: 40
-url: pt/java/disable-files-compression-when-adding-as-embedded-resources/
+url: /pt/java/disable-files-compression-when-adding-as-embedded-resources/
 description: Este artigo explica como desativar a compressão de arquivos ao adicionar como recursos incorporados
 lastmod: "2021-06-05"
 ---

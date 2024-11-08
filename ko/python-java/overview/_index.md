@@ -3,7 +3,7 @@ title: Aspose.PDF for Python via Java 사용
 linktitle: 개요
 type: docs
 weight: 20
-url: ko/python-java/overview/
+url: /ko/python-java/overview/
 description: Python을 통해 Java를 사용하여 PDF를 생성 및 편집하는 것과 관련된 변환, 분할, 병합 및 기타 작업의 주요 기능 및 특징
 lastmod: "2022-05-16"
 sitemap:
@@ -39,7 +39,7 @@ Java를 통한 Aspose.PDF for Python은 다양한 기능을 지원합니다:
 
 더 읽어보기:
 
-- [Python via Java에서 문서 변환 작업](/pdf/python-java/conversion/)
-- [Python via Java에서 문서 객체 작업](/pdf/python-java/working-with-documents/)
-- [Python via Java에서 페이지 작업](/pdf/python-java/working-with-pages/)
-- [Python via Java에서 텍스트 작업](/pdf/python-java/working-with-text/)
+- [Python via Java에서 문서 변환 작업](/pdf/ko/python-java/conversion/)
+- [Python via Java에서 문서 객체 작업](/pdf/ko/python-java/working-with-documents/)
+- [Python via Java에서 페이지 작업](/pdf/ko/python-java/working-with-pages/)
+- [Python via Java에서 텍스트 작업](/pdf/ko/python-java/working-with-text/)

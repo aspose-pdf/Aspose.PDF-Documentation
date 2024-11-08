@@ -2,7 +2,7 @@
 title: العمل مع المرفقات - الواجهات
 type: docs
 weight: 50
-url: ar/net/working-with-attachments-facades/
+url: /ar/net/working-with-attachments-facades/
 description: يشرح هذا القسم كيفية العمل مع المرفقات - الواجهات باستخدام فئة PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

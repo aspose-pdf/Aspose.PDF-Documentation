@@ -2,7 +2,7 @@
 title: Despliegue Fácil y Liviano
 type: docs
 weight: 40
-url: es/reportingservices/easy-and-lightweight-deployment/
+url: /es/reportingservices/easy-and-lightweight-deployment/
 lastmod: "2021-06-05"
 ---
 

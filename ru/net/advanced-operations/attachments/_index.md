@@ -3,7 +3,7 @@ title: Работа с вложениями в PDF
 linktitle: Работа с вложениями
 type: docs
 weight: 130
-url: ru/net/attachments/
+url: /ru/net/attachments/
 description: Используйте C# PDF API для доступа, добавления и удаления вложений в PDF-файлах с помощью C# в ваших приложениях. Полное руководство с примерами кода на C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,10 +82,10 @@ aliases:
 Вложение — это дополнительный файл, прикрепленный к основному документу, это может быть различные типы файлов, такие как pdf, word, изображение или другие файлы.
 Вы узнаете, как добавлять вложения в pdf, получать информацию о вложении и сохранять её в файл, удалять вложение из PDF программно с помощью C#.
 
-- [Добавление вложения в документ PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [Извлечение и сохранение вложения](/pdf/net/extract-and-save-an-attachment/)
-- [Удаление вложения из существующего PDF](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Портфолио](/pdf/net/portfolio/)
+- [Добавление вложения в документ PDF](/pdf/ru/net/add-attachment-to-pdf-document/)
+- [Извлечение и сохранение вложения](/pdf/ru/net/extract-and-save-an-attachment/)
+- [Удаление вложения из существующего PDF](/pdf/ru/net/removing-attachment-from-an-existing-pdf/)
+- [Портфолио](/pdf/ru/net/portfolio/)
 
 <script type="application/ld+json">
 {

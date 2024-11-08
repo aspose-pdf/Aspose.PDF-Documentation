@@ -3,7 +3,7 @@ title: Trouver si le PDF contient des images ou du texte
 linktitle: Vérifier la présence de texte et d'images
 type: docs
 weight: 40
-url: fr/net/find-whether-pdf-file-contains-images-or-text-only/
+url: /fr/net/find-whether-pdf-file-contains-images-or-text-only/
 description: Ce sujet explique comment trouver si un fichier PDF contient uniquement des images ou du texte avec la classe PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

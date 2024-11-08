@@ -2,7 +2,7 @@
 title: 设置PDF的查看器偏好
 type: docs
 weight: 60
-url: zh/net/set-viewer-preference-of-an-existing-pdf-file/
+url: /zh/net/set-viewer-preference-of-an-existing-pdf-file/
 description: 本节介绍如何使用PdfContentEditor类设置现有PDF文件的查看器偏好。
 lastmod: "2021-06-05"
 draft: false

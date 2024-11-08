@@ -3,7 +3,7 @@ title: XML スキーマ
 linktitle: サポートされている XML スキーマ
 type: docs
 weight: 10
-url: ja/java/supported-xml-schema/
+url: /ja/java/supported-xml-schema/
 description: この記事では、Aspose.PDF for Java で XML ドキュメントを操作するための XML スキーマについて説明します
 lastmod: "2021-06-05"
 sitemap:

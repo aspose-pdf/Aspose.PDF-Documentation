@@ -3,7 +3,7 @@ title: تعيين اسم الخط الافتراضي باستخدام C++
 linktitle: تعيين اسم الخط الافتراضي
 type: docs
 weight: 90
-url: ar/cpp/set-default-font-name/
+url: /ar/cpp/set-default-font-name/
 description: يصف هذا القسم كيفية تعيين اسم الخط الافتراضي باستخدام مكتبة C++.
 lastmod: "2021-12-18"
 ---

@@ -2,7 +2,7 @@
 title: PDF 파일에서 서명 처리
 type: docs
 weight: 40
-url: ko/net/working-with-signature-in-a-pdf-file/
+url: /ko/net/working-with-signature-in-a-pdf-file/
 description: 이 섹션에서는 PdfFileSignature 클래스를 사용하여 서명 정보 추출, 서명에서 이미지 추출, 언어 변경 등을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

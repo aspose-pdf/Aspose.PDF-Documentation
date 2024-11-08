@@ -3,7 +3,7 @@ title: Bekerja dengan Dokumen PDF menggunakan Python
 linktitle: Bekerja dengan Dokumen
 type: docs
 weight: 10
-url: id/python-net/working-with-documents/
+url: /id/python-net/working-with-documents/
 description: Artikel ini menjelaskan kepada Anda manipulasi apa yang dapat dilakukan dengan dokumen menggunakan Aspose.PDF untuk Python melalui perpustakaan .NET.
 lastmod: "2023-04-12"
 sitemap:
@@ -83,14 +83,14 @@ Dokumen PDF dapat dilihat dan dicetak, tetapi tidak selalu mudah diedit. Namun, 
 
 Anda dapat melakukan hal berikut:
 
-- [Buat Dokumen PDF](/pdf/python-net/create-pdf-document/) - buat dokumen PDF sederhana.
-- [Pemformatan Dokumen PDF](/pdf/python-net/formatting-pdf-document/) - buat dokumen, dapatkan dan atur properti dokumen, menyematkan font, dan operasi lain dengan file PDF.
+- [Buat Dokumen PDF](/pdf/id/python-net/create-pdf-document/) - buat dokumen PDF sederhana.
+- [Pemformatan Dokumen PDF](/pdf/id/python-net/formatting-pdf-document/) - buat dokumen, dapatkan dan atur properti dokumen, menyematkan font, dan operasi lain dengan file PDF.
 
-- [Manipulasi Dokumen PDF](/pdf/python-net/manipulate-pdf-document/) - validasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lain-lain.
-- [Optimalkan PDF](/pdf/python-net/optimize-pdf/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimasi dokumen yang sukses.
-- [Gabungkan PDF](/pdf/python-net/merge-pdf-documents/) - gabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan Python.
-- [Pisahkan PDF](/pdf/python-net/split-document/) - pisahkan halaman PDF menjadi file PDF individual dalam aplikasi Python Anda.
-- [Bekerja dengan Judul](/pdf/python-net/working-with-headings/) - Anda dapat membuat penomoran dalam judul dokumen PDF Anda dengan Python.
+- [Manipulasi Dokumen PDF](/pdf/id/python-net/manipulate-pdf-document/) - validasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lain-lain.
+- [Optimalkan PDF](/pdf/id/python-net/optimize-pdf/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimasi dokumen yang sukses.
+- [Gabungkan PDF](/pdf/id/python-net/merge-pdf-documents/) - gabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan Python.
+- [Pisahkan PDF](/pdf/id/python-net/split-document/) - pisahkan halaman PDF menjadi file PDF individual dalam aplikasi Python Anda.
+- [Bekerja dengan Judul](/pdf/id/python-net/working-with-headings/) - Anda dapat membuat penomoran dalam judul dokumen PDF Anda dengan Python.
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: التعليقات التوضيحية في PDF
 linktitle: التعليقات التوضيحية في PDF
 type: docs
 weight: 100
-url: ar/python-net/annotations/
+url: /ar/python-net/annotations/
 description: يوضح هذا القسم كيفية استخدام جميع أنواع التعليقات التوضيحية في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF.
 lastmod: "2023-02-17"
 sitemap:
@@ -93,9 +93,9 @@ You are able to do the following:
 
 يمكنك القيام بما يلي:
 
-- [Add, Delete and Get Annotation](/pdf/python-net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
+- [Add, Delete and Get Annotation](/pdf/ar/python-net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
 
-- [إضافة وحذف والحصول على التعليقات التوضيحية](/pdf/python-net/add-delete-and-get-annotation/) - يشرح هذا القسم كيفية العمل مع جميع أنواع التعليقات التوضيحية المسموح بها.
+- [إضافة وحذف والحصول على التعليقات التوضيحية](/pdf/ar/python-net/add-delete-and-get-annotation/) - يشرح هذا القسم كيفية العمل مع جميع أنواع التعليقات التوضيحية المسموح بها.
 
 <script type="application/ld+json">
 {

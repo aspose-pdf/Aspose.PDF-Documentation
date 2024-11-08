@@ -3,7 +3,7 @@ title: Доступность и маркированные PDF
 linktitle: Доступность. Маркированный PDF
 type: docs
 weight: 120
-url: ru/net/accessibility-tagged-pdf/
+url: /ru/net/accessibility-tagged-pdf/
 description: Aspose.PDF предоставляет возможность создавать маркированные PDF-документы, позволяя маркировать структурные элементы. Узнайте больше о том, как получить доступные PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,11 +79,11 @@ sitemap:
 
 Этот раздел охватывает следующие темы:
 
-- [Создание PDF с тегами](/pdf/net/create-tagged-pdf/)
-- [Извлечение тегированного содержимого из PDF с тегами](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [Настройка свойств элементов структуры](/pdf/net/setting-structure-elements-properties/)
-- [Работа с таблицами в PDF с тегами](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [Тест на соответствие PDF-UA - Список ошибок](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [Создание PDF с тегами](/pdf/ru/net/create-tagged-pdf/)
+- [Извлечение тегированного содержимого из PDF с тегами](/pdf/ru/net/extract-tagged-content-from-tagged-pdfs/)
+- [Настройка свойств элементов структуры](/pdf/ru/net/setting-structure-elements-properties/)
+- [Работа с таблицами в PDF с тегами](/pdf/ru/net/working-with-table-in-tagged-pdfs/)
+- [Тест на соответствие PDF-UA - Список ошибок](/pdf/ru/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

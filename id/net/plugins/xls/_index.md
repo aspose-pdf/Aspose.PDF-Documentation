@@ -2,7 +2,7 @@
 title: XLS Converter
 type: docs
 weight: 20
-url: id/net/plugins/xls/
+url: /id/net/plugins/xls/
 description: Cara Mengonversi PDF ke spreadsheet Excel menggunakan plugin Aspose.Pdf
 lastmod: "2024-01-24"
 ---

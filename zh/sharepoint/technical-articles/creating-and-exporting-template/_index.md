@@ -2,7 +2,7 @@
 title: 创建和导出模板
 type: docs
 weight: 10
-url: zh/sharepoint/creating-and-exporting-template/
+url: /zh/sharepoint/creating-and-exporting-template/
 lastmod: "2020-12-16"
 description: 您可以使用 SharePoint 的 PDF SharePoint API 创建和导出模板为 PDF。
 ---

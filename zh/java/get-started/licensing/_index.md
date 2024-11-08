@@ -3,7 +3,7 @@ title: 许可和限制
 linktitle: 许可和限制
 type: docs
 weight: 90
-url: zh/java/licensing/
+url: /zh/java/licensing/
 description: Aspose.PDF for Java 邀请其客户获取经典许可证和计量许可证。还可以使用有限许可证更好地探索产品。
 lastmod: "2021-06-05"
 sitemap:

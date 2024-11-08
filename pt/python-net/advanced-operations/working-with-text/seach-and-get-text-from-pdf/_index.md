@@ -3,7 +3,7 @@ title: Pesquisar e Obter Texto de Páginas de PDF
 linktitle: Pesquisar e Obter Texto
 type: docs
 weight: 60
-url: pt/python-net/search-and-get-text-from-pdf/
+url: /pt/python-net/search-and-get-text-from-pdf/
 description: Este artigo explica como usar várias ferramentas para pesquisar e obter um texto do Aspose.PDF para .NET.
 lastmod: "2024-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Como adicionar assinatura de Smart Card em PDF
 linktitle: Assinatura de PDF com Smart Card
 type: docs
 weight: 40
-url: pt/net/sign-pdf-document-from-smart-card/
+url: /pt/net/sign-pdf-document-from-smart-card/
 description: Aspose.PDF para .NET permite que você assine documentos PDF a partir de um smart card usando campo de assinatura.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Aspose.PDF para .NET oferece a funcionalidade de adicionar assinaturas digitais a partir de um local de armazenamento de chaves. Você pode aplicar a assinatura aceitando o certificado fornecido pelo repositório de certificados, cartão inteligente ou [cartão PIV](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) conectado ao sistema em tempo de execução.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 A seguir estão os trechos de código para assinar um documento PDF a partir de um cartão inteligente:
 

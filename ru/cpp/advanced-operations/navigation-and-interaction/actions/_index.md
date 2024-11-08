@@ -3,7 +3,7 @@ title: Работа с Действиями в PDF
 linktitle: Действия
 type: docs
 weight: 20
-url: ru/cpp/actions/
+url: /ru/cpp/actions/
 description: Этот раздел объясняет, как программно добавлять действия в документ и поля формы с помощью C++.
 lastmod: "2022-01-25"
 sitemap:

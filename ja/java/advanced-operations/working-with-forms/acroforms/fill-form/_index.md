@@ -3,7 +3,7 @@ title: AcroFormsを埋める
 linktitle: AcroFormsを埋める
 type: docs
 weight: 20
-url: ja/java/fill-form/
+url: /ja/java/fill-form/
 description: このセクションでは、Aspose.PDF for Javaを使用してPDFドキュメントのフォームフィールドを埋める方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Aspose.PDF Visual Studio Plugin
 type: docs
 weight: 20
-url: ru/net/aspose-pdf-visual-studio-plugin/
+url: /ru/net/aspose-pdf-visual-studio-plugin/
 description: Узнайте, как использовать модуль импорта PDF Umbraco
 lastmod: "2021-06-05"
 sitemap:

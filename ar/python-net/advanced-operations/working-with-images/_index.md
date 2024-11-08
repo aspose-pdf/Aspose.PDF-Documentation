@@ -3,7 +3,7 @@ title: العمل مع الصور في PDF باستخدام Python
 linktitle: العمل مع الصور
 type: docs
 weight: 40
-url: ar/python-net/working-with-images/
+url: /ar/python-net/working-with-images/
 description: يصف هذا القسم ميزات العمل مع الصور في ملف PDF باستخدام مكتبة Python.
 lastmod: "2023-04-17"
 sitemap:
@@ -81,9 +81,9 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إضافة صورة إلى ملف PDF موجود](/pdf/python-net/add-image-to-existing-pdf-file/) - إضافة الصور والمرجع لصورة واحدة في مستند PDF، بعد ذلك التحكم في الجودة.
-- [حذف الصور من ملف PDF](/pdf/python-net/delete-images-from-pdf-file/) - تحقق من مقتطف الشيفرة لحذف الصور من ملف PDF.
-- [استخراج الصور من ملف PDF](/pdf/python-net/extract-images-from-pdf-file/) - المقالة التالية توضح كيفية استخراج الصور من ملف PDF باستخدام مكتبة Python.
+- [إضافة صورة إلى ملف PDF موجود](/pdf/ar/python-net/add-image-to-existing-pdf-file/) - إضافة الصور والمرجع لصورة واحدة في مستند PDF، بعد ذلك التحكم في الجودة.
+- [حذف الصور من ملف PDF](/pdf/ar/python-net/delete-images-from-pdf-file/) - تحقق من مقتطف الشيفرة لحذف الصور من ملف PDF.
+- [استخراج الصور من ملف PDF](/pdf/ar/python-net/extract-images-from-pdf-file/) - المقالة التالية توضح كيفية استخراج الصور من ملف PDF باستخدام مكتبة Python.
 
 <script type="application/ld+json">
 {

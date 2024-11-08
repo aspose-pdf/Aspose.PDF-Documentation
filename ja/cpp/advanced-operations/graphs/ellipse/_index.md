@@ -3,7 +3,7 @@ title: PDFファイルに楕円オブジェクトを追加する
 linktitle: 楕円を追加
 type: docs
 weight: 60
-url: ja/cpp/add-ellipse/
+url: /ja/cpp/add-ellipse/
 description: この記事では、Aspose.PDF for C++を使用してPDFに楕円オブジェクトを作成する方法を説明します。
 lastmod: "2021-12-21"
 sitemap:

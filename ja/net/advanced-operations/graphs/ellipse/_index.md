@@ -3,7 +3,7 @@ title: PDFファイルに楕円オブジェクトを追加
 linktitle: 楕円を追加
 type: docs
 weight: 60
-url: ja/net/add-ellipse/
+url: /ja/net/add-ellipse/
 description: この記事では、Aspose.PDF for .NETを使用してPDFに楕円オブジェクトを作成する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "この記事では、Aspose.PDF for .NETを使用してPDFに楕円オブジェクトを作成する方法について説明します。"
 }
 </script>
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## 楕円オブジェクトを追加
 

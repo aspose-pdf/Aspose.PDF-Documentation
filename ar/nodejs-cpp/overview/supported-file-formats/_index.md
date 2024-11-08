@@ -3,7 +3,7 @@ title: صيغ الملفات المدعومة
 linktitle: صيغ الملفات المدعومة
 type: docs
 weight: 10
-url: ar/nodejs-cpp/supported-file-formats/
+url: /ar/nodejs-cpp/supported-file-formats/
 description: توضح هذه الصفحة أي من Aspose.PDF لـ Node.js يمكنه تحميل وحفظ صيغ الملفات.
 lastmod: "2023-11-16"
 sitemap:

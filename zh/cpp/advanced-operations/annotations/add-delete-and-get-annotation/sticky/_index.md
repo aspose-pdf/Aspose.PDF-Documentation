@@ -3,7 +3,7 @@ title: PDF 粘性注释使用 C++
 linktitle: 粘性注释
 type: docs
 weight: 50
-url: zh/cpp/sticky-annotations/
+url: /zh/cpp/sticky-annotations/
 description: 本主题关于粘性注释，作为示例，我们展示了文本中的水印注释。它用于在页面上表示图形。检查代码片段以解决此任务。
 lastmod: "2021-11-24"
 sitemap:

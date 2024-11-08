@@ -3,7 +3,7 @@ title: Aspose.PDF for C++を使用したPDFでのAcroFormsの操作
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ja/cpp/acroforms/
+url: /ja/cpp/acroforms/
 description: Aspose.PDF for C++を使用して、フォームをゼロから作成し、PDFドキュメントのフォームフィールドに入力し、フォームからデータを抽出し、既存のフォームにフィールドを追加または削除することができます。
 lastmod: "2021-12-01"
 sitemap:
@@ -19,12 +19,12 @@ sitemap:
 
 フォームの操作の可能性についてより詳細に学ぶには、以下のセクションの記事を参照してください：
 
-- [Create AcroForm](/pdf/cpp/create-form/) - C++を使用して、RadioButtonField、TextBoxField、Caption Fieldを追加し、ゼロからフォームを作成します。
+- [Create AcroForm](/pdf/ja/cpp/create-form/) - C++を使用して、RadioButtonField、TextBoxField、Caption Fieldを追加し、ゼロからフォームを作成します。
 
-- [Fill AcroForm](/pdf/cpp/fill-form/) - フォームフィールドに入力するには、DocumentオブジェクトのFormコレクションからフィールドを取得します。
+- [Fill AcroForm](/pdf/ja/cpp/fill-form/) - フォームフィールドに入力するには、DocumentオブジェクトのFormコレクションからフィールドを取得します。
 
-- [Extract Data AcroForm](/pdf/cpp/extract-form/) - すべてのフィールドおよび個々のフィールドから値を取得します。
+- [Extract Data AcroForm](/pdf/ja/cpp/extract-form/) - すべてのフィールドおよび個々のフィールドから値を取得します。
 
-- [Modifing AcroForm](/pdf/cpp/modifing-form/) - FieldLimitの取得/設定、既存のフォームのフィールド削除、14のコアPDFフォント以外のフォントをフォームフィールドに設定します。
+- [Modifing AcroForm](/pdf/ja/cpp/modifing-form/) - FieldLimitの取得/設定、既存のフォームのフィールド削除、14のコアPDFフォント以外のフォントをフォームフィールドに設定します。
 
-- [Posting AcroForm Data](/pdf/cpp/posting-acroform-data/) - フォームデータをXMLファイルにインポートおよびエクスポートします。
+- [Posting AcroForm Data](/pdf/ja/cpp/posting-acroform-data/) - フォームデータをXMLファイルにインポートおよびエクスポートします。

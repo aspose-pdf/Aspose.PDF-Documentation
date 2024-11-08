@@ -3,7 +3,7 @@ title: Formatage de texte dans un PDF en utilisant C#
 linktitle: Formatage de texte dans un PDF
 type: docs
 weight: 30
-url: fr/net/text-formatting-inside-pdf/
+url: /fr/net/text-formatting-inside-pdf/
 description: Cette page explique comment formater du texte dans votre fichier PDF. Il y a l'ajout d'indentation de ligne, l'ajout de bordure de texte, l'ajout de texte souligné, et etc.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Cette page explique comment formater du texte dans votre fichier PDF. Il y a l'ajout d'indentation de ligne, l'ajout de bordure de texte, l'ajout de texte souligné, et etc."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Comment ajouter un retrait de ligne à un PDF
 

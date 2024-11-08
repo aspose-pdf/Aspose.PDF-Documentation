@@ -3,7 +3,7 @@ title: PDF 페이지에서 텍스트 검색 및 가져오기
 linktitle: 텍스트 검색 및 가져오기
 type: docs
 weight: 60
-url: ko/python-net/search-and-get-text-from-pdf/
+url: /ko/python-net/search-and-get-text-from-pdf/
 description: 이 문서에서는 Aspose.PDF for .NET에서 다양한 도구를 사용하여 텍스트를 검색하고 가져오는 방법을 설명합니다.
 lastmod: "2024-02-17"
 sitemap:

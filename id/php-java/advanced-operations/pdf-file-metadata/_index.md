@@ -3,7 +3,7 @@ title: Bekerja dengan Metadata File PDF
 linktitle: Metadata File PDF
 type: docs
 weight: 140
-url: id/php-java/pdf-file-metadata/
+url: /id/php-java/pdf-file-metadata/
 description: Bagian ini menjelaskan cara mendapatkan informasi file PDF, cara mendapatkan Metadata XMP dari file PDF, mengatur Informasi File PDF.
 lastmod: "2024-06-05"
 sitemap:

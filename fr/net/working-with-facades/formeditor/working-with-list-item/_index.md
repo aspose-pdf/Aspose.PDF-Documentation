@@ -2,7 +2,7 @@
 title: Travailler avec l'élément de liste
 type: docs
 weight: 30
-url: fr/net/working-with-list-item/
+url: /fr/net/working-with-list-item/
 description: Cette section explique comment travailler avec l'élément de liste avec Aspose.PDF Facades en utilisant la classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

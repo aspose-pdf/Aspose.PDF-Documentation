@@ -3,7 +3,7 @@ title: Optimize PDF using C++
 linktitle: Optimize PDF
 type: docs
 weight: 30
-url: zh/cpp/optimize-pdf/
+url: /zh/cpp/optimize-pdf/
 description: 优化PDF文件，缩小所有图像，减少PDF大小，取消嵌入字体，启用重用页面内容，删除或平面化注释与C++。
 lastmod: "2021-11-11"
 sitemap:

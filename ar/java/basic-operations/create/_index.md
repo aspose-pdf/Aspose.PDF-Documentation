@@ -3,7 +3,7 @@ title: إنشاء مستند PDF
 linktitle: إنشاء
 type: docs
 weight: 10
-url: ar/java/create-document/
+url: /ar/java/create-document/
 description: تعلم كيفية إنشاء ملف PDF في Aspose.PDF لـ Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Удаление изображений из файла PDF
 linktitle: Удаление изображений
 type: docs
 weight: 20
-url: ru/net/delete-images-from-pdf-file/
+url: /ru/net/delete-images-from-pdf-file/
 description: Этот раздел объясняет, как удалить изображения из файла PDF с использованием Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "Этот раздел объясняет, как удалить изображения из файла PDF с использованием Aspose.PDF для .NET."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Для удаления изображения из файла PDF:
 

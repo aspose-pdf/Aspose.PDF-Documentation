@@ -3,7 +3,7 @@ title: Combinar archivos PDF en SharePoint
 linktitle: Combinar archivos PDF
 type: docs
 weight: 90
-url: es/sharepoint/merge-pdf-files/
+url: /es/sharepoint/merge-pdf-files/
 lastmod: "2020-12-16"
 description: Usando la API de SharePoint PDF, puedes combinar múltiples archivos PDF de la biblioteca de documentos de SharePoint en un solo PDF.
 ---

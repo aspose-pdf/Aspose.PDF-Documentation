@@ -3,7 +3,7 @@ title: Caractéristiques clés d'Aspose.PDF pour Python
 linktitle: Caractéristiques clés
 type: docs
 weight: 20
-url: fr/python-net/key-features/
+url: /fr/python-net/key-features/
 description: Aspose.PDF pour Python via .NET démontre ses fonctionnalités générales. Il montre les versions PDF prises en charge et toutes les manipulations que nous pouvons faire avec les PDF.
 lastmod: "2022-12-21"
 sitemap:

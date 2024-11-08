@@ -2,7 +2,7 @@
 title: 既存のPDFファイルにJavascriptアクションを追加
 type: docs
 weight: 10
-url: ja/java/adding-javascript-actions/
+url: /ja/java/adding-javascript-actions/
 description: このセクションでは、Aspose.PDF Facadesを使用して既存のPDFファイルにJavascriptアクションを追加する方法を説明します。
 lastmod: "2021-06-30"
 sitemap:

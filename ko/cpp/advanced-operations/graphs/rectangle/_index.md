@@ -3,7 +3,7 @@ title: PDF 파일에 사각형 객체 추가
 linktitle: 사각형 추가
 type: docs
 weight: 50
-url: ko/cpp/add-rectangle/
+url: /ko/cpp/add-rectangle/
 description: 이 문서에서는 Aspose.PDF for C++를 사용하여 PDF에 사각형 객체를 생성하는 방법을 설명합니다.
 lastmod: "2021-12-18"
 sitemap:

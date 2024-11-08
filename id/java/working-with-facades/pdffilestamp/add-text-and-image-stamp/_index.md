@@ -2,7 +2,7 @@
 title: Tambahkan Stempel Teks dan Gambar
 type: docs
 weight: 20
-url: id/java/add-text-and-image-stamp/
+url: /id/java/add-text-and-image-stamp/
 description: Bagian ini menjelaskan cara menambahkan Stempel Teks dan Gambar dengan com.aspose.pdf.facades menggunakan Kelas PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

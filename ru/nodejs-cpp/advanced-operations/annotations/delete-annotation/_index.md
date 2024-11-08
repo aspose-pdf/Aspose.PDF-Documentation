@@ -3,7 +3,7 @@ title: Удаление аннотации в Node.js
 linktitle: Удалить аннотацию
 type: docs
 weight: 10
-url: ru/nodejs-cpp/delete-annotation/
+url: /ru/nodejs-cpp/delete-annotation/
 description: С помощью Aspose.PDF для Node.js вы можете удалить аннотацию из вашего PDF файла.
 lastmod: "2023-11-16"
 sitemap:

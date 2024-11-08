@@ -2,7 +2,7 @@
 title: Извлечение текста из PDF-файла
 type: docs
 weight: 30
-url: ru/net/extract-text/
+url: /ru/net/extract-text/
 description: Этот раздел объясняет, как извлечь текст из pdf с использованием класса PdfExtractor.
 lastmod: "2021-06-05"
 ---

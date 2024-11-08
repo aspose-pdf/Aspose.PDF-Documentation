@@ -2,7 +2,7 @@
 title: تحويل PDF إلى تنسيق SVG في بايثون
 type: docs
 weight: 30
-url: ar/java/convert-pdf-to-svg-format-in-python/
+url: /ar/java/convert-pdf-to-svg-format-in-python/
 lastmod: "2021-06-05"
 ---
 

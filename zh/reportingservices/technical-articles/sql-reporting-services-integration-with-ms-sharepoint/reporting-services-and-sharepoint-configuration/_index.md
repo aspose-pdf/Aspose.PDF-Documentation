@@ -2,7 +2,7 @@
 title: Reporting Services 和 SharePoint 配置
 type: docs
 weight: 40
-url: zh/reportingservices/reporting-services-and-sharepoint-configuration/
+url: /zh/reportingservices/reporting-services-and-sharepoint-configuration/
 lastmod: "2021-06-05"
 ---
 

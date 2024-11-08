@@ -3,7 +3,7 @@ title: Извлечение ссылок из PDF-файла
 linktitle: Извлечение ссылок
 type: docs
 weight: 30
-url: ru/net/extract-links/
+url: /ru/net/extract-links/
 description: Извлечение ссылок из PDF с помощью C#. Эта тема объясняет, как извлечь ссылки, используя класс AnnotationSelector.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Извлечение ссылок из PDF с помощью C#. Эта тема объясняет, как извлечь ссылки, используя класс AnnotationSelector."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Извлечение ссылок из PDF файла
 

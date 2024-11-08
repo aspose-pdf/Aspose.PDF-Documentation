@@ -2,7 +2,7 @@
 title: Définir la Préférence du Lecteur de PDF
 type: docs
 weight: 60
-url: fr/net/set-viewer-preference-of-an-existing-pdf-file/
+url: /fr/net/set-viewer-preference-of-an-existing-pdf-file/
 description: Cette section montre comment définir la préférence du lecteur d'un fichier PDF existant en utilisant la classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

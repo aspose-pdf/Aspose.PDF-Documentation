@@ -3,7 +3,7 @@ title: 파일을 포함된 리소스로 추가할 때 압축 비활성화
 linktitle: 파일 압축 비활성화
 type: docs
 weight: 40
-url: ko/java/disable-files-compression-when-adding-as-embedded-resources/
+url: /ko/java/disable-files-compression-when-adding-as-embedded-resources/
 description: 이 문서는 파일을 포함된 리소스로 추가할 때 압축을 비활성화하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 ---

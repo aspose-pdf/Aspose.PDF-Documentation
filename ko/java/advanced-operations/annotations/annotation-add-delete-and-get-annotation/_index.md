@@ -3,7 +3,7 @@ title:  추가, 삭제 및 주석 가져오기
 type: docs
 linktitle: 추가, 삭제 및 주석 가져오기
 weight: 20
-url: ko/java/add-delete-and-get-annotation/
+url: /ko/java/add-delete-and-get-annotation/
 description: Aspose.PDF for Java를 사용하여 PDF 파일에서 주석을 추가, 삭제 및 가져올 수 있습니다. 작업을 해결하기 위해 모든 주석 목록을 확인하세요.
 lastmod: "2021-11-28"
 sitemap:
@@ -17,10 +17,10 @@ sitemap:
 
 우리는 Aspose.PDF for Java 라이브러리에서 사용할 수 있는 다양한 종류의 주석을 그룹으로 묶었습니다:
 
-- [PDF 텍스트 주석](/pdf/java/text-annotation/)
-- [PDF 강조 표시 주석](/pdf/java/highlights-annotation/)
-- [PDF 도형 주석](/pdf/java/figures-annotation/)
-- [멀티미디어 주석](/pdf/java/multimedia-annotation/)
+- [PDF 텍스트 주석](/pdf/ko/java/text-annotation/)
+- [PDF 강조 표시 주석](/pdf/ko/java/highlights-annotation/)
+- [PDF 도형 주석](/pdf/ko/java/figures-annotation/)
+- [멀티미디어 주석](/pdf/ko/java/multimedia-annotation/)
 
-- [PDF 스티키 주석](/pdf/java/sticky-annotations/)
-- [추가 주석](/pdf/java/extra-annotations/)
+- [PDF 스티키 주석](/pdf/ko/java/sticky-annotations/)
+- [추가 주석](/pdf/ko/java/extra-annotations/)

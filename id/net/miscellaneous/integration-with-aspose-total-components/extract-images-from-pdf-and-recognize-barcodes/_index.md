@@ -2,7 +2,7 @@
 title: Ekstrak Gambar dari PDF dan Kenali Kode Batang
 type: docs
 weight: 20
-url: id/net/extract-images-from-pdf-and-recognize-barcodes/
+url: /id/net/extract-images-from-pdf-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

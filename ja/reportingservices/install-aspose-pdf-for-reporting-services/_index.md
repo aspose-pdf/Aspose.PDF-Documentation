@@ -2,7 +2,7 @@
 title: Aspose.PDFのインストール
 type: docs
 weight: 50
-url: ja/reportingservices/install-aspose-pdf-for-reporting-services/
+url: /ja/reportingservices/install-aspose-pdf-for-reporting-services/
 lastmod: "2021-06-05"
 ---
 
@@ -10,8 +10,8 @@ lastmod: "2021-06-05"
 
 **このセクションには以下のトピックが含まれます：**
 
-- [MSIインストーラーでインストールする](/pdf/reportingservices/install-with-msi-installer/)
-- [手動でインストールする](/pdf/reportingservices/install-manually/)
-- [設定ツールでインストールする](/pdf/reportingservices/install-with-configuring-tool/)
+- [MSIインストーラーでインストールする](/pdf/ja/reportingservices/install-with-msi-installer/)
+- [手動でインストールする](/pdf/ja/reportingservices/install-manually/)
+- [設定ツールでインストールする](/pdf/ja/reportingservices/install-with-configuring-tool/)
 
 {{% /alert %}}

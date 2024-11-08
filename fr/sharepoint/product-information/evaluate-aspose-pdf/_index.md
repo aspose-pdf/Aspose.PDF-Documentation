@@ -6,7 +6,7 @@ linktitle: Évaluer
 
 weight: 50
 
-url: fr/sharepoint/evaluer-aspose-pdf/
+url: /fr/sharepoint/evaluer-aspose-pdf/
 
 lastmod: "2020-12-16"
 

@@ -3,7 +3,7 @@ title: متطلبات النظام لـ C++
 linktitle: متطلبات النظام
 type: docs
 weight: 30
-url: ar/cpp/system-requirements/
+url: /ar/cpp/system-requirements/
 description: تسرد هذه القسم أنظمة التشغيل المدعومة التي يحتاجها المطور للعمل بنجاح مع Aspose.PDF لـ C++.
 lastmod: "2021-11-08"
 sitemap:

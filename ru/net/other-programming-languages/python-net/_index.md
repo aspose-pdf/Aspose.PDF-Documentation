@@ -3,7 +3,7 @@ title: Использование Aspose.PDF для .NET с Python
 linktitle: Интеграция с Python
 type: docs
 weight: 100
-url: ru/net/python-net/
+url: /ru/net/python-net/
 description: В этом учебнике вы узнаете о различных способах создания и модификации PDF-файлов в Python.
 lastmod: "2022-01-10"
 sitemap:

@@ -3,7 +3,7 @@ title: تحديث الروابط في PDF
 linktitle: تحديث الروابط
 type: docs
 weight: 20
-url: ar/cpp/update-links/
+url: /ar/cpp/update-links/
 description: تحديث الروابط في PDF برمجيًا باستخدام Aspose.PDF لـ C++. هذا الدليل يتحدث عن كيفية تحديث الروابط في ملف PDF.
 lastmod: "2022-01-31"
 sitemap:

@@ -3,7 +3,7 @@ title: العمل مع صفحات PDF
 linktitle: العمل مع الصفحات
 type: docs
 weight: 20
-url: ar/java/working-with-pages/
+url: /ar/java/working-with-pages/
 description: مع Aspose.PDF for Java يمكنك إضافة صفحات، إضافة رؤوس وتذييلات، إضافة علامات مائية إلى ملف PDF الخاص بك. يشرح لك هذا القسم جميع التفاصيل حول هذا الموضوع.
 lastmod: "2021-06-05"
 sitemap:
@@ -21,16 +21,16 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إضافة صفحات](/pdf/java/add-pages/) - أضف صفحات في الموقع المطلوب أو إلى نهاية ملف PDF واحذف صفحة من وثيقتك.
-- [نقل الصفحات](/pdf/java/move-pages/) - انقل الصفحات من وثيقة إلى أخرى.
-- [الحصول على خصائص الصفحة وتعيينها](/pdf/java/get-and-set-page-properties/) - يمكنك تعلم كيفية الحصول على الأرقام في ملف PDF، الحصول على خصائص الصفحة وتحديد لون الصفحة.
-- [حذف الصفحات](/pdf/java/delete-pages/) - احذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
-- [تغيير حجم الصفحة](/pdf/java/change-page-size) - يمكنك تغيير حجم صفحة PDF باستخدام مقتطف الشيفرة مع مكتبة Aspose.PDF.
+- [إضافة صفحات](/pdf/ar/java/add-pages/) - أضف صفحات في الموقع المطلوب أو إلى نهاية ملف PDF واحذف صفحة من وثيقتك.
+- [نقل الصفحات](/pdf/ar/java/move-pages/) - انقل الصفحات من وثيقة إلى أخرى.
+- [الحصول على خصائص الصفحة وتعيينها](/pdf/ar/java/get-and-set-page-properties/) - يمكنك تعلم كيفية الحصول على الأرقام في ملف PDF، الحصول على خصائص الصفحة وتحديد لون الصفحة.
+- [حذف الصفحات](/pdf/ar/java/delete-pages/) - احذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
+- [تغيير حجم الصفحة](/pdf/ar/java/change-page-size) - يمكنك تغيير حجم صفحة PDF باستخدام مقتطف الشيفرة مع مكتبة Aspose.PDF.
 
-- [تدوير الصفحات](/pdf/java/rotate-pages/) - يمكنك تغيير اتجاه الصفحات في ملف PDF موجود.- [تقسيم الصفحات](/pdf/java/split-document/) - يمكنك تقسيم ملفات PDF إلى ملف PDF واحد أو عدة ملفات PDF.
-- [إضافة رؤوس وتذييلات](/pdf/java/add-headers-and-footers-of-pdf-file/) - إضافة نص أو صور في الرؤوس والتذييلات لملف PDF الخاص بك.
-- [اقتصاص الصفحات](/pdf/java/crop-pages/) - يمكنك اقتصاص الصفحات في مستند PDF برمجياً بخصائص صفحة مختلفة.
-- [إضافة علامات مائية](/pdf/java/add-watermarks/) - إضافة علامات مائية في ملف PDF الخاص بك مع فئة Artifact.
-- [إضافة ترقيم الصفحات في ملف PDF](/pdf/java/add-page-number/) - ستساعدك فئة PageNumberStamp في إضافة رقم صفحة في ملف PDF الخاص بك.
-- [إضافة خلفيات](/pdf/java/add-backgrounds/) - يمكن استخدام الصور الخلفية لإضافة علامة مائية.
-- [الختم](/pdf/java/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.
+- [تدوير الصفحات](/pdf/ar/java/rotate-pages/) - يمكنك تغيير اتجاه الصفحات في ملف PDF موجود.- [تقسيم الصفحات](/pdf/ar/java/split-document/) - يمكنك تقسيم ملفات PDF إلى ملف PDF واحد أو عدة ملفات PDF.
+- [إضافة رؤوس وتذييلات](/pdf/ar/java/add-headers-and-footers-of-pdf-file/) - إضافة نص أو صور في الرؤوس والتذييلات لملف PDF الخاص بك.
+- [اقتصاص الصفحات](/pdf/ar/java/crop-pages/) - يمكنك اقتصاص الصفحات في مستند PDF برمجياً بخصائص صفحة مختلفة.
+- [إضافة علامات مائية](/pdf/ar/java/add-watermarks/) - إضافة علامات مائية في ملف PDF الخاص بك مع فئة Artifact.
+- [إضافة ترقيم الصفحات في ملف PDF](/pdf/ar/java/add-page-number/) - ستساعدك فئة PageNumberStamp في إضافة رقم صفحة في ملف PDF الخاص بك.
+- [إضافة خلفيات](/pdf/ar/java/add-backgrounds/) - يمكن استخدام الصور الخلفية لإضافة علامة مائية.
+- [الختم](/pdf/ar/java/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.

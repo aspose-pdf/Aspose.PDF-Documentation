@@ -2,7 +2,7 @@
 title: Perbarui Dimensi Halaman di PHP
 type: docs
 weight: 90
-url: id/java/update-page-dimensions-in-php/
+url: /id/java/update-page-dimensions-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Convertir PDF a documentos Word en Node.js
 linktitle: Convertir PDF a Word
 type: docs
 weight: 10
-url: es/nodejs-cpp/convert-pdf-to-doc/
+url: /es/nodejs-cpp/convert-pdf-to-doc/
 lastmod: "2023-11-16"
 description: Aprende cómo convertir PDF a DOC(DOCX) en el entorno de Node.js.
 sitemap:
@@ -18,7 +18,7 @@ Para editar el contenido de un archivo PDF en Microsoft Word u otros procesadore
 
 Aspose.PDF para Node.js te presenta una aplicación gratuita en línea ["PDF a DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), donde puedes intentar investigar la funcionalidad y la calidad con la que funciona.
 
-[![Convertir PDF a DOC](/pdf/nodejs-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![Convertir PDF a DOC](/pdf/es/nodejs-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## Convertir PDF a DOC
@@ -69,7 +69,7 @@ Por favor, revise el siguiente fragmento de código para convertir en el entorno
 
 Aspose.PDF para Node.js te presenta la aplicación gratuita en línea ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), donde puedes intentar investigar la funcionalidad y la calidad con la que trabaja.
 
-[![Aspose.PDF Convertion PDF to Word Free App](/pdf/nodejs-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Convertion PDF to Word Free App](/pdf/es/nodejs-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

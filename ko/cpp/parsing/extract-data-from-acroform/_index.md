@@ -3,7 +3,7 @@ title: AcroForm에서 데이터 추출
 linktitle: AcroForm에서 데이터 추출
 type: docs
 weight: 50
-url: ko/cpp/extract-data-from-acroform/
+url: /ko/cpp/extract-data-from-acroform/
 description: Aspose.PDF는 PDF 파일에서 양식 필드 데이터를 쉽게 추출할 수 있도록 합니다. AcroForms에서 데이터를 추출하고 이를 XML 또는 FDF 형식으로 저장하는 방법을 알아보십시오.
 lastmod: "2021-12-13"
 sitemap:

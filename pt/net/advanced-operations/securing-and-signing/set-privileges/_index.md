@@ -3,7 +3,7 @@ title: Definir Privilégios, Criptografar e Descriptografar PDF
 linktitle: Criptografar e Descriptografar Arquivo PDF
 type: docs
 weight: 20
-url: pt/net/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /pt/net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Criptografar arquivo PDF com C# usando diferentes tipos e algoritmos de criptografia. Também, descriptografar arquivos PDF usando a senha do proprietário.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Definir Privilégios em um Arquivo PDF Existente
 

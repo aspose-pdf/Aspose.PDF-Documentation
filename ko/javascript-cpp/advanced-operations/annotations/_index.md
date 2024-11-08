@@ -3,7 +3,7 @@ title: PDF 주석 사용하기 JavaScript
 linktitle: PDF 주석
 type: docs
 weight: 90
-url: ko/javascript-cpp/annotations/
+url: /ko/javascript-cpp/annotations/
 description: 이 섹션은 Aspose.PDF for JavaScript via C++를 사용하여 PDF 파일에 모든 종류의 주석을 사용하는 방법을 보여줍니다.
 lastmod: "2023-09-17"
 sitemap:
@@ -19,4 +19,4 @@ PDF 주석은 강조, 밑줄 또는 의견 추가와 같이 사용자가 PDF의 
 
 다음 작업을 수행할 수 있습니다:
 
-- [주석 삭제하기](/pdf/javascript-cpp/delete-annotation/) - 이 섹션은 JavaScript를 사용하여 PDF에서 주석을 삭제하는 방법을 설명합니다.
+- [주석 삭제하기](/pdf/ko/javascript-cpp/delete-annotation/) - 이 섹션은 JavaScript를 사용하여 PDF에서 주석을 삭제하는 방법을 설명합니다.

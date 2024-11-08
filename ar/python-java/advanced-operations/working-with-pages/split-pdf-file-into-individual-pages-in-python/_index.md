@@ -2,7 +2,7 @@
 title: تقسيم ملف PDF إلى صفحات فردية في بايثون
 type: docs
 weight: 80
-url: ar/python-java/split-pdf-file-into-individual-pages-in-python/
+url: /ar/python-java/split-pdf-file-into-individual-pages-in-python/
 ---
 
 <ins>لتقسيم مستند PDF إلى صفحات فردية باستخدام **Aspose.PDF Java for PHP**، ببساطة قم باستدعاء فئة **SplitAllPages**.

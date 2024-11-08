@@ -3,7 +3,7 @@ title: Tambahkan latar belakang ke PDF dengan Python
 linktitle: Tambahkan latar belakang
 type: docs
 weight: 20
-url: id/python-net/add-backgrounds/
+url: /id/python-net/add-backgrounds/
 description: Tambahkan gambar latar belakang ke file PDF Anda dengan Python. Gunakan kelas BackgroundArtifact.
 lastmod: "2023-04-17"
 sitemap:

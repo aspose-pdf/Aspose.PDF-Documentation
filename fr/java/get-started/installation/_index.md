@@ -3,7 +3,7 @@ title: Installer Aspose.PDF pour Java
 linktitle: Installation
 type: docs
 weight: 20
-url: fr/java/installation/
+url: /fr/java/installation/
 description: Cette section montre une description du produit et des instructions pour installer Aspose.PDF pour Java par vous-même, ainsi qu'en utilisant NuGet.
 lastmod: "2021-06-05"
 sitemap:
@@ -33,7 +33,7 @@ sitemap:
 {{% alert color="primary" %}}
 
 Vous pouvez télécharger [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) pour évaluation.
- Le téléchargement d'évaluation est identique au téléchargement acheté. La version d'évaluation devient simplement sous licence lorsque vous ajoutez quelques lignes de code pour [appliquer la licence](/pdf/java/licensing/).
+ Le téléchargement d'évaluation est identique au téléchargement acheté. La version d'évaluation devient simplement sous licence lorsque vous ajoutez quelques lignes de code pour [appliquer la licence](/pdf/fr/java/licensing/).
 
 {{% /alert %}}
 

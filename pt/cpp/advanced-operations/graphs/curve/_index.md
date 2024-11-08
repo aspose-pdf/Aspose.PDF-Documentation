@@ -3,7 +3,7 @@ title: Adicionar Objeto de Curva ao arquivo PDF
 linktitle: Adicionar Curva
 type: docs
 weight: 30
-url: pt/cpp/add-curve/
+url: /pt/cpp/add-curve/
 description: Este artigo explica como criar um objeto de curva em seu PDF usando Aspose.PDF para C++.
 lastmod: "2021-12-18"
 sitemap:

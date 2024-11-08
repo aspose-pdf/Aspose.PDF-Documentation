@@ -3,7 +3,7 @@ title: Fonctionnalités Clés de Aspose.PDF
 linktitle: Fonctionnalités Clés
 type: docs
 weight: 80
-url: fr/cpp/key-features/
+url: /fr/cpp/key-features/
 description: Aspose.PDF pour C++ démontre ses fonctionnalités générales. Cette page décrit les versions PDF prises en charge, et toutes les manipulations que nous pouvons faire avec le texte, les images, les annotations, les documents, etc.
 lastmod: "2021-11-08"
 sitemap:

@@ -3,7 +3,7 @@ title: 使用 Python 向 PDF 添加文本
 linktitle: 向 PDF 添加文本
 type: docs
 weight: 10
-url: zh/python-net/add-text-to-pdf-file/
+url: /zh/python-net/add-text-to-pdf-file/
 description: 本文描述了在 Aspose.PDF 中处理文本的各个方面。了解如何向 PDF 添加文本、添加 HTML 片段或使用自定义 OTF 字体。
 lastmod: "2024-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Mengubah ukuran halaman dalam file PDF
 type: docs
 weight: 30
-url: id/net/changing-page-sizes-in-a-pdf-file/
+url: /id/net/changing-page-sizes-in-a-pdf-file/
 description: Cobalah untuk mempelajari cara mengubah ukuran halaman dalam file PDF menggunakan Kelas PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false

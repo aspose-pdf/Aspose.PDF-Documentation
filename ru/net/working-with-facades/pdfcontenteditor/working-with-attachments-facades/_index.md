@@ -2,7 +2,7 @@
 title: Работа с вложениями - Фасады
 type: docs
 weight: 50
-url: ru/net/working-with-attachments-facades/
+url: /ru/net/working-with-attachments-facades/
 description: Этот раздел объясняет, как работать с вложениями - Фасады с использованием класса PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

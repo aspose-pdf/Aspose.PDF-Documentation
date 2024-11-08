@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: fr/sharepoint/formats-de-fichier-pris-en-charge/
+url: /fr/sharepoint/formats-de-fichier-pris-en-charge/
 
 lastmod: "2020-12-16"
 

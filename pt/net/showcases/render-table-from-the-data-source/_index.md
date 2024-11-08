@@ -3,7 +3,7 @@ title: Renderizar tabela a partir da fonte de dados
 linktitle: Renderizar tabela a partir da fonte de dados
 type: docs
 weight: 30
-url: pt/net/render-table-from-the-data-source/
+url: /pt/net/render-table-from-the-data-source/
 description: Esta página explica como é possível renderizar uma tabela a partir da fonte de dados usando a biblioteca Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

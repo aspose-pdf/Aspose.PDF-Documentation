@@ -3,7 +3,7 @@ title: Добавить страницы в PDF с C++
 linktitle: Добавить страницы
 type: docs
 weight: 10
-url: ru/cpp/add-pages/
+url: /ru/cpp/add-pages/
 description: Эта статья обучает, как вставить (добавить) страницу в нужное место в PDF файле. Узнайте, как перемещать, удалять (удалять) страницы из PDF файла с использованием C++.
 lastmod: "2021-12-08"
 sitemap:

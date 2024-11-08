@@ -2,7 +2,7 @@
 title: Apa perbedaan antara format FDF, XML, dan XFDF
 type: docs
 weight: 30
-url: id/net/whats-the-difference-between-xml-fdf-and-xfdf/
+url: /id/net/whats-the-difference-between-xml-fdf-and-xfdf/
 description: Bagian ini membahas perbedaan antara formulir XML, FDF, dan XFDF dengan Aspose.PDF Facades menggunakan Kelas Form.
 lastmod: "2021-06-05"
 draft: false

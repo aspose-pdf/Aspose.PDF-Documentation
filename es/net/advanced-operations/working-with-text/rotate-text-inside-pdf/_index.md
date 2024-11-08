@@ -3,7 +3,7 @@ title: Rotar texto dentro de un PDF usando C#
 linktitle: Rotar texto dentro de un PDF
 type: docs
 weight: 50
-url: es/net/rotate-text-inside-pdf/
+url: /es/net/rotate-text-inside-pdf/
 description: Aprende diferentes maneras de rotar texto en un PDF. Aspose.PDF te permite rotar texto a cualquier ángulo, rotar un fragmento de texto o un párrafo completo.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Rotar Texto Dentro de PDF Usando la Propiedad de Rotación
 

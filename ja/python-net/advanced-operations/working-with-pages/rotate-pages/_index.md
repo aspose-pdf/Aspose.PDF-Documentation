@@ -3,7 +3,7 @@ title: Pythonを使用してPDFページを回転
 linktitle: PDFページを回転
 type: docs
 weight: 110
-url: ja/python-net/rotate-pages/
+url: /ja/python-net/rotate-pages/
 description: このトピックでは、Pythonを使用して既存のPDFファイル内のページの向きをプログラムで回転させる方法について説明します。
 lastmod: "2023-04-17"
 sitemap:

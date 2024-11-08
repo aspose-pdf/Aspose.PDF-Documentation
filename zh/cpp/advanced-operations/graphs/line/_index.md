@@ -3,7 +3,7 @@ title: 将线对象添加到PDF文件
 linktitle: 添加线
 type: docs
 weight: 40
-url: zh/cpp/add-line/
+url: /zh/cpp/add-line/
 description: 本文解释了如何使用Aspose.PDF for C++在PDF中创建线对象。
 lastmod: "2021-12-18"
 sitemap:

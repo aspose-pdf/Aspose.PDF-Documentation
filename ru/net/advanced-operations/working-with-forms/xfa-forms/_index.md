@@ -3,7 +3,7 @@ title: Работа с XFA формами
 linktitle: XFA формы
 type: docs
 weight: 20
-url: ru/net/xfa-forms/
+url: /ru/net/xfa-forms/
 description: Aspose.PDF для .NET API позволяет работать с полями XFA и XFA Acroform в документе PDF. Aspose.PDF.Facades.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ sitemap:
 
 Класс Form предоставляет возможность работать со статической AcroForm, и вы можете получить экземпляр конкретного поля, используя метод GetFieldFacade(..) класса Form. Однако поля XFA недоступны через метод Form.GetFieldFacade(..). Вместо этого используйте [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) для получения/установки значений полей и управления шаблоном поля XFA (установка свойств поля).
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Заполнение полей XFA
 

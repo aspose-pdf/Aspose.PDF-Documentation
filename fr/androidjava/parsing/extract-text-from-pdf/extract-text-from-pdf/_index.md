@@ -3,7 +3,7 @@ title: Extraire le texte brut d'un fichier PDF
 linktitle: Extraire du texte d'un PDF
 type: docs
 weight: 10
-url: fr/androidjava/extract-text-from-all-pdf/
+url: /fr/androidjava/extract-text-from-all-pdf/
 description: Cet article décrit différentes manières d'extraire du texte de documents PDF à l'aide d'Aspose.PDF pour Android via Java. De pages entières, d'une partie spécifique, basé sur des colonnes, etc.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Replace Text in PDF
 linktitle: Replace Text in PDF
 type: docs
 weight: 40
-url: es/net/replace-text-in-pdf/
+url: /es/net/replace-text-in-pdf/
 description: Aprende más sobre las diversas maneras de reemplazar y eliminar texto de la biblioteca Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "Aprende más sobre las diversas maneras de reemplazar y eliminar texto de la biblioteca Aspose.PDF para .NET."
 }
 </script>
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Reemplazar texto en todas las páginas de un documento PDF
 

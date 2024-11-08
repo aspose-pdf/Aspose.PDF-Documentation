@@ -2,7 +2,7 @@
 title: استخراج النص
 type: docs
 weight: 140
-url: ar/net/plugins/textextractor/
+url: /ar/net/plugins/textextractor/
 description: يستخرج محتوى النص من مستند PDF.
 lastmod: "2024-01-24"
 ---

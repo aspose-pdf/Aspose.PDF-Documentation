@@ -3,7 +3,7 @@ title: Генерация PDF из XML
 linktitle: Генерация PDF из XML
 type: docs
 weight: 10
-url: ru/cpp/generate-pdf-from-xml
+url: /ru/cpp/generate-pdf-from-xml
 description: Aspose.PDF for C++ предоставляет несколько способов преобразования XML файла в PDF документ, требующий входной XML файл.
 lastmod: "2022-01-31"
 sitemap:

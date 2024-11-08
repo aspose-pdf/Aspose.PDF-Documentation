@@ -3,7 +3,7 @@ title: C#를 사용한 PDF 툴팁
 linktitle: PDF 툴팁
 type: docs
 weight: 20
-url: ko/net/pdf-tooltip/
+url: /ko/net/pdf-tooltip/
 description: C# 및 Aspose.PDF를 사용하여 PDF의 텍스트 조각에 툴팁을 추가하는 방법을 알아보세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "C# 및 Aspose.PDF를 사용하여 PDF의 텍스트 조각에 툴팁을 추가하는 방법을 알아보세요."
 }
 </script>
-다음 코드 조각도 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각도 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 검색된 텍스트에 보이지 않는 버튼을 추가하여 툴팁 추가
 

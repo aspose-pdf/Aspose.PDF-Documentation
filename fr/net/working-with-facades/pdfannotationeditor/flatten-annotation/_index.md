@@ -2,7 +2,7 @@
 title: Aplatir l'Annotation du PDF vers XFDF 
 type: docs
 weight: 40
-url: fr/net/flatten-annotation/
+url: /fr/net/flatten-annotation/
 description: Cette section explique comment exporter des annotations d'un fichier PDF vers XFDF avec Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:

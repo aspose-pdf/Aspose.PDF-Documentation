@@ -3,7 +3,7 @@ title: PDF를 이미지 형식으로 변환
 linktitle: PDF를 이미지로 변환
 type: docs
 weight: 70
-url: ko/cpp/convert-pdf-to-images-format/
+url: /ko/cpp/convert-pdf-to-images-format/
 lastmod: "2021-11-19"
 description: 이 주제는 Aspose.PDF가 PDF를 다양한 이미지 형식으로 변환하는 방법을 보여줍니다. 몇 줄의 코드로 PDF 페이지를 PNG, JPEG, BMP 이미지로 변환하십시오.
 sitemap:

@@ -2,7 +2,7 @@
 title: PHPでDOMを使用してHTML文字列を追加する
 type: docs
 weight: 10
-url: ja/java/add-html-string-using-dom-in-php/
+url: /ja/java/add-html-string-using-dom-in-php/
 lastmod: "2021-06-05"
 ---
 

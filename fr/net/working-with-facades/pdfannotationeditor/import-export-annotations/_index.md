@@ -2,7 +2,7 @@
 title: Importer et Exporter des Annotations vers XFDF 
 type: docs
 weight: 20
-url: fr/net/import-export-annotations/
+url: /fr/net/import-export-annotations/
 description: Cette section explique comment importer et exporter des annotations d'un fichier PDF vers XFDF avec Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -14,8 +14,8 @@ XFDF signifie XML Forms Data Format. Il s'agit d'un format de fichier basé sur 
 
 ## Importer et Exporter des Annotations vers XFDF
 
-[Aspose.PDF pour .NET](/pdf/net/) est un composant riche en fonctionnalités lorsqu'il s'agit de modifier des documents PDF. ```
-Comme nous le savons, XFDF est un aspect important de la manipulation des formulaires PDF, le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/net/) l'a très bien pris en compte et a fourni des méthodes pour importer et exporter des données d'annotations vers des fichiers XFDF.
+[Aspose.PDF pour .NET](/pdf/fr/net/) est un composant riche en fonctionnalités lorsqu'il s'agit de modifier des documents PDF. ```
+Comme nous le savons, XFDF est un aspect important de la manipulation des formulaires PDF, le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/fr/net/) l'a très bien pris en compte et a fourni des méthodes pour importer et exporter des données d'annotations vers des fichiers XFDF.
 
 La classe [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) contient deux méthodes pour travailler avec l'importation et l'exportation des annotations vers un fichier XFDF.
 ``` [ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) méthode fournit la fonctionnalité pour exporter les annotations d'un document PDF vers un fichier XFDF, tandis que la méthode [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) vous permet d'importer des annotations à partir d'un fichier XFDF existant. Afin d'importer ou d'exporter des annotations, nous devons spécifier les types d'annotations. Nous pouvons spécifier ces types sous forme d'une énumération et ensuite passer cette énumération comme argument à l'une de ces méthodes. De cette façon, les annotations des types spécifiés seront uniquement importées ou exportées vers un fichier XFDF.

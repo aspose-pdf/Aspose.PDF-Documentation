@@ -3,7 +3,7 @@ title: DockerでAspose.PDF for .NET 6を実行する方法
 linktitle: DockerでのAspose.PDF for .NET 6の使用
 type: docs
 weight: 10
-url: ja/net/docker/dotnet6/
+url: /ja/net/docker/dotnet6/
 description: Docker LinuxまたはWindowsコンテナを使用してアプリケーションにAspose.PDF機能を統合する
 lastmod: "2024-01-21"
 sitemap:
@@ -30,12 +30,12 @@ sitemap:
 
 ### ASP.NET Core Webアプリを使用してLinuxコンテナでPDFドキュメントを生成する
 
-このアプリでは**複雑な例**からコードを使用します。詳細な説明については、[このリンク](/pdf/net/complex-pdf-example/)をご覧ください。
+このアプリでは**複雑な例**からコードを使用します。詳細な説明については、[このリンク](/pdf/ja/net/complex-pdf-example/)をご覧ください。
 
-1. `wwwroot`フォルダに`images`フォルダを作成し、画像`logo.png`を配置します。この画像は[こちら](/pdf/net/docker/logo.png)からダウンロードできます。
+1. `wwwroot`フォルダに`images`フォルダを作成し、画像`logo.png`を配置します。この画像は[こちら](/pdf/ja/net/docker/logo.png)からダウンロードできます。
 1. `HomeController.cs`のコードを以下のスニペットに置き換えてください（別の名前空間を使用している可能性があることに注意してください）：
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリとも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも動作します。
 
 ```cs
 using Aspose.Pdf;
@@ -193,7 +193,7 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 前の例と同じコードを使用します。
 
-1. `wwwroot` フォルダーに `images` フォルダーを作成し、画像 `logo.png` を置きます。この画像は[こちら](/pdf/net/docker/logo.png)からダウンロードできます
+1. `wwwroot` フォルダーに `images` フォルダーを作成し、画像 `logo.png` を置きます。この画像は[こちら](/pdf/ja/net/docker/logo.png)からダウンロードできます
 1. `HomeController.cs` のコードを上記のスニペットに置き換えます。
 
 ```dockerfile

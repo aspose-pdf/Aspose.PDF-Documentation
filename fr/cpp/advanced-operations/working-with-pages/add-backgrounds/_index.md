@@ -3,7 +3,7 @@ title: Ajouter un arrière-plan au PDF avec C++
 linktitle: Ajouter des arrière-plans
 type: docs
 weight: 110
-url: fr/cpp/add-backgrounds/
+url: /fr/cpp/add-backgrounds/
 descriptions: Ajouter une image d'arrière-plan à votre fichier PDF avec C++. Utilisez l'objet BackgroundArtifact.
 lastmod: "2021-12-03"
 sitemap:

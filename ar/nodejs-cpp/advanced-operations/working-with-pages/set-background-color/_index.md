@@ -3,7 +3,7 @@ title: ضبط لون الخلفية لملف PDF في Node.js
 linktitle: ضبط لون الخلفية
 type: docs
 weight: 80
-url: ar/nodejs-cpp/set-background-color/
+url: /ar/nodejs-cpp/set-background-color/
 description: ضبط لون الخلفية لملف PDF الخاص بك باستخدام Node.js عبر C++.
 lastmod: "2023-11-16"
 sitemap:

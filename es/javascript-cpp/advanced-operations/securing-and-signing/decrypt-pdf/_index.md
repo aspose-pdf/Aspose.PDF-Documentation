@@ -3,7 +3,7 @@ title: Desencriptar PDF usando JavaScript
 linktitle: Desencriptar Archivo PDF
 type: docs
 weight: 40
-url: es/javascript-cpp/decrypt-pdf/
+url: /es/javascript-cpp/decrypt-pdf/
 description: Desencriptar Archivo PDF con Aspose.PDF para JavaScript vía C++.
 lastmod: "2022-12-15"
 sitemap:

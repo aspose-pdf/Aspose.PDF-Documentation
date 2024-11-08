@@ -2,7 +2,7 @@
 title: 既存のJasperReportsデモをAspose.Pdf for JasperReportsを使用するように更新する方法
 type: docs
 weight: 20
-url: ja/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/
+url: /ja/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/
 lastmod: "2021-06-05"
 ---
 

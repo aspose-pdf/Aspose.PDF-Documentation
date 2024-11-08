@@ -2,7 +2,7 @@
 title: PDFファイルに空のページを挿入する方法（PHP）
 type: docs
 weight: 70
-url: ja/java/insert-an-empty-page-into-a-pdf-file-in-php/
+url: /ja/java/insert-an-empty-page-into-a-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: تنسيقات الملفات المدعومة
 linktitle: تنسيقات الملفات المدعومة
 type: docs
 weight: 70
-url: ar/java/supported-file-formats/
+url: /ar/java/supported-file-formats/
 description: تعرض هذه الصفحة تنسيقات الملفات التي يمكن لـ Aspose.PDF for Java تحميلها وحفظها.
 lastmod: "2021-06-05"
 sitemap:

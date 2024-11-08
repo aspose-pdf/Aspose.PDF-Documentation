@@ -3,7 +3,7 @@ title: Extrair Imagens do PDF
 linktitle: Extrair Imagens
 type: docs
 weight: 20
-url: pt/java/extract-images-from-the-pdf-file/
+url: /pt/java/extract-images-from-the-pdf-file/
 description: Como extrair uma parte da imagem do PDF usando Aspose.PDF para Java
 lastmod: "2021-06-05"
 sitemap:

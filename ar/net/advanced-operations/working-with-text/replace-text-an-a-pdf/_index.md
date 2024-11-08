@@ -3,7 +3,7 @@ title: استبدال النص في ملف PDF
 linktitle: استبدال النص في ملف PDF
 type: docs
 weight: 40
-url: ar/net/replace-text-in-pdf/
+url: /ar/net/replace-text-in-pdf/
 description: تعرف على المزيد حول الطرق المختلفة لاستبدال وإزالة النص من مكتبة Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "تعرف على المزيد حول الطرق المختلفة لاستبدال وإزالة النص من مكتبة Aspose.PDF لـ .NET."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## استبدال النص في جميع صفحات مستند PDF
 

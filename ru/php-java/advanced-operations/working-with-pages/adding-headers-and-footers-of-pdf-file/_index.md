@@ -3,7 +3,7 @@ title: Добавление Заголовка и Нижнего Колонти�
 linktitle: Добавление Заголовка и Нижнего Колонтитула в PDF
 type: docs
 weight: 70
-url: ru/php-java/add-headers-and-footers-of-pdf-file/
+url: /ru/php-java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF для PHP через Java позволяет добавлять заголовки и нижние колонтитулы в ваш PDF файл с помощью класса TextStamp.
 lastmod: "2024-06-05"
 sitemap:

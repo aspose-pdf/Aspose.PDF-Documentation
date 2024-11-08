@@ -3,7 +3,7 @@ title: 导入和导出注释到XFDF格式使用Aspose.PDF for C++
 linktitle: 导入和导出注释到XFDF格式
 type: docs
 weight: 40
-url: zh/cpp/import-export-xfdf/
+url: /zh/cpp/import-export-xfdf/
 description: 您可以使用C++和Aspose.PDF for C++库导入和导出注释为XFDF格式。
 lastmod: "2021-12-02"
 sitemap:

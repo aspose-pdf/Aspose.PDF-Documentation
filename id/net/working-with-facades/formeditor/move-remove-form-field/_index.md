@@ -2,7 +2,7 @@
 title: Memindahkan dan Menghapus Bidang Formulir
 type: docs
 weight: 50
-url: id/net/move-remove-form-field/
+url: /id/net/move-remove-form-field/
 description: Bagian ini menjelaskan bagaimana Anda dapat memindahkan dan menghapus Bidang Formulir dengan Kelas FormEditor.
 lastmod: "2021-06-05"
 draft: false

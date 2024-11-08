@@ -3,7 +3,7 @@ title: Печать PDF в .NET Framework
 linktitle: Печать PDF в .NET Framework
 type: docs
 weight: 10
-url: ru/net/printing-pdf-in-net-framework/
+url: /ru/net/printing-pdf-in-net-framework/
 keywords: "print pdf file c#, c# print pdf"
 description: Вы можете печатать файлы PDF на принтере по умолчанию, используя настройки принтера и страницы с помощью C#.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "Вы можете печатать файлы PDF на принтере по умолчанию, используя настройки принтера и страницы с помощью C#."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## **Печать PDF-файла в C# - Печать PDF-файла на принтере по умолчанию с использованием настроек принтера и страницы**
 

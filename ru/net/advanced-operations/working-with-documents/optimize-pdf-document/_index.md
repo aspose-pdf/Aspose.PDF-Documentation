@@ -3,7 +3,7 @@ title: Оптимизация, сжатие или уменьшение разм
 linktitle: Оптимизация PDF
 type: docs
 weight: 30
-url: ru/net/optimize-pdf/
+url: /ru/net/optimize-pdf/
 keywords: "optimize pdf c#"
 description: Оптимизация файла PDF, сжатие всех изображений, уменьшение размера PDF, удаление встроенных шрифтов, удаление неиспользуемых объектов с помощью C#.
 lastmod: "2022-02-17"
@@ -104,7 +104,7 @@ PDF-документ иногда может содержать дополнит
 1.
 1. Сохраните оптимизированный документ с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Следующий фрагмент кода показывает, как оптимизировать PDF документ для веба.
 

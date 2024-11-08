@@ -2,7 +2,7 @@
 title: Aspose.PDF .NET para Sitefinity
 type: docs
 weight: 300
-url: es/net/aspose-pdf-net-for-sitefinity/
+url: /es/net/aspose-pdf-net-for-sitefinity/
 description: Aprende cómo usar el Módulo de Importación PDF para Sitefinity
 lastmod: "2021-06-05"
 sitemap:
@@ -12,4 +12,4 @@ sitemap:
 
 Esta sección incluye los siguientes temas:
 
-- [Importación de PDF en Sitefinity](/pdf/net/sitefinity-pdf-import/)
+- [Importación de PDF en Sitefinity](/pdf/es/net/sitefinity-pdf-import/)

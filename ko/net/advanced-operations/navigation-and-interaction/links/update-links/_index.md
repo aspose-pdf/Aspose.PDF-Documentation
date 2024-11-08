@@ -3,7 +3,7 @@ title: PDF에서 링크 업데이트
 linktitle: 링크 업데이트
 type: docs
 weight: 20
-url: ko/net/update-links/
+url: /ko/net/update-links/
 description: PDF에서 프로그래밍 방식으로 링크를 업데이트합니다. 이 가이드는 C# 언어로 PDF에서 링크를 업데이트하는 방법에 대한 것입니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "PDF에서 프로그래밍 방식으로 링크를 업데이트합니다. 이 가이드는 C# 언어로 PDF에서 링크를 업데이트하는 방법에 대한 것입니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF 파일에서 링크 업데이트
 

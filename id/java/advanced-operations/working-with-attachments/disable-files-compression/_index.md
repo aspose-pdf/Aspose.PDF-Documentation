@@ -3,7 +3,7 @@ title: Menonaktifkan Kompresi File saat Menambah sebagai Sumber Daya Tertanam
 linktitle: Menonaktifkan Kompresi File
 type: docs
 weight: 40
-url: id/java/disable-files-compression-when-adding-as-embedded-resources/
+url: /id/java/disable-files-compression-when-adding-as-embedded-resources/
 description: Artikel ini menjelaskan cara menonaktifkan kompresi file saat Menambah sebagai Sumber Daya Tertanam
 lastmod: "2021-06-05"
 ---

@@ -2,7 +2,7 @@
 title: Dapatkan dan Atur Properti Halaman
 type: docs
 weight: 30
-url: id/java/get-and-set-page-properties/
+url: /id/java/get-and-set-page-properties/
 description: Topik ini menjelaskan cara mendapatkan nomor dalam file PDF, mendapatkan properti halaman dan menentukan warna halaman menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 ---

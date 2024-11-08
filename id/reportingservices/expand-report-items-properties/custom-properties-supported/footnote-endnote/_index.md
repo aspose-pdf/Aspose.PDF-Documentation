@@ -2,7 +2,7 @@
 title: Catatan Kaki Catatan Akhir
 type: docs
 weight: 30
-url: id/reportingservices/footnote-endnote/
+url: /id/reportingservices/footnote-endnote/
 lastmod: "2021-06-05"
 ---
 

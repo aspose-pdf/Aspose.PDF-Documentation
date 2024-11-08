@@ -3,7 +3,7 @@ title: 如何通过 C++ 使用 JavaScript 合并 PDF
 linktitle: 合并 PDF 文件
 type: docs
 weight: 20
-url: zh/javascript-cpp/merge-pdf/
+url: /zh/javascript-cpp/merge-pdf/
 description: 本页解释如何使用 Aspose.PDF for JavaScript via C++ 将 PDF 文档合并成单个 PDF 文件
 lastmod: "2022-12-15"
 sitemap:

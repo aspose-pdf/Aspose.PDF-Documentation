@@ -2,7 +2,7 @@
 title: Aspose.Pdf for SharePoint ライセンスのアンインストール
 type: docs
 weight: 30
-url: ja/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
+url: /ja/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
 lastmod: "2020-12-16"
 description: PDF SharePoint API ライセンスをアンインストールするための手順については、この記事の手順に従ってください。
 ---

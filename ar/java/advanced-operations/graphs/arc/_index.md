@@ -3,7 +3,7 @@ title: إضافة كائن قوس إلى ملف PDF
 linktitle: إضافة قوس
 type: docs
 weight: 10
-url: ar/java/add-arc/
+url: /ar/java/add-arc/
 description: توضح هذه المقالة كيفية إنشاء كائن قوس إلى ملف PDF باستخدام Aspose.PDF لـ Java.
 lastmod: "2021-06-05"
 sitemap:

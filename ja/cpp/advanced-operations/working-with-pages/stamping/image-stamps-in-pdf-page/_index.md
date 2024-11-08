@@ -3,7 +3,7 @@ title: PDFに画像スタンプをプログラムで追加する
 linktitle: PDFファイルに画像スタンプ
 type: docs
 weight: 10
-url: ja/cpp/image-stamps-in-pdf-page/
+url: /ja/cpp/image-stamps-in-pdf-page/
 description: Aspose.PDF for C++ライブラリを使用して、ImageStampクラスでPDFドキュメントに画像スタンプを追加します。
 lastmod: "2021-12-08"
 sitemap:

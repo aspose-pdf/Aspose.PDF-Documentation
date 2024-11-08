@@ -3,7 +3,7 @@ title: Añadir Objeto de Arco al Archivo PDF
 linktitle: Añadir Arco
 type: docs
 weight: 10
-url: es/java/add-arc/
+url: /es/java/add-arc/
 description: Este artículo explica cómo crear un objeto de arco en su PDF usando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

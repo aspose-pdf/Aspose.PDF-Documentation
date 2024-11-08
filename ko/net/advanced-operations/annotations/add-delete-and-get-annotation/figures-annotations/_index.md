@@ -3,7 +3,7 @@ title: C#을 사용하여 도형 주석 추가
 linktitle: 도형 주석
 type: docs
 weight: 30
-url: ko/net/figures-annotation/
+url: /ko/net/figures-annotation/
 description: 이 글은 Aspose.PDF for .NET을 사용하여 PDF 문서에서 도형 주석을 추가, 가져오기 및 삭제하는 방법을 설명합니다.
 lastmod: "2023-09-12"
 sitemap:
@@ -89,7 +89,7 @@ PDF 문서 관리 앱은 문서에 주석을 달기 위한 다양한 도구를 �
 
 주석을 추가하는 접근 방식은 모든 주석에 대해 일반적입니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 1. [문서](https://reference.aspose.com/pdf/net/aspose.pdf/document)를 통해 PDF 파일을 불러오거나 새로 만듭니다.
 1. 새 주석을 생성하고 매개변수를 설정합니다(새로운 사각형, 새로운 포인트, 제목, 색상, 너비 등).

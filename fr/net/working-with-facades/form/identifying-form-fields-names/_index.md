@@ -2,13 +2,13 @@
 title: Identification des noms de champs de formulaire
 type: docs
 weight: 10
-url: fr/net/identifying-form-fields-names/
+url: /fr/net/identifying-form-fields-names/
 description: Aspose.PDF.Facades vous permet d'identifier les noms des champs de formulaire en utilisant la classe Form.
 lastmod: "2021-06-05"
 draft: false
 ---
 
-[Aspose.PDF for .NET](/pdf/net/) offre la possibilité de créer, modifier et remplir des formulaires PDF déjà créés. Le namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) contient la classe [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), qui contient la fonction nommée [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) et elle prend deux arguments, c'est-à-dire le nom du champ et la valeur du champ. Donc, pour remplir les champs de formulaire, vous devez connaître le nom exact du champ de formulaire.
+[Aspose.PDF for .NET](/pdf/fr/net/) offre la possibilité de créer, modifier et remplir des formulaires PDF déjà créés. Le namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) contient la classe [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), qui contient la fonction nommée [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) et elle prend deux arguments, c'est-à-dire le nom du champ et la valeur du champ. Donc, pour remplir les champs de formulaire, vous devez connaître le nom exact du champ de formulaire.
 
 ## Détails de l'implémentation
 

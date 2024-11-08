@@ -2,7 +2,7 @@
 title: Извлекатель изображений
 type: docs
 weight: 80
-url: ru/net/plugins/imageextractor/
+url: /ru/net/plugins/imageextractor/
 description: Извлечение изображений из PDF легко с плагином ImageExtractor
 lastmod: "2024-01-24"
 draft: false

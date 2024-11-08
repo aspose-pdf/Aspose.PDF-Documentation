@@ -3,7 +3,7 @@ title: Excluir páginas de PDF programaticamente em C#
 linktitle: Excluir páginas de PDF
 type: docs
 weight: 30
-url: pt/net/delete-pages/
+url: /pt/net/delete-pages/
 description: Você pode excluir páginas do seu arquivo PDF usando a biblioteca Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ aliases:
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Você pode deletar páginas de um arquivo PDF usando Aspose.PDF para .NET. Para deletar uma página específica da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 

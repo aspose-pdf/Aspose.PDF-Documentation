@@ -3,7 +3,7 @@ title: Mettre à jour les liens dans le PDF
 linktitle: Mettre à jour les liens
 type: docs
 weight: 20
-url: fr/cpp/update-links/
+url: /fr/cpp/update-links/
 description: Mettez à jour les liens dans le PDF par programmation avec Aspose.PDF pour C++. Ce guide explique comment mettre à jour les liens dans un fichier PDF.
 lastmod: "2022-01-31"
 sitemap:

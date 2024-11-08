@@ -3,7 +3,7 @@ title: Créer un document PDF
 linktitle: Créer PDF
 type: docs
 weight: 10
-url: fr/cpp/create-pdf-document/
+url: /fr/cpp/create-pdf-document/
 description: Cet article décrit comment créer et formater le document PDF avec Aspose.PDF pour C++.
 lastmod: "2021-11-11"
 sitemap:

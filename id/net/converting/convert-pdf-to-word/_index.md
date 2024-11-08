@@ -3,7 +3,7 @@ title: Mengonversi PDF ke Dokumen Microsoft Word dalam .NET
 linktitle: Mengonversi PDF ke Word
 type: docs
 weight: 10
-url: id/net/convert-pdf-to-word/
+url: /id/net/convert-pdf-to-word/
 lastmod: "2022-08-04"
 description: Pelajari cara menulis kode C# untuk konversi PDF ke format Microsoft Word dengan Aspose.PDF untuk .NET dan meningkatkan konversi PDF ke DOC(DOCX).
 sitemap:
@@ -33,8 +33,8 @@ _Format_: **Word**
 - [C# Mengonversi PDF ke Word](#csharp-pdf-to-doc)
 - [C# Cara mengonversi file PDF ke Word](#csharp-pdf-to-docx)
 
-Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Potongan kode berikut ini juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut ini juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Konversi PDF ke DOC dan DOCX
 
@@ -103,7 +103,7 @@ public static void ConvertPDFtoWordDocAdvanced()
 
 Aspose.PDF untuk .NET menghadirkan aplikasi gratis online ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), di mana Anda dapat mencoba untuk mengeksplorasi fungsionalitas dan kualitas kerjanya.
 
-[![Convert PDF to DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![Convert PDF to DOC](/pdf/id/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## Konversi PDF ke DOCX (file Microsoft Word 2007-2021)
@@ -157,7 +157,7 @@ public static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF untuk .NET memperkenalkan Anda pada aplikasi gratis online ["PDF ke Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas kerjanya.
 
-[![Aplikasi Gratis Aspose.PDF Konversi PDF ke Word](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aplikasi Gratis Aspose.PDF Konversi PDF ke Word](/pdf/id/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

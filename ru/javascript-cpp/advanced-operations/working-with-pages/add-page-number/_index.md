@@ -3,7 +3,7 @@ title: Добавить номер страницы в PDF с помощью Jav
 linktitle: Добавить номер страницы
 type: docs
 weight: 100
-url: ru/javascript-cpp/add-page-number/
+url: /ru/javascript-cpp/add-page-number/
 description: Aspose.PDF for JavaScript через C++ позволяет добавить штамп с номером страницы в ваш PDF файл, используя AsposePdfAddPageNum.
 lastmod: "2023-04-17"
 sitemap:

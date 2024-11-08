@@ -3,7 +3,7 @@ title: Añadir Encabezado y Pie de Página en PDF
 linktitle: Añadir Encabezado y Pie de Página
 type: docs
 weight: 70
-url: es/java/add-headers-and-footers-of-pdf-file/
+url: /es/java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para Java te permite añadir encabezados y pies de página a tu archivo PDF usando la clase TextStamp.
 lastmod: "2021-06-05"
 sitemap:

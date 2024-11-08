@@ -2,7 +2,7 @@
 title: إضافة، حذف والحصول على تعليق توضيحي - الواجهات
 type: docs
 weight: 10
-url: ar/cpp/add-delete-and-get-annotation-facades/
+url: /ar/cpp/add-delete-and-get-annotation-facades/
 ---
 
 ## <ins>**إضافة تعليق توضيحي في ملف PDF موجود باستخدام PdfContentEditor**

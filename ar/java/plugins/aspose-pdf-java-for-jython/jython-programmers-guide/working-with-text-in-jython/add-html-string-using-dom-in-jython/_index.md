@@ -2,7 +2,7 @@
 title: إضافة سلسلة HTML باستخدام DOM في Jython
 type: docs
 weight: 10
-url: ar/java/add-html-string-using-dom-in-jython/
+url: /ar/java/add-html-string-using-dom-in-jython/
 lastmod: "2021-06-05"
 ---
 

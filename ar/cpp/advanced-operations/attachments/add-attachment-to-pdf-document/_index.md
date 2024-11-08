@@ -3,7 +3,7 @@ title: إضافة مرفق إلى مستند PDF
 linktitle: إضافة مرفق إلى مستند PDF
 type: docs
 weight: 10
-url: ar/cpp/add-attachment-to-pdf-document/
+url: /ar/cpp/add-attachment-to-pdf-document/
 description: توضح هذه الصفحة كيفية إضافة مرفق إلى ملف PDF باستخدام مكتبة Aspose.PDF لـ C++
 lastmod: "2021-06-05"
 sitemap:

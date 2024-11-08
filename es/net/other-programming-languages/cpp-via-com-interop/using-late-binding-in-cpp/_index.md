@@ -2,14 +2,14 @@
 title: Usando el enlace tardío en CPP
 type: docs
 weight: 20
-url: es/net/using-late-binding-in-cpp/
+url: /es/net/using-late-binding-in-cpp/
 ---
 
 ## Prerrequisitos
 
 {{% alert color="primary" %}}
 
-Por favor, registre Aspose.PDF para .NET con COM Interop, revise el artículo titulado [Usar Aspose.pdf para .NET a través de COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Por favor, registre Aspose.PDF para .NET con COM Interop, revise el artículo titulado [Usar Aspose.pdf para .NET a través de COM Interop](/pdf/es/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

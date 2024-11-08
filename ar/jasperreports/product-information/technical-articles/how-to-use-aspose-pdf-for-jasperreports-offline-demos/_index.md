@@ -2,7 +2,7 @@
 title: كيفية - استخدام Aspose.Pdf لعروض JasperReports غير المتصلة بالإنترنت
 type: docs
 weight: 10
-url: ar/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/
+url: /ar/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/
 lastmod: "2021-06-05"
 ---
 

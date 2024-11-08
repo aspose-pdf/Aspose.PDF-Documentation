@@ -3,7 +3,7 @@ title: استخدام التعليقات التوضيحية للنص في ملف
 linktitle: التعليقات التوضيحية للنص
 type: docs
 weight: 10
-url: ar/net/text-annotation/
+url: /ar/net/text-annotation/
 description: يتيح لك Aspose.PDF لـ .NET إضافة، والحصول على، وحذف التعليقات التوضيحية للنص من مستند PDF الخاص بك.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 ## كيفية إضافة تعليق نصي إلى ملف PDF موجود
 
-الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 التعليق النصي هو تعليق مرتبط بموقع محدد في مستند PDF. عند إغلاق التعليق، يظهر كأيقونة؛ عند فتحه، يجب أن يعرض نافذة منبثقة تحتوي على نص الملاحظة بالخط والحجم الذي يختاره القارئ.
 
@@ -126,7 +126,7 @@ pdfDocument.Save(dataDir);
 
 لا يجب أن يكون له تيار ظهور أو أفعال مرتبطة خاصة به ويجب تحديده بواسطة إدخال Popup في قاموس التعليق التوضيحي الأم.
 
-يوضح الكود التالي كيفية إضافة [تعليق توضيحي منبثق](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) في صفحة PDF باستخدام مثال على إضافة [تعليق توضيحي للخط](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) للأم.
+يوضح الكود التالي كيفية إضافة [تعليق توضيحي منبثق](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) في صفحة PDF باستخدام مثال على إضافة [تعليق توضيحي للخط](/pdf/ar/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) للأم.
 
 ```csharp
 using Aspose.Pdf.Annotations;

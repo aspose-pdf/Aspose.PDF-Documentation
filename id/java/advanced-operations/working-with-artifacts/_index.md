@@ -3,7 +3,7 @@ title: Bekerja dengan Artefak
 linktitle: Bekerja dengan Artefak
 type: docs
 weight: 110
-url: id/java/artifacts/
+url: /id/java/artifacts/
 description: Halaman ini menjelaskan cara bekerja dengan kelas Artefak menggunakan Aspose.PDF untuk Java. Cuplikan kode menunjukkan cara menambahkan gambar latar belakang ke halaman PDF dan cara mendapatkan setiap watermark di halaman pertama file PDF.
 lastmod: "2021-06-05"
 sitemap:

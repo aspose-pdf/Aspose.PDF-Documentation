@@ -3,7 +3,7 @@ title: Bekerja dengan Tabel di PDF menggunakan Python
 linktitle: Bekerja dengan Tabel
 type: docs
 weight: 50
-url: id/python-net/working-with-tables/
+url: /id/python-net/working-with-tables/
 description: Bagian ini menjelaskan cara menambahkan dan mengekstrak tabel, cara memanipulasi dan tabel menggunakan pustaka Python.
 lastmod: "2023-09-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 Anda dapat melakukan hal berikut:
 
-- [Buat atau Tambahkan Tabel dalam Dokumen PDF yang Ada](/pdf/python-net/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
-- [Ekstrak Tabel dari Dokumen PDF yang Ada](/pdf/python-net/extract-table-from-existing-pdf-document/) - Anda dapat mengekstrak tabel dari file PDF.
-- [Manipulasi Tabel dalam PDF yang Ada](/pdf/python-net/manipulate-tables-in-existing-pdf/) - manipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
+- [Buat atau Tambahkan Tabel dalam Dokumen PDF yang Ada](/pdf/id/python-net/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
+- [Ekstrak Tabel dari Dokumen PDF yang Ada](/pdf/id/python-net/extract-table-from-existing-pdf-document/) - Anda dapat mengekstrak tabel dari file PDF.
+- [Manipulasi Tabel dalam PDF yang Ada](/pdf/id/python-net/manipulate-tables-in-existing-pdf/) - manipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
 
-- [Hapus Tabel dari PDF yang Ada](/pdf/python-net/remove-tables-from-existing-pdf/) - hapus tabel atau beberapa tabel dari dokumen PDF.
+- [Hapus Tabel dari PDF yang Ada](/pdf/id/python-net/remove-tables-from-existing-pdf/) - hapus tabel atau beberapa tabel dari dokumen PDF.
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: Dekripsi PDF di Node.js
 linktitle: Dekripsi File PDF
 type: docs
 weight: 40
-url: id/nodejs-cpp/decrypt-pdf/
+url: /id/nodejs-cpp/decrypt-pdf/
 description: Dekripsi File PDF dengan Aspose.PDF untuk Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

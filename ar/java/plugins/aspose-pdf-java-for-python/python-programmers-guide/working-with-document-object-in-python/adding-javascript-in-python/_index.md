@@ -2,7 +2,7 @@
 title: إضافة جافا سكريبت في بايثون
 type: docs
 weight: 10
-url: ar/java/adding-javascript-in-python/
+url: /ar/java/adding-javascript-in-python/
 lastmod: "2021-06-05"
 ---
 

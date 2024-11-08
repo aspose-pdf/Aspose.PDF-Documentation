@@ -3,7 +3,7 @@ title: 使用操作
 linktitle: 操作
 type: docs
 weight: 20
-url: zh/java/actions/
+url: /zh/java/actions/
 description: 本节解释了如何使用 Java 以编程方式向文档和表单字段添加操作。了解如何在 PDF 文件中添加、创建和获取超链接。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 创建 PDF 文档
 linktitle: 创建 PDF
 type: docs
 weight: 10
-url: zh/cpp/create-pdf-document/
+url: /zh/cpp/create-pdf-document/
 description: 本文描述了如何使用 Aspose.PDF for C++ 创建和格式化 PDF 文档。
 lastmod: "2021-11-11"
 sitemap:

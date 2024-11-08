@@ -2,7 +2,7 @@
 title: PDF印刷の操作
 type: docs
 weight: 10
-url: ja/java/print-pdf-file/
+url: /ja/java/print-pdf-file/
 description: このセクションでは、PdfViewerクラスを使用してAspose.PDF FacadesでPDFファイルを印刷する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

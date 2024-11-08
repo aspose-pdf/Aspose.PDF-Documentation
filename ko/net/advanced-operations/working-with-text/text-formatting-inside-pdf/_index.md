@@ -3,7 +3,7 @@ title: PDF 내에서 C#을 사용한 텍스트 포맷팅
 linktitle: PDF 내 텍스트 포맷팅
 type: docs
 weight: 30
-url: ko/net/text-formatting-inside-pdf/
+url: /ko/net/text-formatting-inside-pdf/
 description: 이 페이지는 PDF 파일 내에서 텍스트를 포맷하는 방법을 설명합니다. 들여쓰기 추가, 텍스트 테두리 추가, 밑줄 텍스트 추가 등이 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "이 페이지는 PDF 파일 내에서 텍스트를 포맷하는 방법을 설명합니다. 들여쓰기 추가, 텍스트 테두리 추가, 밑줄 텍스트 추가 등이 있습니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## PDF에 줄 들여쓰기 추가 방법
 

@@ -2,7 +2,7 @@
 title: Ajouter des Couches au Fichier PDF en Ruby
 type: docs
 weight: 20
-url: fr/java/add-layers-to-pdf-file-in-ruby/
+url: /fr/java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

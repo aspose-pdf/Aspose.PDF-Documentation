@@ -3,7 +3,7 @@ title: Ajouter un numéro de page au PDF avec C#
 linktitle: Ajouter un numéro de page
 type: docs
 weight: 100
-url: fr/net/add-page-number/
+url: /fr/net/add-page-number/
 description: Aspose.PDF pour .NET vous permet d'ajouter un tampon de numéro de page à votre fichier PDF en utilisant la classe PageNumber Stamp.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 Tous les documents doivent comporter des numéros de page. Le numéro de page facilite la localisation des différentes parties du document pour le lecteur.
 **Aspose.PDF pour .NET** vous permet d'ajouter des numéros de page avec PageNumberStamp.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Vous pouvez utiliser la classe [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) pour ajouter un tampon de numéro de page dans un fichier PDF.
 Vous pouvez utiliser la classe [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) pour ajouter un tampon de numéro de page dans un fichier PDF.

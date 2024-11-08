@@ -2,7 +2,7 @@
 title: Trabajar con Documentos PDF en Qt
 type: docs
 weight: 130
-url: es/cpp/work-with-pdf-documents-in-qt/
+url: /es/cpp/work-with-pdf-documents-in-qt/
 lastmod: "2021-11-01"
 ---
 

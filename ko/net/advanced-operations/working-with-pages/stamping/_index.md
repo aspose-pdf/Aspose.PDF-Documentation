@@ -3,7 +3,7 @@ title: Aspose.PDF를 사용한 C#으로 스탬핑하기
 linktitle: 스탬핑
 type: docs
 weight: 120
-url: ko/net/stamping/
+url: /ko/net/stamping/
 description: 이 섹션에서는 PDF 페이지에 이미지 스탬프와 텍스트 스탬프를 추가하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,8 +86,8 @@ PDF 파일의 도장은 PDF 파일의 추가 정보를 제공하는데, 이는 �
 
 다음 섹션에서 C#을 사용하여 도장을 추가하는 방법을 확인하세요:
 
-- [PDF 페이지에 이미지 도장 추가](/pdf/net/image-stamps-in-pdf-page/) - 이미지 도장 추가, 이미지 품질 제어, PDF 파일의 배경으로 이미지 도장 사용.
-- [PDF 파일에 텍스트 도장 추가](/pdf/net/text-stamps-in-the-pdf-file/) - 텍스트 도장 추가, TextStamp 객체의 정렬 정의, PDF 파일에 도장으로 텍스트 채우기.
+- [PDF 페이지에 이미지 도장 추가](/pdf/ko/net/image-stamps-in-pdf-page/) - 이미지 도장 추가, 이미지 품질 제어, PDF 파일의 배경으로 이미지 도장 사용.
+- [PDF 파일에 텍스트 도장 추가](/pdf/ko/net/text-stamps-in-the-pdf-file/) - 텍스트 도장 추가, TextStamp 객체의 정렬 정의, PDF 파일에 도장으로 텍스트 채우기.
 
 <script type="application/ld+json">
 {

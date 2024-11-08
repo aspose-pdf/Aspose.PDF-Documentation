@@ -2,7 +2,7 @@
 title: 파이썬에서 PDF의 페이지 수 얻기
 type: docs
 weight: 40
-url: ko/java/get-page-count-of-pdf-in-python/
+url: /ko/java/get-page-count-of-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: PDF Tooltip использование C++
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: ru/cpp/pdf-tooltip/
+url: /ru/cpp/pdf-tooltip/
 description: Узнайте, как добавить всплывающую подсказку к фрагменту текста в PDF с использованием C++ и Aspose.PDF
 lastmod: "2021-12-13"
 sitemap:

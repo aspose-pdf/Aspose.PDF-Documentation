@@ -2,7 +2,7 @@
 title: 在 Python 中向现有 PDF 添加目录
 type: docs
 weight: 20
-url: zh/python-java/add-toc-to-existing-pdf-in-python/
+url: /zh/python-java/add-toc-to-existing-pdf-in-python/
 ---
 
 要在 PDF 文档中使用 **Aspose.PDF Java for Python** 添加目录，只需调用 **AddToc** 类。

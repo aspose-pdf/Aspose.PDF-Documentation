@@ -3,7 +3,7 @@ title: حذف صفحات PDF برمجيًا C#
 linktitle: حذف صفحات PDF
 type: docs
 weight: 30
-url: ar/net/delete-pages/
+url: /ar/net/delete-pages/
 description: يمكنك حذف صفحات من ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "يمكنك حذف صفحات من ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يمكنك حذف صفحات من ملف PDF باستخدام Aspose.PDF لـ .NET. لحذف صفحة معينة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 

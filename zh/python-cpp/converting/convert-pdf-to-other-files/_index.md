@@ -3,7 +3,7 @@ title: 将PDF转换为文本在Python中
 linktitle: 将PDF转换为其他格式
 type: docs
 weight: 90
-url: zh/python-cpp/convert-pdf-to-other-files/
+url: /zh/python-cpp/convert-pdf-to-other-files/
 lastmod: "2022-12-23"
 keywords: 转换, PDF, EPUB, LaText, 文本, XPS, Python
 description: 本主题向您展示如何使用Python将PDF文件转换为其他文件格式，如文本。

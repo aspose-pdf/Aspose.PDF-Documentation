@@ -3,7 +3,7 @@ title: JavaScript를 사용하여 주석 삭제
 linktitle: 주석 삭제
 type: docs
 weight: 10
-url: ko/javascript-cpp/delete-annotation/
+url: /ko/javascript-cpp/delete-annotation/
 description: Aspose.PDF for JavaScript를 사용하여 PDF 파일에서 주석을 삭제할 수 있습니다.
 lastmod: "2023-02-17"
 sitemap:

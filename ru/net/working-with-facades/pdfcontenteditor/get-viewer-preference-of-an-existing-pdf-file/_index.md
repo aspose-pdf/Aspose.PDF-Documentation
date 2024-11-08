@@ -2,7 +2,7 @@
 title: Получить предпочтения просмотра PDF файла
 type: docs
 weight: 70
-url: ru/net/get-viewer-preference-of-an-existing-pdf-file/
+url: /ru/net/get-viewer-preference-of-an-existing-pdf-file/
 description: Этот раздел показывает, как получить предпочтения просмотра существующего PDF файла, используя класс PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

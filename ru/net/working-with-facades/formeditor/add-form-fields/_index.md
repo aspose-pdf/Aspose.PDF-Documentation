@@ -2,7 +2,7 @@
 title: Добавление полей формы в PDF
 type: docs
 weight: 10
-url: ru/net/add-form-fields/
+url: /ru/net/add-form-fields/
 description: В этой теме объясняется, как работать с полями формы с помощью Aspose.PDF Facades, используя класс FormEditor.
 lastmod: "2021-06-05"
 draft: false

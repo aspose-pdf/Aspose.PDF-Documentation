@@ -3,7 +3,7 @@ title: Konversi PDF ke format PDF/A dalam Python
 linktitle: Konversi PDF ke format PDF/A
 type: docs
 weight: 100
-url: id/python-java/convert-pdf-to-pdfa/
+url: /id/python-java/convert-pdf-to-pdfa/
 lastmod: "2023-04-06"
 description: Topik ini menunjukkan bagaimana Aspose.PDF untuk Python memungkinkan untuk mengonversi file PDF ke file PDF yang memenuhi standar PDF/A.
 sitemap:

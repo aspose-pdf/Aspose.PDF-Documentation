@@ -3,7 +3,7 @@ title: Determine Line Break
 linktitle: Determine Line Break
 type: docs
 weight: 70
-url: fr/net/determine-line-break/
+url: /fr/net/determine-line-break/
 description: En savoir plus sur comment déterminer un saut de ligne dans un TextFragment multiligne en utilisant C#
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Suivi du retour à la ligne des TextFragment multilignes
 

@@ -2,7 +2,7 @@
 title: Trabalhando com Item de Lista
 type: docs
 weight: 30
-url: pt/net/working-with-list-item/
+url: /pt/net/working-with-list-item/
 description: Esta seção explica como trabalhar com Item de Lista usando Aspose.PDF Facades com a Classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

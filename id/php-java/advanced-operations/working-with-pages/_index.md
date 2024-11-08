@@ -3,7 +3,7 @@ title: Bekerja dengan Halaman PDF
 linktitle: Bekerja dengan Halaman
 type: docs
 weight: 20
-url: id/php-java/working-with-pages/
+url: /id/php-java/working-with-pages/
 description: Dengan Aspose.PDF untuk PHP via Java Anda dapat menambahkan halaman, menambahkan header dan footer, menambahkan watermark ke dalam file PDF Anda. Bagian ini menjelaskan kepada Anda semua detail tentang topik ini. 
 lastmod: "2024-06-05"
 sitemap:
@@ -21,16 +21,16 @@ Tambahkan nomor halaman menggunakan kelas PageNumberStamp. Untuk menambahkan Sta
 
 Anda dapat melakukan hal berikut:
 
-- [Tambahkan Halaman](/pdf/php-java/add-pages/) - tambahkan halaman di lokasi yang diinginkan atau ke akhir file PDF dan hapus halaman dari dokumen Anda.
-- [Pindahkan Halaman](/pdf/php-java/move-pages/) - pindahkan halaman dari satu dokumen ke dokumen lainnya.
-- [Dapatkan dan Atur Properti Halaman](/pdf/php-java/get-and-set-page-properties/) - Anda dapat mempelajari cara mendapatkan angka dalam file PDF, mendapatkan properti halaman dan menentukan warna halaman.
-- [Hapus Halaman](/pdf/php-java/delete-pages/) - hapus halaman dari file PDF Anda menggunakan koleksi PageCollection.
-- [Ubah Ukuran Halaman](/pdf/php-java/change-page-size) - Anda dapat mengubah ukuran halaman PDF dengan kode snippet menggunakan pustaka Aspose.PDF.
+- [Tambahkan Halaman](/pdf/id/php-java/add-pages/) - tambahkan halaman di lokasi yang diinginkan atau ke akhir file PDF dan hapus halaman dari dokumen Anda.
+- [Pindahkan Halaman](/pdf/id/php-java/move-pages/) - pindahkan halaman dari satu dokumen ke dokumen lainnya.
+- [Dapatkan dan Atur Properti Halaman](/pdf/id/php-java/get-and-set-page-properties/) - Anda dapat mempelajari cara mendapatkan angka dalam file PDF, mendapatkan properti halaman dan menentukan warna halaman.
+- [Hapus Halaman](/pdf/id/php-java/delete-pages/) - hapus halaman dari file PDF Anda menggunakan koleksi PageCollection.
+- [Ubah Ukuran Halaman](/pdf/id/php-java/change-page-size) - Anda dapat mengubah ukuran halaman PDF dengan kode snippet menggunakan pustaka Aspose.PDF.
 
-- [Putar Halaman](/pdf/php-java/rotate-pages/) - Anda dapat mengubah orientasi halaman dari halaman dalam file PDF yang sudah ada.- [Split Pages](/pdf/php-java/split-document/) - Anda dapat membagi file PDF menjadi satu atau beberapa PDF.
-- [Add Headers and/or Footers](/pdf/php-java/add-headers-and-footers-of-pdf-file/) - tambahkan teks atau gambar di header dan footer file PDF Anda.
-- [Crop Pages](/pdf/php-java/crop-pages/) - Anda dapat memotong halaman dalam dokumen PDF secara terprogram dengan Properti Halaman yang berbeda.
-- [Add Watermarks](/pdf/php-java/add-watermarks/) - tambahkan watermark dalam file PDF Anda dengan Kelas Artefak.
-- [Add Page Numbering in PDF File](/pdf/php-java/add-page-number/) - kelas PageNumberStamp akan membantu Anda menambahkan Nomor Halaman dalam file PDF Anda.
-- [Add Backgrounds](/pdf/php-java/add-backgrounds/) - gambar latar belakang dapat digunakan untuk menambahkan watermark.
-- [Stamping](/pdf/php-java/stamping/) - Anda dapat menggunakan kelas ImageStamp untuk menambahkan cap gambar ke file PDF dan kelas TextStamp untuk menambahkan teks.
+- [Putar Halaman](/pdf/id/php-java/rotate-pages/) - Anda dapat mengubah orientasi halaman dari halaman dalam file PDF yang sudah ada.- [Split Pages](/pdf/id/php-java/split-document/) - Anda dapat membagi file PDF menjadi satu atau beberapa PDF.
+- [Add Headers and/or Footers](/pdf/id/php-java/add-headers-and-footers-of-pdf-file/) - tambahkan teks atau gambar di header dan footer file PDF Anda.
+- [Crop Pages](/pdf/id/php-java/crop-pages/) - Anda dapat memotong halaman dalam dokumen PDF secara terprogram dengan Properti Halaman yang berbeda.
+- [Add Watermarks](/pdf/id/php-java/add-watermarks/) - tambahkan watermark dalam file PDF Anda dengan Kelas Artefak.
+- [Add Page Numbering in PDF File](/pdf/id/php-java/add-page-number/) - kelas PageNumberStamp akan membantu Anda menambahkan Nomor Halaman dalam file PDF Anda.
+- [Add Backgrounds](/pdf/id/php-java/add-backgrounds/) - gambar latar belakang dapat digunakan untuk menambahkan watermark.
+- [Stamping](/pdf/id/php-java/stamping/) - Anda dapat menggunakan kelas ImageStamp untuk menambahkan cap gambar ke file PDF dan kelas TextStamp untuk menambahkan teks.

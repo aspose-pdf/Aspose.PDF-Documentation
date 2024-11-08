@@ -2,7 +2,7 @@
 title: PdfFileEditor Class
 type: docs
 weight: 10
-url: ar/net/pdffileeditor-class/
+url: /ar/net/pdffileeditor-class/
 description: يشرح هذا القسم كيفية العمل مع Aspose.PDF Facades باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -23,26 +23,26 @@ sitemap:
 
 يستكشف هذا القسم قدرات هذه الفئة ويشرح الغرض من طرقها.
 
-- [دمج مستندات PDF](/pdf/net/concatenate-pdf-documents/)
-- [استخراج صفحات PDF](/pdf/net/extract-pdf-pages/)
-- [إدراج صفحات PDF](/pdf/net/insert-pdf-pages/)
-- [حذف صفحات PDF](/pdf/net/delete-pdf-pages/)
+- [دمج مستندات PDF](/pdf/ar/net/concatenate-pdf-documents/)
+- [استخراج صفحات PDF](/pdf/ar/net/extract-pdf-pages/)
+- [إدراج صفحات PDF](/pdf/ar/net/insert-pdf-pages/)
+- [حذف صفحات PDF](/pdf/ar/net/delete-pdf-pages/)
 
 ## استخدام فواصل الصفحات
 
 فاصل الصفحة هو ميزة خاصة تسمح بإعادة تدفق المستند.
 
-- [فاصل الصفحة في ملف PDF موجود](/pdf/net/page-break-in-existing-pdf/)
+- [فاصل الصفحة في ملف PDF موجود](/pdf/ar/net/page-break-in-existing-pdf/)
 
 ## ترتيب صفحات PDF
 
 الترتيب هو عملية ترتيب الصفحات بشكل صحيح قبل الطباعة. `PdfFileEditor` يوفر طريقتين لهذا الغرض وهما `MakeBooklet` و `MakeNUp`. تساعد طريقة MakeBooklet في ترتيب الصفحات بحيث يكون من السهل طيها أو ربطها بعد الطباعة، بينما تسمح طريقة MakeNUp بطباعة صفحات متعددة على صفحة واحدة من ملف PDF.
 
-- [صنع كتيب من PDF](/pdf/net/make-booklet-of-pdf/)
-- [صنع NUp من ملفات PDF](/pdf/net/make-nup-of-pdf-files/)
+- [صنع كتيب من PDF](/pdf/ar/net/make-booklet-of-pdf/)
+- [صنع NUp من ملفات PDF](/pdf/ar/net/make-nup-of-pdf-files/)
 
 ## التقسيم
 
 تسمح ميزة التقسيم لك بتقسيم ملف PDF موجود إلى أجزاء مختلفة. يمكنك إما تقسيم الجزء الأمامي من ملف PDF أو الجزء الخلفي. كما يوفر PdfFileEditor مجموعة متنوعة من الطرق لأغراض التقسيم، يمكنك أيضًا تقسيم ملف إلى صفحات فردية أو مجموعات متعددة من الصفحات.
 
-- [تقسيم صفحات PDF](/pdf/net/split-pdf-pages/)
+- [تقسيم صفحات PDF](/pdf/ar/net/split-pdf-pages/)

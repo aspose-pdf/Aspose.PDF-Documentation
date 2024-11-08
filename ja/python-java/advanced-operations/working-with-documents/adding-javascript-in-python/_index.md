@@ -2,7 +2,7 @@
 title: PythonにJavaScriptを追加する
 type: docs
 weight: 10
-url: ja/python-java/adding-javascript-in-python/
+url: /ja/python-java/adding-javascript-in-python/
 ---
 
 Aspose.PDF Javaを使用してPythonにJavaScriptを追加するには、DocumentクラスのAddJavascript()メソッドを呼び出します。

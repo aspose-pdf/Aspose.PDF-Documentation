@@ -3,7 +3,7 @@ title: 用C++替换PDF中的文本
 linktitle: 替换PDF中的文本
 type: docs
 weight: 40
-url: zh/cpp/replace-text-in-pdf/
+url: /zh/cpp/replace-text-in-pdf/
 description: 了解有关从PDF中替换和删除文本的各种方法。Aspose.PDF允许在特定区域或使用正则表达式替换文本。
 lastmod: "2021-12-13"
 sitemap:

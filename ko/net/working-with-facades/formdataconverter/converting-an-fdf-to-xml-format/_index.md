@@ -2,7 +2,7 @@
 title: FDF를 XML 형식으로 변환
 type: docs
 weight: 10
-url: ko/net/converting-an-fdf-to-xml-format/
+url: /ko/net/converting-an-fdf-to-xml-format/
 description: 이 섹션은 FormDataConverter 클래스를 사용하여 FDF를 XML 형식으로 변환하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF for .NET](/pdf/net/)의 [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 네임스페이스는 AcroForms를 매우 잘 지원합니다. 또한 FDF, XFDF 및 XML과 같은 다양한 파일 형식으로 양식 데이터를 가져오고 내보내는 것도 지원합니다. 그러나 때때로 개발자는 한 형식을 다른 형식으로 변환해야 할 수도 있습니다. 이 문서는 FDF를 XML로 변환하는 기능을 살펴봅니다.
+[Aspose.PDF for .NET](/pdf/ko/net/)의 [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 네임스페이스는 AcroForms를 매우 잘 지원합니다. 또한 FDF, XFDF 및 XML과 같은 다양한 파일 형식으로 양식 데이터를 가져오고 내보내는 것도 지원합니다. 그러나 때때로 개발자는 한 형식을 다른 형식으로 변환해야 할 수도 있습니다. 이 문서는 FDF를 XML로 변환하는 기능을 살펴봅니다.
 
 {{% /alert %}}
 

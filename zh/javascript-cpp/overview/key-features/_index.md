@@ -3,7 +3,7 @@ title: Aspose.PDF for JavaScript 的关键功能
 linktitle: 关键功能
 type: docs
 weight: 20
-url: zh/javascript-cpp/key-features/
+url: /zh/javascript-cpp/key-features/
 description: Aspose.PDF for JavaScript via C++ 展示了其通用功能。本页描述了支持的 PDF 版本，以及我们可以对文本、图像、页面等进行的所有操作。
 lastmod: "2022-12-13"
 sitemap:

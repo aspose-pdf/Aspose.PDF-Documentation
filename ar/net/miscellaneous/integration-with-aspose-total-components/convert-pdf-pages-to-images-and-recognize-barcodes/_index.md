@@ -2,7 +2,7 @@
 title: تحويل صفحات PDF إلى صور وتعرف الباركود
 type: docs
 weight: 10
-url: ar/net/convert-pdf-pages-to-images-and-recognize-barcodes/
+url: /ar/net/convert-pdf-pages-to-images-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

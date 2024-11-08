@@ -2,7 +2,7 @@
 title: 提取图像并更改印章位置
 type: docs
 weight: 30
-url: zh/net/extract-image-and-change-position-of-a-stamp/
+url: /zh/net/extract-image-and-change-position-of-a-stamp/
 description: 本节介绍如何使用 Aspose.PDF Facades 提取图像和更改印章位置。
 lastmod: "2021-06-05"
 draft: false

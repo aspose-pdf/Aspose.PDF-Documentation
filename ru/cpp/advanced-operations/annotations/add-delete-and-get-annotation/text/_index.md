@@ -3,7 +3,7 @@ title: PDF Text Annotation
 Texttitle: Text Annotation
 type: docs
 weight: 10
-url: ru/cpp/text-annotation/
+url: /ru/cpp/text-annotation/
 description: Aspose.PDF для C++ позволяет добавлять, получать и удалять текстовые аннотации из вашего PDF-документа.
 lastmod: "2021-11-24"
 sitemap:

@@ -3,7 +3,7 @@ title: Dapatkan Resolusi dan Dimensi dari Gambar yang Tertanam menggunakan C++
 linktitle: Dapatkan Resolusi dan Dimensi
 type: docs
 weight: 40
-url: id/cpp/get-resolution-and-dimensions-of-embedded-images/
+url: /id/cpp/get-resolution-and-dimensions-of-embedded-images/
 description: Bagian ini menunjukkan detail dalam mendapatkan resolusi dan dimensi dari Gambar yang Tertanam
 lastmod: "2021-12-18"
 ---

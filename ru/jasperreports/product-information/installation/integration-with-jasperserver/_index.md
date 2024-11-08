@@ -6,7 +6,7 @@ type: docs
 
 weight: 30
 
-url: ru/jasperreports/integration-with-jasperserver/
+url: /ru/jasperreports/integration-with-jasperserver/
 
 lastmod: "2021-06-05"
 

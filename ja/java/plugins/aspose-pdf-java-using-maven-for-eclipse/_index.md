@@ -2,7 +2,7 @@
 title: Aspose.PDF Java using Maven for Eclipse
 type: docs
 weight: 80
-url: ja/java/aspose-pdf-java-using-maven-for-eclipse/
+url: /ja/java/aspose-pdf-java-using-maven-for-eclipse/
 lastmod: "2021-06-05"
 ---
 

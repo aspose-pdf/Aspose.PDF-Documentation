@@ -3,7 +3,7 @@ title: Ikhtisar
 linktitle: Ikhtisar
 type: docs
 weight: 20
-url: id/androidjava/overview/
+url: /id/androidjava/overview/
 description: Ikhtisar fitur utama dan format yang didukung oleh Aspose.PDF untuk Android via Java, manual instalasi dan lisensi pustaka Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -38,9 +38,9 @@ Selain itu, Aspose.PDF untuk Android melalui Java dapat diterapkan untuk dengan 
 
 Pelajari lebih lanjut tentang:
 
-- [Format File yang Didukung](/pdf/androidjava/supported-file-formats/)
-- [Fitur Utama Aspose.PDF](/pdf/androidjava/key-features/)
-- [Persyaratan Sistem](/pdf/androidjava/system-requirements/)
-- [Instalasi](/pdf/androidjava/installation/)
-- [Lisensi](/pdf/androidjava/licensing/)
-- [Dukungan Teknis](/pdf/androidjava/technical-support/)
+- [Format File yang Didukung](/pdf/id/androidjava/supported-file-formats/)
+- [Fitur Utama Aspose.PDF](/pdf/id/androidjava/key-features/)
+- [Persyaratan Sistem](/pdf/id/androidjava/system-requirements/)
+- [Instalasi](/pdf/id/androidjava/installation/)
+- [Lisensi](/pdf/id/androidjava/licensing/)
+- [Dukungan Teknis](/pdf/id/androidjava/technical-support/)

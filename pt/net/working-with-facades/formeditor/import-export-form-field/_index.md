@@ -2,13 +2,13 @@
 title: Importar e Exportar Campo de Formulário
 type: docs
 weight: 60
-url: pt/net/import-export-form-field/
+url: /pt/net/import-export-form-field/
 description: Preencher campos de formulário usando DataTable com a Classe FormEditor por Aspose.PDF para .NET
 lastmod: "2021-06-05"
 draft: false
 ---
 
-Aspose.PDF para .NET fornece grandes capacidades para criar/manipular campos de formulário dentro de um documento PDF. Usando esta API, você pode programaticamente preencher campos de formulário dentro de um arquivo PDF, preencher campos de formulário por [Importar Dados de FDF para um Arquivo PDF](/pdf/net/import-and-export-data/), [Importar Dados de XFDF para um Arquivo PDF](/pdf/net/import-and-export-data/), [Importar Dados de XML para um Arquivo PDF](/pdf/net/import-and-export-data/) ou até mesmo importar dados de um objeto [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF para .NET fornece grandes capacidades para criar/manipular campos de formulário dentro de um documento PDF. Usando esta API, você pode programaticamente preencher campos de formulário dentro de um arquivo PDF, preencher campos de formulário por [Importar Dados de FDF para um Arquivo PDF](/pdf/pt/net/import-and-export-data/), [Importar Dados de XFDF para um Arquivo PDF](/pdf/pt/net/import-and-export-data/), [Importar Dados de XML para um Arquivo PDF](/pdf/pt/net/import-and-export-data/) ou até mesmo importar dados de um objeto [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
 
 ```csharp
  public static void ImportData()

@@ -3,7 +3,7 @@ title: Ekstrak font dari PDF
 linktitle: Ekstrak font
 type: docs
 weight: 30
-url: id/java/extract-fonts-from-pdf/
+url: /id/java/extract-fonts-from-pdf/
 description: Cara mengekstrak font dari PDF menggunakan Aspose.PDF untuk Java
 lastmod: "2021-06-05"
 sitemap:

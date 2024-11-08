@@ -3,7 +3,7 @@ title: C#を使用してPDFに画像を追加
 linktitle: 画像を追加
 type: docs
 weight: 10
-url: ja/net/add-image-to-existing-pdf-file/
+url: /ja/net/add-image-to-existing-pdf-file/
 description: このセクションでは、C#ライブラリを使用して既存のPDFファイルに画像を追加する方法について説明します。
 lastmod: "2022-02-17"
 ---
@@ -77,7 +77,7 @@ lastmod: "2022-02-17"
 
 PDFページは、リソースと内容のプロパティを含んでいます。例えば、リソースには画像やフォームが含まれ、内容はPDFオペレータのセットによって表されます。各オペレータには名前と引数があります。この例では、PDFファイルに画像を追加するためにオペレータを使用します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも機能します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも機能します。
 
 既存のPDFファイルに画像を追加するには：
 

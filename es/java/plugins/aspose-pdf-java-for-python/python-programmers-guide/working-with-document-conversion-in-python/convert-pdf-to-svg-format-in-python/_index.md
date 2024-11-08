@@ -2,7 +2,7 @@
 title: Convertir PDF a formato SVG en Python
 type: docs
 weight: 30
-url: es/java/convert-pdf-to-svg-format-in-python/
+url: /es/java/convert-pdf-to-svg-format-in-python/
 lastmod: "2021-06-05"
 ---
 

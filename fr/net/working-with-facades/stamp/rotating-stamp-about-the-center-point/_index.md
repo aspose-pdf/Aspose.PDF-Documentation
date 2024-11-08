@@ -2,7 +2,7 @@
 title: Timbre rotatif autour du point central
 type: docs
 weight: 10
-url: fr/net/rotating-stamp-about-the-center-point/
+url: /fr/net/rotating-stamp-about-the-center-point/
 description: Cette section explique comment faire pivoter le timbre autour du point central en utilisant la classe Stamp.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF pour .NET](/pdf/net/) vous permet d'ajouter un timbre dans un fichier PDF existant. Parfois, les utilisateurs ont besoin de faire pivoter le timbre. Dans cet article, nous verrons comment faire pivoter un timbre autour de son point central.
+Le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF pour .NET](/pdf/fr/net/) vous permet d'ajouter un timbre dans un fichier PDF existant. Parfois, les utilisateurs ont besoin de faire pivoter le timbre. Dans cet article, nous verrons comment faire pivoter un timbre autour de son point central.
 
 {{% /alert %}}
 

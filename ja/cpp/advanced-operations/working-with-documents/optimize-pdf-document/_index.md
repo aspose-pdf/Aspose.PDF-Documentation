@@ -3,7 +3,7 @@ title: Optimize PDF using C++
 linktitle: Optimize PDF
 type: docs
 weight: 30
-url: ja/cpp/optimize-pdf/
+url: /ja/cpp/optimize-pdf/
 description: PDFファイルを最適化し、すべての画像を縮小し、PDFのサイズを縮小し、フォントの埋め込みを解除し、ページコンテンツの再利用を有効にし、注釈を削除またはフラット化するC++を使用します。
 lastmod: "2021-11-11"
 sitemap:

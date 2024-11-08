@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: ja/jasperreports/working-with-jasperserver/
+url: /ja/jasperreports/working-with-jasperserver/
 
 lastmod: "2021-06-05"
 

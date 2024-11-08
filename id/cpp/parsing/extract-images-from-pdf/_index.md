@@ -4,7 +4,7 @@ title: Ekstrak Gambar dari PDF
 linktitle: Ekstrak Gambar dari PDF
 type: docs
 weight: 20
-url: id/cpp/extract-images-from-the-pdf-file/
+url: /id/cpp/extract-images-from-the-pdf-file/
 description: Cara mengekstrak bagian dari gambar dari PDF menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-06-05"
 sitemap:

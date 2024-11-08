@@ -3,7 +3,7 @@ title: PDF-UA 準拠テスト - エラーリスト
 linktitle: PDF-UA 準拠テスト - エラーリスト
 type: docs
 weight: 50
-url: ja/net/pdf-ua-compliance-test-errors-list/
+url: /ja/net/pdf-ua-compliance-test-errors-list/
 description: この記事では、Aspose.PDF APIおよびC#またはVBを使用したPDF/UA準拠テスト中に発生する可能性のあるエラーのリストを示しています。
 lastmod: "2022-02-17"
 sitemap:

@@ -1,7 +1,7 @@
 ---
 title: Bekerja dengan JavaScript
 type: docs
-url: id/net/working-with-javascript/
+url: /id/net/working-with-javascript/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -84,7 +84,7 @@ Dokumen PDF memiliki banyak kegunaan karena dapat ditampilkan baik melalui peran
 - JavaScript Acrobat tidak memiliki akses ke objek dalam halaman HTML. Demikian pula, JavaScript HTML tidak dapat mengakses objek dalam file PDF.
 - JavaScript HTML dapat memanipulasi objek seperti Window. JavaScript Acrobat tidak dapat mengakses objek tersebut tetapi dapat memanipulasi objek khusus PDF.
 
-Anda dapat menambahkan JavaScript baik pada tingkat dokumen maupun halaman menggunakan [Aspose.PDF for .NET](/pdf/net/). Untuk menambahkan JavaScript:
+Anda dapat menambahkan JavaScript baik pada tingkat dokumen maupun halaman menggunakan [Aspose.PDF for .NET](/pdf/id/net/). Untuk menambahkan JavaScript:
 
 ### Menambahkan JavaScript ke Aksi Dokumen atau Halaman
 

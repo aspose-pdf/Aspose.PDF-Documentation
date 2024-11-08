@@ -3,7 +3,7 @@ title: إضافة رأس وتذييل إلى ملف PDF
 linktitle: إضافة رأس وتذييل إلى ملف PDF
 type: docs
 weight: 70
-url: ar/net/add-headers-and-footers-of-pdf-file/
+url: /ar/net/add-headers-and-footers-of-pdf-file/
 description: يسمح لك Aspose.PDF لـ .NET بإضافة رأس وتذييل إلى ملف PDF الخاص بك باستخدام فئة TextStamp.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 </script>
 **Aspose.PDF لـ .NET** يتيح لك إضافة رأس وتذييل في ملف PDF الخاص بك. يمكنك إضافة صور أو نص إلى مستند PDF. كما يمكنك محاولة إضافة رؤوس مختلفة في ملف PDF واحد باستخدام C#.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة نص في رأس ملف PDF
 

@@ -2,7 +2,7 @@
 title: Add PDF Page Stamp
 type: docs
 weight: 10
-url: es/net/add-pdf-page-stamp/
+url: /es/net/add-pdf-page-stamp/
 description: Esta sección explica cómo trabajar con Aspose.PDF Facades utilizando la clase PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

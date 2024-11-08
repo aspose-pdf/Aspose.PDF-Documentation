@@ -3,7 +3,7 @@ title: Extraer Información de Imagen y Firma
 linktitle: Extraer Información de Imagen y Firma
 type: docs
 weight: 30
-url: es/net/extract-image-and-signature-information/
+url: /es/net/extract-image-and-signature-information/
 description: Puede extraer imágenes del campo de firma y extraer información de la firma utilizando la clase SignatureField con C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Extracción de imagen de campo de firma
 

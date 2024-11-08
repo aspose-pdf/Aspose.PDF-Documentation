@@ -2,7 +2,7 @@
 title: ضبط انتهاء صلاحية ملف PDF في بايثون
 type: docs
 weight: 80
-url: ar/python-java/set-pdf-expiration-in-python/
+url: /ar/python-java/set-pdf-expiration-in-python/
 ---
 
 <ins>لضبط انتهاء صلاحية مستند PDF باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء فئة **SetExpiration**.

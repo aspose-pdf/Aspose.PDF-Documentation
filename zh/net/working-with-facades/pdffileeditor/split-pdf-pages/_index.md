@@ -2,7 +2,7 @@
 title: 拆分 PDF 页面
 type: docs
 weight: 60
-url: zh/net/split-pdf-pages/
+url: /zh/net/split-pdf-pages/
 description: 本节解释如何使用 PdfFileEditor 类通过 Aspose.PDF Facades 拆分 PDF 页面。
 lastmod: "2021-06-05"
 draft: false

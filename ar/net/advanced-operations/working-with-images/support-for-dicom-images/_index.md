@@ -3,7 +3,7 @@ title: دعم صور DICOM
 linktitle: دعم صور DICOM
 type: docs
 weight: 100
-url: ar/net/support-for-dicom-mages/
+url: /ar/net/support-for-dicom-mages/
 description: يصف هذا القسم كيفية دعم صور DICOM في ملف PDF باستخدام مكتبة C#.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 تم تطوير معيار DICOM من قبل الرابطة الوطنية لمصنعي الأجهزة الكهربائية. يغطي هذا النوع وظائف إنشاء وتخزين ونقل وطباعة إطارات الصور الفردية، وسلاسل الإطارات، ومعلومات المرضى، والبحوث، والمعدات، والمؤسسات، والطاقم الطبي الذي يجري الفحص، وما إلى ذلك.
 
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 **Aspose.PDF لـ .NET** يدعم إضافة صور DICOM إلى مستندات PDF. يوضح الكود التالي كيفية استخدام هذه الوظيفة.
 

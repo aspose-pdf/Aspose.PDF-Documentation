@@ -3,7 +3,7 @@ title: Establecer Privilegios, Encriptar y Desencriptar PDF
 linktitle: Encriptar y Desencriptar Archivo PDF
 type: docs
 weight: 20
-url: es/net/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /es/net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Encriptar archivo PDF con C# utilizando diferentes tipos y algoritmos de encriptación. También, desencriptar archivos PDF usando la contraseña del propietario.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Encriptar archivo PDF con C# utilizando diferentes tipos y algoritmos de encriptación. También, desencriptar archivos PDF usando la contraseña del propietario."
 }
 </script>
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Establecer privilegios en un archivo PDF existente
 

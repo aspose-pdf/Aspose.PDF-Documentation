@@ -3,7 +3,7 @@ title: Salvar documento PDF programaticamente
 linktitle: Salvar PDF
 type: docs
 weight: 30
-url: pt/net/save-pdf-document/
+url: /pt/net/save-pdf-document/
 description: Aprenda como salvar um arquivo PDF em C# usando a biblioteca Aspose.PDF para .NET. Salve o documento PDF no sistema de arquivos, em stream e em aplicações Web.
 aliases:
     - /net/saving/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-O próximo trecho de código também funciona com a nova interface gráfica [Aspose.Drawing](/pdf/net/drawing/).
+O próximo trecho de código também funciona com a nova interface gráfica [Aspose.Drawing](/pdf/pt/net/drawing/).
 
 ## Salvar documento PDF no sistema de arquivos
 
@@ -60,7 +60,7 @@ var pdfDocument = new Aspose.Pdf.Document(originalFileName);
 pdfDocument.Pages.Add();
 pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
-Para uma explicação mais detalhada, por favor siga para a seção [Showcase](/pdf/net/showcases/).
+Para uma explicação mais detalhada, por favor siga para a seção [Showcase](/pdf/pt/net/showcases/).
 
 ## Salvar no formato PDF/A ou PDF/X
 

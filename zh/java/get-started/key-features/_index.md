@@ -3,7 +3,7 @@ title: Aspose.PDF 的关键特性
 linktitle: 关键特性
 type: docs
 weight: 80
-url: zh/java/key-features/
+url: /zh/java/key-features/
 description: Aspose.PDF for Java 展示了主要特性并描述了支持的 PDF 版本，以及我们可以对文档进行的所有操作。
 lastmod: "2021-06-05"
 sitemap:

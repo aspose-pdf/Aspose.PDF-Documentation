@@ -3,7 +3,7 @@ title: Aspose.PDF for C++ を使用して画像と署名情報を抽出する
 linktitle: 画像と署名情報の抽出
 type: docs
 weight: 30
-url: ja/cpp/extract-image-and-signature-information/
+url: /ja/cpp/extract-image-and-signature-information/
 description: 署名フィールドから画像を抽出し、SignatureField クラスを使用して署名情報を抽出できます。
 lastmod: "2021-12-15"
 sitemap:

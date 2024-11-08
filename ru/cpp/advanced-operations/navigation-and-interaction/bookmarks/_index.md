@@ -3,7 +3,7 @@ title: Работа с закладками в PDF с использование
 linktitle: Закладки
 type: docs
 weight: 30
-url: ru/cpp/bookmarks/
+url: /ru/cpp/bookmarks/
 description: Этот раздел объясняет, как добавлять, удалять и получать закладки с Aspose.PDF для C++.
 lastmod: "2022-01-31"
 sitemap:
@@ -14,5 +14,5 @@ sitemap:
 Закладки PDF — это удобный и важный инструмент для чтения PDF-файлов. Они позволяют пользователям быстро переходить к другим местам в PDF-документе, перемещаться по страницам и быстро просматривать содержимое PDF, как в оглавлении.
 В этом разделе вы узнаете, как:
 
-- [Добавить и удалить закладку](/pdf/cpp/add-and-delete-bookmark/)
-- [Получить, обновить и развернуть закладку](/pdf/cpp/get-update-and-expand-bookmark/)
+- [Добавить и удалить закладку](/pdf/ru/cpp/add-and-delete-bookmark/)
+- [Получить, обновить и развернуть закладку](/pdf/ru/cpp/get-update-and-expand-bookmark/)

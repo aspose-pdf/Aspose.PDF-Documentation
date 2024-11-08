@@ -3,7 +3,7 @@ title: 使用编程方式删除 PDF 页面
 linktitle: 删除 PDF 页面
 type: docs
 weight: 40
-url: zh/java/delete-pages/
+url: /zh/java/delete-pages/
 description: 您可以使用 Java 库从 PDF 文件中删除页面。
 lastmod: "2021-06-05"
 sitemap:

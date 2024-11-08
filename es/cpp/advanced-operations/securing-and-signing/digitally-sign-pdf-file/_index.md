@@ -3,7 +3,7 @@ title: Cómo firmar digitalmente un PDF
 linktitle: Firmar digitalmente PDF
 type: docs
 weight: 10
-url: es/cpp/digitally-sign-pdf-file/
+url: /es/cpp/digitally-sign-pdf-file/
 description: Firmar digitalmente documentos PDF usando C++. Verificar o validar los PDFs firmados digitalmente usando C++.
 lastmod: "2021-12-15"
 sitemap:

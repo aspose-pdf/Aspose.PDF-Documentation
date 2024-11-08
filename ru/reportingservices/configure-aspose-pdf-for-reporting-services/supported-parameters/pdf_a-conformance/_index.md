@@ -2,7 +2,7 @@
 title: PDF_A Conformance
 type: docs
 weight: 100
-url: ru/reportingservices/pdf_a-conformance/
+url: /ru/reportingservices/pdf_a-conformance/
 lastmod: "2021-06-05"
 ---
 

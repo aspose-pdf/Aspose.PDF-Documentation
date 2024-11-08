@@ -2,7 +2,7 @@
 title: Membuat Assembly Pembungkus
 type: docs
 weight: 80
-url: id/net/creating-a-wrapper-assembly/
+url: /id/net/creating-a-wrapper-assembly/
 ---
 
 {{% alert color="primary" %}}

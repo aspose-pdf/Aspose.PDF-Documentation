@@ -3,7 +3,7 @@ title: Извлечение таблицы из PDF
 linktitle: Извлечение таблицы
 type: docs
 weight: 20
-url: ru/cpp/extract-table-from-existing-pdf-document/
+url: /ru/cpp/extract-table-from-existing-pdf-document/
 description: Aspose.PDF для C++ позволяет выполнять различные манипуляции с таблицами, содержащимися в вашем PDF-документе. Вы можете добавить и извлечь таблицу в существующем PDF-документе, отобразить таблицу на новой странице и т.д.
 lastmod: "2021-11-11"
 sitemap:

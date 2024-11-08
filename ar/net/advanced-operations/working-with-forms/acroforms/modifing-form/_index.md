@@ -3,7 +3,7 @@ title: تعديل AcroForm
 linktitle: تعديل AcroForm
 type: docs
 weight: 40
-url: ar/net/modifing-form/
+url: /ar/net/modifing-form/
 description: تعديل النموذج في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET. يمكنك إضافة أو إزالة الحقول في النموذج الحالي، والحصول وتعيين حد الحقل وغيرها.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "تعديل النموذج في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET. يمكنك إضافة أو إزالة الحقول في النموذج الحالي، والحصول وتعيين حد الحقل وغيرها."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## الحصول على حد الحقل أو تعيينه
 

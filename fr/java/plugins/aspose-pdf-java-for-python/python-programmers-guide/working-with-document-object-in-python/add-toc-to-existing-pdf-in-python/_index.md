@@ -2,7 +2,7 @@
 title: Ajouter une table des matières à un PDF existant en Python
 type: docs
 weight: 20
-url: fr/java/add-toc-to-existing-pdf-in-python/
+url: /fr/java/add-toc-to-existing-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

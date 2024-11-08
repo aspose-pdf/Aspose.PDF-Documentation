@@ -3,7 +3,7 @@ title: Aspose.PDF С++ Example
 linktitle: Hello World Example
 type: docs
 weight: 40
-url: ar/cpp/hello-world-example/
+url: /ar/cpp/hello-world-example/
 description: تعرض هذه الصفحة كيفية استخدام البرمجة البسيطة لإنشاء مستند PDF يحتوي على النص - Hello World.
 lastmod: "2021-11-01"
 sitemap:

@@ -3,7 +3,7 @@ title: フォームの操作
 linktitle: フォームの操作
 type: docs
 weight: 60
-url: ja/net/working-with-forms/
+url: /ja/net/working-with-forms/
 description: このセクションでは、Aspose.PDF for .NET を使用して PDF ドキュメントで AcroForms と XFA フォームを操作する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -78,8 +78,8 @@ sitemap:
 このセクションでは、Aspose.PDFを使用してPDFドキュメントをプログラムで完了するための迅速かつ簡単なアプローチについて説明します。また、既存のPDFに含まれているフィールドを発見し、マッピングする方法についても説明します。
 さらに、XMLに基づいたプレゼンテーションフォームのための別の技術であるXFAの使用方法についても学びます。
 
-- [AcroForms](/pdf/net/acroforms/) - フォームを作成し、フォームフィールドを埋め、フォームからデータを抽出し、.NETライブラリを使用してPDFにフィールドを追加および削除します。
-- [XFA Forms](/pdf/net/xfa-forms/) - XFAフィールドを埋め、XFAを変換し、XFAフィールドのプロパティを取得します。
+- [AcroForms](/pdf/ja/net/acroforms/) - フォームを作成し、フォームフィールドを埋め、フォームからデータを抽出し、.NETライブラリを使用してPDFにフィールドを追加および削除します。
+- [XFA Forms](/pdf/ja/net/xfa-forms/) - XFAフィールドを埋め、XFAを変換し、XFAフィールドのプロパティを取得します。
 
 <script type="application/ld+json">
 {

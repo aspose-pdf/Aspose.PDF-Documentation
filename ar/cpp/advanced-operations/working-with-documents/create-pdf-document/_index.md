@@ -3,7 +3,7 @@ title: إنشاء مستند PDF
 linktitle: إنشاء PDF
 type: docs
 weight: 10
-url: ar/cpp/create-pdf-document/
+url: /ar/cpp/create-pdf-document/
 description: توضح هذه المقالة كيفية إنشاء وتنسيق مستند PDF باستخدام Aspose.PDF لـ C++.
 lastmod: "2021-11-11"
 sitemap:

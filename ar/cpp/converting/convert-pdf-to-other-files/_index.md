@@ -3,7 +3,7 @@ title: تحويل ملف PDF إلى تنسيقات أخرى
 linktitle: تحويل PDF إلى تنسيقات أخرى
 type: docs
 weight: 90
-url: ar/cpp/convert-pdf-to-other-files/
+url: /ar/cpp/convert-pdf-to-other-files/
 lastmod: "2021-11-19"
 description: يوضح هذا الموضوع كيف يسمح Aspose.PDF بتحويل ملف PDF إلى تنسيقات ملفات أخرى.
 sitemap:

@@ -1,7 +1,7 @@
 ---
 title: Travailler avec les Titres dans les PDF
 type: docs
-url: fr/net/working-with-headings/
+url: /fr/net/working-with-headings/
 description: Créez une numérotation dans les titres de votre document PDF avec C#. Aspose.PDF pour .NET propose différents styles de numérotation.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 
 Les titres sont des parties importantes de tout document. Les rédacteurs essaient toujours de rendre les titres plus saillants et significatifs pour leurs lecteurs. Si un document contient plusieurs titres, le rédacteur a plusieurs options pour organiser ces titres. L'une des approches les plus courantes pour organiser les titres est d'écrire les titres dans un style de numérotation.
 
-[Aspose.PDF for .NET](/pdf/net/) offre de nombreux styles de numérotation prédéfinis. Ces styles de numérotation prédéfinis sont stockés dans une énumération, NumberingStyle. Les valeurs prédéfinies de l'énumération NumberingStyle et leurs descriptions sont données ci-dessous :
+[Aspose.PDF for .NET](/pdf/fr/net/) offre de nombreux styles de numérotation prédéfinis. Ces styles de numérotation prédéfinis sont stockés dans une énumération, NumberingStyle. Les valeurs prédéfinies de l'énumération NumberingStyle et leurs descriptions sont données ci-dessous :
 
 |**Types de titres**|**Description**|
 | :- | :- |
@@ -93,7 +93,7 @@ La propriété **Style** de la classe **Aspose.PDF.Heading** est utilisée pour 
 | :- |
 Le code source, pour obtenir le résultat affiché dans la figure ci-dessus, est donné ci-dessous dans l'exemple.
 
-Le prochain extrait de code fonctionne également avec une nouvelle interface graphique [Aspose.Drawing](/pdf/net/drawing/).
+Le prochain extrait de code fonctionne également avec une nouvelle interface graphique [Aspose.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Le chemin vers le répertoire des documents.

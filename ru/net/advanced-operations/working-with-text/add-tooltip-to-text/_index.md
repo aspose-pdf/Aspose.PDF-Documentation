@@ -3,7 +3,7 @@ title: PDF Tooltip с использованием C#
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: ru/net/pdf-tooltip/
+url: /ru/net/pdf-tooltip/
 description: Узнайте, как добавить всплывающую подсказку к фрагменту текста в PDF с использованием C# и Aspose.PDF
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Узнайте, как добавить всплывающую подсказку к фрагменту текста в PDF с использованием C# и Aspose.PDF"
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавление всплывающей подсказки к искомому тексту путем добавления невидимой кнопки
 

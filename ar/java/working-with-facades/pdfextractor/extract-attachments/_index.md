@@ -2,7 +2,7 @@
 title: استخراج المرفقات من ملف PDF
 type: docs
 weight: 10
-url: ar/java/extract-attachments/
+url: /ar/java/extract-attachments/
 description: يشرح هذا القسم كيفية استخراج المرفقات من pdf باستخدام فئة PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

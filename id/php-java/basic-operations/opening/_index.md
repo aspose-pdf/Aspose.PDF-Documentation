@@ -3,7 +3,7 @@ title: Buka Dokumen PDF
 linktitle: Buka
 type: docs
 weight: 20
-url: id/php-java/open-pdf-document/
+url: /id/php-java/open-pdf-document/
 description: Pelajari cara membuka file PDF dengan Aspose.PDF untuk PHP melalui Java.
 lastmod: "2024-06-05"
 sitemap:

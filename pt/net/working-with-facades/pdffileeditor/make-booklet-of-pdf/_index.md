@@ -2,7 +2,7 @@
 title: Criar Livreto de PDF
 type: docs
 weight: 80
-url: pt/net/make-booklet-of-pdf/
+url: /pt/net/make-booklet-of-pdf/
 description: Esta seção explica como criar livreto de PDF com Aspose.PDF Facades usando a classe PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

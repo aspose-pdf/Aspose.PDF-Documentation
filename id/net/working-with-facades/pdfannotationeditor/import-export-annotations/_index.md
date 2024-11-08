@@ -2,7 +2,7 @@
 title: Impor dan Ekspor Anotasi ke XFDF 
 type: docs
 weight: 20
-url: id/net/import-export-annotations/
+url: /id/net/import-export-annotations/
 description: Bagian ini menjelaskan cara mengimpor dan mengekspor anotasi dari file PDF ke XFDF dengan Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -14,7 +14,7 @@ XFDF adalah singkatan dari XML Forms Data Format. Ini adalah format file berbasi
 
 ## Mengimpor dan Mengekspor Anotasi ke XFDF
 
-[Aspose.PDF for .NET](/pdf/net/) adalah komponen yang kaya fitur dalam hal mengedit dokumen PDF. As we know XFDF adalah aspek penting dari manipulasi formulir PDF, [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/net/) telah mempertimbangkan ini dengan sangat baik, dan telah menyediakan metode untuk mengimpor dan mengekspor data anotasi ke file XFDF.
+[Aspose.PDF for .NET](/pdf/id/net/) adalah komponen yang kaya fitur dalam hal mengedit dokumen PDF. As we know XFDF adalah aspek penting dari manipulasi formulir PDF, [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/id/net/) telah mempertimbangkan ini dengan sangat baik, dan telah menyediakan metode untuk mengimpor dan mengekspor data anotasi ke file XFDF.
 
 Kelas [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) berisi dua metode untuk bekerja dengan impor dan ekspor anotasi ke file XFDF. [ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) metode menyediakan fungsionalitas untuk mengekspor anotasi dari dokumen PDF ke file XFDF, sementara metode [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) memungkinkan Anda untuk mengimpor anotasi dari file XFDF yang sudah ada. Untuk mengimpor atau mengekspor anotasi, kita perlu menentukan jenis anotasi. Kita dapat menentukan jenis-jenis ini dalam bentuk enumerasi dan kemudian meneruskan enumerasi ini sebagai argumen ke salah satu metode ini. Dengan cara ini, anotasi dari jenis yang ditentukan hanya akan diimpor atau diekspor ke file XFDF.
 

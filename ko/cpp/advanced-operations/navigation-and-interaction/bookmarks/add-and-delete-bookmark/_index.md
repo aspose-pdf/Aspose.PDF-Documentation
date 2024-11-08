@@ -3,7 +3,7 @@ title: 북마크 추가 및 삭제
 linktitle: 북마크 추가 및 삭제
 type: docs
 weight: 10
-url: ko/cpp/add-and-delete-bookmark/
+url: /ko/cpp/add-and-delete-bookmark/
 description: 이 주제는 C++ 라이브러리를 사용하여 PDF 문서에 북마크를 추가하는 방법을 설명합니다. 또한 PDF 문서에서 모든 북마크 또는 특정 북마크를 삭제할 수 있습니다.
 lastmod: "2022-01-31"
 sitemap:

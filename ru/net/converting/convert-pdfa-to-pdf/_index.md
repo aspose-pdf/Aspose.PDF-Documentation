@@ -3,7 +3,7 @@ title: Конвертация PDF/A в формат PDF
 linktitle: Конвертация PDF/A в формат PDF
 type: docs
 weight: 110
-url: ru/net/convert-pdfa-to-pdf/
+url: /ru/net/convert-pdfa-to-pdf/
 lastmod: "2021-11-01"
 description: Эта тема покажет, как Aspose.PDF позволяет конвертировать файл PDF/A в документ PDF с помощью библиотеки .NET.
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Конвертация документа PDF/A в PDF
 

@@ -2,7 +2,7 @@
 title: Активация и деактивация после установки
 type: docs
 weight: 40
-url: ru/sharepoint/activation-and-deactivation-after-installation/
+url: /ru/sharepoint/activation-and-deactivation-after-installation/
 lastmod: "2020-12-16"
 description: После установки PDF SharePoint API, вы можете использовать меню Действия на сайте на корневом веб-сайте коллекции сайтов для его активации и деактивации.
 ---

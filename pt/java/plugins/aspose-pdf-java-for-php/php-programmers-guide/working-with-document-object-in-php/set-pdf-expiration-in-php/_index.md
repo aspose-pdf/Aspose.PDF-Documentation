@@ -2,7 +2,7 @@
 title: Definir Expiração de PDF em PHP
 type: docs
 weight: 80
-url: pt/java/set-pdf-expiration-in-php/
+url: /pt/java/set-pdf-expiration-in-php/
 lastmod: "2021-06-05"
 ---
 

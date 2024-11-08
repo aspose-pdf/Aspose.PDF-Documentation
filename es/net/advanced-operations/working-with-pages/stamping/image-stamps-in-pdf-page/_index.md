@@ -3,7 +3,7 @@ title: Agregar sellos de imagen en PDF usando C#
 linktitle: Sellos de imagen en archivo PDF
 type: docs
 weight: 10
-url: es/net/image-stamps-in-pdf-page/
+url: /es/net/image-stamps-in-pdf-page/
 description: Agrega el sello de imagen en tu documento PDF utilizando la clase ImageStamp con la biblioteca Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Puedes usar la clase ImageStamp para añadir un sello de imagen a un archivo PDF. La clase ImageStamp proporciona las propiedades necesarias para crear un sello basado en imagen, como altura, anchura, opacidad, etc.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Para añadir un sello de imagen:
 

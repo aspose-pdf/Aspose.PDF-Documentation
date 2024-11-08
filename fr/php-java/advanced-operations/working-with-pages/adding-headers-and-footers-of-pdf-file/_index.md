@@ -3,7 +3,7 @@ title: Ajouter un en-tête et un pied de page PDF
 linktitle: Ajouter un en-tête et un pied de page PDF
 type: docs
 weight: 70
-url: fr/php-java/add-headers-and-footers-of-pdf-file/
+url: /fr/php-java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF pour PHP via Java vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp.
 lastmod: "2024-06-05"
 sitemap:

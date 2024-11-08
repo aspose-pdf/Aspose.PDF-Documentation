@@ -3,7 +3,7 @@ title: Fitur Utama dari Aspose.PDF
 linktitle: Fitur Utama
 type: docs
 weight: 20
-url: id/androidjava/key-features/
+url: /id/androidjava/key-features/
 description: Aspose.PDF untuk Android melalui Java menunjukkan fitur utama dalam bekerja dengan dokumen PDF.
 lastmod: "2021-06-05"
 sitemap:

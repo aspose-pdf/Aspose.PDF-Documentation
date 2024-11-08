@@ -2,7 +2,7 @@
 title: تحويل ملف SVG إلى تنسيق PDF في روبي
 type: docs
 weight: 60
-url: ar/java/convert-svg-file-to-pdf-format-in-ruby/
+url: /ar/java/convert-svg-file-to-pdf-format-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: APIの制限事項
 type: docs
 weight: 70
-url: ja/net/api-limitations/
+url: /ja/net/api-limitations/
 ---
 
 ## **Xsl Fo から Pdf へ**

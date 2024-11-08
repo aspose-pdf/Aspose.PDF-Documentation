@@ -2,7 +2,7 @@
 title: Optimizer 
 type: docs
 weight: 80
-url: id/net/plugins/optimizer/
+url: /id/net/plugins/optimizer/
 description: Cara Mengoptimalkan dan Memanipulasi File PDF dengan Aspose.PDF Optimizer
 lastmod: "2024-01-24"
 ---

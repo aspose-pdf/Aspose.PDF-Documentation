@@ -3,7 +3,7 @@ title: Поворот страниц PDF с использованием JavaScr
 linktitle: Поворот страниц PDF
 type: docs
 weight: 50
-url: ru/javascript-cpp/rotate-pages/
+url: /ru/javascript-cpp/rotate-pages/
 description: Эта тема описывает, как изменить ориентацию страниц в существующем PDF-файле программно с помощью JavaScript через C++
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Salvar Documento PDF usando C++
 linktitle: Salvar
 type: docs
 weight: 30
-url: pt/cpp/save-pdf-document/
+url: /pt/cpp/save-pdf-document/
 description: Aprenda como salvar arquivo PDF com a biblioteca Aspose.PDF para C++.
 lastmod: "2021-11-01"
 sitemap:

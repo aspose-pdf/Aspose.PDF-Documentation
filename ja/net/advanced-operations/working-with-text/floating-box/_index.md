@@ -3,7 +3,7 @@ title: テキスト生成のためのFloatingBoxの使用
 linktitle: FloatingBoxの使用
 type: docs
 weight: 30
-url: ja/net/floating-box/
+url: /ja/net/floating-box/
 description: このページでは、フローティングボックス内でテキストをフォーマットする方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-この機能は[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+この機能は[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## FloatingBoxツールの基本
 

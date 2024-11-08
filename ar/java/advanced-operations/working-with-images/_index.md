@@ -3,7 +3,7 @@ title: Working with Images in PDF
 linktitle: Working with Images
 type: docs
 weight: 40
-url: ar/java/working-with-images/
+url: /ar/java/working-with-images/
 description: يصف هذا القسم ميزات العمل مع الصور في ملف PDF باستخدام مكتبة Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -23,14 +23,14 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إضافة صورة إلى ملف PDF موجود](/pdf/java/add-image-to-existing-pdf-file/) - إضافة الصور والمراجع لصورة واحدة في مستند PDF، بعد ذلك التحكم في الجودة.- [حذف الصور من ملف PDF](/pdf/java/delete-images-from-pdf-file/) - تحقق من مقتطف الشيفرة لحذف الصور من ملف PDF.  
-- [استخراج الصور من ملف PDF](/pdf/java/extract-images-from-pdf-file/) - استخدم مجموعة الصور لاستخراج الصور من ملف PDF.  
-- [الحصول على دقة وأبعاد الصور المضمنة](/pdf/java/get-resolution-and-dimensions-of-embedded-images/) - استخدم فئات المشغل في مساحة الأسماء Aspose.PDF التي توفر القدرة على الحصول على معلومات الدقة والأبعاد.  
-- [العمل مع موضع الصورة](/pdf/java/working-with-image-placement/) - من الممكن الحصول على دقة الصورة وموضعها في مستند PDF.  
-- [البحث والحصول على الصور من مستند PDF](/pdf/java/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة فردية والبحث بين الصور على جميع الصفحات باستخدام Java.  
-- [استبدال الصورة في ملف PDF موجود](/pdf/java/replace-image-in-existing-pdf-file/) - تحقق من مقتطف الشيفرة الخاص بنا، فهو يوضح لك كيفية استبدال صورة في ملف PDF.  
+- [إضافة صورة إلى ملف PDF موجود](/pdf/ar/java/add-image-to-existing-pdf-file/) - إضافة الصور والمراجع لصورة واحدة في مستند PDF، بعد ذلك التحكم في الجودة.- [حذف الصور من ملف PDF](/pdf/ar/java/delete-images-from-pdf-file/) - تحقق من مقتطف الشيفرة لحذف الصور من ملف PDF.  
+- [استخراج الصور من ملف PDF](/pdf/ar/java/extract-images-from-pdf-file/) - استخدم مجموعة الصور لاستخراج الصور من ملف PDF.  
+- [الحصول على دقة وأبعاد الصور المضمنة](/pdf/ar/java/get-resolution-and-dimensions-of-embedded-images/) - استخدم فئات المشغل في مساحة الأسماء Aspose.PDF التي توفر القدرة على الحصول على معلومات الدقة والأبعاد.  
+- [العمل مع موضع الصورة](/pdf/ar/java/working-with-image-placement/) - من الممكن الحصول على دقة الصورة وموضعها في مستند PDF.  
+- [البحث والحصول على الصور من مستند PDF](/pdf/ar/java/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة فردية والبحث بين الصور على جميع الصفحات باستخدام Java.  
+- [استبدال الصورة في ملف PDF موجود](/pdf/ar/java/replace-image-in-existing-pdf-file/) - تحقق من مقتطف الشيفرة الخاص بنا، فهو يوضح لك كيفية استبدال صورة في ملف PDF.  
 
-- [تعيين حجم الصورة](/pdf/java/set-image-size/) - تتيح لك مكتبة Java تعيين حجم الصورة.
-- [تعيين اسم الخط الافتراضي](/pdf/java/set-default-font-name/) - استخدام خاصية DefaultFontName لتعيين اسم الخط الافتراضي.
-- [توليد صور مصغرة من مستندات PDF](/pdf/java/generate-thumbnail-images-from-pdf-documents/) - المقالة التالية توضح كيفية توليد صور مصغرة من مستندات PDF باستخدام أولاً Acrobat SDK ثم Aspose.PDF.
-- دعم الصور بصيغة DICOM - يدعم Aspose.PDF for Java المعيار الرسومي الطبي الخاص بالصور. يتيح لك Aspose.PDF for Java تحويل الصور بصيغة DICOM وSVG. يرجى التحقق من قسم [تحويل DICOM إلى PDF](/pdf/java/convert-dicom-to-pdf/).
+- [تعيين حجم الصورة](/pdf/ar/java/set-image-size/) - تتيح لك مكتبة Java تعيين حجم الصورة.
+- [تعيين اسم الخط الافتراضي](/pdf/ar/java/set-default-font-name/) - استخدام خاصية DefaultFontName لتعيين اسم الخط الافتراضي.
+- [توليد صور مصغرة من مستندات PDF](/pdf/ar/java/generate-thumbnail-images-from-pdf-documents/) - المقالة التالية توضح كيفية توليد صور مصغرة من مستندات PDF باستخدام أولاً Acrobat SDK ثم Aspose.PDF.
+- دعم الصور بصيغة DICOM - يدعم Aspose.PDF for Java المعيار الرسومي الطبي الخاص بالصور. يتيح لك Aspose.PDF for Java تحويل الصور بصيغة DICOM وSVG. يرجى التحقق من قسم [تحويل DICOM إلى PDF](/pdf/ar/java/convert-dicom-to-pdf/).

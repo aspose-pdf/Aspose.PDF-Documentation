@@ -3,7 +3,7 @@ title: Преобразование PDF в EPUB, LaTeX, Text, XPS на Python
 linktitle: Преобразование PDF в другие форматы
 type: docs
 weight: 90
-url: ru/python-java/convert-pdf-to-other-files/
+url: /ru/python-java/convert-pdf-to-other-files/
 lastmod: "2023-04-06"
 keywords: преобразование, PDF, EPUB, LaTeX, Text, XPS, Python
 description: Эта тема показывает, как преобразовать PDF файл в другие форматы файлов, такие как EPUB, LaTeX, Text, XPS и т.д. с использованием Python.

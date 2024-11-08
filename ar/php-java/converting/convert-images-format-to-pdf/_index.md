@@ -3,7 +3,7 @@ title: تحويل تنسيقات الصور المختلفة إلى PDF
 linktitle: تحويل الصور إلى PDF
 type: docs
 weight: 60
-url: ar/php-java/convert-images-format-to-pdf/
+url: /ar/php-java/convert-images-format-to-pdf/
 lastmod: "2024-05-20"
 description: يوضح لك هذا الموضوع كيفية استخدام مكتبة Aspose.PDF لـ PHP لتحويل تنسيقات الصور المختلفة إلى PDF.
 sitemap:

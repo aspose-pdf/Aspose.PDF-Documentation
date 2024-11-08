@@ -3,7 +3,7 @@ title: Ajouter un Numéro de Page au PDF
 linktitle: Ajouter un Numéro de Page
 type: docs
 weight: 100
-url: fr/java/add-page-number/
+url: /fr/java/add-page-number/
 description: Aspose.PDF pour Java vous permet d'ajouter un tampon de numéro de page à votre fichier PDF en utilisant la classe PageNumberStamp.
 lastmod: "2021-06-05"
 sitemap:

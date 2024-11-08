@@ -2,7 +2,7 @@
 title: Экспорт списка задач в PDF с штрихкодом с использованием PDF Template Engine
 type: docs
 weight: 40
-url: ru/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
+url: /ru/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
 lastmod: "2020-12-16"
 description: PDF SharePoint API может экспортировать список задач в PDF с штрихкодом с использованием PDF Template Engine.
 ---

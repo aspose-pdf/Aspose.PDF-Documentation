@@ -3,7 +3,7 @@ title: Aspose.PDF para Node.js Soporte
 linktitle: Soporte Técnico
 type: docs
 weight: 60
-url: es/nodejs-cpp/technical-support/
+url: /es/nodejs-cpp/technical-support/
 description: Esta página ofrece recomendaciones para resolver rápida y eficientemente sus tareas utilizando Aspose.PDF para Node.js.
 lastmod: "2023-11-16"
 sitemap:

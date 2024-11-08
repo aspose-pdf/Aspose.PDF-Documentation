@@ -2,7 +2,7 @@
 title: 使用图像
 type: docs
 weight: 30
-url: zh/java/working-with-image/
+url: /zh/java/working-with-image/
 description: 本节介绍如何使用Aspose.PDF Facades替换图像 - 这是一个用于PDF常见操作的工具集。
 lastmod: "2021-06-25"
 sitemap:

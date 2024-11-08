@@ -3,7 +3,7 @@ title: Mengatur Properti Elemen Struktur
 linktitle: Mengatur Properti Elemen Struktur
 type: docs
 weight: 30
-url: id/net/setting-structure-elements-properties/
+url: /id/net/setting-structure-elements-properties/
 description: Anda dapat mengatur berbagai properti elemen struktur dalam dokumen PDF dengan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: إلغاء تثبيت ترخيص Aspose.Pdf لـ SharePoint
 type: docs
 weight: 30
-url: ar/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
+url: /ar/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
 lastmod: "2020-12-16"
 description: يرجى اتباع الخطوات المذكورة في هذه المقالة لإلغاء تثبيت ترخيص PDF SharePoint API.
 ---

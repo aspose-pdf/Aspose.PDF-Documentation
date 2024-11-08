@@ -3,7 +3,7 @@ title: Работа с AcroForms в PDF с использованием Aspose.P
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ru/cpp/acroforms/
+url: /ru/cpp/acroforms/
 description: С Aspose.PDF для C++ вы можете создать форму с нуля, заполнить поле формы в PDF-документе, извлечь данные из формы, добавить или удалить поля в существующей форме.
 lastmod: "2021-12-01"
 sitemap:
@@ -20,12 +20,12 @@ sitemap:
 
 Для более детального изучения возможностей работы с формами изучите следующие статьи в разделе:
 
-- [Создание AcroForm](/pdf/cpp/create-form/) - создание формы с нуля, добавление RadioButtonField, TextBoxField, Caption Field с использованием C++.
+- [Создание AcroForm](/pdf/ru/cpp/create-form/) - создание формы с нуля, добавление RadioButtonField, TextBoxField, Caption Field с использованием C++.
 
-- [Заполнение AcroForm](/pdf/cpp/fill-form/) - для заполнения поля формы получите поле из коллекции Form объекта Document.
+- [Заполнение AcroForm](/pdf/ru/cpp/fill-form/) - для заполнения поля формы получите поле из коллекции Form объекта Document.
 
-- [Извлечение данных AcroForm](/pdf/cpp/extract-form/) - получение значений из всех и отдельных полей и т. д.
+- [Извлечение данных AcroForm](/pdf/ru/cpp/extract-form/) - получение значений из всех и отдельных полей и т. д.
 
-- [Изменение AcroForm](/pdf/cpp/modifing-form/) - получение/установка FieldLimit, удаление полей в существующей форме, установка шрифта поля формы, отличного от 14 основных шрифтов PDF, с помощью C++.
+- [Изменение AcroForm](/pdf/ru/cpp/modifing-form/) - получение/установка FieldLimit, удаление полей в существующей форме, установка шрифта поля формы, отличного от 14 основных шрифтов PDF, с помощью C++.
 
-- [Публикация данных AcroForm](/pdf/cpp/posting-acroform-data/) - импорт и экспорт данных формы в XML файл.
+- [Публикация данных AcroForm](/pdf/ru/cpp/posting-acroform-data/) - импорт и экспорт данных формы в XML файл.

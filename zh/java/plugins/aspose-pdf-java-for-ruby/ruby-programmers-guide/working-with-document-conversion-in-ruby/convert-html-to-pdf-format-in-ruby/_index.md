@@ -2,7 +2,7 @@
 title: 将HTML转换为PDF格式在Ruby中
 type: docs
 weight: 10
-url: zh/java/convert-html-to-pdf-format-in-ruby/
+url: /zh/java/convert-html-to-pdf-format-in-ruby/
 lastmod: "2021-06-05"
 ---
 

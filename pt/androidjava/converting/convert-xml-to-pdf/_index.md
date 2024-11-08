@@ -3,7 +3,7 @@ title: Converter XML para PDF
 linktitle: Converter XML para PDF
 type: docs
 weight: 320
-url: pt/androidjava/convert-xml-to-pdf/
+url: /pt/androidjava/convert-xml-to-pdf/
 lastmod: "2021-06-05"
 description: A biblioteca Aspose.PDF apresenta várias maneiras de converter XML para PDF. Você pode usar o XslFoLoadOptions ou fazer isso com uma estrutura de arquivo incorreta.
 sitemap:

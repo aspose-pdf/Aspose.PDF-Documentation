@@ -3,7 +3,7 @@ title: PDF Sticky Annotations menggunakan C++
 linktitle: Sticky Annotation
 type: docs
 weight: 50
-url: id/cpp/sticky-annotations/
+url: /id/cpp/sticky-annotations/
 description: Topik ini tentang Sticky annotations, sebagai contoh kami menunjukkan Watermark Annotation dalam teks. Ini digunakan untuk merepresentasikan grafik pada halaman. Periksa potongan kode untuk menyelesaikan tugas ini.
 lastmod: "2021-11-24"
 sitemap:

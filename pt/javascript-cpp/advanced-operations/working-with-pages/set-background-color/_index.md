@@ -3,7 +3,7 @@ title: Definir a cor de fundo para PDF com JavaScript via C++
 linktitle: Definir cor de fundo
 type: docs
 weight: 80
-url: pt/javascript-cpp/set-background-color/
+url: /pt/javascript-cpp/set-background-color/
 description: Defina a cor de fundo para o seu arquivo PDF com JavaScript via C++.
 lastmod: "2023-02-17"
 sitemap:

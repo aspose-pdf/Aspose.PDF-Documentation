@@ -2,7 +2,7 @@
 title: Definir Preferência do Visualizador de PDF
 type: docs
 weight: 60
-url: pt/net/set-viewer-preference-of-an-existing-pdf-file/
+url: /pt/net/set-viewer-preference-of-an-existing-pdf-file/
 description: Esta seção mostra como definir a preferência do visualizador de um arquivo PDF existente usando a Classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

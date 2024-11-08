@@ -3,7 +3,7 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: ar/javascript-cpp/get-started/
+url: /ar/javascript-cpp/get-started/
 description: يصف هذا القسم المبادئ الأساسية لعمل Aspose.PDF for JavaScript عبر C++. يدعم Aspose.PDF for JavaScript عبر C++ مجموعة واسعة من الوظائف.
 lastmod: "2022-12-14"   
 sitemap:
@@ -27,30 +27,30 @@ sitemap:
 
 ## مجموعة متنوعة من الوظائف
 
-- [استخراج نص من PDF](/pdf/javascript-cpp/extract-text/)
-- [تحسين مستند PDF](/pdf/javascript-cpp/optimize-pdf/)
-- [إضافة ختم إلى ملف PDF](/pdf/javascript-cpp/add-stamp-to-pdf/)
-- [إضافة صورة إلى ملف PDF](/pdf/javascript-cpp/add-image-to-pdf/)
-- [تقسيم PDF إلى ملفين](/pdf/javascript-cpp/split-pdf/)
-- [دمج ملفين إلى PDF](/pdf/javascript-cpp/merge-pdf/)
-- [تشفير مستندات PDF](/pdf/javascript-cpp/encrypt-pdf/)
-- [فك تشفير مستندات PDF](/pdf/javascript-cpp/decrypt-pdf/)
+- [استخراج نص من PDF](/pdf/ar/javascript-cpp/extract-text/)
+- [تحسين مستند PDF](/pdf/ar/javascript-cpp/optimize-pdf/)
+- [إضافة ختم إلى ملف PDF](/pdf/ar/javascript-cpp/add-stamp-to-pdf/)
+- [إضافة صورة إلى ملف PDF](/pdf/ar/javascript-cpp/add-image-to-pdf/)
+- [تقسيم PDF إلى ملفين](/pdf/ar/javascript-cpp/split-pdf/)
+- [دمج ملفين إلى PDF](/pdf/ar/javascript-cpp/merge-pdf/)
+- [تشفير مستندات PDF](/pdf/ar/javascript-cpp/encrypt-pdf/)
+- [فك تشفير مستندات PDF](/pdf/ar/javascript-cpp/decrypt-pdf/)
 
 ## ميزات التحويل
 
-- [تحويل PDF إلى JPEG](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى PNG](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى Tiff](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى BMP](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى SVG](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى SVG(Zip)](/pdf/javascript-cpp/conversion/)
+- [تحويل PDF إلى JPEG](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى PNG](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى Tiff](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى BMP](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى SVG](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى SVG(Zip)](/pdf/ar/javascript-cpp/conversion/)
 
-- [تحويل PDF إلى TeX](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى Xps](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى CSV](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى TXT](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى DocX](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى XlsX](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى تدرج الرمادي](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF/A إلى تنسيق PDF](/pdf/javascript-cpp/conversion/)
-- [تحويل PDF إلى تنسيق PDF/A](/pdf/javascript-cpp/conversion/)
+- [تحويل PDF إلى TeX](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى Xps](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى CSV](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى TXT](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى DocX](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى XlsX](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى تدرج الرمادي](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF/A إلى تنسيق PDF](/pdf/ar/javascript-cpp/conversion/)
+- [تحويل PDF إلى تنسيق PDF/A](/pdf/ar/javascript-cpp/conversion/)

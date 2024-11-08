@@ -3,7 +3,7 @@ title: Aspose PDF License
 linktitle: Licensing and limitations
 type: docs
 weight: 90
-url: ko/cpp/licensing/
+url: /ko/cpp/licensing/
 description: Aspose. PDF for C++는 고객에게 Classic 라이선스와 Metered 라이선스를 제공하며, 제품을 더 잘 탐색하기 위해 제한된 라이선스를 사용할 수 있습니다.
 lastmod: "2021-11-08"
 sitemap:

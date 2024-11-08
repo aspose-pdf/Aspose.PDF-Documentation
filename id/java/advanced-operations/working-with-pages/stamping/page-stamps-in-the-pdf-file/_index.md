@@ -3,7 +3,7 @@ title: Tambahkan Stempel Halaman PDF ke PDF
 linktitle: Stempel halaman di File PDF
 type: docs
 weight: 30
-url: id/java/page-stamps-in-the-pdf-file/
+url: /id/java/page-stamps-in-the-pdf-file/
 description: Tambahkan stempel halaman ke file PDF menggunakan kelas PdfPageStamp dengan Java.
 lastmod: "2021-09-10"
 sitemap:

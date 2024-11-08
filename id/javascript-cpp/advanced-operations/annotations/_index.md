@@ -3,7 +3,7 @@ title: Anotasi PDF menggunakan JavaScript
 linktitle: Anotasi PDF
 type: docs
 weight: 90
-url: id/javascript-cpp/annotations/
+url: /id/javascript-cpp/annotations/
 description: Bagian ini menunjukkan cara menggunakan semua jenis anotasi ke file PDF Anda dengan Aspose.PDF untuk JavaScript via C++.
 lastmod: "2023-09-17"
 sitemap:
@@ -19,4 +19,4 @@ Anotasi PDF seperti menyorot, menggarisbawahi, atau menambahkan komentar memungk
 
 Anda dapat melakukan hal-hal berikut:
 
-- [Hapus Anotasi](/pdf/javascript-cpp/delete-annotation/) - bagian ini menjelaskan cara menghapus anotasi dari PDF Anda dengan JavaScript.
+- [Hapus Anotasi](/pdf/id/javascript-cpp/delete-annotation/) - bagian ini menjelaskan cara menghapus anotasi dari PDF Anda dengan JavaScript.

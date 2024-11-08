@@ -3,7 +3,7 @@ title: تحويل PDF إلى تنسيقات الصور
 linktitle: تحويل PDF إلى صور
 type: docs
 weight: 70
-url: ar/java/convert-pdf-to-images-format/
+url: /ar/java/convert-pdf-to-images-format/
 lastmod: "2021-11-19"
 description: يوضح هذا الموضوع كيف يسمح Aspose.PDF بتحويل PDF إلى تنسيقات صور متنوعة. تحويل صفحات PDF إلى صور PNG وJPEG وBMP ببضع سطور من التعليمات البرمجية.
 sitemap:

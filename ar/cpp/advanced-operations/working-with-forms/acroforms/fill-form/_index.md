@@ -3,7 +3,7 @@ title: ملء AcroForm
 linktitle: ملء AcroForm
 type: docs
 weight: 20
-url: ar/cpp/fill-form/
+url: /ar/cpp/fill-form/
 description: يشرح هذا القسم كيفية ملء حقل نموذج في مستند PDF باستخدام Aspose.PDF لـ C++.
 lastmod: "2021-12-01"
 sitemap:

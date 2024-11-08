@@ -3,7 +3,7 @@ title: Aspose.PDF for Python via C++ 설치 방법
 linktitle: 설치
 type: docs
 weight: 40
-url: ko/python-cpp/installation/
+url: /ko/python-cpp/installation/
 description: 이 섹션은 Aspose.PDF for Python에 대한 제품 설명 및 설치 지침을 보여줍니다.
 lastmod: "2024-04-21"
 sitemap:

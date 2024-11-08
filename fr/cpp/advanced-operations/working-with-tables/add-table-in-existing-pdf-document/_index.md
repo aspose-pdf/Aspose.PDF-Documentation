@@ -3,7 +3,7 @@ title: Créer ou Ajouter un Tableau dans un PDF
 linktitle: Créer ou Ajouter un Tableau
 type: docs
 weight: 10
-url: fr/cpp/add-table-in-existing-pdf-document/
+url: /fr/cpp/add-table-in-existing-pdf-document/
 description: Aspose.PDF pour C++ est une bibliothèque utilisée pour créer, lire et éditer des tableaux PDF. En utilisant cette bibliothèque, vous pouvez paginer un tableau sur la page PDF en utilisant C++.
 lastmod: "2021-11-11"
 sitemap:

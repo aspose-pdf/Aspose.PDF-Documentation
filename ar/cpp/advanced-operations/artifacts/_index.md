@@ -3,7 +3,7 @@ title: العمل مع القطع الأثرية في C++
 linktitle: العمل مع القطع الأثرية
 type: docs
 weight: 110
-url: ar/cpp/artifacts/
+url: /ar/cpp/artifacts/
 description: تصف هذه الصفحة كيفية العمل مع فئة Artifact باستخدام Aspose.PDF لـ C++. تعرض مقتطفات التعليمات البرمجية كيفية إضافة صورة خلفية إلى صفحات PDF وكيفية الحصول على كل علامة مائية في الصفحة الأولى من ملف PDF.
 lastmod: "2021-11-22"
 sitemap:

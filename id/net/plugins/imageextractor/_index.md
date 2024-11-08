@@ -2,7 +2,7 @@
 title: Image Extractor
 type: docs
 weight: 80
-url: id/net/plugins/imageextractor/
+url: /id/net/plugins/imageextractor/
 description: Ekstraksi Gambar dari PDF dengan Mudah menggunakan Plugin ImageExtractor
 lastmod: "2024-01-24"
 draft: false

@@ -3,7 +3,7 @@ title: Добавление заголовка и нижнего колонти�
 linktitle: Добавление заголовка и нижнего колонтитула в PDF
 type: docs
 weight: 70
-url: ru/cpp/add-headers-and-footers-of-pdf-file/
+url: /ru/cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF для C++ позволяет добавлять заголовки и нижние колонтитулы в ваш PDF-файл, используя класс TextStamp.
 lastmod: "2021-12-08"
 sitemap:

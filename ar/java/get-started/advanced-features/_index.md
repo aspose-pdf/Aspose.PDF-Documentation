@@ -3,7 +3,7 @@ title: الميزات المتقدمة
 linktitle: الميزات المتقدمة
 type: docs
 weight: 120
-url: ar/java/advanced-features/
+url: /ar/java/advanced-features/
 description: يوضح هذا القسم كيفية استخدام علامات LaTeX في مستند PDF مع Aspose.PDF لـ Java.
 lastmod: "2022-01-11"
 sitemap:

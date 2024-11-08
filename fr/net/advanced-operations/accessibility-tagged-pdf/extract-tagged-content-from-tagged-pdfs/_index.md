@@ -3,7 +3,7 @@ title: Extraire le contenu tagué à partir d'un PDF
 linktitle: Extraire le contenu tagué
 type: docs
 weight: 20
-url: fr/net/extract-tagged-content-from-tagged-pdfs/
+url: /fr/net/extract-tagged-content-from-tagged-pdfs/
 description: Cet article explique comment extraire le contenu tagué d'un document PDF en utilisant Aspose.PDF pour .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Dans cet article, vous apprendrez comment extraire le contenu tagué d'un document PDF en utilisant C#.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Obtenir le contenu PDF Tagué
 

@@ -2,7 +2,7 @@
 title: PDF에서 제목 작업하기
 type: docs
 weight: 40
-url: ko/python-net/working-with-headings/
+url: /ko/python-net/working-with-headings/
 description: Python을 사용하여 PDF 문서의 제목에 번호 매기기를 생성합니다. Aspose.PDF for Python via .NET은 다양한 종류의 번호 매기기 스타일을 제공합니다.
 lastmod: "2023-04-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 제목은 문서의 중요한 부분입니다. 작가들은 항상 제목을 독자들에게 더 두드러지고 의미 있게 만들려고 합니다. 문서에 여러 개의 제목이 있는 경우, 작가는 이러한 제목을 구성하기 위한 여러 옵션을 가지고 있습니다. 제목을 구성하는 가장 일반적인 접근 방식 중 하나는 제목을 번호 스타일로 작성하는 것입니다.
 
-[Aspose.PDF for Python via .NET](/pdf/python-net/)은 많은 사전 정의된 번호 스타일을 제공합니다. 이러한 사전 정의된 번호 스타일은 열거형인 [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/)에 저장되어 있습니다. NumberingStyle 열거형의 사전 정의된 값과 그 설명은 아래에 나와 있습니다:
+[Aspose.PDF for Python via .NET](/pdf/ko/python-net/)은 많은 사전 정의된 번호 스타일을 제공합니다. 이러한 사전 정의된 번호 스타일은 열거형인 [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/)에 저장되어 있습니다. NumberingStyle 열거형의 사전 정의된 값과 그 설명은 아래에 나와 있습니다:
 
 |**제목 유형**|**설명**|
 | :- | :- |

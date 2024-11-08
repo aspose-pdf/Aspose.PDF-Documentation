@@ -3,7 +3,7 @@ title: Tambahkan Header dan Footer PDF
 linktitle: Tambahkan Header dan Footer PDF
 type: docs
 weight: 70
-url: id/php-java/add-headers-and-footers-of-pdf-file/
+url: /id/php-java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF untuk PHP via Java memungkinkan Anda menambahkan header dan footer ke file PDF Anda menggunakan kelas TextStamp.
 lastmod: "2024-06-05"
 sitemap:

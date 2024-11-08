@@ -3,7 +3,7 @@ title: استخدام FloatingBox لتوليد النص
 linktitle: استخدام FloatingBox
 type: docs
 weight: 30
-url: ar/net/floating-box/
+url: /ar/net/floating-box/
 description: تشرح هذه الصفحة كيفية تنسيق النص داخل صندوق عائم.
 lastmod: "2022-02-17"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-هذه الميزة تعمل أيضًا في مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+هذه الميزة تعمل أيضًا في مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## أساسيات استخدام أداة FloatingBox
 

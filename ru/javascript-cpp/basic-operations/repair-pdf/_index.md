@@ -3,7 +3,7 @@ title: Восстановление PDF с помощью JavaScript через 
 linktitle: Восстановление PDF
 type: docs
 weight: 10
-url: ru/javascript-cpp/repair-pdf/
+url: /ru/javascript-cpp/repair-pdf/
 description: Эта тема описывает, как восстановить PDF через JavaScript через C++
 lastmod: "2023-02-17"
 sitemap:

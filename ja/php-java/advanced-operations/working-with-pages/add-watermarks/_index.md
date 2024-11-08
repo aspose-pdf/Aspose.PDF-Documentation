@@ -3,7 +3,7 @@ title: PDFに透かしを追加する
 linktitle: 透かしを追加
 type: docs
 weight: 90
-url: ja/php-java/add-watermarks/
+url: /ja/php-java/add-watermarks/
 description: この記事では、PHPを使用してPDF内のアーティファクトを操作し、透かしを取得する機能について説明します。
 lastmod: "2024-06-05"
 sitemap:

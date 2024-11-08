@@ -3,7 +3,7 @@ title: PDFドキュメントを開く
 linktitle: 開く
 type: docs
 weight: 20
-url: ja/java/open-pdf-document/
+url: /ja/java/open-pdf-document/
 description: Aspose.PDF for Javaを使用してPDFファイルを開く方法を学びます。
 lastmod: "2021-06-05"
 sitemap:

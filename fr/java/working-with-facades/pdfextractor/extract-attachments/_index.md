@@ -2,7 +2,7 @@
 title: Extraire les Pièces Jointes d'un Fichier PDF
 type: docs
 weight: 10
-url: fr/java/extract-attachments/
+url: /fr/java/extract-attachments/
 description: Cette section explique comment extraire les pièces jointes d'un PDF avec la classe PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

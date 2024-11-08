@@ -2,7 +2,7 @@ title: Tambahkan Anotasi Gambar menggunakan C++
 linktitle: Anotasi Gambar
 type: docs
 weight: 30
-url: id/cpp/figures-annotation/
+url: /id/cpp/figures-annotation/
 description: Artikel ini menjelaskan cara menambahkan, mendapatkan, dan menghapus anotasi gambar dari dokumen PDF Anda dengan Aspose.PDF untuk C++
 lastmod: "2021-11-24"
 sitemap:

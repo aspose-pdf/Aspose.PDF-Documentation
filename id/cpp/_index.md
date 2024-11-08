@@ -4,7 +4,7 @@ linktitle: Aspose.PDF untuk C++
 second_title: Aspose.PDF untuk C++
 type: docs
 weight: 30
-url: id/cpp/
+url: /id/cpp/
 is_root: true
 description: Pelajari cara menggunakan Aspose.PDF C++ untuk membuat aplikasi pemrosesan dokumen PDF di platform mana pun menggunakan C#, VB. Jelajahi tutorial, contoh kode, dan lainnya.
 keywords: cpp PDF API,pdf,konversi PDF ke Word,gabungan PDF,pisahkan PDF,konversi PDF ke Excel,PDF ke PPT,PNG ke PDF,PDF ke JPEG
@@ -23,21 +23,21 @@ Aspose.PDF untuk C++ adalah pustaka C++ asli yang memungkinkan pengembang untuk 
 
 <h2>Bab</h2>
 
-- [Apa yang baru](/pdf/cpp/whatsnew/)
-- [Ikhtisar](/pdf/cpp/overview/)
-- [Memulai](/pdf/cpp/get-started/)
-- [Operasi dasar](/pdf/cpp/basic-operations/)
-- [Mengonversi dokumen](/pdf/cpp/converting/)
-- [Memparsing dokumen PDF](/pdf/cpp/parsing/)
-- [Operasi lanjutan](/pdf/cpp/advanced-operations/)
+- [Apa yang baru](/pdf/id/cpp/whatsnew/)
+- [Ikhtisar](/pdf/id/cpp/overview/)
+- [Memulai](/pdf/id/cpp/get-started/)
+- [Operasi dasar](/pdf/id/cpp/basic-operations/)
+- [Mengonversi dokumen](/pdf/id/cpp/converting/)
+- [Memparsing dokumen PDF](/pdf/id/cpp/parsing/)
+- [Operasi lanjutan](/pdf/id/cpp/advanced-operations/)
 - [Catatan Rilis](https://releases.aspose.com/pdf/cpp/release-notes/)
 
 <h3>Sumber Daya Aspose.PDF untuk C++</h3>
 
 Tautan berikut menawarkan beberapa sumber daya berguna yang mungkin Anda perlukan untuk menyelesaikan tugas Anda.
 
-- [Dokumentasi Daring Aspose.PDF untuk C++](/pdf/cpp/)
-- [Fitur Aspose.PDF untuk C++](/pdf/cpp/overview/)
+- [Dokumentasi Daring Aspose.PDF untuk C++](/pdf/id/cpp/)
+- [Fitur Aspose.PDF untuk C++](/pdf/id/cpp/overview/)
 - [Catatan Rilis Aspose.PDF untuk C++](https://releases.aspose.com/pdf/cpp/release-notes/)
 - [Halaman Produk Aspose.PDF untuk C++](https://products.aspose.com/pdf/cpp/)
 

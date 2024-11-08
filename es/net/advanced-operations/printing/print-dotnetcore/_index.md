@@ -3,7 +3,7 @@ title: Cómo imprimir un archivo PDF en .NET Core
 linktitle: Imprimir PDF en .NET Core
 type: docs
 weight: 40
-url: es/net/print-dotnetcore/
+url: /es/net/print-dotnetcore/
 keywords: "print pdf .net core"
 description: Esta página explica cómo convertir un documento PDF en XPS en .NET Core y agregarlo como un trabajo a la cola de la impresora local.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "Esta página explica cómo convertir un documento PDF en XPS y agregarlo como un trabajo a la cola de la impresora local."
 }
 </script>
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## **Imprimir documento Pdf en .NET Core**
 

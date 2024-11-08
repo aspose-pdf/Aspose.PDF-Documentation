@@ -3,7 +3,7 @@ title: PDF 多媒体注释使用 C++
 linktitle: 多媒体注释
 type: docs
 weight: 40
-url: zh/cpp/multimedia-annotation/
+url: /zh/cpp/multimedia-annotation/
 description: Aspose.PDF for C++ 允许您添加、获取和删除 PDF 文档中的多媒体注释。
 lastmod: "2021-11-24"
 sitemap:

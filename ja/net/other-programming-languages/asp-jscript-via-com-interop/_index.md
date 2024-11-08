@@ -2,11 +2,11 @@
 title: ASP - JScript via COM Interop
 type: docs
 weight: 40
-url: ja/net/asp-jscript-via-com-interop/
+url: /ja/net/asp-jscript-via-com-interop/
 ---
 {{% alert color="primary" %}}
 
-これは、[Aspose.PDF for .NET](/pdf/net/) と JScript を COM Interop 経由で使用して、PDFファイルに単純なテキスト文字列を追加する方法を示すシンプルなASPアプリケーションです。
+これは、[Aspose.PDF for .NET](/pdf/ja/net/) と JScript を COM Interop 経由で使用して、PDFファイルに単純なテキスト文字列を追加する方法を示すシンプルなASPアプリケーションです。
 
 {{% /alert %}}
 

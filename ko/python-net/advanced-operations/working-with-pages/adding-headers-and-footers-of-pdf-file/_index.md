@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 PDF에 헤더 및 푸터 추가
 linktitle: PDF에 헤더 및 푸터 추가
 type: docs
 weight: 50
-url: ko/python-net/add-headers-and-footers-of-pdf-file/
+url: /ko/python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Python via .NET을 사용하면 TextStamp 클래스를 사용하여 PDF 파일에 헤더 및 푸터를 추가할 수 있습니다.
 lastmod: "2023-04-17"
 sitemap:

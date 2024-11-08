@@ -3,7 +3,7 @@ title: تشفير PDF باستخدام JavaScript
 linktitle: تشفير ملف PDF
 type: docs
 weight: 50
-url: ar/javascript-cpp/encrypt-pdf/
+url: /ar/javascript-cpp/encrypt-pdf/
 description: تشفير ملف PDF باستخدام Aspose.PDF لـ JavaScript عبر C++.
 lastmod: "2022-12-15"
 sitemap:

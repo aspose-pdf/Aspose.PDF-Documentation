@@ -3,7 +3,7 @@ title: PDF 파일의 비밀번호 변경
 linktitle: 비밀번호 변경
 type: docs
 weight: 50
-url: ko/javascript-cpp/change-password-pdf/
+url: /ko/javascript-cpp/change-password-pdf/
 description: C++를 통한 JavaScript용 Aspose.PDF로 PDF 파일의 비밀번호를 변경합니다.
 lastmod: "2023-09-13"
 sitemap:

@@ -3,7 +3,7 @@ title: استخراج الصور من ملف PDF
 linktitle: استخراج الصور
 type: docs
 weight: 30
-url: ar/java/extract-images-from-pdf-file/
+url: /ar/java/extract-images-from-pdf-file/
 description: يوضح هذا القسم كيفية استخراج الصور من ملف PDF باستخدام مكتبة Java.
 lastmod: "2021-06-05"
 ---

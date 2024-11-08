@@ -3,7 +3,7 @@ title: حفظ مستند PDF برمجيًا
 linktitle: حفظ PDF
 type: docs
 weight: 30
-url: ar/net/save-pdf-document/
+url: /ar/net/save-pdf-document/
 description: تعلم كيفية حفظ ملف PDF في مكتبة Aspose.PDF لـ .NET. حفظ مستند PDF إلى نظام الملفات، إلى تيار، وفي تطبيقات الويب.
 aliases:
     - /net/saving/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-الشفرة البرمجية التالية تعمل أيضًا مع واجهة [Aspose.Drawing](/pdf/net/drawing/) الرسومية الجديدة.
+الشفرة البرمجية التالية تعمل أيضًا مع واجهة [Aspose.Drawing](/pdf/ar/net/drawing/) الرسومية الجديدة.
 
 ## حفظ مستند PDF إلى نظام الملفات
 
@@ -60,7 +60,7 @@ var pdfDocument = new Aspose.Pdf.Document(originalFileName);
 pdfDocument.Pages.Add();
 pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
-لمزيد من التفاصيل يرجى متابعة قسم [العرض](/pdf/net/showcases/).
+لمزيد من التفاصيل يرجى متابعة قسم [العرض](/pdf/ar/net/showcases/).
 
 ## حفظ بصيغة PDF/A أو PDF/X
 

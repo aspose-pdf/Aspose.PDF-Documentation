@@ -3,7 +3,7 @@ title: Adicionar fundo ao PDF com C#
 linktitle: Adicionar fundos
 type: docs
 weight: 110
-url: pt/net/add-backgrounds/
+url: /pt/net/add-backgrounds/
 description: Adicione uma imagem de fundo ao seu arquivo PDF com C#. Use o objeto BackgroundArtifact.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Imagens de fundo podem ser usadas para adicionar uma marca d'água ou outro design sutil a documentos. No Aspose.PDF para .NET, cada documento PDF é uma coleção de páginas e cada página contém uma coleção de artefatos. A classe [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) pode ser usada para adicionar uma imagem de fundo a um objeto de página.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como adicionar uma imagem de fundo às páginas PDF usando o objeto BackgroundArtifact com C#.
 

@@ -2,7 +2,7 @@
 title: احصل على خصائص نافذة المستند وعرض الصفحة في Jython
 type: docs
 weight: 20
-url: ar/java/get-document-window-and-page-display-properties-in-jython/
+url: /ar/java/get-document-window-and-page-display-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

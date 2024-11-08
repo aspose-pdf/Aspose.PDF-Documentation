@@ -3,7 +3,7 @@ title: Adicionar assinatura digital ou assinar digitalmente PDF em C#
 linktitle: Assinar digitalmente PDF
 type: docs
 weight: 10
-url: pt/net/digitally-sign-pdf-file/
+url: /pt/net/digitally-sign-pdf-file/
 description: Assinar digitalmente documentos PDF usando C# ou VB.NET. Verificar ou validar os PDFs assinados digitalmente usando C# ou VB.NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,8 +82,8 @@ Ao assinar um documento PDF usando uma assinatura, você basicamente confirma se
 
 Em outras palavras, o documento ainda seria considerado como mantendo sua integridade e o destinatário ainda poderia confiar no documento. Para mais detalhes, por favor visite Certificar e assinar um PDF. Em geral, certificar um documento pode ser comparado a assinar um executável .NET com código.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Aspose.PDF para recursos de assinatura .NET
 

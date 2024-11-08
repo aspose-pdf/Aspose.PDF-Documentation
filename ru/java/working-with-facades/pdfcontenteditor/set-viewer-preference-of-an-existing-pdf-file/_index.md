@@ -2,7 +2,7 @@
 title: Установка предпочтений просмотра существующего PDF файла
 type: docs
 weight: 60
-url: ru/java/set-viewer-preference-of-an-existing-pdf-file/
+url: /ru/java/set-viewer-preference-of-an-existing-pdf-file/
 description: Этот раздел показывает, как работать с Aspose.PDF Facades, используя класс PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

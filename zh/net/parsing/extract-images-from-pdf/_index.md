@@ -3,7 +3,7 @@ title: 从 PDF C# 中提取图像
 linktitle: 从 PDF 提取图像
 type: docs
 weight: 20
-url: zh/net/extract-images-from-the-pdf-file/
+url: /zh/net/extract-images-from-the-pdf-file/
 description: 使用 Aspose.PDF for .NET 在 C# 中从 PDF 提取图像部分
 lastmod: "2021-06-05"
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 图像索引返回一个 [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage) 对象。该对象提供了一个 Save 方法，可以用来保存提取的图像。以下代码片段显示了如何从 PDF 文件中提取图像。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
  ```csharp
  // 完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET

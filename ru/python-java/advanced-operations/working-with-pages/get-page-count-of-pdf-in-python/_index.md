@@ -2,7 +2,7 @@
 title: Получить количество страниц PDF в Python
 type: docs
 weight: 40
-url: ru/python-java/get-page-count-of-pdf-in-python/
+url: /ru/python-java/get-page-count-of-pdf-in-python/
 ---
 
 <ins>Чтобы получить количество страниц в PDF-документе с использованием **Aspose.PDF Java для Python**, просто вызовите класс **GetNumberOfPages**.

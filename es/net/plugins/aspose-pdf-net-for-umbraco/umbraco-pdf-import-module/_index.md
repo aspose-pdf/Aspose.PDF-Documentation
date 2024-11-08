@@ -2,7 +2,7 @@
 title: Módulo de Importación de PDF de Umbraco
 type: docs
 weight: 10
-url: es/net/umbraco-pdf-import-module/
+url: /es/net/umbraco-pdf-import-module/
 description: Aprende cómo instalar y usar el Módulo de Importación de PDF de Umbraco
 lastmod: "2021-06-05"
 sitemap:

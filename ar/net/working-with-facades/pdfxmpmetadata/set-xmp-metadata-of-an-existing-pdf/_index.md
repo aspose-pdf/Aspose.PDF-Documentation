@@ -2,7 +2,7 @@
 title: تعيين بيانات XMP الوصفية لملف PDF موجود
 type: docs
 weight: 20
-url: ar/net/set-xmp-metadata-of-an-existing-pdf/
+url: /ar/net/set-xmp-metadata-of-an-existing-pdf/
 description: يوضح هذا القسم كيفية تعيين بيانات XMP الوصفية لملف PDF موجود باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

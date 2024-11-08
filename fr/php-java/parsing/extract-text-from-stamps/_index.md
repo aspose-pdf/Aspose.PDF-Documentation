@@ -2,7 +2,7 @@
 title: Extraire le texte des tampons
 type: docs
 weight: 60
-url: fr/php-java/extract-text-from-stamps/
+url: /fr/php-java/extract-text-from-stamps/
 ---
 
 ## Extraire le texte des annotations de tampon

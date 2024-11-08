@@ -2,7 +2,7 @@
 title: Более подробная информация об установке
 type: docs
 weight: 30
-url: ru/sharepoint/more-installation-details/
+url: /ru/sharepoint/more-installation-details/
 lastmod: "2020-12-16"
 description: Более подробная информация об установке PDF SharePoint API объясняет, как развернуть, активировать и деактивировать его в коллекциях сайтов.
 ---

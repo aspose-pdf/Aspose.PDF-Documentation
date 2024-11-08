@@ -2,7 +2,7 @@
 title: Obtener Metadatos XMP de un Archivo PDF
 type: docs
 weight: 30
-url: es/net/get-xmp-metadata-of-an-existing-pdf-file/
+url: /es/net/get-xmp-metadata-of-an-existing-pdf-file/
 description: Esta sección explica cómo obtener metadatos XMP de un PDF existente con Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

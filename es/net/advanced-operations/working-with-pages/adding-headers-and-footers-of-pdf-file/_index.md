@@ -3,7 +3,7 @@ title: Añadir Encabezado y Pie de página al PDF
 linktitle: Añadir Encabezado y Pie de página al PDF
 type: docs
 weight: 70
-url: es/net/add-headers-and-footers-of-pdf-file/
+url: /es/net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para .NET te permite añadir encabezados y pies de página a tu archivo PDF utilizando la clase TextStamp.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 </script>
 **Aspose.PDF para .NET** te permite agregar encabezados y pies de página en tu archivo PDF existente. Puedes agregar imágenes o texto a un documento PDF. También, intenta agregar diferentes encabezados en un archivo PDF con C#.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Agregando Texto en el Encabezado de un Archivo PDF
 

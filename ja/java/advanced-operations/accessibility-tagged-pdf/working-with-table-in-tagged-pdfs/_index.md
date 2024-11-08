@@ -3,7 +3,7 @@ title: タグ付きPDFでのテーブルの操作
 linktitle: タグ付きPDFでのテーブルの操作
 type: docs
 weight: 40
-url: ja/java/working-with-table-in-tagged-pdfs/
+url: /ja/java/working-with-table-in-tagged-pdfs/
 description: この記事では、Aspose.PDF for Javaを使用してタグ付きPDFドキュメントでテーブルを操作する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

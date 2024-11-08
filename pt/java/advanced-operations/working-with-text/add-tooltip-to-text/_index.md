@@ -3,7 +3,7 @@ title: Usando Tooltip
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: pt/java/pdf-tooltip/
+url: /pt/java/pdf-tooltip/
 description: Aprenda como adicionar tooltip ao fragmento de texto em PDF usando Java e Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

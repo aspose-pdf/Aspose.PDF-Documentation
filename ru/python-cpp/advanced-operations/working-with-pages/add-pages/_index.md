@@ -3,7 +3,7 @@ title: Добавить Страницы в PDF с помощью Python и C++
 linktitle: Добавить Страницы
 type: docs
 weight: 10
-url: ru/python-cpp/add-pages/
+url: /ru/python-cpp/add-pages/
 description: Эта статья обучает, как вставить (добавить) страницу в нужное место PDF файла в Python с использованием C++.
 lastmod: "2024-04-17"
 sitemap:

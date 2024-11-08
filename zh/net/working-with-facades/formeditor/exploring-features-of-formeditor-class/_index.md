@@ -2,7 +2,7 @@
 title: 探索FormEditor类的功能
 type: docs
 weight: 10
-url: zh/net/exploring-features-of-formeditor-class/
+url: /zh/net/exploring-features-of-formeditor-class/
 description: 您可以通过Aspose.PDF for .NET库了解探索FormEditor类功能的详细信息
 lastmod: "2021-06-05"
 draft: false
@@ -16,7 +16,7 @@ PDF文档有时包含交互式表单，这些表单被称为AcroForm。它就像
 
 ## 实现细节
 
-开发人员可以使用[Aspose.Pdf.Facades命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades)不仅可以在PDF文档中添加新表单和表单字段，还可以编辑现有字段。 本文的范围仅限于[Aspose.PDF for .NET](/pdf/net/)中处理表单编辑的功能。
+开发人员可以使用[Aspose.Pdf.Facades命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades)不仅可以在PDF文档中添加新表单和表单字段，还可以编辑现有字段。 本文的范围仅限于[Aspose.PDF for .NET](/pdf/zh/net/)中处理表单编辑的功能。
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)是一个类，其中包含大多数允许开发人员编辑表单字段的方法和属性。您不仅可以添加新字段，还可以删除现有字段，将一个字段移动到另一个位置，更改字段名称或属性等。该类提供的功能列表相当全面，使用此类操作表单字段也非常简单。
 

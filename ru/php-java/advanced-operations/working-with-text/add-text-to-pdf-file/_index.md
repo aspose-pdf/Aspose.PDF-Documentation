@@ -3,7 +3,7 @@ title: Добавление текста в PDF файл
 linktitle: Добавление текста в PDF файл
 type: docs
 weight: 10
-url: ru/php-java/add-text-to-pdf-file/
+url: /ru/php-java/add-text-to-pdf-file/
 description: В этой статье описаны различные аспекты работы с текстом в Aspose.PDF. Узнайте, как добавить текст в PDF, добавить HTML-фрагменты или использовать пользовательские шрифты OTF.
 lastmod: "2024-06-05"
 sitemap:

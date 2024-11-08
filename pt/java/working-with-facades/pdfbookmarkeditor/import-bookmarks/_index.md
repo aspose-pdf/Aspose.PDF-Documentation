@@ -2,7 +2,7 @@
 title: Importar Favoritos de XML para um Arquivo PDF Existente (facades)
 type: docs
 weight: 30
-url: pt/java/import-bookmark/
+url: /pt/java/import-bookmark/
 description: Esta seção explica como importar favoritos com Aspose.PDF Facades usando a Classe PdfBookmarkEditor.
 lastmod: "2021-06-05"
 sitemap:

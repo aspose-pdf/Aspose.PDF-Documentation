@@ -3,7 +3,7 @@ title: 从PDF中提取图像 JavaScript
 linktitle: 从PDF中提取图像
 type: docs
 weight: 20
-url: zh/javascript-cpp/extract-images-from-the-pdf-file/
+url: /zh/javascript-cpp/extract-images-from-the-pdf-file/
 description: 如何使用 Aspose.PDF for JavaScript 工具包从PDF中提取部分图像。
 lastmod: "2023-09-05"
 sitemap:

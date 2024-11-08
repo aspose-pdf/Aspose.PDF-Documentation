@@ -3,7 +3,7 @@ title: Удаление аннотации с использованием JavaS
 linktitle: Удаление аннотации
 type: docs
 weight: 10
-url: ru/javascript-cpp/delete-annotation/
+url: /ru/javascript-cpp/delete-annotation/
 description: С Aspose.PDF для JavaScript вы можете удалить аннотацию из вашего PDF файла.
 lastmod: "2023-02-17"
 sitemap:

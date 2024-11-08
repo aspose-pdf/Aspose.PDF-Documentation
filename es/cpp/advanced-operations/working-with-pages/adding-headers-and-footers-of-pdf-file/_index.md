@@ -3,7 +3,7 @@ title: Añadir Encabezado y Pie de Página al PDF
 linktitle: Añadir Encabezado y Pie de Página al PDF
 type: docs
 weight: 70
-url: es/cpp/add-headers-and-footers-of-pdf-file/
+url: /es/cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para C++ le permite agregar encabezados y pies de página a su archivo PDF utilizando la clase TextStamp.
 lastmod: "2021-12-08"
 sitemap:

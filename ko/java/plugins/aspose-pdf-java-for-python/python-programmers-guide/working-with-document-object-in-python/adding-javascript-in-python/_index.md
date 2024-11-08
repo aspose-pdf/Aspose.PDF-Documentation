@@ -2,7 +2,7 @@
 title: 파이썬에서 자바스크립트 추가하기
 type: docs
 weight: 10
-url: ko/java/adding-javascript-in-python/
+url: /ko/java/adding-javascript-in-python/
 lastmod: "2021-06-05"
 ---
 

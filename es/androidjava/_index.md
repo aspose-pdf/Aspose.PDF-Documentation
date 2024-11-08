@@ -4,7 +4,7 @@ linktitle: Aspose.PDF para Android vía Java
 second_title: Aspose.PDF para Android vía Java
 type: docs
 weight: 100
-url: es/androidjava/
+url: /es/androidjava/
 is_root: true
 lastmod: "2021-05-08"
 ---
@@ -23,22 +23,22 @@ Aspose.PDF para Android vía Java es un componente que permite a los desarrollad
 
 <h2>Capítulos </h2>
 
-- [Visión general](/pdf/androidjava/overview/)
-- [Comenzar](/pdf/androidjava/get-started/)
-- [Convertir documentos](/pdf/androidjava/converting/)
-- [Operaciones avanzadas](/pdf/java/advanced-operations/)(Aspose.PDF para Android a través de Java es muy similar a Aspose.PDF para Java. Por lo tanto, puedes usar la misma Guía de Referencia de la API)
-- [Analizar documentos PDF](/pdf/androidjava/parsing/)
+- [Visión general](/pdf/es/androidjava/overview/)
+- [Comenzar](/pdf/es/androidjava/get-started/)
+- [Convertir documentos](/pdf/es/androidjava/converting/)
+- [Operaciones avanzadas](/pdf/es/java/advanced-operations/)(Aspose.PDF para Android a través de Java es muy similar a Aspose.PDF para Java. Por lo tanto, puedes usar la misma Guía de Referencia de la API)
+- [Analizar documentos PDF](/pdf/es/androidjava/parsing/)
 - [Notas de la versión](https://releases.aspose.com/pdf/androidjava/release-notes/)
 
 A continuación, se presentan los enlaces a algunos recursos útiles que puedes necesitar para completar tus tareas.
 
-- [Documentación en línea de Aspose.PDF para Android a través de Java](/pdf/androidjava/) (Aspose.PDF para Android a través de Java es muy similar a Aspose.PDF para Android a través de Java. Por lo tanto, puedes usar la misma documentación)
-- [Características de Aspose.PDF para Android a través de Java](/pdf/androidjava/key-features/)
+- [Documentación en línea de Aspose.PDF para Android a través de Java](/pdf/es/androidjava/) (Aspose.PDF para Android a través de Java es muy similar a Aspose.PDF para Android a través de Java. Por lo tanto, puedes usar la misma documentación)
+- [Características de Aspose.PDF para Android a través de Java](/pdf/es/androidjava/key-features/)
 - [Notas de la versión de Aspose.PDF para Android a través de Java](https://releases.aspose.com/pdf/androidjava/release-notes/)
 - [Página del producto Aspose.PDF para Android a través de Java](https://products.aspose.com/pdf/android-java)
 
 - [Descargar Aspose.PDF para Android a través de Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java)
-- [Instalar Aspose.PDF para Android a través de Java](/pdf/androidjava/installation/)
+- [Instalar Aspose.PDF para Android a través de Java](/pdf/es/androidjava/installation/)
 - [Guía de referencia de API de Aspose.PDF para Android a través de Java](https://reference.aspose.com/java/pdf) (Aspose.PDF para Android a través de Java es muy similar a Aspose.PDF para Java. Por lo tanto, puede usar la misma Guía de referencia de API)
 - [Descargar Aspose.PDF para Android a través de Java](https://releases.aspose.com/pdf/androidjava/)
 - [Foro de soporte gratuito de Aspose.PDF para Android a través de Java](https://forum.aspose.com/c/pdf)

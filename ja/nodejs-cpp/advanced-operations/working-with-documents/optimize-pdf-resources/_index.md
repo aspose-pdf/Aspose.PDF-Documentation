@@ -3,7 +3,7 @@ title: Node.jsでPDFリソースを最適化
 linktitle: PDFリソースを最適化
 type: docs
 weight: 15
-url: ja/nodejs-cpp/optimize-pdf-resources/
+url: /ja/nodejs-cpp/optimize-pdf-resources/
 description: Node.jsツールを使用してPDFファイルのリソースを最適化し、Web表示を高速化します。
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: Python을 통한 C++로 PDF 페이지 회전
 linktitle: PDF 페이지 회전
 type: docs
 weight: 20
-url: ko/python-cpp/rotate-pages/
+url: /ko/python-cpp/rotate-pages/
 description: 이 주제는 Python을 통해 C++로 기존 PDF 파일의 페이지 방향을 프로그래밍 방식으로 회전하는 방법을 설명합니다.
 lastmod: "2024-04-17"
 sitemap:

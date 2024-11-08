@@ -3,7 +3,7 @@ title: JavaScript를 통해 C++로 PDF에 배경 추가
 linktitle: 배경 추가
 type: docs
 weight: 10
-url: ko/javascript-cpp/add-backgrounds/
+url: /ko/javascript-cpp/add-backgrounds/
 description: JavaScript를 통해 C++로 PDF 파일에 배경 이미지를 추가합니다.
 lastmod: "2023-02-17"
 sitemap:

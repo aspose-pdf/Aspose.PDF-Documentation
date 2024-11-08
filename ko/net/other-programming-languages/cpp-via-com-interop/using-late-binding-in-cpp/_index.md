@@ -2,14 +2,14 @@
 title: CPP에서 늦은 바인딩 사용하기
 type: docs
 weight: 20
-url: ko/net/using-late-binding-in-cpp/
+url: /ko/net/using-late-binding-in-cpp/
 ---
 
 ## Prerequisites
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for .NET을 COM Interop로 등록하십시오. [Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/) 문서를 확인해 주세요.
+Aspose.PDF for .NET을 COM Interop로 등록하십시오. [Use Aspose.pdf for .NET via COM Interop](/pdf/ko/net/use-aspose-pdf-for-net-via-com-interop/) 문서를 확인해 주세요.
 
 {{% /alert %}}
 

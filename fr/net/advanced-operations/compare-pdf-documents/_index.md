@@ -3,7 +3,7 @@ title: Comparer des documents PDF
 linktitle: Comparer des PDF
 type: docs
 weight: 180
-url: fr/fr/net/compare-pdf-documents/
+url: /fr/fr/net/compare-pdf-documents/
 description: Depuis la version 24.7, il est possible de comparer le contenu des documents PDF avec des marques d'annotation et une sortie côte à côte
 lastmod: "2024-08-17"
 sitemap:

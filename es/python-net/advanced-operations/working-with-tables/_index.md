@@ -3,7 +3,7 @@ title: Trabajando con Tablas en PDF usando Python
 linktitle: Trabajando con Tablas
 type: docs
 weight: 50
-url: es/python-net/working-with-tables/
+url: /es/python-net/working-with-tables/
 description: Esta sección describe cómo agregar y extraer una tabla, cómo manipular una tabla usando la biblioteca Python.
 lastmod: "2023-09-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 Puedes hacer lo siguiente:
 
-- [Crear o Agregar Tabla en un Documento PDF existente](/pdf/python-net/add-table-in-existing-pdf-document/) - crea tu tabla en un archivo PDF fusionando las columnas o filas considerando bordes, márgenes y relleno.
-- [Extraer una Tabla de un Documento PDF existente](/pdf/python-net/extract-table-from-existing-pdf-document/) - puedes extraer una tabla de un archivo PDF.
-- [Manipular Tablas en un PDF existente](/pdf/python-net/manipulate-tables-in-existing-pdf/) - manipula tablas en tu PDF usando TableAbsorber.
+- [Crear o Agregar Tabla en un Documento PDF existente](/pdf/es/python-net/add-table-in-existing-pdf-document/) - crea tu tabla en un archivo PDF fusionando las columnas o filas considerando bordes, márgenes y relleno.
+- [Extraer una Tabla de un Documento PDF existente](/pdf/es/python-net/extract-table-from-existing-pdf-document/) - puedes extraer una tabla de un archivo PDF.
+- [Manipular Tablas en un PDF existente](/pdf/es/python-net/manipulate-tables-in-existing-pdf/) - manipula tablas en tu PDF usando TableAbsorber.
 
-- [Eliminar Tablas de un PDF existente](/pdf/python-net/remove-tables-from-existing-pdf/) - elimina una tabla o múltiples tablas de un documento PDF.
+- [Eliminar Tablas de un PDF existente](/pdf/es/python-net/remove-tables-from-existing-pdf/) - elimina una tabla o múltiples tablas de un documento PDF.
 
 <script type="application/ld+json">
 {

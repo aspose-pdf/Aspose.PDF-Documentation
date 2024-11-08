@@ -2,7 +2,7 @@
 title: Extrair Texto de Carimbos usando C#
 type: docs
 weight: 60
-url: pt/net/extract-text-from-stamps/
+url: /pt/net/extract-text-from-stamps/
 description: Aprenda como usar a funcionalidade especial do Aspose.PDF para .NET - extração de texto de anotações de carimbo
 lastmod: "2021-01-30"
 sitemap:
@@ -19,7 +19,7 @@ Aspose.PDF para NET permite que você extraia texto de anotações de carimbo. P
 1. Definir um novo objeto da classe `TextAbsorber`
 1. Usar o método visit do TextAbsorber para obter o Texto
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 public static void ExtractText()

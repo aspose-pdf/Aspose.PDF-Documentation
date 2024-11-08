@@ -3,7 +3,7 @@ title: Dividir PDF programáticamente
 linktitle: Dividir archivos PDF
 type: docs
 weight: 60
-url: es/java/split-document/
+url: /es/java/split-document/
 description: Este tema muestra cómo dividir páginas PDF en archivos PDF individuales en sus aplicaciones Java.
 lastmod: "2021-06-05"
 sitemap:

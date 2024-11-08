@@ -3,7 +3,7 @@ title: Anotações em PDF
 linktitle: Anotações em PDF
 type: docs
 weight: 100
-url: pt/php-java/annotations/
+url: /pt/php-java/annotations/
 description: Esta seção mostra como usar todos os tipos de anotações no seu arquivo PDF com a biblioteca Aspose.PDF. Aprenda a desenhar, abrir ou adicionar uma anotação com PHP.
 lastmod: "2024-06-26"
 sitemap:
@@ -22,4 +22,4 @@ A anotação é uma parte importante do arquivo PDF.
 
 Você é capaz de fazer o seguinte:
 
-- [Adicionar Anotação](/pdf/php-java/add-delete-and-get-annotation/) - esta seção explica como trabalhar com anotações de marca d'água.
+- [Adicionar Anotação](/pdf/pt/php-java/add-delete-and-get-annotation/) - esta seção explica como trabalhar com anotações de marca d'água.

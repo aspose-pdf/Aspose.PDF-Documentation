@@ -3,7 +3,7 @@ title: PDF Annotations in Node.js
 linktitle: PDF Annotations
 type: docs
 weight: 90
-url: ko/nodejs-cpp/annotations/
+url: /ko/nodejs-cpp/annotations/
 description: 이 섹션에서는 Aspose.PDF for Node.js via C++를 사용하여 PDF 파일에 모든 종류의 주석을 사용하는 방법을 보여줍니다.
 lastmod: "2023-11-16"
 sitemap:
@@ -19,4 +19,4 @@ PDF의 주석은 추가 정보, 코멘트 또는 시각적 개선을 위해 PDF 
 
 다음 작업을 수행할 수 있습니다:
 
-- [주석 삭제하기](/pdf/nodejs-cpp/delete-annotation/) - 이 섹션에서는 Node.js 환경에서 PDF에서 주석을 삭제하는 방법을 설명합니다.
+- [주석 삭제하기](/pdf/ko/nodejs-cpp/delete-annotation/) - 이 섹션에서는 Node.js 환경에서 PDF에서 주석을 삭제하는 방법을 설명합니다.

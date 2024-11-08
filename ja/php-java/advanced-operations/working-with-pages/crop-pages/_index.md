@@ -3,7 +3,7 @@ title: PHPを使用してPDFページをトリミングする
 linktitle: ページをトリミング
 type: docs
 weight: 80
-url: ja/php-java/crop-pages/
+url: /ja/php-java/crop-pages/
 description: Aspose.PDF for PHP via Javaを使用して、幅、高さ、裁ち落とし、トリム、トリムボックスなどのページプロパティを取得できます。
 lastmod: "2024-06-05"
 sitemap:

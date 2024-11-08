@@ -2,7 +2,7 @@
 title: إضافة سلسلة HTML باستخدام DOM في بايثون
 type: docs
 weight: 10
-url: ar/java/add-html-string-using-dom-in-python/
+url: /ar/java/add-html-string-using-dom-in-python/
 lastmod: "2021-06-05"
 keywords: html dom python, python html dom library
 description: يوضح كيفية إضافة سلسلة HTML في DOM باستخدام بايثون مع مكتبة تنسيق ملفات PDF

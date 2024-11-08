@@ -2,7 +2,7 @@
 title: إدارة الرأس والتذييل
 type: docs
 weight: 40
-url: ar/net/manage-header-and-footer/
+url: /ar/net/manage-header-and-footer/
 description: يوضح هذا القسم كيفية إدارة الرأس والتذييل باستخدام واجهات Aspose.PDF باستخدام فئة PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

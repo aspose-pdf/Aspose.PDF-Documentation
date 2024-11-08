@@ -2,7 +2,7 @@
 title: Menggabungkan File PDF di Python
 type: docs
 weight: 10
-url: id/java/concatenate-pdf-files-in-python/
+url: /id/java/concatenate-pdf-files-in-python/
 lastmod: "2021-06-05"
 ---
 

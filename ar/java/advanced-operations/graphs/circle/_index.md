@@ -3,7 +3,7 @@ title: إضافة كائن دائرة إلى ملف PDF
 linktitle: إضافة دائرة
 type: docs
 weight: 20
-url: ar/java/add-circle/
+url: /ar/java/add-circle/
 description: توضح هذه المقالة كيفية إنشاء كائن دائرة لملف PDF الخاص بك باستخدام Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

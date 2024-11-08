@@ -2,7 +2,7 @@
 title: Page Break in existing PDF
 type: docs
 weight: 30
-url: ar/net/page-break-in-existing-pdf/
+url: /ar/net/page-break-in-existing-pdf/
 description: يوضح هذا القسم كيفية فصل الصفحات في ملف PDF موجود باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

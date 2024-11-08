@@ -3,7 +3,7 @@ title: PDFにテーブルを作成または追加する
 linktitle: テーブルを作成または追加する
 type: docs
 weight: 10
-url: ja/java/add-table-in-existing-pdf-document/
+url: /ja/java/add-table-in-existing-pdf-document/
 description: PDFドキュメントにテーブルを作成または追加し、セルスタイルを適用し、ページにテーブルを分割し、行と列をカスタマイズする方法を学びます。
 lastmod: "2021-12-16"
 sitemap:

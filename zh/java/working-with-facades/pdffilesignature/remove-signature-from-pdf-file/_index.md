@@ -2,7 +2,7 @@
 title: 从PDF文件中移除签名
 type: docs
 weight: 20
-url: zh/java/remove-signature-from-pdf/
+url: /zh/java/remove-signature-from-pdf/
 description: 本节介绍如何使用PdfFileSignature类处理PDF文件中的签名。
 lastmod: "2021-06-05"
 draft: false

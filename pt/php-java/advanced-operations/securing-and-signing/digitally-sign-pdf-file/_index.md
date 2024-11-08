@@ -3,7 +3,7 @@ title: Como assinar PDF digitalmente
 linktitle: Assinar PDF Digitalmente
 type: docs
 weight: 10
-url: pt/php-java/digitally-sign-pdf-file/
+url: /pt/php-java/digitally-sign-pdf-file/
 description: Assine digitalmente documentos PDF usando Java. Verifique ou valide PDFs assinados digitalmente com aplicativo baseado em Java com PDF Library. Você pode certificar um arquivo PDF com um Certificado PKCS1.
 lastmod: "2024-06-05"
 sitemap:

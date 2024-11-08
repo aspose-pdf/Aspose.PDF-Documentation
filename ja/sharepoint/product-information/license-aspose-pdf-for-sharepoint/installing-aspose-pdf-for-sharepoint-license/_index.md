@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: ja/sharepoint/installing-aspose-pdf-for-sharepoint-license/
+url: /ja/sharepoint/installing-aspose-pdf-for-sharepoint-license/
 
 lastmod: "2020-12-16"
 

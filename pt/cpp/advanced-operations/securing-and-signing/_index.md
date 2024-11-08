@@ -3,7 +3,7 @@ title: Protegendo e assinando documentos PDF
 linktitle: Protegendo e assinando em PDF
 type: docs
 weight: 150
-url: pt/cpp/securing-and-signing/
+url: /pt/cpp/securing-and-signing/
 description: Esta seção descreve as funcionalidades de uso de uma assinatura e proteção do seu documento PDF usando C++
 lastmod: "2021-12-15"
 sitemap:
@@ -15,6 +15,6 @@ Hoje, mais e mais documentos oficiais estão sendo armazenados em formato PDF. E
 
 Neste artigo, você aprenderá como adicionar assinatura digital a arquivos PDF e assinar a partir do cartão inteligente, como extrair informações de imagem e assinatura do seu PDF. Além disso, este tópico mostra como criptografar e descriptografar documentos PDF.
 
-- [Assinar digitalmente arquivo PDF](/pdf/cpp/digitally-sign-pdf-file/)
-- [Definir Privilégios, Criptografar e Descriptografar Arquivo PDF](/pdf/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extrair Informações de Imagem e Assinatura](/pdf/cpp/extract-image-and-signature-information/)
+- [Assinar digitalmente arquivo PDF](/pdf/pt/cpp/digitally-sign-pdf-file/)
+- [Definir Privilégios, Criptografar e Descriptografar Arquivo PDF](/pdf/pt/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Extrair Informações de Imagem e Assinatura](/pdf/pt/cpp/extract-image-and-signature-information/)

@@ -4,7 +4,7 @@ linktitle: Criar PDF Marcado
 type: docs
 weight: 10
 lastmod: "2021-06-05"
-url: pt/java/create-tagged-pdf-documents/
+url: /pt/java/create-tagged-pdf-documents/
 description: Este artigo explica como criar elementos de estrutura para documentos PDF marcados programaticamente usando Aspose.PDF para Java.
 sitemap:
     changefreq: "weekly"

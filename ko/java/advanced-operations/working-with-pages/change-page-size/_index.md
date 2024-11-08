@@ -3,7 +3,7 @@ title: PDF 페이지 크기 프로그램으로 변경하기
 linktitle: 페이지 크기 변경
 type: docs
 weight: 50
-url: ko/java/change-page-size/
+url: /ko/java/change-page-size/
 description: Java 라이브러리를 사용하여 PDF 파일의 페이지 크기를 변경합니다.
 lastmod: "2021-06-05"
 sitemap:

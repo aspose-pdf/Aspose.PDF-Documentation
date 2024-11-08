@@ -3,7 +3,7 @@ title: Добавить Номер Страницы в PDF с помощью C++
 linktitle: Добавить Номер Страницы
 type: docs
 weight: 100
-url: ru/cpp/add-page-number/
+url: /ru/cpp/add-page-number/
 description: Aspose.PDF для C++ позволяет добавить штамп с номером страницы в ваш PDF файл, используя класс PageNumberStamp.
 lastmod: "2021-12-03"
 sitemap:

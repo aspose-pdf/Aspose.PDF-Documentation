@@ -3,7 +3,7 @@ title: 権限を設定し、PDFファイルを暗号化および復号化する
 linktitle: PDFファイルを暗号化および復号化する
 type: docs
 weight: 20
-url: ja/java/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ja/java/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: PDFを暗号化する,PDFをパスワード保護する,PDFを復号化する,Java
 description: Javaを使用して異なる暗号化タイプとアルゴリズムでPDFファイルを暗号化します。また、オーナーパスワードを使用してPDFファイルを復号化します。
 lastmod: "2021-12-17"

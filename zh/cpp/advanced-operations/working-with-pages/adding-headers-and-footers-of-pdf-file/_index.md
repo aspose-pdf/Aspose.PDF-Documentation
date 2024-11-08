@@ -3,7 +3,7 @@ title: 向 PDF 添加页眉和页脚
 linktitle: 向 PDF 添加页眉和页脚
 type: docs
 weight: 70
-url: zh/cpp/add-headers-and-footers-of-pdf-file/
+url: /zh/cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for C++ 允许您使用 TextStamp 类向 PDF 文件添加页眉和页脚。
 lastmod: "2021-12-08"
 sitemap:

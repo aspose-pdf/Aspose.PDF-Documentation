@@ -3,7 +3,7 @@ title: إنشاء PDF من XML
 linktitle: إنشاء PDF من XML
 type: docs
 weight: 10
-url: ko/net/generate-pdf-from-xml
+url: /ko/net/generate-pdf-from-xml
 description: يوفر Aspose.PDF for .NET عدة طرق لتحويل ملف XML إلى مستند PDF يتطلب ملف XML المدخل.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
 }
 </script>
 
-يعمل المقتطف التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل المقتطف التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ko/net/drawing/).
 
 إن إنشاء مستند PDF من مستند XML ليس مهمة سهلة لأن مستند XML يمكن أن يصف محتوى مختلف. يحتوي Aspose.PDF for .NET على عدة طرق لإنشاء PDF بناءً على مستند XML:
 

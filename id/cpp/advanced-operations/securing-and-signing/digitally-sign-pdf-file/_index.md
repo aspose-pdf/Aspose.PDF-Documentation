@@ -3,7 +3,7 @@ title: Cara menandatangani PDF secara digital
 linktitle: Tanda tangan PDF secara digital
 type: docs
 weight: 10
-url: id/cpp/digitally-sign-pdf-file/
+url: /id/cpp/digitally-sign-pdf-file/
 description: Menandatangani dokumen PDF secara digital menggunakan C++. Verifikasi, atau validasi PDF yang telah ditandatangani secara digital menggunakan C++.
 lastmod: "2021-12-15"
 sitemap:

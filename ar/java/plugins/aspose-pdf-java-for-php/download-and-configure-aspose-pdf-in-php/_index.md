@@ -2,7 +2,7 @@
 title: تحميل وتكوين Aspose.PDF في PHP
 type: docs
 weight: 10
-url: ar/java/download-and-configure-aspose-pdf-in-php/
+url: /ar/java/download-and-configure-aspose-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

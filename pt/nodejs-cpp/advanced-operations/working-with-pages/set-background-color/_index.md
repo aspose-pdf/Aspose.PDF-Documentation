@@ -3,7 +3,7 @@ title: Definir a cor de fundo para PDF em Node.js
 linktitle: Definir cor de fundo
 type: docs
 weight: 80
-url: pt/nodejs-cpp/set-background-color/
+url: /pt/nodejs-cpp/set-background-color/
 description: Defina a cor de fundo para o seu arquivo PDF com Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

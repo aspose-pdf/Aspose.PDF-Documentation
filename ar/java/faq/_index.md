@@ -3,7 +3,7 @@ title: الأسئلة الشائعة
 linktitle: الأسئلة الشائعة
 type: docs
 weight: 120
-url: ar/java/faq/
+url: /ar/java/faq/
 description: يرجى التعرف على الأسئلة الشائعة من مكتبة Aspose.PDF لـ Java.
 lastmod: "2021-06-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 使用C++创建PDF文档
 linktitle: 创建
 type: docs
 weight: 10
-url: zh/cpp/create-document/
+url: /zh/cpp/create-document/
 description: 使用PDF文件的最受欢迎和基本的任务是从头开始创建文档。使用Aspose.PDF for C++库。
 lastmod: "2021-06-05"
 sitemap:

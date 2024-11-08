@@ -4,7 +4,7 @@ title: PDFファイルに長方形オブジェクトを追加する
 linktitle: 長方形を追加  
 type: docs  
 weight: 50  
-url: ja/java/add-rectangle/  
+url: /ja/java/add-rectangle/  
 description: この記事では、Aspose.PDF for Javaを使用してPDFに長方形オブジェクトを作成する方法を説明します。  
 lastmod: "2021-06-05"  
 sitemap:  

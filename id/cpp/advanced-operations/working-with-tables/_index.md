@@ -3,7 +3,7 @@ title: Bekerja dengan Tabel dalam PDF menggunakan C++
 linktitle: Bekerja dengan Tabel
 type: docs
 weight: 50
-url: id/cpp/working-with-tables/
+url: /id/cpp/working-with-tables/
 description: Bagian ini menjelaskan cara menambahkan dan mengekstrak tabel, cara memanipulasi dan mengintegrasikan tabel menggunakan pustaka C++.
 lastmod: "2021-11-11"
 sitemap:
@@ -19,7 +19,7 @@ Dan tentu saja, Anda harus bekerja dengan tabel-tabel tersebut.
 
 Anda dapat melakukan hal berikut:
 
-- [Buat atau Tambahkan Tabel dalam Dokumen PDF yang Ada](/pdf/cpp/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
-- [Extract a Table from existing PDF Document](/pdf/cpp/extract-table-from-existing-pdf-document/) - Anda dapat mengekstrak tabel dari file PDF atau mengekstrak batas tabel sebagai Gambar.
-- [Manipulate Tables in existing PDF](/pdf/cpp/manipulate-tables-in-existing-pdf/) - memanipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
-- [Remove Tables from existing PDF](/pdf/cpp/remove-tables-from-existing-pdf/) - menghapus tabel atau beberapa tabel dari dokumen PDF.
+- [Buat atau Tambahkan Tabel dalam Dokumen PDF yang Ada](/pdf/id/cpp/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
+- [Extract a Table from existing PDF Document](/pdf/id/cpp/extract-table-from-existing-pdf-document/) - Anda dapat mengekstrak tabel dari file PDF atau mengekstrak batas tabel sebagai Gambar.
+- [Manipulate Tables in existing PDF](/pdf/id/cpp/manipulate-tables-in-existing-pdf/) - memanipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
+- [Remove Tables from existing PDF](/pdf/id/cpp/remove-tables-from-existing-pdf/) - menghapus tabel atau beberapa tabel dari dokumen PDF.

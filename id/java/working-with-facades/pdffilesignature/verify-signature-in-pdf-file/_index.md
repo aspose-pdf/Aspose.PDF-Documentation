@@ -2,7 +2,7 @@
 title: Verifikasi Tanda Tangan di File PDF
 type: docs
 weight: 30
-url: id/java/verify-signature-in-pdf/
+url: /id/java/verify-signature-in-pdf/
 description: Bagian ini menjelaskan cara bekerja dengan Tanda Tangan di File PDF menggunakan kelas PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## Verifikasi Apakah File PDF Ditandatangani Menggunakan Tanda Tangan
 
-Untuk memverifikasi apakah file PDF ditandatangani menggunakan metode VerifySigned dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature). Metode ini memerlukan nama tanda tangan dan mengembalikan nilai benar jika PDF ditandatangani menggunakan nama tanda tangan tersebut. Juga dimungkinkan untuk memverifikasi bahwa sebuah [PDF ditandatangani](/pdf/java/working-with-signature-in-a-pdf-file/), tanpa memverifikasi dengan tanda tangan mana ia ditandatangani.
+Untuk memverifikasi apakah file PDF ditandatangani menggunakan metode VerifySigned dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature). Metode ini memerlukan nama tanda tangan dan mengembalikan nilai benar jika PDF ditandatangani menggunakan nama tanda tangan tersebut. Juga dimungkinkan untuk memverifikasi bahwa sebuah [PDF ditandatangani](/pdf/id/java/working-with-signature-in-a-pdf-file/), tanpa memverifikasi dengan tanda tangan mana ia ditandatangani.
 
 ### Memverifikasi bahwa PDF Ditandatangani dengan Tanda Tangan Tertentu
 

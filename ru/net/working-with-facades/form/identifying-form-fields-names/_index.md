@@ -2,13 +2,13 @@
 title: Identifying form fields names
 type: docs
 weight: 10
-url: ru/net/identifying-form-fields-names/
+url: /ru/net/identifying-form-fields-names/
 description: Aspose.PDF.Facades позволяет определять имена полей формы с использованием класса Form.
 lastmod: "2021-06-05"
 draft: false
 ---
 
-[Aspose.PDF for .NET](/pdf/net/) предоставляет возможность создавать, редактировать и заполнять уже созданные PDF-формы. Пространство имен [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) содержит класс [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), который содержит функцию с именем [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index), и она принимает два аргумента, т.е. имя поля и значение поля. Таким образом, для заполнения полей формы необходимо знать точное имя поля формы.
+[Aspose.PDF for .NET](/pdf/ru/net/) предоставляет возможность создавать, редактировать и заполнять уже созданные PDF-формы. Пространство имен [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) содержит класс [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), который содержит функцию с именем [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index), и она принимает два аргумента, т.е. имя поля и значение поля. Таким образом, для заполнения полей формы необходимо знать точное имя поля формы.
 
 ## Implementation details
 

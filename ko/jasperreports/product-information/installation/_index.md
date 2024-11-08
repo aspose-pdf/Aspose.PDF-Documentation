@@ -6,7 +6,7 @@ type: docs
 
 weight: 50
 
-url: ko/jasperreports/installation/
+url: /ko/jasperreports/installation/
 
 lastmod: "2021-06-05"
 
@@ -18,8 +18,8 @@ lastmod: "2021-06-05"
 
 
 
-- [시스템 요구 사항](/pdf/jasperreports/system-requirements/)
+- [시스템 요구 사항](/pdf/ko/jasperreports/system-requirements/)
 
-- [JasperReports와의 통합](/pdf/jasperreports/integration-with-jasperreports/)
+- [JasperReports와의 통합](/pdf/ko/jasperreports/integration-with-jasperreports/)
 
-- [JasperServer와의 통합](/pdf/jasperreports/integration-with-jasperserver/)
+- [JasperServer와의 통합](/pdf/ko/jasperreports/integration-with-jasperserver/)

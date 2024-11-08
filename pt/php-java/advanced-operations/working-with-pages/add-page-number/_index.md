@@ -3,7 +3,7 @@ title: Adicionar Número de Página ao PDF
 linktitle: Adicionar Número de Página
 type: docs
 weight: 100
-url: pt/php-java/adicionar-numero-pagina/
+url: /pt/php-java/adicionar-numero-pagina/
 description: Aspose.PDF para PHP via Java permite que você adicione um Carimbo de Número de Página ao seu arquivo PDF usando a classe PageNumber Stamp.
 lastmod: "2024-06-05"
 sitemap:

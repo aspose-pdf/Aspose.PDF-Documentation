@@ -3,7 +3,7 @@ title: Stamping with Aspose.PDF using C#
 linktitle: Stamping
 type: docs
 weight: 120
-url: id/net/stamping/
+url: /id/net/stamping/
 description: Bagian ini menjelaskan cara menambahkan cap gambar dan cap teks ke halaman PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,6 +86,6 @@ Stempel dalam file PDF memberikan informasi tambahan untuk file PDF, seperti unt
 
 Periksa bagian berikut untuk mempelajari cara menambahkan stempel dengan C#:
 
-- [Tambahkan stempel gambar di halaman PDF](/pdf/net/image-stamps-in-pdf-page/) - tambahkan stempel gambar, kontrol kualitas gambar, stempel gambar sebagai latar belakang file PDF Anda.
-- [Tambahkan stempel teks di File PDF](/pdf/net/text-stamps-in-the-pdf-file/) - tambahkan stempel teks, tentukan penyelarasan untuk objek TextStamp, isi stroke teks sebagai stempel di file PDF.
+- [Tambahkan stempel gambar di halaman PDF](/pdf/id/net/image-stamps-in-pdf-page/) - tambahkan stempel gambar, kontrol kualitas gambar, stempel gambar sebagai latar belakang file PDF Anda.
+- [Tambahkan stempel teks di File PDF](/pdf/id/net/text-stamps-in-the-pdf-file/) - tambahkan stempel teks, tentukan penyelarasan untuk objek TextStamp, isi stroke teks sebagai stempel di file PDF.
 

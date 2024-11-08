@@ -3,7 +3,7 @@ title: Determine Line Break
 linktitle: Determine Line Break
 type: docs
 weight: 70
-url: pt/net/determine-line-break/
+url: /pt/net/determine-line-break/
 description: Saiba mais sobre como determinar uma quebra de linha em um TextFragment de várias linhas usando C#
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Saiba mais sobre como determinar uma quebra de linha em um TextFragment de várias linhas usando C#"
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Rastrear Quebra de Linha de TextFragment Multilinha
 

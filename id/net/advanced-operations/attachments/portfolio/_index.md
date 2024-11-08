@@ -3,7 +3,7 @@ title: Bekerja dengan Portofolio dalam PDF
 linktitle: Portofolio
 type: docs
 weight: 40
-url: id/net/portfolio/
+url: /id/net/portfolio/
 description: Cara Membuat Portofolio PDF dengan C#. Anda harus menggunakan Berkas Excel Microsoft, dokumen Word, dan berkas gambar untuk membuat Portofolio PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ Contoh berikut menggunakan File Microsoft Excel, dokumen Word, dan file gambar u
 
 Kode di bawah ini menghasilkan portofolio berikut.
 
-Kode snippet berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode snippet berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ### PDF Portfolio yang dibuat dengan Aspose.PDF
 

@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for JavaScript
 second_title: Aspose.PDF for JavaScript via C++
 type: docs
 weight: 80
-url: ko/javascript-cpp/
+url: /ko/javascript-cpp/
 is_root: true
 lastmod: "2022-12-08"
 description: 브라우저에서 PDF 문서 처리를 위한 애플리케이션을 만들기 위해 Aspose.PDF for JavaScript를 사용하는 방법을 배우세요.
@@ -26,17 +26,17 @@ Aspose.PDF for JavaScript via C++는 JavaScript를 사용하여 PDF를 처리하
 
 <h2>챕터</h2>
 
-- [새로운 것들](/pdf/javascript-cpp/whatsnew/)
-- [개요](/pdf/javascript-cpp/overview/)
-- [시작하기](/pdf/javascript-cpp/get-started/)
-- [기본 작업](/pdf/javascript-cpp/basic-operations/)
+- [새로운 것들](/pdf/ko/javascript-cpp/whatsnew/)
+- [개요](/pdf/ko/javascript-cpp/overview/)
+- [시작하기](/pdf/ko/javascript-cpp/get-started/)
+- [기본 작업](/pdf/ko/javascript-cpp/basic-operations/)
 - [릴리스 노트](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
 
 <h2>Aspose.PDF for JavaScript 리소스</h2>
 
 다음은 작업을 수행하는 데 필요할 수 있는 몇 가지 유용한 리소스에 대한 링크입니다.
 
-- [Aspose.PDF for JavaScript 기능](/pdf/javascript-cpp/key-features/)
+- [Aspose.PDF for JavaScript 기능](/pdf/ko/javascript-cpp/key-features/)
 - [Aspose.PDF for JavaScript 릴리스 노트](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
 - [Aspose.PDF for JavaScript 다운로드](https://releases.aspose.com/pdf/javascriptcpp/)
 - [Aspose.PDF for JavaScript 제품 페이지](https://products.aspose.com/pdf/javascript-cpp/)

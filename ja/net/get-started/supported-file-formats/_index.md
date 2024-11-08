@@ -3,7 +3,7 @@ title: Supported File Formats
 linktitle: Supported File Formats
 type: docs
 weight: 70
-url: ja/net/supported-file-formats/
+url: /ja/net/supported-file-formats/
 description: このページでは、Aspose.PDF for .NETが読み込みおよび保存できるファイル形式を示しています。
 lastmod: "2021-06-05"
 sitemap:

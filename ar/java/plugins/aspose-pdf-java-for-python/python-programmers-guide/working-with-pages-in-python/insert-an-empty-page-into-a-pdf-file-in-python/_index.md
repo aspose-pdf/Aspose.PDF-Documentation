@@ -2,7 +2,7 @@
 title: إدراج صفحة فارغة في ملف PDF باستخدام بايثون
 type: docs
 weight: 70
-url: ar/java/insert-an-empty-page-into-a-pdf-file-in-python/
+url: /ar/java/insert-an-empty-page-into-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

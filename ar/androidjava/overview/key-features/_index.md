@@ -3,7 +3,7 @@ title: الميزات الرئيسية لـ Aspose.PDF
 linktitle: الميزات الرئيسية
 type: docs
 weight: 20
-url: ar/androidjava/key-features/
+url: /ar/androidjava/key-features/
 description: Aspose.PDF لـ Android عبر Java يعرض الميزات الرئيسية في التعامل مع مستندات PDF.
 lastmod: "2021-06-05"
 sitemap:

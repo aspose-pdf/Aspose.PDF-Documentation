@@ -2,7 +2,7 @@
 title: Support RDL Complet
 type: docs
 weight: 10
-url: fr/reportingservices/comprehensive-rdl-support/
+url: /fr/reportingservices/comprehensive-rdl-support/
 lastmod: "2021-06-05"
 ---
 

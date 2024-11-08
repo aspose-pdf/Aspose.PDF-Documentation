@@ -3,7 +3,7 @@ title: Añadir y Eliminar un Marcador usando Python
 linktitle: Añadir y Eliminar un Marcador
 type: docs
 weight: 10
-url: es/python-net/add-and-delete-bookmark/
+url: /es/python-net/add-and-delete-bookmark/
 description: Puede añadir un marcador a un documento PDF con Python. Es posible eliminar todos o algunos marcadores de un documento PDF.
 lastmod: "2023-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Разрыв страницы в существующем PDF
 type: docs
 weight: 30
-url: ru/java/page-break-in-existing-pdf/
+url: /ru/java/page-break-in-existing-pdf/
 description: Этот раздел объясняет, как вставить разрывы страниц в существующий PDF с использованием класса PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

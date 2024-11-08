@@ -3,7 +3,7 @@ title: Rellenar AcroForm - Rellenar Formulario PDF usando Python
 linktitle: Rellenar AcroForm
 type: docs
 weight: 20
-url: es/python-net/fill-form/
+url: /es/python-net/fill-form/
 keywords: Rellenar Formulario PDF Python
 description: Puede rellenar formularios en su documento PDF con la biblioteca Aspose.PDF para Python.
 lastmod: "2023-02-17"

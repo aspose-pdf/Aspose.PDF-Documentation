@@ -2,7 +2,7 @@
 title: DOC 변환기
 type: docs
 weight: 10
-url: ko/net/plugins/doc/
+url: /ko/net/plugins/doc/
 description: PdfDoc 플러그인을 사용하여 PDF를 Word로 변환하는 방법
 lastmod: "2024-01-24"
 ---

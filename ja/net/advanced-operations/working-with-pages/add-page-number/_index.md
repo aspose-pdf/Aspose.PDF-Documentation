@@ -3,7 +3,7 @@ title: C#を使用してPDFにページ番号を追加
 linktitle: ページ番号の追加
 type: docs
 weight: 100
-url: ja/net/add-page-number/
+url: /ja/net/add-page-number/
 description: Aspose.PDF for .NETを使用して、PageNumber Stampクラスを使用してPDFファイルにページ番号スタンプを追加できます。
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 すべてのドキュメントにはページ番号が含まれている必要があります。ページ番号により、読者がドキュメントの異なる部分を簡単に見つけることができます。
 **Aspose.PDF for .NET** では、PageNumberStamp を使用してページ番号を追加できます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも機能します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも機能します。
 
 [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) クラスを使用して、PDFファイルにページ番号スタンプを追加することができます。
 [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) クラスを使用して、PDFファイルにページ番号のスタンプを追加できます。

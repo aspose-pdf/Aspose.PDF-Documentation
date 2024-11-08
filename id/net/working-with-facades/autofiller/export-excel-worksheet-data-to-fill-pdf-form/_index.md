@@ -2,7 +2,7 @@
 title: Ekspor data Excel untuk mengisi formulir PDF
 type: docs
 weight: 10
-url: id/net/export-excel-worksheet-data-to-fill-pdf-form/
+url: /id/net/export-excel-worksheet-data-to-fill-pdf-form/
 description: Bagian ini menjelaskan bagaimana Anda dapat mengekspor data lembar kerja Excel untuk mengisi formulir PDF menggunakan Kelas AutoFiller.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF untuk .NET](/pdf/net/) menawarkan berbagai cara untuk mengisi formulir Pdf. Anda dapat mengimpor data dari file XML, DFD, XFDF, menggunakan API, dan bahkan dapat menggunakan data dari lembar kerja Excel. Kami akan menggunakan metode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) dari kelas [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) dari [Aspose.Cells](https://docs.aspose.com//cells/net) untuk mengekspor data dari lembar Excel ke dalam objek DataTable. Kemudian kita perlu mengimpor data ini ke dalam bentuk Pdf menggunakan metode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) dari kelas [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Pastikan bahwa nama Kolom dari DataTable sama dengan nama field pada formulir PDF.
+[Namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF untuk .NET](/pdf/id/net/) menawarkan berbagai cara untuk mengisi formulir Pdf. Anda dapat mengimpor data dari file XML, DFD, XFDF, menggunakan API, dan bahkan dapat menggunakan data dari lembar kerja Excel. Kami akan menggunakan metode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) dari kelas [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) dari [Aspose.Cells](https://docs.aspose.com//cells/net) untuk mengekspor data dari lembar Excel ke dalam objek DataTable. Kemudian kita perlu mengimpor data ini ke dalam bentuk Pdf menggunakan metode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) dari kelas [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Pastikan bahwa nama Kolom dari DataTable sama dengan nama field pada formulir PDF.
 
 {{% /alert %}}
 

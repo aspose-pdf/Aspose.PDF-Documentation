@@ -3,7 +3,7 @@ title: AcroFormsを作成する - Javaで記入可能なPDFを作成する
 linktitle: AcroFormsを作成する
 type: docs
 weight: 10
-url: ja/java/create-forms/
+url: /ja/java/create-forms/
 description: このセクションでは、Aspose.PDF for Javaを使用してPDFドキュメントにAcroFormsをゼロから作成する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Travailler avec des Artifacts en C++
 linktitle: Travailler avec des Artifacts
 type: docs
 weight: 110
-url: fr/cpp/artifacts/
+url: /fr/cpp/artifacts/
 description: Cette page décrit comment travailler avec la classe Artifact en utilisant Aspose.PDF pour C++. Les extraits de code montrent comment ajouter une image d'arrière-plan aux pages PDF et comment obtenir chaque filigrane sur la première page d'un fichier PDF.
 lastmod: "2021-11-22"
 sitemap:

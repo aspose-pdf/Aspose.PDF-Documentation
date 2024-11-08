@@ -3,7 +3,7 @@ title: Ajouter des tampons d'image dans un PDF en utilisant JavaScript via C++
 linktitle: Tampons d'image dans un fichier PDF
 type: docs
 weight: 60
-url: fr/javascript-cpp/stamping/
+url: /fr/javascript-cpp/stamping/
 description: Ajoutez le tampon d'image à votre document PDF en utilisant la fonction AsposePdfAddStamp avec l'outil JavaScript.
 lastmod: "2023-04-15"
 sitemap:

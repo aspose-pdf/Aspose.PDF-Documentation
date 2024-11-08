@@ -4,7 +4,7 @@ title: Pemformatan Teks di dalam PDF menggunakan C++
 linktitle: Pemformatan Teks di dalam PDF
 type: docs
 weight: 30
-url: id/cpp/text-formatting-inside-pdf/
+url: /id/cpp/text-formatting-inside-pdf/
 description: Halaman ini menjelaskan bagaimana memformat teks di dalam file PDF Anda. Ada penambahan indentasi baris, penambahan batas teks, penambahan garis bawah teks, penambahan batas di sekitar teks yang ditambahkan, penyelarasan teks untuk konten kotak mengambang, dan lain-lain.
 lastmod: "2021-12-13"
 sitemap:

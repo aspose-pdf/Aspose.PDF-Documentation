@@ -2,7 +2,7 @@
 title: 从PDF中提取注释
 type: docs
 weight: 30
-url: zh/net/extract-annotation/
+url: /zh/net/extract-annotation/
 description: 本节介绍如何使用Aspose.PDF Facades将PDF文件中的注释提取到XFDF。
 lastmod: "2021-06-05"
 sitemap:

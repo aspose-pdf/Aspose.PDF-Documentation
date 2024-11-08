@@ -2,7 +2,7 @@
 title: 拡張可能メタデータプラットフォーム - XMP
 type: docs
 weight: 10
-url: ja/net/working-with-extensible-metadata-platform-xmp/
+url: /ja/net/working-with-extensible-metadata-platform-xmp/
 description: このセクションでは、PdfXmpMetadataクラスを使用して拡張可能メタデータプラットフォーム - XMP を操作する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

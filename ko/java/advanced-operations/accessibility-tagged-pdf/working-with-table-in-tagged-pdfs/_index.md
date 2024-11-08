@@ -3,7 +3,7 @@ title: 태그가 지정된 PDF에서 테이블 작업하기
 linktitle: 태그가 지정된 PDF에서 테이블 작업하기
 type: docs
 weight: 40
-url: ko/java/working-with-table-in-tagged-pdfs/
+url: /ko/java/working-with-table-in-tagged-pdfs/
 description: 이 문서에서는 Aspose.PDF for Java를 사용하여 태그가 지정된 PDF 문서에서 테이블을 다루는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

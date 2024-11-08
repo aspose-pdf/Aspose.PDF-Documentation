@@ -2,7 +2,7 @@
 title: Python에서 PDF를 DOC 또는 DOCX 형식으로 변환
 type: docs
 weight: 10
-url: ko/java/convert-pdf-to-doc-or-docx-format-in-python/
+url: /ko/java/convert-pdf-to-doc-or-docx-format-in-python/
 lastmod: "2021-06-05"
 ---
 

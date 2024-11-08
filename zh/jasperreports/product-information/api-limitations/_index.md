@@ -4,7 +4,7 @@ type: docs
 
 weight: 80
 
-url: zh/jasperreports/api-limitations/
+url: /zh/jasperreports/api-limitations/
 
 lastmod: "2021-06-05"
 

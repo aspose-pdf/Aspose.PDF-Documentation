@@ -2,7 +2,7 @@
 title: 向现有 PDF 添加目录在 PHP 中
 type: docs
 weight: 20
-url: zh/java/add-toc-to-existing-pdf-in-php/
+url: /zh/java/add-toc-to-existing-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

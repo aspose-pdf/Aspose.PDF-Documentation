@@ -3,7 +3,7 @@ title: Использование всплывающей подсказки
 linktitle: PDF Всплывающая подсказка
 type: docs
 weight: 20
-url: ru/java/pdf-tooltip/
+url: /ru/java/pdf-tooltip/
 description: Узнайте, как добавить всплывающую подсказку к фрагменту текста в PDF с использованием Java и Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

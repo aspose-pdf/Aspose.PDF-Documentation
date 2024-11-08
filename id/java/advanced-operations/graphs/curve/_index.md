@@ -3,7 +3,7 @@ title: Tambahkan Objek Kurva ke File PDF
 linktitle: Tambahkan Kurva
 type: docs
 weight: 30
-url: id/java/add-curve/
+url: /id/java/add-curve/
 description: Artikel ini menjelaskan cara membuat objek kurva ke PDF Anda menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

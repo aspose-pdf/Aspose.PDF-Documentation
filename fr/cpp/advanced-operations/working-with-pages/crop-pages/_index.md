@@ -3,7 +3,7 @@ title: Recadrer les pages PDF par programmation C++
 linktitle: Recadrer les pages
 type: docs
 weight: 80
-url: fr/cpp/crop-pages/
+url: /fr/cpp/crop-pages/
 description: Vous pouvez obtenir les propriétés de la page, telles que la largeur, la hauteur, le bleed-, crop- et trimbox en utilisant Aspose.PDF pour C++.
 lastmod: "2021-12-09"
 sitemap:

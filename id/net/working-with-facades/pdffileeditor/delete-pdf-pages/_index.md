@@ -2,7 +2,7 @@
 title: Hapus halaman PDF
 type: docs
 weight: 70
-url: id/net/delete-pdf-pages/
+url: /id/net/delete-pdf-pages/
 description: Bagian ini menjelaskan cara menghapus halaman PDF dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

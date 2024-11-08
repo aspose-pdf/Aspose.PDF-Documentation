@@ -3,7 +3,7 @@ title: PDFでテキストを置換する
 linktitle: PDFでテキストを置換する
 type: docs
 weight: 40
-url: ja/java/replace-text-in-a-pdf-document/
+url: /ja/java/replace-text-in-a-pdf-document/
 description: PDFからテキストを置換および削除するさまざまな方法について学びます。Aspose.PDFは、特定の領域内または正規表現でテキストを置換することを可能にします。
 lastmod: "2021-06-05"
 sitemap:

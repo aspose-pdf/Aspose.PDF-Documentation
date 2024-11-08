@@ -3,7 +3,7 @@ title: PDFテキスト注釈
 Texttitle: テキスト注釈
 type: docs
 weight: 10
-url: ja/cpp/text-annotation/
+url: /ja/cpp/text-annotation/
 description: Aspose.PDF for C++は、PDFドキュメントにテキスト注釈を追加、取得、削除することを可能にします。
 lastmod: "2021-11-24"
 sitemap:

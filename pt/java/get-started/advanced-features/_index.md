@@ -3,7 +3,7 @@ title: Funcionalidades Avançadas
 linktitle: Funcionalidades Avançadas
 type: docs
 weight: 120
-url: pt/java/advanced-features/
+url: /pt/java/advanced-features/
 description: Esta seção mostra como você pode usar Tags LaTeX em documentos PDF com Aspose.PDF para Java.
 lastmod: "2022-01-11"
 sitemap:

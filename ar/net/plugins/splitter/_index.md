@@ -2,7 +2,7 @@
 title: Splitter
 type: docs
 weight: 120
-url: ar/net/plugins/splitter/
+url: /ar/net/plugins/splitter/
 description: يقسم مستند PDF إلى صفحات منفصلة
 lastmod: "2024-01-24"
 draft: false

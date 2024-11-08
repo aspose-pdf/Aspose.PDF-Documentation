@@ -3,7 +3,7 @@ title: PythonでHTMLをPDFに変換
 linktitle: HTMLをPDFファイルに変換
 type: docs
 weight: 40
-url: ja/python-net/convert-html-to-pdf/
+url: /ja/python-net/convert-html-to-pdf/
 lastmod: "2022-12-22"
 description: このトピックでは、Aspose.PDFを使用してHTMLをPDFに、MHTMLをPDFに変換する方法を示します。
 sitemap:

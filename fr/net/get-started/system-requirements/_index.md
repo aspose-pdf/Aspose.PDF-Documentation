@@ -3,7 +3,7 @@ title: Exigences Système
 linktitle: Exigences Système
 type: docs
 weight: 30
-url: fr/fr/net/exigences-systeme/
+url: /fr/fr/net/exigences-systeme/
 description: Cette section répertorie les systèmes d'exploitation pris en charge dont un développeur a besoin pour travailler avec succès avec Aspose.PDF pour .NET.
 lastmod: "2023-05-12"
 sitemap:

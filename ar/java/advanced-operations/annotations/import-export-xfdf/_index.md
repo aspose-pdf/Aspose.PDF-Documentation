@@ -3,7 +3,7 @@ title: استيراد وتصدير التعليقات التوضيحية إلى 
 linktitle: استيراد وتصدير التعليقات التوضيحية إلى تنسيق XFDF
 type: docs
 weight: 40
-url: ar/java/import-export-xfdf/
+url: /ar/java/import-export-xfdf/
 description: يمكنك استيراد وتصدير التعليقات باستخدام تنسيق XFDF باستخدام مكتبة Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

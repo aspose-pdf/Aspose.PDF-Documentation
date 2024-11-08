@@ -3,7 +3,7 @@
 title: PDF 페이지 분할
 type: docs
 weight: 60
-url: ko/net/split-pdf-pages/
+url: /ko/net/split-pdf-pages/
 description: 이 섹션에서는 PdfFileEditor 클래스를 사용하여 Aspose.PDF Facades로 PDF 페이지를 분할하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

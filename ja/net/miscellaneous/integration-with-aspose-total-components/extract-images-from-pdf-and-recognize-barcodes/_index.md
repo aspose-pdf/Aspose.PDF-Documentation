@@ -2,7 +2,7 @@
 title: PDFから画像を抽出し、バーコードを認識する
 type: docs
 weight: 20
-url: ja/net/extract-images-from-pdf-and-recognize-barcodes/
+url: /ja/net/extract-images-from-pdf-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

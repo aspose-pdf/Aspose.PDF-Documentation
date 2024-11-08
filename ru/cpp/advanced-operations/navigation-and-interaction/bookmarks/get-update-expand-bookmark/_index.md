@@ -3,7 +3,7 @@ title: Получить, обновить и расширить закладку
 linktitle: Получить, обновить и расширить закладку
 type: docs
 weight: 20
-url: ru/cpp/get-update-and-expand-bookmark/
+url: /ru/cpp/get-update-and-expand-bookmark/
 description: Aspose.PDF для библиотеки C++ позволяет вам получать, обновлять в PDF файле с нашим.
 lastmod: "2022-01-31"
 sitemap:

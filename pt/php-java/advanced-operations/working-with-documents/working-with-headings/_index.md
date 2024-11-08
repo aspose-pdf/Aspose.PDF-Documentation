@@ -1,7 +1,7 @@
 title: Trabalhando com Cabeçalhos em PDF
 type: docs
 weight: 70
-url: pt/php-java/working-with-headings/
+url: /pt/php-java/working-with-headings/
 lastmod: "2024-06-05"
 description: Crie numeração no cabeçalho do seu documento PDF usando PHP. Aspose.PDF para PHP via Java oferece diferentes tipos de estilos de numeração.
 sitemap:

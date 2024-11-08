@@ -3,7 +3,7 @@ title: 概要
 linktitle: 概要
 type: docs
 weight: 20
-url: ja/nodejs-cpp/overview/
+url: /ja/nodejs-cpp/overview/
 description: Aspose.PDF for Node.js via C++ の主要機能とサポートされている形式の概要、インストールおよびライセンスマニュアル。
 lastmod: "2023-11-16"
 sitemap:
@@ -50,9 +50,9 @@ Aspose.PDF for Node.jsは、以下のようなさまざまな機能をサポー�
 
 詳細は以下をご覧ください:
 
-- [サポートされているファイル形式](/pdf/nodejs-cpp/supported-file-formats/)
-- [Aspose.PDFの主な機能](/pdf/nodejs-cpp/key-features/)
-- [システム要件](/pdf/nodejs-cpp/system-requirements/)
-- [インストール](/pdf/nodejs-cpp/installation/)
-- [ライセンス](/pdf/nodejs-cpp/licensing/)
-- [技術サポート](/pdf/nodejs-cpp/technical-support/)
+- [サポートされているファイル形式](/pdf/ja/nodejs-cpp/supported-file-formats/)
+- [Aspose.PDFの主な機能](/pdf/ja/nodejs-cpp/key-features/)
+- [システム要件](/pdf/ja/nodejs-cpp/system-requirements/)
+- [インストール](/pdf/ja/nodejs-cpp/installation/)
+- [ライセンス](/pdf/ja/nodejs-cpp/licensing/)
+- [技術サポート](/pdf/ja/nodejs-cpp/technical-support/)

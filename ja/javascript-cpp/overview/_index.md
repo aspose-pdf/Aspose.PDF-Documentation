@@ -3,7 +3,7 @@ title: 概要
 linktitle: 概要
 type: docs
 weight: 20
-url: ja/javascript-cpp/overview/
+url: /ja/javascript-cpp/overview/
 description: Aspose.PDF for JavaScript via C++の主要機能とサポートされる形式、インストールおよびライセンスマニュアルの概要。
 lastmod: "2022-12-13"
 sitemap:
@@ -34,9 +34,9 @@ Aspose.PDF for JavaScriptは、以下のような多様な機能をサポート�
 
 詳細はこちらをご覧ください:
 
-- [サポートされているファイル形式](/pdf/javascript-cpp/supported-file-formats/)
-- [Aspose.PDFの主な機能](/pdf/javascript-cpp/key-features/)
-- [システム要件](/pdf/javascript-cpp/system-requirements/)
-- [インストール](/pdf/javascript-cpp/installation/)
-- [ライセンス](/pdf/javascript-cpp/licensing/)
-- [技術サポート](/pdf/javascript-cpp/technical-support/)
+- [サポートされているファイル形式](/pdf/ja/javascript-cpp/supported-file-formats/)
+- [Aspose.PDFの主な機能](/pdf/ja/javascript-cpp/key-features/)
+- [システム要件](/pdf/ja/javascript-cpp/system-requirements/)
+- [インストール](/pdf/ja/javascript-cpp/installation/)
+- [ライセンス](/pdf/ja/javascript-cpp/licensing/)
+- [技術サポート](/pdf/ja/javascript-cpp/technical-support/)

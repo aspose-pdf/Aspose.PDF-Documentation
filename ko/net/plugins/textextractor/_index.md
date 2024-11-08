@@ -2,7 +2,7 @@
 title: 텍스트 추출기
 type: docs
 weight: 140
-url: ko/net/plugins/textextractor/
+url: /ko/net/plugins/textextractor/
 description: PDF 문서에서 텍스트 내용을 추출합니다.
 lastmod: "2024-01-24"
 ---

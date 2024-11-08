@@ -3,7 +3,7 @@ title: Aspose.PDFのXMLスキーマ
 linktitle: 対応するXMLスキーマ
 type: docs
 weight: 10
-url: ja/cpp/supported-xml-schema/
+url: /ja/cpp/supported-xml-schema/
 description: この記事では、Aspose.PDF for C++でXMLドキュメントを操作するためのXMLスキーマについて説明します。
 lastmod: "2022-01-31"
 sitemap:

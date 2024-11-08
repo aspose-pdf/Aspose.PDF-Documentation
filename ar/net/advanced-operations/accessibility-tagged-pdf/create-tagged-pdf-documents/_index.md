@@ -3,7 +3,7 @@ title: إنشاء PDF موسوم باستخدام C#
 linktitle: إنشاء PDF موسوم
 type: docs
 weight: 10
-url: ar/net/create-tagged-pdf/
+url: /ar/net/create-tagged-pdf/
 description: يشرح هذا المقال كيفية إنشاء عناصر الهيكل لمستند PDF موسوم برمجيًا باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 إن إنشاء PDF موسوم يعني إضافة (أو إنشاء) عناصر معينة إلى الوثيقة والتي ستمكّن الوثيقة من المصادقة عليها وفقًا لمتطلبات PDF/UA. تسمى هذه العناصر غالبًا بعناصر الهيكل.
 
-يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إنشاء PDF موسوم (سيناريو بسيط)
 

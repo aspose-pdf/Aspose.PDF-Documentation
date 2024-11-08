@@ -3,7 +3,7 @@ title: Tambahkan Cap Gambar di PDF menggunakan Python
 linktitle: Cap Gambar di File PDF
 type: docs
 weight: 10
-url: id/python-net/image-stamps-in-pdf-page/
+url: /id/python-net/image-stamps-in-pdf-page/
 description: Tambahkan Cap Gambar dalam dokumen PDF Anda menggunakan kelas ImageStamp dengan perpustakaan Aspose.PDF untuk Python.
 lastmod: "2023-04-17"
 sitemap:

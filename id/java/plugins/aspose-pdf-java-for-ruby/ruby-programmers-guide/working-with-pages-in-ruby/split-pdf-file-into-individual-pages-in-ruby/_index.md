@@ -2,7 +2,7 @@
 title: Memisahkan File PDF Menjadi Halaman Individual dalam Ruby
 type: docs
 weight: 80
-url: id/java/split-pdf-file-into-individual-pages-in-ruby/
+url: /id/java/split-pdf-file-into-individual-pages-in-ruby/
 lastmod: "2021-06-05"
 ---
 

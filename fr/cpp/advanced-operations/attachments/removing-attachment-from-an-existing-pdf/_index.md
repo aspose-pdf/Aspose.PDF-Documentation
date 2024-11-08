@@ -3,7 +3,7 @@ title: Suppression de pièce jointe d'un PDF
 linktitle: Suppression de pièce jointe d'un PDF existant
 type: docs
 weight: 30
-url: fr/cpp/removing-attachment-from-an-existing-pdf/
+url: /fr/cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF pour C++ peut supprimer des pièces jointes de vos documents PDF. Utilisez l'API PDF C++ pour supprimer des pièces jointes dans les fichiers PDF en utilisant la bibliothèque Aspose.PDF.
 lastmod: "2022-02-07"
 sitemap:

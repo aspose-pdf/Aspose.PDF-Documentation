@@ -2,7 +2,7 @@
 title: 对齐 FullJustify 文本对齐
 type: docs
 weight: 40
-url: zh/reportingservices/justify-fulljustify-text-alignment/
+url: /zh/reportingservices/justify-fulljustify-text-alignment/
 lastmod: "2021-06-05"
 ---
 

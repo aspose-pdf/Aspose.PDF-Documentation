@@ -3,7 +3,7 @@ title: Extraer Imágenes de PDF en Node.js
 linktitle: Extraer Imágenes de PDF
 type: docs
 weight: 20
-url: es/nodejs-cpp/extract-images-from-the-pdf-file/
+url: /es/nodejs-cpp/extract-images-from-the-pdf-file/
 description: Cómo extraer una parte de la imagen de un PDF usando Aspose.PDF para Node.js via C++ toolkit.
 lastmod: "2023-11-16"
 sitemap:

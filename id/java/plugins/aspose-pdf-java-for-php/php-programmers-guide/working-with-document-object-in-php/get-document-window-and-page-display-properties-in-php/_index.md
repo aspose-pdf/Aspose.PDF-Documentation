@@ -2,7 +2,7 @@
 title: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman di PHP
 type: docs
 weight: 30
-url: id/java/get-document-window-and-page-display-properties-in-php/
+url: /id/java/get-document-window-and-page-display-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

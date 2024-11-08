@@ -3,7 +3,7 @@ title: Pythonを使用して図の注釈を追加する
 linktitle: 図の注釈
 type: docs
 weight: 30
-url: ja/python-net/figures-annotation/
+url: /ja/python-net/figures-annotation/
 description: この記事では、Aspose.PDF for Python via .NETを使用して、PDFドキュメントに対して図の注釈を追加、取得、削除する方法について説明します
 lastmod: "2023-02-17"
 sitemap:

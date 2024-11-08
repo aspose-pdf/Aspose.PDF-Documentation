@@ -2,7 +2,7 @@
 title: Converter PDF para Planilha Excel em Jython
 type: docs
 weight: 20
-url: pt/java/convert-pdf-to-excel-workbook-in-jython/
+url: /pt/java/convert-pdf-to-excel-workbook-in-jython/
 lastmod: "2021-06-05"
 ---
 

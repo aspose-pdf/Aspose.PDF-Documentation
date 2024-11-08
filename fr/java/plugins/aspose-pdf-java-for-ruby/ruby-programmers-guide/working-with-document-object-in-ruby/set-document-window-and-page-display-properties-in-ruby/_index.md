@@ -2,7 +2,7 @@
 title: Définir les propriétés de la fenêtre du document et de l'affichage des pages en Ruby
 type: docs
 weight: 100
-url: fr/java/set-document-window-and-page-display-properties-in-ruby/
+url: /fr/java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

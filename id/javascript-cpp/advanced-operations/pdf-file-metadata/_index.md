@@ -3,7 +3,7 @@ title: Bekerja dengan Metadata File PDF menggunakan JavaScript via C++
 linktitle: Metadata File PDF
 type: docs
 weight: 130
-url: id/javascript-cpp/pdf-file-metadata/
+url: /id/javascript-cpp/pdf-file-metadata/
 description: Bagian ini menjelaskan cara mendapatkan informasi file PDF, cara mendapatkan metadata dari file PDF, mengatur Informasi File PDF.
 lastmod: "2023-02-17"
 sitemap:

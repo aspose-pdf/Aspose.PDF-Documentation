@@ -3,7 +3,7 @@ title: الميزات الرئيسية لـ Aspose.PDF لـ Node.js
 linktitle: الميزات الرئيسية
 type: docs
 weight: 20
-url: ar/nodejs-cpp/key-features/
+url: /ar/nodejs-cpp/key-features/
 description: يعرض Aspose.PDF لـ Node.js عبر C++ ميزاته العامة. تصف هذه الصفحة إصدارات PDF المدعومة وجميع التلاعبات التي يمكننا القيام بها مع النصوص والصور والصفحات وما إلى ذلك.
 lastmod: "2023-11-16"
 sitemap:

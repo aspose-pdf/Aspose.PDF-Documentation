@@ -3,7 +3,7 @@ title: PDFドキュメントの作成
 linktitle: 作成
 type: docs
 weight: 10
-url: ja/php-java/create-document/
+url: /ja/php-java/create-document/
 description: Aspose.PDF for PHP via JavaでPDFファイルを作成する方法を学びます。
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 使用 .NET 5 合并 PDF 文件
 linktitle: 如何合并 PDF
 type: docs
 weight: 75
-url: zh/net/how-to-concatenate-pdf-files-in-different-ways/
+url: /zh/net/how-to-concatenate-pdf-files-in-different-ways/
 description: 本文解释了将任意数量的现有 PDF 文件合并为单个 PDF 文件的可能方法。
 lastmod: "2021-06-05"
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-本文描述了如何使用 [Aspose.PDF for .NET](/pdf/net/) 组件将多个 PDF 文档[合并](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)为单个 PDF 文档。[Aspose.PDF for .NET](/pdf/net/) 使这个工作变得非常简单。
+本文描述了如何使用 [Aspose.PDF for .NET](/pdf/zh/net/) 组件将多个 PDF 文档[合并](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)为单个 PDF 文档。[Aspose.PDF for .NET](/pdf/zh/net/) 使这个工作变得非常简单。
 
 {{% /alert %}}
 

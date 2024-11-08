@@ -2,7 +2,7 @@
 title: Obtenir les métadonnées XMP à partir d'un fichier PDF en Ruby
 type: docs
 weight: 60
-url: fr/java/get-xmp-metadata-from-pdf-file-in-ruby/
+url: /fr/java/get-xmp-metadata-from-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

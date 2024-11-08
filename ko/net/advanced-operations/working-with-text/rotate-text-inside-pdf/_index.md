@@ -3,7 +3,7 @@ title: PDF 내부 텍스트 회전하기 C#
 linktitle: PDF 내부 텍스트 회전하기
 type: docs
 weight: 50
-url: ko/net/rotate-text-inside-pdf/
+url: /ko/net/rotate-text-inside-pdf/
 description: PDF로 텍스트를 회전하는 다양한 방법을 배워보세요. Aspose.PDF를 사용하면 텍스트를 어떤 각도로든 회전시키고, 텍스트 조각이나 전체 단락을 회전할 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## PDF 내부에서 회전 속성을 사용하여 텍스트 회전
 

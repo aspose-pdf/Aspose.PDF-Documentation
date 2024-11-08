@@ -2,7 +2,7 @@
 title: Déplacer et Supprimer un Champ de Formulaire
 type: docs
 weight: 50
-url: fr/java/move-remove-form-field/
+url: /fr/java/move-remove-form-field/
 description: Cette section explique comment vous pouvez déplacer et supprimer des champs de formulaire avec la classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

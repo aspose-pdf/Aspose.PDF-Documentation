@@ -3,7 +3,7 @@ title: PythonでPDFサイズを最適化、圧縮または縮小
 linktitle: PDFを最適化
 type: docs
 weight: 30
-url: ja/python-net/optimize-pdf/
+url: /ja/python-net/optimize-pdf/
 keywords: "optimize pdf python"
 description: PDFファイルを最適化し、すべての画像を縮小し、PDFサイズを減らし、埋め込みフォントを削除し、Pythonで未使用のオブジェクトを除去します。
 lastmod: "2023-04-17"

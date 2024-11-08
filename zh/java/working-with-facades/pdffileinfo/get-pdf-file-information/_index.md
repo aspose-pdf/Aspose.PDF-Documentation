@@ -2,7 +2,7 @@
 title: 获取 PDF 文件信息 - 外观
 type: docs
 weight: 10
-url: zh/java/get-pdf-information/
+url: /zh/java/get-pdf-information/
 description: 本节说明如何使用 PdfFileInfo 类通过 Aspose.PDF Facades 获取 PDF 文件信息。
 lastmod: "2021-06-05"
 sitemap:

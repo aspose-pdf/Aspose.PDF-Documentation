@@ -2,7 +2,7 @@
 title: Installer sur le serveur de rapports
 type: docs
 weight: 10
-url: fr/reportingservices/install-to-report-server/
+url: /fr/reportingservices/install-to-report-server/
 lastmod: "2021-06-05"
 ---
 

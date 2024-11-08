@@ -3,7 +3,7 @@ title: Печать PDF на принтер XPS
 linktitle: Печать PDF на принтер XPS (Facades)
 type: docs
 weight: 20
-url: ru/net/printing-pdf-to-an-xps-printer-facades/
+url: /ru/net/printing-pdf-to-an-xps-printer-facades/
 keywords: "print pdf to xps, print pdf to xps c#"
 description: Эта страница показывает, как печатать PDF на принтере XPS с использованием класса PdfViewer.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "Эта страница показывает, как печатать PDF на принтере XPS с использованием класса PdfViewer."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## **Печать PDF на принтер XPS в C#**
 

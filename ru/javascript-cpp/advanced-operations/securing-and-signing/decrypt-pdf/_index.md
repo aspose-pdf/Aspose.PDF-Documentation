@@ -3,7 +3,7 @@ title: Расшифровать PDF с использованием JavaScript
 linktitle: Расшифровать PDF файл
 type: docs
 weight: 40
-url: ru/javascript-cpp/decrypt-pdf/
+url: /ru/javascript-cpp/decrypt-pdf/
 description: Расшифровать PDF файл с помощью Aspose.PDF для JavaScript через C++.
 lastmod: "2022-12-15"
 sitemap:

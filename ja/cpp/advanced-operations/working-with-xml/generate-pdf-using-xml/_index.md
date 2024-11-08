@@ -3,7 +3,7 @@ title: XMLからPDFを生成
 linktitle: XMLからPDFを生成
 type: docs
 weight: 10
-url: ja/cpp/generate-pdf-from-xml
+url: /ja/cpp/generate-pdf-from-xml
 description: Aspose.PDF for C++は、入力XMLファイルが必要なPDFドキュメントにXMLファイルを変換するためのいくつかの方法を提供します。
 lastmod: "2022-01-31"
 sitemap:

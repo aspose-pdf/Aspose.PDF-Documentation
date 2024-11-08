@@ -2,7 +2,7 @@
 title: العمل مع الصور
 type: docs
 weight: 30
-url: ar/java/working-with-image/
+url: /ar/java/working-with-image/
 description: يشرح هذا القسم كيفية استبدال الصور باستخدام Aspose.PDF Facades - مجموعة أدوات للعمليات الشائعة مع PDF.
 lastmod: "2021-06-25"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF 파일에 선 객체 추가
 linktitle: 선 추가
 type: docs
 weight: 40
-url: ko/cpp/add-line/
+url: /ko/cpp/add-line/
 description: 이 문서에서는 Aspose.PDF for C++를 사용하여 PDF에 선 객체를 추가하는 방법을 설명합니다.
 lastmod: "2021-12-18"
 sitemap:

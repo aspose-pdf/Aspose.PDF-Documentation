@@ -3,7 +3,7 @@ title: Cara Menggabungkan PDF menggunakan Python
 linktitle: Gabungkan file PDF
 type: docs
 weight: 50
-url: id/python-net/merge-pdf-documents/
+url: /id/python-net/merge-pdf-documents/
 keywords: "gabungkan beberapa pdf menjadi satu pdf python, gabungkan beberapa pdf menjadi satu python, gabungkan beberapa pdf menjadi satu python"
 description: Halaman ini menjelaskan cara menggabungkan dokumen PDF menjadi satu file PDF dengan Python.
 lastmod: "2023-04-14"

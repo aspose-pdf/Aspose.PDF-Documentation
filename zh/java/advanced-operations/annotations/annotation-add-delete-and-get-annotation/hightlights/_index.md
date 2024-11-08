@@ -3,7 +3,7 @@ title: PDF Highlights Annotation
 linktitle: Highlights Annotation
 type: docs
 weight: 20
-url: zh/java/highlights-annotation/
+url: /zh/java/highlights-annotation/
 description: 标记注释在文档的文本中以高亮、下划线、删除线或波浪下划线的形式呈现。
 lastmod: "2021-11-24"
 sitemap:

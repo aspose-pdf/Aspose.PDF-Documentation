@@ -2,7 +2,7 @@
 title: ボタンオプション値を取得する
 type: docs
 weight: 40
-url: ja/net/get-button-option-value/
+url: /ja/net/get-button-option-value/
 description: このセクションでは、Formクラスを使用してAspose.PDF Facadesでボタンオプション値を取得する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

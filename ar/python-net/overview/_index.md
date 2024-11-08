@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: ar/python-net/overview/
+url: /ar/python-net/overview/
 lastmod: "2022-12-20"
 description: نظرة عامة على الميزات الرئيسية والتنسيقات المدعومة لـ Aspose.PDF for Python عبر .NET ، دليل التثبيت والترخيص للمكتبة.
 sitemap:
@@ -31,9 +31,9 @@ _هذه الصفحة هي نظرة عامة على ميزات Aspose.PDF for Pyt
 
 تعرف على المزيد حول:
 
-- [تنسيقات الملفات المدعومة](/pdf/python-net/supported-file-formats/)
-- [الميزات الرئيسية لـ Aspose.PDF](/pdf/python-net/key-features/)
-- [متطلبات النظام](/pdf/python-net/system-requirements/)
-- [التثبيت](/pdf/python-net/installation/)
-- [الترخيص](/pdf/python-net/licensing/)
-- [الدعم الفني](/pdf/python-net/technical-support/)
+- [تنسيقات الملفات المدعومة](/pdf/ar/python-net/supported-file-formats/)
+- [الميزات الرئيسية لـ Aspose.PDF](/pdf/ar/python-net/key-features/)
+- [متطلبات النظام](/pdf/ar/python-net/system-requirements/)
+- [التثبيت](/pdf/ar/python-net/installation/)
+- [الترخيص](/pdf/ar/python-net/licensing/)
+- [الدعم الفني](/pdf/ar/python-net/technical-support/)

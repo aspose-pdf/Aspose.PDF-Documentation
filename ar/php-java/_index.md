@@ -4,7 +4,7 @@ linktitle: Aspose.PDF لبي إتش بي عبر جافا
 second_title: Aspose.PDF لبي إتش بي عبر جافا
 type: docs
 weight: 90
-url: ar/php-java/
+url: /ar/php-java/
 is_root: true
 lastmod: "2024-07-07"
 description: تعلم كيفية استخدام Aspose.PDF لبي إتش بي لإنشاء تطبيقات لمعالجة مستندات PDF. تصفح الدروس التعليمية، وأمثلة التعليمات البرمجية، والمزيد.
@@ -30,25 +30,25 @@ Aspose.PDF لبي إتش بي عبر جافا هو واجهة برمجة تطب�
 
 ## الفصول
 
-- [ما الجديد](/pdf/php-java/whatsnew/)
-- [نظرة عامة](/pdf/php-java/overview/)
-- [البدء](/pdf/php-java/get-started/)
-- [عمليات أساسية](/pdf/php-java/basic-operations/)
-- [تحويل المستندات](/pdf/php-java/converting/)
-- [تحليل مستندات PDF](/pdf/php-java/parsing/)
-- [عمليات متقدمة](/pdf/php-java/advanced-operations/)
+- [ما الجديد](/pdf/ar/php-java/whatsnew/)
+- [نظرة عامة](/pdf/ar/php-java/overview/)
+- [البدء](/pdf/ar/php-java/get-started/)
+- [عمليات أساسية](/pdf/ar/php-java/basic-operations/)
+- [تحويل المستندات](/pdf/ar/php-java/converting/)
+- [تحليل مستندات PDF](/pdf/ar/php-java/parsing/)
+- [عمليات متقدمة](/pdf/ar/php-java/advanced-operations/)
 - [ملاحظات الإصدار]()
 
 ## موارد Aspose.PDF for PHP عبر Java
 
 فيما يلي روابط لبعض الموارد المفيدة التي قد تحتاجها لإتمام مهامك.
 
-- [وثائق Aspose.PDF for PHP عبر Java على الإنترنت](/pdf/php-java/)
-- [ميزات Aspose.PDF for PHP عبر Java](/pdf/java/key-features/)
+- [وثائق Aspose.PDF for PHP عبر Java على الإنترنت](/pdf/ar/php-java/)
+- [ميزات Aspose.PDF for PHP عبر Java](/pdf/ar/java/key-features/)
 - ملاحظات إصدار Aspose.PDF for PHP عبر Java
 - [صفحة منتج Aspose.PDF for PHP عبر Java](https://products.aspose.com/pdf/php-java/)
 
-- [تحميل Aspose.PDF for PHP عبر Java](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)- [تثبيت Aspose.PDF لـ PHP عبر Java من مستودع Aspose](/pdf/php-java/installation/)
+- [تحميل Aspose.PDF for PHP عبر Java](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)- [تثبيت Aspose.PDF لـ PHP عبر Java من مستودع Aspose](/pdf/ar/php-java/installation/)
 - [دليل مرجعي لـ Aspose.PDF لـ PHP عبر Java API](https://reference.aspose.com/java/pdf)
 - [تحميل الأمثلة من مستودع GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)
 - [منتدى الدعم المجاني لـ Aspose.PDF لـ PHP عبر Java](https://forum.aspose.com/c/pdf)

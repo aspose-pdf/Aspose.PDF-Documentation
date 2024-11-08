@@ -2,7 +2,7 @@
 title: Eliminar Metadatos de PDF en Ruby
 type: docs
 weight: 90
-url: es/java/remove-metadata-from-pdf-in-ruby/
+url: /es/java/remove-metadata-from-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

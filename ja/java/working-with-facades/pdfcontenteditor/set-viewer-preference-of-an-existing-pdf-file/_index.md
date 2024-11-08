@@ -2,7 +2,7 @@
 title: 既存のPDFファイルのビュワー設定を設定する
 type: docs
 weight: 60
-url: ja/java/set-viewer-preference-of-an-existing-pdf-file/
+url: /ja/java/set-viewer-preference-of-an-existing-pdf-file/
 description: このセクションでは、PdfContentEditorクラスを使用してAspose.PDF Facadesを操作する方法を示します。
 lastmod: "2021-06-05"
 draft: false

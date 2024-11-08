@@ -3,7 +3,7 @@ title: Ajouter un en-tête et un pied de page au PDF
 linktitle: Ajouter un en-tête et un pied de page au PDF
 type: docs
 weight: 70
-url: fr/cpp/add-headers-and-footers-of-pdf-file/
+url: /fr/cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF pour C++ vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp.
 lastmod: "2021-12-08"
 sitemap:

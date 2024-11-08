@@ -2,7 +2,7 @@
 title: Получить Конкретную Страницу в PDF Файле на Python
 type: docs
 weight: 30
-url: ru/java/get-a-particular-page-in-a-pdf-file-in-python/
+url: /ru/java/get-a-particular-page-in-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Tips Cepat
 type: docs
 weight: 50
-url: id/java/quick-tips/
+url: /id/java/quick-tips/
 lastmod: "2022-01-27"
 ---
 

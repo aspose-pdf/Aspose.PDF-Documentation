@@ -2,7 +2,7 @@
 title: Criptografar Arquivo PDF
 type: docs
 weight: 10
-url: pt/java/encrypt-pdf-file/
+url: /pt/java/encrypt-pdf-file/
 description: Este tópico explica como Criptografar Arquivo PDF usando a Classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Faire pivoter le texte à l'intérieur d'un PDF en utilisant Python
 linktitle: Faire pivoter le texte à l'intérieur d'un PDF
 type: docs
 weight: 50
-url: fr/python-net/rotate-text-inside-pdf/
+url: /fr/python-net/rotate-text-inside-pdf/
 description: Découvrez différentes façons de faire pivoter du texte dans un PDF. Aspose.PDF vous permet de faire pivoter du texte à n'importe quel angle, de faire pivoter un fragment de texte ou un paragraphe entier.
 lastmod: "2024-02-17"
 sitemap:

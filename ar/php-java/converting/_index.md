@@ -3,7 +3,7 @@ title: تحويل مستندات PDF
 linktitle: تحويل مستندات PDF
 type: docs
 weight: 50
-url: ar/php-java/converting/
+url: /ar/php-java/converting/
 lastmod: "2024-05-20"
 description: تحتوي هذه القسم على وصف لجميع الخيارات الممكنة لتحويل مستندات PDF باستخدام مكتبة Aspose.PDF لـ PHP عبر Java.
 sitemap:
@@ -21,33 +21,33 @@ sitemap:
 
 تُعتبر مستندات Word الأكثر تنوعًا وإمكانية للتحرير. تحويل PDF إلى Word يدويًا هو مهمة تستغرق وقتًا طويلاً للغاية. في هذه المقالة، ستتعلم كيفية تحويل PDF إلى Word برمجيًا في PHP.
 
-- [تحويل PDF إلى Microsoft Word](/pdf/php-java/convert-pdf-to-word/) - يمكنك تحويل مستند PDF الخاص بك إلى تنسيق Word باستخدام Java
+- [تحويل PDF إلى Microsoft Word](/pdf/ar/php-java/convert-pdf-to-word/) - يمكنك تحويل مستند PDF الخاص بك إلى تنسيق Word باستخدام Java
 
 صيغ الأرقام ليست ضرورية فقط لجعل البيانات في الجدول أسهل للقراءة، ولكن أيضًا لجعل الجدول أسهل للاستخدام. بالطبع، إذا كنت بحاجة إلى تحويل مثل هذه البيانات من مستند PDF إلى تنسيق Excel، استخدم مكتبة Aspose.PDF الخاصة بنا.
 
-- [تحويل PDF إلى Microsoft Excel](/pdf/php-java/convert-pdf-to-excel/) - يصف هذا القسم كيفية تحويل مستند PDF إلى XLSX وODS وCSV وSpreadSheetML
+- [تحويل PDF إلى Microsoft Excel](/pdf/ar/php-java/convert-pdf-to-excel/) - يصف هذا القسم كيفية تحويل مستند PDF إلى XLSX وODS وCSV وSpreadSheetML
 
 يُستخدم تنسيق PowerPoint لإنشاء عروض تقديمية متنوعة. تحتوي ملفات PPT على عدد كبير من الشرائح أو الصفحات التي تحتوي على معلومات مختلفة.
 
-- [تحويل PDF إلى Microsoft PowerPoint](/pdf/php-java/convert-pdf-to-powerpoint/) - هنا نتحدث عن تحويل PDF إلى PowerPoint عن طريق تتبع عملية التحويل
+- [تحويل PDF إلى Microsoft PowerPoint](/pdf/ar/php-java/convert-pdf-to-powerpoint/) - هنا نتحدث عن تحويل PDF إلى PowerPoint عن طريق تتبع عملية التحويل
 
 
 لغة توصيف مستند النص الفائق هي لغة وصف مستند النص الفائق، وهي لغة قياسية لإنشاء صفحات الويب. باستخدام Aspose.PDF لـ PHP يمكنك بسهولة تحويل مستندات HTML والعكس.
 
-- [تحويل تنسيق HTML إلى ملف PDF](/pdf/php-java/convert-html-to-pdf/) - مقال حول الجوانب المختلفة لتحويل HTML إلى PDF
-- [تحويل ملف PDF إلى تنسيق HTML](/pdf/php-java/convert-pdf-to-html/) - تحويل مستندات PDF الخاصة بك إلى ملفات HTML كصفحات منفصلة أو كصفحة واحدة
+- [تحويل تنسيق HTML إلى ملف PDF](/pdf/ar/php-java/convert-html-to-pdf/) - مقال حول الجوانب المختلفة لتحويل HTML إلى PDF
+- [تحويل ملف PDF إلى تنسيق HTML](/pdf/ar/php-java/convert-pdf-to-html/) - تحويل مستندات PDF الخاصة بك إلى ملفات HTML كصفحات منفصلة أو كصفحة واحدة
 
 هناك العديد من تنسيقات الصور التي تحتاج إلى التحويل إلى PDF لأغراض مختلفة. يسمح Aspose.PDF بتحويل تنسيقات الصور الأكثر شيوعاً والعكس.
 
-- [تحويل تنسيقات الصور إلى ملف PDF](/pdf/php-java/convert-images-format-to-pdf/) - يسمح لك Aspose.PDF بتحويل تنسيقات مختلفة من الصور إلى ملف PDF
-- [تحويل PDF إلى تنسيقات صور مختلفة](/pdf/php-java/convert-pdf-to-images-format/) - تحويل صفحات PDF كصور بتنسيقات JPEG وPNG وتنسيقات أخرى
+- [تحويل تنسيقات الصور إلى ملف PDF](/pdf/ar/php-java/convert-images-format-to-pdf/) - يسمح لك Aspose.PDF بتحويل تنسيقات مختلفة من الصور إلى ملف PDF
+- [تحويل PDF إلى تنسيقات صور مختلفة](/pdf/ar/php-java/convert-pdf-to-images-format/) - تحويل صفحات PDF كصور بتنسيقات JPEG وPNG وتنسيقات أخرى
 
 تشمل هذه القسمات تنسيقات مثل: EPUB، Markdown، PCL، XPS، LATex/TeX، النص، وPostScript.
 
-- [تحويل صيغ الملفات الأخرى إلى PDF](/pdf/php-java/convert-other-files-to-pdf/) - هذا الموضوع يصف التحويل بصيغ مختلفة مثل EPUB، XPS، Postscript، النص وغيرها
-- [تحويل ملف PDF إلى صيغ أخرى](/pdf/php-java/convert-pdf-to-other-files/) - هذا الموضوع يصف طريقة تحويل مستند PDF إلى صيغ مختلفة
+- [تحويل صيغ الملفات الأخرى إلى PDF](/pdf/ar/php-java/convert-other-files-to-pdf/) - هذا الموضوع يصف التحويل بصيغ مختلفة مثل EPUB، XPS، Postscript، النص وغيرها
+- [تحويل ملف PDF إلى صيغ أخرى](/pdf/ar/php-java/convert-pdf-to-other-files/) - هذا الموضوع يصف طريقة تحويل مستند PDF إلى صيغ مختلفة
 
 PDF/A هو إصدار من PDF مصمم للأرشفة طويلة المدى للمستندات الإلكترونية. بصراحة، من الصعب جدًا تحديد ما إذا كان الملف PDF أو PDF/A من الخارج. للتحقق من هذا الملف، يتم استخدام أدوات التحقق. تحقق من المقالات التالية للحصول على تحويل عالي الجودة من PDF إلى PDF/A والعكس بالعكس.
 
-- [تحويل PDF إلى صيغ PDF/A](/pdf/php-java/convert-pdf-to-pdfa/) - مكتبة جافا بواسطة Aspose.PDF توفر طريقة سهلة لتحويل PDF إلى PDF/A
-- [تحويل PDF/A إلى صيغة PDF](/pdf/php-java/convert-pdfa-to-pdf/) - تحويل PDF/A إلى صيغة PDF باستخدام جافا بسهولة وسرعة وجودة عالية
+- [تحويل PDF إلى صيغ PDF/A](/pdf/ar/php-java/convert-pdf-to-pdfa/) - مكتبة جافا بواسطة Aspose.PDF توفر طريقة سهلة لتحويل PDF إلى PDF/A
+- [تحويل PDF/A إلى صيغة PDF](/pdf/ar/php-java/convert-pdfa-to-pdf/) - تحويل PDF/A إلى صيغة PDF باستخدام جافا بسهولة وسرعة وجودة عالية

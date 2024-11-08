@@ -3,7 +3,7 @@ title: Начало работы
 linktitle: Начало работы
 type: docs
 weight: 30
-url: ru/python-cpp/get-started/
+url: /ru/python-cpp/get-started/
 description: Эта страница представляет собой обзор, как использовать Aspose.PDF для Python через C++ для создания и редактирования PDF-документа
 lastmod: "2021-06-05"
 sitemap: 
@@ -39,6 +39,6 @@ Aspose.PDF for Python via C++ - это быстрое, легковесное и
 
 ### Узнать больше о:
 
-- ["Hello, World" Python Example](/pdf/python-cpp/hello-world-example/)
-- [Complex PDF](/pdf/python-cpp/complex-pdf-example/)
-- [How to run other examples](/pdf/python-cpp/how-to-run-other-examples/)
+- ["Hello, World" Python Example](/pdf/ru/python-cpp/hello-world-example/)
+- [Complex PDF](/pdf/ru/python-cpp/complex-pdf-example/)
+- [How to run other examples](/pdf/ru/python-cpp/how-to-run-other-examples/)

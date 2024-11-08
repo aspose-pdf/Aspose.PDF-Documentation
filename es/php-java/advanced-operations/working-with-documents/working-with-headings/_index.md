@@ -2,7 +2,7 @@
 title: Trabajando con Encabezados en PDF
 type: docs
 weight: 70
-url: es/php-java/working-with-headings/
+url: /es/php-java/working-with-headings/
 lastmod: "2024-06-05"
 description: Crea numeración en el encabezado de tu documento PDF usando PHP. Aspose.PDF para PHP vía Java ofrece diferentes tipos de estilos de numeración.
 sitemap:

@@ -2,7 +2,7 @@
 title: Установка Привилегий на Существующий PDF Файл
 type: docs
 weight: 50
-url: ru/java/set-privileges/
+url: /ru/java/set-privileges/
 description: Эта тема объясняет, как установить привилегии на существующий PDF файл, используя класс PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: 在 Python 中更新页面尺寸
 type: docs
 weight: 90
-url: zh/java/update-page-dimensions-in-python/
+url: /zh/java/update-page-dimensions-in-python/
 lastmod: "2021-06-05"
 ---
 

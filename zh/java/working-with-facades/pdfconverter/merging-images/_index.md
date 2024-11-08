@@ -2,7 +2,7 @@
 title: 合并图像
 type: docs
 weight: 10
-url: zh/java/merge-images/
+url: /zh/java/merge-images/
 description: 本节解释如何合并图像，并可以保存为Tiff格式。
 lastmod: "2021-07-01"
 draft: false

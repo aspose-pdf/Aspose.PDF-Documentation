@@ -3,7 +3,7 @@ title: 将各种图像格式转换为PDF
 linktitle: 将图像转换为PDF
 type: docs
 weight: 60
-url: zh/cpp/convert-images-format-to-pdf/
+url: /zh/cpp/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: 本主题向您展示如何使用Aspose.PDF for C++库将各种图像格式转换为PDF。
 sitemap:

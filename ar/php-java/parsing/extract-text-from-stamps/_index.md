@@ -2,7 +2,7 @@
 title: استخراج النص من الطوابع
 type: docs
 weight: 60
-url: ar/php-java/extract-text-from-stamps/
+url: /ar/php-java/extract-text-from-stamps/
 ---
 
 ## استخراج النص من تعليقات الطوابع

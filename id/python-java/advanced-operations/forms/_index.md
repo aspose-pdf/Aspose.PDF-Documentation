@@ -3,7 +3,7 @@ title: Bekerja dengan Formulir menggunakan Python
 linktitle: Formulir dalam dokumen PDF
 type: docs
 weight: 60
-url: id/python-java/forms/
+url: /id/python-java/forms/
 lastmod: "2023-05-19"
 description: Bagian ini berisi artikel yang berkaitan dengan bekerja dengan formulir dalam dokumen PDF menggunakan API Python.
 sitemap:

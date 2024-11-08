@@ -3,7 +3,7 @@ title: Генерация миниатюр изображений из PDF до�
 linktitle: Генерация миниатюр изображений
 type: docs
 weight: 100
-url: ru/java/generate-thumbnail-images-from-pdf-documents/
+url: /ru/java/generate-thumbnail-images-from-pdf-documents/
 description: В этом разделе описывается, как создать миниатюры изображений из PDF документов с использованием Aspose.PDF для Java.
 lastmod: "2021-06-05"
 ---

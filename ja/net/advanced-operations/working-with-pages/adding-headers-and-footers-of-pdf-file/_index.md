@@ -3,7 +3,7 @@ title: PDFにヘッダーとフッターを追加
 linktitle: PDFにヘッダーとフッターを追加
 type: docs
 weight: 70
-url: ja/net/add-headers-and-footers-of-pdf-file/
+url: /ja/net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for .NETを使用して、TextStampクラスを使用してPDFファイルにヘッダーとフッターを追加できます。
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 </script>
 **Aspose.PDF for .NET** では、既存のPDFファイルにヘッダーとフッターを追加することができます。PDFドキュメントに画像やテキストを追加することもできます。また、C#を使用して1つのPDFファイルに異なるヘッダーを追加することも試みてください。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも動作します。
 
 ## PDFファイルのヘッダーにテキストを追加
 

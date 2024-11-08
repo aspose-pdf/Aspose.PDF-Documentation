@@ -2,7 +2,7 @@
 title: PDFでフォームフィールドを装飾する
 type: docs
 weight: 20
-url: ja/net/decorate-form-field/
+url: /ja/net/decorate-form-field/
 description: このセクションでは、FormEditorクラスを使用してPDFのフォームフィールドを装飾する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: 기존 PDF에서 테이블 조작
 linktitle: 테이블 조작
 type: docs
 weight: 30
-url: ko/java/manipulate-tables-in-existing-pdf/
+url: /ko/java/manipulate-tables-in-existing-pdf/
 description: 기존 PDF 파일에서 테이블을 조작하고 Aspose.PDF for Java로 PDF 문서에서 오래된 테이블을 새 테이블로 교체합니다.
 lastmod: "2021-06-05"
 sitemap:

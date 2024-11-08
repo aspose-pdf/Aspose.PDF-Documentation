@@ -2,7 +2,7 @@
 title: Mengatur informasi file PDF - fasad
 type: docs
 weight: 20
-url: id/java/set-pdf-information/
+url: /id/java/set-pdf-information/
 description: Bagian ini menjelaskan cara mengatur informasi file PDF dengan Aspose.PDF Facades menggunakan Kelas PdfFileInfo.
 lastmod: "2021-06-05"
 sitemap:

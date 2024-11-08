@@ -3,7 +3,7 @@ title: تحويل ملفات PDF إلى مستندات Microsoft Word في .NET
 linktitle: تحويل PDF إلى Word
 type: docs
 weight: 10
-url: ar/net/convert-pdf-to-word/
+url: /ar/net/convert-pdf-to-word/
 lastmod: "2022-08-04"
 description: تعلم كيفية كتابة كود C# لتحويل PDF إلى صيغ Microsoft Word باستخدام Aspose.PDF لـ .NET. وضبط تحويل PDF إلى DOC(DOCX).
 sitemap:
@@ -33,7 +33,7 @@ _الصيغة_: **Word**
 - [C# تحويل PDF إلى Word](#csharp-pdf-to-doc)
 - [C# كيفية تحويل ملف PDF إلى Word](#csharp-pdf-to-docx)
 
-يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 ## تحويل PDF إلى ملفات DOC و DOCX
 
 إحدى الميزات الأكثر شعبية هي تحويل PDF إلى مستند Microsoft Word DOC، مما يجعل إدارة المحتوى أكثر سهولة. **Aspose.PDF لـ .NET** يتيح لك تحويل ملفات PDF إلى تنسيق DOC و DOCX بسرعة وكفاءة.
@@ -103,7 +103,7 @@ public static void ConvertPDFtoWordDocAdvanced()
 
 يقدم لك Aspose.PDF لـ .NET تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
 
-[![تحويل PDF إلى DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![تحويل PDF إلى DOC](/pdf/ar/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## تحويل PDF إلى ملف DOCX (Microsoft Word 2007-2021)
@@ -157,7 +157,7 @@ public static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 يقدم لك Aspose.PDF لـ .NET تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
 
-[![Aspose.PDF تحويل PDF إلى تطبيق Word المجاني](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF تحويل PDF إلى تطبيق Word المجاني](/pdf/ar/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

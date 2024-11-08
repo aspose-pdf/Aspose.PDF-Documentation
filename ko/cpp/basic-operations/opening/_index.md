@@ -3,7 +3,7 @@ title: C++를 사용하여 PDF 문서 열기
 linktitle: 열기
 type: docs
 weight: 20
-url: ko/cpp/open-pdf-document/
+url: /ko/cpp/open-pdf-document/
 description: Aspose.PDF의 다음 코드 조각으로 PDF 문서를 여는 C++ 라이브러리를 사용하십시오.
 lastmod: "2021-06-05"
 sitemap:

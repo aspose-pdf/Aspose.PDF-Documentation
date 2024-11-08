@@ -3,7 +3,7 @@ title: 기존 PDF에서 테이블 제거
 linktitle: 테이블 제거
 type: docs
 weight: 50
-url: ko/python-net/remove-tables-from-existing-pdf/
+url: /ko/python-net/remove-tables-from-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

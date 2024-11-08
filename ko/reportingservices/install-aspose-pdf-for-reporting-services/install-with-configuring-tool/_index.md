@@ -2,7 +2,7 @@
 title: Configuring Tool로 설치
 type: docs
 weight: 30
-url: ko/reportingservices/install-with-configuring-tool/
+url: /ko/reportingservices/install-with-configuring-tool/
 lastmod: "2021-06-05"
 ---
 

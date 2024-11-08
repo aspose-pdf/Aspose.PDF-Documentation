@@ -3,7 +3,7 @@ title: Adicionar selos de imagem em PDF programaticamente
 linktitle: Selos de imagem em arquivo PDF
 type: docs
 weight: 10
-url: pt/php-java/image-stamps-in-pdf-page/
+url: /pt/php-java/image-stamps-in-pdf-page/
 description: Adicione o selo de imagem no seu documento PDF usando a classe ImageStamp com a biblioteca Aspose.PDF para PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Características Clave de Aspose.PDF
 linktitle: Características Clave
 type: docs
 weight: 80
-url: es/java/key-features/
+url: /es/java/key-features/
 description: Aspose.PDF para Java muestra las principales características y describe las versiones de PDF soportadas, y todas las manipulaciones que podemos hacer con documentos.
 lastmod: "2021-06-05"
 sitemap:

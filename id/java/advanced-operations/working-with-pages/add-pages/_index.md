@@ -3,7 +3,7 @@ title: Tambahkan Halaman dalam PDF
 linktitle: Tambahkan Halaman
 type: docs
 weight: 10
-url: id/java/add-pages/
+url: /id/java/add-pages/
 description: Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghapus) halaman dari file PDF menggunakan pustaka Java.
 lastmod: "2021-06-05"
 sitemap:

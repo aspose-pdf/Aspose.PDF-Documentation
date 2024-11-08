@@ -3,7 +3,7 @@ title: Formatage du texte dans un PDF en utilisant C++
 linktitle: Formatage du texte dans un PDF
 type: docs
 weight: 30
-url: fr/cpp/text-formatting-inside-pdf/
+url: /fr/cpp/text-formatting-inside-pdf/
 description: Cette page explique comment formater le texte dans votre fichier PDF. Il s'agit d'ajouter un retrait de ligne, d'ajouter une bordure de texte, d'ajouter du texte souligné, d'ajouter une bordure autour du texte ajouté, d'aligner le texte pour le contenu des boîtes flottantes, etc.
 lastmod: "2021-12-13"
 sitemap:

@@ -3,7 +3,7 @@ title: Ajouter des tampons de texte dans un fichier PDF
 linktitle: Tampons de texte dans un fichier PDF
 type: docs
 weight: 20
-url: fr/cpp/text-stamps-in-the-pdf-file/
+url: /fr/cpp/text-stamps-in-the-pdf-file/
 description: Ajoutez un tampon de texte à un fichier PDF en utilisant la classe TextStamp avec C++.
 lastmod: "2021-12-05"
 sitemap:

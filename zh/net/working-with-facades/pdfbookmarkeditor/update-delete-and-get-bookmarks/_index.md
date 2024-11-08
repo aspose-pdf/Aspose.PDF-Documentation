@@ -2,7 +2,7 @@
 title: 更新、删除和获取书签
 type: docs
 weight: 30
-url: zh/net/update-delete-and-get-bookmarks/
+url: /zh/net/update-delete-and-get-bookmarks/
 description: 本节解释如何使用 Aspose.PDF Facades 更新、删除和获取书签。
 lastmod: "2021-06-05"
 draft: false

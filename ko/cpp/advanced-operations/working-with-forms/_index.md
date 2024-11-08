@@ -3,7 +3,7 @@ title: C++를 사용한 양식 작업
 linktitle: 양식 작업
 type: docs
 weight: 50
-url: ko/cpp/working-with-forms/
+url: /ko/cpp/working-with-forms/
 description: 이 섹션은 Aspose.PDF for C++로 PDF 문서에서 AcroForms와 XFA Forms를 사용하는 방법을 설명합니다.
 lastmod: "2021-11-30"
 sitemap:
@@ -21,5 +21,5 @@ Aspose.PDF for C++는 PDF 문서에서 양식을 효율적으로 작업할 수 �
 
 이 문서의 다음 섹션을 학습하여 이러한 질문에 대한 답변과 많은 다른 것들을 찾을 수 있습니다.
 
-- [AcroForms](/pdf/cpp/acroforms/) - 양식 생성, 양식 필드 채우기, 양식에서 데이터 추출, C++ 라이브러리로 PDF의 필드를 수정합니다.
-- [XFA Forms](/pdf/cpp/xfa-forms/) - XFA 필드 작성, XFA 변환, XFA 필드 속성 가져오기.
+- [AcroForms](/pdf/ko/cpp/acroforms/) - 양식 생성, 양식 필드 채우기, 양식에서 데이터 추출, C++ 라이브러리로 PDF의 필드를 수정합니다.
+- [XFA Forms](/pdf/ko/cpp/xfa-forms/) - XFA 필드 작성, XFA 변환, XFA 필드 속성 가져오기.

@@ -3,7 +3,7 @@ title: ブックマークの追加と削除
 linktitle: ブックマークの追加と削除
 type: docs
 weight: 10
-url: ja/java/add-and-delete-bookmark/
+url: /ja/java/add-and-delete-bookmark/
 description: JavaでPDFドキュメントにブックマークを追加できます。PDFドキュメントからすべてまたは特定のブックマークを削除することが可能です。
 lastmod: "2021-06-05"
 sitemap:

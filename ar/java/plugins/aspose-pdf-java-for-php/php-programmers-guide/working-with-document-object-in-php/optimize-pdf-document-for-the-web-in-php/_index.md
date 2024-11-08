@@ -2,7 +2,7 @@
 title: تحسين مستند PDF للويب في PHP
 type: docs
 weight: 60
-url: ar/java/optimize-pdf-document-for-the-web-in-php/
+url: /ar/java/optimize-pdf-document-for-the-web-in-php/
 lastmod: "2021-06-05"
 ---
 

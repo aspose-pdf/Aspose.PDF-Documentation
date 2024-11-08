@@ -2,7 +2,7 @@
 title: 메소드 이름의 변경
 type: docs
 weight: 10
-url: ko/java/change-in-methods-name/
+url: /ko/java/change-in-methods-name/
 lastmod: "2022-01-27"
 ---
 

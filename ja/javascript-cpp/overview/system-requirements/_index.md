@@ -3,7 +3,7 @@ title: Aspose.PDF for JavaScript のシステム要件
 linktitle: システム要件
 type: docs
 weight: 30
-url: ja/javascript-cpp/system-requirements/
+url: /ja/javascript-cpp/system-requirements/
 description: このセクションでは、C++ 経由で Aspose.PDF for JavaScript を使用するために必要なサポートされているオペレーティングシステムを一覧表示します。
 lastmod: "2022-12-13"
 sitemap:

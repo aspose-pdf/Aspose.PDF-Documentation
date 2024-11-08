@@ -2,7 +2,7 @@
 title: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman dalam Python
 type: docs
 weight: 30
-url: id/java/get-document-window-and-page-display-properties-in-python/
+url: /id/java/get-document-window-and-page-display-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

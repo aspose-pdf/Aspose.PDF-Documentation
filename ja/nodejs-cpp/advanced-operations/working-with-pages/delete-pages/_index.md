@@ -3,7 +3,7 @@ title: Node.jsでPDFのページを削除する
 linktitle: PDFページを削除
 type: docs
 weight: 30
-url: ja/nodejs-cpp/delete-pages/
+url: /ja/nodejs-cpp/delete-pages/
 description: Aspose.PDF for Node.js via C++を使用してPDFファイルからページを削除できます。
 lastmod: "2023-11-16"
 sitemap:

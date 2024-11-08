@@ -3,7 +3,7 @@ title: PDFファイルにテキストスタンプを追加
 linktitle: PDFファイルにテキストスタンプ
 type: docs
 weight: 20
-url: ja/cpp/text-stamps-in-the-pdf-file/
+url: /ja/cpp/text-stamps-in-the-pdf-file/
 description: C++を使用してTextStampクラスでPDFファイルにテキストスタンプを追加します。
 lastmod: "2021-12-05"
 sitemap:

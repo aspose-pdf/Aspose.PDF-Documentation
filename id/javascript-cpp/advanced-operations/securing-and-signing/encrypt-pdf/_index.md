@@ -3,7 +3,7 @@ title: Mengenkripsi PDF menggunakan JavaScript
 linktitle: Mengenkripsi Berkas PDF
 type: docs
 weight: 50
-url: id/javascript-cpp/encrypt-pdf/
+url: /id/javascript-cpp/encrypt-pdf/
 description: Mengenkripsi Berkas PDF dengan Aspose.PDF untuk JavaScript via C++.
 lastmod: "2022-12-15"
 sitemap:

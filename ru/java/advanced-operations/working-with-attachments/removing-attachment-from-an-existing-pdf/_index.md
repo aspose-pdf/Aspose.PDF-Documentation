@@ -3,7 +3,7 @@ title: Удаление вложения из существующего PDF
 linktitle: Удаление вложения из существующего PDF
 type: docs
 weight: 30
-url: ru/java/removing-attachment-from-an-existing-pdf/
+url: /ru/java/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF может удалять вложения из ваших PDF-документов. Используйте Java PDF API для удаления вложений в PDF-файлах с помощью библиотеки Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

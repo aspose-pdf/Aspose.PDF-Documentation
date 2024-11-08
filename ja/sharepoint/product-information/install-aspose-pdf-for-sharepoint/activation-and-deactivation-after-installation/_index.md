@@ -2,7 +2,7 @@
 title: インストール後の有効化と無効化
 type: docs
 weight: 40
-url: ja/sharepoint/activation-and-deactivation-after-installation/
+url: /ja/sharepoint/activation-and-deactivation-after-installation/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIのインストール後、サイトコレクションのルートウェブサイトでサイトアクションメニューを使用して有効化および無効化できます。
 ---

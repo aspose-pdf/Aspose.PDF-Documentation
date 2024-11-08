@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: ko/jasperreports/working-with-jasperreports/
+url: /ko/jasperreports/working-with-jasperreports/
 
 lastmod: "2021-06-05"
 
@@ -24,11 +24,11 @@ Aspose.Words for JasperReports는 다운로드 페이지에서 무료로 시간 
 
 라이선스를 활성화하는 몇 가지 방법이 있습니다:
 
-- [setLicense 호출하기](/pdf/jasperreports/working-with-jasperreports/#call-setlicense).
+- [setLicense 호출하기](/pdf/ko/jasperreports/working-with-jasperreports/#call-setlicense).
 
-- [코드에서 내보내기 매개변수 설정하기](/pdf/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
+- [코드에서 내보내기 매개변수 설정하기](/pdf/ko/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
 
-- [**applicationContext.xml**에서 내보내기 매개변수 설정](/pdf/jasperreports/working-with-jasperserver/).
+- [**applicationContext.xml**에서 내보내기 매개변수 설정](/pdf/ko/jasperreports/working-with-jasperserver/).
 
 
 

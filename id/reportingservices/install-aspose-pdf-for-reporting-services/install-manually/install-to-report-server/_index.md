@@ -2,7 +2,7 @@
 title: Installasi ke Server Laporan
 type: docs
 weight: 10
-url: id/reportingservices/install-to-report-server/
+url: /id/reportingservices/install-to-report-server/
 lastmod: "2021-06-05"
 ---
 

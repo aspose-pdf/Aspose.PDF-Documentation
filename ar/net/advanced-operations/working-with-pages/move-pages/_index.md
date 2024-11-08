@@ -3,7 +3,7 @@ title: نقل صفحات PDF برمجيًا باستخدام C#
 linktitle: نقل صفحات PDF
 type: docs
 weight: 20
-url: ar/net/move-pages/
+url: /ar/net/move-pages/
 description: حاول نقل الصفحات إلى الموقع المطلوب أو في نهاية ملف PDF باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 هذا الموضوع يشرح كيفية نقل صفحة من مستند PDF إلى نهاية مستند آخر باستخدام C#.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 لنقل صفحة يجب أن:
 

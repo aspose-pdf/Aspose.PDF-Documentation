@@ -3,7 +3,7 @@ title: Извлечение абзаца из PDF
 linktitle: Извлечение абзаца
 type: docs
 weight: 20
-url: ru/java/extract-paragraph-from-pdf/
+url: /ru/java/extract-paragraph-from-pdf/
 description: В этой статье описывается, как использовать ParagraphAbsorber - специальный инструмент в Aspose.PDF для извлечения текста из PDF-документов.
 lastmod: "2021-06-05"
 sitemap:

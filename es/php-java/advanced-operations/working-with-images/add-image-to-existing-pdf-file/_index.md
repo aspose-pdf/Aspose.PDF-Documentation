@@ -3,7 +3,7 @@ title: Agregar Imagen a Archivo PDF Existente
 linktitle: Agregar Imagen
 type: docs
 weight: 10
-url: es/php-java/add-image-to-existing-pdf-file/
+url: /es/php-java/add-image-to-existing-pdf-file/
 description: Esta sección describe cómo agregar una imagen a un archivo PDF existente usando PHP.
 lastmod: "2024-06-05"
 ---

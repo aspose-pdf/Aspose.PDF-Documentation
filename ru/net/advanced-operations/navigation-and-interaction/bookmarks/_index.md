@@ -3,7 +3,7 @@ title: Работа с закладками в PDF с использование
 linktitle: Закладки
 type: docs
 weight: 30
-url: ru/net/bookmarks/
+url: /ru/net/bookmarks/
 description: Этот раздел объясняет, как добавлять, удалять и получать закладки с помощью Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,8 +81,8 @@ aliases:
 Закладки PDF — это удобный и необходимый инструмент при чтении файлов PDF. Они позволяют пользователям быстро переходить в другие места документа PDF, навигировать по страницам и быстро просматривать содержимое PDF, как оглавление.
 В этом разделе вы узнаете, как:
 
-- [Добавить и удалить закладку](/pdf/net/add-and-delete-bookmark/)
-- [Получить, обновить и расширить закладку](/pdf/net/get-update-and-expand-bookmark/)
+- [Добавить и удалить закладку](/pdf/ru/net/add-and-delete-bookmark/)
+- [Получить, обновить и расширить закладку](/pdf/ru/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: Extraer fuentes de PDF
 linktitle: Extraer fuentes
 type: docs
 weight: 30
-url: es/java/extract-fonts-from-pdf/
+url: /es/java/extract-fonts-from-pdf/
 description: Cómo extraer fuentes de PDF usando Aspose.PDF para Java
 lastmod: "2021-06-05"
 sitemap:

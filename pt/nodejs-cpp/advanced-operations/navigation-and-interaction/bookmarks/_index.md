@@ -3,7 +3,7 @@ title: Marcadores em PDF no Node.js
 linktitle: Marcadores em PDF
 type: docs
 weight: 10
-url: pt/nodejs-cpp/bookmark/
+url: /pt/nodejs-cpp/bookmark/
 description: Você pode adicionar ou deletar marcadores em um documento PDF no ambiente Node.js.
 lastmod: "2023-11-16"
 sitemap:

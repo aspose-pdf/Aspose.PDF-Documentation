@@ -3,7 +3,7 @@ title: Membuat Dokumen PDF secara Programatis
 linktitle: Membuat PDF
 type: docs
 weight: 10
-url: id/python-net/create-document/
+url: /id/python-net/create-document/
 description: Halaman ini menjelaskan cara membuat dokumen PDF dari awal dengan Aspose.PDF untuk Python via .NET library.
 ---
 

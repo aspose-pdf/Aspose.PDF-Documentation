@@ -3,7 +3,7 @@ title: Trabajando con Marcadores en PDF usando Python
 linktitle: Marcadores
 type: docs
 weight: 30
-url: es/python-net/bookmarks/
+url: /es/python-net/bookmarks/
 description: Esta sección explica cómo agregar, eliminar y obtener marcadores con Aspose.PDF para Python a través de .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -82,5 +82,5 @@ Usar marcadores en PDF es una característica muy útil. Con ellos, puedes confi
 Los marcadores de PDF son una herramienta práctica y esencial cuando se trata de leer archivos PDF. Permiten a los usuarios saltar rápidamente a otros lugares en un documento PDF, navegar a través de las páginas y ver rápidamente el contenido de un PDF, al igual que una tabla de contenido.
 En esta sección aprenderás cómo:
 
-- [Agregar y Eliminar un Marcador](/pdf/python-net/add-and-delete-bookmark/)
-- [Obtener, Actualizar y Expandir un Marcador](/pdf/python-net/get-update-and-expand-bookmark/)
+- [Agregar y Eliminar un Marcador](/pdf/es/python-net/add-and-delete-bookmark/)
+- [Obtener, Actualizar y Expandir un Marcador](/pdf/es/python-net/get-update-and-expand-bookmark/)

@@ -3,7 +3,7 @@ title: PDF 문서 저장
 linktitle: 저장
 type: docs
 weight: 30
-url: ko/java/save-pdf-document/
+url: /ko/java/save-pdf-document/
 description: Aspose.PDF for Java 라이브러리를 사용하여 PDF 파일을 저장하는 방법을 배웁니다.
 lastmod: "2021-06-05"
 sitemap:

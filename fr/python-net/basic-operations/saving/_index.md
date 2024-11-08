@@ -3,7 +3,7 @@ title: Sauvegarder le document PDF par programmation
 linktitle: Sauvegarder PDF
 type: docs
 weight: 30
-url: fr/python-net/save-pdf-document/
+url: /fr/python-net/save-pdf-document/
 description: Apprenez à sauvegarder un fichier PDF dans la bibliothèque Aspose.PDF pour Python via .NET. Sauvegardez le document PDF dans le système de fichiers, dans un flux, et dans les applications Web.
 lastmod: "2022-12-22"
 sitemap:

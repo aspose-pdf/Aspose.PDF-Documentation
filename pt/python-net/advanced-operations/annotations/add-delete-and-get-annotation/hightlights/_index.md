@@ -3,7 +3,7 @@ title: Anotação de Destaques em PDF usando Python
 linktitle: Anotação de Destaques
 type: docs
 weight: 20
-url: pt/python-net/highlights-annotation/
+url: /pt/python-net/highlights-annotation/
 description: As anotações de marcação são apresentadas no texto como destaques, sublinhados, tachados ou sublinhados irregulares no texto de um documento.
 lastmod: "2023-02-17"
 sitemap:

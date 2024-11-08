@@ -3,7 +3,7 @@ title: إضافة رأس وتذييل إلى PDF عبر JavaScript عبر C++
 linktitle: إضافة رأس وتذييل إلى PDF
 type: docs
 weight: 70
-url: ar/javascript-cpp/add-headers-and-footers-of-pdf-file/
+url: /ar/javascript-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for JavaScript via C++ يتيح لك إضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام AsposePdfAddTextHeaderFooter.
 lastmod: "2023-02-17"
 sitemap:

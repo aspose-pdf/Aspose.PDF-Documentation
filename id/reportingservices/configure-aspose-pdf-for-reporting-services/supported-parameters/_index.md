@@ -2,7 +2,7 @@
 title: Supported Parameters
 type: docs
 weight: 20
-url: id/reportingservices/supported-parameters/
+url: /id/reportingservices/supported-parameters/
 lastmod: "2021-06-05"
 ---
 
@@ -12,13 +12,13 @@ Saat ini, renderer Aspose.Pdf mendukung berbagai macam parameter, seperti:
 
 **Bagian ini mencakup topik-topik berikut:**
 
-- [Orientasi Halaman](/pdf/reportingservices/page-orientation/)
-- [Pemformatan HTML](/pdf/reportingservices/html-formatting/)
-- [Pengaturan Keamanan](/pdf/reportingservices/security-setting/)
-- [IsFontEmbedded](/pdf/reportingservices/isfontembedded/)
+- [Orientasi Halaman](/pdf/id/reportingservices/page-orientation/)
+- [Pemformatan HTML](/pdf/id/reportingservices/html-formatting/)
+- [Pengaturan Keamanan](/pdf/id/reportingservices/security-setting/)
+- [IsFontEmbedded](/pdf/id/reportingservices/isfontembedded/)
 
-- [Ukuran Halaman](/pdf/reportingservices/pagesize/)
-- [Ukuran margin halaman](/pdf/reportingservices/page-margin-size/)
-- [Metadata XMP](/pdf/reportingservices/xmp-metadata/)
-- [Informasi Debug](/pdf/reportingservices/debug-information/)
-- [Kepatuhan PDF_A](/pdf/reportingservices/pdf_a-conformance/)
+- [Ukuran Halaman](/pdf/id/reportingservices/pagesize/)
+- [Ukuran margin halaman](/pdf/id/reportingservices/page-margin-size/)
+- [Metadata XMP](/pdf/id/reportingservices/xmp-metadata/)
+- [Informasi Debug](/pdf/id/reportingservices/debug-information/)
+- [Kepatuhan PDF_A](/pdf/id/reportingservices/pdf_a-conformance/)

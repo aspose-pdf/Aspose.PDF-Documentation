@@ -3,7 +3,7 @@ title: PDFから画像を抽出するJavaScript
 linktitle: PDFから画像を抽出する
 type: docs
 weight: 20
-url: ja/javascript-cpp/extract-images-from-the-pdf-file/
+url: /ja/javascript-cpp/extract-images-from-the-pdf-file/
 description: Aspose.PDF for JavaScriptツールキットを使用してPDFから画像の一部を抽出する方法。
 lastmod: "2023-09-05"
 sitemap:

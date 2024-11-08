@@ -3,7 +3,7 @@ title: Tambahkan Gambar ke PDF menggunakan Python
 linktitle: Tambahkan Gambar
 type: docs
 weight: 10
-url: id/python-net/add-image-to-existing-pdf-file/
+url: /id/python-net/add-image-to-existing-pdf-file/
 description: Bagian ini menjelaskan bagaimana menambahkan gambar ke file PDF yang sudah ada menggunakan pustaka Python.
 lastmod: "2022-02-17"
 ---

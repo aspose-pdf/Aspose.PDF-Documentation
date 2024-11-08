@@ -3,7 +3,7 @@ title: Suppression de pièce jointe d'un PDF existant
 linktitle: Suppression de pièce jointe d'un PDF existant
 type: docs
 weight: 30
-url: fr/java/removing-attachment-from-an-existing-pdf/
+url: /fr/java/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF peut supprimer des pièces jointes de vos documents PDF. Utilisez l'API Java PDF pour supprimer des pièces jointes dans les fichiers PDF avec la bibliothèque Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

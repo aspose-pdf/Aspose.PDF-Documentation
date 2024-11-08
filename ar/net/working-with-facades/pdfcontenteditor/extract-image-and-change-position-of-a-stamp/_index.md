@@ -2,7 +2,7 @@
 title: استخراج الصورة وتغيير موضع الختم
 type: docs
 weight: 30
-url: ar/net/extract-image-and-change-position-of-a-stamp/
+url: /ar/net/extract-image-and-change-position-of-a-stamp/
 description: يشرح هذا القسم كيفية استخراج الصورة وتغيير موضع الختم باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

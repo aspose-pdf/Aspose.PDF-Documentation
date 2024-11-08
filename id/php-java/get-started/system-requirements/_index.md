@@ -3,7 +3,7 @@ title: Persyaratan Sistem
 linktitle: Persyaratan Sistem
 type: docs
 weight: 30
-url: id/php-java/system-requirements/
+url: /id/php-java/system-requirements/
 description: Bagian ini mencantumkan sistem operasi yang didukung yang dibutuhkan oleh pengembang untuk berhasil bekerja dengan Aspose.PDF untuk PHP melalui Java.
 lastmod: "2024-06-05"
 sitemap:

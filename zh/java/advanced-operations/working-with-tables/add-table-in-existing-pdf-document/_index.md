@@ -3,7 +3,7 @@ title: 创建或添加表格到PDF
 linktitle: 创建或添加表格
 type: docs
 weight: 10
-url: zh/java/add-table-in-existing-pdf-document/
+url: /zh/java/add-table-in-existing-pdf-document/
 description: 学习如何在PDF文档中创建或添加表格，应用单元格样式，拆分表格到页面上，并自定义行和列等。
 lastmod: "2021-12-16"
 sitemap:

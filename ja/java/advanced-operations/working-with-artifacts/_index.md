@@ -3,7 +3,7 @@ title: アーティファクトの操作
 linktitle: アーティファクトの操作
 type: docs
 weight: 110
-url: ja/java/artifacts/
+url: /ja/java/artifacts/
 description: このページでは、Aspose.PDF for Java を使用してアーティファクトクラスを操作する方法について説明します。コードスニペットは、PDF ページに背景画像を追加する方法と、PDF ファイルの最初のページにある各透かしを取得する方法を示しています。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDFにページ番号を追加するC++
 linktitle: ページ番号を追加
 type: docs
 weight: 100
-url: ja/cpp/add-page-number/
+url: /ja/cpp/add-page-number/
 description: Aspose.PDF for C++を使用して、PageNumber Stampクラスを使用してPDFファイルにページ番号スタンプを追加できます。
 lastmod: "2021-12-03"
 sitemap:

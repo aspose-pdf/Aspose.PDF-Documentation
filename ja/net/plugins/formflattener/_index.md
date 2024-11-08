@@ -2,7 +2,7 @@
 title: フォームエクスポーター
 type: docs
 weight: 60
-url: ja/net/plugins/formflattener/
+url: /ja/net/plugins/formflattener/
 description: Aspose.PDF FormFlattenerプラグインを使用してPDFファイルのフォームフィールドをフラット化する方法
 lastmod: "2024-01-24"
 ---

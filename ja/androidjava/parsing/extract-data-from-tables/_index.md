@@ -3,7 +3,7 @@ title: PDFから表データを抽出する
 linktitle: 表データの抽出
 type: docs
 weight: 40
-url: ja/androidjava/extract-data-from-table-in-pdf/
+url: /ja/androidjava/extract-data-from-table-in-pdf/
 description: Aspose.PDF for Android via Javaを使用してPDFから表形式データを抽出する方法を学びます。
 lastmod: "2021-06-05"
 sitemap:
@@ -172,7 +172,7 @@ public void extractMarkedTable () {
 
 ## PDFからテーブルデータを抽出してCSVファイルに保存する
 
-次の例は、テーブルを抽出してCSVファイルとして保存する方法を示しています。PDFをExcelスプレッドシートに変換する方法については、[PDFをExcelに変換する](/pdf/java/convert-pdf-to-excel/)記事を参照してください。
+次の例は、テーブルを抽出してCSVファイルとして保存する方法を示しています。PDFをExcelスプレッドシートに変換する方法については、[PDFをExcelに変換する](/pdf/ja/java/convert-pdf-to-excel/)記事を参照してください。
 
 ```java
  public void extractTableSaveCSV () {

@@ -2,7 +2,7 @@
 title: Reporting Services 및 SharePoint 구성
 type: docs
 weight: 40
-url: ko/reportingservices/reporting-services-and-sharepoint-configuration/
+url: /ko/reportingservices/reporting-services-and-sharepoint-configuration/
 lastmod: "2021-06-05"
 ---
 

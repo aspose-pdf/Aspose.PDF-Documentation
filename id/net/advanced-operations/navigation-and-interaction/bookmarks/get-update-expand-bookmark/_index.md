@@ -3,7 +3,7 @@ title: Tambah dan Hapus Penanda
 linktitle: Tambah dan Hapus Penanda
 type: docs
 weight: 10
-url: id/net/add-and-delete-bookmark/
+url: /id/net/add-and-delete-bookmark/
 description: Anda dapat menambahkan penanda pada dokumen PDF dengan C#. Anda juga dapat menghapus semua atau penanda tertentu dari dokumen PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "Anda dapat menambahkan penanda pada dokumen PDF dengan C#. Anda juga dapat menghapus semua atau penanda tertentu dari dokumen PDF."
 }
 </script>
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Menambahkan Bookmark pada Dokumen PDF
 

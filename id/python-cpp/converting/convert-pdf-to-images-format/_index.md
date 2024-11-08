@@ -3,7 +3,7 @@ title: Mengubah PDF ke Berbagai Format Gambar di Python
 linktitle: Mengubah PDF ke Gambar
 type: docs
 weight: 70
-url: id/python-cpp/convert-pdf-to-images-format/
+url: /id/python-cpp/convert-pdf-to-images-format/
 lastmod: "2023-06-23"
 description: Topik ini menunjukkan kepada Anda bagaimana menggunakan Aspose.PDF untuk Python untuk mengubah PDF ke berbagai format gambar seperti TIFF, BMP, EMF, JPEG, PNG, GIF, SVG dengan beberapa baris kode.
 sitemap:

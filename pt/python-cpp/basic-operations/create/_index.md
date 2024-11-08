@@ -3,7 +3,7 @@ title: Criar documento PDF
 linktitle: Criar PDF
 type: docs
 weight: 10
-url: pt/python-cpp/create-document/
+url: /pt/python-cpp/create-document/
 description: Esta página descreve como criar um documento PDF do zero com Aspose.PDF para Python via biblioteca C++.
 ---
 

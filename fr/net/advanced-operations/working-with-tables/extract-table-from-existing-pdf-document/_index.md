@@ -3,7 +3,7 @@ title: Extraire un tableau d'un document PDF
 linktitle: Extraire un tableau
 type: docs
 weight: 20
-url: fr/net/extract-table-from-existing-pdf-document/
+url: /fr/net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF pour .NET permet de réaliser diverses manipulations avec les tableaux contenus dans votre document PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Extraire une table de PDF
 

@@ -2,7 +2,7 @@
 title: 주석 추출 (파사드)
 type: docs
 weight: 30
-url: ko/java/extract-annotation/
+url: /ko/java/extract-annotation/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF 파일에서 XFDF로 주석을 추출하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

@@ -4,7 +4,7 @@ title: نظرة عامة على المنتج
 
 weight: 10
 
-url: ar/sharepoint/product-overview/
+url: /ar/sharepoint/product-overview/
 
 lastmod: "2020-12-16"
 
@@ -39,7 +39,7 @@ Aspose.PDF لـ SharePoint مصمم للاستخدام مع Microsoft SharePoint
 
 
 
-يصف هذا التوثيق ميزات Aspose.PDF لـ SharePoint، [التثبيت](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)، [قيود التقييم](/pdf/sharepoint/evaluate-aspose-pdf/)، [الترخيص](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)، حالات الاستخدام الشائعة والإعدادات.
+يصف هذا التوثيق ميزات Aspose.PDF لـ SharePoint، [التثبيت](/pdf/ar/sharepoint/install-aspose-pdf-for-sharepoint/)، [قيود التقييم](/pdf/ar/sharepoint/evaluate-aspose-pdf/)، [الترخيص](/pdf/ar/sharepoint/license-aspose-pdf-for-sharepoint/)، حالات الاستخدام الشائعة والإعدادات.
 
 ```
 {{% /alert %}}

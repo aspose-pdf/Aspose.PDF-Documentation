@@ -3,7 +3,7 @@ title: 将PDF转换为Microsoft PowerPoint
 linktitle: 将PDF转换为PowerPoint
 type: docs
 weight: 30
-url: zh/php-java/convert-pdf-to-powerpoint/
+url: /zh/php-java/convert-pdf-to-powerpoint/
 lastmod: "2024-05-20"
 description: Aspose.PDF允许您使用PHP将PDF转换为PowerPoint格式。有一种方法可以将PDF转换为带有幻灯片图像的PPTX。
 sitemap:

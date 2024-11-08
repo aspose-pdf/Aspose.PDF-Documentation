@@ -2,7 +2,7 @@
 title: テーブルジェネレータ
 type: docs
 weight: 130
-url: ja/net/plugins/tablegenerator/
+url: /ja/net/plugins/tablegenerator/
 description: 指定されたPDFドキュメントのページ番号にテーブルを追加/挿入することができます。
 lastmod: "2024-01-24"
 draft: false

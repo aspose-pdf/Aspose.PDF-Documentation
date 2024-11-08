@@ -3,7 +3,7 @@ title: 高度な機能
 linktitle: 高度な機能
 type: docs
 weight: 120
-url: ja/java/advanced-features/
+url: /ja/java/advanced-features/
 description: このセクションでは、Aspose.PDF for Javaを使用してPDFドキュメントにLaTeXタグを使用する方法を示します。
 lastmod: "2022-01-11"
 sitemap:

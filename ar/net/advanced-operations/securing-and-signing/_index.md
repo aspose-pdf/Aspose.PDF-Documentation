@@ -3,7 +3,7 @@ title: تأمين وتوقيع ملفات PDF في C#
 linktitle: التأمين والتوقيع في PDF
 type: docs
 weight: 150
-url: ar/net/securing-and-signing/
+url: /ar/net/securing-and-signing/
 description: تصف هذه القسم ميزات استخدام التوقيع وتأمين مستند PDF باستخدام C#
 lastmod: "2022-02-17"
 sitemap:
@@ -80,10 +80,10 @@ aliases:
 
 هذا القسم يصف كيفية توقيع مستندات PDF رقمياً بأمان باستخدام C#. يتم استخدام مصطلحات التوقيع الإلكتروني والتوقيع الرقمي بالتبادل، لكن في الواقع الاثنان مختلفان. بشكل عام، يأتي التوقيع الرقمي مع ختم معتمد من [سلطة التصديق](https://en.wikipedia.org/wiki/Certificate_authority) ويستخدم لحماية المستند الموقع من التلاعب. بدلاً من ذلك، غالباً ما يستخدم التوقيع الإلكتروني لإظهار النية لتوقيع مستند.
 
-- [توقيع ملف PDF رقمياً](/pdf/net/digitally-sign-pdf-file/)
-- [تعيين الامتيازات، تشفير وفك تشفير ملف PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [استخراج الصورة ومعلومات التوقيع](/pdf/net/extract-image-and-signature-information/)
-- [توقيع مستند PDF من بطاقة ذكية](/pdf/net/sign-pdf-document-from-smart-card/)
+- [توقيع ملف PDF رقمياً](/pdf/ar/net/digitally-sign-pdf-file/)
+- [تعيين الامتيازات، تشفير وفك تشفير ملف PDF](/pdf/ar/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [استخراج الصورة ومعلومات التوقيع](/pdf/ar/net/extract-image-and-signature-information/)
+- [توقيع مستند PDF من بطاقة ذكية](/pdf/ar/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

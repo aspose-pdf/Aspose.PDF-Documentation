@@ -3,7 +3,7 @@ title: 从 PDF 文件中删除图像
 linktitle: 删除图像
 type: docs
 weight: 20
-url: zh/java/delete-images-from-pdf-file/
+url: /zh/java/delete-images-from-pdf-file/
 description: 本节解释如何使用 Aspose.PDF for Java 从 PDF 文件中删除图像。
 lastmod: "2021-06-05"
 ---

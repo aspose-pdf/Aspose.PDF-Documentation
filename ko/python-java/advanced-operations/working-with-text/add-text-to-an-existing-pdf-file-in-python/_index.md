@@ -2,7 +2,7 @@
 title: 기존 PDF 파일에 텍스트 추가하기 (Python)
 type: docs
 weight: 20
-url: ko/python-java/add-text-to-an-existing-pdf-file-in-python/
+url: /ko/python-java/add-text-to-an-existing-pdf-file-in-python/
 ---
 
 **Aspose.PDF Java for Python**을 사용하여 Pdf 문서에 텍스트 문자열을 추가하려면, **AddText** 모듈을 호출하세요.

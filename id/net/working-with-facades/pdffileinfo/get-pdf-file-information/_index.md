@@ -2,7 +2,7 @@
 title: Dapatkan informasi file PDF
 type: docs
 weight: 50
-url: id/net/get-pdf-file-information/
+url: /id/net/get-pdf-file-information/
 description: Bagian ini menjelaskan cara mendapatkan Informasi File PDF dengan Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

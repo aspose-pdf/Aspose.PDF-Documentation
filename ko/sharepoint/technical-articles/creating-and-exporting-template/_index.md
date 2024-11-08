@@ -2,7 +2,7 @@
 title: 템플릿 만들기 및 내보내기
 type: docs
 weight: 10
-url: ko/sharepoint/creating-and-exporting-template/
+url: /ko/sharepoint/creating-and-exporting-template/
 lastmod: "2020-12-16"
 description: PDF SharePoint API를 사용하여 SharePoint에서 템플릿을 만들고 PDF로 내보낼 수 있습니다.
 ---

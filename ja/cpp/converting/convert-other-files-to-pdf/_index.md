@@ -2,7 +2,7 @@
 linktitle: 他のファイル形式をPDFに変換する
 type: docs
 weight: 80
-url: ja/cpp/convert-other-files-to-pdf/
+url: /ja/cpp/convert-other-files-to-pdf/
 lastmod: "2021-11-19"
 description: このトピックは、Aspose.PDFが他のファイル形式をPDFドキュメントに変換する方法を示します。
 sitemap:

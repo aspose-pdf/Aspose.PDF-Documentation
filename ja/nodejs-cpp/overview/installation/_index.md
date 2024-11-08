@@ -3,7 +3,7 @@ title: Aspose.PDF for Node.js via C++のインストール
 linktitle: インストール
 type: docs
 weight: 40
-url: ja/nodejs-cpp/installation/
+url: /ja/nodejs-cpp/installation/
 description: このセクションでは、Aspose.PDF for Node.js via C++の製品説明とインストール手順を示します。
 lastmod: "2023-11-16"
 sitemap:

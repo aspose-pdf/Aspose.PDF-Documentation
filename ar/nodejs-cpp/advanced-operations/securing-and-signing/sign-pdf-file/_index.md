@@ -3,7 +3,7 @@ title: إضافة توقيع رقمي في PDF باستخدام Node.js
 linktitle: التوقيع الرقمي لملف PDF
 type: docs
 weight: 70
-url: ar/nodejs-cpp/sign-pdf/
+url: /ar/nodejs-cpp/sign-pdf/
 description: توقيع مستندات PDF رقميًا في بيئة Node.js.
 lastmod: "2023-11-16"
 sitemap:

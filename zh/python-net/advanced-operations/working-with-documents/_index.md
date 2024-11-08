@@ -3,7 +3,7 @@ title: 使用Python处理PDF文档
 linktitle: 处理文档
 type: docs
 weight: 10
-url: zh/python-net/working-with-documents/
+url: /zh/python-net/working-with-documents/
 description: 本文向您描述了使用Aspose.PDF for Python via .NET库可以对文档进行哪些操作。
 lastmod: "2023-04-12"
 sitemap:
@@ -83,14 +83,14 @@ PDF 文档可以查看和打印，但不总是容易编辑。然而，**Aspose.P
 
 您可以执行以下操作：
 
-- [创建 PDF 文档](/pdf/python-net/create-pdf-document/) - 创建一个简单的 PDF 文档。
-- [格式化 PDF 文档](/pdf/python-net/formatting-pdf-document/) - 创建文档，获取和设置文档属性，嵌入字体以及其他 PDF 文件操作。
+- [创建 PDF 文档](/pdf/zh/python-net/create-pdf-document/) - 创建一个简单的 PDF 文档。
+- [格式化 PDF 文档](/pdf/zh/python-net/formatting-pdf-document/) - 创建文档，获取和设置文档属性，嵌入字体以及其他 PDF 文件操作。
 
-- [操作 PDF 文档](/pdf/python-net/manipulate-pdf-document/) - 验证 PDF 文档以符合 PDF A 标准，处理目录，设置 PDF 到期日期等。
-- [优化 PDF](/pdf/python-net/optimize-pdf/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
-- [合并 PDF](/pdf/python-net/merge-pdf-documents/) - 使用 Python 将多个 PDF 文件合并为一个 PDF 文档。
-- [拆分 PDF](/pdf/python-net/split-document/) - 在您的 Python 应用程序中将 PDF 页面拆分为单独的 PDF 文件。
-- [处理标题](/pdf/python-net/working-with-headings/) - 您可以使用 Python 在 PDF 文档的标题中创建编号。
+- [操作 PDF 文档](/pdf/zh/python-net/manipulate-pdf-document/) - 验证 PDF 文档以符合 PDF A 标准，处理目录，设置 PDF 到期日期等。
+- [优化 PDF](/pdf/zh/python-net/optimize-pdf/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
+- [合并 PDF](/pdf/zh/python-net/merge-pdf-documents/) - 使用 Python 将多个 PDF 文件合并为一个 PDF 文档。
+- [拆分 PDF](/pdf/zh/python-net/split-document/) - 在您的 Python 应用程序中将 PDF 页面拆分为单独的 PDF 文件。
+- [处理标题](/pdf/zh/python-net/working-with-headings/) - 您可以使用 Python 在 PDF 文档的标题中创建编号。
 
 <script type="application/ld+json">
 {

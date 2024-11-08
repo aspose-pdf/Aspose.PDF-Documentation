@@ -3,7 +3,7 @@ title: Comenzar
 linktitle: Comenzar
 type: docs
 weight: 30
-url: es/androidjava/get-started/
+url: /es/androidjava/get-started/
 description: Esta sección describe los principios básicos del uso de Aspose.PDF para Android a través de Java. También demuestra ejemplos simples y complejos para crear un documento PDF
 lastmod: "2021-08-05"   
 sitemap: 
@@ -51,7 +51,7 @@ Aspose.PDF para Android a través de Android a través de Java es rápido y lige
 
 ### Aprende más sobre:
 
-- [Conceptos básicos de la API DOM](/pdf/androidjava/basics-of-dom-api/)
-- [Ejemplo "Hola, Mundo" en Android con Java](/pdf/androidjava/hello-world-example/)
-- [PDF Complejo](/pdf/androidjava/complex-pdf-example/)
-- [Cómo ejecutar otros ejemplos](/pdf/androidjava/how-to-run-other-examples/)
+- [Conceptos básicos de la API DOM](/pdf/es/androidjava/basics-of-dom-api/)
+- [Ejemplo "Hola, Mundo" en Android con Java](/pdf/es/androidjava/hello-world-example/)
+- [PDF Complejo](/pdf/es/androidjava/complex-pdf-example/)
+- [Cómo ejecutar otros ejemplos](/pdf/es/androidjava/how-to-run-other-examples/)

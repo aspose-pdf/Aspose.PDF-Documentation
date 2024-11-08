@@ -3,7 +3,7 @@ title: Node.jsでPDFから添付ファイルを削除する
 linktitle: 既存のPDFから添付ファイルを削除する
 type: docs
 weight: 10
-url: ja/nodejs-cpp/removing-attachment-from-an-existing-pdf/
+url: /ja/nodejs-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDFはPDFドキュメントから添付ファイルを削除できます。Node.js環境を使用してAspose.PDFでPDFファイルの添付ファイルを削除します。
 lastmod: "2023-11-16"
 sitemap:

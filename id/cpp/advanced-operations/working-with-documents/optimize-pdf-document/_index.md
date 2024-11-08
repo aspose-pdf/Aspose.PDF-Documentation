@@ -3,7 +3,7 @@ title: Optimize PDF menggunakan C++
 linktitle: Optimize PDF
 type: docs
 weight: 30
-url: id/cpp/optimize-pdf/
+url: /id/cpp/optimize-pdf/
 description: Optimalkan file PDF, perkecil semua gambar, kurangi ukuran PDF, hapus penyematan font, aktifkan penggunaan ulang konten halaman, hapus atau ratakan anotasi dengan C++.
 lastmod: "2021-11-11"
 sitemap:

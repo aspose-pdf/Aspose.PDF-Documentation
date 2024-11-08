@@ -2,7 +2,7 @@
 title: 기존 PDF 파일에서 XML로 북마크 내보내기 (facades)
 type: docs
 weight: 20
-url: ko/java/export-bookmark/
+url: /ko/java/export-bookmark/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PdfBookmarkEditor 클래스로 북마크를 내보내는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

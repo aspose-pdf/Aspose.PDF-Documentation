@@ -2,7 +2,7 @@
 title: Легкое и Простое Развертывание
 type: docs
 weight: 40
-url: ru/reportingservices/easy-and-lightweight-deployment/
+url: /ru/reportingservices/easy-and-lightweight-deployment/
 lastmod: "2021-06-05"
 ---
 

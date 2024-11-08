@@ -2,7 +2,7 @@
 title: Configuration de SharePoint sur le serveur de services de rapport
 type: docs
 weight: 30
-url: fr/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+url: /fr/reportingservices/setting-up-sharepoint-on-reporting-services-server/
 lastmod: "2021-06-05"
 ---
 

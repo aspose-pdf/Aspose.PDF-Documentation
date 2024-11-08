@@ -3,7 +3,7 @@ title: HTMLをPDFに変換
 linktitle: HTMLをPDFに変換
 type: docs
 weight: 40
-url: ja/php-java/convert-html-to-pdf/
+url: /ja/php-java/convert-html-to-pdf/
 lastmod: "2024-05-20"
 description: このトピックでは、Aspose.PDFがHTMLおよびMHTML形式をPDFファイルに変換する方法を示します。
 sitemap:

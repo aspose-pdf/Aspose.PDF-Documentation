@@ -3,7 +3,7 @@ title: استخراج بيانات الجدول من PDF
 linktitle: استخراج بيانات الجدول
 type: docs
 weight: 40
-url: ar/androidjava/extract-data-from-table-in-pdf/
+url: /ar/androidjava/extract-data-from-table-in-pdf/
 description: تعلّم كيفية استخراج الجداول من PDF باستخدام Aspose.PDF لنظام Android عبر Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -173,7 +173,7 @@ public void extractMarkedTable () {
 
 ## استخراج بيانات الجدول من PDF وتخزينها في ملف CSV
 
-يوضح المثال التالي كيفية استخراج الجدول وتخزينه كملف CSV. لرؤية كيفية تحويل PDF إلى جدول بيانات Excel يرجى الرجوع إلى مقالة [تحويل PDF إلى Excel](/pdf/java/convert-pdf-to-excel/).
+يوضح المثال التالي كيفية استخراج الجدول وتخزينه كملف CSV. لرؤية كيفية تحويل PDF إلى جدول بيانات Excel يرجى الرجوع إلى مقالة [تحويل PDF إلى Excel](/pdf/ar/java/convert-pdf-to-excel/).
 
 ```java
  public void extractTableSaveCSV () {

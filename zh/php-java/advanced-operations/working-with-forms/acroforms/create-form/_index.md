@@ -3,7 +3,7 @@ title: 创建 AcroForms - 在 PHP 中创建可填写的 PDF
 linktitle: 创建 AcroForms
 type: docs
 weight: 10
-url: zh/php-java/create-forms/
+url: /zh/php-java/create-forms/
 description: 本节解释如何使用 Aspose.PDF for PHP via Java 从头开始在 PDF 文档中创建 AcroForms。
 lastmod: "2024-06-05"
 sitemap:

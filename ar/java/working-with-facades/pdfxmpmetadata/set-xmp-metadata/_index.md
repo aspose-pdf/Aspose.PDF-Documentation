@@ -2,7 +2,7 @@
 title: ضبط بيانات XMP الوصفية لملف PDF موجود - الواجهات
 type: docs
 weight: 20
-url: ar/java/set-xmp-metadata/
+url: /ar/java/set-xmp-metadata/
 description: تشرح هذه القسم كيفية ضبط بيانات XMP الوصفية باستخدام Aspose.PDF Facades باستخدام فئة PdfXmpMetadata.
 lastmod: "2021-06-05"
 sitemap:

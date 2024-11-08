@@ -3,7 +3,7 @@ title: PDFドキュメントの操作
 linktitle: ドキュメントの操作
 type: docs
 weight: 10
-url: ja/cpp/working-with-documents/
+url: /ja/cpp/working-with-documents/
 lastmod: "2021-06-05"
 description: この記事では、Aspose.PDF for C++ライブラリを使用してドキュメントで行える操作について説明します。
 sitemap:
@@ -21,10 +21,10 @@ PDFファイルは無制限の情報を含むことができますが、画像�
 
 You are able to do the following:
 
-- [Create PDF Document](/pdf/cpp/create-pdf-document/) - PDFを作成し、検索可能なPDFドキュメントを作成します。
-- [Formatting PDF Document](/pdf/cpp/formatting-pdf-document/) - ドキュメントのプロパティを取得および設定し、フォントを埋め込み、PDFファイルに関するその他の操作を行います。
-- [Manipulate PDF Document](/pdf/cpp/manipulate-pdf-document/) - PDF A標準に対してPDFドキュメントを検証し、目次を操作し、PDFの有効期限を設定するなどの操作を行います。
-- [Optimize PDF Documents](/pdf/cpp/optimize-pdf/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮して文書の最適化を成功させます。
-- [Merge PDF](/pdf/cpp/merge-pdf-documents/) - C++を使用して複数のPDFファイルを単一のPDFドキュメントにマージします。
-- [Split PDF](/pdf/cpp/split-pdf-document/) - C++アプリケーションでPDFページを個別のPDFファイルに分割します。
-- [Working with Headings](/pdf/cpp/working-with-headings/) - C++でPDFドキュメントの見出しに番号を付けることができます。
+- [Create PDF Document](/pdf/ja/cpp/create-pdf-document/) - PDFを作成し、検索可能なPDFドキュメントを作成します。
+- [Formatting PDF Document](/pdf/ja/cpp/formatting-pdf-document/) - ドキュメントのプロパティを取得および設定し、フォントを埋め込み、PDFファイルに関するその他の操作を行います。
+- [Manipulate PDF Document](/pdf/ja/cpp/manipulate-pdf-document/) - PDF A標準に対してPDFドキュメントを検証し、目次を操作し、PDFの有効期限を設定するなどの操作を行います。
+- [Optimize PDF Documents](/pdf/ja/cpp/optimize-pdf/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮して文書の最適化を成功させます。
+- [Merge PDF](/pdf/ja/cpp/merge-pdf-documents/) - C++を使用して複数のPDFファイルを単一のPDFドキュメントにマージします。
+- [Split PDF](/pdf/ja/cpp/split-pdf-document/) - C++アプリケーションでPDFページを個別のPDFファイルに分割します。
+- [Working with Headings](/pdf/ja/cpp/working-with-headings/) - C++でPDFドキュメントの見出しに番号を付けることができます。

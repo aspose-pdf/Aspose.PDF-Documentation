@@ -3,7 +3,7 @@ title: معالجة وثيقة PDF
 linktitle: معالجة وثيقة PDF 
 type: docs
 weight: 30
-url: ar/cpp/manipulate-pdf-document/
+url: /ar/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: تشرح هذه القسم عن التحقق من صحة وثيقة PDF لمعيار PDF A، كيفية العمل مع TOC، كيفية تعيين تاريخ انتهاء صلاحية PDF، وكيفية تحديد تقدم توليد ملف PDF.
 lastmod: "2021-11-11"

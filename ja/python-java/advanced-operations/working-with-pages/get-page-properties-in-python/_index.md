@@ -2,7 +2,7 @@
 title: Pythonでページプロパティを取得する  
 type: docs  
 weight: 50  
-url: ja/python-java/get-page-properties-in-python/  
+url: /ja/python-java/get-page-properties-in-python/  
 ---
 
 **Aspose.PDF Java for Python**を使用してPdfドキュメントのページプロパティを取得するには、単に**GetPageProperties**クラスを呼び出します。

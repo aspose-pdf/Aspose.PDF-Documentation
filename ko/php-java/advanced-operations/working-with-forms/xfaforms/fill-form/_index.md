@@ -3,7 +3,7 @@ title: Fill AcroForms
 linktitle: Fill AcroForms
 type: docs
 weight: 20
-url: ko/php-java/fill-form/
+url: /ko/php-java/fill-form/
 description: 이 섹션에서는 Aspose.PDF for PHP via Java를 사용하여 PDF 문서에서 양식 필드를 채우는 방법을 설명합니다.
 lastmod: "2024-06-05"
 sitemap:

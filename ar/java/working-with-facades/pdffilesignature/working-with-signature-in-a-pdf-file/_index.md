@@ -2,7 +2,7 @@
 title: العمل مع التوقيع في ملف PDF
 type: docs
 weight: 40
-url: ar/java/working-with-signature-in-a-pdf-file/
+url: /ar/java/working-with-signature-in-a-pdf-file/
 description: يشرح هذا القسم كيفية العمل مع التوقيع في ملف PDF باستخدام فئة PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

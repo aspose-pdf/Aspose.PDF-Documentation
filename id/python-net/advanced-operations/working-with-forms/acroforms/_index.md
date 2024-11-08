@@ -3,7 +3,7 @@ title: Bekerja dengan AcroForms menggunakan Python
 linktitle: AcroForms
 type: docs
 weight: 10
-url: id/python-net/acroforms/
+url: /id/python-net/acroforms/
 description: Dengan Aspose.PDF untuk Python Anda dapat membuat formulir dari awal, mengisi bidang formulir dalam dokumen PDF, mengekstrak data dari formulir, dan lain-lain.
 lastmod: "2023-02-17"
 sitemap:
@@ -89,9 +89,9 @@ PDF 1.7 mendukung dua metode berbeda untuk mengintegrasikan data dan formulir PD
 
 Untuk pembelajaran lebih rinci tentang kemampuan perpustakaan Java, lihat artikel berikut:
 
-- [Buat AcroForm](/pdf/python-net/create-form) - buat formulir dari awal dengan Python.
-- [Isi AcroForm](/pdf/python-net/fill-form) - isi bidang formulir dalam dokumen PDF Anda.
-- [Ekstrak AcroForm](/pdf/python-net/extract-form) - dapatkan nilai dari semua atau bidang individual dokumen PDF.
+- [Buat AcroForm](/pdf/id/python-net/create-form) - buat formulir dari awal dengan Python.
+- [Isi AcroForm](/pdf/id/python-net/fill-form) - isi bidang formulir dalam dokumen PDF Anda.
+- [Ekstrak AcroForm](/pdf/id/python-net/extract-form) - dapatkan nilai dari semua atau bidang individual dokumen PDF.
 
 <script type="application/ld+json">
 {

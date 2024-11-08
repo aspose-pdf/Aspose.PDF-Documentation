@@ -3,7 +3,7 @@ title: Сохранение PDF документа
 linktitle: Сохранить
 type: docs
 weight: 30
-url: ru/php-java/save-pdf-document/
+url: /ru/php-java/save-pdf-document/
 description: Узнайте, как сохранить PDF файл с помощью библиотеки Aspose.PDF для PHP через Java.
 lastmod: "2024-06-05"
 sitemap:

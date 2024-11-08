@@ -2,7 +2,7 @@
 title: Extraer Texto de un Archivo PDF
 type: docs
 weight: 30
-url: es/net/extract-text/
+url: /es/net/extract-text/
 description: Esta sección explica cómo extraer texto de un pdf usando la clase PdfExtractor.
 lastmod: "2021-06-05"
 ---

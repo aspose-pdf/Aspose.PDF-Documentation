@@ -3,7 +3,7 @@ title: PDFでのテキストの操作
 linktitle: テキストの操作
 type: docs
 weight: 30
-url: ja/php-java/working-with-text/
+url: /ja/php-java/working-with-text/
 description: このセクションでは、テキスト処理のさまざまな技術について説明します。Aspose.PDFとPHPを使用して、テキストの追加、置換、回転、検索方法を学びます。
 lastmod: "2024-06-05"
 sitemap:
@@ -15,4 +15,4 @@ sitemap:
 
 以下のことが可能です：
 
-- [PDFファイルにテキストを追加する](/pdf/php-java/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームやファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクを追加するなど。
+- [PDFファイルにテキストを追加する](/pdf/ja/php-java/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームやファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクを追加するなど。

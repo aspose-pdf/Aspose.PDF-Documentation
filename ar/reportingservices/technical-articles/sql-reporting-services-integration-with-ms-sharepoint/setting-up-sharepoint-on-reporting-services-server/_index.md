@@ -2,7 +2,7 @@
 title: إعداد SharePoint على خادم خدمات التقارير
 type: docs
 weight: 30
-url: ar/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+url: /ar/reportingservices/setting-up-sharepoint-on-reporting-services-server/
 lastmod: "2021-06-05"
 ---
 

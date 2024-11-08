@@ -3,7 +3,7 @@ title: Extraire un tableau d'un document PDF existant
 linktitle: Extraire un tableau
 type: docs
 weight: 25
-url: fr/java/extract-table-from-existing-pdf-document/
+url: /fr/java/extract-table-from-existing-pdf-document/
 description: Aspose.PDF pour Java permet d'effectuer diverses manipulations avec les tableaux contenus dans votre document PDF. Vous pouvez ajouter et extraire un tableau dans le document PDF existant, rendre le tableau sur une nouvelle page, etc.
 lastmod: "2021-06-05"
 sitemap:

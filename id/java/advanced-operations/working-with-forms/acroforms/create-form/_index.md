@@ -3,7 +3,7 @@ title: Buat AcroForms - Buat PDF yang Dapat Diisi di Java
 linktitle: Buat AcroForms
 type: docs
 weight: 10
-url: id/java/create-forms/
+url: /id/java/create-forms/
 description: Bagian ini menjelaskan cara membuat AcroForms dari awal dalam dokumen PDF Anda dengan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

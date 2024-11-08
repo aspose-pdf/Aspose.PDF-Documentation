@@ -3,7 +3,7 @@ title: Delete PDF Pages programmatically C#
 linktitle: Delete PDF Pages
 type: docs
 weight: 30
-url: ja/net/delete-pages/
+url: /ja/net/delete-pages/
 description: Aspose.PDF for .NET ライブラリを使用してPDFファイルからページを削除できます。
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ aliases:
 }
 </script>
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 Aspose.PDF for .NET を使用して PDF ファイルからページを削除できます。[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) コレクションから特定のページを削除するには。
 

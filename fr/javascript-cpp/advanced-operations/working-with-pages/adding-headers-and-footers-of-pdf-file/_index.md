@@ -3,7 +3,7 @@ title: Ajouter un en-tête et un pied de page au PDF via JavaScript via C++
 linktitle: Ajouter un en-tête et un pied de page au PDF
 type: docs
 weight: 70
-url: fr/javascript-cpp/add-headers-and-footers-of-pdf-file/
+url: /fr/javascript-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF pour JavaScript via C++ vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant AsposePdfAddTextHeaderFooter.
 lastmod: "2023-02-17"
 sitemap:

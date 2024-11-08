@@ -3,7 +3,7 @@ title: DockerでAspose.PDFを実行する方法
 linktitle: Dockerの使用
 type: docs
 weight: 20
-url: ja/net/docker/dotnet8/
+url: /ja/net/docker/dotnet8/
 description: Docker Linuxコンテナを使用してアプリケーションにAspose.PDF機能を統合する
 lastmod: "2024-01-21"
 sitemap:
@@ -29,9 +29,9 @@ sitemap:
 1.
 ### ASP.NET Core Web Appを使用してLinuxコンテナでPDFドキュメントを生成
 
-**Complex Example**からのコードをこのアプリで使用します。詳細な説明については、[このリンク](/pdf/net/complex-pdf-example/)をご覧ください。
+**Complex Example**からのコードをこのアプリで使用します。詳細な説明については、[このリンク](/pdf/ja/net/complex-pdf-example/)をご覧ください。
 
-1. `wwwroot`フォルダに`images`フォルダを作成し、画像`logo.png`を配置します。この画像は[こちら](/pdf/net/docker/logo.png)からダウンロードできます。
+1. `wwwroot`フォルダに`images`フォルダを作成し、画像`logo.png`を配置します。この画像は[こちら](/pdf/ja/net/docker/logo.png)からダウンロードできます。
 1. `wwwroot`フォルダに`fonts`フォルダを作成し、[Roboto](https://fonts.google.com/specimen/Roboto)フォントを配置します。
 1. `wwwroot`フォルダに`samples`フォルダを作成し、サンプルデータを配置します。
 1. `HomeController.cs`のコードを以下のスニペットに置き換えてください（別の名前空間を使用している場合がありますので注意してください）：

@@ -3,7 +3,7 @@ title: Supprimer les tables d'un PDF existant
 linktitle: Supprimer les tables
 type: docs
 weight: 50
-url: fr/net/remove-tables-from-existing-pdf/
+url: /fr/net/remove-tables-from-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -82,7 +82,7 @@ Aspose.PDF pour NET offre la capacité d'insérer/créer une table dans un docum
 
 Pour supprimer les tables, nous devons utiliser la classe [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) pour saisir les tables dans un PDF existant, puis appeler [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Supprimer une table d'un document PDF
 

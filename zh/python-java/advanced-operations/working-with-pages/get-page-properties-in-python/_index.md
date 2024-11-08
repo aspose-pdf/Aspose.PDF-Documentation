@@ -2,7 +2,7 @@
 title: 获取 Python 中的页面属性
 type: docs
 weight: 50
-url: zh/python-java/get-page-properties-in-python/
+url: /zh/python-java/get-page-properties-in-python/
 ---
 
 要使用 **Aspose.PDF Java for Python** 获取 Pdf 文档的页面属性，只需调用 **GetPageProperties** 类。

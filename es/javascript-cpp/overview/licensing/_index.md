@@ -3,7 +3,7 @@ title: Licencia para Aspose.PDF para JavaScript vía C++
 linktitle: Licencias y limitaciones
 type: docs
 weight: 50
-url: es/javascript-cpp/licensing/
+url: /es/javascript-cpp/licensing/
 description: Aspose.PDF para JavaScript invita a sus clientes a obtener una licencia Clásica y una Licencia Medida. Así como usar una licencia limitada para explorar mejor el producto.
 lastmod: "2022-12-13"
 sitemap:

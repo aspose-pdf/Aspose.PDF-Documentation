@@ -4,7 +4,7 @@ title: Crop PDF Pages programmatically C#
 linktitle: Crop Pages
 type: docs
 weight: 80
-url: ja/net/crop-pages/
+url: /ja/net/crop-pages/
 description: Aspose.PDF for .NET を使用して、幅、高さ、ブリードボックス、クロップボックス、トリムボックスなどのページプロパティを取得できます。
 lastmod: "2022-02-17"
 sitemap:
@@ -90,7 +90,7 @@ PDFファイルの各ページには、幅、高さ、ブリード、クロッ�
 - **Page.Rect**: MediaBoxとDropBoxの交差点（一般的には可視矩形）。以下の画像はこれらのプロパティを示しています。
 詳細については、[このページ](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)をご覧ください。
 
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 以下のスニペットは、ページをクロップする方法を示しています：
 

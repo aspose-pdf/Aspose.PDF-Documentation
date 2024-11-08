@@ -3,7 +3,7 @@ title: تغيير حجم صفحة PDF باستخدام Python
 linktitle: تغيير حجم صفحة PDF
 type: docs
 weight: 60
-url: ar/python-net/change-page-size/
+url: /ar/python-net/change-page-size/
 description: تغيير حجم الصفحة من مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ Python عبر .NET.
 lastmod: "2023-04-17"
 sitemap:

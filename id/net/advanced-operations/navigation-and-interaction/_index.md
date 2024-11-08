@@ -3,7 +3,7 @@ title: Navigasi dan Interaksi dalam PDF
 linktitle: Navigasi dan interaksi
 type: docs
 weight: 90
-url: id/net/navigation-and-interaction/
+url: /id/net/navigation-and-interaction/
 description: Bagian ini menjelaskan fitur kerja dengan tautan, aksi, dan penanda.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,9 +76,9 @@ sitemap:
 }
 </script>
 
-- [Tautan](/pdf/net/links/) - Anda dapat dengan mudah membuat, memperbarui, dan mengekstrak tautan dengan C#.
-- [Aksi](/pdf/net/actions/) - memungkinkan untuk menambahkan dan mendapatkan, membuat tautan hiperteks ke file PDF. Selain itu, dalam artikel ini, Anda akan belajar cara menghapus Aksi Buka Dokumen dari file PDF dan cara Menentukan Halaman PDF saat Melihat Dokumen.
-- [Penanda](/pdf/net/bookmarks/)- publikasi besar biasanya mencakup kerangka penanda yang dapat dengan mudah dilihat dan dipilih di Panel Penanda, memungkinkan Anda mengklik penanda untuk melompat ke halaman atau bab yang diwakilinya. Panel Penanda adalah elemen yang sadar konten, dan hanya terlihat di bilah samping jika dokumen PDF yang terbuka mengandung struktur penanda.
+- [Tautan](/pdf/id/net/links/) - Anda dapat dengan mudah membuat, memperbarui, dan mengekstrak tautan dengan C#.
+- [Aksi](/pdf/id/net/actions/) - memungkinkan untuk menambahkan dan mendapatkan, membuat tautan hiperteks ke file PDF. Selain itu, dalam artikel ini, Anda akan belajar cara menghapus Aksi Buka Dokumen dari file PDF dan cara Menentukan Halaman PDF saat Melihat Dokumen.
+- [Penanda](/pdf/id/net/bookmarks/)- publikasi besar biasanya mencakup kerangka penanda yang dapat dengan mudah dilihat dan dipilih di Panel Penanda, memungkinkan Anda mengklik penanda untuk melompat ke halaman atau bab yang diwakilinya. Panel Penanda adalah elemen yang sadar konten, dan hanya terlihat di bilah samping jika dokumen PDF yang terbuka mengandung struktur penanda.
 
 <script type="application/ld+json">
 {

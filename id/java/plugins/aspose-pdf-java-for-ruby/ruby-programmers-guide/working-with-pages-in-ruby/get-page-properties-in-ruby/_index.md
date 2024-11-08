@@ -2,7 +2,7 @@
 title: Dapatkan Properti Halaman dalam Ruby
 type: docs
 weight: 50
-url: id/java/get-page-properties-in-ruby/
+url: /id/java/get-page-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

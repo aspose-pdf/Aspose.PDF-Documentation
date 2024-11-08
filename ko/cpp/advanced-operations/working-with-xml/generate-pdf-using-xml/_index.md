@@ -3,7 +3,7 @@ title: XML에서 PDF 생성
 linktitle: XML에서 PDF 생성
 type: docs
 weight: 10
-url: ko/cpp/generate-pdf-from-xml
+url: /ko/cpp/generate-pdf-from-xml
 description: Aspose.PDF for C++는 입력 XML 파일을 필요로 하여 XML 파일을 PDF 문서로 변환하는 여러 가지 방법을 제공합니다.
 lastmod: "2022-01-31"
 sitemap:

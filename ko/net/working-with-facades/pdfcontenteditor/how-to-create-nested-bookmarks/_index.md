@@ -2,7 +2,7 @@
 title: PDF 파일에 북마크 추가하기
 type: docs
 weight: 20
-url: ko/net/how-to-create-nested-bookmarks/
+url: /ko/net/how-to-create-nested-bookmarks/
 description: 이 섹션은 PdfContentEditor 클래스를 사용하여 중첩 북마크를 만드는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

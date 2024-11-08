@@ -3,7 +3,7 @@ title: Adicionar Carimbos de Texto em PDF programaticamente
 linktitle: Carimbos de Texto em Arquivo PDF
 type: docs
 weight: 20
-url: pt/php-java/text-stamps-in-the-pdf-file/
+url: /pt/php-java/text-stamps-in-the-pdf-file/
 description: Adicionar um carimbo de texto a um arquivo PDF usando a classe TextStamp com PHP.
 lastmod: "2024-06-05"
 sitemap:

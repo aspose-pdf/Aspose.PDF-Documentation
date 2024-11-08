@@ -2,7 +2,7 @@
 title: Layanan Pelaporan dan konfigurasi SharePoint
 type: docs
 weight: 40
-url: id/reportingservices/reporting-services-and-sharepoint-configuration/
+url: /id/reportingservices/reporting-services-and-sharepoint-configuration/
 lastmod: "2021-06-05"
 ---
 

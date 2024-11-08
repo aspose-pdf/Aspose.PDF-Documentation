@@ -3,7 +3,7 @@ title: PDF 페이지 자르기 프로그래밍 방식으로 Python
 linktitle: 페이지 자르기
 type: docs
 weight: 70
-url: ko/python-net/crop-pages/
+url: /ko/python-net/crop-pages/
 description: Aspose.PDF for Python via .NET을 사용하여 너비, 높이, 블리드박스, 크롭박스 및 트림박스와 같은 페이지 속성을 가져올 수 있습니다.
 lastmod: "2023-04-17"
 sitemap:

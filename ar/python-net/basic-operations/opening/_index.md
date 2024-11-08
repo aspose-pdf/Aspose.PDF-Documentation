@@ -3,7 +3,7 @@ title: فتح مستند PDF برمجيًا
 linktitle: فتح PDF
 type: docs
 weight: 20
-url: ar/python-net/open-pdf-document/
+url: /ar/python-net/open-pdf-document/
 description: تعلم كيفية فتح ملف PDF في مكتبة Aspose.PDF لـ Python عبر .NET. يمكنك فتح ملف PDF موجود، مستند من دفق، ومستند PDF مشفر.
 lastmod: "2022-12-22"
 sitemap:

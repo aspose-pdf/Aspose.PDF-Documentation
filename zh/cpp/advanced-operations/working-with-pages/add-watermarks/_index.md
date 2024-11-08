@@ -3,7 +3,7 @@ title: 使用C++为PDF添加水印
 linktitle: 添加水印
 type: docs
 weight: 90
-url: zh/cpp/add-watermarks/
+url: /zh/cpp/add-watermarks/
 description: 本文解释了使用C++编程在PDF中处理工件和获取水印的功能。
 lastmod: "2021-12-08"
 sitemap:

@@ -3,7 +3,7 @@ title: Extraire et Enregistrer une Pièce Jointe
 linktitle: Extraire et Enregistrer une Pièce Jointe
 type: docs
 weight: 20
-url: fr/java/extract-and-save-an-attachment/
+url: /fr/java/extract-and-save-an-attachment/
 description: Aspose.PDF pour Java vous permet d'obtenir toutes les pièces jointes d'un document PDF. De plus, vous pouvez obtenir une pièce jointe individuelle de votre document.
 lastmod: "2021-06-05"
 sitemap:
@@ -55,7 +55,7 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## Obtenir des informations sur la pièce jointe
 
-Comme mentionné dans [Obtenir des pièces jointes à partir d'un document PDF](/pdf/java/get-attachments-from-a-pdf-document/), les informations sur la pièce jointe sont contenues dans l'objet [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification), rassemblées avec d'autres pièces jointes dans la collection EmbeddedFiles de l'objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+Comme mentionné dans [Obtenir des pièces jointes à partir d'un document PDF](/pdf/fr/java/get-attachments-from-a-pdf-document/), les informations sur la pièce jointe sont contenues dans l'objet [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification), rassemblées avec d'autres pièces jointes dans la collection EmbeddedFiles de l'objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
 
 L'objet [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) fournit des méthodes qui obtiennent des informations sur la pièce jointe, par exemple :
 

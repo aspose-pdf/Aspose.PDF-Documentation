@@ -2,7 +2,7 @@
 title: Convertir PDF a Formato SVG en PHP
 type: docs
 weight: 30
-url: es/java/convert-pdf-to-svg-format-in-php/
+url: /es/java/convert-pdf-to-svg-format-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Bekerja dengan Tabel dalam PDF
 linktitle: Bekerja dengan Tabel
 type: docs
 weight: 50
-url: id/java/working-with-tables/
+url: /id/java/working-with-tables/
 description: Bagian ini menjelaskan cara menambahkan dan mengekstrak tabel, cara memanipulasi dan mengintegrasikan tabel menggunakan pustaka Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -20,7 +20,7 @@ Salah satu fitur paling awal yang didukung oleh Aspose.PDF untuk Java adalah kem
 
 Anda dapat melakukan hal berikut:
 
-- [Membuat atau Menambahkan Tabel dalam Dokumen PDF yang Ada](/pdf/java/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
-- [Mengekstrak Tabel dari Dokumen PDF yang Ada](/pdf/java/extract-table-from-existing-pdf-document/) - Anda dapat mengekstrak tabel dari file PDF atau mengekstrak batas tabel sebagai Gambar.
-- [Memanipulasi Tabel dalam PDF yang Ada](/pdf/java/manipulate-tables-in-existing-pdf/) - memanipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
-- [Menghapus Tabel dari PDF yang Ada](/pdf/java/remove-tables-from-existing-pdf/) - hapus tabel atau beberapa tabel dari dokumen PDF.
+- [Membuat atau Menambahkan Tabel dalam Dokumen PDF yang Ada](/pdf/id/java/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
+- [Mengekstrak Tabel dari Dokumen PDF yang Ada](/pdf/id/java/extract-table-from-existing-pdf-document/) - Anda dapat mengekstrak tabel dari file PDF atau mengekstrak batas tabel sebagai Gambar.
+- [Memanipulasi Tabel dalam PDF yang Ada](/pdf/id/java/manipulate-tables-in-existing-pdf/) - memanipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
+- [Menghapus Tabel dari PDF yang Ada](/pdf/id/java/remove-tables-from-existing-pdf/) - hapus tabel atau beberapa tabel dari dokumen PDF.

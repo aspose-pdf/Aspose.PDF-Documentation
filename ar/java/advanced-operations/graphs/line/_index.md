@@ -3,7 +3,7 @@ title: إضافة كائن خط إلى ملف PDF
 linktitle: إضافة خط
 type: docs
 weight: 40
-url: ar/java/add-line/
+url: /ar/java/add-line/
 description: يشرح هذا المقال كيفية إنشاء كائن خط في ملف PDF باستخدام Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

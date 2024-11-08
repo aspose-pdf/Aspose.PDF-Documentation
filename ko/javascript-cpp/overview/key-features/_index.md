@@ -3,7 +3,7 @@ title: Aspose.PDF for JavaScript의 주요 기능
 linktitle: 주요 기능
 type: docs
 weight: 20
-url: ko/javascript-cpp/key-features/
+url: /ko/javascript-cpp/key-features/
 description: Aspose.PDF for JavaScript via C++는 일반 기능을 보여줍니다. 이 페이지는 지원되는 PDF 버전과 텍스트, 이미지, 페이지 등을 조작할 수 있는 모든 방법을 설명합니다.
 lastmod: "2022-12-13"
 sitemap:

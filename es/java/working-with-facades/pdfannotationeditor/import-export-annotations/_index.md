@@ -2,7 +2,7 @@
 title: Importar y Exportar Anotaciones al formato XFDF usando com.aspose.pdf.facades
 type: docs
 weight: 20
-url: es/java/import-export-annotations/
+url: /es/java/import-export-annotations/
 description: Esta sección explica cómo exportar e importar anotaciones de un archivo PDF a XFDF con Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:

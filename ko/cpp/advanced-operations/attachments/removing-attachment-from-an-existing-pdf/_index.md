@@ -3,7 +3,7 @@ title: PDF에서 첨부 파일 제거하기
 linktitle: 기존 PDF에서 첨부 파일 제거하기
 type: docs
 weight: 30
-url: ko/cpp/removing-attachment-from-an-existing-pdf/
+url: /ko/cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF for C++는 PDF 문서에서 첨부 파일을 제거할 수 있습니다. Aspose.PDF 라이브러리를 사용하여 PDF 파일에서 첨부 파일을 제거하는 C++ PDF API를 사용하세요.
 lastmod: "2022-02-07"
 sitemap:

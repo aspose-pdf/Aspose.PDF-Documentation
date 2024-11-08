@@ -3,7 +3,7 @@ title: 操作现有PDF中的表格
 linktitle: 操作表格
 type: docs
 weight: 30
-url: zh/java/manipulate-tables-in-existing-pdf/
+url: /zh/java/manipulate-tables-in-existing-pdf/
 description: 操作现有PDF文件中的表格，并使用Aspose.PDF for Java在PDF文档中用新表替换旧表。
 lastmod: "2021-06-05"
 sitemap:

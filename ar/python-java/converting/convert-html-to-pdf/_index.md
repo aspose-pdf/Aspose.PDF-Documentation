@@ -3,7 +3,7 @@ title: تحويل HTML إلى PDF في بايثون
 linktitle: تحويل HTML إلى ملف PDF
 type: docs
 weight: 40
-url: ar/python-java/convert-html-to-pdf/
+url: /ar/python-java/convert-html-to-pdf/
 lastmod: "2023-04-06"
 description: يوضح لك هذا الموضوع كيفية تحويل HTML إلى PDF وMHTML إلى PDF باستخدام Aspose.PDF. لبايثون.
 sitemap:

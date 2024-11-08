@@ -3,7 +3,7 @@ title: Substituir Texto em PDF
 linktitle: Substituir Texto em PDF
 type: docs
 weight: 40
-url: pt/java/replace-text-in-a-pdf-document/
+url: /pt/java/replace-text-in-a-pdf-document/
 description: Saiba mais sobre várias maneiras de substituir e remover texto de PDF. Aspose.PDF permite substituir texto em uma região específica ou com uma expressão regular.
 lastmod: "2021-06-05"
 sitemap:

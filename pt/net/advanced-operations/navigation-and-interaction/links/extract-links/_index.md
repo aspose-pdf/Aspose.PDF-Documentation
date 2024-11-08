@@ -3,7 +3,7 @@ title: Extrair Links do Arquivo PDF
 linktitle: Extrair Links
 type: docs
 weight: 30
-url: pt/net/extract-links/
+url: /pt/net/extract-links/
 description: Extrair links de PDF com C#. Este tópico explica como extrair links usando a classe AnnotationSelector.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Extrair Links do Arquivo PDF
 

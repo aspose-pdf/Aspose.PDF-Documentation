@@ -3,7 +3,7 @@ title: Como Mesclar PDF no Node.js
 linktitle: Mesclar arquivos PDF
 type: docs
 weight: 20
-url: pt/nodejs-cpp/merge-pdf/
+url: /pt/nodejs-cpp/merge-pdf/
 description: Esta página explica como mesclar documentos PDF em um único arquivo PDF com Aspose.PDF para Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

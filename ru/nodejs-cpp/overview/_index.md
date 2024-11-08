@@ -3,7 +3,7 @@ title: Обзор
 linktitle: Обзор
 type: docs
 weight: 20
-url: ru/nodejs-cpp/overview/
+url: /ru/nodejs-cpp/overview/
 description: Обзор ключевых функций и поддерживаемых форматов Aspose.PDF для Node.js через C++, руководство по установке и лицензированию.
 lastmod: "2023-11-16"
 sitemap:
@@ -50,9 +50,9 @@ Aspose.PDF для Node.js поддерживает широкий спектр �
 
 Узнайте больше о:
 
-- [Поддерживаемые форматы файлов](/pdf/nodejs-cpp/supported-file-formats/)
-- [Ключевые особенности Aspose.PDF](/pdf/nodejs-cpp/key-features/)
-- [Системные требования](/pdf/nodejs-cpp/system-requirements/)
-- [Установка](/pdf/nodejs-cpp/installation/)
-- [Лицензирование](/pdf/nodejs-cpp/licensing/)
-- [Техническая поддержка](/pdf/nodejs-cpp/technical-support/)
+- [Поддерживаемые форматы файлов](/pdf/ru/nodejs-cpp/supported-file-formats/)
+- [Ключевые особенности Aspose.PDF](/pdf/ru/nodejs-cpp/key-features/)
+- [Системные требования](/pdf/ru/nodejs-cpp/system-requirements/)
+- [Установка](/pdf/ru/nodejs-cpp/installation/)
+- [Лицензирование](/pdf/ru/nodejs-cpp/licensing/)
+- [Техническая поддержка](/pdf/ru/nodejs-cpp/technical-support/)

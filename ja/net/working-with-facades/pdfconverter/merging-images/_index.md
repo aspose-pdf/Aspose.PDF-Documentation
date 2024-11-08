@@ -2,7 +2,7 @@
 title: 画像をマージする
 type: docs
 weight: 20
-url: ja/net/merge-images/
+url: /ja/net/merge-images/
 description: このセクションでは画像をマージする方法を説明し、Tiff形式で保存することができます。
 lastmod: "2021-06-05"
 draft: false

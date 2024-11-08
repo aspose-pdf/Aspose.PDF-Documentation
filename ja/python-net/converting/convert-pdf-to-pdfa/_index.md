@@ -3,7 +3,7 @@ title: PythonでPDFをPDF/A形式に変換
 linktitle: PDFをPDF/A形式に変換
 type: docs
 weight: 100
-url: ja/python-net/convert-pdf-to-pdfa/
+url: /ja/python-net/convert-pdf-to-pdfa/
 lastmod: "2022-12-23"
 description: このトピックでは、Aspose.PDF for Pythonを使用してPDFファイルをPDF/A準拠のPDFファイルに変換する方法を示します。
 sitemap:

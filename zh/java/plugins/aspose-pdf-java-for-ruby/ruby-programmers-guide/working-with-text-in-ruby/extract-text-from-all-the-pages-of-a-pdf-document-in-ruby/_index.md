@@ -2,7 +2,7 @@
 title: 从PDF文档的所有页面中提取文本在Ruby中
 type: docs
 weight: 30
-url: zh/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
+url: /zh/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
 lastmod: "2021-06-05"
 ---
 

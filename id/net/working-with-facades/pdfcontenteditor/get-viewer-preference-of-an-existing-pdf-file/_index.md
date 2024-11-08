@@ -2,7 +2,7 @@
 title: Mendapatkan Preferensi Penampil dari Berkas PDF
 type: docs
 weight: 70
-url: id/net/get-viewer-preference-of-an-existing-pdf-file/
+url: /id/net/get-viewer-preference-of-an-existing-pdf-file/
 description: Bagian ini menunjukkan cara mendapatkan preferensi penampil dari berkas PDF yang ada menggunakan Kelas PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

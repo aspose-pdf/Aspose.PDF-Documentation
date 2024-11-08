@@ -3,7 +3,7 @@ title: Extraer Tabla de Documento PDF
 linktitle: Extraer Tabla
 type: docs
 weight: 20
-url: es/python-net/extract-table-from-existing-pdf-document/
+url: /es/python-net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF para Python a través de .NET hace posible realizar varias manipulaciones con las tablas contenidas en su documento pdf.
 lastmod: "2023-02-17"
 sitemap:

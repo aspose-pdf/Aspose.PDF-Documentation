@@ -3,7 +3,7 @@ title: Tooltip PDF menggunakan C++
 linktitle: Tooltip PDF
 type: docs
 weight: 20
-url: id/cpp/pdf-tooltip/
+url: /id/cpp/pdf-tooltip/
 description: Pelajari cara menambahkan tooltip ke fragmen teks dalam PDF menggunakan C++ dan Aspose.PDF
 lastmod: "2021-12-13"
 sitemap:

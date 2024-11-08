@@ -3,7 +3,7 @@ title: How to Install Aspose.PDF for Python
 linktitle: Installation
 type: docs
 weight: 40
-url: id/python-net/installation/
+url: /id/python-net/installation/
 description: Bagian ini menunjukkan deskripsi produk dan instruksi untuk menginstal Aspose.PDF untuk Python.
 lastmod: "2022-12-21"
 sitemap:
@@ -29,7 +29,7 @@ sitemap:
 
 Anda dapat dengan mudah mengunduh Aspose.PDF untuk Python untuk evaluasi. Unduhan evaluasi sama dengan unduhan yang dibeli. Versi evaluasi akan menjadi berlisensi ketika Anda menambahkan beberapa baris kode untuk menerapkan lisensi.
 
-Anda dapat mengunduh [Aspose.PDF untuk Python](https://releases.aspose.com/pdf/pythonnet/) untuk evaluasi. Unduhan evaluasi sama dengan unduhan yang dibeli. Versi evaluasi akan menjadi berlisensi ketika Anda menambahkan beberapa baris kode untuk [menerapkan lisensi](/pdf/python-net/licensing/).
+Anda dapat mengunduh [Aspose.PDF untuk Python](https://releases.aspose.com/pdf/pythonnet/) untuk evaluasi. Unduhan evaluasi sama dengan unduhan yang dibeli. Versi evaluasi akan menjadi berlisensi ketika Anda menambahkan beberapa baris kode untuk [menerapkan lisensi](/pdf/id/python-net/licensing/).
 
 Versi evaluasi Aspose.PDF (tanpa lisensi ditentukan) menyediakan fungsionalitas produk penuh, tetapi memiliki dua batasan: ia memasukkan tanda air evaluasi, dan hanya empat elemen dari koleksi apa pun yang dapat dilihat/diedit.
 

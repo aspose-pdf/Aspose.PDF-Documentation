@@ -2,7 +2,7 @@
 title: تعيين تفضيل العارض لملف PDF
 type: docs
 weight: 60
-url: ar/net/set-viewer-preference-of-an-existing-pdf-file/
+url: /ar/net/set-viewer-preference-of-an-existing-pdf-file/
 description: يوضح هذا القسم كيفية تعيين تفضيل العارض لملف PDF موجود باستخدام فئة PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

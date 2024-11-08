@@ -3,7 +3,7 @@ title: 북마크 추가 및 삭제
 linktitle: 북마크 추가 및 삭제
 type: docs
 weight: 10
-url: ko/net/add-and-delete-bookmark/
+url: /ko/net/add-and-delete-bookmark/
 description: PDF 문서에 C#을 사용하여 북마크를 추가할 수 있습니다. PDF 문서에서 모든 북마크 또는 특정 북마크를 삭제할 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "PDF 문서에 C#을 사용하여 북마크를 추가할 수 있습니다. PDF 문서에서 모든 북마크 또는 특정 북마크를 삭제할 수 있습니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF 문서에 즐겨찾기 추가하기
 

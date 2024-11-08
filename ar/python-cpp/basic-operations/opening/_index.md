@@ -3,7 +3,7 @@ title: فتح مستند PDF برمجيًا
 linktitle: فتح PDF
 type: docs
 weight: 20
-url: ar/python-cpp/open-pdf-document/
+url: /ar/python-cpp/open-pdf-document/
 description: تعلم كيفية فتح ملف PDF في Python باستخدام مكتبة Aspose.PDF لـ Python عبر C++. يمكنك فتح ملف PDF موجود، أو مستند من تدفق، أو مستند PDF مشفر.
 lastmod: "2022-12-22"
 sitemap:

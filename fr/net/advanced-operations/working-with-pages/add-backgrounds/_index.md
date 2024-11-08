@@ -4,7 +4,7 @@ title: Ajouter un arrière-plan à un PDF avec C#
 linktitle: Ajouter des arrière-plans
 type: docs
 weight: 110
-url: fr/net/add-backgrounds/
+url: /fr/net/add-backgrounds/
 description: Ajouter une image d'arrière-plan à votre fichier PDF avec C#. Utilisez l'objet BackgroundArtifact.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 ```
 Les images d'arrière-plan peuvent être utilisées pour ajouter un filigrane ou un autre design subtil aux documents. Dans Aspose.PDF pour .NET, chaque document PDF est une collection de pages et chaque page contient une collection d'artefacts. La classe [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) peut être utilisée pour ajouter une image d'arrière-plan à un objet page.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Le code suivant montre comment ajouter une image d'arrière-plan aux pages PDF en utilisant l'objet BackgroundArtifact avec C#.
 

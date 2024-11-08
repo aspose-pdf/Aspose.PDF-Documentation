@@ -2,7 +2,7 @@
 title: Convert PDF File
 type: docs
 weight: 20
-url: ru/java/convert-pdf-file/
+url: /ru/java/convert-pdf-file/
 description: Этот раздел объясняет, как конвертировать PDF файл с использованием Aspose.PDF Facades и класса PdfConverter.
 lastmod: "2021-06-05"
 draft: false

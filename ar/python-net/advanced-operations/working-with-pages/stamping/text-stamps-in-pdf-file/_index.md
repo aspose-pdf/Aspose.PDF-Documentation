@@ -3,7 +3,7 @@ title: إضافة أختام نصية في PDF عبر بايثون
 linktitle: الأختام النصية في ملف PDF
 type: docs
 weight: 20
-url: ar/python-net/text-stamps-in-the-pdf-file/
+url: /ar/python-net/text-stamps-in-the-pdf-file/
 description: إضافة ختم نصي إلى مستند PDF باستخدام فئة TextStamp مع مكتبة Aspose.PDF لبايثون.
 lastmod: "2023-04-17"
 sitemap:

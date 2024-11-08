@@ -2,7 +2,7 @@
 title: Hapus Anotasi (fasad)
 type: docs
 weight: 10
-url: id/net/delete-annotations/
+url: /id/net/delete-annotations/
 description: Bagian ini menjelaskan cara menghapus anotasi dengan Aspose.PDF Facades menggunakan Kelas PdfAnnotationEditor.
 lastmod: "2021-06-05"
 sitemap:

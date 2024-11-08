@@ -2,7 +2,7 @@
 title: 양식 편집기
 type: docs
 weight: 40
-url: ko/net/plugins/formeditor/
+url: /ko/net/plugins/formeditor/
 description: Aspose.PDF 플러그인을 사용하여 PDF 파일에서 양식 필드 추가, 업데이트 및 제거하는 방법
 lastmod: "2024-01-24"
 draft: false

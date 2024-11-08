@@ -2,7 +2,7 @@
 title: Python에서 PDF 파일에 빈 페이지 삽입
 type: docs
 weight: 70
-url: ko/java/insert-an-empty-page-into-a-pdf-file-in-python/
+url: /ko/java/insert-an-empty-page-into-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

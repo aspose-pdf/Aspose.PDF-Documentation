@@ -3,7 +3,7 @@ title: PDFでのテキスト置換をC++で行う
 linktitle: PDFでのテキスト置換
 type: docs
 weight: 40
-url: ja/cpp/replace-text-in-pdf/
+url: /ja/cpp/replace-text-in-pdf/
 description: PDFからテキストを置換および削除するさまざまな方法について学びます。Aspose.PDFは特定の領域や正規表現でテキストを置換することができます。
 lastmod: "2021-12-13"
 sitemap:

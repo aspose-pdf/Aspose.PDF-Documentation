@@ -3,7 +3,7 @@ title: PDF에서 XFA 양식 작업하기
 linktitle: XFA 양식
 type: docs
 weight: 20
-url: ko/java/xfa-forms/
+url: /ko/java/xfa-forms/
 description: Aspose.PDF for Java를 사용하여 처음부터 양식을 만들고, PDF 문서의 양식 필드를 채우고, 양식에서 데이터를 추출하고, 기존 양식에서 필드를 추가하거나 제거할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

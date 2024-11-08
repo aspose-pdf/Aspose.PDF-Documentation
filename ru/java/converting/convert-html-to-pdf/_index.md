@@ -3,7 +3,7 @@ title: Преобразование HTML в PDF файл на Java
 linktitle: Преобразование HTML в PDF файл
 type: docs
 weight: 40
-url: ru/java/convert-html-to-pdf/
+url: /ru/java/convert-html-to-pdf/
 lastmod: "2021-11-19"
 description: Эта тема показывает, как Aspose.PDF позволяет преобразовывать форматы HTML и MHTML в PDF файл.
 sitemap:

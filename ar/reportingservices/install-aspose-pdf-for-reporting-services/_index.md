@@ -2,7 +2,7 @@
 title: تثبيت Aspose.PDF
 type: docs
 weight: 50
-url: ar/reportingservices/install-aspose-pdf-for-reporting-services/
+url: /ar/reportingservices/install-aspose-pdf-for-reporting-services/
 lastmod: "2021-06-05"
 ---
 
@@ -10,8 +10,8 @@ lastmod: "2021-06-05"
 
 **يتضمن هذا القسم المواضيع التالية:**
 
-- [التثبيت باستخدام MSI Installer](/pdf/reportingservices/install-with-msi-installer/)
-- [التثبيت يدويًا](/pdf/reportingservices/install-manually/)
-- [التثبيت باستخدام أداة التكوين](/pdf/reportingservices/install-with-configuring-tool/)
+- [التثبيت باستخدام MSI Installer](/pdf/ar/reportingservices/install-with-msi-installer/)
+- [التثبيت يدويًا](/pdf/ar/reportingservices/install-manually/)
+- [التثبيت باستخدام أداة التكوين](/pdf/ar/reportingservices/install-with-configuring-tool/)
 
 {{% /alert %}}

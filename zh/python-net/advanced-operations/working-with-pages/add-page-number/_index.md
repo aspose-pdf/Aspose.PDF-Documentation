@@ -3,7 +3,7 @@ title: 使用 Python 为 PDF 添加页码
 linktitle: 添加页码
 type: docs
 weight: 30
-url: zh/python-net/add-page-number/
+url: /zh/python-net/add-page-number/
 description: Aspose.PDF for Python via .NET 允许您使用 PageNumber Stamp 类为 PDF 文件添加页码。
 lastmod: "2023-04-17"
 sitemap:

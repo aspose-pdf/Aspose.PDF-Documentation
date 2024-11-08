@@ -2,7 +2,7 @@
 title: Trabajando con Archivos Adjuntos
 type: docs
 weight: 50
-url: es/java/working-with-attachments/
+url: /es/java/working-with-attachments/
 description: Esta sección explica cómo trabajar con archivos adjuntos en tu PDF con Aspose.PDF Facades - un conjunto de herramientas para operaciones populares con PDF.
 lastmod: "2021-06-24"
 sitemap:

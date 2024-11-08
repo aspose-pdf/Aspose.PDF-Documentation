@@ -3,7 +3,7 @@ title: Stamping com Aspose.PDF usando C++
 linktitle: Stamping
 type: docs
 weight: 120
-url: pt/cpp/stamping/
+url: /pt/cpp/stamping/
 description: Esta seção descreve como adicionar carimbos de imagem e carimbos de texto a uma página PDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -15,6 +15,6 @@ Um carimbo em um documento PDF é análogo à aplicação de um carimbo de borra
 
 Confira as seções a seguir para aprender como adicionar um carimbo com C++:
 
-- [Adicionar carimbos de imagem na página PDF](/pdf/cpp/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
+- [Adicionar carimbos de imagem na página PDF](/pdf/pt/cpp/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
 
-- [Adicionar carimbos de texto no arquivo PDF](/pdf/cpp/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto de contorno como carimbo no arquivo PDF.
+- [Adicionar carimbos de texto no arquivo PDF](/pdf/pt/cpp/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto de contorno como carimbo no arquivo PDF.

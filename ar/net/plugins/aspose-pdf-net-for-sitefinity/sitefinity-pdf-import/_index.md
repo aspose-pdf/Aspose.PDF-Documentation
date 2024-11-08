@@ -2,7 +2,7 @@
 title: Sitefinity PDF Import
 type: docs
 weight: 10
-url: ar/net/sitefinity-pdf-import/
+url: /ar/net/sitefinity-pdf-import/
 description: تعرف على كيفية تثبيت واستخدام وحدة استيراد PDF لـ Sitefinity
 lastmod: "2021-06-05"
 sitemap:

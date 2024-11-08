@@ -3,7 +3,7 @@ title: إضافة وحذف إشارة مرجعية
 linktitle: إضافة وحذف إشارة مرجعية
 type: docs
 weight: 10
-url: ar/net/add-and-delete-bookmark/
+url: /ar/net/add-and-delete-bookmark/
 description: يمكنك إضافة إشارة مرجعية إلى مستند PDF باستخدام C#. من الممكن حذف جميع الإشارات المرجعية أو إشارات مرجعية معينة من مستند PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "يمكنك إضافة إشارة مرجعية إلى مستند PDF باستخدام C#. من الممكن حذف جميع الإشارات المرجعية أو إشارات مرجعية معينة من مستند PDF."
 }
 </script>
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة إشارة مرجعية إلى مستند PDF
 

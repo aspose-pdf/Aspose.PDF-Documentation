@@ -2,7 +2,7 @@
 title: استخراج النص من جميع صفحات مستند PDF باستخدام روبي
 type: docs
 weight: 30
-url: ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
+url: /ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
 lastmod: "2021-06-05"
 ---
 

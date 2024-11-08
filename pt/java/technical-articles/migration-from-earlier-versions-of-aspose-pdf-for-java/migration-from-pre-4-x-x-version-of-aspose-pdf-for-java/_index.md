@@ -2,7 +2,7 @@
 title: Migração da versão anterior a 4.x.x do Aspose.PDF para Java
 type: docs
 weight: 20
-url: pt/java/migration-from-pre-4-x-x-version-of-aspose-pdf-for-java/
+url: /pt/java/migration-from-pre-4-x-x-version-of-aspose-pdf-for-java/
 lastmod: "2022-01-27"
 ---
 

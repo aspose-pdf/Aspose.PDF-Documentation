@@ -3,7 +3,7 @@ title: التعامل مع مستند PDF في C#
 linktitle: التعامل مع مستند PDF
 type: docs
 weight: 20
-url: ar/net/manipulate-pdf-document/
+url: /ar/net/manipulate-pdf-document/
 description: يحتوي هذا المقال على معلومات حول كيفية التحقق من صحة مستند PDF لمعيار PDF A، وكيفية العمل مع جدول المحتويات، وكيفية تعيين تاريخ انتهاء صلاحية PDF، وما إلى ذلك.
 keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
@@ -88,7 +88,7 @@ sitemap:
 
 {{% /alert %}}
 
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يوضح الجزء التالي من الكود كيفية التحقق من صحة مستند PDF لـ PDF/A-1A.
 الجزء التالي من الشفرة يوضح لك كيفية التحقق من صحة ملف PDF لمعيار PDF/A-1A.

@@ -3,7 +3,7 @@ title: تحسين موارد ملفات PDF في Node.js
 linktitle: تحسين موارد PDF
 type: docs
 weight: 15
-url: ar/nodejs-cpp/optimize-pdf-resources/
+url: /ar/nodejs-cpp/optimize-pdf-resources/
 description: تحسين موارد ملفات PDF لعرض الويب السريع باستخدام أداة Node.js.
 lastmod: "2023-11-16"
 sitemap:

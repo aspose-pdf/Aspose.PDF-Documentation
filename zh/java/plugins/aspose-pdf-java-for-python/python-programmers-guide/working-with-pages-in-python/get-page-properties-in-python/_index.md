@@ -2,7 +2,7 @@
 title: 获取 Python 中的页面属性
 type: docs
 weight: 50
-url: zh/java/get-page-properties-in-python/
+url: /zh/java/get-page-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

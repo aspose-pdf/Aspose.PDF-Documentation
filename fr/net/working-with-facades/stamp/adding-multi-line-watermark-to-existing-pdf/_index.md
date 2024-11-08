@@ -2,7 +2,7 @@
 title: Ajout d'un filigrane multi-lignes
 type: docs
 weight: 10
-url: fr/net/adding-multi-line-watermark-to-existing-pdf/
+url: /fr/net/adding-multi-line-watermark-to-existing-pdf/
 description: Cette section explique comment ajouter un filigrane multi-lignes à un PDF existant en utilisant la classe FormattedText.
 lastmod: "2021-06-05"
 draft: false

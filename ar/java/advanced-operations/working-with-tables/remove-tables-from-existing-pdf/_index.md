@@ -3,7 +3,7 @@ title: إزالة الجداول من ملف PDF موجود
 linktitle: إزالة الجداول
 type: docs
 weight: 40
-url: ar/java/remove-tables-from-existing-pdf/
+url: /ar/java/remove-tables-from-existing-pdf/
 description: تتيح Aspose.PDF for Java لك إزالة الجدول والعديد من الجداول من مستند PDF الخاص بك.
 lastmod: "2021-06-05"
 sitemap:

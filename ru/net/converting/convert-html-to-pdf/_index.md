@@ -3,7 +3,7 @@ title: Конвертация HTML в PDF в .NET
 linktitle: Конвертация HTML в PDF файл
 type: docs
 weight: 40
-url: ru/net/convert-html-to-pdf/
+url: /ru/net/convert-html-to-pdf/
 lastmod: "2021-11-01"
 description: Эта тема показывает, как конвертировать HTML в PDF и MHTML в PDF с использованием Aspose.PDF.
 sitemap:
@@ -14,7 +14,7 @@ sitemap:
 
 Эта статья объясняет, как **конвертировать HTML в PDF с помощью C#**. Она охватывает следующие темы.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 _Формат_: **HTML**
 - [C# HTML в PDF](#csharp-html-to-pdf)

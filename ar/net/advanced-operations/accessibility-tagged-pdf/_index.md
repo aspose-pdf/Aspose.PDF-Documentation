@@ -3,7 +3,7 @@ title: الوصول وملفات PDF الموسومة
 linktitle: الوصول. ملف PDF موسوم
 type: docs
 weight: 120
-url: ar/net/accessibility-tagged-pdf/
+url: /ar/net/accessibility-tagged-pdf/
 description: يوفر Aspose.PDF القدرة على إنشاء مستندات PDF موسومة، مما يتيح لك توسيم العناصر الهيكلية. تعرف على المزيد حول كيفية الحصول على ملفات PDF قابلة للوصول.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,11 +79,11 @@ sitemap:
 
 هذا القسم يغطي الموضوع التالي:
 
-- [إنشاء PDF موسوم](/pdf/net/create-tagged-pdf/)
-- [استخراج المحتوى الموسوم من PDFs الموسومة](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [ضبط خصائص عناصر الهيكل](/pdf/net/setting-structure-elements-properties/)
-- [العمل مع الجدول في PDFs الموسومة](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [اختبار التوافق مع PDF-UA - قائمة الأخطاء](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [إنشاء PDF موسوم](/pdf/ar/net/create-tagged-pdf/)
+- [استخراج المحتوى الموسوم من PDFs الموسومة](/pdf/ar/net/extract-tagged-content-from-tagged-pdfs/)
+- [ضبط خصائص عناصر الهيكل](/pdf/ar/net/setting-structure-elements-properties/)
+- [العمل مع الجدول في PDFs الموسومة](/pdf/ar/net/working-with-table-in-tagged-pdfs/)
+- [اختبار التوافق مع PDF-UA - قائمة الأخطاء](/pdf/ar/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

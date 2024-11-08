@@ -2,7 +2,7 @@
 title: Mengonversi Halaman PDF menjadi Gambar dan Mengenali Barcode
 type: docs
 weight: 10
-url: id/net/convert-pdf-pages-to-images-and-recognize-barcodes/
+url: /id/net/convert-pdf-pages-to-images-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

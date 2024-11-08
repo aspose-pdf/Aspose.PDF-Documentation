@@ -3,7 +3,7 @@ title: PDF 문서 조작
 linktitle: PDF 문서 조작
 type: docs
 weight: 30
-url: ko/php-java/manipulate-pdf-document/
+url: /ko/php-java/manipulate-pdf-document/
 description: 이 문서에는 PDF A 표준에 대한 PDF 문서 검증 방법, 목차 작업 방법, PDF 만료 날짜 설정 방법 및 PDF 파일 생성 진행 상황 확인 방법에 대한 정보가 포함되어 있습니다.
 lastmod: "2024-06-05"
 ---

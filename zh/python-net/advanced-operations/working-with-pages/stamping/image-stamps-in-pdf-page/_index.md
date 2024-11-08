@@ -3,7 +3,7 @@ title: 使用 Python 在 PDF 中添加图像印章
 linktitle: PDF 文件中的图像印章
 type: docs
 weight: 10
-url: zh/python-net/image-stamps-in-pdf-page/
+url: /zh/python-net/image-stamps-in-pdf-page/
 description: 使用 Aspose.PDF for Python 库的 ImageStamp 类在 PDF 文档中添加图像印章。
 lastmod: "2023-04-17"
 sitemap:

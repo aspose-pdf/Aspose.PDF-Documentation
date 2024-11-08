@@ -3,7 +3,7 @@ title: 使用 PDF 文档
 linktitle: 使用文档
 type: docs
 weight: 10
-url: zh/php-java/working-with-documents/
+url: /zh/php-java/working-with-documents/
 lastmod: "2024-06-05"
 description: 本文向您描述如何通过 Aspose.PDF for PHP via Java 对文档进行操作。
 sitemap:
@@ -21,9 +21,9 @@ PDF 文档的主要目标是保存和保护文档的内容和布局。这就是�
 
 You are able to do the following:
 
-- [格式化 PDF 文档](/pdf/php-java/formatting-pdf-document/) - 获取和设置文档属性，嵌入字体，以及其他 PDF 文件操作。
-- [操作 PDF 文档](/pdf/php-java/manipulate-pdf-document/) - 验证 PDF 文档的 PDF A 标准，处理目录，设置 PDF 过期日期等。
-- [优化 PDF](/pdf/php-java/optimize-pdf/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
-- [合并 PDF](/pdf/php-java/merge-pdf-documents/) - 使用 PHP 将多个 PDF 文件合并为一个 PDF 文档。
-- [拆分 PDF](/pdf/php-java/split-document/) - 在 Java 应用程序中将 PDF 页面拆分为单独的 PDF 文件。
-- [处理标题](/pdf/php-java/working-with-headings/) - 您可以使用 Java 在 PDF 文档中创建标题编号。
+- [格式化 PDF 文档](/pdf/zh/php-java/formatting-pdf-document/) - 获取和设置文档属性，嵌入字体，以及其他 PDF 文件操作。
+- [操作 PDF 文档](/pdf/zh/php-java/manipulate-pdf-document/) - 验证 PDF 文档的 PDF A 标准，处理目录，设置 PDF 过期日期等。
+- [优化 PDF](/pdf/zh/php-java/optimize-pdf/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
+- [合并 PDF](/pdf/zh/php-java/merge-pdf-documents/) - 使用 PHP 将多个 PDF 文件合并为一个 PDF 文档。
+- [拆分 PDF](/pdf/zh/php-java/split-document/) - 在 Java 应用程序中将 PDF 页面拆分为单独的 PDF 文件。
+- [处理标题](/pdf/zh/php-java/working-with-headings/) - 您可以使用 Java 在 PDF 文档中创建标题编号。

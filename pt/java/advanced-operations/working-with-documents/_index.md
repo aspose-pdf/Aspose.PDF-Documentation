@@ -3,7 +3,7 @@ title: Trabalhando com Documentos PDF
 linktitle: Trabalhando com Documentos
 type: docs
 weight: 10
-url: pt/java/working-with-documents/
+url: /pt/java/working-with-documents/
 lastmod: "2021-06-05"
 description: Este artigo descreve quais manipulações podem ser feitas com o documento usando Aspose.PDF para Java.
 sitemap:
@@ -21,10 +21,10 @@ Mas **Aspose.PDF para Java** pode ajudá-lo a lidar com a maioria das tarefas qu
 
 You are able to do the following:
 
-- [Create Document](/pdf/java/create-pdf-document/) - criar documento PDF.
-- [Formatting PDF Document](/pdf/java/formatting-pdf-document/) - obter e definir propriedades do documento, incorporar fontes e outras operações com arquivos PDF.
-- [Manipulate PDF Document](/pdf/java/manipulate-pdf-document/) - validar um documento PDF para o padrão PDF A, trabalhar com índice, definir data de expiração do PDF, etc.
-- [Optimize PDF](/pdf/java/optimize-pdf/) - otimizar o conteúdo da página, otimizar o tamanho do arquivo, remover objetos não utilizados, compactar todas as imagens para uma otimização bem-sucedida do documento.
-- [Merge PDF](/pdf/java/merge-pdf-documents/) - mesclar vários arquivos PDF em um único documento PDF usando Java.
-- [Split PDF](/pdf/java/split-document/) - dividir páginas PDF em arquivos PDF individuais em suas aplicações Java.
-- [Working with Headings](/pdf/java/working-with-headings/) - você pode criar numeração nos títulos do seu documento PDF com Java.
+- [Create Document](/pdf/pt/java/create-pdf-document/) - criar documento PDF.
+- [Formatting PDF Document](/pdf/pt/java/formatting-pdf-document/) - obter e definir propriedades do documento, incorporar fontes e outras operações com arquivos PDF.
+- [Manipulate PDF Document](/pdf/pt/java/manipulate-pdf-document/) - validar um documento PDF para o padrão PDF A, trabalhar com índice, definir data de expiração do PDF, etc.
+- [Optimize PDF](/pdf/pt/java/optimize-pdf/) - otimizar o conteúdo da página, otimizar o tamanho do arquivo, remover objetos não utilizados, compactar todas as imagens para uma otimização bem-sucedida do documento.
+- [Merge PDF](/pdf/pt/java/merge-pdf-documents/) - mesclar vários arquivos PDF em um único documento PDF usando Java.
+- [Split PDF](/pdf/pt/java/split-document/) - dividir páginas PDF em arquivos PDF individuais em suas aplicações Java.
+- [Working with Headings](/pdf/pt/java/working-with-headings/) - você pode criar numeração nos títulos do seu documento PDF com Java.

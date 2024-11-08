@@ -2,7 +2,7 @@
 title: Добавление содержания в существующий PDF на Python
 type: docs
 weight: 20
-url: ru/python-java/add-toc-to-existing-pdf-in-python/
+url: /ru/python-java/add-toc-to-existing-pdf-in-python/
 ---
 
 Чтобы добавить содержание в PDF документ, используя **Aspose.PDF Java для Python**, просто вызовите класс **AddToc**.

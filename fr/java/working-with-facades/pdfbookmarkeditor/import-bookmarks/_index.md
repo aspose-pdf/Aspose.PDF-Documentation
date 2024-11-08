@@ -2,7 +2,7 @@
 title: Importer des Signets à partir de XML dans un Fichier PDF Existant (façades)
 type: docs
 weight: 30
-url: fr/java/import-bookmark/
+url: /fr/java/import-bookmark/
 description: Cette section explique comment importer des signets avec Aspose.PDF Facades en utilisant la classe PdfBookmarkEditor.
 lastmod: "2021-06-05"
 sitemap:

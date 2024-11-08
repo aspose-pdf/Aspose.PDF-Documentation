@@ -3,7 +3,7 @@ title: Travailler avec des graphiques dans un fichier PDF
 linktitle: Travailler avec des graphiques
 type: docs
 weight: 70
-url: fr/net/graphs/
+url: /fr/net/graphs/
 description: Cet article explique ce qu'est un graphique, comment créer un objet rectangle rempli et autres fonctions
 lastmod: "2022-02-17"
 sitemap:
@@ -81,17 +81,17 @@ aliases:
 ## Qu'est-ce qu'un Graphique
 
 L'ajout de graphiques aux documents PDF est une tâche très courante pour les développeurs lorsqu'ils travaillent avec Adobe Acrobat Writer ou d'autres applications de traitement de PDF. Il existe de nombreux types de graphiques qui peuvent être utilisés dans les applications PDF.
-[Aspose.PDF pour .NET](/pdf/net/) prend également en charge l'ajout de graphiques aux documents PDF. À cette fin, la classe Graph est fournie. Graph est un élément de niveau paragraphe et peut être ajouté à la collection Paragraphs dans une instance de Page. Une instance de Graph contient une collection de Formes.
+[Aspose.PDF pour .NET](/pdf/fr/net/) prend également en charge l'ajout de graphiques aux documents PDF. À cette fin, la classe Graph est fournie. Graph est un élément de niveau paragraphe et peut être ajouté à la collection Paragraphs dans une instance de Page. Une instance de Graph contient une collection de Formes.
 
 Les types de formes suivants sont pris en charge par la classe [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) :
 
-- [Arc](/pdf/net/add-arc/) - parfois appelé aussi un drapeau, est une paire ordonnée de sommets adjacents, mais parfois également appelée une ligne dirigée.
-- [Cercle](/pdf/net/add-circle/) - affiche des données en utilisant un cercle divisé en secteurs. Nous utilisons un graphique circulaire (également appelé diagramme circulaire) pour montrer comment les données représentent des parties d'un tout ou d'un groupe.
-- [Courbe](/pdf/net/add-curve/) - est une union connectée de lignes projectives, chaque ligne rencontrant trois autres en points doubles ordinaires.
-- [Curve](/pdf/net/add-curve/) - est une union connectée de lignes projectives, chaque ligne rencontrant trois autres en points doubles ordinaires.
-- [Line](/pdf/net/add-line) - les graphiques linéaires sont utilisés pour afficher des données continues et peuvent être utiles pour prédire des événements futurs lorsqu'ils montrent des tendances dans le temps.
-- [Rectangle](/pdf/net/add-rectangle/) - est l'une des nombreuses formes fondamentales que vous verrez dans les graphiques, cela peut être très utile pour vous aider à résoudre un problème.
-- [Ellipse](/pdf/net/add-ellipse/) - est un ensemble de points sur un plan, créant une forme ovale et courbée.
+- [Arc](/pdf/fr/net/add-arc/) - parfois appelé aussi un drapeau, est une paire ordonnée de sommets adjacents, mais parfois également appelée une ligne dirigée.
+- [Cercle](/pdf/fr/net/add-circle/) - affiche des données en utilisant un cercle divisé en secteurs. Nous utilisons un graphique circulaire (également appelé diagramme circulaire) pour montrer comment les données représentent des parties d'un tout ou d'un groupe.
+- [Courbe](/pdf/fr/net/add-curve/) - est une union connectée de lignes projectives, chaque ligne rencontrant trois autres en points doubles ordinaires.
+- [Curve](/pdf/fr/net/add-curve/) - est une union connectée de lignes projectives, chaque ligne rencontrant trois autres en points doubles ordinaires.
+- [Line](/pdf/fr/net/add-line) - les graphiques linéaires sont utilisés pour afficher des données continues et peuvent être utiles pour prédire des événements futurs lorsqu'ils montrent des tendances dans le temps.
+- [Rectangle](/pdf/fr/net/add-rectangle/) - est l'une des nombreuses formes fondamentales que vous verrez dans les graphiques, cela peut être très utile pour vous aider à résoudre un problème.
+- [Ellipse](/pdf/fr/net/add-ellipse/) - est un ensemble de points sur un plan, créant une forme ovale et courbée.
 
 Les détails ci-dessus sont également représentés dans les figures ci-dessous :
 

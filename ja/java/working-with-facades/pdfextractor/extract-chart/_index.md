@@ -2,7 +2,7 @@
 title: PDFドキュメントからチャートオブジェクトを抽出する（ファサード）
 type: docs
 weight: 20
-url: ja/java/extract-chart-objects/
+url: /ja/java/extract-chart-objects/
 description: このセクションでは、PdfExtractorクラスを使用してAspose.PDF FacadesでPDFからチャートオブジェクトを抽出する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

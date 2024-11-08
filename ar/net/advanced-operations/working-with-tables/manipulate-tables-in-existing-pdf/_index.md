@@ -3,7 +3,7 @@ title: التلاعب بالجداول في ملف PDF موجود
 linktitle: التلاعب بالجداول
 type: docs
 weight: 40
-url: ar/net/manipulate-tables-in-existing-pdf/
+url: /ar/net/manipulate-tables-in-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -78,7 +78,7 @@ sitemap:
 
 أحد أقدم الميزات التي يدعمها Aspose.PDF لـ .NET هي قدراته في التعامل مع الجداول ويوفر دعمًا كبيرًا لإضافة جداول في ملفات PDF التي يتم إنشاؤها من الصفر أو أي ملفات PDF موجودة. تحصل أيضًا على القدرة على دمج الجدول مع قاعدة البيانات (DOM) لإنشاء جداول ديناميكية بناءً على محتويات قاعدة البيانات. في هذا الإصدار الجديد، قمنا بتنفيذ ميزة جديدة للبحث وتحليل الجداول البسيطة الموجودة بالفعل على صفحة من مستند PDF. توفر فئة جديدة تُدعى **Aspose.PDF.Text.TableAbsorber** هذه القدرات. استخدام TableAbsorber مشابه جدًا لفئة TextFragmentAbsorber الموجودة. يوضح الجزء التالي من الشفرة الخطوات لتحديث المحتويات في خلية جدول محددة.
 
-يعمل الجزء التالي من الشفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الشفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET

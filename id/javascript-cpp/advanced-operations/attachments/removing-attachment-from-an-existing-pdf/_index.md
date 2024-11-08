@@ -3,7 +3,7 @@ title: Menghapus lampiran dari PDF dengan JavaScript
 linktitle: Menghapus lampiran dari PDF yang ada
 type: docs
 weight: 10
-url: id/javascript-cpp/menghapus-lampiran-dari-pdf-yang-ada/
+url: /id/javascript-cpp/menghapus-lampiran-dari-pdf-yang-ada/
 description: Aspose.PDF dapat menghapus lampiran dari dokumen PDF Anda. Gunakan toolkit Web JavaScript untuk menghapus lampiran dalam file PDF menggunakan Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:

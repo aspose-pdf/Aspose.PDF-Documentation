@@ -3,7 +3,7 @@ title: 将PDF转换为PPTX在Node.js中
 linktitle: 将PDF转换为PowerPoint
 type: docs
 weight: 30
-url: zh/nodejs-cpp/convert-pdf-to-powerpoint/
+url: /zh/nodejs-cpp/convert-pdf-to-powerpoint/
 lastmod: "2023-11-16"
 description: Aspose.PDF允许您在Node.js环境中直接将PDF转换为PPTX格式。
 sitemap:

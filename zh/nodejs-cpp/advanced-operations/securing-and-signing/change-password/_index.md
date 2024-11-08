@@ -3,7 +3,7 @@ title: 更改 Node.js 中 PDF 文件的密码
 linktitle: 更改密码
 type: docs
 weight: 50
-url: zh/nodejs-cpp/change-password-pdf/
+url: /zh/nodejs-cpp/change-password-pdf/
 description: 使用 Aspose.PDF for Node.js via C++ 更改 PDF 文件的密码。
 lastmod: "2023-11-16"
 sitemap:

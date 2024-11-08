@@ -2,7 +2,7 @@
 title: PHP에서 PDF 파일 끝에 빈 페이지 삽입하기
 type: docs
 weight: 60
-url: ko/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
+url: /ko/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

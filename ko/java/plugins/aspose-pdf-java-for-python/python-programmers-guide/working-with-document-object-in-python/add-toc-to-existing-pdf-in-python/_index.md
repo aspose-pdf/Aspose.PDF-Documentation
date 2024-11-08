@@ -2,7 +2,7 @@
 title: 기존 PDF에 목차 추가하기
 type: docs
 weight: 20
-url: ko/java/add-toc-to-existing-pdf-in-python/
+url: /ko/java/add-toc-to-existing-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

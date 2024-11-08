@@ -2,7 +2,7 @@
 title: استيراد البيانات إلى ملف PDF - الواجهات
 type: docs
 weight: 10
-url: ar/java/import-data-into-a-pdf-file-facades/
+url: /ar/java/import-data-into-a-pdf-file-facades/
 description: يشرح هذا القسم كيفية استيراد البيانات إلى XML من ملف PDF باستخدام واجهات Aspose.PDF باستخدام فئة النموذج.
 lastmod: "2021-06-05"
 ---

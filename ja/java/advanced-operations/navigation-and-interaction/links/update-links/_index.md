@@ -3,7 +3,7 @@ title: PDF内のリンクを更新する
 linktitle: リンクを更新
 type: docs
 weight: 20
-url: ja/java/update-links/
+url: /ja/java/update-links/
 description: プログラムでPDF内のリンクを更新します。このガイドはJava言語でPDF内のリンクを更新する方法についてです。
 lastmod: "2021-06-05"
 sitemap:

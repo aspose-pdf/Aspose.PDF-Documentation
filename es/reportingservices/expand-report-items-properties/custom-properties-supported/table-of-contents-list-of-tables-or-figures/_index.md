@@ -2,7 +2,7 @@
 title: Tabla de Contenidos Lista de Tablas o Figuras
 type: docs
 weight: 10
-url: es/reportingservices/table-of-contents-list-of-tables-or-figures/
+url: /es/reportingservices/table-of-contents-list-of-tables-or-figures/
 lastmod: "2021-06-05"
 ---
 

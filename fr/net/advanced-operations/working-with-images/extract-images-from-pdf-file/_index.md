@@ -3,7 +3,7 @@ title: Extraire des images d'un fichier PDF
 linktitle: Extraire des images
 type: docs
 weight: 30
-url: fr/net/extract-images-from-pdf-file/
+url: /fr/net/extract-images-from-pdf-file/
 description: Cette section montre comment extraire des images d'un fichier PDF en utilisant une bibliothèque C#.
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "Cette section montre comment extraire des images d'un fichier PDF en utilisant une bibliothèque C#."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Les images sont conservées dans la collection [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) de la collection [Ressources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) de chaque page. Pour extraire une image spécifique, obtenez-la à partir de la collection Images en utilisant l'index particulier de l'image.
 

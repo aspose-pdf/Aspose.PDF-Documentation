@@ -3,7 +3,7 @@ title: Cara menandatangani PDF secara digital
 linktitle: Tanda tangan digital PDF
 type: docs
 weight: 10
-url: id/java/digitally-sign-pdf-file/
+url: /id/java/digitally-sign-pdf-file/
 description: Menandatangani dokumen PDF secara digital menggunakan Java. Memverifikasi, atau memvalidasi tanda tangan digital PDF dengan aplikasi berbasis Java dengan PDF Library. Anda dapat mengesahkan file PDF dengan Sertifikat PKCS1.
 lastmod: "2021-06-05"
 sitemap:

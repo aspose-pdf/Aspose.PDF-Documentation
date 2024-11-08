@@ -2,7 +2,7 @@
 title: Добавление слоев в PDF файл на Ruby
 type: docs
 weight: 20
-url: ru/java/add-layers-to-pdf-file-in-ruby/
+url: /ru/java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

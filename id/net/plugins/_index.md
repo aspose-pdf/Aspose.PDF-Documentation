@@ -3,7 +3,7 @@ title: Plugin dan integrasi dengan bahasa lain
 linktitle: Plugin
 type: docs
 weight: 130
-url: id/net/plugins/
+url: /id/net/plugins/
 description: Pelajari cara menggunakan berbagai plugin berdasarkan Aspose.PDF
 lastmod: "2024-03-13"
 sitemap:
@@ -41,13 +41,13 @@ sitemap:
 
 Bagian ini berisi daftar plugin untuk aplikasi web paling populer: DotNetNuke, Sitefinity, Umbraco, dll.
 
-* [Aspose.PDF .NET untuk DNN](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF .NET untuk Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF .NET untuk VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
-* [Aspose.PDF .NET untuk CRM](/pdf/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF .NET untuk Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF .NET untuk DNN](/pdf/id/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF .NET untuk Umbraco](/pdf/id/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF .NET untuk VisualStudio](/pdf/id/net/aspose-pdf-net-for-visualstudio/)
+* [Aspose.PDF .NET untuk CRM](/pdf/id/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF .NET untuk Sitefinity](/pdf/id/net/aspose-pdf-net-for-sitefinity/)
 
 ### Menggunakan Aspose.PDF dengan bahasa lain
 
-* [Menggunakan Aspose.PDF untuk .NET dengan Coldfusion](/pdf/net/aspose-pdf-net-for-coldfusion/)
+* [Menggunakan Aspose.PDF untuk .NET dengan Coldfusion](/pdf/id/net/aspose-pdf-net-for-coldfusion/)
 

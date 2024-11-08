@@ -3,7 +3,7 @@ title: Travailler avec les Pièces Jointes dans les PDF en utilisant Python
 linktitle: Travailler avec les Pièces Jointes
 type: docs
 weight: 130
-url: fr/python-net/attachments/
+url: /fr/python-net/attachments/
 description: Utilisez l'API PDF de Python pour accéder, ajouter et supprimer des pièces jointes dans les fichiers PDF en utilisant Python depuis vos applications. Guide complet avec des exemples de code Python.
 lastmod: "2023-02-17"
 sitemap:
@@ -81,9 +81,9 @@ Dans cette section, nous expliquerons comment travailler avec des pièces jointe
 Une pièce jointe est un fichier supplémentaire qui est attaché à un document parent, il peut s'agir de différents types de fichiers, tels que pdf, word, image ou autres fichiers.  
 Vous apprendrez comment ajouter des pièces jointes à un pdf, obtenir les informations d'une pièce jointe, l'enregistrer dans un fichier, supprimer la pièce jointe d'un PDF de manière programmée avec Python.  
 
-- [Ajouter une pièce jointe à un document PDF](/pdf/python-net/add-attachment-to-pdf-document/)  
-- [Supprimer une pièce jointe d'un PDF existant](/pdf/python-net/removing-attachment-from-an-existing-pdf/)  
-- [Portefeuille](/pdf/python-net/portfolio/)  
+- [Ajouter une pièce jointe à un document PDF](/pdf/fr/python-net/add-attachment-to-pdf-document/)  
+- [Supprimer une pièce jointe d'un PDF existant](/pdf/fr/python-net/removing-attachment-from-an-existing-pdf/)  
+- [Portefeuille](/pdf/fr/python-net/portfolio/)  
 
 ```json
 {

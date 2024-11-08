@@ -2,7 +2,7 @@
 title: Добавление закладок в PDF файл
 type: docs
 weight: 20
-url: ru/net/how-to-create-nested-bookmarks/
+url: /ru/net/how-to-create-nested-bookmarks/
 description: Этот раздел объясняет, как создать вложенные закладки с помощью класса PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

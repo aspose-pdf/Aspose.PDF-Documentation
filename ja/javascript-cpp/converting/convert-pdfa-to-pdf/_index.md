@@ -3,7 +3,7 @@ title: PDF/A を PDF 形式に変換する
 linktitle: PDF/A を PDF 形式に変換する
 type: docs
 weight: 110
-url: ja/javascript-cpp/convert-pdfa-to-pdf/
+url: /ja/javascript-cpp/convert-pdfa-to-pdf/
 lastmod: "2023-11-01"
 description: このトピックでは、Aspose.PDF を使用して PDF/A ファイルを PDF ドキュメントに変換する方法を示します。
 sitemap:

@@ -2,7 +2,7 @@
 title: Page Orientation
 type: docs
 weight: 10
-url: ru/reportingservices/page-orientation/
+url: /ru/reportingservices/page-orientation/
 lastmod: "2021-06-05"
 ---
 

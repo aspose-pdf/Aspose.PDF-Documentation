@@ -3,7 +3,7 @@ title: Anotasi Sorotan PDF menggunakan Python
 linktitle: Anotasi Sorotan
 type: docs
 weight: 20
-url: id/python-net/highlights-annotation/
+url: /id/python-net/highlights-annotation/
 description: Anotasi Markup disajikan dalam teks sebagai sorotan, garis bawah, coretan, atau garis bawah bergerigi dalam teks dokumen.
 lastmod: "2023-02-17"
 sitemap:

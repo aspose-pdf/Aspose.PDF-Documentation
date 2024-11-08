@@ -3,7 +3,7 @@ title: 在PDF中旋转文本使用C++
 linktitle: 在PDF中旋转文本
 type: docs
 weight: 50
-url: zh/cpp/rotate-text-inside-pdf/
+url: /zh/cpp/rotate-text-inside-pdf/
 description: 了解将文本旋转到PDF的不同方法。Aspose.PDF允许您将文本旋转到任意角度，旋转文本片段或整个段落。
 lastmod: "2021-12-13"
 sitemap:

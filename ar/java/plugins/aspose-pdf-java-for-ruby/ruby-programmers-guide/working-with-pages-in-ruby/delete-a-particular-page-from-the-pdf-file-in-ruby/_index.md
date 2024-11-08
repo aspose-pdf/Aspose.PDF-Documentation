@@ -2,7 +2,7 @@
 title: حذف صفحة معينة من ملف PDF في روبي
 type: docs
 weight: 20
-url: ar/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
+url: /ar/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

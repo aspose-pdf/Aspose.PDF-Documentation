@@ -4,7 +4,7 @@ linktitle: Crear PDF Etiquetado
 type: docs
 weight: 10
 lastmod: "2021-06-05"
-url: es/java/create-tagged-pdf-documents/
+url: /es/java/create-tagged-pdf-documents/
 description: Este artículo explica cómo crear elementos de estructura para un documento PDF etiquetado programáticamente utilizando Aspose.PDF para Java.
 sitemap:
     changefreq: "weekly"

@@ -2,7 +2,7 @@
 title: مولد الجداول
 type: docs
 weight: 130
-url: ar/net/plugins/tablegenerator/
+url: /ar/net/plugins/tablegenerator/
 description: يتيح إضافة/إدراج جدول في رقم الصفحة المحدد للمستند PDF.
 lastmod: "2024-01-24"
 draft: false

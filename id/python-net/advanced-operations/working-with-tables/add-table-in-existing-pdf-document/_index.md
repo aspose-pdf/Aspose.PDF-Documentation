@@ -3,7 +3,7 @@ title: Membuat atau Menambahkan Tabel Dalam PDF menggunakan Python
 linktitle: Membuat atau Menambahkan Tabel
 type: docs
 weight: 10
-url: id/python-net/add-table-in-existing-pdf-document/
+url: /id/python-net/add-table-in-existing-pdf-document/
 description: Aspose.PDF untuk Python melalui .NET adalah perpustakaan yang digunakan untuk membuat, membaca, dan mengedit Tabel PDF. Periksa fungsi lanjutan lainnya dalam topik ini.
 lastmod: "2023-02-17"
 sitemap:

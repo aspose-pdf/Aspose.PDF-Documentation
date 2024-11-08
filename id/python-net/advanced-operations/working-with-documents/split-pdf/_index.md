@@ -3,7 +3,7 @@ title: Memisahkan PDF secara program di Python
 linktitle: Memisahkan file PDF
 type: docs
 weight: 60
-url: id/python-net/split-pdf-document/
+url: /id/python-net/split-pdf-document/
 keywords: membagi pdf menjadi beberapa file, membagi pdf menjadi pdf terpisah, membagi pdf python
 description: Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individual dalam aplikasi Python Anda.
 lastmod: "2023-04-17"

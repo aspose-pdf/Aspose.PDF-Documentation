@@ -2,7 +2,7 @@
 title: PDF 파일에서 페이지 크기 변경
 type: docs
 weight: 30
-url: ko/net/changing-page-sizes-in-a-pdf-file/
+url: /ko/net/changing-page-sizes-in-a-pdf-file/
 description: PdfPageEditor 클래스를 사용하여 PDF 파일에서 페이지 크기를 변경하는 방법을 배우십시오.
 lastmod: "2021-06-05"
 draft: false

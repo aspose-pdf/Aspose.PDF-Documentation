@@ -2,7 +2,7 @@
 title: Tambahkan Daftar Isi ke PDF yang Ada di Ruby
 type: docs
 weight: 30
-url: id/java/add-toc-to-existing-pdf-in-ruby/
+url: /id/java/add-toc-to-existing-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

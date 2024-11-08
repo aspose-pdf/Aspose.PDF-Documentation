@@ -3,7 +3,7 @@ title: Set Default Font Name
 linktitle: Set Default Font Name
 type: docs
 weight: 90
-url: ko/net/set-default-font-name/
+url: /ko/net/set-default-font-name/
 description: 이 섹션에서는 PDF에서 이미지로 변환하는 과정에서 기본 글꼴 이름을 설정하는 방법에 대해 설명합니다.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 **Aspose.PDF for .NET** API는 문서에 사용 가능한 글꼴이 없을 때 기본 글꼴 이름을 설정할 수 있습니다. RenderingOptions 클래스의 DefaultFontName 속성을 사용하여 기본 글꼴 이름을 설정할 수 있습니다. DefaultFontName이 null로 설정된 경우 **Times New Roman** 글꼴이 사용됩니다. 다음 코드 조각은 PDF를 이미지로 저장할 때 기본 글꼴 이름을 설정하는 방법을 보여줍니다:
 
-다음 코드 조각은 새로운 그래픽 [Aspose.Drawing](/pdf/net/drawing/) 인터페이스와 함께 작동합니다.
+다음 코드 조각은 새로운 그래픽 [Aspose.Drawing](/pdf/ko/net/drawing/) 인터페이스와 함께 작동합니다.
 
 ```csharp
 // 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.

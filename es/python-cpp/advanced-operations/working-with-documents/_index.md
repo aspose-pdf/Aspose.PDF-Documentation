@@ -3,7 +3,7 @@ title: Trabajando con Documentos PDF usando Python
 linktitle: Trabajando con Documentos
 type: docs
 weight: 10
-url: es/python-cpp/working-with-documents/
+url: /es/python-cpp/working-with-documents/
 description: Este artículo describe qué manipulaciones se pueden hacer con el documento con la biblioteca Aspose.PDF para Python vía C++.
 lastmod: "2024-04-12"
 sitemap:
@@ -15,6 +15,6 @@ Los documentos PDF se pueden ver e imprimir, pero no siempre se editan fácilmen
 
 Puedes hacer lo siguiente:
 
-- [Optimizar PDF](/pdf/python-cpp/optimize-pdf/) - optimizar el contenido de la página, optimizar el tamaño del archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
-- [Unir PDF](/pdf/python-cpp/merge-pdf-documents/) - unir múltiples archivos PDF en un solo documento PDF usando Python.
-- [Dividir PDF](/pdf/python-cpp/split-document/) - dividir páginas PDF en archivos PDF individuales en tus aplicaciones Python.
+- [Optimizar PDF](/pdf/es/python-cpp/optimize-pdf/) - optimizar el contenido de la página, optimizar el tamaño del archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
+- [Unir PDF](/pdf/es/python-cpp/merge-pdf-documents/) - unir múltiples archivos PDF en un solo documento PDF usando Python.
+- [Dividir PDF](/pdf/es/python-cpp/split-document/) - dividir páginas PDF en archivos PDF individuales en tus aplicaciones Python.

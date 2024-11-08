@@ -3,7 +3,7 @@ title: Aspose PDF License
 linktitle: Licensing and limitations
 type: docs
 weight: 90
-url: zh/cpp/licensing/
+url: /zh/cpp/licensing/
 description: Aspose. PDF for C++ 邀请客户获取经典许可证和计量许可证。 以及使用有限的许可证来更好地探索产品。
 lastmod: "2021-11-08"
 sitemap:

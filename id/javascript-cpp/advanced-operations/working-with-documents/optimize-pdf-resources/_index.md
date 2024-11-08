@@ -3,7 +3,7 @@ title: Optimalkan Sumber Daya PDF menggunakan JavaScript via C++
 linktitle: Optimalkan Sumber Daya PDF
 type: docs
 weight: 15
-url: id/javascript-cpp/optimize-pdf-resources/
+url: /id/javascript-cpp/optimize-pdf-resources/
 description: Optimalkan Sumber Daya berkas PDF untuk tampilan web yang cepat menggunakan alat JavaScript.
 lastmod: "2022-12-15"
 sitemap:

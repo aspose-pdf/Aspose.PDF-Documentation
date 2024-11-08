@@ -3,7 +3,7 @@ title: Удаление страниц PDF с помощью JavaScript чере
 linktitle: Удаление страниц PDF
 type: docs
 weight: 30
-url: ru/javascript-cpp/delete-pages/
+url: /ru/javascript-cpp/delete-pages/
 description: Вы можете удалить страницы из вашего PDF файла, используя Aspose.PDF для JavaScript через C++.
 lastmod: "2023-04-17"
 sitemap:

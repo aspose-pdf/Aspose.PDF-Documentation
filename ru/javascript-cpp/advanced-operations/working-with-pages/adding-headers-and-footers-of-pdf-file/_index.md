@@ -3,7 +3,7 @@ title: Добавление заголовка и нижнего колонти�
 linktitle: Добавление заголовка и нижнего колонтитула в PDF
 type: docs
 weight: 70
-url: ru/javascript-cpp/add-headers-and-footers-of-pdf-file/
+url: /ru/javascript-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF для JavaScript через C++ позволяет добавлять заголовки и нижние колонтитулы в ваш PDF файл, используя AsposePdfAddTextHeaderFooter.
 lastmod: "2023-02-17"
 sitemap:

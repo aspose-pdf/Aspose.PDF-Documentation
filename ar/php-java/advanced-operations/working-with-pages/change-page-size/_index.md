@@ -3,7 +3,7 @@ title: تغيير حجم صفحة PDF برمجيًا
 linktitle: تغيير حجم صفحة PDF
 type: docs
 weight: 50
-url: ar/php-java/change-page-size/
+url: /ar/php-java/change-page-size/
 description: تغيير حجم الصفحة في ملف PDF باستخدام PHP.
 lastmod: "2024-06-05"
 sitemap:

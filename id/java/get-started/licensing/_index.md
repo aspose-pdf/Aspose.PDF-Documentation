@@ -3,7 +3,7 @@ title: Lisensi dan batasan
 linktitle: Lisensi dan batasan
 type: docs
 weight: 90
-url: id/java/licensing/
+url: /id/java/licensing/
 description: Aspose.PDF untuk Java mengundang pelanggannya untuk mendapatkan lisensi Klasik dan Lisensi Terukur. Serta menggunakan lisensi terbatas untuk lebih mengeksplorasi produk.
 lastmod: "2021-06-05"
 sitemap:

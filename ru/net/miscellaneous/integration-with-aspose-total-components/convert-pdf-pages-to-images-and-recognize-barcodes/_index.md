@@ -2,7 +2,7 @@
 title: Преобразование страниц PDF в изображения и распознавание штрих-кодов
 type: docs
 weight: 10
-url: ru/net/convert-pdf-pages-to-images-and-recognize-barcodes/
+url: /ru/net/convert-pdf-pages-to-images-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

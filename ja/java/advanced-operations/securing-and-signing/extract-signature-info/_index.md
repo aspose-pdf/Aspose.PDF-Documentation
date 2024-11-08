@@ -3,7 +3,7 @@ title: 画像と署名情報の抽出
 linktitle: 画像と署名情報の抽出
 type: docs
 weight: 30
-url: ja/java/extract-image-and-signature-information/
+url: /ja/java/extract-image-and-signature-information/
 description: Java の SignatureField クラスを使用して、署名フィールドから画像を抽出し、署名情報を抽出することができます。
 lastmod: "2021-06-05"
 sitemap:

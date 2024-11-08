@@ -8,7 +8,7 @@ type: docs
 
 weight: 20
 
-url: zh/java/extract-paragraph-from-pdf/
+url: /zh/java/extract-paragraph-from-pdf/
 
 description: 本文描述了如何使用ParagraphAbsorber - Aspose.PDF中的一个特殊工具从PDF文档中提取文本。
 

@@ -3,7 +3,7 @@ title: Mencetak PDF dalam aplikasi WPF
 linktitle: Mencetak dokumen PDF dalam aplikasi WPF
 type: docs
 weight: 50
-url: id/net/print-pdf-document-in-wpf-application/
+url: /id/net/print-pdf-document-in-wpf-application/
 description: Mencetak dokumen PDF dari aplikasi WPF menggunakan C#. Contoh kode ini menunjukkan bagaimana mencetak dokumen PDF dari aplikasi WPF menggunakan C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Mencetak dokumen PDF dari aplikasi WPF menggunakan C#. Contoh kode ini menunjukkan bagaimana mencetak dokumen PDF dari aplikasi WPF menggunakan C#."
 }
 </script>
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Cetak Langsung
 

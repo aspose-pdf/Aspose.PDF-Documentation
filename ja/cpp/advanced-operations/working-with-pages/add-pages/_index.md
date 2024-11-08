@@ -4,7 +4,7 @@ title: C++でPDFにページを追加
 linktitle: ページを追加
 type: docs
 weight: 10
-url: ja/cpp/add-pages/
+url: /ja/cpp/add-pages/
 description: この記事では、PDFファイルの任意の場所にページを挿入（追加）する方法を説明します。C++を使用してPDFファイルからページを移動、削除（削除）する方法を学びます。
 lastmod: "2021-12-08"
 sitemap:

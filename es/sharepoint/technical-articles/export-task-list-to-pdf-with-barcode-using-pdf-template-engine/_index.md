@@ -2,7 +2,7 @@
 title: Exportar Lista de Tareas a PDF con Código de Barras usando Motor de Plantillas PDF
 type: docs
 weight: 40
-url: es/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
+url: /es/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
 lastmod: "2020-12-16"
 description: PDF SharePoint API puede exportar Lista de Tareas a PDF con Código de Barras usando Motor de Plantillas PDF.
 ---

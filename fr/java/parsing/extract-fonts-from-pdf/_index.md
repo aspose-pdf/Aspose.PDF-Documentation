@@ -3,7 +3,7 @@ title: Extraire les polices d'un PDF
 linktitle: Extraire les polices
 type: docs
 weight: 30
-url: fr/java/extract-fonts-from-pdf/
+url: /fr/java/extract-fonts-from-pdf/
 description: Comment extraire les polices d'un PDF en utilisant Aspose.PDF pour Java
 lastmod: "2021-06-05"
 sitemap:

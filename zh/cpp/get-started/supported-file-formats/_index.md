@@ -3,7 +3,7 @@ title: 支持的文件格式 C++
 linktitle: 支持的文件格式
 type: docs
 weight: 70
-url: zh/cpp/supported-file-formats/
+url: /zh/cpp/supported-file-formats/
 description: 本页展示了 Aspose.PDF for C++ 可以加载和保存的文件格式。
 lastmod: "2021-11-08"
 sitemap:

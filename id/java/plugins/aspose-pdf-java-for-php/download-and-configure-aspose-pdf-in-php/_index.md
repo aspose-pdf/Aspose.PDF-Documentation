@@ -2,7 +2,7 @@
 title: Unduh dan Konfigurasi Aspose.PDF di PHP
 type: docs
 weight: 10
-url: id/java/download-and-configure-aspose-pdf-in-php/
+url: /id/java/download-and-configure-aspose-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

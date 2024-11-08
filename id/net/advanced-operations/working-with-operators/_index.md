@@ -3,7 +3,7 @@ title: Working with Operators
 linktitle: Working with Operators
 type: docs
 weight: 170
-url: id/net/operators/
+url: /id/net/operators/
 description: Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF. Kelas operator menyediakan fitur hebat untuk manipulasi PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -106,8 +106,8 @@ Untuk menambahkan gambar ke dalam file PDF:
    - Gunakan operator Do untuk menggambar gambar di halaman.
 1. Akhirnya, gunakan operator GRestore untuk menyimpan keadaan grafis yang telah diperbarui.
 
-Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Kode berikut juga dapat bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Kode berikut juga dapat bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
 Kode berikut menunjukkan cara menggunakan operator PDF.
 

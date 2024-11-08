@@ -3,7 +3,7 @@ title: إضافة صفحات في PDF باستخدام C++
 linktitle: إضافة صفحات
 type: docs
 weight: 10
-url: ar/cpp/add-pages/
+url: /ar/cpp/add-pages/
 description: تُعلِّم هذه المقالة كيفية إدراج (إضافة) صفحة في الموقع المطلوب في ملف PDF. تعرف على كيفية نقل وحذف (إزالة) الصفحات من ملف PDF باستخدام C++.
 lastmod: "2021-12-08"
 sitemap:

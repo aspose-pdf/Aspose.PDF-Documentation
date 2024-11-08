@@ -1,7 +1,7 @@
 ---
 title: Obtenir et définir les propriétés de la page
 type: docs
-url: fr/net/get-and-set-page-properties/
+url: /fr/net/get-and-set-page-properties/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -71,7 +71,7 @@ lastmod: "2022-02-17"
 </script>
 Aspose.PDF pour .NET vous permet de lire et de définir les propriétés des pages dans un fichier PDF dans vos applications .NET. Cette section montre comment obtenir le nombre de pages dans un fichier PDF, obtenir des informations sur les propriétés des pages PDF telles que la couleur et définir les propriétés des pages. Les exemples donnés sont en C#, mais vous pouvez utiliser n'importe quel langage .NET comme VB.NET pour obtenir le même résultat.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Obtenir le Nombre de Pages dans un Fichier PDF
 
@@ -122,7 +122,7 @@ La classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) fournit t
 
 ## Obtenir une Page Particulière du Fichier PDF
 
-Aspose.PDF permet de [diviser un PDF en pages individuelles](/pdf/net/split-pdf-document/) et de les enregistrer en tant que fichiers PDF. Obtenir une page spécifiée dans un fichier PDF et l'enregistrer comme un nouveau PDF est une opération très similaire : ouvrir le document source, accéder à la page, créer un nouveau document et ajouter la page à celui-ci.
+Aspose.PDF permet de [diviser un PDF en pages individuelles](/pdf/fr/net/split-pdf-document/) et de les enregistrer en tant que fichiers PDF. Obtenir une page spécifiée dans un fichier PDF et l'enregistrer comme un nouveau PDF est une opération très similaire : ouvrir le document source, accéder à la page, créer un nouveau document et ajouter la page à celui-ci.
 
 L'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) avec sa [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) contient les pages du fichier PDF.
 L'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) contient la [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) qui détient les pages du fichier PDF.

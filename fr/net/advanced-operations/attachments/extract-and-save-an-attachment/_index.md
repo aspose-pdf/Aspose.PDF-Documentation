@@ -3,7 +3,7 @@ title: Extraire et Sauvegarder une Pièce Jointe
 linktitle: Extraire et Sauvegarder une Pièce Jointe
 type: docs
 weight: 20
-url: fr/net/extract-and-save-an-attachment/
+url: /fr/net/extract-and-save-an-attachment/
 description: Aspose.PDF pour .NET vous permet de récupérer toutes les pièces jointes d'un document PDF. De plus, vous pouvez récupérer une pièce jointe individuelle de votre document.
 lastmod: "2022-02-17"
 sitemap:
@@ -84,7 +84,7 @@ Pour obtenir toutes les pièces jointes d'un fichier PDF :
 1. Parcourir la collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). La collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contient toutes les pièces jointes. Chaque élément de cette collection représente un objet [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Chaque itération de la boucle foreach à travers la collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) retourne un objet [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
 Les extraits de code suivants montrent comment obtenir toutes les pièces jointes d'un document PDF.
 
-L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET

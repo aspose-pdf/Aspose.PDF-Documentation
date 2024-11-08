@@ -3,7 +3,7 @@ title: إضافة رقم الصفحة إلى PDF باستخدام JavaScript ع�
 linktitle: إضافة رقم الصفحة
 type: docs
 weight: 100
-url: ar/javascript-cpp/add-page-number/
+url: /ar/javascript-cpp/add-page-number/
 description: Aspose.PDF لــ JavaScript عبر C++ يسمح لك بإضافة ختم رقم الصفحة إلى ملف PDF الخاص بك باستخدام AsposePdfAddPageNum.
 lastmod: "2023-04-17"
 sitemap:

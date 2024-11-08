@@ -3,7 +3,7 @@ title: PDFをNode.jsで暗号化する
 linktitle: PDFファイルを暗号化
 type: docs
 weight: 50
-url: ja/nodejs-cpp/encrypt-pdf/
+url: /ja/nodejs-cpp/encrypt-pdf/
 description: Aspose.PDF for Node.js via C++を使用してPDFファイルを暗号化します。
 lastmod: "2023-11-16"
 sitemap:

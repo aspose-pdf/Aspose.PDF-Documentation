@@ -2,7 +2,7 @@
 title: Inserir uma Página Vazia no Fim do Arquivo PDF em Python
 type: docs
 weight: 60
-url: pt/python-java/insert-an-empty-page-at-end-of-pdf-file-in-python/
+url: /pt/python-java/insert-an-empty-page-at-end-of-pdf-file-in-python/
 ---
 
 <ins>Para inserir uma página vazia no final do documento PDF usando **Aspose.PDF Java para Python**, simplesmente invoque a classe **InsertEmptyPageAtEndOfFile**.

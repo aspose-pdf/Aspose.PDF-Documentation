@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 PDF 페이지 회전
 linktitle: PDF 페이지 회전
 type: docs
 weight: 110
-url: ko/python-net/rotate-pages/
+url: /ko/python-net/rotate-pages/
 description: 이 주제는 파이썬을 사용하여 기존 PDF 파일에서 페이지 방향을 프로그래밍 방식으로 회전하는 방법을 설명합니다.
 lastmod: "2023-04-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Получение Свойств Окна Документа и Отображения Страницы в PHP
 type: docs
 weight: 30
-url: ru/java/get-document-window-and-page-display-properties-in-php/
+url: /ru/java/get-document-window-and-page-display-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

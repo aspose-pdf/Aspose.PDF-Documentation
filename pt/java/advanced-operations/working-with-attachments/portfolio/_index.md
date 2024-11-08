@@ -3,7 +3,7 @@ title: Trabalhando com Portfólio em documentos PDF
 linktitle: Portfólio
 type: docs
 weight: 40
-url: pt/java/portfolio/
+url: /pt/java/portfolio/
 description: Como Criar um Portfólio em PDF com Java. Você deve usar um arquivo do Microsoft Excel, um documento do Word e uma imagem para criar um Portfólio em PDF.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: PDF 파일에서 주석 수정하기 (파사드)
 type: docs
 weight: 50
-url: ko/java/modify-annotations/
+url: /ko/java/modify-annotations/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF 파일의 주석을 XFDF로 수정하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -48,4 +48,4 @@ sitemap:
 
 ## 참조
 
-비교하고 자신에게 맞는 주석 작업 방법을 찾아보세요. [PDF 주석](/pdf/java/annotations/) 섹션을 배워봅시다.
+비교하고 자신에게 맞는 주석 작업 방법을 찾아보세요. [PDF 주석](/pdf/ko/java/annotations/) 섹션을 배워봅시다.

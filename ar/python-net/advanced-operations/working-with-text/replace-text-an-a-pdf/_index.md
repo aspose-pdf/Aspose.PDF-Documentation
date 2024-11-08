@@ -3,7 +3,7 @@ title: استبدال النص في PDF عبر بايثون
 linktitle: استبدال النص في PDF
 type: docs
 weight: 40
-url: ar/python-net/replace-text-in-pdf/
+url: /ar/python-net/replace-text-in-pdf/
 description: تعرف على المزيد حول الطرق المختلفة لاستبدال وإزالة النص من Aspose.PDF لبايثون عبر مكتبة .NET.
 lastmod: "2024-02-17"
 sitemap:

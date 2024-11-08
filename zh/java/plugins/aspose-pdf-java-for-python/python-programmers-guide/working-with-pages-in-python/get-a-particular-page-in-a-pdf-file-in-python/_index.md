@@ -2,7 +2,7 @@
 title: 在 Python 中获取 PDF 文件中的特定页面
 type: docs
 weight: 30
-url: zh/java/get-a-particular-page-in-a-pdf-file-in-python/
+url: /zh/java/get-a-particular-page-in-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

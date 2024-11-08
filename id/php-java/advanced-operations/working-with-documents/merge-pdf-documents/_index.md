@@ -3,7 +3,7 @@ title: Menggabungkan PDF secara programatis
 linktitle: Menggabungkan file PDF
 type: docs
 weight: 50
-url: id/php-java/merge-pdf-documents/
+url: /id/php-java/merge-pdf-documents/
 description: Halaman ini menjelaskan cara menggabungkan dokumen PDF menjadi satu file PDF menggunakan PHP.
 lastmod: "2024-06-05"
 ---

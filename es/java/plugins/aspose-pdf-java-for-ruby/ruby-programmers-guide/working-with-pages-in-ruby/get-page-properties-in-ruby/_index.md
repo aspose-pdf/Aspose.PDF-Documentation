@@ -2,7 +2,7 @@
 title: Obtener Propiedades de la Página en Ruby
 type: docs
 weight: 50
-url: es/java/get-page-properties-in-ruby/
+url: /es/java/get-page-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 PDF 문서에 첨부 파일 추가
 linktitle: PDF 문서에 첨부 파일 추가
 type: docs
 weight: 10
-url: ko/python-net/add-attachment-to-pdf-document/
+url: /ko/python-net/add-attachment-to-pdf-document/
 description: 이 페이지는 Aspose.PDF for Python via .NET 라이브러리를 사용하여 PDF 파일에 첨부 파일을 추가하는 방법을 설명합니다.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Accesibilidad y PDF etiquetados
 linktitle: Accesibilidad. PDF etiquetado
 type: docs
 weight: 120
-url: es/net/accessibility-tagged-pdf/
+url: /es/net/accessibility-tagged-pdf/
 description: Aspose.PDF ofrece la capacidad de crear documentos PDF etiquetados, permitiéndote etiquetar los elementos estructurales. Aprende más sobre cómo obtener PDF accesibles.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,11 +80,11 @@ Un documento PDF etiquetado puede ser accesado por personas con discapacidades. 
 
 Esta sección cubre el siguiente tema:
 
-- [Crear PDF Etiquetado](/pdf/net/create-tagged-pdf/)
-- [Extraer Contenido Etiquetado de PDFs Etiquetados](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [Configuración de Propiedades de Elementos de Estructura](/pdf/net/setting-structure-elements-properties/)
-- [Trabajar con Tabla en PDFs Etiquetados](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [Prueba de Cumplimiento PDF-UA - Lista de Errores](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [Crear PDF Etiquetado](/pdf/es/net/create-tagged-pdf/)
+- [Extraer Contenido Etiquetado de PDFs Etiquetados](/pdf/es/net/extract-tagged-content-from-tagged-pdfs/)
+- [Configuración de Propiedades de Elementos de Estructura](/pdf/es/net/setting-structure-elements-properties/)
+- [Trabajar con Tabla en PDFs Etiquetados](/pdf/es/net/working-with-table-in-tagged-pdfs/)
+- [Prueba de Cumplimiento PDF-UA - Lista de Errores](/pdf/es/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

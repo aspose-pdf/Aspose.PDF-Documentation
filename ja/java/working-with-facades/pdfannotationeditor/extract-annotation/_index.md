@@ -2,7 +2,7 @@
 title: 注釈を抽出する (ファサード)
 type: docs
 weight: 30
-url: ja/java/extract-annotation/
+url: /ja/java/extract-annotation/
 description: このセクションでは、Aspose.PDF Facadesを使用してPDFファイルからXFDF形式に注釈を抽出する方法について説明します。
 lastmod: "2021-06-05"
 sitemap:

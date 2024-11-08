@@ -3,7 +3,7 @@ title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: id/php-java/annotations/
+url: /id/php-java/annotations/
 description: Bagian ini menunjukkan cara menggunakan semua jenis anotasi pada file PDF Anda dengan pustaka Aspose.PDF. Pelajari cara menggambar, membuka, atau menambahkan anotasi dengan PHP.
 lastmod: "2024-06-26"    
 sitemap:
@@ -22,4 +22,4 @@ Anotasi adalah bagian penting dari file PDF.
 
 Anda dapat melakukan hal berikut:
 
-- [Tambahkan Anotasi](/pdf/php-java/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan anotasi Watermark.
+- [Tambahkan Anotasi](/pdf/id/php-java/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan anotasi Watermark.

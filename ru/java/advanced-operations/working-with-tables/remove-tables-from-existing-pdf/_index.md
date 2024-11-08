@@ -3,7 +3,7 @@ title: Удаление таблиц из существующего PDF
 linktitle: Удаление таблиц
 type: docs
 weight: 40
-url: ru/java/remove-tables-from-existing-pdf/
+url: /ru/java/remove-tables-from-existing-pdf/
 description: Aspose.PDF для Java позволяет удалять таблицу и несколько таблиц из вашего PDF документа.
 lastmod: "2021-06-05"
 sitemap:

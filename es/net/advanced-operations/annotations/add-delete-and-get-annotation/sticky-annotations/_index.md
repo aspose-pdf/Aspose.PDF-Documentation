@@ -3,7 +3,7 @@ title: Anotaciones adhesivas en PDF usando C#
 linktitle: Anotación Adhesiva
 type: docs
 weight: 50
-url: es/net/sticky-annotations/
+url: /es/net/sticky-annotations/
 description: Este tema trata sobre anotaciones adhesivas, como ejemplo mostramos la Anotación de Marca de Agua en el texto.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Añadir Anotación de Marca de Agua
 

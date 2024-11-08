@@ -3,7 +3,7 @@ title: Extraer Texto de Sellos
 linktitle: Extraer Texto de Sellos
 type: docs
 weight: 60
-url: es/cpp/extract-text-from-stamps/
+url: /es/cpp/extract-text-from-stamps/
 ---
 
 ## Extraer Texto de Anotaciones de Sello

@@ -3,7 +3,7 @@ title: Node.jsでPDFドキュメントを操作する
 linktitle: ドキュメントの操作
 type: docs
 weight: 10
-url: ja/nodejs-cpp/working-with-documents/
+url: /ja/nodejs-cpp/working-with-documents/
 description: この記事では、Aspose.PDF for Node.js via C++ツールキットを使用してPDFドキュメントでどのような操作ができるかを説明します。
 lastmod: "2023-11-16"
 sitemap:
@@ -21,7 +21,7 @@ PDFはオープンスタンダードであり、現在は国際標準化機構�
 
 You are able to do the following:
 
-- [PDFを最適化する](/pdf/nodejs-cpp/optimize-pdf/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮してドキュメントを最適化します。
-- [PDFリソースを最適化する](/pdf/nodejs-cpp/optimize-pdf-resources/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮してドキュメントを最適化します。
-- [PDFをマージする](/pdf/nodejs-cpp/merge-pdf/) - 複数のPDFファイルをNode.jsを使用して単一のPDFドキュメントにマージします。
-- [PDFを分割する](/pdf/nodejs-cpp/split-pdf/) - Node.jsを介してPDFページを個々のPDFファイルに分割します（C++を使用）。
+- [PDFを最適化する](/pdf/ja/nodejs-cpp/optimize-pdf/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮してドキュメントを最適化します。
+- [PDFリソースを最適化する](/pdf/ja/nodejs-cpp/optimize-pdf-resources/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮してドキュメントを最適化します。
+- [PDFをマージする](/pdf/ja/nodejs-cpp/merge-pdf/) - 複数のPDFファイルをNode.jsを使用して単一のPDFドキュメントにマージします。
+- [PDFを分割する](/pdf/ja/nodejs-cpp/split-pdf/) - Node.jsを介してPDFページを個々のPDFファイルに分割します（C++を使用）。

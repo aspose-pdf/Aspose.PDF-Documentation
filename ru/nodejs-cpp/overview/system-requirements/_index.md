@@ -3,7 +3,7 @@ title: Системные Требования для Aspose.PDF для Node.js
 linktitle: Системные Требования
 type: docs
 weight: 30
-url: ru/nodejs-cpp/system-requirements/
+url: /ru/nodejs-cpp/system-requirements/
 description: Этот раздел перечисляет поддерживаемые операционные системы, которые необходимы разработчику для успешной работы с Aspose.PDF для Node.js через C++.
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF ハイライト注釈を使用したPython
 linktitle: ハイライト注釈
 type: docs
 weight: 20
-url: ja/python-net/highlights-annotation/
+url: /ja/python-net/highlights-annotation/
 description: マークアップ注釈は、ドキュメントのテキスト中にハイライト、下線、取り消し線、またはギザギザの下線として表示されます。
 lastmod: "2023-02-17"
 sitemap:

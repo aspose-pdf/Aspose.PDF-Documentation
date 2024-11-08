@@ -3,7 +3,7 @@ title: Bookmark di PDF di Node.js
 linktitle: Bookmark di PDF
 type: docs
 weight: 10
-url: id/nodejs-cpp/bookmark/
+url: /id/nodejs-cpp/bookmark/
 description: Anda dapat menambah atau menghapus bookmark di dokumen PDF dalam lingkungan Node.js.
 lastmod: "2023-11-16"
 sitemap:

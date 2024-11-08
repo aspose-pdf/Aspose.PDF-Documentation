@@ -3,7 +3,7 @@ title: Манипулирование таблицами в существующ
 linktitle: Манипулирование таблицами
 type: docs
 weight: 30
-url: ru/java/manipulate-tables-in-existing-pdf/
+url: /ru/java/manipulate-tables-in-existing-pdf/
 description: Манипулирование таблицами в существующем PDF файле и замена старой таблицы на новую в PDF документе с помощью Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

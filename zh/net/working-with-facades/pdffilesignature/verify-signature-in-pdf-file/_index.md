@@ -2,7 +2,7 @@
 title: 验证PDF文件中的签名
 type: docs
 weight: 30
-url: zh/net/verify-signature-in-pdf/
+url: /zh/net/verify-signature-in-pdf/
 description: 本节解释如何使用PdfFileSignature类验证PDF文件中的签名。
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## 验证PDF文件是否使用签名签署
 
-要验证PDF文件是否使用[特定签名](/pdf/net/working-with-signature-in-a-pdf-file/)，可以使用[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)类的VerifySigned方法。此方法需要签名名称，如果PDF使用该签名名称签署，则返回true。也可以在不验证具体签名的情况下验证[PDF是否已签署](/pdf/net/working-with-signature-in-a-pdf-file/)。
+要验证PDF文件是否使用[特定签名](/pdf/zh/net/working-with-signature-in-a-pdf-file/)，可以使用[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)类的VerifySigned方法。此方法需要签名名称，如果PDF使用该签名名称签署，则返回true。也可以在不验证具体签名的情况下验证[PDF是否已签署](/pdf/zh/net/working-with-signature-in-a-pdf-file/)。
 
 ### 验证PDF是否使用给定签名签署
 

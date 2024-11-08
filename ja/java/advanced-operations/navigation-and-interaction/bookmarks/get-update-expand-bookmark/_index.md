@@ -3,7 +3,7 @@ title: ブックマークの取得、更新、および展開
 linktitle: ブックマークの取得、更新、および展開
 type: docs
 weight: 20
-url: ja/java/get-update-and-expand-bookmark/
+url: /ja/java/get-update-and-expand-bookmark/
 description: この記事では、PDFファイルでブックマークを使用する方法について説明します。Javaライブラリを使用して、PDFファイルからブックマークを取得し、ブックマークのページ番号を取得し、PDFドキュメント内のブックマークを更新し、ドキュメントを表示するときにブックマークを展開することができます。
 lastmod: "2021-06-05"
 sitemap:

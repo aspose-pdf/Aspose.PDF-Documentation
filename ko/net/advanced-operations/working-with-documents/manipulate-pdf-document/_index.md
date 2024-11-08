@@ -3,7 +3,7 @@ title: PDF 문서 조작하기 in C#
 linktitle: PDF 문서 조작하기
 type: docs
 weight: 20
-url: ko/net/manipulate-pdf-document/
+url: /ko/net/manipulate-pdf-document/
 description: 이 글은 PDF A 표준에 대한 PDF 문서를 검증하는 방법, 목차(TOC) 작업 방법, PDF 만료 날짜 설정 방법 등에 대한 정보를 담고 있습니다.
 keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
@@ -89,7 +89,7 @@ PDF/A-1a 또는 PDF/A-1b 호환성을 검증하려면 [Document](https://referen
 
 {{% /alert %}}
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 PDF 문서를 PDF/A-1A로 검증하는 방법을 보여줍니다.
 다음 코드 조각은 PDF 문서를 PDF/A-1A로 검증하는 방법을 보여줍니다.

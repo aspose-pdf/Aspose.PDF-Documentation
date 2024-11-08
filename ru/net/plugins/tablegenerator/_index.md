@@ -2,7 +2,7 @@
 title: Генератор таблиц
 type: docs
 weight: 130
-url: ru/net/plugins/tablegenerator/
+url: /ru/net/plugins/tablegenerator/
 description: Позволяет добавлять/вставлять таблицу на указанную страницу PDF-документа.
 lastmod: "2024-01-24"
 draft: false

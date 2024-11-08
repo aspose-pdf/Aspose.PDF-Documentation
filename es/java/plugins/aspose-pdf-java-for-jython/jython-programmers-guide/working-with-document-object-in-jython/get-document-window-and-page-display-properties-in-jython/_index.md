@@ -2,7 +2,7 @@
 title: Obtener Propiedades de la Ventana del Documento y la Visualización de Página en Jython
 type: docs
 weight: 20
-url: es/java/get-document-window-and-page-display-properties-in-jython/
+url: /es/java/get-document-window-and-page-display-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

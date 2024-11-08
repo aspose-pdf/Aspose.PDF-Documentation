@@ -3,7 +3,7 @@ title: العمل مع بيانات وصفية لملف PDF
 linktitle: بيانات وصفية لملف PDF
 type: docs
 weight: 140
-url: ar/java/pdf-file-metadata/
+url: /ar/java/pdf-file-metadata/
 description: تشرح هذه القسم كيفية الحصول على معلومات ملف PDF، وكيفية الحصول على بيانات XMP الوصفية من ملف PDF، وتعيين معلومات ملف PDF.
 lastmod: "2021-06-05"
 sitemap:

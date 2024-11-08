@@ -3,7 +3,7 @@ title: PDF/A를 PDF로 변환
 linktitle: PDF/A를 PDF로 변환
 type: docs
 weight: 350
-url: ko/androidjava/convert-pdfa-to-pdf/
+url: /ko/androidjava/convert-pdfa-to-pdf/
 lastmod: "2021-06-05"
 description: PDF/A를 PDF로 변환하려면 원본 문서에서 제한을 제거해야 합니다. Aspose.PDF for Android via Java를 사용하면 이 문제를 쉽게 해결할 수 있습니다.
 sitemap:

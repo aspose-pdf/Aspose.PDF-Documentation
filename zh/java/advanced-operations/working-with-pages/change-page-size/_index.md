@@ -3,7 +3,7 @@ title: 程序化更改 PDF 页面大小
 linktitle: 更改页面大小
 type: docs
 weight: 50
-url: zh/java/change-page-size/
+url: /zh/java/change-page-size/
 description: 使用 Java 库从您的 PDF 文件更改页面大小。
 lastmod: "2021-06-05"
 sitemap:

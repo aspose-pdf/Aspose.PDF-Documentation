@@ -2,7 +2,7 @@
 title: 업데이트, 삭제 및 북마크 가져오기
 type: docs
 weight: 30
-url: ko/net/update-delete-and-get-bookmarks/
+url: /ko/net/update-delete-and-get-bookmarks/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 북마크를 업데이트, 삭제 및 가져오는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

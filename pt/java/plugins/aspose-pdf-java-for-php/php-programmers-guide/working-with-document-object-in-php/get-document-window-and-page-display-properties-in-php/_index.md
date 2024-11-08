@@ -2,7 +2,7 @@
 title: Obter Propriedades de Janela de Documento e Exibição de Página em PHP
 type: docs
 weight: 30
-url: pt/java/get-document-window-and-page-display-properties-in-php/
+url: /pt/java/get-document-window-and-page-display-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

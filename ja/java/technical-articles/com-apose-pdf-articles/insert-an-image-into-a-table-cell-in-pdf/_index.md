@@ -2,7 +2,7 @@
 title: PDFの表セルに画像を挿入する
 type: docs
 weight: 20
-url: ja/java/insert-an-image-into-a-table-cell-in-pdf/
+url: /ja/java/insert-an-image-into-a-table-cell-in-pdf/
 lastmod: "2022-01-27"
 ---
 

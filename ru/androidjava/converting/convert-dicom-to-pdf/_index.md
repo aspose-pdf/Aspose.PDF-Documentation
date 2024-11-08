@@ -3,7 +3,7 @@ title: Преобразование DICOM в PDF
 linktitle: Преобразование DICOM в PDF
 type: docs
 weight: 250
-url: ru/androidjava/convert-dicom-to-pdf/
+url: /ru/androidjava/convert-dicom-to-pdf/
 lastmod: "2021-06-05"
 description: Преобразование медицинских изображений, сохраненных в формате DICOM, в PDF файл с использованием Aspose.PDF для Android через Java.
 sitemap:

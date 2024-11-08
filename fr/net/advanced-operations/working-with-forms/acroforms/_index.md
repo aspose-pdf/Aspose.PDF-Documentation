@@ -3,7 +3,7 @@ title: Travailler avec les AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: fr/net/acroforms/
+url: /fr/net/acroforms/
 description: Avec Aspose.PDF pour .NET, vous pouvez créer un formulaire à partir de zéro, remplir le champ de formulaire dans un document PDF, extraire les données du formulaire, etc.
 lastmod: "2022-02-17"
 sitemap:
@@ -98,12 +98,12 @@ Les AcroForms possèdent des capacités que l'on ne trouve pas dans les XFA et i
 Pour en savoir plus sur les capacités de la bibliothèque Java, consultez les articles suivants :
 Pour un apprentissage plus détaillé des capacités de la bibliothèque Java, consultez les articles suivants :
 
-- [Créer AcroForm](/pdf/net/create-form) - créer un formulaire à partir de zéro avec C#.
-- [Remplir AcroForm](/pdf/net/fill-form) - remplir le champ du formulaire dans votre document PDF.
-- [Extraire AcroForm](/pdf/net/extract-form) - obtenir la valeur de tous ou d'un champ individuel du document PDF.
-- [Modifier AcroForm](/pdf/net/modifing-form) - obtenir ou définir FieldLimit, définir la police du champ du formulaire et etc.
-- [Poster les données AcroForm](/pdf/net/posting-acroform-data/) - importer et exporter les données du formulaire vers et depuis un fichier XML.
-- [Importer et exporter des données](/pdf/net/import-and-export-data/) - importer et exporter des données en utilisant la classe Form.
+- [Créer AcroForm](/pdf/fr/net/create-form) - créer un formulaire à partir de zéro avec C#.
+- [Remplir AcroForm](/pdf/fr/net/fill-form) - remplir le champ du formulaire dans votre document PDF.
+- [Extraire AcroForm](/pdf/fr/net/extract-form) - obtenir la valeur de tous ou d'un champ individuel du document PDF.
+- [Modifier AcroForm](/pdf/fr/net/modifing-form) - obtenir ou définir FieldLimit, définir la police du champ du formulaire et etc.
+- [Poster les données AcroForm](/pdf/fr/net/posting-acroform-data/) - importer et exporter les données du formulaire vers et depuis un fichier XML.
+- [Importer et exporter des données](/pdf/fr/net/import-and-export-data/) - importer et exporter des données en utilisant la classe Form.
 
 <script type="application/ld+json">
 {

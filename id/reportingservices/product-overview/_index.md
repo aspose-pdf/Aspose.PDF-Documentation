@@ -2,7 +2,7 @@
 title: Ikhtisar Produk
 type: docs
 weight: 10
-url: id/reportingservices/product-overview/
+url: /id/reportingservices/product-overview/
 lastmod: "2021-06-05"
 ---
 

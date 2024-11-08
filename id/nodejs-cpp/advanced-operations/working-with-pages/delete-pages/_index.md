@@ -3,7 +3,7 @@ title: Hapus Halaman di PDF dalam Node.js
 linktitle: Hapus Halaman PDF
 type: docs
 weight: 30
-url: id/nodejs-cpp/delete-pages/
+url: /id/nodejs-cpp/delete-pages/
 description: Anda dapat menghapus halaman dari file PDF Anda menggunakan Aspose.PDF untuk Node.js melalui C++.
 lastmod: "2023-11-16"
 sitemap:

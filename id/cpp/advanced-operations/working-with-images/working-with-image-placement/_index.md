@@ -3,7 +3,7 @@ title: Bekerja dengan Penempatan Gambar menggunakan C++
 linktitle: Bekerja dengan Penempatan Gambar
 type: docs
 weight: 50
-url: id/cpp/working-with-image-placement/
+url: /id/cpp/working-with-image-placement/
 description: Bagian ini menjelaskan fitur bekerja dengan penempatan gambar file PDF menggunakan pustaka C++.
 lastmod: "2021-12-18"
 ---

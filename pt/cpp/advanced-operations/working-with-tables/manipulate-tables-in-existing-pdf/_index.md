@@ -3,7 +3,7 @@ title: Manipular Tabelas em PDF existente
 linktitle: Manipular Tabelas
 type: docs
 weight: 40
-url: pt/cpp/manipulate-tables-in-existing-pdf/
+url: /pt/cpp/manipulate-tables-in-existing-pdf/
 description: Esta seção abrange vários métodos para modificação de tabelas usando Aspose.PDF para C++
 lastmod: "2021-11-11"
 sitemap:

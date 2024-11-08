@@ -3,7 +3,7 @@ title: Stamping
 linktitle: Stamping
 type: docs
 weight: 120
-url: id/java/stamping/
+url: /id/java/stamping/
 description: Bagian ini menjelaskan cara menambahkan cap gambar dan cap teks ke halaman PDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -15,6 +15,6 @@ Cap dalam dokumen PDF analog dengan menerapkan cap karet pada dokumen kertas. Ca
 
 Periksa bagian berikut untuk mempelajari cara menambahkan cap dengan Java:
 
-- [Tambah cap gambar di halaman PDF](/pdf/java/image-stamps-in-pdf-page/) - tambahkan cap gambar, kontrol kualitas gambar, cap gambar sebagai latar belakang file PDF Anda.
-- [Tambah cap teks dalam file PDF](/pdf/java/text-stamps-in-the-pdf-file/) - tambahkan cap teks, tentukan perataan untuk objek TextStamp, isi teks stroke sebagai cap dalam PDF
-- [Tambah cap halaman dalam PDF](/pdf/java/page-stamps-in-the-pdf-file/) - tambahkan cap kompleks berdasarkan halaman dari PDF lain.
+- [Tambah cap gambar di halaman PDF](/pdf/id/java/image-stamps-in-pdf-page/) - tambahkan cap gambar, kontrol kualitas gambar, cap gambar sebagai latar belakang file PDF Anda.
+- [Tambah cap teks dalam file PDF](/pdf/id/java/text-stamps-in-the-pdf-file/) - tambahkan cap teks, tentukan perataan untuk objek TextStamp, isi teks stroke sebagai cap dalam PDF
+- [Tambah cap halaman dalam PDF](/pdf/id/java/page-stamps-in-the-pdf-file/) - tambahkan cap kompleks berdasarkan halaman dari PDF lain.

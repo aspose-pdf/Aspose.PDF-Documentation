@@ -2,7 +2,7 @@
 title: Security Setting
 type: docs
 weight: 30
-url: pt/reportingservices/security-setting/
+url: /pt/reportingservices/security-setting/
 lastmod: "2021-06-05"
 ---
 

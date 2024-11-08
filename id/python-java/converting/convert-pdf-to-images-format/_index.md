@@ -3,7 +3,7 @@ title: Mengonversi PDF ke Berbagai Format Gambar di Python
 linktitle: Mengonversi PDF ke Gambar
 type: docs
 weight: 70
-url: id/python-java/convert-pdf-to-images-format/
+url: /id/python-java/convert-pdf-to-images-format/
 lastmod: "2023-04-06"
 description: Topik ini menunjukkan cara menggunakan Aspose.PDF untuk Python untuk mengonversi PDF ke berbagai format gambar seperti TIFF, BMP, EMF, JPEG, PNG, GIF, SVG dengan beberapa baris kode.
 sitemap:

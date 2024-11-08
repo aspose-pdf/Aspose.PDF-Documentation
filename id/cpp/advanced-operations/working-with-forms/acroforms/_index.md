@@ -3,7 +3,7 @@ title: Bekerja dengan AcroForms dalam PDF menggunakan Aspose.PDF untuk C++
 linktitle: AcroForms
 type: docs
 weight: 10
-url: id/cpp/acroforms/
+url: /id/cpp/acroforms/
 description: Dengan Aspose.PDF untuk C++ Anda dapat membuat formulir dari awal, mengisi bidang formulir dalam dokumen PDF, mengekstrak data dari formulir, menambahkan atau menghapus bidang dalam formulir yang ada.
 lastmod: "2021-12-01"
 sitemap:
@@ -19,12 +19,12 @@ sitemap:
 
 Untuk studi yang lebih mendetail tentang kemungkinan bekerja dengan formulir, pelajari artikel berikut di bagian ini:
 
-- [Create AcroForm](/pdf/cpp/create-form/) - membuat formulir dari awal, menambahkan RadioButtonField, TextBoxField, Caption Field menggunakan C++.
+- [Create AcroForm](/pdf/id/cpp/create-form/) - membuat formulir dari awal, menambahkan RadioButtonField, TextBoxField, Caption Field menggunakan C++.
 
-- [Fill AcroForm](/pdf/cpp/fill-form/) - untuk mengisi sebuah field formulir, dapatkan field dari koleksi Form objek Dokumen.
+- [Fill AcroForm](/pdf/id/cpp/fill-form/) - untuk mengisi sebuah field formulir, dapatkan field dari koleksi Form objek Dokumen.
 
-- [Extract Data AcroForm](/pdf/cpp/extract-form/) - mendapatkan nilai dari semua dan individual field dan lain-lain.
+- [Extract Data AcroForm](/pdf/id/cpp/extract-form/) - mendapatkan nilai dari semua dan individual field dan lain-lain.
 
-- [Modifing AcroForm](/pdf/cpp/modifing-form/) - mendapatkan/mengatur FieldLimit, menghapus field dalam formulir yang ada, mengatur font field formulir selain dari 14 Core PDF Fonts dengan C++.
+- [Modifing AcroForm](/pdf/id/cpp/modifing-form/) - mendapatkan/mengatur FieldLimit, menghapus field dalam formulir yang ada, mengatur font field formulir selain dari 14 Core PDF Fonts dengan C++.
 
-- [Posting AcroForm Data](/pdf/cpp/posting-acroform-data/) - mengimpor dan mengekspor data formulir ke dan dari file XML.
+- [Posting AcroForm Data](/pdf/id/cpp/posting-acroform-data/) - mengimpor dan mengekspor data formulir ke dan dari file XML.

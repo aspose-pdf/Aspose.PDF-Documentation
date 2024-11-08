@@ -2,7 +2,7 @@
 title: PDFポートフォリオの作成方法
 type: docs
 weight: 10
-url: ja/java/how-to-create-pdf-portfolio/
+url: /ja/java/how-to-create-pdf-portfolio/
 lastmod: "2022-01-27"
 ---
 

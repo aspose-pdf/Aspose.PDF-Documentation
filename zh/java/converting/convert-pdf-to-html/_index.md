@@ -3,7 +3,7 @@ title: 将PDF文件转换为HTML格式
 linktitle: 将PDF文件转换为HTML格式
 type: docs
 weight: 50
-url: zh/java/convert-pdf-to-html/
+url: /zh/java/convert-pdf-to-html/
 lastmod: "2021-11-19"
 description: 本主题向您展示如何使用Aspose.PDF通过Java库将PDF文件转换为HTML格式。
 sitemap:

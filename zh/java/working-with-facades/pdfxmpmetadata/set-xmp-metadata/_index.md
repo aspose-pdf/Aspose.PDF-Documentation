@@ -2,7 +2,7 @@
 title: 设置现有PDF的XMP元数据 - 外观
 type: docs
 weight: 20
-url: zh/java/set-xmp-metadata/
+url: /zh/java/set-xmp-metadata/
 description: 本节说明如何使用PdfXmpMetadata类通过Aspose.PDF Facades设置XMP元数据。
 lastmod: "2021-06-05"
 sitemap:

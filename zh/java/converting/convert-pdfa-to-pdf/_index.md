@@ -4,7 +4,7 @@ title: 将PDF/A转换为PDF格式
 linktitle: 将PDF/A转换为PDF格式  
 type: docs  
 weight: 110  
-url: zh/java/convert-pdfa-to-pdf/  
+url: /zh/java/convert-pdfa-to-pdf/  
 lastmod: "2021-11-19"  
 description: 本主题向您展示如何使用Aspose.PDF通过Java库将PDF/A文件转换为PDF文档。  
 sitemap:  

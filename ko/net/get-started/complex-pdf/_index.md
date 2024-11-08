@@ -3,7 +3,7 @@ title: 복잡한 PDF 생성
 linktitle: 복잡한 PDF 생성
 type: docs
 weight: 60
-url: ko/net/complex-pdf-example/
+url: /ko/net/complex-pdf-example/
 description: Aspose.PDF for NET를 사용하면 이미지, 텍스트 조각, 테이블이 포함된 더 복잡한 문서를 생성할 수 있습니다.
 aliases:
     - /net/complex-pdf/
@@ -13,8 +13,8 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/net/hello-world-example/) 예제에서는 C# 및 Aspose.PDF를 사용하여 PDF 문서를 생성하는 간단한 단계를 보여주었습니다. 이 글에서는 C# 및 Aspose.PDF for .NET을 사용하여 더 복잡한 문서를 생성하는 방법을 살펴보겠습니다. 예로, 여객 페리 서비스를 운영하는 가상의 회사에서 가져온 문서를 사용할 것입니다.
-우리의 문서는 이미지, 두 개의 텍스트 조각(헤더와 단락), 그리고 테이블을 포함할 것입니다. 이러한 문서를 구축하기 위해, 우리는 DOM 기반 접근법을 사용할 것입니다. [DOM API 기초](/pdf/net/basics-of-dom-api/) 섹션에서 더 자세한 정보를 읽을 수 있습니다.
+[Hello, World](/pdf/ko/net/hello-world-example/) 예제에서는 C# 및 Aspose.PDF를 사용하여 PDF 문서를 생성하는 간단한 단계를 보여주었습니다. 이 글에서는 C# 및 Aspose.PDF for .NET을 사용하여 더 복잡한 문서를 생성하는 방법을 살펴보겠습니다. 예로, 여객 페리 서비스를 운영하는 가상의 회사에서 가져온 문서를 사용할 것입니다.
+우리의 문서는 이미지, 두 개의 텍스트 조각(헤더와 단락), 그리고 테이블을 포함할 것입니다. 이러한 문서를 구축하기 위해, 우리는 DOM 기반 접근법을 사용할 것입니다. [DOM API 기초](/pdf/ko/net/basics-of-dom-api/) 섹션에서 더 자세한 정보를 읽을 수 있습니다.
 
 문서를 처음부터 생성할 때는 다음 단계를 따라야 합니다:
 
@@ -29,8 +29,8 @@ sitemap:
 1. 페이지 [단락](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)에 (테이블)을 추가합니다.
 1. 문서 "Complex.pdf"를 저장합니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
-다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서 작동합니다.
 
 ```csharp
 using Aspose.Pdf.Text;

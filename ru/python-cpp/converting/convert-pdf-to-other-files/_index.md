@@ -3,7 +3,7 @@ title: Преобразование PDF в текст на Python
 linktitle: Преобразование PDF в другие форматы
 type: docs
 weight: 90
-url: ru/python-cpp/convert-pdf-to-other-files/
+url: /ru/python-cpp/convert-pdf-to-other-files/
 lastmod: "2022-12-23"
 keywords: преобразование, PDF, EPUB, LaText, Текст, XPS, Python
 description: Эта тема показывает, как преобразовать PDF файл в другие форматы файлов, такие как текст, используя Python.

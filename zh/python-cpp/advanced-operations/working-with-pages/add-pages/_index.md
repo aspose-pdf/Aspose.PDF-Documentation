@@ -3,7 +3,7 @@ title: 使用 C++ 在 Python 中添加 PDF 页面
 linktitle: 添加页面
 type: docs
 weight: 10
-url: zh/python-cpp/add-pages/
+url: /zh/python-cpp/add-pages/
 description: 本文讲解如何在 Python 中使用 C++ 在 PDF 文件的指定位置插入（添加）页面。
 lastmod: "2024-04-17"
 sitemap:

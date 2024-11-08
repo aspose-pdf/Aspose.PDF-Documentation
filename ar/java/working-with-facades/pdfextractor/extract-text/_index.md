@@ -2,7 +2,7 @@
 title: استخراج الصور من PDF (الواجهات)
 type: docs
 weight: 30
-url: ar/java/extract-images/
+url: /ar/java/extract-images/
 description: يشرح هذا القسم كيفية استخراج الصور باستخدام Aspose.PDF Facades مع استخدام فئة PdfExtractor.
 lastmod: "2021-06-05"
 sitemap:

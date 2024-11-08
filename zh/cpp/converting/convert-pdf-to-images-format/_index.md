@@ -3,7 +3,7 @@ title: 将 PDF 转换为图像格式
 linktitle: 将 PDF 转换为图像
 type: docs
 weight: 70
-url: zh/cpp/convert-pdf-to-images-format/
+url: /zh/cpp/convert-pdf-to-images-format/
 lastmod: "2021-11-19"
 description: 本主题向您展示如何使用 Aspose.PDF 将 PDF 转换为各种图像格式。通过几行代码将 PDF 页面转换为 PNG、JPEG、BMP 图像。
 sitemap:

@@ -3,7 +3,7 @@ title: XFAフォームの操作
 linktitle: XFAフォーム
 type: docs
 weight: 20
-url: ja/net/xfa-forms/
+url: /ja/net/xfa-forms/
 description: Aspose.PDF for .NET APIを使用すると、PDFドキュメント内のXFAおよびXFAアクロフォームフィールドを操作できます。
 lastmod: "2022-02-17"
 sitemap:
@@ -84,7 +84,7 @@ sitemap:
 
 Formクラスは、静的なAcroFormを扱う機能を提供し、FormクラスのGetFieldFacade(..)メソッドを使用して特定のフィールドインスタンスを取得できます。しかし、XFAフィールドはForm.GetFieldFacade(..)メソッドを介してアクセスすることはできません。代わりに、[Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa)を使用してフィールド値を取得/設定し、XFAフィールドテンプレートを操作します（フィールドプロパティを設定します）。
 
-以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 ## XFAフィールドを埋める
 

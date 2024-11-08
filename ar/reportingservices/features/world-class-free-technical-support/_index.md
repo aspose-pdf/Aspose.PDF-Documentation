@@ -2,7 +2,7 @@
 title: دعم فني مجاني على مستوى عالمي
 type: docs
 weight: 50
-url: ar/reportingservices/world-class-free-technical-support/
+url: /ar/reportingservices/world-class-free-technical-support/
 lastmod: "2021-06-05"
 ---
 

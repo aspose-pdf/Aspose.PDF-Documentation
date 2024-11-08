@@ -3,7 +3,7 @@ title: 使用 JavaScript 通过 C++ 处理 PDF 文档
 linktitle: 处理文档
 type: docs
 weight: 10
-url: zh/javascript-cpp/working-with-documents/
+url: /zh/javascript-cpp/working-with-documents/
 description: 本文向您描述了使用 Aspose.PDF for JavaScript 通过 C++ 库可以对文档进行的操作。
 lastmod: "2023-02-17"
 sitemap:
@@ -21,9 +21,9 @@ PDF 是一个开放标准，由国际标准化组织 (ISO) 维护。
 
 你可以执行以下操作：
 
-- [优化 PDF](/pdf/javascript-cpp/optimize-pdf/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
-- [优化 PDF 资源](/pdf/javascript-cpp/optimize-pdf-resources/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
-- [合并 PDF](/pdf/javascript-cpp/merge-pdf/) - 使用 JavaScript 将多个 PDF 文件合并为一个 PDF 文档。
-- [拆分 PDF](/pdf/javascript-cpp/split-pdf/) - 通过 C++ 在 JavaScript 中将 PDF 页面拆分为单个 PDF 文件。
-- [删除 JavaScripts](/pdf/javascript-cpp/delete-javascripts/) - 从 PDF 文件中删除 JavaScripts。
-- [获取关于产品的信息](/pdf/javascript-cpp/get-info-about-product/)
+- [优化 PDF](/pdf/zh/javascript-cpp/optimize-pdf/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
+- [优化 PDF 资源](/pdf/zh/javascript-cpp/optimize-pdf-resources/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
+- [合并 PDF](/pdf/zh/javascript-cpp/merge-pdf/) - 使用 JavaScript 将多个 PDF 文件合并为一个 PDF 文档。
+- [拆分 PDF](/pdf/zh/javascript-cpp/split-pdf/) - 通过 C++ 在 JavaScript 中将 PDF 页面拆分为单个 PDF 文件。
+- [删除 JavaScripts](/pdf/zh/javascript-cpp/delete-javascripts/) - 从 PDF 文件中删除 JavaScripts。
+- [获取关于产品的信息](/pdf/zh/javascript-cpp/get-info-about-product/)

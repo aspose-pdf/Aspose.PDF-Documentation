@@ -2,7 +2,7 @@
 title: Bekerja dengan Lampiran
 type: docs
 weight: 50
-url: id/java/working-with-attachments/
+url: /id/java/working-with-attachments/
 description: Bagian ini menjelaskan cara bekerja dengan lampiran dalam PDF Anda dengan Aspose.PDF Facades - seperangkat alat untuk operasi populer dengan PDF.
 lastmod: "2021-06-24"
 sitemap:

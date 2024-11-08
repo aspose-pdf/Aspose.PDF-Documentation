@@ -3,7 +3,7 @@ title: Bekerja dengan Grafik dalam Berkas PDF
 linktitle: Bekerja dengan Grafik
 type: docs
 weight: 70
-url: id/net/graphs/
+url: /id/net/graphs/
 description: Artikel ini menjelaskan apa itu Grafik, cara membuat objek persegi panjang yang terisi, dan fungsi lainnya
 lastmod: "2022-02-17"
 sitemap:
@@ -80,17 +80,17 @@ aliases:
 ## Apa itu Grafik
 
 Menambahkan grafik ke dalam dokumen PDF adalah tugas yang sangat umum bagi pengembang saat bekerja dengan Adobe Acrobat Writer atau aplikasi pengolah PDF lainnya. Terdapat banyak jenis grafik yang dapat digunakan dalam aplikasi PDF.
-[Aspose.PDF for .NET](/pdf/net/) juga mendukung penambahan grafik ke dalam dokumen PDF. Untuk tujuan ini, kelas Graph disediakan. Graph adalah elemen tingkat paragraf dan dapat ditambahkan ke koleksi Paragraphs dalam instance Page. Sebuah instance Graph berisi koleksi Shapes.
+[Aspose.PDF for .NET](/pdf/id/net/) juga mendukung penambahan grafik ke dalam dokumen PDF. Untuk tujuan ini, kelas Graph disediakan. Graph adalah elemen tingkat paragraf dan dapat ditambahkan ke koleksi Paragraphs dalam instance Page. Sebuah instance Graph berisi koleksi Shapes.
 
 Berikut adalah jenis-jenis bentuk yang didukung oleh kelas [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph):
 
-- [Arc](/pdf/net/add-arc/) - terkadang juga disebut bendera adalah pasangan berurutan dari verteks yang berdekatan, tetapi terkadang juga disebut garis berarah.
-- [Circle](/pdf/net/add-circle/) - menampilkan data menggunakan lingkaran yang dibagi menjadi sektor. Kami menggunakan grafik lingkaran (juga disebut diagram lingkaran) untuk menunjukkan bagaimana data mewakili bagian dari satu keseluruhan atau satu kelompok.
-- [Curve](/pdf/net/add-curve/) - adalah gabungan terhubung dari garis proyektif, setiap garis bertemu tiga lainnya di titik ganda biasa.
-- [Curve](/pdf/net/add-curve/) - adalah gabungan terhubung dari garis proyektif, setiap garis bertemu tiga garis lainnya di titik ganda biasa.
-- [Line](/pdf/net/add-line) - grafik garis digunakan untuk menampilkan data berkelanjutan dan dapat berguna dalam memprediksi peristiwa masa depan ketika mereka menunjukkan tren dari waktu ke waktu.
-- [Rectangle](/pdf/net/add-rectangle/) - adalah salah satu dari banyak bentuk dasar yang akan Anda lihat dalam grafik, ini dapat sangat berguna dalam membantu Anda memecahkan masalah.
-- [Ellipse](/pdf/net/add-ellipse/) - adalah kumpulan titik di bidang, menciptakan bentuk melengkung, oval.
+- [Arc](/pdf/id/net/add-arc/) - terkadang juga disebut bendera adalah pasangan berurutan dari verteks yang berdekatan, tetapi terkadang juga disebut garis berarah.
+- [Circle](/pdf/id/net/add-circle/) - menampilkan data menggunakan lingkaran yang dibagi menjadi sektor. Kami menggunakan grafik lingkaran (juga disebut diagram lingkaran) untuk menunjukkan bagaimana data mewakili bagian dari satu keseluruhan atau satu kelompok.
+- [Curve](/pdf/id/net/add-curve/) - adalah gabungan terhubung dari garis proyektif, setiap garis bertemu tiga lainnya di titik ganda biasa.
+- [Curve](/pdf/id/net/add-curve/) - adalah gabungan terhubung dari garis proyektif, setiap garis bertemu tiga garis lainnya di titik ganda biasa.
+- [Line](/pdf/id/net/add-line) - grafik garis digunakan untuk menampilkan data berkelanjutan dan dapat berguna dalam memprediksi peristiwa masa depan ketika mereka menunjukkan tren dari waktu ke waktu.
+- [Rectangle](/pdf/id/net/add-rectangle/) - adalah salah satu dari banyak bentuk dasar yang akan Anda lihat dalam grafik, ini dapat sangat berguna dalam membantu Anda memecahkan masalah.
+- [Ellipse](/pdf/id/net/add-ellipse/) - adalah kumpulan titik di bidang, menciptakan bentuk melengkung, oval.
 
 Detail di atas juga digambarkan dalam gambar di bawah ini:
 

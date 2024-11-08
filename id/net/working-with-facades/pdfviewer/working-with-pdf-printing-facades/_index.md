@@ -2,7 +2,7 @@
 title: Bekerja dengan Pencetakan PDF - Facades
 type: docs
 weight: 10
-url: id/net/working-with-pdf-printing-facades/
+url: /id/net/working-with-pdf-printing-facades/
 description: Bagian ini menjelaskan cara mencetak file PDF dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

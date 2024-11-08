@@ -3,7 +3,7 @@ title: Formatos de Arquivo Suportados C++
 linktitle: Formatos de Arquivo Suportados
 type: docs
 weight: 70
-url: pt/cpp/supported-file-formats/
+url: /pt/cpp/supported-file-formats/
 description: Esta página mostra quais formatos de arquivo o Aspose.PDF para C++ pode carregar e salvar.
 lastmod: "2021-11-08"
 sitemap:

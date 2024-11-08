@@ -3,7 +3,7 @@ title: إزالة المرفقات من ملف PDF
 linktitle: إزالة المرفقات من ملف PDF موجود
 type: docs
 weight: 30
-url: ar/net/removing-attachment-from-an-existing-pdf/
+url: /ar/net/removing-attachment-from-an-existing-pdf/
 description: يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم واجهة برمجة تطبيقات C# PDF لإزالة المرفقات في ملفات PDF باستخدام مكتبة Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 يمكن لـ Aspose.PDF إزالة المرفقات من ملفات PDF. يتم الاحتفاظ بمرفقات مستند PDF في مجموعة EmbeddedFiles الخاصة بكائن الوثيقة.
 
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 لحذف جميع المرفقات المرتبطة بملف PDF:
 

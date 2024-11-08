@@ -3,7 +3,7 @@ title: PDFドキュメントでのポートフォリオの作業
 linktitle: ポートフォリオ
 type: docs
 weight: 40
-url: ja/java/portfolio/
+url: /ja/java/portfolio/
 description: JavaでPDFポートフォリオを作成する方法。Microsoft Excelファイル、Wordドキュメント、および画像ファイルを使用してPDFポートフォリオを作成する必要があります。
 lastmod: "2021-06-05"
 sitemap:

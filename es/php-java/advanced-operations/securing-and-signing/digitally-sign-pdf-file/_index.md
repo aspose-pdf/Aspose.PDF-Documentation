@@ -3,7 +3,7 @@ title: Cómo firmar digitalmente un PDF
 linktitle: Firmar digitalmente PDF
 type: docs
 weight: 10
-url: es/php-java/digitally-sign-pdf-file/
+url: /es/php-java/digitally-sign-pdf-file/
 description: Firmar digitalmente documentos PDF usando Java. Verificar o validar los PDFs firmados digitalmente con una aplicación basada en Java con PDF Library. Puede certificar un archivo PDF con un Certificado PKCS1.
 lastmod: "2024-06-05"
 sitemap:

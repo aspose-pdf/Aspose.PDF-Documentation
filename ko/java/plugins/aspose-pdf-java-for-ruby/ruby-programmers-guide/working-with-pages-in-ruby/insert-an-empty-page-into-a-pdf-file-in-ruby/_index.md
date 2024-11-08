@@ -2,7 +2,7 @@
 title: 빈 페이지를 PDF 파일에 삽입하기 (Ruby)
 type: docs
 weight: 70
-url: ko/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
+url: /ko/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

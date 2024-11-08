@@ -3,7 +3,7 @@ title: Работа с метаданными PDF файла с использо
 linktitle: Метаданные PDF файла
 type: docs
 weight: 130
-url: ru/javascript-cpp/pdf-file-metadata/
+url: /ru/javascript-cpp/pdf-file-metadata/
 description: Этот раздел объясняет, как получить информацию о PDF файле, как получить метаданные из PDF файла, установить информацию о PDF файле.
 lastmod: "2023-02-17"
 sitemap:

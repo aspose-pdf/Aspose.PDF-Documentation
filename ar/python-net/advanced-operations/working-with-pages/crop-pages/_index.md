@@ -3,7 +3,7 @@ title: قص صفحات PDF برمجياً باستخدام Python
 linktitle: قص الصفحات
 type: docs
 weight: 70
-url: ar/python-net/crop-pages/
+url: /ar/python-net/crop-pages/
 description: يمكنك الحصول على خصائص الصفحة، مثل العرض، الارتفاع، صندوق النزف، القص والتشذيب باستخدام Aspose.PDF لـ Python عبر .NET.
 lastmod: "2023-04-17"
 sitemap:

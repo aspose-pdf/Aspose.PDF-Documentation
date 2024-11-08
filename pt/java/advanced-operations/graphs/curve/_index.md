@@ -3,7 +3,7 @@ title: Adicionar Objeto de Curva ao Arquivo PDF
 linktitle: Adicionar Curva
 type: docs
 weight: 30
-url: pt/java/add-curve/
+url: /pt/java/add-curve/
 description: Este artigo explica como criar um objeto de curva no seu PDF usando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 在PDF中以编程方式添加图像印章
 linktitle: PDF文件中的图像印章
 type: docs
 weight: 10
-url: zh/php-java/image-stamps-in-pdf-page/
+url: /zh/php-java/image-stamps-in-pdf-page/
 description: 使用ImageStamp类通过Aspose.PDF for PHP via Java库在PDF文档中添加图像印章。
 lastmod: "2024-06-05"
 sitemap:

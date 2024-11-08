@@ -3,7 +3,7 @@ title: Extra Annotations using C#
 linktitle: Extra Annotations
 type: docs
 weight: 60
-url: pt/net/extra-annotations/
+url: /pt/net/extra-annotations/
 description: Esta seção descreve como adicionar, obter e excluir tipos extras de anotações do seu documento PDF.
 lastmod: "2023-09-12"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 A Anotação de Caret é um símbolo que indica a edição de texto. A Anotação de Caret também é uma anotação de marcação, então a classe Caret deriva da classe Markup e também fornece funções para obter ou definir propriedades da Anotação de Caret e reiniciar o fluxo da aparência da Anotação de Caret.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Etapas com as quais criamos a anotação de Caret:
 

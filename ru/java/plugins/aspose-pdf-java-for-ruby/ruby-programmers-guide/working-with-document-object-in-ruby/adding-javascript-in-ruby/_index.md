@@ -2,7 +2,7 @@
 title: Добавление JavaScript в Ruby
 type: docs
 weight: 10
-url: ru/java/adding-javascript-in-ruby/
+url: /ru/java/adding-javascript-in-ruby/
 lastmod: "2021-06-05"
 ---
 

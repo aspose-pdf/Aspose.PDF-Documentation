@@ -3,7 +3,7 @@ title: 操作现有 PDF 中的表格
 linktitle: 操作表格
 type: docs
 weight: 40
-url: zh/cpp/manipulate-tables-in-existing-pdf/
+url: /zh/cpp/manipulate-tables-in-existing-pdf/
 description: 本节涵盖使用 Aspose.PDF for C++ 进行表格修改的各种方法
 lastmod: "2021-11-11"
 sitemap:

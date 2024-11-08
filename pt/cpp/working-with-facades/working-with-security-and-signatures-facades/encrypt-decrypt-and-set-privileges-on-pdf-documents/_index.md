@@ -2,7 +2,7 @@
 title: Criptografar, Descriptografar e definir Privilégios em documentos PDF
 type: docs
 weight: 10
-url: pt/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+url: /pt/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
 ---
 
 ## <ins>**Definir Privilégios em um Arquivo PDF Existente**

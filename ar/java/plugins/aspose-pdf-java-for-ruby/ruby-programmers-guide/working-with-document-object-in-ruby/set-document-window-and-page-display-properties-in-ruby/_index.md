@@ -2,7 +2,7 @@
 title: تعيين خصائص نافذة الوثيقة وعرض الصفحة في لغة روبي
 type: docs
 weight: 100
-url: ar/java/set-document-window-and-page-display-properties-in-ruby/
+url: /ar/java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

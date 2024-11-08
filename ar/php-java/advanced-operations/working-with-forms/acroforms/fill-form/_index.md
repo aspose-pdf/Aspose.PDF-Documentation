@@ -3,7 +3,7 @@ title: ملء AcroForms
 linktitle: ملء AcroForms
 type: docs
 weight: 20
-url: ar/php-java/fill-form/
+url: /ar/php-java/fill-form/
 description: يوضح هذا القسم كيفية ملء حقل نموذج في مستند PDF باستخدام Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Аннотации в PDF на Node.js
 linktitle: Аннотации PDF
 type: docs
 weight: 90
-url: ru/nodejs-cpp/annotations/
+url: /ru/nodejs-cpp/annotations/
 description: Этот раздел показывает, как использовать все виды аннотаций в вашем PDF-файле с помощью Aspose.PDF для Node.js через C++.
 lastmod: "2023-11-16"
 sitemap:
@@ -19,4 +19,4 @@ sitemap:
 
 Вы можете выполнить следующее:
 
-- [Удалить аннотацию](/pdf/nodejs-cpp/delete-annotation/) - этот раздел объясняет, как удалить аннотации из вашего PDF в среде Node.js.
+- [Удалить аннотацию](/pdf/ru/nodejs-cpp/delete-annotation/) - этот раздел объясняет, как удалить аннотации из вашего PDF в среде Node.js.

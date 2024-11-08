@@ -2,7 +2,7 @@
 title: Trabalhando com Cabeçalhos em PDF
 type: docs
 weight: 70
-url: pt/java/working-with-headings/
+url: /pt/java/working-with-headings/
 lastmod: "2021-06-05"
 description: Crie numeração em cabeçalhos do seu documento PDF com Java. Aspose.PDF para Java oferece diferentes tipos de estilos de numeração.
 sitemap:

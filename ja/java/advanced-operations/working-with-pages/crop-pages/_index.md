@@ -3,7 +3,7 @@ title: PDFページをプログラムでトリミング
 linktitle: ページをトリミング
 type: docs
 weight: 80
-url: ja/java/crop-pages/
+url: /ja/java/crop-pages/
 description: Aspose.PDF for Javaを使用して、幅、高さ、断裁、トリムボックスなどのページプロパティを取得できます。
 lastmod: "2021-06-05"
 sitemap:

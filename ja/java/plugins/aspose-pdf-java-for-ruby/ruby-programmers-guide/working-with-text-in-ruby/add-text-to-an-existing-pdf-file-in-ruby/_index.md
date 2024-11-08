@@ -2,7 +2,7 @@
 title: 既存のPDFファイルにテキストを追加する (Ruby)
 type: docs
 weight: 20
-url: ja/java/add-text-to-an-existing-pdf-file-in-ruby/
+url: /ja/java/add-text-to-an-existing-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Pesquisar e Obter Texto das Páginas de PDF
 linktitle: Pesquisar e Obter Texto
 type: docs
 weight: 60
-url: pt/net/search-and-get-text-from-pdf/
+url: /pt/net/search-and-get-text-from-pdf/
 description: Este artigo explica como usar várias ferramentas para pesquisar e obter um texto do Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Este artigo explica como usar várias ferramentas para pesquisar e obter um texto do Aspose.PDF para .NET."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Pesquisar e Obter Texto de Todas as Páginas de um Documento PDF
 

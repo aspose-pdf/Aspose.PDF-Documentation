@@ -3,7 +3,7 @@ title: Mengonversi HTML ke file PDF di Java
 linktitle: Mengonversi HTML ke file PDF
 type: docs
 weight: 40
-url: id/java/convert-html-to-pdf/
+url: /id/java/convert-html-to-pdf/
 lastmod: "2021-11-19"
 description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi format HTML dan MHTML ke file PDF.
 sitemap:

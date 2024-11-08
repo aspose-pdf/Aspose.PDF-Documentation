@@ -3,7 +3,7 @@ title: Extraer Datos de AcroForms
 linktitle: Extraer Datos de AcroForms
 type: docs
 weight: 30
-url: es/php-java/extract-form/
+url: /es/php-java/extract-form/
 description: Esta sección explica cómo extraer formularios de su documento PDF con Aspose.PDF para PHP a través de Java.
 lastmod: "2024-06-05"
 sitemap:

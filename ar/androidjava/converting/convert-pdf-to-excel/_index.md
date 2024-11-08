@@ -3,7 +3,7 @@ title: تحويل PDF إلى Excel
 linktitle: تحويل PDF إلى Excel 
 type: docs
 weight: 90
-url: ar/androidjava/convert-pdf-to-excel/
+url: /ar/androidjava/convert-pdf-to-excel/
 lastmod: "2021-06-05"
 description: يسمح لك Aspose.PDF لنظام Android عبر Java بتحويل PDF إلى تنسيق Excel. أثناء ذلك، يتم تحويل الصفحات الفردية من ملف PDF إلى أوراق عمل Excel.
 sitemap:

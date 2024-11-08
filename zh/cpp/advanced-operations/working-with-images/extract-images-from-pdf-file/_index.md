@@ -3,7 +3,7 @@ title: 提取PDF文件中的图像使用C++
 linktitle: 提取图像
 type: docs
 weight: 30
-url: zh/cpp/extract-images-from-pdf-file/
+url: /zh/cpp/extract-images-from-pdf-file/
 description: 本节展示如何使用C++库从PDF文件中提取图像。
 lastmod: "2021-12-18"
 ---

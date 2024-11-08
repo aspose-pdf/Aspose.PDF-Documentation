@@ -2,7 +2,7 @@
 title: Extrair Texto de Selos
 type: docs
 weight: 60
-url: pt/java/extract-text-from-stamps/
+url: /pt/java/extract-text-from-stamps/
 ---
 
 ## Extrair Texto de Anotações de Selo

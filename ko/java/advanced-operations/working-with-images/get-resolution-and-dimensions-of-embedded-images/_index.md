@@ -3,7 +3,7 @@ title: 내장된 이미지의 해상도 및 치수 가져오기
 linktitle: 해상도 및 치수 가져오기
 type: docs
 weight: 40
-url: ko/java/get-resolution-and-dimensions-of-embedded-images/
+url: /ko/java/get-resolution-and-dimensions-of-embedded-images/
 description: 이 섹션은 내장된 이미지의 해상도 및 치수를 얻는 방법에 대한 세부 정보를 보여줍니다.
 lastmod: "2021-06-05"
 ---

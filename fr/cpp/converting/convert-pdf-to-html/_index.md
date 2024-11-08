@@ -3,7 +3,7 @@ title: Convertir un fichier PDF au format HTML
 linktitle: Convertir un fichier PDF au format HTML
 type: docs
 weight: 50
-url: fr/cpp/convert-pdf-to-html/
+url: /fr/cpp/convert-pdf-to-html/
 lastmod: "2021-11-19"
 description: Ce sujet vous montre comment Aspose.PDF permet de convertir un fichier PDF au format HTML avec la bibliothèque C++.
 sitemap:

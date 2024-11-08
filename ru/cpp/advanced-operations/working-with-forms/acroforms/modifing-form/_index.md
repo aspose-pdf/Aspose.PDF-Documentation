@@ -3,7 +3,7 @@ title: Изменение AcroForm
 linktitle: Изменение AcroForm
 type: docs
 weight: 40
-url: ru/cpp/modifing-form/
+url: /ru/cpp/modifing-form/
 description: Изменение формы в вашем PDF файле с помощью библиотеки Aspose.PDF для C++. Вы можете добавлять или удалять поля в существующей форме, получать и устанавливать ограничение поля и т.д.
 lastmod: "2021-12-01"
 sitemap:

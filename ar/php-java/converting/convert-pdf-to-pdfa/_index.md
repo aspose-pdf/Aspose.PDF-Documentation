@@ -4,7 +4,7 @@ title: تحويل PDF إلى تنسيقات PDF/A
 linktitle: تحويل PDF إلى تنسيقات PDF/A  
 type: docs  
 weight: 100  
-url: ar/php-java/convert-pdf-to-pdfa/  
+url: /ar/php-java/convert-pdf-to-pdfa/  
 lastmod: "2024-05-20"  
 description: يوضح لك هذا الموضوع كيف يسمح لك Aspose.PDF بتحويل ملف PDF إلى ملف PDF متوافق مع PDF/A.  
 sitemap:  

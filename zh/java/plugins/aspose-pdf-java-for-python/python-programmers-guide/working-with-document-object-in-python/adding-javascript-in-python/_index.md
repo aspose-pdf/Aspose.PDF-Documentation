@@ -2,7 +2,7 @@
 title: 在 Python 中添加 JavaScript
 type: docs
 weight: 10
-url: zh/java/adding-javascript-in-python/
+url: /zh/java/adding-javascript-in-python/
 lastmod: "2021-06-05"
 ---
 

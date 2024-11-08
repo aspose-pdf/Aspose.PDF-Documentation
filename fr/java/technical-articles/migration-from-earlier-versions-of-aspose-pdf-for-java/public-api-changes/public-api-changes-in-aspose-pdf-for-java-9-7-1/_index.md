@@ -2,7 +2,7 @@
 title: Changements de l'API Publique dans Aspose.PDF pour Java 9.7.1
 type: docs
 weight: 80
-url: fr/java/public-api-changes-in-aspose-pdf-for-java-9-7-1/
+url: /fr/java/public-api-changes-in-aspose-pdf-for-java-9-7-1/
 lastmod: "2022-01-27"
 ---
 

@@ -3,7 +3,7 @@ title: Cómo ejecutar otros ejemplos
 linktitle: Cómo ejecutar otros ejemplos
 type: docs
 weight: 50
-url: es/java/how-to-run-other-examples/    
+url: /es/java/how-to-run-other-examples/    
 description: Esta página demuestra pautas que serán útiles para los siguientes requisitos antes de descargar y ejecutar los ejemplos.
 lastmod: "2021-06-05"
 ---

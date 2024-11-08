@@ -2,7 +2,7 @@
 title: PDFファイルから添付ファイルを抽出する
 type: docs
 weight: 10
-url: ja/java/extract-attachments/
+url: /ja/java/extract-attachments/
 description: このセクションでは、PdfExtractorクラスを使用してPDFから添付ファイルを抽出する方法について説明します。
 lastmod: "2021-06-05"
 draft: false

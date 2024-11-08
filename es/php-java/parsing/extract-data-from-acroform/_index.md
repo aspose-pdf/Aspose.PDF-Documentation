@@ -3,7 +3,7 @@ title:  Extraer datos de AcroForm
 linktitle:  Extraer datos de AcroForm
 type: docs
 weight: 50
-url: es/php-java/extract-data-from-acroform/
+url: /es/php-java/extract-data-from-acroform/
 description: AcroForms existe en muchos documentos PDF. Este artículo tiene como objetivo ayudarle a entender cómo extraer datos de AcroForms usando PHP y Aspose.PDF.
 lastmod: "2024-05-20"
 sitemap:

@@ -3,7 +3,7 @@ title: Node.js에서 PDF에 이미지 스탬프 추가
 linktitle: PDF 파일의 이미지 스탬프
 type: docs
 weight: 60
-url: ko/nodejs-cpp/stamping/
+url: /ko/nodejs-cpp/stamping/
 description: AsposePdfAddStamp를 사용하여 Node.js 도구로 PDF 문서에 이미지 스탬프를 추가합니다.
 lastmod: "2023-11-16"
 sitemap:

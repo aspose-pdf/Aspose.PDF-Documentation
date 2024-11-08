@@ -3,7 +3,7 @@ title: Trabajando con Accesibilidad y PDFs Etiquetados
 linktitle: Accesibilidad. PDF Etiquetado
 type: docs
 weight: 120
-url: es/java/accessibility-tagged-pdf/
+url: /es/java/accessibility-tagged-pdf/
 description: Aspose.PDF proporciona la capacidad de crear documentos PDF etiquetados, permitiéndole etiquetar los elementos estructurales. Aprenda más sobre cómo obtener PDFs accesibles.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ Aspose.PDF proporciona funcionalidad para crear documentos PDF que son compatibl
 
 Esta sección cubre el siguiente tema:
 
-- [Crear PDF Etiquetado](/pdf/java/create-tagged-pdf-documents/)
-- [Extraer Contenido Etiquetado de PDFs Etiquetados](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
-- [Configurar Propiedades de Elementos de Estructura](/pdf/java/set-tagged-pdfs-element-properties/)
-- [Trabajar con Tablas en PDFs Etiquetados](/pdf/java/working-with-table-in-tagged-pdfs/)
+- [Crear PDF Etiquetado](/pdf/es/java/create-tagged-pdf-documents/)
+- [Extraer Contenido Etiquetado de PDFs Etiquetados](/pdf/es/java/extract-tagged-content-from-tagged-pdfs/)
+- [Configurar Propiedades de Elementos de Estructura](/pdf/es/java/set-tagged-pdfs-element-properties/)
+- [Trabajar con Tablas en PDFs Etiquetados](/pdf/es/java/working-with-table-in-tagged-pdfs/)

@@ -3,7 +3,7 @@ title: حذف صفحات PDF برمجياً
 linktitle: حذف صفحات PDF
 type: docs
 weight: 40
-url: ar/php-java/delete-pages/
+url: /ar/php-java/delete-pages/
 description: يمكنك حذف الصفحات من ملف PDF الخاص بك باستخدام PHP.
 lastmod: "2024-06-05"
 sitemap:

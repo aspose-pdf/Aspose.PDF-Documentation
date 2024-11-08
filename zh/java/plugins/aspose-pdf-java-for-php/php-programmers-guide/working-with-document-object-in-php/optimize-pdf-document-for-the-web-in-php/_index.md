@@ -2,7 +2,7 @@
 title: 在 PHP 中优化 PDF 文档以用于网络
 type: docs
 weight: 60
-url: zh/java/optimize-pdf-document-for-the-web-in-php/
+url: /zh/java/optimize-pdf-document-for-the-web-in-php/
 lastmod: "2021-06-05"
 ---
 

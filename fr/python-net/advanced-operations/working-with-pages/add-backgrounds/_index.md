@@ -3,7 +3,7 @@ title: Ajouter un arrière-plan au PDF avec Python
 linktitle: Ajouter des arrière-plans
 type: docs
 weight: 20
-url: fr/python-net/add-backgrounds/
+url: /fr/python-net/add-backgrounds/
 description: Ajouter une image d'arrière-plan à votre fichier PDF avec Python. Utilisez la classe BackgroundArtifact.
 lastmod: "2023-04-17"
 sitemap:

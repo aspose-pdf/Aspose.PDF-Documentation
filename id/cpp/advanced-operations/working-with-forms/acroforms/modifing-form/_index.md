@@ -3,7 +3,7 @@ title: Memodifikasi AcroForm
 linktitle: Memodifikasi AcroForm
 type: docs
 weight: 40
-url: id/cpp/modifing-form/
+url: /id/cpp/modifing-form/
 description: Memodifikasi formulir dalam file PDF Anda dengan pustaka Aspose.PDF untuk C++. Anda dapat menambah atau menghapus bidang dalam formulir yang ada, mendapatkan dan mengatur batas bidang, dan lain-lain.
 lastmod: "2021-12-01"
 sitemap:

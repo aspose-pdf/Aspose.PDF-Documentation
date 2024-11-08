@@ -2,7 +2,7 @@
 title: 将SVG文件转换为Python中的PDF格式
 type: docs
 weight: 40
-url: zh/java/convert-svg-file-to-pdf-format-in-python/
+url: /zh/java/convert-svg-file-to-pdf-format-in-python/
 lastmod: "2021-06-05"
 ---
 

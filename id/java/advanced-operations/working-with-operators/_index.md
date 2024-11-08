@@ -3,7 +3,7 @@ title: Bekerja dengan Operator
 linktitle: Bekerja dengan Operator
 type: docs
 weight: 170
-url: id/java/operators/
+url: /id/java/operators/
 description: Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF. Kelas operator menyediakan fitur hebat untuk manipulasi PDF.
 lastmod: "2021-06-05"
 sitemap:

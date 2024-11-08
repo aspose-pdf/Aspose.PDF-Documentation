@@ -3,7 +3,7 @@ title: 使用Python向PDF文档添加附件
 linktitle: 向PDF文档添加附件
 type: docs
 weight: 10
-url: zh/python-net/add-attachment-to-pdf-document/
+url: /zh/python-net/add-attachment-to-pdf-document/
 description: 本页面描述了如何通过Aspose.PDF for Python via .NET库向PDF文件添加附件。
 lastmod: "2023-02-17"
 sitemap:

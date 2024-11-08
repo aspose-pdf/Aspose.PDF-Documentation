@@ -3,7 +3,7 @@ title: 将 PDF/A 转换为 PDF 格式
 linktitle: 将 PDF/A 转换为 PDF 格式
 type: docs
 weight: 110
-url: zh/net/convert-pdfa-to-pdf/
+url: /zh/net/convert-pdfa-to-pdf/
 lastmod: "2021-11-01"
 description: 本主题展示了如何使用 Aspose.PDF 将 PDF/A 文件转换为 .NET 库的 PDF 文档。
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 将 PDF/A 文档转换为 PDF
 

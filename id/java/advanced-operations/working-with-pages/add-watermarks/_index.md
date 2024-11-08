@@ -3,7 +3,7 @@ title: Tambahkan watermark ke PDF
 linktitle: Tambahkan watermark
 type: docs
 weight: 90
-url: id/java/add-watermarks/
+url: /id/java/add-watermarks/
 description: Artikel ini menjelaskan fitur bekerja dengan artefak dan mendapatkan watermark dalam PDF secara pemrograman menggunakan Java.
 lastmod: "2021-06-05"
 sitemap:

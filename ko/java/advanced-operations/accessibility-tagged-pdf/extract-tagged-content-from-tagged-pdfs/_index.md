@@ -3,7 +3,7 @@ title: PDF에서 태그가 지정된 콘텐츠 추출
 linktitle: 태그가 지정된 콘텐츠 추출
 type: docs
 weight: 20
-url: ko/java/extract-tagged-content-from-tagged-pdfs/
+url: /ko/java/extract-tagged-content-from-tagged-pdfs/
 description: 이 문서에서는 Aspose.PDF for Java를 사용하여 태그가 지정된 PDF 문서에서 콘텐츠를 추출하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: 提取 PDF 页面
 type: docs
 weight: 20
-url: zh/java/extract-pdf-pages/
+url: /zh/java/extract-pdf-pages/
 description: 本节解释如何使用 PdfFileEditor 类从 com.aspose.pdf.facades 中提取 PDF 页面。
 lastmod: "2021-06-05"
 draft: false

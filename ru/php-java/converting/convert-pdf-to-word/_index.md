@@ -3,7 +3,7 @@ title: Конвертировать PDF в Microsoft Word
 linktitle: Конвертировать PDF в Word
 type: docs
 weight: 10
-url: ru/php-java/convert-pdf-to-word/
+url: /ru/php-java/convert-pdf-to-word/
 lastmod: "2024-05-20"
 description: Конвертируйте PDF файл в формат DOC и DOCX с легкостью и полным контролем с Aspose.PDF для PHP. Узнайте больше о том, как настроить конвертацию PDF в документы Microsoft Word.
 sitemap:

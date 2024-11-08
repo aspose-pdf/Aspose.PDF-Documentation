@@ -3,7 +3,7 @@ title: Menggunakan Anotasi Teks untuk PDF melalui Python
 linktitle: Anotasi Teks
 type: docs
 weight: 10
-url: id/python-net/text-annotation/
+url: /id/python-net/text-annotation/
 description: Aspose.PDF untuk Python memungkinkan Anda Menambahkan, Mendapatkan, dan Menghapus Anotasi Teks dari dokumen PDF Anda.
 lastmod: "2023-02-17"
 sitemap:

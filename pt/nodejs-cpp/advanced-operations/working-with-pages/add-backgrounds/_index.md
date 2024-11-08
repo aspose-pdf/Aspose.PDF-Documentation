@@ -3,7 +3,7 @@ title: Adicionar fundo ao PDF em Node.js
 linktitle: Adicionar fundo
 type: docs
 weight: 10
-url: pt/nodejs-cpp/add-background/
+url: /pt/nodejs-cpp/add-background/
 description: Adicione uma imagem de fundo ao seu arquivo PDF em Node.js
 lastmod: "2023-11-16"
 sitemap:

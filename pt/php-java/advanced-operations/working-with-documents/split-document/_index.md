@@ -3,7 +3,7 @@ title: Dividir PDF programaticamente
 linktitle: Dividir arquivos PDF
 type: docs
 weight: 60
-url: pt/php-java/split-document/
+url: /pt/php-java/split-document/
 description: Este tópico mostra como dividir páginas de PDF em arquivos PDF individuais em suas aplicações PHP.
 lastmod: "2024-06-05"
 sitemap:

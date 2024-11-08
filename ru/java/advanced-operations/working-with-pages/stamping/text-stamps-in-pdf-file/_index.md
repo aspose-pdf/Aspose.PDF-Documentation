@@ -3,7 +3,7 @@ title: Добавление текстовых штампов в PDF прогр�
 linktitle: Текстовые штампы в PDF файле
 type: docs
 weight: 20
-url: ru/java/text-stamps-in-the-pdf-file/
+url: /ru/java/text-stamps-in-the-pdf-file/
 description: Добавление текстового штампа в PDF файл с использованием класса TextStamp на Java.
 lastmod: "2021-06-05"
 sitemap:

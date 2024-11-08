@@ -2,7 +2,7 @@
 title: Kontrol File PDF Pengecualian
 type: docs
 weight: 30
-url: id/net/control-exception/
+url: /id/net/control-exception/
 description: Topik ini menjelaskan bagaimana mengontrol pengecualian pada File PDF menggunakan Kelas PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

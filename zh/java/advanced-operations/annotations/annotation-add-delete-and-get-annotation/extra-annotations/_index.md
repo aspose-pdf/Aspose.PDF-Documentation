@@ -3,7 +3,7 @@ title: 使用额外类型的PDF注释
 linktitle: 额外注释
 type: docs
 weight: 60
-url: zh/java/extra-annotations/
+url: /zh/java/extra-annotations/
 description: 本节介绍如何添加、获取和删除PDF文档中的额外类型的注释。
 lastmod: "2021-11-24"
 sitemap:

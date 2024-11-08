@@ -3,7 +3,7 @@ title: Alterar Tamanho da Página do PDF Programaticamente
 linktitle: Alterar Tamanho da Página
 type: docs
 weight: 50
-url: pt/java/change-page-size/
+url: /pt/java/change-page-size/
 description: Alterar o Tamanho da Página do seu arquivo PDF usando a biblioteca Java.
 lastmod: "2021-06-05"
 sitemap:

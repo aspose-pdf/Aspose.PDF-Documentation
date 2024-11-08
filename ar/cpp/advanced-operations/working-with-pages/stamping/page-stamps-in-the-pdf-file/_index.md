@@ -3,7 +3,7 @@ title: إضافة طوابع الصفحة في ملف PDF
 linktitle: الطوابع في ملف PDF 
 type: docs
 weight: 30
-url: ar/cpp/page-stamps-in-the-pdf-file/
+url: /ar/cpp/page-stamps-in-the-pdf-file/
 description: إضافة طابع صفحة إلى ملف PDF باستخدام فئة PdfPageStamp مع C++.
 lastmod: "2021-12-08"
 sitemap:

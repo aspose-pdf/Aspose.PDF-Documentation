@@ -2,7 +2,7 @@
 title: Menyisipkan Halaman Kosong ke dalam File PDF di PHP
 type: docs
 weight: 70
-url: id/java/insert-an-empty-page-into-a-pdf-file-in-php/
+url: /id/java/insert-an-empty-page-into-a-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

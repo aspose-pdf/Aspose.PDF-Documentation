@@ -2,7 +2,7 @@
 title: Obtenir les propriétés de la fenêtre du document et de l'affichage de la page en Ruby
 type: docs
 weight: 40
-url: fr/java/get-document-window-and-page-display-properties-in-ruby/
+url: /fr/java/get-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

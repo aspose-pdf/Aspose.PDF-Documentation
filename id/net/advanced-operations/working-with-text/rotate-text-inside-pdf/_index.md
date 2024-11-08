@@ -3,7 +3,7 @@ title: Memutar Teks Di Dalam PDF Menggunakan C#
 linktitle: Memutar Teks Di Dalam PDF
 type: docs
 weight: 50
-url: id/net/rotate-text-inside-pdf/
+url: /id/net/rotate-text-inside-pdf/
 description: Pelajari berbagai cara untuk memutar teks ke PDF. Aspose.PDF memungkinkan Anda memutar teks ke sudut berapa pun, memutar fragmen teks atau seluruh paragraf.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Memutar Teks Di Dalam PDF Menggunakan Properti Rotasi
 

@@ -2,7 +2,7 @@
 title: تحسين مستند PDF للويب في بايثون
 type: docs
 weight: 60
-url: ar/java/optimize-pdf-document-for-the-web-in-python/
+url: /ar/java/optimize-pdf-document-for-the-web-in-python/
 lastmod: "2021-06-05"
 ---
 

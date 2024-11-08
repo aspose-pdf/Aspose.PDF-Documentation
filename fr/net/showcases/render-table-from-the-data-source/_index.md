@@ -3,7 +3,7 @@ title: Rendre un tableau à partir de la source de données
 linktitle: Rendre un tableau à partir de la source de données
 type: docs
 weight: 30
-url: fr/net/render-table-from-the-data-source/
+url: /fr/net/render-table-from-the-data-source/
 description: Cette page explique comment rendre un tableau à partir de la source de données en utilisant la bibliothèque Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

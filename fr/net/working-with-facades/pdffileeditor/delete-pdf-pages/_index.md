@@ -2,7 +2,7 @@
 title: Supprimer des pages PDF
 type: docs
 weight: 70
-url: fr/net/delete-pdf-pages/
+url: /fr/net/delete-pdf-pages/
 description: Cette section explique comment supprimer des pages PDF avec Aspose.PDF Facades en utilisant la classe PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: PDF 파일을 PDF/A로 변환
 linktitle: PDF 파일을 PDF/A로 변환
 type: docs
 weight: 180
-url: ko/androidjava/convert-pdf-file-to-pdfa/
+url: /ko/androidjava/convert-pdf-file-to-pdfa/
 lastmod: "2021-06-05"
 description: 이 주제는 Aspose.PDF for Java가 PDF 파일을 PDF/A 준수 PDF 파일로 변환하는 방법을 보여줍니다.
 sitemap:

@@ -2,7 +2,7 @@
 title: Копирование внутреннего и внешнего поля
 type: docs
 weight: 40
-url: ru/net/copy-inner-and-outer-field/
+url: /ru/net/copy-inner-and-outer-field/
 description: Этот раздел объясняет, как копировать внутреннее и внешнее поле с использованием Aspose.PDF Facades и класса FormEditor.
 lastmod: "2021-06-05"
 draft: false

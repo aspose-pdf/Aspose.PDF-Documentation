@@ -3,7 +3,7 @@ title: Create AcroForm - Create Fillable PDF in C#
 linktitle: Create AcroForm
 type: docs
 weight: 10
-url: fr/net/create-form/
+url: /fr/net/create-form/
 description: Avec Aspose.PDF pour .NET, vous pouvez créer un formulaire à partir de zéro dans votre fichier PDF
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Avec Aspose.PDF pour .NET, vous pouvez créer un formulaire à partir de zéro dans votre fichier PDF"
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Créer un formulaire à partir de zéro
 

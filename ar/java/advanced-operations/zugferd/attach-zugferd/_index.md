@@ -3,7 +3,7 @@ title: إنشاء ملفات PDF متوافقة مع PDF/3-A وإرفاق فات
 linktitle: إرفاق ZUGFeRD إلى PDF
 type: docs
 weight: 10
-url: ar/java/attach-zugferd/
+url: /ar/java/attach-zugferd/
 description: تعلم كيفية إنشاء مستند PDF مع ZUGFeRD في Aspose.PDF for Java
 lastmod: "2024-01-18"
 sitemap:

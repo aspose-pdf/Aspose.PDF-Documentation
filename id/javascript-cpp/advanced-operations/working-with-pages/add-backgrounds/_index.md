@@ -3,7 +3,7 @@ title: Tambahkan latar belakang ke PDF dengan JavaScript melalui C++
 linktitle: Tambahkan latar belakang
 type: docs
 weight: 10
-url: id/javascript-cpp/add-backgrounds/
+url: /id/javascript-cpp/add-backgrounds/
 description: Tambahkan gambar latar belakang ke file PDF Anda dengan JavaScript melalui C++.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Supprimer des pages PDF par programme
 linktitle: Supprimer des pages PDF
 type: docs
 weight: 40
-url: fr/java/delete-pages/
+url: /fr/java/delete-pages/
 description: Vous pouvez supprimer des pages de votre fichier PDF en utilisant la bibliothèque Java.
 lastmod: "2021-06-05"
 sitemap:

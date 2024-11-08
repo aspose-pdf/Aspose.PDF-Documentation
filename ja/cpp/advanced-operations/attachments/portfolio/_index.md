@@ -3,7 +3,7 @@ title: PDFでポートフォリオを作成する
 linktitle: ポートフォリオ
 type: docs
 weight: 40
-url: ja/cpp/portfolio/
+url: /ja/cpp/portfolio/
 description: Aspose.PDF for C++でPDFポートフォリオを作成します。Microsoft Excelファイル、Wordドキュメント、および画像ファイルを使用してPDFポートフォリオを作成する必要があります。
 lastmod: "2022-02-07"
 sitemap:

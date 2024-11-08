@@ -3,7 +3,7 @@ title: Aspose.PDF Editor
 linktitle: Aspose.PDF Editor
 type: docs
 weight: 10
-url: ja/net/aspose-pdf-editor/
+url: /ja/net/aspose-pdf-editor/
 description: Aspose.PDF for .NETは、HTML5 PDFエディターを示しています。これはオープンソースのウェブベースのPDFエディターです。
 lastmod: "2021-06-05"
 sitemap:

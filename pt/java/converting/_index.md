@@ -3,7 +3,7 @@ title: Converter documentos PDF
 linktitle: Converter documentos PDF
 type: docs
 weight: 50
-url: pt/java/converting/
+url: /pt/java/converting/
 lastmod: "2021-11-17"
 description: Esta seção contém uma descrição de todas as opções possíveis para converter documentos PDF em Java usando a biblioteca Aspose.PDF.
 sitemap:
@@ -21,36 +21,36 @@ Para uma lista completa de formatos suportados, consulte a seção [Formatos de 
 
 Word documents são os mais versáteis e editáveis possíveis. Converter PDF para Word manualmente é uma tarefa que consome muito tempo. Neste artigo, você aprenderá como converter PDF para Word programaticamente em Java.
 
-- [Converter PDF para Microsoft Word](/pdf/java/convert-pdf-to-word/) - você pode converter seu documento PDF para o formato Word com Java
+- [Converter PDF para Microsoft Word](/pdf/pt/java/convert-pdf-to-word/) - você pode converter seu documento PDF para o formato Word com Java
 
 Os formatos numéricos são necessários não apenas para tornar os dados na tabela mais fáceis de ler, mas também para tornar a tabela mais fácil de usar. Claro, se você precisar converter tais dados de um documento PDF para o formato Excel, use nossa biblioteca Aspose.PDF.
 
-- [Converter PDF para Microsoft Excel](/pdf/java/convert-pdf-to-excel/) - esta seção descreve como converter documento PDF para XLSX, ODS, CSV e SpreadSheetML
+- [Converter PDF para Microsoft Excel](/pdf/pt/java/convert-pdf-to-excel/) - esta seção descreve como converter documento PDF para XLSX, ODS, CSV e SpreadSheetML
 
 O formato PowerPoint é usado para criar várias apresentações. Arquivos PPT contêm um grande número de slides ou páginas contendo várias informações.
 
-- [Converter PDF para Microsoft PowerPoint](/pdf/java/convert-pdf-to-powerpoint/) - aqui estamos falando sobre converter PDF para PowerPoint acompanhando o processo de conversão
+- [Converter PDF para Microsoft PowerPoint](/pdf/pt/java/convert-pdf-to-powerpoint/) - aqui estamos falando sobre converter PDF para PowerPoint acompanhando o processo de conversão
 
 HyperText Markup Language é uma linguagem de descrição de documentos de hipertexto, uma linguagem padrão para criar páginas da web. Com o Aspose.PDF para Java, você pode facilmente converter documentos HTML e vice-versa.
 
-- [Converter formato HTML para arquivo PDF](/pdf/java/convert-html-to-pdf/) - artigo sobre diferentes aspectos da conversão de HTML para PDF
-- [Converter arquivo PDF para formato HTML](/pdf/java/convert-pdf-to-html/) - converta seus documentos PDF para arquivos HTML como páginas separadas ou como uma única página
+- [Converter formato HTML para arquivo PDF](/pdf/pt/java/convert-html-to-pdf/) - artigo sobre diferentes aspectos da conversão de HTML para PDF
+- [Converter arquivo PDF para formato HTML](/pdf/pt/java/convert-pdf-to-html/) - converta seus documentos PDF para arquivos HTML como páginas separadas ou como uma única página
 
 Existem muitos formatos de imagem que precisam ser convertidos para PDF para diferentes propósitos. Aspose.PDF permite os formatos de imagem mais populares e vice-versa.
 
-- [Converter formatos de Imagens para arquivo PDF](/pdf/java/convert-images-format-to-pdf/) - Aspose.PDF permite que você converta diferentes formatos de imagens para arquivo PDF
-- [Converter PDF para vários formatos de Imagens](/pdf/java/convert-pdf-to-images-format/) - converta páginas PDF como imagens em JPEG, PNG e outros formatos
+- [Converter formatos de Imagens para arquivo PDF](/pdf/pt/java/convert-images-format-to-pdf/) - Aspose.PDF permite que você converta diferentes formatos de imagens para arquivo PDF
+- [Converter PDF para vários formatos de Imagens](/pdf/pt/java/convert-pdf-to-images-format/) - converta páginas PDF como imagens em JPEG, PNG e outros formatos
 
 Esta seção inclui formatos como: EPUB, Markdown, PCL, XPS, LATex/TeX, Texto e PostScript.
 
-- [Converter outros formatos de arquivo para PDF](/pdf/java/convert-other-files-to-pdf/) - este tópico descreve a conversão com vários formatos como EPUB, XPS, Postscript, texto e outros
-- [Converter arquivo PDF para outros formatos](/pdf/java/convert-pdf-to-other-files/) - este tópico descreve a maneira de converter documento PDF para vários formatos
+- [Converter outros formatos de arquivo para PDF](/pdf/pt/java/convert-other-files-to-pdf/) - este tópico descreve a conversão com vários formatos como EPUB, XPS, Postscript, texto e outros
+- [Converter arquivo PDF para outros formatos](/pdf/pt/java/convert-pdf-to-other-files/) - este tópico descreve a maneira de converter documento PDF para vários formatos
 
 PDF/A é uma versão do PDF projetada para o arquivamento a longo prazo de documentos eletrônicos.
 Honestamente, externamente, é muito difícil determinar se é PDF ou PDF/A. Para verificar este arquivo, são usados validadores. Confira os seguintes artigos para uma conversão de qualidade de PDF para PDF/A e vice-versa.
 
-- [Converter PDF para formatos PDF/A](/pdf/java/convert-pdf-to-pdfa/) - a biblioteca Java da Aspose.PDF tem uma maneira fácil de converter PDF para PDF/A
-- [Converter PDF/A para formato PDF](/pdf/java/convert-pdfa-to-pdf/) - converter PDF/A para formato PDF com Java de forma fácil, rápida e de alta qualidade
+- [Converter PDF para formatos PDF/A](/pdf/pt/java/convert-pdf-to-pdfa/) - a biblioteca Java da Aspose.PDF tem uma maneira fácil de converter PDF para PDF/A
+- [Converter PDF/A para formato PDF](/pdf/pt/java/convert-pdfa-to-pdf/) - converter PDF/A para formato PDF com Java de forma fácil, rápida e de alta qualidade
 
 {{% alert color="success" %}}
 **Tente converter arquivos PDF online**

@@ -3,7 +3,7 @@ title: اقتصاص صفحات PDF برمجياً
 linktitle: اقتصاص الصفحات
 type: docs
 weight: 80
-url: ar/java/crop-pages/
+url: /ar/java/crop-pages/
 description: يمكنك الحصول على خصائص الصفحة، مثل العرض، الارتفاع، وعلبة النزيف، الاقتصاص، والتقليم باستخدام Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Agregar sellos de imagen en PDF programáticamente
 linktitle: Sellos de imagen en archivo PDF
 type: docs
 weight: 10
-url: es/java/image-stamps-in-pdf-page/
+url: /es/java/image-stamps-in-pdf-page/
 description: Agrega el sello de imagen en tu documento PDF usando la clase ImageStamp con la biblioteca Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

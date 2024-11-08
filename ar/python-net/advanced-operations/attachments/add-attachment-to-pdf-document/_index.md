@@ -3,7 +3,7 @@ title: إضافة مرفق إلى مستند PDF باستخدام Python
 linktitle: إضافة مرفق إلى مستند PDF
 type: docs
 weight: 10
-url: ar/python-net/add-attachment-to-pdf-document/
+url: /ar/python-net/add-attachment-to-pdf-document/
 description: تصف هذه الصفحة كيفية إضافة مرفق إلى ملف PDF باستخدام Aspose.PDF لـ Python عبر مكتبة .NET.
 lastmod: "2023-02-17"
 sitemap:

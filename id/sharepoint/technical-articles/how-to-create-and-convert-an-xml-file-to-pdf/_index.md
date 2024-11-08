@@ -2,7 +2,7 @@
 title: Cara Membuat dan Mengonversi File XML ke PDF
 type: docs
 weight: 30
-url: id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
+url: /id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
 lastmod: "2020-12-16"
 description: API PDF SharePoint mampu membuat dan mengonversi file XML ke format PDF.
 ---
@@ -18,13 +18,13 @@ Aspose.PDF for SharePoint dibangun di atas komponen Aspose.PDF for .NET yang mem
 {{% alert color="primary" %}}
 
 Langkah demi langkah, artikel ini memandu Anda melalui proses pembuatan file XML dan mengonversinya ke PDF:
-1. [Buat file XML](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
-2. [Buat template PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
-3. [Muat template XML](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
-4. [Tentukan jalur ke jalur sumber](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
-5. [Tentukan properti file](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
-6. [Ekspor file ke PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
-7. [Simpan file PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
+1. [Buat file XML](/pdf/id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
+2. [Buat template PDF](/pdf/id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
+3. [Muat template XML](/pdf/id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
+4. [Tentukan jalur ke jalur sumber](/pdf/id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
+5. [Tentukan properti file](/pdf/id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
+6. [Ekspor file ke PDF](/pdf/id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
+7. [Simpan file PDF](/pdf/id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
 
 #### **Langkah 1: Buat File XML**
 Pertama buat file XML berdasarkan Aspose.PDF untuk .NET Document Object Model.
@@ -72,7 +72,7 @@ Sebelum melanjutkan, pastikan bahwa server SharePoint Foundation 2010 telah terp
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 #### **Langkah 3: Muat Template XML**
 
-Setelah template dibuat, muat [file XML tersebut](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
+Setelah template dibuat, muat [file XML tersebut](/pdf/id/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
 1. Pada halaman template PDF, pilih **Tambah item baru**.
 
 

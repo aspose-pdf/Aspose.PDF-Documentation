@@ -3,7 +3,7 @@ title: Simpan Dokumen PDF menggunakan C++
 linktitle: Simpan
 type: docs
 weight: 30
-url: id/cpp/save-pdf-document/
+url: /id/cpp/save-pdf-document/
 description: Pelajari cara menyimpan file PDF dengan pustaka Aspose.PDF untuk C++.
 lastmod: "2021-11-01"
 sitemap:

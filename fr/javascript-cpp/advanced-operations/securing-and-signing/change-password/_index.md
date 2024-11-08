@@ -3,7 +3,7 @@ title: Changer le mot de passe d'un fichier PDF
 linktitle: Changer le mot de passe
 type: docs
 weight: 50
-url: fr/javascript-cpp/change-password-pdf/
+url: /fr/javascript-cpp/change-password-pdf/
 description: Changer le mot de passe d'un fichier PDF avec Aspose.PDF pour JavaScript via C++.
 lastmod: "2023-09-13"
 sitemap:

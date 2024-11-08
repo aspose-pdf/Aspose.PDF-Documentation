@@ -2,7 +2,7 @@
 title: إضافة جدول محتويات إلى ملف PDF موجود في بايثون
 type: docs
 weight: 20
-url: ar/java/add-toc-to-existing-pdf-in-python/
+url: /ar/java/add-toc-to-existing-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

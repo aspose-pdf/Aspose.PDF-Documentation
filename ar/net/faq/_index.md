@@ -3,7 +3,7 @@ title: FAQ
 linktitle: FAQ
 type: docs
 weight: 140
-url: ar/net/faq/
+url: /ar/net/faq/
 description: يمكنك هنا العثور على إجابات للأسئلة الشائعة لمكتبة Aspose.PDF لـ .NET.
 lastmod: "2021-06-05"
 sitemap:

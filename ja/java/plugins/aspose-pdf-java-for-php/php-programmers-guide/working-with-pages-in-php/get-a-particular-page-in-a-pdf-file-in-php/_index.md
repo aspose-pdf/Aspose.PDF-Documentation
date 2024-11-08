@@ -2,7 +2,7 @@
 title: PHPでPDFファイルの特定のページを取得する
 type: docs
 weight: 30
-url: ja/java/get-a-particular-page-in-a-pdf-file-in-php/
+url: /ja/java/get-a-particular-page-in-a-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

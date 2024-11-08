@@ -3,7 +3,7 @@ title: Support d'Aspose.PDF pour .NET
 linktitle: Support Technique
 type: docs
 weight: 100
-url: fr/net/technical-support/
+url: /fr/net/technical-support/
 description: Cette page offre des recommandations pour une résolution rapide et de qualité de vos tâches en utilisant Aspose.PDF pour .NET.
 lastmod: "2021-06-05"
 sitemap:

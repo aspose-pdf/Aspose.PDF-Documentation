@@ -2,7 +2,7 @@
 title: PDFファイルから署名を削除する
 type: docs
 weight: 20
-url: ja/java/remove-signature-from-pdf/
+url: /ja/java/remove-signature-from-pdf/
 description: このセクションでは、PdfFileSignatureクラスを使用してPDFファイルの署名を操作する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

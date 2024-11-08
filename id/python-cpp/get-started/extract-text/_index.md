@@ -3,7 +3,7 @@ title: Ekstrak Teks dari PDF menggunakan Python
 linktitle: Ekstrak Teks dari PDF
 type: docs
 weight: 10
-url: id/python-cpp/extract-text/
+url: /id/python-cpp/extract-text/
 description: Bagian ini menjelaskan cara mengekstrak teks dari dokumen PDF menggunakan pustaka Python.
 lastmod: "2024-04-14"
 sitemap:

@@ -3,7 +3,7 @@ title: استخراج وحفظ مرفق
 linktitle: استخراج وحفظ مرفق
 type: docs
 weight: 20
-url: ar/java/extract-and-save-an-attachment/
+url: /ar/java/extract-and-save-an-attachment/
 description: Aspose.PDF for Java يتيح لك الحصول على جميع المرفقات من مستند PDF. أيضًا، يمكنك الحصول على مرفق فردي من المستند الخاص بك.
 lastmod: "2021-06-05"
 sitemap:
@@ -55,7 +55,7 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## الحصول على معلومات المرفق
 
-كما ذكر في [الحصول على المرفقات من مستند PDF](/pdf/java/get-attachments-from-a-pdf-document/)، يتم الاحتفاظ بمعلومات المرفق في كائن [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification)، ويتم جمعها مع مرفقات أخرى في مجموعة EmbeddedFiles الخاصة بكائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+كما ذكر في [الحصول على المرفقات من مستند PDF](/pdf/ar/java/get-attachments-from-a-pdf-document/)، يتم الاحتفاظ بمعلومات المرفق في كائن [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification)، ويتم جمعها مع مرفقات أخرى في مجموعة EmbeddedFiles الخاصة بكائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
 
 يوفر كائن [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) طرقًا للحصول على معلومات حول المرفق، على سبيل المثال:
 

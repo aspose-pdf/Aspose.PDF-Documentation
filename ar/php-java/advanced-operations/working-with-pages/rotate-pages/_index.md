@@ -3,7 +3,7 @@ title: تدوير صفحات PDF برمجيًا
 linktitle: تدوير صفحات PDF
 type: docs
 weight: 60
-url: ar/php-java/rotate-pages/
+url: /ar/php-java/rotate-pages/
 description: تغيير اتجاه الصفحة وتعديل محتوى الصفحة ليتناسب مع الاتجاه الجديد باستخدام Java.
 lastmod: "2024-06-05"
 sitemap:

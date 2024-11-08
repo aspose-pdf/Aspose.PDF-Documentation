@@ -2,7 +2,7 @@
 title: Conversor HTML
 type: docs
 weight: 70
-url: pt/net/plugins/html/
+url: /pt/net/plugins/html/
 description: Como converter arquivos PDF para e de arquivos HTML usando o plugin Aspose.PDF PdfHtml
 lastmod: "2024-01-24"
 draft: false

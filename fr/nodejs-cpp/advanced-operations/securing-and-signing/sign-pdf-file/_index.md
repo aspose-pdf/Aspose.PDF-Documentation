@@ -3,7 +3,7 @@ title: Ajouter une signature numérique dans un PDF en Node.js
 linktitle: Signer numériquement un PDF
 type: docs
 weight: 70
-url: fr/nodejs-cpp/sign-pdf/
+url: /fr/nodejs-cpp/sign-pdf/
 description: Signer numériquement des documents PDF dans l'environnement Node.js.
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: PDFドキュメントの印刷
 linktitle: ドキュメントの印刷
 type: docs
 weight: 160
-url: ja/net/printing-document/
+url: /ja/net/printing-document/
 description: C#でPDFを印刷する技術と、C# PDFプリンター設定と.NETプロジェクトのヒントに関するウォークスルー
 lastmod: "2022-02-17"
 sitemap:
@@ -79,11 +79,11 @@ aliases:
 </script>
 ## C#でPDFファイルを印刷する方法
 
-- [.NET FrameworkでのPDF印刷](/pdf/net/printing-pdf-in-net-framework/)
-- [XPSプリンターへのPDF印刷（Facades）](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [PDFからPostScriptへの変換、印刷ジョブステータスの確認](/pdf/net/pdf-to-postscript-conversion/)
-- [.NET CoreでのPDF印刷](/pdf/net/print-dotnetcore/)
-- [WPFアプリケーションでのPDFドキュメントの印刷](/pdf/net/print-pdf-document-in-wpf-application/)
+- [.NET FrameworkでのPDF印刷](/pdf/ja/net/printing-pdf-in-net-framework/)
+- [XPSプリンターへのPDF印刷（Facades）](/pdf/ja/net/printing-pdf-to-an-xps-printer-facades/)
+- [PDFからPostScriptへの変換、印刷ジョブステータスの確認](/pdf/ja/net/pdf-to-postscript-conversion/)
+- [.NET CoreでのPDF印刷](/pdf/ja/net/print-dotnetcore/)
+- [WPFアプリケーションでのPDFドキュメントの印刷](/pdf/ja/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

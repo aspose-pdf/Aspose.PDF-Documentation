@@ -2,7 +2,7 @@
 title: Créer des Signets pour Toutes les Pages (facades)
 type: docs
 weight: 10
-url: fr/java/create-bookmark/
+url: /fr/java/create-bookmark/
 description: Cette section explique comment créer des signets avec Aspose.PDF Facades en utilisant la classe PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

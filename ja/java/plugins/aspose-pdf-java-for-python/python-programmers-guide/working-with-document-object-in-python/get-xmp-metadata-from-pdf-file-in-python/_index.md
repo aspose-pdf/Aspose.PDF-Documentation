@@ -2,7 +2,7 @@
 title: PDFファイルからXMPメタデータを取得する方法（Python）
 type: docs
 weight: 50
-url: ja/java/get-xmp-metadata-from-pdf-file-in-python/
+url: /ja/java/get-xmp-metadata-from-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Обзор продукта
 type: docs
 weight: 10
-url: ru/reportingservices/product-overview/
+url: /ru/reportingservices/product-overview/
 lastmod: "2021-06-05"
 ---
 

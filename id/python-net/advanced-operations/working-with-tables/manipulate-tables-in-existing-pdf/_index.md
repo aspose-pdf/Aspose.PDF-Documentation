@@ -3,7 +3,7 @@ title: Memanipulasi Tabel dalam PDF yang Ada
 linktitle: Memanipulasi Tabel
 type: docs
 weight: 40
-url: id/python-net/manipulate-tables-in-existing-pdf/
+url: /id/python-net/manipulate-tables-in-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

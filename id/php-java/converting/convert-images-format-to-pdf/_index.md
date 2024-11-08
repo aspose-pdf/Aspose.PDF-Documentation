@@ -3,7 +3,7 @@ title: Mengonversi berbagai format Gambar ke PDF
 linktitle: Mengonversi Gambar ke PDF
 type: docs
 weight: 60
-url: id/php-java/convert-images-format-to-pdf/
+url: /id/php-java/convert-images-format-to-pdf/
 lastmod: "2024-05-20"
 description: Topik ini menunjukkan kepada Anda bagaimana pustaka Aspose.PDF untuk PHP memungkinkan untuk mengonversi berbagai format gambar ke PDF.
 sitemap:

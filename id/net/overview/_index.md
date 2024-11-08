@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: id/net/overview/
+url: /id/net/overview/
 lastmod: "2021-06-05"
 description: Ikhtisar fitur kunci dan format yang didukung oleh Aspose.PDF untuk .NET, panduan instalasi dan lisensi dari perpustakaan .NET.
 sitemap:
@@ -37,7 +37,7 @@ Mengompres dokumen PDF membantu mengurangi ukuran berkasnya, membuatnya lebih mu
 - menyimpan gambar dalam XImageCollection (gambar yang dapat digunakan kembali)
 - mengonversi PDF dari ruang warna RGB ke skala abu-abu
 
-Mari kita periksa halaman Dokumen untuk detail lebih lanjut: [Optimalkan PDF](/pdf/net/optimize-pdf/)
+Mari kita periksa halaman Dokumen untuk detail lebih lanjut: [Optimalkan PDF](/pdf/id/net/optimize-pdf/)
 
 ### Pembuatan dan manipulasi tabel
 
@@ -45,7 +45,7 @@ Tabel menyediakan format yang terstruktur dan terorganisir untuk menyajikan info
 
 Dengan **Aspose.PDF for .NET** membuat dan memanipulasi tabel dalam dokumen PDF menawarkan banyak keuntungan, termasuk peningkatan organisasi data, peningkatan kemudahan membaca, kemampuan analisis yang lebih baik, dan fleksibilitas yang lebih besar dalam menyajikan informasi secara efektif.
 
-Mari kita periksa bagian berikutnya untuk detail lebih lanjut: [Bekerja dengan Tabel](/pdf/net/working-with-tables/)
+Mari kita periksa bagian berikutnya untuk detail lebih lanjut: [Bekerja dengan Tabel](/pdf/id/net/working-with-tables/)
 
 ### Dukungan untuk objek Grafik
 
@@ -53,7 +53,7 @@ Mari kita periksa bagian berikutnya untuk detail lebih lanjut: [Bekerja dengan T
 Menambahkan Grafik ke dokumen PDF meningkatkan visualisasi data, kejelasan dan pemahaman yang lebih baik, dukungan pengambilan keputusan yang lebih baik, dan peningkatan keterlibatan dengan pembaca.
 Menambahkan Grafik ke dokumen PDF meningkatkan visualisasi data, kejelasan dan pemahaman yang ditingkatkan, dukungan pengambilan keputusan yang lebih baik, dan peningkatan keterlibatan dengan pembaca.
 
-Mari periksa halaman Dokumen untuk detail lebih lanjut: [Bekerja dengan Grafik](/pdf/net/graphs/)
+Mari periksa halaman Dokumen untuk detail lebih lanjut: [Bekerja dengan Grafik](/pdf/id/net/graphs/)
 
 ### Fungsionalitas Hiperlink yang Luas
 
@@ -61,7 +61,7 @@ Hiperlink memungkinkan pengguna untuk bernavigasi dengan cepat dan efisien dalam
 
 **Aspose.PDF for .NET** menawarkan banyak kelebihan, termasuk navigasi yang ditingkatkan, referensi silang, akses ke sumber daya eksternal, interaktivitas, dan komunikasi yang ditingkatkan. Mereka berkontribusi pada pengalaman membaca yang lebih menarik, informatif, dan mudah diakses bagi pengguna.
 
-Mari periksa bagian berikutnya untuk detail lebih lanjut: [Aksi](/pdf/net/actions/)
+Mari periksa bagian berikutnya untuk detail lebih lanjut: [Aksi](/pdf/id/net/actions/)
 
 ### Kontrol Keamanan yang Diperluas
 
@@ -70,7 +70,7 @@ Fitur keamanan seperti tanda tangan digital membantu memastikan integritas dokum
 
 Dengan **Aspose.PDF for .NET** dimungkinkan untuk menandatangani PDF dari Smart Card, mengenkripsi dan mendekripsi file, mengekstrak gambar, dan informasi tanda tangan, dll.
 
-Mari periksa halaman Dokumen untuk detail lebih lanjut: [Securing and Signing](/pdf/net/securing-and-signing/)
+Mari periksa halaman Dokumen untuk detail lebih lanjut: [Securing and Signing](/pdf/id/net/securing-and-signing/)
 
 ### Menambah atau menghapus Bookmark
 
@@ -78,7 +78,7 @@ Bookmark memberikan pengguna cara yang nyaman untuk menavigasi dokumen PDF yang 
 
 Menggunakan perpustakaan **Aspose.PDF for .NET** Anda dapat menambahkan bookmark ke file PDF, menambahkan bookmark anak, atau menghapus semua atau bookmark tertentu dari dokumen.
 
-Mari periksa bagian berikutnya untuk detail lebih lanjut: [Bookmarks](/pdf/net/add-and-delete-bookmark/)
+Mari periksa bagian berikutnya untuk detail lebih lanjut: [Bookmarks](/pdf/id/net/add-and-delete-bookmark/)
 
 ### Membuat daftar isi
 
@@ -86,13 +86,13 @@ Daftar isi memberikan pengguna cara yang cepat dan efisien untuk menavigasi mela
 TOC menyediakan cara yang cepat dan efisien bagi pengguna untuk menavigasi melalui isi dokumen PDF.
 Pustaka **Aspose.PDF for .NET** menjelaskan cara menambahkan TOC ke file PDF yang sudah ada, gunakan kelas Heading di ruang nama Aspose.Pdf.
 
-Mari periksa halaman Dokumen untuk detail lebih lanjut: [Working with TOC](/pdf/net/manipulate-pdf-document/)
+Mari periksa halaman Dokumen untuk detail lebih lanjut: [Working with TOC](/pdf/id/net/manipulate-pdf-document/)
 
 ###  Menambahkan, memperbarui, menghapus lampiran dan anotasi
 
 Menambahkan lampiran dan anotasi membuat dokumen PDF menjadi lebih interaktif dan menarik bagi pembaca. Pengguna dapat berinteraksi dengan konten tambahan, seperti file multimedia, tautan, atau komentar, yang tertanam dalam dokumen, meningkatkan pengalaman membaca mereka.
 
-Pustaka Aspose.PDF for .NET memiliki berbagai manipulasi dengan [Annotations](/pdf/net/annotations/). Anda dapat menambahkan tipe seperti:
+Pustaka Aspose.PDF for .NET memiliki berbagai manipulasi dengan [Annotations](/pdf/id/net/annotations/). Anda dapat menambahkan tipe seperti:
 
 - Anotasi Teks
 - Anotasi Sorotan
@@ -102,8 +102,8 @@ Pustaka Aspose.PDF for .NET memiliki berbagai manipulasi dengan [Annotations](/p
 - Anotasi Tambahan
 
 Selain itu, Pustaka kami memungkinkan Anda untuk menambahkan, mengekstrak, dan menghapus Lampiran dari PDF.
-Untuk detail lebih lanjut, periksa halaman [Documentation berikut](/pdf/net/attachments/).
-Untuk detail lebih lanjut, cek halaman [Dokumentasi berikut](/pdf/net/attachments/).
+Untuk detail lebih lanjut, periksa halaman [Documentation berikut](/pdf/id/net/attachments/).
+Untuk detail lebih lanjut, cek halaman [Dokumentasi berikut](/pdf/id/net/attachments/).
 
 ### Metadata File PDF
 
@@ -111,7 +111,7 @@ Metadata menyediakan informasi esensial tentang dokumen PDF, seperti judul, penu
 
 Metadata file PDF memiliki beberapa tujuan, termasuk identifikasi dokumen, atribusi, pelacakan versi, deskripsi, kemudahan pencarian, aksesibilitas, keamanan, interoperabilitas, pelestarian, dan kepatuhan.
 
-Kelola [Metadata](/pdf/net/pdf-file-metadata/) dalam dokumen PDF dengan mudah dan cepat menggunakan perpustakaan **Aspose.PDF for .NET**.
+Kelola [Metadata](/pdf/id/net/pdf-file-metadata/) dalam dokumen PDF dengan mudah dan cepat menggunakan perpustakaan **Aspose.PDF for .NET**.
 
 ### Menambah, mengganti, atau menghapus teks dan gambar
 
@@ -120,11 +120,11 @@ Menambah, mengganti, atau menghapus teks dan gambar memungkinkan pengguna untuk 
 Dengan Aspose.PDF Anda dapat mengedit teks di dalam PDF, menggantinya atau memutarnya, mencari atau mendapatkan teks di PDF.
 Dengan Aspose.PDF Anda dapat mengedit teks di dalam PDF, mengganti atau memutar teks, mencari atau mendapatkan teks dalam PDF.
 
-Anda juga dapat menambahkan, mengubah posisi, menghapus gambar, dan melakukan lebih banyak [aksi kompleks](/pdf/net/working-with-images/) dengan gambar dalam PDF Anda.
+Anda juga dapat menambahkan, mengubah posisi, menghapus gambar, dan melakukan lebih banyak [aksi kompleks](/pdf/id/net/working-with-images/) dengan gambar dalam PDF Anda.
 
 ### Memisahkan, menggabungkan, mengekstrak atau menyisipkan halaman
 
-Bagian [Bekerja dengan Halaman PDF](/pdf/net/working-with-pages/) di Dokumen menjelaskan bagaimana Anda dapat menambahkan, memindahkan, menghapus, memutar, atau memisahkan halaman dalam PDF.
+Bagian [Bekerja dengan Halaman PDF](/pdf/id/net/working-with-pages/) di Dokumen menjelaskan bagaimana Anda dapat menambahkan, memindahkan, menghapus, memutar, atau memisahkan halaman dalam PDF.
 
 Memisahkan, menggabungkan, mengekstrak, atau menyisipkan halaman membantu pengguna mengelola dokumen PDF secara lebih efektif. Pengguna dapat mengorganisir, menyusun ulang, atau menggabungkan halaman untuk menciptakan dokumen baru, meningkatkan organisasi dan aksesibilitas dokumen.
 
@@ -143,7 +143,7 @@ Aspose.PDF memungkinkan untuk mengonversi PDF ke berbagai format gambar mengguna
 - GIF
 - SVG
 
-Aspose.PDF Library menggunakan kelas DocumentDevice, atau ImageDevice untuk konversi PDF ke Gambar. [Konversi PDF ke Berbagai Format Gambar](/pdf/net/convert-pdf-to-images-format/).
+Aspose.PDF Library menggunakan kelas DocumentDevice, atau ImageDevice untuk konversi PDF ke Gambar. [Konversi PDF ke Berbagai Format Gambar](/pdf/id/net/convert-pdf-to-images-format/).
 
 ### Mencetak Dokumen PDF
 
@@ -157,25 +157,25 @@ Aspose.PDF untuk .NET menyajikan berbagai cara untuk mencetak file PDF:
 - Mencetak PDF dalam aplikasi WPF
 - berbagai operasi tambahan, seperti konversi PDF ke PostScript, Memeriksa Status Pekerjaan Cetak, dll.
 
-Mari kita periksa bagian selanjutnya untuk detail lebih lanjut: [Mencetak Dokumen PDF](/pdf/net/printing-document/).
+Mari kita periksa bagian selanjutnya untuk detail lebih lanjut: [Mencetak Dokumen PDF](/pdf/id/net/printing-document/).
 
 Selain itu, Aspose.PDF untuk .NET dapat digunakan untuk dengan mudah mengonversi teks, gambar, SVG, HTML ke PDF dan mengonversi PDF ke berbagai format dokumen dengan kinerja yang sangat baik dan kualitas yang baik.
 Selain itu, Aspose.PDF untuk .NET dapat digunakan untuk dengan mudah mengonversi teks, gambar, SVG, HTML ke PDF dan mengonversi PDF ke berbagai format dokumen dengan kinerja yang sangat baik dan kualitas yang baik.
 
 ## Harga dan Kebijakan
 
-Silakan kunjungi halaman [Licensing](/pdf/net/licensing/) untuk informasi tentang lisensi dan tinjau halaman [Pricing Information](https://purchase.aspose.com/pricing/pdf/family/) untuk detail tentang harga.
+Silakan kunjungi halaman [Licensing](/pdf/id/net/licensing/) untuk informasi tentang lisensi dan tinjau halaman [Pricing Information](https://purchase.aspose.com/pricing/pdf/family/) untuk detail tentang harga.
 
 ## Dukungan Teknis
 
-Untuk informasi lebih lanjut tentang dukungan teknis Aspose.PDF, lihat halaman [Support](/pdf/net/technical-support/).
+Untuk informasi lebih lanjut tentang dukungan teknis Aspose.PDF, lihat halaman [Support](/pdf/id/net/technical-support/).
 
 Pelajari lebih lanjut tentang:
 
-- [Supported File Formats](/pdf/net/supported-file-formats/)
-- [Key Features of Aspose.PDF](/pdf/net/key-features/)
-- [System Requirements](/pdf/net/system-requirements/)
-- [Installation](/pdf/net/installation/)
-- [Licensing](/pdf/net/licensing/)
-- [Aspose.PDF.Drawing for .NET](/pdf/net/drawing/)
-- [Technical Support](/pdf/net/technical-support/)
+- [Supported File Formats](/pdf/id/net/supported-file-formats/)
+- [Key Features of Aspose.PDF](/pdf/id/net/key-features/)
+- [System Requirements](/pdf/id/net/system-requirements/)
+- [Installation](/pdf/id/net/installation/)
+- [Licensing](/pdf/id/net/licensing/)
+- [Aspose.PDF.Drawing for .NET](/pdf/id/net/drawing/)
+- [Technical Support](/pdf/id/net/technical-support/)

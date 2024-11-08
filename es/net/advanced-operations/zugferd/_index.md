@@ -3,7 +3,7 @@ title: Trabajando con ZUGFeRD
 linktitle: Trabajando con ZUGFeRD
 type: docs
 weight: 90
-url: es/net/working-with-zugferd/
+url: /es/net/working-with-zugferd/
 description: Aprende a crear facturas PDF compatibles con ZUGFeRD en C# en Aspose.PDF para .NET
 lastmod: "2023-09-27"
 sitemap:
@@ -27,9 +27,9 @@ El formato combina un documento PDF que pueden leer los humanos y un archivo de 
 También cumple con los requisitos legales para la archivación a largo plazo y la conformidad fiscal. ZUGFeRD tiene diferentes versiones y perfiles que se adaptan a distintas necesidades y escenarios. La versión más reciente es ZUGFeRD 2.0, compatible con la norma europea EN 16931 para la facturación electrónica.
 ZUGFeRD ofrece a los usuarios muchos beneficios y ahorros de costos, como procesamiento más rápido, reducción de errores, mejora del flujo de caja y menor impacto ambiental.
 
-* [Creación de PDF/3-A compatible con PDF y adjuntando factura ZUGFeRD en C#](/pdf/net/attach-zugferd/)
+* [Creación de PDF/3-A compatible con PDF y adjuntando factura ZUGFeRD en C#](/pdf/es/net/attach-zugferd/)
 
 Ver también:
 
-* [Creación de PDF/3-A compatible con PDF y adjuntando factura ZUGFeRD en Java](/pdf/java/attach-zugferd/)
-* [Creación de PDF/3-A compatible con PDF y adjuntando factura ZUGFeRD en Python](/pdf/python-net/attach-zugferd/)
+* [Creación de PDF/3-A compatible con PDF y adjuntando factura ZUGFeRD en Java](/pdf/es/java/attach-zugferd/)
+* [Creación de PDF/3-A compatible con PDF y adjuntando factura ZUGFeRD en Python](/pdf/es/python-net/attach-zugferd/)

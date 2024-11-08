@@ -3,7 +3,7 @@ title: Extraer Texto de PDF en Node.js
 linktitle: Extraer Texto de PDF
 type: docs
 weight: 10
-url: es/nodejs-cpp/extract-text/
+url: /es/nodejs-cpp/extract-text/
 description: Esta sección describe cómo extraer texto de un documento PDF usando Aspose.PDF para Node.js a través del kit de herramientas C++.
 lastmod: "2023-11-16"
 sitemap:

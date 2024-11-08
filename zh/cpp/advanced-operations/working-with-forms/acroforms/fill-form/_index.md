@@ -3,7 +3,7 @@ title: 填写AcroForm
 linktitle: 填写AcroForm
 type: docs
 weight: 20
-url: zh/cpp/fill-form/
+url: /zh/cpp/fill-form/
 description: 本节说明如何使用Aspose.PDF for C++在PDF文档中填写表单字段。
 lastmod: "2021-12-01"
 sitemap:

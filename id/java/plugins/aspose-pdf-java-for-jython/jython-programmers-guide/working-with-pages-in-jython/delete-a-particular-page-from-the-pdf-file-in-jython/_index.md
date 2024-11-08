@@ -2,7 +2,7 @@
 title: Hapus Halaman Tertentu dari File PDF di jython
 type: docs
 weight: 20
-url: id/java/delete-a-particular-page-from-the-pdf-file-in-jython/
+url: /id/java/delete-a-particular-page-from-the-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

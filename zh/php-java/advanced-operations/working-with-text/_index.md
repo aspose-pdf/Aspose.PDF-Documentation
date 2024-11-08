@@ -3,7 +3,7 @@ title: 在 PDF 中处理文本
 linktitle: 处理文本
 type: docs
 weight: 30
-url: zh/php-java/working-with-text/
+url: /zh/php-java/working-with-text/
 description: 本节解释了各种文本处理技术。了解如何使用 Aspose.PDF 和 PHP 添加、替换、旋转、搜索文本。
 lastmod: "2024-06-05"
 sitemap:
@@ -15,4 +15,4 @@ sitemap:
 
 您可以执行以下操作：
 
-- [向 PDF 文件添加文本](/pdf/php-java/add-text-to-pdf-file/) - 向 PDF 添加文本，使用流和文件中的字体，添加 HTML 字符串，添加超链接等。
+- [向 PDF 文件添加文本](/pdf/zh/php-java/add-text-to-pdf-file/) - 向 PDF 添加文本，使用流和文件中的字体，添加 HTML 字符串，添加超链接等。

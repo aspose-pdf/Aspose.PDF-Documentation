@@ -3,7 +3,7 @@ title: PDF에서 동작 작업하기
 linktitle: 동작
 type: docs
 weight: 20
-url: ko/cpp/actions/
+url: /ko/cpp/actions/
 description: 이 섹션에서는 C++로 문서 및 양식 필드에 동작을 프로그래밍적으로 추가하는 방법을 설명합니다.
 lastmod: "2022-01-25"
 sitemap:

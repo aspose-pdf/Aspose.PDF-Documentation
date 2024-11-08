@@ -3,7 +3,7 @@ title: Memperbaiki PDF dengan JavaScript melalui C++
 linktitle: Memperbaiki PDF
 type: docs
 weight: 10
-url: id/javascript-cpp/repair-pdf/
+url: /id/javascript-cpp/repair-pdf/
 description: Topik ini menjelaskan cara Memperbaiki PDF melalui JavaScript melalui C++
 lastmod: "2023-02-17"
 sitemap:

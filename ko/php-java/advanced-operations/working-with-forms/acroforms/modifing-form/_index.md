@@ -3,7 +3,7 @@ title: AcroForms 수정
 linktitle: AcroForms 수정
 type: docs
 weight: 40
-url: ko/java/modifing-form/
+url: /ko/java/modifing-form/
 description: 이 섹션에서는 Aspose.PDF for PHP via Java를 사용하여 PDF 문서의 양식을 수정하는 방법을 설명합니다.
 lastmod: "2024-06-05"
 sitemap:

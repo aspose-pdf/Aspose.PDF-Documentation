@@ -3,7 +3,7 @@ title: PDFをMicrosoft PowerPointに変換する方法 C++
 linktitle: PDFをPowerPointに変換する
 type: docs
 weight: 30
-url: ja/cpp/convert-pdf-to-powerpoint/
+url: /ja/cpp/convert-pdf-to-powerpoint/
 description: Aspose.PDFを使用すると、C++でPDFをPowerPoint形式に変換できます。スライドを画像としてPDFをPPTXに変換することも可能です。
 lastmod: "2021-11-19"
 sitemap:

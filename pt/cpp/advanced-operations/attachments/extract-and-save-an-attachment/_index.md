@@ -3,7 +3,7 @@ title: Extrair e Salvar um Anexo
 linktitle: Extrair e Salvar um Anexo
 type: docs
 weight: 20
-url: pt/cpp/extract-and-save-an-attachment/
+url: /pt/cpp/extract-and-save-an-attachment/
 description: Aspose.PDF para C++ permite que você obtenha todos os anexos de um documento PDF. Além disso, você pode obter um anexo individual do seu documento.
 lastmod: "2022-02-07"
 sitemap:

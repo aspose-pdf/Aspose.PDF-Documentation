@@ -3,7 +3,7 @@ title: 在 Node.js 中为 PDF 添加背景
 linktitle: 添加背景
 type: docs
 weight: 10
-url: zh/nodejs-cpp/add-background/
+url: /zh/nodejs-cpp/add-background/
 description: 在 Node.js 中为您的 PDF 文件添加背景图像
 lastmod: "2023-11-16"
 sitemap:

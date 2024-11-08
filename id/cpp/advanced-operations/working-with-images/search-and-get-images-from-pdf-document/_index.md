@@ -3,7 +3,7 @@ title: Cari dan Dapatkan Gambar dari Dokumen PDF menggunakan C++
 linktitle: Cari dan Dapatkan Gambar
 type: docs
 weight: 60
-url: id/cpp/search-and-get-images-from-pdf-document/
+url: /id/cpp/search-and-get-images-from-pdf-document/
 description: Bagian ini menjelaskan cara mencari dan mendapatkan gambar dari dokumen PDF dengan pustaka Aspose.PDF.
 lastmod: "2021-12-18"
 ---

@@ -3,7 +3,7 @@ title: استخراج الصور من PDF
 linktitle: استخراج الصور
 type: docs
 weight: 20
-url: ar/php-java/extract-images-from-the-pdf-file/
+url: /ar/php-java/extract-images-from-the-pdf-file/
 description: كيفية استخراج جزء من الصورة من PDF باستخدام Aspose.PDF لـ PHP
 lastmod: "2024-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Обновление, удаление и получение закладок
 type: docs
 weight: 30
-url: ru/net/update-delete-and-get-bookmarks/
+url: /ru/net/update-delete-and-get-bookmarks/
 description: В этом разделе объясняется, как обновлять, удалять и получать закладки с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Adicionar carimbos de texto em PDF programaticamente
 linktitle: Carimbos de texto no arquivo PDF
 type: docs
 weight: 20
-url: pt/java/text-stamps-in-the-pdf-file/
+url: /pt/java/text-stamps-in-the-pdf-file/
 description: Adicionar um carimbo de texto a um arquivo PDF usando a classe TextStamp com Java.
 lastmod: "2021-06-05"
 sitemap:

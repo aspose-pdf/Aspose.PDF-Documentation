@@ -3,7 +3,7 @@ title: Definir Privilégios, Criptografar e Descriptografar Arquivo PDF
 linktitle: Criptografar e Descriptografar Arquivo PDF
 type: docs
 weight: 20
-url: pt/java/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /pt/java/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: criptografar pdf,proteger pdf com senha,descriptografar pdf,java
 description: Criptografar Arquivo PDF com Java usando Diferentes Tipos de Criptografia e Algoritmos. Além disso, descriptografar Arquivos PDF usando Senha do Proprietário.
 lastmod: "2021-12-17"

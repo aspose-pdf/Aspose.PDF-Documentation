@@ -3,7 +3,7 @@ title: Exigences du système
 linktitle: Exigences du système
 type: docs
 weight: 30
-url: fr/androidjava/system-requirements/
+url: /fr/androidjava/system-requirements/
 description: Cette section répertorie les systèmes d'exploitation pris en charge qu'un développeur doit avoir pour travailler avec succès avec Aspose.PDF pour Android via Java.
 lastmod: "2021-06-05"
 sitemap:

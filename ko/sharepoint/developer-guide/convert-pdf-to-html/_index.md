@@ -8,7 +8,7 @@ type: docs
 
 weight: 80
 
-url: ko/sharepoint/convert-pdf-to-html/
+url: /ko/sharepoint/convert-pdf-to-html/
 
 lastmod: "2020-12-16"
 

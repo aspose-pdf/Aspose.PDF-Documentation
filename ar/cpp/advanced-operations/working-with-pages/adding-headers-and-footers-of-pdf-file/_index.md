@@ -3,7 +3,7 @@ title: إضافة رأس وتذييل إلى PDF
 linktitle: إضافة رأس وتذييل إلى PDF
 type: docs
 weight: 70
-url: ar/cpp/add-headers-and-footers-of-pdf-file/
+url: /ar/cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for C++ يسمح لك بإضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام فئة TextStamp.
 lastmod: "2021-12-08"
 sitemap:

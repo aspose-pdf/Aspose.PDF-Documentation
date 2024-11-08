@@ -3,7 +3,7 @@ title: فتح مستند PDF باستخدام C++
 linktitle: فتح
 type: docs
 weight: 20
-url: ar/cpp/open-pdf-document/
+url: /ar/cpp/open-pdf-document/
 description: استخدم مكتبة C++ لفتح مستند PDF الخاص بك مع مقتطف الشيفرة التالي بواسطة Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

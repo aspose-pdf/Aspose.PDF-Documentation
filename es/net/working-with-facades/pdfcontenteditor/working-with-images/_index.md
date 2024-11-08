@@ -2,7 +2,7 @@
 title: Trabajar con Imágenes usando PdfContentEditor
 type: docs
 weight: 50
-url: es/net/working-with-images-in-pdf
+url: /es/net/working-with-images-in-pdf
 description: Esta sección explica cómo agregar y eliminar Imágenes con Aspose.PDF Facades usando la Clase PdfContentEditor.
 lastmod: "2021-06-24"
 ---

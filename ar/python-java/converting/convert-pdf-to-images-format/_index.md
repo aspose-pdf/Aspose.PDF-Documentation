@@ -3,7 +3,7 @@ title: تحويل PDF إلى تنسيقات صور مختلفة في بايثو�
 linktitle: تحويل PDF إلى صور
 type: docs
 weight: 70
-url: ar/python-java/convert-pdf-to-images-format/
+url: /ar/python-java/convert-pdf-to-images-format/
 lastmod: "2023-04-06"
 description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF لبايثون لتحويل PDF إلى تنسيقات صور مختلفة مثل TIFF وBMP وEMF وJPEG وPNG وGIF وSVG ببضع سطور من الكود.
 sitemap:

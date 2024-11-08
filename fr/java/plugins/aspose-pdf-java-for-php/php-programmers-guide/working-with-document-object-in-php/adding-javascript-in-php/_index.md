@@ -2,7 +2,7 @@
 title: Ajouter JavaScript dans PHP
 type: docs
 weight: 10
-url: fr/java/adding-javascript-in-php/
+url: /fr/java/adding-javascript-in-php/
 lastmod: "2021-06-05"
 ---
 

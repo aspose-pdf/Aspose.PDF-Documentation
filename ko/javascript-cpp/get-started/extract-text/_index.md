@@ -3,7 +3,7 @@ title: JavaScript를 사용하여 PDF에서 텍스트 추출
 linktitle: PDF에서 텍스트 추출
 type: docs
 weight: 10
-url: ko/javascript-cpp/extract-text/
+url: /ko/javascript-cpp/extract-text/
 description: 이 섹션은 JavaScript 도구를 사용하여 PDF 문서에서 텍스트를 추출하는 방법을 설명합니다.
 lastmod: "2022-12-14"
 sitemap:

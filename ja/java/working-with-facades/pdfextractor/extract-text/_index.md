@@ -2,7 +2,7 @@
 title: PDFから画像を抽出する (ファサード)
 type: docs
 weight: 30
-url: ja/java/extract-images/
+url: /ja/java/extract-images/
 description: このセクションでは、PdfExtractorクラスを使用してAspose.PDF Facadesで画像を抽出する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

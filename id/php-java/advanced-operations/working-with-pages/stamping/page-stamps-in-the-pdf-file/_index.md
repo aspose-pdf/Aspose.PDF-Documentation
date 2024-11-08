@@ -3,7 +3,7 @@ title: Tambahkan Cap Halaman PDF ke PDF
 linktitle: Cap halaman dalam File PDF
 type: docs
 weight: 30
-url: id/php-java/page-stamps-in-the-pdf-file/
+url: /id/php-java/page-stamps-in-the-pdf-file/
 description: Tambahkan cap halaman ke file PDF menggunakan kelas PdfPageStamp dengan PHP.
 lastmod: "2024-09-10"
 sitemap:

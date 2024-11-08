@@ -3,7 +3,7 @@ title: مسح كود JavaScript من ملف PDF
 linktitle: حذف JavaScripts
 type: docs
 weight: 50
-url: ar/javascript-cpp/delete-javascripts/
+url: /ar/javascript-cpp/delete-javascripts/
 description: مسح وحدات ماكرو JavaScript من ملف PDF مباشرة في الويب باستخدام Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:

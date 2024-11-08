@@ -2,7 +2,7 @@
 title: Mengonversi FDF ke format XML
 type: docs
 weight: 10
-url: id/net/converting-an-fdf-to-xml-format/
+url: /id/net/converting-an-fdf-to-xml-format/
 description: Bagian ini menjelaskan bagaimana Anda dapat mengonversi FDF ke format XML dengan Kelas FormDataConverter.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/net/) mendukung AcroForms dengan sangat baik. Ini juga mendukung impor dan ekspor data formulir ke berbagai format file seperti FDF, XFDF, dan XML. Namun, terkadang pengembang mungkin perlu mengonversi satu format ke format lain. Artikel ini melihat fitur yang mengonversi FDF menjadi XML.
+Namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/id/net/) mendukung AcroForms dengan sangat baik. Ini juga mendukung impor dan ekspor data formulir ke berbagai format file seperti FDF, XFDF, dan XML. Namun, terkadang pengembang mungkin perlu mengonversi satu format ke format lain. Artikel ini melihat fitur yang mengonversi FDF menjadi XML.
 
 {{% /alert %}}
 

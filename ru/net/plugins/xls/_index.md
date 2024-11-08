@@ -2,7 +2,7 @@
 title: XLS Converter
 type: docs
 weight: 20
-url: ru/net/plugins/xls/
+url: /ru/net/plugins/xls/
 description: Как конвертировать PDF в таблицы Excel с помощью плагинов Aspose.Pdf
 lastmod: "2024-01-24"
 ---

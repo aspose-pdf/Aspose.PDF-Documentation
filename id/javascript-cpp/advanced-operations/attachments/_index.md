@@ -3,7 +3,7 @@ title: Bekerja dengan Lampiran dalam PDF dengan JavaScript
 linktitle: Bekerja dengan Lampiran
 type: docs
 weight: 120
-url: id/javascript-cpp/attachments/
+url: /id/javascript-cpp/attachments/
 description: Gunakan toolkit PDF JavaScript untuk mengakses, menambah, dan menghapus lampiran dalam file PDF. Panduan lengkap dengan contoh kode JavaScript.
 lastmod: "2023-09-17"
 sitemap:
@@ -17,4 +17,4 @@ Lampiran adalah file tambahan yang dilampirkan ke dokumen induk, dapat berupa be
 
 Anda akan belajar cara menambahkan lampiran ke pdf, mendapatkan informasi dari lampiran, dan menyimpannya ke file, menghapus lampiran dari PDF secara programatis dengan JavaScript.
 
-- [Menghapus lampiran dari PDF yang sudah ada](/pdf/javascript-cpp/removing-attachment-from-an-existing-pdf/)
+- [Menghapus lampiran dari PDF yang sudah ada](/pdf/id/javascript-cpp/removing-attachment-from-an-existing-pdf/)

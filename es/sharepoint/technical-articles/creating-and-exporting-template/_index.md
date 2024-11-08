@@ -2,7 +2,7 @@
 title: Creación y Exportación de Plantillas
 type: docs
 weight: 10
-url: es/sharepoint/creating-and-exporting-template/
+url: /es/sharepoint/creating-and-exporting-template/
 lastmod: "2020-12-16"
 description: Puede crear y exportar plantillas a PDF en SharePoint utilizando la API de PDF para SharePoint.
 ---

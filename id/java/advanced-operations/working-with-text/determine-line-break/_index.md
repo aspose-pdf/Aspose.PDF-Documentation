@@ -3,7 +3,7 @@ title: Tentukan Pemutusan Baris
 linktitle: Tentukan Pemutusan Baris
 type: docs
 weight: 70
-url: id/java/determine-line-break/
+url: /id/java/determine-line-break/
 description: Pelajari lebih lanjut tentang cara menentukan pemutusan baris dari TextFragment multi-baris menggunakan Java
 lastmod: "2021-06-05"
 sitemap:

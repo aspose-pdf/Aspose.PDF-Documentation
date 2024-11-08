@@ -3,7 +3,7 @@ title: PDF スティッキー注釈
 linktitle: スティッキー注釈
 type: docs
 weight: 50
-url: ja/java/sticky-annotations/
+url: /ja/java/sticky-annotations/
 description: このトピックはスティッキー注釈についてです。例として、テキストに透かし注釈を示します。ページ上にグラフィックを表すために使用されます。このタスクを解決するためのコードスニペットを確認してください。
 lastmod: "2021-11-24"
 sitemap:

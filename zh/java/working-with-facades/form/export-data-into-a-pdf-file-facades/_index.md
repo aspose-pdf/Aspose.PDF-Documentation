@@ -2,7 +2,7 @@
 title: 从PDF文件导出数据到XML（外观）
 type: docs
 weight: 20
-url: zh/java/export-data-into-a-pdf-file-facades/
+url: /zh/java/export-data-into-a-pdf-file-facades/
 description: 本节解释如何使用Aspose.PDF Facades的Form类从PDF文件导出数据到XML。
 lastmod: "2021-06-05"
 sitemap:

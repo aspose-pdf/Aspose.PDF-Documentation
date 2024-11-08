@@ -3,7 +3,7 @@ title: 从现有PDF中移除附件
 linktitle: 从现有PDF中移除附件
 type: docs
 weight: 30
-url: zh/java/removing-attachment-from-an-existing-pdf/
+url: /zh/java/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF可以从您的PDF文档中移除附件。使用Java PDF API通过Aspose.PDF库移除PDF文件中的附件。
 lastmod: "2021-06-05"
 sitemap:

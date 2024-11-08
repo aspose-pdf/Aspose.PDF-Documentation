@@ -2,7 +2,7 @@
 title: Ajouter du texte à un PDF existant avec Python
 type: docs
 weight: 20
-url: fr/java/add-text-to-an-existing-pdf-file-in-python/
+url: /fr/java/add-text-to-an-existing-pdf-file-in-python/
 lastmod: "2021-06-05"
 keywords: ajouter texte pdf python, écrire texte pdf python
 description: Exemple de code pour ajouter ou écrire du texte dans un document Pdf en utilisant Python avec la bibliothèque PDF.

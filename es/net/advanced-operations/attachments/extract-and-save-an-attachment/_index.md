@@ -3,7 +3,7 @@ title: Extraer y Guardar un Adjunto
 linktitle: Extraer y Guardar un Adjunto
 type: docs
 weight: 20
-url: es/net/extract-and-save-an-attachment/
+url: /es/net/extract-and-save-an-attachment/
 description: Aspose.PDF para .NET le permite obtener todos los adjuntos de un documento PDF. Además, puede obtener un adjunto individual de su documento.
 lastmod: "2022-02-17"
 sitemap:
@@ -85,7 +85,7 @@ Para obtener todos los adjuntos de un archivo PDF:
 1. Recorre la colección [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) del objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). La colección [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contiene todos los adjuntos. Cada elemento de esta colección representa un objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Cada iteración del bucle foreach a través de la colección [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) devuelve un objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
 Los siguientes fragmentos de código muestran cómo obtener todos los archivos adjuntos de un documento PDF.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET

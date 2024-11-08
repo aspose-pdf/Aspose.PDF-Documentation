@@ -3,7 +3,7 @@ title: Извлечение данных таблицы из PDF
 linktitle: Извлечение данных таблицы
 type: docs
 weight: 40
-url: ru/php-java/extract-data-from-table-in-pdf/
+url: /ru/php-java/extract-data-from-table-in-pdf/
 description: Узнайте, как извлечь табличные данные из PDF с помощью Aspose.PDF для PHP
 lastmod: "2021-05-20"
 sitemap:
@@ -84,7 +84,7 @@ $document->close();
 ## Извлечение данных таблицы из PDF и сохранение их в CSV файл
 
 Следующий пример показывает, как извлечь таблицу и сохранить ее как CSV файл.
-Чтобы узнать, как преобразовать PDF в электронную таблицу Excel, пожалуйста, обратитесь к статье [Преобразование PDF в Excel](/pdf/php-java/convert-pdf-to-excel/).
+Чтобы узнать, как преобразовать PDF в электронную таблицу Excel, пожалуйста, обратитесь к статье [Преобразование PDF в Excel](/pdf/ru/php-java/convert-pdf-to-excel/).
 
 ```php
 

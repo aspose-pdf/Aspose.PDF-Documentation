@@ -3,7 +3,7 @@ title: 텍스트를 PDF로 변환
 linktitle: 텍스트를 PDF로 변환
 type: docs
 weight: 300
-url: ko/androidjava/convert-text-to-pdf/
+url: /ko/androidjava/convert-text-to-pdf/
 lastmod: "2021-06-05"
 description: Aspose.PDF for Android via Java는 일반 텍스트 파일을 PDF로 변환하거나 사전 포맷된 텍스트 파일을 PDF로 변환할 수 있습니다.
 sitemap:

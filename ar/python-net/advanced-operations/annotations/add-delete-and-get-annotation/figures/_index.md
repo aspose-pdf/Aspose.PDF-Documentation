@@ -3,7 +3,7 @@ title: إضافة تعليقات توضيحية على الأشكال باستخ
 linktitle: تعليقات توضيحية على الأشكال
 type: docs
 weight: 30
-url: ar/python-net/figures-annotation/
+url: /ar/python-net/figures-annotation/
 description: يصف هذا المقال كيفية إضافة، الحصول على، وحذف التعليقات التوضيحية للأشكال من مستند PDF الخاص بك باستخدام Aspose.PDF للبايثون عبر .NET
 lastmod: "2023-02-17"
 sitemap:

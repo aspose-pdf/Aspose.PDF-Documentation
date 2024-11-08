@@ -2,7 +2,7 @@
 title: 페이지 속성 가져오기 및 설정
 type: docs
 weight: 20
-url: ko/cpp/get-and-set-page-properties/
+url: /ko/cpp/get-and-set-page-properties/
 description: C++ 라이브러리를 사용하여 PDF 파일에서 페이지 속성을 가져오고 설정할 수 있습니다.
 lastmod: "2021-12-09"
 sitemap:

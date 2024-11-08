@@ -3,7 +3,7 @@ title: Программное удаление страниц PDF на Python
 linktitle: Удаление страниц PDF
 type: docs
 weight: 80
-url: ru/python-net/delete-pages/
+url: /ru/python-net/delete-pages/
 description: Вы можете удалить страницы из вашего PDF-файла, используя библиотеку Aspose.PDF для Python через .NET.
 lastmod: "2023-04-17"
 sitemap:

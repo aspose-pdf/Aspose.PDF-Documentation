@@ -3,7 +3,7 @@ title: What's new
 linktitle: What's new
 type: docs
 weight: 10
-url: ko/net/whatsnew/
+url: /ko/net/whatsnew/
 description: 이 페이지에서는 최근 릴리스에서 도입된 Aspose.PDF for .NET의 가장 인기 있는 새로운 기능을 소개합니다.
 sitemap:
     changefreq: "monthly"

@@ -2,7 +2,7 @@
 title: Page Break dalam PDF yang Ada
 type: docs
 weight: 30
-url: id/java/page-break-in-existing-pdf/
+url: /id/java/page-break-in-existing-pdf/
 description: Bagian ini menjelaskan cara memecah halaman dalam PDF yang ada menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

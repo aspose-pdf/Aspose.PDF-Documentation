@@ -2,7 +2,7 @@
 title: PDFファイルへのブックマークの追加
 type: docs
 weight: 20
-url: ja/net/how-to-create-nested-bookmarks/
+url: /ja/net/how-to-create-nested-bookmarks/
 description: このセクションでは、PdfContentEditorクラスを使ってネストされたブックマークを作成する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: 从所有页面中提取PDF文档的文本在Jython中
 type: docs
 weight: 30
-url: zh/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/
+url: /zh/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Controlar Excepción de Archivo PDF
 type: docs
 weight: 30
-url: es/java/control-exception/
+url: /es/java/control-exception/
 description: Este tema explica cómo controlar la excepción en un archivo PDF utilizando la clase PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Membagi PDF secara programatik
 linktitle: Membagi file PDF
 type: docs
 weight: 60
-url: id/php-java/split-document/
+url: /id/php-java/split-document/
 description: Topik ini menunjukkan cara membagi halaman PDF menjadi file PDF individual dalam aplikasi PHP Anda.
 lastmod: "2024-06-05"
 sitemap:

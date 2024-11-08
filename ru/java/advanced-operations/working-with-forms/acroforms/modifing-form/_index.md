@@ -3,7 +3,7 @@ title: Изменение AcroForms
 linktitle: Изменение AcroForms
 type: docs
 weight: 40
-url: ru/java/modifing-form/
+url: /ru/java/modifing-form/
 description: Этот раздел объясняет, как изменять формы в вашем PDF документе с помощью Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF Annotations using C++
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: ko/cpp/annotations/
+url: /ko/cpp/annotations/
 description: 이 섹션에서는 Aspose.PDF 라이브러리를 사용하여 PDF 파일에 모든 종류의 주석을 추가하는 방법을 보여줍니다. C++에서 주석을 그리거나 열거나 추가하는 방법을 알아보세요.
 lastmod: "2021-11-24"
 sitemap:
@@ -21,6 +21,6 @@ PDF가 점점 더 문서 교환의 표준 형식이 되면서, 사람들이 PDF�
 
 다음을 수행할 수 있습니다:
 
-- [주석 개요](/pdf/cpp/overview-of-annotations/) - PDF 사양에 의해 정의된 주석 유형과 Aspose.PDF가 지원하는 내용을 알아보세요.
-- [주석 추가, 삭제 및 가져오기](/pdf/cpp/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석을 다루는 방법을 설명합니다.
-- [주석을 XFDF 형식으로 가져오고 내보내기](/pdf/cpp/import-export-xfdf/) - C++로 XFDF 형식으로 주석을 가져오고 내보내는 방법을 알 수 있습니다.
+- [주석 개요](/pdf/ko/cpp/overview-of-annotations/) - PDF 사양에 의해 정의된 주석 유형과 Aspose.PDF가 지원하는 내용을 알아보세요.
+- [주석 추가, 삭제 및 가져오기](/pdf/ko/cpp/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석을 다루는 방법을 설명합니다.
+- [주석을 XFDF 형식으로 가져오고 내보내기](/pdf/ko/cpp/import-export-xfdf/) - C++로 XFDF 형식으로 주석을 가져오고 내보내는 방법을 알 수 있습니다.

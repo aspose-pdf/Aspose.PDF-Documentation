@@ -2,7 +2,7 @@
 title: 양식 필드 이동 및 제거
 type: docs
 weight: 50
-url: ko/java/move-remove-form-field/
+url: /ko/java/move-remove-form-field/
 description: 이 섹션에서는 FormEditor 클래스를 사용하여 양식 필드를 이동하고 제거하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

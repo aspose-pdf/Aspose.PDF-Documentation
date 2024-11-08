@@ -3,7 +3,7 @@ title: 如何运行其他示例
 linktitle: 如何运行其他示例
 type: docs
 weight: 50
-url: zh/java/how-to-run-other-examples/    
+url: /zh/java/how-to-run-other-examples/    
 description: 本页展示了在下载和运行示例之前有助于满足以下要求的指南。
 lastmod: "2021-06-05"
 ---

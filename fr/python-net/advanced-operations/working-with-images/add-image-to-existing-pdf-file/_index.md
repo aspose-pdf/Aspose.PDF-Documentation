@@ -3,7 +3,7 @@ title: Ajouter une image à un PDF en utilisant Python
 linktitle: Ajouter une image
 type: docs
 weight: 10
-url: fr/python-net/add-image-to-existing-pdf-file/
+url: /fr/python-net/add-image-to-existing-pdf-file/
 description: Cette section décrit comment ajouter une image à un fichier PDF existant en utilisant une bibliothèque Python.
 lastmod: "2022-02-17"
 ---

@@ -2,7 +2,7 @@
 title: 클래스 이름 변경
 type: docs
 weight: 20
-url: ko/java/change-in-class-name/
+url: /ko/java/change-in-class-name/
 lastmod: "2022-01-27"
 ---
 

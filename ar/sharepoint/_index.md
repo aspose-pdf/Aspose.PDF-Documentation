@@ -10,7 +10,7 @@ type: docs
 
 weight: 110
 
-url: ar/sharepoint/
+url: /ar/sharepoint/
 
 is_root: true
 
@@ -34,20 +34,20 @@ Aspose.PDF for SharePoint هو حل يسمح للمستخدمين بتصدير �
 
 فيما يلي الروابط لبعض الموارد المفيدة التي قد تحتاجها لإنجاز مهامك.
 
-- [نظرة عامة على منتج Aspose.PDF for SharePoint](/pdf/sharepoint/product-overview/)
+- [نظرة عامة على منتج Aspose.PDF for SharePoint](/pdf/ar/sharepoint/product-overview/)
 
-- [تنسيقات الملفات المدعومة من Aspose.PDF for SharePoint](/pdf/sharepoint/supported-file-formats/)
+- [تنسيقات الملفات المدعومة من Aspose.PDF for SharePoint](/pdf/ar/sharepoint/supported-file-formats/)
 
-- [ميزات Aspose.PDF for SharePoint](/pdf/sharepoint/features/)
+- [ميزات Aspose.PDF for SharePoint](/pdf/ar/sharepoint/features/)
 
 - [ملاحظات إصدار Aspose.PDF لـ SharePoint](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 
 - [تحميل Aspose.PDF لـ SharePoint](https://releases.aspose.com/pdf/sharepoint/)
 
-- [تثبيت Aspose.Pdf لـ SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [تثبيت Aspose.Pdf لـ SharePoint](/pdf/ar/sharepoint/install-aspose-pdf-for-sharepoint/)
 
-- [تقييم Aspose.Pdf](/pdf/sharepoint/evaluate-aspose-pdf/)
+- [تقييم Aspose.Pdf](/pdf/ar/sharepoint/evaluate-aspose-pdf/)
 
-- [ترخيص Aspose.Pdf لـ SharePoint](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [ترخيص Aspose.Pdf لـ SharePoint](/pdf/ar/sharepoint/license-aspose-pdf-for-sharepoint/)
 
-- [قيود API](/pdf/sharepoint/api-limitations/)
+- [قيود API](/pdf/ar/sharepoint/api-limitations/)

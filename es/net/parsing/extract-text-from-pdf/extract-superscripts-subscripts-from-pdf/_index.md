@@ -3,7 +3,7 @@ title: Extraer texto Superíndices y Subíndices de PDF
 linktitle: Extraer Superíndices y Subíndices
 type: docs
 weight: 30
-url: es/net/extract-superscripts-subscripts-from-pdf/
+url: /es/net/extract-superscripts-subscripts-from-pdf/
 description: Este artículo describe varias formas de extraer texto de Superíndices y Subíndices de un PDF utilizando Aspose.PDF en C#.
 lastmod: "2022-10-07"
 sitemap:
@@ -21,7 +21,7 @@ En una de las últimas versiones, la biblioteca **Aspose.PDF para .NET** agregó
 
 Utiliza la clase **TextFragmentAbsorber** y ya puedes hacer cualquier cosa con el texto encontrado, es decir, puedes simplemente usar todo el texto. Prueba el siguiente fragmento de código:
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));
@@ -35,8 +35,8 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 O utiliza **TextFragments** por separado y realiza todo tipo de manipulaciones con ellos, por ejemplo, ordenar por coordenadas o por tamaño.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));

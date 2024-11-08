@@ -2,7 +2,7 @@
 title: 웹을 위한 PDF 문서 최적화하기
 type: docs
 weight: 60
-url: ko/java/optimize-pdf-document-for-the-web-in-python/
+url: /ko/java/optimize-pdf-document-for-the-web-in-python/
 lastmod: "2021-06-05"
 ---
 

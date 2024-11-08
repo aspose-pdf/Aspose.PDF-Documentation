@@ -3,7 +3,7 @@ title: كيفية التوقيع الرقمي على PDF
 linktitle: التوقيع الرقمي على PDF
 type: docs
 weight: 10
-url: ar/cpp/digitally-sign-pdf-file/
+url: /ar/cpp/digitally-sign-pdf-file/
 description: التوقيع الرقمي على مستندات PDF باستخدام C++. تحقق أو تحقق من صحة التوقيعات الرقمية على ملفات PDF باستخدام C++.
 lastmod: "2021-12-15"
 sitemap:

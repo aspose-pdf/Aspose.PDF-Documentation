@@ -3,7 +3,7 @@ title: C++를 사용하여 포함된 이미지의 해상도 및 크기 가져오
 linktitle: 해상도 및 크기 가져오기
 type: docs
 weight: 40
-url: ko/cpp/get-resolution-and-dimensions-of-embedded-images/
+url: /ko/cpp/get-resolution-and-dimensions-of-embedded-images/
 description: 이 섹션은 포함된 이미지의 해상도 및 크기를 가져오는 방법의 세부 정보를 보여줍니다.
 lastmod: "2021-12-18"
 ---

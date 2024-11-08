@@ -2,7 +2,7 @@
 title: 파이썬에서 DOM을 사용하여 HTML 문자열 추가
 type: docs
 weight: 10
-url: ko/java/add-html-string-using-dom-in-python/
+url: /ko/java/add-html-string-using-dom-in-python/
 lastmod: "2021-06-05"
 keywords: html dom python, python html dom library
 description: 파이썬의 PDF 파일 형식 라이브러리를 사용하여 DOM에 HTML 문자열을 추가하는 방법을 설명합니다

@@ -2,7 +2,7 @@
 title: Exportar Favoritos para XML de um Arquivo PDF Existente (facades)
 type: docs
 weight: 20
-url: pt/java/export-bookmark/
+url: /pt/java/export-bookmark/
 description: Esta seção explica como exportar favoritos com Aspose.PDF Facades usando a Classe PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: DOC Converter
 type: docs
 weight: 10
-url: ja/net/plugins/doc/
+url: /ja/net/plugins/doc/
 description: PDFをWordに簡単に変換するPdfDocプラグイン
 lastmod: "2024-01-24"
 ---

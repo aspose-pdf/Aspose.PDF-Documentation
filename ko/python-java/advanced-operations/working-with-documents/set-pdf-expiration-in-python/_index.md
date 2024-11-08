@@ -2,7 +2,7 @@
 title: Python에서 PDF 만료 설정
 type: docs
 weight: 80
-url: ko/python-java/set-pdf-expiration-in-python/
+url: /ko/python-java/set-pdf-expiration-in-python/
 ---
 
 <ins>**Aspose.PDF Java for Python**을 사용하여 Pdf 문서의 만료를 설정하려면, **SetExpiration** 클래스를 호출하십시오.

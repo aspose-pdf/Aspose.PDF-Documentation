@@ -2,7 +2,7 @@
 title: 获取 PDF 文件的查看器偏好设置
 type: docs
 weight: 70
-url: zh/net/get-viewer-preference-of-an-existing-pdf-file/
+url: /zh/net/get-viewer-preference-of-an-existing-pdf-file/
 description: 本节展示如何使用 PdfContentEditor 类获取现有 PDF 文件的查看器偏好设置。
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: RubyでPDFファイルから特定のページを削除
 type: docs
 weight: 20
-url: ja/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
+url: /ja/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

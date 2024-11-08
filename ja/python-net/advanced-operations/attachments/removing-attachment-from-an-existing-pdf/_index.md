@@ -3,7 +3,7 @@ title: 既存のPDFから添付ファイルを削除するPython
 linktitle: 既存のPDFから添付ファイルを削除する
 type: docs
 weight: 30
-url: ja/python-net/removing-attachment-from-an-existing-pdf/
+url: /ja/python-net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDFはPDFドキュメントから添付ファイルを削除できます。Aspose.PDF for Python via .NETライブラリを使用して、Python PDF APIでPDFファイルの添付ファイルを削除します。
 lastmod: "2023-02-17"
 sitemap:

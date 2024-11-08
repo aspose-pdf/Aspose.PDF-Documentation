@@ -1,7 +1,7 @@
 title: PDFでの見出しの操作
 type: docs
 weight: 70
-url: ja/php-java/working-with-headings/
+url: /ja/php-java/working-with-headings/
 lastmod: "2024-06-05"
 description: PHPを使用してPDF文書内の見出しに番号を付ける。Aspose.PDF for PHP via Javaはさまざまな種類の番号スタイルを提供します。
 sitemap:

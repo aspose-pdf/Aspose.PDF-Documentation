@@ -3,7 +3,7 @@ title: Adicionar carimbos de imagem ao PDF em Node.js
 linktitle: Carimbos de imagem em arquivo PDF
 type: docs
 weight: 60
-url: pt/nodejs-cpp/stamping/
+url: /pt/nodejs-cpp/stamping/
 description: Adicione o carimbo de imagem no seu documento PDF usando AsposePdfAddStamp com a ferramenta Node.js.
 lastmod: "2023-11-16"
 sitemap:

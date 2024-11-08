@@ -3,7 +3,7 @@ title: Использование Aspose.PDF для Python через Java
 linktitle: Обзор
 type: docs
 weight: 20
-url: ru/python-java/overview/
+url: /ru/python-java/overview/
 description: Основные функции, особенности конвертации, разделения, слияния и выполнения других операций, связанных с созданием и редактированием PDF с использованием Python через Java
 lastmod: "2022-05-16"
 sitemap:
@@ -39,7 +39,7 @@ Aspose.PDF для Python через Java поддерживает широкий
 
 Узнайте больше о:
 
-- [Работа с конвертацией документов в Python через Java](/pdf/python-java/conversion/)
-- [Работа с объектом документа в Python через Java](/pdf/python-java/working-with-documents/)
-- [Работа со страницами в Python через Java](/pdf/python-java/working-with-pages/)
-- [Работа с текстом в Python через Java](/pdf/python-java/working-with-text/)
+- [Работа с конвертацией документов в Python через Java](/pdf/ru/python-java/conversion/)
+- [Работа с объектом документа в Python через Java](/pdf/ru/python-java/working-with-documents/)
+- [Работа со страницами в Python через Java](/pdf/ru/python-java/working-with-pages/)
+- [Работа с текстом в Python через Java](/pdf/ru/python-java/working-with-text/)

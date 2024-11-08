@@ -2,7 +2,7 @@
 title: 빠른 팁
 type: docs
 weight: 50
-url: ko/java/quick-tips/
+url: /ko/java/quick-tips/
 lastmod: "2022-01-27"
 ---
 

@@ -2,7 +2,7 @@
 title: 获取 PDF 文件信息在 Ruby 中
 type: docs
 weight: 50
-url: zh/java/get-pdf-file-information-in-ruby/
+url: /zh/java/get-pdf-file-information-in-ruby/
 lastmod: "2021-06-05"
 ---
 

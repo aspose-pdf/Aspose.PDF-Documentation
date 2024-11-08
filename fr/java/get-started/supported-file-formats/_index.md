@@ -3,7 +3,7 @@ title: Formats de fichiers pris en charge
 linktitle: Formats de fichiers pris en charge
 type: docs
 weight: 70
-url: fr/java/supported-file-formats/
+url: /fr/java/supported-file-formats/
 description: Cette page montre quels formats de fichiers Aspose.PDF pour Java peut charger et enregistrer.
 lastmod: "2021-06-05"
 sitemap:

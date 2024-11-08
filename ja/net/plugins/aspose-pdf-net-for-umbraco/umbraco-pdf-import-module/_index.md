@@ -2,7 +2,7 @@
 title: Umbraco PDFインポートモジュール
 type: docs
 weight: 10
-url: ja/net/umbraco-pdf-import-module/
+url: /ja/net/umbraco-pdf-import-module/
 description: Umbraco PDFインポートモジュールのインストールと使用方法について学ぶ
 lastmod: "2021-06-05"
 sitemap:

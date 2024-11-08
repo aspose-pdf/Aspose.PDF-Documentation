@@ -3,7 +3,7 @@ title: 在 PDF 中添加 PDF 页面印章
 linktitle: PDF 文件中的页面印章
 type: docs
 weight: 30
-url: zh/cpp/page-stamps-in-the-pdf-file/
+url: /zh/cpp/page-stamps-in-the-pdf-file/
 description: 使用 PdfPageStamp 类通过 C++ 向 PDF 文件添加页面印章。
 lastmod: "2021-12-08"
 sitemap:

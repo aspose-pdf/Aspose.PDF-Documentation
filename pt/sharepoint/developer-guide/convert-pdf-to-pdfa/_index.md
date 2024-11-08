@@ -8,7 +8,7 @@ type: docs
 
 weight: 70
 
-url: pt/sharepoint/convert-pdf-to-pdfa/
+url: /pt/sharepoint/convert-pdf-to-pdfa/
 
 lastmod: "2020-12-16"
 

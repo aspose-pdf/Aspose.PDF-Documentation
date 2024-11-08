@@ -3,7 +3,7 @@ title: PDFページの移動
 linktitle: PDFページの移動
 type: docs
 weight: 20
-url: ja/php-java/move-pages/
+url: /ja/php-java/move-pages/
 description: Aspose.PDF for PHP via Javaを使用して、任意の位置またはPDFファイルの末尾にページを移動してみてください。
 lastmod: "2024-06-05"
 sitemap:

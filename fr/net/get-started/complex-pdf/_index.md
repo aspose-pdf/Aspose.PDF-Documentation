@@ -3,7 +3,7 @@ title: Création d'un PDF complexe
 linktitle: Création d'un PDF complexe
 type: docs
 weight: 60
-url: fr/net/complex-pdf-example/
+url: /fr/net/complex-pdf-example/
 description: Aspose.PDF pour NET vous permet de créer des documents plus complexes qui contiennent des images, des fragments de texte et des tables dans un seul document.
 aliases:
     - /net/complex-pdf/
@@ -13,8 +13,8 @@ sitemap:
     priority: 0.7
 ---
 
-L'exemple [Bonjour, Monde](/pdf/net/hello-world-example/) a montré des étapes simples pour créer un document PDF en utilisant C# et Aspose.PDF. Dans cet article, nous examinerons la création d'un document plus complexe avec C# et Aspose.PDF pour .NET. À titre d'exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferry pour passagers.
-Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe) et un tableau. Pour construire un tel document, nous utiliserons une approche basée sur DOM. Vous pouvez en lire plus dans la section [Fondamentaux de l'API DOM](/pdf/net/basics-of-dom-api/).
+L'exemple [Bonjour, Monde](/pdf/fr/net/hello-world-example/) a montré des étapes simples pour créer un document PDF en utilisant C# et Aspose.PDF. Dans cet article, nous examinerons la création d'un document plus complexe avec C# et Aspose.PDF pour .NET. À titre d'exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferry pour passagers.
+Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe) et un tableau. Pour construire un tel document, nous utiliserons une approche basée sur DOM. Vous pouvez en lire plus dans la section [Fondamentaux de l'API DOM](/pdf/fr/net/basics-of-dom-api/).
 
 Si nous créons un document à partir de zéro, nous devons suivre certaines étapes :
 
@@ -29,8 +29,8 @@ Si nous créons un document à partir de zéro, nous devons suivre certaines ét
 1. Ajoutez (la table) aux [Paragraphes](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la page.
 1. Enregistrez un document "Complex.pdf".
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 using Aspose.Pdf.Text;

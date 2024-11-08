@@ -2,7 +2,7 @@
 title: Définir l'Expiration du PDF en Ruby
 type: docs
 weight: 110
-url: fr/java/set-pdf-expiration-in-ruby/
+url: /fr/java/set-pdf-expiration-in-ruby/
 lastmod: "2021-06-05"
 ---
 

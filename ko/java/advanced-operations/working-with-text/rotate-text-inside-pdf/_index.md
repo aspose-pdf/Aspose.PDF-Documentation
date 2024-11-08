@@ -3,7 +3,7 @@ title: PDF 내 텍스트 회전
 linktitle: PDF 내 텍스트 회전
 type: docs
 weight: 50
-url: ko/java/rotate-text-inside-pdf/
+url: /ko/java/rotate-text-inside-pdf/
 description: PDF에 텍스트를 회전시키는 다양한 방법을 배우세요. Aspose.PDF는 텍스트를 원하는 각도로 회전시키거나 텍스트 조각 또는 전체 단락을 회전시킬 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

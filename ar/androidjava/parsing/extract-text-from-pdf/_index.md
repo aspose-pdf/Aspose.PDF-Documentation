@@ -3,7 +3,7 @@ title: استخراج النص من PDF
 linktitle: استخراج النص 
 type: docs
 weight: 10
-url: ar/androidjava/extract-text-from-pdf/
+url: /ar/androidjava/extract-text-from-pdf/
 description: يتيح Aspose.PDF استخراج أنواع مختلفة من المعلومات. يحتوي هذا القسم على مقالات حول استخراج النص من مستندات PDF باستخدام Aspose.PDF لأندرويد عبر Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,5 +18,5 @@ sitemap:
 بالنسبة لشركات التنقيب عن البيانات، إدارة المحتوى، ومعالجة النماذج، سيكون استخراج النص مفيدًا بشكل خاص.
  استخراج النص يكون مفيدًا: الأرشفة: يمكن استرجاع النص ومكوناته بحيث يمكن فهرسة الوثائق وأرشفتها مع قدرات بحث كاملة؛ استرجاع ومعالجة البيانات في النماذج؛ استخراج المعلومات مثل بيانات الحساب والعناوين البريدية وأرقام الهواتف لأغراض إدارية؛ استخراج الصور والرسومات.
 
-- [استخراج النص من PDF](/pdf/androidjava/extract-text-from-all-pdf/)
-- [استخراج الفقرة من PDF](/pdf/androidjava/extract-paragraph-from-pdf/)
+- [استخراج النص من PDF](/pdf/ar/androidjava/extract-text-from-all-pdf/)
+- [استخراج الفقرة من PDF](/pdf/ar/androidjava/extract-paragraph-from-pdf/)

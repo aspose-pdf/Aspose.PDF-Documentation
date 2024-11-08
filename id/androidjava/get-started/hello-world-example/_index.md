@@ -3,7 +3,7 @@ title: Contoh Java Hello World
 linktitle: Contoh Hello World
 type: docs
 weight: 20
-url: id/androidjava/hello-world-example/
+url: /id/androidjava/hello-world-example/
 description: Halaman ini menunjukkan bagaimana menggunakan pemrograman sederhana untuk membuat dokumen PDF yang berisi teks - Hello World menggunakan Aspose.PDF untuk Android.
 lastmod: "2021-08-05"
 sitemap:
@@ -16,7 +16,7 @@ sitemap:
 Contoh "Hello World" secara tradisional digunakan untuk memperkenalkan fitur-fitur dari bahasa pemrograman atau perangkat lunak dengan kasus penggunaan sederhana.
 
 Aspose.PDF untuk Android melalui Java API memungkinkan pengembang aplikasi Java untuk membuat, membaca, mengedit, dan memanipulasi file PDF dalam aplikasi mereka. Ini memungkinkan Anda membaca dan mengonversi beberapa jenis file yang berbeda ke dan dari format file PDF. Artikel Hello World ini menunjukkan bagaimana membuat file PDF di Java menggunakan Aspose.PDF untuk Android melalui Java API.
-Setelah [meninstal Aspose.PDF untuk Android melalui Java](/pdf/androidjava/installation/) di lingkungan Anda, Anda dapat menjalankan contoh kode di bawah ini untuk melihat bagaimana API Aspose.PDF bekerja.
+Setelah [meninstal Aspose.PDF untuk Android melalui Java](/pdf/id/androidjava/installation/) di lingkungan Anda, Anda dapat menjalankan contoh kode di bawah ini untuk melihat bagaimana API Aspose.PDF bekerja.
 
 Cuplikan kode di bawah ini mengikuti langkah-langkah berikut:
 

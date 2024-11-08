@@ -2,7 +2,7 @@
 title: ドキュメントウィンドウとページ表示プロパティをPythonで取得する
 type: docs
 weight: 30
-url: ja/python-java/get-document-window-and-page-display-properties-in-python/
+url: /ja/python-java/get-document-window-and-page-display-properties-in-python/
 ---
 
 <ins>**Aspose.PDF Java for Python**を使用してPDFドキュメントのウィンドウとページ表示プロパティを取得するには、**GetDocumentWindow**クラスを呼び出します。

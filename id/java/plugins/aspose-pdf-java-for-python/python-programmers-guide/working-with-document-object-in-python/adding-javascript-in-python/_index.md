@@ -2,7 +2,7 @@
 title: Menambahkan JavaScript dalam Python
 type: docs
 weight: 10
-url: id/java/adding-javascript-in-python/
+url: /id/java/adding-javascript-in-python/
 lastmod: "2021-06-05"
 ---
 

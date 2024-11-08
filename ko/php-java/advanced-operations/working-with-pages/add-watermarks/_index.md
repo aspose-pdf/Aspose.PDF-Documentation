@@ -3,7 +3,7 @@ title: PDF에 워터마크 추가
 linktitle: 워터마크 추가  
 type: docs  
 weight: 90  
-url: ko/php-java/add-watermarks/  
+url: /ko/php-java/add-watermarks/  
 description: 이 문서는 PHP를 사용하여 PDF에서 아티팩트 작업 및 워터마크 얻기 기능을 설명합니다.  
 lastmod: "2024-06-05"  
 sitemap:  

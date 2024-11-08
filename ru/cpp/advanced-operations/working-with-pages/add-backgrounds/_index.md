@@ -3,7 +3,7 @@ title: Добавление фона в PDF с использованием C++
 linktitle: Добавление фонов
 type: docs
 weight: 110
-url: ru/cpp/add-backgrounds/
+url: /ru/cpp/add-backgrounds/
 descriptions: Добавьте фоновое изображение в ваш PDF файл с помощью C++. Используйте объект BackgroundArtifact.
 lastmod: "2021-12-03"
 sitemap:

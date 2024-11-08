@@ -2,7 +2,7 @@
 title: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman di Jython
 type: docs
 weight: 20
-url: id/java/get-document-window-and-page-display-properties-in-jython/
+url: /id/java/get-document-window-and-page-display-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

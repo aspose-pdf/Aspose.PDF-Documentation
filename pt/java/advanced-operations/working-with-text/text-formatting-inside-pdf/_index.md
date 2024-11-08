@@ -3,7 +3,7 @@ title: Formatação de Texto dentro do PDF
 linktitle: Formatação de Texto dentro do PDF
 type: docs
 weight: 30
-url: pt/java/text-formatting-inside-pdf/
+url: /pt/java/text-formatting-inside-pdf/
 description: Esta página explica como formatar texto dentro do seu arquivo PDF. Há adição de recuo de linha, adição de borda de texto, adição de sublinhado, adição de uma borda ao redor do texto adicionado, alinhamento de texto para conteúdos de caixa flutuante, etc.
 lastmod: "2021-06-05"
 sitemap:

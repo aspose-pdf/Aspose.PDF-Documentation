@@ -3,7 +3,7 @@ title: Travailler avec les Facades
 linktitle: Travailler avec les Facades
 type: docs
 weight: 80
-url: fr/python-java/working-with-facades/
+url: /fr/python-java/working-with-facades/
 description: Cette section explique comment travailler avec les Facades - un ensemble d'outils pour les opérations populaires avec PDF.
 lastmod: "2023-06-15"
 sitemap:

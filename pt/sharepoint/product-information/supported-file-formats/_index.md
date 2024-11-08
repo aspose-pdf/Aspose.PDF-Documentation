@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: pt/sharepoint/formatos-de-arquivo-suportados/
+url: /pt/sharepoint/formatos-de-arquivo-suportados/
 
 lastmod: "2020-12-16"
 

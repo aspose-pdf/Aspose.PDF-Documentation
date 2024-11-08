@@ -2,7 +2,7 @@
 title: إزالة البيانات الوصفية من PDF في بايثون
 type: docs
 weight: 70
-url: ar/python-java/remove-metadata-from-pdf-in-python/
+url: /ar/python-java/remove-metadata-from-pdf-in-python/
 ---
 
 <ins>لإزالة البيانات الوصفية من مستند Pdf باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء فئة **RemoveMetadata**.

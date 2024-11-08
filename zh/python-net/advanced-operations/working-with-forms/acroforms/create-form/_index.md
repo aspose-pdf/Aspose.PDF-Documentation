@@ -3,7 +3,7 @@ title: 创建 AcroForm - 在 Python 中创建可填写的 PDF
 linktitle: 创建 AcroForm
 type: docs
 weight: 10
-url: zh/python-net/create-form/
+url: /zh/python-net/create-form/
 description: 使用 Aspose.PDF for Python，您可以在 PDF 文件中从头开始创建表单
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 向PDF文件添加圆形对象
 linktitle: 添加圆形
 type: docs
 weight: 20
-url: zh/java/add-circle/
+url: /zh/java/add-circle/
 description: 本文解释了如何使用Aspose.PDF for Java在PDF中创建圆形对象。
 lastmod: "2021-06-05"
 sitemap:

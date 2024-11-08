@@ -3,7 +3,7 @@ title: Установка привилегий, шифрование и расш
 linktitle: Шифрование и расшифровка PDF файлов
 type: docs
 weight: 20
-url: ru/net/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ru/net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Шифруйте PDF файлы с помощью C# используя различные типы и алгоритмы шифрования. Также расшифровывайте PDF файлы, используя пароль владельца.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Шифруйте PDF файлы с помощью C# используя различные типы и алгоритмы шифрования. Также расшифровывайте PDF файлы, используя пароль владельца."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Установка привилегий на существующий PDF файл
 

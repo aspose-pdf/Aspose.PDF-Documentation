@@ -3,7 +3,7 @@ title: Convertir documentos PDF usando Python
 linktitle: Convertir documento PDF
 type: docs
 weight: 70
-url: es/python-java/converting/
+url: /es/python-java/converting/
 lastmod: "2023-04-06"
 description: Esta sección contiene artículos relacionados con la conversión de documentos PDF a diferentes formatos y viceversa usando la API de Python.
 aliases:
@@ -33,32 +33,32 @@ Aspose.PDF para Python a través de .NET permite convertir documentos PDF a vari
 Los documentos de Word son los más versátiles y editables posibles.
  Convertir PDF a Word manualmente es una tarea que consume mucho tiempo. En este artículo, aprenderás cómo convertir PDF a Word programáticamente en Python.
 
-- [Convertir PDF a Microsoft Word](/pdf/python-java/convert-pdf-to-word/) - puedes convertir tu documento PDF a formato Word con Python
+- [Convertir PDF a Microsoft Word](/pdf/es/python-java/convert-pdf-to-word/) - puedes convertir tu documento PDF a formato Word con Python
 
 Los formatos numéricos son necesarios no solo para hacer que los datos en la tabla sean más fáciles de leer, sino también para hacer que la tabla sea más fácil de usar. Por supuesto, si necesitas convertir dichos datos de un documento PDF a formato Excel utiliza nuestra biblioteca Aspose.PDF.
 
-- [Convertir PDF a Microsoft Excel](/pdf/python-java/convert-pdf-to-excel/) - esta sección describe cómo convertir documentos PDF a XLSX, ODS, CSV y SpreadSheetML
+- [Convertir PDF a Microsoft Excel](/pdf/es/python-java/convert-pdf-to-excel/) - esta sección describe cómo convertir documentos PDF a XLSX, ODS, CSV y SpreadSheetML
 
 El formato PowerPoint se utiliza para crear diversas presentaciones. Los archivos PPT contienen una gran cantidad de diapositivas o páginas que contienen diversa información.
 
-- [Convertir PDF a Microsoft PowerPoint](/pdf/python-java/convert-pdf-to-powerpoint/) - aquí hablamos sobre la conversión de PDF a PowerPoint rastreando el proceso de conversión
+- [Convertir PDF a Microsoft PowerPoint](/pdf/es/python-java/convert-pdf-to-powerpoint/) - aquí hablamos sobre la conversión de PDF a PowerPoint rastreando el proceso de conversión
 
 HyperText Markup Language es un lenguaje de descripción de documentos de hipertexto, un lenguaje estándar para crear páginas web. Con Aspose.PDF para Python puedes convertir fácilmente documentos HTML y viceversa.
 
-- [Convertir formato HTML a archivo PDF](/pdf/python-java/convert-html-to-pdf/) - artículo sobre diferentes aspectos de la conversión de HTML a PDF
-- [Convertir archivo PDF a formato HTML](/pdf/python-java/convert-pdf-to-html/) - convierte tus documentos PDF a archivos HTML como páginas separadas o como una sola página
+- [Convertir formato HTML a archivo PDF](/pdf/es/python-java/convert-html-to-pdf/) - artículo sobre diferentes aspectos de la conversión de HTML a PDF
+- [Convertir archivo PDF a formato HTML](/pdf/es/python-java/convert-pdf-to-html/) - convierte tus documentos PDF a archivos HTML como páginas separadas o como una sola página
 
 Existen muchos formatos de imagen que necesitan ser convertidos a PDF para diferentes propósitos. Aspose.PDF permite los formatos de imágenes más populares y viceversa.
 
-- [Convertir PDF a varios formatos de imágenes](/pdf/python-java/convert-pdf-to-images-format/) - convierte páginas PDF como imágenes en formatos JPEG, PNG y otros
+- [Convertir PDF a varios formatos de imágenes](/pdf/es/python-java/convert-pdf-to-images-format/) - convierte páginas PDF como imágenes en formatos JPEG, PNG y otros
 
 Esta sección incluye formatos como: EPUB, Markdown, PCL, XPS, LATex/TeX, Texto y PostScript.
 
-- [Convertir archivo PDF a otros formatos](/pdf/python-java/convert-pdf-to-other-files/) - este tema describe la manera de convertir documentos PDF a varios formatos
+- [Convertir archivo PDF a otros formatos](/pdf/es/python-java/convert-pdf-to-other-files/) - este tema describe la manera de convertir documentos PDF a varios formatos
 
 PDF/A es una versión de PDF diseñada para el archivo a largo plazo de documentos electrónicos.Siendo honestos, externamente, es muy difícil determinar si es PDF o PDF/A. Para verificar este archivo, se utilizan validadores. Consulte los siguientes artículos para una conversión de calidad de PDF a PDF/A y viceversa.
 
-- [Convertir formatos PDF a PDF/A](/pdf/python-java/convert-pdf-to-pdfa/) - La biblioteca de Python de Aspose.PDF tiene una manera fácil de convertir PDF a PDF/A
+- [Convertir formatos PDF a PDF/A](/pdf/es/python-java/convert-pdf-to-pdfa/) - La biblioteca de Python de Aspose.PDF tiene una manera fácil de convertir PDF a PDF/A
 
 ## Intenta convertir archivos PDF en línea
 

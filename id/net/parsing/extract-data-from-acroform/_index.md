@@ -3,7 +3,7 @@ title:  Ekstrak data dari AcroForm menggunakan C#
 linktitle:  Ekstrak data dari AcroForm
 type: docs
 weight: 50
-url: id/net/extract-data-from-acroform/
+url: /id/net/extract-data-from-acroform/
 description: Aspose.PDF memudahkan untuk mengekstrak data bidang formulir dari berkas PDF. Pelajari cara mengekstrak data dari AcroForms dan menyimpannya dalam format JSON, XML, atau FDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -17,7 +17,7 @@ Selain memungkinkan Anda menghasilkan bidang formulir dan mengisi bidang formuli
 
 Pada kode sampel di bawah ini kami menunjukkan cara mengulang setiap halaman dalam PDF untuk mengekstrak informasi tentang semua AcroForm dalam PDF serta nilai bidang formulir. Kode sampel ini mengasumsikan bahwa Anda tidak mengetahui nama bidang formulir sebelumnya.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 public static void ExtractFormFields()
@@ -39,7 +39,7 @@ Properti Value dari field formulir memungkinkan Anda untuk mendapatkan nilai dar
 
 ## Ekstrak field formulir dari dokumen PDF ke JSON
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 public static void ExtractFormFieldsToJson()
@@ -54,7 +54,7 @@ public static void ExtractFormFieldsToJson()
 
 Kelas Form memungkinkan Anda untuk mengekspor data ke file XML dari file PDF menggunakan metode ExportXml. Untuk mengekspor data ke XML, Anda perlu membuat objek dari kelas Form kemudian memanggil metode ExportXml menggunakan objek FileStream. Akhirnya, Anda dapat menutup objek FileStream dan membuang objek Form. Cuplikan kode berikut menunjukkan cara mengekspor data ke file XML.
 
-Cuplikan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
@@ -78,7 +78,7 @@ form.Dispose();
 
 Kelas Form memungkinkan Anda untuk mengekspor data ke file FDF dari file PDF menggunakan metode ExportFdf. Untuk mengekspor data ke FDF, Anda perlu membuat objek dari kelas Form dan kemudian memanggil metode ExportFdf menggunakan objek FileStream. Akhirnya, Anda dapat menyimpan file PDF menggunakan metode Save dari kelas Form. Cuplikan kode berikut menunjukkan cara mengekspor data ke file FDF.
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
@@ -105,7 +105,7 @@ form.Save(dataDir + "ExportDataToPdf_out.pdf");
 
 Kelas Form memungkinkan Anda untuk mengekspor data ke file XFDF dari file PDF menggunakan metode ExportXfdf. Untuk mengekspor data ke XFDF, Anda perlu membuat objek dari kelas Form dan kemudian memanggil metode ExportXfdf menggunakan objek FileStream. Akhirnya, Anda dapat menyimpan file PDF menggunakan metode Save dari kelas Form. Potongan kode berikut menunjukkan cara mengekspor data ke file XFDF.
 
-Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

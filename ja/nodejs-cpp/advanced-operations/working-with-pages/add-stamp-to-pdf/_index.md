@@ -4,7 +4,7 @@ title: PDFに画像スタンプを追加する方法（Node.js）
 linktitle: PDFファイルへの画像スタンプ
 type: docs
 weight: 60
-url: ja/nodejs-cpp/stamping/
+url: /ja/nodejs-cpp/stamping/
 description: AsposePdfAddStampを使用して、Node.jsツールでPDFドキュメントに画像スタンプを追加します。
 lastmod: "2023-11-16"
 sitemap:

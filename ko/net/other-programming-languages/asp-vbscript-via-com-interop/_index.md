@@ -2,7 +2,7 @@
 title: ASP - VBScript를 통한 COM Interop
 type: docs
 weight: 30
-url: ko/net/asp-vbscript-via-com-interop/
+url: /ko/net/asp-vbscript-via-com-interop/
 ---
 
 ## Prerequisites
@@ -17,7 +17,7 @@ url: ko/net/asp-vbscript-via-com-interop/
 
 {{% alert color="primary" %}}
 
-이것은 [Aspose.PDF for .NET](/pdf/net/)과 VBScript를 통한 COM Interop을 사용하여 샘플 텍스트가 포함된 PDF 파일을 생성하는 방법을 보여주는 간단한 ASP 애플리케이션입니다.
+이것은 [Aspose.PDF for .NET](/pdf/ko/net/)과 VBScript를 통한 COM Interop을 사용하여 샘플 텍스트가 포함된 PDF 파일을 생성하는 방법을 보여주는 간단한 ASP 애플리케이션입니다.
 
 {{% /alert %}}
 

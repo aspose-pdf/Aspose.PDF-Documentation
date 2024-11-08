@@ -3,7 +3,7 @@ title: PDF에 디지털 서명 추가하기 - Node.js
 linktitle: PDF 디지털 서명
 type: docs
 weight: 70
-url: ko/nodejs-cpp/sign-pdf/
+url: /ko/nodejs-cpp/sign-pdf/
 description: Node.js 환경에서 PDF 문서에 디지털 서명하기.
 lastmod: "2023-11-16"
 sitemap:

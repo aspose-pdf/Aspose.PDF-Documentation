@@ -3,7 +3,7 @@ title: PDF 문서 서식
 linktitle: PDF 문서 서식
 type: docs
 weight: 20
-url: ko/java/formatting-pdf-document/
+url: /ko/java/formatting-pdf-document/
 description: Aspose.PDF for Java를 사용하여 PDF 문서의 서식을 지정합니다. 다음 코드 스니펫을 사용하여 작업을 해결하십시오.
 lastmod: "2021-06-05"
 ---

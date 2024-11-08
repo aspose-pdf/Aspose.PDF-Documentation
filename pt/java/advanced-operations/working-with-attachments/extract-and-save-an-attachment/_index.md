@@ -3,7 +3,7 @@ title: Extrair e Salvar um Anexo
 linktitle: Extrair e Salvar um Anexo
 type: docs
 weight: 20
-url: pt/java/extract-and-save-an-attachment/
+url: /pt/java/extract-and-save-an-attachment/
 description: Aspose.PDF para Java permite obter todos os anexos de um documento PDF. Além disso, você pode obter um anexo individual do seu documento.
 lastmod: "2021-06-05"
 sitemap:
@@ -55,7 +55,7 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## Obter Informações do Anexo
 
-Conforme mencionado em [Obter Anexos de um Documento PDF](/pdf/java/get-attachments-from-a-pdf-document/), as informações do anexo são mantidas no objeto [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification), reunidas com outros anexos na coleção EmbeddedFiles do objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+Conforme mencionado em [Obter Anexos de um Documento PDF](/pdf/pt/java/get-attachments-from-a-pdf-document/), as informações do anexo são mantidas no objeto [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification), reunidas com outros anexos na coleção EmbeddedFiles do objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
 
 O objeto [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification) fornece métodos que obtêm informações sobre o anexo, por exemplo:
 

@@ -3,7 +3,7 @@ title: 対応ファイル形式
 linktitle: 対応ファイル形式
 type: docs
 weight: 10
-url: ja/python-net/supported-file-formats/
+url: /ja/python-net/supported-file-formats/
 description: このページは、Aspose.PDF for Python via .NET がロードおよび保存できるファイル形式を示しています。
 lastmod: "2022-12-22"
 sitemap:

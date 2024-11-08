@@ -3,7 +3,7 @@ title: Obter, Atualizar e Expandir um Favorito
 linktitle: Obter, Atualizar e Expandir um Favorito
 type: docs
 weight: 20
-url: pt/cpp/get-update-and-expand-bookmark/
+url: /pt/cpp/get-update-and-expand-bookmark/
 description: A biblioteca Aspose.PDF para C++ permite que você obtenha? atualize em um arquivo PDF com o nosso.
 lastmod: "2022-01-31"
 sitemap:

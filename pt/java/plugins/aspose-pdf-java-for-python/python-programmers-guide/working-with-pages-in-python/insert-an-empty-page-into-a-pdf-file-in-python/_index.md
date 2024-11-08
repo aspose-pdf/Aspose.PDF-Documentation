@@ -2,7 +2,7 @@
 title: Inserir uma Página Vazia em um Arquivo PDF em Python
 type: docs
 weight: 70
-url: pt/java/insert-an-empty-page-into-a-pdf-file-in-python/
+url: /pt/java/insert-an-empty-page-into-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Dasar-dasar API Aspose.PDF DOM
 linktitle: Dasar-dasar API DOM
 type: docs
 weight: 10
-url: id/androidjava/basics-of-dom-api/
+url: /id/androidjava/basics-of-dom-api/
 description: Aspose.PDF untuk Android melalui Java juga menggunakan ide DOM untuk merepresentasikan struktur dokumen PDF dalam bentuk objek. Di sini Anda dapat membaca deskripsi struktur ini.
 lastmod: "2021-06-05"
 sitemap:

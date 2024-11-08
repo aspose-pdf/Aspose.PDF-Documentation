@@ -2,7 +2,7 @@
 title: Créer des Signets
 type: docs
 weight: 10
-url: fr/net/create-bookmarks/
+url: /fr/net/create-bookmarks/
 description: Cette section explique comment créer des signets pour votre fichier PDF avec Aspose.PDF Facades en utilisant la classe PdfBookmarkEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -49,4 +49,4 @@ Vous pouvez ajouter un favori dans un fichier PDF existant en utilisant la class
 Vous pouvez ajouter des signets enfants dans un fichier PDF existant en utilisant la classe [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor). In order to add child bookmarks, you need to create [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) objets. You can add individual [Signet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) objects into [Signets](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks) object. Vous devez également créer un objet [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) et définir sa propriété [ChildItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark/properties/childitem) sur l'objet [Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks). Vous devez ensuite passer cet objet [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) avec [ChildItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark/properties/childitem) à la méthode [CreateBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2). Enfin, vous devez enregistrer le PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) de la classe [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor). Le snippet de code suivant vous montre comment ajouter des signets enfants dans un fichier PDF existant.
 ## Voir aussi
 
-Essayez de comparer et de trouver un moyen de travailler avec les signets qui vous convient. Apprenons la section [Travailler avec les signets dans PDF](/pdf/net/bookmarks/).
+Essayez de comparer et de trouver un moyen de travailler avec les signets qui vous convient. Apprenons la section [Travailler avec les signets dans PDF](/pdf/fr/net/bookmarks/).

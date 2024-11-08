@@ -3,7 +3,7 @@ title: استخراج النص الخام من ملف PDF
 linktitle: استخراج النص من PDF
 type: docs
 weight: 10
-url: ar/java/extract-text-from-all-pdf/
+url: /ar/java/extract-text-from-all-pdf/
 description: توضح هذه المقالة طرقًا مختلفة لاستخراج النص من مستندات PDF باستخدام Aspose.PDF لـ Java. من صفحات كاملة، أو من جزء محدد، بناءً على الأعمدة، إلخ.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 在 PDF 中添加图像印章使用 JavaScript 通过 C++
 linktitle: PDF 文件中的图像印章
 type: docs
 weight: 60
-url: zh/javascript-cpp/stamping/
+url: /zh/javascript-cpp/stamping/
 description: 使用 JavaScript 工具包中的 AsposePdfAddStamp 函数将图像印章添加到您的 PDF 文档中。
 lastmod: "2023-04-15"
 sitemap:

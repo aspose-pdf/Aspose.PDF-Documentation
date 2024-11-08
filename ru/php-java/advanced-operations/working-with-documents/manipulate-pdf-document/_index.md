@@ -3,7 +3,7 @@ title: Обработка PDF документа
 linktitle: Обработка PDF документа
 type: docs
 weight: 30
-url: ru/php-java/manipulate-pdf-document/
+url: /ru/php-java/manipulate-pdf-document/
 description: Эта статья содержит информацию о том, как проверить PDF документ на соответствие стандарту PDF A, как работать с ОГС, как установить срок действия PDF, и как определить прогресс генерации PDF файла.
 lastmod: "2024-06-05"
 ---

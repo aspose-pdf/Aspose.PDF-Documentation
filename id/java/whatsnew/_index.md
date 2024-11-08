@@ -3,7 +3,7 @@ title: Apa yang baru
 linktitle: Apa yang baru
 type: docs
 weight: 10
-url: id/java/whatsnew/
+url: /id/java/whatsnew/
 description: Halaman ini memperkenalkan fitur baru paling populer di Aspose.PDF untuk Java yang telah diperkenalkan dalam rilis terbaru.
 sitemap:
     changefreq: "monthly"

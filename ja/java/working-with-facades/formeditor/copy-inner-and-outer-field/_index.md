@@ -2,7 +2,7 @@
 title: 内部フィールドと外部フィールドのコピー
 type: docs
 weight: 40
-url: ja/java/copy-inner-and-outer-field/
+url: /ja/java/copy-inner-and-outer-field/
 description: このセクションでは、FormEditorクラスを使用してcom.aspose.pdf.facadesで内部フィールドと外部フィールドをコピーする方法を説明します。
 lastmod: "2021-06-05"
 draft: false

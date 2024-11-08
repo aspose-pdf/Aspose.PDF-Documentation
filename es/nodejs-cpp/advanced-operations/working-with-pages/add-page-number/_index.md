@@ -3,7 +3,7 @@ title: Añadir numeración de página a PDF en Node.js
 linktitle: Añadir Número de Página
 type: docs
 weight: 100
-url: es/nodejs-cpp/add-page-number/
+url: /es/nodejs-cpp/add-page-number/
 description: Aspose.PDF para Node.js vía C++ te permite añadir un sello de número de página a tu archivo PDF usando AsposePdfAddPageNum.
 lastmod: "2023-11-16"
 sitemap:

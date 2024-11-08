@@ -2,7 +2,7 @@
 title: Обновление размеров страницы в Jython
 type: docs
 weight: 90
-url: ru/java/update-page-dimensions-in-jython/
+url: /ru/java/update-page-dimensions-in-jython/
 lastmod: "2021-06-05"
 ---
 

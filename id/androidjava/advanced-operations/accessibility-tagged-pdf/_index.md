@@ -3,7 +3,7 @@ title: Bekerja dengan Aksesibilitas dan PDF Bertag
 linktitle: Aksesibilitas. PDF Bertag
 type: docs
 weight: 120
-url: id/androidjava/accessibility-tagged-pdf/
+url: /id/androidjava/accessibility-tagged-pdf/
 description: Bab ini menjelaskan kemungkinan untuk membuat dokumen PDF Bertag. Fitur ini memungkinkan untuk menambahkan tag pada dokumen struktural. Pelajari lebih lanjut tentang cara mendapatkan PDF yang terjangkau.
 lastmod: "2021-06-05"
 sitemap:
@@ -20,7 +20,7 @@ Bagian selanjutnya memberikan detail tentang cara menambahkan konten bertanda un
 
 Bagian ini mencakup topik berikut:
 
-- [Buat PDF Bertanda](/pdf/andriodjava/create-tagged-pdf-documents/)
-- [Ekstrak Konten Bertanda dari PDF Bertanda](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)
-- [Mengatur Properti Elemen Struktur](/pdf/androidjava/set-tagged-pdfs-element-properties/)
-- [Bekerja dengan Tabel dalam PDF Bertanda](/pdf/androidjava/working-with-table-in-tagged-pdfs/)
+- [Buat PDF Bertanda](/pdf/id/andriodjava/create-tagged-pdf-documents/)
+- [Ekstrak Konten Bertanda dari PDF Bertanda](/pdf/id/androidjava/extract-tagged-content-from-tagged-pdfs/)
+- [Mengatur Properti Elemen Struktur](/pdf/id/androidjava/set-tagged-pdfs-element-properties/)
+- [Bekerja dengan Tabel dalam PDF Bertanda](/pdf/id/androidjava/working-with-table-in-tagged-pdfs/)

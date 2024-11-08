@@ -3,7 +3,7 @@ title: Prueba de Cumplimiento PDF-UA - Lista de Errores
 linktitle: Prueba de Cumplimiento PDF-UA - Lista de Errores
 type: docs
 weight: 50
-url: es/net/pdf-ua-compliance-test-errors-list/
+url: /es/net/pdf-ua-compliance-test-errors-list/
 description: Este artículo muestra una lista de los errores que pueden surgir durante la prueba de cumplimiento PDF/UA usando la API de Aspose.PDF y C# o VB.
 lastmod: "2022-02-17"
 sitemap:

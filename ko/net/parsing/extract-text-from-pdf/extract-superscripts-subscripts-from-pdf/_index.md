@@ -3,7 +3,7 @@ title: PDF에서 상첨자 및 하첨자 텍스트 추출
 linktitle: 상첨자 및 하첨자 추출
 type: docs
 weight: 30
-url: ko/net/extract-superscripts-subscripts-from-pdf/
+url: /ko/net/extract-superscripts-subscripts-from-pdf/
 description: 이 문서는 C#에서 Aspose.PDF를 사용하여 PDF에서 상첨자 및 하첨자 텍스트를 추출하는 다양한 방법을 설명합니다.
 lastmod: "2022-10-07"
 sitemap:
@@ -21,7 +21,7 @@ PDF 문서에서 텍스트를 추출하는 것은 일반적인 일입니다. 그
 
 **TextFragmentAbsorber** 클래스를 사용하면 찾은 텍스트로 무엇이든 할 수 있습니다. 즉, 전체 텍스트를 그대로 사용할 수 있습니다. 다음 코드 스니펫을 시도해 보세요:
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));
@@ -35,8 +35,8 @@ PDF 문서에서 텍스트를 추출하는 것은 일반적인 일입니다. 그
 
 또는 **TextFragments**를 개별적으로 사용하고 그것들로 다양한 조작을 수행할 수 있습니다. 예를 들어, 좌표나 크기에 따라 정렬합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));

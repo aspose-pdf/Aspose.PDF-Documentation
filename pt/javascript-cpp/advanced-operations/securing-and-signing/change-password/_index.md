@@ -3,7 +3,7 @@ title: Alterar Senha de um Arquivo PDF
 linktitle: Alterar Senha
 type: docs
 weight: 50
-url: pt/javascript-cpp/change-password-pdf/
+url: /pt/javascript-cpp/change-password-pdf/
 description: Alterar Senha de um Arquivo PDF com Aspose.PDF para JavaScript via C++.
 lastmod: "2023-09-13"
 sitemap:

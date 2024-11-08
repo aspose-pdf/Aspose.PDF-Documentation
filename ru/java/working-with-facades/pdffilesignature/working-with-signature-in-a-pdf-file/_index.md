@@ -2,7 +2,7 @@
 title: Работа с Подписью в PDF Файле
 type: docs
 weight: 40
-url: ru/java/working-with-signature-in-a-pdf-file/
+url: /ru/java/working-with-signature-in-a-pdf-file/
 description: В этом разделе объясняется, как работать с Подписью в PDF файле, используя класс PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

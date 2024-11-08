@@ -2,7 +2,7 @@
 title: Menyisipkan Halaman Kosong ke dalam File PDF di Jython
 type: docs
 weight: 70
-url: id/java/insert-an-empty-page-into-a-pdf-file-in-jython/
+url: /id/java/insert-an-empty-page-into-a-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

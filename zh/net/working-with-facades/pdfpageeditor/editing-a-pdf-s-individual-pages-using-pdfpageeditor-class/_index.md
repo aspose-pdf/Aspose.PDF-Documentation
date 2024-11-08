@@ -2,7 +2,7 @@
 title: 编辑 PDF 的单独页面
 type: docs
 weight: 20
-url: zh/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
+url: /zh/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
 description: 本节介绍如何使用 PdfPageEditor 类编辑 PDF 的单独页面。
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF for .NET](/pdf/net/) 中的 Aspose.Pdf.Facades 命名空间允许您操作 PDF 文件中的单独页面。此功能帮助您处理页面显示、对齐和过渡等。PdfPageEditor 类帮助实现此功能。在本文中，我们将研究该类提供的属性和方法以及这些方法的工作原理。
+[Aspose.PDF for .NET](/pdf/zh/net/) 中的 Aspose.Pdf.Facades 命名空间允许您操作 PDF 文件中的单独页面。此功能帮助您处理页面显示、对齐和过渡等。PdfPageEditor 类帮助实现此功能。在本文中，我们将研究该类提供的属性和方法以及这些方法的工作原理。
 
 {{% /alert %}}
 

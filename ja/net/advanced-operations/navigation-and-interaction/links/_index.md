@@ -3,7 +3,7 @@ title: PDF内のリンクをプログラムで操作する
 linktitle: リンク
 type: docs
 weight: 10
-url: ja/net/links/
+url: /ja/net/links/
 description: このガイドでは、PDF内に内部ページリンクを追加する方法や、C#言語でPDFに外部ウェブサイトのハイパーリンクを挿入する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -76,9 +76,9 @@ sitemap:
 }
 </script>
 
-- [リンクの作成](/pdf/net/create-links/) - C#を使用してPDFファイルにリンクを作成する方法を学びます。
-- [リンクの更新](/pdf/net/update-links/) - PDFにターゲットを設定し、リンクの目的地をウェブアドレスに設定し、リンクターゲットを別のPDFファイルに設定し、リンクテキストの色を更新してください。
-- [リンクの抽出](/pdf/net/extract-links) - AnnotationSelectorクラスを使用してPDFファイルからリンクを抽出します。
+- [リンクの作成](/pdf/ja/net/create-links/) - C#を使用してPDFファイルにリンクを作成する方法を学びます。
+- [リンクの更新](/pdf/ja/net/update-links/) - PDFにターゲットを設定し、リンクの目的地をウェブアドレスに設定し、リンクターゲットを別のPDFファイルに設定し、リンクテキストの色を更新してください。
+- [リンクの抽出](/pdf/ja/net/extract-links) - AnnotationSelectorクラスを使用してPDFファイルからリンクを抽出します。
 
 <script type="application/ld+json">
 {

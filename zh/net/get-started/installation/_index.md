@@ -3,7 +3,7 @@ title: 如何安装 Aspose.PDF for .NET
 linktitle: 安装
 type: docs
 weight: 20
-url: zh/net/installation/
+url: /zh/net/installation/
 description: 本节展示了产品描述以及如何在您自己的机器上以及使用 NuGet 安装 Aspose.PDF for .Net 的指南。
 lastmod: "2021-06-05"
 sitemap:

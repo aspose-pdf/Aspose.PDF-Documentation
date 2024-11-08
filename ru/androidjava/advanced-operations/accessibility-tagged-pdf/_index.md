@@ -3,7 +3,7 @@ title: Работа с доступностью и тегированными PD
 linktitle: Доступность. Тегированный PDF
 type: docs
 weight: 120
-url: ru/androidjava/accessibility-tagged-pdf/
+url: /ru/androidjava/accessibility-tagged-pdf/
 description: Эта глава описывает возможность создания тегированных PDF-документов. Эта функция позволяет добавлять теги к структурным документам. Узнайте больше о способах получения доступных PDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -22,7 +22,7 @@ This section covers following topic:
 
 Этот раздел охватывает следующие темы:
 
-- [Create Tagged PDF](/pdf/andriodjava/create-tagged-pdf-documents/)
-- [Extract Tagged Content from Tagged PDFs](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)
-- [Setting Structure Elements Properties](/pdf/androidjava/set-tagged-pdfs-element-properties/)
-- [Working with Table in Tagged PDFs](/pdf/androidjava/working-with-table-in-tagged-pdfs/)
+- [Create Tagged PDF](/pdf/ru/andriodjava/create-tagged-pdf-documents/)
+- [Extract Tagged Content from Tagged PDFs](/pdf/ru/androidjava/extract-tagged-content-from-tagged-pdfs/)
+- [Setting Structure Elements Properties](/pdf/ru/androidjava/set-tagged-pdfs-element-properties/)
+- [Working with Table in Tagged PDFs](/pdf/ru/androidjava/working-with-table-in-tagged-pdfs/)

@@ -3,7 +3,7 @@ title: PDFをプログラムで分割する
 linktitle: PDFファイルを分割する  
 type: docs  
 weight: 60  
-url: ja/java/split-document/  
+url: /ja/java/split-document/  
 description: このトピックでは、JavaアプリケーションでPDFページを個別のPDFファイルに分割する方法を示します。  
 lastmod: "2021-06-05"  
 sitemap:  

@@ -2,7 +2,7 @@
 title: Ruby에서 PDF 만료 설정
 type: docs
 weight: 110
-url: ko/java/set-pdf-expiration-in-ruby/
+url: /ko/java/set-pdf-expiration-in-ruby/
 lastmod: "2021-06-05"
 ---
 

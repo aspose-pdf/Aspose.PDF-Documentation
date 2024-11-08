@@ -3,7 +3,7 @@ title: Konversi JPG ke PDF
 linktitle: Konversi JPG ke PDF 
 type: docs
 weight: 190
-url: id/androidjava/convert-jpg-to-pdf/
+url: /id/androidjava/convert-jpg-to-pdf/
 lastmod: "2021-06-05"
 description: Pelajari cara mudah mengonversi gambar JPG ke file PDF. Juga, Anda dapat mengonversi gambar ke PDF dengan tinggi dan lebar halaman yang sama.
 sitemap:

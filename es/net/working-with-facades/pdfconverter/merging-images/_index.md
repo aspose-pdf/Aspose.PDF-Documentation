@@ -2,7 +2,7 @@
 title: Unir imágenes
 type: docs
 weight: 20
-url: es/net/merge-images/
+url: /es/net/merge-images/
 description: Esta sección explica cómo unir imágenes, y es posible guardar en formato Tiff.
 lastmod: "2021-06-05"
 draft: false

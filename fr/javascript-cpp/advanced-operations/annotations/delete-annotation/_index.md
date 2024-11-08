@@ -3,7 +3,7 @@ title: Supprimer une Annotation en utilisant JavaScript
 linktitle: Supprimer une Annotation
 type: docs
 weight: 10
-url: fr/javascript-cpp/delete-annotation/
+url: /fr/javascript-cpp/delete-annotation/
 description: Avec Aspose.PDF pour JavaScript, vous pouvez supprimer une annotation de votre fichier PDF.
 lastmod: "2023-02-17"
 sitemap:

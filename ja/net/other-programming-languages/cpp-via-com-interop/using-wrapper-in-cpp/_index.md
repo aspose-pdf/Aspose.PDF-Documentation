@@ -2,14 +2,14 @@
 title: CPPでラッパーを使用する
 type: docs
 weight: 30
-url: ja/net/using-wrapper-in-cpp/
+url: /ja/net/using-wrapper-in-cpp/
 ---
 
 ## 前提条件
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for .NETをCOM Interopで登録してください。[Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)という記事を参照してください。
+Aspose.PDF for .NETをCOM Interopで登録してください。[Use Aspose.pdf for .NET via COM Interop](/pdf/ja/net/use-aspose-pdf-for-net-via-com-interop/)という記事を参照してください。
 
 {{% /alert %}}
 

@@ -3,7 +3,7 @@ title: Ekstrak Tabel dari PDF
 linktitle: Ekstrak Tabel
 type: docs
 weight: 20
-url: id/cpp/extract-table-from-existing-pdf-document/
+url: /id/cpp/extract-table-from-existing-pdf-document/
 description: Aspose.PDF untuk C++ memungkinkan untuk melakukan berbagai manipulasi dengan tabel yang terdapat dalam dokumen pdf Anda. Anda dapat menambahkan dan mengekstrak tabel dalam dokumen PDF yang ada, merender tabel pada halaman baru, dan lain-lain.
 lastmod: "2021-11-11"
 sitemap:

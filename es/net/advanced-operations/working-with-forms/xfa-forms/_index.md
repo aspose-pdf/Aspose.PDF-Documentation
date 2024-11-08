@@ -3,7 +3,7 @@ title: Trabajando con Formularios XFA
 linktitle: Formularios XFA
 type: docs
 weight: 20
-url: es/net/xfa-forms/
+url: /es/net/xfa-forms/
 description: Aspose.PDF para .NET API le permite trabajar con campos XFA y XFA Acroform en un documento PDF. Las fachadas de Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ Los formularios dinámicos se basan en una especificación XML conocida como XFA
 
 La clase Form proporciona la capacidad para tratar con AcroForm estático y puedes obtener una instancia de campo particular utilizando el método GetFieldFacade(..) de la clase Form. Sin embargo, los campos XFA no se pueden acceder mediante el método Form.GetFieldFacade(..). En su lugar, usa [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) para obtener/establecer valores de campos y manipular la plantilla de campo XFA (establecer propiedades de campo).
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Llenar campos XFA
 

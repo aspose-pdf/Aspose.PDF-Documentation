@@ -3,7 +3,7 @@ title: Конвертировать различные форматы изобр
 linktitle: Конвертировать изображения в PDF
 type: docs
 weight: 60
-url: ru/java/convert-images-format-to-pdf/
+url: /ru/java/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: Эта тема показывает, как библиотека Aspose.PDF для Java позволяет конвертировать различные форматы изображений в PDF.
 sitemap:

@@ -3,7 +3,7 @@ title: إضافة كائن دائرة إلى ملف PDF
 linktitle: إضافة دائرة
 type: docs
 weight: 20
-url: ar/cpp/add-circle/
+url: /ar/cpp/add-circle/
 description: تشرح هذه المقالة كيفية إنشاء كائن دائرة إلى ملف PDF باستخدام Aspose.PDF لـ C++.
 lastmod: "2021-12-18"
 sitemap:

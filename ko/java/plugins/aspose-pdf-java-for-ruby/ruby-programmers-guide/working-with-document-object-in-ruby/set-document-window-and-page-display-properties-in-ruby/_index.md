@@ -2,7 +2,7 @@
 title: Ruby에서 문서 창 및 페이지 표시 속성 설정
 type: docs
 weight: 100
-url: ko/java/set-document-window-and-page-display-properties-in-ruby/
+url: /ko/java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

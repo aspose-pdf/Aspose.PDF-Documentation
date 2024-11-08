@@ -3,7 +3,7 @@ title: Fitur Lanjutan
 linktitle: Fitur Lanjutan
 type: docs
 weight: 120
-url: id/java/advanced-features/
+url: /id/java/advanced-features/
 description: Bagian ini menunjukkan bagaimana Anda dapat menggunakan Tag LaTeX dalam dokumen PDF dengan Aspose.PDF untuk Java.
 lastmod: "2022-01-11"
 sitemap:

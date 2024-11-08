@@ -2,7 +2,7 @@
 title: Adicionar TOC a um PDF Existente em Python
 type: docs
 weight: 20
-url: pt/java/add-toc-to-existing-pdf-in-python/
+url: /pt/java/add-toc-to-existing-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

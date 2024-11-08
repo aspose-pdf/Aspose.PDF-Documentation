@@ -3,7 +3,7 @@ title: 複雑なPDFの作成
 linktitle: 複雑なPDFの作成
 type: docs
 weight: 60
-url: ja/php-java/complex-pdf-example/
+url: /ja/php-java/complex-pdf-example/
 description: Aspose.PDF for PHP via Javaを使用すると、画像、テキストフラグメント、テーブルを含むより複雑なドキュメントを作成できます。
 lastmod: "2024-06-05"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/php-java/hello-world-example/)の例では、Aspose.PDFを使用してPDFドキュメントを作成する簡単な手順を示しました。この記事では、Aspose.PDF for PHP via Javaを使用してより複雑なドキュメントを作成する方法を見ていきます。例として、旅客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。
+[Hello, World](/pdf/ja/php-java/hello-world-example/)の例では、Aspose.PDFを使用してPDFドキュメントを作成する簡単な手順を示しました。この記事では、Aspose.PDF for PHP via Javaを使用してより複雑なドキュメントを作成する方法を見ていきます。例として、旅客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。
 
 ドキュメントをゼロから作成する場合、特定の手順に従う必要があります：
 

@@ -2,7 +2,7 @@
 title: Update, Delete and Get Bookmarks
 type: docs
 weight: 30
-url: ja/net/update-delete-and-get-bookmarks/
+url: /ja/net/update-delete-and-get-bookmarks/
 description: このセクションでは、Aspose.PDF Facadesを使用してブックマークを更新、削除、および取得する方法について説明します。
 lastmod: "2021-06-05"
 draft: false

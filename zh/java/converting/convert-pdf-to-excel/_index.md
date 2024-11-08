@@ -3,7 +3,7 @@ title: 将PDF转换为Excel
 linktitle: 将PDF转换为Excel
 type: docs
 weight: 20
-url: zh/java/convert-pdf-to-excel/
+url: /zh/java/convert-pdf-to-excel/
 lastmod: "2021-11-19"
 keywords: 使用Java将PDF转换为Excel, 使用Java将PDF转换为XLS, 使用Java将PDF转换为XLSX, 在Java中将PDF中的表格导出到Excel
 description: Aspose.PDF for Java允许您使用Java将PDF转换为Excel格式。在此过程中，PDF文件的各个页面被转换为Excel工作表。

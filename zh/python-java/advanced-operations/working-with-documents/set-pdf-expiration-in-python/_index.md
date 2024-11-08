@@ -2,7 +2,7 @@
 title: 在 Python 中设置 PDF 过期
 type: docs
 weight: 80
-url: zh/python-java/set-pdf-expiration-in-python/
+url: /zh/python-java/set-pdf-expiration-in-python/
 ---
 
 <ins>要使用 **Aspose.PDF Java for Python** 设置 PDF 文档的过期，只需调用 **SetExpiration** 类。

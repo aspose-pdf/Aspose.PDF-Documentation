@@ -3,7 +3,7 @@ title: Программное разделение PDF
 linktitle: Разделение PDF файлов
 type: docs
 weight: 60
-url: ru/php-java/split-document/
+url: /ru/php-java/split-document/
 description: Эта тема показывает, как разделить страницы PDF на отдельные PDF файлы в ваших PHP приложениях.
 lastmod: "2024-06-05"
 sitemap:

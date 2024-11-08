@@ -3,7 +3,7 @@ title: إضافة رأس وتذييل إلى ملف PDF
 linktitle: إضافة رأس وتذييل
 type: docs
 weight: 70
-url: ar/java/add-headers-and-footers-of-pdf-file/
+url: /ar/java/add-headers-and-footers-of-pdf-file/
 description: يسمح لك Aspose.PDF for Java بإضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام فئة TextStamp.
 lastmod: "2021-06-05"
 sitemap:

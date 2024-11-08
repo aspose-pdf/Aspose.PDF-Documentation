@@ -2,7 +2,7 @@
 title: Adicionar Carimbo de Página PDF
 type: docs
 weight: 10
-url: pt/net/add-pdf-page-stamp/
+url: /pt/net/add-pdf-page-stamp/
 description: Esta seção explica como trabalhar com Aspose.PDF Facades usando a Classe PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

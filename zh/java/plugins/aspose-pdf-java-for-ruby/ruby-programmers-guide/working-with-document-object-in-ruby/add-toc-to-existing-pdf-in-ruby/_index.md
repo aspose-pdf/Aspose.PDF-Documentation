@@ -2,7 +2,7 @@
 title: 将目录添加到现有的PDF中使用Ruby
 type: docs
 weight: 30
-url: zh/java/add-toc-to-existing-pdf-in-ruby/
+url: /zh/java/add-toc-to-existing-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

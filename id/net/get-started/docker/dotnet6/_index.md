@@ -3,7 +3,7 @@ title: Cara menjalankan Aspose.PDF untuk .NET 6 di Docker
 linktitle: Menggunakan Aspose.PDF untuk .NET 6 di Docker
 type: docs
 weight: 10
-url: id/net/docker/dotnet6/
+url: /id/net/docker/dotnet6/
 description: Mengintegrasikan fungsionalitas Aspose.PDF ke dalam aplikasi Anda menggunakan kontainer Docker Linux atau Windows
 lastmod: "2024-01-21"
 sitemap:
@@ -30,12 +30,12 @@ Berikut adalah contoh yang telah diuji dengan:
 
 ### Menghasilkan Dokumen PDF Menggunakan Aplikasi Web ASP.NET Core di Kontainer Linux
 
-Kita akan menggunakan kode dari **Contoh Kompleks** dalam aplikasi ini. Silakan ikuti [tautan ini](/pdf/net/complex-pdf-example/) untuk penjelasan yang lebih rinci.
+Kita akan menggunakan kode dari **Contoh Kompleks** dalam aplikasi ini. Silakan ikuti [tautan ini](/pdf/id/net/complex-pdf-example/) untuk penjelasan yang lebih rinci.
 
-1. Buat folder `images` di folder `wwwroot` dan masukkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/net/docker/logo.png)
+1. Buat folder `images` di folder `wwwroot` dan masukkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/id/net/docker/logo.png)
 1. Gantikan kode di `HomeController.cs` dengan potongan kode berikut (perhatikan bahwa Anda mungkin memiliki namespace lain):
 
-Potongan kode berikut ini juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut ini juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```cs
 using Aspose.Pdf;
@@ -193,7 +193,7 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 Kami akan menggunakan kode yang sama seperti contoh sebelumnya.
 
-1. Buat folder `images` di folder `wwwroot` dan masukkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/net/docker/logo.png)
+1. Buat folder `images` di folder `wwwroot` dan masukkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/id/net/docker/logo.png)
 1. Ganti kode di `HomeController.cs` dengan potongan di atas.
 
 ```dockerfile

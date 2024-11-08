@@ -3,7 +3,7 @@ title: 新功能
 linktitle: 新功能
 type: docs
 weight: 10
-url: zh/nodejs-cpp/whatsnew/
+url: /zh/nodejs-cpp/whatsnew/
 description: 本页介绍了通过 C++ 在 Aspose.PDF for Node.js 中最近发布的最受欢迎的新功能。
 sitemap:
     changefreq: "monthly"

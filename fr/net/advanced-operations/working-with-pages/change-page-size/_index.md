@@ -3,7 +3,7 @@ title: Changer la taille de page PDF avec C#
 linktitle: Changer la taille de page PDF
 type: docs
 weight: 40
-url: fr/net/change-page-size/
+url: /fr/net/change-page-size/
 description: Changer la taille de page de votre document PDF en utilisant la bibliothèque Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Aspose.PDF pour .NET vous permet de changer la taille de page d'un PDF avec quelques lignes de code dans vos applications .NET. Ce sujet explique comment mettre à jour/changer les dimensions de la page (taille) d'un fichier PDF existant.
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 La classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) contient la méthode SetPageSize(...) qui vous permet de définir la taille de la page. Le fragment de code ci-dessous met à jour les dimensions de la page en quelques étapes faciles :
 

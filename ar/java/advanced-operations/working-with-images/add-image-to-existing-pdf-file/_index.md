@@ -3,7 +3,7 @@ title: إضافة صورة إلى ملف PDF موجود
 linktitle: إضافة صورة
 type: docs
 weight: 10
-url: ar/java/add-image-to-existing-pdf-file/
+url: /ar/java/add-image-to-existing-pdf-file/
 description: يصف هذا القسم كيفية إضافة صورة إلى ملف PDF موجود باستخدام مكتبة Java.
 lastmod: "2021-06-05"
 ---

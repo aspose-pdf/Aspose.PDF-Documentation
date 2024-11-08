@@ -3,7 +3,7 @@ title: 禁用将文件作为嵌入资源添加时的压缩
 linktitle: 禁用文件压缩
 type: docs
 weight: 40
-url: zh/java/disable-files-compression-when-adding-as-embedded-resources/
+url: /zh/java/disable-files-compression-when-adding-as-embedded-resources/
 description: 本文解释了如何在将文件添加为嵌入资源时禁用压缩
 lastmod: "2021-06-05"
 ---

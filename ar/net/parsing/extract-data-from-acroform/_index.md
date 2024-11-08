@@ -3,7 +3,7 @@ title:  استخراج البيانات من AcroForm باستخدام C#
 linktitle:  استخراج البيانات من AcroForm
 type: docs
 weight: 50
-url: ar/net/extract-data-from-acroform/
+url: /ar/net/extract-data-from-acroform/
 description: يسهل Aspose.PDF استخراج بيانات حقل النموذج من ملفات PDF. تعرف على كيفية استخراج البيانات من AcroForms وحفظها في تنسيق JSON، XML، أو FDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -17,7 +17,7 @@ sitemap:
 
 في الكود المثال أدناه نوضح كيفية التكرار عبر كل صفحة في مستند PDF لاستخراج معلومات حول جميع AcroForm في PDF بالإضافة إلى قيم حقول النموذج. يفترض هذا الكود المثال أنك لا تعرف اسم حقول النموذج مسبقًا.
 
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 public static void ExtractFormFields()
@@ -39,7 +39,7 @@ public static void ExtractFormFields()
 
 ## استخراج حقول النموذج من مستند PDF إلى JSON
 
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 public static void ExtractFormFieldsToJson()
@@ -54,7 +54,7 @@ public static void ExtractFormFieldsToJson()
 
 تتيح لك فئة النموذج تصدير البيانات إلى ملف XML من ملف PDF باستخدام طريقة ExportXml. لتصدير البيانات إلى XML، تحتاج إلى إنشاء كائن من فئة النموذج ثم استدعاء طريقة ExportXml باستخدام كائن FileStream. أخيرًا، يمكنك إغلاق كائن FileStream وتجاهل كائن النموذج. يظهر الشفرة التالية كيفية تصدير البيانات إلى ملف XML.
 
-يعمل الشفرة التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الشفرة التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
@@ -78,7 +78,7 @@ form.Dispose();
 
 تتيح لك فئة النموذج تصدير البيانات إلى ملف FDF من ملف PDF باستخدام طريقة ExportFdf. لتصدير البيانات إلى FDF، تحتاج إلى إنشاء كائن من فئة النموذج ثم استدعاء طريقة ExportFdf باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام طريقة Save لفئة النموذج. يوضح الشفرة التالية كيفية تصدير البيانات إلى ملف FDF.
 
-تعمل الشفرة التالية أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل الشفرة التالية أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // لأمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
@@ -105,7 +105,7 @@ form.Save(dataDir + "ExportDataToPdf_out.pdf");
 
 تسمح لك فئة النموذج بتصدير البيانات إلى ملف XFDF من ملف PDF باستخدام طريقة ExportXfdf. لتصدير البيانات إلى XFDF، تحتاج إلى إنشاء كائن من فئة النموذج ثم استدعاء طريقة ExportXfdf باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام طريقة Save الخاصة بفئة النموذج. يوضح لقطة الكود التالية كيفية تصدير البيانات إلى ملف XFDF.
 
-لقطة الكود التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+لقطة الكود التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

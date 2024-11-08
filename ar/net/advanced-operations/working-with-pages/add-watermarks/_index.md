@@ -3,7 +3,7 @@ title: إضافة علامة مائية إلى PDF باستخدام C#
 linktitle: إضافة علامة مائية
 type: docs
 weight: 90
-url: ar/net/add-watermarks/
+url: /ar/net/add-watermarks/
 description: يشرح هذا المقال ميزات العمل مع الأدوات والحصول على العلامات المائية في ملفات PDF باستخدام C# برمجيًا.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 </script>
 **Aspose.PDF لـ .NET** يتيح إضافة العلامات المائية لمستند PDF الخاص بك باستخدام الأدوات. يرجى مراجعة هذه المقالة لحل مهمتك.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 العلامة المائية المُنشأة بواسطة Adobe Acrobat تُسمى أداة (كما ورد في 14.8.2.2 المحتوى الحقيقي والأدوات في مواصفات PDF). من أجل العمل مع الأدوات، لدى Aspose.PDF فئتان: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) و [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

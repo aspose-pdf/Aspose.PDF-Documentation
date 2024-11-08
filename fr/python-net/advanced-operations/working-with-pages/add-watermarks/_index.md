@@ -3,7 +3,7 @@ title: Ajouter un filigrane à un PDF en utilisant Python
 linktitle: Ajouter un filigrane
 type: docs
 weight: 40
-url: fr/python-net/add-watermarks/
+url: /fr/python-net/add-watermarks/
 description: Cet article explique les fonctionnalités de travail avec les artefacts et l'obtention de filigranes dans les PDFs en utilisant Python de manière programmatique.
 lastmod: "2023-04-17"
 sitemap:

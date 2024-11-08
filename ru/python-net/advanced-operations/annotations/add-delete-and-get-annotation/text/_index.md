@@ -3,7 +3,7 @@ title: Использование текстовой аннотации для P
 linktitle: Текстовая аннотация
 type: docs
 weight: 10
-url: ru/python-net/text-annotation/
+url: /ru/python-net/text-annotation/
 description: Aspose.PDF для Python позволяет добавлять, получать и удалять текстовые аннотации из вашего PDF документа.
 lastmod: "2023-02-17"
 sitemap:

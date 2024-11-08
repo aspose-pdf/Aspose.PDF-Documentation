@@ -3,7 +3,7 @@ title: Bekerja dengan Gambar dalam PDF menggunakan C#
 linktitle: Bekerja dengan Gambar
 type: docs
 weight: 40
-url: id/net/working-with-images/
+url: /id/net/working-with-images/
 description: Bagian ini menjelaskan fitur-fitur bekerja dengan gambar dalam file PDF menggunakan perpustakaan C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -88,17 +88,17 @@ Menggunakan perpustakaan C# kami juga merupakan opsi yang membantu jika Anda per
 Anda dapat melakukan hal-hal berikut:
 Anda dapat melakukan hal berikut:
 
-- [Menambahkan Gambar ke File PDF yang Ada](/pdf/net/add-image-to-existing-pdf-file/) - menambahkan gambar dan referensi dari satu gambar dalam dokumen PDF, setelah itu kontrol kualitas.
-- [Menghapus Gambar dari File PDF](/pdf/net/delete-images-from-pdf-file/) - periksa potongan kode untuk menghapus gambar dari file PDF.
-- [Menarik Gambar dari File PDF](/pdf/net/extract-images-from-pdf-file/) - gunakan koleksi Gambar untuk menarik gambar dari file PDF.
-- [Mendapatkan Resolusi dan Dimensi Gambar yang Tersemat](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - gunakan kelas operator dalam namespace Aspose.PDF yang menyediakan kemampuan untuk mendapatkan informasi resolusi dan dimensi.
-- [Bekerja dengan Penempatan Gambar](/pdf/net/working-with-image-placement/) - dimungkinkan untuk mendapatkan resolusi dan posisi gambar dalam dokumen PDF.
-- [Mencari dan Mendapatkan Gambar dari Dokumen PDF](/pdf/net/search-and-get-images-from-pdf-document/) - Anda dapat mendapatkan gambar dari halaman individu dan mencari di antara gambar di semua halaman dengan C#.
-- [Cari dan Dapatkan Gambar dari Dokumen PDF](/pdf/net/search-and-get-images-from-pdf-document/) - Anda dapat mengambil gambar dari halaman individu dan mencari di antara gambar di semua halaman dengan C#.
-- [Ganti Gambar di File PDF yang Ada](/pdf/net/replace-image-in-existing-pdf-file/) - periksa potongan kode kami, ini menunjukkan cara mengganti gambar dalam file PDF.
-- [Atur Ukuran Gambar](/pdf/net/set-image-size/) - Perpustakaan C# memungkinkan Anda untuk mengatur ukuran gambar.
-- [Atur Nama Font Default](/pdf/net/set-default-font-name/) - Mengatur Nama Font Default untuk proses konversi.
-- [Hasilkan Gambar Mini dari Dokumen PDF](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - artikel berikut menunjukkan cara menghasilkan gambar mini dari dokumen PDF menggunakan terlebih dahulu SDK Acrobat dan kemudian Aspose.PDF.
+- [Menambahkan Gambar ke File PDF yang Ada](/pdf/id/net/add-image-to-existing-pdf-file/) - menambahkan gambar dan referensi dari satu gambar dalam dokumen PDF, setelah itu kontrol kualitas.
+- [Menghapus Gambar dari File PDF](/pdf/id/net/delete-images-from-pdf-file/) - periksa potongan kode untuk menghapus gambar dari file PDF.
+- [Menarik Gambar dari File PDF](/pdf/id/net/extract-images-from-pdf-file/) - gunakan koleksi Gambar untuk menarik gambar dari file PDF.
+- [Mendapatkan Resolusi dan Dimensi Gambar yang Tersemat](/pdf/id/net/get-resolution-and-dimensions-of-embedded-images/) - gunakan kelas operator dalam namespace Aspose.PDF yang menyediakan kemampuan untuk mendapatkan informasi resolusi dan dimensi.
+- [Bekerja dengan Penempatan Gambar](/pdf/id/net/working-with-image-placement/) - dimungkinkan untuk mendapatkan resolusi dan posisi gambar dalam dokumen PDF.
+- [Mencari dan Mendapatkan Gambar dari Dokumen PDF](/pdf/id/net/search-and-get-images-from-pdf-document/) - Anda dapat mendapatkan gambar dari halaman individu dan mencari di antara gambar di semua halaman dengan C#.
+- [Cari dan Dapatkan Gambar dari Dokumen PDF](/pdf/id/net/search-and-get-images-from-pdf-document/) - Anda dapat mengambil gambar dari halaman individu dan mencari di antara gambar di semua halaman dengan C#.
+- [Ganti Gambar di File PDF yang Ada](/pdf/id/net/replace-image-in-existing-pdf-file/) - periksa potongan kode kami, ini menunjukkan cara mengganti gambar dalam file PDF.
+- [Atur Ukuran Gambar](/pdf/id/net/set-image-size/) - Perpustakaan C# memungkinkan Anda untuk mengatur ukuran gambar.
+- [Atur Nama Font Default](/pdf/id/net/set-default-font-name/) - Mengatur Nama Font Default untuk proses konversi.
+- [Hasilkan Gambar Mini dari Dokumen PDF](/pdf/id/net/generate-thumbnail-images-from-pdf-documents/) - artikel berikut menunjukkan cara menghasilkan gambar mini dari dokumen PDF menggunakan terlebih dahulu SDK Acrobat dan kemudian Aspose.PDF.
 - Dukungan untuk Gambar DICOM - Aspose.PDF untuk .NET mendukung standar grafis medis khusus dari gambar.
 - Dukungan untuk Gambar DICOM - Aspose.PDF untuk .NET mendukung standar grafis medis khusus dari gambar.
 

@@ -3,7 +3,7 @@ title: Infobulle PDF en utilisant C++
 linktitle: Infobulle PDF
 type: docs
 weight: 20
-url: fr/cpp/pdf-tooltip/
+url: /fr/cpp/pdf-tooltip/
 description: Apprenez à ajouter une infobulle à un fragment de texte dans un PDF en utilisant C++ et Aspose.PDF
 lastmod: "2021-12-13"
 sitemap:

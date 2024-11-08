@@ -3,7 +3,7 @@ title: Hapus Halaman PDF dengan JavaScript melalui C++
 linktitle: Hapus Halaman PDF
 type: docs
 weight: 30
-url: id/javascript-cpp/delete-pages/
+url: /id/javascript-cpp/delete-pages/
 description: Anda dapat menghapus halaman dari file PDF Anda menggunakan Aspose.PDF untuk JavaScript melalui C++.
 lastmod: "2023-04-17"
 sitemap:

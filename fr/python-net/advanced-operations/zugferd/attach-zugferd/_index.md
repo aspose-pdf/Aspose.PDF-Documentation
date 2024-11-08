@@ -3,7 +3,7 @@ title: Création d'un PDF conforme à PDF/3-A et attachement de facture ZUGFeRD 
 linktitle: Attacher ZUGFeRD au PDF
 type: docs
 weight: 10
-url: fr/python-net/attach-zugferd/
+url: /fr/python-net/attach-zugferd/
 description: Découvrez comment générer un document PDF avec ZUGFeRD dans Aspose.PDF pour Python via .NET
 lastmod: "2024-01-18"
 sitemap:

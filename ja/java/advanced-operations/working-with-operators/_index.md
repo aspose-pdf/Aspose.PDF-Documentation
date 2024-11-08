@@ -3,7 +3,7 @@ title: 演算子の操作
 linktitle: 演算子の操作
 type: docs
 weight: 170
-url: ja/java/operators/
+url: /ja/java/operators/
 description: このトピックでは、Aspose.PDFで演算子を使用する方法を説明します。演算子クラスはPDF操作に優れた機能を提供します。
 lastmod: "2021-06-05"
 sitemap:

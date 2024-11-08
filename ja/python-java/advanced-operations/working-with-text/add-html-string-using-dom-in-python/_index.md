@@ -2,7 +2,7 @@
 title: PythonでDOMを使用してHTML文字列を追加
 type: docs
 weight: 10
-url: ja/python-java/add-html-string-using-dom-in-python/
+url: /ja/python-java/add-html-string-using-dom-in-python/
 ---
 
 **Aspose.PDF Java for Python**を使用してPdfドキュメントにHTML文字列を追加するには、単に**AddHtml**モジュールを呼び出します。

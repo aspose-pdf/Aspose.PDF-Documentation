@@ -3,7 +3,7 @@ title: 从 PDF 文档生成缩略图
 linktitle: 生成缩略图
 type: docs
 weight: 100
-url: zh/java/generate-thumbnail-images-from-pdf-documents/
+url: /zh/java/generate-thumbnail-images-from-pdf-documents/
 description: 本节介绍如何使用 Aspose.PDF for Java 从 PDF 文档生成缩略图。
 lastmod: "2021-06-05"
 ---

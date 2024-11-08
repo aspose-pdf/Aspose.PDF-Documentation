@@ -2,7 +2,7 @@
 title: Установить предпочтения просмотра PDF
 type: docs
 weight: 60
-url: ru/net/set-viewer-preference-of-an-existing-pdf-file/
+url: /ru/net/set-viewer-preference-of-an-existing-pdf-file/
 description: Этот раздел показывает, как установить предпочтения просмотра существующего PDF файла с использованием класса PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

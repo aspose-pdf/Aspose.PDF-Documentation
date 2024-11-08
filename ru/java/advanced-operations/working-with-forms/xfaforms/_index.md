@@ -3,7 +3,7 @@ title: Работа с XFA формами в PDF
 linktitle: XFA Формы
 type: docs
 weight: 20
-url: ru/java/xfa-forms/
+url: /ru/java/xfa-forms/
 description: С Aspose.PDF для Java вы можете создать форму с нуля, заполнить поле формы в PDF документе, извлечь данные из формы, добавить или удалить поля в существующей форме.
 lastmod: "2021-06-05"
 sitemap:

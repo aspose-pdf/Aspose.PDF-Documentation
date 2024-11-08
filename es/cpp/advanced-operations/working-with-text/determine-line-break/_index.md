@@ -3,7 +3,7 @@ title: Determinar el Salto de Línea en TextFragment
 linktitle: Determinar el Salto de Línea
 type: docs
 weight: 70
-url: es/cpp/determine-line-break/
+url: /es/cpp/determine-line-break/
 description: Aprende más sobre cómo determinar un salto de línea de un TextFragment de varias líneas usando C++
 lastmod: "2021-12-13"
 sitemap:

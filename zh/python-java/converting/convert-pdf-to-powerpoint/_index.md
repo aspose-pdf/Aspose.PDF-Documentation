@@ -3,7 +3,7 @@ title: 将 PDF 转换为 PowerPoint 在 Python 中
 linktitle: 将 PDF 转换为 PowerPoint
 type: docs
 weight: 30
-url: zh/python-java/convert-pdf-to-powerpoint/
+url: /zh/python-java/convert-pdf-to-powerpoint/
 description: Aspose.PDF 允许您使用 Python 将 PDF 转换为 PPT (PowerPoint) 格式。可以将 PDF 转换为带有幻灯片图像的 PPTX。
 lastmod: "2023-04-06"
 sitemap:

@@ -2,7 +2,7 @@
 title: 다운로드 및 Aspose.Pdf를 Struts 1.3에서 구성하기
 type: docs
 weight: 10
-url: ko/java/downloads-and-configure-aspose-pdf-in-struts-1-3/
+url: /ko/java/downloads-and-configure-aspose-pdf-in-struts-1-3/
 lastmod: "2021-06-05"
 ---
 

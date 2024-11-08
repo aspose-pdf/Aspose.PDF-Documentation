@@ -2,7 +2,7 @@
 linktitle: تحويل صيغ الملفات الأخرى إلى PDF
 type: docs
 weight: 80
-url: ar/cpp/convert-other-files-to-pdf/
+url: /ar/cpp/convert-other-files-to-pdf/
 lastmod: "2021-11-19"
 description: يوضح هذا الموضوع كيف يسمح Aspose.PDF بتحويل صيغ الملفات الأخرى إلى مستند PDF.
 sitemap:

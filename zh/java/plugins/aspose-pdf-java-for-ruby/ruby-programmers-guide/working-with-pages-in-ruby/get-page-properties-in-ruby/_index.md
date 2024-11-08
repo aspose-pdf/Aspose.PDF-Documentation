@@ -2,7 +2,7 @@
 title: 获取 Ruby 中的页面属性
 type: docs
 weight: 50
-url: zh/java/get-page-properties-in-ruby/
+url: /zh/java/get-page-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

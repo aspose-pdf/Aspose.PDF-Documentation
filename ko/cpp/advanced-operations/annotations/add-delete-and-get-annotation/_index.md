@@ -3,7 +3,7 @@ title: Aspose.PDF for C++를 사용하여 주석 추가, 삭제 및 가져오기
 type: docs
 linktitle: 주석 추가, 삭제 및 가져오기
 weight: 20
-url: ko/cpp/add-delete-and-get-annotation/
+url: /ko/cpp/add-delete-and-get-annotation/
 description: Aspose.PDF for C++를 사용하여 PDF 파일에서 주석을 추가, 삭제 및 가져올 수 있습니다. 작업을 해결하기 위해 모든 주석 목록을 확인하세요.
 lastmod: "2021-11-24"
 sitemap:
@@ -17,10 +17,10 @@ sitemap:
 
 Aspose.PDF for C++ 라이브러리에서 사용할 수 있는 다양한 종류의 주석을 그룹으로 결합했습니다:
 
-- [PDF 텍스트 주석](/pdf/cpp/text-annotation/)
-- [PDF 강조 표시 주석](/pdf/cpp/highlights-annotation/)
-- [PDF 도형 주석](/pdf/cpp/figures-annotation/)
+- [PDF 텍스트 주석](/pdf/ko/cpp/text-annotation/)
+- [PDF 강조 표시 주석](/pdf/ko/cpp/highlights-annotation/)
+- [PDF 도형 주석](/pdf/ko/cpp/figures-annotation/)
 
-- [멀티미디어 주석](/pdf/cpp/multimedia-annotation/)
-- [추가 주석](/pdf/cpp/extra-annotations/)
-- [고정 주석](/pdf/cpp/sticky-annotations/)
+- [멀티미디어 주석](/pdf/ko/cpp/multimedia-annotation/)
+- [추가 주석](/pdf/ko/cpp/extra-annotations/)
+- [고정 주석](/pdf/ko/cpp/sticky-annotations/)

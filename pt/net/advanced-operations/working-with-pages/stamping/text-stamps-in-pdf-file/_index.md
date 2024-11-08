@@ -3,7 +3,7 @@ title: Adicionar selos de texto em PDF C#
 linktitle: Selos de texto em arquivo PDF
 type: docs
 weight: 20
-url: pt/net/text-stamps-in-the-pdf-file/
+url: /pt/net/text-stamps-in-the-pdf-file/
 description: Adicione um selo de texto a um documento PDF usando a classe TextStamp com a biblioteca Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) para adicionar um carimbo de texto em um arquivo PDF. A classe TextStamp fornece propriedades necessárias para criar um carimbo baseado em texto como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar um carimbo de texto, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Depois disso, você pode chamar o método AddStamp da Página para adicionar o carimbo no PDF.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como adicionar um carimbo de texto no arquivo PDF.
 

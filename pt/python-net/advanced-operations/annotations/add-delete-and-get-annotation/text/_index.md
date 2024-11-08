@@ -3,7 +3,7 @@ title: Usando Anotação de Texto para PDF via Python
 linktitle: Anotação de Texto
 type: docs
 weight: 10
-url: pt/python-net/text-annotation/
+url: /pt/python-net/text-annotation/
 description: Aspose.PDF para Python permite que você Adicione, Obtenha e Exclua Anotações de Texto do seu documento PDF.
 lastmod: "2023-02-17"
 sitemap:

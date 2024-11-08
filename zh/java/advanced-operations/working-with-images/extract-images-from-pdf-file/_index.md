@@ -3,7 +3,7 @@ title: 从PDF文件中提取图像
 linktitle: 提取图像
 type: docs
 weight: 30
-url: zh/java/extract-images-from-pdf-file/
+url: /zh/java/extract-images-from-pdf-file/
 description: 本节介绍如何使用Java库从PDF文件中提取图像。
 lastmod: "2021-06-05"
 ---

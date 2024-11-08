@@ -3,7 +3,7 @@ title: تدوير صفحات PDF باستخدام C#
 linktitle: تدوير صفحات PDF
 type: docs
 weight: 50
-url: ar/net/rotate-pages/
+url: /ar/net/rotate-pages/
 description: يصف هذا الموضوع كيفية تدوير اتجاه الصفحة في ملف PDF موجود برمجيًا باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 يصف هذا الموضوع كيفية تحديث أو تغيير توجيه الصفحات في ملف PDF موجود برمجيًا باستخدام C#.
 
-الجزء التالي من الكود يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الجزء التالي من الكود يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تغيير توجيه الصفحة
 

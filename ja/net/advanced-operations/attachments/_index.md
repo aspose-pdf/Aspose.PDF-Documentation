@@ -3,7 +3,7 @@ title: PDFでの添付ファイルの操作
 linktitle: 添付ファイルの操作
 type: docs
 weight: 130
-url: ja/net/attachments/
+url: /ja/net/attachments/
 description: C# PDF APIを使用して、アプリケーション内からPDFファイルのアクセス、追加、および削除を行う方法。C#のコードサンプル付き完全ガイド。
 lastmod: "2022-02-17"
 sitemap:
@@ -82,10 +82,10 @@ aliases:
 添付ファイルは、親ドキュメントに添付された追加のファイルであり、pdf、word、画像、その他のファイルタイプがあります。
 PDFに添付ファイルを追加する方法、添付ファイルの情報を取得してファイルに保存する方法、プログラムでC#を使用してPDFから添付ファイルを削除する方法を学びます。
 
-- [PDFドキュメントへの添付ファイルの追加](/pdf/net/add-attachment-to-pdf-document/)
-- [添付ファイルを抽出して保存する](/pdf/net/extract-and-save-an-attachment/)
-- [既存のPDFから添付ファイルを削除する](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [ポートフォリオ](/pdf/net/portfolio/)
+- [PDFドキュメントへの添付ファイルの追加](/pdf/ja/net/add-attachment-to-pdf-document/)
+- [添付ファイルを抽出して保存する](/pdf/ja/net/extract-and-save-an-attachment/)
+- [既存のPDFから添付ファイルを削除する](/pdf/ja/net/removing-attachment-from-an-existing-pdf/)
+- [ポートフォリオ](/pdf/ja/net/portfolio/)
 
 <script type="application/ld+json">
 {

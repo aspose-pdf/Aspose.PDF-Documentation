@@ -2,7 +2,7 @@
 title: Añadir TOC a PDF Existente en PHP
 type: docs
 weight: 20
-url: es/java/add-toc-to-existing-pdf-in-php/
+url: /es/java/add-toc-to-existing-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

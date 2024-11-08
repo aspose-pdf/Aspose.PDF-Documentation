@@ -3,7 +3,7 @@ title: 创建复杂的PDF
 linktitle: 创建复杂的PDF
 type: docs
 weight: 60
-url: zh/cpp/complex-pdf-example/
+url: /zh/cpp/complex-pdf-example/
 description: Aspose.PDF for C++允许您创建包含图像、文本片段和表格的更复杂的文档。
 lastmod: "2021-11-05"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-[Hello, World](/pdf/cpp/hello-world-example/) 示例展示了使用 C++ 和 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将看看如何使用 C++ 和 Aspose.PDF for C++ 创建一个更复杂的文档。作为一个例子，我们将使用一家虚构的提供客运渡轮服务的公司的文档。我们的文档将包含一张图片、两个文本片段（标题和段落）以及一个表格。为了构建这样的文档，我们将使用基于DOM的方法。您可以在[DOM API 的基础](/pdf/cpp/basics-of-dom-api/)部分阅读更多内容。
+[Hello, World](/pdf/zh/cpp/hello-world-example/) 示例展示了使用 C++ 和 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将看看如何使用 C++ 和 Aspose.PDF for C++ 创建一个更复杂的文档。作为一个例子，我们将使用一家虚构的提供客运渡轮服务的公司的文档。我们的文档将包含一张图片、两个文本片段（标题和段落）以及一个表格。为了构建这样的文档，我们将使用基于DOM的方法。您可以在[DOM API 的基础](/pdf/zh/cpp/basics-of-dom-api/)部分阅读更多内容。
 
 如果我们从头创建一个文档，我们需要遵循某些步骤：
 

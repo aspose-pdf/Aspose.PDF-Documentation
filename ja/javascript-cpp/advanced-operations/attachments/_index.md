@@ -3,7 +3,7 @@ title: JavaScriptでPDFの添付ファイルを操作する
 linktitle: 添付ファイルを操作する
 type: docs
 weight: 120
-url: ja/javascript-cpp/attachments/
+url: /ja/javascript-cpp/attachments/
 description: JavaScript PDFツールキットを使用して、PDFファイル内の添付ファイルにアクセス、追加、削除します。JavaScriptコードサンプル付きの完全ガイド。
 lastmod: "2023-09-17"
 sitemap:
@@ -17,4 +17,4 @@ sitemap:
 
 PDFに添付ファイルを追加し、添付ファイルの情報を取得してファイルに保存し、JavaScriptでプログラム的にPDFから添付ファイルを削除する方法を学びます。
 
-- [既存のPDFから添付ファイルを削除する](/pdf/javascript-cpp/removing-attachment-from-an-existing-pdf/)
+- [既存のPDFから添付ファイルを削除する](/pdf/ja/javascript-cpp/removing-attachment-from-an-existing-pdf/)

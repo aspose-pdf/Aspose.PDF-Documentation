@@ -3,7 +3,7 @@ title: JavaScriptを使用してPDFからテキストを抽出する
 linktitle: PDFからテキストを抽出する
 type: docs
 weight: 10
-url: ja/javascript-cpp/extract-text/
+url: /ja/javascript-cpp/extract-text/
 description: このセクションでは、JavaScriptツールキットを使用してPDFドキュメントからテキストを抽出する方法について説明します。
 lastmod: "2022-12-14"
 sitemap:

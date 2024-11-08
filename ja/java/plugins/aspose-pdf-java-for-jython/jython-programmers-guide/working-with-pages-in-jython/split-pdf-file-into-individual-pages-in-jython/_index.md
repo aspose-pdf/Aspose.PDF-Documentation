@@ -2,7 +2,7 @@
 title: JythonでPDFファイルを個々のページに分割する
 type: docs
 weight: 80
-url: ja/java/split-pdf-file-into-individual-pages-in-jython/
+url: /ja/java/split-pdf-file-into-individual-pages-in-jython/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Aspose.PDFの主要機能
 linktitle: 主要機能
 type: docs
 weight: 80
-url: ja/net/key-features/
+url: /ja/net/key-features/
 description: Aspose.PDF for .NETは一般的な機能を示しています。サポートされているPDFバージョンとPDFを操作することができるすべてを示しています。
 lastmod: "2021-06-05"
 aliases:

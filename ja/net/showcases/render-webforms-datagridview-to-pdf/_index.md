@@ -3,7 +3,7 @@ title: WebForms DataGridViewをPDFにレンダリング
 linktitle: WebForms DataGridViewをPDFにレンダリング
 type: docs
 weight: 20
-url: ja/net/render-webforms-datagridview-to-pdf/
+url: /ja/net/render-webforms-datagridview-to-pdf/
 description: このサンプルでは、Aspose.PDFライブラリを使用してWebFormをPDFにレンダリングする方法を示します。
 lastmod: "2021-06-05"
 sitemap:

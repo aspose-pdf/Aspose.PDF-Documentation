@@ -3,7 +3,7 @@ title: استخدام أنواع إضافية من تعليقات PDF التوض
 linktitle: التعليقات التوضيحية الإضافية
 type: docs
 weight: 60
-url: ar/java/extra-annotations/
+url: /ar/java/extra-annotations/
 description: يصف هذا القسم كيفية إضافة، والحصول على، وحذف أنواع إضافية من التعليقات التوضيحية في مستند PDF الخاص بك.
 lastmod: "2021-11-24"
 sitemap:

@@ -3,7 +3,7 @@ title: Working with Images in PDF
 linktitle: Working with Images
 type: docs
 weight: 40
-url: pt/java/working-with-images/
+url: /pt/java/working-with-images/
 description: Esta seção descreve os recursos de trabalho com imagens em um arquivo PDF usando a biblioteca Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -25,14 +25,14 @@ aprender os próximos artigos para resolver suas tarefas.
 
 Você pode fazer o seguinte:
 
-- [Adicionar Imagem ao Arquivo PDF Existente](/pdf/java/add-image-to-existing-pdf-file/) - adicionar imagens e referências de uma única imagem em documento PDF, após isso controlar a qualidade.- [Excluir Imagens de um Arquivo PDF](/pdf/java/delete-images-from-pdf-file/) - verifique o trecho de código para excluir imagens de um arquivo PDF.
-- [Extrair Imagens de um Arquivo PDF](/pdf/java/extract-images-from-pdf-file/) - use a coleção de imagens para extrair imagens de um arquivo PDF.
-- [Obter a Resolução e Dimensões de Imagens Incorporadas](/pdf/java/get-resolution-and-dimensions-of-embedded-images/) - use as classes de operador no namespace Aspose.PDF que fornecem a capacidade de obter informações de resolução e dimensão.
-- [Trabalhando com Posicionamento de Imagem](/pdf/java/working-with-image-placement/) - é possível obter a resolução e a posição de uma imagem em um documento PDF.
-- [Pesquisar e Obter Imagens de Documento PDF](/pdf/java/search-and-get-images-from-pdf-document/) - você pode obter uma imagem de uma página individual e pesquisar entre imagens em todas as páginas com Java.
-- [Substituir Imagem em Arquivo PDF Existente](/pdf/java/replace-image-in-existing-pdf-file/) - confira nosso trecho de código, ele mostra como substituir uma imagem em um arquivo PDF.
+- [Adicionar Imagem ao Arquivo PDF Existente](/pdf/pt/java/add-image-to-existing-pdf-file/) - adicionar imagens e referências de uma única imagem em documento PDF, após isso controlar a qualidade.- [Excluir Imagens de um Arquivo PDF](/pdf/pt/java/delete-images-from-pdf-file/) - verifique o trecho de código para excluir imagens de um arquivo PDF.
+- [Extrair Imagens de um Arquivo PDF](/pdf/pt/java/extract-images-from-pdf-file/) - use a coleção de imagens para extrair imagens de um arquivo PDF.
+- [Obter a Resolução e Dimensões de Imagens Incorporadas](/pdf/pt/java/get-resolution-and-dimensions-of-embedded-images/) - use as classes de operador no namespace Aspose.PDF que fornecem a capacidade de obter informações de resolução e dimensão.
+- [Trabalhando com Posicionamento de Imagem](/pdf/pt/java/working-with-image-placement/) - é possível obter a resolução e a posição de uma imagem em um documento PDF.
+- [Pesquisar e Obter Imagens de Documento PDF](/pdf/pt/java/search-and-get-images-from-pdf-document/) - você pode obter uma imagem de uma página individual e pesquisar entre imagens em todas as páginas com Java.
+- [Substituir Imagem em Arquivo PDF Existente](/pdf/pt/java/replace-image-in-existing-pdf-file/) - confira nosso trecho de código, ele mostra como substituir uma imagem em um arquivo PDF.
 
-- [Definir Tamanho da Imagem](/pdf/java/set-image-size/) - a biblioteca Java permite definir o tamanho de uma imagem.
-- [Set Default Font Name](/pdf/java/set-default-font-name/) - use a propriedade DefaultFontName para definir o Nome da Fonte Padrão.
-- [Generate Thumbnail Images from PDF Documents](/pdf/java/generate-thumbnail-images-from-pdf-documents/) - o próximo artigo mostra como gerar imagens em miniatura a partir de documentos PDF usando primeiro o Acrobat SDK e depois o Aspose.PDF.
-- Suporte para Imagens DICOM - Aspose.PDF para Java suporta um padrão gráfico médico especial de imagens. Aspose.PDF para Java permite converter imagens DICOM e SVG. Por favor, confira a seção [Convert DICOM to PDF](/pdf/java/convert-dicom-to-pdf/).
+- [Definir Tamanho da Imagem](/pdf/pt/java/set-image-size/) - a biblioteca Java permite definir o tamanho de uma imagem.
+- [Set Default Font Name](/pdf/pt/java/set-default-font-name/) - use a propriedade DefaultFontName para definir o Nome da Fonte Padrão.
+- [Generate Thumbnail Images from PDF Documents](/pdf/pt/java/generate-thumbnail-images-from-pdf-documents/) - o próximo artigo mostra como gerar imagens em miniatura a partir de documentos PDF usando primeiro o Acrobat SDK e depois o Aspose.PDF.
+- Suporte para Imagens DICOM - Aspose.PDF para Java suporta um padrão gráfico médico especial de imagens. Aspose.PDF para Java permite converter imagens DICOM e SVG. Por favor, confira a seção [Convert DICOM to PDF](/pdf/pt/java/convert-dicom-to-pdf/).

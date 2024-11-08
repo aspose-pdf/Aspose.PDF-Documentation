@@ -3,7 +3,7 @@ title: 使用 JavaScript 通过 C++ 处理 PDF 文件元数据
 linktitle: PDF 文件元数据
 type: docs
 weight: 130
-url: zh/javascript-cpp/pdf-file-metadata/
+url: /zh/javascript-cpp/pdf-file-metadata/
 description: 本节解释如何获取 PDF 文件信息，如何从 PDF 文件中获取元数据，设置 PDF 文件信息。
 lastmod: "2023-02-17"
 sitemap:

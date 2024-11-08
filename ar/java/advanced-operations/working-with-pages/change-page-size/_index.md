@@ -3,7 +3,7 @@ title: تغيير حجم صفحة PDF برمجياً
 linktitle: تغيير حجم الصفحة
 type: docs
 weight: 50
-url: ar/java/change-page-size/
+url: /ar/java/change-page-size/
 description: تغيير حجم الصفحة من ملف PDF الخاص بك باستخدام مكتبة Java.
 lastmod: "2021-06-05"
 sitemap:

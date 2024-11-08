@@ -2,7 +2,7 @@
 title: Convertir PDF a formato SVG en Ruby
 type: docs
 weight: 50
-url: es/java/convert-pdf-to-svg-format-in-ruby/
+url: /es/java/convert-pdf-to-svg-format-in-ruby/
 lastmod: "2021-06-05"
 ---
 

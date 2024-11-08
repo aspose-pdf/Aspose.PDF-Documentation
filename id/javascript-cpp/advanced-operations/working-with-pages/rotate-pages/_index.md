@@ -3,7 +3,7 @@ title: Memutar Halaman PDF dengan JavaScript melalui C++
 linktitle: Memutar Halaman PDF
 type: docs
 weight: 50
-url: id/javascript-cpp/rotate-pages/
+url: /id/javascript-cpp/rotate-pages/
 description: Topik ini menjelaskan cara memutar orientasi halaman dalam file PDF yang sudah ada secara programatik melalui JavaScript melalui C++
 lastmod: "2023-02-17"
 sitemap:

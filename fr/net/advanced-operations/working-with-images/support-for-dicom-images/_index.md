@@ -3,7 +3,7 @@ title: Support for DICOM Images
 linktitle: Support for DICOM Images
 type: docs
 weight: 100
-url: fr/net/support-for-dicom-mages/
+url: /fr/net/support-for-dicom-mages/
 description: Cette section décrit comment prendre en charge les images DICOM dans un fichier PDF à l'aide de la bibliothèque C#.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 La norme DICOM a été développée par la National Electrical Manufacturers Association. Ce format couvre les fonctions de création, stockage, transfert et impression de cadres d'images individuels, séries de cadres, informations sur les patients, recherches, équipements, institutions, personnel médical effectuant l'examen, et similaires.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 **Aspose.PDF pour .NET** prend en charge la fonctionnalité d'ajout d'images DICOM aux documents PDF. Le code suivant montre comment utiliser cette fonctionnalité.
 

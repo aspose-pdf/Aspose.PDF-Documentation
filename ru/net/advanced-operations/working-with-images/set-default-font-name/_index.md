@@ -3,7 +3,7 @@ title: Set Default Font Name
 linktitle: Set Default Font Name
 type: docs
 weight: 90
-url: ru/net/set-default-font-name/
+url: /ru/net/set-default-font-name/
 description: Этот раздел описывает, как установить имя шрифта по умолчанию в процессе конвертации из PDF в изображение.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 **Aspose.PDF для .NET** API позволяет установить имя шрифта по умолчанию, когда шрифт недоступен в документе. Вы можете использовать свойство DefaultFontName класса RenderingOptions для установки имени шрифта по умолчанию. Если DefaultFontName установлено в null, будет использоваться шрифт **Times New Roman**. Следующий фрагмент кода показывает, как установить имя шрифта по умолчанию при сохранении PDF в изображение:
 
-Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET

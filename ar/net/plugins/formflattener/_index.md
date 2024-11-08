@@ -2,7 +2,7 @@
 title: مُصدّر النماذج
 type: docs
 weight: 60
-url: ar/net/plugins/formflattener/
+url: /ar/net/plugins/formflattener/
 description: كيفية تسطيح حقول النماذج في ملفات PDF باستخدام إضافة Aspose.PDF FormFlattener
 lastmod: "2024-01-24"
 ---

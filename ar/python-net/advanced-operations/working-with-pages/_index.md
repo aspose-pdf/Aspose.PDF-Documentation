@@ -3,7 +3,7 @@ title: العمل مع صفحات PDF في بايثون
 linktitle: العمل مع الصفحات
 type: docs
 weight: 20
-url: ar/python-net/working-with-pages/
+url: /ar/python-net/working-with-pages/
 description: كيفية إضافة الصفحات، إضافة الرؤوس والتذييلات، إضافة العلامات المائية يمكنك معرفتها في هذا القسم. يشرح لك Aspose.PDF لبايثون عبر .NET جميع التفاصيل حول هذا الموضوع.
 lastmod: "2023-04-19"
 sitemap:
@@ -84,17 +84,17 @@ sitemap:
 
 أنت قادر على القيام بما يلي:
 
-- [إضافة صفحات](/pdf/python-net/add-pages/) - إضافة صفحات في الموقع المطلوب أو في نهاية ملف PDF وحذف صفحة من المستند الخاص بك.
-- [نقل الصفحات](/pdf/python-net/move-pages/) - نقل الصفحات من مستند إلى آخر.
-- [حذف الصفحات](/pdf/python-net/delete-pages/) - حذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
-- [تغيير حجم الصفحة](/pdf/python-net/change-page-size/) - يمكنك تغيير حجم صفحة PDF باستخدام مقتطف الكود باستخدام مكتبة Aspose.PDF.
-- [تدوير الصفحات](/pdf/python-net/rotate-pages/) - يمكنك تغيير اتجاه الصفحات في ملف PDF موجود.
-- [تقسيم الصفحات](/pdf/python-net/split-document/) - يمكنك تقسيم ملفات PDF إلى ملف واحد أو ملفات متعددة.
-- [إضافة رؤوس وتذييلات](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - إضافة نص أو صور في رؤوس وتذييلات ملف PDF الخاص بك.
-- [اقتصاص الصفحات](/pdf/python-net/crop-pages/) - يمكنك اقتصاص الصفحات في مستند PDF برمجياً مع خصائص صفحة مختلفة.
+- [إضافة صفحات](/pdf/ar/python-net/add-pages/) - إضافة صفحات في الموقع المطلوب أو في نهاية ملف PDF وحذف صفحة من المستند الخاص بك.
+- [نقل الصفحات](/pdf/ar/python-net/move-pages/) - نقل الصفحات من مستند إلى آخر.
+- [حذف الصفحات](/pdf/ar/python-net/delete-pages/) - حذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
+- [تغيير حجم الصفحة](/pdf/ar/python-net/change-page-size/) - يمكنك تغيير حجم صفحة PDF باستخدام مقتطف الكود باستخدام مكتبة Aspose.PDF.
+- [تدوير الصفحات](/pdf/ar/python-net/rotate-pages/) - يمكنك تغيير اتجاه الصفحات في ملف PDF موجود.
+- [تقسيم الصفحات](/pdf/ar/python-net/split-document/) - يمكنك تقسيم ملفات PDF إلى ملف واحد أو ملفات متعددة.
+- [إضافة رؤوس وتذييلات](/pdf/ar/python-net/add-headers-and-footers-of-pdf-file/) - إضافة نص أو صور في رؤوس وتذييلات ملف PDF الخاص بك.
+- [اقتصاص الصفحات](/pdf/ar/python-net/crop-pages/) - يمكنك اقتصاص الصفحات في مستند PDF برمجياً مع خصائص صفحة مختلفة.
 
-- [إضافة العلامات المائية](/pdf/python-net/add-watermarks/) - إضافة علامات مائية في ملف PDF الخاص بك باستخدام فئة Artifact.
-- [إضافة ترقيم الصفحات في ملف PDF](/pdf/python-net/add-page-number/) - ستساعدك فئة PageNumberStamp على إضافة رقم صفحة في ملف PDF الخاص بك.
-- [إضافة خلفيات](/pdf/python-net/add-backgrounds/) - يمكن استخدام الصور الخلفية لإضافة علامة مائية.
-- [الختم](/pdf/python-net/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.
-- [الحصول على خصائص الصفحة وتعيينها](/pdf/python-net/get-and-set-page-properties/) - يوضح هذا القسم كيفية الحصول على عدد الصفحات في ملف PDF والحصول على معلومات حول خصائص صفحة PDF مثل اللون وتعيين خصائص الصفحة.
+- [إضافة العلامات المائية](/pdf/ar/python-net/add-watermarks/) - إضافة علامات مائية في ملف PDF الخاص بك باستخدام فئة Artifact.
+- [إضافة ترقيم الصفحات في ملف PDF](/pdf/ar/python-net/add-page-number/) - ستساعدك فئة PageNumberStamp على إضافة رقم صفحة في ملف PDF الخاص بك.
+- [إضافة خلفيات](/pdf/ar/python-net/add-backgrounds/) - يمكن استخدام الصور الخلفية لإضافة علامة مائية.
+- [الختم](/pdf/ar/python-net/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.
+- [الحصول على خصائص الصفحة وتعيينها](/pdf/ar/python-net/get-and-set-page-properties/) - يوضح هذا القسم كيفية الحصول على عدد الصفحات في ملف PDF والحصول على معلومات حول خصائص صفحة PDF مثل اللون وتعيين خصائص الصفحة.

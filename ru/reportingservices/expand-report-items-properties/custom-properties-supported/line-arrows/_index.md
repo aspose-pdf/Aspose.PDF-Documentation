@@ -3,7 +3,7 @@
 title: Стрелки на Линиях
 type: docs
 weight: 20
-url: ru/reportingservices/line-arrows/
+url: /ru/reportingservices/line-arrows/
 lastmod: "2021-06-05"
 ---
 

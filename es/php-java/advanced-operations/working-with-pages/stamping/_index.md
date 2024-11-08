@@ -3,7 +3,7 @@ title: Stamping
 linktitle: Stamping
 type: docs
 weight: 120
-url: es/php-java/stamping/
+url: /es/php-java/stamping/
 description: Esta sección describe cómo agregar sellos de imagen y sellos de texto a una página PDF.
 lastmod: "2024-06-05"
 sitemap:
@@ -15,7 +15,7 @@ Un sello en un documento PDF es análogo a aplicar un sello de goma en un docume
 
 Consulte las siguientes secciones para aprender cómo agregar un sello con PHP:
 
-- [Agregar sellos de imagen en la página PDF](/pdf/php-java/image-stamps-in-pdf-page/) - agregar sello de imagen, controlar la calidad de la imagen, sello de imagen como fondo de su archivo PDF.
-- [Agregar sellos de texto en el archivo PDF](/pdf/php-java/text-stamps-in-the-pdf-file/) - agregar sello de texto, definir la alineación para el objeto TextStamp, rellenar texto de trazo como sello en PDF.
+- [Agregar sellos de imagen en la página PDF](/pdf/es/php-java/image-stamps-in-pdf-page/) - agregar sello de imagen, controlar la calidad de la imagen, sello de imagen como fondo de su archivo PDF.
+- [Agregar sellos de texto en el archivo PDF](/pdf/es/php-java/text-stamps-in-the-pdf-file/) - agregar sello de texto, definir la alineación para el objeto TextStamp, rellenar texto de trazo como sello en PDF.
 
-- [Agregar sellos de página en PDFs](/pdf/php-java/page-stamps-in-the-pdf-file/) - agregar sello complejo basado en una página de otro archivo PDF.
+- [Agregar sellos de página en PDFs](/pdf/es/php-java/page-stamps-in-the-pdf-file/) - agregar sello complejo basado en una página de otro archivo PDF.

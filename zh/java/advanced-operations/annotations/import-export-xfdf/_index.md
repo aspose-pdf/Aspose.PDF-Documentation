@@ -3,7 +3,7 @@ title: 导入和导出注释到XFDF格式
 linktitle: 导入和导出注释到XFDF格式
 type: docs
 weight: 40
-url: zh/java/import-export-xfdf/
+url: /zh/java/import-export-xfdf/
 description: 您可以使用Aspose.PDF for Java库导入和导出XFDF格式的注释。
 lastmod: "2021-06-05"
 sitemap:

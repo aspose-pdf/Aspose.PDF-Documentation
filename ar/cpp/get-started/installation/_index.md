@@ -3,7 +3,7 @@ title: تثبيت Aspose.PDF لـ C++
 linktitle: التثبيت
 type: docs
 weight: 20
-url: ar/cpp/installation/
+url: /ar/cpp/installation/
 description: تعرض هذه القسم وصف المنتج وتعليمات تثبيت Aspose.PDF لـ C++ بنفسك، وكذلك باستخدام NuGet.
 lastmod: "2021-11-08"
 sitemap:

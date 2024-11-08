@@ -3,7 +3,7 @@ title: 액션 작업하기
 linktitle: Actions
 type: docs
 weight: 20
-url: ko/java/actions/
+url: /ko/java/actions/
 description: 이 섹션에서는 Java를 사용하여 문서 및 양식 필드에 액션을 프로그래밍 방식으로 추가하는 방법을 설명합니다. PDF 파일에서 하이퍼링크를 추가, 생성 및 가져오는 방법을 배웁니다.
 lastmod: "2021-06-05"
 sitemap:

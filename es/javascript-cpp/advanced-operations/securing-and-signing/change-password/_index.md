@@ -3,7 +3,7 @@ title: Cambiar Contraseña de un Archivo PDF
 linktitle: Cambiar Contraseña
 type: docs
 weight: 50
-url: es/javascript-cpp/change-password-pdf/
+url: /es/javascript-cpp/change-password-pdf/
 description: Cambiar Contraseña de un Archivo PDF con Aspose.PDF para JavaScript vía C++.
 lastmod: "2023-09-13"
 sitemap:

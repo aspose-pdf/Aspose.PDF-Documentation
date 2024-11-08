@@ -3,7 +3,7 @@ title: Konversi PDF ke format PDF/A
 linktitle: Konversi PDF ke format PDF/A
 type: docs
 weight: 100
-url: id/cpp/convert-pdf-to-pdfa/
+url: /id/cpp/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
 description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF ke file PDF yang sesuai dengan PDF/A.
 sitemap:

@@ -2,7 +2,7 @@
 title: Inserir uma Página Vazia no Final do Arquivo PDF em Python
 type: docs
 weight: 60
-url: pt/java/insert-an-empty-page-at-end-of-pdf-file-in-python/
+url: /pt/java/insert-an-empty-page-at-end-of-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

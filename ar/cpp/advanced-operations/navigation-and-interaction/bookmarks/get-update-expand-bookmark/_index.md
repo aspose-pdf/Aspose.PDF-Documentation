@@ -3,7 +3,7 @@ title: احصل على إشارة مرجعية، قم بتحديثها وقم ب
 linktitle: احصل على إشارة مرجعية، قم بتحديثها وقم بتوسيعها
 type: docs
 weight: 20
-url: ar/cpp/get-update-and-expand-bookmark/
+url: /ar/cpp/get-update-and-expand-bookmark/
 description: مكتبة Aspose.PDF لـ C++ تتيح لك الحصول على تحديث في ملف PDF لدينا.
 lastmod: "2022-01-31"
 sitemap:

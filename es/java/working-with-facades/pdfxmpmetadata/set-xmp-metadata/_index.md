@@ -2,7 +2,7 @@
 title: Set XMP Metadata of an existing PDF - facades
 type: docs
 weight: 20
-url: es/java/set-xmp-metadata/
+url: /es/java/set-xmp-metadata/
 description: Esta sección explica cómo establecer metadatos XMP con Aspose.PDF Facades utilizando la clase PdfXmpMetadata.
 lastmod: "2021-06-05"
 sitemap:

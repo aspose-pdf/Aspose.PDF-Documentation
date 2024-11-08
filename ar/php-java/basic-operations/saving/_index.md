@@ -3,7 +3,7 @@ title: حفظ مستند PDF
 linktitle: حفظ
 type: docs
 weight: 30
-url: ar/php-java/save-pdf-document/
+url: /ar/php-java/save-pdf-document/
 description: تعلم كيفية حفظ ملف PDF باستخدام Aspose.PDF لمكتبة PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

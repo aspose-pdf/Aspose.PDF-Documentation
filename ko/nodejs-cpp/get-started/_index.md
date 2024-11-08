@@ -3,7 +3,7 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: ko/nodejs-cpp/get-started/
+url: /ko/nodejs-cpp/get-started/
 description: 이 섹션에서는 C++를 통한 Node.js용 Aspose.PDF의 기본 원리를 설명합니다. C++를 통한 Node.js용 Aspose.PDF는 다양한 기능을 지원합니다.
 lastmod: "2023-11-16"   
 sitemap:
@@ -27,31 +27,31 @@ PDF는 1990년대 Adobe에 의해 두 가지 목적을 달성하기 위해 만�
 
 ## 다양한 기능
 
-- [PDF에서 텍스트 추출](/pdf/nodejs-cpp/extract-text/)
-- [PDF 문서 최적화](/pdf/nodejs-cpp/optimize-pdf/)
-- [PDF 파일에 스탬프 추가](/pdf/nodejs-cpp/add-stamp-to-pdf/)
-- [PDF 파일에 이미지 추가](/pdf/nodejs-cpp/add-image-to-pdf/)
-- [PDF를 두 개의 파일로 분할](/pdf/nodejs-cpp/split-pdf/)
-- [두 파일을 PDF로 병합](/pdf/nodejs-cpp/merge-pdf/)
-- [PDF 문서 암호화](/pdf/nodejs-cpp/encrypt-pdf/)
-- [PDF 문서 해독](/pdf/nodejs-cpp/decrypt-pdf/)
+- [PDF에서 텍스트 추출](/pdf/ko/nodejs-cpp/extract-text/)
+- [PDF 문서 최적화](/pdf/ko/nodejs-cpp/optimize-pdf/)
+- [PDF 파일에 스탬프 추가](/pdf/ko/nodejs-cpp/add-stamp-to-pdf/)
+- [PDF 파일에 이미지 추가](/pdf/ko/nodejs-cpp/add-image-to-pdf/)
+- [PDF를 두 개의 파일로 분할](/pdf/ko/nodejs-cpp/split-pdf/)
+- [두 파일을 PDF로 병합](/pdf/ko/nodejs-cpp/merge-pdf/)
+- [PDF 문서 암호화](/pdf/ko/nodejs-cpp/encrypt-pdf/)
+- [PDF 문서 해독](/pdf/ko/nodejs-cpp/decrypt-pdf/)
 
 ## 변환 기능
 
-- [PDF를 JPEG로 변환](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDF를 PNG로 변환](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDF를 TIFF로 변환](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDF를 BMP로 변환](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDF를 SVG로 변환](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDF를 JPEG로 변환](/pdf/ko/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDF를 PNG로 변환](/pdf/ko/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDF를 TIFF로 변환](/pdf/ko/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDF를 BMP로 변환](/pdf/ko/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDF를 SVG로 변환](/pdf/ko/nodejs-cpp/convert-pdf-to-images-format/)
 
-- [PDF를 SVG(Zip)로 변환](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDF를 TeX로 변환하기](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDF를 XPS로 변환하기](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDF를 CSV로 변환하기](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [PDF를 TXT로 변환하기](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDF를 Word로 변환하기](/pdf/nodejs-cpp/convert-pdf-to-doc/)
-- [PDF를 XLSX로 변환하기](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [PDF를 그레이스케일 PDF로 변환하기](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDF를 Microsoft PowerPoint로 변환하기](/pdf/nodejs-cpp/convert-pdf-to-powerpoint/)
-- [PDF/A를 PDF 형식으로 변환하기](/pdf/nodejs-cpp/convert-pdfa-to-pdf/)
-- [PDF를 PDF/A 형식으로 변환하기](/pdf/nodejs-cpp/convert-pdf-to-pdfa/)
+- [PDF를 SVG(Zip)로 변환](/pdf/ko/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDF를 TeX로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDF를 XPS로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDF를 CSV로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-xlsx/)
+- [PDF를 TXT로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDF를 Word로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-doc/)
+- [PDF를 XLSX로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-xlsx/)
+- [PDF를 그레이스케일 PDF로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDF를 Microsoft PowerPoint로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-powerpoint/)
+- [PDF/A를 PDF 형식으로 변환하기](/pdf/ko/nodejs-cpp/convert-pdfa-to-pdf/)
+- [PDF를 PDF/A 형식으로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-pdfa/)

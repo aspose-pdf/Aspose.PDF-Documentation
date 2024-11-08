@@ -3,7 +3,7 @@
 title: إضافة توقيع في ملف PDF
 type: docs
 weight: 10
-url: ar/net/add-signature-in-pdf/
+url: /ar/net/add-signature-in-pdf/
 description: يوضح هذا القسم كيفية إضافة توقيع إلى ملف PDF باستخدام فئة PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

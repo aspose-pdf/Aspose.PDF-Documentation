@@ -3,7 +3,7 @@ title: PDFからスーパースクリプトとサブスクリプトのテキス�
 linktitle: スーパースクリプトとサブスクリプトを抽出
 type: docs
 weight: 30
-url: ja/net/extract-superscripts-subscripts-from-pdf/
+url: /ja/net/extract-superscripts-subscripts-from-pdf/
 description: この記事では、C#のAspose.PDFを使用してPDFからスーパースクリプトとサブスクリプトのテキストを抽出するさまざまな方法について説明します。
 lastmod: "2022-10-07"
 sitemap:
@@ -21,7 +21,7 @@ PDF文書からテキストを抽出することは一般的なことです。�
 
 **TextFragmentAbsorber** クラスを使用して、見つかったテキストで何でもできるようになります。つまり、全てのテキストを単純に使用できます。次のコードスニペットを試してください：
 
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));
@@ -35,8 +35,8 @@ PDF文書からテキストを抽出することは一般的なことです。�
 
 または、**TextFragments** を個別に使用し、座標やサイズによってソートするなど、さまざまな操作を行います。
 
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
-以下のコードスニペットは [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
+以下のコードスニペットは [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));

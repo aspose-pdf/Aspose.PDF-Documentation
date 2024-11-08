@@ -2,7 +2,7 @@
 title: 在Jython中向PDF文件插入空白页
 type: docs
 weight: 70
-url: zh/java/insert-an-empty-page-into-a-pdf-file-in-jython/
+url: /zh/java/insert-an-empty-page-into-a-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

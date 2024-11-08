@@ -3,7 +3,7 @@ title: C#에서 PDF 문서 연결
 linktitle: PDF 문서 연결
 type: docs
 weight: 20
-url: ko/net/concatenate-pdf-documents/
+url: /ko/net/concatenate-pdf-documents/
 description: 이 섹션은 PdfFileEditor 클래스를 사용하여 Aspose.PDF Facades로 PDF 문서를 연결하는 방법을 설명합니다.
 aliases:
     - /pdf/net/concatenate-multiple-pdf-files-using-memorystreams/

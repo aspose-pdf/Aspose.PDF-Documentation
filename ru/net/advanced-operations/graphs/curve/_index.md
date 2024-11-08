@@ -3,7 +3,7 @@ title: Добавление объекта кривой в файл PDF
 linktitle: Добавление кривой
 type: docs
 weight: 30
-url: ru/net/add-curve/
+url: /ru/net/add-curve/
 description: Эта статья объясняет, как создать объект кривой в вашем PDF с использованием Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавить объект Curve
 

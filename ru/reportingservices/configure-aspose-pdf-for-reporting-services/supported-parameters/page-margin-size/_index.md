@@ -2,7 +2,7 @@
 title: Размер полей страницы
 type: docs
 weight: 70
-url: ru/reportingservices/page-margin-size/
+url: /ru/reportingservices/page-margin-size/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Set Default Font Name
 linktitle: Set Default Font Name
 type: docs
 weight: 90
-url: fr/net/set-default-font-name/
+url: /fr/net/set-default-font-name/
 description: Cette section décrit comment définir le nom de la police par défaut pendant le processus de conversion de PDF en image.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 **Aspose.PDF pour .NET** L'API vous permet de définir un nom de police par défaut lorsque une police n'est pas disponible dans le document. Vous pouvez utiliser la propriété DefaultFontName de la classe RenderingOptions pour définir le nom de la police par défaut. Si DefaultFontName est défini sur null, la police **Times New Roman** sera utilisée. Le snippet de code suivant montre comment définir un nom de police par défaut lors de l'enregistrement d'un PDF en image :
 
-Le code suivant fonctionne également avec la nouvelle interface graphique [Aspose.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la nouvelle interface graphique [Aspose.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET

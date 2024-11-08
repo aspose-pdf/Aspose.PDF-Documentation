@@ -2,7 +2,7 @@
 title: Выравнивание текста в поле текстового поля
 type: docs
 weight: 20
-url: ru/net/justify-text-in-a-textbox-field/
+url: /ru/net/justify-text-in-a-textbox-field/
 description: В этой статье показано, как выровнять текст в поле текстового поля с использованием класса Form.
 lastmod: "2021-06-05"
 draft: false

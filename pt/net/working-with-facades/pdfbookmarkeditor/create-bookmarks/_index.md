@@ -2,7 +2,7 @@
 title: Criar Marcadores
 type: docs
 weight: 10
-url: pt/net/create-bookmarks/
+url: /pt/net/create-bookmarks/
 description: Esta seção explica como criar marcadores em seu arquivo PDF com Aspose.PDF Facades usando a classe PdfBookmarEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -55,4 +55,4 @@ Para adicionar subfavoritos, você precisa criar objetos [Bookmark](https://refe
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-AddChildBookmark-AddChildBookmark.cs" >}}
 ## Veja também
 
-Tente comparar e encontrar uma maneira de trabalhar com favoritos que seja adequada para você. Vamos aprender a seção [Trabalhando com Favoritos em PDF](/pdf/net/bookmarks/).
+Tente comparar e encontrar uma maneira de trabalhar com favoritos que seja adequada para você. Vamos aprender a seção [Trabalhando com Favoritos em PDF](/pdf/pt/net/bookmarks/).

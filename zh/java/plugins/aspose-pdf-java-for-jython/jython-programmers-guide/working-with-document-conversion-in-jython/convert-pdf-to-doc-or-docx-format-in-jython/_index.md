@@ -2,7 +2,7 @@
 title: 将PDF转换为DOC或DOCX格式在Jython中
 type: docs
 weight: 10
-url: zh/java/convert-pdf-to-doc-or-docx-format-in-jython/
+url: /zh/java/convert-pdf-to-doc-or-docx-format-in-jython/
 lastmod: "2021-06-05"
 ---
 

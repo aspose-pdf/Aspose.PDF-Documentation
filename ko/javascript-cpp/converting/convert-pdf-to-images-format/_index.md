@@ -3,7 +3,7 @@ title: JavaScript에서 PDF를 이미지 형식으로 변환
 linktitle: PDF를 이미지로 변환
 type: docs
 weight: 70
-url: ko/javascript-cpp/convert-pdf-to-images-format/
+url: /ko/javascript-cpp/convert-pdf-to-images-format/
 lastmod: "2023-11-01"
 description: 이 주제는 Aspose.PDF를 사용하여 PDF를 TIFF, BMP, JPEG, PNG, SVG 등의 다양한 이미지 형식으로 변환하는 방법을 몇 줄의 코드로 보여줍니다.
 sitemap:

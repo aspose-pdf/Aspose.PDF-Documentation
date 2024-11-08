@@ -3,7 +3,7 @@ title: Visão Geral
 linktitle: Visão Geral
 type: docs
 weight: 20
-url: pt/net/overview/
+url: /pt/net/overview/
 lastmod: "2021-06-05"
 description: Visão geral das principais funcionalidades e formatos suportados do Aspose.PDF para .NET, manual de instalação e licenciamento da biblioteca .NET.
 sitemap:
@@ -37,7 +37,7 @@ Comprimir documentos PDF ajuda a reduzir o tamanho do arquivo, facilitando o arm
 - armazene imagens em XImageCollection (imagens reutilizáveis)
 - converta um PDF de espaço de cores RGB para escala de cinza
 
-Vamos verificar as páginas de documentação para mais detalhes: [Otimizar PDF](/pdf/net/optimize-pdf/)
+Vamos verificar as páginas de documentação para mais detalhes: [Otimizar PDF](/pdf/pt/net/optimize-pdf/)
 
 ### Criação e manipulação de tabelas
 
@@ -45,7 +45,7 @@ Tabelas fornecem um formato estruturado e organizado para apresentar informaçõ
 
 Com **Aspose.PDF for .NET**, criar e manipular tabelas em documentos PDF oferece numerosas vantagens, incluindo melhor organização de dados, legibilidade aprimorada, melhores capacidades de análise e maior flexibilidade na apresentação eficaz de informações.
 
-Vamos verificar a próxima seção para mais detalhes: [Trabalhando com Tabelas](/pdf/net/working-with-tables/)
+Vamos verificar a próxima seção para mais detalhes: [Trabalhando com Tabelas](/pdf/pt/net/working-with-tables/)
 
 ### Suporte para objetos Gráficos
 
@@ -53,7 +53,7 @@ Vamos verificar a próxima seção para mais detalhes: [Trabalhando com Tabelas]
 Adicionar gráficos aos documentos PDF melhora a visualização de dados, a clareza e compreensão aprimoradas, o suporte à tomada de decisões e o aumento do engajamento com os leitores.
 Adicionando Gráficos a documentos PDF melhora a visualização de dados, clareza e compreensão aprimoradas, suporte melhorado para tomada de decisões e maior engajamento com os leitores.
 
-Vamos verificar as páginas de documentação para mais detalhes: [Trabalhando com Gráficos](/pdf/net/graphs/)
+Vamos verificar as páginas de documentação para mais detalhes: [Trabalhando com Gráficos](/pdf/pt/net/graphs/)
 
 ### Funcionalidade Extensiva de Hiperlinks
 
@@ -61,7 +61,7 @@ Hiperlinks permitem que os usuários naveguem de maneira rápida e eficiente den
 
 **Aspose.PDF para .NET** oferece muitas vantagens, incluindo navegação aprimorada, referência cruzada, acesso a recursos externos, interatividade e comunicação aprimorada. Eles contribuem para uma experiência de leitura mais envolvente, informativa e acessível para os usuários.
 
-Vamos verificar a próxima seção para mais detalhes: [Ações](/pdf/net/actions/)
+Vamos verificar a próxima seção para mais detalhes: [Ações](/pdf/pt/net/actions/)
 
 ### Controles de Segurança Estendidos
 
@@ -70,7 +70,7 @@ Recursos de segurança como assinaturas digitais ajudam a garantir a integridade
 
 Com **Aspose.PDF for .NET** é possível assinar PDFs a partir de um Smart Card, criptografar e descriptografar arquivos, extrair imagens e informações de assinatura etc.
 
-Vamos verificar as páginas da documentação para mais detalhes: [Securing and Signing](/pdf/net/securing-and-signing/)
+Vamos verificar as páginas da documentação para mais detalhes: [Securing and Signing](/pdf/pt/net/securing-and-signing/)
 
 ### Adicionar ou remover Favoritos
 
@@ -78,7 +78,7 @@ Favoritos oferecem aos usuários uma maneira conveniente de navegar por document
 
 Usando a biblioteca **Aspose.PDF for .NET**, você pode adicionar favoritos a um arquivo PDF, adicionar um favorito filho ou deletar todos ou determinados favoritos do documento.
 
-Vamos verificar a próxima seção para mais detalhes: [Bookmarks](/pdf/net/add-and-delete-bookmark/)
+Vamos verificar a próxima seção para mais detalhes: [Bookmarks](/pdf/pt/net/add-and-delete-bookmark/)
 
 ### Criar um índice
 
@@ -86,13 +86,13 @@ O índice oferece aos usuários uma maneira rápida e eficiente de navegar pelo 
 O TOC fornece aos usuários uma maneira rápida e eficiente de navegar pelos conteúdos de um documento PDF.
 A biblioteca **Aspose.PDF for .NET** explica como adicionar um TOC a um arquivo PDF existente, utilize a classe Heading no namespace Aspose.Pdf.
 
-Vamos verificar as páginas de documentação para mais detalhes: [Trabalhando com TOC](/pdf/net/manipulate-pdf-document/)
+Vamos verificar as páginas de documentação para mais detalhes: [Trabalhando com TOC](/pdf/pt/net/manipulate-pdf-document/)
 
 ### Adicionar, atualizar, deletar anexos e anotações
 
 Adicionar anexos e anotações torna os documentos PDF mais interativos e envolventes para os leitores. Os usuários podem interagir com conteúdo adicional, como arquivos multimídia, links ou comentários, incorporados dentro do documento, melhorando sua experiência de leitura.
 
-A biblioteca Aspose.PDF for .NET tem uma variedade de manipulações com [Anotações](/pdf/net/annotations/). Você pode adicionar tipos como:
+A biblioteca Aspose.PDF for .NET tem uma variedade de manipulações com [Anotações](/pdf/pt/net/annotations/). Você pode adicionar tipos como:
 
 - Anotação de Texto
 - Anotação de Destaque
@@ -102,8 +102,8 @@ A biblioteca Aspose.PDF for .NET tem uma variedade de manipulações com [Anota�
 - Anotações Extras
 
 Além disso, nossa biblioteca permite adicionar, extrair e remover Anexos de PDF.
-Para mais detalhes, consulte as próximas [páginas de Documentação](/pdf/net/attachments/).
-Para mais detalhes, consulte as próximas [páginas de Documentação](/pdf/net/attachments/).
+Para mais detalhes, consulte as próximas [páginas de Documentação](/pdf/pt/net/attachments/).
+Para mais detalhes, consulte as próximas [páginas de Documentação](/pdf/pt/net/attachments/).
 
 ### Metadados do Arquivo PDF
 
@@ -111,7 +111,7 @@ Metadados fornecem informações essenciais sobre o documento PDF, como título,
 
 Os metadados de arquivos PDF servem a múltiplos propósitos, incluindo identificação de documentos, atribuição, rastreamento de versões, descrição, capacidade de pesquisa, acessibilidade, segurança, interoperabilidade, preservação e conformidade.
 
-Gerencie [Metadados](/pdf/net/pdf-file-metadata/) em um documento PDF de maneira fácil e rápida com a biblioteca **Aspose.PDF for .NET**.
+Gerencie [Metadados](/pdf/pt/net/pdf-file-metadata/) em um documento PDF de maneira fácil e rápida com a biblioteca **Aspose.PDF for .NET**.
 
 ### Adicionar, substituir ou remover texto e imagens
 
@@ -120,11 +120,11 @@ Adicionar, substituir ou remover texto e imagens permite que os usuários editem
 Com o Aspose.PDF você pode editar texto dentro do PDF, substituir ou girar, buscar ou obter texto em PDF.
 Com o Aspose.PDF você pode editar texto dentro de PDF, substituir ou rotacioná-lo, pesquisar ou obter texto em PDF.
 
-Você também pode adicionar, alterar posição, deletar imagens e realizar mais [ações complexas](/pdf/net/working-with-images/) com imagens no seu PDF.
+Você também pode adicionar, alterar posição, deletar imagens e realizar mais [ações complexas](/pdf/pt/net/working-with-images/) com imagens no seu PDF.
 
 ### Dividir, concatenar, extrair ou inserir páginas
 
-A seção [Trabalhando com Páginas PDF](/pdf/net/working-with-pages/) nos Docs explica como você pode adicionar, mover, deletar, rotacionar ou dividir páginas em PDF.
+A seção [Trabalhando com Páginas PDF](/pdf/pt/net/working-with-pages/) nos Docs explica como você pode adicionar, mover, deletar, rotacionar ou dividir páginas em PDF.
 
 Dividir, concatenar, extrair ou inserir páginas ajuda os usuários a gerenciar documentos PDF de forma mais eficaz. Os usuários podem organizar, rearranjar ou combinar páginas para criar novos documentos, melhorando a organização e acessibilidade do documento.
 
@@ -143,7 +143,7 @@ Aspose.PDF permite converter PDF para diferentes formatos de imagem usando C#.
 - GIF
 - SVG
 
-Biblioteca Aspose.PDF usando DocumentDevice ou ImageDevice classe para conversão de PDF para Imagem. [Converter PDF para Diferentes Formatos de Imagem](/pdf/net/convert-pdf-to-images-format/).
+Biblioteca Aspose.PDF usando DocumentDevice ou ImageDevice classe para conversão de PDF para Imagem. [Converter PDF para Diferentes Formatos de Imagem](/pdf/pt/net/convert-pdf-to-images-format/).
 
 ### Imprimir documentos PDF
 
@@ -157,25 +157,25 @@ Aspose.PDF para .NET apresenta diferentes maneiras de imprimir arquivos PDF:
 - Imprimir PDF em aplicativo WPF
 - diversas operações adicionais, como conversão de PDF para PostScript, Verificando o Status do Trabalho de Impressão etc.
 
-Vamos verificar a próxima seção para mais detalhes: [Imprimir documentos PDF](/pdf/net/printing-document/).
+Vamos verificar a próxima seção para mais detalhes: [Imprimir documentos PDF](/pdf/pt/net/printing-document/).
 
 Além disso, Aspose.PDF para .NET pode ser aplicado para converter facilmente texto, imagens, SVG, HTML para PDF e converter PDF para vários formatos de documentos com excelente desempenho e boa qualidade.
 Além disso, o Aspose.PDF para .NET pode ser aplicado para converter facilmente texto, imagens, SVG, HTML para PDF e converter PDF em vários formatos de documento com excelente desempenho e boa qualidade.
 
 ## Preços e Políticas
 
-Por favor, visite a página de [Licenciamento](/pdf/net/licensing/) para informações sobre licenças e consulte a página de [Informações de Preço](https://purchase.aspose.com/pricing/pdf/family/) para detalhes sobre os preços.
+Por favor, visite a página de [Licenciamento](/pdf/pt/net/licensing/) para informações sobre licenças e consulte a página de [Informações de Preço](https://purchase.aspose.com/pricing/pdf/family/) para detalhes sobre os preços.
 
 ## Suporte Técnico
 
-Para mais informações sobre o suporte técnico do Aspose.PDF, dê uma olhada na página de [Suporte](/pdf/net/technical-support/).
+Para mais informações sobre o suporte técnico do Aspose.PDF, dê uma olhada na página de [Suporte](/pdf/pt/net/technical-support/).
 
 Saiba mais sobre:
 
-- [Formatos de Arquivo Suportados](/pdf/net/supported-file-formats/)
-- [Principais Recursos do Aspose.PDF](/pdf/net/key-features/)
-- [Requisitos do Sistema](/pdf/net/system-requirements/)
-- [Instalação](/pdf/net/installation/)
-- [Licenciamento](/pdf/net/licensing/)
-- [Aspose.PDF.Drawing para .NET](/pdf/net/drawing/)
-- [Suporte Técnico](/pdf/net/technical-support/)
+- [Formatos de Arquivo Suportados](/pdf/pt/net/supported-file-formats/)
+- [Principais Recursos do Aspose.PDF](/pdf/pt/net/key-features/)
+- [Requisitos do Sistema](/pdf/pt/net/system-requirements/)
+- [Instalação](/pdf/pt/net/installation/)
+- [Licenciamento](/pdf/pt/net/licensing/)
+- [Aspose.PDF.Drawing para .NET](/pdf/pt/net/drawing/)
+- [Suporte Técnico](/pdf/pt/net/technical-support/)

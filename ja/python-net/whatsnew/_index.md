@@ -3,7 +3,7 @@ title: 新着情報
 linktitle: 新着情報
 type: docs
 weight: 10
-url: ja/python-net/whatsnew/
+url: /ja/python-net/whatsnew/
 description: このページでは、Aspose.PDF for Python via .NETの最近のリリースで導入された最も人気のある新機能を紹介します。
 sitemap:
     changefreq: "monthly"

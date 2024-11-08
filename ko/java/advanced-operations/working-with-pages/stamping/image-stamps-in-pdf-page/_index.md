@@ -3,7 +3,7 @@ title: PDF에 이미지 스탬프 추가 프로그래밍적으로
 linktitle: PDF 파일의 이미지 스탬프
 type: docs
 weight: 10
-url: ko/java/image-stamps-in-pdf-page/
+url: /ko/java/image-stamps-in-pdf-page/
 description: Aspose.PDF for Java 라이브러리의 ImageStamp 클래스를 사용하여 PDF 문서에 이미지 스탬프를 추가합니다.
 lastmod: "2021-06-05"
 sitemap:

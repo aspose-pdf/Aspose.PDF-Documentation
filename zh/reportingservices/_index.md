@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for Reporting Services
 second_title: Aspose.PDF for Reporting Services
 type: docs
 weight: 120
-url: zh/reportingservices/
+url: /zh/reportingservices/
 is_root: true
 lastmod: "2024-05-05"
 ---
@@ -21,32 +21,32 @@ Microsoft SQL Server Reporting Services 满足了许多组织的需求：构建�
 
 ## 主题
 
-- [产品概述](/pdf/reportingservices/product-overview/)
-- [支持的文件格式](/pdf/reportingservices/supported-file-formats/)
+- [产品概述](/pdf/zh/reportingservices/product-overview/)
+- [支持的文件格式](/pdf/zh/reportingservices/supported-file-formats/)
 
-- [功能](/pdf/reportingservices/features/)
-- [示例报告库](/pdf/reportingservices/sample-reports-gallery/)
-- [安装 Aspose.Pdf for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [与本地模式下的 Microsoft Report Viewer 集成](/pdf/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
-- [许可 Aspose.Pdf for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [配置 Aspose.Pdf for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
-- [扩展报告项目属性](/pdf/reportingservices/expand-report-items-properties/)
-- [与 MS ReportViewer 2010 和 2012 集成](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
-- [评估 Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
+- [功能](/pdf/zh/reportingservices/features/)
+- [示例报告库](/pdf/zh/reportingservices/sample-reports-gallery/)
+- [安装 Aspose.Pdf for Reporting Services](/pdf/zh/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [与本地模式下的 Microsoft Report Viewer 集成](/pdf/zh/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
+- [许可 Aspose.Pdf for Reporting Services](/pdf/zh/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [配置 Aspose.Pdf for Reporting Services](/pdf/zh/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [扩展报告项目属性](/pdf/zh/reportingservices/expand-report-items-properties/)
+- [与 MS ReportViewer 2010 和 2012 集成](/pdf/zh/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
+- [评估 Aspose.Pdf for Reporting Services](/pdf/zh/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
 ## Aspose.PDF for Reporting Services 资源
 
-- [Aspose.PDF for Reporting Services 产品概述](/pdf/reportingservices/product-overview/)
-- [Aspose.PDF for Reporting Services 支持的文件格式](/pdf/reportingservices/supported-file-formats/)
-- [Aspose.PDF for Reporting Services 功能](/pdf/reportingservices/features/)
+- [Aspose.PDF for Reporting Services 产品概述](/pdf/zh/reportingservices/product-overview/)
+- [Aspose.PDF for Reporting Services 支持的文件格式](/pdf/zh/reportingservices/supported-file-formats/)
+- [Aspose.PDF for Reporting Services 功能](/pdf/zh/reportingservices/features/)
 - [Aspose.PDF for Reporting Services 发布说明](https://releases.aspose.com/pdf/reportingservices/release-notes/)
 - [下载 Aspose.PDF for Reporting Services](https://releases.aspose.com/pdf/reportingservices/)
-- [示例报告库 Aspose.PDF for Reporting Services](/pdf/reportingservices/sample-reports-gallery/)
-- [安装 Aspose.Pdf for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [在本地模式下与 Microsoft Report Viewer 集成](/pdf/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
-- [授权 Aspose.Pdf for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [配置 Aspose.Pdf for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [示例报告库 Aspose.PDF for Reporting Services](/pdf/zh/reportingservices/sample-reports-gallery/)
+- [安装 Aspose.Pdf for Reporting Services](/pdf/zh/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [在本地模式下与 Microsoft Report Viewer 集成](/pdf/zh/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
+- [授权 Aspose.Pdf for Reporting Services](/pdf/zh/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [配置 Aspose.Pdf for Reporting Services](/pdf/zh/reportingservices/configure-aspose-pdf-for-reporting-services/)
 
-- [扩展报告项属性](/pdf/reportingservices/expand-report-items-properties/)
-- [与 MS ReportViewer 2010 和 2012 的集成](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
-- [评估 Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
+- [扩展报告项属性](/pdf/zh/reportingservices/expand-report-items-properties/)
+- [与 MS ReportViewer 2010 和 2012 的集成](/pdf/zh/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
+- [评估 Aspose.Pdf for Reporting Services](/pdf/zh/reportingservices/evaluate-aspose-pdf-for-reporting-services/)

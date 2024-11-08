@@ -3,7 +3,7 @@ title: Déterminer le Saut de Ligne
 linktitle: Déterminer le Saut de Ligne
 type: docs
 weight: 70
-url: fr/python-net/determine-line-break/
+url: /fr/python-net/determine-line-break/
 description: Apprenez-en plus sur comment déterminer un saut de ligne d'un TextFragment multi-lignes en utilisant Python
 lastmod: "2024-02-17"
 sitemap:

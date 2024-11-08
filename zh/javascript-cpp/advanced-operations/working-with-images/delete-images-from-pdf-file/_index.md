@@ -3,7 +3,7 @@ title: 通过 JavaScript 从 PDF 文件中删除图像
 linktitle: 删除图像
 type: docs
 weight: 20
-url: zh/javascript-cpp/delete-images-from-pdf-file/
+url: /zh/javascript-cpp/delete-images-from-pdf-file/
 description: 本节解释如何使用 Aspose.PDF for JavaScript 从 PDF 文件中删除图像。
 lastmod: "2022-02-17"
 ---

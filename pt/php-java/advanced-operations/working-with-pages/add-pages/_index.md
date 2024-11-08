@@ -3,7 +3,7 @@ title: Adicionar Páginas em PDF
 linktitle: Adicionar Páginas
 type: docs
 weight: 10
-url: pt/php-java/add-pages/
+url: /pt/php-java/add-pages/
 description: Este artigo ensina como inserir (adicionar) uma página na localização desejada em um arquivo PDF. Aprenda como mover, remover (excluir) páginas de um arquivo PDF usando PHP.
 lastmod: "2024-06-05"
 sitemap:

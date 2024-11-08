@@ -3,7 +3,7 @@ title: Suppression de pièce jointe d'un PDF avec JavaScript
 linktitle: Suppression de pièce jointe d'un PDF existant
 type: docs
 weight: 10
-url: fr/javascript-cpp/removing-attachment-from-an-existing-pdf/
+url: /fr/javascript-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF peut supprimer les pièces jointes de vos documents PDF. Utilisez le kit d'outils Web JavaScript pour supprimer les pièces jointes dans les fichiers PDF en utilisant Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:

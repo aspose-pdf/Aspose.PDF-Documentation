@@ -3,7 +3,7 @@ title: Tambahkan Nomor Halaman ke PDF
 linktitle: Tambahkan Nomor Halaman
 type: docs
 weight: 100
-url: id/php-java/add-page-number/
+url: /id/php-java/add-page-number/
 description: Aspose.PDF untuk PHP via Java memungkinkan Anda menambahkan Stempel Nomor Halaman ke file PDF Anda menggunakan kelas PageNumber Stamp.
 lastmod: "2024-06-05"
 sitemap:

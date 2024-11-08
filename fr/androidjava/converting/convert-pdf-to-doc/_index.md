@@ -3,7 +3,7 @@ title: Convertir PDF en DOC
 linktitle: Convertir PDF en DOC
 type: docs
 weight: 70
-url: fr/androidjava/convert-pdf-to-doc/
+url: /fr/androidjava/convert-pdf-to-doc/
 lastmod: "2021-06-05"
 description: Convertissez le fichier PDF en format DOC facilement et avec un contrôle total avec Aspose.PDF pour Android via Java. Apprenez-en plus sur comment ajuster la conversion de fichier Microsoft Word Doc en PDF.
 sitemap:

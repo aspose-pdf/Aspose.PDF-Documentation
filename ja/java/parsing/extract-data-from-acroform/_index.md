@@ -3,7 +3,7 @@ title: AcroFormからデータを抽出する
 linktitle: AcroFormからデータを抽出する
 type: docs
 weight: 50
-url: ja/java/extract-data-from-acroform/
+url: /ja/java/extract-data-from-acroform/
 description: AcroFormsは多くのPDFドキュメントに存在します。この記事は、JavaとAspose.PDFを使用してAcroFormsからデータを抽出する方法を理解するのに役立つことを目的としています。
 lastmod: "2021-06-05"
 sitemap:

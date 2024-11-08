@@ -3,7 +3,7 @@ title: Создание программного документа PDF
 linktitle: Создать PDF
 type: docs
 weight: 10
-url: ru/net/create-document/
+url: /ru/net/create-document/
 description: На этой странице описано, как создать документ PDF с нуля с помощью библиотеки Aspose.PDF.
 ---
 
@@ -18,7 +18,7 @@ Aspose.PDF для .NET API позволяет создавать и читать
 1.
 1. Сохраните полученный PDF документ
 
-Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -3,7 +3,7 @@ title: Travailler avec les documents PDF en utilisant C#
 linktitle: Travailler avec les documents
 type: docs
 weight: 10
-url: fr/net/working-with-documents/
+url: /fr/net/working-with-documents/
 description: Cet article vous décrit les manipulations qui peuvent être effectuées avec le document avec la bibliothèque Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -89,18 +89,18 @@ Mais **Aspose.PDF for .NET** peut vous aider à faire face à la plupart des tâ
 
 Vous êtes capable de faire ce qui suit :
 
-- [Mise en forme de document PDF](/pdf/net/formatting-pdf-document/) - créer un document, obtenir et définir les propriétés du document, intégrer des polices et autres opérations avec les fichiers PDF.
-- [Manipulation de document PDF](/pdf/net/manipulate-pdf-document/) - valider un document PDF pour la norme PDF A, travailler avec la table des matières, définir la date d'expiration du PDF, et etc.
-- [Optimisation de PDF](/pdf/net/optimize-pdf/) - optimiser le contenu de la page, optimiser la taille du fichier, supprimer les objets inutilisés, compresser toutes les images pour une optimisation réussie du document.
+- [Mise en forme de document PDF](/pdf/fr/net/formatting-pdf-document/) - créer un document, obtenir et définir les propriétés du document, intégrer des polices et autres opérations avec les fichiers PDF.
+- [Manipulation de document PDF](/pdf/fr/net/manipulate-pdf-document/) - valider un document PDF pour la norme PDF A, travailler avec la table des matières, définir la date d'expiration du PDF, et etc.
+- [Optimisation de PDF](/pdf/fr/net/optimize-pdf/) - optimiser le contenu de la page, optimiser la taille du fichier, supprimer les objets inutilisés, compresser toutes les images pour une optimisation réussie du document.
 
 changefreq: "monthly"
 type: docs
-- [Optimiser PDF](/pdf/net/optimize-pdf/) - optimisez le contenu de la page, optimisez la taille du fichier, supprimez les objets inutilisés, compressez toutes les images pour une optimisation réussie du document.
-- [Fusionner PDF](/pdf/net/merge-pdf-documents/) - fusionnez plusieurs fichiers PDF en un seul document PDF en utilisant C#.
-- [Diviser PDF](/pdf/net/split-document/) - divisez les pages PDF en fichiers PDF individuels dans vos applications .NET.
-- [Concaténer les fichiers PDF dans un dossier](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - concaténez tous les fichiers PDF dans un dossier particulier en utilisant la classe PdfFileEditor.
-- [Concaténer plusieurs fichiers PDF en utilisant MemoryStreams](/pdf/net/concatenate-pdf-documents/) - vous apprendrez comment concaténer plusieurs fichiers PDF en utilisant MemoryStreams avec C#.
-- [Travailler avec les titres](/pdf/net/working-with-headings/) - vous pouvez créer une numérotation dans l'en-tête de votre document PDF avec C#.
+- [Optimiser PDF](/pdf/fr/net/optimize-pdf/) - optimisez le contenu de la page, optimisez la taille du fichier, supprimez les objets inutilisés, compressez toutes les images pour une optimisation réussie du document.
+- [Fusionner PDF](/pdf/fr/net/merge-pdf-documents/) - fusionnez plusieurs fichiers PDF en un seul document PDF en utilisant C#.
+- [Diviser PDF](/pdf/fr/net/split-document/) - divisez les pages PDF en fichiers PDF individuels dans vos applications .NET.
+- [Concaténer les fichiers PDF dans un dossier](/pdf/fr/net/concatenating-all-pdf-files-in-particular-folder/) - concaténez tous les fichiers PDF dans un dossier particulier en utilisant la classe PdfFileEditor.
+- [Concaténer plusieurs fichiers PDF en utilisant MemoryStreams](/pdf/fr/net/concatenate-pdf-documents/) - vous apprendrez comment concaténer plusieurs fichiers PDF en utilisant MemoryStreams avec C#.
+- [Travailler avec les titres](/pdf/fr/net/working-with-headings/) - vous pouvez créer une numérotation dans l'en-tête de votre document PDF avec C#.
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: 埋め込みリソースとして追加する際のファイル圧縮を�
 linktitle: ファイル圧縮の無効化
 type: docs
 weight: 40
-url: ja/java/disable-files-compression-when-adding-as-embedded-resources/
+url: /ja/java/disable-files-compression-when-adding-as-embedded-resources/
 description: この記事では、埋め込みリソースとして追加する際にファイル圧縮を無効化する方法を説明します
 lastmod: "2021-06-05"
 ---

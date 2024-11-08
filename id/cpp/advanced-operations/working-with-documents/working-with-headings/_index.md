@@ -2,7 +2,7 @@
 title: Bekerja dengan Judul di PDF
 type: docs
 weight: 90
-url: id/cpp/working-with-headings/
+url: /id/cpp/working-with-headings/
 lastmod: "2021-11-11"
 description: Buat penomoran dalam judul dokumen PDF Anda dengan C++. Aspose.PDF untuk C++ menunjukkan berbagai jenis gaya penomoran.
 sitemap:
@@ -16,7 +16,7 @@ Teks apa pun dalam dokumen dimulai dengan judul. Judul adalah bagian integral da
 Judul membantu menarik perhatian pada teks dan membantu pengguna menemukan informasi yang mereka butuhkan dalam dokumen, meningkatkan keterbacaan dan persepsi visual. Dengan menggunakan gaya judul, Anda juga dapat dengan cepat membuat daftar isi, mengubah struktur dokumen.
 Jadi, mari kita lihat bagaimana cara bekerja dengan judul menggunakan pustaka Aspose.PDF untuk C++.
 
-[Aspose.PDF untuk C++](/pdf/cpp/) menawarkan banyak gaya penomoran yang sudah ditentukan sebelumnya. 
+[Aspose.PDF untuk C++](/pdf/id/cpp/) menawarkan banyak gaya penomoran yang sudah ditentukan sebelumnya. 
 Gaya penomoran yang telah ditentukan sebelumnya disimpan dalam enumerasi, NumberingStyle. Nilai-nilai yang telah ditentukan dari enumerasi NumberingStyle dan deskripsinya diberikan di bawah ini:
 
 |**Jenis Heading**|**Deskripsi**|

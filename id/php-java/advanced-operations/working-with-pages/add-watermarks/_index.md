@@ -3,7 +3,7 @@ title: Tambahkan watermark ke PDF
 linktitle: Tambahkan watermark
 type: docs
 weight: 90
-url: id/php-java/add-watermarks/
+url: /id/php-java/add-watermarks/
 description: Artikel ini menjelaskan fitur-fitur bekerja dengan artefak dan mendapatkan watermark dalam PDF menggunakan PHP.
 lastmod: "2024-06-05"
 sitemap:

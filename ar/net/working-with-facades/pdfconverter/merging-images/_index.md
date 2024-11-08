@@ -2,7 +2,7 @@
 title: دمج الصور
 type: docs
 weight: 20
-url: ar/net/merge-images/
+url: /ar/net/merge-images/
 description: يشرح هذا القسم كيفية دمج الصور، ومن الممكن الحفظ بتنسيق Tiff.
 lastmod: "2021-06-05"
 draft: false

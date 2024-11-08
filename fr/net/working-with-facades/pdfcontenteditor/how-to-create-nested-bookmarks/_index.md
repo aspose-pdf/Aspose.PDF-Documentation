@@ -2,7 +2,7 @@
 title: Ajout de signets au fichier PDF
 type: docs
 weight: 20
-url: fr/net/how-to-create-nested-bookmarks/
+url: /fr/net/how-to-create-nested-bookmarks/
 description: Cette section explique comment créer des signets imbriqués avec la classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

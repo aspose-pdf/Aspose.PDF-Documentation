@@ -3,7 +3,7 @@ title: Trabajando con Tablas en PDF
 linktitle: Trabajando con Tablas
 type: docs
 weight: 50
-url: es/php-java/working-with-tables/
+url: /es/php-java/working-with-tables/
 description: Esta sección describe cómo agregar y extraer una tabla, cómo manipular e integrar una tabla usando PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -19,4 +19,4 @@ Una de las características más tempranas soportadas por Aspose.PDF para PHP es
 
 Eres capaz de hacer lo siguiente:
 
-- [Crear o Agregar Tabla en Documento PDF existente](/pdf/php-java/add-table-in-existing-pdf-document/) - crea tu tabla en archivo pdf con la fusión de columnas o filas considerando bordes, márgenes y relleno.
+- [Crear o Agregar Tabla en Documento PDF existente](/pdf/es/php-java/add-table-in-existing-pdf-document/) - crea tu tabla en archivo pdf con la fusión de columnas o filas considerando bordes, márgenes y relleno.

@@ -3,7 +3,7 @@ title: Annotations Collantes PDF en C++
 linktitle: Annotation Collante
 type: docs
 weight: 50
-url: fr/cpp/sticky-annotations/
+url: /fr/cpp/sticky-annotations/
 description: Ce sujet concerne les annotations collantes, comme exemple nous montrons l'annotation de filigrane dans le texte. Elle est utilisée pour représenter des graphiques sur la page. Consultez l'extrait de code pour résoudre cette tâche.
 lastmod: "2021-11-24"
 sitemap:

@@ -3,7 +3,7 @@ title: AcroForm 생성 - C#에서 수정 가능한 PDF 만들기
 linktitle: AcroForm 생성
 type: docs
 weight: 10
-url: ko/net/create-form/
+url: /ko/net/create-form/
 description: Aspose.PDF for .NET을 사용하여 PDF 파일에서 처음부터 양식을 생성할 수 있습니다
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Aspose.PDF for .NET을 사용하여 PDF 파일에서 처음부터 양식을 생성할 수 있습니다"
 }
 </script>
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 처음부터 양식 만들기
 

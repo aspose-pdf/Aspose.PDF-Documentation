@@ -3,7 +3,7 @@ title: Travailler avec le texte dans les PDF en utilisant C#
 linktitle: Travailler avec le texte
 type: docs
 weight: 30
-url: fr/net/working-with-text/
+url: /fr/net/working-with-text/
 description: Cette section explique les différentes techniques de manipulation de texte. Apprenez à ajouter, remplacer, faire pivoter, rechercher du texte en utilisant Aspose.PDF et C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,14 +79,14 @@ Nous avons tous parfois besoin d'ajouter du texte à un fichier PDF. Par exemple
 
 Vous êtes capable de faire ce qui suit :
 
-- [Ajouter du texte au fichier PDF](/pdf/net/add-text-to-pdf-file/) - ajouter du texte à votre PDF, utiliser des polices à partir de flux et de fichiers, ajouter une chaîne HTML, ajouter un hyperlien, etc.
-- [Infobulle PDF](/pdf/net/pdf-tooltip/) - vous pouvez ajouter une infobulle au texte recherché en ajoutant un bouton invisible en utilisant C#.
-- [Formatage du texte à l'intérieur du PDF](/pdf/net/text-formatting-inside-pdf/) - De nombreuses fonctionnalités que vous pouvez ajouter à votre document lors du formatage du texte à l'intérieur de celui-ci.
-- [Mise en forme du texte dans PDF](/pdf/net/text-formatting-inside-pdf/) - De nombreuses fonctionnalités que vous pouvez ajouter à votre document lors de la mise en forme du texte.
-- [Remplacer le texte dans PDF](/pdf/net/replace-text-in-pdf/) - pour remplacer le texte dans toutes les pages d'un document PDF. Vous devez d'abord utiliser TextFragmentAbsorber.
-- [Rotation du texte dans PDF](/pdf/net/rotate-text-inside-pdf/) - faire pivoter le texte dans PDF en utilisant la propriété de rotation de la classe TextFragment.
-- [Rechercher et obtenir du texte à partir des pages d'un document PDF](/pdf/net/search-and-get-text-from-pdf/) - vous pouvez utiliser la classe TextFragmentAbsorber pour rechercher et obtenir un texte des pages.
-- [Déterminer le saut de ligne](/pdf/net/determine-line-break/) - ce sujet explique comment suivre la rupture de ligne des fragments de texte multi-lignes.
+- [Ajouter du texte au fichier PDF](/pdf/fr/net/add-text-to-pdf-file/) - ajouter du texte à votre PDF, utiliser des polices à partir de flux et de fichiers, ajouter une chaîne HTML, ajouter un hyperlien, etc.
+- [Infobulle PDF](/pdf/fr/net/pdf-tooltip/) - vous pouvez ajouter une infobulle au texte recherché en ajoutant un bouton invisible en utilisant C#.
+- [Formatage du texte à l'intérieur du PDF](/pdf/fr/net/text-formatting-inside-pdf/) - De nombreuses fonctionnalités que vous pouvez ajouter à votre document lors du formatage du texte à l'intérieur de celui-ci.
+- [Mise en forme du texte dans PDF](/pdf/fr/net/text-formatting-inside-pdf/) - De nombreuses fonctionnalités que vous pouvez ajouter à votre document lors de la mise en forme du texte.
+- [Remplacer le texte dans PDF](/pdf/fr/net/replace-text-in-pdf/) - pour remplacer le texte dans toutes les pages d'un document PDF. Vous devez d'abord utiliser TextFragmentAbsorber.
+- [Rotation du texte dans PDF](/pdf/fr/net/rotate-text-inside-pdf/) - faire pivoter le texte dans PDF en utilisant la propriété de rotation de la classe TextFragment.
+- [Rechercher et obtenir du texte à partir des pages d'un document PDF](/pdf/fr/net/search-and-get-text-from-pdf/) - vous pouvez utiliser la classe TextFragmentAbsorber pour rechercher et obtenir un texte des pages.
+- [Déterminer le saut de ligne](/pdf/fr/net/determine-line-break/) - ce sujet explique comment suivre la rupture de ligne des fragments de texte multi-lignes.
 
 <script type="application/ld+json">
 {

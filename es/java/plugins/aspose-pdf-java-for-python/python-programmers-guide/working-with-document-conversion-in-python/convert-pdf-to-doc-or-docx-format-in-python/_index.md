@@ -2,7 +2,7 @@
 title: Convertir PDF a formato DOC o DOCX en Python
 type: docs
 weight: 10
-url: es/java/convert-pdf-to-doc-or-docx-format-in-python/
+url: /es/java/convert-pdf-to-doc-or-docx-format-in-python/
 lastmod: "2021-06-05"
 ---
 

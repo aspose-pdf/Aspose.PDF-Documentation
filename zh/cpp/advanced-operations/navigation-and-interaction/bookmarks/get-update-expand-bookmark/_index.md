@@ -3,7 +3,7 @@ title: 获取、更新和扩展书签
 linktitle: 获取、更新和扩展书签
 type: docs
 weight: 20
-url: zh/cpp/get-update-and-expand-bookmark/
+url: /zh/cpp/get-update-and-expand-bookmark/
 description: Aspose.PDF for C++ 库允许您在 PDF 文件中获取和更新。
 lastmod: "2022-01-31"
 sitemap:

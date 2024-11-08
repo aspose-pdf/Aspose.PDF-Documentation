@@ -2,7 +2,7 @@
 title: 디버그 정보
 type: docs
 weight: 90
-url: ko/reportingservices/debug-information/
+url: /ko/reportingservices/debug-information/
 lastmod: "2021-06-05"
 ---
 

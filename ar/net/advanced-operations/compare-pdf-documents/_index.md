@@ -3,7 +3,7 @@ title: مقارنة مستندات PDF
 linktitle: مقارنة PDF
 type: docs
 weight: 180
-url: ar/net/compare-pdf-documents/
+url: /ar/net/compare-pdf-documents/
 description: منذ إصدار 24.7 أصبح من الممكن مقارنة محتوى مستندات PDF مع علامات التعليقات والعرض جنبًا إلى جنب
 lastmod: "2024-08-17"
 sitemap:

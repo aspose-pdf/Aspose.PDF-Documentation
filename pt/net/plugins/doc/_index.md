@@ -2,7 +2,7 @@
 title: DOC Converter
 type: docs
 weight: 10
-url: pt/net/plugins/doc/
+url: /pt/net/plugins/doc/
 description: Converter PDF para Word de forma simples com o Plugin PdfDoc
 lastmod: "2024-01-24"
 ---

@@ -3,7 +3,7 @@ title: Descriptografar PDF usando JavaScript
 linktitle: Descriptografar Arquivo PDF
 type: docs
 weight: 40
-url: pt/javascript-cpp/decrypt-pdf/
+url: /pt/javascript-cpp/decrypt-pdf/
 description: Descriptografar Arquivo PDF com Aspose.PDF para JavaScript via C++.
 lastmod: "2022-12-15"
 sitemap:

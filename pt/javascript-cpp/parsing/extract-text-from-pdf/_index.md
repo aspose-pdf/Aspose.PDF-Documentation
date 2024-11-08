@@ -3,7 +3,7 @@ title: Extrair Texto de PDF usando JavaScript
 linktitle: Extrair texto de PDF
 type: docs
 weight: 30
-url: pt/javascript-cpp/extract-text-from-pdf/
+url: /pt/javascript-cpp/extract-text-from-pdf/
 description: Este artigo descreve várias maneiras de extrair texto de documentos PDF usando Aspose.PDF para JavaScript.
 lastmod: "2023-06-05"
 sitemap:

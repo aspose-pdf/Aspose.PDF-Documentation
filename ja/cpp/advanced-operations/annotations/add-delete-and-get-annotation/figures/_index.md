@@ -3,7 +3,7 @@ title: Add Figures Annotations using C++
 linktitle: Figures Annotations
 type: docs
 weight: 30
-url: ja/cpp/figures-annotation/
+url: /ja/cpp/figures-annotation/
 description: この記事では、Aspose.PDF for C++を使用してPDFドキュメントに図形注釈を追加、取得、削除する方法について説明します。
 lastmod: "2021-11-24"
 sitemap:

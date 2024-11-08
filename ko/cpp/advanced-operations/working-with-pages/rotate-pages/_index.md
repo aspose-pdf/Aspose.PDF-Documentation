@@ -3,7 +3,7 @@ title: C++를 사용하여 PDF 페이지 회전
 linktitle: PDF 페이지 회전
 type: docs
 weight: 50
-url: ko/cpp/rotate-pages/
+url: /ko/cpp/rotate-pages/
 description: 이 주제는 C++를 사용하여 기존 PDF 파일의 페이지 방향을 프로그래밍 방식으로 회전하는 방법을 설명합니다.
 lastmod: "2021-12-08"
 sitemap:

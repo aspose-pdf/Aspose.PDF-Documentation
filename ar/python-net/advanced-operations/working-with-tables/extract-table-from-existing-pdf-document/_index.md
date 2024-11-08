@@ -3,7 +3,7 @@ title: استخراج جدول من مستند PDF
 linktitle: استخراج جدول
 type: docs
 weight: 20
-url: ar/python-net/extract-table-from-existing-pdf-document/
+url: /ar/python-net/extract-table-from-existing-pdf-document/
 description: يجعل Aspose.PDF لـ Python عبر .NET من الممكن تنفيذ عمليات مختلفة مع الجداول الموجودة في مستند PDF الخاص بك.
 lastmod: "2023-02-17"
 sitemap:

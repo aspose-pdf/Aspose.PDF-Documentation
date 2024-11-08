@@ -3,7 +3,7 @@ title: Set Default Font Name
 linktitle: Set Default Font Name
 type: docs
 weight: 90
-url: es/net/set-default-font-name/
+url: /es/net/set-default-font-name/
 description: Esta sección describe cómo establecer el nombre de fuente predeterminado durante el proceso de conversión de PDF a imagen.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 **Aspose.PDF para .NET** API permite establecer un nombre de fuente predeterminado cuando una fuente no está disponible en el documento. Puedes usar la propiedad DefaultFontName de la clase RenderingOptions para establecer el nombre de la fuente predeterminada. En caso de que DefaultFontName se establezca en null, se utilizará la fuente **Times New Roman**. El siguiente fragmento de código muestra cómo establecer un nombre de fuente predeterminado al guardar un PDF en una imagen:
 
-El siguiente fragmento de código también funciona con la nueva interfaz gráfica [Aspose.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la nueva interfaz gráfica [Aspose.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET

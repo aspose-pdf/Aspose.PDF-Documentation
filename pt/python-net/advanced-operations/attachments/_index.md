@@ -3,7 +3,7 @@ title: Trabalhando com Anexos em PDF usando Python
 linktitle: Trabalhando com Anexos
 type: docs
 weight: 130
-url: pt/python-net/attachments/
+url: /pt/python-net/attachments/
 description: Use a API PDF do Python para acessar, adicionar e remover anexos em arquivos PDF usando Python dentro de suas aplicações. Guia completo com exemplos de código em Python.
 lastmod: "2023-02-17"
 sitemap:
@@ -81,9 +81,9 @@ Na seção seguinte, explicaremos como trabalhar com anexos em PDF usando Aspose
 Um anexo é um arquivo adicional que é anexado a um documento pai, ele pode ser de vários tipos de arquivos, como pdf, word, imagem ou outros arquivos.  
 Você aprenderá como adicionar anexos a um pdf, obter as informações de um anexo e salvá-lo em um arquivo, deletar o anexo de um PDF programaticamente com Python.  
 
-- [Adicionando anexo a um documento PDF](/pdf/python-net/add-attachment-to-pdf-document/)  
-- [Removendo anexo de um PDF existente](/pdf/python-net/removing-attachment-from-an-existing-pdf/)  
-- [Portfólio](/pdf/python-net/portfolio/)  
+- [Adicionando anexo a um documento PDF](/pdf/pt/python-net/add-attachment-to-pdf-document/)  
+- [Removendo anexo de um PDF existente](/pdf/pt/python-net/removing-attachment-from-an-existing-pdf/)  
+- [Portfólio](/pdf/pt/python-net/portfolio/)  
 
 <script type="application/ld+json">  
 {  

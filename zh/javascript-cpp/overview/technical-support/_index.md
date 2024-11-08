@@ -3,7 +3,7 @@ title: Aspose.PDF for JavaScript 支持
 linktitle: 技术支持
 type: docs
 weight: 60
-url: zh/javascript-cpp/technical-support/
+url: /zh/javascript-cpp/technical-support/
 description: 本页提供了使用 Aspose.PDF for JavaScript 快速和高质量解决任务的建议。
 lastmod: "2022-12-13"
 sitemap:

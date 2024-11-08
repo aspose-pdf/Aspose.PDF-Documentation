@@ -2,7 +2,7 @@
 title: Работа с изображениями с использованием PdfContentEditor
 type: docs
 weight: 50
-url: ru/net/working-with-images-in-pdf
+url: /ru/net/working-with-images-in-pdf
 description: Этот раздел объясняет, как добавлять и удалять изображения с помощью Aspose.PDF Facades, используя класс PdfContentEditor.
 lastmod: "2021-06-24"
 ---

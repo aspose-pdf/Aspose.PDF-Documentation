@@ -3,7 +3,7 @@ title: دمج الجدول مع مصادر البيانات PDF
 linktitle: دمج الجدول
 type: docs
 weight: 30
-url: ar/net/integrate-table/
+url: /ar/net/integrate-table/
 description: يوضح هذا المقال كيفية دمج جداول PDF. دمج الجدول مع قاعدة البيانات وتحديد ما إذا كان الجدول سينقسم في الصفحة الحالية.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## دمج الجدول مع قاعدة البيانات
 

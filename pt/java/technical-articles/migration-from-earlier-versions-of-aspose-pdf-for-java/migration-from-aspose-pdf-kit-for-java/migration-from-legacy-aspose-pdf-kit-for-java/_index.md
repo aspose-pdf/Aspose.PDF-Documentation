@@ -2,7 +2,7 @@
 title: Migração do Aspose.Pdf.Kit legado para Java
 type: docs
 weight: 10
-url: pt/java/migration-from-legacy-aspose-pdf-kit-for-java/
+url: /pt/java/migration-from-legacy-aspose-pdf-kit-for-java/
 lastmod: "2022-01-27"
 ---
 

@@ -3,7 +3,7 @@ title: PDFに画像またはテキストが含まれているかどうかを確�
 linktitle: テキストと画像の存在を確認
 type: docs
 weight: 40
-url: ja/net/find-whether-pdf-file-contains-images-or-text-only/
+url: /ja/net/find-whether-pdf-file-contains-images-or-text-only/
 description: このトピックでは、PdfExtractorクラスを使用してPDFファイルに画像またはテキストのみが含まれているかどうかを確認する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

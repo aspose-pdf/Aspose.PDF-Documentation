@@ -3,7 +3,7 @@ title: Optimalkan Sumber Daya PDF di Node.js
 linktitle: Optimalkan Sumber Daya PDF
 type: docs
 weight: 15
-url: id/nodejs-cpp/optimize-pdf-resources/
+url: /id/nodejs-cpp/optimize-pdf-resources/
 description: Optimalkan Sumber Daya dari file PDF untuk tampilan web cepat menggunakan alat Node.js.
 lastmod: "2023-11-16"
 sitemap:

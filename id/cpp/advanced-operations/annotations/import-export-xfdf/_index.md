@@ -3,7 +3,7 @@ title: Impor dan Ekspor Anotasi ke format XFDF menggunakan Aspose.PDF untuk C++
 linktitle: Impor dan Ekspor Anotasi ke format XFDF
 type: docs
 weight: 40
-url: id/cpp/import-export-xfdf/
+url: /id/cpp/import-export-xfdf/
 description: Anda dapat mengimpor dan mengekspor anotasi dengan format XFDF menggunakan C++ dan pustaka Aspose.PDF untuk C++.
 lastmod: "2021-12-02"
 sitemap:

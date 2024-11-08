@@ -3,7 +3,7 @@
 title: Importer et Exporter des Signets
 type: docs
 weight: 20
-url: fr/net/import-and-export-bookmarks/
+url: /fr/net/import-and-export-bookmarks/
 description: Cette section explique comment importer et exporter des signets avec Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

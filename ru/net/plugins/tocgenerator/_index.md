@@ -2,7 +2,7 @@
 title: Генератор оглавления
 type: docs
 weight: 150
-url: ru/net/plugins/tocgenerator/
+url: /ru/net/plugins/tocgenerator/
 description: Создает оглавление с помощью генератора оглавлений Aspose.PDF для .NET
 lastmod: "2024-01-24"
 draft: false

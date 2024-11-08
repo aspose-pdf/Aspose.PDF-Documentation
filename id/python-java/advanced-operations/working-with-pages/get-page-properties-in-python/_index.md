@@ -1,7 +1,7 @@
 title: Dapatkan Properti Halaman dalam Python
 type: docs
 weight: 50
-url: id/python-java/get-page-properties-in-python/
+url: /id/python-java/get-page-properties-in-python/
 ---
 
 Untuk mendapatkan properti halaman dari dokumen Pdf menggunakan **Aspose.PDF Java untuk Python**, cukup panggil kelas **GetPageProperties**.

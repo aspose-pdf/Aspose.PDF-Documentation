@@ -2,7 +2,7 @@
 title: بيانات التعريف لملف PDF
 type: docs
 weight: 20
-url: ar/cpp/pdf-file-metadata/
+url: /ar/cpp/pdf-file-metadata/
 ---
 
 ## الحصول على/تعيين معلومات ملف PDF

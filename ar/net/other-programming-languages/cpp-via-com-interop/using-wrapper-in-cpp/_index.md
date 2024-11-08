@@ -2,14 +2,14 @@
 title: استخدام الغلاف في CPP
 type: docs
 weight: 30
-url: ar/net/using-wrapper-in-cpp/
+url: /ar/net/using-wrapper-in-cpp/
 ---
 
 ## المتطلبات الأساسية
 
 {{% alert color="primary" %}}
 
-يرجى تسجيل Aspose.PDF لـ .NET مع COM Interop، يرجى التحقق من المقالة المسماة [استخدام Aspose.pdf لـ .NET عبر COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+يرجى تسجيل Aspose.PDF لـ .NET مع COM Interop، يرجى التحقق من المقالة المسماة [استخدام Aspose.pdf لـ .NET عبر COM Interop](/pdf/ar/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

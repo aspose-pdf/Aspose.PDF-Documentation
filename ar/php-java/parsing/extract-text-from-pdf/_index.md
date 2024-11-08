@@ -3,7 +3,7 @@ title: استخراج النص من PDF
 linktitle: استخراج النص 
 type: docs
 weight: 10
-url: ar/php-java/extract-text-from-pdf/
+url: /ar/php-java/extract-text-from-pdf/
 description: يسمح Aspose.PDF باستخراج أنواع مختلفة من المعلومات. يحتوي هذا القسم على مقالات حول استخراج النصوص من مستندات PDF باستخدام Aspose.PDF لـ PHP.
 lastmod: "2024-05-20"
 sitemap:
@@ -20,5 +20,5 @@ sitemap:
 بالنسبة لشركات التنقيب عن البيانات وإدارة المحتوى ومعالجة النماذج، سيكون استخراج النص مفيدًا بشكل خاص.
  استخراج النص مفيد: الأرشفة: يمكن استرداد النص ومكوناته بحيث يمكن فهرسة المستندات وأرشفتها بقدرات بحث كاملة؛ استرداد ومعالجة البيانات في النماذج؛ استخراج المعلومات مثل بيانات الحساب، العناوين البريدية، وأرقام الهواتف لأغراض إدارية؛ استخراج الصور والصور.
 
-- [استخراج النص من PDF](/pdf/php-java/extract-text-from-all-pdf/)
-- [استخراج الفقرة من PDF](/pdf/php-java/extract-paragraph-from-pdf/)
+- [استخراج النص من PDF](/pdf/ar/php-java/extract-text-from-all-pdf/)
+- [استخراج الفقرة من PDF](/pdf/ar/php-java/extract-paragraph-from-pdf/)

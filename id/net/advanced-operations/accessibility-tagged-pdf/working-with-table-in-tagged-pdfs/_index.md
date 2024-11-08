@@ -3,7 +3,7 @@ title: Bekerja dengan Tabel dalam PDF Bertag
 linktitle: Bekerja dengan Tabel dalam PDF Bertag
 type: docs
 weight: 40
-url: id/net/working-with-table-in-tagged-pdfs/
+url: /id/net/working-with-table-in-tagged-pdfs/
 description: Artikel ini menjelaskan cara bekerja dengan tabel dalam dokumen PDF Bertag dengan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 Aspose.PDF untuk .NET memungkinkan pembuatan tabel dalam dokumen PDF Bertag.
 Aspose.PDF untuk .NET memungkinkan pembuatan tabel dalam dokumen PDF Bertag.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan, bagaimana cara membuat tabel dalam dokumen PDF Bertag:
 

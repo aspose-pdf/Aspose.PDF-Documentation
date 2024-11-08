@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 PDF 파일에서 이미지 삭제
 linktitle: 이미지 삭제
 type: docs
 weight: 20
-url: ko/python-net/delete-images-from-pdf-file/
+url: /ko/python-net/delete-images-from-pdf-file/
 description: 이 섹션에서는 Aspose.PDF for Python via .NET을 사용하여 PDF 파일에서 이미지를 삭제하는 방법을 설명합니다.
 lastmod: "2023-04-17"
 ---

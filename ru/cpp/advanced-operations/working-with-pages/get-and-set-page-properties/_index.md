@@ -2,7 +2,7 @@
 title: Получение и Установка Свойств Страницы
 type: docs
 weight: 20
-url: ru/cpp/get-and-set-page-properties/
+url: /ru/cpp/get-and-set-page-properties/
 description: Вы можете получить и установить свойства страниц вашего PDF файла, используя библиотеку C++.
 lastmod: "2021-12-09"
 sitemap:

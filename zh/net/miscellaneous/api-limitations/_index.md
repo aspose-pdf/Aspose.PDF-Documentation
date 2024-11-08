@@ -2,7 +2,7 @@
 title: API限制
 type: docs
 weight: 70
-url: zh/net/api-limitations/
+url: /zh/net/api-limitations/
 ---
 
 ## **Xsl Fo 到 Pdf**

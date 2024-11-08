@@ -3,7 +3,7 @@ title: Добавить и удалить закладку
 linktitle: Добавить и удалить закладку
 type: docs
 weight: 10
-url: ru/cpp/add-and-delete-bookmark/
+url: /ru/cpp/add-and-delete-bookmark/
 description: Эта тема объясняет, как добавить закладку в PDF документ с помощью библиотеки C++. Также вы можете удалить все или определенные закладки из PDF документа.
 lastmod: "2022-01-31"
 sitemap:

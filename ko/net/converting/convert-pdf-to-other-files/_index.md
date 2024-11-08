@@ -3,7 +3,7 @@ title: PDF를 EPUB, LaTeX, 텍스트, XPS로 변환하기
 linktitle: PDF를 다른 형식으로 변환
 type: docs
 weight: 90
-url: ko/net/convert-pdf-to-other-files/
+url: /ko/net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
 keywords: 변환, PDF, EPUB, LaTeX, 텍스트, XPS, C#
 description: 이 주제에서는 C# 또는 .NET을 사용하여 PDF 파일을 EPUB, LaTeX, 텍스트, XPS 등의 다른 파일 형식으로 변환하는 방법을 보여줍니다.
@@ -26,7 +26,7 @@ Aspose.PDF for .NET은 무료 온라인 애플리케이션 ["PDF를 EPUB로"](ht
 **<abbr title="전자 출판">EPUB</abbr>**는 국제 디지털 출판 포럼(IDPF)에서 제공하는 무료이자 개방형 전자책 표준입니다.
 EPUB은 재배치 가능한 콘텐츠를 위해 설계되었으며, 이는 EPUB 리더기가 특정 디스플레이 장치에 최적화된 텍스트를 제공할 수 있음을 의미합니다. EPUB은 고정 레이아웃 콘텐츠도 지원합니다. 이 포맷은 출판사와 변환소가 내부적으로 사용할 수 있는 단일 포맷으로 의도되었으며, 유통 및 판매를 위해서도 사용됩니다. 이는 오픈 이북 표준을 대체합니다.
 
-다음 코드 스니펫 또한 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫 또한 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 Aspose.PDF for .NET은 PDF 문서를 EPUB 포맷으로 변환하는 기능도 지원합니다. Aspose.PDF for .NET에는 `EpubSaveOptions`라는 클래스가 있으며, 이는 [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메소드의 두 번째 인자로 사용할 수 있어 EPUB 파일을 생성할 수 있습니다.
 다음 C# 코드 스니펫을 사용해 보세요.

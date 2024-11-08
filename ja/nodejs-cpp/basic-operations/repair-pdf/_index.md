@@ -3,7 +3,7 @@ title: Node.jsでPDFを修復する
 linktitle: PDFを修復する
 type: docs
 weight: 10
-url: ja/nodejs-cpp/repair-pdf/
+url: /ja/nodejs-cpp/repair-pdf/
 description: このトピックでは、Node.js環境でPDFを修復する方法について説明します。
 lastmod: "2023-11-16"
 sitemap:

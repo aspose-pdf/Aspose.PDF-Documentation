@@ -3,7 +3,7 @@ title: Determine Line Break
 linktitle: Determine Line Break
 type: docs
 weight: 70
-url: id/net/determine-line-break/
+url: /id/net/determine-line-break/
 description: Pelajari lebih lanjut tentang cara menentukan pemisah baris dari TextFragment multi-baris menggunakan C#
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Pelajari lebih lanjut tentang cara menentukan pemisah baris dari TextFragment multi-baris menggunakan C#"
 }
 </script>
-Kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Melacak Pemecahan Baris dari TextFragment Multi-Baris
 

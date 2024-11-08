@@ -3,7 +3,7 @@ title: Menggunakan Anotasi Tautan dalam PDF
 linktitle: Anotasi Tautan
 type: docs
 weight: 70
-url: id/net/link-annotations/
+url: /id/net/link-annotations/
 description: Aspose.PDF untuk .NET memungkinkan Anda untuk Menambahkan, Mendapatkan, dan Menghapus Anotasi Tautan dari dokumen PDF Anda.
 lastmod: "2024-07-28"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 ## Menambahkan Anotasi Tautan ke dalam file PDF yang ada
 
-> Cuplikan kode berikut juga bisa digunakan dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+> Cuplikan kode berikut juga bisa digunakan dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Anotasi [Tautan](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) mewakili hyperlink, tujuan lain, dan dokumen. Menurut Standar PDF, anotasi tautan dapat digunakan dalam tiga kasus: membuka tampilan halaman, membuka file, dan membuka halaman web.
 

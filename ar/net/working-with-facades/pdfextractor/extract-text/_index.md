@@ -3,7 +3,7 @@
 title: استخراج النص من ملف PDF
 type: docs
 weight: 30
-url: ar/net/extract-text/
+url: /ar/net/extract-text/
 description: يشرح هذا القسم كيفية استخراج النص من ملف PDF باستخدام فئة PdfExtractor.
 lastmod: "2021-06-05"
 ---

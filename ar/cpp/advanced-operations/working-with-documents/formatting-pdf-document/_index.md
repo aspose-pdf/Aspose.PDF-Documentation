@@ -3,7 +3,7 @@ title: تنسيق مستند PDF باستخدام C++
 linktitle: تنسيق مستند PDF
 type: docs
 weight: 20
-url: ar/cpp/formatting-pdf-document/
+url: /ar/cpp/formatting-pdf-document/
 description: أنشئ وقم بتنسيق مستند PDF باستخدام Aspose.PDF لـ C++. استخدم مقتطف الشيفرة التالي لحل مهامك.
 lastmod: "2021-11-11"
 sitemap:

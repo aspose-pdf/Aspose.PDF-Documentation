@@ -3,7 +3,7 @@ title: Extract Text from PDF
 linktitle: Extract Text from PDF
 type: docs
 weight: 10
-url: id/cpp/extract-text-from-pdf/
+url: /id/cpp/extract-text-from-pdf/
 description: Aspose.PDF memungkinkan untuk mengekstraksi berbagai jenis informasi. Bagian ini berisi artikel tentang ekstraksi teks dari dokumen PDF menggunakan Aspose.PDF dalam C++.
 lastmod: "2021-06-05"
 sitemap:
@@ -17,5 +17,5 @@ Bergantung pada kebutuhan Anda untuk ekstraksi teks sederhana pada satu halaman,
 
 ## Artikel di bagian ini
 
-- [Ekstraksi Teks dari PDF](/pdf/cpp/extract-text-from-all-pdf/)
-- [Ekstraksi Paragraf dari PDF](/pdf/cpp/extract-paragraph-from-pdf/)
+- [Ekstraksi Teks dari PDF](/pdf/id/cpp/extract-text-from-all-pdf/)
+- [Ekstraksi Paragraf dari PDF](/pdf/id/cpp/extract-paragraph-from-pdf/)

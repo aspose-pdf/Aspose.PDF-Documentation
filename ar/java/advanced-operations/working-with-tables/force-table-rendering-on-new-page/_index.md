@@ -2,7 +2,7 @@
 title: فرض عرض الجدول في صفحة جديدة
 type: docs
 weight: 20
-url: ar/java/force-table-rendering-on-new-page/
+url: /ar/java/force-table-rendering-on-new-page/
 lastmod: "2021-06-05"
 ---
 

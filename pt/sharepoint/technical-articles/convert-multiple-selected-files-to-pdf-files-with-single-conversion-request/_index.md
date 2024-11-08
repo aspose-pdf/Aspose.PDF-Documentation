@@ -2,7 +2,7 @@
 title: Converter vários arquivos selecionados para arquivos PDF com uma única solicitação de conversão
 type: docs
 weight: 50
-url: pt/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
+url: /pt/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
 lastmod: "2020-12-16"
 description: A Biblioteca PDF SharePoint permite converter vários arquivos selecionados em arquivos PDF com uma única operação de conversão.
 ---

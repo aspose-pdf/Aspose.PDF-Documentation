@@ -2,7 +2,7 @@
 title: 세계적 수준의 무료 기술 지원
 type: docs
 weight: 20
-url: ko/sharepoint/world-class-free-technical-support/
+url: /ko/sharepoint/world-class-free-technical-support/
 lastmod: "2020-12-16"
 description: PDF SharePoint API는 포럼, 블로그 및 우선 지원을 통해 무료 및 무제한 기술 지원을 제공합니다.
 ---

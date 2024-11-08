@@ -3,7 +3,7 @@ title: Добавление объекта Эллипс в PDF файл
 linktitle: Добавление Эллипса
 type: docs
 weight: 60
-url: ru/java/add-ellipse/
+url: /ru/java/add-ellipse/
 description: Эта статья объясняет, как создать объект Эллипс в вашем PDF с использованием Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

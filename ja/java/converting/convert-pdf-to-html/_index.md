@@ -3,7 +3,7 @@ title: PDFファイルをHTML形式に変換する
 linktitle: PDFファイルをHTML形式に変換する 
 type: docs
 weight: 50
-url: ja/java/convert-pdf-to-html/
+url: /ja/java/convert-pdf-to-html/
 lastmod: "2021-11-19"
 description: このトピックでは、Aspose.PDFがJavaライブラリを使用してPDFファイルをHTML形式に変換する方法を示します。
 sitemap:

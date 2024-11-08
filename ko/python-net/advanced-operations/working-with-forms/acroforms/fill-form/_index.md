@@ -3,7 +3,7 @@ title: AcroForm 채우기 - Python을 사용하여 PDF 양식 채우기
 linktitle: AcroForm 채우기
 type: docs
 weight: 20
-url: ko/python-net/fill-form/
+url: /ko/python-net/fill-form/
 keywords: Python으로 PDF 양식 채우기
 description: Aspose.PDF for Python 라이브러리를 사용하여 PDF 문서의 양식을 채울 수 있습니다.
 lastmod: "2023-02-17"

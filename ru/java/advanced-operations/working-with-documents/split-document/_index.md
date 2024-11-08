@@ -3,7 +3,7 @@ title: Разделение PDF программно
 linktitle: Разделение PDF файлов
 type: docs
 weight: 60
-url: ru/java/split-document/
+url: /ru/java/split-document/
 description: Эта тема показывает, как разделить страницы PDF на отдельные PDF файлы в ваших Java приложениях.
 lastmod: "2021-06-05"
 sitemap:

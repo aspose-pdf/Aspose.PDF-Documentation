@@ -2,7 +2,7 @@
 title: PDFページを画像に変換し、バーコードを認識する
 type: docs
 weight: 10
-url: ja/net/convert-pdf-pages-to-images-and-recognize-barcodes/
+url: /ja/net/convert-pdf-pages-to-images-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

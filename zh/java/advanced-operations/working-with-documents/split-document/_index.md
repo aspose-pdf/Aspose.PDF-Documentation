@@ -3,7 +3,7 @@ title: 程序化分割PDF
 linktitle: 分割PDF文件
 type: docs
 weight: 60
-url: zh/java/split-document/
+url: /zh/java/split-document/
 description: 本主题介绍如何在Java应用程序中将PDF页面拆分为单独的PDF文件。
 lastmod: "2021-06-05"
 sitemap:

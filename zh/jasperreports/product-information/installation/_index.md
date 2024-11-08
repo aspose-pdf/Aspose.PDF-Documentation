@@ -6,7 +6,7 @@ type: docs
 
 weight: 50
 
-url: zh/jasperreports/installation/
+url: /zh/jasperreports/installation/
 
 lastmod: "2021-06-05"
 
@@ -18,8 +18,8 @@ lastmod: "2021-06-05"
 
 
 
-- [系统要求](/pdf/jasperreports/system-requirements/)
+- [系统要求](/pdf/zh/jasperreports/system-requirements/)
 
-- [与 JasperReports 的集成](/pdf/jasperreports/integration-with-jasperreports/)
+- [与 JasperReports 的集成](/pdf/zh/jasperreports/integration-with-jasperreports/)
 
-- [与 JasperServer 的集成](/pdf/jasperreports/integration-with-jasperserver/)
+- [与 JasperServer 的集成](/pdf/zh/jasperreports/integration-with-jasperserver/)

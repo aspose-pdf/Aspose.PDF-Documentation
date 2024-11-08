@@ -3,7 +3,7 @@ title: Hapus Halaman PDF secara programatik
 linktitle: Hapus Halaman PDF
 type: docs
 weight: 40
-url: id/php-java/delete-pages/
+url: /id/php-java/delete-pages/
 description: Anda dapat menghapus halaman dari file PDF Anda menggunakan PHP.
 lastmod: "2024-06-05"
 sitemap:

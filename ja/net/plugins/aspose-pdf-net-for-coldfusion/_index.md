@@ -2,7 +2,7 @@
 title: Aspose.Pdf for .NETをColdfusionで使用する方法
 type: docs
 weight: 300
-url: ja/net/using-aspose-pdf-for-net-with-coldfusion/
+url: /ja/net/using-aspose-pdf-for-net-with-coldfusion/
 description: Aspose.Pdf for .NETとColdfusionをPdfFileInfoクラスを使用して作業する必要があります
 lastmod: "2021-07-14"
 draft: false

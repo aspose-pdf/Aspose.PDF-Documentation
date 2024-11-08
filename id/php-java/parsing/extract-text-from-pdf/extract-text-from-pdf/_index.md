@@ -3,7 +3,7 @@ title: Mengekstraksi teks mentah dari file PDF
 linktitle: Ekstrak teks dari PDF
 type: docs
 weight: 10
-url: id/php-java/extract-text-from-all-pdf/
+url: /id/php-java/extract-text-from-all-pdf/
 description: Artikel ini menjelaskan berbagai cara untuk mengekstraksi teks dari dokumen PDF menggunakan Aspose.PDF untuk PHP. Dari seluruh halaman, dari bagian tertentu, berdasarkan kolom, dll.
 lastmod: "2024-05-20"
 sitemap:

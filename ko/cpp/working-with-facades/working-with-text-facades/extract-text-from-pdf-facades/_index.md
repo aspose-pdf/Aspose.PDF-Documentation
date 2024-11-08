@@ -2,7 +2,7 @@
 title: PDF에서 텍스트 추출 - Facades
 type: docs
 weight: 10
-url: ko/cpp/extract-text-from-pdf-facades/
+url: /ko/cpp/extract-text-from-pdf-facades/
 ---
 
 ## <ins>**문서의 모든 페이지에서 텍스트 추출**

@@ -3,7 +3,7 @@ title: إضافة خلفية إلى PDF
 linktitle: إضافة خلفيات
 type: docs
 weight: 110
-url: ar/java/add-backgrounds/
+url: /ar/java/add-backgrounds/
 descriptions: أضف صورة خلفية إلى ملف PDF الخاص بك باستخدام Java. استخدم كائن BackgroundArtifact.
 lastmod: "2021-06-05"
 sitemap:

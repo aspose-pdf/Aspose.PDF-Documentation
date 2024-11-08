@@ -3,7 +3,7 @@ title: JavaScript를 사용하여 제품 정보 가져오기
 linktitle: 제품 정보 가져오기
 type: docs
 weight: 70
-url: ko/javascript-cpp/get-info-about-product/
+url: /ko/javascript-cpp/get-info-about-product/
 description: 이 주제는 C++을 통한 Aspose.PDF for JavaScript로 제품 정보를 얻는 방법을 보여줍니다.
 lastmod: "2023-11-16"
 sitemap:

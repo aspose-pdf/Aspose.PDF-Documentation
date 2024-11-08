@@ -2,7 +2,7 @@
 title: Gerenciar Cabeçalho e Rodapé
 type: docs
 weight: 40
-url: pt/java/manage-header-and-footer/
+url: /pt/java/manage-header-and-footer/
 description: Esta seção explica como gerenciar Cabeçalho e Rodapé com Aspose.PDF Facades usando a Classe PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

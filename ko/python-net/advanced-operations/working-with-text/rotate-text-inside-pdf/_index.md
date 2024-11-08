@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 PDF 내 텍스트 회전
 linktitle: PDF 내 텍스트 회전
 type: docs
 weight: 50
-url: ko/python-net/rotate-text-inside-pdf/
+url: /ko/python-net/rotate-text-inside-pdf/
 description: PDF에 텍스트를 회전하는 다양한 방법을 배웁니다. Aspose.PDF는 텍스트를 임의의 각도로 회전하거나 텍스트 조각 또는 전체 단락을 회전할 수 있습니다.
 lastmod: "2024-02-17"
 sitemap:

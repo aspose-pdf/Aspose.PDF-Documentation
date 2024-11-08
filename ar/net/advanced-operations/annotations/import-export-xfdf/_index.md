@@ -3,7 +3,7 @@ title: استيراد وتصدير التعليقات التوضيحية إلى 
 linktitle: استيراد وتصدير التعليقات التوضيحية إلى XFDF
 type: docs
 weight: 40
-url: ar/net/import-export-xfdf/
+url: /ar/net/import-export-xfdf/
 description: يمكنك استيراد وتصدير التعليقات التوضيحية بتنسيق XFDF باستخدام C# ومكتبة Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ XFDF تعني تنسيق بيانات النماذج XML. إنها تنسيق م
 فئة [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) تحتوي على طريقتين للعمل مع استيراد وتصدير التعليقات التوضيحية إلى ملف XFDF.
 [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) تحتوي الفئة على طريقتين للعمل مع استيراد وتصدير التعليقات التوضيحية إلى ملف XFDF.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 الشفرة التالية توضح لك كيفية تصدير التعليقات التوضيحية إلى ملف XFDF:
 

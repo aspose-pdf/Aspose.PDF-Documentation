@@ -2,7 +2,7 @@
 title: تحرير الصفحات الفردية في ملف PDF
 type: docs
 weight: 20
-url: ar/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
+url: /ar/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
 description: يشرح هذا القسم كيفية تحرير الصفحات الفردية في ملف PDF باستخدام فئة PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-تسمح مساحة الأسماء Aspose.Pdf.Facades في [Aspose.PDF for .NET](/pdf/net/) لك بالتعامل مع الصفحات الفردية في ملف PDF. تساعدك هذه الميزة على العمل مع عرض الصفحة، المحاذاة، والانتقال إلخ. تساعد فئة PdfPageEditor في تحقيق هذه الوظيفة. في هذه المقالة، سننظر في الخصائص والطرق المقدمة من قبل هذه الفئة وعمل هذه الطرق أيضًا.
+تسمح مساحة الأسماء Aspose.Pdf.Facades في [Aspose.PDF for .NET](/pdf/ar/net/) لك بالتعامل مع الصفحات الفردية في ملف PDF. تساعدك هذه الميزة على العمل مع عرض الصفحة، المحاذاة، والانتقال إلخ. تساعد فئة PdfPageEditor في تحقيق هذه الوظيفة. في هذه المقالة، سننظر في الخصائص والطرق المقدمة من قبل هذه الفئة وعمل هذه الطرق أيضًا.
 
 {{% /alert %}}
 

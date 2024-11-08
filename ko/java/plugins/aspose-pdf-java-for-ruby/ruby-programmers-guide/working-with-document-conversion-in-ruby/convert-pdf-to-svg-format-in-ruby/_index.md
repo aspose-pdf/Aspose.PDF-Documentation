@@ -2,7 +2,7 @@
 title: Ruby에서 PDF를 SVG 형식으로 변환
 type: docs
 weight: 50
-url: ko/java/convert-pdf-to-svg-format-in-ruby/
+url: /ko/java/convert-pdf-to-svg-format-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: الأسهم الخطية
 type: docs
 weight: 20
-url: ar/reportingservices/line-arrows/
+url: /ar/reportingservices/line-arrows/
 lastmod: "2021-06-05"
 ---
 

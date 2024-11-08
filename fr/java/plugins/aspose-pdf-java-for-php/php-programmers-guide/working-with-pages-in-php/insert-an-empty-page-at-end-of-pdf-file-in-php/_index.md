@@ -2,7 +2,7 @@
 title: Insérer une Page Vide à la Fin d'un Fichier PDF en PHP
 type: docs
 weight: 60
-url: fr/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
+url: /fr/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

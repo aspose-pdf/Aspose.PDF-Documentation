@@ -3,7 +3,7 @@ title: Modifing AcroForm
 linktitle: Modifing AcroForm
 type: docs
 weight: 40
-url: id/net/modifing-form/
+url: /id/net/modifing-form/
 description: Memodifikasi formulir dalam file PDF Anda dengan perpustakaan Aspose.PDF untuk .NET. Anda dapat menambahkan atau menghapus bidang dalam formulir yang ada, mendapatkan dan mengatur batas bidang, dan lainnya.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Memodifikasi formulir dalam file PDF Anda dengan perpustakaan Aspose.PDF untuk .NET. Anda dapat menambahkan atau menghapus bidang dalam formulir yang ada, mendapatkan dan mengatur batas bidang, dan lainnya."
 }
 </script>
-Kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Dapatkan atau Atur Batas Bidang
 

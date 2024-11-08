@@ -2,7 +2,7 @@
 title: Installing Aspose.Pdf for SharePoint License
 type: docs
 weight: 10
-url: ar/sharepoint/installing-aspose-pdf-for-sharepoint-license/
+url: /ar/sharepoint/installing-aspose-pdf-for-sharepoint-license/
 lastmod: "2020-12-16"
 description: بمجرد أن تكون راضيًا عن تقييمك، يمكنك شراء ترخيص لواجهة برمجة تطبيقات PDF SharePoint واتباع تعليمات التثبيت لتطبيقه.
 ---

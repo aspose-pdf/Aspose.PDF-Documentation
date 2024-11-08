@@ -2,7 +2,7 @@
 title: التثبيت باستخدام أداة التكوين
 type: docs
 weight: 30
-url: ar/reportingservices/install-with-configuring-tool/
+url: /ar/reportingservices/install-with-configuring-tool/
 lastmod: "2021-06-05"
 ---
 

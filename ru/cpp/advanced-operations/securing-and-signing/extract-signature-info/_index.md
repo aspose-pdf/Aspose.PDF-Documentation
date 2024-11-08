@@ -3,7 +3,7 @@ title: Извлечение информации об изображении и 
 linktitle: Извлечение информации об изображении и подписи
 type: docs
 weight: 30
-url: ru/cpp/extract-image-and-signature-information/
+url: /ru/cpp/extract-image-and-signature-information/
 description: Вы можете извлечь изображения из поля подписи и извлечь информацию о подписи, используя класс SignatureField с C++.
 lastmod: "2021-12-15"
 sitemap:

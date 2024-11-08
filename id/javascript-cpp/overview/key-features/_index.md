@@ -3,7 +3,7 @@ title: Fitur Utama Aspose.PDF untuk JavaScript
 linktitle: Fitur Utama
 type: docs
 weight: 20
-url: id/javascript-cpp/key-features/
+url: /id/javascript-cpp/key-features/
 description: Aspose.PDF untuk JavaScript melalui C++ menunjukkan fitur umumnya. Halaman ini menjelaskan versi PDF yang didukung, dan semua manipulasi yang dapat kita lakukan dengan teks, gambar, halaman, dll.
 lastmod: "2022-12-13"
 sitemap:

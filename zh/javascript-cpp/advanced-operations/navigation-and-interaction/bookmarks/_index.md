@@ -3,7 +3,7 @@ title: 使用JavaScript在PDF中添加书签
 linktitle: PDF中的书签
 type: docs
 weight: 10
-url: zh/javascript-cpp/bookmark/
+url: /zh/javascript-cpp/bookmark/
 description: 您可以使用JavaScript在PDF文档中添加或删除书签。
 lastmod: "2023-02-17"
 sitemap:

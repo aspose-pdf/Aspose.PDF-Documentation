@@ -3,7 +3,7 @@ title: إنشاء AcroForms - إنشاء ملفات PDF قابلة للتعبئ�
 linktitle: إنشاء AcroForms
 type: docs
 weight: 10
-url: ar/java/create-forms/
+url: /ar/java/create-forms/
 description: يشرح هذا القسم كيفية إنشاء AcroForms من الصفر في مستندات PDF الخاصة بك باستخدام Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

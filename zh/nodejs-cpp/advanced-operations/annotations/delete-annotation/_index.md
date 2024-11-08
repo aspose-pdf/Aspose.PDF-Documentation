@@ -3,7 +3,7 @@ title: 在 Node.js 中删除注释
 linktitle: 删除注释
 type: docs
 weight: 10
-url: zh/nodejs-cpp/delete-annotation/
+url: /zh/nodejs-cpp/delete-annotation/
 description: 使用 Aspose.PDF for Node.js，您可以从 PDF 文件中删除注释。
 lastmod: "2023-11-16"
 sitemap:

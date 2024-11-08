@@ -3,7 +3,7 @@ title: 使用 Python 转换 PDF 文档
 linktitle: 转换 PDF 文档
 type: docs
 weight: 70
-url: zh/python-cpp/converting/
+url: /zh/python-cpp/converting/
 lastmod: "2023-07-22"
 description: 本节包含有关使用 Python API 将 PDF 文档转换为不同格式及相反方向的文章。
 sitemap:
@@ -21,7 +21,7 @@ PDF 文件不仅可以包含文本，还可以包含图像、可点击按钮、�
 
 有许多图像格式需要转换为 PDF 以用于不同目的。Aspose.PDF 支持最流行的图像格式及其相互转换。
 
-- [将 PDF 转换为各种图像格式](/pdf/python-cpp/convert-pdf-to-images-format/) - 将 PDF 页面转换为 JPEG、PNG 和其他格式的图像
-- [将图像转换为 PDF](/pdf/python-cpp/convert-image-to-pdf/) - 将 JPEG、PNG 和其他格式转换为 PDF 文件
-- [将 PDF 转换为其他格式](/pdf/python-cpp/convert-pdf-to-other-files/) - 将 PDF 页面转换为其他格式
-- [将 PDF 转换为文本](/pdf/python-cpp/convert-pdf-to-txt/) - 将 PDF 页面转换为文本
+- [将 PDF 转换为各种图像格式](/pdf/zh/python-cpp/convert-pdf-to-images-format/) - 将 PDF 页面转换为 JPEG、PNG 和其他格式的图像
+- [将图像转换为 PDF](/pdf/zh/python-cpp/convert-image-to-pdf/) - 将 JPEG、PNG 和其他格式转换为 PDF 文件
+- [将 PDF 转换为其他格式](/pdf/zh/python-cpp/convert-pdf-to-other-files/) - 将 PDF 页面转换为其他格式
+- [将 PDF 转换为文本](/pdf/zh/python-cpp/convert-pdf-to-txt/) - 将 PDF 页面转换为文本

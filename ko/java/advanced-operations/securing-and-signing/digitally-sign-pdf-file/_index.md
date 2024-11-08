@@ -3,7 +3,7 @@ title: PDF를 디지털 서명하는 방법
 linktitle: PDF 디지털 서명
 type: docs
 weight: 10
-url: ko/java/digitally-sign-pdf-file/
+url: /ko/java/digitally-sign-pdf-file/
 description: Java를 사용하여 PDF 문서를 디지털 서명합니다. Java 기반 애플리케이션과 PDF 라이브러리를 사용하여 디지털 서명된 PDF를 확인하거나 검증합니다. PKCS1-인증서로 PDF 파일을 인증할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

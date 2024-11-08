@@ -3,7 +3,7 @@
 title: Sisipkan Halaman PDF
 type: docs
 weight: 50
-url: id/net/insert-pdf-pages/
+url: /id/net/insert-pdf-pages/
 description: Bagian ini menjelaskan cara menyisipkan halaman PDF dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

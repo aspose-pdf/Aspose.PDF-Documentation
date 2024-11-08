@@ -3,7 +3,7 @@ title: Ekstrak font dari PDF
 linktitle: Ekstrak font
 type: docs
 weight: 30
-url: id/php-java/extract-fonts-from-pdf/
+url: /id/php-java/extract-fonts-from-pdf/
 description: Cara ekstrak font dari PDF menggunakan Aspose.PDF for PHP
 lastmod: "2024-05-20"
 sitemap:

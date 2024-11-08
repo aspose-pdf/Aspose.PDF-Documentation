@@ -2,7 +2,7 @@
 title: 루비에서 PDF 파일에 레이어 추가
 type: docs
 weight: 20
-url: ko/java/add-layers-to-pdf-file-in-ruby/
+url: /ko/java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

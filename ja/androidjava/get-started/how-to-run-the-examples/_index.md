@@ -3,7 +3,7 @@ title: 他のAspose.PDF for Android via Javaの例を実行する方法
 linktitle: 他の例を実行する方法
 type: docs
 weight: 40
-url: ja/androidjava/how-to-run-other-examples/    
+url: /ja/androidjava/how-to-run-other-examples/    
 description: このページでは、例をダウンロードして実行する前に役立つガイドラインを示しています。
 lastmod: "2021-06-05"
 ---

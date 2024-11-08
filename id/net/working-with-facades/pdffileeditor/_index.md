@@ -2,7 +2,7 @@
 title: PdfFileEditor Class
 type: docs
 weight: 10
-url: id/net/pdffileeditor-class/
+url: /id/net/pdffileeditor-class/
 description: Bagian ini menjelaskan cara bekerja dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -23,26 +23,26 @@ Fitur-fitur yang dapat kita masukkan dalam bagian ini adalah Sisipkan, Tambahkan
 
 Bagian ini mengeksplorasi kemampuan kelas ini dan menjelaskan tujuan dari metodenya.
 
-- [Gabungkan dokumen PDF](/pdf/net/concatenate-pdf-documents/)
-- [Ekstrak halaman PDF](/pdf/net/extract-pdf-pages/)
-- [Sisipkan halaman PDF](/pdf/net/insert-pdf-pages/)
-- [Hapus halaman PDF](/pdf/net/delete-pdf-pages/)
+- [Gabungkan dokumen PDF](/pdf/id/net/concatenate-pdf-documents/)
+- [Ekstrak halaman PDF](/pdf/id/net/extract-pdf-pages/)
+- [Sisipkan halaman PDF](/pdf/id/net/insert-pdf-pages/)
+- [Hapus halaman PDF](/pdf/id/net/delete-pdf-pages/)
 
 ## Menggunakan Page Brakes
 
 Page Break adalah fitur khusus yang memungkinkan aliran dokumen kembali.
 
-- [Page Break pada PDF yang ada](/pdf/net/page-break-in-existing-pdf/)
+- [Page Break pada PDF yang ada](/pdf/id/net/page-break-in-existing-pdf/)
 
 ## Penyusunan PDF
 
 Penyusunan adalah proses mengatur halaman dengan benar sebelum pencetakan. `PdfFileEditor` menyediakan dua metode untuk tujuan ini yaitu `MakeBooklet` dan `MakeNUp`. Metode MakeBooklet membantu mengatur halaman sehingga akan mudah untuk melipat atau menjilidnya setelah dicetak, namun, metode MakeNUp memungkinkan untuk mencetak beberapa halaman pada satu halaman file PDF.
 
-- [Buat Booklet dari PDF](/pdf/net/make-booklet-of-pdf/)
-- [Buat NUp dari file PDF](/pdf/net/make-nup-of-pdf-files/)
+- [Buat Booklet dari PDF](/pdf/id/net/make-booklet-of-pdf/)
+- [Buat NUp dari file PDF](/pdf/id/net/make-nup-of-pdf-files/)
 
 ## Pemisahan
 
 Fitur pemisahan memungkinkan Anda untuk membagi file PDF yang ada menjadi beberapa bagian. Anda dapat memisahkan bagian depan file PDF atau bagian belakang. Karena PdfFileEditor menyediakan berbagai metode untuk tujuan pemisahan, Anda juga dapat membagi file menjadi halaman individu atau banyak set dari beberapa halaman.
 
-- [Pisah halaman PDF](/pdf/net/split-pdf-pages/)
+- [Pisah halaman PDF](/pdf/id/net/split-pdf-pages/)

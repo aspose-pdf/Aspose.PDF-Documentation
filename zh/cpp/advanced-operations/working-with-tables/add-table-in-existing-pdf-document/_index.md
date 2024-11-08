@@ -3,7 +3,7 @@ title: 在 PDF 中创建或添加表格
 linktitle: 创建或添加表格
 type: docs
 weight: 10
-url: zh/cpp/add-table-in-existing-pdf-document/
+url: /zh/cpp/add-table-in-existing-pdf-document/
 description: Aspose.PDF for C++ 是一个用于创建、读取和编辑 PDF 表格的库。使用该库，您可以使用 C++ 在 PDF 页面上分页显示表格。
 lastmod: "2021-11-11"
 sitemap:

@@ -2,7 +2,7 @@
 title: Оптимизация размера PDF-файла в Ruby
 type: docs
 weight: 80
-url: ru/java/optimize-pdf-file-size-in-ruby/
+url: /ru/java/optimize-pdf-file-size-in-ruby/
 lastmod: "2021-06-05"
 ---
 

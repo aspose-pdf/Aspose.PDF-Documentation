@@ -3,7 +3,7 @@ title: Aspose.PDF for C++를 사용하여 PDF에서 AcroForms 작업하기
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ko/cpp/acroforms/
+url: /ko/cpp/acroforms/
 description: Aspose.PDF for C++를 사용하면 처음부터 양식을 생성하고, PDF 문서의 양식 필드를 채우고, 양식에서 데이터를 추출하고, 기존 양식의 필드를 추가하거나 제거할 수 있습니다.
 lastmod: "2021-12-01"
 sitemap:
@@ -19,12 +19,12 @@ sitemap:
 
 양식 작업 가능성에 대한 보다 자세한 연구를 위해 다음 섹션의 기사를 공부하십시오:
 
-- [Create AcroForm](/pdf/cpp/create-form/) - C++를 사용하여 RadioButtonField, TextBoxField, Caption Field를 추가하여 처음부터 양식을 생성합니다.
+- [Create AcroForm](/pdf/ko/cpp/create-form/) - C++를 사용하여 RadioButtonField, TextBoxField, Caption Field를 추가하여 처음부터 양식을 생성합니다.
 
-- [Fill AcroForm](/pdf/cpp/fill-form/) - 양식 필드를 채우기 위해 Document 객체의 Form 컬렉션에서 필드를 가져옵니다.
+- [Fill AcroForm](/pdf/ko/cpp/fill-form/) - 양식 필드를 채우기 위해 Document 객체의 Form 컬렉션에서 필드를 가져옵니다.
 
-- [Extract Data AcroForm](/pdf/cpp/extract-form/) - 모든 필드 및 개별 필드에서 값을 가져옵니다.
+- [Extract Data AcroForm](/pdf/ko/cpp/extract-form/) - 모든 필드 및 개별 필드에서 값을 가져옵니다.
 
-- [Modifing AcroForm](/pdf/cpp/modifing-form/) - FieldLimit을 설정/해제하고 기존 양식에서 필드를 제거하며, C++로 14개의 Core PDF Fonts 외의 폰트를 양식 필드에 설정합니다.
+- [Modifing AcroForm](/pdf/ko/cpp/modifing-form/) - FieldLimit을 설정/해제하고 기존 양식에서 필드를 제거하며, C++로 14개의 Core PDF Fonts 외의 폰트를 양식 필드에 설정합니다.
 
-- [Posting AcroForm Data](/pdf/cpp/posting-acroform-data/) - 양식 데이터를 XML 파일로 가져오고 내보냅니다.
+- [Posting AcroForm Data](/pdf/ko/cpp/posting-acroform-data/) - 양식 데이터를 XML 파일로 가져오고 내보냅니다.

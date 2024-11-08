@@ -3,7 +3,7 @@ title: Obtenir la Résolution et les Dimensions des Images
 linktitle: Obtenir la Résolution et les Dimensions
 type: docs
 weight: 40
-url: fr/net/get-resolution-and-dimensions-of-embedded-images/
+url: /fr/net/get-resolution-and-dimensions-of-embedded-images/
 description: Cette section présente les détails pour obtenir la résolution et les dimensions des Images Intégrées
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "Cette section présente les détails pour obtenir la résolution et les dimensions des Images Intégrées"
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Ce sujet explique comment utiliser les classes d'opérateurs dans l'espace de noms Aspose.PDF qui fournissent la capacité d'obtenir des informations sur la résolution et les dimensions des images sans avoir à les extraire.
 

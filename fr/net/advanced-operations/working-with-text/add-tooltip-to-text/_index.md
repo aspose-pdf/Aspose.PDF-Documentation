@@ -4,7 +4,7 @@ title: PDF Tooltip using C#
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: fr/net/pdf-tooltip/
+url: /fr/net/pdf-tooltip/
 description: Apprenez à ajouter une infobulle au fragment de texte dans un PDF en utilisant C# et Aspose.PDF
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 }
 </script>
 ```
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter une infobulle au texte recherché en ajoutant un bouton invisible
 

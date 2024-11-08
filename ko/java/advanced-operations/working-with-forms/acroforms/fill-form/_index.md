@@ -3,7 +3,7 @@ title: 아크로폼 채우기
 linktitle: 아크로폼 채우기
 type: docs
 weight: 20
-url: ko/java/fill-form/
+url: /ko/java/fill-form/
 description: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서의 양식 필드를 채우는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

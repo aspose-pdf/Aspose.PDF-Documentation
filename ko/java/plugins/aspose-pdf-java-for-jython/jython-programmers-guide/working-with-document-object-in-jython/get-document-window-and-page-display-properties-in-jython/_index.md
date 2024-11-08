@@ -2,7 +2,7 @@
 title: Jython에서 문서 창 및 페이지 표시 속성 가져오기
 type: docs
 weight: 20
-url: ko/java/get-document-window-and-page-display-properties-in-jython/
+url: /ko/java/get-document-window-and-page-display-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

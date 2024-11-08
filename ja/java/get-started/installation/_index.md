@@ -3,7 +3,7 @@ title: Aspose.PDF for Javaのインストール
 linktitle: インストール  
 type: docs  
 weight: 20  
-url: ja/java/installation/  
+url: /ja/java/installation/  
 description: このセクションでは、Aspose.PDF for Javaの製品説明と、自分でインストールする方法およびNuGetを使用する方法を示します。  
 lastmod: "2021-06-05"  
 sitemap:  
@@ -32,7 +32,7 @@ sitemap:
 {{% alert color="primary" %}}
 
 評価のために [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) をダウンロードできます。
- ダウンロード評価版は、購入版ダウンロードと同じです。評価版は、[ライセンスを適用する](/pdf/java/licensing/)ために数行のコードを追加すると、ライセンス版になります。
+ ダウンロード評価版は、購入版ダウンロードと同じです。評価版は、[ライセンスを適用する](/pdf/ja/java/licensing/)ために数行のコードを追加すると、ライセンス版になります。
 {{% /alert %}}
 
 評価版のAspose.PDFは全機能を提供しますが、2つの制限があります：

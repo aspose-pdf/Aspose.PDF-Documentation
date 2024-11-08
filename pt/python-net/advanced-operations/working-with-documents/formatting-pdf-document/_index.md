@@ -3,7 +3,7 @@ title: Formatando Documento PDF usando Python
 linktitle: Formatando Documento PDF
 type: docs
 weight: 11
-url: pt/python-net/formatting-pdf-document/
+url: /pt/python-net/formatting-pdf-document/
 description: Crie e formate o Documento PDF com Aspose.PDF para Python via .NET. Use o próximo trecho de código para resolver suas tarefas.
 lastmod: "2023-04-12"
 sitemap:

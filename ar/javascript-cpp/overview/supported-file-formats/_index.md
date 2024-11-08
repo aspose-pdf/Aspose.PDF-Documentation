@@ -3,7 +3,7 @@ title: تنسيقات الملفات المدعومة
 linktitle: تنسيقات الملفات المدعومة
 type: docs
 weight: 10
-url: ar/javascript-cpp/supported-file-formats/
+url: /ar/javascript-cpp/supported-file-formats/
 description: تعرض هذه الصفحة تنسيقات الملفات التي يمكن لـ Aspose.PDF for JavaScript تحميلها وحفظها.
 lastmod: "2021-06-05"
 sitemap:

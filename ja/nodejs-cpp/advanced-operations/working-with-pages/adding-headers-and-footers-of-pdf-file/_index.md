@@ -3,7 +3,7 @@ title: Node.jsでPDFにヘッダーとフッターを追加
 linktitle: PDFにヘッダーとフッターを追加
 type: docs
 weight: 70
-url: ja/nodejs-cpp/add-headers-and-footers-of-pdf-file/
+url: /ja/nodejs-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Node.js via C++を使用して、PDFファイルにヘッダーとフッターを追加します。
 lastmod: "2023-11-16"
 sitemap:

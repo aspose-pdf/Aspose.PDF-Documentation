@@ -3,7 +3,7 @@ title: PDFでのテーブル操作をPythonで行う
 linktitle: テーブル操作
 type: docs
 weight: 50
-url: ja/python-net/working-with-tables/
+url: /ja/python-net/working-with-tables/
 description: このセクションでは、Pythonライブラリを使用してテーブルを追加および抽出する方法、テーブルを操作および統合する方法について説明します。
 lastmod: "2023-09-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 以下のことが可能です：
 
-- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/python-net/add-table-in-existing-pdf-document/) - 境界線、余白、およびパディングを考慮して、列や行を結合してPDFファイルにテーブルを作成します。
-- [既存のPDFドキュメントからテーブルを抽出する](/pdf/python-net/extract-table-from-existing-pdf-document/) - PDFファイルからテーブルを抽出することができます。
-- [既存のPDFのテーブルを操作する](/pdf/python-net/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内のテーブルを操作します。
+- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/ja/python-net/add-table-in-existing-pdf-document/) - 境界線、余白、およびパディングを考慮して、列や行を結合してPDFファイルにテーブルを作成します。
+- [既存のPDFドキュメントからテーブルを抽出する](/pdf/ja/python-net/extract-table-from-existing-pdf-document/) - PDFファイルからテーブルを抽出することができます。
+- [既存のPDFのテーブルを操作する](/pdf/ja/python-net/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内のテーブルを操作します。
 
-- [既存のPDFからテーブルを削除する](/pdf/python-net/remove-tables-from-existing-pdf/) - PDFドキュメントからテーブルまたは複数のテーブルを削除します。
+- [既存のPDFからテーブルを削除する](/pdf/ja/python-net/remove-tables-from-existing-pdf/) - PDFドキュメントからテーブルまたは複数のテーブルを削除します。
 
 <script type="application/ld+json">
 {

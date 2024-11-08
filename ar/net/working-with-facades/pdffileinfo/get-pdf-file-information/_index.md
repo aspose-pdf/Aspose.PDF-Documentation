@@ -2,7 +2,7 @@
 title: الحصول على معلومات ملف PDF
 type: docs
 weight: 50
-url: ar/net/get-pdf-file-information/
+url: /ar/net/get-pdf-file-information/
 description: تشرح هذه القسم كيفية الحصول على معلومات ملف PDF باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

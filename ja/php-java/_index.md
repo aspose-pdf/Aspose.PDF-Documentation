@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for PHP via Java
 second_title: Aspose.PDF for PHP via Java
 type: docs
 weight: 90
-url: ja/php-java/
+url: /ja/php-java/
 is_root: true
 lastmod: "2024-07-07"
 description: Aspose.PDF for PHP を使用して PDF ドキュメント処理のアプリケーションを作成する方法を学びます。チュートリアル、サンプルコードなどを参照してください。
@@ -30,25 +30,25 @@ Aspose.PDF for PHP via Java は、安全な PDF ドキュメントを開発す�
 
 ## 章
 
-- [新着情報](/pdf/php-java/whatsnew/)
-- [概要](/pdf/php-java/overview/)
-- [始めに](/pdf/php-java/get-started/)
-- [基本操作](/pdf/php-java/basic-operations/)
-- [ドキュメントの変換](/pdf/php-java/converting/)
-- [PDFドキュメントの解析](/pdf/php-java/parsing/)
-- [高度な操作](/pdf/php-java/advanced-operations/)
+- [新着情報](/pdf/ja/php-java/whatsnew/)
+- [概要](/pdf/ja/php-java/overview/)
+- [始めに](/pdf/ja/php-java/get-started/)
+- [基本操作](/pdf/ja/php-java/basic-operations/)
+- [ドキュメントの変換](/pdf/ja/php-java/converting/)
+- [PDFドキュメントの解析](/pdf/ja/php-java/parsing/)
+- [高度な操作](/pdf/ja/php-java/advanced-operations/)
 - [リリースノート]()
 
 ## Aspose.PDF for PHP via Java リソース
 
 以下は、タスクを達成するために必要な役立つリソースへのリンクです。
 
-- [Aspose.PDF for PHP via Java オンラインドキュメント](/pdf/php-java/)
-- [Aspose.PDF for PHP via Java 機能](/pdf/java/key-features/)
+- [Aspose.PDF for PHP via Java オンラインドキュメント](/pdf/ja/php-java/)
+- [Aspose.PDF for PHP via Java 機能](/pdf/ja/java/key-features/)
 - Aspose.PDF for PHP via Java リリースノート
 - [Aspose.PDF for PHP via Java 製品ページ](https://products.aspose.com/pdf/php-java/)
 
-- [Aspose.PDF for PHP via Java ダウンロード](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)- [Aspose.PDF for PHP via JavaをAsposeリポジトリからインストールする](/pdf/php-java/installation/)
+- [Aspose.PDF for PHP via Java ダウンロード](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)- [Aspose.PDF for PHP via JavaをAsposeリポジトリからインストールする](/pdf/ja/php-java/installation/)
 - [Aspose.PDF for PHP via Java APIリファレンスガイド](https://reference.aspose.com/java/pdf)
 - [GitHubリポジトリでサンプルをダウンロード](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)
 - [Aspose.PDF for PHP via Javaの無料サポートフォーラム](https://forum.aspose.com/c/pdf)

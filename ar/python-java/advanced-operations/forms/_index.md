@@ -3,7 +3,7 @@ title: العمل مع النماذج باستخدام Python
 linktitle: النماذج في مستند PDF
 type: docs
 weight: 60
-url: ar/python-java/forms/
+url: /ar/python-java/forms/
 lastmod: "2023-05-19"
 description: تحتوي هذه القسم على مقالات تتعلق بالعمل مع النماذج في مستندات PDF باستخدام واجهة برمجة التطبيقات Python.
 sitemap:

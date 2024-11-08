@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: id/javascript-cpp/overview/
+url: /id/javascript-cpp/overview/
 description: Ikhtisar fitur utama dan format yang didukung dari Aspose.PDF untuk JavaScript melalui C++, panduan instalasi dan lisensi.
 lastmod: "2022-12-13"
 sitemap:
@@ -34,9 +34,9 @@ Selain itu, Aspose.PDF untuk JavaScript melalui C++ dapat digunakan untuk dengan
 
 Pelajari lebih lanjut tentang:
 
-- [Format File yang Didukung](/pdf/javascript-cpp/supported-file-formats/)
-- [Fitur Utama Aspose.PDF](/pdf/javascript-cpp/key-features/)
-- [Persyaratan Sistem](/pdf/javascript-cpp/system-requirements/)
-- [Instalasi](/pdf/javascript-cpp/installation/)
-- [Lisensi](/pdf/javascript-cpp/licensing/)
-- [Dukungan Teknis](/pdf/javascript-cpp/technical-support/)
+- [Format File yang Didukung](/pdf/id/javascript-cpp/supported-file-formats/)
+- [Fitur Utama Aspose.PDF](/pdf/id/javascript-cpp/key-features/)
+- [Persyaratan Sistem](/pdf/id/javascript-cpp/system-requirements/)
+- [Instalasi](/pdf/id/javascript-cpp/installation/)
+- [Lisensi](/pdf/id/javascript-cpp/licensing/)
+- [Dukungan Teknis](/pdf/id/javascript-cpp/technical-support/)

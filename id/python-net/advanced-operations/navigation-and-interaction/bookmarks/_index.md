@@ -3,7 +3,7 @@ title: Bekerja dengan Bookmark di PDF menggunakan Python
 linktitle: Bookmark
 type: docs
 weight: 30
-url: id/python-net/bookmarks/
+url: /id/python-net/bookmarks/
 description: Bagian ini menjelaskan cara menambah, menghapus, dan mendapatkan bookmark dengan Aspose.PDF untuk Python melalui .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -82,8 +82,8 @@ Menggunakan penanda buku dalam PDF adalah fitur yang sangat berguna. Dengan mere
 Penanda buku PDF adalah alat yang praktis dan esensial dalam membaca file PDF. Mereka memungkinkan pengguna untuk dengan cepat melompat ke tempat lain dalam dokumen PDF, menavigasi melalui halaman, dan dengan cepat melihat isi PDF, seperti daftar isi.
 Dalam bagian ini Anda akan belajar bagaimana:
 
-- [Menambahkan dan Menghapus Penanda Buku](/pdf/python-net/add-and-delete-bookmark/)
-- [Mendapatkan, Memperbarui dan Memperluas Penanda Buku](/pdf/python-net/get-update-and-expand-bookmark/)
+- [Menambahkan dan Menghapus Penanda Buku](/pdf/id/python-net/add-and-delete-bookmark/)
+- [Mendapatkan, Memperbarui dan Memperluas Penanda Buku](/pdf/id/python-net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

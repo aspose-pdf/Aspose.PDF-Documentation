@@ -3,7 +3,7 @@ title: Aspose.PDF С++ Exemple
 linktitle: Exemple Bonjour Monde
 type: docs
 weight: 40
-url: fr/cpp/hello-world-example/
+url: /fr/cpp/hello-world-example/
 description: Cette page montre comment utiliser une programmation simple pour créer un document PDF contenant le texte - Bonjour Monde.
 lastmod: "2021-11-01"
 sitemap:

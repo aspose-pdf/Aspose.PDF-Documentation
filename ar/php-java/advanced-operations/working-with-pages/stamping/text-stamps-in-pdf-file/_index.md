@@ -3,7 +3,7 @@ title: إضافة طوابع نصية في PDF برمجيًا
 linktitle: الطوابع النصية في ملف PDF
 type: docs
 weight: 20
-url: ar/php-java/text-stamps-in-the-pdf-file/
+url: /ar/php-java/text-stamps-in-the-pdf-file/
 description: إضافة طابع نصي إلى ملف PDF باستخدام فئة TextStamp مع PHP.
 lastmod: "2024-06-05"
 sitemap:

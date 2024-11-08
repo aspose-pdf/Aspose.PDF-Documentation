@@ -3,7 +3,7 @@ title: Объединение PDF файлов с использованием .
 linktitle: Как объединить PDF
 type: docs
 weight: 75
-url: ru/net/how-to-concatenate-pdf-files-in-different-ways/
+url: /ru/net/how-to-concatenate-pdf-files-in-different-ways/
 description: Эта статья объясняет возможные способы объединения любого количества существующих PDF файлов в один PDF файл.
 lastmod: "2021-06-05"
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Эта статья описывает, как вы можете [Объединить](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) несколько PDF документов в один PDF документ с помощью компонента [Aspose.PDF for .NET](/pdf/net/). [Aspose.PDF for .NET](/pdf/net/) делает эту задачу простой как пирог.
+Эта статья описывает, как вы можете [Объединить](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) несколько PDF документов в один PDF документ с помощью компонента [Aspose.PDF for .NET](/pdf/ru/net/). [Aspose.PDF for .NET](/pdf/ru/net/) делает эту задачу простой как пирог.
 
 {{% /alert %}}
 

@@ -3,7 +3,7 @@ title: 使用 C++ 保存 PDF 文档
 linktitle: 保存
 type: docs
 weight: 30
-url: zh/cpp/save-pdf-document/
+url: /zh/cpp/save-pdf-document/
 description: 学习如何使用 Aspose.PDF for C++ 库保存 PDF 文件。
 lastmod: "2021-11-01"
 sitemap:

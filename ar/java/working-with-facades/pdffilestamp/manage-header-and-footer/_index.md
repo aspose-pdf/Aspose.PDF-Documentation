@@ -2,7 +2,7 @@
 title: إدارة الرأس والتذييل
 type: docs
 weight: 40
-url: ar/java/manage-header-and-footer/
+url: /ar/java/manage-header-and-footer/
 description: يشرح هذا القسم كيفية إدارة الرأس والتذييل باستخدام Aspose.PDF Facades باستخدام Class PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

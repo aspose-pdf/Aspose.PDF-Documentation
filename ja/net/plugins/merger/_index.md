@@ -2,7 +2,7 @@
 title: Merger
 type: docs
 weight: 100
-url: ja/net/plugins/merger/
+url: /ja/net/plugins/merger/
 description: Aspose.PDF Merger プラグインを使用して複数の PDF ファイルを 1 つにマージする方法
 lastmod: "2024-01-24"
 ---

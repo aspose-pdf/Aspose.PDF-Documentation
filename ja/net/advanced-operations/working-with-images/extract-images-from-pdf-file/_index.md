@@ -3,7 +3,7 @@ title: PDFファイルから画像を抽出する
 linktitle: 画像を抽出する
 type: docs
 weight: 30
-url: ja/net/extract-images-from-pdf-file/
+url: /ja/net/extract-images-from-pdf-file/
 description: このセクションでは、C#ライブラリを使用してPDFファイルから画像を抽出する方法を示します。
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 画像は各ページの [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) コレクションの [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) コレクションに保持されています。特定のページを抽出し、Images コレクションから特定のインデックスを使用して画像を取得します。
 

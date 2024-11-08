@@ -3,7 +3,7 @@ title: Extraer Datos de AcroForm usando C++
 linktitle: Extraer Datos AcroForm
 type: docs
 weight: 30
-url: es/cpp/extract-form/
+url: /es/cpp/extract-form/
 description: Esta sección explica cómo extraer formularios de su documento PDF con Aspose.PDF para C++.
 lastmod: "2021-12-01"
 sitemap:

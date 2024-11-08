@@ -3,7 +3,7 @@ title: PDF スティッキー注釈を C++ で使用
 linktitle: スティッキー注釈
 type: docs
 weight: 50
-url: ja/cpp/sticky-annotations/
+url: /ja/cpp/sticky-annotations/
 description: このトピックでは、スティッキー注釈について説明します。例として、テキスト内の透かし注釈を示します。ページ上にグラフィックを表すために使用されます。このタスクを解決するためのコードスニペットを確認してください。
 lastmod: "2021-11-24"
 sitemap:

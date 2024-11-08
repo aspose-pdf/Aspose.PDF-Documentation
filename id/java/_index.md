@@ -4,7 +4,7 @@ linktitle: Aspose.PDF untuk Java
 second_title: Aspose.PDF untuk Java
 type: docs
 weight: 20
-url: id/java/
+url: /id/java/
 is_root: true
 lastmod: "2021-06-05"
 ---
@@ -21,26 +21,26 @@ Aspose.PDF adalah komponen Java yang dibangun untuk memungkinkan pengembang memb
 
 <h2>Bab </h2>
 
-- [Apa yang baru](/pdf/java/whatsnew/)
-- [Ikhtisar](/pdf/java/overview/)
-- [Memulai](/pdf/java/get-started/)
+- [Apa yang baru](/pdf/id/java/whatsnew/)
+- [Ikhtisar](/pdf/id/java/overview/)
+- [Memulai](/pdf/id/java/get-started/)
 
-- [Operasi dasar](/pdf/java/basic-operations/)
-- [Mengonversi dokumen](/pdf/java/converting/)
-- [Mem-parsing dokumen PDF](/pdf/java/parsing/)
-- [Operasi lanjutan](/pdf/java/advanced-operations/)
+- [Operasi dasar](/pdf/id/java/basic-operations/)
+- [Mengonversi dokumen](/pdf/id/java/converting/)
+- [Mem-parsing dokumen PDF](/pdf/id/java/parsing/)
+- [Operasi lanjutan](/pdf/id/java/advanced-operations/)
 - [Catatan Rilis](https://releases.aspose.com/pdf/java/release-notes/)
 
 <h2>Sumber Daya Aspose.PDF untuk Java</h2>
 Berikut adalah tautan ke beberapa sumber daya berguna yang mungkin Anda butuhkan untuk menyelesaikan tugas Anda.
 
-- [Dokumentasi Online Aspose.PDF untuk Java](/pdf/java/)
-- [Fitur Aspose.PDF untuk Java](/pdf/java/key-features/)
+- [Dokumentasi Online Aspose.PDF untuk Java](/pdf/id/java/)
+- [Fitur Aspose.PDF untuk Java](/pdf/id/java/key-features/)
 - [Catatan Rilis Aspose.PDF untuk Java](https://releases.aspose.com/pdf/java/release-notes/)
 - [Halaman Produk Aspose.PDF untuk Java](https://products.aspose.com/pdf/java)
 - [Repositori Maven Aspose.PDF untuk Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
 - [Unduh Aspose.PDF untuk Java](https://releases.aspose.com/pdf/java/)
-- [Instal Aspose.PDF untuk Java dari Repositori Aspose](/pdf/java/installation/)
+- [Instal Aspose.PDF untuk Java dari Repositori Aspose](/pdf/id/java/installation/)
 - [Panduan Referensi API Aspose.PDF untuk Java](https://reference.aspose.com/java/pdf)
 
 - [Unduh Contoh di Repositori GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java)

@@ -3,7 +3,7 @@ title: Bekerja dengan Formulir XFA dalam PDF
 linktitle: Formulir XFA
 type: docs
 weight: 20
-url: id/java/xfa-forms/
+url: /id/java/xfa-forms/
 description: Dengan Aspose.PDF untuk Java Anda dapat membuat formulir dari awal, mengisi bidang formulir dalam dokumen PDF, mengekstrak data dari formulir, menambah atau menghapus bidang dalam formulir yang ada.
 lastmod: "2021-06-05"
 sitemap:

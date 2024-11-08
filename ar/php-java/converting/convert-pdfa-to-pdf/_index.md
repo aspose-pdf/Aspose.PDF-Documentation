@@ -3,7 +3,7 @@ title: تحويل PDF/A إلى تنسيق PDF
 linktitle: تحويل PDF/A إلى تنسيق PDF
 type: docs
 weight: 110
-url: ar/php-java/convert-pdfa-to-pdf/
+url: /ar/php-java/convert-pdfa-to-pdf/
 lastmod: "2024-05-20"
 description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF لتحويل ملف PDF/A إلى مستند PDF باستخدام مكتبة PHP.
 sitemap:

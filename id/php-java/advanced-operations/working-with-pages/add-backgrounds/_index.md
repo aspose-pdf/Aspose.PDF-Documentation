@@ -3,7 +3,7 @@ title: Tambahkan latar belakang ke PDF
 linktitle: Tambahkan latar belakang
 type: docs
 weight: 110
-url: id/php-java/add-backgrounds/
+url: /id/php-java/add-backgrounds/
 descriptions: Tambahkan gambar latar belakang ke file PDF Anda menggunakan PHP. Gunakan objek BackgroundArtifact.
 lastmod: "2024-06-05"
 sitemap:

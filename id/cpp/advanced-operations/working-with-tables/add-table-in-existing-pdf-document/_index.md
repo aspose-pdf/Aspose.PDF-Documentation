@@ -3,7 +3,7 @@ title: Membuat atau Menambahkan Tabel Dalam PDF
 linktitle: Membuat atau Menambahkan Tabel
 type: docs
 weight: 10
-url: id/cpp/add-table-in-existing-pdf-document/
+url: /id/cpp/add-table-in-existing-pdf-document/
 description: Aspose.PDF untuk C++ adalah sebuah pustaka yang digunakan untuk membuat, membaca, dan mengedit Tabel PDF. Menggunakan pustaka ini, Anda dapat mempaginasi tabel pada halaman PDF menggunakan C++.
 lastmod: "2021-11-11"
 sitemap:

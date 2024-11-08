@@ -2,7 +2,7 @@
 title: Excluir uma Página Específica do Arquivo PDF em jython
 type: docs
 weight: 20
-url: pt/java/delete-a-particular-page-from-the-pdf-file-in-jython/
+url: /pt/java/delete-a-particular-page-from-the-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

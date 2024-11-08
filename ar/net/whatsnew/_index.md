@@ -3,7 +3,7 @@ title: ما الجديد
 linktitle: ما الجديد
 type: docs
 weight: 10
-url: ar/net/whatsnew/
+url: /ar/net/whatsnew/
 description: تقدم هذه الصفحة أبرز الميزات الجديدة في Aspose.PDF لـ .NET التي تم تقديمها في الإصدارات الأخيرة.
 sitemap:
     changefreq: "monthly"

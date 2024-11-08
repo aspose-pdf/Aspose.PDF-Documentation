@@ -2,7 +2,7 @@
 title: Définir des Privilèges sur un Fichier PDF Existant
 type: docs
 weight: 50
-url: fr/java/set-privileges/
+url: /fr/java/set-privileges/
 description: Ce sujet explique comment définir des privilèges sur un fichier PDF existant en utilisant la classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

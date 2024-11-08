@@ -3,7 +3,7 @@ title: 既存のPDFファイルに画像を追加する
 linktitle: 画像を追加
 type: docs
 weight: 10
-url: ja/java/add-image-to-existing-pdf-file/
+url: /ja/java/add-image-to-existing-pdf-file/
 description: このセクションでは、Javaライブラリを使用して既存のPDFファイルに画像を追加する方法を説明します。
 lastmod: "2021-06-05"
 ---

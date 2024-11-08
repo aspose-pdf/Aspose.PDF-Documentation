@@ -3,7 +3,7 @@ title: PDFページをプログラムで移動 C++
 linktitle: PDFページを移動
 type: docs
 weight: 20
-url: ja/cpp/move-pages/
+url: /ja/cpp/move-pages/
 description: Aspose.PDF for C++を使用して、PDFファイル内の希望する場所または最後にページを移動してみてください。
 lastmod: "2021-12-09"
 sitemap:

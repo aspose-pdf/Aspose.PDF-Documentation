@@ -3,7 +3,7 @@ title: Ganti Teks dalam PDF melalui Python
 linktitle: Ganti Teks dalam PDF
 type: docs
 weight: 40
-url: id/python-net/replace-text-in-pdf/
+url: /id/python-net/replace-text-in-pdf/
 description: Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari Aspose.PDF untuk Python melalui pustaka .NET.
 lastmod: "2024-02-17"
 sitemap:

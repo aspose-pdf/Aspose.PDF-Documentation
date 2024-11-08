@@ -3,7 +3,7 @@ title: Créer un document PDF Hello World via XML et XSLT
 linktitle: Créer un document PDF Hello World via XML et XSLT
 type: docs
 weight: 10
-url: fr/java/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /fr/java/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: Aspose.PDF pour Java offre la possibilité de convertir un fichier XML en document PDF, à condition que le fichier XML d'entrée suive le schéma XSD Java d'Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

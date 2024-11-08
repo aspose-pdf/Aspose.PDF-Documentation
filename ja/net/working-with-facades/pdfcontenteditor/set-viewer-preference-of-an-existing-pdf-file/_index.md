@@ -2,7 +2,7 @@
 title: PDFの表示設定を行う
 type: docs
 weight: 60
-url: ja/net/set-viewer-preference-of-an-existing-pdf-file/
+url: /ja/net/set-viewer-preference-of-an-existing-pdf-file/
 description: このセクションでは、PdfContentEditorクラスを使用して既存のPDFファイルの表示設定を行う方法を示します。
 lastmod: "2021-06-05"
 draft: false

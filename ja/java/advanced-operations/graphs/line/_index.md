@@ -3,7 +3,7 @@ title: PDFファイルに線オブジェクトを追加する
 linktitle: 線を追加
 type: docs
 weight: 40
-url: ja/java/add-line/
+url: /ja/java/add-line/
 description: この記事では、Aspose.PDF for Javaを使用してPDFに線オブジェクトを作成する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

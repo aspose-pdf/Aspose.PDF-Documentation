@@ -3,7 +3,7 @@ title: 이미지 배치 작업
 linktitle: 이미지 배치
 type: docs
 weight: 50
-url: ko/java/working-with-image-placement/
+url: /ko/java/working-with-image-placement/
 description: 이 섹션에서는 Java 라이브러리를 사용하여 PDF 파일의 이미지 배치 작업 기능을 설명합니다.
 lastmod: "2021-06-05"
 ---

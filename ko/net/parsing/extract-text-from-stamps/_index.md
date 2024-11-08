@@ -2,7 +2,7 @@
 title: 도장에서 텍스트 추출하기 C#
 type: docs
 weight: 60
-url: ko/net/extract-text-from-stamps/
+url: /ko/net/extract-text-from-stamps/
 description: Aspose.PDF for .NET의 특별 기능 사용 방법 배우기 - 도장 주석에서 텍스트 추출
 lastmod: "2021-01-30"
 sitemap:
@@ -19,7 +19,7 @@ Aspose.PDF for NET는 도장 주석에서 텍스트를 추출할 수 있습니�
 1. `TextAbsorber` 클래스의 새 객체 정의
 1. TextAbsorber의 visit 메서드를 사용하여 텍스트 가져오기
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ```csharp
 public static void ExtractText()

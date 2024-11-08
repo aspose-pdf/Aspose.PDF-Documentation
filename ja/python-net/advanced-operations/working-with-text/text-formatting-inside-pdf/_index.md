@@ -3,7 +3,7 @@ title: PDF内のテキストフォーマットをPythonで実施
 linktitle: PDF内のテキストフォーマット
 type: docs
 weight: 30
-url: ja/python-net/text-formatting-inside-pdf/
+url: /ja/python-net/text-formatting-inside-pdf/
 description: このページでは、PDFファイル内のテキストをフォーマットする方法について説明します。行のインデントを追加する、テキストの境界線を追加する、下線付きテキストを追加するなどがあります。
 lastmod: "2024-02-17"
 sitemap:

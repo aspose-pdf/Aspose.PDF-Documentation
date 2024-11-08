@@ -3,7 +3,7 @@ title: C++を使用してPDFドキュメントを保存する
 linktitle: 保存
 type: docs
 weight: 30
-url: ja/cpp/save-pdf-document/
+url: /ja/cpp/save-pdf-document/
 description: Aspose.PDF for C++ライブラリを使用してPDFファイルを保存する方法を学びます。
 lastmod: "2021-11-01"
 sitemap:

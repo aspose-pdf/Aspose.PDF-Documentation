@@ -2,7 +2,7 @@
 title: إضافة JavaScript في روبي
 type: docs
 weight: 10
-url: ar/java/adding-javascript-in-ruby/
+url: /ar/java/adding-javascript-in-ruby/
 lastmod: "2021-06-05"
 ---
 

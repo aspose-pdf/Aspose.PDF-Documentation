@@ -2,7 +2,7 @@
 title: Загрузить и настроить Aspose.PDF в PHP
 type: docs
 weight: 10
-url: ru/java/download-and-configure-aspose-pdf-in-php/
+url: /ru/java/download-and-configure-aspose-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Get Page Properties in PHP
 type: docs
 weight: 50
-url: ar/java/get-page-properties-in-php/
+url: /ar/java/get-page-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

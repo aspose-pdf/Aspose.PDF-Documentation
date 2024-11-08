@@ -3,7 +3,7 @@ title: Манипулирование PDF Документом
 linktitle: Манипулирование PDF Документом
 type: docs
 weight: 30
-url: ru/java/manipulate-pdf-document/
+url: /ru/java/manipulate-pdf-document/
 description: Эта статья содержит информацию о том, как проверить PDF документ на соответствие стандарту PDF A, как работать с оглавлением, как установить срок действия PDF и как определить прогресс генерации PDF файла.
 lastmod: "2021-06-05"
 ---

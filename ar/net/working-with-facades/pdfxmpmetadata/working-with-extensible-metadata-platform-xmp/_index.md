@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: ar/net/working-with-extensible-metadata-platform-xmp/
+url: /ar/net/working-with-extensible-metadata-platform-xmp/
 
 description: يشرح هذا القسم كيفية العمل مع منصة البيانات التعريفية الممتدة - XMP باستخدام فئة PdfXmpMetadata.
 

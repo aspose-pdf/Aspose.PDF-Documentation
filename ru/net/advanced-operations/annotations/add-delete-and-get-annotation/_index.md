@@ -3,7 +3,7 @@ title: Добавление, удаление и получение аннота
 linktitle: Добавление, удаление и получение аннотаций
 type: docs
 weight: 20
-url: ru/net/add-delete-and-get-annotation/
+url: /ru/net/add-delete-and-get-annotation/
 description: С помощью Aspose.PDF для .NET вы можете добавлять, удалять и получать аннотации из вашего PDF файла. Проверьте все списки аннотаций для решения вашей задачи.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,13 +82,13 @@ sitemap:
 
 Мы объединили различные виды аннотаций, доступные для библиотеки Aspose.PDF для .NET, в группы:
 
-- [Аннотация текста PDF](/pdf/net/text-annotation/)
-- [Аннотация выделения в PDF](/pdf/net/highlights-annotation/)
-- [Аннотация фигур в PDF](/pdf/net/figures-annotation/)
-- [Мультимедийная аннотация](/pdf/net/multimedia-annotation/)
-- [Липкие аннотации PDF](/pdf/net/sticky-annotations/)
-- [Аннотации ссылок](/pdf/net/link-annotations/)
-- [Дополнительные аннотации](/pdf/net/extra-annotations/)
+- [Аннотация текста PDF](/pdf/ru/net/text-annotation/)
+- [Аннотация выделения в PDF](/pdf/ru/net/highlights-annotation/)
+- [Аннотация фигур в PDF](/pdf/ru/net/figures-annotation/)
+- [Мультимедийная аннотация](/pdf/ru/net/multimedia-annotation/)
+- [Липкие аннотации PDF](/pdf/ru/net/sticky-annotations/)
+- [Аннотации ссылок](/pdf/ru/net/link-annotations/)
+- [Дополнительные аннотации](/pdf/ru/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

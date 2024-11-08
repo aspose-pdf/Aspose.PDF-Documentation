@@ -2,7 +2,7 @@
 title: Pisahkan File PDF Menjadi Halaman Individu di Python
 type: docs
 weight: 80
-url: id/java/split-pdf-file-into-individual-pages-in-python/
+url: /id/java/split-pdf-file-into-individual-pages-in-python/
 lastmod: "2021-06-05"
 ---
 

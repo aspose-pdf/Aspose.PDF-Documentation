@@ -10,7 +10,7 @@ type: docs
 
 weight: 110
 
-url: zh/sharepoint/
+url: /zh/sharepoint/
 
 is_root: true
 
@@ -50,21 +50,21 @@ Aspose.PDF for SharePoint 是一种解决方案，允许用户将列表、列表
 
 
 
-- [Aspose.PDF for SharePoint 产品概述](/pdf/sharepoint/product-overview/) 
+- [Aspose.PDF for SharePoint 产品概述](/pdf/zh/sharepoint/product-overview/) 
 
-- [Aspose.PDF for SharePoint 支持的文件格式](/pdf/sharepoint/supported-file-formats/)
+- [Aspose.PDF for SharePoint 支持的文件格式](/pdf/zh/sharepoint/supported-file-formats/)
 
 
-- [Aspose.PDF for SharePoint 功能](/pdf/sharepoint/features/)
+- [Aspose.PDF for SharePoint 功能](/pdf/zh/sharepoint/features/)
 
 - [Aspose.PDF for SharePoint 发布说明](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 
 - [下载 Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/)
 
-- [安装 Aspose.Pdf for SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [安装 Aspose.Pdf for SharePoint](/pdf/zh/sharepoint/install-aspose-pdf-for-sharepoint/)
 
-- [评估 Aspose.Pdf ](/pdf/sharepoint/evaluate-aspose-pdf/)
+- [评估 Aspose.Pdf ](/pdf/zh/sharepoint/evaluate-aspose-pdf/)
 
-- [授权 Aspose.Pdf for SharePoint](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [授权 Aspose.Pdf for SharePoint](/pdf/zh/sharepoint/license-aspose-pdf-for-sharepoint/)
 
-- [API 限制](/pdf/sharepoint/api-limitations/)
+- [API 限制](/pdf/zh/sharepoint/api-limitations/)

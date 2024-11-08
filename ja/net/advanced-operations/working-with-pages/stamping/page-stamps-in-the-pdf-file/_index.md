@@ -3,7 +3,7 @@ title: PDFをC#でページスタンプ追加
 linktitle: PDFファイルのページスタンプ
 type: docs
 weight: 30
-url: ja/net/page-stamps-in-the-pdf-file/
+url: /ja/net/page-stamps-in-the-pdf-file/
 description: Aspose.PDF for .NETライブラリを使ってPDFドキュメントにページスタンプを追加します。
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp)は、グラフィック、テキスト、テーブルを含む複合スタンプを適用する必要がある場合に使用できます。次の例では、Adobe InDesign、Illustrator、Microsoft Wordを使用するような文房具を作成する方法を示しています。いくつかの入力ドキュメントがあると仮定し、青とプラム色の2種類のボーダーを適用したいと考えています。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリとも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも動作します。
 
 ```csharp
 public static void AddPageStamp()

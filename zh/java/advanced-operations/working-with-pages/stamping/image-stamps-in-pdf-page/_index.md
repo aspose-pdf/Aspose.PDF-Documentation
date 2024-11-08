@@ -3,7 +3,7 @@ title: 在PDF中以编程方式添加图片水印
 linktitle: PDF文件中的图片水印
 type: docs
 weight: 10
-url: zh/java/image-stamps-in-pdf-page/
+url: /zh/java/image-stamps-in-pdf-page/
 description: 使用Aspose.PDF for Java库中的ImageStamp类在PDF文档中添加图片水印。
 lastmod: "2021-06-05"
 sitemap:

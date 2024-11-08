@@ -3,7 +3,7 @@ title: Extraire et Enregistrer une Pièce Jointe
 linktitle: Extraire et Enregistrer une Pièce Jointe
 type: docs
 weight: 20
-url: fr/cpp/extract-and-save-an-attachment/
+url: /fr/cpp/extract-and-save-an-attachment/
 description: Aspose.PDF pour C++ vous permet d'obtenir toutes les pièces jointes d'un document PDF. De plus, vous pouvez obtenir une pièce jointe individuelle de votre document.
 lastmod: "2022-02-07"
 sitemap:

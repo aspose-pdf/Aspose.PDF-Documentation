@@ -2,7 +2,7 @@
 title: Mesclar imagens
 type: docs
 weight: 10
-url: pt/java/merge-images/
+url: /pt/java/merge-images/
 description: Esta seção explica como mesclar Imagens, e é possível salvar no formato Tiff.
 lastmod: "2021-07-01"
 draft: false

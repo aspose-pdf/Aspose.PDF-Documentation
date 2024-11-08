@@ -3,7 +3,7 @@ title: العمل مع الأدوات في .NET
 linktitle: العمل مع الأدوات
 type: docs
 weight: 110
-url: ar/net/artifacts/
+url: /ar/net/artifacts/
 description: يتيح لك Aspose.PDF لـ .NET إضافة صورة خلفية لصفحات PDF، والحصول على كل علامة مائية باستخدام فئة Artifact.
 lastmod: "2024-01-17"
 sitemap:
@@ -110,8 +110,8 @@ sitemap:
 
 يوضح الكود التالي كيفية الحصول على كل العلامات المائية على الصفحة الأولى من ملف PDF.
 
-_ملاحظة:_ هذا الكود يعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
-_ملاحظة:_ هذا الكود يعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+_ملاحظة:_ هذا الكود يعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+_ملاحظة:_ هذا الكود يعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 var document = new Document(System.IO.Path.Combine(_dataDir, "sample-w.pdf"));

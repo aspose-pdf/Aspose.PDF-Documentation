@@ -3,7 +3,7 @@ title: C#에서 PDF 보안 및 서명
 linktitle: PDF에서 보안 및 서명
 type: docs
 weight: 150
-url: ko/net/securing-and-signing/
+url: /ko/net/securing-and-signing/
 description: 이 섹션에서는 C#을 사용하여 PDF 문서에 서명하고 보안을 유지하는 기능에 대해 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,10 +79,10 @@ aliases:
 </script>
 이 섹션에서는 C#을 사용하여 PDF 문서에 디지털 서명하는 방법을 안전하게 설명합니다. 전자 서명과 디지털 서명이라는 용어는 서로 바꿔 사용되지만, 본질적으로 두 가지는 다릅니다. 일반적으로, 디지털 서명은 [인증 기관](https://en.wikipedia.org/wiki/Certificate_authority)의 승인된 도장이 포함되어 있으며 서명된 문서를 변조로부터 보호하는 데 사용됩니다. 반면, 전자 서명은 종종 문서에 서명할 의도를 나타내는 데 사용됩니다.
 
-- [PDF 파일에 디지털 서명하기](/pdf/net/digitally-sign-pdf-file/)
-- [권한 설정, 암호화 및 PDF 파일 암호 해독](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [이미지 및 서명 정보 추출](/pdf/net/extract-image-and-signature-information/)
-- [스마트 카드에서 PDF 문서 서명](/pdf/net/sign-pdf-document-from-smart-card/)
+- [PDF 파일에 디지털 서명하기](/pdf/ko/net/digitally-sign-pdf-file/)
+- [권한 설정, 암호화 및 PDF 파일 암호 해독](/pdf/ko/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [이미지 및 서명 정보 추출](/pdf/ko/net/extract-image-and-signature-information/)
+- [스마트 카드에서 PDF 문서 서명](/pdf/ko/net/sign-pdf-document-from-smart-card/)
 
 changefreq: "monthly"
 type: docs

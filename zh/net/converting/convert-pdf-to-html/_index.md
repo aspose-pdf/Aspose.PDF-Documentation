@@ -3,7 +3,7 @@ title: 在 .NET 中将 PDF 转换为 HTML
 linktitle: 将 PDF 转换为 HTML 格式
 type: docs
 weight: 50
-url: zh/net/convert-pdf-to-html/
+url: /zh/net/convert-pdf-to-html/
 lastmod: "2021-11-01"
 description: 本主题演示如何使用 Aspose.PDF C# 库将 PDF 文件转换为 HTML 格式。
 sitemap:
@@ -20,7 +20,7 @@ _格式_：**HTML**
 - [C# 将 PDF 转换为 HTML](#csharp-pdf-to-html)
 - [C# 如何将 PDF 文件转换为 HTML](#csharp-pdf-to-html)
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 将 PDF 转换为 HTML
 

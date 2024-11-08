@@ -3,7 +3,7 @@ title: 使用 Python 处理 PDF 中的作品集
 linktitle: 作品集
 type: docs
 weight: 20
-url: zh/python-net/portfolio/
+url: /zh/python-net/portfolio/
 description: 如何使用 Python 创建 PDF 作品集。您应该使用 Microsoft Excel 文件、Word 文档和图像文件来创建 PDF 作品集。
 lastmod: "2023-02-17"
 sitemap:

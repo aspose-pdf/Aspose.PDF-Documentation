@@ -3,7 +3,7 @@ title: 使用XSLT从XML创建PDF
 linktitle: 使用XSLT从XML创建PDF
 type: docs
 weight: 10
-url: zh/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /zh/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: C++库提供了将XML文件转换为PDF文档的能力，要求输入的XML文件必须遵循Aspose.PDF Schema。
 lastmod: "2022-01-31"
 sitemap:

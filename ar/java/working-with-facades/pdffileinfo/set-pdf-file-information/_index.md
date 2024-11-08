@@ -2,7 +2,7 @@
 title: تعيين معلومات ملف PDF - الواجهات
 type: docs
 weight: 20
-url: ar/java/set-pdf-information/
+url: /ar/java/set-pdf-information/
 description: تشرح هذه القسم كيفية تعيين معلومات ملف PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfFileInfo.
 lastmod: "2021-06-05"
 sitemap:

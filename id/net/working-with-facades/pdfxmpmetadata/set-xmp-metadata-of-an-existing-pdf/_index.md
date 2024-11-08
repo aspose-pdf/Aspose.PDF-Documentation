@@ -2,7 +2,7 @@
 title: Set XMP Metadata of an existing PDF
 type: docs
 weight: 20
-url: id/net/set-xmp-metadata-of-an-existing-pdf/
+url: /id/net/set-xmp-metadata-of-an-existing-pdf/
 description: Bagian ini menjelaskan cara mengatur Metadata XMP dari PDF yang sudah ada dengan Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for Python via .NET
 second_title: Aspose.PDF for Python via .NET
 type: docs
 weight: 40
-url: ko/python-net/
+url: /ko/python-net/
 is_root: true
 lastmod: "2022-10-24"
 description: Aspose.PDF Python을 통해 .NET을 사용하여 PDF 문서 처리를 위한 응용 프로그램을 모든 플랫폼에서 Python을 사용하여 만드는 방법을 배우세요. 튜토리얼, 샘플 코드 등을 탐색하세요.
@@ -26,20 +26,20 @@ Aspose.PDF는 개발자가 간단하거나 복잡한 PDF 문서를 프로그래�
 
 <h2>Chapters</h2>
 
-- [What's new](/pdf/python-net/whatsnew/)
-- [Overview](/pdf/python-net/overview/)
-- [Get Started](/pdf/python-net/get-started/)
-- [Basic operations](/pdf/python-net/basic-operations/)
-- [Converting documents](/pdf/python-net/converting/)
-- [Parsing PDF documents](/pdf/python-net/parsing/)
-- [Advanced operations](/pdf/python-net/advanced-operations/)
-- [Showcases](/pdf/python-net/showcases/)
+- [What's new](/pdf/ko/python-net/whatsnew/)
+- [Overview](/pdf/ko/python-net/overview/)
+- [Get Started](/pdf/ko/python-net/get-started/)
+- [Basic operations](/pdf/ko/python-net/basic-operations/)
+- [Converting documents](/pdf/ko/python-net/converting/)
+- [Parsing PDF documents](/pdf/ko/python-net/parsing/)
+- [Advanced operations](/pdf/ko/python-net/advanced-operations/)
+- [Showcases](/pdf/ko/python-net/showcases/)
 - [Release Notes](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 
 <h2>Aspose.PDF for Python via .NET Resources</h2>
 
 다음은 작업을 완료하는 데 필요할 수 있는 유용한 리소스 링크입니다.
-- [Aspose.PDF for Python via .NET 기능](/pdf/python-net/key-features/)
+- [Aspose.PDF for Python via .NET 기능](/pdf/ko/python-net/key-features/)
 - [Aspose.PDF for Python via .NET 릴리스 노트](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 - [Aspose.PDF for Python via .NET 제품 페이지](https://products.aspose.com/pdf/python-net/)
 - [Aspose.PDF for Python via .NET 다운로드](https://releases.aspose.com/pdf/pythonnet/)

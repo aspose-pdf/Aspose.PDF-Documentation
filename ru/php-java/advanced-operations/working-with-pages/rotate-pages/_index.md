@@ -3,7 +3,7 @@ title: Поворот страниц PDF программным способом
 linktitle: Поворот страниц PDF
 type: docs
 weight: 60
-url: ru/php-java/rotate-pages/
+url: /ru/php-java/rotate-pages/
 description: Изменение ориентации страницы и подгонка содержимого страницы под новую ориентацию с использованием Java.
 lastmod: "2024-06-05"
 sitemap:

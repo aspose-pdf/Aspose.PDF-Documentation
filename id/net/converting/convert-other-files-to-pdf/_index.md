@@ -3,7 +3,7 @@ title: Mengonversi Format File Lain ke PDF di .NET
 linktitle: Mengonversi Format File Lain ke PDF
 type: docs
 weight: 80
-url: id/net/convert-other-files-to-pdf/
+url: /id/net/convert-other-files-to-pdf/
 lastmod: "2021-11-01"
 description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengkonversi format file lain seperti EPUB, MD, PCL, XPS, PS, XML, dan LaTeX menjadi dokumen PDF.
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 Artikel ini menjelaskan cara **mengkonversi berbagai jenis format file lain ke PDF menggunakan C#**. Ini mencakup topik berikut.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 _Format_: **EPUB**
 - [C# EPUB ke PDF](#csharp-convert-epub-to-pdf)

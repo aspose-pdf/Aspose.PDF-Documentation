@@ -3,7 +3,7 @@ title: Extracción de texto sin formato de un archivo PDF
 linktitle: Extraer texto de PDF
 type: docs
 weight: 10
-url: es/php-java/extract-text-from-all-pdf/
+url: /es/php-java/extract-text-from-all-pdf/
 description: Este artículo describe varias formas de extraer texto de documentos PDF usando Aspose.PDF para PHP. De páginas enteras, de una parte específica, basado en columnas, etc.
 lastmod: "2024-05-20"
 sitemap:

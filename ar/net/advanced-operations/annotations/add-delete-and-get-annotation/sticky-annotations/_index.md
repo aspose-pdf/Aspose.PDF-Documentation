@@ -3,7 +3,7 @@ title: تعليقات PDF اللاصقة باستخدام C#
 linktitle: تعليق لاصق
 type: docs
 weight: 50
-url: ar/net/sticky-annotations/
+url: /ar/net/sticky-annotations/
 description: هذا الموضوع عن التعليقات اللاصقة، كمثال نعرض التعليق التوضيحي للعلامة المائية في النص.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-الكود التالي يعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الكود التالي يعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة تعليق توضيحي للعلامة المائية
 

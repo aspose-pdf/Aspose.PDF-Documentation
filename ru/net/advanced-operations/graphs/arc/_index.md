@@ -3,7 +3,7 @@ title: Добавление объекта дуги в файл PDF
 linktitle: Добавить дугу
 type: docs
 weight: 10
-url: ru/net/add-arc/
+url: /ru/net/add-arc/
 description: Эта статья объясняет, как создать объект дуги в вашем PDF с помощью Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Следующий пример кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий пример кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавление объекта дуги
 

@@ -3,7 +3,7 @@ title: XML을 PDF로 변환하기
 linktitle: XML을 PDF로 변환하기
 type: docs
 weight: 320
-url: ko/androidjava/convert-xml-to-pdf/
+url: /ko/androidjava/convert-xml-to-pdf/
 lastmod: "2021-06-05"
 description: Aspose.PDF 라이브러리는 XML을 PDF로 변환하는 여러 가지 방법을 제공합니다. XslFoLoadOptions를 사용하거나 잘못된 파일 구조로 이 작업을 수행할 수 있습니다.
 sitemap:

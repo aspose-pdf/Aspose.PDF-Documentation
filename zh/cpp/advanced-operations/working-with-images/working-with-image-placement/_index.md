@@ -3,7 +3,7 @@ title: 使用 C++ 进行图像放置
 linktitle: 使用图像放置
 type: docs
 weight: 50
-url: zh/cpp/working-with-image-placement/
+url: /zh/cpp/working-with-image-placement/
 description: 本节介绍使用 C++ 库处理图像放置 PDF 文件的功能。
 lastmod: "2021-12-18"
 ---

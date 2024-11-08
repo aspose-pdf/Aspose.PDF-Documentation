@@ -3,7 +3,7 @@ title: C++を使用してPDFをマージする
 linktitle: PDFファイルをマージする
 type: docs
 weight: 50
-url: ja/cpp/merge-pdf-documents/
+url: /ja/cpp/merge-pdf-documents/
 description: このページでは、C++を使用してPDFドキュメントを1つのPDFファイルにマージする方法を説明します。
 lastmod: "2021-11-11"
 sitemap:

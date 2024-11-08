@@ -3,7 +3,7 @@ title: 在 PDF 中使用 Python 处理文本
 linktitle: 处理文本
 type: docs
 weight: 30
-url: zh/python-net/working-with-text/
+url: /zh/python-net/working-with-text/
 description: 本节解释了各种文本处理技术。了解如何使用 Aspose.PDF for Python 添加、替换、旋转、搜索文本。
 lastmod: "2024-01-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 您可以执行以下操作：
 
-- [向 PDF 文件添加文本](/pdf/python-net/add-text-to-pdf-file/) - 将文本添加到您的 PDF 中，使用流和文件中的字体，添加 HTML 字符串，添加超链接等。
-- [PDF 工具提示](/pdf/python-net/pdf-tooltip/) - 您可以通过使用 Python 添加不可见按钮来为搜索文本添加工具提示。
-- [PDF 内部的文本格式](/pdf/python-net/text-formatting-inside-pdf/) - 在格式化文本时，您可以为文档添加许多功能。
+- [向 PDF 文件添加文本](/pdf/zh/python-net/add-text-to-pdf-file/) - 将文本添加到您的 PDF 中，使用流和文件中的字体，添加 HTML 字符串，添加超链接等。
+- [PDF 工具提示](/pdf/zh/python-net/pdf-tooltip/) - 您可以通过使用 Python 添加不可见按钮来为搜索文本添加工具提示。
+- [PDF 内部的文本格式](/pdf/zh/python-net/text-formatting-inside-pdf/) - 在格式化文本时，您可以为文档添加许多功能。
  增加行缩进，添加文本边框，添加下划线文本，使用 Aspose.PDF 库添加换行符。
-- [替换 PDF 中的文本](/pdf/python-net/replace-text-in-pdf/) - 替换 PDF 文档所有页面中的文本。您首先需要使用 TextFragmentAbsorber。
-- [旋转 PDF 内部文本](/pdf/python-net/rotate-text-inside-pdf/) - 使用 TextFragment 类的旋转属性旋转 PDF 内的文本。
-- [搜索并从 PDF 文档的页面中获取文本](/pdf/python-net/search-and-get-text-from-pdf/) - 您可以使用 TextFragmentAbsorber 类来搜索和获取页面中的文本。
-- [确定换行](/pdf/python-net/determine-line-break/) - 本主题解释如何跟踪多行文本片段的换行。
+- [替换 PDF 中的文本](/pdf/zh/python-net/replace-text-in-pdf/) - 替换 PDF 文档所有页面中的文本。您首先需要使用 TextFragmentAbsorber。
+- [旋转 PDF 内部文本](/pdf/zh/python-net/rotate-text-inside-pdf/) - 使用 TextFragment 类的旋转属性旋转 PDF 内的文本。
+- [搜索并从 PDF 文档的页面中获取文本](/pdf/zh/python-net/search-and-get-text-from-pdf/) - 您可以使用 TextFragmentAbsorber 类来搜索和获取页面中的文本。
+- [确定换行](/pdf/zh/python-net/determine-line-break/) - 本主题解释如何跟踪多行文本片段的换行。

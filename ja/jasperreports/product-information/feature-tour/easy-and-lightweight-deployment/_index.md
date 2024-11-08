@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: ja/jasperreports/easy-and-lightweight-deployment/
+url: /ja/jasperreports/easy-and-lightweight-deployment/
 
 lastmod: "2021-06-05"
 
@@ -20,4 +20,4 @@ Aspose.PDF for JasperReportsは単一のJARファイルとして提供され、J
 
 {{% /alert %}}
 
-Aspose.PDF for JasperReportsをインストールするには、**Aspose-pdf-jasperreports.jar**ファイルを正しいフォルダー（JasperReports\lib）にコピーするだけです。JasperServerと統合するには、JasperServerの設定ファイルを編集する必要もあります。詳細なインストール手順については、[インストールセクションをお読みください](/pdf/jasperreports/installation/)。
+Aspose.PDF for JasperReportsをインストールするには、**Aspose-pdf-jasperreports.jar**ファイルを正しいフォルダー（JasperReports\lib）にコピーするだけです。JasperServerと統合するには、JasperServerの設定ファイルを編集する必要もあります。詳細なインストール手順については、[インストールセクションをお読みください](/pdf/ja/jasperreports/installation/)。

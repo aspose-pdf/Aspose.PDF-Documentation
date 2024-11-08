@@ -3,7 +3,7 @@ title: PDF 하이라이트 주석을 C++로 사용하기
 linktitle: 하이라이트 주석
 type: docs
 weight: 20
-url: ko/cpp/highlights-annotation/
+url: /ko/cpp/highlights-annotation/
 description: 마크업 주석은 문서의 텍스트에서 하이라이트, 밑줄, 취소선 또는 물결 밑줄로 표시됩니다.
 lastmod: "2021-11-24"
 sitemap:

@@ -3,7 +3,7 @@ title: الختم باستخدام Aspose.PDF بواسطة بايثون
 linktitle: الختم
 type: docs
 weight: 120
-url: ar/python-net/stamping/
+url: /ar/python-net/stamping/
 description: يصف هذا القسم كيفية إضافة الطوابع الصورية والنصية إلى صفحة PDF عبر بايثون.
 lastmod: "2023-04-17"
 sitemap:
@@ -82,5 +82,5 @@ sitemap:
 
 تحقق من الأقسام التالية لتتعلم كيفية إضافة ختم باستخدام Python:
 
-- [إضافة أختام الصور في صفحة PDF](/pdf/python-net/image-stamps-in-pdf-page/) - أضف ختم الصورة، تحكم في جودة الصورة، ختم الصورة كخلفية لملف PDF الخاص بك.
-- [إضافة أختام النص في ملف PDF](/pdf/python-net/text-stamps-in-the-pdf-file/) - أضف ختم النص، حدد محاذاة كائن TextStamp، املأ نص الضربة كختم في ملف PDF.
+- [إضافة أختام الصور في صفحة PDF](/pdf/ar/python-net/image-stamps-in-pdf-page/) - أضف ختم الصورة، تحكم في جودة الصورة، ختم الصورة كخلفية لملف PDF الخاص بك.
+- [إضافة أختام النص في ملف PDF](/pdf/ar/python-net/text-stamps-in-the-pdf-file/) - أضف ختم النص، حدد محاذاة كائن TextStamp، املأ نص الضربة كختم في ملف PDF.

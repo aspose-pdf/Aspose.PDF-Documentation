@@ -3,7 +3,7 @@ title: Extract Image and Signature Information
 linktitle: Extract Image and Signature Information
 type: docs
 weight: 30
-url: id/java/extract-image-and-signature-information/
+url: /id/java/extract-image-and-signature-information/
 description: Anda dapat mengekstrak gambar dari bidang tanda tangan dan mengekstrak informasi tanda tangan menggunakan kelas SignatureField dengan Java.
 lastmod: "2021-06-05"
 sitemap:

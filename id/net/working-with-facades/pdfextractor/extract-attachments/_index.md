@@ -3,7 +3,7 @@
 title: Ekstrak Lampiran dari File PDF
 type: docs
 weight: 10
-url: id/net/extract-attachments/
+url: /id/net/extract-attachments/
 description: Bagian ini menjelaskan tentang mengekstraksi lampiran dari pdf dengan kelas PdfExtractor.
 lastmod: "2021-06-05"
 ---

@@ -2,7 +2,7 @@
 title: Extrair Imagens de PDF e Reconhecer Códigos de Barras
 type: docs
 weight: 20
-url: pt/net/extract-images-from-pdf-and-recognize-barcodes/
+url: /pt/net/extract-images-from-pdf-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

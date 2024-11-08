@@ -3,7 +3,7 @@ title: C++的系统要求
 linktitle: 系统要求
 type: docs
 weight: 30
-url: zh/cpp/system-requirements/
+url: /zh/cpp/system-requirements/
 description: 本节列出了开发人员成功使用Aspose.PDF for C++所需的支持操作系统。
 lastmod: "2021-11-08"
 sitemap:

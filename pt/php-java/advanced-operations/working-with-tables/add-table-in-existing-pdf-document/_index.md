@@ -3,7 +3,7 @@ title: Criar ou Adicionar Tabela em PDF
 linktitle: Criar ou Adicionar Tabela
 type: docs
 weight: 10
-url: pt/php-java/add-table-in-existing-pdf-document/
+url: /pt/php-java/add-table-in-existing-pdf-document/
 description: Aprenda como criar ou adicionar tabela a um documento PDF, aplicando estilo de célula, dividindo a tabela em páginas e personalizando as linhas e colunas, etc.
 lastmod: "2024-05-16"
 sitemap:

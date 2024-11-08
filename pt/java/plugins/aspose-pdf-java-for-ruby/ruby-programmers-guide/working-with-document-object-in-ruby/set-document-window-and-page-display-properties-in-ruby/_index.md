@@ -2,7 +2,7 @@
 title: Definir Propriedades de Janela e Exibição de Página do Documento em Ruby
 type: docs
 weight: 100
-url: pt/java/set-document-window-and-page-display-properties-in-ruby/
+url: /pt/java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

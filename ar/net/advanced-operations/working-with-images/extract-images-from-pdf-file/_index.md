@@ -3,7 +3,7 @@ title: استخراج الصور من ملف PDF
 linktitle: استخراج الصور
 type: docs
 weight: 30
-url: ar/net/extract-images-from-pdf-file/
+url: /ar/net/extract-images-from-pdf-file/
 description: يوضح هذا القسم كيفية استخراج الصور من ملف PDF باستخدام مكتبة C#.
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "يوضح هذا القسم كيفية استخراج الصور من ملف PDF باستخدام مكتبة C#."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 الصور مخزنة في مجموعة [الموارد](https://reference.aspose.com/pdf/net/aspose.pdf/resources) لكل صفحة ضمن مجموعة [الصور](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). لاستخراج صفحة معينة، ثم الحصول على الصورة من مجموعة الصور باستخدام الفهرس المحدد للصورة.
 

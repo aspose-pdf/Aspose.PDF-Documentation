@@ -2,7 +2,7 @@
 title: تحويل ملفات متعددة محددة إلى ملفات PDF مع طلب تحويل واحد
 type: docs
 weight: 50
-url: ar/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
+url: /ar/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
 lastmod: "2020-12-16"
 description: تتيح مكتبة PDF SharePoint لك تحويل ملفات متعددة محددة إلى ملفات PDF مع عملية تحويل واحدة.
 ---

@@ -3,7 +3,7 @@ title: 用 Node.js 加密 PDF
 linktitle: 加密 PDF 文件
 type: docs
 weight: 50
-url: zh/nodejs-cpp/encrypt-pdf/
+url: /zh/nodejs-cpp/encrypt-pdf/
 description: 使用 Aspose.PDF for Node.js via C++ 加密 PDF 文件。
 lastmod: "2023-11-16"
 sitemap:

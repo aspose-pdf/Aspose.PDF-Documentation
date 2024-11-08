@@ -3,7 +3,7 @@ title: 복잡한 PDF 생성
 linktitle: 복잡한 PDF 생성
 type: docs
 weight: 60
-url: ko/java/complex-pdf-example/
+url: /ko/java/complex-pdf-example/
 description: Aspose.PDF for Java는 하나의 문서에 이미지, 텍스트 조각, 표가 포함된 보다 복잡한 문서를 작성할 수 있도록 합니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -11,8 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/java/hello-world-example/) 예제에서는 Java와 Aspose.PDF를 사용하여 PDF 문서를 생성하는 간단한 단계를 보여주었습니다. 이 기사에서는 Java와 Aspose.PDF for Java를 사용하여 보다 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예를 들어, 여객 페리 서비스를 운영하는 가상의 회사의 문서를 가져옵니다.  
-우리 문서는 이미지, 두 개의 텍스트 조각(헤더 및 단락), 및 하나의 표를 포함할 것입니다. 이러한 문서를 작성하기 위해 DOM 기반 접근 방식을 사용할 것입니다. [DOM API의 기초](/pdf/java/basics-of-dom-api/) 섹션에서 더 읽어볼 수 있습니다.
+[Hello, World](/pdf/ko/java/hello-world-example/) 예제에서는 Java와 Aspose.PDF를 사용하여 PDF 문서를 생성하는 간단한 단계를 보여주었습니다. 이 기사에서는 Java와 Aspose.PDF for Java를 사용하여 보다 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예를 들어, 여객 페리 서비스를 운영하는 가상의 회사의 문서를 가져옵니다.  
+우리 문서는 이미지, 두 개의 텍스트 조각(헤더 및 단락), 및 하나의 표를 포함할 것입니다. 이러한 문서를 작성하기 위해 DOM 기반 접근 방식을 사용할 것입니다. [DOM API의 기초](/pdf/ko/java/basics-of-dom-api/) 섹션에서 더 읽어볼 수 있습니다.
 
 문서를 처음부터 작성하려면 특정 단계를 따라야 합니다:
 

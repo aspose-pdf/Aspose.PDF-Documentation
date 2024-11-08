@@ -2,7 +2,7 @@
 title: Mengonversi Halaman PDF ke Gambar dalam Ruby
 type: docs
 weight: 20
-url: id/java/convert-pdf-pages-to-images-in-ruby/
+url: /id/java/convert-pdf-pages-to-images-in-ruby/
 lastmod: "2021-06-05"
 ---
 

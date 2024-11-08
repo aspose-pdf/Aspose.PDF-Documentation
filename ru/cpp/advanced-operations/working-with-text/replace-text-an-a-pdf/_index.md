@@ -3,7 +3,7 @@ title: Замена текста в PDF с использованием C++
 linktitle: Замена текста в PDF
 type: docs
 weight: 40
-url: ru/cpp/replace-text-in-pdf/
+url: /ru/cpp/replace-text-in-pdf/
 description: Узнайте больше о различных способах замены и удаления текста из PDF. Aspose.PDF позволяет заменять текст в определенной области или с использованием регулярного выражения.
 lastmod: "2021-12-13"
 sitemap:

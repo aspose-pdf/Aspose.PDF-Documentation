@@ -2,7 +2,7 @@
 title: حجم هامش الصفحة
 type: docs
 weight: 70
-url: ar/reportingservices/page-margin-size/
+url: /ar/reportingservices/page-margin-size/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Mengatur Informasi File PDF di PHP
 type: docs
 weight: 90
-url: id/java/set-pdf-file-information-in-php/
+url: /id/java/set-pdf-file-information-in-php/
 lastmod: "2021-06-05"
 ---
 

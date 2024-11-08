@@ -6,7 +6,7 @@ linktitle: Информация о продукте
 
 weight: 10
 
-url: ru/sharepoint/product-information/
+url: /ru/sharepoint/product-information/
 
 lastmod: "2020-12-16"
 
@@ -20,16 +20,16 @@ description: Раздел Информация о продукте PDF SharePoin
 
 
 
-- [Обзор продукта](/pdf/sharepoint/product-overview/)
+- [Обзор продукта](/pdf/ru/sharepoint/product-overview/)
 
-- [Поддерживаемые форматы файлов](/pdf/sharepoint/supported-file-formats/)
+- [Поддерживаемые форматы файлов](/pdf/ru/sharepoint/supported-file-formats/)
 
-- [Функции](/pdf/sharepoint/features/)
+- [Функции](/pdf/ru/sharepoint/features/)
 
-- [Установка Aspose.Pdf для SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Установка Aspose.Pdf для SharePoint](/pdf/ru/sharepoint/install-aspose-pdf-for-sharepoint/)
 
-- [Оценить Aspose.Pdf](/pdf/sharepoint/evaluate-aspose-pdf/)
+- [Оценить Aspose.Pdf](/pdf/ru/sharepoint/evaluate-aspose-pdf/)
 
-- [Лицензирование Aspose.Pdf для SharePoint](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Лицензирование Aspose.Pdf для SharePoint](/pdf/ru/sharepoint/license-aspose-pdf-for-sharepoint/)
 
-- [Ограничения API](/pdf/sharepoint/api-limitations/)
+- [Ограничения API](/pdf/ru/sharepoint/api-limitations/)

@@ -3,7 +3,7 @@ title: Установить цвет фона для PDF в Node.js
 linktitle: Установить цвет фона
 type: docs
 weight: 80
-url: ru/nodejs-cpp/set-background-color/
+url: /ru/nodejs-cpp/set-background-color/
 description: Установите цвет фона для вашего PDF файла с помощью Node.js через C++.
 lastmod: "2023-11-16"
 sitemap:

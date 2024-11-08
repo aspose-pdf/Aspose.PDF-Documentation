@@ -3,7 +3,7 @@ title: TIFF를 PDF로 변환
 linktitle: TIFF를 PDF로 변환
 type: docs
 weight: 210
-url: ko/androidjava/convert-tiff-to-pdf/
+url: /ko/androidjava/convert-tiff-to-pdf/
 lastmod: "2021-06-05"
 description: Aspose.PDF for Android via Java는 여러 페이지 또는 여러 프레임의 TIFF 이미지를 PDF 애플리케이션으로 변환할 수 있습니다.
 sitemap:

@@ -3,7 +3,7 @@ title: PDF에서 첨부 파일 제거
 linktitle: 기존 PDF에서 첨부 파일 제거
 type: docs
 weight: 30
-url: ko/net/removing-attachment-from-an-existing-pdf/
+url: /ko/net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF를 사용하면 PDF 문서에서 첨부 파일을 제거할 수 있습니다. Aspose.PDF 라이브러리를 사용하여 PDF 파일에서 첨부 파일을 제거하기 위해 C# PDF API를 사용하세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Aspose.PDF는 PDF 파일에서 첨부 파일을 제거할 수 있습니다. PDF 문서의 첨부 파일은 Document 객체의 EmbeddedFiles 컬렉션에 저장됩니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 PDF 파일과 관련된 모든 첨부 파일을 삭제하려면:
 

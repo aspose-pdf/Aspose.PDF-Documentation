@@ -2,7 +2,7 @@
 title: 将PDF转换为Excel工作簿在PHP中
 type: docs
 weight: 20
-url: zh/java/convert-pdf-to-excel-workbook-in-php/
+url: /zh/java/convert-pdf-to-excel-workbook-in-php/
 lastmod: "2021-06-05"
 ---
 

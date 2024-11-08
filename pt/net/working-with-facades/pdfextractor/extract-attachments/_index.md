@@ -2,7 +2,7 @@
 title: Extrair Anexos de Arquivo PDF
 type: docs
 weight: 10
-url: pt/net/extract-attachments/
+url: /pt/net/extract-attachments/
 description: Esta seção explica sobre a extração de anexos de pdf com a classe PdfExtractor.
 lastmod: "2021-06-05"
 ---

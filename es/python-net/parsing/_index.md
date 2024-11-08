@@ -3,7 +3,7 @@ title: Parse PDF documents
 linktitle: Parse PDF documents
 type: docs
 weight: 80
-url: es/python-net/parsing/
+url: /es/python-net/parsing/
 description: ¿Quieres analizar documentos PDF? Descubre varios métodos de extracción de datos PDF con Aspose.PDF para Python via .NET.
 lastmod: "2021-06-05"
 sitemap:

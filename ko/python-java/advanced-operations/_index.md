@@ -3,7 +3,7 @@ title: 고급 작업
 linktitle: 고급 작업
 type: docs
 weight: 90
-url: ko/python-java/advanced-operations/
+url: /ko/python-java/advanced-operations/
 description: Aspose.PDF for Python via Java는 간단하고 쉬운 작업을 수행할 수 있으며 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자와 개발자를 위한 다음 섹션을 확인하세요.
 lastmod: "2023-04-17"
 sitemap:
@@ -77,11 +77,11 @@ sitemap:
 </script>
 
 
-**고급 작업**은 Aspose.PDF로 생성된 문서이든, [기본 작업](/pdf/python-java/basic-operations/)에서 논의된 대로, Adobe Acrobat, Google Docs, Microsoft Office, Open Office 또는 기타 PDF 생성기로 생성된 PDF이든 기존 PDF 파일을 프로그래밍 방식으로 처리하는 방법에 관한 섹션입니다.
+**고급 작업**은 Aspose.PDF로 생성된 문서이든, [기본 작업](/pdf/ko/python-java/basic-operations/)에서 논의된 대로, Adobe Acrobat, Google Docs, Microsoft Office, Open Office 또는 기타 PDF 생성기로 생성된 PDF이든 기존 PDF 파일을 프로그래밍 방식으로 처리하는 방법에 관한 섹션입니다.
 
 다양한 방법을 배우게 됩니다:
 
-- [문서 작업](/pdf/python-java/working-with-documents/) - 문서를 압축, 분할 및 병합하고 전체 문서와 관련된 기타 작업을 수행합니다.
-- [페이지 작업](/pdf/python-java/working-with-pages/) - 페이지 추가, 이동 또는 제거, 자르기, 워터마크, 스탬프 등을 추가합니다.
-- [양식 작업](/pdf/python-java/working-with-forms/) - 상호작용 PDF 문서를 처리하고, 양식 필드를 추가하고, 데이터를 추출합니다.
-- [텍스트 작업](/pdf/python-java/working-with-text/) - PDF에 텍스트를 추가, 서식 지정, 검색 및 교체합니다.
+- [문서 작업](/pdf/ko/python-java/working-with-documents/) - 문서를 압축, 분할 및 병합하고 전체 문서와 관련된 기타 작업을 수행합니다.
+- [페이지 작업](/pdf/ko/python-java/working-with-pages/) - 페이지 추가, 이동 또는 제거, 자르기, 워터마크, 스탬프 등을 추가합니다.
+- [양식 작업](/pdf/ko/python-java/working-with-forms/) - 상호작용 PDF 문서를 처리하고, 양식 필드를 추가하고, 데이터를 추출합니다.
+- [텍스트 작업](/pdf/ko/python-java/working-with-text/) - PDF에 텍스트를 추가, 서식 지정, 검색 및 교체합니다.

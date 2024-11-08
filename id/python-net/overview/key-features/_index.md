@@ -3,7 +3,7 @@ title: Fitur Utama Aspose.PDF untuk Python
 linktitle: Fitur Utama
 type: docs
 weight: 20
-url: id/python-net/key-features/
+url: /id/python-net/key-features/
 description: Aspose.PDF untuk Python via .NET menunjukkan fitur umumnya. Ini menunjukkan versi PDF yang didukung, dan semua manipulasi yang dapat kita lakukan dengan PDF.
 lastmod: "2022-12-21"
 sitemap:

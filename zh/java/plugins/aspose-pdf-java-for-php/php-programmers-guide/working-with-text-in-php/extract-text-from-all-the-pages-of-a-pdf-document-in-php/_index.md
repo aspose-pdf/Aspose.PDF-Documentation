@@ -2,7 +2,7 @@
 title: 从PDF文档的所有页面提取文本在PHP中
 type: docs
 weight: 30
-url: zh/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
+url: /zh/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
 lastmod: "2021-06-05"
 ---
 

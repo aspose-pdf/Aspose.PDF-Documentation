@@ -3,7 +3,7 @@ title: Добавить объект дуги в PDF файл
 linktitle: Добавить дугу
 type: docs
 weight: 10
-url: ru/cpp/add-arc/
+url: /ru/cpp/add-arc/
 description: В этой статье объясняется, как создать объект дуги в вашем PDF с использованием Aspose.PDF для C++.
 lastmod: "2021-12-18"
 sitemap:

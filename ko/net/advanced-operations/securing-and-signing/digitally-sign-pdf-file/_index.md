@@ -3,7 +3,7 @@ title: C#을 사용하여 디지털 서명 또는 PDF에 디지털 서명 추가
 linktitle: PDF에 디지털 서명
 type: docs
 weight: 10
-url: ko/net/digitally-sign-pdf-file/
+url: /ko/net/digitally-sign-pdf-file/
 description: C# 또는 VB.NET을 사용하여 PDF 문서에 디지털 서명을 하세요. C# 또는 VB.NET을 사용하여 디지털 서명된 PDF를 검증하거나 유효성을 검사하세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,8 +81,8 @@ PDF 문서에 서명을 사용할 때 기본적으로 문서의 내용을 "그�
 
 다시 말해, 문서는 여전히 그 무결성을 유지하는 것으로 간주되며, 수신자는 여전히 문서를 신뢰할 수 있습니다. 자세한 내용은 PDF 인증 및 서명을 참조하십시오. 일반적으로 문서를 인증하는 것은 .NET 실행 파일에 코드 서명하는 것과 비교할 수 있습니다.
 
-다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
-다음 코드 조각도 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각도 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## Aspose.PDF for .NET 서명 기능
 

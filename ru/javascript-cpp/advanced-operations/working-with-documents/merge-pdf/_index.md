@@ -3,7 +3,7 @@ title: Как объединить PDF с использованием JavaScrip
 linktitle: Объединить PDF файлы
 type: docs
 weight: 20
-url: ru/javascript-cpp/merge-pdf/
+url: /ru/javascript-cpp/merge-pdf/
 description: Эта страница объясняет, как объединить PDF документы в один файл с помощью Aspose.PDF для JavaScript через C++
 lastmod: "2022-12-15"
 sitemap:

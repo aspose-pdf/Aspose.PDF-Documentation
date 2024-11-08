@@ -3,7 +3,7 @@ title: PDF内のテキストをC#を使用して回転する
 linktitle: PDF内のテキストを回転する
 type: docs
 weight: 50
-url: ja/net/rotate-text-inside-pdf/
+url: /ja/net/rotate-text-inside-pdf/
 description: PDFへのテキストの異なる回転方法を学びます。Aspose.PDFを使用して、任意の角度にテキストを回転させたり、テキストの断片または段落全体を回転させることができます。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "PDFへのテキストの異なる回転方法を学びます。Aspose.PDFを使用して、任意の角度にテキストを回転させたり、テキストの断片または段落全体を回転させることができます。"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## PDF内のテキストを回転プロパティを使用して回転する
 
