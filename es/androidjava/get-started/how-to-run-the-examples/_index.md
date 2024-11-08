@@ -3,7 +3,7 @@ title: Cómo ejecutar otros ejemplos de Aspose.PDF para Android vía Java
 linktitle: Cómo ejecutar otros ejemplos
 type: docs
 weight: 40
-url: es/androidjava/how-to-run-other-examples/    
+url: /es/androidjava/how-to-run-other-examples/    
 description: Esta página demuestra pautas que serán útiles para los siguientes requisitos antes de descargar y ejecutar los ejemplos.
 lastmod: "2021-06-05"
 ---

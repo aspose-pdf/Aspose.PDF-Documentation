@@ -2,7 +2,7 @@
 title: تحسين مستند PDF في Jython
 type: docs
 weight: 50
-url: ar/java/optimize-pdf-document-in-jython/
+url: /ar/java/optimize-pdf-document-in-jython/
 lastmod: "2021-06-05"
 ---
 

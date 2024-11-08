@@ -3,7 +3,7 @@ title: تعيين الصلاحيات، تشفير وفك تشفير ملف PDF
 linktitle: تشفير وفك تشفير ملف PDF
 type: docs
 weight: 20
-url: ar/net/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ar/net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: تشفير ملف PDF باستخدام C# باستخدام أنواع وخوارزميات تشفير مختلفة. كذلك، فك تشفير ملفات PDF باستخدام كلمة مرور المالك.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "تشفير ملف PDF باستخدام C# باستخدام أنواع وخوارزميات تشفير مختلفة. كذلك، فك تشفير ملفات PDF باستخدام كلمة مرور المالك."
 }
 </script>
-الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تعيين الامتيازات على ملف PDF موجود
 

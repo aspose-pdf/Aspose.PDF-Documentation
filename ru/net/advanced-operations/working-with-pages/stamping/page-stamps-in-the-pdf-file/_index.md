@@ -4,7 +4,7 @@ title: Добавление штампов на страницы PDF в C#
 linktitle: Штампы на страницах PDF файла
 type: docs
 weight: 30
-url: ru/net/page-stamps-in-the-pdf-file/
+url: /ru/net/page-stamps-in-the-pdf-file/
 description: Добавьте штамп на страницу PDF документа с помощью класса PdfPageStamp и библиотеки Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ sitemap:
 
 [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) может быть использован, когда вам необходимо применить композитный штамп, содержащий графику, текст, таблицы. Следующий пример показывает, как использовать штамп для создания фирменного бланка, подобного использованию Adobe InDesign, Illustrator, Microsoft Word. Предположим, у нас есть некий входной документ и мы хотим применить 2 вида рамки с синим и сливовым цветом.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 public static void AddPageStamp()

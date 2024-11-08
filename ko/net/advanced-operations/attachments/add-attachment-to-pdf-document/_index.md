@@ -3,7 +3,7 @@ title: PDF 문서에 첨부 파일 추가
 linktitle: PDF 문서에 첨부 파일 추가
 type: docs
 weight: 10
-url: ko/net/add-attachment-to-pdf-document/
+url: /ko/net/add-attachment-to-pdf-document/
 description: 이 페이지는 Aspose.PDF for .NET 라이브러리를 사용하여 PDF 파일에 첨부 파일을 추가하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 
 첨부 파일에는 다양한 정보가 포함될 수 있으며, 다양한 파일 유형이 있을 수 있습니다. 이 문서는 PDF 파일에 첨부 파일을 추가하는 방법을 설명합니다.
 
-다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/net/drawing/) 인터페이스에서도 작동합니다.
+다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/ko/net/drawing/) 인터페이스에서도 작동합니다.
 
 1. 새 C# 프로젝트를 생성합니다.
 1. Aspose.PDF DLL에 대한 참조를 추가합니다.

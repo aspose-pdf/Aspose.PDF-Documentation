@@ -2,7 +2,7 @@
 title: Convertir un document PDF en classeur Excel en Python
 type: docs
 weight: 20
-url: fr/java/convert-pdf-to-excel-workbook-in-python/
+url: /fr/java/convert-pdf-to-excel-workbook-in-python/
 lastmod: "2021-06-05"
 ---
 

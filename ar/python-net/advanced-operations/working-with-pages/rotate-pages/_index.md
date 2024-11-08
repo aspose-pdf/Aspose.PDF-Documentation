@@ -3,7 +3,7 @@ title: تدوير صفحات PDF باستخدام بايثون
 linktitle: تدوير صفحات PDF
 type: docs
 weight: 110
-url: ar/python-net/rotate-pages/
+url: /ar/python-net/rotate-pages/
 description: يصف هذا الموضوع كيفية تدوير اتجاه الصفحة في ملف PDF موجود برمجيًا باستخدام بايثون.
 lastmod: "2023-04-17"
 sitemap:

@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: ja/jasperreports/simple-and-affordable-licensing/
+url: /ja/jasperreports/simple-and-affordable-licensing/
 
 lastmod: "2021-06-05"
 
@@ -34,4 +34,4 @@ Aspose.PDF for JasperReportsの評価版をご利用ください：時間制限�
 
 
 
-評価モードでは、エクスポートされたレポートに透かしが挿入されます。 When you [ライセンスを購入する](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx)、[単にライセンスを適用する](/pdf/jasperreports/licensing/)と、透かしは出力ドキュメントに表示されなくなります。
+評価モードでは、エクスポートされたレポートに透かしが挿入されます。 When you [ライセンスを購入する](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx)、[単にライセンスを適用する](/pdf/ja/jasperreports/licensing/)と、透かしは出力ドキュメントに表示されなくなります。

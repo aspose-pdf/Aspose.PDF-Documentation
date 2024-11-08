@@ -3,7 +3,7 @@ title: Ekstrak Konten Berlabel dari PDF
 linktitle: Ekstrak Konten Berlabel
 type: docs
 weight: 20
-url: id/java/extract-tagged-content-from-tagged-pdfs/
+url: /id/java/extract-tagged-content-from-tagged-pdfs/
 description: Artikel ini menjelaskan cara mengekstrak konten berlabel dari dokumen PDF menggunakan Aspose.PDF untuk Java
 lastmod: "2021-06-05"
 sitemap:

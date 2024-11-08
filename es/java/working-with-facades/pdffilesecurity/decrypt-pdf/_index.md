@@ -2,7 +2,7 @@
 title: Desencriptar Archivo PDF
 type: docs
 weight: 20
-url: es/java/decrypt-pdf-file/
+url: /es/java/decrypt-pdf-file/
 description: Este tema explica cómo desencriptar un archivo PDF usando la clase PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

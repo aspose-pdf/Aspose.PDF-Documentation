@@ -2,7 +2,7 @@
 title: الحصول على صفحة معينة في ملف PDF باستخدام روبي
 type: docs
 weight: 30
-url: ar/java/get-a-particular-page-in-a-pdf-file-in-ruby/
+url: /ar/java/get-a-particular-page-in-a-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for C++
 second_title: Aspose.PDF for C++
 type: docs
 weight: 30
-url: ko/cpp/
+url: /ko/cpp/
 is_root: true
 description: Aspose.PDF C++를 사용하여 C#, VB를 통해 PDF 문서 처리를 위한 애플리케이션을 모든 플랫폼에서 만드는 방법을 배우세요. 튜토리얼, 샘플 코드 등을 찾아보세요.
 keywords: cpp PDF API,pdf,convert PDF to Word,merge PDF,split PDF,convert PDF to Excel,PDF to PPT,PNG to PDF,PDF into JPEG
@@ -23,21 +23,21 @@ Aspose.PDF for C++는 개발자가 Adobe Acrobat을 사용하지 않고 PDF 문�
 
 <h2>챕터</h2>
 
-- [새로운 기능](/pdf/cpp/whatsnew/)
-- [개요](/pdf/cpp/overview/)
-- [시작하기](/pdf/cpp/get-started/)
-- [기본 작업](/pdf/cpp/basic-operations/)
-- [문서 변환](/pdf/cpp/converting/)
-- [PDF 문서 구문 분석](/pdf/cpp/parsing/)
-- [고급 작업](/pdf/cpp/advanced-operations/)
+- [새로운 기능](/pdf/ko/cpp/whatsnew/)
+- [개요](/pdf/ko/cpp/overview/)
+- [시작하기](/pdf/ko/cpp/get-started/)
+- [기본 작업](/pdf/ko/cpp/basic-operations/)
+- [문서 변환](/pdf/ko/cpp/converting/)
+- [PDF 문서 구문 분석](/pdf/ko/cpp/parsing/)
+- [고급 작업](/pdf/ko/cpp/advanced-operations/)
 - [릴리스 노트](https://releases.aspose.com/pdf/cpp/release-notes/)
 
 <h3>Aspose.PDF for C++ 리소스</h3>
 
 다음 링크들은 작업을 완료하는 데 필요할 수 있는 몇 가지 유용한 리소스를 제공합니다.
 
-- [Aspose.PDF for C++ 온라인 문서](/pdf/cpp/)
-- [Aspose.PDF for C++ 기능](/pdf/cpp/overview/)
+- [Aspose.PDF for C++ 온라인 문서](/pdf/ko/cpp/)
+- [Aspose.PDF for C++ 기능](/pdf/ko/cpp/overview/)
 - [Aspose.PDF for C++ 릴리스 노트](https://releases.aspose.com/pdf/cpp/release-notes/)
 - [Aspose.PDF for C++ 제품 페이지](https://products.aspose.com/pdf/cpp/)
 

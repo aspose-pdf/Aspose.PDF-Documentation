@@ -2,7 +2,7 @@
 title: العمل مع العناوين في PDF
 type: docs
 weight: 70
-url: ar/java/working-with-headings/
+url: /ar/java/working-with-headings/
 lastmod: "2021-06-05"
 description: إنشاء ترقيم في عنوان مستند PDF الخاص بك باستخدام Java. يقدم Aspose.PDF for Java أنواعًا مختلفة من أنماط الترقيم.
 sitemap:

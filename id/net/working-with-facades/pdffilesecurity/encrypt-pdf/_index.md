@@ -2,7 +2,7 @@
 title: Encrypt PDF File
 type: docs
 weight: 10
-url: id/net/encrypt-pdf-file/
+url: /id/net/encrypt-pdf-file/
 description: Topik ini menjelaskan cara Mengenkripsi File PDF menggunakan Kelas PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

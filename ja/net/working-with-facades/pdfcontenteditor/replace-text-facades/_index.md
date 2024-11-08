@@ -2,7 +2,7 @@
 title: テキストを置換 - ファサード
 type: docs
 weight: 40
-url: ja/net/replace-text-facades/
+url: /ja/net/replace-text-facades/
 description: このセクションでは、PdfContentEditor クラスを使用してテキスト - ファサードを操作する方法を説明します。
 lastmod: "2021-06-24"
 draft: false

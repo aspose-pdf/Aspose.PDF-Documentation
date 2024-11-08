@@ -3,7 +3,7 @@ title: Aspose.PDF Editor
 linktitle: Aspose.PDF Editor
 type: docs
 weight: 10
-url: fr/net/aspose-pdf-editor/
+url: /fr/net/aspose-pdf-editor/
 description: Aspose.PDF pour .NET démontre que l'éditeur PDF HTML5 est un éditeur PDF basé sur le web et open source.
 lastmod: "2021-06-05"
 sitemap:

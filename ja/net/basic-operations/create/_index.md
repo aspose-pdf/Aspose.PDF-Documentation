@@ -3,7 +3,7 @@ title: PDF文書をプログラムで作成
 linktitle: PDFを作成
 type: docs
 weight: 10
-url: ja/net/create-document/
+url: /ja/net/create-document/
 description: このページでは、Aspose.PDFライブラリを使用して最初からPDF文書を作成する方法について説明します。
 ---
 
@@ -18,7 +18,7 @@ C#を使用してPDFファイルを作成するには、次の手順を使用し
 1.
 1. 結果のPDFドキュメントを保存します。
 
-次のコードスニペットは、新しいグラフィカルな[Aspose.Drawing](/pdf/net/drawing/)インターフェースでも機能します。
+次のコードスニペットは、新しいグラフィカルな[Aspose.Drawing](/pdf/ja/net/drawing/)インターフェースでも機能します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。

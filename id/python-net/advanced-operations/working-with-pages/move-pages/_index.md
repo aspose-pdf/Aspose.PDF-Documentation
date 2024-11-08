@@ -3,7 +3,7 @@ title: Pindahkan Halaman PDF secara programatis melalui Python
 linktitle: Pindahkan Halaman PDF
 type: docs
 weight: 100
-url: id/python-net/move-pages/
+url: /id/python-net/move-pages/
 description: Cobalah untuk memindahkan halaman ke lokasi yang diinginkan atau ke akhir file PDF menggunakan Aspose.PDF untuk Python via .NET.
 lastmod: "2023-04-17"
 sitemap:

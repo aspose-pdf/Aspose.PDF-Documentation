@@ -3,7 +3,7 @@ title: إنشاء ملف PDF من XML باستخدام XSLT
 linktitle: إنشاء ملف PDF من XML باستخدام XSLT
 type: docs
 weight: 10
-url: ar/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /ar/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: توفر مكتبة C++ القدرة على تحويل ملف XML إلى مستند PDF بشرط أن يتبع ملف XML المدخل مخطط Aspose.PDF.
 lastmod: "2022-01-31"
 sitemap:

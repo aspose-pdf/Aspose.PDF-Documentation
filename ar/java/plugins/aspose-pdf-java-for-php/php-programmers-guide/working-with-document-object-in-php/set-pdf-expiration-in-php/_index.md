@@ -2,7 +2,7 @@
 title: تعيين انتهاء صلاحية PDF في PHP
 type: docs
 weight: 80
-url: ar/java/set-pdf-expiration-in-php/
+url: /ar/java/set-pdf-expiration-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Form Exporter
 type: docs
 weight: 50
-url: es/net/plugins/formexpoter/
+url: /es/net/plugins/formexpoter/
 description: Cómo exportar valores de campos de formulario a archivos CSV utilizando el complemento Aspose.PDF Form Exporter
 lastmod: "2024-01-24"
 draft: false

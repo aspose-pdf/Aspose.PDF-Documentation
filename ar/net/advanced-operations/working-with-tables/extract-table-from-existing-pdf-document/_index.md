@@ -3,7 +3,7 @@ title: استخراج الجدول من مستند PDF
 linktitle: استخراج الجدول
 type: docs
 weight: 20
-url: ar/net/extract-table-from-existing-pdf-document/
+url: /ar/net/extract-table-from-existing-pdf-document/
 description: يتيح Aspose.PDF لـ .NET إجراء تلاعبات متنوعة بالجداول الموجودة في مستند pdf الخاص بك.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "يتيح Aspose.PDF لـ .NET إجراء تلاعبات متنوعة بالجداول الموجودة في مستند pdf الخاص بك."
 }
 </script>
-الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## استخراج جدول من PDF
 

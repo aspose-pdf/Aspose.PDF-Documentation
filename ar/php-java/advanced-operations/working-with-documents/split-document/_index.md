@@ -3,7 +3,7 @@ title: تقسيم ملف PDF برمجيًا
 linktitle: تقسيم ملفات PDF
 type: docs
 weight: 60
-url: ar/php-java/split-document/
+url: /ar/php-java/split-document/
 description: يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات PHP الخاصة بك. 
 lastmod: "2024-06-05"
 sitemap:

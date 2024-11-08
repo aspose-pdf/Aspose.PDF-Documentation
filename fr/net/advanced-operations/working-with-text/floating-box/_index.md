@@ -3,7 +3,7 @@ title: Utilisation de FloatingBox pour la génération de texte
 linktitle: Utilisation de FloatingBox
 type: docs
 weight: 30
-url: fr/net/floating-box/
+url: /fr/net/floating-box/
 description: Cette page explique comment formater le texte à l'intérieur d'une boîte flottante.
 lastmod: "2022-02-17"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-Cette fonctionnalité fonctionne également dans la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cette fonctionnalité fonctionne également dans la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Bases de l'utilisation de l'outil FloatingBox
 

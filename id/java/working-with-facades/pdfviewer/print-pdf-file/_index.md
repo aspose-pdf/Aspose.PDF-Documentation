@@ -2,7 +2,7 @@
 title: Bekerja dengan Pencetakan PDF
 type: docs
 weight: 10
-url: id/java/print-pdf-file/
+url: /id/java/print-pdf-file/
 description: Bagian ini menjelaskan cara mencetak file PDF dengan Aspose.PDF Facades menggunakan Kelas PdfViewer.
 lastmod: "2021-06-05"
 sitemap:

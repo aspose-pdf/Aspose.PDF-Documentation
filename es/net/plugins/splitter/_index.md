@@ -2,7 +2,7 @@
 title: Splitter
 type: docs
 weight: 120
-url: es/net/plugins/splitter/
+url: /es/net/plugins/splitter/
 description: Divide un documento PDF en páginas separadas
 lastmod: "2024-01-24"
 draft: false

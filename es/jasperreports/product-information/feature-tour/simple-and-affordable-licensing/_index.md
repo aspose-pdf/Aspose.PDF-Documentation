@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: es/jasperreports/simple-and-affordable-licensing/
+url: /es/jasperreports/simple-and-affordable-licensing/
 
 lastmod: "2021-06-05"
 
@@ -22,4 +22,4 @@ Las versiones de evaluación y pagadas de Aspose.PDF para JasperReports son la m
 
 Por favor, aproveche la versión de evaluación de Aspose.PDF para JasperReports: no tiene limitaciones de tiempo y viene con soporte técnico gratuito.
 
-El modo de evaluación inyecta marcas de agua en los informes exportados. Cuando usted [compra una licencia](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simplemente aplique la licencia](/pdf/jasperreports/licensing/) y la marca de agua ya no aparecerá en los documentos de salida.
+El modo de evaluación inyecta marcas de agua en los informes exportados. Cuando usted [compra una licencia](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simplemente aplique la licencia](/pdf/es/jasperreports/licensing/) y la marca de agua ya no aparecerá en los documentos de salida.

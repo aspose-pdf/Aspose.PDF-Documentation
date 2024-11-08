@@ -3,7 +3,7 @@ title: Работа с XML с использованием C#
 linktitle: Работа с XML
 type: docs
 weight: 80
-url: ru/net/working-with-xml/
+url: /ru/net/working-with-xml/
 description: Узнайте, как создать PDF-документ из XML в Aspose.PDF для .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -78,9 +78,9 @@ sitemap:
 
 XML (Extensible Markup Language) - это способ перепрофилировать данные в файле или автоматизировать процесс замены данных в одном файле данными из другого файла. Создание XML-схемы сложно сделать правильно; создание нескольких взаимосвязанных схем, которые можно расширять, еще сложнее. Давайте узнаем, как Aspose.PDF справляется с задачами работы с XML.
 
-- [Поддерживаемая XML-схема](/pdf/net/supported-xml-schema/) - используйте следующую XML-схему для работы с XML-документами.
-- [Простой пример 'Hello World' на основе XML и XSLT](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - используйте XSLT для преобразования существующего XML-документа в PDF.
-- [Создание PDF из XML](/pdf/net/generate-pdf-from-xml/) - Aspose.PDF имеет несколько способов генерации PDF на основе XML-документа.
+- [Поддерживаемая XML-схема](/pdf/ru/net/supported-xml-schema/) - используйте следующую XML-схему для работы с XML-документами.
+- [Простой пример 'Hello World' на основе XML и XSLT](/pdf/ru/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - используйте XSLT для преобразования существующего XML-документа в PDF.
+- [Создание PDF из XML](/pdf/ru/net/generate-pdf-from-xml/) - Aspose.PDF имеет несколько способов генерации PDF на основе XML-документа.
 
 <script type="application/ld+json">
 {

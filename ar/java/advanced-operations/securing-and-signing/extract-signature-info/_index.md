@@ -3,7 +3,7 @@ title: استخراج معلومات الصورة والتوقيع
 linktitle: استخراج معلومات الصورة والتوقيع
 type: docs
 weight: 30
-url: ar/java/extract-image-and-signature-information/
+url: /ar/java/extract-image-and-signature-information/
 description: يمكنك استخراج الصور من حقل التوقيع واستخراج معلومات التوقيع باستخدام فئة SignatureField مع Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Criando uma Assembly de Wrapper
 type: docs
 weight: 80
-url: pt/net/creating-a-wrapper-assembly/
+url: /pt/net/creating-a-wrapper-assembly/
 ---
 
 {{% alert color="primary" %}}

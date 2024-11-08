@@ -3,7 +3,7 @@ title: PDFに画像スタンプをプログラムで追加する
 linktitle: PDFファイルに画像スタンプ
 type: docs
 weight: 10
-url: ja/java/image-stamps-in-pdf-page/
+url: /ja/java/image-stamps-in-pdf-page/
 description: Aspose.PDF for Javaライブラリを使用してImageStampクラスを使用してPDFドキュメントに画像スタンプを追加します。
 lastmod: "2021-06-05"
 sitemap:

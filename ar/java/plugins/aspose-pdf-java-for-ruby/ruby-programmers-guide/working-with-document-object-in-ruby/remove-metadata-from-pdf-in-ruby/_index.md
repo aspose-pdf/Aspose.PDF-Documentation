@@ -2,7 +2,7 @@
 title: إزالة البيانات الوصفية من PDF في Ruby
 type: docs
 weight: 90
-url: ar/java/remove-metadata-from-pdf-in-ruby/
+url: /ar/java/remove-metadata-from-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

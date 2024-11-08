@@ -2,7 +2,7 @@
 title: إدراج صفحات PDF
 type: docs
 weight: 50
-url: ar/net/insert-pdf-pages/
+url: /ar/net/insert-pdf-pages/
 description: يشرح هذا القسم كيفية إدراج صفحات PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

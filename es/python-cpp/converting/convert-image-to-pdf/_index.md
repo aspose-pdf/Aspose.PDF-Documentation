@@ -3,7 +3,7 @@ title: Convertir Imagen a PDF en Python
 linktitle: Convertir Imagen a archivo PDF
 type: docs
 weight: 10
-url: es/python-cpp/convert-image-to-pdf/
+url: /es/python-cpp/convert-image-to-pdf/
 lastmod: "2024-04-22"
 description: Este tema te muestra cómo convertir Imagen a PDF usando Aspose.PDF para Python a través de la biblioteca C++.
 sitemap:

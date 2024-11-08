@@ -3,7 +3,7 @@ title: استخراج الخطوط من PDF C#
 linktitle: استخراج الخطوط من PDF
 type: docs
 weight: 30
-url: ar/net/extract-fonts-from-pdf/
+url: /ar/net/extract-fonts-from-pdf/
 description: استخدم مكتبة Aspose.PDF for. NET لاستخراج جميع الخطوط المضمنة من مستند PDF الخاص بك.
 lastmod: "2021-06-05"
 sitemap:
@@ -13,7 +13,7 @@ sitemap:
 
 في حالة رغبتك في الحصول على جميع الخطوط من مستند PDF، يمكنك استخدام الطريقة FontUtilities.GetAllFonts() المتوفرة في فئة Document. يرجى التحقق من الشفرة البرمجية التالية للحصول على جميع الخطوط من مستند PDF موجود:
 
-الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET

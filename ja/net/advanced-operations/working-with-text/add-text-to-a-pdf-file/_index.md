@@ -3,7 +3,7 @@ title: PDFにテキストを追加する方法 C#
 linktitle: PDFにテキストを追加
 type: docs
 weight: 10
-url: ja/net/add-text-to-pdf-file/
+url: /ja/net/add-text-to-pdf-file/
 description: この記事では、Aspose.PDFでテキストを扱うさまざまな側面について説明します。PDFにテキストを追加したり、HTMLフラグメントを追加したり、カスタムOTFフォントを使用する方法を学びます。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "この記事では、Aspose.PDFでテキストを扱うさまざまな側面について説明します。PDFにテキストを追加したり、HTMLフラグメントを追加したり、カスタムOTFフォントを使用する方法を学びます。"
 }
 </script>
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 既存のPDFファイルにテキストを追加するには：
 

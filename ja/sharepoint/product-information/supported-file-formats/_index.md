@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: ja/sharepoint/supported-file-formats/
+url: /ja/sharepoint/supported-file-formats/
 
 lastmod: "2020-12-16"
 

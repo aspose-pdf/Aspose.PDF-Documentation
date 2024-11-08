@@ -2,7 +2,7 @@
 title: Extract Images menggunakan PdfExtractor
 type: docs
 weight: 20
-url: id/net/extract-images/
+url: /id/net/extract-images/
 description: Bagian ini menjelaskan cara mengekstrak Gambar dengan Aspose.PDF Facades menggunakan Kelas PdfExtractor.
 lastmod: "2021-07-15"
 ---

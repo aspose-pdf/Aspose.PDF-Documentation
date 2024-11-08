@@ -3,7 +3,7 @@ title: PDFから画像を抽出する
 linktitle: 画像を抽出  
 type: docs  
 weight: 20  
-url: ja/java/extract-images-from-the-pdf-file/  
+url: /ja/java/extract-images-from-the-pdf-file/  
 description: Aspose.PDF for Javaを使用してPDFから画像の一部を抽出する方法  
 lastmod: "2021-06-05"  
 sitemap:  

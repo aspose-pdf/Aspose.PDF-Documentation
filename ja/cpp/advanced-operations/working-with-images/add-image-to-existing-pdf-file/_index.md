@@ -3,7 +3,7 @@ title: C++を使用してPDFに画像を追加
 linktitle: 画像を追加
 type: docs
 weight: 10
-url: ja/cpp/add-image-to-existing-pdf-file/
+url: /ja/cpp/add-image-to-existing-pdf-file/
 description: このセクションでは、C++ライブラリを使用して既存のPDFファイルに画像を追加する方法を説明します。
 lastmod: "2021-12-18"
 ---

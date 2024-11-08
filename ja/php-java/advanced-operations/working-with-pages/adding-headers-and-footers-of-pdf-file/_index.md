@@ -3,7 +3,7 @@ title: PDFのヘッダーとフッターを追加
 linktitle: PDFのヘッダーとフッターを追加
 type: docs
 weight: 70
-url: ja/php-java/add-headers-and-footers-of-pdf-file/
+url: /ja/php-java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for PHP via Javaは、TextStampクラスを使用してPDFファイルにヘッダーとフッターを追加することができます。
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 기존 PDF의 테이블 조작
 linktitle: 테이블 조작
 type: docs
 weight: 40
-url: ko/python-net/manipulate-tables-in-existing-pdf/
+url: /ko/python-net/manipulate-tables-in-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

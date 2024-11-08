@@ -3,7 +3,7 @@ title: Aspose.PDF for Node.js의 주요 기능
 linktitle: 주요 기능
 type: docs
 weight: 20
-url: ko/nodejs-cpp/key-features/
+url: /ko/nodejs-cpp/key-features/
 description: Aspose.PDF for Node.js via C++의 일반적인 기능을 보여줍니다. 이 페이지에서는 지원되는 PDF 버전과 텍스트, 이미지, 페이지 등에서 수행할 수 있는 모든 조작에 대해 설명합니다.
 lastmod: "2023-11-16"
 sitemap:

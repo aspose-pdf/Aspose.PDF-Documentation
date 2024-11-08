@@ -2,7 +2,7 @@
 title: إضافة جدول محتويات إلى PDF موجود باستخدام بايثون
 type: docs
 weight: 20
-url: ar/python-java/add-toc-to-existing-pdf-in-python/
+url: /ar/python-java/add-toc-to-existing-pdf-in-python/
 ---
 
 لإضافة جدول محتويات في مستند PDF باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء فئة **AddToc**.

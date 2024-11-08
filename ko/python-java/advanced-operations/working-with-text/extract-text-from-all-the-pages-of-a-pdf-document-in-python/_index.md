@@ -2,7 +2,7 @@
 title: Python에서 PDF 문서의 모든 페이지에서 텍스트 추출
 type: docs
 weight: 30
-url: ko/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
+url: /ko/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 ---
 
 **Aspose.PDF Java for Python**을 사용하여 PDF 문서의 모든 페이지에서 텍스트를 추출하려면, **ExtractTextFromAllPages** 모듈을 호출합니다.

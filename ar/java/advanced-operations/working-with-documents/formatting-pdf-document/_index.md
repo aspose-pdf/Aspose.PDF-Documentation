@@ -3,7 +3,7 @@ title: تنسيق مستند PDF
 linktitle: تنسيق مستند PDF
 type: docs
 weight: 20
-url: ar/java/formatting-pdf-document/
+url: /ar/java/formatting-pdf-document/
 description: تنسيق مستند PDF باستخدام Aspose.PDF لـ Java. استخدم المقتطف التالي من الكود لحل مهامك.
 lastmod: "2021-06-05"
 ---

@@ -2,7 +2,7 @@
 title: العمل مع عنصر القائمة
 type: docs
 weight: 30
-url: ar/java/working-with-list-item/
+url: /ar/java/working-with-list-item/
 description: يوضح هذا القسم كيفية العمل مع عنصر القائمة باستخدام com.aspose.pdf.facades باستخدام فئة FormEditor.
 lastmod: "2021-06-05"
 draft: false

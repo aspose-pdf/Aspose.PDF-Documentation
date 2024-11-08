@@ -1,7 +1,7 @@
 title: PDF에서 제목 작업하기
 type: docs
 weight: 70
-url: ko/php-java/working-with-headings/
+url: /ko/php-java/working-with-headings/
 lastmod: "2024-06-05"
 description: PHP를 사용하여 PDF 문서의 제목에 번호 매기기를 생성합니다. Aspose.PDF for PHP via Java는 다양한 번호 매기기 스타일을 제공합니다.
 sitemap:

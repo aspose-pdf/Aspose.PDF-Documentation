@@ -2,7 +2,7 @@
 title: PDFページの削除
 type: docs
 weight: 70
-url: ja/net/delete-pdf-pages/
+url: /ja/net/delete-pdf-pages/
 description: このセクションでは、PdfFileEditorクラスを使用してAspose.PDF FacadesでPDFページを削除する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

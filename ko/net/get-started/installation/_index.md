@@ -3,7 +3,7 @@ title: Aspose.PDF for .NET 설치 방법
 linktitle: 설치
 type: docs
 weight: 20
-url: ko/net/installation/
+url: /ko/net/installation/
 description: 이 섹션은 Aspose.PDF for .Net를 직접 설치하는 방법과 NuGet을 사용하는 방법에 대한 제품 설명 및 지침을 보여줍니다.
 lastmod: "2021-06-05"
 sitemap:

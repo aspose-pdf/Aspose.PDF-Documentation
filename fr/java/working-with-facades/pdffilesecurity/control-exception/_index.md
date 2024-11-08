@@ -2,7 +2,7 @@
 title: Contrôler les Exceptions du Fichier PDF
 type: docs
 weight: 30
-url: fr/java/control-exception/
+url: /fr/java/control-exception/
 description: Ce sujet explique comment contrôler les exceptions sur le fichier PDF en utilisant la classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

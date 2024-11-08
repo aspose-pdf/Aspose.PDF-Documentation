@@ -3,7 +3,7 @@ title: Convertir un PDF en Microsoft PowerPoint
 linktitle: Convertir PDF en PowerPoint
 type: docs
 weight: 30
-url: fr/php-java/convert-pdf-to-powerpoint/
+url: /fr/php-java/convert-pdf-to-powerpoint/
 lastmod: "2024-05-20"
 description: Aspose.PDF vous permet de convertir des PDF en format PowerPoint en utilisant PHP. Il est possible de convertir un PDF en PPTX avec les diapositives sous forme d'images.
 sitemap:

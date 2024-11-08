@@ -2,7 +2,7 @@
 title: ToC Generator
 type: docs
 weight: 150
-url: ko/net/plugins/tocgenerator/
+url: /ko/net/plugins/tocgenerator/
 description: Aspose.PDF ToC Generator를 사용하여 목차 생성
 lastmod: "2024-01-24"
 draft: false

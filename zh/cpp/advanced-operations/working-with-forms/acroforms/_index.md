@@ -3,7 +3,7 @@ title: 使用 Aspose.PDF for C++ 处理 PDF 中的 AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: zh/cpp/acroforms/
+url: /zh/cpp/acroforms/
 description: 使用 Aspose.PDF for C++，您可以从头创建表单、填写 PDF 文档中的表单字段、从表单中提取数据、在现有表单中添加或删除字段。
 lastmod: "2021-12-01"
 sitemap:
@@ -19,12 +19,12 @@ sitemap:
 
 有关使用表单的更多详细研究，请查阅本节中的以下文章：
 
-- [创建 AcroForm](/pdf/cpp/create-form/) - 从头创建表单，使用 C++ 添加 RadioButtonField、TextBoxField、Caption Field。
+- [创建 AcroForm](/pdf/zh/cpp/create-form/) - 从头创建表单，使用 C++ 添加 RadioButtonField、TextBoxField、Caption Field。
 
-- [填写 AcroForm](/pdf/cpp/fill-form/) - 要填写表单字段，从 Document 对象的 Form 集合中获取字段。
+- [填写 AcroForm](/pdf/zh/cpp/fill-form/) - 要填写表单字段，从 Document 对象的 Form 集合中获取字段。
 
-- [提取 AcroForm 数据](/pdf/cpp/extract-form/) - 获取所有字段和单个字段的值等。
+- [提取 AcroForm 数据](/pdf/zh/cpp/extract-form/) - 获取所有字段和单个字段的值等。
 
-- [修改 AcroForm](/pdf/cpp/modifing-form/) - 获取/设置 FieldLimit，移除现有表单中的字段，使用 C++ 设置除 14 种核心 PDF 字体之外的表单字段字体。
+- [修改 AcroForm](/pdf/zh/cpp/modifing-form/) - 获取/设置 FieldLimit，移除现有表单中的字段，使用 C++ 设置除 14 种核心 PDF 字体之外的表单字段字体。
 
-- [发布 AcroForm 数据](/pdf/cpp/posting-acroform-data/) - 导入和导出表单数据到 XML 文件。
+- [发布 AcroForm 数据](/pdf/zh/cpp/posting-acroform-data/) - 导入和导出表单数据到 XML 文件。

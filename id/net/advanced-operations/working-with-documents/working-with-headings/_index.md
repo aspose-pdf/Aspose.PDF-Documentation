@@ -1,7 +1,7 @@
 ---
 title: Bekerja dengan Judul di PDF
 type: docs
-url: id/net/working-with-headings/
+url: /id/net/working-with-headings/
 description: Membuat penomoran dalam judul dokumen PDF Anda dengan C#. Aspose.PDF untuk .NET menawarkan berbagai gaya penomoran.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Judul adalah bagian penting dari setiap dokumen. Penulis selalu berusaha membuat judul lebih menonjol dan bermakna bagi pembacanya. Jika ada lebih dari satu judul dalam dokumen, penulis memiliki beberapa opsi untuk mengorganisir judul-judul tersebut. Salah satu pendekatan yang paling umum untuk mengorganisir judul adalah menulis judul dalam Gaya Penomoran.
 
-[Aspose.PDF for .NET](/pdf/net/) menawarkan banyak gaya penomoran yang telah ditentukan sebelumnya. Gaya penomoran yang telah ditentukan ini disimpan dalam sebuah enumerasi, NumberingStyle. Nilai-nilai yang telah ditentukan dari enumerasi NumberingStyle dan deskripsinya diberikan di bawah ini:
+[Aspose.PDF for .NET](/pdf/id/net/) menawarkan banyak gaya penomoran yang telah ditentukan sebelumnya. Gaya penomoran yang telah ditentukan ini disimpan dalam sebuah enumerasi, NumberingStyle. Nilai-nilai yang telah ditentukan dari enumerasi NumberingStyle dan deskripsinya diberikan di bawah ini:
 
 |**Tipe Judul**|**Deskripsi**|
 | :- | :- |
@@ -94,7 +94,7 @@ Properti **Style** dari kelas **Aspose.PDF.Heading** digunakan untuk mengatur ga
 | :- |
 Kode sumber, untuk mendapatkan hasil seperti yang ditunjukkan pada gambar di atas, diberikan di bawah ini dalam contoh.
 
-Potongan kode berikutnya juga bekerja dengan antarmuka grafis [Aspose.Drawing](/pdf/net/drawing/) yang baru.
+Potongan kode berikutnya juga bekerja dengan antarmuka grafis [Aspose.Drawing](/pdf/id/net/drawing/) yang baru.
 
 ```csharp
 // Jalur ke direktori dokumen.

@@ -2,7 +2,7 @@
 title: RubyでPDFファイルにレイヤーを追加する
 type: docs
 weight: 20
-url: ja/java/add-layers-to-pdf-file-in-ruby/
+url: /ja/java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

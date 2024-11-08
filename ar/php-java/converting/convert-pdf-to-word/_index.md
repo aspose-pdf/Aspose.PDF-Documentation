@@ -3,7 +3,7 @@ title: تحويل PDF إلى Microsoft Word
 linktitle: تحويل PDF إلى Word
 type: docs
 weight: 10
-url: ar/php-java/convert-pdf-to-word/
+url: /ar/php-java/convert-pdf-to-word/
 lastmod: "2024-05-20"
 description: تحويل ملف PDF إلى تنسيق DOC وDOCX بسهولة وتحكم كامل باستخدام Aspose.PDF لـ PHP. تعرف على كيفية تحسين تحويل مستندات PDF إلى Microsoft Word.
 sitemap:

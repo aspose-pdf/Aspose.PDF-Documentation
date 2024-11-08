@@ -3,7 +3,7 @@ title: 创建复杂的 PDF 使用 Aspose.PDF
 linktitle: 创建复杂的 PDF
 type: docs
 weight: 30
-url: zh/androidjava/complex-pdf-example/
+url: /zh/androidjava/complex-pdf-example/
 description: Aspose.PDF for Android via Java 允许您创建包含图像、文本片段和表格的更复杂的文档。
 lastmod: "2021-06-05"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/java/hello-world-example/) 示例展示了使用 Java 和 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将看看如何使用 Java 和 Aspose.PDF for Java 创建更复杂的文档。作为示例，我们将使用一家经营客运渡轮服务的虚构公司的文档。我们的文档将包含一个图像、两个文本片段（标题和段落）以及一个表格。为了构建这样的文档，我们将使用基于 DOM 的方法。您可以在 [DOM API 基础](/pdf/java/basics-of-dom-api/) 部分阅读更多内容。
+[Hello, World](/pdf/zh/java/hello-world-example/) 示例展示了使用 Java 和 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将看看如何使用 Java 和 Aspose.PDF for Java 创建更复杂的文档。作为示例，我们将使用一家经营客运渡轮服务的虚构公司的文档。我们的文档将包含一个图像、两个文本片段（标题和段落）以及一个表格。为了构建这样的文档，我们将使用基于 DOM 的方法。您可以在 [DOM API 基础](/pdf/zh/java/basics-of-dom-api/) 部分阅读更多内容。
 
 如果我们从头开始创建一个文档，我们需要遵循某些步骤：
 

@@ -3,7 +3,7 @@ title: 从PDF中提取表格数据
 linktitle: 提取表格数据
 type: docs
 weight: 40
-url: zh/androidjava/extract-data-from-table-in-pdf/
+url: /zh/androidjava/extract-data-from-table-in-pdf/
 description: 了解如何使用Aspose.PDF for Android via Java从PDF中提取表格数据。
 lastmod: "2021-06-05"
 sitemap:
@@ -173,7 +173,7 @@ public void extractMarkedTable () {
 
 ## 从 PDF 中提取表格数据并存储到 CSV 文件
 
-以下示例展示了如何提取表格并将其存储为 CSV 文件。要查看如何将 PDF 转换为 Excel 电子表格，请参考[将 PDF 转换为 Excel](/pdf/java/convert-pdf-to-excel/)文章。
+以下示例展示了如何提取表格并将其存储为 CSV 文件。要查看如何将 PDF 转换为 Excel 电子表格，请参考[将 PDF 转换为 Excel](/pdf/zh/java/convert-pdf-to-excel/)文章。
 
 ```java
  public void extractTableSaveCSV () {

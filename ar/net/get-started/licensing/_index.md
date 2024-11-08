@@ -3,7 +3,7 @@ title: رخصة Aspose PDF
 linktitle: الترخيص والقيود
 type: docs
 weight: 90
-url: ar/net/licensing/
+url: /ar/net/licensing/
 description: يدعو Aspose. PDF لـ .NET عملائه للحصول على رخصة كلاسيكية ورخصة مقيدة. بالإضافة إلى استخدام رخصة محدودة لاستكشاف المنتج بشكل أفضل.
 lastmod: "2021-06-05"
 sitemap:

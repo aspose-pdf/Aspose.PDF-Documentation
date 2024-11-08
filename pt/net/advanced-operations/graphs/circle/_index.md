@@ -3,7 +3,7 @@ title: Adicionar Objeto Círculo ao arquivo PDF
 linktitle: Adicionar Círculo
 type: docs
 weight: 20
-url: pt/net/add-circle/
+url: /pt/net/add-circle/
 description: Este artigo explica como criar um objeto círculo no seu PDF usando Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Este artigo explica como criar um objeto círculo no seu PDF usando Aspose.PDF para .NET."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Adicionar objeto Circle
 

@@ -3,7 +3,7 @@ title: JavaScriptを介してC++でPDFページを削除する
 linktitle: PDFページを削除
 type: docs
 weight: 30
-url: ja/javascript-cpp/delete-pages/
+url: /ja/javascript-cpp/delete-pages/
 description: Aspose.PDF for JavaScriptを介してC++でPDFファイルからページを削除できます。
 lastmod: "2023-04-17"
 sitemap:

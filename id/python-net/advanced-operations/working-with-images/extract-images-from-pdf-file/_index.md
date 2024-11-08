@@ -3,7 +3,7 @@ title: Ekstrak Gambar dari File PDF menggunakan Python
 linktitle: Ekstrak Gambar
 type: docs
 weight: 30
-url: id/python-net/extract-images-from-pdf-file/
+url: /id/python-net/extract-images-from-pdf-file/
 description: Bagian ini menunjukkan cara mengekstrak gambar dari file PDF menggunakan pustaka Python.
 lastmod: "2023-02-17"
 ---

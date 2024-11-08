@@ -3,7 +3,7 @@ title: Trabalhando com Operadores usando C++
 linktitle: Trabalhando com Operadores
 type: docs
 weight: 170
-url: pt/cpp/operators/
+url: /pt/cpp/operators/
 description: Este tópico explica como usar operadores com Aspose.PDF em C++. As classes de operadores oferecem ótimos recursos para manipulação de PDF.
 lastmod: "2021-12-14"
 sitemap:

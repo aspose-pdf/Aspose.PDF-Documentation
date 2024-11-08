@@ -3,7 +3,7 @@ title: Публикация данных AcroForm
 linktitle: Публикация AcroForm
 type: docs
 weight: 50
-url: ru/net/posting-acroform-data/
+url: /ru/net/posting-acroform-data/
 description: Вы можете импортировать и экспортировать данные формы в XML-файл с помощью пространства имен Aspose.Pdf.Facades в Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -84,7 +84,7 @@ AcroForm — важный тип документа PDF. Вы можете не 
 
 ## Детали реализации
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 В данной статье мы попытались создать AcroForm, используя [пространство имен Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
 В этой статье мы попытались создать AcroForm с использованием [пространства имен Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).

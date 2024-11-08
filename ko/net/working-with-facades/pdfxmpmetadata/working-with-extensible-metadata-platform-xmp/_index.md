@@ -2,7 +2,7 @@
 title: Extensible Metadata Platform - XMP
 type: docs
 weight: 10
-url: ko/net/working-with-extensible-metadata-platform-xmp/
+url: /ko/net/working-with-extensible-metadata-platform-xmp/
 description: 이 섹션은 PdfXmpMetadata 클래스를 사용하여 확장 메타데이터 플랫폼 - XMP를 사용하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

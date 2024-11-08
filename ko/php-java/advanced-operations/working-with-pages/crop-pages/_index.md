@@ -3,7 +3,7 @@ title: PHP를 사용하여 PDF 페이지 자르기
 linktitle: 페이지 자르기
 type: docs
 weight: 80
-url: ko/php-java/crop-pages/
+url: /ko/php-java/crop-pages/
 description: Aspose.PDF for PHP via Java를 사용하여 페이지의 너비, 높이, 여백 상자, 자르기 상자 및 재단 상자와 같은 페이지 속성을 가져올 수 있습니다.
 lastmod: "2024-06-05"
 sitemap:

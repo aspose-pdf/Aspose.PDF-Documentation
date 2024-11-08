@@ -3,7 +3,7 @@ title: 새로운 것들
 linktitle: 새로운 것들
 type: docs
 weight: 10
-url: ko/nodejs-cpp/whatsnew/
+url: /ko/nodejs-cpp/whatsnew/
 description: 이 페이지에서는 최근 릴리스에서 소개된 Aspose.PDF for Node.js via C++의 가장 인기 있는 새로운 기능을 소개합니다.
 sitemap:
     changefreq: "monthly"

@@ -3,7 +3,7 @@ title: Excluir páginas de PDF programaticamente
 linktitle: Excluir páginas de PDF
 type: docs
 weight: 30
-url: pt/cpp/delete-pages/
+url: /pt/cpp/delete-pages/
 description: Você pode excluir páginas do seu arquivo PDF usando a biblioteca C++.
 lastmod: "2021-12-09"
 sitemap:

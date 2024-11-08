@@ -3,7 +3,7 @@ title: Python을 사용하여 PDF에 테이블 생성 또는 추가
 linktitle: 테이블 생성 또는 추가
 type: docs
 weight: 10
-url: ko/python-net/add-table-in-existing-pdf-document/
+url: /ko/python-net/add-table-in-existing-pdf-document/
 description: Aspose.PDF for Python via .NET은 PDF 테이블을 생성, 읽기 및 편집하는 데 사용되는 라이브러리입니다. 이 주제의 다른 고급 기능을 확인하세요.
 lastmod: "2023-02-17"
 sitemap:

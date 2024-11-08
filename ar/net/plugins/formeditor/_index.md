@@ -2,7 +2,7 @@
 title: محرر النماذج
 type: docs
 weight: 40
-url: ar/net/plugins/formeditor/
+url: /ar/net/plugins/formeditor/
 description: كيفية إضافة، تحديث، وإزالة حقول النماذج في ملفات PDF باستخدام إضافات Aspose.PDF
 lastmod: "2024-01-24"
 draft: false

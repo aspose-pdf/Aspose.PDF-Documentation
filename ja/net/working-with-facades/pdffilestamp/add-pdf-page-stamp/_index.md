@@ -2,7 +2,7 @@
 title: PDFページスタンプを追加
 type: docs
 weight: 10
-url: ja/net/add-pdf-page-stamp/
+url: /ja/net/add-pdf-page-stamp/
 description: このセクションでは、PdfFileStampクラスを使用してAspose.PDF Facadesを操作する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

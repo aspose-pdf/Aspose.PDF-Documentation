@@ -3,7 +3,7 @@ title: العمل مع بيانات التعريف لملف PDF
 linktitle: بيانات تعريف ملف PDF
 type: docs
 weight: 140
-url: ar/php-java/pdf-file-metadata/
+url: /ar/php-java/pdf-file-metadata/
 description: تشرح هذه القسم كيفية الحصول على معلومات ملف PDF، وكيفية الحصول على بيانات XMP من ملف PDF، وتعيين معلومات ملف PDF.
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Installer Aspose.PDF pour Node.js via C++
 linktitle: Installation
 type: docs
 weight: 40
-url: fr/nodejs-cpp/installation/
+url: /fr/nodejs-cpp/installation/
 description: Cette section montre une description du produit et des instructions pour installer Aspose.PDF pour Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

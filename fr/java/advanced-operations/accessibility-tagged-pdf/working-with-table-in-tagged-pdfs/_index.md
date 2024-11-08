@@ -3,7 +3,7 @@ title: Travailler avec des tableaux dans les PDF balisés
 linktitle: Travailler avec des tableaux dans les PDF balisés
 type: docs
 weight: 40
-url: fr/java/working-with-table-in-tagged-pdfs/
+url: /fr/java/working-with-table-in-tagged-pdfs/
 description: Cet article explique comment travailler avec des tableaux dans un document PDF balisé avec Aspose.PDF pour Java.
 lastmod: "2021-06-05"
 sitemap:

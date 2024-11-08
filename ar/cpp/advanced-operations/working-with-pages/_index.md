@@ -3,7 +3,7 @@ title: العمل مع صفحات PDF في C++
 linktitle: العمل مع الصفحات
 type: docs
 weight: 20
-url: ar/cpp/working-with-pages/
+url: /ar/cpp/working-with-pages/
 description: كيفية إضافة صفحات، إضافة رؤوس وتذييلات، إضافة علامات مائية يمكنك معرفتها في هذا القسم. يشرح لك Aspose.PDF for C++ جميع التفاصيل حول هذا الموضوع.
 lastmod: "2021-12-03"
 sitemap:
@@ -23,14 +23,14 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إضافة صفحات](/pdf/cpp/add-pages/) - إضافة صفحات في الموقع المطلوب أو إلى نهاية ملف PDF وحذف صفحة من مستندك.
-- [نقل الصفحات](/pdf/cpp/move-pages/) - نقل الصفحات من مستند إلى آخر.
-- [حذف الصفحات](/pdf/cpp/delete-pages/) - حذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
-- [تغيير حجم الصفحة](/pdf/cpp/change-page-size) - يمكنك تغيير حجم الصفحة في PDF باستخدام مقتطف كود باستخدام مكتبة Aspose.PDF.
-- [تدوير الصفحات](/pdf/cpp/rotate-pages/) - يمكنك تغيير اتجاه الصفحات في ملف PDF موجود.
-- [إضافة رؤوس وتذييلات](/pdf/cpp/add-headers-and-footers-of-pdf-file/) - إضافة نصوص أو صور في الرؤوس والتذييلات في ملف PDF الخاص بك.
-- [قص الصفحات](/pdf/cpp/crop-pages/) - يمكنك قص الصفحات في مستند PDF برمجياً مع خصائص صفحات مختلفة.
+- [إضافة صفحات](/pdf/ar/cpp/add-pages/) - إضافة صفحات في الموقع المطلوب أو إلى نهاية ملف PDF وحذف صفحة من مستندك.
+- [نقل الصفحات](/pdf/ar/cpp/move-pages/) - نقل الصفحات من مستند إلى آخر.
+- [حذف الصفحات](/pdf/ar/cpp/delete-pages/) - حذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
+- [تغيير حجم الصفحة](/pdf/ar/cpp/change-page-size) - يمكنك تغيير حجم الصفحة في PDF باستخدام مقتطف كود باستخدام مكتبة Aspose.PDF.
+- [تدوير الصفحات](/pdf/ar/cpp/rotate-pages/) - يمكنك تغيير اتجاه الصفحات في ملف PDF موجود.
+- [إضافة رؤوس وتذييلات](/pdf/ar/cpp/add-headers-and-footers-of-pdf-file/) - إضافة نصوص أو صور في الرؤوس والتذييلات في ملف PDF الخاص بك.
+- [قص الصفحات](/pdf/ar/cpp/crop-pages/) - يمكنك قص الصفحات في مستند PDF برمجياً مع خصائص صفحات مختلفة.
 
-- [إضافة علامات مائية](/pdf/cpp/add-watermarks/) - إضافة علامات مائية في ملف PDF الخاص بك باستخدام فئة Artifact.- [إضافة ترقيم الصفحات في ملف PDF](/pdf/cpp/add-page-number/) - ستساعدك فئة PageNumberStamp في إضافة رقم صفحة في ملف PDF الخاص بك.
-- [إضافة خلفيات](/pdf/cpp/add-backgrounds/) - يمكن استخدام صور الخلفية لإضافة علامة مائية.
-- [الختم](/pdf/cpp/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.
+- [إضافة علامات مائية](/pdf/ar/cpp/add-watermarks/) - إضافة علامات مائية في ملف PDF الخاص بك باستخدام فئة Artifact.- [إضافة ترقيم الصفحات في ملف PDF](/pdf/ar/cpp/add-page-number/) - ستساعدك فئة PageNumberStamp في إضافة رقم صفحة في ملف PDF الخاص بك.
+- [إضافة خلفيات](/pdf/ar/cpp/add-backgrounds/) - يمكن استخدام صور الخلفية لإضافة علامة مائية.
+- [الختم](/pdf/ar/cpp/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.

@@ -2,7 +2,7 @@
 title: PdfFileEditor Class
 type: docs
 weight: 10
-url: fr/net/pdffileeditor-class/
+url: /fr/net/pdffileeditor-class/
 description: Cette section explique comment travailler avec Aspose.PDF Facades en utilisant la classe PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -27,15 +27,15 @@ This section explores the capabilities of this class and explains the purpose of
 
 Cette section explore les capacités de cette classe et explique le but de ses méthodes.
 
-- [Concatenate PDF documents](/pdf/net/concatenate-pdf-documents/)
-- [Extract PDF pages](/pdf/net/extract-pdf-pages/)
-- [Insert PDF pages](/pdf/net/insert-pdf-pages/)
-- [Delete PDF pages](/pdf/net/delete-pdf-pages/)
+- [Concatenate PDF documents](/pdf/fr/net/concatenate-pdf-documents/)
+- [Extract PDF pages](/pdf/fr/net/extract-pdf-pages/)
+- [Insert PDF pages](/pdf/fr/net/insert-pdf-pages/)
+- [Delete PDF pages](/pdf/fr/net/delete-pdf-pages/)
 
-- [Concaténer des documents PDF](/pdf/net/concatenate-pdf-documents/)
-- [Extraire des pages PDF](/pdf/net/extract-pdf-pages/)
-- [Insérer des pages PDF](/pdf/net/insert-pdf-pages/)
-- [Supprimer des pages PDF](/pdf/net/delete-pdf-pages/)
+- [Concaténer des documents PDF](/pdf/fr/net/concatenate-pdf-documents/)
+- [Extraire des pages PDF](/pdf/fr/net/extract-pdf-pages/)
+- [Insérer des pages PDF](/pdf/fr/net/insert-pdf-pages/)
+- [Supprimer des pages PDF](/pdf/fr/net/delete-pdf-pages/)
 
 ## Using Page Brakes
 
@@ -45,9 +45,9 @@ Page Break is a special feature that allows to reflow of the document.
 
 Le saut de page est une fonctionnalité spéciale qui permet de réorganiser le document.
 
-- [Page Break in existing PDF](/pdf/net/page-break-in-existing-pdf/)
+- [Page Break in existing PDF](/pdf/fr/net/page-break-in-existing-pdf/)
 
-- [Saut de page dans un PDF existant](/pdf/net/page-break-in-existing-pdf/)
+- [Saut de page dans un PDF existant](/pdf/fr/net/page-break-in-existing-pdf/)
 
 ## PDF Imposition
 
@@ -57,11 +57,11 @@ Imposition is the process of arranging pages correctly prior to printing.
 
 L'imposition est le processus d'organisation correcte des pages avant l'impression. `PdfFileEditor` fournit deux méthodes à cet effet, c'est-à-dire `MakeBooklet` et `MakeNUp`. La méthode MakeBooklet aide à arranger les pages de sorte qu'il soit facile de les plier ou de les relier après impression, cependant, la méthode MakeNUp permet d'imprimer plusieurs pages sur une seule page du fichier PDF.
 
-- [Créer un livret PDF](/pdf/net/make-booklet-of-pdf/)
-- [Créer un NUp de fichiers PDF](/pdf/net/make-nup-of-pdf-files/)
+- [Créer un livret PDF](/pdf/fr/net/make-booklet-of-pdf/)
+- [Créer un NUp de fichiers PDF](/pdf/fr/net/make-nup-of-pdf-files/)
 
 ## Fractionnement
 
 La fonction de fractionnement vous permet de diviser un fichier PDF existant en différentes parties. Vous pouvez soit diviser la partie avant du fichier PDF, soit la partie arrière. Comme PdfFileEditor fournit une variété de méthodes pour les besoins de fractionnement, vous pouvez également diviser un fichier en pages individuelles ou en plusieurs ensembles de pages multiples.
 
-- [Diviser les pages PDF](/pdf/net/split-pdf-pages/)
+- [Diviser les pages PDF](/pdf/fr/net/split-pdf-pages/)

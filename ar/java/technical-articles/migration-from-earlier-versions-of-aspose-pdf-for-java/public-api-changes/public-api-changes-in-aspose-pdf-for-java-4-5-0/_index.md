@@ -2,7 +2,7 @@
 title: تغييرات واجهة برمجة التطبيقات العامة في Aspose.PDF لـ Java 4.5.0
 type: docs
 weight: 10
-url: ar/java/public-api-changes-in-aspose-pdf-for-java-4-5-0/
+url: /ar/java/public-api-changes-in-aspose-pdf-for-java-4-5-0/
 lastmod: "2022-01-27"
 ---
 

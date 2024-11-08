@@ -3,7 +3,7 @@ title: プログラムでPDFドキュメントを保存
 linktitle: PDFを保存
 type: docs
 weight: 30
-url: ja/python-net/save-pdf-document/
+url: /ja/python-net/save-pdf-document/
 description: Python Aspose.PDF for Python via .NETライブラリでPDFファイルを保存する方法を学びます。ファイルシステム、ストリーム、およびWebアプリケーションにPDFドキュメントを保存します。
 lastmod: "2022-12-22"
 sitemap:

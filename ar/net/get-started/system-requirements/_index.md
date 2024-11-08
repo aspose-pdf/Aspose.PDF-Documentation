@@ -3,7 +3,7 @@ title: متطلبات النظام
 linktitle: متطلبات النظام
 type: docs
 weight: 30
-url: ar/net/system-requirements/
+url: /ar/net/system-requirements/
 description: يسرد هذا القسم أنظمة التشغيل المدعومة التي يحتاجها المطور للعمل بنجاح مع Aspose.PDF لـ .NET.
 lastmod: "2023-05-12"
 sitemap:

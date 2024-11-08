@@ -2,7 +2,7 @@
 title: テンプレートの作成とエクスポート
 type: docs
 weight: 10
-url: ja/sharepoint/creating-and-exporting-template/
+url: /ja/sharepoint/creating-and-exporting-template/
 lastmod: "2020-12-16"
 description: SharePointでPDF SharePoint APIを使用してテンプレートを作成およびエクスポートできます。
 ---

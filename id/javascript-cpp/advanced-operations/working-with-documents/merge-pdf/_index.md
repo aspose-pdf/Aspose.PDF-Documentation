@@ -3,7 +3,7 @@ title: Cara Menggabungkan PDF menggunakan JavaScript melalui C++
 linktitle: Menggabungkan file PDF
 type: docs
 weight: 20
-url: id/javascript-cpp/merge-pdf/
+url: /id/javascript-cpp/merge-pdf/
 description: Halaman ini menjelaskan cara menggabungkan dokumen PDF menjadi satu file PDF dengan Aspose.PDF untuk JavaScript melalui C++
 lastmod: "2022-12-15"
 sitemap:

@@ -3,7 +3,7 @@ title: Converter PDF para Excel
 linktitle: Converter PDF para Excel 
 type: docs
 weight: 90
-url: pt/androidjava/convert-pdf-to-excel/
+url: /pt/androidjava/convert-pdf-to-excel/
 lastmod: "2021-06-05"
 description: Aspose.PDF para Android via Java permite converter PDF para o formato Excel. Durante isso, as páginas individuais do arquivo PDF são convertidas em planilhas do Excel.
 sitemap:

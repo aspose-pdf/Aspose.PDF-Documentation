@@ -3,7 +3,7 @@ title: Mengonversi PDF ke Dokumen Microsoft Word dalam Python
 linktitle: Mengonversi PDF ke Word 2003/2019
 type: docs
 weight: 10
-url: id/python-java/convert-pdf-to-word/
+url: /id/python-java/convert-pdf-to-word/
 lastmod: "2023-04-06"
 description: Pelajari cara menulis kode Python untuk konversi format PDF ke Microsoft Word dengan Aspose.PDF untuk Python via .NET. dan tingkatkan konversi PDF ke DOC(DOCX).
 sitemap:
@@ -95,7 +95,7 @@ document.save(output_pdf, save_options)
 **Coba konversi PDF ke DOC online**
 
 Aspose.PDF untuk Python menyajikan aplikasi gratis online ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
-[![Convert PDF to DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
+[![Convert PDF to DOC](/pdf/id/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
 
 ## Mengkonversi PDF ke DOCX
 
@@ -143,7 +143,7 @@ Kelas [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/do
 
 Aspose.PDF untuk Python menyajikan aplikasi gratis online ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 
-[![Aplikasi Gratis Aspose.PDF Konversi PDF ke Word](/pdf/java/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aplikasi Gratis Aspose.PDF Konversi PDF ke Word](/pdf/id/java/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

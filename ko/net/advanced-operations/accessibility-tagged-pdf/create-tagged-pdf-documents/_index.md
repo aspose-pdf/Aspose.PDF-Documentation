@@ -3,7 +3,7 @@ title: C#를 사용하여 태그가 지정된 PDF 생성
 linktitle: 태그가 지정된 PDF 생성
 type: docs
 weight: 10
-url: ko/net/create-tagged-pdf/
+url: /ko/net/create-tagged-pdf/
 description: 이 문서는 Aspose.PDF for .NET을 사용하여 프로그래밍 방식으로 태그가 지정된 PDF 문서의 구조 요소를 생성하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 태그가 지정된 PDF를 생성한다는 것은 문서에 특정 요소를 추가하거나 생성하여 문서가 PDF/UA 요구 사항에 따라 검증될 수 있도록 하는 것을 의미합니다. 이러한 요소들은 종종 구조 요소라고 불립니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 태그가 지정된 PDF 생성 (간단한 시나리오)
 

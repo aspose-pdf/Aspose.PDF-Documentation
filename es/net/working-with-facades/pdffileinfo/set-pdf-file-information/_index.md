@@ -2,7 +2,7 @@
 title: Establecer Información del Archivo PDF
 type: docs
 weight: 40
-url: es/net/set-pdf-file-information/
+url: /es/net/set-pdf-file-information/
 description: Esta sección explica cómo establecer la Información del Archivo PDF con Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

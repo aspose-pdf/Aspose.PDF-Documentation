@@ -3,7 +3,7 @@ title: רשימת שגיאות במבחן התאימות של PDF-UA
 linktitle: רשימת שגיאות במבחן התאימות של PDF-UA
 type: docs
 weight: 50
-url: ar/net/pdf-ua-compliance-test-errors-list/
+url: /ar/net/pdf-ua-compliance-test-errors-list/
 description: מאמר זה מציג רשימה של השגיאות שעלולות להתרחש במהלך בדיקת התאימות ל-PDF/UA באמצעות ממשק ה-API של Aspose.PDF ו-C# או VB.
 lastmod: "2022-02-17"
 sitemap:

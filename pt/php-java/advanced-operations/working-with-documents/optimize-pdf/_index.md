@@ -3,7 +3,7 @@ title: Otimizar, Comprimir ou Reduzir Tamanho de PDF em PHP
 linktitle: Otimizar Documento PDF
 type: docs
 weight: 40
-url: pt/php-java/optimize-pdf/
+url: /pt/php-java/optimize-pdf/
 description: Otimizar arquivo PDF, reduzir todas as imagens, diminuir tamanho do PDF, Desincorporar fontes, Remover objetos não utilizados usando PHP.
 lastmod: "2024-06-05"
 ---

@@ -5,7 +5,7 @@ type: docs
 
 weight: 10
 
-url: ar/jasperreports/system-requirements/
+url: /ar/jasperreports/system-requirements/
 
 lastmod: "2021-06-05"
 

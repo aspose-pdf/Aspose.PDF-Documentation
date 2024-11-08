@@ -3,7 +3,7 @@ title: Aspose.PDF를 사용하여 Python으로 스탬핑하기
 linktitle: 스탬핑
 type: docs
 weight: 120
-url: ko/python-net/stamping/
+url: /ko/python-net/stamping/
 description: 이 섹션에서는 Python을 통해 PDF 페이지에 이미지 스탬프와 텍스트 스탬프를 추가하는 방법을 설명합니다.
 lastmod: "2023-04-17"
 sitemap:
@@ -82,5 +82,5 @@ PDF 파일의 스탬프는 PDF 파일이 다른 사람에 의해 사용되는 �
 
 Python을 사용하여 스탬프를 추가하는 방법을 배우려면 다음 섹션을 확인하십시오:
 
-- [PDF 페이지에 이미지 스탬프 추가하기](/pdf/python-net/image-stamps-in-pdf-page/) - 이미지 스탬프 추가, 이미지 품질 제어, PDF 파일의 배경으로 이미지 스탬프.
-- [PDF 파일에 텍스트 스탬프 추가하기](/pdf/python-net/text-stamps-in-the-pdf-file/) - 텍스트 스탬프 추가, TextStamp 객체의 정렬 정의, PDF 파일에 스탬프로서의 윤곽선 텍스트 채우기.
+- [PDF 페이지에 이미지 스탬프 추가하기](/pdf/ko/python-net/image-stamps-in-pdf-page/) - 이미지 스탬프 추가, 이미지 품질 제어, PDF 파일의 배경으로 이미지 스탬프.
+- [PDF 파일에 텍스트 스탬프 추가하기](/pdf/ko/python-net/text-stamps-in-the-pdf-file/) - 텍스트 스탬프 추가, TextStamp 객체의 정렬 정의, PDF 파일에 스탬프로서의 윤곽선 텍스트 채우기.

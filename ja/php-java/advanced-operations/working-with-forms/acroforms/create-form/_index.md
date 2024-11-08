@@ -3,7 +3,7 @@ title: AcroFormsを作成 - PHPで記入可能なPDFを作成
 linktitle: AcroFormsを作成
 type: docs
 weight: 10
-url: ja/php-java/create-forms/
+url: /ja/php-java/create-forms/
 description: このセクションでは、Aspose.PDF for PHP via Javaを使用してPDFドキュメントにAcroFormsをゼロから作成する方法を説明します。
 lastmod: "2024-06-05"
 sitemap:

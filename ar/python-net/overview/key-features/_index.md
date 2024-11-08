@@ -3,7 +3,7 @@ title: الميزات الرئيسية لـ Aspose.PDF لـ Python
 linktitle: الميزات الرئيسية
 type: docs
 weight: 20
-url: ar/python-net/key-features/
+url: /ar/python-net/key-features/
 description: يوضح Aspose.PDF لـ Python عبر .NET ميزاته العامة. يوضح إصدارات PDF المدعومة، وجميع التعديلات التي يمكننا القيام بها باستخدام PDF.
 lastmod: "2022-12-21"
 sitemap:

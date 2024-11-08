@@ -3,7 +3,7 @@ title: Memutar Halaman PDF Menggunakan Python
 linktitle: Memutar Halaman PDF
 type: docs
 weight: 110
-url: id/python-net/rotate-pages/
+url: /id/python-net/rotate-pages/
 description: Topik ini menjelaskan bagaimana memutar orientasi halaman dalam file PDF yang ada secara programatis dengan Python.
 lastmod: "2023-04-17"
 sitemap:

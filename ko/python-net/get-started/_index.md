@@ -3,7 +3,7 @@ title: 시작하기
 linktitle: 시작하기
 type: docs
 weight: 30
-url: ko/python-net/get-started/
+url: /ko/python-net/get-started/
 description: 이 섹션에서는 .NET을 통해 Python에서 Aspose.PDF의 기본 작업 원칙을 설명합니다. Python 라이브러리는 다양한 기능을 지원합니다.
 is_node: true
 lastmod: "2022-12-20"   
@@ -38,15 +38,15 @@ PDF는 1990년대 Adobe에 의해 두 가지 목표를 달성하기 위해 만�
 
 ## 변환 기능
 
-- [PDF를 Word, Excel 및 PowerPoint로 변환](/pdf/python-net/convert-pdf-to-word/).
-- [PDF를 이미지 형식으로 변환](/pdf/python-net/convert-pdf-to-images-format/).
-- [PDF 파일을 HTML 형식으로 변환 및 그 반대](/pdf//python-net/convert-pdf-to-html/).
-- [PDF를 EPUB, 텍스트, XPS 등으로 변환](/pdf/python-net/convert-pdf-to-other-files/).
+- [PDF를 Word, Excel 및 PowerPoint로 변환](/pdf/ko/python-net/convert-pdf-to-word/).
+- [PDF를 이미지 형식으로 변환](/pdf/ko/python-net/convert-pdf-to-images-format/).
+- [PDF 파일을 HTML 형식으로 변환 및 그 반대](/pdf/ko//python-net/convert-pdf-to-html/).
+- [PDF를 EPUB, 텍스트, XPS 등으로 변환](/pdf/ko/python-net/convert-pdf-to-other-files/).
 - EPUB, Markdown, 텍스트, XPS, PostScript, XML, LaTex를 PDF로 변환
 
 
 ### 자세히 알아보기:
 
 
-- ["안녕하세요, 세상" 파이썬 예제](/pdf/python-net/hello-world-example/)
- - [복잡한 PDF](/pdf/python-net/complex-pdf-example/)
+- ["안녕하세요, 세상" 파이썬 예제](/pdf/ko/python-net/hello-world-example/)
+ - [복잡한 PDF](/pdf/ko/python-net/complex-pdf-example/)

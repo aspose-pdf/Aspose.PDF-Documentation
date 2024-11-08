@@ -3,7 +3,7 @@ title: Requisitos del Sistema de Aspose.PDF para JavaScript
 linktitle: Requisitos del Sistema
 type: docs
 weight: 30
-url: es/javascript-cpp/system-requirements/
+url: /es/javascript-cpp/system-requirements/
 description: Esta sección enumera los sistemas operativos compatibles que un desarrollador necesita para trabajar con éxito con Aspose.PDF para JavaScript a través de C++.
 lastmod: "2022-12-13"
 sitemap:

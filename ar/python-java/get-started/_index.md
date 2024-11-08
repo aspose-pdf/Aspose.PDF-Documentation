@@ -3,7 +3,7 @@ title: ابدأ
 linktitle: ابدأ
 type: docs
 weight: 30
-url: ar/python-java/get-started/
+url: /ar/python-java/get-started/
 description: هذه الصفحة هي نظرة عامة حول كيفية استخدام Aspose.PDF لـ Python عبر Java لإنشاء وتحرير مستند PDF
 lastmod: "2024-06-05"
 sitemap:
@@ -44,7 +44,7 @@ Aspose.PDF for Python عبر Java سريع، خفيف الوزن وسهل الا
 
 ### تعلم المزيد عن
 
-- [أساسيات DOM API](/pdf/python-java/basics-of-dom-api/)
-- ["مرحبًا، العالم" مثال جافا](/pdf/python-java/hello-world-example/)
-- [PDF معقد](/pdf/python-java/complex-pdf-example/)
-- [كيفية تشغيل أمثلة أخرى](/pdf/python-java/how-to-run-other-examples/)
+- [أساسيات DOM API](/pdf/ar/python-java/basics-of-dom-api/)
+- ["مرحبًا، العالم" مثال جافا](/pdf/ar/python-java/hello-world-example/)
+- [PDF معقد](/pdf/ar/python-java/complex-pdf-example/)
+- [كيفية تشغيل أمثلة أخرى](/pdf/ar/python-java/how-to-run-other-examples/)

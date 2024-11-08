@@ -3,7 +3,7 @@ title: עבודה עם טבלה ב-PDF מתויגים
 linktitle: עבודה עם טבלה ב-PDF מתויגים
 type: docs
 weight: 40
-url: ar/net/working-with-table-in-tagged-pdfs/
+url: /ar/net/working-with-table-in-tagged-pdfs/
 description: מאמר זה מסביר איך לעבוד עם טבלה במסמך PDF מתויג עם Aspose.PDF עבור .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 Aspose.PDF עבור .NET מאפשרת יצירת טבלה במסמכי PDF מתויגים.
 Aspose.PDF for .NET מאפשר יצירת טבלה במסמכי PDF מתוייגים.
 
-הקטע קוד הבא עובד גם עם ספריית [Aspose.PDF.Drawing](/pdf/net/drawing/).
+הקטע קוד הבא עובד גם עם ספריית [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 הקטע קוד הבא מדגים כיצד ליצור טבלה במסמך PDF מתוייג:
 

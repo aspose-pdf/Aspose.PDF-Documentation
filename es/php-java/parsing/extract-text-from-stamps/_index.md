@@ -2,7 +2,7 @@
 title: Extraer Texto De Estampillas
 type: docs
 weight: 60
-url: es/php-java/extract-text-from-stamps/
+url: /es/php-java/extract-text-from-stamps/
 ---
 
 ## Extraer Texto de Anotaciones de Estampillas

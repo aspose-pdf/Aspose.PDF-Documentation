@@ -2,7 +2,7 @@
 title: Create Document
 type: docs
 weight: 10
-url: id/java/create-pdf-document/
+url: /id/java/create-pdf-document/
 description: Aspose.PDF untuk Java membantu Anda membuat dokumen PDF dan file PDF yang dapat dicari dalam beberapa langkah mudah.
 lastmod: "2021-06-05"
 ---

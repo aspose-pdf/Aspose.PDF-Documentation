@@ -3,7 +3,7 @@ title: C#を使用してPDFに透かしを追加する
 linktitle: 透かしを追加
 type: docs
 weight: 90
-url: ja/net/add-watermarks/
+url: /ja/net/add-watermarks/
 description: この記事は、C#をプログラムで使用してPDFで透かしを取得し、アーティファクトの操作の特徴について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 
 **Aspose.PDF for .NET** は、Artifactsを使用してPDFドキュメントにウォーターマークを追加することができます。この記事をチェックして、タスクを解決してください。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
 Adobe Acrobatで作成されたウォーターマークはアーティファクトと呼ばれます（PDF仕様の14.8.2.2 実際の内容とアーティファクトに記載）。アーティファクトを扱うために、Aspose.PDFには [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) クラスと [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection) クラスがあります。
 

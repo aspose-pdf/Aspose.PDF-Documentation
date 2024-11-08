@@ -2,7 +2,7 @@
 title: Travailler avec les En-têtes dans PDF
 type: docs
 weight: 40
-url: fr/python-net/working-with-headings/
+url: /fr/python-net/working-with-headings/
 description: Créez une numérotation dans l'en-tête de votre document PDF avec Python. Aspose.PDF pour Python via .NET offre différents types de styles de numérotation.
 lastmod: "2023-04-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 Les titres sont les parties importantes de tout document. Les écrivains essaient toujours de rendre les titres plus visibles et significatifs pour leurs lecteurs. S'il y a plus d'un titre dans un document, un écrivain a plusieurs options pour organiser ces titres. L'une des approches les plus courantes pour organiser les titres est d'écrire les titres dans le style de numérotation.
 
-[Aspose.PDF pour Python via .NET](/pdf/python-net/) offre de nombreux styles de numérotation prédéfinis. Ces styles de numérotation prédéfinis sont stockés dans une énumération, [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). Les valeurs prédéfinies de l'énumération NumberingStyle et leurs descriptions sont données ci-dessous :
+[Aspose.PDF pour Python via .NET](/pdf/fr/python-net/) offre de nombreux styles de numérotation prédéfinis. Ces styles de numérotation prédéfinis sont stockés dans une énumération, [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). Les valeurs prédéfinies de l'énumération NumberingStyle et leurs descriptions sont données ci-dessous :
 
 |**Types de titres**|**Description**|
 | :- | :- |

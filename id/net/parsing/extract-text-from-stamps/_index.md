@@ -2,7 +2,7 @@
 title: Ekstrak Teks Dari Stempel menggunakan C#
 type: docs
 weight: 60
-url: id/net/extract-text-from-stamps/
+url: /id/net/extract-text-from-stamps/
 description: Pelajari cara menggunakan fitur khusus dari Aspose.PDF untuk .NET - ekstraksi teks dari anotasi stempel
 lastmod: "2021-01-30"
 sitemap:
@@ -19,7 +19,7 @@ Aspose.PDF untuk NET memungkinkan Anda untuk mengekstrak teks dari anotasi stemp
 1. Definisikan objek baru dari kelas `TextAbsorber`
 1. Gunakan metode kunjungan TextAbsorber untuk mendapatkan Teks
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 public static void ExtractText()

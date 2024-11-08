@@ -2,7 +2,7 @@
 title: Menambahkan Tindakan Penanda Buku ke File PDF yang Ada
 type: docs
 weight: 20
-url: id/java/adding-bookmark-actions/
+url: /id/java/adding-bookmark-actions/
 description: Bagian ini menjelaskan cara menambahkan tindakan Penanda Buku ke file PDF yang ada dengan Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

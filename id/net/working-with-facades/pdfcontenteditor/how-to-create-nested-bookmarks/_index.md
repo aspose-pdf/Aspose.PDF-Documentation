@@ -2,7 +2,7 @@
 title: Menambahkan Bookmark ke file PDF
 type: docs
 weight: 20
-url: id/net/how-to-create-nested-bookmarks/
+url: /id/net/how-to-create-nested-bookmarks/
 description: Bagian ini menjelaskan cara membuat Nested Bookmarks dengan Kelas PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

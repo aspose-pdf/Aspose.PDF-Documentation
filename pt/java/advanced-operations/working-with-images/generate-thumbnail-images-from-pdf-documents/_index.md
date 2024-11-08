@@ -3,7 +3,7 @@ title: Gerar Imagens em Miniatura de Documentos PDF
 linktitle: Gerar Imagens em Miniatura
 type: docs
 weight: 100
-url: pt/java/generate-thumbnail-images-from-pdf-documents/
+url: /pt/java/generate-thumbnail-images-from-pdf-documents/
 description: Esta seção descreve como gerar imagens em miniatura de documentos PDF usando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 ---

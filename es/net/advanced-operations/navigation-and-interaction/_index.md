@@ -3,7 +3,7 @@ title: Navegación e Interacción en PDF
 linktitle: Navegación e interacción
 type: docs
 weight: 90
-url: es/net/navigation-and-interaction/
+url: /es/net/navigation-and-interaction/
 description: Esta sección describe las características del trabajo con enlaces, acciones y marcadores.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,9 +75,9 @@ sitemap:
     "description": "Esta sección describe las características del trabajo con enlaces, acciones y marcadores."
 }
 </script>
-- [Enlaces](/pdf/net/links/) - puedes crear, actualizar y extraer enlaces fácilmente con C#.
-- [Acciones](/pdf/net/actions/) - es posible agregar y obtener, crear hipervínculos a archivos PDF. Además, en este artículo aprenderás cómo eliminar la Acción de Apertura de Documento de un archivo PDF y cómo especificar la Página PDF al visualizar el Documento.
-- [Marcadores](/pdf/net/bookmarks/)- las publicaciones grandes generalmente incluyen un marco de marcadores que se pueden visualizar y seleccionar fácilmente en el Panel de Marcadores, permitiéndote hacer clic en un marcador para saltar a la página o capítulo que representa. El Panel de Marcadores es un elemento consciente del contenido y es visible en la barra lateral solo si el documento PDF abierto contiene una estructura de marcadores.
+- [Enlaces](/pdf/es/net/links/) - puedes crear, actualizar y extraer enlaces fácilmente con C#.
+- [Acciones](/pdf/es/net/actions/) - es posible agregar y obtener, crear hipervínculos a archivos PDF. Además, en este artículo aprenderás cómo eliminar la Acción de Apertura de Documento de un archivo PDF y cómo especificar la Página PDF al visualizar el Documento.
+- [Marcadores](/pdf/es/net/bookmarks/)- las publicaciones grandes generalmente incluyen un marco de marcadores que se pueden visualizar y seleccionar fácilmente en el Panel de Marcadores, permitiéndote hacer clic en un marcador para saltar a la página o capítulo que representa. El Panel de Marcadores es un elemento consciente del contenido y es visible en la barra lateral solo si el documento PDF abierto contiene una estructura de marcadores.
 
 <script type="application/ld+json">
 {

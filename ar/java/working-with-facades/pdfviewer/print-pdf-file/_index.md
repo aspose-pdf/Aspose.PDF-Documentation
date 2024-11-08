@@ -2,7 +2,7 @@
 title: العمل مع طباعة PDF
 type: docs
 weight: 10
-url: ar/java/print-pdf-file/
+url: /ar/java/print-pdf-file/
 description: يشرح هذا القسم كيفية طباعة ملف PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfViewer.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: حذف صفحات PDF
 type: docs
 weight: 70
-url: ar/net/delete-pdf-pages/
+url: /ar/net/delete-pdf-pages/
 description: يوضح هذا القسم كيفية حذف صفحات PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: تدوير النص داخل PDF باستخدام Python
 linktitle: تدوير النص داخل PDF
 type: docs
 weight: 50
-url: ar/python-net/rotate-text-inside-pdf/
+url: /ar/python-net/rotate-text-inside-pdf/
 description: تعرف على طرق مختلفة لتدوير النص في PDF. يتيح لك Aspose.PDF تدوير النص إلى أي زاوية، تدوير جزء من النص أو فقرة كاملة.
 lastmod: "2024-02-17"
 sitemap:

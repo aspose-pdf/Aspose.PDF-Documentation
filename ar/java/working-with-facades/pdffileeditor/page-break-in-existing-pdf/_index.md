@@ -2,7 +2,7 @@
 title: فاصل الصفحة في PDF موجود
 type: docs
 weight: 30
-url: ar/java/page-break-in-existing-pdf/
+url: /ar/java/page-break-in-existing-pdf/
 description: يشرح هذا القسم كيفية إضافة فاصل صفحات في ملف PDF موجود باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: Import and Export Annotations to XFDF 
 type: docs
 weight: 20
-url: ru/net/import-export-annotations/
+url: /ru/net/import-export-annotations/
 description: Этот раздел объясняет, как импортировать и экспортировать аннотации из PDF файла в XFDF с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -14,9 +14,9 @@ XFDF означает XML Forms Data Format. Это формат файла на
 
 ## Импорт и экспорт аннотаций в XFDF
 
-[Aspose.PDF for .NET](/pdf/net/) — это компонент, богатый функциями, когда дело касается редактирования PDF-документов. As we know XFDF is an important aspect of PDF forms manipulation, [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) has considered this very well, and have provided methods to import and export annotations data to XFDF files.
+[Aspose.PDF for .NET](/pdf/ru/net/) — это компонент, богатый функциями, когда дело касается редактирования PDF-документов. As we know XFDF is an important aspect of PDF forms manipulation, [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/ru/net/) has considered this very well, and have provided methods to import and export annotations data to XFDF files.
 
-Как мы знаем, XFDF является важным аспектом манипуляции с формами PDF, [пространство имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF для .NET](/pdf/net/) хорошо это учло и предоставило методы для импорта и экспорта данных аннотаций в файлы XFDF.
+Как мы знаем, XFDF является важным аспектом манипуляции с формами PDF, [пространство имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF для .NET](/pdf/ru/net/) хорошо это учло и предоставило методы для импорта и экспорта данных аннотаций в файлы XFDF.
 
 [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) class contains two methods to work with import and export of annotations to XFDF file.
 

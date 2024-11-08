@@ -3,7 +3,7 @@ title: Trabajando con Adjuntos en PDF
 linktitle: Trabajando con Adjuntos
 type: docs
 weight: 130
-url: es/net/attachments/
+url: /es/net/attachments/
 description: Utilice la API de PDF C# para acceder, agregar y eliminar adjuntos en archivos PDF utilizando C# desde dentro de sus aplicaciones. Guía completa con ejemplos de código C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,10 +83,10 @@ En esta sección, explicaremos cómo trabajar con archivos adjuntos en PDF usand
 Un archivo adjunto es un archivo adicional que está conectado a un documento principal, puede ser una variedad de tipos de archivos, como pdf, word, imagen u otros archivos.
 Aprenderá cómo agregar archivos adjuntos a pdf, obtener la información de un archivo adjunto y guardarlo en archivo, eliminar el archivo adjunto del PDF programáticamente con C#.
 
-- [Agregar archivo adjunto a un documento PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [Extraer y guardar un archivo adjunto](/pdf/net/extract-and-save-an-attachment/)
-- [Eliminar archivo adjunto de un PDF existente](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Portafolio](/pdf/net/portfolio/)
+- [Agregar archivo adjunto a un documento PDF](/pdf/es/net/add-attachment-to-pdf-document/)
+- [Extraer y guardar un archivo adjunto](/pdf/es/net/extract-and-save-an-attachment/)
+- [Eliminar archivo adjunto de un PDF existente](/pdf/es/net/removing-attachment-from-an-existing-pdf/)
+- [Portafolio](/pdf/es/net/portfolio/)
 
 <script type="application/ld+json">
 {

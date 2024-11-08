@@ -2,7 +2,7 @@
 title: PDFでの見出しの操作
 type: docs
 weight: 40
-url: ja/python-net/working-with-headings/
+url: /ja/python-net/working-with-headings/
 description: Pythonを使用してPDFドキュメントの見出しに番号を作成します。Aspose.PDF for Python via .NETは、さまざまな種類の番号スタイルを提供します。
 lastmod: "2023-04-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 見出しはドキュメントの重要な部分です。著者は常に見出しを読者にとってより目立ち、意味のあるものにしようとします。ドキュメントに複数の見出しがある場合、著者はこれらの見出しを整理するためにいくつかのオプションがあります。見出しを整理する最も一般的な方法の一つは、見出しをナンバリングスタイルで記述することです。
 
-[Aspose.PDF for Python via .NET](/pdf/python-net/) は多くの事前定義されたナンバリングスタイルを提供します。これらの事前定義されたナンバリングスタイルは、列挙型 [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/) に格納されています。NumberingStyle 列挙型の事前定義された値とその説明は以下の通りです:
+[Aspose.PDF for Python via .NET](/pdf/ja/python-net/) は多くの事前定義されたナンバリングスタイルを提供します。これらの事前定義されたナンバリングスタイルは、列挙型 [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/) に格納されています。NumberingStyle 列挙型の事前定義された値とその説明は以下の通りです:
 
 |**見出しの種類**|**説明**|
 | :- | :- |

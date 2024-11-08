@@ -2,7 +2,7 @@
 title: Panah Garis
 type: docs
 weight: 20
-url: id/reportingservices/line-arrows/
+url: /id/reportingservices/line-arrows/
 lastmod: "2021-06-05"
 ---
 

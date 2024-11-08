@@ -3,7 +3,7 @@ title: Extrayendo texto sin formato de un archivo PDF
 linktitle: Extraer texto de PDF
 type: docs
 weight: 10
-url: es/java/extract-text-from-all-pdf/
+url: /es/java/extract-text-from-all-pdf/
 description: Este artículo describe varias formas de extraer texto de documentos PDF usando Aspose.PDF para Java. De páginas enteras, de una parte específica, basado en columnas, etc.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Convertir archivo PDF
 type: docs
 weight: 20
-url: es/java/convert-pdf-file/
+url: /es/java/convert-pdf-file/
 description: Esta sección explica cómo convertir un archivo PDF con Aspose.PDF Facades usando la clase PdfConverter.
 lastmod: "2021-06-05"
 draft: false

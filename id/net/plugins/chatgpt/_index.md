@@ -2,7 +2,7 @@
 title: ChatGPT
 type: docs
 weight: 30
-url: id/net/plugins/chatGPT/
+url: /id/net/plugins/chatGPT/
 description: Cara menghasilkan respons ChatGPT yang didukung AI dan menyimpannya dalam PDF
 lastmod: "2024-02-24"
 ---

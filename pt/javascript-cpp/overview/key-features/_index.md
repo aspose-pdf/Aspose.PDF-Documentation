@@ -3,7 +3,7 @@ title: Características Principais do Aspose.PDF para JavaScript
 linktitle: Características Principais
 type: docs
 weight: 20
-url: pt/javascript-cpp/key-features/
+url: /pt/javascript-cpp/key-features/
 description: Aspose.PDF para JavaScript via C++ demonstra suas características gerais. Esta página descreve as versões de PDF suportadas e todas as manipulações que podemos fazer com texto, imagens, páginas, etc.
 lastmod: "2022-12-13"
 sitemap:

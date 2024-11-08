@@ -8,7 +8,7 @@ type: docs
 
 weight: 50
 
-url: es/sharepoint/evaluar-aspose-pdf/
+url: /es/sharepoint/evaluar-aspose-pdf/
 
 lastmod: "2020-12-16"
 

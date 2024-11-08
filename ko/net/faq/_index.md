@@ -3,7 +3,7 @@ title: FAQ
 linktitle: FAQ
 type: docs
 weight: 140
-url: ko/net/faq/
+url: /ko/net/faq/
 description: 여기에서 Aspose.PDF for .NET 라이브러리에 대한 자주 묻는 질문에 대한 답변을 찾을 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

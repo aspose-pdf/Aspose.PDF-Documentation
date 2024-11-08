@@ -2,7 +2,7 @@
 title: متطلبات النظام
 type: docs
 weight: 10
-url: ar/sharepoint/system-requirements/
+url: /ar/sharepoint/system-requirements/
 lastmod: "2020-12-16"
 description: يحتوي Aspose.PDF لـ SharePoint على متطلبات للخادم والعميل، بالإضافة إلى ضرورة وجود جهاز كمبيوتر يعمل بخادم Microsoft SharePoint.
 ---

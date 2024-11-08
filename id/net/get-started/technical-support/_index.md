@@ -3,7 +3,7 @@ title: Dukungan Aspose.PDF untuk .NET
 linktitle: Dukungan Teknis
 type: docs
 weight: 100
-url: id/net/technical-support/
+url: /id/net/technical-support/
 description: Halaman ini memberikan rekomendasi untuk cepat dan berkualitas dalam menyelesaikan tugas Anda menggunakan Aspose.PDF untuk .NET.
 lastmod: "2021-06-05"
 sitemap:

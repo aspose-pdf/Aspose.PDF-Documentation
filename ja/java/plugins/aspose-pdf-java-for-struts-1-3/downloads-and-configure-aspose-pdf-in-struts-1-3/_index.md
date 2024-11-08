@@ -2,7 +2,7 @@
 title: ダウンロードとAspose.PdfのStruts 1.3への設定
 type: docs
 weight: 10
-url: ja/java/downloads-and-configure-aspose-pdf-in-struts-1-3/
+url: /ja/java/downloads-and-configure-aspose-pdf-in-struts-1-3/
 lastmod: "2021-06-05"
 ---
 

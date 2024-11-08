@@ -3,7 +3,7 @@ title: Tambahkan Stempel Gambar di PDF secara Programatik
 linktitle: Stempel Gambar di File PDF
 type: docs
 weight: 10
-url: id/cpp/image-stamps-in-pdf-page/
+url: /id/cpp/image-stamps-in-pdf-page/
 description: Tambahkan Stempel Gambar dalam dokumen PDF Anda menggunakan kelas ImageStamp dengan pustaka Aspose.PDF untuk C++.
 lastmod: "2021-12-08"
 sitemap:

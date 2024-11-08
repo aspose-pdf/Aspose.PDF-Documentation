@@ -3,7 +3,7 @@ title: 파이썬을 사용한 PDF 하이라이트 주석
 linktitle: 하이라이트 주석
 type: docs
 weight: 20
-url: ko/python-net/highlights-annotation/
+url: /ko/python-net/highlights-annotation/
 description: 마크업 주석은 문서의 텍스트에서 하이라이트, 밑줄, 취소선 또는 지그재그 밑줄로 표시됩니다.
 lastmod: "2023-02-17"
 sitemap:

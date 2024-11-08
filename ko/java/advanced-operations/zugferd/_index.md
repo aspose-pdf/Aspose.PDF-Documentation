@@ -3,7 +3,7 @@ title: Working with ZUGFeRD
 linktitle: Working with ZUGFeRD
 type: docs
 weight: 90
-url: ko/java/working-with-zugferd/
+url: /ko/java/working-with-zugferd/
 description: Aspose.PDF for Java를 사용하여 ZUGFeRD 호환 PDF 청구서를 만드는 방법을 배우세요.
 lastmod: "2024-01-17"
 sitemap:
@@ -31,13 +31,13 @@ It also meets the legal requirements for long-term archiving and tax compliance.
 ZUGFeRD provides users with many benefits and cost savings, such as quicker processing, fewer errors, better cash flow, and less environmental impact.  
 ZUGFeRD는 더 빠른 처리, 오류 감소, 더 나은 현금 흐름 및 환경 영향 감소와 같은 많은 이점과 비용 절감을 사용자에게 제공합니다.
 
-* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Java](/pdf/java/attach-zugferd/)  
-* [Java에서 PDF/3-A 규격 PDF 생성 및 ZUGFeRD 송장 첨부](/pdf/java/attach-zugferd/)
+* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Java](/pdf/ko/java/attach-zugferd/)  
+* [Java에서 PDF/3-A 규격 PDF 생성 및 ZUGFeRD 송장 첨부](/pdf/ko/java/attach-zugferd/)
 
 See also:  
 참고:
 
-* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in .NET](/pdf/net/attach-zugferd/)  
-* [.NET에서 PDF/3-A 규격 PDF 생성 및 ZUGFeRD 송장 첨부](/pdf/net/attach-zugferd/)
-* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Python](/pdf/python-net/attach-zugferd/)  
-* [Python에서 PDF/3-A 규격 PDF 생성 및 ZUGFeRD 송장 첨부](/pdf/python-net/attach-zugferd/)
+* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in .NET](/pdf/ko/net/attach-zugferd/)  
+* [.NET에서 PDF/3-A 규격 PDF 생성 및 ZUGFeRD 송장 첨부](/pdf/ko/net/attach-zugferd/)
+* [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Python](/pdf/ko/python-net/attach-zugferd/)  
+* [Python에서 PDF/3-A 규격 PDF 생성 및 ZUGFeRD 송장 첨부](/pdf/ko/python-net/attach-zugferd/)

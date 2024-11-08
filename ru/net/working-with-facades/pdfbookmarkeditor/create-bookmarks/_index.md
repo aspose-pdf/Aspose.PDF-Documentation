@@ -2,7 +2,7 @@
 title: Создание закладок
 type: docs
 weight: 10
-url: ru/net/create-bookmarks/
+url: /ru/net/create-bookmarks/
 description: Этот раздел объясняет, как создать закладки в вашем PDF файле с использованием Aspose.PDF Facades и класса PdfBookmarkEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -50,4 +50,4 @@ draft: false
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-AddChildBookmark-AddChildBookmark.cs" >}}
 ## See also
 
-Попробуйте сравнить и найти способ работы с закладками, который подходит вам. Давайте изучим раздел [Работа с закладками в PDF](/pdf/net/bookmarks/).
+Попробуйте сравнить и найти способ работы с закладками, который подходит вам. Давайте изучим раздел [Работа с закладками в PDF](/pdf/ru/net/bookmarks/).

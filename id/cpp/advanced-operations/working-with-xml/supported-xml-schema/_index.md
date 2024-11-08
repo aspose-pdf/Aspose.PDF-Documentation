@@ -3,7 +3,7 @@ title: Skema XML dari Aspose.PDF
 linktitle: Skema XML yang Didukung
 type: docs
 weight: 10
-url: id/cpp/supported-xml-schema/
+url: /id/cpp/supported-xml-schema/
 description: Artikel ini menjelaskan skema XML untuk bekerja dengan dokumen XML di Aspose.PDF untuk C++.
 lastmod: "2022-01-31"
 sitemap:

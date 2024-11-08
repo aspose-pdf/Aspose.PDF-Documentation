@@ -3,7 +3,7 @@ title: Trabalhando com Tabelas em PDF usando Python
 linktitle: Trabalhando com Tabelas
 type: docs
 weight: 50
-url: pt/python-net/working-with-tables/
+url: /pt/python-net/working-with-tables/
 description: Esta seção descreve como adicionar e extrair uma tabela, como manipular e uma tabela usando a biblioteca Python.
 lastmod: "2023-09-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 Você é capaz de fazer o seguinte:
 
-- [Criar ou Adicionar Tabela em Documento PDF existente](/pdf/python-net/add-table-in-existing-pdf-document/) - crie sua tabela no arquivo pdf mesclando as colunas ou linhas considerando bordas, margens e preenchimento.
-- [Extrair uma Tabela de Documento PDF existente](/pdf/python-net/extract-table-from-existing-pdf-document/) - você pode extrair tabela do arquivo PDF.
-- [Manipular Tabelas em PDF existente](/pdf/python-net/manipulate-tables-in-existing-pdf/) - manipule tabelas no seu PDF usando TableAbsorber.
+- [Criar ou Adicionar Tabela em Documento PDF existente](/pdf/pt/python-net/add-table-in-existing-pdf-document/) - crie sua tabela no arquivo pdf mesclando as colunas ou linhas considerando bordas, margens e preenchimento.
+- [Extrair uma Tabela de Documento PDF existente](/pdf/pt/python-net/extract-table-from-existing-pdf-document/) - você pode extrair tabela do arquivo PDF.
+- [Manipular Tabelas em PDF existente](/pdf/pt/python-net/manipulate-tables-in-existing-pdf/) - manipule tabelas no seu PDF usando TableAbsorber.
 
-- [Remover Tabelas de PDF existente](/pdf/python-net/remove-tables-from-existing-pdf/) - remova tabela ou múltiplas tabelas do documento PDF.
+- [Remover Tabelas de PDF existente](/pdf/pt/python-net/remove-tables-from-existing-pdf/) - remova tabela ou múltiplas tabelas do documento PDF.
 
 <script type="application/ld+json">
 {

@@ -2,7 +2,7 @@
 title: Mover y Eliminar Campo de Formulario
 type: docs
 weight: 50
-url: es/net/move-remove-form-field/
+url: /es/net/move-remove-form-field/
 description: Esta sección explica cómo puede mover y eliminar Campos de Formulario con la Clase FormEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -2,13 +2,13 @@
 title: フォームフィールド名の識別
 type: docs
 weight: 10
-url: ja/net/identifying-form-fields-names/
+url: /ja/net/identifying-form-fields-names/
 description: Aspose.PDF.Facadesは、Formクラスを使用してフォームフィールド名を識別することを可能にします。
 lastmod: "2021-06-05"
 draft: false
 ---
 
-[Aspose.PDF for .NET](/pdf/net/)は、既に作成されたPdfフォームを作成、編集、記入する機能を提供します。[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)名前空間には[Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)クラスが含まれており、[FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index)という名前の関数が含まれています。この関数は、フィールド名とフィールド値の2つの引数を取ります。したがって、フォームフィールドを記入するためには、正確なフォームフィールド名を知っている必要があります。
+[Aspose.PDF for .NET](/pdf/ja/net/)は、既に作成されたPdfフォームを作成、編集、記入する機能を提供します。[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)名前空間には[Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)クラスが含まれており、[FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index)という名前の関数が含まれています。この関数は、フィールド名とフィールド値の2つの引数を取ります。したがって、フォームフィールドを記入するためには、正確なフォームフィールド名を知っている必要があります。
 
 ## 実装の詳細
 

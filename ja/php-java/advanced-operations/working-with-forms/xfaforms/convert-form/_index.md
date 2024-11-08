@@ -3,7 +3,7 @@ title: XFAフォームをAcroFormに変換
 linktitle: XFAフォームを変換
 type: docs
 weight: 10
-url: ja/php-java/convert-form/
+url: /ja/php-java/convert-form/
 description: このセクションでは、Aspose.PDF for PHP via Javaを使用してXFAフォームをAcroFormに変換する方法を説明します。
 lastmod: "2024-06-05"
 sitemap:

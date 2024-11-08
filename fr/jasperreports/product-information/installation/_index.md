@@ -6,7 +6,7 @@ type: docs
 
 weight: 50
 
-url: fr/jasperreports/installation/
+url: /fr/jasperreports/installation/
 
 lastmod: "2021-06-05"
 
@@ -14,8 +14,8 @@ lastmod: "2021-06-05"
 
 **Cette section comprend les sujets suivants :**
 
-- [Configuration système requise](/pdf/jasperreports/system-requirements/)
+- [Configuration système requise](/pdf/fr/jasperreports/system-requirements/)
 
-- [Intégration avec ](/pdf/jasperreports/integration-with-jasperreports/)
+- [Intégration avec ](/pdf/fr/jasperreports/integration-with-jasperreports/)
 
-- [Intégration avec JasperServer](/pdf/jasperreports/integration-with-jasperserver/)
+- [Intégration avec JasperServer](/pdf/fr/jasperreports/integration-with-jasperserver/)

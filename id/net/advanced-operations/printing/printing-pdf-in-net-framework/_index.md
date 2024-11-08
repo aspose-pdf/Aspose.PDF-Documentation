@@ -3,7 +3,7 @@ title: Mencetak PDF di .NET Framework
 linktitle: Mencetak PDF di .NET Framework
 type: docs
 weight: 10
-url: id/net/printing-pdf-in-net-framework/
+url: /id/net/printing-pdf-in-net-framework/
 keywords: "print pdf file c#, c# print pdf"
 description: Anda dapat mencetak file PDF ke printer default menggunakan pengaturan printer dan halaman dengan C#.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "Anda dapat mencetak file PDF ke printer default menggunakan pengaturan printer dan halaman dengan C#."
 }
 </script>
-Potongan kode berikut ini juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut ini juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## **Cetak File Pdf dalam C# - Cetak File PDF ke Printer Default menggunakan Pengaturan Printer dan Halaman**
 

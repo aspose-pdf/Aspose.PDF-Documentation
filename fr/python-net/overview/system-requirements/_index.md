@@ -3,7 +3,7 @@ title: Exigences du système
 linktitle: Exigences du système
 type: docs
 weight: 30
-url: fr/python-net/system-requirements/
+url: /fr/python-net/system-requirements/
 description: Cette section liste les systèmes d'exploitation pris en charge dont un développeur a besoin pour travailler avec succès avec Aspose.PDF pour Python.
 lastmod: "2022-12-22"
 sitemap:

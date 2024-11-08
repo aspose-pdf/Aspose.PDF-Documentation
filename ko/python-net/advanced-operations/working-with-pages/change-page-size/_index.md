@@ -3,7 +3,7 @@ title: Python으로 PDF 페이지 크기 변경
 linktitle: PDF 페이지 크기 변경
 type: docs
 weight: 60
-url: ko/python-net/change-page-size/
+url: /ko/python-net/change-page-size/
 description: Aspose.PDF for Python via .NET 라이브러리를 사용하여 PDF 문서의 페이지 크기 변경.
 lastmod: "2023-04-17"
 sitemap:

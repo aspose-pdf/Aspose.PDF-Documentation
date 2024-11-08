@@ -3,7 +3,7 @@ title: Travailler avec les métadonnées de fichiers PDF en utilisant JavaScript
 linktitle: Métadonnées de fichiers PDF
 type: docs
 weight: 130
-url: fr/javascript-cpp/pdf-file-metadata/
+url: /fr/javascript-cpp/pdf-file-metadata/
 description: Cette section explique comment obtenir des informations sur les fichiers PDF, comment obtenir des métadonnées d'un fichier PDF, définir les informations du fichier PDF.
 lastmod: "2023-02-17"
 sitemap:

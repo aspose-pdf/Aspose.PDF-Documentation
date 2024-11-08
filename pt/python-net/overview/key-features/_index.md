@@ -3,7 +3,7 @@ title: Características Principais do Aspose.PDF para Python
 linktitle: Características Principais
 type: docs
 weight: 20
-url: pt/python-net/key-features/
+url: /pt/python-net/key-features/
 description: Aspose.PDF para Python via .NET demonstra suas características gerais. Mostra as versões de PDF suportadas e todas as manipulações que podemos fazer com PDF.
 lastmod: "2022-12-21"
 sitemap:

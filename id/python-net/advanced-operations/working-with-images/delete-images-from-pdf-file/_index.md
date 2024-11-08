@@ -3,7 +3,7 @@ title: Hapus Gambar dari File PDF menggunakan Python
 linktitle: Hapus Gambar
 type: docs
 weight: 20
-url: id/python-net/delete-images-from-pdf-file/
+url: /id/python-net/delete-images-from-pdf-file/
 description: Bagian ini menjelaskan cara menghapus Gambar dari File PDF menggunakan Aspose.PDF untuk Python melalui .NET.
 lastmod: "2023-04-17"
 ---

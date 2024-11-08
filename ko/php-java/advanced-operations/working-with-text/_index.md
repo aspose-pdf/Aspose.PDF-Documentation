@@ -3,7 +3,7 @@ title: PDF에서 텍스트 작업하기
 linktitle: 텍스트 작업하기
 type: docs
 weight: 30
-url: ko/php-java/working-with-text/
+url: /ko/php-java/working-with-text/
 description: 이 섹션은 텍스트 처리의 다양한 기술을 설명합니다. Aspose.PDF와 PHP를 사용하여 텍스트 추가, 교체, 회전, 검색 방법을 배웁니다.
 lastmod: "2024-06-05"
 sitemap:
@@ -15,4 +15,4 @@ sitemap:
 
 다음 작업을 수행할 수 있습니다:
 
-- [PDF 파일에 텍스트 추가하기](/pdf/php-java/add-text-to-pdf-file/) - PDF에 텍스트를 추가하고, 스트림 및 파일에서 폰트를 사용하고, HTML 문자열을 추가하고, 하이퍼링크를 추가합니다, 등.
+- [PDF 파일에 텍스트 추가하기](/pdf/ko/php-java/add-text-to-pdf-file/) - PDF에 텍스트를 추가하고, 스트림 및 파일에서 폰트를 사용하고, HTML 문자열을 추가하고, 하이퍼링크를 추가합니다, 등.

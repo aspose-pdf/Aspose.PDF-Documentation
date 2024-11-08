@@ -2,7 +2,7 @@
 title: Changer le mot de passe du fichier PDF
 type: docs
 weight: 40
-url: fr/net/change-password/
+url: /fr/net/change-password/
 description: Ce sujet explique comment changer le mot de passe sur un fichier PDF en utilisant la classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

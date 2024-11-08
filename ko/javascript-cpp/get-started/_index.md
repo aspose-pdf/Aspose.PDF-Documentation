@@ -3,7 +3,7 @@ title: 시작하기
 linktitle: 시작하기
 type: docs
 weight: 30
-url: ko/javascript-cpp/get-started/
+url: /ko/javascript-cpp/get-started/
 description: 이 섹션에서는 C++를 통한 JavaScript용 Aspose.PDF의 기본 원리를 설명합니다. C++를 통한 JavaScript용 Aspose.PDF는 다양한 기능을 지원합니다.
 lastmod: "2022-12-14"
 sitemap:
@@ -27,30 +27,30 @@ PDF는 1990년대에 Adobe에 의해 두 가지 목적을 달성하기 위해 �
 
 ## 다양한 기능
 
-- [PDF에서 텍스트 추출](/pdf/javascript-cpp/extract-text/)
-- [PDF 문서 최적화](/pdf/javascript-cpp/optimize-pdf/)
-- [PDF 파일에 스탬프 추가](/pdf/javascript-cpp/add-stamp-to-pdf/)
-- [PDF 파일에 이미지 추가](/pdf/javascript-cpp/add-image-to-pdf/)
-- [PDF를 두 개의 파일로 분할](/pdf/javascript-cpp/split-pdf/)
-- [두 파일을 PDF로 병합](/pdf/javascript-cpp/merge-pdf/)
-- [PDF 문서 암호화](/pdf/javascript-cpp/encrypt-pdf/)
-- [PDF 문서 암호 해독](/pdf/javascript-cpp/decrypt-pdf/)
+- [PDF에서 텍스트 추출](/pdf/ko/javascript-cpp/extract-text/)
+- [PDF 문서 최적화](/pdf/ko/javascript-cpp/optimize-pdf/)
+- [PDF 파일에 스탬프 추가](/pdf/ko/javascript-cpp/add-stamp-to-pdf/)
+- [PDF 파일에 이미지 추가](/pdf/ko/javascript-cpp/add-image-to-pdf/)
+- [PDF를 두 개의 파일로 분할](/pdf/ko/javascript-cpp/split-pdf/)
+- [두 파일을 PDF로 병합](/pdf/ko/javascript-cpp/merge-pdf/)
+- [PDF 문서 암호화](/pdf/ko/javascript-cpp/encrypt-pdf/)
+- [PDF 문서 암호 해독](/pdf/ko/javascript-cpp/decrypt-pdf/)
 
 ## 변환 기능
 
-- [PDF를 JPEG로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 PNG로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 Tiff로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 BMP로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 SVG로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 SVG(Zip)로 변환](/pdf/javascript-cpp/conversion/)
+- [PDF를 JPEG로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 PNG로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 Tiff로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 BMP로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 SVG로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 SVG(Zip)로 변환](/pdf/ko/javascript-cpp/conversion/)
 
-- [PDF를 TeX로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 Xps로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 CSV로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 TXT로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 DocX로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 XlsX로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 그레이스케일로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF/A를 PDF 형식으로 변환](/pdf/javascript-cpp/conversion/)
-- [PDF를 PDF/A 형식으로 변환](/pdf/javascript-cpp/conversion/)
+- [PDF를 TeX로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 Xps로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 CSV로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 TXT로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 DocX로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 XlsX로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 그레이스케일로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF/A를 PDF 형식으로 변환](/pdf/ko/javascript-cpp/conversion/)
+- [PDF를 PDF/A 형식으로 변환](/pdf/ko/javascript-cpp/conversion/)

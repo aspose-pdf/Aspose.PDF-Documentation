@@ -2,7 +2,7 @@
 title: PDFフォームフィールドを追加
 type: docs
 weight: 10
-url: ja/net/add-form-fields/
+url: /ja/net/add-form-fields/
 description: このトピックでは、FormEditorクラスを使用してAspose.PDF Facadesでフォームフィールドを操作する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

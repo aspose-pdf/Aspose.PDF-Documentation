@@ -3,7 +3,7 @@ title: Bekerja dengan Bookmark di PDF menggunakan C#
 linktitle: Bookmark
 type: docs
 weight: 30
-url: id/net/bookmarks/
+url: /id/net/bookmarks/
 description: Bagian ini menjelaskan cara menambahkan, menghapus, dan mendapatkan bookmark dengan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,6 +81,6 @@ aliases:
 Bookmark PDF adalah alat yang sangat berguna dan esensial ketika membaca file PDF. Mereka memungkinkan pengguna untuk cepat melompat ke tempat lain dalam dokumen PDF, navigasi melalui halaman, dan cepat melihat isi dari PDF, sama seperti daftar isi.
 Pada bagian ini Anda akan belajar cara:
 
-- [Menambah dan Menghapus Bookmark](/pdf/net/add-and-delete-bookmark/)
-- [Mendapatkan, Memperbarui dan Memperluas Bookmark](/pdf/net/get-update-and-expand-bookmark/)
+- [Menambah dan Menghapus Bookmark](/pdf/id/net/add-and-delete-bookmark/)
+- [Mendapatkan, Memperbarui dan Memperluas Bookmark](/pdf/id/net/get-update-and-expand-bookmark/)
 

@@ -2,7 +2,7 @@
 title: 웹을 위한 PDF 문서 최적화 - 루비
 type: docs
 weight: 70
-url: ko/java/optimize-pdf-document-for-the-web-in-ruby/
+url: /ko/java/optimize-pdf-document-for-the-web-in-ruby/
 lastmod: "2021-06-05"
 ---
 

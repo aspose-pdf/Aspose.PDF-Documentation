@@ -3,7 +3,7 @@ title: Tambahkan Cap Teks dalam File PDF
 linktitle: Cap Teks dalam File PDF
 type: docs
 weight: 20
-url: id/cpp/text-stamps-in-the-pdf-file/
+url: /id/cpp/text-stamps-in-the-pdf-file/
 description: Tambahkan cap teks ke file PDF menggunakan kelas TextStamp dengan C++.
 lastmod: "2021-12-05"
 sitemap:

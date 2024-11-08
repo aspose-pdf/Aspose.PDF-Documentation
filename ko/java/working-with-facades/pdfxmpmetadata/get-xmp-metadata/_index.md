@@ -2,7 +2,7 @@
 title: 기존 PDF 파일의 XMP 메타데이터 가져오기 - facades
 type: docs
 weight: 10
-url: ko/java/get-xmp-metadata/
+url: /ko/java/get-xmp-metadata/
 description: 이 섹션에서는 PdfXmpMetadata 클래스를 사용하여 Aspose.PDF Facades로 XMP 메타데이터를 가져오는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

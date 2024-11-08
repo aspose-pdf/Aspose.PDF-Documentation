@@ -3,7 +3,7 @@ title: Travailler avec des tableaux dans les PDF en utilisant C#
 linktitle: Travailler avec des tableaux
 type: docs
 weight: 50
-url: fr/net/working-with-tables/
+url: /fr/net/working-with-tables/
 description: Cette section décrit comment ajouter et extraire un tableau, comment manipuler et intégrer un tableau en utilisant la bibliothèque C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,15 +81,15 @@ Les tables font partie de nombreux formulaires PDF. Vous trouvez des tables dans
 
 Vous êtes capable de faire ce qui suit :
 
-- [Créer ou Ajouter une Table dans un Document PDF existant](/pdf/net/add-table-in-existing-pdf-document/) - créez votre table dans le fichier pdf en fusionnant les colonnes ou les rangées en considérant les bordures, les marges et le padding.
-- [Extraire une Table d'un Document PDF existant](/pdf/net/extract-table-from-existing-pdf-document/) - vous pouvez extraire une table du fichier PDF ou extraire la bordure de la table sous forme d'Image.
-- [Intégrer une Table avec des Sources de Données](/pdf/net/integrate-table/) - intégrer une table avec une Base de Données, intégrer une table avec la source du Entity Framework en utilisant la bibliothèque .NET.
-- [Manipuler les Tables dans un PDF existant](/pdf/net/manipulate-tables-in-existing-pdf/) - manipulez les tables dans votre PDF en utilisant TableAbsorber.
+- [Créer ou Ajouter une Table dans un Document PDF existant](/pdf/fr/net/add-table-in-existing-pdf-document/) - créez votre table dans le fichier pdf en fusionnant les colonnes ou les rangées en considérant les bordures, les marges et le padding.
+- [Extraire une Table d'un Document PDF existant](/pdf/fr/net/extract-table-from-existing-pdf-document/) - vous pouvez extraire une table du fichier PDF ou extraire la bordure de la table sous forme d'Image.
+- [Intégrer une Table avec des Sources de Données](/pdf/fr/net/integrate-table/) - intégrer une table avec une Base de Données, intégrer une table avec la source du Entity Framework en utilisant la bibliothèque .NET.
+- [Manipuler les Tables dans un PDF existant](/pdf/fr/net/manipulate-tables-in-existing-pdf/) - manipulez les tables dans votre PDF en utilisant TableAbsorber.
 
 type: docs
 changefreq: "monthly"
-- [Manipuler les tableaux dans un PDF existant](/pdf/net/manipulate-tables-in-existing-pdf/) - manipuler les tableaux dans votre PDF en utilisant TableAbsorber.
-- [Supprimer les tableaux d'un PDF existant](/pdf/net/remove-tables-from-existing-pdf/) - supprimer un tableau ou plusieurs tableaux d'un document PDF.
+- [Manipuler les tableaux dans un PDF existant](/pdf/fr/net/manipulate-tables-in-existing-pdf/) - manipuler les tableaux dans votre PDF en utilisant TableAbsorber.
+- [Supprimer les tableaux d'un PDF existant](/pdf/fr/net/remove-tables-from-existing-pdf/) - supprimer un tableau ou plusieurs tableaux d'un document PDF.
 
 <script type="application/ld+json">
 {

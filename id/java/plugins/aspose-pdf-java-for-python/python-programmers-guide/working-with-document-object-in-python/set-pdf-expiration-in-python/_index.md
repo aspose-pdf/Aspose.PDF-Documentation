@@ -2,7 +2,7 @@
 title: Menetapkan Kedaluwarsa PDF di Python
 type: docs
 weight: 80
-url: id/java/set-pdf-expiration-in-python/
+url: /id/java/set-pdf-expiration-in-python/
 lastmod: "2021-06-05"
 ---
 

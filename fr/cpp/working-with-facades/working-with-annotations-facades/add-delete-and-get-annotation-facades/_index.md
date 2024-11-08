@@ -2,7 +2,7 @@
 title: Ajouter, Supprimer et Obtenir des Annotations - Facades
 type: docs
 weight: 10
-url: fr/cpp/add-delete-and-get-annotation-facades/
+url: /fr/cpp/add-delete-and-get-annotation-facades/
 ---
 
 ## <ins>**Ajouter une Annotation dans un fichier PDF existant en utilisant PdfContentEditor**

@@ -3,7 +3,7 @@ title: .NETでのアーティファクトの操作
 linktitle: アーティファクトの操作
 type: docs
 weight: 110
-url: ja/net/artifacts/
+url: /ja/net/artifacts/
 description: Aspose.PDF for .NETは、PDFページに背景画像を追加し、Artifactクラスを使用して各ウォーターマークを取得することができます。
 lastmod: "2024-01-17"
 sitemap:
@@ -110,8 +110,8 @@ Adobe Acrobatで作成された透かしはアーティファクトと呼ばれ�
 
 以下のコードスニペットは、PDFファイルの最初のページのすべての透かしを取得する方法を示しています。
 
-_注記:_ このコードは [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも動作します。
-_Note:_ このコードは[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+_注記:_ このコードは [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも動作します。
+_Note:_ このコードは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 var document = new Document(System.IO.Path.Combine(_dataDir, "sample-w.pdf"));

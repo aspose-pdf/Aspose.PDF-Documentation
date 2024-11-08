@@ -3,7 +3,7 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: ar/python-net/get-started/
+url: /ar/python-net/get-started/
 description: يصف هذا القسم المبادئ الأساسية لعمل Aspose.PDF لـ Python عبر .NET. تدعم مكتبة Python مجموعة واسعة من الوظائف.
 is_node: true
 lastmod: "2022-12-20"   
@@ -38,15 +38,15 @@ sitemap:
 
 ## ميزات التحويل
 
-- [تحويل PDF إلى Word، Excel، وPowerPoint](/pdf/python-net/convert-pdf-to-word/).
-- [تحويل PDF إلى تنسيقات الصور](/pdf/python-net/convert-pdf-to-images-format/).
-- [تحويل ملف PDF إلى تنسيق HTML والعكس](/pdf//python-net/convert-pdf-to-html/).
-- [تحويل PDF إلى EPUB، نص، XPS، إلخ](/pdf/python-net/convert-pdf-to-other-files/).
+- [تحويل PDF إلى Word، Excel، وPowerPoint](/pdf/ar/python-net/convert-pdf-to-word/).
+- [تحويل PDF إلى تنسيقات الصور](/pdf/ar/python-net/convert-pdf-to-images-format/).
+- [تحويل ملف PDF إلى تنسيق HTML والعكس](/pdf/ar//python-net/convert-pdf-to-html/).
+- [تحويل PDF إلى EPUB، نص، XPS، إلخ](/pdf/ar/python-net/convert-pdf-to-other-files/).
 - تحويل EPUB، Markdown، نص، XPS، PostScript، XML، LaTex إلى PDF
 
 
 ### تعرف على المزيد حول:
 
 
-- ["Hello, World" مثال بايثون](/pdf/python-net/hello-world-example/)
-- [ملف PDF معقد](/pdf/python-net/complex-pdf-example/)
+- ["Hello, World" مثال بايثون](/pdf/ar/python-net/hello-world-example/)
+- [ملف PDF معقد](/pdf/ar/python-net/complex-pdf-example/)

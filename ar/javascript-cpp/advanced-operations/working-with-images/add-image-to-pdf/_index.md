@@ -3,7 +3,7 @@ title: إضافة صورة إلى PDF باستخدام JavaScript عبر C++
 linktitle: إضافة صورة
 type: docs
 weight: 10
-url: ar/javascript-cpp/add-image-to-pdf/
+url: /ar/javascript-cpp/add-image-to-pdf/
 description: يصف هذا القسم كيفية إضافة صورة إلى ملف PDF موجود باستخدام Aspose.PDF لـ JavaScript عبر C++.
 lastmod: "2023-12-15"
 ---

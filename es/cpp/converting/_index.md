@@ -3,7 +3,7 @@ title: Convertir documento PDF
 linktitle: Convertir documento PDF
 type: docs
 weight: 60
-url: es/cpp/converting/
+url: /es/cpp/converting/
 lastmod: "2021-11-19"
 description: Esta sección contiene una descripción de todas las opciones posibles para convertir documentos PDF en C++ usando la biblioteca Aspose.PDF.
 sitemap:
@@ -25,34 +25,34 @@ Explore las secciones sobre la conversión de documentos con fragmentos de códi
 
 Los documentos de Word son lo más versátiles posible y editables. Convertir PDF a Word manualmente es una tarea que consume mucho tiempo. Este artículo te mostrará cómo convertir programáticamente PDF a Word en C++.
 
-- [Convertir PDF a Microsoft Word](/pdf/cpp/convert-pdf-to-word/) - puedes convertir tu documento PDF a formato Word con C++
+- [Convertir PDF a Microsoft Word](/pdf/es/cpp/convert-pdf-to-word/) - puedes convertir tu documento PDF a formato Word con C++
 
 Los formatos numéricos son necesarios no solo para hacer que los datos en la tabla sean más fáciles de leer, sino también para hacer que la tabla sea más fácil de usar. Por supuesto, si necesitas convertir dichos datos de un documento PDF a formato Excel, utiliza nuestra biblioteca Aspose.PDF.
 
-- [Convertir PDF a Microsoft Excel](/pdf/cpp/convert-pdf-to-excel/) - esta sección describe cómo convertir un documento PDF a XLSX, ODS, CSV y SpreadSheetML
+- [Convertir PDF a Microsoft Excel](/pdf/es/cpp/convert-pdf-to-excel/) - esta sección describe cómo convertir un documento PDF a XLSX, ODS, CSV y SpreadSheetML
 
 El formato PowerPoint se utiliza para crear diversas presentaciones. Los archivos PPT contienen un gran número de diapositivas o páginas con diversa información.
 
-- [Convertir PDF a Microsoft PowerPoint](/pdf/cpp/convert-pdf-to-powerpoint/) - aquí hablamos sobre la conversión de PDF a PowerPoint rastreando el proceso de conversión
+- [Convertir PDF a Microsoft PowerPoint](/pdf/es/cpp/convert-pdf-to-powerpoint/) - aquí hablamos sobre la conversión de PDF a PowerPoint rastreando el proceso de conversión
 
 HyperText Markup Language es un lenguaje de descripción de documentos de hipertexto, un lenguaje estándar para crear páginas web. Con Aspose.PDF para C++ puedes convertir fácilmente documentos HTML.
 
-- [Convertir archivo PDF a formato HTML](/pdf/cpp/convert-pdf-to-html/) - convierte tus documentos PDF a archivos HTML como páginas separadas o como una sola página
+- [Convertir archivo PDF a formato HTML](/pdf/es/cpp/convert-pdf-to-html/) - convierte tus documentos PDF a archivos HTML como páginas separadas o como una sola página
 
 Hay muchos formatos de imagen que necesitan ser convertidos a PDF para diferentes propósitos. Aspose.PDF permite los formatos de imágenes más populares y viceversa.
 
-- [Convertir formatos de imágenes a archivo PDF](/pdf/cpp/convert-images-format-to-pdf/) - convierte diferentes formatos de imágenes a archivo PDF
-- [Convertir PDF a varios formatos de imágenes](/pdf/cpp/convert-pdf-to-images-format/) - convierte páginas PDF a imágenes en formatos JPEG, PNG y otros
+- [Convertir formatos de imágenes a archivo PDF](/pdf/es/cpp/convert-images-format-to-pdf/) - convierte diferentes formatos de imágenes a archivo PDF
+- [Convertir PDF a varios formatos de imágenes](/pdf/es/cpp/convert-pdf-to-images-format/) - convierte páginas PDF a imágenes en formatos JPEG, PNG y otros
 
 Esta sección incluye formatos tales como: EPUB, Markdown, PCL, XPS, LATex/TeX, Texto y PostScript.
 
-- [Convertir otros formatos de archivos a PDF](/pdf/cpp/convert-other-files-to-pdf/) - este tema describe la conversión con varios formatos como EPUB, XPS, Postscript, texto y otros
-- [Convertir archivo PDF a otros formatos](/pdf/cpp/convert-pdf-to-other-files/) - este tema describe la manera de convertir un documento PDF a varios formatos
+- [Convertir otros formatos de archivos a PDF](/pdf/es/cpp/convert-other-files-to-pdf/) - este tema describe la conversión con varios formatos como EPUB, XPS, Postscript, texto y otros
+- [Convertir archivo PDF a otros formatos](/pdf/es/cpp/convert-pdf-to-other-files/) - este tema describe la manera de convertir un documento PDF a varios formatos
 
 PDF/A es una versión de PDF diseñada para el archivo a largo plazo de documentos electrónicos. Siendo sinceros, externamente, es muy difícil determinar si es PDF o PDF/A. Para verificar este archivo, se utilizan validadores. Consulte los siguientes artículos para una conversión de calidad de PDF a PDF/A y viceversa.
 
-- [Convertir PDF a formatos PDF/A](/pdf/cpp/convert-pdf-to-pdfa/) - La biblioteca C++ de Aspose.PDF tiene una manera fácil de convertir PDF a PDF/A
-- [Convertir PDF/A a formato PDF](/pdf/cpp/convert-pdfa-to-pdf/) - convierta PDF/A a formato PDF con C++ de manera fácil, rápida y de alta calidad
+- [Convertir PDF a formatos PDF/A](/pdf/es/cpp/convert-pdf-to-pdfa/) - La biblioteca C++ de Aspose.PDF tiene una manera fácil de convertir PDF a PDF/A
+- [Convertir PDF/A a formato PDF](/pdf/es/cpp/convert-pdfa-to-pdf/) - convierta PDF/A a formato PDF con C++ de manera fácil, rápida y de alta calidad
 
 ## Intente convertir archivos PDF en línea
 

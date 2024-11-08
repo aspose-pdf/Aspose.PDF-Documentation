@@ -3,7 +3,7 @@ title: PDF スティッキー注釈を Python で使用する
 linktitle: スティッキー注釈
 type: docs
 weight: 50
-url: ja/python-net/sticky-annotations/
+url: /ja/python-net/sticky-annotations/
 description: このトピックはスティッキー注釈についてであり、例としてテキストにウォーターマーク注釈を示します。
 lastmod: "2023-02-17"
 sitemap:

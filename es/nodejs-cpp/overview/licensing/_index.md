@@ -3,7 +3,7 @@ title: Licencia para Aspose.PDF para Node.js a través de C++
 linktitle: Licencias y limitaciones
 type: docs
 weight: 50
-url: es/nodejs-cpp/licensing/
+url: /es/nodejs-cpp/licensing/
 description: Aspose.PDF para Node.js invita a sus clientes a obtener una licencia Clásica.
 lastmod: "2023-11-16"
 sitemap:

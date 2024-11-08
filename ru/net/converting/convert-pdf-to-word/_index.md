@@ -3,7 +3,7 @@ title: Конвертация PDF в документы Microsoft Word в .NET
 linktitle: Конвертация PDF в Word
 type: docs
 weight: 10
-url: ru/net/convert-pdf-to-word/
+url: /ru/net/convert-pdf-to-word/
 lastmod: "2022-08-04"
 description: Узнайте, как написать код на C# для конвертации PDF в форматы Microsoft Word с использованием Aspose.PDF для .NET и настроить конвертацию PDF в DOC(DOCX).
 sitemap:
@@ -33,8 +33,8 @@ _Формат_: **Word**
 - [C# Конвертация PDF в Word](#csharp-pdf-to-doc)
 - [C# Как конвертировать файл PDF в Word](#csharp-pdf-to-docx)
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Конвертация PDF в DOC и DOCX
 
@@ -103,7 +103,7 @@ public static void ConvertPDFtoWordDocAdvanced()
 
 Aspose.PDF для .NET представляет вам бесплатное онлайн приложение ["PDF в DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), где вы можете изучить функциональность и качество его работы.
 
-[![Конвертировать PDF в DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![Конвертировать PDF в DOC](/pdf/ru/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## Конвертирование PDF в DOCX (файл Microsoft Word 2007-2021)
@@ -157,7 +157,7 @@ public static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF для .NET представляет вам бесплатное онлайн приложение ["PDF в Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), где вы можете изучить функциональность и качество его работы.
 
-[![Aspose.PDF Конвертация PDF в Word Бесплатное приложение](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Конвертация PDF в Word Бесплатное приложение](/pdf/ru/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

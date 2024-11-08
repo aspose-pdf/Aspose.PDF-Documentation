@@ -3,7 +3,7 @@ title: ライセンスと制限
 linktitle: ライセンスと制限
 type: docs
 weight: 50
-url: ja/androidjava/licensing/
+url: /ja/androidjava/licensing/
 description: Aspose.PDF for Android via Java は、クラシックライセンスとメーターライセンスを取得するよう顧客に勧めています。また、製品をよりよく探索するために限定ライセンスを使用します。
 lastmod: "2021-06-05"
 sitemap:

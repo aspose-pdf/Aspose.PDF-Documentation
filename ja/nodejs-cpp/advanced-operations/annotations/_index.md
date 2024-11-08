@@ -3,7 +3,7 @@ title: PDF注釈をNode.jsで
 linktitle: PDF注釈
 type: docs
 weight: 90
-url: ja/nodejs-cpp/annotations/
+url: /ja/nodejs-cpp/annotations/
 description: このセクションでは、Aspose.PDF for Node.js via C++を使用してPDFファイルにさまざまな種類の注釈を追加する方法を示します。
 lastmod: "2023-11-16"
 sitemap:
@@ -19,4 +19,4 @@ PDFの注釈は、追加情報、コメント、または視覚的な改善の�
 
 以下のことが可能です：
 
-- [注釈の削除](/pdf/nodejs-cpp/delete-annotation/) - このセクションでは、Node.js環境でPDFから注釈を削除する方法を説明します。
+- [注釈の削除](/pdf/ja/nodejs-cpp/delete-annotation/) - このセクションでは、Node.js環境でPDFから注釈を削除する方法を説明します。

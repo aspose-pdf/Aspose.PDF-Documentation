@@ -3,7 +3,7 @@ title: استخراج الروابط من ملف PDF
 linktitle: استخراج الروابط
 type: docs
 weight: 30
-url: ar/net/extract-links/
+url: /ar/net/extract-links/
 description: استخراج الروابط من ملف PDF باستخدام C#. يشرح هذا الموضوع كيفية استخراج الروابط باستخدام فئة AnnotationSelector.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "استخراج الروابط من ملف PDF باستخدام C#. يشرح هذا الموضوع كيفية استخراج الروابط باستخدام فئة AnnotationSelector."
 }
 </script>
-يعمل الكود التالي أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## استخراج الروابط من ملف PDF
 

@@ -3,7 +3,7 @@ title: العمل مع مستندات PDF
 linktitle: العمل مع المستندات
 type: docs
 weight: 10
-url: ar/cpp/working-with-documents/
+url: /ar/cpp/working-with-documents/
 lastmod: "2021-06-05"
 description: تصف لك هذه المقالة ما يمكن القيام به من تعديلات على المستند باستخدام مكتبة Aspose.PDF لـ C++.
 sitemap:
@@ -21,10 +21,10 @@ PDF هو تنسيق مستند محمول تم تطويره بواسطة Adobe. 
 
 You are able to do the following:
 
-- [إنشاء مستند PDF](/pdf/cpp/create-pdf-document/) - إنشاء PDF، إنشاء مستند PDF قابل للبحث.
-- [تنسيق مستند PDF](/pdf/cpp/formatting-pdf-document/) - الحصول على خصائص المستند وتعيينها، تضمين الخطوط، وعمليات أخرى مع ملفات PDF.
-- [معالجة مستند PDF](/pdf/cpp/manipulate-pdf-document/) - التحقق من صحة مستند PDF لمعيار PDF A، العمل مع TOC، تعيين تاريخ انتهاء صلاحية PDF، إلخ.
-- [تحسين مستندات PDF](/pdf/cpp/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للمستند.
-- [دمج PDF](/pdf/cpp/merge-pdf-documents/) - دمج ملفات PDF متعددة في مستند PDF واحد باستخدام C++.
-- [تقسيم PDF](/pdf/cpp/split-pdf-document/) - تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات C++ الخاصة بك.
-- [العمل مع العناوين](/pdf/cpp/working-with-headings/) - يمكنك إنشاء الترقيم في عنوان مستند PDF الخاص بك باستخدام C++.
+- [إنشاء مستند PDF](/pdf/ar/cpp/create-pdf-document/) - إنشاء PDF، إنشاء مستند PDF قابل للبحث.
+- [تنسيق مستند PDF](/pdf/ar/cpp/formatting-pdf-document/) - الحصول على خصائص المستند وتعيينها، تضمين الخطوط، وعمليات أخرى مع ملفات PDF.
+- [معالجة مستند PDF](/pdf/ar/cpp/manipulate-pdf-document/) - التحقق من صحة مستند PDF لمعيار PDF A، العمل مع TOC، تعيين تاريخ انتهاء صلاحية PDF، إلخ.
+- [تحسين مستندات PDF](/pdf/ar/cpp/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للمستند.
+- [دمج PDF](/pdf/ar/cpp/merge-pdf-documents/) - دمج ملفات PDF متعددة في مستند PDF واحد باستخدام C++.
+- [تقسيم PDF](/pdf/ar/cpp/split-pdf-document/) - تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات C++ الخاصة بك.
+- [العمل مع العناوين](/pdf/ar/cpp/working-with-headings/) - يمكنك إنشاء الترقيم في عنوان مستند PDF الخاص بك باستخدام C++.

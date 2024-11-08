@@ -2,7 +2,7 @@
 title: Mover e Remover Campo de Formulário
 type: docs
 weight: 50
-url: pt/java/move-remove-form-field/
+url: /pt/java/move-remove-form-field/
 description: Esta seção explica como você pode mover e remover Campos de Formulário com a Classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Añadir sellos de página en PDF usando C#
 linktitle: Sellos de página en archivo PDF
 type: docs
 weight: 30
-url: es/net/page-stamps-in-the-pdf-file/
+url: /es/net/page-stamps-in-the-pdf-file/
 description: Añade un sello de página a un documento PDF utilizando la clase PdfPageStamp con la biblioteca Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Un [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) puede ser utilizado cuando necesites aplicar un sello compuesto que contenga gráficos, texto, tablas. El siguiente ejemplo muestra cómo usar un sello para crear papelería como en Adobe InDesign, Illustrator, Microsoft Word. Supongamos que tenemos un documento de entrada y queremos aplicar 2 tipos de borde con color azul y ciruela.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 public static void AddPageStamp()

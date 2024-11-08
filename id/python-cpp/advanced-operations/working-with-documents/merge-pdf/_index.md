@@ -3,7 +3,7 @@ title: Cara Menggabungkan PDF menggunakan Python melalui C++
 linktitle: Gabungkan file PDF
 type: docs
 weight: 10
-url: id/python-cpp/merge-pdf-documents/
+url: /id/python-cpp/merge-pdf-documents/
 keywords: "gabungkan beberapa pdf menjadi satu pdf python, gabungkan beberapa pdf menjadi satu python, gabungkan beberapa pdf menjadi satu python"
 description: Halaman ini menjelaskan cara menggabungkan dokumen PDF menjadi satu file PDF dengan Python.
 lastmod: "2024-04-14"

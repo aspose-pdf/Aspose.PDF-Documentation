@@ -3,7 +3,7 @@ title: Criar AcroForms - Criar PDF Preenchível em Java
 linktitle: Criar AcroForms
 type: docs
 weight: 10
-url: pt/java/create-forms/
+url: /pt/java/create-forms/
 description: Esta seção explica como criar AcroForms do zero em seus documentos PDF com Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

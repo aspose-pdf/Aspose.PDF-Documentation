@@ -2,7 +2,7 @@
 title: Manage Header and Footer
 type: docs
 weight: 40
-url: es/net/manage-header-and-footer/
+url: /es/net/manage-header-and-footer/
 description: Esta sección explica cómo gestionar el Encabezado y el Pie de Página con Aspose.PDF Facades usando la Clase PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

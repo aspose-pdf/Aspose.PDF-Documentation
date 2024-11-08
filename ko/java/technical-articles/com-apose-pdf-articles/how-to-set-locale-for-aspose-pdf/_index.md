@@ -2,7 +2,7 @@
 title: Aspose.PDF의 로케일 설정 방법
 type: docs
 weight: 30
-url: ko/java/how-to-set-locale-for-aspose-pdf/
+url: /ko/java/how-to-set-locale-for-aspose-pdf/
 lastmod: "2022-01-27"
 ---
 

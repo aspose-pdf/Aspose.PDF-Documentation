@@ -2,7 +2,7 @@
 title: 첨부 파일 작업 - 파사드
 type: docs
 weight: 50
-url: ko/net/working-with-attachments-facades/
+url: /ko/net/working-with-attachments-facades/
 description: 이 섹션에서는 PdfContentEditor 클래스를 사용하여 첨부 파일 - 파사드 작업 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

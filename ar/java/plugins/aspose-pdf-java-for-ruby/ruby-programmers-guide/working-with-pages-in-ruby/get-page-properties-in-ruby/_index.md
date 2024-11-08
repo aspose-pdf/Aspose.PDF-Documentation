@@ -2,7 +2,7 @@
 title: احصل على خصائص الصفحة في روبي
 type: docs
 weight: 50
-url: ar/java/get-page-properties-in-ruby/
+url: /ar/java/get-page-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

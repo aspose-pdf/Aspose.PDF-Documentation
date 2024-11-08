@@ -2,7 +2,7 @@
 title: Sample Reports Gallery 
 type: docs
 weight: 40
-url: es/reportingservices/sample-reports-gallery/
+url: /es/reportingservices/sample-reports-gallery/
 lastmod: "2024-05-05"
 ---
 

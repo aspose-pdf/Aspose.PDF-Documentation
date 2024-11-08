@@ -3,7 +3,7 @@ title: PDFでのテーブル操作
 linktitle: テーブル操作
 type: docs
 weight: 50
-url: ja/php-java/working-with-tables/
+url: /ja/php-java/working-with-tables/
 description: このセクションでは、PHPを使用してテーブルを追加および抽出する方法、テーブルを操作および統合する方法について説明します。
 lastmod: "2024-06-05"
 sitemap:
@@ -19,4 +19,4 @@ Aspose.PDF for PHPがサポートする最初の機能の一つは、テーブ�
 
 次のことが可能です：
 
-- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/php-java/add-table-in-existing-pdf-document/) - ボーダー、マージン、パディングを考慮して列や行を結合してPDFファイルにテーブルを作成します。
+- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/ja/php-java/add-table-in-existing-pdf-document/) - ボーダー、マージン、パディングを考慮して列や行を結合してPDFファイルにテーブルを作成します。

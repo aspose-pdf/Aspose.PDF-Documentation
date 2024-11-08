@@ -3,7 +3,7 @@ title: Removendo anexo de um PDF existente
 linktitle: Removendo anexo de um PDF existente
 type: docs
 weight: 30
-url: pt/java/removing-attachment-from-an-existing-pdf/
+url: /pt/java/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF pode remover anexos de seus documentos PDF. Use a API de PDF para Java para remover anexos em arquivos PDF com a biblioteca Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

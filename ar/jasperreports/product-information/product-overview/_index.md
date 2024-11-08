@@ -5,7 +5,7 @@ type: docs
 
 weight: 10
 
-url: ar/jasperreports/product-overview/
+url: /ar/jasperreports/product-overview/
 
 lastmod: "2021-06-05"
 

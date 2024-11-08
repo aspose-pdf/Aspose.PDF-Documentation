@@ -2,7 +2,7 @@
 title: Aspose.PDF for Java 9.5.0의 공개 API 변경 사항
 type: docs
 weight: 70
-url: ko/java/public-api-changes-in-aspose-pdf-for-java-9-5-0/
+url: /ko/java/public-api-changes-in-aspose-pdf-for-java-9-5-0/
 lastmod: "2022-01-27"
 ---
 

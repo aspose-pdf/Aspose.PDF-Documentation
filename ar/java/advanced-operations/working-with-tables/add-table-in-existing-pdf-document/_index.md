@@ -3,7 +3,7 @@ title: إنشاء أو إضافة جدول في PDF
 linktitle: إنشاء أو إضافة جدول
 type: docs
 weight: 10
-url: ar/java/add-table-in-existing-pdf-document/
+url: /ar/java/add-table-in-existing-pdf-document/
 description: تعلم كيفية إنشاء أو إضافة جدول إلى مستند PDF، تطبيق نمط الخلية، تقسيم الجدول على الصفحات وتخصيص الصفوف والأعمدة إلخ.
 lastmod: "2021-12-16"
 sitemap:

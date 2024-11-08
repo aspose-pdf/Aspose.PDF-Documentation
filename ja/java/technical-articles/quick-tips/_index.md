@@ -2,7 +2,7 @@
 title: クイックヒント
 type: docs
 weight: 50
-url: ja/java/quick-tips/
+url: /ja/java/quick-tips/
 lastmod: "2022-01-27"
 ---
 

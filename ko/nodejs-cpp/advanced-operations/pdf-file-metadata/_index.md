@@ -3,7 +3,7 @@ title: Node.js에서 PDF 파일 메타데이터 작업하기
 linktitle: PDF 파일 메타데이터
 type: docs
 weight: 130
-url: ko/nodejs-cpp/pdf-file-metadata/
+url: /ko/nodejs-cpp/pdf-file-metadata/
 description: 이 섹션에서는 Node.js에서 PDF 파일 정보를 가져오고, PDF 파일에서 메타데이터를 가져오고, PDF 파일 정보를 설정하는 방법을 설명합니다.
 lastmod: "2023-11-16"
 sitemap:

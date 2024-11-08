@@ -3,7 +3,7 @@ title: PDF/3-A準拠のPDFを作成し、ZUGFeRD請求書をJavaで添付する
 linktitle: PDFにZUGFeRDを添付
 type: docs
 weight: 10
-url: ja/java/attach-zugferd/
+url: /ja/java/attach-zugferd/
 description: Aspose.PDF for JavaでZUGFeRDを使用してPDFドキュメントを生成する方法を学ぶ
 lastmod: "2024-01-18"
 sitemap:

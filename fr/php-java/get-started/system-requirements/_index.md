@@ -3,7 +3,7 @@ title: Exigences Système
 linktitle: Exigences Système
 type: docs
 weight: 30
-url: fr/php-java/system-requirements/
+url: /fr/php-java/system-requirements/
 description: Cette section liste les systèmes d'exploitation supportés qu'un développeur doit avoir pour travailler avec succès avec Aspose.PDF pour PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 他の言語とのプラグインと統合
 linktitle: プラグイン
 type: docs
 weight: 130
-url: ja/net/plugins/
+url: /ja/net/plugins/
 description: Aspose.PDFに基づいた様々なプラグインの使用方法を学びます
 lastmod: "2024-03-13"
 sitemap:
@@ -41,12 +41,12 @@ sitemap:
 
 このセクションには、最も人気のあるWebアプリケーション用のプラグインのリストが含まれています：DotNetNuke、Sitefinity、Umbracoなど。
 
-* [DNN用Aspose.PDF .NET](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Umbraco用Aspose.PDF .NET](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [VisualStudio用Aspose.PDF .NET](/pdf/net/aspose-pdf-net-for-visualstudio/)
-* [CRM用Aspose.PDF .NET](/pdf/net/aspose-pdf-net-for-crm/)
-* [Sitefinity用Aspose.PDF .NET](/pdf/net/aspose-pdf-net-for-sitefinity/)
+* [DNN用Aspose.PDF .NET](/pdf/ja/net/aspose-pdf-net-for-dnn/)
+* [Umbraco用Aspose.PDF .NET](/pdf/ja/net/aspose-pdf-net-for-umbraco/)
+* [VisualStudio用Aspose.PDF .NET](/pdf/ja/net/aspose-pdf-net-for-visualstudio/)
+* [CRM用Aspose.PDF .NET](/pdf/ja/net/aspose-pdf-net-for-crm/)
+* [Sitefinity用Aspose.PDF .NET](/pdf/ja/net/aspose-pdf-net-for-sitefinity/)
 
 ### 他の言語でのAspose.PDFの使用
 
-* [Coldfusionでの.NET用Aspose.PDFの使用](/pdf/net/aspose-pdf-net-for-coldfusion/)
+* [Coldfusionでの.NET用Aspose.PDFの使用](/pdf/ja/net/aspose-pdf-net-for-coldfusion/)

@@ -2,7 +2,7 @@
 title: Batasan API
 type: docs
 weight: 70
-url: id/net/api-limitations/
+url: /id/net/api-limitations/
 ---
 
 ## **Xsl Fo ke Pdf**

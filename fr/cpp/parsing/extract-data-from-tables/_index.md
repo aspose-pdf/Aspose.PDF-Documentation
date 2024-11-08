@@ -3,7 +3,7 @@ title: Extraire des données d'un tableau dans un PDF
 linktitle: Extraire des données d'un tableau
 type: docs
 weight: 40
-url: fr/cpp/extract-data-from-table-in-pdf/
+url: /fr/cpp/extract-data-from-table-in-pdf/
 description: Apprenez à extraire des données tabulaires d'un PDF en utilisant Aspose.PDF pour C++.
 lastmod: "2021-06-05"
 sitemap:
@@ -123,7 +123,7 @@ void ExtractMarkedTable()
 
 ## Extraire les données de tableau à partir de PDF et les stocker dans un fichier CSV
 
-L'exemple suivant montre comment extraire un tableau et le stocker sous forme de fichier CSV. Pour voir comment convertir un PDF en feuille de calcul Excel, veuillez vous référer à l'article [Convertir PDF en Excel](/pdf/cpp/convert-pdf-to-excel/).
+L'exemple suivant montre comment extraire un tableau et le stocker sous forme de fichier CSV. Pour voir comment convertir un PDF en feuille de calcul Excel, veuillez vous référer à l'article [Convertir PDF en Excel](/pdf/fr/cpp/convert-pdf-to-excel/).
 
 ```cpp
 void ExtractTableSaveCSV()

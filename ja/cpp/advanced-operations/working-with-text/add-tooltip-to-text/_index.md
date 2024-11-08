@@ -3,7 +3,7 @@ title: PDF Tooltip using using C++
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: ja/cpp/pdf-tooltip/
+url: /ja/cpp/pdf-tooltip/
 description: C++とAspose.PDFを使用してPDFのテキストフラグメントにツールチップを追加する方法を学びます
 lastmod: "2021-12-13"
 sitemap:

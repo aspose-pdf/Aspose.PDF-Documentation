@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: ko/jasperreports/product-overview/
+url: /ko/jasperreports/product-overview/
 
 lastmod: "2021-06-05"
 

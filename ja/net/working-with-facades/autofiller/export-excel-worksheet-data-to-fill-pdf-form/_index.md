@@ -2,7 +2,7 @@
 title: ExcelデータをエクスポートしてPDFフォームに入力
 type: docs
 weight: 10
-url: ja/net/export-excel-worksheet-data-to-fill-pdf-form/
+url: /ja/net/export-excel-worksheet-data-to-fill-pdf-form/
 description: このセクションでは、AutoFillerクラスを使用してExcelワークシートデータをエクスポートし、PDFフォームに入力する方法を説明します。
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) は、PDFフォームを入力するためのさまざまな方法を提供します。XMLファイル、DFD、XFDFからデータをインポートしたり、APIを使用したり、Excelワークシートのデータを使用することもできます。ExcelシートからデータをDataTableオブジェクトにエクスポートするために、[Aspose.Cells](https://docs.aspose.com//cells/net)の[Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells)クラスの[ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index)メソッドを使用します。
+[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/ja/net/) は、PDFフォームを入力するためのさまざまな方法を提供します。XMLファイル、DFD、XFDFからデータをインポートしたり、APIを使用したり、Excelワークシートのデータを使用することもできます。ExcelシートからデータをDataTableオブジェクトにエクスポートするために、[Aspose.Cells](https://docs.aspose.com//cells/net)の[Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells)クラスの[ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index)メソッドを使用します。
 ``` その後、このデータを [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) クラスの [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) メソッドを使用して PDF フォームにインポートする必要があります。DataTable の列名が PDF フォーム上のフィールド名と同じであることを確認してください。
 
 {{% /alert %}}

@@ -3,7 +3,7 @@ title: PDF sticky Annotations using C#
 linktitle: Sticky Annotation
 type: docs
 weight: 50
-url: ja/net/sticky-annotations/
+url: /ja/net/sticky-annotations/
 description: このトピックはスティッキーアノテーションについてであり、例としてテキスト内のウォーターマークアノテーションを示しています。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "このトピックはスティッキーアノテーションについてであり、例としてテキスト内のウォーターマークアノテーションを示しています。"
 }
 </script>
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## ウォーターマーク注釈の追加
 

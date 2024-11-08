@@ -3,7 +3,7 @@ title: Visão Geral
 linktitle: Visão Geral
 type: docs
 weight: 20
-url: pt/python-net/overview/
+url: /pt/python-net/overview/
 lastmod: "2022-12-20"
 description: Visão geral das principais funcionalidades e formatos suportados do Aspose.PDF para Python via .NET, manual de instalação e licenciamento da biblioteca.
 sitemap:
@@ -31,9 +31,9 @@ Experimente nossos [Aplicativos Online Gratuitos](https://products.aspose.app/pd
 
 Saiba mais sobre:
 
-- [Formatos de Arquivo Suportados](/pdf/python-net/supported-file-formats/)
-- [Principais Recursos do Aspose.PDF](/pdf/python-net/key-features/)
-- [Requisitos do Sistema](/pdf/python-net/system-requirements/)
-- [Instalação](/pdf/python-net/installation/)
-- [Licenciamento](/pdf/python-net/licensing/)
-- [Suporte Técnico](/pdf/python-net/technical-support/)
+- [Formatos de Arquivo Suportados](/pdf/pt/python-net/supported-file-formats/)
+- [Principais Recursos do Aspose.PDF](/pdf/pt/python-net/key-features/)
+- [Requisitos do Sistema](/pdf/pt/python-net/system-requirements/)
+- [Instalação](/pdf/pt/python-net/installation/)
+- [Licenciamento](/pdf/pt/python-net/licensing/)
+- [Suporte Técnico](/pdf/pt/python-net/technical-support/)

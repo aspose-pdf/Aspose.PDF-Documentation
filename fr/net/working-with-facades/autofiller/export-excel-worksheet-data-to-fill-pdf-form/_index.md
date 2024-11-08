@@ -2,7 +2,7 @@
 title: Exporter les données Excel pour remplir le formulaire PDF
 type: docs
 weight: 10
-url: fr/net/export-excel-worksheet-data-to-fill-pdf-form/
+url: /fr/net/export-excel-worksheet-data-to-fill-pdf-form/
 description: Cette section explique comment vous pouvez exporter les données de la feuille de calcul Excel pour remplir le formulaire PDF en utilisant la classe AutoFiller.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/net/) offre diverses façons de remplir les formulaires Pdf. Vous pouvez importer des données à partir d'un fichier XML, DFD, XFDF, utiliser l'API et même utiliser les données de la feuille de calcul Excel. Nous utiliserions la méthode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) de la classe [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) pour exporter les données de la feuille Excel dans un objet DataTable. Ensuite, nous devons importer ces données sous forme de Pdf en utilisant la méthode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) de la classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Assurez-vous que le nom de colonne de DataTable est identique au nom du champ sur le formulaire PDF.
+Le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/fr/net/) offre diverses façons de remplir les formulaires Pdf. Vous pouvez importer des données à partir d'un fichier XML, DFD, XFDF, utiliser l'API et même utiliser les données de la feuille de calcul Excel. Nous utiliserions la méthode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) de la classe [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) pour exporter les données de la feuille Excel dans un objet DataTable. Ensuite, nous devons importer ces données sous forme de Pdf en utilisant la méthode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) de la classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Assurez-vous que le nom de colonne de DataTable est identique au nom du champ sur le formulaire PDF.
 
 {{% /alert %}}
 

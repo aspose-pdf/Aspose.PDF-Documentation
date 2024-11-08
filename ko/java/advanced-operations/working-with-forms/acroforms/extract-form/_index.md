@@ -3,7 +3,7 @@ title: Extract Data AcroForms
 linktitle: Extract Data AcroForms
 type: docs
 weight: 30
-url: ko/java/extract-form/
+url: /ko/java/extract-form/
 description: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서에서 양식을 추출하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

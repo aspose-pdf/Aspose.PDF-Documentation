@@ -3,7 +3,7 @@ title: Supprimer des pages PDF par programmation
 linktitle: Supprimer des pages PDF
 type: docs
 weight: 40
-url: fr/php-java/supprimer-pages/
+url: /fr/php-java/supprimer-pages/
 description: Vous pouvez supprimer des pages de votre fichier PDF en utilisant PHP.
 lastmod: "2024-06-05"
 sitemap:

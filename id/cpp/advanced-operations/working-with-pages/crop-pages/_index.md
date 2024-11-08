@@ -3,7 +3,7 @@ title: Memotong Halaman PDF secara Pemrograman C++
 linktitle: Memotong Halaman
 type: docs
 weight: 80
-url: id/cpp/crop-pages/
+url: /id/cpp/crop-pages/
 description: Anda dapat mendapatkan properti halaman, seperti lebar, tinggi, bleed-, crop-, dan trimbox menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-12-09"
 sitemap:

@@ -2,7 +2,7 @@
 title: Dukungan, Perluasan, dan Berkontribusi ke Aspose.Pdf di Ruby
 type: docs
 weight: 30
-url: id/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
+url: /id/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

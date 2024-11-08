@@ -3,7 +3,7 @@ title: Adicionar e Excluir um Marcador
 linktitle: Adicionar e Excluir um Marcador
 type: docs
 weight: 10
-url: pt/net/add-and-delete-bookmark/
+url: /pt/net/add-and-delete-bookmark/
 description: Você pode adicionar um marcador a um documento PDF com C#. É possível excluir todos ou determinados marcadores de um documento PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "Você pode adicionar um marcador a um documento PDF com C#. É possível excluir todos ou determinados marcadores de um documento PDF."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Adicionar um Marcador a um Documento PDF
 

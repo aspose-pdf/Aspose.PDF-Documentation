@@ -2,7 +2,7 @@
 title: ToC Generator
 type: docs
 weight: 150
-url: ja/net/plugins/tocgenerator/
+url: /ja/net/plugins/tocgenerator/
 description: Aspose.PDF ToCジェネレーターを使用して目次を作成します
 lastmod: "2024-01-24"
 draft: false

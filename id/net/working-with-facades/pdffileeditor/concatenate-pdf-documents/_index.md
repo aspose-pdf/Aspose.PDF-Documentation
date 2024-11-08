@@ -3,7 +3,7 @@ title: Menggabungkan Dokumen PDF di C#
 linktitle: Menggabungkan Dokumen PDF
 type: docs
 weight: 20
-url: id/net/concatenate-pdf-documents/
+url: /id/net/concatenate-pdf-documents/
 description: Bagian ini menjelaskan cara menggabungkan dokumen PDF dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
 aliases:
     - /pdf/net/concatenate-multiple-pdf-files-using-memorystreams/

@@ -2,7 +2,7 @@
 title: Bekerja dengan Rotasi Halaman
 type: docs
 weight: 10
-url: id/net/working-with-page-rotation/
+url: /id/net/working-with-page-rotation/
 description: Bagian ini menjelaskan cara bekerja dengan Rotasi Halaman menggunakan Kelas PdfPageEditor.
 lastmod: "2021-07-07"
 draft: false

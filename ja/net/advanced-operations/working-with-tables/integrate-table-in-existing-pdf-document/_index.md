@@ -3,7 +3,7 @@ title: データソースPDFとテーブルを統合する
 linktitle: テーブル統合
 type: docs
 weight: 30
-url: ja/net/integrate-table/
+url: /ja/net/integrate-table/
 description: この記事では、PDFテーブルを統合する方法を示します。データベースとテーブルを統合し、テーブルが現在のページで分割されるかどうかを判断します。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "この記事では、PDFテーブルを統合する方法を示します。データベースとテーブルを統合し、テーブルが現在のページで分割されるかどうかを判断します。"
 }
 </script>
-次のコードスニペットは [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携します。
+次のコードスニペットは [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
 ## データベースとテーブルの統合
 

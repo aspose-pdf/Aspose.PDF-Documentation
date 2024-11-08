@@ -4,7 +4,7 @@ linktitle: إنشاء PDF مع علامات
 type: docs
 weight: 10
 lastmod: "2021-06-05"
-url: ar/java/create-tagged-pdf-documents/
+url: /ar/java/create-tagged-pdf-documents/
 description: يوضح هذا المقال كيفية إنشاء عناصر الهيكل لوثيقة PDF مع علامات برمجيًا باستخدام Aspose.PDF for Java.
 sitemap:
     changefreq: "weekly"

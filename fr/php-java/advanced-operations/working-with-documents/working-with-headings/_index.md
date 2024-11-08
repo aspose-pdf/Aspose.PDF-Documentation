@@ -1,7 +1,7 @@
 title: Travailler avec les En-têtes dans PDF
 type: docs
 weight: 70
-url: fr/php-java/working-with-headings/
+url: /fr/php-java/working-with-headings/
 lastmod: "2024-06-05"
 description: Créez une numérotation dans l'en-tête de votre document PDF en utilisant PHP. Aspose.PDF pour PHP via Java offre différents types de styles de numérotation.
 sitemap:

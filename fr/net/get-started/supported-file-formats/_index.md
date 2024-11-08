@@ -3,7 +3,7 @@ title: Formats de fichiers pris en charge
 linktitle: Formats de fichiers pris en charge
 type: docs
 weight: 70
-url: fr/net/supported-file-formats/
+url: /fr/net/supported-file-formats/
 description: Cette page montre quels formats de fichiers Aspose.PDF pour .NET peut charger et sauvegarder.
 lastmod: "2021-06-05"
 sitemap:

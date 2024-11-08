@@ -3,7 +3,7 @@ title: PDF内のテキストを置換
 linktitle: PDF内のテキストを置換
 type: docs
 weight: 40
-url: ja/net/replace-text-in-pdf/
+url: /ja/net/replace-text-in-pdf/
 description: Aspose.PDF for .NETライブラリからテキストを置換または削除するさまざまな方法について学びます。
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ aliases:
 }
 </script>
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## PDFドキュメントの全ページのテキストを置換
 

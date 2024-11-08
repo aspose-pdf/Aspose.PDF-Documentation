@@ -3,7 +3,7 @@ title: Trabajando con Páginas PDF en Python
 linktitle: Trabajando con Páginas
 type: docs
 weight: 20
-url: es/python-net/working-with-pages/
+url: /es/python-net/working-with-pages/
 description: Cómo agregar páginas, agregar encabezados y pies de página, agregar marcas de agua lo puedes conocer en esta sección. Aspose.PDF para Python a través de .NET te explica todos los detalles sobre este tema.
 lastmod: "2023-04-19"
 sitemap:
@@ -84,20 +84,20 @@ Esta sección te enseña cómo agregar marcas de agua en tu archivo PDF usando l
 
 You are able to do the following:
 
-- [Add Pages](/pdf/python-net/add-pages/) - agregar páginas en la ubicación deseada o al final de un archivo PDF y eliminar una página de su documento.
-- [Move Pages](/pdf/python-net/move-pages/) - mover páginas de un documento a otro.
-- [Delete Pages](/pdf/python-net/delete-pages/) - eliminar página de su archivo PDF utilizando la colección PageCollection.
-- [Change Page size](/pdf/python-net/change-page-size/) - puede cambiar el tamaño de página del PDF con un fragmento de código utilizando la biblioteca Aspose.PDF.
-- [Rotate Pages](/pdf/python-net/rotate-pages/) - puede cambiar la orientación de las páginas en un archivo PDF existente.
-- [Split Pages](/pdf/python-net/split-document/) - puede dividir archivos PDF en uno o varios PDF.
-- [Add Headers and/or Footers](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - agregar texto o imágenes en los encabezados y pies de página de su archivo PDF.
-- [Crop Pages](/pdf/python-net/crop-pages/) - puede recortar páginas en un documento PDF programáticamente con diferentes propiedades de página.
+- [Add Pages](/pdf/es/python-net/add-pages/) - agregar páginas en la ubicación deseada o al final de un archivo PDF y eliminar una página de su documento.
+- [Move Pages](/pdf/es/python-net/move-pages/) - mover páginas de un documento a otro.
+- [Delete Pages](/pdf/es/python-net/delete-pages/) - eliminar página de su archivo PDF utilizando la colección PageCollection.
+- [Change Page size](/pdf/es/python-net/change-page-size/) - puede cambiar el tamaño de página del PDF con un fragmento de código utilizando la biblioteca Aspose.PDF.
+- [Rotate Pages](/pdf/es/python-net/rotate-pages/) - puede cambiar la orientación de las páginas en un archivo PDF existente.
+- [Split Pages](/pdf/es/python-net/split-document/) - puede dividir archivos PDF en uno o varios PDF.
+- [Add Headers and/or Footers](/pdf/es/python-net/add-headers-and-footers-of-pdf-file/) - agregar texto o imágenes en los encabezados y pies de página de su archivo PDF.
+- [Crop Pages](/pdf/es/python-net/crop-pages/) - puede recortar páginas en un documento PDF programáticamente con diferentes propiedades de página.
 
-- [Add Watermarks](/pdf/python-net/add-watermarks/) - agregar marcas de agua en su archivo PDF con la Clase Artifact.
-- [Agregar Numeración de Páginas en Archivo PDF](/pdf/python-net/add-page-number/) - La clase PageNumberStamp te ayudará a agregar un número de página en tu archivo PDF.
-- [Agregar Fondos](/pdf/python-net/add-backgrounds/) - se pueden usar imágenes de fondo para agregar una marca de agua.
-- [Sellado](/pdf/python-net/stamping/) - puedes usar la clase ImageStamp para agregar un sello de imagen a un archivo PDF y la clase TextStamp para agregar un texto.
-- [Obtener y Establecer Propiedades de Página](/pdf/python-net/get-and-set-page-properties/) - esta sección muestra cómo obtener el número de páginas en un archivo PDF, obtener información sobre las propiedades de la página PDF como el color y establecer propiedades de página.
+- [Add Watermarks](/pdf/es/python-net/add-watermarks/) - agregar marcas de agua en su archivo PDF con la Clase Artifact.
+- [Agregar Numeración de Páginas en Archivo PDF](/pdf/es/python-net/add-page-number/) - La clase PageNumberStamp te ayudará a agregar un número de página en tu archivo PDF.
+- [Agregar Fondos](/pdf/es/python-net/add-backgrounds/) - se pueden usar imágenes de fondo para agregar una marca de agua.
+- [Sellado](/pdf/es/python-net/stamping/) - puedes usar la clase ImageStamp para agregar un sello de imagen a un archivo PDF y la clase TextStamp para agregar un texto.
+- [Obtener y Establecer Propiedades de Página](/pdf/es/python-net/get-and-set-page-properties/) - esta sección muestra cómo obtener el número de páginas en un archivo PDF, obtener información sobre las propiedades de la página PDF como el color y establecer propiedades de página.
 
 <script type="application/ld+json">
 {

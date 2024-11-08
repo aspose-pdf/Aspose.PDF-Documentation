@@ -2,7 +2,7 @@
 title: تزيين حقل النموذج في PDF
 type: docs
 weight: 20
-url: ar/java/decorate-form-field/
+url: /ar/java/decorate-form-field/
 description: يشرح هذا القسم كيفية تزيين حقل النموذج في PDF باستخدام فئة FormEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: Aplatir tous les Champs dans un Fichier PDF existant (façades)
 type: docs
 weight: 30
-url: fr/java/flatten-all-fields/
+url: /fr/java/flatten-all-fields/
 description: Cette section explique comment aplatir tous les Champs avec Aspose.PDF Facades en utilisant la Classe Form.
 lastmod: "2021-06-05"
 sitemap:

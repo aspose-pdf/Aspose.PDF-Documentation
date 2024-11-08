@@ -2,7 +2,7 @@
 title: Explorando recursos da classe FormEditor
 type: docs
 weight: 10
-url: pt/net/exploring-features-of-formeditor-class/
+url: /pt/net/exploring-features-of-formeditor-class/
 description: Você pode aprender detalhes sobre a exploração de recursos da classe FormEditor com a biblioteca Aspose.PDF para .NET
 lastmod: "2021-06-05"
 draft: false
@@ -16,7 +16,7 @@ Documentos PDF às vezes contêm formulários interativos, que são conhecidos c
 
 ## Detalhes da implementação
 
-Os desenvolvedores podem usar o [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) não apenas para adicionar novos formulários e campos de formulário em um documento PDF, mas também para permitir que você edite campos existentes. O escopo deste artigo é limitado às funcionalidades do [Aspose.PDF for .NET](/pdf/net/) que lidam com a edição de formulários.
+Os desenvolvedores podem usar o [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) não apenas para adicionar novos formulários e campos de formulário em um documento PDF, mas também para permitir que você edite campos existentes. O escopo deste artigo é limitado às funcionalidades do [Aspose.PDF for .NET](/pdf/pt/net/) que lidam com a edição de formulários.
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) é a classe que contém a maioria dos métodos e propriedades que permitem aos desenvolvedores editar campos de formulário. Você pode não apenas adicionar novos campos, mas também remover campos existentes, mover um campo para outra posição, mudar o nome do campo ou atributos etc. A lista de funcionalidades fornecidas por esta classe é bastante abrangente, e é muito fácil trabalhar com os campos de formulário usando esta classe.
 

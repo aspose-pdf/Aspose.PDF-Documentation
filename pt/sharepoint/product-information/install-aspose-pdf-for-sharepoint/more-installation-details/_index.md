@@ -2,7 +2,7 @@
 title: Mais detalhes de instalação
 type: docs
 weight: 30
-url: pt/sharepoint/more-installation-details/
+url: /pt/sharepoint/more-installation-details/
 lastmod: "2020-12-16"
 description: Mais informações sobre a instalação do PDF SharePoint API explicam como implantá-lo, ativá-lo e desativá-lo em coleções de sites.
 ---

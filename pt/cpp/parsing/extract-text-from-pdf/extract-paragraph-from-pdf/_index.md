@@ -3,7 +3,7 @@ title: Extrair Parágrafo do PDF
 linktitle: Extrair Parágrafo do PDF 
 type: docs 
 weight: 20 
-url: pt/cpp/extract-paragraph-from-pdf/ 
+url: /pt/cpp/extract-paragraph-from-pdf/ 
 description: Este artigo descreve como usar o ParagraphAbsorber - uma ferramenta especial no Aspose.PDF para extrair texto de documentos PDF. 
 lastmod: "2021-12-13" 
 sitemap: 

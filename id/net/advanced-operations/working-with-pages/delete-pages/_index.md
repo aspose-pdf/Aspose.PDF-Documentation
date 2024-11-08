@@ -3,7 +3,7 @@ title: Hapus Halaman PDF secara pemrograman C#
 linktitle: Hapus Halaman PDF
 type: docs
 weight: 30
-url: id/net/delete-pages/
+url: /id/net/delete-pages/
 description: Anda dapat menghapus halaman dari file PDF Anda menggunakan perpustakaan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "Anda dapat menghapus halaman dari file PDF Anda menggunakan perpustakaan Aspose.PDF untuk .NET."
 }
 </script>
-Potongan kode berikut juga dapat bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga dapat bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Anda dapat menghapus halaman dari file PDF menggunakan Aspose.PDF untuk .NET. Untuk menghapus halaman tertentu dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 

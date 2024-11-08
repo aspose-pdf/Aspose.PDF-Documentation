@@ -3,7 +3,7 @@ title: 从 PDF 中提取文本
 linktitle: 从 PDF 中提取文本
 type: docs
 weight: 10
-url: zh/cpp/extract-text-from-pdf/
+url: /zh/cpp/extract-text-from-pdf/
 description: Aspose.PDF 允许提取不同种类的信息。本节包含使用 Aspose.PDF 在 C++ 中从 PDF 文档中提取文本的文章。
 lastmod: "2021-06-05"
 sitemap:
@@ -17,5 +17,5 @@ PDF 文件非常适合在不同平台之间以及不使用相同软件的人之�
 
 ## 本节中的文章
 
-- [从 PDF 中提取文本](/pdf/cpp/extract-text-from-all-pdf/)
-- [从 PDF 中提取段落](/pdf/cpp/extract-paragraph-from-pdf/)
+- [从 PDF 中提取文本](/pdf/zh/cpp/extract-text-from-all-pdf/)
+- [从 PDF 中提取段落](/pdf/zh/cpp/extract-paragraph-from-pdf/)

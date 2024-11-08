@@ -3,7 +3,7 @@ title: Adicionar Carimbos de Texto em PDF via Python
 linktitle: Carimbos de Texto em Arquivo PDF
 type: docs
 weight: 20
-url: pt/python-net/text-stamps-in-the-pdf-file/
+url: /pt/python-net/text-stamps-in-the-pdf-file/
 description: Adicione um carimbo de texto a um documento PDF usando a classe TextStamp com a biblioteca Aspose.PDF para Python.
 lastmod: "2023-04-17"
 sitemap:

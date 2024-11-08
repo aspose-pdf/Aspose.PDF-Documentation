@@ -3,7 +3,7 @@ title: 既存のPDFドキュメントからテーブルを抽出する
 linktitle: テーブル抽出
 type: docs
 weight: 20
-url: ja/python-net/extract-table-from-existing-pdf-document/
+url: /ja/python-net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for Python via .NETを使用すると、PDFドキュメント内に含まれるテーブルに対して様々な操作を行うことが可能です。
 lastmod: "2023-02-17"
 sitemap:

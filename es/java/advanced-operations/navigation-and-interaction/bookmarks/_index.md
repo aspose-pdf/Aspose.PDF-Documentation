@@ -3,7 +3,7 @@ title: Trabajando con Marcadores en PDF
 linktitle: Marcadores
 type: docs
 weight: 30
-url: es/java/bookmarks/
+url: /es/java/bookmarks/
 description: Esta sección explica cómo agregar, eliminar y obtener marcadores con Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -15,5 +15,5 @@ Los marcadores en PDF son una herramienta útil y esencial cuando se trata de le
 
 En esta sección, aprenderás cómo:
 
-- [Agregar y Eliminar un Marcador](/pdf/java/add-and-delete-bookmark/)
-- [Obtener, Actualizar y Expandir un Marcador](/pdf/java/get-update-and-expand-bookmark/)
+- [Agregar y Eliminar un Marcador](/pdf/es/java/add-and-delete-bookmark/)
+- [Obtener, Actualizar y Expandir un Marcador](/pdf/es/java/get-update-and-expand-bookmark/)

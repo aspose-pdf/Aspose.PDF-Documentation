@@ -3,7 +3,7 @@ title: Cara menjalankan contoh lainnya
 linktitle: Cara menjalankan contoh lainnya
 type: docs
 weight: 50
-url: id/java/how-to-run-other-examples/    
+url: /id/java/how-to-run-other-examples/    
 description: Halaman ini menunjukkan panduan yang akan membantu persyaratan berikut sebelum mengunduh dan menjalankan contoh.
 lastmod: "2021-06-05"
 ---

@@ -2,7 +2,7 @@
 title: Extrair Anotações de PDF 
 type: docs
 weight: 30
-url: pt/net/extract-annotation/
+url: /pt/net/extract-annotation/
 description: Esta seção explica como extrair anotações de um arquivo PDF para XFDF com Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:

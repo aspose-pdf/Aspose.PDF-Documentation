@@ -3,7 +3,7 @@ title: O que há de novo
 linktitle: O que há de novo
 type: docs
 weight: 10
-url: pt/nodejs-cpp/whatsnew/
+url: /pt/nodejs-cpp/whatsnew/
 description: Nesta página são introduzidos os novos recursos mais populares no Aspose.PDF para Node.js via C++ que foram introduzidos em lançamentos recentes.
 sitemap:
     changefreq: "monthly"

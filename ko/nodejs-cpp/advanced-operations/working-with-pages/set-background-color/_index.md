@@ -3,7 +3,7 @@ title: Node.js에서 PDF의 배경색 설정
 linktitle: 배경색 설정
 type: docs
 weight: 80
-url: ko/nodejs-cpp/set-background-color/
+url: /ko/nodejs-cpp/set-background-color/
 description: C++를 통해 Node.js에서 PDF 파일의 배경색을 설정합니다.
 lastmod: "2023-11-16"
 sitemap:

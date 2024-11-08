@@ -3,7 +3,7 @@ title: プログラムでPDFページを削除する
 linktitle: PDFページを削除する
 type: docs
 weight: 40
-url: ja/java/delete-pages/
+url: /ja/java/delete-pages/
 description: Javaライブラリを使用してPDFファイルからページを削除できます。
 lastmod: "2021-06-05"
 sitemap:

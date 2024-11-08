@@ -3,7 +3,7 @@ title: Trabajando con Formularios XFA usando C++
 linktitle: Formularios XFA
 type: docs
 weight: 20
-url: es/cpp/xfa-forms/
+url: /es/cpp/xfa-forms/
 description: Aspose.PDF para C++ API te permite trabajar con campos XFA y XFA Acroform en un documento PDF. El Aspose.PDF.Facades.
 lastmod: "2021-12-01"
 sitemap:

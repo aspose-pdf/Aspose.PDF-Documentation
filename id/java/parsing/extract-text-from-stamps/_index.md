@@ -2,7 +2,7 @@
 title: Ekstrak Teks Dari Stempel
 type: docs
 weight: 60
-url: id/java/extract-text-from-stamps/
+url: /id/java/extract-text-from-stamps/
 ---
 
 ## Ekstrak Teks dari Anotasi Stempel

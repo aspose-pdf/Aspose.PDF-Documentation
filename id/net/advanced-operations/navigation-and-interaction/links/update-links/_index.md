@@ -3,7 +3,7 @@ title: Update Links in PDF
 linktitle: Update Links
 type: docs
 weight: 20
-url: id/net/update-links/
+url: /id/net/update-links/
 description: Memperbarui tautan dalam PDF secara pemrograman. Panduan ini adalah tentang cara memperbarui tautan dalam PDF dalam bahasa C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Memperbarui tautan dalam PDF secara pemrograman. Panduan ini adalah tentang cara memperbarui tautan dalam PDF dalam bahasa C#."
 }
 </script>
-Potongan kode berikut ini juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut ini juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Perbarui Tautan dalam File PDF
 

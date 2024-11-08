@@ -2,7 +2,7 @@
 title: ضبط معلومات ملف PDF في بايثون
 type: docs
 weight: 90
-url: ar/python-java/set-pdf-file-information-in-python/
+url: /ar/python-java/set-pdf-file-information-in-python/
 ---
 
 <ins>لتحديث معلومات مستند Pdf باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء فئة **SetPdfFileInfo**.

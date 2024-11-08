@@ -2,7 +2,7 @@
 title: PHP에서 PDF 파일의 특정 페이지 가져오기
 type: docs
 weight: 30
-url: ko/java/get-a-particular-page-in-a-pdf-file-in-php/
+url: /ko/java/get-a-particular-page-in-a-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: PDF Figures Annotations
 linktitle: Figures Annotations
 type: docs
 weight: 30
-url: ja/java/figures-annotation/
+url: /ja/java/figures-annotation/
 description: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントに図形の注釈を追加、取得、削除する方法について説明します
 lastmod: "2021-11-24"
 sitemap:

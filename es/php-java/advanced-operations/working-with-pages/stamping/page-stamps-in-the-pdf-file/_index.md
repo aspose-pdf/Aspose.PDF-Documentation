@@ -3,7 +3,7 @@ title: Añadir Sello de Página a PDF
 linktitle: Sellos de página en archivo PDF
 type: docs
 weight: 30
-url: es/php-java/page-stamps-in-the-pdf-file/
+url: /es/php-java/page-stamps-in-the-pdf-file/
 description: Añadir un sello de página a un archivo PDF usando la clase PdfPageStamp con PHP.
 lastmod: "2024-09-10"
 sitemap:

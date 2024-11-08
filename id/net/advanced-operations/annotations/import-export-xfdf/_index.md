@@ -3,7 +3,7 @@ title: Impor dan Ekspor Anotasi ke XFDF
 linktitle: Impor dan Ekspor Anotasi ke XFDF
 type: docs
 weight: 40
-url: id/net/import-export-xfdf/
+url: /id/net/import-export-xfdf/
 description: Anda dapat mengimpor dan mengekspor anotasi dalam format XFDF dengan C# dan perpustakaan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -87,7 +87,7 @@ XFDF adalah singkatan dari XML Forms Data Format. Ini adalah format file berbasi
 Kelas [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) berisi dua metode untuk bekerja dengan impor dan ekspor anotasi ke file XFDF.
 Kelas [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) berisi dua metode untuk bekerja dengan impor dan ekspor anotasi ke file XFDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara mengekspor anotasi ke file XFDF:
 

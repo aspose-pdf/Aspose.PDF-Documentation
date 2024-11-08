@@ -3,7 +3,7 @@ title: Tambahkan Teks ke File PDF
 linktitle: Tambahkan Teks ke File PDF
 type: docs
 weight: 10
-url: id/php-java/add-text-to-pdf-file/
+url: /id/php-java/add-text-to-pdf-file/
 description: Artikel ini menjelaskan berbagai aspek bekerja dengan teks di Aspose.PDF. Pelajari cara menambahkan teks ke PDF, menambahkan fragmen HTML, atau menggunakan font OTF kustom.
 lastmod: "2024-06-05"
 sitemap:

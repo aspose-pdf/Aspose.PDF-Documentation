@@ -3,7 +3,7 @@ title: Get, Update and Expand a Bookmark
 linktitle: Get, Update and Expand a Bookmark
 type: docs
 weight: 20
-url: id/java/get-update-and-expand-bookmark/
+url: /id/java/get-update-and-expand-bookmark/
 description: Artikel ini menjelaskan cara menggunakan bookmark dalam file PDF. Dengan pustaka Java kami, Anda dapat mengambil bookmark dari file PDF, mendapatkan nomor halaman bookmark, memperbarui bookmark dalam Dokumen PDF, dan memperluas bookmark saat melihat dokumen.
 lastmod: "2021-06-05"
 sitemap:

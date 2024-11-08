@@ -3,7 +3,7 @@ title: PDF 주석
 linktitle: PDF 주석
 type: docs
 weight: 100
-url: ko/python-net/annotations/
+url: /ko/python-net/annotations/
 description: 이 섹션에서는 Aspose.PDF 라이브러리를 사용하여 PDF 파일에 모든 종류의 주석을 사용하는 방법을 보여줍니다.
 lastmod: "2023-02-17"
 sitemap:
@@ -85,7 +85,7 @@ Aspose.PDF for Python 라이브러리는 텍스트 주석(텍스트 및 팝업 �
 
 다음을 수행할 수 있습니다:
 
-- [주석 추가, 삭제 및 가져오기](/pdf/python-net/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석을 다루는 방법을 설명합니다.
+- [주석 추가, 삭제 및 가져오기](/pdf/ko/python-net/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석을 다루는 방법을 설명합니다.
 
 <script type="application/ld+json">
 {

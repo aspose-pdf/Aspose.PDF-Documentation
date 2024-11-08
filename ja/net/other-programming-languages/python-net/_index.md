@@ -3,7 +3,7 @@ title: Aspose.PDF for .NETをPythonで使用する
 linktitle: Pythonとの統合
 type: docs
 weight: 100
-url: ja/net/python-net/
+url: /ja/net/python-net/
 description: このチュートリアルでは、PythonでPDFファイルを作成および変更するさまざまな方法を探ります。
 lastmod: "2022-01-10"
 sitemap:

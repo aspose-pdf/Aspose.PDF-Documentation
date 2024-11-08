@@ -3,7 +3,7 @@ title: Hapus Gambar dari File PDF
 linktitle: Hapus Gambar
 type: docs
 weight: 20
-url: id/java/delete-images-from-pdf-file/
+url: /id/java/delete-images-from-pdf-file/
 description: Bagian ini menjelaskan bagaimana menghapus gambar dari file PDF menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 ---

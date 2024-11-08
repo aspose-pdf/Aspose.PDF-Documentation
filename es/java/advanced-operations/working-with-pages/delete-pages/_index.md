@@ -3,7 +3,7 @@ title: Eliminar páginas de PDF programáticamente
 linktitle: Eliminar páginas de PDF
 type: docs
 weight: 40
-url: es/java/delete-pages/
+url: /es/java/delete-pages/
 description: Puedes eliminar páginas de tu archivo PDF usando la biblioteca de Java.
 lastmod: "2021-06-05"
 sitemap:

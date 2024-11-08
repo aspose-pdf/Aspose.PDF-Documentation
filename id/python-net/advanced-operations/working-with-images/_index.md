@@ -3,7 +3,7 @@ title: Bekerja dengan Gambar dalam PDF menggunakan Python
 linktitle: Bekerja dengan Gambar
 type: docs
 weight: 40
-url: id/python-net/working-with-images/
+url: /id/python-net/working-with-images/
 description: Bagian ini menjelaskan fitur bekerja dengan gambar dalam file PDF menggunakan pustaka Python.
 lastmod: "2023-04-17"
 sitemap:
@@ -81,9 +81,9 @@ Ada banyak metode dan alat untuk mengedit dan memanipulasi gambar dalam dokumen 
 
 Anda dapat melakukan hal berikut:
 
-- [Tambahkan Gambar ke File PDF yang Ada](/pdf/python-net/add-image-to-existing-pdf-file/) - tambahkan gambar dan referensi dari satu gambar dalam dokumen PDF, setelah itu kontrol kualitas.
-- [Hapus Gambar dari File PDF](/pdf/python-net/delete-images-from-pdf-file/) - periksa potongan kode untuk menghapus gambar dari file PDF.
-- [Ekstrak Gambar dari File PDF](/pdf/python-net/extract-images-from-pdf-file/) - artikel berikut menunjukkan cara mengekstrak gambar dari file PDF menggunakan pustaka Python.
+- [Tambahkan Gambar ke File PDF yang Ada](/pdf/id/python-net/add-image-to-existing-pdf-file/) - tambahkan gambar dan referensi dari satu gambar dalam dokumen PDF, setelah itu kontrol kualitas.
+- [Hapus Gambar dari File PDF](/pdf/id/python-net/delete-images-from-pdf-file/) - periksa potongan kode untuk menghapus gambar dari file PDF.
+- [Ekstrak Gambar dari File PDF](/pdf/id/python-net/extract-images-from-pdf-file/) - artikel berikut menunjukkan cara mengekstrak gambar dari file PDF menggunakan pustaka Python.
 
 <script type="application/ld+json">
 {

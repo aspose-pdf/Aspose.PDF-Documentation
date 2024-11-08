@@ -2,12 +2,12 @@
 title: Aspose.PDF for .NET via COM Interop
 type: docs
 weight: 20
-url: ko/net/use-aspose-pdf-for-net-via-com-interop/
+url: /ko/net/use-aspose-pdf-for-net-via-com-interop/
 ---
 
 {{% alert color="primary" %}}
 
-이 주제의 정보는 다음 프로그래밍 언어 중 하나에서 [Aspose.PDF for .NET](/pdf/net/)을 COM Interop을 통해 사용하려는 시나리오에 적용됩니다:
+이 주제의 정보는 다음 프로그래밍 언어 중 하나에서 [Aspose.PDF for .NET](/pdf/ko/net/)을 COM Interop을 통해 사용하려는 시나리오에 적용됩니다:
 
 - ASP
 - Delphi

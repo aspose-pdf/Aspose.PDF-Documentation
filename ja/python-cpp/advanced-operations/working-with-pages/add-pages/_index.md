@@ -3,7 +3,7 @@ title: Python経由でC++を使用してPDFにページを追加
 linktitle: ページを追加
 type: docs
 weight: 10
-url: ja/python-cpp/add-pages/
+url: /ja/python-cpp/add-pages/
 description: この記事では、C++を使用してPythonでPDFファイルの希望の位置にページを挿入（追加）する方法を教えます。
 lastmod: "2024-04-17"
 sitemap:

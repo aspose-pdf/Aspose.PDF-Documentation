@@ -2,7 +2,7 @@
 title: 画像抽出器
 type: docs
 weight: 80
-url: ja/net/plugins/imageextractor/
+url: /ja/net/plugins/imageextractor/
 description: ImageExtractorプラグインでPDFから画像を簡単に抽出
 lastmod: "2024-01-24"
 draft: false

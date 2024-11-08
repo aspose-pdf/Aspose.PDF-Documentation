@@ -2,7 +2,7 @@
 title: Adding Custom Properties
 type: docs
 weight: 10
-url: ar/reportingservices/adding-custom-properties/
+url: /ar/reportingservices/adding-custom-properties/
 lastmod: "2021-06-05"
 ---
 

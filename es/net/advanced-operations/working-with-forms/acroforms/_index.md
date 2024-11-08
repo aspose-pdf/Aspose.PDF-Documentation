@@ -3,7 +3,7 @@ title: Trabajando con AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: es/net/acroforms/
+url: /es/net/acroforms/
 description: Con Aspose.PDF para .NET puedes crear un formulario desde cero, llenar el campo de formulario en un documento PDF, extraer datos del formulario, y etc.
 lastmod: "2022-02-17"
 sitemap:
@@ -98,12 +98,12 @@ AcroForms tiene capacidades que no se encuentran en XFA y viceversa, XFA tiene a
 Para un aprendizaje más detallado de las capacidades de la biblioteca Java, consulta los siguientes artículos:
 Para un aprendizaje más detallado de las capacidades de la biblioteca Java, consulte los siguientes artículos:
 
-- [Crear AcroForm](/pdf/net/create-form) - crea un formulario desde cero con C#.
-- [Llenar AcroForm](/pdf/net/fill-form) - llena campos de formulario en tu documento PDF.
-- [Extraer AcroForm](/pdf/net/extract-form) - obtén el valor de todos o un campo individual del documento PDF.
-- [Modificar AcroForm](/pdf/net/modifing-form) - obtén o establece FieldLimit, establece la fuente del campo del formulario y etc.
-- [Publicar datos de AcroForm](/pdf/net/posting-acroform-data/) - importa y exporta datos del formulario a un archivo XML y desde este.
-- [Importar y Exportar Datos](/pdf/net/import-and-export-data/) - importa y exporta datos usando la Clase Formulario.
+- [Crear AcroForm](/pdf/es/net/create-form) - crea un formulario desde cero con C#.
+- [Llenar AcroForm](/pdf/es/net/fill-form) - llena campos de formulario en tu documento PDF.
+- [Extraer AcroForm](/pdf/es/net/extract-form) - obtén el valor de todos o un campo individual del documento PDF.
+- [Modificar AcroForm](/pdf/es/net/modifing-form) - obtén o establece FieldLimit, establece la fuente del campo del formulario y etc.
+- [Publicar datos de AcroForm](/pdf/es/net/posting-acroform-data/) - importa y exporta datos del formulario a un archivo XML y desde este.
+- [Importar y Exportar Datos](/pdf/es/net/import-and-export-data/) - importa y exporta datos usando la Clase Formulario.
 
 <script type="application/ld+json">
 {

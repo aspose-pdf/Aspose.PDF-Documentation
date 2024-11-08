@@ -3,7 +3,7 @@ title: Работа с таблицами в PDF с использованием
 linktitle: Работа с таблицами
 type: docs
 weight: 50
-url: ru/net/working-with-tables/
+url: /ru/net/working-with-tables/
 description: Этот раздел описывает, как добавить и извлечь таблицу, как манипулировать и интегрировать таблицу с использованием библиотеки C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,13 +82,13 @@ sitemap:
 
 Вы можете делать следующее:
 
-- [Создать или Добавить Таблицу в существующий PDF-документ](/pdf/net/add-table-in-existing-pdf-document/) - создайте вашу таблицу в pdf-файле с объединением столбцов или строк с учетом границ, отступов и поля.
-- [Извлечь Таблицу из существующего PDF-документа](/pdf/net/extract-table-from-existing-pdf-document/) - вы можете извлечь таблицу из PDF-файла или извлечь границу таблицы как изображение.
-- [Интегрировать Таблицу с Источниками Данных](/pdf/net/integrate-table/) - интегрируйте таблицу с базой данных, интегрируйте таблицу с источником Entity Framework, используя библиотеку .NET.
-- [Манипулировать Таблицами в существующем PDF](/pdf/net/manipulate-tables-in-existing-pdf/) - манипулируйте таблицами в вашем PDF с помощью TableAbsorber.
+- [Создать или Добавить Таблицу в существующий PDF-документ](/pdf/ru/net/add-table-in-existing-pdf-document/) - создайте вашу таблицу в pdf-файле с объединением столбцов или строк с учетом границ, отступов и поля.
+- [Извлечь Таблицу из существующего PDF-документа](/pdf/ru/net/extract-table-from-existing-pdf-document/) - вы можете извлечь таблицу из PDF-файла или извлечь границу таблицы как изображение.
+- [Интегрировать Таблицу с Источниками Данных](/pdf/ru/net/integrate-table/) - интегрируйте таблицу с базой данных, интегрируйте таблицу с источником Entity Framework, используя библиотеку .NET.
+- [Манипулировать Таблицами в существующем PDF](/pdf/ru/net/manipulate-tables-in-existing-pdf/) - манипулируйте таблицами в вашем PDF с помощью TableAbsorber.
 
-- [Манипулирование таблицами в существующем PDF](/pdf/net/manipulate-tables-in-existing-pdf/) - манипулируйте таблицами в вашем PDF с использованием TableAbsorber.
-- [Удаление таблиц из существующего PDF](/pdf/net/remove-tables-from-existing-pdf/) - удалите одну или несколько таблиц из документа PDF.
+- [Манипулирование таблицами в существующем PDF](/pdf/ru/net/manipulate-tables-in-existing-pdf/) - манипулируйте таблицами в вашем PDF с использованием TableAbsorber.
+- [Удаление таблиц из существующего PDF](/pdf/ru/net/remove-tables-from-existing-pdf/) - удалите одну или несколько таблиц из документа PDF.
 
 <script type="application/ld+json">
 {

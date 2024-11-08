@@ -3,7 +3,7 @@ title: Décrypter un PDF en utilisant JavaScript
 linktitle: Décrypter un fichier PDF
 type: docs
 weight: 40
-url: fr/javascript-cpp/decrypt-pdf/
+url: /fr/javascript-cpp/decrypt-pdf/
 description: Décrypter un fichier PDF avec Aspose.PDF pour JavaScript via C++.
 lastmod: "2022-12-15"
 sitemap:

@@ -2,7 +2,7 @@
 title: إضافة حقول نموذج PDF
 type: docs
 weight: 10
-url: ar/net/add-form-fields/
+url: /ar/net/add-form-fields/
 description: يشرح هذا الموضوع كيفية العمل مع حقول النموذج باستخدام Aspose.PDF Facades باستخدام فئة FormEditor.
 lastmod: "2021-06-05"
 draft: false

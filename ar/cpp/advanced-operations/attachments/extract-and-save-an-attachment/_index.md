@@ -3,7 +3,7 @@ title: استخراج وحفظ مرفق
 linktitle: استخراج وحفظ مرفق
 type: docs
 weight: 20
-url: ar/cpp/extract-and-save-an-attachment/
+url: /ar/cpp/extract-and-save-an-attachment/
 description: Aspose.PDF ل C++ يسمح لك بالحصول على جميع المرفقات من مستند PDF. أيضًا، يمكنك الحصول على مرفق فردي من المستند الخاص بك.
 lastmod: "2022-02-07"
 sitemap:

@@ -3,7 +3,7 @@
 title: Tambah dan Hapus Penanda Buku
 type: docs
 weight: 10
-url: id/cpp/add-and-delete-bookmarks/
+url: /id/cpp/add-and-delete-bookmarks/
 ---
 
 ## <ins>**Tambah Penanda Buku**

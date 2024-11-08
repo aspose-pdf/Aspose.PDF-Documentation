@@ -2,7 +2,7 @@
 title: Importar e Exportar Anotações para XFDF 
 type: docs
 weight: 20
-url: pt/net/import-export-annotations/
+url: /pt/net/import-export-annotations/
 description: Esta seção explica como importar e exportar anotações de um arquivo PDF para XFDF com Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -14,7 +14,7 @@ XFDF significa XML Forms Data Format. É um formato de arquivo baseado em XML. E
 
 ## Importando e Exportando Anotações para XFDF
 
-[Aspose.PDF para .NET](/pdf/net/) é um componente rico em recursos quando se trata de editar documentos PDF. Como sabemos, XFDF é um aspecto importante da manipulação de formulários PDF, o [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) no [Aspose.PDF for .NET](/pdf/net/) considerou isso muito bem, e forneceu métodos para importar e exportar dados de anotações para arquivos XFDF.
+[Aspose.PDF para .NET](/pdf/pt/net/) é um componente rico em recursos quando se trata de editar documentos PDF. Como sabemos, XFDF é um aspecto importante da manipulação de formulários PDF, o [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) no [Aspose.PDF for .NET](/pdf/pt/net/) considerou isso muito bem, e forneceu métodos para importar e exportar dados de anotações para arquivos XFDF.
 
 A classe [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) contém dois métodos para trabalhar com a importação e exportação de anotações para o arquivo XFDF. [ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) método fornece a funcionalidade para exportar anotações de um documento PDF para um arquivo XFDF, enquanto o método [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) permite importar anotações de um arquivo XFDF existente. Para importar ou exportar anotações, precisamos especificar os tipos de anotações. Podemos especificar esses tipos na forma de uma enumeração e, em seguida, passar essa enumeração como um argumento para qualquer um desses métodos. Dessa forma, as anotações dos tipos especificados serão apenas importadas ou exportadas para um arquivo XFDF.
 

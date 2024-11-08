@@ -3,7 +3,7 @@ title: Mengonversi XML ke PDF
 linktitle: Mengonversi XML ke PDF
 type: docs
 weight: 320
-url: id/androidjava/convert-xml-to-pdf/
+url: /id/androidjava/convert-xml-to-pdf/
 lastmod: "2021-06-05"
 description: Pustaka Aspose.PDF menyajikan beberapa cara untuk mengonversi XML ke PDF. Anda dapat menggunakan XslFoLoadOptions atau melakukannya dengan struktur file yang tidak benar.
 sitemap:

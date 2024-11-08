@@ -3,7 +3,7 @@ title: الميزات الرئيسية لـ Aspose.PDF
 linktitle: الميزات الرئيسية
 type: docs
 weight: 80
-url: ar/cpp/key-features/
+url: /ar/cpp/key-features/
 description: يعرض Aspose.PDF for C++ ميزاته العامة. تصف هذه الصفحة إصدارات PDF المدعومة وجميع التعديلات التي يمكننا إجراؤها على النصوص والصور والتعليقات التوضيحية والمستندات، إلخ.
 lastmod: "2021-11-08"
 sitemap:

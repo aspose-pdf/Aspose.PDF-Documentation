@@ -3,7 +3,7 @@ title: Node.js에서 PDF 문서 작업하기
 linktitle: 문서 작업하기
 type: docs
 weight: 10
-url: ko/nodejs-cpp/working-with-documents/
+url: /ko/nodejs-cpp/working-with-documents/
 description: 이 기사는 Aspose.PDF for Node.js via C++ 도구를 사용하여 PDF 문서로 할 수 있는 조작에 대해 설명합니다.
 lastmod: "2023-11-16"
 sitemap:
@@ -21,7 +21,7 @@ PDF는 현재 국제 표준화 기구(ISO)에 의해 유지되는 개방형 표�
 
 You are able to do the following:
 
-- [Optimize PDF](/pdf/nodejs-cpp/optimize-pdf/) - 페이지 콘텐츠를 최적화하고, 파일 크기를 최적화하며, 사용되지 않는 객체를 제거하고, 모든 이미지를 압축하여 문서를 성공적으로 최적화합니다.
-- [Optimize PDF Resources](/pdf/nodejs-cpp/optimize-pdf-resources/) - 페이지 콘텐츠를 최적화하고, 파일 크기를 최적화하며, 사용되지 않는 객체를 제거하고, 모든 이미지를 압축하여 문서를 성공적으로 최적화합니다.
-- [Merge PDF](/pdf/nodejs-cpp/merge-pdf/) - 여러 PDF 파일을 Node.js를 사용하여 하나의 PDF 문서로 병합합니다.
-- [Split PDF](/pdf/nodejs-cpp/split-pdf/) - C++를 통해 Node.js에서 PDF 페이지를 개별 PDF 파일로 분할합니다.
+- [Optimize PDF](/pdf/ko/nodejs-cpp/optimize-pdf/) - 페이지 콘텐츠를 최적화하고, 파일 크기를 최적화하며, 사용되지 않는 객체를 제거하고, 모든 이미지를 압축하여 문서를 성공적으로 최적화합니다.
+- [Optimize PDF Resources](/pdf/ko/nodejs-cpp/optimize-pdf-resources/) - 페이지 콘텐츠를 최적화하고, 파일 크기를 최적화하며, 사용되지 않는 객체를 제거하고, 모든 이미지를 압축하여 문서를 성공적으로 최적화합니다.
+- [Merge PDF](/pdf/ko/nodejs-cpp/merge-pdf/) - 여러 PDF 파일을 Node.js를 사용하여 하나의 PDF 문서로 병합합니다.
+- [Split PDF](/pdf/ko/nodejs-cpp/split-pdf/) - C++를 통해 Node.js에서 PDF 페이지를 개별 PDF 파일로 분할합니다.

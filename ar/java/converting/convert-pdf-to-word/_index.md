@@ -3,7 +3,7 @@ title: تحويل PDF إلى مستندات Microsoft Word في Java
 linktitle: تحويل PDF إلى Word
 type: docs
 weight: 10
-url: ar/java/convert-pdf-to-word/
+url: /ar/java/convert-pdf-to-word/
 lastmod: "2021-11-19"
 description: تحويل ملف PDF إلى صيغة DOC و DOCX بسهولة وتحكم كامل باستخدام Aspose.PDF لـ Java. تعلم المزيد حول كيفية تحسين تحويل PDF إلى مستندات Microsoft Word.
 sitemap:

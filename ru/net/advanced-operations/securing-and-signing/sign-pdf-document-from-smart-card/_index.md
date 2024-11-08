@@ -3,7 +3,7 @@ title: Как добавить подпись смарт-карты к PDF
 linktitle: Подписание PDF с помощью смарт-карты
 type: docs
 weight: 40
-url: ru/net/sign-pdf-document-from-smart-card/
+url: /ru/net/sign-pdf-document-from-smart-card/
 description: Aspose.PDF для .NET позволяет подписывать PDF-документы с помощью поля подписи смарт-карты.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Aspose.PDF для .NET предоставляет функциональность добавления цифровых подписей из хранилища ключей. Вы можете применить подпись, приняв сертификат, предоставленный хранилищем сертификатов, смарт-картой или [PIV-картой](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card), подключенной к системе во время выполнения.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Ниже приведены фрагменты кода для подписи PDF-документа с помощью смарт-карты:
 

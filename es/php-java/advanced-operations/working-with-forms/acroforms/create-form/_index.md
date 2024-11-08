@@ -4,7 +4,7 @@ title: Crear AcroForms - Crear PDF Rellenables en PHP
 linktitle: Crear AcroForms  
 type: docs  
 weight: 10  
-url: es/php-java/create-forms/  
+url: /es/php-java/create-forms/  
 description: Esta sección explica cómo crear AcroForms desde cero en tus documentos PDF con Aspose.PDF para PHP a través de Java.  
 lastmod: "2024-06-05"  
 sitemap:  

@@ -2,7 +2,7 @@
 title: Insérer une Page Vide dans un Fichier PDF en PHP
 type: docs
 weight: 70
-url: fr/java/insert-an-empty-page-into-a-pdf-file-in-php/
+url: /fr/java/insert-an-empty-page-into-a-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Set Default Font Name
 linktitle: Set Default Font Name
 type: docs
 weight: 90
-url: ja/net/set-default-font-name/
+url: /ja/net/set-default-font-name/
 description: このセクションでは、PDFから画像への変換プロセス中にデフォルトのフォント名を設定する方法について説明します。
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 **Aspose.PDF for .NET** APIでは、ドキュメントにフォントが存在しない場合にデフォルトのフォント名を設定できます。RenderingOptionsクラスのDefaultFontNameプロパティを使用してデフォルトのフォント名を設定できます。DefaultFontNameがnullに設定されている場合は、**Times New Roman**フォントが使用されます。次のコードスニペットは、PDFを画像に保存する際にデフォルトのフォント名を設定する方法を示しています：
 
-次のコードスニペットも新しいグラフィカルな[Aspose.Drawing](/pdf/net/drawing/)インターフェースで動作します。
+次のコードスニペットも新しいグラフィカルな[Aspose.Drawing](/pdf/ja/net/drawing/)インターフェースで動作します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください。

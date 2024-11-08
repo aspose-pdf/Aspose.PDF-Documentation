@@ -3,7 +3,7 @@ title: Extrair Conteúdo Marcado de PDF
 linktitle: Extrair Conteúdo Marcado
 type: docs
 weight: 20
-url: pt/java/extract-tagged-content-from-tagged-pdfs/
+url: /pt/java/extract-tagged-content-from-tagged-pdfs/
 description: Este artigo explica como extrair conteúdo marcado de um documento PDF usando Aspose.PDF para Java
 lastmod: "2021-06-05"
 sitemap:

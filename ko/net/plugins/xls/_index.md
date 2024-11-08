@@ -2,7 +2,7 @@
 title: XLS 변환기
 type: docs
 weight: 20
-url: ko/net/plugins/xls/
+url: /ko/net/plugins/xls/
 description: Aspose.Pdf 플러그인을 사용하여 PDF를 Excel 스프레드시트로 변환하는 방법
 lastmod: "2024-01-24"
 ---

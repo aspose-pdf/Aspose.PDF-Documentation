@@ -3,7 +3,7 @@ title: Déterminer le Saut de Ligne
 linktitle: Déterminer le Saut de Ligne
 type: docs
 weight: 70
-url: fr/java/determine-line-break/
+url: /fr/java/determine-line-break/
 description: Apprenez-en davantage sur la détermination d'un saut de ligne d'un TextFragment multi-ligne en utilisant Java
 lastmod: "2021-06-05"
 sitemap:

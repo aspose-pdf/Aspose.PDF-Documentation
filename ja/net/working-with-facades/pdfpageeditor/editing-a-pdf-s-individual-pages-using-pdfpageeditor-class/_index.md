@@ -2,7 +2,7 @@
 title: PDFの個々のページを編集する
 type: docs
 weight: 20
-url: ja/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
+url: /ja/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
 description: このセクションでは、PdfPageEditorクラスを使用してPDFの個々のページを編集する方法を説明します。
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF for .NET](/pdf/net/)のAspose.Pdf.Facades名前空間は、PDFファイル内の個々のページを操作することを可能にします。この機能は、ページの表示、配置、トランジションなどを扱うのに役立ちます。PdfPageEditorクラスは、この機能を実現するのに役立ちます。この記事では、このクラスが提供するプロパティとメソッド、およびこれらのメソッドの動作について見ていきます。
+[Aspose.PDF for .NET](/pdf/ja/net/)のAspose.Pdf.Facades名前空間は、PDFファイル内の個々のページを操作することを可能にします。この機能は、ページの表示、配置、トランジションなどを扱うのに役立ちます。PdfPageEditorクラスは、この機能を実現するのに役立ちます。この記事では、このクラスが提供するプロパティとメソッド、およびこれらのメソッドの動作について見ていきます。
 
 {{% /alert %}}
 

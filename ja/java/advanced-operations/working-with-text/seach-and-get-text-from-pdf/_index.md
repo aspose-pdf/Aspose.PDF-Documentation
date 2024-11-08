@@ -3,7 +3,7 @@ title: PDFドキュメントのページからテキストを検索して取得�
 linktitle: 検索してテキストを取得する
 type: docs
 weight: 60
-url: ja/java/search-and-get-text-from-pdf/
+url: /ja/java/search-and-get-text-from-pdf/
 description: この記事では、さまざまなツールを使用してPDFドキュメントからテキストを検索し取得する方法を説明します。特定のページまたはすべてのページから正規表現で検索できます。
 lastmod: "2021-06-05"
 sitemap:

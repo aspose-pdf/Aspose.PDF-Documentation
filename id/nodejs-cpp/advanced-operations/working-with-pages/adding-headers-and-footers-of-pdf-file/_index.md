@@ -3,7 +3,7 @@ title: Tambahkan Header dan Footer ke PDF di Node.js
 linktitle: Tambahkan Header dan Footer ke PDF
 type: docs
 weight: 70
-url: id/nodejs-cpp/add-headers-and-footers-of-pdf-file/
+url: /id/nodejs-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF untuk Node.js melalui C++ memungkinkan Anda menambahkan header dan footer ke file PDF Anda menggunakan AsposePdfAddTextHeaderFooter.
 lastmod: "2023-11-16"
 sitemap:

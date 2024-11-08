@@ -2,7 +2,7 @@
 title: Impor Penanda Buku dari XML ke File PDF yang Ada (facades)
 type: docs
 weight: 30
-url: id/java/import-bookmark/
+url: /id/java/import-bookmark/
 description: Bagian ini menjelaskan cara mengimpor penanda buku dengan Aspose.PDF Facades menggunakan Kelas PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: 画像とテキストの追加 
 type: docs
 weight: 10
-url: ja/net/adding-images-and-text-using-pdffilemend-class/
+url: /ja/net/adding-images-and-text-using-pdffilemend-class/
 description: このセクションでは、PdfFileMend クラスを使用して画像とテキストを追加する方法について説明します。
 lastmod: "2021-06-05"
 draft: false
@@ -12,7 +12,7 @@ draft: false
 それは、[AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)と[AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)という名前の2つのメソッドを提供します。
 ``` [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) メソッドを使用すると、JPG、GIF、PNG、および BMP タイプの画像を追加できます。[AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) メソッドは、[FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) クラスの型の引数を受け取り、既存の PDF ファイルに追加します。画像とテキストは、左下と右上の座標によって指定された矩形領域に追加できます。画像を追加する際には、画像ファイルのパスまたは画像ファイルのストリームのいずれかを指定できます。画像またはテキストを追加するページ番号を指定するために、これらのメソッドの両方がページ番号の引数を提供します。したがって、指定された場所に画像やテキストを追加するだけでなく、指定されたページにも追加できます。
 
-画像は PDF ドキュメントの内容の重要な部分です。 画像の操作は、PDFファイルを扱う人々にとって一般的な要件です。この記事では、既存のPDFファイル内の画像をどのように操作できるかを、[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)と[Aspose.PDF for .NET](/pdf/net/)の助けを借りて探ります。[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)に関連するすべての画像操作はこの記事に統合されています。
+画像は PDF ドキュメントの内容の重要な部分です。 画像の操作は、PDFファイルを扱う人々にとって一般的な要件です。この記事では、既存のPDFファイル内の画像をどのように操作できるかを、[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)と[Aspose.PDF for .NET](/pdf/ja/net/)の助けを借りて探ります。[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)に関連するすべての画像操作はこの記事に統合されています。
 
 ## 実装の詳細
 
@@ -44,7 +44,7 @@ public static void AddImage01()
         }
 ```
 
-![Add Image](/pdf/net/images/add_image1.png)
+![Add Image](/pdf/ja/net/images/add_image1.png)
 
 
 [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1) の助けを借りて、1つの画像を別の画像の上に重ねることができます。
@@ -69,7 +69,7 @@ public static void AddImage02()
         }
 ```
 
-![Add Image](/pdf/net/images/add_image2.png)
+![Add Image](/pdf/ja/net/images/add_image2.png)
 
 PDFファイルに画像を格納する方法は複数あります。以下の例でその一つを示します：
 
@@ -135,7 +135,7 @@ public static void AddText01()
 
 どのように見えるか確認してください：
 
-![Add Text](/pdf/net/images/add_text.png)
+![Add Text](/pdf/ja/net/images/add_text.png)
 
 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)を追加するもう一つの方法です。さらに、テキストが収まるべき矩形を示します。
 

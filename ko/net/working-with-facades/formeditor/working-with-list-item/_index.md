@@ -2,7 +2,7 @@
 title: 목록 항목 작업
 type: docs
 weight: 30
-url: ko/net/working-with-list-item/
+url: /ko/net/working-with-list-item/
 description: 이 섹션은 FormEditor 클래스를 사용하여 Aspose.PDF Facades로 목록 항목을 작업하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

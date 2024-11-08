@@ -3,7 +3,7 @@ title: PDF 주석
 linktitle: PDF 주석  
 type: docs  
 weight: 100  
-url: ko/php-java/annotations/  
+url: /ko/php-java/annotations/  
 description: 이 섹션에서는 Aspose.PDF 라이브러리를 사용하여 PDF 파일에 모든 종류의 주석을 사용하는 방법을 보여줍니다. PHP로 주석을 그리거나 열거나 추가하는 방법을 알아보세요.  
 lastmod: "2024-06-26"  
 sitemap:  
@@ -22,4 +22,4 @@ PDF 뷰어는 일반적으로 텍스트 강조 표시, 메모, 선 또는 도형
 
 다음 작업을 수행할 수 있습니다:
 
-- [주석 추가](/pdf/php-java/add-delete-and-get-annotation/) - 이 섹션에서는 워터마크 주석을 다루는 방법을 설명합니다.
+- [주석 추가](/pdf/ko/php-java/add-delete-and-get-annotation/) - 이 섹션에서는 워터마크 주석을 다루는 방법을 설명합니다.

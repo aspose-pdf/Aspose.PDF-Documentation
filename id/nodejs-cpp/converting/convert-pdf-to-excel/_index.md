@@ -3,7 +3,7 @@ title: Mengonversi PDF ke Excel di Node.js
 linktitle: Mengonversi PDF ke Excel
 type: docs
 weight: 20
-url: id/nodejs-cpp/convert-pdf-to-xlsx/
+url: /id/nodejs-cpp/convert-pdf-to-xlsx/
 lastmod: "2023-11-16"
 keywords: mengonversi PDF ke Excel menggunakan node.js, mengonversi PDF ke XLSX.
 description: Aspose.PDF untuk Node.js memungkinkan Anda mengonversi PDF ke format XLSX.

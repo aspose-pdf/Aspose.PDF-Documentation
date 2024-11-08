@@ -3,7 +3,7 @@ title: إنشاء صور مصغرة من مستندات PDF
 linktitle: إنشاء صور مصغرة
 type: docs
 weight: 100
-url: ar/java/generate-thumbnail-images-from-pdf-documents/
+url: /ar/java/generate-thumbnail-images-from-pdf-documents/
 description: يصف هذا القسم كيفية إنشاء صور مصغرة من مستندات PDF باستخدام Aspose.PDF لـ Java.
 lastmod: "2021-06-05"
 ---

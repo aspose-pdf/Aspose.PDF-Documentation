@@ -2,7 +2,7 @@
 title: Justifier le texte dans un champ de zone de texte
 type: docs
 weight: 20
-url: fr/net/justify-text-in-a-textbox-field/
+url: /fr/net/justify-text-in-a-textbox-field/
 description: Cet article vous montre comment justifier le texte dans un champ de zone de texte en utilisant la classe Form.
 lastmod: "2021-06-05"
 draft: false

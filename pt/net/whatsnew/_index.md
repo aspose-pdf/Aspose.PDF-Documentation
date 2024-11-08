@@ -3,7 +3,7 @@ title: O que há de novo
 linktitle: O que há de novo
 type: docs
 weight: 10
-url: pt/net/whatsnew/
+url: /pt/net/whatsnew/
 description: Esta página apresenta as novidades mais populares em Aspose.PDF para .NET que foram introduzidas nas últimas versões.
 sitemap:
     changefreq: "monthly"

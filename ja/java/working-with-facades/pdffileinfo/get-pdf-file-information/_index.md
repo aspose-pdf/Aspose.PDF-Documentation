@@ -2,7 +2,7 @@
 title: PDFファイル情報の取得 - ファサード
 type: docs
 weight: 10
-url: ja/java/get-pdf-information/
+url: /ja/java/get-pdf-information/
 description: このセクションでは、PdfFileInfoクラスを使用してAspose.PDFファサードでPDFファイル情報を取得する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

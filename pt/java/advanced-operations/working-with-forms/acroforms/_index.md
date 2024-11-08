@@ -3,7 +3,7 @@ title: Trabalhando com AcroForms em PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: pt/java/acroforms/
+url: /pt/java/acroforms/
 description: Com o Aspose.PDF para Java, você pode criar um formulário do zero, preencher o campo do formulário em um documento PDF, extrair dados do formulário, adicionar ou remover campos no formulário existente.
 lastmod: "2021-06-05"
 sitemap:
@@ -34,10 +34,10 @@ Portanto, PDFs são o melhor formato de arquivo para formulários, pois podem se
 
 Para um estudo mais detalhado das possibilidades de trabalho com formulários, estude os seguintes artigos na seção:
 
--[Criar AcroForm](/pdf/java/create-form/) - criar formulário do zero, adicionando RadioButtonField, TextBoxField, Campo de Legenda usando Java.
+-[Criar AcroForm](/pdf/pt/java/create-form/) - criar formulário do zero, adicionando RadioButtonField, TextBoxField, Campo de Legenda usando Java.
 
--[Preencher AcroForm](/pdf/java/fill-form/) - para preencher um campo de formulário, obtenha o campo da coleção de Formulários do objeto Document.
+-[Preencher AcroForm](/pdf/pt/java/fill-form/) - para preencher um campo de formulário, obtenha o campo da coleção de Formulários do objeto Document.
 
--[Extrair Dados AcroForm](/pdf/java/extract-form/) - obter valores de todos e de campos individuais, etc.
+-[Extrair Dados AcroForm](/pdf/pt/java/extract-form/) - obter valores de todos e de campos individuais, etc.
 
--[Modificar AcroForm](/pdf/java/modifing-form/) - obter/definir FieldLimit, remover campos em formulários existentes, definir fonte de campo de formulário diferente das 14 Fontes PDF Core com Java.
+-[Modificar AcroForm](/pdf/pt/java/modifing-form/) - obter/definir FieldLimit, remover campos em formulários existentes, definir fonte de campo de formulário diferente das 14 Fontes PDF Core com Java.

@@ -3,7 +3,7 @@ title: Node.js에서 PDF 병합 방법
 linktitle: PDF 파일 병합
 type: docs
 weight: 20
-url: ko/nodejs-cpp/merge-pdf/
+url: /ko/nodejs-cpp/merge-pdf/
 description: 이 페이지는 Aspose.PDF for Node.js via C++를 사용하여 PDF 문서를 단일 PDF 파일로 병합하는 방법을 설명합니다.
 lastmod: "2023-11-16"
 sitemap:

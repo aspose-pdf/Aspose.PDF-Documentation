@@ -2,7 +2,7 @@
 title: Excluir uma Página Particular do Arquivo PDF em Ruby
 type: docs
 weight: 20
-url: pt/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
+url: /pt/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

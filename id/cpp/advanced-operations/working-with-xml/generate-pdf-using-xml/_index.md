@@ -3,7 +3,7 @@ title: Menghasilkan PDF dari XML
 linktitle: Menghasilkan PDF dari XML
 type: docs
 weight: 10
-url: id/cpp/generate-pdf-from-xml
+url: /id/cpp/generate-pdf-from-xml
 description: Aspose.PDF untuk C++ menyediakan beberapa cara untuk mengonversi file XML menjadi dokumen PDF yang membutuhkan file XML input.
 lastmod: "2022-01-31"
 sitemap:

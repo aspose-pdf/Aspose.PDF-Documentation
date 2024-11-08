@@ -3,7 +3,7 @@ title: Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di 
 linktitle: Lampirkan ZUGFeRD ke PDF
 type: docs
 weight: 10
-url: id/java/attach-zugferd/
+url: /id/java/attach-zugferd/
 description: Pelajari cara membuat dokumen PDF dengan ZUGFeRD di Aspose.PDF untuk Java
 lastmod: "2024-01-18"
 sitemap:

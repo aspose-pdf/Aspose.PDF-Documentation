@@ -3,7 +3,7 @@ title: استخراج جدول من PDF
 linktitle: استخراج جدول
 type: docs
 weight: 20
-url: ar/cpp/extract-table-from-existing-pdf-document/
+url: /ar/cpp/extract-table-from-existing-pdf-document/
 description: يجعل Aspose.PDF for C++ من الممكن تنفيذ عمليات متنوعة مع الجداول الموجودة في مستند pdf الخاص بك. يمكنك إضافة واستخراج جدول في مستند PDF موجود، عرض الجدول على صفحة جديدة إلخ.
 lastmod: "2021-11-11"
 sitemap:

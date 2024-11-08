@@ -10,7 +10,7 @@ type: docs
 
 weight: 110
 
-url: es/sharepoint/
+url: /es/sharepoint/
 
 is_root: true
 
@@ -50,21 +50,21 @@ A continuación se presentan los enlaces a algunos recursos útiles que puede ne
 
 
 
-- [Descripción general del producto Aspose.PDF para SharePoint](/pdf/sharepoint/product-overview/) 
+- [Descripción general del producto Aspose.PDF para SharePoint](/pdf/es/sharepoint/product-overview/) 
 
-- [Formatos de archivo compatibles con Aspose.PDF para SharePoint](/pdf/sharepoint/supported-file-formats/)
+- [Formatos de archivo compatibles con Aspose.PDF para SharePoint](/pdf/es/sharepoint/supported-file-formats/)
 
 
-- [Características de Aspose.PDF para SharePoint](/pdf/sharepoint/features/)
+- [Características de Aspose.PDF para SharePoint](/pdf/es/sharepoint/features/)
 
 - [Aspose.PDF para SharePoint Notas de Lanzamiento](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 
 - [Descargar Aspose.PDF para SharePoint](https://releases.aspose.com/pdf/sharepoint/)
 
-- [Instalar Aspose.Pdf para SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Instalar Aspose.Pdf para SharePoint](/pdf/es/sharepoint/install-aspose-pdf-for-sharepoint/)
 
-- [Evaluar Aspose.Pdf](/pdf/sharepoint/evaluate-aspose-pdf/)
+- [Evaluar Aspose.Pdf](/pdf/es/sharepoint/evaluate-aspose-pdf/)
 
-- [Licenciar Aspose.Pdf para SharePoint](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Licenciar Aspose.Pdf para SharePoint](/pdf/es/sharepoint/license-aspose-pdf-for-sharepoint/)
 
-- [Limitaciones de la API](/pdf/sharepoint/api-limitations/)
+- [Limitaciones de la API](/pdf/es/sharepoint/api-limitations/)

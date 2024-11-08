@@ -3,7 +3,7 @@ title: Trabalhando com Anotações
 linktitle: Anotações em PDF
 type: docs
 weight: 100
-url: pt/net/annotations/
+url: /pt/net/annotations/
 description: Esta seção mostra como usar todos os tipos de anotações em seu arquivo PDF com a biblioteca Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -90,10 +90,10 @@ A anotação é uma parte importante do arquivo PDF. Usando Aspose.PDF para .NET
 
 Você é capaz de fazer o seguinte:
 
-- [Visão Geral das Anotações](/pdf/net/overview-of-annotations/) - aprenda quais tipos de anotações são definidos pela especificação PDF e o que Aspose.PDF suporta.
-- [Adicionar, Deletar e Obter Anotação](/pdf/net/add-delete-and-get-annotation/) - esta seção explica como trabalhar com todos os tipos de anotações permitidas.
-- [Adicionar, Excluir e Obter Anotação](/pdf/net/add-delete-and-get-annotation/) - esta seção explica como trabalhar com todos os tipos de anotações permitidas.
-- [Importar e exportar anotação com formato XFDF](/pdf/net/import-export-xfdf/) - A biblioteca Aspose.PDF fornece métodos para importar e exportar dados de anotações para arquivos XFDF.
+- [Visão Geral das Anotações](/pdf/pt/net/overview-of-annotations/) - aprenda quais tipos de anotações são definidos pela especificação PDF e o que Aspose.PDF suporta.
+- [Adicionar, Deletar e Obter Anotação](/pdf/pt/net/add-delete-and-get-annotation/) - esta seção explica como trabalhar com todos os tipos de anotações permitidas.
+- [Adicionar, Excluir e Obter Anotação](/pdf/pt/net/add-delete-and-get-annotation/) - esta seção explica como trabalhar com todos os tipos de anotações permitidas.
+- [Importar e exportar anotação com formato XFDF](/pdf/pt/net/import-export-xfdf/) - A biblioteca Aspose.PDF fornece métodos para importar e exportar dados de anotações para arquivos XFDF.
 
 <script type="application/ld+json">
 {

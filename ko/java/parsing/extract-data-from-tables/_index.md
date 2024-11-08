@@ -3,7 +3,7 @@ title: PDF에서 표 데이터 추출
 linktitle: 표 데이터 추출
 type: docs
 weight: 40
-url: ko/java/extract-data-from-table-in-pdf/
+url: /ko/java/extract-data-from-table-in-pdf/
 description: Aspose.PDF for Java를 사용하여 PDF에서 표 형식을 추출하는 방법을 배웁니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -117,7 +117,7 @@ public static void Extract_Marked_Table() {
 
 ## PDF에서 테이블 데이터 추출하여 CSV 파일로 저장하기
 
-다음 예제는 테이블을 추출하여 CSV 파일로 저장하는 방법을 보여줍니다. PDF를 Excel 스프레드시트로 변환하는 방법은 [PDF를 Excel로 변환](/pdf/java/convert-pdf-to-excel/) 문서를 참조하세요.
+다음 예제는 테이블을 추출하여 CSV 파일로 저장하는 방법을 보여줍니다. PDF를 Excel 스프레드시트로 변환하는 방법은 [PDF를 Excel로 변환](/pdf/ko/java/convert-pdf-to-excel/) 문서를 참조하세요.
 
 ```java
 public static void Extract_Table_Save_CSV()

@@ -3,7 +3,7 @@ title: .NET에서 PDF를 마이크로소프트 워드 문서로 변환
 linktitle: PDF를 워드로 변환
 type: docs
 weight: 10
-url: ko/net/convert-pdf-to-word/
+url: /ko/net/convert-pdf-to-word/
 lastmod: "2022-08-04"
 description: Aspose.PDF for .NET을 사용하여 C# 코드로 PDF를 마이크로소프트 워드 형식으로 변환하는 방법을 배우고 PDF를 DOC(DOCX)로 변환을 조정합니다.
 sitemap:
@@ -33,8 +33,8 @@ _형식_: **Word**
 - [C# PDF를 워드로 변환](#csharp-pdf-to-doc)
 - [C# PDF 파일을 워드로 변환하는 방법](#csharp-pdf-to-docx)
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## PDF에서 DOC 및 DOCX로 변환
 
@@ -103,7 +103,7 @@ public static void ConvertPDFtoWordDocAdvanced()
 
 Aspose.PDF for .NET은 무료 온라인 애플리케이션 ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)을 제공합니다. 여기에서 기능 및 품질을 조사해 볼 수 있습니다.
 
-[![PDF를 DOC로 변환](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![PDF를 DOC로 변환](/pdf/ko/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## PDF를 DOCX(Microsoft Word 2007-2021) 파일로 변환
@@ -157,7 +157,7 @@ public static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF for .NET은 무료 온라인 애플리케이션 ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)을 제공합니다. 여기에서 기능과 품질을 조사해 볼 수 있습니다.
 
-[![Aspose.PDF Convertion PDF to Word Free App](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Convertion PDF to Word Free App](/pdf/ko/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

@@ -3,7 +3,7 @@ title: Configurar Nombre de Fuente Predeterminada
 linktitle: Configurar Nombre de Fuente Predeterminada
 type: docs
 weight: 90
-url: es/java/set-default-font-name/
+url: /es/java/set-default-font-name/
 description: Esta sección describe cómo configurar el nombre de fuente predeterminado utilizando la biblioteca Aspose.PDF para Java.
 lastmod: "2021-06-05"
 ---

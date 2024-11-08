@@ -3,7 +3,7 @@ title: Concatenate PDF documents in C#
 linktitle: Concatenate PDF documents
 type: docs
 weight: 20
-url: es/net/concatenate-pdf-documents/
+url: /es/net/concatenate-pdf-documents/
 description: Esta sección explica cómo concatenar documentos PDF con Aspose.PDF Facades usando la clase PdfFileEditor.
 aliases:
     - /pdf/net/concatenate-multiple-pdf-files-using-memorystreams/

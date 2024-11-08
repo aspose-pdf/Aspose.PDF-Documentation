@@ -3,7 +3,7 @@ title: JavaScriptを介してC++でPDFドキュメントを操作する
 linktitle: ドキュメントの操作
 type: docs
 weight: 10
-url: ja/javascript-cpp/working-with-documents/
+url: /ja/javascript-cpp/working-with-documents/
 description: この記事では、Aspose.PDF for JavaScript via C++ライブラリを使用してドキュメントに対してどのような操作ができるかを説明します。
 lastmod: "2023-02-17"
 sitemap:
@@ -21,9 +21,9 @@ PDFはオープンスタンダードであり、現在は国際標準化機構�
 
 You are able to do the following:
 
-- [PDFを最適化する](/pdf/javascript-cpp/optimize-pdf/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮して文書を最適化します。
-- [PDFリソースを最適化する](/pdf/javascript-cpp/optimize-pdf-resources/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮して文書を最適化します。
-- [PDFをマージする](/pdf/javascript-cpp/merge-pdf/) - JavaScriptを使用して複数のPDFファイルを1つのPDF文書にマージします。
-- [PDFを分割する](/pdf/javascript-cpp/split-pdf/) - C++を介してJavaScriptでPDFページを個別のPDFファイルに分割します。
-- [JavaScriptを削除する](/pdf/javascript-cpp/delete-javascripts/) - PDFファイルからJavaScriptを削除します。
-- [製品についての情報を取得する](/pdf/javascript-cpp/get-info-about-product/)
+- [PDFを最適化する](/pdf/ja/javascript-cpp/optimize-pdf/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮して文書を最適化します。
+- [PDFリソースを最適化する](/pdf/ja/javascript-cpp/optimize-pdf-resources/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、すべての画像を圧縮して文書を最適化します。
+- [PDFをマージする](/pdf/ja/javascript-cpp/merge-pdf/) - JavaScriptを使用して複数のPDFファイルを1つのPDF文書にマージします。
+- [PDFを分割する](/pdf/ja/javascript-cpp/split-pdf/) - C++を介してJavaScriptでPDFページを個別のPDFファイルに分割します。
+- [JavaScriptを削除する](/pdf/ja/javascript-cpp/delete-javascripts/) - PDFファイルからJavaScriptを削除します。
+- [製品についての情報を取得する](/pdf/ja/javascript-cpp/get-info-about-product/)

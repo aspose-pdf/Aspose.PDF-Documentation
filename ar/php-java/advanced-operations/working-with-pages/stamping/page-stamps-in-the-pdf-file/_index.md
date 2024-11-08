@@ -3,7 +3,7 @@ title: إضافة ختم صفحة إلى ملف PDF
 linktitle: الأختام في ملف PDF
 type: docs
 weight: 30
-url: ar/php-java/page-stamps-in-the-pdf-file/
+url: /ar/php-java/page-stamps-in-the-pdf-file/
 description: إضافة ختم صفحة إلى ملف PDF باستخدام فئة PdfPageStamp مع PHP.
 lastmod: "2024-09-10"
 sitemap:

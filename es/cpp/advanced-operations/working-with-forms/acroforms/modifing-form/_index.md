@@ -3,7 +3,7 @@ title: Modificando AcroForm
 linktitle: Modificando AcroForm
 type: docs
 weight: 40
-url: es/cpp/modifing-form/
+url: /es/cpp/modifing-form/
 description: Modificar formularios en su archivo PDF con la biblioteca Aspose.PDF para C++. Puede agregar o eliminar campos en un formulario existente, obtener y establecer el límite de campo, etc.
 lastmod: "2021-12-01"
 sitemap:

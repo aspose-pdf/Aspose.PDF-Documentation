@@ -2,7 +2,7 @@
 title: الحصول على خصائص نافذة المستند وعرض الصفحة في بايثون
 type: docs
 weight: 30
-url: ar/java/get-document-window-and-page-display-properties-in-python/
+url: /ar/java/get-document-window-and-page-display-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

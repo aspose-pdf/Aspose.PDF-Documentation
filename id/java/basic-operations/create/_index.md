@@ -3,7 +3,7 @@ title: Membuat Dokumen PDF
 linktitle: Buat
 type: docs
 weight: 10
-url: id/java/create-document/
+url: /id/java/create-document/
 description: Pelajari cara membuat file PDF di Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

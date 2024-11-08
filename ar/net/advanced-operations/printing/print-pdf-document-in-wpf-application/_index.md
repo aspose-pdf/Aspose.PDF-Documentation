@@ -3,7 +3,7 @@ title: طباعة مستند PDF في تطبيق WPF
 linktitle: طباعة مستند PDF في تطبيق WPF
 type: docs
 weight: 50
-url: ar/net/print-pdf-document-in-wpf-application/
+url: /ar/net/print-pdf-document-in-wpf-application/
 description: طباعة مستندات PDF من تطبيق WPF باستخدام C#. هذا المثال يوضح كيفية طباعة مستندات PDF من تطبيق WPF باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "طباعة مستندات PDF من تطبيق WPF باستخدام C#. هذا المثال يوضح كيفية طباعة مستندات PDF من تطبيق WPF باستخدام C#."
 }
 </script>
-تعمل الشظرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل الشظرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## الطباعة المباشرة
 

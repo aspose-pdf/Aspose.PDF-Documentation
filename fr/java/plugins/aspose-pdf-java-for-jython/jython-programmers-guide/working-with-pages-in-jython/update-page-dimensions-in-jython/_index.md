@@ -2,7 +2,7 @@
 title: Mettre à jour les dimensions de la page dans Jython
 type: docs
 weight: 90
-url: fr/java/update-page-dimensions-in-jython/
+url: /fr/java/update-page-dimensions-in-jython/
 lastmod: "2021-06-05"
 ---
 

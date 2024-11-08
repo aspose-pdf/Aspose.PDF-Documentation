@@ -2,7 +2,7 @@
 title: PHP에서 PDF 만료 설정
 type: docs
 weight: 80
-url: ko/java/set-pdf-expiration-in-php/
+url: /ko/java/set-pdf-expiration-in-php/
 lastmod: "2021-06-05"
 ---
 

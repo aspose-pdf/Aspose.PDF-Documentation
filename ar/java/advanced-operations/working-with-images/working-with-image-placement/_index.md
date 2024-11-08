@@ -3,7 +3,7 @@ title: العمل مع وضع الصور
 linktitle: وضع الصور
 type: docs
 weight: 50
-url: ar/java/working-with-image-placement/
+url: /ar/java/working-with-image-placement/
 description: يصف هذا القسم ميزات العمل مع وضع الصور في ملف PDF باستخدام مكتبة Java.
 lastmod: "2021-06-05"
 ---

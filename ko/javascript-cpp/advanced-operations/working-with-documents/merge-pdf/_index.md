@@ -3,7 +3,7 @@ title: JavaScript를 통해 C++로 PDF 병합하는 방법
 linktitle: PDF 파일 병합
 type: docs
 weight: 20
-url: ko/javascript-cpp/merge-pdf/
+url: /ko/javascript-cpp/merge-pdf/
 description: 이 페이지는 Aspose.PDF for JavaScript를 통해 C++로 PDF 문서를 단일 PDF 파일로 병합하는 방법을 설명합니다.
 lastmod: "2022-12-15"
 sitemap:

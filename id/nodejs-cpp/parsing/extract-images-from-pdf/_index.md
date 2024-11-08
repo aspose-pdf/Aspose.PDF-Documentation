@@ -3,7 +3,7 @@ title: Ekstrak Gambar dari PDF di Node.js
 linktitle: Ekstrak Gambar dari PDF
 type: docs
 weight: 20
-url: id/nodejs-cpp/extract-images-from-the-pdf-file/
+url: /id/nodejs-cpp/extract-images-from-the-pdf-file/
 description: Cara mengekstrak bagian dari gambar dari PDF menggunakan Aspose.PDF untuk Node.js melalui toolkit C++.
 lastmod: "2023-11-16"
 sitemap:

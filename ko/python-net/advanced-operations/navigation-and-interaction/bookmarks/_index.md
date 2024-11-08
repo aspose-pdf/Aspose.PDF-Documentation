@@ -3,7 +3,7 @@ title: PDF에서 북마크 작업하기 (Python 사용)
 linktitle: 북마크
 type: docs
 weight: 30
-url: ko/python-net/bookmarks/
+url: /ko/python-net/bookmarks/
 description: 이 섹션은 Aspose.PDF for Python via .NET을 사용하여 북마크를 추가, 삭제 및 가져오는 방법을 설명합니다.
 lastmod: "2023-02-17"
 sitemap:
@@ -82,5 +82,5 @@ PDF에서 책갈피를 사용하는 것은 매우 유용한 기능입니다. 이
 PDF 책갈피는 PDF 파일을 읽을 때 유용하고 필수적인 도구입니다. 사용자가 PDF 문서의 다른 위치로 빠르게 이동하고, 페이지를 탐색하며, 목차처럼 PDF의 내용을 빠르게 볼 수 있도록 합니다.
 이 섹션에서는 다음을 배우게 됩니다:
 
-- [책갈피 추가 및 삭제](/pdf/python-net/add-and-delete-bookmark/)
-- [책갈피 가져오기, 업데이트 및 확장](/pdf/python-net/get-update-and-expand-bookmark/)
+- [책갈피 추가 및 삭제](/pdf/ko/python-net/add-and-delete-bookmark/)
+- [책갈피 가져오기, 업데이트 및 확장](/pdf/ko/python-net/get-update-and-expand-bookmark/)

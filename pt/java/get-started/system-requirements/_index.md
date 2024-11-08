@@ -3,7 +3,7 @@ title: Requisitos do Sistema
 linktitle: Requisitos do Sistema
 type: docs
 weight: 30
-url: pt/java/system-requirements/
+url: /pt/java/system-requirements/
 description: Esta seção lista os sistemas operacionais suportados que um desenvolvedor precisa para trabalhar com sucesso com o Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

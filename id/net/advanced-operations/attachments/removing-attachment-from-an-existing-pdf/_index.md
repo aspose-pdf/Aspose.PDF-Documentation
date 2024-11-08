@@ -3,7 +3,7 @@ title: Menghapus lampiran dari PDF
 linktitle: Menghapus lampiran dari PDF yang sudah ada
 type: docs
 weight: 30
-url: id/net/removing-attachment-from-an-existing-pdf/
+url: /id/net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF dapat menghapus lampiran dari dokumen PDF Anda. Gunakan API PDF C# untuk menghapus lampiran dalam berkas PDF menggunakan perpustakaan Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Aspose.PDF dapat menghapus lampiran dari file PDF. Lampiran dokumen PDF disimpan dalam koleksi EmbeddedFiles dari objek Dokumen.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk menghapus semua lampiran yang terkait dengan file PDF:
 

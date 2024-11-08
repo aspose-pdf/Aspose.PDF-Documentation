@@ -2,7 +2,7 @@
 title: フォームエクスポーター
 type: docs
 weight: 50
-url: ja/net/plugins/formexpoter/
+url: /ja/net/plugins/formexpoter/
 description: Aspose.PDFフォームエクスポータープラグインを使用して、CSVファイルにフォームフィールド値をエクスポートする方法
 lastmod: "2024-01-24"
 draft: false

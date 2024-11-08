@@ -3,7 +3,7 @@ title: PDF Highlights Annotation
 linktitle: Highlights Annotation
 type: docs
 weight: 20
-url: pt/java/highlights-annotation/
+url: /pt/java/highlights-annotation/
 description: As anotações de marcação são apresentadas no texto como destaques, sublinhados, tachados ou sublinhados irregulares no texto de um documento.
 lastmod: "2021-11-24"
 sitemap:

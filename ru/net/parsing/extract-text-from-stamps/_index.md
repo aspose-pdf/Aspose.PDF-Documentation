@@ -2,7 +2,7 @@
 title: Извлечение текста из штампов с использованием C#
 type: docs
 weight: 60
-url: ru/net/extract-text-from-stamps/
+url: /ru/net/extract-text-from-stamps/
 description: Узнайте, как использовать специальную функцию Aspose.PDF для .NET - извлечение текста из аннотаций штампов
 lastmod: "2021-01-30"
 sitemap:
@@ -19,7 +19,7 @@ Aspose.PDF для NET позволяет извлекать текст из ан
 1. Определите новый объект класса `TextAbsorber`
 1. Используйте метод visit класса TextAbsorber, чтобы получить текст
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 public static void ExtractText()

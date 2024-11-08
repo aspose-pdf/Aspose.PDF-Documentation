@@ -2,7 +2,7 @@
 title: Ajouter une chaîne HTML en utilisant DOM en Ruby
 type: docs
 weight: 10
-url: fr/java/add-html-string-using-dom-in-ruby/
+url: /fr/java/add-html-string-using-dom-in-ruby/
 lastmod: "2021-06-05"
 ---
 

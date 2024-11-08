@@ -3,7 +3,7 @@ title: نقل صفحات PDF
 linktitle: نقل صفحات PDF
 type: docs
 weight: 20
-url: ar/php-java/move-pages/
+url: /ar/php-java/move-pages/
 description: حاول نقل الصفحات إلى الموقع المطلوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

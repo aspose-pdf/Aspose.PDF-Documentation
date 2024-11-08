@@ -8,7 +8,7 @@ type: docs
 
 weight: 10
 
-url: id/sharepoint/informasi-produk/
+url: /id/sharepoint/informasi-produk/
 
 lastmod: "2020-12-16"
 
@@ -22,16 +22,16 @@ description: Bagian Informasi Produk dari PDF SharePoint mencakup topik terkait 
 
 
 
-- [Gambaran Produk](/pdf/sharepoint/gambaran-produk/)
+- [Gambaran Produk](/pdf/id/sharepoint/gambaran-produk/)
 
-- [Format File yang Didukung](/pdf/sharepoint/format-file-yang-didukung/)
+- [Format File yang Didukung](/pdf/id/sharepoint/format-file-yang-didukung/)
 
-- [Fitur](/pdf/sharepoint/fitur/)
+- [Fitur](/pdf/id/sharepoint/fitur/)
 
-- [Instalasi Aspose.Pdf untuk SharePoint](/pdf/sharepoint/instalasi-aspose-pdf-untuk-sharepoint/)
+- [Instalasi Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/instalasi-aspose-pdf-untuk-sharepoint/)
 
-- [Mengevaluasi Aspose.Pdf](/pdf/sharepoint/menilai-aspose-pdf/)
+- [Mengevaluasi Aspose.Pdf](/pdf/id/sharepoint/menilai-aspose-pdf/)
 
-- [Lisensi Aspose.Pdf untuk SharePoint](/pdf/sharepoint/lisensi-aspose-pdf-untuk-sharepoint/)
+- [Lisensi Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/lisensi-aspose-pdf-untuk-sharepoint/)
 
-- [Batasan API](/pdf/sharepoint/batasan-api/)
+- [Batasan API](/pdf/id/sharepoint/batasan-api/)

@@ -2,7 +2,7 @@
 title: Table des Matières Liste des Tableaux ou Figures
 type: docs
 weight: 10
-url: fr/reportingservices/table-of-contents-list-of-tables-or-figures/
+url: /fr/reportingservices/table-of-contents-list-of-tables-or-figures/
 lastmod: "2021-06-05"
 ---
 

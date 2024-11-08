@@ -3,7 +3,7 @@ title: Dapatkan Resolusi dan Dimensi Gambar
 linktitle: Dapatkan Resolusi dan Dimensi
 type: docs
 weight: 40
-url: id/net/get-resolution-and-dimensions-of-embedded-images/
+url: /id/net/get-resolution-and-dimensions-of-embedded-images/
 description: Bagian ini menunjukkan detail dalam mendapatkan resolusi dan dimensi Gambar Tersemat
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Topik ini menjelaskan cara menggunakan kelas operator dalam ruang nama Aspose.PDF yang memberikan kemampuan untuk mendapatkan informasi resolusi dan dimensi tentang gambar tanpa harus mengekstraknya.
 

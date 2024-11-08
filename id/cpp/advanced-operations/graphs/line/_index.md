@@ -3,7 +3,7 @@ title: Tambahkan Objek Garis ke file PDF
 linktitle: Tambahkan Garis
 type: docs
 weight: 40
-url: id/cpp/add-line/
+url: /id/cpp/add-line/
 description: Artikel ini menjelaskan cara membuat objek garis ke PDF Anda menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-12-18"
 sitemap:

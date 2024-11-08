@@ -3,7 +3,7 @@ title: PythonでPDF内のテキストを置換
 linktitle: PDFのテキストを置換
 type: docs
 weight: 40
-url: ja/python-net/replace-text-in-pdf/
+url: /ja/python-net/replace-text-in-pdf/
 description: Aspose.PDF for Python via .NETライブラリを使用して、テキストを置換および削除するさまざまな方法について学びます。
 lastmod: "2024-02-17"
 sitemap:

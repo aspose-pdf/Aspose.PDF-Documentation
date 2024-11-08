@@ -3,7 +3,7 @@
 title: PDF의 테이블 셀에 이미지 삽입
 type: docs
 weight: 20
-url: ko/java/insert-an-image-into-a-table-cell-in-pdf/
+url: /ko/java/insert-an-image-into-a-table-cell-in-pdf/
 lastmod: "2022-01-27"
 ---
 

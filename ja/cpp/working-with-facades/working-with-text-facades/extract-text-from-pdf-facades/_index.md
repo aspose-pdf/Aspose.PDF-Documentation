@@ -2,7 +2,7 @@
 title: PDFからテキストを抽出 - Facades
 type: docs
 weight: 10
-url: ja/cpp/extract-text-from-pdf-facades/
+url: /ja/cpp/extract-text-from-pdf-facades/
 ---
 
 ## <ins>**ドキュメントのすべてのページからテキストを抽出する**

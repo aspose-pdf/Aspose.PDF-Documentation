@@ -2,7 +2,7 @@
 title: Convertir les pages PDF en images et reconnaître les codes-barres
 type: docs
 weight: 10
-url: fr/net/convert-pdf-pages-to-images-and-recognize-barcodes/
+url: /fr/net/convert-pdf-pages-to-images-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

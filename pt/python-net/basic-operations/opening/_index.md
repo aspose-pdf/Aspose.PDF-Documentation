@@ -3,7 +3,7 @@ title: Abrir documento PDF programaticamente
 linktitle: Abrir PDF
 type: docs
 weight: 20
-url: pt/python-net/open-pdf-document/
+url: /pt/python-net/open-pdf-document/
 description: Aprenda como abrir um arquivo PDF na biblioteca Python Aspose.PDF para Python via .NET. Você pode abrir um PDF existente, documento de um stream e documento PDF criptografado.
 lastmod: "2022-12-22"
 sitemap:

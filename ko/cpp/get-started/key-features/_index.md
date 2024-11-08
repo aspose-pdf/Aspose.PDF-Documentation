@@ -3,7 +3,7 @@ title: Aspose.PDF의 주요 기능
 linktitle: 주요 기능
 type: docs
 weight: 80
-url: ko/cpp/key-features/
+url: /ko/cpp/key-features/
 description: Aspose.PDF for C++는 일반적인 기능을 보여줍니다. 이 페이지는 지원되는 PDF 버전과 텍스트, 이미지, 주석, 문서 등에 대해 수행할 수 있는 모든 조작을 설명합니다.
 lastmod: "2021-11-08"
 sitemap:

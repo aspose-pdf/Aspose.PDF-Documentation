@@ -3,7 +3,7 @@ title: Trabalhando com Tabela em PDFs Marcados
 linktitle: Trabalhando com Tabela em PDFs Marcados
 type: docs
 weight: 40
-url: pt/java/working-with-table-in-tagged-pdfs/
+url: /pt/java/working-with-table-in-tagged-pdfs/
 description: Este artigo explica como trabalhar com tabela em documento PDF Marcado com Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

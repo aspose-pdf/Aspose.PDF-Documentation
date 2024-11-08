@@ -2,7 +2,7 @@
 title: Trabalhando com Anexos - Facades
 type: docs
 weight: 50
-url: pt/net/working-with-attachments-facades/
+url: /pt/net/working-with-attachments-facades/
 description: Esta seção explica como trabalhar com Anexos - Facades usando a Classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Anotación de Resaltados en PDF usando Python
 linktitle: Anotación de Resaltados
 type: docs
 weight: 20
-url: es/python-net/highlights-annotation/
+url: /es/python-net/highlights-annotation/
 description: Las anotaciones de marcado se presentan en el texto como resaltados, subrayados, tachados o subrayados irregulares en el texto de un documento.
 lastmod: "2023-02-17"
 sitemap:

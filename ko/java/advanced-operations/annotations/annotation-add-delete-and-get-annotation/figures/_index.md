@@ -3,7 +3,7 @@ title: PDF 도형 주석
 linktitle: 도형 주석
 type: docs
 weight: 30
-url: ko/java/figures-annotation/
+url: /ko/java/figures-annotation/
 description: 이 문서는 Java용 Aspose.PDF를 사용하여 PDF 문서에 도형 주석을 추가하고, 가져오고, 삭제하는 방법을 설명합니다.
 lastmod: "2021-11-24"
 sitemap:

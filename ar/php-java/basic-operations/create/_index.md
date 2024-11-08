@@ -3,7 +3,7 @@ title: إنشاء مستند PDF
 linktitle: إنشاء
 type: docs
 weight: 10
-url: ar/php-java/create-document/
+url: /ar/php-java/create-document/
 description: تعرف على كيفية إنشاء ملف PDF في Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

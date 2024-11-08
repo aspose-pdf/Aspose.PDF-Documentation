@@ -3,7 +3,7 @@ title: الإشارات المرجعية في PDF في Node.js
 linktitle: الإشارات المرجعية في PDF
 type: docs
 weight: 10
-url: ar/nodejs-cpp/bookmark/
+url: /ar/nodejs-cpp/bookmark/
 description: يمكنك إضافة أو حذف الإشارات المرجعية في مستند PDF في بيئة Node.js.
 lastmod: "2023-11-16"
 sitemap:

@@ -2,7 +2,7 @@
 title: ブックマークの追加と削除
 type: docs
 weight: 10
-url: ja/cpp/add-and-delete-bookmarks/
+url: /ja/cpp/add-and-delete-bookmarks/
 ---
 
 ## <ins>**ブックマークを追加する**

@@ -2,7 +2,7 @@
 title: Añadir Campos de Formulario PDF
 type: docs
 weight: 10
-url: es/net/add-form-fields/
+url: /es/net/add-form-fields/
 description: Este tema explica cómo trabajar con Campos de Formulario con Aspose.PDF Facades usando la Clase FormEditor.
 lastmod: "2021-06-05"
 draft: false

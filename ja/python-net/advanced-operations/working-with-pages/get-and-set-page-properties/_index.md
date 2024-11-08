@@ -3,7 +3,7 @@ title: Pythonを使用してページプロパティを取得および設定す�
 linktitle: ページプロパティの取得と設定
 type: docs
 weight: 90
-url: ja/python-net/get-and-set-page-properties/
+url: /ja/python-net/get-and-set-page-properties/
 description: このセクションでは、PDFファイル内のページ数を取得し、色などのPDFページプロパティに関する情報を取得し、ページプロパティを設定する方法を示します。
 lastmod: "2023-04-17"
 sitemap:
@@ -223,7 +223,7 @@ PDFファイルの各ページには、幅、高さ、裁ち落とし、トリ�
 
 ## PDFファイルの特定のページを取得する
 
-Aspose.PDF for Pythonを使用すると、[PDFを個々のページに分割](/pdf/python-net/split-pdf-document/)し、それらをPDFファイルとして保存できます。PDFファイル内の指定したページを取得して新しいPDFとして保存する操作も非常に似ています。ソースドキュメントを開き、ページにアクセスし、新しいドキュメントを作成してそのページを追加します。
+Aspose.PDF for Pythonを使用すると、[PDFを個々のページに分割](/pdf/ja/python-net/split-pdf-document/)し、それらをPDFファイルとして保存できます。PDFファイル内の指定したページを取得して新しいPDFとして保存する操作も非常に似ています。ソースドキュメントを開き、ページにアクセスし、新しいドキュメントを作成してそのページを追加します。
 
 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document)オブジェクトの[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection)には、PDFファイル内のページが含まれています。このコレクションから特定のページを取得するには：
 

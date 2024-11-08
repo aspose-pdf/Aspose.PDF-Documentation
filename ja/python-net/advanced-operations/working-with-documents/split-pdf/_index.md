@@ -3,7 +3,7 @@ title: Pythonでプログラム的にPDFを分割
 linktitle: PDFファイルを分割
 type: docs
 weight: 60
-url: ja/python-net/split-pdf-document/
+url: /ja/python-net/split-pdf-document/
 keywords: 複数のファイルにPDFを分割, PDFを個別のPDFに分割, PDFをPythonで分割
 description: このトピックでは、PythonアプリケーションでPDFページを個別のPDFファイルに分割する方法を示します。
 lastmod: "2023-04-17"

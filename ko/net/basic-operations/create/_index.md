@@ -3,7 +3,7 @@ title: 프로그래밍 방식으로 PDF 문서 생성
 linktitle: PDF 생성
 type: docs
 weight: 10
-url: ko/net/create-document/
+url: /ko/net/create-document/
 description: 이 페이지는 Aspose.PDF 라이브러리를 사용하여 처음부터 PDF 문서를 생성하는 방법을 설명합니다.
 ---
 
@@ -19,7 +19,7 @@ C#을 사용하여 PDF 파일을 생성하기 위해 다음 단계를 사용할 
 1.
 1. 결과 PDF 문서를 저장하세요.
 
-다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/net/drawing/) 인터페이스와 함께 작동합니다.
+다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/ko/net/drawing/) 인터페이스와 함께 작동합니다.
 
 ```csharp
 // 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-NET 에서 확인하세요.

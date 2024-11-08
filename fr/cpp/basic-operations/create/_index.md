@@ -3,7 +3,7 @@ title: Créer un document PDF en utilisant C++
 linktitle: Créer
 type: docs
 weight: 10
-url: fr/cpp/create-document/
+url: /fr/cpp/create-document/
 description: La tâche la plus populaire et basique de travail avec un fichier PDF est de créer un document à partir de zéro. Utilisez la bibliothèque Aspose.PDF pour C++.
 lastmod: "2021-06-05"
 sitemap:

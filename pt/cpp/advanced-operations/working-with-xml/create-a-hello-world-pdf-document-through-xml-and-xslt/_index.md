@@ -3,7 +3,7 @@ title: Criando PDF a partir de XML usando XSLT
 linktitle: Criar PDF a partir de XML usando XSLT
 type: docs
 weight: 10
-url: pt/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /pt/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: A biblioteca C++ fornece a capacidade de converter um arquivo XML em um documento PDF, exigindo que o arquivo XML de entrada siga o esquema Aspose.PDF.
 lastmod: "2022-01-31"
 sitemap:

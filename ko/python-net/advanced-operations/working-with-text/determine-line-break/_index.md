@@ -3,7 +3,7 @@ title: 줄 바꿈 결정
 linktitle: 줄 바꿈 결정
 type: docs
 weight: 70
-url: ko/python-net/determine-line-break/
+url: /ko/python-net/determine-line-break/
 description: Python을 사용하여 여러 줄의 TextFragment의 줄 바꿈을 결정하는 방법에 대해 자세히 알아보세요
 lastmod: "2024-02-17"
 sitemap:

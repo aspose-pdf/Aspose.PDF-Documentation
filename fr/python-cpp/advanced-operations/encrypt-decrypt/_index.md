@@ -3,7 +3,7 @@ title: Chiffrer et Déchiffrer un PDF
 linktitle: Chiffrer et Déchiffrer un Fichier PDF
 type: docs
 weight: 30
-url: fr/python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /fr/python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Chiffrer et Déchiffrer un Fichier PDF avec Python via une application C++.
 lastmod: "2024-04-17"
 sitemap:

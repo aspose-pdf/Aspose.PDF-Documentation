@@ -3,7 +3,7 @@ title: PDF 파일을 HTML 형식으로 변환
 linktitle: PDF 파일을 HTML 형식으로 변환
 type: docs
 weight: 50
-url: ko/php-java/convert-pdf-to-html/
+url: /ko/php-java/convert-pdf-to-html/
 lastmod: "2024-05-20"
 description: 이 주제는 Aspose.PDF가 PHP 라이브러리를 사용하여 PDF 파일을 HTML 형식으로 변환하는 방법을 보여줍니다.
 sitemap:

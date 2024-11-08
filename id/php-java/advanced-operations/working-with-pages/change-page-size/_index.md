@@ -3,7 +3,7 @@ title: Ubah Ukuran Halaman PDF Secara Programatis
 linktitle: Ubah Ukuran Halaman PDF
 type: docs
 weight: 50
-url: id/php-java/change-page-size/
+url: /id/php-java/change-page-size/
 description: Ubah Ukuran Halaman dari file PDF Anda menggunakan PHP.
 lastmod: "2024-06-05"
 sitemap:

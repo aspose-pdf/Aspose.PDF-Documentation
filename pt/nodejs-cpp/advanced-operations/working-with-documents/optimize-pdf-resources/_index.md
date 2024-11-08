@@ -3,7 +3,7 @@ title: Otimizar Recursos de PDF em Node.js
 linktitle: Otimizar Recursos de PDF
 type: docs
 weight: 15
-url: pt/nodejs-cpp/optimize-pdf-resources/
+url: /pt/nodejs-cpp/optimize-pdf-resources/
 description: Otimize recursos de arquivos PDF para visualização rápida na web usando a ferramenta Node.js.
 lastmod: "2023-11-16"
 sitemap:

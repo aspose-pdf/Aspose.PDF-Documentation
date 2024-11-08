@@ -2,7 +2,7 @@
 title: PHPでAspose.PDFをダウンロードして設定する
 type: docs
 weight: 10
-url: ja/java/download-and-configure-aspose-pdf-in-php/
+url: /ja/java/download-and-configure-aspose-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

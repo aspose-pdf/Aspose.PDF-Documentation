@@ -3,7 +3,7 @@ title: Actualizar Enlaces en PDF
 linktitle: Actualizar Enlaces
 type: docs
 weight: 20
-url: es/java/update-links/
+url: /es/java/update-links/
 description: Actualizar enlaces en PDF programáticamente. Esta guía trata sobre cómo actualizar enlaces en PDF en lenguaje Java.
 lastmod: "2021-06-05"
 sitemap:

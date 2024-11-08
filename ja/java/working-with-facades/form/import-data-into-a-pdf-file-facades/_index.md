@@ -2,7 +2,7 @@
 title: PDFファイルにデータをインポート - ファサード
 type: docs
 weight: 10
-url: ja/java/import-data-into-a-pdf-file-facades/
+url: /ja/java/import-data-into-a-pdf-file-facades/
 description: このセクションでは、Aspose.PDF Facadesを使用してPDFファイルからXMLにデータをインポートする方法を説明します。
 lastmod: "2021-06-05"
 ---

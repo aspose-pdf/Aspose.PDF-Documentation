@@ -3,7 +3,7 @@ title: PDFファイルに円オブジェクトを追加する
 linktitle: 円を追加
 type: docs
 weight: 20
-url: ja/java/add-circle/
+url: /ja/java/add-circle/
 description: この記事では、Aspose.PDF for Javaを使用してPDFに円オブジェクトを作成する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

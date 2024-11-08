@@ -2,7 +2,7 @@
 title: Obtenir des Informations sur un Fichier PDF en Jython
 type: docs
 weight: 30
-url: fr/java/get-pdf-file-information-in-jython/
+url: /fr/java/get-pdf-file-information-in-jython/
 lastmod: "2021-06-05"
 ---
 

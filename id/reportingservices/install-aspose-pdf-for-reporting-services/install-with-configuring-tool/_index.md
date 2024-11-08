@@ -2,7 +2,7 @@
 title: Install dengan Alat Konfigurasi
 type: docs
 weight: 30
-url: id/reportingservices/install-with-configuring-tool/
+url: /id/reportingservices/install-with-configuring-tool/
 lastmod: "2021-06-05"
 ---
 

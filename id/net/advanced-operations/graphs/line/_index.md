@@ -3,7 +3,7 @@ title: Menambahkan Objek Garis ke File PDF
 linktitle: Menambahkan Garis
 type: docs
 weight: 40
-url: id/net/add-line/
+url: /id/net/add-line/
 description: Artikel ini menjelaskan cara membuat objek garis pada PDF Anda menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan objek Garis
 

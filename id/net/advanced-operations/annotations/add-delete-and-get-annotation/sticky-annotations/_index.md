@@ -3,7 +3,7 @@ title: Anotasi Sticky PDF menggunakan C#
 linktitle: Anotasi Sticky
 type: docs
 weight: 50
-url: id/net/sticky-annotations/
+url: /id/net/sticky-annotations/
 description: Topik ini tentang anotasi sticky, sebagai contoh kami menampilkan Anotasi Watermark dalam teks.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Topik ini tentang anotasi sticky, sebagai contoh kami menampilkan Anotasi Watermark dalam teks."
 }
 </script>
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan Anotasi Watermark
 

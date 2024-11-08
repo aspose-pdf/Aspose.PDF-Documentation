@@ -2,7 +2,7 @@
 title: Supported Parameters
 type: docs
 weight: 20
-url: ar/reportingservices/supported-parameters/
+url: /ar/reportingservices/supported-parameters/
 lastmod: "2021-06-05"
 ---
 
@@ -12,15 +12,15 @@ lastmod: "2021-06-05"
 
 **تتضمن هذه القسم المواضيع التالية:**
 
-- [توجيه الصفحة](/pdf/reportingservices/page-orientation/)
-- [تنسيق HTML](/pdf/reportingservices/html-formatting/)
-- [إعدادات الأمان](/pdf/reportingservices/security-setting/)
-- [IsFontEmbedded](/pdf/reportingservices/isfontembedded/)
+- [توجيه الصفحة](/pdf/ar/reportingservices/page-orientation/)
+- [تنسيق HTML](/pdf/ar/reportingservices/html-formatting/)
+- [إعدادات الأمان](/pdf/ar/reportingservices/security-setting/)
+- [IsFontEmbedded](/pdf/ar/reportingservices/isfontembedded/)
 
-- [حجم الصفحة](/pdf/reportingservices/pagesize/)
+- [حجم الصفحة](/pdf/ar/reportingservices/pagesize/)
 ```
-- [حجم هامش الصفحة](/pdf/reportingservices/page-margin-size/)
-- [بيانات XMP الوصفية](/pdf/reportingservices/xmp-metadata/)
-- [معلومات التصحيح](/pdf/reportingservices/debug-information/)
-- [التوافق مع PDF_A](/pdf/reportingservices/pdf_a-conformance/)
+- [حجم هامش الصفحة](/pdf/ar/reportingservices/page-margin-size/)
+- [بيانات XMP الوصفية](/pdf/ar/reportingservices/xmp-metadata/)
+- [معلومات التصحيح](/pdf/ar/reportingservices/debug-information/)
+- [التوافق مع PDF_A](/pdf/ar/reportingservices/pdf_a-conformance/)
 ```

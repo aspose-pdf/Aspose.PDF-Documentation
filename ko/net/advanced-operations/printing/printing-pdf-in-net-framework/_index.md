@@ -3,7 +3,7 @@ title: .NET Framework에서 PDF 인쇄
 linktitle: .NET Framework에서 PDF 인쇄
 type: docs
 weight: 10
-url: ko/net/printing-pdf-in-net-framework/
+url: /ko/net/printing-pdf-in-net-framework/
 keywords: "print pdf file c#, c# print pdf"
 description: C#을 사용하여 프린터 및 페이지 설정으로 기본 프린터에 PDF 파일을 인쇄할 수 있습니다.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "C#을 사용하여 프린터 및 페이지 설정으로 기본 프린터에 PDF 파일을 인쇄할 수 있습니다."
 }
 </script>
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## **C#에서 PDF 파일 인쇄 - 기본 프린터를 사용하여 프린터 및 페이지 설정으로 PDF 파일 인쇄**
 

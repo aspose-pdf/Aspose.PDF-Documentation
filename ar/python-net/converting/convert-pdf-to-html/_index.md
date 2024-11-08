@@ -3,7 +3,7 @@ title: تحويل PDF إلى HTML في بايثون
 linktitle: تحويل PDF إلى تنسيق HTML
 type: docs
 weight: 50
-url: ar/python-net/convert-pdf-to-html/
+url: /ar/python-net/convert-pdf-to-html/
 lastmod: "2021-11-01"
 description: يوضح لك هذا الموضوع كيفية تحويل ملف PDF إلى تنسيق HTML باستخدام مكتبة Aspose.PDF لبايثون .NET.
 sitemap:

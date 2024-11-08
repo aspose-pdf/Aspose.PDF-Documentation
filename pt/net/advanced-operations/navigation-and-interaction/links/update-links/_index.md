@@ -3,7 +3,7 @@ title: Atualizar Links em PDF
 linktitle: Atualizar Links
 type: docs
 weight: 20
-url: pt/net/update-links/
+url: /pt/net/update-links/
 description: Atualizar links em PDF programaticamente. Este guia é sobre como atualizar links em PDF na linguagem C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Atualizar links em PDF programaticamente. Este guia é sobre como atualizar links em PDF na linguagem C#."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Atualizar Links em Arquivo PDF
 

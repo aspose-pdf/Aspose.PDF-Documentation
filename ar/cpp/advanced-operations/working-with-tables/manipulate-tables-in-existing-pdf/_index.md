@@ -3,7 +3,7 @@ title: معالجة الجداول في PDF الحالي
 linktitle: معالجة الجداول
 type: docs
 weight: 40
-url: ar/cpp/manipulate-tables-in-existing-pdf/
+url: /ar/cpp/manipulate-tables-in-existing-pdf/
 description: يغطي هذا القسم طرق مختلفة لتعديل الجداول باستخدام Aspose.PDF لـ C++
 lastmod: "2021-11-11"
 sitemap:

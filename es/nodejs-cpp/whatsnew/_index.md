@@ -3,7 +3,7 @@ title: Novedades
 linktitle: Novedades
 type: docs
 weight: 10
-url: es/nodejs-cpp/whatsnew/
+url: /es/nodejs-cpp/whatsnew/
 description: En esta página se presentan las características nuevas más populares en Aspose.PDF para Node.js a través de C++ que se han introducido en versiones recientes.
 sitemap:
     changefreq: "monthly"

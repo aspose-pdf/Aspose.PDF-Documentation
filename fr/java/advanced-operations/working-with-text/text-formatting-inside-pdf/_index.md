@@ -3,7 +3,7 @@ title: Formatage du texte dans un PDF
 linktitle: Formatage du texte dans un PDF
 type: docs
 weight: 30
-url: fr/java/text-formatting-inside-pdf/
+url: /fr/java/text-formatting-inside-pdf/
 description: Cette page explique comment formater le texte dans votre fichier PDF. Il s'agit d'ajouter un retrait de ligne, d'ajouter une bordure de texte, de souligner le texte, d'ajouter une bordure autour du texte ajouté, de l'alignement du texte pour le contenu de la boîte flottante, etc.
 lastmod: "2021-06-05"
 sitemap:

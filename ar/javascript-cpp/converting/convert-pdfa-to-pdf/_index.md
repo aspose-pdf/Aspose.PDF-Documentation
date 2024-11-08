@@ -3,7 +3,7 @@ title: تحويل PDF/A إلى تنسيق PDF
 linktitle: تحويل PDF/A إلى تنسيق PDF
 type: docs
 weight: 110
-url: ar/javascript-cpp/convert-pdfa-to-pdf/
+url: /ar/javascript-cpp/convert-pdfa-to-pdf/
 lastmod: "2023-11-01"
 description: يوضح لك هذا الموضوع كيفية تحويل ملف PDF/A إلى مستند PDF باستخدام Aspose.PDF مع JavaScript.
 sitemap:

@@ -2,7 +2,7 @@
 title: Javascript 작업 추가 PDF
 type: docs
 weight: 10
-url: ko/net/adding-javascript-actions/
+url: /ko/net/adding-javascript-actions/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 기존 PDF 파일에 Javascript 작업을 추가하는 방법을 설명합니다.
 lastmod: "2021-06-30"
 sitemap:

@@ -3,7 +3,7 @@ title: 데이터 소스에서 테이블 렌더링
 linktitle: 데이터 소스에서 테이블 렌더링
 type: docs
 weight: 30
-url: ko/net/render-table-from-the-data-source/
+url: /ko/net/render-table-from-the-data-source/
 description: 이 페이지는 Aspose.PDF 라이브러리를 사용하여 데이터 소스에서 테이블을 렌더링하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

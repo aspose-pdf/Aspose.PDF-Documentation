@@ -3,7 +3,7 @@ title: PDF 파일에 원 객체 추가
 linktitle: 원 추가
 type: docs
 weight: 20
-url: ko/java/add-circle/
+url: /ko/java/add-circle/
 description: 이 기사는 Aspose.PDF for Java를 사용하여 PDF에 원 객체를 생성하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: تعيين الامتيازات على ملف PDF موجود
 type: docs
 weight: 50
-url: ar/java/set-privileges/
+url: /ar/java/set-privileges/
 description: يشرح هذا الموضوع كيفية تعيين الامتيازات على ملف PDF موجود باستخدام فئة PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

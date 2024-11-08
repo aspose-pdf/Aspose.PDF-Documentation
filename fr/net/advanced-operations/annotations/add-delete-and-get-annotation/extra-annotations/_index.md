@@ -3,7 +3,7 @@ title: Extra Annotations using C#
 linktitle: Extra Annotations
 type: docs
 weight: 60
-url: fr/net/extra-annotations/
+url: /fr/net/extra-annotations/
 description: Cette section décrit comment ajouter, obtenir et supprimer des types supplémentaires d'annotations de votre document PDF.
 lastmod: "2023-09-12"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 L'annotation de point d'insertion est un symbole qui indique l'édition de texte. L'annotation de point d'insertion est également une annotation de balisage, donc la classe Caret dérive de la classe Markup et fournit également des fonctions pour obtenir ou définir les propriétés de l'annotation de point d'insertion et réinitialiser le flux de l'apparence de l'annotation de point d'insertion.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Étapes avec lesquelles nous créons une annotation de point d'insertion :
 

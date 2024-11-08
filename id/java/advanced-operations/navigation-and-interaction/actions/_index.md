@@ -3,7 +3,7 @@ title: Bekerja dengan Tindakan
 linktitle: Tindakan
 type: docs
 weight: 20
-url: id/java/actions/
+url: /id/java/actions/
 description: Bagian ini menjelaskan cara menambahkan tindakan ke dokumen dan bidang formulir secara programatis dengan Java. Pelajari cara Menambahkan, Membuat, dan Mendapatkan Hyperlink dalam File PDF.
 lastmod: "2021-06-05"
 sitemap:

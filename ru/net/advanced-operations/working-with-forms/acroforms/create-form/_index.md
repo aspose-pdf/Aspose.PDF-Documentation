@@ -3,7 +3,7 @@ title: Создание AcroForm - Создание заполняемого PDF
 linktitle: Создание AcroForm
 type: docs
 weight: 10
-url: ru/net/create-form/
+url: /ru/net/create-form/
 description: С помощью Aspose.PDF для .NET вы можете создать форму с нуля в вашем PDF-файле
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Создание формы с нуля
 

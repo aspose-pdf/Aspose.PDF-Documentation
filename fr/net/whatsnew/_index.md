@@ -3,7 +3,7 @@ title: Quoi de neuf
 linktitle: Quoi de neuf
 type: docs
 weight: 10
-url: fr/net/whatsnew/
+url: /fr/net/whatsnew/
 description: Cette page présente les nouvelles fonctionnalités les plus populaires d'Aspose.PDF pour .NET qui ont été introduites dans les dernières versions.
 sitemap:
     changefreq: "monthly"

@@ -3,7 +3,7 @@ title: 지원되는 파일 형식
 linktitle: 지원되는 파일 형식
 type: docs
 weight: 70
-url: ko/net/supported-file-formats/
+url: /ko/net/supported-file-formats/
 description: 이 페이지는 Aspose.PDF for .NET이 로드 및 저장할 수 있는 파일 형식을 보여줍니다.
 lastmod: "2021-06-05"
 sitemap:

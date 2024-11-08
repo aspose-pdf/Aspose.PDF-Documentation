@@ -3,7 +3,7 @@ title: Memindahkan Halaman PDF
 linktitle: Memindahkan Halaman PDF
 type: docs
 weight: 20
-url: id/php-java/move-pages/
+url: /id/php-java/move-pages/
 description: Cobalah memindahkan halaman ke lokasi yang diinginkan atau ke akhir file PDF menggunakan Aspose.PDF untuk PHP melalui Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Soporte, Extender y Contribuir a Aspose.Pdf en Ruby
 type: docs
 weight: 30
-url: es/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
+url: /es/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

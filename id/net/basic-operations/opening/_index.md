@@ -3,7 +3,7 @@ title: Membuka dokumen PDF secara pemrograman
 linktitle: Buka PDF
 type: docs
 weight: 20
-url: id/net/open-pdf-document/
+url: /id/net/open-pdf-document/
 description: Pelajari cara membuka file PDF dalam C# Aspose.PDF untuk perpustakaan PDF .NET. Anda dapat membuka PDF yang sudah ada, dokumen dari aliran, dan dokumen PDF terenkripsi.
 aliases:
     - /net/opening-a-pdf-document/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-Kode berikut juga dapat digunakan dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga dapat digunakan dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Membuka dokumen PDF yang sudah ada
 

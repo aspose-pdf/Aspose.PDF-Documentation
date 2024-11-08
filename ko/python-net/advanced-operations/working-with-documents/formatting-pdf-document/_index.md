@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 PDF 문서 형식화
 linktitle: PDF 문서 형식화
 type: docs
 weight: 11
-url: ko/python-net/formatting-pdf-document/
+url: /ko/python-net/formatting-pdf-document/
 description: Aspose.PDF for Python via .NET을 사용하여 PDF 문서를 생성하고 형식화하십시오. 다음 코드 스니펫을 사용하여 작업을 해결하십시오.
 lastmod: "2023-04-12"
 sitemap:

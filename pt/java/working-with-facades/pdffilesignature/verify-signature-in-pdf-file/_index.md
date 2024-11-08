@@ -2,7 +2,7 @@
 title: Verificar Assinatura em Arquivo PDF
 type: docs
 weight: 30
-url: pt/java/verify-signature-in-pdf/
+url: /pt/java/verify-signature-in-pdf/
 description: Esta seção explica como trabalhar com Assinatura em um Arquivo PDF usando a classe PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## Verificar se o Arquivo PDF está Assinado Usando uma Assinatura
 
-Para verificar se um arquivo PDF está assinado usando o método VerifySigned da classe [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature). Este método requer o nome da assinatura e retorna verdadeiro se o PDF estiver assinado usando esse nome de assinatura. Também é possível verificar que um [PDF está assinado](/pdf/java/working-with-signature-in-a-pdf-file/), sem verificar com qual assinatura ele está assinado.
+Para verificar se um arquivo PDF está assinado usando o método VerifySigned da classe [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature). Este método requer o nome da assinatura e retorna verdadeiro se o PDF estiver assinado usando esse nome de assinatura. Também é possível verificar que um [PDF está assinado](/pdf/pt/java/working-with-signature-in-a-pdf-file/), sem verificar com qual assinatura ele está assinado.
 
 ### Verificando se um PDF está Assinado com uma Determinada Assinatura
 

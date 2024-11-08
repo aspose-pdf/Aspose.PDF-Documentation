@@ -3,7 +3,7 @@ title: Memindahkan Halaman PDF secara Programatis C#
 linktitle: Memindahkan Halaman PDF
 type: docs
 weight: 20
-url: id/net/move-pages/
+url: /id/net/move-pages/
 description: Cobalah memindahkan halaman ke lokasi yang diinginkan atau di akhir file PDF menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Topik ini menjelaskan cara memindahkan halaman dari satu dokumen PDF ke akhir dokumen lain menggunakan C#.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk memindahkan halaman kita harus:
 

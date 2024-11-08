@@ -3,7 +3,7 @@ title: C#でPDFをセキュリティ保護および署名する
 linktitle: PDFでのセキュリティ保護および署名
 type: docs
 weight: 150
-url: ja/net/securing-and-signing/
+url: /ja/net/securing-and-signing/
 description: このセクションでは、C#を使用してPDFドキュメントの署名とセキュリティ保護の機能について説明します
 lastmod: "2022-02-17"
 sitemap:
@@ -79,10 +79,10 @@ aliases:
 </script>
 このセクションでは、C#を使用してPDF文書にデジタル署名を安全に行う方法について説明します。電子署名とデジタル署名は同じように使用されますが、本質的には2つは異なります。一般的に、デジタル署名は[認証局](https://ja.wikipedia.org/wiki/認証局)の承認されたシールが付いており、署名された文書の改ざんから保護するために使用されます。一方、電子署名は文書に署名する意図を示すためによく使用されます。
 
-- [PDFファイルにデジタル署名をする](/pdf/net/digitally-sign-pdf-file/)
-- [特権の設定、暗号化およびPDFファイルの復号](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [画像と署名情報の抽出](/pdf/net/extract-image-and-signature-information/)
-- [スマートカードからPDF文書に署名する](/pdf/net/sign-pdf-document-from-smart-card/)
+- [PDFファイルにデジタル署名をする](/pdf/ja/net/digitally-sign-pdf-file/)
+- [特権の設定、暗号化およびPDFファイルの復号](/pdf/ja/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [画像と署名情報の抽出](/pdf/ja/net/extract-image-and-signature-information/)
+- [スマートカードからPDF文書に署名する](/pdf/ja/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

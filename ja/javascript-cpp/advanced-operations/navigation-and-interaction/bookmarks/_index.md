@@ -3,7 +3,7 @@ title: JavaScriptでPDFにブックマークを追加
 linktitle: PDFのブックマーク
 type: docs
 weight: 10
-url: ja/javascript-cpp/bookmark/
+url: /ja/javascript-cpp/bookmark/
 description: JavaScriptを使用してPDFドキュメントにブックマークを追加または削除できます。
 lastmod: "2023-02-17"
 sitemap:

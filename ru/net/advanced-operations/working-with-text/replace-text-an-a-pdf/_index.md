@@ -3,7 +3,7 @@ title: Замена текста в PDF
 linktitle: Замена текста в PDF
 type: docs
 weight: 40
-url: ru/net/replace-text-in-pdf/
+url: /ru/net/replace-text-in-pdf/
 description: Узнайте больше о различных способах замены и удаления текста из библиотеки Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "Узнайте больше о различных способах замены и удаления текста из библиотеки Aspose.PDF для .NET."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Замена текста на всех страницах PDF документа
 

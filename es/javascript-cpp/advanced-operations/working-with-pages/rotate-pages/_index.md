@@ -3,7 +3,7 @@ title: Rotar Páginas de PDF con JavaScript a través de C++
 linktitle: Rotar Páginas de PDF
 type: docs
 weight: 50
-url: es/javascript-cpp/rotate-pages/
+url: /es/javascript-cpp/rotate-pages/
 description: Este tema describe cómo rotar la orientación de la página en un archivo PDF existente programáticamente a través de JavaScript a través de C++ 
 lastmod: "2023-02-17"
 sitemap:

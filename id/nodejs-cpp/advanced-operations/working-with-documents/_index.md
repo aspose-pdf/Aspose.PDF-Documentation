@@ -3,7 +3,7 @@ title: Bekerja dengan Dokumen PDF di Node.js
 linktitle: Bekerja dengan Dokumen
 type: docs
 weight: 10
-url: id/nodejs-cpp/working-with-documents/
+url: /id/nodejs-cpp/working-with-documents/
 description: Artikel ini menjelaskan kepada Anda manipulasi apa yang dapat dilakukan dengan dokumen PDF menggunakan toolkit Aspose.PDF untuk Node.js melalui C++.
 lastmod: "2023-11-16"
 sitemap:
@@ -21,7 +21,7 @@ Namun **Aspose.PDF untuk Node.js melalui C++** dapat membantu Anda mengatasi seb
 
 You are able to do the following:
 
-- [Optimize PDF](/pdf/nodejs-cpp/optimize-pdf/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimalisasi dokumen yang berhasil.
-- [Optimize PDF Resources](/pdf/nodejs-cpp/optimize-pdf-resources/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimalisasi dokumen yang berhasil.
-- [Merge PDF](/pdf/nodejs-cpp/merge-pdf/) - gabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan Node.js.
-- [Split PDF](/pdf/nodejs-cpp/split-pdf/) - pisahkan halaman PDF menjadi file PDF individu di Node.js melalui C++.
+- [Optimize PDF](/pdf/id/nodejs-cpp/optimize-pdf/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimalisasi dokumen yang berhasil.
+- [Optimize PDF Resources](/pdf/id/nodejs-cpp/optimize-pdf-resources/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimalisasi dokumen yang berhasil.
+- [Merge PDF](/pdf/id/nodejs-cpp/merge-pdf/) - gabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan Node.js.
+- [Split PDF](/pdf/id/nodejs-cpp/split-pdf/) - pisahkan halaman PDF menjadi file PDF individu di Node.js melalui C++.

@@ -3,7 +3,7 @@ title: Работа с портфолио в PDF
 linktitle: Портфолио
 type: docs
 weight: 40
-url: ru/net/portfolio/
+url: /ru/net/portfolio/
 description: Как создать PDF портфолио с помощью C#. Вы должны использовать файл Microsoft Excel, документ Word и файл изображения для создания PDF портфолио.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ Aspose.PDF позволяет создавать документы портфо
 
 Код ниже приводит к следующему портфолио.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ### Портфолио PDF, созданное с помощью Aspose.PDF
 

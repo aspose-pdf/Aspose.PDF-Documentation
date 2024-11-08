@@ -3,7 +3,7 @@ title: Set Default Font Name
 linktitle: Set Default Font Name
 type: docs
 weight: 90
-url: id/net/set-default-font-name/
+url: /id/net/set-default-font-name/
 description: Bagian ini menjelaskan cara mengatur nama font default selama proses konversi dari PDF ke gambar.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 **Aspose.PDF for .NET** API memungkinkan Anda untuk mengatur nama font default ketika font tidak tersedia dalam dokumen. Anda dapat menggunakan properti DefaultFontName dari kelas RenderingOptions untuk mengatur nama font default. Jika DefaultFontName diatur ke null maka font **Times New Roman** akan digunakan. Potongan kode berikut menunjukkan cara mengatur nama font default saat menyimpan PDF menjadi gambar:
 
-Potongan kode berikutnya juga bekerja dengan antarmuka grafis baru [Aspose.Drawing](/pdf/net/drawing/).
+Potongan kode berikutnya juga bekerja dengan antarmuka grafis baru [Aspose.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET

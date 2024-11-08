@@ -2,7 +2,7 @@
 title: ChatGPT
 type: docs
 weight: 30
-url: ko/net/plugins/chatGPT/
+url: /ko/net/plugins/chatGPT/
 description: AI-파워드 ChatGPT 응답을 생성하고 PDF에 저장하는 방법
 lastmod: "2024-02-24"
 ---

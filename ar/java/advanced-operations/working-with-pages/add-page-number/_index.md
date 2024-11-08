@@ -3,7 +3,7 @@ title: إضافة رقم الصفحة إلى ملف PDF
 linktitle: إضافة رقم الصفحة
 type: docs
 weight: 100
-url: ar/java/add-page-number/
+url: /ar/java/add-page-number/
 description: Aspose.PDF for Java يسمح لك بإضافة ختم رقم الصفحة إلى ملف PDF الخاص بك باستخدام فئة PageNumberStamp.
 lastmod: "2021-06-05"
 sitemap:

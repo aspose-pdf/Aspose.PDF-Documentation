@@ -3,7 +3,7 @@ title: Bekerja dengan Artifak di .NET
 linktitle: Bekerja dengan Artifak
 type: docs
 weight: 110
-url: id/net/artifacts/
+url: /id/net/artifacts/
 description: Aspose.PDF untuk .NET memungkinkan Anda untuk menambahkan gambar latar belakang ke halaman PDF, dan mendapatkan setiap watermark menggunakan kelas Artifact.
 lastmod: "2024-01-17"
 sitemap:
@@ -110,8 +110,8 @@ Untuk mendapatkan semua Watermark di halaman tertentu, kelas [Page](https://refe
 
 Potongan kode berikut menunjukkan cara mendapatkan semua watermark pada halaman pertama file PDF.
 
-_Catatan:_ Kode ini juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
-_Catatan:_ Kode ini juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+_Catatan:_ Kode ini juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+_Catatan:_ Kode ini juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 var document = new Document(System.IO.Path.Combine(_dataDir, "sample-w.pdf"));

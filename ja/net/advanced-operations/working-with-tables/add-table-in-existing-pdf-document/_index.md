@@ -3,7 +3,7 @@ title: PDF内に表を作成または追加する C#
 linktitle: 表を作成または追加する
 type: docs
 weight: 10
-url: ja/net/add-table-in-existing-pdf-document/
+url: /ja/net/add-table-in-existing-pdf-document/
 description: Aspose.PDF for .NET は、PDF テーブルを作成、読み取り、編集するためのライブラリです。このトピックで他の高度な機能を確認してください。
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 
 PDFドキュメントを扱う際、テーブルは重要です。テーブルは情報を体系的に表示するための優れた機能を提供します。Aspose.PDF名前空間には、PDFドキュメントを一から生成する際にテーブルを作成する機能を提供する[Table](https://reference.aspose.com/pdf/net/aspose.pdf/table)、[Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell)、および[Row](https://reference.aspose.com/pdf/net/aspose.pdf/row)というクラスが含まれています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 Tableクラスのオブジェクトを作成することでテーブルを作成できます。
 

@@ -2,7 +2,7 @@
 title: PHP 파일에서 특정 페이지 삭제
 type: docs
 weight: 20
-url: ko/java/delete-a-particular-page-from-the-pdf-file-in-php/
+url: /ko/java/delete-a-particular-page-from-the-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

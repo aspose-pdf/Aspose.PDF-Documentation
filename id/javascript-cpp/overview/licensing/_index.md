@@ -3,7 +3,7 @@ title: Lisensi untuk Aspose.PDF untuk JavaScript melalui C++
 linktitle: Lisensi dan batasan
 type: docs
 weight: 50
-url: id/javascript-cpp/licensing/
+url: /id/javascript-cpp/licensing/
 description: Aspose.PDF untuk JavaScript mengundang pelanggan untuk mendapatkan lisensi Klasik dan Lisensi Berbayar. Serta menggunakan lisensi terbatas untuk lebih mengeksplorasi produk.
 lastmod: "2022-12-13"
 sitemap:

@@ -3,7 +3,7 @@ title: 使用C++处理表单
 linktitle: 使用表单
 type: docs
 weight: 50
-url: zh/cpp/working-with-forms/
+url: /zh/cpp/working-with-forms/
 description: 本节解释如何使用Aspose.PDF for C++在PDF文档中处理AcroForms和XFA表单。
 lastmod: "2021-11-30"
 sitemap:
@@ -21,5 +21,5 @@ Aspose.PDF for C++允许您高效地处理PDF文档中的表单。
 
 通过学习文档的下一部分，您将找到这些问题和许多其他问题的答案。
 
-- [AcroForms](/pdf/cpp/acroforms/) - 创建表单、填写表单字段、从表单中提取数据、使用C++库修改PDF中的字段。
-- [XFA Forms](/pdf/cpp/xfa-forms/) - 填写 XFA 字段，转换 XFA，获取 XFA 字段属性。
+- [AcroForms](/pdf/zh/cpp/acroforms/) - 创建表单、填写表单字段、从表单中提取数据、使用C++库修改PDF中的字段。
+- [XFA Forms](/pdf/zh/cpp/xfa-forms/) - 填写 XFA 字段，转换 XFA，获取 XFA 字段属性。

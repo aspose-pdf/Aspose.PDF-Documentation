@@ -2,7 +2,7 @@
 title: تحويل صفحات PDF إلى صور في روبي
 type: docs
 weight: 20
-url: ar/java/convert-pdf-pages-to-images-in-ruby/
+url: /ar/java/convert-pdf-pages-to-images-in-ruby/
 lastmod: "2021-06-05"
 ---
 

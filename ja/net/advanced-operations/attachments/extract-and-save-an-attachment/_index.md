@@ -3,7 +3,7 @@ title: 添付ファイルを抽出して保存する
 linktitle: 添付ファイルを抽出して保存する
 type: docs
 weight: 20
-url: ja/net/extract-and-save-an-attachment/
+url: /ja/net/extract-and-save-an-attachment/
 description: Aspose.PDF for .NETでは、PDFドキュメントからすべての添付ファイルを取得することができます。また、ドキュメントから個々の添付ファイルを取得することもできます。
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ PDFファイルからすべての添付ファイルを取得するには：
 
 次のコードスニペットは、PDFドキュメントからすべての添付ファイルを取得する方法を示しています。
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 ```csharp
 // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください

@@ -2,7 +2,7 @@
 title: PdfFileMend クラス
 type: docs
 weight: 20
-url: ja/java/pdffilemend-class/
+url: /ja/java/pdffilemend-class/
 description: このセクションでは、PdfFileMend クラスを使用して Aspose.PDF Facades を操作する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -33,7 +33,7 @@ sitemap:
 
 見た目を確認してください:
 
-![Add Text](/pdf/net/images/add_text.png)
+![Add Text](/pdf/ja/net/images/add_text.png)
 
 [FormattedText](https://reference.aspose.com/pdf//java/com.aspose.pdf.facades/formattedtext) を追加する2番目の方法です。さらに、テキストが収まるべき矩形を指定します。
 
@@ -99,7 +99,7 @@ public static void AddImage01()
     }
 ```
 
-![画像を追加](/pdf/net/images/add_image1.png)
+![画像を追加](/pdf/ja/net/images/add_image1.png)
 
 2番目のコードスニペットを考えてみましょう。[CompositingParameters](https://reference.aspose.com/pdf/java/com.aspose.pdf/CompositingParameters) クラスのパラメーターのバリエーションを使用することで、様々なデザイン効果を得ることができます。そのうちの一つを試しました。
 
@@ -125,7 +125,7 @@ public static void AddImage01()
 ```
 
 
-![Add Image](/pdf/net/images/add_image2.png)
+![Add Image](/pdf/ja/net/images/add_image2.png)
 
 次のコードスニペットでは、[ImageFilterType](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageFilterType) を使用します。ImageFilterType は、エンコーディングに使用されるストリームコーデックのタイプを示します。デフォルトでは Jpeg です。PNG 形式から画像を読み込むと、ドキュメントには JPEG (または指定した他の形式) で保存されます。
 

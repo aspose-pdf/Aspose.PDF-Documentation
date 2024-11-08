@@ -3,7 +3,7 @@ title: JavaScriptを介してC++でPDFにヘッダーとフッターを追加
 linktitle: PDFにヘッダーとフッターを追加
 type: docs
 weight: 70
-url: ja/javascript-cpp/add-headers-and-footers-of-pdf-file/
+url: /ja/javascript-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for JavaScript via C++ は、AsposePdfAddTextHeaderFooterを使用してPDFファイルにヘッダーとフッターを追加することができます。
 lastmod: "2023-02-17"
 sitemap:

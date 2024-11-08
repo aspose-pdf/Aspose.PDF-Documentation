@@ -2,7 +2,7 @@
 title: استيراد وتصدير البيانات
 type: docs
 weight: 70
-url: ar/net/import-and-export-data/
+url: /ar/net/import-and-export-data/
 description: تشرح هذه القسم كيفية استيراد وتصدير البيانات باستخدام Aspose.PDF Facades باستعمال فئة النموذج.
 lastmod: "2024-06-05"
 draft: false

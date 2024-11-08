@@ -2,7 +2,7 @@
 title: Limitations de l'API
 type: docs
 weight: 70
-url: fr/net/api-limitations/
+url: /fr/net/api-limitations/
 ---
 
 ## **Xsl Fo en Pdf**

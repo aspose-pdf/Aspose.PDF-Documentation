@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview  
 type: docs  
 weight: 20  
-url: ko/androidjava/overview/  
+url: /ko/androidjava/overview/  
 description: Aspose.PDF for Android via Java의 주요 기능 및 지원 형식 개요, Java 라이브러리의 설치 및 라이선스 매뉴얼.  
 lastmod: "2021-06-05"  
 sitemap:  
@@ -38,9 +38,9 @@ Aspose.PDF for Android via Java는 다음과 같은 다양한 기능을 지원�
 
 자세히 알아보기:
 
-- [지원 파일 형식](/pdf/androidjava/supported-file-formats/)
-- [Aspose.PDF의 주요 기능](/pdf/androidjava/key-features/)
-- [시스템 요구 사항](/pdf/androidjava/system-requirements/)
-- [설치](/pdf/androidjava/installation/)
-- [라이선스](/pdf/androidjava/licensing/)
-- [기술 지원](/pdf/androidjava/technical-support/)
+- [지원 파일 형식](/pdf/ko/androidjava/supported-file-formats/)
+- [Aspose.PDF의 주요 기능](/pdf/ko/androidjava/key-features/)
+- [시스템 요구 사항](/pdf/ko/androidjava/system-requirements/)
+- [설치](/pdf/ko/androidjava/installation/)
+- [라이선스](/pdf/ko/androidjava/licensing/)
+- [기술 지원](/pdf/ko/androidjava/technical-support/)

@@ -2,7 +2,7 @@
 title: تقسيم ملف PDF إلى صفحات فردية في بايثون
 type: docs
 weight: 80
-url: ar/java/split-pdf-file-into-individual-pages-in-python/
+url: /ar/java/split-pdf-file-into-individual-pages-in-python/
 lastmod: "2021-06-05"
 ---
 

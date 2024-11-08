@@ -3,7 +3,7 @@ title: C++를 사용하여 PDF 문서 형식화
 linktitle: PDF 문서 형식화
 type: docs
 weight: 20
-url: ko/cpp/formatting-pdf-document/
+url: /ko/cpp/formatting-pdf-document/
 description: Aspose.PDF for C++를 사용하여 PDF 문서를 생성 및 형식화합니다. 다음 코드 스니펫을 사용하여 작업을 해결하십시오.
 lastmod: "2021-11-11"
 sitemap:

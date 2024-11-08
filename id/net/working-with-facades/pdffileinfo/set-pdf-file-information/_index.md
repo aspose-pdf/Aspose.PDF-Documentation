@@ -2,7 +2,7 @@
 title: Mengatur Informasi File PDF
 type: docs
 weight: 40
-url: id/net/set-pdf-file-information/
+url: /id/net/set-pdf-file-information/
 description: Bagian ini menjelaskan cara mengatur Informasi File PDF dengan Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

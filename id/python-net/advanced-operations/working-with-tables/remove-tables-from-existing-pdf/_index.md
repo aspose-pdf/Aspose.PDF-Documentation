@@ -3,7 +3,7 @@ title: Menghapus Tabel dari PDF yang Ada
 linktitle: Menghapus Tabel
 type: docs
 weight: 50
-url: id/python-net/remove-tables-from-existing-pdf/
+url: /id/python-net/remove-tables-from-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

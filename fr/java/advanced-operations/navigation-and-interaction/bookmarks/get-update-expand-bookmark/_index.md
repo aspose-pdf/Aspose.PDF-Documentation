@@ -3,7 +3,7 @@ title: Obtenir, Mettre à Jour et Développer un Signet
 linktitle: Obtenir, Mettre à Jour et Développer un Signet
 type: docs
 weight: 20
-url: fr/java/get-update-and-expand-bookmark/
+url: /fr/java/get-update-and-expand-bookmark/
 description: Cet article décrit comment utiliser les signets dans un fichier PDF. Avec notre bibliothèque Java, vous pouvez obtenir des signets à partir du fichier PDF, obtenir le numéro de page d'un signet, mettre à jour les signets dans un document PDF, et développer les signets lors de la visualisation d'un document.
 lastmod: "2021-06-05"
 sitemap:

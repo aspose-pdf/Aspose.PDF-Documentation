@@ -2,7 +2,7 @@
 title: Python에서 PDF 만료 설정
 type: docs
 weight: 80
-url: ko/java/set-pdf-expiration-in-python/
+url: /ko/java/set-pdf-expiration-in-python/
 lastmod: "2021-06-05"
 ---
 

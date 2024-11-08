@@ -3,7 +3,7 @@ title: Obtenir la Résolution et les Dimensions des Images Intégrées
 linktitle: Obtenir la Résolution et les Dimensions
 type: docs
 weight: 40
-url: fr/java/get-resolution-and-dimensions-of-embedded-images/
+url: /fr/java/get-resolution-and-dimensions-of-embedded-images/
 description: Cette section montre les détails pour obtenir la résolution et les dimensions des Images Intégrées
 lastmod: "2021-06-05"
 ---

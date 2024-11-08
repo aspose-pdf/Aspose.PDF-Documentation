@@ -2,7 +2,7 @@
 title: Ubah Kata Sandi File PDF
 type: docs
 weight: 40
-url: id/java/change-password/
+url: /id/java/change-password/
 description: Topik ini menjelaskan cara mengubah kata sandi pada File PDF menggunakan Kelas PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

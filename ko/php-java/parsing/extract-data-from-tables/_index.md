@@ -3,7 +3,7 @@ title: PDF에서 테이블 데이터 추출
 linktitle: 테이블 데이터 추출
 type: docs
 weight: 40
-url: ko/php-java/extract-data-from-table-in-pdf/
+url: /ko/php-java/extract-data-from-table-in-pdf/
 description: Aspose.PDF for PHP를 사용하여 PDF에서 표 형식을 추출하는 방법을 배우세요
 lastmod: "2021-05-20"
 sitemap:
@@ -85,7 +85,7 @@ $document->close();
 ## PDF에서 테이블 데이터 추출하여 CSV 파일에 저장
 
 다음 예제는 테이블을 추출하여 CSV 파일로 저장하는 방법을 보여줍니다.
-PDF를 Excel 스프레드시트로 변환하는 방법은 [PDF를 Excel로 변환](/pdf/php-java/convert-pdf-to-excel/) 기사를 참조하십시오.
+PDF를 Excel 스프레드시트로 변환하는 방법은 [PDF를 Excel로 변환](/pdf/ko/php-java/convert-pdf-to-excel/) 기사를 참조하십시오.
 
 ```php
 

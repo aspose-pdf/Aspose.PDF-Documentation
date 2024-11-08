@@ -2,7 +2,7 @@
 title: アノテーションの削除（ファサード）
 type: docs
 weight: 10
-url: ja/java/delete-annotations/
+url: /ja/java/delete-annotations/
 description: このセクションでは、Aspose.PDF ファサードを使用して PdfAnnotationEditor クラスでアノテーションを削除する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

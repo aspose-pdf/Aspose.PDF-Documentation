@@ -3,7 +3,7 @@ title: Adicionar fundo ao PDF
 linktitle: Adicionar fundos
 type: docs
 weight: 110
-url: pt/java/add-backgrounds/
+url: /pt/java/add-backgrounds/
 descriptions: Adicione uma imagem de fundo ao seu arquivo PDF com Java. Use o objeto BackgroundArtifact.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF/3-A 준수 PDF 만들기 및 ZUGFeRD 송장 Java에 첨부하기
 linktitle: PDF에 ZUGFeRD 첨부
 type: docs
 weight: 10
-url: ko/java/attach-zugferd/
+url: /ko/java/attach-zugferd/
 description: Aspose.PDF for Java에서 ZUGFeRD가 포함된 PDF 문서를 생성하는 방법을 학습하세요
 lastmod: "2024-01-18"
 sitemap:

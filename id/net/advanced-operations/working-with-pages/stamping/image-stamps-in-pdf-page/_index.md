@@ -3,7 +3,7 @@ title: Tambahkan Cap Gambar di PDF menggunakan C#
 linktitle: Cap Gambar dalam Berkas PDF
 type: docs
 weight: 10
-url: id/net/image-stamps-in-pdf-page/
+url: /id/net/image-stamps-in-pdf-page/
 description: Tambahkan Cap Gambar dalam dokumen PDF Anda menggunakan kelas ImageStamp dengan pustaka Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Anda dapat menggunakan kelas ImageStamp untuk menambahkan cap gambar ke file PDF. Kelas ImageStamp menyediakan properti yang diperlukan untuk membuat cap berbasis gambar, seperti tinggi, lebar, keburaman, dan sebagainya.
 
-Potongan kode berikut ini juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut ini juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk menambahkan cap gambar:
 

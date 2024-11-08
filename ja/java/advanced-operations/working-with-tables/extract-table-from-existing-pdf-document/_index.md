@@ -3,7 +3,7 @@ title: 既存のPDFドキュメントからテーブルを抽出する
 linktitle: テーブルを抽出
 type: docs
 weight: 25
-url: ja/java/extract-table-from-existing-pdf-document/
+url: /ja/java/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for Javaを使用すると、PDFドキュメント内に含まれるテーブルを様々に操作することが可能です。既存のPDFドキュメントにテーブルを追加および抽出したり、新しいページにテーブルをレンダリングしたりできます。
 lastmod: "2021-06-05"
 sitemap:

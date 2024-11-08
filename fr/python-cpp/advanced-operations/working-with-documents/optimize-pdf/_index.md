@@ -3,7 +3,7 @@ title: Optimiser, Compresser ou Réduire la Taille d'un PDF en Python
 linktitle: Optimiser PDF
 type: docs
 weight: 30
-url: fr/python-cpp/optimize-pdf/
+url: /fr/python-cpp/optimize-pdf/
 keywords: "optimiser pdf Python"
 description: Optimiser un fichier PDF, réduire toutes les images, réduire la taille du PDF, désintégrer les polices, supprimer les objets inutilisés avec Python.
 lastmod: "2023-12-22"

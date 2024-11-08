@@ -2,7 +2,7 @@
 title: Merger
 type: docs
 weight: 100
-url: pt/net/plugins/merger/
+url: /pt/net/plugins/merger/
 description: Como mesclar múltiplos arquivos PDF em um usando o Plugin Merger do Aspose.PDF
 lastmod: "2024-01-24"
 ---

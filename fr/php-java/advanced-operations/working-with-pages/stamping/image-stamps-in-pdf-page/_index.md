@@ -3,7 +3,7 @@ title: Ajouter des tampons d'image dans un PDF par programmation
 linktitle: Tampons d'image dans un fichier PDF
 type: docs
 weight: 10
-url: fr/php-java/image-stamps-in-pdf-page/
+url: /fr/php-java/image-stamps-in-pdf-page/
 description: Ajoutez le tampon d'image dans votre document PDF en utilisant la classe ImageStamp avec la bibliothèque Aspose.PDF pour PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

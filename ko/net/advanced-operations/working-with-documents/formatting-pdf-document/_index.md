@@ -3,7 +3,7 @@ title: C#를 사용하여 PDF 문서 포맷하기
 linktitle: PDF 문서 포맷하기
 type: docs
 weight: 11
-url: ko/net/formatting-pdf-document/
+url: /ko/net/formatting-pdf-document/
 description: Aspose.PDF for .NET을 사용하여 PDF 문서를 생성하고 포맷하세요. 다음 코드 스니펫을 사용하여 작업을 해결하세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -94,7 +94,7 @@ sitemap:
 - PageLayout – 페이지 레이아웃입니다.
 - PageMode – 문서가 처음 열릴 때 어떻게 표시되는지에 대한 옵션은 썸네일 표시, 전체 화면, 첨부 파일 패널 표시입니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 다음 코드 스니펫은 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 속성을 가져오는 방법을 보여줍니다.
 

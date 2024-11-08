@@ -2,7 +2,7 @@
 title: Adicionar Camadas ao Arquivo PDF em Ruby
 type: docs
 weight: 20
-url: pt/java/add-layers-to-pdf-file-in-ruby/
+url: /pt/java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

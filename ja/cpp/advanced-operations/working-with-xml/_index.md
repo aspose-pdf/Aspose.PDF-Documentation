@@ -3,7 +3,7 @@ title: XMLを使用したC++での作業
 linktitle: XMLを使用した作業
 type: docs
 weight: 80
-url: ja/cpp/working-with-xml/
+url: /ja/cpp/working-with-xml/
 description: Aspose.PDF for C++でXMLからPDFドキュメントを生成する方法を学ぶ
 lastmod: "2022-01-31"
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 XMLは、ファイル内のデータを再利用する方法や、あるファイルのデータを別のファイルのデータで置き換えるプロセスを自動化する方法です。XMLスキーマを正しく作成することは難しく、拡張可能な複数の相互接続スキーマを作成することはさらに困難です。Aspose.PDFがXMLの作業タスクをどのように処理するかを学びましょう。
 
-- [サポートされているXMLスキーマ](/pdf/cpp/supported-xml-schema/) - XMLドキュメントを操作するために次のXMLスキーマを使用します。
+- [サポートされているXMLスキーマ](/pdf/ja/cpp/supported-xml-schema/) - XMLドキュメントを操作するために次のXMLスキーマを使用します。
 
-- [XMLとXSLTに基づく簡単な「Hello World」例](/pdf/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/) - 既存のXMLドキュメントをPDFに変換するためにXSLTを使用します。
-- [Generate PDF from XML](/pdf/cpp/generate-pdf-from-xml/) - Aspose.PDFには、XMLドキュメントに基づいてPDFを生成するいくつかの方法があります。
+- [XMLとXSLTに基づく簡単な「Hello World」例](/pdf/ja/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/) - 既存のXMLドキュメントをPDFに変換するためにXSLTを使用します。
+- [Generate PDF from XML](/pdf/ja/cpp/generate-pdf-from-xml/) - Aspose.PDFには、XMLドキュメントに基づいてPDFを生成するいくつかの方法があります。

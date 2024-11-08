@@ -2,7 +2,7 @@
 
 title: تنسيقات الملفات المدعومة
 
-url: ar/sharepoint/supported-file-formats/
+url: /ar/sharepoint/supported-file-formats/
 
 lastmod: "2020-12-16"
 

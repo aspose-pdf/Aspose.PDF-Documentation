@@ -3,7 +3,7 @@ title: Travailler avec AcroForms dans un PDF en utilisant Aspose.PDF pour C++
 linktitle: AcroForms
 type: docs
 weight: 10
-url: fr/cpp/acroforms/
+url: /fr/cpp/acroforms/
 description: Avec Aspose.PDF pour C++, vous pouvez créer un formulaire à partir de zéro, remplir le champ de formulaire dans un document PDF, extraire des données du formulaire, ajouter ou supprimer des champs dans le formulaire existant.
 lastmod: "2021-12-01"
 sitemap:
@@ -19,12 +19,12 @@ sitemap:
 
 Pour une étude plus détaillée des possibilités de travailler avec des formulaires, étudiez les articles suivants dans la section :
 
-- [Créer AcroForm](/pdf/cpp/create-form/) - créer un formulaire à partir de zéro, en ajoutant RadioButtonField, TextBoxField, Champ de légende en utilisant C++.
+- [Créer AcroForm](/pdf/fr/cpp/create-form/) - créer un formulaire à partir de zéro, en ajoutant RadioButtonField, TextBoxField, Champ de légende en utilisant C++.
 
-- [Remplir AcroForm](/pdf/cpp/fill-form/) - pour remplir un champ de formulaire, récupérez le champ de la collection de formulaires de l'objet Document.
+- [Remplir AcroForm](/pdf/fr/cpp/fill-form/) - pour remplir un champ de formulaire, récupérez le champ de la collection de formulaires de l'objet Document.
 
-- [Extraire les données AcroForm](/pdf/cpp/extract-form/) - obtenir des valeurs de tous les champs et des champs individuels, etc.
+- [Extraire les données AcroForm](/pdf/fr/cpp/extract-form/) - obtenir des valeurs de tous les champs et des champs individuels, etc.
 
-- [Modifier AcroForm](/pdf/cpp/modifing-form/) - obtenir/mettre FieldLimit, supprimer des champs dans un formulaire existant, définir une police de champ de formulaire autre que les 14 polices PDF de base avec C++.
+- [Modifier AcroForm](/pdf/fr/cpp/modifing-form/) - obtenir/mettre FieldLimit, supprimer des champs dans un formulaire existant, définir une police de champ de formulaire autre que les 14 polices PDF de base avec C++.
 
-- [Poster les données AcroForm](/pdf/cpp/posting-acroform-data/) - importer et exporter des données de formulaire vers et depuis un fichier XML.
+- [Poster les données AcroForm](/pdf/fr/cpp/posting-acroform-data/) - importer et exporter des données de formulaire vers et depuis un fichier XML.

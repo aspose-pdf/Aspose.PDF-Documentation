@@ -2,7 +2,7 @@
 title: Alterar Senha de Arquivo PDF
 type: docs
 weight: 40
-url: pt/net/change-password/
+url: /pt/net/change-password/
 description: Este tópico explica como alterar a senha em um arquivo PDF usando a Classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

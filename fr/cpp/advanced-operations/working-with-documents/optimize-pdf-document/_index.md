@@ -3,7 +3,7 @@ title: Optimiser PDF avec C++
 linktitle: Optimiser PDF
 type: docs
 weight: 30
-url: fr/cpp/optimize-pdf/
+url: /fr/cpp/optimize-pdf/
 description: Optimiser un fichier PDF, réduire toutes les images, diminuer la taille du PDF, désintégrer les polices, activer la réutilisation du contenu des pages, supprimer ou aplatir les annotations avec C++.
 lastmod: "2021-11-11"
 sitemap:

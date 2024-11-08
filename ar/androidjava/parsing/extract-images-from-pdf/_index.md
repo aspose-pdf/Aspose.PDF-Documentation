@@ -3,7 +3,7 @@ title: استخراج الصور من PDF
 linktitle: استخراج الصور
 type: docs
 weight: 20
-url: ar/androidjava/extract-images-from-the-pdf-file/
+url: /ar/androidjava/extract-images-from-the-pdf-file/
 description: كيفية استخراج جزء من الصورة من PDF باستخدام Aspose.PDF لنظام Android عبر Java
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Anotações em PDF usando JavaScript
 linktitle: Anotações em PDF
 type: docs
 weight: 90
-url: pt/javascript-cpp/annotations/
+url: /pt/javascript-cpp/annotations/
 description: Esta seção mostra como usar todos os tipos de anotações no seu arquivo PDF com o Aspose.PDF para JavaScript via C++.
 lastmod: "2023-09-17"
 sitemap:
@@ -19,4 +19,4 @@ Anotações em PDF, como destaque, sublinhado ou adição de comentários, permi
 
 Você é capaz de fazer o seguinte:
 
-- [Excluir Anotação](/pdf/javascript-cpp/delete-annotation/) - esta seção explica como excluir anotações do seu PDF com JavaScript.
+- [Excluir Anotação](/pdf/pt/javascript-cpp/delete-annotation/) - esta seção explica como excluir anotações do seu PDF com JavaScript.

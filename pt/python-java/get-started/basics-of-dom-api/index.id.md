@@ -3,7 +3,7 @@ title: Dasar-dasar Aspose.PDF DOM API
 linktitle: Dasar-dasar DOM API
 type: docs
 weight: 110
-url: pt/python-java/basics-of-dom-api/
+url: /pt/python-java/basics-of-dom-api/
 description: Aspose.PDF untuk Java juga menggunakan ide DOM untuk merepresentasikan struktur dokumen PDF dalam bentuk objek. Di sini Anda dapat membaca deskripsi struktur ini.
 lastmod: "2024-06-05"
 sitemap:

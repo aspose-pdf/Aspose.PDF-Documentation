@@ -3,7 +3,7 @@ title: Création d'un PDF complexe
 linktitle: Création d'un PDF complexe
 type: docs
 weight: 30
-url: fr/python-net/complex-pdf-example/
+url: /fr/python-net/complex-pdf-example/
 description: Aspose.PDF pour Python via .NET vous permet de créer des documents plus complexes contenant des images, des fragments de texte et des tableaux dans un seul document.
 lastmod: "2022-12-22"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-L'exemple [Bonjour, le Monde](/pdf/python-net/hello-world-example/) a montré des étapes simples pour créer un document PDF en utilisant Python et Aspose.PDF. Dans cet article, nous allons examiner la création d'un document plus complexe avec Aspose.PDF pour Python. Comme exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferry pour passagers. Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe), et un tableau.
+L'exemple [Bonjour, le Monde](/pdf/fr/python-net/hello-world-example/) a montré des étapes simples pour créer un document PDF en utilisant Python et Aspose.PDF. Dans cet article, nous allons examiner la création d'un document plus complexe avec Aspose.PDF pour Python. Comme exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferry pour passagers. Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe), et un tableau.
 
 Si nous créons un document à partir de zéro, nous devons suivre certaines étapes :
 

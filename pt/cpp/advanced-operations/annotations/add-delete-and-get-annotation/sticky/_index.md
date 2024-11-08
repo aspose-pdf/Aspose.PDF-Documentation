@@ -3,7 +3,7 @@ title: Anotações Adesivas em PDF usando C++
 linktitle: Anotação Adesiva
 type: docs
 weight: 50
-url: pt/cpp/sticky-annotations/
+url: /pt/cpp/sticky-annotations/
 description: Este tópico sobre anotações adesivas, como exemplo mostramos a Anotação de Marca d'água no texto. É usado para representar gráficos na página. Verifique o trecho de código para resolver esta tarefa.
 lastmod: "2021-11-24"
 sitemap:

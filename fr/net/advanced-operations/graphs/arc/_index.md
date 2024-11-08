@@ -3,7 +3,7 @@ title: Ajouter un objet Arc au fichier PDF
 linktitle: Ajouter Arc
 type: docs
 weight: 10
-url: fr/net/add-arc/
+url: /fr/net/add-arc/
 description: Cet article explique comment créer un objet arc dans votre PDF en utilisant Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Cet article explique comment créer un objet arc dans votre PDF en utilisant Aspose.PDF pour .NET."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter un objet Arc
 

@@ -3,7 +3,7 @@ title: Dapatkan, Perbarui dan Kembangkan Penanda
 linktitle: Dapatkan, Perbarui dan Kembangkan Penanda
 type: docs
 weight: 20
-url: id/cpp/get-update-and-expand-bookmark/
+url: /id/cpp/get-update-and-expand-bookmark/
 description: Aspose.PDF untuk pustaka C++ memungkinkan Anda mendapatkan? memperbarui dalam file PDF dengan kami.
 lastmod: "2022-01-31"
 sitemap:

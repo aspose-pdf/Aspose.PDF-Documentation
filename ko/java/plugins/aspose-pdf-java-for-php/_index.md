@@ -2,7 +2,7 @@
 title: Aspose.PDF Java for PHP
 type: docs
 weight: 50
-url: ko/java/aspose-pdf-java-for-php/
+url: /ko/java/aspose-pdf-java-for-php/
 lastmod: "2021-06-05"
 ---
 

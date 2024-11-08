@@ -3,7 +3,7 @@ title: Ajouter un filigrane à un PDF en utilisant C#
 linktitle: Ajouter un filigrane
 type: docs
 weight: 90
-url: fr/net/add-watermarks/
+url: /fr/net/add-watermarks/
 description: Cet article explique les fonctionnalités de travail avec des artefacts et l'obtention de filigranes dans des PDF en utilisant C# de manière programmatique.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 </script>
 **Aspose.PDF pour .NET** permet d'ajouter des filigranes à votre document PDF à l'aide d'Artifacts. Veuillez consulter cet article pour résoudre votre tâche.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Un filigrane créé avec Adobe Acrobat est appelé un artefact (tel que décrit dans la section 14.8.2.2 Contenu Réel et Artefacts de la spécification PDF). Pour travailler avec les artefacts, Aspose.PDF dispose de deux classes : [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) et [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

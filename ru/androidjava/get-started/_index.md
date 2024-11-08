@@ -3,7 +3,7 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: ru/androidjava/get-started/
+url: /ru/androidjava/get-started/
 description: Этот раздел описывает основные принципы использования Aspose.PDF для Android через Java. Также демонстрирует простые и сложные примеры создания PDF-документа.
 lastmod: "2021-08-05"
 sitemap: 
@@ -51,7 +51,7 @@ Aspose.PDF для Android через Android через Java быстр и ле�
 
 ### Узнайте больше о:
 
-- [Основы DOM API](/pdf/androidjava/basics-of-dom-api/)
-- [Пример "Hello, World" на Android с использованием Java](/pdf/androidjava/hello-world-example/)
-- [Сложный PDF](/pdf/androidjava/complex-pdf-example/)
-- [Как запустить другие примеры](/pdf/androidjava/how-to-run-other-examples/)
+- [Основы DOM API](/pdf/ru/androidjava/basics-of-dom-api/)
+- [Пример "Hello, World" на Android с использованием Java](/pdf/ru/androidjava/hello-world-example/)
+- [Сложный PDF](/pdf/ru/androidjava/complex-pdf-example/)
+- [Как запустить другие примеры](/pdf/ru/androidjava/how-to-run-other-examples/)

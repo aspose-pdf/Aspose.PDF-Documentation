@@ -3,7 +3,7 @@ title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: id/python-net/annotations/
+url: /id/python-net/annotations/
 description: Bagian ini menunjukkan cara menggunakan semua jenis anotasi pada file PDF Anda dengan pustaka Aspose.PDF.
 lastmod: "2023-02-17"
 sitemap:
@@ -85,7 +85,7 @@ Anotasi dapat digunakan untuk mengomentari, meninjau, menandai dokumen, memberik
 
 Anda dapat melakukan hal berikut:
 
-- [Tambah, Hapus dan Dapatkan Anotasi](/pdf/python-net/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
+- [Tambah, Hapus dan Dapatkan Anotasi](/pdf/id/python-net/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
 
 <script type="application/ld+json">
 {

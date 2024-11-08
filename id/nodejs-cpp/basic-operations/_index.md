@@ -3,7 +3,7 @@ title: Basic operations with PDF by Aspose.PDF for Node.js via C++
 linktitle: Basic operations
 type: docs
 weight: 40
-url: id/nodejs-cpp/basic-operations/
+url: /id/nodejs-cpp/basic-operations/
 lastmod: "2023-11-16"
 description: Bagian operasi dasar menjelaskan kemungkinan operasi paling sederhana dengan dokumen PDF menggunakan Aspose.PDF untuk Node.js via C++.
 sitemap:
@@ -13,6 +13,6 @@ sitemap:
 
 Bagian **operasi dasar** menjelaskan operasi pertama dan paling sederhana dengan dokumen PDF di Aspose.PDF untuk Node.js via C++:
 
-- [Perbaiki PDF](/pdf/nodejs-cpp/repair-pdf/)
-- [Optimalkan File PDF](/pdf/nodejs-cpp/optimize-pdf/)
-- [Optimalkan Sumber Daya PDF](/pdf/nodejs-cpp/optimize-pdf-resources/)
+- [Perbaiki PDF](/pdf/id/nodejs-cpp/repair-pdf/)
+- [Optimalkan File PDF](/pdf/id/nodejs-cpp/optimize-pdf/)
+- [Optimalkan Sumber Daya PDF](/pdf/id/nodejs-cpp/optimize-pdf-resources/)

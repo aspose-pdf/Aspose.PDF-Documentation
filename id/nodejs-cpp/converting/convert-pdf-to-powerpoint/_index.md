@@ -3,7 +3,7 @@ title: Konversi PDF ke PPTX di Node.js
 linktitle: Konversi PDF ke PowerPoint
 type: docs
 weight: 30
-url: id/nodejs-cpp/convert-pdf-to-powerpoint/
+url: /id/nodejs-cpp/convert-pdf-to-powerpoint/
 lastmod: "2023-11-16"
 description: Aspose.PDF memungkinkan Anda untuk mengkonversi PDF ke format PPTX menggunakan Node.js langsung di lingkungan Node.js.
 sitemap:

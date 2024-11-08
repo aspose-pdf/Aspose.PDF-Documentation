@@ -3,7 +3,7 @@ title: PDF에 머리글과 바닥글 추가
 linktitle: PDF에 머리글과 바닥글 추가
 type: docs
 weight: 70
-url: ko/cpp/add-headers-and-footers-of-pdf-file/
+url: /ko/cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for C++를 사용하여 PDF 파일에 TextStamp 클래스를 사용해 머리글과 바닥글을 추가할 수 있습니다.
 lastmod: "2021-12-08"
 sitemap:

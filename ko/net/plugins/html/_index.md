@@ -2,7 +2,7 @@
 title: HTML 변환기
 type: docs
 weight: 70
-url: ko/net/plugins/html/
+url: /ko/net/plugins/html/
 description: Aspose.PDF PdfHtml 플러그인을 사용하여 PDF 파일을 HTML 파일로 변환하는 방법
 lastmod: "2024-01-24"
 draft: false

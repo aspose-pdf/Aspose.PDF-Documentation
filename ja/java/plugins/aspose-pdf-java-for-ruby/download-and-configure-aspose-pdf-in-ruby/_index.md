@@ -2,7 +2,7 @@
 title: Aspose.PdfをRubyでダウンロードして設定
 type: docs
 weight: 10
-url: ja/java/download-and-configure-aspose-pdf-in-ruby/
+url: /ja/java/download-and-configure-aspose-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

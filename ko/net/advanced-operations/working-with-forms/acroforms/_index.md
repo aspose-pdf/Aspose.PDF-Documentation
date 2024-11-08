@@ -3,7 +3,7 @@ title: AcroForms 작업하기
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ko/net/acroforms/
+url: /ko/net/acroforms/
 description: Aspose.PDF for .NET을 사용하면 처음부터 양식을 생성하고, PDF 문서의 양식 필드를 채우고, 양식에서 데이터를 추출하는 등의 작업을 수행할 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -98,12 +98,12 @@ AcroForms는 XFA에 없는 기능을 가지고 있으며, 반대로 XFA는 AcroF
 Java 라이브러리의 기능에 대해 자세히 알아보려면 다음 기사를 참조하세요:
 Java 라이브러리의 기능을 자세히 학습하려면 다음 기사를 참조하십시오:
 
-- [Create AcroForm](/pdf/net/create-form) - C#을 사용하여 처음부터 양식을 만듭니다.
-- [Fill AcroForm](/pdf/net/fill-form) - PDF 문서의 양식 필드를 채웁니다.
-- [Extract AcroForm](/pdf/net/extract-form) - PDF 문서의 모든 또는 개별 필드에서 값을 가져옵니다.
-- [Modifing AcroForm](/pdf/net/modifing-form) - FieldLimit를 가져오거나 설정하고, 양식 필드 글꼴을 설정하는 등의 작업을 합니다.
-- [Posting AcroForm Data](/pdf/net/posting-acroform-data/) - 양식 데이터를 XML 파일로 가져오고 내보냅니다.
-- [Import and Export Data](/pdf/net/import-and-export-data/) - Form Class를 사용하여 데이터를 가져오고 내보냅니다.
+- [Create AcroForm](/pdf/ko/net/create-form) - C#을 사용하여 처음부터 양식을 만듭니다.
+- [Fill AcroForm](/pdf/ko/net/fill-form) - PDF 문서의 양식 필드를 채웁니다.
+- [Extract AcroForm](/pdf/ko/net/extract-form) - PDF 문서의 모든 또는 개별 필드에서 값을 가져옵니다.
+- [Modifing AcroForm](/pdf/ko/net/modifing-form) - FieldLimit를 가져오거나 설정하고, 양식 필드 글꼴을 설정하는 등의 작업을 합니다.
+- [Posting AcroForm Data](/pdf/ko/net/posting-acroform-data/) - 양식 데이터를 XML 파일로 가져오고 내보냅니다.
+- [Import and Export Data](/pdf/ko/net/import-and-export-data/) - Form Class를 사용하여 데이터를 가져오고 내보냅니다.
 
 <script type="application/ld+json">
 {

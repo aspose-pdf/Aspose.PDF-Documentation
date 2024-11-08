@@ -3,7 +3,7 @@ title: Adicionar marca d'água ao PDF usando Python
 linktitle: Adicionar marca d'água
 type: docs
 weight: 40
-url: pt/python-net/add-watermarks/
+url: /pt/python-net/add-watermarks/
 description: Este artigo explica os recursos de trabalhar com artefatos e obter marcas d'água em PDFs programaticamente usando Python.
 lastmod: "2023-04-17"
 sitemap:

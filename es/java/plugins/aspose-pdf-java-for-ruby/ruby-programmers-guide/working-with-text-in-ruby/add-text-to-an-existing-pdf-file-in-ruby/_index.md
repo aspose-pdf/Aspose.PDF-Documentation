@@ -2,7 +2,7 @@
 title: Agregar Texto a un archivo PDF existente en Ruby
 type: docs
 weight: 20
-url: es/java/add-text-to-an-existing-pdf-file-in-ruby/
+url: /es/java/add-text-to-an-existing-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

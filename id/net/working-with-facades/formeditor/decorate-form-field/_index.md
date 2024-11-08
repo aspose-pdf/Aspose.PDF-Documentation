@@ -2,7 +2,7 @@
 title: Hiasi Bidang Formulir di PDF
 type: docs
 weight: 20
-url: id/net/decorate-form-field/
+url: /id/net/decorate-form-field/
 description: Bagian ini menjelaskan cara menghiasi Bidang Formulir di PDF menggunakan Kelas FormEditor.
 lastmod: "2021-06-05"
 draft: false

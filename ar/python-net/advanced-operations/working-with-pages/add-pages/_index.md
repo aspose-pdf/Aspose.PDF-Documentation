@@ -3,7 +3,7 @@ title: إضافة صفحات في PDF باستخدام بايثون
 linktitle: إضافة صفحات
 type: docs
 weight: 10
-url: ar/python-net/add-pages/
+url: /ar/python-net/add-pages/
 description: تعلمك هذه المقالة كيفية إدراج (إضافة) صفحة في الموقع المطلوب في ملف PDF. تعرف على كيفية نقل، إزالة (حذف) الصفحات من ملف PDF باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:

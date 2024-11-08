@@ -3,7 +3,7 @@ title: Añadir marca de agua a PDF
 linktitle: Añadir marca de agua
 type: docs
 weight: 90
-url: es/java/add-watermarks/
+url: /es/java/add-watermarks/
 description: Este artículo explica las características de trabajar con artefactos y obtener marcas de agua en PDFs mediante programación en Java.
 lastmod: "2021-06-05"
 sitemap:

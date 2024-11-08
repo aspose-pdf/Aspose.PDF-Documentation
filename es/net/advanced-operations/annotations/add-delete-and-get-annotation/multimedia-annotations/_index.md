@@ -3,7 +3,7 @@ title: Anotación Multimedia PDF usando C#
 linktitle: Anotación Multimedia
 type: docs
 weight: 40
-url: es/net/multimedia-annotation/
+url: /es/net/multimedia-annotation/
 description: Aspose.PDF para .NET te permite agregar, obtener y eliminar la anotación multimedia de tu documento PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -99,7 +99,7 @@ Los siguientes métodos/propiedades de la clase RichMediaAnnotation pueden ser u
 - void Update(): Crear una estructura de datos de la anotación. Este método debe ser llamado al final.
 - void SetPoster(Stream): Establecer el póster del video, es decir, la imagen mostrada cuando el reproductor no está activo.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Añadir Anotación de Pantalla
 
@@ -369,7 +369,7 @@ document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
 document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
 ```
 
-Para obtener más información detallada y posibilidades de estas características, consulte también [Trabajando con Formularios](/pdf/net/acroforms/).
+Para obtener más información detallada y posibilidades de estas características, consulte también [Trabajando con Formularios](/pdf/es/net/acroforms/).
 
 En documentos PDF, puedes ver y gestionar contenido 3D de alta calidad creado con software CAD 3D o de modelado 3D e incrustado en el documento PDF. Puedes rotar elementos 3D en todas las direcciones como si los tuvieras en tus manos.
 

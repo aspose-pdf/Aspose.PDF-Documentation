@@ -3,7 +3,7 @@ title: Licenciamento e limitações
 linktitle: Licenciamento e limitações
 type: docs
 weight: 90
-url: pt/php-java/licensing/
+url: /pt/php-java/licensing/
 description: Aspose.PDF para PHP via Java convida seus clientes a obter uma licença Clássica e Licença Medida. Assim como usar uma licença limitada para explorar melhor o produto.
 lastmod: "2024-06-05"
 sitemap:

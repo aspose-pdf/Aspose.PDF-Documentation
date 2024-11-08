@@ -3,7 +3,7 @@ title: 텍스트 생성을 위한 FloatingBox 사용하기
 linktitle: FloatingBox 사용하기
 type: docs
 weight: 30
-url: ko/net/floating-box/
+url: /ko/net/floating-box/
 description: 이 페이지는 플로팅 박스 내부에서 텍스트를 포맷하는 방법에 대해 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-이 기능은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+이 기능은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## FloatingBox 도구 사용 기초
 

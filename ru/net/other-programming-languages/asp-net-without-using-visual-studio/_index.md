@@ -2,12 +2,12 @@
 title: ASP.NET без использования Visual Studio
 type: docs
 weight: 60
-url: ru/net/asp-net-without-using-visual-studio/
+url: /ru/net/asp-net-without-using-visual-studio/
 ---
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF для .NET](/pdf/net/) может использоваться для разработки страниц или приложений ASP.NET без использования Visual Studio. В этом примере мы напишем HTML и код на C# или VB.NET в одном файле .aspx; это обычно называется Instant ASP.NET.
+[Aspose.PDF для .NET](/pdf/ru/net/) может использоваться для разработки страниц или приложений ASP.NET без использования Visual Studio. В этом примере мы напишем HTML и код на C# или VB.NET в одном файле .aspx; это обычно называется Instant ASP.NET.
 
 {{% /alert %}}
 
@@ -16,7 +16,7 @@ url: ru/net/asp-net-without-using-visual-studio/
 {{% alert color="primary" %}}
 
 Создайте образец веб-приложения и скопируйте Aspose.PDF.dll в каталог под названием "Bin" в директории вашего сайта ( *если папка bin не существует, создайте её* ). Затем создайте вашу .aspx страницу и скопируйте следующий код в неё.
-Этот пример показывает, как использовать [Aspose.PDF для .NET](/pdf/net/) с встроенным кодом на странице ASP.NET для создания простого PDF-документа с некоторым образцом текста внутри.
+Этот пример показывает, как использовать [Aspose.PDF для .NET](/pdf/ru/net/) с встроенным кодом на странице ASP.NET для создания простого PDF-документа с некоторым образцом текста внутри.
 {{% /alert %}}
 
 ```cs

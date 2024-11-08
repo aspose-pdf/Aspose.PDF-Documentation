@@ -2,7 +2,7 @@
 title: デバッグ情報
 type: docs
 weight: 90
-url: ja/reportingservices/debug-information/
+url: /ja/reportingservices/debug-information/
 lastmod: "2021-06-05"
 ---
 

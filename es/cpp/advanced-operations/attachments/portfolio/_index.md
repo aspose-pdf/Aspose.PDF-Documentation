@@ -3,7 +3,7 @@ title: Trabajando con Portafolio en PDF
 linktitle: Portafolio
 type: docs
 weight: 40
-url: es/cpp/portfolio/
+url: /es/cpp/portfolio/
 description: Cree un Portafolio PDF con Aspose.PDF para C++. Debe usar un archivo de Microsoft Excel, un documento de Word y un archivo de imagen para crear un Portafolio PDF.
 lastmod: "2022-02-07"
 sitemap:

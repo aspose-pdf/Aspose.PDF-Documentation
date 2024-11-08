@@ -2,7 +2,7 @@
 title: Exportar Marcadores a XML desde un Archivo PDF Existente (facades)
 type: docs
 weight: 20
-url: es/java/export-bookmark/
+url: /es/java/export-bookmark/
 description: Esta sección explica cómo exportar marcadores con Aspose.PDF Facades usando la Clase PdfBookmarkEditor.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: إضافة كائن مستطيل إلى ملف PDF
 linktitle: إضافة مستطيل
 type: docs
 weight: 50
-url: ar/java/add-rectangle/
+url: /ar/java/add-rectangle/
 description: يشرح هذا المقال كيفية إنشاء كائن مستطيل إلى ملف PDF باستخدام Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

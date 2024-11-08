@@ -2,7 +2,7 @@
 title: Paramètres de Configuration
 type: docs
 weight: 10
-url: fr/reportingservices/setting-parameters/
+url: /fr/reportingservices/setting-parameters/
 lastmod: "2021-06-05"
 ---
 

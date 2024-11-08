@@ -3,7 +3,7 @@ title: 모든 PDF 페이지에서 텍스트 추출하기 C++ 사용
 linktitle: PDF에서 텍스트 추출하기
 type: docs
 weight: 10
-url: ko/cpp/extract-text-from-all-pdf/
+url: /ko/cpp/extract-text-from-all-pdf/
 description: 이 문서는 Aspose.PDF를 사용하여 C++에서 PDF 문서에서 텍스트를 추출하는 다양한 방법을 설명합니다. 전체 페이지, 특정 부분, 열 기반 등.
 lastmod: "2021-12-13"
 sitemap:

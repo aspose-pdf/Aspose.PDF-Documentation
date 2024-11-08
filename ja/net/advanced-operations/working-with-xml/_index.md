@@ -3,7 +3,7 @@ title: C#を使用したXMLの操作
 linktitle: XMLの操作
 type: docs
 weight: 80
-url: ja/net/working-with-xml/
+url: /ja/net/working-with-xml/
 description: Aspose.PDF for .NETでXMLからPDFドキュメントを生成する方法を学ぶ
 lastmod: "2022-02-17"
 sitemap:
@@ -78,9 +78,9 @@ sitemap:
 
 XML (Extensible Markup Language) は、ファイル内のデータを再利用したり、別のファイルからのデータでファイル内のデータを自動的に置き換える方法です。XML スキーマを正しく作成するのは難しいですが、拡張可能な複数の相互連携するスキーマを作成するのはさらに難しいです。Aspose.PDF が XML の処理タスクにどのように対処するかを学びましょう。
 
-- [対応する XML スキーマ](/pdf/net/supported-xml-schema/) - XML ドキュメントを操作するために次の XML スキーマを使用します。
-- [XML と XSLT に基づいたシンプルな 'Hello World' の例](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - 既存の XML ドキュメントを PDF に変換するために XSLT を使用します。
-- [XML から PDF を生成する](/pdf/net/generate-pdf-from-xml/) - Aspose.PDF には XML ドキュメントに基づいて PDF を生成するいくつかの方法があります。
+- [対応する XML スキーマ](/pdf/ja/net/supported-xml-schema/) - XML ドキュメントを操作するために次の XML スキーマを使用します。
+- [XML と XSLT に基づいたシンプルな 'Hello World' の例](/pdf/ja/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - 既存の XML ドキュメントを PDF に変換するために XSLT を使用します。
+- [XML から PDF を生成する](/pdf/ja/net/generate-pdf-from-xml/) - Aspose.PDF には XML ドキュメントに基づいて PDF を生成するいくつかの方法があります。
 
 <script type="application/ld+json">
 {

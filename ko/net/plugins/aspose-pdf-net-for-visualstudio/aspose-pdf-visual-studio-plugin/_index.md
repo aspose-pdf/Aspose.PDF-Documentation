@@ -2,7 +2,7 @@
 title: Aspose.PDF Visual Studio 플러그인
 type: docs
 weight: 20
-url: ko/net/aspose-pdf-visual-studio-plugin/
+url: /ko/net/aspose-pdf-visual-studio-plugin/
 description: Umbraco PDF 가져오기 모듈 사용 방법을 알아보세요
 lastmod: "2021-06-05"
 sitemap:

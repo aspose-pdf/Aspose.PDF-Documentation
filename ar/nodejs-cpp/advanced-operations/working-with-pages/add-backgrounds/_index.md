@@ -3,7 +3,7 @@ title: إضافة خلفية إلى PDF في Node.js
 linktitle: إضافة خلفية
 type: docs
 weight: 10
-url: ar/nodejs-cpp/add-background/
+url: /ar/nodejs-cpp/add-background/
 description: إضافة صورة خلفية إلى ملف PDF الخاص بك في Node.js 
 lastmod: "2023-11-16"
 sitemap:

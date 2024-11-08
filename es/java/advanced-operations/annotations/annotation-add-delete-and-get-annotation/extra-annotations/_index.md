@@ -3,7 +3,7 @@ title: Uso de tipos adicionales de anotaciones PDF
 linktitle: Anotaciones Extra
 type: docs
 weight: 60
-url: es/java/extra-annotations/
+url: /es/java/extra-annotations/
 description: Esta sección describe cómo agregar, obtener y eliminar tipos adicionales de anotaciones de su documento PDF.
 lastmod: "2021-11-24"
 sitemap:

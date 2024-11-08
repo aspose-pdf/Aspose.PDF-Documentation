@@ -3,7 +3,7 @@ title: Convertir PDF en texte
 linktitle: Convertir PDF en texte
 type: docs
 weight: 120
-url: fr/androidjava/convert-pdf-to-txt/
+url: /fr/androidjava/convert-pdf-to-txt/
 lastmod: "2021-06-05"
 description: Avec Aspose.PDF pour Android via Java, vous pouvez convertir un document PDF entier en un fichier texte ou convertir uniquement une page PDF en un fichier texte.
 sitemap:

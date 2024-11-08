@@ -2,7 +2,7 @@
 title: 사용자 정의 속성 추가
 type: docs
 weight: 10
-url: ko/reportingservices/adding-custom-properties/
+url: /ko/reportingservices/adding-custom-properties/
 lastmod: "2021-06-05"
 ---
 

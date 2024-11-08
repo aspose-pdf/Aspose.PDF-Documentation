@@ -3,7 +3,7 @@ title: Configurando Propriedades de Elementos de Estrutura em PDF Marcado
 linktitle: Configurando Propriedades de Elementos de Estrutura
 type: docs
 weight: 30
-url: pt/java/set-tagged-pdfs-element-properties/
+url: /pt/java/set-tagged-pdfs-element-properties/
 description: Com o Aspose.PDF para Java, você pode configurar diferentes Propriedades de Elementos de Estrutura. Existem configurações de Elementos de Estrutura de Bloco de Texto, configuração de Elementos de Estrutura Inline, adicionando Elemento de Estrutura em Elementos e etc.
 lastmod: "2021-06-05"
 sitemap:

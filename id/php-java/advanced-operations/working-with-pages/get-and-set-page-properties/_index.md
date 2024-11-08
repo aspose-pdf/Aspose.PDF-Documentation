@@ -2,7 +2,7 @@
 title: Mendapatkan dan Mengatur Properti Halaman
 type: docs
 weight: 30
-url: id/php-java/get-and-set-page-properties/
+url: /id/php-java/get-and-set-page-properties/
 description: Topik ini menjelaskan cara mendapatkan angka dalam file PDF, mendapatkan properti halaman dan menentukan warna halaman menggunakan Aspose.PDF untuk PHP via Java.
 lastmod: "2024-06-05"
 ---

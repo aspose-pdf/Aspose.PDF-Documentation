@@ -4,7 +4,7 @@ title: Menambahkan Lampiran ke Dokumen PDF
 linktitle: Menambahkan Lampiran ke Dokumen PDF
 type: docs
 weight: 10
-url: id/cpp/add-attachment-to-pdf-document/
+url: /id/cpp/add-attachment-to-pdf-document/
 description: Halaman ini menjelaskan cara menambahkan lampiran ke file PDF dengan pustaka Aspose.PDF untuk C++
 lastmod: "2021-06-05"
 sitemap:

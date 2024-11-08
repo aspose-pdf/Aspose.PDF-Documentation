@@ -3,7 +3,7 @@ title: C++でのアーティファクトの操作
 linktitle: アーティファクトの操作
 type: docs
 weight: 110
-url: ja/cpp/artifacts/
+url: /ja/cpp/artifacts/
 description: このページでは、Aspose.PDF for C++ を使用してアーティファクトクラスを操作する方法について説明します。コードスニペットは、PDFページに背景画像を追加する方法と、PDFファイルの最初のページにある各ウォーターマークを取得する方法を示しています。
 lastmod: "2021-11-22"
 sitemap:

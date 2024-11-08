@@ -2,7 +2,7 @@
 title: PDFファイルの復号化
 type: docs
 weight: 20
-url: ja/net/decrypt-pdf-file/
+url: /ja/net/decrypt-pdf-file/
 description: このトピックでは、PdfFileSecurityクラスを使用してPDFファイルを復号化する方法について説明します。
 lastmod: "2021-06-05"
 draft: false

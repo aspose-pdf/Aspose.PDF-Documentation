@@ -3,7 +3,7 @@ title: Extraire un tableau d'un PDF
 linktitle: Extraire un tableau
 type: docs
 weight: 20
-url: fr/cpp/extract-table-from-existing-pdf-document/
+url: /fr/cpp/extract-table-from-existing-pdf-document/
 description: Aspose.PDF pour C++ permet d'effectuer diverses manipulations avec les tableaux contenus dans votre document PDF. Vous pouvez ajouter et extraire un tableau dans le document PDF existant, rendre le tableau sur une nouvelle page, etc.
 lastmod: "2021-11-11"
 sitemap:

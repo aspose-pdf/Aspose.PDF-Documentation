@@ -2,7 +2,7 @@
 title: Définir les métadonnées XMP d'un PDF existant - façades
 type: docs
 weight: 20
-url: fr/java/set-xmp-metadata/
+url: /fr/java/set-xmp-metadata/
 description: Cette section explique comment définir les métadonnées XMP avec Aspose.PDF Facades en utilisant la classe PdfXmpMetadata.
 lastmod: "2021-06-05"
 sitemap:

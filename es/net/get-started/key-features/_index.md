@@ -3,7 +3,7 @@ title: Características clave de Aspose.PDF
 linktitle: Características clave
 type: docs
 weight: 80
-url: es/net/key-features/
+url: /es/net/key-features/
 description: Aspose.PDF para .NET demuestra sus características generales. Muestra las versiones de PDF compatibles y todas las manipulaciones que podemos hacer con PDF.
 lastmod: "2021-06-05"
 aliases:

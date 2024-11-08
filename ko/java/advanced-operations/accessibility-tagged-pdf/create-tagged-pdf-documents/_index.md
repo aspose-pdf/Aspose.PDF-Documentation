@@ -4,7 +4,7 @@ linktitle: 태그된 PDF 생성
 type: docs
 weight: 10
 lastmod: "2021-06-05"
-url: ko/java/create-tagged-pdf-documents/
+url: /ko/java/create-tagged-pdf-documents/
 description: 이 문서에서는 Aspose.PDF for Java를 사용하여 태그된 PDF 문서의 구조 요소를 프로그래밍 방식으로 생성하는 방법을 설명합니다.
 sitemap:
     changefreq: "weekly"

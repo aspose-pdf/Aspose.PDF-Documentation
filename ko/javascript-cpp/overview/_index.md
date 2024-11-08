@@ -3,7 +3,7 @@ title: 개요
 linktitle: 개요
 type: docs
 weight: 20
-url: ko/javascript-cpp/overview/
+url: /ko/javascript-cpp/overview/
 description: Aspose.PDF for JavaScript via C++의 주요 기능 및 지원 형식, 설치 및 라이선스 매뉴얼 개요.
 lastmod: "2022-12-13"
 sitemap:
@@ -34,9 +34,9 @@ Aspose.PDF for JavaScript는 다음과 같은 다양한 기능을 지원합니�
 
 자세히 알아보기:
 
-- [지원 파일 형식](/pdf/javascript-cpp/supported-file-formats/)
-- [Aspose.PDF의 주요 기능](/pdf/javascript-cpp/key-features/)
-- [시스템 요구 사항](/pdf/javascript-cpp/system-requirements/)
-- [설치](/pdf/javascript-cpp/installation/)
-- [라이선스](/pdf/javascript-cpp/licensing/)
-- [기술 지원](/pdf/javascript-cpp/technical-support/)
+- [지원 파일 형식](/pdf/ko/javascript-cpp/supported-file-formats/)
+- [Aspose.PDF의 주요 기능](/pdf/ko/javascript-cpp/key-features/)
+- [시스템 요구 사항](/pdf/ko/javascript-cpp/system-requirements/)
+- [설치](/pdf/ko/javascript-cpp/installation/)
+- [라이선스](/pdf/ko/javascript-cpp/licensing/)
+- [기술 지원](/pdf/ko/javascript-cpp/technical-support/)

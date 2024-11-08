@@ -3,7 +3,7 @@ title: Adicionar Número de Página ao PDF com JavaScript via C++
 linktitle: Adicionar Número de Página
 type: docs
 weight: 100
-url: pt/javascript-cpp/add-page-number/
+url: /pt/javascript-cpp/add-page-number/
 description: Aspose.PDF para JavaScript via C++ permite que você adicione um Carimbo de Número de Página ao seu arquivo PDF usando AsposePdfAddPageNum.
 lastmod: "2023-04-17"
 sitemap:

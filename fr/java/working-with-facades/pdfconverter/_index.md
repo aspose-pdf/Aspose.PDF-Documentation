@@ -2,7 +2,7 @@
 title: Classe PdfConverter
 type: docs
 weight: 80
-url: fr/java/pdfconverter-class/
+url: /fr/java/pdfconverter-class/
 description: Cette section explique comment travailler avec Aspose.PDF Facades en utilisant la classe PdfConverter.
 lastmod: "2021-06-05"
 sitemap:
@@ -10,5 +10,5 @@ sitemap:
     priority: 0.7
 ---
 
-- [Fusionner les images](/pdf/java/merge-images/)
-- [Convertir des fichiers PDF](/pdf/java/convert-pdf-file/)
+- [Fusionner les images](/pdf/fr/java/merge-images/)
+- [Convertir des fichiers PDF](/pdf/fr/java/convert-pdf-file/)

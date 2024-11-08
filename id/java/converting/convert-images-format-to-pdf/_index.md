@@ -3,7 +3,7 @@ title: Konversi berbagai format Gambar ke PDF
 linktitle: Konversi Gambar ke PDF
 type: docs
 weight: 60
-url: id/java/convert-images-format-to-pdf/
+url: /id/java/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: Topik ini menunjukkan kepada Anda bagaimana pustaka Aspose.PDF untuk Java memungkinkan konversi berbagai format gambar ke PDF.
 sitemap:

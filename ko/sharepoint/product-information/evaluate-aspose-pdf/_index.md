@@ -4,7 +4,7 @@ title: Aspose.Pdf for SharePoint 평가
 
 linktitle: 평가
 
-url: ko/sharepoint/evaluate-aspose-pdf/
+url: /ko/sharepoint/evaluate-aspose-pdf/
 
 lastmod: "2020-12-16"
 

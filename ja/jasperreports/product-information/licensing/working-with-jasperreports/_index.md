@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: ja/jasperreports/working-with-jasperreports/
+url: /ja/jasperreports/working-with-jasperreports/
 
 lastmod: "2021-06-05"
 
@@ -38,12 +38,12 @@ Aspose.Words for JasperReportsは、ダウンロードページから無料で�
 
 
 
-- [setLicenseを呼び出す](/pdf/jasperreports/working-with-jasperreports/#call-setlicense)。
+- [setLicenseを呼び出す](/pdf/ja/jasperreports/working-with-jasperreports/#call-setlicense)。
 
 
-- [コード内でエクスポーターパラメータを設定する](/pdf/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code)。
+- [コード内でエクスポーターパラメータを設定する](/pdf/ja/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code)。
 
-- [**applicationContext.xml** にエクスポーターパラメータを設定する](/pdf/jasperreports/working-with-jasperserver/)。
+- [**applicationContext.xml** にエクスポーターパラメータを設定する](/pdf/ja/jasperreports/working-with-jasperserver/)。
 
 最初の2つはJasperReportsで使用され、最後のものはJasperServerで使用されます。
 

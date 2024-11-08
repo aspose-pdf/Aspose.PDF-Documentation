@@ -2,7 +2,7 @@
 title: PNG 변환기
 type: docs
 weight: 110
-url: ko/net/plugins/png/
+url: /ko/net/plugins/png/
 description: Aspose.PDF PNG 플러그인으로 PDF를 PNG 이미지로 변환
 lastmod: "2024-01-24"
 ---

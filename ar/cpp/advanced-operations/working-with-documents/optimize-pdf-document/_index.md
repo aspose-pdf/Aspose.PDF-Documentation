@@ -3,7 +3,7 @@ title: تحسين PDF باستخدام C++
 linktitle: تحسين PDF
 type: docs
 weight: 30
-url: ar/cpp/optimize-pdf/
+url: /ar/cpp/optimize-pdf/
 description: تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة تضمين الخطوط، تمكين إعادة استخدام محتوى الصفحة، إزالة أو تسطيح التعليقات التوضيحية باستخدام C++.
 lastmod: "2021-11-11"
 sitemap:

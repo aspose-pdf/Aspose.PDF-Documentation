@@ -3,7 +3,7 @@ title: Menghapus lampiran dari PDF menggunakan Python
 linktitle: Menghapus lampiran dari PDF yang sudah ada
 type: docs
 weight: 30
-url: id/python-net/removing-attachment-from-an-existing-pdf/
+url: /id/python-net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF dapat menghapus lampiran dari dokumen PDF Anda. Gunakan Python PDF API untuk menghapus lampiran dalam file PDF menggunakan Aspose.PDF untuk Python melalui pustaka .NET.
 lastmod: "2023-02-17"
 sitemap:

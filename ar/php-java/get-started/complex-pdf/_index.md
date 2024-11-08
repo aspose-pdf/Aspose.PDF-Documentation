@@ -3,7 +3,7 @@ title: إنشاء ملف PDF معقد
 linktitle: إنشاء ملف PDF معقد
 type: docs
 weight: 60
-url: ar/php-java/complex-pdf-example/
+url: /ar/php-java/complex-pdf-example/
 description: Aspose.PDF لـ PHP عبر Java يتيح لك إنشاء مستندات أكثر تعقيدًا تحتوي على صور وشظايا نصية وجداول في مستند واحد.
 lastmod: "2024-06-05"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-عرض مثال [Hello, World](/pdf/php-java/hello-world-example/) خطوات بسيطة لإنشاء مستند PDF باستخدام Aspose.PDF. في هذه المقالة، سنلقي نظرة على إنشاء مستند أكثر تعقيدًا باستخدام Aspose.PDF لـ PHP عبر Java. كمثال، سنأخذ مستندًا من شركة وهمية تعمل في خدمات العبارات لنقل الركاب.
+عرض مثال [Hello, World](/pdf/ar/php-java/hello-world-example/) خطوات بسيطة لإنشاء مستند PDF باستخدام Aspose.PDF. في هذه المقالة، سنلقي نظرة على إنشاء مستند أكثر تعقيدًا باستخدام Aspose.PDF لـ PHP عبر Java. كمثال، سنأخذ مستندًا من شركة وهمية تعمل في خدمات العبارات لنقل الركاب.
 
 إذا قمنا بإنشاء مستند من الصفر، فنحن بحاجة إلى اتباع خطوات معينة:
 

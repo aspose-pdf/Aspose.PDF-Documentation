@@ -3,7 +3,7 @@ title: العمل مع الرسومات المتجهة
 linktitle: العمل مع الرسومات المتجهة
 type: docs
 weight: 120
-url: ar/net/working-with-vector-graphics/
+url: /ar/net/working-with-vector-graphics/
 description: هذه المقالة تصف ميزات العمل مع أداة GraphicsAbsorber باستخدام C#.
 lastmod: "2024-02-17"
 ---

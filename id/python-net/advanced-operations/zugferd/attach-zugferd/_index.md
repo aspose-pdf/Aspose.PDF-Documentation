@@ -3,7 +3,7 @@ title: Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD dal
 linktitle: Melampirkan ZUGFeRD ke PDF
 type: docs
 weight: 10
-url: id/python-net/attach-zugferd/
+url: /id/python-net/attach-zugferd/
 description: Pelajari cara menghasilkan dokumen PDF dengan ZUGFeRD dalam Aspose.PDF untuk Python via .NET
 lastmod: "2024-01-18"
 sitemap:

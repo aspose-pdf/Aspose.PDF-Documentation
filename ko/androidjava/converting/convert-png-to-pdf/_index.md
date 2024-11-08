@@ -3,7 +3,7 @@ title: PNG를 PDF로 변환
 linktitle: PNG를 PDF로 변환
 type: docs
 weight: 200
-url: ko/androidjava/convert-png-to-pdf/
+url: /ko/androidjava/convert-png-to-pdf/
 lastmod: "2021-06-05"
 description: 이 문서는 Aspose.PDF 라이브러리를 사용하여 Android의 Java 애플리케이션에서 PNG를 PDF로 변환하는 방법을 보여줍니다. 간단한 단계로 PNG 이미지를 PDF 형식으로 변환할 수 있습니다.
 sitemap:

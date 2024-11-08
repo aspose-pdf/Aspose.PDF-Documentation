@@ -3,7 +3,7 @@ title: تحويل صيغ الملفات الأخرى إلى PDF في .NET
 linktitle: تحويل صيغ الملفات الأخرى إلى PDF
 type: docs
 weight: 80
-url: ar/net/convert-other-files-to-pdf/
+url: /ar/net/convert-other-files-to-pdf/
 lastmod: "2021-11-01"
 description: يوضح هذا الموضوع كيف يتيح Aspose.PDF تحويل صيغ ملفات أخرى مثل EPUB، MD، PCL، XPS، PS، XML و LaTeX إلى مستند PDF.
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 يشرح هذا المقال كيفية **تحويل أنواع مختلفة من صيغ الملفات إلى PDF باستخدام C#**. يغطي المواضيع التالية.
 
-يعمل الشفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الشفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 _الصيغة_: **EPUB**
 - [C# EPUB إلى PDF](#csharp-convert-epub-to-pdf)

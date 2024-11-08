@@ -10,7 +10,7 @@ type: docs
 
 weight: 110
 
-url: ja/sharepoint/
+url: /ja/sharepoint/
 
 is_root: true
 
@@ -50,23 +50,23 @@ Aspose.PDF for SharePointは、ユーザーがリスト、リストアイテム�
 
 
 
-- [Aspose.PDF for SharePoint製品概要](/pdf/sharepoint/product-overview/) 
+- [Aspose.PDF for SharePoint製品概要](/pdf/ja/sharepoint/product-overview/) 
 
-- [Aspose.PDF for SharePointサポートされているファイル形式](/pdf/sharepoint/supported-file-formats/)
+- [Aspose.PDF for SharePointサポートされているファイル形式](/pdf/ja/sharepoint/supported-file-formats/)
 
 
-- [Aspose.PDF for SharePoint機能](/pdf/sharepoint/features/)
+- [Aspose.PDF for SharePoint機能](/pdf/ja/sharepoint/features/)
 
 
 - [Aspose.PDF for SharePoint リリースノート](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 
 - [Aspose.PDF for SharePoint ダウンロード](https://releases.aspose.com/pdf/sharepoint/)
 
-- [Aspose.Pdf for SharePoint のインストール](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Aspose.Pdf for SharePoint のインストール](/pdf/ja/sharepoint/install-aspose-pdf-for-sharepoint/)
 
-- [Aspose.Pdf の評価](/pdf/sharepoint/evaluate-aspose-pdf/)
+- [Aspose.Pdf の評価](/pdf/ja/sharepoint/evaluate-aspose-pdf/)
 
-- [Aspose.Pdf for SharePoint のライセンス](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Aspose.Pdf for SharePoint のライセンス](/pdf/ja/sharepoint/license-aspose-pdf-for-sharepoint/)
 
-- [API 制限](/pdf/sharepoint/api-limitations/)
+- [API 制限](/pdf/ja/sharepoint/api-limitations/)
 ```

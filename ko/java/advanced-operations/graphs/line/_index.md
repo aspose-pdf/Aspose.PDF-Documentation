@@ -3,7 +3,7 @@ title: PDF 파일에 선 객체 추가
 linktitle: 선 추가
 type: docs
 weight: 40
-url: ko/java/add-line/
+url: /ko/java/add-line/
 description: 이 문서는 Aspose.PDF for Java를 사용하여 PDF에 선 객체를 추가하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

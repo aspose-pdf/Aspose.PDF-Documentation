@@ -2,7 +2,7 @@
 title: PHPでPDFファイル情報を取得する
 type: docs
 weight: 40
-url: ja/java/get-pdf-file-information-in-php/
+url: /ja/java/get-pdf-file-information-in-php/
 lastmod: "2021-06-05"
 ---
 

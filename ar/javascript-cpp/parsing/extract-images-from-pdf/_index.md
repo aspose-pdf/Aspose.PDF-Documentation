@@ -3,7 +3,7 @@ title: استخراج الصور من ملف PDF باستخدام JavaScript
 linktitle: استخراج الصور من PDF
 type: docs
 weight: 20
-url: ar/javascript-cpp/extract-images-from-the-pdf-file/
+url: /ar/javascript-cpp/extract-images-from-the-pdf-file/
 description: كيفية استخراج جزء من الصورة من PDF باستخدام مجموعة أدوات Aspose.PDF لـ JavaScript.
 lastmod: "2023-09-05"
 sitemap:

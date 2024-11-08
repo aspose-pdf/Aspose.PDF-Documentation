@@ -3,7 +3,7 @@ title: Stamping dengan Aspose.PDF menggunakan Python
 linktitle: Stamping
 type: docs
 weight: 120
-url: id/python-net/stamping/
+url: /id/python-net/stamping/
 description: Bagian ini menjelaskan cara menambahkan stempel gambar dan stempel teks ke halaman PDF melalui Python.
 lastmod: "2023-04-17"
 sitemap:
@@ -81,5 +81,5 @@ A stamp dalam dokumen PDF adalah analog dengan menerapkan stempel karet pada dok
 
 Periksa bagian-bagian berikut untuk mempelajari cara menambahkan stempel dengan Python:
 
-- [Tambahkan stempel gambar di halaman PDF](/pdf/python-net/image-stamps-in-pdf-page/) - tambahkan stempel gambar, kontrol kualitas gambar, stempel gambar sebagai latar belakang file PDF Anda.
-- [Tambahkan stempel teks dalam file PDF](/pdf/python-net/text-stamps-in-the-pdf-file/) - tambahkan stempel teks, tentukan perataan untuk objek TextStamp, isi teks stroke sebagai stempel dalam file PDF.
+- [Tambahkan stempel gambar di halaman PDF](/pdf/id/python-net/image-stamps-in-pdf-page/) - tambahkan stempel gambar, kontrol kualitas gambar, stempel gambar sebagai latar belakang file PDF Anda.
+- [Tambahkan stempel teks dalam file PDF](/pdf/id/python-net/text-stamps-in-the-pdf-file/) - tambahkan stempel teks, tentukan perataan untuk objek TextStamp, isi teks stroke sebagai stempel dalam file PDF.

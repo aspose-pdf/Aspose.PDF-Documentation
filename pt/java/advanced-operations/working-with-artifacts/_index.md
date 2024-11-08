@@ -3,7 +3,7 @@ title: Trabalhando com Artefatos
 linktitle: Trabalhando com Artefatos
 type: docs
 weight: 110
-url: pt/java/artifacts/
+url: /pt/java/artifacts/
 description: Esta página descreve como trabalhar com a classe Artifact usando Aspose.PDF para Java. Trechos de código mostram como adicionar uma imagem de fundo às páginas do PDF e como obter cada marca d'água na primeira página de um arquivo PDF.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Поиск и извлечение текста со страниц PDF
 linktitle: Поиск и извлечение текста
 type: docs
 weight: 60
-url: ru/net/search-and-get-text-from-pdf/
+url: /ru/net/search-and-get-text-from-pdf/
 description: Эта статья объясняет, как использовать различные инструменты для поиска и извлечения текста из Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Эта статья объясняет, как использовать различные инструменты для поиска и извлечения текста из Aspose.PDF для .NET."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Поиск и получение текста со всех страниц PDF документа
 

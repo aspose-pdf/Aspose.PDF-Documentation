@@ -3,7 +3,7 @@ title: Format File yang Didukung
 linktitle: Format File yang Didukung
 type: docs
 weight: 10
-url: id/python-net/supported-file-formats/
+url: /id/python-net/supported-file-formats/
 description: Halaman ini menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF untuk Python via .NET.
 lastmod: "2022-12-22"
 sitemap:

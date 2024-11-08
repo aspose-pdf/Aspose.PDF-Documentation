@@ -3,7 +3,7 @@ title: Criando um PDF complexo
 linktitle: Criando um PDF complexo
 type: docs
 weight: 60
-url: pt/cpp/complex-pdf-example/
+url: /pt/cpp/complex-pdf-example/
 description: Aspose.PDF para C++ permite criar documentos mais complexos que contêm imagens, fragmentos de texto e tabelas em um único documento.
 lastmod: "2021-11-05"
 sitemap:
@@ -11,8 +11,8 @@ sitemap:
     priority: 0.5
 ---
 
-O exemplo [Hello, World](/pdf/cpp/hello-world-example/) mostrou etapas simples para criar um documento PDF usando C++ e Aspose.PDF. Neste artigo, vamos dar uma olhada em como criar um documento mais complexo com C++ e Aspose.PDF para C++. Como exemplo, pegaremos um documento de uma empresa fictícia que opera serviços de balsa para passageiros.
-Nosso documento conterá uma imagem, dois fragmentos de texto (cabeçalho e parágrafo) e uma tabela. Para construir tal documento, usaremos a abordagem baseada em DOM. Você pode ler mais na seção [Noções básicas da API DOM](/pdf/cpp/basics-of-dom-api/).
+O exemplo [Hello, World](/pdf/pt/cpp/hello-world-example/) mostrou etapas simples para criar um documento PDF usando C++ e Aspose.PDF. Neste artigo, vamos dar uma olhada em como criar um documento mais complexo com C++ e Aspose.PDF para C++. Como exemplo, pegaremos um documento de uma empresa fictícia que opera serviços de balsa para passageiros.
+Nosso documento conterá uma imagem, dois fragmentos de texto (cabeçalho e parágrafo) e uma tabela. Para construir tal documento, usaremos a abordagem baseada em DOM. Você pode ler mais na seção [Noções básicas da API DOM](/pdf/pt/cpp/basics-of-dom-api/).
 
 Se criarmos um documento do zero, precisamos seguir certas etapas:
 

@@ -3,7 +3,7 @@ title: Membuat Dokumen PDF
 linktitle: Buat PDF
 type: docs
 weight: 10
-url: id/cpp/create-pdf-document/
+url: /id/cpp/create-pdf-document/
 description: Artikel ini menjelaskan cara Membuat dan memformat Dokumen PDF dengan Aspose.PDF untuk C++.
 lastmod: "2021-11-11"
 sitemap:

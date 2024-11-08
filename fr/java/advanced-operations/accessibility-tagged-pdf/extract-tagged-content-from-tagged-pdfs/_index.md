@@ -3,7 +3,7 @@ title: Extraire le Contenu Étiqueté d'un PDF
 linktitle: Extraire le Contenu Étiqueté
 type: docs
 weight: 20
-url: fr/java/extract-tagged-content-from-tagged-pdfs/
+url: /fr/java/extract-tagged-content-from-tagged-pdfs/
 description: Cet article explique comment extraire le contenu étiqueté d'un document PDF en utilisant Aspose.PDF pour Java
 lastmod: "2021-06-05"
 sitemap:

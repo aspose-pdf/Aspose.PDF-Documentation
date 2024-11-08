@@ -4,7 +4,7 @@ title: PDF ハイライト注釈の使用 C++
 linktitle: ハイライト注釈
 type: docs
 weight: 20
-url: ja/cpp/highlights-annotation/
+url: /ja/cpp/highlights-annotation/
 description: マークアップ注釈は、文書のテキスト中でハイライト、下線、取り消し線、またはギザギザの下線として表示されます。
 lastmod: "2021-11-24"
 sitemap:

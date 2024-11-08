@@ -2,7 +2,7 @@
 title: معلومات تصحيح الأخطاء
 type: docs
 weight: 90
-url: ar/reportingservices/debug-information/
+url: /ar/reportingservices/debug-information/
 lastmod: "2021-06-05"
 ---
 

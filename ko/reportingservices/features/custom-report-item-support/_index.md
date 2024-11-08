@@ -2,7 +2,7 @@
 title: Custom Report Item Support
 type: docs
 weight: 30
-url: ko/reportingservices/custom-report-item-support/
+url: /ko/reportingservices/custom-report-item-support/
 lastmod: "2021-06-05"
 ---
 
@@ -14,6 +14,6 @@ RDL 명세에서 RS2016, RS2017, RS2019, RS2022 및 Power BI의 경우 거의 �
 - 선 화살표.
 - 각주/미주.
 
-[보고서 항목 속성 확장](/pdf/reportingservices/expand-report-items-properties/) 기사에서 사용하는 방법을 알아보세요.
+[보고서 항목 속성 확장](/pdf/ko/reportingservices/expand-report-items-properties/) 기사에서 사용하는 방법을 알아보세요.
 
 {{% /alert %}}

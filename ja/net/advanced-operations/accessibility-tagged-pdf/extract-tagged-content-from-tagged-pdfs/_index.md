@@ -3,7 +3,7 @@ title: PDFからタグ付きコンテンツを抽出する
 linktitle: タグ付きコンテンツの抽出
 type: docs
 weight: 20
-url: ja/net/extract-tagged-content-from-tagged-pdfs/
+url: /ja/net/extract-tagged-content-from-tagged-pdfs/
 description: この記事では、Aspose.PDF for .NETを使用してPDFドキュメントからタグ付きコンテンツを抽出する方法について説明します
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 この記事では、C#を使用してタグ付きコンテンツPDFドキュメントを抽出する方法を学びます。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## タグ付きPDFコンテンツの取得
 

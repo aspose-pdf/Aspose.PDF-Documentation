@@ -2,7 +2,7 @@
 title: Salin Bidang Dalam dan Luar
 type: docs
 weight: 40
-url: id/net/copy-inner-and-outer-field/
+url: /id/net/copy-inner-and-outer-field/
 description: Bagian ini menjelaskan cara menyalin Bidang Dalam dan Luar dengan Aspose.PDF Facades menggunakan Kelas FormEditor.
 lastmod: "2021-06-05"
 draft: false

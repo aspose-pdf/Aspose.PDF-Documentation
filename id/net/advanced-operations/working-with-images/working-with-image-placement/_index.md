@@ -3,7 +3,7 @@ title: Working with Image Placement
 linktitle: Working with Image Placement
 type: docs
 weight: 50
-url: id/net/working-with-image-placement/
+url: /id/net/working-with-image-placement/
 description: Bagian ini menjelaskan fitur-fitur penempatan gambar dalam file PDF menggunakan perpustakaan C#.
 lastmod: "2022-02-17"
 ---
@@ -77,7 +77,7 @@ Dengan peluncuran Aspose.PDF untuk .NET 7.0.0, kami memperkenalkan kelas yang di
 - ImagePlacementAbsorber melakukan pencarian penggunaan gambar sebagai koleksi objek ImagePlacement.
 - ImagePlacement menyediakan anggota Resolution dan Rectangle yang mengembalikan nilai penempatan gambar aktual.
 
-Potongan kode berikut juga bekerja dengan antarmuka grafis [Aspose.Drawing](/pdf/net/drawing/) yang baru.
+Potongan kode berikut juga bekerja dengan antarmuka grafis [Aspose.Drawing](/pdf/id/net/drawing/) yang baru.
 
 ```csharp
 // Untuk contoh lengkap dan berkas data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET

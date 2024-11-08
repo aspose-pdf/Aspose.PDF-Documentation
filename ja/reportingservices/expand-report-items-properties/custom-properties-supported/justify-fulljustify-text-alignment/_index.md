@@ -3,7 +3,7 @@
 title: 両端揃え（Justify FullJustify）テキスト配置
 type: docs
 weight: 40
-url: ja/reportingservices/justify-fulljustify-text-alignment/
+url: /ja/reportingservices/justify-fulljustify-text-alignment/
 lastmod: "2021-06-05"
 ---
 

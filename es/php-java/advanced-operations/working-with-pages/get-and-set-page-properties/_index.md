@@ -2,7 +2,7 @@
 title: Obtener y Establecer Propiedades de Página
 type: docs
 weight: 30
-url: es/php-java/get-and-set-page-properties/
+url: /es/php-java/get-and-set-page-properties/
 description: Este tema explica cómo obtener números en un archivo PDF, obtener propiedades de página y determinar el color de la página usando Aspose.PDF para PHP a través de Java.
 lastmod: "2024-06-05"
 ---

@@ -3,7 +3,7 @@ title: Ajouter un objet Ligne au fichier PDF
 linktitle: Ajouter Ligne
 type: docs
 weight: 40
-url: fr/java/add-line/
+url: /fr/java/add-line/
 description: Cet article explique comment créer un objet ligne dans votre PDF en utilisant Aspose.PDF pour Java.
 lastmod: "2021-06-05"
 sitemap:

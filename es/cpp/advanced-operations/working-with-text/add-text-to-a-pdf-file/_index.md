@@ -3,7 +3,7 @@ title: Añadir Texto a PDF usando C++
 linktitle: Añadir Texto a PDF
 type: docs
 weight: 10
-url: es/cpp/add-text-to-pdf-file/
+url: /es/cpp/add-text-to-pdf-file/
 description: Este artículo describe varios aspectos del trabajo con texto en Aspose.PDF. Aprenda cómo añadir texto a PDF, añadir fragmentos HTML o usar fuentes OTF personalizadas.
 lastmod: "2021-12-10"
 sitemap:

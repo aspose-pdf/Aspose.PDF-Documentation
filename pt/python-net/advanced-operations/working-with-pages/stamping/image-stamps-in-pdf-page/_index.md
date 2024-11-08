@@ -3,7 +3,7 @@ title: Adicionar Carimbos de Imagem em PDF usando Python
 linktitle: Carimbos de Imagem em Arquivo PDF
 type: docs
 weight: 10
-url: pt/python-net/image-stamps-in-pdf-page/
+url: /pt/python-net/image-stamps-in-pdf-page/
 description: Adicione o Carimbo de Imagem em seu documento PDF usando a classe ImageStamp com a biblioteca Aspose.PDF para Python.
 lastmod: "2023-04-17"
 sitemap:

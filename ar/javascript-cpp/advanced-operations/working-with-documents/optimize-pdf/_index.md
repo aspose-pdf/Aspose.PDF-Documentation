@@ -3,7 +3,7 @@ title: تحسين PDF باستخدام Aspose.PDF لـ JavaScript عبر C++
 linktitle: تحسين ملف PDF
 type: docs
 weight: 10
-url: ar/javascript-cpp/optimize-pdf/
+url: /ar/javascript-cpp/optimize-pdf/
 description: تحسين وضغط ملفات PDF لعرض سريع على الويب باستخدام أداة JavaScript.
 lastmod: "2022-12-15"
 sitemap:

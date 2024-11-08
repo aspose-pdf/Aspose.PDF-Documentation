@@ -2,7 +2,7 @@
 title: Memisahkan Halaman PDF
 type: docs
 weight: 60
-url: id/net/split-pdf-pages/
+url: /id/net/split-pdf-pages/
 description: Bagian ini menjelaskan cara memisahkan halaman PDF dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

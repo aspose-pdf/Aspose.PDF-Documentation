@@ -3,7 +3,7 @@ title: Ekspor ke PDF di SharePoint
 linktitle: Ekspor ke PDF
 type: docs
 weight: 10
-url: id/sharepoint/export-to-pdf/
+url: /id/sharepoint/export-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint API dapat mengekspor daftar, item daftar dan halaman Wiki SharePoint dari pustaka SharePoint ke format PDF.
 ---

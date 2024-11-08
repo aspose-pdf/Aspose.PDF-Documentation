@@ -3,7 +3,7 @@ title: Setel Ukuran PDF menggunakan python via C++
 linktitle: Setel Ukuran PDF
 type: docs
 weight: 30
-url: id/python-cpp/get-and-set-page-properties/
+url: /id/python-cpp/get-and-set-page-properties/
 description: Bagian ini menunjukkan cara mendapatkan atau menyetel properti halaman PDF seperti ukuran dokumen menggunakan Python via C++.
 lastmod: "2024-04-17"
 sitemap:

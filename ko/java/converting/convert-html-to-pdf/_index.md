@@ -3,7 +3,7 @@ title: 자바에서 HTML을 PDF 파일로 변환
 linktitle: HTML을 PDF 파일로 변환
 type: docs
 weight: 40
-url: ko/java/convert-html-to-pdf/
+url: /ko/java/convert-html-to-pdf/
 lastmod: "2021-11-19"
 description: 이 주제는 Aspose.PDF가 HTML 및 MHTML 형식을 PDF 파일로 변환하는 방법을 보여줍니다.
 sitemap:

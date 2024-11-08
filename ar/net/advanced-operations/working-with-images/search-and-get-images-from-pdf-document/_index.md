@@ -3,7 +3,7 @@ title: الحصول على الصور والبحث عنها في ملف PDF
 linktitle: البحث عن الصور والحصول عليها
 type: docs
 weight: 60
-url: ar/net/search-and-get-images-from-pdf-document/
+url: /ar/net/search-and-get-images-from-pdf-document/
 description: توضح هذه القسم كيفية البحث عن الصور والحصول عليها من مستند PDF باستخدام مكتبة Aspose.PDF.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 يسمح لك ImagePlacementAbsorber بالبحث بين الصور في جميع صفحات مستند PDF.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 للبحث في مستند كامل عن الصور:
 

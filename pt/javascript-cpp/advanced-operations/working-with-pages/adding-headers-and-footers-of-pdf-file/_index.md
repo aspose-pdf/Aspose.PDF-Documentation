@@ -3,7 +3,7 @@ title: Adicionar Cabeçalho e Rodapé ao PDF via JavaScript via C++
 linktitle: Adicionar Cabeçalho e Rodapé ao PDF
 type: docs
 weight: 70
-url: pt/javascript-cpp/add-headers-and-footers-of-pdf-file/
+url: /pt/javascript-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para JavaScript via C++ permite que você adicione cabeçalhos e rodapés ao seu arquivo PDF usando AsposePdfAddTextHeaderFooter.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 画像配置の操作
 linktitle: 画像配置
 type: docs
 weight: 50
-url: ja/java/working-with-image-placement/
+url: /ja/java/working-with-image-placement/
 description: このセクションでは、Javaライブラリを使用してPDFファイルの画像配置を操作する機能について説明します。
 lastmod: "2021-06-05"
 ---

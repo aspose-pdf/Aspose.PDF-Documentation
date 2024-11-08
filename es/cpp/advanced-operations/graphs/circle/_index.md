@@ -3,7 +3,7 @@ title: Añadir Objeto Círculo al Archivo PDF
 linktitle: Añadir Círculo
 type: docs
 weight: 20
-url: es/cpp/add-circle/
+url: /es/cpp/add-circle/
 description: Este artículo explica cómo crear un objeto círculo en su PDF usando Aspose.PDF para C++.
 lastmod: "2021-12-18"
 sitemap:

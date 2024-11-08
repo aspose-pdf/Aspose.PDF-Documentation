@@ -2,7 +2,7 @@
 title: PHP에서 PDF를 DOC 또는 DOCX 형식으로 변환
 type: docs
 weight: 10
-url: ko/java/convert-pdf-to-doc-or-docx-format-in-php/
+url: /ko/java/convert-pdf-to-doc-or-docx-format-in-php/
 lastmod: "2021-06-05"
 ---
 

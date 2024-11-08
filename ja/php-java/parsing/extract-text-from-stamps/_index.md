@@ -2,7 +2,7 @@
 title: スタンプからテキストを抽出する
 type: docs
 weight: 60
-url: ja/php-java/extract-text-from-stamps/
+url: /ja/php-java/extract-text-from-stamps/
 ---
 
 ## スタンプ注釈からテキストを抽出する

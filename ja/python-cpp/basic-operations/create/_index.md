@@ -3,7 +3,7 @@ title: PDFドキュメントを作成する
 linktitle: PDFを作成
 type: docs
 weight: 10
-url: ja/python-cpp/create-document/
+url: /ja/python-cpp/create-document/
 description: このページでは、Aspose.PDF for Python via C++ライブラリを使用してゼロからPDFドキュメントを作成する方法について説明します。
 ---
 

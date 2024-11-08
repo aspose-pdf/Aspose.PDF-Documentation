@@ -3,7 +3,7 @@ title: Ekstrak Data dari Tabel di PDF
 linktitle: Ekstrak Data dari Tabel
 type: docs
 weight: 40
-url: id/cpp/extract-data-from-table-in-pdf/
+url: /id/cpp/extract-data-from-table-in-pdf/
 description: Pelajari cara mengekstrak tabel dari PDF menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-06-05"
 sitemap:
@@ -123,7 +123,7 @@ void ExtractMarkedTable()
 
 ## Ekstrak Data Tabel dari PDF dan simpan dalam file CSV
 
-Contoh berikut menunjukkan cara mengekstrak tabel dan menyimpannya sebagai file CSV. Untuk melihat cara mengonversi PDF ke Spreadsheet Excel, silakan merujuk ke artikel [Convert PDF to Excel](/pdf/cpp/convert-pdf-to-excel/).
+Contoh berikut menunjukkan cara mengekstrak tabel dan menyimpannya sebagai file CSV. Untuk melihat cara mengonversi PDF ke Spreadsheet Excel, silakan merujuk ke artikel [Convert PDF to Excel](/pdf/id/cpp/convert-pdf-to-excel/).
 
 ```cpp
 void ExtractTableSaveCSV()

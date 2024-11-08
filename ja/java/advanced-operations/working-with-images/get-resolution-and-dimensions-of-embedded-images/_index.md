@@ -3,7 +3,7 @@ title: 埋め込み画像の解像度と寸法を取得する
 linktitle: 解像度と寸法を取得
 type: docs
 weight: 40
-url: ja/java/get-resolution-and-dimensions-of-embedded-images/
+url: /ja/java/get-resolution-and-dimensions-of-embedded-images/
 description: このセクションでは、埋め込み画像の解像度と寸法を取得する方法の詳細を示します
 lastmod: "2021-06-05"
 ---

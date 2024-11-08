@@ -3,7 +3,7 @@ title: Commencer
 linktitle: Commencer
 type: docs
 weight: 30
-url: fr/javascript-cpp/get-started/
+url: /fr/javascript-cpp/get-started/
 description: Cette section décrit les principes de base du fonctionnement d'Aspose.PDF pour JavaScript via C++. Aspose.PDF pour JavaScript via C++ prend en charge une grande variété de fonctions.
 lastmod: "2022-12-14"   
 sitemap:
@@ -27,30 +27,30 @@ Utiliser Aspose.PDF pour JavaScript dans votre projet vous offre les avantages s
 
 ## Large variété de fonctions
 
-- [Extraire un texte d'un PDF](/pdf/javascript-cpp/extract-text/)
-- [Optimiser un document PDF](/pdf/javascript-cpp/optimize-pdf/)
-- [Ajouter un tampon à un fichier PDF](/pdf/javascript-cpp/add-stamp-to-pdf/)
-- [Ajouter une image à un fichier PDF](/pdf/javascript-cpp/add-image-to-pdf/)
-- [Diviser un PDF en deux fichiers](/pdf/javascript-cpp/split-pdf/)
-- [Fusionner deux fichiers en PDF](/pdf/javascript-cpp/merge-pdf/)
-- [Crypter des documents PDF](/pdf/javascript-cpp/encrypt-pdf/)
-- [Décrypter des documents PDF](/pdf/javascript-cpp/decrypt-pdf/)
+- [Extraire un texte d'un PDF](/pdf/fr/javascript-cpp/extract-text/)
+- [Optimiser un document PDF](/pdf/fr/javascript-cpp/optimize-pdf/)
+- [Ajouter un tampon à un fichier PDF](/pdf/fr/javascript-cpp/add-stamp-to-pdf/)
+- [Ajouter une image à un fichier PDF](/pdf/fr/javascript-cpp/add-image-to-pdf/)
+- [Diviser un PDF en deux fichiers](/pdf/fr/javascript-cpp/split-pdf/)
+- [Fusionner deux fichiers en PDF](/pdf/fr/javascript-cpp/merge-pdf/)
+- [Crypter des documents PDF](/pdf/fr/javascript-cpp/encrypt-pdf/)
+- [Décrypter des documents PDF](/pdf/fr/javascript-cpp/decrypt-pdf/)
 
 ## Fonctionnalités de Conversion
 
-- [Convertir PDF en JPEG](/pdf/javascript-cpp/conversion/)
-- [Convertir PDF en PNG](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en Tiff](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en BMP](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en SVG](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en SVG(Zip)](/pdf/javascript-cpp/conversion/)
+- [Convertir PDF en JPEG](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir PDF en PNG](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en Tiff](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en BMP](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en SVG](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en SVG(Zip)](/pdf/fr/javascript-cpp/conversion/)
 
-- [Convertir un PDF en TeX](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en Xps](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en CSV](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en TXT](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en DocX](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en XlsX](/pdf/javascript-cpp/conversion/)
-- [Convertir un PDF en niveaux de gris](/pdf/javascript-cpp/conversion/)
-- [Convertir PDF/A en format PDF](/pdf/javascript-cpp/conversion/)
-- [Convertir PDF en format PDF/A](/pdf/javascript-cpp/conversion/)
+- [Convertir un PDF en TeX](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en Xps](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en CSV](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en TXT](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en DocX](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en XlsX](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir un PDF en niveaux de gris](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir PDF/A en format PDF](/pdf/fr/javascript-cpp/conversion/)
+- [Convertir PDF en format PDF/A](/pdf/fr/javascript-cpp/conversion/)

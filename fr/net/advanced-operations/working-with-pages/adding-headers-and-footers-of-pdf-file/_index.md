@@ -3,7 +3,7 @@ title: Ajouter un en-tête et un pied de page au PDF
 linktitle: Ajouter un en-tête et un pied de page au PDF
 type: docs
 weight: 70
-url: fr/net/add-headers-and-footers-of-pdf-file/
+url: /fr/net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF pour .NET vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 
 **Aspose.PDF pour .NET** vous permet d'ajouter un en-tête et un pied de page dans votre fichier PDF existant. Vous pouvez ajouter des images ou du texte à un document PDF. Essayez également d'ajouter différents en-têtes dans un seul fichier PDF avec C#.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajout de texte dans l'en-tête du fichier PDF
 

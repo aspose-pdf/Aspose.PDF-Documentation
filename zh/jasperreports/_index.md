@@ -10,7 +10,7 @@ type: docs
 
 weight: 120
 
-url: zh/jasperreports/
+url: /zh/jasperreports/
 
 is_root: true
 
@@ -32,22 +32,22 @@ Aspose.PDF for JasperReports 是一个灵活的组件，旨在将 JasperReports 
 
 以下是一些您可能需要完成任务的有用资源链接。
 
-- [Aspose.PDF for JasperReports 产品概述](/pdf/jasperreports/product-overview/)
+- [Aspose.PDF for JasperReports 产品概述](/pdf/zh/jasperreports/product-overview/)
 
-- [Aspose.PDF for JasperReports 支持的文件格式](/pdf/jasperreports/supported-file-formats/)
+- [Aspose.PDF for JasperReports 支持的文件格式](/pdf/zh/jasperreports/supported-file-formats/)
 
-- [功能之旅 Aspose.PDF for JasperReports](/pdf/jasperreports/feature-tour/)
+- [功能之旅 Aspose.PDF for JasperReports](/pdf/zh/jasperreports/feature-tour/)
 
 - [Aspose.PDF for JasperReports 发布说明](https://releases.aspose.com/pdf/jassperreport/release-notes/)
 
 - [下载 Aspose.PDF for JasperReports](https://releases.aspose.com/pdf/jassperreport/)
 
-- [Aspose.PDF for JasperReports 示例报告库](/pdf/jasperreports/sample-reports-gallery/)
+- [Aspose.PDF for JasperReports 示例报告库](/pdf/zh/jasperreports/sample-reports-gallery/)
 
-- [安装 Aspose.PDF for JasperReports](/pdf/jasperreports/installation/)
+- [安装 Aspose.PDF for JasperReports](/pdf/zh/jasperreports/installation/)
 
-- [Aspose.PDF for JasperReports 许可](/pdf/jasperreports/licensing/)
+- [Aspose.PDF for JasperReports 许可](/pdf/zh/jasperreports/licensing/)
 
-- [评估 Aspose.Pdf](/pdf/jasperreports/evaluate-aspose-pdf/)
+- [评估 Aspose.Pdf](/pdf/zh/jasperreports/evaluate-aspose-pdf/)
 
-- [Aspose.PDF for JasperReports API 限制](/pdf/jasperreports/api-limitations/)
+- [Aspose.PDF for JasperReports API 限制](/pdf/zh/jasperreports/api-limitations/)

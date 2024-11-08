@@ -3,7 +3,7 @@ title: PDF에서 이미지 작업
 linktitle: 이미지 작업
 type: docs
 weight: 40
-url: ko/php-java/working-with-images/
+url: /ko/php-java/working-with-images/
 description: 이 섹션에서는 PHP를 사용하여 PDF 파일에서 이미지 작업 기능에 대해 설명합니다.
 lastmod: "2024-06-05"
 sitemap:
@@ -22,4 +22,4 @@ Java를 통한 PHP용 Aspose.PDF를 사용하여 PDF 이미지를 편집하는 �
 
 다음 작업을 수행할 수 있습니다:
 
-- [기존 PDF 파일에 이미지 추가하기](/pdf/php-java/add-image-to-existing-pdf-file/) - PDF 문서에 단일 이미지의 이미지와 참조를 추가한 후 품질을 제어합니다.
+- [기존 PDF 파일에 이미지 추가하기](/pdf/ko/php-java/add-image-to-existing-pdf-file/) - PDF 문서에 단일 이미지의 이미지와 참조를 추가한 후 품질을 제어합니다.

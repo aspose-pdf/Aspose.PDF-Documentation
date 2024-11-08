@@ -2,7 +2,7 @@
 title: Form Exporter
 type: docs
 weight: 60
-url: es/net/plugins/formflattener/
+url: /es/net/plugins/formflattener/
 description: Cómo aplanar campos de formulario en archivos PDF usando el complemento Aspose.PDF FormFlattener
 lastmod: "2024-01-24"
 ---

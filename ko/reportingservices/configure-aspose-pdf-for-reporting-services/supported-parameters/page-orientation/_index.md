@@ -2,7 +2,7 @@
 title: 페이지 방향
 type: docs
 weight: 10
-url: ko/reportingservices/page-orientation/
+url: /ko/reportingservices/page-orientation/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Orientasi Halaman
 type: docs
 weight: 10
-url: id/reportingservices/page-orientation/
+url: /id/reportingservices/page-orientation/
 lastmod: "2021-06-05"
 ---
 

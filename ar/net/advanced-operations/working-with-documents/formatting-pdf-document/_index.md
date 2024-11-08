@@ -3,7 +3,7 @@ title: تنسيق مستند PDF باستخدام C#
 linktitle: تنسيق مستند PDF
 type: docs
 weight: 11
-url: ar/net/formatting-pdf-document/
+url: /ar/net/formatting-pdf-document/
 description: قم بإنشاء وتنسيق مستند PDF باستخدام Aspose.PDF لـ .NET. استخدم الشفرة التالية لحل مهامك.
 lastmod: "2022-02-17"
 sitemap:
@@ -95,7 +95,7 @@ sitemap:
 - PageLayout – تخطيط الصفحة.
 - PageMode – كيفية عرض المستند عند فتحه لأول مرة. الخيارات هي عرض الصور المصغرة، الشاشة الكاملة، عرض لوحة المرفقات.
 
-يعمل الكود التالي أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 الكود التالي يوضح كيفية الحصول على الخصائص باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 

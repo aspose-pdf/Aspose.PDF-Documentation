@@ -3,7 +3,7 @@ title: Ekstrak Data Tabel dari PDF
 linktitle: Ekstrak Data Tabel
 type: docs
 weight: 40
-url: id/php-java/extract-data-from-table-in-pdf/
+url: /id/php-java/extract-data-from-table-in-pdf/
 description: Pelajari cara mengekstrak tabel dari PDF menggunakan Aspose.PDF untuk PHP
 lastmod: "2021-05-20"
 sitemap:
@@ -85,7 +85,7 @@ $document->close();
 ## Ekstrak Data Tabel dari PDF dan simpan ke file CSV
 
 Contoh berikut menunjukkan cara mengekstrak tabel dan menyimpannya sebagai file CSV.
-Untuk melihat cara mengonversi PDF ke Spreadsheet Excel silakan merujuk ke artikel [Konversi PDF ke Excel](/pdf/php-java/convert-pdf-to-excel/).
+Untuk melihat cara mengonversi PDF ke Spreadsheet Excel silakan merujuk ke artikel [Konversi PDF ke Excel](/pdf/id/php-java/convert-pdf-to-excel/).
 
 ```php
 

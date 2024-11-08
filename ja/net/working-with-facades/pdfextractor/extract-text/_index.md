@@ -2,7 +2,7 @@
 title: PDFファイルからテキストを抽出
 type: docs
 weight: 30
-url: ja/net/extract-text/
+url: /ja/net/extract-text/
 description: このセクションでは、PdfExtractorクラスを使用してPDFからテキストを抽出する方法を説明します。
 lastmod: "2021-06-05"
 ---

@@ -3,7 +3,7 @@ title: Pythonを使用してブックマークを取得、更新、展開する
 linktitle: ブックマークを取得、更新、展開する
 type: docs
 weight: 20
-url: ja/python-net/get-update-and-expand-bookmark/
+url: /ja/python-net/get-update-and-expand-bookmark/
 description: この記事では、Aspose.PDF for Pythonライブラリを使用してPDFファイル内のブックマークを操作する方法について説明します。
 lastmod: "2023-02-17"
 sitemap:

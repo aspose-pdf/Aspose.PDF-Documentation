@@ -3,7 +3,7 @@ title: Adicionar Cabeçalho e Rodapé em PDF
 linktitle: Adicionar Cabeçalho e Rodapé em PDF
 type: docs
 weight: 70
-url: pt/php-java/add-headers-and-footers-of-pdf-file/
+url: /pt/php-java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para PHP via Java permite adicionar cabeçalhos e rodapés ao seu arquivo PDF usando a classe TextStamp.
 lastmod: "2024-06-05"
 sitemap:

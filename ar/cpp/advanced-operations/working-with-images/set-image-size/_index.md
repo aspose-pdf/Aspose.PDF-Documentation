@@ -3,7 +3,7 @@ title: ضبط حجم الصورة باستخدام C++
 linktitle: ضبط حجم الصورة
 type: docs
 weight: 80
-url: ar/cpp/set-image-size/
+url: /ar/cpp/set-image-size/
 description: يصف هذا القسم كيفية ضبط حجم الصورة في ملف PDF باستخدام مكتبة C++.
 lastmod: "2021-12-18"
 ---

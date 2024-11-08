@@ -2,7 +2,7 @@
 title: ToC Generator
 type: docs
 weight: 150
-url: fr/net/plugins/tocgenerator/
+url: /fr/net/plugins/tocgenerator/
 description: Crée une table des matières avec Aspose.PDF ToC Generator pour .NET
 lastmod: "2024-01-24"
 draft: false

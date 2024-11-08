@@ -3,7 +3,7 @@ title: Acessibilidade e PDFs Marcados
 linktitle: Acessibilidade. PDF Marcado
 type: docs
 weight: 120
-url: pt/net/accessibility-tagged-pdf/
+url: /pt/net/accessibility-tagged-pdf/
 description: Aspose.PDF oferece a capacidade de criar documentos PDF marcados, permitindo que você marque os elementos estruturais. Saiba mais sobre como obter PDFs acessíveis.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,11 +80,11 @@ Um documento PDF marcado pode ser acessado por pessoas com deficiências. Adicio
 
 Esta seção abrange o seguinte tópico:
 
-- [Criar PDF Marcado](/pdf/net/create-tagged-pdf/)
-- [Extrair Conteúdo Marcado de PDFs Marcados](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [Configurando Propriedades dos Elementos de Estrutura](/pdf/net/setting-structure-elements-properties/)
-- [Trabalhando com Tabela em PDFs Marcados](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [Teste de Conformidade PDF-UA - Lista de Erros](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [Criar PDF Marcado](/pdf/pt/net/create-tagged-pdf/)
+- [Extrair Conteúdo Marcado de PDFs Marcados](/pdf/pt/net/extract-tagged-content-from-tagged-pdfs/)
+- [Configurando Propriedades dos Elementos de Estrutura](/pdf/pt/net/setting-structure-elements-properties/)
+- [Trabalhando com Tabela em PDFs Marcados](/pdf/pt/net/working-with-table-in-tagged-pdfs/)
+- [Teste de Conformidade PDF-UA - Lista de Erros](/pdf/pt/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

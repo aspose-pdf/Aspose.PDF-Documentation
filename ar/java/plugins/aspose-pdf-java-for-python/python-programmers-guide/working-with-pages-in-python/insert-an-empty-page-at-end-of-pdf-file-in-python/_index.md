@@ -2,7 +2,7 @@
 title: إدراج صفحة فارغة في نهاية ملف PDF باستخدام بايثون
 type: docs
 weight: 60
-url: ar/java/insert-an-empty-page-at-end-of-pdf-file-in-python/
+url: /ar/java/insert-an-empty-page-at-end-of-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

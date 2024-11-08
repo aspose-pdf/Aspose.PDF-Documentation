@@ -3,7 +3,7 @@ title: Menambahkan Lampiran ke Dokumen PDF
 linktitle: Menambahkan Lampiran ke Dokumen PDF 
 type: docs
 weight: 10
-url: id/java/add-attachment-to-pdf-document/
+url: /id/java/add-attachment-to-pdf-document/
 description: Halaman ini menjelaskan cara menambahkan lampiran ke file PDF dengan Java.
 lastmod: "2021-06-05"
 sitemap:

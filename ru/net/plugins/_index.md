@@ -3,7 +3,7 @@ title: Плагины и интеграция с другими языками
 linktitle: Плагины
 type: docs
 weight: 130
-url: ru/net/plugins/
+url: /ru/net/plugins/
 description: Узнайте, как использовать различные плагины на основе Aspose.PDF
 lastmod: "2024-03-13"
 sitemap:
@@ -41,12 +41,12 @@ sitemap:
 
 В этом разделе представлен список плагинов для самых популярных веб-приложений: DotNetNuke, Sitefinity, Umbraco и другие.
 
-* [Aspose.PDF .NET для DNN](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF .NET для Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF .NET для VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
-* [Aspose.PDF .NET для CRM](/pdf/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF .NET для Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF .NET для DNN](/pdf/ru/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF .NET для Umbraco](/pdf/ru/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF .NET для VisualStudio](/pdf/ru/net/aspose-pdf-net-for-visualstudio/)
+* [Aspose.PDF .NET для CRM](/pdf/ru/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF .NET для Sitefinity](/pdf/ru/net/aspose-pdf-net-for-sitefinity/)
 
 ### Использование Aspose.PDF с другими языками
 
-* [Использование Aspose.PDF для .NET с Coldfusion](/pdf/net/aspose-pdf-net-for-coldfusion/)
+* [Использование Aspose.PDF для .NET с Coldfusion](/pdf/ru/net/aspose-pdf-net-for-coldfusion/)

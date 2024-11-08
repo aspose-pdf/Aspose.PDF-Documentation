@@ -3,7 +3,7 @@ title: JavaScript를 통한 PDF 복구(C++ 사용)
 linktitle: PDF 복구
 type: docs
 weight: 10
-url: ko/javascript-cpp/repair-pdf/
+url: /ko/javascript-cpp/repair-pdf/
 description: 이 주제에서는 JavaScript를 통해 PDF를 C++로 복구하는 방법을 설명합니다.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Opérations avancées
 linktitle: Opérations avancées
 type: docs
 weight: 90
-url: fr/python-java/advanced-operations/
+url: /fr/python-java/advanced-operations/
 description: Aspose.PDF pour Python via Java peut effectuer des tâches simples et faciles et atteindre des objectifs plus complexes. Consultez la section suivante pour les utilisateurs et développeurs avancés.
 lastmod: "2023-04-17"
 sitemap:
@@ -77,11 +77,11 @@ sitemap:
 </script>
 
 
-**Opérations Avancées** est une section sur la façon de traiter les fichiers PDF existants de manière programmatique, qu'il s'agisse de documents créés avec Aspose.PDF comme discuté dans [Opérations de Base](/pdf/python-java/basic-operations/), ou de fichiers PDF créés avec Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou tout autre producteur de PDF.
+**Opérations Avancées** est une section sur la façon de traiter les fichiers PDF existants de manière programmatique, qu'il s'agisse de documents créés avec Aspose.PDF comme discuté dans [Opérations de Base](/pdf/fr/python-java/basic-operations/), ou de fichiers PDF créés avec Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou tout autre producteur de PDF.
 
 Vous apprendrez différentes façons de :
 
-- [Travailler avec les Documents](/pdf/python-java/working-with-documents/) - compresser, diviser et fusionner des documents et effectuer d'autres opérations sur l'ensemble du document.
-- [Travailler avec les Pages](/pdf/python-java/working-with-pages/) - ajouter, déplacer ou supprimer, rogner des pages, ajouter des filigranes, des tampons, etc.
-- [Travailler avec les Formulaires](/pdf/python-java/working-with-forms/) - gérer les documents PDF interactifs, ajouter des champs de formulaire, extraire des données.
-- [Travailler avec le Texte](/pdf/python-java/working-with-text/) - ajouter, formater, rechercher et remplacer du texte dans un PDF.
+- [Travailler avec les Documents](/pdf/fr/python-java/working-with-documents/) - compresser, diviser et fusionner des documents et effectuer d'autres opérations sur l'ensemble du document.
+- [Travailler avec les Pages](/pdf/fr/python-java/working-with-pages/) - ajouter, déplacer ou supprimer, rogner des pages, ajouter des filigranes, des tampons, etc.
+- [Travailler avec les Formulaires](/pdf/fr/python-java/working-with-forms/) - gérer les documents PDF interactifs, ajouter des champs de formulaire, extraire des données.
+- [Travailler avec le Texte](/pdf/fr/python-java/working-with-text/) - ajouter, formater, rechercher et remplacer du texte dans un PDF.

@@ -3,7 +3,7 @@ title: Bekerja dengan Teks dalam PDF menggunakan C#
 linktitle: Bekerja dengan Teks
 type: docs
 weight: 30
-url: id/net/working-with-text/
+url: /id/net/working-with-text/
 description: Bagian ini menjelaskan berbagai teknik penanganan teks. Pelajari cara menambahkan, mengganti, memutar, mencari teks menggunakan Aspose.PDF dan C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,14 +80,14 @@ Kita semua terkadang perlu menambahkan teks ke dalam file PDF. Misalnya, ketika 
 
 Anda dapat melakukan hal berikut:
 
-- [Tambah Teks ke file PDF](/pdf/net/add-text-to-pdf-file/) - tambahkan teks ke PDF Anda, gunakan font dari strem dan file, tambahkan string HTML, tambahkan hyperlink, dll.
-- [Tooltip PDF](/pdf/net/pdf-tooltip/) - Anda dapat menambahkan tooltip ke teks yang dicari dengan menambahkan tombol tak terlihat menggunakan C#.
-- [Pemformatan Teks dalam PDF](/pdf/net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya.
-- [Pemformatan Teks dalam PDF](/pdf/net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya.
-- [Mengganti Teks dalam PDF](/pdf/net/replace-text-in-pdf/) - untuk mengganti teks di semua halaman dokumen PDF. Anda pertama-tama perlu menggunakan TextFragmentAbsorber.
-- [Memutar Teks Dalam PDF](/pdf/net/rotate-text-inside-pdf/) - memutar teks dalam PDF menggunakan properti rotasi dari Kelas TextFragment.
-- [Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF](/pdf/net/search-and-get-text-from-pages-of-pdf/) - Anda dapat menggunakan kelas TextFragmentAbsorber untuk mencari dan mendapatkan teks dari halaman.
-- [Menentukan Pemutusan Baris](/pdf/net/determine-line-break/) - topik ini menjelaskan cara melacak pemutusan baris dari fragmen teks multi-baris.
+- [Tambah Teks ke file PDF](/pdf/id/net/add-text-to-pdf-file/) - tambahkan teks ke PDF Anda, gunakan font dari strem dan file, tambahkan string HTML, tambahkan hyperlink, dll.
+- [Tooltip PDF](/pdf/id/net/pdf-tooltip/) - Anda dapat menambahkan tooltip ke teks yang dicari dengan menambahkan tombol tak terlihat menggunakan C#.
+- [Pemformatan Teks dalam PDF](/pdf/id/net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya.
+- [Pemformatan Teks dalam PDF](/pdf/id/net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya.
+- [Mengganti Teks dalam PDF](/pdf/id/net/replace-text-in-pdf/) - untuk mengganti teks di semua halaman dokumen PDF. Anda pertama-tama perlu menggunakan TextFragmentAbsorber.
+- [Memutar Teks Dalam PDF](/pdf/id/net/rotate-text-inside-pdf/) - memutar teks dalam PDF menggunakan properti rotasi dari Kelas TextFragment.
+- [Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF](/pdf/id/net/search-and-get-text-from-pages-of-pdf/) - Anda dapat menggunakan kelas TextFragmentAbsorber untuk mencari dan mendapatkan teks dari halaman.
+- [Menentukan Pemutusan Baris](/pdf/id/net/determine-line-break/) - topik ini menjelaskan cara melacak pemutusan baris dari fragmen teks multi-baris.
 
 <script type="application/ld+json">
 {

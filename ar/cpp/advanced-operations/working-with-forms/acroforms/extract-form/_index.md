@@ -4,7 +4,7 @@ title: استخراج بيانات AcroForm باستخدام C++
 linktitle: استخراج بيانات AcroForm
 type: docs
 weight: 30
-url: ar/cpp/extract-form/
+url: /ar/cpp/extract-form/
 description: يوضح هذا القسم كيفية استخراج النماذج من مستند PDF الخاص بك باستخدام Aspose.PDF for C++.
 lastmod: "2021-12-01"
 sitemap:

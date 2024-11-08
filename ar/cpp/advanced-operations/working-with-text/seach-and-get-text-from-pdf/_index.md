@@ -4,7 +4,7 @@ title: البحث والحصول على النص من صفحات مستند PDF
 linktitle: البحث والحصول على النص
 type: docs
 weight: 60
-url: ar/cpp/search-and-get-text-from-pdf/
+url: /ar/cpp/search-and-get-text-from-pdf/
 description: يشرح هذا المقال كيفية استخدام أدوات مختلفة للبحث والحصول على نص من مستندات PDF. يمكننا البحث باستخدام تعبير عادي من صفحات معينة أو من المستند بأكمله.
 lastmod: "2021-12-13"
 sitemap:

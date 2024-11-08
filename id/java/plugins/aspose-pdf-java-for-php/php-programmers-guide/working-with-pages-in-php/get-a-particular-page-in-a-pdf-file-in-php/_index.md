@@ -2,7 +2,7 @@
 title: Dapatkan Halaman Tertentu dalam Berkas PDF di PHP
 type: docs
 weight: 30
-url: id/java/get-a-particular-page-in-a-pdf-file-in-php/
+url: /id/java/get-a-particular-page-in-a-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

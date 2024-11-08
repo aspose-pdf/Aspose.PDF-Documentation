@@ -3,7 +3,7 @@ title: Generar Imágenes en Miniatura desde PDF
 linktitle: Generar Imágenes en Miniatura
 type: docs
 weight: 110
-url: es/net/generate-thumbnail-images-from-pdf-documents/
+url: /es/net/generate-thumbnail-images-from-pdf-documents/
 description: Esta sección describe cómo generar imágenes en miniatura desde documentos PDF
 lastmod: "2022-02-17"
 ---

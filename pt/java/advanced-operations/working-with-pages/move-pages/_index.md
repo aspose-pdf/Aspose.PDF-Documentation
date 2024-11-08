@@ -3,7 +3,7 @@ title: Mover Páginas de PDF
 linktitle: Mover Páginas
 type: docs
 weight: 20
-url: pt/java/move-pages/
+url: /pt/java/move-pages/
 description: Tente mover páginas para a localização desejada ou para o final de um arquivo PDF usando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

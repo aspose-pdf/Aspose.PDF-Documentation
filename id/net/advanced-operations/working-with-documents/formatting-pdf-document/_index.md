@@ -3,7 +3,7 @@ title: Memformat Dokumen PDF menggunakan C#
 linktitle: Memformat Dokumen PDF
 type: docs
 weight: 11
-url: id/net/formatting-pdf-document/
+url: /id/net/formatting-pdf-document/
 description: Buat dan format Dokumen PDF dengan Aspose.PDF untuk .NET. Gunakan potongan kode berikut untuk menyelesaikan tugas Anda.
 lastmod: "2022-02-17"
 sitemap:
@@ -95,7 +95,7 @@ Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/net/
 - PageLayout – Tata letak halaman.
 - PageMode – Bagaimana dokumen ditampilkan saat pertama kali dibuka. Opsi yang tersedia adalah tampilkan thumbnail, layar penuh, tampilkan panel lampiran.
 
-Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara mendapatkan properti menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 

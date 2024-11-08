@@ -3,7 +3,7 @@ title: Tambahkan, Hapus dan Dapatkan Anotasi menggunakan Python
 linktitle: Tambahkan, Hapus dan Dapatkan Anotasi
 type: docs
 weight: 20
-url: id/python-net/add-delete-and-get-annotation/
+url: /id/python-net/add-delete-and-get-annotation/
 description: Dengan Aspose.PDF untuk Python Anda dapat menambahkan, menghapus, dan mendapatkan anotasi dari file PDF Anda. Periksa semua daftar anotasi untuk menyelesaikan tugas Anda.
 lastmod: "2023-02-17"
 sitemap:
@@ -83,8 +83,8 @@ Anotasi dalam dokumen PDF adalah elemen yang memungkinkan pengguna untuk mengalo
 
 Kami telah menggabungkan berbagai jenis anotasi yang tersedia untuk pustaka Aspose.PDF untuk Python ke dalam beberapa kelompok:
 
-- [Anotasi Teks PDF](/pdf/python-net/text-annotation/)
-- [Anotasi Sorotan PDF](/pdf/python-net/highlights-annotation/)
-- [Anotasi Gambar PDF](/pdf/python-net/figures-annotation/)
-- [Anotasi Tempel PDF](/pdf/python-net/sticky-annotations/)
-- [Anotasi Tambahan](/pdf/python-net/extra-annotations/)
+- [Anotasi Teks PDF](/pdf/id/python-net/text-annotation/)
+- [Anotasi Sorotan PDF](/pdf/id/python-net/highlights-annotation/)
+- [Anotasi Gambar PDF](/pdf/id/python-net/figures-annotation/)
+- [Anotasi Tempel PDF](/pdf/id/python-net/sticky-annotations/)
+- [Anotasi Tambahan](/pdf/id/python-net/extra-annotations/)

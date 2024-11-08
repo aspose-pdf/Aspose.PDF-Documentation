@@ -3,7 +3,7 @@ title: Mengonversi PDF ke Format Gambar
 linktitle: Mengonversi PDF ke Gambar
 type: docs
 weight: 70
-url: id/java/convert-pdf-to-images-format/
+url: /id/java/convert-pdf-to-images-format/
 lastmod: "2021-11-19"
 description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan mengonversi PDF ke berbagai format gambar. Konversi halaman PDF ke gambar PNG, JPEG, BMP dengan beberapa baris kode.
 sitemap:

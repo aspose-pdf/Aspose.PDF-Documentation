@@ -2,7 +2,7 @@
 title: Aspose.Pdf for SharePointのインストール
 type: docs
 weight: 20
-url: ja/sharepoint/installing-aspose-pdf-for-sharepoint/
+url: /ja/sharepoint/installing-aspose-pdf-for-sharepoint/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIは、サーバーファームの展開、削除、アクティベーション、非アクティベーションを簡素化するためにSharePointソリューションとしてパッケージ化されています。
 ---

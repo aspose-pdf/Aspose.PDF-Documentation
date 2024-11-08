@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for Node.js
 second_title: Aspose.PDF для Node.js через C++
 type: docs
 weight: 70
-url: ru/nodejs-cpp/
+url: /ru/nodejs-cpp/
 is_root: true
 lastmod: "2023-11-16"
 description: Узнайте, как использовать Aspose.PDF для Node.js для создания приложений для обработки PDF-документов в среде Node.js.
@@ -26,17 +26,17 @@ Aspose.PDF для Node.js позволяет разработчикам напр
 
 ## Главы
 
-- [Что нового](/pdf/nodejs-cpp/whatsnew/)
-- [Обзор](/pdf/nodejs-cpp/overview/)
-- [Начало работы](/pdf/nodejs-cpp/get-started/)
-- [Основные операции](/pdf/nodejs-cpp/basic-operations/)
+- [Что нового](/pdf/ru/nodejs-cpp/whatsnew/)
+- [Обзор](/pdf/ru/nodejs-cpp/overview/)
+- [Начало работы](/pdf/ru/nodejs-cpp/get-started/)
+- [Основные операции](/pdf/ru/nodejs-cpp/basic-operations/)
 - [Примечания к выпуску](https://releases.aspose.com/pdf/nodejscpp/release-notes/)
 
 ## Ресурсы Aspose.PDF для Node.js
 
 Ниже приведены ссылки на некоторые полезные ресурсы, которые могут понадобиться для выполнения ваших задач.
 
-- [Функции Aspose.PDF для Node.js](/pdf/nodejs-cpp/key-features/)
+- [Функции Aspose.PDF для Node.js](/pdf/ru/nodejs-cpp/key-features/)
 - [Примечания к выпуску Aspose.PDF для Node.js](https://releases.aspose.com/pdf/nodejscpp/release-notes/)
 - [Скачать Aspose.PDF для Node.js](https://releases.aspose.com/pdf/nodejscpp/)
 - [Страница продукта Aspose.PDF для Node.js](https://products.aspose.com/pdf/nodejs-cpp/)

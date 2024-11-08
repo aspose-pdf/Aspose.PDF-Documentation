@@ -2,12 +2,12 @@
 title: Impor dan Ekspor Bidang Formulir
 type: docs
 weight: 60
-url: id/java/import-export-form-field/
+url: /id/java/import-export-form-field/
 description: FormEditor memungkinkan untuk mengimpor dan mengekspor data dalam format FDF, XFDF dan XML.
 lastmod: "2021-12-16"
 ---
 
-Aspose.PDF untuk Java menyediakan kemampuan hebat untuk membuat/memanipulasi bidang formulir di dalam dokumen PDF. Menggunakan API ini, Anda dapat mengisi bidang formulir secara programatis di dalam file PDF dengan [Ekspor Data dari FDF ke dalam File PDF](/pdf/java/export-data-into-a-pdf-file-facades/), dan [Impor Data dari XFDF ke dalam File PDF](/pdf/java/import-data-into-a-pdf-file-facades/).
+Aspose.PDF untuk Java menyediakan kemampuan hebat untuk membuat/memanipulasi bidang formulir di dalam dokumen PDF. Menggunakan API ini, Anda dapat mengisi bidang formulir secara programatis di dalam file PDF dengan [Ekspor Data dari FDF ke dalam File PDF](/pdf/id/java/export-data-into-a-pdf-file-facades/), dan [Impor Data dari XFDF ke dalam File PDF](/pdf/id/java/import-data-into-a-pdf-file-facades/).
 
 ```java
 public static void ImportData() {

@@ -3,7 +3,7 @@ title: PDF 내부 텍스트 회전 C++ 사용
 linktitle: PDF 내부 텍스트 회전
 type: docs
 weight: 50
-url: ko/cpp/rotate-text-inside-pdf/
+url: /ko/cpp/rotate-text-inside-pdf/
 description: 텍스트를 PDF로 회전하는 다양한 방법을 배웁니다. Aspose.PDF는 텍스트를 임의의 각도로 회전하거나 텍스트 단편 또는 전체 단락을 회전할 수 있습니다.
 lastmod: "2021-12-13"
 sitemap:

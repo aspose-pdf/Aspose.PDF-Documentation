@@ -3,7 +3,7 @@ title: Ekstrak Gambar dari PDF
 linktitle: Ekstrak Gambar
 type: docs
 weight: 20
-url: id/java/extract-images-from-the-pdf-file/
+url: /id/java/extract-images-from-the-pdf-file/
 description: Cara mengekstrak bagian gambar dari PDF menggunakan Aspose.PDF untuk Java
 lastmod: "2021-06-05"
 sitemap:

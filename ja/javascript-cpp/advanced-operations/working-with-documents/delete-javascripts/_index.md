@@ -3,7 +3,7 @@ title: PDFファイルからのJavaScriptコードのクリア
 linktitle: JavaScriptsを削除
 type: docs
 weight: 50
-url: ja/javascript-cpp/delete-javascripts/
+url: /ja/javascript-cpp/delete-javascripts/
 description: Aspose.PDFを使用してWeb上でPDFファイルからJavaScriptマクロをクリアします。
 lastmod: "2023-09-17"
 sitemap:

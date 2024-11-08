@@ -3,7 +3,7 @@ title: إضافة ختم صورة في PDF باستخدام C#
 linktitle: ختم الصور في ملف PDF
 type: docs
 weight: 10
-url: ar/net/image-stamps-in-pdf-page/
+url: /ar/net/image-stamps-in-pdf-page/
 description: أضف ختم الصورة في مستند PDF باستخدام فئة ImageStamp مع مكتبة Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF. توفر فئة ImageStamp الخصائص اللازمة لإنشاء ختم يعتمد على الصورة، مثل الارتفاع، العرض، الشفافية وما إلى ذلك.
 
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 لإضافة ختم صورة:
 

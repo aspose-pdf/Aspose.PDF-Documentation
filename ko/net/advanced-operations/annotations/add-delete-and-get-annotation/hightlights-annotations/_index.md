@@ -3,7 +3,7 @@ title: C#을 사용한 PDF 하이라이트 주석
 linktitle: 하이라이트 주석
 type: docs
 weight: 20
-url: ko/net/highlights-annotation/
+url: /ko/net/highlights-annotation/
 description: 문서 텍스트에서 하이라이트, 밑줄, 취소선 또는 톱니 모양의 밑줄로 표시되는 마크업 주석입니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ strikethroughAnnotations의 설정을 가져오거나 설정하는 것도 가능
 다음 기능은 underlineAnnotations의 설정을 가져오거나 설정할 수 있는 기능입니다. underlineSettings 속성을 사용합니다.
 다음 기능은 underlineSettings 속성을 사용하여 밑줄 주석의 설정을 가져오거나 설정할 수 있는 기능입니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 텍스트 마크업 주석 추가
 

@@ -2,7 +2,7 @@
 title: Changer les tailles des pages dans un fichier PDF
 type: docs
 weight: 30
-url: fr/net/changing-page-sizes-in-a-pdf-file/
+url: /fr/net/changing-page-sizes-in-a-pdf-file/
 description: Essayez d'apprendre comment changer les tailles des pages dans un fichier PDF en utilisant la classe PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false

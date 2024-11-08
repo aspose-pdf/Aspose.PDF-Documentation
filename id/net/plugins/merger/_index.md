@@ -2,7 +2,7 @@
 title: Merger
 type: docs
 weight: 100
-url: id/net/plugins/merger/
+url: /id/net/plugins/merger/
 description: Cara Menggabungkan Beberapa File PDF menjadi Satu Menggunakan Plugin Penggabungan Aspose.PDF
 lastmod: "2024-01-24"
 ---

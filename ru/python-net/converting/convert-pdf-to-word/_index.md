@@ -3,7 +3,7 @@ title: Конвертировать PDF в документы Microsoft Word н�
 linktitle: Конвертировать PDF в Word 2003/2019
 type: docs
 weight: 10
-url: ru/python-net/convert-pdf-to-word/
+url: /ru/python-net/convert-pdf-to-word/
 lastmod: "2022-12-23"
 description: Узнайте, как написать код на Python для преобразования форматов PDF в Microsoft Word с помощью Aspose.PDF для Python через .NET и настроить преобразование PDF в DOC(DOCX).
 sitemap:
@@ -93,7 +93,7 @@ _Формат_: **Word**
 **Попробуйте конвертировать PDF в DOC онлайн**
 
 Aspose.PDF для Python предоставляет вам бесплатное онлайн-приложение ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), где вы можете попробовать исследовать функциональность и качество его работы.
-[![Convert PDF to DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
+[![Convert PDF to DOC](/pdf/ru/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
 
 ## Конвертация PDF в DOCX
 
@@ -137,7 +137,7 @@ Aspose.PDF для Python API позволяет читать и конверти
 
 Aspose.PDF для Python предлагает вам бесплатное онлайн-приложение ["PDF в Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), где вы можете попробовать исследовать функциональность и качество работы.
 
-[![Aspose.PDF Конвертация PDF в Word Бесплатное приложение](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Конвертация PDF в Word Бесплатное приложение](/pdf/ru/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

@@ -3,7 +3,7 @@ title: PDF Text Annotation
 Texttitle: Text Annotation
 type: docs
 weight: 10
-url: es/java/text-annotation/
+url: /es/java/text-annotation/
 description: Aspose.PDF para Java le permite Agregar, Obtener y Eliminar Anotaciones de Texto de su documento PDF.
 lastmod: "2021-11-24"
 sitemap:

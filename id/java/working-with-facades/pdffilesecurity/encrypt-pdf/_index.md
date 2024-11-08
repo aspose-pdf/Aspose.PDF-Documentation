@@ -2,7 +2,7 @@
 title: Enkripsi Berkas PDF
 type: docs
 weight: 10
-url: id/java/encrypt-pdf-file/
+url: /id/java/encrypt-pdf-file/
 description: Topik ini menjelaskan cara Mengenkripsi Berkas PDF menggunakan Kelas PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

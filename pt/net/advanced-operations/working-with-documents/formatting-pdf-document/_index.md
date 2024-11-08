@@ -3,7 +3,7 @@ title: Formatação de Documento PDF usando C#
 linktitle: Formatação de Documento PDF
 type: docs
 weight: 11
-url: pt/net/formatting-pdf-document/
+url: /pt/net/formatting-pdf-document/
 description: Crie e formate o Documento PDF com Aspose.PDF para .NET. Use o próximo trecho de código para resolver suas tarefas.
 lastmod: "2022-02-17"
 sitemap:
@@ -95,7 +95,7 @@ Abra o arquivo PDF usando a classe [Document](https://reference.aspose.com/pdf/n
 - PageLayout – O layout da página.
 - PageMode – Como o documento é exibido quando aberto pela primeira vez. As opções são mostrar miniaturas, tela cheia, mostrar painel de anexos.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como obter as propriedades usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 

@@ -3,7 +3,7 @@ title: Bekerja dengan Teks dalam PDF menggunakan Python
 linktitle: Bekerja dengan Teks
 type: docs
 weight: 30
-url: id/python-net/working-with-text/
+url: /id/python-net/working-with-text/
 description: Bagian ini menjelaskan berbagai teknik penanganan teks. Pelajari cara menambah, mengganti, memutar, mencari teks menggunakan Aspose.PDF untuk Python.
 lastmod: "2024-01-17"
 sitemap:
@@ -81,11 +81,11 @@ Kita semua terkadang perlu menambahkan teks ke file PDF. Misalnya, ketika Anda i
 
  Anda dapat melakukan hal berikut:
 
-- [Menambahkan Teks ke file PDF](/pdf/python-net/add-text-to-pdf-file/) - tambahkan teks ke PDF Anda, gunakan font dari strem dan file, tambahkan string HTML, tambahkan hyperlink, dll.
-- [Tooltip PDF](/pdf/python-net/pdf-tooltip/) - Anda dapat menambahkan tooltip ke teks yang dicari dengan menambahkan tombol tak terlihat menggunakan Python.
-- [Pemformatan Teks di dalam PDF](/pdf/python-net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya.
+- [Menambahkan Teks ke file PDF](/pdf/id/python-net/add-text-to-pdf-file/) - tambahkan teks ke PDF Anda, gunakan font dari strem dan file, tambahkan string HTML, tambahkan hyperlink, dll.
+- [Tooltip PDF](/pdf/id/python-net/pdf-tooltip/) - Anda dapat menambahkan tooltip ke teks yang dicari dengan menambahkan tombol tak terlihat menggunakan Python.
+- [Pemformatan Teks di dalam PDF](/pdf/id/python-net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya.
  Tambahkan indentasi baris, tambahkan border teks, tambahkan teks bergaris bawah, tambahkan umpan baris baru dengan pustaka Aspose.PDF.
-- [Ganti Teks dalam PDF](/pdf/python-net/replace-text-in-pdf/) - untuk mengganti teks di semua halaman dokumen PDF. Anda harus terlebih dahulu menggunakan TextFragmentAbsorber.
-- [Putar Teks di Dalam PDF](/pdf/python-net/rotate-text-inside-pdf/) - putar teks di dalam PDF menggunakan properti rotasi dari Kelas TextFragment.
-- [Cari dan Dapatkan Teks dari Halaman Dokumen PDF](/pdf/python-net/search-and-get-text-from-pdf/) - Anda dapat menggunakan kelas TextFragmentAbsorber untuk mencari dan mendapatkan teks dari halaman.
-- [Menentukan Pemutusan Baris](/pdf/python-net/determine-line-break/) - topik ini menjelaskan cara melacak pemutusan baris dari potongan teks multi-baris.
+- [Ganti Teks dalam PDF](/pdf/id/python-net/replace-text-in-pdf/) - untuk mengganti teks di semua halaman dokumen PDF. Anda harus terlebih dahulu menggunakan TextFragmentAbsorber.
+- [Putar Teks di Dalam PDF](/pdf/id/python-net/rotate-text-inside-pdf/) - putar teks di dalam PDF menggunakan properti rotasi dari Kelas TextFragment.
+- [Cari dan Dapatkan Teks dari Halaman Dokumen PDF](/pdf/id/python-net/search-and-get-text-from-pdf/) - Anda dapat menggunakan kelas TextFragmentAbsorber untuk mencari dan mendapatkan teks dari halaman.
+- [Menentukan Pemutusan Baris](/pdf/id/python-net/determine-line-break/) - topik ini menjelaskan cara melacak pemutusan baris dari potongan teks multi-baris.

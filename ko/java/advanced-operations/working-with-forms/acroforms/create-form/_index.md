@@ -3,7 +3,7 @@ title: AcroForms 생성 - Java에서 작성 가능한 PDF 생성
 linktitle: AcroForms 생성
 type: docs
 weight: 10
-url: ko/java/create-forms/
+url: /ko/java/create-forms/
 description: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서에서 AcroForms를 처음부터 생성하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

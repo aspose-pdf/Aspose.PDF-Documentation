@@ -3,7 +3,7 @@ title: استخراج النص من PDF باستخدام بايثون
 linktitle: استخراج النص من PDF
 type: docs
 weight: 10
-url: ar/python-cpp/extract-text/
+url: /ar/python-cpp/extract-text/
 description: يصف هذا القسم كيفية استخراج النص من مستند PDF باستخدام مكتبة بايثون.
 lastmod: "2024-04-14"
 sitemap:

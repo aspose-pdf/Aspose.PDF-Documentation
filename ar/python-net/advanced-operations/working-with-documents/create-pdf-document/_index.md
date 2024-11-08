@@ -3,7 +3,7 @@ title: كيفية إنشاء ملف PDF باستخدام بايثون
 linktitle: إنشاء مستند PDF
 type: docs
 weight: 10
-url: ar/python-net/create-pdf-document/
+url: /ar/python-net/create-pdf-document/
 description: إنشاء وتنسيق مستند PDF باستخدام Aspose.PDF لبايثون عبر .NET.
 lastmod: "2023-04-12"
 sitemap:

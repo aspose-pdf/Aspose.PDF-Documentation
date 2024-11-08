@@ -2,7 +2,7 @@
 title: Definir Metadados XMP de um PDF existente
 type: docs
 weight: 20
-url: pt/net/set-xmp-metadata-of-an-existing-pdf/
+url: /pt/net/set-xmp-metadata-of-an-existing-pdf/
 description: Esta seção explica como definir Metadados XMP de um PDF existente com Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

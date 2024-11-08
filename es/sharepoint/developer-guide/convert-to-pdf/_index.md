@@ -3,7 +3,7 @@ title: Convertir HTML, Texto e Imágenes a PDF en SharePoint
 linktitle: Convertir a PDF
 type: docs
 weight: 30
-url: es/sharepoint/convert-to-pdf/
+url: /es/sharepoint/convert-to-pdf/
 lastmod: "2020-12-16"
 description: La API de PDF SharePoint permite convertir archivos HTML, archivos de texto e imágenes (JPG, PNG, GIF, TIFF, BMP) al formato PDF.
 ---

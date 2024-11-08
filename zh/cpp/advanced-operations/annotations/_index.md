@@ -3,7 +3,7 @@ title: PDF 注释使用 C++
 linktitle: PDF 注释
 type: docs
 weight: 100
-url: zh/cpp/annotations/
+url: /zh/cpp/annotations/
 description: 本节展示如何使用 Aspose.PDF 库向 PDF 文件添加各种注释。了解如何在 C++ 中绘制、打开或添加注释
 lastmod: "2021-11-24"
 sitemap:
@@ -21,6 +21,6 @@ sitemap:
 
 您可以执行以下操作：
 
-- [注释概述](/pdf/cpp/overview-of-annotations/) - 了解 PDF 规范定义了哪些类型的注释，以及 Aspose.PDF 支持哪些注释。
-- [添加、删除和获取注释](/pdf/cpp/add-delete-and-get-annotation/) - 本节解释如何处理所有允许的注释类型。
-- [导入和导出注释到 XFDF 格式](/pdf/cpp/import-export-xfdf/) - 您将了解如何使用 C++ 以 XFDF 格式导入和导出注释。
+- [注释概述](/pdf/zh/cpp/overview-of-annotations/) - 了解 PDF 规范定义了哪些类型的注释，以及 Aspose.PDF 支持哪些注释。
+- [添加、删除和获取注释](/pdf/zh/cpp/add-delete-and-get-annotation/) - 本节解释如何处理所有允许的注释类型。
+- [导入和导出注释到 XFDF 格式](/pdf/zh/cpp/import-export-xfdf/) - 您将了解如何使用 C++ 以 XFDF 格式导入和导出注释。

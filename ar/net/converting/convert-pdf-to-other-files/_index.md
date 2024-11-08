@@ -3,7 +3,7 @@ title: تحويل PDF إلى EPUB، LaTeX، نص، XPS في C#
 linktitle: تحويل PDF إلى صيغ أخرى
 type: docs
 weight: 90
-url: ar/net/convert-pdf-to-other-files/
+url: /ar/net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
 keywords: convert, PDF, EPUB, LaText, Text, XPS, C#
 description: يوضح لك هذا الموضوع كيفية تحويل ملف PDF إلى صيغ ملفات أخرى مثل EPUB، LaTeX، النص، XPS إلخ باستخدام C# أو .NET.
@@ -26,7 +26,7 @@ sitemap:
 **<abbr title="النشر الإلكتروني">EPUB</abbr>** هو معيار مجاني ومفتوح للكتب الإلكترونية من منتدى النشر الرقمي الدولي (IDPF).
 تم تصميم EPUB للمحتوى القابل لإعادة التدفق، مما يعني أن قارئ EPUB يمكنه تحسين النص لجهاز عرض معين. كما يدعم EPUB المحتوى ذو التخطيط الثابت. يُعتبر الشكل كشكل واحد يمكن للناشرين وبيوت التحويل استخدامه داخليًا، بالإضافة إلى الاستخدام في التوزيع والبيع. يحل محل معيار الكتاب الإلكتروني المفتوح.
 
-الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يدعم Aspose.PDF لـ .NET أيضًا ميزة تحويل مستندات PDF إلى تنسيق EPUB. يحتوي Aspose.PDF لـ .NET على فئة تُسمى EpubSaveOptions والتي يمكن استخدامها كالوسيط الثاني في طريقة [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)، لتوليد ملف EPUB.
 يرجى محاولة استخدام الكود التالي لتحقيق هذا المطلب باستخدام C#.

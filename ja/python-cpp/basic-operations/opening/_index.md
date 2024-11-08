@@ -3,7 +3,7 @@ title: PDFドキュメントをプログラムで開く
 linktitle: PDFを開く
 type: docs
 weight: 20
-url: ja/python-cpp/open-pdf-document/
+url: /ja/python-cpp/open-pdf-document/
 description: Python Aspose.PDF for Python via C++ライブラリでPDFファイルを開く方法を学びます。既存のPDF、ストリームからのドキュメント、および暗号化されたPDFドキュメントを開くことができます。
 lastmod: "2022-12-22"
 sitemap:

@@ -3,7 +3,7 @@ title: Dividir PDF programáticamente
 linktitle: Dividir archivos PDF
 type: docs
 weight: 60
-url: es/cpp/split-pdf-document/
+url: /es/cpp/split-pdf-document/
 description: Este tema muestra cómo dividir páginas de PDF en archivos PDF individuales con C++.
 lastmod: "2022-09-01"
 sitemap:

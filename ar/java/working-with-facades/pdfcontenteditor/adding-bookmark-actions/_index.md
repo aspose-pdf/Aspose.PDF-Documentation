@@ -2,7 +2,7 @@
 title: إضافة إجراءات الإشارات المرجعية إلى ملف PDF موجود
 type: docs
 weight: 20
-url: ar/java/adding-bookmark-actions/
+url: /ar/java/adding-bookmark-actions/
 description: يشرح هذا القسم كيفية إضافة إجراءات الإشارات المرجعية إلى ملف PDF موجود باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

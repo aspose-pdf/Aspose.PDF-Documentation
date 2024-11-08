@@ -2,7 +2,7 @@
 title: استخراج النص من PDF - الواجهات
 type: docs
 weight: 10
-url: ar/cpp/extract-text-from-pdf-facades/
+url: /ar/cpp/extract-text-from-pdf-facades/
 ---
 
 ## <ins>**استخراج النص من جميع صفحات المستند**

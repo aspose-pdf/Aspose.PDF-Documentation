@@ -3,7 +3,7 @@ title: العمل مع إمكانية الوصول وملفات PDF الموسو
 linktitle: إمكانية الوصول. PDF الموسوم
 type: docs
 weight: 120
-url: ar/java/accessibility-tagged-pdf/
+url: /ar/java/accessibility-tagged-pdf/
 description: يوفر Aspose.PDF القدرة على إنشاء مستندات PDF موسومة، مما يتيح لك وضع علامات على العناصر الهيكلية. تعلم المزيد عن كيفية الحصول على ملفات PDF قابلة للوصول.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ sitemap:
 
 يغطي هذا القسم الموضوعات التالية:
 
-- [إنشاء PDF معنونة](/pdf/java/create-tagged-pdf-documents/)
-- [استخراج المحتوى المعنون من ملفات PDF معنونة](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
-- [ضبط خصائص عناصر الهيكل](/pdf/java/set-tagged-pdfs-element-properties/)
-- [العمل مع الجداول في ملفات PDF معنونة](/pdf/java/working-with-table-in-tagged-pdfs/)
+- [إنشاء PDF معنونة](/pdf/ar/java/create-tagged-pdf-documents/)
+- [استخراج المحتوى المعنون من ملفات PDF معنونة](/pdf/ar/java/extract-tagged-content-from-tagged-pdfs/)
+- [ضبط خصائص عناصر الهيكل](/pdf/ar/java/set-tagged-pdfs-element-properties/)
+- [العمل مع الجداول في ملفات PDF معنونة](/pdf/ar/java/working-with-table-in-tagged-pdfs/)

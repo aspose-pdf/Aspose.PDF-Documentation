@@ -3,7 +3,7 @@ title: Аннотации PDF
 linktitle: Аннотации PDF
 type: docs
 weight: 100
-url: ru/python-net/annotations/
+url: /ru/python-net/annotations/
 description: В этом разделе показано, как использовать все виды аннотаций в вашем PDF-файле с библиотекой Aspose.PDF.
 lastmod: "2023-02-17"
 sitemap:
@@ -93,9 +93,9 @@ You are able to do the following:
 
 Вы можете выполнить следующие действия:
 
-- [Add, Delete and Get Annotation](/pdf/python-net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
+- [Add, Delete and Get Annotation](/pdf/ru/python-net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
 
-- [Добавить, удалить и получить аннотацию](/pdf/python-net/add-delete-and-get-annotation/) - этот раздел объясняет, как работать со всеми типами разрешенных аннотаций.
+- [Добавить, удалить и получить аннотацию](/pdf/ru/python-net/add-delete-and-get-annotation/) - этот раздел объясняет, как работать со всеми типами разрешенных аннотаций.
 
 <script type="application/ld+json">
 {

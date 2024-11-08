@@ -3,7 +3,7 @@ title: PDFドキュメントからテーブルを抽出する
 linktitle: テーブルを抽出する
 type: docs
 weight: 20
-url: ja/net/extract-table-from-existing-pdf-document/
+url: /ja/net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for .NETは、PDFドキュメントに含まれるテーブルに対して様々な操作を行うことができます。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Aspose.PDF for .NETは、PDFドキュメントに含まれるテーブルに対して様々な操作を行うことができます。"
 }
 </script>
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## PDFから表を抽出する
 

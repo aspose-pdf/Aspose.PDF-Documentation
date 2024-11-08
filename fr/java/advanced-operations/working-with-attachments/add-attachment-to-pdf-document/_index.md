@@ -3,7 +3,7 @@ title: Ajout d'une pièce jointe à un document PDF
 linktitle: Ajout d'une pièce jointe à un document PDF
 type: docs
 weight: 10
-url: fr/java/ajouter-une-pièce-jointe-à-un-document-pdf/
+url: /fr/java/ajouter-une-pièce-jointe-à-un-document-pdf/
 description: Cette page décrit comment ajouter une pièce jointe à un fichier PDF avec Java.
 lastmod: "2021-06-05"
 sitemap:

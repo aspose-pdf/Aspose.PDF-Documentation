@@ -3,7 +3,7 @@ title: Tambahkan Halaman dalam PDF dengan Python
 linktitle: Tambahkan Halaman
 type: docs
 weight: 10
-url: id/python-net/add-pages/
+url: /id/python-net/add-pages/
 description: Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghilangkan) halaman dari file PDF menggunakan C#.
 lastmod: "2022-02-17"
 sitemap:

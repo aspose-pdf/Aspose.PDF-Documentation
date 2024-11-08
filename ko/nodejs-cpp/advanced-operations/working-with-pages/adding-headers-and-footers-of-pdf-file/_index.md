@@ -3,7 +3,7 @@ title: Node.js에서 PDF에 머리글 및 바닥글 추가
 linktitle: PDF에 머리글 및 바닥글 추가
 type: docs
 weight: 70
-url: ko/nodejs-cpp/add-headers-and-footers-of-pdf-file/
+url: /ko/nodejs-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Node.js via C++를 사용하여 PDF 파일에 머리글 및 바닥글을 추가할 수 있습니다.
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: Pythonを使用してPDFに画像スタンプを追加する
 linktitle: PDFファイルに画像スタンプ
 type: docs
 weight: 10
-url: ja/python-net/image-stamps-in-pdf-page/
+url: /ja/python-net/image-stamps-in-pdf-page/
 description: ImageStampクラスを使用して、Aspose.PDF for PythonライブラリでPDFドキュメントに画像スタンプを追加します。
 lastmod: "2023-04-17"
 sitemap:

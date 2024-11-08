@@ -3,7 +3,7 @@ title: Извлечение текста из PDF
 linktitle: Извлечение текста 
 type: docs
 weight: 10
-url: ru/androidjava/extract-text-from-pdf/
+url: /ru/androidjava/extract-text-from-pdf/
 description: Aspose.PDF позволяет извлекать различные виды информации. Этот раздел содержит статьи об извлечении текста из PDF-документов с использованием Aspose.PDF для Android через Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,5 +18,5 @@ sitemap:
 Для компаний, занимающихся интеллектуальным анализом данных, управлением контентом и обработкой форм, извлечение текста будет особенно полезным.
  Extracting text comes in handy: archiving: Текст и его компоненты могут быть извлечены, чтобы документы могли быть проиндексированы и архивированы с полными возможностями поиска; извлечение и обработка данных в формах; извлечение информации, такой как данные учетной записи, почтовые адреса и номера телефонов для административных целей; извлечение фотографий и изображений.
 
-- [Извлечение текста из PDF](/pdf/androidjava/extract-text-from-all-pdf/)
-- [Извлечение абзаца из PDF](/pdf/androidjava/extract-paragraph-from-pdf/)
+- [Извлечение текста из PDF](/pdf/ru/androidjava/extract-text-from-all-pdf/)
+- [Извлечение абзаца из PDF](/pdf/ru/androidjava/extract-paragraph-from-pdf/)

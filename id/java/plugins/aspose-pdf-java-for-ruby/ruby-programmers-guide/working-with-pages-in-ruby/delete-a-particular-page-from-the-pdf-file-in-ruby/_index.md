@@ -2,7 +2,7 @@
 title: Hapus Halaman Tertentu dari File PDF di Ruby
 type: docs
 weight: 20
-url: id/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
+url: /id/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

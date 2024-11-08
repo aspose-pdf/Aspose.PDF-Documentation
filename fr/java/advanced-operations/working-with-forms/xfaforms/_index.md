@@ -3,7 +3,7 @@ title: Travailler avec des formulaires XFA dans les PDF
 linktitle: Formulaires XFA
 type: docs
 weight: 20
-url: fr/java/xfa-forms/
+url: /fr/java/xfa-forms/
 description: Avec Aspose.PDF pour Java, vous pouvez créer un formulaire à partir de zéro, remplir le champ de formulaire dans un document PDF, extraire des données du formulaire, ajouter ou supprimer des champs dans le formulaire existant.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Establecer Privilegios, Encriptar y Desencriptar Archivo PDF usando C++
 linktitle: Encriptar y Desencriptar Archivo PDF
 type: docs
 weight: 20
-url: es/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /es/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: encriptar pdf,proteger pdf con contraseña,desencriptar pdf,c++
 description: Encriptar Archivo PDF con C++ usando Diferentes Tipos de Encriptación y Algoritmos. También, desencriptar Archivos PDF usando Contraseña de Propietario.
 lastmod: "2021-12-17"

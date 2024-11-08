@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: id/jasperreports/simple-and-affordable-licensing/
+url: /id/jasperreports/simple-and-affordable-licensing/
 
 lastmod: "2021-06-05"
 
@@ -34,4 +34,4 @@ Silakan manfaatkan versi evaluasi dari Aspose.PDF untuk JasperReports: ini tidak
 
 
 
-Mode evaluasi menyuntikkan watermark ke laporan yang diekspor. When you [membeli lisensi](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [cukup terapkan lisensi](/pdf/jasperreports/licensing/) dan watermark tidak akan lagi muncul di dokumen keluaran.
+Mode evaluasi menyuntikkan watermark ke laporan yang diekspor. When you [membeli lisensi](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [cukup terapkan lisensi](/pdf/id/jasperreports/licensing/) dan watermark tidak akan lagi muncul di dokumen keluaran.

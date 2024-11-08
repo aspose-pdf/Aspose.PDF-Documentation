@@ -2,7 +2,7 @@
 title: Añadir Sello de Página PDF
 type: docs
 weight: 10
-url: es/java/add-pdf-page-stamp/
+url: /es/java/add-pdf-page-stamp/
 description: Esta sección explica cómo trabajar con Aspose.PDF Facades usando la Clase PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

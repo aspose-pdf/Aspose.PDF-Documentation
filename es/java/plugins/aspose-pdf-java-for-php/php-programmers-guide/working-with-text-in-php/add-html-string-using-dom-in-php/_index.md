@@ -2,7 +2,7 @@
 title: Agregar cadena HTML usando DOM en PHP
 type: docs
 weight: 10
-url: es/java/add-html-string-using-dom-in-php/
+url: /es/java/add-html-string-using-dom-in-php/
 lastmod: "2021-06-05"
 ---
 

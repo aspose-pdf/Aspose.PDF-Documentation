@@ -2,7 +2,7 @@
 title: تحويل ملف PDF
 type: docs
 weight: 30
-url: ar/net/convert-pdf-file/
+url: /ar/net/convert-pdf-file/
 description: يشرح هذا القسم كيفية تحويل ملف PDF باستخدام واجهات Aspose.PDF باستخدام فئة PdfConverter.
 lastmod: "2021-06-05"
 draft: false
@@ -61,4 +61,4 @@ public static void ConvertPdfPagesToImages01()
 
 ## انظر أيضا
 
-Aspose.PDF for .NET يسمح بتحويل مستندات PDF إلى صيغ مختلفة وأيضًا التحويل من صيغ أخرى إلى PDF. كما يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت باستخدام تطبيق Aspose.PDF converter. تعرف على قسم [التحويل](/pdf/net/converting/) لحل مهامك.
+Aspose.PDF for .NET يسمح بتحويل مستندات PDF إلى صيغ مختلفة وأيضًا التحويل من صيغ أخرى إلى PDF. كما يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت باستخدام تطبيق Aspose.PDF converter. تعرف على قسم [التحويل](/pdf/ar/net/converting/) لحل مهامك.

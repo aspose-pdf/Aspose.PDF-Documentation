@@ -2,7 +2,7 @@
 title: Text Extractor
 type: docs
 weight: 140
-url: id/net/plugins/textextractor/
+url: /id/net/plugins/textextractor/
 description: Mengekstrak konten teks dari dokumen PDF.
 lastmod: "2024-01-24"
 ---

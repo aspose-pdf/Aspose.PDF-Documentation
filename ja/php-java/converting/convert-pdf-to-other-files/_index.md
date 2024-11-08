@@ -3,7 +3,7 @@ title: PDFファイルを他の形式に変換する
 linktitle: PDFを他の形式に変換する
 type: docs
 weight: 90
-url: ja/php-java/convert-pdf-to-other-files/
+url: /ja/php-java/convert-pdf-to-other-files/
 lastmod: "2024-05-20"
 description: このトピックでは、Aspose.PDFがPDFファイルを他のファイル形式に変換できる方法を紹介します。
 sitemap:

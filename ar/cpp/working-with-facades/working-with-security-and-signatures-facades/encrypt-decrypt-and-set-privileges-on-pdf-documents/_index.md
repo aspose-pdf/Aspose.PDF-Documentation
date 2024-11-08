@@ -2,7 +2,7 @@
 title: تشفير وفك تشفير وتعيين الامتيازات على مستندات PDF
 type: docs
 weight: 10
-url: ar/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+url: /ar/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
 ---
 
 ## <ins>**تعيين الامتيازات على ملف PDF موجود**

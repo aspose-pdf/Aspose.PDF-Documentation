@@ -3,7 +3,7 @@ title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: fr/php-java/annotations/
+url: /fr/php-java/annotations/
 description: Cette section montre comment utiliser toutes sortes d'annotations dans votre fichier PDF avec la bibliothèque Aspose.PDF. Apprenez à dessiner, ouvrir ou ajouter une annotation avec PHP.
 lastmod: "2024-06-26"    
 sitemap:
@@ -22,4 +22,4 @@ L'annotation est une partie importante du fichier PDF.
 
 Vous pouvez faire ce qui suit :
 
-- [Ajouter une annotation](/pdf/php-java/add-delete-and-get-annotation/) - cette section explique comment travailler avec les annotations de filigrane.
+- [Ajouter une annotation](/pdf/fr/php-java/add-delete-and-get-annotation/) - cette section explique comment travailler avec les annotations de filigrane.

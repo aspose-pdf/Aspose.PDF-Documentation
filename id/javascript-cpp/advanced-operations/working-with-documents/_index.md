@@ -3,7 +3,7 @@ title: Bekerja dengan Dokumen PDF menggunakan JavaScript melalui C++
 linktitle: Bekerja dengan Dokumen
 type: docs
 weight: 10
-url: id/javascript-cpp/working-with-documents/
+url: /id/javascript-cpp/working-with-documents/
 description: Artikel ini menjelaskan kepada Anda manipulasi apa yang dapat dilakukan dengan dokumen menggunakan Aspose.PDF untuk JavaScript melalui perpustakaan C++.
 lastmod: "2023-02-17"
 sitemap:
@@ -21,9 +21,9 @@ Tetapi **Aspose.PDF untuk JavaScript melalui C++** dapat membantu Anda mengatasi
 
 You are able to do the following:
 
-- [Optimize PDF](/pdf/javascript-cpp/optimize-pdf/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimalisasi dokumen yang sukses.
-- [Optimize PDF Resources](/pdf/javascript-cpp/optimize-pdf-resources/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimalisasi dokumen yang sukses.
-- [Merge PDF](/pdf/javascript-cpp/merge-pdf/) - gabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan JavaScript.
-- [Split PDF](/pdf/javascript-cpp/split-pdf/) - bagi halaman PDF menjadi file PDF individual dalam JavaScript melalui C++.
-- [Delete JavaScripts](/pdf/javascript-cpp/delete-javascripts/) - hapus JavaScripts dari file PDF.
-- [Get info about Product](/pdf/javascript-cpp/get-info-about-product/)
+- [Optimize PDF](/pdf/id/javascript-cpp/optimize-pdf/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimalisasi dokumen yang sukses.
+- [Optimize PDF Resources](/pdf/id/javascript-cpp/optimize-pdf-resources/) - optimalkan konten halaman, optimalkan ukuran file, hapus objek yang tidak digunakan, kompres semua gambar untuk optimalisasi dokumen yang sukses.
+- [Merge PDF](/pdf/id/javascript-cpp/merge-pdf/) - gabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan JavaScript.
+- [Split PDF](/pdf/id/javascript-cpp/split-pdf/) - bagi halaman PDF menjadi file PDF individual dalam JavaScript melalui C++.
+- [Delete JavaScripts](/pdf/id/javascript-cpp/delete-javascripts/) - hapus JavaScripts dari file PDF.
+- [Get info about Product](/pdf/id/javascript-cpp/get-info-about-product/)

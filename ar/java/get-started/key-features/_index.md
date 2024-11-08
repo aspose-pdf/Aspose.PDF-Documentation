@@ -3,7 +3,7 @@ title: الميزات الرئيسية لـ Aspose.PDF
 linktitle: الميزات الرئيسية
 type: docs
 weight: 80
-url: ar/java/key-features/
+url: /ar/java/key-features/
 description: يعرض Aspose.PDF for Java الميزات الرئيسية ويصف إصدارات PDF المدعومة، وجميع التعديلات التي يمكننا القيام بها مع المستندات.
 lastmod: "2021-06-05"
 sitemap:

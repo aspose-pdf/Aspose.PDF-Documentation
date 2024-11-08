@@ -3,7 +3,7 @@ title: Comment signer numériquement un PDF
 linktitle: Signer numériquement un PDF
 type: docs
 weight: 10
-url: fr/java/digitally-sign-pdf-file/
+url: /fr/java/digitally-sign-pdf-file/
 description: Signez numériquement des documents PDF en utilisant Java. Vérifiez ou validez les PDF signés numériquement avec une application basée sur Java avec la bibliothèque PDF. Vous pouvez certifier un fichier PDF avec un certificat PKCS1.
 lastmod: "2021-06-05"
 sitemap:

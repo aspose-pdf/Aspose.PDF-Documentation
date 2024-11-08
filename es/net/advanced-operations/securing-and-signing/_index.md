@@ -3,7 +3,7 @@ title: Asegurando y firmando PDF en C#
 linktitle: Asegurando y firmando en PDF
 type: docs
 weight: 150
-url: es/net/securing-and-signing/
+url: /es/net/securing-and-signing/
 description: Esta sección describe las características de usar una firma y asegurar su documento PDF utilizando C#
 lastmod: "2022-02-17"
 sitemap:
@@ -79,10 +79,10 @@ aliases:
 </script>
 Esta sección describe cómo firmar digitalmente documentos PDF de manera segura usando C#. Los términos firma electrónica y firma digital se utilizan indistintamente, pero esencialmente son diferentes. Más generalmente, una firma digital viene con un sello aprobado por una [autoridad de certificación](https://es.wikipedia.org/wiki/Autoridad_de_certificaci%C3%B3n) y se utiliza para proteger el documento firmado contra manipulaciones. En cambio, una firma electrónica se utiliza a menudo para demostrar la intención de firmar un documento.
 
-- [Firmar digitalmente archivo PDF](/pdf/net/digitally-sign-pdf-file/)
-- [Establecer Privilegios, Encriptar y Desencriptar Archivo PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extraer Información de Imagen y Firma](/pdf/net/extract-image-and-signature-information/)
-- [Firmar Documento PDF Desde Tarjeta Inteligente](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Firmar digitalmente archivo PDF](/pdf/es/net/digitally-sign-pdf-file/)
+- [Establecer Privilegios, Encriptar y Desencriptar Archivo PDF](/pdf/es/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Extraer Información de Imagen y Firma](/pdf/es/net/extract-image-and-signature-information/)
+- [Firmar Documento PDF Desde Tarjeta Inteligente](/pdf/es/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

@@ -2,7 +2,7 @@
 title: Travailler avec les Pièces Jointes - Facades
 type: docs
 weight: 50
-url: fr/net/working-with-attachments-facades/
+url: /fr/net/working-with-attachments-facades/
 description: Cette section explique comment travailler avec les pièces jointes - Facades en utilisant la classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: HTML to PDF
 type: docs
 weight: 10
-url: ko/java/html-to-pdf/
+url: /ko/java/html-to-pdf/
 lastmod: "2022-01-27"
 ---
 

@@ -2,7 +2,7 @@
 title: Create Bookmarks
 type: docs
 weight: 10
-url: id/net/create-bookmarks/
+url: /id/net/create-bookmarks/
 description: Bagian ini menjelaskan cara membuat penanda buku ke file PDF Anda dengan Aspose.PDF Facades menggunakan Kelas PdfBookmarEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -55,4 +55,4 @@ Anda dapat menambahkan penanda anak dalam file PDF yang ada menggunakan kelas [P
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-AddChildBookmark-AddChildBookmark.cs" >}}
 ## Lihat juga
 
-Cobalah untuk membandingkan dan menemukan cara bekerja dengan penanda halaman yang sesuai untuk Anda. Mari belajar bagian [Bekerja dengan Penanda Halaman di PDF](/pdf/net/bookmarks/).
+Cobalah untuk membandingkan dan menemukan cara bekerja dengan penanda halaman yang sesuai untuk Anda. Mari belajar bagian [Bekerja dengan Penanda Halaman di PDF](/pdf/id/net/bookmarks/).

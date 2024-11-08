@@ -3,7 +3,7 @@ title: Menghapus lampiran dari PDF yang ada
 linktitle: Menghapus lampiran dari PDF yang ada
 type: docs
 weight: 30
-url: id/java/removing-attachment-from-an-existing-pdf/
+url: /id/java/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF dapat menghapus lampiran dari dokumen PDF Anda. Gunakan Java PDF API untuk menghapus lampiran dalam file PDF dengan pustaka Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

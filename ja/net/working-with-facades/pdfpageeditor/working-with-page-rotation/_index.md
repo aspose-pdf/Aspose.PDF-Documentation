@@ -2,7 +2,7 @@
 title: ページ回転の操作
 type: docs
 weight: 10
-url: ja/net/working-with-page-rotation/
+url: /ja/net/working-with-page-rotation/
 description: このセクションでは、PdfPageEditorクラスを使用してページ回転を操作する方法を説明します。
 lastmod: "2021-07-07"
 draft: false

@@ -2,7 +2,7 @@
 title: إضافة ختم نص وصورة
 type: docs
 weight: 20
-url: ar/net/add-text-and-image-stamp/
+url: /ar/net/add-text-and-image-stamp/
 description: يشرح هذا القسم كيفية إضافة ختم نص وصورة باستخدام Aspose.PDF Facades باستخدام فئة PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

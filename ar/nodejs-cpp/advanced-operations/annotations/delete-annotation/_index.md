@@ -3,7 +3,7 @@ title: حذف التعليق التوضيحي في Node.js
 linktitle: حذف التعليق التوضيحي
 type: docs
 weight: 10
-url: ar/nodejs-cpp/delete-annotation/
+url: /ar/nodejs-cpp/delete-annotation/
 description: باستخدام Aspose.PDF لـ Node.js يمكنك حذف التعليق التوضيحي من ملف PDF الخاص بك.
 lastmod: "2023-11-16"
 sitemap:

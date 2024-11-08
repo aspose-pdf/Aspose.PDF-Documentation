@@ -3,7 +3,7 @@ title: システム要件
 linktitle: システム要件
 type: docs
 weight: 30
-url: ja/python-net/system-requirements/
+url: /ja/python-net/system-requirements/
 description: このセクションでは、Aspose.PDF for Python を正常に使用するために必要なサポートされているオペレーティングシステムを一覧表示します。
 lastmod: "2022-12-22"
 sitemap:

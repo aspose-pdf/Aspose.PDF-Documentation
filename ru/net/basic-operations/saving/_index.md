@@ -3,7 +3,7 @@ title: Сохранение PDF документа программно
 linktitle: Сохранение PDF
 type: docs
 weight: 30
-url: ru/net/save-pdf-document/
+url: /ru/net/save-pdf-document/
 description: Узнайте, как сохранить PDF файл на C# с помощью библиотеки Aspose.PDF для .NET. Сохранение PDF документа в файловую систему, в поток и в веб-приложениях.
 aliases:
     - /net/saving/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/ru/net/drawing/).
 
 ## Сохранение PDF документа в файловую систему
 
@@ -60,7 +60,7 @@ var pdfDocument = new Aspose.Pdf.Document(originalFileName);
 pdfDocument.Pages.Add();
 pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
-Для получения более подробного объяснения, пожалуйста, перейдите в раздел [Витрина](/pdf/net/showcases/).
+Для получения более подробного объяснения, пожалуйста, перейдите в раздел [Витрина](/pdf/ru/net/showcases/).
 
 ## Сохранение в формате PDF/A или PDF/X
 

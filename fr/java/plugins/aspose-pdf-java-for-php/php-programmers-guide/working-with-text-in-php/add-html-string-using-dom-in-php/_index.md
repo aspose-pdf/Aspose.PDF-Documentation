@@ -2,7 +2,7 @@
 title: Ajouter une chaîne HTML en utilisant DOM dans PHP
 type: docs
 weight: 10
-url: fr/java/add-html-string-using-dom-in-php/
+url: /fr/java/add-html-string-using-dom-in-php/
 lastmod: "2021-06-05"
 ---
 

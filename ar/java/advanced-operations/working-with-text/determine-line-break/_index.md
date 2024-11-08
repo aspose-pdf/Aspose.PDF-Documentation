@@ -3,7 +3,7 @@ title: تحديد فاصل الأسطر
 linktitle: تحديد فاصل الأسطر
 type: docs
 weight: 70
-url: ar/java/determine-line-break/
+url: /ar/java/determine-line-break/
 description: تعرف على كيفية تحديد فاصل الأسطر لمقطع نصي متعدد الأسطر باستخدام Java
 lastmod: "2021-06-05"
 sitemap:

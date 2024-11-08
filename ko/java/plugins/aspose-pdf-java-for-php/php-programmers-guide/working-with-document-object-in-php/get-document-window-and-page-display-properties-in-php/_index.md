@@ -2,7 +2,7 @@
 title: PHP에서 문서 창 및 페이지 표시 속성 가져오기
 type: docs
 weight: 30
-url: ko/java/get-document-window-and-page-display-properties-in-php/
+url: /ko/java/get-document-window-and-page-display-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

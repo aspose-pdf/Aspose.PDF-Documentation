@@ -2,7 +2,7 @@
 title: HTML을 PDF 형식으로 변환하기 - Ruby
 type: docs
 weight: 10
-url: ko/java/convert-html-to-pdf-format-in-ruby/
+url: /ko/java/convert-html-to-pdf-format-in-ruby/
 lastmod: "2021-06-05"
 ---
 

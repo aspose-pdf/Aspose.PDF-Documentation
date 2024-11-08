@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: ar/jasperreports/simple-and-affordable-licensing/
+url: /ar/jasperreports/simple-and-affordable-licensing/
 
 lastmod: "2021-06-05"
 
@@ -34,4 +34,4 @@ lastmod: "2021-06-05"
 
 
 
-وضع التقييم يدرج علامات مائية في التقارير المصدرة. عندما [تشتري ترخيصًا](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx)، [قم ببساطة بتطبيق الترخيص](/pdf/jasperreports/licensing/) ولن يظهر العلامة المائية بعد الآن في المستندات الناتجة.
+وضع التقييم يدرج علامات مائية في التقارير المصدرة. عندما [تشتري ترخيصًا](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx)، [قم ببساطة بتطبيق الترخيص](/pdf/ar/jasperreports/licensing/) ولن يظهر العلامة المائية بعد الآن في المستندات الناتجة.

@@ -3,7 +3,7 @@ title: Mover Páginas de PDF
 linktitle: Mover Páginas de PDF
 type: docs
 weight: 20
-url: pt/php-java/move-pages/
+url: /pt/php-java/move-pages/
 description: Tente mover páginas para a localização desejada ou para o final de um arquivo PDF usando Aspose.PDF para PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

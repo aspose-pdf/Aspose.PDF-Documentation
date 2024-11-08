@@ -3,7 +3,7 @@ title: Ajouter une pièce jointe à un document PDF en utilisant Python
 linktitle: Ajouter une pièce jointe à un document PDF
 type: docs
 weight: 10
-url: fr/python-net/add-attachment-to-pdf-document/
+url: /fr/python-net/add-attachment-to-pdf-document/
 description: Cette page décrit comment ajouter une pièce jointe à un fichier PDF avec Aspose.PDF pour Python via la bibliothèque .NET.
 lastmod: "2023-02-17"
 sitemap:

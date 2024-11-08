@@ -2,7 +2,7 @@
 title: OneClick PDF 문서 생성기
 type: docs
 weight: 10
-url: ko/net/oneclick-pdf-document-generator/
+url: /ko/net/oneclick-pdf-document-generator/
 description: Aspose.PDF OneClick PDF 문서 생성기 사용 방법 학습하기
 lastmod: "2021-06-05"
 sitemap:

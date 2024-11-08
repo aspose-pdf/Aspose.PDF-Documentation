@@ -3,7 +3,7 @@ title: PDFにページを追加
 linktitle: ページを追加
 type: docs
 weight: 10
-url: ja/java/add-pages/
+url: /ja/java/add-pages/
 description: この記事では、PDFファイルの希望する場所にページを挿入（追加）する方法を教えます。Javaライブラリを使用して、PDFファイルからページを移動、削除（削除）する方法を学びます。
 lastmod: "2021-06-05"
 sitemap:

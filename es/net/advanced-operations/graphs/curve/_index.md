@@ -3,7 +3,7 @@ title: Añadir objeto curva al archivo PDF
 linktitle: Añadir Curva
 type: docs
 weight: 30
-url: es/net/add-curve/
+url: /es/net/add-curve/
 description: Este artículo explica cómo crear un objeto curva en su PDF utilizando Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Este artículo explica cómo crear un objeto curva en su PDF utilizando Aspose.PDF para .NET."
 }
 </script>
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Agregar objeto Curve
 

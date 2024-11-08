@@ -2,7 +2,7 @@
 title: الحصول على معلومات ملف PDF في بايثون
 type: docs
 weight: 40
-url: ar/python-java/get-pdf-file-information-in-python/
+url: /ar/python-java/get-pdf-file-information-in-python/
 ---
 
 <ins>للحصول على معلومات ملف لمستند PDF باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء فئة **GetPdfFileInfo**.

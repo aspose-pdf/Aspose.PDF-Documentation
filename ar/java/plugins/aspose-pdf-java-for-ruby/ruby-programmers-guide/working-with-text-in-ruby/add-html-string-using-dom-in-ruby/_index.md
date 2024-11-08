@@ -2,7 +2,7 @@
 title: إضافة سلسلة HTML باستخدام DOM في Ruby
 type: docs
 weight: 10
-url: ar/java/add-html-string-using-dom-in-ruby/
+url: /ar/java/add-html-string-using-dom-in-ruby/
 lastmod: "2021-06-05"
 ---
 

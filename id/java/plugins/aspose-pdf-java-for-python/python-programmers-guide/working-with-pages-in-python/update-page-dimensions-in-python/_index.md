@@ -2,7 +2,7 @@
 title: Memperbarui Dimensi Halaman dalam Python
 type: docs
 weight: 90
-url: id/java/update-page-dimensions-in-python/
+url: /id/java/update-page-dimensions-in-python/
 lastmod: "2021-06-05"
 ---
 

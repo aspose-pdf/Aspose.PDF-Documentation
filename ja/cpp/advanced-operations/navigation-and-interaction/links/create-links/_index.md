@@ -3,7 +3,7 @@ title: C++でPDFファイルにリンクを作成する
 linktitle: リンクを作成
 type: docs
 weight: 10
-url: ja/cpp/create-links/
+url: /ja/cpp/create-links/
 description: このセクションでは、C++でPDFドキュメントにリンクを作成する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

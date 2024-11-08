@@ -2,7 +2,7 @@
 title: Creando un Ensamblado Contenedor
 type: docs
 weight: 80
-url: es/net/creating-a-wrapper-assembly/
+url: /es/net/creating-a-wrapper-assembly/
 ---
 
 {{% alert color="primary" %}}

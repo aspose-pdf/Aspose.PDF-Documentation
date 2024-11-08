@@ -3,7 +3,7 @@ title: العمل مع إمكانية الوصول وملفات PDF الموسو
 linktitle: إمكانية الوصول. ملف PDF موسوم
 type: docs
 weight: 120
-url: ar/androidjava/accessibility-tagged-pdf/
+url: /ar/androidjava/accessibility-tagged-pdf/
 description: يصف هذا الفصل إمكانية إنشاء مستندات PDF موسومة. تتيح هذه الميزة إضافة وسوم إلى المستندات الهيكلية. تعرف على المزيد حول طرق الحصول على ملفات PDF ميسورة التكلفة.
 lastmod: "2021-06-05"
 sitemap:
@@ -20,7 +20,7 @@ sitemap:
 
 يغطي هذا القسم الموضوعات التالية:
 
-- [إنشاء PDF موسوم](/pdf/andriodjava/create-tagged-pdf-documents/)
-- [استخراج المحتوى المميز من ملفات PDF الموسومة](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)
-- [تعيين خصائص عناصر الهيكل](/pdf/androidjava/set-tagged-pdfs-element-properties/)
-- [العمل مع الجداول في ملفات PDF الموسومة](/pdf/androidjava/working-with-table-in-tagged-pdfs/)
+- [إنشاء PDF موسوم](/pdf/ar/andriodjava/create-tagged-pdf-documents/)
+- [استخراج المحتوى المميز من ملفات PDF الموسومة](/pdf/ar/androidjava/extract-tagged-content-from-tagged-pdfs/)
+- [تعيين خصائص عناصر الهيكل](/pdf/ar/androidjava/set-tagged-pdfs-element-properties/)
+- [العمل مع الجداول في ملفات PDF الموسومة](/pdf/ar/androidjava/working-with-table-in-tagged-pdfs/)

@@ -3,7 +3,7 @@ title: PDFドキュメントを操作する
 linktitle: PDFドキュメントを操作する
 type: docs
 weight: 30
-url: ja/java/manipulate-pdf-document/
+url: /ja/java/manipulate-pdf-document/
 description: 本記事には、PDF A規格に対するPDFドキュメントの検証方法、目次の操作方法、PDFの有効期限の設定方法、およびPDFファイル生成の進捗を確認する方法に関する情報が含まれています。
 lastmod: "2021-06-05"
 ---

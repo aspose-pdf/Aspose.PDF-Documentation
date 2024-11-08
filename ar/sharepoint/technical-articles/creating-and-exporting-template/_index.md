@@ -2,7 +2,7 @@
 title: إنشاء وتصدير القوالب
 type: docs
 weight: 10
-url: ar/sharepoint/creating-and-exporting-template/
+url: /ar/sharepoint/creating-and-exporting-template/
 lastmod: "2020-12-16"
 description: يمكنك إنشاء وتصدير القوالب إلى PDF في SharePoint باستخدام PDF SharePoint API.
 ---

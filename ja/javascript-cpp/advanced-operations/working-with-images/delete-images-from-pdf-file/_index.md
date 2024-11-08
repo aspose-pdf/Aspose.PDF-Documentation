@@ -3,7 +3,7 @@ title: JavaScriptを使用してPDFファイルから画像を削除する
 linktitle: 画像を削除
 type: docs
 weight: 20
-url: ja/javascript-cpp/delete-images-from-pdf-file/
+url: /ja/javascript-cpp/delete-images-from-pdf-file/
 description: このセクションでは、Aspose.PDF for JavaScriptを使用してPDFファイルから画像を削除する方法を説明します。
 lastmod: "2022-02-17"
 ---

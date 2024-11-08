@@ -2,7 +2,7 @@
 title: Aspose.Pdf for SharePoint 라이선스 설치
 type: docs
 weight: 10
-url: ko/sharepoint/installing-aspose-pdf-for-sharepoint-license/
+url: /ko/sharepoint/installing-aspose-pdf-for-sharepoint-license/
 lastmod: "2020-12-16"
 description: 평가가 만족스러우면 PDF SharePoint API에 대한 라이선스를 구매하고 설치 지침을 따라 적용할 수 있습니다.
 ---

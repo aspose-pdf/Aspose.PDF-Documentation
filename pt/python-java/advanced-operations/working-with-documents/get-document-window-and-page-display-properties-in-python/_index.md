@@ -2,7 +2,7 @@
 title: Obter Propriedades da Janela do Documento e Exibição de Página em Python
 type: docs
 weight: 30
-url: pt/python-java/get-document-window-and-page-display-properties-in-python/
+url: /pt/python-java/get-document-window-and-page-display-properties-in-python/
 ---
 
 <ins>Para Obter Propriedades da Janela do Documento e Exibição de Página de um documento PDF usando **Aspose.PDF Java for Python**, basta invocar a classe **GetDocumentWindow**.

@@ -2,7 +2,7 @@
 title: تحسين مستند PDF للويب باستخدام روبي
 type: docs
 weight: 70
-url: ar/java/optimize-pdf-document-for-the-web-in-ruby/
+url: /ar/java/optimize-pdf-document-for-the-web-in-ruby/
 lastmod: "2021-06-05"
 ---
 

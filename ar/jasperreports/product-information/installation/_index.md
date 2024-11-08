@@ -7,7 +7,7 @@ type: docs
 
 weight: 50
 
-url: ar/jasperreports/installation/
+url: /ar/jasperreports/installation/
 
 lastmod: "2021-06-05"
 
@@ -15,10 +15,10 @@ lastmod: "2021-06-05"
 
 **تتضمن هذه القسم المواضيع التالية:** 
 
-- [متطلبات النظام](/pdf/jasperreports/system-requirements/)
+- [متطلبات النظام](/pdf/ar/jasperreports/system-requirements/)
 
-- [التكامل مع](/pdf/jasperreports/integration-with-jasperreports/)
+- [التكامل مع](/pdf/ar/jasperreports/integration-with-jasperreports/)
 
-- [التكامل مع JasperServer](/pdf/jasperreports/integration-with-jasperserver/)
+- [التكامل مع JasperServer](/pdf/ar/jasperreports/integration-with-jasperserver/)
 
 ```

@@ -3,7 +3,7 @@ title: 様々なファイル形式をPDFに変換する
 linktitle: 他のファイル形式をPDFに変換する
 type: docs
 weight: 80
-url: ja/java/convert-other-files-to-pdf/
+url: /ja/java/convert-other-files-to-pdf/
 lastmod: "2021-11-19"
 description: このトピックでは、Aspose.PDFが他のファイル形式をPDFドキュメントに変換する方法を示します。
 sitemap:

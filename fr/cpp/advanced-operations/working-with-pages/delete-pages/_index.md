@@ -3,7 +3,7 @@ title: Supprimer des pages PDF par programmation
 linktitle: Supprimer des pages PDF
 type: docs
 weight: 30
-url: fr/cpp/delete-pages/
+url: /fr/cpp/delete-pages/
 description: Vous pouvez supprimer des pages de votre fichier PDF en utilisant une bibliothèque C++.
 lastmod: "2021-12-09"
 sitemap:

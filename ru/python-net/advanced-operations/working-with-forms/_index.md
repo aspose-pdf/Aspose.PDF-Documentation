@@ -3,7 +3,7 @@ title: Работа с формами с использованием Python
 linktitle: Работа с формами
 type: docs
 weight: 60
-url: ru/python-net/working-with-forms/
+url: /ru/python-net/working-with-forms/
 description: Этот раздел описывает, как работать с AcroForms в PDF документах с помощью Aspose.PDF для Python через .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -81,4 +81,4 @@ sitemap:
 
 AcroForms позволяет пользователям заполнять, отправлять и хранить формы в электронном виде, что делает их удобным и эффективным способом сбора информации.
 
-- [AcroForms](/pdf/python-net/acroforms/) - создавайте формы, заполняйте поля формы, извлекайте данные из формы, добавляйте и удаляйте поля в вашем PDF с помощью библиотеки Python.
+- [AcroForms](/pdf/ru/python-net/acroforms/) - создавайте формы, заполняйте поля формы, извлекайте данные из формы, добавляйте и удаляйте поля в вашем PDF с помощью библиотеки Python.

@@ -4,7 +4,7 @@ linktitle: Aspose.PDF لـ Python عبر .NET
 second_title: Aspose.PDF لـ Python عبر .NET
 type: docs
 weight: 40
-url: ar/python-net/
+url: /ar/python-net/
 is_root: true
 lastmod: "2022-10-24"
 description: تعلم كيفية استخدام Aspose.PDF Python عبر .NET لإنشاء تطبيقات لمعالجة مستندات PDF على أي منصة باستخدام Python. تصفح الدروس، أمثلة الأكواد، والمزيد.
@@ -27,20 +27,20 @@ Aspose.PDF هو مكون .NET تم إنشاؤه للسماح للمطورين ب
 
 <h2>الفصول</h2>
 
-- [ما الجديد](/pdf/python-net/whatsnew/)
-- [نظرة عامة](/pdf/python-net/overview/)
-- [البدء](/pdf/python-net/get-started/)
-- [العمليات الأساسية](/pdf/python-net/basic-operations/)
-- [تحويل المستندات](/pdf/python-net/converting/)
-- [تحليل مستندات PDF](/pdf/python-net/parsing/)
-- [العمليات المتقدمة](/pdf/python-net/advanced-operations/)
-- [العروض التوضيحية](/pdf/python-net/showcases/)
+- [ما الجديد](/pdf/ar/python-net/whatsnew/)
+- [نظرة عامة](/pdf/ar/python-net/overview/)
+- [البدء](/pdf/ar/python-net/get-started/)
+- [العمليات الأساسية](/pdf/ar/python-net/basic-operations/)
+- [تحويل المستندات](/pdf/ar/python-net/converting/)
+- [تحليل مستندات PDF](/pdf/ar/python-net/parsing/)
+- [العمليات المتقدمة](/pdf/ar/python-net/advanced-operations/)
+- [العروض التوضيحية](/pdf/ar/python-net/showcases/)
 - [ملاحظات الإصدار](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 
 <h2>موارد Aspose.PDF for Python عبر .NET</h2>
 
 الروابط التالية هي لبعض الموارد المفيدة التي قد تحتاجها لإتمام مهامك.
-- [ميزات Aspose.PDF لـ Python عبر .NET](/pdf/python-net/key-features/)
+- [ميزات Aspose.PDF لـ Python عبر .NET](/pdf/ar/python-net/key-features/)
 - [ملاحظات الإصدار لـ Aspose.PDF لـ Python عبر .NET](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 - [صفحة منتج Aspose.PDF لـ Python عبر .NET](https://products.aspose.com/pdf/python-net/)
 - [تحميل Aspose.PDF لـ Python عبر .NET](https://releases.aspose.com/pdf/pythonnet/)

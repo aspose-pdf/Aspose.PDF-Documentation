@@ -3,7 +3,7 @@ title: ZUGFeRDを使用する
 linktitle: ZUGFeRDを使用する
 type: docs
 weight: 90
-url: ja/python-net/working-with-zugferd/
+url: /ja/python-net/working-with-zugferd/
 description: Aspose.PDF for Javaを使用してZUGFeRDに準拠したPDF請求書を作成する方法を学ぶ
 lastmod: "2024-01-17"
 sitemap:
@@ -26,8 +26,8 @@ ZUGFeRDは、ドイツにおける電子請求の標準です。
 
 また、長期保存および税務コンプライアンスの法的要件にも準拠しています。ZUGFeRDには、異なるニーズやシナリオに対応するさまざまなバージョンとプロファイルがあります。最新バージョンは、電子請求書のためのヨーロッパ標準EN 16931に準拠したZUGFeRD 2.0です。ZUGFeRDは、処理の迅速化、エラーの減少、キャッシュフローの改善、環境への影響の軽減など、多くの利点とコスト削減をユーザーに提供します。
 
-* [PythonでPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/python-net/attach-zugferd/)
+* [PythonでPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/ja/python-net/attach-zugferd/)
 
 関連リンク：
 
-* [JavaでPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/java/attach-zugferd/)* [PDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を.NETで添付する](/pdf/net/attach-zugferd/)
+* [JavaでPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/ja/java/attach-zugferd/)* [PDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を.NETで添付する](/pdf/ja/net/attach-zugferd/)

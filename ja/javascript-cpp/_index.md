@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for JavaScript
 second_title: Aspose.PDF for JavaScript via C++
 type: docs
 weight: 80
-url: ja/javascript-cpp/
+url: /ja/javascript-cpp/
 is_root: true
 lastmod: "2022-12-08"
 description: ブラウザでのPDFドキュメント処理のためのアプリケーションを作成するために、Aspose.PDF for JavaScript の使用方法を学びます。
@@ -26,17 +26,17 @@ Aspose.PDF for JavaScript via C++ は、JavaScriptを使用してPDFを処理す
 
 <h2>章</h2>
 
-- [新着情報](/pdf/javascript-cpp/whatsnew/)
-- [概要](/pdf/javascript-cpp/overview/)
-- [始めに](/pdf/javascript-cpp/get-started/)
-- [基本操作](/pdf/javascript-cpp/basic-operations/)
+- [新着情報](/pdf/ja/javascript-cpp/whatsnew/)
+- [概要](/pdf/ja/javascript-cpp/overview/)
+- [始めに](/pdf/ja/javascript-cpp/get-started/)
+- [基本操作](/pdf/ja/javascript-cpp/basic-operations/)
 - [リリースノート](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
 
 <h2>Aspose.PDF for JavaScript リソース</h2>
 
 以下は、タスクを達成するために必要な便利なリソースへのリンクです。
 
-- [Aspose.PDF for JavaScript 機能](/pdf/javascript-cpp/key-features/)
+- [Aspose.PDF for JavaScript 機能](/pdf/ja/javascript-cpp/key-features/)
 - [Aspose.PDF for JavaScript リリースノート](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
 - [Aspose.PDF for JavaScript のダウンロード](https://releases.aspose.com/pdf/javascriptcpp/)
 - [Aspose.PDF for JavaScript 製品ページ](https://products.aspose.com/pdf/javascript-cpp/)

@@ -4,7 +4,7 @@ linktitle: Aspose.PDF untuk Python via .NET
 second_title: Aspose.PDF untuk Python via .NET
 type: docs
 weight: 40
-url: id/python-net/
+url: /id/python-net/
 is_root: true
 lastmod: "2022-10-24"
 description: Pelajari cara menggunakan Aspose.PDF Python via .NET untuk membuat aplikasi pemrosesan dokumen PDF di platform apa pun menggunakan Python. Telusuri tutorial, kode contoh, dan lainnya.
@@ -26,20 +26,20 @@ Aspose.PDF adalah komponen .NET yang dibuat untuk memungkinkan pengembang membua
 
 <h2>Bab</h2>
 
-- [Apa yang baru](/pdf/python-net/whatsnew/)
-- [Ikhtisar](/pdf/python-net/overview/)
-- [Memulai](/pdf/python-net/get-started/)
-- [Operasi dasar](/pdf/python-net/basic-operations/)
-- [Mengonversi dokumen](/pdf/python-net/converting/)
-- [Mem-parsing dokumen PDF](/pdf/python-net/parsing/)
-- [Operasi lanjutan](/pdf/python-net/advanced-operations/)
-- [Pameran](/pdf/python-net/showcases/)
+- [Apa yang baru](/pdf/id/python-net/whatsnew/)
+- [Ikhtisar](/pdf/id/python-net/overview/)
+- [Memulai](/pdf/id/python-net/get-started/)
+- [Operasi dasar](/pdf/id/python-net/basic-operations/)
+- [Mengonversi dokumen](/pdf/id/python-net/converting/)
+- [Mem-parsing dokumen PDF](/pdf/id/python-net/parsing/)
+- [Operasi lanjutan](/pdf/id/python-net/advanced-operations/)
+- [Pameran](/pdf/id/python-net/showcases/)
 - [Catatan Rilis](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 
 <h2>Sumber Daya Aspose.PDF untuk Python via .NET</h2>
 
 Berikut adalah tautan ke beberapa sumber daya berguna yang mungkin Anda perlukan untuk menyelesaikan tugas Anda.
-- [Fitur Aspose.PDF untuk Python melalui .NET](/pdf/python-net/key-features/)
+- [Fitur Aspose.PDF untuk Python melalui .NET](/pdf/id/python-net/key-features/)
 - [Catatan Rilis Aspose.PDF untuk Python melalui .NET](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 - [Halaman Produk Aspose.PDF untuk Python melalui .NET](https://products.aspose.com/pdf/python-net/)
 - [Unduh Aspose.PDF untuk Python melalui .NET](https://releases.aspose.com/pdf/pythonnet/)

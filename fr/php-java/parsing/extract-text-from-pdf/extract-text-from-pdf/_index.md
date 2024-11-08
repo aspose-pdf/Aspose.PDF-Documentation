@@ -3,7 +3,7 @@ title: Extraction de texte brut à partir d'un fichier PDF
 linktitle: Extraire du texte d'un PDF
 type: docs
 weight: 10
-url: fr/php-java/extract-text-from-all-pdf/
+url: /fr/php-java/extract-text-from-all-pdf/
 description: Cet article décrit diverses façons d'extraire du texte de documents PDF en utilisant Aspose.PDF pour PHP. À partir de pages entières, d'une partie spécifique, basé sur des colonnes, etc.
 lastmod: "2024-05-20"
 sitemap:

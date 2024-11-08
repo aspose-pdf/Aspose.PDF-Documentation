@@ -3,7 +3,7 @@ title: 改行を決定する
 linktitle: 改行を決定する
 type: docs
 weight: 70
-url: ja/python-net/determine-line-break/
+url: /ja/python-net/determine-line-break/
 description: Pythonを使用して複数行のTextFragmentの改行を決定する方法について詳しく学ぶ
 lastmod: "2024-02-17"
 sitemap:

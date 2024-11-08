@@ -3,7 +3,7 @@ title: PDF를 PDF/A 형식으로 변환
 linktitle: PDF를 PDF/A 형식으로 변환
 type: docs
 weight: 100
-url: ko/net/convert-pdf-to-pdfa/
+url: /ko/net/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
 description: 이 주제에서는 Aspose.PDF를 사용하여 PDF 파일을 PDF/A 준수 PDF 파일로 변환하는 방법을 보여줍니다.
 sitemap:
@@ -28,7 +28,7 @@ Aspose.PDF for .NET은 무료 온라인 애플리케이션 ["PDF를 PDF/A-1A로"
 [![Aspose.PDF 변환 PDF를 PDF/A로 무료 앱으로](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 사용할 수 있습니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 사용할 수 있습니다.
 
 ## PDF 파일을 PDF/A-1b로 변환
 

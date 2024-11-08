@@ -3,7 +3,7 @@ title: Извлечение таблицы из PDF документа
 linktitle: Извлечение таблицы
 type: docs
 weight: 20
-url: ru/net/extract-table-from-existing-pdf-document/
+url: /ru/net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF для .NET позволяет выполнять различные манипуляции с таблицами, содержащимися в вашем pdf документе.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Aspose.PDF для .NET позволяет выполнять различные манипуляции с таблицами, содержащимися в вашем pdf документе."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Извлечение таблицы из PDF
 

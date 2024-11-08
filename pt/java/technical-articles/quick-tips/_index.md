@@ -2,7 +2,7 @@
 title: Dicas Rápidas
 type: docs
 weight: 50
-url: pt/java/quick-tips/
+url: /pt/java/quick-tips/
 lastmod: "2022-01-27"
 ---
 

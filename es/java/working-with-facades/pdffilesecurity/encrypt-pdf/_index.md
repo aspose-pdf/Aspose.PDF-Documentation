@@ -2,7 +2,7 @@
 title: Encriptar Archivo PDF
 type: docs
 weight: 10
-url: es/java/encrypt-pdf-file/
+url: /es/java/encrypt-pdf-file/
 description: Este tema explica cómo Encriptar un Archivo PDF usando la Clase PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

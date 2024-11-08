@@ -3,7 +3,7 @@ title: تقسيم ملفات PDF برمجيًا
 linktitle: تقسيم ملفات PDF
 type: docs
 weight: 60
-url: ar/net/split-pdf-document/
+url: /ar/net/split-pdf-document/
 keywords: تقسيم pdf إلى ملفات متعددة، تقسيم pdf إلى pdfs منفصلة، تقسيم pdf c#
 description: هذا الموضوع يوضح كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات .NET الخاصة بك باستخدام C#.
 lastmod: "2022-02-17"
@@ -91,8 +91,8 @@ aliases:
 1. في كل تكرار، قم بإنشاء كائن Document جديد وأضف كائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) الفردي إلى المستند الفارغ
 1. حفظ PDF الجديد باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)
 
-يعمل الجزء التالي من الشفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الشفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تقسيم ملف PDF إلى ملفات متعددة أو ملفات PDF منفصلة في C#
 

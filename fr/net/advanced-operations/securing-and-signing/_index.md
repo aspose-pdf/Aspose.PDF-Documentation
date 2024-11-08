@@ -3,7 +3,7 @@ title: Sécurisation et signature de PDF en C#
 linktitle: Sécurisation et signature en PDF
 type: docs
 weight: 150
-url: fr/net/securing-and-signing/
+url: /fr/net/securing-and-signing/
 description: Cette section décrit les fonctionnalités de l'utilisation d'une signature et de la sécurisation de votre document PDF en utilisant C#
 lastmod: "2022-02-17"
 sitemap:
@@ -79,10 +79,10 @@ aliases:
 </script>
 Cette section décrit comment signer numériquement de manière sécurisée des documents PDF en utilisant C#. Les termes signature électronique et signature numérique sont utilisés de manière interchangeable, mais en réalité, les deux sont différents. Plus généralement, une signature numérique est accompagnée d'un sceau approuvé par une [autorité de certification](https://fr.wikipedia.org/wiki/Autorité_de_certification) et est utilisée pour protéger le document signé contre toute altération. Au contraire, une signature électronique est souvent utilisée pour démontrer l'intention de signer un document.
 
-- [Signer numériquement un fichier PDF](/pdf/net/digitally-sign-pdf-file/)
-- [Définir des privilèges, chiffrer et déchiffrer un fichier PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extraire des images et des informations de signature](/pdf/net/extract-image-and-signature-information/)
-- [Signer un document PDF à partir d'une carte à puce](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Signer numériquement un fichier PDF](/pdf/fr/net/digitally-sign-pdf-file/)
+- [Définir des privilèges, chiffrer et déchiffrer un fichier PDF](/pdf/fr/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Extraire des images et des informations de signature](/pdf/fr/net/extract-image-and-signature-information/)
+- [Signer un document PDF à partir d'une carte à puce](/pdf/fr/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

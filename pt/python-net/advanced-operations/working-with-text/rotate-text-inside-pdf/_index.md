@@ -3,7 +3,7 @@ title: Girar Texto Dentro de PDF usando Python
 linktitle: Girar Texto Dentro de PDF
 type: docs
 weight: 50
-url: pt/python-net/rotate-text-inside-pdf/
+url: /pt/python-net/rotate-text-inside-pdf/
 description: Aprenda diferentes maneiras de girar texto em PDF. Aspose.PDF permite girar texto em qualquer ângulo, girar fragmento de texto ou um parágrafo inteiro.
 lastmod: "2024-02-17"
 sitemap:

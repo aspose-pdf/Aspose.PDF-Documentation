@@ -2,7 +2,7 @@
 title: Tambahkan Cap Halaman PDF
 type: docs
 weight: 10
-url: id/net/add-pdf-page-stamp/
+url: /id/net/add-pdf-page-stamp/
 description: Bagian ini menjelaskan cara bekerja dengan Aspose.PDF Facades menggunakan Kelas PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

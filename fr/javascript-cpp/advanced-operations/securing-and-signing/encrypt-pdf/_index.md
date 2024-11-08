@@ -3,7 +3,7 @@ title: Chiffrer un PDF en utilisant JavaScript
 linktitle: Chiffrer un fichier PDF
 type: docs
 weight: 50
-url: fr/javascript-cpp/encrypt-pdf/
+url: /fr/javascript-cpp/encrypt-pdf/
 description: Chiffrer un fichier PDF avec Aspose.PDF pour JavaScript via C++.
 lastmod: "2022-12-15"
 sitemap:

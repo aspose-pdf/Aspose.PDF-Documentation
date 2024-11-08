@@ -3,7 +3,7 @@ title: استخراج الصور من PDF
 linktitle: استخراج الصور من PDF
 type: docs
 weight: 20
-url: ar/cpp/extract-images-from-the-pdf-file/
+url: /ar/cpp/extract-images-from-the-pdf-file/
 description: كيفية استخراج جزء من الصورة من PDF باستخدام Aspose.PDF لـ C++.
 lastmod: "2021-06-05"
 sitemap:

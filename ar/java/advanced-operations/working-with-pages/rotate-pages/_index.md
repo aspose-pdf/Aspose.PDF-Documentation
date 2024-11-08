@@ -3,7 +3,7 @@ title: تدوير صفحات PDF برمجيًا
 linktitle: تدوير صفحات PDF
 type: docs
 weight: 60
-url: ar/java/rotate-pages/
+url: /ar/java/rotate-pages/
 description: تغيير اتجاه الصفحة وتناسب محتوى الصفحة مع الاتجاه الجديد للصفحة باستخدام Java.
 lastmod: "2021-06-05"
 sitemap:

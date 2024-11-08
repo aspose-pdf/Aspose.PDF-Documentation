@@ -3,7 +3,7 @@
 title: 이미지 및 텍스트 추가
 type: docs
 weight: 10
-url: ko/net/adding-images-and-text-using-pdffilemend-class/
+url: /ko/net/adding-images-and-text-using-pdffilemend-class/
 description: 이 섹션에서는 PdfFileMend 클래스를 사용하여 이미지 및 텍스트를 추가하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
@@ -14,7 +14,7 @@ draft: false
 
 두 가지 메서드를 제공합니다. 이름은 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 및 [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)입니다. [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드는 JPG, GIF, PNG 및 BMP 형식의 이미지를 추가할 수 있게 해줍니다. [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) 메서드는 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 클래스 형식의 인수를 받아 기존 PDF 파일에 추가합니다. 이미지와 텍스트는 왼쪽 하단과 오른쪽 상단 점의 좌표로 지정된 사각형 영역에 추가될 수 있습니다. 이미지를 추가할 때 이미지 파일 경로 또는 이미지 파일의 스트림을 지정할 수 있습니다. 이미지나 텍스트를 추가할 페이지 번호를 지정하기 위해 두 메서드는 페이지 번호 인수를 제공합니다. 따라서 지정된 위치에 이미지를 추가할 수 있을 뿐만 아니라 지정된 페이지에도 추가할 수 있습니다.
 
-이미지는 PDF 문서 내용의 중요한 부분입니다. 이미지를 조작하는 것은 PDF 파일을 다루는 사람들에게 일반적인 요구 사항입니다. 이 문서에서는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)의 도움으로 기존 PDF 파일에서 이미지를 어떻게 조작할 수 있는지 탐색해보겠습니다. [Aspose.PDF for .NET](/pdf/net/)의 모든 이미지 관련 작업은 이 기사에 통합되어 있습니다.
+이미지는 PDF 문서 내용의 중요한 부분입니다. 이미지를 조작하는 것은 PDF 파일을 다루는 사람들에게 일반적인 요구 사항입니다. 이 문서에서는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)의 도움으로 기존 PDF 파일에서 이미지를 어떻게 조작할 수 있는지 탐색해보겠습니다. [Aspose.PDF for .NET](/pdf/ko/net/)의 모든 이미지 관련 작업은 이 기사에 통합되어 있습니다.
 
 ## 구현 세부 사항
 
@@ -46,7 +46,7 @@ public static void AddImage01()
         }
 ```
 
-![Add Image](/pdf/net/images/add_image1.png)
+![Add Image](/pdf/ko/net/images/add_image1.png)
 
 [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)를 사용하면 하나의 이미지를 다른 이미지 위에 겹쳐 놓을 수 있습니다.
 ```csharp
@@ -70,7 +70,7 @@ public static void AddImage02()
         }
 ```
 
-![Add Image](/pdf/net/images/add_image2.png)
+![Add Image](/pdf/ko/net/images/add_image2.png)
 
 이미지를 PDF 파일에 저장하는 여러 가지 방법이 있습니다. 다음 예제에서 그 중 하나를 보여드리겠습니다:
 
@@ -136,7 +136,7 @@ public static void AddText01()
 
 어떻게 보이는지 확인하십시오:
 
-![텍스트 추가](/pdf/net/images/add_text.png)
+![텍스트 추가](/pdf/ko/net/images/add_text.png)
 
 두 번째 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)를 추가하는 방법. 추가적으로, 우리는 텍스트가 맞아야 하는 직사각형을 지정합니다.
 

@@ -2,7 +2,7 @@
 title: Travailler avec la Rotation de Page
 type: docs
 weight: 10
-url: fr/net/working-with-page-rotation/
+url: /fr/net/working-with-page-rotation/
 description: Cette section explique comment travailler avec la Rotation de Page en utilisant la classe PdfPageEditor.
 lastmod: "2021-07-07"
 draft: false

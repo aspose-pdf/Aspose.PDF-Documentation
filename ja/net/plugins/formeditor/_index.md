@@ -2,7 +2,7 @@
 title: フォームエディター
 type: docs
 weight: 40
-url: ja/net/plugins/formeditor/
+url: /ja/net/plugins/formeditor/
 description: Aspose.PDFプラグインを使用してPDFファイルのフォームフィールドを追加、更新、および削除する方法
 lastmod: "2024-01-24"
 draft: false

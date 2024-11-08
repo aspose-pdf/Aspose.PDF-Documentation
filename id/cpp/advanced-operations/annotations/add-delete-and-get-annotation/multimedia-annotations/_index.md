@@ -8,7 +8,7 @@ type: docs
 
 weight: 40
 
-url: id/cpp/multimedia-annotation/
+url: /id/cpp/multimedia-annotation/
 
 description: Aspose.PDF untuk C++ memungkinkan Anda menambahkan, mendapatkan, dan menghapus anotasi multimedia dari dokumen PDF Anda.
 

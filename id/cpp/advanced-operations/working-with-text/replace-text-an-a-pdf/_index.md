@@ -3,7 +3,7 @@ title: Ganti Teks dalam PDF menggunakan C++
 linktitle: Ganti Teks dalam PDF
 type: docs
 weight: 40
-url: id/cpp/replace-text-in-pdf/
+url: /id/cpp/replace-text-in-pdf/
 description: Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari PDF. Aspose.PDF memungkinkan penggantian teks di wilayah tertentu atau dengan ekspresi reguler.
 lastmod: "2021-12-13"
 sitemap:

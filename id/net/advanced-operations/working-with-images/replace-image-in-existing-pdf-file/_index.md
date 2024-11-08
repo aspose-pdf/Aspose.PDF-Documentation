@@ -3,7 +3,7 @@ title: Mengganti Gambar dalam File PDF yang Ada
 linktitle: Mengganti Gambar
 type: docs
 weight: 70
-url: id/net/replace-image-in-existing-pdf-file/
+url: /id/net/replace-image-in-existing-pdf-file/
 description: Bagian ini menjelaskan tentang mengganti gambar dalam file PDF yang ada menggunakan pustaka C#.
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Kode berikut juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Metode [Replace](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) dari koleksi Images memungkinkan Anda untuk mengganti gambar dalam file PDF yang sudah ada.
 

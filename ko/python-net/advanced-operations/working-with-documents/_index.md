@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 PDF 문서 작업하기
 linktitle: 문서 작업하기
 type: docs
 weight: 10
-url: ko/python-net/working-with-documents/
+url: /ko/python-net/working-with-documents/
 description: 이 문서는 Aspose.PDF for Python via .NET 라이브러리를 사용하여 문서에서 수행할 수 있는 조작에 대해 설명합니다.
 lastmod: "2023-04-12"
 sitemap:
@@ -83,11 +83,11 @@ PDF 문서는 열람 및 인쇄가 가능하지만 항상 쉽게 편집할 수 �
 
 다음을 수행할 수 있습니다:
 
-- [PDF 문서 생성](/pdf/python-net/create-pdf-document/) - 간단한 PDF 문서 생성.
-- [PDF 문서 포맷팅](/pdf/python-net/formatting-pdf-document/) - 문서 생성, 문서 속성 가져오기 및 설정, 폰트 임베딩, 기타 PDF 파일 작업.
+- [PDF 문서 생성](/pdf/ko/python-net/create-pdf-document/) - 간단한 PDF 문서 생성.
+- [PDF 문서 포맷팅](/pdf/ko/python-net/formatting-pdf-document/) - 문서 생성, 문서 속성 가져오기 및 설정, 폰트 임베딩, 기타 PDF 파일 작업.
 
-- [PDF 문서 조작](/pdf/python-net/manipulate-pdf-document/) - PDF A 표준에 대한 PDF 문서 유효성 검사, 목차 작업, PDF 만료 날짜 설정 등.
-- [PDF 최적화](/pdf/python-net/optimize-pdf/) - 성공적인 문서 최적화를 위해 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용하지 않는 객체 제거, 모든 이미지 압축.
-- [PDF 병합](/pdf/python-net/merge-pdf-documents/) - Python을 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합.
-- [PDF 분할](/pdf/python-net/split-document/) - Python 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할.
-- [헤딩 작업](/pdf/python-net/working-with-headings/) - Python으로 PDF 문서의 헤딩에 번호 매기기를 생성할 수 있음.
+- [PDF 문서 조작](/pdf/ko/python-net/manipulate-pdf-document/) - PDF A 표준에 대한 PDF 문서 유효성 검사, 목차 작업, PDF 만료 날짜 설정 등.
+- [PDF 최적화](/pdf/ko/python-net/optimize-pdf/) - 성공적인 문서 최적화를 위해 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용하지 않는 객체 제거, 모든 이미지 압축.
+- [PDF 병합](/pdf/ko/python-net/merge-pdf-documents/) - Python을 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합.
+- [PDF 분할](/pdf/ko/python-net/split-document/) - Python 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할.
+- [헤딩 작업](/pdf/ko/python-net/working-with-headings/) - Python으로 PDF 문서의 헤딩에 번호 매기기를 생성할 수 있음.

@@ -2,7 +2,7 @@
 title: Crear Marcadores
 type: docs
 weight: 10
-url: es/net/create-bookmarks/
+url: /es/net/create-bookmarks/
 description: Esta sección explica cómo crear marcadores en su archivo PDF con Aspose.PDF Facades utilizando la Clase PdfBookmarEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -54,4 +54,4 @@ Puede agregar marcadores hijos en un archivo PDF existente usando la clase [PdfB
 Puedes agregar objetos [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) individuales en el objeto [Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks). Necesitas crear un objeto [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) y configurar su propiedad [ChildItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark/properties/childitem) a un objeto [Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks). Luego, necesitas pasar este objeto [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) con [ChildItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark/properties/childitem) al método [CreateBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2). Finalmente, necesitas guardar el PDF actualizado usando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) de la clase [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor). El siguiente fragmento de código te muestra cómo añadir marcadores secundarios en un archivo PDF existente.
 ## Ver también
 
-Intenta comparar y encontrar una manera de trabajar con marcadores que te convenga. Aprendamos la sección [Trabajando con marcadores en PDF](/pdf/net/bookmarks/).
+Intenta comparar y encontrar una manera de trabajar con marcadores que te convenga. Aprendamos la sección [Trabajando con marcadores en PDF](/pdf/es/net/bookmarks/).

@@ -2,7 +2,7 @@
 title: PDF 페이지 추출
 type: docs
 weight: 40
-url: ko/net/extract-pdf-pages/
+url: /ko/net/extract-pdf-pages/
 description: 이 섹션은 PdfFileEditor 클래스를 사용하여 Aspose.PDF Facades로 PDF 페이지를 추출하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

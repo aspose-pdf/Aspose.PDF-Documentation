@@ -3,7 +3,7 @@ title: Requisitos do Sistema
 linktitle: Requisitos do Sistema
 type: docs
 weight: 30
-url: pt/net/system-requirements/
+url: /pt/net/system-requirements/
 description: Esta seção lista os sistemas operacionais suportados que um desenvolvedor precisa para trabalhar com sucesso com o Aspose.PDF para .NET.
 lastmod: "2023-05-12"
 sitemap:

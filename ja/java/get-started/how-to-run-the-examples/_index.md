@@ -3,7 +3,7 @@ title: 他の例を実行する方法
 linktitle: 他の例を実行する方法
 type: docs
 weight: 50
-url: ja/java/how-to-run-other-examples/    
+url: /ja/java/how-to-run-other-examples/    
 description: このページは、例をダウンロードして実行する前に役立つガイドラインを示しています。
 lastmod: "2021-06-05"
 ---

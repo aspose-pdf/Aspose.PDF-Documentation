@@ -3,7 +3,7 @@ title: Plugins et intégration avec d'autres langages
 linktitle: Plugins
 type: docs
 weight: 130
-url: fr/net/plugins/
+url: /fr/net/plugins/
 description: Apprenez à utiliser divers plugins basés sur Aspose.PDF
 lastmod: "2024-03-13"
 sitemap:
@@ -41,14 +41,14 @@ sitemap:
 
 Cette section contient une liste des plugins pour les applications web les plus populaires : DotNetNuke, Sitefinity, Umbraco, etc.
 
-* [Aspose.PDF .NET pour DNN](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF .NET pour Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF .NET pour VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
-* [Aspose.PDF .NET pour CRM](/pdf/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF .NET pour Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF .NET pour DNN](/pdf/fr/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF .NET pour Umbraco](/pdf/fr/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF .NET pour VisualStudio](/pdf/fr/net/aspose-pdf-net-for-visualstudio/)
+* [Aspose.PDF .NET pour CRM](/pdf/fr/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF .NET pour Sitefinity](/pdf/fr/net/aspose-pdf-net-for-sitefinity/)
 
 ### Utiliser Aspose.PDF avec d'autres langues
 
-* [Utiliser Aspose.PDF pour .NET avec Coldfusion](/pdf/net/aspose-pdf-net-for-coldfusion/)
+* [Utiliser Aspose.PDF pour .NET avec Coldfusion](/pdf/fr/net/aspose-pdf-net-for-coldfusion/)
 
 

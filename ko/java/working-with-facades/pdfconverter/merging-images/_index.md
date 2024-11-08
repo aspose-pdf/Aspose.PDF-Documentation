@@ -2,7 +2,7 @@
 title: 이미지 병합
 type: docs
 weight: 10
-url: ko/java/merge-images/
+url: /ko/java/merge-images/
 description: 이 섹션에서는 이미지를 병합하는 방법을 설명하며, Tiff 형식으로 저장할 수 있습니다.
 lastmod: "2021-07-01"
 draft: false

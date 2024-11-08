@@ -3,7 +3,7 @@ title: FAQ
 linktitle: FAQ
 type: docs
 weight: 120
-url: id/java/faq/
+url: /id/java/faq/
 description: Silakan pelajari Pertanyaan yang Sering Diajukan dari pustaka Aspose.PDF untuk Java.
 lastmod: "2021-06-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: تحويل HTML إلى تنسيق PDF في روبي
 type: docs
 weight: 10
-url: ar/java/convert-html-to-pdf-format-in-ruby/
+url: /ar/java/convert-html-to-pdf-format-in-ruby/
 lastmod: "2021-06-05"
 ---
 

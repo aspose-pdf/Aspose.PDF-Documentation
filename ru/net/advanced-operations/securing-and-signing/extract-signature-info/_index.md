@@ -3,7 +3,7 @@ title: Извлечение информации о изображении и п
 linktitle: Извлечение информации о изображении и подписи
 type: docs
 weight: 30
-url: ru/net/extract-image-and-signature-information/
+url: /ru/net/extract-image-and-signature-information/
 description: Вы можете извлекать изображения из поля подписи и извлекать информацию о подписи, используя класс SignatureField с C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Извлечение изображения из поля подписи
 

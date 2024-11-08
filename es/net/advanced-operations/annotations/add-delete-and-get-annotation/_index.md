@@ -3,7 +3,7 @@ title: Añadir, Eliminar y Obtener Anotación
 linktitle: Añadir, Eliminar y Obtener Anotación
 type: docs
 weight: 20
-url: es/net/add-delete-and-get-annotation/
+url: /es/net/add-delete-and-get-annotation/
 description: Con Aspose.PDF para .NET puedes añadir, eliminar y obtener anotaciones de tu archivo PDF. Revisa todas las listas de anotaciones para resolver tu tarea.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,13 +81,13 @@ Estos son objetos adicionales que añades a tu archivo para expandir el contenid
 
 Hemos combinado los diferentes tipos de anotación disponibles para la biblioteca Aspose.PDF para .NET en grupos:
 
-- [Anotación de Texto PDF](/pdf/net/text-annotation/)
-- [Anotación de Resaltados PDF](/pdf/net/highlights-annotation/)
-- [Anotación de Figuras PDF](/pdf/net/figures-annotation/)
-- [Anotación Multimedia](/pdf/net/multimedia-annotation/)
-- [Anotaciones Adhesivas PDF](/pdf/net/sticky-annotations/)
-- [Anotaciones de Enlace](/pdf/net/link-annotations/)
-- [Anotaciones Extras](/pdf/net/extra-annotations/)
+- [Anotación de Texto PDF](/pdf/es/net/text-annotation/)
+- [Anotación de Resaltados PDF](/pdf/es/net/highlights-annotation/)
+- [Anotación de Figuras PDF](/pdf/es/net/figures-annotation/)
+- [Anotación Multimedia](/pdf/es/net/multimedia-annotation/)
+- [Anotaciones Adhesivas PDF](/pdf/es/net/sticky-annotations/)
+- [Anotaciones de Enlace](/pdf/es/net/link-annotations/)
+- [Anotaciones Extras](/pdf/es/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

@@ -2,7 +2,7 @@
 title: 페이지 여백 크기
 type: docs
 weight: 70
-url: ko/reportingservices/page-margin-size/
+url: /ko/reportingservices/page-margin-size/
 lastmod: "2021-06-05"
 ---
 

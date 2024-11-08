@@ -3,7 +3,7 @@ title: 概述
 linktitle: 概述
 type: docs
 weight: 20
-url: zh/androidjava/overview/
+url: /zh/androidjava/overview/
 description: Aspose.PDF for Android via Java 的关键功能和支持格式概述，Java 库的安装和许可手册。
 lastmod: "2021-06-05"
 sitemap:
@@ -38,9 +38,9 @@ Aspose.PDF for Android via Java 支持多种功能，例如：
 
 了解更多关于：
 
-- [支持的文件格式](/pdf/androidjava/supported-file-formats/)
-- [Aspose.PDF的关键功能](/pdf/androidjava/key-features/)
-- [系统要求](/pdf/androidjava/system-requirements/)
-- [安装](/pdf/androidjava/installation/)
-- [许可](/pdf/androidjava/licensing/)
-- [技术支持](/pdf/androidjava/technical-support/)
+- [支持的文件格式](/pdf/zh/androidjava/supported-file-formats/)
+- [Aspose.PDF的关键功能](/pdf/zh/androidjava/key-features/)
+- [系统要求](/pdf/zh/androidjava/system-requirements/)
+- [安装](/pdf/zh/androidjava/installation/)
+- [许可](/pdf/zh/androidjava/licensing/)
+- [技术支持](/pdf/zh/androidjava/technical-support/)

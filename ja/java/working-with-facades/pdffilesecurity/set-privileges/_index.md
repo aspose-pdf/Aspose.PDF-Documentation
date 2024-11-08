@@ -2,7 +2,7 @@
 title: 既存のPDFファイルに権限を設定する
 type: docs
 weight: 50
-url: ja/java/set-privileges/
+url: /ja/java/set-privileges/
 description: このトピックでは、PdfFileSecurityクラスを使用して既存のPDFファイルに権限を設定する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

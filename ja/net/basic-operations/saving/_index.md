@@ -3,7 +3,7 @@ title: PDFドキュメントをプログラムで保存
 linktitle: PDFを保存
 type: docs
 weight: 30
-url: ja/net/save-pdf-document/
+url: /ja/net/save-pdf-document/
 description: C# Aspose.PDF for .NET PDFライブラリを使ってPDFファイルを保存する方法を学びます。ファイルシステム、ストリーム、WebアプリケーションにPDFドキュメントを保存します。
 aliases:
     - /net/saving/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-次のコードスニペットは、新しいグラフィカルな[Aspose.Drawing](/pdf/net/drawing/)インターフェースでも動作します。
+次のコードスニペットは、新しいグラフィカルな[Aspose.Drawing](/pdf/ja/net/drawing/)インターフェースでも動作します。
 
 ## ファイルシステムにPDFドキュメントを保存
 
@@ -60,7 +60,7 @@ var pdfDocument = new Aspose.Pdf.Document(originalFileName);
 pdfDocument.Pages.Add();
 pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
-詳細な説明については、[Showcase](/pdf/net/showcases/)セクションに進んでください。
+詳細な説明については、[Showcase](/pdf/ja/net/showcases/)セクションに進んでください。
 
 ## PDF/AまたはPDF/X形式で保存
 

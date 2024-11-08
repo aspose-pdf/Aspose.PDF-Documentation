@@ -3,7 +3,7 @@ title: PDF ハイライト注釈
 linktitle: ハイライト注釈
 type: docs
 weight: 20
-url: ja/java/highlights-annotation/
+url: /ja/java/highlights-annotation/
 description: マークアップ注釈は、文書のテキストにハイライト、下線、取り消し線、またはジグザグの下線として表示されます。
 lastmod: "2021-11-24"
 sitemap:

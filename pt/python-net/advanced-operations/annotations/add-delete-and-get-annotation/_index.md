@@ -3,7 +3,7 @@ title: Adicionar, Excluir e Obter Anotação usando Python
 linktitle: Adicionar, Excluir e Obter Anotação
 type: docs
 weight: 20
-url: pt/python-net/add-delete-and-get-annotation/
+url: /pt/python-net/add-delete-and-get-annotation/
 description: Com o Aspose.PDF para Python, você pode adicionar, excluir e obter anotações do seu arquivo PDF. Verifique todas as listas de anotações para resolver sua tarefa.
 lastmod: "2023-02-17"
 sitemap:
@@ -83,11 +83,11 @@ Anotações em documentos PDF são elementos que permitem aos usuários alocar c
 
 Combinamos os diferentes tipos de anotação disponíveis para a biblioteca Aspose.PDF para Python em grupos:
 
-- [Anotação de Texto em PDF](/pdf/python-net/text-annotation/)
-- [Anotação de Destaque em PDF](/pdf/python-net/highlights-annotation/)
-- [Anotação de Figuras em PDF](/pdf/python-net/figures-annotation/)
-- [Anotações Adesivas em PDF](/pdf/python-net/sticky-annotations/)
-- [Anotações Extras](/pdf/python-net/extra-annotations/)
+- [Anotação de Texto em PDF](/pdf/pt/python-net/text-annotation/)
+- [Anotação de Destaque em PDF](/pdf/pt/python-net/highlights-annotation/)
+- [Anotação de Figuras em PDF](/pdf/pt/python-net/figures-annotation/)
+- [Anotações Adesivas em PDF](/pdf/pt/python-net/sticky-annotations/)
+- [Anotações Extras](/pdf/pt/python-net/extra-annotations/)
 
 <script type="application/ld+json">
 {

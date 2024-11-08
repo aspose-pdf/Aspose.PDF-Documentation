@@ -3,7 +3,7 @@ title: PDF 암호화하기 JavaScript
 linktitle: PDF 파일 암호화
 type: docs
 weight: 50
-url: ko/javascript-cpp/encrypt-pdf/
+url: /ko/javascript-cpp/encrypt-pdf/
 description: Aspose.PDF for JavaScript via C++를 사용하여 PDF 파일 암호화하기.
 lastmod: "2022-12-15"
 sitemap:

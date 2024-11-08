@@ -1,7 +1,7 @@
 title: Setas de Linha
 type: docs
 weight: 20
-url: pt/reportingservices/line-arrows/
+url: /pt/reportingservices/line-arrows/
 lastmod: "2021-06-05"
 ---
 

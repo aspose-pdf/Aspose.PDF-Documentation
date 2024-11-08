@@ -3,7 +3,7 @@ title: إضافة كائن دائري إلى ملف PDF
 linktitle: إضافة دائرة
 type: docs
 weight: 20
-url: ar/net/add-circle/
+url: /ar/net/add-circle/
 description: يشرح هذا المقال كيفية إنشاء كائن دائري في ملف PDF الخاص بك باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة كائن دائرة
 

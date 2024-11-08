@@ -3,7 +3,7 @@ title: 파이썬에서 PDF를 다양한 이미지 형식으로 변환하기
 linktitle: PDF를 이미지로 변환
 type: docs
 weight: 70
-url: ko/python-cpp/convert-pdf-to-images-format/
+url: /ko/python-cpp/convert-pdf-to-images-format/
 lastmod: "2023-06-23"
 description: 이 주제는 Aspose.PDF for Python을 사용하여 PDF를 TIFF, BMP, EMF, JPEG, PNG, GIF, SVG 등 다양한 이미지 형식으로 몇 줄의 코드로 변환하는 방법을 보여줍니다.
 sitemap:

@@ -3,7 +3,7 @@ title: Anotación de resaltado en PDF usando C#
 linktitle: Anotación de resaltado
 type: docs
 weight: 20
-url: es/net/highlights-annotation/
+url: /es/net/highlights-annotation/
 description: Las anotaciones de marcado se presentan en el texto como resaltados, subrayados, tachados o subrayados irregulares en el texto de un documento.
 lastmod: "2022-02-17"
 sitemap:
@@ -87,7 +87,7 @@ También es posible obtener o establecer los ajustes de las anotaciones tachadas
 La siguiente característica es la capacidad de obtener o establecer los ajustes de las anotaciones subrayadas usando la propiedad underlineSettings.
 La siguiente característica es la capacidad de obtener o establecer los ajustes de las anotaciones subrayadas usando la propiedad underlineSettings.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Añadir Anotación de Marcado de Texto
 

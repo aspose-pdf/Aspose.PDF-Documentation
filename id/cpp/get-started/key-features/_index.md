@@ -3,7 +3,7 @@ title: Fitur Utama Aspose.PDF
 linktitle: Fitur Utama
 type: docs
 weight: 80
-url: id/cpp/key-features/
+url: /id/cpp/key-features/
 description: Aspose.PDF untuk C++ menunjukkan fitur umumnya. Halaman ini menjelaskan versi PDF yang didukung, dan semua manipulasi yang dapat kami lakukan dengan teks, gambar, anotasi, dokumen, dll.
 lastmod: "2021-11-08"
 sitemap:

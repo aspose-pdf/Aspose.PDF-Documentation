@@ -3,7 +3,7 @@ title: 既存のPDFからテーブルを削除
 linktitle: テーブルを削除
 type: docs
 weight: 50
-url: ja/cpp/remove-tables-from-existing-pdf/
+url: /ja/cpp/remove-tables-from-existing-pdf/
 description: このセクションでは、PDFドキュメントからテーブルを削除する方法について説明します。
 lastmod: "2021-11-11"
 sitemap:

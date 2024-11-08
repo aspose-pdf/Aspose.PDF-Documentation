@@ -3,7 +3,7 @@ title: العمل مع نماذج XFA
 linktitle: نماذج XFA
 type: docs
 weight: 20
-url: ar/net/xfa-forms/
+url: /ar/net/xfa-forms/
 description: تتيح لك واجهة برمجة تطبيقات Aspose.PDF لـ .NET العمل مع حقول XFA و XFA Acroform في مستند PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ sitemap:
 
 توفر فئة النموذج القدرة على التعامل مع AcroForm الثابت ويمكنك الحصول على نموذج حقل معين باستخدام طريقة GetFieldFacade(..) لفئة النموذج. ومع ذلك، لا يمكن الوصول إلى حقول XFA عبر طريقة Form.GetFieldFacade(..). بدلاً من ذلك، استخدم [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) للحصول على/تعيين قيم الحقل ومعالجة قالب حقل XFA (تعيين خصائص الحقل).
 
-يعمل أيضًا الجزء التالي من الكود مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل أيضًا الجزء التالي من الكود مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## ملء حقول XFA
 

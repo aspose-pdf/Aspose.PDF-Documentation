@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-المقطع البرمجي التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+المقطع البرمجي التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 تستخدم Aspose.PDF لـ .NET مخطط XML التالي للعمل مع مستندات XML:
 

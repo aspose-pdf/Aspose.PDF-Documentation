@@ -3,7 +3,7 @@ title: Membuat PDF/3-A yang sesuai dan melampirkan faktur ZUGFeRD di C#
 linktitle: Melampirkan ZUGFeRD ke PDF
 type: docs
 weight: 10
-url: id/net/attach-zugferd/
+url: /id/net/attach-zugferd/
 description: Pelajari cara menghasilkan dokumen PDF dengan ZUGFeRD di Aspose.PDF untuk .NET
 lastmod: "2023-11-22"
 sitemap:
@@ -13,7 +13,7 @@ sitemap:
 
 ## Melampirkan ZUGFeRD ke PDF
 
-Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Kami merekomendasikan langkah-langkah berikut untuk melampirkan ZUGFeRD ke PDF:
 

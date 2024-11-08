@@ -3,7 +3,7 @@ title: Membuat Dokumen PDF menggunakan C++
 linktitle: Buat
 type: docs
 weight: 10
-url: id/cpp/create-document/
+url: /id/cpp/create-document/
 description: Tugas paling populer dan dasar dalam bekerja dengan file PDF adalah membuat dokumen dari awal. Gunakan pustaka Aspose.PDF untuk C++.
 lastmod: "2021-06-05"
 sitemap:

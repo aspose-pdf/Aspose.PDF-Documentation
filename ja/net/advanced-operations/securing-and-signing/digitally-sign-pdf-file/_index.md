@@ -3,7 +3,7 @@ title: PDFにデジタル署名を追加またはデジタル署名する方法
 linktitle: PDFにデジタル署名
 type: docs
 weight: 10
-url: ja/net/digitally-sign-pdf-file/
+url: /ja/net/digitally-sign-pdf-file/
 description: C#またはVB.NETを使用してPDF文書にデジタル署名を行います。C#またはVB.NETを使用してデジタル署名されたPDFを検証または検証します。
 lastmod: "2022-02-17"
 sitemap:
@@ -81,9 +81,9 @@ PDFドキュメントに署名を使用する場合、基本的にその内容�
 
 言い換えれば、ドキュメントは依然としてその完全性を保持していると考えられ、受信者は引き続きドキュメントを信頼できます。詳細については、PDFを認証および署名するをご覧ください。一般に、ドキュメントの認証は.NET実行可能ファイルのコード署名と比較できます。
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも動作します。
 
 ## Aspose.PDF for .NETの署名機能
 

@@ -3,7 +3,7 @@ title: إنشاء روابط في ملف PDF
 linktitle: إنشاء روابط
 type: docs
 weight: 10
-url: ar/java/create-links/
+url: /ar/java/create-links/
 description: يشرح هذا القسم كيفية إنشاء روابط في مستند PDF الخاص بك باستخدام Java.
 lastmod: "2021-06-05"
 sitemap:

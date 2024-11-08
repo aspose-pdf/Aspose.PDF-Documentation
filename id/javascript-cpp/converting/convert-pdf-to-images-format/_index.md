@@ -3,7 +3,7 @@ title: Konversi PDF ke Format Gambar dalam JavaScript
 linktitle: Konversi PDF ke Gambar
 type: docs
 weight: 70
-url: id/javascript-cpp/convert-pdf-to-images-format/
+url: /id/javascript-cpp/convert-pdf-to-images-format/
 lastmod: "2023-11-01"
 description: Topik ini menunjukkan cara menggunakan Aspose.PDF untuk mengonversi PDF ke berbagai format gambar seperti TIFF, BMP, JPEG, PNG, SVG dengan beberapa baris kode.
 sitemap:

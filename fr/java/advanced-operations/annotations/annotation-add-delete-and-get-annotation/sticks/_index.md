@@ -3,7 +3,7 @@ title: PDF Annotations Collantes
 linktitle: Annotation Collante
 type: docs
 weight: 50
-url: fr/java/sticky-annotations/
+url: /fr/java/sticky-annotations/
 description: Ce sujet concerne les annotations collantes, à titre d'exemple nous montrons l'Annotation Filigrane dans le texte. Il est utilisé pour représenter des graphiques sur la page. Consultez l'extrait de code pour résoudre cette tâche.
 lastmod: "2021-11-24"
 sitemap:

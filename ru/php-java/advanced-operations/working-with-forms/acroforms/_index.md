@@ -3,7 +3,7 @@ title: Работа с AcroForms в PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ru/php-java/acroforms/
+url: /ru/php-java/acroforms/
 description: С Aspose.PDF для PHP через Java вы можете создать форму с нуля, заполнить поле формы в PDF-документе, извлечь данные из формы, добавить или удалить поля в существующей форме.
 lastmod: "2024-06-05"
 sitemap:
@@ -34,10 +34,10 @@ AcroForms обладают возможностями, которых нет в 
 
 Для более детального изучения возможностей работы с формами изучите следующие статьи в разделе:
 
--[Создание AcroForm](/pdf/php-java/create-form/) - создание формы с нуля, добавление RadioButtonField, TextBoxField, Caption Field с использованием PHP.
+-[Создание AcroForm](/pdf/ru/php-java/create-form/) - создание формы с нуля, добавление RadioButtonField, TextBoxField, Caption Field с использованием PHP.
 
--[Заполнение AcroForm](/pdf/php-java/fill-form/) - для заполнения поля формы получите поле из коллекции форм объекта документа.
+-[Заполнение AcroForm](/pdf/ru/php-java/fill-form/) - для заполнения поля формы получите поле из коллекции форм объекта документа.
 
--[Извлечение данных AcroForm](/pdf/php-java/extract-form/) - получение значений из всех полей и отдельных полей и т.д.
+-[Извлечение данных AcroForm](/pdf/ru/php-java/extract-form/) - получение значений из всех полей и отдельных полей и т.д.
 
--[Изменение AcroForm](/pdf/php-java/modifing-form/) - установка/получение FieldLimit, удаление полей в существующей форме, установка шрифта поля формы, отличного от 14 основных шрифтов PDF с использованием PHP.
+-[Изменение AcroForm](/pdf/ru/php-java/modifing-form/) - установка/получение FieldLimit, удаление полей в существующей форме, установка шрифта поля формы, отличного от 14 основных шрифтов PDF с использованием PHP.

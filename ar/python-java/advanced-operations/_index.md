@@ -3,7 +3,7 @@ title: عمليات متقدمة
 linktitle: عمليات متقدمة
 type: docs
 weight: 90
-url: ar/python-java/advanced-operations/
+url: /ar/python-java/advanced-operations/
 description: يمكن لـ Aspose.PDF لـ Python عبر Java تنفيذ مهام بسيطة وسهلة والتعامل مع أهداف أكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين.
 lastmod: "2023-04-17"
 sitemap:
@@ -77,11 +77,11 @@ sitemap:
 </script>
 
 
-**العمليات المتقدمة** هو قسم حول كيفية التعامل مع ملفات PDF الموجودة برمجيًا، سواء كانت مستندات تم إنشاؤها باستخدام Aspose.PDF كما هو موضح في [العمليات الأساسية](/pdf/python-java/basic-operations/)، أو ملفات PDF تم إنشاؤها باستخدام Adobe Acrobat أو Google Docs أو Microsoft Office أو Open Office أو أي منتج PDF آخر.
+**العمليات المتقدمة** هو قسم حول كيفية التعامل مع ملفات PDF الموجودة برمجيًا، سواء كانت مستندات تم إنشاؤها باستخدام Aspose.PDF كما هو موضح في [العمليات الأساسية](/pdf/ar/python-java/basic-operations/)، أو ملفات PDF تم إنشاؤها باستخدام Adobe Acrobat أو Google Docs أو Microsoft Office أو Open Office أو أي منتج PDF آخر.
 
 سوف تتعلم طرقًا مختلفة لـ:
 
-- [العمل مع المستندات](/pdf/python-java/working-with-documents/) - ضغط المستندات، تقسيمها، ودمجها والقيام بعمليات أخرى مع المستند بأكمله.
-- [العمل مع الصفحات](/pdf/python-java/working-with-pages/) - إضافة، نقل أو إزالة، قص الصفحات، إضافة العلامات المائية، الطوابع، إلخ.
-- [العمل مع النماذج](/pdf/python-java/working-with-forms/) - التعامل مع مستندات PDF التفاعلية، إضافة حقول النماذج، استخراج البيانات.
-- [العمل مع النص](/pdf/python-java/working-with-text/) - إضافة، تنسيق، البحث واستبدال النص في PDF.
+- [العمل مع المستندات](/pdf/ar/python-java/working-with-documents/) - ضغط المستندات، تقسيمها، ودمجها والقيام بعمليات أخرى مع المستند بأكمله.
+- [العمل مع الصفحات](/pdf/ar/python-java/working-with-pages/) - إضافة، نقل أو إزالة، قص الصفحات، إضافة العلامات المائية، الطوابع، إلخ.
+- [العمل مع النماذج](/pdf/ar/python-java/working-with-forms/) - التعامل مع مستندات PDF التفاعلية، إضافة حقول النماذج، استخراج البيانات.
+- [العمل مع النص](/pdf/ar/python-java/working-with-text/) - إضافة، تنسيق، البحث واستبدال النص في PDF.

@@ -3,7 +3,7 @@ title: Convertir PDF en formats d'images
 linktitle: Convertir PDF en images
 type: docs
 weight: 70
-url: fr/php-java/convert-pdf-to-images-format/
+url: /fr/php-java/convert-pdf-to-images-format/
 lastmod: "2024-05-20"
 description: Ce sujet vous montre comment Aspose.PDF permet de convertir un PDF en divers formats d'images. Convertissez des pages PDF en images PNG, JPEG, BMP avec quelques lignes de code.
 sitemap:

@@ -3,7 +3,7 @@ title: PDFファイルに円オブジェクトを追加
 linktitle: 円を追加
 type: docs
 weight: 20
-url: ja/net/add-circle/
+url: /ja/net/add-circle/
 description: この記事では、Aspose.PDF for .NETを使用してPDFに円オブジェクトを作成する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-以下のコードスニペットは[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリともに動作します。
+以下のコードスニペットは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリともに動作します。
 
 ## 円オブジェクトの追加
 

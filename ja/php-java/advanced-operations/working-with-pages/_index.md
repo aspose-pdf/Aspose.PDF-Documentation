@@ -3,7 +3,7 @@ title: PDFページの操作
 linktitle: ページの操作
 type: docs
 weight: 20
-url: ja/php-java/working-with-pages/
+url: /ja/php-java/working-with-pages/
 description: Aspose.PDF for PHP via Javaを使用すると、PDFファイルにページを追加したり、ヘッダーやフッターを追加したり、透かしを追加したりすることができます。このセクションでは、このトピックの詳細を説明します。
 lastmod: "2024-06-05"
 sitemap:
@@ -24,16 +24,16 @@ PageNumberStampクラスを使用してページ番号を追加します。ド�
 
 次のことができます：
 
-- [Add Pages](/pdf/php-java/add-pages/) - PDFファイルの希望の位置または末尾にページを追加し、ドキュメントからページを削除します。
-- [Move Pages](/pdf/php-java/move-pages/) - ページをあるドキュメントから別のドキュメントに移動します。
-- [Get and Set Page Properties](/pdf/php-java/get-and-set-page-properties/) - PDFファイルのページ番号を取得し、ページプロパティを取得し、ページカラーを判定する方法を学びます。
-- [Delete Pages](/pdf/php-java/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
-- [Change Page size](/pdf/php-java/change-page-size) - Aspose.PDFライブラリを使用してコードスニペットでPDFページサイズを変更できます。
+- [Add Pages](/pdf/ja/php-java/add-pages/) - PDFファイルの希望の位置または末尾にページを追加し、ドキュメントからページを削除します。
+- [Move Pages](/pdf/ja/php-java/move-pages/) - ページをあるドキュメントから別のドキュメントに移動します。
+- [Get and Set Page Properties](/pdf/ja/php-java/get-and-set-page-properties/) - PDFファイルのページ番号を取得し、ページプロパティを取得し、ページカラーを判定する方法を学びます。
+- [Delete Pages](/pdf/ja/php-java/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
+- [Change Page size](/pdf/ja/php-java/change-page-size) - Aspose.PDFライブラリを使用してコードスニペットでPDFページサイズを変更できます。
 
-- [Rotate Pages](/pdf/php-java/rotate-pages/) - 既存のPDFファイル内のページの向きを変更できます。- [ページを分割する](/pdf/php-java/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
-- [ヘッダーおよび/またはフッターを追加する](/pdf/php-java/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
-- [ページをトリミングする](/pdf/php-java/crop-pages/) - PDFドキュメントのページを異なるページプロパティでプログラム的にトリミングできます。
-- [透かしを追加する](/pdf/php-java/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
-- [PDFファイルにページ番号を追加する](/pdf/php-java/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加できます。
-- [背景を追加する](/pdf/php-java/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
-- [スタンピング](/pdf/php-java/stamping/) - ImageStampクラスを使用してPDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
+- [Rotate Pages](/pdf/ja/php-java/rotate-pages/) - 既存のPDFファイル内のページの向きを変更できます。- [ページを分割する](/pdf/ja/php-java/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
+- [ヘッダーおよび/またはフッターを追加する](/pdf/ja/php-java/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
+- [ページをトリミングする](/pdf/ja/php-java/crop-pages/) - PDFドキュメントのページを異なるページプロパティでプログラム的にトリミングできます。
+- [透かしを追加する](/pdf/ja/php-java/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
+- [PDFファイルにページ番号を追加する](/pdf/ja/php-java/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加できます。
+- [背景を追加する](/pdf/ja/php-java/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
+- [スタンピング](/pdf/ja/php-java/stamping/) - ImageStampクラスを使用してPDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。

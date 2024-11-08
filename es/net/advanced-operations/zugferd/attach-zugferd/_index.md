@@ -3,7 +3,7 @@ title: Creando PDF/3-A conforme a PDF y adjuntando factura ZUGFeRD en C#
 linktitle: Adjuntar ZUGFeRD a PDF
 type: docs
 weight: 10
-url: es/net/attach-zugferd/
+url: /es/net/attach-zugferd/
 description: Aprende cómo generar un documento PDF con ZUGFeRD en Aspose.PDF para .NET
 lastmod: "2023-11-22"
 sitemap:
@@ -13,7 +13,7 @@ sitemap:
 
 ## Adjuntar ZUGFeRD a PDF
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Recomendamos seguir los siguientes pasos para adjuntar ZUGFeRD a PDF:
 

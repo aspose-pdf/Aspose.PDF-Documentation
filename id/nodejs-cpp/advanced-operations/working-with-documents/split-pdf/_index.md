@@ -3,7 +3,7 @@ title: Membagi PDF di Node.js
 linktitle: Membagi file PDF
 type: docs
 weight: 30
-url: id/nodejs-cpp/split-pdf/
+url: /id/nodejs-cpp/split-pdf/
 description: Topik ini menunjukkan cara membagi halaman PDF menjadi file PDF individu dengan Aspose.PDF untuk Node.js melalui C++.
 lastmod: "2023-11-16"
 sitemap:

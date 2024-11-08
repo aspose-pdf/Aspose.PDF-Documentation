@@ -3,7 +3,7 @@ title: Memutar Halaman PDF Menggunakan Python via C++
 linktitle: Memutar Halaman PDF
 type: docs
 weight: 20
-url: id/python-cpp/rotate-pages/
+url: /id/python-cpp/rotate-pages/
 description: Topik ini menjelaskan cara memutar orientasi halaman dalam file PDF yang ada secara programatik dengan Python via C++.
 lastmod: "2024-04-17"
 sitemap:

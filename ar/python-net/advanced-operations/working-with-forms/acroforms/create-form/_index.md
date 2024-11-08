@@ -3,7 +3,7 @@ title: إنشاء AcroForm - إنشاء PDF قابل للتعبئة في باي�
 linktitle: إنشاء AcroForm
 type: docs
 weight: 10
-url: ar/python-net/create-form/
+url: /ar/python-net/create-form/
 description: باستخدام Aspose.PDF لبايثون يمكنك إنشاء نموذج من البداية في ملف PDF الخاص بك
 lastmod: "2023-02-17"
 sitemap:

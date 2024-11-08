@@ -3,7 +3,7 @@ title: العمل مع الحافظة في PDF
 linktitle: الحافظة
 type: docs
 weight: 40
-url: ar/cpp/portfolio/
+url: /ar/cpp/portfolio/
 description: إنشاء حافظة PDF باستخدام Aspose.PDF لـ C++. يجب عليك استخدام ملف Microsoft Excel ومستند Word وملف صورة لإنشاء حافظة PDF.
 lastmod: "2022-02-07"
 sitemap:

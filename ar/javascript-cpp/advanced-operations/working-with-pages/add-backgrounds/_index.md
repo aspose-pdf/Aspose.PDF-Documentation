@@ -3,7 +3,7 @@ title: إضافة خلفية إلى PDF باستخدام JavaScript عبر C++
 linktitle: إضافة الخلفيات
 type: docs
 weight: 10
-url: ar/javascript-cpp/add-backgrounds/
+url: /ar/javascript-cpp/add-backgrounds/
 description: أضف صورة خلفية إلى ملف PDF الخاص بك باستخدام JavaScript عبر C++.
 lastmod: "2023-02-17"
 sitemap:

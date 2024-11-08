@@ -3,7 +3,7 @@ title: Render table dari sumber data
 linktitle: Render table dari sumber data
 type: docs
 weight: 30
-url: id/net/render-table-from-the-data-source/
+url: /id/net/render-table-from-the-data-source/
 description: Halaman ini menjelaskan bagaimana mungkin merender tabel dari sumber data menggunakan perpustakaan Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

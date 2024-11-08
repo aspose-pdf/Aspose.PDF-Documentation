@@ -2,7 +2,7 @@
 title: استبدال النص في ملف PDF
 type: docs
 weight: 40
-url: ar/java/replace-text/
+url: /ar/java/replace-text/
 description: يوضح هذا القسم كيفية استبدال النص باستخدام Aspose.PDF Facades - مجموعة أدوات للعمليات الشائعة مع PDF.
 lastmod: "2021-06-24"
 sitemap:

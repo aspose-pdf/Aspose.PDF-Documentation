@@ -3,7 +3,7 @@ title: Dasar-dasar Aspose.PDF DOM API
 linktitle: Dasar-dasar DOM API
 type: docs
 weight: 140
-url: id/net/basics-of-dom-api/
+url: /id/net/basics-of-dom-api/
 description: Aspose.PDF untuk .NET juga menggunakan ide DOM untuk merepresentasikan struktur dokumen PDF dalam bentuk objek.
 lastmod: "2021-06-05"
 sitemap:

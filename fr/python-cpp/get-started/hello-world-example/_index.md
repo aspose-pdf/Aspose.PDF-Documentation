@@ -3,7 +3,7 @@ title: Exemple de Hello World en utilisant le langage Python
 linktitle: Exemple de Hello World
 type: docs
 weight: 20
-url: fr/python-cpp/hello-world-example/
+url: /fr/python-cpp/hello-world-example/
 description: Cet exemple montre comment créer un document PDF simple "Hello, World!" en utilisant Aspose.PDF pour Python
 lastmod: "2023-07-27"
 sitemap:

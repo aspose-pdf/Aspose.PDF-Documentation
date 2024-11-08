@@ -3,7 +3,7 @@ title: Instalar Aspose.PDF para C++
 linktitle: Instalación
 type: docs
 weight: 20
-url: es/cpp/installation/
+url: /es/cpp/installation/
 description: Esta sección muestra una descripción del producto e instrucciones para instalar Aspose.PDF para C++ por su cuenta, así como usando NuGet.
 lastmod: "2021-11-08"
 sitemap:

@@ -3,7 +3,7 @@ title: Fill AcroForm - Fill PDF Form using C#
 linktitle: Fill AcroForm
 type: docs
 weight: 20
-url: ko/net/fill-form/
+url: /ko/net/fill-form/
 keywords: Fill PDF Form C#
 description: Aspose.PDF for .NET 라이브러리를 사용하여 PDF 문서의 양식을 채울 수 있습니다.
 lastmod: "2022-02-17"
@@ -77,7 +77,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## PDF 문서에서 폼 필드 채우기
 

@@ -3,7 +3,7 @@ title: PDF 파일의 비밀번호 변경 in Node.js
 linktitle: 비밀번호 변경
 type: docs
 weight: 50
-url: ko/nodejs-cpp/change-password-pdf/
+url: /ko/nodejs-cpp/change-password-pdf/
 description: Aspose.PDF for Node.js via C++로 PDF 파일의 비밀번호를 변경합니다.
 lastmod: "2023-11-16"
 sitemap:

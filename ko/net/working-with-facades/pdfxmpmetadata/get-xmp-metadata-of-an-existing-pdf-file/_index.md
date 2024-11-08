@@ -2,7 +2,7 @@
 title: PDF 파일의 XMP 메타데이터 가져오기
 type: docs
 weight: 30
-url: ko/net/get-xmp-metadata-of-an-existing-pdf-file/
+url: /ko/net/get-xmp-metadata-of-an-existing-pdf-file/
 description: 이 섹션은 Aspose.PDF Facades를 사용하여 기존 PDF의 XMP 메타데이터를 가져오는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

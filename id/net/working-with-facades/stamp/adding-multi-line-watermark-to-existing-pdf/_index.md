@@ -2,7 +2,7 @@
 title: Menambahkan watermark multi baris
 type: docs
 weight: 10
-url: id/net/adding-multi-line-watermark-to-existing-pdf/
+url: /id/net/adding-multi-line-watermark-to-existing-pdf/
 description: Bagian ini menjelaskan cara menambahkan watermark multi baris ke PDF yang sudah ada menggunakan Kelas FormattedText.
 lastmod: "2021-06-05"
 draft: false

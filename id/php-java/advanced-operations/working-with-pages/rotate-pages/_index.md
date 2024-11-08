@@ -3,7 +3,7 @@ title: Putar Halaman PDF secara programatis
 linktitle: Putar Halaman PDF
 type: docs
 weight: 60
-url: id/php-java/rotate-pages/
+url: /id/php-java/rotate-pages/
 description: Ubah orientasi halaman dan sesuaikan konten halaman dengan orientasi halaman baru menggunakan Java.
 lastmod: "2024-06-05"
 sitemap:

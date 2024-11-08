@@ -3,7 +3,7 @@ title: PDFドキュメントへの添付ファイルの追加
 linktitle: PDFドキュメントへの添付ファイルの追加
 type: docs
 weight: 10
-url: ja/cpp/add-attachment-to-pdf-document/
+url: /ja/cpp/add-attachment-to-pdf-document/
 description: このページでは、Aspose.PDF for C++ライブラリを使用してPDFファイルに添付ファイルを追加する方法について説明します
 lastmod: "2021-06-05"
 sitemap:

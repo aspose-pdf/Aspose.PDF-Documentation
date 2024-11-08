@@ -3,7 +3,7 @@ title: 자바스크립트를 사용하여 PDF 분할
 linktitle: PDF 파일 분할
 type: docs
 weight: 30
-url: ko/javascript-cpp/split-pdf/
+url: /ko/javascript-cpp/split-pdf/
 description: 이 주제는 C++를 통한 Aspose.PDF를 사용하여 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다.
 lastmod: "2022-12-15"
 sitemap:

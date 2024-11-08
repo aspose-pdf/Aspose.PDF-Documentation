@@ -3,7 +3,7 @@ title: 既存のPDFからテーブルを削除する
 linktitle: テーブルを削除
 type: docs
 weight: 50
-url: ja/python-net/remove-tables-from-existing-pdf/
+url: /ja/python-net/remove-tables-from-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

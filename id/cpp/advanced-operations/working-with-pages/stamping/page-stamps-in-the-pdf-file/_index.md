@@ -3,7 +3,7 @@ title: Tambahkan Cap Halaman PDF di PDF
 linktitle: Cap halaman di File PDF
 type: docs
 weight: 30
-url: id/cpp/page-stamps-in-the-pdf-file/
+url: /id/cpp/page-stamps-in-the-pdf-file/
 description: Tambahkan cap halaman ke file PDF menggunakan kelas PdfPageStamp dengan C++.
 lastmod: "2021-12-08"
 sitemap:

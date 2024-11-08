@@ -3,7 +3,7 @@ title: Aspose.PDF Format File yang Didukung
 linktitle: Format File yang Didukung
 type: docs
 weight: 10
-url: id/androidjava/supported-file-formats/
+url: /id/androidjava/supported-file-formats/
 description: Halaman ini menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF untuk Android via Java.
 lastmod: "2021-06-05"
 sitemap:

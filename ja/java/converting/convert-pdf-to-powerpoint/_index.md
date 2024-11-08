@@ -3,7 +3,7 @@ title: PDFをMicrosoft PowerPointに変換する
 linktitle: PDFをPowerPointに変換する
 type: docs
 weight: 30
-url: ja/java/convert-pdf-to-powerpoint/
+url: /ja/java/convert-pdf-to-powerpoint/
 lastmod: "2021-11-19"
 description: Aspose.PDFを使用すると、Javaを利用してPDFをPowerPoint形式に変換できます。PDFをPPTXにスライドを画像として変換することが可能です。
 lastmod: "2021-10-18"

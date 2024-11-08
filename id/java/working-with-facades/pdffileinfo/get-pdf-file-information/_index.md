@@ -2,7 +2,7 @@
 title: Dapatkan informasi file PDF - fasad
 type: docs
 weight: 10
-url: id/java/get-pdf-information/
+url: /id/java/get-pdf-information/
 description: Bagian ini menjelaskan cara mendapatkan informasi file PDF dengan Aspose.PDF Facades menggunakan Kelas PdfFileInfo.
 lastmod: "2021-06-05"
 sitemap:

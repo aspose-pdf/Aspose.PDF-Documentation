@@ -3,7 +3,7 @@ title: Tambahkan Stempel Teks dalam PDF secara Programatis
 linktitle: Stempel Teks dalam File PDF
 type: docs
 weight: 20
-url: id/php-java/text-stamps-in-the-pdf-file/
+url: /id/php-java/text-stamps-in-the-pdf-file/
 description: Tambahkan stempel teks ke file PDF menggunakan kelas TextStamp dengan PHP.
 lastmod: "2024-06-05"
 sitemap:

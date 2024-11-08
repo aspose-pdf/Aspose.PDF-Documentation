@@ -3,7 +3,7 @@ title: Tamponnage avec Aspose.PDF en utilisant Python
 linktitle: Tamponnage
 type: docs
 weight: 120
-url: fr/python-net/stamping/
+url: /fr/python-net/stamping/
 description: Cette section décrit comment ajouter des tampons d'image et des tampons de texte à une page PDF via Python.
 lastmod: "2023-04-17"
 sitemap:
@@ -82,5 +82,5 @@ Le tampon dans le fichier PDF donne des informations supplémentaires pour le fi
 
 Consultez les sections suivantes pour apprendre comment ajouter un tampon avec Python :
 
-- [Ajouter des tampons d'image dans la page PDF](/pdf/python-net/image-stamps-in-pdf-page/) - ajouter un tampon d'image, contrôler la qualité de l'image, tampon d'image en tant que fond de votre fichier PDF.
-- [Ajouter des tampons de texte dans le fichier PDF](/pdf/python-net/text-stamps-in-the-pdf-file/) - ajouter un tampon de texte, définir l'alignement pour l'objet TextStamp, remplir le texte du contour en tant que tampon dans le fichier PDF.
+- [Ajouter des tampons d'image dans la page PDF](/pdf/fr/python-net/image-stamps-in-pdf-page/) - ajouter un tampon d'image, contrôler la qualité de l'image, tampon d'image en tant que fond de votre fichier PDF.
+- [Ajouter des tampons de texte dans le fichier PDF](/pdf/fr/python-net/text-stamps-in-the-pdf-file/) - ajouter un tampon de texte, définir l'alignement pour l'objet TextStamp, remplir le texte du contour en tant que tampon dans le fichier PDF.

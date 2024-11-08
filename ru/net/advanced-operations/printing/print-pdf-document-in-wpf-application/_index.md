@@ -3,7 +3,7 @@ title: Печать PDF в приложении WPF
 linktitle: Печать PDF документа в приложении WPF
 type: docs
 weight: 50
-url: ru/net/print-pdf-document-in-wpf-application/
+url: /ru/net/print-pdf-document-in-wpf-application/
 description: Печать PDF документов из приложения WPF на C#. Этот пример кода показывает, как печатать PDF документы из приложения WPF с использованием C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Печать PDF документов из приложения WPF на C#. Этот пример кода показывает, как печатать PDF документы из приложения WPF с использованием C#."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Прямая печать
 

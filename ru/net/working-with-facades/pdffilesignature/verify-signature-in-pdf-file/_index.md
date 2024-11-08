@@ -2,7 +2,7 @@
 title: Проверка подписи в PDF-файле
 type: docs
 weight: 30
-url: ru/net/verify-signature-in-pdf/
+url: /ru/net/verify-signature-in-pdf/
 description: Этот раздел объясняет, как проверить подпись в PDF-файле с помощью класса PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## Проверка, подписан ли PDF-файл с использованием подписи
 
-Чтобы проверить, подписан ли PDF-файл с использованием [определенной подписи](/pdf/net/working-with-signature-in-a-pdf-file/), используйте метод VerifySigned класса [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). Этот метод требует имени подписи и возвращает true, если PDF подписан с использованием этого имени подписи. Также возможно проверить, что [PDF подписан](/pdf/net/working-with-signature-in-a-pdf-file/), без проверки, какой именно подписью он подписан.
+Чтобы проверить, подписан ли PDF-файл с использованием [определенной подписи](/pdf/ru/net/working-with-signature-in-a-pdf-file/), используйте метод VerifySigned класса [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). Этот метод требует имени подписи и возвращает true, если PDF подписан с использованием этого имени подписи. Также возможно проверить, что [PDF подписан](/pdf/ru/net/working-with-signature-in-a-pdf-file/), без проверки, какой именно подписью он подписан.
 
 ### Проверка, что PDF подписан с заданной подписью
 

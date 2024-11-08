@@ -3,7 +3,7 @@ title: SharePoint에서 PDF 파일 병합
 linktitle: PDF 파일 병합
 type: docs
 weight: 90
-url: ko/sharepoint/merge-pdf-files/
+url: /ko/sharepoint/merge-pdf-files/
 lastmod: "2020-12-16"
 description: PDF SharePoint API를 사용하여 SharePoint 문서 라이브러리에서 여러 PDF 파일을 하나의 PDF로 병합할 수 있습니다.
 ---

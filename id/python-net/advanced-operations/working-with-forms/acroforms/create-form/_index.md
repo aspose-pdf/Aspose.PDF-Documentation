@@ -3,7 +3,7 @@ title: Membuat AcroForm - Membuat PDF yang Dapat Diisi di Python
 linktitle: Membuat AcroForm
 type: docs
 weight: 10
-url: id/python-net/create-form/
+url: /id/python-net/create-form/
 description: Dengan Aspose.PDF untuk Python Anda dapat membuat formulir dari awal di file PDF Anda
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Utilisation de l'info-bulle
 linktitle: Info-bulle PDF
 type: docs
 weight: 20
-url: fr/java/pdf-tooltip/
+url: /fr/java/pdf-tooltip/
 description: Apprenez à ajouter une info-bulle au fragment de texte dans un PDF en utilisant Java et Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

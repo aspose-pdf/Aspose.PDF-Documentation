@@ -3,7 +3,7 @@ title: エンティティフレームワークでテーブルをレンダリン�
 linktitle: エンティティフレームワークでテーブルをレンダリングする
 type: docs
 weight: 40
-url: ja/net/render-table-using-entity-framework-model-as-data-source/
+url: /ja/net/render-table-using-entity-framework-model-as-data-source/
 description: この記事では、Aspose.PDF for .NETを使用して、エンティティフレームワークモデルをデータソースとしてテーブルをレンダリングする方法を示します。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Tambahkan Nomor Halaman ke PDF dengan Python
 linktitle: Tambahkan Nomor Halaman
 type: docs
 weight: 30
-url: id/python-net/add-page-number/
+url: /id/python-net/add-page-number/
 description: Aspose.PDF untuk Python melalui .NET memungkinkan Anda menambahkan Stempel Nomor Halaman ke file PDF Anda menggunakan kelas PageNumber Stamp.
 lastmod: "2023-04-17"
 sitemap:

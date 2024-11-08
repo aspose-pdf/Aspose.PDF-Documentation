@@ -2,7 +2,7 @@
 title: PythonでPDFからメタデータを削除する
 type: docs
 weight: 70
-url: ja/java/remove-metadata-from-pdf-in-python/
+url: /ja/java/remove-metadata-from-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

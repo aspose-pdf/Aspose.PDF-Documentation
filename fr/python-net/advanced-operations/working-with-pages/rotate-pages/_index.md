@@ -3,7 +3,7 @@ title: Faire pivoter les pages PDF à l'aide de Python
 linktitle: Faire pivoter les pages PDF
 type: docs
 weight: 110
-url: fr/python-net/rotate-pages/
+url: /fr/python-net/rotate-pages/
 description: Ce sujet décrit comment faire pivoter l'orientation de la page dans un fichier PDF existant de manière programmatique avec Python.
 lastmod: "2023-04-17"
 sitemap:

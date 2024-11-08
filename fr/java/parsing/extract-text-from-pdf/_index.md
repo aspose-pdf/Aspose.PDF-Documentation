@@ -3,7 +3,7 @@ title: Extraire du texte à partir d'un PDF
 linktitle: Extraire du texte 
 type: docs
 weight: 10
-url: fr/java/extract-text-from-pdf/
+url: /fr/java/extract-text-from-pdf/
 description: Aspose.PDF permet d'extraire différents types d'informations. Cette section contient des articles sur l'extraction de texte à partir de documents PDF en utilisant Aspose.PDF pour Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -17,5 +17,5 @@ Qui a besoin de l'extraction de texte ?
 Pour les entreprises de fouille de données, de gestion de contenu et de traitement de formulaires, l'extraction de texte sera particulièrement utile.
  Extracting text comes in handy: archiving: Le texte et ses composants peuvent être récupérés afin que les documents puissent être indexés et archivés avec des capacités de recherche complètes ; récupération et traitement des données dans les formulaires ; extraire des informations telles que les données de compte, les adresses postales et les numéros de téléphone à des fins administratives ; extraire des photos et des images.
 
-- [Extraire du texte d'un PDF](/pdf/java/extract-text-from-all-pdf/)
-- [Extraire un paragraphe d'un PDF](/pdf/java/extract-paragraph-from-pdf/)
+- [Extraire du texte d'un PDF](/pdf/fr/java/extract-text-from-all-pdf/)
+- [Extraire un paragraphe d'un PDF](/pdf/fr/java/extract-paragraph-from-pdf/)

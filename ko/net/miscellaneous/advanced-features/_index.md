@@ -2,7 +2,7 @@
 title: 고급 기능
 type: docs
 weight: 210
-url: ko/net/advanced-features/
+url: /ko/net/advanced-features/
 ---
 
 ## 브라우저로 PDF 다운로드 보내기

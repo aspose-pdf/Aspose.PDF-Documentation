@@ -4,7 +4,7 @@ title: Comment créer un PDF en utilisant Python
 linktitle: Créer un document PDF  
 type: docs  
 weight: 10  
-url: fr/python-net/create-pdf-document/  
+url: /fr/python-net/create-pdf-document/  
 description: Créez et formatez le document PDF avec Aspose.PDF pour Python via .NET.  
 lastmod: "2023-04-12"  
 sitemap:  

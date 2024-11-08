@@ -3,7 +3,7 @@ title: PDF Sticky Annotations
 linktitle: Sticky Annotation
 type: docs
 weight: 50
-url: id/java/sticky-annotations/
+url: /id/java/sticky-annotations/
 description: Topik ini tentang anotasi sticky, sebagai contoh kami menunjukkan Anotasi Watermark dalam teks. Ini digunakan untuk merepresentasikan grafik pada halaman. Periksa potongan kode untuk menyelesaikan tugas ini.
 lastmod: "2021-11-24"
 sitemap:

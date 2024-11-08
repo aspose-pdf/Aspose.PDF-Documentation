@@ -3,7 +3,7 @@ title: Menambahkan Objek Busur ke File PDF
 linktitle: Tambahkan Busur
 type: docs
 weight: 10
-url: id/java/add-arc/
+url: /id/java/add-arc/
 description: Artikel ini menjelaskan cara membuat objek busur ke PDF Anda menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

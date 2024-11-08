@@ -2,7 +2,7 @@
 title: PDF 문서 연결
 type: docs
 weight: 10
-url: ko/java/concatenate-pdf-documents/
+url: /ko/java/concatenate-pdf-documents/
 description: 이 섹션은 PdfFileEditor 클래스를 사용하여 com.aspose.pdf.facades로 PDF 문서를 연결하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

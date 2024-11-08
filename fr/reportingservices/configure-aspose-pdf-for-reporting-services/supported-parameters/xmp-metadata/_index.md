@@ -2,7 +2,7 @@
 title: Métadonnées XMP
 type: docs
 weight: 80
-url: fr/reportingservices/xmp-metadata/
+url: /fr/reportingservices/xmp-metadata/
 lastmod: "2021-06-05"
 ---
 

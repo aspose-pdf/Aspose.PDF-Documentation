@@ -3,7 +3,7 @@ title: PDFドキュメントを開く
 linktitle: 開く
 type: docs
 weight: 20
-url: ja/php-java/open-pdf-document/
+url: /ja/php-java/open-pdf-document/
 description: Aspose.PDF for PHPを介してJavaでPDFファイルを開く方法を学びます。
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Stamping
 linktitle: Stamping
 type: docs
 weight: 120
-url: pt/java/stamping/
+url: /pt/java/stamping/
 description: Esta seção descreve como adicionar carimbos de imagem e carimbos de texto a uma página PDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -15,7 +15,7 @@ Um carimbo em um documento PDF é análogo a aplicar um carimbo de borracha em u
 
 Confira as seguintes seções para aprender como adicionar um carimbo com Java:
 
-- [Adicionar carimbos de imagem na página PDF](/pdf/java/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
-- [Adicionar carimbos de texto no arquivo PDF](/pdf/java/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto de contorno como carimbo no PDF.
-- [Adicionar carimbos de página em PDFs](/pdf/java/page-stamps-in-the-pdf-file/) - adicionar carimbo complexo baseado em página de outro PDF.
+- [Adicionar carimbos de imagem na página PDF](/pdf/pt/java/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
+- [Adicionar carimbos de texto no arquivo PDF](/pdf/pt/java/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto de contorno como carimbo no PDF.
+- [Adicionar carimbos de página em PDFs](/pdf/pt/java/page-stamps-in-the-pdf-file/) - adicionar carimbo complexo baseado em página de outro PDF.
  file.

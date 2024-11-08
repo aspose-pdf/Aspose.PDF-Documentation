@@ -3,7 +3,7 @@ title: Memotong Halaman PDF secara pemrograman C#
 linktitle: Memotong Halaman
 type: docs
 weight: 80
-url: id/net/crop-pages/
+url: /id/net/crop-pages/
 description: Anda dapat mendapatkan properti halaman, seperti lebar, tinggi, bleed-, crop- dan trimbox menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -88,7 +88,7 @@ Setiap halaman dalam file PDF memiliki sejumlah properti, seperti lebar, tinggi,
 - **Page.Rect**: perpotongan (persegi panjang yang umumnya terlihat) dari MediaBox dan DropBox. Gambar di bawah ini mengilustrasikan properti ini.
 Untuk detail lebih lanjut, silakan kunjungi [halaman ini](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan di bawah ini menunjukkan cara memotong halaman:
 

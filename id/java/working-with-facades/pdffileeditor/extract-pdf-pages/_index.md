@@ -2,7 +2,7 @@
 title: Ekstraksi Halaman PDF
 type: docs
 weight: 20
-url: id/java/extract-pdf-pages/
+url: /id/java/extract-pdf-pages/
 description: Bagian ini menjelaskan cara mengekstraksi halaman PDF dengan com.aspose.pdf.facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

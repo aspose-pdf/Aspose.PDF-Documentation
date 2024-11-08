@@ -3,7 +3,7 @@ title: تقسيم ملفات PDF برمجياً باستخدام Python
 linktitle: تقسيم ملفات PDF
 type: docs
 weight: 60
-url: ar/python-net/split-pdf-document/
+url: /ar/python-net/split-pdf-document/
 keywords: تقسيم pdf إلى ملفات متعددة, تقسيم pdf إلى ملفات منفصلة, تقسيم pdf باستخدام بايثون
 description: يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات Python الخاصة بك.
 lastmod: "2023-04-17"

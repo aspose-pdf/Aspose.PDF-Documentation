@@ -3,7 +3,7 @@ title: Memutar Teks di Dalam PDF
 linktitle: Memutar Teks di Dalam PDF
 type: docs
 weight: 50
-url: id/java/rotate-text-inside-pdf/
+url: /id/java/rotate-text-inside-pdf/
 description: Pelajari berbagai cara untuk memutar teks ke PDF. Aspose.PDF memungkinkan Anda untuk memutar teks ke sudut mana pun, memutar fragmen teks atau seluruh paragraf.
 lastmod: "2021-06-05"
 sitemap:

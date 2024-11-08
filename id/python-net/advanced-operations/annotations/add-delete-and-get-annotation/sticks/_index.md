@@ -3,7 +3,7 @@ title: Anotasi PDF sticky menggunakan Python
 linktitle: Anotasi sticky
 type: docs
 weight: 50
-url: id/python-net/sticky-annotations/
+url: /id/python-net/sticky-annotations/
 description: Topik ini tentang anotasi sticky, sebagai contoh kami menunjukkan Anotasi Watermark dalam teks.
 lastmod: "2023-02-17"
 sitemap:

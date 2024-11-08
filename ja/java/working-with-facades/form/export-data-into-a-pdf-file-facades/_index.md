@@ -2,7 +2,7 @@
 title: PDFファイルからXMLへのデータエクスポート（ファサード）
 type: docs
 weight: 20
-url: ja/java/export-data-into-a-pdf-file-facades/
+url: /ja/java/export-data-into-a-pdf-file-facades/
 description: このセクションでは、Aspose.PDFファサードを使用して、PDFファイルからデータをXMLにエクスポートする方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

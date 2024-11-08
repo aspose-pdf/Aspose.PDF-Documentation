@@ -4,7 +4,7 @@ title: アノテーションの追加、削除、および取得
 linktitle: アノテーションの追加、削除、および取得
 type: docs
 weight: 20
-url: ja/net/add-delete-and-get-annotation/
+url: /ja/net/add-delete-and-get-annotation/
 description: Aspose.PDF for .NET を使用して、PDFファイルからアノテーションを追加、削除、取得することができます。タスクを解決するためのアノテーションの全リストを確認してください。
 lastmod: "2022-02-17"
 sitemap:
@@ -83,13 +83,13 @@ sitemap:
 
 Aspose.PDF for .NETライブラリで利用可能な注釈の異なる種類をグループにまとめました：
 
-- [PDF テキスト注釈](/pdf/net/text-annotation/)
-- [PDF ハイライト注釈](/pdf/net/highlights-annotation/)
-- [PDF 図形注釈](/pdf/net/figures-annotation/)
-- [マルチメディア注釈](/pdf/net/multimedia-annotation/)
-- [PDF スティッキー注釈](/pdf/net/sticky-annotations/)
-- [リンク注釈](/pdf/net/link-annotations/)
-- [追加注釈](/pdf/net/extra-annotations/)
+- [PDF テキスト注釈](/pdf/ja/net/text-annotation/)
+- [PDF ハイライト注釈](/pdf/ja/net/highlights-annotation/)
+- [PDF 図形注釈](/pdf/ja/net/figures-annotation/)
+- [マルチメディア注釈](/pdf/ja/net/multimedia-annotation/)
+- [PDF スティッキー注釈](/pdf/ja/net/sticky-annotations/)
+- [リンク注釈](/pdf/ja/net/link-annotations/)
+- [追加注釈](/pdf/ja/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

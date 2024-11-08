@@ -3,7 +3,7 @@ title: Node.js에서 PDF 페이지 회전
 linktitle: PDF 페이지 회전
 type: docs
 weight: 50
-url: ko/nodejs-cpp/rotate-pages/
+url: /ko/nodejs-cpp/rotate-pages/
 description: 이 주제는 Node.js 환경에서 기존 PDF 파일의 페이지 방향을 프로그래밍 방식으로 회전하는 방법에 대해 설명합니다.
 lastmod: "2023-11-16"
 sitemap:

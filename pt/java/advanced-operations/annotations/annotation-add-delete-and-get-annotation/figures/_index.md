@@ -3,7 +3,7 @@ title: Anotações de Figuras em PDF
 linktitle: Anotações de Figuras
 type: docs
 weight: 30
-url: pt/java/figures-annotation/
+url: /pt/java/figures-annotation/
 description: Este artigo descreve como adicionar, obter e excluir anotações de figuras em seu documento PDF com Aspose.PDF para Java
 lastmod: "2021-11-24"
 sitemap:

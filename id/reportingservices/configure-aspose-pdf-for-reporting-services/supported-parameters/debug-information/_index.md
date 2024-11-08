@@ -2,7 +2,7 @@
 title: Debug Information
 type: docs
 weight: 90
-url: id/reportingservices/debug-information/
+url: /id/reportingservices/debug-information/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Adicionar selos de imagem em PDF usando C#
 linktitle: Selos de imagem em arquivo PDF
 type: docs
 weight: 10
-url: pt/net/image-stamps-in-pdf-page/
+url: /pt/net/image-stamps-in-pdf-page/
 description: Adicionar o Selo de Imagem no seu documento PDF usando a classe ImageStamp com a biblioteca Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Você pode usar a classe ImageStamp para adicionar um carimbo de imagem a um arquivo PDF. A classe ImageStamp fornece as propriedades necessárias para criar um carimbo baseado em imagem, como altura, largura, opacidade e assim por diante.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Para adicionar um carimbo de imagem:
 

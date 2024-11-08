@@ -3,7 +3,7 @@ title: Bekerja dengan ZUGFeRD
 linktitle: Bekerja dengan ZUGFeRD
 type: docs
 weight: 90
-url: id/python-net/working-with-zugferd/
+url: /id/python-net/working-with-zugferd/
 description: Pelajari cara membuat Faktur PDF yang sesuai dengan ZUGFeRD menggunakan Aspose.PDF untuk Java
 lastmod: "2024-01-17"
 sitemap:
@@ -26,8 +26,8 @@ Format ini adalah hibrida yang menggabungkan dokumen PDF yang dapat dibaca manus
 
 Ini juga mematuhi persyaratan hukum untuk pengarsipan jangka panjang dan kepatuhan pajak. ZUGFeRD memiliki berbagai versi dan profil yang sesuai dengan kebutuhan dan skenario yang berbeda. Versi terbaru adalah ZUGFeRD 2.0, kompatibel dengan standar Eropa EN 16931 untuk faktur elektronik. ZUGFeRD menawarkan pengguna banyak manfaat dan penghematan biaya, seperti pemrosesan yang lebih cepat, pengurangan kesalahan, perbaikan arus kas, dan dampak lingkungan yang lebih rendah.
 
-* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di Python](/pdf/python-net/attach-zugferd/)
+* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di Python](/pdf/id/python-net/attach-zugferd/)
 
 Lihat juga:
 
-* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di Java](/pdf/java/attach-zugferd/)* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di .NET](/pdf/net/attach-zugferd/)
+* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di Java](/pdf/id/java/attach-zugferd/)* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di .NET](/pdf/id/net/attach-zugferd/)

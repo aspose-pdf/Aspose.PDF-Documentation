@@ -3,7 +3,7 @@ title: データの抽出 AcroForms
 linktitle: データの抽出 AcroForms
 type: docs
 weight: 30
-url: ja/java/extract-form/
+url: /ja/java/extract-form/
 description: このセクションでは、Aspose.PDF for Java を使用して PDF ドキュメントからフォームを抽出する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

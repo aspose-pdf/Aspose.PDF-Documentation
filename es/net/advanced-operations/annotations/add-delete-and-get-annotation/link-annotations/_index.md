@@ -3,7 +3,7 @@ title: Uso de Anotaciones de Enlace en PDF
 linktitle: Anotaciones de Enlace
 type: docs
 weight: 70
-url: es/net/link-annotations/
+url: /es/net/link-annotations/
 description: Aspose.PDF para .NET te permite Agregar, Obtener y Eliminar Anotación de Enlace de tu documento PDF.
 lastmod: "2024-07-28"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 ## Agregando anotación de enlace en un archivo PDF existente
 
-> El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+> El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Una [Anotación de Enlace](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) representa un hipervínculo, un destino en otro lugar y un documento. Según el Estándar PDF, la anotación de enlace se puede utilizar en tres casos: abrir vista de página, abrir archivo y abrir página web.
 

@@ -3,7 +3,7 @@ title: Temukan apakah PDF berisi gambar atau teks
 linktitle: Periksa keberadaan teks dan gambar
 type: docs
 weight: 40
-url: id/net/find-whether-pdf-file-contains-images-or-text-only/
+url: /id/net/find-whether-pdf-file-contains-images-or-text-only/
 description: Topik ini menjelaskan cara menemukan apakah file PDF hanya berisi gambar atau teks dengan Kelas PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

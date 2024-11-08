@@ -2,7 +2,7 @@
 title: Memaksa Perenderan Tabel pada Halaman Baru
 type: docs
 weight: 20
-url: id/java/force-table-rendering-on-new-page/
+url: /id/java/force-table-rendering-on-new-page/
 lastmod: "2021-06-05"
 ---
 

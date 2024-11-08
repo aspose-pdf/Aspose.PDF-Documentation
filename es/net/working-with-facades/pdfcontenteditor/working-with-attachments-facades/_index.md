@@ -2,7 +2,7 @@
 title: Trabajando con Adjuntos - Fachadas
 type: docs
 weight: 50
-url: es/net/working-with-attachments-facades/
+url: /es/net/working-with-attachments-facades/
 description: Esta sección explica cómo trabajar con Adjuntos - Fachadas usando la Clase PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

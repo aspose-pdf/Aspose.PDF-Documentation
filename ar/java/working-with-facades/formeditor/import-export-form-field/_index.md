@@ -2,12 +2,12 @@
 title: استيراد وتصدير حقل النموذج
 type: docs
 weight: 60
-url: ar/java/import-export-form-field/
+url: /ar/java/import-export-form-field/
 description: يتيح FormEditor استيراد وتصدير البيانات بتنسيق FDF و XFDF و XML.
 lastmod: "2021-12-16"
 ---
 
-يوفر Aspose.PDF لـ Java إمكانيات رائعة لإنشاء/معالجة حقول النماذج داخل مستند PDF. باستخدام هذه الواجهة البرمجية، يمكنك برمجيًا ملء حقول النماذج داخل ملف PDF عن طريق [تصدير البيانات من FDF إلى ملف PDF](/pdf/java/export-data-into-a-pdf-file-facades/)، و[استيراد البيانات من XFDF إلى ملف PDF](/pdf/java/import-data-into-a-pdf-file-facades/).
+يوفر Aspose.PDF لـ Java إمكانيات رائعة لإنشاء/معالجة حقول النماذج داخل مستند PDF. باستخدام هذه الواجهة البرمجية، يمكنك برمجيًا ملء حقول النماذج داخل ملف PDF عن طريق [تصدير البيانات من FDF إلى ملف PDF](/pdf/ar/java/export-data-into-a-pdf-file-facades/)، و[استيراد البيانات من XFDF إلى ملف PDF](/pdf/ar/java/import-data-into-a-pdf-file-facades/).
 
 ```java
 public static void ImportData() {

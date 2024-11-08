@@ -3,7 +3,7 @@ title: 使用无障碍功能和标记的PDF
 linktitle: 无障碍功能. 标记PDF
 type: docs
 weight: 120
-url: zh/androidjava/accessibility-tagged-pdf/
+url: /zh/androidjava/accessibility-tagged-pdf/
 description: 本章描述了创建标记PDF文档的可能性。此功能允许为结构化文档添加标签。了解更多关于获取经济实惠的PDF的方法。
 lastmod: "2021-06-05"
 sitemap:
@@ -23,14 +23,14 @@ The next section provides details on how to add tagged content to create a tagge
 This section covers following topic:  
 本节涵盖以下主题：
 
-- [Create Tagged PDF](/pdf/andriodjava/create-tagged-pdf-documents/)  
-  [创建标记 PDF](/pdf/andriodjava/create-tagged-pdf-documents/)
+- [Create Tagged PDF](/pdf/zh/andriodjava/create-tagged-pdf-documents/)  
+  [创建标记 PDF](/pdf/zh/andriodjava/create-tagged-pdf-documents/)
 
-- [Extract Tagged Content from Tagged PDFs](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)  
-  [从标记 PDF 中提取标记内容](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)
+- [Extract Tagged Content from Tagged PDFs](/pdf/zh/androidjava/extract-tagged-content-from-tagged-pdfs/)  
+  [从标记 PDF 中提取标记内容](/pdf/zh/androidjava/extract-tagged-content-from-tagged-pdfs/)
 
-- [Setting Structure Elements Properties](/pdf/androidjava/set-tagged-pdfs-element-properties/)  
-  [设置结构元素属性](/pdf/androidjava/set-tagged-pdfs-element-properties/)
+- [Setting Structure Elements Properties](/pdf/zh/androidjava/set-tagged-pdfs-element-properties/)  
+  [设置结构元素属性](/pdf/zh/androidjava/set-tagged-pdfs-element-properties/)
 
-- [Working with Table in Tagged PDFs](/pdf/androidjava/working-with-table-in-tagged-pdfs/)  
-  [在标记 PDF 中处理表格](/pdf/androidjava/working-with-table-in-tagged-pdfs/)
+- [Working with Table in Tagged PDFs](/pdf/zh/androidjava/working-with-table-in-tagged-pdfs/)  
+  [在标记 PDF 中处理表格](/pdf/zh/androidjava/working-with-table-in-tagged-pdfs/)

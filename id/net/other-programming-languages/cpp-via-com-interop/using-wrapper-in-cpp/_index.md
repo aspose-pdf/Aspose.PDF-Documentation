@@ -2,14 +2,14 @@
 title: Menggunakan wrapper di CPP
 type: docs
 weight: 30
-url: id/net/using-wrapper-in-cpp/
+url: /id/net/using-wrapper-in-cpp/
 ---
 
 ## Prasyarat
 
 {{% alert color="primary" %}}
 
-Silakan daftarkan Aspose.PDF untuk .NET dengan COM Interop, silakan periksa artikel dengan nama [Gunakan Aspose.pdf untuk .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Silakan daftarkan Aspose.PDF untuk .NET dengan COM Interop, silakan periksa artikel dengan nama [Gunakan Aspose.pdf untuk .NET via COM Interop](/pdf/id/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

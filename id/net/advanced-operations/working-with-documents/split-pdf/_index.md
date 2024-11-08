@@ -3,7 +3,7 @@ title: Memisahkan PDF secara pemrograman
 linktitle: Memisahkan file PDF
 type: docs
 weight: 60
-url: id/net/split-pdf-document/
+url: /id/net/split-pdf-document/
 keywords: memisahkan pdf menjadi beberapa file, memisahkan pdf menjadi pdf terpisah, memisahkan pdf c#
 description: Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individu dalam aplikasi .NET Anda dengan C#.
 lastmod: "2022-02-17"
@@ -91,8 +91,8 @@ Topik ini menunjukkan cara membagi halaman PDF menjadi file PDF individual dalam
 1. Untuk setiap iterasi, buat objek Document baru dan tambahkan objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) individu ke dalam dokumen kosong
 1. Simpan PDF baru menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Kode berikut ini juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Kode berikut ini juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Memecah PDF menjadi beberapa file atau pdf terpisah dalam C#
 

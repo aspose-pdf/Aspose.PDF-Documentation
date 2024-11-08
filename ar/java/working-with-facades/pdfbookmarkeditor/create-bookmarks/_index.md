@@ -2,7 +2,7 @@
 title: إنشاء إشارات مرجعية لجميع الصفحات (واجهات)
 type: docs
 weight: 10
-url: ar/java/create-bookmark/
+url: /ar/java/create-bookmark/
 description: يشرح هذا القسم كيفية إنشاء إشارات مرجعية باستخدام Aspose.PDF Facades باستخدام فئة PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: استبدال النص - الواجهات
 type: docs
 weight: 40
-url: ar/net/replace-text-facades/
+url: /ar/net/replace-text-facades/
 description: يشرح هذا القسم كيفية العمل مع النص - الواجهات باستخدام فئة PdfContentEditor.
 lastmod: "2021-06-24"
 draft: false

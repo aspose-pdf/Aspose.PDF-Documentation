@@ -3,7 +3,7 @@ title: 既存のPDFでテーブルを操作する
 linktitle: テーブルを操作する
 type: docs
 weight: 40
-url: ja/cpp/manipulate-tables-in-existing-pdf/
+url: /ja/cpp/manipulate-tables-in-existing-pdf/
 description: このセクションでは、Aspose.PDF for C++を使用したテーブルの修正方法について説明します
 lastmod: "2021-11-11"
 sitemap:

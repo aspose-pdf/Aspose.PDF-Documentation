@@ -2,7 +2,7 @@
 title: Batasan API
 type: docs
 weight: 10
-url: id/java/api-limitations/
+url: /id/java/api-limitations/
 lastmod: "2022-01-27"
 ---
 

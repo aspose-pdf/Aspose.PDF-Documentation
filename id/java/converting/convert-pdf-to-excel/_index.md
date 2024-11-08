@@ -3,7 +3,7 @@ title: Mengkonversi PDF ke Excel
 linktitle: Mengkonversi PDF ke Excel
 type: docs
 weight: 20
-url: id/java/convert-pdf-to-excel/
+url: /id/java/convert-pdf-to-excel/
 lastmod: "2021-11-19"
 keywords: mengkonversi PDF ke Excel menggunakan Java, mengkonversi PDF ke XLS menggunakan Java, mengkonversi PDF ke XLSX menggunakan Java, mengekspor tabel dari PDF ke Excel di Java
 description: Aspose.PDF untuk Java memungkinkan Anda mengkonversi PDF ke format Excel menggunakan java. Selama ini, halaman individu dari file PDF dikonversi ke lembar kerja Excel.

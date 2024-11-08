@@ -3,7 +3,7 @@ title: Tambahkan Halaman di PDF dengan Python via C++
 linktitle: Tambahkan Halaman
 type: docs
 weight: 10
-url: id/python-cpp/add-pages/
+url: /id/python-cpp/add-pages/
 description: Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan di file PDF menggunakan Python dengan C++.
 lastmod: "2024-04-17"
 sitemap:

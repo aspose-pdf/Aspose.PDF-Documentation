@@ -3,7 +3,7 @@ title: تحويل ملفات PDF إلى مستندات Microsoft Word في C++
 linktitle: تحويل PDF إلى Word
 type: docs
 weight: 10
-url: ar/cpp/convert-pdf-to-word/
+url: /ar/cpp/convert-pdf-to-word/
 lastmod: "2021-11-19"
 description: تتيح لك مكتبة Aspose.PDF لـ C++ تحويل PDF إلى تنسيق Word باستخدام C++ بسهولة وتحكم كامل. تتضمن هذه التنسيقات DOC وDOCX. تعلم المزيد حول كيفية ضبط تحويل مستندات PDF إلى Microsoft Word.
 sitemap:

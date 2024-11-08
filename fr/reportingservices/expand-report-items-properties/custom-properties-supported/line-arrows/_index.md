@@ -2,7 +2,7 @@
 title: Flèches de Ligne
 type: docs
 weight: 20
-url: fr/reportingservices/line-arrows/
+url: /fr/reportingservices/line-arrows/
 lastmod: "2021-06-05"
 ---
 

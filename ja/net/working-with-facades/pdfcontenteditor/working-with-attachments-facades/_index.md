@@ -2,7 +2,7 @@
 title: 添付ファイルの操作 - ファサード
 type: docs
 weight: 50
-url: ja/net/working-with-attachments-facades/
+url: /ja/net/working-with-attachments-facades/
 description: このセクションでは、PdfContentEditorクラスを使用して添付ファイルの操作 - ファサードについて説明します。
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: Jython에서 기존 PDF 파일에 텍스트 추가
 type: docs
 weight: 20
-url: ko/java/add-text-to-an-existing-pdf-file-in-jython/
+url: /ko/java/add-text-to-an-existing-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

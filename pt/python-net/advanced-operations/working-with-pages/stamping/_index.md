@@ -3,7 +3,7 @@ title: Stamping com Aspose.PDF usando Python
 linktitle: Stamping
 type: docs
 weight: 120
-url: pt/python-net/stamping/
+url: /pt/python-net/stamping/
 description: Esta seção descreve como adicionar carimbos de imagem e carimbos de texto a uma página PDF via Python.
 lastmod: "2023-04-17"
 sitemap:
@@ -82,5 +82,5 @@ O carimbo no arquivo PDF fornece informações adicionais para o arquivo PDF, co
 
 Verifique as seções a seguir para aprender como adicionar um carimbo com Python:
 
-- [Adicionar carimbos de imagem na página PDF](/pdf/python-net/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como plano de fundo do seu arquivo PDF.
-- [Adicionar carimbos de texto no arquivo PDF](/pdf/python-net/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto como carimbo no arquivo PDF.
+- [Adicionar carimbos de imagem na página PDF](/pdf/pt/python-net/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como plano de fundo do seu arquivo PDF.
+- [Adicionar carimbos de texto no arquivo PDF](/pdf/pt/python-net/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto como carimbo no arquivo PDF.

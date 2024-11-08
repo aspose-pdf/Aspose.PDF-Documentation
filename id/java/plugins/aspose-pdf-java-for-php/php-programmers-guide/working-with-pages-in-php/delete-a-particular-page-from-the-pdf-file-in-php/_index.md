@@ -2,7 +2,7 @@
 title: Hapus Halaman Tertentu dari File PDF di PHP
 type: docs
 weight: 20
-url: id/java/delete-a-particular-page-from-the-pdf-file-in-php/
+url: /id/java/delete-a-particular-page-from-the-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

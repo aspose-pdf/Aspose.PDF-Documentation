@@ -3,7 +3,7 @@ title: PDFにページスタンプを追加する
 linktitle: PDFファイルのページスタンプ
 type: docs
 weight: 30
-url: ja/cpp/page-stamps-in-the-pdf-file/
+url: /ja/cpp/page-stamps-in-the-pdf-file/
 description: PdfPageStampクラスを使用して、C++でPDFファイルにページスタンプを追加します。
 lastmod: "2021-12-08"
 sitemap:

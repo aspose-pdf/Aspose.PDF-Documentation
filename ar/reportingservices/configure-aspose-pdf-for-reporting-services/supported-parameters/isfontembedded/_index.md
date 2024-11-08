@@ -2,7 +2,7 @@
 title: IsFontEmbedded
 type: docs
 weight: 50
-url: ar/reportingservices/isfontembedded/
+url: /ar/reportingservices/isfontembedded/
 lastmod: "2021-06-05"
 ---
 

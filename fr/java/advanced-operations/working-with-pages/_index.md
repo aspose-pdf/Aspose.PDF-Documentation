@@ -3,7 +3,7 @@ title: Travailler avec des Pages PDF
 linktitle: Travailler avec des Pages
 type: docs
 weight: 20
-url: fr/java/working-with-pages/
+url: /fr/java/working-with-pages/
 description: Avec Aspose.PDF pour Java, vous pouvez ajouter des pages, ajouter des en-têtes et des pieds de page, ajouter des filigranes dans votre fichier PDF. Cette section vous explique tous les détails sur ce sujet.
 lastmod: "2021-06-05"
 sitemap:
@@ -23,16 +23,16 @@ Ajoutez un numéro de page en utilisant la classe PageNumberStamp. Pour ajouter 
 
 Vous pouvez faire ce qui suit :
 
-- [Ajouter des Pages](/pdf/java/add-pages/) - ajoutez des pages à l'emplacement souhaité ou à la fin d'un fichier PDF et supprimez une page de votre document.
-- [Déplacer des Pages](/pdf/java/move-pages/) - déplacez des pages d'un document à un autre.
-- [Obtenir et Définir les Propriétés des Pages](/pdf/java/get-and-set-page-properties/) - vous pouvez apprendre à obtenir des numéros dans un fichier PDF, obtenir les propriétés des pages et déterminer la couleur de la page.
-- [Supprimer des Pages](/pdf/java/delete-pages/) - supprimez une page de votre fichier PDF en utilisant la collection PageCollection.
-- [Changer la Taille de la Page](/pdf/java/change-page-size) - vous pouvez changer la taille de la page PDF avec un extrait de code en utilisant la bibliothèque Aspose.PDF.
+- [Ajouter des Pages](/pdf/fr/java/add-pages/) - ajoutez des pages à l'emplacement souhaité ou à la fin d'un fichier PDF et supprimez une page de votre document.
+- [Déplacer des Pages](/pdf/fr/java/move-pages/) - déplacez des pages d'un document à un autre.
+- [Obtenir et Définir les Propriétés des Pages](/pdf/fr/java/get-and-set-page-properties/) - vous pouvez apprendre à obtenir des numéros dans un fichier PDF, obtenir les propriétés des pages et déterminer la couleur de la page.
+- [Supprimer des Pages](/pdf/fr/java/delete-pages/) - supprimez une page de votre fichier PDF en utilisant la collection PageCollection.
+- [Changer la Taille de la Page](/pdf/fr/java/change-page-size) - vous pouvez changer la taille de la page PDF avec un extrait de code en utilisant la bibliothèque Aspose.PDF.
 
-- [Pivoter les Pages](/pdf/java/rotate-pages/) - vous pouvez changer l'orientation des pages dans un fichier PDF existant.- [Split Pages](/pdf/java/split-document/) - vous pouvez diviser des fichiers PDF en un ou plusieurs PDF.
-- [Add Headers and/or Footers](/pdf/java/add-headers-and-footers-of-pdf-file/) - ajoutez du texte ou des images dans les en-têtes et pieds de page de votre fichier PDF.
-- [Crop Pages](/pdf/java/crop-pages/) - vous pouvez rogner des pages dans un document PDF par programmation avec différentes propriétés de page.
-- [Add Watermarks](/pdf/java/add-watermarks/) - ajoutez des filigranes dans votre fichier PDF avec la classe Artifact.
-- [Add Page Numbering in PDF File](/pdf/java/add-page-number/) - la classe PageNumberStamp vous aidera à ajouter un numéro de page dans votre fichier PDF.
-- [Add Backgrounds](/pdf/java/add-backgrounds/) - les images de fond peuvent être utilisées pour ajouter un filigrane.
-- [Stamping](/pdf/java/stamping/) - vous pouvez utiliser la classe ImageStamp pour ajouter un tampon d'image à un fichier PDF et la classe TextStamp pour ajouter un texte.
+- [Pivoter les Pages](/pdf/fr/java/rotate-pages/) - vous pouvez changer l'orientation des pages dans un fichier PDF existant.- [Split Pages](/pdf/fr/java/split-document/) - vous pouvez diviser des fichiers PDF en un ou plusieurs PDF.
+- [Add Headers and/or Footers](/pdf/fr/java/add-headers-and-footers-of-pdf-file/) - ajoutez du texte ou des images dans les en-têtes et pieds de page de votre fichier PDF.
+- [Crop Pages](/pdf/fr/java/crop-pages/) - vous pouvez rogner des pages dans un document PDF par programmation avec différentes propriétés de page.
+- [Add Watermarks](/pdf/fr/java/add-watermarks/) - ajoutez des filigranes dans votre fichier PDF avec la classe Artifact.
+- [Add Page Numbering in PDF File](/pdf/fr/java/add-page-number/) - la classe PageNumberStamp vous aidera à ajouter un numéro de page dans votre fichier PDF.
+- [Add Backgrounds](/pdf/fr/java/add-backgrounds/) - les images de fond peuvent être utilisées pour ajouter un filigrane.
+- [Stamping](/pdf/fr/java/stamping/) - vous pouvez utiliser la classe ImageStamp pour ajouter un tampon d'image à un fichier PDF et la classe TextStamp pour ajouter un texte.

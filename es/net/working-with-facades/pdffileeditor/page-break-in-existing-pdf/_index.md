@@ -2,7 +2,7 @@
 title: Salto de Página en PDF existente
 type: docs
 weight: 30
-url: es/net/page-break-in-existing-pdf/
+url: /es/net/page-break-in-existing-pdf/
 description: Esta sección explica cómo insertar saltos de página en un PDF existente utilizando la clase PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

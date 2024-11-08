@@ -3,7 +3,7 @@ title: Adicionar marca d'água ao PDF
 linktitle: Adicionar marca d'água
 type: docs
 weight: 90
-url: pt/php-java/add-watermarks/
+url: /pt/php-java/add-watermarks/
 description: Este artigo explica os recursos de trabalho com artefatos e obtenção de marcas d'água em PDFs usando PHP.
 lastmod: "2024-06-05"
 sitemap:

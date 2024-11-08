@@ -3,7 +3,7 @@ title: さまざまな画像形式をPDFに変換
 linktitle: 画像をPDFに変換
 type: docs
 weight: 60
-url: ja/java/convert-images-format-to-pdf/
+url: /ja/java/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: このトピックでは、Aspose.PDF for Javaライブラリがさまざまな画像形式をPDFに変換する方法を示します。
 sitemap:

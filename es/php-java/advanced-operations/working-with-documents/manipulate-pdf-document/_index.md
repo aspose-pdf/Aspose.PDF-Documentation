@@ -3,7 +3,7 @@ title: Manipular Documento PDF
 linktitle: Manipular Documento PDF
 type: docs
 weight: 30
-url: es/php-java/manipulate-pdf-document/
+url: /es/php-java/manipulate-pdf-document/
 description: Este artículo contiene información sobre cómo validar un documento PDF para el estándar PDF A, cómo trabajar con TOC, cómo establecer la fecha de expiración del PDF y cómo determinar el progreso de la generación del archivo PDF.
 lastmod: "2024-06-05"
 ---

@@ -3,7 +3,7 @@ title: Extraire du texte depuis un PDF en C#
 linktitle: Extraire du texte depuis un PDF
 type: docs
 weight: 10
-url: fr/net/extract-text-from-all-pdf/
+url: /fr/net/extract-text-from-all-pdf/
 description: Cet article décrit diverses manières d'extraire du texte des documents PDF en utilisant Aspose.PDF en C#. 
 lastmod: "2021-06-05"
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 Extraire du texte d'un document PDF est une exigence courante. Dans cet exemple, vous verrez comment Aspose.PDF pour .NET permet d'extraire du texte de toutes les pages d'un document PDF. Vous devez créer un objet de la classe **TextAbsorber**. Ensuite, ouvrez le PDF en utilisant la classe **Document** et appelez la méthode **Accept** de la collection **Pages**. La classe **TextAbsorber** absorbe le texte du document et le retourne dans la propriété **Text**. Le fragment de code suivant vous montre comment extraire du texte de toutes les pages d'un document PDF.
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -40,7 +40,7 @@ tw.Close();
 ```
 Appelez la méthode **Accept** sur une page particulière de l'objet Document. L'Index est le numéro de page particulier à partir duquel le texte doit être extrait.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -83,7 +83,7 @@ Les étapes suivantes et l'extrait de code vous montrent comment extraire du tex
 1. Utiliser la méthode Process de la classe TextDevice pour convertir le contenu en texte
 1. Sauvegarder le texte dans le fichier de sortie
 
-L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,8 +132,8 @@ La classe **TextAbsorber** offre la capacité d'extraire du texte d'une page par
 
 La méthode **Accept** d'une page est appelée pour extraire le texte. Créez des objets des classes **Document** et **TextAbsorber**. Appelez la méthode **Accept** sur la page individuelle, comme l'index **Page**, de l'objet **Document**. L'**Index** est le numéro de page particulier d'où le texte doit être extrait. Vous pouvez obtenir le texte à partir de la propriété **Text** de la classe **TextAbsorber**. Le code suivant montre comment extraire du texte d'une page individuelle.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez visiter https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -166,7 +166,7 @@ tw.Close();
 Un fichier PDF peut comprendre des éléments Texte, Image, Annotations, Pièces jointes, Graphiques, etc. et Aspose.PDF pour .NET offre la fonctionnalité d'ajouter ainsi que de manipuler tous ces éléments.
 Un fichier PDF peut contenir du Texte, des Images, des Annotations, des Pièces jointes, des Graphiques, etc., et Aspose.PDF pour .NET offre la possibilité d'ajouter ainsi que de manipuler tous ces éléments.
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -206,7 +206,7 @@ Spécifier des valeurs de ScaleFactor entre 0,1 et -0,1 est considéré comme un
 
 Nous proposons l'utilisation de l'auto-échelonnement (ScaleFactor = 0) lors du traitement d'un grand nombre de fichiers PDF pour l'extraction de contenu textuel. Ou réglez manuellement la réduction redondante de la largeur de la grille (environ ScaleFactor = 0,5). Cependant, vous ne devez pas déterminer si un dimensionnement est nécessaire pour des documents concrets ou non. Si vous définissez une réduction redondante de la largeur de la grille pour le document (qui n'en a pas besoin), le contenu textuel extrait restera pleinement adéquat. Veuillez regarder l'extrait de code suivant.
 
-L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez visiter https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -235,8 +235,8 @@ Veuillez noter qu'il n'y a pas de correspondance directe entre le nouveau ScaleF
 
 Dans divers scénarios d'extraction de texte à partir d'un document PDF, vous pouvez avoir besoin d'extraire uniquement le texte surligné du document PDF. Afin de mettre en œuvre cette fonctionnalité, nous avons ajouté les méthodes TextMarkupAnnotation.GetMarkedText() et TextMarkupAnnotation.GetMarkedTextFragments() dans l'API. Vous pouvez extraire le texte surligné d'un document PDF en filtrant TextMarkupAnnotation et en utilisant les méthodes mentionnées. Le fragment de code suivant montre comment vous pouvez extraire le texte surligné d'un document PDF.
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -266,7 +266,7 @@ foreach (Annotation annotation in doc.Pages[1].Annotations)
 Parfois, nous avons besoin d'accéder aux éléments TextFragement ou TextSegment lors du traitement de documents PDF générés à partir de XML.
 Parfois, nous avons besoin d'accéder aux éléments TextFragement ou TextSegment lors du traitement de documents PDF générés à partir de XML.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET

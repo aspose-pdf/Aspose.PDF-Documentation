@@ -3,7 +3,7 @@ title: Menggunakan Aspose.PDF untuk Python melalui Java
 linktitle: Ikhtisar
 type: docs
 weight: 20
-url: id/python-java/overview/
+url: /id/python-java/overview/
 description: Fungsi utama, fitur konversi, pemisahan, penggabungan, dan melakukan operasi lain terkait pembuatan dan pengeditan PDF menggunakan Python melalui Java
 lastmod: "2022-05-16"
 sitemap:
@@ -39,7 +39,7 @@ Selain itu, menggunakan Aspose.PDF untuk Python melalui Java, Anda dapat dengan 
 
 Baca lebih lanjut tentang:
 
-- [Bekerja dengan Konversi Dokumen dalam Python melalui Java](/pdf/python-java/conversion/)
-- [Bekerja dengan Objek Dokumen dalam Python melalui Java](/pdf/python-java/working-with-documents/)
-- [Bekerja dengan Halaman dalam Python melalui Java](/pdf/python-java/working-with-pages/)
-- [Bekerja dengan Teks dalam Python melalui Java](/pdf/python-java/working-with-text/)
+- [Bekerja dengan Konversi Dokumen dalam Python melalui Java](/pdf/id/python-java/conversion/)
+- [Bekerja dengan Objek Dokumen dalam Python melalui Java](/pdf/id/python-java/working-with-documents/)
+- [Bekerja dengan Halaman dalam Python melalui Java](/pdf/id/python-java/working-with-pages/)
+- [Bekerja dengan Teks dalam Python melalui Java](/pdf/id/python-java/working-with-text/)

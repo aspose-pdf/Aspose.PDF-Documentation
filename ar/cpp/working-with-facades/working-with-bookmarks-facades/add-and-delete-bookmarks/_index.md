@@ -2,7 +2,7 @@
 title: إضافة وحذف العلامات المرجعية
 type: docs
 weight: 10
-url: ar/cpp/add-and-delete-bookmarks/
+url: /ar/cpp/add-and-delete-bookmarks/
 ---
 
 ## <ins>**إضافة علامة مرجعية**

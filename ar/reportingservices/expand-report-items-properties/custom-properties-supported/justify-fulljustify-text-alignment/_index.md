@@ -2,7 +2,7 @@
 title: ضبط محاذاة النص كاملة
 type: docs
 weight: 40
-url: ar/reportingservices/justify-fulljustify-text-alignment/
+url: /ar/reportingservices/justify-fulljustify-text-alignment/
 lastmod: "2021-06-05"
 ---
 

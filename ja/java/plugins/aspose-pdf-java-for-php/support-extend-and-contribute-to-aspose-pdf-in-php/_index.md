@@ -2,7 +2,7 @@
 title: Aspose.PdfをPHPでサポート、拡張、および貢献する
 type: docs
 weight: 30
-url: ja/java/support-extend-and-contribute-to-aspose-pdf-in-php/
+url: /ja/java/support-extend-and-contribute-to-aspose-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

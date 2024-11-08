@@ -3,7 +3,7 @@ title: Pythonを使用したPDFでの画像操作
 linktitle: 画像操作
 type: docs
 weight: 40
-url: ja/python-net/working-with-images/
+url: /ja/python-net/working-with-images/
 description: このセクションでは、Pythonライブラリを使用してPDFファイル内の画像を操作する機能について説明します。
 lastmod: "2023-04-17"
 sitemap:
@@ -83,6 +83,6 @@ PDFドキュメントで画像を編集および操作するための多くの�
 
 次のことが可能です:
 
-- [既存のPDFファイルに画像を追加する](/pdf/python-net/add-image-to-existing-pdf-file/) - PDFドキュメントに単一画像の画像と参照を追加し、その後品質をコントロールします。
-- [PDFファイルから画像を削除する](/pdf/python-net/delete-images-from-pdf-file/) - PDFファイルから画像を削除するコードスニペットを確認します。
-- [PDFファイルから画像を抽出する](/pdf/python-net/extract-images-from-pdf-file/) - 次の記事では、Pythonライブラリを使用してPDFファイルから画像を抽出する方法を示します。
+- [既存のPDFファイルに画像を追加する](/pdf/ja/python-net/add-image-to-existing-pdf-file/) - PDFドキュメントに単一画像の画像と参照を追加し、その後品質をコントロールします。
+- [PDFファイルから画像を削除する](/pdf/ja/python-net/delete-images-from-pdf-file/) - PDFファイルから画像を削除するコードスニペットを確認します。
+- [PDFファイルから画像を抽出する](/pdf/ja/python-net/extract-images-from-pdf-file/) - 次の記事では、Pythonライブラリを使用してPDFファイルから画像を抽出する方法を示します。

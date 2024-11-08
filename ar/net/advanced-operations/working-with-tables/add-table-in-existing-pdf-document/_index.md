@@ -3,7 +3,7 @@ title: إنشاء أو إضافة جدول في ملف PDF باستخدام C#
 linktitle: إنشاء أو إضافة جدول
 type: docs
 weight: 10
-url: ar/net/add-table-in-existing-pdf-document/
+url: /ar/net/add-table-in-existing-pdf-document/
 description: Aspose.PDF لـ .NET هي مكتبة تُستخدم لإنشاء وقراءة وتعديل جداول PDF. تحقق من الوظائف المتقدمة الأخرى في هذا الموضوع.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 
 الجداول مهمة عند العمل مع مستندات PDF. إنها توفر ميزات رائعة لعرض المعلومات بطريقة منظمة. تحتوي الفضاء الاسمي Aspose.PDF على فئات تسمى [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table)، [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell)، و [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) التي توفر وظائف لإنشاء جداول عند إنشاء مستندات PDF من البداية.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يمكن إنشاء الجدول بإنشاء كائن من فئة Table.
 

@@ -3,7 +3,7 @@ title: استخدام تلميح PDF باستخدام C#
 linktitle: تلميح PDF
 type: docs
 weight: 20
-url: ar/net/pdf-tooltip/
+url: /ar/net/pdf-tooltip/
 description: تعلم كيفية إضافة تلميح إلى جزء النص في PDF باستخدام C# و Aspose.PDF
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "تعلم كيفية إضافة تلميح إلى جزء النص في PDF باستخدام C# و Aspose.PDF"
 }
 </script>
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة تلميح للنص المبحوث عنه عن طريق إضافة زر غير مرئي
 

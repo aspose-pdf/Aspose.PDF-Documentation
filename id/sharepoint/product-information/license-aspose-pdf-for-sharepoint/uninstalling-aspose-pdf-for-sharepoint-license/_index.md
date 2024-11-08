@@ -2,7 +2,7 @@
 title: Menghapus Lisensi Aspose.Pdf untuk SharePoint
 type: docs
 weight: 30
-url: id/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
+url: /id/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
 lastmod: "2020-12-16"
 description: Silakan ikuti langkah-langkah yang disebutkan dalam artikel ini untuk menghapus Lisensi API SharePoint PDF.
 ---

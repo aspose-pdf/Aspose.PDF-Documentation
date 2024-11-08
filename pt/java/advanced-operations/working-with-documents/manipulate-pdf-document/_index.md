@@ -3,7 +3,7 @@ title: Manipular Documento PDF
 linktitle: Manipular Documento PDF
 type: docs
 weight: 30
-url: pt/java/manipulate-pdf-document/
+url: /pt/java/manipulate-pdf-document/
 description: Este artigo contém informações sobre como validar Documento PDF para o Padrão PDF A, como trabalhar com TOC, como definir a data de expiração do PDF e como determinar o Progresso da geração do arquivo PDF.
 lastmod: "2021-06-05"
 ---

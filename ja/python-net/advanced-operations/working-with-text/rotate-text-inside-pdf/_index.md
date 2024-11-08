@@ -3,7 +3,7 @@ title: PDF内のテキストをPythonで回転させる
 linktitle: PDF内のテキストを回転させる
 type: docs
 weight: 50
-url: ja/python-net/rotate-text-inside-pdf/
+url: /ja/python-net/rotate-text-inside-pdf/
 description: PDFにテキストを回転させるさまざまな方法を学びます。Aspose.PDFを使用すると、任意の角度にテキストを回転させたり、テキストの断片や全文を回転させたりできます。
 lastmod: "2024-02-17"
 sitemap:

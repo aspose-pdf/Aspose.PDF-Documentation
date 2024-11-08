@@ -4,7 +4,7 @@ linktitle:  Aspose.PDF for Reporting Services
 second_title: Aspose.PDF for Reporting Services
 type: docs
 weight: 120
-url: ko/reportingservices/
+url: /ko/reportingservices/
 is_root: true
 lastmod: "2024-05-05"
 ---
@@ -21,34 +21,34 @@ Microsoft SQL Server Reporting Services는 많은 조직이 가지고 있는 요
 
 ## 주제
 
-- [제품 개요](/pdf/reportingservices/product-overview/)
-- [지원 파일 형식](/pdf/reportingservices/supported-file-formats/)
+- [제품 개요](/pdf/ko/reportingservices/product-overview/)
+- [지원 파일 형식](/pdf/ko/reportingservices/supported-file-formats/)
 
-- [기능](/pdf/reportingservices/features/)
-- [샘플 보고서 갤러리](/pdf/reportingservices/sample-reports-gallery/)
-- [Aspose.Pdf 설치 보고서 서비스용](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [로컬 모드에서 Microsoft Report Viewer와 통합](/pdf/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
-- [Aspose.Pdf 라이센스 보고서 서비스용](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Aspose.Pdf 구성 보고서 서비스용](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
-- [보고서 항목 속성 확장](/pdf/reportingservices/expand-report-items-properties/)
-- [MS ReportViewer 2010 및 2012와 통합](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
-- [Aspose.Pdf 평가 보고서 서비스용](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
+- [기능](/pdf/ko/reportingservices/features/)
+- [샘플 보고서 갤러리](/pdf/ko/reportingservices/sample-reports-gallery/)
+- [Aspose.Pdf 설치 보고서 서비스용](/pdf/ko/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [로컬 모드에서 Microsoft Report Viewer와 통합](/pdf/ko/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
+- [Aspose.Pdf 라이센스 보고서 서비스용](/pdf/ko/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [Aspose.Pdf 구성 보고서 서비스용](/pdf/ko/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [보고서 항목 속성 확장](/pdf/ko/reportingservices/expand-report-items-properties/)
+- [MS ReportViewer 2010 및 2012와 통합](/pdf/ko/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
+- [Aspose.Pdf 평가 보고서 서비스용](/pdf/ko/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
 ## Aspose.PDF 보고서 서비스용 리소스
 
-- [Aspose.PDF 보고서 서비스용 제품 개요](/pdf/reportingservices/product-overview/)
+- [Aspose.PDF 보고서 서비스용 제품 개요](/pdf/ko/reportingservices/product-overview/)
 
-- [Aspose.PDF for Reporting Services 지원 파일 형식](/pdf/reportingservices/supported-file-formats/)
-- [Aspose.PDF for Reporting Services 기능](/pdf/reportingservices/features/)
+- [Aspose.PDF for Reporting Services 지원 파일 형식](/pdf/ko/reportingservices/supported-file-formats/)
+- [Aspose.PDF for Reporting Services 기능](/pdf/ko/reportingservices/features/)
 - [Aspose.PDF for Reporting Services 릴리스 노트](https://releases.aspose.com/pdf/reportingservices/release-notes/)
 - [Aspose.PDF for Reporting Services 다운로드](https://releases.aspose.com/pdf/reportingservices/)
-- [Aspose.PDF for Reporting Services 샘플 보고서 갤러리](/pdf/reportingservices/sample-reports-gallery/)
-- [Aspose.Pdf for Reporting Services 설치](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [로컬 모드에서 Microsoft Report Viewer와의 통합](/pdf/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
-- [Aspose.Pdf for Reporting Services 라이선스](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Aspose.Pdf for Reporting Services 구성](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Aspose.PDF for Reporting Services 샘플 보고서 갤러리](/pdf/ko/reportingservices/sample-reports-gallery/)
+- [Aspose.Pdf for Reporting Services 설치](/pdf/ko/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [로컬 모드에서 Microsoft Report Viewer와의 통합](/pdf/ko/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
+- [Aspose.Pdf for Reporting Services 라이선스](/pdf/ko/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [Aspose.Pdf for Reporting Services 구성](/pdf/ko/reportingservices/configure-aspose-pdf-for-reporting-services/)
 
-- [보고서 항목 속성 확장](/pdf/reportingservices/expand-report-items-properties/)
+- [보고서 항목 속성 확장](/pdf/ko/reportingservices/expand-report-items-properties/)
 ```
-- [MS ReportViewer 2010 및 2012와의 통합](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
-- [Aspose.Pdf for Reporting Services 평가](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
+- [MS ReportViewer 2010 및 2012와의 통합](/pdf/ko/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
+- [Aspose.Pdf for Reporting Services 평가](/pdf/ko/reportingservices/evaluate-aspose-pdf-for-reporting-services/)

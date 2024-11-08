@@ -3,7 +3,7 @@ title: PDF Highlights Annotation
 linktitle: Highlights Annotation
 type: docs
 weight: 20
-url: ar/java/highlights-annotation/
+url: /ar/java/highlights-annotation/
 description: يتم تقديم التعليقات التوضيحية للتمييز كتمييزات أو تسطيرات أو شطبات أو تسطيرات متعرجة في نص المستند.
 lastmod: "2021-11-24"
 sitemap:

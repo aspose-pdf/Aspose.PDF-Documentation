@@ -3,7 +3,7 @@ title: Annotation de surlignage PDF en C++
 linktitle: Annotation de surlignage
 type: docs
 weight: 20
-url: fr/cpp/highlights-annotation/
+url: /fr/cpp/highlights-annotation/
 description: Les annotations de balisage sont présentées dans le texte sous forme de surlignages, soulignements, barrés ou soulignements en zigzag dans le texte d'un document.
 lastmod: "2021-11-24"
 sitemap:

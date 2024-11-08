@@ -3,7 +3,7 @@ title: Node.jsでPDFをExcelに変換する
 linktitle: PDFをExcelに変換
 type: docs
 weight: 20
-url: ja/nodejs-cpp/convert-pdf-to-xlsx/
+url: /ja/nodejs-cpp/convert-pdf-to-xlsx/
 lastmod: "2023-11-16"
 keywords: node.jsを使用してPDFをExcelに変換, PDFをXLSXに変換
 description: Aspose.PDF for Node.jsを使ってPDFをXLSX形式に変換します。

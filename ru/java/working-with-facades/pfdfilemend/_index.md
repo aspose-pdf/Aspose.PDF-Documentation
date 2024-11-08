@@ -3,7 +3,7 @@
 title: PdfFileMend Class
 type: docs
 weight: 20
-url: ru/java/pdffilemend-class/
+url: /ru/java/pdffilemend-class/
 description: Этот раздел объясняет, как работать с Aspose.PDF Facades, используя класс PdfFileMend.
 lastmod: "2021-06-05"
 sitemap:
@@ -34,7 +34,7 @@ sitemap:
 
 Посмотрите, как это выглядит:
 
-![Добавить текст](/pdf/net/images/add_text.png)
+![Добавить текст](/pdf/ru/net/images/add_text.png)
 
 Второй способ добавить [FormattedText](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formattedtext). Дополнительно указываем прямоугольник, в который должен вписаться наш текст.
 
@@ -100,7 +100,7 @@ public static void AddImage01()
     }
 ```
 
-![Add Image](/pdf/net/images/add_image1.png)
+![Add Image](/pdf/ru/net/images/add_image1.png)
 
 Рассмотрим второй фрагмент кода. Используя вариации параметров класса [CompositingParameters](https://reference.aspose.com/pdf/java/com.aspose.pdf/CompositingParameters), мы можем получить различные дизайнерские эффекты. Мы попробовали один из них.
 
@@ -126,7 +126,7 @@ public static void AddImage01()
 ```
 
 
-![Add Image](/pdf/net/images/add_image2.png)
+![Add Image](/pdf/ru/net/images/add_image2.png)
 
 В следующем фрагменте кода мы используем [ImageFilterType](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageFilterType). ImageFilterType указывает тип кодека потока, который будет использоваться для кодирования, по умолчанию Jpeg. если вы загружаете изображение в формате PNG, то оно будет сохранено в документе как JPEG (или в другом формате, который я указал).
 

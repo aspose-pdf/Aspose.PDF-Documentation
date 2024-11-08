@@ -3,7 +3,7 @@ title: كيفية التوقيع الإلكتروني على PDF
 linktitle: التوقيع الإلكتروني على PDF
 type: docs
 weight: 10
-url: ar/java/digitally-sign-pdf-file/
+url: /ar/java/digitally-sign-pdf-file/
 description: التوقيع الإلكتروني على مستندات PDF باستخدام Java. التحقق من صحة التوقيعات الإلكترونية على ملفات PDF باستخدام تطبيق Java مع مكتبة PDF. يمكنك توثيق ملف PDF بشهادة PKCS1.
 lastmod: "2021-06-05"
 sitemap:

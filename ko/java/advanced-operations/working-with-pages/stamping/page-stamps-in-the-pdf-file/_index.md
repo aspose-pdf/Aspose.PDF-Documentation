@@ -3,7 +3,7 @@ title: PDF에 페이지 스탬프 추가
 linktitle: PDF 파일의 페이지 스탬프
 type: docs
 weight: 30
-url: ko/java/page-stamps-in-the-pdf-file/
+url: /ko/java/page-stamps-in-the-pdf-file/
 description: Java로 PdfPageStamp 클래스를 사용하여 PDF 파일에 페이지 스탬프 추가.
 lastmod: "2021-09-10"
 sitemap:

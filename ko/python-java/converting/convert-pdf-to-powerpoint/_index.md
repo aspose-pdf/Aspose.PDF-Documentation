@@ -3,7 +3,7 @@ title: PDF를 파워포인트로 변환하기 파이썬에서
 linktitle: PDF를 파워포인트로 변환
 type: docs
 weight: 30
-url: ko/python-java/convert-pdf-to-powerpoint/
+url: /ko/python-java/convert-pdf-to-powerpoint/
 description: Aspose.PDF를 사용하여 PDF를 파이썬에서 PPT (파워포인트) 형식으로 변환할 수 있습니다. PDF를 PPTX로 슬라이드를 이미지로 변환할 수 있는 방법이 있습니다.
 lastmod: "2023-04-06"
 sitemap:

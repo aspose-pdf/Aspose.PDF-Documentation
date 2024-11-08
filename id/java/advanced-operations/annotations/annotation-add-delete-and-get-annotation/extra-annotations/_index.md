@@ -3,7 +3,7 @@ title: Menggunakan jenis anotasi PDF tambahan
 linktitle: Anotasi Tambahan
 type: docs
 weight: 60
-url: id/java/extra-annotations/
+url: /id/java/extra-annotations/
 description: Bagian ini menjelaskan cara menambahkan, mendapatkan, dan menghapus jenis anotasi tambahan dari dokumen PDF Anda.
 lastmod: "2021-11-24"
 sitemap:

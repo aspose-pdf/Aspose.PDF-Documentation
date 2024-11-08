@@ -3,7 +3,7 @@ title: Tambahkan tanda tangan digital dalam PDF di Node.js
 linktitle: Tanda tangan digital PDF
 type: docs
 weight: 70
-url: id/nodejs-cpp/sign-pdf/
+url: /id/nodejs-cpp/sign-pdf/
 description: Tandatangani dokumen PDF secara digital dalam lingkungan Node.js.
 lastmod: "2023-11-16"
 sitemap:

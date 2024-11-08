@@ -2,7 +2,7 @@
 title: Establecer información del archivo PDF - fachadas
 type: docs
 weight: 20
-url: es/java/set-pdf-information/
+url: /es/java/set-pdf-information/
 description: Esta sección explica cómo establecer la información del archivo PDF con Aspose.PDF Facades usando la clase PdfFileInfo.
 lastmod: "2021-06-05"
 sitemap:

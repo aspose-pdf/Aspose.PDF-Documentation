@@ -3,7 +3,7 @@ title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: ar/java/annotations/
+url: /ar/java/annotations/
 description: يوضح هذا القسم كيفية استخدام جميع أنواع التعليقات التوضيحية في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF. تعلم كيفية الرسم أو الفتح أو إضافة تعليق توضيحي باستخدام Java.
 lastmod: "2021-11-26"    
 sitemap:
@@ -22,6 +22,6 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [نظرة عامة على التعليقات التوضيحية](/pdf/java/overview-of-annotations/) - تعرف على أنواع التعليقات التوضيحية التي تم تعريفها بواسطة مواصفات PDF، وما يدعمه Aspose.PDF.
-- [إضافة، حذف والحصول على تعليق توضيحي](/pdf/java/add-delete-and-get-annotation/) - يشرح هذا القسم كيفية العمل مع جميع أنواع التعليقات التوضيحية المسموح بها.
-- [استيراد وتصدير التعليقات التوضيحية بصيغة XFDF](/pdf/java/import-export-xfdf/) - يوفر مكتبة Aspose.PDF طرقًا لاستيراد وتصدير بيانات التعليقات التوضيحية إلى ملفات XFDF.
+- [نظرة عامة على التعليقات التوضيحية](/pdf/ar/java/overview-of-annotations/) - تعرف على أنواع التعليقات التوضيحية التي تم تعريفها بواسطة مواصفات PDF، وما يدعمه Aspose.PDF.
+- [إضافة، حذف والحصول على تعليق توضيحي](/pdf/ar/java/add-delete-and-get-annotation/) - يشرح هذا القسم كيفية العمل مع جميع أنواع التعليقات التوضيحية المسموح بها.
+- [استيراد وتصدير التعليقات التوضيحية بصيغة XFDF](/pdf/ar/java/import-export-xfdf/) - يوفر مكتبة Aspose.PDF طرقًا لاستيراد وتصدير بيانات التعليقات التوضيحية إلى ملفات XFDF.

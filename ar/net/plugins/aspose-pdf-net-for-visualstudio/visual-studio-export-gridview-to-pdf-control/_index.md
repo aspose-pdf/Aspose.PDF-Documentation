@@ -2,7 +2,7 @@
 title: تحكم تصدير GridView إلى PDF في Visual Studio
 type: docs
 weight: 10
-url: ar/net/visual-studio-export-gridview-to-pdf-control/
+url: /ar/net/visual-studio-export-gridview-to-pdf-control/
 ---
 
 ## مقدمة

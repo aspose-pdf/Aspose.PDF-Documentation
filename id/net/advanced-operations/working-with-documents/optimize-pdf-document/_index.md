@@ -3,7 +3,7 @@ title: Optimalkan, Kompresi atau Kurangi Ukuran PDF di C#
 linktitle: Optimalkan PDF
 type: docs
 weight: 30
-url: id/net/optimize-pdf/
+url: /id/net/optimize-pdf/
 keywords: "optimize pdf c#"
 description: Optimalkan file PDF, kecilkan semua gambar, kurangi ukuran PDF, lepaskan font yang tidak digunakan, hapus objek yang tidak digunakan dengan C#.
 lastmod: "2022-02-17"
@@ -103,7 +103,7 @@ Optimasi, atau linearisasi untuk Web, merujuk pada proses membuat file PDF cocok
 1.
 1. Simpan dokumen yang telah dioptimalkan menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara mengoptimalkan dokumen PDF untuk web.
 

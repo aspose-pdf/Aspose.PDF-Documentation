@@ -3,7 +3,7 @@ title: تحويل PDF إلى مستندات Microsoft Word باستخدام Pyth
 linktitle: تحويل PDF إلى Word 2003/2019
 type: docs
 weight: 10
-url: ar/python-java/convert-pdf-to-word/
+url: /ar/python-java/convert-pdf-to-word/
 lastmod: "2023-04-06"
 description: تعلم كيفية كتابة كود بايثون لتحويل صيغة PDF إلى مستندات Microsoft Word باستخدام Aspose.PDF for Python via .NET. وتحسين تحويل PDF إلى DOC(DOCX).
 sitemap:
@@ -95,7 +95,7 @@ document.save(output_pdf, save_options)
 **حاول تحويل PDF إلى DOC عبر الإنترنت**
 
 Aspose.PDF لـ Python يقدم لك تطبيق مجاني عبر الإنترنت ["PDF إلى DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
-[![تحويل PDF إلى DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
+[![تحويل PDF إلى DOC](/pdf/ar/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
 
 ## تحويل PDF إلى DOCX
 
@@ -143,7 +143,7 @@ document.save(output_pdf, save_options)
 
 يقدم Aspose.PDF لـ Python تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
 
-[![تطبيق Aspose.PDF لتحويل PDF إلى Word مجانًا](/pdf/java/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![تطبيق Aspose.PDF لتحويل PDF إلى Word مجانًا](/pdf/ar/java/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

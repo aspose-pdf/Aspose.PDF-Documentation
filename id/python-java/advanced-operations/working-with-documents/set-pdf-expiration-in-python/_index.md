@@ -2,7 +2,7 @@
 title: Atur Kedaluwarsa PDF di Python
 type: docs
 weight: 80
-url: id/python-java/set-pdf-expiration-in-python/
+url: /id/python-java/set-pdf-expiration-in-python/
 ---
 
 <ins>Untuk mengatur kedaluwarsa dokumen Pdf menggunakan **Aspose.PDF Java untuk Python**, cukup panggil kelas **SetExpiration**.

@@ -2,7 +2,7 @@
 title: Chiffrer, Déchiffrer et définir des privilèges sur les documents PDF
 type: docs
 weight: 10
-url: fr/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+url: /fr/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
 ---
 
 ## <ins>**Définir des Privilèges sur un Fichier PDF Existant**

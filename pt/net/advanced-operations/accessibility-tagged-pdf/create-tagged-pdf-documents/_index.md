@@ -3,7 +3,7 @@ title: Criar PDF Marcado usando C#
 linktitle: Criar PDF Marcado
 type: docs
 weight: 10
-url: pt/net/create-tagged-pdf/
+url: /pt/net/create-tagged-pdf/
 description: Este artigo explica como criar elementos de estrutura para documento PDF Marcado programaticamente usando Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Criar um PDF Marcado significa adicionar (ou criar) certos elementos ao documento que permitirão que o documento seja validado de acordo com os requisitos do PDF/UA. Esses elementos são frequentemente chamados de Elementos Estruturais.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Criando PDF Marcado (Cenário Simples)
 

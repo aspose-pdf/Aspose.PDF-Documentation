@@ -2,7 +2,7 @@
 title: Achatar todos os Campos em um Arquivo PDF existente (facades)
 type: docs
 weight: 30
-url: pt/java/flatten-all-fields/
+url: /pt/java/flatten-all-fields/
 description: Esta seção explica como achatar todos os Campos com Aspose.PDF Facades usando a Classe Form.
 lastmod: "2021-06-05"
 sitemap:

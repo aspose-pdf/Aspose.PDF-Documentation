@@ -3,7 +3,7 @@ title: Aspose.PDF for Node.js via C++ 라이선스
 linktitle: 라이선스 및 제한 사항
 type: docs
 weight: 50
-url: ko/nodejs-cpp/licensing/
+url: /ko/nodejs-cpp/licensing/
 description: Aspose.PDF for Node.js는 고객에게 클래식 라이선스를 제공합니다.
 lastmod: "2023-11-16"
 sitemap:

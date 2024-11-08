@@ -3,7 +3,7 @@ title: Anotasi Gambar PDF
 linktitle: Anotasi Gambar
 type: docs
 weight: 30
-url: id/java/figures-annotation/
+url: /id/java/figures-annotation/
 description: Artikel ini menjelaskan cara menambahkan, mendapatkan, dan menghapus anotasi gambar dari dokumen PDF Anda dengan Aspose.PDF untuk Java
 lastmod: "2021-11-24"
 sitemap:

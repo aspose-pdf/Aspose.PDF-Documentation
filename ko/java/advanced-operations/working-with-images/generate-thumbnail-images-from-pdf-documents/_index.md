@@ -3,7 +3,7 @@ title: PDF 문서에서 썸네일 이미지 생성
 linktitle: 썸네일 이미지 생성
 type: docs
 weight: 100
-url: ko/java/generate-thumbnail-images-from-pdf-documents/
+url: /ko/java/generate-thumbnail-images-from-pdf-documents/
 description: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서에서 썸네일 이미지를 생성하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 ---

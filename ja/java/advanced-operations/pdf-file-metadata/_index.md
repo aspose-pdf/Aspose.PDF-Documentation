@@ -3,7 +3,7 @@ title: PDFファイルメタデータの操作
 linktitle: PDFファイルメタデータ
 type: docs
 weight: 140
-url: ja/java/pdf-file-metadata/
+url: /ja/java/pdf-file-metadata/
 description: このセクションでは、PDFファイルの情報を取得する方法、PDFファイルからXMPメタデータを取得する方法、PDFファイル情報を設定する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

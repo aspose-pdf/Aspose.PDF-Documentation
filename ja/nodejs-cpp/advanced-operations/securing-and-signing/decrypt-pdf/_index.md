@@ -3,7 +3,7 @@ title: Node.jsでPDFを復号化する
 linktitle: PDFファイルを復号化する
 type: docs
 weight: 40
-url: ja/nodejs-cpp/decrypt-pdf/
+url: /ja/nodejs-cpp/decrypt-pdf/
 description: Aspose.PDF for Node.js via C++を使用してPDFファイルを復号化します。
 lastmod: "2023-11-16"
 sitemap:

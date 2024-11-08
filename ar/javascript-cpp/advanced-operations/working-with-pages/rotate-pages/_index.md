@@ -3,7 +3,7 @@ title: تدوير صفحات PDF باستخدام JavaScript عبر C++
 linktitle: تدوير صفحات PDF
 type: docs
 weight: 50
-url: ar/javascript-cpp/rotate-pages/
+url: /ar/javascript-cpp/rotate-pages/
 description: يصف هذا الموضوع كيفية تدوير اتجاه الصفحة في ملف PDF موجود برمجيًا عبر JavaScript عبر C++
 lastmod: "2023-02-17"
 sitemap:

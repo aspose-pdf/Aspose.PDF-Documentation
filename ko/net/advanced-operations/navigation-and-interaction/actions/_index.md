@@ -3,7 +3,7 @@ title: PDF에서 작업 다루기
 linktitle: Actions
 type: docs
 weight: 20
-url: ko/net/actions/
+url: /ko/net/actions/
 description: 이 섹션에서는 C#을 사용하여 문서와 폼 필드에 프로그래밍 방식으로 작업을 추가하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF 파일에 하이퍼링크 추가
 

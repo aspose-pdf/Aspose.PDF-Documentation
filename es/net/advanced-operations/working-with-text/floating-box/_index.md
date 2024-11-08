@@ -3,7 +3,7 @@ title: Usando FloatingBox para la generación de texto
 linktitle: Usando FloatingBox
 type: docs
 weight: 30
-url: es/net/floating-box/
+url: /es/net/floating-box/
 description: Esta página explica cómo formatear texto dentro de un cuadro flotante.
 lastmod: "2022-02-17"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-Esta característica también funciona en la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Esta característica también funciona en la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Conceptos básicos sobre el uso de la herramienta FloatingBox
 

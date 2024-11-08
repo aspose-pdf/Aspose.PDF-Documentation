@@ -3,7 +3,7 @@ title: C++を使用したフォームの操作
 linktitle: フォームの操作
 type: docs
 weight: 50
-url: ja/cpp/working-with-forms/
+url: /ja/cpp/working-with-forms/
 description: このセクションでは、Aspose.PDF for C++を使用してPDFドキュメント内のAcroFormsおよびXFA Formsの操作方法を説明します。
 lastmod: "2021-11-30"
 sitemap:
@@ -21,5 +21,5 @@ Aspose.PDF for C++を使用すると、PDFドキュメント内のフォーム�
 
 これらの質問やその他多くの質問への答えを、このドキュメントの次のセクションを学ぶことで見つけることができます。
 
-- [AcroForms](/pdf/cpp/acroforms/) - フォームを作成する、フォームフィールドを記入する、フォームからデータを抽出する、C++ライブラリを使用してPDF内のフィールドを修正する。
-- [XFA Forms](/pdf/cpp/xfa-forms/) - XFA フィールドを記入し、XFA を変換し、XFA フィールドのプロパティを取得します。
+- [AcroForms](/pdf/ja/cpp/acroforms/) - フォームを作成する、フォームフィールドを記入する、フォームからデータを抽出する、C++ライブラリを使用してPDF内のフィールドを修正する。
+- [XFA Forms](/pdf/ja/cpp/xfa-forms/) - XFA フィールドを記入し、XFA を変換し、XFA フィールドのプロパティを取得します。

@@ -2,13 +2,13 @@
 title: استيراد وتصدير حقل النموذج
 type: docs
 weight: 60
-url: ar/net/import-export-form-field/
+url: /ar/net/import-export-form-field/
 description: تعبئة حقول النموذج باستخدام DataTable مع فئة FormEditor بواسطة Aspose.PDF ل .NET
 lastmod: "2021-06-05"
 draft: false
 ---
 
-يوفر Aspose.PDF ل .NET قدرات رائعة لإنشاء ومعالجة حقول النماذج داخل مستند PDF. باستخدام هذه الواجهة البرمجية، يمكنك تعبئة حقول النماذج برمجيًا داخل ملف PDF، تعبئة حقول النماذج بواسطة [استيراد البيانات من FDF إلى ملف PDF](/pdf/net/import-and-export-data/)، [استيراد البيانات من XFDF إلى ملف PDF](/pdf/net/import-and-export-data/)، [استيراد البيانات من XML إلى ملف PDF](/pdf/net/import-and-export-data/) أو حتى يمكنك استيراد البيانات من كائن [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+يوفر Aspose.PDF ل .NET قدرات رائعة لإنشاء ومعالجة حقول النماذج داخل مستند PDF. باستخدام هذه الواجهة البرمجية، يمكنك تعبئة حقول النماذج برمجيًا داخل ملف PDF، تعبئة حقول النماذج بواسطة [استيراد البيانات من FDF إلى ملف PDF](/pdf/ar/net/import-and-export-data/)، [استيراد البيانات من XFDF إلى ملف PDF](/pdf/ar/net/import-and-export-data/)، [استيراد البيانات من XML إلى ملف PDF](/pdf/ar/net/import-and-export-data/) أو حتى يمكنك استيراد البيانات من كائن [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
 
 ```csharp
  public static void ImportData()

@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: ar/jasperreports/easy-and-lightweight-deployment/
+url: /ar/jasperreports/easy-and-lightweight-deployment/
 
 lastmod: "2021-06-05"
 
@@ -30,4 +30,4 @@ Aspose.PDF لـ JasperReports هو امتداد تصدير لـ [JasperReports](
 
 
 
-لتثبيت Aspose.PDF لـ JasperReports، ما عليك سوى نسخ ملف **Aspose-pdf-jasperreports.jar** إلى المجلد الصحيح (JasperReports\lib). للدمج مع JasperServer تحتاج أيضًا إلى تعديل ملف تكوين JasperServer. [اقرأ قسم التثبيت](/pdf/jasperreports/installation/) للحصول على خطوات التثبيت التفصيلية.
+لتثبيت Aspose.PDF لـ JasperReports، ما عليك سوى نسخ ملف **Aspose-pdf-jasperreports.jar** إلى المجلد الصحيح (JasperReports\lib). للدمج مع JasperServer تحتاج أيضًا إلى تعديل ملف تكوين JasperServer. [اقرأ قسم التثبيت](/pdf/ar/jasperreports/installation/) للحصول على خطوات التثبيت التفصيلية.

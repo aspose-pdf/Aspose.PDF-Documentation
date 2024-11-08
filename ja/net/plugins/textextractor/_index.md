@@ -2,7 +2,7 @@
 title: テキストエクストラクター
 type: docs
 weight: 140
-url: ja/net/plugins/textextractor/
+url: /ja/net/plugins/textextractor/
 description: PDFドキュメントからテキストコンテンツを抽出します。
 lastmod: "2024-01-24"
 ---

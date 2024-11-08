@@ -2,7 +2,7 @@
 title: 루비에서 PDF 파일 크기 최적화
 type: docs
 weight: 80
-url: ko/java/optimize-pdf-file-size-in-ruby/
+url: /ko/java/optimize-pdf-file-size-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Menambahkan Lampiran pada Dokumen PDF
 linktitle: Menambahkan Lampiran pada Dokumen PDF
 type: docs
 weight: 10
-url: id/net/add-attachment-to-pdf-document/
+url: /id/net/add-attachment-to-pdf-document/
 description: Halaman ini menjelaskan cara menambahkan lampiran pada file PDF dengan library Aspose.PDF untuk .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ aliases:
 </script>
 Lampiran dapat mengandung berbagai informasi dan dapat berupa berbagai jenis file. Artikel ini menjelaskan cara menambahkan lampiran ke file PDF.
 
-Potongan kode berikut juga berfungsi dengan antarmuka grafis [Aspose.Drawing](/pdf/net/drawing/) yang baru.
+Potongan kode berikut juga berfungsi dengan antarmuka grafis [Aspose.Drawing](/pdf/id/net/drawing/) yang baru.
 
 1. Buat proyek C# baru.
 1. Tambahkan referensi ke Aspose.PDF DLL.

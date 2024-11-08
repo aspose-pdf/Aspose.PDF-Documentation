@@ -3,7 +3,7 @@ title: XML Schema
 linktitle: XML Schema Compatible
 type: docs
 weight: 10
-url: es/java/supported-xml-schema/
+url: /es/java/supported-xml-schema/
 description: Este artículo describe un esquema XML para trabajar con documentos XML en Aspose.PDF para Java
 lastmod: "2021-06-05"
 sitemap:

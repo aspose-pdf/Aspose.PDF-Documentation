@@ -3,7 +3,7 @@ title: Tambahkan Halaman di PDF dengan C++
 linktitle: Tambahkan Halaman
 type: docs
 weight: 10
-url: id/cpp/add-pages/
+url: /id/cpp/add-pages/
 description: Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman di lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghapus) halaman dari file PDF menggunakan C++.
 lastmod: "2021-12-08"
 sitemap:

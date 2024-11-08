@@ -3,7 +3,7 @@ title: PDFへのテキスト注釈の使用方法（Python経由）
 linktitle: テキスト注釈
 type: docs
 weight: 10
-url: ja/python-net/text-annotation/
+url: /ja/python-net/text-annotation/
 description: Aspose.PDF for Pythonを使用すると、PDFドキュメントにテキスト注釈を追加、取得、および削除できます。
 lastmod: "2023-02-17"
 sitemap:

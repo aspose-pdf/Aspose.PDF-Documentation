@@ -3,7 +3,7 @@ title: Anotaciones Adhesivas en PDF
 linktitle: Anotación Adhesiva
 type: docs
 weight: 50
-url: es/php-java/sticky-annotations/
+url: /es/php-java/sticky-annotations/
 description: Este tema trata sobre anotaciones adhesivas, como ejemplo mostramos la Anotación de Marca de Agua en el texto. Se usa para representar gráficos en la página. Consulte el fragmento de código para resolver esta tarea.
 lastmod: "2024-06-24"
 sitemap:

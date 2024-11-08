@@ -3,7 +3,7 @@ title: ブックマークの追加と削除
 linktitle: ブックマークの追加と削除
 type: docs
 weight: 10
-url: ja/net/add-and-delete-bookmark/
+url: /ja/net/add-and-delete-bookmark/
 description: C#を使用してPDFドキュメントにブックマークを追加することができます。PDFドキュメントからすべてのブックマークまたは特定のブックマークを削除することが可能です。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "C#を使用してPDFドキュメントにブックマークを追加することができます。PDFドキュメントからすべてのブックマークまたは特定のブックマークを削除することが可能です。"
 }
 </script>
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## PDFドキュメントにブックマークを追加する
 

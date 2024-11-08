@@ -3,7 +3,7 @@ title: Excluir Imagens do Arquivo PDF
 linktitle: Excluir Imagens
 type: docs
 weight: 20
-url: pt/java/delete-images-from-pdf-file/
+url: /pt/java/delete-images-from-pdf-file/
 description: Esta seção explica como excluir Imagens de um Arquivo PDF usando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 ---

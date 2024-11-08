@@ -3,7 +3,7 @@ title: Añadir sellos de imagen en PDF programáticamente
 linktitle: Sellos de imagen en archivo PDF
 type: docs
 weight: 10
-url: es/cpp/image-stamps-in-pdf-page/
+url: /es/cpp/image-stamps-in-pdf-page/
 description: Añade el sello de imagen en tu documento PDF utilizando la clase ImageStamp con la biblioteca Aspose.PDF para C++.
 lastmod: "2021-12-08"
 sitemap:

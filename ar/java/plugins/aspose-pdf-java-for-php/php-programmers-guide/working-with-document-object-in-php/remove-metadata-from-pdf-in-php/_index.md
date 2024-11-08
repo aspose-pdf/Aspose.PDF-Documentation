@@ -2,7 +2,7 @@
 title: إزالة البيانات الوصفية من PDF في PHP
 type: docs
 weight: 70
-url: ar/java/remove-metadata-from-pdf-in-php/
+url: /ar/java/remove-metadata-from-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

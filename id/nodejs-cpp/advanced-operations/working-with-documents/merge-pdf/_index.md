@@ -3,7 +3,7 @@ title: Cara Menggabungkan PDF di Node.js
 linktitle: Menggabungkan file PDF
 type: docs
 weight: 20
-url: id/nodejs-cpp/merge-pdf/
+url: /id/nodejs-cpp/merge-pdf/
 description: Halaman ini menjelaskan cara menggabungkan dokumen PDF menjadi satu file PDF dengan Aspose.PDF untuk Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

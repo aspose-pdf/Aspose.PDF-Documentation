@@ -2,7 +2,7 @@
 title: Product Overview
 type: docs
 weight: 10
-url: ko/reportingservices/product-overview/
+url: /ko/reportingservices/product-overview/
 lastmod: "2021-06-05"
 ---
 

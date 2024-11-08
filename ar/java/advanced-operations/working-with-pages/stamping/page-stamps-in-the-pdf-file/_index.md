@@ -3,7 +3,7 @@ title: إضافة ختم صفحة PDF إلى ملف PDF
 linktitle: الأختام في ملف PDF
 type: docs
 weight: 30
-url: ar/java/page-stamps-in-the-pdf-file/
+url: /ar/java/page-stamps-in-the-pdf-file/
 description: إضافة ختم صفحة إلى ملف PDF باستخدام فئة PdfPageStamp مع جافا.
 lastmod: "2021-09-10"
 sitemap:

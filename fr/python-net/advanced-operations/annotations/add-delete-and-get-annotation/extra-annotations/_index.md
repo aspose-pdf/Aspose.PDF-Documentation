@@ -3,7 +3,7 @@ title: Annotations supplémentaires en utilisant Python
 linktitle: Annotations supplémentaires
 type: docs
 weight: 60
-url: fr/python-net/extra-annotations/
+url: /fr/python-net/extra-annotations/
 description: Cette section décrit comment ajouter, obtenir et supprimer des types supplémentaires d'annotations de votre document PDF.
 lastmod: "2023-02-17"
 sitemap:

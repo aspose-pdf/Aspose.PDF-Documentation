@@ -2,7 +2,7 @@
 title: 파이썬에서 PDF 파일 연결하기
 type: docs
 weight: 10
-url: ko/python-java/concatenate-pdf-files-in-python/
+url: /ko/python-java/concatenate-pdf-files-in-python/
 ---
 
 **Aspose.PDF Java for Python**을 사용하여 PDF 파일을 연결하려면, **ConcatenatePdfFiles** 클래스를 호출하세요.

@@ -3,7 +3,7 @@ title: Excluir Imagens de Arquivo PDF usando Python
 linktitle: Excluir Imagens
 type: docs
 weight: 20
-url: pt/python-net/delete-images-from-pdf-file/
+url: /pt/python-net/delete-images-from-pdf-file/
 description: Esta seção explica como excluir imagens de um arquivo PDF usando Aspose.PDF para Python via .NET.
 lastmod: "2023-04-17"
 ---

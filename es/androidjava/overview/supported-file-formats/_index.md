@@ -3,7 +3,7 @@ title: Aspose.PDF Formatos de Archivo Soportados
 linktitle: Formatos de Archivo Soportados
 type: docs
 weight: 10
-url: es/androidjava/supported-file-formats/
+url: /es/androidjava/supported-file-formats/
 description: Esta página muestra qué formatos de archivo puede cargar y guardar Aspose.PDF para Android a través de Java.
 lastmod: "2021-06-05"
 sitemap:

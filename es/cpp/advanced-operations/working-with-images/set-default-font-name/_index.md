@@ -3,7 +3,7 @@ title: Establecer Nombre de Fuente Predeterminada usando C++
 linktitle: Establecer Nombre de Fuente Predeterminada
 type: docs
 weight: 90
-url: es/cpp/set-default-font-name/
+url: /es/cpp/set-default-font-name/
 description: Esta sección describe cómo establecer el nombre de fuente predeterminado usando la biblioteca C++.
 lastmod: "2021-12-18"
 ---

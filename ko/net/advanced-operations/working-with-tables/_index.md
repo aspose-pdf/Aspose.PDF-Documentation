@@ -3,7 +3,7 @@ title: PDF에서 C#을 사용하여 테이블 작업
 linktitle: 테이블 작업
 type: docs
 weight: 50
-url: ko/net/working-with-tables/
+url: /ko/net/working-with-tables/
 description: 이 섹션에서는 C# 라이브러리를 사용하여 테이블을 추가하고 추출하는 방법, 테이블을 조작하고 통합하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,10 +81,10 @@ PDF 양식에는 다양한 형태의 표가 포함되어 있습니다.
 
 다음 작업을 수행할 수 있습니다:
 
-- [기존 PDF 문서에 표 생성 또는 추가](/pdf/net/add-table-in-existing-pdf-document/) - 테두리, 여백 및 패딩을 고려하여 PDF 파일에 표를 생성합니다.
-- [기존 PDF 문서에서 표 추출](/pdf/net/extract-table-from-existing-pdf-document/) - PDF 파일에서 표를 추출하거나 표 경계를 이미지로 추출할 수 있습니다.
-- [데이터 소스와 표 통합](/pdf/net/integrate-table/) - 데이터베이스와 표를 통합하거나, .NET 라이브러리를 사용하여 Entity Framework 소스와 표를 통합합니다.
-- [기존 PDF에서 표 조작](/pdf/net/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF에서 표를 조작합니다.
-- [기존 PDF에서 테이블 조작하기](/pdf/net/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF에서 테이블을 조작하세요.
-- [기존 PDF에서 테이블 제거하기](/pdf/net/remove-tables-from-existing-pdf/) - PDF 문서에서 테이블 또는 여러 테이블을 제거하세요.
+- [기존 PDF 문서에 표 생성 또는 추가](/pdf/ko/net/add-table-in-existing-pdf-document/) - 테두리, 여백 및 패딩을 고려하여 PDF 파일에 표를 생성합니다.
+- [기존 PDF 문서에서 표 추출](/pdf/ko/net/extract-table-from-existing-pdf-document/) - PDF 파일에서 표를 추출하거나 표 경계를 이미지로 추출할 수 있습니다.
+- [데이터 소스와 표 통합](/pdf/ko/net/integrate-table/) - 데이터베이스와 표를 통합하거나, .NET 라이브러리를 사용하여 Entity Framework 소스와 표를 통합합니다.
+- [기존 PDF에서 표 조작](/pdf/ko/net/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF에서 표를 조작합니다.
+- [기존 PDF에서 테이블 조작하기](/pdf/ko/net/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF에서 테이블을 조작하세요.
+- [기존 PDF에서 테이블 제거하기](/pdf/ko/net/remove-tables-from-existing-pdf/) - PDF 문서에서 테이블 또는 여러 테이블을 제거하세요.
 

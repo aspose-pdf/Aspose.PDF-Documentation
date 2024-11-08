@@ -3,7 +3,7 @@ title: Guardar Documento PDF
 linktitle: Guardar
 type: docs
 weight: 30
-url: es/java/save-pdf-document/
+url: /es/java/save-pdf-document/
 description: Aprende cómo guardar un archivo PDF con la biblioteca Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: إضافة وحذف علامة مرجعية
 linktitle: إضافة وحذف علامة مرجعية
 type: docs
 weight: 10
-url: ar/java/add-and-delete-bookmark/
+url: /ar/java/add-and-delete-bookmark/
 description: يمكنك إضافة علامة مرجعية إلى مستند PDF باستخدام Java. من الممكن حذف جميع العلامات المرجعية أو علامات معينة من مستند PDF.
 lastmod: "2021-06-05"
 sitemap:

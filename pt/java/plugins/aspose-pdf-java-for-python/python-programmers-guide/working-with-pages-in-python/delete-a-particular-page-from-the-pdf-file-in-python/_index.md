@@ -2,7 +2,7 @@
 title: Excluir uma Página Específica do Arquivo PDF em Python
 type: docs
 weight: 20
-url: pt/java/delete-a-particular-page-from-the-pdf-file-in-python/
+url: /pt/java/delete-a-particular-page-from-the-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

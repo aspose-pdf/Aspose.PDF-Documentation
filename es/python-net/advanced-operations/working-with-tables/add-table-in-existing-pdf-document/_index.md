@@ -3,7 +3,7 @@ title: Crear o Agregar Tabla en PDF usando Python
 linktitle: Crear o Agregar Tabla
 type: docs
 weight: 10
-url: es/python-net/add-table-in-existing-pdf-document/
+url: /es/python-net/add-table-in-existing-pdf-document/
 description: Aspose.PDF para Python via .NET es una biblioteca utilizada para crear, leer y editar tablas PDF. Consulta otras funciones avanzadas en este tema.
 lastmod: "2023-02-17"
 sitemap:

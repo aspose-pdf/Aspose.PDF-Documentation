@@ -3,7 +3,7 @@ title: Trabajando con Marcadores en PDF usando C#
 linktitle: Marcadores
 type: docs
 weight: 30
-url: es/net/bookmarks/
+url: /es/net/bookmarks/
 description: Esta sección explica cómo agregar, eliminar y obtener marcadores con Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,8 +81,8 @@ aliases:
 Los marcadores PDF son una herramienta útil y esencial cuando se trata de leer archivos PDF. Permiten a los usuarios saltar rápidamente a otros lugares en un documento PDF, navegar a través de las páginas y ver rápidamente el contenido de un PDF, al igual que una tabla de contenidos.
 En esta sección aprenderás cómo:
 
-- [Agregar y Eliminar un Marcador](/pdf/net/add-and-delete-bookmark/)
-- [Obtener, Actualizar y Expandir un Marcador](/pdf/net/get-update-and-expand-bookmark/)
+- [Agregar y Eliminar un Marcador](/pdf/es/net/add-and-delete-bookmark/)
+- [Obtener, Actualizar y Expandir un Marcador](/pdf/es/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

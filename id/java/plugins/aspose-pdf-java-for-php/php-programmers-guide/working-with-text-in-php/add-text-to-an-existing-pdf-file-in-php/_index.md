@@ -2,7 +2,7 @@
 title: Tambahkan Teks ke file PDF yang ada di PHP
 type: docs
 weight: 20
-url: id/java/add-text-to-an-existing-pdf-file-in-php/
+url: /id/java/add-text-to-an-existing-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

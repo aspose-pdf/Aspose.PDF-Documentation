@@ -3,7 +3,7 @@ title: Trabalhando com Links em PDF programaticamente
 linktitle: Links
 type: docs
 weight: 10
-url: pt/net/links/
+url: /pt/net/links/
 description: Este guia é sobre como adicionar um link de página interna em PDF ou inserir um hyperlink de site externo em PDF na linguagem C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,9 +75,9 @@ sitemap:
     "description": "Este guia é sobre como adicionar um link de página interna em PDF ou inserir um hyperlink de site externo em PDF na linguagem C#."
 }
 </script>
-- [Criar Links](/pdf/net/create-links/) - aprenda de maneira simples como criar links em seu arquivo PDF usando C#.
-- [Atualizar Links](/pdf/net/update-links/) - tente definir o destino para PDF, tente definir o destino do link para um endereço web, tente definir o alvo do link para outro arquivo PDF, atualize a cor do texto do link.
-- [Extrair Links](/pdf/net/extract-links) - extraia links do arquivo PDF usando a classe AnnotationSelector.
+- [Criar Links](/pdf/pt/net/create-links/) - aprenda de maneira simples como criar links em seu arquivo PDF usando C#.
+- [Atualizar Links](/pdf/pt/net/update-links/) - tente definir o destino para PDF, tente definir o destino do link para um endereço web, tente definir o alvo do link para outro arquivo PDF, atualize a cor do texto do link.
+- [Extrair Links](/pdf/pt/net/extract-links) - extraia links do arquivo PDF usando a classe AnnotationSelector.
 
 <script type="application/ld+json">
 {

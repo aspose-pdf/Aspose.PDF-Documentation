@@ -3,7 +3,7 @@ title: Tambahkan Objek Persegi Panjang ke File PDF
 linktitle: Tambahkan Persegi Panjang
 type: docs
 weight: 50
-url: id/cpp/add-rectangle/
+url: /id/cpp/add-rectangle/
 description: Artikel ini menjelaskan cara membuat objek Persegi Panjang ke PDF Anda menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-12-18"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF에서 첨부 파일 제거하기
 linktitle: 기존 PDF에서 첨부 파일 제거하기
 type: docs
 weight: 30
-url: ko/python-net/removing-attachment-from-an-existing-pdf/
+url: /ko/python-net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF는 PDF 문서에서 첨부 파일을 제거할 수 있습니다. Aspose.PDF for Python via .NET 라이브러리를 사용하여 PDF 파일에서 첨부 파일을 제거하는 Python PDF API를 사용하세요.
 lastmod: "2023-02-17"
 sitemap:

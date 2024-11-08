@@ -2,7 +2,7 @@
 title: 在PDF中使用标题
 type: docs
 weight: 90
-url: zh/cpp/working-with-headings/
+url: /zh/cpp/working-with-headings/
 lastmod: "2021-11-11"
 description: 使用C++在您的PDF文档中创建标题编号。Aspose.PDF for C++展示了不同种类的编号样式。
 sitemap:
@@ -16,7 +16,7 @@ sitemap:
 标题有助于吸引对文本的注意，并帮助用户在文档中找到他们需要的信息，提高可读性和视觉感知。使用标题样式，您还可以快速创建目录，改变文档结构。
 所以，让我们看看如何使用Aspose.PDF for C++库来处理标题。
 
-[Aspose.PDF for C++](/pdf/cpp/) 提供了许多预定义的编号样式。 这些预定义的编号样式存储在一个枚举中，NumberingStyle。NumberingStyle枚举的预定义值及其描述如下：
+[Aspose.PDF for C++](/pdf/zh/cpp/) 提供了许多预定义的编号样式。 这些预定义的编号样式存储在一个枚举中，NumberingStyle。NumberingStyle枚举的预定义值及其描述如下：
 
 |**标题类型**|**描述**|
 | :- | :- |

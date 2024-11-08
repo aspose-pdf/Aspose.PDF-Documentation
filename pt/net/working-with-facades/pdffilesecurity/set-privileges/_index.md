@@ -2,7 +2,7 @@
 title: Definir Privilégios em PDF
 type: docs
 weight: 50
-url: pt/net/set-privileges/
+url: /pt/net/set-privileges/
 description: Este tópico explica como definir privilégios em um arquivo PDF existente usando a Classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

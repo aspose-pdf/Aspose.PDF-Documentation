@@ -3,7 +3,7 @@ title: PDFマルチメディア注釈
 linktitle: マルチメディア注釈
 type: docs
 weight: 40
-url: ja/java/multimedia-annotation/
+url: /ja/java/multimedia-annotation/
 description: Aspose.PDF for Javaを使用すると、PDFドキュメントからマルチメディア注釈を追加、取得、削除できます。
 lastmod: "2021-11-24"
 sitemap:

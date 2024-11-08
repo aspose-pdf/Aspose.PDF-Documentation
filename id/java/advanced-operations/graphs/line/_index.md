@@ -3,7 +3,7 @@ title: Tambahkan Objek Garis ke file PDF
 linktitle: Tambahkan Garis
 type: docs
 weight: 40
-url: id/java/add-line/
+url: /id/java/add-line/
 description: Artikel ini menjelaskan cara membuat objek garis ke PDF Anda menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

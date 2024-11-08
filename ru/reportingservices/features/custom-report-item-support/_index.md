@@ -2,7 +2,7 @@
 title: Custom Report Item Support
 type: docs
 weight: 30
-url: ru/reportingservices/custom-report-item-support/
+url: /ru/reportingservices/custom-report-item-support/
 lastmod: "2021-06-05"
 ---
 
@@ -14,6 +14,6 @@ lastmod: "2021-06-05"
 - Линейные стрелки.
 - Сноска/конечная сноска.
 
-Узнайте, как их использовать, в статье [Расширение свойств элементов отчета](/pdf/reportingservices/expand-report-items-properties/).
+Узнайте, как их использовать, в статье [Расширение свойств элементов отчета](/pdf/ru/reportingservices/expand-report-items-properties/).
 
 {{% /alert %}}

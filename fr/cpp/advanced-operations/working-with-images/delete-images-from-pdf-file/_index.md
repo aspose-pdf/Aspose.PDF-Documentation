@@ -3,7 +3,7 @@ title: Supprimer des Images d'un Fichier PDF en utilisant C++
 linktitle: Supprimer des Images
 type: docs
 weight: 20
-url: fr/cpp/delete-images-from-pdf-file/
+url: /fr/cpp/delete-images-from-pdf-file/
 description: Cette section explique comment supprimer des images d'un fichier PDF en utilisant Aspose.PDF pour C++.
 lastmod: "2021-12-18"
 ---

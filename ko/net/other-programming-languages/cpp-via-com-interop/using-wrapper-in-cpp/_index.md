@@ -2,14 +2,14 @@
 title: CPP에서 래퍼 사용하기
 type: docs
 weight: 30
-url: ko/net/using-wrapper-in-cpp/
+url: /ko/net/using-wrapper-in-cpp/
 ---
 
 ## 사전 요구 사항
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for .NET을 COM Interop와 함께 등록하십시오. [Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)라는 문서를 확인하세요.
+Aspose.PDF for .NET을 COM Interop와 함께 등록하십시오. [Use Aspose.pdf for .NET via COM Interop](/pdf/ko/net/use-aspose-pdf-for-net-via-com-interop/)라는 문서를 확인하세요.
 
 {{% /alert %}}
 

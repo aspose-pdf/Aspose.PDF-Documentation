@@ -3,7 +3,7 @@ title: Bekerja dengan Teks dalam PDF
 linktitle: Bekerja dengan Teks
 type: docs
 weight: 30
-url: id/php-java/working-with-text/
+url: /id/php-java/working-with-text/
 description: Bagian ini menjelaskan berbagai teknik penanganan teks. Pelajari cara menambah, mengganti, memutar, mencari teks menggunakan Aspose.PDF dan PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -15,4 +15,4 @@ Kita semua kadang-kadang perlu menambahkan teks ke file PDF. Misalnya, ketika An
 
 Anda dapat melakukan hal berikut:
 
-- [Menambah Teks ke file PDF](/pdf/php-java/add-text-to-pdf-file/) - menambahkan teks ke PDF Anda, menggunakan font dari stream dan file, menambahkan string HTML, menambahkan hyperlink, dll.
+- [Menambah Teks ke file PDF](/pdf/id/php-java/add-text-to-pdf-file/) - menambahkan teks ke PDF Anda, menggunakan font dari stream dan file, menambahkan string HTML, menambahkan hyperlink, dll.

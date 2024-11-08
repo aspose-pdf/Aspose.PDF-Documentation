@@ -3,7 +3,7 @@ title: Anotação Multimídia em PDF
 linktitle: Anotação Multimídia
 type: docs
 weight: 40
-url: pt/java/multimedia-annotation/
+url: /pt/java/multimedia-annotation/
 description: Aspose.PDF para Java permite adicionar, obter e excluir a anotação multimídia do seu documento PDF.
 lastmod: "2021-11-24"
 sitemap:

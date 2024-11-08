@@ -3,7 +3,7 @@ title: 在 PDF 中处理图像
 linktitle: 处理图像
 type: docs
 weight: 40
-url: zh/java/working-with-images/
+url: /zh/java/working-with-images/
 description: 本节介绍使用 Java 库在 PDF 文件中处理图像的功能。
 lastmod: "2021-06-05"
 sitemap:
@@ -22,14 +22,14 @@ sitemap:
 
 您可以执行以下操作：
 
-- [向现有PDF文件添加图像](/pdf/java/add-image-to-existing-pdf-file/) - 在PDF文档中添加单个图像及其引用，然后控制质量。- [从 PDF 文件中删除图像](/pdf/java/delete-images-from-pdf-file/) - 查看删除 PDF 文件中图像的代码片段。
-- [从 PDF 文件中提取图像](/pdf/java/extract-images-from-pdf-file/) - 使用图像集合从 PDF 文件中提取图像。
-- [获取嵌入图像的分辨率和尺寸](/pdf/java/get-resolution-and-dimensions-of-embedded-images/) - 使用 Aspose.PDF 命名空间中的操作类，它们提供了获取分辨率和尺寸信息的功能。
-- [处理图像放置](/pdf/java/working-with-image-placement/) - 可以获取 PDF 文档中图像的分辨率和位置。
-- [搜索并从 PDF 文档中获取图像](/pdf/java/search-and-get-images-from-pdf-document/) - 您可以从单个页面获取图像，并使用 Java 在所有页面上的图像中进行搜索。
-- [替换现有 PDF 文件中的图像](/pdf/java/replace-image-in-existing-pdf-file/) - 查看我们的代码片段，展示如何在 PDF 文件中替换图像。
+- [向现有PDF文件添加图像](/pdf/zh/java/add-image-to-existing-pdf-file/) - 在PDF文档中添加单个图像及其引用，然后控制质量。- [从 PDF 文件中删除图像](/pdf/zh/java/delete-images-from-pdf-file/) - 查看删除 PDF 文件中图像的代码片段。
+- [从 PDF 文件中提取图像](/pdf/zh/java/extract-images-from-pdf-file/) - 使用图像集合从 PDF 文件中提取图像。
+- [获取嵌入图像的分辨率和尺寸](/pdf/zh/java/get-resolution-and-dimensions-of-embedded-images/) - 使用 Aspose.PDF 命名空间中的操作类，它们提供了获取分辨率和尺寸信息的功能。
+- [处理图像放置](/pdf/zh/java/working-with-image-placement/) - 可以获取 PDF 文档中图像的分辨率和位置。
+- [搜索并从 PDF 文档中获取图像](/pdf/zh/java/search-and-get-images-from-pdf-document/) - 您可以从单个页面获取图像，并使用 Java 在所有页面上的图像中进行搜索。
+- [替换现有 PDF 文件中的图像](/pdf/zh/java/replace-image-in-existing-pdf-file/) - 查看我们的代码片段，展示如何在 PDF 文件中替换图像。
 
-- [设置图像大小](/pdf/java/set-image-size/) - Java 库允许您设置图像的大小。
-- [设置默认字体名称](/pdf/java/set-default-font-name/) - 使用 DefaultFontName 属性设置默认字体名称。
-- [从 PDF 文档生成缩略图](/pdf/java/generate-thumbnail-images-from-pdf-documents/) - 下一篇文章展示如何使用 Acrobat SDK 和 Aspose.PDF 从 PDF 文档生成缩略图。
-- 支持 DICOM 图像 - Aspose.PDF for Java 支持医学图像的特殊标准。Aspose.PDF for Java 允许您转换 DICOM 和 SVG 图像。请查看[将 DICOM 转换为 PDF](/pdf/java/convert-dicom-to-pdf/)部分。
+- [设置图像大小](/pdf/zh/java/set-image-size/) - Java 库允许您设置图像的大小。
+- [设置默认字体名称](/pdf/zh/java/set-default-font-name/) - 使用 DefaultFontName 属性设置默认字体名称。
+- [从 PDF 文档生成缩略图](/pdf/zh/java/generate-thumbnail-images-from-pdf-documents/) - 下一篇文章展示如何使用 Acrobat SDK 和 Aspose.PDF 从 PDF 文档生成缩略图。
+- 支持 DICOM 图像 - Aspose.PDF for Java 支持医学图像的特殊标准。Aspose.PDF for Java 允许您转换 DICOM 和 SVG 图像。请查看[将 DICOM 转换为 PDF](/pdf/zh/java/convert-dicom-to-pdf/)部分。

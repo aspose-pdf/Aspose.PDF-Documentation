@@ -2,7 +2,7 @@
 title: PDF의 개별 페이지 편집
 type: docs
 weight: 20
-url: ko/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
+url: /ko/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
 description: 이 섹션은 PdfPageEditor 클래스를 사용하여 PDF의 개별 페이지를 편집하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF for .NET](/pdf/net/)의 Aspose.Pdf.Facades 네임스페이스는 PDF 파일의 개별 페이지를 조작할 수 있게 합니다. 이 기능은 페이지 디스플레이, 정렬, 전환 등을 다루는 데 도움이 됩니다. PdfPageEditor 클래스는 이 기능을 구현할 수 있도록 도와줍니다. 이 글에서는 이 클래스가 제공하는 속성과 메서드, 그리고 이러한 메서드의 작동 방식을 살펴보겠습니다.
+[Aspose.PDF for .NET](/pdf/ko/net/)의 Aspose.Pdf.Facades 네임스페이스는 PDF 파일의 개별 페이지를 조작할 수 있게 합니다. 이 기능은 페이지 디스플레이, 정렬, 전환 등을 다루는 데 도움이 됩니다. PdfPageEditor 클래스는 이 기능을 구현할 수 있도록 도와줍니다. 이 글에서는 이 클래스가 제공하는 속성과 메서드, 그리고 이러한 메서드의 작동 방식을 살펴보겠습니다.
 
 {{% /alert %}}
 

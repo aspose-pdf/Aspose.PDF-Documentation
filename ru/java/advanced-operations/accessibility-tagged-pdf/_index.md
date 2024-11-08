@@ -3,7 +3,7 @@ title: Работа с доступностью и тегированными PD
 linktitle: Доступность. Тегированный PDF
 type: docs
 weight: 120
-url: ru/java/accessibility-tagged-pdf/
+url: /ru/java/accessibility-tagged-pdf/
 description: Aspose.PDF предоставляет возможность создавать тегированные PDF документы, позволяя вам помечать структурные элементы. Узнайте больше о том, как получить доступные PDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -22,7 +22,7 @@ This section covers following topic:
 
 Этот раздел охватывает следующие темы:
 
-- [Create Tagged PDF](/pdf/java/create-tagged-pdf-documents/)
-- [Extract Tagged Content from Tagged PDFs](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
-- [Setting Structure Elements Properties](/pdf/java/set-tagged-pdfs-element-properties/)
-- [Working with Table in Tagged PDFs](/pdf/java/working-with-table-in-tagged-pdfs/)
+- [Create Tagged PDF](/pdf/ru/java/create-tagged-pdf-documents/)
+- [Extract Tagged Content from Tagged PDFs](/pdf/ru/java/extract-tagged-content-from-tagged-pdfs/)
+- [Setting Structure Elements Properties](/pdf/ru/java/set-tagged-pdfs-element-properties/)
+- [Working with Table in Tagged PDFs](/pdf/ru/java/working-with-table-in-tagged-pdfs/)

@@ -2,7 +2,7 @@
 title: استكشاف ميزات فئة FormEditor
 type: docs
 weight: 10
-url: ar/net/exploring-features-of-formeditor-class/
+url: /ar/net/exploring-features-of-formeditor-class/
 description: يمكنك تعلم تفاصيل استكشاف ميزات فئة FormEditor مع مكتبة Aspose. PDF لـ .NET
 lastmod: "2021-06-05"
 draft: false
@@ -16,7 +16,7 @@ draft: false
 
 ## تفاصيل التنفيذ
 
-يمكن للمطورين استخدام [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) ليس فقط لإضافة نماذج وحقول نماذج جديدة في مستند PDF، ولكن أيضًا يتيح لك تحرير الحقول الموجودة. نطاق هذه المقالة يقتصر على ميزات [Aspose.PDF for .NET](/pdf/net/) التي تتعامل مع تحرير النماذج.
+يمكن للمطورين استخدام [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) ليس فقط لإضافة نماذج وحقول نماذج جديدة في مستند PDF، ولكن أيضًا يتيح لك تحرير الحقول الموجودة. نطاق هذه المقالة يقتصر على ميزات [Aspose.PDF for .NET](/pdf/ar/net/) التي تتعامل مع تحرير النماذج.
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) هي الفئة التي تحتوي على معظم الطرق والخصائص التي تسمح للمطورين بتحرير حقول النماذج. يمكنك ليس فقط إضافة حقول جديدة، ولكن أيضًا إزالة الحقول الحالية، نقل حقل إلى موقع آخر، تغيير اسم الحقل، أو السمات وما إلى ذلك. قائمة الميزات التي توفرها هذه الفئة شاملة للغاية، ومن السهل جدًا العمل مع حقول النماذج باستخدام هذه الفئة.
 

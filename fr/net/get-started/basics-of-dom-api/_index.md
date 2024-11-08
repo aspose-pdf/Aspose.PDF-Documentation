@@ -3,7 +3,7 @@ title: Principes de base de l'API DOM Aspose.PDF
 linktitle: Principes de base de l'API DOM
 type: docs
 weight: 140
-url: fr/net/basics-of-dom-api/
+url: /fr/net/basics-of-dom-api/
 description: Aspose.PDF pour .NET utilise également l'idée de DOM pour représenter la structure d'un document PDF en termes d'objets.
 lastmod: "2021-06-05"
 sitemap:

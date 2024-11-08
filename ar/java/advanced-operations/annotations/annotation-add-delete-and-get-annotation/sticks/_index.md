@@ -3,7 +3,7 @@ title: التعليقات اللاصقة في PDF
 linktitle: التعليق اللاصق
 type: docs
 weight: 50
-url: ar/java/sticky-annotations/
+url: /ar/java/sticky-annotations/
 description: هذا الموضوع يتعلق بالتعليقات اللاصقة، كمثال نعرض تعليق العلامة المائية في النص. يُستخدم لتمثيل الرسومات على الصفحة. تحقق من مقتطف الشيفرة لحل هذه المهمة.
 lastmod: "2021-11-24"
 sitemap:

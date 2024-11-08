@@ -3,7 +3,7 @@ title: PDF 문서에서 이미지 검색 및 가져오기 C++ 사용
 linktitle: 검색 및 이미지 가져오기
 type: docs
 weight: 60
-url: ko/cpp/search-and-get-images-from-pdf-document/
+url: /ko/cpp/search-and-get-images-from-pdf-document/
 description: 이 섹션은 Aspose.PDF 라이브러리를 사용하여 PDF 문서에서 이미지를 검색하고 가져오는 방법을 설명합니다.
 lastmod: "2021-12-18"
 ---

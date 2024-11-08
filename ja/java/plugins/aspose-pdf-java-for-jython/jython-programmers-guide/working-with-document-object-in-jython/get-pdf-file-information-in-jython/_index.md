@@ -2,7 +2,7 @@
 title: JythonでPDFファイル情報を取得する
 type: docs
 weight: 30
-url: ja/java/get-pdf-file-information-in-jython/
+url: /ja/java/get-pdf-file-information-in-jython/
 lastmod: "2021-06-05"
 ---
 

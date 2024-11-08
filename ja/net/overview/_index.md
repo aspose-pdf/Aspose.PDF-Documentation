@@ -3,7 +3,7 @@ title: 概要
 linktitle: 概要
 type: docs
 weight: 20
-url: ja/net/overview/
+url: /ja/net/overview/
 lastmod: "2021-06-05"
 description: Aspose.PDF for .NETの主要機能とサポートされているフォーマットの概要、.NETライブラリのインストールとライセンス説明書。
 sitemap:
@@ -37,7 +37,7 @@ PDFドキュメントを圧縮すると、ファイルサイズが削減され�
 - XImageCollectionに画像を保存する（再利用可能な画像）
 - RGBカラースペースからグレースケールへのPDFの変換
 
-詳細については、ドキュメントページを確認してください: [PDF最適化](/pdf/net/optimize-pdf/)
+詳細については、ドキュメントページを確認してください: [PDF最適化](/pdf/ja/net/optimize-pdf/)
 
 ### テーブルの作成と操作
 
@@ -45,7 +45,7 @@ PDFドキュメントを圧縮すると、ファイルサイズが削減され�
 
 **Aspose.PDF for .NET**を使用してPDFドキュメントでテーブルを作成および操作することには、データの整理の改善、可読性の向上、分析能力の向上、情報を効果的に提示するための柔軟性の増加など、多くの利点があります。
 
-次のセクションの詳細を確認しましょう: [テーブルの操作](/pdf/net/working-with-tables/)
+次のセクションの詳細を確認しましょう: [テーブルの操作](/pdf/ja/net/working-with-tables/)
 
 ### グラフオブジェクトのサポート
 
@@ -53,7 +53,7 @@ PDFドキュメントを圧縮すると、ファイルサイズが削減され�
 PDFドキュメントにグラフを追加することは、データの視覚化の改善、明確さと理解の向上、意思決定サポートの向上、読者との関与の増加をもたらします。
 PDFドキュメントにグラフを追加することは、データの可視化を改善し、明確性と理解を高め、より良い意思決定をサポートし、読者とのエンゲージメントを増加させます。
 
-詳細については、ドキュメントページをご確認ください：[グラフの操作](/pdf/net/graphs/)
+詳細については、ドキュメントページをご確認ください：[グラフの操作](/pdf/ja/net/graphs/)
 
 ### 広範なハイパーリンク機能
 
@@ -61,7 +61,7 @@ PDFドキュメントにグラフを追加することは、データの可視�
 
 **Aspose.PDF for .NET**は、改善されたナビゲーション、相互参照、外部リソースへのアクセス、インタラクティビティ、そして強化されたコミュニケーションを含む多くの利点を提供します。これらは、ユーザーにとってより魅力的で情報豊富でアクセスしやすい読書体験に貢献します。
 
-次のセクションの詳細については、こちらをご確認ください：[アクション](/pdf/net/actions/)
+次のセクションの詳細については、こちらをご確認ください：[アクション](/pdf/ja/net/actions/)
 
 ### 拡張セキュリティコントロール
 
@@ -70,7 +70,7 @@ PDFドキュメントにグラフを追加することは、データの可視�
 
 **Aspose.PDF for .NET** を使用すると、スマートカードからPDFに署名したり、ファイルを暗号化・復号化したり、画像や署名情報を抽出することが可能です。
 
-詳細はドキュメントページをご覧ください： [Securing and Signing](/pdf/net/securing-and-signing/)
+詳細はドキュメントページをご覧ください： [Securing and Signing](/pdf/ja/net/securing-and-signing/)
 
 ### ブックマークの追加または削除
 
@@ -78,7 +78,7 @@ PDFドキュメントにグラフを追加することは、データの可視�
 
 **Aspose.PDF for .NET** ライブラリを使用すると、PDFファイルにブックマークを追加したり、子ブックマークを追加したり、文書からすべてまたは特定のブックマークを削除することができます。
 
-次のセクションの詳細を確認しましょう： [Bookmarks](/pdf/net/add-and-delete-bookmark/)
+次のセクションの詳細を確認しましょう： [Bookmarks](/pdf/ja/net/add-and-delete-bookmark/)
 
 ### 目次の作成
 
@@ -86,13 +86,13 @@ PDFドキュメントにグラフを追加することは、データの可視�
 TOCは、PDFドキュメントの内容を素早く効率的にナビゲートするためにユーザーに提供します。
 **Aspose.PDF for .NET** ライブラリは、既存のPDFファイルにTOCを追加する方法を説明しています。Aspose.Pdf名前空間のHeadingクラスを使用します。
 
-詳しくはDocsページをご覧ください： [TOCの操作](/pdf/net/manipulate-pdf-document/)
+詳しくはDocsページをご覧ください： [TOCの操作](/pdf/ja/net/manipulate-pdf-document/)
 
 ###  添付ファイルと注釈の追加、更新、削除
 
 添付ファイルと注釈を追加することで、PDFドキュメントは読者にとってよりインタラクティブで魅力的になります。ユーザーはドキュメント内に埋め込まれた追加コンテンツ、例えばマルチメディアファイル、リンク、またはコメントと対話でき、読書体験が向上します。
 
-Aspose.PDF for .NET ライブラリには[注釈](/pdf/net/annotations/)とのさまざまな操作があります。以下のタイプを追加できます：
+Aspose.PDF for .NET ライブラリには[注釈](/pdf/ja/net/annotations/)とのさまざまな操作があります。以下のタイプを追加できます：
 
 - テキスト注釈
 - ハイライト注釈
@@ -102,8 +102,8 @@ Aspose.PDF for .NET ライブラリには[注釈](/pdf/net/annotations/)との�
 - その他の注釈
 
 また、当ライブラリでは、PDFから添付ファイルを追加、抽出、削除することができます。
-詳細は次の[ドキュメンテーションページ](/pdf/net/attachments/)をご覧ください。
-次の[ドキュメントページ](/pdf/net/attachments/)で詳細を確認してください。
+詳細は次の[ドキュメンテーションページ](/pdf/ja/net/attachments/)をご覧ください。
+次の[ドキュメントページ](/pdf/ja/net/attachments/)で詳細を確認してください。
 
 ### PDFファイルのメタデータ
 
@@ -111,7 +111,7 @@ Aspose.PDF for .NET ライブラリには[注釈](/pdf/net/annotations/)との�
 
 PDFファイルのメタデータは、ドキュメントの識別、帰属、バージョン追跡、説明、検索性、アクセシビリティ、セキュリティ、相互運用性、保存、コンプライアンスなど、複数の目的に役立ちます。
 
-**Aspose.PDF for .NET** ライブラリを使用して、PDFドキュメントの[メタデータ](/pdf/net/pdf-file-metadata/)を簡単かつ迅速に管理できます。
+**Aspose.PDF for .NET** ライブラリを使用して、PDFドキュメントの[メタデータ](/pdf/ja/net/pdf-file-metadata/)を簡単かつ迅速に管理できます。
 
 ### テキストや画像の追加、置換、削除
 
@@ -120,11 +120,11 @@ PDFファイルのメタデータは、ドキュメントの識別、帰属、�
 Aspose.PDF を使用すると、PDF内のテキストを編集したり、置換したり、回転させたり、検索したり、取得したりすることができます。
 Aspose.PDFを使用すると、PDF内のテキストを編集、置換、または回転させることができ、PDF内のテキストを検索または取得することができます。
 
-PDF内の画像を追加、位置変更、削除することもでき、画像に関するより[複雑なアクション](/pdf/net/working-with-images/)を実行することができます。
+PDF内の画像を追加、位置変更、削除することもでき、画像に関するより[複雑なアクション](/pdf/ja/net/working-with-images/)を実行することができます。
 
 ### ページの分割、結合、抽出、または挿入
 
-[PDFページの操作](/pdf/net/working-with-pages/)に関するドキュメントのセクションでは、PDFのページを追加、移動、削除、回転、または分割する方法について説明しています。
+[PDFページの操作](/pdf/ja/net/working-with-pages/)に関するドキュメントのセクションでは、PDFのページを追加、移動、削除、回転、または分割する方法について説明しています。
 
 ページの分割、結合、抽出、または挿入により、ユーザーはPDFドキュメントをより効果的に管理できます。ユーザーはページを整理、再配置、または結合して新しいドキュメントを作成することで、ドキュメントの整理とアクセシビリティを向上させることができます。
 
@@ -143,7 +143,7 @@ Aspose.PDFでは、C#を使用してPDFをさまざまな画像形式に変換�
 - GIF
 - SVG
 
-Aspose.PDFライブラリは、DocumentDeviceまたはImageDeviceクラスを使用してPDFから画像への変換を行います。[PDFをさまざまな画像形式に変換](/pdf/net/convert-pdf-to-images-format/)。
+Aspose.PDFライブラリは、DocumentDeviceまたはImageDeviceクラスを使用してPDFから画像への変換を行います。[PDFをさまざまな画像形式に変換](/pdf/ja/net/convert-pdf-to-images-format/)。
 
 ### PDFドキュメントの印刷
 
@@ -157,25 +157,25 @@ Aspose.PDF for .NETは、PDFファイルを印刷するさまざまな方法を�
 - WPFアプリケーションでのPDFの印刷
 - PDFからPostScriptへの変換、印刷ジョブステータスの確認などのさまざまな追加操作
 
-詳細については、次のセクションを確認してください：[PDFドキュメントの印刷](/pdf/net/printing-document/)。
+詳細については、次のセクションを確認してください：[PDFドキュメントの印刷](/pdf/ja/net/printing-document/)。
 
 さらに、Aspose.PDF for .NETは、テキスト、画像、SVG、HTMLをPDFに簡単に変換し、PDFをさまざまなドキュメント形式に変換する際に、優れたパフォーマンスと良好な品質を提供します。
 Aspose.PDF for .NETは、テキスト、画像、SVG、HTMLをPDFに容易に変換し、PDFを様々なドキュメントフォーマットに変換することができ、優れたパフォーマンスと良好な品質を実現します。
 
 ## 料金とポリシー
 
-[ライセンス](/pdf/net/licensing/)ページでライセンス情報を確認し、[価格情報](https://purchase.aspose.com/pricing/pdf/family/)ページで価格の詳細をご覧ください。
+[ライセンス](/pdf/ja/net/licensing/)ページでライセンス情報を確認し、[価格情報](https://purchase.aspose.com/pricing/pdf/family/)ページで価格の詳細をご覧ください。
 
 ## テクニカルサポート
 
-Aspose.PDFのテクニカルサポートについての詳細は、[サポートページ](/pdf/net/technical-support/)をご覧ください。
+Aspose.PDFのテクニカルサポートについての詳細は、[サポートページ](/pdf/ja/net/technical-support/)をご覧ください。
 
 詳しくはこちら:
 
-- [対応ファイル形式](/pdf/net/supported-file-formats/)
-- [Aspose.PDFの主要機能](/pdf/net/key-features/)
-- [システム要件](/pdf/net/system-requirements/)
-- [インストール](/pdf/net/installation/)
-- [ライセンス](/pdf/net/licensing/)
-- [Aspose.PDF.Drawing for .NET](/pdf/net/drawing/)
-- [テクニカルサポート](/pdf/net/technical-support/)
+- [対応ファイル形式](/pdf/ja/net/supported-file-formats/)
+- [Aspose.PDFの主要機能](/pdf/ja/net/key-features/)
+- [システム要件](/pdf/ja/net/system-requirements/)
+- [インストール](/pdf/ja/net/installation/)
+- [ライセンス](/pdf/ja/net/licensing/)
+- [Aspose.PDF.Drawing for .NET](/pdf/ja/net/drawing/)
+- [テクニカルサポート](/pdf/ja/net/technical-support/)

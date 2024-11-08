@@ -3,7 +3,7 @@ title: Adicionar marca d'água em PDF usando C#
 linktitle: Adicionar marca d'água
 type: docs
 weight: 90
-url: pt/net/add-watermarks/
+url: /pt/net/add-watermarks/
 description: Este artigo explica as funcionalidades de trabalhar com artefatos e obter marcas d'água em PDFs usando programaticamente o C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ aliases:
 </script>
 **Aspose.PDF para .NET** permite adicionar marcas d'água ao seu documento PDF usando Artefatos. Por favor, verifique este artigo para resolver sua tarefa.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Uma marca d'água criada com o Adobe Acrobat é chamada de artefato (conforme descrito em 14.8.2.2 Conteúdo Real e Artefatos da especificação do PDF). Para trabalhar com artefatos, Aspose.PDF tem duas classes: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) e [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

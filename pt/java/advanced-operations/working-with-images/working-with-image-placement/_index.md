@@ -3,7 +3,7 @@ title: Trabalhando com Colocação de Imagem
 linktitle: Colocação de Imagem
 type: docs
 weight: 50
-url: pt/java/working-with-image-placement/
+url: /pt/java/working-with-image-placement/
 description: Esta seção descreve os recursos de trabalhar com a colocação de imagem em um arquivo PDF usando a biblioteca Java.
 lastmod: "2021-06-05"
 ---

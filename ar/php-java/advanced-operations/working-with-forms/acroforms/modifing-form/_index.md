@@ -3,7 +3,7 @@ title: تعديل AcroForms
 linktitle: تعديل AcroForms
 type: docs
 weight: 40
-url: ar/java/modifing-form/
+url: /ar/java/modifing-form/
 description: يشرح هذا القسم كيفية تعديل النماذج في مستند PDF الخاص بك باستخدام Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

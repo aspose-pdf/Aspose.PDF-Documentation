@@ -3,7 +3,7 @@ title: C++を使用した追加アノテーション
 linktitle: 追加アノテーション
 type: docs
 weight: 60
-url: ja/cpp/extra-annotations/
+url: /ja/cpp/extra-annotations/
 description: このセクションでは、PDFドキュメントに追加の種類のアノテーションを追加、取得、および削除する方法について説明します。
 lastmod: "2021-11-24"
 sitemap:

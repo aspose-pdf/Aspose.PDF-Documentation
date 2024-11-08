@@ -3,7 +3,7 @@ title: C#を使用したPDFツールチップ
 linktitle: PDFツールチップ
 type: docs
 weight: 20
-url: ja/net/pdf-tooltip/
+url: /ja/net/pdf-tooltip/
 description: C#とAspose.PDFを使用してPDFのテキストフラグメントにツールチップを追加する方法を学ぶ
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## 検索したテキストに見えないボタンを追加してツールチップを追加する
 

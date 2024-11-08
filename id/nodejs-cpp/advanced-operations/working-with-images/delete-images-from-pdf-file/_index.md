@@ -3,7 +3,7 @@ title: Hapus Gambar dari File PDF di Node.js
 linktitle: Hapus Gambar
 type: docs
 weight: 20
-url: id/nodejs-cpp/delete-images-from-pdf-file/
+url: /id/nodejs-cpp/delete-images-from-pdf-file/
 description: Bagian ini menjelaskan cara menghapus gambar dari file PDF menggunakan Aspose.PDF untuk Node.js via C++.
 lastmod: "2023-11-16"
 ---

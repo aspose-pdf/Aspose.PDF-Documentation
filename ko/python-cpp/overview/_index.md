@@ -3,7 +3,7 @@ title: Aspose.PDF for Python via C++
 linktitle: 개요
 type: docs
 weight: 20
-url: ko/python-cpp/overview/
+url: /ko/python-cpp/overview/
 lastmod: "2024-04-08"
 description: Aspose.PDF for Python via C++의 주요 기능 및 지원 형식 개요, 라이브러리 설치 및 라이선스 매뉴얼.
 sitemap:

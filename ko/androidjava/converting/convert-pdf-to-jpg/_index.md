@@ -3,7 +3,7 @@ title: PDF를 JPG로 변환하기
 linktitle: PDF를 JPG로 변환하기
 type: docs
 weight: 10
-url: ko/androidjava/convert-pdf-to-jpg/
+url: /ko/androidjava/convert-pdf-to-jpg/
 description: 이 페이지는 Aspose.PDF for Android via Java를 사용하여 PDF 페이지를 JPEG 이미지로 변환하는 방법과 모든 페이지와 단일 페이지를 JPEG 이미지로 변환하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

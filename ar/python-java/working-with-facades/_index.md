@@ -3,7 +3,7 @@ title: العمل مع الواجهات
 linktitle: العمل مع الواجهات
 type: docs
 weight: 80
-url: ar/python-java/working-with-facades/
+url: /ar/python-java/working-with-facades/
 description: يشرح هذا القسم كيفية العمل مع الواجهات - مجموعة أدوات للعمليات الشائعة مع PDF.
 lastmod: "2023-06-15"
 sitemap:

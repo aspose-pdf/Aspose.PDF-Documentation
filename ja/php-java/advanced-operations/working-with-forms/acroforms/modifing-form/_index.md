@@ -3,7 +3,7 @@ title: AcroFormsの変更
 linktitle: AcroFormsの変更
 type: docs
 weight: 40
-url: ja/java/modifing-form/
+url: /ja/java/modifing-form/
 description: このセクションでは、Aspose.PDF for PHP via Javaを使用してPDFドキュメント内のフォームを変更する方法を説明します。
 lastmod: "2024-06-05"
 sitemap:

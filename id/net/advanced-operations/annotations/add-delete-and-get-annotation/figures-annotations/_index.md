@@ -3,7 +3,7 @@ title: Menambahkan Anotasi Figur menggunakan C#
 linktitle: Anotasi Figur
 type: docs
 weight: 30
-url: id/net/figures-annotation/
+url: /id/net/figures-annotation/
 description: Artikel ini menjelaskan cara menambahkan, mendapatkan, dan menghapus anotasi figur dari dokumen PDF Anda dengan Aspose.PDF untuk .NET
 lastmod: "2023-09-12"
 sitemap:
@@ -89,7 +89,7 @@ Aplikasi manajemen dokumen PDF menyediakan berbagai alat untuk memberi anotasi p
 
 Pendekatan untuk menambahkan anotasi adalah tipikal untuk semuanya.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 1. Muat file PDF atau buat baru oleh [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Buat anotasi baru dan atur parameter (Rectangle baru, Point baru, judul, warna, lebar, dll).

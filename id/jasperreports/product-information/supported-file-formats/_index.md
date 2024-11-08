@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: id/jasperreports/supported-file-formats/
+url: /id/jasperreports/supported-file-formats/
 
 lastmod: "2021-06-05"
 

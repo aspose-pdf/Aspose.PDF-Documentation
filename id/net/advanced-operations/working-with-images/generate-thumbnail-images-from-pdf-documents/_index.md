@@ -3,7 +3,7 @@ title: Membuat Gambar Thumbnail dari PDF
 linktitle: Membuat Gambar Thumbnail
 type: docs
 weight: 110
-url: id/net/generate-thumbnail-images-from-pdf-documents/
+url: /id/net/generate-thumbnail-images-from-pdf-documents/
 description: Bagian ini menjelaskan cara membuat gambar thumbnail dari dokumen PDF
 lastmod: "2022-02-17"
 ---

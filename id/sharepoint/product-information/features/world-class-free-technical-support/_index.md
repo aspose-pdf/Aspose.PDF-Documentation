@@ -2,7 +2,7 @@
 title: Dukungan Teknis Gratis Kelas Dunia
 type: docs
 weight: 20
-url: id/sharepoint/world-class-free-technical-support/
+url: /id/sharepoint/world-class-free-technical-support/
 lastmod: "2020-12-16"
 description: PDF SharePoint API menyediakan dukungan teknis gratis dan tidak terbatas melalui forum, blog, dan dukungan prioritas.
 ---

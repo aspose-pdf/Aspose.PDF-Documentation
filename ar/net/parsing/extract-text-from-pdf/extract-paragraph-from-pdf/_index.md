@@ -3,7 +3,7 @@ title: استخراج فقرة من PDF بلغة C#
 linktitle: استخراج فقرة من PDF
 type: docs
 weight: 20
-url: ar/net/extract-paragraph-from-pdf/
+url: /ar/net/extract-paragraph-from-pdf/
 description: هذا المقال يصف كيفية استخدام أداة ParagraphAbsorber - أداة خاصة في Aspose.PDF لاستخراج النصوص من مستندات PDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ sitemap:
 
 **1- برسم حدود الأقسام والفقرات على صفحة PDF:**
 
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -79,7 +79,7 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page)
 ```
 **2- من خلال تكرار مجموعة الفقرات والحصول على نصوصها:**
 
-الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET

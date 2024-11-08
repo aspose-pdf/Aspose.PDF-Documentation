@@ -3,7 +3,7 @@ title: Node.jsでPDFからテーブルを抽出する
 linktitle: PDFからテーブルを抽出
 type: docs
 weight: 10
-url: ja/nodejs-cpp/extract-tables-from-the-pdf-file/
+url: /ja/nodejs-cpp/extract-tables-from-the-pdf-file/
 description: Aspose.PDF for Node.js via C++ツールキットを使用してPDFをCSVに変換する方法。
 lastmod: "2023-11-16"
 sitemap:

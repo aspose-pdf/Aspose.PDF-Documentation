@@ -2,7 +2,7 @@
 title: Optimiser un document PDF pour le Web en PHP
 type: docs
 weight: 60
-url: fr/java/optimize-pdf-document-for-the-web-in-php/
+url: /fr/java/optimize-pdf-document-for-the-web-in-php/
 lastmod: "2021-06-05"
 ---
 

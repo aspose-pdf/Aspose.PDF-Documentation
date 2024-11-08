@@ -3,7 +3,7 @@ title: Create Links in PDF file with C#
 linktitle: Create Links
 type: docs
 weight: 10
-url: ko/net/create-links/
+url: /ko/net/create-links/
 description: 이 섹션에서는 C#을 사용하여 PDF 문서에 링크를 생성하는 방법에 대해 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "이 섹션에서는 C#을 사용하여 PDF 문서에 링크를 생성하는 방법에 대해 설명합니다."
 }
 </script>
-다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서 작동합니다.
+다음 코드 스니펫도 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서 작동합니다.
 
 ## 링크 생성
 

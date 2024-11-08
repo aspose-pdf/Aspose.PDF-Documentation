@@ -3,7 +3,7 @@ title: تدوير النص داخل PDF
 linktitle: تدوير النص داخل PDF
 type: docs
 weight: 50
-url: ar/java/rotate-text-inside-pdf/
+url: /ar/java/rotate-text-inside-pdf/
 description: تعلم طرق مختلفة لتدوير النص في PDF. يتيح لك Aspose.PDF تدوير النص بأي زاوية، تدوير جزء من النص أو فقرة كاملة.
 lastmod: "2021-06-05"
 sitemap:

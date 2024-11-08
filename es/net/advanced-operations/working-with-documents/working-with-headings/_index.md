@@ -1,7 +1,7 @@
 ---
 title: Trabajando con Encabezados en PDF
 type: docs
-url: es/net/working-with-headings/
+url: /es/net/working-with-headings/
 description: Crear numeración en el encabezado de su documento PDF con C#. Aspose.PDF para .NET ofrece diferentes tipos de estilos de numeración.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Los encabezados son partes importantes de cualquier documento. Los escritores siempre intentan hacer que los encabezados sean más prominentes y significativos para sus lectores. Si hay más de un encabezado en un documento, un escritor tiene varias opciones para organizar estos encabezados. Uno de los enfoques más comunes para organizar encabezados es escribirlos en Estilo de Numeración.
 
-[Aspose.PDF for .NET](/pdf/net/) ofrece muchos estilos de numeración predefinidos. Estos estilos de numeración predefinidos se almacenan en una enumeración, NumberingStyle. Los valores predefinidos de la enumeración NumberingStyle y sus descripciones se dan a continuación:
+[Aspose.PDF for .NET](/pdf/es/net/) ofrece muchos estilos de numeración predefinidos. Estos estilos de numeración predefinidos se almacenan en una enumeración, NumberingStyle. Los valores predefinidos de la enumeración NumberingStyle y sus descripciones se dan a continuación:
 
 |**Tipos de Encabezado**|**Descripción**|
 | :- | :- |
@@ -94,7 +94,7 @@ La propiedad **Estilo** de la clase **Aspose.PDF.Heading** se utiliza para estab
 | :- |
 El código fuente, para obtener el resultado mostrado en la figura anterior, se proporciona a continuación en el ejemplo.
 
-El siguiente fragmento de código también funciona con una nueva interfaz gráfica [Aspose.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con una nueva interfaz gráfica [Aspose.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // La ruta al directorio de documentos.

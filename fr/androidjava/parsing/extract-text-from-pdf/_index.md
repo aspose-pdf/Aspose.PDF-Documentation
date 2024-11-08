@@ -3,7 +3,7 @@ title: Extraire du texte d'un PDF
 linktitle: Extraire du texte 
 type: docs
 weight: 10
-url: fr/androidjava/extract-text-from-pdf/
+url: /fr/androidjava/extract-text-from-pdf/
 description: Aspose.PDF permet d'extraire différents types d'informations. Cette section contient des articles sur l'extraction de texte de documents PDF à l'aide d'Aspose.PDF pour Android via Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -16,5 +16,5 @@ Extraire le texte d'un fichier PDF est une tâche courante pour les développeur
 Pour les entreprises de data mining, de gestion de contenu et de traitement de formulaires, l'extraction de texte sera particulièrement utile.
  Extracting text comes in handy: archiving: Le texte et ses composants peuvent être récupérés afin que les documents puissent être indexés et archivés avec des capacités de recherche complètes; récupérer et traiter des données dans des formulaires; extraire des informations telles que des données de compte, des adresses postales et des numéros de téléphone à des fins administratives; extraire des photos et des images.
 
-- [Extraire du texte du PDF](/pdf/androidjava/extract-text-from-all-pdf/)
-- [Extraire un paragraphe du PDF](/pdf/androidjava/extract-paragraph-from-pdf/)
+- [Extraire du texte du PDF](/pdf/fr/androidjava/extract-text-from-all-pdf/)
+- [Extraire un paragraphe du PDF](/pdf/fr/androidjava/extract-paragraph-from-pdf/)

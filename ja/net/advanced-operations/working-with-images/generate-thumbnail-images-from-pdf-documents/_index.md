@@ -3,7 +3,7 @@ title: PDFからサムネイル画像を生成する
 linktitle: PDFからサムネイル画像を生成する
 type: docs
 weight: 110
-url: ja/net/generate-thumbnail-images-from-pdf-documents/
+url: /ja/net/generate-thumbnail-images-from-pdf-documents/
 description: このセクションでは、PDFドキュメントからサムネイル画像を生成する方法について説明します
 lastmod: "2022-02-17"
 ---

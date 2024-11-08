@@ -3,7 +3,7 @@ title: Convertir le format PDF/A en format PDF
 linktitle: Convertir le format PDF/A en format PDF
 type: docs
 weight: 110
-url: fr/net/convert-pdfa-to-pdf/
+url: /fr/net/convert-pdfa-to-pdf/
 lastmod: "2021-11-01"
 description: Ce sujet vous montre comment Aspose.PDF permet de convertir un fichier PDF/A en document PDF avec la bibliothèque .NET.
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-Le snippet de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le snippet de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Convertir un document PDF/A en PDF
 

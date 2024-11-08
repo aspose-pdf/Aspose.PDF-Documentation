@@ -3,7 +3,7 @@ title: 使用无障碍和标记的PDF
 linktitle: 无障碍。标记PDF
 type: docs
 weight: 120
-url: zh/java/accessibility-tagged-pdf/
+url: /zh/java/accessibility-tagged-pdf/
 description: Aspose.PDF提供创建标记PDF文档的功能，使您能够标记结构元素。了解更多关于如何获得无障碍PDF。
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ Aspose.PDF提供了创建与PDF/UA标准（也称为“第508节”或“WCAG标
 
 本节涵盖以下主题：
 
-- [创建标记的PDF](/pdf/java/create-tagged-pdf-documents/)
-- [从标记的PDF中提取标记内容](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
-- [设置结构元素属性](/pdf/java/set-tagged-pdfs-element-properties/)
-- [在标记的PDF中处理表格](/pdf/java/working-with-table-in-tagged-pdfs/)
+- [创建标记的PDF](/pdf/zh/java/create-tagged-pdf-documents/)
+- [从标记的PDF中提取标记内容](/pdf/zh/java/extract-tagged-content-from-tagged-pdfs/)
+- [设置结构元素属性](/pdf/zh/java/set-tagged-pdfs-element-properties/)
+- [在标记的PDF中处理表格](/pdf/zh/java/working-with-table-in-tagged-pdfs/)

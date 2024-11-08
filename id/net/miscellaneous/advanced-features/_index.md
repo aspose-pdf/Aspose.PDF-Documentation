@@ -2,7 +2,7 @@
 title: Fitur Lanjutan
 type: docs
 weight: 210
-url: id/net/advanced-features/
+url: /id/net/advanced-features/
 ---
 
 ## Mengirim Pdf ke Browser untuk Diunduh

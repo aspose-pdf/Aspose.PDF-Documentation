@@ -2,7 +2,7 @@
 title: Menyisipkan Halaman Kosong di Akhir File PDF di Python
 type: docs
 weight: 60
-url: id/python-java/insert-an-empty-page-at-end-of-pdf-file-in-python/
+url: /id/python-java/insert-an-empty-page-at-end-of-pdf-file-in-python/
 ---
 
 <ins>Untuk Menyisipkan Halaman Kosong di akhir dokumen PDF menggunakan **Aspose.PDF Java untuk Python**, cukup panggil kelas **InsertEmptyPageAtEndOfFile**.

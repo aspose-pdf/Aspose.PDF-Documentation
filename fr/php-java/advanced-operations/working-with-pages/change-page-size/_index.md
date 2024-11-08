@@ -3,7 +3,7 @@ title: Modifier la Taille des Pages PDF Programmatiquement
 linktitle: Changer la Taille des Pages PDF
 type: docs
 weight: 50
-url: fr/php-java/change-page-size/
+url: /fr/php-java/change-page-size/
 description: Modifier la taille des pages de votre fichier PDF en utilisant PHP.
 lastmod: "2024-06-05"
 sitemap:

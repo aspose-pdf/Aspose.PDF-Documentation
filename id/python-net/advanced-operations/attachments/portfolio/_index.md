@@ -3,7 +3,7 @@ title: Bekerja dengan Portofolio dalam PDF menggunakan Python
 linktitle: Portofolio
 type: docs
 weight: 20
-url: id/python-net/portfolio/
+url: /id/python-net/portfolio/
 description: Cara Membuat Portofolio PDF dengan Python. Anda harus menggunakan File Microsoft Excel, dokumen Word, dan file gambar untuk membuat Portofolio PDF.
 lastmod: "2023-02-17"
 sitemap:

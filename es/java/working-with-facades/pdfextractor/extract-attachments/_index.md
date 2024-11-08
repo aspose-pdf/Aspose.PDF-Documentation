@@ -2,7 +2,7 @@
 title: Extraer Adjuntos de un Archivo PDF
 type: docs
 weight: 10
-url: es/java/extract-attachments/
+url: /es/java/extract-attachments/
 description: Esta sección explica sobre cómo extraer adjuntos de un pdf con la clase PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

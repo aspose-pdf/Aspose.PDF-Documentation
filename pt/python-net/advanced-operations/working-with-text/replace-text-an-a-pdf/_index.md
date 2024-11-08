@@ -3,7 +3,7 @@ title: Substituir Texto em PDF via Python
 linktitle: Substituir Texto em PDF
 type: docs
 weight: 40
-url: pt/python-net/replace-text-in-pdf/
+url: /pt/python-net/replace-text-in-pdf/
 description: Saiba mais sobre várias maneiras de substituir e remover texto da biblioteca Aspose.PDF para Python via .NET.
 lastmod: "2024-02-17"
 sitemap:

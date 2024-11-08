@@ -3,7 +3,7 @@ title: Extraire les données de table à partir d'un PDF
 linktitle: Extraire les données de table
 type: docs
 weight: 40
-url: fr/java/extract-data-from-table-in-pdf/
+url: /fr/java/extract-data-from-table-in-pdf/
 description: Apprenez à extraire les données tabulaires d'un PDF en utilisant Aspose.PDF pour Java
 lastmod: "2021-06-05"
 sitemap:
@@ -119,7 +119,7 @@ public static void Extract_Marked_Table() {
 ## Extraire les Données de Table d'un PDF et les stocker dans un fichier CSV
 
 L'exemple suivant montre comment extraire une table et la stocker sous forme de fichier CSV.
-Pour voir comment convertir un PDF en feuille de calcul Excel, veuillez vous référer à l'article [Convertir un PDF en Excel](/pdf/java/convert-pdf-to-excel/).
+Pour voir comment convertir un PDF en feuille de calcul Excel, veuillez vous référer à l'article [Convertir un PDF en Excel](/pdf/fr/java/convert-pdf-to-excel/).
 
 ```java
 public static void Extract_Table_Save_CSV()

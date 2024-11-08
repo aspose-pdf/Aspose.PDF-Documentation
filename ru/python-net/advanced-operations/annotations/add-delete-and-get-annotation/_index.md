@@ -3,7 +3,7 @@ title: Добавление, удаление и получение аннота
 linktitle: Добавление, удаление и получение аннотации
 type: docs
 weight: 20
-url: ru/python-net/add-delete-and-get-annotation/
+url: /ru/python-net/add-delete-and-get-annotation/
 description: С помощью Aspose.PDF для Python вы можете добавлять, удалять и получать аннотации из вашего PDF файла. Проверьте все списки аннотаций для решения вашей задачи.
 lastmod: "2023-02-17"
 sitemap:
@@ -83,8 +83,8 @@ sitemap:
 
 Мы объединили различные виды аннотаций, доступные для библиотеки Aspose.PDF для Python, в группы:
 
-- [Текстовая аннотация PDF](/pdf/python-net/text-annotation/)
-- [Выделения в PDF](/pdf/python-net/highlights-annotation/)
-- [Фигуры в PDF](/pdf/python-net/figures-annotation/)
-- [Липкие аннотации PDF](/pdf/python-net/sticky-annotations/)
-- [Дополнительные аннотации](/pdf/python-net/extra-annotations/)
+- [Текстовая аннотация PDF](/pdf/ru/python-net/text-annotation/)
+- [Выделения в PDF](/pdf/ru/python-net/highlights-annotation/)
+- [Фигуры в PDF](/pdf/ru/python-net/figures-annotation/)
+- [Липкие аннотации PDF](/pdf/ru/python-net/sticky-annotations/)
+- [Дополнительные аннотации](/pdf/ru/python-net/extra-annotations/)

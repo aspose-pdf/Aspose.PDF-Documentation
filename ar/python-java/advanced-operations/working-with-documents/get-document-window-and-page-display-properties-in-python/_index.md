@@ -2,7 +2,7 @@
 title: الحصول على خواص نافذة المستند وعرض الصفحة في بايثون
 type: docs
 weight: 30
-url: ar/python-java/get-document-window-and-page-display-properties-in-python/
+url: /ar/python-java/get-document-window-and-page-display-properties-in-python/
 ---
 
 <ins>للحصول على خصائص نافذة المستند وعرض الصفحة لوثيقة Pdf باستخدام **Aspose.PDF Java for Python**، يمكنك ببساطة استدعاء فئة **GetDocumentWindow**.

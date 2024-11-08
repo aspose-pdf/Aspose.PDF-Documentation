@@ -2,7 +2,7 @@
 title: 既存のPDFファイルのXMPメタデータを取得する - ファサード
 type: docs
 weight: 10
-url: ja/java/get-xmp-metadata/
+url: /ja/java/get-xmp-metadata/
 description: このセクションでは、PdfXmpMetadataクラスを使用してAspose.PDFファサードでXMPメタデータを取得する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

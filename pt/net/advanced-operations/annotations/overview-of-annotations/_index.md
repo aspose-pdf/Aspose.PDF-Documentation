@@ -3,7 +3,7 @@ title: Visão Geral das Anotações Suportadas
 linktitle: Visão Geral das Anotações
 type: docs
 weight: 10
-url: pt/net/overview-of-annotations/
+url: /pt/net/overview-of-annotations/
 description: Confira a lista de anotações possíveis com as quais você pode trabalhar usando Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,31 +80,31 @@ A tabela a seguir indica os tipos de anotação que o Aspose.PDF para .NET supor
 
 |**Tipo de Anotação**|**Descrição**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Text](/pdf/net/text-annotation/)|Anotação de texto|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/net/extra-annotations/)|Anotações de link|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[FreeText](/pdf/net/text-annotation/)|(PDF 1.3) Anotação de texto livre|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Line](/pdf/net/figures-annotation/)|(PDF 1.3) Anotação de linha|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Square](/pdf/net/figures-annotation/)|(PDF 1.3) Anotação de quadrado|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Circle](/pdf/net/figures-annotation/)|(PDF 1.3) Anotação de círculo|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Polygon](/pdf/net/figures-annotation/)|(PDF 1.5) Anotação de polígono|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/net/figures-annotation/)|(PDF 1.5) Anotação de polilinha|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-| [PolyLine](/pdf/net/figures-annotation/) | (PDF 1.5) Anotação de polilinha | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Highlight](/pdf/net/highlights-annotation/) | (PDF 1.3) Anotação de destaque | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Underline](/pdf/net/highlights-annotation/) | (PDF 1.3) Anotação de sublinhado | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Squiggly](/pdf/net/highlights-annotation/) | (PDF 1.4) Anotação de sublinhado ondulado | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [StrikeOut](/pdf/net/highlights-annotation/) | (PDF 1.3) Anotação de tachado | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Stamp](/pdf/net/stamping/) | (PDF 1.3) Anotação de carimbo de borracha | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Caret](/pdf/net/extra-annotations/) | (PDF 1.5) Anotação de inserção | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Ink](/pdf/net/figures-annotation/) | (PDF 1.3) Anotação de tinta | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Popup](/pdf/net/text-annotation/) | (PDF 1.3) Anotação pop-up | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+|[Text](/pdf/pt/net/text-annotation/)|Anotação de texto|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/pt/net/extra-annotations/)|Anotações de link|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[FreeText](/pdf/pt/net/text-annotation/)|(PDF 1.3) Anotação de texto livre|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Line](/pdf/pt/net/figures-annotation/)|(PDF 1.3) Anotação de linha|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Square](/pdf/pt/net/figures-annotation/)|(PDF 1.3) Anotação de quadrado|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Circle](/pdf/pt/net/figures-annotation/)|(PDF 1.3) Anotação de círculo|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polygon](/pdf/pt/net/figures-annotation/)|(PDF 1.5) Anotação de polígono|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[PolyLine](/pdf/pt/net/figures-annotation/)|(PDF 1.5) Anotação de polilinha|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+| [PolyLine](/pdf/pt/net/figures-annotation/) | (PDF 1.5) Anotação de polilinha | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Highlight](/pdf/pt/net/highlights-annotation/) | (PDF 1.3) Anotação de destaque | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Underline](/pdf/pt/net/highlights-annotation/) | (PDF 1.3) Anotação de sublinhado | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Squiggly](/pdf/pt/net/highlights-annotation/) | (PDF 1.4) Anotação de sublinhado ondulado | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [StrikeOut](/pdf/pt/net/highlights-annotation/) | (PDF 1.3) Anotação de tachado | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Stamp](/pdf/pt/net/stamping/) | (PDF 1.3) Anotação de carimbo de borracha | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Caret](/pdf/pt/net/extra-annotations/) | (PDF 1.5) Anotação de inserção | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Ink](/pdf/pt/net/figures-annotation/) | (PDF 1.3) Anotação de tinta | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Popup](/pdf/pt/net/text-annotation/) | (PDF 1.3) Anotação pop-up | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
 
-|[Popup](/pdf/net/text-annotation/)|(PDF 1.3) Anotação pop-up|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Sound](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotação de som|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Movie](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotação de filme|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotação de widget|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Screen](/pdf/net/multimedia-annotation/)|(PDF 1.5) Anotação de tela|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/net/sticky-annotations/)|(PDF 1.6) Anotação de marca d'água|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Redact](/pdf/net/extra-annotations/)|(PDF 1.7) Anotação de redação|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Popup](/pdf/pt/net/text-annotation/)|(PDF 1.3) Anotação pop-up|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sound](/pdf/pt/net/multimedia-annotation/)|(PDF 1.2) Anotação de som|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Movie](/pdf/pt/net/multimedia-annotation/)|(PDF 1.2) Anotação de filme|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/pt/net/multimedia-annotation/)|(PDF 1.2) Anotação de widget|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Screen](/pdf/pt/net/multimedia-annotation/)|(PDF 1.5) Anotação de tela|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/pt/net/sticky-annotations/)|(PDF 1.6) Anotação de marca d'água|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redact](/pdf/pt/net/extra-annotations/)|(PDF 1.7) Anotação de redação|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {

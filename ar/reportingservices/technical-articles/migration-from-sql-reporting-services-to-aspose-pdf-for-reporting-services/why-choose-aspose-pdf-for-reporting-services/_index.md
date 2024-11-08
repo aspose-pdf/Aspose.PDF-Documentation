@@ -2,7 +2,7 @@
 title: لماذا تختار Aspose.Pdf لخدمات التقارير
 type: docs
 weight: 10
-url: ar/reportingservices/why-choose-aspose-pdf-for-reporting-services/
+url: /ar/reportingservices/why-choose-aspose-pdf-for-reporting-services/
 lastmod: "2021-06-05"
 ---
 

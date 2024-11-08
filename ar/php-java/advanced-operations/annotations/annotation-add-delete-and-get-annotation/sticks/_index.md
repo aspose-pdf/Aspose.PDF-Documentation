@@ -3,7 +3,7 @@ title: PDF Sticky Annotations
 linktitle: Sticky Annotation
 type: docs
 weight: 50
-url: ar/php-java/sticky-annotations/
+url: /ar/php-java/sticky-annotations/
 description: هذا الموضوع عن التعليقات التوضيحية اللاصقة، كمثال نظهر التعليق التوضيحي للعلامة المائية في النص. يُستخدم لتمثيل الرسومات على الصفحة. تحقق من مقتطف الكود لحل هذه المهمة.
 lastmod: "2024-06-24"
 sitemap:

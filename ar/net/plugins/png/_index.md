@@ -2,7 +2,7 @@
 title: محول PNG
 type: docs
 weight: 110
-url: ar/net/plugins/png/
+url: /ar/net/plugins/png/
 description: تحويل مستندات PDF إلى صور PNG باستخدام إضافة Aspose.PDF PNG
 lastmod: "2024-01-24"
 ---

@@ -2,7 +2,7 @@
 title: Bekerja dengan Heading dalam PDF
 type: docs
 weight: 70
-url: id/java/working-with-headings/
+url: /id/java/working-with-headings/
 lastmod: "2021-06-05"
 description: Buat penomoran dalam heading dokumen PDF Anda dengan Java. Aspose.PDF untuk Java menawarkan berbagai jenis gaya penomoran.
 sitemap:

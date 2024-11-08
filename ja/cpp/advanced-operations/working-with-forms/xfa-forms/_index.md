@@ -3,7 +3,7 @@ title: C++を使用したXFAフォームの操作
 linktitle: XFAフォーム
 type: docs
 weight: 20
-url: ja/cpp/xfa-forms/
+url: /ja/cpp/xfa-forms/
 description: Aspose.PDF for C++ APIを使用すると、PDFドキュメント内のXFAおよびXFA Acroformフィールドを操作できます。Aspose.PDF.Facades。
 lastmod: "2021-12-01"
 sitemap:

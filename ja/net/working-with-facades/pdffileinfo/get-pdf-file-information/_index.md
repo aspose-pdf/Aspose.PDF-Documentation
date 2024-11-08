@@ -2,7 +2,7 @@
 title: PDFファイル情報を取得する
 type: docs
 weight: 50
-url: ja/net/get-pdf-file-information/
+url: /ja/net/get-pdf-file-information/
 description: このセクションでは、Aspose.PDF Facadesを使用してPDFファイル情報を取得する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

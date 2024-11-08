@@ -2,7 +2,7 @@
 title: Convert PDF File
 type: docs
 weight: 30
-url: id/net/convert-pdf-file/
+url: /id/net/convert-pdf-file/
 description: Bagian ini menjelaskan cara mengonversi File PDF dengan Aspose.PDF Facades menggunakan kelas PdfConverter.
 lastmod: "2021-06-05"
 draft: false
@@ -61,4 +61,4 @@ Dalam cuplikan kode berikut, kami akan menunjukkan bagaimana Anda dapat mengubah
 
 ## See also
 
-Aspose.PDF untuk .NET memungkinkan konversi dokumen PDF ke berbagai format dan juga konversi dari format lain ke PDF. Selain itu, Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara online dengan aplikasi konverter Aspose.PDF. Pelajari bagian [Converting](/pdf/net/converting/) untuk menyelesaikan tugas Anda.
+Aspose.PDF untuk .NET memungkinkan konversi dokumen PDF ke berbagai format dan juga konversi dari format lain ke PDF. Selain itu, Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara online dengan aplikasi konverter Aspose.PDF. Pelajari bagian [Converting](/pdf/id/net/converting/) untuk menyelesaikan tugas Anda.

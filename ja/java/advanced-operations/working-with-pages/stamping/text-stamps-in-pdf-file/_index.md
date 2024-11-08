@@ -3,7 +3,7 @@ title: PDFにテキストスタンプをプログラムで追加
 linktitle: PDFファイルにおけるテキストスタンプ
 type: docs
 weight: 20
-url: ja/java/text-stamps-in-the-pdf-file/
+url: /ja/java/text-stamps-in-the-pdf-file/
 description: JavaでTextStampクラスを使用してPDFファイルにテキストスタンプを追加します。
 lastmod: "2021-06-05"
 sitemap:

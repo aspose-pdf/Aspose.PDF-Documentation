@@ -3,7 +3,7 @@ title: PDF 문서 작업
 linktitle: 문서 작업
 type: docs
 weight: 10
-url: ko/cpp/working-with-documents/
+url: /ko/cpp/working-with-documents/
 lastmod: "2021-06-05"
 description: 이 기사는 Aspose.PDF for C++ 라이브러리를 사용하여 문서로 수행할 수 있는 조작에 대해 설명합니다.
 sitemap:
@@ -21,10 +21,10 @@ PDF 파일은 무제한의 정보를 포함할 수 있지만, 이미지 품질 �
 
 You are able to do the following:
 
-- [Create PDF Document](/pdf/cpp/create-pdf-document/) - PDF 생성, 검색 가능한 PDF 문서 생성.
-- [Formatting PDF Document](/pdf/cpp/formatting-pdf-document/) - 문서 속성 가져오기 및 설정, 글꼴 포함 및 PDF 파일과의 기타 작업.
-- [Manipulate PDF Document](/pdf/cpp/manipulate-pdf-document/) - PDF A 표준을 위한 PDF 문서 검증, 목차 작업, PDF 만료 날짜 설정 등.
-- [Optimize PDF Documents](/pdf/cpp/optimize-pdf/) - 페이지 내용 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 문서 최적화를 위한 모든 이미지 압축.
-- [Merge PDF](/pdf/cpp/merge-pdf-documents/) - C++를 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합.
-- [Split PDF](/pdf/cpp/split-pdf-document/) - C++ 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할.
-- [Working with Headings](/pdf/cpp/working-with-headings/) - C++로 PDF 문서의 제목에 번호 매기기를 생성할 수 있습니다.
+- [Create PDF Document](/pdf/ko/cpp/create-pdf-document/) - PDF 생성, 검색 가능한 PDF 문서 생성.
+- [Formatting PDF Document](/pdf/ko/cpp/formatting-pdf-document/) - 문서 속성 가져오기 및 설정, 글꼴 포함 및 PDF 파일과의 기타 작업.
+- [Manipulate PDF Document](/pdf/ko/cpp/manipulate-pdf-document/) - PDF A 표준을 위한 PDF 문서 검증, 목차 작업, PDF 만료 날짜 설정 등.
+- [Optimize PDF Documents](/pdf/ko/cpp/optimize-pdf/) - 페이지 내용 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 문서 최적화를 위한 모든 이미지 압축.
+- [Merge PDF](/pdf/ko/cpp/merge-pdf-documents/) - C++를 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합.
+- [Split PDF](/pdf/ko/cpp/split-pdf-document/) - C++ 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할.
+- [Working with Headings](/pdf/ko/cpp/working-with-headings/) - C++로 PDF 문서의 제목에 번호 매기기를 생성할 수 있습니다.

@@ -2,7 +2,7 @@
 title: Splitter
 type: docs
 weight: 120
-url: id/net/plugins/splitter/
+url: /id/net/plugins/splitter/
 description: Memisahkan dokumen PDF menjadi halaman terpisah
 lastmod: "2024-01-24"
 draft: false

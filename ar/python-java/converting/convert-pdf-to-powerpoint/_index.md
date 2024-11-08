@@ -3,7 +3,7 @@ title: تحويل PDF إلى PowerPoint في بايثون
 linktitle: تحويل PDF إلى PowerPoint
 type: docs
 weight: 30
-url: ar/python-java/convert-pdf-to-powerpoint/
+url: /ar/python-java/convert-pdf-to-powerpoint/
 description: تتيح لك Aspose.PDF تحويل PDF إلى صيغة PPT (PowerPoint) باستخدام بايثون. هناك إمكانية لتحويل PDF إلى PPTX مع الشرائح كصور.
 lastmod: "2023-04-06"
 sitemap:

@@ -3,7 +3,7 @@ title: Rechercher et Obtenir du Texte à partir des Pages d'un Document PDF
 linktitle: Rechercher et Obtenir du Texte
 type: docs
 weight: 60
-url: fr/java/search-and-get-text-from-pdf/
+url: /fr/java/search-and-get-text-from-pdf/
 description: Cet article explique comment utiliser divers outils pour rechercher et obtenir du texte à partir de documents PDF. Nous pouvons rechercher avec une expression régulière à partir de pages particulières ou de l'ensemble des pages.
 lastmod: "2021-06-05"
 sitemap:

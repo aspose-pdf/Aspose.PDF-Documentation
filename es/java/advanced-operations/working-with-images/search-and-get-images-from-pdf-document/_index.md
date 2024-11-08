@@ -3,7 +3,7 @@ title: Buscar y Obtener Imágenes de un Documento PDF
 linktitle: Buscar y Obtener Imágenes
 type: docs
 weight: 60
-url: es/java/search-and-get-images-from-pdf-document/
+url: /es/java/search-and-get-images-from-pdf-document/
 description: Esta sección explica cómo buscar y obtener imágenes de un documento PDF con la biblioteca Aspose.PDF para Java.
 lastmod: "2021-06-05"
 ---

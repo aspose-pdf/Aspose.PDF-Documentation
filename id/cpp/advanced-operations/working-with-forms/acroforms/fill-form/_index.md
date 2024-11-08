@@ -3,7 +3,7 @@ title: Isi AcroForm
 linktitle: Isi AcroForm
 type: docs
 weight: 20
-url: id/cpp/fill-form/
+url: /id/cpp/fill-form/
 description: Bagian ini menjelaskan cara mengisi bidang formulir dalam dokumen PDF dengan Aspose.PDF untuk C++.
 lastmod: "2021-12-01"
 sitemap:

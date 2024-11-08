@@ -2,7 +2,7 @@
 title: Mengonversi File ke PDF melalui Aktivitas Alur Kerja
 type: docs
 weight: 50
-url: id/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
+url: /id/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
 lastmod: "2020-12-16"
 description: API SharePoint PDF dapat digunakan dalam alur kerja SharePoint yang mengonversi dokumen ke PDF.
 ---

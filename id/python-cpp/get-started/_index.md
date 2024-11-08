@@ -3,7 +3,7 @@ title: Memulai
 linktitle: Memulai
 type: docs
 weight: 30
-url: id/python-cpp/get-started/
+url: /id/python-cpp/get-started/
 description: Halaman ini adalah gambaran umum tentang cara menggunakan Aspose.PDF untuk Python melalui C++ untuk membuat dan mengedit dokumen PDF
 lastmod: "2021-06-05"   
 sitemap: 
@@ -38,6 +38,6 @@ Aspose.PDF untuk Python via C++ adalah cepat, ringan dan mudah digunakan. Ini me
 
 ### Pelajari lebih lanjut tentang:
 
-- ["Hello, World" Contoh Python](/pdf/python-cpp/hello-world-example/)
-- [PDF Kompleks](/pdf/python-cpp/complex-pdf-example/)
-- [Cara menjalankan contoh lain](/pdf/python-cpp/how-to-run-other-examples/)
+- ["Hello, World" Contoh Python](/pdf/id/python-cpp/hello-world-example/)
+- [PDF Kompleks](/pdf/id/python-cpp/complex-pdf-example/)
+- [Cara menjalankan contoh lain](/pdf/id/python-cpp/how-to-run-other-examples/)

@@ -3,7 +3,7 @@ title: PDFからの添付ファイルの削除
 linktitle: 既存のPDFからの添付ファイルの削除
 type: docs
 weight: 30
-url: ja/net/removing-attachment-from-an-existing-pdf/
+url: /ja/net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDFを使ってPDFドキュメントから添付ファイルを削除できます。C# PDF APIを使用してAspose.PDFライブラリを使いPDFファイルから添付ファイルを削除します。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Aspose.PDFは、PDFファイルから添付ファイルを削除できます。PDFドキュメントの添付ファイルは、DocumentオブジェクトのEmbeddedFilesコレクションに保持されています。
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 PDFファイルに関連付けられているすべての添付ファイルを削除するには：
 

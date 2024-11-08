@@ -3,7 +3,7 @@ title: Set Ukuran Gambar
 linktitle: Set Ukuran Gambar
 type: docs
 weight: 80
-url: id/java/set-image-size/
+url: /id/java/set-image-size/
 description: Bagian ini menjelaskan cara mengatur ukuran gambar dalam file PDF menggunakan pustaka Java.
 lastmod: "2021-06-05"
 ---

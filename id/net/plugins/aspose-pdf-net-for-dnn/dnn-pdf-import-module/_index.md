@@ -2,7 +2,7 @@
 title: DNN PDF Import Module
 type: docs
 weight: 10
-url: id/net/dnn-pdf-import-module/
+url: /id/net/dnn-pdf-import-module/
 description: Pelajari cara memasang dan menggunakan Modul Impor PDF untuk DotNetNuke
 lastmod: "2021-06-05"
 sitemap:

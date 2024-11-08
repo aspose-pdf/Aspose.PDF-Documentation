@@ -2,7 +2,7 @@
 title: Aspose.PdfをRubyでサポート、拡張、寄与する
 type: docs
 weight: 30
-url: ja/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
+url: /ja/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

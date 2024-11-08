@@ -3,7 +3,7 @@ title: Converter vários formatos de Imagens para PDF
 linktitle: Converter Imagens para PDF
 type: docs
 weight: 60
-url: pt/php-java/convert-images-format-to-pdf/
+url: /pt/php-java/convert-images-format-to-pdf/
 lastmod: "2024-05-20"
 description: Este tópico mostra como a biblioteca Aspose.PDF para PHP permite converter vários formatos de imagens para PDF.
 sitemap:

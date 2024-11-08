@@ -3,7 +3,7 @@ title: C#を使用したPDFマルチメディア注釈
 linktitle: マルチメディア注釈
 type: docs
 weight: 40
-url: ja/net/multimedia-annotation/
+url: /ja/net/multimedia-annotation/
 description: Aspose.PDF for .NETを使用すると、PDFドキュメントからマルチメディア注釈を追加、取得、削除することができます。
 lastmod: "2022-02-17"
 sitemap:
@@ -99,7 +99,7 @@ type: docs
 - void Update(): アノテーションのデータ構造を作成します。このメソッドは最後に呼び出すべきです。
 - void SetPoster(Stream): ビデオのポスター、つまりプレイヤーが非アクティブの時に表示される画像を設定します。
 
-以下のコードスニペットは [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携して動作します。
+以下のコードスニペットは [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携して動作します。
 
 ## スクリーンアノテーションの追加
 
@@ -370,7 +370,7 @@ document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
 document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
 ```
 
-この機能の詳細な情報と可能性については、[フォームの操作](/pdf/net/acroforms/)も参照してください。
+この機能の詳細な情報と可能性については、[フォームの操作](/pdf/ja/net/acroforms/)も参照してください。
 
 PDFドキュメントでは、3D CADや3Dモデリングソフトウェアで作成された高品質の3Dコンテンツを表示および管理でき、PDFドキュメントに埋め込まれます。手に持っているかのように全方向に3D要素を回転させることができます。
 

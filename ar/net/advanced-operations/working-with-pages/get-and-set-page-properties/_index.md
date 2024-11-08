@@ -1,7 +1,7 @@
 ---
 title: الحصول وتعيين خصائص الصفحة
 type: docs
-url: ar/net/get-and-set-page-properties/
+url: /ar/net/get-and-set-page-properties/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -71,7 +71,7 @@ lastmod: "2022-02-17"
 </script>
 Aspose.PDF لـ .NET يتيح لك قراءة وتعيين خصائص الصفحات في ملف PDF في تطبيقات .NET الخاصة بك. هذا القسم يوضح كيفية الحصول على عدد الصفحات في ملف PDF، والحصول على معلومات حول خصائص صفحة PDF مثل اللون وتعيين خصائص الصفحة. الأمثلة المعطاة بلغة C# ولكن يمكنك استخدام أي لغة .NET مثل VB.NET لتحقيق نفس الشيء.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## الحصول على عدد الصفحات في ملف PDF
 
@@ -116,7 +116,7 @@ Aspose.PDF لـ .NET يتيح لك قراءة وتعيين خصائص الصفح
 
 ## الحصول على صفحة معينة من ملف PDF
 
-يتيح لك Aspose.PDF [تقسيم ملف PDF إلى صفحات فردية](/pdf/net/split-pdf-document/) وحفظها كملفات PDF. الحصول على صفحة محددة في ملف PDF وحفظها كملف PDF جديد هو عملية مشابهة جدًا: افتح المستند المصدر، وصول إلى الصفحة، إنشاء مستند جديد وإضافة الصفحة إليه.
+يتيح لك Aspose.PDF [تقسيم ملف PDF إلى صفحات فردية](/pdf/ar/net/split-pdf-document/) وحفظها كملفات PDF. الحصول على صفحة محددة في ملف PDF وحفظها كملف PDF جديد هو عملية مشابهة جدًا: افتح المستند المصدر، وصول إلى الصفحة، إنشاء مستند جديد وإضافة الصفحة إليه.
 
 يحتفظ كائن [المستند](https://reference.aspose.com/pdf/net/aspose.pdf/document) بالصفحات في ملف PDF من خلال [مجموعة الصفحات](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 الكائن [الوثيقة](https://reference.aspose.com/pdf/net/aspose.pdf/document) يحتوي على [مجموعة الصفحات](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) التي تضم الصفحات في ملف PDF.

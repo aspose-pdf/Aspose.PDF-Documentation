@@ -3,7 +3,7 @@ title: Guardar documento PDF programáticamente
 linktitle: Guardar PDF
 type: docs
 weight: 30
-url: es/python-net/save-pdf-document/
+url: /es/python-net/save-pdf-document/
 description: Aprenda cómo guardar un archivo PDF en Python Aspose.PDF para la biblioteca .NET. Guarde el documento PDF en el sistema de archivos, en un flujo y en aplicaciones web.
 lastmod: "2022-12-22"
 sitemap:

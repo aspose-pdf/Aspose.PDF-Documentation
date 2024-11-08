@@ -3,7 +3,7 @@ title: Tambahkan tanda air ke PDF menggunakan C++
 linktitle: Tambahkan tanda air
 type: docs
 weight: 90
-url: id/cpp/add-watermarks/
+url: /id/cpp/add-watermarks/
 description: Artikel ini menjelaskan fitur bekerja dengan artefak dan mendapatkan tanda air dalam PDF secara programatis menggunakan C++.
 lastmod: "2021-12-08"
 sitemap:

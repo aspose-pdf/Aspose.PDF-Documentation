@@ -3,7 +3,7 @@ title: PDF/A を PDF 形式に変換
 linktitle: PDF/A を PDF 形式に変換
 type: docs
 weight: 110
-url: ja/cpp/convert-pdfa-to-pdf/
+url: /ja/cpp/convert-pdfa-to-pdf/
 lastmod: "2021-11-19"
 description: このトピックでは、Aspose.PDF を使用して PDF/A ファイルを C++ ライブラリで PDF ドキュメントに変換する方法を示します。
 sitemap:

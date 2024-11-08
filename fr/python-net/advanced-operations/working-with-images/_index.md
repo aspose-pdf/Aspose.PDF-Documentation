@@ -3,7 +3,7 @@ title: Travailler avec des images dans un PDF en utilisant Python
 linktitle: Travailler avec des images
 type: docs
 weight: 40
-url: fr/python-net/working-with-images/
+url: /fr/python-net/working-with-images/
 description: Cette section décrit les fonctionnalités de travail avec des images dans un fichier PDF en utilisant la bibliothèque Python.
 lastmod: "2023-04-17"
 sitemap:
@@ -81,6 +81,6 @@ Il existe de nombreuses méthodes et outils pour éditer et manipuler des images
 
 Vous pouvez faire ce qui suit :
 
-- [Ajouter une image à un fichier PDF existant](/pdf/python-net/add-image-to-existing-pdf-file/) - ajouter des images et des références d'une seule image dans un document PDF, après cela, contrôler la qualité.
-- [Supprimer des images d'un fichier PDF](/pdf/python-net/delete-images-from-pdf-file/) - vérifier l'extrait de code pour supprimer des images d'un fichier PDF.
-- [Extraire des images d'un fichier PDF](/pdf/python-net/extract-images-from-pdf-file/) - le prochain article montre comment extraire des images d'un fichier PDF en utilisant la bibliothèque Python.
+- [Ajouter une image à un fichier PDF existant](/pdf/fr/python-net/add-image-to-existing-pdf-file/) - ajouter des images et des références d'une seule image dans un document PDF, après cela, contrôler la qualité.
+- [Supprimer des images d'un fichier PDF](/pdf/fr/python-net/delete-images-from-pdf-file/) - vérifier l'extrait de code pour supprimer des images d'un fichier PDF.
+- [Extraire des images d'un fichier PDF](/pdf/fr/python-net/extract-images-from-pdf-file/) - le prochain article montre comment extraire des images d'un fichier PDF en utilisant la bibliothèque Python.

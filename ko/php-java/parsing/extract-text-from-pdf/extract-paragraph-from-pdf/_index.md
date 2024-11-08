@@ -3,7 +3,7 @@ title: PDF에서 단락 추출
 linktitle: 단락 추출
 type: docs
 weight: 20
-url: ko/php-java/extract-paragraph-from-pdf/
+url: /ko/php-java/extract-paragraph-from-pdf/
 description: 이 문서는 Aspose.PDF의 특별한 도구인 ParagraphAbsorber를 사용하여 PDF 문서에서 텍스트를 추출하는 방법을 설명합니다.
 lastmod: "2024-05-20"
 sitemap:

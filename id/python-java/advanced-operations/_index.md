@@ -3,7 +3,7 @@ title: Operasi lanjutan
 linktitle: Operasi lanjutan
 type: docs
 weight: 90
-url: id/python-java/advanced-operations/
+url: /id/python-java/advanced-operations/
 description: Aspose.PDF untuk Python melalui Java dapat melakukan tugas sederhana dan mudah serta mengatasi tujuan yang lebih kompleks. Periksa bagian selanjutnya untuk pengguna dan pengembang tingkat lanjut.
 lastmod: "2023-04-17"
 sitemap:
@@ -77,11 +77,11 @@ sitemap:
 </script>
 
 
-**Operasi Lanjutan** adalah bagian tentang cara menangani file PDF yang ada secara programatis, baik dokumen yang dibuat dengan Aspose.PDF seperti dibahas dalam [Operasi Dasar](/pdf/python-java/basic-operations/), atau PDF yang dibuat dengan Adobe Acrobat, Google Docs, Microsoft Office, Open Office atau produsen PDF lainnya.
+**Operasi Lanjutan** adalah bagian tentang cara menangani file PDF yang ada secara programatis, baik dokumen yang dibuat dengan Aspose.PDF seperti dibahas dalam [Operasi Dasar](/pdf/id/python-java/basic-operations/), atau PDF yang dibuat dengan Adobe Acrobat, Google Docs, Microsoft Office, Open Office atau produsen PDF lainnya.
 
 Anda akan belajar berbagai cara untuk:
 
-- [Bekerja dengan Dokumen](/pdf/python-java/working-with-documents/) - kompres, pisah, dan gabungkan dokumen serta lakukan operasi lain dengan seluruh dokumen.
-- [Bekerja dengan Halaman](/pdf/python-java/working-with-pages/) - tambahkan, pindahkan atau hapus, potong halaman, tambahkan watermark, stempel, dan lain-lain.
-- [Bekerja dengan Formulir](/pdf/python-java/working-with-forms/) - menangani dokumen PDF interaktif, tambahkan formfield, ekstrak data.
-- [Bekerja dengan Teks](/pdf/python-java/working-with-text/) - tambahkan, format, cari dan ganti teks dalam PDF.
+- [Bekerja dengan Dokumen](/pdf/id/python-java/working-with-documents/) - kompres, pisah, dan gabungkan dokumen serta lakukan operasi lain dengan seluruh dokumen.
+- [Bekerja dengan Halaman](/pdf/id/python-java/working-with-pages/) - tambahkan, pindahkan atau hapus, potong halaman, tambahkan watermark, stempel, dan lain-lain.
+- [Bekerja dengan Formulir](/pdf/id/python-java/working-with-forms/) - menangani dokumen PDF interaktif, tambahkan formfield, ekstrak data.
+- [Bekerja dengan Teks](/pdf/id/python-java/working-with-text/) - tambahkan, format, cari dan ganti teks dalam PDF.

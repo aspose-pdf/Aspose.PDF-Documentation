@@ -3,7 +3,7 @@ title: Menambahkan tanda tangan digital atau menandatangani PDF secara digital d
 linktitle: Menandatangani PDF secara digital
 type: docs
 weight: 10
-url: id/net/digitally-sign-pdf-file/
+url: /id/net/digitally-sign-pdf-file/
 description: Menandatangani dokumen PDF secara digital menggunakan C# atau VB.NET. Verifikasi atau validasi PDF yang ditandatangani secara digital menggunakan C# atau VB.NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,8 +82,8 @@ Ketika menandatangani dokumen PDF menggunakan tanda tangan, Anda pada dasarnya m
 
 Dengan kata lain, dokumen tersebut masih dianggap mempertahankan integritasnya dan penerima masih dapat mempercayai dokumen tersebut. Untuk detail lebih lanjut, silakan kunjungi Sertifikasi dan penandatanganan PDF. Secara umum, mensertifikasi dokumen dapat dibandingkan dengan menandatangani kode sebuah eksekutabel .NET.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Fitur tanda tangan Aspose.PDF untuk .NET
 

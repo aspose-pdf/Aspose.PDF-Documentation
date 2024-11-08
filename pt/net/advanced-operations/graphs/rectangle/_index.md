@@ -3,7 +3,7 @@ title: Adicionar Objeto Retângulo ao arquivo PDF
 linktitle: Adicionar Retângulo
 type: docs
 weight: 50
-url: pt/net/add-rectangle/
+url: /pt/net/add-rectangle/
 description: Este artigo explica como criar um objeto Retângulo em seu PDF usando o Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Adicionar objeto Retângulo
 

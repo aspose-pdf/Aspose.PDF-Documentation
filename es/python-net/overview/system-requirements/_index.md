@@ -3,7 +3,7 @@ title: Requisitos del Sistema
 linktitle: Requisitos del Sistema
 type: docs
 weight: 30
-url: es/python-net/system-requirements/
+url: /es/python-net/system-requirements/
 description: Esta sección lista los sistemas operativos compatibles que un desarrollador necesita para trabajar exitosamente con Aspose.PDF para Python.
 lastmod: "2022-12-22"
 sitemap:

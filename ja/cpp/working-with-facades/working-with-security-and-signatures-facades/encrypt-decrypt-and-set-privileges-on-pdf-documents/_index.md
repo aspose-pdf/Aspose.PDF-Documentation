@@ -2,7 +2,7 @@
 title: PDFドキュメントの暗号化、復号化、および権限の設定
 type: docs
 weight: 10
-url: ja/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+url: /ja/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
 ---
 
 ## <ins>**既存のPDFファイルに権限を設定する**

@@ -2,7 +2,7 @@
 title: حذف صفحة معينة من ملف PDF في بايثون
 type: docs
 weight: 20
-url: ar/python-java/delete-a-particular-page-from-the-pdf-file-in-python/
+url: /ar/python-java/delete-a-particular-page-from-the-pdf-file-in-python/
 ---
 
 لحذف صفحة معينة من مستند PDF باستخدام **Aspose.PDF Java for Python**، ببساطة استدع فئة **DeletePage**.

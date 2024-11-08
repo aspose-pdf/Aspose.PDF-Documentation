@@ -2,7 +2,7 @@
 title: PDFファイルのメタデータ
 type: docs
 weight: 20
-url: ja/cpp/pdf-file-metadata/
+url: /ja/cpp/pdf-file-metadata/
 ---
 
 ## PDFファイル情報の取得/設定

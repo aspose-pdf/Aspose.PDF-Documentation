@@ -3,7 +3,7 @@ title: Pencarian dan Mendapatkan Gambar dari Dokumen PDF
 linktitle: Pencarian dan Mendapatkan Gambar
 type: docs
 weight: 60
-url: id/java/search-and-get-images-from-pdf-document/
+url: /id/java/search-and-get-images-from-pdf-document/
 description: Bagian ini menjelaskan cara mencari dan mendapatkan gambar dari dokumen PDF dengan pustaka Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 ---

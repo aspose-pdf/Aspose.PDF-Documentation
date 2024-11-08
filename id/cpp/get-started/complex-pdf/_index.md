@@ -3,7 +3,7 @@ title: Membuat PDF yang kompleks
 linktitle: Membuat PDF yang kompleks
 type: docs
 weight: 60
-url: id/cpp/complex-pdf-example/
+url: /id/cpp/complex-pdf-example/
 description: Aspose.PDF untuk C++ memungkinkan Anda membuat dokumen yang lebih kompleks yang berisi gambar, fragmen teks, dan tabel dalam satu dokumen.
 lastmod: "2021-11-05"
 sitemap:
@@ -11,8 +11,8 @@ sitemap:
     priority: 0.5
 ---
 
-Contoh [Hello, World](/pdf/cpp/hello-world-example/) menunjukkan langkah-langkah sederhana untuk membuat dokumen PDF menggunakan C++ dan Aspose.PDF. Dalam artikel ini, kita akan melihat pembuatan dokumen yang lebih kompleks dengan C++ dan Aspose.PDF untuk C++. Sebagai contoh, kita akan mengambil dokumen dari perusahaan fiktif yang mengoperasikan layanan feri penumpang.
-Dokumen kita akan berisi gambar, dua fragmen teks (header dan paragraf), dan sebuah tabel. Untuk membangun dokumen semacam itu, kita akan menggunakan pendekatan berbasis DOM. Anda dapat membaca lebih lanjut di bagian [Dasar-dasar API DOM](/pdf/cpp/basics-of-dom-api/).
+Contoh [Hello, World](/pdf/id/cpp/hello-world-example/) menunjukkan langkah-langkah sederhana untuk membuat dokumen PDF menggunakan C++ dan Aspose.PDF. Dalam artikel ini, kita akan melihat pembuatan dokumen yang lebih kompleks dengan C++ dan Aspose.PDF untuk C++. Sebagai contoh, kita akan mengambil dokumen dari perusahaan fiktif yang mengoperasikan layanan feri penumpang.
+Dokumen kita akan berisi gambar, dua fragmen teks (header dan paragraf), dan sebuah tabel. Untuk membangun dokumen semacam itu, kita akan menggunakan pendekatan berbasis DOM. Anda dapat membaca lebih lanjut di bagian [Dasar-dasar API DOM](/pdf/id/cpp/basics-of-dom-api/).
 
 Jika kita membuat dokumen dari awal kita perlu mengikuti langkah-langkah tertentu:
 

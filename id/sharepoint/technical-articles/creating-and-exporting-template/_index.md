@@ -2,7 +2,7 @@
 title: Membuat dan Mengekspor Template
 type: docs
 weight: 10
-url: id/sharepoint/creating-and-exporting-template/
+url: /id/sharepoint/creating-and-exporting-template/
 lastmod: "2020-12-16"
 description: Anda dapat membuat dan mengekspor template ke PDF di SharePoint menggunakan PDF SharePoint API.
 ---

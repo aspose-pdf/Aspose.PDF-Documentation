@@ -2,7 +2,7 @@
 title: Ruby에서 페이지 속성 가져오기
 type: docs
 weight: 50
-url: ko/java/get-page-properties-in-ruby/
+url: /ko/java/get-page-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

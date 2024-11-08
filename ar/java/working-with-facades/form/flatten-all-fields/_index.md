@@ -2,7 +2,7 @@
 title: تسطيح جميع الحقول في ملف PDF موجود (واجهات)
 type: docs
 weight: 30
-url: ar/java/flatten-all-fields/
+url: /ar/java/flatten-all-fields/
 description: يوضح هذا القسم كيفية تسطيح جميع الحقول باستخدام Aspose.PDF Facades باستخدام فئة النموذج.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: .NET 5를 사용하여 PDF 파일 병합
 linktitle: PDF 병합하는 방법
 type: docs
 weight: 75
-url: ko/net/how-to-concatenate-pdf-files-in-different-ways/
+url: /ko/net/how-to-concatenate-pdf-files-in-different-ways/
 description: 이 문서는 기존의 여러 PDF 파일을 하나의 PDF 파일로 연결하는 가능한 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-이 문서는 [Aspose.PDF for .NET](/pdf/net/) 컴포넌트를 사용하여 여러 PDF 문서를 하나의 PDF 문서로 [연결](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)하는 방법을 설명합니다. [Aspose.PDF for .NET](/pdf/net/)은 이 작업을 매우 쉽게 만들어 줍니다.
+이 문서는 [Aspose.PDF for .NET](/pdf/ko/net/) 컴포넌트를 사용하여 여러 PDF 문서를 하나의 PDF 문서로 [연결](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)하는 방법을 설명합니다. [Aspose.PDF for .NET](/pdf/ko/net/)은 이 작업을 매우 쉽게 만들어 줍니다.
 
 {{% /alert %}}
 

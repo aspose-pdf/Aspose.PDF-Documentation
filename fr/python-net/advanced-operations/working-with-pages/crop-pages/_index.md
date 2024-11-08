@@ -3,7 +3,7 @@ title: Rogner les pages PDF par programmation en Python
 linktitle: Rogner les pages
 type: docs
 weight: 70
-url: fr/python-net/crop-pages/
+url: /fr/python-net/crop-pages/
 description: Vous pouvez obtenir les propriétés des pages, telles que la largeur, la hauteur, bleed-, crop- et trimbox en utilisant Aspose.PDF pour Python via .NET.
 lastmod: "2023-04-17"
 sitemap:

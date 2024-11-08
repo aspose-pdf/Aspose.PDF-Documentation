@@ -2,7 +2,7 @@
 title: Setel Kadaluarsa PDF di Jython
 type: docs
 weight: 60
-url: id/java/set-pdf-expiration-in-jython/
+url: /id/java/set-pdf-expiration-in-jython/
 lastmod: "2021-06-05"
 ---
 

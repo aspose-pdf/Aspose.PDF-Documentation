@@ -3,7 +3,7 @@ title: Pythonを使用してブックマークを追加および削除する
 linktitle: ブックマークを追加および削除する
 type: docs
 weight: 10
-url: ja/python-net/add-and-delete-bookmark/
+url: /ja/python-net/add-and-delete-bookmark/
 description: Pythonを使用してPDFドキュメントにブックマークを追加できます。PDFドキュメントからすべてまたは特定のブックマークを削除することができます。
 lastmod: "2023-02-17"
 sitemap:

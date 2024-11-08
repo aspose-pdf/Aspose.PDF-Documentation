@@ -3,7 +3,7 @@ title: オペレーターの使用
 linktitle: オペレーターの使用
 type: docs
 weight: 170
-url: ja/net/operators/
+url: /ja/net/operators/
 description: Aspose.PDFでオペレーターを使用する方法について説明します。オペレータークラスは、PDF操作のための優れた機能を提供します。
 lastmod: "2022-02-17"
 sitemap:
@@ -106,8 +106,8 @@ PDFファイルに画像を追加するには：
    - Do 演算子を使用してページに画像を描画します。
 1. 最後に、GRestore 演算子を使用して更新されたグラフィカル状態を保存します。
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリと一緒に使用できます。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリと一緒に使用できます。
 
 以下のコードスニペットは、PDFオペレーターの使用方法を示しています。
 

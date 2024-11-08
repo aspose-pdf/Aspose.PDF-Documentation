@@ -3,7 +3,7 @@ title: العمليات المتقدمة
 linktitle: العمليات المتقدمة
 type: docs
 weight: 90
-url: ar/python-net/advanced-operations/
+url: /ar/python-net/advanced-operations/
 description: يمكن لـ Aspose.PDF لـ Python عبر .NET تنفيذ مهام بسيطة وسهلة والتعامل مع أهداف أكثر تعقيدًا. تحقق من القسم التالي للمستخدمين والمطورين المتقدمين.
 lastmod: "2023-04-17"
 sitemap:
@@ -77,17 +77,17 @@ sitemap:
 </script>
 
 
-**العمليات المتقدمة** هو قسم حول كيفية التعامل مع ملفات PDF الموجودة برمجياً، سواء كانت مستندات تم إنشاؤها باستخدام Aspose.PDF كما تم مناقشته في [العمليات الأساسية](/pdf/python-net/basic-operations/)، أو ملفات PDF تم إنشاؤها باستخدام Adobe Acrobat أو Google Docs أو Microsoft Office أو Open Office أو أي منتج PDF آخر.
+**العمليات المتقدمة** هو قسم حول كيفية التعامل مع ملفات PDF الموجودة برمجياً، سواء كانت مستندات تم إنشاؤها باستخدام Aspose.PDF كما تم مناقشته في [العمليات الأساسية](/pdf/ar/python-net/basic-operations/)، أو ملفات PDF تم إنشاؤها باستخدام Adobe Acrobat أو Google Docs أو Microsoft Office أو Open Office أو أي منتج PDF آخر.
 
 ستتعلم طرقًا مختلفة لـ:
 
-- [العمل مع المستندات](/pdf/python-net/working-with-documents/) - ضغط وتجزئة ودمج المستندات وإجراء عمليات أخرى مع المستند بأكمله.
-- [العمل مع الصفحات](/pdf/python-net/working-with-pages/) - إضافة، نقل أو إزالة، قص الصفحات، إضافة العلامات المائية والطوابع، وما إلى ذلك.
-- [العمل مع الصور](/pdf/python-net/working-with-images/) - إضافة، استخراج أو إزالة الصور من مستندات PDF.
-- [المرفقات](/pdf/python-net/attachments/) - ستتعلم كيفية إضافة وحذف المرفقات من PDF برمجياً باستخدام Python.
-- [الملاحة والتفاعل](/pdf/python-net/navigation-and-interaction/) - التعامل مع الإجراءات والعلامات المرجعية، التنقل بين الصفحات.
-- [التعليقات التوضيحية](/pdf/python-net/annotations/) - تتيح التعليقات التوضيحية للمستخدمين إضافة محتوى مخصص على صفحات PDF.
+- [العمل مع المستندات](/pdf/ar/python-net/working-with-documents/) - ضغط وتجزئة ودمج المستندات وإجراء عمليات أخرى مع المستند بأكمله.
+- [العمل مع الصفحات](/pdf/ar/python-net/working-with-pages/) - إضافة، نقل أو إزالة، قص الصفحات، إضافة العلامات المائية والطوابع، وما إلى ذلك.
+- [العمل مع الصور](/pdf/ar/python-net/working-with-images/) - إضافة، استخراج أو إزالة الصور من مستندات PDF.
+- [المرفقات](/pdf/ar/python-net/attachments/) - ستتعلم كيفية إضافة وحذف المرفقات من PDF برمجياً باستخدام Python.
+- [الملاحة والتفاعل](/pdf/ar/python-net/navigation-and-interaction/) - التعامل مع الإجراءات والعلامات المرجعية، التنقل بين الصفحات.
+- [التعليقات التوضيحية](/pdf/ar/python-net/annotations/) - تتيح التعليقات التوضيحية للمستخدمين إضافة محتوى مخصص على صفحات PDF.
  يمكنك إضافة، حذف وتعديل التعليقات التوضيحية من مستندات PDF.  
-- [العمل مع الجداول](/pdf/python-net/working-with-tables/) - إدراج، تزيين الجدول في PDF، استخراج البيانات الجدولية.  
-- [العمل مع النماذج](/pdf/python-net/working-with-forms/) - التعامل مع مستندات PDF التفاعلية، إضافة حقول النماذج، استخراج البيانات.  
-- [العمل مع النص](/pdf/python-net/working-with-text/) - إضافة، تنسيق، بحث واستبدال النص في PDF.
+- [العمل مع الجداول](/pdf/ar/python-net/working-with-tables/) - إدراج، تزيين الجدول في PDF، استخراج البيانات الجدولية.  
+- [العمل مع النماذج](/pdf/ar/python-net/working-with-forms/) - التعامل مع مستندات PDF التفاعلية، إضافة حقول النماذج، استخراج البيانات.  
+- [العمل مع النص](/pdf/ar/python-net/working-with-text/) - إضافة، تنسيق، بحث واستبدال النص في PDF.

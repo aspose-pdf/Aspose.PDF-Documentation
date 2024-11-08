@@ -2,7 +2,7 @@
 title: Excluir uma Página Específica do Arquivo PDF em Python
 type: docs
 weight: 20
-url: pt/python-java/excluir-uma-pagina-especifica-do-arquivo-pdf-em-python/
+url: /pt/python-java/excluir-uma-pagina-especifica-do-arquivo-pdf-em-python/
 ---
 
 Para excluir uma página específica do documento PDF usando **Aspose.PDF Java for Python**, basta invocar a classe **DeletePage**.

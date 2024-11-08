@@ -2,12 +2,12 @@
 title: Aspose.PDF для .NET через COM Interop
 type: docs
 weight: 20
-url: ru/net/use-aspose-pdf-for-net-via-com-interop/
+url: /ru/net/use-aspose-pdf-for-net-via-com-interop/
 ---
 
 {{% alert color="primary" %}}
 
-Информация в этой теме относится к сценариям, когда вы хотите использовать [Aspose.PDF для .NET](/pdf/net/) через COM Interop в любом из следующих языков программирования:
+Информация в этой теме относится к сценариям, когда вы хотите использовать [Aspose.PDF для .NET](/pdf/ru/net/) через COM Interop в любом из следующих языков программирования:
 
 - ASP
 - Delphi

@@ -3,7 +3,7 @@ title: Заполнение AcroForm - Заполнение формы PDF с и
 linktitle: Заполнение AcroForm
 type: docs
 weight: 20
-url: ru/net/fill-form/
+url: /ru/net/fill-form/
 keywords: Заполнение формы PDF C#
 description: Вы можете заполнять формы в вашем PDF-документе с помощью библиотеки Aspose.PDF для .NET.
 lastmod: "2022-02-17"
@@ -77,7 +77,7 @@ sitemap:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Заполнение поля формы в документе PDF
 

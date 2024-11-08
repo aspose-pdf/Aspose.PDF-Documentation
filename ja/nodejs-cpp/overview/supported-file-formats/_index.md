@@ -3,7 +3,7 @@ title: サポートされているファイル形式
 linktitle: サポートされているファイル形式
 type: docs
 weight: 10
-url: ja/nodejs-cpp/supported-file-formats/
+url: /ja/nodejs-cpp/supported-file-formats/
 description: このページは、Aspose.PDF for Node.js がロードおよび保存できるファイル形式を示します。
 lastmod: "2023-11-16"
 sitemap:

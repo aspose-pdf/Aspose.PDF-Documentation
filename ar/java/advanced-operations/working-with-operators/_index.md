@@ -3,7 +3,7 @@ title: العمل مع العوامل
 linktitle: العمل مع العوامل
 type: docs
 weight: 170
-url: ar/java/operators/
+url: /ar/java/operators/
 description: يشرح هذا الموضوع كيفية استخدام العوامل مع Aspose.PDF. توفر فئات العوامل ميزات رائعة لتعديل PDF.
 lastmod: "2021-06-05"
 sitemap:

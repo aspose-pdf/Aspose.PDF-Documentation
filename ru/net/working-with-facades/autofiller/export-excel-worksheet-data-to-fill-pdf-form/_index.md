@@ -2,7 +2,7 @@
 title: Экспорт данных Excel для заполнения формы PDF
 type: docs
 weight: 10
-url: ru/net/export-excel-worksheet-data-to-fill-pdf-form/
+url: /ru/net/export-excel-worksheet-data-to-fill-pdf-form/
 description: Этот раздел объясняет, как экспортировать данные рабочего листа Excel для заполнения формы PDF с использованием класса AutoFiller.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Пространство имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF для .NET](/pdf/net/) предлагает различные способы заполнения форм PDF. Вы можете импортировать данные из XML файла, DFD, XFDF, использовать API и даже использовать данные из рабочего листа Excel. Мы будем использовать метод [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) класса [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) из [Aspose.Cells](https://docs.aspose.com//cells/net) для экспорта данных из листа Excel в объект DataTable. Затем нам нужно импортировать эти данные в форму PDF, используя метод [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) класса [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Убедитесь, что имя столбца в DataTable совпадает с именем поля в форме PDF.
+[Пространство имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF для .NET](/pdf/ru/net/) предлагает различные способы заполнения форм PDF. Вы можете импортировать данные из XML файла, DFD, XFDF, использовать API и даже использовать данные из рабочего листа Excel. Мы будем использовать метод [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) класса [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) из [Aspose.Cells](https://docs.aspose.com//cells/net) для экспорта данных из листа Excel в объект DataTable. Затем нам нужно импортировать эти данные в форму PDF, используя метод [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) класса [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Убедитесь, что имя столбца в DataTable совпадает с именем поля в форме PDF.
 
 {{% /alert %}}
 

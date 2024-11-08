@@ -3,7 +3,7 @@ title: Format File yang Didukung
 linktitle: Format File yang Didukung
 type: docs
 weight: 10
-url: id/javascript-cpp/supported-file-formats/
+url: /id/javascript-cpp/supported-file-formats/
 description: Halaman ini menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF untuk JavaScript.
 lastmod: "2021-06-05"
 sitemap:

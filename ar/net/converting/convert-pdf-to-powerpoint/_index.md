@@ -3,7 +3,7 @@ title: تحويل PDF إلى PowerPoint في .NET
 linktitle: تحويل PDF إلى PowerPoint
 type: docs
 weight: 30
-url: ar/net/convert-pdf-to-powerpoint/
+url: /ar/net/convert-pdf-to-powerpoint/
 lastmod: "2021-11-01"
 description: يتيح لك Aspose.PDF تحويل PDF إلى تنسيق PPT (PowerPoint) باستخدام .NET. هناك طريقة لتحويل PDF إلى PPTX مع الشرائح كصور.
 lastmod: "2021-10-18"
@@ -25,7 +25,7 @@ _التنسيق_: **PowerPoint**
 - [C# تحويل PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
 - [C# كيفية تحويل ملف PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
 
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تحويل PDF إلى PowerPoint و PPTX في C#
 ## تحويل PDF إلى PowerPoint وPPTX في C#

@@ -3,7 +3,7 @@ title: Enkripsi PDF di Node.js
 linktitle: Enkripsi Berkas PDF
 type: docs
 weight: 50
-url: id/nodejs-cpp/encrypt-pdf/
+url: /id/nodejs-cpp/encrypt-pdf/
 description: Enkripsi Berkas PDF dengan Aspose.PDF untuk Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

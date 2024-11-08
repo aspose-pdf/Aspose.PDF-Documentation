@@ -3,7 +3,7 @@ title: ZUGFeRD와 작업하기
 linktitle: ZUGFeRD와 작업하기
 type: docs
 weight: 90
-url: ko/net/working-with-zugferd/
+url: /ko/net/working-with-zugferd/
 description: C#에서 Aspose.PDF for .NET을 사용하여 ZUGFeRD 호환 PDF 인보이스를 생성하는 방법을 알아보세요.
 lastmod: "2023-09-27"
 sitemap:
@@ -26,9 +26,9 @@ ZUGFeRD는 독일에서 전자 인보이스를 위한 표준입니다.
 
 또한 장기 보관 및 세금 준수를 위한 법적 요구 사항을 준수합니다. ZUGFeRD는 다양한 요구 사항과 시나리오에 맞는 다양한 버전과 프로필을 가지고 있습니다. 최신 버전은 전자 인보이스를 위한 유럽 표준 EN 16931과 호환되는 ZUGFeRD 2.0입니다. ZUGFeRD는 사용자에게 더 빠른 처리, 오류 감소, 현금 흐름 개선, 환경 영향 감소 등 많은 혜택과 비용 절감을 제공합니다.
 
-* [C#에서 PDF/3-A 준수 PDF 생성 및 ZUGFeRD 인보이스 첨부](/pdf/net/attach-zugferd/)
+* [C#에서 PDF/3-A 준수 PDF 생성 및 ZUGFeRD 인보이스 첨부](/pdf/ko/net/attach-zugferd/)
 
 참조:
 
-* [Java에서 PDF/3-A 준수 PDF 생성 및 ZUGFeRD 인보이스 첨부](/pdf/java/attach-zugferd/)
-* [Python에서 PDF/3-A 준수 PDF 생성 및 ZUGFeRD 인보이스 첨부](/pdf/python-net/attach-zugferd/)
+* [Java에서 PDF/3-A 준수 PDF 생성 및 ZUGFeRD 인보이스 첨부](/pdf/ko/java/attach-zugferd/)
+* [Python에서 PDF/3-A 준수 PDF 생성 및 ZUGFeRD 인보이스 첨부](/pdf/ko/python-net/attach-zugferd/)

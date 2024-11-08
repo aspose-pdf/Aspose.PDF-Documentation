@@ -2,7 +2,7 @@
 title: احصل على خصائص نافذة المستند وخصائص عرض الصفحة في PHP
 type: docs
 weight: 30
-url: ar/java/get-document-window-and-page-display-properties-in-php/
+url: /ar/java/get-document-window-and-page-display-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

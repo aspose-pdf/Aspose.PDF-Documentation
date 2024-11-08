@@ -3,7 +3,7 @@ title: Working with Facades
 linktitle: Working with Facades
 type: docs
 weight: 80
-url: ko/python-java/working-with-facades/
+url: /ko/python-java/working-with-facades/
 description: 이 섹션에서는 PDF와 관련된 인기 있는 작업을 위한 도구 세트인 Facades를 사용하는 방법을 설명합니다.
 lastmod: "2023-06-15"
 sitemap:

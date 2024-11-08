@@ -2,7 +2,7 @@
 title: تحويل FDF إلى صيغة XML
 type: docs
 weight: 10
-url: ar/net/converting-an-fdf-to-xml-format/
+url: /ar/net/converting-an-fdf-to-xml-format/
 description: يوضح هذا القسم كيفية تحويل FDF إلى صيغة XML باستخدام فئة FormDataConverter.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-يدعم النطاق [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/net/) AcroForms بشكل جيد. كما يدعم استيراد وتصدير بيانات النماذج إلى صيغ ملفات مختلفة مثل FDF وXFDF وXML. ومع ذلك، في بعض الأحيان قد يحتاج المطورون إلى تحويل صيغة إلى أخرى. تنظر هذه المقالة في الميزة التي تحول FDF إلى XML.
+يدعم النطاق [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) AcroForms بشكل جيد. كما يدعم استيراد وتصدير بيانات النماذج إلى صيغ ملفات مختلفة مثل FDF وXFDF وXML. ومع ذلك، في بعض الأحيان قد يحتاج المطورون إلى تحويل صيغة إلى أخرى. تنظر هذه المقالة في الميزة التي تحول FDF إلى XML.
 
 {{% /alert %}}
 

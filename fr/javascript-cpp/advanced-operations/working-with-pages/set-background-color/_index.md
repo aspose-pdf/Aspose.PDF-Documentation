@@ -3,7 +3,7 @@ title: Définir la couleur d'arrière-plan pour PDF avec JavaScript via C++
 linktitle: Définir la couleur d'arrière-plan
 type: docs
 weight: 80
-url: fr/javascript-cpp/set-background-color/
+url: /fr/javascript-cpp/set-background-color/
 description: Définir la couleur d'arrière-plan pour votre fichier PDF avec JavaScript via C++.
 lastmod: "2023-02-17"
 sitemap:

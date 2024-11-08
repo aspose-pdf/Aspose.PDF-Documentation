@@ -3,7 +3,7 @@ title: Définir la Taille de l'Image avec C++
 linktitle: Définir la Taille de l'Image
 type: docs
 weight: 80
-url: fr/cpp/set-image-size/
+url: /fr/cpp/set-image-size/
 description: Cette section décrit comment définir la taille de l'image dans un fichier PDF en utilisant la bibliothèque C++.
 lastmod: "2021-12-18"
 ---

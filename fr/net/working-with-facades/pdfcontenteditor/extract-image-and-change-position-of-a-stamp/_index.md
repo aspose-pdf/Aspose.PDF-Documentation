@@ -2,7 +2,7 @@
 title: Extraire une image et changer la position du timbre
 type: docs
 weight: 30
-url: fr/net/extract-image-and-change-position-of-a-stamp/
+url: /fr/net/extract-image-and-change-position-of-a-stamp/
 description: Cette section explique comment extraire une image et changer la position d'un timbre avec Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

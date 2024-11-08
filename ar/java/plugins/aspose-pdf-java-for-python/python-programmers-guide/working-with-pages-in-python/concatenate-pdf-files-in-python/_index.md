@@ -2,7 +2,7 @@
 title: دمج ملفات PDF في بايثون
 type: docs
 weight: 10
-url: ar/java/concatenate-pdf-files-in-python/
+url: /ar/java/concatenate-pdf-files-in-python/
 lastmod: "2021-06-05"
 ---
 

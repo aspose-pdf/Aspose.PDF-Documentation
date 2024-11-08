@@ -2,7 +2,7 @@
 title: دعم، تمديد والمساهمة في Aspose.Pdf في بايثون
 type: docs
 weight: 30
-url: ar/java/support-extend-and-contribute-to-aspose-pdf-in-python/
+url: /ar/java/support-extend-and-contribute-to-aspose-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 ## الدعم

@@ -2,7 +2,7 @@
 title: Custom Report Item Support
 type: docs
 weight: 30
-url: id/reportingservices/custom-report-item-support/
+url: /id/reportingservices/custom-report-item-support/
 lastmod: "2021-06-05"
 ---
 
@@ -14,6 +14,6 @@ Dalam Spesifikasi RDL untuk RS2016, RS2017, RS2019, RS2022, dan Power BI, hampir
 - Panah Garis.
 - Catatan Kaki/Catatan Akhir.
 
-Cari tahu cara menggunakannya dalam artikel [Perluas Properti Item Laporan](/pdf/reportingservices/expand-report-items-properties/).
+Cari tahu cara menggunakannya dalam artikel [Perluas Properti Item Laporan](/pdf/id/reportingservices/expand-report-items-properties/).
 
 {{% /alert %}}

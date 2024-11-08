@@ -3,7 +3,7 @@ title: Deletar Anotação usando JavaScript
 linktitle: Deletar Anotação
 type: docs
 weight: 10
-url: pt/javascript-cpp/delete-annotation/
+url: /pt/javascript-cpp/delete-annotation/
 description: Com Aspose.PDF para JavaScript você pode deletar anotações do seu arquivo PDF.
 lastmod: "2023-02-17"
 sitemap:

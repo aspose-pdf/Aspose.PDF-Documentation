@@ -3,7 +3,7 @@ title: Formats de Fichiers Pris en Charge
 linktitle: Formats de Fichiers Pris en Charge
 type: docs
 weight: 10
-url: fr/nodejs-cpp/supported-file-formats/
+url: /fr/nodejs-cpp/supported-file-formats/
 description: Cette page montre quels formats de fichiers Aspose.PDF pour Node.js peut charger et enregistrer.
 lastmod: "2023-11-16"
 sitemap:

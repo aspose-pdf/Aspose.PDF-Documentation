@@ -2,14 +2,14 @@
 title: CPPでのアーリーバインディングの使用
 type: docs
 weight: 10
-url: ja/net/using-early-binding-in-cpp/
+url: /ja/net/using-early-binding-in-cpp/
 ---
 
 ## 前提条件
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for .NETをCOM Interopで登録してください。[Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)という記事を参照してください。
+Aspose.PDF for .NETをCOM Interopで登録してください。[Use Aspose.pdf for .NET via COM Interop](/pdf/ja/net/use-aspose-pdf-for-net-via-com-interop/)という記事を参照してください。
 
 {{% /alert %}}
 

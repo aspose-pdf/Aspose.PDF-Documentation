@@ -2,7 +2,7 @@
 title: Dukungan Teknis Gratis Kelas Dunia
 type: docs
 weight: 50
-url: id/reportingservices/world-class-free-technical-support/
+url: /id/reportingservices/world-class-free-technical-support/
 lastmod: "2021-06-05"
 ---
 

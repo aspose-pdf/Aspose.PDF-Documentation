@@ -2,7 +2,7 @@
 title: 파이썬에서 PDF 파일 연결하기
 type: docs
 weight: 10
-url: ko/java/concatenate-pdf-files-in-python/
+url: /ko/java/concatenate-pdf-files-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: PDF에서 텍스트 추출하기 (JavaScript 사용)
 linktitle: PDF에서 텍스트 추출
 type: docs
 weight: 30
-url: ko/javascript-cpp/extract-text-from-pdf/
+url: /ko/javascript-cpp/extract-text-from-pdf/
 description: 이 문서에서는 Aspose.PDF for JavaScript를 사용하여 PDF 문서에서 텍스트를 추출하는 다양한 방법을 설명합니다.
 lastmod: "2023-06-05"
 sitemap:

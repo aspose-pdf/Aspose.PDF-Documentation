@@ -3,7 +3,7 @@ title: PDFファイルに長方形オブジェクトを追加
 linktitle: 長方形を追加
 type: docs
 weight: 50
-url: ja/cpp/add-rectangle/
+url: /ja/cpp/add-rectangle/
 description: Aspose.PDF for C++を使用してPDFに長方形オブジェクトを作成する方法を説明します。
 lastmod: "2021-12-18"
 sitemap:

@@ -3,7 +3,7 @@ title: .NET FrameworkでPDFを印刷する
 linktitle: .NET FrameworkでPDFを印刷する
 type: docs
 weight: 10
-url: ja/net/printing-pdf-in-net-framework/
+url: /ja/net/printing-pdf-in-net-framework/
 keywords: "print pdf file c#, c# print pdf"
 description: プリンターとページ設定を使用して、C#でPDFファイルをデフォルトプリンターに印刷することができます。
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "プリンターとページ設定を使用して、C#でPDFファイルをデフォルトプリンターに印刷することができます。"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
 ## **C#でPDFファイルを印刷 - プリンターとページ設定を使用してデフォルトプリンターにPDFファイルを印刷する**
 

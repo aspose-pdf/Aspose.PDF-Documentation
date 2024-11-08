@@ -3,7 +3,7 @@ title: Buka Dokumen PDF
 linktitle: Buka
 type: docs
 weight: 20
-url: id/java/open-pdf-document/
+url: /id/java/open-pdf-document/
 description: Pelajari cara membuka file PDF dengan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: العمل مع الجدول في ملفات PDF الموسومة
 linktitle: العمل مع الجدول في ملفات PDF الموسومة
 type: docs
 weight: 40
-url: ar/net/working-with-table-in-tagged-pdfs/
+url: /ar/net/working-with-table-in-tagged-pdfs/
 description: يشرح هذا المقال كيفية العمل مع الجدول في مستند PDF الموسوم باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 يتيح Aspose.PDF لـ .NET إنشاء جدول في مستندات PDF الموسومة.
 Aspose.PDF لـ .NET يسمح بإنشاء جدول في مستندات PDF الموسومة.
 
-الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 الشفرة البرمجية التالية توضح كيفية إنشاء جدول في مستند PDF الموسوم:
 

@@ -3,7 +3,7 @@ title: Trabalhando com AcroForms em PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: pt/php-java/acroforms/
+url: /pt/php-java/acroforms/
 description: Com o Aspose.PDF para PHP via Java, você pode criar um formulário do zero, preencher o campo do formulário em um documento PDF, extrair dados do formulário, adicionar ou remover campos no formulário existente.
 lastmod: "2024-06-05"
 sitemap:
@@ -34,10 +34,10 @@ Portanto, PDFs são o melhor formato de arquivo para formulários, pois podem se
 
 Para um estudo mais detalhado das possibilidades de trabalhar com formulários, estude os seguintes artigos na seção:
 
--[Criar AcroForm](/pdf/php-java/create-form/) - criar formulário do zero, adicionando RadioButtonField, TextBoxField, Caption Field usando PHP.
+-[Criar AcroForm](/pdf/pt/php-java/create-form/) - criar formulário do zero, adicionando RadioButtonField, TextBoxField, Caption Field usando PHP.
 
--[Preencher AcroForm](/pdf/php-java/fill-form/) - para preencher um campo de formulário, obtenha o campo da coleção de Formulários do objeto Document.
+-[Preencher AcroForm](/pdf/pt/php-java/fill-form/) - para preencher um campo de formulário, obtenha o campo da coleção de Formulários do objeto Document.
 
--[Extrair Dados AcroForm](/pdf/php-java/extract-form/) - obter valores de todos e dos campos individuais, etc.
+-[Extrair Dados AcroForm](/pdf/pt/php-java/extract-form/) - obter valores de todos e dos campos individuais, etc.
 
--[Modificar AcroForm](/pdf/php-java/modifing-form/) - obter/definir FieldLimit, remover campos em formulários existentes, definir a fonte do campo de formulário diferente das 14 Fontes Core PDF com PHP.
+-[Modificar AcroForm](/pdf/pt/php-java/modifing-form/) - obter/definir FieldLimit, remover campos em formulários existentes, definir a fonte do campo de formulário diferente das 14 Fontes Core PDF com PHP.

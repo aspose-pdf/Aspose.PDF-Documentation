@@ -2,7 +2,7 @@
 title: ASP - VBScript عبر COM Interop
 type: docs
 weight: 30
-url: ar/net/asp-vbscript-via-com-interop/
+url: /ar/net/asp-vbscript-via-com-interop/
 ---
 
 ## المتطلبات الأساسية
@@ -17,7 +17,7 @@ url: ar/net/asp-vbscript-via-com-interop/
 
 {{% alert color="primary" %}}
 
-هذا تطبيق ASP بسيط يوضح كيفية إنشاء ملف PDF بنص عينة باستخدام [Aspose.PDF for .NET](/pdf/net/) وVBScript عبر COM Interop.
+هذا تطبيق ASP بسيط يوضح كيفية إنشاء ملف PDF بنص عينة باستخدام [Aspose.PDF for .NET](/pdf/ar/net/) وVBScript عبر COM Interop.
 
 {{% /alert %}}
 

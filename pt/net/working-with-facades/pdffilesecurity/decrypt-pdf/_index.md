@@ -2,7 +2,7 @@
 title: Decrypt PDF File
 type: docs
 weight: 20
-url: pt/net/decrypt-pdf-file/
+url: /pt/net/decrypt-pdf-file/
 description: Este tópico explica como Descriptografar Arquivo PDF usando a Classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

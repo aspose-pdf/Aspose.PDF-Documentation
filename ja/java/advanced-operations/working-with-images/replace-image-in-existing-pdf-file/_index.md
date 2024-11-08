@@ -3,7 +3,7 @@ title: 既存のPDFファイル内の画像を置き換える
 linktitle: 画像を置き換える
 type: docs
 weight: 70
-url: ja/java/replace-image-in-existing-pdf-file/
+url: /ja/java/replace-image-in-existing-pdf-file/
 description: このセクションでは、Javaライブラリを使用して既存のPDFファイル内の画像を置き換える方法について説明します。
 lastmod: "2021-06-05"
 ---

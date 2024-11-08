@@ -3,7 +3,7 @@ title: Añadir Número de Página a PDF con C++
 linktitle: Añadir Número de Página
 type: docs
 weight: 100
-url: es/cpp/add-page-number/
+url: /es/cpp/add-page-number/
 description: Aspose.PDF para C++ te permite añadir un Sello de Número de Página a tu archivo PDF usando la clase PageNumber Stamp.
 lastmod: "2021-12-03"
 sitemap:

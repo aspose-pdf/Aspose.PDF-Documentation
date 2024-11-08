@@ -3,7 +3,7 @@ title: ما هو الجديد
 linktitle: ما هو الجديد
 type: docs
 weight: 10
-url: ar/nodejs-cpp/whatsnew/
+url: /ar/nodejs-cpp/whatsnew/
 description: في هذه الصفحة يتم تقديم أكثر الميزات الجديدة شعبية في Aspose.PDF for Node.js عبر C++ التي تم تقديمها في الإصدارات الأخيرة.
 sitemap:
     changefreq: "monthly"

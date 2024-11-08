@@ -2,7 +2,7 @@
 title: Aspose.PDF를 PHP에 다운로드 및 구성
 type: docs
 weight: 10
-url: ko/java/download-and-configure-aspose-pdf-in-php/
+url: /ko/java/download-and-configure-aspose-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

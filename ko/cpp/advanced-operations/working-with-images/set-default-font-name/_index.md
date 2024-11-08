@@ -3,7 +3,7 @@ title: C++를 사용하여 기본 글꼴 이름 설정
 linktitle: 기본 글꼴 이름 설정
 type: docs
 weight: 90
-url: ko/cpp/set-default-font-name/
+url: /ko/cpp/set-default-font-name/
 description: 이 섹션에서는 C++ 라이브러리를 사용하여 기본 글꼴 이름을 설정하는 방법을 설명합니다.
 lastmod: "2021-12-18"
 ---

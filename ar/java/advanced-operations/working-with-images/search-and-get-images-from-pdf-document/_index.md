@@ -3,7 +3,7 @@ title: البحث والحصول على الصور من مستند PDF
 linktitle: البحث والحصول على الصور
 type: docs
 weight: 60
-url: ar/java/search-and-get-images-from-pdf-document/
+url: /ar/java/search-and-get-images-from-pdf-document/
 description: يشرح هذا القسم كيفية البحث والحصول على الصور من مستند PDF باستخدام مكتبة Aspose.PDF for Java.
 lastmod: "2021-06-05"
 ---

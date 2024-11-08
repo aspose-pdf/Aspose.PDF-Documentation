@@ -3,7 +3,7 @@ title: PDFをPNGに変換する
 linktitle: PDFをPNGに変換する
 type: docs
 weight: 20
-url: ja/androidjava/convert-pdf-to-png/
+url: /ja/androidjava/convert-pdf-to-png/
 lastmod: "2021-06-05"
 description: このページでは、Aspose.PDF for Android via Javaを使用してPDFページをPNG画像に変換する方法、すべてのページおよび単一ページをPNG画像に変換する方法について説明します。
 sitemap:

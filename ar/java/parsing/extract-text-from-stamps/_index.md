@@ -2,7 +2,7 @@
 title: استخراج النص من الأختام
 type: docs
 weight: 60
-url: ar/java/extract-text-from-stamps/
+url: /ar/java/extract-text-from-stamps/
 ---
 
 ## استخراج النص من التعليقات التوضيحية للأختام

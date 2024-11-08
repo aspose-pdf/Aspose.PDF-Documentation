@@ -3,7 +3,7 @@ title: PDFファイルから生のテキストを抽出する
 linktitle: PDFからテキストを抽出
 type: docs
 weight: 10
-url: ja/php-java/extract-text-from-all-pdf/
+url: /ja/php-java/extract-text-from-all-pdf/
 description: この記事では、Aspose.PDF for PHPを使用してPDF文書からテキストを抽出するさまざまな方法について説明します。ページ全体から、特定の部分から、列に基づいて、など。
 lastmod: "2024-05-20"
 sitemap:

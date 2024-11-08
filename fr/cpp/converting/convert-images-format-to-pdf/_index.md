@@ -3,7 +3,7 @@ title: Convertir divers formats d'images en PDF
 linktitle: Convertir des images en PDF
 type: docs
 weight: 60
-url: fr/cpp/convert-images-format-to-pdf/
+url: /fr/cpp/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: Ce sujet vous montre comment la bibliothèque Aspose.PDF pour C++ permet de convertir divers formats d'images en PDF.
 sitemap:

@@ -3,7 +3,7 @@ title: PDFハイライトアノテーションをC#で使用
 linktitle: ハイライトアノテーション
 type: docs
 weight: 20
-url: ja/net/highlights-annotation/
+url: /ja/net/highlights-annotation/
 description: マークアップアノテーションは、ドキュメントのテキストにハイライト、下線、取り消し線、またはジャギーの下線として表示されます。
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ PDFドキュメント内のテキストマークアップ注釈のプロパテ�
 次の機能は、underlineSettingsプロパティを使用して、下線注釈の設定を取得または設定する能力です。
 次の機能は、underlineSettingsプロパティを使用して下線注釈の設定を取得または設定する機能です。
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 ## テキストマークアップ注釈を追加
 

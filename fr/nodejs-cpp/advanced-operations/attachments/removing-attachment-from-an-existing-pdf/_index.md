@@ -3,7 +3,7 @@ title: Suppression des pièces jointes d'un PDF dans Node.js
 linktitle: Suppression de la pièce jointe d'un PDF existant
 type: docs
 weight: 10
-url: fr/nodejs-cpp/removing-attachment-from-an-existing-pdf/
+url: /fr/nodejs-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF peut supprimer les pièces jointes de vos documents PDF. Utilisez l'environnement Node.js pour supprimer les pièces jointes dans les fichiers PDF avec Aspose.PDF.
 lastmod: "2023-11-16"
 sitemap:

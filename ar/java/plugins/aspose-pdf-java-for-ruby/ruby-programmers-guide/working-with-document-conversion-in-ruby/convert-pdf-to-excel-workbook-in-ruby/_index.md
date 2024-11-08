@@ -2,7 +2,7 @@
 title: تحويل PDF إلى مصنف Excel في روبي
 type: docs
 weight: 40
-url: ar/java/convert-pdf-to-excel-workbook-in-ruby/
+url: /ar/java/convert-pdf-to-excel-workbook-in-ruby/
 lastmod: "2021-06-05"
 ---
 

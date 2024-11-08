@@ -3,7 +3,7 @@ title: Node.js에서 PDF에서 표 추출하기
 linktitle: PDF에서 표 추출하기
 type: docs
 weight: 10
-url: ko/nodejs-cpp/extract-tables-from-the-pdf-file/
+url: /ko/nodejs-cpp/extract-tables-from-the-pdf-file/
 description: Aspose.PDF for Node.js via C++ 툴킷을 사용하여 PDF를 CSV로 변환하는 방법.
 lastmod: "2023-11-16"
 sitemap:

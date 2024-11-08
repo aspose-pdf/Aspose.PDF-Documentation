@@ -2,7 +2,7 @@
 title: 데이터 가져오기 및 내보내기
 type: docs
 weight: 70
-url: ko/net/import-and-export-data/
+url: /ko/net/import-and-export-data/
 description: 이 섹션에서는 Form Class를 사용하여 Aspose.PDF Facades로 데이터 가져오기 및 내보내기를 설명합니다.
 lastmod: "2024-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Mengamankan dan menandatangani dokumen PDF
 linktitle: Mengamankan dan menandatangani di PDF
 type: docs
 weight: 150
-url: id/cpp/securing-and-signing/
+url: /id/cpp/securing-and-signing/
 description: Bagian ini menjelaskan fitur penggunaan tanda tangan dan mengamankan dokumen PDF Anda menggunakan C++
 lastmod: "2021-12-15"
 sitemap:
@@ -15,8 +15,8 @@ Saat ini semakin banyak dokumen resmi yang disimpan dalam format PDF. Dan ada ke
 
 Dalam artikel ini, Anda akan belajar bagaimana menambahkan tanda tangan digital ke file PDF dan menandatangani dari kartu pintar, bagaimana mengekstraksi informasi gambar dan tanda tangan dari PDF Anda. Juga, topik ini menunjukkan bagaimana mengenkripsi dan mendekripsi dokumen PDF.
 
-- [Tanda tangan digital file PDF](/pdf/cpp/digitally-sign-pdf-file/)
+- [Tanda tangan digital file PDF](/pdf/id/cpp/digitally-sign-pdf-file/)
 ```
-- [Tetapkan Hak Istimewa, Enkripsi dan Dekripsi File PDF](/pdf/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Ekstrak Informasi Gambar dan Tanda Tangan](/pdf/cpp/extract-image-and-signature-information/)
+- [Tetapkan Hak Istimewa, Enkripsi dan Dekripsi File PDF](/pdf/id/cpp/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Ekstrak Informasi Gambar dan Tanda Tangan](/pdf/id/cpp/extract-image-and-signature-information/)
 ```

@@ -2,7 +2,7 @@
 title: إعداد خدمات التقارير
 type: docs
 weight: 20
-url: ar/reportingservices/setting-up-reporting-services/
+url: /ar/reportingservices/setting-up-reporting-services/
 lastmod: "2021-06-05"
 ---
 

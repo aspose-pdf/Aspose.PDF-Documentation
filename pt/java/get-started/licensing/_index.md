@@ -3,7 +3,7 @@ title: Licenciamento e limitações
 linktitle: Licenciamento e limitações
 type: docs
 weight: 90
-url: pt/java/licensing/
+url: /pt/java/licensing/
 description: Aspose.PDF para Java convida seus clientes a obter uma licença Clássica e Licença Medida. Assim como usar uma licença limitada para explorar melhor o produto.
 lastmod: "2021-06-05"
 sitemap:

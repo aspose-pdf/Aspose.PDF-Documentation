@@ -2,7 +2,7 @@
 title: Mengatur SharePoint pada Server Layanan Pelaporan
 type: docs
 weight: 30
-url: id/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+url: /id/reportingservices/setting-up-sharepoint-on-reporting-services-server/
 lastmod: "2021-06-05"
 ---
 

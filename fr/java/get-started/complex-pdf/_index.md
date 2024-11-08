@@ -3,7 +3,7 @@ title: Création d'un PDF complexe
 linktitle: Création d'un PDF complexe
 type: docs
 weight: 60
-url: fr/java/complex-pdf-example/
+url: /fr/java/complex-pdf-example/
 description: Aspose.PDF pour Java vous permet de créer des documents plus complexes contenant des images, des fragments de texte et des tableaux dans un seul document.
 lastmod: "2021-06-05"
 sitemap:
@@ -11,8 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
-L'exemple [Hello, World](/pdf/java/hello-world-example/) a montré les étapes simples pour créer un document PDF en utilisant Java et Aspose.PDF. Dans cet article, nous allons examiner la création d'un document plus complexe avec Java et Aspose.PDF pour Java. À titre d'exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferry pour passagers.
-Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe), et un tableau. Pour construire un tel document, nous utiliserons une approche basée sur le DOM. Vous pouvez en lire plus dans la section [Notions de base de l'API DOM](/pdf/java/basics-of-dom-api/).
+L'exemple [Hello, World](/pdf/fr/java/hello-world-example/) a montré les étapes simples pour créer un document PDF en utilisant Java et Aspose.PDF. Dans cet article, nous allons examiner la création d'un document plus complexe avec Java et Aspose.PDF pour Java. À titre d'exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferry pour passagers.
+Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe), et un tableau. Pour construire un tel document, nous utiliserons une approche basée sur le DOM. Vous pouvez en lire plus dans la section [Notions de base de l'API DOM](/pdf/fr/java/basics-of-dom-api/).
 
 Si nous créons un document à partir de zéro, nous devons suivre certaines étapes :
 

@@ -3,7 +3,7 @@ title: تحسين، ضغط أو تقليل حجم ملف PDF في بايثون
 linktitle: تحسين PDF
 type: docs
 weight: 30
-url: ar/python-net/optimize-pdf/
+url: /ar/python-net/optimize-pdf/
 keywords: "optimize pdf python"
 description: تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إلغاء تضمين الخطوط، إزالة الكائنات غير المستخدمة باستخدام بايثون.
 lastmod: "2023-04-17"

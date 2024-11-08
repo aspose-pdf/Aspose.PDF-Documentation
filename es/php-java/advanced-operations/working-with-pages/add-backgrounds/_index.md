@@ -3,7 +3,7 @@ title: Añadir fondo a PDF
 linktitle: Añadir fondos
 type: docs
 weight: 110
-url: es/php-java/add-backgrounds/
+url: /es/php-java/add-backgrounds/
 descriptions: Añadir imagen de fondo a tu archivo PDF usando PHP. Usa el objeto BackgroundArtifact.
 lastmod: "2024-06-05"
 sitemap:

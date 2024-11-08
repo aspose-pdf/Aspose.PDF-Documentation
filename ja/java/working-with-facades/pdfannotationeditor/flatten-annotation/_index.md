@@ -2,7 +2,7 @@
 title: PDFファイルからXFDFへのアノテーションのフラット化 (facades)
 type: docs
 weight: 40
-url: ja/java/flatten-annotation/
+url: /ja/java/flatten-annotation/
 description: このセクションでは、Aspose.PDF Facadesを使用してPDFファイルからXFDFにアノテーションをエクスポートする方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

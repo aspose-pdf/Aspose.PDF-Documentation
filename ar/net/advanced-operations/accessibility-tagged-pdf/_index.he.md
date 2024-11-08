@@ -3,7 +3,7 @@ title: נגישות ו-PDF מתויגים
 linktitle: נגישות. PDF מתויג
 type: docs
 weight: 120
-url: ar/net/accessibility-tagged-pdf/
+url: /ar/net/accessibility-tagged-pdf/
 description: Aspose.PDF מספקת את היכולת ליצור מסמכי PDF מתויגים, ומאפשרת לך לתייג את האלמנטים המבניים. למד עוד על איך להשיג PDF נגישים.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,11 +79,11 @@ sitemap:
 
 סעיף זה כולל את הנושא הבא:
 
-- [יצירת PDF מתויג](/pdf/net/create-tagged-pdf/)
-- [חילוץ תוכן מתויג מ-PDFs מתויגים](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [הגדרת תכונות אלמנטי מבנה](/pdf/net/setting-structure-elements-properties/)
-- [עבודה עם טבלה ב-PDFs מתויגים](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [בדיקת תאימות PDF-UA - רשימת שגיאות](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [יצירת PDF מתויג](/pdf/ar/net/create-tagged-pdf/)
+- [חילוץ תוכן מתויג מ-PDFs מתויגים](/pdf/ar/net/extract-tagged-content-from-tagged-pdfs/)
+- [הגדרת תכונות אלמנטי מבנה](/pdf/ar/net/setting-structure-elements-properties/)
+- [עבודה עם טבלה ב-PDFs מתויגים](/pdf/ar/net/working-with-table-in-tagged-pdfs/)
+- [בדיקת תאימות PDF-UA - רשימת שגיאות](/pdf/ar/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

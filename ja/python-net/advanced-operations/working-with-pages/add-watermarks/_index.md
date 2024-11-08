@@ -3,7 +3,7 @@ title: Pythonを使用してPDFに透かしを追加する
 linktitle: 透かしを追加
 type: docs
 weight: 40
-url: ja/python-net/add-watermarks/
+url: /ja/python-net/add-watermarks/
 description: この記事では、Pythonを使用してプログラムでPDFのアーティファクトを操作し、透かしを取得する機能について説明します。
 lastmod: "2023-04-17"
 sitemap:

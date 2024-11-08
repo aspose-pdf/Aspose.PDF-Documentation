@@ -3,7 +3,7 @@ title: PDFでのAcroFormsの操作
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ja/java/acroforms/
+url: /ja/java/acroforms/
 description: Aspose.PDF for Javaを使用すると、ゼロからフォームを作成し、PDFドキュメントのフォームフィールドに入力し、フォームからデータを抽出し、既存のフォームにフィールドを追加または削除できます。
 lastmod: "2021-06-05"
 sitemap:
@@ -34,10 +34,10 @@ AcroFormsにはXFAにはない機能があり、逆にXFAにはAcroFormsには�
 
 フォーム操作の可能性を詳細に研究するには、以下のセクションの記事を参照してください：
 
--[AcroFormを作成する](/pdf/java/create-form/) - Javaを使用して、RadioButtonField、TextBoxField、Caption Fieldを追加し、ゼロからフォームを作成します。
+-[AcroFormを作成する](/pdf/ja/java/create-form/) - Javaを使用して、RadioButtonField、TextBoxField、Caption Fieldを追加し、ゼロからフォームを作成します。
 
--[AcroFormを記入する](/pdf/java/fill-form/) - フォームフィールドに記入するには、DocumentオブジェクトのFormコレクションからフィールドを取得します。
+-[AcroFormを記入する](/pdf/ja/java/fill-form/) - フォームフィールドに記入するには、DocumentオブジェクトのFormコレクションからフィールドを取得します。
 
--[AcroFormデータを抽出する](/pdf/java/extract-form/) - すべてのフィールド、および個別のフィールドから値を取得するなど。
+-[AcroFormデータを抽出する](/pdf/ja/java/extract-form/) - すべてのフィールド、および個別のフィールドから値を取得するなど。
 
--[AcroFormを変更する](/pdf/java/modifing-form/) - FieldLimitの取得/設定、既存のフォームからフィールドを削除、Javaで14のCore PDFフォント以外のフォームフィールドフォントを設定します。
+-[AcroFormを変更する](/pdf/ja/java/modifing-form/) - FieldLimitの取得/設定、既存のフォームからフィールドを削除、Javaで14のCore PDFフォント以外のフォームフィールドフォントを設定します。

@@ -2,7 +2,7 @@
 title: PDFファイル情報を設定する
 type: docs
 weight: 40
-url: ja/net/set-pdf-file-information/
+url: /ja/net/set-pdf-file-information/
 description: このセクションでは、Aspose.PDF Facadesを使用してPDFファイル情報を設定する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

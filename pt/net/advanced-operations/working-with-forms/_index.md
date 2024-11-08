@@ -3,7 +3,7 @@ title: Trabalhando com Formulários
 linktitle: Trabalhando com Formulários
 type: docs
 weight: 60
-url: pt/net/working-with-forms/
+url: /pt/net/working-with-forms/
 description: Esta seção explica como trabalhar com AcroForms e XFA Forms em seus documentos PDF com Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,8 +79,8 @@ sitemap:
 Esta seção descreve uma abordagem rápida e simples para completar programaticamente um documento PDF por meio do uso do Aspose.PDF. A seção também discute como se pode proceder para usar o Aspose.PDF para .NET para descobrir e mapear os campos disponíveis dentro de um PDF existente com AcroForms.
 Além disso, você aprenderá como trabalhar com XFA - outra tecnologia para a apresentação de formulários baseada em XML.
 
-- [AcroForms](/pdf/net/acroforms/) - criar formulário, preencher campo de formulário, extrair dados do formulário, adicionar e remover campos no seu PDF com a biblioteca .NET.
-- [XFA Forms](/pdf/net/xfa-forms/) - preencher campos XFA, converter XFA, obter propriedades dos campos XFA.
+- [AcroForms](/pdf/pt/net/acroforms/) - criar formulário, preencher campo de formulário, extrair dados do formulário, adicionar e remover campos no seu PDF com a biblioteca .NET.
+- [XFA Forms](/pdf/pt/net/xfa-forms/) - preencher campos XFA, converter XFA, obter propriedades dos campos XFA.
 
 <script type="application/ld+json">
 {

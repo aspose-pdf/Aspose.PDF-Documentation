@@ -2,7 +2,7 @@
 title: Menambahkan Aksi Javascript PDF 
 type: docs
 weight: 10
-url: id/net/adding-javascript-actions/
+url: /id/net/adding-javascript-actions/
 description: Bagian ini menjelaskan bagaimana menambahkan aksi Javascript ke file PDF yang ada dengan Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

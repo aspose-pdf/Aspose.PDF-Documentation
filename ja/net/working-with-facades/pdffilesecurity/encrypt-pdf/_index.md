@@ -2,7 +2,7 @@
 title: PDFファイルを暗号化
 type: docs
 weight: 10
-url: ja/net/encrypt-pdf-file/
+url: /ja/net/encrypt-pdf-file/
 description: このトピックでは、PdfFileSecurityクラスを使用してPDFファイルを暗号化する方法について説明します。
 lastmod: "2021-06-05"
 draft: false

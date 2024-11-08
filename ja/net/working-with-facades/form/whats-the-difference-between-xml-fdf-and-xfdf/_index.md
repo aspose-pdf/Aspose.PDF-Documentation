@@ -2,7 +2,7 @@
 title: FDF、XML、XFDF形式の違いとは
 type: docs
 weight: 30
-url: ja/net/whats-the-difference-between-xml-fdf-and-xfdf/
+url: /ja/net/whats-the-difference-between-xml-fdf-and-xfdf/
 description: このセクションでは、Aspose.PDF Facadesを使用したXML、FDF、およびXFDFフォームの違いについて説明します。
 lastmod: "2021-06-05"
 draft: false

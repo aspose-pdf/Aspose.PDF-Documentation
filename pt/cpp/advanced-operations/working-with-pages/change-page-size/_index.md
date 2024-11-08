@@ -3,7 +3,7 @@ title: Change PDF Page Size Programmatically
 linktitle: Change PDF Page Size
 type: docs
 weight: 40
-url: pt/cpp/change-page-size/
+url: /pt/cpp/change-page-size/
 description: Alterar o tamanho da página do seu arquivo PDF usando a biblioteca C++.
 lastmod: "2021-12-08"
 sitemap:

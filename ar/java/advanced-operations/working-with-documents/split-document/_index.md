@@ -3,7 +3,7 @@ title: تقسيم ملفات PDF برمجياً
 linktitle: تقسيم ملفات PDF
 type: docs
 weight: 60
-url: ar/java/split-document/
+url: /ar/java/split-document/
 description: يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات Java الخاصة بك.
 lastmod: "2021-06-05"
 sitemap:

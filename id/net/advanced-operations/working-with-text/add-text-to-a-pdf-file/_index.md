@@ -3,7 +3,7 @@ title: Menambahkan Teks ke PDF menggunakan C#
 linktitle: Menambahkan Teks ke PDF
 type: docs
 weight: 10
-url: id/net/add-text-to-pdf-file/
+url: /id/net/add-text-to-pdf-file/
 description: Artikel ini menjelaskan berbagai aspek bekerja dengan teks dalam Aspose.PDF. Pelajari cara menambahkan teks ke PDF, menambahkan fragmen HTML, atau menggunakan font OTF khusus.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "Artikel ini menjelaskan berbagai aspek bekerja dengan teks dalam Aspose.PDF. Pelajari cara menambahkan teks ke PDF, menambahkan fragmen HTML, atau menggunakan font OTF khusus."
 }
 </script>
-Kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk menambahkan teks ke file PDF yang ada:
 

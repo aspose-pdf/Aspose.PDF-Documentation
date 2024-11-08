@@ -3,7 +3,7 @@ title: Quoi de neuf
 linktitle: Quoi de neuf
 type: docs
 weight: 10
-url: fr/java/whatsnew/
+url: /fr/java/whatsnew/
 description: Cette page présente les fonctionnalités nouvelles les plus populaires dans Aspose.PDF pour Java qui ont été introduites dans les versions récentes.
 sitemap:
     changefreq: "monthly"

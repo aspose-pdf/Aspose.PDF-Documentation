@@ -3,7 +3,7 @@ title: C#を使用してタグ付きPDFを作成する
 linktitle: タグ付きPDFを作成する
 type: docs
 weight: 10
-url: ja/net/create-tagged-pdf/
+url: /ja/net/create-tagged-pdf/
 description: この記事では、Aspose.PDF for .NETを使用してプログラムでタグ付きPDFドキュメントの構造要素を作成する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 タグ付きPDFを作成するとは、ドキュメントに特定の要素を追加（または作成）して、PDF/UA要件に従ってドキュメントを検証できるようにすることを意味します。これらの要素は、しばしば構造要素と呼ばれます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
 ## タグ付きPDFの作成（シンプルなシナリオ）
 

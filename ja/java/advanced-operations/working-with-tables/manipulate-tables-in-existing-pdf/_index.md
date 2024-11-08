@@ -3,7 +3,7 @@ title: 既存のPDFでテーブルを操作する
 linktitle: テーブルを操作する
 type: docs
 weight: 30
-url: ja/java/manipulate-tables-in-existing-pdf/
+url: /ja/java/manipulate-tables-in-existing-pdf/
 description: 既存のPDFファイルのテーブルを操作し、Aspose.PDF for Javaを使用してPDFドキュメント内の古いテーブルを新しいものに置き換えます。
 lastmod: "2021-06-05"
 sitemap:

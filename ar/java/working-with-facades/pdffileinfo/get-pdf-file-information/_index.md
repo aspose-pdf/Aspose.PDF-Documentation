@@ -2,7 +2,7 @@
 title: احصل على معلومات ملف PDF - الواجهات
 type: docs
 weight: 10
-url: ar/java/get-pdf-information/
+url: /ar/java/get-pdf-information/
 description: توضح هذه القسم كيفية الحصول على معلومات ملف PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfFileInfo.
 lastmod: "2021-06-05"
 sitemap:

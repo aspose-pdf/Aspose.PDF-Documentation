@@ -3,7 +3,7 @@ title: 从XML生成PDF
 linktitle: 从XML生成PDF
 type: docs
 weight: 10
-url: es/net/generate-pdf-from-xml
+url: /es/net/generate-pdf-from-xml
 description: Aspose.PDF for .NET 提供了几种将XML文件转换为PDF文档的方法，要求输入的XML文件。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
 }
 </script>
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/es/net/drawing/)库。
 
 从XML文档生成PDF文档并不是一件简单的任务，因为XML文档可以描述不同的内容。Aspose.PDF for .NET有几种基于XML文档生成PDF的方法：
 

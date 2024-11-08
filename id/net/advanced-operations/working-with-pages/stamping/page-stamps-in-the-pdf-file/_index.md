@@ -3,7 +3,7 @@ title: Menambahkan Cap Halaman PDF dalam PDF menggunakan C#
 linktitle: Cap halaman dalam Berkas PDF
 type: docs
 weight: 30
-url: id/net/page-stamps-in-the-pdf-file/
+url: /id/net/page-stamps-in-the-pdf-file/
 description: Menambahkan cap halaman pada dokumen PDF menggunakan kelas PdfPageStamp dengan pustaka Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) dapat digunakan ketika Anda perlu menerapkan cap komposit yang berisi grafik, teks, tabel. Contoh berikut menunjukkan cara menggunakan cap untuk membuat kertas bergaya seperti menggunakan Adobe InDesign, Illustrator, Microsoft Word. Asumsikan kita memiliki beberapa dokumen masukan dan kita ingin menerapkan 2 jenis bingkai dengan warna biru dan plum.
 
-Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 public static void AddPageStamp()

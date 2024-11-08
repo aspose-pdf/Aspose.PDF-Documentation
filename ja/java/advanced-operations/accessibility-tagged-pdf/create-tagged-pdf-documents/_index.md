@@ -4,7 +4,7 @@ linktitle: Tagged PDFを作成する
 type: docs
 weight: 10
 lastmod: "2021-06-05"
-url: ja/java/create-tagged-pdf-documents/
+url: /ja/java/create-tagged-pdf-documents/
 description: この記事では、Aspose.PDF for Javaを使用してプログラムでTagged PDFドキュメントの構造要素を作成する方法を説明します。
 sitemap:
     changefreq: "weekly"

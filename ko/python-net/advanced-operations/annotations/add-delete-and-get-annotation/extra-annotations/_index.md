@@ -3,7 +3,7 @@ title: 파이썬을 사용한 추가 주석
 linktitle: 추가 주석
 type: docs
 weight: 60
-url: ko/python-net/extra-annotations/
+url: /ko/python-net/extra-annotations/
 description: 이 섹션은 PDF 문서에서 추가 유형의 주석을 추가, 가져오기 및 삭제하는 방법을 설명합니다.
 lastmod: "2023-02-17"
 sitemap:

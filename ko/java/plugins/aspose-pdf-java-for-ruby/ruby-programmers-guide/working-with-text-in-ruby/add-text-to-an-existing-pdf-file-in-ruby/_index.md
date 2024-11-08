@@ -2,7 +2,7 @@
 title: 기존 PDF 파일에 텍스트 추가하기 - 루비
 type: docs
 weight: 20
-url: ko/java/add-text-to-an-existing-pdf-file-in-ruby/
+url: /ko/java/add-text-to-an-existing-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

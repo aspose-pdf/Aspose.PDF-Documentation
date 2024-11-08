@@ -3,7 +3,7 @@ title: Mengonversi PDF ke EPUB, LaTeX, Teks, XPS dalam Python
 linktitle: Mengonversi PDF ke format lain
 type: docs
 weight: 90
-url: id/python-java/convert-pdf-to-other-files/
+url: /id/python-java/convert-pdf-to-other-files/
 lastmod: "2023-04-06"
 keywords: mengonversi, PDF, EPUB, LaText, Teks, XPS, Python
 description: Topik ini menunjukkan cara mengonversi file PDF ke format file lain seperti EPUB, LaTeX, Teks, XPS, dll menggunakan Python.

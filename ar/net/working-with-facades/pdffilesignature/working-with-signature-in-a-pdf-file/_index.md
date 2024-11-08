@@ -2,7 +2,7 @@
 title: العمل مع التوقيع في ملف PDF
 type: docs
 weight: 40
-url: ar/net/working-with-signature-in-a-pdf-file/
+url: /ar/net/working-with-signature-in-a-pdf-file/
 description: يشرح هذا القسم كيفية استخراج معلومات التوقيع، استخراج الصورة من التوقيع، تغيير اللغة، وغيرها باستخدام فئة PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

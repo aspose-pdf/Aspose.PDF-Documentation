@@ -3,7 +3,7 @@ title: 프로그램적으로 PDF 페이지 삭제하기
 linktitle: PDF 페이지 삭제
 type: docs
 weight: 40
-url: ko/java/delete-pages/
+url: /ko/java/delete-pages/
 description: Java 라이브러리를 사용하여 PDF 파일에서 페이지를 삭제할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

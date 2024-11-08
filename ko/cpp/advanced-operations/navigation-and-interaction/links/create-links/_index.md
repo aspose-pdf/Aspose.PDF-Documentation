@@ -3,7 +3,7 @@ title: C++로 PDF 파일에 링크 생성
 linktitle: 링크 생성
 type: docs
 weight: 10
-url: ko/cpp/create-links/
+url: /ko/cpp/create-links/
 description: 이 섹션은 C++로 PDF 문서에 링크를 생성하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

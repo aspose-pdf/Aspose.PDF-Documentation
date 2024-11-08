@@ -2,7 +2,7 @@
 title: استخراج صفحات PDF
 type: docs
 weight: 40
-url: ar/net/extract-pdf-pages/
+url: /ar/net/extract-pdf-pages/
 description: يوضح هذا القسم كيفية استخراج صفحات PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

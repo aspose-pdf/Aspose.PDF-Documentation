@@ -3,7 +3,7 @@ title: Lisensi dan batasan
 linktitle: Lisensi dan batasan
 type: docs
 weight: 50
-url: id/androidjava/licensing/
+url: /id/androidjava/licensing/
 description: Aspose.PDF untuk Android melalui Java mengundang pelanggannya untuk mendapatkan lisensi Klasik dan Lisensi Berbayar. Serta menggunakan lisensi terbatas untuk lebih mengeksplorasi produk.
 lastmod: "2021-06-05"
 sitemap:

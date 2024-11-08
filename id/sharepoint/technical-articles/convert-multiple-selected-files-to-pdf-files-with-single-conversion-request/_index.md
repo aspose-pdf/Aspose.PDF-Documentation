@@ -2,7 +2,7 @@
 title: Konversi beberapa file yang dipilih ke file PDF dengan satu permintaan konversi
 type: docs
 weight: 50
-url: id/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
+url: /id/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
 lastmod: "2020-12-16"
 description: PDF SharePoint Library memungkinkan Anda untuk mengonversi beberapa file yang dipilih ke file PDF dengan satu operasi konversi.
 ---

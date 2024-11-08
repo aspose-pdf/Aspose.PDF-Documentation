@@ -2,7 +2,7 @@
 title: Rotación del sello alrededor del punto central
 type: docs
 weight: 10
-url: es/net/rotating-stamp-about-the-center-point/
+url: /es/net/rotating-stamp-about-the-center-point/
 description: Esta sección explica cómo rotar el sello alrededor del punto central usando la Clase Stamp.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-El [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) en [Aspose.PDF for .NET](/pdf/net/) te permite agregar un sello en un archivo PDF existente. A veces, los usuarios necesitan rotar el sello. En este artículo, veremos cómo rotar un sello alrededor de su punto central.
+El [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) en [Aspose.PDF for .NET](/pdf/es/net/) te permite agregar un sello en un archivo PDF existente. A veces, los usuarios necesitan rotar el sello. En este artículo, veremos cómo rotar un sello alrededor de su punto central.
 
 {{% /alert %}}
 

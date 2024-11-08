@@ -3,7 +3,7 @@ title: العمل مع AcroForms في PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ar/php-java/acroforms/
+url: /ar/php-java/acroforms/
 description: باستخدام Aspose.PDF لـ PHP عبر Java يمكنك إنشاء نموذج من البداية، ملء حقل النموذج في مستند PDF، استخراج البيانات من النموذج، إضافة أو إزالة الحقول في النموذج الموجود.
 lastmod: "2024-06-05"
 sitemap:
@@ -34,10 +34,10 @@ sitemap:
 
 لدراسة أكثر تفصيلًا لإمكانيات العمل مع النماذج، ادرس المقالات التالية في القسم:
 
--[إنشاء AcroForm](/pdf/php-java/create-form/) - إنشاء نموذج من الصفر، إضافة RadioButtonField، TextBoxField، Caption Field باستخدام PHP.
+-[إنشاء AcroForm](/pdf/ar/php-java/create-form/) - إنشاء نموذج من الصفر، إضافة RadioButtonField، TextBoxField، Caption Field باستخدام PHP.
 
--[ملء AcroForm](/pdf/php-java/fill-form/) - لملء حقل نموذج، احصل على الحقل من مجموعة النماذج في كائن Document.
+-[ملء AcroForm](/pdf/ar/php-java/fill-form/) - لملء حقل نموذج، احصل على الحقل من مجموعة النماذج في كائن Document.
 
--[استخراج بيانات AcroForm](/pdf/php-java/extract-form/) - الحصول على القيم من جميع الحقول والفردية منها إلخ.
+-[استخراج بيانات AcroForm](/pdf/ar/php-java/extract-form/) - الحصول على القيم من جميع الحقول والفردية منها إلخ.
 
--[تعديل AcroForm](/pdf/php-java/modifing-form/) - الحصول/تعيين FieldLimit، إزالة الحقول في النموذج الحالي، تعيين خط حقل النموذج بخلاف الخطوط الأساسية الأربعة عشر لـ PDF باستخدام PHP.
+-[تعديل AcroForm](/pdf/ar/php-java/modifing-form/) - الحصول/تعيين FieldLimit، إزالة الحقول في النموذج الحالي، تعيين خط حقل النموذج بخلاف الخطوط الأساسية الأربعة عشر لـ PDF باستخدام PHP.

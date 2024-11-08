@@ -3,7 +3,7 @@ title: Eliminar Imágenes de un Archivo PDF usando Python
 linktitle: Eliminar Imágenes
 type: docs
 weight: 20
-url: es/python-net/delete-images-from-pdf-file/
+url: /es/python-net/delete-images-from-pdf-file/
 description: Esta sección explica cómo eliminar imágenes de un archivo PDF usando Aspose.PDF para Python vía .NET.
 lastmod: "2023-04-17"
 ---

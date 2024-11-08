@@ -1,7 +1,7 @@
 ---
 title: PDF에서 제목 다루기
 type: docs
-url: ko/net/working-with-headings/
+url: /ko/net/working-with-headings/
 description: C#을 사용하여 PDF 문서의 제목에 번호 매기기를 생성하세요. Aspose.PDF for .NET은 다양한 종류의 번호 스타일을 제공합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 제목은 모든 문서의 중요한 부분입니다. 작가는 항상 제목을 독자에게 더 돋보이고 의미 있게 만들려고 합니다. 문서에 제목이 여러 개 있는 경우, 작가는 이러한 제목을 구성하기 위해 여러 가지 방법을 선택할 수 있습니다. 제목을 구성하는 가장 일반적인 방법 중 하나는 번호 스타일로 제목을 작성하는 것입니다.
 
-[Aspose.PDF for .NET](/pdf/net/)은 많은 사전 정의된 번호 스타일을 제공합니다. 이러한 사전 정의된 번호 스타일은 열거형, NumberingStyle에 저장됩니다. NumberingStyle 열거형의 사전 정의된 값과 그 설명은 아래와 같습니다:
+[Aspose.PDF for .NET](/pdf/ko/net/)은 많은 사전 정의된 번호 스타일을 제공합니다. 이러한 사전 정의된 번호 스타일은 열거형, NumberingStyle에 저장됩니다. NumberingStyle 열거형의 사전 정의된 값과 그 설명은 아래와 같습니다:
 
 |**제목 타입**|**설명**|
 | :- | :- |
@@ -94,7 +94,7 @@ sitemap:
 | :- |
 위 그림에서 보여준 출력을 얻기 위한 소스 코드는 아래 예제에서 제공됩니다.
 
-다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/net/drawing/) 인터페이스와 함께 작동합니다.
+다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/ko/net/drawing/) 인터페이스와 함께 작동합니다.
 
 ```csharp
 // 문서 디렉토리로의 경로입니다.

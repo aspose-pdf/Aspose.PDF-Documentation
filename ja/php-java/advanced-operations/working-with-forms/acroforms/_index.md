@@ -3,7 +3,7 @@ title: PDFでのAcroFormsの操作
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ja/php-java/acroforms/
+url: /ja/php-java/acroforms/
 description: Aspose.PDF for PHP via Javaを使用すると、フォームをゼロから作成したり、PDFドキュメント内のフォームフィールドに入力したり、フォームからデータを抽出したり、既存のフォームにフィールドを追加または削除したりできます。
 lastmod: "2024-06-05"
 sitemap:
@@ -34,10 +34,10 @@ AcroFormsにはXFAにはない機能があり、逆にXFAにはAcroFormsにな�
 
 フォームを扱う可能性についての詳細な研究をするには、次の記事をセクションで参照してください：
 
--[AcroFormを作成する](/pdf/php-java/create-form/) - PHPを使用して、RadioButtonField、TextBoxField、Caption Fieldを追加し、ゼロからフォームを作成します。
+-[AcroFormを作成する](/pdf/ja/php-java/create-form/) - PHPを使用して、RadioButtonField、TextBoxField、Caption Fieldを追加し、ゼロからフォームを作成します。
 
--[AcroFormに入力する](/pdf/php-java/fill-form/) - フォームフィールドに入力するには、ドキュメントオブジェクトのFormコレクションからフィールドを取得します。
+-[AcroFormに入力する](/pdf/ja/php-java/fill-form/) - フォームフィールドに入力するには、ドキュメントオブジェクトのFormコレクションからフィールドを取得します。
 
--[AcroFormのデータを抽出する](/pdf/php-java/extract-form/) - すべてのフィールドや個々のフィールドから値を取得するなど。
+-[AcroFormのデータを抽出する](/pdf/ja/php-java/extract-form/) - すべてのフィールドや個々のフィールドから値を取得するなど。
 
--[AcroFormを修正する](/pdf/php-java/modifing-form/) - FieldLimitを取得/設定し、既存のフォームのフィールドを削除し、PHPで14のコアPDFフォント以外のフォームフィールドフォントを設定します。
+-[AcroFormを修正する](/pdf/ja/php-java/modifing-form/) - FieldLimitを取得/設定し、既存のフォームのフィールドを削除し、PHPで14のコアPDFフォント以外のフォームフィールドフォントを設定します。

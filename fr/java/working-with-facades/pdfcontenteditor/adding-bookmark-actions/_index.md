@@ -2,7 +2,7 @@
 title: Ajout d'actions de signet à un fichier PDF existant
 type: docs
 weight: 20
-url: fr/java/adding-bookmark-actions/
+url: /fr/java/adding-bookmark-actions/
 description: Cette section explique comment ajouter des actions de signet à un fichier PDF existant avec Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

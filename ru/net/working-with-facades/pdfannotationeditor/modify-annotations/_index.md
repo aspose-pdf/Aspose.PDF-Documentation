@@ -2,7 +2,7 @@
 title: Изменение аннотаций в вашем PDF
 type: docs
 weight: 50
-url: ru/net/modify-annotations/
+url: /ru/net/modify-annotations/
 description: Этот раздел объясняет, как изменить аннотации из PDF файла в XFDF с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -53,4 +53,4 @@ sitemap:
 
 ## See also
 
-Попробуйте сравнить и найти способ работы с аннотациями, который подходит вам. Давайте изучим раздел [PDF Аннотации](/pdf/net/annotations/).
+Попробуйте сравнить и найти способ работы с аннотациями, который подходит вам. Давайте изучим раздел [PDF Аннотации](/pdf/ru/net/annotations/).

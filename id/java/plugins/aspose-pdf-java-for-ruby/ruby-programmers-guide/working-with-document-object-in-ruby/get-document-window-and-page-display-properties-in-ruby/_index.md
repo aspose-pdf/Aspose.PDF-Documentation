@@ -2,7 +2,7 @@
 title: Dapatkan Jendela Dokumen dan Properti Tampilan Halaman di Ruby
 type: docs
 weight: 40
-url: id/java/get-document-window-and-page-display-properties-in-ruby/
+url: /id/java/get-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

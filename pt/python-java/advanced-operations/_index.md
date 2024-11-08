@@ -3,7 +3,7 @@ title: Operações avançadas
 linktitle: Operações avançadas
 type: docs
 weight: 90
-url: pt/python-java/advanced-operations/
+url: /pt/python-java/advanced-operations/
 description: Aspose.PDF para Python via Java pode realizar tarefas simples e fáceis e lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados.
 lastmod: "2023-04-17"
 sitemap:
@@ -78,11 +78,11 @@ sitemap:
 </script>
 
 
-**Operações Avançadas** é uma seção sobre como lidar com arquivos PDF existentes programaticamente, sejam eles documentos criados com Aspose.PDF, conforme discutido em [Operações Básicas](/pdf/python-java/basic-operations/), ou PDFs criados com Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou qualquer outro produtor de PDF.
+**Operações Avançadas** é uma seção sobre como lidar com arquivos PDF existentes programaticamente, sejam eles documentos criados com Aspose.PDF, conforme discutido em [Operações Básicas](/pdf/pt/python-java/basic-operations/), ou PDFs criados com Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou qualquer outro produtor de PDF.
 
 Você aprenderá diferentes maneiras de:
 
-- [Trabalhando com Documentos](/pdf/python-java/working-with-documents/) - comprimir, dividir e mesclar documentos e realizar outras operações com o documento inteiro.
-- [Trabalhando com Páginas](/pdf/python-java/working-with-pages/) - adicionar, mover ou remover, cortar páginas, adicionar marcas d'água, carimbos, etc.
-- [Trabalhando com Formulários](/pdf/python-java/working-with-forms/) - lidar com documentos PDF interativos, adicionar campos de formulário, extrair dados.
-- [Trabalhando com Texto](/pdf/python-java/working-with-text/) - adicionar, formatar, buscar e substituir texto no PDF.
+- [Trabalhando com Documentos](/pdf/pt/python-java/working-with-documents/) - comprimir, dividir e mesclar documentos e realizar outras operações com o documento inteiro.
+- [Trabalhando com Páginas](/pdf/pt/python-java/working-with-pages/) - adicionar, mover ou remover, cortar páginas, adicionar marcas d'água, carimbos, etc.
+- [Trabalhando com Formulários](/pdf/pt/python-java/working-with-forms/) - lidar com documentos PDF interativos, adicionar campos de formulário, extrair dados.
+- [Trabalhando com Texto](/pdf/pt/python-java/working-with-text/) - adicionar, formatar, buscar e substituir texto no PDF.

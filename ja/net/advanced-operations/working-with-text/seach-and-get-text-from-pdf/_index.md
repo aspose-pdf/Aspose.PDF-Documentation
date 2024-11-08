@@ -3,7 +3,7 @@ title: PDFページからテキストを検索して取得
 linktitle: テキストを検索して取得
 type: docs
 weight: 60
-url: ja/net/search-and-get-text-from-pdf/
+url: /ja/net/search-and-get-text-from-pdf/
 description: この記事では、Aspose.PDF for .NETを使用してテキストを検索し取得する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "この記事では、Aspose.PDF for .NETを使用してテキストを検索し取得する方法について説明します。"
 }
 </script>
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 ## PDFドキュメントのすべてのページからテキストを検索して取得する
 

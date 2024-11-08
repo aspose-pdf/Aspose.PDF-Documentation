@@ -3,7 +3,7 @@ title: Working with ZUGFeRD
 linktitle: Working with ZUGFeRD
 type: docs
 weight: 90
-url: ja/net/working-with-zugferd/
+url: /ja/net/working-with-zugferd/
 description: C# で ZUGFeRD 準拠の PDF 請求書を作成する方法を学びます Aspose.PDF for .NET
 lastmod: "2023-09-27"
 sitemap:
@@ -27,9 +27,9 @@ ZUGFeRDはドイツでの電子請求書の標準です。
 また、長期保存および税務コンプライアンスの法的要件にも準拠しています。ZUGFeRDには異なるバージョンとプロファイルがあり、さまざまなニーズやシナリオに対応しています。最新バージョンは、電子請求書のためのヨーロッパ標準EN 16931と互換性があるZUGFeRD 2.0です。
 ZUGFeRDは、処理の速度向上、エラーの削減、キャッシュフローの改善、環境への影響の低減など、多くの利点とコスト削減をユーザーに提供します。
 
-* [C#でPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/net/attach-zugferd/)
+* [C#でPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/ja/net/attach-zugferd/)
 
 参照：
 
-* [JavaでPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/java/attach-zugferd/)
-* [PythonでPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/python-net/attach-zugferd/)
+* [JavaでPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/ja/java/attach-zugferd/)
+* [PythonでPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する](/pdf/ja/python-net/attach-zugferd/)

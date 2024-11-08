@@ -10,7 +10,7 @@ type: docs
 
 weight: 120
 
-url: ja/jasperreports/
+url: /ja/jasperreports/
 
 is_root: true
 
@@ -48,23 +48,23 @@ Aspose.PDF for JasperReports は、JasperReports および JasperServer から�
 
 
 
-- [Aspose.PDF for JasperReports 製品概要](/pdf/jasperreports/product-overview/)
+- [Aspose.PDF for JasperReports 製品概要](/pdf/ja/jasperreports/product-overview/)
 
-- [Aspose.PDF for JasperReports サポートされているファイル形式](/pdf/jasperreports/supported-file-formats/)
+- [Aspose.PDF for JasperReports サポートされているファイル形式](/pdf/ja/jasperreports/supported-file-formats/)
 
 
-- [Aspose.PDF for JasperReports 機能ツアー](/pdf/jasperreports/feature-tour/)
+- [Aspose.PDF for JasperReports 機能ツアー](/pdf/ja/jasperreports/feature-tour/)
 
 - [Aspose.PDF for JasperReports リリースノート](https://releases.aspose.com/pdf/jassperreport/release-notes/)
 
 - [Aspose.PDF for JasperReports ダウンロード](https://releases.aspose.com/pdf/jassperreport/)
 
-- [Aspose.PDF for JasperReports サンプルレポートギャラリー](/pdf/jasperreports/sample-reports-gallery/)
+- [Aspose.PDF for JasperReports サンプルレポートギャラリー](/pdf/ja/jasperreports/sample-reports-gallery/)
 
-- [Aspose.PDF for JasperReports インストール](/pdf/jasperreports/installation/)
+- [Aspose.PDF for JasperReports インストール](/pdf/ja/jasperreports/installation/)
 
-- [Aspose.PDF for JasperReports ライセンス](/pdf/jasperreports/licensing/)
+- [Aspose.PDF for JasperReports ライセンス](/pdf/ja/jasperreports/licensing/)
 
-- [Aspose.Pdf 評価](/pdf/jasperreports/evaluate-aspose-pdf/)
+- [Aspose.Pdf 評価](/pdf/ja/jasperreports/evaluate-aspose-pdf/)
 
-- [Aspose.PDF for JasperReports API制限](/pdf/jasperreports/api-limitations/)
+- [Aspose.PDF for JasperReports API制限](/pdf/ja/jasperreports/api-limitations/)

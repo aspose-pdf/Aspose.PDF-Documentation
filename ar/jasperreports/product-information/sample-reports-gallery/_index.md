@@ -5,7 +5,7 @@ type: docs
 
 weight: 40
 
-url: ar/jasperreports/sample-reports-gallery/
+url: /ar/jasperreports/sample-reports-gallery/
 
 lastmod: "2021-06-05"
 

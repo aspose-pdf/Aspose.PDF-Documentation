@@ -6,7 +6,7 @@ type: dokumen
 
 weight: 10
 
-url: id/sharepoint/gambaran-produk/
+url: /id/sharepoint/gambaran-produk/
 
 lastmod: "2020-12-16"
 
@@ -41,7 +41,7 @@ Aspose.PDF untuk SharePoint dirancang untuk digunakan dengan Microsoft SharePoin
 
 
 
-Dokumentasi ini menjelaskan [fitur](/pdf/sharepoint/features/), [instalasi](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/), [batasan evaluasi](/pdf/sharepoint/evaluate-aspose-pdf/), [lisensi](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/) Aspose.PDF untuk SharePoint, kasus penggunaan umum, dan pengaturan.
+Dokumentasi ini menjelaskan [fitur](/pdf/id/sharepoint/features/), [instalasi](/pdf/id/sharepoint/install-aspose-pdf-for-sharepoint/), [batasan evaluasi](/pdf/id/sharepoint/evaluate-aspose-pdf/), [lisensi](/pdf/id/sharepoint/license-aspose-pdf-for-sharepoint/) Aspose.PDF untuk SharePoint, kasus penggunaan umum, dan pengaturan.
 
 ```
 {{% /alert %}}

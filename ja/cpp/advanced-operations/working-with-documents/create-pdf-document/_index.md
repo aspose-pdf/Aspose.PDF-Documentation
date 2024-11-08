@@ -3,7 +3,7 @@ title: PDFドキュメントを作成する
 linktitle: PDFを作成
 type: docs
 weight: 10
-url: ja/cpp/create-pdf-document/
+url: /ja/cpp/create-pdf-document/
 description: この記事では、Aspose.PDF for C++を使用してPDFドキュメントを作成およびフォーマットする方法について説明します。
 lastmod: "2021-11-11"
 sitemap:

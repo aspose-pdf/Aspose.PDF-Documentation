@@ -3,7 +3,7 @@ title: Trabalhando com Acessibilidade e PDFs Marcados
 linktitle: Acessibilidade. PDF Marcado
 type: docs
 weight: 120
-url: pt/androidjava/accessibility-tagged-pdf/
+url: /pt/androidjava/accessibility-tagged-pdf/
 description: Este capítulo descreve a possibilidade de criar documentos PDF Marcados. Este recurso permite adicionar tags a documentos estruturais. Saiba mais sobre as maneiras de obter PDFs acessíveis.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ Aspose.PDF possui funcionalidade suficiente para criar documentos PDF de acordo 
 
 Esta seção cobre os seguintes tópicos:
 
-- [Criar PDF Marcado](/pdf/andriodjava/create-tagged-pdf-documents/)
-- [Extrair Conteúdo Marcado de PDFs Marcados](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)
-- [Definindo Propriedades dos Elementos de Estrutura](/pdf/androidjava/set-tagged-pdfs-element-properties/)
-- [Trabalhando com Tabela em PDFs Marcados](/pdf/androidjava/working-with-table-in-tagged-pdfs/)
+- [Criar PDF Marcado](/pdf/pt/andriodjava/create-tagged-pdf-documents/)
+- [Extrair Conteúdo Marcado de PDFs Marcados](/pdf/pt/androidjava/extract-tagged-content-from-tagged-pdfs/)
+- [Definindo Propriedades dos Elementos de Estrutura](/pdf/pt/androidjava/set-tagged-pdfs-element-properties/)
+- [Trabalhando com Tabela em PDFs Marcados](/pdf/pt/androidjava/working-with-table-in-tagged-pdfs/)

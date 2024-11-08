@@ -3,7 +3,7 @@ title: Skema XML
 linktitle: Skema XML yang Didukung
 type: docs
 weight: 10
-url: id/java/supported-xml-schema/
+url: /id/java/supported-xml-schema/
 description: Artikel ini menjelaskan skema XML untuk bekerja dengan dokumen XML di Aspose.PDF untuk Java
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: PythonでPDFファイル情報を設定する
 type: docs
 weight: 90
-url: ja/python-java/set-pdf-file-information-in-python/
+url: /ja/python-java/set-pdf-file-information-in-python/
 ---
 
 <ins>**Aspose.PDF Java for Python** を使用してPDFドキュメント情報を更新するには、**SetPdfFileInfo** クラスを呼び出します。

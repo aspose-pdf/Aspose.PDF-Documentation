@@ -2,7 +2,7 @@
 title: 필드 외관 및 속성
 type: docs
 weight: 20
-url: ko/net/changing-field-appearance-and-attributes/
+url: /ko/net/changing-field-appearance-and-attributes/
 description: 이 섹션에서는 FormEditor 클래스를 사용하여 필드 외관과 속성을 변경하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

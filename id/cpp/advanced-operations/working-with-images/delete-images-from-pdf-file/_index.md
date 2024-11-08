@@ -3,7 +3,7 @@ title: Hapus Gambar dari File PDF menggunakan C++
 linktitle: Hapus Gambar
 type: docs
 weight: 20
-url: id/cpp/delete-images-from-pdf-file/
+url: /id/cpp/delete-images-from-pdf-file/
 description: Bagian ini menjelaskan cara menghapus Gambar dari File PDF menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-12-18"
 ---

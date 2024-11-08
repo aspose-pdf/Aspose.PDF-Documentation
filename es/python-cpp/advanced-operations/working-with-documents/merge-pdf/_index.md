@@ -3,7 +3,7 @@ title: Cómo Unir PDF usando Python a través de C++
 linktitle: Unir archivos PDF
 type: docs
 weight: 10
-url: es/python-cpp/merge-pdf-documents/
+url: /es/python-cpp/merge-pdf-documents/
 keywords: "unir múltiples pdf en un solo pdf python, combinar múltiples pdf en uno python, unir múltiples pdf en uno python"
 description: Esta página explica cómo unir documentos PDF en un solo archivo PDF con Python.
 lastmod: "2024-04-14"

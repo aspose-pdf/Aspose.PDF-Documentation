@@ -2,13 +2,13 @@
 title: 양식 필드 이름 식별
 type: docs
 weight: 10
-url: ko/net/identifying-form-fields-names/
+url: /ko/net/identifying-form-fields-names/
 description: Aspose.PDF.Facades를 사용하여 Form 클래스의 양식 필드 이름을 식별할 수 있습니다.
 lastmod: "2021-06-05"
 draft: false
 ---
 
-[Aspose.PDF for .NET](/pdf/net/)은 이미 생성된 Pdf 양식을 생성, 편집 및 채우는 기능을 제공합니다. [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 네임스페이스에는 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) 클래스가 포함되어 있으며, 이는 [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index)라는 함수를 포함하고 있으며 두 개의 인수, 즉 필드 이름과 필드 값을 필요로 합니다. 따라서 양식 필드를 채우기 위해서는 정확한 양식 필드 이름을 알고 있어야 합니다.
+[Aspose.PDF for .NET](/pdf/ko/net/)은 이미 생성된 Pdf 양식을 생성, 편집 및 채우는 기능을 제공합니다. [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 네임스페이스에는 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) 클래스가 포함되어 있으며, 이는 [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index)라는 함수를 포함하고 있으며 두 개의 인수, 즉 필드 이름과 필드 값을 필요로 합니다. 따라서 양식 필드를 채우기 위해서는 정확한 양식 필드 이름을 알고 있어야 합니다.
 
 ## 구현 세부사항
 

@@ -3,7 +3,7 @@ title: Ganti Gambar dalam File PDF yang Ada menggunakan C++
 linktitle: Ganti Gambar
 type: docs
 weight: 70
-url: id/cpp/replace-image-in-existing-pdf-file/
+url: /id/cpp/replace-image-in-existing-pdf-file/
 description: Bagian ini menjelaskan tentang mengganti gambar dalam file PDF yang ada menggunakan pustaka ++.
 lastmod: "2021-12-18"
 ---

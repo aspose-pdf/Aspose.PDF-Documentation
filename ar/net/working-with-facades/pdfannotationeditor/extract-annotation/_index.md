@@ -2,7 +2,7 @@
 title: استخراج التعليقات التوضيحية من PDF 
 type: docs
 weight: 30
-url: ar/net/extract-annotation/
+url: /ar/net/extract-annotation/
 description: توضح هذه القسم كيفية استخراج التعليقات التوضيحية من ملف PDF إلى XFDF باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:

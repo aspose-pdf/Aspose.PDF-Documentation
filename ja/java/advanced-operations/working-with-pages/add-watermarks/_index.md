@@ -3,7 +3,7 @@ title: PDFに透かしを追加する
 linktitle: 透かしを追加
 type: docs
 weight: 90
-url: ja/java/add-watermarks/
+url: /ja/java/add-watermarks/
 description: この記事では、Javaを使用してプログラムでPDFにアーティファクトを追加し、透かしを取得する機能について説明します。
 lastmod: "2021-06-05"
 sitemap:

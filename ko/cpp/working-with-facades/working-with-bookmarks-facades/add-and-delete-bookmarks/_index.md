@@ -3,7 +3,7 @@
 title: 즐겨찾기 추가 및 삭제
 type: docs
 weight: 10
-url: ko/cpp/add-and-delete-bookmarks/
+url: /ko/cpp/add-and-delete-bookmarks/
 ---
 
 ## <ins>**즐겨찾기 추가**

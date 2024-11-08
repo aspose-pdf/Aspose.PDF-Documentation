@@ -2,7 +2,7 @@
 title: ページ余白サイズ
 type: docs
 weight: 70
-url: ja/reportingservices/page-margin-size/
+url: /ja/reportingservices/page-margin-size/
 lastmod: "2021-06-05"
 ---
 

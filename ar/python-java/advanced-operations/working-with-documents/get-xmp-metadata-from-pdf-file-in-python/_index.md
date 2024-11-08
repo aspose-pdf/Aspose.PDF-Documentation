@@ -2,7 +2,7 @@
 title: الحصول على بيانات XMP الوصفية من ملف PDF باستخدام Python
 type: docs
 weight: 50
-url: ar/python-java/get-xmp-metadata-from-pdf-file-in-python/
+url: /ar/python-java/get-xmp-metadata-from-pdf-file-in-python/
 ---
 
 <ins>للحصول على بيانات XMP الوصفية من مستند Pdf باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء فئة **GetXMPMetadata**.

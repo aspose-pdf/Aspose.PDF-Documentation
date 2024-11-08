@@ -2,7 +2,7 @@
 title: تقسيم ملف PDF إلى صفحات فردية في روبي
 type: docs
 weight: 80
-url: ar/java/split-pdf-file-into-individual-pages-in-ruby/
+url: /ar/java/split-pdf-file-into-individual-pages-in-ruby/
 lastmod: "2021-06-05"
 ---
 

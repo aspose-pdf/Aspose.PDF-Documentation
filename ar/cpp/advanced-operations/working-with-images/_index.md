@@ -3,7 +3,7 @@ title: العمل مع الصور في ملفات PDF باستخدام C++
 linktitle: العمل مع الصور
 type: docs
 weight: 40
-url: ar/cpp/working-with-images/
+url: /ar/cpp/working-with-images/
 description: يصف هذا القسم ميزات العمل مع الصور في ملف PDF باستخدام مكتبة C++.
 lastmod: "2021-12-16"
 sitemap:
@@ -17,14 +17,14 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إضافة صورة إلى ملف PDF موجود](/pdf/cpp/add-image-to-existing-pdf-file/) - أضف الصور والإشارات إلى صورة واحدة في مستند PDF، وبعد ذلك تحكم في الجودة.
+- [إضافة صورة إلى ملف PDF موجود](/pdf/ar/cpp/add-image-to-existing-pdf-file/) - أضف الصور والإشارات إلى صورة واحدة في مستند PDF، وبعد ذلك تحكم في الجودة.
 
-- [حذف الصور من ملف PDF](/pdf/cpp/delete-images-from-pdf-file/) - تحقق من مقتطف الكود لحذف الصور من ملف PDF.
-- [استخراج الصور من ملف PDF](/pdf/cpp/extract-images-from-pdf-file/) - استخدم مجموعة الصور لاستخراج الصور من ملف PDF.
-- [الحصول على دقة وأبعاد الصور المدمجة](/pdf/cpp/get-resolution-and-dimensions-of-embedded-images/) - استخدم فئات المشغل في مساحة الأسماء Aspose.PDF التي توفر القدرة على الحصول على معلومات الدقة والأبعاد.
-- [العمل مع موضع الصورة](/pdf/cpp/working-with-image-placement/) - من الممكن الحصول على دقة الصورة وموقعها في مستند PDF.
-- [البحث واستخراج الصور من مستند PDF](/pdf/cpp/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة فردية والبحث بين الصور في جميع الصفحات باستخدام C++.
-- [استبدال صورة في ملف PDF موجود](/pdf/cpp/replace-image-in-existing-pdf-file/) - تحقق من مقتطف الكود الخاص بنا، يوضح لك كيفية استبدال صورة في ملف PDF.
-- [تعيين حجم الصورة](/pdf/cpp/set-image-size/) - مكتبة C++ تتيح لك تعيين حجم الصورة.
+- [حذف الصور من ملف PDF](/pdf/ar/cpp/delete-images-from-pdf-file/) - تحقق من مقتطف الكود لحذف الصور من ملف PDF.
+- [استخراج الصور من ملف PDF](/pdf/ar/cpp/extract-images-from-pdf-file/) - استخدم مجموعة الصور لاستخراج الصور من ملف PDF.
+- [الحصول على دقة وأبعاد الصور المدمجة](/pdf/ar/cpp/get-resolution-and-dimensions-of-embedded-images/) - استخدم فئات المشغل في مساحة الأسماء Aspose.PDF التي توفر القدرة على الحصول على معلومات الدقة والأبعاد.
+- [العمل مع موضع الصورة](/pdf/ar/cpp/working-with-image-placement/) - من الممكن الحصول على دقة الصورة وموقعها في مستند PDF.
+- [البحث واستخراج الصور من مستند PDF](/pdf/ar/cpp/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة فردية والبحث بين الصور في جميع الصفحات باستخدام C++.
+- [استبدال صورة في ملف PDF موجود](/pdf/ar/cpp/replace-image-in-existing-pdf-file/) - تحقق من مقتطف الكود الخاص بنا، يوضح لك كيفية استبدال صورة في ملف PDF.
+- [تعيين حجم الصورة](/pdf/ar/cpp/set-image-size/) - مكتبة C++ تتيح لك تعيين حجم الصورة.
 
-- [تعيين اسم الخط الافتراضي](/pdf/cpp/set-default-font-name/) - تعيين اسم الخط الافتراضي لعملية التحويل.
+- [تعيين اسم الخط الافتراضي](/pdf/ar/cpp/set-default-font-name/) - تعيين اسم الخط الافتراضي لعملية التحويل.

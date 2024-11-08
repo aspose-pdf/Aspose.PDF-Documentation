@@ -3,7 +3,7 @@ title: ツールチップの使用
 linktitle: PDF ツールチップ
 type: docs
 weight: 20
-url: ja/java/pdf-tooltip/
+url: /ja/java/pdf-tooltip/
 description: Java と Aspose.PDF を使用して PDF のテキストフラグメントにツールチップを追加する方法を学びます。
 lastmod: "2021-06-05"
 sitemap:

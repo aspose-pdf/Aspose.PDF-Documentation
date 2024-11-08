@@ -3,7 +3,7 @@ title: Menggunakan FloatingBox untuk generasi teks
 linktitle: Menggunakan FloatingBox
 type: docs
 weight: 30
-url: id/net/floating-box/
+url: /id/net/floating-box/
 description: Halaman ini menjelaskan cara memformat teks di dalam kotak mengambang.
 lastmod: "2022-02-17"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-Fitur ini juga bekerja di pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Fitur ini juga bekerja di pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Dasar-dasar penggunaan alat FloatingBox
 

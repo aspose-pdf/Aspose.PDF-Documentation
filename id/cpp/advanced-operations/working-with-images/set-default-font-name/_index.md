@@ -3,7 +3,7 @@ title: Set Default Font Name menggunakan C++
 linktitle: Set Default Font Name
 type: docs
 weight: 90
-url: id/cpp/set-default-font-name/
+url: /id/cpp/set-default-font-name/
 description: Bagian ini menjelaskan cara mengatur nama font default menggunakan pustaka C++.
 lastmod: "2021-12-18"
 ---

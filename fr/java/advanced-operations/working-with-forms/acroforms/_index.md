@@ -3,7 +3,7 @@ title: Travailler avec les AcroForms dans PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: fr/java/acroforms/
+url: /fr/java/acroforms/
 description: Avec Aspose.PDF pour Java, vous pouvez créer un formulaire à partir de zéro, remplir le champ du formulaire dans un document PDF, extraire des données du formulaire, ajouter ou supprimer des champs dans le formulaire existant.
 lastmod: "2021-06-05"
 sitemap:
@@ -34,10 +34,10 @@ Ainsi, les PDF sont le meilleur format de fichier pour les formulaires puisqu'il
 
 Pour une étude plus détaillée des possibilités de travailler avec des formulaires, étudiez les articles suivants dans la section :
 
--[Créer AcroForm](/pdf/java/create-form/) - créer un formulaire à partir de zéro, en ajoutant RadioButtonField, TextBoxField, Champ de Légende en utilisant Java.
+-[Créer AcroForm](/pdf/fr/java/create-form/) - créer un formulaire à partir de zéro, en ajoutant RadioButtonField, TextBoxField, Champ de Légende en utilisant Java.
 
--[Remplir AcroForm](/pdf/java/fill-form/) - pour remplir un champ de formulaire, obtenez le champ de la collection de Formulaires de l'objet Document.
+-[Remplir AcroForm](/pdf/fr/java/fill-form/) - pour remplir un champ de formulaire, obtenez le champ de la collection de Formulaires de l'objet Document.
 
--[Extraire des Données AcroForm](/pdf/java/extract-form/) - obtenir des valeurs de tous et des champs individuels, etc.
+-[Extraire des Données AcroForm](/pdf/fr/java/extract-form/) - obtenir des valeurs de tous et des champs individuels, etc.
 
--[Modifier AcroForm](/pdf/java/modifing-form/) - obtenir/définir FieldLimit, supprimer des champs dans un formulaire existant, définir la police du champ de formulaire autre que les 14 polices de base PDF avec Java.
+-[Modifier AcroForm](/pdf/fr/java/modifing-form/) - obtenir/définir FieldLimit, supprimer des champs dans un formulaire existant, définir la police du champ de formulaire autre que les 14 polices de base PDF avec Java.

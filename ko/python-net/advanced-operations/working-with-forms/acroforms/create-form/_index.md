@@ -3,7 +3,7 @@ title: AcroForm 생성 - Python에서 작성 가능한 PDF 생성
 linktitle: AcroForm 생성
 type: docs
 weight: 10
-url: ko/python-net/create-form/
+url: /ko/python-net/create-form/
 description: Aspose.PDF for Python을 사용하여 PDF 파일에서 처음부터 양식을 만들 수 있습니다.
 lastmod: "2023-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Insert an Image into a Table Cell in PDF
 type: docs
 weight: 20
-url: ar/java/insert-an-image-into-a-table-cell-in-pdf/
+url: /ar/java/insert-an-image-into-a-table-cell-in-pdf/
 lastmod: "2022-01-27"
 ---
 

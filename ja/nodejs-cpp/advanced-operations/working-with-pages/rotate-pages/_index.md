@@ -3,7 +3,7 @@ title: Node.jsでPDFページを回転する
 linktitle: PDFページを回転する
 type: docs
 weight: 50
-url: ja/nodejs-cpp/rotate-pages/
+url: /ja/nodejs-cpp/rotate-pages/
 description: このトピックでは、Node.js環境で既存のPDFファイルのページの向きをプログラムで回転する方法について説明します。
 lastmod: "2023-11-16"
 sitemap:

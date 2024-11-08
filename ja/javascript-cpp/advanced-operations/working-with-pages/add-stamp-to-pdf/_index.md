@@ -3,7 +3,7 @@ title: JavaScriptとC++を使用してPDFに画像スタンプを追加する
 linktitle: PDFファイルへの画像スタンプ
 type: docs
 weight: 60
-url: ja/javascript-cpp/stamping/
+url: /ja/javascript-cpp/stamping/
 description: JavaScriptツールキットを使用してAsposePdfAddStamp関数でPDFドキュメントに画像スタンプを追加します。
 lastmod: "2023-04-15"
 sitemap:

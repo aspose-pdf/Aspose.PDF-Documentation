@@ -3,7 +3,7 @@ title: Inicie
 linktitle: Inicie
 type: docs
 weight: 30
-url: pt/python-java/get-started/
+url: /pt/python-java/get-started/
 description: Esta página é uma visão geral de como usar Aspose.PDF para Python via Java para criar e editar um documento PDF
 lastmod: "2024-06-05"
 sitemap:
@@ -42,7 +42,7 @@ Ele cria documentos PDF de forma eficaz, permite que você use um editor familia
 
 ### Saiba mais sobre
 
-- [Noções básicas da API DOM](/pdf/python-java/basics-of-dom-api/)
-- [Exemplo Java "Hello, World"](/pdf/python-java/hello-world-example/)
-- [PDF Complexo](/pdf/python-java/complex-pdf-example/)
-- [Como executar outros exemplos](/pdf/python-java/how-to-run-other-examples/)
+- [Noções básicas da API DOM](/pdf/pt/python-java/basics-of-dom-api/)
+- [Exemplo Java "Hello, World"](/pdf/pt/python-java/hello-world-example/)
+- [PDF Complexo](/pdf/pt/python-java/complex-pdf-example/)
+- [Como executar outros exemplos](/pdf/pt/python-java/how-to-run-other-examples/)

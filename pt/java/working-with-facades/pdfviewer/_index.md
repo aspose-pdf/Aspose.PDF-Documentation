@@ -2,7 +2,7 @@
 title: PdfViewer Class
 type: docs
 weight: 130
-url: pt/java/pdfviewer-class/
+url: /pt/java/pdfviewer-class/
 description: Esta seção explica como trabalhar com Aspose.PDF Facades usando a Classe PdfViewer.
 lastmod: "2021-06-05"
 sitemap:
@@ -10,4 +10,4 @@ sitemap:
     priority: 0.7
 ---
 
-- [Trabalhando com impressão de PDF (facades)](/pdf/java/print-pdf-file/)
+- [Trabalhando com impressão de PDF (facades)](/pdf/pt/java/print-pdf-file/)

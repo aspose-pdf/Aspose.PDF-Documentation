@@ -3,7 +3,7 @@ title: ملء AcroForm - ملء نموذج PDF باستخدام Python
 linktitle: ملء AcroForm
 type: docs
 weight: 20
-url: ar/python-net/fill-form/
+url: /ar/python-net/fill-form/
 keywords: ملء نموذج PDF Python
 description: يمكنك ملء النماذج في مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ Python.
 lastmod: "2023-02-17"

@@ -3,7 +3,7 @@ title: Converter PDF para Formatos de Imagem em JavaScript
 linktitle: Converter PDF para Imagens
 type: docs
 weight: 70
-url: pt/javascript-cpp/convert-pdf-to-images-format/
+url: /pt/javascript-cpp/convert-pdf-to-images-format/
 lastmod: "2023-11-01"
 description: Este tópico mostra como usar Aspose.PDF para converter PDF para vários formatos de imagens, por exemplo, TIFF, BMP, JPEG, PNG, SVG com algumas linhas de código.
 sitemap:

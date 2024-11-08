@@ -3,7 +3,7 @@ title: Fill AcroForm - Fill PDF Form using C#
 linktitle: Fill AcroForm
 type: docs
 weight: 20
-url: ar/net/fill-form/
+url: /ar/net/fill-form/
 keywords: Fill PDF Form C#
 description: يمكنك تعبئة النماذج في مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "يمكنك تعبئة النماذج في مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET."
 }
 </script>
-يعمل هذا المقتطف من الكود أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل هذا المقتطف من الكود أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## ملء حقل النموذج في مستند PDF
 

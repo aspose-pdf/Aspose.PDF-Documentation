@@ -3,7 +3,7 @@ title: PHP에서 PDF 크기 최적화, 압축 또는 줄이기
 linktitle: PDF 문서 최적화
 type: docs
 weight: 40
-url: ko/php-java/optimize-pdf/
+url: /ko/php-java/optimize-pdf/
 description: PHP를 사용하여 PDF 파일 최적화, 모든 이미지 축소, PDF 크기 줄이기, 글꼴 임베드 해제, 사용되지 않는 객체 제거.
 lastmod: "2024-06-05"
 ---

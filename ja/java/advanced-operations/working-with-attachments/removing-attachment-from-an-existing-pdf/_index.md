@@ -3,7 +3,7 @@ title: 既存のPDFから添付ファイルを削除する
 linktitle: 既存のPDFから添付ファイルを削除する
 type: docs
 weight: 30
-url: ja/java/removing-attachment-from-an-existing-pdf/
+url: /ja/java/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDFはPDFドキュメントから添付ファイルを削除できます。Aspose.PDFライブラリを使用して、Java PDF APIでPDFファイルの添付ファイルを削除します。
 lastmod: "2021-06-05"
 sitemap:

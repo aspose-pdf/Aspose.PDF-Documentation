@@ -3,7 +3,7 @@ title: PDF 문서에서 포트폴리오 작업하기
 linktitle: 포트폴리오
 type: docs
 weight: 40
-url: ko/java/portfolio/
+url: /ko/java/portfolio/
 description: Java로 PDF 포트폴리오를 만드는 방법. Microsoft Excel 파일, Word 문서 및 이미지 파일을 사용하여 PDF 포트폴리오를 만들어야 합니다.
 lastmod: "2021-06-05"
 sitemap:

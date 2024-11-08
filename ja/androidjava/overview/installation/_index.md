@@ -3,7 +3,7 @@ title: Aspose.PDF for AndroidをJava経由でインストール
 linktitle: インストール
 type: docs
 weight: 40
-url: ja/androidjava/installation/
+url: /ja/androidjava/installation/
 description: このセクションでは、Aspose.PDF for AndroidをJava経由でインストールするための製品説明と手順を、自分でインストールする場合とNuGetを使用する場合について説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -32,7 +32,7 @@ sitemap:
 {{% alert color="primary" %}} 
 
 評価用に [Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java) をダウンロードできます。
- 評価版のダウンロードは購入版のダウンロードと同じです。評価版は、[ライセンスを適用する](/pdf/androidjava/licensing/)ために数行のコードを追加すると、ライセンスが付与されます。
+ 評価版のダウンロードは購入版のダウンロードと同じです。評価版は、[ライセンスを適用する](/pdf/ja/androidjava/licensing/)ために数行のコードを追加すると、ライセンスが付与されます。
 
 評価版の制限なしにAspose.PDF for Android via Javaをテストしたい場合は、30日間の一時ライセンスをリクエストすることもできます。[一時ライセンスの取得方法](https://purchase.aspose.com/temporary-license)をご参照ください。
 

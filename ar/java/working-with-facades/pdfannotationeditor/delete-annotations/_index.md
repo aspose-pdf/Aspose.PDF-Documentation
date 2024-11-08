@@ -2,7 +2,7 @@
 title: حذف التعليقات التوضيحية (الواجهات)
 type: docs
 weight: 10
-url: ar/java/delete-annotations/
+url: /ar/java/delete-annotations/
 description: يشرح هذا القسم كيفية حذف التعليقات التوضيحية باستخدام Aspose.PDF Facades باستخدام فئة PdfAnnotationEditor.
 lastmod: "2021-06-05"
 sitemap:

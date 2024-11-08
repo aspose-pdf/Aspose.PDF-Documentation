@@ -3,7 +3,7 @@
 title: PDF 파일 변환
 type: docs
 weight: 30
-url: ko/net/convert-pdf-file/
+url: /ko/net/convert-pdf-file/
 description: 이 섹션에서는 PdfConverter 클래스를 사용하여 Aspose.PDF Facades로 PDF 파일을 변환하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
@@ -63,4 +63,4 @@ public static void ConvertPdfPagesToImages01()
 
 ## See also
 
-Aspose.PDF for .NET은 PDF 문서를 다양한 형식으로 변환할 수 있으며, 다른 형식에서 PDF로 변환할 수도 있습니다. 또한, Aspose.PDF 변환기의 앱을 사용하여 Aspose.PDF 변환의 품질을 확인하고 결과를 온라인으로 볼 수 있습니다. 작업 해결을 위한 [변환](/pdf/net/converting/) 섹션을 학습하십시오.
+Aspose.PDF for .NET은 PDF 문서를 다양한 형식으로 변환할 수 있으며, 다른 형식에서 PDF로 변환할 수도 있습니다. 또한, Aspose.PDF 변환기의 앱을 사용하여 Aspose.PDF 변환의 품질을 확인하고 결과를 온라인으로 볼 수 있습니다. 작업 해결을 위한 [변환](/pdf/ko/net/converting/) 섹션을 학습하십시오.

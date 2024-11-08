@@ -3,7 +3,7 @@ title: Добавление аннотаций к фигурам с помощь
 linktitle: Аннотации к фигурам
 type: docs
 weight: 30
-url: ru/net/figures-annotation/
+url: /ru/net/figures-annotation/
 description: Эта статья описывает, как добавлять, получать и удалять аннотации к фигурам в вашем PDF-документе с помощью Aspose.PDF для .NET
 lastmod: "2023-09-12"
 sitemap:
@@ -89,7 +89,7 @@ sitemap:
 
 Подход к добавлению аннотации типичен для любой из них.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 1. Загрузите PDF-файл или создайте новый с помощью [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Создайте новую аннотацию и установите параметры (новый Rectangle, новый Point, заголовок, цвет, ширина и т.д).

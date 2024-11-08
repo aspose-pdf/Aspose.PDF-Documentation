@@ -3,7 +3,7 @@ title: Converter PDF para Diferentes Formatos de Imagem em Python
 linktitle: Converter PDF para Imagens
 type: docs
 weight: 70
-url: pt/python-cpp/convert-pdf-to-images-format/
+url: /pt/python-cpp/convert-pdf-to-images-format/
 lastmod: "2023-06-23"
 description: Este tópico mostra como usar Aspose.PDF para Python para converter PDF em vários formatos de imagem, por exemplo, TIFF, BMP, EMF, JPEG, PNG, GIF, SVG com algumas linhas de código.
 sitemap:

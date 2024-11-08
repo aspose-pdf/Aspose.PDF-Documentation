@@ -2,7 +2,7 @@
 title: Décrypter un fichier PDF
 type: docs
 weight: 20
-url: fr/net/decrypt-pdf-file/
+url: /fr/net/decrypt-pdf-file/
 description: Ce sujet explique comment décrypter un fichier PDF en utilisant la classe PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

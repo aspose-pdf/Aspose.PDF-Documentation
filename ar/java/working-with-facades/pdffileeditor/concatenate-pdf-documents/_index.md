@@ -2,7 +2,7 @@
 title: دمج مستندات PDF
 type: docs
 weight: 10
-url: ar/java/concatenate-pdf-documents/
+url: /ar/java/concatenate-pdf-documents/
 description: يشرح هذا القسم كيفية دمج مستندات PDF باستخدام com.aspose.pdf.facades باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: تقسيم صفحات PDF
 type: docs
 weight: 60
-url: ar/net/split-pdf-pages/
+url: /ar/net/split-pdf-pages/
 description: يشرح هذا القسم كيفية تقسيم صفحات PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

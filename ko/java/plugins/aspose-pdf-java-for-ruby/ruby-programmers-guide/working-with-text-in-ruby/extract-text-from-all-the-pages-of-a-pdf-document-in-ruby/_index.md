@@ -2,7 +2,7 @@
 title: 모든 페이지에서 PDF 문서의 텍스트 추출하기 - 루비
 type: docs
 weight: 30
-url: ko/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
+url: /ko/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
 lastmod: "2021-06-05"
 ---
 

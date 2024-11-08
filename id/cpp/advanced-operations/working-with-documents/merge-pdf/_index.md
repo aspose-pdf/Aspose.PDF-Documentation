@@ -3,7 +3,7 @@ title: Menggabungkan PDF menggunakan C++
 linktitle: Menggabungkan file PDF
 type: docs
 weight: 50
-url: id/cpp/merge-pdf-documents/
+url: /id/cpp/merge-pdf-documents/
 description: Halaman ini menjelaskan cara menggabungkan dokumen PDF menjadi satu file PDF dengan C++.
 lastmod: "2021-11-11"
 sitemap:

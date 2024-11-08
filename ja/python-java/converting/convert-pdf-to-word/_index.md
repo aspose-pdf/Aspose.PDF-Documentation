@@ -3,7 +3,7 @@ title: PythonでPDFをMicrosoft Word文書に変換する
 linktitle: PDFをWord 2003/2019に変換
 type: docs
 weight: 10
-url: ja/python-java/convert-pdf-to-word/
+url: /ja/python-java/convert-pdf-to-word/
 lastmod: "2023-04-06"
 description: Aspose.PDF for Python via .NETを使用して、PDFからMicrosoft Word形式への変換用Pythonコードの書き方を学びます。また、PDFからDOC(DOCX)への変換を調整します。
 sitemap:
@@ -95,7 +95,7 @@ document.save(output_pdf, save_options)
 **PDFをDOCにオンラインで変換してみてください**
 
 Aspose.PDF for Pythonは、オンライン無料アプリケーション["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)を提供しており、その機能と品質を試すことができます。
-[![Convert PDF to DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
+[![Convert PDF to DOC](/pdf/ja/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
 
 ## PDFをDOCXに変換
 
@@ -143,7 +143,7 @@ document.save(output_pdf, save_options)
 
 Aspose.PDF for Pythonは、オンラインで無料のアプリケーション["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)を提供しており、その機能と品質を試すことができます。
 
-[![Aspose.PDF Convertion PDF to Word Free App](/pdf/java/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Convertion PDF to Word Free App](/pdf/ja/java/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

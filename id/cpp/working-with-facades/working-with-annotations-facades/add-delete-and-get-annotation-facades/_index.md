@@ -2,7 +2,7 @@
 title: Add, Delete and Get Annotation - Facades
 type: docs
 weight: 10
-url: id/cpp/add-delete-and-get-annotation-facades/
+url: /id/cpp/add-delete-and-get-annotation-facades/
 ---
 
 ## <ins>**Tambahkan Anotasi dalam file PDF yang ada menggunakan PdfContentEditor**

@@ -3,7 +3,7 @@ title: Bekerja dengan AcroForms
 linktitle: AcroForms
 type: docs
 weight: 10
-url: id/net/acroforms/
+url: /id/net/acroforms/
 description: Dengan Aspose.PDF untuk .NET Anda dapat membuat formulir dari awal, mengisi bidang formulir dalam dokumen PDF, mengekstrak data dari formulir, dan lain-lain.
 lastmod: "2022-02-17"
 sitemap:
@@ -99,12 +99,12 @@ AcroForms memiliki kemampuan yang tidak ditemukan di XFA dan sebaliknya XFA memi
 Untuk pembelajaran lebih rinci tentang kemampuan dari perpustakaan Java, lihat artikel-artikel berikut:
 Untuk mempelajari lebih lanjut kemampuan dari perpustakaan Java, lihat artikel berikut:
 
-- [Buat AcroForm](/pdf/net/create-form) - buat formulir dari awal dengan C#.
-- [Isi AcroForm](/pdf/net/fill-form) - isi bidang formulir dalam dokumen PDF Anda.
-- [Ekstrak AcroForm](/pdf/net/extract-form) - dapatkan nilai dari semua atau satu bidang dokumen PDF.
-- [Memodifikasi AcroForm](/pdf/net/modifing-form) - dapatkan atau atur FieldLimit, atur font bidang formulir, dan lainnya.
-- [Mengirimkan Data AcroForm](/pdf/net/posting-acroform-data/) - impor dan ekspor data formulir ke dan dari file XML.
-- [Impor dan Ekspor Data](/pdf/net/import-and-export-data/) - impor dan ekspor data menggunakan Form Class.
+- [Buat AcroForm](/pdf/id/net/create-form) - buat formulir dari awal dengan C#.
+- [Isi AcroForm](/pdf/id/net/fill-form) - isi bidang formulir dalam dokumen PDF Anda.
+- [Ekstrak AcroForm](/pdf/id/net/extract-form) - dapatkan nilai dari semua atau satu bidang dokumen PDF.
+- [Memodifikasi AcroForm](/pdf/id/net/modifing-form) - dapatkan atau atur FieldLimit, atur font bidang formulir, dan lainnya.
+- [Mengirimkan Data AcroForm](/pdf/id/net/posting-acroform-data/) - impor dan ekspor data formulir ke dan dari file XML.
+- [Impor dan Ekspor Data](/pdf/id/net/import-and-export-data/) - impor dan ekspor data menggunakan Form Class.
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: Memulai
 linktitle: Memulai
 type: docs
 weight: 30
-url: id/python-net/get-started/
+url: /id/python-net/get-started/
 description: Bagian ini menjelaskan prinsip dasar kerja Aspose.PDF untuk Python melalui .NET. Perpustakaan Python mendukung berbagai macam fungsi.
 is_node: true
 lastmod: "2022-12-20"
@@ -38,15 +38,15 @@ Menggunakan Aspose.PDF untuk Python melalui .NET dalam proyek Anda memberikan ke
 
 ## Fitur Konversi
 
-- [Mengonversi PDF ke Word, Excel, dan PowerPoint](/pdf/python-net/convert-pdf-to-word/).
-- [Mengonversi PDF ke format Gambar](/pdf/python-net/convert-pdf-to-images-format/).
-- [Mengonversi file PDF ke format HTML dan sebaliknya](/pdf//python-net/convert-pdf-to-html/).
-- [Mengonversi PDF ke EPUB, Teks, XPS, dll](/pdf/python-net/convert-pdf-to-other-files/).
+- [Mengonversi PDF ke Word, Excel, dan PowerPoint](/pdf/id/python-net/convert-pdf-to-word/).
+- [Mengonversi PDF ke format Gambar](/pdf/id/python-net/convert-pdf-to-images-format/).
+- [Mengonversi file PDF ke format HTML dan sebaliknya](/pdf/id//python-net/convert-pdf-to-html/).
+- [Mengonversi PDF ke EPUB, Teks, XPS, dll](/pdf/id/python-net/convert-pdf-to-other-files/).
 - Mengonversi EPUB, Markdown, Teks, XPS, PostScript, XML, LaTex ke PDF
 
 
 ### Pelajari lebih lanjut tentang:
 
 
-- [Contoh Python "Hello, World"](/pdf/python-net/hello-world-example/)
-- [PDF Kompleks](/pdf/python-net/complex-pdf-example/)
+- [Contoh Python "Hello, World"](/pdf/id/python-net/hello-world-example/)
+- [PDF Kompleks](/pdf/id/python-net/complex-pdf-example/)

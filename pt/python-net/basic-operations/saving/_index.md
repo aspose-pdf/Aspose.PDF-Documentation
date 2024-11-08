@@ -3,7 +3,7 @@ title: Salvar documento PDF programaticamente
 linktitle: Salvar PDF
 type: docs
 weight: 30
-url: pt/python-net/save-pdf-document/
+url: /pt/python-net/save-pdf-document/
 description: Aprenda como salvar arquivo PDF em Python Aspose.PDF para biblioteca Python via .NET. Salvar documento PDF no sistema de arquivos, no fluxo e em aplicações Web.
 lastmod: "2022-12-22"
 sitemap:

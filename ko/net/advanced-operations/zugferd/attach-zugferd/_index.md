@@ -3,7 +3,7 @@ title: PDF/3-A 준수 PDF 생성 및 ZUGFeRD 청구서 첨부 in C#
 linktitle: PDF에 ZUGFeRD 첨부
 type: docs
 weight: 10
-url: ko/net/attach-zugferd/
+url: /ko/net/attach-zugferd/
 description: Aspose.PDF for .NET에서 ZUGFeRD가 포함된 PDF 문서를 생성하는 방법을 알아봅니다.
 lastmod: "2023-11-22"
 sitemap:
@@ -13,7 +13,7 @@ sitemap:
 
 ## PDF에 ZUGFeRD 첨부
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 PDF에 ZUGFeRD를 첨부하기 위해 다음 단계를 따르는 것이 좋습니다:
 

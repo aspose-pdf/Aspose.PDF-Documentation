@@ -2,7 +2,7 @@
 title: وحدة استيراد PDF في Umbraco
 type: docs
 weight: 10
-url: ar/net/umbraco-pdf-import-module/
+url: /ar/net/umbraco-pdf-import-module/
 description: تعلم كيفية تثبيت واستخدام وحدة استيراد PDF في Umbraco
 lastmod: "2021-06-05"
 sitemap:

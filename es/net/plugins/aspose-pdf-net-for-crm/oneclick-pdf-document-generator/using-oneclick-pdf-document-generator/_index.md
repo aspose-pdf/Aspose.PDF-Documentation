@@ -2,7 +2,7 @@
 title: Uso del generador de documentos PDF OneClick
 type: docs
 weight: 10
-url: es/net/using-oneclick-pdf-document-generator/
+url: /es/net/using-oneclick-pdf-document-generator/
 description: Aprende a utilizar el generador de documentos PDF OneClick de Aspose.PDF en Microsoft Dynamics
 lastmod: "2021-06-05"
 sitemap:

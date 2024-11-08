@@ -3,7 +3,7 @@ title: PDFページサイズをプログラムで変更する
 linktitle: PDFページサイズの変更
 type: docs
 weight: 40
-url: ja/cpp/change-page-size/
+url: /ja/cpp/change-page-size/
 description: C++ライブラリを使用してPDFファイルのページサイズを変更します。
 lastmod: "2021-12-08"
 sitemap:

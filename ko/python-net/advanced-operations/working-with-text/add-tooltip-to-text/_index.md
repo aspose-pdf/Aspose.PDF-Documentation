@@ -3,7 +3,7 @@ title: PDF Tooltip using Python
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: ko/python-net/pdf-tooltip/
+url: /ko/python-net/pdf-tooltip/
 description: Python과 Aspose.PDF를 사용하여 PDF의 텍스트 조각에 툴팁을 추가하는 방법을 배우세요.
 lastmod: "2024-02-17"
 sitemap:

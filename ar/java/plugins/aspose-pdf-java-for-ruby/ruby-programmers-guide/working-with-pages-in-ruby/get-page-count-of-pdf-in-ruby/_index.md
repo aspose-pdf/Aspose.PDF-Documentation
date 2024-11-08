@@ -2,7 +2,7 @@
 title: الحصول على عدد صفحات PDF في روبي
 type: docs
 weight: 40
-url: ar/java/get-page-count-of-pdf-in-ruby/
+url: /ar/java/get-page-count-of-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: 기존 PDF에서 테이블 조작
 linktitle: 테이블 조작
 type: docs
 weight: 40
-url: ko/net/manipulate-tables-in-existing-pdf/
+url: /ko/net/manipulate-tables-in-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -78,7 +78,7 @@ sitemap:
 
 Aspose.PDF for .NET이 지원하는 가장 초기 기능 중 하나는 테이블 작업 기능이며, 처음부터 생성되거나 기존 PDF 파일에서 테이블을 추가하는 데 큰 지원을 제공합니다. 또한 데이터베이스 내용을 기반으로 동적 테이블을 생성하기 위해 데이터베이스(DOM)와 테이블을 통합할 수 있는 기능도 제공합니다. 이 새로운 릴리스에서, 우리는 PDF 문서의 페이지에 이미 존재하는 간단한 테이블을 검색하고 파싱하는 새로운 기능을 구현했습니다. **Aspose.PDF.Text.TableAbsorber**라는 새로운 클래스가 이러한 기능을 제공합니다. TableAbsorber의 사용법은 기존 TextFragmentAbsorber 클래스와 매우 유사합니다. 다음 코드 스니펫은 특정 테이블 셀의 내용을 업데이트하는 단계를 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.

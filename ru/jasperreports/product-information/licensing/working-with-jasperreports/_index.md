@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: ru/jasperreports/working-with-jasperreports/
+url: /ru/jasperreports/working-with-jasperreports/
 
 lastmod: "2021-06-05"
 
@@ -40,12 +40,12 @@ Aspose.Words для JasperReports доступен бесплатно для н�
 
 
 
-- [Вызвать setLicense](/pdf/jasperreports/working-with-jasperreports/#call-setlicense).
+- [Вызвать setLicense](/pdf/ru/jasperreports/working-with-jasperreports/#call-setlicense).
 
 
-- [Установить параметр экспортера в коде](/pdf/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
+- [Установить параметр экспортера в коде](/pdf/ru/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
 
-- [Установите параметр экспортера в **applicationContext.xml**](/pdf/jasperreports/working-with-jasperserver/).
+- [Установите параметр экспортера в **applicationContext.xml**](/pdf/ru/jasperreports/working-with-jasperserver/).
 
 
 

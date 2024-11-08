@@ -3,7 +3,7 @@ title: استخراج النص من جميع صفحات PDF باستخدام C++
 linktitle: استخراج النص من PDF
 type: docs
 weight: 10
-url: ar/cpp/extract-text-from-all-pdf/
+url: /ar/cpp/extract-text-from-all-pdf/
 description: تصف هذه المقالة طرقًا مختلفة لاستخراج النص من مستندات PDF باستخدام Aspose.PDF في C++. من الصفحات الكاملة، من جزء محدد، بناءً على الأعمدة، إلخ.
 lastmod: "2021-12-13"
 sitemap:

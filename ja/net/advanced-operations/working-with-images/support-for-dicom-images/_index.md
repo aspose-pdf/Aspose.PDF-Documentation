@@ -3,7 +3,7 @@ title: DICOM画像のサポート
 linktitle: DICOM画像のサポート
 type: docs
 weight: 100
-url: ja/net/support-for-dicom-mages/
+url: /ja/net/support-for-dicom-mages/
 description: このセクションでは、C#ライブラリを使用してPDFファイルでDICOM画像をサポートする方法について説明します。
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 DICOM規格は、全米電機製造者協会によって開発されました。この形式には、個々の画像フレーム、フレームのシリーズ、患者情報、研究、機器、機関、検査を行う医療スタッフなどの作成、保存、転送、および印刷の機能が含まれています。
 
-以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 **Aspose.PDF for .NET**は、PDFドキュメントにDICOM画像を追加する機能をサポートしています。以下のコードスニペットは、この機能を使用する方法を示しています。
 

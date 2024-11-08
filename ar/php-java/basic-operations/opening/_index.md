@@ -3,7 +3,7 @@ title: فتح مستند PDF
 linktitle: فتح
 type: docs
 weight: 20
-url: ar/php-java/open-pdf-document/
+url: /ar/php-java/open-pdf-document/
 description: تعلم كيفية فتح ملف PDF باستخدام Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

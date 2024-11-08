@@ -2,7 +2,7 @@
 title: 複数の選択されたファイルを単一の変換リクエストでPDFファイルに変換する
 type: docs
 weight: 50
-url: ja/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
+url: /ja/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
 lastmod: "2020-12-16"
 description: PDF SharePointライブラリは、複数の選択されたファイルを単一の変換操作でPDFファイルに変換することを可能にします。
 ---

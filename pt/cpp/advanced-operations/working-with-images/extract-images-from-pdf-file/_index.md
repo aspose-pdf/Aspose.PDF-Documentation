@@ -3,7 +3,7 @@ title: Extrair Imagens de Arquivo PDF usando C++
 linktitle: Extrair Imagens
 type: docs
 weight: 30
-url: pt/cpp/extract-images-from-pdf-file/
+url: /pt/cpp/extract-images-from-pdf-file/
 description: Esta seção mostra como extrair imagens de um arquivo PDF usando a biblioteca C++.
 lastmod: "2021-12-18"
 ---

@@ -3,7 +3,7 @@ title: PDFをPDF/A形式に変換する
 linktitle: PDFをPDF/A形式に変換する
 type: docs
 weight: 100
-url: ja/net/convert-pdf-to-pdfa/
+url: /ja/net/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
 description: このトピックでは、Aspose.PDFを使用してPDFファイルをPDF/A準拠のPDFファイルに変換する方法を示します。
 sitemap:
@@ -28,7 +28,7 @@ Aspose.PDF for .NETは無料のオンラインアプリケーション["PDF to P
 [![Aspose.PDF 変換 PDF to PDF/A 無料アプリ](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## PDFファイルをPDF/A-1bに変換する
 

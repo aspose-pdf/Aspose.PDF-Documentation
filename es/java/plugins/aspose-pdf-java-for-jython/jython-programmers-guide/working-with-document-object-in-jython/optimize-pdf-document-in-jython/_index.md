@@ -2,7 +2,7 @@
 title: Optimizar Documento PDF en Jython
 type: docs
 weight: 50
-url: es/java/optimize-pdf-document-in-jython/
+url: /es/java/optimize-pdf-document-in-jython/
 lastmod: "2021-06-05"
 ---
 

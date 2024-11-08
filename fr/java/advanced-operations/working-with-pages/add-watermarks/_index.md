@@ -4,7 +4,7 @@ title: Ajouter un filigrane au PDF
 linktitle: Ajouter un filigrane
 type: docs
 weight: 90
-url: fr/java/add-watermarks/
+url: /fr/java/add-watermarks/
 description: Cet article explique les fonctionnalités de travail avec des artefacts et d'obtention de filigranes dans les PDF en utilisant Java de manière programmatique.
 lastmod: "2021-06-05"
 sitemap:

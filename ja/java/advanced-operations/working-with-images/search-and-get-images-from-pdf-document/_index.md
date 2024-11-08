@@ -3,7 +3,7 @@ title: PDFドキュメントから画像を検索して取得する
 linktitle: 画像を検索して取得する
 type: docs
 weight: 60
-url: ja/java/search-and-get-images-from-pdf-document/
+url: /ja/java/search-and-get-images-from-pdf-document/
 description: このセクションでは、Aspose.PDF for Javaライブラリを使用してPDFドキュメントから画像を検索して取得する方法を説明します。
 lastmod: "2021-06-05"
 ---

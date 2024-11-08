@@ -3,7 +3,7 @@ title: Configuración de Propiedades de Elementos de Estructura
 linktitle: Configuración de Propiedades de Elementos de Estructura
 type: docs
 weight: 30
-url: es/net/setting-structure-elements-properties/
+url: /es/net/setting-structure-elements-properties/
 description: Puede configurar diferentes propiedades de los elementos de estructura en un documento PDF con Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:

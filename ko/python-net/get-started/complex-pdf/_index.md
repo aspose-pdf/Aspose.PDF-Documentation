@@ -3,7 +3,7 @@ title: 복잡한 PDF 만들기
 linktitle: 복잡한 PDF 만들기
 type: docs
 weight: 30
-url: ko/python-net/complex-pdf-example/
+url: /ko/python-net/complex-pdf-example/
 description: Aspose.PDF for Python via .NET을 사용하면 하나의 문서에 이미지, 텍스트 조각 및 테이블이 포함된 더 복잡한 문서를 만들 수 있습니다.
 lastmod: "2022-12-22"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/python-net/hello-world-example/) 예제는 Python과 Aspose.PDF를 사용하여 PDF 문서를 만드는 간단한 단계를 보여주었습니다. 이 글에서는 Aspose.PDF for Python을 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예제로 여객 페리 서비스를 운영하는 가상의 회사의 문서를 가져오겠습니다. 우리의 문서에는 이미지, 두 개의 텍스트 조각(헤더 및 단락), 그리고 테이블이 포함될 것입니다.
+[Hello, World](/pdf/ko/python-net/hello-world-example/) 예제는 Python과 Aspose.PDF를 사용하여 PDF 문서를 만드는 간단한 단계를 보여주었습니다. 이 글에서는 Aspose.PDF for Python을 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예제로 여객 페리 서비스를 운영하는 가상의 회사의 문서를 가져오겠습니다. 우리의 문서에는 이미지, 두 개의 텍스트 조각(헤더 및 단락), 그리고 테이블이 포함될 것입니다.
 
 문서를 처음부터 만들려면 특정 단계를 따라야 합니다:
 

@@ -2,7 +2,7 @@
 title: Aspose.PDF .NET لـ CRM
 type: docs
 weight: 310
-url: ar/net/aspose-pdf-net-for-crm/
+url: /ar/net/aspose-pdf-net-for-crm/
 description: تعرف على كيفية استخدام Aspose.PDF لـ Microsoft Dynamics CRM
 lastmod: "2021-06-05"
 sitemap:
@@ -28,5 +28,5 @@ Aspose.PDF لـ .NET هو مكون إنشاء وتعديل مستندات PDF ي
 
 لقد أنشأنا الإضافات التالية لـ CRM باستخدام Aspose.PDF
 
-- [مولد مستندات PDF بنقرة واحدة](/pdf/net/oneclick-pdf-document-generator/)
-  - [استخدام مولد مستندات PDF بنقرة واحدة](/pdf/net/using-oneclick-pdf-document-generator/)
+- [مولد مستندات PDF بنقرة واحدة](/pdf/ar/net/oneclick-pdf-document-generator/)
+  - [استخدام مولد مستندات PDF بنقرة واحدة](/pdf/ar/net/using-oneclick-pdf-document-generator/)

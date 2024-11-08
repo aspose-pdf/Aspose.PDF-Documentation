@@ -3,7 +3,7 @@ title: إضافة أختام نصية في PDF برمجياً
 linktitle: الأختام النصية في ملف PDF
 type: docs
 weight: 20
-url: ar/java/text-stamps-in-the-pdf-file/
+url: /ar/java/text-stamps-in-the-pdf-file/
 description: إضافة ختم نصي إلى ملف PDF باستخدام فئة TextStamp مع Java.
 lastmod: "2021-06-05"
 sitemap:

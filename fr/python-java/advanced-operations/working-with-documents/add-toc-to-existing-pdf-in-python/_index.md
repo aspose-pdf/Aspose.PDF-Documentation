@@ -2,7 +2,7 @@
 title: Ajouter une table des matières à un PDF existant en Python
 type: docs
 weight: 20
-url: fr/python-java/add-toc-to-existing-pdf-in-python/
+url: /fr/python-java/add-toc-to-existing-pdf-in-python/
 ---
 
 Pour ajouter une table des matières dans un document PDF en utilisant **Aspose.PDF Java pour Python**, il suffit d'invoquer la classe **AddToc**.

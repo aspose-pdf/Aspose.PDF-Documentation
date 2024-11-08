@@ -3,7 +3,7 @@
 title: Pourquoi choisir Aspose.Pdf pour les services de création de rapports
 type: docs
 weight: 10
-url: fr/reportingservices/why-choose-aspose-pdf-for-reporting-services/
+url: /fr/reportingservices/why-choose-aspose-pdf-for-reporting-services/
 lastmod: "2021-06-05"
 ---
 

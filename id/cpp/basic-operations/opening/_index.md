@@ -3,7 +3,7 @@ title: Buka Dokumen PDF menggunakan C++
 linktitle: Buka
 type: docs
 weight: 20
-url: id/cpp/open-pdf-document/
+url: /id/cpp/open-pdf-document/
 description: Gunakan pustaka C++ untuk membuka dokumen PDF Anda dengan cuplikan kode berikut oleh Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Posting AcroForm Data
 linktitle: Posting AcroForm
 type: docs
 weight: 50
-url: ko/cpp/posting-acroform-data/
+url: /ko/cpp/posting-acroform-data/
 description: Aspose.PDF for C++의 Aspose.Pdf.Facades 네임스페이스를 사용하여 양식 데이터를 XML 파일로 가져오고 내보낼 수 있습니다.
 lastmod: "2021-12-01"
 sitemap:

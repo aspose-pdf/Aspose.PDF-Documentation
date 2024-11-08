@@ -2,7 +2,7 @@
 title: PythonでPDFファイルを連結する
 type: docs
 weight: 10
-url: ja/java/concatenate-pdf-files-in-python/
+url: /ja/java/concatenate-pdf-files-in-python/
 lastmod: "2021-06-05"
 ---
 

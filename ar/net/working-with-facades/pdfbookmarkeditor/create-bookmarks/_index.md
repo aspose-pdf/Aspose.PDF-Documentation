@@ -2,7 +2,7 @@
 title: إنشاء إشارات مرجعية
 type: docs
 weight: 10
-url: ar/net/create-bookmarks/
+url: /ar/net/create-bookmarks/
 description: يشرح هذا القسم كيفية إنشاء إشارات مرجعية لملف PDF الخاص بك باستخدام Aspose.PDF Facades باستخدام فئة PdfBookmarkEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -50,4 +50,4 @@ draft: false
 ```
 ## انظر أيضًا
 
-حاول المقارنة والعثور على طريقة للعمل مع الإشارات المرجعية التي تناسبك. دعونا نتعلم قسم [العمل مع الإشارات المرجعية في PDF](/pdf/net/bookmarks/).
+حاول المقارنة والعثور على طريقة للعمل مع الإشارات المرجعية التي تناسبك. دعونا نتعلم قسم [العمل مع الإشارات المرجعية في PDF](/pdf/ar/net/bookmarks/).

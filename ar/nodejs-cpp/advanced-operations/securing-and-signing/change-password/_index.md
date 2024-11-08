@@ -3,7 +3,7 @@ title: تغيير كلمة مرور ملف PDF في Node.js
 linktitle: تغيير كلمة المرور
 type: docs
 weight: 50
-url: ar/nodejs-cpp/change-password-pdf/
+url: /ar/nodejs-cpp/change-password-pdf/
 description: تغيير كلمة مرور ملف PDF باستخدام Aspose.PDF لـ Node.js عبر C++.
 lastmod: "2023-11-16"
 sitemap:

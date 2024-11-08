@@ -3,7 +3,7 @@ title: Travailler avec les formulaires en C++
 linktitle: Travailler avec les formulaires
 type: docs
 weight: 50
-url: fr/cpp/working-with-forms/
+url: /fr/cpp/working-with-forms/
 description: Cette section explique comment travailler avec les AcroForms et les formulaires XFA dans vos documents PDF avec Aspose.PDF pour C++.
 lastmod: "2021-11-30"
 sitemap:
@@ -21,5 +21,5 @@ Puis-je créer un formulaire PDF remplissable à partir d'un document existant ?
 
 Vous trouverez des réponses à ces questions et à bien d'autres en consultant la section suivante de la documentation.
 
-- [AcroForms](/pdf/cpp/acroforms/) - créer un formulaire, remplir un champ de formulaire, extraire des données d'un formulaire, modifier des champs dans votre PDF avec la bibliothèque C++.
-- [XFA Forms](/pdf/cpp/xfa-forms/) - remplir les champs XFA, convertir XFA, obtenir les propriétés des champs XFA.
+- [AcroForms](/pdf/fr/cpp/acroforms/) - créer un formulaire, remplir un champ de formulaire, extraire des données d'un formulaire, modifier des champs dans votre PDF avec la bibliothèque C++.
+- [XFA Forms](/pdf/fr/cpp/xfa-forms/) - remplir les champs XFA, convertir XFA, obtenir les propriétés des champs XFA.

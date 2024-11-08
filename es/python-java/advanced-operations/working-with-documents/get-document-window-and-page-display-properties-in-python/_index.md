@@ -2,7 +2,7 @@
 title: Obtener Propiedades de la Ventana del Documento y de la Pantalla de la Página en Python
 type: docs
 weight: 30
-url: es/python-java/get-document-window-and-page-display-properties-in-python/
+url: /es/python-java/get-document-window-and-page-display-properties-in-python/
 ---
 
 <ins>Para obtener las propiedades de la ventana del documento y de la pantalla de la página de un documento PDF usando **Aspose.PDF Java para Python**, simplemente invoque la clase **GetDocumentWindow**.

@@ -3,7 +3,7 @@ title: Travailler avec les Métadonnées de Fichier PDF
 linktitle: Métadonnées de Fichier PDF
 type: docs
 weight: 140
-url: fr/php-java/pdf-file-metadata/
+url: /fr/php-java/pdf-file-metadata/
 description: Cette section explique comment obtenir des informations sur un fichier PDF, comment obtenir des métadonnées XMP à partir d'un fichier PDF, définir des informations de fichier PDF.
 lastmod: "2024-06-05"
 sitemap:

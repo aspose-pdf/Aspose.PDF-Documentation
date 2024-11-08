@@ -3,7 +3,7 @@ title: Extraindo texto bruto de arquivo PDF
 linktitle: Extrair texto de PDF
 type: docs
 weight: 10
-url: pt/java/extract-text-from-all-pdf/
+url: /pt/java/extract-text-from-all-pdf/
 description: Este artigo descreve várias maneiras de extrair texto de documentos PDF usando o Aspose.PDF para Java. De páginas inteiras, de uma parte específica, com base em colunas, etc.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: العمل مع العناوين في PDF
 type: docs
 weight: 40
-url: ar/python-net/working-with-headings/
+url: /ar/python-net/working-with-headings/
 description: إنشاء ترقيم في عنوان مستند PDF الخاص بك باستخدام Python. يوفر Aspose.PDF for Python عبر .NET أنواعًا مختلفة من أنماط الترقيم.
 lastmod: "2023-04-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 العناوين هي الأجزاء المهمة في أي مستند. يحاول الكتاب دائمًا جعل العناوين أكثر بروزًا وذات مغزى لقرائهم. إذا كان هناك أكثر من عنوان واحد في مستند، فلدى الكاتب عدة خيارات لتنظيم هذه العناوين. واحدة من أكثر الطرق شيوعًا لتنظيم العناوين هي كتابة العناوين بنمط الترقيم.
 
-يوفر [Aspose.PDF for Python عبر .NET](/pdf/python-net/) العديد من أنماط الترقيم المعرفة مسبقًا. يتم تخزين هذه الأنماط المعرفة مسبقًا في تعداد، [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). القيم المعرفة مسبقًا لتعداد NumberingStyle ووصفها موضحة أدناه:
+يوفر [Aspose.PDF for Python عبر .NET](/pdf/ar/python-net/) العديد من أنماط الترقيم المعرفة مسبقًا. يتم تخزين هذه الأنماط المعرفة مسبقًا في تعداد، [NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/). القيم المعرفة مسبقًا لتعداد NumberingStyle ووصفها موضحة أدناه:
 
 |**أنواع العناوين**|**الوصف**|
 | :- | :- |

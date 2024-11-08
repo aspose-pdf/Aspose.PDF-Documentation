@@ -3,7 +3,7 @@ title: Aspose.PDF para PHP a través de Java Support
 linktitle: Soporte Técnico
 type: docs
 weight: 100
-url: es/php-java/technical-support/
+url: /es/php-java/technical-support/
 description: Esta página ofrece recomendaciones para resolver rápida y eficientemente sus tareas utilizando Aspose.PDF para PHP a través de Java.
 lastmod: "2024-06-05"
 sitemap:

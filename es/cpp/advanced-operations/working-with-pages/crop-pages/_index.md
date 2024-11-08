@@ -3,7 +3,7 @@ title: Recortar Páginas de PDF programáticamente C++
 linktitle: Recortar Páginas
 type: docs
 weight: 80
-url: es/cpp/crop-pages/
+url: /es/cpp/crop-pages/
 description: Puedes obtener propiedades de página, como el ancho, alto, bleed-, crop- y trimbox usando Aspose.PDF para C++.
 lastmod: "2021-12-09"
 sitemap:

@@ -3,7 +3,7 @@ title: تغيير كلمة مرور ملف PDF
 linktitle: تغيير كلمة المرور
 type: docs
 weight: 50
-url: ar/javascript-cpp/change-password-pdf/
+url: /ar/javascript-cpp/change-password-pdf/
 description: تغيير كلمة مرور ملف PDF باستخدام Aspose.PDF لـ JavaScript عبر C++.
 lastmod: "2023-09-13"
 sitemap:

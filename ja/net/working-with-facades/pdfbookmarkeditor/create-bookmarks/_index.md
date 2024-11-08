@@ -2,7 +2,7 @@
 title: ブックマークを作成
 type: docs
 weight: 10
-url: ja/net/create-bookmarks/
+url: /ja/net/create-bookmarks/
 description: このセクションでは、Aspose.PDF Facades を使用して PdfBookmarEditor クラスで PDF ファイルにブックマークを作成する方法について説明します。
 lastmod: "2021-06-05"
 draft: false
@@ -51,4 +51,4 @@ draft: false
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-AddChildBookmark-AddChildBookmark.cs" >}}
 ## See also
 
-自分に合ったブックマークの使い方を見つけてみてください。[PDFでのブックマークの操作](/pdf/net/bookmarks/)セクションを学びましょう。
+自分に合ったブックマークの使い方を見つけてみてください。[PDFでのブックマークの操作](/pdf/ja/net/bookmarks/)セクションを学びましょう。

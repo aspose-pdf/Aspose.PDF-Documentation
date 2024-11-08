@@ -2,7 +2,7 @@
 title: Others
 type: docs
 weight: 20
-url: ar/java/others/
+url: /ar/java/others/
 lastmod: "2022-01-27"
 ---
 

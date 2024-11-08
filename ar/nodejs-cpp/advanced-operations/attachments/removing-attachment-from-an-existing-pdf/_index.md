@@ -3,7 +3,7 @@ title: إزالة المرفقات من PDF في Node.js
 linktitle: إزالة المرفقات من PDF موجود
 type: docs
 weight: 10
-url: ar/nodejs-cpp/removing-attachment-from-an-existing-pdf/
+url: /ar/nodejs-cpp/removing-attachment-from-an-existing-pdf/
 description: يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم بيئة Node.js لإزالة المرفقات في ملفات PDF بواسطة Aspose.PDF.
 lastmod: "2023-11-16"
 sitemap:

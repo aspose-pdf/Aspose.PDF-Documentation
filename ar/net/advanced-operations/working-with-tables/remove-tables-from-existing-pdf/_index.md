@@ -3,7 +3,7 @@ title: إزالة الجداول من ملف PDF موجود
 linktitle: إزالة الجداول
 type: docs
 weight: 50
-url: ar/net/remove-tables-from-existing-pdf/
+url: /ar/net/remove-tables-from-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -82,7 +82,7 @@ Aspose.PDF لـ NET يوفر القدرات لإدراج/إنشاء جدول د�
 
 لإزالة الجداول، نحتاج إلى استخدام فئة [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) للحصول على الجداول في PDF الموجود ثم استدعاء [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
 
-يعمل أيضًا الشفرة التالية مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل أيضًا الشفرة التالية مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إزالة الجدول من مستند PDF
 

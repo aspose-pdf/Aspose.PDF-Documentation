@@ -3,7 +3,7 @@ title: استخراج المحتوى الموسوم من PDF
 linktitle: استخراج المحتوى الموسوم
 type: docs
 weight: 20
-url: ar/net/extract-tagged-content-from-tagged-pdfs/
+url: /ar/net/extract-tagged-content-from-tagged-pdfs/
 description: يشرح هذا المقال كيفية استخراج المحتوى الموسوم من مستند PDF باستخدام Aspose.PDF لـ .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 في هذه المقالة ستتعلم كيفية استخراج المحتوى الموسوم من مستند PDF باستخدام C#.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## الحصول على محتوى PDF الموسوم
 

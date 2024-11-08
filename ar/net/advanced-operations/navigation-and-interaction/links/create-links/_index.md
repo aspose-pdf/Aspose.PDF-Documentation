@@ -3,7 +3,7 @@ title: إنشاء روابط في ملف PDF باستخدام C#
 linktitle: إنشاء روابط
 type: docs
 weight: 10
-url: ar/net/create-links/
+url: /ar/net/create-links/
 description: توضح هذه القسم كيفية إنشاء روابط في مستند PDF الخاص بك باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "توضح هذه القسم كيفية إنشاء روابط في مستند PDF الخاص بك باستخدام C#."
 }
 </script>
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إنشاء الروابط
 

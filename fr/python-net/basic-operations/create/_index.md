@@ -3,7 +3,7 @@ title: Créer un document PDF par programmation
 linktitle: Créer PDF
 type: docs
 weight: 10
-url: fr/python-net/create-document/
+url: /fr/python-net/create-document/
 description: Cette page décrit comment créer un document PDF à partir de zéro avec Aspose.PDF pour Python via la bibliothèque .NET.
 ---
 

@@ -2,7 +2,7 @@
 title: Instalar no Servidor de Relatórios
 type: docs
 weight: 10
-url: pt/reportingservices/install-to-report-server/
+url: /pt/reportingservices/install-to-report-server/
 lastmod: "2021-06-05"
 ---
 

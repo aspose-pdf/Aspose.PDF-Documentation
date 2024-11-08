@@ -2,7 +2,7 @@
 title: Supprimer une Page Particulière du Fichier PDF en jython
 type: docs
 weight: 20
-url: fr/java/delete-a-particular-page-from-the-pdf-file-in-jython/
+url: /fr/java/delete-a-particular-page-from-the-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

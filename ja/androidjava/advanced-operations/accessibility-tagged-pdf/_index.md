@@ -3,7 +3,7 @@ title: アクセシビリティとタグ付きPDFの作業
 linktitle: アクセシビリティ。タグ付きPDF
 type: docs
 weight: 120
-url: ja/androidjava/accessibility-tagged-pdf/
+url: /ja/androidjava/accessibility-tagged-pdf/
 description: この章では、タグ付きPDFドキュメントを作成する可能性について説明します。この機能により、構造化されたドキュメントにタグを追加できます。手頃なPDFを取得する方法について詳しく学びましょう。
 lastmod: "2021-06-05"
 sitemap:
@@ -19,7 +19,7 @@ Aspose.PDFには、PDF/UA標準（「セクション508」または「WCAG標準
 
 このセクションでは次のトピックをカバーします:
 
-- [タグ付きPDFを作成する](/pdf/andriodjava/create-tagged-pdf-documents/)
-- [タグ付きPDFからタグ付きコンテンツを抽出する](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)
-- [構造要素のプロパティを設定する](/pdf/androidjava/set-tagged-pdfs-element-properties/)
-- [タグ付きPDF内でテーブルを操作する](/pdf/androidjava/working-with-table-in-tagged-pdfs/)
+- [タグ付きPDFを作成する](/pdf/ja/andriodjava/create-tagged-pdf-documents/)
+- [タグ付きPDFからタグ付きコンテンツを抽出する](/pdf/ja/androidjava/extract-tagged-content-from-tagged-pdfs/)
+- [構造要素のプロパティを設定する](/pdf/ja/androidjava/set-tagged-pdfs-element-properties/)
+- [タグ付きPDF内でテーブルを操作する](/pdf/ja/androidjava/working-with-table-in-tagged-pdfs/)

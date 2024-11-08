@@ -3,7 +3,7 @@ title: Posting AcroForm Data
 linktitle: Posting AcroForm
 type: docs
 weight: 50
-url: ko/net/posting-acroform-data/
+url: /ko/net/posting-acroform-data/
 description: Aspose.Pdf.Facades 네임스페이스를 이용하여 Aspose.PDF for .NET에서 XML 파일로 폼 데이터를 가져오고 내보낼 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ AcroForm은 PDF 문서의 중요한 유형입니다. [Aspose.Pdf.Facades 네임�
 
 ## 구현 세부 사항
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 이 글에서는 [Aspose.Pdf.Facades 네임스페이스](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)를 사용하여 AcroForm을 생성하는 방법을 시도했습니다.
 이 문서에서는 [Aspose.Pdf.Facades 네임스페이스](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)를 사용하여 AcroForm을 생성하려고 시도하였습니다.

@@ -2,7 +2,7 @@
 title: Extraer páginas de PDF
 type: docs
 weight: 20
-url: es/java/extract-pdf-pages/
+url: /es/java/extract-pdf-pages/
 description: Esta sección explica cómo extraer páginas de PDF con com.aspose.pdf.facades usando la clase PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Работа с закладками в PDF с использование
 linktitle: Закладки
 type: docs
 weight: 30
-url: ru/python-net/bookmarks/
+url: /ru/python-net/bookmarks/
 description: Этот раздел объясняет, как добавлять, удалять и получать закладки с помощью Aspose.PDF для Python через .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -82,5 +82,5 @@ sitemap:
 Закладки PDF — это удобный и необходимый инструмент, когда дело касается чтения PDF-файлов. Они позволяют пользователям быстро переходить к другим местам в PDF-документе, перемещаться по страницам и быстро просматривать содержимое PDF, как в оглавлении.
 В этом разделе вы узнаете, как:
 
-- [Добавить и удалить закладку](/pdf/python-net/add-and-delete-bookmark/)
-- [Получить, обновить и развернуть закладку](/pdf/python-net/get-update-and-expand-bookmark/)
+- [Добавить и удалить закладку](/pdf/ru/python-net/add-and-delete-bookmark/)
+- [Получить, обновить и развернуть закладку](/pdf/ru/python-net/get-update-and-expand-bookmark/)

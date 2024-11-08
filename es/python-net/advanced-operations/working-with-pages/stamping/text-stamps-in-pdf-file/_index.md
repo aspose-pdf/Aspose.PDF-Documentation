@@ -3,7 +3,7 @@ title: Agregar sellos de texto en PDF mediante Python
 linktitle: Sellos de texto en archivo PDF
 type: docs
 weight: 20
-url: es/python-net/text-stamps-in-the-pdf-file/
+url: /es/python-net/text-stamps-in-the-pdf-file/
 description: Agregue un sello de texto a un documento PDF utilizando la clase TextStamp con la biblioteca Aspose.PDF para Python.
 lastmod: "2023-04-17"
 sitemap:

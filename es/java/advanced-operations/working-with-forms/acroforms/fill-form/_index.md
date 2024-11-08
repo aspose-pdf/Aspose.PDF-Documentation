@@ -3,7 +3,7 @@ title: Rellenar AcroForms
 linktitle: Rellenar AcroForms
 type: docs
 weight: 20
-url: es/java/fill-form/
+url: /es/java/fill-form/
 description: Esta sección explica cómo rellenar un campo de formulario en un documento PDF con Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

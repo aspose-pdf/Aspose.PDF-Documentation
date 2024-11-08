@@ -3,7 +3,7 @@ title: Python을 통해 PDF 페이지를 프로그래밍 방식으로 이동
 linktitle: PDF 페이지 이동
 type: docs
 weight: 100
-url: ko/python-net/move-pages/
+url: /ko/python-net/move-pages/
 description: Aspose.PDF for Python via .NET을 사용하여 원하는 위치 또는 PDF 파일의 끝으로 페이지를 이동해 보세요.
 lastmod: "2023-04-17"
 sitemap:

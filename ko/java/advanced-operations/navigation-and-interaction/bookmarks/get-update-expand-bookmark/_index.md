@@ -3,7 +3,7 @@ title: 북마크 가져오기, 업데이트 및 확장
 linktitle: 북마크 가져오기, 업데이트 및 확장
 type: docs
 weight: 20
-url: ko/java/get-update-and-expand-bookmark/
+url: /ko/java/get-update-and-expand-bookmark/
 description: 이 문서는 PDF 파일에서 북마크를 사용하는 방법을 설명합니다. Java 라이브러리를 사용하여 PDF 파일에서 북마크를 가져오고, 북마크의 페이지 번호를 얻고, PDF 문서에서 북마크를 업데이트하고, 문서를 볼 때 북마크를 확장할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

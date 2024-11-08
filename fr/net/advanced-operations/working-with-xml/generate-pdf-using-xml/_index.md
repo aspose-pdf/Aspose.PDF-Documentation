@@ -3,7 +3,7 @@ title: Générer un PDF à partir d'un XML
 linktitle: Générer un PDF à partir d'un XML
 type: docs
 weight: 10
-url: fr/net/generate-pdf-from-xml
+url: /fr/net/generate-pdf-from-xml
 description: Aspose.PDF pour .NET offre plusieurs moyens de convertir un fichier XML en document PDF nécessitant que le fichier XML d'entrée.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ aliases:
     "description": "Aspose.PDF pour .NET offre plusieurs moyens de convertir un fichier XML en document PDF nécessitant que le fichier XML d'entrée."
 }
 </script>
-Le extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Générer un document PDF à partir d'un document XML n'est pas une tâche triviale car le document XML peut décrire différents contenus. Aspose.PDF pour .NET a plusieurs façons de générer un PDF basé sur un document XML :
 

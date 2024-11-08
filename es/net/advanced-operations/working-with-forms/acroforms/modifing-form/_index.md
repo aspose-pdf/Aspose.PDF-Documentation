@@ -3,7 +3,7 @@ title: Modifing AcroForm
 linktitle: Modifing AcroForm
 type: docs
 weight: 40
-url: es/net/modifing-form/
+url: /es/net/modifing-form/
 description: Modificando el formulario en su archivo PDF con la biblioteca Aspose.PDF para .NET. Puede agregar o eliminar campos en el formulario existente, obtener y establecer el límite del campo, etc.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Obtener o Establecer el Límite de Campo
 

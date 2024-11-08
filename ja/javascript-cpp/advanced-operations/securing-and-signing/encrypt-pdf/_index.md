@@ -3,7 +3,7 @@ title:  JavaScriptを使用してPDFを暗号化
 linktitle: PDFファイルを暗号化
 type: docs
 weight: 50
-url: ja/javascript-cpp/encrypt-pdf/
+url: /ja/javascript-cpp/encrypt-pdf/
 description: Aspose.PDF for JavaScript via C++を使用してPDFファイルを暗号化します。
 lastmod: "2022-12-15"
 sitemap:

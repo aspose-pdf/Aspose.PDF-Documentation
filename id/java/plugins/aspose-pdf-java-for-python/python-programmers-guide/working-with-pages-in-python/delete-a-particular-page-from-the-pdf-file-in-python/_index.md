@@ -2,7 +2,7 @@
 title: Hapus Halaman Tertentu dari File PDF di Python
 type: docs
 weight: 20
-url: id/java/delete-a-particular-page-from-the-pdf-file-in-python/
+url: /id/java/delete-a-particular-page-from-the-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

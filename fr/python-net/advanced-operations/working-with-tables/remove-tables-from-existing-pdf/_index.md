@@ -3,7 +3,7 @@ title: Supprimer les tableaux d'un PDF existant
 linktitle: Supprimer les tableaux
 type: docs
 weight: 50
-url: fr/python-net/remove-tables-from-existing-pdf/
+url: /fr/python-net/remove-tables-from-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

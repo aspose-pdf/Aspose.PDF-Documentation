@@ -3,7 +3,7 @@ title: Dapatkan Resolusi dan Dimensi Gambar Tertanam
 linktitle: Dapatkan Resolusi dan Dimensi
 type: docs
 weight: 40
-url: id/java/get-resolution-and-dimensions-of-embedded-images/
+url: /id/java/get-resolution-and-dimensions-of-embedded-images/
 description: Bagian ini menunjukkan detail dalam mendapatkan resolusi dan dimensi Gambar Tertanam
 lastmod: "2021-06-05"
 ---

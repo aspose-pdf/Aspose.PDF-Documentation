@@ -2,7 +2,7 @@
 title: Splitter
 type: docs
 weight: 120
-url: ko/net/plugins/splitter/
+url: /ko/net/plugins/splitter/
 description: PDF 문서를 개별 페이지로 분할
 lastmod: "2024-01-24"
 draft: false

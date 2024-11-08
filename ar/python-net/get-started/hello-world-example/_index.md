@@ -3,7 +3,7 @@ title: مثال Hello World باستخدام بايثون
 linktitle: مثال Hello World
 type: docs
 weight: 20
-url: ar/python-net/hello-world-example/
+url: /ar/python-net/hello-world-example/
 description: يوضح هذا المثال كيفية إنشاء مستند PDF بسيط يحتوي على نص Hello World باستخدام Aspose.PDF لـ Python عبر .NET.
 lastmod: "2022-12-22"
 sitemap:

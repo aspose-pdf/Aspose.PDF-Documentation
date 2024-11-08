@@ -3,7 +3,7 @@ title: Obtenir, Mettre à Jour et Développer un Signet
 linktitle: Obtenir, Mettre à Jour et Développer un Signet
 type: docs
 weight: 20
-url: fr/cpp/get-update-and-expand-bookmark/
+url: /fr/cpp/get-update-and-expand-bookmark/
 description: La bibliothèque Aspose.PDF pour C++ vous permet d'obtenir ? mettre à jour dans un fichier PDF avec notre.
 lastmod: "2022-01-31"
 sitemap:

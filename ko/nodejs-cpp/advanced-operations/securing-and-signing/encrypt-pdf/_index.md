@@ -3,7 +3,7 @@ title: PDF 암호화 in Node.js
 linktitle: PDF 파일 암호화
 type: docs
 weight: 50
-url: ko/nodejs-cpp/encrypt-pdf/
+url: /ko/nodejs-cpp/encrypt-pdf/
 description: C++를 통한 Aspose.PDF for Node.js로 PDF 파일 암호화.
 lastmod: "2023-11-16"
 sitemap:

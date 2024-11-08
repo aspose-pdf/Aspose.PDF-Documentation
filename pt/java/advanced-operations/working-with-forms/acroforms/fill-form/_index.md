@@ -3,7 +3,7 @@ title: Preencher AcroForms
 linktitle: Preencher AcroForms
 type: docs
 weight: 20
-url: pt/java/fill-form/
+url: /pt/java/fill-form/
 description: Esta seção explica como preencher um campo de formulário em um documento PDF com Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

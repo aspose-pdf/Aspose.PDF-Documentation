@@ -2,7 +2,7 @@
 title: ラッパーアセンブリの作成
 type: docs
 weight: 80
-url: ja/net/creating-a-wrapper-assembly/
+url: /ja/net/creating-a-wrapper-assembly/
 ---
 
 {{% alert color="primary" %}}

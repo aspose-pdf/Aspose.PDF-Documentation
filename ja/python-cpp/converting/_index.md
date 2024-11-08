@@ -3,7 +3,7 @@ title: Pythonを使用してPDFドキュメントを変換する
 linktitle: PDFドキュメントを変換する
 type: docs
 weight: 70
-url: ja/python-cpp/converting/
+url: /ja/python-cpp/converting/
 lastmod: "2023-07-22"
 description: このセクションには、Python APIを使用してPDFドキュメントをさまざまな形式に変換する方法とその逆についての記事が含まれています。
 sitemap:
@@ -21,7 +21,7 @@ PDFファイルにはテキストだけでなく、画像、クリック可能�
 
 さまざまな目的でPDFに変換する必要がある多くの画像形式があります。Aspose.PDFは、最も一般的な画像形式とその逆を可能にします。
 
-- [PDFをさまざまな画像形式に変換する](/pdf/python-cpp/convert-pdf-to-images-format/) - PDFページをJPEG、PNGおよびその他の形式の画像として変換する
-- [画像をPDFに変換する](/pdf/python-cpp/convert-image-to-pdf/) - JPEG、PNGおよびその他の形式をPDFファイルに変換する
-- [PDFを他の形式に変換する](/pdf/python-cpp/convert-pdf-to-other-files/) - PDFページを他の形式に変換する
-- [PDFをテキストに変換する](/pdf/python-cpp/convert-pdf-to-txt/) - PDFページをテキストに変換する
+- [PDFをさまざまな画像形式に変換する](/pdf/ja/python-cpp/convert-pdf-to-images-format/) - PDFページをJPEG、PNGおよびその他の形式の画像として変換する
+- [画像をPDFに変換する](/pdf/ja/python-cpp/convert-image-to-pdf/) - JPEG、PNGおよびその他の形式をPDFファイルに変換する
+- [PDFを他の形式に変換する](/pdf/ja/python-cpp/convert-pdf-to-other-files/) - PDFページを他の形式に変換する
+- [PDFをテキストに変換する](/pdf/ja/python-cpp/convert-pdf-to-txt/) - PDFページをテキストに変換する

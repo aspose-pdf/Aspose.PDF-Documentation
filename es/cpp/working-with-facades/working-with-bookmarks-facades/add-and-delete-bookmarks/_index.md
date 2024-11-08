@@ -2,7 +2,7 @@
 title: Añadir y Eliminar Marcadores
 type: docs
 weight: 10
-url: es/cpp/add-and-delete-bookmarks/
+url: /es/cpp/add-and-delete-bookmarks/
 ---
 
 ## <ins>**Añadir Marcador**

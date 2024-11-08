@@ -3,7 +3,7 @@ title: C++에서 프로그래밍 방식으로 PDF 페이지 자르기
 linktitle: 페이지 자르기
 type: docs
 weight: 80
-url: ko/cpp/crop-pages/
+url: /ko/cpp/crop-pages/
 description: Aspose.PDF for C++를 사용하여 너비, 높이, 블리드, 크롭 및 트림 박스와 같은 페이지 속성을 가져올 수 있습니다.
 lastmod: "2021-12-09"
 sitemap:

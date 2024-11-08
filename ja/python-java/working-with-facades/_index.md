@@ -3,7 +3,7 @@ title: ファサードの使用
 linktitle: ファサードの使用
 type: docs
 weight: 80
-url: ja/python-java/working-with-facades/
+url: /ja/python-java/working-with-facades/
 description: このセクションでは、PDFの一般的な操作のためのツールセットであるファサードの使用方法を説明します。
 lastmod: "2023-06-15"
 sitemap:

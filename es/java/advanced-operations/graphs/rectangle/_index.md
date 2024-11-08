@@ -3,7 +3,7 @@ title: Añadir Objeto Rectángulo al archivo PDF
 linktitle: Añadir Rectángulo
 type: docs
 weight: 50
-url: es/java/add-rectangle/
+url: /es/java/add-rectangle/
 description: Este artículo explica cómo crear un objeto Rectángulo en tu PDF utilizando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

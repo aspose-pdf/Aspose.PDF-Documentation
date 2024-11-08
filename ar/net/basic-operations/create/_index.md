@@ -3,7 +3,7 @@ title: إنشاء مستند PDF برمجيًا
 linktitle: إنشاء PDF
 type: docs
 weight: 10
-url: ar/net/create-document/
+url: /ar/net/create-document/
 description: تصف هذه الصفحة كيفية إنشاء مستند PDF من البداية باستخدام مكتبة Aspose.PDF.
 ---
 
@@ -18,7 +18,7 @@ Aspose.PDF لـ .NET API يتيح لك إنشاء وقراءة ملفات PDF ب
 1.
 1. احفظ مستند PDF الناتج
 
-الشفرة التالية تعمل أيضًا مع واجهة رسومية جديدة [Aspose.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع واجهة رسومية جديدة [Aspose.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET

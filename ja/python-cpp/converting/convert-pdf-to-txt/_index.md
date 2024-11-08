@@ -3,7 +3,7 @@ title: PDFをTXTに変換するPython
 linktitle: PDFをTXTに変換する
 type: docs
 weight: 20
-url: ja/python-cpp/convert-pdf-to-txt/
+url: /ja/python-cpp/convert-pdf-to-txt/
 lastmod: "2024-04-23"
 description: Aspose.PDF for Python via C++ライブラリを使用して、PDFをTXT形式に変換できます。
 sitemap:

@@ -3,7 +3,7 @@ title: Mengisi AcroForms
 linktitle: Mengisi AcroForms
 type: docs
 weight: 20
-url: id/php-java/fill-form/
+url: /id/php-java/fill-form/
 description: Bagian ini menjelaskan cara mengisi bidang formulir dalam dokumen PDF dengan Aspose.PDF untuk PHP melalui Java.
 lastmod: "2024-06-05"
 sitemap:

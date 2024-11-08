@@ -2,7 +2,7 @@
 title: Memigrasikan kode Anda ke Aspose.PDF untuk Java 2.5.0
 type: docs
 weight: 10
-url: id/java/migrating-your-code-to-aspose-pdf-for-java-2-5-0/
+url: /id/java/migrating-your-code-to-aspose-pdf-for-java-2-5-0/
 lastmod: "2022-01-27"
 ---
 

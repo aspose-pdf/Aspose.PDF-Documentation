@@ -3,7 +3,7 @@ title: Manipuler un Document PDF
 linktitle: Manipuler un Document PDF
 type: docs
 weight: 30
-url: fr/cpp/manipulate-pdf-document/
+url: /fr/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: Cette section explique la validation d'un Document PDF pour la norme PDF A, comment travailler avec la table des matières, comment définir la date d'expiration du PDF, et comment déterminer la progression de la génération du fichier PDF.
 lastmod: "2021-11-11"

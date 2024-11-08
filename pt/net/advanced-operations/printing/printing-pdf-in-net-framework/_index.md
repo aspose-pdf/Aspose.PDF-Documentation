@@ -3,7 +3,7 @@ title: Impressão de PDF no .NET Framework
 linktitle: Impressão de PDF no .NET Framework
 type: docs
 weight: 10
-url: pt/net/printing-pdf-in-net-framework/
+url: /pt/net/printing-pdf-in-net-framework/
 keywords: "print pdf file c#, c# print pdf"
 description: Você pode imprimir arquivos PDF na impressora padrão usando as configurações de impressora e página com C#.
 lastmod: "2022-02-17"

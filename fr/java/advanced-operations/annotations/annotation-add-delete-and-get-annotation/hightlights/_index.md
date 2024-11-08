@@ -3,7 +3,7 @@ title: Annotation des surlignages PDF
 linktitle: Annotation des surlignages
 type: docs
 weight: 20
-url: fr/java/highlights-annotation/
+url: /fr/java/highlights-annotation/
 description: Les annotations de balisage sont présentées dans le texte sous forme de surlignages, de soulignements, de barrages ou de soulignements en zigzag dans le texte d'un document.
 lastmod: "2021-11-24"
 sitemap:

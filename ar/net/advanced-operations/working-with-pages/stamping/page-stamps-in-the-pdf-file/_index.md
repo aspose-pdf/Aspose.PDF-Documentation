@@ -3,7 +3,7 @@ title: إضافة ختم صفحات PDF في PDF باستخدام C#
 linktitle: ختم الصفحات في ملف PDF
 type: docs
 weight: 30
-url: ar/net/page-stamps-in-the-pdf-file/
+url: /ar/net/page-stamps-in-the-pdf-file/
 description: أضف ختم صفحة إلى مستند PDF باستخدام فئة PdfPageStamp مع مكتبة Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 يمكن استخدام [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) عندما تحتاج إلى تطبيق ختم مركب يحتوي على رسومات، نصوص، جداول. يوضح المثال التالي كيفية استخدام الختم لإنشاء أوراق مكتبية مثل استخدام Adobe InDesign، Illustrator، Microsoft Word. لنفترض أن لدينا بعض المستندات الأولية ونريد تطبيق نوعين من الحدود باللون الأزرق واللون البرقوق.
 
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 public static void AddPageStamp()

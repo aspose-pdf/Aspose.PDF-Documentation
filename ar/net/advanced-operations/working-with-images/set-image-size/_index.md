@@ -3,7 +3,7 @@ title: Set Image Size
 linktitle: Set Image Size
 type: docs
 weight: 80
-url: ar/net/set-image-size/
+url: /ar/net/set-image-size/
 description: يصف هذا القسم كيفية تعيين حجم الصورة في ملف PDF باستخدام مكتبة C#.
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "يصف هذا القسم كيفية تعيين حجم الصورة في ملف PDF باستخدام مكتبة C#."
 }
 </script>
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 من الممكن تحديد حجم الصورة التي يتم إضافتها إلى ملف PDF. لتعيين الحجم، يمكنك استخدام خصائص FixWidth و FixHeight لفئة Aspose.Pdf.Image. يوضح الجزء التالي من الكود كيفية تعيين حجم الصورة:
 

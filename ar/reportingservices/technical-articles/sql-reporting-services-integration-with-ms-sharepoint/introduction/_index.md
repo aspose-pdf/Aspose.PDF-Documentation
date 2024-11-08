@@ -2,7 +2,7 @@
 title: مقدمة
 type: docs
 weight: 10
-url: ar/reportingservices/introduction/
+url: /ar/reportingservices/introduction/
 lastmod: "2021-06-05"
 ---
 

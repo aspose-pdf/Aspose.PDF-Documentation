@@ -2,7 +2,7 @@
 title: データのインポートとエクスポート
 type: docs
 weight: 70
-url: ja/net/import-and-export-data/
+url: /ja/net/import-and-export-data/
 description: このセクションでは、Formクラスを使用してAspose.PDF Facadesでデータをインポートおよびエクスポートする方法について説明します。
 lastmod: "2024-06-05"
 draft: false

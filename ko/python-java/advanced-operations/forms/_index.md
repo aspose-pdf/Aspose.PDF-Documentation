@@ -3,7 +3,7 @@ title: 파이썬을 사용한 양식 작업
 linktitle: PDF 문서의 양식
 type: docs
 weight: 60
-url: ko/python-java/forms/
+url: /ko/python-java/forms/
 lastmod: "2023-05-19"
 description: 이 섹션은 파이썬 API를 사용하여 PDF 문서에서 양식을 작업하는 것과 관련된 기사를 포함합니다.
 sitemap:

@@ -3,7 +3,7 @@ title: تحويل PDF إلى HTML في .NET
 linktitle: تحويل PDF إلى تنسيق HTML
 type: docs
 weight: 50
-url: ar/net/convert-pdf-to-html/
+url: /ar/net/convert-pdf-to-html/
 lastmod: "2021-11-01"
 description: يوضح هذا الموضوع كيفية تحويل ملف PDF إلى تنسيق HTML باستخدام مكتبة Aspose.PDF للغة C#.
 sitemap:
@@ -20,7 +20,7 @@ _التنسيق_: **HTML**
 - [C# تحويل PDF إلى HTML](#csharp-pdf-to-html)
 - [C# كيفية تحويل ملف PDF إلى HTML](#csharp-pdf-to-html)
 
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تحويل PDF إلى HTML
 

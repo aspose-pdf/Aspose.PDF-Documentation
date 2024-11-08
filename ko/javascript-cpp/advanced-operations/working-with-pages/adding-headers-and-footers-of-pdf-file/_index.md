@@ -3,7 +3,7 @@ title: Add Header and Footer to PDF via JavaScript via C++
 linktitle: PDF에 헤더와 푸터 추가
 type: docs
 weight: 70
-url: ko/javascript-cpp/add-headers-and-footers-of-pdf-file/
+url: /ko/javascript-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for JavaScript via C++를 사용하여 PDF 파일에 헤더와 푸터를 추가할 수 있습니다.
 lastmod: "2023-02-17"
 sitemap:

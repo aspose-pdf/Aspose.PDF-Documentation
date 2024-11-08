@@ -3,7 +3,7 @@ title: العمل مع المرفقات في PDF باستخدام JavaScript
 linktitle: العمل مع المرفقات
 type: docs
 weight: 120
-url: ar/javascript-cpp/attachments/
+url: /ar/javascript-cpp/attachments/
 description: استخدام مجموعة أدوات JavaScript PDF للوصول إلى المرفقات وإضافتها وإزالتها في ملفات PDF. دليل كامل مع أمثلة كود JavaScript.
 lastmod: "2023-09-17"
 sitemap:
@@ -17,4 +17,4 @@ sitemap:
 
 سوف تتعلم كيفية إضافة مرفقات إلى pdf، والحصول على معلومات المرفق، وحفظها في ملف، وحذف المرفق من PDF برمجيًا باستخدام JavaScript.
 
-- [إزالة المرفق من PDF موجود](/pdf/javascript-cpp/removing-attachment-from-an-existing-pdf/)
+- [إزالة المرفق من PDF موجود](/pdf/ar/javascript-cpp/removing-attachment-from-an-existing-pdf/)

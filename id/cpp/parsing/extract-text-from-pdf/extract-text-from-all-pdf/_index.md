@@ -4,7 +4,7 @@ title: Ekstrak teks dari semua halaman PDF menggunakan C++
 linktitle: Ekstrak teks dari PDF
 type: docs
 weight: 10
-url: id/cpp/extract-text-from-all-pdf/
+url: /id/cpp/extract-text-from-all-pdf/
 description: Artikel ini menjelaskan berbagai cara untuk mengekstrak teks dari dokumen PDF menggunakan Aspose.PDF dalam C++. Dari seluruh halaman, dari bagian tertentu, berdasarkan kolom, dll.
 lastmod: "2021-12-13"
 sitemap:

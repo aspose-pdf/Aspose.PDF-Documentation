@@ -2,7 +2,7 @@
 title: Obtener Propiedades de Ventana de Documento y Visualización de Página en Ruby
 type: docs
 weight: 40
-url: es/java/get-document-window-and-page-display-properties-in-ruby/
+url: /es/java/get-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

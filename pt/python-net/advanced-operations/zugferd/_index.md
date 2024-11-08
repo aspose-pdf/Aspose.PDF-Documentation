@@ -3,7 +3,7 @@ title: Trabalhando com ZUGFeRD
 linktitle: Trabalhando com ZUGFeRD
 type: docs
 weight: 90
-url: pt/python-net/working-with-zugferd/
+url: /pt/python-net/working-with-zugferd/
 description: Aprenda a criar faturas PDF compatíveis com ZUGFeRD usando Aspose.PDF para Java
 lastmod: "2024-01-17"
 sitemap:
@@ -26,8 +26,8 @@ O formato é um híbrido que combina um documento em PDF que humanos podem ler e
 
 Ele também atende aos requisitos legais para arquivamento a longo prazo e conformidade fiscal. O ZUGFeRD possui diferentes versões e perfis que se adequam a diferentes necessidades e cenários. A versão mais recente é o ZUGFeRD 2.0, compatível com o padrão europeu EN 16931 para faturamento eletrônico. O ZUGFeRD oferece aos usuários muitos benefícios e economias de custo, como processamento mais rápido, redução de erros, melhoria no fluxo de caixa e menor impacto ambiental.
 
-* [Criando PDF compatível com PDF/3-A e anexando fatura ZUGFeRD em Python](/pdf/python-net/attach-zugferd/)
+* [Criando PDF compatível com PDF/3-A e anexando fatura ZUGFeRD em Python](/pdf/pt/python-net/attach-zugferd/)
 
 Veja também:
 
-* [Criando PDF compatível com PDF/3-A e anexando fatura ZUGFeRD em Java](/pdf/java/attach-zugferd/)* [Criando PDF compatível com PDF/3-A e anexando fatura ZUGFeRD no .NET](/pdf/net/attach-zugferd/)
+* [Criando PDF compatível com PDF/3-A e anexando fatura ZUGFeRD em Java](/pdf/pt/java/attach-zugferd/)* [Criando PDF compatível com PDF/3-A e anexando fatura ZUGFeRD no .NET](/pdf/pt/net/attach-zugferd/)

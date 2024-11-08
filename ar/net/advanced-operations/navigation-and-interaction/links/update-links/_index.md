@@ -3,7 +3,7 @@ title: تحديث الروابط في ملف PDF
 linktitle: تحديث الروابط
 type: docs
 weight: 20
-url: ar/net/update-links/
+url: /ar/net/update-links/
 description: تحديث الروابط في ملف PDF برمجيًا. هذا الدليل يتعلق بكيفية تحديث الروابط في ملف PDF بلغة C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "تحديث الروابط في ملف PDF برمجيًا. هذا الدليل يتعلق بكيفية تحديث الروابط في ملف PDF بلغة C#."
 }
 </script>
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تحديث الروابط في ملف PDF
 

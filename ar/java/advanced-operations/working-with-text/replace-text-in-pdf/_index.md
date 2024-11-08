@@ -3,7 +3,7 @@ title: استبدال النص في PDF
 linktitle: استبدال النص في PDF
 type: docs
 weight: 40
-url: ar/java/replace-text-in-a-pdf-document/
+url: /ar/java/replace-text-in-a-pdf-document/
 description: تعرف على المزيد حول طرق مختلفة لاستبدال وإزالة النص من PDF. يتيح Aspose.PDF استبدال النص في منطقة معينة أو باستخدام تعبير منتظم.
 lastmod: "2021-06-05"
 sitemap:

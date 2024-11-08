@@ -2,7 +2,7 @@
 title: PHPでPDFからメタデータを削除
 type: docs
 weight: 70
-url: ja/java/remove-metadata-from-pdf-in-php/
+url: /ja/java/remove-metadata-from-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

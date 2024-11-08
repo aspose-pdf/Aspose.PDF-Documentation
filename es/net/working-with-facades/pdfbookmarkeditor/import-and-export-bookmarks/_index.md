@@ -2,7 +2,7 @@
 title: Importar y Exportar Marcadores
 type: docs
 weight: 20
-url: es/net/import-and-export-bookmarks/
+url: /es/net/import-and-export-bookmarks/
 description: Esta sección explica cómo importar y exportar Marcadores con Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

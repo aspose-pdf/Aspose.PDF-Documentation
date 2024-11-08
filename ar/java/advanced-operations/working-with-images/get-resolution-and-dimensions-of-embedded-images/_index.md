@@ -3,7 +3,7 @@ title: احصل على دقة وأبعاد الصور المدمجة
 linktitle: احصل على الدقة والأبعاد
 type: docs
 weight: 40
-url: ar/java/get-resolution-and-dimensions-of-embedded-images/
+url: /ar/java/get-resolution-and-dimensions-of-embedded-images/
 description: يوضح هذا القسم تفاصيل الحصول على الدقة وأبعاد الصور المدمجة
 lastmod: "2021-06-05"
 ---

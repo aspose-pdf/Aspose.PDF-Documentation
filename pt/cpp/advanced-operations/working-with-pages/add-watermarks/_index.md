@@ -3,7 +3,7 @@ title: Adicionar marca d'água ao PDF usando C++
 linktitle: Adicionar marca d'água
 type: docs
 weight: 90
-url: pt/cpp/add-watermarks/
+url: /pt/cpp/add-watermarks/
 description: Este artigo explica os recursos de trabalhar com artefatos e obter marcas d'água em PDFs programaticamente usando o C++.
 lastmod: "2021-12-08"
 sitemap:

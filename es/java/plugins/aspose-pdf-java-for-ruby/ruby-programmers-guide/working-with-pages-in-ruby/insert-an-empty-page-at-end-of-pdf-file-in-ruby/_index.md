@@ -2,7 +2,7 @@
 title: Insertar una Página Vacía al Final del Archivo PDF en Ruby
 type: docs
 weight: 60
-url: es/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
+url: /es/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

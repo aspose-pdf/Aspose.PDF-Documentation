@@ -3,7 +3,7 @@ title: Membuat PDF yang kompleks
 linktitle: Membuat PDF yang kompleks
 type: docs
 weight: 30
-url: id/python-net/complex-pdf-example/
+url: /id/python-net/complex-pdf-example/
 description: Aspose.PDF untuk Python via .NET memungkinkan Anda membuat dokumen yang lebih kompleks yang mengandung gambar, fragmen teks, dan tabel dalam satu dokumen.
 lastmod: "2022-12-22"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Contoh [Hello, World](/pdf/python-net/hello-world-example/) menunjukkan langkah-langkah sederhana untuk membuat dokumen PDF menggunakan Python dan Aspose.PDF. Dalam artikel ini, kita akan melihat pembuatan dokumen yang lebih kompleks dengan Aspose.PDF untuk Python. Sebagai contoh, kita akan mengambil dokumen dari perusahaan fiktif yang mengoperasikan layanan feri penumpang. Dokumen kita akan mengandung gambar, dua fragmen teks (header dan paragraf), dan sebuah tabel.
+Contoh [Hello, World](/pdf/id/python-net/hello-world-example/) menunjukkan langkah-langkah sederhana untuk membuat dokumen PDF menggunakan Python dan Aspose.PDF. Dalam artikel ini, kita akan melihat pembuatan dokumen yang lebih kompleks dengan Aspose.PDF untuk Python. Sebagai contoh, kita akan mengambil dokumen dari perusahaan fiktif yang mengoperasikan layanan feri penumpang. Dokumen kita akan mengandung gambar, dua fragmen teks (header dan paragraf), dan sebuah tabel.
 
 Jika kita membuat dokumen dari awal, kita perlu mengikuti langkah-langkah tertentu:
 

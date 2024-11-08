@@ -3,7 +3,7 @@ title: System Requirements
 linktitle: System Requirements
 type: docs
 weight: 30
-url: pt/androidjava/system-requirements/
+url: /pt/androidjava/system-requirements/
 description: Esta seção lista os sistemas operacionais suportados que um desenvolvedor precisa para trabalhar com sucesso com o Aspose.PDF para Android via Java.
 lastmod: "2021-06-05"
 sitemap:

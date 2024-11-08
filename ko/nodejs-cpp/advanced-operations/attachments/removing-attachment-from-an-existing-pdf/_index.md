@@ -3,7 +3,7 @@ title: Node.js에서 PDF의 첨부 파일 제거
 linktitle: 기존 PDF에서 첨부 파일 제거
 type: docs
 weight: 10
-url: ko/nodejs-cpp/removing-attachment-from-an-existing-pdf/
+url: /ko/nodejs-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF는 PDF 문서에서 첨부 파일을 제거할 수 있습니다. Node.js 환경을 사용하여 Aspose.PDF로 PDF 파일의 첨부 파일을 제거하십시오.
 lastmod: "2023-11-16"
 sitemap:

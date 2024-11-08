@@ -2,7 +2,7 @@
 title: Hapus Tanda Tangan dari File PDF
 type: docs
 weight: 20
-url: id/java/remove-signature-from-pdf/
+url: /id/java/remove-signature-from-pdf/
 description: Bagian ini menjelaskan cara bekerja dengan Tanda Tangan dalam File PDF menggunakan kelas PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

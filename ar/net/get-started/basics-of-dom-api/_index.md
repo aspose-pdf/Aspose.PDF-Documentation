@@ -3,7 +3,7 @@ title: أساسيات واجهة برمجة التطبيقات DOM في Aspose.P
 linktitle: أساسيات واجهة DOM
 type: docs
 weight: 140
-url: ar/net/basics-of-dom-api/
+url: /ar/net/basics-of-dom-api/
 description: يستخدم Aspose.PDF لـ .NET فكرة DOM أيضًا لتمثيل هيكل مستند PDF من حيث الكائنات.
 lastmod: "2021-06-05"
 sitemap:

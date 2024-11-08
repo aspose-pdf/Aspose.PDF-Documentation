@@ -3,7 +3,7 @@ title: Chiffrer un PDF en Node.js
 linktitle: Chiffrer un fichier PDF
 type: docs
 weight: 50
-url: fr/nodejs-cpp/encrypt-pdf/
+url: /fr/nodejs-cpp/encrypt-pdf/
 description: Chiffrer un fichier PDF avec Aspose.PDF pour Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

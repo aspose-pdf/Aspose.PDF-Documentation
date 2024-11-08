@@ -3,7 +3,7 @@ title: XFDF形式への注釈のインポートとエクスポート
 linktitle: XFDF形式への注釈のインポートとエクスポート
 type: docs
 weight: 40
-url: ja/java/import-export-xfdf/
+url: /ja/java/import-export-xfdf/
 description: Aspose.PDF for Javaライブラリを使用して、XFDF形式で注釈をインポートおよびエクスポートできます。
 lastmod: "2021-06-05"
 sitemap:

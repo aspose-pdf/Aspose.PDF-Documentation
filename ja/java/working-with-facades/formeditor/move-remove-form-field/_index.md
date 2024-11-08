@@ -2,7 +2,7 @@
 title: フォームフィールドの移動と削除
 type: docs
 weight: 50
-url: ja/java/move-remove-form-field/
+url: /ja/java/move-remove-form-field/
 description: このセクションでは、FormEditorクラスを使用してフォームフィールドを移動および削除する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

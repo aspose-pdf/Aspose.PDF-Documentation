@@ -2,7 +2,7 @@
 title: الحصول على عدد صفحات PDF في بايثون
 type: docs
 weight: 40
-url: ar/java/get-page-count-of-pdf-in-python/
+url: /ar/java/get-page-count-of-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

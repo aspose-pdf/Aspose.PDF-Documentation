@@ -3,7 +3,7 @@ title: Añadir sellos de imagen en PDF usando Python
 linktitle: Sellos de imagen en archivo PDF
 type: docs
 weight: 10
-url: es/python-net/image-stamps-in-pdf-page/
+url: /es/python-net/image-stamps-in-pdf-page/
 description: Añadir el sello de imagen en tu documento PDF usando la clase ImageStamp con la biblioteca Aspose.PDF para Python.
 lastmod: "2023-04-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Python을 사용하여 PDF에 워터마크 추가
 linktitle: 워터마크 추가
 type: docs
 weight: 40
-url: ko/python-net/add-watermarks/
+url: /ko/python-net/add-watermarks/
 description: 이 문서는 Python을 사용하여 PDF에서 아티팩트를 작업하고 워터마크를 얻는 기능을 설명합니다.
 lastmod: "2023-04-17"
 sitemap:

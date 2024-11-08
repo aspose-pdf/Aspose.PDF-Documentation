@@ -2,7 +2,7 @@
 title: احصل على بيانات XMP الوصفية لملف PDF
 type: docs
 weight: 30
-url: ar/net/get-xmp-metadata-of-an-existing-pdf-file/
+url: /ar/net/get-xmp-metadata-of-an-existing-pdf-file/
 description: يشرح هذا القسم كيفية الحصول على بيانات XMP الوصفية لملف PDF موجود باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: PDFからテーブルのデータを抽出する
 linktitle: テーブルからデータを抽出する
 type: docs
 weight: 40
-url: ja/cpp/extract-data-from-table-in-pdf/
+url: /ja/cpp/extract-data-from-table-in-pdf/
 description: Aspose.PDF for C++を使用してPDFから表形式のデータを抽出する方法を学びます。
 lastmod: "2021-06-05"
 sitemap:
@@ -124,7 +124,7 @@ void ExtractMarkedTable()
 ## PDFからテーブルデータを抽出してCSVファイルに保存
 
 以下の例は、テーブルを抽出してCSVファイルとして保存する方法を示しています。
-PDFをExcelスプレッドシートに変換する方法については、[PDFをExcelに変換](/pdf/cpp/convert-pdf-to-excel/)の記事を参照してください。
+PDFをExcelスプレッドシートに変換する方法については、[PDFをExcelに変換](/pdf/ja/cpp/convert-pdf-to-excel/)の記事を参照してください。
 
 ```cpp
 void ExtractTableSaveCSV()

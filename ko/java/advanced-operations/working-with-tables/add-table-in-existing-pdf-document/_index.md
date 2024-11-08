@@ -3,7 +3,7 @@ title: PDF에 테이블 생성 또는 추가
 linktitle: 테이블 생성 또는 추가
 type: docs
 weight: 10
-url: ko/java/add-table-in-existing-pdf-document/
+url: /ko/java/add-table-in-existing-pdf-document/
 description: PDF 문서에 테이블을 생성하거나 추가하는 방법, 셀 스타일 적용, 페이지에서 테이블 나누기 및 행과 열 사용자 정의 등을 배우세요.
 lastmod: "2021-12-16"
 sitemap:

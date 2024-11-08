@@ -2,7 +2,7 @@
 title: JythonでPDFの有効期限を設定
 type: docs
 weight: 60
-url: ja/java/set-pdf-expiration-in-jython/
+url: /ja/java/set-pdf-expiration-in-jython/
 lastmod: "2021-06-05"
 ---
 

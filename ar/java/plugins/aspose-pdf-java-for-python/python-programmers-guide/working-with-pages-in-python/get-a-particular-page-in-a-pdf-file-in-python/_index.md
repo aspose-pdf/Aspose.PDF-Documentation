@@ -2,7 +2,7 @@
 title: الحصول على صفحة معينة في ملف PDF باستخدام لغة بايثون
 type: docs
 weight: 30
-url: ar/java/get-a-particular-page-in-a-pdf-file-in-python/
+url: /ar/java/get-a-particular-page-in-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

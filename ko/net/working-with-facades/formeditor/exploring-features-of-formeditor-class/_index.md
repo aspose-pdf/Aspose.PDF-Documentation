@@ -2,7 +2,7 @@
 title: FormEditor 클래스의 기능 탐색
 type: docs
 weight: 10
-url: ko/net/exploring-features-of-formeditor-class/
+url: /ko/net/exploring-features-of-formeditor-class/
 description: Aspose. PDF for .NET 라이브러리를 사용하여 FormEditor 클래스의 기능 탐색에 대한 세부 정보를 배울 수 있습니다.
 lastmod: "2021-06-05"
 draft: false
@@ -16,7 +16,7 @@ PDF 문서에는 때때로 AcroForm으로 알려진 대화형 폼이 포함되�
 
 ## 구현 세부 사항
 
-개발자는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)를 사용하여 PDF 문서에 새 폼과 폼 필드를 추가할 수 있을 뿐만 아니라 기존 필드를 편집할 수도 있습니다. 이 문서의 범위는 양식 편집을 처리하는 [Aspose.PDF for .NET](/pdf/net/)의 기능으로 제한됩니다.
+개발자는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)를 사용하여 PDF 문서에 새 폼과 폼 필드를 추가할 수 있을 뿐만 아니라 기존 필드를 편집할 수도 있습니다. 이 문서의 범위는 양식 편집을 처리하는 [Aspose.PDF for .NET](/pdf/ko/net/)의 기능으로 제한됩니다.
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)는 양식 필드를 편집할 수 있는 대부분의 메서드와 속성을 포함하는 클래스입니다. 새로운 필드를 추가할 수 있을 뿐만 아니라 기존 필드를 제거하거나 한 필드를 다른 위치로 이동하거나 필드 이름이나 속성을 변경하는 등의 작업이 가능합니다. 이 클래스에서 제공하는 기능 목록은 상당히 포괄적이며, 이 클래스를 사용하여 양식 필드를 매우 쉽게 작업할 수 있습니다.
 

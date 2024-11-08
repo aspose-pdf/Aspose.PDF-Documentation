@@ -3,7 +3,7 @@ title: Работа с метаданными PDF файла | C#
 linktitle: Метаданные PDF файла
 type: docs
 weight: 140
-url: ru/net/pdf-file-metadata/
+url: /ru/net/pdf-file-metadata/
 description: Этот раздел объясняет, как получить информацию о PDF файле, как получить XMP метаданные из PDF файла, установить информацию о PDF файле.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Этот раздел объясняет, как получить информацию о PDF файле, как получить XMP метаданные из PDF файла, установить информацию о PDF файле."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Получение информации о файле PDF
 

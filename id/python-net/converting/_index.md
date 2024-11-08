@@ -3,7 +3,7 @@ title: Mengonversi Dokumen PDF menggunakan Python
 linktitle: Mengonversi Dokumen PDF
 type: docs
 weight: 70
-url: id/python-net/converting/
+url: /id/python-net/converting/
 lastmod: "2022-12-22"
 description: Bagian ini berisi artikel yang berkaitan dengan mengonversi dokumen PDF ke berbagai format dan sebaliknya menggunakan Python API.
 sitemap:
@@ -31,32 +31,32 @@ Aspose.PDF untuk Python melalui .NET memungkinkan konversi dokumen PDF ke berbag
 Dokumen Word adalah yang paling serbaguna dan dapat diedit semaksimal mungkin.
  Mengonversi PDF ke Word secara manual adalah tugas yang sangat memakan waktu. Dalam artikel ini, Anda akan belajar bagaimana mengonversi PDF ke Word secara pemrograman dalam Python.
 
-- [Mengonversi PDF ke Microsoft Word](/pdf/python-net/convert-pdf-to-word/) - Anda dapat mengonversi dokumen PDF Anda ke format Word dengan Python
+- [Mengonversi PDF ke Microsoft Word](/pdf/id/python-net/convert-pdf-to-word/) - Anda dapat mengonversi dokumen PDF Anda ke format Word dengan Python
 
 Format angka dibutuhkan tidak hanya untuk membuat data dalam tabel lebih mudah dibaca, tetapi juga untuk membuat tabel lebih mudah digunakan. Tentu saja, jika Anda perlu mengonversi data semacam itu dari dokumen PDF ke format Excel, gunakan pustaka Aspose.PDF kami.
 
-- [Mengonversi PDF ke Microsoft Excel](/pdf/python-net/convert-pdf-to-excel/) - bagian ini menjelaskan cara mengonversi dokumen PDF ke XLSX, ODS, CSV, dan SpreadSheetML
+- [Mengonversi PDF ke Microsoft Excel](/pdf/id/python-net/convert-pdf-to-excel/) - bagian ini menjelaskan cara mengonversi dokumen PDF ke XLSX, ODS, CSV, dan SpreadSheetML
 
 Format PowerPoint digunakan untuk membuat berbagai presentasi. File PPT berisi sejumlah besar slide atau halaman yang berisi berbagai informasi.
 
-- [Mengonversi PDF ke Microsoft PowerPoint](/pdf/python-net/convert-pdf-to-powerpoint/) - di sini kita membahas tentang mengonversi PDF ke PowerPoint dengan melacak proses konversi
+- [Mengonversi PDF ke Microsoft PowerPoint](/pdf/id/python-net/convert-pdf-to-powerpoint/) - di sini kita membahas tentang mengonversi PDF ke PowerPoint dengan melacak proses konversi
 
 HyperText Markup Language adalah bahasa deskripsi dokumen hypertext, bahasa standar untuk membuat halaman web. Dengan Aspose.PDF untuk Python, Anda dapat dengan mudah mengonversi dokumen HTML dan sebaliknya.
 
-- [Mengonversi format HTML ke file PDF](/pdf/python-net/convert-html-to-pdf/) - artikel tentang berbagai aspek konversi HTML-ke-PDF
-- [Mengonversi file PDF ke format HTML](/pdf/python-net/convert-pdf-to-html/) - konversi dokumen PDF Anda ke file HTML sebagai halaman terpisah atau sebagai satu halaman
+- [Mengonversi format HTML ke file PDF](/pdf/id/python-net/convert-html-to-pdf/) - artikel tentang berbagai aspek konversi HTML-ke-PDF
+- [Mengonversi file PDF ke format HTML](/pdf/id/python-net/convert-pdf-to-html/) - konversi dokumen PDF Anda ke file HTML sebagai halaman terpisah atau sebagai satu halaman
 
 Ada banyak format gambar yang perlu dikonversi ke PDF untuk berbagai tujuan. Aspose.PDF memungkinkan format gambar paling populer dan sebaliknya.
 
-- [Mengonversi PDF ke berbagai format Gambar](/pdf/python-net/convert-pdf-to-images-format/) - konversi halaman PDF sebagai gambar dalam format JPEG, PNG, dan format lainnya
+- [Mengonversi PDF ke berbagai format Gambar](/pdf/id/python-net/convert-pdf-to-images-format/) - konversi halaman PDF sebagai gambar dalam format JPEG, PNG, dan format lainnya
 
 Bagian ini mencakup format seperti: EPUB, Markdown, PCL, XPS, LATex/TeX, Teks, dan PostScript.
 
-- [Mengonversi file PDF ke format lain](/pdf/python-net/convert-pdf-to-other-files/) - topik ini menjelaskan cara konversi dokumen PDF ke berbagai format
+- [Mengonversi file PDF ke format lain](/pdf/id/python-net/convert-pdf-to-other-files/) - topik ini menjelaskan cara konversi dokumen PDF ke berbagai format
 
 PDF/A adalah versi PDF yang dirancang untuk pengarsipan jangka panjang dokumen elektronik. Jujur saja, secara eksternal, sangat sulit menentukan apakah itu PDF atau PDF/A. Untuk memeriksa file ini, digunakan validator. Periksa artikel berikut untuk konversi berkualitas PDF ke PDF/A dan sebaliknya.
 
-- [Konversi PDF ke format PDF/A](/pdf/python-net/convert-pdf-to-pdfa/) - Perpustakaan Python oleh Aspose.PDF memiliki cara mudah untuk mengonversi PDF ke PDF/A
+- [Konversi PDF ke format PDF/A](/pdf/id/python-net/convert-pdf-to-pdfa/) - Perpustakaan Python oleh Aspose.PDF memiliki cara mudah untuk mengonversi PDF ke PDF/A
 
 ## Coba konversi file PDF secara online
 

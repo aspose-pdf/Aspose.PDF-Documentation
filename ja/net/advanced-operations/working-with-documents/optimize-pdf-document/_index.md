@@ -3,7 +3,7 @@ title: C#でPDFサイズの最適化、圧縮、削減
 linktitle: PDFの最適化
 type: docs
 weight: 30
-url: ja/net/optimize-pdf/
+url: /ja/net/optimize-pdf/
 keywords: "optimize pdf c#"
 description: PDFファイルを最適化し、すべての画像を縮小し、PDFサイズを削減し、フォントの埋め込みを解除し、使用されていないオブジェクトを削除します。
 lastmod: "2022-02-17"
@@ -102,7 +102,7 @@ Web用の最適化、または線形化は、Webブラウザを使用してオ�
 1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトで入力ドキュメントを開く。
 1. 最適化されたドキュメントを[保存](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して保存します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 次のコードスニペットは、PDFドキュメントをウェブ用に最適化する方法を示しています。
 

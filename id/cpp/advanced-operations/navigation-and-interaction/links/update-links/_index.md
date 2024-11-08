@@ -3,7 +3,7 @@ title: Update Links in PDF
 linktitle: Update Links
 type: docs
 weight: 20
-url: id/cpp/update-links/
+url: /id/cpp/update-links/
 description: Memperbarui tautan dalam PDF secara programatis dengan Aspose.PDF untuk C++. Panduan ini tentang cara memperbarui tautan dalam file PDF.
 lastmod: "2022-01-31"
 sitemap:

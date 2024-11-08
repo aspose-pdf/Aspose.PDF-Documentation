@@ -3,7 +3,7 @@ title: مخطط XML لـ Aspose.PDF
 linktitle: مخطط XML المدعوم
 type: docs
 weight: 10
-url: ar/cpp/supported-xml-schema/
+url: /ar/cpp/supported-xml-schema/
 description: يصف هذا المقال مخطط XML للعمل مع مستندات XML في Aspose.PDF لـ C++.
 lastmod: "2022-01-31"
 sitemap:

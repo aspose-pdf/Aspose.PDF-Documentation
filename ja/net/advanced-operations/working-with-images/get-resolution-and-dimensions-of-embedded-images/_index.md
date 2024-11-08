@@ -3,7 +3,7 @@ title: 画像の解像度と寸法を取得する
 linktitle: 解像度と寸法を取得
 type: docs
 weight: 40
-url: ja/net/get-resolution-and-dimensions-of-embedded-images/
+url: /ja/net/get-resolution-and-dimensions-of-embedded-images/
 description: このセクションは、埋め込み画像の解像度と寸法を取得する詳細を示しています
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "このセクションは、埋め込み画像の解像度と寸法を取得する詳細を示しています"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
 このトピックでは、画像を抽出することなく、画像の解像度や寸法情報を取得する機能を提供する Aspose.PDF 名前空間のオペレータークラスの使用方法について説明します。
 

@@ -3,7 +3,7 @@ title: PDFヘッダーとフッターを追加する
 linktitle: ヘッダーとフッターを追加
 type: docs
 weight: 70
-url: ja/java/add-headers-and-footers-of-pdf-file/
+url: /ja/java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Javaを使用して、PDFファイルにヘッダーとフッターを追加できます。
 lastmod: "2021-06-05"
 sitemap:

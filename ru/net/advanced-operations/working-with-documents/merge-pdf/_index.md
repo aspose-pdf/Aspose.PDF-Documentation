@@ -3,7 +3,7 @@ title: Как объединить PDF с помощью C#
 linktitle: Объединение файлов PDF
 type: docs
 weight: 50
-url: ru/net/merge-pdf-documents/
+url: /ru/net/merge-pdf-documents/
 keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
 description: Эта страница объясняет, как объединить PDF-документы в один PDF-файл с помощью C# или VB.NET.
 lastmod: "2022-02-17"
@@ -82,7 +82,7 @@ sitemap:
 Объединение PDF-файлов на C# не является простой задачей без использования сторонней библиотеки.
 Эта статья показывает, как объединить несколько PDF-файлов в один PDF-документ с использованием Aspose.PDF для .NET. Пример написан на C#, но API может быть использовано и в других языках программирования .NET, таких как VB.NET. PDF-файлы объединяются таким образом, что первый присоединяется к концу другого документа.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Объединение PDF-файлов с использованием C# и DOM
 

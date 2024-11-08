@@ -3,7 +3,7 @@ title: Ajouter une Image au PDF en utilisant C++
 linktitle: Ajouter Image
 type: docs
 weight: 10
-url: fr/cpp/add-image-to-existing-pdf-file/
+url: /fr/cpp/add-image-to-existing-pdf-file/
 description: Cette section décrit comment ajouter une image à un fichier PDF existant en utilisant la bibliothèque C++.
 lastmod: "2021-12-18"
 ---

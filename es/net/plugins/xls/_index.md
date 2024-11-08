@@ -2,7 +2,7 @@
 title: XLS Converter
 type: docs
 weight: 20
-url: es/net/plugins/xls/
+url: /es/net/plugins/xls/
 description: Cómo convertir archivos PDF a hojas de cálculo de Excel utilizando los complementos de Aspose.Pdf
 lastmod: "2024-01-24"
 ---

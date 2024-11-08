@@ -2,7 +2,7 @@
 title: Nota al pie Nota al final
 type: docs
 weight: 30
-url: es/reportingservices/footnote-endnote/
+url: /es/reportingservices/footnote-endnote/
 lastmod: "2021-06-05"
 ---
 

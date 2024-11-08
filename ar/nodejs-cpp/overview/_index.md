@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: ar/nodejs-cpp/overview/
+url: /ar/nodejs-cpp/overview/
 description: نظرة عامة على الميزات الرئيسية والصيغ المدعومة لـ Aspose.PDF for Node.js عبر C++، ودليل التثبيت والترخيص.
 lastmod: "2023-11-16"
 sitemap:
@@ -50,9 +50,9 @@ _هذه الصفحة هي نظرة عامة على ميزات Aspose.PDF for Nod
 
 تعرف على المزيد حول:
 
-- [تنسيقات الملفات المدعومة](/pdf/nodejs-cpp/supported-file-formats/)
-- [الميزات الرئيسية لـ Aspose.PDF](/pdf/nodejs-cpp/key-features/)
-- [متطلبات النظام](/pdf/nodejs-cpp/system-requirements/)
-- [التثبيت](/pdf/nodejs-cpp/installation/)
-- [الترخيص](/pdf/nodejs-cpp/licensing/)
-- [الدعم الفني](/pdf/nodejs-cpp/technical-support/)
+- [تنسيقات الملفات المدعومة](/pdf/ar/nodejs-cpp/supported-file-formats/)
+- [الميزات الرئيسية لـ Aspose.PDF](/pdf/ar/nodejs-cpp/key-features/)
+- [متطلبات النظام](/pdf/ar/nodejs-cpp/system-requirements/)
+- [التثبيت](/pdf/ar/nodejs-cpp/installation/)
+- [الترخيص](/pdf/ar/nodejs-cpp/licensing/)
+- [الدعم الفني](/pdf/ar/nodejs-cpp/technical-support/)

@@ -3,7 +3,7 @@ title: PDFファイルにラインオブジェクトを追加
 linktitle: ラインを追加
 type: docs
 weight: 40
-url: ja/net/add-line/
+url: /ja/net/add-line/
 description: この記事では、Aspose.PDF for .NETを使用してPDFにラインオブジェクトを作成する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "この記事では、Aspose.PDF for .NETを使用してPDFにラインオブジェクトを作成する方法について説明します。"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## 線オブジェクトの追加
 

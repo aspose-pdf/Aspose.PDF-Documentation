@@ -3,7 +3,7 @@ title: 권한 설정, PDF 파일 암호화 및 해독 C++ 사용
 linktitle: PDF 파일 암호화 및 해독
 type: docs
 weight: 20
-url: ko/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ko/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: pdf 암호화,pdf 비밀번호 보호,pdf 해독,c++
 description: 다양한 암호화 유형 및 알고리즘을 사용하여 C++로 PDF 파일을 암호화합니다. 또한 소유자 비밀번호를 사용하여 PDF 파일을 해독합니다.
 lastmod: "2021-12-17"

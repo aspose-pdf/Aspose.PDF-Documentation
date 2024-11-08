@@ -2,7 +2,7 @@
 title: PDFからXFDFへの注釈のフラット化
 type: docs
 weight: 40
-url: ja/net/flatten-annotation/
+url: /ja/net/flatten-annotation/
 description: このセクションでは、Aspose.PDF Facadesを使用してPDFファイルからXFDFに注釈をエクスポートする方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

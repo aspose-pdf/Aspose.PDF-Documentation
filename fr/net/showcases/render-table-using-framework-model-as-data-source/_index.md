@@ -3,7 +3,7 @@ title: Render table with Entity Framework
 linktitle: Render table with Entity Framework
 type: docs
 weight: 40
-url: fr/net/render-table-using-entity-framework-model-as-data-source/
+url: /fr/net/render-table-using-entity-framework-model-as-data-source/
 description: Cet article vous montrera comment afficher un tableau en utilisant le modèle Entity Framework comme source de données avec Aspose.PDF pour .NET.
 lastmod: "2021-06-05"
 sitemap:

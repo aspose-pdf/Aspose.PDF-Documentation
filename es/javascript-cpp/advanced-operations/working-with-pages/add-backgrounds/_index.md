@@ -3,7 +3,7 @@ title: Añadir fondo a PDF con JavaScript a través de C++
 linktitle: Añadir fondos
 type: docs
 weight: 10
-url: es/javascript-cpp/add-backgrounds/
+url: /es/javascript-cpp/add-backgrounds/
 description: Añade una imagen de fondo a tu archivo PDF con JavaScript a través de C++.
 lastmod: "2023-02-17"
 sitemap:

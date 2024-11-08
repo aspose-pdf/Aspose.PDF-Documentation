@@ -3,7 +3,7 @@ title: Bekerja dengan Formulir XFA
 linktitle: Formulir XFA
 type: docs
 weight: 20
-url: id/net/xfa-forms/
+url: /id/net/xfa-forms/
 description: Aspose.PDF untuk .NET API memungkinkan Anda bekerja dengan bidang XFA dan XFA Acroform dalam dokumen PDF. Aspose.PDF.Facades.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ Formulir dinamis berdasarkan spesifikasi XML yang dikenal sebagai XFA, "XML Form
 
 Kelas Form menyediakan kemampuan untuk menangani AcroForm statis dan Anda dapat memperoleh instance bidang tertentu menggunakan metode GetFieldFacade(..) dari kelas Form. Namun, bidang XFA tidak dapat diakses melalui metode Form.GetFieldFacade(..). Sebagai gantinya, gunakan [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) untuk mendapatkan/mengatur nilai bidang dan memanipulasi template bidang XFA (mengatur properti bidang).
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mengisi bidang XFA
 

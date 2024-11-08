@@ -3,7 +3,7 @@ title: Rotacionar Páginas de PDF Usando C++
 linktitle: Rotacionar Páginas de PDF
 type: docs
 weight: 50
-url: pt/cpp/rotate-pages/
+url: /pt/cpp/rotate-pages/
 description: Este tópico descreve como rotacionar a orientação da página em um arquivo PDF existente programaticamente com C++.
 lastmod: "2021-12-08"
 sitemap:

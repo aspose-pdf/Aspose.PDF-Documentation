@@ -3,7 +3,7 @@ title: Membuat PDF Bertag menggunakan C#
 linktitle: Membuat PDF Bertag
 type: docs
 weight: 10
-url: id/net/create-tagged-pdf/
+url: /id/net/create-tagged-pdf/
 description: Artikel ini menjelaskan bagaimana cara membuat elemen struktur untuk dokumen PDF Bertag secara pemrograman menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Membuat PDF Bertag berarti menambahkan (atau menciptakan) elemen-elemen tertentu ke dalam dokumen yang akan memungkinkan dokumen untuk divalidasi sesuai dengan persyaratan PDF/UA. Elemen-elemen ini sering disebut sebagai Elemen Struktur.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Membuat PDF Bertag (Skenario Sederhana)
 

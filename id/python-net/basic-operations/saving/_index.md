@@ -3,7 +3,7 @@ title: Simpan dokumen PDF secara programatis
 linktitle: Simpan PDF
 type: docs
 weight: 30
-url: id/python-net/save-pdf-document/
+url: /id/python-net/save-pdf-document/
 description: Pelajari cara menyimpan file PDF di Python Aspose.PDF untuk perpustakaan Python via .NET. Simpan dokumen PDF ke sistem file, ke aliran, dan dalam aplikasi Web.
 lastmod: "2022-12-22"
 sitemap:

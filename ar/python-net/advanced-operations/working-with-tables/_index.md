@@ -3,7 +3,7 @@ title: العمل مع الجداول في PDF باستخدام Python
 linktitle: العمل مع الجداول
 type: docs
 weight: 50
-url: ar/python-net/working-with-tables/
+url: /ar/python-net/working-with-tables/
 description: يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية التلاعب بجدول باستخدام مكتبة بايثون.
 lastmod: "2023-09-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/python-net/add-table-in-existing-pdf-document/) - قم بإنشاء الجدول الخاص بك في ملف PDF مع دمج الأعمدة أو الصفوف مع مراعاة الحدود، الهوامش، والحشو.
-- [استخراج جدول من مستند PDF موجود](/pdf/python-net/extract-table-from-existing-pdf-document/) - يمكنك استخراج الجدول من ملف PDF.
-- [التلاعب بالجداول في PDF موجود](/pdf/python-net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في مستند PDF باستخدام TableAbsorber.
+- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/ar/python-net/add-table-in-existing-pdf-document/) - قم بإنشاء الجدول الخاص بك في ملف PDF مع دمج الأعمدة أو الصفوف مع مراعاة الحدود، الهوامش، والحشو.
+- [استخراج جدول من مستند PDF موجود](/pdf/ar/python-net/extract-table-from-existing-pdf-document/) - يمكنك استخراج الجدول من ملف PDF.
+- [التلاعب بالجداول في PDF موجود](/pdf/ar/python-net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في مستند PDF باستخدام TableAbsorber.
 
-- [إزالة الجداول من PDF موجود](/pdf/python-net/remove-tables-from-existing-pdf/) - إزالة جدول أو جداول متعددة من مستند PDF.
+- [إزالة الجداول من PDF موجود](/pdf/ar/python-net/remove-tables-from-existing-pdf/) - إزالة جدول أو جداول متعددة من مستند PDF.
 
 <script type="application/ld+json">
 {

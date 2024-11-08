@@ -3,7 +3,7 @@ title: PDFにページ番号を追加する方法 (Node.js)
 linktitle: ページ番号を追加
 type: docs
 weight: 100
-url: ja/nodejs-cpp/add-page-number/
+url: /ja/nodejs-cpp/add-page-number/
 description: Aspose.PDF for Node.js via C++を使用してPDFファイルにページ番号スタンプを追加する方法をAsposePdfAddPageNumを通じて説明します。
 lastmod: "2023-11-16"
 sitemap:

@@ -2,7 +2,7 @@
 title: الحاشية السفلية النهاية
 type: docs
 weight: 30
-url: ar/reportingservices/footnote-endnote/
+url: /ar/reportingservices/footnote-endnote/
 lastmod: "2021-06-05"
 ---
 

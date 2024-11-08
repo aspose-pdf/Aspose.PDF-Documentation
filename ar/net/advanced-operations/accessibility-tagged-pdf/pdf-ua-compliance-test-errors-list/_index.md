@@ -3,7 +3,7 @@ title: اختبار التوافق مع PDF-UA - قائمة الأخطاء
 linktitle: اختبار التوافق مع PDF-UA - قائمة الأخطاء
 type: docs
 weight: 50
-url: ar/net/pdf-ua-compliance-test-errors-list/
+url: /ar/net/pdf-ua-compliance-test-errors-list/
 description: يعرض هذا المقال قائمة الأخطاء التي قد تحدث أثناء اختبار التوافق مع PDF/UA باستخدام واجهة برمجة التطبيقات Aspose.PDF و C# أو VB.
 lastmod: "2022-02-17"
 sitemap:

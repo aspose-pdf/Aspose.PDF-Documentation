@@ -3,7 +3,7 @@ title: Membuat Dokumen PDF
 linktitle: Membuat PDF
 type: docs
 weight: 10
-url: id/python-cpp/create-document/
+url: /id/python-cpp/create-document/
 description: Halaman ini menjelaskan cara membuat dokumen PDF dari awal menggunakan Aspose.PDF untuk Python melalui pustaka C++.
 ---
 

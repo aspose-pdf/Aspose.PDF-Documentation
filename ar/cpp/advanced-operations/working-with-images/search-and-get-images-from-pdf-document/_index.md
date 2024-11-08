@@ -3,7 +3,7 @@ title: البحث والحصول على الصور من مستند PDF باست�
 linktitle: البحث والحصول على الصور
 type: docs
 weight: 60
-url: ar/cpp/search-and-get-images-from-pdf-document/
+url: /ar/cpp/search-and-get-images-from-pdf-document/
 description: يشرح هذا القسم كيفية البحث والحصول على الصور من مستند PDF باستخدام مكتبة Aspose.PDF.
 lastmod: "2021-12-18"
 ---

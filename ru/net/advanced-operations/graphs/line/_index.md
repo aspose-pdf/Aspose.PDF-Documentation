@@ -3,7 +3,7 @@ title: Добавление объекта линии в PDF-файл
 linktitle: Добавить линию
 type: docs
 weight: 40
-url: ru/net/add-line/
+url: /ru/net/add-line/
 description: Эта статья объясняет, как создать объект линии в вашем PDF с использованием Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавление объекта Line
 

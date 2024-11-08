@@ -2,7 +2,7 @@
 title: ASP - VBScript через COM Interop
 type: docs
 weight: 30
-url: ru/net/asp-vbscript-via-com-interop/
+url: /ru/net/asp-vbscript-via-com-interop/
 ---
 
 ## Предварительные требования
@@ -17,7 +17,7 @@ url: ru/net/asp-vbscript-via-com-interop/
 
 {{% alert color="primary" %}}
 
-Это простое приложение ASP, которое показывает, как создать PDF-файл с образцом текста с использованием [Aspose.PDF для .NET](/pdf/net/) и VBScript через COM Interop.
+Это простое приложение ASP, которое показывает, как создать PDF-файл с образцом текста с использованием [Aspose.PDF для .NET](/pdf/ru/net/) и VBScript через COM Interop.
 
 {{% /alert %}}
 

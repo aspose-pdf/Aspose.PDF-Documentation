@@ -3,7 +3,7 @@ title: استخراج البيانات من AcroForm
 linktitle: استخراج البيانات من AcroForm
 type: docs
 weight: 50
-url: ar/cpp/extract-data-from-acroform/
+url: /ar/cpp/extract-data-from-acroform/
 description: تجعل Aspose.PDF من السهل استخراج بيانات حقول النماذج من ملفات PDF. تعلم كيفية استخراج البيانات من AcroForms وحفظها بتنسيق XML أو FDF.
 lastmod: "2021-12-13"
 sitemap:

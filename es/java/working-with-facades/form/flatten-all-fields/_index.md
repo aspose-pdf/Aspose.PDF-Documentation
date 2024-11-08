@@ -2,7 +2,7 @@
 title: Aplanar todos los campos en un archivo PDF existente (facades)
 type: docs
 weight: 30
-url: es/java/flatten-all-fields/
+url: /es/java/flatten-all-fields/
 description: Esta sección explica cómo aplanar todos los campos con Aspose.PDF Facades usando la clase Form.
 lastmod: "2021-06-05"
 sitemap:

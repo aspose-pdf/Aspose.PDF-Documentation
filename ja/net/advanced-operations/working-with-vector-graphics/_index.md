@@ -3,7 +3,7 @@ title: ベクターグラフィックスの操作
 linktitle: ベクターグラフィックスの操作
 type: docs
 weight: 120
-url: ja/net/working-with-vector-graphics/
+url: /ja/net/working-with-vector-graphics/
 description: この記事では、C#を使用してGraphicsAbsorberツールを操作する機能について説明します。
 lastmod: "2024-02-17"
 ---

@@ -3,7 +3,7 @@ title: 첨부 파일 추출 및 저장
 linktitle: 첨부 파일 추출 및 저장
 type: docs
 weight: 20
-url: ko/cpp/extract-and-save-an-attachment/
+url: /ko/cpp/extract-and-save-an-attachment/
 description: Aspose.PDF for C++를 사용하면 PDF 문서에서 모든 첨부 파일을 얻을 수 있습니다. 또한, 문서에서 개별 첨부 파일을 추출할 수 있습니다.
 lastmod: "2022-02-07"
 sitemap:

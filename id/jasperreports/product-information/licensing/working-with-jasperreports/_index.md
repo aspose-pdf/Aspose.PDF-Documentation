@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: id/jasperreports/working-with-jasperreports/
+url: /id/jasperreports/working-with-jasperreports/
 
 lastmod: "2021-06-05"
 
@@ -38,12 +38,12 @@ Ada beberapa cara untuk mengaktifkan lisensi:
 
 
 
-- [Panggil setLicense](/pdf/jasperreports/working-with-jasperreports/#call-setlicense).
+- [Panggil setLicense](/pdf/id/jasperreports/working-with-jasperreports/#call-setlicense).
 
 
-- [Setel parameter eksportir dalam kode](/pdf/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
+- [Setel parameter eksportir dalam kode](/pdf/id/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
 
-- [Setel parameter exporter di **applicationContext.xml**](/pdf/jasperreports/working-with-jasperserver/).
+- [Setel parameter exporter di **applicationContext.xml**](/pdf/id/jasperreports/working-with-jasperserver/).
 
 
 

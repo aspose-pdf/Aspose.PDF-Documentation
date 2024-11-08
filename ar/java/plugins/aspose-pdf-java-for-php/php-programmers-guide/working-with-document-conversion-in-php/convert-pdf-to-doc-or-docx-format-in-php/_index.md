@@ -2,7 +2,7 @@
 title: تحويل PDF إلى تنسيق DOC أو DOCX في PHP
 type: docs
 weight: 10
-url: ar/java/convert-pdf-to-doc-or-docx-format-in-php/
+url: /ar/java/convert-pdf-to-doc-or-docx-format-in-php/
 lastmod: "2021-06-05"
 ---
 

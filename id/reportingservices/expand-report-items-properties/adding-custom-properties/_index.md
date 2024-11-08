@@ -2,7 +2,7 @@
 title: Menambahkan Properti Kustom
 type: docs
 weight: 10
-url: id/reportingservices/adding-custom-properties/
+url: /id/reportingservices/adding-custom-properties/
 lastmod: "2021-06-05"
 ---
 

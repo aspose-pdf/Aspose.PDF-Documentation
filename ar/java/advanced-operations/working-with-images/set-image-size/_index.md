@@ -3,7 +3,7 @@ title: ضبط حجم الصورة
 linktitle: ضبط حجم الصورة
 type: docs
 weight: 80
-url: ar/java/set-image-size/
+url: /ar/java/set-image-size/
 description: يصف هذا القسم كيفية ضبط حجم الصورة في ملف PDF باستخدام مكتبة Java.
 lastmod: "2021-06-05"
 ---

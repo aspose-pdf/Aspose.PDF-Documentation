@@ -3,7 +3,7 @@ title: Importer et Exporter des Annotations au format XFDF
 linktitle: Importer et Exporter des Annotations au format XFDF
 type: docs
 weight: 40
-url: fr/java/import-export-xfdf/
+url: /fr/java/import-export-xfdf/
 description: Vous pouvez importer et exporter des annotations au format XFDF en utilisant la bibliothèque Aspose.PDF pour Java. 
 lastmod: "2021-06-05"
 sitemap:

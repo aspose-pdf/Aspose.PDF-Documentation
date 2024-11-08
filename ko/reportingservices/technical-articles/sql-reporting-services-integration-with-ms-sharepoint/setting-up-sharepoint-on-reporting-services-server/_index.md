@@ -2,7 +2,7 @@
 title: Reporting Services 서버에서 SharePoint 설정
 type: docs
 weight: 30
-url: ko/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+url: /ko/reportingservices/setting-up-sharepoint-on-reporting-services-server/
 lastmod: "2021-06-05"
 ---
 

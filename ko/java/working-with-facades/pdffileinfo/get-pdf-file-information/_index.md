@@ -2,7 +2,7 @@
 title: PDF 파일 정보 가져오기 - 파사드
 type: docs
 weight: 10
-url: ko/java/get-pdf-information/
+url: /ko/java/get-pdf-information/
 description: 이 섹션에서는 PdfFileInfo 클래스를 사용하여 Aspose.PDF Facades로 PDF 파일 정보를 가져오는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

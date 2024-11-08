@@ -3,7 +3,7 @@ title: استخراج الخطوط من PDF
 linktitle: استخراج الخطوط
 type: docs
 weight: 30
-url: ar/java/extract-fonts-from-pdf/
+url: /ar/java/extract-fonts-from-pdf/
 description: كيفية استخراج الخطوط من ملف PDF باستخدام Aspose.PDF لـ Java
 lastmod: "2021-06-05"
 sitemap:

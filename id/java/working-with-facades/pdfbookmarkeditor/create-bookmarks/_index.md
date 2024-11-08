@@ -2,7 +2,7 @@
 title: Buat Penanda Halaman dari Semua Halaman (fasad)
 type: docs
 weight: 10
-url: id/java/create-bookmark/
+url: /id/java/create-bookmark/
 description: Bagian ini menjelaskan cara membuat penanda halaman dengan Aspose.PDF Facades menggunakan Kelas PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

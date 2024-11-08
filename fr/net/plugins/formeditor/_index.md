@@ -2,7 +2,7 @@
 title: Éditeur de Formulaire
 type: docs
 weight: 40
-url: fr/net/plugins/formeditor/
+url: /fr/net/plugins/formeditor/
 description: Comment ajouter, mettre à jour et supprimer des champs de formulaire dans les fichiers PDF en utilisant les plugins Aspose.PDF
 lastmod: "2024-01-24"
 draft: false

@@ -3,7 +3,7 @@ title: Adicionar Cabeçalho e Rodapé ao PDF
 linktitle: Adicionar Cabeçalho e Rodapé ao PDF
 type: docs
 weight: 70
-url: pt/cpp/add-headers-and-footers-of-pdf-file/
+url: /pt/cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para C++ permite que você adicione cabeçalhos e rodapés ao seu arquivo PDF usando a classe TextStamp.
 lastmod: "2021-12-08"
 sitemap:

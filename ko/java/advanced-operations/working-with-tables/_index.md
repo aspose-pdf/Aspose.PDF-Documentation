@@ -3,7 +3,7 @@ title: PDF에서 표 작업하기
 linktitle: 표 작업하기
 type: docs
 weight: 50
-url: ko/java/working-with-tables/
+url: /ko/java/working-with-tables/
 description: 이 섹션에서는 Java 라이브러리를 사용하여 표를 추가하고 추출하며, 표를 조작하고 통합하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -20,7 +20,7 @@ Aspose.PDF for Java가 지원하는 가장 초기 기능 중 하나는 표 작�
 
 다음을 수행할 수 있습니다:
 
-- [기존 PDF 문서에 테이블 생성 또는 추가하기](/pdf/java/add-table-in-existing-pdf-document/) - 테이블을 열이나 행을 병합하여 테두리, 여백 및 패딩을 고려하여 PDF 파일에 생성합니다.
-- [기존 PDF 문서에서 테이블 추출하기](/pdf/java/extract-table-from-existing-pdf-document/) - PDF 파일에서 테이블을 추출하거나 이미지를 테이블 경계로 추출할 수 있습니다.
-- [기존 PDF의 테이블 조작하기](/pdf/java/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF의 테이블을 조작합니다.
-- [기존 PDF에서 테이블 제거하기](/pdf/java/remove-tables-from-existing-pdf/) - PDF 문서에서 테이블 하나 또는 여러 테이블을 제거합니다.
+- [기존 PDF 문서에 테이블 생성 또는 추가하기](/pdf/ko/java/add-table-in-existing-pdf-document/) - 테이블을 열이나 행을 병합하여 테두리, 여백 및 패딩을 고려하여 PDF 파일에 생성합니다.
+- [기존 PDF 문서에서 테이블 추출하기](/pdf/ko/java/extract-table-from-existing-pdf-document/) - PDF 파일에서 테이블을 추출하거나 이미지를 테이블 경계로 추출할 수 있습니다.
+- [기존 PDF의 테이블 조작하기](/pdf/ko/java/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF의 테이블을 조작합니다.
+- [기존 PDF에서 테이블 제거하기](/pdf/ko/java/remove-tables-from-existing-pdf/) - PDF 문서에서 테이블 하나 또는 여러 테이블을 제거합니다.

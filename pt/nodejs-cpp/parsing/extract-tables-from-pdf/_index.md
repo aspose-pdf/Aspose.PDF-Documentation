@@ -3,7 +3,7 @@ title: Extrair Tabelas de PDF em Node.js
 linktitle: Extrair Tabelas de PDF
 type: docs
 weight: 10
-url: pt/nodejs-cpp/extract-tables-from-the-pdf-file/
+url: /pt/nodejs-cpp/extract-tables-from-the-pdf-file/
 description: Como converter PDF para CSV usando Aspose.PDF para Node.js via ferramenta C++.
 lastmod: "2023-11-16"
 sitemap:

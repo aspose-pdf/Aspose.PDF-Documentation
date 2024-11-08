@@ -4,7 +4,7 @@ linktitle: Aspose.PDF para Python a través de Java
 second_title: Aspose.PDF para Python a través de Java
 type: docs
 weight: 60
-url: es/python-java/
+url: /es/python-java/
 is_root: true
 lastmod: "2023-04-06"
 description: Aprende a usar Aspose.PDF para Python a través de Java para crear aplicaciones para el procesamiento de documentos PDF en cualquier plataforma usando Python y Java. Explora tutoriales, código de muestra y más.

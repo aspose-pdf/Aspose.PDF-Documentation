@@ -3,7 +3,7 @@ title: Работа с размещением изображений
 linktitle: Работа с размещением изображений
 type: docs
 weight: 50
-url: ru/net/working-with-image-placement/
+url: /ru/net/working-with-image-placement/
 description: Этот раздел описывает особенности работы с размещением изображений в PDF файле с использованием библиотеки C#.
 lastmod: "2022-02-17"
 ---
@@ -77,7 +77,7 @@ lastmod: "2022-02-17"
 - ImagePlacementAbsorber выполняет поиск использования изображения как коллекцию объектов ImagePlacement.
 - ImagePlacement предоставляет элементы Resolution и Rectangle, которые возвращают фактические значения размещения изображения.
 
-Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET

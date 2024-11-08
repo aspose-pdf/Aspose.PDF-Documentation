@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 북마크 추가 및 삭제
 linktitle: 북마크 추가 및 삭제
 type: docs
 weight: 10
-url: ko/python-net/add-and-delete-bookmark/
+url: /ko/python-net/add-and-delete-bookmark/
 description: 파이썬을 사용하여 PDF 문서에 북마크를 추가할 수 있습니다. PDF 문서에서 모든 또는 특정 북마크를 삭제할 수 있습니다.
 lastmod: "2023-02-17"
 sitemap:

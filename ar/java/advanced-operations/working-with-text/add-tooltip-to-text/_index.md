@@ -3,7 +3,7 @@ title: استخدام التلميح
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: ar/java/pdf-tooltip/
+url: /ar/java/pdf-tooltip/
 description: تعلم كيفية إضافة تلميح إلى جزء من النص في PDF باستخدام Java وAspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

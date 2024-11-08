@@ -4,7 +4,7 @@ title: XML에서 PDF 생성
 linktitle: XML에서 PDF 생성
 type: docs
 weight: 10
-url: ko/net/generate-pdf-from-xml
+url: /ko/net/generate-pdf-from-xml
 description: Aspose.PDF for .NET은 입력 XML 파일이 필요한 PDF 문서로 변환하는 여러 가지 방법을 제공합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ aliases:
 }
 </script>
 ```
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 XML 문서에서 PDF 문서를 생성하는 것은 간단한 작업이 아닙니다. XML 문서는 다양한 콘텐츠를 설명할 수 있기 때문입니다. Aspose.PDF for .NET은 XML 문서를 기반으로 PDF를 생성하는 여러 가지 방법을 제공합니다:
 

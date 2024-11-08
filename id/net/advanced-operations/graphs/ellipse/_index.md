@@ -3,7 +3,7 @@ title: Menambahkan Objek Elips ke File PDF
 linktitle: Tambah Elips
 type: docs
 weight: 60
-url: id/net/add-ellipse/
+url: /id/net/add-ellipse/
 description: Artikel ini menjelaskan cara membuat objek Elips pada PDF Anda menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan objek Ellipse
 

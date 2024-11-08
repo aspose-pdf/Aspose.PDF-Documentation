@@ -3,7 +3,7 @@ title: Menambahkan Lampiran ke Dokumen PDF menggunakan Python
 linktitle: Menambahkan Lampiran ke Dokumen PDF
 type: docs
 weight: 10
-url: id/python-net/add-attachment-to-pdf-document/
+url: /id/python-net/add-attachment-to-pdf-document/
 description: Halaman ini menjelaskan bagaimana menambahkan lampiran ke file PDF dengan Aspose.PDF untuk Python via .NET library.
 lastmod: "2023-02-17"
 sitemap:

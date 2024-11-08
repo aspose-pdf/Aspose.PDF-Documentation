@@ -3,7 +3,7 @@ title: Pythonを使用した注釈の追加、削除、および取得
 linktitle: 注釈の追加、削除、および取得
 type: docs
 weight: 20
-url: ja/python-net/add-delete-and-get-annotation/
+url: /ja/python-net/add-delete-and-get-annotation/
 description: Aspose.PDF for Pythonを使用すると、PDFファイルに注釈を追加、削除、および取得できます。タスクを解決するためにすべての注釈リストを確認してください。
 lastmod: "2023-02-17"
 sitemap:
@@ -83,8 +83,8 @@ PDFドキュメントの注釈は、ユーザーがドキュメント内のコ�
 
 Aspose.PDF for Pythonライブラリで利用可能なさまざまな種類の注釈をグループにまとめました：
 
-- [PDFテキスト注釈](/pdf/python-net/text-annotation/)
-- [PDFハイライト注釈](/pdf/python-net/highlights-annotation/)
-- [PDF図形注釈](/pdf/python-net/figures-annotation/)
-- [PDF付箋注釈](/pdf/python-net/sticky-annotations/)
-- [追加注釈](/pdf/python-net/extra-annotations/)
+- [PDFテキスト注釈](/pdf/ja/python-net/text-annotation/)
+- [PDFハイライト注釈](/pdf/ja/python-net/highlights-annotation/)
+- [PDF図形注釈](/pdf/ja/python-net/figures-annotation/)
+- [PDF付箋注釈](/pdf/ja/python-net/sticky-annotations/)
+- [追加注釈](/pdf/ja/python-net/extra-annotations/)

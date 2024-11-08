@@ -2,7 +2,7 @@
 title: Ajouter et Supprimer des Signets
 type: docs
 weight: 10
-url: fr/cpp/add-and-delete-bookmarks/
+url: /fr/cpp/add-and-delete-bookmarks/
 ---
 
 ## <ins>**Ajouter un Signet**

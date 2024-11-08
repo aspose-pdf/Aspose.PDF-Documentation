@@ -2,7 +2,7 @@
 title: Setel Hak Istimewa pada PDF
 type: docs
 weight: 50
-url: id/net/set-privileges/
+url: /id/net/set-privileges/
 description: Topik ini menjelaskan cara menyetel hak istimewa pada file PDF yang ada menggunakan Kelas PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

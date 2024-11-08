@@ -6,7 +6,7 @@ type: docs
 
 weight: 30
 
-url: ar/jasperreports/feature-tour/
+url: /ar/jasperreports/feature-tour/
 
 lastmod: "2021-06-05"
 
@@ -18,8 +18,8 @@ lastmod: "2021-06-05"
 
 
 
-- [نشر سهل وخفيف الوزن](/pdf/jasperreports/easy-and-lightweight-deployment/)
+- [نشر سهل وخفيف الوزن](/pdf/ar/jasperreports/easy-and-lightweight-deployment/)
 
-- [ترخيص بسيط وميسور التكلفة](/pdf/jasperreports/simple-and-affordable-licensing/)
+- [ترخيص بسيط وميسور التكلفة](/pdf/ar/jasperreports/simple-and-affordable-licensing/)
 
-- [دعم فني مجاني عالمي المستوى](/pdf/jasperreports/world-class-free-technical-support/)
+- [دعم فني مجاني عالمي المستوى](/pdf/ar/jasperreports/world-class-free-technical-support/)

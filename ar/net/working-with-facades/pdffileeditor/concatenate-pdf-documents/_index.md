@@ -3,7 +3,7 @@ title: دمج مستندات PDF في C#
 linktitle: دمج مستندات PDF
 type: docs
 weight: 20
-url: ar/net/concatenate-pdf-documents/
+url: /ar/net/concatenate-pdf-documents/
 description: يوضح هذا القسم كيفية دمج مستندات PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfFileEditor.
 aliases:
     - /pdf/net/concatenate-multiple-pdf-files-using-memorystreams/

@@ -2,7 +2,7 @@
 title: التحقق من التوقيع في ملف PDF
 type: docs
 weight: 30
-url: ar/java/verify-signature-in-pdf/
+url: /ar/java/verify-signature-in-pdf/
 description: يشرح هذا القسم كيفية العمل مع التوقيع في ملف PDF باستخدام فئة PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## التحقق مما إذا كان ملف PDF موقعًا باستخدام توقيع
 
-للتحقق مما إذا كان ملف PDF موقعًا باستخدام طريقة VerifySigned من فئة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature). تتطلب هذه الطريقة اسم التوقيع وتعيد true إذا كان ملف PDF موقعًا باستخدام ذلك الاسم. من الممكن أيضًا التحقق من أن [ملف PDF موقع](/pdf/java/working-with-signature-in-a-pdf-file/)، دون التحقق من التوقيع الذي تم التوقيع به.
+للتحقق مما إذا كان ملف PDF موقعًا باستخدام طريقة VerifySigned من فئة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature). تتطلب هذه الطريقة اسم التوقيع وتعيد true إذا كان ملف PDF موقعًا باستخدام ذلك الاسم. من الممكن أيضًا التحقق من أن [ملف PDF موقع](/pdf/ar/java/working-with-signature-in-a-pdf-file/)، دون التحقق من التوقيع الذي تم التوقيع به.
 
 ### التحقق من أن ملف PDF موقع بتوقيع معين
 

@@ -2,7 +2,7 @@
 title: Adicionando marca d'água de várias linhas
 type: docs
 weight: 10
-url: pt/net/adding-multi-line-watermark-to-existing-pdf/
+url: /pt/net/adding-multi-line-watermark-to-existing-pdf/
 description: Esta seção explica como adicionar marca d'água de várias linhas a um PDF existente usando a Classe FormattedText.
 lastmod: "2021-06-05"
 draft: false

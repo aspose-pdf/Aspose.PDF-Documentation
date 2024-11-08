@@ -2,7 +2,7 @@
 title: Aspose.PDF Java untuk NetBeans - Maven
 type: docs
 weight: 70
-url: id/java/aspose-pdf-java-for-netbeans-maven/
+url: /id/java/aspose-pdf-java-for-netbeans-maven/
 lastmod: "2021-06-05"
 ---
 

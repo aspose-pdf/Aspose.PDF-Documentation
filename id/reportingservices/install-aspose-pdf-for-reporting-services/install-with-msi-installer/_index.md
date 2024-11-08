@@ -2,7 +2,7 @@
 title: Install dengan MSI Installer
 type: docs
 weight: 10
-url: id/reportingservices/install-with-msi-installer/
+url: /id/reportingservices/install-with-msi-installer/
 lastmod: "2021-06-05"
 ---
 

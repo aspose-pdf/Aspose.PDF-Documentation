@@ -3,7 +3,7 @@ title: البحث واستخراج النص من صفحات PDF
 linktitle: البحث واستخراج النص
 type: docs
 weight: 60
-url: ar/python-net/search-and-get-text-from-pdf/
+url: /ar/python-net/search-and-get-text-from-pdf/
 description: توضح هذه المقالة كيفية استخدام أدوات مختلفة للبحث واستخراج النص من Aspose.PDF for .NET.
 lastmod: "2024-02-17"
 sitemap:

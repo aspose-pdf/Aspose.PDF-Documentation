@@ -2,7 +2,7 @@
 title: Implantação Fácil e Leve
 type: docs
 weight: 40
-url: pt/reportingservices/easy-and-lightweight-deployment/
+url: /pt/reportingservices/easy-and-lightweight-deployment/
 lastmod: "2021-06-05"
 ---
 

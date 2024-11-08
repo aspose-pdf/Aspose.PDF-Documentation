@@ -3,7 +3,7 @@ title: Buscar y Obtener Texto de las Páginas de un Documento PDF
 linktitle: Buscar y Obtener Texto
 type: docs
 weight: 60
-url: es/cpp/search-and-get-text-from-pdf/
+url: /es/cpp/search-and-get-text-from-pdf/
 description: Este artículo explica cómo usar varias herramientas para buscar y obtener texto de documentos PDF. Podemos buscar con expresiones regulares en páginas particulares o en todo el documento.
 lastmod: "2021-12-13"
 sitemap:

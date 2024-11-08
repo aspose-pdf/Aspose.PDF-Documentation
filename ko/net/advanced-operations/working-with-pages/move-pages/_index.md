@@ -3,7 +3,7 @@ title: PDF 페이지를 프로그래밍 방식으로 이동 C#
 linktitle: PDF 페이지 이동
 type: docs
 weight: 20
-url: ko/net/move-pages/
+url: /ko/net/move-pages/
 description: Aspose.PDF for .NET을 사용하여 원하는 위치나 PDF 파일의 끝에 페이지를 이동해보세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 이 주제는 C#을 사용하여 한 PDF 문서에서 다른 문서 끝으로 페이지를 이동하는 방법에 대해 설명합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 페이지를 이동하려면 다음을 수행해야 합니다:
 

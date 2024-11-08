@@ -3,7 +3,7 @@ title: 기존 PDF 파일에서 이미지 교체 C++ 사용
 linktitle: 이미지 교체
 type: docs
 weight: 70
-url: ko/cpp/replace-image-in-existing-pdf-file/
+url: /ko/cpp/replace-image-in-existing-pdf-file/
 description: 이 섹션에서는 ++ 라이브러리를 사용하여 기존 PDF 파일에서 이미지를 교체하는 방법을 설명합니다.
 lastmod: "2021-12-18"
 ---

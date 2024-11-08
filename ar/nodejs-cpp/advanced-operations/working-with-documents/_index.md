@@ -3,7 +3,7 @@ title: العمل مع مستندات PDF في Node.js
 linktitle: العمل مع المستندات
 type: docs
 weight: 10
-url: ar/nodejs-cpp/working-with-documents/
+url: /ar/nodejs-cpp/working-with-documents/
 description: يصف لك هذا المقال ما يمكن القيام به من تلاعبات مع مستند PDF باستخدام عدة Aspose.PDF for Node.js عبر C++.
 lastmod: "2023-11-16"
 sitemap:
@@ -21,7 +21,7 @@ PDF هو معيار مفتوح، يتم الحفاظ عليه من قبل الم
 
 You are able to do the following:
 
-- [تحسين ملف PDF](/pdf/nodejs-cpp/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لنجاح تحسين الوثيقة.
-- [تحسين موارد PDF](/pdf/nodejs-cpp/optimize-pdf-resources/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لنجاح تحسين الوثيقة.
-- [دمج ملفات PDF](/pdf/nodejs-cpp/merge-pdf/) - دمج ملفات PDF متعددة في وثيقة PDF واحدة باستخدام Node.js.
-- [تقسيم ملف PDF](/pdf/nodejs-cpp/split-pdf/) - تقسيم صفحات PDF إلى ملفات PDF فردية في Node.js عبر C++.
+- [تحسين ملف PDF](/pdf/ar/nodejs-cpp/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لنجاح تحسين الوثيقة.
+- [تحسين موارد PDF](/pdf/ar/nodejs-cpp/optimize-pdf-resources/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لنجاح تحسين الوثيقة.
+- [دمج ملفات PDF](/pdf/ar/nodejs-cpp/merge-pdf/) - دمج ملفات PDF متعددة في وثيقة PDF واحدة باستخدام Node.js.
+- [تقسيم ملف PDF](/pdf/ar/nodejs-cpp/split-pdf/) - تقسيم صفحات PDF إلى ملفات PDF فردية في Node.js عبر C++.

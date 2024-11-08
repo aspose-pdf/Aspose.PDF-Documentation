@@ -2,7 +2,7 @@
 title: PDF 파일 끝에 빈 페이지 삽입하기 - Python
 type: docs
 weight: 60
-url: ko/python-java/insert-an-empty-page-at-end-of-pdf-file-in-python/
+url: /ko/python-java/insert-an-empty-page-at-end-of-pdf-file-in-python/
 ---
 
 <ins>**Aspose.PDF Java for Python**을 사용하여 PDF 문서의 끝에 빈 페이지를 삽입하려면, **InsertEmptyPageAtEndOfFile** 클래스를 호출하십시오.

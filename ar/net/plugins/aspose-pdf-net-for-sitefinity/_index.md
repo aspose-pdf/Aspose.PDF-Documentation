@@ -2,7 +2,7 @@
 title: Aspose.PDF .NET لـ Sitefinity
 type: docs
 weight: 300
-url: ar/net/aspose-pdf-net-for-sitefinity/
+url: /ar/net/aspose-pdf-net-for-sitefinity/
 description: تعلم كيفية استخدام وحدة استيراد PDF لـ Sitefinity
 lastmod: "2021-06-05"
 sitemap:
@@ -12,4 +12,4 @@ sitemap:
 
 هذا القسم يحتوي على المواضيع التالية:
 
-- [استيراد PDF في Sitefinity](/pdf/net/sitefinity-pdf-import/)
+- [استيراد PDF في Sitefinity](/pdf/ar/net/sitefinity-pdf-import/)

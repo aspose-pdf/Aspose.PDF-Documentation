@@ -3,7 +3,7 @@ title: Crear enlaces en archivos PDF con C#
 linktitle: Crear enlaces
 type: docs
 weight: 10
-url: es/net/create-links/
+url: /es/net/create-links/
 description: Esta sección explica cómo crear enlaces en su documento PDF con C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Crear enlaces
 

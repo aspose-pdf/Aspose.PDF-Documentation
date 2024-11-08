@@ -3,7 +3,7 @@ title: Извлечение данных из таблицы в PDF
 linktitle: Извлечение данных из таблицы
 type: docs
 weight: 40
-url: ru/cpp/extract-data-from-table-in-pdf/
+url: /ru/cpp/extract-data-from-table-in-pdf/
 description: Узнайте, как извлечь таблицы из PDF с использованием Aspose.PDF для C++.
 lastmod: "2021-06-05"
 sitemap:
@@ -123,7 +123,7 @@ void ExtractMarkedTable()
 
 ## Извлечение данных таблицы из PDF и сохранение их в файл CSV
 
-Следующий пример показывает, как извлечь таблицу и сохранить её как файл CSV. Чтобы узнать, как конвертировать PDF в электронную таблицу Excel, пожалуйста, ознакомьтесь со статьей [Конвертировать PDF в Excel](/pdf/cpp/convert-pdf-to-excel/).
+Следующий пример показывает, как извлечь таблицу и сохранить её как файл CSV. Чтобы узнать, как конвертировать PDF в электронную таблицу Excel, пожалуйста, ознакомьтесь со статьей [Конвертировать PDF в Excel](/pdf/ru/cpp/convert-pdf-to-excel/).
 
 ```cpp
 void ExtractTableSaveCSV()

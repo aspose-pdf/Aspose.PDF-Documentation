@@ -4,7 +4,7 @@ linktitle: Aspose.PDF para Java
 second_title: Aspose.PDF para Java
 type: docs
 weight: 20
-url: pt/java/
+url: /pt/java/
 is_root: true
 lastmod: "2021-06-05"
 ---
@@ -21,26 +21,26 @@ Aspose.PDF é um componente Java desenvolvido para permitir que desenvolvedores 
 
 <h2>Capítulos </h2>
 
-- [O que há de novo](/pdf/java/whatsnew/)
-- [Visão geral](/pdf/java/overview/)
-- [Começar](/pdf/java/get-started/)
+- [O que há de novo](/pdf/pt/java/whatsnew/)
+- [Visão geral](/pdf/pt/java/overview/)
+- [Começar](/pdf/pt/java/get-started/)
 
-- [Operações básicas](/pdf/java/basic-operations/)
-- [Convertendo documentos](/pdf/java/converting/)
-- [Analisando documentos PDF](/pdf/java/parsing/)
-- [Operações avançadas](/pdf/java/advanced-operations/)
+- [Operações básicas](/pdf/pt/java/basic-operations/)
+- [Convertendo documentos](/pdf/pt/java/converting/)
+- [Analisando documentos PDF](/pdf/pt/java/parsing/)
+- [Operações avançadas](/pdf/pt/java/advanced-operations/)
 - [Notas de Lançamento](https://releases.aspose.com/pdf/java/release-notes/)
 
 <h2> Recursos do Aspose.PDF para Java</h2>
 A seguir estão os links para alguns recursos úteis que você pode precisar para realizar suas tarefas.
 
-- [Documentação Online do Aspose.PDF para Java](/pdf/java/)
-- [Recursos do Aspose.PDF para Java](/pdf/java/key-features/)
+- [Documentação Online do Aspose.PDF para Java](/pdf/pt/java/)
+- [Recursos do Aspose.PDF para Java](/pdf/pt/java/key-features/)
 - [Notas de Lançamento do Aspose.PDF para Java](https://releases.aspose.com/pdf/java/release-notes/)
 - [Página do Produto Aspose.PDF para Java](https://products.aspose.com/pdf/java)
 - [Repositório Maven do Aspose.PDF para Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
 - [Baixar Aspose.PDF para Java](https://releases.aspose.com/pdf/java/)
-- [Instalar Aspose.PDF para Java do Repositório Aspose](/pdf/java/installation/)
+- [Instalar Aspose.PDF para Java do Repositório Aspose](/pdf/pt/java/installation/)
 - [Guia de Referência da API Aspose.PDF para Java](https://reference.aspose.com/java/pdf)
 
 - [Baixar Exemplos no Repositório GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java)

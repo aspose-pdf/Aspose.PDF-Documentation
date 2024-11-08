@@ -3,7 +3,7 @@ title: Aspose.PDF untuk Dukungan Python
 linktitle: Dukungan Teknis
 type: docs
 weight: 60
-url: id/python-net/technical-support/
+url: /id/python-net/technical-support/
 description: Halaman ini memberikan rekomendasi untuk menyelesaikan tugas Anda dengan cepat dan berkualitas menggunakan Aspose.PDF untuk Python.
 lastmod: "2021-06-05"
 sitemap:

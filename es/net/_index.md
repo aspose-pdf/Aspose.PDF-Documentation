@@ -4,7 +4,7 @@ linktitle: Aspose.PDF para .NET
 second_title: Aspose.PDF para .NET
 type: docs
 weight: 10
-url: es/net/
+url: /es/net/
 is_root: true
 lastmod: "2021-06-05"
 description: Aprende a usar Aspose.PDF .NET para crear aplicaciones para el procesamiento de documentos PDF en cualquier plataforma usando C#, VB. Explora tutoriales, código de muestra y más.
@@ -28,21 +28,21 @@ Aspose.PDF es un componente de .NET diseñado para permitir a los desarrolladore
 
 ## Capítulos
 
-- [Novedades](/pdf/net/whatsnew/)
-- [Descripción general](/pdf/net/overview/)
-- [Primeros pasos](/pdf/net/get-started/)
-- [Operaciones básicas](/pdf/net/basic-operations/)
-- [Conversión de documentos](/pdf/net/converting/)
-- [Análisis de documentos PDF](/pdf/net/parsing/)
-- [Operaciones avanzadas](/pdf/net/advanced-operations/)
-- [Vitrinas](/pdf/net/showcases/)
+- [Novedades](/pdf/es/net/whatsnew/)
+- [Descripción general](/pdf/es/net/overview/)
+- [Primeros pasos](/pdf/es/net/get-started/)
+- [Operaciones básicas](/pdf/es/net/basic-operations/)
+- [Conversión de documentos](/pdf/es/net/converting/)
+- [Análisis de documentos PDF](/pdf/es/net/parsing/)
+- [Operaciones avanzadas](/pdf/es/net/advanced-operations/)
+- [Vitrinas](/pdf/es/net/showcases/)
 - [Notas de la versión](https://releases.aspose.com/pdf/net/release-notes/)
 
 ## Recursos de Aspose.PDF para .NET
 
 A continuación se encuentran los enlaces a algunos recursos útiles que puede necesitar para realizar sus tareas.
 
-- [Características de Aspose.PDF para .NET](/pdf/net/key-features/)
+- [Características de Aspose.PDF para .NET](/pdf/es/net/key-features/)
 - [Notas de la versión de Aspose.PDF para .NET](https://releases.aspose.com/pdf/net/release-notes/)
 - [Página del producto Aspose.PDF para .NET](https://products.aspose.com/pdf/net/)
 - [Descargar Aspose.PDF para .NET](https://releases.aspose.com/pdf/net/)

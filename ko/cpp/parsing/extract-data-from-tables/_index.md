@@ -3,7 +3,7 @@ title: PDF에서 테이블 데이터 추출
 linktitle: 테이블 데이터 추출
 type: docs
 weight: 40
-url: ko/cpp/extract-data-from-table-in-pdf/
+url: /ko/cpp/extract-data-from-table-in-pdf/
 description: Aspose.PDF for C++를 사용하여 PDF에서 테이블 형식을 추출하는 방법을 배우십시오.
 lastmod: "2021-06-05"
 sitemap:
@@ -123,7 +123,7 @@ void ExtractMarkedTable()
 
 ## PDF에서 테이블 데이터 추출하여 CSV 파일에 저장하기
 
-다음 예제는 테이블을 추출하여 CSV 파일로 저장하는 방법을 보여줍니다. PDF를 Excel 스프레드시트로 변환하는 방법은 [PDF를 Excel로 변환](/pdf/cpp/convert-pdf-to-excel/) 기사를 참조하십시오.
+다음 예제는 테이블을 추출하여 CSV 파일로 저장하는 방법을 보여줍니다. PDF를 Excel 스프레드시트로 변환하는 방법은 [PDF를 Excel로 변환](/pdf/ko/cpp/convert-pdf-to-excel/) 기사를 참조하십시오.
 
 ```cpp
 void ExtractTableSaveCSV()

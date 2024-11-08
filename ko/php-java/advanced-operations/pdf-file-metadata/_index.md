@@ -3,7 +3,7 @@ title: PDF 파일 메타데이터 작업하기
 linktitle: PDF 파일 메타데이터
 type: docs
 weight: 140
-url: ko/php-java/pdf-file-metadata/
+url: /ko/php-java/pdf-file-metadata/
 description: 이 섹션은 PDF 파일 정보를 얻는 방법, PDF 파일에서 XMP 메타데이터를 얻는 방법, PDF 파일 정보를 설정하는 방법을 설명합니다.
 lastmod: "2024-06-05"
 sitemap:

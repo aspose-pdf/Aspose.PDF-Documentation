@@ -2,7 +2,7 @@
 title: PDF에서 폼 필드 장식하기
 type: docs
 weight: 20
-url: ko/net/decorate-form-field/
+url: /ko/net/decorate-form-field/
 description: 이 섹션은 FormEditor 클래스를 사용하여 PDF에서 폼 필드를 장식하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

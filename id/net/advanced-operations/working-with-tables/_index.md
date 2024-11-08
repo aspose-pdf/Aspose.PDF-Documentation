@@ -3,7 +3,7 @@ title: Bekerja dengan Tabel di PDF menggunakan C#
 linktitle: Bekerja dengan Tabel
 type: docs
 weight: 50
-url: id/net/working-with-tables/
+url: /id/net/working-with-tables/
 description: Bagian ini menjelaskan cara menambahkan dan mengekstrak tabel, cara memanipulasi dan mengintegrasikan tabel menggunakan perpustakaan C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,12 +81,12 @@ Tabel adalah bagian dari banyak formulir PDF. Anda menemukan tabel dalam berbaga
 
 Anda dapat melakukan hal berikut:
 
-- [Buat atau Tambahkan Tabel dalam Dokumen PDF yang ada](/pdf/net/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
-- [Ekstrak Tabel dari Dokumen PDF yang Ada](/pdf/net/extract-table-from-existing-pdf-document/) - Anda dapat mengekstrak tabel dari file PDF atau mengekstrak batas tabel sebagai Gambar.
-- [Integrasikan Tabel dengan Sumber Data](/pdf/net/integrate-table/) - integrasikan tabel dengan Database, integrasikan tabel dengan sumber Entity Framework menggunakan perpustakaan .NET.
-- [Manipulasi Tabel dalam PDF yang Ada](/pdf/net/manipulate-tables-in-existing-pdf/) - manipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
-- [Manipulasi Tabel di PDF yang Ada](/pdf/net/manipulate-tables-in-existing-pdf/) - manipulasi tabel di PDF Anda menggunakan TableAbsorber.
-- [Hapus Tabel dari PDF yang Ada](/pdf/net/remove-tables-from-existing-pdf/) - hapus satu tabel atau beberapa tabel dari dokumen PDF.
+- [Buat atau Tambahkan Tabel dalam Dokumen PDF yang ada](/pdf/id/net/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
+- [Ekstrak Tabel dari Dokumen PDF yang Ada](/pdf/id/net/extract-table-from-existing-pdf-document/) - Anda dapat mengekstrak tabel dari file PDF atau mengekstrak batas tabel sebagai Gambar.
+- [Integrasikan Tabel dengan Sumber Data](/pdf/id/net/integrate-table/) - integrasikan tabel dengan Database, integrasikan tabel dengan sumber Entity Framework menggunakan perpustakaan .NET.
+- [Manipulasi Tabel dalam PDF yang Ada](/pdf/id/net/manipulate-tables-in-existing-pdf/) - manipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
+- [Manipulasi Tabel di PDF yang Ada](/pdf/id/net/manipulate-tables-in-existing-pdf/) - manipulasi tabel di PDF Anda menggunakan TableAbsorber.
+- [Hapus Tabel dari PDF yang Ada](/pdf/id/net/remove-tables-from-existing-pdf/) - hapus satu tabel atau beberapa tabel dari dokumen PDF.
 
 <script type="application/ld+json">
 {

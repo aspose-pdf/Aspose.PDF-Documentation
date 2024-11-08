@@ -3,7 +3,7 @@ title: C#を使用してPDFをマージする方法
 linktitle: PDFファイルをマージする
 type: docs
 weight: 50
-url: ja/net/merge-pdf-documents/
+url: /ja/net/merge-pdf-documents/
 keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
 description: このページでは、C#またはVB.NETを使用してPDFドキュメントを単一のPDFファイルにマージする方法について説明します。
 lastmod: "2022-02-17"
@@ -81,7 +81,7 @@ sitemap:
 C#でPDFを結合するのは、サードパーティのライブラリを使用しないと簡単な作業ではありません。
 この記事では、Aspose.PDF for .NETを使用して複数のPDFファイルを単一のPDFドキュメントに結合する方法を示します。 例はC#で書かれていますが、APIはVB.NETなどの他の.NETプログラミング言語でも使用できます。 PDFファイルは、最初のものが他のドキュメントの最後に結合されるように結合されます。
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで機能します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで機能します。
 
 ## C#とDOMを使用してPDFファイルを結合する
 

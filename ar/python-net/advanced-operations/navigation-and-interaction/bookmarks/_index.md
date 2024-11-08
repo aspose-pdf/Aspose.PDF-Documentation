@@ -3,7 +3,7 @@ title: العمل مع الإشارات المرجعية في PDF باستخدا
 linktitle: الإشارات المرجعية
 type: docs
 weight: 30
-url: ar/python-net/bookmarks/
+url: /ar/python-net/bookmarks/
 description: يشرح هذا القسم كيفية إضافة وحذف والحصول على الإشارات المرجعية باستخدام Aspose.PDF لـ Python عبر .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -82,8 +82,8 @@ sitemap:
 تعد العلامات المرجعية في PDF أداة مفيدة وأساسية عندما يتعلق الأمر بقراءة ملفات PDF. فهي تتيح للمستخدمين القفز بسرعة إلى أماكن أخرى في مستند PDF، والتنقل عبر الصفحات، ومشاهدة محتويات ملف PDF بسرعة، تماماً كما هو الحال في جدول المحتويات.
 في هذا القسم، سوف تتعلم كيفية:
 
-- [إضافة وحذف علامة مرجعية](/pdf/python-net/add-and-delete-bookmark/)
-- [الحصول على، تحديث وتوسيع علامة مرجعية](/pdf/python-net/get-update-and-expand-bookmark/)
+- [إضافة وحذف علامة مرجعية](/pdf/ar/python-net/add-and-delete-bookmark/)
+- [الحصول على، تحديث وتوسيع علامة مرجعية](/pdf/ar/python-net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

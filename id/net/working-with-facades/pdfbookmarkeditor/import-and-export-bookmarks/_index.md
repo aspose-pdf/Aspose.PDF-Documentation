@@ -2,7 +2,7 @@
 title: Impor dan Ekspor Penanda Buku
 type: docs
 weight: 20
-url: id/net/import-and-export-bookmarks/
+url: /id/net/import-and-export-bookmarks/
 description: Bagian ini menjelaskan cara mengimpor dan mengekspor Penanda Buku dengan Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: إنشاء مستند PDF برمجياً
 linktitle: إنشاء PDF
 type: docs
 weight: 10
-url: ar/python-net/create-document/
+url: /ar/python-net/create-document/
 description: تصف هذه الصفحة كيفية إنشاء مستند PDF من الصفر باستخدام Aspose.PDF for Python عبر مكتبة .NET.
 ---
 

@@ -3,7 +3,7 @@ title: استبدال الصورة في ملف PDF موجود باستخدام C
 linktitle: استبدال الصورة
 type: docs
 weight: 70
-url: ar/cpp/replace-image-in-existing-pdf-file/
+url: /ar/cpp/replace-image-in-existing-pdf-file/
 description: يصف هذا القسم كيفية استبدال الصورة في ملف PDF موجود باستخدام مكتبة ++.
 lastmod: "2021-12-18"
 ---

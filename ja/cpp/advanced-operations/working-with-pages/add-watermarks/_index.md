@@ -3,7 +3,7 @@ title: PDFに透かしを追加する方法 C++を使用
 linktitle: 透かしを追加
 type: docs
 weight: 90
-url: ja/cpp/add-watermarks/
+url: /ja/cpp/add-watermarks/
 description: この記事では、プログラムでC++を使用してPDFにおけるアーティファクトの操作と透かしの取得に関する機能を説明します。
 lastmod: "2021-12-08"
 sitemap:

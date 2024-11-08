@@ -3,7 +3,7 @@ title: Tambahkan Objek Persegi Panjang ke File PDF
 linktitle: Tambah Persegi Panjang
 type: docs
 weight: 50
-url: id/net/add-rectangle/
+url: /id/net/add-rectangle/
 description: Artikel ini menjelaskan cara membuat objek Persegi Panjang pada PDF Anda menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan objek Rectangle
 

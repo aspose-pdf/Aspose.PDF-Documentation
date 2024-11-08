@@ -2,7 +2,7 @@
 title: 新しいページでのテーブルレンダリングの強制
 type: docs
 weight: 20
-url: ja/java/force-table-rendering-on-new-page/
+url: /ja/java/force-table-rendering-on-new-page/
 lastmod: "2021-06-05"
 ---
 

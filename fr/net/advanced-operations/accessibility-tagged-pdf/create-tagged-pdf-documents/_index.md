@@ -3,7 +3,7 @@ title: Créer un PDF balisé en utilisant C#
 linktitle: Créer un PDF balisé
 type: docs
 weight: 10
-url: fr/net/create-tagged-pdf/
+url: /fr/net/create-tagged-pdf/
 description: Cet article explique comment créer des éléments de structure pour un document PDF balisé de manière programmatique en utilisant Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Créer un PDF balisé signifie ajouter (ou créer) certains éléments au document qui permettront de valider le document conformément aux exigences PDF/UA. Ces éléments sont souvent appelés Éléments de Structure.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Création d'un PDF balisé (Scénario Simple)
 

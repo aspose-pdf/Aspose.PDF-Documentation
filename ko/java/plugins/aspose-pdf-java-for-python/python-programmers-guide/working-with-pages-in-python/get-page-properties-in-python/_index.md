@@ -2,7 +2,7 @@
 title: Python에서 페이지 속성 가져오기
 type: docs
 weight: 50
-url: ko/java/get-page-properties-in-python/
+url: /ko/java/get-page-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

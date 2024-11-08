@@ -2,7 +2,7 @@
 title: كيفية - تحديث عروض JasperReports الحالية لاستخدام Aspose.Pdf لـ JasperReports
 type: docs
 weight: 20
-url: ar/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/
+url: /ar/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/
 lastmod: "2021-06-05"
 ---
 

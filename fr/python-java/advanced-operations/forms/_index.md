@@ -3,7 +3,7 @@ title: Travailler avec des formulaires en utilisant Python
 linktitle: Formulaires dans un document PDF
 type: docs
 weight: 60
-url: fr/python-java/forms/
+url: /fr/python-java/forms/
 lastmod: "2023-05-19"
 description: Cette section contient des articles relatifs au travail avec des formulaires dans des documents PDF en utilisant l'API Python.
 sitemap:

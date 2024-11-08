@@ -3,7 +3,7 @@ title: PDF를 프로그래밍적으로 분할하기
 linktitle: PDF 파일 분할하기
 type: docs
 weight: 60
-url: ko/net/split-pdf-document/
+url: /ko/net/split-pdf-document/
 keywords: 여러 파일로 PDF 분할하기, 별도의 PDF로 PDF 분할하기, split pdf c#
 description: 이 주제는 C#을 사용하여 .NET 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다.
 lastmod: "2022-02-17"
@@ -91,8 +91,8 @@ aliases:
 1. 반복할 때마다 새 Document 객체를 생성하고 개별 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체를 빈 문서에 추가합니다.
 1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 새 PDF를 저장합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## C#에서 PDF를 여러 파일 또는 개별 PDF로 분할하기
 

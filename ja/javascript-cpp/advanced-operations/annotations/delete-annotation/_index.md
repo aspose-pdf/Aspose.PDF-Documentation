@@ -3,7 +3,7 @@ title: JavaScriptを使用して注釈を削除する
 linktitle: 注釈を削除
 type: docs
 weight: 10
-url: ja/javascript-cpp/delete-annotation/
+url: /ja/javascript-cpp/delete-annotation/
 description: Aspose.PDF for JavaScriptを使用してPDFファイルから注釈を削除できます。
 lastmod: "2023-02-17"
 sitemap:

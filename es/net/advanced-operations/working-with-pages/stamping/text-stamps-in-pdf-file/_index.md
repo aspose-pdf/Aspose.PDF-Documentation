@@ -3,7 +3,7 @@ title: Agregar sellos de texto en PDF C#
 linktitle: Sellos de texto en archivo PDF
 type: docs
 weight: 20
-url: es/net/text-stamps-in-the-pdf-file/
+url: /es/net/text-stamps-in-the-pdf-file/
 description: Agregar un sello de texto a un documento PDF utilizando la clase TextStamp con la biblioteca Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Puedes usar la clase [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) para añadir un sello de texto en un archivo PDF. La clase TextStamp proporciona propiedades necesarias para crear un sello basado en texto como el tamaño de fuente, el estilo de fuente y el color de la fuente, etc. Para añadir un sello de texto, necesitas crear un objeto Document y un objeto TextStamp utilizando las propiedades requeridas. Después de eso, puedes llamar al método AddStamp de la Página para añadir el sello en el PDF.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente fragmento de código te muestra cómo añadir un sello de texto en el archivo PDF.
 

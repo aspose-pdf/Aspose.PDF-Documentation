@@ -3,7 +3,7 @@ title: Optimizar, Comprimir o Reducir el Tamaño de PDF en C#
 linktitle: Optimizar PDF
 type: docs
 weight: 30
-url: es/net/optimize-pdf/
+url: /es/net/optimize-pdf/
 keywords: "optimize pdf c#"
 description: Optimizar archivo PDF, comprimir todas las imágenes, reducir tamaño del PDF, Desincrustar fuentes, Eliminar objetos no utilizados con C#.
 lastmod: "2022-02-17"
@@ -104,7 +104,7 @@ La optimización, o linearización para Web, se refiere al proceso de hacer que 
 1.
 1. Guarde el documento optimizado utilizando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente fragmento de código muestra cómo optimizar un documento PDF para la web.
 

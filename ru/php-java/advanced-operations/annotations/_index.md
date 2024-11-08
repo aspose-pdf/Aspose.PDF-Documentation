@@ -3,7 +3,7 @@ title: Аннотации в PDF
 linktitle: Аннотации в PDF
 type: docs
 weight: 100
-url: ru/php-java/annotations/
+url: /ru/php-java/annotations/
 description: Этот раздел показывает, как использовать все виды аннотаций в вашем PDF-файле с библиотекой Aspose.PDF. Узнайте, как рисовать, открывать или добавлять аннотацию с помощью PHP.
 lastmod: "2024-06-26"
 sitemap:
@@ -22,4 +22,4 @@ sitemap:
 
 Вы можете сделать следующее:
 
-- [Добавить аннотацию](/pdf/php-java/add-delete-and-get-annotation/) - в этом разделе объясняется, как работать с аннотациями на водяном знаке.
+- [Добавить аннотацию](/pdf/ru/php-java/add-delete-and-get-annotation/) - в этом разделе объясняется, как работать с аннотациями на водяном знаке.

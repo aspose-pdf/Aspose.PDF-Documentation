@@ -3,7 +3,7 @@ title: Añadir objeto Elipse a archivo PDF
 linktitle: Añadir Elipse
 type: docs
 weight: 60
-url: es/net/add-ellipse/
+url: /es/net/add-ellipse/
 description: Este artículo explica cómo crear un objeto Elipse en tu PDF usando Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Este artículo explica cómo crear un objeto Elipse en tu PDF usando Aspose.PDF para .NET."
 }
 </script>
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Agregar objeto Elipse
 

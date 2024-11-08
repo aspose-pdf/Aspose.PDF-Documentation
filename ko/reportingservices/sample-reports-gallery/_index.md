@@ -2,7 +2,7 @@
 title: 샘플 보고서 갤러리
 type: docs
 weight: 40
-url: ko/reportingservices/sample-reports-gallery/
+url: /ko/reportingservices/sample-reports-gallery/
 lastmod: "2024-05-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Obter Preferência de Visualização de Arquivo PDF
 type: docs
 weight: 70
-url: pt/net/get-viewer-preference-of-an-existing-pdf-file/
+url: /pt/net/get-viewer-preference-of-an-existing-pdf-file/
 description: Esta seção mostra como obter a preferência de visualização de um arquivo PDF existente usando a Classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

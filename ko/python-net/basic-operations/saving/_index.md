@@ -3,7 +3,7 @@ title: PDF 문서를 프로그래밍 방식으로 저장하기
 linktitle: PDF 저장
 type: docs
 weight: 30
-url: ko/python-net/save-pdf-document/
+url: /ko/python-net/save-pdf-document/
 description: Python Aspose.PDF for Python via .NET 라이브러리를 사용하여 PDF 파일을 저장하는 방법을 알아보세요. 파일 시스템, 스트림 및 웹 애플리케이션에 PDF 문서를 저장합니다.
 lastmod: "2022-12-22"
 sitemap:

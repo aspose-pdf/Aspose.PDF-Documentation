@@ -2,7 +2,7 @@
 title: Hapus Metadata dari PDF di PHP
 type: docs
 weight: 70
-url: id/java/remove-metadata-from-pdf-in-php/
+url: /id/java/remove-metadata-from-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

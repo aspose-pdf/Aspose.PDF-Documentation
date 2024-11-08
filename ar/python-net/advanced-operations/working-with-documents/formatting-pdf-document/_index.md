@@ -3,7 +3,7 @@ title: تنسيق مستند PDF باستخدام بايثون
 linktitle: تنسيق مستند PDF
 type: docs
 weight: 11
-url: ar/python-net/formatting-pdf-document/
+url: /ar/python-net/formatting-pdf-document/
 description: قم بإنشاء وتنسيق مستند PDF باستخدام Aspose.PDF لبايثون عبر .NET. استخدم الجزء التالي من الكود لحل مهامك.
 lastmod: "2023-04-12"
 sitemap:

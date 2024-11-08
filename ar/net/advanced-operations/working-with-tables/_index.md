@@ -3,7 +3,7 @@ title: العمل مع الجداول في PDF باستخدام C#
 linktitle: العمل مع الجداول
 type: docs
 weight: 50
-url: ar/net/working-with-tables/
+url: /ar/net/working-with-tables/
 description: يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية التلاعب ودمج جدول باستخدام مكتبة C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,15 +82,15 @@ sitemap:
 
 أنت قادر على القيام بما يلي:
 
-- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/net/add-table-in-existing-pdf-document/) - أنشئ جدولك في ملف pdf مع دمج الأعمدة أو الصفوف مع الأخذ في الاعتبار الحدود، الهوامش، والتبطين.
-- [استخراج جدول من مستند PDF موجود](/pdf/net/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
-- [دمج الجدول مع مصادر البيانات](/pdf/net/integrate-table/) - دمج الجدول مع قاعدة البيانات، دمج الجدول مع مصدر إطار العمل الكياني باستخدام مكتبة .NET.
-- [التلاعب بالجداول في مستند PDF موجود](/pdf/net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في مستند PDF الخاص بك باستخدام TableAbsorber.
+- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/ar/net/add-table-in-existing-pdf-document/) - أنشئ جدولك في ملف pdf مع دمج الأعمدة أو الصفوف مع الأخذ في الاعتبار الحدود، الهوامش، والتبطين.
+- [استخراج جدول من مستند PDF موجود](/pdf/ar/net/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
+- [دمج الجدول مع مصادر البيانات](/pdf/ar/net/integrate-table/) - دمج الجدول مع قاعدة البيانات، دمج الجدول مع مصدر إطار العمل الكياني باستخدام مكتبة .NET.
+- [التلاعب بالجداول في مستند PDF موجود](/pdf/ar/net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في مستند PDF الخاص بك باستخدام TableAbsorber.
 
 type: docs
 changefreq: "monthly"
-- [التلاعب بالجداول في ملف PDF موجود](/pdf/net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في ملف PDF الخاص بك باستخدام TableAbsorber.
-- [إزالة الجداول من ملف PDF موجود](/pdf/net/remove-tables-from-existing-pdf/) - إزالة جدول أو عدة جداول من مستند PDF.
+- [التلاعب بالجداول في ملف PDF موجود](/pdf/ar/net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في ملف PDF الخاص بك باستخدام TableAbsorber.
+- [إزالة الجداول من ملف PDF موجود](/pdf/ar/net/remove-tables-from-existing-pdf/) - إزالة جدول أو عدة جداول من مستند PDF.
 
 <script type="application/ld+json">
 {

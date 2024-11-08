@@ -3,7 +3,7 @@ title: Aspose.PDF para Soporte de JavaScript
 linktitle: Soporte Técnico
 type: docs
 weight: 60
-url: es/javascript-cpp/technical-support/
+url: /es/javascript-cpp/technical-support/
 description: Esta página ofrece recomendaciones para resolver sus tareas de manera rápida y de calidad usando Aspose.PDF para JavaScript.
 lastmod: "2022-12-13"
 sitemap:

@@ -2,7 +2,7 @@
 title: الحصول على خصائص الصفحة في بايثون
 type: docs
 weight: 50
-url: ar/java/get-page-properties-in-python/
+url: /ar/java/get-page-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

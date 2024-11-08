@@ -3,7 +3,7 @@ title: Membuat PDF Kompleks
 linktitle: Membuat PDF Kompleks
 type: docs
 weight: 60
-url: id/net/complex-pdf-example/
+url: /id/net/complex-pdf-example/
 description: Aspose.PDF untuk NET memungkinkan Anda untuk membuat dokumen yang lebih kompleks yang berisi gambar, fragmen teks, dan tabel dalam satu dokumen.
 aliases:
     - /net/complex-pdf/
@@ -13,8 +13,8 @@ sitemap:
     priority: 0.7
 ---
 
-Contoh [Hello, World](/pdf/net/hello-world-example/) menunjukkan langkah-langkah sederhana untuk membuat dokumen PDF menggunakan C# dan Aspose.PDF. Dalam artikel ini, kita akan melihat pembuatan dokumen yang lebih kompleks dengan C# dan Aspose.PDF untuk .NET. Sebagai contoh, kita akan mengambil dokumen dari perusahaan fiktif yang mengoperasikan layanan feri penumpang.
-Dokumen kita akan berisi sebuah gambar, dua fragmen teks (header dan paragraf), dan sebuah tabel. Untuk membangun dokumen seperti ini, kita akan menggunakan pendekatan berbasis DOM. Anda dapat membaca lebih lanjut di bagian [Dasar-dasar API DOM](/pdf/net/basics-of-dom-api/).
+Contoh [Hello, World](/pdf/id/net/hello-world-example/) menunjukkan langkah-langkah sederhana untuk membuat dokumen PDF menggunakan C# dan Aspose.PDF. Dalam artikel ini, kita akan melihat pembuatan dokumen yang lebih kompleks dengan C# dan Aspose.PDF untuk .NET. Sebagai contoh, kita akan mengambil dokumen dari perusahaan fiktif yang mengoperasikan layanan feri penumpang.
+Dokumen kita akan berisi sebuah gambar, dua fragmen teks (header dan paragraf), dan sebuah tabel. Untuk membangun dokumen seperti ini, kita akan menggunakan pendekatan berbasis DOM. Anda dapat membaca lebih lanjut di bagian [Dasar-dasar API DOM](/pdf/id/net/basics-of-dom-api/).
 
 Jika kita membuat dokumen dari awal kita perlu mengikuti langkah-langkah tertentu:
 
@@ -29,8 +29,8 @@ Jika kita membuat dokumen dari awal kita perlu mengikuti langkah-langkah tertent
 1. Tambahkan (tabel) ke [Paragraf](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) halaman.
 1. Simpan dokumen "Complex.pdf".
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 using Aspose.Pdf.Text;

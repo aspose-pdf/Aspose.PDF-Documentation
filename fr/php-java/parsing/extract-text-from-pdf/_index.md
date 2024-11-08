@@ -3,7 +3,7 @@ title: Extraire le Texte d'un PDF
 linktitle: Extraire le Texte 
 type: docs
 weight: 10
-url: fr/php-java/extract-text-from-pdf/
+url: /fr/php-java/extract-text-from-pdf/
 description: Aspose.PDF permet d'extraire différents types d'informations. Cette section contient des articles sur l'extraction de texte à partir de documents PDF en utilisant Aspose.PDF pour PHP.
 lastmod: "2024-05-20"
 sitemap:
@@ -20,5 +20,5 @@ Qui a besoin de l'extraction de texte ?
 Pour les entreprises de data mining, de gestion de contenu et de traitement de formulaires, l'extraction de texte sera particulièrement utile.
  Extracting text comes in handy: archiving: Le texte et ses composants peuvent être récupérés afin que les documents puissent être indexés et archivés avec des capacités de recherche complète ; récupérer et traiter des données sous forme de formulaires ; extraire des informations telles que les données de compte, les adresses postales et les numéros de téléphone à des fins administratives ; extraire des photos et des images.
 
-- [Extraire du texte d'un PDF](/pdf/php-java/extract-text-from-all-pdf/)
-- [Extraire un paragraphe d'un PDF](/pdf/php-java/extract-paragraph-from-pdf/)
+- [Extraire du texte d'un PDF](/pdf/fr/php-java/extract-text-from-all-pdf/)
+- [Extraire un paragraphe d'un PDF](/pdf/fr/php-java/extract-paragraph-from-pdf/)

@@ -3,7 +3,7 @@ title: Trabajando con Metadatos de Archivos PDF
 linktitle: Metadatos de Archivos PDF
 type: docs
 weight: 140
-url: es/java/pdf-file-metadata/
+url: /es/java/pdf-file-metadata/
 description: Esta sección explica cómo obtener información de archivos PDF, cómo obtener Metadatos XMP de un archivo PDF, establecer Información de Archivos PDF.
 lastmod: "2021-06-05"
 sitemap:

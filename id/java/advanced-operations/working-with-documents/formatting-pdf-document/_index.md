@@ -3,7 +3,7 @@ title: Memformat Dokumen PDF
 linktitle: Memformat Dokumen PDF
 type: docs
 weight: 20
-url: id/java/formatting-pdf-document/
+url: /id/java/formatting-pdf-document/
 description: Format Dokumen PDF dengan Aspose.PDF untuk Java. Gunakan cuplikan kode berikut untuk menyelesaikan tugas Anda.
 lastmod: "2021-06-05"
 ---

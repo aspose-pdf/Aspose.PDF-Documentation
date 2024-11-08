@@ -2,7 +2,7 @@
 title: 라이선스 테스트
 type: docs
 weight: 20
-url: ko/sharepoint/testing-a-license/
+url: /ko/sharepoint/testing-a-license/
 lastmod: "2020-12-16"
 description: PDF SharePoint API에 대한 라이선스가 성공적으로 설치되었는지 테스트하려면, 원하는 형식으로 문서를 변환하고 평가 경고 없이 생성되어야 합니다.
 ---

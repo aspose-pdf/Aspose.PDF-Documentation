@@ -2,7 +2,7 @@
 title: PHP에서 PDF 파일 연결
 type: docs
 weight: 10
-url: ko/java/concatenate-pdf-files-in-php/
+url: /ko/java/concatenate-pdf-files-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: C++의 시스템 요구 사항
 linktitle: 시스템 요구 사항
 type: docs
 weight: 30
-url: ko/cpp/system-requirements/
+url: /ko/cpp/system-requirements/
 description: 이 섹션은 Aspose.PDF for C++와 성공적으로 작업하기 위해 개발자가 필요로 하는 지원 운영 체제를 나열합니다.
 lastmod: "2021-11-08"
 sitemap:

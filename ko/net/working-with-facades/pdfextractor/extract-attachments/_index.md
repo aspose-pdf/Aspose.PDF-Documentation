@@ -2,7 +2,7 @@
 title: PDF 파일에서 첨부 파일 추출
 type: docs
 weight: 10
-url: ko/net/extract-attachments/
+url: /ko/net/extract-attachments/
 description: 이 섹션에서는 PdfExtractor 클래스를 사용하여 pdf에서 첨부 파일을 추출하는 방법에 대해 설명합니다.
 lastmod: "2021-06-05"
 ---

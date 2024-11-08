@@ -3,7 +3,7 @@
 title: PageSize
 type: docs
 weight: 60
-url: fr/reportingservices/pagesize/
+url: /fr/reportingservices/pagesize/
 lastmod: "2021-06-05"
 ---
 

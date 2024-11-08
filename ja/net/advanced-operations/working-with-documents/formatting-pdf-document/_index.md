@@ -3,7 +3,7 @@ title: C#を使用してPDFドキュメントをフォーマットする
 linktitle: PDFドキュメントのフォーマット
 type: docs
 weight: 11
-url: ja/net/formatting-pdf-document/
+url: /ja/net/formatting-pdf-document/
 description: Aspose.PDF for .NETを使用してPDFドキュメントを作成およびフォーマットします。次のコードスニペットを使用してタスクを解決してください。
 lastmod: "2022-02-17"
 sitemap:
@@ -94,7 +94,7 @@ sitemap:
 - PageLayout – ページレイアウト。
 - PageMode – 最初に開かれたときにドキュメントがどのように表示されるか。オプションにはサムネイルを表示、フルスクリーン、添付ファイルパネルを表示があります。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 次のコードスニペットは、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) クラスを使用してプロパティを取得する方法を示しています。
 

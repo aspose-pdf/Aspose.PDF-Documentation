@@ -4,7 +4,7 @@ linktitle: Aspose.PDF для JavaScript
 second_title: Aspose.PDF для JavaScript через C++
 type: docs
 weight: 80
-url: ru/javascript-cpp/
+url: /ru/javascript-cpp/
 is_root: true
 lastmod: "2022-12-08"
 description: Узнайте, как использовать Aspose.PDF для JavaScript для создания приложений для обработки PDF-документов в браузере.
@@ -27,17 +27,17 @@ Aspose.PDF для JavaScript через C++ — это масштабируем�
 <h2>Главы</h2>
 
 
-- [Что нового](/pdf/javascript-cpp/whatsnew/)
-- [Обзор](/pdf/javascript-cpp/overview/)
-- [Начать работу](/pdf/javascript-cpp/get-started/)
-- [Базовые операции](/pdf/javascript-cpp/basic-operations/)
+- [Что нового](/pdf/ru/javascript-cpp/whatsnew/)
+- [Обзор](/pdf/ru/javascript-cpp/overview/)
+- [Начать работу](/pdf/ru/javascript-cpp/get-started/)
+- [Базовые операции](/pdf/ru/javascript-cpp/basic-operations/)
 - [Примечания к выпуску](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
 
 <h2>Ресурсы Aspose.PDF для JavaScript</h2>
 
 Ниже приведены ссылки на некоторые полезные ресурсы, которые могут понадобиться для выполнения ваших задач.
 
-- [Возможности Aspose.PDF для JavaScript](/pdf/javascript-cpp/key-features/)
+- [Возможности Aspose.PDF для JavaScript](/pdf/ru/javascript-cpp/key-features/)
 - [Примечания к выпуску Aspose.PDF для JavaScript](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
 - [Скачать Aspose.PDF для JavaScript](https://releases.aspose.com/pdf/javascriptcpp/)
 - [Страница продукта Aspose.PDF для JavaScript](https://products.aspose.com/pdf/javascript-cpp/)

@@ -2,7 +2,7 @@
 title: Memisahkan File PDF Menjadi Halaman Individual di Jython
 type: docs
 weight: 80
-url: id/java/split-pdf-file-into-individual-pages-in-jython/
+url: /id/java/split-pdf-file-into-individual-pages-in-jython/
 lastmod: "2021-06-05"
 ---
 

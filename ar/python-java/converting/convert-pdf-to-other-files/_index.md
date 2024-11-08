@@ -3,7 +3,7 @@ title: تحويل PDF إلى EPUB وLaTeX ونص وXPS في بايثون
 linktitle: تحويل PDF إلى صيغ أخرى
 type: docs
 weight: 90
-url: ar/python-java/convert-pdf-to-other-files/
+url: /ar/python-java/convert-pdf-to-other-files/
 lastmod: "2023-04-06"
 keywords: تحويل, PDF, EPUB, LaText, نص, XPS, بايثون
 description: يوضح هذا الموضوع كيفية تحويل ملف PDF إلى صيغ ملفات أخرى مثل EPUB وLaTeX ونص وXPS وغيرها باستخدام بايثون.

@@ -3,7 +3,7 @@ title: Replace Text in PDF
 linktitle: Replace Text in PDF
 type: docs
 weight: 40
-url: id/net/replace-text-in-pdf/
+url: /id/net/replace-text-in-pdf/
 description: Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari perpustakaan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ aliases:
 }
 </script>
 
-Kode snippet berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode snippet berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mengganti Teks di semua halaman dokumen PDF
 

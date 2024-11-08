@@ -3,7 +3,7 @@ title: إضافة خلفية إلى PDF
 linktitle: إضافة خلفيات
 type: docs
 weight: 110
-url: ar/php-java/add-backgrounds/
+url: /ar/php-java/add-backgrounds/
 descriptions: أضف صورة خلفية إلى ملف PDF الخاص بك باستخدام PHP. استخدم كائن BackgroundArtifact.
 lastmod: "2024-06-05"
 sitemap:

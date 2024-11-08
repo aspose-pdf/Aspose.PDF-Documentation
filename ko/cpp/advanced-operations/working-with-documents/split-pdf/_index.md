@@ -3,7 +3,7 @@ title: PDF를 프로그래밍 방식으로 분할
 linktitle: PDF 파일 분할
 type: docs
 weight: 60
-url: ko/cpp/split-pdf-document/
+url: /ko/cpp/split-pdf-document/
 description: 이 주제는 C++로 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다.
 lastmod: "2022-09-01"
 sitemap:

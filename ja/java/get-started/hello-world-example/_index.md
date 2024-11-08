@@ -2,7 +2,7 @@ title: Hello World Java Example
 linktitle: Hello World Example
 type: docs
 weight: 40
-url: ja/java/hello-world-example/
+url: /ja/java/hello-world-example/
 description: このページでは、Aspose.PDF for Java を使用してテキスト - Hello World を含む PDF ドキュメントを作成するためのシンプルなプログラミングの使用方法を示します。
 lastmod: "2021-06-05"
 sitemap:
@@ -14,7 +14,7 @@ sitemap:
 
 「Hello World」例は、プログラミング言語やソフトウェアの機能をシンプルなユースケースで紹介するために伝統的に使用されます。
 
-Aspose.PDF for Java API は、Java アプリケーション開発者がアプリケーション内で PDF ファイルを作成、読み取り、編集、操作することを可能にします。さまざまなファイル形式を PDF ファイル形式に変換したり、その逆を行ったりすることができます。この Hello World 記事では、Aspose.PDF for Java API を使用して Java で PDF ファイルを作成する方法を示します。環境に [Aspose.PDF for Java をインストール](/pdf/java/installation/) した後、以下のコードサンプルを実行して、Aspose.PDF API の動作を確認できます。
+Aspose.PDF for Java API は、Java アプリケーション開発者がアプリケーション内で PDF ファイルを作成、読み取り、編集、操作することを可能にします。さまざまなファイル形式を PDF ファイル形式に変換したり、その逆を行ったりすることができます。この Hello World 記事では、Aspose.PDF for Java API を使用して Java で PDF ファイルを作成する方法を示します。環境に [Aspose.PDF for Java をインストール](/pdf/ja/java/installation/) した後、以下のコードサンプルを実行して、Aspose.PDF API の動作を確認できます。
 
 以下のコードスニペットはこれらのステップに従います:
 `

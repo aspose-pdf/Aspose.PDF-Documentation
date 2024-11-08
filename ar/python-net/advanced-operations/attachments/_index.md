@@ -3,7 +3,7 @@ title: العمل مع المرفقات في PDF باستخدام Python
 linktitle: العمل مع المرفقات
 type: docs
 weight: 130
-url: ar/python-net/attachments/
+url: /ar/python-net/attachments/
 description: استخدم Python PDF API للوصول إلى المرفقات وإضافتها وإزالتها في ملفات PDF باستخدام Python من داخل تطبيقاتك. دليل كامل مع أمثلة كود Python.
 lastmod: "2023-02-17"
 sitemap:
@@ -81,9 +81,9 @@ sitemap:
 المرفق هو ملف إضافي يتم إرفاقه بمستند رئيسي، ويمكن أن يكون أنواعًا متعددة من الملفات، مثل pdf، word، صورة أو ملفات أخرى.  
 ستتعلم كيفية إضافة مرفقات إلى pdf، والحصول على معلومات المرفق، وحفظه في ملف، وحذف المرفق من PDF برمجيًا باستخدام بايثون.
 
-- [إضافة مرفق إلى مستند PDF](/pdf/python-net/add-attachment-to-pdf-document/)
-- [إزالة مرفق من PDF موجود](/pdf/python-net/removing-attachment-from-an-existing-pdf/)
-- [محفظة](/pdf/python-net/portfolio/)
+- [إضافة مرفق إلى مستند PDF](/pdf/ar/python-net/add-attachment-to-pdf-document/)
+- [إزالة مرفق من PDF موجود](/pdf/ar/python-net/removing-attachment-from-an-existing-pdf/)
+- [محفظة](/pdf/ar/python-net/portfolio/)
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: PDFをプログラムで分割
 linktitle: PDFファイルを分割
 type: docs
 weight: 60
-url: ja/net/split-pdf-document/
+url: /ja/net/split-pdf-document/
 keywords: split pdf into multiple files, split pdf into separate pdfs, split pdf c#
 description: このトピックでは、C#を使用して.NETアプリケーションでPDFページを個々のPDFファイルに分割する方法を示します。
 lastmod: "2022-02-17"
@@ -91,8 +91,8 @@ aliases:
 1. 各反復で、新しいDocumentオブジェクトを作成し、個々の[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトを空のドキュメントに追加します
 1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して新しいPDFを保存します
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
-[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでもこのコードスニペットは動作します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
+[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでもこのコードスニペットは動作します。
 
 ## C#でPDFを複数のファイルまたは個別のPDFに分割する
 

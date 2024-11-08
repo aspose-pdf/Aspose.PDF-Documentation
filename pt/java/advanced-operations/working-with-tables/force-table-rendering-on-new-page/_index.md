@@ -2,7 +2,7 @@
 title: Forçar Renderização de Tabela em Nova Página
 type: docs
 weight: 20
-url: pt/java/force-table-rendering-on-new-page/
+url: /pt/java/force-table-rendering-on-new-page/
 lastmod: "2021-06-05"
 ---
 

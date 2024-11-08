@@ -2,7 +2,7 @@
 title: Obtener Propiedades de la Página en PHP
 type: docs
 weight: 50
-url: es/java/get-page-properties-in-php/
+url: /es/java/get-page-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

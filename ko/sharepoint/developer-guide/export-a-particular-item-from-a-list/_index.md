@@ -8,7 +8,7 @@ type: docs
 
 weight: 10
 
-url: ko/sharepoint/export-a-particular-item-from-a-list/
+url: /ko/sharepoint/export-a-particular-item-from-a-list/
 
 lastmod: "2020-12-16"
 

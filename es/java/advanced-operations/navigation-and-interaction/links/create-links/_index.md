@@ -3,7 +3,7 @@ title: Crear Enlaces en un Archivo PDF
 linktitle: Crear Enlaces
 type: docs
 weight: 10
-url: es/java/create-links/
+url: /es/java/create-links/
 description: Esta sección explica cómo crear enlaces en su documento PDF con Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Node.js에서 PDF 복호화
 linktitle: PDF 파일 복호화
 type: docs
 weight: 40
-url: ko/nodejs-cpp/decrypt-pdf/
+url: /ko/nodejs-cpp/decrypt-pdf/
 description: C++를 통한 Aspose.PDF로 PDF 파일 복호화.
 lastmod: "2023-11-16"
 sitemap:

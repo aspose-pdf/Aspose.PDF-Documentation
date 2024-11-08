@@ -3,7 +3,7 @@ title: 벡터 그래픽 작업하기
 linktitle: 벡터 그래픽 작업하기
 type: docs
 weight: 120
-url: ko/net/working-with-vector-graphics/
+url: /ko/net/working-with-vector-graphics/
 description: 이 글은 C#을 사용하여 GraphicsAbsorber 도구로 작업하는 기능을 설명합니다.
 lastmod: "2024-02-17"
 ---

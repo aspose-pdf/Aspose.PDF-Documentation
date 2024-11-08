@@ -3,7 +3,7 @@ title: C++を使用してデフォルトフォント名を設定する
 linktitle: デフォルトフォント名を設定する
 type: docs
 weight: 90
-url: ja/cpp/set-default-font-name/
+url: /ja/cpp/set-default-font-name/
 description: このセクションでは、C++ライブラリを使用してデフォルトフォント名を設定する方法について説明します。
 lastmod: "2021-12-18"
 ---

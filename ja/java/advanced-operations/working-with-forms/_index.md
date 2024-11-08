@@ -3,7 +3,7 @@ title: フォームの操作
 linktitle: フォームの操作
 type: docs
 weight: 50
-url: ja/java/working-with-forms/
+url: /ja/java/working-with-forms/
 description: このセクションでは、Aspose.PDF for Java を使用して PDF ドキュメント内の AcroForms と XFA フォームを操作する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:
@@ -20,5 +20,5 @@ AcroForms はフォームフィールドを含む PDF ファイルです。こ�
 
 このセクションでは、Aspose.PDF for Javaを使用して、既存のPDF内のAcroFormsで利用可能なフィールドを発見し、マッピングする方法についても説明します。また、XMLに基づいたプレゼンテーションフォームの別の技術であるXFAを扱う方法も学びます。
 
-- [AcroForms](/pdf/java/acroforms/) - フォームの作成、フォームフィールドの入力、フォームからのデータ抽出、Javaライブラリを使用したPDF内のフィールドの修正。
-- [XFA Forms](/pdf/java/xfa-forms/) - XFAフィールドの入力、XFAの変換、XFAフィールドプロパティの取得。
+- [AcroForms](/pdf/ja/java/acroforms/) - フォームの作成、フォームフィールドの入力、フォームからのデータ抽出、Javaライブラリを使用したPDF内のフィールドの修正。
+- [XFA Forms](/pdf/ja/java/xfa-forms/) - XFAフィールドの入力、XFAの変換、XFAフィールドプロパティの取得。

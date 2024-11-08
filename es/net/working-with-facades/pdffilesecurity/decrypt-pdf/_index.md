@@ -2,7 +2,7 @@
 title: Decrypt PDF File
 type: docs
 weight: 20
-url: es/net/decrypt-pdf-file/
+url: /es/net/decrypt-pdf-file/
 description: Este tema explica cómo Desencriptar un Archivo PDF usando la Clase PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

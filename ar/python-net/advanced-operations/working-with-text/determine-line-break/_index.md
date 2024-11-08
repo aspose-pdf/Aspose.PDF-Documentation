@@ -3,7 +3,7 @@ title: تحديد فاصل السطر
 linktitle: تحديد فاصل السطر
 type: docs
 weight: 70
-url: ar/python-net/determine-line-break/
+url: /ar/python-net/determine-line-break/
 description: تعرف على كيفية تحديد فاصل السطر في TextFragment متعدد الأسطر باستخدام Python
 lastmod: "2024-02-17"
 sitemap:

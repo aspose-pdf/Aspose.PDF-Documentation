@@ -3,7 +3,7 @@ title: تحويل PDF إلى EPUB، TeX، نص، XPS في Node.js
 linktitle: تحويل PDF إلى تنسيقات أخرى
 type: docs
 weight: 90
-url: ar/nodejs-cpp/convert-pdf-to-other-files/
+url: /ar/nodejs-cpp/convert-pdf-to-other-files/
 lastmod: "2023-11-16"
 keywords: تحويل، PDF، EPUB، TeX، نص، XPS، Node.js
 description: يعرض هذا الموضوع كيفية تحويل ملف PDF إلى تنسيقات ملفات أخرى مثل EPUB، LaTeX، نص، XPS وغيرها في بيئة Node.js.

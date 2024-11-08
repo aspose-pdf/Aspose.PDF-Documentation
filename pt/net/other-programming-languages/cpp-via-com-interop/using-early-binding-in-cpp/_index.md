@@ -2,14 +2,14 @@
 title: Usando vinculação antecipada em CPP
 type: docs
 weight: 10
-url: pt/net/using-early-binding-in-cpp/
+url: /pt/net/using-early-binding-in-cpp/
 ---
 
 ## Pré-requisitos
 
 {{% alert color="primary" %}}
 
-Por favor, registre o Aspose.PDF para .NET com COM Interop, verifique o artigo chamado [Use Aspose.pdf para .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Por favor, registre o Aspose.PDF para .NET com COM Interop, verifique o artigo chamado [Use Aspose.pdf para .NET via COM Interop](/pdf/pt/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

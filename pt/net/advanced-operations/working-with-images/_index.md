@@ -3,7 +3,7 @@ title: Trabalhando com Imagens em PDF usando C#
 linktitle: Trabalhando com Imagens
 type: docs
 weight: 40
-url: pt/net/working-with-images/
+url: /pt/net/working-with-images/
 description: Esta seção descreve as funcionalidades de trabalhar com imagens em um arquivo PDF usando a biblioteca C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -87,17 +87,17 @@ Usar nossa biblioteca C# também é uma opção útil se você precisa inserir u
 Você é capaz de fazer o seguinte:
 Você pode realizar as seguintes ações:
 
-- [Adicionar Imagem ao Arquivo PDF Existente](/pdf/net/add-image-to-existing-pdf-file/) - adicione imagens e referências de uma única imagem em documento PDF, depois controle a qualidade.
-- [Excluir Imagens do Arquivo PDF](/pdf/net/delete-images-from-pdf-file/) - verifique o trecho de código para excluir imagens do arquivo PDF.
-- [Extrair Imagens do Arquivo PDF](/pdf/net/extract-images-from-pdf-file/) - use a coleção de Imagens para extrair imagens do arquivo PDF.
-- [Obter a Resolução e as Dimensões das Imagens Incorporadas](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - use as classes operadoras no namespace Aspose.PDF que fornecem a capacidade de obter informações sobre resolução e dimensão.
-- [Trabalhar com Colocação de Imagem](/pdf/net/working-with-image-placement/) - é possível obter a resolução de uma imagem e sua posição em um documento PDF.
-- [Pesquisar e Obter Imagens do Documento PDF](/pdf/net/search-and-get-images-from-pdf-document/) - você pode obter uma imagem de uma página individual e pesquisar entre imagens em todas as páginas com C#.
-- [Buscar e Obter Imagens de Documento PDF](/pdf/net/search-and-get-images-from-pdf-document/) - você pode obter uma imagem de uma página individual e buscar entre imagens em todas as páginas com C#.
-- [Substituir Imagem em Arquivo PDF Existente](/pdf/net/replace-image-in-existing-pdf-file/) - confira nosso trecho de código, ele mostra como substituir uma imagem em um arquivo PDF.
-- [Definir Tamanho da Imagem](/pdf/net/set-image-size/) - A biblioteca C# permite que você defina o tamanho de uma imagem.
-- [Definir Nome da Fonte Padrão](/pdf/net/set-default-font-name/) - Definindo Nome da Fonte Padrão para o processo de conversão.
-- [Gerar Imagens Miniatura de Documentos PDF](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - o próximo artigo mostra como gerar imagens miniatura de documentos PDF usando primeiro o SDK do Acrobat e depois o Aspose.PDF.
+- [Adicionar Imagem ao Arquivo PDF Existente](/pdf/pt/net/add-image-to-existing-pdf-file/) - adicione imagens e referências de uma única imagem em documento PDF, depois controle a qualidade.
+- [Excluir Imagens do Arquivo PDF](/pdf/pt/net/delete-images-from-pdf-file/) - verifique o trecho de código para excluir imagens do arquivo PDF.
+- [Extrair Imagens do Arquivo PDF](/pdf/pt/net/extract-images-from-pdf-file/) - use a coleção de Imagens para extrair imagens do arquivo PDF.
+- [Obter a Resolução e as Dimensões das Imagens Incorporadas](/pdf/pt/net/get-resolution-and-dimensions-of-embedded-images/) - use as classes operadoras no namespace Aspose.PDF que fornecem a capacidade de obter informações sobre resolução e dimensão.
+- [Trabalhar com Colocação de Imagem](/pdf/pt/net/working-with-image-placement/) - é possível obter a resolução de uma imagem e sua posição em um documento PDF.
+- [Pesquisar e Obter Imagens do Documento PDF](/pdf/pt/net/search-and-get-images-from-pdf-document/) - você pode obter uma imagem de uma página individual e pesquisar entre imagens em todas as páginas com C#.
+- [Buscar e Obter Imagens de Documento PDF](/pdf/pt/net/search-and-get-images-from-pdf-document/) - você pode obter uma imagem de uma página individual e buscar entre imagens em todas as páginas com C#.
+- [Substituir Imagem em Arquivo PDF Existente](/pdf/pt/net/replace-image-in-existing-pdf-file/) - confira nosso trecho de código, ele mostra como substituir uma imagem em um arquivo PDF.
+- [Definir Tamanho da Imagem](/pdf/pt/net/set-image-size/) - A biblioteca C# permite que você defina o tamanho de uma imagem.
+- [Definir Nome da Fonte Padrão](/pdf/pt/net/set-default-font-name/) - Definindo Nome da Fonte Padrão para o processo de conversão.
+- [Gerar Imagens Miniatura de Documentos PDF](/pdf/pt/net/generate-thumbnail-images-from-pdf-documents/) - o próximo artigo mostra como gerar imagens miniatura de documentos PDF usando primeiro o SDK do Acrobat e depois o Aspose.PDF.
 - Suporte para Imagens DICOM - Aspose.PDF para .NET suporta padrão gráfico médico especial de imagens.
 - Suporte para Imagens DICOM - Aspose.PDF para .NET suporta um padrão gráfico médico especial de imagens.
 

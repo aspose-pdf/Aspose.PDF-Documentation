@@ -3,7 +3,7 @@ title: Travailler avec l'Accessibilité et les PDFs Étiquetés
 linktitle: Accessibilité. PDF Étiqueté
 type: docs
 weight: 120
-url: fr/androidjava/accessibility-tagged-pdf/
+url: /fr/androidjava/accessibility-tagged-pdf/
 description: Ce chapitre décrit la possibilité de créer des documents PDF étiquetés. Cette fonctionnalité permet d'ajouter des balises aux documents structurels. Apprenez-en plus sur les moyens d'obtenir des PDFs abordables.
 lastmod: "2021-06-05"
 sitemap:
@@ -20,7 +20,7 @@ La section suivante fournit des détails sur la façon d'ajouter du contenu bali
 
 Cette section couvre le sujet suivant :
 
-- [Créer un PDF balisé](/pdf/andriodjava/create-tagged-pdf-documents/)
-- [Extraire le contenu balisé des PDF balisés](/pdf/androidjava/extract-tagged-content-from-tagged-pdfs/)
-- [Définir les propriétés des éléments de structure](/pdf/androidjava/set-tagged-pdfs-element-properties/)
-- [Travailler avec les tableaux dans les PDF balisés](/pdf/androidjava/working-with-table-in-tagged-pdfs/)
+- [Créer un PDF balisé](/pdf/fr/andriodjava/create-tagged-pdf-documents/)
+- [Extraire le contenu balisé des PDF balisés](/pdf/fr/androidjava/extract-tagged-content-from-tagged-pdfs/)
+- [Définir les propriétés des éléments de structure](/pdf/fr/androidjava/set-tagged-pdfs-element-properties/)
+- [Travailler avec les tableaux dans les PDF balisés](/pdf/fr/androidjava/working-with-table-in-tagged-pdfs/)

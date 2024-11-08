@@ -2,7 +2,7 @@
 title: PDFファイルでの署名の操作
 type: docs
 weight: 40
-url: ja/java/working-with-signature-in-a-pdf-file/
+url: /ja/java/working-with-signature-in-a-pdf-file/
 description: このセクションでは、PdfFileSignatureクラスを使用してPDFファイルで署名を操作する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

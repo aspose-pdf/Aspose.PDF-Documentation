@@ -3,7 +3,7 @@ title: PDF Highlights Annotation
 linktitle: Highlights Annotation
 type: docs
 weight: 20
-url: id/java/highlights-annotation/
+url: /id/java/highlights-annotation/
 description: Anotasi Markup ditampilkan dalam teks sebagai sorotan, garis bawah, coretan, atau garis bawah bergelombang dalam teks dokumen.
 lastmod: "2021-11-24"
 sitemap:

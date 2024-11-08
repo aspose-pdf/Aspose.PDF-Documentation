@@ -2,7 +2,7 @@
 title: Como Criar e Converter um Arquivo XML para PDF
 type: docs
 weight: 30
-url: pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
+url: /pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
 lastmod: "2020-12-16"
 description: API PDF SharePoint é capaz de criar e converter arquivos XML para o formato PDF.
 ---
@@ -18,13 +18,13 @@ Aspose.PDF para SharePoint é construído com base em nosso premiado componente 
 {{% alert color="primary" %}}
 
 Passo a passo, este artigo guia você através do processo de criação de um arquivo XML e sua conversão para PDF:
-1. [Criar um arquivo XML](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
-2. [Criar um modelo PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
-3. [Carregar o modelo XML](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
-4. [Especificar o caminho para o caminho de origem](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
-5. [Especificar propriedades do arquivo](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
-6. [Exportar o arquivo para PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
-7. [Salvar o arquivo PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
+1. [Criar um arquivo XML](/pdf/pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
+2. [Criar um modelo PDF](/pdf/pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
+3. [Carregar o modelo XML](/pdf/pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
+4. [Especificar o caminho para o caminho de origem](/pdf/pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
+5. [Especificar propriedades do arquivo](/pdf/pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
+6. [Exportar o arquivo para PDF](/pdf/pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
+7. [Salvar o arquivo PDF](/pdf/pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
    
 #### **Passo 1: Criar Arquivo XML**
 Primeiro crie um arquivo XML baseado no Aspose.PDF para o Modelo de Objeto de Documento .NET.
@@ -72,7 +72,7 @@ Antes de continuar, certifique-se de que o servidor SharePoint Foundation 2010 e
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 #### **Etapa 3: Carregar Modelo XML**
 
-Uma vez que o modelo tenha sido criado, carregue [o arquivo XML](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
+Uma vez que o modelo tenha sido criado, carregue [o arquivo XML](/pdf/pt/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
 1. Na página do modelo de PDF, selecione **Adicionar novo item**.
 
 

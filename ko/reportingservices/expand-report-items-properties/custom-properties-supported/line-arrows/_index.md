@@ -2,7 +2,7 @@
 title: Line Arrows
 type: docs
 weight: 20
-url: ko/reportingservices/line-arrows/
+url: /ko/reportingservices/line-arrows/
 lastmod: "2021-06-05"
 ---
 

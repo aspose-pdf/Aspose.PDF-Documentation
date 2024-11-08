@@ -3,7 +3,7 @@ title: システム要件
 linktitle: システム要件
 type: docs
 weight: 30
-url: ja/net/system-requirements/
+url: /ja/net/system-requirements/
 description: このセクションでは、開発者がAspose.PDF for .NETを成功裏に使用するために必要なサポートされているオペレーティングシステムをリストしています。
 lastmod: "2023-05-12"
 sitemap:

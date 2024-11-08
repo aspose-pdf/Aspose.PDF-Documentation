@@ -2,7 +2,7 @@
 title: التفعيل وإلغاء التفعيل بعد التثبيت
 type: docs
 weight: 40
-url: ar/sharepoint/activation-and-deactivation-after-installation/
+url: /ar/sharepoint/activation-and-deactivation-after-installation/
 lastmod: "2020-12-16"
 description: بعد تثبيت PDF SharePoint API، يمكنك استخدام قائمة إجراءات الموقع في الموقع الجذري لمجموعة المواقع لتنشيطه وإلغاء تنشيطه.
 ---

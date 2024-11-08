@@ -3,7 +3,7 @@ title: Aspose.PDF untuk Dukungan JavaScript
 linktitle: Dukungan Teknis
 type: docs
 weight: 60
-url: id/javascript-cpp/technical-support/
+url: /id/javascript-cpp/technical-support/
 description: Halaman ini memberikan rekomendasi untuk penyelesaian tugas Anda dengan cepat dan berkualitas menggunakan Aspose.PDF untuk JavaScript.
 lastmod: "2022-12-13"
 sitemap:

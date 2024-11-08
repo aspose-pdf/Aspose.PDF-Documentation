@@ -3,7 +3,7 @@ title: Dapatkan, Perbarui, dan Perluas Sebuah Penanda Buku menggunakan Python
 linktitle: Dapatkan, Perbarui, dan Perluas Sebuah Penanda Buku
 type: docs
 weight: 20
-url: id/python-net/get-update-and-expand-bookmark/
+url: /id/python-net/get-update-and-expand-bookmark/
 description: Artikel ini menjelaskan cara menggunakan penanda buku dalam file PDF dengan pustaka Aspose.PDF untuk Python kami.
 lastmod: "2023-02-17"
 sitemap:

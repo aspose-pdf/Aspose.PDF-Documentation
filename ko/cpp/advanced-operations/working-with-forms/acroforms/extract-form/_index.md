@@ -3,7 +3,7 @@ title: C++를 사용하여 AcroForm 데이터 추출
 linktitle: AcroForm 데이터 추출
 type: docs
 weight: 30
-url: ko/cpp/extract-form/
+url: /ko/cpp/extract-form/
 description: 이 섹션에서는 Aspose.PDF for C++를 사용하여 PDF 문서에서 양식을 추출하는 방법을 설명합니다.
 lastmod: "2021-12-01"
 sitemap:

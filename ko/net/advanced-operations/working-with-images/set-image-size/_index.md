@@ -3,7 +3,7 @@ title: 이미지 크기 설정
 linktitle: 이미지 크기 설정
 type: docs
 weight: 80
-url: ko/net/set-image-size/
+url: /ko/net/set-image-size/
 description: 이 섹션에서는 C# 라이브러리를 사용하여 PDF 파일의 이미지 크기를 설정하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 PDF 파일에 추가되는 이미지의 크기를 설정할 수 있습니다. 크기를 설정하려면 Aspose.Pdf.Image 클래스의 FixWidth 및 FixHeight 속성을 사용할 수 있습니다. 다음 코드 스니펫은 이미지 크기를 설정하는 방법을 보여줍니다:
 

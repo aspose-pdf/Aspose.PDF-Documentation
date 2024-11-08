@@ -3,7 +3,7 @@ title: Удаление таблиц из существующего PDF
 linktitle: Удаление таблиц
 type: docs
 weight: 50
-url: ru/net/remove-tables-from-existing-pdf/
+url: /ru/net/remove-tables-from-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -82,7 +82,7 @@ Aspose.PDF для NET предоставляет возможности вста
 
 Для удаления таблиц необходимо использовать класс [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber), чтобы получить доступ к таблицам в существующем PDF, а затем вызвать [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Удаление таблицы из документа PDF
 

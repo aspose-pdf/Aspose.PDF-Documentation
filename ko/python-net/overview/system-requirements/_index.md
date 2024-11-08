@@ -3,7 +3,7 @@ title: System Requirements
 linktitle: System Requirements
 type: docs
 weight: 30
-url: ko/python-net/system-requirements/
+url: /ko/python-net/system-requirements/
 description: 이 섹션은 개발자가 Aspose.PDF for Python을 성공적으로 사용하기 위해 필요한 지원 운영 체제를 나열합니다.
 lastmod: "2022-12-22"
 sitemap:

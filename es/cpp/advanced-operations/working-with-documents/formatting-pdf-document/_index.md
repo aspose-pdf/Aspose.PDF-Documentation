@@ -3,7 +3,7 @@ title: Formateo de Documento PDF usando C++
 linktitle: Formateo de Documento PDF
 type: docs
 weight: 20
-url: es/cpp/formatting-pdf-document/
+url: /es/cpp/formatting-pdf-document/
 description: Cree y formatee el Documento PDF con Aspose.PDF para C++. Utilice el siguiente fragmento de código para resolver sus tareas.
 lastmod: "2021-11-11"
 sitemap:

@@ -3,7 +3,7 @@ title: Удаление вложения из PDF
 linktitle: Удаление вложения из существующего PDF
 type: docs
 weight: 30
-url: ru/net/removing-attachment-from-an-existing-pdf/
+url: /ru/net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF может удалять вложения из ваших PDF документов. Используйте C# PDF API для удаления вложений в PDF файлах с помощью библиотеки Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Aspose.PDF может удалять вложения из файлов PDF. Вложения документа PDF хранятся в коллекции EmbeddedFiles объекта Document.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Чтобы удалить все вложения, связанные с файлом PDF:
 

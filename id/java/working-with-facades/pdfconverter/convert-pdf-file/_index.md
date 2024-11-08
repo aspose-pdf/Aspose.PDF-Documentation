@@ -2,7 +2,7 @@
 title: Mengonversi File PDF
 type: docs
 weight: 20
-url: id/java/convert-pdf-file/
+url: /id/java/convert-pdf-file/
 description: Bagian ini menjelaskan cara mengonversi File PDF dengan Aspose.PDF Facades menggunakan kelas PdfConverter.
 lastmod: "2021-06-05"
 draft: false

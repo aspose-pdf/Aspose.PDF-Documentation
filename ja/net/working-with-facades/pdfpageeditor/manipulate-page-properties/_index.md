@@ -2,7 +2,7 @@
 title: ページプロパティの操作
 type: docs
 weight: 80
-url: ja/net/manipulate-page-properties/
+url: /ja/net/manipulate-page-properties/
 description: このセクションでは、PdfPageEditor クラスを使用して Aspose.PDF Facades でページプロパティを操作する方法について説明します。
 lastmod: "2021-06-05"
 draft: false

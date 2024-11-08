@@ -3,7 +3,7 @@ title: Pythonを使用してPDFにヘッダーとフッターを追加する
 linktitle: PDFにヘッダーとフッターを追加
 type: docs
 weight: 50
-url: ja/python-net/add-headers-and-footers-of-pdf-file/
+url: /ja/python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Python via .NETを使用して、TextStampクラスでPDFファイルにヘッダーとフッターを追加できます。
 lastmod: "2023-04-17"
 sitemap:

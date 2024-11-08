@@ -2,7 +2,7 @@
 title: Dekripsi File PDF
 type: docs
 weight: 20
-url: id/java/decrypt-pdf-file/
+url: /id/java/decrypt-pdf-file/
 description: Topik ini menjelaskan cara Mendekripsi File PDF menggunakan Kelas PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: تحويل ملف PDF إلى تنسيق HTML
 linktitle: تحويل ملف PDF إلى تنسيق HTML
 type: docs
 weight: 50
-url: ar/java/convert-pdf-to-html/
+url: /ar/java/convert-pdf-to-html/
 lastmod: "2021-11-19"
 description: يوضح هذا الموضوع كيف يسمح Aspose.PDF بتحويل ملف PDF إلى تنسيق HTML باستخدام مكتبة Java.
 sitemap:

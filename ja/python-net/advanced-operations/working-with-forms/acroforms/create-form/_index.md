@@ -3,7 +3,7 @@ title: AcroFormを作成 - Pythonで記入可能なPDFを作成
 linktitle: AcroFormを作成
 type: docs
 weight: 10
-url: ja/python-net/create-form/
+url: /ja/python-net/create-form/
 description: Aspose.PDF for Pythonを使用して、PDFファイルでフォームをゼロから作成できます
 lastmod: "2023-02-17"
 sitemap:

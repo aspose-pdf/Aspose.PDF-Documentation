@@ -3,7 +3,7 @@ title: PythonでPDFの添付ファイルを操作する
 linktitle: 添付ファイルの操作
 type: docs
 weight: 130
-url: ja/python-net/attachments/
+url: /ja/python-net/attachments/
 description: アプリケーション内でPythonを使用して、PDFファイルの添付ファイルにアクセス、追加、削除するためのPython PDF APIを使用します。Pythonコードサンプルを含む完全なガイド。
 lastmod: "2023-02-17"
 sitemap:
@@ -81,6 +81,6 @@ sitemap:
 添付ファイルとは、親ドキュメントに添付される追加のファイルであり、pdf、word、画像、その他のファイルなど、さまざまなファイルタイプが考えられます。
 PDF に添付ファイルを追加する方法、添付ファイルの情報を取得してファイルに保存する方法、Python を使用してプログラムで PDF から添付ファイルを削除する方法を学びます。
 
-- [PDF ドキュメントに添付ファイルを追加する](/pdf/python-net/add-attachment-to-pdf-document/)
-- [既存の PDF から添付ファイルを削除する](/pdf/python-net/removing-attachment-from-an-existing-pdf/)
-- [ポートフォリオ](/pdf/python-net/portfolio/)
+- [PDF ドキュメントに添付ファイルを追加する](/pdf/ja/python-net/add-attachment-to-pdf-document/)
+- [既存の PDF から添付ファイルを削除する](/pdf/ja/python-net/removing-attachment-from-an-existing-pdf/)
+- [ポートフォリオ](/pdf/ja/python-net/portfolio/)

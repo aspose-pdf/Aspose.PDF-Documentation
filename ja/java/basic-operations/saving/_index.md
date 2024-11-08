@@ -3,7 +3,7 @@ title: PDFドキュメントを保存する
 linktitle: 保存
 type: docs
 weight: 30
-url: ja/java/save-pdf-document/
+url: /ja/java/save-pdf-document/
 description: Aspose.PDF for Javaライブラリを使用してPDFファイルを保存する方法を学びます。
 lastmod: "2021-06-05"
 sitemap:

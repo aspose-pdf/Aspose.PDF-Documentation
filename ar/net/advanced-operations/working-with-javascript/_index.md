@@ -1,7 +1,7 @@
 ---
 title: العمل مع جافاسكريبت
 type: docs
-url: ar/net/working-with-javascript/
+url: /ar/net/working-with-javascript/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -83,7 +83,7 @@ lastmod: "2022-02-17"
 - لا يمكن لـ JavaScript في Acrobat الوصول إلى الكائنات داخل صفحة HTML. وبالمثل، لا يمكن لـ JavaScript في HTML الوصول إلى الكائنات داخل ملف PDF.
 - يمكن لـ JavaScript في HTML التلاعب بكائنات مثل النافذة. لا يمكن لـ JavaScript في Acrobat الوصول إلى هذا الكائن بالتحديد ولكن يمكنه التلاعب بكائنات محددة لـ PDF.
 
-يمكنك إضافة JavaScript في مستوى الوثيقة والصفحة باستخدام [Aspose.PDF for .NET](/pdf/net/). لإضافة JavaScript:
+يمكنك إضافة JavaScript في مستوى الوثيقة والصفحة باستخدام [Aspose.PDF for .NET](/pdf/ar/net/). لإضافة JavaScript:
 
 ### إضافة JavaScript إلى إجراء الوثيقة أو الصفحة
 

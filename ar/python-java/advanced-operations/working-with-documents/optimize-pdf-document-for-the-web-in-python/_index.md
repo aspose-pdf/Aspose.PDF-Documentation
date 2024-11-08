@@ -2,7 +2,7 @@
 title: تحسين مستند PDF للويب في بايثون
 type: docs
 weight: 60
-url: ar/python-java/optimize-pdf-document-for-the-web-in-python/
+url: /ar/python-java/optimize-pdf-document-for-the-web-in-python/
 ---
 
 <ins>لتحسين مستند PDF للويب باستخدام **Aspose.PDF Java for Python**، قم ببساطة باستدعاء طريقة **optimize_web** من فئة **Optimize**.

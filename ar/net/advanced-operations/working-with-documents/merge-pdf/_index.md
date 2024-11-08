@@ -3,7 +3,7 @@ title: كيفية دمج ملفات PDF باستخدام C#
 linktitle: دمج ملفات PDF
 type: docs
 weight: 50
-url: ar/net/merge-pdf-documents/
+url: /ar/net/merge-pdf-documents/
 keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
 description: هذه الصفحة تشرح كيفية دمج مستندات PDF في ملف PDF واحد باستخدام C# أو VB.NET.
 lastmod: "2022-02-17"
@@ -81,7 +81,7 @@ sitemap:
 دمج ملفات PDF في C# ليس مهمة سهلة بدون استخدام مكتبة خارجية.
 يوضح هذا المقال كيفية دمج عدة ملفات PDF في مستند PDF واحد باستخدام Aspose.PDF لـ .NET. الأمثلة مكتوبة بلغة C# ولكن يمكن استخدام الواجهة البرمجية في لغات برمجة .NET الأخرى مثل VB.NET. يتم دمج ملفات PDF بحيث يتم ربط الأول بنهاية المستند الآخر.
 
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## دمج ملفات PDF باستخدام C# و DOM
 

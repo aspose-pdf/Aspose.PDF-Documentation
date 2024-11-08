@@ -2,7 +2,7 @@
 title: Custom Report Item Support
 type: docs
 weight: 30
-url: es/reportingservices/custom-report-item-support/
+url: /es/reportingservices/custom-report-item-support/
 lastmod: "2021-06-05"
 ---
 
@@ -14,6 +14,6 @@ En la Especificación RDL para RS2016, RS2017, RS2019, RS2022 y Power BI, casi t
 - Flechas de línea.
 - Nota al pie/Nota al final.
 
-Descubra cómo utilizarlas en el artículo [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/).
+Descubra cómo utilizarlas en el artículo [Expand Report Items Properties](/pdf/es/reportingservices/expand-report-items-properties/).
 
 {{% /alert %}}

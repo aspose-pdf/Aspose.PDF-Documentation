@@ -3,7 +3,7 @@ title: Working with AcroForms in PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ko/php-java/acroforms/
+url: /ko/php-java/acroforms/
 description: Aspose.PDF for PHP via Java를 사용하여 처음부터 양식을 생성하고, PDF 문서의 양식 필드를 채우고, 양식에서 데이터를 추출하고, 기존 양식에서 필드를 추가하거나 제거할 수 있습니다.
 lastmod: "2024-06-05"
 sitemap:
@@ -34,10 +34,10 @@ AcroForms에는 XFA에서 찾을 수 없는 기능이 있으며, 반대로 XFA�
 
 양식 작업의 가능성에 대한 더 자세한 연구를 위해, 다음 섹션의 기사들을 공부하세요:
 
--[Create AcroForm](/pdf/php-java/create-form/) - PHP를 사용하여 라디오 버튼 필드, 텍스트 박스 필드, 캡션 필드를 추가하여 처음부터 양식을 생성합니다.
+-[Create AcroForm](/pdf/ko/php-java/create-form/) - PHP를 사용하여 라디오 버튼 필드, 텍스트 박스 필드, 캡션 필드를 추가하여 처음부터 양식을 생성합니다.
 
--[Fill AcroForm](/pdf/php-java/fill-form/) - 양식 필드를 채우려면 Document 객체의 Form 컬렉션에서 필드를 가져옵니다.
+-[Fill AcroForm](/pdf/ko/php-java/fill-form/) - 양식 필드를 채우려면 Document 객체의 Form 컬렉션에서 필드를 가져옵니다.
 
--[Extract Data AcroForm](/pdf/php-java/extract-form/) - 모든 필드 및 개별 필드에서 값을 가져오는 등.
+-[Extract Data AcroForm](/pdf/ko/php-java/extract-form/) - 모든 필드 및 개별 필드에서 값을 가져오는 등.
 
--[Modifing AcroForm](/pdf/php-java/modifing-form/) - FieldLimit을 설정/제거하고, 기존 양식에서 필드를 제거하며, PHP로 14개의 Core PDF Fonts 외의 폼 필드 폰트를 설정합니다.
+-[Modifing AcroForm](/pdf/ko/php-java/modifing-form/) - FieldLimit을 설정/제거하고, 기존 양식에서 필드를 제거하며, PHP로 14개의 Core PDF Fonts 외의 폼 필드 폰트를 설정합니다.

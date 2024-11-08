@@ -3,7 +3,7 @@ title: 첨부 파일 추출 및 저장
 linktitle: 첨부 파일 추출 및 저장
 type: docs
 weight: 20
-url: ko/net/extract-and-save-an-attachment/
+url: /ko/net/extract-and-save-an-attachment/
 description: Aspose.PDF for .NET은 PDF 문서에서 모든 첨부 파일을 가져올 수 있습니다. 또한 문서에서 개별 첨부 파일을 가져올 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -85,7 +85,7 @@ PDF 파일에서 모든 첨부 파일을 가져오는 방법:
 1. [문서](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션을 순회합니다. [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션에는 모든 첨부 파일이 포함되어 있습니다. 이 컬렉션의 각 요소는 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 객체를 나타냅니다. [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션을 순회하는 각 foreach 루프 반복은 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 객체를 반환합니다.
 다음 코드 조각은 PDF 문서에서 모든 첨부 파일을 가져오는 방법을 보여줍니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.

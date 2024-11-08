@@ -2,7 +2,7 @@
 title: Crear Folleto de PDF
 type: docs
 weight: 80
-url: es/net/make-booklet-of-pdf/
+url: /es/net/make-booklet-of-pdf/
 description: Esta sección explica cómo crear un folleto de PDF con Aspose.PDF Facades usando la clase PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

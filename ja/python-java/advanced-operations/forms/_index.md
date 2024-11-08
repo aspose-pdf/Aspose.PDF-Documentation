@@ -3,7 +3,7 @@ title: Pythonを使用したフォームの操作
 linktitle: PDFドキュメントのフォーム
 type: docs
 weight: 60
-url: ja/python-java/forms/
+url: /ja/python-java/forms/
 lastmod: "2023-05-19"
 description: このセクションには、Python APIを使用してPDFドキュメントのフォームを操作することに関連する記事が含まれています。
 sitemap:

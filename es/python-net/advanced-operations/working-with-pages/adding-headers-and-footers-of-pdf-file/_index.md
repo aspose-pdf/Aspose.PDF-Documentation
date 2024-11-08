@@ -3,7 +3,7 @@ title: Añadir encabezado y pie de página al PDF usando Python
 linktitle: Añadir encabezado y pie de página al PDF
 type: docs
 weight: 50
-url: es/python-net/add-headers-and-footers-of-pdf-file/
+url: /es/python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para Python a través de .NET te permite añadir encabezados y pies de página a tu archivo PDF usando la clase TextStamp.
 lastmod: "2023-04-17"
 sitemap:

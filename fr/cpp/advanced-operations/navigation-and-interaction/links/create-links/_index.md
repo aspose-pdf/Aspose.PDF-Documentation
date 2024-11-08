@@ -3,7 +3,7 @@ title: Créer des liens dans un fichier PDF avec C++
 linktitle: Créer des liens
 type: docs
 weight: 10
-url: fr/cpp/create-links/
+url: /fr/cpp/create-links/
 description: Cette section explique comment créer des liens dans votre document PDF avec C++.
 lastmod: "2021-06-05"
 sitemap:

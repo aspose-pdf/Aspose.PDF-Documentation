@@ -3,7 +3,7 @@ title: Stamping with Aspose.PDF using C#
 linktitle: Stamping
 type: docs
 weight: 120
-url: pt/net/stamping/
+url: /pt/net/stamping/
 description: Esta seção descreve como adicionar carimbos de imagem e carimbos de texto em uma página de PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,8 +86,8 @@ O Carimbo no arquivo PDF fornece informações adicionais para o arquivo PDF, co
 
 Confira as seguintes seções para aprender como adicionar um carimbo com C#:
 
-- [Adicionar carimbos de imagem na página PDF](/pdf/net/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
-- [Adicionar carimbos de texto no arquivo PDF](/pdf/net/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto de contorno como carimbo no arquivo PDF.
+- [Adicionar carimbos de imagem na página PDF](/pdf/pt/net/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
+- [Adicionar carimbos de texto no arquivo PDF](/pdf/pt/net/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto de contorno como carimbo no arquivo PDF.
 
 type: docs
 changefreq: "monthly"

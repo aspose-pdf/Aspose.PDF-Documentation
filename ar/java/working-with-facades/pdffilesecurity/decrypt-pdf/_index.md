@@ -2,7 +2,7 @@
 title: فك تشفير ملف PDF
 type: docs
 weight: 20
-url: ar/java/decrypt-pdf-file/
+url: /ar/java/decrypt-pdf-file/
 description: يشرح هذا الموضوع كيفية فك تشفير ملف PDF باستخدام فئة PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

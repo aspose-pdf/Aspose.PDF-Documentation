@@ -2,7 +2,7 @@
 title: الحصول على معلومات ملف PDF في روبي
 type: docs
 weight: 50
-url: ar/java/get-pdf-file-information-in-ruby/
+url: /ar/java/get-pdf-file-information-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: PDFファイルに円オブジェクトを追加
 linktitle: 円を追加
 type: docs
 weight: 20
-url: ja/cpp/add-circle/
+url: /ja/cpp/add-circle/
 description: この記事では、Aspose.PDF for C++を使用してPDFに円オブジェクトを作成する方法を説明します。
 lastmod: "2021-12-18"
 sitemap:

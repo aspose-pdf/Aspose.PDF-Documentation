@@ -3,7 +3,7 @@ title: C++を使用してPDFファイルから画像を抽出する
 linktitle: 画像を抽出する
 type: docs
 weight: 30
-url: ja/cpp/extract-images-from-pdf-file/
+url: /ja/cpp/extract-images-from-pdf-file/
 description: このセクションでは、C++ライブラリを使用してPDFファイルから画像を抽出する方法を示します。
 lastmod: "2021-12-18"
 ---

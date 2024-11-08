@@ -3,7 +3,7 @@ title: استخراج معلومات الصورة والتوقيع
 linktitle: استخراج معلومات الصورة والتوقيع
 type: docs
 weight: 30
-url: ar/net/extract-image-and-signature-information/
+url: /ar/net/extract-image-and-signature-information/
 description: يمكنك استخراج الصور من حقل التوقيع واستخراج معلومات التوقيع باستخدام فئة SignatureField مع C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "يمكنك استخراج الصور من حقل التوقيع واستخراج معلومات التوقيع باستخدام فئة SignatureField مع C#."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## استخراج الصورة من حقل التوقيع
 

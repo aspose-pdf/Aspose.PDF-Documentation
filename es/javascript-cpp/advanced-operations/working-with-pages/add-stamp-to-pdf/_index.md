@@ -3,7 +3,7 @@ title: Añadir sellos de imagen en PDF usando JavaScript a través de C++
 linktitle: Sellos de imagen en archivo PDF
 type: docs
 weight: 60
-url: es/javascript-cpp/stamping/
+url: /es/javascript-cpp/stamping/
 description: Añada el sello de imagen a su documento PDF usando la función AsposePdfAddStamp con el kit de herramientas JavaScript.
 lastmod: "2023-04-15"
 sitemap:

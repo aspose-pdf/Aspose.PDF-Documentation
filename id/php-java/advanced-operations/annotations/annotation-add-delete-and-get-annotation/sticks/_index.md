@@ -3,7 +3,7 @@ title: Anotasi Lengket PDF
 linktitle: Anotasi Lengket
 type: docs
 weight: 50
-url: id/php-java/sticky-annotations/
+url: /id/php-java/sticky-annotations/
 description: Topik ini tentang anotasi lengket, sebagai contoh kami menunjukkan Anotasi Watermark dalam teks. Ini digunakan untuk merepresentasikan grafik pada halaman. Periksa potongan kode untuk menyelesaikan tugas ini.
 lastmod: "2024-06-24"
 sitemap:

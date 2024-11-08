@@ -2,7 +2,7 @@
 title: Sitefinity PDF Import
 type: docs
 weight: 10
-url: ja/net/sitefinity-pdf-import/
+url: /ja/net/sitefinity-pdf-import/
 description: SitefinityのPDFインポートモジュールのインストールと使用方法を学ぶ
 lastmod: "2021-06-05"
 sitemap:

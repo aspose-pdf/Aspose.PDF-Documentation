@@ -3,7 +3,7 @@ title: Bekerja dengan Metadata File PDF | C#
 linktitle: Metadata File PDF
 type: docs
 weight: 140
-url: id/net/pdf-file-metadata/
+url: /id/net/pdf-file-metadata/
 description: Bagian ini menjelaskan cara mendapatkan informasi file PDF, cara mendapatkan Metadata XMP dari file PDF, mengatur Informasi File PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Bagian ini menjelaskan cara mendapatkan informasi file PDF, cara mendapatkan Metadata XMP dari file PDF, mengatur Informasi File PDF."
 }
 </script>
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Dapatkan Informasi File PDF
 

@@ -3,7 +3,7 @@ title: استخراج الروابط من ملف PDF
 linktitle: استخراج الروابط
 type: docs
 weight: 30
-url: ar/java/extract-links/
+url: /ar/java/extract-links/
 description: استخراج الروابط من PDF باستخدام Java. يشرح هذا الموضوع كيفية استخراج الروابط باستخدام فئة AnnotationSelector.
 lastmod: "2021-06-05"
 sitemap:

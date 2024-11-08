@@ -2,7 +2,7 @@
 title: PDF 파일 변환
 type: docs
 weight: 20
-url: ko/java/convert-pdf-file/
+url: /ko/java/convert-pdf-file/
 description: 이 섹션은 PdfConverter 클래스를 사용하여 Aspose.PDF Facades로 PDF 파일을 변환하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: 루비에서 PDF 파일의 특정 페이지 삭제
 type: docs
 weight: 20
-url: ko/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
+url: /ko/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

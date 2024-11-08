@@ -3,7 +3,7 @@ title: Signets dans PDF en Node.js
 linktitle: Signets dans PDF
 type: docs
 weight: 10
-url: fr/nodejs-cpp/bookmark/
+url: /fr/nodejs-cpp/bookmark/
 description: Vous pouvez ajouter ou supprimer des signets dans un document PDF dans l'environnement Node.js.
 lastmod: "2023-11-16"
 sitemap:

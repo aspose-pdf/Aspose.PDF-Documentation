@@ -3,7 +3,7 @@ title: Rotate PDF Pages Using Python via C++
 linktitle: Rotate PDF Pages
 type: docs
 weight: 20
-url: pt/python-cpp/rotate-pages/
+url: /pt/python-cpp/rotate-pages/
 description: Este tópico descreve como rotacionar a orientação da página em um arquivo PDF existente programaticamente com Python via C++.
 lastmod: "2024-04-17"
 sitemap:

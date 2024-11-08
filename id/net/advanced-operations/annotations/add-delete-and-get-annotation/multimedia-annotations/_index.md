@@ -3,7 +3,7 @@ title: Anotasi Multimedia PDF menggunakan C#
 linktitle: Anotasi Multimedia
 type: docs
 weight: 40
-url: id/net/multimedia-annotation/
+url: /id/net/multimedia-annotation/
 description: Aspose.PDF untuk .NET memungkinkan Anda untuk menambahkan, mendapatkan, dan menghapus anotasi multimedia dari dokumen PDF Anda.
 lastmod: "2022-02-17"
 sitemap:
@@ -99,7 +99,7 @@ Berikut adalah metode/properti dari kelas RichMediaAnnotation yang dapat digunak
 - void Update(): Membuat struktur data anotasi. Metode ini harus dipanggil terakhir.
 - void SetPoster(Stream): Mengatur poster video yaitu gambar yang ditampilkan ketika pemutar tidak aktif
 
-Kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan Anotasi Layar
 
@@ -369,7 +369,7 @@ document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
 document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
 ```
 
-Untuk informasi lebih detail dan kemungkinan fitur ini, lihat juga [Bekerja dengan Formulir](/pdf/net/acroforms/).
+Untuk informasi lebih detail dan kemungkinan fitur ini, lihat juga [Bekerja dengan Formulir](/pdf/id/net/acroforms/).
 
 Dalam dokumen PDF, Anda dapat melihat dan mengelola konten 3D berkualitas tinggi yang dibuat dengan perangkat lunak CAD 3D atau pemodelan 3D dan tertanam dalam dokumen PDF. Dapat memutar elemen 3D ke semua arah seolah-olah Anda sedang memegangnya di tangan.
 

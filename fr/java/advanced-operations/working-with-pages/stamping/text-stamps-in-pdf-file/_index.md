@@ -3,7 +3,7 @@ title: Ajouter des tampons de texte dans un PDF par programmation
 linktitle: Tampons de texte dans un fichier PDF
 type: docs
 weight: 20
-url: fr/java/text-stamps-in-the-pdf-file/
+url: /fr/java/text-stamps-in-the-pdf-file/
 description: Ajouter un tampon de texte à un fichier PDF en utilisant la classe TextStamp avec Java.
 lastmod: "2021-06-05"
 sitemap:

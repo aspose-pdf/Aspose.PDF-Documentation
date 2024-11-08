@@ -3,7 +3,7 @@ title: Converter PDF para Documentos Microsoft Word em Java
 linktitle: Converter PDF para Word
 type: docs
 weight: 10
-url: pt/java/convert-pdf-to-word/
+url: /pt/java/convert-pdf-to-word/
 lastmod: "2021-11-19"
 description: Converta arquivos PDF para o formato DOC e DOCX com facilidade e controle total com o Aspose.PDF para Java. Saiba mais sobre como ajustar a conversão de documentos PDF para Microsoft Word.
 sitemap:

@@ -3,7 +3,7 @@ title: Manipulasi Tabel di PDF yang Ada
 linktitle: Manipulasi Tabel
 type: docs
 weight: 30
-url: id/java/manipulate-tables-in-existing-pdf/
+url: /id/java/manipulate-tables-in-existing-pdf/
 description: Manipulasi tabel dalam file PDF yang ada dan ganti tabel lama dengan yang baru dalam dokumen PDF dengan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: الاندماج
 type: docs
 weight: 100
-url: ar/net/plugins/merger/
+url: /ar/net/plugins/merger/
 description: كيفية دمج ملفات PDF متعددة في ملف واحد باستخدام إضافة دمج Aspose.PDF
 lastmod: "2024-01-24"
 ---

@@ -3,7 +3,7 @@ title: Node.js에서 PDF 첨부 파일 작업하기
 linktitle: 첨부 파일 작업하기
 type: docs
 weight: 120
-url: ko/nodejs-cpp/attachments/
+url: /ko/nodejs-cpp/attachments/
 description: Node.js에서 PDF 첨부 파일의 기본 작업. 예제와 함께하는 가이드.
 lastmod: "2023-11-16"
 sitemap:
@@ -17,4 +17,4 @@ sitemap:
 
 Node.js로 프로그래밍을 통해 PDF에서 첨부 파일을 삭제하는 방법을 배우게 됩니다.
 
-- [기존 PDF에서 첨부 파일 제거하기](/pdf/nodejs-cpp/removing-attachment-from-an-existing-pdf/)
+- [기존 PDF에서 첨부 파일 제거하기](/pdf/ko/nodejs-cpp/removing-attachment-from-an-existing-pdf/)

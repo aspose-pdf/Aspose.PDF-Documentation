@@ -3,7 +3,7 @@ title: Ajouter et Supprimer un Signet en Python
 linktitle: Ajouter et Supprimer un Signet
 type: docs
 weight: 10
-url: fr/python-net/add-and-delete-bookmark/
+url: /fr/python-net/add-and-delete-bookmark/
 description: Vous pouvez ajouter un signet à un document PDF avec Python. Il est possible de supprimer tous les signets ou certains d'entre eux d'un document PDF.
 lastmod: "2023-02-17"
 sitemap:

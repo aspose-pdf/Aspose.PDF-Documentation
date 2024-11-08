@@ -3,7 +3,7 @@ title: Menambahkan Gambar ke PDF menggunakan C++
 linktitle: Menambahkan Gambar
 type: docs
 weight: 10
-url: id/cpp/add-image-to-existing-pdf-file/
+url: /id/cpp/add-image-to-existing-pdf-file/
 description: Bagian ini menjelaskan cara menambahkan gambar ke file PDF yang ada menggunakan pustaka C++.
 lastmod: "2021-12-18"
 ---

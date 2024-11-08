@@ -3,7 +3,7 @@ title: 新機能
 linktitle: 新機能
 type: docs
 weight: 10
-url: ja/nodejs-cpp/whatsnew/
+url: /ja/nodejs-cpp/whatsnew/
 description: このページでは、Aspose.PDF for Node.js via C++の最近のリリースで導入された最も人気のある新機能を紹介します。
 sitemap:
     changefreq: "monthly"

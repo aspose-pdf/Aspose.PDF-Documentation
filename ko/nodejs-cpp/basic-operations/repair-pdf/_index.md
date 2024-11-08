@@ -3,7 +3,7 @@ title: Node.js에서 PDF 복구
 linktitle: PDF 복구
 type: docs
 weight: 10
-url: ko/nodejs-cpp/repair-pdf/
+url: /ko/nodejs-cpp/repair-pdf/
 description: 이 주제는 Node.js 환경에서 PDF를 복구하는 방법을 설명합니다.
 lastmod: "2023-11-16"
 sitemap:

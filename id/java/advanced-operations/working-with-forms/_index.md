@@ -3,7 +3,7 @@ title: Bekerja dengan Formulir
 linktitle: Bekerja dengan Formulir
 type: docs
 weight: 50
-url: id/java/working-with-forms/
+url: /id/java/working-with-forms/
 description: Bagian ini menjelaskan bagaimana bekerja dengan AcroForms dan XFA Forms dalam dokumen PDF Anda dengan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -20,5 +20,5 @@ Bagian ini menjelaskan pendekatan cepat dan sederhana untuk menyelesaikan dokume
 
 Bagian ini juga membahas bagaimana seseorang dapat menggunakan Aspose.PDF untuk Java untuk menemukan dan memetakan bidang yang tersedia dalam PDF yang ada dengan AcroForms. Juga, Anda akan belajar bagaimana bekerja dengan XFA - teknologi lain untuk formulir presentasi berbasis XML.
 
-- [AcroForms](/pdf/java/acroforms/) - buat formulir, isi bidang formulir, ekstrak data dari formulir, modifikasi bidang dalam PDF Anda dengan pustaka Java.
-- [XFA Forms](/pdf/java/xfa-forms/) - isi bidang XFA, konversi XFA, dapatkan properti bidang XFA.
+- [AcroForms](/pdf/id/java/acroforms/) - buat formulir, isi bidang formulir, ekstrak data dari formulir, modifikasi bidang dalam PDF Anda dengan pustaka Java.
+- [XFA Forms](/pdf/id/java/xfa-forms/) - isi bidang XFA, konversi XFA, dapatkan properti bidang XFA.

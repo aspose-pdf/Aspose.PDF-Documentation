@@ -2,7 +2,7 @@
 title: Sitefinity PDF Import
 type: docs
 weight: 10
-url: ko/net/sitefinity-pdf-import/
+url: /ko/net/sitefinity-pdf-import/
 description: Sitefinity용 PDF 가져오기 모듈 설치 및 사용 방법을 알아보세요.
 lastmod: "2021-06-05"
 sitemap:

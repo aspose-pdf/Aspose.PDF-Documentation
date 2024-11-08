@@ -3,7 +3,7 @@ title: Travailler avec des Tableaux dans un PDF
 linktitle: Travailler avec des Tableaux
 type: docs
 weight: 50
-url: fr/java/working-with-tables/
+url: /fr/java/working-with-tables/
 description: Cette section décrit comment ajouter et extraire un tableau, comment manipuler et intégrer un tableau en utilisant la bibliothèque Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -20,7 +20,7 @@ L'une des premières fonctionnalités prises en charge par Aspose.PDF pour Java 
 
 Vous êtes capable de faire ce qui suit :
 
-- [Créer ou Ajouter un Tableau dans un Document PDF existant](/pdf/java/add-table-in-existing-pdf-document/) - créez votre tableau dans un fichier pdf en fusionnant les colonnes ou les lignes en tenant compte des bordures, marges et espacements.
-- [Extraire un Tableau d'un Document PDF existant](/pdf/java/extract-table-from-existing-pdf-document/) - vous pouvez extraire un tableau d'un fichier PDF ou extraire la bordure du tableau en tant qu'image.
-- [Manipuler des Tables dans un PDF existant](/pdf/java/manipulate-tables-in-existing-pdf/) - manipulez les tableaux dans votre PDF en utilisant TableAbsorber.
-- [Supprimer des Tables d'un PDF existant](/pdf/java/remove-tables-from-existing-pdf/) - supprimez un tableau ou plusieurs tableaux d'un document PDF.
+- [Créer ou Ajouter un Tableau dans un Document PDF existant](/pdf/fr/java/add-table-in-existing-pdf-document/) - créez votre tableau dans un fichier pdf en fusionnant les colonnes ou les lignes en tenant compte des bordures, marges et espacements.
+- [Extraire un Tableau d'un Document PDF existant](/pdf/fr/java/extract-table-from-existing-pdf-document/) - vous pouvez extraire un tableau d'un fichier PDF ou extraire la bordure du tableau en tant qu'image.
+- [Manipuler des Tables dans un PDF existant](/pdf/fr/java/manipulate-tables-in-existing-pdf/) - manipulez les tableaux dans votre PDF en utilisant TableAbsorber.
+- [Supprimer des Tables d'un PDF existant](/pdf/fr/java/remove-tables-from-existing-pdf/) - supprimez un tableau ou plusieurs tableaux d'un document PDF.

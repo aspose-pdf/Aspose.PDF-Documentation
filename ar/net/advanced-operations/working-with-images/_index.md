@@ -3,7 +3,7 @@ title: العمل مع الصور في PDF باستخدام C#
 linktitle: العمل مع الصور
 type: docs
 weight: 40
-url: ar/net/working-with-images/
+url: /ar/net/working-with-images/
 description: هذا القسم يصف ميزات العمل مع الصور في ملف PDF باستخدام مكتبة C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -87,17 +87,17 @@ aliases:
 أنت قادر على القيام بما يلي:
 يمكنك القيام بالتالي:
 
-- [إضافة صورة إلى ملف PDF موجود](/pdf/net/add-image-to-existing-pdf-file/) - إضافة صور ومراجع لصورة واحدة في مستند PDF، ثم التحكم في الجودة.
-- [حذف الصور من ملف PDF](/pdf/net/delete-images-from-pdf-file/) - راجع شفرة برمجية لحذف الصور من ملف PDF.
-- [استخراج الصور من ملف PDF](/pdf/net/extract-images-from-pdf-file/) - استخدم مجموعة الصور لاستخراج الصور من ملف PDF.
-- [الحصول على الدقة والأبعاد للصور المضمنة](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - استخدم فئات المشغلين في نطاق Aspose.PDF التي توفر القدرة على الحصول على معلومات الدقة والأبعاد.
-- [العمل مع وضع الصورة](/pdf/net/working-with-image-placement/) - من الممكن الحصول على دقة الصورة وموقعها في مستند PDF.
-- [البحث عن الصور والحصول عليها من مستند PDF](/pdf/net/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة فردية والبحث بين الصور في جميع الصفحات بلغة C#.
-- [البحث والحصول على الصور من مستند PDF](/pdf/net/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة معينة والبحث بين الصور في جميع الصفحات باستخدام C#.
-- [استبدال الصورة في ملف PDF موجود](/pdf/net/replace-image-in-existing-pdf-file/) - تحقق من شفرتنا، فهي تظهر لك كيفية استبدال صورة في ملف PDF.
-- [تحديد حجم الصورة](/pdf/net/set-image-size/) - مكتبة C# تتيح لك تحديد حجم الصورة.
-- [تحديد اسم الخط الافتراضي](/pdf/net/set-default-font-name/) - تحديد اسم الخط الافتراضي لعملية التحويل.
-- [إنشاء صور مصغرة من مستندات PDF](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - المقالة التالية توضح كيفية إنشاء صور مصغرة من مستندات PDF باستخدام أولاً Acrobat SDK ثم Aspose.PDF.
+- [إضافة صورة إلى ملف PDF موجود](/pdf/ar/net/add-image-to-existing-pdf-file/) - إضافة صور ومراجع لصورة واحدة في مستند PDF، ثم التحكم في الجودة.
+- [حذف الصور من ملف PDF](/pdf/ar/net/delete-images-from-pdf-file/) - راجع شفرة برمجية لحذف الصور من ملف PDF.
+- [استخراج الصور من ملف PDF](/pdf/ar/net/extract-images-from-pdf-file/) - استخدم مجموعة الصور لاستخراج الصور من ملف PDF.
+- [الحصول على الدقة والأبعاد للصور المضمنة](/pdf/ar/net/get-resolution-and-dimensions-of-embedded-images/) - استخدم فئات المشغلين في نطاق Aspose.PDF التي توفر القدرة على الحصول على معلومات الدقة والأبعاد.
+- [العمل مع وضع الصورة](/pdf/ar/net/working-with-image-placement/) - من الممكن الحصول على دقة الصورة وموقعها في مستند PDF.
+- [البحث عن الصور والحصول عليها من مستند PDF](/pdf/ar/net/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة فردية والبحث بين الصور في جميع الصفحات بلغة C#.
+- [البحث والحصول على الصور من مستند PDF](/pdf/ar/net/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة معينة والبحث بين الصور في جميع الصفحات باستخدام C#.
+- [استبدال الصورة في ملف PDF موجود](/pdf/ar/net/replace-image-in-existing-pdf-file/) - تحقق من شفرتنا، فهي تظهر لك كيفية استبدال صورة في ملف PDF.
+- [تحديد حجم الصورة](/pdf/ar/net/set-image-size/) - مكتبة C# تتيح لك تحديد حجم الصورة.
+- [تحديد اسم الخط الافتراضي](/pdf/ar/net/set-default-font-name/) - تحديد اسم الخط الافتراضي لعملية التحويل.
+- [إنشاء صور مصغرة من مستندات PDF](/pdf/ar/net/generate-thumbnail-images-from-pdf-documents/) - المقالة التالية توضح كيفية إنشاء صور مصغرة من مستندات PDF باستخدام أولاً Acrobat SDK ثم Aspose.PDF.
 - دعم لصور DICOM - Aspose.PDF لـ .NET يدعم معيار الرسومات الطبية الخاصة بالصور.
 - دعم صور DICOM - يدعم Aspose.PDF لـ .NET المعيار الطبي الخاص لصور الرسومات.
 

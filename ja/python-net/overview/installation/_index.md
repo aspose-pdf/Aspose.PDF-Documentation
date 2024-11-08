@@ -3,7 +3,7 @@ title: Aspose.PDF for Pythonのインストール方法
 linktitle: インストール
 type: docs
 weight: 40
-url: ja/python-net/installation/
+url: /ja/python-net/installation/
 description: このセクションでは、製品の説明とAspose.PDF for Pythonをインストールするための手順を示します。
 lastmod: "2022-12-21"
 sitemap:
@@ -29,7 +29,7 @@ sitemap:
 
 Aspose.PDF for Python を簡単にダウンロードして評価できます。評価版ダウンロードは購入版ダウンロードと同じです。評価版はライセンスを適用するコードを数行追加することでライセンス版になります。
 
-評価用に [Aspose.PDF for Python](https://releases.aspose.com/pdf/pythonnet/) をダウンロードできます。評価版ダウンロードは購入版ダウンロードと同じです。評価版は [ライセンスを申請](/pdf/python-net/licensing/) するためにコードを数行追加するとライセンス版になります。
+評価用に [Aspose.PDF for Python](https://releases.aspose.com/pdf/pythonnet/) をダウンロードできます。評価版ダウンロードは購入版ダウンロードと同じです。評価版は [ライセンスを申請](/pdf/ja/python-net/licensing/) するためにコードを数行追加するとライセンス版になります。
 
 Aspose.PDF の評価版（ライセンスが指定されていない場合）は、製品の完全な機能を提供しますが、2 つの制限があります: 評価透かしが挿入され、コレクションの任意の 4 つの要素のみが表示/編集できます。
 

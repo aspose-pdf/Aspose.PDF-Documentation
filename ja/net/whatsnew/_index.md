@@ -3,7 +3,7 @@ title: 新機能
 linktitle: 新機能
 type: docs
 weight: 10
-url: ja/net/whatsnew/
+url: /ja/net/whatsnew/
 description: このページでは、最近のリリースで導入されたAspose.PDF for .NETの最も人気のある新機能を紹介します。
 sitemap:
     changefreq: "monthly"

@@ -2,7 +2,7 @@
 title: PdfFileEditor Class
 type: docs
 weight: 10
-url: es/net/pdffileeditor-class/
+url: /es/net/pdffileeditor-class/
 description: Esta sección explica cómo trabajar con Aspose.PDF Facades usando la clase PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -23,26 +23,26 @@ Las características que podemos incluir en esta sección son Insertar, Añadir,
 
 Esta sección explora las capacidades de esta clase y explica el propósito de sus métodos.
 
-- [Concatenar documentos PDF](/pdf/net/concatenate-pdf-documents/)
-- [Extraer páginas de PDF](/pdf/net/extract-pdf-pages/)
-- [Insertar páginas de PDF](/pdf/net/insert-pdf-pages/)
-- [Eliminar páginas de PDF](/pdf/net/delete-pdf-pages/)
+- [Concatenar documentos PDF](/pdf/es/net/concatenate-pdf-documents/)
+- [Extraer páginas de PDF](/pdf/es/net/extract-pdf-pages/)
+- [Insertar páginas de PDF](/pdf/es/net/insert-pdf-pages/)
+- [Eliminar páginas de PDF](/pdf/es/net/delete-pdf-pages/)
 
 ## Usando Saltos de Página
 
 El Salto de Página es una característica especial que permite el reflujo del documento.
 
-- [Salto de Página en PDF existente](/pdf/net/page-break-in-existing-pdf/)
+- [Salto de Página en PDF existente](/pdf/es/net/page-break-in-existing-pdf/)
 
 ## Imposición de PDF
 
 La imposición es el proceso de organizar las páginas correctamente antes de imprimir. `PdfFileEditor` proporciona dos métodos para este propósito, es decir, `MakeBooklet` y `MakeNUp`. El método MakeBooklet ayuda a organizar las páginas de manera que sea fácil doblarlas o encuadernarlas después de imprimirlas, sin embargo, el método MakeNUp permite imprimir múltiples páginas en una sola página del archivo PDF.
 
-- [Crear folleto de PDF](/pdf/net/make-booklet-of-pdf/)
-- [Crear NUp de archivos PDF](/pdf/net/make-nup-of-pdf-files/)
+- [Crear folleto de PDF](/pdf/es/net/make-booklet-of-pdf/)
+- [Crear NUp de archivos PDF](/pdf/es/net/make-nup-of-pdf-files/)
 
 ## División
 
 La función de división te permite dividir un archivo PDF existente en diferentes partes. Puedes dividir la parte frontal del archivo PDF o la parte trasera. Como PdfFileEditor proporciona una variedad de métodos para propósitos de división, también puedes dividir un archivo en páginas individuales o en muchos conjuntos de múltiples páginas.
 
-- [Dividir páginas de PDF](/pdf/net/split-pdf-pages/)
+- [Dividir páginas de PDF](/pdf/es/net/split-pdf-pages/)

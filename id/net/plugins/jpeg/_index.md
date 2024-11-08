@@ -2,7 +2,7 @@
 title: JPEG Converter
 type: docs
 weight: 90
-url: id/net/plugins/jpeg/
+url: /id/net/plugins/jpeg/
 description: Cara Mengonversi Halaman PDF ke Gambar JPEG menggunakan Aspose.PDF JPEG Converter
 lastmod: "2024-01-24"
 draft: false

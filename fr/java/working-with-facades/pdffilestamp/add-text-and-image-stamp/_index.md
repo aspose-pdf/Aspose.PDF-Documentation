@@ -2,7 +2,7 @@
 title: Ajouter un tampon de texte et d'image
 type: docs
 weight: 20
-url: fr/java/add-text-and-image-stamp/
+url: /fr/java/add-text-and-image-stamp/
 description: Cette section explique comment ajouter un tampon de texte et d'image avec com.aspose.pdf.facades en utilisant la classe PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

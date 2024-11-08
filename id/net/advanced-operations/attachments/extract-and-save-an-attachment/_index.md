@@ -3,7 +3,7 @@ title: Ekstrak dan Simpan Lampiran
 linktitle: Ekstrak dan Simpan Lampiran
 type: docs
 weight: 20
-url: id/net/extract-and-save-an-attachment/
+url: /id/net/extract-and-save-an-attachment/
 description: Aspose.PDF untuk .NET memungkinkan Anda untuk mendapatkan semua lampiran dari dokumen PDF. Selain itu, Anda juga dapat mendapatkan lampiran individu dari dokumen Anda.
 lastmod: "2022-02-17"
 sitemap:
@@ -84,7 +84,7 @@ Untuk mendapatkan semua lampiran dari file PDF:
 1. Melakukan perulangan melalui koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) pada objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran. Setiap elemen dari koleksi ini mewakili objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Setiap iterasi dari perulangan foreach melalui koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) menghasilkan objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
 Potongan kode berikut menunjukkan bagaimana mendapatkan semua lampiran dari dokumen PDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET

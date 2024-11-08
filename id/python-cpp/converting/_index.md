@@ -3,7 +3,7 @@ title: Konversi Dokumen PDF menggunakan Python
 linktitle: Konversi Dokumen PDF
 type: docs
 weight: 70
-url: id/python-cpp/converting/
+url: /id/python-cpp/converting/
 lastmod: "2023-07-22"
 description: Bagian ini berisi artikel yang berkaitan dengan mengonversi dokumen PDF ke format lain dan sebaliknya menggunakan API Python.
 sitemap:
@@ -21,7 +21,7 @@ Pustaka **Aspose.PDF untuk Python melalui C++** kami memungkinkan Anda untuk ber
 
 Ada banyak format gambar yang perlu dikonversi ke PDF untuk berbagai tujuan. Aspose.PDF memungkinkan format gambar yang paling populer dan sebaliknya.
 
-- [Konversi PDF ke berbagai format Gambar](/pdf/python-cpp/convert-pdf-to-images-format/) - konversi halaman PDF sebagai gambar dalam format JPEG, PNG, dan format lainnya
-- [Konversi Gambar ke PDF](/pdf/python-cpp/convert-image-to-pdf/) - konversi JPEG, PNG, dan format lainnya ke file PDF
-- [Konversi PDF ke format lain](/pdf/python-cpp/convert-pdf-to-other-files/) - konversi halaman PDF ke format lain
-- [Konversi PDF ke Teks](/pdf/python-cpp/convert-pdf-to-txt/) - konversi halaman PDF ke teks
+- [Konversi PDF ke berbagai format Gambar](/pdf/id/python-cpp/convert-pdf-to-images-format/) - konversi halaman PDF sebagai gambar dalam format JPEG, PNG, dan format lainnya
+- [Konversi Gambar ke PDF](/pdf/id/python-cpp/convert-image-to-pdf/) - konversi JPEG, PNG, dan format lainnya ke file PDF
+- [Konversi PDF ke format lain](/pdf/id/python-cpp/convert-pdf-to-other-files/) - konversi halaman PDF ke format lain
+- [Konversi PDF ke Teks](/pdf/id/python-cpp/convert-pdf-to-txt/) - konversi halaman PDF ke teks

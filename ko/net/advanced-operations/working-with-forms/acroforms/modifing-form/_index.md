@@ -3,7 +3,7 @@ title: AcroForm 수정하기
 linktitle: AcroForm 수정하기
 type: docs
 weight: 40
-url: ko/net/modifing-form/
+url: /ko/net/modifing-form/
 description: Aspose.PDF for .NET 라이브러리를 사용하여 PDF 파일의 양식을 수정합니다. 기존 양식에 필드를 추가하거나 제거하고, 필드 한도를 설정하고 등등 할 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## 필드 제한 설정 및 가져오기
 

@@ -3,7 +3,7 @@ title: 概要
 linktitle: 概要
 type: docs
 weight: 20
-url: ja/python-net/overview/
+url: /ja/python-net/overview/
 lastmod: "2022-12-20"
 description: Aspose.PDF for Python via .NETの主要機能とサポートされている形式の概要、ライブラリのインストールとライセンスのマニュアル。
 sitemap:
@@ -31,9 +31,9 @@ Aspose.PDF for Pythonは、以下のような多様な機能をサポートし�
 
 詳細については以下を参照してください：
 
-- [サポートされているファイル形式](/pdf/python-net/supported-file-formats/)
-- [Aspose.PDF の主な機能](/pdf/python-net/key-features/)
-- [システム要件](/pdf/python-net/system-requirements/)
-- [インストール](/pdf/python-net/installation/)
-- [ライセンス](/pdf/python-net/licensing/)
-- [技術サポート](/pdf/python-net/technical-support/)
+- [サポートされているファイル形式](/pdf/ja/python-net/supported-file-formats/)
+- [Aspose.PDF の主な機能](/pdf/ja/python-net/key-features/)
+- [システム要件](/pdf/ja/python-net/system-requirements/)
+- [インストール](/pdf/ja/python-net/installation/)
+- [ライセンス](/pdf/ja/python-net/licensing/)
+- [技術サポート](/pdf/ja/python-net/technical-support/)

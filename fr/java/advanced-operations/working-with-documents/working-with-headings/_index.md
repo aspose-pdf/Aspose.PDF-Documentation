@@ -2,7 +2,7 @@
 title: Travailler avec les En-têtes dans le PDF
 type: docs
 weight: 70
-url: fr/java/working-with-headings/
+url: /fr/java/working-with-headings/
 lastmod: "2021-06-05"
 description: Créez une numérotation dans l'en-tête de votre document PDF avec Java. Aspose.PDF pour Java propose différents types de styles de numérotation.
 sitemap:

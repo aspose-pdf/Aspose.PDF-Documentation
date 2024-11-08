@@ -4,7 +4,7 @@ title: استخراج الروابط من ملف PDF
 linktitle: استخراج الروابط
 type: docs
 weight: 30
-url: ar/cpp/extract-links/
+url: /ar/cpp/extract-links/
 description: استخراج الروابط من PDF باستخدام C#. يشرح هذا الموضوع كيفية استخراج الروابط باستخدام فئة AnnotationSelector.
 lastmod: "2021-06-05"
 sitemap:

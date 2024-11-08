@@ -2,7 +2,7 @@
 title: Descripción del Producto
 type: docs
 weight: 10
-url: es/reportingservices/product-overview/
+url: /es/reportingservices/product-overview/
 lastmod: "2021-06-05"
 ---
 

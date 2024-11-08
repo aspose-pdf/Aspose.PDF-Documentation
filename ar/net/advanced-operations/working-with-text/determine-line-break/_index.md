@@ -3,7 +3,7 @@ title: Determine Line Break
 linktitle: Determine Line Break
 type: docs
 weight: 70
-url: ar/net/determine-line-break/
+url: /ar/net/determine-line-break/
 description: تعرف على كيفية تحديد فاصل السطر لـ TextFragment متعدد الأسطر باستخدام C#
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تتبع كسر الخطوط لجزء نص متعدد الأسطر
 

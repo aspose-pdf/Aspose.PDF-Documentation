@@ -3,7 +3,7 @@ title: 고급 기능
 linktitle: 고급 기능
 type: docs
 weight: 120
-url: ko/java/advanced-features/
+url: /ko/java/advanced-features/
 description: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서에 LaTeX 태그를 사용하는 방법을 보여줍니다.
 lastmod: "2022-01-11"
 sitemap:

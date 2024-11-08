@@ -3,7 +3,7 @@ title: Menentukan Pemutusan Baris di TextFragment
 linktitle: Menentukan Pemutusan Baris
 type: docs
 weight: 70
-url: id/cpp/determine-line-break/
+url: /id/cpp/determine-line-break/
 description: Pelajari lebih lanjut tentang cara menentukan pemutusan baris dari TextFragment multi-baris menggunakan C++
 lastmod: "2021-12-13"
 sitemap:

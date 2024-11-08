@@ -3,7 +3,7 @@ title: Obtener, Actualizar y Expandir un Marcador
 linktitle: Obtener, Actualizar y Expandir un Marcador
 type: docs
 weight: 20
-url: es/cpp/get-update-and-expand-bookmark/
+url: /es/cpp/get-update-and-expand-bookmark/
 description: La biblioteca Aspose.PDF para C++ le permite obtener y actualizar en un archivo PDF con nuestro.
 lastmod: "2022-01-31"
 sitemap:

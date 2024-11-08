@@ -3,7 +3,7 @@ title: 添付ファイルを抽出して保存
 linktitle: 添付ファイルを抽出して保存
 type: docs
 weight: 20
-url: ja/cpp/extract-and-save-an-attachment/
+url: /ja/cpp/extract-and-save-an-attachment/
 description: Aspose.PDF for C++を使用すると、PDFドキュメントからすべての添付ファイルを取得できます。また、ドキュメントから個別の添付ファイルを取得することもできます。
 lastmod: "2022-02-07"
 sitemap:

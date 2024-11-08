@@ -2,7 +2,7 @@
 title: Copiar Campo Interno e Externo
 type: docs
 weight: 40
-url: pt/net/copy-inner-and-outer-field/
+url: /pt/net/copy-inner-and-outer-field/
 description: Esta seção explica como copiar Campo Interno e Externo com Aspose.PDF Facades usando a Classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

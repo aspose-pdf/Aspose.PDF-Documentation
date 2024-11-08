@@ -3,7 +3,7 @@ title: العمل مع الجداول في PDF
 linktitle: العمل مع الجداول
 type: docs
 weight: 50
-url: ar/php-java/working-with-tables/
+url: /ar/php-java/working-with-tables/
 description: يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية التلاعب ودمج جدول باستخدام PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -19,4 +19,4 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/php-java/add-table-in-existing-pdf-document/) - أنشئ جدولك في ملف pdf مع دمج الأعمدة أو الصفوف مع مراعاة الحدود، الهوامش، والحشو.
+- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/ar/php-java/add-table-in-existing-pdf-document/) - أنشئ جدولك في ملف pdf مع دمج الأعمدة أو الصفوف مع مراعاة الحدود، الهوامش، والحشو.

@@ -3,7 +3,7 @@ title: Extraire des images d'un PDF
 linktitle: Extraire des images d'un PDF
 type: docs
 weight: 20
-url: fr/cpp/extract-images-from-the-pdf-file/
+url: /fr/cpp/extract-images-from-the-pdf-file/
 description: Comment extraire une partie de l'image d'un PDF en utilisant Aspose.PDF pour C++.
 lastmod: "2021-06-05"
 sitemap:

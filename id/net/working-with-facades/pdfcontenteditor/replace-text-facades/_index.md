@@ -2,7 +2,7 @@
 title: Replace Text - Facades
 type: docs
 weight: 40
-url: id/net/replace-text-facades/
+url: /id/net/replace-text-facades/
 description: Bagian ini menjelaskan cara bekerja dengan Teks - Facades menggunakan Kelas PdfContentEditor.
 lastmod: "2021-06-24"
 draft: false

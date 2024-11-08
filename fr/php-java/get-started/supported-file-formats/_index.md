@@ -3,7 +3,7 @@ title: Formats de Fichiers Prise en Charge
 linktitle: Formats de Fichiers Prise en Charge
 type: docs
 weight: 70
-url: fr/php-java/supported-file-formats/
+url: /fr/php-java/supported-file-formats/
 description: Cette page montre quels formats de fichiers Aspose.PDF pour PHP via Java peut charger et enregistrer.
 lastmod: "2024-06-05"
 sitemap:

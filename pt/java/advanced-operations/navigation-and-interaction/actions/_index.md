@@ -3,7 +3,7 @@ title: Trabalhando com Ações
 linktitle: Ações
 type: docs
 weight: 20
-url: pt/java/actions/
+url: /pt/java/actions/
 description: Esta seção explica como adicionar ações aos campos de documento e formulário programaticamente com Java. Aprenda como Adicionar, Criar e Obter Hiperlink em um Arquivo PDF.
 lastmod: "2021-06-05"
 sitemap:

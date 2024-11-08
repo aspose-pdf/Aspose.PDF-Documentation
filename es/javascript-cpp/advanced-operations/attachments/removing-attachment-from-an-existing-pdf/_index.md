@@ -3,7 +3,7 @@ title: Eliminando adjuntos de PDF con JavaScript
 linktitle: Eliminando adjuntos de un PDF existente
 type: docs
 weight: 10
-url: es/javascript-cpp/removing-attachment-from-an-existing-pdf/
+url: /es/javascript-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF puede eliminar adjuntos de tus documentos PDF. Usa el kit de herramientas web de JavaScript para eliminar adjuntos en archivos PDF usando Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:

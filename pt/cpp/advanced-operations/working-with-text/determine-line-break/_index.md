@@ -3,7 +3,7 @@ title: Determinar Quebra de Linha em TextFragment
 linktitle: Determinar Quebra de Linha
 type: docs
 weight: 70
-url: pt/cpp/determine-line-break/
+url: /pt/cpp/determine-line-break/
 description: Saiba mais sobre como determinar uma quebra de linha de um TextFragment multi-linha usando C++
 lastmod: "2021-12-13"
 sitemap:

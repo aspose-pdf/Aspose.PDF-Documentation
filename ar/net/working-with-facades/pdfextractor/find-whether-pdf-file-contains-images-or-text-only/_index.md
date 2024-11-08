@@ -3,7 +3,7 @@ title: اكتشف ما إذا كان ملف PDF يحتوي على صور أو ن
 linktitle: تحقق من وجود النص والصور
 type: docs
 weight: 40
-url: ar/net/find-whether-pdf-file-contains-images-or-text-only/
+url: /ar/net/find-whether-pdf-file-contains-images-or-text-only/
 description: يشرح هذا الموضوع كيفية معرفة ما إذا كان ملف PDF يحتوي على صور أو نص فقط باستخدام فئة PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

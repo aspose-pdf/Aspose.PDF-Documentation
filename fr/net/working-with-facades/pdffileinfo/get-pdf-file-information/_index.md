@@ -2,7 +2,7 @@
 title: Obtenir des informations sur le fichier PDF
 type: docs
 weight: 50
-url: fr/net/get-pdf-file-information/
+url: /fr/net/get-pdf-file-information/
 description: Cette section explique comment obtenir des informations sur le fichier PDF avec Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

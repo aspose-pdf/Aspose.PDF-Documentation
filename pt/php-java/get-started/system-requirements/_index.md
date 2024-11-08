@@ -3,7 +3,7 @@ title: Requisitos do Sistema
 linktitle: Requisitos do Sistema
 type: docs
 weight: 30
-url: pt/php-java/system-requirements/
+url: /pt/php-java/system-requirements/
 description: Esta seção lista os sistemas operacionais suportados que um desenvolvedor precisa para trabalhar com sucesso com Aspose.PDF para PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: 既存のPDFファイルにブックマークアクションを追加する
 type: docs
 weight: 20
-url: ja/java/adding-bookmark-actions/
+url: /ja/java/adding-bookmark-actions/
 description: このセクションでは、Aspose.PDF Facadesを使用して既存のPDFファイルにブックマークアクションを追加する方法について説明します。
 lastmod: "2021-06-30"
 sitemap:

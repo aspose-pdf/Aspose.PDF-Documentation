@@ -2,7 +2,7 @@
 title: تعديل التعليقات التوضيحية في ملف PDF الخاص بك
 type: docs
 weight: 50
-url: ar/net/modify-annotations/
+url: /ar/net/modify-annotations/
 description: يوضح هذا القسم كيفية تعديل التعليقات التوضيحية من ملف PDF إلى XFDF باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -53,4 +53,4 @@ sitemap:
 
 ## انظر أيضًا
 
-حاول المقارنة وإيجاد طريقة للعمل مع التعليقات التوضيحية التي تناسبك. لنتعلم قسم [التعليقات التوضيحية على PDF](/pdf/net/annotations/).
+حاول المقارنة وإيجاد طريقة للعمل مع التعليقات التوضيحية التي تناسبك. لنتعلم قسم [التعليقات التوضيحية على PDF](/pdf/ar/net/annotations/).

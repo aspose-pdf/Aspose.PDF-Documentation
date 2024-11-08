@@ -3,7 +3,7 @@ title: إضافة وإزالة إشارة مرجعية
 linktitle: إضافة وإزالة إشارة مرجعية
 type: docs
 weight: 10
-url: ar/cpp/add-and-delete-bookmark/
+url: /ar/cpp/add-and-delete-bookmark/
 description: يشرح هذا الموضوع كيفية إضافة إشارة مرجعية إلى مستند PDF باستخدام مكتبة C++. كما يمكنك حذف جميع الإشارات المرجعية أو إشارة مرجعية معينة من مستند PDF.
 lastmod: "2022-01-31"
 sitemap:

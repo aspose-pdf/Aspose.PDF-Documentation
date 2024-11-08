@@ -2,7 +2,7 @@
 title: PythonでPDFファイルからXMPメタデータを取得する
 type: docs
 weight: 50
-url: ja/python-java/get-xmp-metadata-from-pdf-file-in-python/
+url: /ja/python-java/get-xmp-metadata-from-pdf-file-in-python/
 ---
 
 <ins>**Aspose.PDF Java for Python**を使用してPDFドキュメントからXMPメタデータを取得するには、**GetXMPMetadata**クラスを呼び出します。

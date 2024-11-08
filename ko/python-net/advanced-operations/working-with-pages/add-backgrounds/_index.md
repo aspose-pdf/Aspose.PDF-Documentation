@@ -3,7 +3,7 @@ title: Python을 사용하여 PDF에 배경 추가
 linktitle: 배경 추가
 type: docs
 weight: 20
-url: ko/python-net/add-backgrounds/
+url: /ko/python-net/add-backgrounds/
 description: Python을 사용하여 PDF 파일에 배경 이미지를 추가합니다. BackgroundArtifact 클래스를 사용하세요.
 lastmod: "2023-04-17"
 sitemap:

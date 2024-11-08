@@ -3,7 +3,7 @@ title: SharePointでHTML、テキスト、画像をPDFに変換
 linktitle: PDFに変換
 type: docs
 weight: 30
-url: ja/sharepoint/convert-to-pdf/
+url: /ja/sharepoint/convert-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIを使用すると、HTMLファイル、テキストファイル、画像（JPG、PNG、GIF、TIFF、BMP）をPDF形式に変換できます。
 ---

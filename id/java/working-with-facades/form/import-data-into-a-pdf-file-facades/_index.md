@@ -2,7 +2,7 @@
 title: Impor Data ke dalam File PDF - facades
 type: docs
 weight: 10
-url: id/java/import-data-into-a-pdf-file-facades/
+url: /id/java/import-data-into-a-pdf-file-facades/
 description: Bagian ini menjelaskan cara mengimpor Data ke XML dari File PDF dengan Aspose.PDF Facades menggunakan Kelas Form.
 lastmod: "2021-06-05"
 ---

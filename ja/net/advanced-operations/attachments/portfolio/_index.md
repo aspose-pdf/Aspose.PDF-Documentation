@@ -3,7 +3,7 @@ title: PDFでのポートフォリオの操作
 linktitle: ポートフォリオ
 type: docs
 weight: 40
-url: ja/net/portfolio/
+url: /ja/net/portfolio/
 description: C#を使用してPDFポートフォリオを作成する方法。Microsoft Excelファイル、Wordドキュメント、および画像ファイルを使用してPDFポートフォリオを作成する必要があります。
 lastmod: "2022-02-17"
 sitemap:
@@ -83,7 +83,7 @@ Aspose.PDFを使用してPDFポートフォリオドキュメントを作成で�
 
 以下のコードは、次のポートフォリオを生成します。
 
-以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリで動作します。
+以下のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
 
 ### Aspose.PDFで作成されたPDFポートフォリオ
 

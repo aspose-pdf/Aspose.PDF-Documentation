@@ -3,7 +3,7 @@ title: Mengonversi File PDF ke Format HTML
 linktitle: Mengonversi File PDF ke Format HTML
 type: docs
 weight: 50
-url: id/java/convert-pdf-to-html/
+url: /id/java/convert-pdf-to-html/
 lastmod: "2021-11-19"
 description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF ke format HTML dengan pustaka Java.
 sitemap:

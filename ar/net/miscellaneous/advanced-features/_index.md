@@ -2,7 +2,7 @@
 title: الميزات المتقدمة
 type: docs
 weight: 210
-url: ar/net/advanced-features/
+url: /ar/net/advanced-features/
 ---
 
 ## إرسال ملف Pdf إلى المتصفح للتحميل

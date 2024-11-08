@@ -2,11 +2,11 @@
 title: ASP - JScript via COM Interop
 type: docs
 weight: 40
-url: es/net/asp-jscript-via-com-interop/
+url: /es/net/asp-jscript-via-com-interop/
 ---
 {{% alert color="primary" %}}
 
-Esta es una aplicación ASP simple que muestra cómo agregar una cadena de texto simple a un archivo PDF usando [Aspose.PDF for .NET](/pdf/net/) y JScript a través de COM Interop.
+Esta es una aplicación ASP simple que muestra cómo agregar una cadena de texto simple a un archivo PDF usando [Aspose.PDF for .NET](/pdf/es/net/) y JScript a través de COM Interop.
 
 {{% /alert %}}
 

@@ -2,7 +2,7 @@
 title: Bekerja dengan Item Daftar
 type: docs
 weight: 30
-url: id/java/working-with-list-item/
+url: /id/java/working-with-list-item/
 description: Bagian ini menjelaskan cara bekerja dengan Item Daftar menggunakan com.aspose.pdf.facades dengan Kelas FormEditor.
 lastmod: "2021-06-05"
 draft: false

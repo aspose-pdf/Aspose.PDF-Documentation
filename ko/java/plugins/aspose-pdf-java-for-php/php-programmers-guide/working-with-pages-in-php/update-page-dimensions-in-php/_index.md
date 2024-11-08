@@ -2,7 +2,7 @@
 title: PHP에서 페이지 크기 업데이트
 type: docs
 weight: 90
-url: ko/java/update-page-dimensions-in-php/
+url: /ko/java/update-page-dimensions-in-php/
 lastmod: "2021-06-05"
 ---
 

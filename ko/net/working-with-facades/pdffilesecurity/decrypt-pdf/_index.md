@@ -2,7 +2,7 @@
 title: Decrypt PDF File
 type: docs
 weight: 20
-url: ko/net/decrypt-pdf-file/
+url: /ko/net/decrypt-pdf-file/
 description: 이 주제는 PdfFileSecurity 클래스를 사용하여 PDF 파일을 해독하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

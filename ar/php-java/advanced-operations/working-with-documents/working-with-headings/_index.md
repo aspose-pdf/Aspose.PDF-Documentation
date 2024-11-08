@@ -2,7 +2,7 @@
 title: العمل مع العناوين في PDF
 type: docs
 weight: 70
-url: ar/php-java/working-with-headings/
+url: /ar/php-java/working-with-headings/
 lastmod: "2024-06-05"
 description: إنشاء ترقيم في العنوان لمستند PDF الخاص بك باستخدام PHP. يوفر Aspose.PDF for PHP via Java أنماط ترقيم مختلفة.
 sitemap:

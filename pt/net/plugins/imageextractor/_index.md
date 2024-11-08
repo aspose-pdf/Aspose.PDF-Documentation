@@ -2,7 +2,7 @@
 title: Extrator de Imagens
 type: docs
 weight: 80
-url: pt/net/plugins/imageextractor/
+url: /pt/net/plugins/imageextractor/
 description: Extração de Imagens de PDFs de forma fácil com o Plugin ImageExtractor
 lastmod: "2024-01-24"
 draft: false

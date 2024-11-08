@@ -3,7 +3,7 @@ title: PDFファイルからリンクを抽出する
 linktitle: リンクを抽出する
 type: docs
 weight: 30
-url: ja/cpp/extract-links/
+url: /ja/cpp/extract-links/
 description: C#を使用してPDFからリンクを抽出します。このトピックでは、AnnotationSelectorクラスを使用してリンクを抽出する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

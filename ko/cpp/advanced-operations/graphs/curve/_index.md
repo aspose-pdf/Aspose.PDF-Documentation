@@ -3,7 +3,7 @@ title: PDF 파일에 곡선 객체 추가
 linktitle: 곡선 추가
 type: docs
 weight: 30
-url: ko/cpp/add-curve/
+url: /ko/cpp/add-curve/
 description: 이 문서는 Aspose.PDF for C++를 사용하여 PDF에 곡선 객체를 생성하는 방법을 설명합니다.
 lastmod: "2021-12-18"
 sitemap:

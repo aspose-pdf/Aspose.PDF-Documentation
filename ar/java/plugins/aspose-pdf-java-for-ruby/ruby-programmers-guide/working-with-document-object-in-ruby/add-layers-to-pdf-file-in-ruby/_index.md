@@ -2,7 +2,7 @@
 title: إضافة طبقات إلى ملف PDF في روبي
 type: docs
 weight: 20
-url: ar/java/add-layers-to-pdf-file-in-ruby/
+url: /ar/java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: PDFからテキストを抽出する
 linktitle: PDFからテキストを抽出する
 type: docs
 weight: 10
-url: ja/cpp/extract-text-from-pdf/
+url: /ja/cpp/extract-text-from-pdf/
 description: Aspose.PDFは、さまざまな種類の情報を抽出することができます。このセクションには、C++でAspose.PDFを使用してPDFドキュメントからテキストを抽出する方法に関する記事が含まれています。
 lastmod: "2021-06-05"
 sitemap:
@@ -17,5 +17,5 @@ PDFファイルは、異なるプラットフォーム間や同じソフトウ�
 
 ## このセクションの記事
 
-- [PDFからテキストを抽出する](/pdf/cpp/extract-text-from-all-pdf/)
-- [PDFから段落を抽出する](/pdf/cpp/extract-paragraph-from-pdf/)
+- [PDFからテキストを抽出する](/pdf/ja/cpp/extract-text-from-all-pdf/)
+- [PDFから段落を抽出する](/pdf/ja/cpp/extract-paragraph-from-pdf/)

@@ -2,7 +2,7 @@
 title: Page Break in existing PDF
 type: docs
 weight: 30
-url: id/net/page-break-in-existing-pdf/
+url: /id/net/page-break-in-existing-pdf/
 description: Bagian ini menjelaskan cara memecah halaman dalam PDF yang ada menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

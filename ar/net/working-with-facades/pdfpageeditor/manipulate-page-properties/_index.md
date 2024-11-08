@@ -2,7 +2,7 @@
 title: التلاعب بخصائص الصفحة
 type: docs
 weight: 80
-url: ar/net/manipulate-page-properties/
+url: /ar/net/manipulate-page-properties/
 description: يشرح هذا القسم كيفية التلاعب بخصائص الصفحة باستخدام Aspose.PDF Facades باستخدام فئة PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false

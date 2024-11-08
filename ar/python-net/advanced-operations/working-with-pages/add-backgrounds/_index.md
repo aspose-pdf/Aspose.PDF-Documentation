@@ -3,7 +3,7 @@ title: إضافة خلفية إلى PDF باستخدام Python
 linktitle: إضافة خلفيات
 type: docs
 weight: 20
-url: ar/python-net/add-backgrounds/
+url: /ar/python-net/add-backgrounds/
 description: إضافة صورة خلفية إلى ملف PDF الخاص بك باستخدام Python. استخدم فئة BackgroundArtifact.
 lastmod: "2023-04-17"
 sitemap:

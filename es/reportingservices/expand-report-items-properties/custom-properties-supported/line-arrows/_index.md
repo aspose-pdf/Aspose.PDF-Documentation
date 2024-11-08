@@ -2,7 +2,7 @@
 title: Flechas de Línea
 type: docs
 weight: 20
-url: es/reportingservices/line-arrows/
+url: /es/reportingservices/line-arrows/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: 構造要素のプロパティの設定
 linktitle: 構造要素のプロパティの設定
 type: docs
 weight: 30
-url: ja/net/setting-structure-elements-properties/
+url: /ja/net/setting-structure-elements-properties/
 description: Aspose.PDF for .NETを使用してPDF文書の異なる構造要素のプロパティを設定することができます。
 lastmod: "2022-02-17"
 sitemap:

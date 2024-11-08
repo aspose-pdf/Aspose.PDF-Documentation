@@ -3,7 +3,7 @@ title: Pythonを使用してPDFをC++経由でマージする方法
 linktitle: PDFファイルをマージする
 type: docs
 weight: 10
-url: ja/python-cpp/merge-pdf-documents/
+url: /ja/python-cpp/merge-pdf-documents/
 keywords: "複数のPDFを単一のPDFにマージするPython, 複数のPDFを1つに結合するPython, 複数のPDFを1つにまとめるPython"
 description: このページでは、Pythonを使用してPDFドキュメントを1つのPDFファイルにマージする方法を説明します。
 lastmod: "2024-04-14"

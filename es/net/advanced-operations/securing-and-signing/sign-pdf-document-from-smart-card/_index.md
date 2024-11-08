@@ -3,7 +3,7 @@ title: Cómo agregar una firma de tarjeta inteligente a un PDF
 linktitle: Firma de PDF con tarjeta inteligente
 type: docs
 weight: 40
-url: es/net/sign-pdf-document-from-smart-card/
+url: /es/net/sign-pdf-document-from-smart-card/
 description: Aspose.PDF para .NET te permite firmar documentos PDF desde una tarjeta inteligente utilizando el campo de firma.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Aspose.PDF para .NET ofrece la funcionalidad de agregar firmas digitales desde una ubicación de almacén de claves. Puedes aplicar la firma aceptando el certificado proporcionado por el almacén de certificados, tarjeta inteligente o [tarjeta PIV](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) conectada al sistema en tiempo de ejecución.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 A continuación se muestran los fragmentos de código para firmar un documento PDF desde una tarjeta inteligente:
 

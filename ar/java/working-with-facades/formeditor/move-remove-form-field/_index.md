@@ -2,7 +2,7 @@
 title: نقل وإزالة حقل النموذج
 type: docs
 weight: 50
-url: ar/java/move-remove-form-field/
+url: /ar/java/move-remove-form-field/
 description: يشرح هذا القسم كيفية نقل وإزالة حقول النموذج باستخدام فئة FormEditor.
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: PDFファイルのパスワードを変更する
 type: docs
 weight: 40
-url: ja/net/change-password/
+url: /ja/net/change-password/
 description: このトピックでは、PdfFileSecurityクラスを使用してPDFファイルのパスワードを変更する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

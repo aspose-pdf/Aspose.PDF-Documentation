@@ -2,7 +2,7 @@
 title: 파이썬에서 기존 PDF에 목차 추가
 type: docs
 weight: 20
-url: ko/python-java/add-toc-to-existing-pdf-in-python/
+url: /ko/python-java/add-toc-to-existing-pdf-in-python/
 ---
 
 **Aspose.PDF Java for Python**을 사용하여 Pdf 문서에 목차를 추가하려면, **AddToc** 클래스를 호출하십시오.

@@ -2,7 +2,7 @@
 title: Setel Preferensi Penampil PDF
 type: docs
 weight: 60
-url: id/net/set-viewer-preference-of-an-existing-pdf-file/
+url: /id/net/set-viewer-preference-of-an-existing-pdf-file/
 description: Bagian ini menunjukkan cara menyetel preferensi penampil dari file PDF yang ada menggunakan Kelas PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

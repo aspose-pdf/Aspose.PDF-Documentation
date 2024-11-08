@@ -2,7 +2,7 @@
 title: PDF 양식 필드 추가
 type: docs
 weight: 10
-url: ko/net/add-form-fields/
+url: /ko/net/add-form-fields/
 description: 이 주제는 FormEditor 클래스를 사용하여 Aspose.PDF Facades로 양식 필드를 작업하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

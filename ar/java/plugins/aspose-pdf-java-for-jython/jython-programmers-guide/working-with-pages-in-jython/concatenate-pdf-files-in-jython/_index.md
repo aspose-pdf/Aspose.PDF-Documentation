@@ -2,7 +2,7 @@
 title: دمج ملفات PDF في Jython
 type: docs
 weight: 10
-url: ar/java/concatenate-pdf-files-in-jython/
+url: /ar/java/concatenate-pdf-files-in-jython/
 lastmod: "2021-06-05"
 ---
 

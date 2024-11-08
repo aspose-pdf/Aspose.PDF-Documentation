@@ -3,7 +3,7 @@ title:  Add, Delete dan Dapatkan Anotasi menggunakan Aspose.PDF untuk C++
 type: docs
 linktitle: Add, Delete dan Dapatkan Anotasi
 weight: 20
-url: id/cpp/add-delete-and-get-annotation/
+url: /id/cpp/add-delete-and-get-annotation/
 description: Dengan Aspose.PDF untuk C++ Anda dapat menambah, menghapus, dan mendapatkan anotasi dari file PDF Anda. Periksa semua daftar anotasi untuk menyelesaikan tugas Anda.
 lastmod: "2021-11-24"
 sitemap:
@@ -17,12 +17,12 @@ Ini adalah objek tambahan yang Anda tambahkan ke file Anda untuk memperluas kont
 
 Kami telah menggabungkan berbagai jenis anotasi yang tersedia untuk pustaka Aspose.PDF untuk C++ ke dalam kelompok:
 
-- [Anotasi Teks PDF](/pdf/cpp/text-annotation/)
-- [Anotasi Sorotan PDF](/pdf/cpp/highlights-annotation/)
-- [Anotasi Gambar PDF](/pdf/cpp/figures-annotation/)
+- [Anotasi Teks PDF](/pdf/id/cpp/text-annotation/)
+- [Anotasi Sorotan PDF](/pdf/id/cpp/highlights-annotation/)
+- [Anotasi Gambar PDF](/pdf/id/cpp/figures-annotation/)
 
-- [Anotasi Multimedia](/pdf/cpp/multimedia-annotation/)
+- [Anotasi Multimedia](/pdf/id/cpp/multimedia-annotation/)
 ```
-- [Ekstra Anotasi](/pdf/cpp/extra-annotations/)
-- [Anotasi Lengket](/pdf/cpp/sticky-annotations/)
+- [Ekstra Anotasi](/pdf/id/cpp/extra-annotations/)
+- [Anotasi Lengket](/pdf/id/cpp/sticky-annotations/)
 ```

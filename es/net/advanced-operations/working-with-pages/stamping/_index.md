@@ -3,7 +3,7 @@ title: Stamping with Aspose.PDF using C#
 linktitle: Stamping
 type: docs
 weight: 120
-url: es/net/stamping/
+url: /es/net/stamping/
 description: Esta sección describe cómo agregar sellos de imagen y sellos de texto en una página PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,8 +86,8 @@ El Sello en el archivo PDF proporciona información adicional para el archivo PD
 
 Consulte las siguientes secciones para aprender cómo agregar un sello con C#:
 
-- [Agregar sellos de imagen en la página PDF](/pdf/net/image-stamps-in-pdf-page/) - agregar sello de imagen, controlar la calidad de la imagen, sello de imagen como fondo de su archivo PDF.
-- [Agregar sellos de texto en el archivo PDF](/pdf/net/text-stamps-in-the-pdf-file/) - agregar sello de texto, definir alineación para el objeto TextStamp, llenar el texto de trazo como sello en el archivo PDF.
+- [Agregar sellos de imagen en la página PDF](/pdf/es/net/image-stamps-in-pdf-page/) - agregar sello de imagen, controlar la calidad de la imagen, sello de imagen como fondo de su archivo PDF.
+- [Agregar sellos de texto en el archivo PDF](/pdf/es/net/text-stamps-in-the-pdf-file/) - agregar sello de texto, definir alineación para el objeto TextStamp, llenar el texto de trazo como sello en el archivo PDF.
 
 <script type="application/ld+json">
 {

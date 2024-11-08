@@ -3,7 +3,7 @@ title: Travailler avec les métadonnées de fichiers PDF | C#
 linktitle: Métadonnées de fichiers PDF
 type: docs
 weight: 140
-url: fr/net/pdf-file-metadata/
+url: /fr/net/pdf-file-metadata/
 description: Cette section explique comment obtenir les informations d'un fichier PDF, comment obtenir les métadonnées XMP d'un fichier PDF, définir les informations d'un fichier PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Cette section explique comment obtenir les informations d'un fichier PDF, comment obtenir les métadonnées XMP d'un fichier PDF, définir les informations d'un fichier PDF."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Obtenir les informations du fichier PDF
 

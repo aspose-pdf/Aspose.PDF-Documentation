@@ -3,7 +3,7 @@ title: Работа с ZUGFeRD
 linktitle: Работа с ZUGFeRD
 type: docs
 weight: 90
-url: ru/java/working-with-zugferd/
+url: /ru/java/working-with-zugferd/
 description: Узнайте, как создавать PDF-счета, соответствующие стандарту ZUGFeRD, с использованием Aspose.PDF для Java
 lastmod: "2024-01-17"
 sitemap:
@@ -28,9 +28,9 @@ ZUGFeRD — это немецкий стандарт для электронно
 ZUGFeRD предоставляет пользователям множество преимуществ и экономию средств, таких как более быстрое обработка, меньше ошибок, лучший денежный поток и меньшее воздействие на окружающую среду.
 
 
-* [Создание соответствующего PDF/3-A и прикрепление счета ZUGFeRD на Java](/pdf/java/attach-zugferd/)
+* [Создание соответствующего PDF/3-A и прикрепление счета ZUGFeRD на Java](/pdf/ru/java/attach-zugferd/)
 
 Смотрите также:
 
-* [Создание соответствующего PDF/3-A и прикрепление счета ZUGFeRD в .NET](/pdf/net/attach-zugferd/)
-* [Создание соответствующего PDF/3-A и прикрепление счета ZUGFeRD на Python](/pdf/python-net/attach-zugferd/)
+* [Создание соответствующего PDF/3-A и прикрепление счета ZUGFeRD в .NET](/pdf/ru/net/attach-zugferd/)
+* [Создание соответствующего PDF/3-A и прикрепление счета ZUGFeRD на Python](/pdf/ru/python-net/attach-zugferd/)

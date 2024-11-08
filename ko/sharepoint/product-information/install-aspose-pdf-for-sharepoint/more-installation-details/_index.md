@@ -2,7 +2,7 @@
 title: 추가 설치 세부사항
 type: docs
 weight: 30
-url: ko/sharepoint/more-installation-details/
+url: /ko/sharepoint/more-installation-details/
 lastmod: "2020-12-16"
 description: PDF SharePoint API의 설치에 대한 추가 정보로 사이트 컬렉션에서 배포, 활성화 및 비활성화하는 방법을 설명합니다.
 ---

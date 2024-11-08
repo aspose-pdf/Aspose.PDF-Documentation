@@ -3,7 +3,7 @@ title: PDF에서 Python을 사용한 내비게이션 및 상호작용
 linktitle: 내비게이션 및 상호작용
 type: docs
 weight: 90
-url: ko/python-net/navigation-and-interaction/
+url: /ko/python-net/navigation-and-interaction/
 description: 이 섹션은 Python 라이브러리를 사용하여 링크, 액션 및 북마크 작업의 기능을 설명합니다.
 lastmod: "2023-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 
 
-- [북마크](/pdf/python-net/bookmarks/)- 대규모 출판물은 일반적으로 북마크 창에서 쉽게 보고 선택할 수 있는 북마크 구조를 포함하여, 북마크를 클릭하면 해당 페이지나 장으로 이동할 수 있습니다. 북마크 창은 콘텐츠 인식 요소이며, 열린 PDF 문서에 북마크 구조가 포함된 경우에만 사이드바에 표시됩니다.
+- [북마크](/pdf/ko/python-net/bookmarks/)- 대규모 출판물은 일반적으로 북마크 창에서 쉽게 보고 선택할 수 있는 북마크 구조를 포함하여, 북마크를 클릭하면 해당 페이지나 장으로 이동할 수 있습니다. 북마크 창은 콘텐츠 인식 요소이며, 열린 PDF 문서에 북마크 구조가 포함된 경우에만 사이드바에 표시됩니다.
 
 <script type="application/ld+json">
 {

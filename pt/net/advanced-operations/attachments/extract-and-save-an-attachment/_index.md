@@ -3,7 +3,7 @@ title: Extrair e Salvar um Anexo
 linktitle: Extrair e Salvar um Anexo
 type: docs
 weight: 20
-url: pt/net/extract-and-save-an-attachment/
+url: /pt/net/extract-and-save-an-attachment/
 description: Aspose.PDF para .NET permite que você obtenha todos os anexos de um documento PDF. Além disso, você pode obter um anexo individual do seu documento.
 lastmod: "2022-02-17"
 sitemap:
@@ -85,7 +85,7 @@ Para obter todos os anexos de um arquivo PDF:
 1. Percorra a coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). A coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contém todos os anexos. Cada elemento desta coleção representa um objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Cada iteração do loop foreach pela coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) retorna um objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
 Os seguintes trechos de código mostram como obter todos os anexos de um documento PDF.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET

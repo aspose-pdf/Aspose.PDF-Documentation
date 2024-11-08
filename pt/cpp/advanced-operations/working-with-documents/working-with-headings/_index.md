@@ -2,7 +2,7 @@
 title: Trabalhando com Cabeçalhos em PDF
 type: docs
 weight: 90
-url: pt/cpp/working-with-headings/
+url: /pt/cpp/working-with-headings/
 lastmod: "2021-11-11"
 description: Crie numeração no cabeçalho do seu documento PDF com C++. Aspose.PDF para C++ mostra diferentes tipos de estilos de numeração.
 sitemap:
@@ -16,7 +16,7 @@ Qualquer texto em um documento começa com um cabeçalho. Os cabeçalhos são um
 Os cabeçalhos ajudam a chamar a atenção para o texto e ajudam os usuários a encontrar a informação de que precisam no documento, melhorando a legibilidade e a percepção visual. Usando estilos de cabeçalho, você também pode criar rapidamente um índice, alterar a estrutura do documento.
 Então, vamos ver como trabalhar com cabeçalhos usando a biblioteca Aspose.PDF para C++.
 
-[Aspose.PDF para C++](/pdf/cpp/) oferece muitos estilos de numeração pré-definidos. Estas estilos de numeração pré-definidos são armazenados em uma enumeração, NumberingStyle. Os valores pré-definidos da enumeração NumberingStyle e suas descrições são fornecidos abaixo:
+[Aspose.PDF para C++](/pdf/pt/cpp/) oferece muitos estilos de numeração pré-definidos. Estas estilos de numeração pré-definidos são armazenados em uma enumeração, NumberingStyle. Os valores pré-definidos da enumeração NumberingStyle e suas descrições são fornecidos abaixo:
 
 |**Tipos de Cabeçalho**|**Descrição**|
 | :- | :- |

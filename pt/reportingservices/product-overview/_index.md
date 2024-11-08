@@ -2,7 +2,7 @@
 title: Visão Geral do Produto
 type: docs
 weight: 10
-url: pt/reportingservices/product-overview/
+url: /pt/reportingservices/product-overview/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: تنسيقات الملفات المدعومة
 linktitle: تنسيقات الملفات المدعومة
 type: docs
 weight: 70
-url: ar/php-java/supported-file-formats/
+url: /ar/php-java/supported-file-formats/
 description: توضح هذه الصفحة التنسيقات التي يمكن لـ Aspose.PDF for PHP عبر Java تحميلها وحفظها.
 lastmod: "2024-06-05"
 sitemap:

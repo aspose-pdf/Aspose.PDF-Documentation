@@ -3,7 +3,7 @@ title: Создание PDF/3-A совместимого PDF и прикрепл
 linktitle: Прикрепление ZUGFeRD к PDF
 type: docs
 weight: 10
-url: ru/net/attach-zugferd/
+url: /ru/net/attach-zugferd/
 description: Узнайте, как генерировать документ PDF с ZUGFeRD в Aspose.PDF для .NET
 lastmod: "2023-11-22"
 sitemap:
@@ -13,7 +13,7 @@ sitemap:
 
 ## Прикрепление ZUGFeRD к PDF
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Мы рекомендуем следовать следующим шагам для прикрепления ZUGFeRD к PDF:
 

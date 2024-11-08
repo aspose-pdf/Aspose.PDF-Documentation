@@ -3,7 +3,7 @@ title: إضافة كائن منحنى إلى ملف PDF
 linktitle: إضافة منحنى
 type: docs
 weight: 30
-url: ar/cpp/add-curve/
+url: /ar/cpp/add-curve/
 description: تشرح هذه المقالة كيفية إنشاء كائن منحنى إلى ملف PDF الخاص بك باستخدام Aspose.PDF for C++.
 lastmod: "2021-12-18"
 sitemap:

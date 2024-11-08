@@ -2,7 +2,7 @@
 title: مظهر الحقل والسمات
 type: docs
 weight: 20
-url: ar/net/changing-field-appearance-and-attributes/
+url: /ar/net/changing-field-appearance-and-attributes/
 description: يشرح هذا القسم كيفية تغيير مظهر وسمات الحقول باستخدام فئة FormEditor.
 lastmod: "2021-06-05"
 draft: false

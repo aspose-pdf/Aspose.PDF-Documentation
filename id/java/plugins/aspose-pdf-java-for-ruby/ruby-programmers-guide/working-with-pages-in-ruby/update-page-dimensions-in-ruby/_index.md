@@ -2,7 +2,7 @@
 title: Memperbarui Dimensi Halaman dalam Ruby
 type: docs
 weight: 90
-url: id/java/update-page-dimensions-in-ruby/
+url: /id/java/update-page-dimensions-in-ruby/
 lastmod: "2021-06-05"
 ---
 

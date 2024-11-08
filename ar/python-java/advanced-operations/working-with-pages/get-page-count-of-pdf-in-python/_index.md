@@ -2,7 +2,7 @@
 title: الحصول على عدد صفحات PDF في بايثون
 type: docs
 weight: 40
-url: ar/python-java/get-page-count-of-pdf-in-python/
+url: /ar/python-java/get-page-count-of-pdf-in-python/
 ---
 
 <ins>للحصول على عدد صفحات مستند Pdf باستخدام **Aspose.PDF Java for Python**، قم فقط باستدعاء فئة **GetNumberOfPages**.

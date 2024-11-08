@@ -3,7 +3,7 @@ title: 주석을 XFDF 형식으로 가져오기 및 내보내기
 linktitle: 주석을 XFDF 형식으로 가져오기 및 내보내기
 type: docs
 weight: 40
-url: ko/java/import-export-xfdf/
+url: /ko/java/import-export-xfdf/
 description: Aspose.PDF for Java 라이브러리를 사용하여 XFDF 형식으로 주석을 가져오고 내보낼 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

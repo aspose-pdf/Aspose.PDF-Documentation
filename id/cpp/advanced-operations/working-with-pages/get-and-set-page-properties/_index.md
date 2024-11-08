@@ -2,7 +2,7 @@
 title: Dapatkan dan Atur Properti Halaman
 type: docs
 weight: 20
-url: id/cpp/get-and-set-page-properties/
+url: /id/cpp/get-and-set-page-properties/
 description: Anda dapat mendapatkan dan mengatur properti halaman dari file PDF Anda menggunakan pustaka C++.
 lastmod: "2021-12-09"
 sitemap:

@@ -3,7 +3,7 @@ title: Extraire des polices d'un PDF
 linktitle: Extraire des polices
 type: docs
 weight: 30
-url: fr/php-java/extract-fonts-from-pdf/
+url: /fr/php-java/extract-fonts-from-pdf/
 description: Comment extraire des polices d'un PDF en utilisant Aspose.PDF pour PHP
 lastmod: "2024-05-20"
 sitemap:

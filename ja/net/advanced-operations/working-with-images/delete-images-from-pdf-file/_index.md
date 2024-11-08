@@ -3,7 +3,7 @@ title: PDFファイルから画像を削除
 linktitle: 画像の削除
 type: docs
 weight: 20
-url: ja/net/delete-images-from-pdf-file/
+url: /ja/net/delete-images-from-pdf-file/
 description: このセクションでは、Aspose.PDF for .NETを使用してPDFファイルから画像を削除する方法について説明します。
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 PDFファイルから画像を削除するには：
 

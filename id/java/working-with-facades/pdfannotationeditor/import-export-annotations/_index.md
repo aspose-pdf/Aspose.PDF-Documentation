@@ -2,7 +2,7 @@
 title: Impor dan Ekspor Anotasi ke format XFDF menggunakan com.aspose.pdf.facades
 type: docs
 weight: 20
-url: id/java/import-export-annotations/
+url: /id/java/import-export-annotations/
 description: Bagian ini menjelaskan cara mengekspor dan mengimpor anotasi dari file PDF ke XFDF dengan Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:

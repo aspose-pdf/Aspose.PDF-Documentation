@@ -3,7 +3,7 @@ title: システム要件
 linktitle: システム要件
 type: docs
 weight: 30
-url: ja/java/system-requirements/
+url: /ja/java/system-requirements/
 description: このセクションでは、Aspose.PDF for Javaを使用して作業するために必要なサポートされているオペレーティングシステムを一覧表示します。
 lastmod: "2021-06-05"
 sitemap:

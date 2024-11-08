@@ -3,7 +3,7 @@ title: Mengatur warna latar belakang untuk PDF dengan JavaScript melalui C++
 linktitle: Mengatur warna latar belakang
 type: docs
 weight: 80
-url: id/javascript-cpp/set-background-color/
+url: /id/javascript-cpp/set-background-color/
 description: Mengatur warna latar belakang untuk file PDF Anda dengan JavaScript melalui C++.
 lastmod: "2023-02-17"
 sitemap:

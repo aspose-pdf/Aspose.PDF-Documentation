@@ -3,7 +3,7 @@ title: JavaScript経由でC++を使用したPDFファイルメタデータの操
 linktitle: PDFファイルメタデータ
 type: docs
 weight: 130
-url: ja/javascript-cpp/pdf-file-metadata/
+url: /ja/javascript-cpp/pdf-file-metadata/
 description: このセクションでは、PDFファイル情報の取得方法、PDFファイルからのメタデータの取得方法、PDFファイル情報の設定方法について説明します。
 lastmod: "2023-02-17"
 sitemap:

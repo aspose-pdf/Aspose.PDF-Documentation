@@ -2,7 +2,7 @@
 title: PDFファイル内のテキストを置換
 type: docs
 weight: 40
-url: ja/java/replace-text/
+url: /ja/java/replace-text/
 description: このセクションでは、PDFで人気の操作を行うためのツールセットであるAspose.PDF Facadesを使用してテキストを置換する方法を説明します。
 lastmod: "2021-06-24"
 sitemap:

@@ -3,7 +3,7 @@ title: دمج PDF باستخدام C++
 linktitle: دمج ملفات PDF
 type: docs
 weight: 50
-url: ar/cpp/merge-pdf-documents/
+url: /ar/cpp/merge-pdf-documents/
 description: توضح هذه الصفحة كيفية دمج مستندات PDF في ملف PDF واحد باستخدام C++.
 lastmod: "2021-11-11"
 sitemap:

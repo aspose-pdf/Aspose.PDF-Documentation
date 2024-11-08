@@ -3,7 +3,7 @@ title: PDF/3-A準拠のPDFを作成し、ZUGFeRD請求書をPythonで添付す�
 linktitle: ZUGFeRDをPDFに添付
 type: docs
 weight: 10
-url: ja/python-net/attach-zugferd/
+url: /ja/python-net/attach-zugferd/
 description: Aspose.PDF for Python via .NETでZUGFeRDを使用してPDFドキュメントを生成する方法を学ぶ
 lastmod: "2024-01-18"
 sitemap:

@@ -2,7 +2,7 @@
 title: Import and Export Annotations to XFDF 
 type: docs
 weight: 20
-url: ko/net/import-export-annotations/
+url: /ko/net/import-export-annotations/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF 파일에서 XFDF로 주석을 가져오고 내보내는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -14,9 +14,9 @@ XFDF는 XML Forms Data Format의 약자입니다. 이것은 XML 기반 파일 �
 
 ## XFDF로 주석 가져오기 및 내보내기
 
-[Aspose.PDF for .NET](/pdf/net/)은 PDF 문서를 편집할 때 기능이 풍부한 구성 요소입니다. As we know XFDF is an important aspect of PDF forms manipulation, [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) has considered this very well, and have provided methods to import and export annotations data to XFDF files.
+[Aspose.PDF for .NET](/pdf/ko/net/)은 PDF 문서를 편집할 때 기능이 풍부한 구성 요소입니다. As we know XFDF is an important aspect of PDF forms manipulation, [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/ko/net/) has considered this very well, and have provided methods to import and export annotations data to XFDF files.
 
-우리가 알다시피 XFDF는 PDF 양식 조작의 중요한 측면이며, [Aspose.PDF for .NET](/pdf/net/)의 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)에서는 이를 잘 고려하여 주석 데이터를 XFDF 파일로 가져오고 내보내는 메서드를 제공했습니다.
+우리가 알다시피 XFDF는 PDF 양식 조작의 중요한 측면이며, [Aspose.PDF for .NET](/pdf/ko/net/)의 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)에서는 이를 잘 고려하여 주석 데이터를 XFDF 파일로 가져오고 내보내는 메서드를 제공했습니다.
 
 [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) class contains two methods to work with import and export of annotations to XFDF file.
 

@@ -3,7 +3,7 @@ title: SharePoint에서 PDF로 내보내기
 linktitle: PDF로 내보내기
 type: docs
 weight: 10
-url: ko/sharepoint/export-to-pdf/
+url: /ko/sharepoint/export-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint API는 SharePoint 라이브러리에서 목록, 목록 항목 및 SharePoint Wiki 페이지를 PDF 형식으로 내보낼 수 있습니다.
 ---

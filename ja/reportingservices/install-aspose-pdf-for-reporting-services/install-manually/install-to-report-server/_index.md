@@ -2,7 +2,7 @@
 title: レポートサーバーへのインストール
 type: docs
 weight: 10
-url: ja/reportingservices/install-to-report-server/
+url: /ja/reportingservices/install-to-report-server/
 lastmod: "2021-06-05"
 ---
 

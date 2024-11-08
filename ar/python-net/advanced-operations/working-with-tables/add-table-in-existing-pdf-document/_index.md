@@ -3,7 +3,7 @@ title: إنشاء أو إضافة جدول في PDF باستخدام Python
 linktitle: إنشاء أو إضافة جدول
 type: docs
 weight: 10
-url: ar/python-net/add-table-in-existing-pdf-document/
+url: /ar/python-net/add-table-in-existing-pdf-document/
 description: Aspose.PDF for Python عبر .NET هي مكتبة تستخدم لإنشاء وقراءة وتحرير جداول PDF. تحقق من الوظائف المتقدمة الأخرى في هذا الموضوع.
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: العمل مع العلامات المرجعية في PDF باستخدا
 linktitle: العلامات المرجعية
 type: docs
 weight: 30
-url: ar/net/bookmarks/
+url: /ar/net/bookmarks/
 description: هذا القسم يشرح كيفية إضافة، حذف والحصول على علامة مرجعية باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,8 +81,8 @@ aliases:
 علامات الكتب في PDF هي أداة مفيدة وأساسية عندما يتعلق الأمر بقراءة ملفات PDF. تسمح للمستخدمين بالقفز بسرعة إلى أماكن أخرى في مستند PDF، والتنقل بين الصفحات، وعرض محتويات PDF بسرعة، تمامًا مثل جدول المحتويات.
 في هذا القسم ستتعلم كيفية:
 
-- [إضافة وحذف علامة كتاب](/pdf/net/add-and-delete-bookmark/)
-- [الحصول على علامة كتاب وتحديثها وتوسيعها](/pdf/net/get-update-and-expand-bookmark/)
+- [إضافة وحذف علامة كتاب](/pdf/ar/net/add-and-delete-bookmark/)
+- [الحصول على علامة كتاب وتحديثها وتوسيعها](/pdf/ar/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

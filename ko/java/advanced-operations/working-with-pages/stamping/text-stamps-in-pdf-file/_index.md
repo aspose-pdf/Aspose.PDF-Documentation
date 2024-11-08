@@ -3,7 +3,7 @@ title: PDF에 텍스트 스탬프 추가 프로그래밍 방식으로
 linktitle: PDF 파일에 텍스트 스탬프
 type: docs
 weight: 20
-url: ko/java/text-stamps-in-the-pdf-file/
+url: /ko/java/text-stamps-in-the-pdf-file/
 description: Java를 사용하여 TextStamp 클래스를 통해 PDF 파일에 텍스트 스탬프를 추가합니다.
 lastmod: "2021-06-05"
 sitemap:

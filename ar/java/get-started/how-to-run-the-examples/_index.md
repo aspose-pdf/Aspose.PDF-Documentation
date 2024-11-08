@@ -3,7 +3,7 @@ title: كيفية تشغيل أمثلة أخرى
 linktitle: كيفية تشغيل أمثلة أخرى
 type: docs
 weight: 50
-url: ar/java/how-to-run-other-examples/    
+url: /ar/java/how-to-run-other-examples/    
 description: توضح هذه الصفحة الإرشادات التي ستكون مفيدة لمتطلبات التالية قبل تحميل وتشغيل الأمثلة.
 lastmod: "2021-06-05"
 ---

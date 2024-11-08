@@ -3,7 +3,7 @@ title: Mengatur Ukuran Gambar menggunakan C++
 linktitle: Mengatur Ukuran Gambar
 type: docs
 weight: 80
-url: id/cpp/set-image-size/
+url: /id/cpp/set-image-size/
 description: Bagian ini menjelaskan cara mengatur ukuran gambar file PDF menggunakan pustaka C++.
 lastmod: "2021-12-18"
 ---

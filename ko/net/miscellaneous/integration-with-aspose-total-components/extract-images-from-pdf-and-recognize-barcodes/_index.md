@@ -2,7 +2,7 @@
 title: PDF에서 이미지 추출 및 바코드 인식
 type: docs
 weight: 20
-url: ko/net/extract-images-from-pdf-and-recognize-barcodes/
+url: /ko/net/extract-images-from-pdf-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

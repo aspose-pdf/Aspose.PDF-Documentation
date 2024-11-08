@@ -3,7 +3,7 @@ title: Node.jsでPDFファイルのメタデータを操作する
 linktitle: PDFファイルのメタデータ
 type: docs
 weight: 130
-url: ja/nodejs-cpp/pdf-file-metadata/
+url: /ja/nodejs-cpp/pdf-file-metadata/
 description: このセクションでは、PDFファイル情報を取得する方法、PDFファイルからメタデータを取得する方法、Node.jsでPDFファイル情報を設定する方法について説明します。
 lastmod: "2023-11-16"
 sitemap:

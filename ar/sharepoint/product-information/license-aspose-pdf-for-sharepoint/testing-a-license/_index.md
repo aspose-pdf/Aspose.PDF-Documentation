@@ -2,7 +2,7 @@
 title: اختبار الترخيص
 type: docs
 weight: 20
-url: ar/sharepoint/testing-a-license/
+url: /ar/sharepoint/testing-a-license/
 lastmod: "2020-12-16"
 description: لاختبار ما إذا تم تثبيت ترخيص لـ PDF SharePoint API بنجاح، قم بتحويل أي مستند إلى التنسيق المطلوب ويجب أن يتم إنشاؤه بدون أي تحذير تقييم.
 ---

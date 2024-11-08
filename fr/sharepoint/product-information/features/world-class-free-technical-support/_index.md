@@ -2,7 +2,7 @@
 title: Support Technique Gratuit de Classe Mondiale
 type: docs
 weight: 20
-url: fr/sharepoint/world-class-free-technical-support/
+url: /fr/sharepoint/world-class-free-technical-support/
 lastmod: "2020-12-16"
 description: L'API PDF SharePoint offre un support technique gratuit et illimité via ses forums, blogs et support prioritaire.
 ---

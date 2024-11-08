@@ -2,7 +2,7 @@
 title: Form Exporter
 type: docs
 weight: 60
-url: id/net/plugins/formflattener/
+url: /id/net/plugins/formflattener/
 description: Cara Meratakan Bidang Formulir dalam Berkas PDF menggunakan Plugin FormFlattener Aspose.PDF
 lastmod: "2024-01-24"
 ---

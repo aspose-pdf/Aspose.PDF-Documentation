@@ -3,7 +3,7 @@ title: إضافة الطوابع الصورية في ملف PDF برمجياً
 linktitle: الطوابع الصورية في ملف PDF
 type: docs
 weight: 10
-url: ar/cpp/image-stamps-in-pdf-page/
+url: /ar/cpp/image-stamps-in-pdf-page/
 description: أضف الطابع الصوري في وثيقة PDF باستخدام فئة ImageStamp مع مكتبة Aspose.PDF for C++.
 lastmod: "2021-12-08"
 sitemap:

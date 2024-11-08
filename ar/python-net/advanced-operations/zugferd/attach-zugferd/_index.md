@@ -3,7 +3,7 @@ title: إنشاء PDF متوافق مع PDF/3-A وإرفاق فاتورة ZUGFeR
 linktitle: إرفاق ZUGFeRD إلى PDF
 type: docs
 weight: 10
-url: ar/python-net/attach-zugferd/
+url: /ar/python-net/attach-zugferd/
 description: تعلم كيفية إنشاء مستند PDF مع ZUGFeRD في Aspose.PDF لبايثون عبر .NET
 lastmod: "2024-01-18"
 sitemap:

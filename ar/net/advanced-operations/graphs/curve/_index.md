@@ -3,7 +3,7 @@ title: إضافة كائن منحنى إلى ملف PDF
 linktitle: إضافة منحنى
 type: docs
 weight: 30
-url: ar/net/add-curve/
+url: /ar/net/add-curve/
 description: يشرح هذا المقال كيفية إنشاء كائن منحنى لملف PDF الخاص بك باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-الرمز التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الرمز التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة كائن منحنى
 

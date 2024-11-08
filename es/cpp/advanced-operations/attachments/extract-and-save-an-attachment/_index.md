@@ -3,7 +3,7 @@ title: Extraer y Guardar un Adjunto
 linktitle: Extraer y Guardar un Adjunto
 type: docs
 weight: 20
-url: es/cpp/extract-and-save-an-attachment/
+url: /es/cpp/extract-and-save-an-attachment/
 description: Aspose.PDF para C++ le permite obtener todos los adjuntos de un documento PDF. Además, puede obtener un adjunto individual de su documento.
 lastmod: "2022-02-07"
 sitemap:

@@ -2,7 +2,7 @@
 title: محول XLS
 type: docs
 weight: 20
-url: ar/net/plugins/xls/
+url: /ar/net/plugins/xls/
 description: كيفية تحويل ملفات PDF إلى جداول بيانات Excel باستخدام إضافات Aspose.Pdf
 lastmod: "2024-01-24"
 ---

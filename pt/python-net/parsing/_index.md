@@ -3,7 +3,7 @@ title: Analisar documentos PDF
 linktitle: Analisar documentos PDF
 type: docs
 weight: 80
-url: pt/python-net/parsing/
+url: /pt/python-net/parsing/
 description: Você quer analisar documentos PDF? Descubra vários métodos de extração de dados de PDF com Aspose.PDF para Python via .NET.
 lastmod: "2021-06-05"
 sitemap:

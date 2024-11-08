@@ -3,7 +3,7 @@ title: تحويل PDF إلى تنسيقات الصور في JavaScript
 linktitle: تحويل PDF إلى صور
 type: docs
 weight: 70
-url: ar/javascript-cpp/convert-pdf-to-images-format/
+url: /ar/javascript-cpp/convert-pdf-to-images-format/
 lastmod: "2023-11-01"
 description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF لتحويل PDF إلى تنسيقات صور مختلفة مثل TIFF وBMP وJPEG وPNG وSVG ببضع سطور من الشيفرة.
 sitemap:

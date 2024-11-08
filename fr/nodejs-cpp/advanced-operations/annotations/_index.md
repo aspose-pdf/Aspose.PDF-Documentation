@@ -3,7 +3,7 @@ title: Annotations PDF dans Node.js
 linktitle: Annotations PDF
 type: docs
 weight: 90
-url: fr/nodejs-cpp/annotations/
+url: /fr/nodejs-cpp/annotations/
 description: Cette section montre comment utiliser toutes sortes d'annotations sur votre fichier PDF avec Aspose.PDF pour Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:
@@ -19,4 +19,4 @@ Les annotations PDF telles que le surlignage, le soulignement ou l'ajout de comm
 
 Vous pouvez faire ce qui suit :
 
-- [Supprimer l'annotation](/pdf/nodejs-cpp/delete-annotation/) - cette section explique comment supprimer des annotations de votre PDF dans l'environnement Node.js.
+- [Supprimer l'annotation](/pdf/fr/nodejs-cpp/delete-annotation/) - cette section explique comment supprimer des annotations de votre PDF dans l'environnement Node.js.

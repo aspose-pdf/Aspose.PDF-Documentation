@@ -2,7 +2,7 @@
 title: PDF 문서에서 차트 객체 추출하기 (facades)
 type: docs
 weight: 20
-url: ko/java/extract-chart-objects/
+url: /ko/java/extract-chart-objects/
 description: 이 섹션은 Aspose.PDF Facades를 사용하여 PdfExtractor 클래스로 PDF에서 차트 객체를 추출하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

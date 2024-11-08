@@ -2,7 +2,7 @@
 title: PythonでPDFの有効期限を設定
 type: docs
 weight: 80
-url: ja/java/set-pdf-expiration-in-python/
+url: /ja/java/set-pdf-expiration-in-python/
 lastmod: "2021-06-05"
 ---
 

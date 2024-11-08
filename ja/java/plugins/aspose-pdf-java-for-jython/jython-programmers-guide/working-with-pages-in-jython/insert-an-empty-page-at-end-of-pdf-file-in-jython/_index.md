@@ -2,7 +2,7 @@
 title: JythonでPDFファイルの末尾に空のページを挿入する
 type: docs
 weight: 60
-url: ja/java/insert-an-empty-page-at-end-of-pdf-file-in-jython/
+url: /ja/java/insert-an-empty-page-at-end-of-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: إزالة البيانات الوصفية من PDF في بايثون
 type: docs
 weight: 70
-url: ar/java/remove-metadata-from-pdf-in-python/
+url: /ar/java/remove-metadata-from-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

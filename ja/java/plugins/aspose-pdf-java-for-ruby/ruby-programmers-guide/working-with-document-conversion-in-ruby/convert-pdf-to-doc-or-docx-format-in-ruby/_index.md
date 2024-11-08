@@ -2,7 +2,7 @@
 title: RubyでPDFをDOCまたはDOCX形式に変換
 type: docs
 weight: 30
-url: ja/java/convert-pdf-to-doc-or-docx-format-in-ruby/
+url: /ja/java/convert-pdf-to-doc-or-docx-format-in-ruby/
 lastmod: "2021-06-05"
 ---
 

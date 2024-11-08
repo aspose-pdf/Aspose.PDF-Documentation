@@ -3,7 +3,7 @@ title: Menghapus lampiran dari PDF
 linktitle: Menghapus lampiran dari PDF yang ada
 type: docs
 weight: 30
-url: id/cpp/removing-attachment-from-an-existing-pdf/
+url: /id/cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF untuk C++ dapat menghapus lampiran dari dokumen PDF Anda. Gunakan API PDF C++ untuk menghapus lampiran dalam file PDF menggunakan pustaka Aspose.PDF.
 lastmod: "2022-02-07"
 sitemap:

@@ -3,7 +3,7 @@ title: إضافة كائن مستطيل إلى ملف PDF
 linktitle: إضافة مستطيل
 type: docs
 weight: 50
-url: ar/net/add-rectangle/
+url: /ar/net/add-rectangle/
 description: يشرح هذا المقال كيفية إنشاء كائن مستطيل في ملف PDF باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "يشرح هذا المقال كيفية إنشاء كائن مستطيل في ملف PDF باستخدام Aspose.PDF لـ .NET."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة كائن مستطيل
 

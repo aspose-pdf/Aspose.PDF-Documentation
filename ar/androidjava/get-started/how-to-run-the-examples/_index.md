@@ -3,7 +3,7 @@ title: كيفية تشغيل أمثلة Aspose.PDF الأخرى لنظام Andro
 linktitle: كيفية تشغيل أمثلة أخرى
 type: docs
 weight: 40
-url: ar/androidjava/how-to-run-other-examples/    
+url: /ar/androidjava/how-to-run-other-examples/    
 description: توضح هذه الصفحة الإرشادات التي ستكون مفيدة للمتطلبات التالية قبل تنزيل وتشغيل الأمثلة.
 lastmod: "2021-06-05"
 ---

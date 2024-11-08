@@ -3,7 +3,7 @@ title: Integrasikan Tabel dengan Sumber Data PDF
 linktitle: Integrasikan Tabel
 type: docs
 weight: 30
-url: id/net/integrate-table/
+url: /id/net/integrate-table/
 description: Artikel ini menunjukkan cara mengintegrasikan tabel PDF. Integrasikan Tabel dengan Database dan tentukan apakah tabel akan terpecah di halaman saat ini.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Artikel ini menunjukkan cara mengintegrasikan tabel PDF. Integrasikan Tabel dengan Database dan tentukan apakah tabel akan terpecah di halaman saat ini."
 }
 </script>
-Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mengintegrasikan Tabel dengan Basis Data
 

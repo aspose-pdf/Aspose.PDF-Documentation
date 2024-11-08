@@ -3,7 +3,7 @@ title: Extraire du Texte à partir de Tampons
 linktitle: Extraire du Texte à partir de Tampons
 type: docs
 weight: 60
-url: fr/cpp/extract-text-from-stamps/
+url: /fr/cpp/extract-text-from-stamps/
 ---
 
 ## Extraire du Texte des Annotations de Tampons

@@ -3,7 +3,7 @@ title: Commencer
 linktitle: Commencer
 type: docs
 weight: 30
-url: fr/python-cpp/get-started/
+url: /fr/python-cpp/get-started/
 description: Cette page est un aperçu de l'utilisation d'Aspose.PDF pour Python via C++ pour créer et éditer un document PDF
 lastmod: "2021-06-05"   
 sitemap: 
@@ -38,6 +38,6 @@ Aspose.PDF pour Python via C++ est rapide, léger et facile à utiliser. Il cré
 
 ### En savoir plus sur :
 
-- [Exemple Python "Hello, World"](/pdf/python-cpp/hello-world-example/)
-- [PDF Complexe](/pdf/python-cpp/complex-pdf-example/)
-- [Comment exécuter d'autres exemples](/pdf/python-cpp/how-to-run-other-examples/)
+- [Exemple Python "Hello, World"](/pdf/fr/python-cpp/hello-world-example/)
+- [PDF Complexe](/pdf/fr/python-cpp/complex-pdf-example/)
+- [Comment exécuter d'autres exemples](/pdf/fr/python-cpp/how-to-run-other-examples/)

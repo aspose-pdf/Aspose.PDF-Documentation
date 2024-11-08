@@ -2,7 +2,7 @@
 title: PDF 파일에서 서명 검증
 type: docs
 weight: 30
-url: ko/net/verify-signature-in-pdf/
+url: /ko/net/verify-signature-in-pdf/
 description: 이 섹션에서는 PdfFileSignature 클래스를 사용하여 PDF 파일에서 서명을 검증하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## PDF 파일이 서명을 사용하여 서명되었는지 확인
 
-특정 [서명](/pdf/net/working-with-signature-in-a-pdf-file/)을 사용하여 PDF 파일이 서명되었는지 확인하려면, [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스의 VerifySigned 메서드를 사용하십시오. 이 메서드는 서명 이름을 필요로 하며, PDF가 해당 서명 이름을 사용하여 서명된 경우 true를 반환합니다. 또한 어떤 서명으로 서명되었는지 확인하지 않고 [PDF가 서명되었는지](/pdf/net/working-with-signature-in-a-pdf-file/) 확인하는 것도 가능합니다.
+특정 [서명](/pdf/ko/net/working-with-signature-in-a-pdf-file/)을 사용하여 PDF 파일이 서명되었는지 확인하려면, [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스의 VerifySigned 메서드를 사용하십시오. 이 메서드는 서명 이름을 필요로 하며, PDF가 해당 서명 이름을 사용하여 서명된 경우 true를 반환합니다. 또한 어떤 서명으로 서명되었는지 확인하지 않고 [PDF가 서명되었는지](/pdf/ko/net/working-with-signature-in-a-pdf-file/) 확인하는 것도 가능합니다.
 
 ### 주어진 서명으로 PDF가 서명되었는지 검증
 

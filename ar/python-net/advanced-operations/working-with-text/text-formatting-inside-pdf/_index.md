@@ -3,7 +3,7 @@ title: تنسيق النص داخل PDF باستخدام بايثون
 linktitle: تنسيق النص داخل PDF
 type: docs
 weight: 30
-url: ar/python-net/text-formatting-inside-pdf/
+url: /ar/python-net/text-formatting-inside-pdf/
 description: توضح هذه الصفحة كيفية تنسيق النص داخل ملف PDF الخاص بك. هناك إضافة مسافة بادئة للسطر، إضافة حدود للنص، إضافة نص تحت الخط، إلخ.
 lastmod: "2024-02-17"
 sitemap:

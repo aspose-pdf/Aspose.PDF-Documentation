@@ -3,7 +3,7 @@ title: Impresión de documentos PDF
 linktitle: Impresión de documentos
 type: docs
 weight: 160
-url: es/net/printing-document/
+url: /es/net/printing-document/
 description: Técnicas de impresión de PDF en C# y guía para configuraciones de impresora PDF en C# y consejos para proyectos .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -79,11 +79,11 @@ aliases:
 </script>
 ## Cómo imprimir archivos PDF en C#
 
-- [Imprimir PDF en .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
-- [Imprimir PDF en una impresora XPS (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [Conversión de PDF a PostScript, Verificación del estado del trabajo de impresión](/pdf/net/pdf-to-postscript-conversion/)
-- [Imprimir PDF en .NET Core](/pdf/net/print-dotnetcore/)
-- [Imprimir documento PDF en una aplicación WPF](/pdf/net/print-pdf-document-in-wpf-application/)
+- [Imprimir PDF en .NET Framework](/pdf/es/net/printing-pdf-in-net-framework/)
+- [Imprimir PDF en una impresora XPS (Facades)](/pdf/es/net/printing-pdf-to-an-xps-printer-facades/)
+- [Conversión de PDF a PostScript, Verificación del estado del trabajo de impresión](/pdf/es/net/pdf-to-postscript-conversion/)
+- [Imprimir PDF en .NET Core](/pdf/es/net/print-dotnetcore/)
+- [Imprimir documento PDF en una aplicación WPF](/pdf/es/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

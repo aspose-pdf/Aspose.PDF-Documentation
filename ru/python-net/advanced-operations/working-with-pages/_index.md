@@ -3,7 +3,7 @@ title: Работа с PDF страницами в Python
 linktitle: Работа со страницами
 type: docs
 weight: 20
-url: ru/python-net/working-with-pages/
+url: /ru/python-net/working-with-pages/
 description: Как добавлять страницы, добавлять колонтитулы, добавлять водяные знаки вы можете узнать в этом разделе. Aspose.PDF для Python через .NET объясняет вам все детали по этой теме.
 lastmod: "2023-04-19"
 sitemap:
@@ -84,20 +84,20 @@ sitemap:
 
 You are able to do the following:
 
-- [Add Pages](/pdf/python-net/add-pages/) - добавлять страницы в нужное место или в конец PDF-файла и удалять страницу из вашего документа.
-- [Move Pages](/pdf/python-net/move-pages/) - перемещать страницы из одного документа в другой.
-- [Delete Pages](/pdf/python-net/delete-pages/) - удалять страницу из вашего PDF-файла, используя коллекцию PageCollection.
-- [Change Page size](/pdf/python-net/change-page-size/) - вы можете изменить размер страницы PDF с помощью фрагмента кода, используя библиотеку Aspose.PDF.
-- [Rotate Pages](/pdf/python-net/rotate-pages/) - вы можете изменить ориентацию страниц в существующем PDF-файле.
-- [Split Pages](/pdf/python-net/split-document/) - вы можете разделить PDF-файлы на один или несколько PDF.
-- [Add Headers and/or Footers](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - добавлять текст или изображения в верхние и нижние колонтитулы вашего PDF-файла.
-- [Crop Pages](/pdf/python-net/crop-pages/) - вы можете обрезать страницы в PDF-документе программно с различными свойствами страниц.
+- [Add Pages](/pdf/ru/python-net/add-pages/) - добавлять страницы в нужное место или в конец PDF-файла и удалять страницу из вашего документа.
+- [Move Pages](/pdf/ru/python-net/move-pages/) - перемещать страницы из одного документа в другой.
+- [Delete Pages](/pdf/ru/python-net/delete-pages/) - удалять страницу из вашего PDF-файла, используя коллекцию PageCollection.
+- [Change Page size](/pdf/ru/python-net/change-page-size/) - вы можете изменить размер страницы PDF с помощью фрагмента кода, используя библиотеку Aspose.PDF.
+- [Rotate Pages](/pdf/ru/python-net/rotate-pages/) - вы можете изменить ориентацию страниц в существующем PDF-файле.
+- [Split Pages](/pdf/ru/python-net/split-document/) - вы можете разделить PDF-файлы на один или несколько PDF.
+- [Add Headers and/or Footers](/pdf/ru/python-net/add-headers-and-footers-of-pdf-file/) - добавлять текст или изображения в верхние и нижние колонтитулы вашего PDF-файла.
+- [Crop Pages](/pdf/ru/python-net/crop-pages/) - вы можете обрезать страницы в PDF-документе программно с различными свойствами страниц.
 
-- [Add Watermarks](/pdf/python-net/add-watermarks/) - добавлять водяные знаки в ваш PDF-файл с помощью класса Artifact.
-- [Добавить нумерацию страниц в PDF файл](/pdf/python-net/add-page-number/) - класс PageNumberStamp поможет вам добавить номер страницы в ваш PDF файл.
-- [Добавить фоны](/pdf/python-net/add-backgrounds/) - фоновые изображения могут использоваться для добавления водяного знака.
-- [Штамповка](/pdf/python-net/stamping/) - вы можете использовать класс ImageStamp для добавления изображения штампа в PDF файл и класс TextStamp для добавления текста.
-- [Получить и установить свойства страницы](/pdf/python-net/get-and-set-page-properties/) - этот раздел показывает, как получить количество страниц в PDF файле, получить информацию о свойствах страницы PDF, таких как цвет, и установить свойства страницы.
+- [Add Watermarks](/pdf/ru/python-net/add-watermarks/) - добавлять водяные знаки в ваш PDF-файл с помощью класса Artifact.
+- [Добавить нумерацию страниц в PDF файл](/pdf/ru/python-net/add-page-number/) - класс PageNumberStamp поможет вам добавить номер страницы в ваш PDF файл.
+- [Добавить фоны](/pdf/ru/python-net/add-backgrounds/) - фоновые изображения могут использоваться для добавления водяного знака.
+- [Штамповка](/pdf/ru/python-net/stamping/) - вы можете использовать класс ImageStamp для добавления изображения штампа в PDF файл и класс TextStamp для добавления текста.
+- [Получить и установить свойства страницы](/pdf/ru/python-net/get-and-set-page-properties/) - этот раздел показывает, как получить количество страниц в PDF файле, получить информацию о свойствах страницы PDF, таких как цвет, и установить свойства страницы.
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: العمل مع نماذج XFA باستخدام C++
 linktitle: نماذج XFA
 type: docs
 weight: 20
-url: ar/cpp/xfa-forms/
+url: /ar/cpp/xfa-forms/
 description: تتيح لك Aspose.PDF for C++ API العمل مع حقول XFA و XFA Acroform في مستند PDF. Aspose.PDF.Facades.
 lastmod: "2021-12-01"
 sitemap:

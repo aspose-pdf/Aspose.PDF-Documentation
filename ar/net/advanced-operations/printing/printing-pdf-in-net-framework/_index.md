@@ -3,7 +3,7 @@ title: طباعة ملفات PDF في إطار .NET
 linktitle: طباعة ملفات PDF في إطار .NET
 type: docs
 weight: 10
-url: ar/net/printing-pdf-in-net-framework/
+url: /ar/net/printing-pdf-in-net-framework/
 keywords: "print pdf file c#, c# print pdf"
 description: يمكنك طباعة ملفات PDF إلى الطابعة الافتراضية باستخدام إعدادات الطابعة والصفحة مع C#.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "يمكنك طباعة ملفات PDF إلى الطابعة الافتراضية باستخدام إعدادات الطابعة والصفحة مع C#."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## **طباعة ملف PDF في C# - طباعة ملف PDF إلى الطابعة الافتراضية باستخدام إعدادات الطابعة والصفحة**
 

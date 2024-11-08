@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 주석 추가, 삭제 및 가져오기
 linktitle: 주석 추가, 삭제 및 가져오기
 type: docs
 weight: 20
-url: ko/python-net/add-delete-and-get-annotation/
+url: /ko/python-net/add-delete-and-get-annotation/
 description: Aspose.PDF for Python을 사용하여 PDF 파일에서 주석을 추가, 삭제 및 가져올 수 있습니다. 작업을 해결하기 위해 모든 주석 목록을 확인하세요.
 lastmod: "2023-02-17"
 sitemap:
@@ -83,8 +83,8 @@ PDF 문서에서 주석은 사용자가 문서 내에서 특정 방식으로 콘
 
 우리는 Aspose.PDF for Python 라이브러리에 사용할 수 있는 다양한 종류의 주석을 그룹으로 결합했습니다:
 
-- [PDF 텍스트 주석](/pdf/python-net/text-annotation/)
-- [PDF 강조 표시 주석](/pdf/python-net/highlights-annotation/)
-- [PDF 도형 주석](/pdf/python-net/figures-annotation/)
-- [PDF 스티키 주석](/pdf/python-net/sticky-annotations/)
-- [추가 주석](/pdf/python-net/extra-annotations/)
+- [PDF 텍스트 주석](/pdf/ko/python-net/text-annotation/)
+- [PDF 강조 표시 주석](/pdf/ko/python-net/highlights-annotation/)
+- [PDF 도형 주석](/pdf/ko/python-net/figures-annotation/)
+- [PDF 스티키 주석](/pdf/ko/python-net/sticky-annotations/)
+- [추가 주석](/pdf/ko/python-net/extra-annotations/)

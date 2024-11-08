@@ -3,7 +3,7 @@ title: .NETでPDFをMicrosoft Wordドキュメントに変換する
 linktitle: PDFをWordに変換
 type: docs
 weight: 10
-url: ja/net/convert-pdf-to-word/
+url: /ja/net/convert-pdf-to-word/
 lastmod: "2022-08-04"
 description: Aspose.PDF for .NETを使用してPDFからMicrosoft Word形式への変換を行うC#コードの書き方を学び、PDFからDOC（DOCX）への変換を調整します。
 sitemap:
@@ -33,7 +33,7 @@ _フォーマット_: **Word**
 - [C#でPDFをWordに変換](#csharp-pdf-to-doc)
 - [C# PDFファイルをWordに変換する方法](#csharp-pdf-to-docx)
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 ## PDFからDOCおよびDOCXへの変換
 
 最も人気のある機能の1つは、PDFをMicrosoft Word DOCに変換することで、コンテンツ管理をより容易にします。**Aspose.PDF for .NET** は、PDFファイルを迅速かつ効率的にDOCおよびDOCX形式に変換することができます。
@@ -101,7 +101,7 @@ public static void ConvertPDFtoWordDocAdvanced()
 
 Aspose.PDF for .NETは、無料のオンラインアプリケーション["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)を提供しており、その機能と品質を試すことができます。
 
-[![PDFをDOCに変換](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![PDFをDOCに変換](/pdf/ja/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## PDFをDOCX（Microsoft Word 2007-2021ファイル）に変換
@@ -155,7 +155,7 @@ public static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF for .NETは、無料のオンラインアプリケーション ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx) を提供しています。ここで機能と品質を調査してみることができます。
 
-[![Aspose.PDF Convertion PDF to Word Free App](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Convertion PDF to Word Free App](/pdf/ja/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

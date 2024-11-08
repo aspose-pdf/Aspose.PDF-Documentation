@@ -3,7 +3,7 @@ title: Apa yang baru dari C++
 linktitle: Apa yang baru
 type: docs
 weight: 10
-url: id/cpp/whatsnew/
+url: /id/cpp/whatsnew/
 description: Halaman ini memperkenalkan fitur baru paling populer di Aspose.PDF untuk C++ yang telah diperkenalkan dalam rilis terbaru.
 sitemap:
     changefreq: "monthly"

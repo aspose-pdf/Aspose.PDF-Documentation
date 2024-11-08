@@ -3,7 +3,7 @@ title: كيفية تثبيت Aspose.PDF لـ .NET
 linktitle: التثبيت
 type: docs
 weight: 20
-url: ar/net/installation/
+url: /ar/net/installation/
 description: تعرض هذه القسم وصف المنتج وتعليمات لتثبيت Aspose.PDF لـ .Net بنفسك، بالإضافة إلى استخدام NuGet.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Comment exécuter Aspose.PDF pour .NET 6 dans Docker
 linktitle: Utiliser Aspose.PDF pour .NET 6 dans Docker
 type: docs
 weight: 10
-url: fr/net/docker/dotnet6/
+url: /fr/net/docker/dotnet6/
 description: Intégrer les fonctionnalités d'Aspose.PDF dans votre application en utilisant des conteneurs Docker Linux ou Windows
 lastmod: "2024-01-21"
 sitemap:
@@ -30,12 +30,12 @@ Les exemples suivants ont été testés avec :
 
 ### Générer un document PDF en utilisant une application Web ASP.NET Core dans un conteneur Linux
 
-Nous utiliserons le code de **Exemple Complex** dans cette application. Veuillez suivre [ce lien](/pdf/net/complex-pdf-example/) pour une explication plus détaillée.
+Nous utiliserons le code de **Exemple Complex** dans cette application. Veuillez suivre [ce lien](/pdf/fr/net/complex-pdf-example/) pour une explication plus détaillée.
 
-1. Créez un dossier `images` dans le dossier `wwwroot` et placez l'image `logo.png`. Vous pouvez télécharger cette image [ici](/pdf/net/docker/logo.png)
+1. Créez un dossier `images` dans le dossier `wwwroot` et placez l'image `logo.png`. Vous pouvez télécharger cette image [ici](/pdf/fr/net/docker/logo.png)
 1. Remplacez le code dans `HomeController.cs` par le fragment suivant (veuillez noter que vous pouvez avoir un autre espace de noms) :
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```cs
 using Aspose.Pdf;
@@ -194,7 +194,7 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 Nous utiliserons le même code que dans l'exemple précédent.
 
-1. Créez un dossier `images` dans le dossier `wwwroot` et placez-y l'image `logo.png`. Vous pouvez télécharger cette image [ici](/pdf/net/docker/logo.png)
+1. Créez un dossier `images` dans le dossier `wwwroot` et placez-y l'image `logo.png`. Vous pouvez télécharger cette image [ici](/pdf/fr/net/docker/logo.png)
 1. Remplacez le code dans `HomeController.cs` par le snippet ci-dessus.
 
 ```dockerfile

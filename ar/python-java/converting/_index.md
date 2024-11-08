@@ -3,7 +3,7 @@ title: تحويل مستندات PDF باستخدام Python
 linktitle: تحويل مستند PDF
 type: docs
 weight: 70
-url: ar/python-java/converting/
+url: /ar/python-java/converting/
 lastmod: "2023-04-06"
 description: تحتوي هذه القسم على مقالات تتعلق بتحويل مستندات PDF إلى تنسيقات مختلفة وبالعكس باستخدام Python API.
 aliases:
@@ -30,32 +30,32 @@ sitemap:
 تعتبر مستندات Word الأكثر تنوعًا وقابلية للتعديل الممكنة.
  التحويل اليدوي من PDF إلى Word هو مهمة تستغرق الكثير من الوقت. في هذه المقالة، ستتعلم كيفية تحويل PDF إلى Word برمجيًا في بايثون.
 
-- [تحويل PDF إلى Microsoft Word](/pdf/python-java/convert-pdf-to-word/) - يمكنك تحويل مستند PDF الخاص بك إلى تنسيق Word باستخدام بايثون
+- [تحويل PDF إلى Microsoft Word](/pdf/ar/python-java/convert-pdf-to-word/) - يمكنك تحويل مستند PDF الخاص بك إلى تنسيق Word باستخدام بايثون
 
 لا تحتاج صيغ الأرقام فقط لجعل البيانات في الجدول أسهل للقراءة، ولكن أيضًا لجعل الجدول أسهل للاستخدام. بالطبع، إذا كنت بحاجة إلى تحويل مثل هذه البيانات من مستند PDF إلى تنسيق Excel، استخدم مكتبة Aspose.PDF الخاصة بنا.
 
-- [تحويل PDF إلى Microsoft Excel](/pdf/python-java/convert-pdf-to-excel/) - يصف هذا القسم كيفية تحويل مستند PDF إلى XLSX، ODS، CSV و SpreadSheetML
+- [تحويل PDF إلى Microsoft Excel](/pdf/ar/python-java/convert-pdf-to-excel/) - يصف هذا القسم كيفية تحويل مستند PDF إلى XLSX، ODS، CSV و SpreadSheetML
 
 يُستخدم تنسيق PowerPoint لإنشاء عروض تقديمية مختلفة. تحتوي ملفات PPT على عدد كبير من الشرائح أو الصفحات التي تحتوي على معلومات متنوعة.
 
-- [تحويل PDF إلى Microsoft PowerPoint](/pdf/python-java/convert-pdf-to-powerpoint/) - هنا نتحدث عن تحويل PDF إلى PowerPoint بتتبع عملية التحويل
+- [تحويل PDF إلى Microsoft PowerPoint](/pdf/ar/python-java/convert-pdf-to-powerpoint/) - هنا نتحدث عن تحويل PDF إلى PowerPoint بتتبع عملية التحويل
 
 لغة ترميز النص التشعبي هي لغة وصف مستندات تشعبية، وهي لغة قياسية لإنشاء صفحات الويب. مع Aspose.PDF لـ Python يمكنك بسهولة تحويل مستندات HTML والعكس بالعكس.
 
-- [تحويل تنسيق HTML إلى ملف PDF](/pdf/python-java/convert-html-to-pdf/) - مقال عن الجوانب المختلفة لتحويل HTML إلى PDF
-- [تحويل ملف PDF إلى تنسيق HTML](/pdf/python-java/convert-pdf-to-html/) - تحويل مستندات PDF الخاصة بك إلى ملفات HTML كصفحات منفصلة أو كصفحة واحدة
+- [تحويل تنسيق HTML إلى ملف PDF](/pdf/ar/python-java/convert-html-to-pdf/) - مقال عن الجوانب المختلفة لتحويل HTML إلى PDF
+- [تحويل ملف PDF إلى تنسيق HTML](/pdf/ar/python-java/convert-pdf-to-html/) - تحويل مستندات PDF الخاصة بك إلى ملفات HTML كصفحات منفصلة أو كصفحة واحدة
 
 هناك العديد من تنسيقات الصور التي تحتاج إلى تحويل إلى PDF لأغراض مختلفة. يسمح Aspose.PDF بأكثر تنسيقات الصور شيوعًا والعكس بالعكس.
 
-- [تحويل PDF إلى تنسيقات صور مختلفة](/pdf/python-java/convert-pdf-to-images-format/) - تحويل صفحات PDF كصور في JPEG وPNG وتنسيقات أخرى
+- [تحويل PDF إلى تنسيقات صور مختلفة](/pdf/ar/python-java/convert-pdf-to-images-format/) - تحويل صفحات PDF كصور في JPEG وPNG وتنسيقات أخرى
 
 يتضمن هذا القسم تنسيقات مثل: EPUB، Markdown، PCL، XPS، LATex/TeX، نص، وPostScript.
 
-- [تحويل ملف PDF إلى تنسيقات أخرى](/pdf/python-java/convert-pdf-to-other-files/) - يصف هذا الموضوع طريقة لتحويل مستند PDF إلى تنسيقات مختلفة
+- [تحويل ملف PDF إلى تنسيقات أخرى](/pdf/ar/python-java/convert-pdf-to-other-files/) - يصف هذا الموضوع طريقة لتحويل مستند PDF إلى تنسيقات مختلفة
 
 PDF/A هو إصدار من PDF مصمم لأرشفة المستندات الإلكترونية على المدى الطويل.إذا كنت صادقًا، من الصعب جدًا خارجيًا تحديد ما إذا كان الملف PDF أو PDF/A. للتحقق من هذا الملف، يتم استخدام أدوات التحقق. تحقق من المقالات التالية للحصول على تحويل عالي الجودة من PDF إلى PDF/A والعكس.
 
-- [تحويل PDF إلى تنسيقات PDF/A](/pdf/python-java/convert-pdf-to-pdfa/) - تحتوي مكتبة بايثون من Aspose.PDF على طريقة سهلة لتحويل PDF إلى PDF/A
+- [تحويل PDF إلى تنسيقات PDF/A](/pdf/ar/python-java/convert-pdf-to-pdfa/) - تحتوي مكتبة بايثون من Aspose.PDF على طريقة سهلة لتحويل PDF إلى PDF/A
 
 ## حاول تحويل ملفات PDF عبر الإنترنت
 

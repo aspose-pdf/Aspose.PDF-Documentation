@@ -3,7 +3,7 @@ title: Обновление ссылок в PDF
 linktitle: Обновление ссылок
 type: docs
 weight: 20
-url: ru/net/update-links/
+url: /ru/net/update-links/
 description: Обновление ссылок в PDF программно. Это руководство о том, как обновить ссылки в PDF на языке C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Обновление ссылок в PDF программно. Это руководство о том, как обновить ссылки в PDF на языке C#."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Обновление ссылок в PDF файле
 

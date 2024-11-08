@@ -2,7 +2,7 @@
 title: Get and Set Page Properties
 type: docs
 weight: 30
-url: ko/php-java/get-and-set-page-properties/
+url: /ko/php-java/get-and-set-page-properties/
 description: 이 주제는 PDF 파일에서 숫자를 가져오고, 페이지 속성을 얻고 Aspose.PDF for PHP를 통해 Java를 사용하여 페이지 색상을 결정하는 방법을 설명합니다.
 lastmod: "2024-06-05"
 ---

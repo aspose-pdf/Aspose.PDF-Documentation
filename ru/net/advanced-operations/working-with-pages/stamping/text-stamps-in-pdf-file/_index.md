@@ -3,7 +3,7 @@ title: Добавление текстовых штампов в PDF C#
 linktitle: Текстовые штампы в PDF файле
 type: docs
 weight: 20
-url: ru/net/text-stamps-in-the-pdf-file/
+url: /ru/net/text-stamps-in-the-pdf-file/
 description: Добавьте текстовый штамп в документ PDF, используя класс TextStamp с библиотекой Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 Вы можете использовать класс [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) для добавления текстовой печати в файл PDF. Класс TextStamp предоставляет свойства, необходимые для создания текстовой печати, такие как размер шрифта, стиль шрифта и цвет шрифта и т.д. Чтобы добавить текстовую печать, вам нужно создать объект Document и объект TextStamp с необходимыми свойствами. После этого вы можете вызвать метод AddStamp страницы для добавления печати в PDF.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Следующий фрагмент кода показывает, как добавить текстовую печать в файл PDF.
 

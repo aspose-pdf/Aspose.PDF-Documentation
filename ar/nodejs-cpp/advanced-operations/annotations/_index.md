@@ -3,7 +3,7 @@ title: التعليقات التوضيحية في PDF في Node.js
 linktitle: التعليقات التوضيحية في PDF
 type: docs
 weight: 90
-url: ar/nodejs-cpp/annotations/
+url: /ar/nodejs-cpp/annotations/
 description: يوضح هذا القسم كيفية استخدام جميع أنواع التعليقات التوضيحية في ملف PDF الخاص بك باستخدام Aspose.PDF لـ Node.js عبر C++.
 lastmod: "2023-11-16"
 sitemap:
@@ -19,4 +19,4 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [حذف التعليق التوضيحي](/pdf/nodejs-cpp/delete-annotation/) - يشرح هذا القسم كيفية حذف التعليقات التوضيحية من PDF الخاص بك في بيئة Node.js.
+- [حذف التعليق التوضيحي](/pdf/ar/nodejs-cpp/delete-annotation/) - يشرح هذا القسم كيفية حذف التعليقات التوضيحية من PDF الخاص بك في بيئة Node.js.

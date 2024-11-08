@@ -3,7 +3,7 @@ title: فك تشفير PDF باستخدام JavaScript
 linktitle: فك تشفير ملف PDF
 type: docs
 weight: 40
-url: ar/javascript-cpp/decrypt-pdf/
+url: /ar/javascript-cpp/decrypt-pdf/
 description: فك تشفير ملف PDF باستخدام Aspose.PDF لـ JavaScript عبر C++.
 lastmod: "2022-12-15"
 sitemap:

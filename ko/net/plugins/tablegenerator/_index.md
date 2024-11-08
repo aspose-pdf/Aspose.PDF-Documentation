@@ -2,7 +2,7 @@
 title: 테이블 생성기
 type: docs
 weight: 130
-url: ko/net/plugins/tablegenerator/
+url: /ko/net/plugins/tablegenerator/
 description: 지정된 PDF 문서 페이지 번호에 테이블을 추가/삽입할 수 있습니다.
 lastmod: "2024-01-24"
 draft: false

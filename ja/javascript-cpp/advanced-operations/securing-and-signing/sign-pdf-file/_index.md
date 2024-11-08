@@ -3,7 +3,7 @@ title: JavaScript経由でC++を使用してPDFにデジタル署名を追加す
 linktitle: PDFにデジタル署名
 type: docs
 weight: 70
-url: ja/javascript-cpp/sign-pdf/
+url: /ja/javascript-cpp/sign-pdf/
 description: JavaScript経由でC++を使用してPDF文書にデジタル署名を付ける。
 lastmod: "2023-02-17"
 sitemap:

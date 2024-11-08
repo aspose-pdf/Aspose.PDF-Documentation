@@ -2,7 +2,7 @@
 title: 例外を制御するPDFファイル
 type: docs
 weight: 30
-url: ja/java/control-exception/
+url: /ja/java/control-exception/
 description: このトピックでは、PdfFileSecurityクラスを使用してPDFファイルの例外を制御する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

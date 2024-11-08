@@ -2,7 +2,7 @@
 title: ページプロパティの取得と設定
 type: docs
 weight: 30
-url: ja/php-java/get-and-set-page-properties/
+url: /ja/php-java/get-and-set-page-properties/
 description: 本トピックでは、Aspose.PDF for PHP via Java を使用して PDF ファイル内のページ数を取得し、ページプロパティを取得し、ページ色を判定する方法について説明します。
 lastmod: "2024-06-05"
 ---

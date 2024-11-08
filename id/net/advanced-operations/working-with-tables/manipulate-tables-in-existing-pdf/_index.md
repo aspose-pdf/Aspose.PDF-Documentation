@@ -3,7 +3,7 @@ title: Memanipulasi Tabel di PDF yang Ada
 linktitle: Memanipulasi Tabel
 type: docs
 weight: 40
-url: id/net/manipulate-tables-in-existing-pdf/
+url: /id/net/manipulate-tables-in-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -79,7 +79,7 @@ sitemap:
 
 Salah satu fitur terawal yang didukung oleh Aspose.PDF untuk .NET adalah kemampuannya dalam Bekerja dengan Tabel dan ini memberikan dukungan yang besar untuk menambahkan tabel dalam file PDF yang dihasilkan dari awal atau file PDF yang sudah ada. Anda juga mendapatkan kemampuan untuk Mengintegrasikan Tabel dengan Database (DOM) untuk membuat tabel dinamis berdasarkan konten database. Dalam rilis baru ini, kami telah mengimplementasikan fitur baru dalam mencari dan mem-parse tabel sederhana yang sudah ada di halaman dokumen PDF. Kelas baru bernama **Aspose.PDF.Text.TableAbsorber** menyediakan kemampuan ini. Penggunaan TableAbsorber sangat mirip dengan kelas TextFragmentAbsorber yang sudah ada. Potongan kode berikut menunjukkan langkah-langkah untuk memperbarui konten dalam sel tabel tertentu.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET

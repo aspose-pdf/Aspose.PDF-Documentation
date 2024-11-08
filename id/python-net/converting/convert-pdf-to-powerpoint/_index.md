@@ -3,7 +3,7 @@ title: Mengonversi PDF ke PowerPoint di Python
 linktitle: Mengonversi PDF ke PowerPoint  
 type: docs  
 weight: 30  
-url: id/python-net/convert-pdf-to-powerpoint/  
+url: /id/python-net/convert-pdf-to-powerpoint/  
 description: Aspose.PDF memungkinkan Anda untuk mengonversi PDF ke format PPT (PowerPoint) menggunakan Python. Salah satu cara ada kemungkinan untuk mengonversi PDF ke PPTX dengan Slide sebagai Gambar.  
 lastmod: "2022-12-23"  
 sitemap:  

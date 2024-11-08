@@ -3,7 +3,7 @@ title: C#を使用してPDFページを回転させる
 linktitle: PDFページの回転
 type: docs
 weight: 50
-url: ja/net/rotate-pages/
+url: /ja/net/rotate-pages/
 description: このトピックでは、既存のPDFファイルのページの向きをプログラムで回転する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 このトピックでは、C#を使用して既存のPDFファイルのページの向きをプログラムで更新または変更する方法について説明します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも機能します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも機能します。
 
 ## ページの向きを変更する
 

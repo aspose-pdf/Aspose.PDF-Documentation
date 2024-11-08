@@ -3,7 +3,7 @@ title: Использование текстовой аннотации для P
 linktitle: Текстовая аннотация
 type: docs
 weight: 10
-url: ru/net/text-annotation/
+url: /ru/net/text-annotation/
 description: Aspose.PDF для .NET позволяет добавлять, получать и удалять текстовую аннотацию из вашего PDF документа.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 ## Как добавить текстовую аннотацию в существующий PDF-файл
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Текстовая аннотация - это аннотация, прикрепленная к определенному месту в документе PDF. Когда закрыта, аннотация отображается в виде иконки; когда открыта, должно отображаться всплывающее окно, содержащее текст заметки выбранным читателем шрифтом и размером.
 
@@ -127,7 +127,7 @@ pdfDocument.Save(dataDir);
 
 Она не должна иметь собственного потока внешнего вида или связанных действий и должна быть идентифицирована по записи Popup в словаре аннотаций родителя.
 
-Следующий фрагмент кода показывает, как добавить [Аннотацию всплывающего окна](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) на страницу PDF с использованием примера добавления родительской [Аннотации линии](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
+Следующий фрагмент кода показывает, как добавить [Аннотацию всплывающего окна](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) на страницу PDF с использованием примера добавления родительской [Аннотации линии](/pdf/ru/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
 
 ```csharp
 using Aspose.Pdf.Annotations;

@@ -1,7 +1,7 @@
 ---
 title: JavaScriptの利用方法
 type: docs
-url: ja/net/working-with-javascript/
+url: /ja/net/working-with-javascript/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -83,7 +83,7 @@ PDF文書は、Acrobatソフトウェア内だけでなく、Webブラウザー�
 - Acrobat JavaScriptはHTMLページ内のオブジェクトにアクセスできません。同様に、HTML JavaScriptはPDFファイル内のオブジェクトにアクセスできません。
 - HTML JavaScriptはWindowなどのオブジェクトを操作できます。Acrobat JavaScriptはこの特定のオブジェクトにアクセスできませんが、PDF固有のオブジェクトを操作できます。
 
-[Aspose.PDF for .NET](/pdf/net/) を使用して、ドキュメントレベルとページレベルの両方にJavaScriptを追加できます。JavaScriptを追加するには：
+[Aspose.PDF for .NET](/pdf/ja/net/) を使用して、ドキュメントレベルとページレベルの両方にJavaScriptを追加できます。JavaScriptを追加するには：
 
 ### ドキュメントまたはページアクションにJavaScriptを追加
 

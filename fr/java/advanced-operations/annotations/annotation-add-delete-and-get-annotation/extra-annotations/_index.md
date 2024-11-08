@@ -4,7 +4,7 @@ title: Utilisation de types supplémentaires d'annotations PDF
 linktitle: Annotations supplémentaires  
 type: docs  
 weight: 60  
-url: fr/java/extra-annotations/  
+url: /fr/java/extra-annotations/  
 description: Cette section décrit comment ajouter, obtenir et supprimer des types supplémentaires d'annotations de votre document PDF.  
 lastmod: "2021-11-24"  
 sitemap:  

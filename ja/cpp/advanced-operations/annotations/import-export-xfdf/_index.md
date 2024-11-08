@@ -3,7 +3,7 @@ title: XFDF形式の注釈をインポートおよびエクスポートする方
 linktitle: XFDF形式の注釈をインポートおよびエクスポートする
 type: docs
 weight: 40
-url: ja/cpp/import-export-xfdf/
+url: /ja/cpp/import-export-xfdf/
 description: C++とAspose.PDF for C++ライブラリを使用してXFDF形式で注釈をインポートおよびエクスポートできます。
 lastmod: "2021-12-02"
 sitemap:

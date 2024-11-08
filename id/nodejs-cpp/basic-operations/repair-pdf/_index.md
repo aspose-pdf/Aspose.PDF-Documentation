@@ -3,7 +3,7 @@ title: Memperbaiki PDF di Node.js
 linktitle: Memperbaiki PDF
 type: docs
 weight: 10
-url: id/nodejs-cpp/repair-pdf/
+url: /id/nodejs-cpp/repair-pdf/
 description: Topik ini menjelaskan cara Memperbaiki PDF di lingkungan Node.js.
 lastmod: "2023-11-16"
 sitemap:

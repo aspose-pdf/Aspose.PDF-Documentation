@@ -2,7 +2,7 @@
 title: PDF에서 양식 필드 꾸미기
 type: docs
 weight: 20
-url: ko/java/decorate-form-field/
+url: /ko/java/decorate-form-field/
 description: 이 섹션에서는 FormEditor 클래스를 사용하여 PDF에서 양식 필드를 꾸미는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

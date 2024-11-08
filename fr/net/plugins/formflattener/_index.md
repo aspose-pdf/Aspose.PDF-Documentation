@@ -2,7 +2,7 @@
 title: Form Exporter
 type: docs
 weight: 60
-url: fr/net/plugins/formflattener/
+url: /fr/net/plugins/formflattener/
 description: Comment aplatir les champs de formulaire dans les fichiers PDF en utilisant le plugin Aspose.PDF FormFlattener
 lastmod: "2024-01-24"
 ---

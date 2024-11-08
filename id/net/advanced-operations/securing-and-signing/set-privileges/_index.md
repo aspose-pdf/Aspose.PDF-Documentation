@@ -3,7 +3,7 @@ title: Atur Hak Akses, Enkripsi dan Dekripsi PDF
 linktitle: Enkripsi dan Dekripsi Berkas PDF
 type: docs
 weight: 20
-url: id/net/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /id/net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Enkripsi Berkas PDF dengan C# menggunakan Berbagai Tipe dan Algoritma Enkripsi. Juga, dekripsi Berkas PDF menggunakan Kata Sandi Pemilik.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mengatur Privilese pada File PDF yang Ada
 

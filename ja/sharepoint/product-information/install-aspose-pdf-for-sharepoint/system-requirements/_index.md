@@ -2,7 +2,7 @@
 title: システム要件
 type: docs
 weight: 10
-url: ja/sharepoint/system-requirements/
+url: /ja/sharepoint/system-requirements/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIにはサーバーとクライアントの要件があり、Microsoft SharePoint Serverを実行しているコンピューターが必要です。
 ---

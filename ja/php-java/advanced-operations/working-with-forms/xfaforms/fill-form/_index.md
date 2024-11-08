@@ -3,7 +3,7 @@ title: AcroFormsを埋める
 linktitle: AcroFormsを埋める
 type: docs
 weight: 20
-url: ja/php-java/fill-form/
+url: /ja/php-java/fill-form/
 description: このセクションでは、Aspose.PDF for PHP via Javaを使用してPDFドキュメントのフォームフィールドに記入する方法を説明します。
 lastmod: "2024-06-05"
 sitemap:

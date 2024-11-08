@@ -6,7 +6,7 @@ type: docs
 
 weight: 30
 
-url: pt/jasperreports/feature-tour/
+url: /pt/jasperreports/feature-tour/
 
 lastmod: "2021-06-05"
 
@@ -18,8 +18,8 @@ lastmod: "2021-06-05"
 
 
 
-- [Implantação Fácil e Leve](/pdf/jasperreports/easy-and-lightweight-deployment/)
+- [Implantação Fácil e Leve](/pdf/pt/jasperreports/easy-and-lightweight-deployment/)
 
-- [Licenciamento Simples e Acessível](/pdf/jasperreports/simple-and-affordable-licensing/)
+- [Licenciamento Simples e Acessível](/pdf/pt/jasperreports/simple-and-affordable-licensing/)
 
-- [Suporte Técnico Gratuito de Classe Mundial](/pdf/jasperreports/world-class-free-technical-support/)
+- [Suporte Técnico Gratuito de Classe Mundial](/pdf/pt/jasperreports/world-class-free-technical-support/)

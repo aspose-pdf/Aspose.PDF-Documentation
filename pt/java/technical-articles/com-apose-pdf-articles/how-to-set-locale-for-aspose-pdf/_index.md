@@ -2,7 +2,7 @@
 title: Como Definir Localidade para Aspose.PDF
 type: docs
 weight: 30
-url: pt/java/how-to-set-locale-for-aspose-pdf/
+url: /pt/java/how-to-set-locale-for-aspose-pdf/
 lastmod: "2022-01-27"
 ---
 

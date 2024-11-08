@@ -2,7 +2,7 @@
 title: Dividir archivo PDF en páginas individuales en Python
 type: docs
 weight: 80
-url: es/java/split-pdf-file-into-individual-pages-in-python/
+url: /es/java/split-pdf-file-into-individual-pages-in-python/
 lastmod: "2021-06-05"
 ---
 

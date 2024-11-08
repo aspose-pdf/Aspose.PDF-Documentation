@@ -3,7 +3,7 @@ title: إضافة ختم نصي في ملف PDF
 linktitle: الأختام النصية في ملف PDF
 type: docs
 weight: 20
-url: ar/cpp/text-stamps-in-the-pdf-file/
+url: /ar/cpp/text-stamps-in-the-pdf-file/
 description: إضافة ختم نصي إلى ملف PDF باستخدام فئة TextStamp مع C++.
 lastmod: "2021-12-05"
 sitemap:

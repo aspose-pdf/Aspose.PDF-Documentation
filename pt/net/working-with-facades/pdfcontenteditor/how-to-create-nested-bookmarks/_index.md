@@ -2,7 +2,7 @@
 title: Adicionando Marcadores ao Arquivo PDF
 type: docs
 weight: 20
-url: pt/net/how-to-create-nested-bookmarks/
+url: /pt/net/how-to-create-nested-bookmarks/
 description: Esta seção explica como criar Marcadores Aninhados com a Classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

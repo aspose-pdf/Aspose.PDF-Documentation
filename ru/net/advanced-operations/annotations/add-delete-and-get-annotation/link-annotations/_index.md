@@ -3,7 +3,7 @@ title: Использование аннотаций ссылок в PDF
 linktitle: Аннотации ссылок
 type: docs
 weight: 70
-url: ru/net/link-annotations/
+url: /ru/net/link-annotations/
 description: Aspose.PDF для .NET позволяет добавлять, получать и удалять аннотации ссылок в вашем PDF документе.
 lastmod: "2024-07-28"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 ## Добавление аннотации ссылки в существующий PDF файл
 
-> Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+> Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Аннотация [Link Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) представляет собой гиперссылку, место назначения в другом месте и документ. Согласно стандарту PDF, аннотация ссылки может использоваться в трех случаях: открытие представления страницы, открытие файла и открытие веб-страницы.
 

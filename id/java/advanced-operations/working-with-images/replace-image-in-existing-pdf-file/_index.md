@@ -3,7 +3,7 @@ title: Mengganti Gambar dalam File PDF yang Ada
 linktitle: Ganti Gambar
 type: docs
 weight: 70
-url: id/java/replace-image-in-existing-pdf-file/
+url: /id/java/replace-image-in-existing-pdf-file/
 description: Bagian ini menjelaskan tentang mengganti gambar dalam file PDF yang ada menggunakan pustaka Java.
 lastmod: "2021-06-05"
 ---

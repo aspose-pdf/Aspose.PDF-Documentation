@@ -3,7 +3,7 @@ title: Extraer Imágenes de PDF JavaScript
 linktitle: Extraer Imágenes de PDF
 type: docs
 weight: 20
-url: es/javascript-cpp/extract-images-from-the-pdf-file/
+url: /es/javascript-cpp/extract-images-from-the-pdf-file/
 description: Cómo extraer una parte de la imagen de un PDF utilizando el kit de herramientas Aspose.PDF para JavaScript.
 lastmod: "2023-09-05"
 sitemap:

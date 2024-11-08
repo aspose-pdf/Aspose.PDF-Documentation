@@ -3,7 +3,7 @@ title: PDFからタグ付きコンテンツを抽出する
 linktitle: タグ付きコンテンツを抽出
 type: docs
 weight: 20
-url: ja/java/extract-tagged-content-from-tagged-pdfs/
+url: /ja/java/extract-tagged-content-from-tagged-pdfs/
 description: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントからタグ付きコンテンツを抽出する方法について説明します
 lastmod: "2021-06-05"
 sitemap:

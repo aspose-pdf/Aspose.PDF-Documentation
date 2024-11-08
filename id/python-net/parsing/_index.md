@@ -4,7 +4,7 @@ title: Parse PDF dokumen
 linktitle: Parse PDF dokumen  
 type: docs  
 weight: 80  
-url: id/python-net/parsing/  
+url: /id/python-net/parsing/  
 description: Apakah Anda ingin memparse dokumen PDF? Temukan berbagai metode ekstraksi data PDF dengan Aspose.PDF untuk Python melalui .NET.  
 lastmod: "2021-06-05"  
 sitemap:  

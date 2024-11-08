@@ -3,7 +3,7 @@ title: حفظ مستند PDF
 linktitle: حفظ
 type: docs
 weight: 30
-url: ar/java/save-pdf-document/
+url: /ar/java/save-pdf-document/
 description: تعلم كيفية حفظ ملف PDF باستخدام مكتبة Aspose.PDF لـ Java.
 lastmod: "2021-06-05"
 sitemap:

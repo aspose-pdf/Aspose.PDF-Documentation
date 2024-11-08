@@ -3,7 +3,7 @@ title: PDF 멀티미디어 주석 사용하기 C#
 linktitle: 멀티미디어 주석
 type: docs
 weight: 40
-url: ko/net/multimedia-annotation/
+url: /ko/net/multimedia-annotation/
 description: Aspose.PDF for .NET을 사용하면 PDF 문서에서 멀티미디어 주석을 추가, 가져오기 및 삭제할 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -98,7 +98,7 @@ PDF 문서에 외부 비디오 링크를 추가할 필요가 있을 때는 [Movi
 - void Update(): 주석의 데이터 구조를 생성합니다. 이 메소드는 마지막에 호출해야 합니다.
 - void SetPoster(Stream): 비디오의 포스터 즉, 플레이어가 활동하지 않을 때 보여지는 그림을 설정합니다.
 
-[Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동하는 다음 코드 조각도 있습니다.
+[Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동하는 다음 코드 조각도 있습니다.
 
 ## 스크린 주석 추가하기
 
@@ -368,7 +368,7 @@ document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
 document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
 ```
 
-이 기능의 자세한 정보와 가능성에 대해서는 [폼 작업하기](/pdf/net/acroforms/)도 참조하십시오.
+이 기능의 자세한 정보와 가능성에 대해서는 [폼 작업하기](/pdf/ko/net/acroforms/)도 참조하십시오.
 
 PDF 문서에서는 3D CAD 또는 3D 모델링 소프트웨어로 생성된 고품질 3D 콘텐츠를 볼 수 있으며 PDF 문서에 포함됩니다. 마치 손으로 들고 있는 것처럼 모든 방향으로 3D 요소를 회전할 수 있습니다.
 

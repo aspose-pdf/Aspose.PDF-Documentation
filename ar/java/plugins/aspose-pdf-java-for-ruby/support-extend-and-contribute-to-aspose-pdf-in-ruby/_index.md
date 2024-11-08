@@ -2,7 +2,7 @@
 title: دعم، تمديد والمساهمة في Aspose.Pdf بلغة روبي
 type: docs
 weight: 30
-url: ar/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
+url: /ar/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

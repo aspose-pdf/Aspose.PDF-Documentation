@@ -3,7 +3,7 @@ title: حذف الصور من ملف PDF
 linktitle: حذف الصور
 type: docs
 weight: 20
-url: ar/java/delete-images-from-pdf-file/
+url: /ar/java/delete-images-from-pdf-file/
 description: يشرح هذا القسم كيفية حذف الصور من ملف PDF باستخدام Aspose.PDF لـ Java.
 lastmod: "2021-06-05"
 ---

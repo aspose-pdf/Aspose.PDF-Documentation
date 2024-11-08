@@ -3,7 +3,7 @@ title: Menggabungkan file PDF menggunakan .NET 5
 linktitle: Cara menggabungkan PDF
 type: docs
 weight: 75
-url: id/net/how-to-concatenate-pdf-files-in-different-ways/
+url: /id/net/how-to-concatenate-pdf-files-in-different-ways/
 description: Artikel ini menjelaskan cara-cara untuk menggabungkan sejumlah file PDF yang ada menjadi satu file PDF tunggal.
 lastmod: "2021-06-05"
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Artikel ini menjelaskan bagaimana Anda dapat [Menggabungkan](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) beberapa Dokumen PDF menjadi satu Dokumen PDF dengan bantuan Komponen [Aspose.PDF for .NET](/pdf/net/). [Aspose.PDF for .NET](/pdf/net/) membuat pekerjaan ini menjadi sangat mudah.
+Artikel ini menjelaskan bagaimana Anda dapat [Menggabungkan](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) beberapa Dokumen PDF menjadi satu Dokumen PDF dengan bantuan Komponen [Aspose.PDF for .NET](/pdf/id/net/). [Aspose.PDF for .NET](/pdf/id/net/) membuat pekerjaan ini menjadi sangat mudah.
 
 {{% /alert %}}
 

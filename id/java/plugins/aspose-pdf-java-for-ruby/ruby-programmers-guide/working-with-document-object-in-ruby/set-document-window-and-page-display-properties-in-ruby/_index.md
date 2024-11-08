@@ -2,7 +2,7 @@
 title: Setel Properti Jendela Dokumen dan Tampilan Halaman di Ruby
 type: docs
 weight: 100
-url: id/java/set-document-window-and-page-display-properties-in-ruby/
+url: /id/java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

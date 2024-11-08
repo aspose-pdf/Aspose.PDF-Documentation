@@ -2,7 +2,7 @@
 title: تصدير بيانات Excel لملء نموذج PDF
 type: docs
 weight: 10
-url: ar/net/export-excel-worksheet-data-to-fill-pdf-form/
+url: /ar/net/export-excel-worksheet-data-to-fill-pdf-form/
 description: تشرح هذه القسم كيف يمكنك تصدير بيانات ورقة العمل Excel لملء نموذج PDF باستخدام فئة AutoFiller.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-يوفر [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF لـ .NET](/pdf/net/) طرقًا متنوعة لملء نماذج Pdf. يمكنك استيراد البيانات من ملف XML أو DFD أو XFDF، استخدام API وحتى يمكنك استخدام البيانات من ورقة عمل Excel. سنستخدم طريقة [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) لفئة [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) من [Aspose.Cells](https://docs.aspose.com//cells/net) لتصدير البيانات من ورقة Excel إلى كائن DataTable. ثم نحتاج إلى استيراد هذه البيانات إلى نموذج Pdf باستخدام طريقة [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) من فئة [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). تأكد من أن اسم العمود في DataTable هو نفس اسم الحقل في نموذج PDF.
+يوفر [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF لـ .NET](/pdf/ar/net/) طرقًا متنوعة لملء نماذج Pdf. يمكنك استيراد البيانات من ملف XML أو DFD أو XFDF، استخدام API وحتى يمكنك استخدام البيانات من ورقة عمل Excel. سنستخدم طريقة [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) لفئة [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) من [Aspose.Cells](https://docs.aspose.com//cells/net) لتصدير البيانات من ورقة Excel إلى كائن DataTable. ثم نحتاج إلى استيراد هذه البيانات إلى نموذج Pdf باستخدام طريقة [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) من فئة [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). تأكد من أن اسم العمود في DataTable هو نفس اسم الحقل في نموذج PDF.
 
 {{% /alert %}}
 

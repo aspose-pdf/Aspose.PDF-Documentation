@@ -3,7 +3,7 @@ title: Comment Fusionner des PDF en utilisant Python
 linktitle: Fusionner des fichiers PDF
 type: docs
 weight: 50
-url: fr/python-net/merge-pdf-documents/
+url: /fr/python-net/merge-pdf-documents/
 keywords: "fusionner plusieurs pdf en un seul pdf python, combiner plusieurs pdf en un seul python, fusionner plusieurs pdf en un seul python"
 description: Cette page explique comment fusionner des documents PDF en un seul fichier PDF avec Python.
 lastmod: "2023-04-14"

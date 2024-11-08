@@ -3,7 +3,7 @@ title: إضافة كائن قوس إلى ملف PDF
 linktitle: إضافة قوس
 type: docs
 weight: 10
-url: ar/cpp/add-arc/
+url: /ar/cpp/add-arc/
 description: تشرح هذه المقالة كيفية إنشاء كائن قوس إلى ملف PDF باستخدام Aspose.PDF لـ C++.
 lastmod: "2021-12-18"
 sitemap:

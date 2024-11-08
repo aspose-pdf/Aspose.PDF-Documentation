@@ -2,7 +2,7 @@
 title: PDFページの分割
 type: docs
 weight: 60
-url: ja/net/split-pdf-pages/
+url: /ja/net/split-pdf-pages/
 description: このセクションでは、PdfFileEditorクラスを使用してAspose.PDF FacadesでPDFページを分割する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

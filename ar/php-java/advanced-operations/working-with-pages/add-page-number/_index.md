@@ -3,7 +3,7 @@ title: إضافة رقم الصفحة إلى PDF
 linktitle: إضافة رقم الصفحة
 type: docs
 weight: 100
-url: ar/php-java/add-page-number/
+url: /ar/php-java/add-page-number/
 description: يسمح لك Aspose.PDF for PHP عبر Java بإضافة ختم رقم الصفحة إلى ملف PDF الخاص بك باستخدام فئة PageNumber Stamp.
 lastmod: "2024-06-05"
 sitemap:

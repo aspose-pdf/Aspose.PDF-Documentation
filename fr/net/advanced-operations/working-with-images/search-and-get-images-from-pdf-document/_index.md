@@ -3,7 +3,7 @@ title: Get and Search Images in PDF
 linktitle: Search and Get Images
 type: docs
 weight: 60
-url: fr/net/search-and-get-images-from-pdf-document/
+url: /fr/net/search-and-get-images-from-pdf-document/
 description: Cette section explique comment rechercher et extraire des images d'un document PDF avec la bibliothèque Aspose.PDF.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 L'ImagePlacementAbsorber vous permet de rechercher parmi les images sur toutes les pages d'un document PDF.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Pour rechercher un document entier pour les images :
 

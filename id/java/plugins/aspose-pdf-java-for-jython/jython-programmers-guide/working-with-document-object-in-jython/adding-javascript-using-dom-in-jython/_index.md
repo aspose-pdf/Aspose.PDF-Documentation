@@ -2,7 +2,7 @@
 title: Menambahkan JavaScript menggunakan DOM di Jython
 type: docs
 weight: 10
-url: id/java/adding-javascript-using-dom-in-jython/
+url: /id/java/adding-javascript-using-dom-in-jython/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Работа с AcroForms с использованием Python
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ru/python-net/acroforms/
+url: /ru/python-net/acroforms/
 description: С помощью Aspose.PDF для Python вы можете создать форму с нуля, заполнить поле формы в PDF-документе, извлечь данные из формы и т.д.
 lastmod: "2023-02-17"
 sitemap:
@@ -89,9 +89,9 @@ PDF 1.7 поддерживает два различных метода инте
 
 Для более подробного изучения возможностей Java-библиотеки, см. следующие статьи:
 
-- [Создание AcroForm](/pdf/python-net/create-form) - создание формы с нуля с помощью Python.
-- [Заполнить AcroForm](/pdf/python-net/fill-form) - заполните поле формы в вашем PDF документе.
-- [Извлечь AcroForm](/pdf/python-net/extract-form) - получите значение из всех или отдельного поля PDF документа.
+- [Создание AcroForm](/pdf/ru/python-net/create-form) - создание формы с нуля с помощью Python.
+- [Заполнить AcroForm](/pdf/ru/python-net/fill-form) - заполните поле формы в вашем PDF документе.
+- [Извлечь AcroForm](/pdf/ru/python-net/extract-form) - получите значение из всех или отдельного поля PDF документа.
 
 <script type="application/ld+json">
 {

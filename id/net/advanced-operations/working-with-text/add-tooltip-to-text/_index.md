@@ -3,7 +3,7 @@ title: PDF Tooltip menggunakan C#
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: id/net/pdf-tooltip/
+url: /id/net/pdf-tooltip/
 description: Pelajari cara menambahkan tooltip pada fragmen teks dalam PDF menggunakan C# dan Aspose.PDF
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Pelajari cara menambahkan tooltip pada fragmen teks dalam PDF menggunakan C# dan Aspose.PDF"
 }
 </script>
-Kode berikut juga dapat digunakan dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga dapat digunakan dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan Tooltip pada Teks yang Dicari dengan Menambahkan Tombol Tak Terlihat
 

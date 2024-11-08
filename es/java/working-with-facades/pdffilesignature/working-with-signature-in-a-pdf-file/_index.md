@@ -2,7 +2,7 @@
 title: Trabajando con Firma en Archivo PDF
 type: docs
 weight: 40
-url: es/java/working-with-signature-in-a-pdf-file/
+url: /es/java/working-with-signature-in-a-pdf-file/
 description: Esta sección explica cómo trabajar con Firma en un Archivo PDF usando la clase PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

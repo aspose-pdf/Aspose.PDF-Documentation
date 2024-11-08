@@ -3,7 +3,7 @@ title: C++ を使用して AcroForm データを抽出する
 linktitle: データ AcroForm を抽出する
 type: docs
 weight: 30
-url: ja/cpp/extract-form/
+url: /ja/cpp/extract-form/
 description: このセクションでは、Aspose.PDF for C++ を使用して PDF ドキュメントからフォームを抽出する方法を説明します。
 lastmod: "2021-12-01"
 sitemap:

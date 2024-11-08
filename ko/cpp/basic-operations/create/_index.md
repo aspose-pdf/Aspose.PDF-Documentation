@@ -3,7 +3,7 @@ title: C++를 사용하여 PDF 문서 생성
 linktitle: 생성
 type: docs
 weight: 10
-url: ko/cpp/create-document/
+url: /ko/cpp/create-document/
 description: PDF 파일 작업의 가장 인기 있고 기본적인 작업은 처음부터 문서를 만드는 것입니다. Aspose.PDF for C++ 라이브러리를 사용하세요.
 lastmod: "2021-06-05"
 sitemap:

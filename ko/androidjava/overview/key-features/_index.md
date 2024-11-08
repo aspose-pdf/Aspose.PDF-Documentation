@@ -3,7 +3,7 @@ title: Aspose.PDF의 주요 기능
 linktitle: 주요 기능
 type: docs
 weight: 20
-url: ko/androidjava/key-features/
+url: /ko/androidjava/key-features/
 description: Java를 통한 Android용 Aspose.PDF는 PDF 문서 작업의 주요 기능을 보여줍니다.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Atualizar Dimensões da Página em PHP
 type: docs
 weight: 90
-url: pt/java/update-page-dimensions-in-php/
+url: /pt/java/update-page-dimensions-in-php/
 lastmod: "2021-06-05"
 ---
 

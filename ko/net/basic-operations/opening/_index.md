@@ -3,7 +3,7 @@ title: 프로그래밍적으로 PDF 문서 열기
 linktitle: PDF 열기
 type: docs
 weight: 20
-url: ko/net/open-pdf-document/
+url: /ko/net/open-pdf-document/
 description: C# Aspose.PDF for .NET PDF 라이브러리를 사용하여 PDF 파일을 여는 방법을 알아보세요. 기존 PDF, 스트림에서의 문서, 암호화된 PDF 문서를 열 수 있습니다.
 aliases:
     - /net/opening-a-pdf-document/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## 기존 PDF 문서 열기
 

@@ -3,7 +3,7 @@ title: Converter PDF para documentos Word em JavaScript
 linktitle: Converter PDF para Word
 type: docs
 weight: 10
-url: pt/javascript-cpp/convert-pdf-to-doc/
+url: /pt/javascript-cpp/convert-pdf-to-doc/
 lastmod: "2023-08-04"
 description: Aprenda a escrever código JavaScript para conversão de PDF para DOC(DOCX) diretamente na Web.
 sitemap:
@@ -22,7 +22,7 @@ Para editar o conteúdo de um arquivo PDF no Microsoft Word ou outros processado
 
 Aspose.PDF para JavaScript apresenta a você o aplicativo online gratuito ["PDF para DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), onde você pode experimentar investigar a funcionalidade e a qualidade com que ele funciona.
 
-[![Converter PDF para DOC](/pdf/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![Converter PDF para DOC](/pdf/pt/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## Converter PDF para DOC
@@ -91,7 +91,7 @@ O seguinte trecho de código JavaScript mostra um exemplo simples de conversão 
 
 Aspose.PDF para JavaScript apresenta a você a aplicação online gratuita ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), onde você pode tentar investigar a funcionalidade e a qualidade com que funciona.
 
-[![Aspose.PDF Convertion PDF to Word Free App](/pdf/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Convertion PDF to Word Free App](/pdf/pt/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

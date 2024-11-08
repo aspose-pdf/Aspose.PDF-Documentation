@@ -3,7 +3,7 @@ title: Comment créer un PDF en utilisant C#
 linktitle: Créer un document PDF
 type: docs
 weight: 10
-url: fr/net/create-pdf-document/
+url: /fr/net/create-pdf-document/
 description: Créer et formater le document PDF avec Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Nous cherchons toujours un moyen de générer des documents PDF et de travailler avec eux dans des projets C# de manière plus précise, exacte et efficace. Avoir des fonctions faciles à utiliser d'une bibliothèque nous permet de suivre davantage le travail, et moins sur les détails lourds de temps de la tentative de génération de PDFs, que ce soit en .NET.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Créer (ou Générer) un document PDF en utilisant le langage C#
 

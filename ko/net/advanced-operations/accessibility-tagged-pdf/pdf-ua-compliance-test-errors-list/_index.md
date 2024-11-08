@@ -3,7 +3,7 @@ title: PDF-UA 준수 테스트 - 오류 목록
 linktitle: PDF-UA 준수 테스트 - 오류 목록
 type: docs
 weight: 50
-url: ko/net/pdf-ua-compliance-test-errors-list/
+url: /ko/net/pdf-ua-compliance-test-errors-list/
 description: 이 글은 Aspose.PDF API와 C# 또는 VB를 사용하여 PDF/UA 준수 테스트 중 발생할 수 있는 오류 목록을 보여줍니다.
 lastmod: "2022-02-17"
 sitemap:

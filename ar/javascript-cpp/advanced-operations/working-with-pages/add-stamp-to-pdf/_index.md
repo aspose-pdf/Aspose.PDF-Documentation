@@ -3,7 +3,7 @@ title: إضافة أختام الصور في ملف PDF باستخدام JavaScr
 linktitle: أختام الصور في ملف PDF
 type: docs
 weight: 60
-url: ar/javascript-cpp/stamping/
+url: /ar/javascript-cpp/stamping/
 description: إضافة ختم الصورة إلى مستند PDF الخاص بك باستخدام وظيفة AsposePdfAddStamp مع مجموعة أدوات JavaScript.
 lastmod: "2023-04-15"
 sitemap:

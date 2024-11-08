@@ -3,7 +3,7 @@ title: Excluir Páginas de PDF programaticamente Python
 linktitle: Excluir Páginas de PDF
 type: docs
 weight: 80
-url: pt/python-net/delete-pages/
+url: /pt/python-net/delete-pages/
 description: Você pode excluir páginas do seu arquivo PDF usando a biblioteca Aspose.PDF para Python via .NET.
 lastmod: "2023-04-17"
 sitemap:

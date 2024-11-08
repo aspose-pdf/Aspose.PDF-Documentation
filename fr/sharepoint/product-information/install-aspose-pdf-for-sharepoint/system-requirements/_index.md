@@ -2,7 +2,7 @@
 title: Exigences du système
 type: docs
 weight: 10
-url: fr/sharepoint/system-requirements/
+url: /fr/sharepoint/system-requirements/
 lastmod: "2020-12-16"
 description: PDF SharePoint API a des exigences serveur et client, ainsi que la nécessité d'un ordinateur exécutant Microsoft SharePoint Server.
 ---

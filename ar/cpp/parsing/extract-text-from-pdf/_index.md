@@ -3,7 +3,7 @@ title: استخراج النص من PDF
 linktitle: استخراج النص من PDF
 type: docs
 weight: 10
-url: ar/cpp/extract-text-from-pdf/
+url: /ar/cpp/extract-text-from-pdf/
 description: يسمح Aspose.PDF باستخراج أنواع مختلفة من المعلومات. تحتوي هذه القسم على مقالات حول استخراج النصوص من مستندات PDF باستخدام Aspose.PDF في C++.
 lastmod: "2021-06-05"
 sitemap:
@@ -17,5 +17,5 @@ sitemap:
 
 ## المقالات في هذا القسم
 
-- [استخراج النص من PDF](/pdf/cpp/extract-text-from-all-pdf/)
-- [استخراج فقرة من PDF](/pdf/cpp/extract-paragraph-from-pdf/)
+- [استخراج النص من PDF](/pdf/ar/cpp/extract-text-from-all-pdf/)
+- [استخراج فقرة من PDF](/pdf/ar/cpp/extract-paragraph-from-pdf/)

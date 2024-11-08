@@ -3,7 +3,7 @@ title: Eliminar Imágenes del Archivo PDF a través de JavaScript
 linktitle: Eliminar Imágenes
 type: docs
 weight: 20
-url: es/javascript-cpp/delete-images-from-pdf-file/
+url: /es/javascript-cpp/delete-images-from-pdf-file/
 description: Esta sección explica cómo eliminar Imágenes del Archivo PDF usando Aspose.PDF para JavaScript.
 lastmod: "2022-02-17"
 ---

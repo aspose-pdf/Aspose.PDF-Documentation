@@ -2,7 +2,7 @@
 title: PDF 인쇄 작업
 type: docs
 weight: 10
-url: ko/java/print-pdf-file/
+url: /ko/java/print-pdf-file/
 description: 이 섹션에서는 PdfViewer 클래스를 사용하여 Aspose.PDF Facades로 PDF 파일을 인쇄하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

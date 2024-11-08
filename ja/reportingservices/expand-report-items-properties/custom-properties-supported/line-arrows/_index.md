@@ -2,7 +2,7 @@
 title: 線の矢印
 type: docs
 weight: 20
-url: ja/reportingservices/line-arrows/
+url: /ja/reportingservices/line-arrows/
 lastmod: "2021-06-05"
 ---
 

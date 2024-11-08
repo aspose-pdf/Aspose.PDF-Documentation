@@ -3,7 +3,7 @@ title: إضافة نص إلى ملف PDF
 linktitle: إضافة نص إلى ملف PDF
 type: docs
 weight: 10
-url: ar/java/add-text-to-pdf-file/
+url: /ar/java/add-text-to-pdf-file/
 description: يصف هذا المقال مختلف الجوانب المتعلقة بالعمل مع النص في Aspose.PDF. تعرف على كيفية إضافة النص إلى PDF، إضافة شظايا HTML، أو استخدام الخطوط المخصصة OTF.
 lastmod: "2021-06-05"
 sitemap:

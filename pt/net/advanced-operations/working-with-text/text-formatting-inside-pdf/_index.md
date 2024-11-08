@@ -3,7 +3,7 @@ title: Formatação de Texto dentro de PDF usando C#
 linktitle: Formatação de Texto dentro de PDF
 type: docs
 weight: 30
-url: pt/net/text-formatting-inside-pdf/
+url: /pt/net/text-formatting-inside-pdf/
 description: Esta página explica como formatar texto dentro do seu arquivo PDF. Inclui adicionar indentação de linha, adicionar borda de texto, adicionar texto sublinhado, entre outros.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Como adicionar Indentação de Linha ao PDF
 

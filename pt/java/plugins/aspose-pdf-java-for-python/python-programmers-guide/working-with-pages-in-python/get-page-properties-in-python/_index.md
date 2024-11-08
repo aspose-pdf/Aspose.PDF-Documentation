@@ -2,7 +2,7 @@
 title: Obter Propriedades da Página em Python
 type: docs
 weight: 50
-url: pt/java/get-page-properties-in-python/
+url: /pt/java/get-page-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

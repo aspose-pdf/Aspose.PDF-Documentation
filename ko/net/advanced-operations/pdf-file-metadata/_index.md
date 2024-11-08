@@ -3,7 +3,7 @@ title: PDF 파일 메타데이터 작업 | C#
 linktitle: PDF 파일 메타데이터
 type: docs
 weight: 140
-url: ko/net/pdf-file-metadata/
+url: /ko/net/pdf-file-metadata/
 description: 이 섹션에서는 PDF 파일 정보를 얻는 방법, PDF 파일에서 XMP 메타데이터를 얻는 방법, PDF 파일 정보를 설정하는 방법에 대해 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "이 섹션에서는 PDF 파일 정보를 얻는 방법, PDF 파일에서 XMP 메타데이터를 얻는 방법, PDF 파일 정보를 설정하는 방법에 대해 설명합니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ## PDF 파일 정보 얻기
 

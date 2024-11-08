@@ -3,7 +3,7 @@ title: 주석 추가, 삭제 및 가져오기
 linktitle: 주석 추가, 삭제 및 가져오기
 type: docs
 weight: 20
-url: ko/net/add-delete-and-get-annotation/
+url: /ko/net/add-delete-and-get-annotation/
 description: Aspose.PDF for .NET을 사용하면 PDF 파일에서 주석을 추가, 삭제 및 가져올 수 있습니다. 작업을 해결하기 위해 모든 주석 목록을 확인하세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,13 +81,13 @@ sitemap:
 
 Aspose.PDF for .NET 라이브러리에서 사용 가능한 다양한 종류의 주석을 그룹으로 묶었습니다:
 
-- [PDF 텍스트 주석](/pdf/net/text-annotation/)
-- [PDF 하이라이트 주석](/pdf/net/highlights-annotation/)
-- [PDF 도형 주석](/pdf/net/figures-annotation/)
-- [멀티미디어 주석](/pdf/net/multimedia-annotation/)
-- [PDF 스티키 주석](/pdf/net/sticky-annotations/)
-- [링크 주석](/pdf/net/link-annotations/)
-- [추가 주석](/pdf/net/extra-annotations/)
+- [PDF 텍스트 주석](/pdf/ko/net/text-annotation/)
+- [PDF 하이라이트 주석](/pdf/ko/net/highlights-annotation/)
+- [PDF 도형 주석](/pdf/ko/net/figures-annotation/)
+- [멀티미디어 주석](/pdf/ko/net/multimedia-annotation/)
+- [PDF 스티키 주석](/pdf/ko/net/sticky-annotations/)
+- [링크 주석](/pdf/ko/net/link-annotations/)
+- [추가 주석](/pdf/ko/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

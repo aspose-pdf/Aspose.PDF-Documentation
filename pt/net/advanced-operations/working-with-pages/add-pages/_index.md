@@ -3,7 +3,7 @@ title: Adicionar Páginas ao Documento PDF
 linktitle: Adicionar Páginas
 type: docs
 weight: 10
-url: pt/net/add-pages/
+url: /pt/net/add-pages/
 description: Este artigo ensina como inserir (adicionar) uma página na localização desejada no arquivo PDF. Aprenda como mover, remover (deletar) páginas de um arquivo PDF usando C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -85,7 +85,7 @@ Esta seção mostra como adicionar páginas a um PDF usando C#.
 
 Aspose.PDF para .NET permite inserir uma página em um documento PDF em qualquer local do arquivo, bem como adicionar páginas ao final de um arquivo PDF.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ### Inserir Página Vazia em um Arquivo PDF no Local Desejado
 

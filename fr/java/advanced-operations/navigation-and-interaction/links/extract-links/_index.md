@@ -3,7 +3,7 @@ title: Extraire les Liens du Fichier PDF
 linktitle: Extraire les Liens
 type: docs
 weight: 30
-url: fr/java/extract-links/
+url: /fr/java/extract-links/
 description: Extraire les liens d'un PDF avec Java. Ce sujet vous explique comment extraire des liens en utilisant la classe AnnotationSelector.
 lastmod: "2021-06-05"
 sitemap:

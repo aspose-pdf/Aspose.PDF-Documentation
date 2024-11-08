@@ -3,7 +3,7 @@ title: Travailler avec les actions dans PDF
 linktitle: Actions
 type: docs
 weight: 20
-url: fr/net/actions/
+url: /fr/net/actions/
 description: Cette section explique comment ajouter des actions au document et aux champs de formulaire de manière programmatique avec C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter un hyperlien dans un fichier PDF
 

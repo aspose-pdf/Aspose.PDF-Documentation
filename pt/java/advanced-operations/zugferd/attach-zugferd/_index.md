@@ -3,7 +3,7 @@ title: Criando PDF conforme PDF/3-A e anexando fatura ZUGFeRD em Java
 linktitle: Anexar ZUGFeRD ao PDF
 type: docs
 weight: 10
-url: pt/java/attach-zugferd/
+url: /pt/java/attach-zugferd/
 description: Aprenda a gerar um documento PDF com ZUGFeRD no Aspose.PDF para Java
 lastmod: "2024-01-18"
 sitemap:

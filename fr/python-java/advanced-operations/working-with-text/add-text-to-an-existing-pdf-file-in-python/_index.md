@@ -2,7 +2,7 @@
 title: Ajouter du texte à un fichier PDF existant en Python
 type: docs
 weight: 20
-url: fr/python-java/add-text-to-an-existing-pdf-file-in-python/
+url: /fr/python-java/add-text-to-an-existing-pdf-file-in-python/
 ---
 
 Pour ajouter une chaîne de texte dans un document Pdf en utilisant **Aspose.PDF Java for Python**, invoquez simplement le module **AddText**.

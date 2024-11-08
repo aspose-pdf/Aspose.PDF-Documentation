@@ -3,7 +3,7 @@ title: Aspose.PDF DOM APIの基本
 linktitle: DOM APIの基本
 type: docs
 weight: 110
-url: ja/java/basics-of-dom-api/
+url: /ja/java/basics-of-dom-api/
 description: Aspose.PDF for Javaは、PDFドキュメントの構造をオブジェクトとして表現するためにDOMの概念を使用します。ここでは、この構造の説明を読むことができます。
 lastmod: "2021-06-05"
 sitemap:

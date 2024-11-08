@@ -2,7 +2,7 @@
 title: Définir les Informations du Fichier PDF
 type: docs
 weight: 40
-url: fr/net/set-pdf-file-information/
+url: /fr/net/set-pdf-file-information/
 description: Cette section explique comment définir les informations du fichier PDF avec Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

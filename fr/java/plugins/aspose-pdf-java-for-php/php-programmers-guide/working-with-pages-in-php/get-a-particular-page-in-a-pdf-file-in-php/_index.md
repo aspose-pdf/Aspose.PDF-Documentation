@@ -2,7 +2,7 @@
 title: Obtenir une Page Particulière dans un Fichier PDF en PHP
 type: docs
 weight: 30
-url: fr/java/get-a-particular-page-in-a-pdf-file-in-php/
+url: /fr/java/get-a-particular-page-in-a-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

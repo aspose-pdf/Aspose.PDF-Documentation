@@ -3,7 +3,7 @@ title: 対応ファイル形式
 linktitle: 対応ファイル形式
 type: docs
 weight: 70
-url: ja/java/supported-file-formats/
+url: /ja/java/supported-file-formats/
 description: このページは、Aspose.PDF for Java が読み込みおよび保存できるファイル形式を示しています。
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: DNN PDF 가져오기 모듈
 type: docs
 weight: 10
-url: ko/net/dnn-pdf-import-module/
+url: /ko/net/dnn-pdf-import-module/
 description: DotNetNuke에 PDF 가져오기 모듈을 설치하고 사용하는 방법을 알아보세요.
 lastmod: "2021-06-05"
 sitemap:

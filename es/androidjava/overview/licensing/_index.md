@@ -3,7 +3,7 @@ title: Licencias y limitaciones
 linktitle: Licencias y limitaciones
 type: docs
 weight: 50
-url: es/androidjava/licensing/
+url: /es/androidjava/licensing/
 description: Aspose.PDF para Android a través de Java invita a sus clientes a obtener una licencia Clásica y una Licencia Medida. Así como usar una licencia limitada para explorar mejor el producto.
 lastmod: "2021-06-05"
 sitemap:

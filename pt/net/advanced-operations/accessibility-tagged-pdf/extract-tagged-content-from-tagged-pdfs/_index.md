@@ -3,7 +3,7 @@ title: Extrair Conteúdo Marcado de PDF
 linktitle: Extrair Conteúdo Marcado
 type: docs
 weight: 20
-url: pt/net/extract-tagged-content-from-tagged-pdfs/
+url: /pt/net/extract-tagged-content-from-tagged-pdfs/
 description: Este artigo explica como extrair conteúdo marcado de um documento PDF usando Aspose.PDF para .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Neste artigo, você aprenderá como extrair conteúdo marcado de um documento PDF usando C#.
 
-O trecho de código a seguir também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O trecho de código a seguir também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Obtendo Conteúdo de PDF Marcado
 

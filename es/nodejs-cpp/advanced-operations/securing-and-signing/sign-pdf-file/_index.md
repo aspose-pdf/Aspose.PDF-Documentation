@@ -3,7 +3,7 @@ title: Añadir firma digital en PDF en Node.js
 linktitle: Firmar PDF digitalmente
 type: docs
 weight: 70
-url: es/nodejs-cpp/sign-pdf/
+url: /es/nodejs-cpp/sign-pdf/
 description: Firmar digitalmente documentos PDF en el entorno de Node.js.
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: Pythonを使用してPDFファイルから画像を抽出する
 linktitle: 画像を抽出
 type: docs
 weight: 30
-url: ja/python-net/extract-images-from-pdf-file/
+url: /ja/python-net/extract-images-from-pdf-file/
 description: このセクションでは、Pythonライブラリを使用してPDFファイルから画像を抽出する方法を示します。
 lastmod: "2023-02-17"
 ---

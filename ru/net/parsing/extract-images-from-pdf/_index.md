@@ -3,7 +3,7 @@ title: Извлечение изображений из PDF в C#
 linktitle: Извлечение изображений из PDF
 type: docs
 weight: 20
-url: ru/net/extract-images-from-the-pdf-file/
+url: /ru/net/extract-images-from-the-pdf-file/
 description: Как извлечь часть изображения из PDF с использованием Aspose.PDF для .NET в C#
 lastmod: "2021-06-05"
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 Индекс изображения возвращает объект [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Этот объект предоставляет метод Save, который можно использовать для сохранения извлеченного изображения. Следующий фрагмент кода показывает, как извлечь изображения из файла PDF.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
  ```csharp
  // Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET

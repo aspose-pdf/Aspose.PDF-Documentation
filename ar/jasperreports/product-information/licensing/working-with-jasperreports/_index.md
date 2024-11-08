@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: ar/jasperreports/working-with-jasperreports/
+url: /ar/jasperreports/working-with-jasperreports/
 
 lastmod: "2021-06-05"
 
@@ -24,11 +24,11 @@ Aspose.Words for JasperReports متاح للتقييم المجاني وغير �
 
 هناك عدة طرق لتفعيل الترخيص:
 
-- [استدعاء setLicense](/pdf/jasperreports/working-with-jasperreports/#call-setlicense).
+- [استدعاء setLicense](/pdf/ar/jasperreports/working-with-jasperreports/#call-setlicense).
 
-- [تعيين مُعَامِل المصدِّر في الكود](/pdf/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
+- [تعيين مُعَامِل المصدِّر في الكود](/pdf/ar/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
 
-- [تعيين معلمة المُصدّر في **applicationContext.xml**](/pdf/jasperreports/working-with-jasperserver/).
+- [تعيين معلمة المُصدّر في **applicationContext.xml**](/pdf/ar/jasperreports/working-with-jasperserver/).
 
 
 

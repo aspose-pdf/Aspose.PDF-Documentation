@@ -2,7 +2,7 @@
 title: Modifier les annotations dans votre fichier PDF (facades)
 type: docs
 weight: 50
-url: fr/java/modify-annotations/
+url: /fr/java/modify-annotations/
 description: Cette section explique comment modifier les annotations d'un fichier PDF en XFDF avec Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -48,4 +48,4 @@ La deuxième méthode vous permet de supprimer toutes les annotations d'un type 
 
 ## Voir aussi
 
-Essayez de comparer et de trouver une manière de travailler avec les annotations qui vous convient. Apprenons la section [Annotations PDF](/pdf/java/annotations/).
+Essayez de comparer et de trouver une manière de travailler avec les annotations qui vous convient. Apprenons la section [Annotations PDF](/pdf/fr/java/annotations/).

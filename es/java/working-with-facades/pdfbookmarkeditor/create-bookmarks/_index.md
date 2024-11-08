@@ -2,7 +2,7 @@
 title: Crear Marcadores de Todas las Páginas (facades)
 type: docs
 weight: 10
-url: es/java/create-bookmark/
+url: /es/java/create-bookmark/
 description: Esta sección explica cómo crear marcadores con Aspose.PDF Facades usando la Clase PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

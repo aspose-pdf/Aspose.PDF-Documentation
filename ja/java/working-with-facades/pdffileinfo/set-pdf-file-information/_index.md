@@ -2,7 +2,7 @@
 title: PDFファイル情報の設定 - ファサード
 type: docs
 weight: 20
-url: ja/java/set-pdf-information/
+url: /ja/java/set-pdf-information/
 description: このセクションでは、PdfFileInfoクラスを使用してAspose.PDFファサードでPDFファイル情報を設定する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

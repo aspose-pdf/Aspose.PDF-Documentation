@@ -3,7 +3,7 @@ title: Добавление вложения в документ PDF
 linktitle: Добавление вложения в документ PDF
 type: docs
 weight: 10
-url: ru/net/add-attachment-to-pdf-document/
+url: /ru/net/add-attachment-to-pdf-document/
 description: Эта страница описывает, как добавить вложение в файл PDF с помощью библиотеки Aspose.PDF для .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ aliases:
 </script>
 Вложения могут содержать разнообразную информацию и быть различных типов файлов. Эта статья объясняет, как добавить вложение к файлу PDF.
 
-Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/ru/net/drawing/).
 
 1. Создайте новый проект на C#.
 1. Добавьте ссылку на Aspose.PDF DLL.

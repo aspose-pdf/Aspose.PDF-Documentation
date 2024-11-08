@@ -1,7 +1,7 @@
 ---
 title: JavaScript를 다루는 방법
 type: docs
-url: ko/net/working-with-javascript/
+url: /ko/net/working-with-javascript/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -84,7 +84,7 @@ PDF 문서는 Acrobat 소프트웨어뿐만 아니라 웹 브라우저 내에서
 - Acrobat 자바스크립트는 HTML 페이지 내의 객체에 접근할 수 없습니다. 마찬가지로, HTML 자바스크립트는 PDF 파일 내의 객체에 접근할 수 없습니다.
 - HTML 자바스크립트는 Window와 같은 객체를 조작할 수 있습니다. Acrobat 자바스크립트는 이 특정 객체에 접근할 수 없지만 PDF 특정 객체를 조작할 수 있습니다.
 
-[Aspose.PDF for .NET](/pdf/net/)을 사용하여 문서와 페이지 수준에서 자바스크립트를 추가할 수 있습니다. 자바스크립트를 추가하는 방법:
+[Aspose.PDF for .NET](/pdf/ko/net/)을 사용하여 문서와 페이지 수준에서 자바스크립트를 추가할 수 있습니다. 자바스크립트를 추가하는 방법:
 
 ### 문서 또는 페이지 액션에 자바스크립트 추가
 

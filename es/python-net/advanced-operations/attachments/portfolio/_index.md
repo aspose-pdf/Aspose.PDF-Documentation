@@ -3,7 +3,7 @@ title: Trabajando con Portafolio en PDF usando Python
 linktitle: Portafolio
 type: docs
 weight: 20
-url: es/python-net/portfolio/
+url: /es/python-net/portfolio/
 description: Cómo Crear un Portafolio en PDF con Python. Debe usar un archivo de Microsoft Excel, un documento de Word y un archivo de imagen para crear un Portafolio en PDF.
 lastmod: "2023-02-17"
 sitemap:

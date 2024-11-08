@@ -3,7 +3,7 @@ title: تقديم الجدول من مصدر البيانات
 linktitle: تقديم الجدول من مصدر البيانات
 type: docs
 weight: 30
-url: ar/net/render-table-from-the-data-source/
+url: /ar/net/render-table-from-the-data-source/
 description: تشرح هذه الصفحة كيفية تقديم الجدول من مصدر البيانات باستخدام مكتبة Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

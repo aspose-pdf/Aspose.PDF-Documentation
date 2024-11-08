@@ -3,7 +3,7 @@ title: Bekerja dengan Gambar dalam PDF
 linktitle: Bekerja dengan Gambar
 type: docs
 weight: 40
-url: id/php-java/working-with-images/
+url: /id/php-java/working-with-images/
 description: Bagian ini menjelaskan fitur bekerja dengan gambar dalam file PDF menggunakan PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -23,4 +23,4 @@ mempelajari artikel berikut untuk menyelesaikan tugas Anda.
 
 Anda dapat melakukan hal-hal berikut:
 
-- [Tambahkan Gambar ke File PDF yang Ada](/pdf/php-java/add-image-to-existing-pdf-file/) - tambahkan gambar dan referensi dari satu gambar dalam dokumen PDF, setelah itu kendalikan kualitas.
+- [Tambahkan Gambar ke File PDF yang Ada](/pdf/id/php-java/add-image-to-existing-pdf-file/) - tambahkan gambar dan referensi dari satu gambar dalam dokumen PDF, setelah itu kendalikan kualitas.

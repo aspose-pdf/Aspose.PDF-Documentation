@@ -3,7 +3,7 @@ title: Manipuler un document PDF en Python via .NET
 linktitle: Manipuler un document PDF
 type: docs
 weight: 20
-url: fr/python-net/manipulate-pdf-document/
+url: /fr/python-net/manipulate-pdf-document/
 description: Cet article contient des informations sur la façon de valider un document PDF pour la norme PDF A en utilisant Python, comment travailler avec le TOC, comment définir une date d'expiration pour le PDF, etc.
 keywords: "manipuler pdf python"
 lastmod: "2023-04-13"

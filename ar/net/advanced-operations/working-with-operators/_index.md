@@ -3,7 +3,7 @@ title: العمل مع العوامل
 linktitle: العمل مع العوامل
 type: docs
 weight: 170
-url: ar/net/operators/
+url: /ar/net/operators/
 description: يشرح هذا الموضوع كيفية استخدام العوامل مع Aspose.PDF. توفر فئات العوامل ميزات رائعة للتلاعب بملفات PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -106,9 +106,9 @@ aliases:
    - استخدام عامل Do لرسم الصورة على الصفحة.
 1. أخيرًا، استخدام عامل GRestore لحفظ الحالة الرسومية المحدثة.
 
-هذه القطعة البرمجية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+هذه القطعة البرمجية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 ```
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 الشفرة التالية تظهر كيفية استخدام عوامل تشغيل PDF.
 

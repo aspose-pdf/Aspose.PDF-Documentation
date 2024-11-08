@@ -2,7 +2,7 @@
 title: Dapatkan Nilai Opsi Tombol
 type: docs
 weight: 40
-url: id/net/get-button-option-value/
+url: /id/net/get-button-option-value/
 description: Bagian ini menjelaskan cara mendapatkan Nilai Opsi Tombol dengan Aspose.PDF Facades menggunakan Kelas Form.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Pythonを使用してPDFでポートフォリオを作成する
 linktitle: ポートフォリオ
 type: docs
 weight: 20
-url: ja/python-net/portfolio/
+url: /ja/python-net/portfolio/
 description: Pythonを使用してPDFポートフォリオを作成する方法。Microsoft Excelファイル、Wordドキュメント、画像ファイルを使用してPDFポートフォリオを作成する必要があります。
 lastmod: "2023-02-17"
 sitemap:

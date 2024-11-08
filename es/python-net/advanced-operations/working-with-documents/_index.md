@@ -3,7 +3,7 @@ title: Trabajando con Documentos PDF usando Python
 linktitle: Trabajando con Documentos
 type: docs
 weight: 10
-url: es/python-net/working-with-documents/
+url: /es/python-net/working-with-documents/
 description: Este artículo describe qué manipulaciones se pueden hacer con el documento con la biblioteca Aspose.PDF para Python a través de .NET.
 lastmod: "2023-04-12"
 sitemap:
@@ -83,14 +83,14 @@ Los documentos PDF se pueden ver e imprimir, pero no siempre se editan fácilmen
 
 Puedes hacer lo siguiente:
 
-- [Crear Documento PDF](/pdf/python-net/create-pdf-document/) - crear un documento PDF simple.
-- [Formatear Documento PDF](/pdf/python-net/formatting-pdf-document/) - crear un documento, obtener y establecer propiedades del documento, incrustar fuentes y otras operaciones con archivos PDF.
+- [Crear Documento PDF](/pdf/es/python-net/create-pdf-document/) - crear un documento PDF simple.
+- [Formatear Documento PDF](/pdf/es/python-net/formatting-pdf-document/) - crear un documento, obtener y establecer propiedades del documento, incrustar fuentes y otras operaciones con archivos PDF.
 
-- [Manipular Documento PDF](/pdf/python-net/manipulate-pdf-document/) - validar un documento PDF para el estándar PDF A, trabajar con TOC, establecer fecha de expiración del PDF, etc.
-- [Optimizar PDF](/pdf/python-net/optimize-pdf/) - optimizar el contenido de la página, optimizar el tamaño del archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
-- [Unir PDF](/pdf/python-net/merge-pdf-documents/) - unir múltiples archivos PDF en un único documento PDF usando Python.
-- [Dividir PDF](/pdf/python-net/split-document/) - dividir páginas PDF en archivos PDF individuales en tus aplicaciones de Python.
-- [Trabajar con Encabezados](/pdf/python-net/working-with-headings/) - puedes crear numeración en el encabezado de tu documento PDF con Python.
+- [Manipular Documento PDF](/pdf/es/python-net/manipulate-pdf-document/) - validar un documento PDF para el estándar PDF A, trabajar con TOC, establecer fecha de expiración del PDF, etc.
+- [Optimizar PDF](/pdf/es/python-net/optimize-pdf/) - optimizar el contenido de la página, optimizar el tamaño del archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
+- [Unir PDF](/pdf/es/python-net/merge-pdf-documents/) - unir múltiples archivos PDF en un único documento PDF usando Python.
+- [Dividir PDF](/pdf/es/python-net/split-document/) - dividir páginas PDF en archivos PDF individuales en tus aplicaciones de Python.
+- [Trabajar con Encabezados](/pdf/es/python-net/working-with-headings/) - puedes crear numeración en el encabezado de tu documento PDF con Python.
 
 <script type="application/ld+json">
 {

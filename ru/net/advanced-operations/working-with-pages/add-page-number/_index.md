@@ -3,7 +3,7 @@ title: Добавление номера страницы в PDF с помощь
 linktitle: Добавить номер страницы
 type: docs
 weight: 100
-url: ru/net/add-page-number/
+url: /ru/net/add-page-number/
 description: Aspose.PDF для .NET позволяет добавлять штамп с номером страницы в ваш PDF-файл с использованием класса PageNumber Stamp.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 Все документы должны иметь номера страниц. Номера страниц облегчают читателю поиск различных частей документа.
 **Aspose.PDF для .NET** позволяет добавлять номера страниц с помощью PageNumberStamp.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Вы можете использовать класс [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp), чтобы добавить штамп с номером страницы в файл PDF.
 Вы можете использовать класс [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) для добавления штампа с номером страницы в PDF-файл.

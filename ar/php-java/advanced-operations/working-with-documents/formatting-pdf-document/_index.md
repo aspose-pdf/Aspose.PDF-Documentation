@@ -3,7 +3,7 @@ title: تنسيق مستند PDF
 linktitle: تنسيق مستند PDF
 type: docs
 weight: 20
-url: ar/php-java/formatting-pdf-document/
+url: /ar/php-java/formatting-pdf-document/
 description: تنسيق مستند PDF باستخدام Aspose.PDF لـ PHP عبر Java. استخدم الكود المقتطف التالي لحل مهامك.
 lastmod: "2024-06-05"
 ---

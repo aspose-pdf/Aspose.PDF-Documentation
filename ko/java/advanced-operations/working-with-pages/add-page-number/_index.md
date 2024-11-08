@@ -3,7 +3,7 @@ title: Add Page Number to PDF
 linktitle: Add Page Number
 type: docs
 weight: 100
-url: ko/java/add-page-number/
+url: /ko/java/add-page-number/
 description: Aspose.PDF for Java를 사용하여 PageNumber Stamp 클래스를 사용하여 PDF 파일에 페이지 번호 스탬프를 추가할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: إنشاء تجميع الغلاف
 type: docs
 weight: 80
-url: ar/net/creating-a-wrapper-assembly/
+url: /ar/net/creating-a-wrapper-assembly/
 ---
 
 {{% alert color="primary" %}}

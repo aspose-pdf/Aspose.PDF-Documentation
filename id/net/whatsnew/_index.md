@@ -3,7 +3,7 @@ title: What's new
 linktitle: What's new
 type: docs
 weight: 10
-url: id/net/whatsnew/
+url: /id/net/whatsnew/
 description: Di halaman ini diperkenalkan fitur-fitur baru yang paling populer dalam Aspose.PDF untuk .NET yang telah diperkenalkan dalam rilis terbaru.
 sitemap:
     changefreq: "monthly"

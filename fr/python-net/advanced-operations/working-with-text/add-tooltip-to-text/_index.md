@@ -3,7 +3,7 @@ title: PDF Tooltip en utilisant Python
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: fr/python-net/pdf-tooltip/
+url: /fr/python-net/pdf-tooltip/
 description: Apprenez à ajouter une info-bulle au fragment de texte dans un PDF en utilisant Python et Aspose.PDF
 lastmod: "2024-02-17"
 sitemap:

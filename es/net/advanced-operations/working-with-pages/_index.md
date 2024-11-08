@@ -3,7 +3,7 @@ title: Trabajando con Páginas PDF en C#
 linktitle: Trabajando con Páginas
 type: docs
 weight: 20
-url: es/net/working-with-pages/
+url: /es/net/working-with-pages/
 description: Cómo agregar páginas, encabezados y pies de página, agregar marcas de agua puedes saber en esta sección. Aspose.PDF para .NET te explica todos los detalles sobre este tema.
 lastmod: "2022-02-17"
 sitemap:
@@ -87,20 +87,20 @@ Añade número de página usando la clase PageNumberStamp. Para añadir un Sello
 
 Eres capaz de hacer lo siguiente:
 
-- [Añadir Páginas](/pdf/net/add-pages/) - añadir páginas en la ubicación deseada o al final de un archivo PDF y eliminar una página de tu documento.
-- [Mover Páginas](/pdf/net/move-pages/) - mover páginas de un documento a otro.
-- [Mover Páginas](/pdf/net/move-pages/) - mueve páginas de un documento a otro.
-- [Eliminar Páginas](/pdf/net/delete-pages/) - elimina páginas de tu archivo PDF usando la colección PageCollection.
-- [Cambiar Tamaño de Página](/pdf/net/change-page-size/) - puedes cambiar el tamaño de la página PDF con un fragmento de código usando la biblioteca Aspose.PDF.
-- [Rotar Páginas](/pdf/net/rotate-pages/) - puedes cambiar la orientación de las páginas en un archivo PDF existente.
-- [Dividir Páginas](/pdf/net/split-document/) - puedes dividir archivos PDF en uno o múltiples PDF.
-- [Agregar Encabezados y/o Pies de Página](/pdf/net/add-headers-and-footers-of-pdf-file/) - agrega texto o imágenes en los encabezados y pies de página de tu archivo PDF.
-- [Recortar Páginas](/pdf/net/crop-pages/) - puedes recortar páginas en un documento PDF programáticamente con diferentes Propiedades de Página.
-- [Agregar Marcas de Agua](/pdf/net/add-watermarks/) - agrega marcas de agua en tu archivo PDF con la Clase Artifact.
-- [Agregar Numeración de Páginas en Archivo PDF](/pdf/net/add-page-number/) - la clase PageNumberStamp te ayudará a agregar un Número de Página en tu archivo PDF.
-- [Agregar Numeración de Páginas en Archivo PDF](/pdf/net/add-page-number/) - La clase PageNumberStamp te ayudará a agregar un número de página en tu archivo PDF.
-- [Agregar Fondos](/pdf/net/add-backgrounds/) - las imágenes de fondo se pueden utilizar para agregar una marca de agua.
-- [Estampado](/pdf/net/stamping/) - puedes usar la clase ImageStamp para agregar un sello de imagen a un archivo PDF y la clase TextStamp para agregar texto.
+- [Añadir Páginas](/pdf/es/net/add-pages/) - añadir páginas en la ubicación deseada o al final de un archivo PDF y eliminar una página de tu documento.
+- [Mover Páginas](/pdf/es/net/move-pages/) - mover páginas de un documento a otro.
+- [Mover Páginas](/pdf/es/net/move-pages/) - mueve páginas de un documento a otro.
+- [Eliminar Páginas](/pdf/es/net/delete-pages/) - elimina páginas de tu archivo PDF usando la colección PageCollection.
+- [Cambiar Tamaño de Página](/pdf/es/net/change-page-size/) - puedes cambiar el tamaño de la página PDF con un fragmento de código usando la biblioteca Aspose.PDF.
+- [Rotar Páginas](/pdf/es/net/rotate-pages/) - puedes cambiar la orientación de las páginas en un archivo PDF existente.
+- [Dividir Páginas](/pdf/es/net/split-document/) - puedes dividir archivos PDF en uno o múltiples PDF.
+- [Agregar Encabezados y/o Pies de Página](/pdf/es/net/add-headers-and-footers-of-pdf-file/) - agrega texto o imágenes en los encabezados y pies de página de tu archivo PDF.
+- [Recortar Páginas](/pdf/es/net/crop-pages/) - puedes recortar páginas en un documento PDF programáticamente con diferentes Propiedades de Página.
+- [Agregar Marcas de Agua](/pdf/es/net/add-watermarks/) - agrega marcas de agua en tu archivo PDF con la Clase Artifact.
+- [Agregar Numeración de Páginas en Archivo PDF](/pdf/es/net/add-page-number/) - la clase PageNumberStamp te ayudará a agregar un Número de Página en tu archivo PDF.
+- [Agregar Numeración de Páginas en Archivo PDF](/pdf/es/net/add-page-number/) - La clase PageNumberStamp te ayudará a agregar un número de página en tu archivo PDF.
+- [Agregar Fondos](/pdf/es/net/add-backgrounds/) - las imágenes de fondo se pueden utilizar para agregar una marca de agua.
+- [Estampado](/pdf/es/net/stamping/) - puedes usar la clase ImageStamp para agregar un sello de imagen a un archivo PDF y la clase TextStamp para agregar texto.
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: Mengatur warna latar belakang untuk PDF di Node.js
 linktitle: Mengatur warna latar belakang
 type: docs
 weight: 80
-url: id/nodejs-cpp/set-background-color/
+url: /id/nodejs-cpp/set-background-color/
 description: Mengatur warna latar belakang untuk file PDF Anda dengan Node.js melalui C++.
 lastmod: "2023-11-16"
 sitemap:

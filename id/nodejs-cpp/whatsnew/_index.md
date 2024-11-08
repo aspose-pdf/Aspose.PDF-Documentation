@@ -3,7 +3,7 @@ title: Apa yang baru
 linktitle: Apa yang baru
 type: docs
 weight: 10
-url: id/nodejs-cpp/whatsnew/
+url: /id/nodejs-cpp/whatsnew/
 description: Halaman ini memperkenalkan fitur baru paling populer di Aspose.PDF untuk Node.js melalui C++ yang telah diperkenalkan dalam rilis terbaru.
 sitemap:
     changefreq: "monthly"

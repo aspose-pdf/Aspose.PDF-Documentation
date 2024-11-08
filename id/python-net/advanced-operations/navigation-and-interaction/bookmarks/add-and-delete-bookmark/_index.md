@@ -3,7 +3,7 @@ title: Tambah dan Hapus Penanda Buku menggunakan Python
 linktitle: Tambah dan Hapus Penanda Buku
 type: docs
 weight: 10
-url: id/python-net/add-and-delete-bookmark/
+url: /id/python-net/add-and-delete-bookmark/
 description: Anda dapat menambahkan penanda buku ke dokumen PDF dengan Python. Dimungkinkan untuk menghapus semua atau penanda buku tertentu dari dokumen PDF.
 lastmod: "2023-02-17"
 sitemap:

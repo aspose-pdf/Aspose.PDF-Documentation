@@ -2,7 +2,7 @@
 title: Importer des données dans un fichier PDF - façades
 type: docs
 weight: 10
-url: fr/java/import-data-into-a-pdf-file-facades/
+url: /fr/java/import-data-into-a-pdf-file-facades/
 description: Cette section explique comment importer des données vers XML à partir d'un fichier PDF avec Aspose.PDF Facades en utilisant la classe Form.
 lastmod: "2021-06-05"
 ---

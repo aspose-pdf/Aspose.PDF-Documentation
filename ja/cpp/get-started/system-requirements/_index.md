@@ -3,7 +3,7 @@ title: System Requirements for C++
 linktitle: System Requirements
 type: docs
 weight: 30
-url: ja/cpp/system-requirements/
+url: /ja/cpp/system-requirements/
 description: このセクションでは、開発者が Aspose.PDF for C++ を使用して正常に作業するために必要なサポートされているオペレーティングシステムを一覧表示します。
 lastmod: "2021-11-08"
 sitemap:

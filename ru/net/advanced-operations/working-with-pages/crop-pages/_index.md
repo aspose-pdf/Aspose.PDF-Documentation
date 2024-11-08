@@ -3,7 +3,7 @@ title: Обрезка страниц PDF программно на C#
 linktitle: Обрезка страниц
 type: docs
 weight: 80
-url: ru/net/crop-pages/
+url: /ru/net/crop-pages/
 description: Вы можете получить свойства страницы, такие как ширина, высота, поля обрезки и области обрезки с помощью Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -88,7 +88,7 @@ sitemap:
 - **Page.Rect**: пересечение (обычно видимый прямоугольник) MediaBox и DropBox. Ниже приведена иллюстрация этих свойств.
 Для получения дополнительной информации, пожалуйста, посетите [эту страницу](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-Ниже приведен код, также работающий с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Ниже приведен код, также работающий с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Ниже приведен пример кода, показывающий, как обрезать страницу:
 

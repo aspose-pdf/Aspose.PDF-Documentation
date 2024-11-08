@@ -3,7 +3,7 @@ title: Ajouter un arrière-plan au PDF
 linktitle: Ajouter des arrière-plans
 type: docs
 weight: 110
-url: fr/java/add-backgrounds/
+url: /fr/java/add-backgrounds/
 descriptions: Ajouter une image d'arrière-plan à votre fichier PDF avec Java. Utilisez l'objet BackgroundArtifact.
 lastmod: "2021-06-05"
 sitemap:

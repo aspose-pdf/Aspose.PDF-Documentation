@@ -2,7 +2,7 @@
 title: التحكم في استثناء ملف PDF
 type: docs
 weight: 30
-url: ar/java/control-exception/
+url: /ar/java/control-exception/
 description: يشرح هذا الموضوع كيفية التحكم في الاستثناءات في ملف PDF باستخدام فئة PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

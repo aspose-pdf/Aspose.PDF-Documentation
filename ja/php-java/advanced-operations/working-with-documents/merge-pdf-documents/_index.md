@@ -3,7 +3,7 @@ title: PDFをプログラムで結合
 linktitle: PDFファイルを結合
 type: docs
 weight: 50
-url: ja/php-java/merge-pdf-documents/
+url: /ja/php-java/merge-pdf-documents/
 description: このページでは、PHPを使用して複数のPDFドキュメントを単一のPDFファイルに結合する方法を説明します。
 lastmod: "2024-06-05"
 ---

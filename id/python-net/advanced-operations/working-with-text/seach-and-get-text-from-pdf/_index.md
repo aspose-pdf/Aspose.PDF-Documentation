@@ -3,7 +3,7 @@ title: Cari dan Dapatkan Teks dari Halaman PDF
 linktitle: Cari dan Dapatkan Teks
 type: docs
 weight: 60
-url: id/python-net/search-and-get-text-from-pdf/
+url: /id/python-net/search-and-get-text-from-pdf/
 description: Artikel ini menjelaskan cara menggunakan berbagai alat untuk mencari dan mendapatkan teks dari Aspose.PDF untuk .NET.
 lastmod: "2024-02-17"
 sitemap:

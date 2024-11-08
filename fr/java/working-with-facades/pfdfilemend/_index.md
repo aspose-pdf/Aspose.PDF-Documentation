@@ -2,7 +2,7 @@
 title: PdfFileMend Class
 type: docs
 weight: 20
-url: fr/java/pdffilemend-class/
+url: /fr/java/pdffilemend-class/
 description: Cette section explique comment travailler avec Aspose.PDF Facades en utilisant la classe PdfFileMend.
 lastmod: "2021-06-05"
 sitemap:
@@ -33,7 +33,7 @@ Nous pouvons ajouter du texte de plusieurs manières.
 
 Vérifiez à quoi cela ressemble :
 
-![Ajouter du texte](/pdf/net/images/add_text.png)
+![Ajouter du texte](/pdf/fr/net/images/add_text.png)
 
 La deuxième façon d'ajouter [FormattedText](https://reference.aspose.com/pdf//java/com.aspose.pdf.facades/formattedtext). De plus, nous indiquons un rectangle dans lequel notre texte doit s'insérer.
 
@@ -99,7 +99,7 @@ public static void AddImage01()
     }
 ```
 
-![Ajouter une image](/pdf/net/images/add_image1.png)
+![Ajouter une image](/pdf/fr/net/images/add_image1.png)
 
 Considérons le deuxième extrait de code. En utilisant des variations des paramètres de la classe [CompositingParameters](https://reference.aspose.com/pdf/java/com.aspose.pdf/CompositingParameters), nous pouvons obtenir différents effets de conception. Nous avons essayé l'un d'eux.
 
@@ -125,7 +125,7 @@ Considérons le deuxième extrait de code. En utilisant des variations des param
 ```
 
 
-![Add Image](/pdf/net/images/add_image2.png)
+![Add Image](/pdf/fr/net/images/add_image2.png)
 
 Dans le code suivant, nous utilisons [ImageFilterType](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageFilterType). ImageFilterType indique le type de codec de flux qui sera utilisé pour l'encodage, par défaut Jpeg. Si vous chargez une image depuis le format PNG, elle sera alors enregistrée dans le document en tant que JPEG (ou dans un autre format que j'ai spécifié).
 

@@ -3,7 +3,7 @@ title: Añadir firma digital o firmar digitalmente PDF en JavaScript a través d
 linktitle: Firmar PDF digitalmente
 type: docs
 weight: 70
-url: es/javascript-cpp/sign-pdf/
+url: /es/javascript-cpp/sign-pdf/
 description: Firmar digitalmente documentos PDF usando JavaScript a través de C++.
 lastmod: "2023-02-17"
 sitemap:

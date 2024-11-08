@@ -3,7 +3,7 @@ title: العمل مع الإجراءات
 linktitle: الإجراءات
 type: docs
 weight: 20
-url: ar/java/actions/
+url: /ar/java/actions/
 description: يشرح هذا القسم كيفية إضافة الإجراءات إلى المستند وحقول النموذج برمجيًا باستخدام Java. تعلم كيفية إضافة، إنشاء، والحصول على الارتباط التشعبي في ملف PDF.
 lastmod: "2021-06-05"
 sitemap:

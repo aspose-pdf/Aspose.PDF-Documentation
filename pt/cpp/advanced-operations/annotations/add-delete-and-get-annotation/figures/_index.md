@@ -3,7 +3,7 @@ title: Adicionar Anotações de Figuras usando C++
 linktitle: Anotações de Figuras
 type: docs
 weight: 30
-url: pt/cpp/figures-annotation/
+url: /pt/cpp/figures-annotation/
 description: Este artigo descreve como adicionar, obter e excluir anotações de figuras do seu documento PDF com Aspose.PDF para C++
 lastmod: "2021-11-24"
 sitemap:

@@ -2,7 +2,7 @@
 title: Atualizar Dimensões da Página em Python
 type: docs
 weight: 90
-url: pt/java/update-page-dimensions-in-python/
+url: /pt/java/update-page-dimensions-in-python/
 lastmod: "2021-06-05"
 ---
 

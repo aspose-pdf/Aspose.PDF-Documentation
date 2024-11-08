@@ -3,7 +3,7 @@ title:  Add, Delete and Get Annotation
 type: docs
 linktitle: Add, Delete and Get Annotation
 weight: 20
-url: ru/java/add-delete-and-get-annotation/
+url: /ru/java/add-delete-and-get-annotation/
 description: С Aspose.PDF для Java вы можете добавлять, удалять и получать аннотацию из вашего PDF файла. Проверьте все списки аннотаций для решения вашей задачи.
 lastmod: "2021-11-28"
 sitemap:
@@ -17,10 +17,10 @@ sitemap:
 
 Мы объединили различные виды аннотаций, доступных для библиотеки Aspose.PDF для Java, в группы:
 
-- [PDF Text Annotation](/pdf/java/text-annotation/)
-- [PDF Highlights Annotation](/pdf/java/highlights-annotation/)
-- [PDF Figures Annotation](/pdf/java/figures-annotation/)
-- [Multimedia Annotation](/pdf/java/multimedia-annotation/)
+- [PDF Text Annotation](/pdf/ru/java/text-annotation/)
+- [PDF Highlights Annotation](/pdf/ru/java/highlights-annotation/)
+- [PDF Figures Annotation](/pdf/ru/java/figures-annotation/)
+- [Multimedia Annotation](/pdf/ru/java/multimedia-annotation/)
 
-- [PDF sticky Annotations](/pdf/java/sticky-annotations/)
-- [Дополнительные аннотации](/pdf/java/extra-annotations/)
+- [PDF sticky Annotations](/pdf/ru/java/sticky-annotations/)
+- [Дополнительные аннотации](/pdf/ru/java/extra-annotations/)

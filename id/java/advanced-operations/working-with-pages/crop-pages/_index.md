@@ -3,7 +3,7 @@ title: Pangkas Halaman PDF secara programatik
 linktitle: Pangkas Halaman
 type: docs
 weight: 80
-url: id/java/crop-pages/
+url: /id/java/crop-pages/
 description: Anda dapat mendapatkan properti halaman, seperti lebar, tinggi, bleed-, crop- dan trimbox menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

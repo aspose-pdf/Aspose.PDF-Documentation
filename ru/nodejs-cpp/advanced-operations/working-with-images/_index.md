@@ -3,7 +3,7 @@ title: Работа с изображениями в PDF в Node.js
 linktitle: Работа с изображениями
 type: docs
 weight: 40
-url: ru/nodejs-cpp/working-with-images/
+url: /ru/nodejs-cpp/working-with-images/
 description: Этот раздел описывает возможности работы с изображениями в PDF файле в Node.js.
 lastmod: "2023-11-16"
 sitemap:
@@ -15,5 +15,5 @@ sitemap:
 
 Вы можете выполнить следующие действия:
 
-- [Добавить изображение в PDF файл](/pdf/nodejs-cpp/add-image-to-pdf/) - добавление изображений в PDF в среде Node.js.
-- [Удалить изображения из PDF файла](/pdf/nodejs-cpp/delete-images-from-pdf-file/) - проверьте пример кода для удаления изображений из PDF файла.
+- [Добавить изображение в PDF файл](/pdf/ru/nodejs-cpp/add-image-to-pdf/) - добавление изображений в PDF в среде Node.js.
+- [Удалить изображения из PDF файла](/pdf/ru/nodejs-cpp/delete-images-from-pdf-file/) - проверьте пример кода для удаления изображений из PDF файла.

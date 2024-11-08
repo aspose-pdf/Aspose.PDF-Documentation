@@ -3,7 +3,7 @@ title: تعليق التظليل في PDF باستخدام بايثون
 linktitle: تعليق التظليل
 type: docs
 weight: 20
-url: ar/python-net/highlights-annotation/
+url: /ar/python-net/highlights-annotation/
 description: يتم تقديم التعليقات التوضيحية للترميز في النص كتظليل أو خطوط تحتية أو شطب أو خطوط تحتية متعرجة في نص المستند.
 lastmod: "2023-02-17"
 sitemap:

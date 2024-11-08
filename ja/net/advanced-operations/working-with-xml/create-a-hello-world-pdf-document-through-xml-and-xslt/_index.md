@@ -3,7 +3,7 @@ title: XSLTを使用してXMLからPDFを作成する
 linktitle: XSLTを使用してXMLからPDFを作成する
 type: docs
 weight: 10
-url: ja/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /ja/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: C#ライブラリは、入力XMLファイルがAspose.PDFスキーマに従う必要があることを前提に、XMLファイルをPDFドキュメントに変換する機能を提供します。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "C#ライブラリは、入力XMLファイルがAspose.PDFスキーマに従う必要があることを前提に、XMLファイルをPDFドキュメントに変換する機能を提供します。"
 }
 </script>
-以下のコードスニペットは[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 既存のXMLファイルにアプリケーションデータが含まれていて、これらのファイルを使用してPDFレポートを生成したい場合があります。XSLTを使用して既存のXMLドキュメントをAspose.Pdf互換のXMLドキュメントに変換し、PDFファイルを生成することができます。XMLとXSLTを使用してPDFを生成するには、3つのステップがあります。
 

@@ -2,7 +2,7 @@
 title: Extraer texto de sellos usando C#
 type: docs
 weight: 60
-url: es/net/extract-text-from-stamps/
+url: /es/net/extract-text-from-stamps/
 description: Aprende a usar la función especial de Aspose.PDF para .NET - extracción de texto de anotaciones de sello
 lastmod: "2021-01-30"
 sitemap:
@@ -19,7 +19,7 @@ Aspose.PDF para NET te permite extraer texto de anotaciones de sello. Para extra
 1. Definir un nuevo objeto de la clase `TextAbsorber`
 1. Usar el método visit de TextAbsorber para obtener el Texto
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 public static void ExtractText()

@@ -3,7 +3,7 @@ title: دمج PDF برمجياً
 linktitle: دمج ملفات PDF
 type: docs
 weight: 50
-url: ar/php-java/merge-pdf-documents/
+url: /ar/php-java/merge-pdf-documents/
 description: تشرح هذه الصفحة كيفية دمج مستندات PDF في ملف PDF واحد باستخدام PHP.
 lastmod: "2024-06-05"
 ---

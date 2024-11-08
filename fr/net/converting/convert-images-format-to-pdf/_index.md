@@ -3,7 +3,7 @@ title: Convert various Images formats to PDF in .NET
 linktitle: Convert Images to PDF
 type: docs
 weight: 60
-url: fr/net/convert-images-format-to-pdf/
+url: /fr/net/convert-images-format-to-pdf/
 lastmod: "2021-11-01"
 description: Convertir divers formats d'images tels que BMP, CGM, JPEG, DICOM, PNG, TIFF, EMF et SVG en PDF en utilisant C# .NET.
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 Cet article explique comment convertir divers formats d'images en PDF en utilisant C#. Il couvre ces sujets.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 _Format_ : **BMP**
 - [C# BMP en PDF](#csharp-bmp-to-pdf)

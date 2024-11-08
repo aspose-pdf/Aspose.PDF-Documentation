@@ -3,7 +3,7 @@ title: Adicionar Carimbos de Imagem em PDF Programaticamente
 linktitle: Carimbos de Imagem em Arquivo PDF
 type: docs
 weight: 10
-url: pt/cpp/image-stamps-in-pdf-page/
+url: /pt/cpp/image-stamps-in-pdf-page/
 description: Adicione o Carimbo de Imagem no seu documento PDF usando a classe ImageStamp com a biblioteca Aspose.PDF para C++.
 lastmod: "2021-12-08"
 sitemap:

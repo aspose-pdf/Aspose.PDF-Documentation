@@ -31,7 +31,7 @@ Aspose.PDF for SharePoint는 Microsoft SharePoint Server 2010과 함께 사용�
 
 
 
-이 문서에서는 Aspose.PDF for SharePoint의 [기능](/pdf/sharepoint/features/), [설치](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/), [평가 제한 사항](/pdf/sharepoint/evaluate-aspose-pdf/), [라이선스](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/), 일반적인 사용 사례 및 설정에 대해 설명합니다.
+이 문서에서는 Aspose.PDF for SharePoint의 [기능](/pdf/ko/sharepoint/features/), [설치](/pdf/ko/sharepoint/install-aspose-pdf-for-sharepoint/), [평가 제한 사항](/pdf/ko/sharepoint/evaluate-aspose-pdf/), [라이선스](/pdf/ko/sharepoint/license-aspose-pdf-for-sharepoint/), 일반적인 사용 사례 및 설정에 대해 설명합니다.
 
 {{% /alert %}}
 

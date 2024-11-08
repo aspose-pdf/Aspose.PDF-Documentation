@@ -3,7 +3,7 @@ title: PDFファイルに曲線オブジェクトを追加する
 linktitle: 曲線を追加
 type: docs
 weight: 30
-url: ja/java/add-curve/
+url: /ja/java/add-curve/
 description: この記事では、Aspose.PDF for Javaを使用してPDFに曲線オブジェクトを作成する方法について説明します。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Aspose.PDF Editor
 linktitle: Aspose.PDF Editor
 type: docs
 weight: 10
-url: ar/net/aspose-pdf-editor/
+url: /ar/net/aspose-pdf-editor/
 description: Aspose.PDF لـ .NET يُظهر محرر PDF HTML5 هو محرر PDF قائم على الويب مفتوح المصدر.
 lastmod: "2021-06-05"
 sitemap:

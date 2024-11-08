@@ -2,7 +2,7 @@
 title: 예외 제어 PDF 파일
 type: docs
 weight: 30
-url: ko/net/control-exception/
+url: /ko/net/control-exception/
 description: 이 주제는 PdfFileSecurity 클래스 클래스를 사용하여 PDF 파일에서 예외를 제어하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

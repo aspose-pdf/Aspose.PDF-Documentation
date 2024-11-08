@@ -2,7 +2,7 @@
 title: Memodifikasi Anotasi dalam File PDF Anda (facades)
 type: docs
 weight: 50
-url: id/java/modify-annotations/
+url: /id/java/modify-annotations/
 description: Bagian ini menjelaskan bagaimana memodifikasi anotasi dari file PDF ke XFDF dengan Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -48,4 +48,4 @@ Metode kedua memungkinkan Anda untuk menghapus semua anotasi dari jenis yang dit
 
 ## Lihat juga
 
-Cobalah untuk membandingkan dan menemukan cara bekerja dengan anotasi yang sesuai untuk Anda. Mari belajar bagian [Anotasi PDF](/pdf/java/annotations/).
+Cobalah untuk membandingkan dan menemukan cara bekerja dengan anotasi yang sesuai untuk Anda. Mari belajar bagian [Anotasi PDF](/pdf/id/java/annotations/).

@@ -3,7 +3,7 @@ title: العمل مع النص في PDF باستخدام C#
 linktitle: العمل مع النص
 type: docs
 weight: 30
-url: ar/net/working-with-text/
+url: /ar/net/working-with-text/
 description: تشرح هذه القسم مختلف تقنيات التعامل مع النصوص. تعلم كيفية إضافة، استبدال، تدوير، البحث عن النص باستخدام Aspose.PDF و C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,14 +80,14 @@ sitemap:
 
 أنت قادر على القيام بما يلي:
 
-- [إضافة نص إلى ملف PDF](/pdf/net/add-text-to-pdf-file/) - إضافة نص إلى PDF الخاص بك، استخدام الخطوط من الدفق والملفات، إضافة سلسلة HTML، إضافة رابط تشعبي، إلخ.
-- [تلميح PDF](/pdf/net/pdf-tooltip/) - يمكنك إضافة تلميح إلى نص تم البحث عنه من خلال إضافة زر غير مرئي باستخدام C#.
-- [تنسيق النص داخل PDF](/pdf/net/text-formatting-inside-pdf/) - العديد من الميزات التي يمكنك إضافتها إلى مستندك عند تنسيق النص داخله.
-- [تنسيق النص داخل ملف PDF](/pdf/net/text-formatting-inside-pdf/) - العديد من المزايا التي يمكنك إضافتها إلى مستندك عند تنسيق النص داخله.
-- [استبدال النص في ملف PDF](/pdf/net/replace-text-in-pdf/) - لاستبدال النص في جميع صفحات مستند PDF. أولاً يجب عليك استخدام TextFragmentAbsorber.
-- [تدوير النص داخل ملف PDF](/pdf/net/rotate-text-inside-pdf/) - تدوير النص داخل PDF باستخدام خاصية الدوران لفئة TextFragment.
-- [البحث عن النص واستخراجه من صفحات مستند PDF](/pdf/net/search-and-get-text-from-pdf/) - يمكنك استخدام فئة TextFragmentAbsorber للبحث واستخراج النص من الصفحات.
-- [تحديد فاصل الأسطر](/pdf/net/determine-line-break/) - يشرح هذا الموضوع كيفية تتبع كسر الأسطر لأجزاء النص المتعددة الخطوط.
+- [إضافة نص إلى ملف PDF](/pdf/ar/net/add-text-to-pdf-file/) - إضافة نص إلى PDF الخاص بك، استخدام الخطوط من الدفق والملفات، إضافة سلسلة HTML، إضافة رابط تشعبي، إلخ.
+- [تلميح PDF](/pdf/ar/net/pdf-tooltip/) - يمكنك إضافة تلميح إلى نص تم البحث عنه من خلال إضافة زر غير مرئي باستخدام C#.
+- [تنسيق النص داخل PDF](/pdf/ar/net/text-formatting-inside-pdf/) - العديد من الميزات التي يمكنك إضافتها إلى مستندك عند تنسيق النص داخله.
+- [تنسيق النص داخل ملف PDF](/pdf/ar/net/text-formatting-inside-pdf/) - العديد من المزايا التي يمكنك إضافتها إلى مستندك عند تنسيق النص داخله.
+- [استبدال النص في ملف PDF](/pdf/ar/net/replace-text-in-pdf/) - لاستبدال النص في جميع صفحات مستند PDF. أولاً يجب عليك استخدام TextFragmentAbsorber.
+- [تدوير النص داخل ملف PDF](/pdf/ar/net/rotate-text-inside-pdf/) - تدوير النص داخل PDF باستخدام خاصية الدوران لفئة TextFragment.
+- [البحث عن النص واستخراجه من صفحات مستند PDF](/pdf/ar/net/search-and-get-text-from-pdf/) - يمكنك استخدام فئة TextFragmentAbsorber للبحث واستخراج النص من الصفحات.
+- [تحديد فاصل الأسطر](/pdf/ar/net/determine-line-break/) - يشرح هذا الموضوع كيفية تتبع كسر الأسطر لأجزاء النص المتعددة الخطوط.
 
 <script type="application/ld+json">
 {

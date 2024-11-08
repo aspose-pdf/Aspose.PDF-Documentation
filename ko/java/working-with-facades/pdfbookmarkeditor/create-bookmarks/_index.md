@@ -2,7 +2,7 @@
 title: 모든 페이지의 북마크 만들기 (facades)
 type: docs
 weight: 10
-url: ko/java/create-bookmark/
+url: /ko/java/create-bookmark/
 description: 이 섹션에서는 PdfBookmarEditor 클래스를 사용하여 Aspose.PDF Facades로 북마크를 만드는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

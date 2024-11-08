@@ -2,7 +2,7 @@
 title: Menyisipkan Halaman Kosong ke dalam Berkas PDF di Python
 type: docs
 weight: 70
-url: id/java/insert-an-empty-page-into-a-pdf-file-in-python/
+url: /id/java/insert-an-empty-page-into-a-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: تحويل ملف PDF إلى صيغ أخرى
 linktitle: تحويل PDF إلى صيغ أخرى 
 type: docs
 weight: 90
-url: ar/java/convert-pdf-to-other-files/
+url: /ar/java/convert-pdf-to-other-files/
 lastmod: "2021-11-19"
 description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF لتحويل ملف PDF إلى صيغ ملفات أخرى.
 sitemap:

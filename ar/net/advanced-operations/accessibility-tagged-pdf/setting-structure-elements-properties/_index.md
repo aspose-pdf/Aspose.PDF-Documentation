@@ -3,7 +3,7 @@ title: تعيين خصائص عناصر الهيكل
 linktitle: تعيين خصائص عناصر الهيكل
 type: docs
 weight: 30
-url: ar/net/setting-structure-elements-properties/
+url: /ar/net/setting-structure-elements-properties/
 description: يمكنك تعيين خصائص عناصر الهيكل المختلفة في مستند PDF باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:

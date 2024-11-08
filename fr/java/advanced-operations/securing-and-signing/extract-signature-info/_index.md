@@ -3,7 +3,7 @@ title: Extraire des Informations sur l'Image et la Signature
 linktitle: Extraire des Informations sur l'Image et la Signature
 type: docs
 weight: 30
-url: fr/java/extract-image-and-signature-information/
+url: /fr/java/extract-image-and-signature-information/
 description: Vous pouvez extraire des images du champ de signature et extraire des informations sur la signature en utilisant la classe SignatureField avec Java.
 lastmod: "2021-06-05"
 sitemap:

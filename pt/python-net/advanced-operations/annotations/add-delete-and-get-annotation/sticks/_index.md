@@ -3,7 +3,7 @@ title: Anotações adesivas em PDF usando Python
 linktitle: Anotação adesiva
 type: docs
 weight: 50
-url: pt/python-net/sticky-annotations/
+url: /pt/python-net/sticky-annotations/
 description: Este tópico sobre anotações adesivas, como exemplo mostramos a Anotação de Marca d'água no texto.
 lastmod: "2023-02-17"
 sitemap:

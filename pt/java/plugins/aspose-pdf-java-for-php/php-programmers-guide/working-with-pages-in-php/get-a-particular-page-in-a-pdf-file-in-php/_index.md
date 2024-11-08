@@ -2,7 +2,7 @@
 title: Obter uma Página Específica em um Arquivo PDF em PHP
 type: docs
 weight: 30
-url: pt/java/obter-uma-pagina-especifica-em-um-arquivo-pdf-em-php/
+url: /pt/java/obter-uma-pagina-especifica-em-um-arquivo-pdf-em-php/
 lastmod: "2021-06-05"
 ---
 

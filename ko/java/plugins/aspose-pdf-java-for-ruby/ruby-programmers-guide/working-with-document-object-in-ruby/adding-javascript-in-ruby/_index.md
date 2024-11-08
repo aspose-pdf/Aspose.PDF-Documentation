@@ -2,7 +2,7 @@
 title: 루비에서 JavaScript 추가
 type: docs
 weight: 10
-url: ko/java/adding-javascript-in-ruby/
+url: /ko/java/adding-javascript-in-ruby/
 lastmod: "2021-06-05"
 ---
 

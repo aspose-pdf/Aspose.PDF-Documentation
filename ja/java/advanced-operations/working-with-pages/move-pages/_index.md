@@ -3,7 +3,7 @@ title: PDFページの移動
 linktitle: ページの移動
 type: docs
 weight: 20
-url: ja/java/move-pages/
+url: /ja/java/move-pages/
 description: Aspose.PDF for Javaを使用して、PDFファイルの希望する位置または末尾にページを移動してみてください。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDF에서 텍스트 교체
 linktitle: PDF에서 텍스트 교체
 type: docs
 weight: 40
-url: ko/net/replace-text-in-pdf/
+url: /ko/net/replace-text-in-pdf/
 description: Aspose.PDF for .NET 라이브러리에서 텍스트를 교체하고 제거하는 다양한 방법에 대해 알아보세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ aliases:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF 문서의 모든 페이지에서 텍스트 교체
 

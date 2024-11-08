@@ -3,7 +3,7 @@ title: Pemformatan Teks di Dalam PDF Menggunakan C#
 linktitle: Pemformatan Teks di Dalam PDF
 type: docs
 weight: 30
-url: id/net/text-formatting-inside-pdf/
+url: /id/net/text-formatting-inside-pdf/
 description: Halaman ini menjelaskan cara memformat teks di dalam file PDF Anda. Ada penambahan indentasi baris, penambahan batas teks, penambahan teks bergaris bawah, dan lain-lain.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Cara Menambahkan Indentasi Baris ke PDF
 

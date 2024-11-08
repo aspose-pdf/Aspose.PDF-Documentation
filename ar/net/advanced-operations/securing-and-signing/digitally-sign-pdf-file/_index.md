@@ -3,7 +3,7 @@ title: إضافة توقيع رقمي أو توقيع PDF رقميًا في C#
 linktitle: توقيع PDF رقميًا
 type: docs
 weight: 10
-url: ar/net/digitally-sign-pdf-file/
+url: /ar/net/digitally-sign-pdf-file/
 description: توقيع مستندات PDF رقميًا باستخدام C# أو VB.NET. تحقق أو قم بالتحقق من صحة PDFs الموقعة رقميًا باستخدام C# أو VB.NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,8 +81,8 @@ Aspose.PDF لـ .NET يدعم ميزة التوقيع الرقمي على ملف
 
 بعبارة أخرى، سيظل المستند معتبرًا بأنه يحتفظ بسلامته ويمكن للمستلم أن يثق في المستند. لمزيد من التفاصيل، يرجى زيارة تصديق وتوقيع PDF. بشكل عام، يمكن مقارنة تصديق المستند بتوقيع الكود على ملف تنفيذي لـ .NET.
 
-يعمل أيضًا الكود التالي مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
-يعمل الجزء التالي من الشيفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل أيضًا الكود التالي مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+يعمل الجزء التالي من الشيفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## ميزات التوقيع Aspose.PDF لـ .NET
 

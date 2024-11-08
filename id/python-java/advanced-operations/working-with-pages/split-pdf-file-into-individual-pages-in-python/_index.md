@@ -2,7 +2,7 @@
 title: Pisahkan File PDF menjadi Halaman Individual di Python
 type: docs
 weight: 80
-url: id/python-java/split-pdf-file-into-individual-pages-in-python/
+url: /id/python-java/split-pdf-file-into-individual-pages-in-python/
 ---
 
 <ins>Untuk memisahkan dokumen PDF menjadi halaman individual menggunakan **Aspose.PDF Java untuk PHP**, cukup panggil kelas **SplitAllPages**.

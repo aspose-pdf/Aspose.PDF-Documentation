@@ -2,7 +2,7 @@
 title: Añadir Capas al Archivo PDF en Ruby
 type: docs
 weight: 20
-url: es/java/add-layers-to-pdf-file-in-ruby/
+url: /es/java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

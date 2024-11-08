@@ -2,7 +2,7 @@
 title: Mengganti Teks dalam File PDF
 type: docs
 weight: 40
-url: id/java/replace-text/
+url: /id/java/replace-text/
 description: Bagian ini menjelaskan cara mengganti teks dengan Aspose.PDF Facades - seperangkat alat untuk operasi populer dengan PDF.
 lastmod: "2021-06-24"
 sitemap:

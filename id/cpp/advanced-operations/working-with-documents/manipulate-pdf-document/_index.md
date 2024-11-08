@@ -3,7 +3,7 @@ title: Manipulasi Dokumen PDF
 linktitle: Manipulasi Dokumen PDF
 type: docs
 weight: 30
-url: id/cpp/manipulate-pdf-document/
+url: /id/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: Bagian ini menjelaskan tentang validasi Dokumen PDF untuk Standar PDF A, cara bekerja dengan TOC, cara mengatur tanggal kedaluwarsa PDF, dan cara menentukan Progres dari pembuatan file PDF.
 lastmod: "2021-11-11"

@@ -3,7 +3,7 @@ title: Ubah Kata Sandi dari File PDF di Node.js
 linktitle: Ubah Kata Sandi
 type: docs
 weight: 50
-url: id/nodejs-cpp/change-password-pdf/
+url: /id/nodejs-cpp/change-password-pdf/
 description: Ubah Kata Sandi dari File PDF dengan Aspose.PDF untuk Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:

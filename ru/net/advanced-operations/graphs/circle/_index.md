@@ -3,7 +3,7 @@ title: Добавление объекта круга в файл PDF
 linktitle: Добавление круга
 type: docs
 weight: 20
-url: ru/net/add-circle/
+url: /ru/net/add-circle/
 description: Эта статья объясняет, как создать объект круга в вашем PDF с помощью Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Эта статья объясняет, как создать объект круга в вашем PDF с помощью Aspose.PDF для .NET."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавление объекта Circle
 

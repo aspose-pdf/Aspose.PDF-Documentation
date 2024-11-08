@@ -3,7 +3,7 @@ title: Extraire les informations d'image et de signature en utilisant Aspose.PDF
 linktitle: Extraire les informations d'image et de signature
 type: docs
 weight: 30
-url: fr/cpp/extract-image-and-signature-information/
+url: /fr/cpp/extract-image-and-signature-information/
 description: Vous pouvez extraire des images à partir du champ de signature et extraire des informations de signature en utilisant la classe SignatureField avec C++.
 lastmod: "2021-12-15"
 sitemap:

@@ -2,7 +2,7 @@
 title: 目次 図表の一覧
 type: docs
 weight: 10
-url: ja/reportingservices/table-of-contents-list-of-tables-or-figures/
+url: /ja/reportingservices/table-of-contents-list-of-tables-or-figures/
 lastmod: "2021-06-05"
 ---
 

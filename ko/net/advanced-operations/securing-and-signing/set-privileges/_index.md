@@ -3,7 +3,7 @@ title: 권한 설정, PDF 암호화 및 복호화
 linktitle: PDF 파일 암호화 및 복호화
 type: docs
 weight: 20
-url: ko/net/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ko/net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: 다양한 암호화 유형 및 알고리즘을 사용하여 C#으로 PDF 파일을 암호화합니다. 또한 소유자 비밀번호를 사용하여 PDF 파일을 복호화합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "다양한 암호화 유형 및 알고리즘을 사용하여 C#으로 PDF 파일을 암호화합니다. 또한 소유자 비밀번호를 사용하여 PDF 파일을 복호화합니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ## 기존 PDF 파일에 권한 설정
 

@@ -3,7 +3,7 @@ title: Dapatkan dan Setel Properti Halaman menggunakan Python
 linktitle: Dapatkan dan Setel Properti Halaman
 type: docs
 weight: 90
-url: id/python-net/get-and-set-page-properties/
+url: /id/python-net/get-and-set-page-properties/
 description: Bagian ini menunjukkan cara mendapatkan jumlah halaman dalam file PDF, mendapatkan informasi tentang properti halaman PDF seperti warna dan menyetel properti halaman.
 lastmod: "2023-04-17"
 sitemap:
@@ -223,7 +223,7 @@ Dari situ, dimungkinkan untuk mengakses objek Page individual menggunakan indeks
 
 ## Dapatkan Halaman Tertentu dari File PDF
 
-Aspose.PDF untuk Python memungkinkan Anda untuk [memisahkan PDF menjadi halaman individu](/pdf/python-net/split-pdf-document/) dan menyimpannya sebagai file PDF. Mendapatkan halaman tertentu dalam file PDF dan menyimpannya sebagai PDF baru adalah operasi yang sangat mirip: buka dokumen sumber, akses halaman, buat dokumen baru dan tambahkan halaman ke dalamnya.
+Aspose.PDF untuk Python memungkinkan Anda untuk [memisahkan PDF menjadi halaman individu](/pdf/id/python-net/split-pdf-document/) dan menyimpannya sebagai file PDF. Mendapatkan halaman tertentu dalam file PDF dan menyimpannya sebagai PDF baru adalah operasi yang sangat mirip: buka dokumen sumber, akses halaman, buat dokumen baru dan tambahkan halaman ke dalamnya.
 
 Objek [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) memiliki [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection) yang menyimpan halaman dalam file PDF. Untuk mendapatkan halaman tertentu dari koleksi ini:
 

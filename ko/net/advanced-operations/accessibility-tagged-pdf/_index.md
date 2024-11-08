@@ -3,7 +3,7 @@ title: 접근성 및 태그 지정된 PDF
 linktitle: 접근성. 태그 지정된 PDF
 type: docs
 weight: 120
-url: ko/net/accessibility-tagged-pdf/
+url: /ko/net/accessibility-tagged-pdf/
 description: Aspose.PDF는 태그 지정된 PDF 문서를 생성할 수 있는 기능을 제공하며, 구조적 요소에 태그를 지정할 수 있습니다. 접근 가능한 PDF를 얻는 방법에 대해 자세히 알아보세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -80,11 +80,11 @@ sitemap:
 
 이 섹션은 다음 주제를 다룹니다:
 
-- [태그가 지정된 PDF 생성](/pdf/net/create-tagged-pdf/)
-- [태그가 지정된 PDF에서 태그된 콘텐츠 추출](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [구조 요소 속성 설정](/pdf/net/setting-structure-elements-properties/)
-- [태그가 지정된 PDF에서 테이블 작업](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [PDF-UA 준수 테스트 - 오류 목록](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [태그가 지정된 PDF 생성](/pdf/ko/net/create-tagged-pdf/)
+- [태그가 지정된 PDF에서 태그된 콘텐츠 추출](/pdf/ko/net/extract-tagged-content-from-tagged-pdfs/)
+- [구조 요소 속성 설정](/pdf/ko/net/setting-structure-elements-properties/)
+- [태그가 지정된 PDF에서 테이블 작업](/pdf/ko/net/working-with-table-in-tagged-pdfs/)
+- [PDF-UA 준수 테스트 - 오류 목록](/pdf/ko/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

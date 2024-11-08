@@ -3,7 +3,7 @@ title: XML을 사용하여 XSLT로 PDF 생성
 linktitle: XML을 사용하여 XSLT로 PDF 생성
 type: docs
 weight: 10
-url: ko/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /ko/cpp/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: C++ 라이브러리는 입력 XML 파일이 Aspose.PDF 스키마를 따라야 하는 XML 파일을 PDF 문서로 변환할 수 있는 기능을 제공합니다.
 lastmod: "2022-01-31"
 sitemap:

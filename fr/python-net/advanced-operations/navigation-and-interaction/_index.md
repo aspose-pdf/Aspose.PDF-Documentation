@@ -3,7 +3,7 @@ title: Navigation et Interaction dans PDF en utilisant Python
 linktitle: Navigation et interaction
 type: docs
 weight: 90
-url: fr/python-net/navigation-and-interaction/
+url: /fr/python-net/navigation-and-interaction/
 description: Cette section décrit les fonctionnalités de travail avec les liens, actions et signets avec la bibliothèque Python.
 lastmod: "2023-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 
 
-- [Signets](/pdf/python-net/bookmarks/) - les grandes publications incluent généralement un cadre de signets qui peuvent être facilement consultés et sélectionnés dans le volet Signets, vous permettant de cliquer sur un signet pour passer à la page ou au chapitre qu'il représente. Le volet Signets est un élément sensible au contenu et est visible dans la barre latérale uniquement si le document PDF ouvert contient une structure de signets.
+- [Signets](/pdf/fr/python-net/bookmarks/) - les grandes publications incluent généralement un cadre de signets qui peuvent être facilement consultés et sélectionnés dans le volet Signets, vous permettant de cliquer sur un signet pour passer à la page ou au chapitre qu'il représente. Le volet Signets est un élément sensible au contenu et est visible dans la barre latérale uniquement si le document PDF ouvert contient une structure de signets.
 
 <script type="application/ld+json">
 {

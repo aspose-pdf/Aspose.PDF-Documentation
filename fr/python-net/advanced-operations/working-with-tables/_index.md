@@ -3,7 +3,7 @@ title: Travailler avec des tableaux dans un PDF en utilisant Python
 linktitle: Travailler avec des tableaux
 type: docs
 weight: 50
-url: fr/python-net/working-with-tables/
+url: /fr/python-net/working-with-tables/
 description: Cette section décrit comment ajouter et extraire un tableau, comment manipuler et un tableau en utilisant la bibliothèque Python.
 lastmod: "2023-09-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 Vous êtes capable de faire les choses suivantes :
 
-- [Créer ou Ajouter un Tableau dans un Document PDF existant](/pdf/python-net/add-table-in-existing-pdf-document/) - créez votre tableau dans un fichier PDF en fusionnant les colonnes ou les lignes en tenant compte des bordures, marges et espacements.
-- [Extraire un Tableau d'un Document PDF existant](/pdf/python-net/extract-table-from-existing-pdf-document/) - vous pouvez extraire un tableau d'un fichier PDF.
-- [Manipuler les Tableaux dans un PDF existant](/pdf/python-net/manipulate-tables-in-existing-pdf/) - manipulez les tableaux dans votre PDF à l'aide de TableAbsorber.
+- [Créer ou Ajouter un Tableau dans un Document PDF existant](/pdf/fr/python-net/add-table-in-existing-pdf-document/) - créez votre tableau dans un fichier PDF en fusionnant les colonnes ou les lignes en tenant compte des bordures, marges et espacements.
+- [Extraire un Tableau d'un Document PDF existant](/pdf/fr/python-net/extract-table-from-existing-pdf-document/) - vous pouvez extraire un tableau d'un fichier PDF.
+- [Manipuler les Tableaux dans un PDF existant](/pdf/fr/python-net/manipulate-tables-in-existing-pdf/) - manipulez les tableaux dans votre PDF à l'aide de TableAbsorber.
 
-- [Supprimer des Tableaux d'un PDF existant](/pdf/python-net/remove-tables-from-existing-pdf/) - supprimez un tableau ou plusieurs tableaux d'un document PDF.
+- [Supprimer des Tableaux d'un PDF existant](/pdf/fr/python-net/remove-tables-from-existing-pdf/) - supprimez un tableau ou plusieurs tableaux d'un document PDF.
 
 <script type="application/ld+json">
 {

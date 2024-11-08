@@ -3,7 +3,7 @@ title: PDF Tooltip باستخدام C++
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: ar/cpp/pdf-tooltip/
+url: /ar/cpp/pdf-tooltip/
 description: تعلم كيفية إضافة تلميح نصي إلى جزء من النص في PDF باستخدام C++ و Aspose.PDF
 lastmod: "2021-12-13"
 sitemap:

@@ -3,7 +3,7 @@ title: Supprimer les tableaux d'un PDF existant
 linktitle: Supprimer les tableaux
 type: docs
 weight: 50
-url: fr/cpp/remove-tables-from-existing-pdf/
+url: /fr/cpp/remove-tables-from-existing-pdf/
 description: Cette section décrit comment supprimer un tableau d'un document PDF.
 lastmod: "2021-11-11"
 sitemap:

@@ -3,7 +3,7 @@ title: Eliminar Imágenes de un Archivo PDF
 linktitle: Eliminar Imágenes
 type: docs
 weight: 20
-url: es/java/delete-images-from-pdf-file/
+url: /es/java/delete-images-from-pdf-file/
 description: Esta sección explica cómo eliminar imágenes de un archivo PDF usando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 ---

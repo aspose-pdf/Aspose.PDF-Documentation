@@ -2,12 +2,12 @@
 title: Импорт и Экспорт Поля Формы
 type: docs
 weight: 60
-url: ru/java/import-export-form-field/
+url: /ru/java/import-export-form-field/
 description: FormEditor позволяет импортировать и экспортировать данные в формате FDF, XFDF и XML.
 lastmod: "2021-12-16"
 ---
 
-Aspose.PDF for Java предоставляет отличные возможности для создания/манипуляции полями формы внутри PDF документа. Используя этот API, вы можете программно заполнять поля формы внутри PDF файла, [Экспортировав данные из FDF в PDF файл](/pdf/java/export-data-into-a-pdf-file-facades/), и [Импортировав данные из XFDF в PDF файл](/pdf/java/import-data-into-a-pdf-file-facades/).
+Aspose.PDF for Java предоставляет отличные возможности для создания/манипуляции полями формы внутри PDF документа. Используя этот API, вы можете программно заполнять поля формы внутри PDF файла, [Экспортировав данные из FDF в PDF файл](/pdf/ru/java/export-data-into-a-pdf-file-facades/), и [Импортировав данные из XFDF в PDF файл](/pdf/ru/java/import-data-into-a-pdf-file-facades/).
 
 ```java
 public static void ImportData() {

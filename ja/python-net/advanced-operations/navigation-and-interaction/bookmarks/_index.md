@@ -3,7 +3,7 @@ title: Pythonを使用してPDFのブックマークを操作する
 linktitle: ブックマーク
 type: docs
 weight: 30
-url: ja/python-net/bookmarks/
+url: /ja/python-net/bookmarks/
 description: このセクションでは、Aspose.PDF for Python via .NETを使用してブックマークを追加、削除、および取得する方法を説明します。
 lastmod: "2023-02-17"
 sitemap:
@@ -81,5 +81,5 @@ PDFのブックマークを使用することは非常に便利な機能です�
 
 PDFブックマークは、PDFファイルを読む際に便利で不可欠なツールです。ユーザーはPDFドキュメント内の他の場所にすばやくジャンプし、ページをナビゲートし、PDFの内容を目次のようにすばやく見ることができます。このセクションでは、以下を学びます。
 
-- [ブックマークを追加および削除する](/pdf/python-net/add-and-delete-bookmark/)
-- [ブックマークを取得、更新、および展開する](/pdf/python-net/get-update-and-expand-bookmark/)
+- [ブックマークを追加および削除する](/pdf/ja/python-net/add-and-delete-bookmark/)
+- [ブックマークを取得、更新、および展開する](/pdf/ja/python-net/get-update-and-expand-bookmark/)

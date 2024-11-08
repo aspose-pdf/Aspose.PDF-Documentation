@@ -3,7 +3,7 @@ title: Working with Images in PDF
 linktitle: Working with Images
 type: docs
 weight: 40
-url: ar/php-java/working-with-images/
+url: /ar/php-java/working-with-images/
 description: يصف هذا القسم ميزات العمل مع الصور في ملف PDF باستخدام PHP.
 lastmod: "2024-06-05"
 sitemap:
@@ -23,4 +23,4 @@ sitemap:
 
 أنت قادر على القيام بما يلي:
 
-- [إضافة صورة إلى ملف PDF موجود](/pdf/php-java/add-image-to-existing-pdf-file/) - إضافة الصور والمراجع لصورة واحدة في مستند PDF، وبعد ذلك تحكم في الجودة.
+- [إضافة صورة إلى ملف PDF موجود](/pdf/ar/php-java/add-image-to-existing-pdf-file/) - إضافة الصور والمراجع لصورة واحدة في مستند PDF، وبعد ذلك تحكم في الجودة.

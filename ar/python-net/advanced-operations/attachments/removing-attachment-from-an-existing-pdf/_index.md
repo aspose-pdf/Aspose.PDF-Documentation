@@ -3,7 +3,7 @@ title: إزالة المرفقات من PDF باستخدام بايثون
 linktitle: إزالة المرفقات من ملف PDF موجود
 type: docs
 weight: 30
-url: ar/python-net/removing-attachment-from-an-existing-pdf/
+url: /ar/python-net/removing-attachment-from-an-existing-pdf/
 description: يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم Python PDF API لإزالة المرفقات في ملفات PDF باستخدام Aspose.PDF لبايثون عبر مكتبة .NET.
 lastmod: "2023-02-17"
 sitemap:

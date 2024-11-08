@@ -2,7 +2,7 @@
 title: 画像の操作
 type: docs
 weight: 30
-url: ja/java/working-with-image/
+url: /ja/java/working-with-image/
 description: このセクションでは、Aspose.PDF Facadesを使用して画像を置き換える方法を説明します。これは、PDFに関する一般的な操作のためのツールセットです。
 lastmod: "2021-06-25"
 sitemap:

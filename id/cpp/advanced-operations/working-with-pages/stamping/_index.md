@@ -3,7 +3,7 @@ title: Stamping dengan Aspose.PDF menggunakan C++
 linktitle: Stamping
 type: docs
 weight: 120
-url: id/cpp/stamping/
+url: /id/cpp/stamping/
 description: Bagian ini menjelaskan cara menambahkan stempel gambar dan stempel teks ke halaman PDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -15,6 +15,6 @@ Stempel dalam dokumen PDF dianalogikan dengan penerapan stempel karet pada dokum
 
 Periksa bagian berikut untuk mempelajari cara menambahkan stempel dengan C++:
 
-- [Tambahkan Stempel Gambar di Halaman PDF](/pdf/cpp/image-stamps-in-pdf-page/) - tambahkan stempel gambar, kontrol kualitas gambar, stempel gambar sebagai latar belakang file PDF Anda.
+- [Tambahkan Stempel Gambar di Halaman PDF](/pdf/id/cpp/image-stamps-in-pdf-page/) - tambahkan stempel gambar, kontrol kualitas gambar, stempel gambar sebagai latar belakang file PDF Anda.
 
-- [Tambahkan Stempel Teks di File PDF](/pdf/cpp/text-stamps-in-the-pdf-file/) - tambahkan stempel teks, tentukan penjajaran untuk objek TextStamp, isi teks garis sebagai stempel dalam file PDF.
+- [Tambahkan Stempel Teks di File PDF](/pdf/id/cpp/text-stamps-in-the-pdf-file/) - tambahkan stempel teks, tentukan penjajaran untuk objek TextStamp, isi teks garis sebagai stempel dalam file PDF.

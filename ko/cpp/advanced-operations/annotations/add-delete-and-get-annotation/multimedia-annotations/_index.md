@@ -3,7 +3,7 @@ title: PDF 멀티미디어 주석 사용 C++
 linktitle: 멀티미디어 주석
 type: docs
 weight: 40
-url: ko/cpp/multimedia-annotation/
+url: /ko/cpp/multimedia-annotation/
 description: Aspose.PDF for C++를 사용하여 PDF 문서에서 멀티미디어 주석을 추가, 가져오기 및 삭제할 수 있습니다.
 lastmod: "2021-11-24"
 sitemap:

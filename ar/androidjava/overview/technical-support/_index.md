@@ -3,7 +3,7 @@ title: Aspose.PDF لنظام Android عبر Java الدعم
 linktitle: الدعم الفني
 type: docs
 weight: 60
-url: ar/androidjava/technical-support/
+url: /ar/androidjava/technical-support/
 description: تقدم هذه الصفحة توصيات لحل مهامك بسرعة وجودة باستخدام Aspose.PDF لنظام Android عبر Java.
 lastmod: "2021-06-05"
 sitemap:

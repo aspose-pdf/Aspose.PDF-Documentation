@@ -3,7 +3,7 @@ title: Añadir Objeto de Línea al Archivo PDF
 linktitle: Añadir Línea
 type: docs
 weight: 40
-url: es/cpp/add-line/
+url: /es/cpp/add-line/
 description: Este artículo explica cómo crear un objeto de línea en su PDF usando Aspose.PDF para C++.
 lastmod: "2021-12-18"
 sitemap:

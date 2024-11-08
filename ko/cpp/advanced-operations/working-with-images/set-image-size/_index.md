@@ -3,7 +3,7 @@ title: C++를 사용하여 이미지 크기 설정
 linktitle: 이미지 크기 설정
 type: docs
 weight: 80
-url: ko/cpp/set-image-size/
+url: /ko/cpp/set-image-size/
 description: 이 섹션에서는 C++ 라이브러리를 사용하여 PDF 파일의 이미지 크기를 설정하는 방법을 설명합니다.
 lastmod: "2021-12-18"
 ---

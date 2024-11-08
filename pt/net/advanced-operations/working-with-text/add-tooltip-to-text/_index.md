@@ -3,7 +3,7 @@ title: PDF Tooltip usando C#
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: pt/net/pdf-tooltip/
+url: /pt/net/pdf-tooltip/
 description: Aprenda como adicionar tooltip a um fragmento de texto em PDF usando C# e Aspose.PDF
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Aprenda como adicionar tooltip a um fragmento de texto em PDF usando C# e Aspose.PDF"
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Adicionar Dica de Ferramenta ao Texto Pesquisado adicionando um Botão Invisível
 

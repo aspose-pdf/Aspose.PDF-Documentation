@@ -3,7 +3,7 @@ title: Extraer Imágenes de PDF
 linktitle: Extraer Imágenes
 type: docs
 weight: 20
-url: es/php-java/extract-images-from-the-pdf-file/
+url: /es/php-java/extract-images-from-the-pdf-file/
 description: Cómo extraer una parte de la imagen de un PDF usando Aspose.PDF para PHP
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Pythonを使用したPDFのナビゲーションとインタラクショ�
 linktitle: ナビゲーションとインタラクション
 type: docs
 weight: 90
-url: ja/python-net/navigation-and-interaction/
+url: /ja/python-net/navigation-and-interaction/
 description: このセクションでは、Pythonライブラリを使用したリンク、アクション、ブックマークの操作機能について説明します。
 lastmod: "2023-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 
 
-- [ブックマーク](/pdf/python-net/bookmarks/)- 大規模な出版物には通常、ブックマークペインで簡単に表示および選択できるブックマークのフレームワークが含まれており、ブックマークをクリックすることで、それが表すページまたは章にジャンプすることができます。ブックマークペインはコンテンツ対応の要素であり、開いているPDFドキュメントにブックマーク構造が含まれている場合にのみサイドバーに表示されます。
+- [ブックマーク](/pdf/ja/python-net/bookmarks/)- 大規模な出版物には通常、ブックマークペインで簡単に表示および選択できるブックマークのフレームワークが含まれており、ブックマークをクリックすることで、それが表すページまたは章にジャンプすることができます。ブックマークペインはコンテンツ対応の要素であり、開いているPDFドキュメントにブックマーク構造が含まれている場合にのみサイドバーに表示されます。
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: Créer un document PDF de manière programmatique
 linktitle: Créer PDF
 type: docs
 weight: 10
-url: fr/net/create-document/
+url: /fr/net/create-document/
 description: Cette page décrit comment créer un document PDF de zéro avec la bibliothèque Aspose.PDF.
 ---
 
@@ -19,7 +19,7 @@ Pour créer un fichier PDF en utilisant C#, les étapes suivantes peuvent être 
 1.
 1. Enregistrez le document PDF résultant
 
-Le prochain extrait de code fonctionne également avec une nouvelle interface graphique [Aspose.Drawing](/pdf/net/drawing/).
+Le prochain extrait de code fonctionne également avec une nouvelle interface graphique [Aspose.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET

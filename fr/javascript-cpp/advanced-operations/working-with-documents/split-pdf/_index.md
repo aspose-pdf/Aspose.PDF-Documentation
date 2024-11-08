@@ -3,7 +3,7 @@ title: Diviser un PDF en utilisant JavaScript
 linktitle: Diviser des fichiers PDF
 type: docs
 weight: 30
-url: fr/javascript-cpp/split-pdf/
+url: /fr/javascript-cpp/split-pdf/
 description: Ce sujet montre comment diviser les pages PDF en fichiers PDF individuels avec Aspose.PDF pour JavaScript via C++.
 lastmod: "2022-12-15"
 sitemap:

@@ -2,7 +2,7 @@
 title: HTML Converter
 type: docs
 weight: 70
-url: id/net/plugins/html/
+url: /id/net/plugins/html/
 description: Cara Mengonversi File PDF ke dan dari File HTML menggunakan Plugin PdfHtml Aspose.PDF
 lastmod: "2024-01-24"
 draft: false

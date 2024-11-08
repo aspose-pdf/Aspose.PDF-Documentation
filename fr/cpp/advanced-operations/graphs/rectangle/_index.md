@@ -3,7 +3,7 @@ title: Ajouter un objet Rectangle au fichier PDF
 linktitle: Ajouter Rectangle
 type: docs
 weight: 50
-url: fr/cpp/add-rectangle/
+url: /fr/cpp/add-rectangle/
 description: Cet article explique comment créer un objet Rectangle dans votre PDF en utilisant Aspose.PDF pour C++.
 lastmod: "2021-12-18"
 sitemap:

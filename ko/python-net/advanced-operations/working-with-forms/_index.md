@@ -3,7 +3,7 @@ title: Python을 사용하여 양식 작업하기
 linktitle: 양식 작업하기
 type: docs
 weight: 60
-url: ko/python-net/working-with-forms/
+url: /ko/python-net/working-with-forms/
 description: 이 섹션은 Aspose.PDF for Python을 사용하여 PDF 문서에서 AcroForms을 다루는 방법을 설명합니다.
 lastmod: "2023-02-17"
 sitemap:
@@ -81,7 +81,7 @@ sitemap:
 
 AcroForms를 사용하면 사용자가 양식을 전자적으로 작성, 제출 및 저장할 수 있어 정보를 수집하는 데 편리하고 효율적인 방법이 됩니다.
 
-- [AcroForms](/pdf/python-net/acroforms/) - 양식 생성, 양식 필드 작성, 양식에서 데이터 추출, Python 라이브러리로 PDF에 필드 추가 및 제거.
+- [AcroForms](/pdf/ko/python-net/acroforms/) - 양식 생성, 양식 필드 작성, 양식에서 데이터 추출, Python 라이브러리로 PDF에 필드 추가 및 제거.
 
 <script type="application/ld+json">
 {

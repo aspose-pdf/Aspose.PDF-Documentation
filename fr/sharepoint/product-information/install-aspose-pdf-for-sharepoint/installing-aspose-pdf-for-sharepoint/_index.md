@@ -2,7 +2,7 @@
 title: Installation d'Aspose.Pdf pour SharePoint
 type: docs
 weight: 20
-url: fr/sharepoint/installing-aspose-pdf-for-sharepoint/
+url: /fr/sharepoint/installing-aspose-pdf-for-sharepoint/
 lastmod: "2020-12-16"
 description: L'API PDF SharePoint est emballée sous forme de solution SharePoint pour simplifier le déploiement, la rétractation, l'activation et la désactivation dans la ferme de serveurs.
 ---

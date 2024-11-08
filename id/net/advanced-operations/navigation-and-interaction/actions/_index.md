@@ -3,7 +3,7 @@ title: Bekerja dengan Aksi dalam PDF
 linktitle: Aksi
 type: docs
 weight: 20
-url: id/net/actions/
+url: /id/net/actions/
 description: Bagian ini menjelaskan cara menambahkan aksi ke dokumen dan bidang formulir secara pemrograman dengan C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Bagian ini menjelaskan cara menambahkan aksi ke dokumen dan bidang formulir secara pemrograman dengan C#."
 }
 </script>
-Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Menambahkan Hyperlink dalam File PDF
 

@@ -3,7 +3,7 @@ title: Imprimir PDF em aplicação WPF
 linktitle: Imprimir documento PDF em aplicação WPF
 type: docs
 weight: 50
-url: pt/net/print-pdf-document-in-wpf-application/
+url: /pt/net/print-pdf-document-in-wpf-application/
 description: Imprimir documentos PDF de uma aplicação WPF usando C#. Este exemplo de código mostra como imprimir documentos PDF de uma aplicação WPF usando C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Imprimir documentos PDF de uma aplicação WPF usando C#. Este exemplo de código mostra como imprimir documentos PDF de uma aplicação WPF usando C#."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Impressão direta
 

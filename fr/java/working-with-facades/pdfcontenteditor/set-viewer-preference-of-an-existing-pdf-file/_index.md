@@ -2,7 +2,7 @@
 title: Définir la Préférence de Visionneuse d'un Fichier PDF Existant
 type: docs
 weight: 60
-url: fr/java/set-viewer-preference-of-an-existing-pdf-file/
+url: /fr/java/set-viewer-preference-of-an-existing-pdf-file/
 description: Cette section montre comment travailler avec Aspose.PDF Facades en utilisant la classe PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

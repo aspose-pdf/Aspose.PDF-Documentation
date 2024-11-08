@@ -3,7 +3,7 @@ title: Menambahkan Objek Busur ke File PDF
 linktitle: Tambah Busur
 type: docs
 weight: 10
-url: id/net/add-arc/
+url: /id/net/add-arc/
 description: Artikel ini menjelaskan cara membuat objek busur pada PDF Anda menggunakan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Berikut cuplikan kode juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Berikut cuplikan kode juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan objek Arc
 

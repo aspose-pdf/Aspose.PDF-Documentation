@@ -3,7 +3,7 @@ title: كيفية دمج PDF في Node.js
 linktitle: دمج ملفات PDF
 type: docs
 weight: 20
-url: ar/nodejs-cpp/merge-pdf/
+url: /ar/nodejs-cpp/merge-pdf/
 description: توضح هذه الصفحة كيفية دمج مستندات PDF في ملف PDF واحد باستخدام Aspose.PDF لـ Node.js عبر C++.
 lastmod: "2023-11-16"
 sitemap:

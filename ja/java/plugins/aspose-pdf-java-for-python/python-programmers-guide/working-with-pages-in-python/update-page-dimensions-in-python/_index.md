@@ -2,7 +2,7 @@
 title: Pythonでページの寸法を更新
 type: docs
 weight: 90
-url: ja/java/update-page-dimensions-in-python/
+url: /ja/java/update-page-dimensions-in-python/
 lastmod: "2021-06-05"
 ---
 

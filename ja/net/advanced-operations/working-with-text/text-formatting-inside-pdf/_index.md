@@ -3,7 +3,7 @@ title: PDF内のテキストフォーマットについて
 linktitle: PDF内のテキストフォーマット
 type: docs
 weight: 30
-url: ja/net/text-formatting-inside-pdf/
+url: /ja/net/text-formatting-inside-pdf/
 description: このページでは、PDFファイル内のテキストをフォーマットする方法について説明します。行インデントの追加、テキストボーダーの追加、下線テキストの追加などがあります。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "このページでは、PDFファイル内のテキストをフォーマットする方法について説明します。行インデントの追加、テキストボーダーの追加、下線テキストの追加などがあります。"
 }
 </script>
-以下のコードスニペットは[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## PDFに行インデントを追加する方法
 

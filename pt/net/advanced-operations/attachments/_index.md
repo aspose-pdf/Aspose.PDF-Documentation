@@ -3,7 +3,7 @@ title: Trabalhando com Anexos em PDF
 linktitle: Trabalhando com Anexos
 type: docs
 weight: 130
-url: pt/net/attachments/
+url: /pt/net/attachments/
 description: Use a API de PDF C# para acessar, adicionar e remover anexos em arquivos PDF usando C# dentro de suas aplicações. Guia completo com exemplos de código em C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -83,10 +83,10 @@ Nesta seção, explicaremos como trabalhar com anexos em PDF usando Aspose.PDF p
 Um anexo é um arquivo adicional que é anexado a um documento principal, podendo ser uma variedade de tipos de arquivos, como pdf, word, imagem ou outros arquivos. 
 Você aprenderá como adicionar anexos ao pdf, obter as informações de um anexo e salvá-lo em arquivo, deletar o anexo do PDF programaticamente com C#.
 
-- [Adicionando anexo a um documento PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [Extrair e salvar um anexo](/pdf/net/extract-and-save-an-attachment/)
-- [Removendo anexo de um PDF existente](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Portfólio](/pdf/net/portfolio/)
+- [Adicionando anexo a um documento PDF](/pdf/pt/net/add-attachment-to-pdf-document/)
+- [Extrair e salvar um anexo](/pdf/pt/net/extract-and-save-an-attachment/)
+- [Removendo anexo de um PDF existente](/pdf/pt/net/removing-attachment-from-an-existing-pdf/)
+- [Portfólio](/pdf/pt/net/portfolio/)
 
 <script type="application/ld+json">
 {

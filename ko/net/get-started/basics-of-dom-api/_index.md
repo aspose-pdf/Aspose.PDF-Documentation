@@ -3,7 +3,7 @@ title: Aspose.PDF DOM API의 기초
 linktitle: DOM API의 기초
 type: docs
 weight: 140
-url: ko/net/basics-of-dom-api/
+url: /ko/net/basics-of-dom-api/
 description: Aspose.PDF for .NET는 객체 측면에서 PDF 문서의 구조를 나타내기 위해 DOM 개념을 사용합니다.
 lastmod: "2021-06-05"
 sitemap:

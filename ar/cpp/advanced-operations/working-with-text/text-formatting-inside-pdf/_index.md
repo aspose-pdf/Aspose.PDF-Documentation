@@ -3,7 +3,7 @@ title: تنسيق النص داخل PDF باستخدام C++
 linktitle: تنسيق النص داخل PDF
 type: docs
 weight: 30
-url: ar/cpp/text-formatting-inside-pdf/
+url: /ar/cpp/text-formatting-inside-pdf/
 description: تشرح هذه الصفحة كيفية تنسيق النص داخل ملف PDF الخاص بك. هناك إضافة مسافة بادئة للسطر، إضافة حدود للنص، إضافة نص مسطر، إضافة حدود حول النص المضاف، محاذاة النص لمحتويات الصندوق العائم وما إلى ذلك.
 lastmod: "2021-12-13"
 sitemap:

@@ -2,7 +2,7 @@
 title: フィールドの外観と属性
 type: docs
 weight: 20
-url: ja/net/changing-field-appearance-and-attributes/
+url: /ja/net/changing-field-appearance-and-attributes/
 description: このセクションでは、FormEditorクラスを使用してフィールドの外観と属性を変更する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

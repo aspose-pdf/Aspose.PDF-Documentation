@@ -2,7 +2,7 @@
 title: 세계적 수준의 무료 기술 지원
 type: docs
 weight: 50
-url: ko/reportingservices/world-class-free-technical-support/
+url: /ko/reportingservices/world-class-free-technical-support/
 lastmod: "2021-06-05"
 ---
 

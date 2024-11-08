@@ -2,7 +2,7 @@
 title: Supprimer les annotations (facades)
 type: docs
 weight: 10
-url: fr/java/delete-annotations/
+url: /fr/java/delete-annotations/
 description: Cette section explique comment supprimer des annotations avec Aspose.PDF Facades en utilisant la classe PdfAnnotationEditor.
 lastmod: "2021-06-05"
 sitemap:

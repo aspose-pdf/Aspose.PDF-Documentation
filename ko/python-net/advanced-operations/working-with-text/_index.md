@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 PDF에서 텍스트 작업하기
 linktitle: 텍스트 작업하기
 type: docs
 weight: 30
-url: ko/python-net/working-with-text/
+url: /ko/python-net/working-with-text/
 description: 이 섹션에서는 텍스트 처리의 다양한 기술을 설명합니다. Aspose.PDF for Python을 사용하여 텍스트 추가, 교체, 회전, 검색하는 방법을 배웁니다.
 lastmod: "2024-01-17"
 sitemap:
@@ -81,14 +81,14 @@ sitemap:
 
 다음 작업을 수행할 수 있습니다:
 
-- [PDF 파일에 텍스트 추가하기](/pdf/python-net/add-text-to-pdf-file/) - PDF에 텍스트를 추가하고 스트림 및 파일에서 폰트를 사용하고, HTML 문자열을 추가하고, 하이퍼링크를 추가하는 등의 작업을 수행합니다.
-- [PDF 툴팁](/pdf/python-net/pdf-tooltip/) - Python을 사용하여 보이지 않는 버튼을 추가하여 검색된 텍스트에 툴팁을 추가할 수 있습니다.
-- [PDF 내 텍스트 형식화](/pdf/python-net/text-formatting-inside-pdf/) - 문서 내 텍스트를 형식화할 때 문서에 추가할 수 있는 많은 기능이 있습니다.
+- [PDF 파일에 텍스트 추가하기](/pdf/ko/python-net/add-text-to-pdf-file/) - PDF에 텍스트를 추가하고 스트림 및 파일에서 폰트를 사용하고, HTML 문자열을 추가하고, 하이퍼링크를 추가하는 등의 작업을 수행합니다.
+- [PDF 툴팁](/pdf/ko/python-net/pdf-tooltip/) - Python을 사용하여 보이지 않는 버튼을 추가하여 검색된 텍스트에 툴팁을 추가할 수 있습니다.
+- [PDF 내 텍스트 형식화](/pdf/ko/python-net/text-formatting-inside-pdf/) - 문서 내 텍스트를 형식화할 때 문서에 추가할 수 있는 많은 기능이 있습니다.
  줄 들여쓰기 추가, 텍스트 테두리 추가, 텍스트 밑줄 추가, Aspose.PDF 라이브러리를 사용하여 줄 바꿈 추가.
-- [PDF에서 텍스트 교체하기](/pdf/python-net/replace-text-in-pdf/) - PDF 문서의 모든 페이지에서 텍스트를 교체합니다. 먼저 TextFragmentAbsorber를 사용해야 합니다.
-- [PDF 내부 텍스트 회전](/pdf/python-net/rotate-text-inside-pdf/) - TextFragment 클래스의 회전 속성을 사용하여 PDF 내부의 텍스트를 회전합니다.
-- [PDF 문서 페이지에서 텍스트 검색 및 가져오기](/pdf/python-net/search-and-get-text-from-pdf/) - 페이지에서 텍스트를 검색하고 가져오려면 TextFragmentAbsorber 클래스를 사용할 수 있습니다.
-- [줄 바꿈 결정하기](/pdf/python-net/determine-line-break/) - 이 주제는 다중 줄 텍스트 조각의 줄 바꿈을 추적하는 방법을 설명합니다.
+- [PDF에서 텍스트 교체하기](/pdf/ko/python-net/replace-text-in-pdf/) - PDF 문서의 모든 페이지에서 텍스트를 교체합니다. 먼저 TextFragmentAbsorber를 사용해야 합니다.
+- [PDF 내부 텍스트 회전](/pdf/ko/python-net/rotate-text-inside-pdf/) - TextFragment 클래스의 회전 속성을 사용하여 PDF 내부의 텍스트를 회전합니다.
+- [PDF 문서 페이지에서 텍스트 검색 및 가져오기](/pdf/ko/python-net/search-and-get-text-from-pdf/) - 페이지에서 텍스트를 검색하고 가져오려면 TextFragmentAbsorber 클래스를 사용할 수 있습니다.
+- [줄 바꿈 결정하기](/pdf/ko/python-net/determine-line-break/) - 이 주제는 다중 줄 텍스트 조각의 줄 바꿈을 추적하는 방법을 설명합니다.
 
 ```json
 {

@@ -3,7 +3,7 @@ title: Mengkonversi HTML, Teks dan Gambar ke PDF di SharePoint
 linktitle: Konversi ke PDF
 type: docs
 weight: 30
-url: id/sharepoint/convert-to-pdf/
+url: /id/sharepoint/convert-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint API memungkinkan mengonversi file HTML, file teks, dan gambar (JPG, PNG, GIF, TIFF, BMP) ke format PDF.
 ---

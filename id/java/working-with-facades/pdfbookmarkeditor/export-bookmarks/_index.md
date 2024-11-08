@@ -2,7 +2,7 @@
 title: Ekspor Bookmark ke XML dari File PDF yang Ada (facades)
 type: docs
 weight: 20
-url: id/java/export-bookmark/
+url: /id/java/export-bookmark/
 description: Bagian ini menjelaskan cara mengekspor bookmark dengan Aspose.PDF Facades menggunakan Kelas PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: 시스템 요구 사항
 type: docs
 weight: 10
-url: ko/sharepoint/system-requirements/
+url: /ko/sharepoint/system-requirements/
 lastmod: "2020-12-16"
 description: PDF SharePoint API는 서버 및 클라이언트 요구 사항이 있으며, Microsoft SharePoint Server를 실행하는 컴퓨터가 필요합니다.
 ---

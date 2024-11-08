@@ -3,7 +3,7 @@ title: C++ 概要
 linktitle: 概要
 type: docs
 weight: 20
-url: ja/cpp/overview/
+url: /ja/cpp/overview/
 lastmod: "2021-11-08"
 description: Aspose.PDF for C++ の主要機能とサポートされている形式の概要、C++ ライブラリのインストールとライセンスのマニュアル。
 sitemap:
@@ -33,21 +33,21 @@ PDFドキュメントの圧縮は、そのファイルサイズを減少させ�
 - XImageCollectionに画像を保存する（再利用可能な画像）
 - PDFをRGBカラースペースからグレースケールに変換する
 
-詳細については、Docsページをご確認ください: [Optimize PDF](/pdf/cpp/optimize-pdf/)
+詳細については、Docsページをご確認ください: [Optimize PDF](/pdf/ja/cpp/optimize-pdf/)
 ### テーブルの作成と操作
 
 テーブルは、PDFドキュメントで情報を提示するための構造化された整理された形式を提供します。テーブルを使うことで、データを行と列に分類して配置することができ、複雑なデータセットをより理解しやすくなります。
 
 **Aspose.PDF for C++** を使用すると、PDFドキュメント内でテーブルを作成および操作することにより、データの整理が改善され、可読性が向上し、分析能力が向上し、情報を効果的に提示するための柔軟性が増します。
 
-詳細については次のセクションをチェックしてください: [テーブルの操作](/pdf/cpp/working-with-tables/)
+詳細については次のセクションをチェックしてください: [テーブルの操作](/pdf/ja/cpp/working-with-tables/)
 
 ### グラフオブジェクトのサポート
 
 **Aspose.PDF for C++** は、PDFドキュメントにグラフを追加することをサポートしています。このタスクには Graph クラスが提供されています。  
 PDFドキュメントにグラフを追加することで、データの視覚化が向上し、明確さと理解が増し、意思決定のサポートが向上し、読者とのエンゲージメントが向上します。
 
-詳細についてはドキュメントページをチェックしてください: [グラフの操作](/pdf/cpp/graphs/)
+詳細についてはドキュメントページをチェックしてください: [グラフの操作](/pdf/ja/cpp/graphs/)
 
 ### 広範なハイパーリンク機能
 
@@ -55,14 +55,14 @@ PDFドキュメントにグラフを追加することで、データの視覚�
 
 **Aspose.PDF for C++** は、ナビゲーションの改善、クロスリファレンス、外部リソースへのアクセス、インタラクティブ性、コミュニケーションの向上など、多くの利点を提供します。これにより、ユーザーにとってより魅力的で、情報豊かで、アクセスしやすい読書体験を提供します。
 
-次のセクションをチェックして詳細を確認してください: [Actions](/pdf/cpp/actions/)
+次のセクションをチェックして詳細を確認してください: [Actions](/pdf/ja/cpp/actions/)
 
 ### 拡張セキュリティコントロール
 
 デジタル署名などのセキュリティ機能は、PDFドキュメントの完全性を確保するのに役立ちます。文書にデジタル署名をすることで、送信者は、文書が署名されて以来改ざんされていないことを確認でき、受信者に文書の信頼性を保証します。
 
 **Aspose.PDF for C++** を使用すると、スマートカードからのPDF署名、ファイルの暗号化と復号、画像の抽出、署名情報の取得などが可能です。 
-Let's check Docs pages for more details: [Securing and Signing](/pdf/cpp/securing-and-signing/)
+Let's check Docs pages for more details: [Securing and Signing](/pdf/ja/cpp/securing-and-signing/)
 
 ### しおりを追加または削除する
 
@@ -70,20 +70,20 @@ Let's check Docs pages for more details: [Securing and Signing](/pdf/cpp/securin
 
 **Aspose.PDF for C++** ライブラリを使用すると、PDFファイルにしおりを追加したり、子しおりを追加したり、ドキュメントからすべてまたは特定のしおりを削除したりできます。
 
-次のセクションで詳細を確認しましょう: [しおり](/pdf/cpp/add-and-delete-bookmark/)
+次のセクションで詳細を確認しましょう: [しおり](/pdf/ja/cpp/add-and-delete-bookmark/)
 
 ### 目次を作成する
 
 目次は、ユーザーがPDFドキュメントの内容をすばやく効率的にナビゲートするための方法を提供します。主要なセクション、章、またはトピックとそれに対応するページ番号を一覧表示することで、ユーザーはドキュメント内の特定の情報を簡単に見つけてアクセスできます。
 
 **Aspose.PDF for C++** ライブラリは、既存のPDFファイルに目次を追加する方法を説明し、Aspose.Pdf名前空間のHeadingクラスを使用します。
-ドキュメントページの詳細については、[TOCの使用](/pdf/cpp/manipulate-pdf-document/)を確認してください。
+ドキュメントページの詳細については、[TOCの使用](/pdf/ja/cpp/manipulate-pdf-document/)を確認してください。
 
 ### 添付ファイルと注釈の追加、更新、削除
 
 添付ファイルと注釈を追加することで、PDFドキュメントはよりインタラクティブで読者にとって魅力的になります。ユーザーは、ドキュメント内に埋め込まれたマルチメディアファイル、リンク、コメントなどの追加コンテンツと対話することができ、読書体験を向上させます。
 
-Aspose.PDF for C++ライブラリは、[注釈](/pdf/cpp/annotations/)に関する様々な操作を提供しています。以下のタイプを追加できます：
+Aspose.PDF for C++ライブラリは、[注釈](/pdf/ja/cpp/annotations/)に関する様々な操作を提供しています。以下のタイプを追加できます：
 
 - テキスト注釈
 - ハイライト注釈
@@ -93,7 +93,7 @@ Aspose.PDF for C++ライブラリは、[注釈](/pdf/cpp/annotations/)に関す�
 - エクストラ注釈
 
 また、当ライブラリでは、PDFから添付ファイルを追加、抽出、削除することができます。
-詳細については、次の[ドキュメントページ](/pdf/cpp/attachments/)を確認してください。
+詳細については、次の[ドキュメントページ](/pdf/ja/cpp/attachments/)を確認してください。
 
 ### PDFファイルのメタデータ
 
@@ -101,7 +101,7 @@ Aspose.PDF for C++ライブラリは、[注釈](/pdf/cpp/annotations/)に関す�
 
 PDFファイルのメタデータは、ドキュメントの識別、帰属、バージョントラッキング、説明、検索性、アクセシビリティ、セキュリティ、相互運用性、保存、およびコンプライアンスなど、複数の目的に役立ちます。
 
-PDFドキュメント内の[メタデータ](/pdf/cpp/pdf-file-metadata/)を**Aspose.PDF for C++**ライブラリで簡単かつ迅速に管理します。
+PDFドキュメント内の[メタデータ](/pdf/ja/cpp/pdf-file-metadata/)を**Aspose.PDF for C++**ライブラリで簡単かつ迅速に管理します。
 
 ### テキストと画像の追加、置換、削除
 
@@ -109,10 +109,10 @@ PDFドキュメント内の[メタデータ](/pdf/cpp/pdf-file-metadata/)を**As
 
 Aspose.PDFを使用すると、PDF内のテキストを編集したり、置換したり、回転させたり、PDF内のテキストを検索または取得したりできます。
 
-また、画像を追加したり、位置を変更したり、削除したり、PDF内の画像で[複雑な操作](/pdf/cpp/working-with-images/)を行ったりすることもできます。
+また、画像を追加したり、位置を変更したり、削除したり、PDF内の画像で[複雑な操作](/pdf/ja/cpp/working-with-images/)を行ったりすることもできます。
 
 ### ページの分割、連結、抽出、挿入
-The [PDF ページの操作](/pdf/cpp/working-with-pages/) セクションでは、PDF 内でページを追加、移動、削除、回転、または分割する方法について説明しています。
+The [PDF ページの操作](/pdf/ja/cpp/working-with-pages/) セクションでは、PDF 内でページを追加、移動、削除、回転、または分割する方法について説明しています。
 
 ページの分割、結合、抽出、または挿入は、ユーザーが PDF ドキュメントをより効果的に管理するのに役立ちます。ユーザーは、新しいドキュメントを作成するためにページを整理、再配置、または結合し、ドキュメントの整理とアクセス性を向上させることができます。
 
@@ -130,7 +130,7 @@ Aspose.PDF は C++ を使用して PDF をさまざまな画像形式に変換�
 - GIF
 - SVG
 
-Aspose.PDF ライブラリは、DocumentDevice または ImageDevice クラスを使用して PDF を画像に変換します。[PDF をさまざまな画像形式に変換する](/pdf/cpp/convert-pdf-to-images-format/)。
+Aspose.PDF ライブラリは、DocumentDevice または ImageDevice クラスを使用して PDF を画像に変換します。[PDF をさまざまな画像形式に変換する](/pdf/ja/cpp/convert-pdf-to-images-format/)。
 
 ### PDF ドキュメントを印刷
 
@@ -144,23 +144,23 @@ Aspose.PDF for C++は、PDFファイルを印刷するためのさまざまな�
 - WPFアプリケーションでのPDFの印刷
 - PDFからPostScriptへの変換、印刷ジョブのステータス確認など、さまざまな追加操作
 
-詳細については、次のセクションを確認してください: [Printing PDF documents](/pdf/cpp/printing-document/)。
+詳細については、次のセクションを確認してください: [Printing PDF documents](/pdf/ja/cpp/printing-document/)。
 
 さらに、Aspose.PDF for C++を使用すると、テキスト、画像、SVG、HTMLをPDFに簡単に変換し、PDFをさまざまなドキュメント形式に変換することができ、優れたパフォーマンスと高品質を実現します。
 
 ## Pricing and Policies
 
-ライセンス情報については、[Licensing](/pdf/cpp/licensing/)ページをご覧ください。価格の詳細については、[Pricing Information](https://purchase.aspose.com/pricing/pdf/family/)ページを確認してください。
+ライセンス情報については、[Licensing](/pdf/ja/cpp/licensing/)ページをご覧ください。価格の詳細については、[Pricing Information](https://purchase.aspose.com/pricing/pdf/family/)ページを確認してください。
 
 ## Technical Support
 
-Aspose.PDFの技術サポートに関する詳細は、[Support page](/pdf/cpp/technical-support/)をご覧ください。
+Aspose.PDFの技術サポートに関する詳細は、[Support page](/pdf/ja/cpp/technical-support/)をご覧ください。
 
 詳しく知るには:
 
-- [Supported File Formats](/pdf/cpp/supported-file-formats/)
-- [Aspose.PDFの主な機能](/pdf/cpp/key-features/)
-- [システム要件](/pdf/cpp/system-requirements/)
-- [インストール](/pdf/cpp/installation/)
-- [ライセンス](/pdf/cpp/licensing/)
-- [技術サポート](/pdf/cpp/technical-support/)
+- [Supported File Formats](/pdf/ja/cpp/supported-file-formats/)
+- [Aspose.PDFの主な機能](/pdf/ja/cpp/key-features/)
+- [システム要件](/pdf/ja/cpp/system-requirements/)
+- [インストール](/pdf/ja/cpp/installation/)
+- [ライセンス](/pdf/ja/cpp/licensing/)
+- [技術サポート](/pdf/ja/cpp/technical-support/)

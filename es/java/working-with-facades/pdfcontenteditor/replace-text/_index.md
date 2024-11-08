@@ -2,7 +2,7 @@
 title: Reemplazar Texto en un Archivo PDF
 type: docs
 weight: 40
-url: es/java/replace-text/
+url: /es/java/replace-text/
 description: Esta sección explica cómo reemplazar texto con Aspose.PDF Facades - un conjunto de herramientas para operaciones populares con PDF.
 lastmod: "2021-06-24"
 sitemap:

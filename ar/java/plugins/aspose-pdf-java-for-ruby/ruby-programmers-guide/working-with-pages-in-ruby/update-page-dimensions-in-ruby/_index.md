@@ -2,7 +2,7 @@
 title: تحديث أبعاد الصفحة في روبي
 type: docs
 weight: 90
-url: ar/java/update-page-dimensions-in-ruby/
+url: /ar/java/update-page-dimensions-in-ruby/
 lastmod: "2021-06-05"
 ---
 

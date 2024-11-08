@@ -3,7 +3,7 @@ title: Faire Pivoter les Pages PDF en Utilisant Python via C++
 linktitle: Faire Pivoter les Pages PDF
 type: docs
 weight: 20
-url: fr/python-cpp/rotate-pages/
+url: /fr/python-cpp/rotate-pages/
 description: Ce sujet décrit comment faire pivoter l'orientation des pages dans un fichier PDF existant par programmation avec Python via C++.
 lastmod: "2024-04-17"
 sitemap:

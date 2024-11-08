@@ -2,7 +2,7 @@
 title: Dapatkan Jumlah Halaman PDF di Python
 type: docs
 weight: 40
-url: id/python-java/dapatkan-jumlah-halaman-pdf-di-python/
+url: /id/python-java/dapatkan-jumlah-halaman-pdf-di-python/
 ---
 
 <ins>Untuk mendapatkan jumlah halaman dokumen Pdf menggunakan **Aspose.PDF Java untuk Python**, cukup panggil kelas **GetNumberOfPages**.

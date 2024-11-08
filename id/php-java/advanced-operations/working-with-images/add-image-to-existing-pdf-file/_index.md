@@ -3,7 +3,7 @@ title: Tambahkan Gambar ke File PDF yang Ada
 linktitle: Tambahkan Gambar
 type: docs
 weight: 10
-url: id/php-java/add-image-to-existing-pdf-file/
+url: /id/php-java/add-image-to-existing-pdf-file/
 description: Bagian ini menjelaskan cara menambahkan gambar ke file PDF yang ada menggunakan PHP.
 lastmod: "2024-06-05"
 ---

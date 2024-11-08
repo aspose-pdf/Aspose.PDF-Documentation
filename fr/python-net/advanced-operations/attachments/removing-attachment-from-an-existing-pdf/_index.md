@@ -3,7 +3,7 @@ title: Suppression de pièce jointe d'un PDF à l'aide de Python
 linktitle: Suppression de pièce jointe d'un PDF existant
 type: docs
 weight: 30
-url: fr/python-net/removing-attachment-from-an-existing-pdf/
+url: /fr/python-net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF peut supprimer les pièces jointes de vos documents PDF. Utilisez l'API PDF Python pour supprimer les pièces jointes dans les fichiers PDF à l'aide de la bibliothèque Aspose.PDF pour Python via .NET.
 lastmod: "2023-02-17"
 sitemap:

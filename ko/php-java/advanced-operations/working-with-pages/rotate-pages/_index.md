@@ -3,7 +3,7 @@ title: PDF 페이지 회전을 프로그래밍 방식으로
 linktitle: PDF 페이지 회전
 type: docs
 weight: 60
-url: ko/php-java/rotate-pages/
+url: /ko/php-java/rotate-pages/
 description: Java를 사용하여 페이지 방향을 변경하고 페이지 내용을 새로운 페이지 방향에 맞추는 방법을 설명합니다.
 lastmod: "2024-06-05"
 sitemap:

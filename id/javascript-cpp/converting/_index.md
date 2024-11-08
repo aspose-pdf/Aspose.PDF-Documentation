@@ -3,7 +3,7 @@ title: Konversi Dokumen PDF menggunakan JavaScript
 linktitle: Konversi Dokumen PDF
 type: docs
 weight: 50
-url: id/javascript-cpp/conversion/
+url: /id/javascript-cpp/conversion/
 description: Bagian ini berisi artikel yang berkaitan dengan konversi dokumen PDF ke format lain oleh Aspose.PDF untuk JavaScript via C++.
 lastmod: "2022-12-14"
 sitemap:
@@ -20,30 +20,30 @@ Aspose.PDF untuk JavaScript melalui C++* memungkinkan konversi dokumen PDF ke be
 
 Dokumen Word adalah yang paling serbaguna dan dapat diedit. Mengonversi PDF ke DOC secara manual adalah tugas yang sangat memakan waktu. Dalam artikel ini, Anda akan belajar bagaimana mengonversi PDF ke DOC dan DOCX dalam Javascript.
 
-- [Mengonversi PDF ke DOC](/pdf/javascript-cpp/convert-pdf-to-doc/) - Anda dapat mengonversi dokumen PDF Anda ke format Word dengan Javascript.
+- [Mengonversi PDF ke DOC](/pdf/id/javascript-cpp/convert-pdf-to-doc/) - Anda dapat mengonversi dokumen PDF Anda ke format Word dengan Javascript.
 
 Format angka diperlukan tidak hanya untuk membuat data dalam tabel lebih mudah dibaca, tetapi juga untuk membuat tabel lebih mudah digunakan. Tentu saja, jika Anda perlu mengonversi data semacam itu dari dokumen PDF ke format Excel gunakan Aspose.PDF untuk Javascript kami.
 
-- [Konversi PDF ke Microsoft XLSX](/pdf/javascript-cpp/convert-pdf-to-xlsx/) - bagian ini menjelaskan cara mengonversi dokumen PDF ke XLSX, dan CSV.
+- [Konversi PDF ke Microsoft XLSX](/pdf/id/javascript-cpp/convert-pdf-to-xlsx/) - bagian ini menjelaskan cara mengonversi dokumen PDF ke XLSX, dan CSV.
 
 Format PowerPoint digunakan untuk membuat berbagai presentasi. File PPT berisi sejumlah besar slide atau halaman yang mengandung berbagai informasi.
 
-- [Konversi PDF ke Microsoft PowerPoint](/pdf/javascript-cpp/convert-pdf-to-powerpoint/) - di sini kita membahas tentang mengonversi PDF ke PowerPoint dengan melacak proses konversi.
+- [Konversi PDF ke Microsoft PowerPoint](/pdf/id/javascript-cpp/convert-pdf-to-powerpoint/) - di sini kita membahas tentang mengonversi PDF ke PowerPoint dengan melacak proses konversi.
 
 HyperText Markup Language adalah bahasa deskripsi dokumen hypertext, bahasa standar untuk membuat halaman web. Dengan Aspose.PDF untuk Javascript Anda dapat dengan mudah mengonversi dokumen HTML dan sebaliknya.
 
 Ada banyak format gambar yang perlu dikonversi ke PDF untuk berbagai tujuan. Aspose.PDF untuk JavaScript memungkinkan format gambar yang paling populer.
 
-- [Konversi PDF ke berbagai format Gambar](/pdf/javascript-cpp/convert-pdf-to-images-format/) - konversi halaman PDF sebagai gambar dalam format JPEG, PNG, SVG, dan format lainnya.
+- [Konversi PDF ke berbagai format Gambar](/pdf/id/javascript-cpp/convert-pdf-to-images-format/) - konversi halaman PDF sebagai gambar dalam format JPEG, PNG, SVG, dan format lainnya.
 Bagian ini mencakup format seperti: EPUB, XPS, TeX, Teks, dan PDF Skala Abu-abu.
 
-- [Konversi file PDF ke format lain](/pdf/javascript-cpp/convert-pdf-to-other-files/) - topik ini menjelaskan cara untuk mengonversi dokumen PDF ke berbagai format
+- [Konversi file PDF ke format lain](/pdf/id/javascript-cpp/convert-pdf-to-other-files/) - topik ini menjelaskan cara untuk mengonversi dokumen PDF ke berbagai format
 
 PDF/A adalah versi PDF yang dirancang untuk pengarsipan jangka panjang dari dokumen elektronik. Sejujurnya, secara eksternal, sangat sulit untuk menentukan apakah itu PDF atau PDF/A. Untuk memeriksa file ini, digunakan validator. Periksa artikel berikut untuk konversi PDF ke PDF/A yang berkualitas dan sebaliknya.
 
-- [Konversi PDF ke format PDF/A](/pdf/javascript-cpp/convert-pdf-to-pdfa/) - toolkit Javascript oleh Aspose.PDF memiliki cara mudah untuk mengonversi PDF ke PDF/A.
+- [Konversi PDF ke format PDF/A](/pdf/id/javascript-cpp/convert-pdf-to-pdfa/) - toolkit Javascript oleh Aspose.PDF memiliki cara mudah untuk mengonversi PDF ke PDF/A.
 
-- [Konversi PDF/A ke format PDF](/pdf/javascript-cpp/convert-pdfa-to-pdf/) - konversi PDF/A ke format PDF dengan Javascript secara mudah, cepat, dan berkualitas tinggi.
+- [Konversi PDF/A ke format PDF](/pdf/id/javascript-cpp/convert-pdfa-to-pdf/) - konversi PDF/A ke format PDF dengan Javascript secara mudah, cepat, dan berkualitas tinggi.
 
 ## Cobalah untuk mengonversi file PDF secara online
 

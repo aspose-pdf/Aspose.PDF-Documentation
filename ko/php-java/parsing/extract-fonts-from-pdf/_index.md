@@ -3,7 +3,7 @@ title: PDF에서 폰트 추출하기
 linktitle: 폰트 추출
 type: docs
 weight: 30
-url: ko/php-java/extract-fonts-from-pdf/
+url: /ko/php-java/extract-fonts-from-pdf/
 description: Aspose.PDF for PHP를 사용하여 PDF에서 폰트 추출하는 방법
 lastmod: "2024-05-20"
 sitemap:

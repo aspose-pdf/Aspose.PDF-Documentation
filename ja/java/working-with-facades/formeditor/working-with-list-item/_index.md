@@ -2,7 +2,7 @@
 title: リストアイテムの操作
 type: docs
 weight: 30
-url: ja/java/working-with-list-item/
+url: /ja/java/working-with-list-item/
 description: このセクションでは、FormEditorクラスを使用してcom.aspose.pdf.facadesでリストアイテムを操作する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

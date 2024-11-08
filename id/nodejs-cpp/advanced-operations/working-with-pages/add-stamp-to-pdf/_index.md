@@ -3,7 +3,7 @@ title: Tambahkan Stempel Gambar ke PDF di Node.js
 linktitle: Stempel gambar dalam File PDF
 type: docs
 weight: 60
-url: id/nodejs-cpp/stamping/
+url: /id/nodejs-cpp/stamping/
 description: Tambahkan Stempel Gambar dalam dokumen PDF Anda menggunakan AsposePdfAddStamp dengan alat Node.js.
 lastmod: "2023-11-16"
 sitemap:

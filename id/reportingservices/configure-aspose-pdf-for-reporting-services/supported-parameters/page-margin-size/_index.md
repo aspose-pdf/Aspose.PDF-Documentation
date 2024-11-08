@@ -3,7 +3,7 @@
 title: Ukuran margin halaman
 type: docs
 weight: 70
-url: id/reportingservices/page-margin-size/
+url: /id/reportingservices/page-margin-size/
 lastmod: "2021-06-05"
 ---
 

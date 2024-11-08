@@ -2,7 +2,7 @@
 title: Form Exporter
 type: docs
 weight: 60
-url: ko/net/plugins/formflattener/
+url: /ko/net/plugins/formflattener/
 description: Aspose.PDF FormFlattener 플러그인을 사용하여 PDF 파일의 양식 필드를 평탄화하는 방법
 lastmod: "2024-01-24"
 ---

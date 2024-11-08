@@ -2,7 +2,7 @@
 title: Ekspor Daftar Tugas ke PDF dengan Barcode menggunakan Mesin Template PDF
 type: docs
 weight: 40
-url: id/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
+url: /id/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
 lastmod: "2020-12-16"
 description: PDF SharePoint API dapat mengekspor Daftar Tugas ke PDF dengan Barcode menggunakan Mesin Template PDF.
 ---

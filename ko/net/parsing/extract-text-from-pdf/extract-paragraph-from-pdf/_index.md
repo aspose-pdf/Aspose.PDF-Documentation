@@ -3,7 +3,7 @@ title: PDF에서 단락 추출 C#
 linktitle: PDF에서 단락 추출
 type: docs
 weight: 20
-url: ko/net/extract-paragraph-from-pdf/
+url: /ko/net/extract-paragraph-from-pdf/
 description: 이 글은 Aspose.PDF의 ParagraphAbsorber - 특별 도구를 사용하여 PDF 문서에서 텍스트를 추출하는 방법에 대해 설명합니다.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ PDF 문서에서 텍스트를 가져오는 방법은 단일 페이지나 전체 
 
 **1- PDF 페이지의 섹션과 문단 테두리 그리기:**
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하십시오.
@@ -79,7 +79,7 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page)
 ```
 **2- 단락 컬렉션을 반복하여 텍스트를 가져옵니다:**
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ```csharp
 // 전체 예시와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인해주세요.

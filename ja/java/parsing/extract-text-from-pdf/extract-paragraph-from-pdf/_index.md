@@ -3,7 +3,7 @@ title: PDFから段落を抽出する
 linktitle: 段落を抽出
 type: docs
 weight: 20
-url: ja/java/extract-paragraph-from-pdf/
+url: /ja/java/extract-paragraph-from-pdf/
 description: 本記事では、Aspose.PDFの特別なツールであるParagraphAbsorberを使用してPDFドキュメントからテキストを抽出する方法について説明します。
 lastmod: "2021-06-05"
 sitemap:

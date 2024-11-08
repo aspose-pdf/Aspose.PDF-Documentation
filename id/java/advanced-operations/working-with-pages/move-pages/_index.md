@@ -3,7 +3,7 @@ title: Pindahkan Halaman PDF
 linktitle: Pindahkan Halaman
 type: docs
 weight: 20
-url: id/java/move-pages/
+url: /id/java/move-pages/
 description: Cobalah memindahkan halaman ke lokasi yang diinginkan atau ke akhir file PDF menggunakan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

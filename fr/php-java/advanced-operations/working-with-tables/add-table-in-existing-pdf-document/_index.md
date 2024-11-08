@@ -3,7 +3,7 @@ title: Créer ou Ajouter un Tableau dans un PDF
 linktitle: Créer ou Ajouter un Tableau
 type: docs
 weight: 10
-url: fr/php-java/add-table-in-existing-pdf-document/
+url: /fr/php-java/add-table-in-existing-pdf-document/
 description: Apprenez à créer ou ajouter un tableau à un document PDF, appliquer le style des cellules, diviser le tableau sur les pages et personnaliser les lignes et colonnes, etc.
 lastmod: "2024-05-16"
 sitemap:

@@ -3,7 +3,7 @@ title: Abrir Documento PDF usando C++
 linktitle: Abrir
 type: docs
 weight: 20
-url: pt/cpp/open-pdf-document/
+url: /pt/cpp/open-pdf-document/
 description: Use a biblioteca C++ para abrir seu documento PDF com o próximo trecho de código da Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

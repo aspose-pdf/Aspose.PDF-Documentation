@@ -3,7 +3,7 @@ title: PDF 문서에서 이미지 검색 및 가져오기
 linktitle: 이미지 검색 및 가져오기
 type: docs
 weight: 60
-url: ko/java/search-and-get-images-from-pdf-document/
+url: /ko/java/search-and-get-images-from-pdf-document/
 description: 이 섹션에서는 Aspose.PDF for Java 라이브러리를 사용하여 PDF 문서에서 이미지를 검색하고 가져오는 방법을 설명합니다.
 lastmod: "2021-06-05"
 ---

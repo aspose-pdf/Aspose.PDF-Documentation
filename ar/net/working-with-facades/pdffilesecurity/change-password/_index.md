@@ -2,7 +2,7 @@
 title: تغيير كلمة مرور ملف PDF
 type: docs
 weight: 40
-url: ar/net/change-password/
+url: /ar/net/change-password/
 description: يوضح هذا الموضوع كيفية تغيير كلمة المرور على ملف PDF باستخدام فئة PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

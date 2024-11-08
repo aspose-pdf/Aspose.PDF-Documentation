@@ -3,7 +3,7 @@ title: C#を使用したPDFドキュメントの操作
 linktitle: ドキュメントの操作
 type: docs
 weight: 10
-url: ja/net/working-with-documents/
+url: /ja/net/working-with-documents/
 description: この記事では、Aspose.PDFライブラリを使用してドキュメントで行うことができる操作について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -90,15 +90,15 @@ PDFはオープンスタンダードであり、現在は国際標準化機構�
 
 以下のことができます：
 
-- [PDFドキュメントのフォーマット](/pdf/net/formatting-pdf-document/) - ドキュメントの作成、ドキュメントのプロパティの取得と設定、フォントの埋め込み、およびPDFファイルのその他の操作。
-- [PDFドキュメントの操作](/pdf/net/manipulate-pdf-document/) - PDFドキュメントをPDF A規格に対応させる、目次の作業、PDFの有効期限の設定など。
-- [PDFの最適化](/pdf/net/optimize-pdf/) - ページ内容の最適化、ファイルサイズの最適化、使用されていないオブジェクトの削除、すべての画像を圧縮してドキュメントの最適化を成功させる。
-- [PDFの最適化](/pdf/net/optimize-pdf/) - ページコンテンツの最適化、ファイルサイズの最適化、使用されていないオブジェクトの削除、すべての画像の圧縮によるドキュメントの成功的な最適化。
-- [PDFの結合](/pdf/net/merge-pdf-documents/) - 複数のPDFファイルをC#を使用して単一のPDFドキュメントに結合します。
-- [PDFの分割](/pdf/net/split-document/) - .NETアプリケーションでPDFページを個々のPDFファイルに分割します。
-- [フォルダ内のPDFファイルの連結](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - PdfFileEditorクラスを使用して特定のフォルダ内のすべてのPDFファイルを連結します。
-- [MemoryStreamsを使用した複数のPDFファイルの連結](/pdf/net/concatenate-pdf-documents/) - C#を使用してMemoryStreamsで複数のPDFファイルを連結する方法を学びます。
-- [見出しの操作](/pdf/net/working-with-headings/) - C#を使用してPDFドキュメントの見出しに番号を付けることができます。
+- [PDFドキュメントのフォーマット](/pdf/ja/net/formatting-pdf-document/) - ドキュメントの作成、ドキュメントのプロパティの取得と設定、フォントの埋め込み、およびPDFファイルのその他の操作。
+- [PDFドキュメントの操作](/pdf/ja/net/manipulate-pdf-document/) - PDFドキュメントをPDF A規格に対応させる、目次の作業、PDFの有効期限の設定など。
+- [PDFの最適化](/pdf/ja/net/optimize-pdf/) - ページ内容の最適化、ファイルサイズの最適化、使用されていないオブジェクトの削除、すべての画像を圧縮してドキュメントの最適化を成功させる。
+- [PDFの最適化](/pdf/ja/net/optimize-pdf/) - ページコンテンツの最適化、ファイルサイズの最適化、使用されていないオブジェクトの削除、すべての画像の圧縮によるドキュメントの成功的な最適化。
+- [PDFの結合](/pdf/ja/net/merge-pdf-documents/) - 複数のPDFファイルをC#を使用して単一のPDFドキュメントに結合します。
+- [PDFの分割](/pdf/ja/net/split-document/) - .NETアプリケーションでPDFページを個々のPDFファイルに分割します。
+- [フォルダ内のPDFファイルの連結](/pdf/ja/net/concatenating-all-pdf-files-in-particular-folder/) - PdfFileEditorクラスを使用して特定のフォルダ内のすべてのPDFファイルを連結します。
+- [MemoryStreamsを使用した複数のPDFファイルの連結](/pdf/ja/net/concatenate-pdf-documents/) - C#を使用してMemoryStreamsで複数のPDFファイルを連結する方法を学びます。
+- [見出しの操作](/pdf/ja/net/working-with-headings/) - C#を使用してPDFドキュメントの見出しに番号を付けることができます。
 
 <script type="application/ld+json">
 {

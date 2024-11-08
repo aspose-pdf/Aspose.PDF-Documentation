@@ -2,7 +2,7 @@
 title: PHPでPDFの有効期限を設定
 type: docs
 weight: 80
-url: ja/java/set-pdf-expiration-in-php/
+url: /ja/java/set-pdf-expiration-in-php/
 lastmod: "2021-06-05"
 ---
 

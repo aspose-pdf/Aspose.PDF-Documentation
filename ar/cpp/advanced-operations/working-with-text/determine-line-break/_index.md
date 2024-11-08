@@ -3,7 +3,7 @@ title: Determine Line Break in TextFragment
 linktitle: Determine Line Break
 type: docs
 weight: 70
-url: ar/cpp/determine-line-break/
+url: /ar/cpp/determine-line-break/
 description: تعرف على كيفية تحديد فاصل السطر في TextFragment متعدد الأسطر باستخدام C++
 lastmod: "2021-12-13"
 sitemap:

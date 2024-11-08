@@ -3,7 +3,7 @@ title: 기존 PDF 파일에서 이미지 교체
 linktitle: 이미지 교체
 type: docs
 weight: 70
-url: ko/net/replace-image-in-existing-pdf-file/
+url: /ko/net/replace-image-in-existing-pdf-file/
 description: 이 섹션은 C# 라이브러리를 사용하여 기존 PDF 파일에서 이미지를 교체하는 방법에 대해 설명합니다.
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 이미지 컬렉션의 [Replace](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) 메소드를 사용하여 기존 PDF 파일에서 이미지를 교체할 수 있습니다.
 

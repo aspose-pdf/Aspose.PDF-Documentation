@@ -3,7 +3,7 @@ title: サポートされているファイル形式 C++
 linktitle: サポートされているファイル形式
 type: docs
 weight: 70
-url: ja/cpp/supported-file-formats/
+url: /ja/cpp/supported-file-formats/
 description: このページは、Aspose.PDF for C++ が読み込みおよび保存できるファイル形式を示しています。
 lastmod: "2021-11-08"
 sitemap:

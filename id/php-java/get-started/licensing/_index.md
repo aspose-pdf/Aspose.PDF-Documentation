@@ -3,7 +3,7 @@ title: Lisensi dan batasan
 linktitle: Lisensi dan batasan
 type: docs
 weight: 90
-url: id/php-java/licensing/
+url: /id/php-java/licensing/
 description: Aspose.PDF untuk PHP melalui Java mengundang pelanggannya untuk mendapatkan lisensi Klasik dan Lisensi Meteran. Serta menggunakan lisensi terbatas untuk lebih mengeksplorasi produk.
 lastmod: "2024-06-05"
 sitemap:

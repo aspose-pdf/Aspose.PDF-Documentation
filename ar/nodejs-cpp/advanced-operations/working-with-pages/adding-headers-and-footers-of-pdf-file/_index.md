@@ -3,7 +3,7 @@ title: إضافة رأس وتذييل إلى PDF في Node.js
 linktitle: إضافة رأس وتذييل إلى PDF
 type: docs
 weight: 70
-url: ar/nodejs-cpp/add-headers-and-footers-of-pdf-file/
+url: /ar/nodejs-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF لـ Node.js عبر C++ يسمح لك بإضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام AsposePdfAddTextHeaderFooter.
 lastmod: "2023-11-16"
 sitemap:

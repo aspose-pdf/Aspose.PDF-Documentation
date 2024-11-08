@@ -2,7 +2,7 @@
 title: Supported File Formats 
 type: docs
 weight: 20
-url: ja/reportingservices/supported-file-formats/
+url: /ja/reportingservices/supported-file-formats/
 lastmod: "2021-06-05"
 ---
 

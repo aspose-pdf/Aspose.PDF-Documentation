@@ -2,7 +2,7 @@
 title: Concatenar documentos PDF
 type: docs
 weight: 10
-url: es/java/concatenate-pdf-documents/
+url: /es/java/concatenate-pdf-documents/
 description: Esta sección explica cómo concatenar documentos PDF con com.aspose.pdf.facades utilizando la clase PdfFileEditor.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Obter uma Página Específica em um Arquivo PDF em Python
 type: docs
 weight: 30
-url: pt/python-java/get-a-particular-page-in-a-pdf-file-in-python/
+url: /pt/python-java/get-a-particular-page-in-a-pdf-file-in-python/
 ---
 
 Para obter uma Página Específica em um documento PDF usando **Aspose.PDF Java for Python**, basta invocar a classe **GetPage**.

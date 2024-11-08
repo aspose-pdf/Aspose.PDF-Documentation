@@ -2,7 +2,7 @@
 title: Extraire les pièces jointes d'un fichier PDF
 type: docs
 weight: 10
-url: fr/net/extract-attachments/
+url: /fr/net/extract-attachments/
 description: Cette section explique comment extraire des pièces jointes d'un PDF avec la classe PdfExtractor.
 lastmod: "2021-06-05"
 ---

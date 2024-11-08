@@ -3,7 +3,7 @@ title: PDFをMicrosoft Wordに変換
 linktitle: PDFをWordに変換
 type: docs
 weight: 10
-url: ja/php-java/convert-pdf-to-word/
+url: /ja/php-java/convert-pdf-to-word/
 lastmod: "2024-05-20"
 description: Aspose.PDF for PHPを使用して、PDFファイルをDOCおよびDOCX形式に簡単かつ完全に制御して変換します。Microsoft WordドキュメントへのPDF変換を調整する方法を学びましょう。
 sitemap:

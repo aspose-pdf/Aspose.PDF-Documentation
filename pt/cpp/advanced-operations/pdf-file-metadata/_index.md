@@ -2,7 +2,7 @@
 title: Metadados do Arquivo PDF
 type: docs
 weight: 20
-url: pt/cpp/pdf-file-metadata/
+url: /pt/cpp/pdf-file-metadata/
 ---
 
 ## Obter/Definir Informações do Arquivo PDF

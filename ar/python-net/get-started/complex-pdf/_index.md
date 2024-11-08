@@ -3,7 +3,7 @@ title: إنشاء ملف PDF معقد
 linktitle: إنشاء ملف PDF معقد
 type: docs
 weight: 30
-url: ar/python-net/complex-pdf-example/
+url: /ar/python-net/complex-pdf-example/
 description: يتيح لك Aspose.PDF لـ Python عبر .NET إنشاء مستندات أكثر تعقيدًا تحتوي على صور وقطع نصية وجداول في مستند واحد.
 lastmod: "2022-12-22"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-أظهر مثال [Hello, World](/pdf/python-net/hello-world-example/) خطوات بسيطة لإنشاء مستند PDF باستخدام Python و Aspose.PDF. في هذه المقالة، سنلقي نظرة على كيفية إنشاء مستند أكثر تعقيدًا باستخدام Aspose.PDF لـ Python. كمثال، سنأخذ مستندًا من شركة خيالية تدير خدمات عبّارات الركاب. سيحتوي مستندنا على صورة، وقطعتين نصيتين (عنوان وفقرة)، وجدول.
+أظهر مثال [Hello, World](/pdf/ar/python-net/hello-world-example/) خطوات بسيطة لإنشاء مستند PDF باستخدام Python و Aspose.PDF. في هذه المقالة، سنلقي نظرة على كيفية إنشاء مستند أكثر تعقيدًا باستخدام Aspose.PDF لـ Python. كمثال، سنأخذ مستندًا من شركة خيالية تدير خدمات عبّارات الركاب. سيحتوي مستندنا على صورة، وقطعتين نصيتين (عنوان وفقرة)، وجدول.
 
 إذا قمنا بإنشاء مستند من البداية، نحتاج إلى اتباع خطوات معينة:
 

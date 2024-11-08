@@ -2,7 +2,7 @@
 title: Dapatkan Properti Halaman di Jython
 type: docs
 weight: 50
-url: id/java/get-page-properties-in-jython/
+url: /id/java/get-page-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

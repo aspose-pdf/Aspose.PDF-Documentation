@@ -2,7 +2,7 @@
 title: Exporter les Signets vers XML depuis un Fichier PDF Existant (facades)
 type: docs
 weight: 20
-url: fr/java/export-bookmark/
+url: /fr/java/export-bookmark/
 description: Cette section explique comment exporter des signets avec Aspose.PDF Facades en utilisant la classe PdfBookmarkEditor.
 lastmod: "2021-06-05"
 sitemap:

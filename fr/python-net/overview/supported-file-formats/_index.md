@@ -3,7 +3,7 @@ title: Formats de Fichiers Pris en Charge
 linktitle: Formats de Fichiers Pris en Charge
 type: docs
 weight: 10
-url: fr/python-net/supported-file-formats/
+url: /fr/python-net/supported-file-formats/
 description: Cette page montre quels formats de fichiers Aspose.PDF pour Python via .NET peut charger et enregistrer.
 lastmod: "2022-12-22"
 sitemap:

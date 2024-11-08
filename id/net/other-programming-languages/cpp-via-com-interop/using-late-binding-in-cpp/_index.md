@@ -2,14 +2,14 @@
 title: Menggunakan late binding di CPP
 type: docs
 weight: 20
-url: id/net/using-late-binding-in-cpp/
+url: /id/net/using-late-binding-in-cpp/
 ---
 
 ## Prasyarat
 
 {{% alert color="primary" %}}
 
-Silakan daftarkan Aspose.PDF untuk .NET dengan COM Interop, silakan periksa artikel yang berjudul [Gunakan Aspose.pdf untuk .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Silakan daftarkan Aspose.PDF untuk .NET dengan COM Interop, silakan periksa artikel yang berjudul [Gunakan Aspose.pdf untuk .NET via COM Interop](/pdf/id/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

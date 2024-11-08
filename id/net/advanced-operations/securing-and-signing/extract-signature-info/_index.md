@@ -3,7 +3,7 @@ title: Ekstrak Informasi Gambar dan Tanda Tangan
 linktitle: Ekstrak Informasi Gambar dan Tanda Tangan
 type: docs
 weight: 30
-url: id/net/extract-image-and-signature-information/
+url: /id/net/extract-image-and-signature-information/
 description: Anda dapat mengekstrak gambar dari kolom tanda tangan dan mengekstrak informasi tanda tangan menggunakan kelas SignatureField dengan C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Anda dapat mengekstrak gambar dari kolom tanda tangan dan mengekstrak informasi tanda tangan menggunakan kelas SignatureField dengan C#."
 }
 </script>
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Menarik Gambar dari Bidang Tanda Tangan
 

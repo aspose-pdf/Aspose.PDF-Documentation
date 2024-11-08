@@ -2,20 +2,20 @@
 title: PHP via COM Interop
 type: docs
 weight: 50
-url: pt/net/php-via-com-interop/
+url: /pt/net/php-via-com-interop/
 ---
 
 ## Pré-requisitos
 
 {{% alert color="primary" %}}
-Configure seu PHP para trabalhar com COM. Veja <http://www.php.net/manual/en/ref.com.php>. Para mais informações, por favor, consulte o artigo chamado [Use Aspose.pdf for .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)
+Configure seu PHP para trabalhar com COM. Veja <http://www.php.net/manual/en/ref.com.php>. Para mais informações, por favor, consulte o artigo chamado [Use Aspose.pdf for .NET via COM Interop](/pdf/pt/net/use-aspose-pdf-for-net-via-com-interop/)
 
 {{% /alert %}}
 
 ## Exemplo Hello World!
 
 {{% alert color="primary" %}}
-Esta é uma aplicação simples que mostra como criar um novo arquivo PDF e adicionar texto ao arquivo PDF usando [Aspose.PDF for .NET](/pdf/net/) em PHP via COM Interop.
+Esta é uma aplicação simples que mostra como criar um novo arquivo PDF e adicionar texto ao arquivo PDF usando [Aspose.PDF for .NET](/pdf/pt/net/) em PHP via COM Interop.
 
 {{% /alert %}}
 

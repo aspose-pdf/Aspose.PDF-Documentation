@@ -3,7 +3,7 @@ title: Remover Tabelas de um PDF Existente
 linktitle: Remover Tabelas
 type: docs
 weight: 40
-url: pt/java/remove-tables-from-existing-pdf/
+url: /pt/java/remove-tables-from-existing-pdf/
 description: Aspose.PDF para Java permite que você remova tabela e múltiplas tabelas do seu documento PDF.
 lastmod: "2021-06-05"
 sitemap:

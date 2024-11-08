@@ -3,7 +3,7 @@ title: العمل مع النماذج باستخدام C++
 linktitle: العمل مع النماذج
 type: docs
 weight: 50
-url: ar/cpp/working-with-forms/
+url: /ar/cpp/working-with-forms/
 description: يشرح هذا القسم كيفية العمل مع AcroForms و XFA Forms في مستندات PDF الخاصة بك باستخدام Aspose.PDF لـ C++.
 lastmod: "2021-11-30"
 sitemap:
@@ -21,5 +21,5 @@ AcroForms هي ملفات PDF تحتوي على حقول نموذج. يمكن ل
 
 ستجد إجابات على هذه الأسئلة والعديد من الأسئلة الأخرى من خلال تعلم القسم التالي من الوثائق.
 
-- [AcroForms](/pdf/cpp/acroforms/) - إنشاء نموذج، تعبئة حقل نموذج، استخراج البيانات من النموذج، تعديل الحقول في PDF الخاص بك باستخدام مكتبة C++.
-- [نماذج XFA](/pdf/cpp/xfa-forms/) - املأ حقول XFA، حوّل XFA، احصل على خصائص حقول XFA.
+- [AcroForms](/pdf/ar/cpp/acroforms/) - إنشاء نموذج، تعبئة حقل نموذج، استخراج البيانات من النموذج، تعديل الحقول في PDF الخاص بك باستخدام مكتبة C++.
+- [نماذج XFA](/pdf/ar/cpp/xfa-forms/) - املأ حقول XFA، حوّل XFA، احصل على خصائص حقول XFA.

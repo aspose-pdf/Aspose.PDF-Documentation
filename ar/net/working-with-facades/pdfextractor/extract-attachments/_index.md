@@ -3,7 +3,7 @@
 title: استخراج المرفقات من ملف PDF
 type: docs
 weight: 10
-url: ar/net/extract-attachments/
+url: /ar/net/extract-attachments/
 description: يوضح هذا القسم كيفية استخراج المرفقات من ملفات pdf باستخدام فئة PdfExtractor.
 lastmod: "2021-06-05"
 ---

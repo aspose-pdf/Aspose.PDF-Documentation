@@ -3,7 +3,7 @@ title: PDFマルチメディア注釈をC++で使用
 linktitle: マルチメディア注釈
 type: docs
 weight: 40
-url: ja/cpp/multimedia-annotation/
+url: /ja/cpp/multimedia-annotation/
 description: Aspose.PDF for C++を使用すると、PDFドキュメントにマルチメディア注釈を追加、取得、削除できます。
 lastmod: "2021-11-24"
 sitemap:

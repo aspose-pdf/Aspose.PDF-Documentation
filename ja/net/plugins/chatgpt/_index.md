@@ -2,7 +2,7 @@
 title: ChatGPT
 type: docs
 weight: 30
-url: ja/net/plugins/chatGPT/
+url: /ja/net/plugins/chatGPT/
 description: AIパワードのChatGPTレスポンスを生成してPDFに保存する方法
 lastmod: "2024-02-24"
 ---

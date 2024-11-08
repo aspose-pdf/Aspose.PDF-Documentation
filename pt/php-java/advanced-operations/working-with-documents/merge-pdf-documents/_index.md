@@ -3,7 +3,7 @@ title: Mesclar PDF programaticamente
 linktitle: Mesclar arquivos PDF
 type: docs
 weight: 50
-url: pt/php-java/merge-pdf-documents/
+url: /pt/php-java/merge-pdf-documents/
 description: Esta página explica como mesclar documentos PDF em um único arquivo PDF usando PHP.
 lastmod: "2024-06-05"
 ---

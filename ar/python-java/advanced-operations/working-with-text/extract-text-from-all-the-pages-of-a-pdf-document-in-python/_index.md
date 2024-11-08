@@ -2,7 +2,7 @@
 title: استخراج النص من جميع صفحات مستند PDF في بايثون
 type: docs
 weight: 30
-url: ar/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
+url: /ar/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 ---
 
 لاستخراج النص من جميع صفحات مستند PDF باستخدام **Aspose.PDF Java for Python**، قم فقط باستدعاء وحدة **ExtractTextFromAllPages**.

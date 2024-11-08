@@ -2,7 +2,7 @@
 title: PDF 파일의 비밀번호 변경
 type: docs
 weight: 40
-url: ko/net/change-password/
+url: /ko/net/change-password/
 description: 이 주제는 PdfFileSecurity 클래스를 사용하여 PDF 파일의 비밀번호를 변경하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

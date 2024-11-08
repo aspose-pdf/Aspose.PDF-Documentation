@@ -2,7 +2,7 @@
 title: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman di Python
 type: docs
 weight: 30
-url: id/python-java/get-document-window-and-page-display-properties-in-python/
+url: /id/python-java/get-document-window-and-page-display-properties-in-python/
 ---
 
 <ins>Untuk Mendapatkan Properti Jendela Dokumen dan Tampilan Halaman dari dokumen Pdf menggunakan **Aspose.PDF Java for Python**, cukup panggil kelas **GetDocumentWindow**.

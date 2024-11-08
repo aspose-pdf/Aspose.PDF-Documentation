@@ -3,7 +3,7 @@ title: Convertir PDF a Microsoft PowerPoint
 linktitle: Convertir PDF a PowerPoint
 type: docs
 weight: 30
-url: es/java/convert-pdf-to-powerpoint/
+url: /es/java/convert-pdf-to-powerpoint/
 lastmod: "2021-11-19"
 description: Aspose.PDF le permite convertir PDF a formato PowerPoint usando Java. Una forma hay una posibilidad de convertir PDF a PPTX con diapositivas como imágenes.
 lastmod: "2021-10-18"

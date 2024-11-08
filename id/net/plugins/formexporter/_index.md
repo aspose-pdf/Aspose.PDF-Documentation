@@ -2,7 +2,7 @@
 title: Form Exporter
 type: docs
 weight: 50
-url: id/net/plugins/formexpoter/
+url: /id/net/plugins/formexpoter/
 description: Cara Mengekspor Nilai Bidang Formulir ke File CSV menggunakan Plugin Form Exporter Aspose.PDF
 lastmod: "2024-01-24"
 draft: false

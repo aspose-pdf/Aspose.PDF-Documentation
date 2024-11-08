@@ -2,7 +2,7 @@
 title: PDFファイルの末尾に空のページを挿入する（Ruby）
 type: docs
 weight: 60
-url: ja/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
+url: /ja/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

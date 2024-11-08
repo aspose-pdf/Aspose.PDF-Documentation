@@ -2,7 +2,7 @@
 title: إنشاء مستند
 type: docs
 weight: 10
-url: ar/java/create-pdf-document/
+url: /ar/java/create-pdf-document/
 description: يساعد Aspose.PDF for Java على إنشاء مستند PDF وملف PDF قابل للبحث في بضع خطوات سهلة.
 lastmod: "2021-06-05"
 ---

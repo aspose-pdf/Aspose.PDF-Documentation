@@ -3,7 +3,7 @@ title: Trabajando con Texto en PDF usando Python
 linktitle: Trabajando con Texto
 type: docs
 weight: 30
-url: es/python-net/working-with-text/
+url: /es/python-net/working-with-text/
 description: Esta sección explica varias técnicas de manejo de texto. Aprenda cómo añadir, reemplazar, rotar, buscar texto usando Aspose.PDF para Python.
 lastmod: "2024-01-17"
 sitemap:
@@ -81,11 +81,11 @@ Todos necesitamos a veces agregar texto al archivo PDF. Por ejemplo, cuando dese
 
 Puedes hacer lo siguiente:
 
-- [Agregar Texto al archivo PDF](/pdf/python-net/add-text-to-pdf-file/) - agrega texto a tu PDF, usa fuentes de flujo y archivos, agrega una cadena HTML, agrega un hipervínculo, etc.
-- [Tooltip PDF](/pdf/python-net/pdf-tooltip/) - puedes agregar un tooltip al texto buscado añadiendo un botón invisible usando Python.
-- [Formato de Texto dentro de PDF](/pdf/python-net/text-formatting-inside-pdf/) - Muchas características puedes agregar a tu documento al formatear el texto dentro de él.
+- [Agregar Texto al archivo PDF](/pdf/es/python-net/add-text-to-pdf-file/) - agrega texto a tu PDF, usa fuentes de flujo y archivos, agrega una cadena HTML, agrega un hipervínculo, etc.
+- [Tooltip PDF](/pdf/es/python-net/pdf-tooltip/) - puedes agregar un tooltip al texto buscado añadiendo un botón invisible usando Python.
+- [Formato de Texto dentro de PDF](/pdf/es/python-net/text-formatting-inside-pdf/) - Muchas características puedes agregar a tu documento al formatear el texto dentro de él.
  Agrega sangría de línea, añade borde de texto, subraya texto, añade salto de línea con la biblioteca Aspose.PDF.
-- [Reemplazar Texto en PDF](/pdf/python-net/replace-text-in-pdf/) - para reemplazar texto en todas las páginas de un documento PDF. Primero necesitas usar TextFragmentAbsorber.
-- [Rotar Texto Dentro de PDF](/pdf/python-net/rotate-text-inside-pdf/) - rota texto dentro del PDF usando la propiedad de rotación de la Clase TextFragment.
-- [Buscar y Obtener Texto de las Páginas de un Documento PDF](/pdf/python-net/search-and-get-text-from-pdf/) - puedes usar la clase TextFragmentAbsorber para buscar y obtener texto de las páginas.
-- [Determinar Salto de Línea](/pdf/python-net/determine-line-break/) - este tema explica cómo rastrear el salto de línea de fragmentos de texto multi-línea.
+- [Reemplazar Texto en PDF](/pdf/es/python-net/replace-text-in-pdf/) - para reemplazar texto en todas las páginas de un documento PDF. Primero necesitas usar TextFragmentAbsorber.
+- [Rotar Texto Dentro de PDF](/pdf/es/python-net/rotate-text-inside-pdf/) - rota texto dentro del PDF usando la propiedad de rotación de la Clase TextFragment.
+- [Buscar y Obtener Texto de las Páginas de un Documento PDF](/pdf/es/python-net/search-and-get-text-from-pdf/) - puedes usar la clase TextFragmentAbsorber para buscar y obtener texto de las páginas.
+- [Determinar Salto de Línea](/pdf/es/python-net/determine-line-break/) - este tema explica cómo rastrear el salto de línea de fragmentos de texto multi-línea.

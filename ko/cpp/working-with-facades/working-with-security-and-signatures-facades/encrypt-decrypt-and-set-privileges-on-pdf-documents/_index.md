@@ -2,7 +2,7 @@
 title: PDF 문서 암호화, 복호화 및 권한 설정
 type: docs
 weight: 10
-url: ko/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+url: /ko/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
 ---
 
 ## <ins>**기존 PDF 파일에 권한 설정하기**

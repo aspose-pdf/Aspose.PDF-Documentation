@@ -3,7 +3,7 @@
 title: PdfExtractor를 사용하여 이미지 추출
 type: docs
 weight: 20
-url: ko/net/extract-images/
+url: /ko/net/extract-images/
 description: 이 섹션은 PdfExtractor 클래스를 사용하여 Aspose.PDF Facades로 이미지를 추출하는 방법을 설명합니다.
 lastmod: "2021-07-15"
 ---

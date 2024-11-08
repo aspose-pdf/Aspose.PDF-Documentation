@@ -3,7 +3,7 @@ title: PDF 문서 프로그래밍 방식으로 저장
 linktitle: PDF 저장
 type: docs
 weight: 30
-url: ko/net/save-pdf-document/
+url: /ko/net/save-pdf-document/
 description: C# Aspose.PDF for .NET PDF 라이브러리를 사용하여 PDF 파일을 저장하는 방법을 알아보세요. 파일 시스템, 스트림 및 웹 애플리케이션에 PDF 문서 저장하기.
 aliases:
     - /net/saving/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/net/drawing/) 인터페이스에서도 작동합니다.
+다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/ko/net/drawing/) 인터페이스에서도 작동합니다.
 
 ## 파일 시스템에 PDF 문서 저장
 
@@ -60,7 +60,7 @@ var pdfDocument = new Aspose.Pdf.Document(originalFileName);
 pdfDocument.Pages.Add();
 pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
-자세한 설명은 [Showcase](/pdf/net/showcases/) 섹션을 참조하십시오.
+자세한 설명은 [Showcase](/pdf/ko/net/showcases/) 섹션을 참조하십시오.
 
 ## PDF/A 또는 PDF/X 형식 저장
 

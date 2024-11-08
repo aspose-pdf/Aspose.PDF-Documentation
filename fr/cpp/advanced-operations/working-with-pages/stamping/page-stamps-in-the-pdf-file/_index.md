@@ -3,7 +3,7 @@ title: Ajouter des tampons de page PDF dans le PDF
 linktitle: Tampons de page dans le fichier PDF
 type: docs
 weight: 30
-url: fr/cpp/page-stamps-in-the-pdf-file/
+url: /fr/cpp/page-stamps-in-the-pdf-file/
 description: Ajouter un tampon de page à un fichier PDF en utilisant la classe PdfPageStamp avec C++.
 lastmod: "2021-12-08"
 sitemap:

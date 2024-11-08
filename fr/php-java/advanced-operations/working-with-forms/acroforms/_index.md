@@ -3,7 +3,7 @@ title: Travailler avec AcroForms dans PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: fr/php-java/acroforms/
+url: /fr/php-java/acroforms/
 description: Avec Aspose.PDF pour PHP via Java, vous pouvez créer un formulaire à partir de zéro, remplir le champ de formulaire dans un document PDF, extraire des données du formulaire, ajouter ou supprimer des champs dans le formulaire existant.
 lastmod: "2024-06-05"
 sitemap:
@@ -34,10 +34,10 @@ Ainsi, les PDFs sont le meilleur format de fichier pour les formulaires puisqu'i
 
 Pour une étude plus détaillée des possibilités de travailler avec des formulaires, étudiez les articles suivants dans la section :
 
--[Créer AcroForm](/pdf/php-java/create-form/) - créer un formulaire à partir de zéro, ajouter RadioButtonField, TextBoxField, Champ de légende en utilisant PHP.
+-[Créer AcroForm](/pdf/fr/php-java/create-form/) - créer un formulaire à partir de zéro, ajouter RadioButtonField, TextBoxField, Champ de légende en utilisant PHP.
 
--[Remplir AcroForm](/pdf/php-java/fill-form/) - pour remplir un champ de formulaire, obtenez le champ de la collection de formulaires de l'objet Document.
+-[Remplir AcroForm](/pdf/fr/php-java/fill-form/) - pour remplir un champ de formulaire, obtenez le champ de la collection de formulaires de l'objet Document.
 
--[Extraire les données AcroForm](/pdf/php-java/extract-form/) - obtenir des valeurs de tous et des champs individuels, etc.
+-[Extraire les données AcroForm](/pdf/fr/php-java/extract-form/) - obtenir des valeurs de tous et des champs individuels, etc.
 
--[Modifier AcroForm](/pdf/php-java/modifing-form/) - obtenir/définir FieldLimit, supprimer des champs dans un formulaire existant, définir la police du champ de formulaire en dehors des 14 polices PDF Core avec PHP.
+-[Modifier AcroForm](/pdf/fr/php-java/modifing-form/) - obtenir/définir FieldLimit, supprimer des champs dans un formulaire existant, définir la police du champ de formulaire en dehors des 14 polices PDF Core avec PHP.

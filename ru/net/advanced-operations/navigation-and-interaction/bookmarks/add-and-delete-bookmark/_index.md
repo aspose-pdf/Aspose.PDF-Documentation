@@ -3,7 +3,7 @@ title: Добавление и удаление закладки
 linktitle: Добавление и удаление закладки
 type: docs
 weight: 10
-url: ru/net/add-and-delete-bookmark/
+url: /ru/net/add-and-delete-bookmark/
 description: Вы можете добавить закладку в документ PDF с помощью C#. Возможно удалить все или определенные закладки из документа PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ aliases:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавление закладки в документ PDF
 

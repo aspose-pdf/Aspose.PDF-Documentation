@@ -3,7 +3,7 @@ title: C++를 사용하여 PDF 문서 저장
 linktitle: 저장
 type: docs
 weight: 30
-url: ko/cpp/save-pdf-document/
+url: /ko/cpp/save-pdf-document/
 description: Aspose.PDF for C++ 라이브러리를 사용하여 PDF 파일을 저장하는 방법을 배우세요.
 lastmod: "2021-11-01"
 sitemap:

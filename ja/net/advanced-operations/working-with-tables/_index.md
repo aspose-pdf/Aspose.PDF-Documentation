@@ -3,7 +3,7 @@ title: PDFでのテーブル操作についてのC#使用法
 linktitle: テーブルの操作
 type: docs
 weight: 50
-url: ja/net/working-with-tables/
+url: /ja/net/working-with-tables/
 description: このセクションでは、テーブルの追加と抽出、C#ライブラリを使用したテーブルの操作と統合方法について説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -81,12 +81,12 @@ PDF フォームには多くの場合、テーブルが含まれています。�
 
 以下の操作が可能です：
 
-- [既存の PDF ドキュメントにテーブルを作成または追加する](/pdf/net/add-table-in-existing-pdf-document/) - 列または行の結合、境界線、余白、パディングを考慮して PDF ファイルにテーブルを作成します。
-- [既存の PDF ドキュメントからテーブルを抽出する](/pdf/net/extract-table-from-existing-pdf-document/) - PDF ファイルからテーブルを抽出するか、テーブルの境界線を画像として抽出します。
-- [データソースとテーブルを統合する](/pdf/net/integrate-table/) - データベースとテーブルを統合する、Entity Framework ソースを使用して .NET ライブラリとテーブルを統合します。
-- [既存の PDF でテーブルを操作する](/pdf/net/manipulate-tables-in-existing-pdf/) - TableAbsorber を使用して PDF のテーブルを操作します。
-- [既存のPDF内の表を操作する](/pdf/net/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内の表を操作します。
-- [既存のPDFから表を削除する](/pdf/net/remove-tables-from-existing-pdf/) - PDFドキュメントから表または複数の表を削除します。
+- [既存の PDF ドキュメントにテーブルを作成または追加する](/pdf/ja/net/add-table-in-existing-pdf-document/) - 列または行の結合、境界線、余白、パディングを考慮して PDF ファイルにテーブルを作成します。
+- [既存の PDF ドキュメントからテーブルを抽出する](/pdf/ja/net/extract-table-from-existing-pdf-document/) - PDF ファイルからテーブルを抽出するか、テーブルの境界線を画像として抽出します。
+- [データソースとテーブルを統合する](/pdf/ja/net/integrate-table/) - データベースとテーブルを統合する、Entity Framework ソースを使用して .NET ライブラリとテーブルを統合します。
+- [既存の PDF でテーブルを操作する](/pdf/ja/net/manipulate-tables-in-existing-pdf/) - TableAbsorber を使用して PDF のテーブルを操作します。
+- [既存のPDF内の表を操作する](/pdf/ja/net/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内の表を操作します。
+- [既存のPDFから表を削除する](/pdf/ja/net/remove-tables-from-existing-pdf/) - PDFドキュメントから表または複数の表を削除します。
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: إضافة تعليقات توضيحية للأشكال باستخدام 
 linktitle: تعليقات توضيحية للأشكال
 type: docs
 weight: 30
-url: ar/cpp/figures-annotation/
+url: /ar/cpp/figures-annotation/
 description: يصف هذا المقال كيفية إضافة، الحصول على، وحذف التعليقات التوضيحية للأشكال من مستند PDF الخاص بك باستخدام Aspose.PDF لـ C++
 lastmod: "2021-11-24"
 sitemap:

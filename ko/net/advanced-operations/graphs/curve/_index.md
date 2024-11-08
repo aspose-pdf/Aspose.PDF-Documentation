@@ -3,7 +3,7 @@ title: PDF 파일에 곡선 객체 추가
 linktitle: 곡선 추가
 type: docs
 weight: 30
-url: ko/net/add-curve/
+url: /ko/net/add-curve/
 description: 이 글은 Aspose.PDF for .NET을 사용하여 PDF에 곡선 객체를 만드는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "이 글은 Aspose.PDF for .NET을 사용하여 PDF에 곡선 객체를 만드는 방법을 설명합니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## 곡선 객체 추가
 

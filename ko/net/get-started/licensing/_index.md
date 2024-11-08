@@ -3,7 +3,7 @@ title: Aspose PDF 라이선스
 linktitle: 라이선스 및 제한사항
 type: docs
 weight: 90
-url: ko/net/licensing/
+url: /ko/net/licensing/
 description: Aspose. PDF for .NET은 고객에게 클래식 라이선스와 미터드 라이선스를 제공합니다. 또한 제품을 더 잘 탐색할 수 있도록 제한된 라이선스를 사용할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

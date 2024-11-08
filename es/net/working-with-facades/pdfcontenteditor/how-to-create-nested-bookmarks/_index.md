@@ -2,7 +2,7 @@
 title: Adding Bookmarks to PDF file
 type: docs
 weight: 20
-url: es/net/how-to-create-nested-bookmarks/
+url: /es/net/how-to-create-nested-bookmarks/
 description: Esta sección explica cómo crear Marcadores Anidados con la Clase PdfContentEditor.
 lastmod: "2021-06-05"
 draft: false

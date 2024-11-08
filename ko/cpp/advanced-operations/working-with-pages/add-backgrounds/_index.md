@@ -3,7 +3,7 @@ title: PDF에 배경 추가하기 C++
 linktitle: 배경 추가
 type: docs
 weight: 110
-url: ko/cpp/add-backgrounds/
+url: /ko/cpp/add-backgrounds/
 descriptions: C++로 PDF 파일에 배경 이미지를 추가합니다. BackgroundArtifact 객체를 사용합니다.
 lastmod: "2021-12-03"
 sitemap:

@@ -2,7 +2,7 @@
 title: إضافة التعليقات التوضيحية إلى ملف PDF موجود
 type: docs
 weight: 80
-url: ar/net/adding-annotations-to-existing-pdf-file/
+url: /ar/net/adding-annotations-to-existing-pdf-file/
 description: تشرح هذه القسم كيفية إضافة التعليقات التوضيحية إلى ملف PDF موجود باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

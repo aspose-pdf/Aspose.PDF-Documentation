@@ -3,7 +3,7 @@ title: Tambahkan Stempel Gambar di PDF secara Programatis
 linktitle: Stempel gambar di File PDF
 type: docs
 weight: 10
-url: id/java/image-stamps-in-pdf-page/
+url: /id/java/image-stamps-in-pdf-page/
 description: Tambahkan Stempel Gambar di dokumen PDF Anda menggunakan kelas ImageStamp dengan pustaka Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Mengonversi Format PDF ke PDF/A
 linktitle: Mengonversi Format PDF ke PDF/A
 type: docs
 weight: 100
-url: id/net/convert-pdf-to-pdfa/
+url: /id/net/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
 description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF menjadi file PDF yang sesuai dengan PDF/A.
 sitemap:
@@ -28,7 +28,7 @@ Aspose.PDF untuk .NET mempersembahkan Anda aplikasi gratis secara online ["PDF t
 [![Konversi Aspose.PDF PDF ke PDF/A dengan Aplikasi Gratis](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
-Snippet kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Snippet kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Konversi file PDF ke PDF/A-1b
 

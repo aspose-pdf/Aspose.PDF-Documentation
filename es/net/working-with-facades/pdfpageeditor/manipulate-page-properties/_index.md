@@ -2,7 +2,7 @@
 title: Manipulate Page Properties
 type: docs
 weight: 80
-url: es/net/manipulate-page-properties/
+url: /es/net/manipulate-page-properties/
 description: Esta sección explica cómo manipular las Propiedades de Página con Aspose.PDF Facades usando la Clase PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false

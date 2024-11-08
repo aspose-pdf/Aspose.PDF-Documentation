@@ -3,7 +3,7 @@ title: Удаление страниц PDF программно на C#
 linktitle: Удаление страниц PDF
 type: docs
 weight: 30
-url: ru/net/delete-pages/
+url: /ru/net/delete-pages/
 description: Вы можете удалять страницы из вашего PDF файла с использованием библиотеки Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "Вы можете удалять страницы из вашего PDF файла с использованием библиотеки Aspose.PDF для .NET."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Вы можете удалить страницы из файла PDF с помощью Aspose.PDF для .NET. Чтобы удалить конкретную страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 

@@ -2,7 +2,7 @@
 title: Adicionar e Excluir Favoritos
 type: docs
 weight: 10
-url: pt/cpp/add-and-delete-bookmarks/
+url: /pt/cpp/add-and-delete-bookmarks/
 ---
 
 ## <ins>**Adicionar Favorito**

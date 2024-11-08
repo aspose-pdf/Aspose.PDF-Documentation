@@ -3,7 +3,7 @@ title: PDF에서 첨부 파일 다루기
 linktitle: 첨부 파일 다루기
 type: docs
 weight: 130
-url: ko/net/attachments/
+url: /ko/net/attachments/
 description: C# PDF API를 사용하여 애플리케이션 내에서 PDF 파일의 첨부 파일에 접근하고 추가 및 제거하는 방법을 안내합니다. C# 코드 샘플이 포함된 완벽한 가이드입니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -82,10 +82,10 @@ aliases:
 첨부 파일은 부모 문서에 첨부된 추가 파일로, pdf, word, image 또는 기타 파일 유형일 수 있습니다.
 PDF에 첨부 파일을 추가하고, 첨부 파일 정보를 가져오고, 파일로 저장하고, C#을 사용하여 프로그래밍 방식으로 PDF에서 첨부 파일을 삭제하는 방법을 배우게 됩니다.
 
-- [PDF 문서에 첨부 파일 추가](/pdf/net/add-attachment-to-pdf-document/)
-- [첨부 파일 추출 및 저장](/pdf/net/extract-and-save-an-attachment/)
-- [기존 PDF에서 첨부 파일 제거](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [포트폴리오](/pdf/net/portfolio/)
+- [PDF 문서에 첨부 파일 추가](/pdf/ko/net/add-attachment-to-pdf-document/)
+- [첨부 파일 추출 및 저장](/pdf/ko/net/extract-and-save-an-attachment/)
+- [기존 PDF에서 첨부 파일 제거](/pdf/ko/net/removing-attachment-from-an-existing-pdf/)
+- [포트폴리오](/pdf/ko/net/portfolio/)
 
 <script type="application/ld+json">
 {

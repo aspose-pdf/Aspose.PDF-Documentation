@@ -3,7 +3,7 @@ title: חלץ תוכן עם תגיות ממסמך PDF
 linktitle: חלץ תוכן עם תגיות
 type: docs
 weight: 20
-url: ar/net/extract-tagged-content-from-tagged-pdfs/
+url: /ar/net/extract-tagged-content-from-tagged-pdfs/
 description: מאמר זה מסביר כיצד לחלץ תוכן עם תגיות ממסמך PDF באמצעות Aspose.PDF for .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 במאמר זה תלמדו כיצד לחלץ תוכן מתויג ממסמך PDF באמצעות C#.
 
-הקטע הקוד הבא עובד גם עם ספריית [Aspose.PDF.Drawing](/pdf/net/drawing/).
+הקטע הקוד הבא עובד גם עם ספריית [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## קבלת תוכן PDF מתויג
 

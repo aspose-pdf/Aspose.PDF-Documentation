@@ -3,7 +3,7 @@ title: PDFをプログラムで分割する
 linktitle: PDFファイルを分割する
 type: docs
 weight: 60
-url: ja/php-java/split-document/
+url: /ja/php-java/split-document/
 description: このトピックでは、PHPアプリケーションでPDFページを個々のPDFファイルに分割する方法を示します。
 lastmod: "2024-06-05"
 sitemap:

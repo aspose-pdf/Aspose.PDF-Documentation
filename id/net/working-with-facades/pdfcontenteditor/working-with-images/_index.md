@@ -2,7 +2,7 @@
 title: Bekerja dengan Gambar menggunakan PdfContentEditor
 type: docs
 weight: 50
-url: id/net/working-with-images-in-pdf
+url: /id/net/working-with-images-in-pdf
 description: Bagian ini menjelaskan bagaimana menambahkan dan menghapus Gambar dengan Aspose.PDF Facades menggunakan Kelas PdfContentEditor.
 lastmod: "2021-06-24"
 ---

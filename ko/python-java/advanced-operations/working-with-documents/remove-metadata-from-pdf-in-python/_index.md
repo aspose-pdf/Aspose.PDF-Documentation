@@ -2,7 +2,7 @@
 title: Python에서 PDF의 메타데이터 제거
 type: docs
 weight: 70
-url: ko/python-java/remove-metadata-from-pdf-in-python/
+url: /ko/python-java/remove-metadata-from-pdf-in-python/
 ---
 
 <ins>**Aspose.PDF Java for Python**을 사용하여 Pdf 문서에서 메타데이터를 제거하려면 **RemoveMetadata** 클래스를 호출하십시오.

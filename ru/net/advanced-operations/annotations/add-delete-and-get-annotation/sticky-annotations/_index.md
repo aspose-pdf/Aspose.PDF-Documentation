@@ -3,7 +3,7 @@ title: PDF липкие аннотации на C#
 linktitle: Липкая аннотация
 type: docs
 weight: 50
-url: ru/net/sticky-annotations/
+url: /ru/net/sticky-annotations/
 description: Эта тема о липких аннотациях, в качестве примера мы показываем аннотацию водяного знака в тексте.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавление аннотации с водяным знаком
 

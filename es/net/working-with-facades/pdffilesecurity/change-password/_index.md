@@ -2,7 +2,7 @@
 title: Cambiar Contraseña de Archivo PDF
 type: docs
 weight: 40
-url: es/net/change-password/
+url: /es/net/change-password/
 description: Este tema explica cómo cambiar la contraseña en un archivo PDF utilizando la clase PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

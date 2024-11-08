@@ -3,7 +3,7 @@ title: Начало работы
 linktitle: Начало работы
 type: docs
 weight: 30
-url: ru/python-java/get-started/
+url: /ru/python-java/get-started/
 description: Эта страница является обзором использования Aspose.PDF для Python через Java для создания и редактирования PDF-документа
 lastmod: "2024-06-05"
 sitemap:
@@ -43,7 +43,7 @@ Aspose.PDF for Python via Java быстрый, легковесный и про�
 
 ### Узнайте больше о
 
-- [Основы DOM API](/pdf/python-java/basics-of-dom-api/)
-- [Пример на Java "Hello, World"](/pdf/python-java/hello-world-example/)
-- [Сложный PDF](/pdf/python-java/complex-pdf-example/)
-- [Как запустить другие примеры](/pdf/python-java/how-to-run-other-examples/)
+- [Основы DOM API](/pdf/ru/python-java/basics-of-dom-api/)
+- [Пример на Java "Hello, World"](/pdf/ru/python-java/hello-world-example/)
+- [Сложный PDF](/pdf/ru/python-java/complex-pdf-example/)
+- [Как запустить другие примеры](/pdf/ru/python-java/how-to-run-other-examples/)

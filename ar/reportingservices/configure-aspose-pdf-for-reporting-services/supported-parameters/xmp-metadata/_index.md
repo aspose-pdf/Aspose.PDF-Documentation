@@ -2,7 +2,7 @@
 title: XMP Metadata
 type: docs
 weight: 80
-url: ar/reportingservices/xmp-metadata/
+url: /ar/reportingservices/xmp-metadata/
 lastmod: "2021-06-05"
 ---
 

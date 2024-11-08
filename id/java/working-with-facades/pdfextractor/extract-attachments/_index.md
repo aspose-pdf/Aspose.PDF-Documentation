@@ -2,7 +2,7 @@
 title: Extract Attachments from PDF File
 type: docs
 weight: 10
-url: id/java/extract-attachments/
+url: /id/java/extract-attachments/
 description: Bagian ini menjelaskan tentang cara mengekstrak lampiran dari pdf dengan kelas PdfExtractor.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: PDF에서 PostScript로 변환
 linktitle: PDF에서 PostScript로 변환
 type: docs
 weight: 30
-url: ko/net/pdf-to-postscript-conversion/
+url: /ko/net/pdf-to-postscript-conversion/
 keywords: "pdf to postscript c#"
 description: PDF에서 PostScript로 변환하는 솔루션을 제공합니다. 이 작업을 위해 인쇄 및 PdfViewer 클래스를 사용하세요.
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "PDF에서 PostScript로 변환하는 솔루션을 제공합니다. 이 작업을 위해 인쇄 및 PdfViewer 클래스를 사용하세요."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## **C#에서 PDF를 Postscript로 변환**
 

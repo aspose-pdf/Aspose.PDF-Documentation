@@ -3,7 +3,7 @@ title: Memodifikasi AcroForms
 linktitle: Memodifikasi AcroForms
 type: docs
 weight: 40
-url: id/java/modifing-form/
+url: /id/java/modifing-form/
 description: Bagian ini menjelaskan bagaimana memodifikasi formulir dalam dokumen PDF Anda dengan Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:

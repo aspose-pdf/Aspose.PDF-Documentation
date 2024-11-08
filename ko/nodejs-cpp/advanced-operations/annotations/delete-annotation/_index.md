@@ -3,7 +3,7 @@ title: Node.js에서 주석 삭제
 linktitle: 주석 삭제
 type: docs
 weight: 10
-url: ko/nodejs-cpp/delete-annotation/
+url: /ko/nodejs-cpp/delete-annotation/
 description: Aspose.PDF for Node.js를 사용하여 PDF 파일에서 주석을 삭제할 수 있습니다.
 lastmod: "2023-11-16"
 sitemap:

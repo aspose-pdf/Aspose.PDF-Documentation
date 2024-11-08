@@ -2,7 +2,7 @@
 title: Diviser un fichier PDF en pages individuelles en Ruby
 type: docs
 weight: 80
-url: fr/java/split-pdf-file-into-individual-pages-in-ruby/
+url: /fr/java/split-pdf-file-into-individual-pages-in-ruby/
 lastmod: "2021-06-05"
 ---
 

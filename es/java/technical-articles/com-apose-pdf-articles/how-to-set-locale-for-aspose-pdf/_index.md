@@ -2,7 +2,7 @@
 title: Cómo Establecer la Configuración Regional para Aspose.PDF
 type: docs
 weight: 30
-url: es/java/how-to-set-locale-for-aspose-pdf/
+url: /es/java/how-to-set-locale-for-aspose-pdf/
 lastmod: "2022-01-27"
 ---
 

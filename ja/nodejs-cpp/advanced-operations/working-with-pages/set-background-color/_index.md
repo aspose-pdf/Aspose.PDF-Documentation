@@ -3,7 +3,7 @@ title: Node.jsでPDFの背景色を設定する
 linktitle: 背景色を設定する
 type: docs
 weight: 80
-url: ja/nodejs-cpp/set-background-color/
+url: /ja/nodejs-cpp/set-background-color/
 description: C++を介してNode.jsでPDFファイルの背景色を設定します。
 lastmod: "2023-11-16"
 sitemap:

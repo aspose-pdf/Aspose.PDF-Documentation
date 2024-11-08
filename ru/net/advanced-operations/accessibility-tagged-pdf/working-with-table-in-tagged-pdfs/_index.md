@@ -3,7 +3,7 @@ title: Работа с таблицей в тегированных PDF
 linktitle: Работа с таблицей в тегированных PDF
 type: docs
 weight: 40
-url: ru/net/working-with-table-in-tagged-pdfs/
+url: /ru/net/working-with-table-in-tagged-pdfs/
 description: Эта статья объясняет, как работать с таблицами в тегированных PDF документах с помощью Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ sitemap:
 Aspose.PDF для .NET позволяет создавать таблицы в тегированных PDF документах.
 Aspose.PDF для .NET позволяет создавать таблицы в тегированных PDF документах.
 
-Следующий пример кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий пример кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Следующий пример кода показывает, как создать таблицу в тегированном PDF документе:
 

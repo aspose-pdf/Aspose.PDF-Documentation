@@ -3,7 +3,7 @@ title: יצירת PDF מתויג באמצעות C#
 linktitle: יצירת PDF מתויג
 type: docs
 weight: 10
-url: ar/net/create-tagged-pdf/
+url: /ar/net/create-tagged-pdf/
 description: מאמר זה מסביר כיצד ליצור אלמנטים מובנים עבור מסמך PDF מתויג תוכניתית באמצעות Aspose.PDF עבור .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 יצירת PDF מתויג פירושה להוסיף (או ליצור) אלמנטים מסוימים למסמך שיאפשרו לוודא את המסמך בהתאם לדרישות PDF/UA. לאלמנטים אלו קוראים לעיתים אלמנטי מבנה.
 
-הקטע קוד הבא פועל גם עם ספריית [Aspose.PDF.Drawing](/pdf/net/drawing/).
+הקטע קוד הבא פועל גם עם ספריית [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## יצירת PDF מתויג (תרחיש פשוט)
 

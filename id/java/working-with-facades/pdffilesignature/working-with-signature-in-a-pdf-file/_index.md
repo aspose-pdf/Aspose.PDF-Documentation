@@ -2,7 +2,7 @@
 title: Bekerja dengan Tanda Tangan dalam File PDF
 type: docs
 weight: 40
-url: id/java/working-with-signature-in-a-pdf-file/
+url: /id/java/working-with-signature-in-a-pdf-file/
 description: Bagian ini menjelaskan bagaimana cara bekerja dengan Tanda Tangan dalam File PDF menggunakan kelas PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

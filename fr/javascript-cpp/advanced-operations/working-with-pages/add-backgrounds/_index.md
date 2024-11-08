@@ -3,7 +3,7 @@ title: Ajouter un arrière-plan à un PDF avec JavaScript via C++
 linktitle: Ajouter des arrière-plans
 type: docs
 weight: 10
-url: fr/javascript-cpp/add-backgrounds/
+url: /fr/javascript-cpp/add-backgrounds/
 description: Ajouter une image d'arrière-plan à votre fichier PDF avec JavaScript via C++.
 lastmod: "2023-02-17"
 sitemap:

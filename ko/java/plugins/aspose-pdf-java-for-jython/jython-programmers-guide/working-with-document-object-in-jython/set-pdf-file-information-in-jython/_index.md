@@ -2,7 +2,7 @@
 title: Jython에서 PDF 파일 정보 설정
 type: docs
 weight: 70
-url: ko/java/set-pdf-file-information-in-jython/
+url: /ko/java/set-pdf-file-information-in-jython/
 lastmod: "2021-06-05"
 ---
 

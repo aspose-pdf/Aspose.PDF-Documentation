@@ -2,7 +2,7 @@
 title: ToC Generator
 type: docs
 weight: 150
-url: ar/net/plugins/tocgenerator/
+url: /ar/net/plugins/tocgenerator/
 description: يُنشئ جدول محتويات باستخدام مولد جدول المحتويات Aspose.PDF لـ .NET
 lastmod: "2024-01-24"
 draft: false

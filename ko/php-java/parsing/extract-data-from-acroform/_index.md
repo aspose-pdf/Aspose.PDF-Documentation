@@ -3,7 +3,7 @@ title: AcroForm에서 데이터 추출
 linktitle: AcroForm에서 데이터 추출
 type: docs
 weight: 50
-url: ko/php-java/extract-data-from-acroform/
+url: /ko/php-java/extract-data-from-acroform/
 description: 많은 PDF 문서에 AcroForms가 존재합니다. 이 기사는 PHP와 Aspose.PDF를 사용하여 AcroForms에서 데이터를 추출하는 방법을 이해하는 데 도움을 주기 위해 작성되었습니다.
 lastmod: "2024-05-20"
 sitemap:

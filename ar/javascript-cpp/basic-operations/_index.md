@@ -3,7 +3,7 @@ title: العمليات الأساسية مع PDF بواسطة Aspose.PDF لــ
 linktitle: العمليات الأساسية
 type: docs
 weight: 40
-url: ar/javascript-cpp/basic-operations/
+url: /ar/javascript-cpp/basic-operations/
 lastmod: "2023-04-14"
 description: يصف قسم العمليات الأساسية إمكانيات أبسط العمليات مع مستندات PDF باستخدام Aspose.PDF لــ JavaScript.
 sitemap:
@@ -13,6 +13,6 @@ sitemap:
 
 **قسم العمليات الأساسية** يصف العمليات الأولى والأبسط مع مستندات PDF في Aspose.PDF لــ JavaScript عبر C++:
 
-- [إصلاح PDF](/pdf/javascript-cpp/repair-pdf/)
-- [تحسين ملف PDF](/pdf/javascript-cpp/optimize-pdf/)
-- [تحسين موارد PDF](/pdf/javascript-cpp/optimize-pdf-resources/)
+- [إصلاح PDF](/pdf/ar/javascript-cpp/repair-pdf/)
+- [تحسين ملف PDF](/pdf/ar/javascript-cpp/optimize-pdf/)
+- [تحسين موارد PDF](/pdf/ar/javascript-cpp/optimize-pdf-resources/)

@@ -3,7 +3,7 @@ title: Signets dans PDF avec JavaScript
 linktitle: Signets dans PDF
 type: docs
 weight: 10
-url: fr/javascript-cpp/bookmark/
+url: /fr/javascript-cpp/bookmark/
 description: Vous pouvez ajouter ou supprimer des signets dans un document PDF avec JavaScript.
 lastmod: "2023-02-17"
 sitemap:

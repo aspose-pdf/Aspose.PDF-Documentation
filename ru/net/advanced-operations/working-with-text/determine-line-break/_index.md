@@ -3,7 +3,7 @@ title: Определение переноса строки
 linktitle: Определение переноса строки
 type: docs
 weight: 70
-url: ru/net/determine-line-break/
+url: /ru/net/determine-line-break/
 description: Узнайте больше о том, как определить перенос строки в многострочном TextFragment с использованием C#
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Отслеживание переноса строк многострочного TextFragment
 

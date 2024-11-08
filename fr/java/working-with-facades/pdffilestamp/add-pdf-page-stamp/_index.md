@@ -2,7 +2,7 @@
 title: Ajouter un Timbre de Page PDF
 type: docs
 weight: 10
-url: fr/java/add-pdf-page-stamp/
+url: /fr/java/add-pdf-page-stamp/
 description: Cette section explique comment travailler avec Aspose.PDF Facades en utilisant la classe PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

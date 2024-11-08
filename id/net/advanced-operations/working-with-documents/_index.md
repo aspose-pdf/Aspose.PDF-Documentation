@@ -3,7 +3,7 @@ title: Bekerja dengan Dokumen PDF menggunakan C#
 linktitle: Bekerja dengan Dokumen
 type: docs
 weight: 10
-url: id/net/working-with-documents/
+url: /id/net/working-with-documents/
 description: Artikel ini menjelaskan kepada Anda apa saja manipulasi yang dapat dilakukan dengan dokumen menggunakan perpustakaan Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
@@ -89,15 +89,15 @@ Namun **Aspose.PDF for .NET** dapat membantu Anda mengatasi sebagian besar tugas
 
 Anda dapat melakukan hal-hal berikut:
 
-- [Mengatur Format Dokumen PDF](/pdf/net/formatting-pdf-document/) - membuat dokumen, mendapatkan dan mengatur properti dokumen, menyematkan font, dan operasi lain dengan file PDF.
-- [Memanipulasi Dokumen PDF](/pdf/net/manipulate-pdf-document/) - memvalidasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lainnya.
-- [Mengoptimalkan PDF](/pdf/net/optimize-pdf/) - mengoptimalkan konten halaman, mengoptimalkan ukuran file, menghapus objek yang tidak digunakan, mengompres semua gambar untuk optimisasi dokumen yang sukses.
-- [Optimalkan PDF](/pdf/net/optimize-pdf/) - mengoptimalkan konten halaman, mengoptimalkan ukuran file, menghapus objek yang tidak digunakan, mengompres semua gambar untuk optimisasi dokumen yang sukses.
-- [Gabungkan PDF](/pdf/net/merge-pdf-documents/) - menggabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan C#.
-- [Pisahkan PDF](/pdf/net/split-document/) - memisahkan halaman PDF menjadi file PDF individu dalam aplikasi .NET Anda.
-- [Gabungkan file PDF di folder](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - menggabungkan semua file PDF di folder tertentu menggunakan kelas PdfFileEditor.
-- [Gabungkan beberapa file PDF menggunakan MemoryStreams](/pdf/net/concatenate-pdf-documents/) - Anda akan belajar cara menggabungkan beberapa file PDF menggunakan MemoryStreams dengan C#.
-- [Bekerja dengan Judul](/pdf/net/working-with-headings/) - Anda dapat membuat penomoran di judul dokumen PDF Anda dengan C#. 
+- [Mengatur Format Dokumen PDF](/pdf/id/net/formatting-pdf-document/) - membuat dokumen, mendapatkan dan mengatur properti dokumen, menyematkan font, dan operasi lain dengan file PDF.
+- [Memanipulasi Dokumen PDF](/pdf/id/net/manipulate-pdf-document/) - memvalidasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lainnya.
+- [Mengoptimalkan PDF](/pdf/id/net/optimize-pdf/) - mengoptimalkan konten halaman, mengoptimalkan ukuran file, menghapus objek yang tidak digunakan, mengompres semua gambar untuk optimisasi dokumen yang sukses.
+- [Optimalkan PDF](/pdf/id/net/optimize-pdf/) - mengoptimalkan konten halaman, mengoptimalkan ukuran file, menghapus objek yang tidak digunakan, mengompres semua gambar untuk optimisasi dokumen yang sukses.
+- [Gabungkan PDF](/pdf/id/net/merge-pdf-documents/) - menggabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan C#.
+- [Pisahkan PDF](/pdf/id/net/split-document/) - memisahkan halaman PDF menjadi file PDF individu dalam aplikasi .NET Anda.
+- [Gabungkan file PDF di folder](/pdf/id/net/concatenating-all-pdf-files-in-particular-folder/) - menggabungkan semua file PDF di folder tertentu menggunakan kelas PdfFileEditor.
+- [Gabungkan beberapa file PDF menggunakan MemoryStreams](/pdf/id/net/concatenate-pdf-documents/) - Anda akan belajar cara menggabungkan beberapa file PDF menggunakan MemoryStreams dengan C#.
+- [Bekerja dengan Judul](/pdf/id/net/working-with-headings/) - Anda dapat membuat penomoran di judul dokumen PDF Anda dengan C#. 
 
 <script type="application/ld+json">
 {

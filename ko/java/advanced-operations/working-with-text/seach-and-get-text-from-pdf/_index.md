@@ -3,7 +3,7 @@ title: PDF 문서의 페이지에서 텍스트 검색 및 가져오기
 linktitle: 검색 및 텍스트 가져오기
 type: docs
 weight: 60
-url: ko/java/search-and-get-text-from-pdf/
+url: /ko/java/search-and-get-text-from-pdf/
 description: 이 문서는 PDF 문서에서 텍스트를 검색하고 가져오는 다양한 도구 사용 방법을 설명합니다. 특정 페이지나 전체 페이지에서 정규 표현식을 사용하여 검색할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:

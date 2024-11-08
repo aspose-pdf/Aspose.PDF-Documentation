@@ -3,7 +3,7 @@ title: تعيين الامتيازات، تشفير وفك تشفير ملف PDF
 linktitle: تشفير وفك تشفير ملف PDF
 type: docs
 weight: 20
-url: ar/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ar/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: تشفير pdf، حماية pdf بكلمة مرور، فك تشفير pdf، c++
 description: تشفير ملف PDF باستخدام C++ باستخدام أنواع مختلفة من التشفير والخوارزميات. أيضًا، فك تشفير ملفات PDF باستخدام كلمة مرور المالك.
 lastmod: "2021-12-17"

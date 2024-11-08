@@ -3,7 +3,7 @@ title: Tambahkan penomoran halaman ke PDF di Node.js
 linktitle: Tambahkan Nomor Halaman
 type: docs
 weight: 100
-url: id/nodejs-cpp/add-page-number/
+url: /id/nodejs-cpp/add-page-number/
 description: Aspose.PDF untuk Node.js melalui C++ memungkinkan Anda menambahkan Cap Nomor Halaman ke file PDF Anda menggunakan AsposePdfAddPageNum.
 lastmod: "2023-11-16"
 sitemap:

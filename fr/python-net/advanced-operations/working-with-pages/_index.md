@@ -3,7 +3,7 @@ title: Travailler avec les pages PDF en Python
 linktitle: Travailler avec les pages
 type: docs
 weight: 20
-url: fr/python-net/working-with-pages/
+url: /fr/python-net/working-with-pages/
 description: Comment ajouter des pages, ajouter des en-têtes et des pieds de page, ajouter des filigranes, vous pouvez le savoir dans cette section. Aspose.PDF pour Python via .NET vous explique tous les détails sur ce sujet.
 lastmod: "2023-04-19"
 sitemap:
@@ -87,20 +87,20 @@ Ajoutez le numéro de page en utilisant la classe [PageNumberStamp](https://refe
 
 You are able to do the following:
 
-- [Ajouter des Pages](/pdf/python-net/add-pages/) - ajouter des pages à l'emplacement souhaité ou à la fin d'un fichier PDF et supprimer une page de votre document.
-- [Déplacer des Pages](/pdf/python-net/move-pages/) - déplacer des pages d'un document à un autre.
-- [Supprimer des Pages](/pdf/python-net/delete-pages/) - supprimer une page de votre fichier PDF en utilisant la collection PageCollection.
-- [Changer la Taille de la Page](/pdf/python-net/change-page-size/) - vous pouvez changer la taille de page PDF avec un extrait de code en utilisant la bibliothèque Aspose.PDF.
-- [Faire Pivoter les Pages](/pdf/python-net/rotate-pages/) - vous pouvez changer l'orientation des pages dans un fichier PDF existant.
-- [Diviser les Pages](/pdf/python-net/split-document/) - vous pouvez diviser des fichiers PDF en un ou plusieurs PDF.
-- [Ajouter des En-têtes et/ou Pieds de page](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - ajouter du texte ou des images dans les en-têtes et pieds de page de votre fichier PDF.
-- [Rogner des Pages](/pdf/python-net/crop-pages/) - vous pouvez rogner des pages dans un document PDF par programme avec différentes Propriétés de Page.
+- [Ajouter des Pages](/pdf/fr/python-net/add-pages/) - ajouter des pages à l'emplacement souhaité ou à la fin d'un fichier PDF et supprimer une page de votre document.
+- [Déplacer des Pages](/pdf/fr/python-net/move-pages/) - déplacer des pages d'un document à un autre.
+- [Supprimer des Pages](/pdf/fr/python-net/delete-pages/) - supprimer une page de votre fichier PDF en utilisant la collection PageCollection.
+- [Changer la Taille de la Page](/pdf/fr/python-net/change-page-size/) - vous pouvez changer la taille de page PDF avec un extrait de code en utilisant la bibliothèque Aspose.PDF.
+- [Faire Pivoter les Pages](/pdf/fr/python-net/rotate-pages/) - vous pouvez changer l'orientation des pages dans un fichier PDF existant.
+- [Diviser les Pages](/pdf/fr/python-net/split-document/) - vous pouvez diviser des fichiers PDF en un ou plusieurs PDF.
+- [Ajouter des En-têtes et/ou Pieds de page](/pdf/fr/python-net/add-headers-and-footers-of-pdf-file/) - ajouter du texte ou des images dans les en-têtes et pieds de page de votre fichier PDF.
+- [Rogner des Pages](/pdf/fr/python-net/crop-pages/) - vous pouvez rogner des pages dans un document PDF par programme avec différentes Propriétés de Page.
 
-- [Ajouter des Filigranes](/pdf/python-net/add-watermarks/) - ajouter des filigranes dans votre fichier PDF avec la classe Artifact.
-- [Ajouter une Numérotation de Page dans un Fichier PDF](/pdf/python-net/add-page-number/) - La classe PageNumberStamp vous aidera à ajouter un numéro de page dans votre fichier PDF.
-- [Ajouter des Arrière-plans](/pdf/python-net/add-backgrounds/) - des images d'arrière-plan peuvent être utilisées pour ajouter un filigrane.
-- [Tamponnage](/pdf/python-net/stamping/) - vous pouvez utiliser la classe ImageStamp pour ajouter un tampon d'image à un fichier PDF et la classe TextStamp pour ajouter un texte.
-- [Obtenir et Définir les Propriétés de Page](/pdf/python-net/get-and-set-page-properties/) - cette section montre comment obtenir le nombre de pages dans un fichier PDF, obtenir des informations sur les propriétés de la page PDF telles que la couleur et définir les propriétés de la page.
+- [Ajouter des Filigranes](/pdf/fr/python-net/add-watermarks/) - ajouter des filigranes dans votre fichier PDF avec la classe Artifact.
+- [Ajouter une Numérotation de Page dans un Fichier PDF](/pdf/fr/python-net/add-page-number/) - La classe PageNumberStamp vous aidera à ajouter un numéro de page dans votre fichier PDF.
+- [Ajouter des Arrière-plans](/pdf/fr/python-net/add-backgrounds/) - des images d'arrière-plan peuvent être utilisées pour ajouter un filigrane.
+- [Tamponnage](/pdf/fr/python-net/stamping/) - vous pouvez utiliser la classe ImageStamp pour ajouter un tampon d'image à un fichier PDF et la classe TextStamp pour ajouter un texte.
+- [Obtenir et Définir les Propriétés de Page](/pdf/fr/python-net/get-and-set-page-properties/) - cette section montre comment obtenir le nombre de pages dans un fichier PDF, obtenir des informations sur les propriétés de la page PDF telles que la couleur et définir les propriétés de la page.
 
 <script type="application/ld+json">
 {

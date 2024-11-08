@@ -3,7 +3,7 @@ title: Extraer Párrafo de PDF
 linktitle: Extraer Párrafo
 type: docs
 weight: 20
-url: es/androidjava/extract-paragraph-from-pdf/
+url: /es/androidjava/extract-paragraph-from-pdf/
 description: Este artículo describe cómo usar ParagraphAbsorber - una herramienta especial en Aspose.PDF para extraer texto de documentos PDF.
 lastmod: "2021-06-05"
 sitemap:

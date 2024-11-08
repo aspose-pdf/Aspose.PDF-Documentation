@@ -2,7 +2,7 @@
 linktitle: Mengonversi format file lain ke PDF
 type: docs
 weight: 80
-url: id/cpp/convert-other-files-to-pdf/
+url: /id/cpp/convert-other-files-to-pdf/
 lastmod: "2021-11-19"
 description: Topik ini menunjukkan kepada Anda bagaimana Aspose.PDF memungkinkan mengonversi format file lain ke dokumen PDF.
 sitemap:

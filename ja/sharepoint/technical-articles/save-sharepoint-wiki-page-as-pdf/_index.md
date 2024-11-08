@@ -2,7 +2,7 @@
 title: SharePoint WikiページをPDFとして保存
 type: docs
 weight: 20
-url: ja/sharepoint/save-sharepoint-wiki-page-as-pdf/
+url: /ja/sharepoint/save-sharepoint-wiki-page-as-pdf/
 lastmod: "2020-12-16"
 keywords: sharepoint wiki pdf export
 description: Sharepoint PDFライブラリを使用してSharePoint WikiページをPDFにエクスポートできます。

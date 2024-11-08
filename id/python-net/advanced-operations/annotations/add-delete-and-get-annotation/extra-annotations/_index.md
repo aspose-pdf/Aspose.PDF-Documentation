@@ -3,7 +3,7 @@ title: Anotasi Ekstra menggunakan Python
 linktitle: Anotasi Ekstra
 type: docs
 weight: 60
-url: id/python-net/extra-annotations/
+url: /id/python-net/extra-annotations/
 description: Bagian ini menjelaskan cara menambah, mendapatkan, dan menghapus jenis anotasi ekstra dari dokumen PDF Anda.
 lastmod: "2023-02-17"
 sitemap:

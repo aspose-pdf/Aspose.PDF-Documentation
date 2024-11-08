@@ -3,7 +3,7 @@ title: Extraer texto de todas las páginas de un PDF usando C++
 linktitle: Extraer texto de PDF
 type: docs
 weight: 10
-url: es/cpp/extract-text-from-all-pdf/
+url: /es/cpp/extract-text-from-all-pdf/
 description: Este artículo describe varias maneras de extraer texto de documentos PDF usando Aspose.PDF en C++. De páginas enteras, de una parte específica, basado en columnas, etc.
 lastmod: "2021-12-13"
 sitemap:

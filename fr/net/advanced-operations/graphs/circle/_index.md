@@ -3,7 +3,7 @@ title: Ajouter un objet cercle au fichier PDF
 linktitle: Ajouter un cercle
 type: docs
 weight: 20
-url: fr/net/add-circle/
+url: /fr/net/add-circle/
 description: Cet article explique comment créer un objet cercle dans votre PDF en utilisant Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter un objet Cercle
 

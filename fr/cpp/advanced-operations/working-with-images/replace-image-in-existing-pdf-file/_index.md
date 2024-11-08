@@ -3,7 +3,7 @@ title: Remplacer l'image dans un fichier PDF existant en utilisant C++
 linktitle: Remplacer l'image
 type: docs
 weight: 70
-url: fr/cpp/replace-image-in-existing-pdf-file/
+url: /fr/cpp/replace-image-in-existing-pdf-file/
 description: Cette section décrit comment remplacer une image dans un fichier PDF existant en utilisant la bibliothèque C++.
 lastmod: "2021-12-18"
 ---

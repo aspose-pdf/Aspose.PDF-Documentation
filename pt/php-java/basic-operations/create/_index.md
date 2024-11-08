@@ -3,7 +3,7 @@ title: Criar Documento PDF
 linktitle: Criar
 type: docs
 weight: 10
-url: pt/php-java/create-document/
+url: /pt/php-java/create-document/
 description: Aprenda a criar arquivo PDF no Aspose.PDF para PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

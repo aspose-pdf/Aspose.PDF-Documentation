@@ -2,7 +2,7 @@
 title: PDF 파일에서 서명 제거
 type: docs
 weight: 20
-url: ko/net/remove-signature-from-pdf/
+url: /ko/net/remove-signature-from-pdf/
 description: 이 섹션은 PdfFileSignature 클래스를 사용하여 PDF 파일에서 서명을 제거하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

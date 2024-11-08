@@ -2,7 +2,7 @@
 title: Extraire le Texte des Tampons
 type: docs
 weight: 60
-url: fr/java/extract-text-from-stamps/
+url: /fr/java/extract-text-from-stamps/
 ---
 
 ## Extraire le Texte des Annotations de Tampon

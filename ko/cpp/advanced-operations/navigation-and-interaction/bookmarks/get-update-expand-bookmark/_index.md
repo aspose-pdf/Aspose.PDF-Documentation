@@ -3,7 +3,7 @@ title: 북마크 가져오기, 업데이트 및 확장
 linktitle: 북마크 가져오기, 업데이트 및 확장
 type: docs
 weight: 20
-url: ko/cpp/get-update-and-expand-bookmark/
+url: /ko/cpp/get-update-and-expand-bookmark/
 description: Aspose.PDF for C++ 라이브러리를 사용하여 PDF 파일에서 업데이트할 수 있습니다.
 lastmod: "2022-01-31"
 sitemap:

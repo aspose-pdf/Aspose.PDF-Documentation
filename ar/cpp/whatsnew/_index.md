@@ -3,7 +3,7 @@ title: ما هو الجديد في C++
 linktitle: ما هو الجديد
 type: docs
 weight: 10
-url: ar/cpp/whatsnew/
+url: /ar/cpp/whatsnew/
 description: في هذه الصفحة يتم تقديم أحدث الميزات الجديدة في Aspose.PDF لـ C++ التي تم تقديمها في الإصدارات الأخيرة.
 sitemap:
     changefreq: "monthly"

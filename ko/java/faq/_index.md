@@ -3,7 +3,7 @@ title: FAQ
 linktitle: FAQ
 type: docs
 weight: 120
-url: ko/java/faq/
+url: /ko/java/faq/
 description: Aspose.PDF for Java 라이브러리의 자주 묻는 질문을 학습하십시오.
 lastmod: "2021-06-17"
 sitemap:

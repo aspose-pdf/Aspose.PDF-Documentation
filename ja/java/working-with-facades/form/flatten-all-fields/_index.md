@@ -2,7 +2,7 @@
 title: 既存のPDFファイルのすべてのフィールドをフラット化する (facades)
 type: docs
 weight: 30
-url: ja/java/flatten-all-fields/
+url: /ja/java/flatten-all-fields/
 description: このセクションでは、Aspose.PDF Facadesを使用してFormクラスで全てのフィールドをフラット化する方法について説明します。
 lastmod: "2021-06-05"
 sitemap:

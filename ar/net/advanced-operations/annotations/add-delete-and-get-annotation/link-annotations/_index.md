@@ -3,7 +3,7 @@ title: استخدام تعليقات الرابط في PDF
 linktitle: تعليقات الرابط
 type: docs
 weight: 70
-url: ar/net/link-annotations/
+url: /ar/net/link-annotations/
 description: يسمح لك Aspose.PDF لـ .NET بإضافة، الحصول على، وحذف تعليق الرابط من مستند PDF الخاص بك.
 lastmod: "2024-07-28"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 ## إضافة توصيف الرابط في ملف PDF موجود
 
-> الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+> الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يمثل [توصيف الرابط](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) رابطًا هايبرتكستيًا، ووجهة ما في مكان آخر، ومستندًا. وفقًا للمعيار PDF، يمكن استخدام توصيف الرابط في ثلاث حالات: فتح عرض الصفحة، فتح ملف، وفتح صفحة ويب.
 

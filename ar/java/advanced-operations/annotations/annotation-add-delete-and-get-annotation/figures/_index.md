@@ -3,7 +3,7 @@ title: PDF Figures Annotations
 linktitle: Figures Annotations
 type: docs
 weight: 30
-url: ar/java/figures-annotation/
+url: /ar/java/figures-annotation/
 description: يصف هذا المقال كيفية إضافة واستخراج وحذف تعليقات الأشكال من مستند PDF الخاص بك باستخدام Aspose.PDF for Java
 lastmod: "2021-11-24"
 sitemap:

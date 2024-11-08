@@ -3,7 +3,7 @@ title: العمل مع العوامل باستخدام C++
 linktitle: العمل مع العوامل
 type: docs
 weight: 170
-url: ar/cpp/operators/
+url: /ar/cpp/operators/
 description: يشرح هذا الموضوع كيفية استخدام العوامل مع Aspose.PDF في C++. توفر فئات العوامل ميزات رائعة للتلاعب بملفات PDF.
 lastmod: "2021-12-14"
 sitemap:

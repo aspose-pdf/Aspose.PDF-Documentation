@@ -3,7 +3,7 @@ title: PDF에 이미지 스탬프 프로그래밍 방식으로 추가하기
 linktitle: PDF 파일에 이미지 스탬프
 type: docs
 weight: 10
-url: ko/php-java/image-stamps-in-pdf-page/
+url: /ko/php-java/image-stamps-in-pdf-page/
 description: Aspose.PDF for PHP via Java 라이브러리를 사용하여 ImageStamp 클래스로 PDF 문서에 이미지 스탬프를 추가하세요.
 lastmod: "2024-06-05"
 sitemap:

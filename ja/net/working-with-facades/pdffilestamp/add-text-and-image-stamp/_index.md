@@ -3,7 +3,7 @@
 title: テキストと画像スタンプの追加
 type: docs
 weight: 20
-url: ja/net/add-text-and-image-stamp/
+url: /ja/net/add-text-and-image-stamp/
 description: このセクションでは、PdfFileStampクラスを使用してAspose.PDF Facadesでテキストと画像のスタンプを追加する方法を説明します。
 lastmod: "2021-06-05"
 draft: false

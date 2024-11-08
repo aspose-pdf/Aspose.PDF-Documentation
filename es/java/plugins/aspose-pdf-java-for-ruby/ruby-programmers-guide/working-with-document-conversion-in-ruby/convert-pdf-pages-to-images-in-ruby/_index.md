@@ -2,7 +2,7 @@
 title: Convertir páginas de PDF a Imágenes en Ruby
 type: docs
 weight: 20
-url: es/java/convert-pdf-pages-to-images-in-ruby/
+url: /es/java/convert-pdf-pages-to-images-in-ruby/
 lastmod: "2021-06-05"
 ---
 

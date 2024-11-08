@@ -3,7 +3,7 @@ title: الحصول على، تحديث وتوسيع إشارة مرجعية ب�
 linktitle: الحصول على، تحديث وتوسيع إشارة مرجعية
 type: docs
 weight: 20
-url: ar/python-net/get-update-and-expand-bookmark/
+url: /ar/python-net/get-update-and-expand-bookmark/
 description: تصف هذه المقالة كيفية استخدام الإشارات المرجعية في ملف PDF باستخدام مكتبة Aspose.PDF لبايثون.
 lastmod: "2023-02-17"
 sitemap:

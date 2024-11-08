@@ -2,7 +2,7 @@
 title: Menyisipkan Gambar ke dalam Sel Tabel di PDF
 type: docs
 weight: 20
-url: id/java/insert-an-image-into-a-table-cell-in-pdf/
+url: /id/java/insert-an-image-into-a-table-cell-in-pdf/
 lastmod: "2022-01-27"
 ---
 

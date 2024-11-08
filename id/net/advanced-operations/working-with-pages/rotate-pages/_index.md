@@ -3,7 +3,7 @@ title: Memutar Halaman PDF Menggunakan C#
 linktitle: Memutar Halaman PDF
 type: docs
 weight: 50
-url: id/net/rotate-pages/
+url: /id/net/rotate-pages/
 description: Topik ini menjelaskan cara memutar orientasi halaman pada file PDF yang sudah ada secara pemrograman dengan C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Topik ini menjelaskan cara memperbarui atau mengubah orientasi halaman pada halaman dalam file PDF yang sudah ada secara pemrograman dengan C#.
 
-Potongan kode berikut ini juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut ini juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mengubah Orientasi Halaman
 

@@ -2,7 +2,7 @@
 title: Python에서 PDF 파일의 특정 페이지 삭제
 type: docs
 weight: 20
-url: ko/java/delete-a-particular-page-from-the-pdf-file-in-python/
+url: /ko/java/delete-a-particular-page-from-the-pdf-file-in-python/
 lastmod: "2021-06-05"
 ---
 

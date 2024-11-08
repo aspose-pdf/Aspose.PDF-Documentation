@@ -3,7 +3,7 @@ title: JavaScript를 통해 C++에서 디지털 서명 또는 PDF에 디지털 �
 linktitle: PDF에 디지털 서명
 type: docs
 weight: 70
-url: ko/javascript-cpp/sign-pdf/
+url: /ko/javascript-cpp/sign-pdf/
 description: JavaScript를 통해 C++로 PDF 문서에 디지털 서명합니다.
 lastmod: "2023-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Membuat Buklet dari PDF
 type: docs
 weight: 80
-url: id/net/make-booklet-of-pdf/
+url: /id/net/make-booklet-of-pdf/
 description: Bagian ini menjelaskan cara membuat buklet dari PDF dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

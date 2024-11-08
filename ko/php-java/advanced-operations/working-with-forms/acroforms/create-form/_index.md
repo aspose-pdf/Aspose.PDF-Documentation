@@ -3,7 +3,7 @@ title: 아크로폼 생성 - PHP에서 작성 가능한 PDF 생성
 linktitle: 아크로폼 생성
 type: docs
 weight: 10
-url: ko/php-java/create-forms/
+url: /ko/php-java/create-forms/
 description: 이 섹션에서는 Aspose.PDF for PHP via Java를 사용하여 PDF 문서에서 아크로폼을 처음부터 생성하는 방법을 설명합니다.
 lastmod: "2024-06-05"
 sitemap:

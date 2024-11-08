@@ -2,7 +2,7 @@
 title: PDF 파일에서 텍스트 교체
 type: docs
 weight: 40
-url: ko/java/replace-text/
+url: /ko/java/replace-text/
 description: 이 섹션은 PDF와 관련된 인기 있는 작업을 위한 도구 세트인 Aspose.PDF Facades를 사용하여 텍스트를 교체하는 방법을 설명합니다.
 lastmod: "2021-06-24"
 sitemap:

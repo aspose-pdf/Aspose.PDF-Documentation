@@ -3,7 +3,7 @@ title: Crop PDF Pages programmatically C#
 linktitle: Crop Pages
 type: docs
 weight: 80
-url: pt/net/crop-pages/
+url: /pt/net/crop-pages/
 description: Você pode obter propriedades de páginas, como a largura, altura, bleed-, crop- e trimbox usando o Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -88,7 +88,7 @@ Cada página em um arquivo PDF tem uma série de propriedades, como largura, alt
 - **Page.Rect**: a interseção (retângulo comumente visível) do MediaBox e DropBox. A imagem abaixo ilustra essas propriedades.
 Para mais detalhes, por favor visite [esta página](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O trecho abaixo mostra como cortar a página:
 

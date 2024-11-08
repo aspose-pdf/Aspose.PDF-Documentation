@@ -3,7 +3,7 @@ title: Eliminar Tablas de un PDF existente
 linktitle: Eliminar Tablas
 type: docs
 weight: 50
-url: es/cpp/remove-tables-from-existing-pdf/
+url: /es/cpp/remove-tables-from-existing-pdf/
 description: Esta sección describe cómo eliminar una Tabla de un documento PDF.
 lastmod: "2021-11-11"
 sitemap:

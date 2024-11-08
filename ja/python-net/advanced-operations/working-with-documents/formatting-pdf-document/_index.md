@@ -3,7 +3,7 @@ title: Pythonを使用したPDFドキュメントのフォーマット
 linktitle: PDFドキュメントのフォーマット
 type: docs
 weight: 11
-url: ja/python-net/formatting-pdf-document/
+url: /ja/python-net/formatting-pdf-document/
 description: Aspose.PDF for Python via .NETを使用してPDFドキュメントを作成およびフォーマットします。次のコードスニペットを使用してタスクを解決してください。
 lastmod: "2023-04-12"
 sitemap:

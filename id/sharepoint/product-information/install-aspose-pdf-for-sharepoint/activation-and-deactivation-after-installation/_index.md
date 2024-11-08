@@ -2,7 +2,7 @@
 title: Aktivasi dan Deaktivasi setelah instalasi
 type: docs
 weight: 40
-url: id/sharepoint/activation-and-deactivation-after-installation/
+url: /id/sharepoint/activation-and-deactivation-after-installation/
 lastmod: "2020-12-16"
 description: Setelah instalasi PDF SharePoint API, Anda dapat menggunakan menu Tindakan Situs di situs web akar dari koleksi situs untuk mengaktifkan dan menonaktifkannya.
 ---

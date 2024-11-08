@@ -3,7 +3,7 @@ title: PDF Sticky Annotations
 linktitle: Sticky Annotation
 type: docs
 weight: 50
-url: fr/php-java/sticky-annotations/
+url: /fr/php-java/sticky-annotations/
 description: Ce sujet concerne les annotations adhésives, comme exemple nous montrons l'Annotation Filigrane dans le texte. Il est utilisé pour représenter des graphiques sur la page. Consultez l'extrait de code pour résoudre cette tâche.
 lastmod: "2024-06-24"
 sitemap:

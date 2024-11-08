@@ -2,7 +2,7 @@
 title: Concatenate PDF Files in PHP
 type: docs
 weight: 10
-url: es/java/concatenate-pdf-files-in-php/
+url: /es/java/concatenate-pdf-files-in-php/
 lastmod: "2021-06-05"
 ---
 

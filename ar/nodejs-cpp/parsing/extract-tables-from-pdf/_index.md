@@ -3,7 +3,7 @@ title: استخراج الجداول من PDF في Node.js
 linktitle: استخراج الجداول من PDF
 type: docs
 weight: 10
-url: ar/nodejs-cpp/extract-tables-from-the-pdf-file/
+url: /ar/nodejs-cpp/extract-tables-from-the-pdf-file/
 description: كيفية تحويل PDF إلى CSV باستخدام Aspose.PDF لـ Node.js عبر مجموعة أدوات C++.
 lastmod: "2023-11-16"
 sitemap:

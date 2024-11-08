@@ -3,7 +3,7 @@ title: Ekstrak Gambar dari File PDF
 linktitle: Ekstrak Gambar
 type: docs
 weight: 30
-url: id/net/extract-images-from-pdf-file/
+url: /id/net/extract-images-from-pdf-file/
 description: Bagian ini menunjukkan cara mengekstrak gambar dari file PDF menggunakan perpustakaan C#.
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Potongan kode berikut juga dapat bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga dapat bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Gambar disimpan dalam koleksi [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) setiap halaman di koleksi [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Untuk mengekstrak halaman tertentu, kemudian dapatkan gambar dari koleksi Images menggunakan indeks gambar yang spesifik.
 

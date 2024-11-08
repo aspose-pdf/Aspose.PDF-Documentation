@@ -3,7 +3,7 @@ title: PDF 문서에서 테이블 추출
 linktitle: 테이블 추출
 type: docs
 weight: 20
-url: ko/net/extract-table-from-existing-pdf-document/
+url: /ko/net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for .NET은 PDF 문서에 포함된 테이블을 다양하게 조작할 수 있게 해줍니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Aspose.PDF for .NET은 PDF 문서에 포함된 테이블을 다양하게 조작할 수 있게 해줍니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ## PDF에서 표 추출하기
 

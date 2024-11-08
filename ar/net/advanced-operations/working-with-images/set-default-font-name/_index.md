@@ -3,7 +3,7 @@ title: Set Default Font Name
 linktitle: Set Default Font Name
 type: docs
 weight: 90
-url: ar/net/set-default-font-name/
+url: /ar/net/set-default-font-name/
 description: تصف هذه القسم كيفية تعيين اسم الخط الافتراضي أثناء عملية التحويل من PDF إلى صورة.
 lastmod: "2022-02-17"
 ---
@@ -74,7 +74,7 @@ lastmod: "2022-02-17"
 </script>
 **Aspose.PDF لـ .NET** API يتيح لك تعيين اسم خط افتراضي عندما لا يكون الخط متوفرًا في المستند. يمكنك استخدام خاصية DefaultFontName من فئة RenderingOptions لتعيين اسم الخط الافتراضي. في حال تم تعيين DefaultFontName على null سيتم استخدام خط **Times New Roman**. يظهر الجزء التالي من الشفرة كيفية تعيين اسم الخط الافتراضي عند حفظ PDF في صورة:
 
-يعمل الجزء التالي من الشفرة أيضًا مع واجهة [Aspose.Drawing](/pdf/net/drawing/) الرسومية الجديدة.
+يعمل الجزء التالي من الشفرة أيضًا مع واجهة [Aspose.Drawing](/pdf/ar/net/drawing/) الرسومية الجديدة.
 
 ```csharp
 // للحصول على أمثلة كاملة وملفات بيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET

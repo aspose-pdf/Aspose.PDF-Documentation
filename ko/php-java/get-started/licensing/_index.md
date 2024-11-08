@@ -3,7 +3,7 @@ title: 라이선스 및 제한
 linktitle: 라이선스 및 제한
 type: docs
 weight: 90
-url: ko/php-java/licensing/
+url: /ko/php-java/licensing/
 description: Aspose.PDF for PHP via Java는 고객에게 클래식 라이선스와 계량 라이선스를 제공합니다. 제품을 더 잘 탐색하기 위해 제한된 라이선스를 사용할 수도 있습니다.
 lastmod: "2024-06-05"
 sitemap:

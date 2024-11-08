@@ -2,7 +2,7 @@
 title: إضافة ختم صفحة PDF
 type: docs
 weight: 10
-url: ar/net/add-pdf-page-stamp/
+url: /ar/net/add-pdf-page-stamp/
 description: يشرح هذا القسم كيفية العمل مع واجهات Aspose.PDF باستخدام فئة PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

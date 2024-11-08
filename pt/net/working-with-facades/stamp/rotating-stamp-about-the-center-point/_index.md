@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: pt/net/rotating-stamp-about-the-center-point/
+url: /pt/net/rotating-stamp-about-the-center-point/
 
 description: Esta seção explica como girar o carimbo em torno do ponto central usando a classe Stamp.
 
@@ -18,7 +18,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-O [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) no [Aspose.PDF para .NET](/pdf/net/) permite que você adicione um carimbo em um arquivo PDF existente. Às vezes, os usuários precisam girar o carimbo. Neste artigo, veremos como girar um carimbo em torno de seu ponto central.
+O [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) no [Aspose.PDF para .NET](/pdf/pt/net/) permite que você adicione um carimbo em um arquivo PDF existente. Às vezes, os usuários precisam girar o carimbo. Neste artigo, veremos como girar um carimbo em torno de seu ponto central.
 
 {{% /alert %}}
 

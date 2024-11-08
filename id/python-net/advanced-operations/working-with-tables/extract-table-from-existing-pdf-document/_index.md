@@ -3,7 +3,7 @@ title: Ekstrak Tabel dari Dokumen PDF
 linktitle: Ekstrak Tabel
 type: docs
 weight: 20
-url: id/python-net/extract-table-from-existing-pdf-document/
+url: /id/python-net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF untuk Python via .NET memungkinkan untuk melakukan berbagai manipulasi dengan tabel yang terdapat dalam dokumen pdf Anda.
 lastmod: "2023-02-17"
 sitemap:

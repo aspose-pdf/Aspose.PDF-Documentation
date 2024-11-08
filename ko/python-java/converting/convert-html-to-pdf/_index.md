@@ -3,7 +3,7 @@ title: HTML을 PDF로 변환하기
 linktitle: HTML 파일을 PDF로 변환하기
 type: docs
 weight: 40
-url: ko/python-java/convert-html-to-pdf/
+url: /ko/python-java/convert-html-to-pdf/
 lastmod: "2023-04-06"
 description: 이 주제는 Aspose.PDF를 사용하여 HTML을 PDF로, MHTML을 PDF로 변환하는 방법을 보여줍니다.
 sitemap:

@@ -3,7 +3,7 @@ title: 연산자 다루기
 linktitle: 연산자 다루기
 type: docs
 weight: 170
-url: ko/java/operators/
+url: /ko/java/operators/
 description: 이 주제는 Aspose.PDF와 함께 연산자를 사용하는 방법을 설명합니다. 연산자 클래스는 PDF 조작을 위한 훌륭한 기능을 제공합니다.
 lastmod: "2021-06-05"
 sitemap:

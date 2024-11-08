@@ -3,7 +3,7 @@ title: Ajouter du texte au PDF avec Python
 linktitle: Ajouter du texte au PDF
 type: docs
 weight: 10
-url: fr/python-net/add-text-to-pdf-file/
+url: /fr/python-net/add-text-to-pdf-file/
 description: Cet article décrit divers aspects du travail avec le texte dans Aspose.PDF. Apprenez à ajouter du texte au PDF, à ajouter des fragments HTML, ou à utiliser des polices OTF personnalisées.
 lastmod: "2024-02-17"
 sitemap:

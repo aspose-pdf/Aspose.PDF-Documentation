@@ -3,7 +3,7 @@ title: الميزات الرئيسية لـ Aspose.PDF
 linktitle: الميزات الرئيسية
 type: docs
 weight: 80
-url: ar/net/key-features/
+url: /ar/net/key-features/
 description: Aspose.PDF لـ .NET يعرض الميزات العامة. يُظهر الإصدارات المدعومة من PDF، وجميع التلاعبات التي يمكننا القيام بها مع PDF.
 lastmod: "2021-06-05"
 aliases:

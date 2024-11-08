@@ -2,7 +2,7 @@
 title: تحويل ملف SVG إلى تنسيق PDF في Jython
 type: docs
 weight: 40
-url: ar/java/convert-svg-file-to-pdf-format-in-jython/
+url: /ar/java/convert-svg-file-to-pdf-format-in-jython/
 lastmod: "2021-06-05"
 ---
 

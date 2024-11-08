@@ -3,7 +3,7 @@ title: PythonでPDFを異なる画像フォーマットに変換
 linktitle: PDFを画像に変換
 type: docs
 weight: 70
-url: ja/python-java/convert-pdf-to-images-format/
+url: /ja/python-java/convert-pdf-to-images-format/
 lastmod: "2023-04-06"
 description: このトピックでは、Aspose.PDF for Pythonを使用してPDFをTIFF、BMP、EMF、JPEG、PNG、GIF、SVGなどのさまざまな画像フォーマットに変換する方法を数行のコードで示します。
 sitemap:

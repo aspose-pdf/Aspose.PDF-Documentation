@@ -3,7 +3,7 @@ title: Tambahkan Objek Lingkaran ke File PDF
 linktitle: Tambahkan Lingkaran
 type: docs
 weight: 20
-url: id/cpp/add-circle/
+url: /id/cpp/add-circle/
 description: Artikel ini menjelaskan cara membuat objek lingkaran ke PDF Anda menggunakan Aspose.PDF untuk C++.
 lastmod: "2021-12-18"
 sitemap:

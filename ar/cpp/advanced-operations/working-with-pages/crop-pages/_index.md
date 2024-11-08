@@ -3,7 +3,7 @@ title: قص صفحات PDF برمجياً باستخدام C++
 linktitle: قص الصفحات
 type: docs
 weight: 80
-url: ar/cpp/crop-pages/
+url: /ar/cpp/crop-pages/
 description: يمكنك الحصول على خصائص الصفحة، مثل العرض، الارتفاع، صندوق النزيف، القص وصندوق القطع باستخدام Aspose.PDF لـ C++.
 lastmod: "2021-12-09"
 sitemap:

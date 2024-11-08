@@ -2,7 +2,7 @@
 title: Extraire le texte des tampons en utilisant C#
 type: docs
 weight: 60
-url: fr/net/extract-text-from-stamps/
+url: /fr/net/extract-text-from-stamps/
 description: Apprenez à utiliser une fonctionnalité spéciale d'Aspose.PDF pour .NET - l'extraction de texte à partir des annotations de tampon
 lastmod: "2021-01-30"
 sitemap:
@@ -19,7 +19,7 @@ Aspose.PDF pour NET vous permet d'extraire du texte à partir des annotations de
 1. Définir un nouvel objet de la classe `TextAbsorber`
 1. Utiliser la méthode visit de TextAbsorber pour obtenir le Texte
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 public static void ExtractText()

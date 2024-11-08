@@ -3,7 +3,7 @@ title: Работа с изображениями в PDF с использова
 linktitle: Работа с изображениями
 type: docs
 weight: 40
-url: ru/python-net/working-with-images/
+url: /ru/python-net/working-with-images/
 description: Этот раздел описывает возможности работы с изображениями в PDF файле с использованием библиотеки Python.
 lastmod: "2023-04-17"
 sitemap:
@@ -83,6 +83,6 @@ sitemap:
 
 Вы можете сделать следующее:
 
-- [Добавить изображение в существующий PDF файл](/pdf/python-net/add-image-to-existing-pdf-file/) - добавление изображений и ссылок на одно изображение в PDF документ, после чего контроль качества.
-- [Удалить изображения из PDF файла](/pdf/python-net/delete-images-from-pdf-file/) - проверьте фрагмент кода для удаления изображений из PDF файла.
-- [Извлечь изображения из PDF файла](/pdf/python-net/extract-images-from-pdf-file/) - следующая статья показывает, как извлечь изображения из PDF файла с использованием библиотеки Python.
+- [Добавить изображение в существующий PDF файл](/pdf/ru/python-net/add-image-to-existing-pdf-file/) - добавление изображений и ссылок на одно изображение в PDF документ, после чего контроль качества.
+- [Удалить изображения из PDF файла](/pdf/ru/python-net/delete-images-from-pdf-file/) - проверьте фрагмент кода для удаления изображений из PDF файла.
+- [Извлечь изображения из PDF файла](/pdf/ru/python-net/extract-images-from-pdf-file/) - следующая статья показывает, как извлечь изображения из PDF файла с использованием библиотеки Python.

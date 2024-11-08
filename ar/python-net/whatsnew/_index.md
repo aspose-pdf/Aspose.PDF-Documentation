@@ -3,7 +3,7 @@ title: ما الجديد
 linktitle: ما الجديد
 type: docs
 weight: 10
-url: ar/python-net/whatsnew/
+url: /ar/python-net/whatsnew/
 description: في هذه الصفحة يتم تقديم الميزات الجديدة الأكثر شيوعًا في Aspose.PDF لـ Python عبر .NET التي تم تقديمها في الإصدارات الأخيرة.
 sitemap:
     changefreq: "monthly"

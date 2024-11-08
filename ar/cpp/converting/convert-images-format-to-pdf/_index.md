@@ -3,7 +3,7 @@ title: تحويل صيغ الصور المختلفة إلى PDF
 linktitle: تحويل الصور إلى PDF  
 type: docs  
 weight: 60  
-url: ar/cpp/convert-images-format-to-pdf/  
+url: /ar/cpp/convert-images-format-to-pdf/  
 lastmod: "2021-11-19"  
 description: يوضح هذا الموضوع كيفية تحويل مكتبة Aspose.PDF for C++ لصيغ الصور المختلفة إلى PDF.  
 sitemap:  

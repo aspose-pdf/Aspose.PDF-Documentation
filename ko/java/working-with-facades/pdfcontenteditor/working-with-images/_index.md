@@ -2,7 +2,7 @@
 title: 이미지 작업하기
 type: docs
 weight: 30
-url: ko/java/working-with-image/
+url: /ko/java/working-with-image/
 description: 이 섹션에서는 PDF와의 인기 있는 작업을 위한 도구 세트인 Aspose.PDF Facades를 사용하여 이미지를 교체하는 방법을 설명합니다.
 lastmod: "2021-06-25"
 sitemap:

@@ -3,7 +3,7 @@ title: Convertir un fichier PDF en d'autres formats
 linktitle: Convertir PDF en d'autres formats 
 type: docs
 weight: 90
-url: fr/cpp/convert-pdf-to-other-files/
+url: /fr/cpp/convert-pdf-to-other-files/
 lastmod: "2021-11-19"
 description: Ce sujet vous montre comment Aspose.PDF permet de convertir un fichier PDF en d'autres formats de fichier.
 sitemap:

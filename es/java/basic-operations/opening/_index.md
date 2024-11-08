@@ -3,7 +3,7 @@ title: Abrir Documento PDF
 linktitle: Abrir
 type: docs
 weight: 20
-url: es/java/open-pdf-document/
+url: /es/java/open-pdf-document/
 description: Aprende cómo abrir un archivo PDF con Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

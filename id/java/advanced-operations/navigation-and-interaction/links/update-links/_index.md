@@ -3,7 +3,7 @@ title: Perbarui Tautan dalam PDF
 linktitle: Perbarui Tautan
 type: docs
 weight: 20
-url: id/java/update-links/
+url: /id/java/update-links/
 description: Memperbarui tautan dalam PDF secara programatis. Panduan ini tentang cara memperbarui tautan dalam PDF dalam bahasa Java.
 lastmod: "2021-06-05"
 sitemap:

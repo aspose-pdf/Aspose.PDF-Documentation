@@ -2,7 +2,7 @@
 title: تصدير الإشارات المرجعية إلى XML من ملف PDF موجود (واجهات)
 type: docs
 weight: 20
-url: ar/java/export-bookmark/
+url: /ar/java/export-bookmark/
 description: يوضح هذا القسم كيفية تصدير الإشارات المرجعية باستخدام Aspose.PDF Facades باستخدام فئة PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

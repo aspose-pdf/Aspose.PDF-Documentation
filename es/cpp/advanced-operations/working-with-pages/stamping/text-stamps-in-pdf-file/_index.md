@@ -3,7 +3,7 @@ title: Añadir Sellos de Texto en Archivo PDF
 linktitle: Sellos de Texto en Archivo PDF
 type: docs
 weight: 20
-url: es/cpp/text-stamps-in-the-pdf-file/
+url: /es/cpp/text-stamps-in-the-pdf-file/
 description: Añade un sello de texto a un archivo PDF utilizando la clase TextStamp con C++.
 lastmod: "2021-12-05"
 sitemap:

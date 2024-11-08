@@ -2,7 +2,7 @@
 title: Remplacer le Texte - Façades
 type: docs
 weight: 40
-url: fr/net/replace-text-facades/
+url: /fr/net/replace-text-facades/
 description: Cette section explique comment travailler avec le Texte - Façades en utilisant la classe PdfContentEditor.
 lastmod: "2021-06-24"
 draft: false

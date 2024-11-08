@@ -3,7 +3,7 @@ title: PDF 파일에 곡선 객체 추가
 linktitle: 곡선 추가
 type: docs
 weight: 30
-url: ko/java/add-curve/
+url: /ko/java/add-curve/
 description: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF에 곡선 객체를 생성하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

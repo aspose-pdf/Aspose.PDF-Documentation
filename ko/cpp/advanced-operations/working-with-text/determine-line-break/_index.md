@@ -3,7 +3,7 @@ title: Determine Line Break in TextFragment
 linktitle: Determine Line Break
 type: docs
 weight: 70
-url: ko/cpp/determine-line-break/
+url: /ko/cpp/determine-line-break/
 description: C++를 사용하여 여러 줄의 TextFragment에서 줄 바꿈을 결정하는 방법에 대해 알아보세요.
 lastmod: "2021-12-13"
 sitemap:

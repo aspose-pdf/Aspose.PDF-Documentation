@@ -2,7 +2,7 @@
 title: XML에서 기존 PDF 파일로 북마크 가져오기 (facades)
 type: docs
 weight: 30
-url: ko/java/import-bookmark/
+url: /ko/java/import-bookmark/
 description: 이 섹션에서는 PdfBookmarEditor 클래스를 사용하여 Aspose.PDF Facades로 북마크를 가져오는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

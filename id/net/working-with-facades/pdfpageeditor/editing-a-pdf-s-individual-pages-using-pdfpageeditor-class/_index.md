@@ -2,7 +2,7 @@
 title: Mengedit halaman individual PDF
 type: docs
 weight: 20
-url: id/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
+url: /id/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
 description: Bagian ini menjelaskan cara mengedit halaman individual PDF menggunakan kelas PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Namespace Aspose.Pdf.Facades dalam [Aspose.PDF untuk .NET](/pdf/net/) memungkinkan Anda untuk memanipulasi halaman individual dalam file PDF. Fitur ini membantu Anda bekerja dengan tampilan halaman, penyelarasan, dan transisi, dll. Kelas PdfpageEditor membantu mencapai fungsionalitas ini. Dalam artikel ini, kita akan melihat properti dan metode yang disediakan oleh kelas ini dan cara kerja metode tersebut juga.
+Namespace Aspose.Pdf.Facades dalam [Aspose.PDF untuk .NET](/pdf/id/net/) memungkinkan Anda untuk memanipulasi halaman individual dalam file PDF. Fitur ini membantu Anda bekerja dengan tampilan halaman, penyelarasan, dan transisi, dll. Kelas PdfpageEditor membantu mencapai fungsionalitas ini. Dalam artikel ini, kita akan melihat properti dan metode yang disediakan oleh kelas ini dan cara kerja metode tersebut juga.
 
 {{% /alert %}}
 

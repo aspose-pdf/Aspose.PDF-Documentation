@@ -3,7 +3,7 @@ title: Aspose.PDF.Drawing for .NET 개요
 linktitle: PDF.Drawing 버전
 type: docs
 weight: 130
-url: ko/net/drawing/
+url: /ko/net/drawing/
 lastmod: "2023-12-21"
 description: Aspose.PDF.Drawing for .NET 라이브러리의 주요 기능 및 장점 개요.
 sitemap:
@@ -73,7 +73,7 @@ PDF 문서를 인쇄할 때는 System.Drawing.Common이 사용되므로 Windows 
 
 ## 라이선스
 
-Aspose.PDF.Drawing에는 추가 라이선스가 없으며, Aspose.PDF와 동일한 라이선스를 사용합니다. [Aspose PDF 라이선스](/pdf/net/licensing/) 섹션을 확인하세요.
+Aspose.PDF.Drawing에는 추가 라이선스가 없으며, Aspose.PDF와 동일한 라이선스를 사용합니다. [Aspose PDF 라이선스](/pdf/ko/net/licensing/) 섹션을 확인하세요.
 
 ## 설치
 
@@ -86,7 +86,7 @@ Aspose.PDF.Drawing에서 사용 가능한 클래스를 [API 참조](https://refe
 
 더 알아보기:
 
-- [지원하는 파일 형식](/pdf/net/supported-file-formats/)
-- [시스템 요구 사항](/pdf/net/system-requirements/)
-- [라이선싱](/pdf/net/licensing/)
-- [기술 지원](/pdf/net/technical-support/)
+- [지원하는 파일 형식](/pdf/ko/net/supported-file-formats/)
+- [시스템 요구 사항](/pdf/ko/net/system-requirements/)
+- [라이선싱](/pdf/ko/net/licensing/)
+- [기술 지원](/pdf/ko/net/technical-support/)

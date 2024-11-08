@@ -3,7 +3,7 @@ title: Anotações Extras usando C++
 linktitle: Anotações Extras
 type: docs
 weight: 60
-url: pt/cpp/extra-annotations/
+url: /pt/cpp/extra-annotations/
 description: Esta seção descreve como adicionar, obter e excluir tipos extras de anotações do seu documento PDF.
 lastmod: "2021-11-24"
 sitemap:

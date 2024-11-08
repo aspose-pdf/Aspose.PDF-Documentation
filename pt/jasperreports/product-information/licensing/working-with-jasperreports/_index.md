@@ -6,7 +6,7 @@ type: docs
 
 weight: 10
 
-url: pt/jasperreports/working-with-jasperreports/
+url: /pt/jasperreports/working-with-jasperreports/
 
 lastmod: "2021-06-05"
 
@@ -24,11 +24,11 @@ A licença está disponível para download na página de pedido após o pagament
 
 Existem várias maneiras de ativar uma licença:
 
-- [Chamar setLicense](/pdf/jasperreports/working-with-jasperreports/#call-setlicense).
+- [Chamar setLicense](/pdf/pt/jasperreports/working-with-jasperreports/#call-setlicense).
 
-- [Definir um parâmetro de exportador no código](/pdf/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
+- [Definir um parâmetro de exportador no código](/pdf/pt/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
 
-- [Defina um parâmetro de exportador em **applicationContext.xml**](/pdf/jasperreports/working-with-jasperserver/).
+- [Defina um parâmetro de exportador em **applicationContext.xml**](/pdf/pt/jasperreports/working-with-jasperserver/).
 
 
 

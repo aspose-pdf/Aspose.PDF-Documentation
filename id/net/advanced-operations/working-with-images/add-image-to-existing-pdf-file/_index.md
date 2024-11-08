@@ -3,7 +3,7 @@ title: Menambahkan Gambar ke PDF menggunakan C#
 linktitle: Tambah Gambar
 type: docs
 weight: 10
-url: id/net/add-image-to-existing-pdf-file/
+url: /id/net/add-image-to-existing-pdf-file/
 description: Bagian ini menjelaskan cara menambahkan gambar ke file PDF yang ada menggunakan perpustakaan C#.
 lastmod: "2022-02-17"
 ---
@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 
 Setiap halaman PDF mengandung properti Sumber Daya dan Konten. Sumber Daya bisa berupa gambar dan formulir, misalnya, sementara konten diwakili oleh sekumpulan operator PDF. Setiap operator memiliki nama dan argumen. Contoh ini menggunakan operator untuk menambahkan gambar ke file PDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk menambahkan gambar ke file PDF yang sudah ada:
 

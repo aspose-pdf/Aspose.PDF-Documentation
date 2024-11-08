@@ -3,7 +3,7 @@ title: Set Size of PDF using pythob via C++
 linktitle: Set Size of PDF
 type: docs
 weight: 30
-url: ko/python-cpp/get-and-set-page-properties/
+url: /ko/python-cpp/get-and-set-page-properties/
 description: 이 섹션에서는 Python을 통해 C++를 사용하여 문서의 크기와 같은 PDF 페이지 속성을 가져오거나 설정하는 방법을 보여줍니다.
 lastmod: "2024-04-17"
 sitemap:

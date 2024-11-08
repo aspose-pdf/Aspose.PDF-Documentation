@@ -2,7 +2,7 @@
 title: Remplacer le Texte dans un Fichier PDF
 type: docs
 weight: 40
-url: fr/java/replace-text/
+url: /fr/java/replace-text/
 description: Cette section explique comment remplacer du texte avec Aspose.PDF Facades - un ensemble d'outils pour les opérations populaires avec les PDF.
 lastmod: "2021-06-24"
 sitemap:

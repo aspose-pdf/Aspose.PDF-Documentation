@@ -3,7 +3,7 @@ title: كيفية تثبيت Aspose.PDF لـ Python
 linktitle: التثبيت
 type: docs
 weight: 40
-url: ar/python-net/installation/
+url: /ar/python-net/installation/
 description: يوضح هذا القسم وصف المنتج وتعليمات تثبيت Aspose.PDF لـ Python.
 lastmod: "2022-12-21"
 sitemap:
@@ -30,7 +30,7 @@ sitemap:
 يمكنك بسهولة تنزيل Aspose.PDF لـ Python للتقييم. التنزيل التجريبي هو نفسه التنزيل الذي تم شراؤه. يصبح الإصدار التجريبي مرخصًا ببساطة عندما تضيف بضع سطور من الكود لتطبيق الترخيص.
 {{% alert color="success" %}}
 
-يمكنك تنزيل [Aspose.PDF لـ Python](https://releases.aspose.com/pdf/pythonnet/) للتقييم. التنزيل التجريبي هو نفسه التنزيل الذي تم شراؤه. يصبح الإصدار التجريبي مرخصًا عندما تضيف بضع سطور من الكود [لتطبيق الترخيص](/pdf/python-net/licensing/).
+يمكنك تنزيل [Aspose.PDF لـ Python](https://releases.aspose.com/pdf/pythonnet/) للتقييم. التنزيل التجريبي هو نفسه التنزيل الذي تم شراؤه. يصبح الإصدار التجريبي مرخصًا عندما تضيف بضع سطور من الكود [لتطبيق الترخيص](/pdf/ar/python-net/licensing/).
 
 الإصدار التجريبي من Aspose.PDF (دون تحديد ترخيص) يوفر وظائف المنتج الكاملة، ولكن له قيودان: يضيف علامة مائية للتقييم، ولا يمكن مشاهدة/تحرير سوى أربعة عناصر من أي مجموعة.
 

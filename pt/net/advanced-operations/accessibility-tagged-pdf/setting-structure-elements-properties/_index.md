@@ -3,7 +3,7 @@ title: Definindo Propriedades de Elementos Estruturais
 linktitle: Definindo Propriedades de Elementos Estruturais
 type: docs
 weight: 30
-url: pt/net/setting-structure-elements-properties/
+url: /pt/net/setting-structure-elements-properties/
 description: Você pode definir diferentes propriedades dos elementos estruturais em um documento PDF com Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Cara Menggabungkan PDF menggunakan C#
 linktitle: Menggabungkan Berkas PDF
 type: docs
 weight: 50
-url: id/net/merge-pdf-documents/
+url: /id/net/merge-pdf-documents/
 keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
 description: Halaman ini menjelaskan cara menggabungkan dokumen PDF menjadi satu berkas PDF dengan C# atau VB.NET.
 lastmod: "2022-02-17"
@@ -82,7 +82,7 @@ sitemap:
 Menggabungkan PDF dalam C# bukanlah tugas yang mudah tanpa menggunakan pustaka pihak ketiga.
 Artikel ini menunjukkan cara menggabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan Aspose.PDF untuk .NET. Contoh ditulis dalam C# tetapi API juga dapat digunakan dalam bahasa pemrograman .NET lainnya seperti VB.NET. File PDF digabungkan sedemikian rupa sehingga yang pertama digabungkan di akhir dokumen lain.
 
-Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Menggabungkan File PDF menggunakan C# dan DOM
 

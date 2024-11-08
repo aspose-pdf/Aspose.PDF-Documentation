@@ -3,7 +3,7 @@ title: Anotasi PDF di Node.js
 linktitle: Anotasi PDF
 type: docs
 weight: 90
-url: id/nodejs-cpp/annotations/
+url: /id/nodejs-cpp/annotations/
 description: Bagian ini menunjukkan cara menggunakan semua jenis anotasi pada file PDF Anda dengan Aspose.PDF untuk Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:
@@ -19,4 +19,4 @@ Anotasi PDF seperti menyoroti, menggarisbawahi, atau menambahkan komentar memung
 
 Anda dapat melakukan hal berikut:
 
-- [Hapus Anotasi](/pdf/nodejs-cpp/delete-annotation/) - bagian ini menjelaskan cara menghapus anotasi dari PDF Anda di lingkungan Node.js.
+- [Hapus Anotasi](/pdf/id/nodejs-cpp/delete-annotation/) - bagian ini menjelaskan cara menghapus anotasi dari PDF Anda di lingkungan Node.js.

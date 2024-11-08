@@ -3,7 +3,7 @@ title: PDF 파일에서 원시 텍스트 추출
 linktitle: PDF에서 텍스트 추출
 type: docs
 weight: 10
-url: ko/php-java/extract-text-from-all-pdf/
+url: /ko/php-java/extract-text-from-all-pdf/
 description: 이 문서는 Aspose.PDF for PHP를 사용하여 PDF 문서에서 전체 페이지, 특정 부분, 열을 기준으로 텍스트를 추출하는 다양한 방법을 설명합니다.
 lastmod: "2024-05-20"
 sitemap:

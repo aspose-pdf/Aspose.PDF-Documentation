@@ -3,7 +3,7 @@ title: تعديل AcroForm
 linktitle: تعديل AcroForm
 type: docs
 weight: 40
-url: ar/cpp/modifing-form/
+url: /ar/cpp/modifing-form/
 description: تعديل النموذج في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ C++. يمكنك إضافة أو إزالة الحقول في النموذج الموجود، والحصول على الحد من الحقل وتعيينه وما إلى ذلك.
 lastmod: "2021-12-01"
 sitemap:

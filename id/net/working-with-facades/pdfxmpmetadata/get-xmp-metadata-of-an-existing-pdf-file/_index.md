@@ -2,7 +2,7 @@
 title: Dapatkan Metadata XMP dari File PDF
 type: docs
 weight: 30
-url: id/net/get-xmp-metadata-of-an-existing-pdf-file/
+url: /id/net/get-xmp-metadata-of-an-existing-pdf-file/
 description: Bagian ini menjelaskan cara mendapatkan Metadata XMP dari PDF yang ada dengan Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

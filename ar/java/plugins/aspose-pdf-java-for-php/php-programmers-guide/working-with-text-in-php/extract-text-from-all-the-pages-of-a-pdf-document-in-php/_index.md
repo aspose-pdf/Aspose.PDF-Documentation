@@ -2,7 +2,7 @@
 title: استخراج النص من جميع صفحات مستند PDF في PHP
 type: docs
 weight: 30
-url: ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
+url: /ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: 이미지 배치 작업하기
 linktitle: 이미지 배치 작업하기
 type: docs
 weight: 50
-url: ko/net/working-with-image-placement/
+url: /ko/net/working-with-image-placement/
 description: 이 섹션은 C# 라이브러리를 사용하여 PDF 파일에서 이미지 배치 작업의 기능에 대해 설명합니다.
 lastmod: "2022-02-17"
 ---
@@ -77,7 +77,7 @@ Aspose.PDF for .NET 7.0.0 버전이 출시되면서, PDF 문서에서 이미지�
 - ImagePlacementAbsorber는 ImagePlacement 객체 컬렉션으로 이미지 사용 검색을 수행합니다.
 - ImagePlacement은 실제 이미지 배치 값을 반환하는 Resolution 및 Rectangle 멤버를 제공합니다.
 
-다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/net/drawing/) 인터페이스와 함께 작동합니다.
+다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/ko/net/drawing/) 인터페이스와 함께 작동합니다.
 
 ```csharp
 // 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.

@@ -3,7 +3,7 @@ title: Convertir des documents PDF en utilisant l'API C#
 linktitle: Convertir un document PDF
 type: docs
 weight: 70
-url: fr/net/converting/
+url: /fr/net/converting/
 lastmod: "2021-11-01"
 keywords: convertir pdf c#
 description: Cette section contient des articles relatifs à la conversion de documents PDF dans différents formats en utilisant C# ou .NET avec l'API de format de fichier PDF.
@@ -32,39 +32,39 @@ Aspose.PDF pour .NET permet de convertir des documents PDF vers divers formats e
 
 Les documents Word sont les plus polyvalents et modifiables possible. Convertir un PDF en Word manuellement est une tâche très chronophage. Dans cet article, vous apprendrez à convertir un PDF en Word de manière programmatique en C#.
 
-- [Convertir PDF en Microsoft Word](/pdf/net/convert-pdf-to-word/) - vous pouvez convertir votre document PDF en format Word avec C#
+- [Convertir PDF en Microsoft Word](/pdf/fr/net/convert-pdf-to-word/) - vous pouvez convertir votre document PDF en format Word avec C#
 
 Les formats de numéros sont nécessaires non seulement pour rendre les données dans le tableau plus faciles à lire, mais aussi pour rendre le tableau plus facile à utiliser. Bien sûr, si vous avez besoin de convertir de telles données d'un document PDF au format Excel, utilisez notre bibliothèque Aspose.PDF.
 
-- [Convertir PDF en Microsoft Excel](/pdf/net/convert-pdf-to-excel/) - cette section décrit comment convertir un document PDF en XLSX, ODS, CSV et SpreadSheetML
+- [Convertir PDF en Microsoft Excel](/pdf/fr/net/convert-pdf-to-excel/) - cette section décrit comment convertir un document PDF en XLSX, ODS, CSV et SpreadSheetML
 
 Le format PowerPoint est utilisé pour créer diverses présentations. Les fichiers PPT contiennent un grand nombre de diapositives ou de pages contenant diverses informations.
 
-- [Convertir PDF en Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - ici, nous parlons de convertir un PDF en PowerPoint en suivant le processus de conversion
-- [Convertir un PDF en Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - ici, nous parlons de la conversion de PDF en PowerPoint en suivant le processus de conversion
+- [Convertir PDF en Microsoft PowerPoint](/pdf/fr/net/convert-pdf-to-powerpoint/) - ici, nous parlons de convertir un PDF en PowerPoint en suivant le processus de conversion
+- [Convertir un PDF en Microsoft PowerPoint](/pdf/fr/net/convert-pdf-to-powerpoint/) - ici, nous parlons de la conversion de PDF en PowerPoint en suivant le processus de conversion
 
 Le langage de balisage hypertexte est un langage de description de document hypertexte, un langage standard pour créer des pages web. Avec Aspose.PDF pour .NET, vous pouvez facilement convertir des documents HTML et inversement.
 
-- [Convertir le format HTML en fichier PDF](/pdf/net/convert-html-to-pdf/) - article sur les différents aspects de la conversion HTML en PDF
-- [Convertir un fichier PDF en format HTML](/pdf/net/convert-pdf-to-html/) - convertissez vos documents PDF en fichiers HTML en tant que pages séparées ou en une seule page
+- [Convertir le format HTML en fichier PDF](/pdf/fr/net/convert-html-to-pdf/) - article sur les différents aspects de la conversion HTML en PDF
+- [Convertir un fichier PDF en format HTML](/pdf/fr/net/convert-pdf-to-html/) - convertissez vos documents PDF en fichiers HTML en tant que pages séparées ou en une seule page
 
 Il existe de nombreux formats d'images qui doivent être convertis en PDF pour différentes raisons. Aspose.PDF permet de convertir les formats d'images les plus populaires et vice versa.
 
-- [Convertir des formats d'images en fichier PDF](/pdf/net/convert-images-format-to-pdf/) - Aspose.PDF vous permet de convertir différents formats d'images en fichier PDF
-- [Convertir un PDF en divers formats d'images](/pdf/net/convert-pdf-to-images-format/) - convertir des pages PDF en images au format JPEG, PNG et autres formats
-- [Convertir un PDF en divers formats d'images](/pdf/net/convert-pdf-to-images-format/) - convertir des pages PDF en images au format JPEG, PNG et autres
+- [Convertir des formats d'images en fichier PDF](/pdf/fr/net/convert-images-format-to-pdf/) - Aspose.PDF vous permet de convertir différents formats d'images en fichier PDF
+- [Convertir un PDF en divers formats d'images](/pdf/fr/net/convert-pdf-to-images-format/) - convertir des pages PDF en images au format JPEG, PNG et autres formats
+- [Convertir un PDF en divers formats d'images](/pdf/fr/net/convert-pdf-to-images-format/) - convertir des pages PDF en images au format JPEG, PNG et autres
 
 Cette section inclut des formats tels que : EPUB, Markdown, PCL, XPS, LATex/TeX, Texte et PostScript.
 
-- [Convertir d'autres formats de fichiers en PDF](/pdf/net/convert-other-files-to-pdf/) - ce sujet décrit la conversion avec divers formats comme EPUB, XPS, Postscript, texte et autres
-- [Convertir un fichier PDF en d'autres formats](/pdf/net/convert-pdf-to-other-files/) - ce sujet décrit la manière de convertir un document PDF en divers formats
+- [Convertir d'autres formats de fichiers en PDF](/pdf/fr/net/convert-other-files-to-pdf/) - ce sujet décrit la conversion avec divers formats comme EPUB, XPS, Postscript, texte et autres
+- [Convertir un fichier PDF en d'autres formats](/pdf/fr/net/convert-pdf-to-other-files/) - ce sujet décrit la manière de convertir un document PDF en divers formats
 
 PDF/A est une version du PDF conçue pour l'archivage à long terme de documents électroniques.
 Honnêtement, extérieurement, il est très difficile de déterminer s'il s'agit d'un PDF ou d'un PDF/A. Pour vérifier ce fichier, des validateurs sont utilisés. Consultez les articles suivants pour une conversion de qualité du PDF en PDF/A et vice versa.
 
-- [Convertir un PDF en formats PDF/A](/pdf/net/convert-pdf-to-pdfa/) - La bibliothèque .NET de Aspose.PDF offre une manière simple de convertir un PDF en PDF/A
-- [Convertir un format PDF/A en PDF](/pdf/net/convert-pdfa-to-pdf/) - convertir un PDF/A en format PDF avec C# facilement, rapidement et de haute qualité
-- [Convertir le format PDF/A en format PDF](/pdf/net/convert-pdfa-to-pdf/) - convertir le format PDF/A en format PDF avec C# facilement, rapidement et de haute qualité
+- [Convertir un PDF en formats PDF/A](/pdf/fr/net/convert-pdf-to-pdfa/) - La bibliothèque .NET de Aspose.PDF offre une manière simple de convertir un PDF en PDF/A
+- [Convertir un format PDF/A en PDF](/pdf/fr/net/convert-pdfa-to-pdf/) - convertir un PDF/A en format PDF avec C# facilement, rapidement et de haute qualité
+- [Convertir le format PDF/A en format PDF](/pdf/fr/net/convert-pdfa-to-pdf/) - convertir le format PDF/A en format PDF avec C# facilement, rapidement et de haute qualité
 
 ## Essayez de convertir des fichiers PDF en ligne
 

@@ -3,7 +3,7 @@ title: Menyimpan Dokumen PDF Secara Pemrograman
 linktitle: Simpan PDF
 type: docs
 weight: 30
-url: id/net/save-pdf-document/
+url: /id/net/save-pdf-document/
 description: Pelajari cara menyimpan file PDF dalam C# Aspose.PDF untuk perpustakaan PDF .NET. Simpan dokumen PDF ke sistem file, ke stream, dan dalam aplikasi Web.
 aliases:
     - /net/saving/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-Potongan kode berikut juga bekerja dengan antarmuka grafis baru [Aspose.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan antarmuka grafis baru [Aspose.Drawing](/pdf/id/net/drawing/).
 
 ## Simpan Dokumen PDF ke Sistem File
 
@@ -60,7 +60,7 @@ var pdfDocument = new Aspose.Pdf.Document(originalFileName);
 pdfDocument.Pages.Add();
 pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
-Untuk penjelasan lebih rinci, silakan mengikuti bagian [Showcase](/pdf/net/showcases/).
+Untuk penjelasan lebih rinci, silakan mengikuti bagian [Showcase](/pdf/id/net/showcases/).
 
 ## Simpan format PDF/A atau PDF/X
 

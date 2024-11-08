@@ -2,7 +2,7 @@
 title: Dapatkan Properti Halaman dalam Python
 type: docs
 weight: 50
-url: id/java/get-page-properties-in-python/
+url: /id/java/get-page-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

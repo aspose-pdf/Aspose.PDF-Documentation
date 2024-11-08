@@ -3,7 +3,7 @@ title: Работа с страницами PDF
 linktitle: Работа со страницами
 type: docs
 weight: 20
-url: ru/java/working-with-pages/
+url: /ru/java/working-with-pages/
 description: С помощью Aspose.PDF для Java вы можете добавлять страницы, добавлять верхние и нижние колонтитулы, добавлять водяные знаки в ваш PDF файл. Этот раздел объясняет все детали по этой теме.
 lastmod: "2021-06-05"
 sitemap:
@@ -23,16 +23,16 @@ sitemap:
 
 Вы можете сделать следующее:
 
-- [Добавить страницы](/pdf/java/add-pages/) - добавляйте страницы в нужное место или в конец PDF файла и удаляйте страницу из вашего документа.
-- [Переместить страницы](/pdf/java/move-pages/) - перемещайте страницы из одного документа в другой.
-- [Получить и установить свойства страницы](/pdf/java/get-and-set-page-properties/) - вы можете узнать, как получить номера в PDF файле, получить свойства страницы и определить цвет страницы.
-- [Удалить страницы](/pdf/java/delete-pages/) - удаляйте страницу из вашего PDF файла, используя коллекцию PageCollection.
-- [Изменить размер страницы](/pdf/java/change-page-size) - вы можете изменить размер страницы PDF с помощью фрагмента кода, используя библиотеку Aspose.PDF.
+- [Добавить страницы](/pdf/ru/java/add-pages/) - добавляйте страницы в нужное место или в конец PDF файла и удаляйте страницу из вашего документа.
+- [Переместить страницы](/pdf/ru/java/move-pages/) - перемещайте страницы из одного документа в другой.
+- [Получить и установить свойства страницы](/pdf/ru/java/get-and-set-page-properties/) - вы можете узнать, как получить номера в PDF файле, получить свойства страницы и определить цвет страницы.
+- [Удалить страницы](/pdf/ru/java/delete-pages/) - удаляйте страницу из вашего PDF файла, используя коллекцию PageCollection.
+- [Изменить размер страницы](/pdf/ru/java/change-page-size) - вы можете изменить размер страницы PDF с помощью фрагмента кода, используя библиотеку Aspose.PDF.
 
-- [Повернуть страницы](/pdf/java/rotate-pages/) - вы можете изменить ориентацию страниц в существующем PDF файле.- [Split Pages](/pdf/java/split-document/) - вы можете разделить PDF файлы на один или несколько PDF.
-- [Add Headers and/or Footers](/pdf/java/add-headers-and-footers-of-pdf-file/) - добавьте текст или изображения в заголовки и нижние колонтитулы вашего PDF файла.
-- [Crop Pages](/pdf/java/crop-pages/) - вы можете обрезать страницы в PDF документе программно с различными свойствами страниц.
-- [Add Watermarks](/pdf/java/add-watermarks/) - добавьте водяные знаки в ваш PDF файл с помощью класса Artifact.
-- [Add Page Numbering in PDF File](/pdf/java/add-page-number/) - класс PageNumberStamp поможет вам добавить номер страницы в ваш PDF файл.
-- [Add Backgrounds](/pdf/java/add-backgrounds/) - фоновые изображения могут быть использованы для добавления водяного знака.
-- [Stamping](/pdf/java/stamping/) - вы можете использовать класс ImageStamp для добавления штампа изображения в PDF файл и класс TextStamp для добавления текста.
+- [Повернуть страницы](/pdf/ru/java/rotate-pages/) - вы можете изменить ориентацию страниц в существующем PDF файле.- [Split Pages](/pdf/ru/java/split-document/) - вы можете разделить PDF файлы на один или несколько PDF.
+- [Add Headers and/or Footers](/pdf/ru/java/add-headers-and-footers-of-pdf-file/) - добавьте текст или изображения в заголовки и нижние колонтитулы вашего PDF файла.
+- [Crop Pages](/pdf/ru/java/crop-pages/) - вы можете обрезать страницы в PDF документе программно с различными свойствами страниц.
+- [Add Watermarks](/pdf/ru/java/add-watermarks/) - добавьте водяные знаки в ваш PDF файл с помощью класса Artifact.
+- [Add Page Numbering in PDF File](/pdf/ru/java/add-page-number/) - класс PageNumberStamp поможет вам добавить номер страницы в ваш PDF файл.
+- [Add Backgrounds](/pdf/ru/java/add-backgrounds/) - фоновые изображения могут быть использованы для добавления водяного знака.
+- [Stamping](/pdf/ru/java/stamping/) - вы можете использовать класс ImageStamp для добавления штампа изображения в PDF файл и класс TextStamp для добавления текста.

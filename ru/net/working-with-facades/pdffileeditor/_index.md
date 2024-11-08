@@ -2,7 +2,7 @@
 title: PdfFileEditor Class
 type: docs
 weight: 10
-url: ru/net/pdffileeditor-class/
+url: /ru/net/pdffileeditor-class/
 description: В этом разделе объясняется, как работать с Aspose.PDF Facades, используя класс PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -23,26 +23,26 @@ sitemap:
 
 Этот раздел исследует возможности этого класса и объясняет назначение его методов.
 
-- [Объединение PDF документов](/pdf/net/concatenate-pdf-documents/)
-- [Извлечение страниц PDF](/pdf/net/extract-pdf-pages/)
-- [Вставка страниц PDF](/pdf/net/insert-pdf-pages/)
-- [Удаление страниц PDF](/pdf/net/delete-pdf-pages/)
+- [Объединение PDF документов](/pdf/ru/net/concatenate-pdf-documents/)
+- [Извлечение страниц PDF](/pdf/ru/net/extract-pdf-pages/)
+- [Вставка страниц PDF](/pdf/ru/net/insert-pdf-pages/)
+- [Удаление страниц PDF](/pdf/ru/net/delete-pdf-pages/)
 
 ## Использование разрывов страниц
 
 Разрыв страницы — это специальная функция, позволяющая перераспределить документ.
 
-- [Разрыв страницы в существующем PDF](/pdf/net/page-break-in-existing-pdf/)
+- [Разрыв страницы в существующем PDF](/pdf/ru/net/page-break-in-existing-pdf/)
 
 ## Импозиция PDF
 
 Импозиция — это процесс правильного размещения страниц перед печатью. `PdfFileEditor` предоставляет два метода для этой цели, а именно `MakeBooklet` и `MakeNUp`. Метод MakeBooklet помогает организовать страницы так, чтобы их было легко складывать или переплетать после печати, однако метод MakeNUp позволяет печатать несколько страниц на одной странице PDF-файла.
 
-- [Создание буклета из PDF](/pdf/net/make-booklet-of-pdf/)
-- [Создание NUp из PDF-файлов](/pdf/net/make-nup-of-pdf-files/)
+- [Создание буклета из PDF](/pdf/ru/net/make-booklet-of-pdf/)
+- [Создание NUp из PDF-файлов](/pdf/ru/net/make-nup-of-pdf-files/)
 
 ## Разделение
 
 Функция разделения позволяет разделить существующий PDF-файл на разные части. Вы можете разделить переднюю часть PDF-файла или заднюю часть. Поскольку PdfFileEditor предоставляет различные методы для целей разделения, вы также можете разделить файл на отдельные страницы или на множество наборов из нескольких страниц.
 
-- [Разделение страниц PDF](/pdf/net/split-pdf-pages/)
+- [Разделение страниц PDF](/pdf/ru/net/split-pdf-pages/)

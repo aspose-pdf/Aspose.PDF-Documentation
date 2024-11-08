@@ -3,7 +3,7 @@ title: Extrair Parágrafo de PDF C#
 linktitle: Extrair Parágrafo de PDF
 type: docs
 weight: 20
-url: pt/net/extract-paragraph-from-pdf/
+url: /pt/net/extract-paragraph-from-pdf/
 description: Este artigo descreve como usar o ParagraphAbsorber - uma ferramenta especial na Aspose.PDF para extrair texto de documentos PDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ Podemos obter texto de um documento PDF pesquisando um texto específico (usando
 
 **1- Desenhando a borda de seções e parágrafos de texto na página do PDF:**
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -79,7 +79,7 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page)
 ```
 **2- Iterando pela coleção de parágrafos e obtendo o texto deles:**
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // Para exemplos completos e arquivos de dados, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET

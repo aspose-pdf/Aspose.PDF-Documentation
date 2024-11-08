@@ -2,7 +2,7 @@
 title: Édition des pages individuelles d'un PDF
 type: docs
 weight: 20
-url: fr/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
+url: /fr/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/
 description: Cette section explique comment éditer les pages individuelles d'un PDF en utilisant la classe PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-L'espace de noms Aspose.Pdf.Facades dans [Aspose.PDF pour .NET](/pdf/net/) vous permet de manipuler des pages individuelles dans un fichier PDF. Cette fonctionnalité vous aide à travailler avec l'affichage des pages, l'alignement et la transition, etc. La classe PdfPageEditor aide à réaliser cette fonctionnalité. Dans cet article, nous examinerons les propriétés et méthodes fournies par cette classe ainsi que le fonctionnement de ces méthodes.
+L'espace de noms Aspose.Pdf.Facades dans [Aspose.PDF pour .NET](/pdf/fr/net/) vous permet de manipuler des pages individuelles dans un fichier PDF. Cette fonctionnalité vous aide à travailler avec l'affichage des pages, l'alignement et la transition, etc. La classe PdfPageEditor aide à réaliser cette fonctionnalité. Dans cet article, nous examinerons les propriétés et méthodes fournies par cette classe ainsi que le fonctionnement de ces méthodes.
 
 {{% /alert %}}
 

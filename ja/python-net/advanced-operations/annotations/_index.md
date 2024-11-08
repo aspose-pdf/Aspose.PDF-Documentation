@@ -3,7 +3,7 @@ title: PDF 注釈
 linktitle: PDF 注釈
 type: docs
 weight: 100
-url: ja/python-net/annotations/
+url: /ja/python-net/annotations/
 description: このセクションでは、Aspose.PDF ライブラリを使用して PDF ファイルにあらゆる種類の注釈を追加する方法を示します。
 lastmod: "2023-02-17"
 sitemap:
@@ -85,7 +85,7 @@ Aspose.PDF for Pythonライブラリは、テキスト注釈（テキストや�
 
 以下のことができます：
 
-- [注釈の追加、削除、取得](/pdf/python-net/add-delete-and-get-annotation/) - このセクションでは、許可されているすべてのタイプの注釈を操作する方法について説明します。
+- [注釈の追加、削除、取得](/pdf/ja/python-net/add-delete-and-get-annotation/) - このセクションでは、許可されているすべてのタイプの注釈を操作する方法について説明します。
 
 <script type="application/ld+json">
 {

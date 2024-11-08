@@ -3,7 +3,7 @@ title: PDF Tooltip using Python
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: ja/python-net/pdf-tooltip/
+url: /ja/python-net/pdf-tooltip/
 description: PythonとAspose.PDFを使用してPDFのテキストフラグメントにツールチップを追加する方法を学ぶ
 lastmod: "2024-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: Menggabungkan Dokumen PDF
 type: docs
 weight: 10
-url: id/java/concatenate-pdf-documents/
+url: /id/java/concatenate-pdf-documents/
 description: Bagian ini menjelaskan cara menggabungkan dokumen PDF dengan com.aspose.pdf.facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 sitemap:

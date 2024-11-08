@@ -2,7 +2,7 @@
 title: Trabajando con Encabezados en PDF
 type: docs
 weight: 70
-url: es/java/working-with-headings/
+url: /es/java/working-with-headings/
 lastmod: "2021-06-05"
 description: Cree numeración en el encabezado de su documento PDF con Java. Aspose.PDF para Java ofrece diferentes tipos de estilos de numeración.
 sitemap:

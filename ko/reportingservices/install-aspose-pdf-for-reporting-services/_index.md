@@ -2,7 +2,7 @@
 title: Aspose.PDF 설치
 type: docs
 weight: 50
-url: ko/reportingservices/install-aspose-pdf-for-reporting-services/
+url: /ko/reportingservices/install-aspose-pdf-for-reporting-services/
 lastmod: "2021-06-05"
 ---
 
@@ -10,8 +10,8 @@ lastmod: "2021-06-05"
 
 **이 섹션에는 다음 주제가 포함됩니다:**
 
-- [MSI 설치 프로그램으로 설치](/pdf/reportingservices/install-with-msi-installer/)
-- [수동으로 설치](/pdf/reportingservices/install-manually/)
-- [구성 도구로 설치](/pdf/reportingservices/install-with-configuring-tool/)
+- [MSI 설치 프로그램으로 설치](/pdf/ko/reportingservices/install-with-msi-installer/)
+- [수동으로 설치](/pdf/ko/reportingservices/install-manually/)
+- [구성 도구로 설치](/pdf/ko/reportingservices/install-with-configuring-tool/)
 
 {{% /alert %}}

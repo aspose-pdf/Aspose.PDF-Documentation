@@ -2,13 +2,13 @@
 title: Importer et Exporter les Champs de Formulaire
 type: docs
 weight: 60
-url: fr/net/import-export-form-field/
+url: /fr/net/import-export-form-field/
 description: Remplir les champs du formulaire en utilisant DataTable avec la classe FormEditor par Aspose.PDF pour .NET
 lastmod: "2021-06-05"
 draft: false
 ---
 
-Aspose.PDF pour .NET offre de grandes capacités pour créer/manipuler des champs de formulaire à l'intérieur d'un document PDF. En utilisant cette API, vous pouvez remplir les champs de formulaire à l'intérieur d'un fichier PDF de manière programmatique, remplir les champs de formulaire en [important des données de FDF dans un fichier PDF](/pdf/net/import-and-export-data/), [important des données de XFDF dans un fichier PDF](/pdf/net/import-and-export-data/), [important des données de XML dans un fichier PDF](/pdf/net/import-and-export-data/) ou même vous pouvez importer des données depuis un objet [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF pour .NET offre de grandes capacités pour créer/manipuler des champs de formulaire à l'intérieur d'un document PDF. En utilisant cette API, vous pouvez remplir les champs de formulaire à l'intérieur d'un fichier PDF de manière programmatique, remplir les champs de formulaire en [important des données de FDF dans un fichier PDF](/pdf/fr/net/import-and-export-data/), [important des données de XFDF dans un fichier PDF](/pdf/fr/net/import-and-export-data/), [important des données de XML dans un fichier PDF](/pdf/fr/net/import-and-export-data/) ou même vous pouvez importer des données depuis un objet [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
 
 ```csharp
  public static void ImportData()

@@ -2,7 +2,7 @@
 title: كيفية تعيين اللغة المحلية لـ Aspose.PDF
 type: docs
 weight: 30
-url: ar/java/how-to-set-locale-for-aspose-pdf/
+url: /ar/java/how-to-set-locale-for-aspose-pdf/
 lastmod: "2022-01-27"
 ---
 

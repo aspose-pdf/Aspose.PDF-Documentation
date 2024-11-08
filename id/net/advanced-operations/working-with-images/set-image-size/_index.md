@@ -3,7 +3,7 @@ title: Set Image Size
 linktitle: Set Image Size
 type: docs
 weight: 80
-url: id/net/set-image-size/
+url: /id/net/set-image-size/
 description: Bagian ini menjelaskan cara mengatur ukuran gambar file PDF menggunakan pustaka C#.
 lastmod: "2022-02-17"
 ---
@@ -73,7 +73,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Potongan kode berikut juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Dimungkinkan untuk mengatur ukuran gambar yang akan ditambahkan ke berkas PDF. Untuk mengatur ukuran, Anda dapat menggunakan properti FixWidth dan FixHeight dari Kelas Aspose.Pdf.Image. Potongan kode berikut menunjukkan cara mengatur ukuran gambar:
 

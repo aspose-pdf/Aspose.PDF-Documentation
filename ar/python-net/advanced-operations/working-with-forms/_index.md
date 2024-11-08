@@ -3,7 +3,7 @@ title: العمل مع النماذج باستخدام بايثون
 linktitle: العمل مع النماذج
 type: docs
 weight: 60
-url: ar/python-net/working-with-forms/
+url: /ar/python-net/working-with-forms/
 description: يصف هذا القسم كيفية العمل مع AcroForms في مستندات PDF باستخدام Aspose.PDF لبايثون عبر .NET.
 lastmod: "2023-02-17"
 sitemap:
@@ -81,4 +81,4 @@ sitemap:
 
 تسمح AcroForms للمستخدمين بملء النماذج وإرسالها وتخزينها إلكترونيًا، مما يجعلها وسيلة مريحة وفعالة لجمع المعلومات.
 
-- [AcroForms](/pdf/python-net/acroforms/) - إنشاء نموذج، تعبئة حقل النموذج، استخراج البيانات من النموذج، إضافة وإزالة الحقول في ملف PDF الخاص بك باستخدام مكتبة Python.
+- [AcroForms](/pdf/ar/python-net/acroforms/) - إنشاء نموذج، تعبئة حقل النموذج، استخراج البيانات من النموذج، إضافة وإزالة الحقول في ملف PDF الخاص بك باستخدام مكتبة Python.

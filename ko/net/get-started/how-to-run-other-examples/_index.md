@@ -3,7 +3,7 @@ title: 다른 예제 실행 방법
 linktitle: 다른 예제 실행 방법
 type: docs
 weight: 50
-url: ko/net/how-to-run-other-examples/    
+url: /ko/net/how-to-run-other-examples/    
 description: 이 페이지는 예제를 다운로드하고 실행하기 전에 도움이 될 지침을 보여줍니다.
 lastmod: "2021-06-05"
 sitemap:

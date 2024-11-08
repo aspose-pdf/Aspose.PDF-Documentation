@@ -3,7 +3,7 @@ title: Manipular Tabelas em PDF existente
 linktitle: Manipular Tabelas
 type: docs
 weight: 40
-url: pt/python-net/manipulate-tables-in-existing-pdf/
+url: /pt/python-net/manipulate-tables-in-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

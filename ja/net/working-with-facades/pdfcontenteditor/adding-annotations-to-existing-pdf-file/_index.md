@@ -2,7 +2,7 @@
 title: 既存のPDFファイルに注釈を追加する
 type: docs
 weight: 80
-url: ja/net/adding-annotations-to-existing-pdf-file/
+url: /ja/net/adding-annotations-to-existing-pdf-file/
 description: このセクションでは、Aspose.PDF Facadesを使用して既存のPDFファイルに注釈を追加する方法を説明します。
 lastmod: "2021-06-30"
 sitemap:

@@ -3,7 +3,7 @@ title: Buat Tautan di file PDF
 linktitle: Buat Tautan
 type: docs
 weight: 10
-url: id/java/create-links/
+url: /id/java/create-links/
 description: Bagian ini menjelaskan cara membuat tautan dalam dokumen PDF Anda dengan Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: إضافة أختام الصور في ملف PDF برمجياً
 linktitle: أختام الصور في ملف PDF
 type: docs
 weight: 10
-url: ar/php-java/image-stamps-in-pdf-page/
+url: /ar/php-java/image-stamps-in-pdf-page/
 description: أضف ختم الصورة في مستند PDF الخاص بك باستخدام فئة ImageStamp مع مكتبة Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

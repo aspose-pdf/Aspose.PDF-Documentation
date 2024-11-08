@@ -2,7 +2,7 @@
 title: PDF 파일 정보 설정
 type: docs
 weight: 40
-url: ko/net/set-pdf-file-information/
+url: /ko/net/set-pdf-file-information/
 description: 이 섹션은 Aspose.PDF Facades를 사용하여 PDF 파일 정보를 설정하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

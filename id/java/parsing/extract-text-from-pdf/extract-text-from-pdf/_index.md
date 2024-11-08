@@ -3,7 +3,7 @@ title: Ekstraksi teks mentah dari file PDF
 linktitle: Ekstrak teks dari PDF
 type: docs
 weight: 10
-url: id/java/extract-text-from-all-pdf/
+url: /id/java/extract-text-from-all-pdf/
 description: Artikel ini menjelaskan berbagai cara untuk mengekstrak teks dari dokumen PDF menggunakan Aspose.PDF untuk Java. Dari seluruh halaman, dari bagian tertentu, berdasarkan kolom, dll.
 lastmod: "2021-06-05"
 sitemap:

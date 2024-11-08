@@ -2,7 +2,7 @@
 title: Form Editor
 type: docs
 weight: 40
-url: es/net/plugins/formeditor/
+url: /es/net/plugins/formeditor/
 description: Cómo Agregar, Actualizar y Eliminar Campos de Formularios en Archivos PDF utilizando los Plugins de Aspose.PDF
 lastmod: "2024-01-24"
 draft: false

@@ -2,7 +2,7 @@
 title: Obtener Información de Archivo PDF en PHP
 type: docs
 weight: 40
-url: es/java/get-pdf-file-information-in-php/
+url: /es/java/get-pdf-file-information-in-php/
 lastmod: "2021-06-05"
 ---
 

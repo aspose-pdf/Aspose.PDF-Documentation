@@ -3,7 +3,7 @@ title: Работа с текстом в PDF
 linktitle: Работа с текстом
 type: docs
 weight: 30
-url: ru/java/working-with-text/
+url: /ru/java/working-with-text/
 description: Этот раздел объясняет различные техники обработки текста. Узнайте, как добавлять, заменять, вращать, искать текст с использованием Aspose.PDF и Java.
 lastmod: "2021-06-05"
 sitemap:
@@ -15,10 +15,10 @@ sitemap:
 
 Вы можете выполнить следующие действия:
 
-- [Добавить текст в PDF-файл](/pdf/java/add-text-to-pdf-file/) - добавьте текст в ваш PDF, используйте шрифты из потока и файлов, добавьте HTML-строку, добавьте гиперссылку и т.д.
-- [PDF Tooltip](/pdf/java/pdf-tooltip/) - вы можете добавить всплывающую подсказку к найденному тексту, добавив невидимую кнопку с использованием Java.
-- [Text Formatting inside PDF](/pdf/java/text-formatting-inside-pdf/) - многие функции вы можете добавить в свой документ при форматировании текста внутри него. Добавьте отступ строки, добавьте границу текста, подчеркните текст, добавьте перевод строки с библиотекой Aspose.PDF.
-- [Replace Text in PDF](/pdf/java/replace-text-in-pdf/) - заменяйте текст на всех страницах PDF-документа. Сначала вам нужно использовать TextFragmentAbsorber.
-- [Rotate Text Inside PDF](/pdf/java/rotate-text-inside-pdf/) - поворачивайте текст внутри PDF с помощью класса TextFragment.
-- [Search and Get Text from Pages of PDF Document](/pdf/java/search-and-get-text-from-pdf/) - вы можете использовать класс TextFragmentAbsorber для поиска и получения текста со страниц.
-- [Determine Line Break](/pdf/java/determine-line-break/) - эта тема объясняет, как отслеживать разрывы строк в многострочных текстовых фрагментах.
+- [Добавить текст в PDF-файл](/pdf/ru/java/add-text-to-pdf-file/) - добавьте текст в ваш PDF, используйте шрифты из потока и файлов, добавьте HTML-строку, добавьте гиперссылку и т.д.
+- [PDF Tooltip](/pdf/ru/java/pdf-tooltip/) - вы можете добавить всплывающую подсказку к найденному тексту, добавив невидимую кнопку с использованием Java.
+- [Text Formatting inside PDF](/pdf/ru/java/text-formatting-inside-pdf/) - многие функции вы можете добавить в свой документ при форматировании текста внутри него. Добавьте отступ строки, добавьте границу текста, подчеркните текст, добавьте перевод строки с библиотекой Aspose.PDF.
+- [Replace Text in PDF](/pdf/ru/java/replace-text-in-pdf/) - заменяйте текст на всех страницах PDF-документа. Сначала вам нужно использовать TextFragmentAbsorber.
+- [Rotate Text Inside PDF](/pdf/ru/java/rotate-text-inside-pdf/) - поворачивайте текст внутри PDF с помощью класса TextFragment.
+- [Search and Get Text from Pages of PDF Document](/pdf/ru/java/search-and-get-text-from-pdf/) - вы можете использовать класс TextFragmentAbsorber для поиска и получения текста со страниц.
+- [Determine Line Break](/pdf/ru/java/determine-line-break/) - эта тема объясняет, как отслеживать разрывы строк в многострочных текстовых фрагментах.

@@ -3,7 +3,7 @@ title: Importação e Exportação de Anotações para XFDF
 linktitle: Importação e Exportação de Anotações para XFDF
 type: docs
 weight: 40
-url: pt/net/import-export-xfdf/
+url: /pt/net/import-export-xfdf/
 description: Você pode importar e exportar anotações no formato XFDF com C# e a biblioteca Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -86,7 +86,7 @@ XFDF significa XML Forms Data Format. É um formato de arquivo baseado em XML. E
 A classe [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) contém dois métodos para trabalhar com importação e exportação de anotações para arquivo XFDF.
 A classe [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) contém dois métodos para trabalhar com importação e exportação de anotações para o arquivo XFDF.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como exportar anotações para um arquivo XFDF:
 

@@ -2,7 +2,7 @@
 title: إضافة إجراءات جافا سكريبت PDF 
 type: docs
 weight: 10
-url: ar/net/adding-javascript-actions/
+url: /ar/net/adding-javascript-actions/
 description: يوضح هذا القسم كيفية إضافة إجراءات جافا سكريبت إلى ملف PDF موجود باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

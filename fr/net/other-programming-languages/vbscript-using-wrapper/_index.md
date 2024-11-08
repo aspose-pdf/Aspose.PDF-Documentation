@@ -2,14 +2,14 @@
 title: VBScript utilisant un wrapper
 type: docs
 weight: 90
-url: fr/net/vbscript-using-wrapper/
+url: /fr/net/vbscript-using-wrapper/
 ---
 
 {{% alert color="primary" %}}
 
 ## Prérequis Veuillez enregistrer Aspose.PDF pour .NET avec COM Interop, veuillez consulter l'article intitulé
 
-[Utiliser Aspose.pdf pour .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+[Utiliser Aspose.pdf pour .NET via COM Interop](/pdf/fr/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

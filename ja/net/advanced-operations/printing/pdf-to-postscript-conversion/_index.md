@@ -3,7 +3,7 @@ title: PDFからPostScriptへの変換
 linktitle: PDFからPostScriptへの変換
 type: docs
 weight: 30
-url: ja/net/pdf-to-postscript-conversion/
+url: /ja/net/pdf-to-postscript-conversion/
 keywords: "pdf to postscript c#"
 description: PDFからPostScriptへの変換のためのソリューションがあります。このタスクには印刷とPdfViewerクラスを使用します。
 lastmod: "2022-02-17"
@@ -76,7 +76,7 @@ sitemap:
     "description": "PDFからPostScriptへの変換のためのソリューションがあります。このタスクには印刷とPdfViewerクラスを使用します。"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリとも連携します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも連携します。
 
 ## **C#でPDFをポストスクリプトに変換**
 

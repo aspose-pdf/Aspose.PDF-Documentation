@@ -2,7 +2,7 @@
 title: Obtenez les métadonnées XMP d'un fichier PDF existant - façades
 type: docs
 weight: 10
-url: fr/java/get-xmp-metadata/
+url: /fr/java/get-xmp-metadata/
 description: Cette section explique comment obtenir les métadonnées XMP avec Aspose.PDF Facades en utilisant la classe PdfXmpMetadata.
 lastmod: "2021-06-05"
 sitemap:

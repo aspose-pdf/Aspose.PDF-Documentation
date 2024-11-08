@@ -3,7 +3,7 @@ title: Разделение PDF программно
 linktitle: Разделение файлов PDF
 type: docs
 weight: 60
-url: ru/net/split-pdf-document/
+url: /ru/net/split-pdf-document/
 keywords: разделение pdf на несколько файлов, разделение pdf на отдельные pdf, разделение pdf c#
 description: Эта тема показывает, как разделить страницы PDF на отдельные файлы PDF в ваших .NET приложениях на C#.
 lastmod: "2022-02-17"
@@ -91,8 +91,8 @@ aliases:
 1. Для каждой итерации создать новый объект Document и добавить в него отдельный объект [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)
 1. Сохранить новый PDF с использованием метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Разделение PDF на несколько файлов или отдельные pdf в C#
 

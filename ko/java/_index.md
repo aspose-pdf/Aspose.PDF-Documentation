@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for Java
 second_title: Aspose.PDF for Java
 type: docs
 weight: 20
-url: ko/java/
+url: /ko/java/
 is_root: true
 lastmod: "2021-06-05"
 ---
@@ -21,26 +21,26 @@ Aspose.PDF는 개발자가 프로그래밍 방식으로 간단하거나 복잡�
 
 <h2>챕터</h2>
 
-- [새로운 기능](/pdf/java/whatsnew/)
-- [개요](/pdf/java/overview/)
-- [시작하기](/pdf/java/get-started/)
+- [새로운 기능](/pdf/ko/java/whatsnew/)
+- [개요](/pdf/ko/java/overview/)
+- [시작하기](/pdf/ko/java/get-started/)
 
-- [기본 작업](/pdf/java/basic-operations/)
-- [문서 변환](/pdf/java/converting/)
-- [PDF 문서 파싱](/pdf/java/parsing/)
-- [고급 작업](/pdf/java/advanced-operations/)
+- [기본 작업](/pdf/ko/java/basic-operations/)
+- [문서 변환](/pdf/ko/java/converting/)
+- [PDF 문서 파싱](/pdf/ko/java/parsing/)
+- [고급 작업](/pdf/ko/java/advanced-operations/)
 - [릴리스 노트](https://releases.aspose.com/pdf/java/release-notes/)
 
 <h2> Aspose.PDF for Java 리소스</h2>
 다음은 작업을 수행하는 데 필요할 수 있는 몇 가지 유용한 리소스에 대한 링크입니다.
 
-- [Aspose.PDF for Java 온라인 문서](/pdf/java/)
-- [Aspose.PDF for Java 기능](/pdf/java/key-features/)
+- [Aspose.PDF for Java 온라인 문서](/pdf/ko/java/)
+- [Aspose.PDF for Java 기능](/pdf/ko/java/key-features/)
 - [Aspose.PDF for Java 릴리스 노트](https://releases.aspose.com/pdf/java/release-notes/)
 - [Aspose.PDF for Java 제품 페이지](https://products.aspose.com/pdf/java)
 - [Aspose.PDF for Java Maven 저장소](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
 - [Aspose.PDF for Java 다운로드](https://releases.aspose.com/pdf/java/)
-- [Aspose Repository에서 Aspose.PDF for Java 설치](/pdf/java/installation/)
+- [Aspose Repository에서 Aspose.PDF for Java 설치](/pdf/ko/java/installation/)
 - [Aspose.PDF for Java API 참조 가이드](https://reference.aspose.com/java/pdf)
 
 - [GitHub 저장소에서 예제 다운로드](https://github.com/aspose-pdf/Aspose.PDF-for-Java)

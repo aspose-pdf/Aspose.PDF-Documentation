@@ -3,7 +3,7 @@ title: تعيين الامتيازات، تشفير وفك تشفير ملف PDF
 linktitle: تشفير وفك تشفير ملف PDF
 type: docs
 weight: 20
-url: ar/java/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ar/java/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: تشفير pdf، حماية بكلمة مرور pdf، فك تشفير pdf، java
 description: تشفير ملف PDF باستخدام Java باستخدام أنواع وخوارزميات تشفير مختلفة. بالإضافة إلى فك تشفير ملفات PDF باستخدام كلمة مرور المالك.
 lastmod: "2021-12-17"

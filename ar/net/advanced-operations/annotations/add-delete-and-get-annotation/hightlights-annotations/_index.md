@@ -3,7 +3,7 @@ title: تعليقات التمييز بالألوان باستخدام C#
 linktitle: تعليق التمييز
 type: docs
 weight: 20
-url: ar/net/highlights-annotation/
+url: /ar/net/highlights-annotation/
 description: تُقدم تعليقات التوضيح في النص على شكل تمييزات، تحت خطوط، خطوط مشطوبة، أو خطوط متعرجة في نص الوثيقة.
 lastmod: "2022-02-17"
 sitemap:
@@ -87,7 +87,7 @@ sitemap:
 الميزة التالية هي القدرة على الحصول على أو تعيين إعدادات تعليقات الخط السفلي باستخدام خاصية underlineSettings.
 الميزة التالية هي القدرة على الحصول على إعدادات أو تعيين إعدادات التسطير باستخدام خاصية underlineSettings.
 
-يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة توضيح نصي للعلامات
 

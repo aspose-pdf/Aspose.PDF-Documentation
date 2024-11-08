@@ -2,7 +2,7 @@
 title: دمج ملفات PDF في روبي
 type: docs
 weight: 10
-url: ar/java/concatenate-pdf-files-in-ruby/
+url: /ar/java/concatenate-pdf-files-in-ruby/
 lastmod: "2021-06-05"
 ---
 

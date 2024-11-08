@@ -2,7 +2,7 @@
 title: HTML Formatting
 type: docs
 weight: 20
-url: pt/reportingservices/html-formatting/
+url: /pt/reportingservices/html-formatting/
 lastmod: "2021-06-05"
 ---
 

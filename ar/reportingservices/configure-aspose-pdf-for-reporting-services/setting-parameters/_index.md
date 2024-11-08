@@ -2,7 +2,7 @@
 title: إعداد المعلمات
 type: docs
 weight: 10
-url: ar/reportingservices/setting-parameters/
+url: /ar/reportingservices/setting-parameters/
 lastmod: "2021-06-05"
 ```
 

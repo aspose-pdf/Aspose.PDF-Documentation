@@ -2,7 +2,7 @@
 title: JythonでPDFファイルを連結する
 type: docs
 weight: 10
-url: ja/java/concatenate-pdf-files-in-jython/
+url: /ja/java/concatenate-pdf-files-in-jython/
 lastmod: "2021-06-05"
 ---
 

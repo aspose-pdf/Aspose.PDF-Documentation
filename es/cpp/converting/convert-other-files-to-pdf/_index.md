@@ -2,7 +2,7 @@
 linktitle: Convertir otros formatos de archivo a PDF
 type: docs
 weight: 80
-url: es/cpp/convert-other-files-to-pdf/
+url: /es/cpp/convert-other-files-to-pdf/
 lastmod: "2021-11-19"
 description: Este tema muestra cómo Aspose.PDF permite convertir otros formatos de archivo a un documento PDF.
 sitemap:

@@ -3,7 +3,7 @@ title: Python으로 PDF 포트폴리오 작업하기
 linktitle: 포트폴리오
 type: docs
 weight: 20
-url: ko/python-net/portfolio/
+url: /ko/python-net/portfolio/
 description: Python으로 PDF 포트폴리오를 만드는 방법. Microsoft Excel 파일, Word 문서 및 이미지 파일을 사용하여 PDF 포트폴리오를 만들어야 합니다.
 lastmod: "2023-02-17"
 sitemap:

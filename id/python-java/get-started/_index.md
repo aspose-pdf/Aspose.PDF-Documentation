@@ -3,7 +3,7 @@ title: Memulai
 linktitle: Memulai
 type: docs
 weight: 30
-url: id/python-java/get-started/
+url: /id/python-java/get-started/
 description: Halaman ini adalah gambaran umum tentang cara menggunakan Aspose.PDF untuk Python via Java untuk membuat dan mengedit dokumen PDF
 lastmod: "2024-06-05"
 sitemap:
@@ -41,7 +41,7 @@ Aspose.PDF untuk Python via Java adalah cepat, ringan dan mudah digunakan. Ini m
 
 ### Pelajari lebih lanjut tentang
 
-- [Dasar-dasar DOM API](/pdf/python-java/basics-of-dom-api/)
-- [Contoh Java "Hello, World"](/pdf/python-java/hello-world-example/)
-- [PDF Kompleks](/pdf/python-java/complex-pdf-example/)
-- [Cara menjalankan contoh lainnya](/pdf/python-java/how-to-run-other-examples/)
+- [Dasar-dasar DOM API](/pdf/id/python-java/basics-of-dom-api/)
+- [Contoh Java "Hello, World"](/pdf/id/python-java/hello-world-example/)
+- [PDF Kompleks](/pdf/id/python-java/complex-pdf-example/)
+- [Cara menjalankan contoh lainnya](/pdf/id/python-java/how-to-run-other-examples/)

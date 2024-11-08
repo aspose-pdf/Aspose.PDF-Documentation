@@ -3,7 +3,7 @@ title: حذف صفحة في PDF في Node.js
 linktitle: حذف صفحات PDF
 type: docs
 weight: 30
-url: ar/nodejs-cpp/delete-pages/
+url: /ar/nodejs-cpp/delete-pages/
 description: يمكنك حذف الصفحات من ملف PDF الخاص بك باستخدام Aspose.PDF for Node.js عبر C++.
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: Node.jsでPDFファイルのパスワードを変更する
 linktitle: パスワードを変更
 type: docs
 weight: 50
-url: ja/nodejs-cpp/change-password-pdf/
+url: /ja/nodejs-cpp/change-password-pdf/
 description: Aspose.PDF for Node.js via C++を使用してPDFファイルのパスワードを変更します。
 lastmod: "2023-11-16"
 sitemap:

@@ -2,7 +2,7 @@
 title: Working with Headings in PDF
 type: docs
 weight: 90
-url: es/cpp/working-with-headings/
+url: /es/cpp/working-with-headings/
 lastmod: "2021-11-11"
 description: Crear numeración en el encabezado de su documento PDF con C++. Aspose.PDF para C++ muestra diferentes tipos de estilos de numeración.
 sitemap:
@@ -16,7 +16,7 @@ Cualquier texto en un documento comienza con un encabezado. Los encabezados son 
 Los encabezados ayudan a llamar la atención sobre el texto y ayudan a los usuarios a encontrar la información que necesitan en el documento, mejorando la legibilidad y la percepción visual. Usando estilos de encabezado, también puede crear rápidamente una tabla de contenido, cambiar la estructura del documento.
 Entonces, veamos cómo trabajar con encabezados usando la biblioteca Aspose.PDF para C++.
 
-[Aspose.PDF para C++](/pdf/cpp/) ofrece muchos estilos de numeración predefinidos. Estas estilos de numeración predefinidos están almacenados en una enumeración, NumberingStyle. Los valores predefinidos de la enumeración NumberingStyle y sus descripciones se dan a continuación:
+[Aspose.PDF para C++](/pdf/es/cpp/) ofrece muchos estilos de numeración predefinidos. Estas estilos de numeración predefinidos están almacenados en una enumeración, NumberingStyle. Los valores predefinidos de la enumeración NumberingStyle y sus descripciones se dan a continuación:
 
 |**Tipos de encabezado**|**Descripción**|
 | :- | :- |

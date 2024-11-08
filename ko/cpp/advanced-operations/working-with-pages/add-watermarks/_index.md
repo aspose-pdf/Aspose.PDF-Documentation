@@ -3,7 +3,7 @@ title: PDF에 워터마크 추가하기 C++ 사용
 linktitle: 워터마크 추가
 type: docs
 weight: 90
-url: ko/cpp/add-watermarks/
+url: /ko/cpp/add-watermarks/
 description: 이 문서에서는 C++를 사용하여 프로그래밍적으로 PDF에서 아티팩트를 작업하고 워터마크를 얻는 기능을 설명합니다.
 lastmod: "2021-12-08"
 sitemap:

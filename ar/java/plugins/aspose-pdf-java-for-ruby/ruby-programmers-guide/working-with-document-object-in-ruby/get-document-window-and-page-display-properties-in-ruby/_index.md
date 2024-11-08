@@ -2,7 +2,7 @@
 title: الحصول على خصائص نافذة المستند وعرض الصفحة في روبي
 type: docs
 weight: 40
-url: ar/java/get-document-window-and-page-display-properties-in-ruby/
+url: /ar/java/get-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

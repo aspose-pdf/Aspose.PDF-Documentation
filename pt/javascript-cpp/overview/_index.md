@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: pt/javascript-cpp/overview/
+url: /pt/javascript-cpp/overview/
 description: Visão geral das principais funcionalidades e formatos suportados do Aspose.PDF para JavaScript via C++, manual de instalação e licenciamento.
 lastmod: "2022-12-13"
 sitemap:
@@ -34,9 +34,9 @@ Além disso, o Aspose.PDF para JavaScript via C++ pode ser aplicado para convert
 
 Saiba mais sobre:
 
-- [Formatos de Arquivo Suportados](/pdf/javascript-cpp/supported-file-formats/)
-- [Principais Recursos do Aspose.PDF](/pdf/javascript-cpp/key-features/)
-- [Requisitos do Sistema](/pdf/javascript-cpp/system-requirements/)
-- [Instalação](/pdf/javascript-cpp/installation/)
-- [Licenciamento](/pdf/javascript-cpp/licensing/)
-- [Suporte Técnico](/pdf/javascript-cpp/technical-support/)
+- [Formatos de Arquivo Suportados](/pdf/pt/javascript-cpp/supported-file-formats/)
+- [Principais Recursos do Aspose.PDF](/pdf/pt/javascript-cpp/key-features/)
+- [Requisitos do Sistema](/pdf/pt/javascript-cpp/system-requirements/)
+- [Instalação](/pdf/pt/javascript-cpp/installation/)
+- [Licenciamento](/pdf/pt/javascript-cpp/licensing/)
+- [Suporte Técnico](/pdf/pt/javascript-cpp/technical-support/)

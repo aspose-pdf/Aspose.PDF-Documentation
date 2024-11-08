@@ -2,7 +2,7 @@
 title: 파이썬에서 문서 창 및 페이지 표시 속성 가져오기
 type: docs
 weight: 30
-url: ko/python-java/get-document-window-and-page-display-properties-in-python/
+url: /ko/python-java/get-document-window-and-page-display-properties-in-python/
 ---
 
 <ins>Aspose.PDF Java for Python을 사용하여 PDF 문서의 문서 창 및 페이지 표시 속성을 가져오려면, **GetDocumentWindow** 클래스를 호출하십시오.

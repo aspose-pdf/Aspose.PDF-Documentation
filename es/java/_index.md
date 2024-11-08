@@ -4,7 +4,7 @@ linktitle: Aspose.PDF para Java
 second_title: Aspose.PDF para Java
 type: docs
 weight: 20
-url: es/java/
+url: /es/java/
 is_root: true
 lastmod: "2021-06-05"
 ---
@@ -21,26 +21,26 @@ Aspose.PDF es un componente de Java construido para permitir a los desarrollador
 
 <h2>Capítulos </h2>
 
-- [Qué hay de nuevo](/pdf/java/whatsnew/)
-- [Visión general](/pdf/java/overview/)
-- [Empezando](/pdf/java/get-started/)
+- [Qué hay de nuevo](/pdf/es/java/whatsnew/)
+- [Visión general](/pdf/es/java/overview/)
+- [Empezando](/pdf/es/java/get-started/)
 
-- [Operaciones básicas](/pdf/java/basic-operations/)
-- [Convirtiendo documentos](/pdf/java/converting/)
-- [Analizando documentos PDF](/pdf/java/parsing/)
-- [Operaciones avanzadas](/pdf/java/advanced-operations/)
+- [Operaciones básicas](/pdf/es/java/basic-operations/)
+- [Convirtiendo documentos](/pdf/es/java/converting/)
+- [Analizando documentos PDF](/pdf/es/java/parsing/)
+- [Operaciones avanzadas](/pdf/es/java/advanced-operations/)
 - [Notas de la versión](https://releases.aspose.com/pdf/java/release-notes/)
 
 <h2> Recursos de Aspose.PDF para Java</h2>
 A continuación se presentan los enlaces a algunos recursos útiles que puede necesitar para realizar sus tareas.
 
-- [Documentación en línea de Aspose.PDF para Java](/pdf/java/)
-- [Características de Aspose.PDF para Java](/pdf/java/key-features/)
+- [Documentación en línea de Aspose.PDF para Java](/pdf/es/java/)
+- [Características de Aspose.PDF para Java](/pdf/es/java/key-features/)
 - [Notas de la versión de Aspose.PDF para Java](https://releases.aspose.com/pdf/java/release-notes/)
 - [Página del producto Aspose.PDF para Java](https://products.aspose.com/pdf/java)
 - [Repositorio Maven de Aspose.PDF para Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
 - [Descargar Aspose.PDF para Java](https://releases.aspose.com/pdf/java/)
-- [Instalar Aspose.PDF para Java desde el repositorio de Aspose](/pdf/java/installation/)
+- [Instalar Aspose.PDF para Java desde el repositorio de Aspose](/pdf/es/java/installation/)
 - [Guía de referencia de la API de Aspose.PDF para Java](https://reference.aspose.com/java/pdf)
 
 - [Descargar ejemplos en el repositorio de GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java)

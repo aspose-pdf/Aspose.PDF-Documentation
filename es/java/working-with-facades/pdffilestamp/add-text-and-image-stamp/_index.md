@@ -2,7 +2,7 @@
 title: Añadir Sello de Texto e Imagen
 type: docs
 weight: 20
-url: es/java/add-text-and-image-stamp/
+url: /es/java/add-text-and-image-stamp/
 description: Esta sección explica cómo agregar un Sello de Texto e Imagen con com.aspose.pdf.facades usando la Clase PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

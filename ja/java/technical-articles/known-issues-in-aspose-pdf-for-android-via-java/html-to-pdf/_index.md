@@ -2,7 +2,7 @@
 title: HTMLからPDFへ
 type: docs
 weight: 10
-url: ja/java/html-to-pdf/
+url: /ja/java/html-to-pdf/
 lastmod: "2022-01-27"
 ---
 

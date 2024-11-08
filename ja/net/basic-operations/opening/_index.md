@@ -3,7 +3,7 @@ title: プログラムによるPDFドキュメントの開始
 linktitle: PDFを開く
 type: docs
 weight: 20
-url: ja/net/open-pdf-document/
+url: /ja/net/open-pdf-document/
 description: C# Aspose.PDF for .NET PDFライブラリを使用してPDFファイルを開く方法を学びます。既存のPDF、ストリームからのドキュメント、暗号化されたPDFドキュメントを開くことができます。
 aliases:
     - /net/opening-a-pdf-document/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-次のコードスニペットは [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## 既存のPDFドキュメントを開く
 

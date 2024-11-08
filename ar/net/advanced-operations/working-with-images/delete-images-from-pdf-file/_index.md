@@ -3,7 +3,7 @@ title: حذف الصور من ملف PDF
 linktitle: حذف الصور
 type: docs
 weight: 20
-url: ar/net/delete-images-from-pdf-file/
+url: /ar/net/delete-images-from-pdf-file/
 description: هذا القسم يشرح كيفية حذف الصور من ملف PDF باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 ---
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
     "description": "هذا القسم يشرح كيفية حذف الصور من ملف PDF باستخدام Aspose.PDF لـ .NET."
 }
 </script>
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 لحذف صورة من ملف PDF:
 

@@ -3,7 +3,7 @@ title: إنشاء PDF من XML
 linktitle: إنشاء PDF من XML
 type: docs
 weight: 10
-url: ar/java/generate-pdf-from-xml
+url: /ar/java/generate-pdf-from-xml
 description: توفر Aspose.PDF for Java فرصة لتحويل ملف XML إلى مستند PDF بشرط أن يتبع ملف XML المدخل مخطط Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

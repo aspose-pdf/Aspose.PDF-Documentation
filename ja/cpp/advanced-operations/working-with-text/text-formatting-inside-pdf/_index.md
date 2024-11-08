@@ -3,7 +3,7 @@ title: PDF内のテキストフォーマットをC++で行う
 linktitle: PDF内のテキストフォーマット
 type: docs
 weight: 30
-url: ja/cpp/text-formatting-inside-pdf/
+url: /ja/cpp/text-formatting-inside-pdf/
 description: このページでは、PDFファイル内のテキストをフォーマットする方法について説明します。行のインデントの追加、テキストの境界線の追加、下線の追加、追加したテキストの周囲に境界線を追加、フローティングボックスの内容のテキスト配置などがあります。
 lastmod: "2021-12-13"
 sitemap:

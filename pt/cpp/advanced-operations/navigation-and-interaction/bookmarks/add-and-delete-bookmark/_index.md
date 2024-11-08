@@ -3,7 +3,7 @@ title: Adicionar e Excluir um Marcador
 linktitle: Adicionar e Excluir um Marcador
 type: docs
 weight: 10
-url: pt/cpp/add-and-delete-bookmark/
+url: /pt/cpp/add-and-delete-bookmark/
 description: Este tópico explica como adicionar um marcador a um documento PDF com a biblioteca C++. Também é possível excluir todos ou determinados marcadores de um documento PDF.
 lastmod: "2022-01-31"
 sitemap:

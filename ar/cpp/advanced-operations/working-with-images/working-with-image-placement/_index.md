@@ -3,7 +3,7 @@ title: العمل مع وضع الصورة باستخدام C++
 linktitle: العمل مع وضع الصورة
 type: docs
 weight: 50
-url: ar/cpp/working-with-image-placement/
+url: /ar/cpp/working-with-image-placement/
 description: يصف هذا القسم ميزات العمل مع وضع الصور في ملف PDF باستخدام مكتبة C++.
 lastmod: "2021-12-18"
 ---

@@ -3,7 +3,7 @@ title: JavaScript経由でC++を使用してPDFにページ番号を追加
 linktitle: ページ番号を追加
 type: docs
 weight: 100
-url: ja/javascript-cpp/add-page-number/
+url: /ja/javascript-cpp/add-page-number/
 description: Aspose.PDF for JavaScript via C++を使用すると、AsposePdfAddPageNumを使用してPDFファイルにページ番号スタンプを追加できます。
 lastmod: "2023-04-17"
 sitemap:

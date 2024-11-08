@@ -3,7 +3,7 @@ title: Comenzar
 linktitle: Comenzar
 type: docs
 weight: 30
-url: es/python-net/get-started/
+url: /es/python-net/get-started/
 description: Esta sección describe los principios básicos del trabajo de Aspose.PDF para Python a través de .NET. La biblioteca de Python admite una amplia variedad de funciones.
 is_node: true
 lastmod: "2022-12-20"
@@ -38,14 +38,14 @@ Usar Aspose.PDF para Python a través de .NET en tu proyecto te ofrece los sigui
 
 ## Funciones de Conversión
 
-- [Convertir PDF a Word, Excel y PowerPoint](/pdf/python-net/convert-pdf-to-word/).
-- [Convertir PDF a formatos de imágenes](/pdf/python-net/convert-pdf-to-images-format/).
-- [Convertir archivo PDF a formato HTML y viceversa](/pdf//python-net/convert-pdf-to-html/).
-- [Convertir PDF a EPUB, Texto, XPS, etc.](/pdf/python-net/convert-pdf-to-other-files/).
+- [Convertir PDF a Word, Excel y PowerPoint](/pdf/es/python-net/convert-pdf-to-word/).
+- [Convertir PDF a formatos de imágenes](/pdf/es/python-net/convert-pdf-to-images-format/).
+- [Convertir archivo PDF a formato HTML y viceversa](/pdf/es//python-net/convert-pdf-to-html/).
+- [Convertir PDF a EPUB, Texto, XPS, etc.](/pdf/es/python-net/convert-pdf-to-other-files/).
 - Convertir EPUB, Markdown, Texto, XPS, PostScript, XML, LaTex a PDF
 
 
 ### Aprende más sobre:
 
-- [Ejemplo "Hola, Mundo" en Python](/pdf/python-net/hello-world-example/)
-- [PDF Complejo](/pdf/python-net/complex-pdf-example/)
+- [Ejemplo "Hola, Mundo" en Python](/pdf/es/python-net/hello-world-example/)
+- [PDF Complejo](/pdf/es/python-net/complex-pdf-example/)

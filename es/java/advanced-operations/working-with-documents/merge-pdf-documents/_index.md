@@ -3,7 +3,7 @@ title: Combinar PDF programáticamente
 linktitle: Combinar archivos PDF
 type: docs
 weight: 50
-url: es/java/merge-pdf-documents/
+url: /es/java/merge-pdf-documents/
 description: Esta página explica cómo combinar documentos PDF en un solo archivo PDF con Java.
 lastmod: "2021-06-05"
 ---

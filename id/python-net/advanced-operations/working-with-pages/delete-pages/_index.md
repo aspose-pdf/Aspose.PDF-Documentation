@@ -3,7 +3,7 @@ title: Hapus Halaman PDF secara Programatis dengan Python
 linktitle: Hapus Halaman PDF
 type: docs
 weight: 80
-url: id/python-net/delete-pages/
+url: /id/python-net/delete-pages/
 description: Anda dapat menghapus halaman dari file PDF Anda menggunakan pustaka Aspose.PDF untuk Python via .NET.
 lastmod: "2023-04-17"
 sitemap:

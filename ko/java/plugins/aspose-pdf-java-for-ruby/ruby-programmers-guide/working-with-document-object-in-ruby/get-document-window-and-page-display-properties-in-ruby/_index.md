@@ -2,7 +2,7 @@
 title: 루비에서 문서 창 및 페이지 표시 속성 가져오기
 type: docs
 weight: 40
-url: ko/java/get-document-window-and-page-display-properties-in-ruby/
+url: /ko/java/get-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

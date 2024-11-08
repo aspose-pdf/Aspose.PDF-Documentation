@@ -2,7 +2,7 @@
 title: Reemplazar Texto - Fachadas
 type: docs
 weight: 40
-url: es/net/replace-text-facades/
+url: /es/net/replace-text-facades/
 description: Esta sección explica cómo trabajar con Texto - Fachadas usando la Clase PdfContentEditor.
 lastmod: "2021-06-24"
 draft: false

@@ -3,7 +3,7 @@ title: PDF에 워터마크 추가
 linktitle: 워터마크 추가
 type: docs
 weight: 90
-url: ko/java/add-watermarks/
+url: /ko/java/add-watermarks/
 description: 이 기사는 Java를 사용하여 프로그램적으로 PDF에서 아티팩트 작업 및 워터마크 얻기의 기능을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Obtenir et Définir les Propriétés de Page
 type: docs
 weight: 30
-url: fr/java/get-and-set-page-properties/
+url: /fr/java/get-and-set-page-properties/
 description: Ce sujet explique comment obtenir des numéros dans un fichier PDF, obtenir les propriétés de page et déterminer la couleur de la page en utilisant Aspose.PDF pour Java.
 lastmod: "2021-06-05"
 ---

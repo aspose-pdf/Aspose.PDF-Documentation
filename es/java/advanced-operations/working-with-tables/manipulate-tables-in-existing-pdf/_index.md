@@ -3,7 +3,7 @@ title: Manipulate Tables in existing PDF
 linktitle: Manipulate Tables
 type: docs
 weight: 30
-url: es/java/manipulate-tables-in-existing-pdf/
+url: /es/java/manipulate-tables-in-existing-pdf/
 description: Manipule las tablas en un archivo PDF existente y reemplace la tabla antigua con una nueva en el documento PDF con Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: إضافات توضيحية إضافية باستخدام C++
 linktitle: إضافات توضيحية إضافية
 type: docs
 weight: 60
-url: ar/cpp/extra-annotations/
+url: /ar/cpp/extra-annotations/
 description: يصف هذا القسم كيفية إضافة، الحصول على، وحذف أنواع إضافية من الإضافات التوضيحية من مستند PDF الخاص بك.
 lastmod: "2021-11-24"
 sitemap:

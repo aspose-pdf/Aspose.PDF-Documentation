@@ -3,7 +3,7 @@ title: إنشاء روابط في ملف PDF باستخدام C++
 linktitle: إنشاء روابط
 type: docs
 weight: 10
-url: ar/cpp/create-links/
+url: /ar/cpp/create-links/
 description: يوضح هذا القسم كيفية إنشاء روابط في مستند PDF الخاص بك باستخدام C++.
 lastmod: "2021-06-05"
 sitemap:

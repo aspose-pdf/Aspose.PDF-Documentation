@@ -3,7 +3,7 @@ title: إضافة طوابع الصور في PDF باستخدام Python
 linktitle: طوابع الصور في ملف PDF
 type: docs
 weight: 10
-url: ar/python-net/image-stamps-in-pdf-page/
+url: /ar/python-net/image-stamps-in-pdf-page/
 description: أضف طابع الصورة في مستند PDF الخاص بك باستخدام فئة ImageStamp مع مكتبة Aspose.PDF لـ Python.
 lastmod: "2023-04-17"
 sitemap:

@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: ko/jasperreports/simple-and-affordable-licensing/
+url: /ko/jasperreports/simple-and-affordable-licensing/
 
 lastmod: "2021-06-05"
 
@@ -34,6 +34,6 @@ Aspose.PDF for JasperReports 평가판을 활용하십시오: 시간 제한이 �
 
 
 
-평가 모드는 내보낸 보고서에 워터마크를 삽입합니다. When you [buy a license](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simply apply the license](/pdf/jasperreports/licensing/) and watermark will no more appear in the output documents.
+평가 모드는 내보낸 보고서에 워터마크를 삽입합니다. When you [buy a license](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simply apply the license](/pdf/ko/jasperreports/licensing/) and watermark will no more appear in the output documents.
 
-라이센스를 [구매하면](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [라이센스를 간단히 적용하면](/pdf/jasperreports/licensing/) 출력 문서에 더 이상 워터마크가 나타나지 않습니다.
+라이센스를 [구매하면](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [라이센스를 간단히 적용하면](/pdf/ko/jasperreports/licensing/) 출력 문서에 더 이상 워터마크가 나타나지 않습니다.

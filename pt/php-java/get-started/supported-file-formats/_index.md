@@ -3,7 +3,7 @@ title: Formatos de Arquivo Suportados
 linktitle: Formatos de Arquivo Suportados
 type: docs
 weight: 70
-url: pt/php-java/supported-file-formats/
+url: /pt/php-java/supported-file-formats/
 description: Esta página mostra quais formatos de arquivo o Aspose.PDF para PHP via Java pode carregar e salvar.
 lastmod: "2024-06-05"
 sitemap:

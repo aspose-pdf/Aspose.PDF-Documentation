@@ -2,7 +2,7 @@
 title: Perubahan dalam nama metode
 type: docs
 weight: 10
-url: id/java/change-in-methods-name/
+url: /id/java/change-in-methods-name/
 lastmod: "2022-01-27"
 ---
 

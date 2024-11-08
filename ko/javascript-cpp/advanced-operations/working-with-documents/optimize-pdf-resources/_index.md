@@ -3,7 +3,7 @@ title: JavaScript를 통한 C++로 PDF 리소스 최적화
 linktitle: PDF 리소스 최적화
 type: docs
 weight: 15
-url: ko/javascript-cpp/optimize-pdf-resources/
+url: /ko/javascript-cpp/optimize-pdf-resources/
 description: JavaScript 도구를 사용하여 빠른 웹 뷰를 위해 PDF 파일의 리소스를 최적화합니다.
 lastmod: "2022-12-15"
 sitemap:

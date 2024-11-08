@@ -2,7 +2,7 @@
 title: Apparence et attributs du champ
 type: docs
 weight: 20
-url: fr/net/changing-field-appearance-and-attributes/
+url: /fr/net/changing-field-appearance-and-attributes/
 description: Cette section explique comment vous pouvez changer l'apparence et les attributs des champs avec la classe FormEditor.
 lastmod: "2021-06-05"
 draft: false

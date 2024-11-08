@@ -2,7 +2,7 @@
 title: Tamaño del margen de la página
 type: docs
 weight: 70
-url: es/reportingservices/page-margin-size/
+url: /es/reportingservices/page-margin-size/
 lastmod: "2021-06-05"
 ---
 

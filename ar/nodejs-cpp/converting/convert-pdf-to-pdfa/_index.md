@@ -3,7 +3,7 @@ title: تحويل PDF إلى تنسيقات PDF/A في Node.js
 linktitle: تحويل PDF إلى تنسيقات PDF/A
 type: docs
 weight: 100
-url: ar/nodejs-cpp/convert-pdf-to-pdfa/
+url: /ar/nodejs-cpp/convert-pdf-to-pdfa/
 lastmod: "2023-11-16"
 description: يوضح لك هذا الموضوع كيف يسمح Aspose.PDF بتحويل ملف PDF إلى ملف PDF متوافق مع PDF/A في بيئة Node.js.
 sitemap:

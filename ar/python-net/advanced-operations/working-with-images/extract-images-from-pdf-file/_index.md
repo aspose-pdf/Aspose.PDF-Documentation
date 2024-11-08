@@ -3,7 +3,7 @@ title: استخراج الصور من ملف PDF باستخدام بايثون
 linktitle: استخراج الصور
 type: docs
 weight: 30
-url: ar/python-net/extract-images-from-pdf-file/
+url: /ar/python-net/extract-images-from-pdf-file/
 description: يوضح هذا القسم كيفية استخراج الصور من ملف PDF باستخدام مكتبة بايثون.
 lastmod: "2023-02-17"
 ---

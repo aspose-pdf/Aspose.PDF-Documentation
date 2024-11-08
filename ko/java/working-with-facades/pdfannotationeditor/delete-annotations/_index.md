@@ -2,7 +2,7 @@
 title: 주석 삭제 (파사드)
 type: docs
 weight: 10
-url: ko/java/delete-annotations/
+url: /ko/java/delete-annotations/
 description: 이 섹션은 PdfAnnotationEditor 클래스를 사용하여 Aspose.PDF 파사드로 주석을 삭제하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

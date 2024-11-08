@@ -3,7 +3,7 @@ title: 개요
 linktitle: 개요
 type: docs
 weight: 20
-url: ko/python-net/overview/
+url: /ko/python-net/overview/
 lastmod: "2022-12-20"
 description: Aspose.PDF for Python via .NET의 주요 기능 및 지원 형식 개요, 라이브러리의 설치 및 라이선스 설명서.
 sitemap:
@@ -31,9 +31,9 @@ Aspose.PDF for Python은 다음과 같은 다양한 기능을 지원합니다:
 
 더 알아보기:
 
-- [지원되는 파일 형식](/pdf/python-net/supported-file-formats/)
-- [Aspose.PDF의 주요 기능](/pdf/python-net/key-features/)
-- [시스템 요구 사항](/pdf/python-net/system-requirements/)
-- [설치](/pdf/python-net/installation/)
-- [라이선스](/pdf/python-net/licensing/)
-- [기술 지원](/pdf/python-net/technical-support/)
+- [지원되는 파일 형식](/pdf/ko/python-net/supported-file-formats/)
+- [Aspose.PDF의 주요 기능](/pdf/ko/python-net/key-features/)
+- [시스템 요구 사항](/pdf/ko/python-net/system-requirements/)
+- [설치](/pdf/ko/python-net/installation/)
+- [라이선스](/pdf/ko/python-net/licensing/)
+- [기술 지원](/pdf/ko/python-net/technical-support/)

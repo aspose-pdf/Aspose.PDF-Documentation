@@ -1,7 +1,7 @@
 ---
 title: Получение и установка свойств страницы
 type: docs
-url: ru/net/get-and-set-page-properties/
+url: /ru/net/get-and-set-page-properties/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -71,7 +71,7 @@ lastmod: "2022-02-17"
 </script>
 Aspose.PDF для .NET позволяет читать и устанавливать свойства страниц в PDF-файле в ваших .NET приложениях. В этом разделе показано, как получить количество страниц в PDF-файле, получить информацию о свойствах страницы PDF, таких как цвет, и установить свойства страницы. Приведенные примеры написаны на C#, но вы можете использовать любой .NET язык, такой как VB.NET, для достижения того же.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Получить количество страниц в PDF-файле
 
@@ -122,7 +122,7 @@ Aspose.PDF для .NET позволяет читать и устанавлива
 
 ## Получить конкретную страницу PDF-файла
 
-Aspose.PDF позволяет [разделить PDF на отдельные страницы](/pdf/net/split-pdf-document/) и сохранить их как файлы PDF. Получение указанной страницы в PDF-файле и сохранение ее как нового PDF происходит очень похожим образом: открыть исходный документ, получить доступ к странице, создать новый документ и добавить на него страницу.
+Aspose.PDF позволяет [разделить PDF на отдельные страницы](/pdf/ru/net/split-pdf-document/) и сохранить их как файлы PDF. Получение указанной страницы в PDF-файле и сохранение ее как нового PDF происходит очень похожим образом: открыть исходный документ, получить доступ к странице, создать новый документ и добавить на него страницу.
 
 Объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) хранит страницы в файле PDF через [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 [Объект Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) содержит в себе [коллекцию страниц PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection), которая включает все страницы PDF файла.

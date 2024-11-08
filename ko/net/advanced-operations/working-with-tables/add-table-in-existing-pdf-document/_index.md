@@ -3,7 +3,7 @@ title: PDF에서 C#을 사용하여 테이블 생성 또는 추가
 linktitle: 테이블 생성 또는 추가
 type: docs
 weight: 10
-url: ko/net/add-table-in-existing-pdf-document/
+url: /ko/net/add-table-in-existing-pdf-document/
 description: Aspose.PDF for .NET은 PDF 테이블을 생성, 읽기 및 편집하는 데 사용되는 라이브러리입니다. 이 주제에서 다른 고급 기능을 확인하세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 
 PDF 문서를 작업할 때 테이블은 중요합니다. 이들은 정보를 체계적인 방식으로 표시하는 데 훌륭한 기능을 제공합니다. Aspose.PDF 네임스페이스에는 PDF 문서를 처음부터 생성할 때 테이블을 만드는 기능을 제공하는 [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row)과 같은 클래스가 포함되어 있습니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 Table 클래스의 객체를 생성하여 테이블을 만들 수 있습니다.
 

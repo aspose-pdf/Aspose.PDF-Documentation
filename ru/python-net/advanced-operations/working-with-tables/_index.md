@@ -3,7 +3,7 @@ title: Работа с таблицами в PDF с использованием
 linktitle: Работа с таблицами
 type: docs
 weight: 50
-url: ru/python-net/working-with-tables/
+url: /ru/python-net/working-with-tables/
 description: В этом разделе описывается, как добавить и извлечь таблицу, как манипулировать и интегрировать таблицу с использованием библиотеки Python.
 lastmod: "2023-09-17"
 sitemap:
@@ -81,11 +81,11 @@ sitemap:
 
 Вы можете сделать следующее:
 
-- [Создать или добавить таблицу в существующий PDF-документ](/pdf/python-net/add-table-in-existing-pdf-document/) - создайте свою таблицу в PDF-файле, объединяя столбцы или строки, учитывая границы, отступы и поля.
-- [Извлечь таблицу из существующего PDF-документа](/pdf/python-net/extract-table-from-existing-pdf-document/) - вы можете извлечь таблицу из PDF-файла.
-- [Управлять таблицами в существующем PDF](/pdf/python-net/manipulate-tables-in-existing-pdf/) - управляйте таблицами в вашем PDF с помощью TableAbsorber.
+- [Создать или добавить таблицу в существующий PDF-документ](/pdf/ru/python-net/add-table-in-existing-pdf-document/) - создайте свою таблицу в PDF-файле, объединяя столбцы или строки, учитывая границы, отступы и поля.
+- [Извлечь таблицу из существующего PDF-документа](/pdf/ru/python-net/extract-table-from-existing-pdf-document/) - вы можете извлечь таблицу из PDF-файла.
+- [Управлять таблицами в существующем PDF](/pdf/ru/python-net/manipulate-tables-in-existing-pdf/) - управляйте таблицами в вашем PDF с помощью TableAbsorber.
 
-- [Удалить таблицы из существующего PDF](/pdf/python-net/remove-tables-from-existing-pdf/) - удалите таблицу или несколько таблиц из PDF-документа.
+- [Удалить таблицы из существующего PDF](/pdf/ru/python-net/remove-tables-from-existing-pdf/) - удалите таблицу или несколько таблиц из PDF-документа.
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ title: Stamping with Aspose.PDF using C++
 linktitle: Stamping
 type: docs
 weight: 120
-url: ar/cpp/stamping/
+url: /ar/cpp/stamping/
 description: يصف هذا القسم كيفية إضافة طوابع الصور والنصوص إلى صفحة PDF.
 lastmod: "2021-06-05"
 sitemap:
@@ -15,6 +15,6 @@ sitemap:
 
 تحقق من الأقسام التالية لتتعلم كيفية إضافة طابع باستخدام C++:
 
-- [إضافة طوابع الصور في صفحة PDF](/pdf/cpp/image-stamps-in-pdf-page/) - إضافة طابع صورة، التحكم في جودة الصورة، طابع الصورة كخلفية لملف PDF الخاص بك.
+- [إضافة طوابع الصور في صفحة PDF](/pdf/ar/cpp/image-stamps-in-pdf-page/) - إضافة طابع صورة، التحكم في جودة الصورة، طابع الصورة كخلفية لملف PDF الخاص بك.
 
-- [إضافة طوابع النصوص في ملف PDF](/pdf/cpp/text-stamps-in-the-pdf-file/) - إضافة طابع نص، تحديد محاذاة كائن TextStamp، ملء نص الضربة كطابع في ملف PDF.
+- [إضافة طوابع النصوص في ملف PDF](/pdf/ar/cpp/text-stamps-in-the-pdf-file/) - إضافة طابع نص، تحديد محاذاة كائن TextStamp، ملء نص الضربة كطابع في ملف PDF.

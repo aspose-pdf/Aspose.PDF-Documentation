@@ -2,7 +2,7 @@
 title: Menginstal dan Menggunakan Aspose.Pdf Java Maven untuk Eclipse
 type: docs
 weight: 10
-url: id/java/installing-and-using-aspose-pdf-java-maven-for-eclipse/
+url: /id/java/installing-and-using-aspose-pdf-java-maven-for-eclipse/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: تقسيم PDF برمجياً
 linktitle: تقسيم ملفات PDF
 type: docs
 weight: 60
-url: ar/cpp/split-pdf-document/
+url: /ar/cpp/split-pdf-document/
 description: يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية باستخدام C++.
 lastmod: "2022-09-01"
 sitemap:

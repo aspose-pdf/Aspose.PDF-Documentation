@@ -2,14 +2,14 @@
 title: Использование позднего связывания в CPP
 type: docs
 weight: 20
-url: ru/net/using-late-binding-in-cpp/
+url: /ru/net/using-late-binding-in-cpp/
 ---
 
 ## Предварительные требования
 
 {{% alert color="primary" %}}
 
-Пожалуйста, зарегистрируйте Aspose.PDF для .NET с COM Interop, подробности смотрите в статье [Использование Aspose.pdf для .NET через COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Пожалуйста, зарегистрируйте Aspose.PDF для .NET с COM Interop, подробности смотрите в статье [Использование Aspose.pdf для .NET через COM Interop](/pdf/ru/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

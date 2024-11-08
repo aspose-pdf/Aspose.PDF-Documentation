@@ -2,7 +2,7 @@
 title: Forcer le Rendu de Table sur une Nouvelle Page
 type: docs
 weight: 20
-url: fr/java/force-table-rendering-on-new-page/
+url: /fr/java/force-table-rendering-on-new-page/
 lastmod: "2021-06-05"
 ---
 

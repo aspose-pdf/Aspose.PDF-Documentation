@@ -3,7 +3,7 @@ title: Menambahkan Gambar ke File PDF yang Ada
 linktitle: Menambahkan Gambar
 type: docs
 weight: 10
-url: id/java/menambahkan-gambar-ke-file-pdf-yang-ada/
+url: /id/java/menambahkan-gambar-ke-file-pdf-yang-ada/
 description: Bagian ini menjelaskan cara menambahkan gambar ke file PDF yang ada menggunakan pustaka Java.
 lastmod: "2021-06-05"
 ---

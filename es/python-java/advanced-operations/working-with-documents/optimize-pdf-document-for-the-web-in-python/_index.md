@@ -2,7 +2,7 @@
 title: Optimizar Documento PDF para la Web en Python
 type: docs
 weight: 60
-url: es/python-java/optimize-pdf-document-for-the-web-in-python/
+url: /es/python-java/optimize-pdf-document-for-the-web-in-python/
 ---
 
 <ins>Para optimizar un documento PDF para la web usando **Aspose.PDF Java para Python**, simplemente invoque el método **optimize_web** de la clase **Optimize**.

@@ -3,7 +3,7 @@ title: C#을 사용하여 PDF에 워터마크 추가
 linktitle: 워터마크 추가
 type: docs
 weight: 90
-url: ko/net/add-watermarks/
+url: /ko/net/add-watermarks/
 description: 이 문서는 C#을 프로그래밍 방식으로 PDF에서 아티팩트를 작업하고 워터마크를 얻는 기능에 대해 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 
 **Aspose.PDF for .NET** 은 Artifacts를 사용하여 PDF 문서에 워터마크를 추가할 수 있습니다. 이 문서를 확인하여 작업을 해결하십시오.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 Adobe Acrobat으로 생성된 워터마크는 아티팩트(14.8.2.2 PDF 사양의 실제 콘텐츠 및 아티팩트에서 설명)라고 합니다. 아티팩트를 다루기 위해 Aspose.PDF는 [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 클래스와 [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection) 클래스를 가지고 있습니다.
 

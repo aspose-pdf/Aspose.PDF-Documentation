@@ -3,7 +3,7 @@ title: اقتصاص صفحات PDF باستخدام PHP
 linktitle: اقتصاص الصفحات
 type: docs
 weight: 80
-url: ar/php-java/crop-pages/
+url: /ar/php-java/crop-pages/
 description: يمكنك الحصول على خصائص الصفحة، مثل العرض، الارتفاع، والنزيف، والاقتصاص، وصندوق التشذيب باستخدام Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

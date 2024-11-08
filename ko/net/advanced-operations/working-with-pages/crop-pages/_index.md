@@ -3,7 +3,7 @@ title: Crop PDF Pages programmatically C#
 linktitle: Crop Pages
 type: docs
 weight: 80
-url: ko/net/crop-pages/
+url: /ko/net/crop-pages/
 description: Aspose.PDF for .NET을 사용하여 너비, 높이, 블리드, 크롭 및 트림박스와 같은 페이지 속성을 얻을 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -89,7 +89,7 @@ PDF 파일의 각 페이지에는 너비, 높이, 블리드, 크롭 및 트림�
 - **Page.Rect**: MediaBox와 DropBox의 교차점(일반적으로 보이는 직사각형)입니다. 아래 그림은 이러한 속성을 설명합니다.
 자세한 내용은 [이 페이지](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)를 방문하십시오.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 아래 코드 조각은 페이지를 크롭하는 방법을 보여줍니다:
 

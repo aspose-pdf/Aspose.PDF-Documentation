@@ -3,7 +3,7 @@ title: PDFドキュメントを比較する
 linktitle: PDFを比較する
 type: docs
 weight: 180
-url: ja/net/compare-pdf-documents/
+url: /ja/net/compare-pdf-documents/
 description: 24.7リリース以降、PDFドキュメントの内容を注釈付きで比較し、サイドバイサイドの出力が可能です。
 lastmod: "2024-08-17"
 sitemap:

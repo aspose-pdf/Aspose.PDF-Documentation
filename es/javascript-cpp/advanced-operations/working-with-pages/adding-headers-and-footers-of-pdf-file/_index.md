@@ -3,7 +3,7 @@ title: Añadir Encabezado y Pie de Página a PDF mediante JavaScript a través d
 linktitle: Añadir Encabezado y Pie de Página a PDF
 type: docs
 weight: 70
-url: es/javascript-cpp/add-headers-and-footers-of-pdf-file/
+url: /es/javascript-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF para JavaScript a través de C++ te permite añadir encabezados y pies de página a tu archivo PDF usando AsposePdfAddTextHeaderFooter.
 lastmod: "2023-02-17"
 sitemap:

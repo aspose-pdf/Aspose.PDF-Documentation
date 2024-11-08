@@ -2,7 +2,7 @@
 title: Optimizer 
 type: docs
 weight: 80
-url: ar/net/plugins/optimizer/
+url: /ar/net/plugins/optimizer/
 description: كيفية تحسين ومعالجة ملفات PDF باستخدام Aspose.PDF Optimizer
 lastmod: "2024-01-24"
 ---

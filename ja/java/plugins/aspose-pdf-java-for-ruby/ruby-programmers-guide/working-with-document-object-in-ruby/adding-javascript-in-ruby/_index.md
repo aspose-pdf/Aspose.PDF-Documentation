@@ -2,7 +2,7 @@
 title: RubyでJavaScriptを追加する
 type: docs
 weight: 10
-url: ja/java/adding-javascript-in-ruby/
+url: /ja/java/adding-javascript-in-ruby/
 lastmod: "2021-06-05"
 ---
 

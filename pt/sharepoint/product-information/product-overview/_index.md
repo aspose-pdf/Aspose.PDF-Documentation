@@ -3,7 +3,7 @@ title: Visão Geral do Produto
 
 weight: 10
 
-url: pt/sharepoint/visao-geral-do-produto/
+url: /pt/sharepoint/visao-geral-do-produto/
 
 lastmod: "2020-12-16"
 
@@ -34,7 +34,7 @@ O Aspose.PDF para SharePoint foi projetado para ser usado com o Microsoft ShareP
 
 
 
-Esta documentação descreve os [recursos](/pdf/sharepoint/features/), [instalação](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/), [limitações de avaliação](/pdf/sharepoint/evaluate-aspose-pdf/), [licenciamento](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/) do Aspose.PDF para SharePoint, casos de uso comuns e configurações.
+Esta documentação descreve os [recursos](/pdf/pt/sharepoint/features/), [instalação](/pdf/pt/sharepoint/install-aspose-pdf-for-sharepoint/), [limitações de avaliação](/pdf/pt/sharepoint/evaluate-aspose-pdf/), [licenciamento](/pdf/pt/sharepoint/license-aspose-pdf-for-sharepoint/) do Aspose.PDF para SharePoint, casos de uso comuns e configurações.
 
 {{% /alert %}}
 

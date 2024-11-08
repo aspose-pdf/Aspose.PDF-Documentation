@@ -3,7 +3,7 @@ title: Définir les privilèges, chiffrer et déchiffrer un PDF
 linktitle: Chiffrer et déchiffrer un fichier PDF
 type: docs
 weight: 20
-url: fr/net/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /fr/net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Chiffrer un fichier PDF avec C# en utilisant différents types de chiffrement et algorithmes. Déchiffrer également les fichiers PDF en utilisant le mot de passe du propriétaire.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Chiffrer un fichier PDF avec C# en utilisant différents types de chiffrement et algorithmes. Déchiffrer également les fichiers PDF en utilisant le mot de passe du propriétaire."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Définir des privilèges sur un fichier PDF existant
 

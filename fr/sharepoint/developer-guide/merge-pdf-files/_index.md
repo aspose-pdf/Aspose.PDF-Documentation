@@ -3,7 +3,7 @@ title: Fusionner des fichiers PDF dans SharePoint
 linktitle: Fusionner des fichiers PDF
 type: docs
 weight: 90
-url: fr/sharepoint/merge-pdf-files/
+url: /fr/sharepoint/merge-pdf-files/
 lastmod: "2020-12-16"
 description: En utilisant l'API PDF SharePoint, vous pouvez fusionner plusieurs fichiers PDF de la bibliothèque de documents SharePoint en un seul PDF.
 ---

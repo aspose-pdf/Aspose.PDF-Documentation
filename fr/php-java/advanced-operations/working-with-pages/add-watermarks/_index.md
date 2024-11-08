@@ -4,7 +4,7 @@ title: Ajouter un filigrane au PDF
 linktitle: Ajouter un filigrane  
 type: docs  
 weight: 90  
-url: fr/php-java/add-watermarks/  
+url: /fr/php-java/add-watermarks/  
 description: Cet article explique les fonctionnalités du travail avec les artefacts et l'obtention de filigranes dans les PDFs en utilisant PHP.  
 lastmod: "2024-06-05"  
 sitemap:  

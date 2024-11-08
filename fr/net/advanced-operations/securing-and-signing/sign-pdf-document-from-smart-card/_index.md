@@ -3,7 +3,7 @@ title: Comment ajouter une signature de carte à puce à un PDF
 linktitle: Signature de PDF avec carte à puce
 type: docs
 weight: 40
-url: fr/net/sign-pdf-document-from-smart-card/
+url: /fr/net/sign-pdf-document-from-smart-card/
 description: Aspose.PDF pour .NET vous permet de signer des documents PDF à partir d'une carte à puce en utilisant un champ de signature.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 Aspose.PDF pour .NET offre la fonctionnalité d'ajouter des signatures numériques à partir d'un emplacement de magasin de clés. Vous pouvez appliquer la signature en acceptant le certificat fourni par le magasin de certificats, la carte à puce ou la [carte PIV](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) connectée au système lors de l'exécution.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Voici les extraits de code pour signer un document PDF à partir d'une carte à puce:
 

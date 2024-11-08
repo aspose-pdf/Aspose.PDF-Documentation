@@ -2,7 +2,7 @@
 title: 設定ツールによるインストール
 type: docs
 weight: 30
-url: ja/reportingservices/install-with-configuring-tool/
+url: /ja/reportingservices/install-with-configuring-tool/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: XML을 사용하여 PDF 생성
 linktitle: XML을 사용하여 PDF 생성
 type: docs
 weight: 10
-url: ko/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
+url: /ko/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
 description: C# 라이브러리는 입력 XML 파일이 Aspose.PDF 스키마를 따라야 하는 PDF 문서로 변환하는 기능을 제공합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "C# 라이브러리는 입력 XML 파일이 Aspose.PDF 스키마를 따라야 하는 PDF 문서로 변환하는 기능을 제공합니다."
 }
 </script>
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 때때로 기존 XML 파일에 응용 프로그램 데이터가 포함되어 있으며 이러한 파일을 사용하여 PDF 보고서를 생성하려고 할 수 있습니다. XSLT를 사용하여 기존 XML 문서를 Aspose.Pdf와 호환되는 XML 문서로 변환한 다음 PDF 파일을 생성할 수 있습니다. XML 및 XSLT를 사용하여 PDF를 생성하는 3단계가 있습니다.
 

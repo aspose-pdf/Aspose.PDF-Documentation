@@ -3,7 +3,7 @@ title: Formatos de Archivo Soportados
 linktitle: Formatos de Archivo Soportados
 type: docs
 weight: 10
-url: es/nodejs-cpp/supported-file-formats/
+url: /es/nodejs-cpp/supported-file-formats/
 description: Esta página muestra cuáles formatos de archivo Aspose.PDF para Node.js puede cargar y guardar.
 lastmod: "2023-11-16"
 sitemap:

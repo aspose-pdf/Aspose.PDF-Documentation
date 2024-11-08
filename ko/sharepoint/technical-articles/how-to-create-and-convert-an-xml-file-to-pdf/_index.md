@@ -2,7 +2,7 @@
 title: How to Create and Convert an XML File to PDF
 type: docs
 weight: 30
-url: ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
+url: /ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint API is capable of creating and converting XML files into PDF format.
 ---
@@ -20,13 +20,13 @@ Aspose.PDF for SharePoint는 수상 경력이 있는 Aspose.PDF for .NET 컴포�
 이 기사에서는 단계별로 XML 파일을 생성하고 PDF로 변환하는 과정을 안내합니다:
 
 
-1. [XML 파일 생성](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
-2. [PDF 템플릿 생성](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
-3. [XML 템플릿 로드](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
-4. [소스 경로 지정](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
-5. [파일 속성 지정](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
-6. [파일을 PDF로 내보내기](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
-7. [PDF 파일 저장](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
+1. [XML 파일 생성](/pdf/ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
+2. [PDF 템플릿 생성](/pdf/ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
+3. [XML 템플릿 로드](/pdf/ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
+4. [소스 경로 지정](/pdf/ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
+5. [파일 속성 지정](/pdf/ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
+6. [파일을 PDF로 내보내기](/pdf/ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
+7. [PDF 파일 저장](/pdf/ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
 #### **Step 1: XML 파일 생성**
 먼저 Aspose.PDF for .NET 문서 객체 모델을 기반으로 XML 파일을 생성합니다.
 
@@ -73,7 +73,7 @@ Aspose.PDF for .NET DOM에 따르면, PDF 문서는 Section 객체의 컬렉션�
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 #### **3단계: XML 템플릿 로드**
 
-템플릿이 생성되면, [XML 파일](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)을 로드합니다:
+템플릿이 생성되면, [XML 파일](/pdf/ko/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)을 로드합니다:
 1. PDF 템플릿 페이지에서 **새 항목 추가**를 선택하세요.
 
 

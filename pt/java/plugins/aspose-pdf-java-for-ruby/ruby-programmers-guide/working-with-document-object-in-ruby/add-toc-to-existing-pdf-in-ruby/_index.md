@@ -2,7 +2,7 @@
 title: Adicionar TOC ao PDF Existente em Ruby
 type: docs
 weight: 30
-url: pt/java/add-toc-to-existing-pdf-in-ruby/
+url: /pt/java/add-toc-to-existing-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

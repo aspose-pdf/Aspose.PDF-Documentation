@@ -3,7 +3,7 @@ title: معالجة مستند PDF
 linktitle: معالجة مستند PDF
 type: docs
 weight: 30
-url: ar/php-java/manipulate-pdf-document/
+url: /ar/php-java/manipulate-pdf-document/
 description: تحتوي هذه المقالة على معلومات حول كيفية التحقق من صحة مستند PDF للمعيار PDF A، وكيفية العمل مع فهرس المحتويات، وكيفية تعيين تاريخ انتهاء صلاحية PDF، وكيفية تحديد تقدم توليد ملف PDF.
 lastmod: "2024-06-05"
 ---

@@ -3,7 +3,7 @@ title: Mengonversi PDF ke format PDF/A di Node.js
 linktitle: Mengonversi PDF ke format PDF/A
 type: docs
 weight: 100
-url: id/nodejs-cpp/convert-pdf-to-pdfa/
+url: /id/nodejs-cpp/convert-pdf-to-pdfa/
 lastmod: "2023-11-16"
 description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF menjadi file PDF yang sesuai dengan PDF/A di lingkungan Node.js.
 sitemap:

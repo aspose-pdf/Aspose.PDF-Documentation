@@ -3,7 +3,7 @@ title: データソースからテーブルをレンダリング
 linktitle: データソースからテーブルをレンダリング
 type: docs
 weight: 30
-url: ja/net/render-table-from-the-data-source/
+url: /ja/net/render-table-from-the-data-source/
 description: このページでは、Aspose.PDfライブラリを使用してデータソースからテーブルをレンダリングする方法について説明します。
 lastmod: "2021-06-05"
 sitemap:

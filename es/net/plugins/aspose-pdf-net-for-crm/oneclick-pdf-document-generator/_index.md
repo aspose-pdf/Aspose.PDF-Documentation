@@ -2,7 +2,7 @@
 title: Generador de Documentos PDF OneClick
 type: docs
 weight: 10
-url: es/net/oneclick-pdf-document-generator/
+url: /es/net/oneclick-pdf-document-generator/
 description: Aprende a usar el Generador de Documentos PDF OneClick de Aspose.PDF
 lastmod: "2021-06-05"
 sitemap:

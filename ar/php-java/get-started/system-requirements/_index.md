@@ -3,7 +3,7 @@ title: متطلبات النظام
 linktitle: متطلبات النظام
 type: docs
 weight: 30
-url: ar/php-java/system-requirements/
+url: /ar/php-java/system-requirements/
 description: تسرد هذه القسم أنظمة التشغيل المدعومة التي يحتاجها المطور للعمل بنجاح مع Aspose.PDF for PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

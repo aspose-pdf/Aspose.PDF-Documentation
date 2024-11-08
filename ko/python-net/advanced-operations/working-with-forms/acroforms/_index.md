@@ -3,7 +3,7 @@ title: 파이썬을 사용하여 AcroForms 작업하기
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ko/python-net/acroforms/
+url: /ko/python-net/acroforms/
 description: Aspose.PDF for Python을 사용하여 처음부터 폼을 생성하고, PDF 문서에서 폼 필드를 채우고, 폼에서 데이터를 추출하는 등의 작업을 수행할 수 있습니다.
 lastmod: "2023-02-17"
 sitemap:
@@ -89,9 +89,9 @@ PDF 1.7은 데이터와 PDF 폼을 통합하는 두 가지 다른 방법을 지�
 
 Java 라이브러리의 기능을 더 자세히 배우려면 다음 기사를 참조하십시오:
 
-- [Create AcroForm](/pdf/python-net/create-form) - Python으로 처음부터 폼 생성.
-- [Fill AcroForm](/pdf/python-net/fill-form) - PDF 문서에서 양식 필드를 채웁니다.
-- [Extract AcroForm](/pdf/python-net/extract-form) - PDF 문서의 모든 필드 또는 개별 필드에서 값을 가져옵니다.
+- [Create AcroForm](/pdf/ko/python-net/create-form) - Python으로 처음부터 폼 생성.
+- [Fill AcroForm](/pdf/ko/python-net/fill-form) - PDF 문서에서 양식 필드를 채웁니다.
+- [Extract AcroForm](/pdf/ko/python-net/extract-form) - PDF 문서의 모든 필드 또는 개별 필드에서 값을 가져옵니다.
 
 <script type="application/ld+json">
 {

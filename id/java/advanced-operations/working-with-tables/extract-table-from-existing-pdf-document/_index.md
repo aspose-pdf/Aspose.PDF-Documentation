@@ -3,7 +3,7 @@ title: Ekstrak Tabel dari Dokumen PDF yang Ada
 linktitle: Ekstrak Tabel
 type: docs
 weight: 25
-url: id/java/extract-table-from-existing-pdf-document/
+url: /id/java/extract-table-from-existing-pdf-document/
 description: Aspose.PDF untuk Java memungkinkan untuk melakukan berbagai manipulasi dengan tabel yang terdapat dalam dokumen pdf Anda. Anda dapat menambahkan dan mengekstrak tabel dalam dokumen PDF yang ada, merender tabel pada halaman baru, dan lain-lain.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Ajouter une image au PDF dans Node.js
 linktitle: Ajouter une image
 type: docs
 weight: 10
-url: fr/nodejs-cpp/add-image-to-pdf/
+url: /fr/nodejs-cpp/add-image-to-pdf/
 description: Cette section décrit comment ajouter une image à un fichier PDF existant en utilisant Aspose.PDF pour Node.js via C++.
 lastmod: "2023-11-16"
 ---

@@ -3,7 +3,7 @@ title: Menghapus lampiran dari PDF di Node.js
 linktitle: Menghapus lampiran dari PDF yang ada
 type: docs
 weight: 10
-url: id/nodejs-cpp/removing-attachment-from-an-existing-pdf/
+url: /id/nodejs-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF dapat menghapus lampiran dari dokumen PDF Anda. Gunakan lingkungan Node.js untuk menghapus lampiran dalam file PDF dengan Aspose.PDF.
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: متطلبات النظام لـ Aspose.PDF لـ Node.js
 linktitle: متطلبات النظام
 type: docs
 weight: 30
-url: ar/nodejs-cpp/system-requirements/
+url: /ar/nodejs-cpp/system-requirements/
 description: تسرد هذه القسم أنظمة التشغيل المدعومة التي يحتاجها المطور للعمل بنجاح مع Aspose.PDF لـ Node.js عبر C++.
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: Rellenar AcroForms
 linktitle: Rellenar AcroForms
 type: docs
 weight: 20
-url: es/php-java/fill-form/
+url: /es/php-java/fill-form/
 description: Esta sección explica cómo rellenar un campo de formulario en un documento PDF con Aspose.PDF para PHP vía Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Actionsを使用する
 linktitle: Actions
 type: docs
 weight: 20
-url: ja/java/actions/
+url: /ja/java/actions/
 description: このセクションでは、Javaを使用してドキュメントやフォームフィールドにアクションをプログラムで追加する方法を説明します。PDFファイルにハイパーリンクを追加、作成、取得する方法を学びます。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Menggunakan Anotasi Teks untuk PDF
 linktitle: Anotasi Teks
 type: docs
 weight: 10
-url: id/net/text-annotation/
+url: /id/net/text-annotation/
 description: Aspose.PDF untuk .NET memungkinkan Anda untuk Menambahkan, Mengambil, dan Menghapus Anotasi Teks dari dokumen PDF Anda.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ sitemap:
 
 ## Cara Menambahkan Anotasi Teks ke dalam File PDF yang Ada
 
-Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Anotasi Teks adalah anotasi yang dilampirkan pada lokasi tertentu dalam dokumen PDF. Ketika ditutup, anotasi ditampilkan sebagai ikon; ketika dibuka, seharusnya menampilkan jendela pop-up yang berisi teks catatan dalam font dan ukuran yang dipilih oleh pembaca.
 
@@ -126,7 +126,7 @@ Anotasi Popup menampilkan teks dalam jendela popup untuk entri dan pengeditan. I
 
 Ini tidak boleh memiliki aliran penampilan atau tindakan terkait sendiri dan harus diidentifikasi oleh entri Popup dalam kamus anotasi induk.
 
-Potongan kode berikut menunjukkan cara menambahkan [Anotasi Popup](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) di halaman PDF menggunakan contoh menambahkan anotasi [Garis induk](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
+Potongan kode berikut menunjukkan cara menambahkan [Anotasi Popup](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) di halaman PDF menggunakan contoh menambahkan anotasi [Garis induk](/pdf/id/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
 
 ```csharp
 using Aspose.Pdf.Annotations;

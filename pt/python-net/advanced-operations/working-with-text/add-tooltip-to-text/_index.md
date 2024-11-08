@@ -3,7 +3,7 @@ title: Tooltip em PDF usando Python
 linktitle: Tooltip em PDF
 type: docs
 weight: 20
-url: pt/python-net/pdf-tooltip/
+url: /pt/python-net/pdf-tooltip/
 description: Aprenda como adicionar tooltip ao fragmento de texto em PDF usando Python e Aspose.PDF
 lastmod: "2024-02-17"
 sitemap:

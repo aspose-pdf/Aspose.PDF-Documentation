@@ -2,7 +2,7 @@
 title: Tetapkan Hak Istimewa pada File PDF yang Ada
 type: docs
 weight: 50
-url: id/java/set-privileges/
+url: /id/java/set-privileges/
 description: Topik ini menjelaskan cara menetapkan hak istimewa pada file PDF yang ada menggunakan Kelas PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

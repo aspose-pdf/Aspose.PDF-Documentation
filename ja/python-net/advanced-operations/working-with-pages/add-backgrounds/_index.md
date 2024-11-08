@@ -3,7 +3,7 @@ title: PythonでPDFに背景を追加
 linktitle: 背景を追加
 type: docs
 weight: 20
-url: ja/python-net/add-backgrounds/
+url: /ja/python-net/add-backgrounds/
 description: PythonでPDFファイルに背景画像を追加します。BackgroundArtifactクラスを使用します。
 lastmod: "2023-04-17"
 sitemap:

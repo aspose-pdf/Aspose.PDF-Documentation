@@ -3,7 +3,7 @@ title: Обзор поддерживаемых аннотаций
 linktitle: Обзор аннотаций
 type: docs
 weight: 10
-url: ru/net/overview-of-annotations/
+url: /ru/net/overview-of-annotations/
 description: Ознакомьтесь со списком возможных аннотаций, с которыми вы можете работать, используя Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,30 +79,30 @@ sitemap:
 
 |**Тип аннотации**|**Описание**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Text](/pdf/net/text-annotation/)|Текстовая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/net/extra-annotations/)|Аннотации ссылок|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[FreeText](/pdf/net/text-annotation/)|(PDF 1.3) Аннотация свободного текста|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Line](/pdf/net/figures-annotation/)|(PDF 1.3) Линейная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Square](/pdf/net/figures-annotation/)|(PDF 1.3) Квадратная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Circle](/pdf/net/figures-annotation/)|(PDF 1.3) Круглая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Polygon](/pdf/net/figures-annotation/)|(PDF 1.5) Полигональная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/net/figures-annotation/)|(PDF 1.5) Полилинейная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-| [PolyLine](/pdf/net/figures-annotation/) | (PDF 1.5) Аннотация полилинии | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Highlight](/pdf/net/highlights-annotation/) | (PDF 1.3) Аннотация выделения | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Underline](/pdf/net/highlights-annotation/) | (PDF 1.3) Аннотация подчеркивания | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Squiggly](/pdf/net/highlights-annotation/) | (PDF 1.4) Аннотация волнистого подчеркивания | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [StrikeOut](/pdf/net/highlights-annotation/) | (PDF 1.3) Аннотация зачеркивания | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Stamp](/pdf/net/stamping/) | (PDF 1.3) Аннотация печати | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Caret](/pdf/net/extra-annotations/) | (PDF 1.5) Аннотация каретки | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Ink](/pdf/net/figures-annotation/) | (PDF 1.3) Аннотация чернилами | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Popup](/pdf/net/text-annotation/) | (PDF 1.3) Аннотация всплывающего окна | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Popup](/pdf/net/text-annotation/) | (PDF 1.3) Всплывающая аннотация | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Sound](/pdf/net/multimedia-annotation/) | (PDF 1.2) Звуковая аннотация | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Movie](/pdf/net/multimedia-annotation/) | (PDF 1.2) Кинематографическая аннотация | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Widget](/pdf/net/multimedia-annotation/) | (PDF 1.2) Аннотация виджета | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Screen](/pdf/net/multimedia-annotation/) | (PDF 1.5) Экранная аннотация | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Watermark](/pdf/net/sticky-annotations/) | (PDF 1.6) Аннотация водяного знака | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Redact](/pdf/net/extra-annotations/) | (PDF 1.7) Аннотация редакции | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+|[Text](/pdf/ru/net/text-annotation/)|Текстовая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/ru/net/extra-annotations/)|Аннотации ссылок|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[FreeText](/pdf/ru/net/text-annotation/)|(PDF 1.3) Аннотация свободного текста|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Line](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Линейная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Square](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Квадратная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Circle](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Круглая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polygon](/pdf/ru/net/figures-annotation/)|(PDF 1.5) Полигональная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[PolyLine](/pdf/ru/net/figures-annotation/)|(PDF 1.5) Полилинейная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+| [PolyLine](/pdf/ru/net/figures-annotation/) | (PDF 1.5) Аннотация полилинии | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Highlight](/pdf/ru/net/highlights-annotation/) | (PDF 1.3) Аннотация выделения | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Underline](/pdf/ru/net/highlights-annotation/) | (PDF 1.3) Аннотация подчеркивания | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Squiggly](/pdf/ru/net/highlights-annotation/) | (PDF 1.4) Аннотация волнистого подчеркивания | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [StrikeOut](/pdf/ru/net/highlights-annotation/) | (PDF 1.3) Аннотация зачеркивания | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Stamp](/pdf/ru/net/stamping/) | (PDF 1.3) Аннотация печати | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Caret](/pdf/ru/net/extra-annotations/) | (PDF 1.5) Аннотация каретки | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Ink](/pdf/ru/net/figures-annotation/) | (PDF 1.3) Аннотация чернилами | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Popup](/pdf/ru/net/text-annotation/) | (PDF 1.3) Аннотация всплывающего окна | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Popup](/pdf/ru/net/text-annotation/) | (PDF 1.3) Всплывающая аннотация | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Sound](/pdf/ru/net/multimedia-annotation/) | (PDF 1.2) Звуковая аннотация | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Movie](/pdf/ru/net/multimedia-annotation/) | (PDF 1.2) Кинематографическая аннотация | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Widget](/pdf/ru/net/multimedia-annotation/) | (PDF 1.2) Аннотация виджета | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Screen](/pdf/ru/net/multimedia-annotation/) | (PDF 1.5) Экранная аннотация | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Watermark](/pdf/ru/net/sticky-annotations/) | (PDF 1.6) Аннотация водяного знака | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Redact](/pdf/ru/net/extra-annotations/) | (PDF 1.7) Аннотация редакции | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
 
 <script type="application/ld+json">
 {

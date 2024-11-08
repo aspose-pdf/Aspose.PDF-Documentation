@@ -2,7 +2,7 @@
 title: Tambahkan Tanda Tangan di File PDF
 type: docs
 weight: 10
-url: id/java/add-signature-in-pdf/
+url: /id/java/add-signature-in-pdf/
 description: Bagian ini menjelaskan cara bekerja dengan Tanda Tangan dalam File PDF menggunakan kelas PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

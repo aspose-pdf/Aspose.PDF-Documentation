@@ -3,7 +3,7 @@ title: PDF에 텍스트 스탬프 프로그래밍 방식으로 추가
 linktitle: PDF 파일의 텍스트 스탬프
 type: docs
 weight: 20
-url: ko/php-java/text-stamps-in-the-pdf-file/
+url: /ko/php-java/text-stamps-in-the-pdf-file/
 description: PHP로 TextStamp 클래스를 사용하여 PDF 파일에 텍스트 스탬프를 추가합니다.
 lastmod: "2024-06-05"
 sitemap:

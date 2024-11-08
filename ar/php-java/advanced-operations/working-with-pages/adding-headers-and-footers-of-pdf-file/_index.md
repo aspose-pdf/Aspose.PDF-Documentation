@@ -3,7 +3,7 @@ title: إضافة رأس وتذييل إلى ملف PDF
 linktitle: إضافة رأس وتذييل إلى ملف PDF
 type: docs
 weight: 70
-url: ar/php-java/add-headers-and-footers-of-pdf-file/
+url: /ar/php-java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF لـ PHP عبر Java يتيح لك إضافة رأس وتذييل إلى ملف PDF الخاص بك باستخدام فئة TextStamp.
 lastmod: "2024-06-05"
 sitemap:

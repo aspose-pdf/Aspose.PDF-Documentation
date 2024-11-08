@@ -2,7 +2,7 @@
 title: Form Editor
 type: docs
 weight: 40
-url: id/net/plugins/formeditor/
+url: /id/net/plugins/formeditor/
 description: Bagaimana Menambah, Memperbarui, dan Menghapus Bidang Formulir dalam File PDF menggunakan Plugin Aspose.PDF
 lastmod: "2024-01-24"
 draft: false

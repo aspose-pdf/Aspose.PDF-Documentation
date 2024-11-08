@@ -3,7 +3,7 @@ title: Hapus kode JavaScript dari file PDF
 linktitle: Hapus JavaScripts
 type: docs
 weight: 50
-url: id/javascript-cpp/delete-javascripts/
+url: /id/javascript-cpp/delete-javascripts/
 description: Hapus makro JavaScript dari file PDF langsung di Web dengan Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:

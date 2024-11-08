@@ -3,7 +3,7 @@ title: Persyaratan Sistem
 linktitle: Persyaratan Sistem
 type: docs
 weight: 30
-url: id/net/system-requirements/
+url: /id/net/system-requirements/
 description: Bagian ini mencantumkan sistem operasi yang didukung yang dibutuhkan oleh pengembang untuk bekerja dengan sukses dengan Aspose.PDF untuk .NET.
 lastmod: "2023-05-12"
 sitemap:

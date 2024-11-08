@@ -2,7 +2,7 @@
 title: ページプロパティの取得と設定
 type: docs
 weight: 20
-url: ja/cpp/get-and-set-page-properties/
+url: /ja/cpp/get-and-set-page-properties/
 description: C++ライブラリを使用してPDFファイルからページプロパティを取得および設定できます。
 lastmod: "2021-12-09"
 sitemap:

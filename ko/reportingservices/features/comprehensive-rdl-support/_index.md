@@ -2,7 +2,7 @@
 title: Comprehensive RDL Support
 type: docs
 weight: 10
-url: ko/reportingservices/comprehensive-rdl-support/
+url: /ko/reportingservices/comprehensive-rdl-support/
 lastmod: "2021-06-05"
 ---
 

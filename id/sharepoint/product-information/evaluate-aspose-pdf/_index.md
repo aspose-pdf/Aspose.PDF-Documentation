@@ -6,7 +6,7 @@ linktitle: Mengevaluasi
 
 weight: 50
 
-url: id/sharepoint/evaluate-aspose-pdf/
+url: /id/sharepoint/evaluate-aspose-pdf/
 
 lastmod: "2020-12-16"
 

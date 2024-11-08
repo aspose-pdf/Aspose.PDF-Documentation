@@ -2,7 +2,7 @@
 title: Definir Informações do Arquivo PDF em Python
 type: docs
 weight: 90
-url: pt/java/set-pdf-file-information-in-python/
+url: /pt/java/set-pdf-file-information-in-python/
 lastmod: "2021-06-05"
 ---
 

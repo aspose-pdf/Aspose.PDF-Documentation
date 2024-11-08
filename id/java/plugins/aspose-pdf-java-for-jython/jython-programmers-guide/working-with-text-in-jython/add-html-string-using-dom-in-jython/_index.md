@@ -2,7 +2,7 @@
 title: Tambahkan String HTML menggunakan DOM di Jython
 type: docs
 weight: 10
-url: id/java/add-html-string-using-dom-in-jython/
+url: /id/java/add-html-string-using-dom-in-jython/
 lastmod: "2021-06-05"
 ---
 

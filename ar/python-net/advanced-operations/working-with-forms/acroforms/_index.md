@@ -3,7 +3,7 @@ title: العمل مع AcroForms باستخدام بايثون
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ar/python-net/acroforms/
+url: /ar/python-net/acroforms/
 description: مع Aspose.PDF لبايثون يمكنك إنشاء نموذج من البداية، ملء حقل النموذج في مستند PDF، استخراج البيانات من النموذج، إلخ.
 lastmod: "2023-02-17"
 sitemap:
@@ -89,9 +89,9 @@ sitemap:
 
 لمزيد من التعلم التفصيلي لإمكانيات مكتبة Java، انظر المقالات التالية:
 
-- [إنشاء AcroForm](/pdf/python-net/create-form) - إنشاء نموذج من البداية باستخدام Python.
-- [ملء AcroForm](/pdf/python-net/fill-form) - ملء حقل النموذج في مستند PDF الخاص بك.
-- [استخراج AcroForm](/pdf/python-net/extract-form) - الحصول على قيمة من جميع الحقول أو حقل فردي من مستند PDF.
+- [إنشاء AcroForm](/pdf/ar/python-net/create-form) - إنشاء نموذج من البداية باستخدام Python.
+- [ملء AcroForm](/pdf/ar/python-net/fill-form) - ملء حقل النموذج في مستند PDF الخاص بك.
+- [استخراج AcroForm](/pdf/ar/python-net/extract-form) - الحصول على قيمة من جميع الحقول أو حقل فردي من مستند PDF.
 
 <script type="application/ld+json">
 {

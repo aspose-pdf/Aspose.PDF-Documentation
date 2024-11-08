@@ -2,7 +2,7 @@
 title: Pythonでページプロパティを取得する
 type: docs
 weight: 50
-url: ja/java/get-page-properties-in-python/
+url: /ja/java/get-page-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Menambahkan Anotasi ke File PDF yang Ada
 type: docs
 weight: 80
-url: id/java/adding-annotations-to-existing-pdf-file/
+url: /id/java/adding-annotations-to-existing-pdf-file/
 description: Bagian ini menjelaskan cara menambahkan Anotasi ke file PDF yang ada dengan Aspose.PDF Facades.
 lastmod: "2021-06-30"
 sitemap:

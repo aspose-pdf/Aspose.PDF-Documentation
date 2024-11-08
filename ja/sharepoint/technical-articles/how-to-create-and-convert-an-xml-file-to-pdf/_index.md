@@ -2,7 +2,7 @@
 title: XMLファイルを作成しPDFに変換する方法
 type: docs
 weight: 30
-url: ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
+url: /ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint APIはXMLファイルをPDF形式に作成および変換することができます。
 ---
@@ -20,13 +20,13 @@ Aspose.PDF for SharePointは、受賞歴のあるAspose.PDF for .NETコンポー
 ステップバイステップで、この記事はXMLファイルを作成しPDFに変換するプロセスを案内します：
 
 
-1. [XMLファイルを作成する](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
-2. [PDFテンプレートを作成する](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
-3. [XMLテンプレートを読み込む](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
-4. [ソースパスを指定する](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
-5. [ファイルプロパティを指定する](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
-6. [PDFにファイルをエクスポートする](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
-7. [PDFファイルを保存する](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
+1. [XMLファイルを作成する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
+2. [PDFテンプレートを作成する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
+3. [XMLテンプレートを読み込む](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
+4. [ソースパスを指定する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
+5. [ファイルプロパティを指定する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
+6. [PDFにファイルをエクスポートする](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
+7. [PDFファイルを保存する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
 
 #### **ステップ1: XMLファイルを作成する**
 まず、Aspose.PDF for .NET ドキュメントオブジェクトモデルに基づいてXMLファイルを作成します。
@@ -67,7 +67,7 @@ Aspose.PDF for .NET DOMによると、PDFドキュメントはセクションオ
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 #### **ステップ3: XMLテンプレートを読み込む**
 
-テンプレートが作成されたら、[XMLファイル](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)を読み込みます。
+テンプレートが作成されたら、[XMLファイル](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)を読み込みます。
 1. PDFテンプレートページで、**新しいアイテムを追加**を選択します。
 
 

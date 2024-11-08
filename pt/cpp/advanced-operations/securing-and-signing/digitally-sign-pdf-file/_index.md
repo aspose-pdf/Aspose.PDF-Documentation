@@ -3,7 +3,7 @@ title: Como assinar digitalmente PDF
 linktitle: Assinar digitalmente PDF
 type: docs
 weight: 10
-url: pt/cpp/digitally-sign-pdf-file/
+url: /pt/cpp/digitally-sign-pdf-file/
 description: Assine digitalmente documentos PDF usando C++. Verifique ou valide PDFs assinados digitalmente usando C++.
 lastmod: "2021-12-15"
 sitemap:

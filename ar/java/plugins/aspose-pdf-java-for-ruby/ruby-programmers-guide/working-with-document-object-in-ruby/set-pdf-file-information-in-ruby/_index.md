@@ -2,7 +2,7 @@
 title: تعيين معلومات ملف PDF في روبي
 type: docs
 weight: 120
-url: ar/java/set-pdf-file-information-in-ruby/
+url: /ar/java/set-pdf-file-information-in-ruby/
 lastmod: "2021-06-05"
 ---
 

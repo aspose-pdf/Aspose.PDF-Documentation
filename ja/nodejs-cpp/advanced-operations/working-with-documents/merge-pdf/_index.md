@@ -3,7 +3,7 @@ title: Node.jsでPDFをマージする方法
 linktitle: PDFファイルをマージ
 type: docs
 weight: 20
-url: ja/nodejs-cpp/merge-pdf/
+url: /ja/nodejs-cpp/merge-pdf/
 description: このページでは、Aspose.PDF for Node.js via C++を使用して、PDFドキュメントを単一のPDFファイルにマージする方法を説明します。
 lastmod: "2023-11-16"
 sitemap:

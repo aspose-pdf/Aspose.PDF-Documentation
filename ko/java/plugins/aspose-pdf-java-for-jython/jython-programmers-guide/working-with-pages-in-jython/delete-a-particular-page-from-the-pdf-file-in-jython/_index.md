@@ -2,7 +2,7 @@
 title: Delete a Particular Page from the PDF File in jython
 type: docs
 weight: 20
-url: ko/java/delete-a-particular-page-from-the-pdf-file-in-jython/
+url: /ko/java/delete-a-particular-page-from-the-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

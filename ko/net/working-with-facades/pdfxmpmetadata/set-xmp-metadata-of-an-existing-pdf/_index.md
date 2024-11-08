@@ -2,7 +2,7 @@
 title: 기존 PDF의 XMP 메타데이터 설정
 type: docs
 weight: 20
-url: ko/net/set-xmp-metadata-of-an-existing-pdf/
+url: /ko/net/set-xmp-metadata-of-an-existing-pdf/
 description: 이 섹션에서는 Aspose.PDF Facades로 기존 PDF의 XMP 메타데이터를 설정하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

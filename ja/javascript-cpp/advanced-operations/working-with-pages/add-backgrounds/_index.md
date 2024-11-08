@@ -3,7 +3,7 @@ title: JavaScriptを介してC++でPDFに背景を追加する
 linktitle: 背景を追加
 type: docs
 weight: 10
-url: ja/javascript-cpp/add-backgrounds/
+url: /ja/javascript-cpp/add-backgrounds/
 description: JavaScriptを介してC++でPDFファイルに背景画像を追加します。
 lastmod: "2023-02-17"
 sitemap:

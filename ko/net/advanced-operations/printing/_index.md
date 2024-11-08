@@ -3,7 +3,7 @@ title: PDF 문서 인쇄
 linktitle: 문서 인쇄
 type: docs
 weight: 160
-url: ko/net/printing-document/
+url: /ko/net/printing-document/
 description: C#을 이용한 PDF 인쇄 기술과 C# PDF 프린터 설정 및 .NET 프로젝트 팁에 대한 안내
 lastmod: "2022-02-17"
 sitemap:
@@ -80,11 +80,11 @@ aliases:
 
 ## C#에서 PDF 파일 인쇄 방법
 
-- [.NET Framework에서 PDF 인쇄](/pdf/net/printing-pdf-in-net-framework/)
-- [XPS 프린터로 PDF 인쇄 (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [PDF를 PostScript로 변환, 인쇄 작업 상태 확인](/pdf/net/pdf-to-postscript-conversion/)
-- [.NET Core에서 PDF 인쇄](/pdf/net/print-dotnetcore/)
-- [WPF 애플리케이션에서 PDF 문서 인쇄](/pdf/net/print-pdf-document-in-wpf-application/)
+- [.NET Framework에서 PDF 인쇄](/pdf/ko/net/printing-pdf-in-net-framework/)
+- [XPS 프린터로 PDF 인쇄 (Facades)](/pdf/ko/net/printing-pdf-to-an-xps-printer-facades/)
+- [PDF를 PostScript로 변환, 인쇄 작업 상태 확인](/pdf/ko/net/pdf-to-postscript-conversion/)
+- [.NET Core에서 PDF 인쇄](/pdf/ko/net/print-dotnetcore/)
+- [WPF 애플리케이션에서 PDF 문서 인쇄](/pdf/ko/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

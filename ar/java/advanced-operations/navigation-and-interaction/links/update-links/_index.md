@@ -3,7 +3,7 @@ title: تحديث الروابط في ملف PDF
 linktitle: تحديث الروابط
 type: docs
 weight: 20
-url: ar/java/update-links/
+url: /ar/java/update-links/
 description: تحديث الروابط في ملف PDF برمجياً. يتناول هذا الدليل كيفية تحديث الروابط في ملف PDF باستخدام لغة Java.
 lastmod: "2021-06-05"
 sitemap:

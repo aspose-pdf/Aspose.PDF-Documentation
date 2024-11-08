@@ -3,7 +3,7 @@ title: Aspose.PDFの主な特徴
 linktitle: 主な特徴
 type: docs
 weight: 80
-url: ja/cpp/key-features/
+url: /ja/cpp/key-features/
 description: Aspose.PDF for C++はその一般的な機能を示しています。このページでは、サポートされているPDFバージョンや、テキスト、画像、注釈、文書などに対して行えるすべての操作について説明します。
 lastmod: "2021-11-08"
 sitemap:

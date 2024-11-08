@@ -3,7 +3,7 @@ title: Converter PDF para EPUB, TeX, Texto, XPS em Node.js
 linktitle: Converter PDF para outros formatos
 type: docs
 weight: 90
-url: pt/nodejs-cpp/convert-pdf-to-other-files/
+url: /pt/nodejs-cpp/convert-pdf-to-other-files/
 lastmod: "2023-11-16"
 keywords: converter, PDF, EPUB, TeX, Texto, XPS, Node.js
 description: Este tópico mostra como converter arquivos PDF para outros formatos de arquivo como EPUB, LaTeX, Texto, XPS etc no ambiente Node.js.

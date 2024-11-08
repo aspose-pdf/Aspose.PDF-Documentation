@@ -3,7 +3,7 @@ title: Otimizar PDF usando Aspose.PDF para Node.js via C++
 linktitle: Otimizar Arquivo PDF
 type: docs
 weight: 10
-url: pt/nodejs-cpp/optimize-pdf/
+url: /pt/nodejs-cpp/optimize-pdf/
 description: Otimizar e comprimir arquivos PDF para visualização rápida na web usando o ambiente Node.js.
 lastmod: "2023-11-16"
 sitemap:

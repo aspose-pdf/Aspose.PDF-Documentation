@@ -10,7 +10,7 @@ type: docs
 
 weight: 120
 
-url: ko/jasperreports/
+url: /ko/jasperreports/
 
 is_root: true
 
@@ -48,23 +48,23 @@ Aspose.PDF for JasperReports는 JasperReports 및 JasperServer에서 Portable Do
 
 
 
-- [Aspose.PDF for JasperReports 제품 개요](/pdf/jasperreports/product-overview/)
+- [Aspose.PDF for JasperReports 제품 개요](/pdf/ko/jasperreports/product-overview/)
 
-- [Aspose.PDF for JasperReports 지원 파일 형식](/pdf/jasperreports/supported-file-formats/)
+- [Aspose.PDF for JasperReports 지원 파일 형식](/pdf/ko/jasperreports/supported-file-formats/)
 
 
-- [Aspose.PDF for JasperReports 기능 투어](/pdf/jasperreports/feature-tour/)
+- [Aspose.PDF for JasperReports 기능 투어](/pdf/ko/jasperreports/feature-tour/)
 
 - [Aspose.PDF for JasperReports 릴리스 노트](https://releases.aspose.com/pdf/jassperreport/release-notes/)
 
 - [Aspose.PDF for JasperReports 다운로드](https://releases.aspose.com/pdf/jassperreport/)
 
-- [Aspose.PDF for JasperReports 샘플 보고서 갤러리](/pdf/jasperreports/sample-reports-gallery/)
+- [Aspose.PDF for JasperReports 샘플 보고서 갤러리](/pdf/ko/jasperreports/sample-reports-gallery/)
 
-- [Aspose.PDF for JasperReports 설치](/pdf/jasperreports/installation/)
+- [Aspose.PDF for JasperReports 설치](/pdf/ko/jasperreports/installation/)
 
-- [Aspose.PDF for JasperReports 라이선스](/pdf/jasperreports/licensing/)
+- [Aspose.PDF for JasperReports 라이선스](/pdf/ko/jasperreports/licensing/)
 
-- [Aspose.Pdf 평가](/pdf/jasperreports/evaluate-aspose-pdf/)
+- [Aspose.Pdf 평가](/pdf/ko/jasperreports/evaluate-aspose-pdf/)
 
-- [Aspose.PDF for JasperReports API 제한사항](/pdf/jasperreports/api-limitations/)
+- [Aspose.PDF for JasperReports API 제한사항](/pdf/ko/jasperreports/api-limitations/)

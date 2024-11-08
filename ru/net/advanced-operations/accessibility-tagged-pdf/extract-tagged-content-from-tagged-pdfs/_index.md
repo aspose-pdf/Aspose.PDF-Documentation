@@ -3,7 +3,7 @@ title: Извлечение тегированного содержимого и
 linktitle: Извлечение тегированного содержимого
 type: docs
 weight: 20
-url: ru/net/extract-tagged-content-from-tagged-pdfs/
+url: /ru/net/extract-tagged-content-from-tagged-pdfs/
 description: Эта статья объясняет, как извлечь тегированное содержимое из PDF документа с использованием Aspose.PDF для .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 В этой статье вы узнаете, как извлекать тегированный контент из PDF-документа с использованием C#.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Получение тегированного содержимого PDF
 

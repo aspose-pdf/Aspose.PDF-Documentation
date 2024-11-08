@@ -2,7 +2,7 @@
 title: Setel Metadata XMP dari PDF yang ada - fasad
 type: docs
 weight: 20
-url: id/java/set-xmp-metadata/
+url: /id/java/set-xmp-metadata/
 description: Bagian ini menjelaskan cara menyetel metadata XMP dengan Aspose.PDF Facades menggunakan Kelas PdfXmpMetadata.
 lastmod: "2021-06-05"
 sitemap:

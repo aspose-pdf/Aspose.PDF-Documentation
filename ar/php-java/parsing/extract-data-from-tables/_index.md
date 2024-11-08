@@ -3,7 +3,7 @@ title: استخراج بيانات الجدول من PDF
 linktitle: استخراج بيانات الجدول
 type: docs
 weight: 40
-url: ar/php-java/extract-data-from-table-in-pdf/
+url: /ar/php-java/extract-data-from-table-in-pdf/
 description: تعلم كيفية استخراج الجداول من PDF باستخدام Aspose.PDF لـ PHP
 lastmod: "2021-05-20"
 sitemap:
@@ -85,7 +85,7 @@ $document->close();
 ## استخراج بيانات الجدول من PDF وتخزينها في ملف CSV
 
 يوضح المثال التالي كيفية استخراج الجدول وتخزينه كملف CSV.  
-لرؤية كيفية تحويل PDF إلى جدول بيانات Excel، يرجى الرجوع إلى مقالة [تحويل PDF إلى Excel](/pdf/php-java/convert-pdf-to-excel/).
+لرؤية كيفية تحويل PDF إلى جدول بيانات Excel، يرجى الرجوع إلى مقالة [تحويل PDF إلى Excel](/pdf/ar/php-java/convert-pdf-to-excel/).
 
 ```php
 

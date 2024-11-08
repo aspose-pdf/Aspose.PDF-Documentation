@@ -2,7 +2,7 @@
 title: OneClick PDF Document Generator
 type: docs
 weight: 10
-url: ar/net/oneclick-pdf-document-generator/
+url: /ar/net/oneclick-pdf-document-generator/
 description: تعلم كيفية استخدام مولد مستندات PDF بنقرة واحدة من Aspose.PDF
 lastmod: "2021-06-05"
 sitemap:

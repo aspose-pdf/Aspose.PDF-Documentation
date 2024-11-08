@@ -3,7 +3,7 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: ru/python-net/get-started/
+url: /ru/python-net/get-started/
 description: Этот раздел описывает основные принципы работы Aspose.PDF для Python через .NET. Библиотека Python поддерживает широкий спектр функций.
 is_node: true
 lastmod: "2022-12-20"   
@@ -38,13 +38,13 @@ PDF был создан Adobe в 1990-х годах для достижения 
 
 ## Функции конвертации
 
-- [Конвертация PDF в Word, Excel и PowerPoint](/pdf/python-net/convert-pdf-to-word/).
-- [Конвертация PDF в форматы изображений](/pdf/python-net/convert-pdf-to-images-format/).
-- [Конвертация PDF в формат HTML и обратно](/pdf//python-net/convert-pdf-to-html/).
-- [Конвертация PDF в EPUB, текст, XPS и др.](/pdf/python-net/convert-pdf-to-other-files/).
+- [Конвертация PDF в Word, Excel и PowerPoint](/pdf/ru/python-net/convert-pdf-to-word/).
+- [Конвертация PDF в форматы изображений](/pdf/ru/python-net/convert-pdf-to-images-format/).
+- [Конвертация PDF в формат HTML и обратно](/pdf/ru//python-net/convert-pdf-to-html/).
+- [Конвертация PDF в EPUB, текст, XPS и др.](/pdf/ru/python-net/convert-pdf-to-other-files/).
 - Конвертация EPUB, Markdown, текст, XPS, PostScript, XML, LaTex в PDF
 
 ### Узнайте больше о:
 
-- [Пример "Hello, World" на Python](/pdf/python-net/hello-world-example/)
-- [Сложный PDF](/pdf/python-net/complex-pdf-example/)
+- [Пример "Hello, World" на Python](/pdf/ru/python-net/hello-world-example/)
+- [Сложный PDF](/pdf/ru/python-net/complex-pdf-example/)

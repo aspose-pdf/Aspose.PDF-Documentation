@@ -2,7 +2,7 @@
 title: XMP 메타데이터
 type: docs
 weight: 80
-url: ko/reportingservices/xmp-metadata/
+url: /ko/reportingservices/xmp-metadata/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Posting AcroForm Data
 linktitle: Posting AcroForm
 type: docs
 weight: 50
-url: ja/net/posting-acroform-data/
+url: /ja/net/posting-acroform-data/
 description: Aspose.PDF for .NETのAspose.Pdf.Facades名前空間を使用して、フォームデータをXMLファイルにインポートおよびエクスポートできます。
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ AcroFormはPDFドキュメントの重要なタイプです。[Aspose.Pdf.Facade
 
 ## 実装の詳細
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリと一緒に動作します。
+次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリと一緒に動作します。
 
 この記事では、[Aspose.Pdf.Facades 名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)を使用してAcroFormを作成しようとしました。
 この記事では、[Aspose.Pdf.Facades名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)を使用してAcroFormを作成しようと試みました。

@@ -3,7 +3,7 @@ title: تحويل PDF إلى EPUB، TeX، نص، XPS في JavaScript
 linktitle: تحويل PDF إلى صيغ أخرى
 type: docs
 weight: 90
-url: ar/javascript-cpp/convert-pdf-to-other-files/
+url: /ar/javascript-cpp/convert-pdf-to-other-files/
 lastmod: "2023-11-01"
 keywords: تحويل، PDF، EPUB، TeX، نص، XPS، JavaScript
 description: يوضح هذا الموضوع كيفية تحويل ملف PDF إلى صيغ ملفات أخرى مثل EPUB، LaTeX، نص، XPS وغيرها باستخدام JavaScript أو JavaScript.

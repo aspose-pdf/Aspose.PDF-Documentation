@@ -2,7 +2,7 @@
 title: Проверка Подписи в PDF Файле
 type: docs
 weight: 30
-url: ru/java/verify-signature-in-pdf/
+url: /ru/java/verify-signature-in-pdf/
 description: Этот раздел объясняет, как работать с подписью в PDF файле с использованием класса PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## Проверка, Подписан ли PDF Файл с использованием Подписи
 
-Чтобы проверить, подписан ли PDF файл, используйте метод VerifySigned класса [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature). Этот метод требует имя подписи и возвращает true, если PDF подписан с использованием этого имени подписи. Также возможно проверить, что [PDF подписан](/pdf/java/working-with-signature-in-a-pdf-file/), без проверки, какой именно подписью он подписан.
+Чтобы проверить, подписан ли PDF файл, используйте метод VerifySigned класса [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature). Этот метод требует имя подписи и возвращает true, если PDF подписан с использованием этого имени подписи. Также возможно проверить, что [PDF подписан](/pdf/ru/java/working-with-signature-in-a-pdf-file/), без проверки, какой именно подписью он подписан.
 
 ### Проверка, что PDF Подписан Данной Подписью
 

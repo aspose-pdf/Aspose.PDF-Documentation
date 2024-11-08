@@ -3,7 +3,7 @@ title: إضافة علامة مائية إلى PDF باستخدام بايثون
 linktitle: إضافة علامة مائية
 type: docs
 weight: 40
-url: ar/python-net/add-watermarks/
+url: /ar/python-net/add-watermarks/
 description: تشرح هذه المقالة ميزات العمل مع القطع الأثرية والحصول على العلامات المائية في ملفات PDF باستخدام البرمجة بلغة بايثون.
 lastmod: "2023-04-17"
 sitemap:

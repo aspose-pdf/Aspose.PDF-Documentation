@@ -3,7 +3,7 @@ title: إزالة الجداول من ملف PDF موجود
 linktitle: إزالة الجداول
 type: docs
 weight: 50
-url: ar/python-net/remove-tables-from-existing-pdf/
+url: /ar/python-net/remove-tables-from-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

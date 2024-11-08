@@ -3,7 +3,7 @@ title: PDF 병합 프로그래밍
 linktitle: PDF 파일 병합
 type: docs
 weight: 50
-url: ko/java/merge-pdf-documents/
+url: /ko/java/merge-pdf-documents/
 description: 이 페이지는 Java를 사용하여 PDF 문서를 하나의 PDF 파일로 병합하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 ---

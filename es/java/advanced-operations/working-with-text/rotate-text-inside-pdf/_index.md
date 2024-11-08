@@ -3,7 +3,7 @@ title: Rotar Texto Dentro de PDF
 linktitle: Rotar Texto Dentro de PDF
 type: docs
 weight: 50
-url: es/java/rotate-text-inside-pdf/
+url: /es/java/rotate-text-inside-pdf/
 description: Aprenda diferentes maneras de rotar texto en un PDF. Aspose.PDF le permite rotar texto a cualquier ángulo, rotar un fragmento de texto o un párrafo completo.
 lastmod: "2021-06-05"
 sitemap:

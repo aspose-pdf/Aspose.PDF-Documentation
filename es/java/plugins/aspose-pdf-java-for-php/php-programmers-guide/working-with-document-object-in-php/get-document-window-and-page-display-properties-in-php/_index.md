@@ -2,7 +2,7 @@
 title: Obtener Propiedades de Ventana de Documento y Visualización de Página en PHP
 type: docs
 weight: 30
-url: es/java/get-document-window-and-page-display-properties-in-php/
+url: /es/java/get-document-window-and-page-display-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Definir Nome de Fonte Padrão usando C++
 linktitle: Definir Nome de Fonte Padrão
 type: docs
 weight: 90
-url: pt/cpp/set-default-font-name/
+url: /pt/cpp/set-default-font-name/
 description: Esta seção descreve como definir o nome da fonte padrão usando a biblioteca C++.
 lastmod: "2021-12-18"
 ---

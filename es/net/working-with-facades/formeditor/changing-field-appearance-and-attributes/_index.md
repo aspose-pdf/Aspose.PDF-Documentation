@@ -2,7 +2,7 @@
 title: Apariencia y atributos del campo
 type: docs
 weight: 20
-url: es/net/changing-field-appearance-and-attributes/
+url: /es/net/changing-field-appearance-and-attributes/
 description: Esta sección explica cómo puede cambiar la apariencia y los atributos del campo con la clase FormEditor.
 lastmod: "2021-06-05"
 draft: false

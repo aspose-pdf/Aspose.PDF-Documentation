@@ -3,7 +3,7 @@ title: Cara Membuat PDF menggunakan Python
 linktitle: Buat Dokumen PDF
 type: docs
 weight: 10
-url: id/python-net/create-pdf-document/
+url: /id/python-net/create-pdf-document/
 description: Buat dan format Dokumen PDF dengan Aspose.PDF untuk Python via .NET.
 lastmod: "2023-04-12"
 sitemap:

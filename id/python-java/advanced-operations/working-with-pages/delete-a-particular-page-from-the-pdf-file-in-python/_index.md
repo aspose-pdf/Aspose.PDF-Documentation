@@ -2,7 +2,7 @@
 title: Hapus Halaman Tertentu dari File PDF di Python
 type: docs
 weight: 20
-url: id/python-java/delete-a-particular-page-from-the-pdf-file-in-python/
+url: /id/python-java/delete-a-particular-page-from-the-pdf-file-in-python/
 ---
 
 Untuk menghapus Halaman Tertentu dari dokumen PDF menggunakan **Aspose.PDF Java untuk Python**, cukup panggil kelas **DeletePage**.

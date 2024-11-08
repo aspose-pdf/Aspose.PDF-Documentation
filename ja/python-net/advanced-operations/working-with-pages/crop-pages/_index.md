@@ -3,7 +3,7 @@ title: PythonでプログラムによるPDFページのトリミング
 linktitle: ページをトリミング
 type: docs
 weight: 70
-url: ja/python-net/crop-pages/
+url: /ja/python-net/crop-pages/
 description: Aspose.PDF for Python via .NETを使用して、幅、高さ、裁ち落とし、トリムボックスなどのページプロパティを取得できます。
 lastmod: "2023-04-17"
 sitemap:

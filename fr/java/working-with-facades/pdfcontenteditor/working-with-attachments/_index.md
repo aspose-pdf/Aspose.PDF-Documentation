@@ -2,7 +2,7 @@
 title: Travailler avec les Pièces Jointes
 type: docs
 weight: 50
-url: fr/java/working-with-attachments/
+url: /fr/java/working-with-attachments/
 description: Cette section explique comment travailler avec des pièces jointes dans votre PDF avec Aspose.PDF Facades - un ensemble d'outils pour les opérations populaires avec PDF.
 lastmod: "2021-06-24"
 sitemap:

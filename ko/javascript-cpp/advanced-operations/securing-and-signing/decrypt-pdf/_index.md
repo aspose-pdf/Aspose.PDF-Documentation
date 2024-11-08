@@ -3,7 +3,7 @@ title: JavaScript를 사용하여 PDF 복호화
 linktitle: PDF 파일 복호화
 type: docs
 weight: 40
-url: ko/javascript-cpp/decrypt-pdf/
+url: /ko/javascript-cpp/decrypt-pdf/
 description: C++를 통해 JavaScript용 Aspose.PDF로 PDF 파일 복호화.
 lastmod: "2022-12-15"
 sitemap:

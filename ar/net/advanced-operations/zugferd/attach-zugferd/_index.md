@@ -3,7 +3,7 @@ title: إنشاء PDF/3-A متوافق مع PDF وإرفاق فاتورة ZUGFeR
 linktitle: إرفاق ZUGFeRD بـ PDF
 type: docs
 weight: 10
-url: ar/net/attach-zugferd/
+url: /ar/net/attach-zugferd/
 description: تعرف على كيفية توليد مستند PDF مع ZUGFeRD في Aspose.PDF لـ .NET
 lastmod: "2023-11-22"
 sitemap:
@@ -13,7 +13,7 @@ sitemap:
 
 ## إرفاق ZUGFeRD بـ PDF
 
-الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 نوصي باتباع الخطوات التالية لإرفاق ZUGFeRD بـ PDF:
 

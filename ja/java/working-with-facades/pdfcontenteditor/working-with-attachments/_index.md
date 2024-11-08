@@ -2,7 +2,7 @@
 title: 添付ファイルの操作
 type: docs
 weight: 50
-url: ja/java/working-with-attachments/
+url: /ja/java/working-with-attachments/
 description: このセクションでは、Aspose.PDF Facades を使用して PDF 内の添付ファイルを操作する方法を説明します。これは、PDF に対する一般的な操作のためのツールセットです。
 lastmod: "2021-06-24"
 sitemap:

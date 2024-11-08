@@ -2,7 +2,7 @@
 title: Establecer Privilegios en un Archivo PDF Existente
 type: docs
 weight: 50
-url: es/java/set-privileges/
+url: /es/java/set-privileges/
 description: Este tema explica cómo establecer privilegios en un archivo PDF existente utilizando la Clase PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

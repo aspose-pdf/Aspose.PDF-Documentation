@@ -3,7 +3,7 @@ title: Работа с таблицами в PDF
 linktitle: Работа с таблицами
 type: docs
 weight: 50
-url: ru/java/working-with-tables/
+url: /ru/java/working-with-tables/
 description: Этот раздел описывает, как добавлять и извлекать таблицу, как манипулировать и интегрировать таблицу с использованием Java-библиотеки.
 lastmod: "2021-06-05"
 sitemap:
@@ -20,7 +20,7 @@ sitemap:
 
 Вы можете сделать следующее:
 
-- [Создать или добавить таблицу в существующий PDF-документ](/pdf/java/add-table-in-existing-pdf-document/) - создайте таблицу в PDF-файле с объединением столбцов или строк, учитывая границы, отступы и поля.
-- [Извлечь таблицу из существующего PDF-документа](/pdf/java/extract-table-from-existing-pdf-document/) - вы можете извлечь таблицу из PDF-файла или извлечь границу таблицы как изображение.
-- [Манипулировать таблицами в существующем PDF](/pdf/java/manipulate-tables-in-existing-pdf/) - манипулируйте таблицами в вашем PDF с использованием TableAbsorber.
-- [Удалить таблицы из существующего PDF](/pdf/java/remove-tables-from-existing-pdf/) - удалите таблицу или несколько таблиц из PDF-документа.
+- [Создать или добавить таблицу в существующий PDF-документ](/pdf/ru/java/add-table-in-existing-pdf-document/) - создайте таблицу в PDF-файле с объединением столбцов или строк, учитывая границы, отступы и поля.
+- [Извлечь таблицу из существующего PDF-документа](/pdf/ru/java/extract-table-from-existing-pdf-document/) - вы можете извлечь таблицу из PDF-файла или извлечь границу таблицы как изображение.
+- [Манипулировать таблицами в существующем PDF](/pdf/ru/java/manipulate-tables-in-existing-pdf/) - манипулируйте таблицами в вашем PDF с использованием TableAbsorber.
+- [Удалить таблицы из существующего PDF](/pdf/ru/java/remove-tables-from-existing-pdf/) - удалите таблицу или несколько таблиц из PDF-документа.

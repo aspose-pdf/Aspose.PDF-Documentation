@@ -3,7 +3,7 @@ title: C#를 사용하여 PDF에 텍스트 추가
 linktitle: PDF에 텍스트 추가
 type: docs
 weight: 10
-url: ko/net/add-text-to-pdf-file/
+url: /ko/net/add-text-to-pdf-file/
 description: 이 문서는 Aspose.PDF에서 텍스트 작업의 다양한 측면을 설명합니다. PDF에 텍스트 추가, HTML 조각 추가 또는 사용자 지정 OTF 폰트 사용 방법을 배워보세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ aliases:
     "description": "이 문서는 Aspose.PDF에서 텍스트 작업의 다양한 측면을 설명합니다. PDF에 텍스트 추가, HTML 조각 추가 또는 사용자 지정 OTF 폰트 사용 방법을 배워보세요."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 기존 PDF 파일에 텍스트를 추가하려면:
 

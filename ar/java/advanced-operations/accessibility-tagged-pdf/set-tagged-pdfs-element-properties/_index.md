@@ -3,7 +3,7 @@ title: تعيين خصائص عناصر الهيكل في PDF الموسوم
 linktitle: تعيين خصائص عناصر الهيكل
 type: docs
 weight: 30
-url: ar/java/set-tagged-pdfs-element-properties/
+url: /ar/java/set-tagged-pdfs-element-properties/
 description: مع Aspose.PDF for Java، يمكنك تعيين خصائص مختلفة لعناصر الهيكل. هناك تعيين عناصر هيكل النص، تعيين عناصر الهيكل المضمنة، إضافة عنصر هيكل إلى العناصر وما إلى ذلك.
 lastmod: "2021-06-05"
 sitemap:

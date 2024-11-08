@@ -4,7 +4,7 @@ title: Aspose.PDF의 XML 스키마
 linktitle: 지원되는 XML 스키마
 type: docs
 weight: 10
-url: ko/cpp/supported-xml-schema/
+url: /ko/cpp/supported-xml-schema/
 description: 이 문서는 Aspose.PDF for C++에서 XML 문서 작업을 위한 XML 스키마를 설명합니다.
 lastmod: "2022-01-31"
 sitemap:

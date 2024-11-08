@@ -2,7 +2,7 @@
 title: Informations de Débogage
 type: docs
 weight: 90
-url: fr/reportingservices/debug-information/
+url: /fr/reportingservices/debug-information/
 lastmod: "2021-06-05"
 ---
 

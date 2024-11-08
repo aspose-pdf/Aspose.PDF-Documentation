@@ -3,7 +3,7 @@ title: حفظ مستند PDF باستخدام C++
 linktitle: حفظ
 type: docs
 weight: 30
-url: ar/cpp/save-pdf-document/
+url: /ar/cpp/save-pdf-document/
 description: تعلم كيفية حفظ ملف PDF باستخدام مكتبة Aspose.PDF لـ C++.
 lastmod: "2021-11-01"
 sitemap:

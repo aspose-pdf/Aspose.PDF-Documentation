@@ -2,7 +2,7 @@
 title: Modificar Anotaciones en su PDF 
 type: docs
 weight: 50
-url: es/net/modify-annotations/
+url: /es/net/modify-annotations/
 description: Esta sección explica cómo modificar anotaciones de un archivo PDF a XFDF con Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:
@@ -53,4 +53,4 @@ El segundo método te permite eliminar todas las anotaciones de un tipo especifi
 
 ## See also
 
-Intenta comparar y encontrar una forma de trabajar con anotaciones que te convenga. Vamos a aprender la sección de [Anotaciones de PDF](/pdf/net/annotations/).
+Intenta comparar y encontrar una forma de trabajar con anotaciones que te convenga. Vamos a aprender la sección de [Anotaciones de PDF](/pdf/es/net/annotations/).

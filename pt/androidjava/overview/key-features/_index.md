@@ -3,7 +3,7 @@ title: Funcionalidades Principais do Aspose.PDF
 linktitle: Funcionalidades Principais
 type: docs
 weight: 20
-url: pt/androidjava/key-features/
+url: /pt/androidjava/key-features/
 description: Aspose.PDF para Android via Java mostra as principais funcionalidades no trabalho com documentos PDF.
 lastmod: "2021-06-05"
 sitemap:

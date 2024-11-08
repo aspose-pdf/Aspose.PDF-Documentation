@@ -3,7 +3,7 @@ title: PDF 문서 포맷팅
 linktitle: PDF 문서 포맷팅
 type: docs
 weight: 20
-url: ko/php-java/formatting-pdf-document/
+url: /ko/php-java/formatting-pdf-document/
 description: PHP를 통해 Java로 Aspose.PDF를 사용하여 PDF 문서를 포맷합니다. 작업을 해결하기 위해 다음 코드 스니펫을 사용하십시오.
 lastmod: "2024-06-05"
 ---

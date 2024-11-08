@@ -2,7 +2,7 @@
 title: Memipihkan Semua Bidang dalam File PDF yang Ada (facades)
 type: docs
 weight: 30
-url: id/java/flatten-all-fields/
+url: /id/java/flatten-all-fields/
 description: Bagian ini menjelaskan cara memipihkan semua Bidang dengan Aspose.PDF Facades menggunakan Kelas Form.
 lastmod: "2021-06-05"
 sitemap:

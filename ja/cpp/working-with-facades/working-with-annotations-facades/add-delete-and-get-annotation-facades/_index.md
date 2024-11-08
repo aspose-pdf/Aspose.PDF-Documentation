@@ -2,7 +2,7 @@
 title: 追加、削除、および取得注釈 - ファサード
 type: docs
 weight: 10
-url: ja/cpp/add-delete-and-get-annotation-facades/
+url: /ja/cpp/add-delete-and-get-annotation-facades/
 ---
 
 ## <ins>**既存のPDFファイルに注釈を追加する PdfContentEditor を使用して**

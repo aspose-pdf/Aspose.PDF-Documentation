@@ -3,7 +3,7 @@ title: Bekerja dengan Lampiran dalam PDF di Node.js
 linktitle: Bekerja dengan Lampiran
 type: docs
 weight: 120
-url: id/nodejs-cpp/attachments/
+url: /id/nodejs-cpp/attachments/
 description: Operasi dasar dengan lampiran dalam PDF di Node.js. Panduan dengan contoh.
 lastmod: "2023-11-16"
 sitemap:
@@ -17,4 +17,4 @@ Lampiran adalah file tambahan yang dilampirkan ke dokumen induk, bisa berupa ber
 
 Anda akan belajar bagaimana menghapus lampiran dari PDF secara programatis dengan Node.js.
 
-- [Menghapus lampiran dari PDF yang ada](/pdf/nodejs-cpp/removing-attachment-from-an-existing-pdf/)
+- [Menghapus lampiran dari PDF yang ada](/pdf/id/nodejs-cpp/removing-attachment-from-an-existing-pdf/)

@@ -2,7 +2,7 @@
 title: FDF, XML, XFDF 형식의 차이점은 무엇인가
 type: docs
 weight: 30
-url: ko/net/whats-the-difference-between-xml-fdf-and-xfdf/
+url: /ko/net/whats-the-difference-between-xml-fdf-and-xfdf/
 description: 이 섹션은 Aspose.PDF Facades에서 Form Class를 사용하여 XML, FDF 및 XFDF 양식의 차이점을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

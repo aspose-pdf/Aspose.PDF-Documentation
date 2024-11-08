@@ -3,7 +3,7 @@ title: PDF 문서 생성
 linktitle: PDF 생성
 type: docs
 weight: 10
-url: ko/python-cpp/create-document/
+url: /ko/python-cpp/create-document/
 description: 이 페이지는 Aspose.PDF for Python via C++ 라이브러리를 사용하여 처음부터 PDF 문서를 생성하는 방법을 설명합니다.
 ---
 

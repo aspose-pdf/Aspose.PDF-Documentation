@@ -2,7 +2,7 @@
 title: PDF에서 XFDF로 주석 평탄화
 type: docs
 weight: 40
-url: ko/net/flatten-annotation/
+url: /ko/net/flatten-annotation/
 description: 이 섹션은 Aspose.PDF Facades를 사용하여 PDF 파일에서 XFDF로 주석을 내보내는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

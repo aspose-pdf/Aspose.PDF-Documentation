@@ -3,7 +3,7 @@ title: Abrir documento PDF programaticamente
 linktitle: Abrir PDF
 type: docs
 weight: 20
-url: pt/net/open-pdf-document/
+url: /pt/net/open-pdf-document/
 description: Aprenda como abrir um arquivo PDF em C# com a biblioteca Aspose.PDF para .NET. Você pode abrir um PDF existente, documento a partir de um stream, e documento PDF criptografado.
 aliases:
     - /net/opening-a-pdf-document/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Abrir documento PDF existente
 

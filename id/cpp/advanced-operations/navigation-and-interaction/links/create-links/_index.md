@@ -3,7 +3,7 @@ title: Membuat Tautan di File PDF dengan C++
 linktitle: Buat Tautan
 type: docs
 weight: 10
-url: id/cpp/create-links/
+url: /id/cpp/create-links/
 description: Bagian ini menjelaskan cara membuat tautan dalam dokumen PDF Anda dengan C++.
 lastmod: "2021-06-05"
 sitemap:

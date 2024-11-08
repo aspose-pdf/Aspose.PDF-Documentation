@@ -3,7 +3,7 @@ title: Trabalhando com Formulários XFA em PDF
 linktitle: Formulários XFA
 type: docs
 weight: 20
-url: pt/php-java/xfa-forms/
+url: /pt/php-java/xfa-forms/
 description: Com Aspose.PDF para PHP via Java, você pode converter XFA em AcroForm, preencher o campo do formulário em um documento PDF, extrair dados do formulário.
 lastmod: "2024-06-05"
 sitemap:
@@ -15,8 +15,8 @@ XFA significa Arquitetura de Formulários XML. É um conjunto de especificaçõe
 
 Para um estudo mais detalhado das possibilidades de trabalhar com formulários, estude os seguintes artigos na seção:
 
--[Converter Formulário XFA](/pdf/php-java/convert-form/) - converter XFA em AcroForm usando PHP.
+-[Converter Formulário XFA](/pdf/pt/php-java/convert-form/) - converter XFA em AcroForm usando PHP.
 
--[Preencher AcroForm](/pdf/php-java/fill-form/) - para preencher um campo de formulário, obtenha o campo da coleção de Formulários do objeto Documento.
+-[Preencher AcroForm](/pdf/pt/php-java/fill-form/) - para preencher um campo de formulário, obtenha o campo da coleção de Formulários do objeto Documento.
 
--[Extrair Dados AcroForm](/pdf/php-java/extract-form/) - obter valores de todos e de campos individuais e etc.
+-[Extrair Dados AcroForm](/pdf/pt/php-java/extract-form/) - obter valores de todos e de campos individuais e etc.

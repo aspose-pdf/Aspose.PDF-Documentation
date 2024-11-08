@@ -3,7 +3,7 @@ title: حفظ مستند PDF برمجيًا
 linktitle: حفظ PDF
 type: docs
 weight: 30
-url: ar/python-net/save-pdf-document/
+url: /ar/python-net/save-pdf-document/
 description: تعلم كيفية حفظ ملف PDF في Aspose.PDF لـ Python عبر مكتبة .NET. حفظ مستند PDF في نظام الملفات، إلى دفق، وفي تطبيقات الويب.
 lastmod: "2022-12-22"
 sitemap:

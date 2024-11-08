@@ -3,7 +3,7 @@ title: PDFファイルにリンクを作成する
 linktitle: リンクを作成
 type: docs
 weight: 10
-url: ja/java/create-links/
+url: /ja/java/create-links/
 description: このセクションでは、JavaでPDFドキュメントにリンクを作成する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

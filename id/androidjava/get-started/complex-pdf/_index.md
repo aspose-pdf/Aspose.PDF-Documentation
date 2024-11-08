@@ -3,7 +3,7 @@ title: Membuat PDF kompleks menggunakan Aspose.PDF
 linktitle: Membuat PDF kompleks
 type: docs
 weight: 30
-url: id/androidjava/complex-pdf-example/
+url: /id/androidjava/complex-pdf-example/
 description: Aspose.PDF untuk Android melalui Java memungkinkan Anda membuat dokumen yang lebih kompleks yang berisi gambar, fragmen teks, dan tabel dalam satu dokumen.
 lastmod: "2021-06-05"
 sitemap:
@@ -11,8 +11,8 @@ sitemap:
     priority: 0.7
 ---
 
-Contoh [Hello, World](/pdf/java/hello-world-example/) menunjukkan langkah-langkah sederhana untuk membuat dokumen PDF menggunakan Java dan Aspose.PDF. Dalam artikel ini, kita akan melihat cara membuat dokumen yang lebih kompleks dengan Java dan Aspose.PDF untuk Java. Sebagai contoh, kita akan mengambil dokumen dari perusahaan fiktif yang mengoperasikan layanan feri penumpang.
-Dokumen kita akan berisi gambar, dua fragmen teks (header dan paragraf), dan sebuah tabel. Untuk membangun dokumen seperti itu, kita akan menggunakan pendekatan berbasis DOM. Anda dapat membaca lebih lanjut di bagian [Dasar-dasar API DOM](/pdf/java/basics-of-dom-api/).
+Contoh [Hello, World](/pdf/id/java/hello-world-example/) menunjukkan langkah-langkah sederhana untuk membuat dokumen PDF menggunakan Java dan Aspose.PDF. Dalam artikel ini, kita akan melihat cara membuat dokumen yang lebih kompleks dengan Java dan Aspose.PDF untuk Java. Sebagai contoh, kita akan mengambil dokumen dari perusahaan fiktif yang mengoperasikan layanan feri penumpang.
+Dokumen kita akan berisi gambar, dua fragmen teks (header dan paragraf), dan sebuah tabel. Untuk membangun dokumen seperti itu, kita akan menggunakan pendekatan berbasis DOM. Anda dapat membaca lebih lanjut di bagian [Dasar-dasar API DOM](/pdf/id/java/basics-of-dom-api/).
 
 Jika kita membuat dokumen dari awal, kita perlu mengikuti langkah-langkah tertentu:
 

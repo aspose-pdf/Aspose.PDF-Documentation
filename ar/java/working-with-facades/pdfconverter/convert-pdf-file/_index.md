@@ -2,7 +2,7 @@
 title: تحويل ملف PDF
 type: docs
 weight: 20
-url: ar/java/convert-pdf-file/
+url: /ar/java/convert-pdf-file/
 description: يشرح هذا القسم كيفية تحويل ملف PDF باستخدام Aspose.PDF Facades باستخدام فئة PdfConverter.
 lastmod: "2021-06-05"
 draft: false

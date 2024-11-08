@@ -3,7 +3,7 @@ title: Obtener, Actualizar y Expandir un Marcador
 linktitle: Obtener, Actualizar y Expandir un Marcador
 type: docs
 weight: 20
-url: es/java/get-update-and-expand-bookmark/
+url: /es/java/get-update-and-expand-bookmark/
 description: Este artículo describe cómo usar marcadores en un archivo PDF. Con nuestra biblioteca Java, puedes obtener marcadores del archivo PDF, obtener el número de página de un marcador, actualizar marcadores en un Documento PDF y expandir marcadores al ver un documento.
 lastmod: "2021-06-05"
 sitemap:

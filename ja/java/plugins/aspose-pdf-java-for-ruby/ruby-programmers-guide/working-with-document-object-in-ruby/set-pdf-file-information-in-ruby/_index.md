@@ -2,7 +2,7 @@
 title: RubyでPDFファイル情報を設定する
 type: docs
 weight: 120
-url: ja/java/set-pdf-file-information-in-ruby/
+url: /ja/java/set-pdf-file-information-in-ruby/
 lastmod: "2021-06-05"
 ---
 

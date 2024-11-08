@@ -3,7 +3,7 @@ title: Cómo Fusionar PDF usando JavaScript a través de C++
 linktitle: Fusionar archivos PDF
 type: docs
 weight: 20
-url: es/javascript-cpp/merge-pdf/
+url: /es/javascript-cpp/merge-pdf/
 description: Esta página explica cómo fusionar documentos PDF en un solo archivo PDF con Aspose.PDF para JavaScript a través de C++
 lastmod: "2022-12-15"
 sitemap:

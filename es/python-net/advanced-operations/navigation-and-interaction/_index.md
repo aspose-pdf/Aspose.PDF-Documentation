@@ -3,7 +3,7 @@ title: Navegación e Interacción en PDF usando Python
 linktitle: Navegación e interacción
 type: docs
 weight: 90
-url: es/python-net/navigation-and-interaction/
+url: /es/python-net/navigation-and-interaction/
 description: Esta sección describe las características del trabajo con enlaces, acciones y marcadores con la Biblioteca Python.
 lastmod: "2023-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 
 
-- [Marcadores](/pdf/python-net/bookmarks/)- las publicaciones grandes generalmente incluyen un marco de marcadores que se pueden ver y seleccionar fácilmente en el Panel de Marcadores, lo que le permite hacer clic en un marcador para saltar a la página o capítulo que representa. El Panel de Marcadores es un elemento consciente del contenido y es visible en la barra lateral solo si el documento PDF abierto contiene una estructura de marcadores.
+- [Marcadores](/pdf/es/python-net/bookmarks/)- las publicaciones grandes generalmente incluyen un marco de marcadores que se pueden ver y seleccionar fácilmente en el Panel de Marcadores, lo que le permite hacer clic en un marcador para saltar a la página o capítulo que representa. El Panel de Marcadores es un elemento consciente del contenido y es visible en la barra lateral solo si el documento PDF abierto contiene una estructura de marcadores.
 
 <script type="application/ld+json">
 {

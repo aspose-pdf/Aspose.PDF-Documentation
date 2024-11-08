@@ -3,7 +3,7 @@ title: C#でPDFページを操作する
 linktitle: ページの操作
 type: docs
 weight: 20
-url: ja/net/working-with-pages/
+url: /ja/net/working-with-pages/
 description: このセクションでは、ページの追加、ヘッダーとフッターの追加、ウォーターマークの追加方法について説明します。Aspose.PDF for .NETがこのトピックに関するすべての詳細を説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -86,20 +86,20 @@ PageNumberStampクラスを使用してページ番号を追加します。ド�
 
 以下の操作が可能です：
 
-- [ページを追加する](/pdf/net/add-pages/) - 望ましい位置にページを追加するか、PDFファイルの最後にページを追加し、ドキュメントからページを削除します。
-- [ページを移動する](/pdf/net/move-pages/) - 一つのドキュメントから別のドキュメントへページを移動します。
-- [ページの移動](/pdf/net/move-pages/) - あるドキュメントから別のドキュメントへページを移動します。
-- [ページの削除](/pdf/net/delete-pages/) - PageCollection コレクションを使用してPDFファイルからページを削除します。
-- [ページサイズの変更](/pdf/net/change-page-size/) - Aspose.PDF ライブラリを使用したコードスニペットでPDFページのサイズを変更できます。
-- [ページの回転](/pdf/net/rotate-pages/) - 既存のPDFファイルのページの向きを変更できます。
-- [ページの分割](/pdf/net/split-document/) - PDFファイルを一つまたは複数のPDFに分割できます。
-- [ヘッダーおよび/またはフッターの追加](/pdf/net/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーやフッターにテキストや画像を追加します。
-- [ページのトリミング](/pdf/net/crop-pages/) - 異なるページプロパティを使用してPDFドキュメントのページをプログラムでトリミングできます。
-- [ウォーターマークの追加](/pdf/net/add-watermarks/) - Artifact Class を使用してPDFファイルにウォーターマークを追加します。
-- [PDFファイルにページ番号を追加](/pdf/net/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加します。
-- [PDFファイルにページ番号を追加する](/pdf/net/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加できます。
-- [背景を追加する](/pdf/net/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
-- [スタンピング](/pdf/net/stamping/) - ImageStampクラスを使用してPDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
+- [ページを追加する](/pdf/ja/net/add-pages/) - 望ましい位置にページを追加するか、PDFファイルの最後にページを追加し、ドキュメントからページを削除します。
+- [ページを移動する](/pdf/ja/net/move-pages/) - 一つのドキュメントから別のドキュメントへページを移動します。
+- [ページの移動](/pdf/ja/net/move-pages/) - あるドキュメントから別のドキュメントへページを移動します。
+- [ページの削除](/pdf/ja/net/delete-pages/) - PageCollection コレクションを使用してPDFファイルからページを削除します。
+- [ページサイズの変更](/pdf/ja/net/change-page-size/) - Aspose.PDF ライブラリを使用したコードスニペットでPDFページのサイズを変更できます。
+- [ページの回転](/pdf/ja/net/rotate-pages/) - 既存のPDFファイルのページの向きを変更できます。
+- [ページの分割](/pdf/ja/net/split-document/) - PDFファイルを一つまたは複数のPDFに分割できます。
+- [ヘッダーおよび/またはフッターの追加](/pdf/ja/net/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーやフッターにテキストや画像を追加します。
+- [ページのトリミング](/pdf/ja/net/crop-pages/) - 異なるページプロパティを使用してPDFドキュメントのページをプログラムでトリミングできます。
+- [ウォーターマークの追加](/pdf/ja/net/add-watermarks/) - Artifact Class を使用してPDFファイルにウォーターマークを追加します。
+- [PDFファイルにページ番号を追加](/pdf/ja/net/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加します。
+- [PDFファイルにページ番号を追加する](/pdf/ja/net/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加できます。
+- [背景を追加する](/pdf/ja/net/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
+- [スタンピング](/pdf/ja/net/stamping/) - ImageStampクラスを使用してPDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
 
 <script type="application/ld+json">
 {

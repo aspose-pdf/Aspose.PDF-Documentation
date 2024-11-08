@@ -3,7 +3,7 @@ title: Cara Menambahkan Tanda Tangan Kartu Pintar ke PDF
 linktitle: Penandatanganan PDF dengan Kartu Pintar
 type: docs
 weight: 40
-url: id/net/sign-pdf-document-from-smart-card/
+url: /id/net/sign-pdf-document-from-smart-card/
 description: Aspose.PDF untuk .NET memungkinkan Anda menandatangani dokumen PDF dari kartu pintar menggunakan kolom tanda tangan.
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +77,7 @@ sitemap:
 </script>
 Aspose.PDF untuk .NET menawarkan fungsionalitas untuk menambahkan tanda tangan digital dari lokasi penyimpanan kunci. Anda dapat menerapkan tanda tangan dengan menerima sertifikat yang disediakan oleh toko sertifikat, kartu pintar atau [kartu PIV](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) yang terhubung ke sistem pada saat runtime.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Berikut adalah potongan kode untuk menandatangani dokumen PDF dari kartu pintar:
 

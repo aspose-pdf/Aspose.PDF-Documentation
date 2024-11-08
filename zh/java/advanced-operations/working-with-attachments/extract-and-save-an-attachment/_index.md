@@ -3,7 +3,7 @@ title: 提取并保存附件
 linktitle: 提取并保存附件
 type: docs
 weight: 20
-url: zh/java/extract-and-save-an-attachment/
+url: /zh/java/extract-and-save-an-attachment/
 description: Aspose.PDF for Java 允许您从 PDF 文档中获取所有附件。此外，您还可以从文档中获取单个附件。
 lastmod: "2021-06-05"
 sitemap:
@@ -55,7 +55,7 @@ Document pdfDocument = new Document(_dataDir+"input.pdf");
 
 ## 获取附件信息
 
-如[从 PDF 文档获取附件](/pdf/java/get-attachments-from-a-pdf-document/)中所述，附件信息保存在[FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification)对象中，与其他附件一起收集在[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)对象的EmbeddedFiles集合中。
+如[从 PDF 文档获取附件](/pdf/zh/java/get-attachments-from-a-pdf-document/)中所述，附件信息保存在[FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification)对象中，与其他附件一起收集在[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)对象的EmbeddedFiles集合中。
 
 [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/FileSpecification)对象提供获取附件信息的方法，例如：
 

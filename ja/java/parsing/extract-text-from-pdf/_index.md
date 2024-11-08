@@ -3,7 +3,7 @@ title: PDFからテキストを抽出する
 linktitle: テキストを抽出
 type: docs
 weight: 10
-url: ja/java/extract-text-from-pdf/
+url: /ja/java/extract-text-from-pdf/
 description: Aspose.PDFは、さまざまな種類の情報を抽出することができます。このセクションには、Aspose.PDF for Javaを使用してPDFドキュメントからテキストを抽出する方法に関する記事が含まれています。
 lastmod: "2021-06-05"
 sitemap:
@@ -18,5 +18,5 @@ Aspose.PDF for Javaライブラリは、TextAbsorberクラスを使用してテ�
 データマイニング、コンテンツ管理、およびフォーム処理の企業にとって、テキスト抽出は特に役立ちます。
  Extracting text comes in handy: archiving: テキストとそのコンポーネントを取得して、ドキュメントをインデックス化し、完全な検索機能でアーカイブすることができます。フォーム内のデータを取得して処理します。管理目的でアカウントデータ、郵便住所、電話番号などの情報を抽出します。写真や画像を抽出します。
 
-- [PDFからテキストを抽出](/pdf/java/extract-text-from-all-pdf/)
-- [PDFから段落を抽出](/pdf/java/extract-paragraph-from-pdf/)
+- [PDFからテキストを抽出](/pdf/ja/java/extract-text-from-all-pdf/)
+- [PDFから段落を抽出](/pdf/ja/java/extract-paragraph-from-pdf/)

@@ -3,7 +3,7 @@ title: C#을 사용하여 PDF 크기 최적화, 압축 또는 축소
 linktitle: PDF 최적화
 type: docs
 weight: 30
-url: ko/net/optimize-pdf/
+url: /ko/net/optimize-pdf/
 keywords: "optimize pdf c#"
 description: PDF 파일 최적화, 모든 이미지 축소, PDF 크기 줄이기, 임베드되지 않은 글꼴 제거, C#을 사용하여 사용되지 않는 객체 제거.
 lastmod: "2022-02-17"
@@ -103,7 +103,7 @@ PDF 문서에는 때때로 추가 데이터가 포함되어 있을 수 있습니
 1.
 1. 최적화된 문서를 [저장](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메소드를 사용하여 저장하세요.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 웹용 PDF 문서를 최적화하는 방법을 보여줍니다.
 

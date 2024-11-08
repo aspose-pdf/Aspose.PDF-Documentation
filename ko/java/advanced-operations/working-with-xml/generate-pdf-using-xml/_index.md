@@ -3,7 +3,7 @@ title: XML에서 PDF 생성
 linktitle: XML에서 PDF 생성
 type: docs
 weight: 10
-url: ko/java/generate-pdf-from-xml
+url: /ko/java/generate-pdf-from-xml
 description: Aspose.PDF for Java는 입력 XML 파일이 Aspose.PDF for Java 스키마를 따라야 한다는 요구 사항을 가지고 XML 파일을 PDF 문서로 변환할 수 있는 기회를 제공합니다.
 lastmod: "2021-06-05"
 sitemap:

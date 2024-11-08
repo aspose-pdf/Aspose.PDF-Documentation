@@ -3,7 +3,7 @@ title: إضافة كائن قوس إلى ملف PDF
 linktitle: إضافة قوس
 type: docs
 weight: 10
-url: ar/net/add-arc/
+url: /ar/net/add-arc/
 description: هذا المقال يشرح كيفية إنشاء كائن قوس في ملف PDF باستخدام Aspose.PDF لـ .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "هذا المقال يشرح كيفية إنشاء كائن قوس في ملف PDF باستخدام Aspose.PDF لـ .NET."
 }
 </script>
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إضافة كائن قوس
 

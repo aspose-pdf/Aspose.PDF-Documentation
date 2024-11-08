@@ -2,7 +2,7 @@
 title: PHPでPDFファイルからXMPメタデータを取得する
 type: docs
 weight: 50
-url: ja/java/get-xmp-metadata-from-pdf-file-in-php/
+url: /ja/java/get-xmp-metadata-from-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

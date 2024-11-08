@@ -3,7 +3,7 @@ title: 지원되는 주석 개요
 linktitle: 주석 개요
 type: docs
 weight: 10
-url: ko/net/overview-of-annotations/
+url: /ko/net/overview-of-annotations/
 description: Aspose.PDF for .NET을 사용하여 작업할 수 있는 가능한 주석 목록을 확인하세요.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,30 +79,30 @@ sitemap:
 
 |**주석 유형**|**설명**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Text](/pdf/net/text-annotation/)|텍스트 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/net/extra-annotations/)|링크 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[FreeText](/pdf/net/text-annotation/)|(PDF 1.3) 자유 텍스트 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Line](/pdf/net/figures-annotation/)|(PDF 1.3) 선 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Square](/pdf/net/figures-annotation/)|(PDF 1.3) 정사각형 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Circle](/pdf/net/figures-annotation/)|(PDF 1.3) 원 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Polygon](/pdf/net/figures-annotation/)|(PDF 1.5) 다각형 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/net/figures-annotation/)|(PDF 1.5) 폴리라인 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-| [PolyLine](/pdf/net/figures-annotation/) | (PDF 1.5) 폴리라인 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Highlight](/pdf/net/highlights-annotation/) | (PDF 1.3) 하이라이트 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Underline](/pdf/net/highlights-annotation/) | (PDF 1.3) 밑줄 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Squiggly](/pdf/net/highlights-annotation/) | (PDF 1.4) 물결 밑줄 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [StrikeOut](/pdf/net/highlights-annotation/) | (PDF 1.3) 취소선 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Stamp](/pdf/net/stamping/) | (PDF 1.3) 고무 도장 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Caret](/pdf/net/extra-annotations/) | (PDF 1.5) 캐럿 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Ink](/pdf/net/figures-annotation/) | (PDF 1.3) 잉크 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Popup](/pdf/net/text-annotation/) | (PDF 1.3) 팝업 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-|[Popup](/pdf/net/text-annotation/)|(PDF 1.3) 팝업 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Sound](/pdf/net/multimedia-annotation/)|(PDF 1.2) 사운드 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Movie](/pdf/net/multimedia-annotation/)|(PDF 1.2) 영화 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) 위젯 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Screen](/pdf/net/multimedia-annotation/)|(PDF 1.5) 스크린 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/net/sticky-annotations/)|(PDF 1.6) 워터마크 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Redact](/pdf/net/extra-annotations/)|(PDF 1.7) 심의 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Text](/pdf/ko/net/text-annotation/)|텍스트 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/ko/net/extra-annotations/)|링크 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[FreeText](/pdf/ko/net/text-annotation/)|(PDF 1.3) 자유 텍스트 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Line](/pdf/ko/net/figures-annotation/)|(PDF 1.3) 선 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Square](/pdf/ko/net/figures-annotation/)|(PDF 1.3) 정사각형 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Circle](/pdf/ko/net/figures-annotation/)|(PDF 1.3) 원 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polygon](/pdf/ko/net/figures-annotation/)|(PDF 1.5) 다각형 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[PolyLine](/pdf/ko/net/figures-annotation/)|(PDF 1.5) 폴리라인 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+| [PolyLine](/pdf/ko/net/figures-annotation/) | (PDF 1.5) 폴리라인 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Highlight](/pdf/ko/net/highlights-annotation/) | (PDF 1.3) 하이라이트 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Underline](/pdf/ko/net/highlights-annotation/) | (PDF 1.3) 밑줄 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Squiggly](/pdf/ko/net/highlights-annotation/) | (PDF 1.4) 물결 밑줄 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [StrikeOut](/pdf/ko/net/highlights-annotation/) | (PDF 1.3) 취소선 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Stamp](/pdf/ko/net/stamping/) | (PDF 1.3) 고무 도장 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Caret](/pdf/ko/net/extra-annotations/) | (PDF 1.5) 캐럿 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Ink](/pdf/ko/net/figures-annotation/) | (PDF 1.3) 잉크 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+| [Popup](/pdf/ko/net/text-annotation/) | (PDF 1.3) 팝업 주석 | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+|[Popup](/pdf/ko/net/text-annotation/)|(PDF 1.3) 팝업 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sound](/pdf/ko/net/multimedia-annotation/)|(PDF 1.2) 사운드 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Movie](/pdf/ko/net/multimedia-annotation/)|(PDF 1.2) 영화 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/ko/net/multimedia-annotation/)|(PDF 1.2) 위젯 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Screen](/pdf/ko/net/multimedia-annotation/)|(PDF 1.5) 스크린 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/ko/net/sticky-annotations/)|(PDF 1.6) 워터마크 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redact](/pdf/ko/net/extra-annotations/)|(PDF 1.7) 심의 주석|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {

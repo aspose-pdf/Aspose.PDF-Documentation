@@ -3,7 +3,7 @@ title: PDFページをプログラムで削除
 linktitle: PDFページを削除
 type: docs
 weight: 40
-url: ja/php-java/delete-pages/
+url: /ja/php-java/delete-pages/
 description: PHPを使用してPDFファイルからページを削除できます。
 lastmod: "2024-06-05"
 sitemap:

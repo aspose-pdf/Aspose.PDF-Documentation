@@ -3,7 +3,7 @@ title: JavaScript로 PDF에서 첨부 파일 제거
 linktitle: 기존 PDF에서 첨부 파일 제거
 type: docs
 weight: 10
-url: ko/javascript-cpp/removing-attachment-from-an-existing-pdf/
+url: /ko/javascript-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF는 PDF 문서에서 첨부 파일을 제거할 수 있습니다. Aspose.PDF를 사용하여 PDF 파일에서 첨부 파일을 제거하기 위해 JavaScript 웹 툴킷을 사용하세요.
 lastmod: "2023-09-17"
 sitemap:

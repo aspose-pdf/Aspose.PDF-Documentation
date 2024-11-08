@@ -8,7 +8,7 @@ type: docs
 
 weight: 10
 
-url: pt/sharepoint/informacoes-do-produto/
+url: /pt/sharepoint/informacoes-do-produto/
 
 lastmod: "2020-12-16"
 
@@ -22,16 +22,16 @@ description: A seção de Informações do Produto do SharePoint PDF abrange tó
 
 
 
-- [Visão Geral do Produto](/pdf/sharepoint/visao-geral-do-produto/)
+- [Visão Geral do Produto](/pdf/pt/sharepoint/visao-geral-do-produto/)
 
-- [Formatos de Arquivo Suportados](/pdf/sharepoint/formatos-de-arquivo-suportados/)
+- [Formatos de Arquivo Suportados](/pdf/pt/sharepoint/formatos-de-arquivo-suportados/)
 
-- [Recursos](/pdf/sharepoint/recursos/)
+- [Recursos](/pdf/pt/sharepoint/recursos/)
 
-- [Instalar o Aspose.Pdf para SharePoint](/pdf/sharepoint/instalar-aspose-pdf-para-sharepoint/)
+- [Instalar o Aspose.Pdf para SharePoint](/pdf/pt/sharepoint/instalar-aspose-pdf-para-sharepoint/)
 
-- [Avaliar o Aspose.Pdf](/pdf/sharepoint/avaliar-aspose-pdf/)
+- [Avaliar o Aspose.Pdf](/pdf/pt/sharepoint/avaliar-aspose-pdf/)
 
-- [Licenciar o Aspose.Pdf para SharePoint](/pdf/sharepoint/licenciar-aspose-pdf-para-sharepoint/)
+- [Licenciar o Aspose.Pdf para SharePoint](/pdf/pt/sharepoint/licenciar-aspose-pdf-para-sharepoint/)
 
-- [Limitações da API](/pdf/sharepoint/limitacoes-da-api/)
+- [Limitações da API](/pdf/pt/sharepoint/limitacoes-da-api/)

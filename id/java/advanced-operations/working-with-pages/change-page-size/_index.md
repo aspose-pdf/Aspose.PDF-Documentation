@@ -3,7 +3,7 @@ title: Ubah Ukuran Halaman PDF Secara Programatis
 linktitle: Ubah Ukuran Halaman
 type: docs
 weight: 50
-url: id/java/change-page-size/
+url: /id/java/change-page-size/
 description: Ubah Ukuran Halaman dari file PDF Anda menggunakan pustaka Java.
 lastmod: "2021-06-05"
 sitemap:

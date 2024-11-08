@@ -3,7 +3,7 @@ title: Extrair Tabela de Documento PDF
 linktitle: Extrair Tabela
 type: docs
 weight: 20
-url: pt/net/extract-table-from-existing-pdf-document/
+url: /pt/net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF para .NET possibilita a realização de várias manipulações com as tabelas contidas em seu documento pdf.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Aspose.PDF para .NET possibilita a realização de várias manipulações com as tabelas contidas em seu documento pdf."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Extrair Tabela de PDF
 

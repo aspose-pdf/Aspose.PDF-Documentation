@@ -2,7 +2,7 @@
 title: 파이썬에서 PDF 파일 정보 설정
 type: docs
 weight: 90
-url: ko/python-java/set-pdf-file-information-in-python/
+url: /ko/python-java/set-pdf-file-information-in-python/
 ---
 
 <ins>**Aspose.PDF Java for Python**을 사용하여 PDF 문서 정보를 업데이트하려면, **SetPdfFileInfo** 클래스를 호출하십시오.

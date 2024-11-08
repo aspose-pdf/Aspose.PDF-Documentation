@@ -3,7 +3,7 @@ title: Node.jsでPDFを画像形式に変換
 linktitle: PDFを画像に変換
 type: docs
 weight: 70
-url: ja/nodejs-cpp/convert-pdf-to-images-format/
+url: /ja/nodejs-cpp/convert-pdf-to-images-format/
 lastmod: "2023-11-16"
 description: このトピックでは、Aspose.PDFを使用して、PDFをTIFF、BMP、JPEG、PNG、SVGなどのさまざまな画像形式に変換する方法を、Node.js環境で数行のコードで説明します。
 sitemap:

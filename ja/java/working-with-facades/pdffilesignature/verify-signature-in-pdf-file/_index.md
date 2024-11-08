@@ -2,7 +2,7 @@
 title: PDFファイルの署名を確認する
 type: docs
 weight: 30
-url: ja/java/verify-signature-in-pdf/
+url: /ja/java/verify-signature-in-pdf/
 description: このセクションでは、PdfFileSignatureクラスを使用してPDFファイル内の署名を操作する方法を説明します。
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## PDFファイルが署名されているかどうかを確認する
 
-[PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature)クラスのVerifySignedメソッドを使用して、PDFファイルが署名されているかどうかを確認します。このメソッドは署名名を必要とし、その署名名を使用してPDFが署名されている場合にtrueを返します。どの署名で署名されているかを確認せずに、[PDFが署名されている](/pdf/java/working-with-signature-in-a-pdf-file/)ことを確認することも可能です。
+[PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSignature)クラスのVerifySignedメソッドを使用して、PDFファイルが署名されているかどうかを確認します。このメソッドは署名名を必要とし、その署名名を使用してPDFが署名されている場合にtrueを返します。どの署名で署名されているかを確認せずに、[PDFが署名されている](/pdf/ja/java/working-with-signature-in-a-pdf-file/)ことを確認することも可能です。
 
 ### 指定された署名でPDFが署名されていることを確認する
 

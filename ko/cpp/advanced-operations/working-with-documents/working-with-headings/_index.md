@@ -2,7 +2,7 @@
 title: Working with Headings in PDF
 type: docs
 weight: 90
-url: ko/cpp/working-with-headings/
+url: /ko/cpp/working-with-headings/
 lastmod: "2021-11-11"
 description: C++로 PDF 문서의 머리글에 번호 매기기를 만듭니다. Aspose.PDF for C++는 다양한 번호 매기기 스타일을 보여줍니다.
 sitemap:
@@ -16,7 +16,7 @@ sitemap:
 머리글은 텍스트에 주의를 끌고 사용자가 문서에서 필요한 정보를 찾는 데 도움을 주어 가독성과 시각적 인식을 향상시킵니다. 머리글 스타일을 사용하면 목차를 빠르게 생성하고 문서의 구조를 변경할 수도 있습니다.
 따라서 Aspose.PDF for C++ 라이브러리를 사용하여 머리글을 어떻게 작업하는지 확인해 보겠습니다.
 
-[Aspose.PDF for C++](/pdf/cpp/)는 많은 사전 정의된 번호 매기기 스타일을 제공합니다. 이러한 사전 정의된 번호 매기기 스타일은 열거형 NumberingStyle에 저장되어 있습니다. NumberingStyle 열거형의 사전 정의된 값과 그 설명은 아래와 같습니다:
+[Aspose.PDF for C++](/pdf/ko/cpp/)는 많은 사전 정의된 번호 매기기 스타일을 제공합니다. 이러한 사전 정의된 번호 매기기 스타일은 열거형 NumberingStyle에 저장되어 있습니다. NumberingStyle 열거형의 사전 정의된 값과 그 설명은 아래와 같습니다:
 
 |**헤딩 유형**|**설명**|
 | :- | :- |

@@ -2,7 +2,7 @@
 title: DOM을 사용하여 Ruby에서 HTML 문자열 추가
 type: docs
 weight: 10
-url: ko/java/add-html-string-using-dom-in-ruby/
+url: /ko/java/add-html-string-using-dom-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Reparar PDF com JavaScript via C++
 linktitle: Reparar PDF
 type: docs
 weight: 10
-url: pt/javascript-cpp/repair-pdf/
+url: /pt/javascript-cpp/repair-pdf/
 description: Este tópico descreve como Reparar PDF via JavaScript via C++ 
 lastmod: "2023-02-17"
 sitemap:

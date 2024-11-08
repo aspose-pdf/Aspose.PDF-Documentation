@@ -3,7 +3,7 @@ title: Создание PDF из XML
 linktitle: Создание PDF из XML
 type: docs
 weight: 10
-url: ru/net/generate-pdf-from-xml
+url: /ru/net/generate-pdf-from-xml
 description: Aspose.PDF for .NET предоставляет несколько способов конвертации XML-файла в PDF-документ, требуя, чтобы входной XML-файл.
 lastmod: "2022-02-17"
 sitemap:
@@ -76,7 +76,7 @@ aliases:
     "description": "Aspose.PDF for .NET предоставляет несколько способов конвертации XML-файла в PDF-документ, требуя, чтобы входной XML-файл."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Создание PDF-документа из XML-документа — это нетривиальная задача, потому что XML-документ может описывать различное содержимое. Aspose.PDF for .NET имеет несколько способов создания PDF на основе XML-документа:
 

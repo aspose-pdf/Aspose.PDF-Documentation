@@ -2,7 +2,7 @@
 title: Insertar una Página Vacía al Final del Archivo PDF en Jython
 type: docs
 weight: 60
-url: es/java/insert-an-empty-page-at-end-of-pdf-file-in-jython/
+url: /es/java/insert-an-empty-page-at-end-of-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

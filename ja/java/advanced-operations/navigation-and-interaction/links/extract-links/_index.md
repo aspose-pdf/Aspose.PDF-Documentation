@@ -3,7 +3,7 @@ title: PDFファイルからリンクを抽出する
 linktitle: リンクの抽出
 type: docs
 weight: 30
-url: ja/java/extract-links/
+url: /ja/java/extract-links/
 description: JavaでPDFからリンクを抽出します。このトピックでは、AnnotationSelectorクラスを使用してリンクを抽出する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

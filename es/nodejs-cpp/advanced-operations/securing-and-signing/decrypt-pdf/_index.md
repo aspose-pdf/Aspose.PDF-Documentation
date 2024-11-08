@@ -3,7 +3,7 @@ title: Decrypt PDF en Node.js
 linktitle: Desencriptar archivo PDF
 type: docs
 weight: 40
-url: es/nodejs-cpp/decrypt-pdf/
+url: /es/nodejs-cpp/decrypt-pdf/
 description: Desencriptar archivo PDF con Aspose.PDF para Node.js vía C++.
 lastmod: "2023-11-16"
 sitemap:

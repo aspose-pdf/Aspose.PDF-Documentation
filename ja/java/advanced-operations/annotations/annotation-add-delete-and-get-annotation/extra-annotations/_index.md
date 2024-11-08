@@ -3,7 +3,7 @@ title: 追加の種類のPDF注釈を使用する
 linktitle: 追加の注釈
 type: docs
 weight: 60
-url: ja/java/extra-annotations/
+url: /ja/java/extra-annotations/
 description: このセクションでは、PDFドキュメントに追加の種類の注釈を追加、取得、削除する方法について説明します。
 lastmod: "2021-11-24"
 sitemap:

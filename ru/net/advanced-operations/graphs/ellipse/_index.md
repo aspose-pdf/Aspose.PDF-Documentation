@@ -3,7 +3,7 @@ title: Добавление объекта Эллипс в файл PDF
 linktitle: Добавить Эллипс
 type: docs
 weight: 60
-url: ru/net/add-ellipse/
+url: /ru/net/add-ellipse/
 description: Эта статья объясняет, как создать объект Эллипс в вашем PDF с использованием Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Эта статья объясняет, как создать объект Эллипс в вашем PDF с использованием Aspose.PDF для .NET."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавление объекта Ellipse
 

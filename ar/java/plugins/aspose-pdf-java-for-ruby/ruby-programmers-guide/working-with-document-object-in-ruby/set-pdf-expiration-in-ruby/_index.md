@@ -2,7 +2,7 @@
 title: تعيين انتهاء صلاحية PDF في روبي
 type: docs
 weight: 110
-url: ar/java/set-pdf-expiration-in-ruby/
+url: /ar/java/set-pdf-expiration-in-ruby/
 lastmod: "2021-06-05"
 ---
 

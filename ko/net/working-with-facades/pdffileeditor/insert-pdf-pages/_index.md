@@ -2,7 +2,7 @@
 title: PDF 페이지 삽입
 type: docs
 weight: 50
-url: ko/net/insert-pdf-pages/
+url: /ko/net/insert-pdf-pages/
 description: 이 섹션에서는 PdfFileEditor 클래스를 사용하여 Aspose.PDF Facades로 PDF 페이지를 삽입하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

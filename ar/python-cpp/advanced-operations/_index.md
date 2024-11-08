@@ -3,7 +3,7 @@ title: العمليات المتقدمة
 linktitle: العمليات المتقدمة
 type: docs
 weight: 90
-url: ar/python-cpp/advanced-operations/
+url: /ar/python-cpp/advanced-operations/
 description: يمكن لـ Aspose.PDF for Python عبر C++ أداء مهام بسيطة وسهلة والتعامل مع أهداف أكثر تعقيدًا. تحقق من القسم التالي للمستخدمين والمطورين المتقدمين.
 lastmod: "2024-04-17"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**العمليات المتقدمة** هو قسم حول كيفية التعامل مع ملفات PDF الموجودة برمجيًا، سواء كانت وثائق تم إنشاؤها باستخدام Aspose.PDF كما هو موضح في [العمليات الأساسية](/pdf/python-cpp/basic-operations/)، أو ملفات PDF تم إنشاؤها باستخدام Adobe Acrobat أو Google Docs أو Microsoft Office أو Open Office أو أي منتج PDF آخر.
+**العمليات المتقدمة** هو قسم حول كيفية التعامل مع ملفات PDF الموجودة برمجيًا، سواء كانت وثائق تم إنشاؤها باستخدام Aspose.PDF كما هو موضح في [العمليات الأساسية](/pdf/ar/python-cpp/basic-operations/)، أو ملفات PDF تم إنشاؤها باستخدام Adobe Acrobat أو Google Docs أو Microsoft Office أو Open Office أو أي منتج PDF آخر.
 
 استخدام Python لأداء العمليات المتقدمة مع ملفات PDF عبر مكتبة C++ يمكن أن يكون مزيجًا قويًا. يتيح دمج Python مع مكتبة C++ معالجة فعالة وعالية الأداء لملفات PDF. Aspose.PDF for Python عبر C++ هو خيار شائع بسبب ميزاته الواسعة وأداءه.
 
@@ -27,7 +27,7 @@ sitemap:
 
 ستتعلم طرقًا مختلفة لـ:
 
-- [العمل مع المستندات](/pdf/python-cpp/working-with-documents/) - ضغط، تقسيم، ودمج المستندات والقيام بعمليات أخرى على المستند بأكمله.
-- [العمل مع الصفحات](/pdf/python-cpp/working-with-pages/) - إضافة، نقل أو إزالة، قص الصفحات، إضافة علامات مائية، طوابع، إلخ.
+- [العمل مع المستندات](/pdf/ar/python-cpp/working-with-documents/) - ضغط، تقسيم، ودمج المستندات والقيام بعمليات أخرى على المستند بأكمله.
+- [العمل مع الصفحات](/pdf/ar/python-cpp/working-with-pages/) - إضافة، نقل أو إزالة، قص الصفحات، إضافة علامات مائية، طوابع، إلخ.
 
-- [تشفير وفك تشفير PDF](/pdf/python-cpp/encrypt-decrypt-pdf/) - تشفير وفك تشفير ملفات PDF باستخدام Python.
+- [تشفير وفك تشفير PDF](/pdf/ar/python-cpp/encrypt-decrypt-pdf/) - تشفير وفك تشفير ملفات PDF باستخدام Python.

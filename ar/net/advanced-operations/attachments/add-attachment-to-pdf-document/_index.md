@@ -4,7 +4,7 @@ title: إضافة مرفق إلى مستند PDF
 linktitle: إضافة مرفق إلى مستند PDF
 type: docs
 weight: 10
-url: ar/net/add-attachment-to-pdf-document/
+url: /ar/net/add-attachment-to-pdf-document/
 description: تصف هذه الصفحة كيفية إضافة مرفق إلى ملف PDF باستخدام مكتبة Aspose.PDF لـ .NET
 lastmod: "2022-02-17"
 sitemap:
@@ -81,7 +81,7 @@ aliases:
 ```
 يمكن أن تحتوي المرفقات على مجموعة واسعة من المعلومات ويمكن أن تكون من أنواع ملفات متعددة. يشرح هذا المقال كيفية إضافة مرفق إلى ملف PDF.
 
-الشفرة البرمجية التالية تعمل أيضًا مع واجهة [Aspose.Drawing](/pdf/net/drawing/) الرسومية الجديدة.
+الشفرة البرمجية التالية تعمل أيضًا مع واجهة [Aspose.Drawing](/pdf/ar/net/drawing/) الرسومية الجديدة.
 
 1. إنشاء مشروع جديد بلغة C#.
 1. إضافة مرجع إلى مكتبة Aspose.PDF DLL.

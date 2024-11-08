@@ -3,7 +3,7 @@ title: C++ Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: es/cpp/overview/
+url: /es/cpp/overview/
 lastmod: "2021-11-08"
 description: Descripción general de las características clave y formatos compatibles de Aspose.PDF para C++, manual de instalación y licenciamiento de la biblioteca de C++.
 sitemap:
@@ -33,21 +33,21 @@ Comprimir documentos PDF ayuda a reducir su tamaño de archivo, facilitando su a
 - almacenar imágenes en XImageCollection (imágenes reutilizables)
 - convertir un PDF de espacio de color RGB a escala de grises
 
-Vamos a revisar las páginas de Docs para más detalles: [Optimizar PDF](/pdf/cpp/optimize-pdf/)
+Vamos a revisar las páginas de Docs para más detalles: [Optimizar PDF](/pdf/es/cpp/optimize-pdf/)
 ### Creación y manipulación de tablas
 
 Las tablas proporcionan un formato estructurado y organizado para presentar información en documentos PDF. Permiten a los usuarios categorizar y organizar datos en filas y columnas, facilitando la comprensión de conjuntos de datos complejos.
 
 Con **Aspose.PDF for C++** crear y manipular tablas en documentos PDF ofrece numerosas ventajas, incluyendo una mejor organización de datos, legibilidad mejorada, mejores capacidades de análisis y mayor flexibilidad para presentar información de manera efectiva.
 
-Revisemos la siguiente sección para más detalles: [Trabajando con Tablas](/pdf/cpp/working-with-tables/)
+Revisemos la siguiente sección para más detalles: [Trabajando con Tablas](/pdf/es/cpp/working-with-tables/)
 
 ### Soporte para objetos de Gráficos
 
 **Aspose.PDF for C++** admite la adición de gráficos a documentos PDF. Se proporciona la clase Graph para esta tarea.  
 Agregar gráficos a documentos PDF mejora la visualización de datos, la claridad y comprensión mejoradas, mejor soporte para la toma de decisiones y un mayor compromiso con los lectores.
 
-Revisemos las páginas de Docs para más detalles: [Trabajando con Gráficos](/pdf/cpp/graphs/)
+Revisemos las páginas de Docs para más detalles: [Trabajando con Gráficos](/pdf/es/cpp/graphs/)
 
 ### Funcionalidad extensiva de Hipervínculos
 
@@ -55,14 +55,14 @@ Los hipervínculos permiten a los usuarios navegar de manera rápida y eficiente
 
 **Aspose.PDF for C++** proporciona muchas ventajas, incluyendo una mejor navegación, referencias cruzadas, acceso a recursos externos, interactividad y comunicación mejorada. Contribuyen a una experiencia de lectura más atractiva, informativa y accesible para los usuarios.
 
-Revisemos la siguiente sección para más detalles: [Actions](/pdf/cpp/actions/)
+Revisemos la siguiente sección para más detalles: [Actions](/pdf/es/cpp/actions/)
 
 ### Controles de seguridad extendidos
 
 Las características de seguridad, como las firmas digitales, ayudan a garantizar la integridad de los documentos PDF. Al firmar digitalmente un documento, el remitente puede verificar que el contenido no ha sido manipulado o alterado desde que fue firmado, proporcionando garantía a los destinatarios sobre la autenticidad del documento.
 
 Con **Aspose.PDF for C++** es posible firmar un PDF desde una tarjeta inteligente, encriptar y desencriptar archivos, extraer imágenes e información de firma, etc. 
-Vamos a revisar las páginas de Documentación para más detalles: [Protección y Firma](/pdf/cpp/securing-and-signing/)
+Vamos a revisar las páginas de Documentación para más detalles: [Protección y Firma](/pdf/es/cpp/securing-and-signing/)
 
 ### Añadir o eliminar marcadores
 
@@ -70,20 +70,20 @@ Los marcadores proporcionan a los usuarios una forma conveniente de navegar por 
 
 Usando la biblioteca **Aspose.PDF para C++** puedes añadir marcadores a un archivo PDF, añadir un marcador hijo, o eliminar todos o algunos marcadores del documento.
 
-Vamos a revisar la siguiente sección para más detalles: [Marcadores](/pdf/cpp/add-and-delete-bookmark/)
+Vamos a revisar la siguiente sección para más detalles: [Marcadores](/pdf/es/cpp/add-and-delete-bookmark/)
 
 ### Crear una tabla de contenidos
 
 La TOC proporciona a los usuarios una forma rápida y eficiente de navegar por los contenidos de un documento PDF. Al listar las secciones principales, capítulos o temas junto con sus números de página correspondientes, los usuarios pueden localizar y acceder fácilmente a información específica dentro del documento.
 
 La biblioteca **Aspose.PDF para C++** explica cómo añadir una TOC a un archivo PDF existente, usando la clase Heading en el espacio de nombres Aspose.Pdf.
-Let's check Docs pages for more details: [Working with TOC](/pdf/cpp/manipulate-pdf-document/)
+Let's check Docs pages for more details: [Working with TOC](/pdf/es/cpp/manipulate-pdf-document/)
 
 ### Agregar, actualizar, eliminar archivos adjuntos y anotaciones
 
 Agregar archivos adjuntos y anotaciones hace que los documentos PDF sean más interactivos y atractivos para los lectores. Los usuarios pueden interactuar con contenido adicional, como archivos multimedia, enlaces o comentarios, incrustados dentro del documento, mejorando su experiencia de lectura.
 
-La biblioteca Aspose.PDF para C++ tiene diferentes manipulaciones con [Anotaciones](/pdf/cpp/annotations/). Puedes agregar tipos como:
+La biblioteca Aspose.PDF para C++ tiene diferentes manipulaciones con [Anotaciones](/pdf/es/cpp/annotations/). Puedes agregar tipos como:
 
 - Anotación de Texto
 - Anotación de Resaltados
@@ -93,7 +93,7 @@ La biblioteca Aspose.PDF para C++ tiene diferentes manipulaciones con [Anotacion
 - Anotaciones Adicionales
 
 Además, nuestra biblioteca te permite agregar, extraer y eliminar archivos adjuntos de PDF. 
-Para más detalles, consulta las siguientes [páginas de Documentación](/pdf/cpp/attachments/).
+Para más detalles, consulta las siguientes [páginas de Documentación](/pdf/es/cpp/attachments/).
 
 ### Metadatos del Archivo PDF
 
@@ -101,7 +101,7 @@ Los metadatos proporcionan información esencial sobre el documento PDF, como el
 
 Los metadatos de archivos PDF sirven para múltiples propósitos, incluyendo identificación del documento, atribución, seguimiento de versiones, descripción, capacidad de búsqueda, accesibilidad, seguridad, interoperabilidad, preservación y cumplimiento.
 
-Gestione fácil y rápidamente los [Metadatos](/pdf/cpp/pdf-file-metadata/) en un documento PDF con la biblioteca **Aspose.PDF for C++**.
+Gestione fácil y rápidamente los [Metadatos](/pdf/es/cpp/pdf-file-metadata/) en un documento PDF con la biblioteca **Aspose.PDF for C++**.
 
 ### Agregar, reemplazar o eliminar texto e imágenes
 
@@ -109,10 +109,10 @@ Agregar, reemplazar o eliminar texto e imágenes permite a los usuarios editar e
 
 Con Aspose.PDF puedes editar texto dentro de un PDF, reemplazarlo o rotarlo, buscar o obtener texto en un PDF.
 
-También puedes agregar, cambiar de posición, eliminar imágenes y realizar [acciones más complejas](/pdf/cpp/working-with-images/) con imágenes en tu PDF.
+También puedes agregar, cambiar de posición, eliminar imágenes y realizar [acciones más complejas](/pdf/es/cpp/working-with-images/) con imágenes en tu PDF.
 
 ### Dividir, concatenar, extraer o insertar páginas
-El apartado [Trabajando con Páginas PDF](/pdf/cpp/working-with-pages/) en la Documentación explica cómo puedes agregar, mover, eliminar, rotar o dividir páginas en PDF.
+El apartado [Trabajando con Páginas PDF](/pdf/es/cpp/working-with-pages/) en la Documentación explica cómo puedes agregar, mover, eliminar, rotar o dividir páginas en PDF.
 
 Dividir, concatenar, extraer o insertar páginas ayuda a los usuarios a gestionar documentos PDF de manera más efectiva. Los usuarios pueden organizar, reorganizar o combinar páginas para crear nuevos documentos, mejorando la organización y accesibilidad del documento.
 
@@ -130,7 +130,7 @@ Aspose.PDF permite convertir PDF a diferentes formatos de imagen usando C++. Est
 - GIF
 - SVG
 
-Biblioteca Aspose.PDF usando las clases DocumentDevice o ImageDevice para la conversión de PDF a Imagen.[Convertir PDF a Diferentes Formatos de Imagen](/pdf/cpp/convert-pdf-to-images-format/).
+Biblioteca Aspose.PDF usando las clases DocumentDevice o ImageDevice para la conversión de PDF a Imagen.[Convertir PDF a Diferentes Formatos de Imagen](/pdf/es/cpp/convert-pdf-to-images-format/).
 
 ### Imprimir documentos PDF
 
@@ -144,25 +144,25 @@ Aspose.PDF para C++ presenta diferentes formas de imprimir archivos PDF:
 - Imprimir PDF en aplicación WPF
 - varias operaciones adicionales, como conversión de PDF a PostScript, comprobación del estado de la tarea de impresión, etc.
 
-Veamos la siguiente sección para más detalles: [Impresión de documentos PDF](/pdf/cpp/printing-document/).
+Veamos la siguiente sección para más detalles: [Impresión de documentos PDF](/pdf/es/cpp/printing-document/).
 
 Además, Aspose.PDF para C++ se puede aplicar para convertir fácilmente texto, imágenes, SVG, HTML a PDF y convertir PDF a varios formatos de documentos con excelente rendimiento y buena calidad.
 
 ## Pricing and Policies
 
-Por favor, visite la página de [Licencias](/pdf/cpp/licensing/) para obtener información sobre licencias y revise la página de [Información de Precios](https://purchase.aspose.com/pricing/pdf/family/) para obtener detalles sobre precios.
+Por favor, visite la página de [Licencias](/pdf/es/cpp/licensing/) para obtener información sobre licencias y revise la página de [Información de Precios](https://purchase.aspose.com/pricing/pdf/family/) para obtener detalles sobre precios.
 
 ## Technical Support
 
-Para más información sobre el soporte técnico de Aspose.PDF, eche un vistazo a la [página de soporte](/pdf/cpp/technical-support/).
+Para más información sobre el soporte técnico de Aspose.PDF, eche un vistazo a la [página de soporte](/pdf/es/cpp/technical-support/).
 
 Aprenda más sobre:
 
-- [Formatos de archivo soportados](/pdf/cpp/supported-file-formats/)
+- [Formatos de archivo soportados](/pdf/es/cpp/supported-file-formats/)
 
-- [Características clave de Aspose.PDF](/pdf/cpp/key-features/)
-- [Requisitos del sistema](/pdf/cpp/system-requirements/)
-- [Instalación](/pdf/cpp/installation/)
-- [Licenciamiento](/pdf/cpp/licensing/)
-- [Soporte técnico](/pdf/cpp/technical-support/)
+- [Características clave de Aspose.PDF](/pdf/es/cpp/key-features/)
+- [Requisitos del sistema](/pdf/es/cpp/system-requirements/)
+- [Instalación](/pdf/es/cpp/installation/)
+- [Licenciamiento](/pdf/es/cpp/licensing/)
+- [Soporte técnico](/pdf/es/cpp/technical-support/)
 ```

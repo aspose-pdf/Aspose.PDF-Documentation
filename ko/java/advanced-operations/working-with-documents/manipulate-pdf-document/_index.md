@@ -3,7 +3,7 @@ title: PDF 문서 조작
 linktitle: PDF 문서 조작
 type: docs
 weight: 30
-url: ko/java/manipulate-pdf-document/
+url: /ko/java/manipulate-pdf-document/
 description: 이 문서는 PDF A 표준에 대한 PDF 문서 유효성 검사, 목차 작업, PDF 만료 날짜 설정 및 PDF 파일 생성 진행 상태 결정에 대한 정보를 포함하고 있습니다.
 lastmod: "2021-06-05"
 ---

@@ -3,7 +3,7 @@ title: Faire pivoter les pages PDF par programmation
 linktitle: Faire pivoter les pages PDF
 type: docs
 weight: 60
-url: fr/php-java/rotate-pages/
+url: /fr/php-java/rotate-pages/
 description: Changer l'orientation des pages et ajuster le contenu de la page à la nouvelle orientation de la page en utilisant Java.
 lastmod: "2024-06-05"
 sitemap:

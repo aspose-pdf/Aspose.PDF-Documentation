@@ -3,7 +3,7 @@ title: PDF에서 썸네일 이미지 생성
 linktitle: PDF에서 썸네일 이미지 생성
 type: docs
 weight: 110
-url: ko/net/generate-thumbnail-images-from-pdf-documents/
+url: /ko/net/generate-thumbnail-images-from-pdf-documents/
 description: 이 섹션에서는 PDF 문서에서 썸네일 이미지를 생성하는 방법을 설명합니다
 lastmod: "2022-02-17"
 ---

@@ -3,7 +3,7 @@ title: Python을 통한 PDF의 텍스트 주석 사용
 linktitle: 텍스트 주석
 type: docs
 weight: 10
-url: ko/python-net/text-annotation/
+url: /ko/python-net/text-annotation/
 description: Aspose.PDF for Python은 PDF 문서에서 텍스트 주석을 추가, 가져오기 및 삭제할 수 있도록 합니다.
 lastmod: "2023-02-17"
 sitemap:

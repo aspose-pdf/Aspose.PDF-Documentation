@@ -2,7 +2,7 @@
 title: Sitefinity PDF Import
 type: docs
 weight: 10
-url: pt/net/sitefinity-pdf-import/
+url: /pt/net/sitefinity-pdf-import/
 description: Aprenda como instalar e usar o Módulo de Importação de PDF para Sitefinity
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: التعليقات التوضيحية الإضافية باستخدام P
 linktitle: التعليقات التوضيحية الإضافية
 type: docs
 weight: 60
-url: ar/python-net/extra-annotations/
+url: /ar/python-net/extra-annotations/
 description: يصف هذا القسم كيفية إضافة، الحصول على، وحذف أنواع إضافية من التعليقات التوضيحية من مستند PDF الخاص بك.
 lastmod: "2023-02-17"
 sitemap:

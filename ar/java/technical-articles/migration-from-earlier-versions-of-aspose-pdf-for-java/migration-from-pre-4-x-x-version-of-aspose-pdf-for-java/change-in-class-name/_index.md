@@ -2,7 +2,7 @@
 title: تغيير في اسم الفئة
 type: docs
 weight: 20
-url: ar/java/change-in-class-name/
+url: /ar/java/change-in-class-name/
 lastmod: "2022-01-27"
 ---
 

@@ -3,7 +3,7 @@ title: Mengisi AcroForm - Mengisi Formulir PDF menggunakan C#
 linktitle: Mengisi AcroForm
 type: docs
 weight: 20
-url: id/net/fill-form/
+url: /id/net/fill-form/
 keywords: Mengisi Formulir PDF C#
 description: Anda dapat mengisi formulir dalam dokumen PDF Anda dengan perpustakaan Aspose.PDF untuk .NET.
 lastmod: "2022-02-17"
@@ -77,7 +77,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mengisi Kolom Formulir dalam Dokumen PDF
 

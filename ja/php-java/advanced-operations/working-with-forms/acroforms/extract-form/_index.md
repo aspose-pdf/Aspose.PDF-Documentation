@@ -3,7 +3,7 @@ title: データを抽出する AcroForms
 linktitle: データを抽出する AcroForms
 type: docs
 weight: 30
-url: ja/php-java/extract-form/
+url: /ja/php-java/extract-form/
 description: このセクションでは、Aspose.PDF for PHP via Java を使用して PDF ドキュメントからフォームを抽出する方法を説明します。
 lastmod: "2024-06-05"
 sitemap:

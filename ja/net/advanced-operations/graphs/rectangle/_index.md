@@ -3,7 +3,7 @@ title: PDFファイルに長方形オブジェクトを追加
 linktitle: 長方形を追加
 type: docs
 weight: 50
-url: ja/net/add-rectangle/
+url: /ja/net/add-rectangle/
 description: この記事では、Aspose.PDF for .NETを使用してPDFにRectangleオブジェクトを作成する方法を説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "この記事では、Aspose.PDF for .NETを使用してPDFにRectangleオブジェクトを作成する方法を説明します。"
 }
 </script>
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## Rectangle オブジェクトの追加
 

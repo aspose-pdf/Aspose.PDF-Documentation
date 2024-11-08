@@ -3,7 +3,7 @@ title: Convertir un PDF en différents formats d'image en C#
 linktitle: Convertir un PDF en Images
 type: docs
 weight: 70
-url: fr/net/convert-pdf-to-images-format/
+url: /fr/net/convert-pdf-to-images-format/
 lastmod: "2021-11-01"
 description: Ce sujet vous montre comment utiliser Aspose.PDF pour convertir des PDF en différents formats d'images tels que TIFF, BMP, EMF, JPEG, PNG, GIF, SVG avec quelques lignes de code.
 sitemap:
@@ -53,7 +53,7 @@ _Forme d'Image_ : **SVG**
 
 ## C# Convertir PDF en Image
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 **Aspose.PDF pour .NET** utilise plusieurs approches pour convertir un PDF en image.
 **Aspose.PDF pour .NET** utilise plusieurs approches pour convertir des PDF en image.

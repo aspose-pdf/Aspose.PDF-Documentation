@@ -2,7 +2,7 @@
 title: ページの向き
 type: docs
 weight: 10
-url: ja/reportingservices/page-orientation/
+url: /ja/reportingservices/page-orientation/
 lastmod: "2021-06-05"
 ---
 

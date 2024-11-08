@@ -2,7 +2,7 @@
 title: PDFページを画像に変換する方法（Ruby）
 type: docs
 weight: 20
-url: ja/java/convert-pdf-pages-to-images-in-ruby/
+url: /ja/java/convert-pdf-pages-to-images-in-ruby/
 lastmod: "2021-06-05"
 ---
 

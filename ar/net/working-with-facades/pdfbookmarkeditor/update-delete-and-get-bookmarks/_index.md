@@ -2,7 +2,7 @@
 title: تحديث، حذف والحصول على العلامات المرجعية
 type: docs
 weight: 30
-url: ar/net/update-delete-and-get-bookmarks/
+url: /ar/net/update-delete-and-get-bookmarks/
 description: تشرح هذه القسم كيفية تحديث، حذف والحصول على العلامات المرجعية باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

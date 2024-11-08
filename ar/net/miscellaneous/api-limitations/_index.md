@@ -2,7 +2,7 @@
 title: قيود واجهة برمجة التطبيقات
 type: docs
 weight: 70
-url: ar/net/api-limitations/
+url: /ar/net/api-limitations/
 ---
 
 ## **Xsl Fo إلى Pdf**

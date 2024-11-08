@@ -2,7 +2,7 @@
 title: Inserir uma Página Vazia em um Arquivo PDF no Jython
 type: docs
 weight: 70
-url: pt/java/insert-an-empty-page-into-a-pdf-file-in-jython/
+url: /pt/java/insert-an-empty-page-into-a-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

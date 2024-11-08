@@ -3,7 +3,7 @@ title: PDF/3-A 準拠PDFの作成とZUGFeRD請求書の添付
 linktitle: PDFにZUGFeRDを添付
 type: docs
 weight: 10
-url: ja/net/attach-zugferd/
+url: /ja/net/attach-zugferd/
 description: Aspose.PDF for .NETでZUGFeRDを含むPDFドキュメントを生成する方法を学びます
 lastmod: "2023-11-22"
 sitemap:
@@ -13,7 +13,7 @@ sitemap:
 
 ## PDFにZUGFeRDを添付
 
-このコードスニペットは[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+このコードスニペットは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 PDFにZUGFeRDを添付するための推奨ステップは以下の通りです：
 

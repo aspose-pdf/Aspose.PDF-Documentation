@@ -3,7 +3,7 @@ title: Añadir Objeto Círculo al archivo PDF
 linktitle: Añadir Círculo
 type: docs
 weight: 20
-url: es/java/add-circle/
+url: /es/java/add-circle/
 description: Este artículo explica cómo crear un objeto círculo en tu PDF usando Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

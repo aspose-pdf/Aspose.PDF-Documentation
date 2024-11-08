@@ -3,7 +3,7 @@ title: PDF内のテキストを回転
 linktitle: PDF内のテキストを回転
 type: docs
 weight: 50
-url: ja/java/rotate-text-inside-pdf/
+url: /ja/java/rotate-text-inside-pdf/
 description: PDFにテキストを回転させるさまざまな方法を学びます。Aspose.PDFを使用すると、テキストを任意の角度に回転させたり、テキストフラグメントや段落全体を回転させることができます。
 lastmod: "2021-06-05"
 sitemap:

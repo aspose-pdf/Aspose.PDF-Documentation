@@ -3,7 +3,7 @@ title: Supprimer des pages PDF de manière programmatique en C#
 linktitle: Supprimer des pages PDF
 type: docs
 weight: 30
-url: fr/net/delete-pages/
+url: /fr/net/delete-pages/
 description: Vous pouvez supprimer des pages de votre fichier PDF en utilisant la bibliothèque Aspose.PDF pour .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -78,7 +78,7 @@ aliases:
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Vous pouvez supprimer des pages d'un fichier PDF en utilisant Aspose.PDF pour .NET. Pour supprimer une page particulière de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 

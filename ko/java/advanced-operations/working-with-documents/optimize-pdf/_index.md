@@ -3,7 +3,7 @@ title: Java에서 PDF 크기를 최적화, 압축 또는 줄이기
 linktitle: PDF 문서 최적화
 type: docs
 weight: 40
-url: ko/java/optimize-pdf/
+url: /ko/java/optimize-pdf/
 description: PDF 파일 최적화, 모든 이미지 축소, PDF 크기 줄이기, 폰트 임베드 해제, Java로 사용되지 않는 객체 제거.
 lastmod: "2021-06-05"
 ---

@@ -3,7 +3,7 @@ title: PDF 파일에서 링크 추출
 linktitle: 링크 추출
 type: docs
 weight: 30
-url: ko/cpp/extract-links/
+url: /ko/cpp/extract-links/
 description: C#으로 PDF에서 링크를 추출합니다. 이 주제는 AnnotationSelector 클래스를 사용하여 링크를 추출하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: استخراج الصور من ملف PDF باستخدام C++
 linktitle: استخراج الصور
 type: docs
 weight: 30
-url: ar/cpp/extract-images-from-pdf-file/
+url: /ar/cpp/extract-images-from-pdf-file/
 description: يوضح هذا القسم كيفية استخراج الصور من ملف PDF باستخدام مكتبة C++.
 lastmod: "2021-12-18"
 ---

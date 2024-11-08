@@ -3,7 +3,7 @@ title: Ekstrak Informasi Gambar dan Tanda Tangan menggunakan Aspose.PDF untuk C+
 linktitle: Ekstrak Informasi Gambar dan Tanda Tangan
 type: docs
 weight: 30
-url: id/cpp/extract-image-and-signature-information/
+url: /id/cpp/extract-image-and-signature-information/
 description: Anda dapat mengekstrak gambar dari bidang tanda tangan dan mengekstrak informasi tanda tangan menggunakan kelas SignatureField dengan C++.
 lastmod: "2021-12-15"
 sitemap:

@@ -3,7 +3,7 @@ title: إنشاء AcroForms - إنشاء PDF قابل للتعبئة في PHP
 linktitle: إنشاء AcroForms
 type: docs
 weight: 10
-url: ar/php-java/create-forms/
+url: /ar/php-java/create-forms/
 description: يوضح هذا القسم كيفية إنشاء AcroForms من البداية في مستندات PDF الخاصة بك مع Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: PDFドキュメントを作成する
 linktitle: 作成
 type: docs
 weight: 10
-url: ja/java/create-document/
+url: /ja/java/create-document/
 description: Aspose.PDF for JavaでPDFファイルを作成する方法を学びます。
 lastmod: "2021-06-05"
 sitemap:

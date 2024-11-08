@@ -3,7 +3,7 @@ title: PDFに画像スタンプを追加するC#の使用
 linktitle: PDFファイルの画像スタンプ
 type: docs
 weight: 10
-url: ja/net/image-stamps-in-pdf-page/
+url: /ja/net/image-stamps-in-pdf-page/
 description: Aspose.PDFライブラリを使用してPDFドキュメントに画像スタンプを追加します。
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 ImageStampクラスを使用して、PDFファイルにイメージスタンプを追加できます。ImageStampクラスは、高さ、幅、透明度など、イメージベースのスタンプを作成するために必要なプロパティを提供します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリとも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも動作します。
 
 イメージスタンプを追加するには：
 

@@ -6,7 +6,7 @@ type: docs
 
 weight: 20
 
-url: zh/jasperreports/simple-and-affordable-licensing/
+url: /zh/jasperreports/simple-and-affordable-licensing/
 
 lastmod: "2021-06-05"
 
@@ -34,4 +34,4 @@ Aspose.PDF for JasperReports 评估版和付费版是相同的下载。试用版
 
 
 
-评估模式会在导出的报告中注入水印。 当你[购买许可证](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx)，[只需应用许可证](/pdf/jasperreports/licensing/)，水印将不再出现在输出文档中。
+评估模式会在导出的报告中注入水印。 当你[购买许可证](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx)，[只需应用许可证](/pdf/zh/jasperreports/licensing/)，水印将不再出现在输出文档中。

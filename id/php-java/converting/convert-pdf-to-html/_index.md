@@ -3,7 +3,7 @@ title: Mengonversi Berkas PDF ke Format HTML
 linktitle: Mengonversi Berkas PDF ke Format HTML
 type: docs
 weight: 50
-url: id/php-java/convert-pdf-to-html/
+url: /id/php-java/convert-pdf-to-html/
 lastmod: "2024-05-20"
 description: Topik ini menunjukkan cara Aspose.PDF memungkinkan mengonversi berkas PDF ke format HTML dengan pustaka PHP.
 sitemap:

@@ -3,7 +3,7 @@ title: Trabalhando com Gráficos em Arquivo PDF
 linktitle: Trabalhando com Gráficos
 type: docs
 weight: 70
-url: pt/net/graphs/
+url: /pt/net/graphs/
 description: Este artigo explica o que é um Gráfico, como criar um objeto retângulo preenchido e outras funções
 lastmod: "2022-02-17"
 sitemap:
@@ -81,17 +81,17 @@ aliases:
 ## O que é um Gráfico
 
 Adicionar gráficos a documentos PDF é uma tarefa muito comum para desenvolvedores ao trabalhar com o Adobe Acrobat Writer ou outras aplicações de processamento de PDF. Existem muitos tipos de gráficos que podem ser usados em aplicações PDF.
-[Aspose.PDF for .NET](/pdf/net/) também suporta a adição de gráficos a documentos PDF. Para esse propósito, a classe Graph é fornecida. Graph é um elemento de nível de parágrafo e pode ser adicionado à coleção Paragraphs em uma instância de Page. Uma instância de Graph contém uma coleção de Formas.
+[Aspose.PDF for .NET](/pdf/pt/net/) também suporta a adição de gráficos a documentos PDF. Para esse propósito, a classe Graph é fornecida. Graph é um elemento de nível de parágrafo e pode ser adicionado à coleção Paragraphs em uma instância de Page. Uma instância de Graph contém uma coleção de Formas.
 
 Os seguintes tipos de formas são suportados pela classe [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph):
 
-- [Arc](/pdf/net/add-arc/) - às vezes também chamado de bandeira, é um par ordenado de vértices adjacentes, mas às vezes também chamado de linha direcionada.
-- [Circle](/pdf/net/add-circle/) - exibe dados usando um círculo dividido em setores. Usamos um gráfico circular (também chamado de gráfico de pizza) para mostrar como os dados representam partes de um todo ou de um grupo.
-- [Curve](/pdf/net/add-curve/) - é uma união conectada de linhas projetivas, cada linha encontrando três outras em pontos duplos comuns.
-- [Curve](/pdf/net/add-curve/) - é uma união conectada de linhas projetivas, cada linha encontrando outras três em pontos duplos comuns.
-- [Line](/pdf/net/add-line) - gráficos de linha são usados para exibir dados contínuos e podem ser úteis na previsão de eventos futuros quando mostram tendências ao longo do tempo.
-- [Rectangle](/pdf/net/add-rectangle/) - é uma das muitas formas fundamentais que você verá em gráficos, pode ser muito útil para ajudar você a resolver um problema.
-- [Ellipse](/pdf/net/add-ellipse/) - é um conjunto de pontos em um plano, criando uma forma oval e curva.
+- [Arc](/pdf/pt/net/add-arc/) - às vezes também chamado de bandeira, é um par ordenado de vértices adjacentes, mas às vezes também chamado de linha direcionada.
+- [Circle](/pdf/pt/net/add-circle/) - exibe dados usando um círculo dividido em setores. Usamos um gráfico circular (também chamado de gráfico de pizza) para mostrar como os dados representam partes de um todo ou de um grupo.
+- [Curve](/pdf/pt/net/add-curve/) - é uma união conectada de linhas projetivas, cada linha encontrando três outras em pontos duplos comuns.
+- [Curve](/pdf/pt/net/add-curve/) - é uma união conectada de linhas projetivas, cada linha encontrando outras três em pontos duplos comuns.
+- [Line](/pdf/pt/net/add-line) - gráficos de linha são usados para exibir dados contínuos e podem ser úteis na previsão de eventos futuros quando mostram tendências ao longo do tempo.
+- [Rectangle](/pdf/pt/net/add-rectangle/) - é uma das muitas formas fundamentais que você verá em gráficos, pode ser muito útil para ajudar você a resolver um problema.
+- [Ellipse](/pdf/pt/net/add-ellipse/) - é um conjunto de pontos em um plano, criando uma forma oval e curva.
 
 Os detalhes acima também são retratados nas figuras abaixo:
 

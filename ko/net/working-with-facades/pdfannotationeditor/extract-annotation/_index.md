@@ -2,7 +2,7 @@
 title: PDF에서 주석 추출
 type: docs
 weight: 30
-url: ko/net/extract-annotation/
+url: /ko/net/extract-annotation/
 description: 이 섹션에서는 Aspose.PDF Facades를 사용하여 PDF 파일에서 XFDF로 주석을 추출하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 sitemap:

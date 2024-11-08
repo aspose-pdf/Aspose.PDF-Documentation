@@ -2,7 +2,7 @@
 title: Delete Annotations (facades)
 type: docs
 weight: 10
-url: pt/net/delete-annotations/
+url: /pt/net/delete-annotations/
 description: Esta seção explica como excluir anotações com Aspose.PDF Facades usando a Classe PdfAnnotationEditor.
 lastmod: "2021-06-05"
 sitemap:

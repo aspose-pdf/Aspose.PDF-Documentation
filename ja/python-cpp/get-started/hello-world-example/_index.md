@@ -3,7 +3,7 @@ title: Python言語を使用したHello Worldの例
 linktitle: Hello Worldの例
 type: docs
 weight: 20
-url: ja/python-cpp/hello-world-example/
+url: /ja/python-cpp/hello-world-example/
 description: このサンプルは、Aspose.PDF for Pythonを使用してシンプルなPDF「Hello, World!」ドキュメントを作成する方法を示しています。
 lastmod: "2023-07-27"
 sitemap:

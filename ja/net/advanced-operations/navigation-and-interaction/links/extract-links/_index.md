@@ -3,7 +3,7 @@ title: PDFファイルからリンクを抽出する
 linktitle: リンクを抽出する
 type: docs
 weight: 30
-url: ja/net/extract-links/
+url: /ja/net/extract-links/
 description: C#を使用してPDFからリンクを抽出します。このトピックでは、AnnotationSelectorクラスを使用してリンクを抽出する方法を説明します。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "C#を使用してPDFからリンクを抽出します。このトピックでは、AnnotationSelectorクラスを使用してリンクを抽出する方法を説明します。"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリとも連携します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
 ## PDFファイルからリンクを抽出する
 

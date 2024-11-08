@@ -3,7 +3,7 @@ title: تحويل PDF إلى Excel في C++
 linktitle: تحويل PDF إلى Excel
 type: docs
 weight: 20
-url: ar/cpp/convert-pdf-to-excel/
+url: /ar/cpp/convert-pdf-to-excel/
 lastmod: "2021-11-19"
 description: يسمح لك Aspose.PDF for C++ بتحويل PDF إلى تنسيق Excel باستخدام C++. أثناء ذلك، يتم تحويل الصفحات الفردية لملف PDF إلى أوراق عمل Excel.
 sitemap:

@@ -2,7 +2,7 @@
 title: Fusionner des images 
 type: docs
 weight: 20
-url: fr/net/merge-images/
+url: /fr/net/merge-images/
 description: Cette section explique comment fusionner des images, et il est possible de sauvegarder au format Tiff.
 lastmod: "2021-06-05"
 draft: false

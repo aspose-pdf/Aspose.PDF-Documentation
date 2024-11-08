@@ -3,7 +3,7 @@ title: PDF 포트폴리오 작업
 linktitle: 포트폴리오
 type: docs
 weight: 40
-url: ko/net/portfolio/
+url: /ko/net/portfolio/
 description: C#을 사용하여 PDF 포트폴리오를 만드는 방법. Microsoft Excel 파일, Word 문서 및 이미지 파일을 사용하여 PDF 포트폴리오를 생성해야 합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -84,7 +84,7 @@ Aspose.PDF를 사용하여 [Document](https://reference.aspose.com/pdf/net/aspos
 
 아래 코드는 다음 포트폴리오를 결과로 합니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ### Aspose.PDF로 생성된 PDF 포트폴리오
 

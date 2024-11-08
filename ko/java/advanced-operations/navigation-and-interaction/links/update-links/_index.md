@@ -3,7 +3,7 @@ title: PDF에서 링크 업데이트
 linktitle: 링크 업데이트
 type: docs
 weight: 20
-url: ko/java/update-links/
+url: /ko/java/update-links/
 description: PDF의 링크를 프로그래밍 방식으로 업데이트합니다. 이 가이드는 Java 언어로 PDF의 링크를 업데이트하는 방법에 관한 것입니다.
 lastmod: "2021-06-05"
 sitemap:

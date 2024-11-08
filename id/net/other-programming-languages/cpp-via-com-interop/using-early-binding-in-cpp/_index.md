@@ -2,14 +2,14 @@
 title: Menggunakan early binding di CPP
 type: docs
 weight: 10
-url: id/net/using-early-binding-in-cpp/
+url: /id/net/using-early-binding-in-cpp/
 ---
 
 ## Prasyarat
 
 {{% alert color="primary" %}}
 
-Silakan daftar Aspose.PDF untuk .NET dengan COM Interop, silakan periksa artikel yang bernama [Gunakan Aspose.pdf untuk .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Silakan daftar Aspose.PDF untuk .NET dengan COM Interop, silakan periksa artikel yang bernama [Gunakan Aspose.pdf untuk .NET via COM Interop](/pdf/id/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

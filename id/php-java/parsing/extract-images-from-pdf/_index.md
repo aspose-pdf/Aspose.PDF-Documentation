@@ -3,7 +3,7 @@ title: Ekstrak Gambar dari PDF
 linktitle: Ekstrak Gambar
 type: docs
 weight: 20
-url: id/php-java/extract-images-from-the-pdf-file/
+url: /id/php-java/extract-images-from-the-pdf-file/
 description: Cara mengekstrak bagian dari gambar dari PDF menggunakan Aspose.PDF untuk PHP
 lastmod: "2024-06-05"
 sitemap:

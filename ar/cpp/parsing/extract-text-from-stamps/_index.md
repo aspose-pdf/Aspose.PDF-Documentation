@@ -3,7 +3,7 @@ title: استخراج النص من الأختام
 linktitle: استخراج النص من الأختام
 type: docs
 weight: 60
-url: ar/cpp/extract-text-from-stamps/
+url: /ar/cpp/extract-text-from-stamps/
 ---
 
 ## استخراج النص من التعليقات التوضيحية للأختام

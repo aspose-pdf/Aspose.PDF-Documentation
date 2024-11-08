@@ -2,7 +2,7 @@
 title: Trabajando con Firma en Archivo PDF
 type: docs
 weight: 40
-url: es/net/working-with-signature-in-a-pdf-file/
+url: /es/net/working-with-signature-in-a-pdf-file/
 description: Esta sección explica cómo extraer información de la firma, extraer imagen de la firma, cambiar el idioma, etc. usando la clase PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: PDFでの見出しの操作
 type: docs
 weight: 70
-url: ja/java/working-with-headings/
+url: /ja/java/working-with-headings/
 lastmod: "2021-06-05"
 description: JavaでPDFドキュメントの見出しに番号を付けます。Aspose.PDF for Javaはさまざまな種類の番号スタイルを提供します。
 sitemap:

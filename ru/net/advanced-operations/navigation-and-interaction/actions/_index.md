@@ -3,7 +3,7 @@ title: Работа с действиями в PDF
 linktitle: Действия
 type: docs
 weight: 20
-url: ru/net/actions/
+url: /ru/net/actions/
 description: Этот раздел объясняет, как программно добавлять действия в документ и поля формы с помощью C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "Этот раздел объясняет, как программно добавлять действия в документ и поля формы с помощью C#."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавление гиперссылки в файл PDF
 

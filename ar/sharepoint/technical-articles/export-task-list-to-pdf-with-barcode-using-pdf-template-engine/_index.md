@@ -2,7 +2,7 @@
 title: تصدير قائمة المهام إلى PDF مع الباركود باستخدام محرك قوالب PDF
 type: docs
 weight: 40
-url: ar/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
+url: /ar/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
 lastmod: "2020-12-16"
 description: يمكن لواجهة برمجة تطبيقات PDF لـ SharePoint تصدير قائمة المهام إلى PDF مع الباركود باستخدام محرك قوالب PDF.
 ---

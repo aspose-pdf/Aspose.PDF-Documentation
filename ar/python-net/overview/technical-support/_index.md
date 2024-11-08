@@ -8,7 +8,7 @@ type: docs
 
 weight: 60
 
-url: ar/python-net/technical-support/
+url: /ar/python-net/technical-support/
 
 description: تقدم هذه الصفحة توصيات لحل مهامك بسرعة وجودة باستخدام Aspose.PDF لبايثون.
 

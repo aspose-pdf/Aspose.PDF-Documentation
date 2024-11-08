@@ -2,7 +2,7 @@
 title: Conversor de PNG
 type: docs
 weight: 110
-url: pt/net/plugins/png/
+url: /pt/net/plugins/png/
 description: Converta documentos PDF em imagens PNG com o Plugin Aspose.PDF PNG
 lastmod: "2024-01-24"
 ---

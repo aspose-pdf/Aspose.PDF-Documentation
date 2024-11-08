@@ -2,7 +2,7 @@
 title: Extrair Texto de Carimbos
 type: docs
 weight: 60
-url: pt/php-java/extract-text-from-stamps/
+url: /pt/php-java/extract-text-from-stamps/
 ---
 
 ## Extrair Texto de Anotações de Carimbo

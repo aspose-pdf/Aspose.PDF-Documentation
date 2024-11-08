@@ -3,7 +3,7 @@ title: Añadir sellos de texto en PDF programáticamente
 linktitle: Sellos de texto en archivo PDF
 type: docs
 weight: 20
-url: es/java/text-stamps-in-the-pdf-file/
+url: /es/java/text-stamps-in-the-pdf-file/
 description: Añadir un sello de texto a un archivo PDF usando la clase TextStamp con Java.
 lastmod: "2021-06-05"
 sitemap:

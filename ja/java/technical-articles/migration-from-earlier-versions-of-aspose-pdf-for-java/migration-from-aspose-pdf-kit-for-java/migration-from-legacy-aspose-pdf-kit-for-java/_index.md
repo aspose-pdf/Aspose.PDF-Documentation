@@ -2,7 +2,7 @@
 title: レガシーAspose.Pdf.Kit for Javaからの移行
 type: docs
 weight: 10
-url: ja/java/migration-from-legacy-aspose-pdf-kit-for-java/
+url: /ja/java/migration-from-legacy-aspose-pdf-kit-for-java/
 lastmod: "2022-01-27"
 ---
 

@@ -3,7 +3,7 @@ title: Adicionar Carimbos de Página em PDF usando C#
 linktitle: Carimbos de página em arquivo PDF
 type: docs
 weight: 30
-url: pt/net/page-stamps-in-the-pdf-file/
+url: /pt/net/page-stamps-in-the-pdf-file/
 description: Adicione um carimbo de página a um documento PDF usando a classe PdfPageStamp com a biblioteca Aspose.PDF para .NET.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 Um [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) pode ser usado quando você precisa aplicar um carimbo composto contendo gráficos, texto, tabelas. O exemplo a seguir mostra como usar um carimbo para criar papel timbrado como no Adobe InDesign, Illustrator, Microsoft Word. Suponha que temos um documento de entrada e queremos aplicar 2 tipos de borda com as cores azul e ameixa.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 public static void AddPageStamp()

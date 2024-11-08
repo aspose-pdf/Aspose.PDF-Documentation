@@ -3,7 +3,7 @@ title: إضافة مرفق إلى مستند PDF
 linktitle: إضافة مرفق إلى مستند PDF 
 type: docs
 weight: 10
-url: ar/java/add-attachment-to-pdf-document/
+url: /ar/java/add-attachment-to-pdf-document/
 description: تصف هذه الصفحة كيفية إضافة مرفق إلى ملف PDF باستخدام Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Извлечение текста с надстрочными и подс
 linktitle: Извлечение надстрочных и подстрочных знаков
 type: docs
 weight: 30
-url: ru/net/extract-superscripts-subscripts-from-pdf/
+url: /ru/net/extract-superscripts-subscripts-from-pdf/
 description: Эта статья описывает различные способы извлечения текста с надстрочными и подстрочными знаками из PDF с использованием Aspose.PDF в C#.
 lastmod: "2022-10-07"
 sitemap:
@@ -21,7 +21,7 @@ sitemap:
 
 Используйте класс **TextFragmentAbsorber** и вы уже можете делать что угодно с найденным текстом, то есть, вы можете просто использовать весь текст. Попробуйте следующий фрагмент кода:
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));
@@ -35,8 +35,8 @@ sitemap:
 
 Или используйте **TextFragments** отдельно и выполняйте с ними различные манипуляции, например, сортировку по координатам или по размеру.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
-Следующий код также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий код также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
     Document doc = new Document(GetInputPath("test1.pdf"));

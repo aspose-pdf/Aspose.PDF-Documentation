@@ -3,7 +3,7 @@ title: إضافة صورة إلى ملف PDF باستخدام Python
 linktitle: إضافة صورة
 type: docs
 weight: 10
-url: ar/python-net/add-image-to-existing-pdf-file/
+url: /ar/python-net/add-image-to-existing-pdf-file/
 description: يصف هذا القسم كيفية إضافة صورة إلى ملف PDF موجود باستخدام مكتبة Python.
 lastmod: "2022-02-17"
 ---

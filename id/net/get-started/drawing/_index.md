@@ -3,7 +3,7 @@ title: Tinjauan Aspose.PDF.Drawing untuk .NET
 linktitle: Versi PDF.Drawing
 type: docs
 weight: 130
-url: id/net/drawing/
+url: /id/net/drawing/
 lastmod: "2023-12-21"
 description: Tinjauan fitur kunci dan keuntungan dari perpustakaan Aspose.PDF.Drawing untuk .NET.
 sitemap:
@@ -69,7 +69,7 @@ Untuk mencetak dokumen PDF, System.Drawing.Common digunakan, sehingga hanya akan
 
 ## Lisensi
 
-Tidak ada lisensi tambahan untuk Aspose.PDF.Drawing, gunakan yang sama seperti untuk Aspose.PDF. Periksa bagian [Lisensi Aspose PDF](/pdf/net/licensing/).
+Tidak ada lisensi tambahan untuk Aspose.PDF.Drawing, gunakan yang sama seperti untuk Aspose.PDF. Periksa bagian [Lisensi Aspose PDF](/pdf/id/net/licensing/).
 
 ## Instalasi
 
@@ -82,7 +82,7 @@ Pelajari kelas yang tersedia di Aspose.PDF.Drawing di situs [Referensi API](http
 
 Pelajari lebih lanjut tentang:
 
-- [Format File yang Didukung](/pdf/net/supported-file-formats/)
-- [Persyaratan Sistem](/pdf/net/system-requirements/)
-- [Lisensi](/pdf/net/licensing/)
-- [Dukungan Teknis](/pdf/net/technical-support/)
+- [Format File yang Didukung](/pdf/id/net/supported-file-formats/)
+- [Persyaratan Sistem](/pdf/id/net/system-requirements/)
+- [Lisensi](/pdf/id/net/licensing/)
+- [Dukungan Teknis](/pdf/id/net/technical-support/)

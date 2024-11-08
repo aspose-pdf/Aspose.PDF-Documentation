@@ -2,7 +2,7 @@
 title: Obtenir et Définir les Propriétés de Page
 type: docs
 weight: 20
-url: fr/cpp/get-and-set-page-properties/
+url: /fr/cpp/get-and-set-page-properties/
 description: Vous pouvez obtenir et définir les propriétés de page de votre fichier PDF en utilisant la bibliothèque C++.
 lastmod: "2021-12-09"
 sitemap:

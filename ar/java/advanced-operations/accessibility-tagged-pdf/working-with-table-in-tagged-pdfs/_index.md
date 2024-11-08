@@ -3,7 +3,7 @@ title: العمل مع الجداول في ملفات PDF الموسومة
 linktitle: العمل مع الجداول في ملفات PDF الموسومة
 type: docs
 weight: 40
-url: ar/java/working-with-table-in-tagged-pdfs/
+url: /ar/java/working-with-table-in-tagged-pdfs/
 description: تشرح هذه المقالة كيفية العمل مع الجدول في مستند PDF الموسوم باستخدام Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

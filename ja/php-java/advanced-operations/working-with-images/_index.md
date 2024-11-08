@@ -3,7 +3,7 @@ title: PDFでの画像の操作
 linktitle: 画像の操作
 type: docs
 weight: 40
-url: ja/php-java/working-with-images/
+url: /ja/php-java/working-with-images/
 description: このセクションでは、PHPを使用してPDFファイル内の画像を操作する機能について説明します。
 lastmod: "2024-06-05"
 sitemap:
@@ -23,4 +23,4 @@ PDFフォーマットでの画像は非常に複雑なトピックです。
 
 次のことが可能です：
 
-- [既存のPDFファイルに画像を追加する](/pdf/php-java/add-image-to-existing-pdf-file/) - PDFドキュメントに単一の画像の画像と参照を追加し、その後品質をコントロールします。
+- [既存のPDFファイルに画像を追加する](/pdf/ja/php-java/add-image-to-existing-pdf-file/) - PDFドキュメントに単一の画像の画像と参照を追加し、その後品質をコントロールします。

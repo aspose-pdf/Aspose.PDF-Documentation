@@ -3,7 +3,7 @@ title: تحويل WebForms DataGridView إلى PDF
 linktitle: تحويل WebForms DataGridView إلى PDF
 type: docs
 weight: 20
-url: ar/net/render-webforms-datagridview-to-pdf/
+url: /ar/net/render-webforms-datagridview-to-pdf/
 description: توضح هذه العينة كيفية استخدام مكتبة Aspose.PDF لتقديم WebForm إلى PDF.
 lastmod: "2021-06-05"
 sitemap:

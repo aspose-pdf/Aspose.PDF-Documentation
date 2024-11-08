@@ -3,7 +3,7 @@ title: PDF 문서 파싱
 linktitle: PDF 문서 파싱
 type: docs
 weight: 80
-url: ko/python-net/parsing/
+url: /ko/python-net/parsing/
 description: PDF 문서를 파싱하고 싶으신가요? Aspose.PDF for Python via .NET을 사용하여 다양한 PDF 데이터 추출 방법을 알아보세요.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: العمل مع النماذج في PDF
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ar/java/acroforms/
+url: /ar/java/acroforms/
 description: مع Aspose.PDF لـ Java يمكنك إنشاء نموذج من الصفر، ملء حقل النموذج في مستند PDF، استخراج البيانات من النموذج، إضافة أو إزالة الحقول في النموذج الحالي.
 lastmod: "2021-06-05"
 sitemap:
@@ -34,10 +34,10 @@ sitemap:
 
 لدراسة أكثر تفصيلاً لإمكانيات العمل مع النماذج، ادرس المقالات التالية في القسم:
 
--[إنشاء AcroForm](/pdf/java/create-form/) - إنشاء نموذج من الصفر، إضافة RadioButtonField، TextBoxField، حقل التسمية باستخدام جافا.
+-[إنشاء AcroForm](/pdf/ar/java/create-form/) - إنشاء نموذج من الصفر، إضافة RadioButtonField، TextBoxField، حقل التسمية باستخدام جافا.
 
--[ملء AcroForm](/pdf/java/fill-form/) - لملء حقل في النموذج، احصل على الحقل من مجموعة النماذج لكائن Document.
+-[ملء AcroForm](/pdf/ar/java/fill-form/) - لملء حقل في النموذج، احصل على الحقل من مجموعة النماذج لكائن Document.
 
--[استخراج بيانات AcroForm](/pdf/java/extract-form/) - الحصول على القيم من جميع الحقول والفردية وغيرها.
+-[استخراج بيانات AcroForm](/pdf/ar/java/extract-form/) - الحصول على القيم من جميع الحقول والفردية وغيرها.
 
--[تعديل AcroForm](/pdf/java/modifing-form/) - الحصول/تعيين FieldLimit، إزالة الحقول في النموذج الحالي، تعيين خط حقل النموذج بخلاف الـ 14 خطوط PDF الأساسية باستخدام جافا.
+-[تعديل AcroForm](/pdf/ar/java/modifing-form/) - الحصول/تعيين FieldLimit، إزالة الحقول في النموذج الحالي، تعيين خط حقل النموذج بخلاف الـ 14 خطوط PDF الأساسية باستخدام جافا.

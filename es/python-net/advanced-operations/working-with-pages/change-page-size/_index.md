@@ -3,7 +3,7 @@ title: Cambiar el Tamaño de la Página PDF con Python
 linktitle: Cambiar el Tamaño de la Página PDF
 type: docs
 weight: 60
-url: es/python-net/change-page-size/
+url: /es/python-net/change-page-size/
 description: Cambia el tamaño de la página de tu documento PDF usando la biblioteca Aspose.PDF para Python a través de .NET.
 lastmod: "2023-04-17"
 sitemap:

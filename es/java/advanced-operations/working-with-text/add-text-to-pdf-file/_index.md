@@ -3,7 +3,7 @@ title: Agregar Texto al Archivo PDF
 linktitle: Agregar Texto al Archivo PDF
 type: docs
 weight: 10
-url: es/java/add-text-to-pdf-file/
+url: /es/java/add-text-to-pdf-file/
 description: Este artículo describe varios aspectos del trabajo con texto en Aspose.PDF. Aprende cómo agregar texto a PDF, agregar fragmentos HTML o usar fuentes OTF personalizadas.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Fonctionnalités Clés d'Aspose.PDF
 linktitle: Fonctionnalités Clés
 type: docs
 weight: 20
-url: fr/androidjava/key-features/
+url: /fr/androidjava/key-features/
 description: Aspose.PDF pour Android via Java montre les principales fonctionnalités pour travailler avec des documents PDF.
 lastmod: "2021-06-05"
 sitemap:

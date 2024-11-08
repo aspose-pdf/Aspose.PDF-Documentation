@@ -3,7 +3,7 @@ title: حذف صفحات PDF برمجيًا باستخدام Python
 linktitle: حذف صفحات PDF
 type: docs
 weight: 80
-url: ar/python-net/delete-pages/
+url: /ar/python-net/delete-pages/
 description: يمكنك حذف الصفحات من ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ Python عبر .NET.
 lastmod: "2023-04-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Format File yang Didukung C++
 linktitle: Format File yang Didukung
 type: docs
 weight: 70
-url: id/cpp/supported-file-formats/
+url: /id/cpp/supported-file-formats/
 description: Halaman ini menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF untuk C++.
 lastmod: "2021-11-08"
 sitemap:

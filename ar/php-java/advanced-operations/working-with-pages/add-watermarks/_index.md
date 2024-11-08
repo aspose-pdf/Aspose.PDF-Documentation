@@ -3,7 +3,7 @@ title: إضافة علامة مائية إلى PDF
 linktitle: إضافة علامة مائية
 type: docs
 weight: 90
-url: ar/php-java/add-watermarks/
+url: /ar/php-java/add-watermarks/
 description: توضح هذه المقالة ميزات العمل مع القطع الأثرية والحصول على العلامات المائية في ملفات PDF باستخدام PHP.
 lastmod: "2024-06-05"
 sitemap:

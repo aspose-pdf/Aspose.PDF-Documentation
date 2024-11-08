@@ -3,7 +3,7 @@ title: Tambahkan Halaman dalam PDF
 linktitle: Tambahkan Halaman
 type: docs
 weight: 10
-url: id/php-java/add-pages/
+url: /id/php-java/add-pages/
 description: Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghapus) halaman dari file PDF menggunakan PHP.
 lastmod: "2024-06-05"
 sitemap:

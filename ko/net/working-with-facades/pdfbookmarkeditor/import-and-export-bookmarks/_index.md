@@ -2,7 +2,7 @@
 title: 북마크 가져오기 및 내보내기
 type: docs
 weight: 20
-url: ko/net/import-and-export-bookmarks/
+url: /ko/net/import-and-export-bookmarks/
 description: 이 섹션에서는 Aspose.PDF Facades로 북마크를 가져오고 내보내는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

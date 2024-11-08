@@ -3,7 +3,7 @@ title: Adicionar Carimbos de Imagem em PDF usando JavaScript via C++
 linktitle: Carimbos de Imagem em Arquivo PDF
 type: docs
 weight: 60
-url: pt/javascript-cpp/stamping/
+url: /pt/javascript-cpp/stamping/
 description: Adicione o Carimbo de Imagem ao seu documento PDF usando a função AsposePdfAddStamp com o toolkit JavaScript.
 lastmod: "2023-04-15"
 sitemap:

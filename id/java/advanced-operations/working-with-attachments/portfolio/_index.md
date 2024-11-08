@@ -3,7 +3,7 @@ title: Bekerja dengan Portofolio dalam Dokumen PDF
 linktitle: Portofolio
 type: docs
 weight: 40
-url: id/java/portfolio/
+url: /id/java/portfolio/
 description: Cara Membuat Portofolio PDF dengan Java. Anda harus menggunakan File Microsoft Excel, dokumen Word, dan file gambar untuk membuat Portofolio PDF.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@ title: Ajouter des tampons d'image au PDF dans Node.js
 linktitle: Tampons d'image dans le fichier PDF
 type: docs
 weight: 60
-url: fr/nodejs-cpp/stamping/
+url: /fr/nodejs-cpp/stamping/
 description: Ajouter le tampon d'image dans votre document PDF en utilisant AsposePdfAddStamp avec l'outil Node.js.
 lastmod: "2023-11-16"
 sitemap:

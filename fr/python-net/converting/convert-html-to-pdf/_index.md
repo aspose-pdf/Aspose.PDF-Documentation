@@ -3,7 +3,7 @@ title: Convertir HTML en PDF en Python
 linktitle: Convertir un fichier HTML en PDF
 type: docs
 weight: 40
-url: fr/python-net/convert-html-to-pdf/
+url: /fr/python-net/convert-html-to-pdf/
 lastmod: "2022-12-22"
 description: Ce sujet vous montre comment convertir HTML en PDF et MHTML en PDF en utilisant Aspose.PDF. pour Python.
 sitemap:

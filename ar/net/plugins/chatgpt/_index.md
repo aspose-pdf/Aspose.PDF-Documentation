@@ -2,7 +2,7 @@
 title: ChatGPT
 type: docs
 weight: 30
-url: ar/net/plugins/chatGPT/
+url: /ar/net/plugins/chatGPT/
 description: كيفية توليد استجابات ChatGPT المدعومة بالذكاء الاصطناعي وتخزينها في ملف PDF
 lastmod: "2024-02-24"
 ---

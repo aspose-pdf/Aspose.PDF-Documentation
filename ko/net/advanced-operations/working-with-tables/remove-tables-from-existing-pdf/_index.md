@@ -3,7 +3,7 @@ title: 기존 PDF에서 테이블 제거
 linktitle: 테이블 제거
 type: docs
 weight: 50
-url: ko/net/remove-tables-from-existing-pdf/
+url: /ko/net/remove-tables-from-existing-pdf/
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -82,7 +82,7 @@ Aspose.PDF for NET은 PDF 문서를 처음부터 생성하거나 기존 PDF 문�
 
 테이블을 제거하려면 [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) 클래스를 사용하여 기존 PDF에서 테이블을 찾은 다음 [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove)를 호출해야 합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ## PDF 문서에서 테이블 제거
 

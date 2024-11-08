@@ -3,7 +3,7 @@ title: Ajouter, Supprimer et Obtenir une Annotation
 type: docs
 linktitle: Ajouter, Supprimer et Obtenir une Annotation
 weight: 20
-url: fr/java/add-delete-and-get-annotation/
+url: /fr/java/add-delete-and-get-annotation/
 description: Avec Aspose.PDF pour Java, vous pouvez ajouter, supprimer et obtenir une annotation de votre fichier PDF. Consultez toutes les listes d'annotations pour résoudre votre tâche.
 lastmod: "2021-11-28"
 sitemap:
@@ -17,10 +17,10 @@ Ce sont des objets supplémentaires que vous ajoutez à votre fichier pour éten
 
 Nous avons regroupé les différents types d'annotation disponibles pour la bibliothèque Aspose.PDF pour Java en groupes :
 
-- [Annotation de Texte PDF](/pdf/java/text-annotation/)
-- [Annotation de Surlignage PDF](/pdf/java/highlights-annotation/)
-- [Annotation de Figures PDF](/pdf/java/figures-annotation/)
-- [Annotation Multimédia](/pdf/java/multimedia-annotation/)
+- [Annotation de Texte PDF](/pdf/fr/java/text-annotation/)
+- [Annotation de Surlignage PDF](/pdf/fr/java/highlights-annotation/)
+- [Annotation de Figures PDF](/pdf/fr/java/figures-annotation/)
+- [Annotation Multimédia](/pdf/fr/java/multimedia-annotation/)
 
-- [Annotations Autocollantes PDF](/pdf/java/sticky-annotations/)
- - [Annotations supplémentaires](/pdf/java/extra-annotations/)
+- [Annotations Autocollantes PDF](/pdf/fr/java/sticky-annotations/)
+ - [Annotations supplémentaires](/pdf/fr/java/extra-annotations/)

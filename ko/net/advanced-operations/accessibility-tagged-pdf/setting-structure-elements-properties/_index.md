@@ -3,7 +3,7 @@ title: 구조 요소 속성 설정
 linktitle: 구조 요소 속성 설정
 type: docs
 weight: 30
-url: ko/net/setting-structure-elements-properties/
+url: /ko/net/setting-structure-elements-properties/
 description: Aspose.PDF for .NET으로 PDF 문서의 다양한 구조 요소 속성을 설정할 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:

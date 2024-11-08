@@ -3,7 +3,7 @@ title: Bekerja dengan Operator menggunakan C++
 linktitle: Bekerja dengan Operator
 type: docs
 weight: 170
-url: id/cpp/operators/
+url: /id/cpp/operators/
 description: Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF dalam C++. Kelas operator menyediakan fitur hebat untuk manipulasi PDF.
 lastmod: "2021-12-14"
 sitemap:

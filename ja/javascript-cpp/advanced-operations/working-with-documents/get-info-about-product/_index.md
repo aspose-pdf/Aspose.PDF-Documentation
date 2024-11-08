@@ -3,7 +3,7 @@ title: JavaScriptを使用して製品情報を取得する
 linktitle: 製品情報を取得する
 type: docs
 weight: 70
-url: ja/javascript-cpp/get-info-about-product/
+url: /ja/javascript-cpp/get-info-about-product/
 description: このトピックでは、C++経由でAspose.PDF for JavaScriptを使用して製品情報を取得する方法を示します。
 lastmod: "2023-11-16"
 sitemap:

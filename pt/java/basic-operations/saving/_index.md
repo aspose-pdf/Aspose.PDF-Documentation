@@ -3,7 +3,7 @@ title: Salvar Documento PDF
 linktitle: Salvar
 type: docs
 weight: 30
-url: pt/java/save-pdf-document/
+url: /pt/java/save-pdf-document/
 description: Aprenda como salvar um arquivo PDF com a biblioteca Aspose.PDF para Java.
 lastmod: "2021-06-05"
 sitemap:

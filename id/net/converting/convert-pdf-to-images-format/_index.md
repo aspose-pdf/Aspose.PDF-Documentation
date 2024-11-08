@@ -3,7 +3,7 @@ title: Mengonversi PDF ke Berbagai Format Gambar dalam C#
 linktitle: Mengonversi PDF ke Gambar
 type: docs
 weight: 70
-url: id/net/convert-pdf-to-images-format/
+url: /id/net/convert-pdf-to-images-format/
 lastmod: "2021-11-01"
 description: Topik ini menunjukkan cara menggunakan Aspose.PDF untuk mengonversi PDF ke berbagai format gambar seperti TIFF, BMP, EMF, JPEG, PNG, GIF, SVG dengan beberapa baris kode.
 sitemap:
@@ -56,7 +56,7 @@ _Format Gambar_: **SVG**
 
 ## C# Konversi PDF ke Gambar
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 **Aspose.PDF untuk .NET** menggunakan beberapa pendekatan untuk mengkonversi PDF ke gambar.
 **Aspose.PDF for .NET** menggunakan beberapa pendekatan untuk mengonversi PDF menjadi gambar.

@@ -3,7 +3,7 @@ title: Ajouter un arrière-plan au PDF en Node.js
 linktitle: Ajouter un arrière-plan
 type: docs
 weight: 10
-url: fr/nodejs-cpp/add-background/
+url: /fr/nodejs-cpp/add-background/
 description: Ajouter une image d'arrière-plan à votre fichier PDF en Node.js
 lastmod: "2023-11-16"
 sitemap:

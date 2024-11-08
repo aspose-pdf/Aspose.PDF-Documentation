@@ -3,7 +3,7 @@ title: C++を介してPythonを使用してPDFのサイズを設定する
 linktitle: PDFのサイズを設定する
 type: docs
 weight: 30
-url: ja/python-cpp/get-and-set-page-properties/
+url: /ja/python-cpp/get-and-set-page-properties/
 description: このセクションでは、C++を介してPythonを使用して、ドキュメントのサイズなどのPDFページのプロパティを取得または設定する方法を示します。
 lastmod: "2024-04-17"
 sitemap:

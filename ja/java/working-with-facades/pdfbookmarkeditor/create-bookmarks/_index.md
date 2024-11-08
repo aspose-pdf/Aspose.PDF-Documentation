@@ -2,7 +2,7 @@
 title: すべてのページのブックマークを作成する（ファサード）
 type: docs
 weight: 10
-url: ja/java/create-bookmark/
+url: /ja/java/create-bookmark/
 description: このセクションでは、PdfBookmarEditor クラスを使用して Aspose.PDF ファサードでブックマークを作成する方法を説明します。
 lastmod: "2021-06-05"
 sitemap:

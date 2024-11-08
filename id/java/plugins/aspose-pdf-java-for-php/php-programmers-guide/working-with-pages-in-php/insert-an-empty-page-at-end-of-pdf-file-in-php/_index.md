@@ -2,7 +2,7 @@
 title: Menyisipkan Halaman Kosong di Akhir File PDF dalam PHP
 type: docs
 weight: 60
-url: id/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
+url: /id/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

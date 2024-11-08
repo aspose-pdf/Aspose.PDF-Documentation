@@ -3,7 +3,7 @@ title: デフォルトフォント名の設定
 linktitle: デフォルトフォント名の設定
 type: docs
 weight: 90
-url: ja/java/set-default-font-name/
+url: /ja/java/set-default-font-name/
 description: このセクションでは、Aspose.PDF for Javaライブラリを使用してデフォルトフォント名を設定する方法について説明します。
 lastmod: "2021-06-05"
 ---

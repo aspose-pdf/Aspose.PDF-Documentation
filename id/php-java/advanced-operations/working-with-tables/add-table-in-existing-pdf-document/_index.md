@@ -3,7 +3,7 @@ title: Membuat atau Menambah Tabel Dalam PDF
 linktitle: Membuat atau Menambah Tabel
 type: docs
 weight: 10
-url: id/php-java/add-table-in-existing-pdf-document/
+url: /id/php-java/add-table-in-existing-pdf-document/
 description: Pelajari cara membuat atau menambah tabel ke dokumen PDF, menerapkan gaya sel, membagi tabel pada halaman dan menyesuaikan baris dan kolom dll.
 lastmod: "2024-05-16"
 sitemap:

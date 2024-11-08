@@ -1,7 +1,7 @@
 ---
 title: Dapatkan dan Atur Properti Halaman
 type: docs
-url: id/net/get-and-set-page-properties/
+url: /id/net/get-and-set-page-properties/
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -72,7 +72,7 @@ lastmod: "2022-02-17"
 
 Aspose.PDF untuk .NET memungkinkan Anda membaca dan mengatur properti halaman dalam file PDF di aplikasi .NET Anda. Bagian ini menunjukkan cara mendapatkan jumlah halaman dalam file PDF, mendapatkan informasi tentang properti halaman PDF seperti warna dan mengatur properti halaman. Contoh yang diberikan adalah dalam C# tetapi Anda dapat menggunakan bahasa .NET lain seperti VB.NET untuk mencapai hal yang sama.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Dapatkan Jumlah Halaman dalam File PDF
 
@@ -119,7 +119,7 @@ Dari sana, Anda dapat mengakses objek Page secara individual menggunakan indeksn
 
 ## Dapatkan Halaman Tertentu dari File PDF
 
-Aspose.PDF memungkinkan Anda untuk [memisahkan PDF menjadi halaman-halaman individual](/pdf/net/split-pdf-document/) dan menyimpannya sebagai file PDF. Mendapatkan halaman tertentu dalam file PDF dan menyimpannya sebagai PDF baru adalah operasi yang sangat mirip: buka dokumen sumber, akses halaman, buat dokumen baru dan tambahkan halaman ke dalamnya.
+Aspose.PDF memungkinkan Anda untuk [memisahkan PDF menjadi halaman-halaman individual](/pdf/id/net/split-pdf-document/) dan menyimpannya sebagai file PDF. Mendapatkan halaman tertentu dalam file PDF dan menyimpannya sebagai PDF baru adalah operasi yang sangat mirip: buka dokumen sumber, akses halaman, buat dokumen baru dan tambahkan halaman ke dalamnya.
 
 Objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) nya menampung halaman-halaman dalam file PDF.
 Objek [Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document) memiliki [Koleksi Halaman](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) yang menyimpan halaman dalam file PDF.

@@ -3,7 +3,7 @@ title: Pemformatan Teks di dalam PDF menggunakan Python
 linktitle: Pemformatan Teks di dalam PDF
 type: docs
 weight: 30
-url: id/python-net/text-formatting-inside-pdf/
+url: /id/python-net/text-formatting-inside-pdf/
 description: Halaman ini menjelaskan bagaimana cara memformat teks di dalam file PDF Anda. Ada menambahkan indentasi baris, menambahkan batas teks, menambahkan teks bergaris bawah, dan lain-lain.
 lastmod: "2024-02-17"
 sitemap:

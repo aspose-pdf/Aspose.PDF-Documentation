@@ -3,7 +3,7 @@ title: アクセシビリティとタグ付きPDFの作業
 linktitle: アクセシビリティ。タグ付きPDF
 type: docs
 weight: 120
-url: ja/java/accessibility-tagged-pdf/
+url: /ja/java/accessibility-tagged-pdf/
 description: Aspose.PDFは、構造要素にタグを付けることができるタグ付きPDFドキュメントを作成する機能を提供します。アクセシブルなPDFの取得方法について詳しく学びましょう。
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ Aspose.PDFは、PDF/UA標準（「Section 508」または「WCAG標準」とも�
 
 このセクションでは、次のトピックをカバーしています：
 
-- [タグ付きPDFを作成する](/pdf/java/create-tagged-pdf-documents/)
-- [タグ付きPDFからタグ付きコンテンツを抽出する](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
-- [構造要素のプロパティを設定する](/pdf/java/set-tagged-pdfs-element-properties/)
-- [タグ付きPDFでテーブルを操作する](/pdf/java/working-with-table-in-tagged-pdfs/)
+- [タグ付きPDFを作成する](/pdf/ja/java/create-tagged-pdf-documents/)
+- [タグ付きPDFからタグ付きコンテンツを抽出する](/pdf/ja/java/extract-tagged-content-from-tagged-pdfs/)
+- [構造要素のプロパティを設定する](/pdf/ja/java/set-tagged-pdfs-element-properties/)
+- [タグ付きPDFでテーブルを操作する](/pdf/ja/java/working-with-table-in-tagged-pdfs/)

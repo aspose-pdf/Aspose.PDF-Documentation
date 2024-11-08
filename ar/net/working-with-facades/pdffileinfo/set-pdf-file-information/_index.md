@@ -2,7 +2,7 @@
 title: تعيين معلومات ملف PDF
 type: docs
 weight: 40
-url: ar/net/set-pdf-file-information/
+url: /ar/net/set-pdf-file-information/
 description: يوضح هذا القسم كيفية تعيين معلومات ملف PDF باستخدام Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

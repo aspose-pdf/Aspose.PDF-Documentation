@@ -3,7 +3,7 @@ title: Trabalhando com Operadores
 linktitle: Trabalhando com Operadores
 type: docs
 weight: 170
-url: pt/java/operators/
+url: /pt/java/operators/
 description: Este tópico explica como usar operadores com Aspose.PDF. As classes de operadores fornecem ótimos recursos para manipulação de PDF.
 lastmod: "2021-06-05"
 sitemap:

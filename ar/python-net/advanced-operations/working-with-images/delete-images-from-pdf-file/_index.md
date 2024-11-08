@@ -3,7 +3,7 @@ title: حذف الصور من ملف PDF باستخدام Python
 linktitle: حذف الصور
 type: docs
 weight: 20
-url: ar/python-net/delete-images-from-pdf-file/
+url: /ar/python-net/delete-images-from-pdf-file/
 description: يشرح هذا القسم كيفية حذف الصور من ملف PDF باستخدام Aspose.PDF لـ Python عبر .NET.
 lastmod: "2023-04-17"
 ---

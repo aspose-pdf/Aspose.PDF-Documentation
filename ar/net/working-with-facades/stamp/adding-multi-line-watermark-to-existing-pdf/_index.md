@@ -2,7 +2,7 @@
 title: إضافة العلامة المائية متعددة الأسطر
 type: docs
 weight: 10
-url: ar/net/adding-multi-line-watermark-to-existing-pdf/
+url: /ar/net/adding-multi-line-watermark-to-existing-pdf/
 description: يشرح هذا القسم كيفية إضافة علامة مائية متعددة الأسطر إلى PDF موجود باستخدام فئة FormattedText.
 lastmod: "2021-06-05"
 draft: false

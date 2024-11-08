@@ -2,7 +2,7 @@
 title: PythonでPDFファイル情報を取得する
 type: docs
 weight: 40
-url: ja/java/get-pdf-file-information-in-python/
+url: /ja/java/get-pdf-file-information-in-python/
 lastmod: "2021-06-05"
 ---
 

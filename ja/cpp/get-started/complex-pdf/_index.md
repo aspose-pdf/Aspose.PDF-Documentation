@@ -3,7 +3,7 @@ title: 複雑なPDFの作成
 linktitle: 複雑なPDFの作成
 type: docs
 weight: 60
-url: ja/cpp/complex-pdf-example/
+url: /ja/cpp/complex-pdf-example/
 description: Aspose.PDF for C++を使用すると、画像、テキストフラグメント、テーブルを1つのドキュメントに含む、より複雑なドキュメントを作成できます。
 lastmod: "2021-11-05"
 sitemap:
@@ -11,8 +11,8 @@ sitemap:
     priority: 0.5
 ---
 
-[Hello, World](/pdf/cpp/hello-world-example/) の例では、C++ と Aspose.PDF を使用して PDF ドキュメントを作成する簡単な手順を示しました。この記事では、C++ と Aspose.PDF for C++ を使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、乗客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。
-私たちのドキュメントには、画像、2つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。このようなドキュメントを構築するには、DOMベースのアプローチを使用します。[DOM APIの基本](/pdf/cpp/basics-of-dom-api/) セクションで詳細を読むことができます。
+[Hello, World](/pdf/ja/cpp/hello-world-example/) の例では、C++ と Aspose.PDF を使用して PDF ドキュメントを作成する簡単な手順を示しました。この記事では、C++ と Aspose.PDF for C++ を使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、乗客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。
+私たちのドキュメントには、画像、2つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。このようなドキュメントを構築するには、DOMベースのアプローチを使用します。[DOM APIの基本](/pdf/ja/cpp/basics-of-dom-api/) セクションで詳細を読むことができます。
 
 ドキュメントをゼロから作成する場合、特定の手順を踏む必要があります。
 

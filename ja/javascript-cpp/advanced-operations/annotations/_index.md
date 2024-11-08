@@ -3,7 +3,7 @@ title: JavaScriptを使用したPDF注釈
 linktitle: PDF注釈
 type: docs
 weight: 90
-url: ja/javascript-cpp/annotations/
+url: /ja/javascript-cpp/annotations/
 description: このセクションでは、Aspose.PDF for JavaScript via C++を使用してPDFファイルにあらゆる種類の注釈を追加する方法を示します。
 lastmod: "2023-09-17"
 sitemap:
@@ -19,4 +19,4 @@ PDFの注釈には、ハイライト、下線、コメントの追加などが�
 
 以下のことが可能です：
 
-- [注釈の削除](/pdf/javascript-cpp/delete-annotation/) - このセクションでは、JavaScriptを使用してPDFから注釈を削除する方法を説明します。
+- [注釈の削除](/pdf/ja/javascript-cpp/delete-annotation/) - このセクションでは、JavaScriptを使用してPDFから注釈を削除する方法を説明します。

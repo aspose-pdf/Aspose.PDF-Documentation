@@ -2,7 +2,7 @@
 title: Desinstalando Aspose.Pdf para SharePoint
 type: docs
 weight: 50
-url: pt/sharepoint/uninstalling-aspose-pdf-for-sharepoint/
+url: /pt/sharepoint/uninstalling-aspose-pdf-for-sharepoint/
 lastmod: "2020-12-16"
 description: Basta executar o aplicativo de configuração para remover a API PDF SharePoint, e ele será desinstalado e desativado para todas as coleções de sites.
 ---

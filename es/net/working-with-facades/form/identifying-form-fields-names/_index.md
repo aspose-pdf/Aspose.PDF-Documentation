@@ -2,13 +2,13 @@
 title: Identificación de nombres de campos de formulario
 type: docs
 weight: 10
-url: es/net/identifying-form-fields-names/
+url: /es/net/identifying-form-fields-names/
 description: Aspose.PDF.Facades te permite identificar nombres de campos de formulario usando la clase Form.
 lastmod: "2021-06-05"
 draft: false
 ---
 
-[Aspose.PDF para .NET](/pdf/net/) proporciona la capacidad de crear, editar y completar formularios PDF ya creados. El espacio de nombres [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) contiene la clase [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), que contiene la función llamada [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) y toma dos argumentos, es decir, nombre del campo y valor del campo. Por lo tanto, para completar los campos del formulario, debes conocer el nombre exacto del campo del formulario.
+[Aspose.PDF para .NET](/pdf/es/net/) proporciona la capacidad de crear, editar y completar formularios PDF ya creados. El espacio de nombres [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) contiene la clase [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), que contiene la función llamada [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) y toma dos argumentos, es decir, nombre del campo y valor del campo. Por lo tanto, para completar los campos del formulario, debes conocer el nombre exacto del campo del formulario.
 
 ## Detalles de implementación
 

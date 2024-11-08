@@ -2,7 +2,7 @@
 title: 中心点についてのスタンプの回転
 type: docs
 weight: 10
-url: ja/net/rotating-stamp-about-the-center-point/
+url: /ja/net/rotating-stamp-about-the-center-point/
 description: このセクションでは、Stampクラスを使用してスタンプを中心点で回転させる方法を説明します。
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/net/) は、既存のPDFファイルにスタンプを追加することを可能にします。時には、ユーザーはスタンプを回転させる必要があります。この記事では、スタンプを中心点で回転させる方法を見ていきます。
+[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) in [Aspose.PDF for .NET](/pdf/ja/net/) は、既存のPDFファイルにスタンプを追加することを可能にします。時には、ユーザーはスタンプを回転させる必要があります。この記事では、スタンプを中心点で回転させる方法を見ていきます。
 
 {{% /alert %}}
 

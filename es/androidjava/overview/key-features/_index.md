@@ -3,7 +3,7 @@ title: Características Clave de Aspose.PDF
 linktitle: Características Clave
 type: docs
 weight: 20
-url: es/androidjava/key-features/
+url: /es/androidjava/key-features/
 description: Aspose.PDF para Android via Java muestra las características principales en el trabajo con documentos PDF.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: إضافة طوابع الصور إلى PDF في Node.js
 linktitle: طوابع الصور في ملف PDF
 type: docs
 weight: 60
-url: ar/nodejs-cpp/stamping/
+url: /ar/nodejs-cpp/stamping/
 description: أضف ختم الصورة إلى مستند PDF الخاص بك باستخدام AsposePdfAddStamp مع أداة Node.js.
 lastmod: "2023-11-16"
 sitemap:

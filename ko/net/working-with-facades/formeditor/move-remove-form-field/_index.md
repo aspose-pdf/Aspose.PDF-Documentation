@@ -2,7 +2,7 @@
 title: 양식 필드 이동 및 제거
 type: docs
 weight: 50
-url: ko/net/move-remove-form-field/
+url: /ko/net/move-remove-form-field/
 description: 이 섹션은 FormEditor 클래스와 함께 양식 필드를 이동하고 제거하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false

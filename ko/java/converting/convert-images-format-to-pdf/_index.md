@@ -3,7 +3,7 @@ title: 다양한 이미지 형식을 PDF로 변환
 linktitle: 이미지를 PDF로 변환
 type: docs
 weight: 60
-url: ko/java/convert-images-format-to-pdf/
+url: /ko/java/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: 이 주제는 Aspose.PDF for Java 라이브러리를 사용하여 다양한 이미지 형식을 PDF로 변환하는 방법을 보여줍니다.
 sitemap:

@@ -3,7 +3,7 @@ title: استخراج البيانات من الجدول في PDF
 linktitle: استخراج البيانات من الجدول
 type: docs
 weight: 40
-url: ar/cpp/extract-data-from-table-in-pdf/
+url: /ar/cpp/extract-data-from-table-in-pdf/
 description: تعلم كيفية استخراج الجداول من PDF باستخدام Aspose.PDF لـ C++.
 lastmod: "2021-06-05"
 sitemap:
@@ -124,7 +124,7 @@ void ExtractMarkedTable()
 ## استخراج بيانات الجدول من PDF وتخزينها في ملف CSV
 
 يوضح المثال التالي كيفية استخراج الجدول وتخزينه كملف CSV.
-لرؤية كيفية تحويل PDF إلى جدول بيانات Excel يرجى الرجوع إلى مقال [تحويل PDF إلى Excel](/pdf/cpp/convert-pdf-to-excel/).
+لرؤية كيفية تحويل PDF إلى جدول بيانات Excel يرجى الرجوع إلى مقال [تحويل PDF إلى Excel](/pdf/ar/cpp/convert-pdf-to-excel/).
 
 ```cpp
 void ExtractTableSaveCSV()

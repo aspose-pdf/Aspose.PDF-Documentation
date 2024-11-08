@@ -2,7 +2,7 @@
 title: Reporting Services and SharePoint configuration
 type: docs
 weight: 40
-url: ja/reportingservices/reporting-services-and-sharepoint-configuration/
+url: /ja/reportingservices/reporting-services-and-sharepoint-configuration/
 lastmod: "2021-06-05"
 ---
 

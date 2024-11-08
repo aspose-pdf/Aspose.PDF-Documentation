@@ -3,7 +3,7 @@ title:  Ekstrak data dari AcroForm
 linktitle:  Ekstrak data dari AcroForm
 type: docs
 weight: 50
-url: id/cpp/extract-data-from-acroform/
+url: /id/cpp/extract-data-from-acroform/
 description: Aspose.PDF memudahkan ekstraksi data bidang formulir dari file PDF. Pelajari cara mengekstrak data dari AcroForms dan menyimpannya dalam format XML, atau FDF.
 lastmod: "2021-12-13"
 sitemap:

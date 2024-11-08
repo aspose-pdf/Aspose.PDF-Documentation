@@ -2,7 +2,7 @@
 title: Extraer imagen y cambiar posición del sello
 type: docs
 weight: 30
-url: es/net/extract-image-and-change-position-of-a-stamp/
+url: /es/net/extract-image-and-change-position-of-a-stamp/
 description: Esta sección explica cómo extraer imagen y cambiar la posición de un sello con Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

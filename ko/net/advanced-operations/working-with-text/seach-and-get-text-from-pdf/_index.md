@@ -3,7 +3,7 @@ title: PDF 페이지에서 텍스트 검색 및 가져오기
 linktitle: 텍스트 검색 및 가져오기
 type: docs
 weight: 60
-url: ko/net/search-and-get-text-from-pdf/
+url: /ko/net/search-and-get-text-from-pdf/
 description: 이 문서에서는 Aspose.PDF for .NET을 사용하여 다양한 도구로 텍스트를 검색하고 가져오는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "이 문서에서는 Aspose.PDF for .NET을 사용하여 다양한 도구로 텍스트를 검색하고 가져오는 방법을 설명합니다."
 }
 </script>
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## PDF 문서의 모든 페이지에서 텍스트 검색 및 가져오기
 

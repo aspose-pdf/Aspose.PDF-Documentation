@@ -3,7 +3,7 @@ title: فتح مستند PDF برمجيًا
 linktitle: فتح PDF
 type: docs
 weight: 20
-url: ar/net/open-pdf-document/
+url: /ar/net/open-pdf-document/
 description: تعلم كيفية فتح ملف PDF في C# باستخدام مكتبة Aspose.PDF لـ .NET. يمكنك فتح PDF موجود، مستند من تيار، ومستند PDF المشفر.
 aliases:
     - /net/opening-a-pdf-document/
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 ---
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## فتح مستند PDF موجود
 

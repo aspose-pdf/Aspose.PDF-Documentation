@@ -3,7 +3,7 @@ title: العمل مع AcroForms في PDF باستخدام Aspose.PDF لـ C++
 linktitle: AcroForms
 type: docs
 weight: 10
-url: ar/cpp/acroforms/
+url: /ar/cpp/acroforms/
 description: مع Aspose.PDF لـ C++ يمكنك إنشاء نموذج من البداية، تعبئة حقول النموذج في مستند PDF، استخراج البيانات من النموذج، إضافة أو إزالة الحقول في النموذج الحالي.
 lastmod: "2021-12-01"
 sitemap:
@@ -19,12 +19,12 @@ sitemap:
 
 لدراسة أكثر تفصيلاً لإمكانيات العمل مع النماذج، ادرس المقالات التالية في القسم:
 
-- [إنشاء AcroForm](/pdf/cpp/create-form/) - إنشاء نموذج من البداية، إضافة RadioButtonField، TextBoxField، Caption Field باستخدام C++.
+- [إنشاء AcroForm](/pdf/ar/cpp/create-form/) - إنشاء نموذج من البداية، إضافة RadioButtonField، TextBoxField، Caption Field باستخدام C++.
 
-- [ملء AcroForm](/pdf/cpp/fill-form/) - لملء حقل نموذج، احصل على الحقل من مجموعة النماذج في كائن Document.
+- [ملء AcroForm](/pdf/ar/cpp/fill-form/) - لملء حقل نموذج، احصل على الحقل من مجموعة النماذج في كائن Document.
 
-- [استخراج بيانات AcroForm](/pdf/cpp/extract-form/) - الحصول على القيم من جميع الحقول والفردية وغيرها.
+- [استخراج بيانات AcroForm](/pdf/ar/cpp/extract-form/) - الحصول على القيم من جميع الحقول والفردية وغيرها.
 
-- [تعديل AcroForm](/pdf/cpp/modifing-form/) - الحصول على/تعيين FieldLimit، إزالة الحقول في النموذج الموجود، تعيين خط حقل النموذج إلى خط غير خطوط PDF الأساسية الـ 14 باستخدام C++.
+- [تعديل AcroForm](/pdf/ar/cpp/modifing-form/) - الحصول على/تعيين FieldLimit، إزالة الحقول في النموذج الموجود، تعيين خط حقل النموذج إلى خط غير خطوط PDF الأساسية الـ 14 باستخدام C++.
 
-- [نشر بيانات AcroForm](/pdf/cpp/posting-acroform-data/) - استيراد وتصدير بيانات النموذج إلى ملف XML.
+- [نشر بيانات AcroForm](/pdf/ar/cpp/posting-acroform-data/) - استيراد وتصدير بيانات النموذج إلى ملف XML.

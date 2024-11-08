@@ -2,7 +2,7 @@
 title: Supprimer les métadonnées d'un PDF en Python
 type: docs
 weight: 70
-url: fr/python-java/remove-metadata-from-pdf-in-python/
+url: /fr/python-java/remove-metadata-from-pdf-in-python/
 ---
 
 <ins>Pour supprimer les métadonnées d'un document Pdf en utilisant **Aspose.PDF Java for Python**, il suffit d'invoquer la classe **RemoveMetadata**.

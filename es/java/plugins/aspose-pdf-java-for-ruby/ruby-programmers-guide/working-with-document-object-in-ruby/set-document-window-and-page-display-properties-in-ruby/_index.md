@@ -2,7 +2,7 @@
 title: Establecer propiedades de ventana de documento y visualización de página en Ruby
 type: docs
 weight: 100
-url: es/java/set-document-window-and-page-display-properties-in-ruby/
+url: /es/java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: استخراج وحفظ مرفق
 linktitle: استخراج وحفظ مرفق
 type: docs
 weight: 20
-url: ar/net/extract-and-save-an-attachment/
+url: /ar/net/extract-and-save-an-attachment/
 description: يتيح لك Aspose.PDF لـ .NET الحصول على جميع المرفقات من مستند PDF. كما يمكنك الحصول على مرفق فردي من مستندك.
 lastmod: "2022-02-17"
 sitemap:
@@ -79,7 +79,7 @@ sitemap:
 
 الشفرات التالية توضح كيفية الحصول على جميع المرفقات من مستند PDF.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // للأمثلة الكاملة وملفات البيانات، الرجاء زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET

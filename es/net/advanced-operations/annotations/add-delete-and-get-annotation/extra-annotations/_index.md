@@ -3,7 +3,7 @@ title: Anotaciones Adicionales usando C#
 linktitle: Anotaciones Adicionales
 type: docs
 weight: 60
-url: es/net/extra-annotations/
+url: /es/net/extra-annotations/
 description: Esta sección describe cómo agregar, obtener y eliminar tipos adicionales de anotaciones de su documento PDF.
 lastmod: "2023-09-12"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 La anotación de intercalación es un símbolo que indica edición de texto. La anotación de intercalación también es una anotación de marcado, por lo que la clase Caret se deriva de la clase Markup y también proporciona funciones para obtener o establecer propiedades de la anotación de intercalación y restablecer el flujo de la apariencia de la anotación de intercalación.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Pasos con los que creamos la anotación de intercalación:
 

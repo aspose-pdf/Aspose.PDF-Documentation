@@ -3,7 +3,7 @@ title: Licensing and limitations
 linktitle: Licensing and limitations
 type: docs
 weight: 50
-url: ar/androidjava/licensing/
+url: /ar/androidjava/licensing/
 description: Aspose.PDF for Android via Java يدعو عملاءه للحصول على ترخيص كلاسيكي وترخيص محسوب. وكذلك استخدام ترخيص محدود لاستكشاف المنتج بشكل أفضل.
 lastmod: "2021-06-05"
 sitemap:

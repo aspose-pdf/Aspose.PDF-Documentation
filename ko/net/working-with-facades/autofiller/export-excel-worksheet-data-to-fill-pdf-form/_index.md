@@ -2,7 +2,7 @@
 title: 엑셀 데이터 내보내기하여 PDF 양식 채우기
 type: docs
 weight: 10
-url: ko/net/export-excel-worksheet-data-to-fill-pdf-form/
+url: /ko/net/export-excel-worksheet-data-to-fill-pdf-form/
 description: 이 섹션에서는 AutoFiller 클래스를 사용하여 엑셀 워크시트 데이터를 내보내어 PDF 양식을 채우는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF for .NET](/pdf/net/)의 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 PDF 양식을 채우는 다양한 방법을 제공합니다. XML 파일, DFD, XFDF에서 데이터를 가져오거나 API를 사용하고 엑셀 워크시트의 데이터를 사용할 수도 있습니다. 우리는 [Aspose.Cells](https://docs.aspose.com//cells/net)의 [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) 클래스의 [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) 메서드를 사용하여 엑셀 시트의 데이터를 DataTable 객체로 내보낼 것입니다. 그런 다음 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 클래스의 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 메서드를 사용하여 이 데이터를 PDF 양식으로 가져와야 합니다. DataTable의 열 이름이 PDF 양식의 필드 이름과 동일한지 확인하십시오.
+[Aspose.PDF for .NET](/pdf/ko/net/)의 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 PDF 양식을 채우는 다양한 방법을 제공합니다. XML 파일, DFD, XFDF에서 데이터를 가져오거나 API를 사용하고 엑셀 워크시트의 데이터를 사용할 수도 있습니다. 우리는 [Aspose.Cells](https://docs.aspose.com//cells/net)의 [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) 클래스의 [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) 메서드를 사용하여 엑셀 시트의 데이터를 DataTable 객체로 내보낼 것입니다. 그런 다음 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 클래스의 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 메서드를 사용하여 이 데이터를 PDF 양식으로 가져와야 합니다. DataTable의 열 이름이 PDF 양식의 필드 이름과 동일한지 확인하십시오.
 
 {{% /alert %}}
 

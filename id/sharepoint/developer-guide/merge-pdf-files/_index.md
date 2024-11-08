@@ -3,7 +3,7 @@ title: Menggabungkan File PDF di SharePoint
 linktitle: Menggabungkan File PDF
 type: docs
 weight: 90
-url: id/sharepoint/merge-pdf-files/
+url: /id/sharepoint/merge-pdf-files/
 lastmod: "2020-12-16"
 description: Dengan menggunakan PDF SharePoint API, Anda dapat menggabungkan beberapa file PDF dari perpustakaan Dokumen SharePoint menjadi satu PDF.
 ---

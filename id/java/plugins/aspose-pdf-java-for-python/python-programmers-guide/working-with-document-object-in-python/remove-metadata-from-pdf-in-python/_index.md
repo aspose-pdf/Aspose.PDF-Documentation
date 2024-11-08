@@ -2,7 +2,7 @@
 title: Hapus Metadata dari PDF di Python
 type: docs
 weight: 70
-url: id/java/remove-metadata-from-pdf-in-python/
+url: /id/java/remove-metadata-from-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

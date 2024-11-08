@@ -3,7 +3,7 @@ title: استخراج البيانات من AcroForms
 linktitle: استخراج البيانات من AcroForms
 type: docs
 weight: 30
-url: ar/java/extract-form/
+url: /ar/java/extract-form/
 description: يشرح هذا القسم كيفية استخراج النماذج من مستند PDF الخاص بك باستخدام Aspose.PDF لـ Java.
 lastmod: "2021-06-05"
 sitemap:

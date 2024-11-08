@@ -3,7 +3,7 @@ title: PDF 문서 작업
 linktitle: 문서 작업 
 type: docs 
 weight: 10 
-url: ko/java/working-with-documents/ 
+url: /ko/java/working-with-documents/ 
 lastmod: "2021-06-05" 
 description: 이 문서는 Aspose.PDF for Java로 문서에서 수행할 수 있는 조작에 대해 설명합니다. 
 sitemap: 
@@ -21,10 +21,10 @@ PDF 문서의 주요 목표는 문서의 내용과 레이아웃을 보존하고 
 
 You are able to do the following:
 
-- [문서 생성](/pdf/java/create-pdf-document/) - PDF 문서 생성.
-- [PDF 문서 서식 지정](/pdf/java/formatting-pdf-document/) - 문서 속성 가져오기 및 설정, 폰트 포함, 기타 PDF 파일 작업.
-- [PDF 문서 조작](/pdf/java/manipulate-pdf-document/) - PDF A 표준에 대한 PDF 문서 유효성 검사, 목차 작업, PDF 만료일 설정 등.
-- [PDF 최적화](/pdf/java/optimize-pdf/) - 페이지 내용 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 모든 이미지 압축을 통한 문서 최적화 성공.
-- [PDF 병합](/pdf/java/merge-pdf-documents/) - 여러 PDF 파일을 Java를 사용하여 하나의 PDF 문서로 병합.
-- [PDF 분할](/pdf/java/split-document/) - Java 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할.
-- [헤딩 작업](/pdf/java/working-with-headings/) - Java로 PDF 문서의 헤딩에 번호 매기기 생성 가능.
+- [문서 생성](/pdf/ko/java/create-pdf-document/) - PDF 문서 생성.
+- [PDF 문서 서식 지정](/pdf/ko/java/formatting-pdf-document/) - 문서 속성 가져오기 및 설정, 폰트 포함, 기타 PDF 파일 작업.
+- [PDF 문서 조작](/pdf/ko/java/manipulate-pdf-document/) - PDF A 표준에 대한 PDF 문서 유효성 검사, 목차 작업, PDF 만료일 설정 등.
+- [PDF 최적화](/pdf/ko/java/optimize-pdf/) - 페이지 내용 최적화, 파일 크기 최적화, 사용되지 않는 객체 제거, 모든 이미지 압축을 통한 문서 최적화 성공.
+- [PDF 병합](/pdf/ko/java/merge-pdf-documents/) - 여러 PDF 파일을 Java를 사용하여 하나의 PDF 문서로 병합.
+- [PDF 분할](/pdf/ko/java/split-document/) - Java 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할.
+- [헤딩 작업](/pdf/ko/java/working-with-headings/) - Java로 PDF 문서의 헤딩에 번호 매기기 생성 가능.

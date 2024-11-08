@@ -2,7 +2,7 @@
 title: HTML ke PDF
 type: docs
 weight: 10
-url: id/java/html-to-pdf/
+url: /id/java/html-to-pdf/
 lastmod: "2022-01-27"
 ---
 

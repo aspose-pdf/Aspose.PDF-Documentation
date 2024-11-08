@@ -3,7 +3,7 @@ title: PDF内のリンクを更新する
 linktitle: リンクを更新
 type: docs
 weight: 20
-url: ja/net/update-links/
+url: /ja/net/update-links/
 description: PDF内のリンクをプログラムで更新する方法についてのガイドです。このガイドは、C#言語でPDF内のリンクを更新する方法について説明しています。
 lastmod: "2022-02-17"
 sitemap:
@@ -75,7 +75,7 @@ sitemap:
     "description": "PDF内のリンクをプログラムで更新する方法についてのガイドです。このガイドは、C#言語でPDF内のリンクを更新する方法について説明しています。"
 }
 </script>
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリで動作します。
+次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
 ## PDFファイル内のリンクを更新する
 

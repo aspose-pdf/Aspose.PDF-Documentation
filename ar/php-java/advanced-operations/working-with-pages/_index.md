@@ -3,7 +3,7 @@ title: العمل مع صفحات PDF
 linktitle: العمل مع الصفحات
 type: docs
 weight: 20
-url: ar/php-java/working-with-pages/
+url: /ar/php-java/working-with-pages/
 description: مع Aspose.PDF لـ PHP عبر Java يمكنك إضافة صفحات، إضافة رؤوس وتذييلات، إضافة علامات مائية إلى ملف PDF الخاص بك. يشرح هذا القسم جميع التفاصيل حول هذا الموضوع.
 lastmod: "2024-06-05"
 sitemap:
@@ -20,16 +20,16 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إضافة صفحات](/pdf/php-java/add-pages/) - إضافة صفحات في الموقع المطلوب أو إلى نهاية ملف PDF وحذف صفحة من مستندك.
-- [نقل صفحات](/pdf/php-java/move-pages/) - نقل صفحات من مستند إلى آخر.
-- [الحصول على خصائص الصفحة وتعيينها](/pdf/php-java/get-and-set-page-properties/) - يمكنك تعلم كيفية الحصول على الأرقام في ملف PDF، والحصول على خصائص الصفحة وتحديد لون الصفحة.
-- [حذف صفحات](/pdf/php-java/delete-pages/) - حذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
-- [تغيير حجم الصفحة](/pdf/php-java/change-page-size) - يمكنك تغيير حجم صفحة PDF باستخدام مقتطف كود باستخدام مكتبة Aspose.PDF.
+- [إضافة صفحات](/pdf/ar/php-java/add-pages/) - إضافة صفحات في الموقع المطلوب أو إلى نهاية ملف PDF وحذف صفحة من مستندك.
+- [نقل صفحات](/pdf/ar/php-java/move-pages/) - نقل صفحات من مستند إلى آخر.
+- [الحصول على خصائص الصفحة وتعيينها](/pdf/ar/php-java/get-and-set-page-properties/) - يمكنك تعلم كيفية الحصول على الأرقام في ملف PDF، والحصول على خصائص الصفحة وتحديد لون الصفحة.
+- [حذف صفحات](/pdf/ar/php-java/delete-pages/) - حذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
+- [تغيير حجم الصفحة](/pdf/ar/php-java/change-page-size) - يمكنك تغيير حجم صفحة PDF باستخدام مقتطف كود باستخدام مكتبة Aspose.PDF.
 
-- [تدوير الصفحات](/pdf/php-java/rotate-pages/) - يمكنك تغيير اتجاه الصفحة للصفحات في ملف PDF موجود.- [تقسيم الصفحات](/pdf/php-java/split-document/) - يمكنك تقسيم ملفات PDF إلى ملف PDF واحد أو متعدد.
-- [إضافة رؤوس وتذييلات](/pdf/php-java/add-headers-and-footers-of-pdf-file/) - أضف نصًا أو صورًا في الرؤوس والتذييلات في ملف PDF الخاص بك.
-- [اقتصاص الصفحات](/pdf/php-java/crop-pages/) - يمكنك اقتصاص الصفحات في مستند PDF برمجيًا بخصائص صفحات مختلفة.
-- [إضافة علامات مائية](/pdf/php-java/add-watermarks/) - أضف علامات مائية في ملف PDF الخاص بك باستخدام فئة Artifact.
-- [إضافة ترقيم الصفحات في ملف PDF](/pdf/php-java/add-page-number/) - ستساعدك فئة PageNumberStamp في إضافة رقم صفحة في ملف PDF الخاص بك.
-- [إضافة خلفيات](/pdf/php-java/add-backgrounds/) - يمكن استخدام صور الخلفية لإضافة علامة مائية.
-- [الختم](/pdf/php-java/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.
+- [تدوير الصفحات](/pdf/ar/php-java/rotate-pages/) - يمكنك تغيير اتجاه الصفحة للصفحات في ملف PDF موجود.- [تقسيم الصفحات](/pdf/ar/php-java/split-document/) - يمكنك تقسيم ملفات PDF إلى ملف PDF واحد أو متعدد.
+- [إضافة رؤوس وتذييلات](/pdf/ar/php-java/add-headers-and-footers-of-pdf-file/) - أضف نصًا أو صورًا في الرؤوس والتذييلات في ملف PDF الخاص بك.
+- [اقتصاص الصفحات](/pdf/ar/php-java/crop-pages/) - يمكنك اقتصاص الصفحات في مستند PDF برمجيًا بخصائص صفحات مختلفة.
+- [إضافة علامات مائية](/pdf/ar/php-java/add-watermarks/) - أضف علامات مائية في ملف PDF الخاص بك باستخدام فئة Artifact.
+- [إضافة ترقيم الصفحات في ملف PDF](/pdf/ar/php-java/add-page-number/) - ستساعدك فئة PageNumberStamp في إضافة رقم صفحة في ملف PDF الخاص بك.
+- [إضافة خلفيات](/pdf/ar/php-java/add-backgrounds/) - يمكن استخدام صور الخلفية لإضافة علامة مائية.
+- [الختم](/pdf/ar/php-java/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.

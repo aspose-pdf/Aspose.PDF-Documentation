@@ -3,7 +3,7 @@ title: PDF Tooltip using Python
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: ar/python-net/pdf-tooltip/
+url: /ar/python-net/pdf-tooltip/
 description: تعلم كيفية إضافة تلميح الأدوات إلى جزء النص في PDF باستخدام Python وAspose.PDF
 lastmod: "2024-02-17"
 sitemap:

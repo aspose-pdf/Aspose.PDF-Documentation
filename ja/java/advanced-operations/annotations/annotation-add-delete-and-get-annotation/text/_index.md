@@ -3,7 +3,7 @@ title: PDFテキスト注釈
 Texttitle: テキスト注釈
 type: docs
 weight: 10
-url: ja/java/text-annotation/
+url: /ja/java/text-annotation/
 description: Aspose.PDF for Javaを使用して、PDFドキュメントにテキスト注釈を追加、取得、および削除できます。
 lastmod: "2021-11-24"
 sitemap:

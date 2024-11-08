@@ -3,7 +3,7 @@ title: PDF Multimedia Annotation
 linktitle: Multimedia Annotation
 type: docs
 weight: 40
-url: ar/java/multimedia-annotation/
+url: /ar/java/multimedia-annotation/
 description: يسمح لك Aspose.PDF for Java بإضافة وتعليم وحذف التعليقات التوضيحية متعددة الوسائط من مستند PDF الخاص بك.
 lastmod: "2021-11-24"
 sitemap:

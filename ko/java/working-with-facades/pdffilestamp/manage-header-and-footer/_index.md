@@ -2,7 +2,7 @@
 title: 헤더 및 푸터 관리
 type: docs
 weight: 40
-url: ko/java/manage-header-and-footer/
+url: /ko/java/manage-header-and-footer/
 description: 이 섹션에서는 PdfFileStamp 클래스를 사용하여 Aspose.PDF Facades로 헤더 및 푸터를 관리하는 방법을 설명합니다.
 lastmod: "2021-06-05"
 draft: false
